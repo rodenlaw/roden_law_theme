@@ -73,7 +73,29 @@ function roden_case_results_grid( $args = [] ) {
     if ( $tax_query ) $query_args['tax_query'] = $tax_query;
 
     $results = new WP_Query( $query_args );
-    if ( ! $results->have_posts() ) return;
+
+    // Fallback: show hardcoded results if no CPT posts exist yet
+    if ( ! $results->have_posts() ) {
+        $fallback_results = [
+            ['amount'=>'$27,000,000', 'type'=>'Settlement', 'title'=>'Truck Accident', 'desc'=>'Client paralyzed in collision with commercial semi-truck.'],
+            ['amount'=>'$10,860,000', 'type'=>'Verdict',    'title'=>'Product Liability', 'desc'=>'Defective product caused catastrophic injury.'],
+            ['amount'=>'$9,800,000',  'type'=>'Recovery',   'title'=>'Premises Liability', 'desc'=>'Client suffered severe injury due to negligent property maintenance.'],
+            ['amount'=>'$3,000,000',  'type'=>'Settlement', 'title'=>'Auto Accident', 'desc'=>'Wrongful death — surviving spouse of auto accident victim.'],
+        ];
+        $show = array_slice($fallback_results, 0, $args['count']);
+        echo '<div class="case-results-grid cols-' . intval($args['columns']) . '">';
+        foreach ($show as $r) {
+            echo '<div class="result-card">';
+            echo '<span class="result-type">' . esc_html($r['type']) . '</span>';
+            echo '<span class="result-amount">' . esc_html($r['amount']) . '</span>';
+            echo '<span class="result-title">' . esc_html($r['title']) . '</span>';
+            echo '<p class="result-desc">' . esc_html($r['desc']) . '</p>';
+            echo '</div>';
+        }
+        echo '</div>';
+        echo '<p class="results-disclaimer">Results shown are gross settlement/verdict amounts before fees and costs. Past results do not guarantee similar outcomes.</p>';
+        return;
+    }
 
     echo '<div class="case-results-grid cols-' . intval($args['columns']) . '">';
     while ( $results->have_posts() ) : $results->the_post();
@@ -198,7 +220,38 @@ function roden_practice_areas_grid( $columns = 4 ) {
         'orderby'        => 'menu_order',
         'order'          => 'ASC',
     ] );
-    if ( empty( $areas ) ) return;
+
+    // Fallback: show hardcoded practice areas if no CPT posts exist yet
+    if ( empty( $areas ) ) {
+        $fallback = [
+            'Car Accident'          => 'car-accident-lawyers',
+            'Truck Accident'        => 'truck-accident-lawyers',
+            'Slip & Fall'           => 'slip-and-fall-lawyers',
+            'Medical Malpractice'   => 'medical-malpractice-lawyers',
+            'Motorcycle Accident'   => 'motorcycle-accident-lawyers',
+            'Wrongful Death'        => 'wrongful-death-lawyers',
+            'Workers\' Comp'        => 'workers-compensation-lawyers',
+            'Dog Bite'              => 'dog-bite-lawyers',
+            'Brain Injury'          => 'brain-injury-lawyers',
+            'Spinal Cord Injury'    => 'spinal-cord-injury-lawyers',
+            'Maritime'              => 'maritime-injury-lawyers',
+            'Product Liability'     => 'product-liability-lawyers',
+            'Boating Accident'      => 'boating-accident-lawyers',
+            'Burn Injury'           => 'burn-injury-lawyers',
+            'Construction Accident' => 'construction-accident-lawyers',
+            'Nursing Home Abuse'    => 'nursing-home-abuse-lawyers',
+        ];
+        echo '<div class="practice-areas-grid cols-' . intval($columns) . '">';
+        foreach ( $fallback as $name => $slug ) {
+            $url = home_url( '/practice-areas/' . $slug . '/' );
+            echo '<a href="' . esc_url($url) . '" class="practice-area-card">';
+            echo '<span class="pa-icon">⚖</span>';
+            echo '<span class="pa-name">' . esc_html($name) . '</span>';
+            echo '</a>';
+        }
+        echo '</div>';
+        return;
+    }
 
     echo '<div class="practice-areas-grid cols-' . intval($columns) . '">';
     foreach ( $areas as $area ) {

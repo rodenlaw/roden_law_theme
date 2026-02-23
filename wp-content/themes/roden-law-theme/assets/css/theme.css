@@ -898,9 +898,16 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%; background: transparent;
     border: 1px solid rgba(255,255,255,0.2);
     border-radius: 4px; color: var(--white); padding: 8px 10px;
-    font-size: 12px; margin-bottom: 8px;
+    font-size: 12px; margin-bottom: 8px; box-sizing: border-box;
 }
-.roden-footer-form input::placeholder { color: rgba(255,255,255,0.4); }
+.roden-footer-form input:focus {
+    border-color: var(--orange); outline: none;
+}
+.roden-footer-form input::placeholder { color: rgba(255,255,255,0.5); }
+.roden-footer-form .btn-block {
+    width: 100%; display: block; box-sizing: border-box;
+    margin-top: 4px;
+}
 
 .footer-bottom {
     border-top: 1px solid rgba(255,255,255,0.1);

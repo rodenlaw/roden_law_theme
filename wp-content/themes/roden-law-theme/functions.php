@@ -116,7 +116,7 @@ function roden_firm_data() {
             'myrtle-beach' => [
                 'name'      => 'Roden Law — Myrtle Beach',
                 'address'   => '631 Bellamy Ave., Suite C-B',
-                'city'      => 'Murrells Inlet',
+                'city'      => 'Myrtle Beach',
                 'state'     => 'SC',
                 'state_full'=> 'South Carolina',
                 'zip'       => '29576',
