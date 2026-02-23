@@ -35,7 +35,7 @@ function roden_firm_data() {
         'cases_handled' => '5,000+',
         'rating'        => 4.9,
         'review_count'  => 500,
-        'experience'    => '62 years combined',
+        'experience'    => '62 Years',
         'states'        => ['Georgia', 'South Carolina'],
         'same_as'       => [
             'https://www.facebook.com/RodenLawGroup',

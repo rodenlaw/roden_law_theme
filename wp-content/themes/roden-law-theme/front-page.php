@@ -65,7 +65,42 @@ $firm = roden_firm_data();
             <h2 class="section-title">Personal Injury Practice Areas</h2>
             <p class="section-subtitle">We handle all types of personal injury cases throughout Georgia and South Carolina.</p>
         </div>
-        <?php roden_practice_areas_grid( 4 ); ?>
+        <?php
+        $pa_posts = get_posts(['post_type'=>'practice_area','posts_per_page'=>-1,'orderby'=>'menu_order','order'=>'ASC']);
+        // Also check the old CPT slug with hyphen
+        if ( empty($pa_posts) ) {
+            $pa_posts = get_posts(['post_type'=>'practice-area','posts_per_page'=>-1,'orderby'=>'menu_order','order'=>'ASC']);
+        }
+        if ( ! empty($pa_posts) ) :
+            echo '<div class="practice-areas-grid cols-4">';
+            foreach ( $pa_posts as $pa ) {
+                echo '<a href="' . esc_url(get_permalink($pa)) . '" class="practice-area-card">';
+                echo '<span class="pa-icon">⚖</span>';
+                echo '<span class="pa-name">' . esc_html($pa->post_title) . '</span>';
+                echo '</a>';
+            }
+            echo '</div>';
+        else :
+            $fallback_pas = [
+                'Car Accident'=>'car-accident-lawyers','Truck Accident'=>'truck-accident-lawyers',
+                'Slip & Fall'=>'slip-and-fall-lawyers','Medical Malpractice'=>'medical-malpractice-lawyers',
+                'Motorcycle Accident'=>'motorcycle-accident-lawyers','Wrongful Death'=>'wrongful-death-lawyers',
+                "Workers' Comp"=>'workers-compensation-lawyers','Dog Bite'=>'dog-bite-lawyers',
+                'Brain Injury'=>'brain-injury-lawyers','Spinal Cord Injury'=>'spinal-cord-injury-lawyers',
+                'Maritime'=>'maritime-injury-lawyers','Product Liability'=>'product-liability-lawyers',
+                'Boating Accident'=>'boating-accident-lawyers','Burn Injury'=>'burn-injury-lawyers',
+                'Construction Accident'=>'construction-accident-lawyers','Nursing Home Abuse'=>'nursing-home-abuse-lawyers',
+            ];
+            echo '<div class="practice-areas-grid cols-4">';
+            foreach ( $fallback_pas as $name => $slug ) {
+                echo '<a href="' . esc_url(home_url('/practice-areas/' . $slug . '/')) . '" class="practice-area-card">';
+                echo '<span class="pa-icon">⚖</span>';
+                echo '<span class="pa-name">' . esc_html($name) . '</span>';
+                echo '</a>';
+            }
+            echo '</div>';
+        endif;
+        ?>
     </div>
 </section>
 
@@ -85,7 +120,42 @@ $firm = roden_firm_data();
         <div class="section-header text-center">
             <h2 class="section-title text-white">Our Results Speak for Themselves</h2>
         </div>
-        <?php roden_case_results_grid( [ 'count' => 4, 'columns' => 4 ] ); ?>
+        <?php
+        $cr_posts = get_posts(['post_type'=>'case_result','posts_per_page'=>4,'orderby'=>'date','order'=>'DESC']);
+        if ( ! empty($cr_posts) ) :
+            echo '<div class="case-results-grid cols-4">';
+            foreach ($cr_posts as $cr) {
+                $amount = get_post_meta($cr->ID, '_roden_cr_amount', true);
+                $type = get_post_meta($cr->ID, '_roden_cr_type', true);
+                $desc = get_post_meta($cr->ID, '_roden_cr_description', true);
+                echo '<div class="result-card">';
+                echo '<span class="result-type">' . esc_html($type ?: 'Settlement') . '</span>';
+                echo '<span class="result-amount">' . esc_html($amount ?: '$0') . '</span>';
+                echo '<span class="result-title">' . esc_html($cr->post_title) . '</span>';
+                if ($desc) echo '<p class="result-desc">' . esc_html($desc) . '</p>';
+                echo '</div>';
+            }
+            echo '</div>';
+        else :
+            $fallback_results = [
+                ['amount'=>'$27,000,000','type'=>'Settlement','title'=>'Truck Accident','desc'=>'Client paralyzed in collision with commercial semi-truck.'],
+                ['amount'=>'$10,860,000','type'=>'Verdict','title'=>'Product Liability','desc'=>'Defective product caused catastrophic injury.'],
+                ['amount'=>'$9,800,000','type'=>'Recovery','title'=>'Premises Liability','desc'=>'Severe injury due to negligent property maintenance.'],
+                ['amount'=>'$3,000,000','type'=>'Settlement','title'=>'Auto Accident','desc'=>'Wrongful death — surviving spouse of auto accident victim.'],
+            ];
+            echo '<div class="case-results-grid cols-4">';
+            foreach ($fallback_results as $r) {
+                echo '<div class="result-card">';
+                echo '<span class="result-type">' . esc_html($r['type']) . '</span>';
+                echo '<span class="result-amount">' . esc_html($r['amount']) . '</span>';
+                echo '<span class="result-title">' . esc_html($r['title']) . '</span>';
+                echo '<p class="result-desc">' . esc_html($r['desc']) . '</p>';
+                echo '</div>';
+            }
+            echo '</div>';
+            echo '<p class="results-disclaimer">Results shown are gross settlement/verdict amounts before fees and costs. Past results do not guarantee similar outcomes.</p>';
+        endif;
+        ?>
     </div>
 </section>
 
