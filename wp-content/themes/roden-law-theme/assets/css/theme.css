@@ -1,6 +1,6 @@
 /* ═══════════════════════════════════════════════════════════════════════════
    RODEN LAW — AI-SEO WORDPRESS THEME STYLESHEET
-   Design System: Navy (#1B3A6B) + Orange (#E85C1F) + Light (#F8F6F2)
+   Design System: Navy (#1B3A6B) + Gold (#FCB415) + Light (#F8F6F2)
    Typography: Merriweather (serif headings) + Inter (body sans-serif)
    ═══════════════════════════════════════════════════════════════════════════ */
 
@@ -10,9 +10,10 @@
     --navy:         #1B3A6B;
     --navy-dark:    #0f2347;
     --navy-light:   #2d5a9e;
-    --orange:       #E85C1F;
-    --orange-light: #f4845f;
-    --orange-dark:  #c44a14;
+    --orange:       #FCB415;
+    --orange-light: #FDC94A;
+    --orange-dark:  #D49B00;
+    --orange-text:  #B8860B;
     --green:        #27AE60;
     --light:        #F8F6F2;
     --white:        #ffffff;
@@ -56,7 +57,7 @@ body {
 
 img { max-width: 100%; height: auto; display: block; }
 a { color: var(--navy); text-decoration: none; transition: var(--transition); }
-a:hover { color: var(--orange); }
+a:hover { color: var(--orange-text); }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-serif);
@@ -74,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 .text-center { text-align: center; }
 .text-white { color: var(--white) !important; }
 .text-light { color: var(--text-light) !important; }
-.text-accent { color: var(--orange); }
+.text-accent { color: var(--orange-text); }
 
 .screen-reader-text {
     clip: rect(1px,1px,1px,1px); position: absolute; height: 1px; width: 1px; overflow: hidden;
@@ -98,9 +99,9 @@ h1, h2, h3, h4, h5, h6 {
 .btn-block { width: 100%; }
 
 .btn-primary {
-    background: var(--orange); color: var(--white); border-color: var(--orange);
+    background: var(--orange); color: var(--navy); border-color: var(--orange); font-weight: 800;
 }
-.btn-primary:hover { background: var(--orange-dark); border-color: var(--orange-dark); color: var(--white); }
+.btn-primary:hover { background: var(--orange-dark); border-color: var(--orange-dark); color: var(--navy); }
 
 .btn-dark {
     background: var(--navy); color: var(--white); border-color: var(--navy);
@@ -136,12 +137,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header-inner {
     display: flex; align-items: center; justify-content: space-between;
-    padding: 0 24px; height: 64px; max-width: var(--container-lg); margin: 0 auto;
+    padding: 0 24px; height: 72px; max-width: var(--container-lg); margin: 0 auto;
 }
 
 /* Brand */
 .site-brand {
     display: flex; align-items: center; gap: 10px; text-decoration: none;
+}
+.site-brand img,
+.custom-logo {
+    max-height: 48px; width: auto; display: block;
 }
 .brand-icon {
     width: 36px; height: 36px; background: var(--navy); border-radius: 4px;
@@ -170,7 +175,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu li a:hover,
 .nav-menu li.current-menu-item > a,
 .nav-menu li.current-menu-parent > a {
-    color: var(--orange); border-bottom-color: var(--orange);
+    color: var(--orange-text); border-bottom-color: var(--orange);
 }
 
 /* Dropdown */
@@ -245,13 +250,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 .hero-bg-overlay {
     position: absolute; top: 0; right: 0; width: 45%; height: 100%;
-    background: linear-gradient(to left, rgba(232,92,31,0.12), transparent);
+    background: linear-gradient(to left, rgba(252,180,21,0.12), transparent);
     pointer-events: none;
 }
 
 .hero-grid {
-    display: grid; grid-template-columns: 1fr 380px; gap: 48;
-    max-width: var(--container); margin: 0 auto; align-items: center;
+    display: grid; grid-template-columns: 1fr 380px; gap: 48px;
+    max-width: var(--container); margin: 0 auto; align-items: start;
 }
 
 .hero-title {
@@ -371,9 +376,9 @@ h1, h2, h3, h4, h5, h6 {
 .state-sc, .location-state-badge.state-sc { background: var(--orange); }
 .location-city { font-size: 15px; font-weight: 800; margin-bottom: 6px; }
 .location-city a { color: var(--navy); }
-.location-city a:hover { color: var(--orange); }
+.location-city a:hover { color: var(--orange-text); }
 .location-card address { font-style: normal; font-size: 12px; color: var(--gray-600); margin-bottom: 4px; }
-.location-phone { display: block; font-size: 13px; color: var(--orange); font-weight: 700; margin: 6px 0; }
+.location-phone { display: block; font-size: 13px; color: var(--orange-text); font-weight: 700; margin: 6px 0; }
 .location-link { font-size: 12px; color: var(--navy); font-weight: 600; }
 
 /* ─── CASE RESULTS GRID ────────────────────────────────────────────────── */
@@ -430,7 +435,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .attorney-name { font-size: 14px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
 .attorney-title { display: block; font-size: 11px; color: var(--gray-500); }
-.attorney-bar { display: block; font-size: 11px; color: var(--orange); font-weight: 600; margin-top: 4px; }
+.attorney-bar { display: block; font-size: 11px; color: var(--orange-text); font-weight: 600; margin-top: 4px; }
 
 /* ─── CONTENT + SIDEBAR LAYOUT ─────────────────────────────────────────── */
 
@@ -566,7 +571,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex; justify-content: space-between; align-items: center;
     padding: 8px 0; font-size: 13px; color: var(--navy); text-decoration: none;
 }
-.sidebar-links li a:hover { color: var(--orange); }
+.sidebar-links li a:hover { color: var(--orange-text); }
 .sidebar-links .count { font-size: 10px; color: var(--gray-400); }
 
 /* Sidebar contact form */
@@ -698,7 +703,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex; align-items: center; justify-content: center; font-size: 22px;
 }
 .author-name a { font-weight: 800; color: var(--navy); font-size: 14px; }
-.author-title { display: block; font-size: 11px; color: var(--orange); font-weight: 600; margin-bottom: 8px; }
+.author-title { display: block; font-size: 11px; color: var(--orange-text); font-weight: 600; margin-bottom: 8px; }
 .author-bio { font-size: 13px; color: var(--gray-700); line-height: 1.75; margin: 0; }
 
 /* ─── BOTTOM CTA BOX ──────────────────────────────────────────────────── */
@@ -777,19 +782,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 .blog-card-body { padding: 16px; flex: 1; display: flex; flex-direction: column; }
 .blog-card-meta { display: flex; gap: 8px; align-items: center; margin-bottom: 8px; flex-wrap: wrap; }
-.blog-card-category { font-size: 9px; font-weight: 700; color: var(--orange); text-transform: uppercase; letter-spacing: 0.5px; }
+.blog-card-category { font-size: 9px; font-weight: 700; color: var(--orange-text); text-transform: uppercase; letter-spacing: 0.5px; }
 .meta-sep { color: var(--gray-300); }
 .blog-card-date { font-size: 10px; color: var(--gray-400); }
 .blog-card-title { margin-bottom: 8px; }
 .blog-card-title a { font-size: 14px; font-weight: 800; color: var(--navy); line-height: 1.35; }
-.blog-card-title a:hover { color: var(--orange); }
+.blog-card-title a:hover { color: var(--orange-text); }
 .blog-card-excerpt { font-size: 13px; color: var(--gray-600); line-height: 1.7; flex: 1; margin-bottom: 12px; }
 .blog-card-footer { display: flex; align-items: center; justify-content: space-between; }
 .blog-card-author { display: flex; align-items: center; gap: 8px; }
 .author-avatar { font-size: 12px; }
 .author-meta .author-name { display: block; font-size: 11px; font-weight: 700; color: var(--navy); }
 .author-meta .author-title { display: block; font-size: 9px; color: var(--gray-500); }
-.read-more-link { font-size: 12px; font-weight: 700; color: var(--orange); }
+.read-more-link { font-size: 12px; font-weight: 700; color: var(--orange-text); }
 
 /* Blog Post Single */
 .post-meta-bar {
@@ -860,7 +865,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px;
     font-size: 14px; color: var(--gray-700);
 }
-.credential-list .check { color: var(--orange); flex-shrink: 0; margin-top: 2px; }
+.credential-list .check { color: var(--orange-text); flex-shrink: 0; margin-top: 2px; }
 
 /* Jurisdiction badges sidebar */
 .jurisdiction-badges { display: flex; gap: 8px; margin-top: 12px; }
