@@ -249,7 +249,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero {
     background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 60%, var(--navy) 100%);
-    padding: 72px 24px; position: relative; overflow: hidden;
+    padding: 48px 24px; position: relative; overflow: hidden;
 }
 .hero-bg-overlay {
     position: absolute; top: 0; right: 0; width: 45%; height: 100%;
@@ -582,7 +582,99 @@ h1, h2, h3, h4, h5, h6 {
     background: var(--navy); border-radius: var(--radius-lg); padding: 24px; color: var(--white);
 }
 .form-title { font-weight: 800; font-size: 16px; margin-bottom: 4px; font-family: var(--font-serif); color: var(--white); }
-.form-subtitle { font-size: 12px; color: var(--text-light); margin-bottom: 20px; }
+.form-subtitle { font-size: 12px; color: var(--text-light); margin-bottom: 16px; }
+
+/* ─── HERO FORM — Gravity Forms overrides ─────────────────────────────── */
+.hero-form .sidebar-contact-form { padding: 14px; }
+.hero-form .form-title { font-size: 15px; margin-bottom: 1px; }
+.hero-form .form-subtitle { margin-bottom: 8px; font-size: 11px; }
+
+/* Shrink textarea to single line height */
+.hero-form #input_1_6,
+.hero-form .gform_wrapper textarea.textarea,
+.hero-form .gform_wrapper .gform-body textarea,
+.hero-form textarea[name="input_6"] {
+    height: 40px !important;
+    min-height: 40px !important;
+    max-height: 40px !important;
+    resize: none !important;
+}
+
+/* Hide captcha field completely */
+.hero-form #field_1_8,
+.hero-form .gfield[id="field_1_8"] {
+    display: none !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Show and style submit button — override screen-reader-text */
+.hero-form #gform_submit_button_1,
+.hero-form .gform_button.button.screen-reader-text,
+.hero-form .gform_footer input[type="submit"] {
+    display: block !important;
+    position: static !important;
+    clip: auto !important;
+    clip-path: none !important;
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+    white-space: normal !important;
+    margin: 0 !important;
+    padding: 12px 20px !important;
+    background: var(--orange) !important;
+    color: var(--navy) !important;
+    border: none !important;
+    border-radius: 6px !important;
+    font-weight: 800 !important;
+    font-size: 14px !important;
+    cursor: pointer !important;
+    font-family: var(--font-sans) !important;
+    letter-spacing: 0.3px;
+    -webkit-appearance: none;
+}
+.hero-form #gform_submit_button_1:hover,
+.hero-form .gform_footer input[type="submit"]:hover {
+    background: var(--orange-dark) !important;
+}
+
+/* Tighten Gravity Forms footer */
+.hero-form .gform_footer.top_label,
+.hero-form .gform-footer {
+    padding: 4px 0 0 !important;
+    margin: 0 !important;
+}
+
+/* Kill GF wrapper margins */
+.hero-form .gform_wrapper,
+.hero-form .gf_browser_chrome.gform_wrapper {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Kill GF field margins — use input margin-bottom for spacing instead */
+.hero-form .gform_wrapper .gfield {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.hero-form .gform_wrapper .gform_fields {
+    gap: 0 !important;
+}
+
+/* Tighten Gravity Forms field spacing in hero */
+.hero-form .gform_wrapper .gfield { margin-bottom: 0 !important; padding-bottom: 0 !important; }
+.hero-form .gform_wrapper input:not([type="submit"]):not([type="hidden"]),
+.hero-form .gform_wrapper textarea {
+    margin-bottom: 5px !important; padding: 8px 12px !important; font-size: 13px !important;
+}
+.hero-form .gform_wrapper .gfield_label { display: none !important; }
+.hero-form .gform_wrapper .gform_body { padding: 0 !important; }
+.hero-form .gform_wrapper { margin: 0 !important; padding: 0 !important; }
+
+/* Phone fallback under button */
+.hero-form .form-phone-fallback { margin-top: 2px; margin-bottom: 0; font-size: 11px; }
 .roden-contact-form input,
 .roden-contact-form textarea {
     width: 100%; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
