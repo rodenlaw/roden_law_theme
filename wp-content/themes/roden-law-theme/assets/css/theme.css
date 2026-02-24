@@ -76,6 +76,9 @@ h1, h2, h3, h4, h5, h6 {
 .text-white { color: var(--white) !important; }
 .text-light { color: var(--text-light) !important; }
 .text-accent { color: var(--orange-text); }
+.hero .text-accent,
+.bg-navy .text-accent,
+[style*="navy"] .text-accent { color: var(--orange); }
 
 .screen-reader-text {
     clip: rect(1px,1px,1px,1px); position: absolute; height: 1px; width: 1px; overflow: hidden;
