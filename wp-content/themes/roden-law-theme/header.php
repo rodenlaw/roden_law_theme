@@ -38,17 +38,19 @@ $firm = roden_firm_data();
 <!-- Main Navigation -->
 <header class="site-header" id="site-header">
     <div class="container header-inner">
-        <a href="<?php echo esc_url( home_url('/') ); ?>" class="site-brand" rel="home">
+        <div class="site-brand">
             <?php if ( has_custom_logo() ) : ?>
                 <?php the_custom_logo(); ?>
             <?php else : ?>
-                <div class="brand-icon">R</div>
-                <div class="brand-text">
-                    <span class="brand-name">RODEN LAW</span>
-                    <span class="brand-tagline">Personal Injury Attorneys</span>
-                </div>
+                <a href="<?php echo esc_url( home_url('/') ); ?>" class="brand-fallback" rel="home">
+                    <div class="brand-icon">R</div>
+                    <div class="brand-text">
+                        <span class="brand-name">RODEN LAW</span>
+                        <span class="brand-tagline">Personal Injury Attorneys</span>
+                    </div>
+                </a>
             <?php endif; ?>
-        </a>
+        </div>
 
         <nav class="main-nav" id="main-nav" role="navigation" aria-label="Primary Navigation">
             <ul class="nav-menu">

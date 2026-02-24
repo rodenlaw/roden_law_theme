@@ -145,11 +145,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Brand */
 .site-brand {
-    display: flex; align-items: center; gap: 10px; text-decoration: none;
+    display: flex; align-items: center; gap: 10px; flex-shrink: 0;
 }
+.site-brand a { text-decoration: none; display: flex; align-items: center; gap: 10px; }
 .site-brand img,
+.custom-logo-link img,
 .custom-logo {
-    max-height: 48px; width: auto; display: block;
+    max-height: 48px; width: auto; display: block; height: auto;
 }
 .brand-icon {
     width: 36px; height: 36px; background: var(--navy); border-radius: 4px;
