@@ -31,10 +31,17 @@ function roden_output_schema() {
     }
 
     // Single practice area: LegalService + FAQPage + Speakable
+    // Intersection pages also get LocalBusiness for the specific office
     if ( is_singular( 'practice_area' ) ) {
         roden_schema_legal_service( $firm, get_queried_object() );
         roden_schema_faqpage( get_queried_object_id() );
         roden_schema_speakable_practice_area( $firm, get_queried_object() );
+
+        // Intersection page: also output LocalBusiness for the specific office
+        $pa_office_key = get_post_meta( get_the_ID(), '_roden_pa_office_key', true );
+        if ( $pa_office_key && isset( $firm['offices'][ $pa_office_key ] ) ) {
+            roden_schema_local_business( $firm, $firm['offices'][ $pa_office_key ], $pa_office_key );
+        }
     }
 
     // Single location: LocalBusiness + LegalService
@@ -193,6 +200,14 @@ function roden_schema_breadcrumbs() {
 
     if ( is_singular( 'practice_area' ) ) {
         $items[] = [ '@type' => 'ListItem', 'position' => $pos++, 'name' => 'Practice Areas', 'item' => $firm['url'] . '/practice-areas/' ];
+        // If child page (intersection or sub-type), include parent pillar
+        $pa_post = get_post( get_the_ID() );
+        if ( $pa_post->post_parent ) {
+            $parent = get_post( $pa_post->post_parent );
+            if ( $parent ) {
+                $items[] = [ '@type' => 'ListItem', 'position' => $pos++, 'name' => $parent->post_title, 'item' => get_permalink( $parent ) ];
+            }
+        }
         $items[] = [ '@type' => 'ListItem', 'position' => $pos++, 'name' => get_the_title() ];
     } elseif ( is_singular( 'location' ) ) {
         $items[] = [ '@type' => 'ListItem', 'position' => $pos++, 'name' => 'Locations', 'item' => $firm['url'] . '/locations/' ];

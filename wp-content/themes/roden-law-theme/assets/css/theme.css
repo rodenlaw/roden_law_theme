@@ -801,7 +801,34 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--white); padding: 2px 7px; border-radius: 2px; margin-bottom: 6px;
 }
 .matrix-city { font-size: 13px; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+.matrix-city a { color: var(--navy); text-decoration: none; }
+.matrix-city a:hover { color: var(--orange); }
 .matrix-url { font-size: 9px; color: var(--gray-400); }
+.matrix-card-active {
+    border-color: var(--navy); border-top-color: var(--navy);
+    background: var(--navy); color: var(--white);
+}
+.matrix-card-active .matrix-city { color: var(--white); }
+.matrix-card-active .matrix-state { background: var(--orange); }
+.matrix-current {
+    display: block; font-size: 9px; color: rgba(255,255,255,0.6);
+    text-transform: uppercase; letter-spacing: 0.5px; margin-top: 4px;
+}
+
+/* ─── SUB-TYPE LINKS (pillar page clickable cards) ───────────────────── */
+
+a.sub-type-link { text-decoration: none; display: flex; }
+a.sub-type-link:hover { background: var(--light); border-color: var(--orange); }
+
+/* ─── SIDEBAR BACK LINK ──────────────────────────────────────────────── */
+
+.sidebar-back-link {
+    display: block; padding: 10px 14px; background: var(--light);
+    border: 1px solid var(--gray-300); border-radius: var(--radius);
+    color: var(--navy); font-weight: 700; font-size: 13px;
+    text-decoration: none; transition: var(--transition);
+}
+.sidebar-back-link:hover { background: var(--navy); color: var(--white); }
 
 /* ─── INLINE CTA BANNER ───────────────────────────────────────────────── */
 

@@ -16,6 +16,14 @@ function roden_breadcrumb_html() {
 
     if ( is_singular( 'practice_area' ) ) {
         $crumbs[] = '<a href="' . esc_url( home_url('/practice-areas/') ) . '">Practice Areas</a>';
+        // If child page (intersection or sub-type), show parent pillar
+        $pa_post = get_post( get_the_ID() );
+        if ( $pa_post->post_parent ) {
+            $parent = get_post( $pa_post->post_parent );
+            if ( $parent ) {
+                $crumbs[] = '<a href="' . esc_url( get_permalink( $parent ) ) . '">' . esc_html( $parent->post_title ) . '</a>';
+            }
+        }
         $crumbs[] = '<span class="breadcrumb-current">' . get_the_title() . '</span>';
     } elseif ( is_singular( 'location' ) ) {
         $crumbs[] = '<a href="' . esc_url( home_url('/locations/') ) . '">Locations</a>';
