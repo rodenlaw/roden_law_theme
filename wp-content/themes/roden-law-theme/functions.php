@@ -11,7 +11,7 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-define( 'RODEN_VERSION', '1.1.0' );
+define( 'RODEN_VERSION', '1.2.0' );
 define( 'RODEN_DIR', get_template_directory() );
 define( 'RODEN_URI', get_template_directory_uri() );
 
@@ -213,7 +213,7 @@ function roden_register_post_types() {
         ],
     ] );
 
-    // Locations
+    // Locations (hierarchical: state/city)
     register_post_type( 'location', [
         'labels' => [
             'name'          => 'Locations',
@@ -222,9 +222,10 @@ function roden_register_post_types() {
         ],
         'public'        => true,
         'has_archive'   => true,
+        'hierarchical'  => true,
         'rewrite'       => [ 'slug' => 'locations', 'with_front' => false ],
         'menu_icon'     => 'dashicons-location-alt',
-        'supports'      => [ 'title', 'editor', 'thumbnail', 'excerpt', 'revisions', 'custom-fields' ],
+        'supports'      => [ 'title', 'editor', 'thumbnail', 'excerpt', 'revisions', 'custom-fields', 'page-attributes' ],
         'show_in_rest'  => true,
     ] );
 
@@ -605,3 +606,116 @@ add_action( 'after_switch_theme', function() {
     roden_register_taxonomies();
     flush_rewrite_rules();
 } );
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   10. LOCATION HIERARCHY SETUP
+   Creates state parent posts (Georgia, South Carolina) and reparents city
+   location posts underneath them for /locations/georgia/savannah/ URL pattern.
+   Runs once, tracked by option flag. Re-run by deleting the option.
+   ────────────────────────────────────────────────────────────────────────── */
+
+add_action( 'init', 'roden_setup_location_hierarchy', 99 );
+function roden_setup_location_hierarchy() {
+    // Only run once (delete option 'roden_location_hierarchy_v1' to re-run)
+    if ( get_option( 'roden_location_hierarchy_v1' ) ) return;
+
+    // Only run in admin context or on a direct page load (avoid REST/AJAX/cron)
+    if ( wp_doing_ajax() || wp_doing_cron() || ( defined('REST_REQUEST') && REST_REQUEST ) ) return;
+
+    $firm = roden_firm_data();
+
+    // State parent definitions
+    $state_configs = [
+        'Georgia' => [
+            'slug'    => 'georgia',
+            'title'   => 'Georgia',
+            'content' => '<p>Roden Law serves injury victims throughout Georgia from our Savannah and Darien offices. Our Georgia personal injury attorneys have deep knowledge of state law, local courts, and the Georgia statute of limitations.</p>',
+            'excerpt' => 'Personal injury lawyers serving Georgia from offices in Savannah and Darien. Free consultations — no fees unless we win.',
+        ],
+        'South Carolina' => [
+            'slug'    => 'south-carolina',
+            'title'   => 'South Carolina',
+            'content' => '<p>Roden Law serves injury victims throughout South Carolina from our Charleston, Columbia, and Myrtle Beach offices. Our South Carolina personal injury attorneys understand state-specific comparative fault rules and the 3-year filing deadline.</p>',
+            'excerpt' => 'Personal injury lawyers serving South Carolina from offices in Charleston, Columbia, and Myrtle Beach. Free consultations — no fees unless we win.',
+        ],
+    ];
+
+    $parent_ids = [];
+
+    // Create or find state parent posts
+    foreach ( $state_configs as $state_name => $config ) {
+        // Check if a location post with this slug already exists
+        $existing = get_page_by_path( $config['slug'], OBJECT, 'location' );
+        if ( $existing ) {
+            $parent_ids[ $state_name ] = $existing->ID;
+            // Ensure it has no parent (it IS the parent)
+            if ( $existing->post_parent != 0 ) {
+                wp_update_post( [ 'ID' => $existing->ID, 'post_parent' => 0 ] );
+            }
+        } else {
+            $parent_ids[ $state_name ] = wp_insert_post( [
+                'post_title'   => $config['title'],
+                'post_name'    => $config['slug'],
+                'post_type'    => 'location',
+                'post_status'  => 'publish',
+                'post_content' => $config['content'],
+                'post_excerpt' => $config['excerpt'],
+                'menu_order'   => $state_name === 'Georgia' ? 1 : 2,
+            ] );
+        }
+    }
+
+    // Map offices to their state parent and assign clean city slugs
+    foreach ( $firm['offices'] as $key => $office ) {
+        $state_name = $office['state_full']; // 'Georgia' or 'South Carolina'
+        if ( ! isset( $parent_ids[ $state_name ] ) ) continue;
+
+        // Find location post by office key
+        $posts = get_posts( [
+            'post_type'      => 'location',
+            'meta_key'       => '_roden_office_key',
+            'meta_value'     => $key,
+            'posts_per_page' => 1,
+            'post_status'    => 'any',
+        ] );
+
+        if ( empty( $posts ) ) continue;
+        $post = $posts[0];
+
+        // Set parent to the state post + clean city-only slug
+        $city_slug = sanitize_title( $office['city'] ); // e.g. 'savannah', 'myrtle-beach'
+
+        wp_update_post( [
+            'ID'          => $post->ID,
+            'post_parent' => $parent_ids[ $state_name ],
+            'post_name'   => $city_slug,
+        ] );
+    }
+
+    // Flush rewrite rules so new hierarchy resolves
+    flush_rewrite_rules();
+
+    // Mark as complete
+    update_option( 'roden_location_hierarchy_v1', true );
+
+    // Log for debugging
+    if ( defined('WP_DEBUG') && WP_DEBUG ) {
+        error_log( 'Roden Law: Location hierarchy setup complete. State parents: ' . implode(', ', array_map(fn($id) => "#{$id}", $parent_ids)) );
+    }
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   11. LOCATION STATE META — auto-set _roden_state meta on state parent pages
+   ────────────────────────────────────────────────────────────────────────── */
+
+add_action( 'save_post_location', function( $post_id ) {
+    // If this is a top-level location post (no parent), it's a state page
+    $post = get_post( $post_id );
+    if ( $post->post_parent == 0 ) {
+        $slug = $post->post_name;
+        if ( in_array( $slug, ['georgia', 'south-carolina'] ) ) {
+            update_post_meta( $post_id, '_roden_is_state_page', true );
+            update_post_meta( $post_id, '_roden_state_slug', $slug );
+        }
+    }
+}, 10, 1 );

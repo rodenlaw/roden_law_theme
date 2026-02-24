@@ -385,6 +385,10 @@ h1, h2, h3, h4, h5, h6 {
 .location-card address { font-style: normal; font-size: 12px; color: var(--gray-600); margin-bottom: 4px; }
 .location-phone { display: block; font-size: 13px; color: var(--orange-text); font-weight: 700; margin: 6px 0; }
 .location-link { font-size: 12px; color: var(--navy); font-weight: 600; }
+.location-cards-grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+.location-cards-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.location-service-area { font-size: 12px; color: var(--gray-500); line-height: 1.5; margin: 6px 0 8px; }
+.location-card-header { margin-bottom: 8px; }
 
 /* ─── CASE RESULTS GRID ────────────────────────────────────────────────── */
 

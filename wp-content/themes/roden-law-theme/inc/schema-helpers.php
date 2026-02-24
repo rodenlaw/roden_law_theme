@@ -41,7 +41,19 @@ function roden_output_schema() {
     if ( is_singular( 'location' ) ) {
         $office_key = get_post_meta( get_the_ID(), '_roden_office_key', true );
         if ( $office_key && isset( $firm['offices'][ $office_key ] ) ) {
+            // City office page — single LocalBusiness
             roden_schema_local_business( $firm, $firm['offices'][ $office_key ], $office_key );
+        } else {
+            // State landing page — output LocalBusiness for each office in this state
+            $post_slug = get_post_field( 'post_name', get_the_ID() );
+            $state_abbr = $post_slug === 'georgia' ? 'GA' : ( $post_slug === 'south-carolina' ? 'SC' : '' );
+            if ( $state_abbr ) {
+                foreach ( $firm['offices'] as $key => $office ) {
+                    if ( $office['state'] === $state_abbr ) {
+                        roden_schema_local_business( $firm, $office, $key );
+                    }
+                }
+            }
         }
         roden_schema_faqpage( get_queried_object_id() );
     }
