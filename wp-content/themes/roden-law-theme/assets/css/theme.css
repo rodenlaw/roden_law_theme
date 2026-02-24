@@ -186,12 +186,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* Two-column mega dropdown for Practice Areas (first menu item) */
 .nav-menu > li:first-child > ul {
-    min-width: 440px; display: none;
+    min-width: 440px; max-width: 480px; display: none;
     flex-wrap: wrap; padding: 12px;
 }
 .nav-menu > li:first-child:hover > ul { display: flex; }
-.nav-menu > li:first-child > ul > li { width: 50%; }
-.nav-menu > li:first-child > ul > li a { padding: 6px 12px; font-size: 12px; }
+.nav-menu > li:first-child > ul > li { width: 50%; box-sizing: border-box; flex-shrink: 0; }
+.nav-menu > li:first-child > ul > li a { padding: 6px 12px; font-size: 12px; white-space: nowrap; }
 
 .header-phone { white-space: nowrap; }
 
