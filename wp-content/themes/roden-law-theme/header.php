@@ -51,15 +51,47 @@ $firm = roden_firm_data();
         </a>
 
         <nav class="main-nav" id="main-nav" role="navigation" aria-label="Primary Navigation">
-            <?php
-            wp_nav_menu( [
-                'theme_location' => 'primary',
-                'container'      => false,
-                'menu_class'     => 'nav-menu',
-                'fallback_cb'    => 'roden_fallback_nav',
-                'depth'          => 2,
-            ] );
-            ?>
+            <ul class="nav-menu">
+                <li class="menu-item menu-item-has-children">
+                    <a href="<?php echo esc_url( home_url('/practice-areas/') ); ?>">Practice Areas</a>
+                    <ul class="sub-menu">
+                        <?php
+                        $nav_pas = [
+                            'Car Accident'=>'car-accident-lawyers','Truck Accident'=>'truck-accident-lawyers',
+                            'Slip & Fall'=>'slip-and-fall-lawyers','Medical Malpractice'=>'medical-malpractice-lawyers',
+                            'Motorcycle Accident'=>'motorcycle-accident-lawyers','Wrongful Death'=>'wrongful-death-lawyers',
+                            "Workers' Comp"=>'workers-compensation-lawyers','Dog Bite'=>'dog-bite-lawyers',
+                            'Brain Injury'=>'brain-injury-lawyers','Spinal Cord Injury'=>'spinal-cord-injury-lawyers',
+                            'Maritime'=>'maritime-injury-lawyers','Product Liability'=>'product-liability-lawyers',
+                            'Boating Accident'=>'boating-accident-lawyers','Burn Injury'=>'burn-injury-lawyers',
+                            'Construction Accident'=>'construction-accident-lawyers','Nursing Home Abuse'=>'nursing-home-abuse-lawyers',
+                        ];
+                        foreach ( $nav_pas as $name => $slug ) :
+                        ?>
+                            <li><a href="<?php echo esc_url( home_url('/practice-areas/' . $slug . '/') ); ?>"><?php echo esc_html($name); ?></a></li>
+                        <?php endforeach; ?>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-has-children">
+                    <a href="<?php echo esc_url( home_url('/locations/') ); ?>">Locations</a>
+                    <ul class="sub-menu">
+                        <?php foreach ( $firm['offices'] as $key => $office ) : ?>
+                            <li><a href="<?php echo esc_url( home_url('/locations/' . ($office['state'] === 'GA' ? 'georgia' : 'south-carolina') . '/' . sanitize_title($office['city']) . '/') ); ?>"><?php echo esc_html($office['city'] . ', ' . $office['state']); ?></a></li>
+                        <?php endforeach; ?>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="<?php echo esc_url( home_url('/attorneys/') ); ?>">Attorneys</a></li>
+                <li class="menu-item"><a href="<?php echo esc_url( home_url('/results/') ); ?>">Results</a></li>
+                <li class="menu-item menu-item-has-children">
+                    <a href="<?php echo esc_url( home_url('/about-us/') ); ?>">About Us</a>
+                    <ul class="sub-menu">
+                        <li><a href="<?php echo esc_url( home_url('/blog/') ); ?>">Blog</a></li>
+                        <li><a href="<?php echo esc_url( home_url('/testimonials/') ); ?>">Testimonials</a></li>
+                        <li><a href="<?php echo esc_url( home_url('/class-actions/') ); ?>">Class Actions</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="<?php echo esc_url( home_url('/contact/') ); ?>">Contact</a></li>
+            </ul>
         </nav>
 
         <div class="header-cta">
@@ -82,14 +114,46 @@ $firm = roden_firm_data();
             <button class="mobile-close" id="mobile-close" aria-label="Close navigation">&times;</button>
         </div>
         <?php
-        wp_nav_menu( [
-            'theme_location' => 'mobile',
-            'container'      => false,
-            'menu_class'     => 'mobile-menu',
-            'fallback_cb'    => 'roden_fallback_nav',
-            'depth'          => 2,
-        ] );
+        // Mobile nav uses same structure as desktop
         ?>
+        <ul class="mobile-menu">
+            <li class="menu-item menu-item-has-children">
+                <a href="<?php echo esc_url( home_url('/practice-areas/') ); ?>">Practice Areas</a>
+                <ul class="sub-menu">
+                    <?php
+                    $mob_pas = [
+                        'Car Accident'=>'car-accident-lawyers','Truck Accident'=>'truck-accident-lawyers',
+                        'Slip & Fall'=>'slip-and-fall-lawyers','Medical Malpractice'=>'medical-malpractice-lawyers',
+                        'Motorcycle Accident'=>'motorcycle-accident-lawyers','Wrongful Death'=>'wrongful-death-lawyers',
+                        "Workers' Comp"=>'workers-compensation-lawyers','Dog Bite'=>'dog-bite-lawyers',
+                    ];
+                    foreach ( $mob_pas as $name => $slug ) :
+                    ?>
+                        <li><a href="<?php echo esc_url( home_url('/practice-areas/' . $slug . '/') ); ?>"><?php echo esc_html($name); ?></a></li>
+                    <?php endforeach; ?>
+                    <li><a href="<?php echo esc_url( home_url('/practice-areas/') ); ?>"><strong>View All →</strong></a></li>
+                </ul>
+            </li>
+            <li class="menu-item menu-item-has-children">
+                <a href="<?php echo esc_url( home_url('/locations/') ); ?>">Locations</a>
+                <ul class="sub-menu">
+                    <?php foreach ( $firm['offices'] as $key => $office ) : ?>
+                        <li><a href="<?php echo esc_url( home_url('/locations/' . ($office['state'] === 'GA' ? 'georgia' : 'south-carolina') . '/' . sanitize_title($office['city']) . '/') ); ?>"><?php echo esc_html($office['city'] . ', ' . $office['state']); ?></a></li>
+                    <?php endforeach; ?>
+                </ul>
+            </li>
+            <li class="menu-item"><a href="<?php echo esc_url( home_url('/attorneys/') ); ?>">Attorneys</a></li>
+            <li class="menu-item"><a href="<?php echo esc_url( home_url('/results/') ); ?>">Results</a></li>
+            <li class="menu-item menu-item-has-children">
+                <a href="<?php echo esc_url( home_url('/about-us/') ); ?>">About Us</a>
+                <ul class="sub-menu">
+                    <li><a href="<?php echo esc_url( home_url('/blog/') ); ?>">Blog</a></li>
+                    <li><a href="<?php echo esc_url( home_url('/testimonials/') ); ?>">Testimonials</a></li>
+                    <li><a href="<?php echo esc_url( home_url('/class-actions/') ); ?>">Class Actions</a></li>
+                </ul>
+            </li>
+            <li class="menu-item"><a href="<?php echo esc_url( home_url('/contact/') ); ?>">Contact</a></li>
+        </ul>
         <div class="mobile-nav-cta">
             <a href="tel:<?php echo esc_attr( $firm['phone_e164'] ); ?>" class="btn btn-primary btn-block">
                 📞 Call <?php echo esc_html( $firm['phone'] ); ?>
