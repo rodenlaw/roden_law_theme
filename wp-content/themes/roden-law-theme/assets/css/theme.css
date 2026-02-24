@@ -389,6 +389,9 @@ h1, h2, h3, h4, h5, h6 {
 .location-cards-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
 .location-service-area { font-size: 12px; color: var(--gray-500); line-height: 1.5; margin: 6px 0 8px; }
 .location-card-header { margin-bottom: 8px; }
+.location-card-header h3 {
+    font-size: 18px; font-weight: 800; color: var(--navy); margin: 4px 0 0;
+}
 
 /* ─── CASE RESULTS GRID ────────────────────────────────────────────────── */
 
@@ -466,6 +469,20 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 10px; border-bottom: 2px solid var(--gray-100);
 }
 
+/* Direct h2 in main-content (outside .content-section) */
+.main-content > h2 {
+    font-size: 22px; font-weight: 800; color: var(--navy); margin-bottom: 16px;
+    padding-bottom: 10px; border-bottom: 2px solid var(--gray-100);
+}
+.main-content > p {
+    font-size: 14px; line-height: 1.85; color: var(--gray-700); margin-bottom: 16px;
+}
+
+/* Result cards inside main-content need navy background */
+.main-content .result-card {
+    background: var(--navy); color: var(--white);
+}
+
 .entry-content { margin-bottom: 32px; }
 .entry-content p { margin-bottom: 16px; font-size: 14px; line-height: 1.85; color: var(--gray-700); }
 .entry-content h2 { font-size: 22px; margin: 32px 0 14px; }
@@ -520,8 +537,9 @@ h1, h2, h3, h4, h5, h6 {
 .state-law-box {
     background: rgba(27,58,107,0.04); border: 1px solid rgba(27,58,107,0.15);
     border-left: 4px solid var(--navy); border-radius: var(--radius);
-    padding: 22px; margin-bottom: 28px;
+    padding: 22px; margin-bottom: 0;
 }
+.state-law-box:last-child { margin-bottom: 0; }
 .state-law-box h3 { font-size: 15px; font-weight: 800; color: var(--navy); margin-bottom: 14px; }
 .law-details-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .law-label {
@@ -542,7 +560,8 @@ h1, h2, h3, h4, h5, h6 {
     display: block; font-size: 11px; color: var(--text-light);
     text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;
 }
-.nap-col span { display: block; font-size: 13px; color: #d0d8e8; }
+.nap-col > span { display: block; font-size: 13px; color: #d0d8e8; }
+.nap-col span span { display: inline; }
 .nap-phone { font-size: 18px; color: var(--orange) !important; font-weight: 700; }
 .nap-hours { font-size: 11px; color: var(--text-light); margin-top: 4px; }
 .nap-actions { margin-top: 14px; display: flex; gap: 10px; }
@@ -724,6 +743,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Sidebar NAP Card */
 .sidebar-nap-card {
     border: 2px solid var(--navy) !important;
+}
+.sidebar-nap-card address {
+    font-style: normal; font-size: 13px; color: var(--gray-700); line-height: 1.6; margin-bottom: 8px;
 }
 .nap-card-name { font-weight: 800; color: var(--navy); font-size: 14px; margin-bottom: 4px; }
 .nap-card-phone {

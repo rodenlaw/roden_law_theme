@@ -272,33 +272,52 @@ $map_src    = 'https://maps.google.com/maps?q=' . $map_query . '&output=embed&z=
 
         <article class="main-content">
 
-            <h2>About Our <?php echo esc_html($office['city']); ?> Office</h2>
-            <div class="entry-content">
-                <?php the_content(); ?>
+            <div class="content-section">
+                <h2>About Our <?php echo esc_html($office['city']); ?> Office</h2>
+                <div class="entry-content">
+                    <?php
+                    $content = get_the_content();
+                    if ( trim( $content ) ) {
+                        the_content();
+                    } else {
+                        echo '<p>Roden Law\'s ' . esc_html($office['city']) . ' office serves injury victims throughout the region. Our ' . esc_html($office['city']) . ' personal injury attorneys handle all types of injury claims under ' . esc_html($office['state_full']) . ' law.</p>';
+                        echo '<p>Serving ' . esc_html($office['service_area']) . '</p>';
+                    }
+                    ?>
+                    <p>Our <?php echo esc_html($office['city']); ?> office handles all personal injury matters under <?php echo esc_html($office['state_full']); ?> law with deep knowledge of local courts including the <?php echo esc_html($office['court']); ?>.</p>
+                </div>
             </div>
 
-            <p>Our <?php echo esc_html($office['city']); ?> office serves injury victims throughout the region, handling all personal injury matters under <?php echo esc_html($office['state_full']); ?> law with deep knowledge of local courts including the <?php echo esc_html($office['court']); ?>.</p>
-
             <!-- State Law Box -->
-            <div class="state-law-box">
-                <h3>⚖ <?php echo esc_html($office['state_full']); ?> Personal Injury Law</h3>
-                <div class="law-details-grid">
-                    <div class="law-detail">
-                        <span class="law-label">Statute of Limitations</span>
-                        <span class="law-value"><?php echo esc_html( $office['sol'] ); ?></span>
-                    </div>
-                    <div class="law-detail">
-                        <span class="law-label">Comparative Fault</span>
-                        <span class="law-value"><?php echo esc_html( $office['fault'] ); ?></span>
+            <div class="content-section">
+                <div class="state-law-box">
+                    <h3>⚖ <?php echo esc_html($office['state_full']); ?> Personal Injury Law</h3>
+                    <div class="law-details-grid">
+                        <div class="law-detail">
+                            <span class="law-label">Statute of Limitations</span>
+                            <span class="law-value"><?php echo esc_html( $office['sol'] ); ?></span>
+                        </div>
+                        <div class="law-detail">
+                            <span class="law-label">Comparative Fault</span>
+                            <span class="law-value"><?php echo esc_html( $office['fault'] ); ?></span>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Attorneys -->
+            <?php
+            $atty_query = new WP_Query([
+                'post_type'      => 'attorney',
+                'posts_per_page' => 10,
+                'meta_query'     => $office_key ? [[ 'key' => '_roden_office_key', 'value' => $office_key ]] : [],
+            ]);
+            if ( $atty_query->have_posts() ) : ?>
             <div class="content-section">
                 <h2>Your <?php echo esc_html($office['city']); ?> Attorneys</h2>
                 <?php roden_attorneys_grid( [ 'office_key' => $office_key, 'columns' => 3 ] ); ?>
             </div>
+            <?php endif; wp_reset_postdata(); ?>
 
             <!-- Case Results -->
             <div class="content-section">
