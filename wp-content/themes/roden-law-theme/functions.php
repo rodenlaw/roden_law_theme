@@ -616,10 +616,10 @@ add_action( 'after_switch_theme', function() {
 
 add_action( 'init', 'roden_setup_location_hierarchy', 99 );
 function roden_setup_location_hierarchy() {
-    // Only run once (delete option 'roden_location_hierarchy_v1' to re-run)
-    if ( get_option( 'roden_location_hierarchy_v1' ) ) return;
+    // Only run once per version (delete option to re-run)
+    if ( get_option( 'roden_location_hierarchy_v2' ) ) return;
 
-    // Only run in admin context or on a direct page load (avoid REST/AJAX/cron)
+    // Only run on normal page loads (avoid REST/AJAX/cron)
     if ( wp_doing_ajax() || wp_doing_cron() || ( defined('REST_REQUEST') && REST_REQUEST ) ) return;
 
     $firm = roden_firm_data();
@@ -644,16 +644,14 @@ function roden_setup_location_hierarchy() {
 
     // Create or find state parent posts
     foreach ( $state_configs as $state_name => $config ) {
-        // Check if a location post with this slug already exists
         $existing = get_page_by_path( $config['slug'], OBJECT, 'location' );
         if ( $existing ) {
             $parent_ids[ $state_name ] = $existing->ID;
-            // Ensure it has no parent (it IS the parent)
             if ( $existing->post_parent != 0 ) {
                 wp_update_post( [ 'ID' => $existing->ID, 'post_parent' => 0 ] );
             }
         } else {
-            $parent_ids[ $state_name ] = wp_insert_post( [
+            $id = wp_insert_post( [
                 'post_title'   => $config['title'],
                 'post_name'    => $config['slug'],
                 'post_type'    => 'location',
@@ -662,45 +660,103 @@ function roden_setup_location_hierarchy() {
                 'post_excerpt' => $config['excerpt'],
                 'menu_order'   => $state_name === 'Georgia' ? 1 : 2,
             ] );
+            if ( ! is_wp_error( $id ) ) {
+                $parent_ids[ $state_name ] = $id;
+            }
         }
     }
 
-    // Map offices to their state parent and assign clean city slugs
+    // Process each office: find existing post by meta/title/slug, or create new
     foreach ( $firm['offices'] as $key => $office ) {
-        $state_name = $office['state_full']; // 'Georgia' or 'South Carolina'
+        $state_name = $office['state_full'];
         if ( ! isset( $parent_ids[ $state_name ] ) ) continue;
 
-        // Find location post by office key
-        $posts = get_posts( [
-            'post_type'      => 'location',
-            'meta_key'       => '_roden_office_key',
-            'meta_value'     => $key,
-            'posts_per_page' => 1,
-            'post_status'    => 'any',
-        ] );
-
-        if ( empty( $posts ) ) continue;
-        $post = $posts[0];
-
-        // Set parent to the state post + clean city-only slug
         $city_slug = sanitize_title( $office['city'] ); // e.g. 'savannah', 'myrtle-beach'
+        $found_post = null;
 
-        wp_update_post( [
-            'ID'          => $post->ID,
+        // Strategy 1: Find by _roden_office_key meta
+        $meta_posts = get_posts( [
+            'post_type' => 'location', 'meta_key' => '_roden_office_key',
+            'meta_value' => $key, 'posts_per_page' => 1, 'post_status' => 'any',
+        ] );
+        if ( ! empty( $meta_posts ) ) {
+            $found_post = $meta_posts[0];
+        }
+
+        // Strategy 2: Match by post title containing city name
+        if ( ! $found_post ) {
+            $title_posts = get_posts( [
+                'post_type' => 'location', 'posts_per_page' => -1,
+                'post_status' => 'any', 'post_parent' => 0,
+            ] );
+            foreach ( $title_posts as $p ) {
+                // Match: title contains city name (e.g. "Savannah, Georgia" contains "Savannah")
+                if ( stripos( $p->post_title, $office['city'] ) !== false ) {
+                    // Make sure it's not a state parent
+                    if ( ! in_array( $p->post_name, ['georgia', 'south-carolina'] ) ) {
+                        $found_post = $p;
+                        break;
+                    }
+                }
+            }
+        }
+
+        // Strategy 3: Match by slug containing city slug
+        if ( ! $found_post ) {
+            $slug_posts = get_posts( [
+                'post_type' => 'location', 'posts_per_page' => -1,
+                'post_status' => 'any',
+            ] );
+            foreach ( $slug_posts as $p ) {
+                if ( stripos( $p->post_name, $city_slug ) !== false ) {
+                    if ( ! in_array( $p->post_name, ['georgia', 'south-carolina'] ) ) {
+                        $found_post = $p;
+                        break;
+                    }
+                }
+            }
+        }
+
+        // Strategy 4: Create new post if nothing found
+        if ( ! $found_post ) {
+            $new_id = wp_insert_post( [
+                'post_title'   => $office['city'] . ', ' . $office['state'],
+                'post_name'    => $city_slug,
+                'post_type'    => 'location',
+                'post_status'  => 'publish',
+                'post_parent'  => $parent_ids[ $state_name ],
+                'post_content' => sprintf(
+                    '<p>Roden Law\'s %s office serves injury victims throughout the region. Our %s personal injury attorneys handle all types of injury claims under %s law.</p><p>Serving %s</p>',
+                    $office['city'], $office['city'], $office['state_full'], $office['service_area']
+                ),
+                'post_excerpt' => sprintf( 'Personal injury lawyer in %s, %s. Free consultation — no fees unless we win. Call %s.', $office['city'], $office['state'], $office['phone'] ),
+            ] );
+            if ( ! is_wp_error( $new_id ) ) {
+                update_post_meta( $new_id, '_roden_office_key', $key );
+            }
+            continue; // Already parented and slugged correctly
+        }
+
+        // Update existing post: reparent + clean slug + set meta
+        $update_data = [
+            'ID'          => $found_post->ID,
             'post_parent' => $parent_ids[ $state_name ],
             'post_name'   => $city_slug,
-        ] );
+        ];
+        wp_update_post( $update_data );
+
+        // Ensure office key meta is set
+        update_post_meta( $found_post->ID, '_roden_office_key', $key );
     }
 
     // Flush rewrite rules so new hierarchy resolves
     flush_rewrite_rules();
 
     // Mark as complete
-    update_option( 'roden_location_hierarchy_v1', true );
+    update_option( 'roden_location_hierarchy_v2', true );
 
-    // Log for debugging
     if ( defined('WP_DEBUG') && WP_DEBUG ) {
-        error_log( 'Roden Law: Location hierarchy setup complete. State parents: ' . implode(', ', array_map(fn($id) => "#{$id}", $parent_ids)) );
+        error_log( 'Roden Law: Location hierarchy v2 setup complete. State parents: ' . implode(', ', array_map(fn($id) => "#{$id}", $parent_ids)) );
     }
 }
 
