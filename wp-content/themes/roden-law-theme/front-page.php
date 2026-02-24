@@ -66,40 +66,29 @@ $firm = roden_firm_data();
             <p class="section-subtitle">We handle all types of personal injury cases throughout Georgia and South Carolina.</p>
         </div>
         <?php
-        $pa_posts = get_posts(['post_type'=>'practice_area','posts_per_page'=>-1,'orderby'=>'menu_order','order'=>'ASC']);
-        // Also check the old CPT slug with hyphen
-        if ( empty($pa_posts) ) {
-            $pa_posts = get_posts(['post_type'=>'practice-area','posts_per_page'=>-1,'orderby'=>'menu_order','order'=>'ASC']);
+        // Homepage always shows the 16 core practice areas (not intersection pages from old theme)
+        $core_pas = [
+            'Car Accident'=>'car-accident-lawyers','Truck Accident'=>'truck-accident-lawyers',
+            'Slip & Fall'=>'slip-and-fall-lawyers','Medical Malpractice'=>'medical-malpractice-lawyers',
+            'Motorcycle Accident'=>'motorcycle-accident-lawyers','Wrongful Death'=>'wrongful-death-lawyers',
+            "Workers' Comp"=>'workers-compensation-lawyers','Dog Bite'=>'dog-bite-lawyers',
+            'Brain Injury'=>'brain-injury-lawyers','Spinal Cord Injury'=>'spinal-cord-injury-lawyers',
+            'Maritime'=>'maritime-injury-lawyers','Product Liability'=>'product-liability-lawyers',
+            'Boating Accident'=>'boating-accident-lawyers','Burn Injury'=>'burn-injury-lawyers',
+            'Construction Accident'=>'construction-accident-lawyers','Nursing Home Abuse'=>'nursing-home-abuse-lawyers',
+        ];
+        // Check if matching CPT posts exist and use their permalinks
+        echo '<div class="practice-areas-grid cols-4">';
+        foreach ( $core_pas as $name => $slug ) {
+            // Try to find an existing post with this slug
+            $existing = get_page_by_path( $slug, OBJECT, ['practice_area','practice-area'] );
+            $url = $existing ? get_permalink($existing) : home_url('/practice-areas/' . $slug . '/');
+            echo '<a href="' . esc_url($url) . '" class="practice-area-card">';
+            echo '<span class="pa-icon">⚖</span>';
+            echo '<span class="pa-name">' . esc_html($name) . '</span>';
+            echo '</a>';
         }
-        if ( ! empty($pa_posts) ) :
-            echo '<div class="practice-areas-grid cols-4">';
-            foreach ( $pa_posts as $pa ) {
-                echo '<a href="' . esc_url(get_permalink($pa)) . '" class="practice-area-card">';
-                echo '<span class="pa-icon">⚖</span>';
-                echo '<span class="pa-name">' . esc_html($pa->post_title) . '</span>';
-                echo '</a>';
-            }
-            echo '</div>';
-        else :
-            $fallback_pas = [
-                'Car Accident'=>'car-accident-lawyers','Truck Accident'=>'truck-accident-lawyers',
-                'Slip & Fall'=>'slip-and-fall-lawyers','Medical Malpractice'=>'medical-malpractice-lawyers',
-                'Motorcycle Accident'=>'motorcycle-accident-lawyers','Wrongful Death'=>'wrongful-death-lawyers',
-                "Workers' Comp"=>'workers-compensation-lawyers','Dog Bite'=>'dog-bite-lawyers',
-                'Brain Injury'=>'brain-injury-lawyers','Spinal Cord Injury'=>'spinal-cord-injury-lawyers',
-                'Maritime'=>'maritime-injury-lawyers','Product Liability'=>'product-liability-lawyers',
-                'Boating Accident'=>'boating-accident-lawyers','Burn Injury'=>'burn-injury-lawyers',
-                'Construction Accident'=>'construction-accident-lawyers','Nursing Home Abuse'=>'nursing-home-abuse-lawyers',
-            ];
-            echo '<div class="practice-areas-grid cols-4">';
-            foreach ( $fallback_pas as $name => $slug ) {
-                echo '<a href="' . esc_url(home_url('/practice-areas/' . $slug . '/')) . '" class="practice-area-card">';
-                echo '<span class="pa-icon">⚖</span>';
-                echo '<span class="pa-name">' . esc_html($name) . '</span>';
-                echo '</a>';
-            }
-            echo '</div>';
-        endif;
+        echo '</div>';
         ?>
     </div>
 </section>
