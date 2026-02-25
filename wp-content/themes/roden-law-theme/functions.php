@@ -19,6 +19,7 @@ require_once get_template_directory() . '/inc/firm-data.php';
 require_once get_template_directory() . '/inc/custom-post-types.php';
 require_once get_template_directory() . '/inc/rewrite-rules.php';
 require_once get_template_directory() . '/inc/schema-helpers.php';
+require_once get_template_directory() . '/inc/template-tags.php';
 
 /* ==========================================================================
    2. THEME SETUP
