@@ -18,7 +18,7 @@ defined( 'ABSPATH' ) || exit;
  * @return array Firm data including offices, attorneys, stats, social, jurisdiction, and practice areas.
  */
 function roden_firm_data() {
-    return array(
+    $data = array(
         'name'         => 'Roden Law',
         'legal_entity' => 'Roden Love LLC',
         'vanity_phone' => '1-844-RESULTS',
@@ -246,6 +246,40 @@ function roden_firm_data() {
             'pedestrian-accident-lawyers',
         ),
     );
+
+    /* ------------------------------------------------------------------
+       Convenience aliases — keep templates working without mass rename
+       ------------------------------------------------------------------ */
+
+    // Top-level aliases (from vanity_phone + trust_stats)
+    $data['phone']         = $data['vanity_phone'];
+    $data['phone_e164']    = $data['phone_raw'];
+    $data['recovered']     = $data['trust_stats']['recovered'];
+    $data['rating']        = $data['trust_stats']['rating'];
+    $data['reviews']       = $data['trust_stats']['reviews'];
+    $data['cases_handled'] = $data['trust_stats']['cases'];
+    $data['experience']    = $data['trust_stats']['experience'] . ' years';
+
+    // Per-office aliases
+    foreach ( $data['offices'] as $key => &$office ) {
+        $office['address']     = $office['street'];
+        $office['phone_e164']  = $office['phone_raw'];
+        $office['lat']         = $office['latitude'];
+        $office['lng']         = $office['longitude'];
+        $office['map_url']     = 'https://www.google.com/maps/dir/?api=1&destination='
+                                 . $office['latitude'] . ',' . $office['longitude'];
+
+        // Jurisdiction-derived fields
+        $state_key = $office['state']; // 'GA' or 'SC'
+        if ( isset( $data['jurisdiction'][ $state_key ] ) ) {
+            $j = $data['jurisdiction'][ $state_key ];
+            $office['sol']   = $j['statute_years'] . ' years (' . $j['statute_cite'] . ')';
+            $office['fault'] = $j['comp_fault_rule'];
+        }
+    }
+    unset( $office ); // break reference
+
+    return $data;
 }
 
 /* ==========================================================================

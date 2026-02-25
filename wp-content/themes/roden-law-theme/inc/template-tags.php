@@ -370,11 +370,11 @@ function roden_faq_section( $post_id = null ) {
             <?php foreach ( $faqs as $i => $faq ) : ?>
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-<?php echo $i; ?>">
-                        <span><?php echo esc_html( $faq['q'] ); ?></span>
+                        <span><?php echo esc_html( $faq['question'] ); ?></span>
                         <span class="faq-toggle">+</span>
                     </button>
                     <div class="faq-answer" id="faq-answer-<?php echo $i; ?>" hidden>
-                        <p><?php echo wp_kses_post( $faq['a'] ); ?></p>
+                        <p><?php echo wp_kses_post( $faq['answer'] ); ?></p>
                     </div>
                 </div>
             <?php endforeach; ?>

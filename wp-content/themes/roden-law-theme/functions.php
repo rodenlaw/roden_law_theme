@@ -103,6 +103,15 @@ function roden_add_meta_boxes() {
         'side'
     );
 
+    // PA Office Key — for intersection pages (practice_area CPT)
+    add_meta_box(
+        'roden_pa_office_key',
+        __( 'Intersection Office Key', 'roden-law' ),
+        'roden_pa_office_key_meta_box',
+        'practice_area',
+        'side'
+    );
+
     // Jurisdiction — for practice areas and locations
     add_meta_box(
         'roden_jurisdiction',
@@ -160,6 +169,27 @@ function roden_office_key_meta_box( $post ) {
         </select>
     </p>
     <p class="description"><?php esc_html_e( 'Links this location page to firm data config.', 'roden-law' ); ?></p>
+    <?php
+}
+
+/** PA Office Key meta box callback (for intersection pages). */
+function roden_pa_office_key_meta_box( $post ) {
+    wp_nonce_field( 'roden_pa_office_key_nonce', '_roden_pa_office_key_nonce' );
+    $value = get_post_meta( $post->ID, '_roden_pa_office_key', true );
+    $firm  = roden_firm_data();
+    ?>
+    <p>
+        <label for="roden_pa_office_key"><?php esc_html_e( 'Office (intersection pages only):', 'roden-law' ); ?></label><br>
+        <select id="roden_pa_office_key" name="_roden_pa_office_key" style="width:100%;">
+            <option value=""><?php esc_html_e( '— None (pillar or sub-type) —', 'roden-law' ); ?></option>
+            <?php foreach ( $firm['offices'] as $key => $office ) : ?>
+                <option value="<?php echo esc_attr( $key ); ?>" <?php selected( $value, $key ); ?>>
+                    <?php echo esc_html( $office['city'] . ', ' . $office['state'] . ' (' . $key . ')' ); ?>
+                </option>
+            <?php endforeach; ?>
+        </select>
+    </p>
+    <p class="description"><?php esc_html_e( 'Set this for intersection pages (PA x Location). Leave blank for pillar or sub-type pages.', 'roden-law' ); ?></p>
     <?php
 }
 
@@ -263,6 +293,13 @@ add_action( 'save_post', 'roden_save_meta_fields' );
 function roden_save_meta_fields( $post_id ) {
     if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
         return;
+    }
+
+    // PA Office Key (intersection pages)
+    if ( isset( $_POST['_roden_pa_office_key_nonce'] ) &&
+         wp_verify_nonce( $_POST['_roden_pa_office_key_nonce'], 'roden_pa_office_key_nonce' ) ) {
+        update_post_meta( $post_id, '_roden_pa_office_key',
+            sanitize_text_field( $_POST['_roden_pa_office_key'] ?? '' ) );
     }
 
     // Office Key
