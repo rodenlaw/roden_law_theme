@@ -6,6 +6,9 @@
  */
 
 get_header();
+if ( ! function_exists( 'roden_breadcrumb_html' ) ) {
+    require_once get_template_directory() . '/inc/template-tags.php';
+}
 $firm = roden_firm_data();
 ?>
 

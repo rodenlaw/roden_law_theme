@@ -10,6 +10,9 @@
  */
 
 get_header();
+if ( ! function_exists( 'roden_breadcrumb_html' ) ) {
+    require_once get_template_directory() . '/inc/template-tags.php';
+}
 $firm       = roden_firm_data();
 $post_id    = get_the_ID();
 $office_key = get_post_meta( $post_id, '_roden_office_key', true );

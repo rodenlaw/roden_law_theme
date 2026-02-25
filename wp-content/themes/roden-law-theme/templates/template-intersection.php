@@ -10,6 +10,11 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
+// Ensure template helpers are available (guard against include-chain failures)
+if ( ! function_exists( 'roden_breadcrumb_html' ) ) {
+    require_once get_template_directory() . '/inc/template-tags.php';
+}
+
 /* ── Gather data ─────────────────────────────────────────────────────── */
 
 $firm    = roden_firm_data();

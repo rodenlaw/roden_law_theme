@@ -21,6 +21,11 @@ require_once get_template_directory() . '/inc/rewrite-rules.php';
 require_once get_template_directory() . '/inc/schema-helpers.php';
 require_once get_template_directory() . '/inc/template-tags.php';
 
+// Belt-and-suspenders: verify template-tags loaded (require retries if require_once cached a failure)
+if ( ! function_exists( 'roden_breadcrumb_html' ) ) {
+    require get_template_directory() . '/inc/template-tags.php';
+}
+
 /* ==========================================================================
    2. THEME SETUP
    ========================================================================== */
