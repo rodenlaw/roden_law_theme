@@ -1,91 +1,185 @@
 <?php
 /**
- * Theme Footer
+ * Site Footer
  *
- * @package RodenLaw
+ * 4-column layout: firm info + social links, practice area links, 5-office NAP
+ * grid, and a mini contact form. Copyright bar at bottom.
+ *
+ * @package Roden_Law
  */
-$firm = roden_firm_data();
+
+defined( 'ABSPATH' ) || exit;
+
+$firm  = roden_firm_data();
+$year  = gmdate( 'Y' );
+
+// Practice areas for footer links
+$footer_practice_areas = array(
+    'Car Accident'         => 'car-accident-lawyers',
+    'Truck Accident'       => 'truck-accident-lawyers',
+    'Slip & Fall'          => 'slip-and-fall-lawyers',
+    'Motorcycle Accident'  => 'motorcycle-accident-lawyers',
+    'Medical Malpractice'  => 'medical-malpractice-lawyers',
+    'Wrongful Death'       => 'wrongful-death-lawyers',
+    'Workers\' Comp'       => 'workers-compensation-lawyers',
+    'Dog Bite'             => 'dog-bite-lawyers',
+    'Brain Injury'         => 'brain-injury-lawyers',
+);
 ?>
-</main>
+    </div><!-- .site-content -->
 
-<footer class="site-footer">
-    <div class="container footer-grid">
-        <!-- Column 1: Brand + Description -->
-        <div class="footer-col footer-brand-col">
-            <div class="footer-brand-name">Roden Law</div>
-            <p class="footer-desc"><?php echo esc_html( $firm['recovered'] ); ?> recovered for injury victims across Georgia and South Carolina. No fees unless we win.</p>
-            <div class="footer-social">
-                <?php foreach ( $firm['same_as'] as $url ) :
-                    $icon = '🔗';
-                    if ( str_contains($url, 'facebook') ) $icon = 'f';
-                    elseif ( str_contains($url, 'linkedin') ) $icon = 'in';
-                    elseif ( str_contains($url, 'twitter') || str_contains($url, 'x.com') ) $icon = 'x';
-                    elseif ( str_contains($url, 'youtube') ) $icon = '▶';
-                    ?>
-                    <a href="<?php echo esc_url( $url ); ?>" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Social Media"><?php echo esc_html($icon); ?></a>
-                <?php endforeach; ?>
-            </div>
-        </div>
+    <!-- Site Footer -->
+    <footer id="colophon" class="site-footer" role="contentinfo">
+        <div class="site-container">
 
-        <!-- Column 2: Practice Areas -->
-        <div class="footer-col">
-            <h4 class="footer-heading">Practice Areas</h4>
-            <?php
-            $pas = get_posts(['post_type'=>'practice_area','posts_per_page'=>8,'orderby'=>'menu_order','order'=>'ASC']);
-            if ( $pas ) :
-                echo '<ul class="footer-links">';
-                foreach ( $pas as $pa ) {
-                    echo '<li><a href="' . esc_url(get_permalink($pa)) . '">→ ' . esc_html($pa->post_title) . '</a></li>';
-                }
-                echo '</ul>';
-            else :
-                echo '<ul class="footer-links">';
-                foreach (['Car Accident','Truck Accident','Slip & Fall','Medical Malpractice','Wrongful Death'] as $p) {
-                    echo '<li><a href="#">→ ' . esc_html($p) . '</a></li>';
-                }
-                echo '</ul>';
-            endif;
-            ?>
-        </div>
+            <!-- Footer 4-Column Grid -->
+            <div class="footer-grid">
 
-        <!-- Column 3: Offices -->
-        <div class="footer-col">
-            <h4 class="footer-heading">Our Offices</h4>
-            <div class="footer-offices">
-                <?php foreach ( $firm['offices'] as $key => $office ) : ?>
-                    <div class="footer-office">
-                        <strong><?php echo esc_html( $office['city'] . ', ' . $office['state'] ); ?></strong>
-                        <a href="tel:<?php echo esc_attr( $office['phone_e164'] ); ?>"><?php echo esc_html( $office['phone'] ); ?></a>
+                <!-- Column 1: Firm Info -->
+                <div class="footer-col footer-about">
+                    <h4 class="footer-heading"><?php echo esc_html( $firm['name'] ); ?></h4>
+                    <p class="footer-description">
+                        <?php echo esc_html( $firm['trust_stats']['recovered'] ); ?>
+                        <?php esc_html_e( 'recovered for injury victims across Georgia and South Carolina. No fees unless we win.', 'roden-law' ); ?>
+                    </p>
+                    <div class="footer-social">
+                        <?php if ( ! empty( $firm['social']['facebook'] ) ) : ?>
+                            <a href="<?php echo esc_url( $firm['social']['facebook'] ); ?>"
+                               aria-label="<?php esc_attr_e( 'Facebook', 'roden-law' ); ?>"
+                               target="_blank" rel="noopener noreferrer">
+                                <span aria-hidden="true">f</span>
+                            </a>
+                        <?php endif; ?>
+                        <?php if ( ! empty( $firm['social']['linkedin'] ) ) : ?>
+                            <a href="<?php echo esc_url( $firm['social']['linkedin'] ); ?>"
+                               aria-label="<?php esc_attr_e( 'LinkedIn', 'roden-law' ); ?>"
+                               target="_blank" rel="noopener noreferrer">
+                                <span aria-hidden="true">in</span>
+                            </a>
+                        <?php endif; ?>
+                        <?php if ( ! empty( $firm['social']['twitter'] ) ) : ?>
+                            <a href="<?php echo esc_url( $firm['social']['twitter'] ); ?>"
+                               aria-label="<?php esc_attr_e( 'X / Twitter', 'roden-law' ); ?>"
+                               target="_blank" rel="noopener noreferrer">
+                                <span aria-hidden="true">x</span>
+                            </a>
+                        <?php endif; ?>
+                        <?php if ( ! empty( $firm['social']['youtube'] ) ) : ?>
+                            <a href="<?php echo esc_url( $firm['social']['youtube'] ); ?>"
+                               aria-label="<?php esc_attr_e( 'YouTube', 'roden-law' ); ?>"
+                               target="_blank" rel="noopener noreferrer">
+                                <span aria-hidden="true">&#9654;</span>
+                            </a>
+                        <?php endif; ?>
+                        <?php if ( ! empty( $firm['social']['instagram'] ) ) : ?>
+                            <a href="<?php echo esc_url( $firm['social']['instagram'] ); ?>"
+                               aria-label="<?php esc_attr_e( 'Instagram', 'roden-law' ); ?>"
+                               target="_blank" rel="noopener noreferrer">
+                                <span aria-hidden="true">ig</span>
+                            </a>
+                        <?php endif; ?>
                     </div>
-                <?php endforeach; ?>
-            </div>
-        </div>
+                </div>
 
-        <!-- Column 4: Free Review CTA -->
-        <div class="footer-col">
-            <h4 class="footer-heading">Free Review</h4>
-            <div class="footer-mini-form">
-                <?php if ( shortcode_exists('gravityform') ) : ?>
-                    <?php echo do_shortcode('[gravityform id="2" title="false" description="false" ajax="true"]'); ?>
-                <?php else : ?>
-                    <form class="roden-footer-form" method="post" action="<?php echo esc_url( admin_url('admin-post.php') ); ?>">
-                        <input type="hidden" name="action" value="roden_contact_form" />
-                        <input type="text" name="full_name" placeholder="Name" />
-                        <input type="tel" name="phone" placeholder="Phone" />
-                        <button type="submit" class="btn btn-primary btn-block">Get Free Review</button>
-                    </form>
-                <?php endif; ?>
-            </div>
-        </div>
-    </div>
+                <!-- Column 2: Practice Areas -->
+                <div class="footer-col footer-practice-areas">
+                    <h4 class="footer-heading footer-heading-accent">
+                        <?php esc_html_e( 'Practice Areas', 'roden-law' ); ?>
+                    </h4>
+                    <ul class="footer-links">
+                        <?php foreach ( $footer_practice_areas as $label => $slug ) : ?>
+                            <li>
+                                <a href="<?php echo esc_url( home_url( '/practice-areas/' . $slug . '/' ) ); ?>">
+                                    <?php echo esc_html( $label ); ?>
+                                </a>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
 
-    <div class="footer-bottom">
-        <div class="container footer-bottom-inner">
-            <p>&copy; <?php echo date('Y'); ?> <?php echo esc_html( $firm['legal_name'] ); ?>. All Rights Reserved | Licensed in Georgia &amp; South Carolina</p>
-            <p class="footer-disclaimer">The information on this website is for general information purposes only. Nothing on this site should be taken as legal advice for any individual case or situation. This information is not intended to create, and receipt or viewing does not constitute, an attorney-client relationship.</p>
-        </div>
-    </div>
-</footer>
+                <!-- Column 3: Our Offices -->
+                <div class="footer-col footer-offices-col">
+                    <h4 class="footer-heading footer-heading-accent">
+                        <?php esc_html_e( 'Our Offices', 'roden-law' ); ?>
+                    </h4>
+                    <?php foreach ( $firm['offices'] as $key => $office ) : ?>
+                        <div class="footer-office">
+                            <h5><?php echo esc_html( $office['city'] . ', ' . $office['state'] ); ?></h5>
+                            <address>
+                                <?php echo esc_html( $office['street'] ); ?><br>
+                                <a href="tel:<?php echo esc_attr( $office['phone_raw'] ); ?>">
+                                    <?php echo esc_html( $office['phone'] ); ?>
+                                </a>
+                            </address>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+
+                <!-- Column 4: Mini Contact Form / Free Review CTA -->
+                <div class="footer-col footer-form-col">
+                    <h4 class="footer-heading footer-heading-accent">
+                        <?php esc_html_e( 'Free Case Review', 'roden-law' ); ?>
+                    </h4>
+                    <div class="footer-mini-form">
+                        <?php
+                        // If a form plugin shortcode exists, use it.
+                        // Otherwise render a basic fallback form.
+                        if ( shortcode_exists( 'gravityform' ) ) {
+                            // Gravity Forms — update ID to match your form
+                            echo do_shortcode( '[gravityform id="1" title="false" description="false" ajax="true"]' );
+                        } elseif ( shortcode_exists( 'wpforms' ) ) {
+                            // WPForms — update ID to match your form
+                            echo do_shortcode( '[wpforms id="1" title="false" description="false"]' );
+                        } else {
+                            // Fallback static form (no form plugin active)
+                            ?>
+                            <form class="footer-contact-form" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="post">
+                                <div class="form-group">
+                                    <input type="text" name="footer_name" placeholder="<?php esc_attr_e( 'Name', 'roden-law' ); ?>" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" name="footer_phone" placeholder="<?php esc_attr_e( 'Phone', 'roden-law' ); ?>" required>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary" style="width:100%;">
+                                        <?php esc_html_e( 'Get Free Review', 'roden-law' ); ?>
+                                    </button>
+                                </div>
+                            </form>
+                            <?php
+                        }
+                        ?>
+                    </div>
+                </div>
+
+            </div><!-- .footer-grid -->
+
+            <!-- Copyright Bar -->
+            <div class="footer-bottom">
+                <span>
+                    &copy; <?php echo esc_html( $year ); ?> <?php echo esc_html( $firm['legal_entity'] ); ?>.
+                    <?php esc_html_e( 'All Rights Reserved.', 'roden-law' ); ?>
+                </span>
+                <span>
+                    <?php esc_html_e( 'Licensed in Georgia & South Carolina', 'roden-law' ); ?>
+                    <?php if ( has_nav_menu( 'footer' ) ) : ?>
+                        <span class="footer-divider" aria-hidden="true">|</span>
+                        <?php
+                        wp_nav_menu( array(
+                            'theme_location' => 'footer',
+                            'container'      => false,
+                            'menu_class'     => 'footer-legal-menu',
+                            'depth'          => 1,
+                        ) );
+                        ?>
+                    <?php endif; ?>
+                </span>
+            </div>
+
+        </div><!-- .site-container -->
+    </footer>
+
+</div><!-- #page -->
 
 <?php wp_footer(); ?>
 </body>
