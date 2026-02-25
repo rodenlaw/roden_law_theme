@@ -113,9 +113,9 @@ $practice_areas = array(
 
                 <!-- Hero Contact Form -->
                 <div class="hero-form" id="free-case-review">
-                    <div class="hero-form-inner">
+                    <div class="hero-form-inner hero-form-light">
                         <h2 class="hero-form-title"><?php esc_html_e( 'Free Case Review', 'roden-law' ); ?></h2>
-                        <p class="hero-form-subtitle"><?php esc_html_e( 'No fees unless we win', 'roden-law' ); ?></p>
+                        <p class="hero-form-subtitle"><?php esc_html_e( 'No fees unless we win', 'roden-law' ); ?> &bull; <?php esc_html_e( 'Available 24/7', 'roden-law' ); ?></p>
 
                         <?php
                         if ( shortcode_exists( 'gravityform' ) ) {
@@ -131,31 +131,28 @@ $practice_areas = array(
                                            placeholder="<?php esc_attr_e( 'Full Name', 'roden-law' ); ?>" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="tel" name="phone"
-                                           placeholder="<?php esc_attr_e( 'Phone Number', 'roden-law' ); ?>" required>
-                                </div>
-                                <div class="form-group">
                                     <input type="email" name="email"
                                            placeholder="<?php esc_attr_e( 'Email', 'roden-law' ); ?>">
                                 </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <input type="tel" name="phone"
+                                               placeholder="<?php esc_attr_e( 'Phone', 'roden-law' ); ?>" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="zip" inputmode="numeric" pattern="[0-9]{5}"
+                                               placeholder="<?php esc_attr_e( 'Zip Code', 'roden-law' ); ?>">
+                                    </div>
+                                </div>
                                 <div class="form-group">
                                     <textarea name="description" rows="3"
-                                              placeholder="<?php esc_attr_e( 'Briefly describe what happened...', 'roden-law' ); ?>"></textarea>
+                                              placeholder="<?php esc_attr_e( 'Tell us what happened...', 'roden-law' ); ?>"></textarea>
                                 </div>
                                 <div class="form-group">
-                                    <button type="submit" class="btn btn-primary" style="width:100%;">
-                                        <?php esc_html_e( 'Submit Free Review', 'roden-law' ); ?>
+                                    <button type="submit" class="btn btn-cta-submit">
+                                        <?php esc_html_e( 'Review My Case', 'roden-law' ); ?>
                                     </button>
                                 </div>
-                                <p class="hero-form-footer">
-                                    <?php
-                                    printf(
-                                        /* translators: %s: vanity phone */
-                                        esc_html__( '— or call %s —', 'roden-law' ),
-                                        esc_html( $firm['vanity_phone'] )
-                                    );
-                                    ?>
-                                </p>
                             </form>
                             <?php
                         }
@@ -169,24 +166,28 @@ $practice_areas = array(
 
 
     <!-- ============================================================
-         TRUST BAR
+         BADGE BAR — Bar Association Memberships
          ============================================================ -->
-    <div class="trust-bar" aria-label="<?php esc_attr_e( 'Firm credentials', 'roden-law' ); ?>">
-        <div class="trust-stat">
-            <span class="stat-number"><?php echo esc_html( $stats['recovered'] ); ?></span>
-            <span class="stat-label"><?php esc_html_e( 'Recovered', 'roden-law' ); ?></span>
-        </div>
-        <div class="trust-stat">
-            <span class="stat-number"><?php echo esc_html( $stats['rating'] ); ?>&#9733;</span>
-            <span class="stat-label"><?php esc_html_e( 'Client Rating', 'roden-law' ); ?></span>
-        </div>
-        <div class="trust-stat">
-            <span class="stat-number"><?php echo esc_html( $stats['cases'] ); ?></span>
-            <span class="stat-label"><?php esc_html_e( 'Cases Handled', 'roden-law' ); ?></span>
-        </div>
-        <div class="trust-stat">
-            <span class="stat-number"><?php echo esc_html( $stats['experience'] ); ?> <?php esc_html_e( 'Yrs', 'roden-law' ); ?></span>
-            <span class="stat-label"><?php esc_html_e( 'Combined Experience', 'roden-law' ); ?></span>
+    <div class="badge-bar" aria-label="<?php esc_attr_e( 'Bar association memberships', 'roden-law' ); ?>">
+        <div class="site-container">
+            <div class="badge-bar-inner">
+                <div class="badge-item">
+                    <span class="badge-icon" aria-hidden="true"></span>
+                    <span class="badge-label"><?php esc_html_e( 'State Bar of Georgia', 'roden-law' ); ?></span>
+                </div>
+                <div class="badge-item">
+                    <span class="badge-icon" aria-hidden="true"></span>
+                    <span class="badge-label"><?php esc_html_e( 'American Association for Justice', 'roden-law' ); ?></span>
+                </div>
+                <div class="badge-item">
+                    <span class="badge-icon" aria-hidden="true"></span>
+                    <span class="badge-label"><?php esc_html_e( 'Georgia Trial Lawyers', 'roden-law' ); ?></span>
+                </div>
+                <div class="badge-item">
+                    <span class="badge-icon" aria-hidden="true"></span>
+                    <span class="badge-label"><?php esc_html_e( 'American Bar Association', 'roden-law' ); ?></span>
+                </div>
+            </div>
         </div>
     </div>
 

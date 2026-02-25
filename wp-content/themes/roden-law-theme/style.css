@@ -228,9 +228,8 @@ blockquote {
 
 .top-bar .site-container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    gap: var(--space-lg);
 }
 
 .top-bar a {
@@ -338,16 +337,17 @@ input[type="submit"] {
 }
 
 .btn-cta-phone {
-    background: var(--color-orange);
-    color: var(--color-white);
-    font-size: 1.1rem;
+    background: transparent;
+    color: var(--color-orange);
+    font-size: 1rem;
     font-weight: 700;
-    padding: 1rem 2rem;
-    border-radius: var(--border-radius-lg);
+    padding: 0.6rem 1.5rem;
+    border-radius: 50px;
+    border: 2px solid var(--color-orange);
 }
 
 .btn-cta-phone:hover {
-    background: #D04F15;
+    background: var(--color-orange);
     color: var(--color-white);
 }
 
@@ -431,6 +431,47 @@ input[type="submit"] {
     color: var(--color-gray);
     text-transform: uppercase;
     letter-spacing: 0.05em;
+}
+
+/* ==========================================================================
+   Badge Bar — Bar Association Memberships
+   ========================================================================== */
+
+.badge-bar {
+    background: var(--color-light);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-lg) 0;
+}
+
+.badge-bar-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-2xl);
+    flex-wrap: wrap;
+}
+
+.badge-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.badge-icon {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--color-border);
+    flex-shrink: 0;
+}
+
+.badge-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-gray);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
 }
 
 /* ==========================================================================
@@ -912,10 +953,6 @@ input[type="submit"] {
         flex-direction: column;
         align-items: center;
     }
-
-    .top-bar .site-container {
-        justify-content: center;
-    }
 }
 
 /* ==========================================================================
@@ -951,6 +988,7 @@ input[type="submit"] {
 
 .hero-content h1 .text-orange {
     color: var(--color-orange);
+    font-style: italic;
 }
 
 .hero-description {
@@ -1020,53 +1058,77 @@ input[type="submit"] {
     border-color: rgba(255, 255, 255, 0.6);
 }
 
-/* Hero Contact Form */
+/* Hero Contact Form — Light Theme */
 .hero-form-inner {
-    background: var(--color-navy);
-    border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: var(--border-radius-lg);
     padding: var(--space-xl);
-    color: var(--color-white);
 }
 
-.hero-form-title {
+.hero-form-inner.hero-form-light {
+    background: var(--color-light);
+    border: 1px solid var(--color-border);
+    color: var(--color-gray-dark);
+}
+
+.hero-form-light .hero-form-title {
     font-family: var(--font-heading);
     font-size: 1.25rem;
     font-weight: 800;
-    color: var(--color-white);
+    color: var(--color-navy);
     margin-bottom: var(--space-xs);
 }
 
-.hero-form-subtitle {
+.hero-form-light .hero-form-subtitle {
     font-size: 0.85rem;
-    color: #aab4c8;
+    color: var(--color-gray);
     margin-bottom: var(--space-lg);
 }
 
-.hero-contact-form .form-group input,
-.hero-contact-form .form-group textarea {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+.hero-form-light .hero-contact-form .form-group input,
+.hero-form-light .hero-contact-form .form-group textarea {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    color: var(--color-gray-dark);
+}
+
+.hero-form-light .hero-contact-form .form-group input::placeholder,
+.hero-form-light .hero-contact-form .form-group textarea::placeholder {
+    color: var(--color-gray-light);
+}
+
+.hero-form-light .hero-contact-form .form-group input:focus,
+.hero-form-light .hero-contact-form .form-group textarea:focus {
+    border-color: var(--color-navy);
+    box-shadow: 0 0 0 3px rgba(27, 58, 107, 0.1);
+}
+
+/* Form inline row (Phone + Zip side by side) */
+.hero-contact-form .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-md);
+}
+
+.hero-contact-form .form-row .form-group {
+    margin-bottom: var(--space-md);
+}
+
+/* Submit button — gold/orange full width */
+.btn-cta-submit {
+    width: 100%;
+    background: var(--color-orange);
     color: var(--color-white);
+    font-size: 1.05rem;
+    font-weight: 700;
+    padding: 0.85rem var(--space-xl);
+    border: none;
+    border-radius: var(--border-radius);
 }
 
-.hero-contact-form .form-group input::placeholder,
-.hero-contact-form .form-group textarea::placeholder {
-    color: rgba(255, 255, 255, 0.5);
-}
-
-.hero-contact-form .form-group input:focus,
-.hero-contact-form .form-group textarea:focus {
-    border-color: var(--color-orange);
-    box-shadow: 0 0 0 3px rgba(232, 92, 31, 0.2);
-}
-
-.hero-form-footer {
-    text-align: center;
-    font-size: 0.8rem;
-    color: #aab4c8;
-    margin-top: var(--space-sm);
-    margin-bottom: 0;
+.btn-cta-submit:hover,
+.btn-cta-submit:focus {
+    background: #D04F15;
+    color: var(--color-white);
 }
 
 /* ==========================================================================
@@ -1188,18 +1250,30 @@ input[type="submit"] {
    Header — Top Bar Extras
    ========================================================================== */
 
+.top-bar-left,
+.top-bar-right {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
 .top-bar-text {
     font-weight: 500;
 }
 
 .top-bar-divider {
     opacity: 0.4;
+    margin: 0 var(--space-xs);
 }
 
 .top-bar-phone {
     font-weight: 700;
     color: var(--color-orange) !important;
-    margin-left: var(--space-sm);
+}
+
+.top-bar-consult {
+    font-weight: 500;
+    opacity: 0.85;
 }
 
 /* Logo Text (when no custom logo image) */
@@ -1483,12 +1557,32 @@ input[type="submit"] {
         grid-template-columns: 1fr;
     }
 
-    .top-bar-text,
-    .top-bar-divider {
+    .top-bar-left {
         display: none;
     }
 
-    .top-bar-phone {
-        margin-left: 0;
+    .top-bar .site-container {
+        justify-content: center;
+    }
+
+    .top-bar-consult {
+        display: none;
+    }
+
+    .hero-contact-form .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .badge-bar-inner {
+        gap: var(--space-lg);
+    }
+
+    .badge-label {
+        font-size: 0.7rem;
+    }
+
+    .badge-icon {
+        width: 36px;
+        height: 36px;
     }
 }

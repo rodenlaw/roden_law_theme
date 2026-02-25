@@ -31,16 +31,19 @@ $firm = roden_firm_data();
     <!-- Top Bar -->
     <div class="top-bar">
         <div class="site-container">
-            <span class="top-bar-text">
-                <?php esc_html_e( 'Serving Georgia & South Carolina from 5 offices', 'roden-law' ); ?>
-            </span>
-            <span class="top-bar-divider" aria-hidden="true">|</span>
-            <span class="top-bar-text">
-                <?php esc_html_e( 'No Fees Unless We Win', 'roden-law' ); ?>
-            </span>
-            <a href="tel:<?php echo esc_attr( $firm['offices']['savannah']['phone_raw'] ); ?>" class="top-bar-phone">
-                <?php echo esc_html( $firm['vanity_phone'] ); ?>
-            </a>
+            <div class="top-bar-left">
+                <span class="top-bar-text">
+                    <?php esc_html_e( 'Serving Georgia & South Carolina', 'roden-law' ); ?>
+                    <span class="top-bar-divider" aria-hidden="true">&mdash;</span>
+                    <?php esc_html_e( 'No Fees Unless We Win', 'roden-law' ); ?>
+                </span>
+            </div>
+            <div class="top-bar-right">
+                <a href="tel:<?php echo esc_attr( $firm['offices']['savannah']['phone_raw'] ); ?>" class="top-bar-phone">
+                    <?php echo esc_html( $firm['vanity_phone'] ); ?>
+                </a>
+                <span class="top-bar-consult"><?php esc_html_e( 'Free 24/7 Consultations', 'roden-law' ); ?></span>
+            </div>
         </div>
     </div>
 
@@ -107,7 +110,8 @@ function roden_fallback_menu() {
         <li class="menu-item"><a href="<?php echo esc_url( home_url( '/locations/' ) ); ?>"><?php esc_html_e( 'Locations', 'roden-law' ); ?></a></li>
         <li class="menu-item"><a href="<?php echo esc_url( home_url( '/attorneys/' ) ); ?>"><?php esc_html_e( 'Attorneys', 'roden-law' ); ?></a></li>
         <li class="menu-item"><a href="<?php echo esc_url( home_url( '/case-results/' ) ); ?>"><?php esc_html_e( 'Results', 'roden-law' ); ?></a></li>
-        <li class="menu-item"><a href="<?php echo esc_url( home_url( '/resources/' ) ); ?>"><?php esc_html_e( 'Resources', 'roden-law' ); ?></a></li>
+        <li class="menu-item"><a href="<?php echo esc_url( home_url( '/about/' ) ); ?>"><?php esc_html_e( 'About Us', 'roden-law' ); ?></a></li>
+        <li class="menu-item"><a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"><?php esc_html_e( 'Contact', 'roden-law' ); ?></a></li>
     </ul>
     <?php
 }
