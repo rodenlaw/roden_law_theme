@@ -244,12 +244,17 @@ blockquote {
    Navigation
    ========================================================================== */
 
+/* Top-level menu */
 .main-navigation ul {
     display: flex;
     list-style: none;
-    gap: var(--space-sm);
+    gap: 0;
     padding: 0;
     margin: 0;
+}
+
+.main-navigation > ul > li {
+    position: relative;
 }
 
 .main-navigation a {
@@ -259,13 +264,73 @@ blockquote {
     padding: var(--space-sm) var(--space-md);
     border-radius: var(--border-radius);
     transition: background-color 0.2s ease, color 0.2s ease;
+    white-space: nowrap;
 }
 
 .main-navigation a:hover,
 .main-navigation a:focus,
-.main-navigation .current-menu-item a {
+.main-navigation .current-menu-item > a {
     background: rgba(255, 255, 255, 0.15);
     color: var(--color-white);
+}
+
+/* Dropdown sub-menus */
+.main-navigation ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    flex-direction: column;
+    min-width: 220px;
+    background: var(--color-navy);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    box-shadow: var(--shadow-lg);
+    padding: var(--space-xs) 0;
+}
+
+/* Show dropdown on hover */
+.main-navigation li:hover > ul,
+.main-navigation li:focus-within > ul {
+    display: flex;
+}
+
+/* Sub-menu items */
+.main-navigation ul ul li {
+    width: 100%;
+}
+
+.main-navigation ul ul a {
+    display: block;
+    padding: var(--space-sm) var(--space-lg);
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: 0;
+}
+
+.main-navigation ul ul a:hover,
+.main-navigation ul ul a:focus {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Third-level dropdowns */
+.main-navigation ul ul ul {
+    top: 0;
+    left: 100%;
+}
+
+/* Dropdown arrow indicator for parent items */
+.main-navigation > ul > li.menu-item-has-children > a::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 6px;
+    vertical-align: middle;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid currentColor;
 }
 
 .menu-toggle {
