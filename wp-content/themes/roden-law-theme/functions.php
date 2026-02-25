@@ -149,6 +149,42 @@ function roden_add_meta_boxes() {
         'normal',
         'high'
     );
+
+    // Location — Service Area
+    add_meta_box(
+        'roden_service_area',
+        __( 'Service Area', 'roden-law' ),
+        'roden_service_area_meta_box',
+        'location',
+        'normal'
+    );
+
+    // Location — Map Embed URL
+    add_meta_box(
+        'roden_map_embed',
+        __( 'Google Maps Embed URL', 'roden-law' ),
+        'roden_map_embed_meta_box',
+        'location',
+        'side'
+    );
+
+    // Location — Local Content
+    add_meta_box(
+        'roden_local_content',
+        __( 'Local Content (courts, institutions)', 'roden-law' ),
+        'roden_local_content_meta_box',
+        'location',
+        'normal'
+    );
+
+    // Attorney — Office Key
+    add_meta_box(
+        'roden_atty_office_key',
+        __( 'Office Assignment', 'roden-law' ),
+        'roden_atty_office_key_meta_box',
+        'attorney',
+        'side'
+    );
 }
 
 /** Office Key meta box callback. */
@@ -287,6 +323,71 @@ function roden_case_details_meta_box( $post ) {
     <?php
 }
 
+/** Service Area meta box callback. */
+function roden_service_area_meta_box( $post ) {
+    wp_nonce_field( 'roden_service_area_nonce', '_roden_service_area_nonce' );
+    $value = get_post_meta( $post->ID, '_roden_service_area', true );
+    ?>
+    <p>
+        <label for="roden_service_area"><?php esc_html_e( 'Service area description (overrides firm-data default if set):', 'roden-law' ); ?></label><br>
+        <textarea id="roden_service_area" name="_roden_service_area"
+                  rows="3" style="width:100%;"><?php echo esc_textarea( $value ); ?></textarea>
+    </p>
+    <p class="description"><?php esc_html_e( 'List surrounding cities and neighborhoods this office serves.', 'roden-law' ); ?></p>
+    <?php
+}
+
+/** Map Embed URL meta box callback. */
+function roden_map_embed_meta_box( $post ) {
+    wp_nonce_field( 'roden_map_embed_nonce', '_roden_map_embed_nonce' );
+    $value = get_post_meta( $post->ID, '_roden_map_embed', true );
+    ?>
+    <p>
+        <label for="roden_map_embed"><?php esc_html_e( 'Custom Map Embed URL:', 'roden-law' ); ?></label><br>
+        <input type="url" id="roden_map_embed" name="_roden_map_embed"
+               value="<?php echo esc_attr( $value ); ?>" style="width:100%;"
+               placeholder="https://maps.google.com/maps?q=...&output=embed">
+    </p>
+    <p class="description"><?php esc_html_e( 'Leave blank to auto-generate from office address.', 'roden-law' ); ?></p>
+    <?php
+}
+
+/** Local Content meta box callback (wysiwyg). */
+function roden_local_content_meta_box( $post ) {
+    wp_nonce_field( 'roden_local_content_nonce', '_roden_local_content_nonce' );
+    $value = get_post_meta( $post->ID, '_roden_local_content', true );
+    wp_editor( $value, 'roden_local_content_editor', array(
+        'textarea_name' => '_roden_local_content',
+        'textarea_rows' => 8,
+        'media_buttons' => false,
+        'teeny'         => true,
+    ) );
+    ?>
+    <p class="description"><?php esc_html_e( 'Additional content about local courts, institutions, and community ties.', 'roden-law' ); ?></p>
+    <?php
+}
+
+/** Attorney Office Key meta box callback. */
+function roden_atty_office_key_meta_box( $post ) {
+    wp_nonce_field( 'roden_atty_office_key_nonce', '_roden_atty_office_key_nonce' );
+    $value = get_post_meta( $post->ID, '_roden_atty_office_key', true );
+    $firm  = roden_firm_data();
+    ?>
+    <p>
+        <label for="roden_atty_office_key"><?php esc_html_e( 'Primary Office:', 'roden-law' ); ?></label><br>
+        <select id="roden_atty_office_key" name="_roden_atty_office_key" style="width:100%;">
+            <option value=""><?php esc_html_e( '— Select Office —', 'roden-law' ); ?></option>
+            <?php foreach ( $firm['offices'] as $key => $office ) : ?>
+                <option value="<?php echo esc_attr( $key ); ?>" <?php selected( $value, $key ); ?>>
+                    <?php echo esc_html( $office['city'] . ', ' . $office['state'] . ' (' . $key . ')' ); ?>
+                </option>
+            <?php endforeach; ?>
+        </select>
+    </p>
+    <p class="description"><?php esc_html_e( 'Assigns this attorney to an office for location page filtering.', 'roden-law' ); ?></p>
+    <?php
+}
+
 /* ---------- Save Meta Fields ---------- */
 
 add_action( 'save_post', 'roden_save_meta_fields' );
@@ -349,6 +450,34 @@ function roden_save_meta_fields( $post_id ) {
             sanitize_text_field( $_POST['_roden_case_amount'] ?? '' ) );
         update_post_meta( $post_id, '_roden_case_type',
             sanitize_text_field( $_POST['_roden_case_type'] ?? '' ) );
+    }
+
+    // Service Area
+    if ( isset( $_POST['_roden_service_area_nonce'] ) &&
+         wp_verify_nonce( $_POST['_roden_service_area_nonce'], 'roden_service_area_nonce' ) ) {
+        update_post_meta( $post_id, '_roden_service_area',
+            sanitize_textarea_field( $_POST['_roden_service_area'] ?? '' ) );
+    }
+
+    // Map Embed URL
+    if ( isset( $_POST['_roden_map_embed_nonce'] ) &&
+         wp_verify_nonce( $_POST['_roden_map_embed_nonce'], 'roden_map_embed_nonce' ) ) {
+        update_post_meta( $post_id, '_roden_map_embed',
+            esc_url_raw( $_POST['_roden_map_embed'] ?? '' ) );
+    }
+
+    // Local Content (wysiwyg — allow safe HTML)
+    if ( isset( $_POST['_roden_local_content_nonce'] ) &&
+         wp_verify_nonce( $_POST['_roden_local_content_nonce'], 'roden_local_content_nonce' ) ) {
+        update_post_meta( $post_id, '_roden_local_content',
+            wp_kses_post( $_POST['_roden_local_content'] ?? '' ) );
+    }
+
+    // Attorney Office Key
+    if ( isset( $_POST['_roden_atty_office_key_nonce'] ) &&
+         wp_verify_nonce( $_POST['_roden_atty_office_key_nonce'], 'roden_atty_office_key_nonce' ) ) {
+        update_post_meta( $post_id, '_roden_atty_office_key',
+            sanitize_text_field( $_POST['_roden_atty_office_key'] ?? '' ) );
     }
 }
 
