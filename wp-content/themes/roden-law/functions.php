@@ -489,7 +489,30 @@ function roden_save_meta_fields( $post_id ) {
 }
 
 /* ==========================================================================
-   5. WIDGET AREAS
+   5. REDIRECTS — Old Rank Math Location URLs → New Hierarchical URLs
+   ========================================================================== */
+
+add_action( 'template_redirect', 'roden_legacy_location_redirects' );
+function roden_legacy_location_redirects() {
+    if ( ! is_singular( 'rank_math_locations' ) ) {
+        return;
+    }
+
+    $redirects = array(
+        'savannah-georgia'                    => '/locations/georgia/savannah/',
+        'charleston-south-carolina-location'  => '/locations/south-carolina/charleston/',
+    );
+
+    $slug = get_post_field( 'post_name', get_the_ID() );
+
+    if ( isset( $redirects[ $slug ] ) ) {
+        wp_redirect( home_url( $redirects[ $slug ] ), 301 );
+        exit;
+    }
+}
+
+/* ==========================================================================
+   6. WIDGET AREAS
    ========================================================================== */
 
 add_action( 'widgets_init', 'roden_register_sidebars' );
