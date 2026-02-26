@@ -70,6 +70,7 @@ $firm = roden_firm_data();
                 wp_nav_menu( array(
                     'theme_location' => 'primary',
                     'menu_id'        => 'primary-menu',
+                    'menu_class'     => 'nav-menu',
                     'container'      => false,
                     'fallback_cb'    => 'roden_fallback_menu',
                 ) );
@@ -106,7 +107,7 @@ $firm = roden_firm_data();
 function roden_fallback_menu() {
     $firm = roden_firm_data();
     ?>
-    <ul id="primary-menu" class="menu">
+    <ul id="primary-menu" class="nav-menu">
         <li class="menu-item"><a href="<?php echo esc_url( home_url( '/practice-areas/' ) ); ?>"><?php esc_html_e( 'Practice Areas', 'roden-law' ); ?></a></li>
         <li class="menu-item menu-item-has-children">
             <a href="<?php echo esc_url( home_url( '/locations/' ) ); ?>"><?php esc_html_e( 'Locations', 'roden-law' ); ?></a>
@@ -121,7 +122,12 @@ function roden_fallback_menu() {
         </li>
         <li class="menu-item"><a href="<?php echo esc_url( home_url( '/attorneys/' ) ); ?>"><?php esc_html_e( 'Attorneys', 'roden-law' ); ?></a></li>
         <li class="menu-item"><a href="<?php echo esc_url( home_url( '/case-results/' ) ); ?>"><?php esc_html_e( 'Results', 'roden-law' ); ?></a></li>
-        <li class="menu-item"><a href="<?php echo esc_url( home_url( '/about/' ) ); ?>"><?php esc_html_e( 'About Us', 'roden-law' ); ?></a></li>
+        <li class="menu-item menu-item-has-children">
+            <a href="<?php echo esc_url( home_url( '/about/' ) ); ?>"><?php esc_html_e( 'About Us', 'roden-law' ); ?></a>
+            <ul class="sub-menu">
+                <li class="menu-item"><a href="<?php echo esc_url( home_url( '/blog/' ) ); ?>"><?php esc_html_e( 'Blog', 'roden-law' ); ?></a></li>
+            </ul>
+        </li>
         <li class="menu-item"><a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"><?php esc_html_e( 'Contact', 'roden-law' ); ?></a></li>
     </ul>
     <?php
