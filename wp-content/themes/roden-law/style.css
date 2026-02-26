@@ -21,7 +21,8 @@ Tags: legal, law-firm, personal-injury, custom-theme, schema-markup
 :root {
     /* Colors */
     --color-navy: #1B3A6B;
-    --color-orange: #E85C1F;
+    --color-orange: #FCB415;
+    --color-orange-text: #B8860B;
     --color-light: #F8F6F2;
     --color-green: #27AE60;
     --color-white: #FFFFFF;
@@ -98,7 +99,7 @@ a {
 
 a:hover,
 a:focus {
-    color: var(--color-orange);
+    color: var(--color-orange-text);
 }
 
 /* ==========================================================================
@@ -656,7 +657,7 @@ input[type="submit"] {
 
 .case-result-card .case-type {
     font-weight: 600;
-    color: var(--color-orange);
+    color: var(--color-orange-text);
     text-transform: uppercase;
     font-size: 0.85rem;
     letter-spacing: 0.03em;
@@ -713,7 +714,7 @@ input[type="submit"] {
 }
 
 .attorney-card .title {
-    color: var(--color-orange);
+    color: var(--color-orange-text);
     font-weight: 600;
     font-size: 0.9rem;
     margin-bottom: var(--space-sm);
@@ -840,7 +841,7 @@ input[type="submit"] {
 }
 
 .widget-cta .phone-number a {
-    color: var(--color-orange);
+    color: var(--color-orange-text);
 }
 
 /* ==========================================================================
@@ -884,7 +885,7 @@ input[type="submit"] {
 
 .text-center { text-align: center; }
 .text-navy { color: var(--color-navy); }
-.text-orange { color: var(--color-orange); }
+.text-orange { color: var(--color-orange-text); }
 .text-white { color: var(--color-white); }
 .bg-navy { background-color: var(--color-navy); }
 .bg-navy .section-title { color: var(--color-white); }
@@ -1040,7 +1041,7 @@ input[type="submit"] {
     right: 0;
     width: 45%;
     height: 100%;
-    background: linear-gradient(to left, rgba(232, 92, 31, 0.1), transparent);
+    background: linear-gradient(to left, rgba(252, 180, 21, 0.1), transparent);
     pointer-events: none;
 }
 
@@ -1231,7 +1232,7 @@ input[type="submit"] {
 }
 
 .practice-area-grid .card-arrow {
-    color: var(--color-orange);
+    color: var(--color-orange-text);
     font-size: 1rem;
     flex-shrink: 0;
 }
@@ -1272,7 +1273,7 @@ input[type="submit"] {
 
 .location-phone {
     font-weight: 700;
-    color: var(--color-orange);
+    color: var(--color-orange-text);
     font-size: 0.9rem;
 }
 
@@ -1532,7 +1533,7 @@ input[type="submit"] {
 
 .footer-contact-form .form-group input:focus {
     border-color: var(--color-orange);
-    box-shadow: 0 0 0 2px rgba(232, 92, 31, 0.2);
+    box-shadow: 0 0 0 2px rgba(252, 180, 21, 0.2);
 }
 
 /* Footer Bottom */
@@ -1773,7 +1774,7 @@ input[type="submit"] {
     display: block;
     font-weight: 700;
     font-size: 0.9rem;
-    color: var(--color-orange);
+    color: var(--color-orange-text);
     margin-top: var(--space-sm);
 }
 
@@ -1909,7 +1910,7 @@ input[type="submit"] {
     display: block; font-weight: 700; color: var(--color-navy); margin-bottom: var(--space-sm); font-size: 0.9rem;
 }
 .locations-grid .location-link {
-    font-size: 0.85rem; font-weight: 600; color: var(--color-orange);
+    font-size: 0.85rem; font-weight: 600; color: var(--color-orange-text);
 }
 .locations-grid .location-link:hover { color: var(--color-navy); }
 
