@@ -12,6 +12,16 @@
 
 defined( 'ABSPATH' ) || exit;
 
+// Temporary debug: capture fatal errors on blog archive
+if ( isset( $_GET['roden_debug'] ) && $_GET['roden_debug'] === 'trace500' ) {
+    register_shutdown_function( function() {
+        $e = error_get_last();
+        if ( $e ) {
+            echo '<!-- RODEN_FATAL: type=' . $e['type'] . ' msg=' . esc_html( $e['message'] ) . ' file=' . esc_html( $e['file'] ) . ' line=' . $e['line'] . ' -->';
+        }
+    });
+}
+
 /* ==========================================================================
    1. LOAD INC/ MODULES
    ========================================================================== */
