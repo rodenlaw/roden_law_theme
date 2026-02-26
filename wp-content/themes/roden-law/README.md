@@ -98,8 +98,8 @@ All office data is centralized in the `roden_firm_data()` function in `functions
 
 | Token | Value | Usage |
 |-------|-------|-------|
-| Navy | `#1B3A6B` | Primary brand, headings, dark sections |
-| Orange | `#E85C1F` | CTA buttons, accents, SC state badge |
+| Navy | `#013046` | Primary brand, headings, dark sections |
+| Gold | `#FCB415` | CTA buttons, accents, SC state badge |
 | Light | `#F8F6F2` | Section backgrounds, sidebar |
 | Serif | Merriweather | Headings, stats, legal text |
 | Sans | Inter | Body text, nav, UI elements |

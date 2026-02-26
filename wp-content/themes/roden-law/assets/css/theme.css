@@ -1,15 +1,15 @@
 /* ═══════════════════════════════════════════════════════════════════════════
    RODEN LAW — AI-SEO WORDPRESS THEME STYLESHEET
-   Design System: Navy (#1B3A6B) + Gold (#FCB415) + Light (#F8F6F2)
+   Design System: Navy (#013046) + Gold (#FCB415) + Light (#F8F6F2)
    Typography: Merriweather (serif headings) + Inter (body sans-serif)
    ═══════════════════════════════════════════════════════════════════════════ */
 
 /* ─── CSS VARIABLES ────────────────────────────────────────────────────── */
 
 :root {
-    --navy:         #1B3A6B;
-    --navy-dark:    #0f2347;
-    --navy-light:   #2d5a9e;
+    --navy:         #013046;
+    --navy-dark:    #001a2e;
+    --navy-light:   #1a5f80;
     --orange:       #FCB415;
     --orange-light: #FDC94A;
     --orange-dark:  #D49B00;
@@ -1069,7 +1069,7 @@ a.sub-type-link:hover { background: var(--light); border-color: var(--orange); }
 
 .attorney-hero-grid { display: grid; grid-template-columns: 280px 1fr; gap: 48px; align-items: start; }
 .attorney-hero-photo {
-    width: 260px; height: 320px; background: linear-gradient(160deg, #1a4080, var(--navy-dark));
+    width: 260px; height: 320px; background: linear-gradient(160deg, var(--navy-light), var(--navy-dark));
     border-radius: var(--radius-lg); overflow: hidden;
     border: 1px solid rgba(255,255,255,0.1);
 }
