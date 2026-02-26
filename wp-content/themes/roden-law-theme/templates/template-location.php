@@ -3,8 +3,9 @@
  * Template: City Office Page (Location)
  *
  * Displayed for location posts with a _roden_office_key.
- * Hero with NAP + map, practice areas, about section, state law,
- * attorneys, intersection links, case results, FAQ, sidebar.
+ * Hero with NAP + map, stat bar, practice areas, about section,
+ * why choose, state law, local court, attorneys, service area,
+ * directions, case results, FAQ, other offices, footer CTA, sidebar.
  *
  * @package RodenLaw
  */
@@ -42,10 +43,11 @@ if ( ! $map_embed ) {
 }
 
 $local_content = get_post_meta( $post_id, '_roden_local_content', true );
+$faqs          = get_post_meta( $post_id, '_roden_faqs', true );
 ?>
 
 <!-- ================================================================
-     HERO
+     1. HERO
      ================================================================ -->
 <section class="hero hero-location">
     <div class="container">
@@ -90,7 +92,7 @@ $local_content = get_post_meta( $post_id, '_roden_local_content', true );
                         <meta itemprop="latitude" content="<?php echo esc_attr( $office['latitude'] ); ?>">
                         <meta itemprop="longitude" content="<?php echo esc_attr( $office['longitude'] ); ?>">
                         <a href="tel:<?php echo esc_attr( $office['phone_raw'] ); ?>" class="btn btn-primary">Call Now</a>
-                        <a href="<?php echo esc_url( $office['map_url'] ); ?>" class="btn btn-outline-light" target="_blank" rel="noopener noreferrer">Get Directions</a>
+                        <a href="<?php echo esc_url( $office['map_url'] ); ?>" class="btn btn-outline-white" target="_blank" rel="noopener noreferrer">Get Directions</a>
                     </div>
                 </div>
             </div>
@@ -115,7 +117,16 @@ $local_content = get_post_meta( $post_id, '_roden_local_content', true );
 </section>
 
 <!-- ================================================================
-     PRACTICE AREAS AT THIS LOCATION
+     2. STAT BAR (NEW)
+     ================================================================ -->
+<section class="roden-section--stat-bar">
+    <div class="container">
+        <?php roden_stats_bar(); ?>
+    </div>
+</section>
+
+<!-- ================================================================
+     3. PRACTICE AREAS AT THIS LOCATION
      ================================================================ -->
 <section class="section section-light">
     <div class="container">
@@ -125,7 +136,7 @@ $local_content = get_post_meta( $post_id, '_roden_local_content', true );
 </section>
 
 <!-- ================================================================
-     MAIN CONTENT + SIDEBAR
+     4. MAIN CONTENT + SIDEBAR
      ================================================================ -->
 <div class="content-with-sidebar">
     <div class="container content-sidebar-grid">
@@ -133,7 +144,7 @@ $local_content = get_post_meta( $post_id, '_roden_local_content', true );
         <!-- MAIN COLUMN -->
         <article class="main-content">
 
-            <!-- About Section -->
+            <!-- 4a. the_content() — About Section -->
             <div class="content-section">
                 <h2>About Our <?php echo esc_html( $office['city'] ); ?> Office</h2>
                 <div class="entry-content">
@@ -151,11 +162,33 @@ $local_content = get_post_meta( $post_id, '_roden_local_content', true );
                             <?php echo wp_kses_post( $local_content ); ?>
                         </div>
                     <?php endif; ?>
-                    <p>Our <?php echo esc_html( $office['city'] ); ?> office handles all personal injury matters under <?php echo esc_html( $office['state_full'] ); ?> law with deep knowledge of local courts including the <?php echo esc_html( $office['court'] ); ?>.</p>
                 </div>
             </div>
 
-            <!-- State Law Box (single jurisdiction) -->
+            <!-- 4b. Why Choose Roden Law in [City] (NEW) -->
+            <div class="content-section">
+                <h2>Why Choose Roden Law in <?php echo esc_html( $office['city'] ); ?>?</h2>
+                <div class="roden-why-choose__grid">
+                    <div class="roden-why-choose__item">
+                        <h4><?php echo esc_html( $firm['trust_stats']['recovered'] ); ?> Recovered</h4>
+                        <p>Our firm has recovered over <?php echo esc_html( $firm['trust_stats']['recovered'] ); ?> for injured clients across Georgia and South Carolina.</p>
+                    </div>
+                    <div class="roden-why-choose__item">
+                        <h4>Local <?php echo esc_html( $office['state_full'] ); ?> Attorneys</h4>
+                        <p>Our <?php echo esc_html( $office['city'] ); ?> team practices exclusively in <?php echo esc_html( $office['state_full'] ); ?> courts, including the <?php echo esc_html( $office['court'] ); ?>.</p>
+                    </div>
+                    <div class="roden-why-choose__item">
+                        <h4>No Fee Unless We Win</h4>
+                        <p>We work on contingency — you pay nothing upfront and owe no fees unless we recover compensation for you.</p>
+                    </div>
+                    <div class="roden-why-choose__item">
+                        <h4><?php echo esc_html( $firm['trust_stats']['rating'] ); ?>-Star Client Rating</h4>
+                        <p>With <?php echo esc_html( $firm['trust_stats']['reviews'] ); ?> client reviews and a <?php echo esc_html( $firm['trust_stats']['rating'] ); ?>-star average, our results and service speak for themselves.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4c. State-Specific Law Box -->
             <?php if ( $jurisdiction ) : ?>
             <div class="content-section">
                 <div class="state-law-box">
@@ -182,13 +215,75 @@ $local_content = get_post_meta( $post_id, '_roden_local_content', true );
             </div>
             <?php endif; ?>
 
+            <!-- 4d. Local Court Reference (NEW) -->
+            <div class="content-section">
+                <h2>Local Court Information</h2>
+                <div class="roden-local-court__card">
+                    <h3><?php echo esc_html( $office['court'] ); ?></h3>
+                    <?php if ( ! empty( $office['court_address'] ) ) : ?>
+                    <div class="court-detail">
+                        <span class="court-label">Address:</span>
+                        <span><?php echo esc_html( $office['court_address'] ); ?></span>
+                    </div>
+                    <?php endif; ?>
+                    <?php if ( $jurisdiction ) : ?>
+                    <div class="court-detail">
+                        <span class="court-label">Jurisdiction:</span>
+                        <span><?php echo esc_html( $jurisdiction['state_full'] ); ?> — <?php echo esc_html( $office['state'] ); ?> State Courts</span>
+                    </div>
+                    <div class="court-detail">
+                        <span class="court-label">Filing Deadline:</span>
+                        <span><?php echo esc_html( $jurisdiction['statute_years'] ); ?> years from the date of injury (<?php echo esc_html( $jurisdiction['statute_cite'] ); ?>)</span>
+                    </div>
+                    <?php endif; ?>
+                    <p style="margin-top:var(--space-md); font-size:0.9rem; color:var(--color-gray);">
+                        Our <?php echo esc_html( $office['city'] ); ?> attorneys regularly appear before the <?php echo esc_html( $office['court'] ); ?> and are familiar with local procedures, judges, and filing requirements.
+                    </p>
+                </div>
+            </div>
+
             <?php roden_inline_cta_banner(); ?>
 
-            <!-- Attorneys -->
+            <!-- 4e. Attorneys -->
             <div class="content-section">
                 <h2>Your <?php echo esc_html( $office['city'] ); ?> Attorneys</h2>
                 <?php roden_attorneys_grid( array( 'office_key' => $office_key, 'columns' => 3 ) ); ?>
             </div>
+
+            <!-- 4f. Service Area / Communities (NEW) -->
+            <?php if ( ! empty( $office['nearby_communities'] ) ) : ?>
+            <div class="content-section">
+                <h2>Communities We Serve from <?php echo esc_html( $office['city'] ); ?></h2>
+                <p>In addition to <?php echo esc_html( $office['city'] ); ?>, our attorneys represent injury victims throughout these nearby communities:</p>
+                <div class="roden-service-area__grid">
+                    <?php foreach ( $office['nearby_communities'] as $community ) : ?>
+                        <span class="roden-service-area__tag"><?php echo esc_html( $community ); ?></span>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+            <?php endif; ?>
+
+            <!-- 4g. How to Find Our Office / Directions (NEW) -->
+            <?php if ( ! empty( $office['directions'] ) ) : ?>
+            <div class="content-section">
+                <h2>How to Find Our <?php echo esc_html( $office['city'] ); ?> Office</h2>
+                <div class="roden-directions__card">
+                    <div class="directions-address">
+                        <h4><?php echo esc_html( $office['name'] ); ?></h4>
+                        <address>
+                            <?php echo esc_html( $office['street'] ); ?><br>
+                            <?php echo esc_html( $office['city'] . ', ' . $office['state'] . ' ' . $office['zip'] ); ?>
+                        </address>
+                        <a href="<?php echo esc_url( $office['map_url'] ); ?>" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                            Get Directions on Google Maps
+                        </a>
+                    </div>
+                    <div class="directions-text">
+                        <p><?php echo esc_html( $office['directions'] ); ?></p>
+                    </div>
+                </div>
+            </div>
+            <?php endif; ?>
 
             <!-- Intersection Links: PA x Location pages for this office -->
             <?php
@@ -214,16 +309,42 @@ $local_content = get_post_meta( $post_id, '_roden_local_content', true );
             </div>
             <?php endif; ?>
 
-            <!-- Case Results -->
+            <!-- 4h. Case Results -->
             <div class="content-section">
                 <h2>Recent Results</h2>
                 <?php roden_case_results_grid( array( 'count' => 3, 'columns' => 3 ) ); ?>
             </div>
 
-            <!-- FAQ Accordion -->
+            <!-- 4i. FAQ Accordion (NEW — reads _roden_faqs) -->
             <?php roden_faq_section( $post_id ); ?>
 
-            <!-- Bottom CTA -->
+            <!-- 4j. Other Office Locations (NEW) -->
+            <div class="content-section">
+                <h2>Our Other Office Locations</h2>
+                <p>Roden Law serves injury victims across Georgia and South Carolina from <?php echo count( $firm['offices'] ); ?> offices. Visit any of our locations for a free consultation.</p>
+                <div class="roden-other-offices__grid">
+                    <?php foreach ( $firm['offices'] as $k => $o ) :
+                        if ( $k === $office_key ) continue;
+                        $slug       = strtolower( str_replace( ' ', '-', $o['city'] ) );
+                        $state_slug = $o['state'] === 'GA' ? 'georgia' : 'south-carolina';
+                        $office_url = home_url( '/locations/' . $state_slug . '/' . $slug . '/' );
+                    ?>
+                    <a href="<?php echo esc_url( $office_url ); ?>" class="roden-other-offices__card">
+                        <span class="office-badge badge-<?php echo esc_attr( strtolower( $o['state'] ) ); ?>">
+                            <?php echo esc_html( $o['state'] ); ?>
+                        </span>
+                        <h4><?php echo esc_html( $o['city'] . ', ' . $o['state'] ); ?></h4>
+                        <address style="font-style:normal; font-size:0.85rem; color:var(--color-gray);">
+                            <?php echo esc_html( $o['street'] ); ?>
+                        </address>
+                        <span class="office-phone"><?php echo esc_html( $o['phone'] ); ?></span>
+                        <span class="office-link">View Office &rarr;</span>
+                    </a>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+
+            <!-- 4k. Bottom CTA -->
             <div class="bottom-cta-box">
                 <h2>Contact Our <?php echo esc_html( $office['city'] ); ?> Office Today</h2>
                 <p>
@@ -236,7 +357,7 @@ $local_content = get_post_meta( $post_id, '_roden_local_content', true );
                     <a href="tel:<?php echo esc_attr( $office['phone_raw'] ); ?>" class="btn btn-primary">
                         Call <?php echo esc_html( $office['phone'] ); ?>
                     </a>
-                    <a href="#contact" class="btn btn-outline-light">Free Case Evaluation</a>
+                    <a href="#contact" class="btn btn-outline">Free Case Evaluation</a>
                 </div>
             </div>
 
@@ -259,7 +380,7 @@ $local_content = get_post_meta( $post_id, '_roden_local_content', true );
                     <a href="tel:<?php echo esc_attr( $office['phone_raw'] ); ?>" class="nap-card-phone">
                         <?php echo esc_html( $office['phone'] ); ?>
                     </a>
-                    <a href="<?php echo esc_url( $office['map_url'] ); ?>" class="btn btn-dark btn-block" target="_blank" rel="noopener noreferrer">
+                    <a href="<?php echo esc_url( $office['map_url'] ); ?>" class="btn btn-secondary btn-block" target="_blank" rel="noopener noreferrer">
                         View on Google Maps
                     </a>
                 </div>
@@ -296,9 +417,9 @@ $local_content = get_post_meta( $post_id, '_roden_local_content', true );
                 <div class="sidebar-widget sidebar-why-us">
                     <h3 class="widget-title">Why Roden Law?</h3>
                     <ul class="why-us-list">
-                        <li><?php echo esc_html( $firm['recovered'] ); ?> Recovered for Clients</li>
-                        <li><?php echo esc_html( $firm['rating'] ); ?> Average Client Rating</li>
-                        <li><?php echo esc_html( $firm['cases_handled'] ); ?> Cases Successfully Handled</li>
+                        <li><?php echo esc_html( $firm['trust_stats']['recovered'] ); ?> Recovered for Clients</li>
+                        <li><?php echo esc_html( $firm['trust_stats']['rating'] ); ?> Average Client Rating</li>
+                        <li><?php echo esc_html( $firm['trust_stats']['cases'] ); ?> Cases Successfully Handled</li>
                         <li>No Fee Unless We Win</li>
                         <li>Free 24/7 Consultations</li>
                         <li>Licensed in GA &amp; SC</li>

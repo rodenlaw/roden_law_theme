@@ -50,6 +50,7 @@ function roden_output_schema() {
 
     if ( is_singular( 'location' ) ) {
         roden_schema_local_business_single( $firm );
+        roden_schema_faq_page();
     }
 
     if ( is_singular( 'attorney' ) ) {
@@ -221,12 +222,24 @@ function roden_schema_local_business_office( $firm, $key, $office ) {
                 'closes'    => '18:00',
             ),
         ),
+        'openingHours'       => 'Mo-Fr 08:00-18:00',
+        'hasMap'             => 'https://www.google.com/maps/dir/?api=1&destination='
+                                . $office['latitude'] . ',' . $office['longitude'],
         'parentOrganization' => array(
             '@type' => 'Organization',
             '@id'   => $firm['url'] . '/#organization',
             'name'  => $firm['name'],
         ),
     );
+
+    // Add logo/image if custom logo is set
+    $logo_id = get_theme_mod( 'custom_logo' );
+    if ( $logo_id ) {
+        $logo_url = wp_get_attachment_image_url( $logo_id, 'full' );
+        if ( $logo_url ) {
+            $schema['image'] = $logo_url;
+        }
+    }
 
     roden_json_ld( $schema );
 }

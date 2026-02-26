@@ -1551,6 +1551,233 @@ input[type="submit"] {
 }
 
 /* ==========================================================================
+   Location Page — Stat Bar
+   ========================================================================== */
+
+.roden-section--stat-bar {
+    background: var(--color-navy);
+    color: var(--color-white);
+    padding: var(--space-lg) 0;
+}
+
+.roden-section--stat-bar .stats-bar {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-2xl);
+    flex-wrap: wrap;
+}
+
+.roden-section--stat-bar .stat-item {
+    text-align: center;
+}
+
+.roden-section--stat-bar .stat-num {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--color-orange);
+    display: block;
+}
+
+.roden-section--stat-bar .stat-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    opacity: 0.85;
+}
+
+/* ==========================================================================
+   Location Page — Why Choose Grid
+   ========================================================================== */
+
+.roden-why-choose__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+    margin-top: var(--space-lg);
+}
+
+.roden-why-choose__item {
+    background: var(--color-light);
+    border-radius: var(--border-radius);
+    padding: var(--space-lg);
+    border-left: 4px solid var(--color-orange);
+}
+
+.roden-why-choose__item h4 {
+    font-size: 1rem;
+    margin-bottom: var(--space-sm);
+}
+
+.roden-why-choose__item p {
+    font-size: 0.9rem;
+    color: var(--color-gray);
+    margin-bottom: 0;
+}
+
+/* ==========================================================================
+   Location Page — Local Court Card
+   ========================================================================== */
+
+.roden-local-court__card {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-top: 4px solid var(--color-navy);
+    border-radius: var(--border-radius);
+    padding: var(--space-xl);
+    margin-top: var(--space-lg);
+}
+
+.roden-local-court__card h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-md);
+}
+
+.roden-local-court__card .court-detail {
+    display: flex;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-sm);
+    font-size: 0.95rem;
+}
+
+.roden-local-court__card .court-detail .court-label {
+    font-weight: 700;
+    color: var(--color-navy);
+    min-width: 100px;
+    flex-shrink: 0;
+}
+
+/* ==========================================================================
+   Location Page — Service Area Tags
+   ========================================================================== */
+
+.roden-service-area__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    margin-top: var(--space-md);
+}
+
+.roden-service-area__tag {
+    display: inline-block;
+    background: var(--color-light);
+    color: var(--color-navy);
+    padding: var(--space-xs) var(--space-md);
+    border-radius: 50px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border: 1px solid var(--color-border);
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.roden-service-area__tag:hover {
+    background: var(--color-navy);
+    color: var(--color-white);
+    border-color: var(--color-navy);
+}
+
+/* ==========================================================================
+   Location Page — Directions Card
+   ========================================================================== */
+
+.roden-directions__card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+    background: var(--color-light);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-xl);
+    margin-top: var(--space-lg);
+}
+
+.roden-directions__card .directions-address h4 {
+    font-size: 1rem;
+    margin-bottom: var(--space-sm);
+}
+
+.roden-directions__card .directions-address address {
+    font-style: normal;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--color-gray-dark);
+    margin-bottom: var(--space-md);
+}
+
+.roden-directions__card .directions-text p {
+    font-size: 0.95rem;
+    color: var(--color-gray);
+    line-height: 1.7;
+}
+
+/* ==========================================================================
+   Location Page — Other Offices Grid
+   ========================================================================== */
+
+.roden-other-offices__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-md);
+    margin-top: var(--space-lg);
+}
+
+.roden-other-offices__card {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-top: 3px solid var(--color-navy);
+    border-radius: var(--border-radius);
+    padding: var(--space-lg);
+    text-align: center;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.roden-other-offices__card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.roden-other-offices__card .office-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 2px 8px;
+    border-radius: var(--border-radius);
+    margin-bottom: var(--space-sm);
+}
+
+.roden-other-offices__card .office-badge.badge-ga {
+    background: var(--color-navy);
+    color: var(--color-white);
+}
+
+.roden-other-offices__card .office-badge.badge-sc {
+    background: var(--color-orange);
+    color: var(--color-white);
+}
+
+.roden-other-offices__card h4 {
+    font-size: 1rem;
+    margin-bottom: var(--space-xs);
+}
+
+.roden-other-offices__card .office-phone {
+    display: block;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--color-orange);
+    margin-top: var(--space-sm);
+}
+
+.roden-other-offices__card .office-link {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-navy);
+    margin-top: var(--space-sm);
+}
+
+/* ==========================================================================
    Responsive — Tablet Additions (< 900px)
    ========================================================================== */
 
@@ -1581,6 +1808,14 @@ input[type="submit"] {
 
     .header-cta {
         display: none;
+    }
+
+    .roden-other-offices__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .roden-directions__card {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -1649,5 +1884,43 @@ input[type="submit"] {
     .badge-icon {
         width: 36px;
         height: 36px;
+    }
+
+    .roden-why-choose__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .roden-other-offices__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .roden-section--stat-bar .stats-bar {
+        gap: var(--space-md);
+    }
+
+    .roden-section--stat-bar .stat-num {
+        font-size: 1.25rem;
+    }
+}
+
+/* ==========================================================================
+   Responsive — Small Mobile (< 480px)
+   ========================================================================== */
+
+@media (max-width: 480px) {
+    .roden-section--stat-bar .stats-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-sm);
+    }
+
+    .roden-service-area__tag {
+        font-size: 0.8rem;
+        padding: var(--space-xs) var(--space-sm);
+    }
+
+    .roden-local-court__card .court-detail {
+        flex-direction: column;
+        gap: 2px;
     }
 }

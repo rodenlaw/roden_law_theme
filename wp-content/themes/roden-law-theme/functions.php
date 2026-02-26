@@ -128,12 +128,12 @@ function roden_add_meta_boxes() {
         'side'
     );
 
-    // FAQs — for practice area pages
+    // FAQs — for practice area and location pages
     add_meta_box(
         'roden_faqs',
         __( 'FAQs (generates FAQPage schema)', 'roden-law' ),
         'roden_faqs_meta_box',
-        'practice_area',
+        array( 'practice_area', 'location' ),
         'normal',
         'high'
     );
