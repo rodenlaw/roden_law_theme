@@ -5,6 +5,14 @@
  * @package RodenLaw
  */
 
+// Temporary debug: capture fatal error details
+register_shutdown_function( function() {
+    $e = error_get_last();
+    if ( $e && in_array( $e['type'], [ E_ERROR, E_PARSE, E_COMPILE_ERROR, E_CORE_ERROR ] ) ) {
+        echo '<!-- FATAL_DEBUG: ' . esc_html( $e['message'] ) . ' in ' . esc_html( $e['file'] ) . ' on line ' . intval( $e['line'] ) . ' -->';
+    }
+});
+
 get_header();
 if ( ! function_exists( 'roden_breadcrumb_html' ) ) {
     require_once get_template_directory() . '/inc/template-tags.php';
