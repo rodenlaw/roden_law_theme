@@ -104,10 +104,21 @@ $firm = roden_firm_data();
  * Outputs links to the main CPT archives and a few key pages.
  */
 function roden_fallback_menu() {
+    $firm = roden_firm_data();
     ?>
     <ul id="primary-menu" class="menu">
         <li class="menu-item"><a href="<?php echo esc_url( home_url( '/practice-areas/' ) ); ?>"><?php esc_html_e( 'Practice Areas', 'roden-law' ); ?></a></li>
-        <li class="menu-item"><a href="<?php echo esc_url( home_url( '/locations/' ) ); ?>"><?php esc_html_e( 'Locations', 'roden-law' ); ?></a></li>
+        <li class="menu-item menu-item-has-children">
+            <a href="<?php echo esc_url( home_url( '/locations/' ) ); ?>"><?php esc_html_e( 'Locations', 'roden-law' ); ?></a>
+            <ul class="sub-menu">
+                <?php foreach ( $firm['offices'] as $office ) :
+                    $city_slug = sanitize_title( $office['city'] );
+                    $url = home_url( '/locations/' . $office['state_slug'] . '/' . $city_slug . '/' );
+                ?>
+                    <li class="menu-item"><a href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( $office['city'] . ', ' . $office['state'] ); ?></a></li>
+                <?php endforeach; ?>
+            </ul>
+        </li>
         <li class="menu-item"><a href="<?php echo esc_url( home_url( '/attorneys/' ) ); ?>"><?php esc_html_e( 'Attorneys', 'roden-law' ); ?></a></li>
         <li class="menu-item"><a href="<?php echo esc_url( home_url( '/case-results/' ) ); ?>"><?php esc_html_e( 'Results', 'roden-law' ); ?></a></li>
         <li class="menu-item"><a href="<?php echo esc_url( home_url( '/about/' ) ); ?>"><?php esc_html_e( 'About Us', 'roden-law' ); ?></a></li>
