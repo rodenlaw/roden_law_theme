@@ -263,6 +263,7 @@ h1, h2, h3, h4, h5, h6 {
     display: grid; grid-template-columns: 1fr 380px; gap: 48px;
     max-width: var(--container); margin: 0 auto; align-items: start;
 }
+.hero-content { min-width: 0; }
 
 .hero-title {
     color: var(--white); font-size: 38px; font-weight: 900; line-height: 1.15;
@@ -283,6 +284,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-page { padding: 48px 24px; }
 .hero-blog-single { padding: 48px 24px 32px; }
 .hero-archive { padding: 48px 24px; }
+.hero-location { padding: 56px 24px 48px; }
 
 /* ─── BREADCRUMBS ──────────────────────────────────────────────────────── */
 
@@ -316,6 +318,9 @@ h1, h2, h3, h4, h5, h6 {
 .section { padding: 64px 24px; }
 .section-light { background: var(--light); }
 .section-dark { background: var(--navy); }
+.bg-navy { background: var(--navy); }
+.bg-navy .section-title { color: var(--white); }
+.bg-navy .section-subtitle { color: var(--text-light); }
 .section-cta {
     background: linear-gradient(135deg, var(--navy), var(--navy-dark));
     padding: 72px 24px;
@@ -1119,6 +1124,11 @@ a.sub-type-link:hover { background: var(--light); border-color: var(--orange); }
 
 .cta-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
 
+.cta-bottom { padding: 72px 24px; text-align: center; }
+.cta-bottom h2 { color: var(--white); font-size: 28px; margin-bottom: 12px; }
+.cta-bottom p { color: var(--text-light); font-size: 15px; margin-bottom: 24px; max-width: 560px; margin-left: auto; margin-right: auto; }
+.cta-bottom .hero-ctas { justify-content: center; }
+
 /* ─── LOCATION PAGE — Map Section ──────────────────────────────────────── */
 
 .section-map { padding: 0; }
@@ -1141,12 +1151,16 @@ a.sub-type-link:hover { background: var(--light); border-color: var(--orange); }
 /* ─── LOCATION PAGE — Why Choose Grid ─────────────────────────────────── */
 
 .why-choose-grid {
-    display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
 }
 .why-choose-card {
-    border-top: 3px solid var(--orange); text-align: center; padding: 24px 20px;
+    background: var(--white); border: 1px solid var(--gray-200);
+    border-top: 3px solid var(--orange); border-radius: var(--radius);
+    padding: 28px 20px; text-align: center; transition: var(--transition);
 }
-.why-choose-card h3 { font-size: 1.1rem; margin-bottom: 8px; }
+.why-choose-card:hover { box-shadow: var(--shadow); transform: translateY(-2px); }
+.why-choose-card .card-icon { font-size: 28px; margin-bottom: 12px; }
+.why-choose-card h3 { font-size: 15px; font-weight: 800; color: var(--navy); margin-bottom: 10px; }
 .why-choose-card p { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
 
 /* ─── LOCATION PAGE — Jurisdiction Cards ──────────────────────────────── */
@@ -1169,17 +1183,24 @@ a.sub-type-link:hover { background: var(--light); border-color: var(--orange); }
 .community-tag {
     background: var(--white); border: 1px solid var(--gray-200);
     border-radius: 20px; padding: 8px 18px; font-size: 13px; font-weight: 600;
-    color: var(--navy);
+    color: var(--navy); transition: var(--transition);
 }
+.community-tag:hover { background: var(--navy); color: var(--white); border-color: var(--navy); }
 
 /* ─── LOCATION PAGE — Directions Box ─────────────────────────────────── */
 
 .directions-box {
     background: var(--white); border: 1px solid var(--gray-200);
     border-radius: var(--radius); padding: 28px; text-align: center;
+    box-shadow: var(--shadow);
 }
 .directions-box h3 { font-size: 18px; margin-bottom: 12px; }
 .directions-box p { font-size: 14px; color: var(--gray-600); line-height: 1.7; margin-bottom: 16px; }
+
+/* ─── LOCATION PAGE — Local Content ─────────────────────────────────── */
+
+.local-content { margin-top: 16px; }
+.local-content p { font-size: 14px; line-height: 1.7; color: var(--text-secondary); margin-bottom: 12px; }
 
 /* ─── LOCATION PAGE — Locations Grid (4-col for "other offices") ──────── */
 
@@ -1230,7 +1251,7 @@ a.sub-type-link:hover { background: var(--light); border-color: var(--orange); }
     margin: 24px 0;
 }
 .hero-stat {
-    text-align: center; border-left: 3px solid var(--orange); padding-left: 12px;
+    text-align: left; border-left: 3px solid var(--orange); padding-left: 12px;
 }
 .stat-number {
     display: block; color: var(--orange); font-weight: 900; font-size: 22px;
@@ -1253,6 +1274,7 @@ a.sub-type-link:hover { background: var(--light); border-color: var(--orange); }
 .hero-ctas {
     display: flex; gap: 12px; flex-wrap: wrap;
 }
+.hero-buttons { display: flex; gap: 12px; flex-wrap: wrap; }
 
 /* ─── LOCATION PAGE — Badge styles ────────────────────────────────────── */
 
@@ -1317,6 +1339,7 @@ a.sub-type-link:hover { background: var(--light); border-color: var(--orange); }
     .nap-details { grid-template-columns: 1fr; }
     .nap-actions { flex-direction: column; }
     .badge-bar-inner { gap: 16px; }
+    .section-map iframe { height: 320px; }
 }
 
 @media (max-width: 480px) {
