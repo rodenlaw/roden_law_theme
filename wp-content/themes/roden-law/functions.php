@@ -12,16 +12,6 @@
 
 defined( 'ABSPATH' ) || exit;
 
-// Temporary debug: capture fatal errors on blog archive
-if ( isset( $_GET['roden_debug'] ) && $_GET['roden_debug'] === 'trace500' ) {
-    register_shutdown_function( function() {
-        $e = error_get_last();
-        if ( $e ) {
-            echo '<!-- RODEN_FATAL: type=' . $e['type'] . ' msg=' . esc_html( $e['message'] ) . ' file=' . esc_html( $e['file'] ) . ' line=' . $e['line'] . ' -->';
-        }
-    });
-}
-
 /* ==========================================================================
    1. LOAD INC/ MODULES
    ========================================================================== */
@@ -137,4 +127,12 @@ function roden_register_sidebars() {
         'before_title'  => '<h3 class="widget-title">',
         'after_title'   => '</h3>',
     ) );
+}
+
+/* ==========================================================================
+   5. LEGACY STUBS — prevent fatal errors from stale server-side files
+   ========================================================================== */
+
+if ( ! function_exists( 'language_check' ) ) {
+    function language_check() { return ''; }
 }

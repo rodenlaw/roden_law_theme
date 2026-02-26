@@ -5,26 +5,16 @@
  * @package RodenLaw
  */
 
-// Temporary debug: capture fatal error details
-register_shutdown_function( function() {
-    $e = error_get_last();
-    if ( $e && in_array( $e['type'], [ E_ERROR, E_PARSE, E_COMPILE_ERROR, E_CORE_ERROR ] ) ) {
-        echo '<!-- FATAL_DEBUG: ' . esc_html( $e['message'] ) . ' in ' . esc_html( $e['file'] ) . ' on line ' . intval( $e['line'] ) . ' -->';
-    }
-});
-
 get_header();
 if ( ! function_exists( 'roden_breadcrumb_html' ) ) {
     require_once get_template_directory() . '/inc/template-tags.php';
 }
 $firm = roden_firm_data();
 ?>
-<!-- DEBUG:CHECKPOINT:AFTER_HEADER -->
 
 <section class="hero hero-blog">
     <div class="container">
         <?php roden_breadcrumb_html(); ?>
-        <!-- DEBUG:CHECKPOINT:AFTER_BREADCRUMB -->
         <h1 class="hero-title">
             <?php
             if ( is_category() ) {
@@ -46,23 +36,19 @@ $firm = roden_firm_data();
         <div class="blog-search">
             <?php get_search_form(); ?>
         </div>
-        <!-- DEBUG:CHECKPOINT:AFTER_SEARCH -->
     </div>
 </section>
 
-<!-- DEBUG:CHECKPOINT:BEFORE_LOOP -->
 <div class="content-with-sidebar">
     <div class="container content-sidebar-grid">
 
         <div class="main-content">
             <?php if ( have_posts() ) : ?>
-                <!-- DEBUG:CHECKPOINT:HAVE_POSTS -->
                 <div class="blog-grid">
                     <?php while ( have_posts() ) : the_post();
                         get_template_part( 'template-parts/content', 'card' );
                     endwhile; ?>
                 </div>
-                <!-- DEBUG:CHECKPOINT:AFTER_LOOP -->
 
                 <nav class="pagination" aria-label="Blog pagination">
                     <?php
@@ -75,7 +61,7 @@ $firm = roden_firm_data();
                 </nav>
             <?php else : ?>
                 <div class="no-results">
-                    <p>🔍 No articles found. Try a different search term or category.</p>
+                    <p>No articles found. Try a different search term or category.</p>
                 </div>
             <?php endif; ?>
         </div>
@@ -85,7 +71,7 @@ $firm = roden_firm_data();
                 <div class="sidebar-widget sidebar-consult-cta">
                     <h3>Injured? Talk to a Lawyer.</h3>
                     <p>Free consultation. No fees unless we win.</p>
-                    <a href="tel:<?php echo esc_attr($firm['phone_e164']); ?>" class="btn btn-primary btn-block">📞 <?php echo esc_html($firm['phone']); ?></a>
+                    <a href="tel:<?php echo esc_attr($firm['phone_e164']); ?>" class="btn btn-primary btn-block"><?php echo esc_html($firm['phone']); ?></a>
                     <a href="#contact" class="btn btn-outline-light btn-block">Free Case Evaluation</a>
                 </div>
 
@@ -95,7 +81,7 @@ $firm = roden_firm_data();
                         <?php
                         $cats = get_categories(['hide_empty'=>true]);
                         foreach ( $cats as $cat ) {
-                            echo '<li><a href="' . esc_url(get_category_link($cat)) . '">→ ' . esc_html($cat->name) . ' <span class="count">(' . $cat->count . ')</span></a></li>';
+                            echo '<li><a href="' . esc_url(get_category_link($cat)) . '">' . esc_html($cat->name) . ' <span class="count">(' . $cat->count . ')</span></a></li>';
                         }
                         ?>
                     </ul>
@@ -107,7 +93,7 @@ $firm = roden_firm_data();
                     $pas = get_posts(['post_type'=>'practice_area','posts_per_page'=>6,'orderby'=>'menu_order','order'=>'ASC']);
                     echo '<ul class="sidebar-links">';
                     foreach ( $pas as $pa ) {
-                        echo '<li><a href="' . esc_url(get_permalink($pa)) . '">→ ' . esc_html($pa->post_title) . '</a></li>';
+                        echo '<li><a href="' . esc_url(get_permalink($pa)) . '">' . esc_html($pa->post_title) . '</a></li>';
                     }
                     echo '</ul>';
                     ?>
