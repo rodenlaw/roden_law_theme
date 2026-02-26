@@ -1,42 +1,10 @@
 /**
  * Roden Law — AI-SEO WordPress Theme JavaScript
- * Mobile navigation, FAQ accordion, smooth scroll, form handling
+ * FAQ accordion, smooth scroll, GA tracking, sticky header
  */
 
 (function () {
     'use strict';
-
-    /* ── Mobile Navigation ────────────────────────────────────── */
-
-    const mobileToggle = document.querySelector('.mobile-toggle');
-    const mobileOverlay = document.querySelector('.mobile-nav-overlay');
-    const mobileClose = document.querySelector('.mobile-close');
-
-    function openMobileNav() {
-        if (mobileOverlay) {
-            mobileOverlay.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-    }
-
-    function closeMobileNav() {
-        if (mobileOverlay) {
-            mobileOverlay.classList.remove('active');
-            document.body.style.overflow = '';
-        }
-    }
-
-    if (mobileToggle) mobileToggle.addEventListener('click', openMobileNav);
-    if (mobileClose) mobileClose.addEventListener('click', closeMobileNav);
-    if (mobileOverlay) {
-        mobileOverlay.addEventListener('click', function (e) {
-            if (e.target === mobileOverlay) closeMobileNav();
-        });
-    }
-
-    document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape') closeMobileNav();
-    });
 
     /* ── FAQ Accordion ────────────────────────────────────────── */
 
@@ -96,7 +64,6 @@
                     : 0;
                 var top = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 16;
                 window.scrollTo({ top: top, behavior: 'smooth' });
-                closeMobileNav();
             }
         });
     });

@@ -1,0 +1,21 @@
+# Reference documents (do not deploy)
+*.docx
+*.jsx
+CLAUDE.md
+README.md
+setup-scaffold.sh
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Dependencies
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+
+# Content reference files
+content/
+bin/
