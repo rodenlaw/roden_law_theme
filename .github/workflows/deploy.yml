@@ -12,13 +12,18 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Deploy to WP Engine
-        uses: wpengine/github-action-wpe-site-deploy@v3
         with:
-          WPE_SSHG_KEY_PRIVATE: ${{ secrets.WPE_SSHG_KEY_PRIVATE }}
-          WPE_ENV: rodenlawdev1
-          SRC_PATH: wp-content/themes/roden-law/
-          REMOTE_PATH: wp-content/themes/roden-law/
-          PHP_LINT: TRUE
-          CACHE_CLEAR: TRUE
+          fetch-depth: 0
+
+      - name: Setup SSH
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.WPE_SSHG_KEY_PRIVATE }}
+
+      - name: Add WP Engine host key
+        run: ssh-keyscan -t rsa git.wpengine.com >> ~/.ssh/known_hosts
+
+      - name: Deploy via Git Push
+        run: |
+          git remote add wpengine git@git.wpengine.com:rodenlawdev1.git
+          git push wpengine main --force
