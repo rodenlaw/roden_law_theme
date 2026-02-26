@@ -46,6 +46,7 @@ if ( ! $map_embed ) {
 $local_content = get_post_meta( $post_id, '_roden_local_content', true );
 $faqs          = get_post_meta( $post_id, '_roden_faqs', true );
 ?>
+<!-- RODEN-TEMPLATE-V2-LOADED -->
 
 <!-- ================================================================
      1. HERO
