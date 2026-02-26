@@ -13,12 +13,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: PHP Lint
+      - name: Deploy to WP Engine
         uses: wpengine/github-action-wpe-site-deploy@v3
         with:
           WPE_SSHG_KEY_PRIVATE: ${{ secrets.WPE_SSHG_KEY_PRIVATE }}
           WPE_ENV: rodenlawdev1
-          SRC_PATH: wp-content/themes/roden-law-theme/
-          REMOTE_PATH: wp-content/themes/roden-law-theme/
+          SRC_PATH: wp-content/themes/roden-law/
+          REMOTE_PATH: wp-content/themes/roden-law/
           PHP_LINT: TRUE
           CACHE_CLEAR: TRUE
