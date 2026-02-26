@@ -12,9 +12,7 @@ defined( 'ABSPATH' ) || exit;
 
 $firm = roden_firm_data();
 ?>
-<!-- RODEN-HEADER-GITPUSH-V2 -->
 <!DOCTYPE html>
-<!-- data-deploy-version="v2-2026-02-26" -->
 <html <?php language_attributes(); ?>>
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
