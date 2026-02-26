@@ -43,6 +43,16 @@ function roden_breadcrumb_html() {
     } elseif ( is_singular( 'resource' ) ) {
         $crumbs[] = '<a href="' . esc_url( home_url('/resources/') ) . '">Resources</a>';
         $crumbs[] = '<span class="breadcrumb-current">' . get_the_title() . '</span>';
+    } elseif ( is_search() ) {
+        $crumbs[] = '<span class="breadcrumb-current">Search Results</span>';
+    } elseif ( is_home() ) {
+        $crumbs[] = '<span class="breadcrumb-current">Blog</span>';
+    } elseif ( is_category() ) {
+        $crumbs[] = '<a href="' . esc_url( get_permalink( get_option('page_for_posts') ) ?: home_url('/blog/') ) . '">Blog</a>';
+        $crumbs[] = '<span class="breadcrumb-current">' . single_cat_title( '', false ) . '</span>';
+    } elseif ( is_tag() ) {
+        $crumbs[] = '<a href="' . esc_url( get_permalink( get_option('page_for_posts') ) ?: home_url('/blog/') ) . '">Blog</a>';
+        $crumbs[] = '<span class="breadcrumb-current">' . single_tag_title( '', false ) . '</span>';
     } elseif ( is_post_type_archive() ) {
         $crumbs[] = '<span class="breadcrumb-current">' . post_type_archive_title( '', false ) . '</span>';
     } elseif ( is_page() ) {
@@ -355,6 +365,14 @@ function roden_stats_bar() {
         echo '</div>';
     }
     echo '</div>';
+}
+
+/* ─── READING TIME ─────────────────────────────────────────────────────── */
+
+function roden_reading_time() {
+    $content = get_post_field( 'post_content', get_the_ID() );
+    $word_count = str_word_count( wp_strip_all_tags( $content ) );
+    return max( 1, ceil( $word_count / 250 ) );
 }
 
 /* ─── FAQ ACCORDION ────────────────────────────────────────────────────── */

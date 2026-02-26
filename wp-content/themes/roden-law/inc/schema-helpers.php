@@ -61,6 +61,10 @@ function roden_output_schema() {
         roden_schema_howto();
     }
 
+    if ( is_singular( 'post' ) ) {
+        roden_schema_article( $firm );
+    }
+
     // BreadcrumbList on all pages (except front page)
     if ( ! is_front_page() ) {
         roden_schema_breadcrumbs();
@@ -425,12 +429,42 @@ function roden_schema_breadcrumbs() {
             'item'     => get_permalink(),
         );
 
+    } elseif ( is_singular( 'post' ) ) {
+        $items[] = array(
+            '@type'    => 'ListItem',
+            'position' => $position++,
+            'name'     => __( 'Blog', 'roden-law' ),
+            'item'     => get_permalink( get_option( 'page_for_posts' ) ) ?: home_url( '/blog/' ),
+        );
+        $items[] = array(
+            '@type'    => 'ListItem',
+            'position' => $position++,
+            'name'     => get_the_title(),
+            'item'     => get_permalink(),
+        );
+
     } elseif ( is_singular() ) {
         $items[] = array(
             '@type'    => 'ListItem',
             'position' => $position++,
             'name'     => get_the_title(),
             'item'     => get_permalink(),
+        );
+
+    } elseif ( is_search() ) {
+        $items[] = array(
+            '@type'    => 'ListItem',
+            'position' => $position++,
+            'name'     => __( 'Search Results', 'roden-law' ),
+            'item'     => get_search_link(),
+        );
+
+    } elseif ( is_home() ) {
+        $items[] = array(
+            '@type'    => 'ListItem',
+            'position' => $position++,
+            'name'     => __( 'Blog', 'roden-law' ),
+            'item'     => get_permalink( get_option( 'page_for_posts' ) ) ?: home_url( '/blog/' ),
         );
 
     } elseif ( is_post_type_archive() ) {
@@ -544,6 +578,92 @@ function roden_schema_website( $firm ) {
             'query-input' => 'required name=search_term_string',
         ),
     ) );
+}
+
+/* ==========================================================================
+   Schema Type 11: BlogPosting (Blog posts)
+   ========================================================================== */
+
+/**
+ * Output BlogPosting schema on single blog posts.
+ *
+ * @param array $firm Firm data from roden_firm_data().
+ */
+function roden_schema_article( $firm ) {
+    $post_id   = get_the_ID();
+    $content   = get_post_field( 'post_content', $post_id );
+    $excerpt   = get_the_excerpt( $post_id );
+
+    $schema = array(
+        '@context'      => 'https://schema.org',
+        '@type'         => 'BlogPosting',
+        'headline'      => get_the_title( $post_id ),
+        'description'   => $excerpt ?: wp_trim_words( wp_strip_all_tags( $content ), 30 ),
+        'url'           => get_permalink( $post_id ),
+        'datePublished' => get_the_date( 'c', $post_id ),
+        'dateModified'  => get_the_modified_date( 'c', $post_id ),
+        'wordCount'     => str_word_count( wp_strip_all_tags( $content ) ),
+        'mainEntityOfPage' => array(
+            '@type' => 'WebPage',
+            '@id'   => get_permalink( $post_id ),
+        ),
+        'publisher' => array(
+            '@type' => 'Organization',
+            '@id'   => $firm['url'] . '/#organization',
+            'name'  => $firm['name'],
+        ),
+    );
+
+    // Featured image
+    if ( has_post_thumbnail( $post_id ) ) {
+        $img_url = get_the_post_thumbnail_url( $post_id, 'large' );
+        $img_id  = get_post_thumbnail_id( $post_id );
+        $img_meta = wp_get_attachment_metadata( $img_id );
+        $schema['image'] = array(
+            '@type'  => 'ImageObject',
+            'url'    => $img_url,
+            'width'  => $img_meta['width'] ?? 0,
+            'height' => $img_meta['height'] ?? 0,
+        );
+    }
+
+    // Author — linked attorney if set, otherwise WP author
+    $author_id = get_post_meta( $post_id, '_roden_author_attorney', true );
+    $atty      = $author_id ? get_post( $author_id ) : null;
+
+    if ( $atty ) {
+        $schema['author'] = array(
+            '@type' => 'Person',
+            '@id'   => get_permalink( $atty ) . '#person',
+            'name'  => $atty->post_title,
+            'url'   => get_permalink( $atty ),
+        );
+    } else {
+        $schema['author'] = array(
+            '@type' => 'Person',
+            'name'  => get_the_author(),
+        );
+    }
+
+    // Publisher logo
+    $logo_id = get_theme_mod( 'custom_logo' );
+    if ( $logo_id ) {
+        $logo_url = wp_get_attachment_image_url( $logo_id, 'full' );
+        if ( $logo_url ) {
+            $schema['publisher']['logo'] = array(
+                '@type' => 'ImageObject',
+                'url'   => $logo_url,
+            );
+        }
+    }
+
+    // Article section from primary category
+    $categories = get_the_category( $post_id );
+    if ( ! empty( $categories ) ) {
+        $schema['articleSection'] = $categories[0]->name;
+    }
+
+    roden_json_ld( $schema );
 }
 
 /* ==========================================================================

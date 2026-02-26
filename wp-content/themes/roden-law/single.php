@@ -160,13 +160,3 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
 </div>
 
 <?php get_footer(); ?>
-
-<?php
-/**
- * Estimated reading time
- */
-function roden_reading_time() {
-    $content = get_post_field( 'post_content', get_the_ID() );
-    $word_count = str_word_count( wp_strip_all_tags( $content ) );
-    return max( 1, ceil( $word_count / 250 ) );
-}
