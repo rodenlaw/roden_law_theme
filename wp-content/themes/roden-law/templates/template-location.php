@@ -8,6 +8,7 @@
  * directions, case results, FAQ, other offices, footer CTA, sidebar.
  *
  * @package RodenLaw
+ * @version 2.0.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit;
