@@ -1119,7 +1119,157 @@ a.sub-type-link:hover { background: var(--light); border-color: var(--orange); }
 
 .cta-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
 
+/* ─── LOCATION PAGE — Map Section ──────────────────────────────────────── */
+
+.section-map { padding: 0; }
+.section-map iframe { width: 100%; height: 400px; display: block; border: 0; }
+
+.map-nap-bar {
+    background: var(--navy); color: var(--white); padding: 20px 24px;
+}
+.map-nap-inner {
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 16px;
+}
+.map-nap-address {
+    display: flex; flex-direction: column; gap: 4px;
+}
+.map-nap-address strong { font-size: 16px; }
+.map-nap-address span { color: var(--text-light); font-size: 14px; }
+.map-nap-actions { display: flex; gap: 10px; }
+
+/* ─── LOCATION PAGE — Why Choose Grid ─────────────────────────────────── */
+
+.why-choose-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+}
+.why-choose-card {
+    border-top: 3px solid var(--orange); text-align: center; padding: 24px 20px;
+}
+.why-choose-card h3 { font-size: 1.1rem; margin-bottom: 8px; }
+.why-choose-card p { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
+
+/* ─── LOCATION PAGE — Jurisdiction Cards ──────────────────────────────── */
+
+.jurisdiction-cards {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+}
+.local-court-card {
+    background: var(--light); border: 1px solid var(--gray-200);
+    border-top: 3px solid var(--navy); border-radius: var(--radius); padding: 22px;
+}
+.local-court-card h3 { font-size: 15px; font-weight: 800; color: var(--navy); margin-bottom: 12px; }
+.court-detail { margin-bottom: 8px; }
+
+/* ─── LOCATION PAGE — Communities Grid ────────────────────────────────── */
+
+.communities-grid {
+    display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 32px;
+}
+.community-tag {
+    background: var(--white); border: 1px solid var(--gray-200);
+    border-radius: 20px; padding: 8px 18px; font-size: 13px; font-weight: 600;
+    color: var(--navy);
+}
+
+/* ─── LOCATION PAGE — Directions Box ─────────────────────────────────── */
+
+.directions-box {
+    background: var(--white); border: 1px solid var(--gray-200);
+    border-radius: var(--radius); padding: 28px; text-align: center;
+}
+.directions-box h3 { font-size: 18px; margin-bottom: 12px; }
+.directions-box p { font-size: 14px; color: var(--gray-600); line-height: 1.7; margin-bottom: 16px; }
+
+/* ─── LOCATION PAGE — Locations Grid (4-col for "other offices") ──────── */
+
+.locations-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+}
+.locations-grid .location-card {
+    border: 1px solid var(--gray-200); border-top: 4px solid var(--navy);
+    border-radius: 10px; padding: 20px 16px; background: var(--white);
+}
+.locations-grid .location-card h3 { font-size: 16px; margin-bottom: 6px; }
+.locations-grid .location-card address {
+    font-style: normal; font-size: 12px; color: var(--gray-600); margin-bottom: 8px;
+}
+.locations-grid .location-phone {
+    display: block; font-weight: 700; color: var(--navy); margin-bottom: 8px; font-size: 14px;
+}
+.locations-grid .location-link {
+    font-size: 13px; font-weight: 600; color: var(--orange-text);
+}
+.locations-grid .location-link:hover { color: var(--navy); }
+
+/* ─── LOCATION PAGE — Section Alt Background ─────────────────────────── */
+
+.section-alt { background: var(--light); }
+
+/* ─── LOCATION PAGE — Badge Bar ───────────────────────────────────────── */
+
+.badge-bar {
+    background: var(--navy); padding: 14px 24px;
+    border-bottom: 3px solid var(--orange);
+}
+.badge-bar-inner {
+    display: flex; gap: 40px; align-items: center; justify-content: center;
+    flex-wrap: wrap; max-width: var(--container); margin: 0 auto;
+}
+.badge-item { display: flex; align-items: center; gap: 8px; }
+.badge-icon {
+    width: 32px; height: 32px; background: rgba(255,255,255,0.12); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center; font-size: 14px;
+}
+.badge-label { font-size: 11px; color: var(--text-light); font-weight: 600; }
+
+/* ─── LOCATION PAGE — Hero Stats (match homepage hero) ────────────────── */
+
+.hero-stats {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+    margin: 24px 0;
+}
+.hero-stat {
+    text-align: center; border-left: 3px solid var(--orange); padding-left: 12px;
+}
+.stat-number {
+    display: block; color: var(--orange); font-weight: 900; font-size: 22px;
+    font-family: var(--font-serif);
+}
+.hero-stat .stat-label {
+    display: block; color: var(--text-light); font-size: 11px; margin-top: 2px;
+}
+
+/* ─── LOCATION PAGE — Hero Description ────────────────────────────────── */
+
+.hero-description {
+    color: var(--text-light); font-size: 15px; line-height: 1.75;
+    margin-bottom: 24px; max-width: 560px;
+}
+.hero-description strong { color: var(--white); }
+
+/* ─── LOCATION PAGE — Hero CTAs ───────────────────────────────────────── */
+
+.hero-ctas {
+    display: flex; gap: 12px; flex-wrap: wrap;
+}
+
+/* ─── LOCATION PAGE — Badge styles ────────────────────────────────────── */
+
+.badge {
+    display: inline-block; font-size: 11px; font-weight: 700; color: var(--white);
+    padding: 3px 10px; border-radius: 3px; letter-spacing: 1px; margin-bottom: 8px;
+}
+.badge-ga { background: var(--navy); }
+.badge-sc { background: var(--orange); }
+
 /* ─── RESPONSIVE ───────────────────────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+    .why-choose-grid { grid-template-columns: repeat(2, 1fr); }
+    .locations-grid { grid-template-columns: repeat(2, 1fr); }
+    .jurisdiction-cards { grid-template-columns: 1fr; }
+}
 
 @media (max-width: 900px) {
     .hero-grid { grid-template-columns: 1fr; }
@@ -1132,8 +1282,10 @@ a.sub-type-link:hover { background: var(--light); border-color: var(--orange); }
     .location-matrix-grid { grid-template-columns: repeat(3, 1fr); }
     .practice-areas-grid.cols-4 { grid-template-columns: repeat(2, 1fr); }
     .stats-bar { grid-template-columns: repeat(2, 1fr); }
+    .hero-stats { grid-template-columns: repeat(2, 1fr); }
     .case-results-grid.cols-4 { grid-template-columns: repeat(2, 1fr); }
     .attorneys-grid.cols-4 { grid-template-columns: repeat(2, 1fr); }
+    .attorneys-grid.cols-3 { grid-template-columns: repeat(2, 1fr); }
     .attorney-hero-grid { grid-template-columns: 1fr; }
     .attorney-hero-photo { width: 200px; height: 250px; margin: 0 auto; }
     .value-props-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1144,6 +1296,8 @@ a.sub-type-link:hover { background: var(--light); border-color: var(--orange); }
     .blog-grid { grid-template-columns: 1fr; }
     .post-nav-links { grid-template-columns: 1fr; }
     .error-links-grid { grid-template-columns: 1fr; }
+    .map-nap-inner { flex-direction: column; text-align: center; }
+    .map-nap-actions { justify-content: center; }
 }
 
 @media (max-width: 768px) {
@@ -1158,6 +1312,14 @@ a.sub-type-link:hover { background: var(--light); border-color: var(--orange); }
     .trust-label { display: none; }
     .footer-grid { grid-template-columns: 1fr; }
     .location-cards-grid { grid-template-columns: 1fr; }
+    .locations-grid { grid-template-columns: 1fr; }
+    .why-choose-grid { grid-template-columns: 1fr; }
     .nap-details { grid-template-columns: 1fr; }
     .nap-actions { flex-direction: column; }
+    .badge-bar-inner { gap: 16px; }
+}
+
+@media (max-width: 480px) {
+    .section-map iframe { height: 280px; }
+    .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 12px; }
 }
