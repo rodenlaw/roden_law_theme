@@ -10,6 +10,7 @@
  */
 
 get_header();
+echo '<!-- SINGLE-LOCATION-GITPUSH-V2 -->';
 if ( ! function_exists( 'roden_breadcrumb_html' ) ) {
     require_once get_template_directory() . '/inc/template-tags.php';
 }
