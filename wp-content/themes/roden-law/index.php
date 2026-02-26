@@ -11,10 +11,12 @@ if ( ! function_exists( 'roden_breadcrumb_html' ) ) {
 }
 $firm = roden_firm_data();
 ?>
+<!-- DEBUG:CHECKPOINT:AFTER_HEADER -->
 
 <section class="hero hero-blog">
     <div class="container">
         <?php roden_breadcrumb_html(); ?>
+        <!-- DEBUG:CHECKPOINT:AFTER_BREADCRUMB -->
         <h1 class="hero-title">
             <?php
             if ( is_category() ) {
@@ -36,19 +38,23 @@ $firm = roden_firm_data();
         <div class="blog-search">
             <?php get_search_form(); ?>
         </div>
+        <!-- DEBUG:CHECKPOINT:AFTER_SEARCH -->
     </div>
 </section>
 
+<!-- DEBUG:CHECKPOINT:BEFORE_LOOP -->
 <div class="content-with-sidebar">
     <div class="container content-sidebar-grid">
 
         <div class="main-content">
             <?php if ( have_posts() ) : ?>
+                <!-- DEBUG:CHECKPOINT:HAVE_POSTS -->
                 <div class="blog-grid">
                     <?php while ( have_posts() ) : the_post();
                         get_template_part( 'template-parts/content', 'card' );
                     endwhile; ?>
                 </div>
+                <!-- DEBUG:CHECKPOINT:AFTER_LOOP -->
 
                 <nav class="pagination" aria-label="Blog pagination">
                     <?php
