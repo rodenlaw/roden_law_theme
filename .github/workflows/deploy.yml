@@ -15,13 +15,18 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup SSH
-        uses: webfactory/ssh-agent@v0.9.0
-        with:
-          ssh-private-key: ${{ secrets.WPE_SSHG_KEY_PRIVATE }}
-
-      - name: Add WP Engine host key
-        run: ssh-keyscan -t rsa git.wpengine.com >> ~/.ssh/known_hosts
+      - name: Setup SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.WPE_SSHG_KEY_PRIVATE }}" > ~/.ssh/wpe_key
+          chmod 600 ~/.ssh/wpe_key
+          ssh-keyscan -t rsa git.wpengine.com >> ~/.ssh/known_hosts 2>/dev/null
+          cat >> ~/.ssh/config <<EOL
+          Host git.wpengine.com
+            IdentityFile ~/.ssh/wpe_key
+            StrictHostKeyChecking no
+            IdentitiesOnly yes
+          EOL
 
       - name: Deploy via Git Push
         run: |
