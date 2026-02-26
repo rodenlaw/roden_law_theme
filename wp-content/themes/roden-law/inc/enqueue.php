@@ -21,11 +21,19 @@ function roden_enqueue_assets() {
         null
     );
 
-    // Main stylesheet
+    // Main stylesheet (theme header + design tokens)
     wp_enqueue_style(
         'roden-style',
         get_stylesheet_uri(),
         array( 'roden-google-fonts' ),
+        $theme_version
+    );
+
+    // Theme component & layout styles
+    wp_enqueue_style(
+        'roden-theme',
+        get_template_directory_uri() . '/assets/css/theme.css',
+        array( 'roden-style' ),
         $theme_version
     );
 
