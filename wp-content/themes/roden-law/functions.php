@@ -128,11 +128,3 @@ function roden_register_sidebars() {
         'after_title'   => '</h3>',
     ) );
 }
-
-/* ==========================================================================
-   5. LEGACY STUBS — prevent fatal errors from stale server-side files
-   ========================================================================== */
-
-if ( ! function_exists( 'language_check' ) ) {
-    function language_check() { return ''; }
-}
