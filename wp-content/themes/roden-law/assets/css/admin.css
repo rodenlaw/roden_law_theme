@@ -1,0 +1,45 @@
+/**
+ * Roden Law — Admin Meta Box Styles
+ *
+ * Styling for custom meta box UI: repeater rows, form layout.
+ *
+ * @package Roden_Law
+ */
+
+/* ── Repeater Rows ─────────────────────────────────────────────── */
+
+.roden-repeater-row {
+    transition: background-color 0.2s ease;
+}
+
+.roden-repeater-row:hover {
+    background-color: #f0f0f0 !important;
+}
+
+.roden-remove-row {
+    opacity: 0.4;
+    transition: opacity 0.2s ease;
+}
+
+.roden-repeater-row:hover .roden-remove-row {
+    opacity: 1;
+}
+
+/* ── Meta Box Form Tables ──────────────────────────────────────── */
+
+#roden_atty_profile .form-table th,
+#roden_case_details .form-table th {
+    width: 160px;
+    padding-top: 15px;
+}
+
+#roden_atty_profile .form-table td,
+#roden_case_details .form-table td {
+    padding-top: 10px;
+}
+
+/* ── FAQ Container ─────────────────────────────────────────────── */
+
+#roden-faq-container .roden-repeater-row label strong {
+    color: #1d2327;
+}
