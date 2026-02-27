@@ -423,37 +423,45 @@ h1, h2, h3, h4, h5, h6 {
 .case-results-grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
 
 .result-card {
-    background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12);
+    background: var(--navy); border: 1px solid rgba(255,255,255,0.12);
     border-radius: 10px; padding: 24px; border-top: 3px solid var(--orange);
-}
-.section:not(.section-dark) .result-card {
-    background: var(--navy); color: var(--white);
+    text-align: center;
 }
 .result-type {
-    display: block; font-size: 10px; color: var(--orange); font-weight: 700;
+    display: block; font-size: 11px; color: var(--orange); font-weight: 700;
     letter-spacing: 1px; text-transform: uppercase; margin-bottom: 6px;
 }
 .result-amount {
-    display: block; font-size: 26px; font-weight: 900; color: var(--white);
+    display: block; font-size: 26px; font-weight: 900; color: var(--orange);
     font-family: var(--font-serif);
 }
 .result-title {
-    display: block; font-size: 13px; color: var(--text-light); margin-top: 8px;
+    display: block; font-size: 14px; font-weight: 700; color: var(--white);
+    font-family: var(--font-serif); margin-top: 8px;
 }
 .result-desc {
-    font-size: 11px; color: var(--text-light); margin-top: 8px; line-height: 1.5;
+    font-size: 12px; color: rgba(255,255,255,0.75); margin-top: 8px; line-height: 1.5;
 }
 .results-disclaimer {
     font-size: 11px; color: var(--gray-400); font-style: italic; margin-top: 12px;
 }
 
+@media (max-width: 768px) {
+    .case-results-grid.cols-3,
+    .case-results-grid.cols-4 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+    .case-results-grid.cols-3,
+    .case-results-grid.cols-4 { grid-template-columns: 1fr; }
+}
+
 /* ─── FEATURED RESULT (archive hero callout) ─────────────────────────── */
 
-.featured-result-section { padding-top: 0; }
+.featured-result-section { padding-top: 24px; padding-bottom: 48px; }
 .featured-result-card {
     background: var(--navy); color: var(--white); border-radius: 12px;
     padding: 48px 40px; text-align: center; position: relative;
-    border-bottom: 4px solid var(--orange);
+    border-bottom: 4px solid var(--orange); max-width: 720px; margin: 0 auto;
 }
 .featured-result-label {
     display: inline-block; background: var(--orange); color: var(--navy);
