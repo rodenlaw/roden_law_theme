@@ -2,8 +2,8 @@
 /**
  * Archive: Case Results — Results Showcase
  *
- * Displays case results in a grid, sorted by amount descending.
- * Includes trust stats, disclaimer, and a bottom CTA.
+ * Hero → Featured top result → 3-column grid → stats bar →
+ * disclaimer → bottom CTA.
  *
  * @package Roden_Law
  */
@@ -11,33 +11,86 @@
 get_header();
 
 $firm = roden_firm_data();
+
+/* ── Fetch the top result by amount for the featured callout ─────────── */
+$top_query = new WP_Query( array(
+    'post_type'      => 'case_result',
+    'posts_per_page' => 1,
+    'orderby'        => 'meta_value',
+    'meta_key'       => '_roden_case_amount',
+    'order'          => 'DESC',
+) );
+
+$has_featured = $top_query->have_posts();
+$featured_id  = 0;
+
+if ( $has_featured ) {
+    $top_query->the_post();
+    $featured_id     = get_the_ID();
+    $featured_amount = get_post_meta( $featured_id, '_roden_case_amount', true );
+    $featured_type   = get_post_meta( $featured_id, '_roden_case_type', true );
+    $featured_desc   = get_post_meta( $featured_id, '_roden_description', true );
+    $featured_title  = get_the_title();
+    wp_reset_postdata();
+}
 ?>
 
+<!-- ── Hero ────────────────────────────────────────────────────────────── -->
 <section class="hero hero-archive hero-case-results-archive">
     <div class="container">
         <?php roden_breadcrumb_html(); ?>
-        <h1 class="hero-title"><?php esc_html_e( 'Case Results', 'roden-law' ); ?></h1>
+        <h1 class="hero-title"><?php esc_html_e( 'Our Results Speak for Themselves', 'roden-law' ); ?></h1>
         <p class="hero-subtitle">
-            <?php esc_html_e( 'Our track record speaks for itself. Roden Law has recovered', 'roden-law' ); ?>
+            <?php esc_html_e( 'Roden Law has recovered', 'roden-law' ); ?>
             <strong><?php echo esc_html( $firm['trust_stats']['recovered'] ); ?></strong>
             <?php esc_html_e( 'for personal injury victims across Georgia and South Carolina.', 'roden-law' ); ?>
         </p>
     </div>
 </section>
 
+<?php if ( $has_featured ) : ?>
+<!-- ── Featured Result ────────────────────────────────────────────────── -->
+<section class="section featured-result-section">
+    <div class="container">
+        <div class="featured-result-card">
+            <span class="featured-result-label"><?php esc_html_e( 'Top Result', 'roden-law' ); ?></span>
+            <span class="featured-result-amount"><?php echo esc_html( $featured_amount ); ?></span>
+            <div class="featured-result-meta">
+                <span class="featured-result-type"><?php echo esc_html( ucfirst( $featured_type ) ); ?></span>
+                <span class="featured-result-sep">&mdash;</span>
+                <span class="featured-result-title"><?php echo esc_html( $featured_title ); ?></span>
+            </div>
+            <?php if ( $featured_desc ) : ?>
+                <p class="featured-result-desc"><?php echo esc_html( $featured_desc ); ?></p>
+            <?php endif; ?>
+        </div>
+    </div>
+</section>
+<?php endif; ?>
+
+<!-- ── Results Grid (excludes featured) ───────────────────────────────── -->
+<section class="section section-alt">
+    <div class="container">
+        <h2 class="section-title text-center"><?php esc_html_e( 'More Notable Results', 'roden-law' ); ?></h2>
+        <?php
+        roden_case_results_grid( array(
+            'count'   => 20,
+            'columns' => 3,
+            'exclude' => $featured_id ? array( $featured_id ) : array(),
+        ) );
+        ?>
+    </div>
+</section>
+
+<!-- ── Trust Stats Bar ────────────────────────────────────────────────── -->
 <section class="section">
     <div class="container">
         <?php roden_stats_bar(); ?>
     </div>
 </section>
 
+<!-- ── Disclaimer ─────────────────────────────────────────────────────── -->
 <section class="section section-alt">
-    <div class="container">
-        <?php roden_case_results_grid( array( 'count' => 20, 'columns' => 4 ) ); ?>
-    </div>
-</section>
-
-<section class="section">
     <div class="container">
         <div class="results-disclaimer-box">
             <h3><?php esc_html_e( 'Important Disclaimer', 'roden-law' ); ?></h3>
@@ -46,6 +99,7 @@ $firm = roden_firm_data();
     </div>
 </section>
 
+<!-- ── Bottom CTA ─────────────────────────────────────────────────────── -->
 <section class="section bg-navy cta-bottom">
     <div class="container text-center">
         <h2 class="text-white"><?php esc_html_e( 'Injured? Let Us Fight for You.', 'roden-law' ); ?></h2>

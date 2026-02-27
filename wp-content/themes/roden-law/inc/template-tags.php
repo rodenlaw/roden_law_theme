@@ -100,6 +100,7 @@ function roden_case_results_grid( $args = array() ) {
         'practice_category' => '',
         'location_served'   => '',
         'columns'           => 4,
+        'exclude'           => array(),
     );
     $args = wp_parse_args( $args, $defaults );
 
@@ -110,6 +111,10 @@ function roden_case_results_grid( $args = array() ) {
         'meta_key'       => '_roden_case_amount',
         'order'          => 'DESC',
     );
+
+    if ( ! empty( $args['exclude'] ) ) {
+        $query_args['post__not_in'] = (array) $args['exclude'];
+    }
 
     $tax_query = array();
     if ( $args['practice_category'] ) {
