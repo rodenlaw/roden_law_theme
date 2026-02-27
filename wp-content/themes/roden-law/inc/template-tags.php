@@ -313,58 +313,59 @@ function roden_location_matrix( $pillar_id = null ) {
    ========================================================================== */
 
 function roden_practice_areas_grid( $columns = 4 ) {
+    $featured_slugs = array(
+        'car-accident-lawyers',
+        'truck-accident-lawyers',
+        'motorcycle-accident-lawyers',
+        'pedestrian-accident-lawyers',
+    );
+
+    $featured = array(
+        'Car Accident Lawyers'        => 'car-accident-lawyers',
+        'Truck Accident Lawyers'       => 'truck-accident-lawyers',
+        'Motorcycle Accident Lawyers'  => 'motorcycle-accident-lawyers',
+        'Pedestrian Accident Lawyers'  => 'pedestrian-accident-lawyers',
+    );
+
+    // Try to load from CPT posts.
     $areas = get_posts( array(
         'post_type'      => 'practice_area',
         'posts_per_page' => -1,
         'post_parent'    => 0,
-        'orderby'        => 'menu_order',
+        'post_name__in'  => $featured_slugs,
+        'orderby'        => 'post_name__in',
         'order'          => 'ASC',
     ) );
 
-    // Fallback: hardcoded practice areas if no CPT posts exist yet
-    if ( empty( $areas ) ) {
-        $fallback = array(
-            'Car Accident'          => 'car-accident-lawyers',
-            'Truck Accident'        => 'truck-accident-lawyers',
-            'Slip & Fall'           => 'slip-and-fall-lawyers',
-            'Medical Malpractice'   => 'medical-malpractice-lawyers',
-            'Motorcycle Accident'   => 'motorcycle-accident-lawyers',
-            'Wrongful Death'        => 'wrongful-death-lawyers',
-            'Workers\' Comp'        => 'workers-compensation-lawyers',
-            'Dog Bite'              => 'dog-bite-lawyers',
-            'Brain Injury'          => 'brain-injury-lawyers',
-            'Spinal Cord Injury'    => 'spinal-cord-injury-lawyers',
-            'Maritime'              => 'maritime-injury-lawyers',
-            'Product Liability'     => 'product-liability-lawyers',
-            'Boating Accident'      => 'boating-accident-lawyers',
-            'Burn Injury'           => 'burn-injury-lawyers',
-            'Construction Accident' => 'construction-accident-lawyers',
-            'Nursing Home Abuse'    => 'nursing-home-abuse-lawyers',
-            'Premises Liability'    => 'premises-liability-lawyers',
-            'Pedestrian Accident'   => 'pedestrian-accident-lawyers',
-        );
-        echo '<div class="practice-areas-grid cols-' . intval( $columns ) . '">';
-        foreach ( $fallback as $name => $slug ) {
+    echo '<div class="practice-areas-grid cols-' . intval( $columns ) . '">';
+
+    if ( ! empty( $areas ) ) {
+        foreach ( $areas as $area ) {
+            ?>
+            <a href="<?php echo esc_url( get_permalink( $area ) ); ?>" class="practice-area-card">
+                <?php if ( has_post_thumbnail( $area ) ) : ?>
+                    <?php echo get_the_post_thumbnail( $area, 'card-thumb', array( 'class' => 'pa-thumb' ) ); ?>
+                <?php endif; ?>
+                <span class="pa-name"><?php echo esc_html( $area->post_title ); ?></span>
+            </a>
+            <?php
+        }
+    } else {
+        // Fallback if no CPT posts exist yet.
+        foreach ( $featured as $name => $slug ) {
             $url = home_url( '/practice-areas/' . $slug . '/' );
             echo '<a href="' . esc_url( $url ) . '" class="practice-area-card">';
             echo '<span class="pa-name">' . esc_html( $name ) . '</span>';
             echo '</a>';
         }
-        echo '</div>';
-        return;
     }
 
-    echo '<div class="practice-areas-grid cols-' . intval( $columns ) . '">';
-    foreach ( $areas as $area ) {
-        ?>
-        <a href="<?php echo esc_url( get_permalink( $area ) ); ?>" class="practice-area-card">
-            <?php if ( has_post_thumbnail( $area ) ) : ?>
-                <?php echo get_the_post_thumbnail( $area, 'card-thumb', array( 'class' => 'pa-thumb' ) ); ?>
-            <?php endif; ?>
-            <span class="pa-name"><?php echo esc_html( $area->post_title ); ?></span>
-        </a>
-        <?php
-    }
+    // "Other" catch-all link.
+    $archive_url = home_url( '/practice-areas/' );
+    echo '<a href="' . esc_url( $archive_url ) . '" class="practice-area-card">';
+    echo '<span class="pa-name">' . esc_html__( 'Other Personal Injury Types', 'roden-law' ) . '</span>';
+    echo '</a>';
+
     echo '</div>';
 }
 

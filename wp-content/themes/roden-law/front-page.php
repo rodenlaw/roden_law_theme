@@ -25,26 +25,12 @@ $featured_results = array(
     array( 'amount' => '$3,000,000',  'type' => 'Auto Accident',     'label' => 'Settlement' ),
 );
 
-// 18 practice areas for grid
+// Featured practice areas for grid
 $practice_areas = array(
-    array( 'name' => 'Car Accident Lawyers',          'slug' => 'car-accident-lawyers' ),
-    array( 'name' => 'Truck Accident Lawyers',         'slug' => 'truck-accident-lawyers' ),
-    array( 'name' => 'Slip & Fall Lawyers',            'slug' => 'slip-and-fall-lawyers' ),
-    array( 'name' => 'Motorcycle Accident Lawyers',    'slug' => 'motorcycle-accident-lawyers' ),
-    array( 'name' => 'Medical Malpractice Lawyers',    'slug' => 'medical-malpractice-lawyers' ),
-    array( 'name' => 'Wrongful Death Lawyers',         'slug' => 'wrongful-death-lawyers' ),
-    array( 'name' => 'Workers\' Compensation Lawyers', 'slug' => 'workers-compensation-lawyers' ),
-    array( 'name' => 'Dog Bite Lawyers',               'slug' => 'dog-bite-lawyers' ),
-    array( 'name' => 'Brain Injury Lawyers',           'slug' => 'brain-injury-lawyers' ),
-    array( 'name' => 'Spinal Cord Injury Lawyers',     'slug' => 'spinal-cord-injury-lawyers' ),
-    array( 'name' => 'Maritime Injury Lawyers',        'slug' => 'maritime-injury-lawyers' ),
-    array( 'name' => 'Product Liability Lawyers',      'slug' => 'product-liability-lawyers' ),
-    array( 'name' => 'Boating Accident Lawyers',       'slug' => 'boating-accident-lawyers' ),
-    array( 'name' => 'Burn Injury Lawyers',            'slug' => 'burn-injury-lawyers' ),
-    array( 'name' => 'Construction Accident Lawyers',  'slug' => 'construction-accident-lawyers' ),
-    array( 'name' => 'Nursing Home Abuse Lawyers',     'slug' => 'nursing-home-abuse-lawyers' ),
-    array( 'name' => 'Premises Liability Lawyers',     'slug' => 'premises-liability-lawyers' ),
-    array( 'name' => 'Pedestrian Accident Lawyers',    'slug' => 'pedestrian-accident-lawyers' ),
+    array( 'name' => 'Car Accident Lawyers',        'slug' => 'car-accident-lawyers' ),
+    array( 'name' => 'Truck Accident Lawyers',       'slug' => 'truck-accident-lawyers' ),
+    array( 'name' => 'Motorcycle Accident Lawyers',  'slug' => 'motorcycle-accident-lawyers' ),
+    array( 'name' => 'Pedestrian Accident Lawyers',  'slug' => 'pedestrian-accident-lawyers' ),
 );
 ?>
 
@@ -210,6 +196,11 @@ $practice_areas = array(
                         <span class="card-arrow" aria-hidden="true">&rarr;</span>
                     </a>
                 <?php endforeach; ?>
+                <a href="<?php echo esc_url( home_url( '/practice-areas/' ) ); ?>"
+                   class="card practice-area-card">
+                    <h3><?php esc_html_e( 'Other Personal Injury Types', 'roden-law' ); ?></h3>
+                    <span class="card-arrow" aria-hidden="true">&rarr;</span>
+                </a>
             </div>
         </div>
     </section>
