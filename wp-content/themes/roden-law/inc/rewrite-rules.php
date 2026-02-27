@@ -82,7 +82,7 @@ function roden_practice_area_type( $post_id = null ) {
     }
 
     $post = get_post( $post_id );
-    if ( ! $post || 'practice_area' !== $post->post_type ) {
+    if ( ! $post || ! in_array( $post->post_type, [ 'practice_area', 'practice-area' ], true ) ) {
         return 'pillar';
     }
 
@@ -112,7 +112,7 @@ function roden_is_intersection_page( $post_id = null ) {
     }
 
     $post = get_post( $post_id );
-    if ( ! $post || ! $post->post_parent || 'practice_area' !== $post->post_type ) {
+    if ( ! $post || ! $post->post_parent || ! in_array( $post->post_type, [ 'practice_area', 'practice-area' ], true ) ) {
         return false;
     }
 
@@ -133,7 +133,7 @@ function roden_is_subtype_page( $post_id = null ) {
     }
 
     $post = get_post( $post_id );
-    if ( ! $post || ! $post->post_parent || 'practice_area' !== $post->post_type ) {
+    if ( ! $post || ! $post->post_parent || ! in_array( $post->post_type, [ 'practice_area', 'practice-area' ], true ) ) {
         return false;
     }
 
@@ -156,7 +156,10 @@ function roden_get_intersection_office( $post_id = null ) {
         return null;
     }
 
-    $post       = get_post( $post_id );
+    $post = get_post( $post_id );
+    if ( ! $post ) {
+        return null;
+    }
     $office_key = roden_office_key_from_slug( $post->post_name );
 
     if ( ! $office_key ) {

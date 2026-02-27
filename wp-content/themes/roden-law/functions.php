@@ -83,7 +83,33 @@ function roden_legacy_location_redirects() {
 }
 
 /* ==========================================================================
-   4. WIDGET AREAS
+   4. TEMPLATE ROUTING — Bridge ACF CPT names to theme templates
+   ========================================================================== */
+
+add_filter( 'single_template', 'roden_bridge_cpt_templates' );
+/**
+ * Route posts from ACF-registered CPTs (hyphen names) to our theme templates
+ * (underscore names). ACF registers 'practice-area'; our template file is
+ * single-practice_area.php.
+ */
+function roden_bridge_cpt_templates( $template ) {
+    $map = [
+        'practice-area' => '/single-practice_area.php',
+    ];
+
+    $post_type = get_post_type();
+    if ( isset( $map[ $post_type ] ) ) {
+        $custom = get_template_directory() . $map[ $post_type ];
+        if ( file_exists( $custom ) ) {
+            return $custom;
+        }
+    }
+
+    return $template;
+}
+
+/* ==========================================================================
+   5. WIDGET AREAS
    ========================================================================== */
 
 add_action( 'widgets_init', 'roden_register_sidebars' );

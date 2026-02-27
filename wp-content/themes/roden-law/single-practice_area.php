@@ -39,9 +39,13 @@ elseif ( $jurisdiction === 'sc' ) $jurisdiction_label = 'South Carolina';
 // Parent pillar data (for intersection + subtype)
 $parent_post = $post->post_parent ? get_post( $post->post_parent ) : null;
 
+// ── Detect post type (support both ACF 'practice-area' and theme 'practice_area') ──
+$pa_post_type = get_post_type( $post_id );
+
 // ── Route to template ───────────────────────────────────────────────────
+// Using include (not get_template_part) so router variables stay in scope.
 if ( $is_intersection ) :
-    get_template_part( 'templates/template-intersection' );
+    include get_template_directory() . '/templates/template-intersection.php';
 
 elseif ( $is_subtype ) :
     $parent_title = $parent_post ? $parent_post->post_title : '';
@@ -49,7 +53,7 @@ elseif ( $is_subtype ) :
 
     // Get sibling sub-types (other children of same parent, excluding intersection pages)
     $siblings = get_posts([
-        'post_type'      => 'practice_area',
+        'post_type'      => $pa_post_type,
         'post_parent'    => $post->post_parent,
         'posts_per_page' => 20,
         'exclude'        => [ $post_id ],
@@ -62,12 +66,12 @@ elseif ( $is_subtype ) :
         ],
     ]);
 
-    get_template_part( 'templates/template-subtype' );
+    include get_template_directory() . '/templates/template-subtype.php';
 
 else :
     // Get child sub-type pages (exclude intersection pages)
     $child_subtypes = get_posts([
-        'post_type'      => 'practice_area',
+        'post_type'      => $pa_post_type,
         'post_parent'    => $post_id,
         'posts_per_page' => 20,
         'orderby'        => 'title',
@@ -81,7 +85,7 @@ else :
 
     // Get intersection pages (children with office keys)
     $child_intersections = get_posts([
-        'post_type'      => 'practice_area',
+        'post_type'      => $pa_post_type,
         'post_parent'    => $post_id,
         'posts_per_page' => 10,
         'orderby'        => 'title',
@@ -92,7 +96,7 @@ else :
         ],
     ]);
 
-    get_template_part( 'templates/template-practice-area' );
+    include get_template_directory() . '/templates/template-practice-area.php';
 
 endif;
 
