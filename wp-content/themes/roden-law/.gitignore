@@ -19,3 +19,4 @@ node_modules/
 # Content reference files
 content/
 bin/
+!bin/setup-meta.php
