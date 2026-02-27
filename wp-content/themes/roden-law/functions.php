@@ -97,6 +97,14 @@ add_filter( 'template_include', 'roden_bridge_cpt_templates', 1001 );
  * front_template filter (priority 999).
  */
 function roden_bridge_cpt_templates( $template ) {
+    // Archive templates: ACF registers 'practice-area' but our file uses underscore.
+    if ( is_post_type_archive( 'practice-area' ) ) {
+        $custom = get_template_directory() . '/archive-practice_area.php';
+        if ( file_exists( $custom ) ) {
+            return $custom;
+        }
+    }
+
     if ( ! is_singular() ) {
         return $template;
     }
