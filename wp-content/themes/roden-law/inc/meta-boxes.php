@@ -336,6 +336,7 @@ function roden_local_content_meta_box( $post ) {
 function roden_atty_profile_meta_box( $post ) {
     wp_nonce_field( 'roden_atty_profile_nonce', '_roden_atty_profile_nonce' );
 
+    $team_role      = get_post_meta( $post->ID, '_roden_team_role', true );
     $title          = get_post_meta( $post->ID, '_roden_atty_title', true );
     $office_key     = get_post_meta( $post->ID, '_roden_atty_office_key', true );
     $bar_admissions = get_post_meta( $post->ID, '_roden_bar_admissions', true );
@@ -345,6 +346,16 @@ function roden_atty_profile_meta_box( $post ) {
     $firm = roden_firm_data();
     ?>
     <table class="form-table">
+        <tr>
+            <th><label for="roden_team_role"><?php esc_html_e( 'Team Role', 'roden-law' ); ?></label></th>
+            <td>
+                <select id="roden_team_role" name="_roden_team_role" style="min-width:250px;">
+                    <option value="attorney" <?php selected( $team_role, 'attorney' ); ?>><?php esc_html_e( 'Attorney', 'roden-law' ); ?></option>
+                    <option value="staff" <?php selected( $team_role, 'staff' ); ?>><?php esc_html_e( 'Staff', 'roden-law' ); ?></option>
+                </select>
+                <p class="description"><?php esc_html_e( 'Attorneys appear in the attorneys grid with links to their profile. Staff appear in a separate section without profile links.', 'roden-law' ); ?></p>
+            </td>
+        </tr>
         <tr>
             <th><label for="roden_atty_title"><?php esc_html_e( 'Job Title', 'roden-law' ); ?></label></th>
             <td>
@@ -623,6 +634,11 @@ function roden_save_meta_fields( $post_id ) {
 
     if ( isset( $_POST['_roden_atty_profile_nonce'] ) &&
          wp_verify_nonce( $_POST['_roden_atty_profile_nonce'], 'roden_atty_profile_nonce' ) ) {
+
+        $team_role = sanitize_text_field( $_POST['_roden_team_role'] ?? 'attorney' );
+        if ( in_array( $team_role, array( 'attorney', 'staff' ), true ) ) {
+            update_post_meta( $post_id, '_roden_team_role', $team_role );
+        }
 
         update_post_meta( $post_id, '_roden_atty_title',
             sanitize_text_field( $_POST['_roden_atty_title'] ?? '' ) );

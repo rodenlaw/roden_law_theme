@@ -183,6 +183,7 @@ function roden_attorneys_grid( $args = array() ) {
         'count'      => -1,
         'office_key' => '',
         'columns'    => 4,
+        'role'       => '',
     );
     $args = wp_parse_args( $args, $defaults );
 
@@ -192,10 +193,20 @@ function roden_attorneys_grid( $args = array() ) {
         'orderby'        => 'menu_order',
         'order'          => 'ASC',
     );
+
+    $meta_query = array();
     if ( $args['office_key'] ) {
-        $query_args['meta_query'] = array(
-            array( 'key' => '_roden_atty_office_key', 'value' => $args['office_key'], 'compare' => '=' ),
+        $meta_query[] = array( 'key' => '_roden_atty_office_key', 'value' => $args['office_key'], 'compare' => '=' );
+    }
+    if ( 'attorney' === $args['role'] ) {
+        $meta_query[] = array(
+            'relation' => 'OR',
+            array( 'key' => '_roden_team_role', 'value' => 'attorney' ),
+            array( 'key' => '_roden_team_role', 'compare' => 'NOT EXISTS' ),
         );
+    }
+    if ( ! empty( $meta_query ) ) {
+        $query_args['meta_query'] = $meta_query;
     }
 
     $attorneys = new WP_Query( $query_args );
@@ -231,6 +242,69 @@ function roden_attorneys_grid( $args = array() ) {
                     <span class="attorney-office"><?php echo esc_html( $bar_info ); ?></span>
                 <?php endif; ?>
             </a>
+        </div>
+        <?php
+    endwhile;
+    echo '</div>';
+    wp_reset_postdata();
+}
+
+/* ==========================================================================
+   STAFF GRID
+   ========================================================================== */
+
+function roden_staff_grid( $args = array() ) {
+    $defaults = array(
+        'count'   => -1,
+        'columns' => 4,
+    );
+    $args = wp_parse_args( $args, $defaults );
+
+    $query_args = array(
+        'post_type'      => 'attorney',
+        'posts_per_page' => $args['count'],
+        'orderby'        => 'menu_order',
+        'order'          => 'ASC',
+        'meta_query'     => array(
+            array(
+                'key'   => '_roden_team_role',
+                'value' => 'staff',
+            ),
+        ),
+    );
+
+    $staff = new WP_Query( $query_args );
+    if ( ! $staff->have_posts() ) {
+        return;
+    }
+
+    $firm = roden_firm_data();
+
+    echo '<div class="attorneys-grid cols-' . intval( $args['columns'] ) . '">';
+    while ( $staff->have_posts() ) :
+        $staff->the_post();
+        $title    = get_post_meta( get_the_ID(), '_roden_atty_title', true );
+        $office_k = get_post_meta( get_the_ID(), '_roden_atty_office_key', true );
+        $office_info = '';
+        if ( $office_k && isset( $firm['offices'][ $office_k ] ) ) {
+            $office_info = $firm['offices'][ $office_k ]['city'] . ', ' . $firm['offices'][ $office_k ]['state'];
+        }
+        ?>
+        <div class="attorney-card">
+            <div class="attorney-photo">
+                <?php if ( has_post_thumbnail() ) : ?>
+                    <?php the_post_thumbnail( 'attorney-headshot' ); ?>
+                <?php else : ?>
+                    <div class="attorney-photo-placeholder"></div>
+                <?php endif; ?>
+            </div>
+            <h3 class="attorney-name"><?php the_title(); ?></h3>
+            <?php if ( $title ) : ?>
+                <span class="attorney-title"><?php echo esc_html( $title ); ?></span>
+            <?php endif; ?>
+            <?php if ( $office_info ) : ?>
+                <span class="attorney-office"><?php echo esc_html( $office_info ); ?></span>
+            <?php endif; ?>
         </div>
         <?php
     endwhile;

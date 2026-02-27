@@ -36,7 +36,19 @@ $firm = roden_firm_data();
         <div class="section-header">
             <h2><?php esc_html_e( 'Meet the Team', 'roden-law' ); ?></h2>
         </div>
-        <?php roden_attorneys_grid( array( 'columns' => 4 ) ); ?>
+        <?php roden_attorneys_grid( array(
+            'columns' => 4,
+            'role'    => 'attorney',
+        ) ); ?>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2><?php esc_html_e( 'Our Staff', 'roden-law' ); ?></h2>
+        </div>
+        <?php roden_staff_grid( array( 'columns' => 4 ) ); ?>
     </div>
 </section>
 
