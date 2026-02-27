@@ -1060,7 +1060,6 @@ input[type="submit"] {
 
 .hero-content h1 .text-orange {
     color: var(--color-orange);
-    font-style: italic;
 }
 
 .hero-description {
