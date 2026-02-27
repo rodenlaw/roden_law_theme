@@ -95,7 +95,7 @@ $practice_areas = array(
 
                     <!-- Hero CTAs -->
                     <div class="hero-ctas">
-                        <a href="tel:<?php echo esc_attr( $firm['offices']['savannah']['phone_raw'] ); ?>"
+                        <a href="tel:<?php echo esc_attr( $firm['phone_e164'] ); ?>"
                            class="btn btn-primary btn-lg">
                             <?php
                             printf(
@@ -238,7 +238,7 @@ $practice_areas = array(
                         <a href="tel:<?php echo esc_attr( $office['phone_raw'] ); ?>" class="location-phone">
                             <?php echo esc_html( $office['phone'] ); ?>
                         </a>
-                        <a href="<?php echo esc_url( home_url( '/locations/' . strtolower( $office['state'] ) . '/' . sanitize_title( $office['city'] ) . '/' ) ); ?>"
+                        <a href="<?php echo esc_url( home_url( '/locations/' . $office['state_slug'] . '/' . sanitize_title( $office['city'] ) . '/' ) ); ?>"
                            class="location-link">
                             <?php esc_html_e( 'View Office', 'roden-law' ); ?> &rarr;
                         </a>
@@ -362,7 +362,7 @@ $practice_areas = array(
                 <?php esc_html_e( 'No fees unless we win. Available 24/7 across Georgia and South Carolina.', 'roden-law' ); ?>
             </p>
             <div class="hero-ctas" style="justify-content:center;">
-                <a href="tel:<?php echo esc_attr( $firm['offices']['savannah']['phone_raw'] ); ?>"
+                <a href="tel:<?php echo esc_attr( $firm['phone_e164'] ); ?>"
                    class="btn btn-primary btn-lg">
                     <?php
                     printf(
