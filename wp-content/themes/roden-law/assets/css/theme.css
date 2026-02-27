@@ -370,12 +370,14 @@ h1, h2, h3, h4, h5, h6 {
 .practice-areas-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
 
 .practice-area-card {
-    display: flex; align-items: center; gap: 10px;
+    display: flex; align-items: center; justify-content: space-between;
     background: var(--white); border: 1px solid var(--gray-200);
     border-top: 3px solid var(--orange); border-radius: var(--radius);
     padding: 16px 14px; text-decoration: none;
     transition: var(--transition);
 }
+.practice-area-card h3 { margin: 0; font-size: 15px; }
+.practice-area-card .card-arrow { flex-shrink: 0; color: var(--text-light); }
 .practice-area-card:hover {
     box-shadow: var(--shadow); transform: translateY(-2px); border-top-color: var(--navy);
 }
