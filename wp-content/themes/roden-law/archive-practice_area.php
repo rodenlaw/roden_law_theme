@@ -40,15 +40,15 @@ $firm = roden_firm_data();
         ) );
 
         // Filter to only pillar-level slugs that match our 18 practice areas.
+        $pillar_slugs = roden_firm_data()['practice_areas'];
         if ( ! empty( $all_areas ) ) {
-            $pillar_slugs = roden_firm_data()['practice_areas'];
             $all_areas = array_filter( $all_areas, function( $post ) use ( $pillar_slugs ) {
                 return in_array( $post->post_name, $pillar_slugs, true );
             } );
         }
 
-        // Fallback: use hardcoded grid if no matching pillar posts exist.
-        if ( empty( $all_areas ) ) {
+        // Fallback: use hardcoded grid unless ALL 18 pillar posts exist.
+        if ( count( $all_areas ) < count( $pillar_slugs ) ) {
             $pa_labels = array(
                 'car-accident-lawyers'          => 'Car Accident Lawyers',
                 'truck-accident-lawyers'         => 'Truck Accident Lawyers',
