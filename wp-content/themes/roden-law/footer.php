@@ -13,26 +13,12 @@ defined( 'ABSPATH' ) || exit;
 $firm  = roden_firm_data();
 $year  = gmdate( 'Y' );
 
-// Practice areas for footer links
+// Practice areas for footer links (matches homepage featured grid)
 $footer_practice_areas = array(
-    'Car Accident'          => 'car-accident-lawyers',
-    'Truck Accident'        => 'truck-accident-lawyers',
-    'Slip & Fall'           => 'slip-and-fall-lawyers',
-    'Motorcycle Accident'   => 'motorcycle-accident-lawyers',
-    'Medical Malpractice'   => 'medical-malpractice-lawyers',
-    'Wrongful Death'        => 'wrongful-death-lawyers',
-    'Workers\' Comp'        => 'workers-compensation-lawyers',
-    'Dog Bite'              => 'dog-bite-lawyers',
-    'Brain Injury'          => 'brain-injury-lawyers',
-    'Spinal Cord Injury'    => 'spinal-cord-injury-lawyers',
-    'Maritime Injury'       => 'maritime-injury-lawyers',
-    'Product Liability'     => 'product-liability-lawyers',
-    'Boating Accident'      => 'boating-accident-lawyers',
-    'Burn Injury'           => 'burn-injury-lawyers',
-    'Construction Accident' => 'construction-accident-lawyers',
-    'Nursing Home Abuse'    => 'nursing-home-abuse-lawyers',
-    'Premises Liability'    => 'premises-liability-lawyers',
-    'Pedestrian Accident'   => 'pedestrian-accident-lawyers',
+    'Car Accident Lawyers'        => 'car-accident-lawyers',
+    'Truck Accident Lawyers'       => 'truck-accident-lawyers',
+    'Motorcycle Accident Lawyers'  => 'motorcycle-accident-lawyers',
+    'Pedestrian Accident Lawyers'  => 'pedestrian-accident-lawyers',
 );
 ?>
     </div><!-- .site-content -->
@@ -103,6 +89,11 @@ $footer_practice_areas = array(
                                 </a>
                             </li>
                         <?php endforeach; ?>
+                        <li>
+                            <a href="<?php echo esc_url( home_url( '/practice-areas/' ) ); ?>">
+                                <?php esc_html_e( 'Other Personal Injury Types', 'roden-law' ); ?>
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
