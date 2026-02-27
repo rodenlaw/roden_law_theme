@@ -154,6 +154,16 @@ $footer_practice_areas = array(
 
             </div><!-- .footer-grid -->
 
+            <!-- Legal Disclaimers -->
+            <div class="footer-disclaimers">
+                <p><strong>Disclaimer:</strong> Attorney Eric Roden is responsible for the content of this website, and his primary office address is 333 Commercial Drive, Savannah, GA 31406. South Carolina cases are principally handled out of Charleston, South Carolina office. South Carolina cases are primarily handled by attorney Graeham Gillin, and the primary office address is 127 King Street, Charleston, SC 29401. Georgia cases are principally handled out of the Savannah and Brunswick, Georgia offices.</p>
+                <p><strong>Case Results:</strong> Case "value," "results," and/or "maximum compensation" is determined from the total settlement amount. The settlement amounts shown are gross numbers before attorney's fees and cost deductions. The % fees will be computed before deducting expenses and costs from the gross settlement. Each case is unique, and the examples shown are just that, examples of past results. Past results do not guarantee or suggest recovery in your specific case. Each case is different.</p>
+                <p><strong>No Upfront Fees:</strong> Fees and costs apply only upon successful recovery. No fees or costs with no recovery.</p>
+                <p><strong>Testimonials:</strong> Testimonials reflect individual experiences and do not guarantee similar outcomes. No clients were paid for endorsements unless otherwise disclosed.</p>
+                <p><strong>Content:</strong> The term 'expert witness' refers to individuals who testify based on their professional expertise in court. Roden Law attorneys do not claim the title of legal 'expert' as defined by South Carolina Rule 7.4(b), unless certified by the appropriate authority.</p>
+                <p>The information contained in this Website is provided for informational purposes only and should not be construed as legal advice on any subject matter. Furthermore, The Firm does not wish to represent anyone desiring representation based upon viewing this Website in a state where this Website fails to comply with all laws and ethical rules of that state. Roden Law is licensed to practice in the states of Georgia and South Carolina. Reproduction, distribution, republication, and/or retransmission of material contained within The Roden Law Website is prohibited unless the prior written permission of Roden Law has been obtained.</p>
+            </div>
+
             <!-- Copyright Bar -->
             <div class="footer-bottom">
                 <span>
