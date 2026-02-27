@@ -1170,6 +1170,8 @@ a.sub-type-link:hover { background: var(--light); border-color: var(--orange); }
 .footer-bottom-inner { text-align: center; max-width: var(--container); margin: 0 auto; }
 .footer-bottom p { font-size: 11px; color: #7a8aa0; margin-bottom: 8px; }
 .footer-disclaimer { font-size: 10px; color: #5a6a80; line-height: 1.6; }
+.footer-privacy-link { color: #8ab4d4; text-decoration: none; }
+.footer-privacy-link:hover { color: var(--white); text-decoration: underline; }
 
 /* ─── 404 ──────────────────────────────────────────────────────────────── */
 

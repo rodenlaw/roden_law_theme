@@ -168,21 +168,11 @@ $footer_practice_areas = array(
             <div class="footer-bottom">
                 <span>
                     &copy; <?php echo esc_html( $year ); ?> <?php echo esc_html( $firm['legal_entity'] ); ?>.
-                    <?php esc_html_e( 'All Rights Reserved.', 'roden-law' ); ?>
+                    <?php esc_html_e( 'All Rights Reserved', 'roden-law' ); ?>
+                    | <a href="<?php echo esc_url( home_url( '/privacy-policy/' ) ); ?>" class="footer-privacy-link"><?php esc_html_e( 'Privacy Policy', 'roden-law' ); ?></a>
                 </span>
                 <span>
                     <?php esc_html_e( 'Licensed in Georgia & South Carolina', 'roden-law' ); ?>
-                    <?php if ( has_nav_menu( 'footer' ) ) : ?>
-                        <span class="footer-divider" aria-hidden="true">|</span>
-                        <?php
-                        wp_nav_menu( array(
-                            'theme_location' => 'footer',
-                            'container'      => false,
-                            'menu_class'     => 'footer-legal-menu',
-                            'depth'          => 1,
-                        ) );
-                        ?>
-                    <?php endif; ?>
                 </span>
             </div>
 
