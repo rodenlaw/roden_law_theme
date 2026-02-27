@@ -73,7 +73,9 @@ foreach ( $results as $r ) {
 		continue;
 	}
 
+	$raw = (int) preg_replace( '/[^0-9]/', '', $r['amount'] );
 	update_post_meta( $post_id, '_roden_case_amount', $r['amount'] );
+	update_post_meta( $post_id, '_roden_case_amount_raw', $raw );
 	update_post_meta( $post_id, '_roden_case_type', $r['type'] );
 	update_post_meta( $post_id, '_roden_description', $r['desc'] );
 

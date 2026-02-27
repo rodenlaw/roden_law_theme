@@ -107,8 +107,8 @@ function roden_case_results_grid( $args = array() ) {
     $query_args = array(
         'post_type'      => 'case_result',
         'posts_per_page' => $args['count'],
-        'orderby'        => 'meta_value',
-        'meta_key'       => '_roden_case_amount',
+        'orderby'        => 'meta_value_num',
+        'meta_key'       => '_roden_case_amount_raw',
         'order'          => 'DESC',
     );
 

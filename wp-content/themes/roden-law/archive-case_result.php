@@ -16,8 +16,8 @@ $firm = roden_firm_data();
 $top_query = new WP_Query( array(
     'post_type'      => 'case_result',
     'posts_per_page' => 1,
-    'orderby'        => 'meta_value',
-    'meta_key'       => '_roden_case_amount',
+    'orderby'        => 'meta_value_num',
+    'meta_key'       => '_roden_case_amount_raw',
     'order'          => 'DESC',
 ) );
 
