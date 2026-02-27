@@ -70,7 +70,7 @@ $firm = roden_firm_data();
                 'pedestrian-accident-lawyers'    => 'Pedestrian Accident Lawyers',
             );
             ?>
-            <div class="practice-area-grid practice-area-grid--cols-3">
+            <div class="practice-areas-grid cols-3">
                 <?php foreach ( $pa_labels as $slug => $name ) :
                     $url = home_url( '/practice-areas/' . $slug . '/' );
                 ?>
@@ -83,7 +83,7 @@ $firm = roden_firm_data();
             <?php
         } else {
             ?>
-            <div class="practice-area-grid practice-area-grid--cols-3">
+            <div class="practice-areas-grid cols-3">
                 <?php foreach ( $all_areas as $area ) : ?>
                     <a href="<?php echo esc_url( get_permalink( $area ) ); ?>" class="card practice-area-card">
                         <h3><?php echo esc_html( $area->post_title ); ?></h3>
