@@ -31,7 +31,8 @@ echo "\n=== Attorney Meta Setup ===\n\n";
 // Each key = expected post slug. All meta fields populated here.
 
 $attorneys = array(
-    'eric-roden' => array(
+    // Actual slugs from WP database (old theme migration slugs).
+    'who-we-are-attorneys-eric-roden' => array(
         'title'          => 'Founding Partner, CEO',
         'office_key'     => 'savannah',
         'bar_admissions' => "Georgia Bar — 2012\nSouth Carolina Bar — 2018",
@@ -48,7 +49,7 @@ $attorneys = array(
         'linkedin_url'   => 'https://www.linkedin.com/in/ericroden/',
         'locations'      => array( 'Savannah, GA', 'Darien, GA' ),
     ),
-    'tyler-love' => array(
+    'who-we-are-attorneys-tyler-love' => array(
         'title'          => 'Founding Partner, CTO',
         'office_key'     => 'savannah',
         'bar_admissions' => "Georgia Bar — 2012",
@@ -63,7 +64,7 @@ $attorneys = array(
         'linkedin_url'   => 'https://www.linkedin.com/in/tyler-love-esq/',
         'locations'      => array( 'Savannah, GA' ),
     ),
-    'joshua-dorminy' => array(
+    'who-we-are-attorneys-joshua-dorminy' => array(
         'title'          => 'Partner',
         'office_key'     => 'darien',
         'bar_admissions' => "Georgia Bar — 2016\nSouth Carolina Bar — 2020",
@@ -78,7 +79,7 @@ $attorneys = array(
         'linkedin_url'   => 'https://www.linkedin.com/in/joshua-dorminy/',
         'locations'      => array( 'Darien, GA', 'Savannah, GA' ),
     ),
-    'graeham-gillin' => array(
+    'graeham-c-gillin' => array(
         'title'          => 'Partner, COO',
         'office_key'     => 'charleston',
         'bar_admissions' => "South Carolina Bar — 2017",
@@ -91,7 +92,7 @@ $attorneys = array(
         ),
         'avvo_url'       => '',
         'linkedin_url'   => 'https://www.linkedin.com/in/graeham-gillin/',
-        'locations'      => array( 'Charleston, SC', 'Columbia, SC', 'Myrtle Beach, SC' ),
+        'locations'      => array( 'Charleston, SC', 'Columbia, SC', 'Murrells Inlet, SC' ),
     ),
     'kiley-reidy' => array(
         'title'          => 'Associate',
@@ -119,7 +120,7 @@ $attorneys = array(
         'linkedin_url'   => 'https://www.linkedin.com/in/zach-stohr/',
         'locations'      => array( 'Charleston, SC' ),
     ),
-    'ivy-montano' => array(
+    'ivy' => array(
         'title'          => 'Associate',
         'office_key'     => 'myrtle-beach',
         'bar_admissions' => "South Carolina Bar — 2022",
@@ -130,7 +131,7 @@ $attorneys = array(
         'awards'         => array(),
         'avvo_url'       => '',
         'linkedin_url'   => 'https://www.linkedin.com/in/ivy-montano/',
-        'locations'      => array( 'Myrtle Beach, SC' ),
+        'locations'      => array( 'Murrells Inlet, SC' ),
     ),
 );
 
