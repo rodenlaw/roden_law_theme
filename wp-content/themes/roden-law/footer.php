@@ -15,10 +15,10 @@ $year  = gmdate( 'Y' );
 
 // Practice areas for footer links (matches homepage featured grid)
 $footer_practice_areas = array(
-    'Car Accident Lawyers'        => 'car-accident-lawyers',
-    'Truck Accident Lawyers'       => 'truck-accident-lawyers',
-    'Motorcycle Accident Lawyers'  => 'motorcycle-accident-lawyers',
-    'Pedestrian Accident Lawyers'  => 'pedestrian-accident-lawyers',
+    'Car Accidents'        => 'car-accident-lawyers',
+    'Truck Accidents'       => 'truck-accident-lawyers',
+    'Motorcycle Accidents'  => 'motorcycle-accident-lawyers',
+    'Pedestrian Accidents'  => 'pedestrian-accident-lawyers',
 );
 ?>
     </div><!-- .site-content -->
@@ -91,7 +91,7 @@ $footer_practice_areas = array(
                         <?php endforeach; ?>
                         <li>
                             <a href="<?php echo esc_url( home_url( '/practice-areas/' ) ); ?>">
-                                <?php esc_html_e( 'Other Personal Injury Types', 'roden-law' ); ?>
+                                <?php esc_html_e( 'Other Personal Injuries', 'roden-law' ); ?>
                             </a>
                         </li>
                     </ul>
