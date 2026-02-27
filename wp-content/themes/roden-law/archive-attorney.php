@@ -40,33 +40,6 @@ $firm = roden_firm_data();
     </div>
 </section>
 
-<?php
-// Attorneys by office
-foreach ( $firm['offices'] as $key => $office ) :
-    $has_attorneys = new WP_Query( array(
-        'post_type'      => 'attorney',
-        'posts_per_page' => 1,
-        'meta_query'     => array(
-            array( 'key' => '_roden_atty_office_key', 'value' => $key ),
-        ),
-    ) );
-
-    if ( ! $has_attorneys->have_posts() ) {
-        wp_reset_postdata();
-        continue;
-    }
-    wp_reset_postdata();
-?>
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2><?php echo esc_html( $office['city'] . ', ' . $office['state'] ); ?> Attorneys</h2>
-            </div>
-            <?php roden_attorneys_grid( array( 'office_key' => $key, 'columns' => 3 ) ); ?>
-        </div>
-    </section>
-<?php endforeach; ?>
-
 <section class="section bg-navy cta-bottom">
     <div class="container text-center">
         <h2 class="text-white"><?php esc_html_e( 'Schedule a Free Consultation', 'roden-law' ); ?></h2>
