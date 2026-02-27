@@ -125,7 +125,7 @@ function roden_register_post_types() {
             'menu_name'          => __( 'Case Results', 'roden-law' ),
         ),
         'public'             => true,
-        'has_archive'        => true,
+        'has_archive'        => false,
         'hierarchical'       => false,
         'rewrite'            => array( 'slug' => 'case-results', 'with_front' => false ),
         'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt', 'custom-fields' ),
