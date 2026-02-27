@@ -334,6 +334,11 @@ blockquote {
     border-top: 4px solid currentColor;
 }
 
+/* Hide sub-menu toggle buttons on desktop */
+.sub-menu-toggle {
+    display: none;
+}
+
 .menu-toggle {
     display: none;
     background: none;
@@ -1001,6 +1006,35 @@ input[type="submit"] {
     .main-navigation a {
         display: block;
         padding: var(--space-sm) 0;
+    }
+
+    /* Mobile sub-menus: stack vertically, toggled via JS */
+    .main-navigation ul ul {
+        position: static;
+        min-width: 0;
+        border: none;
+        box-shadow: none;
+        padding: 0 0 0 var(--space-md);
+        background: transparent;
+    }
+
+    .main-navigation li:hover > ul,
+    .main-navigation li:focus-within > ul {
+        display: none;
+    }
+
+    .main-navigation .menu-item-has-children.sub-open > ul {
+        display: flex;
+    }
+
+    .main-navigation .menu-item-has-children > a {
+        display: inline;
+    }
+
+    .main-navigation .sub-menu-toggle {
+        display: inline-block;
+        margin-left: 4px;
+        color: var(--color-white);
     }
 
     .card-grid {
