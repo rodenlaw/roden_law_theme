@@ -86,13 +86,20 @@ function roden_legacy_location_redirects() {
    4. TEMPLATE ROUTING — Bridge ACF CPT names to theme templates
    ========================================================================== */
 
-add_filter( 'single_template', 'roden_bridge_cpt_templates' );
+add_filter( 'template_include', 'roden_bridge_cpt_templates', 1001 );
 /**
  * Route posts from ACF-registered CPTs (hyphen names) to our theme templates
  * (underscore names). ACF registers 'practice-area'; our template file is
  * single-practice_area.php.
+ *
+ * Uses template_include at priority 1001 to override ACF Extended's
+ * front_template filter (priority 999).
  */
 function roden_bridge_cpt_templates( $template ) {
+    if ( ! is_singular() ) {
+        return $template;
+    }
+
     $map = [
         'practice-area' => '/single-practice_area.php',
     ];
