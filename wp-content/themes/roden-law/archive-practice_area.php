@@ -28,7 +28,63 @@ $firm = roden_firm_data();
 
 <section class="section section-alt">
     <div class="container">
-        <?php roden_practice_areas_grid( 3 ); ?>
+        <?php
+        // Full grid of all 18 pillar practice areas.
+        $all_areas = get_posts( array(
+            'post_type'      => 'practice_area',
+            'posts_per_page' => -1,
+            'post_parent'    => 0,
+            'orderby'        => 'menu_order',
+            'order'          => 'ASC',
+        ) );
+
+        // Fallback: use firm data slugs if no CPT posts exist yet.
+        if ( empty( $all_areas ) ) {
+            $pa_labels = array(
+                'car-accident-lawyers'          => 'Car Accident Lawyers',
+                'truck-accident-lawyers'         => 'Truck Accident Lawyers',
+                'slip-and-fall-lawyers'          => 'Slip & Fall Lawyers',
+                'motorcycle-accident-lawyers'    => 'Motorcycle Accident Lawyers',
+                'medical-malpractice-lawyers'    => 'Medical Malpractice Lawyers',
+                'wrongful-death-lawyers'         => 'Wrongful Death Lawyers',
+                'workers-compensation-lawyers'   => 'Workers\' Compensation Lawyers',
+                'dog-bite-lawyers'               => 'Dog Bite Lawyers',
+                'brain-injury-lawyers'           => 'Brain Injury Lawyers',
+                'spinal-cord-injury-lawyers'     => 'Spinal Cord Injury Lawyers',
+                'maritime-injury-lawyers'        => 'Maritime Injury Lawyers',
+                'product-liability-lawyers'      => 'Product Liability Lawyers',
+                'boating-accident-lawyers'       => 'Boating Accident Lawyers',
+                'burn-injury-lawyers'            => 'Burn Injury Lawyers',
+                'construction-accident-lawyers'  => 'Construction Accident Lawyers',
+                'nursing-home-abuse-lawyers'     => 'Nursing Home Abuse Lawyers',
+                'premises-liability-lawyers'     => 'Premises Liability Lawyers',
+                'pedestrian-accident-lawyers'    => 'Pedestrian Accident Lawyers',
+            );
+            ?>
+            <div class="practice-area-grid practice-area-grid--cols-3">
+                <?php foreach ( $pa_labels as $slug => $name ) :
+                    $url = home_url( '/practice-areas/' . $slug . '/' );
+                ?>
+                    <a href="<?php echo esc_url( $url ); ?>" class="card practice-area-card">
+                        <h3><?php echo esc_html( $name ); ?></h3>
+                        <span class="card-arrow" aria-hidden="true">&rarr;</span>
+                    </a>
+                <?php endforeach; ?>
+            </div>
+            <?php
+        } else {
+            ?>
+            <div class="practice-area-grid practice-area-grid--cols-3">
+                <?php foreach ( $all_areas as $area ) : ?>
+                    <a href="<?php echo esc_url( get_permalink( $area ) ); ?>" class="card practice-area-card">
+                        <h3><?php echo esc_html( $area->post_title ); ?></h3>
+                        <span class="card-arrow" aria-hidden="true">&rarr;</span>
+                    </a>
+                <?php endforeach; ?>
+            </div>
+            <?php
+        }
+        ?>
     </div>
 </section>
 

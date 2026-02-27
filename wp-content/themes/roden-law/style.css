@@ -1247,6 +1247,10 @@ input[type="submit"] {
     gap: var(--space-md);
 }
 
+.practice-area-grid--cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .practice-area-grid .practice-area-card {
     display: flex;
     align-items: center;
