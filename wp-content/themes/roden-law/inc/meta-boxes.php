@@ -336,7 +336,7 @@ function roden_local_content_meta_box( $post ) {
 function roden_atty_profile_meta_box( $post ) {
     wp_nonce_field( 'roden_atty_profile_nonce', '_roden_atty_profile_nonce' );
 
-    $title          = get_post_meta( $post->ID, '_roden_title', true );
+    $title          = get_post_meta( $post->ID, '_roden_atty_title', true );
     $office_key     = get_post_meta( $post->ID, '_roden_atty_office_key', true );
     $bar_admissions = get_post_meta( $post->ID, '_roden_bar_admissions', true );
     $avvo_url       = get_post_meta( $post->ID, '_roden_avvo_url', true );
@@ -346,9 +346,9 @@ function roden_atty_profile_meta_box( $post ) {
     ?>
     <table class="form-table">
         <tr>
-            <th><label for="roden_title"><?php esc_html_e( 'Job Title', 'roden-law' ); ?></label></th>
+            <th><label for="roden_atty_title"><?php esc_html_e( 'Job Title', 'roden-law' ); ?></label></th>
             <td>
-                <input type="text" id="roden_title" name="_roden_title"
+                <input type="text" id="roden_atty_title" name="_roden_atty_title"
                        value="<?php echo esc_attr( $title ); ?>"
                        placeholder="e.g. Founding Partner, CEO" class="regular-text">
             </td>
@@ -624,8 +624,8 @@ function roden_save_meta_fields( $post_id ) {
     if ( isset( $_POST['_roden_atty_profile_nonce'] ) &&
          wp_verify_nonce( $_POST['_roden_atty_profile_nonce'], 'roden_atty_profile_nonce' ) ) {
 
-        update_post_meta( $post_id, '_roden_title',
-            sanitize_text_field( $_POST['_roden_title'] ?? '' ) );
+        update_post_meta( $post_id, '_roden_atty_title',
+            sanitize_text_field( $_POST['_roden_atty_title'] ?? '' ) );
         update_post_meta( $post_id, '_roden_atty_office_key',
             sanitize_text_field( $_POST['_roden_atty_office_key'] ?? '' ) );
         update_post_meta( $post_id, '_roden_bar_admissions',
