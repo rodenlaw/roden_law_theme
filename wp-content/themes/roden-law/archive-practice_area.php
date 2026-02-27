@@ -30,15 +30,24 @@ $firm = roden_firm_data();
     <div class="container">
         <?php
         // Full grid of all 18 pillar practice areas.
+        // Query both CPT slugs: 'practice_area' (theme) and 'practice-area' (ACF legacy).
         $all_areas = get_posts( array(
-            'post_type'      => 'practice_area',
+            'post_type'      => array( 'practice_area', 'practice-area' ),
             'posts_per_page' => -1,
             'post_parent'    => 0,
             'orderby'        => 'menu_order',
             'order'          => 'ASC',
         ) );
 
-        // Fallback: use firm data slugs if no CPT posts exist yet.
+        // Filter to only pillar-level slugs that match our 18 practice areas.
+        if ( ! empty( $all_areas ) ) {
+            $pillar_slugs = roden_firm_data()['practice_areas'];
+            $all_areas = array_filter( $all_areas, function( $post ) use ( $pillar_slugs ) {
+                return in_array( $post->post_name, $pillar_slugs, true );
+            } );
+        }
+
+        // Fallback: use hardcoded grid if no matching pillar posts exist.
         if ( empty( $all_areas ) ) {
             $pa_labels = array(
                 'car-accident-lawyers'          => 'Car Accident Lawyers',
