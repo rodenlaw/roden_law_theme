@@ -39,7 +39,7 @@ $firm = roden_firm_data();
                 </span>
             </div>
             <div class="top-bar-right">
-                <a href="tel:<?php echo esc_attr( $firm['offices']['savannah']['phone_raw'] ); ?>" class="top-bar-phone">
+                <a href="tel:<?php echo esc_attr( $firm['phone_e164'] ); ?>" class="top-bar-phone">
                     <?php echo esc_html( $firm['vanity_phone'] ); ?>
                 </a>
                 <span class="top-bar-consult"><?php esc_html_e( 'Free 24/7 Consultations', 'roden-law' ); ?></span>
@@ -79,7 +79,7 @@ $firm = roden_firm_data();
 
             <!-- Header CTA -->
             <div class="header-cta">
-                <a href="tel:<?php echo esc_attr( $firm['offices']['savannah']['phone_raw'] ); ?>"
+                <a href="tel:<?php echo esc_attr( $firm['phone_e164'] ); ?>"
                    class="btn btn-cta-phone">
                     <?php echo esc_html( $firm['vanity_phone'] ); ?>
                 </a>
