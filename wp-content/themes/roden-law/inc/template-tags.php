@@ -370,6 +370,84 @@ function roden_practice_areas_grid( $columns = 4 ) {
 }
 
 /* ==========================================================================
+   INTERSECTION GRID — Practice areas linked to office-specific pages
+   ========================================================================== */
+
+/**
+ * Render a grid of all 18 practice areas linking to intersection pages
+ * for a specific office. Used on location pages instead of the generic
+ * practice areas grid.
+ *
+ * @param string $office_key Office key (e.g., 'savannah', 'charleston').
+ * @param int    $columns    Number of grid columns (default 3).
+ */
+function roden_intersection_grid( $office_key, $columns = 3 ) {
+    $firm   = roden_firm_data();
+    $office = isset( $firm['offices'][ $office_key ] ) ? $firm['offices'][ $office_key ] : null;
+
+    if ( ! $office ) {
+        return;
+    }
+
+    $office_slug = $office['slug']; // e.g. 'savannah-ga'
+
+    // All 18 pillar slug => label pairs (fallback).
+    $pa_labels = array(
+        'car-accident-lawyers'         => 'Car Accident Lawyers',
+        'truck-accident-lawyers'        => 'Truck Accident Lawyers',
+        'slip-and-fall-lawyers'         => 'Slip & Fall Lawyers',
+        'motorcycle-accident-lawyers'   => 'Motorcycle Accident Lawyers',
+        'medical-malpractice-lawyers'   => 'Medical Malpractice Lawyers',
+        'wrongful-death-lawyers'        => 'Wrongful Death Lawyers',
+        'workers-compensation-lawyers'  => 'Workers\' Compensation Lawyers',
+        'dog-bite-lawyers'              => 'Dog Bite Lawyers',
+        'brain-injury-lawyers'          => 'Brain Injury Lawyers',
+        'spinal-cord-injury-lawyers'    => 'Spinal Cord Injury Lawyers',
+        'maritime-injury-lawyers'       => 'Maritime Injury Lawyers',
+        'product-liability-lawyers'     => 'Product Liability Lawyers',
+        'boating-accident-lawyers'      => 'Boating Accident Lawyers',
+        'burn-injury-lawyers'           => 'Burn Injury Lawyers',
+        'construction-accident-lawyers' => 'Construction Accident Lawyers',
+        'nursing-home-abuse-lawyers'    => 'Nursing Home Abuse Lawyers',
+        'premises-liability-lawyers'    => 'Premises Liability Lawyers',
+        'pedestrian-accident-lawyers'   => 'Pedestrian Accident Lawyers',
+    );
+
+    // Try to load pillar posts from the DB for titles + thumbnails.
+    $pillar_posts = get_posts( array(
+        'post_type'      => 'practice_area',
+        'posts_per_page' => -1,
+        'post_parent'    => 0,
+        'post_name__in'  => array_keys( $pa_labels ),
+        'orderby'        => 'menu_order',
+        'order'          => 'ASC',
+    ) );
+
+    // Index by slug for lookup.
+    $pillar_map = array();
+    foreach ( $pillar_posts as $p ) {
+        $pillar_map[ $p->post_name ] = $p;
+    }
+
+    echo '<div class="practice-areas-grid cols-' . intval( $columns ) . '">';
+
+    foreach ( $pa_labels as $slug => $fallback_label ) {
+        $intersection_url = home_url( '/' . $slug . '/' . $office_slug . '/' );
+        $label = isset( $pillar_map[ $slug ] ) ? $pillar_map[ $slug ]->post_title : $fallback_label;
+        ?>
+        <a href="<?php echo esc_url( $intersection_url ); ?>" class="practice-area-card">
+            <?php if ( isset( $pillar_map[ $slug ] ) && has_post_thumbnail( $pillar_map[ $slug ] ) ) : ?>
+                <?php echo get_the_post_thumbnail( $pillar_map[ $slug ], 'card-thumb', array( 'class' => 'pa-thumb' ) ); ?>
+            <?php endif; ?>
+            <span class="pa-name"><?php echo esc_html( $label ); ?></span>
+        </a>
+        <?php
+    }
+
+    echo '</div>';
+}
+
+/* ==========================================================================
    CONTACT FORM SIDEBAR (CTA box)
    ========================================================================== */
 

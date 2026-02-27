@@ -166,7 +166,7 @@ $faqs          = get_post_meta( $post_id, '_roden_faqs', true );
             <h2 class="section-title">Cases We Handle in <?php echo esc_html( $office['city'] ); ?></h2>
             <p class="section-subtitle">Our <?php echo esc_html( $office['city'] ); ?> attorneys handle all types of personal injury cases in <?php echo esc_html( $office['state_full'] ); ?>.</p>
         </div>
-        <?php roden_practice_areas_grid( 4 ); ?>
+        <?php roden_intersection_grid( $office_key, 3 ); ?>
     </div>
 </section>
 
