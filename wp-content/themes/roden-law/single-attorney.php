@@ -54,6 +54,6 @@ if ( is_array( $awards_raw ) ) {
     $award_items = array_filter( array_map( 'trim', explode( "\n", $awards_raw ) ) );
 }
 
-get_template_part( 'templates/template-attorney' );
+include get_template_directory() . '/templates/template-attorney.php';
 
 get_footer();

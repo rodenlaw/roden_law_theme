@@ -50,9 +50,9 @@
                 <!-- Bar admission badges -->
                 <div class="bar-badges">
                     <?php foreach ( $bar_items as $bar ) :
-                        $parts = array_map('trim', explode('|', $bar));
+                        $parts = array_map('trim', explode(' — ', $bar));
                     ?>
-                        <span class="bar-badge">Licensed: <?php echo esc_html($parts[1] ?? $parts[0]); ?></span>
+                        <span class="bar-badge">Licensed: <?php echo esc_html($parts[0]); ?></span>
                     <?php endforeach; ?>
                 </div>
 
@@ -103,9 +103,9 @@
                     <h3 class="credential-heading">Bar Admissions</h3>
                     <ul class="credential-list">
                         <?php foreach ( $bar_items as $bar ) :
-                            $parts = array_map('trim', explode('|', $bar));
+                            $parts = array_map('trim', explode(' — ', $bar));
                         ?>
-                            <li><span class="check">&#10003;</span> <?php echo esc_html($parts[0]); ?></li>
+                            <li><span class="check">&#10003;</span> <?php echo esc_html($bar); ?></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>
@@ -154,11 +154,10 @@
                     <p><?php the_title(); ?> is licensed to practice in:</p>
                     <div class="jurisdiction-badges">
                         <?php foreach ( $bar_items as $bar ) :
-                            $parts = array_map('trim', explode('|', $bar));
-                            if ( isset($parts[1]) ) :
+                            $parts = array_map('trim', explode(' — ', $bar));
                         ?>
-                            <span class="jurisdiction-badge"><?php echo esc_html($parts[1]); ?></span>
-                        <?php endif; endforeach; ?>
+                            <span class="jurisdiction-badge"><?php echo esc_html($parts[0]); ?></span>
+                        <?php endforeach; ?>
                     </div>
                 </div>
             </div>

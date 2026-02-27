@@ -55,6 +55,7 @@ function roden_theme_setup() {
     ) );
 
     add_image_size( 'attorney-headshot', 400, 533, true );
+    add_image_size( 'attorney-portrait', 600, 800, true );
     add_image_size( 'card-thumb', 600, 400, true );
     add_image_size( 'hero-bg', 1920, 800, true );
 }

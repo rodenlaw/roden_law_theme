@@ -51,7 +51,7 @@ $linkedin  = isset( $linkedin ) ? $linkedin : '';
 
                 <div class="bar-badges">
                     <?php foreach ( $bar_items as $bar ) :
-                        $parts = array_map( 'trim', explode( '|', $bar ) );
+                        $parts = array_map( 'trim', explode( ' — ', $bar ) );
                     ?>
                         <span class="bar-badge">Licensed: <?php echo esc_html( $parts[1] ?? $parts[0] ); ?></span>
                     <?php endforeach; ?>
@@ -65,7 +65,7 @@ $linkedin  = isset( $linkedin ) ? $linkedin : '';
 
                 <div class="hero-actions">
                     <?php if ( $office ) : ?>
-                        <a href="tel:<?php echo esc_attr( $office['phone_raw'] ); ?>" class="btn btn-primary btn-lg">&#128222; <?php echo esc_html( $office['phone'] ); ?></a>
+                        <a href="tel:<?php echo esc_attr( $office['phone_e164'] ); ?>" class="btn btn-primary btn-lg">&#128222; <?php echo esc_html( $office['phone'] ); ?></a>
                     <?php endif; ?>
                     <a href="#contact" class="btn btn-outline-light btn-lg">Free Consultation</a>
                 </div>
