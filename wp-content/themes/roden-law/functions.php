@@ -84,6 +84,22 @@ function roden_legacy_location_redirects() {
 }
 
 /* ==========================================================================
+   3b. REDIRECTS — Staff posts → Attorneys archive (no individual pages)
+   ========================================================================== */
+
+add_action( 'template_redirect', 'roden_staff_redirect' );
+function roden_staff_redirect() {
+    if ( ! is_singular( 'attorney' ) ) {
+        return;
+    }
+    $role = get_post_meta( get_the_ID(), '_roden_team_role', true );
+    if ( 'staff' === $role ) {
+        wp_redirect( home_url( '/attorneys/' ), 301 );
+        exit;
+    }
+}
+
+/* ==========================================================================
    4. TEMPLATE ROUTING — Bridge ACF CPT names to theme templates
    ========================================================================== */
 
