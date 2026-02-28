@@ -84,8 +84,20 @@ function roden_legacy_location_redirects() {
 }
 
 /* ==========================================================================
-   3b. REDIRECTS — Staff posts → Attorneys archive (no individual pages)
+   3b. STAFF — Redirect single pages & exclude from sitemap
    ========================================================================== */
+
+add_filter( 'wp_sitemaps_posts_query_args', 'roden_exclude_staff_from_sitemap', 10, 2 );
+function roden_exclude_staff_from_sitemap( $args, $post_type ) {
+    if ( 'attorney' === $post_type ) {
+        $args['meta_query'] = array(
+            'relation' => 'OR',
+            array( 'key' => '_roden_team_role', 'value' => 'attorney' ),
+            array( 'key' => '_roden_team_role', 'compare' => 'NOT EXISTS' ),
+        );
+    }
+    return $args;
+}
 
 add_action( 'template_redirect', 'roden_staff_redirect' );
 function roden_staff_redirect() {
