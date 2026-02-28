@@ -274,6 +274,28 @@ function roden_schema_local_business_office( $firm, $key, $office ) {
 function roden_schema_person( $firm ) {
     $post_id = get_the_ID();
 
+    // Build worksFor with office-specific address
+    $office_key = get_post_meta( $post_id, '_roden_atty_office_key', true );
+    $works_for  = array(
+        '@type'      => 'LegalService',
+        '@id'        => $firm['url'] . '/#organization',
+        'name'       => $firm['name'],
+        'url'        => $firm['url'],
+        'telephone'  => $firm['phone_e164'],
+        'priceRange' => 'Contingency (No Fee Unless We Win)',
+    );
+    if ( $office_key && isset( $firm['offices'][ $office_key ] ) ) {
+        $office = $firm['offices'][ $office_key ];
+        $works_for['address'] = array(
+            '@type'           => 'PostalAddress',
+            'streetAddress'   => $office['street'],
+            'addressLocality' => $office['city'],
+            'addressRegion'   => $office['state'],
+            'postalCode'      => $office['zip'],
+            'addressCountry'  => 'US',
+        );
+    }
+
     $schema = array(
         '@context'    => 'https://schema.org',
         '@type'       => 'Person',
@@ -281,11 +303,7 @@ function roden_schema_person( $firm ) {
         'name'        => get_the_title(),
         'url'         => get_permalink(),
         'description' => get_the_excerpt() ?: wp_trim_words( get_the_content(), 30 ),
-        'worksFor'    => array(
-            '@type' => 'Organization',
-            '@id'   => $firm['url'] . '/#organization',
-            'name'  => $firm['name'],
-        ),
+        'worksFor'    => $works_for,
     );
 
     // Featured image
@@ -335,19 +353,26 @@ function roden_schema_person( $firm ) {
         }
     }
 
-    // sameAs — Avvo, LinkedIn, and any firm-data social links
-    $same_as = array();
-    $avvo    = get_post_meta( $post_id, '_roden_avvo_url', true );
+    // sameAs — Avvo, LinkedIn, and additional profile links
+    $same_as  = array();
+    $avvo     = get_post_meta( $post_id, '_roden_avvo_url', true );
     $linkedin = get_post_meta( $post_id, '_roden_linkedin_url', true );
+    $extra    = get_post_meta( $post_id, '_roden_same_as', true );
     if ( $avvo ) {
         $same_as[] = $avvo;
     }
     if ( $linkedin ) {
         $same_as[] = $linkedin;
     }
-    if ( ! empty( $same_as ) ) {
-        $schema['sameAs'] = $same_as;
+    if ( is_array( $extra ) ) {
+        $same_as = array_merge( $same_as, $extra );
     }
+    if ( ! empty( $same_as ) ) {
+        $schema['sameAs'] = array_values( array_unique( $same_as ) );
+    }
+
+    // knowsAbout — personal injury practice areas
+    $schema['knowsAbout'] = array( 'Personal Injury Law', 'Insurance Claims', 'Civil Litigation' );
 
     roden_json_ld( $schema );
 }
