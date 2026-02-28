@@ -19,18 +19,18 @@ $stats = $firm['trust_stats'];
 
 // Notable case results (hardcoded from CLAUDE.md — can be replaced by CPT query later)
 $featured_results = array(
-    array( 'amount' => '$27,000,000', 'type' => 'Truck Accident',    'label' => 'Settlement' ),
-    array( 'amount' => '$10,860,000', 'type' => 'Product Liability', 'label' => 'Verdict' ),
-    array( 'amount' => '$9,800,000',  'type' => 'Premises Liability','label' => 'Recovery' ),
-    array( 'amount' => '$3,000,000',  'type' => 'Auto Accident',     'label' => 'Settlement' ),
+    array( 'amount' => '$27,000,000', 'type' => 'Truck Accident',     'label' => 'Settlement', 'offer' => '$500,000',  'multiplier' => '54x' ),
+    array( 'amount' => '$10,860,000', 'type' => 'Product Liability',  'label' => 'Verdict',    'offer' => '$250,000',  'multiplier' => '43x' ),
+    array( 'amount' => '$9,800,000',  'type' => 'Premises Liability', 'label' => 'Recovery',   'offer' => '$200,000',  'multiplier' => '49x' ),
+    array( 'amount' => '$3,000,000',  'type' => 'Auto Accident',      'label' => 'Settlement', 'offer' => '$75,000',   'multiplier' => '40x' ),
 );
 
 // Featured practice areas for grid
 $practice_areas = array(
-    array( 'name' => 'Car Accident Lawyers',        'slug' => 'car-accident-lawyers' ),
-    array( 'name' => 'Truck Accident Lawyers',       'slug' => 'truck-accident-lawyers' ),
-    array( 'name' => 'Motorcycle Accident Lawyers',  'slug' => 'motorcycle-accident-lawyers' ),
-    array( 'name' => 'Pedestrian Accident Lawyers',  'slug' => 'pedestrian-accident-lawyers' ),
+    array( 'name' => 'Car Accident Lawyers',        'slug' => 'car-accident-lawyers',        'scenario' => 'Injured in a car accident?' ),
+    array( 'name' => 'Truck Accident Lawyers',       'slug' => 'truck-accident-lawyers',       'scenario' => 'Hit by a commercial truck?' ),
+    array( 'name' => 'Motorcycle Accident Lawyers',  'slug' => 'motorcycle-accident-lawyers',  'scenario' => 'Motorcycle crash injuries?' ),
+    array( 'name' => 'Pedestrian Accident Lawyers',  'slug' => 'pedestrian-accident-lawyers',  'scenario' => 'Struck as a pedestrian?' ),
 );
 ?>
 
@@ -78,6 +78,8 @@ $practice_areas = array(
                             <span class="stat-label"><?php esc_html_e( 'Combined Experience', 'roden-law' ); ?></span>
                         </div>
                     </div>
+
+                    <p class="hero-guarantee">&#10003; No Fees Unless We Win &bull; Free Consultation 24/7</p>
 
                     <!-- Hero CTAs -->
                     <div class="hero-ctas">
@@ -179,6 +181,37 @@ $practice_areas = array(
 
 
     <!-- ============================================================
+         HOW IT WORKS — 3-Step Process
+         ============================================================ -->
+    <section class="section" id="how-it-works">
+        <div class="site-container">
+            <div class="section-header">
+                <h2><?php esc_html_e( 'How It Works', 'roden-law' ); ?></h2>
+                <p><?php esc_html_e( 'Getting started is simple — and completely free.', 'roden-law' ); ?></p>
+            </div>
+
+            <div class="how-it-works-grid">
+                <div class="how-it-works-step">
+                    <span class="step-number">1</span>
+                    <h3><?php esc_html_e( 'Free Consultation', 'roden-law' ); ?></h3>
+                    <p><?php esc_html_e( 'Tell us what happened. We\'ll review your case for free — no obligation.', 'roden-law' ); ?></p>
+                </div>
+                <div class="how-it-works-step">
+                    <span class="step-number">2</span>
+                    <h3><?php esc_html_e( 'We Build Your Case', 'roden-law' ); ?></h3>
+                    <p><?php esc_html_e( 'Our attorneys investigate, gather evidence, and handle all legal work.', 'roden-law' ); ?></p>
+                </div>
+                <div class="how-it-works-step">
+                    <span class="step-number">3</span>
+                    <h3><?php esc_html_e( 'You Get Compensated', 'roden-law' ); ?></h3>
+                    <p><?php esc_html_e( 'We negotiate maximum compensation. No fees unless we win.', 'roden-law' ); ?></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================================
          PRACTICE AREAS GRID
          ============================================================ -->
     <section class="section section-alt" id="practice-areas">
@@ -192,7 +225,10 @@ $practice_areas = array(
                 <?php foreach ( $practice_areas as $pa ) : ?>
                     <a href="<?php echo esc_url( home_url( '/practice-areas/' . $pa['slug'] . '/' ) ); ?>"
                        class="card practice-area-card">
-                        <h3><?php echo esc_html( $pa['name'] ); ?></h3>
+                        <div>
+                            <span class="card-scenario"><?php echo esc_html( $pa['scenario'] ); ?></span>
+                            <h3><?php echo esc_html( $pa['name'] ); ?></h3>
+                        </div>
                         <span class="card-arrow" aria-hidden="true">&rarr;</span>
                     </a>
                 <?php endforeach; ?>
@@ -241,6 +277,48 @@ $practice_areas = array(
 
 
     <!-- ============================================================
+         WHY RODEN LAW — Founder Story
+         ============================================================ -->
+    <section class="section founder-section" id="why-roden-law">
+        <div class="site-container">
+            <div class="founder-grid">
+
+                <div class="founder-image">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/img-hero-eric-roden-2024-desktop.png' ); ?>"
+                         alt="<?php esc_attr_e( 'Eric Roden, Founding Partner of Roden Law', 'roden-law' ); ?>"
+                         width="600" height="720" loading="lazy">
+                </div>
+
+                <div class="founder-content">
+                    <h2><?php esc_html_e( 'Why Roden Law?', 'roden-law' ); ?></h2>
+
+                    <blockquote class="founder-quote">
+                        <p><?php esc_html_e( 'I started Roden Law because I saw too many injury victims get lowballed by insurance companies. Our team fights for every dollar you deserve — and we don\'t get paid unless you do.', 'roden-law' ); ?></p>
+                        <cite><?php esc_html_e( '— Eric Roden, Founding Partner', 'roden-law' ); ?></cite>
+                    </blockquote>
+
+                    <div class="founder-values">
+                        <div class="founder-value">
+                            <strong><?php esc_html_e( '$250M+ Recovered', 'roden-law' ); ?></strong>
+                            <span><?php esc_html_e( 'Proven track record across Georgia and South Carolina', 'roden-law' ); ?></span>
+                        </div>
+                        <div class="founder-value">
+                            <strong><?php esc_html_e( 'No Upfront Costs', 'roden-law' ); ?></strong>
+                            <span><?php esc_html_e( '100% contingency. You pay nothing unless we win.', 'roden-law' ); ?></span>
+                        </div>
+                        <div class="founder-value">
+                            <strong><?php esc_html_e( '5 Office Locations', 'roden-law' ); ?></strong>
+                            <span><?php esc_html_e( 'Local attorneys in Savannah, Charleston, Columbia, Myrtle Beach, and Darien', 'roden-law' ); ?></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================================
          CASE RESULTS
          ============================================================ -->
     <section class="section bg-navy" id="results">
@@ -252,9 +330,10 @@ $practice_areas = array(
             <div class="results-grid">
                 <?php foreach ( $featured_results as $result ) : ?>
                     <div class="card case-result-card case-result-card-dark">
-                        <span class="case-type"><?php echo esc_html( $result['label'] ); ?></span>
+                        <span class="case-type"><?php echo esc_html( $result['type'] ); ?></span>
+                        <span class="case-offer"><?php esc_html_e( 'Insurance Offered:', 'roden-law' ); ?> <?php echo esc_html( $result['offer'] ); ?></span>
                         <span class="amount"><?php echo esc_html( $result['amount'] ); ?></span>
-                        <span class="case-description"><?php echo esc_html( $result['type'] ); ?></span>
+                        <span class="case-multiplier"><?php echo esc_html( $result['multiplier'] ); ?> <?php esc_html_e( 'More', 'roden-law' ); ?></span>
                     </div>
                 <?php endforeach; ?>
             </div>

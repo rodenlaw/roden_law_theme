@@ -4,7 +4,7 @@ Theme URI: https://rodenlaw.com
 Author: Roden Love LLC
 Author URI: https://rodenlaw.com
 Description: Custom AI-SEO optimized WordPress theme for Roden Law personal injury firm serving Georgia and South Carolina across 5 office locations. Built with structured data, E-E-A-T compliance, and local SEO as core architecture principles.
-Version: 1.1.5
+Version: 1.1.6
 Requires at least: 6.0
 Tested up to: 6.7
 Requires PHP: 8.0
@@ -1349,6 +1349,162 @@ input[type="submit"] {
 }
 
 /* ==========================================================================
+   Homepage — Hero Guarantee Line
+   ========================================================================== */
+
+.hero-guarantee {
+    color: var(--color-orange);
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    margin-bottom: var(--space-lg);
+}
+
+/* ==========================================================================
+   Homepage — How It Works (3-Step Process)
+   ========================================================================== */
+
+.how-it-works-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-xl);
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.how-it-works-step {
+    text-align: center;
+    padding: var(--space-xl) var(--space-lg);
+}
+
+.step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--color-orange);
+    color: var(--color-white);
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    font-weight: 900;
+    margin-bottom: var(--space-md);
+}
+
+.how-it-works-step h3 {
+    font-size: 1.1rem;
+    margin-bottom: var(--space-sm);
+}
+
+.how-it-works-step p {
+    font-size: 0.92rem;
+    color: var(--color-gray);
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   Homepage — Practice Area Scenario Copy
+   ========================================================================== */
+
+.card-scenario {
+    display: block;
+    font-size: 0.78rem;
+    font-style: italic;
+    color: var(--color-gray-light);
+    margin-bottom: 2px;
+}
+
+/* ==========================================================================
+   Homepage — Founder Story Section
+   ========================================================================== */
+
+.founder-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3xl);
+    align-items: center;
+}
+
+.founder-image img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-lg);
+}
+
+.founder-content h2 {
+    margin-bottom: var(--space-lg);
+}
+
+.founder-quote {
+    border-left: 4px solid var(--color-orange);
+    padding-left: var(--space-lg);
+    margin-bottom: var(--space-2xl);
+}
+
+.founder-quote p {
+    font-size: 1.1rem;
+    font-style: italic;
+    line-height: 1.7;
+    color: var(--color-gray-dark);
+    margin-bottom: var(--space-sm);
+}
+
+.founder-quote cite {
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--color-navy);
+}
+
+.founder-values {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.founder-value {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.founder-value strong {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    color: var(--color-navy);
+}
+
+.founder-value span {
+    font-size: 0.9rem;
+    color: var(--color-gray);
+}
+
+/* ==========================================================================
+   Homepage — Case Results (Offer vs Result Multiplier)
+   ========================================================================== */
+
+.case-offer {
+    display: block;
+    font-size: 0.82rem;
+    color: #8a94a8;
+    text-decoration: line-through;
+    margin-bottom: var(--space-xs);
+}
+
+.case-multiplier {
+    display: inline-block;
+    background: var(--color-orange);
+    color: var(--color-white);
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-top: var(--space-sm);
+    letter-spacing: 0.02em;
+}
+
+/* ==========================================================================
    Homepage — Bottom CTA
    ========================================================================== */
 
@@ -2095,6 +2251,25 @@ input[type="submit"] {
 
     .section-map iframe {
         height: 320px;
+    }
+
+    .how-it-works-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+
+    .founder-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+    }
+
+    .founder-image {
+        text-align: center;
+    }
+
+    .founder-image img {
+        max-width: 400px;
+        margin: 0 auto;
     }
 }
 
