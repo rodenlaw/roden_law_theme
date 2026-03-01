@@ -411,13 +411,16 @@ $practice_areas = array(
                 <div class="testimonial-track">
                     <?php while ( $testimonial_query->have_posts() ) : $testimonial_query->the_post(); ?>
                         <div class="card testimonial-card">
-                            <div class="stars" aria-label="<?php esc_attr_e( '5 star rating', 'roden-law' ); ?>">
-                                &#9733;&#9733;&#9733;&#9733;&#9733;
-                            </div>
+                            <span class="testimonial-quote" aria-hidden="true">&#x201C;&#x201C;</span>
                             <div class="testimonial-text">
                                 <?php the_content(); ?>
                             </div>
-                            <p class="author"><?php the_title(); ?></p>
+                            <div class="testimonial-footer">
+                                <p class="author"><?php the_title(); ?></p>
+                                <div class="stars" aria-label="<?php esc_attr_e( '5 star rating', 'roden-law' ); ?>">
+                                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                                </div>
+                            </div>
                         </div>
                     <?php endwhile; ?>
                 </div>
