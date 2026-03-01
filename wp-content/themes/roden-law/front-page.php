@@ -411,7 +411,6 @@ $practice_areas = array(
                 <div class="testimonial-track">
                     <?php while ( $testimonial_query->have_posts() ) : $testimonial_query->the_post(); ?>
                         <div class="card testimonial-card">
-                            <span class="testimonial-quote" aria-hidden="true">&#x201C;&#x201C;</span>
                             <div class="testimonial-text">
                                 <?php the_content(); ?>
                             </div>

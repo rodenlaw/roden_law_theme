@@ -677,15 +677,20 @@ input[type="submit"] {
 .testimonial-card {
     display: flex;
     flex-direction: column;
+    padding-top: var(--space-2xl);
+    position: relative;
 }
 
-.testimonial-card .testimonial-quote {
-    font-size: 3rem;
+.testimonial-card::before {
+    content: '\201C\201C';
+    font-size: 2.5rem;
     font-family: var(--font-heading);
-    color: var(--color-navy);
+    color: var(--color-orange);
+    position: absolute;
+    top: var(--space-md);
+    left: var(--space-xl);
     line-height: 1;
-    letter-spacing: -0.3em;
-    margin-bottom: var(--space-sm);
+    letter-spacing: -0.15em;
 }
 
 .testimonial-card .testimonial-text {
@@ -698,9 +703,10 @@ input[type="submit"] {
 
 .testimonial-card .testimonial-footer {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
-    margin-top: var(--space-md);
+    margin-top: auto;
+    padding-top: var(--space-md);
 }
 
 .testimonial-card .author {
