@@ -550,6 +550,14 @@ function roden_contact_form_sidebar( $local_phone = '' ) {
                 <input type="text" name="full_name" placeholder="Full Name" required>
                 <input type="tel" name="phone" placeholder="Phone Number" required>
                 <input type="email" name="email" placeholder="Email" required>
+                <select name="case_type" required>
+                    <option value="" disabled selected>Case Type</option>
+                    <option value="car-accident">Car Accident</option>
+                    <option value="truck-accident">Truck Accident</option>
+                    <option value="motorcycle-accident">Motorcycle Accident</option>
+                    <option value="pedestrian-accident">Pedestrian Accident</option>
+                    <option value="other">Other Personal Injury</option>
+                </select>
                 <input type="text" name="zip" placeholder="ZIP Code">
                 <textarea name="message" placeholder="Briefly describe what happened..." rows="3"></textarea>
                 <button type="submit" class="btn btn-primary btn-block">Submit Free Review</button>

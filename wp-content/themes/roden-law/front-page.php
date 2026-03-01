@@ -138,10 +138,8 @@ $practice_areas = array(
                                         <option value="car-accident"><?php esc_html_e( 'Car Accident', 'roden-law' ); ?></option>
                                         <option value="truck-accident"><?php esc_html_e( 'Truck Accident', 'roden-law' ); ?></option>
                                         <option value="motorcycle-accident"><?php esc_html_e( 'Motorcycle Accident', 'roden-law' ); ?></option>
-                                        <option value="slip-and-fall"><?php esc_html_e( 'Slip & Fall', 'roden-law' ); ?></option>
-                                        <option value="medical-malpractice"><?php esc_html_e( 'Medical Malpractice', 'roden-law' ); ?></option>
-                                        <option value="wrongful-death"><?php esc_html_e( 'Wrongful Death', 'roden-law' ); ?></option>
-                                        <option value="other"><?php esc_html_e( 'Other', 'roden-law' ); ?></option>
+                                        <option value="pedestrian-accident"><?php esc_html_e( 'Pedestrian Accident', 'roden-law' ); ?></option>
+                                        <option value="other"><?php esc_html_e( 'Other Personal Injury', 'roden-law' ); ?></option>
                                     </select>
                                 </div>
                                 <div class="form-group">

@@ -1878,19 +1878,42 @@ input[type="submit"] {
     padding: var(--space-md);
 }
 
-.footer-contact-form .form-group input {
+.footer-contact-form .form-group input,
+.footer-contact-form .form-group select {
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.2);
     color: var(--color-white);
     padding: var(--space-sm) var(--space-md);
     font-size: 0.85rem;
+    width: 100%;
+    border-radius: var(--border-radius);
+    font-family: var(--font-body);
+}
+
+.footer-contact-form .form-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23fff' d='M1.41 0L6 4.58 10.59 0 12 1.41l-6 6-6-6z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    cursor: pointer;
+}
+
+.footer-contact-form .form-group select option {
+    background: var(--color-navy);
+    color: var(--color-white);
 }
 
 .footer-contact-form .form-group input::placeholder {
     color: rgba(255, 255, 255, 0.5);
 }
 
-.footer-contact-form .form-group input:focus {
+.footer-contact-form .form-group select option[value=""][disabled] {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-contact-form .form-group input:focus,
+.footer-contact-form .form-group select:focus {
     border-color: var(--color-orange);
     box-shadow: 0 0 0 2px rgba(252, 180, 21, 0.2);
 }

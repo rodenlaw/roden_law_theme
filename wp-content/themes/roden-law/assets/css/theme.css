@@ -799,11 +799,18 @@ h1, h2, h3, h4, h5, h6 {
 .hero-form .form-phone-fallback,
 .hero-map-form .form-phone-fallback { margin-top: 2px; margin-bottom: 0; font-size: 11px; }
 .roden-contact-form input,
-.roden-contact-form textarea {
+.roden-contact-form textarea,
+.roden-contact-form select {
     width: 100%; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
     border-radius: 6px; color: var(--white); padding: 11px 14px; font-size: 13px;
     margin-bottom: 10px; font-family: var(--font-sans);
 }
+.roden-contact-form select {
+    appearance: none; -webkit-appearance: none; cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23fff' d='M1.41 0L6 4.58 10.59 0 12 1.41l-6 6-6-6z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 12px center;
+}
+.roden-contact-form select option { background: var(--navy); color: var(--white); }
 .roden-contact-form input::placeholder,
 .roden-contact-form textarea::placeholder { color: rgba(255,255,255,0.5); }
 .roden-contact-form textarea { resize: none; }

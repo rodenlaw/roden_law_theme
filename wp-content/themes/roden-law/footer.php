@@ -141,6 +141,16 @@ $footer_practice_areas = array(
                                     <input type="tel" name="footer_phone" placeholder="<?php esc_attr_e( 'Phone', 'roden-law' ); ?>" required>
                                 </div>
                                 <div class="form-group">
+                                    <select name="footer_case_type" required>
+                                        <option value="" disabled selected><?php esc_attr_e( 'Case Type', 'roden-law' ); ?></option>
+                                        <option value="car-accident"><?php esc_html_e( 'Car Accident', 'roden-law' ); ?></option>
+                                        <option value="truck-accident"><?php esc_html_e( 'Truck Accident', 'roden-law' ); ?></option>
+                                        <option value="motorcycle-accident"><?php esc_html_e( 'Motorcycle Accident', 'roden-law' ); ?></option>
+                                        <option value="pedestrian-accident"><?php esc_html_e( 'Pedestrian Accident', 'roden-law' ); ?></option>
+                                        <option value="other"><?php esc_html_e( 'Other Personal Injury', 'roden-law' ); ?></option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
                                     <button type="submit" class="btn btn-primary" style="width:100%;">
                                         <?php esc_html_e( 'Get Free Review', 'roden-law' ); ?>
                                     </button>
