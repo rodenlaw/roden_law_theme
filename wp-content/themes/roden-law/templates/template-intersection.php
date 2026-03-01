@@ -75,7 +75,7 @@ $related_subtypes = get_posts( array(
                 </span>
                 <h1 class="hero-title"><?php the_title(); ?></h1>
                 <p class="hero-subtitle">
-                    Roden Law's <?php echo esc_html( $office['city'] ); ?> <?php echo esc_html( strtolower( $parent_title ) ); ?>s serve <?php echo esc_html( $office['service_area'] ); ?> No fees unless we win.
+                    Roden Law's <?php echo esc_html( $office['city'] ); ?> <?php echo esc_html( strtolower( $parent_title ) ); ?> serve <?php echo esc_html( $office['service_area'] ); ?> No fees unless we win.
                 </p>
 
                 <!-- NAP Block -->
