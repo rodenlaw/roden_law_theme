@@ -103,7 +103,7 @@ $practice_areas = array(
                 <div class="hero-form" id="free-case-review">
                     <div class="hero-form-inner hero-form-light">
                         <h2 class="hero-form-title"><?php esc_html_e( 'Free Case Review', 'roden-law' ); ?></h2>
-                        <p class="hero-form-subtitle"><?php esc_html_e( 'No fees unless we win', 'roden-law' ); ?> &bull; <?php esc_html_e( 'Available 24/7', 'roden-law' ); ?></p>
+                        <p class="hero-form-subtitle"><?php esc_html_e( 'No fees unless we win', 'roden-law' ); ?> &bull; <?php esc_html_e( '500+ 5-star reviews', 'roden-law' ); ?></p>
 
                         <?php
                         if ( shortcode_exists( 'gravityform' ) ) {
@@ -133,6 +133,18 @@ $practice_areas = array(
                                     </div>
                                 </div>
                                 <div class="form-group">
+                                    <select name="case_type" required>
+                                        <option value="" disabled selected><?php esc_attr_e( 'Case Type', 'roden-law' ); ?></option>
+                                        <option value="car-accident"><?php esc_html_e( 'Car Accident', 'roden-law' ); ?></option>
+                                        <option value="truck-accident"><?php esc_html_e( 'Truck Accident', 'roden-law' ); ?></option>
+                                        <option value="motorcycle-accident"><?php esc_html_e( 'Motorcycle Accident', 'roden-law' ); ?></option>
+                                        <option value="slip-and-fall"><?php esc_html_e( 'Slip & Fall', 'roden-law' ); ?></option>
+                                        <option value="medical-malpractice"><?php esc_html_e( 'Medical Malpractice', 'roden-law' ); ?></option>
+                                        <option value="wrongful-death"><?php esc_html_e( 'Wrongful Death', 'roden-law' ); ?></option>
+                                        <option value="other"><?php esc_html_e( 'Other', 'roden-law' ); ?></option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
                                     <textarea name="description" rows="3"
                                               placeholder="<?php esc_attr_e( 'Tell us what happened...', 'roden-law' ); ?>"></textarea>
                                 </div>
@@ -141,6 +153,7 @@ $practice_areas = array(
                                         <?php esc_html_e( 'Review My Case', 'roden-law' ); ?>
                                     </button>
                                 </div>
+                                <p class="hero-form-trust"><?php esc_html_e( '100% Free', 'roden-law' ); ?> &bull; <?php esc_html_e( 'No Obligation', 'roden-law' ); ?> &bull; <?php esc_html_e( 'Confidential', 'roden-law' ); ?></p>
                             </form>
                             <?php
                         }
@@ -375,44 +388,103 @@ $practice_areas = array(
 
 
     <!-- ============================================================
-         TESTIMONIALS
+         TESTIMONIALS — Carousel with Social Proof
          ============================================================ -->
     <?php
     $testimonial_query = new WP_Query( array(
         'post_type'      => 'testimonial',
-        'posts_per_page' => 3,
+        'posts_per_page' => 6,
         'orderby'        => 'date',
         'order'          => 'DESC',
     ) );
 
-    if ( $testimonial_query->have_posts() ) : ?>
+    if ( $testimonial_query->have_posts() ) :
+        $testimonial_count = $testimonial_query->post_count;
+    ?>
     <section class="section section-alt" id="testimonials">
         <div class="site-container">
-            <div class="section-header">
-                <h2><?php esc_html_e( 'What Our Clients Say', 'roden-law' ); ?></h2>
-                <p>
-                    <?php
-                    printf(
-                        /* translators: %s: star rating */
-                        esc_html__( 'Rated %s stars by our clients', 'roden-law' ),
-                        esc_html( $stats['rating'] )
-                    );
-                    ?>
-                </p>
+            <div class="testimonial-social-proof">
+                <div class="social-proof-stars" aria-label="<?php esc_attr_e( '5 star rating', 'roden-law' ); ?>">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <h2><?php esc_html_e( '500+ Five-Star Reviews', 'roden-law' ); ?></h2>
+                <p><?php esc_html_e( 'Our clients trust us to fight for maximum compensation.', 'roden-law' ); ?></p>
             </div>
 
-            <div class="card-grid testimonial-grid">
-                <?php while ( $testimonial_query->have_posts() ) : $testimonial_query->the_post(); ?>
-                    <div class="card testimonial-card">
-                        <div class="stars" aria-label="<?php esc_attr_e( '5 star rating', 'roden-law' ); ?>">
-                            &#9733;&#9733;&#9733;&#9733;&#9733;
+            <div class="testimonial-carousel" data-total="<?php echo esc_attr( $testimonial_count ); ?>">
+                <div class="testimonial-track">
+                    <?php while ( $testimonial_query->have_posts() ) : $testimonial_query->the_post(); ?>
+                        <div class="card testimonial-card">
+                            <div class="stars" aria-label="<?php esc_attr_e( '5 star rating', 'roden-law' ); ?>">
+                                &#9733;&#9733;&#9733;&#9733;&#9733;
+                            </div>
+                            <div class="testimonial-text">
+                                <?php the_content(); ?>
+                            </div>
+                            <p class="author"><?php the_title(); ?></p>
                         </div>
-                        <div class="testimonial-text">
-                            <?php the_content(); ?>
-                        </div>
-                        <p class="author"><?php the_title(); ?></p>
+                    <?php endwhile; ?>
+                </div>
+                <?php if ( $testimonial_count > 3 ) : ?>
+                <div class="testimonial-dots">
+                    <?php
+                    $total_pages = ceil( $testimonial_count / 3 );
+                    for ( $i = 0; $i < $total_pages; $i++ ) :
+                    ?>
+                        <button class="testimonial-dot<?php echo 0 === $i ? ' active' : ''; ?>"
+                                data-page="<?php echo esc_attr( $i ); ?>"
+                                aria-label="<?php printf( esc_attr__( 'Go to testimonial page %d', 'roden-law' ), $i + 1 ); ?>"></button>
+                    <?php endfor; ?>
+                </div>
+                <?php endif; ?>
+            </div>
+        </div>
+    </section>
+    <?php
+    endif;
+    wp_reset_postdata();
+    ?>
+
+
+    <!-- ============================================================
+         MEET OUR ATTORNEYS — Team Spotlight
+         ============================================================ -->
+    <?php
+    $attorney_query = new WP_Query( array(
+        'post_type'      => 'attorney',
+        'posts_per_page' => 4,
+        'orderby'        => 'menu_order',
+        'order'          => 'ASC',
+    ) );
+
+    if ( $attorney_query->have_posts() ) : ?>
+    <section class="section" id="attorneys">
+        <div class="site-container">
+            <div class="section-header">
+                <h2><?php esc_html_e( 'Meet Our Attorneys', 'roden-law' ); ?></h2>
+                <p><?php esc_html_e( 'Experienced trial lawyers fighting for injury victims across Georgia and South Carolina.', 'roden-law' ); ?></p>
+            </div>
+
+            <div class="attorney-spotlight-grid">
+                <?php while ( $attorney_query->have_posts() ) : $attorney_query->the_post();
+                    $title = get_post_meta( get_the_ID(), '_roden_title', true );
+                ?>
+                    <div class="attorney-spotlight-card">
+                        <?php if ( has_post_thumbnail() ) : ?>
+                            <div class="attorney-spotlight-photo">
+                                <?php the_post_thumbnail( 'medium', array( 'loading' => 'lazy' ) ); ?>
+                            </div>
+                        <?php endif; ?>
+                        <h3><?php the_title(); ?></h3>
+                        <?php if ( $title ) : ?>
+                            <p class="attorney-spotlight-title"><?php echo esc_html( $title ); ?></p>
+                        <?php endif; ?>
                     </div>
                 <?php endwhile; ?>
+            </div>
+
+            <div class="text-center" style="margin-top: var(--space-xl);">
+                <a href="<?php echo esc_url( home_url( '/attorneys/' ) ); ?>" class="btn btn-outline-navy">
+                    <?php esc_html_e( 'Meet the Full Team', 'roden-law' ); ?> &rarr;
+                </a>
             </div>
         </div>
     </section>

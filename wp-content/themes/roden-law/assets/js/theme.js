@@ -94,6 +94,83 @@
         });
     });
 
+    /* ── Testimonial Carousel ─────────────────────────────────── */
+
+    var carousel = document.querySelector('.testimonial-carousel');
+    if (carousel) {
+        var track = carousel.querySelector('.testimonial-track');
+        var dots = carousel.querySelectorAll('.testimonial-dot');
+        var cards = track ? track.querySelectorAll('.testimonial-card') : [];
+        var currentPage = 0;
+        var autoTimer = null;
+
+        function getPerPage() {
+            return window.innerWidth < 768 ? 1 : 3;
+        }
+
+        function getTotalPages() {
+            var perPage = getPerPage();
+            return Math.ceil(cards.length / perPage);
+        }
+
+        function goToPage(page) {
+            var totalPages = getTotalPages();
+            if (page < 0) page = totalPages - 1;
+            if (page >= totalPages) page = 0;
+            currentPage = page;
+
+            var perPage = getPerPage();
+            var offset = currentPage * (100 / perPage) * perPage;
+            track.style.transform = 'translateX(-' + offset + '%)';
+
+            // Update dots
+            dots.forEach(function (dot) {
+                dot.classList.remove('active');
+            });
+            // On mobile the number of pages differs — only activate if dot exists
+            if (dots[currentPage]) {
+                dots[currentPage].classList.add('active');
+            }
+        }
+
+        // Dot click handlers
+        dots.forEach(function (dot) {
+            dot.addEventListener('click', function () {
+                var page = parseInt(dot.getAttribute('data-page'), 10);
+                goToPage(page);
+                resetAutoAdvance();
+            });
+        });
+
+        // Auto-advance
+        function startAutoAdvance() {
+            autoTimer = setInterval(function () {
+                goToPage(currentPage + 1);
+            }, 6000);
+        }
+
+        function resetAutoAdvance() {
+            if (autoTimer) clearInterval(autoTimer);
+            startAutoAdvance();
+        }
+
+        startAutoAdvance();
+
+        // Pause on hover
+        carousel.addEventListener('mouseenter', function () {
+            if (autoTimer) clearInterval(autoTimer);
+        });
+
+        carousel.addEventListener('mouseleave', function () {
+            startAutoAdvance();
+        });
+
+        // Handle resize — recalculate position
+        window.addEventListener('resize', function () {
+            goToPage(0);
+        });
+    }
+
     /* ── Sticky Header Shadow on Scroll ───────────────────────── */
 
     var header = document.querySelector('.site-header');
