@@ -696,6 +696,13 @@ input[type="submit"] {
     margin-bottom: var(--space-sm);
 }
 
+.testimonial-card .testimonial-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 .testimonial-card .author {
     font-weight: 600;
     color: var(--color-navy);
