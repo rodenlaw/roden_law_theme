@@ -135,7 +135,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                  SECTION 4: WHY HIRE A [Practice Area] LAWYER?
                  ═══════════════════════════════════════════════════════════ -->
             <div class="content-section pa-why-hire">
-                <h2>Why Hire a <?php the_title(); ?>?</h2>
+                <h2>Why Hire <?php the_title(); ?>?</h2>
                 <?php if ( $why_hire ) : ?>
                     <div class="pa-why-hire__body">
                         <?php echo apply_filters( 'the_content', $why_hire ); ?>
