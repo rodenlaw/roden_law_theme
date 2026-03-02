@@ -110,29 +110,8 @@ $legal_service_schema = array(
 );
 roden_json_ld( $legal_service_schema );
 
-// FAQPage schema
-if ( ! empty( $faqs ) && is_array( $faqs ) ) {
-    $faq_entities = array();
-    foreach ( $faqs as $faq ) {
-        if ( ! empty( $faq['question'] ) && ! empty( $faq['answer'] ) ) {
-            $faq_entities[] = array(
-                '@type'          => 'Question',
-                'name'           => $faq['question'],
-                'acceptedAnswer' => array(
-                    '@type' => 'Answer',
-                    'text'  => $faq['answer'],
-                ),
-            );
-        }
-    }
-    if ( ! empty( $faq_entities ) ) {
-        roden_json_ld( array(
-            '@context'   => 'https://schema.org',
-            '@type'      => 'FAQPage',
-            'mainEntity' => $faq_entities,
-        ) );
-    }
-}
+// FAQPage schema is output automatically by roden_output_schema() via wp_head
+// for all is_singular('location') pages — no inline output needed here.
 ?>
 
 <!-- ================================================================
