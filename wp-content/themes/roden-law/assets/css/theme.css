@@ -275,36 +275,16 @@ h1, h2, h3, h4, h5, h6 {
     display: grid; grid-template-columns: 1fr 380px; gap: 48px;
     max-width: var(--container); margin: 0 auto; align-items: stretch;
 }
-.hero-content { display: flex; flex-direction: column; justify-content: center; }
+.hero-content { display: flex; flex-direction: column; justify-content: center; min-width: 0; }
 .hero-form { display: flex; flex-direction: column; }
 .hero-form .sidebar-contact-form,
 .hero-map-form .sidebar-contact-form {
     flex: 1; display: flex; flex-direction: column;
 }
-.hero-form .sidebar-contact-form .gform_wrapper,
 .hero-form .sidebar-contact-form form,
-.hero-map-form .sidebar-contact-form .gform_wrapper,
 .hero-map-form .sidebar-contact-form form {
     flex: 1; display: flex; flex-direction: column;
 }
-.hero-form .sidebar-contact-form .gform_body,
-.hero-map-form .sidebar-contact-form .gform_body {
-    flex: 1; display: flex; flex-direction: column;
-}
-.hero-form .sidebar-contact-form .gform_fields,
-.hero-map-form .sidebar-contact-form .gform_fields {
-    flex: 1; display: flex; flex-direction: column;
-}
-/* Push the last field (textarea) to fill remaining space */
-.hero-form .sidebar-contact-form .gform_fields .gfield:last-of-type,
-.hero-map-form .sidebar-contact-form .gform_fields .gfield:last-of-type {
-    flex: 1; display: flex; flex-direction: column;
-}
-.hero-form .sidebar-contact-form .gform_fields .gfield:last-of-type textarea,
-.hero-map-form .sidebar-contact-form .gform_fields .gfield:last-of-type textarea {
-    flex: 1; min-height: 60px;
-}
-.hero-content { min-width: 0; }
 
 .hero-title {
     color: var(--white); font-size: 38px; font-weight: 900; line-height: 1.15;
@@ -702,148 +682,137 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar-links li a:hover { color: var(--orange-text); }
 .sidebar-links .count { font-size: 10px; color: var(--gray-400); }
 
-/* Sidebar contact form */
+/* ─── SIDEBAR CONTACT FORM (M&M-style) ────────────────────────────────── */
+
 .sidebar-contact-form {
     background: var(--navy); border-radius: var(--radius-lg); padding: 24px; color: var(--white);
 }
-.form-title { font-weight: 800; font-size: 16px; margin-bottom: 4px; font-family: var(--font-serif); color: var(--white); }
-.form-subtitle { font-size: 12px; color: var(--text-light); margin-bottom: 16px; }
-
-/* ─── HERO FORM — Gravity Forms overrides ─────────────────────────────── */
-.hero-form .sidebar-contact-form,
-.hero-map-form .sidebar-contact-form { padding: 14px; }
-.hero-form .form-title,
-.hero-map-form .form-title { font-size: 15px; margin-bottom: 1px; }
-.hero-form .form-subtitle,
-.hero-map-form .form-subtitle { margin-bottom: 8px; font-size: 11px; }
-
-/* Shrink textarea to single line height */
-.hero-form #input_1_6,
-.hero-form .gform_wrapper textarea.textarea,
-.hero-form .gform_wrapper .gform-body textarea,
-.hero-form textarea[name="input_6"],
-.hero-map-form #input_1_6,
-.hero-map-form .gform_wrapper textarea.textarea,
-.hero-map-form .gform_wrapper .gform-body textarea,
-.hero-map-form textarea[name="input_6"] {
-    height: 40px !important;
-    min-height: 40px !important;
-    max-height: 40px !important;
-    resize: none !important;
+.form-title {
+    font-weight: 800; font-size: 18px; margin-bottom: 4px;
+    font-family: var(--font-serif); color: var(--white);
+}
+.form-subtitle {
+    font-size: 12px; color: var(--gray-400); margin-bottom: 16px;
 }
 
-/* Hide captcha field completely */
-.hero-form #field_1_8,
-.hero-form .gfield[id="field_1_8"],
-.hero-map-form #field_1_8,
-.hero-map-form .gfield[id="field_1_8"] {
-    display: none !important;
-    height: 0 !important;
-    overflow: hidden !important;
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-/* Show and style submit button — override screen-reader-text */
-.hero-form #gform_submit_button_1,
-.hero-form .gform_button.button.screen-reader-text,
-.hero-form .gform_footer input[type="submit"],
-.hero-map-form #gform_submit_button_1,
-.hero-map-form .gform_button.button.screen-reader-text,
-.hero-map-form .gform_footer input[type="submit"] {
-    display: block !important;
-    position: static !important;
-    clip: auto !important;
-    clip-path: none !important;
-    width: 100% !important;
-    height: auto !important;
-    overflow: visible !important;
-    white-space: normal !important;
-    margin: 0 !important;
-    padding: 12px 20px !important;
-    background: var(--orange) !important;
-    color: var(--navy) !important;
-    border: none !important;
-    border-radius: 6px !important;
-    font-weight: 800 !important;
-    font-size: 14px !important;
-    cursor: pointer !important;
-    font-family: var(--font-sans) !important;
-    letter-spacing: 0.3px;
-    -webkit-appearance: none;
-}
-.hero-form #gform_submit_button_1:hover,
-.hero-form .gform_footer input[type="submit"]:hover,
-.hero-map-form #gform_submit_button_1:hover,
-.hero-map-form .gform_footer input[type="submit"]:hover {
-    background: var(--orange-dark) !important;
-}
-
-/* Tighten Gravity Forms footer */
-.hero-form .gform_footer.top_label,
-.hero-form .gform-footer,
-.hero-map-form .gform_footer.top_label,
-.hero-map-form .gform-footer {
-    padding: 4px 0 0 !important;
-    margin: 0 !important;
-}
-
-/* Kill GF wrapper margins */
-.hero-form .gform_wrapper,
-.hero-form .gf_browser_chrome.gform_wrapper,
-.hero-map-form .gform_wrapper,
-.hero-map-form .gf_browser_chrome.gform_wrapper {
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-/* Kill GF field margins — use input margin-bottom for spacing instead */
-.hero-form .gform_wrapper .gfield,
-.hero-map-form .gform_wrapper .gfield {
-    margin: 0 !important;
-    padding: 0 !important;
-}
-.hero-form .gform_wrapper .gform_fields,
-.hero-map-form .gform_wrapper .gform_fields {
-    gap: 0 !important;
-}
-
-/* Tighten Gravity Forms field spacing in hero */
-.hero-form .gform_wrapper .gfield,
-.hero-map-form .gform_wrapper .gfield { margin-bottom: 0 !important; padding-bottom: 0 !important; }
-.hero-form .gform_wrapper input:not([type="submit"]):not([type="hidden"]),
-.hero-form .gform_wrapper textarea,
-.hero-map-form .gform_wrapper input:not([type="submit"]):not([type="hidden"]),
-.hero-map-form .gform_wrapper textarea {
-    margin-bottom: 5px !important; padding: 8px 12px !important; font-size: 13px !important;
-}
-.hero-form .gform_wrapper .gfield_label,
-.hero-map-form .gform_wrapper .gfield_label { display: none !important; }
-.hero-form .gform_wrapper .gform_body,
-.hero-map-form .gform_wrapper .gform_body { padding: 0 !important; }
-.hero-form .gform_wrapper,
-.hero-map-form .gform_wrapper { margin: 0 !important; padding: 0 !important; }
-
-/* Phone fallback under button */
-.hero-form .form-phone-fallback,
-.hero-map-form .form-phone-fallback { margin-top: 2px; margin-bottom: 0; font-size: 11px; }
-.roden-contact-form input,
+/* Form fields — white background, dark text (M&M style) */
+.roden-contact-form input[type="text"],
+.roden-contact-form input[type="tel"],
+.roden-contact-form input[type="email"],
 .roden-contact-form textarea,
 .roden-contact-form select {
-    width: 100%; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 6px; color: var(--white); padding: 11px 14px; font-size: 13px;
-    margin-bottom: 10px; font-family: var(--font-sans);
+    width: 100%;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: 8px;
+    color: var(--gray-800);
+    padding: 12px 14px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-family: var(--font-sans);
+    box-sizing: border-box;
 }
+.roden-contact-form input::placeholder,
+.roden-contact-form textarea::placeholder {
+    color: var(--gray-400);
+}
+.roden-contact-form input:focus,
+.roden-contact-form textarea:focus,
+.roden-contact-form select:focus {
+    outline: none;
+    border-color: var(--orange);
+    box-shadow: 0 0 0 2px rgba(252, 180, 21, 0.25);
+}
+.roden-contact-form textarea {
+    resize: none;
+}
+
+/* Select dropdown */
 .roden-contact-form select {
     appearance: none; -webkit-appearance: none; cursor: pointer;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23fff' d='M1.41 0L6 4.58 10.59 0 12 1.41l-6 6-6-6z'/%3E%3C/svg%3E");
-    background-repeat: no-repeat; background-position: right 12px center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23555' d='M1.41 0L6 4.58 10.59 0 12 1.41l-6 6-6-6z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 14px center;
+    padding-right: 36px;
 }
-.roden-contact-form select option { background: var(--navy); color: var(--white); }
-.roden-contact-form input::placeholder,
-.roden-contact-form textarea::placeholder { color: rgba(255,255,255,0.5); }
-.roden-contact-form textarea { resize: none; }
-/* Fallback form: stretch textarea to fill remaining space in hero */
+.roden-contact-form select option {
+    background: var(--white); color: var(--gray-800);
+}
+
+/* 2-column field rows (First/Last, Phone/Zip) */
+.form-row-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.form-row-2col input {
+    margin-bottom: 0;
+}
+.form-row-2col {
+    margin-bottom: 10px;
+}
+
+/* Consent checkbox + disclaimer */
+.form-consent {
+    margin: 8px 0 14px;
+}
+.consent-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 11px;
+    color: var(--gray-300);
+    line-height: 1.5;
+    cursor: pointer;
+}
+.consent-checkbox input[type="checkbox"] {
+    width: 16px; height: 16px;
+    margin: 0; flex-shrink: 0;
+    accent-color: var(--orange);
+    cursor: pointer;
+}
+.consent-terms {
+    font-size: 11px;
+    color: var(--gray-400);
+    margin: 8px 0 0;
+    line-height: 1.5;
+}
+.consent-terms a {
+    color: var(--orange);
+    text-decoration: underline;
+}
+.consent-terms a:hover {
+    color: var(--orange-light);
+}
+
+/* Submit button */
+.roden-contact-form .btn {
+    margin-bottom: 0;
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 8px;
+    letter-spacing: 0.3px;
+}
+
+/* Disclaimer below form */
+.form-disclaimer {
+    text-align: center;
+    font-size: 10px;
+    color: var(--gray-500);
+    margin: 10px 0 4px;
+    line-height: 1.5;
+}
+
+/* Phone fallback */
+.form-phone-fallback {
+    text-align: center; font-size: 11px;
+    color: var(--gray-400); margin-top: 4px; margin-bottom: 0;
+}
+.form-phone-fallback a { color: var(--orange); }
+
+/* ─── HERO FORM — stretch form to fill height ─────────────────────────── */
+
 .hero-form .sidebar-contact-form .roden-contact-form,
 .hero-map-form .sidebar-contact-form .roden-contact-form {
     flex: 1; display: flex; flex-direction: column;
@@ -852,9 +821,8 @@ h1, h2, h3, h4, h5, h6 {
 .hero-map-form .sidebar-contact-form .roden-contact-form textarea {
     flex: 1; min-height: 60px;
 }
-.roden-contact-form .btn { margin-bottom: 8px; }
-.form-phone-fallback { text-align: center; font-size: 11px; color: var(--text-light); margin-top: 8px; }
-.form-phone-fallback a { color: var(--orange); }
+.hero-form .form-phone-fallback,
+.hero-map-form .form-phone-fallback { margin-top: 2px; }
 
 /* Sidebar NAP Card */
 .sidebar-nap-card {
