@@ -276,15 +276,7 @@ h1, h2, h3, h4, h5, h6 {
     max-width: var(--container); margin: 0 auto; align-items: stretch;
 }
 .hero-content { display: flex; flex-direction: column; justify-content: center; min-width: 0; }
-.hero-form { display: flex; flex-direction: column; }
-.hero-form .sidebar-contact-form,
-.hero-map-form .sidebar-contact-form {
-    flex: 1; display: flex; flex-direction: column;
-}
-.hero-form .sidebar-contact-form form,
-.hero-map-form .sidebar-contact-form form {
-    flex: 1; display: flex; flex-direction: column;
-}
+.hero-form { display: flex; flex-direction: column; justify-content: flex-end; }
 
 .hero-title {
     color: var(--white); font-size: 38px; font-weight: 900; line-height: 1.15;
@@ -798,31 +790,13 @@ h1, h2, h3, h4, h5, h6 {
 /* Disclaimer below form */
 .form-disclaimer {
     text-align: center;
-    font-size: 10px;
+    font-size: 11px;
     color: var(--gray-500);
-    margin: 10px 0 4px;
+    margin: 10px 0 0;
     line-height: 1.5;
 }
 
-/* Phone fallback */
-.form-phone-fallback {
-    text-align: center; font-size: 11px;
-    color: var(--gray-400); margin-top: 4px; margin-bottom: 0;
-}
-.form-phone-fallback a { color: var(--orange); }
-
-/* ─── HERO FORM — stretch form to fill height ─────────────────────────── */
-
-.hero-form .sidebar-contact-form .roden-contact-form,
-.hero-map-form .sidebar-contact-form .roden-contact-form {
-    flex: 1; display: flex; flex-direction: column;
-}
-.hero-form .sidebar-contact-form .roden-contact-form textarea,
-.hero-map-form .sidebar-contact-form .roden-contact-form textarea {
-    flex: 1; min-height: 60px;
-}
-.hero-form .form-phone-fallback,
-.hero-map-form .form-phone-fallback { margin-top: 2px; }
+/* ─── HERO FORM — align form to bottom of hero ────────────────────────── */
 
 /* Sidebar NAP Card */
 .sidebar-nap-card {

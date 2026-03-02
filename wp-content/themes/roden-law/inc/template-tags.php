@@ -596,9 +596,7 @@ function roden_neighborhood_grid( $current_post_id ) {
    ========================================================================== */
 
 function roden_contact_form_sidebar( $local_phone = '' ) {
-    $firm  = roden_firm_data();
-    $phone = $local_phone ?: $firm['phone'];
-    $phone_raw = $local_phone ? preg_replace( '/[^0-9+]/', '', $local_phone ) : $firm['phone_e164'];
+    $firm = roden_firm_data();
     ?>
     <div class="sidebar-contact-form">
         <h3 class="form-title">Free Case Review</h3>
@@ -631,7 +629,6 @@ function roden_contact_form_sidebar( $local_phone = '' ) {
             <button type="submit" class="btn btn-primary btn-block">See If You Qualify</button>
         </form>
         <p class="form-disclaimer">Results may vary depending on your particular facts and legal circumstances.</p>
-        <p class="form-phone-fallback">&mdash; or call <a href="tel:<?php echo esc_attr( $phone_raw ); ?>"><?php echo esc_html( $phone ); ?></a> &mdash;</p>
     </div>
     <?php
 }
