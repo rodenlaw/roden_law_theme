@@ -273,7 +273,36 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-grid {
     display: grid; grid-template-columns: 1fr 380px; gap: 48px;
-    max-width: var(--container); margin: 0 auto; align-items: start;
+    max-width: var(--container); margin: 0 auto; align-items: stretch;
+}
+.hero-content { display: flex; flex-direction: column; justify-content: center; }
+.hero-form { display: flex; flex-direction: column; }
+.hero-form .sidebar-contact-form,
+.hero-map-form .sidebar-contact-form {
+    flex: 1; display: flex; flex-direction: column;
+}
+.hero-form .sidebar-contact-form .gform_wrapper,
+.hero-form .sidebar-contact-form form,
+.hero-map-form .sidebar-contact-form .gform_wrapper,
+.hero-map-form .sidebar-contact-form form {
+    flex: 1; display: flex; flex-direction: column;
+}
+.hero-form .sidebar-contact-form .gform_body,
+.hero-map-form .sidebar-contact-form .gform_body {
+    flex: 1; display: flex; flex-direction: column;
+}
+.hero-form .sidebar-contact-form .gform_fields,
+.hero-map-form .sidebar-contact-form .gform_fields {
+    flex: 1; display: flex; flex-direction: column;
+}
+/* Push the last field (textarea) to fill remaining space */
+.hero-form .sidebar-contact-form .gform_fields .gfield:last-of-type,
+.hero-map-form .sidebar-contact-form .gform_fields .gfield:last-of-type {
+    flex: 1; display: flex; flex-direction: column;
+}
+.hero-form .sidebar-contact-form .gform_fields .gfield:last-of-type textarea,
+.hero-map-form .sidebar-contact-form .gform_fields .gfield:last-of-type textarea {
+    flex: 1; min-height: 60px;
 }
 .hero-content { min-width: 0; }
 
@@ -814,6 +843,15 @@ h1, h2, h3, h4, h5, h6 {
 .roden-contact-form input::placeholder,
 .roden-contact-form textarea::placeholder { color: rgba(255,255,255,0.5); }
 .roden-contact-form textarea { resize: none; }
+/* Fallback form: stretch textarea to fill remaining space in hero */
+.hero-form .sidebar-contact-form .roden-contact-form,
+.hero-map-form .sidebar-contact-form .roden-contact-form {
+    flex: 1; display: flex; flex-direction: column;
+}
+.hero-form .sidebar-contact-form .roden-contact-form textarea,
+.hero-map-form .sidebar-contact-form .roden-contact-form textarea {
+    flex: 1; min-height: 60px;
+}
 .roden-contact-form .btn { margin-bottom: 8px; }
 .form-phone-fallback { text-align: center; font-size: 11px; color: var(--text-light); margin-top: 8px; }
 .form-phone-fallback a { color: var(--orange); }
@@ -1665,7 +1703,7 @@ body.nav-open { overflow: hidden; }
 
 @media (max-width: 900px) {
     .hero-grid { grid-template-columns: 1fr; }
-    .hero-form { display: none; } /* Show only on desktop */
+    .hero-form { display: none !important; } /* Show only on desktop */
     .content-sidebar-grid { grid-template-columns: 1fr; }
     .sidebar { padding: 24px; }
     .main-content { padding: 24px 0; border-right: none; }
