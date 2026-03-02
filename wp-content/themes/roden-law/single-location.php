@@ -181,6 +181,13 @@ endif;
 // END state landing page
 // ──────────────────────────────────────────────────────────────────────────
 
+// Check for neighborhood page before standard city office template
+if ( get_post_meta( $post_id, '_roden_is_neighborhood', true ) ) :
+    get_template_part( 'templates/single-location-neighborhood' );
+    get_footer();
+    return;
+endif;
+
 // CITY OFFICE PAGE — routed to extracted template
 get_template_part( 'templates/template-location' );
 get_footer();

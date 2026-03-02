@@ -1726,3 +1726,150 @@ body.nav-open { overflow: hidden; }
     .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 12px; }
     .location-matrix .matrix-grid { grid-template-columns: 1fr; }
 }
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   NEIGHBORHOOD PAGES
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ─── Neighborhood Grid (used on parent + sibling pages) ──────────────── */
+
+.roden-neighborhood-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.neighborhood-card {
+    background: var(--white, #fff);
+    border: 1px solid var(--gray-200, #e0e0e0);
+    border-top: 3px solid var(--navy, #013046);
+    border-radius: 8px;
+    padding: 16px 14px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    transition: all 0.2s ease;
+}
+
+.neighborhood-card:hover {
+    border-top-color: var(--orange, #FCB415);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.neighborhood-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--navy, #013046);
+}
+
+.neighborhood-pop {
+    font-size: 11px;
+    color: var(--gray-500, #888);
+}
+
+.neighborhood-arrow {
+    font-size: 12px;
+    color: var(--orange, #FCB415);
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+.neighborhoods-note {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 13px;
+    color: var(--gray-500, #888);
+    line-height: 1.6;
+}
+
+.neighborhoods-note a {
+    color: var(--orange, #FCB415);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.neighborhoods-note a:hover {
+    text-decoration: underline;
+}
+
+/* ─── Neighborhood Template Sections ──────────────────────────────────── */
+
+.hero-neighborhood .state-badge {
+    font-size: 11px;
+    letter-spacing: 0.05em;
+}
+
+.neighborhood-content {
+    max-width: 800px;
+}
+
+.neighborhood-roads-content {
+    max-width: 800px;
+}
+
+/* Hospital Cards */
+.neighborhood-hospitals {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+}
+
+.hospital-card {
+    background: var(--white, #fff);
+    border: 1px solid var(--gray-200, #e0e0e0);
+    border-left: 4px solid var(--green, #27AE60);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.hospital-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--navy, #013046);
+    margin: 0;
+}
+
+.hospital-address {
+    font-size: 14px;
+    color: var(--gray-600, #666);
+    line-height: 1.5;
+}
+
+.hospital-phone {
+    font-size: 14px;
+    color: var(--navy, #013046);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.hospital-phone:hover {
+    color: var(--orange, #FCB415);
+}
+
+/* ─── Neighborhood Grid Responsive ────────────────────────────────────── */
+
+@media (max-width: 768px) {
+    .roden-neighborhood-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .roden-neighborhood-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .neighborhood-hospitals {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 375px) {
+    .roden-neighborhood-grid {
+        grid-template-columns: 1fr;
+    }
+}

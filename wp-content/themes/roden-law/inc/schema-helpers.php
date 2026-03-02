@@ -561,17 +561,42 @@ function roden_schema_breadcrumbs() {
             'item'     => home_url( '/locations/' ),
         );
 
-        // Add state-level crumb (e.g., Georgia, South Carolina)
-        $office_key = get_post_meta( get_the_ID(), '_roden_office_key', true );
-        $firm       = roden_firm_data();
-        if ( $office_key && isset( $firm['offices'][ $office_key ] ) ) {
-            $office = $firm['offices'][ $office_key ];
-            $items[] = array(
-                '@type'    => 'ListItem',
-                'position' => $position++,
-                'name'     => $office['state_full'],
-                'item'     => home_url( '/locations/' . $office['state_slug'] . '/' ),
-            );
+        $firm            = roden_firm_data();
+        $is_neighborhood = get_post_meta( get_the_ID(), '_roden_is_neighborhood', true );
+
+        if ( $is_neighborhood ) {
+            // Neighborhood: Locations > State > City > Neighborhood
+            $parent_office_key = get_post_meta( get_the_ID(), '_roden_parent_office_key', true );
+            $parent_id = wp_get_post_parent_id( get_the_ID() );
+            if ( $parent_office_key && isset( $firm['offices'][ $parent_office_key ] ) ) {
+                $office = $firm['offices'][ $parent_office_key ];
+                $items[] = array(
+                    '@type'    => 'ListItem',
+                    'position' => $position++,
+                    'name'     => $office['state_full'],
+                    'item'     => home_url( '/locations/' . $office['state_slug'] . '/' ),
+                );
+                if ( $parent_id ) {
+                    $items[] = array(
+                        '@type'    => 'ListItem',
+                        'position' => $position++,
+                        'name'     => $office['city'],
+                        'item'     => get_permalink( $parent_id ),
+                    );
+                }
+            }
+        } else {
+            // Standard office: Locations > State > City
+            $office_key = get_post_meta( get_the_ID(), '_roden_office_key', true );
+            if ( $office_key && isset( $firm['offices'][ $office_key ] ) ) {
+                $office = $firm['offices'][ $office_key ];
+                $items[] = array(
+                    '@type'    => 'ListItem',
+                    'position' => $position++,
+                    'name'     => $office['state_full'],
+                    'item'     => home_url( '/locations/' . $office['state_slug'] . '/' ),
+                );
+            }
         }
 
         $items[] = array(

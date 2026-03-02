@@ -90,6 +90,17 @@ function roden_add_meta_boxes() {
         'normal'
     );
 
+    /* ── Location: Neighborhood ───────────────────────────────────── */
+
+    add_meta_box(
+        'roden_neighborhood',
+        __( 'Neighborhood Configuration', 'roden-law' ),
+        'roden_neighborhood_meta_box',
+        'location',
+        'normal',
+        'high'
+    );
+
     /* ── Attorney ──────────────────────────────────────────────────── */
 
     add_meta_box(
@@ -321,6 +332,102 @@ function roden_local_content_meta_box( $post ) {
     ) );
     ?>
     <p class="description"><?php esc_html_e( 'Additional content about local courts, institutions, and community ties.', 'roden-law' ); ?></p>
+    <?php
+}
+
+/* ==========================================================================
+   NEIGHBORHOOD META BOX CALLBACK
+   ========================================================================== */
+
+/** Neighborhood configuration meta box for location CPT. */
+function roden_neighborhood_meta_box( $post ) {
+    wp_nonce_field( 'roden_neighborhood_nonce', '_roden_neighborhood_nonce' );
+
+    $is_neighborhood = get_post_meta( $post->ID, '_roden_is_neighborhood', true );
+    $parent_office   = get_post_meta( $post->ID, '_roden_parent_office_key', true );
+    $roads           = get_post_meta( $post->ID, '_roden_neighborhood_roads', true );
+    $hospitals       = get_post_meta( $post->ID, '_roden_neighborhood_hospitals', true );
+    $landmarks       = get_post_meta( $post->ID, '_roden_neighborhood_landmarks', true );
+    $service_area    = get_post_meta( $post->ID, '_roden_neighborhood_service_area', true );
+    $population      = get_post_meta( $post->ID, '_roden_neighborhood_population', true );
+    $court           = get_post_meta( $post->ID, '_roden_neighborhood_court', true );
+
+    $firm = roden_firm_data();
+    ?>
+    <p>
+        <label>
+            <input type="checkbox" name="_roden_is_neighborhood" value="1" <?php checked( $is_neighborhood ); ?>>
+            <strong><?php esc_html_e( 'This is a Neighborhood page', 'roden-law' ); ?></strong>
+        </label>
+    </p>
+    <p class="description"><?php esc_html_e( 'Check this box if this location page is a neighborhood/community sub-page of a parent office page.', 'roden-law' ); ?></p>
+
+    <hr style="margin:12px 0;">
+
+    <table class="form-table">
+        <tr>
+            <th><label for="roden_parent_office_key"><?php esc_html_e( 'Parent Office', 'roden-law' ); ?></label></th>
+            <td>
+                <select id="roden_parent_office_key" name="_roden_parent_office_key" style="min-width:250px;">
+                    <option value=""><?php esc_html_e( '— Select Parent Office —', 'roden-law' ); ?></option>
+                    <?php foreach ( $firm['offices'] as $key => $office ) : ?>
+                        <option value="<?php echo esc_attr( $key ); ?>" <?php selected( $parent_office, $key ); ?>>
+                            <?php echo esc_html( $office['city'] . ', ' . $office['state'] . ' (' . $key . ')' ); ?>
+                        </option>
+                    <?php endforeach; ?>
+                </select>
+                <p class="description"><?php esc_html_e( 'The parent office this neighborhood is served by.', 'roden-law' ); ?></p>
+            </td>
+        </tr>
+        <tr>
+            <th><label for="roden_neighborhood_population"><?php esc_html_e( 'Population', 'roden-law' ); ?></label></th>
+            <td>
+                <input type="text" id="roden_neighborhood_population" name="_roden_neighborhood_population"
+                       value="<?php echo esc_attr( $population ); ?>" class="regular-text"
+                       placeholder="~95,000">
+            </td>
+        </tr>
+        <tr>
+            <th><label for="roden_neighborhood_court"><?php esc_html_e( 'Court Jurisdiction', 'roden-law' ); ?></label></th>
+            <td>
+                <input type="text" id="roden_neighborhood_court" name="_roden_neighborhood_court"
+                       value="<?php echo esc_attr( $court ); ?>" class="regular-text"
+                       placeholder="Charleston County Circuit Court">
+            </td>
+        </tr>
+        <tr>
+            <th><label for="roden_neighborhood_roads"><?php esc_html_e( 'Dangerous Roads', 'roden-law' ); ?></label></th>
+            <td>
+                <textarea id="roden_neighborhood_roads" name="_roden_neighborhood_roads"
+                          rows="5" class="large-text"><?php echo esc_textarea( $roads ); ?></textarea>
+                <p class="description"><?php esc_html_e( 'Dangerous roads, intersections, and corridors in this neighborhood.', 'roden-law' ); ?></p>
+            </td>
+        </tr>
+        <tr>
+            <th><label for="roden_neighborhood_hospitals"><?php esc_html_e( 'Nearest Hospitals', 'roden-law' ); ?></label></th>
+            <td>
+                <textarea id="roden_neighborhood_hospitals" name="_roden_neighborhood_hospitals"
+                          rows="4" class="large-text"><?php echo esc_textarea( $hospitals ); ?></textarea>
+                <p class="description"><?php esc_html_e( 'One per line. Format: Name — Address — Phone', 'roden-law' ); ?></p>
+            </td>
+        </tr>
+        <tr>
+            <th><label for="roden_neighborhood_landmarks"><?php esc_html_e( 'Landmarks', 'roden-law' ); ?></label></th>
+            <td>
+                <textarea id="roden_neighborhood_landmarks" name="_roden_neighborhood_landmarks"
+                          rows="3" class="large-text"><?php echo esc_textarea( $landmarks ); ?></textarea>
+                <p class="description"><?php esc_html_e( 'Key local landmarks, comma-separated.', 'roden-law' ); ?></p>
+            </td>
+        </tr>
+        <tr>
+            <th><label for="roden_neighborhood_service_area"><?php esc_html_e( 'Service Area', 'roden-law' ); ?></label></th>
+            <td>
+                <textarea id="roden_neighborhood_service_area" name="_roden_neighborhood_service_area"
+                          rows="3" class="large-text"><?php echo esc_textarea( $service_area ); ?></textarea>
+                <p class="description"><?php esc_html_e( 'Surrounding communities this neighborhood page serves.', 'roden-law' ); ?></p>
+            </td>
+        </tr>
+    </table>
     <?php
 }
 
@@ -596,6 +703,30 @@ function roden_save_meta_fields( $post_id ) {
             }
         }
         update_post_meta( $post_id, '_roden_faqs', $clean );
+    }
+
+    /* ── Location: Neighborhood ─────────────────────────────────── */
+
+    if ( isset( $_POST['_roden_neighborhood_nonce'] ) &&
+         wp_verify_nonce( $_POST['_roden_neighborhood_nonce'], 'roden_neighborhood_nonce' ) ) {
+
+        $is_neighborhood = ! empty( $_POST['_roden_is_neighborhood'] );
+        update_post_meta( $post_id, '_roden_is_neighborhood', $is_neighborhood );
+
+        update_post_meta( $post_id, '_roden_parent_office_key',
+            sanitize_text_field( $_POST['_roden_parent_office_key'] ?? '' ) );
+        update_post_meta( $post_id, '_roden_neighborhood_roads',
+            sanitize_textarea_field( $_POST['_roden_neighborhood_roads'] ?? '' ) );
+        update_post_meta( $post_id, '_roden_neighborhood_hospitals',
+            sanitize_textarea_field( $_POST['_roden_neighborhood_hospitals'] ?? '' ) );
+        update_post_meta( $post_id, '_roden_neighborhood_landmarks',
+            sanitize_textarea_field( $_POST['_roden_neighborhood_landmarks'] ?? '' ) );
+        update_post_meta( $post_id, '_roden_neighborhood_service_area',
+            sanitize_textarea_field( $_POST['_roden_neighborhood_service_area'] ?? '' ) );
+        update_post_meta( $post_id, '_roden_neighborhood_population',
+            sanitize_text_field( $_POST['_roden_neighborhood_population'] ?? '' ) );
+        update_post_meta( $post_id, '_roden_neighborhood_court',
+            sanitize_text_field( $_POST['_roden_neighborhood_court'] ?? '' ) );
     }
 
     /* ── Location: Office Key ────────────────────────────────────── */

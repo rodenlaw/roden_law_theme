@@ -38,10 +38,26 @@ function roden_breadcrumb_html() {
 
     } elseif ( is_singular( 'location' ) ) {
         $crumbs[] = '<a href="' . esc_url( home_url( '/locations/' ) ) . '">Locations</a>';
-        $office_key = get_post_meta( get_the_ID(), '_roden_office_key', true );
-        if ( $office_key && isset( $firm['offices'][ $office_key ] ) ) {
-            $o = $firm['offices'][ $office_key ];
-            $crumbs[] = '<a href="' . esc_url( home_url( '/locations/' . $o['state_slug'] . '/' ) ) . '">' . esc_html( $o['state_full'] ) . '</a>';
+
+        $is_neighborhood = get_post_meta( get_the_ID(), '_roden_is_neighborhood', true );
+        if ( $is_neighborhood ) {
+            // Neighborhood page: Home > Locations > State > City > Neighborhood
+            $parent_office_key = get_post_meta( get_the_ID(), '_roden_parent_office_key', true );
+            $parent_id = wp_get_post_parent_id( get_the_ID() );
+            if ( $parent_office_key && isset( $firm['offices'][ $parent_office_key ] ) ) {
+                $o = $firm['offices'][ $parent_office_key ];
+                $crumbs[] = '<a href="' . esc_url( home_url( '/locations/' . $o['state_slug'] . '/' ) ) . '">' . esc_html( $o['state_full'] ) . '</a>';
+                if ( $parent_id ) {
+                    $crumbs[] = '<a href="' . esc_url( get_permalink( $parent_id ) ) . '">' . esc_html( $o['city'] ) . '</a>';
+                }
+            }
+        } else {
+            // Standard office page: Home > Locations > State > City
+            $office_key = get_post_meta( get_the_ID(), '_roden_office_key', true );
+            if ( $office_key && isset( $firm['offices'][ $office_key ] ) ) {
+                $o = $firm['offices'][ $office_key ];
+                $crumbs[] = '<a href="' . esc_url( home_url( '/locations/' . $o['state_slug'] . '/' ) ) . '">' . esc_html( $o['state_full'] ) . '</a>';
+            }
         }
         $crumbs[] = '<span class="breadcrumb-current">' . esc_html( get_the_title() ) . '</span>';
 
@@ -523,6 +539,55 @@ function roden_intersection_grid( $office_key, $columns = 3 ) {
         <?php
     }
 
+    echo '</div>';
+}
+
+/* ==========================================================================
+   NEIGHBORHOOD SIBLING GRID
+   ========================================================================== */
+
+/**
+ * Output neighborhood sibling grid.
+ * Displays all sibling neighborhood pages under the same parent location.
+ *
+ * @param int $current_post_id Current neighborhood post ID.
+ */
+function roden_neighborhood_grid( $current_post_id ) {
+    $parent_id = wp_get_post_parent_id( $current_post_id );
+    if ( ! $parent_id ) {
+        return;
+    }
+
+    $siblings = get_posts( array(
+        'post_type'      => 'location',
+        'post_parent'    => $parent_id,
+        'posts_per_page' => -1,
+        'post__not_in'   => array( $current_post_id ),
+        'meta_key'       => '_roden_is_neighborhood',
+        'meta_value'     => '1',
+        'orderby'        => 'title',
+        'order'          => 'ASC',
+        'post_status'    => 'publish',
+    ) );
+
+    if ( empty( $siblings ) ) {
+        return;
+    }
+
+    echo '<div class="roden-neighborhood-grid">';
+    foreach ( $siblings as $sibling ) {
+        $pop = get_post_meta( $sibling->ID, '_roden_neighborhood_population', true );
+        printf(
+            '<a href="%s" class="neighborhood-card">
+                <span class="neighborhood-name">%s</span>
+                %s
+                <span class="neighborhood-arrow">&rarr;</span>
+            </a>',
+            esc_url( get_permalink( $sibling->ID ) ),
+            esc_html( $sibling->post_title ),
+            $pop ? '<span class="neighborhood-pop">Pop. ' . esc_html( $pop ) . '</span>' : ''
+        );
+    }
     echo '</div>';
 }
 

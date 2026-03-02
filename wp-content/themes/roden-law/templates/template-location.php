@@ -171,6 +171,53 @@ $faqs          = get_post_meta( $post_id, '_roden_faqs', true );
 </section>
 
 <!-- ================================================================
+     4b. NEIGHBORHOODS SERVED (auto-renders if parent has neighborhood children)
+     ================================================================ -->
+<?php
+$neighborhood_children = get_posts( array(
+    'post_type'      => 'location',
+    'post_parent'    => $post_id,
+    'posts_per_page' => -1,
+    'meta_key'       => '_roden_is_neighborhood',
+    'meta_value'     => '1',
+    'orderby'        => 'title',
+    'order'          => 'ASC',
+    'post_status'    => 'publish',
+) );
+
+if ( ! empty( $neighborhood_children ) ) :
+?>
+<section class="section roden-neighborhoods-served">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Neighborhoods Served Across The <?php echo esc_html( $office['city'] ); ?> Area</h2>
+            <p class="section-subtitle">
+                Roden Law's <?php echo esc_html( $office['city'] ); ?> office serves injury victims throughout the greater <?php echo esc_html( $office['city'] ); ?> metro area.
+                Click any neighborhood below to learn about local accident hotspots, nearby hospitals, and how we can help.
+            </p>
+        </div>
+        <div class="roden-neighborhood-grid">
+            <?php foreach ( $neighborhood_children as $child ) :
+                $child_pop = get_post_meta( $child->ID, '_roden_neighborhood_population', true );
+            ?>
+                <a href="<?php echo esc_url( get_permalink( $child->ID ) ); ?>" class="neighborhood-card">
+                    <span class="neighborhood-name"><?php echo esc_html( $child->post_title ); ?></span>
+                    <?php if ( $child_pop ) : ?>
+                        <span class="neighborhood-pop">Pop. <?php echo esc_html( $child_pop ); ?></span>
+                    <?php endif; ?>
+                    <span class="neighborhood-arrow">&rarr;</span>
+                </a>
+            <?php endforeach; ?>
+        </div>
+        <p class="neighborhoods-note">
+            Don't see your neighborhood? We serve all of the greater <?php echo esc_html( $office['city'] ); ?> area.
+            Call <a href="tel:<?php echo esc_attr( $office['phone_raw'] ); ?>"><?php echo esc_html( $office['phone'] ); ?></a> for a free consultation.
+        </p>
+    </div>
+</section>
+<?php endif; ?>
+
+<!-- ================================================================
      5. ABOUT — full-width section with the_content()
      ================================================================ -->
 <section class="section">
