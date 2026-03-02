@@ -153,7 +153,17 @@ function roden_bridge_cpt_templates( $template ) {
 }
 
 /* ==========================================================================
-   5. WIDGET AREAS
+   5. PAGE TEMPLATES — Register templates in templates/ subdirectory
+   ========================================================================== */
+
+add_filter( 'theme_page_templates', 'roden_register_page_templates' );
+function roden_register_page_templates( $templates ) {
+    $templates['templates/template-landing-page.php'] = 'Landing Page';
+    return $templates;
+}
+
+/* ==========================================================================
+   6. WIDGET AREAS
    ========================================================================== */
 
 add_action( 'widgets_init', 'roden_register_sidebars' );
