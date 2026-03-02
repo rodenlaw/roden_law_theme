@@ -747,7 +747,7 @@ h1, h2, h3, h4, h5, h6 {
 .form-consent {
     margin: 8px 0 14px;
 }
-.consent-checkbox {
+.sidebar-contact-form .consent-checkbox {
     display: flex;
     align-items: flex-start;
     gap: 8px;
@@ -762,17 +762,17 @@ h1, h2, h3, h4, h5, h6 {
     accent-color: var(--orange);
     cursor: pointer;
 }
-.consent-terms {
+.sidebar-contact-form .consent-terms {
     font-size: 11px;
     color: var(--gray-400);
     margin: 8px 0 0;
     line-height: 1.5;
 }
-.consent-terms a {
+.sidebar-contact-form .consent-terms a {
     color: var(--orange);
     text-decoration: underline;
 }
-.consent-terms a:hover {
+.sidebar-contact-form .consent-terms a:hover {
     color: var(--orange-light);
 }
 
@@ -788,7 +788,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Disclaimer below form */
-.form-disclaimer {
+.sidebar-contact-form .form-disclaimer {
     text-align: center;
     font-size: 11px;
     color: var(--gray-500);
