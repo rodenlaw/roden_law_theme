@@ -171,6 +171,28 @@
         });
     }
 
+    /* ── Sticky Mobile CTA Bar ────────────────────────────────── */
+
+    var mobileCta = document.querySelector('.pa-mobile-cta');
+    if (mobileCta) {
+        var ctaVisible = false;
+        window.addEventListener('scroll', function () {
+            var scrollY = window.pageYOffset;
+            // Show after scrolling past the hero (approx 500px)
+            if (scrollY > 500 && !ctaVisible) {
+                mobileCta.style.transform = 'translateY(0)';
+                ctaVisible = true;
+            } else if (scrollY <= 500 && ctaVisible) {
+                mobileCta.style.transform = 'translateY(100%)';
+                ctaVisible = false;
+            }
+        }, { passive: true });
+
+        // Start hidden, slide up
+        mobileCta.style.transform = 'translateY(100%)';
+        mobileCta.style.transition = 'transform 0.3s ease';
+    }
+
     /* ── Sticky Header Shadow on Scroll ───────────────────────── */
 
     var header = document.querySelector('.site-header');

@@ -59,6 +59,34 @@
         container.append( html );
     } );
 
+    /* ── Common Causes Repeater ────────────────────────────────── */
+
+    $( '#roden-add-cause' ).on( 'click', function() {
+        var container = $( '#roden-causes-container' );
+        var html =
+            '<div class="roden-repeater-row" style="margin-bottom:6px;display:flex;gap:8px;align-items:center;">' +
+                '<input type="text" name="_roden_common_causes[]" value="" style="flex:1;" placeholder="e.g. Distracted driving">' +
+                '<span class="roden-remove-row" style="cursor:pointer;color:#a00;font-size:18px;" title="Remove">&times;</span>' +
+            '</div>';
+        container.append( html );
+    } );
+
+    /* ── Common Injuries Repeater ──────────────────────────────── */
+
+    $( '#roden-add-injury' ).on( 'click', function() {
+        var container = $( '#roden-injuries-container' );
+        var n = container.find( '.roden-repeater-row' ).length;
+        var html =
+            '<div class="roden-repeater-row" style="margin-bottom:10px;padding:10px;background:#f9f9f9;border:1px solid #ddd;position:relative;">' +
+                '<span class="roden-remove-row" style="position:absolute;top:5px;right:8px;cursor:pointer;color:#a00;font-size:18px;" title="Remove">&times;</span>' +
+                '<p><label><strong>Injury Name:</strong></label><br>' +
+                '<input type="text" name="_roden_common_injuries[' + n + '][name]" value="" style="width:100%;" placeholder="e.g. Traumatic Brain Injury (TBI)"></p>' +
+                '<p><label><strong>Description:</strong></label><br>' +
+                '<textarea name="_roden_common_injuries[' + n + '][description]" rows="2" style="width:100%;" placeholder="Brief description of the injury and its long-term effects."></textarea></p>' +
+            '</div>';
+        container.append( html );
+    } );
+
     /* ── Remove Row (delegated — works for dynamically added rows) */
 
     $( document ).on( 'click', '.roden-remove-row', function() {

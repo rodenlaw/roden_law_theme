@@ -56,6 +56,38 @@ function roden_add_meta_boxes() {
         'high'
     );
 
+    add_meta_box(
+        'roden_pa_hero_intro',
+        __( 'Hero Intro Paragraph', 'roden-law' ),
+        'roden_pa_hero_intro_meta_box',
+        'practice_area',
+        'normal'
+    );
+
+    add_meta_box(
+        'roden_pa_why_hire',
+        __( 'Why Hire Section Content', 'roden-law' ),
+        'roden_pa_why_hire_meta_box',
+        'practice_area',
+        'normal'
+    );
+
+    add_meta_box(
+        'roden_pa_common_causes',
+        __( 'Common Causes', 'roden-law' ),
+        'roden_pa_common_causes_meta_box',
+        'practice_area',
+        'normal'
+    );
+
+    add_meta_box(
+        'roden_pa_common_injuries',
+        __( 'Common Injuries', 'roden-law' ),
+        'roden_pa_common_injuries_meta_box',
+        'practice_area',
+        'normal'
+    );
+
     /* ── Location ──────────────────────────────────────────────────── */
 
     add_meta_box(
@@ -233,6 +265,90 @@ function roden_pa_author_meta_box( $post ) {
         </select>
     </p>
     <p class="description"><?php esc_html_e( 'Attorney for "About the Author" section and Person schema. Required for E-E-A-T.', 'roden-law' ); ?></p>
+    <?php
+}
+
+/** Hero Intro paragraph meta box. */
+function roden_pa_hero_intro_meta_box( $post ) {
+    wp_nonce_field( 'roden_pa_hero_intro_nonce', '_roden_pa_hero_intro_nonce' );
+    $value = get_post_meta( $post->ID, '_roden_hero_intro', true );
+    ?>
+    <p>
+        <label for="roden_hero_intro"><strong><?php esc_html_e( 'Hero intro (2-3 sentences, unique per practice area):', 'roden-law' ); ?></strong></label><br>
+        <textarea id="roden_hero_intro" name="_roden_hero_intro"
+                  rows="3" style="width:100%;"><?php echo esc_textarea( $value ); ?></textarea>
+    </p>
+    <p class="description"><?php esc_html_e( 'Displayed below the H1 in the hero section. Should summarize the practice area.', 'roden-law' ); ?></p>
+    <?php
+}
+
+/** Why Hire section content meta box. */
+function roden_pa_why_hire_meta_box( $post ) {
+    wp_nonce_field( 'roden_pa_why_hire_nonce', '_roden_pa_why_hire_nonce' );
+    $value = get_post_meta( $post->ID, '_roden_why_hire', true );
+    wp_editor( $value, 'roden_why_hire_editor', array(
+        'textarea_name' => '_roden_why_hire',
+        'textarea_rows' => 8,
+        'media_buttons' => false,
+        'teeny'         => true,
+    ) );
+    ?>
+    <p class="description"><?php esc_html_e( '2-3 paragraphs explaining why this specific type of case needs an attorney. Must be unique per practice area.', 'roden-law' ); ?></p>
+    <?php
+}
+
+/** Common Causes repeater meta box. */
+function roden_pa_common_causes_meta_box( $post ) {
+    wp_nonce_field( 'roden_pa_common_causes_nonce', '_roden_pa_common_causes_nonce' );
+    $causes = get_post_meta( $post->ID, '_roden_common_causes', true );
+    if ( ! is_array( $causes ) || empty( $causes ) ) {
+        $causes = array( '' );
+    }
+    ?>
+    <div id="roden-causes-container">
+        <?php foreach ( $causes as $i => $cause ) : ?>
+            <div class="roden-repeater-row" style="margin-bottom:6px;display:flex;gap:8px;align-items:center;">
+                <input type="text" name="_roden_common_causes[]"
+                       value="<?php echo esc_attr( $cause ); ?>" style="flex:1;"
+                       placeholder="e.g. Distracted driving">
+                <span class="roden-remove-row" style="cursor:pointer;color:#a00;font-size:18px;" title="Remove">&times;</span>
+            </div>
+        <?php endforeach; ?>
+    </div>
+    <button type="button" class="button" id="roden-add-cause"><?php esc_html_e( '+ Add Cause', 'roden-law' ); ?></button>
+    <p class="description"><?php esc_html_e( 'Common causes specific to this practice area. Displayed in a 2-column list.', 'roden-law' ); ?></p>
+    <?php
+}
+
+/** Common Injuries repeater meta box. */
+function roden_pa_common_injuries_meta_box( $post ) {
+    wp_nonce_field( 'roden_pa_common_injuries_nonce', '_roden_pa_common_injuries_nonce' );
+    $injuries = get_post_meta( $post->ID, '_roden_common_injuries', true );
+    if ( ! is_array( $injuries ) || empty( $injuries ) ) {
+        $injuries = array( array( 'name' => '', 'description' => '' ) );
+    }
+    ?>
+    <div id="roden-injuries-container">
+        <?php foreach ( $injuries as $i => $injury ) : ?>
+            <div class="roden-repeater-row" style="margin-bottom:10px;padding:10px;background:#f9f9f9;border:1px solid #ddd;position:relative;">
+                <span class="roden-remove-row" style="position:absolute;top:5px;right:8px;cursor:pointer;color:#a00;font-size:18px;" title="Remove">&times;</span>
+                <p>
+                    <label><strong><?php esc_html_e( 'Injury Name:', 'roden-law' ); ?></strong></label><br>
+                    <input type="text" name="_roden_common_injuries[<?php echo (int) $i; ?>][name]"
+                           value="<?php echo esc_attr( $injury['name'] ?? '' ); ?>" style="width:100%;"
+                           placeholder="e.g. Traumatic Brain Injury (TBI)">
+                </p>
+                <p>
+                    <label><strong><?php esc_html_e( 'Description:', 'roden-law' ); ?></strong></label><br>
+                    <textarea name="_roden_common_injuries[<?php echo (int) $i; ?>][description]"
+                              rows="2" style="width:100%;"
+                              placeholder="Brief description of the injury and its long-term effects."><?php echo esc_textarea( $injury['description'] ?? '' ); ?></textarea>
+                </p>
+            </div>
+        <?php endforeach; ?>
+    </div>
+    <button type="button" class="button" id="roden-add-injury"><?php esc_html_e( '+ Add Injury', 'roden-law' ); ?></button>
+    <p class="description"><?php esc_html_e( 'Common injuries for this practice area. Include 1-2 sentence descriptions per injury.', 'roden-law' ); ?></p>
     <?php
 }
 
@@ -637,6 +753,15 @@ function roden_case_details_meta_box( $post ) {
                 </select>
             </td>
         </tr>
+        <tr>
+            <th><label for="roden_result_initial_offer"><?php esc_html_e( 'Initial Insurance Offer', 'roden-law' ); ?></label></th>
+            <td>
+                <input type="text" id="roden_result_initial_offer" name="_roden_result_initial_offer"
+                       value="<?php echo esc_attr( get_post_meta( $post->ID, '_roden_result_initial_offer', true ) ); ?>"
+                       placeholder="$15,000" class="regular-text">
+                <p class="description"><?php esc_html_e( 'Optional. Insurance company\'s initial offer for before/after comparison display.', 'roden-law' ); ?></p>
+            </td>
+        </tr>
     </table>
     <?php
 }
@@ -703,6 +828,57 @@ function roden_save_meta_fields( $post_id ) {
             }
         }
         update_post_meta( $post_id, '_roden_faqs', $clean );
+    }
+
+    /* ── Practice Area: Hero Intro ──────────────────────────────── */
+
+    if ( isset( $_POST['_roden_pa_hero_intro_nonce'] ) &&
+         wp_verify_nonce( $_POST['_roden_pa_hero_intro_nonce'], 'roden_pa_hero_intro_nonce' ) ) {
+        update_post_meta( $post_id, '_roden_hero_intro',
+            sanitize_textarea_field( $_POST['_roden_hero_intro'] ?? '' ) );
+    }
+
+    /* ── Practice Area: Why Hire ────────────────────────────────── */
+
+    if ( isset( $_POST['_roden_pa_why_hire_nonce'] ) &&
+         wp_verify_nonce( $_POST['_roden_pa_why_hire_nonce'], 'roden_pa_why_hire_nonce' ) ) {
+        update_post_meta( $post_id, '_roden_why_hire',
+            wp_kses_post( $_POST['_roden_why_hire'] ?? '' ) );
+    }
+
+    /* ── Practice Area: Common Causes ───────────────────────────── */
+
+    if ( isset( $_POST['_roden_pa_common_causes_nonce'] ) &&
+         wp_verify_nonce( $_POST['_roden_pa_common_causes_nonce'], 'roden_pa_common_causes_nonce' ) ) {
+        $raw = $_POST['_roden_common_causes'] ?? array();
+        $clean = array();
+        if ( is_array( $raw ) ) {
+            foreach ( $raw as $cause ) {
+                $cause = sanitize_text_field( $cause );
+                if ( $cause ) {
+                    $clean[] = $cause;
+                }
+            }
+        }
+        update_post_meta( $post_id, '_roden_common_causes', $clean );
+    }
+
+    /* ── Practice Area: Common Injuries ─────────────────────────── */
+
+    if ( isset( $_POST['_roden_pa_common_injuries_nonce'] ) &&
+         wp_verify_nonce( $_POST['_roden_pa_common_injuries_nonce'], 'roden_pa_common_injuries_nonce' ) ) {
+        $raw = $_POST['_roden_common_injuries'] ?? array();
+        $clean = array();
+        if ( is_array( $raw ) ) {
+            foreach ( $raw as $injury ) {
+                $name = sanitize_text_field( $injury['name'] ?? '' );
+                $desc = sanitize_textarea_field( $injury['description'] ?? '' );
+                if ( $name ) {
+                    $clean[] = array( 'name' => $name, 'description' => $desc );
+                }
+            }
+        }
+        update_post_meta( $post_id, '_roden_common_injuries', $clean );
     }
 
     /* ── Location: Neighborhood ─────────────────────────────────── */
@@ -837,5 +1013,8 @@ function roden_save_meta_fields( $post_id ) {
 
         update_post_meta( $post_id, '_roden_attorney',
             absint( $_POST['_roden_attorney'] ?? 0 ) );
+
+        update_post_meta( $post_id, '_roden_result_initial_offer',
+            sanitize_text_field( $_POST['_roden_result_initial_offer'] ?? '' ) );
     }
 }

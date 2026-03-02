@@ -28,9 +28,15 @@ $is_pillar       = ! $is_intersection && ! $is_subtype;
 $jurisdiction  = get_post_meta( $post_id, '_roden_jurisdiction', true ) ?: 'both';
 $sol_ga        = get_post_meta( $post_id, '_roden_sol_ga', true );
 $sol_sc        = get_post_meta( $post_id, '_roden_sol_sc', true );
-$sub_types_raw = get_post_meta( $post_id, '_roden_sub_types', true );
-$author_id     = get_post_meta( $post_id, '_roden_author_attorney', true );
-$sub_types     = $sub_types_raw ? array_filter( array_map( 'trim', explode( "\n", $sub_types_raw ) ) ) : [];
+$sub_types_raw     = get_post_meta( $post_id, '_roden_sub_types', true );
+$author_id         = get_post_meta( $post_id, '_roden_author_attorney', true );
+$sub_types         = $sub_types_raw ? array_filter( array_map( 'trim', explode( "\n", $sub_types_raw ) ) ) : [];
+$hero_intro        = get_post_meta( $post_id, '_roden_hero_intro', true );
+$why_hire          = get_post_meta( $post_id, '_roden_why_hire', true );
+$common_causes     = get_post_meta( $post_id, '_roden_common_causes', true );
+$common_injuries   = get_post_meta( $post_id, '_roden_common_injuries', true );
+if ( ! is_array( $common_causes ) )  $common_causes  = array();
+if ( ! is_array( $common_injuries ) ) $common_injuries = array();
 
 $jurisdiction_label = 'Georgia & South Carolina';
 if ( $jurisdiction === 'ga' ) $jurisdiction_label = 'Georgia';
