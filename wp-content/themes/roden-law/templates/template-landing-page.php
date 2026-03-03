@@ -1097,49 +1097,14 @@ $tel   = $firm['phone_raw'];
     </div>
 </section>
 
-<!-- ===== TESTIMONIALS ===== -->
-<!-- Testimonials are placeholder content — replace with verified client testimonials -->
+<!-- ===== TESTIMONIALS — Google Reviews via Trustindex ===== -->
 <section class="testimonials-section">
     <div class="section-inner">
         <div class="section-eyebrow" style="text-align:center;">Client Stories</div>
         <h2 class="section-title" style="text-align:center;">What Our Clients Say</h2>
         <p class="section-sub" style="text-align:center; margin: 0 auto 48px;">Hear from real South Carolina families we've helped after car accidents.</p>
 
-        <div class="testimonial-grid">
-            <div class="testimonial-card">
-                <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <p class="testimonial-text">&ldquo;After my accident on I-26, I didn't know where to turn. Roden Law took over everything &mdash; the insurance calls, the paperwork, all of it. They got me a settlement that covered all my medical bills and then some.&rdquo;</p>
-                <div class="testimonial-author">
-                    <div class="testimonial-avatar">JM</div>
-                    <div>
-                        <div class="testimonial-name">James M.</div>
-                        <div class="testimonial-location">Columbia, SC</div>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <p class="testimonial-text">&ldquo;I was rear-ended at a red light and couldn't work for three months. Roden Law fought the insurance company and got me compensation for my lost wages, medical treatment, and pain and suffering.&rdquo;</p>
-                <div class="testimonial-author">
-                    <div class="testimonial-avatar">SR</div>
-                    <div>
-                        <div class="testimonial-name">Sandra R.</div>
-                        <div class="testimonial-location">Charleston, SC</div>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <p class="testimonial-text">&ldquo;The other driver's insurance offered me $8,000. Roden Law told me my case was worth much more &mdash; and they were right. They got me over 10 times what the insurance company originally offered.&rdquo;</p>
-                <div class="testimonial-author">
-                    <div class="testimonial-avatar">DT</div>
-                    <div>
-                        <div class="testimonial-name">David T.</div>
-                        <div class="testimonial-location">Greenville, SC</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php echo do_shortcode( '[trustindex data-widget-id="fe3ce9843b72815ccc26abe2c19"]' ); ?>
     </div>
 </section>
 
