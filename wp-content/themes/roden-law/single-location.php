@@ -60,7 +60,6 @@ if ( $is_state_page ) :
                 </p>
                 <div class="hero-buttons">
                     <a href="tel:<?php echo esc_attr($firm['phone_e164']); ?>" class="btn btn-primary">📞 Call <?php echo esc_html($firm['phone']); ?></a>
-                    <a href="<?php echo esc_url( home_url('/contact/') ); ?>" class="btn btn-outline-light">Free Case Review</a>
                 </div>
             </div>
             <div class="hero-map-form">

@@ -93,9 +93,6 @@ $practice_areas = array(
                             );
                             ?>
                         </a>
-                        <a href="#free-case-review" class="btn btn-outline-white btn-lg">
-                            <?php esc_html_e( 'Free Case Review', 'roden-law' ); ?>
-                        </a>
                     </div>
                 </div>
 

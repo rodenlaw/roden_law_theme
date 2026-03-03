@@ -67,7 +67,6 @@ $linkedin  = isset( $linkedin ) ? $linkedin : '';
                     <?php if ( $office ) : ?>
                         <a href="tel:<?php echo esc_attr( $firm['phone_raw'] ); ?>" class="btn btn-primary btn-lg">&#128222; <?php echo esc_html( $firm['vanity_phone'] ); ?></a>
                     <?php endif; ?>
-                    <a href="#contact" class="btn btn-outline-light btn-lg">Free Consultation</a>
                 </div>
             </div>
 

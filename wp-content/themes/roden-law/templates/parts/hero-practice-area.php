@@ -32,7 +32,6 @@ $jurisdiction_label = isset( $jurisdiction_label ) ? $jurisdiction_label : 'Geor
 
                 <div class="hero-actions">
                     <a href="tel:<?php echo esc_attr( $firm['phone_e164'] ); ?>" class="btn btn-primary btn-lg">&#128222; Call <?php echo esc_html( $firm['phone'] ); ?></a>
-                    <a href="#contact" class="btn btn-outline-light btn-lg">Free Case Review</a>
                 </div>
             </div>
             <div class="hero-form">

@@ -158,7 +158,6 @@ roden_json_ld( $legal_service_schema );
                     <a href="tel:<?php echo esc_attr( $office['phone_raw'] ); ?>" class="btn btn-primary btn-lg">
                         Call <?php echo esc_html( $office['phone'] ); ?>
                     </a>
-                    <a href="#free-case-review" class="btn btn-outline-light btn-lg">Free Case Review</a>
                 </div>
             </div>
 
