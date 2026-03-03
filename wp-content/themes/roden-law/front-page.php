@@ -333,19 +333,8 @@ $practice_areas = array(
 
 
     <!-- ============================================================
-         TESTIMONIALS — Carousel with Social Proof
+         TESTIMONIALS — Google Reviews via Trustindex
          ============================================================ -->
-    <?php
-    $testimonial_query = new WP_Query( array(
-        'post_type'      => 'testimonial',
-        'posts_per_page' => 6,
-        'orderby'        => 'date',
-        'order'          => 'DESC',
-    ) );
-
-    if ( $testimonial_query->have_posts() ) :
-        $testimonial_count = $testimonial_query->post_count;
-    ?>
     <section class="section section-alt" id="testimonials">
         <div class="site-container">
             <div class="testimonial-social-proof">
@@ -354,41 +343,9 @@ $practice_areas = array(
                 <p><?php esc_html_e( 'Our clients trust us to fight for maximum compensation.', 'roden-law' ); ?></p>
             </div>
 
-            <div class="testimonial-carousel" data-total="<?php echo esc_attr( $testimonial_count ); ?>">
-                <div class="testimonial-track">
-                    <?php while ( $testimonial_query->have_posts() ) : $testimonial_query->the_post(); ?>
-                        <div class="card testimonial-card">
-                            <div class="testimonial-text">
-                                <?php the_content(); ?>
-                            </div>
-                            <div class="testimonial-footer">
-                                <p class="author"><?php the_title(); ?></p>
-                                <div class="stars" aria-label="<?php esc_attr_e( '5 star rating', 'roden-law' ); ?>">
-                                    &#9733;&#9733;&#9733;&#9733;&#9733;
-                                </div>
-                            </div>
-                        </div>
-                    <?php endwhile; ?>
-                </div>
-                <?php if ( $testimonial_count > 3 ) : ?>
-                <div class="testimonial-dots">
-                    <?php
-                    $total_pages = ceil( $testimonial_count / 3 );
-                    for ( $i = 0; $i < $total_pages; $i++ ) :
-                    ?>
-                        <button class="testimonial-dot<?php echo 0 === $i ? ' active' : ''; ?>"
-                                data-page="<?php echo esc_attr( $i ); ?>"
-                                aria-label="<?php printf( esc_attr__( 'Go to testimonial page %d', 'roden-law' ), $i + 1 ); ?>"></button>
-                    <?php endfor; ?>
-                </div>
-                <?php endif; ?>
-            </div>
+            <?php echo do_shortcode( '[trustindex data-widget-id="fe3ce9843b72815ccc26abe2c19"]' ); ?>
         </div>
     </section>
-    <?php
-    endif;
-    wp_reset_postdata();
-    ?>
 
 
     <!-- ============================================================
