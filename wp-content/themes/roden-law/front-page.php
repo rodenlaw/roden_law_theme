@@ -113,20 +113,20 @@ $practice_areas = array(
         <div class="site-container">
             <div class="badge-bar-inner">
                 <div class="badge-item">
-                    <span class="badge-icon" aria-hidden="true"></span>
-                    <span class="badge-label"><?php esc_html_e( 'State Bar of Georgia', 'roden-law' ); ?></span>
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/img-badge-state-bar-of-georgia.webp' ); ?>"
+                         alt="<?php esc_attr_e( 'State Bar of Georgia', 'roden-law' ); ?>" loading="lazy" width="120" height="60">
                 </div>
                 <div class="badge-item">
-                    <span class="badge-icon" aria-hidden="true"></span>
-                    <span class="badge-label"><?php esc_html_e( 'American Association for Justice', 'roden-law' ); ?></span>
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/img-badge-american-association-for-justice.webp' ); ?>"
+                         alt="<?php esc_attr_e( 'American Association for Justice', 'roden-law' ); ?>" loading="lazy" width="120" height="60">
                 </div>
                 <div class="badge-item">
-                    <span class="badge-icon" aria-hidden="true"></span>
-                    <span class="badge-label"><?php esc_html_e( 'Georgia Trial Lawyers', 'roden-law' ); ?></span>
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/img-badge-gtla.webp' ); ?>"
+                         alt="<?php esc_attr_e( 'Georgia Trial Lawyers Association', 'roden-law' ); ?>" loading="lazy" width="120" height="60">
                 </div>
                 <div class="badge-item">
-                    <span class="badge-icon" aria-hidden="true"></span>
-                    <span class="badge-label"><?php esc_html_e( 'American Bar Association', 'roden-law' ); ?></span>
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/img-badge-aba.webp' ); ?>"
+                         alt="<?php esc_attr_e( 'American Bar Association', 'roden-law' ); ?>" loading="lazy" width="120" height="60">
                 </div>
             </div>
         </div>

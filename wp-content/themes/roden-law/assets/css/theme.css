@@ -1336,19 +1336,19 @@ a.sub-type-link:hover { background: var(--light); border-color: var(--orange); }
 /* ─── LOCATION PAGE — Badge Bar ───────────────────────────────────────── */
 
 .badge-bar {
-    background: var(--navy); padding: 14px 24px;
+    background: var(--navy); padding: 20px 24px;
     border-bottom: 3px solid var(--orange);
 }
 .badge-bar-inner {
     display: flex; gap: 40px; align-items: center; justify-content: center;
     flex-wrap: wrap; max-width: var(--container); margin: 0 auto;
 }
-.badge-item { display: flex; align-items: center; gap: 8px; }
-.badge-icon {
-    width: 32px; height: 32px; background: rgba(255,255,255,0.12); border-radius: 50%;
-    display: flex; align-items: center; justify-content: center; font-size: 14px;
+.badge-item { display: flex; align-items: center; }
+.badge-item img {
+    height: 50px; width: auto; object-fit: contain;
+    filter: brightness(0) invert(1); opacity: 0.85;
 }
-.badge-label { font-size: 11px; color: var(--text-light); font-weight: 600; }
+.badge-item img:hover { opacity: 1; }
 
 /* ─── LOCATION PAGE — Hero Stats (match homepage hero) ────────────────── */
 

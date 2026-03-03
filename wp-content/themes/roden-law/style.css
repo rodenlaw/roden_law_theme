@@ -526,24 +526,18 @@ input[type="submit"] {
 .badge-item {
     display: flex;
     align-items: center;
-    gap: var(--space-sm);
 }
 
-.badge-icon {
-    display: inline-block;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: var(--color-border);
-    flex-shrink: 0;
+.badge-item img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    opacity: 0.85;
 }
 
-.badge-label {
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: var(--color-gray);
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
+.badge-item img:hover {
+    opacity: 1;
 }
 
 /* ==========================================================================
@@ -2482,12 +2476,7 @@ input[type="submit"] {
         gap: var(--space-lg);
     }
 
-    .badge-label {
-        font-size: 0.7rem;
-    }
-
-    .badge-icon {
-        width: 36px;
+    .badge-item img {
         height: 36px;
     }
 
