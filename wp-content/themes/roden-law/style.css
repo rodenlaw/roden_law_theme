@@ -261,7 +261,7 @@ blockquote {
 .main-navigation a {
     color: var(--color-white);
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 1.235rem;
     padding: var(--space-sm) var(--space-md);
     border-radius: var(--border-radius);
     transition: background-color 0.2s ease, color 0.2s ease;
