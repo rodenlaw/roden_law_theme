@@ -10,6 +10,36 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
+/* ------------------------------------------------------------------
+   Neutralize old practice-area (hyphen) CPT registered by ACF.
+   Keeps posts accessible in wp-admin but removes front-end URLs,
+   archives, and sitemap entries.
+   ------------------------------------------------------------------ */
+
+add_filter( 'register_post_type_args', 'roden_neutralize_old_practice_area_cpt', 10, 2 );
+
+function roden_neutralize_old_practice_area_cpt( $args, $post_type ) {
+    if ( 'practice-area' !== $post_type ) {
+        return $args;
+    }
+
+    $args['public']              = false;
+    $args['publicly_queryable']  = false;
+    $args['exclude_from_search'] = true;
+    $args['has_archive']         = false;
+    $args['show_ui']             = true;
+    $args['show_in_menu']        = true;
+    $args['label']               = 'Old Practice Areas (Legacy)';
+    $args['labels']['name']      = 'Old Practice Areas (Legacy)';
+    $args['labels']['menu_name'] = 'Old PAs (Legacy)';
+
+    return $args;
+}
+
+/* ------------------------------------------------------------------
+   301 Redirects — old URLs → new URLs
+   ------------------------------------------------------------------ */
+
 add_action( 'template_redirect', 'roden_legacy_content_redirects' );
 
 function roden_legacy_content_redirects() {
@@ -198,16 +228,10 @@ function roden_get_legacy_redirect_map() {
 
         // ══════════════════════════════════════════════════════════════
         // CATEGORY 7: Root-level blog posts (7 pages)
-        // Published without /blog/ prefix
+        // SKIPPED — permalink structure is /%postname%/ so these posts
+        // already live at root. Redirects would break working URLs.
+        // Re-enable after changing permalink structure to /blog/%postname%/.
         // ══════════════════════════════════════════════════════════════
-
-        '/a-pedestrians-guide-to-claiming-lost-wages-in-charleston/'          => '/blog/a-pedestrians-guide-to-claiming-lost-wages-in-charleston/',
-        '/filing-a-claim-after-a-hazmat-truck-crash-in-charleston/'           => '/blog/filing-a-claim-after-a-hazmat-truck-crash-in-charleston/',
-        '/a-practical-guide-after-a-truck-accident-in-downtown-columbia/'     => '/blog/a-practical-guide-after-a-truck-accident-in-downtown-columbia/',
-        '/how-poor-truck-maintenance-causes-charleston-accidents/'            => '/blog/how-poor-truck-maintenance-causes-charleston-accidents/',
-        '/your-guide-to-justice-after-a-charleston-truck-accident/'           => '/blog/your-guide-to-justice-after-a-charleston-truck-accident/',
-        '/a-guide-to-car-accident-claims-at-columbias-toughest-intersections/' => '/blog/a-guide-to-car-accident-claims-at-columbias-toughest-intersections/',
-        '/protecting-your-rights-after-a-myrtle-beach-car-accident/'         => '/blog/protecting-your-rights-after-a-myrtle-beach-car-accident/',
 
     );
 }
