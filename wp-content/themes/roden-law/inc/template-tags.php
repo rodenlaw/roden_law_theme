@@ -600,7 +600,7 @@ function roden_contact_form_sidebar( $local_phone = '' ) {
     ?>
     <div class="sidebar-contact-form">
         <h3 class="form-title">Free Case Review</h3>
-        <p class="form-subtitle">No fees unless we win &bull; 500+ 5-star reviews</p>
+        <p class="form-subtitle">No fees unless we win<br>500+ 5-star reviews</p>
         <form class="roden-contact-form" method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
             <input type="hidden" name="action" value="roden_contact_form">
             <?php wp_nonce_field( 'roden_contact', '_roden_contact_nonce' ); ?>
