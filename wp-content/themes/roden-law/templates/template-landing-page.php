@@ -933,41 +933,6 @@ $tel   = $firm['phone_raw'];
     </div>
 </div>
 
-<!-- ===== SOCIAL PROOF BAR ===== -->
-<!-- Trust badge logos are text placeholders until real badge images are available -->
-<div class="proof-bar">
-    <div class="proof-bar-inner">
-        <div class="proof-item">
-            <div class="proof-logo">SUPER<br>LWRS</div>
-            <div>
-                <div class="proof-text">Super Lawyers</div>
-                <div class="proof-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            </div>
-        </div>
-        <div class="proof-item">
-            <div class="proof-logo">AVVO</div>
-            <div>
-                <div class="proof-text">Avvo 10.0 Rated</div>
-                <div class="proof-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            </div>
-        </div>
-        <div class="proof-item">
-            <div class="proof-logo" style="font-size:9px;">BEST<br>LWRS</div>
-            <div>
-                <div class="proof-text">Best Lawyers in America</div>
-                <div class="proof-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            </div>
-        </div>
-        <div class="proof-item">
-            <div class="proof-logo" style="font-size:9px;">GOOGLE</div>
-            <div>
-                <div class="proof-text">Google Reviews</div>
-                <div class="proof-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            </div>
-        </div>
-    </div>
-</div>
-
 <!-- ===== WHY CHOOSE RODEN LAW ===== -->
 <section class="why-section">
     <div class="section-inner">
