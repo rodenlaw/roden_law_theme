@@ -46,7 +46,7 @@ $linkedin  = isset( $linkedin ) ? $linkedin : '';
                     <span class="attorney-hero-title"><?php echo esc_html( $title ); ?></span>
                 <?php endif; ?>
                 <?php if ( $office ) : ?>
-                    <span class="attorney-hero-office">&#128205; <?php echo esc_html( $office['city'] . ', ' . $office['state'] ); ?> — <?php echo esc_html( $office['phone'] ); ?></span>
+                    <span class="attorney-hero-office">&#128205; <?php echo esc_html( $office['city'] . ', ' . $office['state'] ); ?> — <?php echo esc_html( $firm['vanity_phone'] ); ?></span>
                 <?php endif; ?>
 
                 <div class="bar-badges">
@@ -65,7 +65,7 @@ $linkedin  = isset( $linkedin ) ? $linkedin : '';
 
                 <div class="hero-actions">
                     <?php if ( $office ) : ?>
-                        <a href="tel:<?php echo esc_attr( $office['phone_e164'] ); ?>" class="btn btn-primary btn-lg">&#128222; <?php echo esc_html( $office['phone'] ); ?></a>
+                        <a href="tel:<?php echo esc_attr( $firm['phone_raw'] ); ?>" class="btn btn-primary btn-lg">&#128222; <?php echo esc_html( $firm['vanity_phone'] ); ?></a>
                     <?php endif; ?>
                     <a href="#contact" class="btn btn-outline-light btn-lg">Free Consultation</a>
                 </div>

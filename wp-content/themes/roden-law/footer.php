@@ -13,6 +13,9 @@ defined( 'ABSPATH' ) || exit;
 $firm  = roden_firm_data();
 $year  = gmdate( 'Y' );
 
+// Location and neighborhood pages show local office phones; all others show vanity number.
+$is_local_page = is_singular( 'location' );
+
 // Practice areas for footer links (matches homepage featured grid)
 $footer_practice_areas = array(
     'Car Accidents'        => 'car-accident-lawyers',
@@ -107,8 +110,8 @@ $footer_practice_areas = array(
                             <h5><?php echo esc_html( $office['city'] . ', ' . $office['state'] ); ?></h5>
                             <address>
                                 <?php echo esc_html( $office['street'] ); ?><br>
-                                <a href="tel:<?php echo esc_attr( $office['phone_raw'] ); ?>">
-                                    <?php echo esc_html( $office['phone'] ); ?>
+                                <a href="tel:<?php echo esc_attr( $is_local_page ? $office['phone_raw'] : $firm['phone_raw'] ); ?>">
+                                    <?php echo esc_html( $is_local_page ? $office['phone'] : $firm['vanity_phone'] ); ?>
                                 </a>
                             </address>
                         </div>
