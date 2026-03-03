@@ -171,6 +171,28 @@
         });
     }
 
+    /* ── Results Carousel Arrows ──────────────────────────────── */
+
+    document.querySelectorAll('.results-carousel').forEach(function (carousel) {
+        var track = carousel.querySelector('.results-track');
+        var leftBtn = carousel.querySelector('.results-arrow-left');
+        var rightBtn = carousel.querySelector('.results-arrow-right');
+        if (!track) return;
+
+        var scrollAmount = 280;
+
+        if (leftBtn) {
+            leftBtn.addEventListener('click', function () {
+                track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            });
+        }
+        if (rightBtn) {
+            rightBtn.addEventListener('click', function () {
+                track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            });
+        }
+    });
+
     /* ── Sticky Mobile CTA Bar ────────────────────────────────── */
 
     var mobileCta = document.querySelector('.pa-mobile-cta');

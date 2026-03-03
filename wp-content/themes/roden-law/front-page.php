@@ -280,35 +280,40 @@ $practice_areas = array(
                 <h2 class="text-white"><?php esc_html_e( 'Our Results Speak for Themselves', 'roden-law' ); ?></h2>
             </div>
 
-            <div class="results-grid">
-                <?php foreach ( $featured_results as $result ) : ?>
-                    <div class="card case-result-card case-result-card-dark">
-                        <span class="case-type"><?php echo esc_html( $result['type'] ); ?></span>
-                        <span class="case-offer"><?php esc_html_e( 'Insurance Offered:', 'roden-law' ); ?> <?php echo esc_html( $result['offer'] ); ?></span>
-                        <span class="amount"><?php echo esc_html( $result['amount'] ); ?></span>
-                        <span class="case-multiplier"><?php echo esc_html( $result['multiplier'] ); ?> <?php esc_html_e( 'More', 'roden-law' ); ?></span>
-                    </div>
-                <?php endforeach; ?>
-            </div>
+            <div class="results-carousel">
+                <button class="results-arrow results-arrow-left" aria-label="<?php esc_attr_e( 'Scroll left', 'roden-law' ); ?>">&lsaquo;</button>
+                <div class="results-track">
+                    <?php foreach ( $featured_results as $result ) : ?>
+                        <div class="card case-result-card case-result-card-dark">
+                            <span class="case-type"><?php echo esc_html( $result['type'] ); ?></span>
+                            <span class="case-offer"><?php esc_html_e( 'Insurance Offered:', 'roden-law' ); ?> <?php echo esc_html( $result['offer'] ); ?></span>
+                            <span class="amount"><?php echo esc_html( $result['amount'] ); ?></span>
+                            <span class="case-multiplier"><?php echo esc_html( $result['multiplier'] ); ?> <?php esc_html_e( 'More', 'roden-law' ); ?></span>
+                        </div>
+                    <?php endforeach; ?>
 
-            <?php
-            // Also try to pull from published case_result CPT posts
-            $case_query = new WP_Query( array(
-                'post_type'      => 'case_result',
-                'posts_per_page' => 4,
-                'orderby'        => 'meta_value_num',
-                'meta_key'       => '_roden_case_amount',
-                'order'          => 'DESC',
-            ) );
+                    <?php
+                    // Also pull from published case_result CPT posts (skip $0 amounts)
+                    $case_query = new WP_Query( array(
+                        'post_type'      => 'case_result',
+                        'posts_per_page' => 20,
+                        'orderby'        => 'meta_value_num',
+                        'meta_key'       => '_roden_case_amount',
+                        'order'          => 'DESC',
+                        'meta_query'     => array(
+                            array(
+                                'key'     => '_roden_case_amount',
+                                'value'   => '0',
+                                'compare' => '>',
+                                'type'    => 'NUMERIC',
+                            ),
+                        ),
+                    ) );
 
-            if ( $case_query->have_posts() ) : ?>
-                <div class="results-grid results-grid-cpt" style="margin-top: var(--space-xl);">
-                    <?php while ( $case_query->have_posts() ) : $case_query->the_post();
+                    while ( $case_query->have_posts() ) : $case_query->the_post();
                         $amount = get_post_meta( get_the_ID(), '_roden_case_amount', true );
                         $type   = get_post_meta( get_the_ID(), '_roden_case_type', true );
-                        if ( $amount ) :
-                            // Format amount as currency
-                            $formatted = '$' . number_format( (float) $amount );
+                        $formatted = '$' . number_format( (float) $amount );
                     ?>
                         <div class="card case-result-card case-result-card-dark">
                             <?php if ( $type ) : ?>
@@ -317,12 +322,12 @@ $practice_areas = array(
                             <span class="amount"><?php echo esc_html( $formatted ); ?></span>
                             <span class="case-description"><?php the_title(); ?></span>
                         </div>
-                    <?php endif; endwhile; ?>
+                    <?php endwhile;
+                    wp_reset_postdata();
+                    ?>
                 </div>
-            <?php
-            endif;
-            wp_reset_postdata();
-            ?>
+                <button class="results-arrow results-arrow-right" aria-label="<?php esc_attr_e( 'Scroll right', 'roden-law' ); ?>">&rsaquo;</button>
+            </div>
         </div>
     </section>
 
