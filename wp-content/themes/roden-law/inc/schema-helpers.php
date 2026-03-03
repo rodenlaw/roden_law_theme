@@ -302,7 +302,7 @@ function roden_schema_person( $firm ) {
         '@id'         => get_permalink() . '#person',
         'name'        => get_the_title(),
         'url'         => get_permalink(),
-        'description' => get_the_excerpt() ?: wp_trim_words( get_the_content(), 30 ),
+        'description' => html_entity_decode( wp_strip_all_tags( get_the_excerpt() ?: wp_trim_words( get_the_content(), 30 ) ), ENT_QUOTES, 'UTF-8' ),
         'worksFor'    => $works_for,
     );
 
