@@ -101,62 +101,7 @@ $practice_areas = array(
 
                 <!-- Hero Contact Form -->
                 <div class="hero-form" id="free-case-review">
-                    <div class="hero-form-inner hero-form-light">
-                        <h2 class="hero-form-title"><?php esc_html_e( 'Free Case Review', 'roden-law' ); ?></h2>
-                        <p class="hero-form-subtitle"><?php esc_html_e( 'No fees unless we win', 'roden-law' ); ?> &bull; <?php esc_html_e( '500+ 5-star reviews', 'roden-law' ); ?></p>
-
-                        <?php
-                        if ( shortcode_exists( 'gravityform' ) ) {
-                            echo do_shortcode( '[gravityform id="1" title="false" description="false" ajax="true"]' );
-                        } elseif ( shortcode_exists( 'wpforms' ) ) {
-                            echo do_shortcode( '[wpforms id="1" title="false" description="false"]' );
-                        } else {
-                            // Fallback form
-                            ?>
-                            <form class="hero-contact-form" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="post">
-                                <div class="form-group">
-                                    <input type="text" name="full_name"
-                                           placeholder="<?php esc_attr_e( 'Full Name', 'roden-law' ); ?>" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" name="email"
-                                           placeholder="<?php esc_attr_e( 'Email', 'roden-law' ); ?>">
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group">
-                                        <input type="tel" name="phone"
-                                               placeholder="<?php esc_attr_e( 'Phone', 'roden-law' ); ?>" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" name="zip" inputmode="numeric" pattern="[0-9]{5}"
-                                               placeholder="<?php esc_attr_e( 'Zip Code', 'roden-law' ); ?>">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <select name="case_type" required>
-                                        <option value="" disabled selected><?php esc_attr_e( 'Case Type', 'roden-law' ); ?></option>
-                                        <option value="car-accident"><?php esc_html_e( 'Car Accident', 'roden-law' ); ?></option>
-                                        <option value="truck-accident"><?php esc_html_e( 'Truck Accident', 'roden-law' ); ?></option>
-                                        <option value="motorcycle-accident"><?php esc_html_e( 'Motorcycle Accident', 'roden-law' ); ?></option>
-                                        <option value="pedestrian-accident"><?php esc_html_e( 'Pedestrian Accident', 'roden-law' ); ?></option>
-                                        <option value="other"><?php esc_html_e( 'Other Personal Injury', 'roden-law' ); ?></option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="description" rows="3"
-                                              placeholder="<?php esc_attr_e( 'Tell us what happened...', 'roden-law' ); ?>"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-cta-submit">
-                                        <?php esc_html_e( 'Review My Case', 'roden-law' ); ?>
-                                    </button>
-                                </div>
-                                <p class="hero-form-trust"><?php esc_html_e( '100% Free', 'roden-law' ); ?> &bull; <?php esc_html_e( 'No Obligation', 'roden-law' ); ?> &bull; <?php esc_html_e( 'Confidential', 'roden-law' ); ?></p>
-                            </form>
-                            <?php
-                        }
-                        ?>
-                    </div>
+                    <?php roden_contact_form_sidebar(); ?>
                 </div>
 
             </div><!-- .hero-grid -->
