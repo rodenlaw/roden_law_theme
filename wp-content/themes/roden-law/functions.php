@@ -24,6 +24,7 @@ require_once get_template_directory() . '/inc/template-tags.php';
 require_once get_template_directory() . '/inc/nav-menus.php';
 require_once get_template_directory() . '/inc/enqueue.php';
 require_once get_template_directory() . '/inc/meta-boxes.php';
+require_once get_template_directory() . '/inc/legacy-redirects.php';
 
 // Belt-and-suspenders: verify template-tags loaded (require retries if require_once cached a failure)
 if ( ! function_exists( 'roden_breadcrumb_html' ) ) {

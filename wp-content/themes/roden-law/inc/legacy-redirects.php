@@ -1,0 +1,213 @@
+<?php
+/**
+ * Roden Law — Legacy Content Redirects
+ *
+ * 301 redirects for old practice-area CPT pages → new practice_area CPT pages.
+ * Generated March 2026 from dev site audit.
+ *
+ * TOTAL: 122 redirects across 7 categories
+ */
+
+if ( ! defined( 'ABSPATH' ) ) exit;
+
+add_action( 'template_redirect', 'roden_legacy_content_redirects' );
+
+function roden_legacy_content_redirects() {
+    $request = rtrim( $_SERVER['REQUEST_URI'], '/' ) . '/';
+
+    // Strip query strings for matching
+    $clean_path = strtok( $request, '?' );
+    $clean_path = rtrim( $clean_path, '/' ) . '/';
+
+    $redirects = roden_get_legacy_redirect_map();
+
+    if ( isset( $redirects[ $clean_path ] ) ) {
+        wp_redirect( home_url( $redirects[ $clean_path ] ), 301 );
+        exit;
+    }
+}
+
+function roden_get_legacy_redirect_map() {
+    return array(
+
+        // ══════════════════════════════════════════════════════════════
+        // CATEGORY 1: Old pillar pages with different slugs (6 pages)
+        // ══════════════════════════════════════════════════════════════
+
+        '/practice-areas/maritime-lawyers/'              => '/practice-areas/maritime-injury-lawyers/',
+        '/practice-areas/medical-malpractice-attorneys/'  => '/practice-areas/medical-malpractice-lawyers/',
+        '/practice-areas/nursing-home-abuse-attorneys/'   => '/practice-areas/nursing-home-abuse-lawyers/',
+        '/practice-areas/slip-and-fall-attorneys/'        => '/practice-areas/slip-and-fall-lawyers/',
+        '/practice-areas/personal-injury-lawyers/'        => '/practice-areas/',
+        '/practice-areas/coronavirus-business-claims/'    => '/',
+
+        // ══════════════════════════════════════════════════════════════
+        // CATEGORY 2: Savannah old intersection pages (18 pages)
+        // Old: /practice-areas/savannah/[slug]/
+        // New: /practice-areas/[slug]/savannah-ga/
+        // ══════════════════════════════════════════════════════════════
+
+        '/practice-areas/savannah/car-accident-lawyers/'          => '/practice-areas/car-accident-lawyers/savannah-ga/',
+        '/practice-areas/savannah/truck-accident-lawyers/'        => '/practice-areas/truck-accident-lawyers/savannah-ga/',
+        '/practice-areas/savannah/slip-and-fall-attorneys/'       => '/practice-areas/slip-and-fall-lawyers/savannah-ga/',
+        '/practice-areas/savannah/motorcycle-accident-lawyers/'   => '/practice-areas/motorcycle-accident-lawyers/savannah-ga/',
+        '/practice-areas/savannah/medical-malpractice-attorneys/' => '/practice-areas/medical-malpractice-lawyers/savannah-ga/',
+        '/practice-areas/savannah/wrongful-death-lawyers/'        => '/practice-areas/wrongful-death-lawyers/savannah-ga/',
+        '/practice-areas/savannah/workers-compensation-lawyers/'  => '/practice-areas/workers-compensation-lawyers/savannah-ga/',
+        '/practice-areas/savannah/dog-bite-lawyers/'              => '/practice-areas/dog-bite-lawyers/savannah-ga/',
+        '/practice-areas/savannah/brain-injury-lawyers/'          => '/practice-areas/brain-injury-lawyers/savannah-ga/',
+        '/practice-areas/savannah/spinal-cord-injury-lawyers/'    => '/practice-areas/spinal-cord-injury-lawyers/savannah-ga/',
+        '/practice-areas/savannah/maritime-lawyers/'              => '/practice-areas/maritime-injury-lawyers/savannah-ga/',
+        '/practice-areas/savannah/product-liability-lawyers/'     => '/practice-areas/product-liability-lawyers/savannah-ga/',
+        '/practice-areas/savannah/boating-accident-lawyers/'      => '/practice-areas/boating-accident-lawyers/savannah-ga/',
+        '/practice-areas/savannah/burn-injury-lawyers/'           => '/practice-areas/burn-injury-lawyers/savannah-ga/',
+        '/practice-areas/savannah/construction-accident-lawyers/' => '/practice-areas/construction-accident-lawyers/savannah-ga/',
+        '/practice-areas/savannah/nursing-home-abuse-attorneys/'  => '/practice-areas/nursing-home-abuse-lawyers/savannah-ga/',
+        '/practice-areas/savannah/personal-injury-lawyers/'       => '/practice-areas/car-accident-lawyers/savannah-ga/',
+        '/practice-areas/savannah/coronavirus-business-claims/'   => '/practice-areas/car-accident-lawyers/savannah-ga/',
+
+        // ══════════════════════════════════════════════════════════════
+        // CATEGORY 3: Charleston old intersection pages (16 pages)
+        // Old: /practice-areas/charleston/[slug]/
+        // New: /practice-areas/[slug]/charleston-sc/
+        // ══════════════════════════════════════════════════════════════
+
+        '/practice-areas/charleston/car-accident-lawyers/'          => '/practice-areas/car-accident-lawyers/charleston-sc/',
+        '/practice-areas/charleston/truck-accident-lawyers/'        => '/practice-areas/truck-accident-lawyers/charleston-sc/',
+        '/practice-areas/charleston/slip-and-fall-lawyer/'          => '/practice-areas/slip-and-fall-lawyers/charleston-sc/',
+        '/practice-areas/charleston/motorcycle-accident-lawyers/'   => '/practice-areas/motorcycle-accident-lawyers/charleston-sc/',
+        '/practice-areas/charleston/medical-malpractice-attorney/'  => '/practice-areas/medical-malpractice-lawyers/charleston-sc/',
+        '/practice-areas/charleston/wrongful-death-lawyers/'        => '/practice-areas/wrongful-death-lawyers/charleston-sc/',
+        '/practice-areas/charleston/workers-compensation-lawyer/'   => '/practice-areas/workers-compensation-lawyers/charleston-sc/',
+        '/practice-areas/charleston/dog-bite-lawyers/'              => '/practice-areas/dog-bite-lawyers/charleston-sc/',
+        '/practice-areas/charleston/brain-injury-lawyers/'          => '/practice-areas/brain-injury-lawyers/charleston-sc/',
+        '/practice-areas/charleston/spinal-cord-injury-lawyers/'    => '/practice-areas/spinal-cord-injury-lawyers/charleston-sc/',
+        '/practice-areas/charleston/product-liability-lawyers/'     => '/practice-areas/product-liability-lawyers/charleston-sc/',
+        '/practice-areas/charleston/boating-accident-lawyers/'      => '/practice-areas/boating-accident-lawyers/charleston-sc/',
+        '/practice-areas/charleston/burn-injury-lawyers/'           => '/practice-areas/burn-injury-lawyers/charleston-sc/',
+        '/practice-areas/charleston/construction-accident-lawyers/' => '/practice-areas/construction-accident-lawyers/charleston-sc/',
+        '/practice-areas/charleston/nursing-home-abuse-attorneys/'  => '/practice-areas/nursing-home-abuse-lawyers/charleston-sc/',
+        '/practice-areas/charleston/personal-injury-lawyer/'        => '/practice-areas/car-accident-lawyers/charleston-sc/',
+
+        // ══════════════════════════════════════════════════════════════
+        // CATEGORY 4a: Albany pages — no office (16 pages)
+        // Redirect to pillar pages
+        // ══════════════════════════════════════════════════════════════
+
+        '/practice-areas/albany/boating-accident-lawyers/'      => '/practice-areas/boating-accident-lawyers/',
+        '/practice-areas/albany/brain-injury-lawyers/'          => '/practice-areas/brain-injury-lawyers/',
+        '/practice-areas/albany/burn-injury-lawyer/'            => '/practice-areas/burn-injury-lawyers/',
+        '/practice-areas/albany/car-accident-lawyers/'          => '/practice-areas/car-accident-lawyers/',
+        '/practice-areas/albany/construction-accident-lawyers/' => '/practice-areas/construction-accident-lawyers/',
+        '/practice-areas/albany/dog-bite-lawyers/'              => '/practice-areas/dog-bite-lawyers/',
+        '/practice-areas/albany/medical-malpractice-attorney/'  => '/practice-areas/medical-malpractice-lawyers/',
+        '/practice-areas/albany/motorcycle-accident-lawyers/'   => '/practice-areas/motorcycle-accident-lawyers/',
+        '/practice-areas/albany/nursing-home-abuse-lawyers/'    => '/practice-areas/nursing-home-abuse-lawyers/',
+        '/practice-areas/albany/personal-injury-lawyers/'       => '/practice-areas/',
+        '/practice-areas/albany/product-liability-lawyers/'     => '/practice-areas/product-liability-lawyers/',
+        '/practice-areas/albany/slip-and-fall-lawyers/'         => '/practice-areas/slip-and-fall-lawyers/',
+        '/practice-areas/albany/spinal-cord-injury-lawyers/'    => '/practice-areas/spinal-cord-injury-lawyers/',
+        '/practice-areas/albany/truck-accident-lawyers/'        => '/practice-areas/truck-accident-lawyers/',
+        '/practice-areas/albany/workers-compensation-lawyer/'   => '/practice-areas/workers-compensation-lawyers/',
+        '/practice-areas/albany/wrongful-death-lawyers/'        => '/practice-areas/wrongful-death-lawyers/',
+
+        // ══════════════════════════════════════════════════════════════
+        // CATEGORY 4b: Brunswick pages — no office (16 pages)
+        // Redirect to pillar pages
+        // ══════════════════════════════════════════════════════════════
+
+        '/practice-areas/brunswick/boating-accident-lawyers/'      => '/practice-areas/boating-accident-lawyers/',
+        '/practice-areas/brunswick/brain-injury-lawyers/'          => '/practice-areas/brain-injury-lawyers/',
+        '/practice-areas/brunswick/burn-injury-lawyers/'           => '/practice-areas/burn-injury-lawyers/',
+        '/practice-areas/brunswick/car-accident-lawyer/'           => '/practice-areas/car-accident-lawyers/',
+        '/practice-areas/brunswick/construction-accident-lawyers/' => '/practice-areas/construction-accident-lawyers/',
+        '/practice-areas/brunswick/dog-bite-lawyers/'              => '/practice-areas/dog-bite-lawyers/',
+        '/practice-areas/brunswick/medical-malpractice-attorney/'  => '/practice-areas/medical-malpractice-lawyers/',
+        '/practice-areas/brunswick/motorcycle-accident-lawyers/'   => '/practice-areas/motorcycle-accident-lawyers/',
+        '/practice-areas/brunswick/nursing-home-abuse-lawyer/'     => '/practice-areas/nursing-home-abuse-lawyers/',
+        '/practice-areas/brunswick/personal-injury-lawyer/'        => '/practice-areas/',
+        '/practice-areas/brunswick/product-liability-lawyers/'     => '/practice-areas/product-liability-lawyers/',
+        '/practice-areas/brunswick/slip-and-fall-lawyer/'          => '/practice-areas/slip-and-fall-lawyers/',
+        '/practice-areas/brunswick/spinal-cord-injury-lawyers/'    => '/practice-areas/spinal-cord-injury-lawyers/',
+        '/practice-areas/brunswick/truck-accident-lawyers/'        => '/practice-areas/truck-accident-lawyers/',
+        '/practice-areas/brunswick/workers-compensation-attorney/' => '/practice-areas/workers-compensation-lawyers/',
+        '/practice-areas/brunswick/wrongful-death-lawyers/'        => '/practice-areas/wrongful-death-lawyers/',
+
+        // ══════════════════════════════════════════════════════════════
+        // CATEGORY 4c: Macon pages — no office (17 pages)
+        // Redirect to pillar pages
+        // ══════════════════════════════════════════════════════════════
+
+        '/practice-areas/macon/boating-accident-lawyers/'      => '/practice-areas/boating-accident-lawyers/',
+        '/practice-areas/macon/brain-injury-lawyers/'          => '/practice-areas/brain-injury-lawyers/',
+        '/practice-areas/macon/burn-injury-lawyers/'           => '/practice-areas/burn-injury-lawyers/',
+        '/practice-areas/macon/car-accident-lawyers/'          => '/practice-areas/car-accident-lawyers/',
+        '/practice-areas/macon/construction-accident-lawyers/' => '/practice-areas/construction-accident-lawyers/',
+        '/practice-areas/macon/dog-bite-lawyers/'              => '/practice-areas/dog-bite-lawyers/',
+        '/practice-areas/macon/maritime-lawyers/'              => '/practice-areas/maritime-injury-lawyers/',
+        '/practice-areas/macon/medical-malpractice-attorneys/' => '/practice-areas/medical-malpractice-lawyers/',
+        '/practice-areas/macon/motorcycle-accident-lawyers/'   => '/practice-areas/motorcycle-accident-lawyers/',
+        '/practice-areas/macon/nursing-home-abuse-attorneys/'  => '/practice-areas/nursing-home-abuse-lawyers/',
+        '/practice-areas/macon/personal-injury-lawyers/'       => '/practice-areas/',
+        '/practice-areas/macon/product-liability-lawyers/'     => '/practice-areas/product-liability-lawyers/',
+        '/practice-areas/macon/slip-and-fall-attorneys/'       => '/practice-areas/slip-and-fall-lawyers/',
+        '/practice-areas/macon/spinal-cord-injury-lawyers/'    => '/practice-areas/spinal-cord-injury-lawyers/',
+        '/practice-areas/macon/truck-accident-lawyers/'        => '/practice-areas/truck-accident-lawyers/',
+        '/practice-areas/macon/workers-compensation-lawyers/'  => '/practice-areas/workers-compensation-lawyers/',
+        '/practice-areas/macon/wrongful-death-lawyers/'        => '/practice-areas/wrongful-death-lawyers/',
+
+        // ══════════════════════════════════════════════════════════════
+        // CATEGORY 5: Savannah sub-type pages (23 pages)
+        // Unique content — redirect to closest new intersection page
+        // ══════════════════════════════════════════════════════════════
+
+        '/practice-areas/savannah/car-accident-lawyers/bike-accidents/'        => '/practice-areas/car-accident-lawyers/savannah-ga/',
+        '/practice-areas/savannah/car-accident-lawyers/bus-accidents/'         => '/practice-areas/car-accident-lawyers/savannah-ga/',
+        '/practice-areas/savannah/car-accident-lawyers/georgia-pip-insurance/' => '/practice-areas/car-accident-lawyers/savannah-ga/',
+        '/practice-areas/savannah/car-accident-lawyers/hit-and-run-accidents/' => '/practice-areas/car-accident-lawyers/savannah-ga/',
+        '/practice-areas/savannah/car-accident-lawyers/pedestrian-accidents/'  => '/practice-areas/pedestrian-accident-lawyers/savannah-ga/',
+
+        '/practice-areas/savannah/medical-malpractice-attorneys/cosmetic-surgery/'       => '/practice-areas/medical-malpractice-lawyers/savannah-ga/',
+        '/practice-areas/savannah/medical-malpractice-attorneys/dental-negligence/'      => '/practice-areas/medical-malpractice-lawyers/savannah-ga/',
+        '/practice-areas/savannah/medical-malpractice-attorneys/faq/'                    => '/practice-areas/medical-malpractice-lawyers/savannah-ga/',
+        '/practice-areas/savannah/medical-malpractice-attorneys/hospital-negligence/'    => '/practice-areas/medical-malpractice-lawyers/savannah-ga/',
+        '/practice-areas/savannah/medical-malpractice-attorneys/medication-errors/'      => '/practice-areas/medical-malpractice-lawyers/savannah-ga/',
+        '/practice-areas/savannah/medical-malpractice-attorneys/misdiagnosis/'           => '/practice-areas/medical-malpractice-lawyers/savannah-ga/',
+        '/practice-areas/savannah/medical-malpractice-attorneys/ob-gyn-negligence/'      => '/practice-areas/medical-malpractice-lawyers/savannah-ga/',
+        '/practice-areas/savannah/medical-malpractice-attorneys/orthopedic-injury/'      => '/practice-areas/medical-malpractice-lawyers/savannah-ga/',
+        '/practice-areas/savannah/medical-malpractice-attorneys/psychiatric-negligence/' => '/practice-areas/medical-malpractice-lawyers/savannah-ga/',
+        '/practice-areas/savannah/medical-malpractice-attorneys/surgical-errors/'        => '/practice-areas/medical-malpractice-lawyers/savannah-ga/',
+
+        '/practice-areas/savannah/nursing-home-abuse-attorneys/bedsores/'                    => '/practice-areas/nursing-home-abuse-lawyers/savannah-ga/',
+        '/practice-areas/savannah/nursing-home-abuse-attorneys/faqs/'                        => '/practice-areas/nursing-home-abuse-lawyers/savannah-ga/',
+        '/practice-areas/savannah/nursing-home-abuse-attorneys/malnutrition-and-dehydration/' => '/practice-areas/nursing-home-abuse-lawyers/savannah-ga/',
+        '/practice-areas/savannah/nursing-home-abuse-attorneys/resident-bill-of-rights/'     => '/practice-areas/nursing-home-abuse-lawyers/savannah-ga/',
+
+        '/practice-areas/savannah/product-liability-lawyers/faq/'                         => '/practice-areas/product-liability-lawyers/savannah-ga/',
+        '/practice-areas/savannah/slip-and-fall-attorneys/premises-liability/'             => '/practice-areas/premises-liability-lawyers/savannah-ga/',
+        '/practice-areas/savannah/wrongful-death-lawyers/georgia-punitive-damages-lawyer/' => '/practice-areas/wrongful-death-lawyers/savannah-ga/',
+        '/practice-areas/savannah/wrongful-death-lawyers/statute-of-limitations/'         => '/practice-areas/wrongful-death-lawyers/savannah-ga/',
+
+        // ══════════════════════════════════════════════════════════════
+        // CATEGORY 6: Orphaned & test pages (3 pages)
+        // ══════════════════════════════════════════════════════════════
+
+        '/truck-accident-lawyer-2/'      => '/practice-areas/truck-accident-lawyers/',
+        '/columbia-car-accident-lawyers/' => '/practice-areas/car-accident-lawyers/columbia-sc/',
+        '/practice-area/3536/'           => '/practice-areas/',
+
+        // ══════════════════════════════════════════════════════════════
+        // CATEGORY 7: Root-level blog posts (7 pages)
+        // Published without /blog/ prefix
+        // ══════════════════════════════════════════════════════════════
+
+        '/a-pedestrians-guide-to-claiming-lost-wages-in-charleston/'          => '/blog/a-pedestrians-guide-to-claiming-lost-wages-in-charleston/',
+        '/filing-a-claim-after-a-hazmat-truck-crash-in-charleston/'           => '/blog/filing-a-claim-after-a-hazmat-truck-crash-in-charleston/',
+        '/a-practical-guide-after-a-truck-accident-in-downtown-columbia/'     => '/blog/a-practical-guide-after-a-truck-accident-in-downtown-columbia/',
+        '/how-poor-truck-maintenance-causes-charleston-accidents/'            => '/blog/how-poor-truck-maintenance-causes-charleston-accidents/',
+        '/your-guide-to-justice-after-a-charleston-truck-accident/'           => '/blog/your-guide-to-justice-after-a-charleston-truck-accident/',
+        '/a-guide-to-car-accident-claims-at-columbias-toughest-intersections/' => '/blog/a-guide-to-car-accident-claims-at-columbias-toughest-intersections/',
+        '/protecting-your-rights-after-a-myrtle-beach-car-accident/'         => '/blog/protecting-your-rights-after-a-myrtle-beach-car-accident/',
+
+    );
+}
