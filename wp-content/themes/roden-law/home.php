@@ -75,7 +75,7 @@ $firm = roden_firm_data();
                     <h3>Injured? Talk to a Lawyer.</h3>
                     <p>Free consultation. No fees unless we win.</p>
                     <a href="tel:<?php echo esc_attr($firm['phone_e164']); ?>" class="btn btn-primary btn-block"><?php echo esc_html($firm['phone']); ?></a>
-                    <a href="#contact" class="btn btn-outline-light btn-block">Free Case Evaluation</a>
+                    <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn-outline-light btn-block">Free Case Evaluation</a>
                 </div>
 
                 <div class="sidebar-widget">
