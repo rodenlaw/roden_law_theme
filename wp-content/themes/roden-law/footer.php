@@ -130,7 +130,6 @@ $footer_practice_areas = array(
                         if ( shortcode_exists( 'gravityform' ) ) {
                             // Gravity Forms — update ID to match your form
                             echo do_shortcode( '[gravityform id="1" title="false" description="false" ajax="true"]' );
-                            echo '<button type="button" class="roden-gf-submit-btn" onclick="(function(btn){var form=btn.closest(\'.footer-mini-form\').querySelector(\'form\');if(form){var gfBtn=form.querySelector(\'input[type=submit],.gform_button\');if(gfBtn){gfBtn.click();}else{form.submit();}}})(this)">Get Free Review</button>';
                         } elseif ( shortcode_exists( 'wpforms' ) ) {
                             // WPForms — update ID to match your form
                             echo do_shortcode( '[wpforms id="1" title="false" description="false"]' );

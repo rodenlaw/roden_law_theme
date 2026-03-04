@@ -843,16 +843,44 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--orange-light);
 }
 
-/* --- Native GF submit — visually hidden but functional for GF JS --- */
+/* --- Native GF submit — styled as our CTA button --- */
 .sidebar-contact-form .gform_wrapper .gform_footer,
 .sidebar-contact-form .gform_wrapper .gform-footer,
 .sidebar-contact-form .gform_footer,
 .sidebar-contact-form .gform-footer {
-    height: 0 !important;
-    overflow: hidden !important;
     padding: 0 !important;
-    margin: 0 !important;
+    margin: 12px 0 0 !important;
     border: 0 !important;
+    text-align: center;
+}
+.sidebar-contact-form .gform_wrapper .gform_footer input[type="submit"],
+.sidebar-contact-form .gform_wrapper .gform_button,
+.sidebar-contact-form .gform_button,
+.sidebar-contact-form input.gform_button {
+    display: block !important;
+    width: 100% !important;
+    background: var(--orange) !important;
+    color: var(--navy) !important;
+    padding: 16px 20px !important;
+    border: none !important;
+    border-radius: 8px !important;
+    font-size: 18px !important;
+    font-weight: 800 !important;
+    font-family: 'Merriweather Sans', sans-serif !important;
+    letter-spacing: 0.3px;
+    cursor: pointer !important;
+    min-height: 50px;
+    text-align: center;
+    line-height: 1.2;
+    transition: background 0.2s ease;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.sidebar-contact-form .gform_wrapper .gform_footer input[type="submit"]:hover,
+.sidebar-contact-form .gform_wrapper .gform_button:hover,
+.sidebar-contact-form .gform_button:hover,
+.sidebar-contact-form input.gform_button:hover {
+    background: var(--orange-dark) !important;
 }
 
 /* --- Validation error styles --- */
@@ -888,29 +916,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.5;
 }
 
-/* --- Custom submit button (outside GF form to avoid GF JS hiding it) --- */
-.roden-gf-submit-btn {
-    display: block;
-    width: 100%;
-    background: var(--orange);
-    color: var(--navy);
-    padding: 16px 20px;
-    border: none;
-    border-radius: 8px;
-    font-size: 18px;
-    font-weight: 800;
-    font-family: 'Merriweather Sans', sans-serif;
-    letter-spacing: 0.3px;
-    cursor: pointer;
-    min-height: 50px;
-    margin: 12px 0 0;
-    text-align: center;
-    line-height: 1.2;
-    transition: background 0.2s ease;
-}
-.roden-gf-submit-btn:hover {
-    background: var(--orange-dark);
-}
+/* .roden-gf-submit-btn removed — using native GF submit button styled via CSS */
 
 
 
@@ -1433,25 +1439,43 @@ a.sub-type-link:hover { background: var(--light); border-color: var(--orange); }
 .footer-mini-form .gform_wrapper .gf-consent .gfield_consent_description a:hover {
     color: var(--orange-light);
 }
-/* --- Footer native GF submit — visually hidden but functional for GF JS --- */
+/* --- Footer native GF submit — styled as CTA button --- */
 .footer-mini-form .gform_wrapper .gform_footer,
 .footer-mini-form .gform_wrapper .gform-footer,
 .footer-mini-form .gform_footer,
 .footer-mini-form .gform-footer {
-    height: 0 !important;
-    overflow: hidden !important;
     padding: 0 !important;
-    margin: 0 !important;
+    margin: 8px 0 0 !important;
     border: 0 !important;
+    text-align: center;
 }
-/* Footer custom submit button — smaller for footer context */
-.footer-mini-form .roden-gf-submit-btn {
-    padding: 10px 16px;
-    font-size: 14px;
-    font-weight: 700;
-    border-radius: 6px;
+.footer-mini-form .gform_wrapper .gform_footer input[type="submit"],
+.footer-mini-form .gform_wrapper .gform_button,
+.footer-mini-form .gform_button,
+.footer-mini-form input.gform_button {
+    display: block !important;
+    width: 100% !important;
+    background: var(--orange) !important;
+    color: var(--navy) !important;
+    padding: 10px 16px !important;
+    border: none !important;
+    border-radius: 6px !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    font-family: 'Merriweather Sans', sans-serif !important;
+    cursor: pointer !important;
     min-height: 40px;
-    margin: 8px 0 0;
+    text-align: center;
+    line-height: 1.2;
+    transition: background 0.2s ease;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.footer-mini-form .gform_wrapper .gform_footer input[type="submit"]:hover,
+.footer-mini-form .gform_wrapper .gform_button:hover,
+.footer-mini-form .gform_button:hover,
+.footer-mini-form input.gform_button:hover {
+    background: var(--orange-dark) !important;
 }
 /* Footer validation */
 .footer-mini-form .gform_wrapper .gfield_error input,

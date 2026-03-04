@@ -249,25 +249,35 @@ function roden_thankyou_conversion_tracking() {
    ========================================================================== */
 
 /**
+ * Change GF submit button text for form ID 1 (contact form).
+ */
+add_filter( 'gform_submit_button_1', 'roden_gf_submit_button_text', 10, 2 );
+function roden_gf_submit_button_text( $button, $form ) {
+    return str_replace( "value='Submit'", "value='See If You Qualify'", $button );
+}
+
+/**
  * GF JS sets display:none on duplicate gform_wrapper instances.
- * Our CSS overrides this, but as a belt-and-suspenders measure,
- * this JS ensures wrappers stay visible for our custom submit buttons.
+ * This JS keeps wrappers visible and sets footer button text.
  */
 add_action( 'wp_footer', 'roden_gf_wrapper_visible', 999 );
 function roden_gf_wrapper_visible() {
     ?>
     <script>
     (function(){
-        function showWrappers() {
+        function fixForms() {
             document.querySelectorAll('.sidebar-contact-form .gform_wrapper, .footer-mini-form .gform_wrapper').forEach(function(w) {
                 w.style.display = 'block';
             });
+            /* Footer form gets different button text */
+            document.querySelectorAll('.footer-mini-form .gform_button, .footer-mini-form input[type="submit"]').forEach(function(btn) {
+                btn.value = 'Get Free Review';
+            });
         }
-        showWrappers();
-        document.addEventListener('DOMContentLoaded', showWrappers);
-        window.addEventListener('load', showWrappers);
-        document.addEventListener('gform/postRender', showWrappers);
-
+        fixForms();
+        document.addEventListener('DOMContentLoaded', fixForms);
+        window.addEventListener('load', fixForms);
+        document.addEventListener('gform/postRender', fixForms);
     })();
     </script>
     <?php
