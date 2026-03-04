@@ -268,7 +268,7 @@ function roden_gf_wrapper_visible() {
         window.addEventListener('load', showWrappers);
         document.addEventListener('gform/postRender', showWrappers);
 
-        /* TEMP DEBUG: find the white box — check ALL visible elements */
+        /* TEMP DEBUG: find the white box — check ALL elements including divs */
         window.addEventListener('load', function() {
             setTimeout(function() {
                 var formEl = document.querySelector('.sidebar-contact-form');
@@ -280,16 +280,14 @@ function roden_gf_wrapper_visible() {
                     if (rect.width < 2 || rect.height < 2) return;
                     var cs = getComputedStyle(el);
                     if (cs.display === 'none' || cs.visibility === 'hidden') return;
-                    /* Skip expected elements */
-                    var tag = el.tagName;
-                    if (tag === 'UL' || tag === 'LI' || tag === 'LABEL' || tag === 'SPAN' || tag === 'A' || tag === 'DIV' || tag === 'FORM' || tag === 'P' || tag === 'H3') return;
-                    /* Log every remaining visible element */
-                    var info = tag + ' class="' + el.className + '" id="' + el.id + '" size=' + Math.round(rect.width) + 'x' + Math.round(rect.height) + ' bg=' + cs.backgroundColor + ' border=' + cs.border + ' parent=' + el.parentElement.className;
+                    /* Only report small elements (< 60px in either dimension) to find the mystery box */
+                    if (rect.width > 60 && rect.height > 60) return;
+                    var info = el.tagName + ' class="' + el.className + '" id="' + el.id + '" size=' + Math.round(rect.width) + 'x' + Math.round(rect.height) + ' bg=' + cs.backgroundColor + ' border=' + cs.border + ' pos=(' + Math.round(rect.left) + ',' + Math.round(rect.top) + ') parent=' + el.parentElement.className;
                     results.push(info);
-                    el.style.outline = '3px solid red';
+                    el.style.outline = '3px solid lime';
                     el.style.outlineOffset = '-1px';
                 });
-                console.log('=== SIDEBAR FORM ELEMENT AUDIT (' + results.length + ' elements) ===');
+                console.log('=== SMALL ELEMENT AUDIT (' + results.length + ' elements < 60px) ===');
                 results.forEach(function(r) { console.log(r); });
             }, 3000);
         });
