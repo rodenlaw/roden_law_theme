@@ -848,6 +848,10 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar-contact-form .gform_wrapper .gform-footer,
 .sidebar-contact-form .gform_footer,
 .sidebar-contact-form .gform-footer {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
     padding: 0 !important;
     margin: 12px 0 0 !important;
     border: 0 !important;
@@ -1444,6 +1448,10 @@ a.sub-type-link:hover { background: var(--light); border-color: var(--orange); }
 .footer-mini-form .gform_wrapper .gform-footer,
 .footer-mini-form .gform_footer,
 .footer-mini-form .gform-footer {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
     padding: 0 !important;
     margin: 8px 0 0 !important;
     border: 0 !important;

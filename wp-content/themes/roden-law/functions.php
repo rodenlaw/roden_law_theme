@@ -266,8 +266,17 @@ function roden_gf_wrapper_visible() {
     <script>
     (function(){
         function fixForms() {
+            /* Force wrappers visible (GF hides duplicate instances) */
             document.querySelectorAll('.sidebar-contact-form .gform_wrapper, .footer-mini-form .gform_wrapper').forEach(function(w) {
                 w.style.display = 'block';
+            });
+            /* Force gform_footer visible (GF hides it on duplicates) */
+            document.querySelectorAll('.sidebar-contact-form .gform_footer, .sidebar-contact-form .gform-footer, .footer-mini-form .gform_footer, .footer-mini-form .gform-footer').forEach(function(f) {
+                f.style.display = 'block';
+            });
+            /* Force submit buttons visible */
+            document.querySelectorAll('.sidebar-contact-form .gform_button, .sidebar-contact-form input[type="submit"], .footer-mini-form .gform_button, .footer-mini-form input[type="submit"]').forEach(function(btn) {
+                btn.style.display = 'block';
             });
             /* Footer form gets different button text */
             document.querySelectorAll('.footer-mini-form .gform_button, .footer-mini-form input[type="submit"]').forEach(function(btn) {
