@@ -684,6 +684,11 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     z-index: 10;
 }
+
+/* FreshChat widget — lower z-index so it doesn't overlap sidebar form */
+#fd-chat {
+    z-index: 9 !important;
+}
 .sidebar-contact-form .form-title {
     font-weight: 800;
     font-size: 22px;
