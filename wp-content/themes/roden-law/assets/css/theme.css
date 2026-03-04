@@ -703,6 +703,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
     max-width: 100%;
+    overflow: hidden;
 }
 .sidebar-contact-form .gform_wrapper .gform-body {
     padding: 0;
@@ -836,11 +837,16 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--orange-light);
 }
 
-/* --- Native GF submit — hidden (replaced by .roden-gf-submit-btn outside form) --- */
+/* --- Native GF submit + artifacts — hidden (replaced by .roden-gf-submit-btn) --- */
 .sidebar-contact-form .gform_wrapper .gform_footer,
 .sidebar-contact-form .gform_wrapper .gform-footer,
 .sidebar-contact-form .gform_footer,
-.sidebar-contact-form .gform-footer {
+.sidebar-contact-form .gform-footer,
+.sidebar-contact-form .gform_button,
+.sidebar-contact-form input.gform_button,
+.sidebar-contact-form .gform_wrapper input[type="submit"],
+.sidebar-contact-form iframe[name*="gform"],
+.sidebar-contact-form .gform_ajax_spinner {
     display: none !important;
 }
 
@@ -1309,6 +1315,7 @@ a.sub-type-link:hover { background: var(--light); border-color: var(--orange); }
     margin: 0;
     padding: 0;
     max-width: 100%;
+    overflow: hidden;
 }
 .footer-mini-form .gform_wrapper .gform-body {
     padding: 0;
@@ -1422,7 +1429,12 @@ a.sub-type-link:hover { background: var(--light); border-color: var(--orange); }
 .footer-mini-form .gform_wrapper .gform_footer,
 .footer-mini-form .gform_wrapper .gform-footer,
 .footer-mini-form .gform_footer,
-.footer-mini-form .gform-footer {
+.footer-mini-form .gform-footer,
+.footer-mini-form .gform_button,
+.footer-mini-form input.gform_button,
+.footer-mini-form .gform_wrapper input[type="submit"],
+.footer-mini-form iframe[name*="gform"],
+.footer-mini-form .gform_ajax_spinner {
     display: none !important;
 }
 /* Footer custom submit button — smaller for footer context */
