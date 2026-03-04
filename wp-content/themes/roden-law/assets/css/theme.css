@@ -1081,14 +1081,21 @@ a.sub-type-link:hover { background: var(--light); border-color: var(--orange); }
 /* ─── BLOG GRID ────────────────────────────────────────────────────────── */
 
 .blog-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-.blog-search { max-width: 500px; display: flex; gap: 0; align-items: stretch; }
-.blog-search input {
-    flex: 3; min-width: 0; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2);
-    border-right: none; border-radius: 6px 0 0 6px; color: var(--white);
-    padding: 0 14px; font-size: 13px; box-sizing: border-box;
+.blog-search { max-width: 500px; }
+.blog-search .search-form {
+    display: flex; gap: 0;
 }
-.blog-search input::placeholder { color: rgba(255,255,255,0.5); }
-.blog-search .btn { flex: 1; border-radius: 0 6px 6px 0; white-space: nowrap; }
+.blog-search .search-field {
+    flex: 3; min-width: 0; height: 44px;
+    background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2);
+    border-right: none; border-radius: 6px 0 0 6px; color: var(--white);
+    padding: 0 14px; font-size: 14px; box-sizing: border-box;
+}
+.blog-search .search-field::placeholder { color: rgba(255,255,255,0.5); }
+.blog-search .search-submit {
+    flex: 1; height: 44px; border-radius: 0 6px 6px 0;
+    white-space: nowrap; padding: 0 16px; box-sizing: border-box;
+}
 
 /* Blog Card */
 .blog-card {
@@ -1166,14 +1173,18 @@ a.sub-type-link:hover { background: var(--light); border-color: var(--orange); }
 
 /* ─── SEARCH RESULTS & NO RESULTS ─────────────────────────────────────── */
 
-.search-form { display: flex; gap: 0; max-width: 500px; align-items: stretch; }
+.search-form { display: flex; gap: 0; max-width: 500px; }
 .search-form .search-field {
-    flex: 3; min-width: 0; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2);
+    flex: 3; min-width: 0; height: 44px;
+    background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2);
     border-right: none; border-radius: 6px 0 0 6px; color: var(--white);
-    padding: 0 14px; font-size: 13px; font-family: var(--font-sans); box-sizing: border-box;
+    padding: 0 14px; font-size: 14px; font-family: var(--font-sans); box-sizing: border-box;
 }
 .search-form .search-field::placeholder { color: rgba(255,255,255,0.5); }
-.search-form .search-submit { flex: 1; border-radius: 0 6px 6px 0; white-space: nowrap; }
+.search-form .search-submit {
+    flex: 1; height: 44px; border-radius: 0 6px 6px 0;
+    white-space: nowrap; padding: 0 16px; box-sizing: border-box;
+}
 
 /* Search form in sidebar/content areas (dark text variant) */
 .sidebar .search-form .search-field,
