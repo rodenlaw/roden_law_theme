@@ -843,17 +843,16 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--orange-light);
 }
 
-/* --- Native GF submit + artifacts — hidden (replaced by .roden-gf-submit-btn) --- */
+/* --- Native GF submit — visually hidden but functional for GF JS --- */
 .sidebar-contact-form .gform_wrapper .gform_footer,
 .sidebar-contact-form .gform_wrapper .gform-footer,
 .sidebar-contact-form .gform_footer,
-.sidebar-contact-form .gform-footer,
-.sidebar-contact-form .gform_button,
-.sidebar-contact-form input.gform_button,
-.sidebar-contact-form .gform_wrapper input[type="submit"],
-.sidebar-contact-form iframe[name*="gform"],
-.sidebar-contact-form .gform_ajax_spinner {
-    display: none !important;
+.sidebar-contact-form .gform-footer {
+    height: 0 !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 0 !important;
 }
 
 /* --- Validation error styles --- */
@@ -1423,6 +1422,9 @@ a.sub-type-link:hover { background: var(--light); border-color: var(--orange); }
     padding: 0;
     border: none;
     background: none;
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 .footer-mini-form .gform_wrapper .gf-consent .gfield_consent_description a {
     color: var(--orange);
@@ -1431,17 +1433,16 @@ a.sub-type-link:hover { background: var(--light); border-color: var(--orange); }
 .footer-mini-form .gform_wrapper .gf-consent .gfield_consent_description a:hover {
     color: var(--orange-light);
 }
-/* Footer native GF submit — hidden (replaced by .roden-gf-submit-btn outside form) */
+/* --- Footer native GF submit — visually hidden but functional for GF JS --- */
 .footer-mini-form .gform_wrapper .gform_footer,
 .footer-mini-form .gform_wrapper .gform-footer,
 .footer-mini-form .gform_footer,
-.footer-mini-form .gform-footer,
-.footer-mini-form .gform_button,
-.footer-mini-form input.gform_button,
-.footer-mini-form .gform_wrapper input[type="submit"],
-.footer-mini-form iframe[name*="gform"],
-.footer-mini-form .gform_ajax_spinner {
-    display: none !important;
+.footer-mini-form .gform-footer {
+    height: 0 !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 0 !important;
 }
 /* Footer custom submit button — smaller for footer context */
 .footer-mini-form .roden-gf-submit-btn {
