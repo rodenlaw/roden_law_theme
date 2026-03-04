@@ -243,3 +243,22 @@ function roden_thankyou_conversion_tracking() {
     </script>
     <?php
 }
+
+/* ==========================================================================
+   8. GRAVITY FORMS — Force submit button inline styles
+   ========================================================================== */
+
+add_filter( 'gform_submit_button', 'roden_gf_submit_button_style', 10, 2 );
+function roden_gf_submit_button_style( $button, $form ) {
+    if ( (int) $form['id'] !== 1 ) {
+        return $button;
+    }
+    $style = 'display:block!important;visibility:visible!important;width:100%!important;'
+           . 'background:#FCB415!important;color:#013046!important;padding:16px 20px!important;'
+           . 'border:none!important;border-radius:8px!important;font-size:18px!important;'
+           . 'font-weight:800!important;cursor:pointer!important;min-height:50px!important;'
+           . 'font-family:Merriweather Sans,sans-serif!important;letter-spacing:0.3px;'
+           . 'margin:0!important;opacity:1!important;position:relative!important;z-index:10!important;';
+    $button = str_replace( "class='gform_button", "style='{$style}' class='gform_button", $button );
+    return $button;
+}
