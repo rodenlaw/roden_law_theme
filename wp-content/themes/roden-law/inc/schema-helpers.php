@@ -102,8 +102,14 @@ function roden_output_schema() {
         roden_schema_article( $firm );
     }
 
-    // BreadcrumbList on all pages except front page
-    if ( ! is_front_page() ) {
+    // Contact page — Organization with ContactPoint
+    if ( is_page( 'contact' ) ) {
+        roden_schema_contact_page( $firm );
+    }
+
+    // BreadcrumbList on all pages except front page and noindex landing pages
+    $is_landing = is_page_template( 'templates/template-landing-page.php' );
+    if ( ! is_front_page() && ! $is_landing ) {
         roden_schema_breadcrumbs();
     }
 }
@@ -865,6 +871,40 @@ function roden_schema_article( $firm ) {
     $categories = get_the_category( $post_id );
     if ( ! empty( $categories ) ) {
         $schema['articleSection'] = $categories[0]->name;
+    }
+
+    roden_json_ld( $schema );
+}
+
+/* ==========================================================================
+   8. ContactPage (Contact page)
+   ========================================================================== */
+
+function roden_schema_contact_page( $firm ) {
+    $contact_points = array();
+    foreach ( $firm['offices'] as $office ) {
+        $contact_points[] = array(
+            '@type'       => 'ContactPoint',
+            'telephone'   => $office['phone'],
+            'contactType' => 'customer service',
+            'areaServed'  => $office['state_full'],
+            'availableLanguage' => array( 'English', 'Spanish' ),
+        );
+    }
+
+    $schema = array(
+        '@context'     => 'https://schema.org',
+        '@type'        => 'Organization',
+        '@id'          => $firm['url'] . '/#organization',
+        'name'         => $firm['name'],
+        'url'          => $firm['url'],
+        'telephone'    => $firm['vanity_phone'],
+        'contactPoint' => $contact_points,
+    );
+
+    $logo_url = roden_get_logo_url();
+    if ( $logo_url ) {
+        $schema['logo'] = $logo_url;
     }
 
     roden_json_ld( $schema );
