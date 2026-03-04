@@ -818,20 +818,19 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
 }
 .sidebar-contact-form .gform_wrapper .gf-consent .gfield_consent_description {
-    display: none;
-}
-.sidebar-contact-form .gform_wrapper .gf-consent .gfield_description {
     font-size: 12px;
     color: var(--gray-400);
     margin: 8px 0 0;
     line-height: 1.5;
     padding: 0;
+    border: none;
+    background: none;
 }
-.sidebar-contact-form .gform_wrapper .gf-consent .gfield_description a {
+.sidebar-contact-form .gform_wrapper .gf-consent .gfield_consent_description a {
     color: var(--orange);
     text-decoration: underline;
 }
-.sidebar-contact-form .gform_wrapper .gf-consent .gfield_description a:hover {
+.sidebar-contact-form .gform_wrapper .gf-consent .gfield_consent_description a:hover {
     color: var(--orange-light);
 }
 
