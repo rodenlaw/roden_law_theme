@@ -837,25 +837,29 @@ h1, h2, h3, h4, h5, h6 {
 /* --- Submit button --- */
 .sidebar-contact-form .gform_wrapper .gform_footer,
 .sidebar-contact-form .gform_wrapper .gform-footer {
-    margin: 0;
-    padding: 16px 0 0;
+    margin: 0 !important;
+    padding: 16px 0 0 !important;
 }
+.sidebar-contact-form .gform_wrapper .gform_footer input[type="submit"],
 .sidebar-contact-form .gform_wrapper .gform_button {
-    width: 100%;
-    background: var(--orange);
-    color: var(--navy);
-    border: none;
-    border-radius: 8px;
-    padding: 16px 20px;
-    font-size: 18px;
+    display: block !important;
+    width: 100% !important;
+    background: var(--orange) !important;
+    color: var(--navy) !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 16px 20px !important;
+    font-size: 18px !important;
     font-weight: 800;
     font-family: var(--font-sans);
     cursor: pointer;
     letter-spacing: 0.3px;
     transition: background 0.2s;
+    margin: 0 !important;
 }
+.sidebar-contact-form .gform_wrapper .gform_footer input[type="submit"]:hover,
 .sidebar-contact-form .gform_wrapper .gform_button:hover {
-    background: var(--orange-dark);
+    background: var(--orange-dark) !important;
 }
 
 /* --- Validation error styles --- */
@@ -1407,24 +1411,28 @@ a.sub-type-link:hover { background: var(--light); border-color: var(--orange); }
 /* Footer submit button */
 .footer-mini-form .gform_wrapper .gform_footer,
 .footer-mini-form .gform_wrapper .gform-footer {
-    margin: 0;
-    padding: 10px 0 0;
+    margin: 0 !important;
+    padding: 10px 0 0 !important;
 }
+.footer-mini-form .gform_wrapper .gform_footer input[type="submit"],
 .footer-mini-form .gform_wrapper .gform_button {
-    width: 100%;
-    background: var(--orange);
-    color: var(--navy);
-    border: none;
-    border-radius: 6px;
-    padding: 10px 16px;
-    font-size: 14px;
+    display: block !important;
+    width: 100% !important;
+    background: var(--orange) !important;
+    color: var(--navy) !important;
+    border: none !important;
+    border-radius: 6px !important;
+    padding: 10px 16px !important;
+    font-size: 14px !important;
     font-weight: 700;
     font-family: var(--font-sans);
     cursor: pointer;
     transition: background 0.2s;
+    margin: 0 !important;
 }
+.footer-mini-form .gform_wrapper .gform_footer input[type="submit"]:hover,
 .footer-mini-form .gform_wrapper .gform_button:hover {
-    background: var(--orange-dark);
+    background: var(--orange-dark) !important;
 }
 /* Footer validation */
 .footer-mini-form .gform_wrapper .gfield_error input,
