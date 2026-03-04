@@ -267,6 +267,25 @@ function roden_gf_wrapper_visible() {
         document.addEventListener('DOMContentLoaded', showWrappers);
         window.addEventListener('load', showWrappers);
         document.addEventListener('gform/postRender', showWrappers);
+
+        /* TEMP DEBUG: find the white box */
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.querySelectorAll('.sidebar-contact-form *, .sidebar-contact-form').forEach(function(el) {
+                    var rect = el.getBoundingClientRect();
+                    if (rect.width < 1 || rect.height < 1) return;
+                    var cs = getComputedStyle(el);
+                    if (cs.display === 'none' || cs.visibility === 'hidden' || cs.opacity === '0') return;
+                    var bg = cs.backgroundColor;
+                    var isWhite = (bg === 'rgb(255, 255, 255)' || bg === 'rgba(255, 255, 255, 1)' || bg === 'white');
+                    var isSmall = (rect.width < 80 && rect.height < 80);
+                    if (isWhite && isSmall) {
+                        el.style.outline = '3px solid red';
+                        console.log('WHITE BOX FOUND:', el.tagName, el.className, el.id, 'size:', Math.round(rect.width)+'x'+Math.round(rect.height), 'parent:', el.parentElement.className);
+                    }
+                });
+            }, 3000);
+        });
     })();
     </script>
     <?php
