@@ -836,14 +836,30 @@ h1, h2, h3, h4, h5, h6 {
 
 /* --- Submit button --- */
 .sidebar-contact-form .gform_wrapper .gform_footer,
-.sidebar-contact-form .gform_wrapper .gform-footer {
+.sidebar-contact-form .gform_wrapper .gform-footer,
+.sidebar-contact-form .gform_footer,
+.sidebar-contact-form .gform-footer {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
     margin: 0 !important;
     padding: 16px 0 0 !important;
+    position: relative !important;
 }
+.sidebar-contact-form input[type="submit"],
 .sidebar-contact-form .gform_wrapper .gform_footer input[type="submit"],
 .sidebar-contact-form .gform_wrapper .gform_button {
     display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
     width: 100% !important;
+    height: auto !important;
+    min-height: 50px !important;
+    max-height: none !important;
+    overflow: visible !important;
     background: var(--orange) !important;
     color: var(--navy) !important;
     border: none !important;
@@ -856,7 +872,12 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.3px;
     transition: background 0.2s;
     margin: 0 !important;
+    position: relative !important;
+    z-index: 10 !important;
+    clip: auto !important;
+    transform: none !important;
 }
+.sidebar-contact-form input[type="submit"]:hover,
 .sidebar-contact-form .gform_wrapper .gform_footer input[type="submit"]:hover,
 .sidebar-contact-form .gform_wrapper .gform_button:hover {
     background: var(--orange-dark) !important;
@@ -1410,14 +1431,26 @@ a.sub-type-link:hover { background: var(--light); border-color: var(--orange); }
 }
 /* Footer submit button */
 .footer-mini-form .gform_wrapper .gform_footer,
-.footer-mini-form .gform_wrapper .gform-footer {
+.footer-mini-form .gform_wrapper .gform-footer,
+.footer-mini-form .gform_footer,
+.footer-mini-form .gform-footer {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    overflow: visible !important;
     margin: 0 !important;
     padding: 10px 0 0 !important;
 }
+.footer-mini-form input[type="submit"],
 .footer-mini-form .gform_wrapper .gform_footer input[type="submit"],
 .footer-mini-form .gform_wrapper .gform_button {
     display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
     width: 100% !important;
+    height: auto !important;
+    min-height: 40px !important;
     background: var(--orange) !important;
     color: var(--navy) !important;
     border: none !important;
@@ -1429,7 +1462,9 @@ a.sub-type-link:hover { background: var(--light); border-color: var(--orange); }
     cursor: pointer;
     transition: background 0.2s;
     margin: 0 !important;
+    position: relative !important;
 }
+.footer-mini-form input[type="submit"]:hover,
 .footer-mini-form .gform_wrapper .gform_footer input[type="submit"]:hover,
 .footer-mini-form .gform_wrapper .gform_button:hover {
     background: var(--orange-dark) !important;
