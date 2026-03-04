@@ -319,10 +319,53 @@ function roden_sidebar_form_js() {
     (function(){
         var form = document.getElementById('roden-sidebar-form');
         if (!form) return;
+
+        /* --- Phone auto-format: (xxx) xxx-xxxx --- */
+        var phoneInput = document.getElementById('rsf-phone');
+        if (phoneInput) {
+            phoneInput.addEventListener('input', function() {
+                var digits = this.value.replace(/\D/g, '').substring(0, 10);
+                if (digits.length === 0) { this.value = ''; }
+                else if (digits.length <= 3) { this.value = '(' + digits; }
+                else if (digits.length <= 6) { this.value = '(' + digits.substring(0,3) + ') ' + digits.substring(3); }
+                else { this.value = '(' + digits.substring(0,3) + ') ' + digits.substring(3,6) + '-' + digits.substring(6); }
+            });
+        }
+
+        /* --- Email validation --- */
+        var emailInput = document.getElementById('rsf-email');
+        if (emailInput) {
+            emailInput.addEventListener('blur', function() {
+                var v = this.value.trim();
+                if (v && !/^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/.test(v)) {
+                    this.setCustomValidity('Please enter a valid email (e.g. name@example.com)');
+                } else {
+                    this.setCustomValidity('');
+                }
+            });
+            emailInput.addEventListener('input', function() { this.setCustomValidity(''); });
+        }
+
         form.addEventListener('submit', function(e) {
             e.preventDefault();
             var btn = form.querySelector('.rsf-submit-btn');
             var errEl = form.querySelector('.rsf-error');
+            /* Validate phone has 10 digits */
+            var phoneDigits = (phoneInput ? phoneInput.value : '').replace(/\D/g, '');
+            if (phoneDigits.length !== 10) {
+                errEl.textContent = 'Please enter a valid 10-digit phone number.';
+                errEl.style.display = 'block';
+                if (phoneInput) phoneInput.focus();
+                return;
+            }
+            /* Validate email format */
+            var emailVal = emailInput ? emailInput.value.trim() : '';
+            if (!/^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/.test(emailVal)) {
+                errEl.textContent = 'Please enter a valid email address.';
+                errEl.style.display = 'block';
+                if (emailInput) emailInput.focus();
+                return;
+            }
             btn.disabled = true;
             btn.textContent = 'Submitting…';
             errEl.style.display = 'none';

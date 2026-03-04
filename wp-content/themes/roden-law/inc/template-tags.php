@@ -606,8 +606,8 @@ function roden_contact_form_sidebar( $local_phone = '' ) {
                 <input type="text" name="first_name" placeholder="First Name" required>
                 <input type="text" name="last_name" placeholder="Last Name" required>
             </div>
-            <input type="text" name="phone" placeholder="Phone Number" required>
-            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="phone" id="rsf-phone" placeholder="(555) 555-5555" required>
+            <input type="email" name="email" id="rsf-email" placeholder="Email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
             <select name="case_type" required>
                 <option value="" disabled selected>Case Type</option>
                 <option value="Car Accident">Car Accident</option>
@@ -632,7 +632,7 @@ function roden_contact_form_sidebar( $local_phone = '' ) {
             </select>
             <textarea name="message" placeholder="Please describe what happened" rows="3"></textarea>
             <label class="rsf-consent">
-                <input type="checkbox" name="consent" value="1" required>
+                <input type="checkbox" name="consent" value="1" checked required>
                 <span>I hereby expressly consent to receive automated communications including calls, texts, emails, and/or prerecorded messages. By submitting this form, you agree to our <a href="<?php echo esc_url( home_url( '/terms-privacy-policy/' ) ); ?>" target="_blank">Terms &amp; Privacy Policy</a>.</span>
             </label>
             <button type="submit" class="rsf-submit-btn">See If You Qualify</button>
