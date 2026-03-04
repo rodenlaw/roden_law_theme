@@ -697,7 +697,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* --- Gravity Forms reset inside sidebar --- */
-.sidebar-contact-form .gform_wrapper.gform_legacy_markup_wrapper {
+.sidebar-contact-form .gform_wrapper.gform_legacy_markup_wrapper,
+.sidebar-contact-form .gform_wrapper {
+    display: block !important;
     margin: 0;
     padding: 0;
     max-width: 100%;
@@ -1316,7 +1318,9 @@ a.sub-type-link:hover { background: var(--light); border-color: var(--orange); }
     border-radius: var(--radius); padding: 16px;
 }
 /* Gravity Forms inside footer mini form */
-.footer-mini-form .gform_wrapper.gform_legacy_markup_wrapper {
+.footer-mini-form .gform_wrapper.gform_legacy_markup_wrapper,
+.footer-mini-form .gform_wrapper {
+    display: block !important;
     margin: 0;
     padding: 0;
     max-width: 100%;
