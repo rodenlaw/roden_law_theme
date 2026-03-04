@@ -245,76 +245,28 @@ function roden_thankyou_conversion_tracking() {
 }
 
 /* ==========================================================================
-   8. GRAVITY FORMS — Force submit button inline styles
+   8. GRAVITY FORMS — Ensure wrapper stays visible + custom submit button
    ========================================================================== */
 
-add_filter( 'gform_submit_button', 'roden_gf_submit_button_style', 10, 2 );
-function roden_gf_submit_button_style( $button, $form ) {
-    if ( (int) $form['id'] !== 1 ) {
-        return $button;
-    }
-    $style = 'display:block!important;visibility:visible!important;width:100%!important;'
-           . 'background:#FCB415!important;color:#013046!important;padding:16px 20px!important;'
-           . 'border:none!important;border-radius:8px!important;font-size:18px!important;'
-           . 'font-weight:800!important;cursor:pointer!important;min-height:50px!important;'
-           . 'font-family:Merriweather Sans,sans-serif!important;letter-spacing:0.3px;'
-           . 'margin:0!important;opacity:1!important;position:relative!important;z-index:10!important;';
-    $button = str_replace( "class='gform_button", "style='{$style}' class='gform_button", $button );
-    return $button;
-}
-
 /**
- * Force GF submit buttons to stay visible after JS hides them.
- * GF's JS hides buttons on duplicate form instances — this fights back.
+ * GF JS sets display:none on duplicate gform_wrapper instances.
+ * Our CSS overrides this, but as a belt-and-suspenders measure,
+ * this JS ensures wrappers stay visible for our custom submit buttons.
  */
-add_action( 'wp_footer', 'roden_gf_force_submit_visible', 999 );
-function roden_gf_force_submit_visible() {
+add_action( 'wp_footer', 'roden_gf_wrapper_visible', 999 );
+function roden_gf_wrapper_visible() {
     ?>
     <script>
     (function(){
-        var style = 'display:block!important;visibility:visible!important;width:100%!important;'
-            + 'background:#FCB415!important;color:#013046!important;padding:16px 20px!important;'
-            + 'border:none!important;border-radius:8px!important;font-size:18px!important;'
-            + 'font-weight:800!important;cursor:pointer!important;min-height:50px!important;'
-            + 'opacity:1!important;position:relative!important;z-index:10!important;margin:0!important;';
-
-        function forceButtons() {
-            var containers = document.querySelectorAll('.sidebar-contact-form, .footer-mini-form');
-            containers.forEach(function(container) {
-                /* Force wrapper visible */
-                var wrapper = container.querySelector('.gform_wrapper');
-                if (wrapper) wrapper.style.cssText += 'display:block!important;';
-
-                /* Force footer visible */
-                var footers = container.querySelectorAll('.gform_footer, .gform-footer');
-                footers.forEach(function(f) {
-                    f.style.cssText += 'display:block!important;visibility:visible!important;'
-                        + 'height:auto!important;overflow:visible!important;opacity:1!important;';
-                });
-
-                /* Force submit button visible */
-                var btns = container.querySelectorAll('input[type="submit"], .gform_button');
-                btns.forEach(function(btn) {
-                    btn.style.cssText = style;
-                });
+        function showWrappers() {
+            document.querySelectorAll('.sidebar-contact-form .gform_wrapper, .footer-mini-form .gform_wrapper').forEach(function(w) {
+                w.style.display = 'block';
             });
         }
-
-        /* Run immediately, on DOMContentLoaded, on load, and periodically for 10s */
-        forceButtons();
-        document.addEventListener('DOMContentLoaded', forceButtons);
-        window.addEventListener('load', forceButtons);
-
-        /* Re-check every 500ms for 10 seconds to catch late JS changes */
-        var count = 0;
-        var interval = setInterval(function() {
-            forceButtons();
-            count++;
-            if (count >= 20) clearInterval(interval);
-        }, 500);
-
-        /* Listen for GF post-render event */
-        document.addEventListener('gform/postRender', forceButtons);
+        showWrappers();
+        document.addEventListener('DOMContentLoaded', showWrappers);
+        window.addEventListener('load', showWrappers);
+        document.addEventListener('gform/postRender', showWrappers);
     })();
     </script>
     <?php

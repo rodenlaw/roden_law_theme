@@ -603,6 +603,9 @@ function roden_contact_form_sidebar( $local_phone = '' ) {
         <?php
         if ( shortcode_exists( 'gravityform' ) ) {
             echo do_shortcode( '[gravityform id="1" title="false" description="false" ajax="true"]' );
+            ?>
+            <button type="button" class="roden-gf-submit-btn" onclick="(function(btn){var form=btn.closest('.sidebar-contact-form').querySelector('form');if(form){var gfBtn=form.querySelector('input[type=submit],.gform_button');if(gfBtn){gfBtn.click();}else{form.submit();}}})(this)">See If You Qualify</button>
+            <?php
         } else {
             echo '<p>Call <a href="tel:+18447378587">1-844-RESULTS</a> for a free consultation.</p>';
         }
