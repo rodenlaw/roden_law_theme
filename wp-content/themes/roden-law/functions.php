@@ -245,48 +245,103 @@ function roden_thankyou_conversion_tracking() {
 }
 
 /* ==========================================================================
-   8. GRAVITY FORMS — Ensure wrapper stays visible + custom submit button
+   8. GRAVITY FORMS — Footer form visible + button text
    ========================================================================== */
 
-/**
- * Change GF submit button text for form ID 1 (contact form).
- */
 add_filter( 'gform_submit_button_1', 'roden_gf_submit_button_text', 10, 2 );
 function roden_gf_submit_button_text( $button, $form ) {
-    return str_replace( "value='Submit'", "value='See If You Qualify'", $button );
+    return str_replace( "value='Submit'", "value='Get Free Review'", $button );
+}
+
+/* ==========================================================================
+   9. CUSTOM SIDEBAR FORM — AJAX handler → GF entry
+   ========================================================================== */
+
+add_action( 'wp_ajax_roden_sidebar_submit', 'roden_sidebar_form_handler' );
+add_action( 'wp_ajax_nopriv_roden_sidebar_submit', 'roden_sidebar_form_handler' );
+function roden_sidebar_form_handler() {
+    check_ajax_referer( 'roden_sidebar_form', 'roden_form_nonce' );
+
+    $first_name = sanitize_text_field( $_POST['first_name'] ?? '' );
+    $last_name  = sanitize_text_field( $_POST['last_name'] ?? '' );
+    $phone      = sanitize_text_field( $_POST['phone'] ?? '' );
+    $email      = sanitize_email( $_POST['email'] ?? '' );
+    $case_type  = sanitize_text_field( $_POST['case_type'] ?? '' );
+    $message    = sanitize_textarea_field( $_POST['message'] ?? '' );
+    $consent    = ! empty( $_POST['consent'] ) ? 1 : 0;
+
+    // Validate required fields.
+    if ( ! $first_name || ! $last_name || ! $phone || ! $email || ! $case_type || ! $consent ) {
+        wp_send_json_error( 'Please fill in all required fields and accept the consent.' );
+    }
+
+    // Submit via GFAPI if available (creates a real GF entry + triggers notifications).
+    if ( class_exists( 'GFAPI' ) ) {
+        $entry = GFAPI::submit_form( 1, array(
+            'input_9'    => $first_name,
+            'input_10'   => $last_name,
+            'input_4'    => $phone,
+            'input_3'    => $email,
+            'input_11'   => $case_type,
+            'input_6'    => $message,
+            'input_12_1' => $consent,
+        ) );
+
+        if ( is_wp_error( $entry ) ) {
+            wp_send_json_error( 'Submission failed. Please call 1-844-RESULTS instead.' );
+        }
+    } else {
+        // Fallback: send email directly.
+        $to      = 'intake@rodenlaw.com';
+        $subject = 'New Case Review: ' . $case_type . ' — ' . $first_name . ' ' . $last_name;
+        $body    = "Name: $first_name $last_name\nPhone: $phone\nEmail: $email\nCase Type: $case_type\nMessage: $message";
+        wp_mail( $to, $subject, $body );
+    }
+
+    wp_send_json_success( array( 'redirect' => home_url( '/thank-you/' ) ) );
 }
 
 /**
- * GF JS sets display:none on duplicate gform_wrapper instances.
- * This JS keeps wrappers visible and sets footer button text.
+ * Sidebar form JS — submit via fetch, redirect on success.
  */
-add_action( 'wp_footer', 'roden_gf_wrapper_visible', 999 );
-function roden_gf_wrapper_visible() {
+add_action( 'wp_footer', 'roden_sidebar_form_js', 999 );
+function roden_sidebar_form_js() {
     ?>
     <script>
     (function(){
-        function fixForms() {
-            /* Force wrappers visible (GF hides duplicate instances) */
-            document.querySelectorAll('.sidebar-contact-form .gform_wrapper, .footer-mini-form .gform_wrapper').forEach(function(w) {
-                w.style.display = 'block';
+        var form = document.getElementById('roden-sidebar-form');
+        if (!form) return;
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            var btn = form.querySelector('.rsf-submit-btn');
+            var errEl = form.querySelector('.rsf-error');
+            btn.disabled = true;
+            btn.textContent = 'Submitting…';
+            errEl.style.display = 'none';
+            var fd = new FormData(form);
+            fd.append('action', 'roden_sidebar_submit');
+            fetch('<?php echo esc_url( admin_url( 'admin-ajax.php' ) ); ?>', {
+                method: 'POST',
+                body: fd
+            })
+            .then(function(r){ return r.json(); })
+            .then(function(data){
+                if (data.success && data.data.redirect) {
+                    window.location.href = data.data.redirect;
+                } else {
+                    errEl.textContent = data.data || 'Something went wrong. Please call 1-844-RESULTS.';
+                    errEl.style.display = 'block';
+                    btn.disabled = false;
+                    btn.textContent = 'See If You Qualify';
+                }
+            })
+            .catch(function(){
+                errEl.textContent = 'Network error. Please call 1-844-RESULTS.';
+                errEl.style.display = 'block';
+                btn.disabled = false;
+                btn.textContent = 'See If You Qualify';
             });
-            /* Force gform_footer visible (GF hides it on duplicates) */
-            document.querySelectorAll('.sidebar-contact-form .gform_footer, .sidebar-contact-form .gform-footer, .footer-mini-form .gform_footer, .footer-mini-form .gform-footer').forEach(function(f) {
-                f.style.display = 'block';
-            });
-            /* Force submit buttons visible */
-            document.querySelectorAll('.sidebar-contact-form .gform_button, .sidebar-contact-form input[type="submit"], .footer-mini-form .gform_button, .footer-mini-form input[type="submit"]').forEach(function(btn) {
-                btn.style.display = 'block';
-            });
-            /* Footer form gets different button text */
-            document.querySelectorAll('.footer-mini-form .gform_button, .footer-mini-form input[type="submit"]').forEach(function(btn) {
-                btn.value = 'Get Free Review';
-            });
-        }
-        fixForms();
-        document.addEventListener('DOMContentLoaded', fixForms);
-        window.addEventListener('load', fixForms);
-        document.addEventListener('gform/postRender', fixForms);
+        });
     })();
     </script>
     <?php

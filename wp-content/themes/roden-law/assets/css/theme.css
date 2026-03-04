@@ -699,56 +699,21 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.6;
 }
 
-/* --- Gravity Forms reset inside sidebar --- */
-.sidebar-contact-form .gform_wrapper.gform_legacy_markup_wrapper,
-.sidebar-contact-form .gform_wrapper {
-    display: block !important;
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
-    overflow: hidden;
+/* --- Custom sidebar form fields --- */
+.roden-sidebar-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
-.sidebar-contact-form .gform_wrapper .gform-body {
-    padding: 0;
-}
-.sidebar-contact-form .gform_wrapper ul.gform_fields {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.roden-sidebar-form .rsf-row.rsf-half {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 12px;
 }
-
-/* Default: fields span full width */
-.sidebar-contact-form .gform_wrapper ul.gform_fields li.gfield {
-    grid-column: span 2;
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-/* Half-width columns (First/Last, Phone/Zip) */
-.sidebar-contact-form .gform_wrapper ul.gform_fields li.gf-col-half {
-    grid-column: span 1;
-}
-
-/* Hide labels (using placeholders) */
-.sidebar-contact-form .gform_wrapper .gfield_label,
-.sidebar-contact-form .gform_wrapper .gfield_required {
-    display: none !important;
-}
-
-/* Honeypot + validation container */
-.sidebar-contact-form .gform_wrapper .gform_validation_container {
-    display: none !important;
-}
-
-/* --- Form fields --- */
-.sidebar-contact-form .gform_wrapper input[type="text"],
-.sidebar-contact-form .gform_wrapper input[type="email"],
-.sidebar-contact-form .gform_wrapper input[type="tel"],
-.sidebar-contact-form .gform_wrapper select,
-.sidebar-contact-form .gform_wrapper textarea {
+.roden-sidebar-form input[type="text"],
+.roden-sidebar-form input[type="email"],
+.roden-sidebar-form select,
+.roden-sidebar-form textarea {
     width: 100%;
     background: var(--white);
     border: 1px solid var(--gray-200);
@@ -761,23 +726,18 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     -webkit-appearance: none;
 }
-.sidebar-contact-form .gform_wrapper input::placeholder,
-.sidebar-contact-form .gform_wrapper textarea::placeholder {
+.roden-sidebar-form input::placeholder,
+.roden-sidebar-form textarea::placeholder {
     color: var(--gray-400);
 }
-
-/* Focus state */
-.sidebar-contact-form .gform_wrapper input:focus,
-.sidebar-contact-form .gform_wrapper select:focus,
-.sidebar-contact-form .gform_wrapper textarea:focus {
+.roden-sidebar-form input:focus,
+.roden-sidebar-form select:focus,
+.roden-sidebar-form textarea:focus {
     outline: none;
     border-color: var(--orange);
     box-shadow: 0 0 0 2px rgba(252, 180, 21, 0.25);
 }
-
-/* Select dropdown — gold border (always) */
-.sidebar-contact-form .gform_wrapper select {
-    border-color: var(--orange);
+.roden-sidebar-form select {
     appearance: none;
     cursor: pointer;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23555' d='M1.41 0L6 4.58 10.59 0 12 1.41l-6 6-6-6z'/%3E%3C/svg%3E");
@@ -785,94 +745,57 @@ h1, h2, h3, h4, h5, h6 {
     background-position: right 14px center;
     padding-right: 36px;
 }
-.sidebar-contact-form .gform_wrapper select option {
+.roden-sidebar-form select option {
     background: var(--white);
     color: var(--gray-800);
 }
-
-/* Textarea — gold border (always) */
-.sidebar-contact-form .gform_wrapper textarea {
-    border-color: var(--orange);
-    min-height: 100px;
+.roden-sidebar-form textarea {
+    min-height: 80px;
     resize: none;
 }
 
-/* --- Consent field --- */
-.sidebar-contact-form .gform_wrapper .gf-consent {
-    color: var(--gray-300);
-}
-.sidebar-contact-form .gform_wrapper .gf-consent .ginput_container_consent {
+/* --- Consent --- */
+.roden-sidebar-form .rsf-consent {
     display: flex;
     align-items: flex-start;
     gap: 10px;
+    cursor: pointer;
 }
-.sidebar-contact-form .gform_wrapper .gf-consent input[type="checkbox"] {
+.roden-sidebar-form .rsf-consent input[type="checkbox"] {
     width: 18px;
     height: 18px;
     min-width: 18px;
     margin: 2px 0 0;
     accent-color: var(--orange);
     cursor: pointer;
-    border-radius: 3px;
 }
-.sidebar-contact-form .gform_wrapper .gf-consent .gfield_consent_label {
-    display: inline !important;
+.roden-sidebar-form .rsf-consent span {
     font-size: 12px;
     color: var(--gray-300);
     line-height: 1.5;
-    font-weight: 400;
-    cursor: pointer;
 }
-.sidebar-contact-form .gform_wrapper .gf-consent .gfield_consent_description {
-    font-size: 12px;
-    color: var(--gray-400);
-    margin: 8px 0 0;
-    line-height: 1.5;
-    padding: 0;
-    border: none;
-    background: none;
-    max-width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-}
-.sidebar-contact-form .gform_wrapper .gf-consent .gfield_consent_description a {
+.roden-sidebar-form .rsf-consent a {
     color: var(--orange);
     text-decoration: underline;
 }
-.sidebar-contact-form .gform_wrapper .gf-consent .gfield_consent_description a:hover {
+.roden-sidebar-form .rsf-consent a:hover {
     color: var(--orange-light);
 }
 
-/* --- Native GF submit — styled as our CTA button --- */
-.sidebar-contact-form .gform_wrapper .gform_footer,
-.sidebar-contact-form .gform_wrapper .gform-footer,
-.sidebar-contact-form .gform_footer,
-.sidebar-contact-form .gform-footer {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    height: auto !important;
-    padding: 0 !important;
-    margin: 12px 0 0 !important;
-    border: 0 !important;
-    text-align: center;
-}
-.sidebar-contact-form .gform_wrapper .gform_footer input[type="submit"],
-.sidebar-contact-form .gform_wrapper .gform_button,
-.sidebar-contact-form .gform_button,
-.sidebar-contact-form input.gform_button {
-    display: block !important;
-    width: 100% !important;
-    background: var(--orange) !important;
-    color: var(--navy) !important;
-    padding: 16px 20px !important;
-    border: none !important;
-    border-radius: 8px !important;
-    font-size: 18px !important;
-    font-weight: 800 !important;
-    font-family: 'Merriweather Sans', sans-serif !important;
+/* --- Submit button --- */
+.roden-sidebar-form .rsf-submit-btn {
+    display: block;
+    width: 100%;
+    background: var(--orange);
+    color: var(--navy);
+    padding: 16px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Merriweather Sans', sans-serif;
     letter-spacing: 0.3px;
-    cursor: pointer !important;
+    cursor: pointer;
     min-height: 50px;
     text-align: center;
     line-height: 1.2;
@@ -880,35 +803,20 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-appearance: none;
     appearance: none;
 }
-.sidebar-contact-form .gform_wrapper .gform_footer input[type="submit"]:hover,
-.sidebar-contact-form .gform_wrapper .gform_button:hover,
-.sidebar-contact-form .gform_button:hover,
-.sidebar-contact-form input.gform_button:hover {
-    background: var(--orange-dark) !important;
+.roden-sidebar-form .rsf-submit-btn:hover {
+    background: var(--orange-dark);
+}
+.roden-sidebar-form .rsf-submit-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
 }
 
-/* --- Validation error styles --- */
-.sidebar-contact-form .gform_wrapper .gfield_error input,
-.sidebar-contact-form .gform_wrapper .gfield_error textarea,
-.sidebar-contact-form .gform_wrapper .gfield_error select {
-    border-color: #e74c3c;
-}
-.sidebar-contact-form .gform_wrapper .validation_message {
-    color: #ff6b6b;
-    font-size: 11px;
-    margin-top: 4px;
-    padding: 0;
-    background: none;
-    border: none;
-}
-.sidebar-contact-form .gform_wrapper .validation_error {
+/* --- Error message --- */
+.roden-sidebar-form .rsf-error {
     color: #ff6b6b;
     font-size: 13px;
-    border: 1px solid rgba(255, 107, 107, 0.3);
-    border-radius: 8px;
-    padding: 10px 14px;
-    margin-bottom: 12px;
-    background: rgba(255, 107, 107, 0.1);
+    text-align: center;
+    margin: 0;
 }
 
 /* --- Disclaimer below form --- */
@@ -920,7 +828,12 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.5;
 }
 
-/* .roden-gf-submit-btn removed — using native GF submit button styled via CSS */
+/* --- Mobile stacking --- */
+@media (max-width: 480px) {
+    .roden-sidebar-form .rsf-row.rsf-half {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 

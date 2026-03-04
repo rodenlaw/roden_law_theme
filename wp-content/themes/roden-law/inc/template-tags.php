@@ -600,13 +600,44 @@ function roden_contact_form_sidebar( $local_phone = '' ) {
     <div class="sidebar-contact-form">
         <h3 class="form-title">Free Case Review</h3>
         <p class="form-subtitle">No fees unless we win<br>500+ 5-star reviews</p>
-        <?php
-        if ( shortcode_exists( 'gravityform' ) ) {
-            echo do_shortcode( '[gravityform id="1" title="false" description="false" ajax="true"]' );
-        } else {
-            echo '<p>Call <a href="tel:+18447378587">1-844-RESULTS</a> for a free consultation.</p>';
-        }
-        ?>
+        <form class="roden-sidebar-form" id="roden-sidebar-form" novalidate>
+            <?php wp_nonce_field( 'roden_sidebar_form', 'roden_form_nonce' ); ?>
+            <div class="rsf-row rsf-half">
+                <input type="text" name="first_name" placeholder="First Name" required>
+                <input type="text" name="last_name" placeholder="Last Name" required>
+            </div>
+            <input type="text" name="phone" placeholder="Phone Number" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <select name="case_type" required>
+                <option value="" disabled selected>Case Type</option>
+                <option value="Car Accident">Car Accident</option>
+                <option value="Truck Accident">Truck Accident</option>
+                <option value="Motorcycle Accident">Motorcycle Accident</option>
+                <option value="Slip &amp; Fall">Slip &amp; Fall</option>
+                <option value="Medical Malpractice">Medical Malpractice</option>
+                <option value="Wrongful Death">Wrongful Death</option>
+                <option value="Workers' Compensation">Workers' Compensation</option>
+                <option value="Dog Bite">Dog Bite</option>
+                <option value="Brain Injury">Brain Injury</option>
+                <option value="Spinal Cord Injury">Spinal Cord Injury</option>
+                <option value="Maritime Injury">Maritime Injury</option>
+                <option value="Product Liability">Product Liability</option>
+                <option value="Boating Accident">Boating Accident</option>
+                <option value="Burn Injury">Burn Injury</option>
+                <option value="Construction Accident">Construction Accident</option>
+                <option value="Nursing Home Abuse">Nursing Home Abuse</option>
+                <option value="Premises Liability">Premises Liability</option>
+                <option value="Pedestrian Accident">Pedestrian Accident</option>
+                <option value="Other">Other</option>
+            </select>
+            <textarea name="message" placeholder="Please describe what happened" rows="3"></textarea>
+            <label class="rsf-consent">
+                <input type="checkbox" name="consent" value="1" required>
+                <span>I hereby expressly consent to receive automated communications including calls, texts, emails, and/or prerecorded messages. By submitting this form, you agree to our <a href="<?php echo esc_url( home_url( '/terms-privacy-policy/' ) ); ?>" target="_blank">Terms &amp; Privacy Policy</a>.</span>
+            </label>
+            <button type="submit" class="rsf-submit-btn">See If You Qualify</button>
+            <p class="rsf-error" style="display:none;"></p>
+        </form>
         <p class="form-disclaimer">Results may vary depending on your particular facts and legal circumstances.</p>
     </div>
     <?php
