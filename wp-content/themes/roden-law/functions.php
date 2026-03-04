@@ -268,42 +268,6 @@ function roden_gf_wrapper_visible() {
         window.addEventListener('load', showWrappers);
         document.addEventListener('gform/postRender', showWrappers);
 
-        /* TEMP DEBUG: probe the right edge between consent and button */
-        window.addEventListener('load', function() {
-            setTimeout(function() {
-                var btn = document.querySelector('.sidebar-contact-form .roden-gf-submit-btn');
-                if (!btn) return;
-                var btnRect = btn.getBoundingClientRect();
-                var formEl = document.querySelector('.sidebar-contact-form');
-                var formRect = formEl.getBoundingClientRect();
-                /* Scan a grid of points along the right edge, above the button */
-                var rightX = formRect.right - 10;
-                var startY = btnRect.top - 60;
-                var endY = btnRect.top + 5;
-                console.log('=== PROBING right edge x=' + Math.round(rightX) + ' from y=' + Math.round(startY) + ' to y=' + Math.round(endY) + ' ===');
-                var seen = new Set();
-                for (var y = startY; y <= endY; y += 2) {
-                    var els = document.elementsFromPoint(rightX, y);
-                    els.forEach(function(el) {
-                        var key = el.tagName + '|' + el.id + '|' + el.className;
-                        if (!seen.has(key)) {
-                            seen.add(key);
-                            var rect = el.getBoundingClientRect();
-                            var cs = getComputedStyle(el);
-                            console.log('  y=' + Math.round(y) + ': ' + el.tagName + ' class="' + el.className + '" id="' + el.id + '" size=' + Math.round(rect.width) + 'x' + Math.round(rect.height) + ' bg=' + cs.backgroundColor + ' border=' + cs.border + ' outline=' + cs.outline + ' boxShadow=' + cs.boxShadow);
-                        }
-                    });
-                }
-                /* Also check for pseudo-elements on consent description */
-                var consentDesc = document.querySelector('.gfield_consent_description');
-                if (consentDesc) {
-                    var before = getComputedStyle(consentDesc, '::before');
-                    var after = getComputedStyle(consentDesc, '::after');
-                    console.log('consent_description ::before content=' + before.content + ' display=' + before.display + ' w=' + before.width + ' h=' + before.height + ' bg=' + before.backgroundColor);
-                    console.log('consent_description ::after content=' + after.content + ' display=' + after.display + ' w=' + after.width + ' h=' + after.height + ' bg=' + after.backgroundColor);
-                }
-            }, 3000);
-        });
     })();
     </script>
     <?php
