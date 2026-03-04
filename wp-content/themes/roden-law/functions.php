@@ -209,3 +209,28 @@ function roden_register_sidebars() {
         'after_title'   => '</h3>',
     ) );
 }
+
+/* ==========================================================================
+   7. CONVERSION TRACKING — Thank-You Page
+   ========================================================================== */
+
+add_action( 'wp_head', 'roden_thankyou_conversion_tracking' );
+function roden_thankyou_conversion_tracking() {
+    if ( ! is_page( 1940 ) ) {
+        return;
+    }
+    ?>
+    <script>
+    window.addEventListener('load', function () {
+        /* Google Analytics / GA4 generate_lead event */
+        if (typeof gtag === 'function') {
+            gtag('event', 'generate_lead', {
+                event_category: 'contact',
+                event_label: 'form_submission',
+                value: 1
+            });
+        }
+    });
+    </script>
+    <?php
+}
