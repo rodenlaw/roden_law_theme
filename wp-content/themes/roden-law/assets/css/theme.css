@@ -1277,19 +1277,164 @@ a.sub-type-link:hover { background: var(--light); border-color: var(--orange); }
     background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12);
     border-radius: var(--radius); padding: 16px;
 }
-.roden-footer-form input {
-    width: 100%; background: transparent;
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 4px; color: var(--white); padding: 8px 10px;
-    font-size: 12px; margin-bottom: 8px; box-sizing: border-box;
+/* Gravity Forms inside footer mini form */
+.footer-mini-form .gform_wrapper.gform_legacy_markup_wrapper {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
 }
-.roden-footer-form input:focus {
-    border-color: var(--orange); outline: none;
+.footer-mini-form .gform_wrapper .gform-body {
+    padding: 0;
 }
-.roden-footer-form input::placeholder { color: rgba(255,255,255,0.5); }
-.roden-footer-form .btn-block {
-    width: 100%; display: block; box-sizing: border-box;
-    margin-top: 4px;
+.footer-mini-form .gform_wrapper ul.gform_fields {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+.footer-mini-form .gform_wrapper ul.gform_fields li.gfield {
+    grid-column: span 2;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.footer-mini-form .gform_wrapper ul.gform_fields li.gf-col-half {
+    grid-column: span 1;
+}
+.footer-mini-form .gform_wrapper .gfield_label,
+.footer-mini-form .gform_wrapper .gfield_required {
+    display: none !important;
+}
+.footer-mini-form .gform_wrapper .gform_validation_container {
+    display: none !important;
+}
+.footer-mini-form .gform_wrapper input[type="text"],
+.footer-mini-form .gform_wrapper input[type="email"],
+.footer-mini-form .gform_wrapper input[type="tel"],
+.footer-mini-form .gform_wrapper select,
+.footer-mini-form .gform_wrapper textarea {
+    width: 100%;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 6px;
+    color: var(--white);
+    padding: 9px 10px;
+    font-size: 12px;
+    font-family: var(--font-sans);
+    box-sizing: border-box;
+    margin: 0;
+    -webkit-appearance: none;
+}
+.footer-mini-form .gform_wrapper input::placeholder,
+.footer-mini-form .gform_wrapper textarea::placeholder {
+    color: rgba(255,255,255,0.5);
+}
+.footer-mini-form .gform_wrapper input:focus,
+.footer-mini-form .gform_wrapper select:focus,
+.footer-mini-form .gform_wrapper textarea:focus {
+    outline: none;
+    border-color: var(--orange);
+    box-shadow: 0 0 0 2px rgba(252,180,21,0.2);
+}
+.footer-mini-form .gform_wrapper select {
+    appearance: none;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='rgba(255,255,255,0.5)' d='M1.41 0L6 4.58 10.59 0 12 1.41l-6 6-6-6z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 28px;
+}
+.footer-mini-form .gform_wrapper select option {
+    background: var(--navy);
+    color: var(--white);
+}
+.footer-mini-form .gform_wrapper textarea {
+    min-height: 60px;
+    resize: none;
+}
+/* Footer consent — compact */
+.footer-mini-form .gform_wrapper .gf-consent .ginput_container_consent {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.footer-mini-form .gform_wrapper .gf-consent input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+    min-width: 14px;
+    margin: 1px 0 0;
+    accent-color: var(--orange);
+    cursor: pointer;
+}
+.footer-mini-form .gform_wrapper .gf-consent .gfield_consent_label {
+    display: inline !important;
+    font-size: 10px;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.4;
+    font-weight: 400;
+    cursor: pointer;
+}
+.footer-mini-form .gform_wrapper .gf-consent .gfield_consent_description {
+    font-size: 10px;
+    color: rgba(255,255,255,0.4);
+    margin: 4px 0 0;
+    line-height: 1.4;
+    padding: 0;
+    border: none;
+    background: none;
+}
+.footer-mini-form .gform_wrapper .gf-consent .gfield_consent_description a {
+    color: var(--orange);
+    text-decoration: underline;
+}
+.footer-mini-form .gform_wrapper .gf-consent .gfield_consent_description a:hover {
+    color: var(--orange-light);
+}
+/* Footer submit button */
+.footer-mini-form .gform_wrapper .gform_footer,
+.footer-mini-form .gform_wrapper .gform-footer {
+    margin: 0;
+    padding: 10px 0 0;
+}
+.footer-mini-form .gform_wrapper .gform_button {
+    width: 100%;
+    background: var(--orange);
+    color: var(--navy);
+    border: none;
+    border-radius: 6px;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: var(--font-sans);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.footer-mini-form .gform_wrapper .gform_button:hover {
+    background: var(--orange-dark);
+}
+/* Footer validation */
+.footer-mini-form .gform_wrapper .gfield_error input,
+.footer-mini-form .gform_wrapper .gfield_error textarea,
+.footer-mini-form .gform_wrapper .gfield_error select {
+    border-color: #e74c3c;
+}
+.footer-mini-form .gform_wrapper .validation_message {
+    color: #ff6b6b;
+    font-size: 10px;
+    margin-top: 2px;
+    padding: 0;
+    background: none;
+    border: none;
+}
+.footer-mini-form .gform_wrapper .validation_error {
+    color: #ff6b6b;
+    font-size: 11px;
+    border: 1px solid rgba(255,107,107,0.3);
+    border-radius: 6px;
+    padding: 8px 10px;
+    margin-bottom: 8px;
+    background: rgba(255,107,107,0.1);
 }
 
 .footer-disclaimers {
