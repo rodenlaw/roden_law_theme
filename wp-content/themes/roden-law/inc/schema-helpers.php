@@ -795,7 +795,7 @@ function roden_schema_article( $firm ) {
         '@context'      => 'https://schema.org',
         '@type'         => 'BlogPosting',
         'headline'      => get_the_title( $post_id ),
-        'description'   => $excerpt ?: wp_trim_words( wp_strip_all_tags( $content ), 30 ),
+        'description'   => html_entity_decode( wp_strip_all_tags( $excerpt ?: wp_trim_words( $content, 30 ) ), ENT_QUOTES, 'UTF-8' ),
         'url'           => get_permalink( $post_id ),
         'datePublished' => get_the_date( 'c', $post_id ),
         'dateModified'  => get_the_modified_date( 'c', $post_id ),
@@ -824,7 +824,7 @@ function roden_schema_article( $firm ) {
         );
     }
 
-    // Author — linked attorney if set, otherwise WP author
+    // Author — linked attorney if set, WP author, or fall back to firm
     $author_id = get_post_meta( $post_id, '_roden_author_attorney', true );
     $atty      = $author_id ? get_post( $author_id ) : null;
 
@@ -836,10 +836,20 @@ function roden_schema_article( $firm ) {
             'url'   => get_permalink( $atty ),
         );
     } else {
-        $schema['author'] = array(
-            '@type' => 'Person',
-            'name'  => get_the_author(),
-        );
+        $wp_author = get_the_author();
+        if ( $wp_author ) {
+            $schema['author'] = array(
+                '@type' => 'Person',
+                'name'  => $wp_author,
+            );
+        } else {
+            // Fall back to the firm as author when no individual is set
+            $schema['author'] = array(
+                '@type' => 'Organization',
+                '@id'   => $firm['url'] . '/#organization',
+                'name'  => $firm['name'],
+            );
+        }
     }
 
     // Publisher logo
