@@ -83,7 +83,7 @@
 
     /* ── Form Submission Tracking ─────────────────────────────── */
 
-    document.querySelectorAll('.roden-contact-form, .roden-footer-form').forEach(function (form) {
+    document.querySelectorAll('.gform_wrapper form, .roden-contact-form, .roden-footer-form').forEach(function (form) {
         form.addEventListener('submit', function () {
             if (typeof gtag === 'function') {
                 gtag('event', 'form_submit', {

@@ -596,38 +596,17 @@ function roden_neighborhood_grid( $current_post_id ) {
    ========================================================================== */
 
 function roden_contact_form_sidebar( $local_phone = '' ) {
-    $firm = roden_firm_data();
     ?>
     <div class="sidebar-contact-form">
         <h3 class="form-title">Free Case Review</h3>
         <p class="form-subtitle">No fees unless we win<br>500+ 5-star reviews</p>
-        <form class="roden-contact-form" method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
-            <input type="hidden" name="action" value="roden_contact_form">
-            <?php wp_nonce_field( 'roden_contact', '_roden_contact_nonce' ); ?>
-            <div class="form-row-2col">
-                <input type="text" name="first_name" placeholder="First Name" required>
-                <input type="text" name="last_name" placeholder="Last Name" required>
-            </div>
-            <div class="form-row-2col">
-                <input type="tel" name="phone" placeholder="Phone Number" required>
-                <input type="text" name="zip" placeholder="Zip Code">
-            </div>
-            <input type="email" name="email" placeholder="E-mail" required>
-            <select name="case_type" required>
-                <option value="" disabled selected>- Case Type -</option>
-                <option value="motor-vehicle-accident">Motor Vehicle Accident</option>
-                <option value="other-injury">Other Injury Type</option>
-            </select>
-            <textarea name="message" placeholder="Please describe what happened" rows="4"></textarea>
-            <div class="form-consent">
-                <label class="consent-checkbox">
-                    <input type="checkbox" name="consent" value="1" required>
-                    <span>I hereby expressly consent to receive automated communications including calls, texts, emails, and/or prerecorded messages.</span>
-                </label>
-                <p class="consent-terms">By submitting this form, you agree to our <a href="<?php echo esc_url( home_url( '/privacy-policy/' ) ); ?>">Terms &amp; Privacy Policy</a>.</p>
-            </div>
-            <button type="submit" class="btn btn-primary btn-block">See If You Qualify</button>
-        </form>
+        <?php
+        if ( shortcode_exists( 'gravityform' ) ) {
+            echo do_shortcode( '[gravityform id="1" title="false" description="false" ajax="true"]' );
+        } else {
+            echo '<p>Call <a href="tel:+18447378587">1-844-RESULTS</a> for a free consultation.</p>';
+        }
+        ?>
         <p class="form-disclaimer">Results may vary depending on your particular facts and legal circumstances.</p>
     </div>
     <?php
