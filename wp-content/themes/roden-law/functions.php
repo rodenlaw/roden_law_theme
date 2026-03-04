@@ -275,20 +275,28 @@ function roden_sidebar_form_handler() {
         wp_send_json_error( 'Please fill in all required fields and accept the consent.' );
     }
 
-    // Submit via GFAPI if available (creates a real GF entry + triggers notifications).
+    // Create a GF entry directly (bypasses form validation so Zip isn't required).
     if ( class_exists( 'GFAPI' ) ) {
-        $entry = GFAPI::submit_form( 1, array(
-            'input_9'    => $first_name,
-            'input_10'   => $last_name,
-            'input_4'    => $phone,
-            'input_3'    => $email,
-            'input_11'   => $case_type,
-            'input_6'    => $message,
-            'input_12_1' => $consent,
-        ) );
+        $entry_data = array(
+            'form_id'    => 1,
+            '9'          => $first_name,
+            '10'         => $last_name,
+            '4'          => $phone,
+            '3'          => $email,
+            '11'         => $case_type,
+            '6'          => $message,
+            '12.1'       => $consent ? 'Checked' : '',
+            'source_url' => wp_get_referer() ? wp_get_referer() : home_url(),
+            'ip'         => $_SERVER['REMOTE_ADDR'] ?? '',
+            'user_agent' => $_SERVER['HTTP_USER_AGENT'] ?? '',
+        );
+        $entry_id = GFAPI::add_entry( $entry_data );
 
-        if ( is_wp_error( $entry ) ) {
-            wp_send_json_error( 'Submission failed. Please call 1-844-RESULTS instead.' );
+        if ( ! is_wp_error( $entry_id ) ) {
+            // Trigger GF notifications (admin alert + client confirmation emails).
+            $form  = GFAPI::get_form( 1 );
+            $entry = GFAPI::get_entry( $entry_id );
+            GFAPI::send_notifications( $form, $entry );
         }
     } else {
         // Fallback: send email directly.
