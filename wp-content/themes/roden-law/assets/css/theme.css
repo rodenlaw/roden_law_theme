@@ -1918,7 +1918,7 @@ body.nav-open { overflow: hidden; }
 
 @media (max-width: 900px) {
     .hero-grid { grid-template-columns: 1fr; }
-    .hero-form { display: none !important; } /* Show only on desktop */
+    .hero-form { margin-top: 24px; } /* Stack below hero text on mobile */
     .content-sidebar-grid { grid-template-columns: 1fr; }
     .sidebar { padding: 24px; }
     .main-content { padding: 24px 0; border-right: none; }

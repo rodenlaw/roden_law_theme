@@ -268,22 +268,29 @@ function roden_gf_wrapper_visible() {
         window.addEventListener('load', showWrappers);
         document.addEventListener('gform/postRender', showWrappers);
 
-        /* TEMP DEBUG: find the white box */
+        /* TEMP DEBUG: find the white box — check ALL visible elements */
         window.addEventListener('load', function() {
             setTimeout(function() {
-                document.querySelectorAll('.sidebar-contact-form *, .sidebar-contact-form').forEach(function(el) {
+                var formEl = document.querySelector('.sidebar-contact-form');
+                if (!formEl) return;
+                var allEls = formEl.querySelectorAll('*');
+                var results = [];
+                allEls.forEach(function(el) {
                     var rect = el.getBoundingClientRect();
-                    if (rect.width < 1 || rect.height < 1) return;
+                    if (rect.width < 2 || rect.height < 2) return;
                     var cs = getComputedStyle(el);
-                    if (cs.display === 'none' || cs.visibility === 'hidden' || cs.opacity === '0') return;
-                    var bg = cs.backgroundColor;
-                    var isWhite = (bg === 'rgb(255, 255, 255)' || bg === 'rgba(255, 255, 255, 1)' || bg === 'white');
-                    var isSmall = (rect.width < 80 && rect.height < 80);
-                    if (isWhite && isSmall) {
-                        el.style.outline = '3px solid red';
-                        console.log('WHITE BOX FOUND:', el.tagName, el.className, el.id, 'size:', Math.round(rect.width)+'x'+Math.round(rect.height), 'parent:', el.parentElement.className);
-                    }
+                    if (cs.display === 'none' || cs.visibility === 'hidden') return;
+                    /* Skip expected elements */
+                    var tag = el.tagName;
+                    if (tag === 'UL' || tag === 'LI' || tag === 'LABEL' || tag === 'SPAN' || tag === 'A' || tag === 'DIV' || tag === 'FORM' || tag === 'P' || tag === 'H3') return;
+                    /* Log every remaining visible element */
+                    var info = tag + ' class="' + el.className + '" id="' + el.id + '" size=' + Math.round(rect.width) + 'x' + Math.round(rect.height) + ' bg=' + cs.backgroundColor + ' border=' + cs.border + ' parent=' + el.parentElement.className;
+                    results.push(info);
+                    el.style.outline = '3px solid red';
+                    el.style.outlineOffset = '-1px';
                 });
+                console.log('=== SIDEBAR FORM ELEMENT AUDIT (' + results.length + ' elements) ===');
+                results.forEach(function(r) { console.log(r); });
             }, 3000);
         });
     })();
