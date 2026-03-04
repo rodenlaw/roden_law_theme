@@ -685,10 +685,6 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 10;
 }
 
-/* FreshChat widget — lower z-index so it doesn't overlap sidebar form */
-#fd-chat {
-    z-index: 9 !important;
-}
 .sidebar-contact-form .form-title {
     font-weight: 800;
     font-size: 22px;
@@ -835,6 +831,9 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
     border: none;
     background: none;
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 .sidebar-contact-form .gform_wrapper .gf-consent .gfield_consent_description a {
     color: var(--orange);
