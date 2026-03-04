@@ -211,8 +211,17 @@ function roden_register_sidebars() {
 }
 
 /* ==========================================================================
-   7. CONVERSION TRACKING — Thank-You Page
+   7. THANK-YOU PAGE — Noindex + Conversion Tracking
    ========================================================================== */
+
+add_filter( 'wp_robots', 'roden_thankyou_noindex' );
+function roden_thankyou_noindex( $robots ) {
+    if ( is_page( 1940 ) ) {
+        $robots['noindex'] = true;
+        $robots['nofollow'] = true;
+    }
+    return $robots;
+}
 
 add_action( 'wp_head', 'roden_thankyou_conversion_tracking' );
 function roden_thankyou_conversion_tracking() {
