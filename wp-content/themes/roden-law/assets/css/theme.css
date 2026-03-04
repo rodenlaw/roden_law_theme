@@ -841,11 +841,7 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar-contact-form .gform_wrapper .gform-footer,
 .sidebar-contact-form .gform_footer,
 .sidebar-contact-form .gform-footer {
-    position: absolute !important;
-    left: -9999px !important;
-    height: 0 !important;
-    overflow: hidden !important;
-    opacity: 0 !important;
+    display: none !important;
 }
 
 /* --- Validation error styles --- */
@@ -1427,11 +1423,7 @@ a.sub-type-link:hover { background: var(--light); border-color: var(--orange); }
 .footer-mini-form .gform_wrapper .gform-footer,
 .footer-mini-form .gform_footer,
 .footer-mini-form .gform-footer {
-    position: absolute !important;
-    left: -9999px !important;
-    height: 0 !important;
-    overflow: hidden !important;
-    opacity: 0 !important;
+    display: none !important;
 }
 /* Footer custom submit button — smaller for footer context */
 .footer-mini-form .roden-gf-submit-btn {
