@@ -674,126 +674,221 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar-links li a:hover { color: var(--orange-text); }
 .sidebar-links .count { font-size: 10px; color: var(--gray-400); }
 
-/* ─── SIDEBAR CONTACT FORM (M&M-style) ────────────────────────────────── */
+/* ─── SIDEBAR CONTACT FORM ─────────────────────────────────────────────── */
 
 .sidebar-contact-form {
-    background: var(--navy); border-radius: var(--radius-lg); padding: 24px; color: var(--white);
+    background: var(--navy);
+    border-radius: var(--radius-lg);
+    padding: 28px 24px;
+    color: var(--white);
 }
-.form-title {
-    font-weight: 800; font-size: 22px; margin-bottom: 4px;
-    font-family: var(--font-serif); color: var(--white);
+.sidebar-contact-form .form-title {
+    font-weight: 800;
+    font-size: 22px;
+    margin: 0 0 4px;
+    font-family: var(--font-serif);
+    color: var(--white);
 }
-.form-subtitle {
-    font-size: 11px; color: var(--gray-400); margin-bottom: 16px; line-height: 1.6;
+.sidebar-contact-form .form-subtitle {
+    font-size: 13px;
+    color: var(--orange);
+    margin: 0 0 20px;
+    line-height: 1.6;
 }
 
-/* Form fields — white background, dark text (M&M style) */
-.roden-contact-form input[type="text"],
-.roden-contact-form input[type="tel"],
-.roden-contact-form input[type="email"],
-.roden-contact-form textarea,
-.roden-contact-form select {
+/* --- Gravity Forms reset inside sidebar --- */
+.sidebar-contact-form .gform_wrapper.gform_legacy_markup_wrapper {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+.sidebar-contact-form .gform_wrapper .gform-body {
+    padding: 0;
+}
+.sidebar-contact-form .gform_wrapper ul.gform_fields {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+/* Default: fields span full width */
+.sidebar-contact-form .gform_wrapper ul.gform_fields li.gfield {
+    grid-column: span 2;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Half-width columns (First/Last, Phone/Zip) */
+.sidebar-contact-form .gform_wrapper ul.gform_fields li.gf-col-half {
+    grid-column: span 1;
+}
+
+/* Hide labels (using placeholders) */
+.sidebar-contact-form .gform_wrapper .gfield_label,
+.sidebar-contact-form .gform_wrapper .gfield_required {
+    display: none !important;
+}
+
+/* Honeypot + validation container */
+.sidebar-contact-form .gform_wrapper .gform_validation_container {
+    display: none !important;
+}
+
+/* --- Form fields --- */
+.sidebar-contact-form .gform_wrapper input[type="text"],
+.sidebar-contact-form .gform_wrapper input[type="email"],
+.sidebar-contact-form .gform_wrapper input[type="tel"],
+.sidebar-contact-form .gform_wrapper select,
+.sidebar-contact-form .gform_wrapper textarea {
     width: 100%;
     background: var(--white);
     border: 1px solid var(--gray-200);
     border-radius: 8px;
     color: var(--gray-800);
-    padding: 12px 14px;
+    padding: 13px 14px;
     font-size: 14px;
-    margin-bottom: 12px;
     font-family: var(--font-sans);
     box-sizing: border-box;
+    margin: 0;
+    -webkit-appearance: none;
 }
-.roden-contact-form input::placeholder,
-.roden-contact-form textarea::placeholder {
+.sidebar-contact-form .gform_wrapper input::placeholder,
+.sidebar-contact-form .gform_wrapper textarea::placeholder {
     color: var(--gray-400);
 }
-.roden-contact-form input:focus,
-.roden-contact-form textarea:focus,
-.roden-contact-form select:focus {
+
+/* Focus state */
+.sidebar-contact-form .gform_wrapper input:focus,
+.sidebar-contact-form .gform_wrapper select:focus,
+.sidebar-contact-form .gform_wrapper textarea:focus {
     outline: none;
     border-color: var(--orange);
     box-shadow: 0 0 0 2px rgba(252, 180, 21, 0.25);
 }
-.roden-contact-form textarea {
+
+/* Select dropdown — gold border (always) */
+.sidebar-contact-form .gform_wrapper select {
+    border-color: var(--orange);
+    appearance: none;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23555' d='M1.41 0L6 4.58 10.59 0 12 1.41l-6 6-6-6z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 36px;
+}
+.sidebar-contact-form .gform_wrapper select option {
+    background: var(--white);
+    color: var(--gray-800);
+}
+
+/* Textarea — gold border (always) */
+.sidebar-contact-form .gform_wrapper textarea {
+    border-color: var(--orange);
+    min-height: 100px;
     resize: none;
 }
 
-/* Select dropdown */
-.roden-contact-form select {
-    appearance: none; -webkit-appearance: none; cursor: pointer;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23555' d='M1.41 0L6 4.58 10.59 0 12 1.41l-6 6-6-6z'/%3E%3C/svg%3E");
-    background-repeat: no-repeat; background-position: right 14px center;
-    padding-right: 36px;
+/* --- Consent field --- */
+.sidebar-contact-form .gform_wrapper .gf-consent {
+    color: var(--gray-300);
 }
-.roden-contact-form select option {
-    background: var(--white); color: var(--gray-800);
-}
-
-/* 2-column field rows (First/Last, Phone/Zip) */
-.form-row-2col {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-}
-.form-row-2col input {
-    margin-bottom: 0;
-}
-.form-row-2col {
-    margin-bottom: 12px;
-}
-
-/* Consent checkbox + disclaimer */
-.form-consent {
-    margin: 8px 0 14px;
-}
-.sidebar-contact-form .consent-checkbox {
+.sidebar-contact-form .gform_wrapper .gf-consent .ginput_container_consent {
     display: flex;
     align-items: flex-start;
-    gap: 8px;
-    font-size: 11px;
-    color: var(--gray-300);
-    line-height: 1.5;
-    cursor: pointer;
+    gap: 10px;
 }
-.consent-checkbox input[type="checkbox"] {
-    width: 16px; height: 16px;
-    margin: 0; flex-shrink: 0;
+.sidebar-contact-form .gform_wrapper .gf-consent input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+    margin: 2px 0 0;
     accent-color: var(--orange);
     cursor: pointer;
+    border-radius: 3px;
 }
-.sidebar-contact-form .consent-terms {
-    font-size: 11px;
+.sidebar-contact-form .gform_wrapper .gf-consent .gfield_consent_label {
+    display: inline !important;
+    font-size: 12px;
+    color: var(--gray-300);
+    line-height: 1.5;
+    font-weight: 400;
+    cursor: pointer;
+}
+.sidebar-contact-form .gform_wrapper .gf-consent .gfield_consent_description {
+    display: none;
+}
+.sidebar-contact-form .gform_wrapper .gf-consent .gfield_description {
+    font-size: 12px;
     color: var(--gray-400);
     margin: 8px 0 0;
     line-height: 1.5;
-    padding-left: 24px;
+    padding: 0;
 }
-.sidebar-contact-form .consent-terms a {
+.sidebar-contact-form .gform_wrapper .gf-consent .gfield_description a {
     color: var(--orange);
     text-decoration: underline;
 }
-.sidebar-contact-form .consent-terms a:hover {
+.sidebar-contact-form .gform_wrapper .gf-consent .gfield_description a:hover {
     color: var(--orange-light);
 }
 
-/* Submit button */
-.roden-contact-form .btn {
-    margin-bottom: 0;
+/* --- Submit button --- */
+.sidebar-contact-form .gform_wrapper .gform_footer,
+.sidebar-contact-form .gform_wrapper .gform-footer {
+    margin: 0;
+    padding: 16px 0 0;
+}
+.sidebar-contact-form .gform_wrapper .gform_button {
     width: 100%;
-    padding: 14px 20px;
-    font-size: 16px;
-    font-weight: 800;
+    background: var(--orange);
+    color: var(--navy);
+    border: none;
     border-radius: 8px;
+    padding: 16px 20px;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: var(--font-sans);
+    cursor: pointer;
     letter-spacing: 0.3px;
+    transition: background 0.2s;
+}
+.sidebar-contact-form .gform_wrapper .gform_button:hover {
+    background: var(--orange-dark);
 }
 
-/* Disclaimer below form */
+/* --- Validation error styles --- */
+.sidebar-contact-form .gform_wrapper .gfield_error input,
+.sidebar-contact-form .gform_wrapper .gfield_error textarea,
+.sidebar-contact-form .gform_wrapper .gfield_error select {
+    border-color: #e74c3c;
+}
+.sidebar-contact-form .gform_wrapper .validation_message {
+    color: #ff6b6b;
+    font-size: 11px;
+    margin-top: 4px;
+    padding: 0;
+    background: none;
+    border: none;
+}
+.sidebar-contact-form .gform_wrapper .validation_error {
+    color: #ff6b6b;
+    font-size: 13px;
+    border: 1px solid rgba(255, 107, 107, 0.3);
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-bottom: 12px;
+    background: rgba(255, 107, 107, 0.1);
+}
+
+/* --- Disclaimer below form --- */
 .sidebar-contact-form .form-disclaimer {
     text-align: center;
     font-size: 11px;
     color: var(--gray-500);
-    margin: 10px 0 0;
+    margin: 12px 0 0;
     line-height: 1.5;
 }
 
