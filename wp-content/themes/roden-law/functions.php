@@ -268,6 +268,16 @@ function roden_gf_wrapper_visible() {
         window.addEventListener('load', showWrappers);
         document.addEventListener('gform/postRender', showWrappers);
 
+        /* TEMP: find fd-chat parent chain + position */
+        window.addEventListener('load', function(){setTimeout(function(){
+            var el = document.getElementById('fd-chat');
+            if(!el){console.log('fd-chat NOT FOUND');return;}
+            var cs = getComputedStyle(el);
+            var rect = el.getBoundingClientRect();
+            console.log('fd-chat: position='+cs.position+' z-index='+cs.zIndex+' top='+cs.top+' right='+cs.right+' left='+cs.left+' bottom='+cs.bottom+' rect=('+Math.round(rect.left)+','+Math.round(rect.top)+','+Math.round(rect.right)+','+Math.round(rect.bottom)+')');
+            var chain=[];var p=el;while(p){chain.push(p.tagName+(p.id?'#'+p.id:'')+'.'+(p.className?p.className.split(' ')[0]:''));p=p.parentElement;}
+            console.log('fd-chat DOM chain: '+chain.join(' < '));
+        },3000);});
     })();
     </script>
     <?php
