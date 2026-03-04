@@ -711,6 +711,7 @@ h1, h2, h3, h4, h5, h6 {
     gap: 12px;
 }
 .roden-sidebar-form input[type="text"],
+.roden-sidebar-form input[type="tel"],
 .roden-sidebar-form input[type="email"],
 .roden-sidebar-form select,
 .roden-sidebar-form textarea {
