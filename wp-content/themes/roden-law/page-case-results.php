@@ -102,7 +102,25 @@ if ( ! $featured_id ) {
                 'columns' => 3,
                 'exclude' => $featured_id ? array( $featured_id ) : array(),
             ) );
+
+            // Count total remaining results for Load More
+            $total_results = wp_count_posts( 'case_result' );
+            $total_published = $total_results->publish;
+            $shown = $featured_id ? 21 : 20; // 1 featured + 20 grid
+            if ( $total_published > $shown ) :
             ?>
+            <div class="load-more-wrap" style="text-align:center; margin-top: var(--space-xl);">
+                <button class="btn btn-primary btn-lg" id="load-more-results"
+                    data-offset="20"
+                    data-exclude="<?php echo esc_attr( $featured_id ); ?>"
+                    data-total="<?php echo esc_attr( $total_published ); ?>">
+                    Load More Results
+                </button>
+                <p class="load-more-count">
+                    Showing <span id="shown-count"><?php echo $shown; ?></span> of <?php echo esc_html( $total_published ); ?> results
+                </p>
+            </div>
+            <?php endif; ?>
         </div>
     </section>
 

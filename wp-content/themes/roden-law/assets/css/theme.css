@@ -456,6 +456,10 @@ h1, h2, h3, h4, h5, h6 {
     .case-results-grid.cols-4 { grid-template-columns: 1fr; }
 }
 
+/* ─── LOAD MORE ─────────────────────────────────────────────────────── */
+.load-more-wrap { margin-top: 40px; text-align: center; }
+.load-more-count { color: var(--text-light); font-size: 0.9rem; margin-top: 12px; }
+
 /* ─── FEATURED RESULT (archive hero callout) ─────────────────────────── */
 
 .featured-result-section { padding-top: 24px; padding-bottom: 48px; }

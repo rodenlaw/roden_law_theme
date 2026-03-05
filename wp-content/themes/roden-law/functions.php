@@ -388,3 +388,118 @@ function roden_sidebar_form_js() {
     </script>
     <?php
 }
+
+/* ==========================================================================
+   9. LOAD MORE CASE RESULTS — AJAX handler
+   ========================================================================== */
+
+add_action( 'wp_ajax_roden_load_more_results', 'roden_load_more_results_handler' );
+add_action( 'wp_ajax_nopriv_roden_load_more_results', 'roden_load_more_results_handler' );
+function roden_load_more_results_handler() {
+    $offset  = absint( $_POST['offset'] ?? 0 );
+    $exclude = absint( $_POST['exclude'] ?? 0 );
+    $per_page = 20;
+
+    $query_args = array(
+        'post_type'      => 'case_result',
+        'posts_per_page' => $per_page,
+        'offset'         => $offset,
+        'orderby'        => 'meta_value_num',
+        'meta_key'       => '_roden_case_amount_raw',
+        'order'          => 'DESC',
+    );
+
+    if ( $exclude ) {
+        $query_args['post__not_in'] = array( $exclude );
+    }
+
+    $results = new WP_Query( $query_args );
+
+    if ( ! $results->have_posts() ) {
+        wp_send_json_success( array( 'html' => '', 'count' => 0 ) );
+    }
+
+    ob_start();
+    while ( $results->have_posts() ) :
+        $results->the_post();
+        $amount = get_post_meta( get_the_ID(), '_roden_case_amount', true );
+        $type   = get_post_meta( get_the_ID(), '_roden_case_type', true );
+        $desc   = get_post_meta( get_the_ID(), '_roden_description', true );
+        ?>
+        <div class="result-card">
+            <span class="result-type"><?php echo esc_html( ucfirst( $type ) ); ?></span>
+            <span class="result-amount"><?php echo esc_html( $amount ); ?></span>
+            <span class="result-title"><?php the_title(); ?></span>
+            <?php if ( $desc ) : ?>
+                <p class="result-desc"><?php echo esc_html( $desc ); ?></p>
+            <?php endif; ?>
+        </div>
+        <?php
+    endwhile;
+    $html = ob_get_clean();
+    wp_reset_postdata();
+
+    wp_send_json_success( array(
+        'html'  => $html,
+        'count' => $results->post_count,
+    ) );
+}
+
+/**
+ * Load More case results JS.
+ */
+add_action( 'wp_footer', 'roden_load_more_js', 998 );
+function roden_load_more_js() {
+    if ( ! is_page( 'case-results' ) ) return;
+    ?>
+    <script>
+    (function(){
+        var btn = document.getElementById('load-more-results');
+        if (!btn) return;
+        var grid = document.querySelector('.case-results-grid');
+        var shownEl = document.getElementById('shown-count');
+        var total = parseInt(btn.getAttribute('data-total'), 10);
+
+        btn.addEventListener('click', function() {
+            var offset = parseInt(btn.getAttribute('data-offset'), 10);
+            var exclude = btn.getAttribute('data-exclude');
+            btn.disabled = true;
+            btn.textContent = 'Loading…';
+
+            var fd = new FormData();
+            fd.append('action', 'roden_load_more_results');
+            fd.append('offset', offset);
+            fd.append('exclude', exclude);
+
+            fetch('<?php echo esc_url( admin_url( 'admin-ajax.php' ) ); ?>', {
+                method: 'POST',
+                body: fd
+            })
+            .then(function(r){ return r.json(); })
+            .then(function(data){
+                if (data.success && data.data.html) {
+                    grid.insertAdjacentHTML('beforeend', data.data.html);
+                    var newOffset = offset + data.data.count;
+                    btn.setAttribute('data-offset', newOffset);
+                    var nowShown = parseInt(shownEl.textContent, 10) + data.data.count;
+                    shownEl.textContent = nowShown;
+
+                    if (nowShown >= total || data.data.count < 20) {
+                        btn.parentNode.style.display = 'none';
+                    } else {
+                        btn.disabled = false;
+                        btn.textContent = 'Load More Results';
+                    }
+                } else {
+                    btn.parentNode.style.display = 'none';
+                }
+            })
+            .catch(function(){
+                btn.disabled = false;
+                btn.textContent = 'Load More Results';
+            });
+        });
+    })();
+    </script>
+    <?php
+}
