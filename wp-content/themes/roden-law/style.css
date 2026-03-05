@@ -1433,7 +1433,8 @@ input[type="submit"] {
     color: var(--color-white);
 }
 
-.case-result-card-dark .case-description {
+.case-result-card-dark .case-description,
+.case-result-card-dark .case-label {
     font-size: 0.9rem;
     color: #aab4c8;
     margin-top: var(--space-sm);
