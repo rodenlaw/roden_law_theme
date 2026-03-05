@@ -273,7 +273,8 @@ $tel   = $firm['phone_raw'];
             border-color: var(--gold);
             background: white;
         }
-        .form-group input::placeholder {
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
             color: #a0aec0;
         }
         .form-row {
@@ -860,7 +861,8 @@ $tel   = $firm['phone_raw'];
             <div class="form-urgency">&#9201; SC has a 3-year filing deadline</div>
             <h2>Free Case Review</h2>
             <p class="form-subtitle">Find out what your case is worth &mdash; in minutes.</p>
-            <form id="leadForm" action="#" method="POST">
+            <form id="leadForm" action="#" method="POST" novalidate>
+                <?php wp_nonce_field( 'roden_sidebar_form', 'roden_form_nonce' ); ?>
                 <div class="form-row">
                     <div class="form-group">
                         <input type="text" name="first_name" placeholder="First Name*" required>
@@ -871,29 +873,45 @@ $tel   = $firm['phone_raw'];
                 </div>
                 <div class="form-row">
                     <div class="form-group">
-                        <input type="tel" name="phone" placeholder="Phone Number*" required>
+                        <input type="tel" name="phone" id="lp-phone" placeholder="(555) 555-5555" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" name="email" placeholder="Email Address*" required>
+                        <input type="email" name="email" id="lp-email" placeholder="Email Address*" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
                     </div>
                 </div>
                 <div class="form-group">
-                    <select name="accident_type">
-                        <option value="" disabled selected>Type of Car Accident</option>
-                        <option value="rear-end">Rear-End Collision</option>
-                        <option value="head-on">Head-On Collision</option>
-                        <option value="t-bone">T-Bone / Side Impact</option>
-                        <option value="hit-run">Hit and Run</option>
-                        <option value="multi-vehicle">Multi-Vehicle Pileup</option>
-                        <option value="rideshare">Uber / Lyft Accident</option>
-                        <option value="uninsured">Uninsured Motorist</option>
-                        <option value="other">Other</option>
+                    <select name="case_type" required>
+                        <option value="" disabled selected>Case Type</option>
+                        <option value="Car Accident">Car Accident</option>
+                        <option value="Truck Accident">Truck Accident</option>
+                        <option value="Motorcycle Accident">Motorcycle Accident</option>
+                        <option value="Slip &amp; Fall">Slip &amp; Fall</option>
+                        <option value="Medical Malpractice">Medical Malpractice</option>
+                        <option value="Wrongful Death">Wrongful Death</option>
+                        <option value="Workers' Compensation">Workers' Compensation</option>
+                        <option value="Dog Bite">Dog Bite</option>
+                        <option value="Brain Injury">Brain Injury</option>
+                        <option value="Spinal Cord Injury">Spinal Cord Injury</option>
+                        <option value="Maritime Injury">Maritime Injury</option>
+                        <option value="Product Liability">Product Liability</option>
+                        <option value="Boating Accident">Boating Accident</option>
+                        <option value="Burn Injury">Burn Injury</option>
+                        <option value="Construction Accident">Construction Accident</option>
+                        <option value="Nursing Home Abuse">Nursing Home Abuse</option>
+                        <option value="Premises Liability">Premises Liability</option>
+                        <option value="Pedestrian Accident">Pedestrian Accident</option>
+                        <option value="Other">Other</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <input type="text" name="injury" placeholder="Briefly describe your injuries">
+                    <textarea name="message" placeholder="Please describe what happened" rows="3"></textarea>
                 </div>
+                <label class="form-consent" style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;cursor:pointer;">
+                    <input type="checkbox" name="consent" value="1" checked required style="width:18px;height:18px;min-width:18px;margin-top:2px;accent-color:#f5a623;cursor:pointer;">
+                    <span style="font-size:11px;color:rgba(255,255,255,0.7);line-height:1.5;">I hereby expressly consent to receive automated communications including calls, texts, emails, and/or prerecorded messages. By submitting this form, you agree to our <a href="<?php echo esc_url( home_url( '/terms-privacy-policy/' ) ); ?>" target="_blank" style="color:#f5a623;text-decoration:underline;">Terms &amp; Privacy Policy</a>.</span>
+                </label>
                 <button type="submit" class="form-submit">Get My Free Case Review &rarr;</button>
+                <p class="form-error" style="display:none;color:#ff6b6b;font-size:13px;text-align:center;margin-top:8px;"></p>
             </form>
             <div class="form-trust">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2ecc71" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
@@ -1170,13 +1188,80 @@ $tel   = $firm['phone_raw'];
         });
     });
 
-    /* Form submission handler (placeholder — CRM integration TBD) */
+    /* Phone auto-format: (xxx) xxx-xxxx */
+    var lpPhone = document.getElementById('lp-phone');
+    if (lpPhone) {
+        lpPhone.addEventListener('input', function() {
+            var digits = this.value.replace(/\D/g, '').substring(0, 10);
+            if (digits.length === 0) { this.value = ''; }
+            else if (digits.length <= 3) { this.value = '(' + digits; }
+            else if (digits.length <= 6) { this.value = '(' + digits.substring(0,3) + ') ' + digits.substring(3); }
+            else { this.value = '(' + digits.substring(0,3) + ') ' + digits.substring(3,6) + '-' + digits.substring(6); }
+        });
+    }
+
+    /* Email validation on blur */
+    var lpEmail = document.getElementById('lp-email');
+    if (lpEmail) {
+        lpEmail.addEventListener('blur', function() {
+            var v = this.value.trim();
+            if (v && !/^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/.test(v)) {
+                this.setCustomValidity('Please enter a valid email (e.g. name@example.com)');
+            } else {
+                this.setCustomValidity('');
+            }
+        });
+        lpEmail.addEventListener('input', function() { this.setCustomValidity(''); });
+    }
+
+    /* Form submission → admin-ajax → GF entry */
     document.getElementById('leadForm').addEventListener('submit', function(e) {
         e.preventDefault();
-        var btn = this.querySelector('.form-submit');
-        btn.textContent = '\u2713 Submitted! We\'ll Call You Shortly.';
-        btn.style.background = '#2ecc71';
+        var form = this;
+        var btn = form.querySelector('.form-submit');
+        var errEl = form.querySelector('.form-error');
+        /* Validate phone */
+        var phoneDigits = (lpPhone ? lpPhone.value : '').replace(/\D/g, '');
+        if (phoneDigits.length !== 10) {
+            errEl.textContent = 'Please enter a valid 10-digit phone number.';
+            errEl.style.display = 'block';
+            if (lpPhone) lpPhone.focus();
+            return;
+        }
+        /* Validate email */
+        var emailVal = lpEmail ? lpEmail.value.trim() : '';
+        if (!/^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/.test(emailVal)) {
+            errEl.textContent = 'Please enter a valid email address.';
+            errEl.style.display = 'block';
+            if (lpEmail) lpEmail.focus();
+            return;
+        }
         btn.disabled = true;
+        btn.textContent = 'Submitting\u2026';
+        errEl.style.display = 'none';
+        var fd = new FormData(form);
+        fd.append('action', 'roden_sidebar_submit');
+        fetch('<?php echo esc_url( admin_url( 'admin-ajax.php' ) ); ?>', {
+            method: 'POST',
+            body: fd
+        })
+        .then(function(r){ return r.json(); })
+        .then(function(data){
+            if (data.success && data.data.redirect) {
+                window.location.href = data.data.redirect;
+            } else {
+                errEl.textContent = data.data || 'Something went wrong. Please call 1-844-RESULTS.';
+                errEl.style.display = 'block';
+                btn.disabled = false;
+                btn.textContent = 'Get My Free Case Review \u2192';
+            }
+        })
+        .catch(function(){
+            errEl.textContent = 'Network error. Please call 1-844-RESULTS.';
+            errEl.style.display = 'block';
+            btn.disabled = false;
+            btn.textContent = 'Get My Free Case Review \u2192';
+        });
     });
 </script>
 
