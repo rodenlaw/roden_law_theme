@@ -694,14 +694,17 @@ function roden_atty_awards_meta_box( $post ) {
    CASE RESULT META BOX CALLBACK
    ========================================================================== */
 
-/** Case Result details: amount, type (select), description, attorney. */
+/** Case Result details: amount, type, accident type, injury type, description, attorney, initial offer. */
 function roden_case_details_meta_box( $post ) {
     wp_nonce_field( 'roden_case_details_nonce', '_roden_case_details_nonce' );
 
-    $amount      = get_post_meta( $post->ID, '_roden_case_amount', true );
-    $result_type = get_post_meta( $post->ID, '_roden_case_type', true );
-    $description = get_post_meta( $post->ID, '_roden_description', true );
-    $attorney_id = get_post_meta( $post->ID, '_roden_attorney', true );
+    $amount        = get_post_meta( $post->ID, '_roden_case_amount', true );
+    $result_type   = get_post_meta( $post->ID, '_roden_case_type', true );
+    $accident_type = get_post_meta( $post->ID, '_roden_accident_type', true );
+    $injury_type   = get_post_meta( $post->ID, '_roden_injury_type', true );
+    $description   = get_post_meta( $post->ID, '_roden_description', true );
+    $attorney_id   = get_post_meta( $post->ID, '_roden_attorney', true );
+    $initial_offer = get_post_meta( $post->ID, '_roden_result_initial_offer', true );
 
     $attorneys = get_posts( array(
         'post_type'      => 'attorney',
@@ -710,6 +713,55 @@ function roden_case_details_meta_box( $post ) {
         'order'          => 'ASC',
         'post_status'    => 'publish',
     ) );
+
+    $accident_types = array(
+        ''                       => '— Select —',
+        'Auto Accident'          => 'Auto Accident',
+        'Truck Accident'         => 'Truck Accident',
+        'Motorcycle Accident'    => 'Motorcycle Accident',
+        'Pedestrian Accident'    => 'Pedestrian Accident',
+        'Slip and Fall'          => 'Slip and Fall',
+        'Premises Liability'     => 'Premises Liability',
+        'Product Liability'      => 'Product Liability',
+        'Medical Malpractice'    => 'Medical Malpractice',
+        'Wrongful Death'         => 'Wrongful Death',
+        'Workers\' Compensation' => 'Workers\' Compensation',
+        'Construction Accident'  => 'Construction Accident',
+        'Maritime Injury'        => 'Maritime Injury',
+        'Boating Accident'       => 'Boating Accident',
+        'Dog Bite'               => 'Dog Bite',
+        'Animal Attack'          => 'Animal Attack',
+        'Burn Injury'            => 'Burn Injury',
+        'Nursing Home Abuse'     => 'Nursing Home Abuse',
+        'Brain Injury'           => 'Brain Injury',
+        'Spinal Cord Injury'     => 'Spinal Cord Injury',
+        'DUI Accident'           => 'DUI Accident',
+        'Other'                  => 'Other',
+    );
+
+    $injury_types = array(
+        ''                        => '— Select —',
+        'Traumatic Brain Injury'  => 'Traumatic Brain Injury',
+        'Spinal Cord Injury'      => 'Spinal Cord Injury',
+        'Broken Bones'            => 'Broken Bones',
+        'Herniated Disc'          => 'Herniated Disc',
+        'Back Injury'             => 'Back Injury',
+        'Neck Injury'             => 'Neck Injury',
+        'Whiplash'                => 'Whiplash',
+        'Soft Tissue Injury'      => 'Soft Tissue Injury',
+        'Burns'                   => 'Burns',
+        'Internal Injuries'       => 'Internal Injuries',
+        'Amputation'              => 'Amputation',
+        'Paralysis'               => 'Paralysis',
+        'Wrongful Death'          => 'Wrongful Death',
+        'Knee Injury'             => 'Knee Injury',
+        'Shoulder Injury'         => 'Shoulder Injury',
+        'Hip Injury'              => 'Hip Injury',
+        'Concussion'              => 'Concussion',
+        'PTSD'                    => 'PTSD',
+        'Multiple Injuries'       => 'Multiple Injuries',
+        'Other'                   => 'Other',
+    );
     ?>
     <table class="form-table">
         <tr>
@@ -726,10 +778,47 @@ function roden_case_details_meta_box( $post ) {
             <td>
                 <select id="roden_case_type" name="_roden_case_type" style="min-width:200px;">
                     <option value=""><?php esc_html_e( '— Select —', 'roden-law' ); ?></option>
-                    <option value="settlement" <?php selected( $result_type, 'settlement' ); ?>><?php esc_html_e( 'Settlement', 'roden-law' ); ?></option>
-                    <option value="verdict" <?php selected( $result_type, 'verdict' ); ?>><?php esc_html_e( 'Verdict', 'roden-law' ); ?></option>
-                    <option value="recovery" <?php selected( $result_type, 'recovery' ); ?>><?php esc_html_e( 'Recovery', 'roden-law' ); ?></option>
+                    <option value="Settlement" <?php selected( $result_type, 'Settlement' ); ?>><?php esc_html_e( 'Settlement', 'roden-law' ); ?></option>
+                    <option value="Verdict" <?php selected( $result_type, 'Verdict' ); ?>><?php esc_html_e( 'Verdict', 'roden-law' ); ?></option>
+                    <option value="Recovery" <?php selected( $result_type, 'Recovery' ); ?>><?php esc_html_e( 'Recovery', 'roden-law' ); ?></option>
+                    <option value="Resolution" <?php selected( $result_type, 'Resolution' ); ?>><?php esc_html_e( 'Resolution', 'roden-law' ); ?></option>
+                    <option value="Policy Limits" <?php selected( $result_type, 'Policy Limits' ); ?>><?php esc_html_e( 'Policy Limits', 'roden-law' ); ?></option>
                 </select>
+            </td>
+        </tr>
+        <tr>
+            <th><label for="roden_accident_type"><?php esc_html_e( 'Accident Type', 'roden-law' ); ?></label></th>
+            <td>
+                <select id="roden_accident_type" name="_roden_accident_type" style="min-width:250px;">
+                    <?php foreach ( $accident_types as $val => $label ) : ?>
+                        <option value="<?php echo esc_attr( $val ); ?>" <?php selected( $accident_type, $val ); ?>>
+                            <?php echo esc_html( $label ); ?>
+                        </option>
+                    <?php endforeach; ?>
+                </select>
+                <p class="description"><?php esc_html_e( 'The type of accident or incident (e.g., Auto Accident, Truck Accident).', 'roden-law' ); ?></p>
+            </td>
+        </tr>
+        <tr>
+            <th><label for="roden_injury_type"><?php esc_html_e( 'Injury Type', 'roden-law' ); ?></label></th>
+            <td>
+                <select id="roden_injury_type" name="_roden_injury_type" style="min-width:250px;">
+                    <?php foreach ( $injury_types as $val => $label ) : ?>
+                        <option value="<?php echo esc_attr( $val ); ?>" <?php selected( $injury_type, $val ); ?>>
+                            <?php echo esc_html( $label ); ?>
+                        </option>
+                    <?php endforeach; ?>
+                </select>
+                <p class="description"><?php esc_html_e( 'The type of injury sustained (e.g., Traumatic Brain Injury, Broken Bones).', 'roden-law' ); ?></p>
+            </td>
+        </tr>
+        <tr>
+            <th><label for="roden_result_initial_offer"><?php esc_html_e( 'Initial Insurance Offer', 'roden-law' ); ?></label></th>
+            <td>
+                <input type="text" id="roden_result_initial_offer" name="_roden_result_initial_offer"
+                       value="<?php echo esc_attr( $initial_offer ); ?>"
+                       placeholder="$15,000" class="regular-text">
+                <p class="description"><?php esc_html_e( 'Optional. Insurance company\'s initial offer for before/after comparison display.', 'roden-law' ); ?></p>
             </td>
         </tr>
         <tr>
@@ -751,15 +840,6 @@ function roden_case_details_meta_box( $post ) {
                         </option>
                     <?php endforeach; ?>
                 </select>
-            </td>
-        </tr>
-        <tr>
-            <th><label for="roden_result_initial_offer"><?php esc_html_e( 'Initial Insurance Offer', 'roden-law' ); ?></label></th>
-            <td>
-                <input type="text" id="roden_result_initial_offer" name="_roden_result_initial_offer"
-                       value="<?php echo esc_attr( get_post_meta( $post->ID, '_roden_result_initial_offer', true ) ); ?>"
-                       placeholder="$15,000" class="regular-text">
-                <p class="description"><?php esc_html_e( 'Optional. Insurance company\'s initial offer for before/after comparison display.', 'roden-law' ); ?></p>
             </td>
         </tr>
     </table>
@@ -1004,17 +1084,23 @@ function roden_save_meta_fields( $post_id ) {
             sanitize_text_field( $_POST['_roden_case_amount'] ?? '' ) );
 
         $result_type = sanitize_text_field( $_POST['_roden_case_type'] ?? '' );
-        if ( in_array( $result_type, array( 'settlement', 'verdict', 'recovery', '' ), true ) ) {
+        if ( in_array( $result_type, array( 'Settlement', 'Verdict', 'Recovery', 'Resolution', 'Policy Limits', '' ), true ) ) {
             update_post_meta( $post_id, '_roden_case_type', $result_type );
         }
+
+        update_post_meta( $post_id, '_roden_accident_type',
+            sanitize_text_field( $_POST['_roden_accident_type'] ?? '' ) );
+
+        update_post_meta( $post_id, '_roden_injury_type',
+            sanitize_text_field( $_POST['_roden_injury_type'] ?? '' ) );
+
+        update_post_meta( $post_id, '_roden_result_initial_offer',
+            sanitize_text_field( $_POST['_roden_result_initial_offer'] ?? '' ) );
 
         update_post_meta( $post_id, '_roden_description',
             sanitize_textarea_field( $_POST['_roden_description'] ?? '' ) );
 
         update_post_meta( $post_id, '_roden_attorney',
             absint( $_POST['_roden_attorney'] ?? 0 ) );
-
-        update_post_meta( $post_id, '_roden_result_initial_offer',
-            sanitize_text_field( $_POST['_roden_result_initial_offer'] ?? '' ) );
     }
 }
