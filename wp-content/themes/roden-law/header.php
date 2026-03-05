@@ -121,6 +121,7 @@ function roden_fallback_menu() {
             </ul>
         </li>
         <li class="menu-item"><a href="<?php echo esc_url( home_url( '/case-results/' ) ); ?>"><?php esc_html_e( 'Results', 'roden-law' ); ?></a></li>
+        <li class="menu-item"><a href="<?php echo esc_url( home_url( '/class-action-lawyers/' ) ); ?>"><?php esc_html_e( 'Class Actions', 'roden-law' ); ?></a></li>
         <li class="menu-item menu-item-has-children">
             <a href="<?php echo esc_url( home_url( '/about/' ) ); ?>"><?php esc_html_e( 'About Us', 'roden-law' ); ?></a>
             <ul class="sub-menu">
