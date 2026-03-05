@@ -245,16 +245,7 @@ function roden_thankyou_conversion_tracking() {
 }
 
 /* ==========================================================================
-   8. GRAVITY FORMS — Footer form visible + button text
-   ========================================================================== */
-
-add_filter( 'gform_submit_button_1', 'roden_gf_submit_button_text', 10, 2 );
-function roden_gf_submit_button_text( $button, $form ) {
-    return str_replace( "value='Submit'", "value='Get Free Review'", $button );
-}
-
-/* ==========================================================================
-   9. CUSTOM SIDEBAR FORM — AJAX handler → GF entry
+   8. CUSTOM SIDEBAR FORM — AJAX handler → GF entry
    ========================================================================== */
 
 add_action( 'wp_ajax_roden_sidebar_submit', 'roden_sidebar_form_handler' );

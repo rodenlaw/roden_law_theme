@@ -118,51 +118,13 @@ $footer_practice_areas = array(
                     <?php endforeach; ?>
                 </div>
 
-                <!-- Column 4: Mini Contact Form / Free Review CTA -->
+                <!-- Column 4: Free Case Review CTA -->
                 <div class="footer-col footer-form-col">
                     <h4 class="footer-heading footer-heading-accent">
                         <?php esc_html_e( 'Free Case Review', 'roden-law' ); ?>
                     </h4>
-                    <div class="footer-mini-form">
-                        <?php
-                        // If a form plugin shortcode exists, use it.
-                        // Otherwise render a basic fallback form.
-                        if ( shortcode_exists( 'gravityform' ) ) {
-                            // Gravity Forms — update ID to match your form
-                            echo do_shortcode( '[gravityform id="1" title="false" description="false" ajax="true"]' );
-                        } elseif ( shortcode_exists( 'wpforms' ) ) {
-                            // WPForms — update ID to match your form
-                            echo do_shortcode( '[wpforms id="1" title="false" description="false"]' );
-                        } else {
-                            // Fallback static form (no form plugin active)
-                            ?>
-                            <form class="footer-contact-form" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="post">
-                                <div class="form-group">
-                                    <input type="text" name="footer_name" placeholder="<?php esc_attr_e( 'Name', 'roden-law' ); ?>" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="tel" name="footer_phone" placeholder="<?php esc_attr_e( 'Phone', 'roden-law' ); ?>" required>
-                                </div>
-                                <div class="form-group">
-                                    <select name="footer_case_type" required>
-                                        <option value="" disabled selected><?php esc_attr_e( 'Case Type', 'roden-law' ); ?></option>
-                                        <option value="car-accident"><?php esc_html_e( 'Car Accident', 'roden-law' ); ?></option>
-                                        <option value="truck-accident"><?php esc_html_e( 'Truck Accident', 'roden-law' ); ?></option>
-                                        <option value="motorcycle-accident"><?php esc_html_e( 'Motorcycle Accident', 'roden-law' ); ?></option>
-                                        <option value="pedestrian-accident"><?php esc_html_e( 'Pedestrian Accident', 'roden-law' ); ?></option>
-                                        <option value="other"><?php esc_html_e( 'Other Personal Injury', 'roden-law' ); ?></option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-primary" style="width:100%;">
-                                        <?php esc_html_e( 'Get Free Review', 'roden-law' ); ?>
-                                    </button>
-                                </div>
-                            </form>
-                            <?php
-                        }
-                        ?>
-                    </div>
+                    <p class="footer-cta-text">Injured? Find out what your case is worth. No fees unless we win.</p>
+                    <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="footer-cta-btn">Get Your Free Case Review</a>
                 </div>
 
             </div><!-- .footer-grid -->
