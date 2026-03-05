@@ -881,25 +881,19 @@ $tel   = $firm['phone_raw'];
                 </div>
                 <div class="form-group">
                     <select name="case_type" required>
-                        <option value="" disabled selected>Case Type</option>
-                        <option value="Car Accident">Car Accident</option>
-                        <option value="Truck Accident">Truck Accident</option>
-                        <option value="Motorcycle Accident">Motorcycle Accident</option>
-                        <option value="Slip &amp; Fall">Slip &amp; Fall</option>
-                        <option value="Medical Malpractice">Medical Malpractice</option>
-                        <option value="Wrongful Death">Wrongful Death</option>
-                        <option value="Workers' Compensation">Workers' Compensation</option>
-                        <option value="Dog Bite">Dog Bite</option>
-                        <option value="Brain Injury">Brain Injury</option>
-                        <option value="Spinal Cord Injury">Spinal Cord Injury</option>
-                        <option value="Maritime Injury">Maritime Injury</option>
-                        <option value="Product Liability">Product Liability</option>
-                        <option value="Boating Accident">Boating Accident</option>
-                        <option value="Burn Injury">Burn Injury</option>
-                        <option value="Construction Accident">Construction Accident</option>
-                        <option value="Nursing Home Abuse">Nursing Home Abuse</option>
-                        <option value="Premises Liability">Premises Liability</option>
-                        <option value="Pedestrian Accident">Pedestrian Accident</option>
+                        <option value="" disabled selected>Type of Car Accident</option>
+                        <option value="Rear-End Accident">Rear-End Accident</option>
+                        <option value="T-Bone / Side Impact">T-Bone / Side Impact</option>
+                        <option value="Head-On Collision">Head-On Collision</option>
+                        <option value="Hit and Run">Hit and Run</option>
+                        <option value="Multi-Vehicle Pileup">Multi-Vehicle Pileup</option>
+                        <option value="Uber / Lyft Accident">Uber / Lyft Accident</option>
+                        <option value="Drunk Driver Accident">Drunk Driver Accident</option>
+                        <option value="Distracted Driver">Distracted Driver</option>
+                        <option value="Uninsured Motorist">Uninsured Motorist</option>
+                        <option value="Intersection Accident">Intersection Accident</option>
+                        <option value="Highway / Interstate">Highway / Interstate</option>
+                        <option value="Parking Lot Accident">Parking Lot Accident</option>
                         <option value="Other">Other</option>
                     </select>
                 </div>
@@ -908,7 +902,7 @@ $tel   = $firm['phone_raw'];
                 </div>
                 <label class="form-consent" style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;cursor:pointer;">
                     <input type="checkbox" name="consent" value="1" checked required style="width:18px;height:18px;min-width:18px;margin-top:2px;accent-color:#f5a623;cursor:pointer;">
-                    <span style="font-size:11px;color:rgba(255,255,255,0.7);line-height:1.5;">I hereby expressly consent to receive automated communications including calls, texts, emails, and/or prerecorded messages. By submitting this form, you agree to our <a href="<?php echo esc_url( home_url( '/terms-privacy-policy/' ) ); ?>" target="_blank" style="color:#f5a623;text-decoration:underline;">Terms &amp; Privacy Policy</a>.</span>
+                    <span style="font-size:11px;color:#94a3b8;line-height:1.5;">I hereby expressly consent to receive automated communications including calls, texts, emails, and/or prerecorded messages. By submitting this form, you agree to our <a href="<?php echo esc_url( home_url( '/terms-privacy-policy/' ) ); ?>" target="_blank" style="color:#f5a623;text-decoration:underline;">Terms &amp; Privacy Policy</a>.</span>
                 </label>
                 <button type="submit" class="form-submit">Get My Free Case Review &rarr;</button>
                 <p class="form-error" style="display:none;color:#ff6b6b;font-size:13px;text-align:center;margin-top:8px;"></p>
