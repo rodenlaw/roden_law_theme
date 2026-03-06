@@ -846,10 +846,6 @@ $tel   = $firm['phone_raw'];
                     <div class="hero-stat-label">Cases Won</div>
                 </div>
                 <div class="hero-stat">
-                    <div class="hero-stat-number"><?php echo esc_html( $stats['experience'] ); ?> Yrs</div>
-                    <div class="hero-stat-label">Combined Exp.</div>
-                </div>
-                <div class="hero-stat">
                     <div class="hero-stat-number"><?php echo esc_html( $stats['rating'] ); ?>&#9733;</div>
                     <div class="hero-stat-label">Client Rating</div>
                 </div>

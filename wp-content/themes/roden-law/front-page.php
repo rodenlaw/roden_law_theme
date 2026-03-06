@@ -74,10 +74,6 @@ $practice_areas = array(
                             <span class="stat-number"><?php echo esc_html( $stats['cases'] ); ?></span>
                             <span class="stat-label"><?php esc_html_e( 'Cases Handled', 'roden-law' ); ?></span>
                         </div>
-                        <div class="hero-stat">
-                            <span class="stat-number"><?php echo esc_html( $stats['experience'] ); ?> <?php esc_html_e( 'Yrs', 'roden-law' ); ?></span>
-                            <span class="stat-label"><?php esc_html_e( 'Combined Experience', 'roden-law' ); ?></span>
-                        </div>
                     </div>
 
                     <p class="hero-guarantee">&#10003; No Fees Unless We Win &bull; Free Consultation 24/7</p>

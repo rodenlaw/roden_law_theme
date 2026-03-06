@@ -1121,7 +1121,7 @@ input[type="submit"] {
 /* Hero Stats Row */
 .hero-stats {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--space-md);
     margin-bottom: var(--space-xl);
     padding: var(--space-md) 0;
@@ -2365,7 +2365,7 @@ input[type="submit"] {
     }
 
     .hero-stats {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .practice-area-grid {
@@ -2425,7 +2425,7 @@ input[type="submit"] {
     }
 
     .hero-stats {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: var(--space-sm);
     }
 
@@ -2569,7 +2569,7 @@ input[type="submit"] {
     }
 
     .hero-stats {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
 }
 

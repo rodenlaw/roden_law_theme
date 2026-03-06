@@ -685,7 +685,6 @@ function roden_stats_bar() {
         array( 'num' => $firm['recovered'],     'label' => 'Recovered for Clients' ),
         array( 'num' => $firm['rating'] . '★',  'label' => 'Client Rating' ),
         array( 'num' => $firm['cases_handled'], 'label' => 'Cases Handled' ),
-        array( 'num' => $firm['experience'],    'label' => 'Combined Experience' ),
     );
     echo '<div class="stats-bar">';
     foreach ( $stats as $s ) {
@@ -935,10 +934,6 @@ function roden_why_roden_sidebar() {
             <li>
                 <strong><?php echo esc_html( $firm['trust_stats']['rating'] ); ?> Stars</strong>
                 <span><?php echo esc_html( $firm['trust_stats']['reviews'] ); ?> Client Reviews</span>
-            </li>
-            <li>
-                <strong><?php echo esc_html( $firm['trust_stats']['experience'] ); ?> Years</strong>
-                <span>Combined Experience</span>
             </li>
             <li>
                 <strong><?php echo esc_html( $firm['trust_stats']['offices'] ); ?> Offices</strong>

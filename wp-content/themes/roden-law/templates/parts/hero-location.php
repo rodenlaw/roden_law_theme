@@ -50,10 +50,6 @@ if ( empty( $office ) ) {
                         <span class="stat-number"><?php echo esc_html( $stats['cases'] ); ?></span>
                         <span class="stat-label">Cases Handled</span>
                     </div>
-                    <div class="hero-stat">
-                        <span class="stat-number"><?php echo esc_html( $stats['experience'] ); ?> Yrs</span>
-                        <span class="stat-label">Combined Experience</span>
-                    </div>
                 </div>
 
                 <div class="hero-ctas">

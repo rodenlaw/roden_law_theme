@@ -348,7 +348,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ─── STATS BAR ────────────────────────────────────────────────────────── */
 
 .stats-bar {
-    display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
     margin: 24px 0;
 }
 .stat-item {
@@ -1418,7 +1418,7 @@ a.sub-type-link:hover { background: var(--light); border-color: var(--orange); }
 /* ─── LOCATION PAGE — Hero Stats (match homepage hero) ────────────────── */
 
 .hero-stats {
-    display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
     margin: 24px 0;
 }
 .hero-stat {
@@ -1719,8 +1719,8 @@ body.nav-open { overflow: hidden; }
     .location-cards-grid { grid-template-columns: repeat(2, 1fr); }
     .location-matrix-grid { grid-template-columns: repeat(3, 1fr); }
     .practice-areas-grid.cols-4 { grid-template-columns: repeat(2, 1fr); }
-    .stats-bar { grid-template-columns: repeat(2, 1fr); }
-    .hero-stats { grid-template-columns: repeat(2, 1fr); }
+    .stats-bar { grid-template-columns: repeat(3, 1fr); }
+    .hero-stats { grid-template-columns: repeat(3, 1fr); }
     .case-results-grid.cols-4 { grid-template-columns: repeat(2, 1fr); }
     .attorneys-grid.cols-4 { grid-template-columns: repeat(2, 1fr); }
     .attorneys-grid.cols-3 { grid-template-columns: repeat(2, 1fr); }
@@ -1769,7 +1769,7 @@ body.nav-open { overflow: hidden; }
 
 @media (max-width: 480px) {
     .section-map iframe { height: 280px; }
-    .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .hero-stats { grid-template-columns: 1fr; gap: 12px; }
     .location-matrix .matrix-grid { grid-template-columns: 1fr; }
     /* Stack half-width form fields on small screens */
     .sidebar-contact-form .gform_wrapper ul.gform_fields { grid-template-columns: 1fr; }
