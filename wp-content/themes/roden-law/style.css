@@ -1574,6 +1574,60 @@ input[type="submit"] {
 }
 
 /* ==========================================================================
+   About Page — Commitment Grid + Contingency Callout
+   ========================================================================== */
+
+.commitment-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl);
+    margin-bottom: var(--space-2xl);
+}
+
+.commitment-item {
+    padding: var(--space-xl);
+    background: var(--color-white);
+    border-radius: var(--border-radius-lg);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.commitment-item h3 {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    color: var(--color-navy);
+    margin-bottom: var(--space-sm);
+}
+
+.commitment-item p {
+    font-size: 0.95rem;
+    color: var(--color-gray);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.contingency-callout {
+    background: var(--color-white);
+    border-left: 4px solid var(--color-orange);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-xl) var(--space-2xl);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.contingency-callout h3 {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    color: var(--color-navy);
+    margin-bottom: var(--space-sm);
+}
+
+.contingency-callout p {
+    font-size: 0.95rem;
+    color: var(--color-gray);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ==========================================================================
    Homepage — Case Results (Offer vs Result Multiplier)
    ========================================================================== */
 
@@ -2518,6 +2572,10 @@ input[type="submit"] {
     .founder-image img {
         max-width: 400px;
         margin: 0 auto;
+    }
+
+    .commitment-grid {
+        grid-template-columns: 1fr;
     }
 
     .testimonial-track .testimonial-card {
