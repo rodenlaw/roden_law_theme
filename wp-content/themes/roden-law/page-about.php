@@ -1,8 +1,9 @@
 <?php
 /**
- * Template: About Page (page-about.php)
+ * Template Name: About Page
  *
  * Automatically loaded for the /about/ page (slug match).
+ * Also selectable from the Page Template dropdown in the editor.
  * Hero, founder story, commitment section, stats bar, case results,
  * attorneys grid, and bottom CTA.
  *
