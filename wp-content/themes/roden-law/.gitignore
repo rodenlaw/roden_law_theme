@@ -24,6 +24,11 @@ node_modules/
 .vscode/
 .idea/
 
+# One-time WP-CLI scripts and data (keep local, don't deploy)
+create-intersection-pages.php
+inc/batch-create-*.php
+inc/data/
+
 # Content reference files
 content/
 bin/

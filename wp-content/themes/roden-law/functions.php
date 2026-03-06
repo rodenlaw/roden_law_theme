@@ -216,7 +216,7 @@ function roden_register_sidebars() {
 
 add_filter( 'wp_robots', 'roden_thankyou_noindex' );
 function roden_thankyou_noindex( $robots ) {
-    if ( is_page( 1940 ) ) {
+    if ( is_page( 'thank-you' ) ) {
         $robots['noindex'] = true;
         $robots['nofollow'] = true;
     }
@@ -225,7 +225,7 @@ function roden_thankyou_noindex( $robots ) {
 
 add_action( 'wp_head', 'roden_thankyou_conversion_tracking' );
 function roden_thankyou_conversion_tracking() {
-    if ( ! is_page( 1940 ) ) {
+    if ( ! is_page( 'thank-you' ) ) {
         return;
     }
     ?>

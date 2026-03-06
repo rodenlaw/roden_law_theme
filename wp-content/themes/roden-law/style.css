@@ -384,17 +384,6 @@ input[type="submit"] {
     color: var(--color-white);
 }
 
-.btn-secondary {
-    background: var(--color-navy);
-    color: var(--color-white);
-}
-
-.btn-secondary:hover,
-.btn-secondary:focus {
-    background: #15305A;
-    color: var(--color-white);
-}
-
 .btn-outline {
     background: transparent;
     color: var(--color-navy);

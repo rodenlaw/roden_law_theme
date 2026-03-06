@@ -661,21 +661,6 @@ function roden_inline_cta_banner() {
 }
 
 /* ==========================================================================
-   STAR RATING DISPLAY
-   ========================================================================== */
-
-function roden_stars( $rating = 4.9, $count = '500+', $small = false ) {
-    $class = $small ? 'stars-display stars-small' : 'stars-display';
-    echo '<div class="' . esc_attr( $class ) . '">';
-    for ( $i = 1; $i <= 5; $i++ ) {
-        echo '<span class="star">&#9733;</span>';
-    }
-    echo '<span class="star-rating">' . esc_html( $rating ) . '</span>';
-    echo '<span class="star-count">(' . esc_html( $count ) . ' reviews)</span>';
-    echo '</div>';
-}
-
-/* ==========================================================================
    TRUST STATS BAR
    ========================================================================== */
 

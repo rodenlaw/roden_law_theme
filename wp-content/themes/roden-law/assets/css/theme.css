@@ -121,6 +121,7 @@ h1, h2, h3, h4, h5, h6 {
 .top-bar {
     background: var(--navy-dark); color: var(--text-light); font-size: 12px;
     border-bottom: 1px solid rgba(255,255,255,0.1);
+    transition: transform 0.3s ease, opacity 0.2s ease;
 }
 .top-bar-inner {
     display: flex; justify-content: space-between; align-items: center;
@@ -133,9 +134,6 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-100%); opacity: 0;
     transition: transform 0.3s ease, opacity 0.2s ease;
     pointer-events: none;
-}
-.top-bar {
-    transition: transform 0.3s ease, opacity 0.2s ease;
 }
 
 /* ─── HEADER / NAV ─────────────────────────────────────────────────────── */
