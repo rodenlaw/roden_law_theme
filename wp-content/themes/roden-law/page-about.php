@@ -138,7 +138,7 @@ $firm = roden_firm_data();
                 <p><?php esc_html_e( 'Experienced trial lawyers fighting for injury victims across Georgia and South Carolina.', 'roden-law' ); ?></p>
             </div>
 
-            <?php roden_attorneys_grid( array( 'columns' => 4 ) ); ?>
+            <?php roden_attorneys_grid( array( 'columns' => 4, 'role' => 'attorney' ) ); ?>
 
             <div class="text-center" style="margin-top: var(--space-xl);">
                 <a href="<?php echo esc_url( home_url( '/attorneys/' ) ); ?>" class="btn btn-outline-navy">
