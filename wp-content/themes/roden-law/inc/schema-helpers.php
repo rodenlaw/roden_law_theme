@@ -886,24 +886,6 @@ function roden_schema_article( $firm ) {
    ========================================================================== */
 
 /**
- * Check if the current page is a sub-type practice area page.
- * Sub-type = child of a pillar (has parent) with no office key set.
- *
- * @return bool
- */
-function roden_is_subtype_page() {
-    if ( ! roden_is_pa_singular() ) {
-        return false;
-    }
-    $post = get_post();
-    if ( ! $post || ! $post->post_parent ) {
-        return false;
-    }
-    $office_key = get_post_meta( $post->ID, '_roden_pa_office_key', true );
-    return empty( $office_key );
-}
-
-/**
  * Output Article schema for sub-type practice area pages.
  *
  * @param array $firm Firm data from roden_firm_data().
