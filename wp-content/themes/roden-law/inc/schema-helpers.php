@@ -83,6 +83,11 @@ function roden_output_schema() {
         roden_schema_legal_service( $firm );
         roden_schema_faq_page();
         roden_schema_speakable_practice_area();
+
+        // Article schema for sub-type pages (child PA posts without an office key).
+        if ( roden_is_subtype_page() ) {
+            roden_schema_article_subtype( $firm );
+        }
     }
 
     if ( is_singular( 'location' ) ) {
@@ -871,6 +876,113 @@ function roden_schema_article( $firm ) {
     $categories = get_the_category( $post_id );
     if ( ! empty( $categories ) ) {
         $schema['articleSection'] = $categories[0]->name;
+    }
+
+    roden_json_ld( $schema );
+}
+
+/* ==========================================================================
+   12. Article — Sub-type practice area pages
+   ========================================================================== */
+
+/**
+ * Check if the current page is a sub-type practice area page.
+ * Sub-type = child of a pillar (has parent) with no office key set.
+ *
+ * @return bool
+ */
+function roden_is_subtype_page() {
+    if ( ! roden_is_pa_singular() ) {
+        return false;
+    }
+    $post = get_post();
+    if ( ! $post || ! $post->post_parent ) {
+        return false;
+    }
+    $office_key = get_post_meta( $post->ID, '_roden_pa_office_key', true );
+    return empty( $office_key );
+}
+
+/**
+ * Output Article schema for sub-type practice area pages.
+ *
+ * @param array $firm Firm data from roden_firm_data().
+ */
+function roden_schema_article_subtype( $firm ) {
+    $post_id = get_the_ID();
+    $post    = get_post( $post_id );
+    $content = get_post_field( 'post_content', $post_id );
+    $excerpt = get_the_excerpt( $post_id );
+
+    $schema = array(
+        '@context'      => 'https://schema.org',
+        '@type'         => 'Article',
+        'headline'      => get_the_title( $post_id ),
+        'description'   => html_entity_decode( wp_strip_all_tags( $excerpt ?: wp_trim_words( $content, 30 ) ), ENT_QUOTES, 'UTF-8' ),
+        'url'           => get_permalink( $post_id ),
+        'datePublished' => get_the_date( 'c', $post_id ),
+        'dateModified'  => get_the_modified_date( 'c', $post_id ),
+        'wordCount'     => str_word_count( wp_strip_all_tags( $content ) ),
+        'mainEntityOfPage' => array(
+            '@type' => 'WebPage',
+            '@id'   => get_permalink( $post_id ),
+        ),
+        'publisher' => array(
+            '@type' => 'Organization',
+            '@id'   => $firm['url'] . '/#organization',
+            'name'  => $firm['name'],
+        ),
+    );
+
+    // Featured image.
+    if ( has_post_thumbnail( $post_id ) ) {
+        $img_url  = get_the_post_thumbnail_url( $post_id, 'large' );
+        $img_id   = get_post_thumbnail_id( $post_id );
+        $img_meta = wp_get_attachment_metadata( $img_id );
+        $schema['image'] = array(
+            '@type'  => 'ImageObject',
+            'url'    => $img_url,
+            'width'  => $img_meta['width'] ?? 0,
+            'height' => $img_meta['height'] ?? 0,
+        );
+    }
+
+    // Author — linked attorney from _roden_author_attorney meta.
+    $author_id = get_post_meta( $post_id, '_roden_author_attorney', true );
+    $atty      = $author_id ? get_post( $author_id ) : null;
+
+    if ( $atty && 'publish' === $atty->post_status ) {
+        $schema['author'] = array(
+            '@type' => 'Person',
+            '@id'   => get_permalink( $atty ) . '#person',
+            'name'  => $atty->post_title,
+            'url'   => get_permalink( $atty ),
+        );
+    } else {
+        $schema['author'] = array(
+            '@type' => 'Organization',
+            '@id'   => $firm['url'] . '/#organization',
+            'name'  => $firm['name'],
+        );
+    }
+
+    // Publisher logo.
+    $logo_url = roden_get_logo_url();
+    if ( $logo_url ) {
+        $schema['publisher']['logo'] = array(
+            '@type' => 'ImageObject',
+            'url'   => $logo_url,
+        );
+    }
+
+    // About — link to parent pillar page.
+    $parent = get_post( $post->post_parent );
+    if ( $parent && 'publish' === $parent->post_status ) {
+        $schema['about'] = array(
+            '@type' => 'Thing',
+            'name'  => $parent->post_title,
+            'url'   => get_permalink( $parent ),
+        );
     }
 
     roden_json_ld( $schema );
