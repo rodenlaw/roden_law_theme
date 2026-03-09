@@ -538,6 +538,7 @@ foreach ( $subtypes as $sub ) {
     update_post_meta( $post_id, '_roden_sol_ga', 'O.C.G.A. § 9-3-33' );
     update_post_meta( $post_id, '_roden_sol_sc', 'S.C. Code § 15-3-530' );
     update_post_meta( $post_id, '_roden_faqs', $sub['faqs'] );
+    update_post_meta( $post_id, '_roden_parent_subtype', 'commercial-vehicle-accident' );
 
     if ( $author_attorney_id ) {
         update_post_meta( $post_id, '_roden_author_attorney', $author_attorney_id );

@@ -75,7 +75,7 @@ elseif ( $is_subtype ) :
     include get_template_directory() . '/templates/template-subtype.php';
 
 else :
-    // Get child sub-type pages (exclude intersection pages)
+    // Get child sub-type pages (exclude intersection pages and nested sub-types)
     $child_subtypes = get_posts([
         'post_type'      => $pa_post_type,
         'post_parent'    => $post_id,
@@ -83,9 +83,17 @@ else :
         'orderby'        => 'title',
         'order'          => 'ASC',
         'meta_query'     => [
-            'relation' => 'OR',
-            [ 'key' => '_roden_pa_office_key', 'compare' => 'NOT EXISTS' ],
-            [ 'key' => '_roden_pa_office_key', 'value' => '', 'compare' => '=' ],
+            'relation' => 'AND',
+            [
+                'relation' => 'OR',
+                [ 'key' => '_roden_pa_office_key', 'compare' => 'NOT EXISTS' ],
+                [ 'key' => '_roden_pa_office_key', 'value' => '', 'compare' => '=' ],
+            ],
+            [
+                'relation' => 'OR',
+                [ 'key' => '_roden_parent_subtype', 'compare' => 'NOT EXISTS' ],
+                [ 'key' => '_roden_parent_subtype', 'value' => '', 'compare' => '=' ],
+            ],
         ],
     ]);
 
