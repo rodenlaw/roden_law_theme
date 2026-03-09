@@ -36,6 +36,9 @@ $service_area_override = get_post_meta( $post_id, '_roden_service_area', true );
 $service_area = $service_area_override ? $service_area_override : $office['service_area'];
 
 $map_embed = get_post_meta( $post_id, '_roden_map_embed', true );
+if ( ! $map_embed && ! empty( $office['map_embed'] ) ) {
+    $map_embed = $office['map_embed'];
+}
 if ( ! $map_embed ) {
     $map_query = urlencode( $office['street'] . ', ' . $office['city'] . ', ' . $office['state'] . ' ' . $office['zip'] );
     $map_embed = 'https://maps.google.com/maps?q=' . $map_query . '&output=embed&z=15';
