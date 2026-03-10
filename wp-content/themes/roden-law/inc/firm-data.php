@@ -280,6 +280,10 @@ function roden_firm_data() {
             'nursing-home-abuse-lawyers',
             'premises-liability-lawyers',
             'pedestrian-accident-lawyers',
+            'bicycle-accident-lawyers',
+            'electric-scooter-accident-lawyers',
+            'atv-side-by-side-accident-lawyers',
+            'golf-cart-accident-lawyers',
         ),
     );
 

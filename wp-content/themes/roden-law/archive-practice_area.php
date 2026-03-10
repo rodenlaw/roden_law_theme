@@ -68,6 +68,10 @@ $firm = roden_firm_data();
                 'nursing-home-abuse-lawyers'     => 'Nursing Home Abuse Lawyers',
                 'premises-liability-lawyers'     => 'Premises Liability Lawyers',
                 'pedestrian-accident-lawyers'    => 'Pedestrian Accident Lawyers',
+                'bicycle-accident-lawyers'       => 'Bicycle Accident Lawyers',
+                'electric-scooter-accident-lawyers' => 'Electric Scooter Accident Lawyers',
+                'atv-side-by-side-accident-lawyers' => 'ATV & Side-by-Side Accident Lawyers',
+                'golf-cart-accident-lawyers'     => 'Golf Cart Accident Lawyers',
             );
             ?>
             <div class="practice-areas-grid cols-3">
