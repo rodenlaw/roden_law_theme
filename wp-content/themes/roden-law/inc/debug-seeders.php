@@ -1,29 +1,36 @@
 <?php
 /**
- * Debug: Wrap failing seeder in try-catch with error handler.
+ * Wrapper: Run all 4 remaining failing seeders via include.
  * wp eval-file wp-content/themes/roden-law/inc/debug-seeders.php
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
-// Catch all errors
 set_error_handler( function( $errno, $errstr, $errfile, $errline ) {
     WP_CLI::warning( "PHP Error [{$errno}]: {$errstr} in {$errfile}:{$errline}" );
     return true;
 } );
 
-register_shutdown_function( function() {
-    $error = error_get_last();
-    if ( $error && in_array( $error['type'], array( E_ERROR, E_PARSE, E_CORE_ERROR, E_COMPILE_ERROR ) ) ) {
-        echo "FATAL ERROR: {$error['message']} in {$error['file']}:{$error['line']}\n";
+$seeders = array(
+    'seed-brain-injury-subtypes.php',
+    'seed-spinal-cord-subtypes.php',
+    'seed-premises-liability-subtypes.php',
+    'seed-escooter-subtypes.php',
+);
+
+foreach ( $seeders as $file ) {
+    $path = __DIR__ . '/' . $file;
+    if ( ! file_exists( $path ) ) {
+        WP_CLI::warning( "File not found: {$file}" );
+        continue;
     }
-} );
-
-WP_CLI::log( 'Loading medical malpractice seeder via include...' );
-
-try {
-    include __DIR__ . '/seed-medical-malpractice-subtypes.php';
-} catch ( \Throwable $e ) {
-    WP_CLI::error( 'Exception: ' . $e->getMessage() . ' in ' . $e->getFile() . ':' . $e->getLine() );
+    WP_CLI::log( '' );
+    WP_CLI::log( "=== Running: {$file} ===" );
+    try {
+        include $path;
+    } catch ( \Throwable $e ) {
+        WP_CLI::error( 'Exception in ' . $file . ': ' . $e->getMessage(), false );
+    }
 }
 
-WP_CLI::success( 'Wrapper finished.' );
+WP_CLI::log( '' );
+WP_CLI::success( 'All seeders finished.' );
