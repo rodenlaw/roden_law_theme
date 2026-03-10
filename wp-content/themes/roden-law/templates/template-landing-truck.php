@@ -1106,6 +1106,16 @@ $tel   = $firm['phone_raw'];
                 <div class="result-amount">$1,500,000</div>
                 <div class="result-desc">Settlement &mdash; Fatal truck underride crash</div>
             </div>
+            <div class="result-card">
+                <div class="result-type">Hit and Run</div>
+                <div class="result-amount">$975,000</div>
+                <div class="result-desc">Settlement &mdash; Uninsured motorist claim</div>
+            </div>
+            <div class="result-card">
+                <div class="result-type">Motorcycle Accident</div>
+                <div class="result-amount">$1,200,000</div>
+                <div class="result-desc">Settlement &mdash; Left-turn collision with TBI</div>
+            </div>
         </div>
         <p class="results-disclaimer">*Results may vary depending on your particular facts and legal circumstances. Past results do not guarantee future outcomes.</p>
     </div>
