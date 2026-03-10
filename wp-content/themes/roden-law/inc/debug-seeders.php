@@ -1,7 +1,14 @@
 <?php
 /**
- * Wrapper: Run all 4 remaining failing seeders via include.
- * wp eval-file wp-content/themes/roden-law/inc/debug-seeders.php
+ * Wrapper: Include and run seeder scripts that fail with wp eval-file directly.
+ *
+ * Usage: wp eval-file wp-content/themes/roden-law/inc/debug-seeders.php
+ *
+ * Note: Some seeder scripts silently fail when run directly via wp eval-file
+ * on WP Engine, but work fine when included from this wrapper. Keep this file
+ * available for future seeders that exhibit the same behavior.
+ *
+ * @package Roden_Law
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
@@ -10,12 +17,15 @@ set_error_handler( function( $errno, $errstr, $errfile, $errline ) {
     return true;
 } );
 
+// Add seeder filenames here:
 $seeders = array(
-    'seed-brain-injury-subtypes.php',
-    'seed-spinal-cord-subtypes.php',
-    'seed-premises-liability-subtypes.php',
-    'seed-escooter-subtypes.php',
+    // 'seed-example-subtypes.php',
 );
+
+if ( empty( $seeders ) ) {
+    WP_CLI::log( 'No seeders configured. Edit this file to add seeder filenames to the $seeders array.' );
+    return;
+}
 
 foreach ( $seeders as $file ) {
     $path = __DIR__ . '/' . $file;
