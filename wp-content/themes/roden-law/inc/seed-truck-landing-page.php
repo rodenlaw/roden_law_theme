@@ -9,7 +9,7 @@
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
-$slug = 'truck-accident-lawyer';
+$slug = 'south-carolina-truck-accident-lawyer';
 
 // Check if page already exists.
 $existing = get_posts( array(
@@ -34,7 +34,7 @@ if ( ! empty( $existing ) ) {
 }
 
 $page_id = wp_insert_post( array(
-    'post_title'   => 'Truck Accident Lawyer',
+    'post_title'   => 'South Carolina Truck Accident Lawyer',
     'post_name'    => $slug,
     'post_type'    => 'page',
     'post_status'  => 'publish',
