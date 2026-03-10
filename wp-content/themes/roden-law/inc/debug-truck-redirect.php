@@ -1,36 +1,36 @@
 <?php
+/**
+ * Fix: Change slug of old draft post 1631 (truck-accident-lawyer) to avoid
+ * conflicting with the new landing page at /south-carolina-truck-accident-lawyer/.
+ *
+ * wp eval-file wp-content/themes/roden-law/inc/debug-truck-redirect.php
+ */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
+// Rename old draft post 1631 so its slug doesn't capture traffic.
+$old_post = get_post( 1631 );
+if ( $old_post && $old_post->post_name === 'truck-accident-lawyer' ) {
+    wp_update_post( array(
+        'ID'        => 1631,
+        'post_name' => 'truck-accident-lawyer-old-draft',
+    ) );
+    WP_CLI::success( "Renamed post 1631 slug: truck-accident-lawyer → truck-accident-lawyer-old-draft" );
+} else {
+    WP_CLI::log( "Post 1631 slug is already: " . ( $old_post ? $old_post->post_name : 'NOT FOUND' ) );
+}
+
+// Also check SmartCrawl redirects table for any relevant redirects.
 global $wpdb;
-
-// Check for any pages with truck-accident-lawyer in the slug
-$results = $wpdb->get_results(
-    "SELECT ID, post_name, post_status, post_type FROM {$wpdb->posts} WHERE post_name LIKE '%truck-accident-lawyer%' LIMIT 20"
+$sc_redirects = $wpdb->get_results(
+    "SELECT * FROM {$wpdb->prefix}smartcrawl_redirects WHERE source LIKE '%truck-accident-lawyer%' OR destination LIKE '%truck-accident-lawyer%' LIMIT 10"
 );
-
-WP_CLI::log( 'Posts with truck-accident-lawyer in slug:' );
-foreach ( $results as $r ) {
-    WP_CLI::log( "  ID {$r->ID} | {$r->post_name} | {$r->post_status} | {$r->post_type}" );
+if ( ! empty( $sc_redirects ) ) {
+    WP_CLI::log( 'SmartCrawl redirects found:' );
+    foreach ( $sc_redirects as $r ) {
+        WP_CLI::log( "  {$r->source} → {$r->destination}" );
+    }
+} else {
+    WP_CLI::log( 'No SmartCrawl redirects matching truck-accident-lawyer.' );
 }
 
-// Check for _wp_old_slug meta
-$old_slugs = $wpdb->get_results(
-    "SELECT post_id, meta_value FROM {$wpdb->postmeta} WHERE meta_key = '_wp_old_slug' AND meta_value LIKE '%truck-accident-lawyer%'"
-);
-
-WP_CLI::log( '' );
-WP_CLI::log( 'Old slug redirects:' );
-foreach ( $old_slugs as $s ) {
-    WP_CLI::log( "  Post {$s->post_id} | old slug: {$s->meta_value}" );
-}
-
-// Check WP Engine redirects table if it exists
-$tables = $wpdb->get_results( "SHOW TABLES LIKE '%redirect%'" );
-WP_CLI::log( '' );
-WP_CLI::log( 'Redirect tables: ' . count( $tables ) );
-foreach ( $tables as $t ) {
-    $vals = get_object_vars( $t );
-    WP_CLI::log( '  ' . reset( $vals ) );
-}
-
-WP_CLI::success( 'Debug done.' );
+WP_CLI::success( 'Done.' );
