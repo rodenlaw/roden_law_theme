@@ -460,6 +460,31 @@ function roden_load_more_results_handler() {
 /**
  * Load More case results JS.
  */
+/* ==========================================================================
+   10. DISABLE COMMENTS — Sitewide
+   ========================================================================== */
+
+add_filter( 'comments_open', '__return_false', 20, 2 );
+add_filter( 'pings_open', '__return_false', 20, 2 );
+add_filter( 'comments_array', '__return_empty_array', 10, 2 );
+
+add_action( 'admin_menu', function () {
+    remove_menu_page( 'edit-comments.php' );
+} );
+
+add_action( 'admin_bar_menu', function ( $wp_admin_bar ) {
+    $wp_admin_bar->remove_node( 'comments' );
+}, 999 );
+
+add_action( 'wp_before_admin_bar_render', function () {
+    global $wp_admin_bar;
+    if ( $wp_admin_bar ) {
+        $wp_admin_bar->remove_menu( 'comments' );
+    }
+} );
+
+/* ========================================================================== */
+
 add_action( 'wp_footer', 'roden_load_more_js', 998 );
 function roden_load_more_js() {
     if ( ! is_page( 'case-results' ) ) return;
