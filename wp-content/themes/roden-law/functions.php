@@ -65,7 +65,7 @@ function roden_theme_setup() {
    3. REDIRECTS — Old Rank Math Location URLs → New Hierarchical URLs
    ========================================================================== */
 
-add_action( 'template_redirect', 'roden_legacy_location_redirects' );
+add_action( 'template_redirect', 'roden_legacy_location_redirects', 1 );
 function roden_legacy_location_redirects() {
     if ( ! is_singular( 'rank_math_locations' ) ) {
         return;

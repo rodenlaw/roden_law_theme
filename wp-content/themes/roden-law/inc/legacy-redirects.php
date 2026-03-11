@@ -40,7 +40,7 @@ function roden_neutralize_old_practice_area_cpt( $args, $post_type ) {
    301 Redirects — old URLs → new URLs
    ------------------------------------------------------------------ */
 
-add_action( 'template_redirect', 'roden_legacy_content_redirects' );
+add_action( 'template_redirect', 'roden_legacy_content_redirects', 1 );
 
 function roden_legacy_content_redirects() {
     $request = rtrim( $_SERVER['REQUEST_URI'], '/' ) . '/';
@@ -52,13 +52,32 @@ function roden_legacy_content_redirects() {
     $redirects = roden_get_legacy_redirect_map();
 
     if ( isset( $redirects[ $clean_path ] ) ) {
-        wp_redirect( home_url( $redirects[ $clean_path ] ), 301 );
+        $dest = $redirects[ $clean_path ];
+
+        // 410 Gone for permanently removed content (value === false).
+        if ( false === $dest ) {
+            status_header( 410 );
+            nocache_headers();
+            echo '<h1>410 Gone</h1><p>This page has been permanently removed.</p>';
+            exit;
+        }
+
+        wp_redirect( home_url( $dest ), 301 );
         exit;
     }
 }
 
 function roden_get_legacy_redirect_map() {
     return array(
+
+        // ══════════════════════════════════════════════════════════════
+        // CATEGORY 0: Old page URLs → new page URLs
+        // ══════════════════════════════════════════════════════════════
+
+        '/who-we-are/'              => '/about/',
+        '/who-we-are/attorneys/'    => '/attorneys/',
+        '/contact-us/'              => '/contact/',
+        '/practice-areas/service-areas/' => '/locations/',
 
         // ══════════════════════════════════════════════════════════════
         // CATEGORY 1: Old pillar pages with different slugs (6 pages)
@@ -69,7 +88,7 @@ function roden_get_legacy_redirect_map() {
         '/practice-areas/nursing-home-abuse-attorneys/'   => '/practice-areas/nursing-home-abuse-lawyers/',
         '/practice-areas/slip-and-fall-attorneys/'        => '/practice-areas/slip-and-fall-lawyers/',
         '/practice-areas/personal-injury-lawyers/'        => '/practice-areas/',
-        '/practice-areas/coronavirus-business-claims/'    => '/',
+        '/practice-areas/coronavirus-business-claims/'    => false, // 410 Gone — deprecated content
 
         // ══════════════════════════════════════════════════════════════
         // CATEGORY 2: Savannah old intersection pages (18 pages)

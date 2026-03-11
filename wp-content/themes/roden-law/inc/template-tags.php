@@ -47,7 +47,8 @@ function roden_breadcrumb_html() {
             if ( $parent_office_key && isset( $firm['offices'][ $parent_office_key ] ) ) {
                 $o = $firm['offices'][ $parent_office_key ];
                 $crumbs[] = '<a href="' . esc_url( home_url( '/locations/' . $o['state_slug'] . '/' ) ) . '">' . esc_html( $o['state_full'] ) . '</a>';
-                if ( $parent_id ) {
+                // Only add parent city crumb if it differs from current page title (avoids duplication).
+                if ( $parent_id && strcasecmp( $o['city'], get_the_title() ) !== 0 ) {
                     $crumbs[] = '<a href="' . esc_url( get_permalink( $parent_id ) ) . '">' . esc_html( $o['city'] ) . '</a>';
                 }
             }

@@ -593,7 +593,8 @@ function roden_schema_breadcrumbs() {
                     'name'     => $office['state_full'],
                     'item'     => home_url( '/locations/' . $office['state_slug'] . '/' ),
                 );
-                if ( $parent_id ) {
+                // Only add parent city crumb if it differs from current page title (avoids duplication).
+                if ( $parent_id && strcasecmp( $office['city'], get_the_title() ) !== 0 ) {
                     $items[] = array(
                         '@type'    => 'ListItem',
                         'position' => $position++,
