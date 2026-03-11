@@ -431,7 +431,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                  SECTION 17: BOTTOM CTA BLOCK
                  ═══════════════════════════════════════════════════════════ -->
             <div class="bottom-cta-box">
-                <h2>Contact Our <?php the_title(); ?>s Today</h2>
+                <h2>Contact Our <?php the_title(); ?> Today</h2>
                 <p>If you were injured and believe another party is at fault, contact us for a free, no-obligation review. We dedicate our skills and resources to recovering the maximum compensation you deserve — at no upfront cost.</p>
                 <div class="cta-actions">
                     <a href="tel:<?php echo esc_attr( $firm['phone_e164'] ); ?>" class="btn btn-primary">&#128222; Call <?php echo esc_html( $firm['phone'] ); ?></a>

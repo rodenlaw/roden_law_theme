@@ -397,8 +397,9 @@ function roden_sidebar_form_js() {
 add_action( 'wp_ajax_roden_load_more_results', 'roden_load_more_results_handler' );
 add_action( 'wp_ajax_nopriv_roden_load_more_results', 'roden_load_more_results_handler' );
 function roden_load_more_results_handler() {
-    $offset  = absint( $_POST['offset'] ?? 0 );
-    $exclude = absint( $_POST['exclude'] ?? 0 );
+    $offset   = absint( $_POST['offset'] ?? 0 );
+    $exclude  = absint( $_POST['exclude'] ?? 0 );
+    $category = sanitize_text_field( $_POST['category'] ?? '' );
     $per_page = 20;
 
     $query_args = array(
@@ -412,6 +413,16 @@ function roden_load_more_results_handler() {
 
     if ( $exclude ) {
         $query_args['post__not_in'] = array( $exclude );
+    }
+
+    if ( $category ) {
+        $query_args['tax_query'] = array(
+            array(
+                'taxonomy' => 'practice_category',
+                'field'    => 'slug',
+                'terms'    => $category,
+            ),
+        );
     }
 
     $results = new WP_Query( $query_args );
@@ -456,10 +467,60 @@ function roden_load_more_js() {
     <script>
     (function(){
         var btn = document.getElementById('load-more-results');
-        if (!btn) return;
         var grid = document.querySelector('.case-results-grid');
         var shownEl = document.getElementById('shown-count');
-        var total = parseInt(btn.getAttribute('data-total'), 10);
+        var loadMoreWrap = btn ? btn.parentNode : null;
+        var total = btn ? parseInt(btn.getAttribute('data-total'), 10) : 0;
+        var ajaxUrl = '<?php echo esc_url( admin_url( 'admin-ajax.php' ) ); ?>';
+        var activeCategory = '';
+
+        // Filter buttons
+        var filterBtns = document.querySelectorAll('.filter-btn');
+        filterBtns.forEach(function(filterBtn) {
+            filterBtn.addEventListener('click', function() {
+                var category = this.getAttribute('data-category');
+                activeCategory = category;
+
+                // Update active state
+                filterBtns.forEach(function(b){ b.classList.remove('active'); });
+                this.classList.add('active');
+
+                // Reload grid with filter
+                if (grid) grid.innerHTML = '';
+                if (loadMoreWrap) {
+                    loadMoreWrap.style.display = '';
+                }
+
+                var fd = new FormData();
+                fd.append('action', 'roden_load_more_results');
+                fd.append('offset', 0);
+                fd.append('exclude', btn ? btn.getAttribute('data-exclude') : '');
+                if (category) fd.append('category', category);
+
+                fetch(ajaxUrl, { method: 'POST', body: fd })
+                .then(function(r){ return r.json(); })
+                .then(function(data){
+                    if (data.success && data.data.html) {
+                        grid.innerHTML = data.data.html;
+                        if (btn) {
+                            btn.setAttribute('data-offset', data.data.count);
+                            btn.disabled = false;
+                            btn.textContent = 'Load More Results';
+                        }
+                        if (shownEl) shownEl.textContent = data.data.count + 1;
+                        if (data.data.count < 20 && loadMoreWrap) {
+                            loadMoreWrap.style.display = 'none';
+                        }
+                    } else {
+                        grid.innerHTML = '<p class="no-results-msg">No case results found in this category.</p>';
+                        if (loadMoreWrap) loadMoreWrap.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Load More button
+        if (!btn) return;
 
         btn.addEventListener('click', function() {
             var offset = parseInt(btn.getAttribute('data-offset'), 10);
@@ -471,8 +532,9 @@ function roden_load_more_js() {
             fd.append('action', 'roden_load_more_results');
             fd.append('offset', offset);
             fd.append('exclude', exclude);
+            if (activeCategory) fd.append('category', activeCategory);
 
-            fetch('<?php echo esc_url( admin_url( 'admin-ajax.php' ) ); ?>', {
+            fetch(ajaxUrl, {
                 method: 'POST',
                 body: fd
             })

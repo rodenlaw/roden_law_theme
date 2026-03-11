@@ -99,6 +99,10 @@ function roden_output_schema() {
         roden_schema_person( $firm );
     }
 
+    if ( is_post_type_archive( 'attorney' ) ) {
+        roden_schema_attorneys_list( $firm );
+    }
+
     if ( is_singular( 'resource' ) ) {
         roden_schema_howto();
     }
@@ -193,6 +197,8 @@ function roden_schema_legal_service( $firm ) {
             'Spinal Cord Injuries', 'Maritime Injuries', 'Product Liability',
             'Boating Accidents', 'Burn Injuries', 'Construction Accidents',
             'Nursing Home Abuse', 'Premises Liability', 'Pedestrian Accidents',
+            'Bicycle Accidents', 'Electric Scooter Accidents',
+            'ATV & Side-by-Side Accidents', 'Golf Cart Accidents',
         ),
     );
 
@@ -1037,4 +1043,98 @@ function roden_schema_geo( $office ) {
         'latitude'  => $office['latitude'],
         'longitude' => $office['longitude'],
     );
+}
+
+/* ==========================================================================
+   Person schema for Attorneys archive page
+   ========================================================================== */
+
+/**
+ * Output Person schema for each attorney on the archive page.
+ *
+ * @param array $firm Firm data from roden_firm_data().
+ */
+function roden_schema_attorneys_list( $firm ) {
+    $attorneys = new WP_Query( array(
+        'post_type'      => 'attorney',
+        'posts_per_page' => -1,
+        'orderby'        => 'menu_order',
+        'order'          => 'ASC',
+        'meta_query'     => array(
+            array(
+                'key'     => '_roden_atty_role',
+                'value'   => 'attorney',
+                'compare' => '=',
+            ),
+        ),
+    ) );
+
+    if ( ! $attorneys->have_posts() ) {
+        // Fallback: query all attorneys without role filter
+        $attorneys = new WP_Query( array(
+            'post_type'      => 'attorney',
+            'posts_per_page' => -1,
+            'orderby'        => 'menu_order',
+            'order'          => 'ASC',
+        ) );
+    }
+
+    if ( ! $attorneys->have_posts() ) {
+        return;
+    }
+
+    $persons = array();
+    while ( $attorneys->have_posts() ) {
+        $attorneys->the_post();
+        $post_id = get_the_ID();
+
+        $person = array(
+            '@type' => 'Person',
+            '@id'   => get_permalink() . '#person',
+            'name'  => get_the_title(),
+            'url'   => get_permalink(),
+        );
+
+        $job_title = get_post_meta( $post_id, '_roden_atty_title', true );
+        if ( $job_title ) {
+            $person['jobTitle'] = $job_title;
+        }
+
+        if ( has_post_thumbnail() ) {
+            $person['image'] = get_the_post_thumbnail_url( $post_id, 'attorney-headshot' );
+        }
+
+        $office_key = get_post_meta( $post_id, '_roden_atty_office_key', true );
+        if ( $office_key && isset( $firm['offices'][ $office_key ] ) ) {
+            $office = $firm['offices'][ $office_key ];
+            $person['workLocation'] = array(
+                '@type'   => 'Place',
+                'name'    => $office['name'],
+                'address' => roden_schema_postal_address( $office ),
+            );
+        }
+
+        $person['worksFor'] = array(
+            '@type' => 'LegalService',
+            '@id'   => $firm['url'] . '/#organization',
+            'name'  => $firm['name'],
+        );
+
+        $persons[] = $person;
+    }
+    wp_reset_postdata();
+
+    roden_json_ld( array(
+        '@context'        => 'https://schema.org',
+        '@type'           => 'ItemList',
+        'name'            => 'Attorneys at ' . $firm['name'],
+        'numberOfItems'   => count( $persons ),
+        'itemListElement' => array_map( function( $person, $i ) {
+            return array(
+                '@type'    => 'ListItem',
+                'position' => $i + 1,
+                'item'     => $person,
+            );
+        }, $persons, array_keys( $persons ) ),
+    ) );
 }
