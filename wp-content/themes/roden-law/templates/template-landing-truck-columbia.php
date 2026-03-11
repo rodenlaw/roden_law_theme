@@ -872,7 +872,7 @@ $tel   = $firm['phone_raw'];
                 Columbia Truck Accident Attorneys
             </div>
             <h1>Hurt in a Columbia<br><span class="gold">Truck Accident?</span><br>You Deserve a Team That Fights Back.</h1>
-            <p class="hero-sub">Truck accidents cause catastrophic injuries &mdash; and trucking companies have armies of lawyers working to limit what they pay you. Roden Law has recovered over <?php echo esc_html( $stats['recovered'] ); ?> for injury victims and we know how to take on the trucking industry.</p>
+            <p class="hero-sub">Columbia&rsquo;s position at the intersection of I-20, I-26, and I-77 means heavy commercial truck traffic &mdash; and devastating accidents. Trucking companies deploy armies of lawyers to limit what they pay you. Roden Law&rsquo;s Columbia office has recovered over <?php echo esc_html( $stats['recovered'] ); ?> for injury victims across the Midlands, and we know how to take on the trucking industry.</p>
             <div class="hero-stats">
                 <div class="hero-stat">
                     <div class="hero-stat-number"><?php echo esc_html( $stats['recovered'] ); ?></div>
