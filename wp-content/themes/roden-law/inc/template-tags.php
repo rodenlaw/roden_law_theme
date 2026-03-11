@@ -487,26 +487,30 @@ function roden_intersection_grid( $office_key, $columns = 3 ) {
 
     $office_slug = $office['slug']; // e.g. 'savannah-ga'
 
-    // All 18 pillar slug => label pairs (fallback).
+    // All 22 pillar slug => label pairs (fallback).
     $pa_labels = array(
-        'car-accident-lawyers'         => 'Car Accident Lawyers',
-        'truck-accident-lawyers'        => 'Truck Accident Lawyers',
-        'slip-and-fall-lawyers'         => 'Slip & Fall Lawyers',
-        'motorcycle-accident-lawyers'   => 'Motorcycle Accident Lawyers',
-        'medical-malpractice-lawyers'   => 'Medical Malpractice Lawyers',
-        'wrongful-death-lawyers'        => 'Wrongful Death Lawyers',
-        'workers-compensation-lawyers'  => 'Workers\' Compensation Lawyers',
-        'dog-bite-lawyers'              => 'Dog Bite Lawyers',
-        'brain-injury-lawyers'          => 'Brain Injury Lawyers',
-        'spinal-cord-injury-lawyers'    => 'Spinal Cord Injury Lawyers',
-        'maritime-injury-lawyers'       => 'Maritime Injury Lawyers',
-        'product-liability-lawyers'     => 'Product Liability Lawyers',
-        'boating-accident-lawyers'      => 'Boating Accident Lawyers',
-        'burn-injury-lawyers'           => 'Burn Injury Lawyers',
-        'construction-accident-lawyers' => 'Construction Accident Lawyers',
-        'nursing-home-abuse-lawyers'    => 'Nursing Home Abuse Lawyers',
-        'premises-liability-lawyers'    => 'Premises Liability Lawyers',
-        'pedestrian-accident-lawyers'   => 'Pedestrian Accident Lawyers',
+        'car-accident-lawyers'              => 'Car Accident Lawyers',
+        'truck-accident-lawyers'             => 'Truck Accident Lawyers',
+        'slip-and-fall-lawyers'              => 'Slip & Fall Lawyers',
+        'motorcycle-accident-lawyers'        => 'Motorcycle Accident Lawyers',
+        'medical-malpractice-lawyers'        => 'Medical Malpractice Lawyers',
+        'wrongful-death-lawyers'             => 'Wrongful Death Lawyers',
+        'workers-compensation-lawyers'       => 'Workers\' Compensation Lawyers',
+        'dog-bite-lawyers'                   => 'Dog Bite Lawyers',
+        'brain-injury-lawyers'               => 'Brain Injury Lawyers',
+        'spinal-cord-injury-lawyers'         => 'Spinal Cord Injury Lawyers',
+        'maritime-injury-lawyers'            => 'Maritime Injury Lawyers',
+        'product-liability-lawyers'          => 'Product Liability Lawyers',
+        'boating-accident-lawyers'           => 'Boating Accident Lawyers',
+        'burn-injury-lawyers'                => 'Burn Injury Lawyers',
+        'construction-accident-lawyers'      => 'Construction Accident Lawyers',
+        'nursing-home-abuse-lawyers'         => 'Nursing Home Abuse Lawyers',
+        'premises-liability-lawyers'         => 'Premises Liability Lawyers',
+        'pedestrian-accident-lawyers'        => 'Pedestrian Accident Lawyers',
+        'bicycle-accident-lawyers'           => 'Bicycle Accident Lawyers',
+        'electric-scooter-accident-lawyers'  => 'Electric Scooter Accident Lawyers',
+        'atv-side-by-side-accident-lawyers'  => 'ATV & Side-by-Side Accident Lawyers',
+        'golf-cart-accident-lawyers'         => 'Golf Cart Accident Lawyers',
     );
 
     // Try to load pillar posts from the DB for titles + thumbnails.
@@ -525,13 +529,35 @@ function roden_intersection_grid( $office_key, $columns = 3 ) {
         $pillar_map[ $p->post_name ] = $p;
     }
 
+    // Check which pillars have intersection pages for this office.
+    $intersection_check = get_posts( array(
+        'post_type'      => 'practice_area',
+        'posts_per_page' => -1,
+        'post_name'      => $office_slug,
+        'fields'         => 'id=>parent',
+    ) );
+    $pillars_with_intersection = array();
+    foreach ( $intersection_check as $ic ) {
+        $parent_slug = get_post_field( 'post_name', $ic->post_parent );
+        if ( $parent_slug ) {
+            $pillars_with_intersection[ $parent_slug ] = true;
+        }
+    }
+
     echo '<div class="practice-areas-grid cols-' . intval( $columns ) . '">';
 
     foreach ( $pa_labels as $slug => $fallback_label ) {
-        $intersection_url = home_url( '/' . $slug . '/' . $office_slug . '/' );
+        // Link to intersection page if it exists, otherwise fall back to pillar page.
+        if ( isset( $pillars_with_intersection[ $slug ] ) ) {
+            $url = home_url( '/' . $slug . '/' . $office_slug . '/' );
+        } elseif ( isset( $pillar_map[ $slug ] ) ) {
+            $url = get_permalink( $pillar_map[ $slug ] );
+        } else {
+            $url = home_url( '/practice-areas/' . $slug . '/' );
+        }
         $label = isset( $pillar_map[ $slug ] ) ? $pillar_map[ $slug ]->post_title : $fallback_label;
         ?>
-        <a href="<?php echo esc_url( $intersection_url ); ?>" class="practice-area-card">
+        <a href="<?php echo esc_url( $url ); ?>" class="practice-area-card">
             <?php if ( isset( $pillar_map[ $slug ] ) && has_post_thumbnail( $pillar_map[ $slug ] ) ) : ?>
                 <?php echo get_the_post_thumbnail( $pillar_map[ $slug ], 'card-thumb', array( 'class' => 'pa-thumb' ) ); ?>
             <?php endif; ?>
