@@ -117,7 +117,9 @@ function roden_output_schema() {
     }
 
     // BreadcrumbList on all pages except front page and noindex landing pages
-    $is_landing = is_page_template( 'templates/template-landing-page.php' );
+    $is_landing = is_page_template( 'templates/template-landing-page.php' )
+               || is_page_template( 'templates/template-landing-truck.php' )
+               || is_page_template( 'templates/template-landing-truck-columbia.php' );
     if ( ! is_front_page() && ! $is_landing ) {
         roden_schema_breadcrumbs();
     }
