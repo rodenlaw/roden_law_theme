@@ -16,6 +16,12 @@ $firm  = roden_firm_data();
 $stats = $firm['trust_stats'];
 $phone = $firm['vanity_phone'];
 $tel   = $firm['phone_raw'];
+
+// Dynamic city from Google Ads ?city= parameter. Falls back to page default.
+$default_city = 'Columbia';
+$city_raw     = isset( $_GET['city'] ) ? sanitize_text_field( wp_unslash( $_GET['city'] ) ) : '';
+$city         = $city_raw ?: $default_city;
+$city_is_custom = ! empty( $city_raw );
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -24,7 +30,7 @@ $tel   = $firm['phone_raw'];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
     <title><?php wp_title( '|', true, 'right' ); ?><?php bloginfo( 'name' ); ?></title>
-    <meta name="description" content="Injured in a truck accident in Columbia? Roden Law has recovered <?php echo esc_attr( $stats['recovered'] ); ?> for injury victims. Free case review. No fee unless we win. Call <?php echo esc_attr( $phone ); ?>.">
+    <meta name="description" content="Injured in a truck accident in <?php echo esc_attr( $city ); ?>? Roden Law has recovered <?php echo esc_attr( $stats['recovered'] ); ?> for injury victims. Free case review. No fee unless we win. Call <?php echo esc_attr( $phone ); ?>.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
@@ -869,10 +875,14 @@ $tel   = $firm['phone_raw'];
         <div class="hero-content">
             <div class="hero-eyebrow">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                Columbia Truck Accident Attorneys
+                <?php echo esc_html( $city ); ?> Truck Accident Attorneys
             </div>
-            <h1>Hurt in a Columbia<br><span class="gold">Truck Accident?</span><br>You Deserve a Team That Fights Back.</h1>
+            <h1>Hurt in a <?php echo esc_html( $city ); ?><br><span class="gold">Truck Accident?</span><br>You Deserve a Team That Fights Back.</h1>
+            <?php if ( $city_is_custom ) : ?>
+            <p class="hero-sub">Truck accidents cause catastrophic injuries &mdash; and trucking companies have armies of lawyers working to limit what they pay you. Roden Law&rsquo;s Columbia office has recovered over <?php echo esc_html( $stats['recovered'] ); ?> for injury victims across <?php echo esc_html( $city ); ?> and the Midlands, and we know how to take on the trucking industry.</p>
+            <?php else : ?>
             <p class="hero-sub">Columbia&rsquo;s position at the intersection of I-20, I-26, and I-77 means heavy commercial truck traffic &mdash; and devastating accidents. Trucking companies deploy armies of lawyers to limit what they pay you. Roden Law&rsquo;s Columbia office has recovered over <?php echo esc_html( $stats['recovered'] ); ?> for injury victims across the Midlands, and we know how to take on the trucking industry.</p>
+            <?php endif; ?>
             <div class="hero-stats">
                 <div class="hero-stat">
                     <div class="hero-stat-number"><?php echo esc_html( $stats['recovered'] ); ?></div>
