@@ -136,6 +136,7 @@ function roden_firm_data() {
             ),
             'myrtle-beach' => array(
                 'name'         => 'Roden Law — Myrtle Beach',
+                'market_name'  => 'Myrtle Beach',
                 'street'       => '631 Bellamy Ave., Suite C-B',
                 'city'         => 'Murrells Inlet',
                 'state'        => 'SC',
@@ -157,7 +158,7 @@ function roden_firm_data() {
                     'Garden City', 'Litchfield Beach', 'North Myrtle Beach',
                     'Little River', 'Loris', 'Georgetown',
                 ),
-                'directions'   => 'Our Murrells Inlet office is on Bellamy Avenue, Suite C-B, just off US-17 Business in the heart of the Grand Strand. From Myrtle Beach, take US-17 S (Kings Highway) approximately 12 miles south. From Georgetown, take US-17 N about 20 miles. From Conway, take US-501 to US-17 S. The office is near Brookgreen Gardens and Huntington Beach State Park.',
+                'directions'   => 'Our Myrtle Beach area office is on Bellamy Avenue in Murrells Inlet, Suite C-B, just off US-17 Business in the heart of the Grand Strand. From Myrtle Beach, take US-17 S (Kings Highway) approximately 12 miles south. From Georgetown, take US-17 N about 20 miles. From Conway, take US-501 to US-17 S. The office is near Brookgreen Gardens and Huntington Beach State Park.',
             ),
         ),
 
@@ -302,6 +303,12 @@ function roden_firm_data() {
 
     // Per-office aliases
     foreach ( $data['offices'] as $key => &$office ) {
+        // Market name: display name for headings/nav/SEO (defaults to city).
+        // Physical 'city' is kept for mailing address and schema addressLocality.
+        if ( ! isset( $office['market_name'] ) ) {
+            $office['market_name'] = $office['city'];
+        }
+
         $office['address']     = $office['street'];
         $office['phone_e164']  = $office['phone_raw'];
         $office['lat']         = $office['latitude'];

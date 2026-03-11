@@ -64,10 +64,10 @@ $faqs          = get_post_meta( $post_id, '_roden_faqs', true );
                 </span>
                 <h1 class="hero-title">
                     Personal Injury Lawyer<br>
-                    <span class="text-accent">in <?php echo esc_html( $office['city'] . ', ' . $office['state'] ); ?></span>
+                    <span class="text-accent">in <?php echo esc_html( $office['market_name'] . ', ' . $office['state'] ); ?></span>
                 </h1>
                 <p class="hero-subtitle">
-                    Roden Law's <?php echo esc_html( $office['city'] ); ?> personal injury attorneys have recovered <strong><?php echo esc_html( $stats['recovered'] ); ?></strong> for injury victims across <?php echo esc_html( $service_area ); ?> No fees unless we win.
+                    Roden Law's <?php echo esc_html( $office['market_name'] ); ?> personal injury attorneys have recovered <strong><?php echo esc_html( $stats['recovered'] ); ?></strong> for injury victims across <?php echo esc_html( $service_area ); ?> No fees unless we win.
                 </p>
 
                 <!-- Trust Stats (matching homepage hero-stats) -->
@@ -161,8 +161,8 @@ $faqs          = get_post_meta( $post_id, '_roden_faqs', true );
 <section class="section section-alt">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Cases We Handle in <?php echo esc_html( $office['city'] ); ?></h2>
-            <p class="section-subtitle">Our <?php echo esc_html( $office['city'] ); ?> attorneys handle all types of personal injury cases in <?php echo esc_html( $office['state_full'] ); ?>.</p>
+            <h2 class="section-title">Cases We Handle in <?php echo esc_html( $office['market_name'] ); ?></h2>
+            <p class="section-subtitle">Our <?php echo esc_html( $office['market_name'] ); ?> attorneys handle all types of personal injury cases in <?php echo esc_html( $office['state_full'] ); ?>.</p>
         </div>
         <?php roden_intersection_grid( $office_key, 3 ); ?>
     </div>
@@ -188,9 +188,9 @@ if ( ! empty( $neighborhood_children ) ) :
 <section class="section roden-neighborhoods-served">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Neighborhoods Served Across The <?php echo esc_html( $office['city'] ); ?> Area</h2>
+            <h2 class="section-title">Neighborhoods Served Across The <?php echo esc_html( $office['market_name'] ); ?> Area</h2>
             <p class="section-subtitle">
-                Roden Law's <?php echo esc_html( $office['city'] ); ?> office serves injury victims throughout the greater <?php echo esc_html( $office['city'] ); ?> metro area.
+                Roden Law's <?php echo esc_html( $office['market_name'] ); ?> office serves injury victims throughout the greater <?php echo esc_html( $office['market_name'] ); ?> metro area.
                 Click any neighborhood below to learn about local accident hotspots, nearby hospitals, and how we can help.
             </p>
         </div>
@@ -208,7 +208,7 @@ if ( ! empty( $neighborhood_children ) ) :
             <?php endforeach; ?>
         </div>
         <p class="neighborhoods-note">
-            Don't see your neighborhood? We serve all of the greater <?php echo esc_html( $office['city'] ); ?> area.
+            Don't see your neighborhood? We serve all of the greater <?php echo esc_html( $office['market_name'] ); ?> area.
             Call <a href="tel:<?php echo esc_attr( $office['phone_raw'] ); ?>"><?php echo esc_html( $office['phone'] ); ?></a> for a free consultation.
         </p>
     </div>
@@ -221,7 +221,7 @@ if ( ! empty( $neighborhood_children ) ) :
 <section class="section">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">About Our <?php echo esc_html( $office['city'] ); ?> Office</h2>
+            <h2 class="section-title">About Our <?php echo esc_html( $office['market_name'] ); ?> Office</h2>
         </div>
         <div class="entry-content">
             <?php
@@ -229,7 +229,7 @@ if ( ! empty( $neighborhood_children ) ) :
             if ( trim( $content ) ) {
                 the_content();
             } else {
-                echo '<p>Roden Law\'s ' . esc_html( $office['city'] ) . ' office serves injury victims throughout the region. Our ' . esc_html( $office['city'] ) . ' personal injury attorneys handle all types of injury claims under ' . esc_html( $office['state_full'] ) . ' law.</p>';
+                echo '<p>Roden Law\'s ' . esc_html( $office['market_name'] ) . ' office serves injury victims throughout the region. Our ' . esc_html( $office['market_name'] ) . ' personal injury attorneys handle all types of injury claims under ' . esc_html( $office['state_full'] ) . ' law.</p>';
                 echo '<p>Serving ' . esc_html( $service_area ) . '</p>';
             }
             ?>
@@ -248,7 +248,7 @@ if ( ! empty( $neighborhood_children ) ) :
 <section class="section section-alt">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Why Choose Roden Law in <?php echo esc_html( $office['city'] ); ?>?</h2>
+            <h2 class="section-title">Why Choose Roden Law in <?php echo esc_html( $office['market_name'] ); ?>?</h2>
         </div>
         <div class="why-choose-grid">
             <div class="card why-choose-card">
@@ -261,7 +261,7 @@ if ( ! empty( $neighborhood_children ) ) :
             </div>
             <div class="card why-choose-card">
                 <h3>Local <?php echo esc_html( $office['state_full'] ); ?> Attorneys</h3>
-                <p>Our <?php echo esc_html( $office['city'] ); ?> team practices in <?php echo esc_html( $office['state_full'] ); ?> courts, including the <?php echo esc_html( $office['court'] ); ?>.</p>
+                <p>Our <?php echo esc_html( $office['market_name'] ); ?> team practices in <?php echo esc_html( $office['state_full'] ); ?> courts, including the <?php echo esc_html( $office['court'] ); ?>.</p>
             </div>
             <div class="card why-choose-card">
                 <h3><?php echo esc_html( $stats['rating'] ); ?>-Star Client Rating</h3>
@@ -310,7 +310,7 @@ if ( ! empty( $neighborhood_children ) ) :
                 </div>
                 <?php endif; ?>
                 <p style="margin-top:12px; font-size:0.9rem; color:var(--gray-600);">
-                    Our <?php echo esc_html( $office['city'] ); ?> attorneys regularly appear before the <?php echo esc_html( $office['court'] ); ?> and are familiar with local procedures and filing requirements.
+                    Our <?php echo esc_html( $office['market_name'] ); ?> attorneys regularly appear before the <?php echo esc_html( $office['court'] ); ?> and are familiar with local procedures and filing requirements.
                 </p>
             </div>
         </div>
@@ -324,7 +324,7 @@ if ( ! empty( $neighborhood_children ) ) :
 <section class="section section-alt">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Your <?php echo esc_html( $office['city'] ); ?> Attorneys</h2>
+            <h2 class="section-title">Your <?php echo esc_html( $office['market_name'] ); ?> Attorneys</h2>
         </div>
         <?php roden_attorneys_grid( array( 'office_key' => $office_key, 'columns' => 3 ) ); ?>
     </div>
@@ -348,8 +348,8 @@ if ( ! empty( $neighborhood_children ) ) :
 <section class="section section-alt">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Communities We Serve from <?php echo esc_html( $office['city'] ); ?></h2>
-            <p class="section-subtitle">Our <?php echo esc_html( $office['city'] ); ?> personal injury lawyers proudly serve <?php echo esc_html( $service_area ); ?></p>
+            <h2 class="section-title">Communities We Serve from <?php echo esc_html( $office['market_name'] ); ?></h2>
+            <p class="section-subtitle">Our <?php echo esc_html( $office['market_name'] ); ?> personal injury lawyers proudly serve <?php echo esc_html( $service_area ); ?></p>
         </div>
         <?php if ( ! empty( $office['nearby_communities'] ) ) : ?>
         <div class="communities-grid">
@@ -360,7 +360,7 @@ if ( ! empty( $neighborhood_children ) ) :
         <?php endif; ?>
         <?php if ( ! empty( $office['directions'] ) ) : ?>
         <div class="directions-box">
-            <h3>How to Find Our <?php echo esc_html( $office['city'] ); ?> Office</h3>
+            <h3>How to Find Our <?php echo esc_html( $office['market_name'] ); ?> Office</h3>
             <p><?php echo esc_html( $office['directions'] ); ?></p>
             <a href="<?php echo esc_url( $office['map_url'] ); ?>" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
                 Get Directions on Google Maps
@@ -393,7 +393,7 @@ if ( ! empty( $neighborhood_children ) ) :
         <div class="locations-grid">
             <?php foreach ( $firm['offices'] as $k => $o ) :
                 if ( $k === $office_key ) continue;
-                $slug       = strtolower( str_replace( ' ', '-', $o['city'] ) );
+                $slug       = sanitize_title( $o['market_name'] );
                 $state_slug = $o['state'] === 'GA' ? 'georgia' : 'south-carolina';
                 $office_url = home_url( '/locations/' . $state_slug . '/' . $slug . '/' );
             ?>
@@ -401,7 +401,7 @@ if ( ! empty( $neighborhood_children ) ) :
                 <span class="badge <?php echo 'GA' === $o['state'] ? 'badge-ga' : 'badge-sc'; ?>">
                     <?php echo esc_html( $o['state'] ); ?>
                 </span>
-                <h3><?php echo esc_html( $o['city'] ); ?></h3>
+                <h3><?php echo esc_html( $o['market_name'] ); ?></h3>
                 <address>
                     <?php echo esc_html( $o['street'] ); ?><br>
                     <?php echo esc_html( $o['city'] . ', ' . $o['state'] . ' ' . $o['zip'] ); ?>
@@ -421,7 +421,7 @@ if ( ! empty( $neighborhood_children ) ) :
      ================================================================ -->
 <section class="section bg-navy cta-bottom">
     <div class="container text-center">
-        <h2 class="text-white">Injured in <?php echo esc_html( $office['city'] ); ?>? Get Your Free Case Review Today.</h2>
+        <h2 class="text-white">Injured in <?php echo esc_html( $office['market_name'] ); ?>? Get Your Free Case Review Today.</h2>
         <p class="text-white" style="opacity:0.85; max-width:600px; margin:0 auto var(--space-xl, 32px);">
             No fees unless we win. Available 24/7 across <?php echo esc_html( $office['state_full'] ); ?>.
         </p>

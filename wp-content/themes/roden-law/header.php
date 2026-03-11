@@ -113,10 +113,10 @@ function roden_fallback_menu() {
             <a href="<?php echo esc_url( home_url( '/locations/' ) ); ?>"><?php esc_html_e( 'Locations', 'roden-law' ); ?></a>
             <ul class="sub-menu">
                 <?php foreach ( $firm['offices'] as $office ) :
-                    $city_slug = sanitize_title( $office['city'] );
+                    $city_slug = sanitize_title( $office['market_name'] );
                     $url = home_url( '/locations/' . $office['state_slug'] . '/' . $city_slug . '/' );
                 ?>
-                    <li class="menu-item"><a href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( $office['city'] . ', ' . $office['state'] ); ?></a></li>
+                    <li class="menu-item"><a href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( $office['market_name'] . ', ' . $office['state'] ); ?></a></li>
                 <?php endforeach; ?>
             </ul>
         </li>

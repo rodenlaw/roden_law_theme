@@ -48,8 +48,8 @@ function roden_breadcrumb_html() {
                 $o = $firm['offices'][ $parent_office_key ];
                 $crumbs[] = '<a href="' . esc_url( home_url( '/locations/' . $o['state_slug'] . '/' ) ) . '">' . esc_html( $o['state_full'] ) . '</a>';
                 // Only add parent city crumb if it differs from current page title (avoids duplication).
-                if ( $parent_id && strcasecmp( $o['city'], get_the_title() ) !== 0 ) {
-                    $crumbs[] = '<a href="' . esc_url( get_permalink( $parent_id ) ) . '">' . esc_html( $o['city'] ) . '</a>';
+                if ( $parent_id && strcasecmp( $o['market_name'], get_the_title() ) !== 0 ) {
+                    $crumbs[] = '<a href="' . esc_url( get_permalink( $parent_id ) ) . '">' . esc_html( $o['market_name'] ) . '</a>';
                 }
             }
         } else {
@@ -340,14 +340,14 @@ function roden_location_cards( $exclude_key = '' ) {
         if ( $key === $exclude_key ) {
             continue;
         }
-        $url = home_url( '/locations/' . $office['state_slug'] . '/' . sanitize_title( $office['city'] ) . '/' );
+        $url = home_url( '/locations/' . $office['state_slug'] . '/' . sanitize_title( $office['market_name'] ) . '/' );
         ?>
         <div class="location-card">
             <span class="location-state-badge state-<?php echo esc_attr( strtolower( $office['state'] ) ); ?>">
                 <?php echo esc_html( $office['state'] ); ?>
             </span>
             <h3 class="location-city">
-                <a href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( $office['city'] ); ?></a>
+                <a href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( $office['market_name'] ); ?></a>
             </h3>
             <address>
                 <?php echo esc_html( $office['street'] ); ?><br>
@@ -394,7 +394,7 @@ function roden_location_matrix( $pillar_id = null ) {
             <span class="matrix-state state-<?php echo esc_attr( strtolower( $office['state'] ) ); ?>">
                 <?php echo esc_html( $office['state'] ); ?>
             </span>
-            <span class="matrix-city"><?php echo esc_html( $office['city'] ); ?></span>
+            <span class="matrix-city"><?php echo esc_html( $office['market_name'] ); ?></span>
             <span class="matrix-phone"><?php echo esc_html( $office['phone'] ); ?></span>
         </a>
         <?php

@@ -129,11 +129,11 @@ roden_json_ld( $legal_service_schema );
             <!-- LEFT: Info + CTAs -->
             <div class="hero-content">
                 <span class="state-badge state-<?php echo esc_attr( strtolower( $office['state'] ) ); ?>">
-                    SERVING <?php echo esc_html( strtoupper( $neighborhood_name ) ); ?> FROM OUR <?php echo esc_html( strtoupper( $office['city'] ) ); ?> OFFICE
+                    SERVING <?php echo esc_html( strtoupper( $neighborhood_name ) ); ?> FROM OUR <?php echo esc_html( strtoupper( $office['market_name'] ) ); ?> OFFICE
                 </span>
                 <h1 class="hero-title"><?php echo esc_html( $h1 ); ?></h1>
                 <p class="hero-subtitle">
-                    Roden Law's <?php echo esc_html( $office['city'] ); ?> office serves injury victims throughout <?php echo esc_html( $neighborhood_name ); ?>
+                    Roden Law's <?php echo esc_html( $office['market_name'] ); ?> office serves injury victims throughout <?php echo esc_html( $neighborhood_name ); ?>
                     <?php if ( $service_area ) : ?>
                         and the surrounding <?php echo esc_html( wp_strip_all_tags( $service_area ) ); ?>
                     <?php endif; ?>
@@ -216,7 +216,7 @@ roden_json_ld( $legal_service_schema );
             if ( trim( $content ) ) {
                 the_content();
             } else {
-                echo '<p>Roden Law\'s ' . esc_html( $office['city'] ) . ' office serves injury victims in '
+                echo '<p>Roden Law\'s ' . esc_html( $office['market_name'] ) . ' office serves injury victims in '
                      . esc_html( $neighborhood_name ) . ' and the surrounding ' . esc_html( $office['state_full'] )
                      . ' communities. If you\'ve been injured in ' . esc_html( $neighborhood_name )
                      . ', contact us for a free case review.</p>';
@@ -284,7 +284,7 @@ roden_json_ld( $legal_service_schema );
     <div class="container">
         <div class="section-header">
             <h2 class="section-title">Cases We Handle in <?php echo esc_html( $neighborhood_name ); ?></h2>
-            <p class="section-subtitle">Our <?php echo esc_html( $office['city'] ); ?> attorneys handle all types of personal injury cases for <?php echo esc_html( $neighborhood_name ); ?> residents.</p>
+            <p class="section-subtitle">Our <?php echo esc_html( $office['market_name'] ); ?> attorneys handle all types of personal injury cases for <?php echo esc_html( $neighborhood_name ); ?> residents.</p>
         </div>
         <?php roden_intersection_grid( $parent_office_key, 3 ); ?>
     </div>
@@ -337,8 +337,8 @@ roden_json_ld( $legal_service_schema );
 <section class="section section-alt">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Your <?php echo esc_html( $office['city'] ); ?> Attorneys</h2>
-            <p class="section-subtitle">Our <?php echo esc_html( $office['city'] ); ?>-based personal injury attorneys serve <?php echo esc_html( $neighborhood_name ); ?> residents.</p>
+            <h2 class="section-title">Your <?php echo esc_html( $office['market_name'] ); ?> Attorneys</h2>
+            <p class="section-subtitle">Our <?php echo esc_html( $office['market_name'] ); ?>-based personal injury attorneys serve <?php echo esc_html( $neighborhood_name ); ?> residents.</p>
         </div>
         <?php roden_attorneys_grid( array( 'office_key' => $parent_office_key, 'columns' => 3 ) ); ?>
     </div>
@@ -363,7 +363,7 @@ roden_json_ld( $legal_service_schema );
     <div class="container">
         <div class="section-header">
             <h2 class="section-title">Other Neighborhoods We Serve Near <?php echo esc_html( $neighborhood_name ); ?></h2>
-            <p class="section-subtitle">Roden Law's <?php echo esc_html( $office['city'] ); ?> office serves communities throughout the <?php echo esc_html( $office['state_full'] ); ?> Lowcountry.</p>
+            <p class="section-subtitle">Roden Law's <?php echo esc_html( $office['market_name'] ); ?> office serves communities throughout the <?php echo esc_html( $office['state_full'] ); ?> Lowcountry.</p>
         </div>
         <?php roden_neighborhood_grid( $post_id ); ?>
     </div>
@@ -375,9 +375,9 @@ roden_json_ld( $legal_service_schema );
      ================================================================ -->
 <section class="section bg-navy cta-bottom">
     <div class="container text-center">
-        <h2 class="text-white">Injured in <?php echo esc_html( $neighborhood_name ); ?>? Contact Our <?php echo esc_html( $office['city'] ); ?> Office Today</h2>
+        <h2 class="text-white">Injured in <?php echo esc_html( $neighborhood_name ); ?>? Contact Our <?php echo esc_html( $office['market_name'] ); ?> Office Today</h2>
         <p class="text-white" style="opacity:0.85; max-width:600px; margin:0 auto var(--space-xl, 32px);">
-            No fees unless we win. Roden Law's <a href="<?php echo esc_url( get_permalink( wp_get_post_parent_id( $post_id ) ) ); ?>" style="color: var(--orange, #FCB415); text-decoration: underline;"><?php echo esc_html( $office['city'] ); ?> office</a>
+            No fees unless we win. Roden Law's <a href="<?php echo esc_url( get_permalink( wp_get_post_parent_id( $post_id ) ) ); ?>" style="color: var(--orange, #FCB415); text-decoration: underline;"><?php echo esc_html( $office['market_name'] ); ?> office</a>
             serves all of <?php echo esc_html( $neighborhood_name ); ?> and the surrounding <?php echo esc_html( $office['state_full'] ); ?> communities.
         </p>
         <div class="hero-ctas" style="justify-content:center;">

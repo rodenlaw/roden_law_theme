@@ -207,7 +207,7 @@ $practice_areas = array(
                         <span class="badge <?php echo 'GA' === $office['state'] ? 'badge-ga' : 'badge-sc'; ?>">
                             <?php echo esc_html( $office['state'] ); ?>
                         </span>
-                        <h3><?php echo esc_html( $office['city'] ); ?></h3>
+                        <h3><?php echo esc_html( $office['market_name'] ); ?></h3>
                         <address>
                             <?php echo esc_html( $office['street'] ); ?><br>
                             <?php echo esc_html( $office['city'] . ', ' . $office['state'] . ' ' . $office['zip'] ); ?>
@@ -215,7 +215,7 @@ $practice_areas = array(
                         <a href="tel:<?php echo esc_attr( $office['phone_raw'] ); ?>" class="location-phone">
                             <?php echo esc_html( $office['phone'] ); ?>
                         </a>
-                        <a href="<?php echo esc_url( home_url( '/locations/' . $office['state_slug'] . '/' . sanitize_title( $office['city'] ) . '/' ) ); ?>"
+                        <a href="<?php echo esc_url( home_url( '/locations/' . $office['state_slug'] . '/' . sanitize_title( $office['market_name'] ) . '/' ) ); ?>"
                            class="location-link">
                             <?php esc_html_e( 'View Office', 'roden-law' ); ?> &rarr;
                         </a>

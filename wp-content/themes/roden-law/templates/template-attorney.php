@@ -44,7 +44,7 @@
                     <span class="attorney-hero-title"><?php echo esc_html($title); ?></span>
                 <?php endif; ?>
                 <?php if ( $office ) : ?>
-                    <span class="attorney-hero-office">&#128205; <?php echo esc_html($office['city'] . ', ' . $office['state']); ?> — <?php echo esc_html($firm['vanity_phone']); ?></span>
+                    <span class="attorney-hero-office">&#128205; <?php echo esc_html($office['market_name'] . ', ' . $office['state']); ?> — <?php echo esc_html($firm['vanity_phone']); ?></span>
                 <?php endif; ?>
 
                 <!-- Bar admission badges -->

@@ -94,7 +94,6 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
         <h2 class="matrix-title">Our <?php the_title(); ?> Offices</h2>
         <div class="location-matrix-grid">
             <?php foreach ( $firm['offices'] as $key => $office ) :
-                $city_slug = strtolower( str_replace( ' ', '-', $office['city'] ) ) . '-' . strtolower( $office['state'] );
                 $intersection_exists = false;
                 $intersection_url = '#';
                 foreach ( $child_intersections as $ci ) {
@@ -109,12 +108,12 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                     <span class="matrix-state state-<?php echo esc_attr( strtolower( $office['state'] ) ); ?>"><?php echo esc_html( $office['state'] ); ?></span>
                     <h3 class="matrix-city">
                         <?php if ( $intersection_exists ) : ?>
-                            <a href="<?php echo esc_url( $intersection_url ); ?>"><?php echo esc_html( $office['city'] ); ?></a>
+                            <a href="<?php echo esc_url( $intersection_url ); ?>"><?php echo esc_html( $office['market_name'] ); ?></a>
                         <?php else : ?>
-                            <?php echo esc_html( $office['city'] ); ?>
+                            <?php echo esc_html( $office['market_name'] ); ?>
                         <?php endif; ?>
                     </h3>
-                    <span class="matrix-url">/<?php echo esc_html( $post->post_name ); ?>/<?php echo esc_html( $city_slug ); ?>/</span>
+                    <span class="matrix-url">/<?php echo esc_html( $post->post_name ); ?>/<?php echo esc_html( $office['slug'] ); ?>/</span>
                 </div>
             <?php endforeach; ?>
         </div>

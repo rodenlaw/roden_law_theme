@@ -35,10 +35,10 @@ $firm = roden_firm_data();
                 <h3>Locations</h3>
                 <ul>
                     <?php foreach ($firm['offices'] as $key => $office) :
-                        $slug = strtolower(str_replace(' ','-',$office['city']));
+                        $slug = sanitize_title($office['market_name']);
                         $ss = $office['state']==='GA' ? 'georgia' : 'south-carolina';
                     ?>
-                        <li><a href="<?php echo esc_url(home_url('/locations/'.$ss.'/'.$slug.'/')); ?>"><?php echo esc_html($office['city'].', '.$office['state']); ?></a></li>
+                        <li><a href="<?php echo esc_url(home_url('/locations/'.$ss.'/'.$slug.'/')); ?>"><?php echo esc_html($office['market_name'].', '.$office['state']); ?></a></li>
                     <?php endforeach; ?>
                 </ul>
             </div>

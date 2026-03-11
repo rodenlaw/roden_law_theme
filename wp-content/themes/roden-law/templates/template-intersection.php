@@ -75,7 +75,7 @@ $related_subtypes = get_posts( array(
                 </span>
                 <h1 class="hero-title"><?php the_title(); ?></h1>
                 <p class="hero-subtitle">
-                    Roden Law's <?php echo esc_html( $office['city'] ); ?> <?php echo esc_html( strtolower( $parent_title ) ); ?> serve <?php echo esc_html( $office['service_area'] ); ?> No fees unless we win.
+                    Roden Law's <?php echo esc_html( $office['market_name'] ); ?> <?php echo esc_html( strtolower( $parent_title ) ); ?> serve <?php echo esc_html( $office['service_area'] ); ?> No fees unless we win.
                 </p>
 
                 <!-- NAP Block -->
@@ -137,9 +137,9 @@ $related_subtypes = get_posts( array(
                     </span>
                     <h3 class="matrix-city">
                         <?php if ( ! $is_current ) : ?>
-                            <a href="<?php echo esc_url( $intersection_url ); ?>"><?php echo esc_html( $o['city'] ); ?></a>
+                            <a href="<?php echo esc_url( $intersection_url ); ?>"><?php echo esc_html( $o['market_name'] ); ?></a>
                         <?php else : ?>
-                            <?php echo esc_html( $o['city'] ); ?>
+                            <?php echo esc_html( $o['market_name'] ); ?>
                         <?php endif; ?>
                     </h3>
                     <?php if ( $is_current ) : ?>
@@ -196,7 +196,7 @@ $related_subtypes = get_posts( array(
 
             <!-- Office Attorneys -->
             <div class="content-section">
-                <h2>Our <?php echo esc_html( $office['city'] ); ?> Attorneys</h2>
+                <h2>Our <?php echo esc_html( $office['market_name'] ); ?> Attorneys</h2>
                 <?php roden_attorneys_grid( array( 'office_key' => $pa_office_key, 'columns' => 3 ) ); ?>
             </div>
 
@@ -244,9 +244,9 @@ $related_subtypes = get_posts( array(
 
             <!-- Bottom CTA -->
             <div class="bottom-cta-box">
-                <h2>Contact Our <?php echo esc_html( $office['city'] ); ?> Office Today</h2>
+                <h2>Contact Our <?php echo esc_html( $office['market_name'] ); ?> Office Today</h2>
                 <p>
-                    If you were injured in <?php echo esc_html( $office['city'] ); ?> and believe another party is at fault,
+                    If you were injured in <?php echo esc_html( $office['market_name'] ); ?> and believe another party is at fault,
                     contact us for a free, no-obligation review. Call
                     <a href="tel:<?php echo esc_attr( $office['phone_raw'] ); ?>"><?php echo esc_html( $office['phone'] ); ?></a>
                     — no upfront cost.

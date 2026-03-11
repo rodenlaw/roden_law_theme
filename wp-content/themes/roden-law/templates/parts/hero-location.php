@@ -31,10 +31,10 @@ if ( empty( $office ) ) {
                 </span>
                 <h1 class="hero-title">
                     Personal Injury Lawyer<br>
-                    <span class="text-accent">in <?php echo esc_html( $office['city'] . ', ' . $office['state'] ); ?></span>
+                    <span class="text-accent">in <?php echo esc_html( $office['market_name'] . ', ' . $office['state'] ); ?></span>
                 </h1>
                 <p class="hero-subtitle">
-                    Roden Law's <?php echo esc_html( $office['city'] ); ?> personal injury attorneys have recovered <strong><?php echo esc_html( $stats['recovered'] ); ?></strong> for injury victims across <?php echo esc_html( $service_area ); ?> No fees unless we win.
+                    Roden Law's <?php echo esc_html( $office['market_name'] ); ?> personal injury attorneys have recovered <strong><?php echo esc_html( $stats['recovered'] ); ?></strong> for injury victims across <?php echo esc_html( $service_area ); ?> No fees unless we win.
                 </p>
 
                 <div class="hero-stats">

@@ -107,7 +107,7 @@ $footer_practice_areas = array(
                     </h4>
                     <?php foreach ( $firm['offices'] as $key => $office ) : ?>
                         <div class="footer-office">
-                            <h5><?php echo esc_html( $office['city'] . ', ' . $office['state'] ); ?></h5>
+                            <h5><?php echo esc_html( $office['market_name'] . ', ' . $office['state'] ); ?></h5>
                             <address>
                                 <?php echo esc_html( $office['street'] ); ?><br>
                                 <a href="tel:<?php echo esc_attr( $is_local_page ? $office['phone_raw'] : $firm['phone_raw'] ); ?>">

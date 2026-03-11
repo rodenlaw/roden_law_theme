@@ -75,14 +75,14 @@ if ( $is_state_page ) :
         <h2 class="section-title">Our <?php echo esc_html($state_full); ?> Offices</h2>
         <div class="location-cards-grid cols-<?php echo count($state_offices); ?>">
             <?php foreach ( $state_offices as $k => $o ) :
-                $slug = sanitize_title( $o['city'] );
+                $slug = sanitize_title( $o['market_name'] );
                 $state_slug = strtolower( str_replace(' ', '-', $o['state_full']) );
                 $url = home_url( '/locations/' . $state_slug . '/' . $slug . '/' );
             ?>
             <div class="location-card" itemscope itemtype="https://schema.org/LegalService">
                 <div class="location-card-header">
                     <span class="state-badge state-<?php echo esc_attr(strtolower($o['state'])); ?>"><?php echo esc_html($o['state']); ?></span>
-                    <h3 itemprop="name"><?php echo esc_html($o['city']); ?></h3>
+                    <h3 itemprop="name"><?php echo esc_html($o['market_name']); ?></h3>
                 </div>
                 <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
                     <span itemprop="streetAddress"><?php echo esc_html( $o['address'] ); ?></span><br>
@@ -143,10 +143,10 @@ if ( $is_state_page ) :
                     <h3 class="widget-title"><?php echo esc_html($state_full); ?> Offices</h3>
                     <ul class="sidebar-links">
                         <?php foreach ( $state_offices as $k => $o ) :
-                            $slug = sanitize_title( $o['city'] );
+                            $slug = sanitize_title( $o['market_name'] );
                             $ss = strtolower( str_replace(' ', '-', $o['state_full']) );
                         ?>
-                            <li><a href="<?php echo esc_url( home_url('/locations/' . $ss . '/' . $slug . '/') ); ?>">→ <?php echo esc_html($o['city'] . ', ' . $o['state']); ?></a></li>
+                            <li><a href="<?php echo esc_url( home_url('/locations/' . $ss . '/' . $slug . '/') ); ?>">→ <?php echo esc_html($o['market_name'] . ', ' . $o['state']); ?></a></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>
@@ -160,10 +160,10 @@ if ( $is_state_page ) :
                     <h3 class="widget-title"><?php echo esc_html($other_state_full); ?> Offices</h3>
                     <ul class="sidebar-links">
                         <?php foreach ( $other_offices as $k => $o ) :
-                            $slug = sanitize_title( $o['city'] );
+                            $slug = sanitize_title( $o['market_name'] );
                             $ss = strtolower( str_replace(' ', '-', $o['state_full']) );
                         ?>
-                            <li><a href="<?php echo esc_url( home_url('/locations/' . $ss . '/' . $slug . '/') ); ?>">→ <?php echo esc_html($o['city'] . ', ' . $o['state']); ?></a></li>
+                            <li><a href="<?php echo esc_url( home_url('/locations/' . $ss . '/' . $slug . '/') ); ?>">→ <?php echo esc_html($o['market_name'] . ', ' . $o['state']); ?></a></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>

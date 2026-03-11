@@ -217,7 +217,7 @@ function roden_schema_legal_service( $firm ) {
                 $schema['areaServed'] = array(
                     array(
                         '@type' => 'City',
-                        'name'  => $office['city'] . ', ' . $office['state'],
+                        'name'  => $office['market_name'] . ', ' . $office['state'],
                     ),
                 );
             }
@@ -254,9 +254,9 @@ function roden_schema_local_business_office( $firm, $key, $office ) {
     $schema = array(
         '@context'   => 'https://schema.org',
         '@type'      => array( 'LocalBusiness', 'LegalService' ),
-        '@id'        => $firm['url'] . '/locations/' . $office['state_slug'] . '/' . sanitize_title( $office['city'] ) . '/#localbusiness',
+        '@id'        => $firm['url'] . '/locations/' . $office['state_slug'] . '/' . sanitize_title( $office['market_name'] ) . '/#localbusiness',
         'name'       => $office['name'],
-        'url'        => $firm['url'] . '/locations/' . $office['state_slug'] . '/' . sanitize_title( $office['city'] ) . '/',
+        'url'        => $firm['url'] . '/locations/' . $office['state_slug'] . '/' . sanitize_title( $office['market_name'] ) . '/',
         'telephone'  => $office['phone'],
         'priceRange' => 'Free Consultation',
         'address'    => roden_schema_postal_address( $office ),
@@ -596,11 +596,11 @@ function roden_schema_breadcrumbs() {
                     'item'     => home_url( '/locations/' . $office['state_slug'] . '/' ),
                 );
                 // Only add parent city crumb if it differs from current page title (avoids duplication).
-                if ( $parent_id && strcasecmp( $office['city'], get_the_title() ) !== 0 ) {
+                if ( $parent_id && strcasecmp( $office['market_name'], get_the_title() ) !== 0 ) {
                     $items[] = array(
                         '@type'    => 'ListItem',
                         'position' => $position++,
-                        'name'     => $office['city'],
+                        'name'     => $office['market_name'],
                         'item'     => get_permalink( $parent_id ),
                     );
                 }
