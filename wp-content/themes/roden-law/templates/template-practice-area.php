@@ -399,6 +399,9 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                 'posts_per_page' => 6,
                 'post_status'    => 'publish',
             );
+
+            // Try practice_category taxonomy first.
+            $has_tax_filter = false;
             if ( $cat_slug ) {
                 $related_args['tax_query'] = array(
                     array(
@@ -407,7 +410,42 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                         'terms'    => $cat_slug,
                     ),
                 );
+                $has_tax_filter = true;
             }
+
+            // Fall back to WordPress category by mapping the PA slug to a blog category.
+            if ( ! $has_tax_filter ) {
+                $pa_to_blog_cat = array(
+                    'car-accident-lawyers'              => 'car-accident',
+                    'truck-accident-lawyers'             => 'truck-accident',
+                    'motorcycle-accident-lawyers'        => 'personal-injury',
+                    'slip-and-fall-lawyers'              => 'personal-injury',
+                    'medical-malpractice-lawyers'        => 'medical-malpractice',
+                    'wrongful-death-lawyers'             => 'personal-injury',
+                    'workers-compensation-lawyers'       => 'workers-compensation',
+                    'dog-bite-lawyers'                   => 'personal-injury',
+                    'brain-injury-lawyers'               => 'personal-injury',
+                    'spinal-cord-injury-lawyers'         => 'personal-injury',
+                    'maritime-injury-lawyers'            => 'personal-injury',
+                    'product-liability-lawyers'          => 'personal-injury',
+                    'boating-accident-lawyers'           => 'personal-injury',
+                    'burn-injury-lawyers'                => 'personal-injury',
+                    'construction-accident-lawyers'      => 'workers-compensation',
+                    'nursing-home-abuse-lawyers'         => 'nursing-home-abuse',
+                    'premises-liability-lawyers'         => 'personal-injury',
+                    'pedestrian-accident-lawyers'        => 'car-accident',
+                    'bicycle-accident-lawyers'           => 'bicycle-accident',
+                    'electric-scooter-accident-lawyers'  => 'personal-injury',
+                    'atv-side-by-side-accident-lawyers'  => 'personal-injury',
+                    'golf-cart-accident-lawyers'         => 'personal-injury',
+                );
+                $pa_slug   = $post->post_name;
+                $blog_cat  = isset( $pa_to_blog_cat[ $pa_slug ] ) ? $pa_to_blog_cat[ $pa_slug ] : '';
+                if ( $blog_cat ) {
+                    $related_args['category_name'] = $blog_cat;
+                }
+            }
+
             $related_posts = new WP_Query( $related_args );
             if ( $related_posts->have_posts() ) : ?>
                 <div class="content-section pa-resources">
