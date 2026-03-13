@@ -97,27 +97,6 @@ if ( ! $featured_id ) {
             </div>
 
             <?php
-            // Filter bar — practice categories
-            $pc_terms = get_terms( array(
-                'taxonomy'   => 'practice_category',
-                'hide_empty' => true,
-            ) );
-            if ( ! is_wp_error( $pc_terms ) && ! empty( $pc_terms ) ) : ?>
-            <div class="results-filter-bar">
-                <label for="results-filter-category" class="screen-reader-text">Filter by practice area</label>
-                <div class="filter-group">
-                    <span class="filter-label">Filter by:</span>
-                    <button class="filter-btn active" data-category="">All Results</button>
-                    <?php foreach ( $pc_terms as $term ) : ?>
-                        <button class="filter-btn" data-category="<?php echo esc_attr( $term->slug ); ?>">
-                            <?php echo esc_html( $term->name ); ?>
-                        </button>
-                    <?php endforeach; ?>
-                </div>
-            </div>
-            <?php endif; ?>
-
-            <?php
             roden_case_results_grid( array(
                 'count'   => 20,
                 'columns' => 3,
