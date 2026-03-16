@@ -20,7 +20,8 @@ $tel   = preg_replace( '/[^0-9]/', '', $office['phone'] );
 // Dynamic city from Google Ads ?city= parameter. Falls back to Charleston.
 $default_city = 'Charleston';
 $city_raw     = isset( $_GET['city'] ) ? sanitize_text_field( wp_unslash( $_GET['city'] ) ) : '';
-$city         = $city_raw ?: $default_city;
+// Fall back to default if empty or if Google Ads macro wasn't replaced.
+$city         = ( $city_raw && strpos( $city_raw, '{' ) === false ) ? $city_raw : $default_city;
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
