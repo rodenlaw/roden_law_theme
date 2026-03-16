@@ -195,27 +195,40 @@ $city         = $city_raw ?: $default_city;
             margin-bottom: 28px;
             max-width: 540px;
         }
-        .hero-stats {
-            display: flex;
-            gap: 32px;
+        /* ===== ACCIDENT TYPE GRID ===== */
+        .accident-types {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
             margin-bottom: 0;
         }
-        .hero-stat {
-            text-align: left;
+        .accident-type-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 8px;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 10px;
+            text-align: center;
+            transition: background 0.2s, border-color 0.2s;
+            cursor: default;
         }
-        .hero-stat-number {
+        .accident-type-item:hover {
+            background: rgba(232,168,48,0.1);
+            border-color: rgba(232,168,48,0.3);
+        }
+        .accident-type-item svg {
+            flex-shrink: 0;
+        }
+        .accident-type-label {
             font-family: 'Montserrat', sans-serif;
-            font-weight: 900;
-            font-size: 28px;
-            color: var(--gold);
-            line-height: 1.2;
-        }
-        .hero-stat-label {
-            font-size: 12px;
-            color: #8899aa;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
             font-weight: 600;
+            font-size: 11px;
+            color: #c0cad8;
+            line-height: 1.3;
+            letter-spacing: 0.3px;
         }
 
         /* ===== HERO FORM ===== */
@@ -320,10 +333,10 @@ $city         = $city_raw ?: $default_city;
         }
         .form-trust svg { flex-shrink: 0; }
 
-        /* ===== NO-FEE BANNER ===== */
+        /* ===== STATS + NO-FEE BANNER ===== */
         .no-fee-banner {
-            background: var(--gold);
-            padding: 16px 0;
+            background: var(--navy-deep);
+            padding: 18px 0;
         }
         .no-fee-inner {
             max-width: 1200px;
@@ -332,7 +345,7 @@ $city         = $city_raw ?: $default_city;
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 48px;
+            gap: 12px;
             flex-wrap: wrap;
         }
         .no-fee-item {
@@ -342,17 +355,24 @@ $city         = $city_raw ?: $default_city;
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
             font-size: 15px;
-            color: var(--navy-deep);
+            color: var(--white);
+            white-space: nowrap;
         }
         .no-fee-icon {
-            width: 28px;
-            height: 28px;
-            background: var(--navy-deep);
+            width: 26px;
+            height: 26px;
+            background: rgba(232,168,48,0.15);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-shrink: 0;
+        }
+        .no-fee-sep {
+            color: rgba(255,255,255,0.2);
+            font-size: 20px;
+            font-weight: 300;
+            user-select: none;
         }
 
         /* ===== SOCIAL PROOF BAR ===== */
@@ -801,11 +821,14 @@ $city         = $city_raw ?: $default_city;
             .hero-inner { padding: 32px 16px 40px; }
             .hero h1 { font-size: 28px; }
             .hero-sub { font-size: 16px; }
-            .hero-stats { gap: 20px; flex-wrap: wrap; }
-            .hero-stat-number { font-size: 22px; }
+            .accident-types { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+            .accident-type-item { padding: 10px 6px; }
+            .accident-type-label { font-size: 10px; }
             .hero-form-card { padding: 28px 20px; }
             .form-row { grid-template-columns: 1fr; }
-            .no-fee-inner { gap: 20px; flex-direction: column; }
+            .no-fee-inner { gap: 8px; justify-content: center; }
+            .no-fee-item { font-size: 13px; }
+            .no-fee-sep { display: none; }
             .proof-bar-inner { gap: 24px; }
             .why-grid { grid-template-columns: 1fr; }
             .results-grid { grid-template-columns: 1fr; }
@@ -842,18 +865,30 @@ $city         = $city_raw ?: $default_city;
             </div>
             <h1><?php echo esc_html( $city ); ?> <span class="gold">Car Accident Lawyers</span></h1>
             <p class="hero-sub">Don't let insurance companies shortchange you. Roden Law has recovered over <?php echo esc_html( $stats['recovered'] ); ?> for injury victims across <?php echo esc_html( $city ); ?> &mdash; and we don't charge a fee unless we win your case.</p>
-            <div class="hero-stats">
-                <div class="hero-stat">
-                    <div class="hero-stat-number"><?php echo esc_html( $stats['recovered'] ); ?></div>
-                    <div class="hero-stat-label">Recovered</div>
+            <div class="accident-types">
+                <div class="accident-type-item">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><rect x="1" y="12" width="9" height="6" rx="1"/><rect x="14" y="12" width="9" height="6" rx="1"/><line x1="10" y1="15" x2="14" y2="15"/><circle cx="4" cy="18" r="1.5" fill="#e8a830" stroke="none"/><circle cx="20" cy="18" r="1.5" fill="#e8a830" stroke="none"/></svg>
+                    <span class="accident-type-label">Rear-End Collision</span>
                 </div>
-                <div class="hero-stat">
-                    <div class="hero-stat-number"><?php echo esc_html( $stats['cases'] ); ?></div>
-                    <div class="hero-stat-label">Cases Won</div>
+                <div class="accident-type-item">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><rect x="2" y="10" width="10" height="6" rx="1"/><rect x="14" y="4" width="6" height="10" rx="1" transform="rotate(0)"/><line x1="12" y1="13" x2="14" y2="13"/><path d="M11 12l3-3" stroke="#e8a830" stroke-width="1" opacity="0.5"/></svg>
+                    <span class="accident-type-label">T-Bone / Side Impact</span>
                 </div>
-                <div class="hero-stat">
-                    <div class="hero-stat-number"><?php echo esc_html( $stats['rating'] ); ?>&#9733;</div>
-                    <div class="hero-stat-label">Client Rating</div>
+                <div class="accident-type-item">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><rect x="2" y="12" width="9" height="5" rx="1"/><circle cx="5" cy="17" r="1.5" fill="#e8a830" stroke="none"/><path d="M11 14.5l2-2M13 14.5l2-2" opacity="0.6"/><path d="M16 9l2 2M20 9l-2 2M18 7v4" stroke-width="1.5"/></svg>
+                    <span class="accident-type-label">Hit &amp; Run</span>
+                </div>
+                <div class="accident-type-item">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><rect x="2" y="13" width="11" height="5" rx="1"/><circle cx="5" cy="18" r="1.5" fill="#e8a830" stroke="none"/><circle cx="10" cy="18" r="1.5" fill="#e8a830" stroke="none"/><path d="M15 11l1.5-5.5M18 11l-1.5-5.5M16.5 5.5h0" stroke-linecap="round"/><path d="M14 8h5" stroke-linecap="round"/></svg>
+                    <span class="accident-type-label">Drunk Driver</span>
+                </div>
+                <div class="accident-type-item">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><rect x="2" y="13" width="11" height="5" rx="1"/><circle cx="5" cy="18" r="1.5" fill="#e8a830" stroke="none"/><circle cx="10" cy="18" r="1.5" fill="#e8a830" stroke="none"/><rect x="15" y="5" width="6" height="10" rx="1"/><line x1="18" y1="8" x2="18" y2="12" stroke-linecap="round"/></svg>
+                    <span class="accident-type-label">Distracted Driver</span>
+                </div>
+                <div class="accident-type-item">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><rect x="3" y="12" width="12" height="6" rx="1"/><circle cx="6" cy="18" r="1.5" fill="#e8a830" stroke="none"/><circle cx="12" cy="18" r="1.5" fill="#e8a830" stroke="none"/><circle cx="20" cy="10" r="4"/><path d="M18.5 9.5l1.5 1 1.5-1" stroke-linecap="round"/></svg>
+                    <span class="accident-type-label">Uber / Lyft</span>
                 </div>
             </div>
         </div>
@@ -917,32 +952,35 @@ $city         = $city_raw ?: $default_city;
     </div>
 </section>
 
-<!-- ===== NO-FEE BANNER ===== -->
+<!-- ===== STATS + NO-FEE BANNER ===== -->
 <div class="no-fee-banner">
     <div class="no-fee-inner">
         <div class="no-fee-item">
             <div class="no-fee-icon">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2.5"><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
             </div>
-            No Upfront Cost
+            <?php echo esc_html( $stats['recovered'] ); ?>+ Recovered
         </div>
+        <span class="no-fee-sep">|</span>
+        <div class="no-fee-item">
+            <div class="no-fee-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <?php echo esc_html( $stats['cases'] ); ?> Cases Won
+        </div>
+        <span class="no-fee-sep">|</span>
+        <div class="no-fee-item">
+            <div class="no-fee-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <?php echo esc_html( $stats['rating'] ); ?>&#9733; Rating
+        </div>
+        <span class="no-fee-sep">|</span>
         <div class="no-fee-item">
             <div class="no-fee-icon">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
             </div>
-            Free Case Evaluation
-        </div>
-        <div class="no-fee-item">
-            <div class="no-fee-icon">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            </div>
-            You Pay Nothing Unless We Win
-        </div>
-        <div class="no-fee-item">
-            <div class="no-fee-icon">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            </div>
-            Available 24/7
+            No Fee Unless We Win
         </div>
     </div>
 </div>
