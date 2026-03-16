@@ -816,7 +816,7 @@ $city         = $city_raw ?: $default_city;
             .faq-layout { grid-template-columns: 1fr; gap: 32px; }
         }
 
-        @media (max-width: 640px) {
+        @media (max-width: 768px) {
             .mobile-cta-bar { display: block; }
             body { padding-top: 56px; }
             .top-bar-badge { display: none; }
