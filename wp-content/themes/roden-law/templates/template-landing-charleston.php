@@ -16,6 +16,11 @@ $stats = $firm['trust_stats'];
 $office = $firm['offices']['charleston'];
 $phone = $office['phone'];
 $tel   = preg_replace( '/[^0-9]/', '', $office['phone'] );
+
+// Dynamic city from Google Ads ?city= parameter. Falls back to Charleston.
+$default_city = 'Charleston';
+$city_raw     = isset( $_GET['city'] ) ? sanitize_text_field( wp_unslash( $_GET['city'] ) ) : '';
+$city         = $city_raw ?: $default_city;
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -23,8 +28,8 @@ $tel   = preg_replace( '/[^0-9]/', '', $office['phone'] );
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
-    <title>Charleston Car Accident Lawyers | Roden Law</title>
-    <meta name="description" content="Injured in a car accident in Charleston? Roden Law has recovered <?php echo esc_attr( $stats['recovered'] ); ?> for injury victims. Free case review. No fee unless we win. Call <?php echo esc_attr( $phone ); ?>.">
+    <title><?php echo esc_html( $city ); ?> Car Accident Lawyers | Roden Law</title>
+    <meta name="description" content="Injured in a car accident in <?php echo esc_attr( $city ); ?>? Roden Law has recovered <?php echo esc_attr( $stats['recovered'] ); ?> for injury victims. Free case review. No fee unless we win. Call <?php echo esc_attr( $phone ); ?>.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
@@ -833,10 +838,10 @@ $tel   = preg_replace( '/[^0-9]/', '', $office['phone'] );
         <div class="hero-content">
             <div class="hero-eyebrow">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                Charleston Car Accident Attorneys
+                <?php echo esc_html( $city ); ?> Car Accident Attorneys
             </div>
-            <h1>Charleston <span class="gold">Car Accident Lawyers</span></h1>
-            <p class="hero-sub">Don't let insurance companies shortchange you. Roden Law has recovered over <?php echo esc_html( $stats['recovered'] ); ?> for injury victims across Charleston &mdash; and we don't charge a fee unless we win your case.</p>
+            <h1><?php echo esc_html( $city ); ?> <span class="gold">Car Accident Lawyers</span></h1>
+            <p class="hero-sub">Don't let insurance companies shortchange you. Roden Law has recovered over <?php echo esc_html( $stats['recovered'] ); ?> for injury victims across <?php echo esc_html( $city ); ?> &mdash; and we don't charge a fee unless we win your case.</p>
             <div class="hero-stats">
                 <div class="hero-stat">
                     <div class="hero-stat-number"><?php echo esc_html( $stats['recovered'] ); ?></div>
@@ -946,7 +951,7 @@ $tel   = preg_replace( '/[^0-9]/', '', $office['phone'] );
 <section class="why-section">
     <div class="section-inner">
         <div class="section-eyebrow">Your Road to Results</div>
-        <h2 class="section-title">Why Charleston Chooses Roden Law After a Car Accident</h2>
+        <h2 class="section-title">Why <?php echo esc_html( $city ); ?> Chooses Roden Law After a Car Accident</h2>
         <p class="section-sub">When you're dealing with injuries, lost wages, and mounting medical bills, you need a legal team that fights as hard as you do.</p>
 
         <div class="why-grid">
@@ -976,7 +981,7 @@ $tel   = preg_replace( '/[^0-9]/', '', $office['phone'] );
                     <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                 </div>
                 <h3>You Talk to a Lawyer, Not a Call Center</h3>
-                <p>Unlike the big national firms, you work directly with experienced Charleston attorneys who know local courts, judges, and opposing counsel.</p>
+                <p>Unlike the big national firms, you work directly with experienced <?php echo esc_html( $city ); ?> attorneys who know local courts, judges, and opposing counsel.</p>
             </div>
             <div class="why-card">
                 <div class="why-icon">
@@ -1001,7 +1006,7 @@ $tel   = preg_replace( '/[^0-9]/', '', $office['phone'] );
     <div class="section-inner">
         <div class="section-eyebrow">Proven Results</div>
         <h2 class="section-title">Real Results for Real People</h2>
-        <p class="section-sub">Our track record speaks for itself. Here are just a few of the recoveries we've secured for car accident victims in Charleston.</p>
+        <p class="section-sub">Our track record speaks for itself. Here are just a few of the recoveries we've secured for car accident victims in <?php echo esc_html( $city ); ?>.</p>
 
         <div class="results-grid">
             <div class="result-card">
@@ -1076,7 +1081,7 @@ $tel   = preg_replace( '/[^0-9]/', '', $office['phone'] );
     <div class="section-inner">
         <div class="section-eyebrow" style="text-align:center;">Client Stories</div>
         <h2 class="section-title" style="text-align:center;">What Our Clients Say</h2>
-        <p class="section-sub" style="text-align:center; margin: 0 auto 48px;">Hear from real Charleston families we've helped after car accidents.</p>
+        <p class="section-sub" style="text-align:center; margin: 0 auto 48px;">Hear from real <?php echo esc_html( $city ); ?> families we've helped after car accidents.</p>
 
         <?php echo do_shortcode( '[trustindex data-widget-id="fe3ce9843b72815ccc26abe2c19"]' ); ?>
     </div>
@@ -1089,7 +1094,7 @@ $tel   = preg_replace( '/[^0-9]/', '', $office['phone'] );
             <div>
                 <div class="section-eyebrow">FAQ</div>
                 <h2 class="section-title">Questions About Your Car Accident Case?</h2>
-                <p class="section-sub">Get answers to the most common questions we hear from car accident victims in Charleston.</p>
+                <p class="section-sub">Get answers to the most common questions we hear from car accident victims in <?php echo esc_html( $city ); ?>.</p>
                 <a href="#leadForm" class="cta-phone" style="font-size:16px; padding: 16px 32px; display: inline-flex;">Talk to a Lawyer Now &rarr;</a>
             </div>
             <div>
@@ -1100,7 +1105,7 @@ $tel   = preg_replace( '/[^0-9]/', '', $office['phone'] );
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">How long do I have to file a car accident claim in Charleston?</div>
+                    <div class="faq-question">How long do I have to file a car accident claim in <?php echo esc_html( $city ); ?>?</div>
                     <div class="faq-answer">
                         <p>South Carolina has a <?php echo esc_html( $firm['jurisdiction']['SC']['statute_years'] ); ?>-year statute of limitations for personal injury claims from the date of the accident (<?php echo esc_html( $firm['jurisdiction']['SC']['statute_cite'] ); ?>). However, waiting can hurt your case &mdash; evidence disappears, witnesses forget details, and the insurance company may use delay against you. We recommend contacting an attorney as soon as possible.</p>
                     </div>
