@@ -14,8 +14,8 @@ defined( 'ABSPATH' ) || exit;
 $firm  = roden_firm_data();
 $stats = $firm['trust_stats'];
 $office = $firm['offices']['charleston'];
-$phone = $office['phone'];
-$tel   = preg_replace( '/[^0-9]/', '', $office['phone'] );
+$phone = '1-844-RESULTS';
+$tel   = '18447378587';
 
 // Dynamic city from Google Ads ?city= parameter. Falls back to Charleston.
 $default_city = 'Charleston';
