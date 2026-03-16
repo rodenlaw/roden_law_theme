@@ -96,12 +96,23 @@ $legal_service_schema = array(
     ),
     'areaServed' => array(
         array(
-            '@type' => 'City',
+            '@type' => ( wp_get_post_parent_id( $post_id ) && get_post_meta( wp_get_post_parent_id( $post_id ), '_roden_is_neighborhood', true ) )
+                ? 'Neighborhood'
+                : 'City',
             'name'  => $neighborhood_name,
-            'containedInPlace' => array(
-                '@type' => 'State',
-                'name'  => $office['state_full'],
-            ),
+            'containedInPlace' => ( wp_get_post_parent_id( $post_id ) && get_post_meta( wp_get_post_parent_id( $post_id ), '_roden_is_neighborhood', true ) )
+                ? array(
+                    '@type' => 'City',
+                    'name'  => get_the_title( wp_get_post_parent_id( $post_id ) ),
+                    'containedInPlace' => array(
+                        '@type' => 'State',
+                        'name'  => $office['state_full'],
+                    ),
+                )
+                : array(
+                    '@type' => 'State',
+                    'name'  => $office['state_full'],
+                ),
         ),
     ),
     'parentOrganization' => array(
@@ -225,6 +236,48 @@ roden_json_ld( $legal_service_schema );
         </div>
     </div>
 </section>
+
+<!-- ================================================================
+     3b. SUB-NEIGHBORHOODS (if this neighborhood has children)
+     ================================================================ -->
+<?php
+$sub_neighborhoods = get_posts( array(
+    'post_type'      => 'location',
+    'post_parent'    => $post_id,
+    'posts_per_page' => -1,
+    'meta_key'       => '_roden_is_neighborhood',
+    'meta_value'     => '1',
+    'orderby'        => 'title',
+    'order'          => 'ASC',
+    'post_status'    => 'publish',
+) );
+
+if ( ! empty( $sub_neighborhoods ) ) :
+?>
+<section class="section section-alt roden-neighborhoods-served">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Neighborhoods We Serve in <?php echo esc_html( $neighborhood_name ); ?></h2>
+            <p class="section-subtitle">
+                Click any neighborhood below to learn about local accident hotspots, nearby hospitals, and how Roden Law can help.
+            </p>
+        </div>
+        <div class="roden-neighborhood-grid">
+            <?php foreach ( $sub_neighborhoods as $child ) :
+                $child_pop = get_post_meta( $child->ID, '_roden_neighborhood_population', true );
+            ?>
+                <a href="<?php echo esc_url( get_permalink( $child->ID ) ); ?>" class="neighborhood-card">
+                    <span class="neighborhood-name"><?php echo esc_html( $child->post_title ); ?></span>
+                    <?php if ( $child_pop ) : ?>
+                        <span class="neighborhood-pop">Pop. <?php echo esc_html( $child_pop ); ?></span>
+                    <?php endif; ?>
+                    <span class="neighborhood-arrow">&rarr;</span>
+                </a>
+            <?php endforeach; ?>
+        </div>
+    </div>
+</section>
+<?php endif; ?>
 
 <!-- ================================================================
      4. DANGEROUS ROADS & INTERSECTIONS
@@ -362,8 +415,18 @@ roden_json_ld( $legal_service_schema );
 <section class="section section-alt">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Other Neighborhoods We Serve Near <?php echo esc_html( $neighborhood_name ); ?></h2>
-            <p class="section-subtitle">Roden Law's <?php echo esc_html( $office['market_name'] ); ?> office serves communities throughout the <?php echo esc_html( $office['state_full'] ); ?> Lowcountry.</p>
+            <?php
+            $sibling_parent_id = wp_get_post_parent_id( $post_id );
+            $parent_is_neighborhood = $sibling_parent_id ? get_post_meta( $sibling_parent_id, '_roden_is_neighborhood', true ) : false;
+            if ( $parent_is_neighborhood ) :
+                $parent_title = get_the_title( $sibling_parent_id );
+            ?>
+                <h2 class="section-title">Other <?php echo esc_html( $parent_title ); ?> Neighborhoods We Serve</h2>
+                <p class="section-subtitle">Roden Law's <?php echo esc_html( $office['market_name'] ); ?> office serves communities throughout <?php echo esc_html( $parent_title ); ?> and the surrounding area.</p>
+            <?php else : ?>
+                <h2 class="section-title">Other Neighborhoods We Serve Near <?php echo esc_html( $neighborhood_name ); ?></h2>
+                <p class="section-subtitle">Roden Law's <?php echo esc_html( $office['market_name'] ); ?> office serves communities throughout the greater <?php echo esc_html( $office['market_name'] ); ?> metro region.</p>
+            <?php endif; ?>
         </div>
         <?php roden_neighborhood_grid( $post_id ); ?>
     </div>

@@ -41,15 +41,28 @@ function roden_breadcrumb_html() {
 
         $is_neighborhood = get_post_meta( get_the_ID(), '_roden_is_neighborhood', true );
         if ( $is_neighborhood ) {
-            // Neighborhood page: Home > Locations > State > City > Neighborhood
+            // Neighborhood page: walk ancestors up to the office page.
+            // Supports arbitrary depth: Home > Locations > State > City > [Intermediate Neighborhood] > Current
             $parent_office_key = get_post_meta( get_the_ID(), '_roden_parent_office_key', true );
-            $parent_id = wp_get_post_parent_id( get_the_ID() );
             if ( $parent_office_key && isset( $firm['offices'][ $parent_office_key ] ) ) {
                 $o = $firm['offices'][ $parent_office_key ];
                 $crumbs[] = '<a href="' . esc_url( home_url( '/locations/' . $o['state_slug'] . '/' ) ) . '">' . esc_html( $o['state_full'] ) . '</a>';
-                // Only add parent city crumb if it differs from current page title (avoids duplication).
-                if ( $parent_id && strcasecmp( $o['market_name'], get_the_title() ) !== 0 ) {
-                    $crumbs[] = '<a href="' . esc_url( get_permalink( $parent_id ) ) . '">' . esc_html( $o['market_name'] ) . '</a>';
+
+                // Collect all ancestors up to (and including) the office page.
+                $ancestors = array();
+                $walk_id   = wp_get_post_parent_id( get_the_ID() );
+                while ( $walk_id ) {
+                    $ancestors[] = $walk_id;
+                    // Stop once we reach the office-level page (has _roden_office_key).
+                    if ( get_post_meta( $walk_id, '_roden_office_key', true ) ) {
+                        break;
+                    }
+                    $walk_id = wp_get_post_parent_id( $walk_id );
+                }
+                // Ancestors are child-first; reverse to get root-first order.
+                $ancestors = array_reverse( $ancestors );
+                foreach ( $ancestors as $anc_id ) {
+                    $crumbs[] = '<a href="' . esc_url( get_permalink( $anc_id ) ) . '">' . esc_html( get_the_title( $anc_id ) ) . '</a>';
                 }
             }
         } else {

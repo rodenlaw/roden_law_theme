@@ -188,10 +188,10 @@ if ( ! empty( $neighborhood_children ) ) :
 <section class="section roden-neighborhoods-served">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Neighborhoods Served Across The <?php echo esc_html( $office['market_name'] ); ?> Area</h2>
+            <h2 class="section-title">Areas Served in the <?php echo esc_html( $office['market_name'] ); ?> Metro Region</h2>
             <p class="section-subtitle">
-                Roden Law's <?php echo esc_html( $office['market_name'] ); ?> office serves injury victims throughout the greater <?php echo esc_html( $office['market_name'] ); ?> metro area.
-                Click any neighborhood below to learn about local accident hotspots, nearby hospitals, and how we can help.
+                Roden Law's <?php echo esc_html( $office['market_name'] ); ?> office serves injury victims throughout the greater <?php echo esc_html( $office['market_name'] ); ?> metro region.
+                Click any area below to learn about local accident hotspots, nearby hospitals, and how we can help.
             </p>
         </div>
         <div class="roden-neighborhood-grid">
@@ -208,7 +208,7 @@ if ( ! empty( $neighborhood_children ) ) :
             <?php endforeach; ?>
         </div>
         <p class="neighborhoods-note">
-            Don't see your neighborhood? We serve all of the greater <?php echo esc_html( $office['market_name'] ); ?> area.
+            Don't see your area? We serve all of the greater <?php echo esc_html( $office['market_name'] ); ?> metro region.
             Call <a href="tel:<?php echo esc_attr( $office['phone_raw'] ); ?>"><?php echo esc_html( $office['phone'] ); ?></a> for a free consultation.
         </p>
     </div>
