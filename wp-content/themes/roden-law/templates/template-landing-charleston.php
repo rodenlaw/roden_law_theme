@@ -61,28 +61,31 @@ $city         = $city_raw ?: $default_city;
             --green-trust: #2ecc71;
         }
 
-        /* ===== STICKY MOBILE CTA BAR ===== */
+        /* ===== STICKY MOBILE CALL BAR (TOP) ===== */
         .mobile-cta-bar {
             display: none;
             position: fixed;
-            bottom: 0;
+            top: 0;
             left: 0;
             right: 0;
-            background: var(--navy-deep);
-            padding: 10px 16px;
+            background: var(--gold);
+            padding: 8px 16px;
             z-index: 1000;
-            box-shadow: 0 -4px 20px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
         }
         .mobile-cta-bar a {
-            display: block;
-            background: var(--gold);
-            color: var(--navy-deep);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: var(--navy-deep);
+            color: var(--white);
             text-align: center;
-            padding: 14px;
+            padding: 12px;
             border-radius: 8px;
             font-family: 'Montserrat', sans-serif;
             font-weight: 800;
-            font-size: 16px;
+            font-size: 15px;
             letter-spacing: 0.5px;
         }
 
@@ -815,7 +818,7 @@ $city         = $city_raw ?: $default_city;
 
         @media (max-width: 640px) {
             .mobile-cta-bar { display: block; }
-            body { padding-bottom: 70px; }
+            body { padding-top: 56px; }
             .top-bar-badge { display: none; }
             .top-bar-inner { justify-content: center; }
             .hero-inner { padding: 32px 16px 40px; }
@@ -1193,9 +1196,12 @@ $city         = $city_raw ?: $default_city;
     </p>
 </footer>
 
-<!-- ===== MOBILE CTA BAR ===== -->
+<!-- ===== MOBILE CALL BAR (TOP) ===== -->
 <div class="mobile-cta-bar">
-    <a href="tel:<?php echo esc_attr( $tel ); ?>">&#128222; Call Now &mdash; Free Case Review</a>
+    <a href="tel:<?php echo esc_attr( $tel ); ?>">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call Now &mdash; <?php echo esc_html( $phone ); ?>
+    </a>
 </div>
 
 <script>
