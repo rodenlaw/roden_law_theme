@@ -51,7 +51,7 @@ function roden_add_meta_boxes() {
         'roden_faqs',
         __( 'FAQs (generates FAQPage schema)', 'roden-law' ),
         'roden_faqs_meta_box',
-        array( 'practice_area', 'location' ),
+        array( 'practice_area', 'location', 'post' ),
         'normal',
         'high'
     );

@@ -109,6 +109,7 @@ function roden_output_schema() {
 
     if ( is_singular( 'post' ) ) {
         roden_schema_article( $firm );
+        roden_schema_faq_page();
     }
 
     // Contact page — Organization with ContactPoint
