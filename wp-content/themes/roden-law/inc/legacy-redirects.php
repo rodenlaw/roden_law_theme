@@ -76,7 +76,8 @@ function roden_get_legacy_redirect_map() {
 
         '/who-we-are/'              => '/about/',
         '/who-we-are/attorneys/'    => '/attorneys/',
-        '/contact-us/'              => '/contact/',
+        // '/contact-us/' redirect removed — Permalink Manager now uses /contact/ as canonical URI.
+        // Previously this caused a redirect loop: PM sent /contact/ → /contact-us/, this sent /contact-us/ → /contact/.
         '/practice-areas/service-areas/' => '/locations/',
 
         // ══════════════════════════════════════════════════════════════
