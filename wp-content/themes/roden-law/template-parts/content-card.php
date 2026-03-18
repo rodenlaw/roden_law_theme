@@ -42,7 +42,11 @@ $cat_name   = ! empty($categories) ? $categories[0]->name : '';
             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
         </h2>
 
-        <p class="blog-card-excerpt"><?php echo wp_trim_words( get_the_excerpt(), 20 ); ?></p>
+        <?php
+        $takeaways = get_post_meta( get_the_ID(), '_roden_key_takeaways', true );
+        $excerpt   = $takeaways ? wp_strip_all_tags( $takeaways ) : get_the_excerpt();
+        ?>
+        <p class="blog-card-excerpt"><?php echo wp_trim_words( $excerpt, 20 ); ?></p>
 
         <div class="blog-card-footer">
             <?php if ( $atty ) : ?>
