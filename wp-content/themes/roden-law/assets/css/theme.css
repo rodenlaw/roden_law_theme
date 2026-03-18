@@ -1102,6 +1102,28 @@ h2.blog-card-title, h3.blog-card-title { margin-bottom: 8px; font-size: 14px; li
 .author-meta .author-title { display: block; font-size: 9px; color: var(--gray-500); }
 .read-more-link { font-size: 12px; font-weight: 700; color: var(--orange-text); }
 
+/* Key Takeaways Box */
+.key-takeaways-box {
+    background: var(--light-bg, #F8F6F2);
+    border-left: 4px solid var(--navy, #013046);
+    padding: 20px 24px;
+    margin-bottom: 24px;
+    border-radius: 0 6px 6px 0;
+}
+h2.key-takeaways-title {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--navy, #013046);
+    margin: 0 0 10px 0;
+    line-height: 1.2;
+}
+.key-takeaways-box p {
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--text-dark, #333);
+    margin: 0;
+}
+
 /* Blog Post Single */
 .post-meta-bar {
     display: flex; align-items: center; gap: 16px; margin-top: 16px;

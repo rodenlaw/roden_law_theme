@@ -48,6 +48,15 @@ function roden_add_meta_boxes() {
     );
 
     add_meta_box(
+        'roden_key_takeaways',
+        __( 'Key Takeaways (AI Summary)', 'roden-law' ),
+        'roden_key_takeaways_meta_box',
+        'post',
+        'normal',
+        'high'
+    );
+
+    add_meta_box(
         'roden_faqs',
         __( 'FAQs (generates FAQPage schema)', 'roden-law' ),
         'roden_faqs_meta_box',
@@ -353,6 +362,23 @@ function roden_pa_common_injuries_meta_box( $post ) {
 }
 
 /** FAQs repeater meta box. */
+/* ==========================================================================
+   KEY TAKEAWAYS (AI SUMMARY) — Blog Posts
+   ========================================================================== */
+
+function roden_key_takeaways_meta_box( $post ) {
+    wp_nonce_field( 'roden_key_takeaways_nonce', '_roden_key_takeaways_nonce' );
+    $value = get_post_meta( $post->ID, '_roden_key_takeaways', true );
+    ?>
+    <p class="description">A dense 40-80 word paragraph summarizing all major topics of this post. Should be self-contained (comprehensible without the article) and cite specific statutes. HTML allowed: <code>&lt;strong&gt;</code>, <code>&lt;a&gt;</code>.</p>
+    <textarea name="_roden_key_takeaways" rows="5" style="width:100%;"><?php echo esc_textarea( $value ); ?></textarea>
+    <?php
+}
+
+/* ==========================================================================
+   FAQS
+   ========================================================================== */
+
 function roden_faqs_meta_box( $post ) {
     wp_nonce_field( 'roden_faqs_nonce', '_roden_faqs_nonce' );
     $faqs = get_post_meta( $post->ID, '_roden_faqs', true );
@@ -467,6 +493,8 @@ function roden_neighborhood_meta_box( $post ) {
     $service_area    = get_post_meta( $post->ID, '_roden_neighborhood_service_area', true );
     $population      = get_post_meta( $post->ID, '_roden_neighborhood_population', true );
     $court           = get_post_meta( $post->ID, '_roden_neighborhood_court', true );
+    $nb_lat          = get_post_meta( $post->ID, '_roden_neighborhood_latitude', true );
+    $nb_lng          = get_post_meta( $post->ID, '_roden_neighborhood_longitude', true );
 
     $firm = roden_firm_data();
     ?>
@@ -509,6 +537,23 @@ function roden_neighborhood_meta_box( $post ) {
                 <input type="text" id="roden_neighborhood_court" name="_roden_neighborhood_court"
                        value="<?php echo esc_attr( $court ); ?>" class="regular-text"
                        placeholder="Charleston County Circuit Court">
+            </td>
+        </tr>
+        <tr>
+            <th><label for="roden_neighborhood_latitude"><?php esc_html_e( 'Latitude', 'roden-law' ); ?></label></th>
+            <td>
+                <input type="text" id="roden_neighborhood_latitude" name="_roden_neighborhood_latitude"
+                       value="<?php echo esc_attr( $nb_lat ); ?>" class="regular-text"
+                       placeholder="32.8468">
+            </td>
+        </tr>
+        <tr>
+            <th><label for="roden_neighborhood_longitude"><?php esc_html_e( 'Longitude', 'roden-law' ); ?></label></th>
+            <td>
+                <input type="text" id="roden_neighborhood_longitude" name="_roden_neighborhood_longitude"
+                       value="<?php echo esc_attr( $nb_lng ); ?>" class="regular-text"
+                       placeholder="-79.8209">
+                <p class="description"><?php esc_html_e( 'Optional. Neighborhood-specific coordinates for schema geo data. Falls back to parent office coords.', 'roden-law' ); ?></p>
             </td>
         </tr>
         <tr>
@@ -892,6 +937,14 @@ function roden_save_meta_fields( $post_id ) {
             absint( $_POST['_roden_author_attorney'] ?? 0 ) );
     }
 
+    /* ── Key Takeaways ─────────────────────────────────────────── */
+
+    if ( isset( $_POST['_roden_key_takeaways_nonce'] ) &&
+         wp_verify_nonce( $_POST['_roden_key_takeaways_nonce'], 'roden_key_takeaways_nonce' ) ) {
+        update_post_meta( $post_id, '_roden_key_takeaways',
+            wp_kses_post( $_POST['_roden_key_takeaways'] ?? '' ) );
+    }
+
     /* ── FAQs ────────────────────────────────────────────────────── */
 
     if ( isset( $_POST['_roden_faqs_nonce'] ) &&
@@ -983,6 +1036,10 @@ function roden_save_meta_fields( $post_id ) {
             sanitize_text_field( $_POST['_roden_neighborhood_population'] ?? '' ) );
         update_post_meta( $post_id, '_roden_neighborhood_court',
             sanitize_text_field( $_POST['_roden_neighborhood_court'] ?? '' ) );
+        update_post_meta( $post_id, '_roden_neighborhood_latitude',
+            sanitize_text_field( $_POST['_roden_neighborhood_latitude'] ?? '' ) );
+        update_post_meta( $post_id, '_roden_neighborhood_longitude',
+            sanitize_text_field( $_POST['_roden_neighborhood_longitude'] ?? '' ) );
     }
 
     /* ── Location: Office Key ────────────────────────────────────── */
