@@ -18,7 +18,7 @@ add_action( 'wp_enqueue_scripts', 'roden_enqueue_assets' );
 function roden_enqueue_assets() {
     $theme_version = wp_get_theme()->get( 'Version' );
 
-    // Google Fonts — Merriweather (headings) + Inter (body)
+    // Google Fonts — loaded async via preload pattern (non-render-blocking)
     wp_enqueue_style(
         'roden-google-fonts',
         'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@700;800;900&display=swap',
@@ -30,7 +30,7 @@ function roden_enqueue_assets() {
     wp_enqueue_style(
         'roden-style',
         get_stylesheet_uri(),
-        array( 'roden-google-fonts' ),
+        array(),
         $theme_version
     );
 
@@ -48,7 +48,7 @@ function roden_enqueue_assets() {
         get_template_directory_uri() . '/js/navigation.js',
         array(),
         $theme_version,
-        true
+        array( 'strategy' => 'defer', 'in_footer' => true )
     );
 
     // Theme JS (FAQ accordion, smooth scroll, GA tracking, sticky header)
@@ -57,8 +57,30 @@ function roden_enqueue_assets() {
         get_template_directory_uri() . '/assets/js/theme.js',
         array(),
         $theme_version,
-        true
+        array( 'strategy' => 'defer', 'in_footer' => true )
     );
+}
+
+/* ==========================================================================
+   PERFORMANCE: Preconnect, non-render-blocking fonts, deferred CSS
+   ========================================================================== */
+
+// Preconnect to Google Fonts domains
+add_action( 'wp_head', 'roden_preconnect_hints', 1 );
+function roden_preconnect_hints() {
+    echo '<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>' . "\n";
+    echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>' . "\n";
+}
+
+// Make Google Fonts non-render-blocking via media swap
+add_filter( 'style_loader_tag', 'roden_async_google_fonts', 10, 4 );
+function roden_async_google_fonts( $html, $handle, $href, $media ) {
+    if ( 'roden-google-fonts' === $handle ) {
+        // Preload + swap: loads font CSS without blocking render
+        $html  = '<link rel="preload" as="style" href="' . esc_url( $href ) . '" onload="this.onload=null;this.rel=\'stylesheet\'">' . "\n";
+        $html .= '<noscript><link rel="stylesheet" href="' . esc_url( $href ) . '"></noscript>' . "\n";
+    }
+    return $html;
 }
 
 /* ==========================================================================
