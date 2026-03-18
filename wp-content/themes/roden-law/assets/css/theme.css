@@ -1091,7 +1091,7 @@ a.sub-type-link:hover { background: var(--light); border-color: var(--orange); }
 .blog-card-category { font-size: 9px; font-weight: 700; color: var(--orange-text); text-transform: uppercase; letter-spacing: 0.5px; }
 .meta-sep { color: var(--gray-300); }
 .blog-card-date { font-size: 10px; color: var(--gray-400); }
-.blog-card-title { margin-bottom: 8px; font-size: 14px; line-height: 1.2; }
+h2.blog-card-title, h3.blog-card-title { margin-bottom: 8px; font-size: 14px; line-height: 1.2; }
 .blog-card-title a { font-size: 14px; font-weight: 800; color: var(--navy); line-height: 1.2; }
 .blog-card-title a:hover { color: var(--orange-text); }
 .blog-card-excerpt { font-size: 13px; color: var(--gray-600); line-height: 1.7; flex: 1; margin-bottom: 12px; }
