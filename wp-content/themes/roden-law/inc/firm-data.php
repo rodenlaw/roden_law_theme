@@ -26,7 +26,7 @@ function roden_firm_data() {
         'url'          => 'https://rodenlaw.com',
         'description'  => 'Personal injury law firm serving Georgia and South Carolina with over $250 million recovered for injured clients.',
         'licensed_in'  => array( 'Georgia', 'South Carolina' ),
-        'founded'      => '2015',
+        'founded'      => '2013',
 
         /* ==================================================================
            OFFICES — 5 Locations

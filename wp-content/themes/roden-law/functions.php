@@ -113,6 +113,18 @@ function roden_staff_redirect() {
 }
 
 /* ==========================================================================
+   3c. 404 REDIRECT — Send all 404s to the homepage
+   ========================================================================== */
+
+add_action( 'template_redirect', 'roden_redirect_404_to_home' );
+function roden_redirect_404_to_home() {
+    if ( is_404() ) {
+        wp_redirect( home_url( '/' ), 302 );
+        exit;
+    }
+}
+
+/* ==========================================================================
    4. TEMPLATE ROUTING — Bridge ACF CPT names to theme templates
    ========================================================================== */
 
@@ -244,6 +256,69 @@ function roden_thankyou_conversion_tracking() {
     });
     </script>
     <?php
+}
+
+/* ==========================================================================
+   7b. ROBOTS.TXT — Remove Crawl-delay + welcome AI crawlers
+   ========================================================================== */
+
+add_filter( 'robots_txt', 'roden_custom_robots_txt', 100, 2 );
+function roden_custom_robots_txt( $output, $public ) {
+    if ( '0' === $public ) {
+        return $output; // respect "Discourage search engines" setting
+    }
+
+    $output  = "User-agent: *\n";
+    $output .= "Disallow: /wp-admin/\n";
+    $output .= "Allow: /wp-admin/admin-ajax.php\n\n";
+
+    $output .= "# AI Search Crawlers — explicitly welcomed\n";
+    $ai_bots = array(
+        'OAI-SearchBot',
+        'ChatGPT-User',
+        'GPTBot',
+        'Google-Extended',
+        'PerplexityBot',
+        'ClaudeBot',
+        'anthropic-ai',
+        'Applebot-Extended',
+        'cohere-ai',
+    );
+    foreach ( $ai_bots as $bot ) {
+        $output .= "User-agent: {$bot}\nAllow: /\n\n";
+    }
+
+    $output .= "Sitemap: https://rodenlaw.com/wp-sitemap.xml\n";
+
+    return $output;
+}
+
+/* ==========================================================================
+   7c. HOMEPAGE META DESCRIPTION
+   ========================================================================== */
+
+add_action( 'wp_head', 'roden_homepage_meta_description', 1 );
+function roden_homepage_meta_description() {
+    if ( ! is_front_page() ) {
+        return;
+    }
+    // Skip if an SEO plugin already outputs a meta description.
+    if ( defined( 'WPSEO_VERSION' ) || class_exists( 'RankMath' ) ) {
+        return;
+    }
+    echo '<meta name="description" content="Roden Law is a personal injury law firm with offices in Charleston, Savannah, Columbia, Myrtle Beach, and Darien. Over $250 million recovered for injured clients. Free consultation. No fees unless we win. Call 1-844-RESULTS.">' . "\n";
+}
+
+/* ==========================================================================
+   7d. FORCE en-US LOCALE — Ensure lang="en-US" on frontend
+   ========================================================================== */
+
+add_filter( 'locale', 'roden_force_en_us_locale' );
+function roden_force_en_us_locale( $locale ) {
+    if ( ! is_admin() ) {
+        return 'en_US';
+    }
+    return $locale;
 }
 
 /* ==========================================================================

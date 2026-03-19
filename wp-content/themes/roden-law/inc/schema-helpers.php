@@ -91,7 +91,13 @@ function roden_output_schema() {
     }
 
     if ( is_singular( 'location' ) ) {
-        roden_schema_local_business_single( $firm );
+        $is_neighborhood = get_post_meta( get_the_ID(), '_roden_is_neighborhood', true );
+        if ( $is_neighborhood ) {
+            roden_schema_neighborhood_legal_service( $firm );
+            roden_schema_local_business_neighborhood( $firm );
+        } else {
+            roden_schema_local_business_single( $firm );
+        }
         roden_schema_faq_page();
     }
 
@@ -170,6 +176,20 @@ function roden_schema_organization( $firm ) {
         );
     }
     $schema['location'] = $locations;
+
+    // Founders — link to Person entities
+    $schema['founder'] = array(
+        array(
+            '@type' => 'Person',
+            '@id'   => $firm['url'] . '/attorneys/eric-roden/#person',
+            'name'  => 'Eric Roden',
+        ),
+        array(
+            '@type' => 'Person',
+            '@id'   => $firm['url'] . '/attorneys/tyler-love/#person',
+            'name'  => 'Tyler Love',
+        ),
+    );
 
     roden_json_ld( $schema );
 }
@@ -393,6 +413,24 @@ function roden_schema_person( $firm ) {
 
     // knowsAbout — personal injury practice areas
     $schema['knowsAbout'] = array( 'Personal Injury Law', 'Insurance Claims', 'Civil Litigation' );
+
+    // Awards — from _roden_awards repeater meta field
+    $awards_raw = get_post_meta( $post_id, '_roden_awards', true );
+    if ( is_array( $awards_raw ) && ! empty( $awards_raw ) ) {
+        $award_list = array();
+        foreach ( $awards_raw as $award ) {
+            if ( ! empty( $award['award'] ) ) {
+                $label = $award['award'];
+                if ( ! empty( $award['year'] ) ) {
+                    $label .= ' ' . $award['year'];
+                }
+                $award_list[] = $label;
+            }
+        }
+        if ( ! empty( $award_list ) ) {
+            $schema['award'] = $award_list;
+        }
+    }
 
     roden_json_ld( $schema );
 }
@@ -1009,6 +1047,248 @@ function roden_schema_contact_page( $firm ) {
     $logo_url = roden_get_logo_url();
     if ( $logo_url ) {
         $schema['logo'] = $logo_url;
+    }
+
+    roden_json_ld( $schema );
+}
+
+/* ==========================================================================
+   13. Neighborhood LegalService (Neighborhood pages)
+   ========================================================================== */
+
+/**
+ * Output a rich LegalService schema for neighborhood pages.
+ *
+ * Includes @id, serviceType, knowsAbout (22 PAs + court), areaServed
+ * (multiple communities), makesOffer, openingHours, hasMap, and image.
+ *
+ * @param array $firm Firm data from roden_firm_data().
+ */
+function roden_schema_neighborhood_legal_service( $firm ) {
+    $post_id           = get_the_ID();
+    $neighborhood_name = get_the_title();
+    $parent_office_key = get_post_meta( $post_id, '_roden_parent_office_key', true );
+
+    if ( ! $parent_office_key ) {
+        $parent_id = wp_get_post_parent_id( $post_id );
+        if ( $parent_id ) {
+            $parent_office_key = get_post_meta( $parent_id, '_roden_office_key', true );
+        }
+    }
+
+    if ( ! $parent_office_key || ! isset( $firm['offices'][ $parent_office_key ] ) ) {
+        return;
+    }
+
+    $office = $firm['offices'][ $parent_office_key ];
+
+    // Directions URL
+    $directions_url = 'https://www.google.com/maps/dir/'
+        . urlencode( $neighborhood_name . ', ' . $office['state'] ) . '/'
+        . urlencode( $office['street'] . ', ' . $office['city'] . ', ' . $office['state'] . ' ' . $office['zip'] ) . '/';
+
+    // Geo — use neighborhood-specific coords if set, otherwise parent office
+    $nb_lat = get_post_meta( $post_id, '_roden_neighborhood_latitude', true );
+    $nb_lng = get_post_meta( $post_id, '_roden_neighborhood_longitude', true );
+    $geo = array(
+        '@type'     => 'GeoCoordinates',
+        'latitude'  => ( $nb_lat && $nb_lng ) ? (float) $nb_lat : $office['latitude'],
+        'longitude' => ( $nb_lat && $nb_lng ) ? (float) $nb_lng : $office['longitude'],
+    );
+
+    // Determine area type — sub-neighborhood or city-level neighborhood
+    $parent_id          = wp_get_post_parent_id( $post_id );
+    $parent_is_neighborhood = $parent_id ? get_post_meta( $parent_id, '_roden_is_neighborhood', true ) : false;
+
+    if ( $parent_is_neighborhood ) {
+        $area_type = 'Neighborhood';
+        $contained_in = array(
+            '@type' => 'City',
+            'name'  => get_the_title( $parent_id ),
+            'containedInPlace' => array(
+                '@type' => 'State',
+                'name'  => $office['state_full'],
+            ),
+        );
+    } else {
+        $area_type = 'City';
+        $contained_in = array(
+            '@type' => 'State',
+            'name'  => $office['state_full'],
+        );
+    }
+
+    // Build areaServed — primary neighborhood + parsed communities from service_area
+    $area_served = array(
+        array(
+            '@type'            => $area_type,
+            'name'             => $neighborhood_name,
+            'containedInPlace' => $contained_in,
+        ),
+    );
+
+    $service_area_text = get_post_meta( $post_id, '_roden_neighborhood_service_area', true );
+    if ( $service_area_text ) {
+        $communities = array_filter( array_map( 'trim', preg_split( '/[,\n]+/', $service_area_text ) ) );
+        foreach ( $communities as $community ) {
+            if ( strcasecmp( $community, $neighborhood_name ) !== 0 ) {
+                $area_served[] = array(
+                    '@type' => 'Place',
+                    'name'  => $community,
+                );
+            }
+        }
+    }
+
+    // knowsAbout — 22 practice areas + court if set
+    $knows_about = array(
+        'Car Accidents', 'Truck Accidents', 'Slip and Fall',
+        'Motorcycle Accidents', 'Medical Malpractice', 'Wrongful Death',
+        'Workers Compensation', 'Dog Bites', 'Brain Injuries',
+        'Spinal Cord Injuries', 'Maritime Injuries', 'Product Liability',
+        'Boating Accidents', 'Burn Injuries', 'Construction Accidents',
+        'Nursing Home Abuse', 'Premises Liability', 'Pedestrian Accidents',
+        'Bicycle Accidents', 'Electric Scooter Accidents',
+        'ATV & Side-by-Side Accidents', 'Golf Cart Accidents',
+    );
+
+    $court = get_post_meta( $post_id, '_roden_neighborhood_court', true );
+    if ( $court ) {
+        $knows_about[] = $court;
+    }
+
+    // makesOffer — top 6 practice area services
+    $top_slugs = array(
+        'car-accident-lawyers'        => 'Car Accident Lawyer',
+        'truck-accident-lawyers'      => 'Truck Accident Lawyer',
+        'motorcycle-accident-lawyers' => 'Motorcycle Accident Lawyer',
+        'slip-and-fall-lawyers'       => 'Slip and Fall Lawyer',
+        'wrongful-death-lawyers'      => 'Wrongful Death Lawyer',
+        'medical-malpractice-lawyers' => 'Medical Malpractice Lawyer',
+    );
+    $offers = array();
+    foreach ( $top_slugs as $slug => $label ) {
+        $offers[] = array(
+            '@type'       => 'Offer',
+            'itemOffered' => array(
+                '@type' => 'LegalService',
+                'name'  => $label . ' in ' . $neighborhood_name,
+                'url'   => home_url( '/' . $slug . '/' . $office['slug'] . '/' ),
+            ),
+        );
+    }
+
+    $schema = array(
+        '@context'    => 'https://schema.org',
+        '@type'       => 'LegalService',
+        '@id'         => get_permalink() . '#legalservice',
+        'name'        => $office['name'],
+        'description' => 'Personal injury lawyers serving ' . $neighborhood_name . ', ' . $office['state'] . '. Free consultation. No fees unless we win.',
+        'url'         => get_permalink(),
+        'telephone'   => $office['phone'],
+        'priceRange'  => 'Free consultation, contingency fee',
+        'serviceType' => 'Personal Injury Law',
+        'address'     => roden_schema_postal_address( $office ),
+        'geo'         => $geo,
+        'areaServed'  => $area_served,
+        'knowsAbout'  => $knows_about,
+        'makesOffer'  => $offers,
+        'hasMap'      => $directions_url,
+        'openingHoursSpecification' => array(
+            array(
+                '@type'     => 'OpeningHoursSpecification',
+                'dayOfWeek' => array( 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday' ),
+                'opens'     => '08:00',
+                'closes'    => '18:00',
+            ),
+        ),
+        'openingHours' => 'Mo-Fr 08:00-18:00',
+        'parentOrganization' => array(
+            '@type' => 'Organization',
+            '@id'   => $firm['url'] . '/#organization',
+            'name'  => $firm['name'],
+            'url'   => $firm['url'],
+        ),
+    );
+
+    $logo_url = roden_get_logo_url();
+    if ( $logo_url ) {
+        $schema['image'] = $logo_url;
+    }
+
+    roden_json_ld( $schema );
+}
+
+/* ==========================================================================
+   14. LocalBusiness for parent office on Neighborhood pages
+   ========================================================================== */
+
+/**
+ * Output LocalBusiness schema for the parent office on neighborhood pages.
+ *
+ * Reads _roden_parent_office_key and outputs the parent office's LocalBusiness
+ * with the canonical @id, plus the neighborhood name in areaServed.
+ *
+ * @param array $firm Firm data from roden_firm_data().
+ */
+function roden_schema_local_business_neighborhood( $firm ) {
+    $post_id           = get_the_ID();
+    $parent_office_key = get_post_meta( $post_id, '_roden_parent_office_key', true );
+
+    if ( ! $parent_office_key ) {
+        $parent_id = wp_get_post_parent_id( $post_id );
+        if ( $parent_id ) {
+            $parent_office_key = get_post_meta( $parent_id, '_roden_office_key', true );
+        }
+    }
+
+    if ( ! $parent_office_key || ! isset( $firm['offices'][ $parent_office_key ] ) ) {
+        return;
+    }
+
+    $office            = $firm['offices'][ $parent_office_key ];
+    $neighborhood_name = get_the_title();
+
+    $schema = array(
+        '@context'   => 'https://schema.org',
+        '@type'      => array( 'LocalBusiness', 'LegalService' ),
+        '@id'        => $firm['url'] . '/locations/' . $office['state_slug'] . '/' . sanitize_title( $office['market_name'] ) . '/#localbusiness',
+        'name'       => $office['name'],
+        'url'        => $firm['url'] . '/locations/' . $office['state_slug'] . '/' . sanitize_title( $office['market_name'] ) . '/',
+        'telephone'  => $office['phone'],
+        'priceRange' => 'Free Consultation',
+        'address'    => roden_schema_postal_address( $office ),
+        'geo'        => roden_schema_geo( $office ),
+        'areaServed' => array(
+            array(
+                '@type' => 'City',
+                'name'  => $neighborhood_name . ', ' . $office['state'],
+            ),
+            array(
+                '@type' => 'City',
+                'name'  => $office['market_name'] . ', ' . $office['state'],
+            ),
+        ),
+        'openingHoursSpecification' => array(
+            array(
+                '@type'     => 'OpeningHoursSpecification',
+                'dayOfWeek' => array( 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday' ),
+                'opens'     => '08:00',
+                'closes'    => '18:00',
+            ),
+        ),
+        'openingHours'       => 'Mo-Fr 08:00-18:00',
+        'hasMap'             => $office['map_url'],
+        'parentOrganization' => array(
+            '@type' => 'Organization',
+            '@id'   => $firm['url'] . '/#organization',
+            'name'  => $firm['name'],
+        ),
+    );
+
+    $logo_url = roden_get_logo_url();
+    if ( $logo_url ) {
+        $schema['image'] = $logo_url;
     }
 
     roden_json_ld( $schema );

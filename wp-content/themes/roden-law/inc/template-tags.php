@@ -546,7 +546,7 @@ function roden_intersection_grid( $office_key, $columns = 3 ) {
     $intersection_check = get_posts( array(
         'post_type'      => 'practice_area',
         'posts_per_page' => -1,
-        'post_name'      => $office_slug,
+        'post_name__in'  => array( $office_slug ),
         'fields'         => 'id=>parent',
     ) );
     $pillars_with_intersection = array();
