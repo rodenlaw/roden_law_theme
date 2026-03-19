@@ -71,61 +71,8 @@ if ( ! $map_embed ) {
 // Get Directions link for this neighborhood
 $directions_url = 'https://www.google.com/maps/dir/' . urlencode( $neighborhood_name . ', ' . $office['state'] ) . '/' . urlencode( $office['street'] . ', ' . $office['city'] . ', ' . $office['state'] . ' ' . $office['zip'] ) . '/';
 
-/* == Schema Output ======================================================= */
-
-// LegalService schema
-$legal_service_schema = array(
-    '@context'    => 'https://schema.org',
-    '@type'       => 'LegalService',
-    'name'        => $office['name'],
-    'description' => 'Personal injury lawyers serving ' . $neighborhood_name . ', ' . $office['state'] . '. Free consultation. No fees unless we win.',
-    'url'         => get_permalink(),
-    'telephone'   => $office['phone'],
-    'address'     => array(
-        '@type'           => 'PostalAddress',
-        'streetAddress'   => $office['street'],
-        'addressLocality' => $office['city'],
-        'addressRegion'   => $office['state'],
-        'postalCode'      => $office['zip'],
-        'addressCountry'  => 'US',
-    ),
-    'geo' => array(
-        '@type'     => 'GeoCoordinates',
-        'latitude'  => $office['latitude'],
-        'longitude' => $office['longitude'],
-    ),
-    'areaServed' => array(
-        array(
-            '@type' => ( wp_get_post_parent_id( $post_id ) && get_post_meta( wp_get_post_parent_id( $post_id ), '_roden_is_neighborhood', true ) )
-                ? 'Neighborhood'
-                : 'City',
-            'name'  => $neighborhood_name,
-            'containedInPlace' => ( wp_get_post_parent_id( $post_id ) && get_post_meta( wp_get_post_parent_id( $post_id ), '_roden_is_neighborhood', true ) )
-                ? array(
-                    '@type' => 'City',
-                    'name'  => get_the_title( wp_get_post_parent_id( $post_id ) ),
-                    'containedInPlace' => array(
-                        '@type' => 'State',
-                        'name'  => $office['state_full'],
-                    ),
-                )
-                : array(
-                    '@type' => 'State',
-                    'name'  => $office['state_full'],
-                ),
-        ),
-    ),
-    'parentOrganization' => array(
-        '@type' => 'Organization',
-        'name'  => $firm['legal_entity'],
-        'url'   => $firm['url'],
-    ),
-    'priceRange' => 'Free consultation, contingency fee',
-);
-roden_json_ld( $legal_service_schema );
-
-// FAQPage schema is output automatically by roden_output_schema() via wp_head
-// for all is_singular('location') pages — no inline output needed here.
+// Schema (LegalService, LocalBusiness, FAQPage, BreadcrumbList) is output
+// automatically by roden_output_schema() via wp_head — no inline output needed.
 ?>
 
 <!-- ================================================================
