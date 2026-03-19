@@ -113,7 +113,27 @@ function roden_staff_redirect() {
 }
 
 /* ==========================================================================
-   3c. 404 REDIRECT — Send all 404s to the homepage
+   3c. LEGACY /who-we-are/attorneys/ → /attorneys/ redirect
+   ========================================================================== */
+
+add_action( 'template_redirect', 'roden_legacy_attorney_redirect', 2 );
+function roden_legacy_attorney_redirect() {
+    if ( ! is_404() ) {
+        return;
+    }
+    $path = trim( $_SERVER['REQUEST_URI'], '/' );
+    if ( preg_match( '#^who-we-are/attorneys/([^/?]+)#', $path, $m ) ) {
+        wp_redirect( home_url( '/attorneys/' . $m[1] . '/' ), 301 );
+        exit;
+    }
+    if ( preg_match( '#^who-we-are/attorneys/?$#', $path ) ) {
+        wp_redirect( home_url( '/attorneys/' ), 301 );
+        exit;
+    }
+}
+
+/* ==========================================================================
+   3d. 404 REDIRECT — Send all 404s to the homepage
    ========================================================================== */
 
 add_action( 'template_redirect', 'roden_redirect_404_to_home' );
