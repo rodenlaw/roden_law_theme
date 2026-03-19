@@ -93,22 +93,43 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
     <div class="container">
         <h2 class="matrix-title">Our <?php the_title(); ?> Offices</h2>
         <div class="location-matrix-grid">
-            <?php foreach ( $firm['offices'] as $key => $office ) :
-                $intersection_exists = false;
-                $intersection_url = '#';
+            <?php
+            // Pre-build location page URL cache keyed by office key.
+            $location_urls = array();
+            $location_posts = get_posts( array(
+                'post_type'      => 'location',
+                'posts_per_page' => 10,
+                'post_status'    => 'publish',
+            ) );
+            foreach ( $location_posts as $lp ) {
+                $lp_key = get_post_meta( $lp->ID, '_roden_office_key', true );
+                if ( $lp_key ) {
+                    $location_urls[ $lp_key ] = get_permalink( $lp );
+                }
+            }
+
+            foreach ( $firm['offices'] as $key => $office ) :
+                $matrix_url    = '';
+                $matrix_label  = '';
+
+                // Prefer intersection page; fall back to location page.
                 foreach ( $child_intersections as $ci ) {
                     if ( get_post_meta( $ci->ID, '_roden_pa_office_key', true ) === $key ) {
-                        $intersection_url = get_permalink( $ci );
-                        $intersection_exists = true;
+                        $matrix_url   = get_permalink( $ci );
+                        $matrix_label = 'City Page';
                         break;
                     }
+                }
+                if ( ! $matrix_url && isset( $location_urls[ $key ] ) ) {
+                    $matrix_url   = $location_urls[ $key ];
+                    $matrix_label = 'Office';
                 }
             ?>
                 <div class="matrix-card">
                     <span class="matrix-state state-<?php echo esc_attr( strtolower( $office['state'] ) ); ?>"><?php echo esc_html( $office['state'] ); ?></span>
                     <h3 class="matrix-city">
-                        <?php if ( $intersection_exists ) : ?>
-                            <a href="<?php echo esc_url( $intersection_url ); ?>"><?php echo esc_html( $office['market_name'] ); ?></a>
+                        <?php if ( $matrix_url ) : ?>
+                            <a href="<?php echo esc_url( $matrix_url ); ?>"><?php echo esc_html( $office['market_name'] ); ?></a>
                         <?php else : ?>
                             <?php echo esc_html( $office['market_name'] ); ?>
                         <?php endif; ?>
@@ -452,6 +473,44 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                     <h2>Related Resources</h2>
                     <div class="pa-resources__grid">
                         <?php while ( $related_posts->have_posts() ) : $related_posts->the_post(); ?>
+                            <a href="<?php the_permalink(); ?>" class="resource-link">
+                                <span class="resource-link__title"><?php the_title(); ?></span>
+                                <span class="resource-link__arrow">&rarr;</span>
+                            </a>
+                        <?php endwhile; ?>
+                    </div>
+                </div>
+            <?php
+                wp_reset_postdata();
+            endif;
+            ?>
+
+            <!-- ═══════════════════════════════════════════════════════════
+                 SECTION 16b: RELATED GUIDES (Resource CPT)
+                 ═══════════════════════════════════════════════════════════ -->
+            <?php
+            $resource_args = array(
+                'post_type'      => 'resource',
+                'posts_per_page' => 4,
+                'post_status'    => 'publish',
+                'orderby'        => 'date',
+                'order'          => 'DESC',
+            );
+            if ( $cat_slug ) {
+                $resource_args['tax_query'] = array(
+                    array(
+                        'taxonomy' => 'practice_category',
+                        'field'    => 'slug',
+                        'terms'    => $cat_slug,
+                    ),
+                );
+            }
+            $resource_posts = new WP_Query( $resource_args );
+            if ( $resource_posts->have_posts() ) : ?>
+                <div class="content-section pa-guides">
+                    <h2>Related Guides &amp; Legal Resources</h2>
+                    <div class="pa-resources__grid">
+                        <?php while ( $resource_posts->have_posts() ) : $resource_posts->the_post(); ?>
                             <a href="<?php the_permalink(); ?>" class="resource-link">
                                 <span class="resource-link__title"><?php the_title(); ?></span>
                                 <span class="resource-link__arrow">&rarr;</span>
