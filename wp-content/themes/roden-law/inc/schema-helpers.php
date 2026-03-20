@@ -133,36 +133,6 @@ function roden_output_schema() {
 }
 
 /* ==========================================================================
-   DISABLE RANK MATH FAQ SCHEMA (we output our own FAQPage)
-   ========================================================================== */
-
-/**
- * Strip Rank Math FAQ block JSON-LD from rendered content.
- * The Rank Math FAQ block injects its own <script type="application/ld+json">
- * with FAQPage schema directly into post content. We output our own FAQPage
- * schema via wp_head, so this creates duplicates.
- */
-add_filter( 'render_block', function ( $block_content, $block ) {
-    if ( ! empty( $block['blockName'] ) && strpos( $block['blockName'], 'rank-math/faq-block' ) !== false ) {
-        // Remove any JSON-LD script tags injected by the FAQ block.
-        $block_content = preg_replace(
-            '/<script\s+type=["\']application\/ld\+json["\']>.*?<\/script>/s',
-            '',
-            $block_content
-        );
-    }
-    return $block_content;
-}, 10, 2 );
-
-// Also filter Rank Math's structured data output for FAQ.
-add_filter( 'rank_math/json_ld', function ( $data ) {
-    if ( isset( $data['richSnippet'] ) && isset( $data['richSnippet']['@type'] ) && $data['richSnippet']['@type'] === 'FAQPage' ) {
-        unset( $data['richSnippet'] );
-    }
-    return $data;
-}, 99 );
-
-/* ==========================================================================
    1. Organization / LawFirm (Homepage)
    ========================================================================== */
 
