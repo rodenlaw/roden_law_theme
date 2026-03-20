@@ -133,13 +133,43 @@ function roden_output_schema() {
 }
 
 /* ==========================================================================
+   DISABLE RANK MATH FAQ SCHEMA (we output our own FAQPage)
+   ========================================================================== */
+
+/**
+ * Strip Rank Math FAQ block JSON-LD from rendered content.
+ * The Rank Math FAQ block injects its own <script type="application/ld+json">
+ * with FAQPage schema directly into post content. We output our own FAQPage
+ * schema via wp_head, so this creates duplicates.
+ */
+add_filter( 'render_block', function ( $block_content, $block ) {
+    if ( ! empty( $block['blockName'] ) && strpos( $block['blockName'], 'rank-math/faq-block' ) !== false ) {
+        // Remove any JSON-LD script tags injected by the FAQ block.
+        $block_content = preg_replace(
+            '/<script\s+type=["\']application\/ld\+json["\']>.*?<\/script>/s',
+            '',
+            $block_content
+        );
+    }
+    return $block_content;
+}, 10, 2 );
+
+// Also filter Rank Math's structured data output for FAQ.
+add_filter( 'rank_math/json_ld', function ( $data ) {
+    if ( isset( $data['richSnippet'] ) && isset( $data['richSnippet']['@type'] ) && $data['richSnippet']['@type'] === 'FAQPage' ) {
+        unset( $data['richSnippet'] );
+    }
+    return $data;
+}, 99 );
+
+/* ==========================================================================
    1. Organization / LawFirm (Homepage)
    ========================================================================== */
 
 function roden_schema_organization( $firm ) {
     $schema = array(
         '@context'     => 'https://schema.org',
-        '@type'        => array( 'Organization', 'LegalService' ),
+        '@type'        => 'Organization',
         '@id'          => $firm['url'] . '/#organization',
         'name'         => $firm['name'],
         'legalName'    => $firm['legal_entity'],
@@ -800,15 +830,14 @@ function roden_schema_speakable_practice_area() {
    ========================================================================== */
 
 function roden_schema_aggregate_rating( $firm ) {
-    // Reflects verified Google Reviews count
+    // Reflects verified Google Reviews count.
+    // References the existing LegalService entity instead of creating a new one.
     $review_count = 500;
 
     roden_json_ld( array(
         '@context'        => 'https://schema.org',
         '@type'           => 'LegalService',
-        '@id'             => $firm['url'] . '/#rating',
-        'name'            => $firm['name'],
-        'url'             => $firm['url'],
+        '@id'             => $firm['url'] . '/#legalservice',
         'aggregateRating' => array(
             '@type'       => 'AggregateRating',
             'ratingValue' => $firm['trust_stats']['rating'],
