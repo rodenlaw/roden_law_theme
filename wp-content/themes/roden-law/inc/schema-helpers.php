@@ -157,10 +157,16 @@ function roden_output_schema() {
         roden_schema_contact_page( $firm );
     }
 
+    // SC statewide PPC landing page — LegalService + FAQPage + LocalBusiness (SC offices)
+    if ( is_page_template( 'templates/template-landing-sc-statewide.php' ) ) {
+        roden_schema_sc_statewide( $firm );
+    }
+
     // BreadcrumbList on all pages except front page and noindex landing pages
     $is_landing = is_page_template( 'templates/template-landing-page.php' )
                || is_page_template( 'templates/template-landing-truck.php' )
-               || is_page_template( 'templates/template-landing-truck-columbia.php' );
+               || is_page_template( 'templates/template-landing-truck-columbia.php' )
+               || is_page_template( 'templates/template-landing-sc-statewide.php' );
     if ( ! is_front_page() && ! $is_landing ) {
         roden_schema_breadcrumbs();
     }
@@ -1455,4 +1461,133 @@ function roden_schema_attorneys_list( $firm ) {
             );
         }, $persons, array_keys( $persons ) ),
     ) );
+}
+
+/* ==========================================================================
+   14. SC Statewide PPC Landing Page Schema
+       LegalService + FAQPage + LocalBusiness (3 SC offices)
+   ========================================================================== */
+
+function roden_schema_sc_statewide( $firm ) {
+    $page_url    = $firm['url'] . '/south-carolina-car-accident-lawyer/';
+    $sc_keys     = array( 'charleston', 'columbia', 'myrtle-beach' );
+
+    // --- LegalService ---
+    $service_locations = array();
+    foreach ( $sc_keys as $key ) {
+        if ( ! isset( $firm['offices'][ $key ] ) ) {
+            continue;
+        }
+        $office              = $firm['offices'][ $key ];
+        $service_locations[] = array(
+            '@type'     => array( 'LegalService', 'LocalBusiness' ),
+            '@id'       => $firm['url'] . '/locations/south-carolina/' . $key . '/#localbusiness',
+            'name'      => $office['name'],
+            'address'   => roden_schema_postal_address( $office ),
+            'telephone' => $office['phone'],
+            'geo'       => roden_schema_geo( $office ),
+        );
+    }
+
+    roden_json_ld( array(
+        '@context'        => 'https://schema.org',
+        '@type'           => 'LegalService',
+        '@id'             => $page_url . '#legalservice',
+        'name'            => 'South Carolina Car Accident Lawyers — Roden Law',
+        'url'             => $page_url,
+        'description'     => 'Roden Law represents car accident victims throughout South Carolina. With offices in Charleston, Columbia, and Myrtle Beach, our attorneys fight for maximum compensation on a contingency fee — no fees unless we win.',
+        'telephone'       => $firm['vanity_phone'],
+        'priceRange'      => 'Free Consultation — Contingency Fee',
+        'areaServed'      => array(
+            '@type' => 'State',
+            'name'  => 'South Carolina',
+        ),
+        'serviceType'     => 'Car Accident Law',
+        'knowsAbout'      => array(
+            'Car Accidents', 'Truck Accidents', 'Motorcycle Accidents',
+            'Pedestrian Accidents', 'Bicycle Accidents', 'Wrongful Death',
+            'Uninsured Motorist Claims', 'South Carolina Auto Insurance Law',
+        ),
+        'serviceLocation' => $service_locations,
+        'hasOfferCatalog' => array(
+            '@type'           => 'OfferCatalog',
+            'name'            => 'Car Accident Legal Services',
+            'itemListElement' => array(
+                array(
+                    '@type'           => 'Offer',
+                    'itemOffered'     => array(
+                        '@type' => 'Service',
+                        'name'  => 'Free Car Accident Case Review',
+                    ),
+                    'price'           => '0',
+                    'priceCurrency'   => 'USD',
+                ),
+            ),
+        ),
+    ) );
+
+    // --- FAQPage (SC-specific) ---
+    roden_json_ld( array(
+        '@context'   => 'https://schema.org',
+        '@type'      => 'FAQPage',
+        'mainEntity' => array(
+            array(
+                '@type'          => 'Question',
+                'name'           => 'How long do I have to file a car accident lawsuit in South Carolina?',
+                'acceptedAnswer' => array(
+                    '@type' => 'Answer',
+                    'text'  => 'In South Carolina, you have 3 years from the date of your car accident to file a personal injury lawsuit under S.C. Code § 15-3-530. Missing this deadline generally bars you from recovering any compensation, so it is critical to consult an attorney as soon as possible.',
+                ),
+            ),
+            array(
+                '@type'          => 'Question',
+                'name'           => 'Can I recover compensation if I was partly at fault for the accident in South Carolina?',
+                'acceptedAnswer' => array(
+                    '@type' => 'Answer',
+                    'text'  => 'Yes. South Carolina follows a modified comparative fault rule. You can recover damages as long as you are less than 51% at fault for the accident. However, your compensation will be reduced by your percentage of fault. If you are found 51% or more at fault, you cannot recover anything.',
+                ),
+            ),
+            array(
+                '@type'          => 'Question',
+                'name'           => 'What compensation can I recover after a car accident in South Carolina?',
+                'acceptedAnswer' => array(
+                    '@type' => 'Answer',
+                    'text'  => 'South Carolina car accident victims may recover economic damages (medical bills, lost wages, future medical care, property damage) and non-economic damages (pain and suffering, emotional distress, loss of enjoyment of life). In cases involving gross negligence, punitive damages may also be available.',
+                ),
+            ),
+            array(
+                '@type'          => 'Question',
+                'name'           => 'What are the minimum auto insurance requirements in South Carolina?',
+                'acceptedAnswer' => array(
+                    '@type' => 'Answer',
+                    'text'  => 'South Carolina law requires drivers to carry minimum liability coverage of $25,000 per person and $50,000 per accident for bodily injury, plus $25,000 for property damage. South Carolina also requires uninsured motorist coverage at the same minimums unless you sign a waiver. These minimums are often insufficient to cover serious injuries.',
+                ),
+            ),
+            array(
+                '@type'          => 'Question',
+                'name'           => 'Do I need a lawyer for a car accident claim in South Carolina?',
+                'acceptedAnswer' => array(
+                    '@type' => 'Answer',
+                    'text'  => 'While you are not legally required to hire a lawyer, studies consistently show that accident victims represented by an attorney recover significantly more — even after legal fees — than those who negotiate alone. Roden Law handles all car accident cases on contingency: no fees unless we win. Call (843) 790-8999 or (843) 612-1980 for a free case review.',
+                ),
+            ),
+            array(
+                '@type'          => 'Question',
+                'name'           => 'How much does a car accident lawyer cost in South Carolina?',
+                'acceptedAnswer' => array(
+                    '@type' => 'Answer',
+                    'text'  => 'Roden Law handles car accident cases on a contingency fee basis — you pay nothing unless we win your case. There are no upfront costs and no hourly fees. Our fee is a percentage of the settlement or verdict we recover for you.',
+                ),
+            ),
+        ),
+    ) );
+
+    // --- LocalBusiness for each SC office ---
+    foreach ( $sc_keys as $key ) {
+        if ( ! isset( $firm['offices'][ $key ] ) ) {
+            continue;
+        }
+        $office = $firm['offices'][ $key ];
+        roden_schema_local_business_office( $firm, $key, $office );
+    }
 }
