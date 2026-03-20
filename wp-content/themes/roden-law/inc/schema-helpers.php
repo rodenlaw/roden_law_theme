@@ -115,6 +115,7 @@ function roden_output_schema() {
 
     if ( roden_is_pa_singular() ) {
         roden_schema_legal_service( $firm );
+        roden_schema_pa_attorney( $firm );
         roden_schema_faq_page();
         roden_schema_speakable_practice_area();
 
@@ -179,7 +180,7 @@ function roden_output_schema() {
 function roden_schema_organization( $firm ) {
     $schema = array(
         '@context'     => 'https://schema.org',
-        '@type'        => 'Organization',
+        '@type'        => array( 'Organization', 'LawFirm' ),
         '@id'          => $firm['url'] . '/#organization',
         'name'         => $firm['name'],
         'legalName'    => $firm['legal_entity'],
@@ -239,12 +240,23 @@ function roden_schema_organization( $firm ) {
    ========================================================================== */
 
 function roden_schema_legal_service( $firm ) {
+    // Homepage uses the firm-level @id; all other pages get page-specific @ids
+    // linked back to the firm entity via isPartOf to maintain entity hierarchy.
+    $firm_ls_id = $firm['url'] . '/#legalservice';
+    if ( is_front_page() ) {
+        $ls_id  = $firm_ls_id;
+        $ls_url = $firm['url'];
+    } else {
+        $ls_url = roden_get_canonical_url();
+        $ls_id  = rtrim( $ls_url, '/' ) . '/#legalservice';
+    }
+
     $schema = array(
         '@context'    => 'https://schema.org',
         '@type'       => 'LegalService',
-        '@id'         => $firm['url'] . '/#legalservice',
+        '@id'         => $ls_id,
         'name'        => $firm['name'],
-        'url'         => $firm['url'],
+        'url'         => $ls_url,
         'description' => $firm['description'],
         'telephone'   => $firm['vanity_phone'],
         'priceRange'  => 'Free Consultation',
@@ -265,10 +277,14 @@ function roden_schema_legal_service( $firm ) {
         ),
     );
 
+    // Non-homepage pages: link back to the firm-level entity
+    if ( ! is_front_page() ) {
+        $schema['isPartOf'] = array( '@id' => $firm_ls_id );
+    }
+
     // On singular practice area, customize for that page
     if ( roden_is_pa_singular() ) {
         $schema['name']        = get_the_title() . ' — ' . $firm['name'];
-        $schema['url']         = roden_get_canonical_url();
         $schema['description'] = get_the_excerpt() ?: wp_trim_words( get_the_content(), 30 );
 
         // Narrow areaServed on intersection pages to the specific location
@@ -354,10 +370,10 @@ function roden_schema_local_business_office( $firm, $key, $office ) {
 function roden_schema_person( $firm ) {
     $post_id = get_the_ID();
 
-    // Build worksFor with office-specific address
+    // Build worksFor: @type must be Organization to match @id /#organization
     $office_key = get_post_meta( $post_id, '_roden_atty_office_key', true );
     $works_for  = array(
-        '@type'      => 'LegalService',
+        '@type'      => 'Organization',
         '@id'        => $firm['url'] . '/#organization',
         'name'       => $firm['name'],
         'url'        => $firm['url'],
@@ -376,12 +392,18 @@ function roden_schema_person( $firm ) {
         );
     }
 
+    // Use canonical rodenlaw.com domain for @id regardless of current site URL
+    // (prevents dev site domain from leaking into Person @id on staging/dev).
+    $atty_slug    = get_post_field( 'post_name', $post_id );
+    $canonical_id = $firm['url'] . '/attorneys/' . $atty_slug . '/#person';
+    $atty_url     = str_replace( home_url(), $firm['url'], get_permalink() );
+
     $schema = array(
         '@context'    => 'https://schema.org',
         '@type'       => 'Person',
-        '@id'         => get_permalink() . '#person',
+        '@id'         => $canonical_id,
         'name'        => get_the_title(),
-        'url'         => get_permalink(),
+        'url'         => $atty_url,
         'description' => html_entity_decode( wp_strip_all_tags( get_the_excerpt() ?: wp_trim_words( get_the_content(), 30 ) ), ENT_QUOTES, 'UTF-8' ),
         'worksFor'    => $works_for,
     );
@@ -404,16 +426,56 @@ function roden_schema_person( $firm ) {
     }
 
     // Bar admissions → hasCredential
+    // Pull from post meta first; supplement with firm-data.php bars to ensure
+    // completeness (e.g. SC admission that may not yet be in meta).
     $bar      = get_post_meta( $post_id, '_roden_bar_admissions', true );
     $bar_list = $bar ? array_filter( array_map( 'trim', explode( "\n", $bar ) ) ) : array();
+
+    // Supplement from firm-data bar_admissions array (state names like 'Georgia', 'South Carolina')
+    if ( isset( $firm['attorneys'][ $atty_slug ]['bar_admissions'] ) ) {
+        $bar_state_map = array(
+            'Georgia'        => 'State Bar of Georgia',
+            'South Carolina' => 'South Carolina State Bar',
+        );
+        foreach ( $firm['attorneys'][ $atty_slug ]['bar_admissions'] as $state ) {
+            $bar_name = isset( $bar_state_map[ $state ] ) ? $bar_state_map[ $state ] : $state . ' State Bar';
+            // Avoid duplicate if meta already has a matching entry
+            $already_listed = false;
+            foreach ( $bar_list as $existing ) {
+                if ( false !== stripos( $existing, $state ) ) {
+                    $already_listed = true;
+                    break;
+                }
+            }
+            if ( ! $already_listed ) {
+                $bar_list[] = $bar_name;
+            }
+        }
+    }
+
     if ( ! empty( $bar_list ) ) {
-        $schema['hasCredential'] = array_map( function( $admission ) {
-            return array(
+        $bar_state_to_org = array(
+            'georgia'        => 'State Bar of Georgia',
+            'south carolina' => 'South Carolina State Bar',
+        );
+        $schema['hasCredential'] = array_map( function( $admission ) use ( $bar_state_to_org ) {
+            $credential = array(
                 '@type'              => 'EducationalOccupationalCredential',
                 'credentialCategory' => 'Bar Admission',
                 'name'               => $admission,
             );
-        }, $bar_list );
+            // Add recognizedBy for known state bars
+            foreach ( $bar_state_to_org as $state_key => $org_name ) {
+                if ( false !== stripos( $admission, $state_key ) ) {
+                    $credential['recognizedBy'] = array(
+                        '@type' => 'GovernmentOrganization',
+                        'name'  => $org_name,
+                    );
+                    break;
+                }
+            }
+            return $credential;
+        }, array_values( $bar_list ) );
     }
 
     // Education → alumniOf
@@ -470,6 +532,98 @@ function roden_schema_person( $firm ) {
         if ( ! empty( $award_list ) ) {
             $schema['award'] = $award_list;
         }
+    }
+
+    roden_json_ld( $schema );
+}
+
+/* ==========================================================================
+   4b. Person — Attorney attribution on practice area pages (E-E-A-T)
+   ========================================================================== */
+
+/**
+ * Output Person schema for the attorney attributed to a practice area page.
+ * Uses _roden_author_attorney post meta; falls back to Eric Roden if not set.
+ * Also adds a `provider` reference from the page's LegalService to this Person.
+ *
+ * Called from the dispatcher when roden_is_pa_singular() is true.
+ */
+function roden_schema_pa_attorney( $firm ) {
+    $post_id   = get_the_ID();
+    $author_id = get_post_meta( $post_id, '_roden_author_attorney', true );
+
+    // Resolve attorney post; fall back to Eric Roden post by slug
+    $atty = null;
+    if ( $author_id ) {
+        $atty = get_post( $author_id );
+        if ( ! $atty || 'publish' !== $atty->post_status ) {
+            $atty = null;
+        }
+    }
+    if ( ! $atty ) {
+        // Fallback: look up Eric Roden post by post_name
+        $results = get_posts( array(
+            'post_type'   => 'attorney',
+            'name'        => 'eric-roden',
+            'post_status' => 'publish',
+            'numberposts' => 1,
+        ) );
+        $atty = ! empty( $results ) ? $results[0] : null;
+    }
+
+    if ( ! $atty ) {
+        return;
+    }
+
+    $atty_slug    = $atty->post_name;
+    $canonical_id = $firm['url'] . '/attorneys/' . $atty_slug . '/#person';
+    $atty_url     = str_replace( home_url(), $firm['url'], get_permalink( $atty->ID ) );
+
+    $schema = array(
+        '@context'    => 'https://schema.org',
+        '@type'       => 'Person',
+        '@id'         => $canonical_id,
+        'name'        => $atty->post_title,
+        'url'         => $atty_url,
+        'worksFor'    => array(
+            '@type' => 'Organization',
+            '@id'   => $firm['url'] . '/#organization',
+            'name'  => $firm['name'],
+        ),
+    );
+
+    // Job title from firm data
+    if ( isset( $firm['attorneys'][ $atty_slug ]['title'] ) ) {
+        $schema['jobTitle'] = $firm['attorneys'][ $atty_slug ]['title'];
+    }
+
+    // Bar admissions from firm data with recognizedBy
+    if ( isset( $firm['attorneys'][ $atty_slug ]['bar_admissions'] ) ) {
+        $bar_state_to_org = array(
+            'Georgia'        => 'State Bar of Georgia',
+            'South Carolina' => 'South Carolina State Bar',
+        );
+        $credentials = array();
+        foreach ( $firm['attorneys'][ $atty_slug ]['bar_admissions'] as $state ) {
+            $org_name    = isset( $bar_state_to_org[ $state ] ) ? $bar_state_to_org[ $state ] : $state . ' State Bar';
+            $credentials[] = array(
+                '@type'              => 'EducationalOccupationalCredential',
+                'credentialCategory' => 'Bar Admission',
+                'name'               => $org_name,
+                'recognizedBy'       => array(
+                    '@type' => 'GovernmentOrganization',
+                    'name'  => $org_name,
+                ),
+            );
+        }
+        if ( ! empty( $credentials ) ) {
+            $schema['hasCredential'] = $credentials;
+        }
+    }
+
+    // headshot
+    if ( has_post_thumbnail( $atty->ID ) ) {
+        $schema['image'] = get_the_post_thumbnail_url( $atty->ID, 'attorney-headshot' );
     }
 
     roden_json_ld( $schema );
@@ -927,11 +1081,12 @@ function roden_schema_article( $firm ) {
     $atty      = $author_id ? get_post( $author_id ) : null;
 
     if ( $atty && 'publish' === $atty->post_status ) {
+        $atty_canonical_url = str_replace( home_url(), $firm['url'], get_permalink( $atty ) );
         $schema['author'] = array(
             '@type' => 'Person',
-            '@id'   => get_permalink( $atty ) . '#person',
+            '@id'   => $firm['url'] . '/attorneys/' . $atty->post_name . '/#person',
             'name'  => $atty->post_title,
-            'url'   => get_permalink( $atty ),
+            'url'   => $atty_canonical_url,
         );
     } else {
         $wp_author = get_the_author();
@@ -1024,9 +1179,9 @@ function roden_schema_article_subtype( $firm ) {
     if ( $atty && 'publish' === $atty->post_status ) {
         $schema['author'] = array(
             '@type' => 'Person',
-            '@id'   => get_permalink( $atty ) . '#person',
+            '@id'   => $firm['url'] . '/attorneys/' . $atty->post_name . '/#person',
             'name'  => $atty->post_title,
-            'url'   => get_permalink( $atty ),
+            'url'   => str_replace( home_url(), $firm['url'], get_permalink( $atty ) ),
         );
     } else {
         $schema['author'] = array(
@@ -1412,11 +1567,12 @@ function roden_schema_attorneys_list( $firm ) {
         $attorneys->the_post();
         $post_id = get_the_ID();
 
+        $atty_post_name = get_post_field( 'post_name', $post_id );
         $person = array(
             '@type' => 'Person',
-            '@id'   => get_permalink() . '#person',
+            '@id'   => $firm['url'] . '/attorneys/' . $atty_post_name . '/#person',
             'name'  => get_the_title(),
-            'url'   => get_permalink(),
+            'url'   => str_replace( home_url(), $firm['url'], get_permalink() ),
         );
 
         $job_title = get_post_meta( $post_id, '_roden_atty_title', true );
