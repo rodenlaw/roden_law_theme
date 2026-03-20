@@ -62,6 +62,40 @@ function roden_get_logo_url() {
     return $logo_url;
 }
 
+/**
+ * Get the canonical URL for a practice_area post.
+ *
+ * For intersection and sub-type pages (child practice_area posts), WordPress's
+ * get_permalink() returns the CPT default path (/practice-areas/parent/child/)
+ * rather than the canonical rewrite path (/parent/child/). This helper returns
+ * the correct canonical URL by building it from the parent and child post slugs.
+ *
+ * For all other post types and for pillar pages (no parent), falls back to
+ * get_permalink() which is already correct.
+ *
+ * @param int|WP_Post|null $post_or_id Post ID, WP_Post object, or null for current post.
+ * @return string Canonical URL.
+ */
+function roden_get_canonical_url( $post_or_id = null ) {
+    $post = $post_or_id ? get_post( $post_or_id ) : get_post();
+    if ( ! $post ) {
+        return get_permalink( $post_or_id );
+    }
+
+    // Only intercept child practice_area posts — pillar and other types are fine.
+    if (
+        in_array( $post->post_type, array( 'practice_area', 'practice-area' ), true )
+        && $post->post_parent
+    ) {
+        $parent = get_post( $post->post_parent );
+        if ( $parent ) {
+            return home_url( '/' . $parent->post_name . '/' . $post->post_name . '/' );
+        }
+    }
+
+    return get_permalink( $post );
+}
+
 /* ==========================================================================
    SCHEMA DISPATCHER (wp_head hook)
    ========================================================================== */
@@ -228,7 +262,7 @@ function roden_schema_legal_service( $firm ) {
     // On singular practice area, customize for that page
     if ( roden_is_pa_singular() ) {
         $schema['name']        = get_the_title() . ' — ' . $firm['name'];
-        $schema['url']         = get_permalink();
+        $schema['url']         = roden_get_canonical_url();
         $schema['description'] = get_the_excerpt() ?: wp_trim_words( get_the_content(), 30 );
 
         // Narrow areaServed on intersection pages to the specific location
@@ -608,7 +642,7 @@ function roden_schema_breadcrumbs() {
             '@type'    => 'ListItem',
             'position' => $position++,
             'name'     => get_the_title(),
-            'item'     => get_permalink(),
+            'item'     => roden_get_canonical_url(),
         );
 
     } elseif ( is_singular( 'location' ) ) {
@@ -787,7 +821,7 @@ function roden_schema_speakable_practice_area() {
         '@context'  => 'https://schema.org',
         '@type'     => 'WebPage',
         'name'      => get_the_title(),
-        'url'       => get_permalink(),
+        'url'       => roden_get_canonical_url(),
         'speakable' => array(
             '@type'       => 'SpeakableSpecification',
             'cssSelector' => array( '.hero h1', '.hero p' ),
@@ -943,18 +977,19 @@ function roden_schema_article_subtype( $firm ) {
     $content = get_post_field( 'post_content', $post_id );
     $excerpt = get_the_excerpt( $post_id );
 
+    $canonical_url = roden_get_canonical_url( $post_id );
     $schema = array(
         '@context'      => 'https://schema.org',
         '@type'         => 'Article',
         'headline'      => get_the_title( $post_id ),
         'description'   => html_entity_decode( wp_strip_all_tags( $excerpt ?: wp_trim_words( $content, 30 ) ), ENT_QUOTES, 'UTF-8' ),
-        'url'           => get_permalink( $post_id ),
+        'url'           => $canonical_url,
         'datePublished' => get_the_date( 'c', $post_id ),
         'dateModified'  => get_the_modified_date( 'c', $post_id ),
         'wordCount'     => str_word_count( wp_strip_all_tags( $content ) ),
         'mainEntityOfPage' => array(
             '@type' => 'WebPage',
-            '@id'   => get_permalink( $post_id ),
+            '@id'   => $canonical_url,
         ),
         'publisher' => array(
             '@type' => 'Organization',
