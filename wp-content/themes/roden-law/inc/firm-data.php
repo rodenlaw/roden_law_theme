@@ -217,12 +217,13 @@ function roden_firm_data() {
            ================================================================== */
 
         'trust_stats' => array(
-            'recovered'  => '$250M+',
-            'rating'     => '4.9',
-            'reviews'    => '500+',
-            'cases'      => '5,000+',
-            'experience' => '62',
-            'offices'    => '5',
+            'recovered'     => '$250M+',
+            'rating'        => '4.9',
+            'reviews'       => '500+',
+            'review_count'  => 500,   // Numeric for schema AggregateRating reviewCount
+            'cases'         => '5,000+',
+            'experience'    => '62',
+            'offices'       => '5',
         ),
 
         /* ==================================================================

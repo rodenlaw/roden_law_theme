@@ -111,6 +111,7 @@ function roden_output_schema() {
         roden_schema_speakable_homepage( $firm );
         roden_schema_aggregate_rating( $firm );
         roden_schema_website( $firm );
+        roden_schema_breadcrumbs(); // Single-item homepage breadcrumb (site hierarchy signal)
     }
 
     if ( roden_is_pa_singular() ) {
@@ -134,6 +135,7 @@ function roden_output_schema() {
             roden_schema_local_business_single( $firm );
         }
         roden_schema_faq_page();
+        roden_schema_speakable_location();
     }
 
     if ( is_singular( 'attorney' ) ) {
@@ -330,7 +332,7 @@ function roden_schema_local_business_single( $firm ) {
 function roden_schema_local_business_office( $firm, $key, $office ) {
     $schema = array(
         '@context'   => 'https://schema.org',
-        '@type'      => array( 'LocalBusiness', 'LegalService' ),
+        '@type'      => array( 'LocalBusiness', 'LegalService', 'LawFirm' ),
         '@id'        => $firm['url'] . '/locations/' . $office['state_slug'] . '/' . sanitize_title( $office['market_name'] ) . '/#localbusiness',
         'name'       => $office['name'],
         'url'        => $firm['url'] . '/locations/' . $office['state_slug'] . '/' . sanitize_title( $office['market_name'] ) . '/',
@@ -948,7 +950,10 @@ function roden_schema_breadcrumbs() {
         );
     }
 
-    if ( count( $items ) < 2 ) {
+    // Allow single-item BreadcrumbList on homepage (signals top of hierarchy);
+    // require at least 2 items on all other pages.
+    $min_items = is_front_page() ? 1 : 2;
+    if ( count( $items ) < $min_items ) {
         return;
     }
 
@@ -989,14 +994,31 @@ function roden_schema_speakable_practice_area() {
     ) );
 }
 
+function roden_schema_speakable_location() {
+    roden_json_ld( array(
+        '@context'  => 'https://schema.org',
+        '@type'     => 'WebPage',
+        'name'      => get_the_title(),
+        'url'       => get_permalink(),
+        'speakable' => array(
+            '@type'       => 'SpeakableSpecification',
+            'cssSelector' => array(
+                '.location-hero__tagline',
+                '.location-intro',
+                '.location-service-area',
+            ),
+        ),
+    ) );
+}
+
 /* ==========================================================================
    9. AggregateRating (Homepage)
    ========================================================================== */
 
 function roden_schema_aggregate_rating( $firm ) {
-    // Reflects verified Google Reviews count.
+    // Reflects verified Google Reviews count — sourced from firm data config.
     // References the existing LegalService entity instead of creating a new one.
-    $review_count = 500;
+    $review_count = $firm['trust_stats']['review_count'] ?? 500;
 
     roden_json_ld( array(
         '@context'        => 'https://schema.org',
@@ -1063,17 +1085,19 @@ function roden_schema_article( $firm ) {
         ),
     );
 
-    // Featured image
+    // Featured image — use wp_get_attachment_image_src to get dimensions that
+    // match the 'large' size URL (wp_get_attachment_metadata returns full-size dims).
     if ( has_post_thumbnail( $post_id ) ) {
-        $img_url  = get_the_post_thumbnail_url( $post_id, 'large' );
-        $img_id   = get_post_thumbnail_id( $post_id );
-        $img_meta = wp_get_attachment_metadata( $img_id );
-        $schema['image'] = array(
-            '@type'  => 'ImageObject',
-            'url'    => $img_url,
-            'width'  => $img_meta['width'] ?? 0,
-            'height' => $img_meta['height'] ?? 0,
-        );
+        $img_id  = get_post_thumbnail_id( $post_id );
+        $img_src = wp_get_attachment_image_src( $img_id, 'large' );
+        if ( $img_src ) {
+            $schema['image'] = array(
+                '@type'  => 'ImageObject',
+                'url'    => $img_src[0],
+                'width'  => $img_src[1],
+                'height' => $img_src[2],
+            );
+        }
     }
 
     // Author — linked attorney if set, WP author, or fall back to firm
@@ -1446,7 +1470,7 @@ function roden_schema_local_business_neighborhood( $firm ) {
 
     $schema = array(
         '@context'   => 'https://schema.org',
-        '@type'      => array( 'LocalBusiness', 'LegalService' ),
+        '@type'      => array( 'LocalBusiness', 'LegalService', 'LawFirm' ),
         '@id'        => $firm['url'] . '/locations/' . $office['state_slug'] . '/' . sanitize_title( $office['market_name'] ) . '/#localbusiness',
         'name'       => $office['name'],
         'url'        => $firm['url'] . '/locations/' . $office['state_slug'] . '/' . sanitize_title( $office['market_name'] ) . '/',
