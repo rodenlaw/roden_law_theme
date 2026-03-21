@@ -156,6 +156,9 @@ $footer_practice_areas = array(
 
 </div><!-- #page -->
 
+<!-- JuvoLeads Live Chat -->
+<script src="https://cdn.juvoleads.com/tag/9262634398.js" async></script>
+
 <?php wp_footer(); ?>
 </body>
 </html>
