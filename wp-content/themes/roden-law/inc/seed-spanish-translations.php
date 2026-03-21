@@ -297,6 +297,19 @@ if ( $front_page_id ) {
 WP_CLI::log( '' );
 WP_CLI::log( '═══ LOCATION PAGES ═══' );
 
+// Debug: list all location posts
+$all_locations = get_posts( array(
+    'post_type'      => 'location',
+    'posts_per_page' => 20,
+    'post_status'    => 'any',
+    'suppress_filters' => true, // bypass Polylang language filter
+) );
+WP_CLI::log( 'DEBUG: Found ' . count( $all_locations ) . ' location posts total' );
+foreach ( $all_locations as $loc ) {
+    $okey = get_post_meta( $loc->ID, '_roden_office_key', true );
+    WP_CLI::log( "  - ID {$loc->ID}: \"{$loc->post_title}\" (slug: {$loc->post_name}, office_key: {$okey})" );
+}
+
 // Map location keys to office_key values used in _roden_office_key meta
 $office_key_map = array(
     'savannah-ga'     => 'savannah',
