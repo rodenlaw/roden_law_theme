@@ -85,6 +85,45 @@ function roden_legacy_location_redirects() {
 }
 
 /* ==========================================================================
+   3a-2. OLD-FORMAT PAGE REDIRECTS — Legacy pages → canonical URLs
+   ========================================================================== */
+
+add_action( 'template_redirect', 'roden_old_page_redirects', 1 );
+function roden_old_page_redirects() {
+    if ( ! is_page() ) {
+        return;
+    }
+
+    $redirects = array(
+        'car-accident-lawyer'                  => '/practice-areas/car-accident-lawyers/',
+        'charleston-car-accident-lawyer'       => '/practice-areas/car-accident-lawyers/charleston-sc/',
+        'south-carolina-car-accident-lawyer'   => '/practice-areas/car-accident-lawyers/',
+        'south-carolina-truck-accident-lawyer' => '/practice-areas/truck-accident-lawyers/',
+        'columbia-truck-accident-lawyer'       => '/practice-areas/truck-accident-lawyers/columbia-sc/',
+    );
+
+    $slug = get_post_field( 'post_name', get_the_ID() );
+
+    if ( isset( $redirects[ $slug ] ) ) {
+        wp_redirect( home_url( $redirects[ $slug ] ), 301 );
+        exit;
+    }
+
+    // Old city/practice-areas listing pages
+    $path = trim( $_SERVER['REQUEST_URI'], '/' );
+    $city_redirects = array(
+        'savannah/practice-areas'  => '/practice-areas/',
+        'charleston/practice-areas' => '/practice-areas/',
+        'brunswick/practice-areas' => '/practice-areas/',
+    );
+
+    if ( isset( $city_redirects[ $path ] ) ) {
+        wp_redirect( home_url( $city_redirects[ $path ] ), 301 );
+        exit;
+    }
+}
+
+/* ==========================================================================
    3b. STAFF — Redirect single pages & exclude from sitemap
    ========================================================================== */
 
