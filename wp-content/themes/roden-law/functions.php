@@ -133,13 +133,30 @@ function roden_legacy_attorney_redirect() {
 }
 
 /* ==========================================================================
-   3d. 404 REDIRECT — Send all 404s to the homepage
+   3d. SITEMAP REDIRECT — /sitemap.xml → /wp-sitemap.xml
+   ========================================================================== */
+
+add_action( 'template_redirect', 'roden_redirect_sitemap_xml', 1 );
+function roden_redirect_sitemap_xml() {
+    if ( '/sitemap.xml' === $_SERVER['REQUEST_URI'] ) {
+        wp_redirect( home_url( '/wp-sitemap.xml' ), 301 );
+        exit;
+    }
+}
+
+/* ==========================================================================
+   3e. 404 REDIRECT — Send most 404s to the homepage
    ========================================================================== */
 
 add_action( 'template_redirect', 'roden_redirect_404_to_home' );
 function roden_redirect_404_to_home() {
     if ( is_404() ) {
-        wp_redirect( home_url( '/' ), 302 );
+        $uri = $_SERVER['REQUEST_URI'];
+        // Don't redirect sitemap, feed, or API requests — let them 404 properly
+        if ( preg_match( '#(sitemap|\.xml|/feed/|/wp-json/)#i', $uri ) ) {
+            return;
+        }
+        wp_redirect( home_url( '/' ), 301 );
         exit;
     }
 }
