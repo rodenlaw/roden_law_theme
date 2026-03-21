@@ -331,12 +331,12 @@ function roden_homepage_meta_description() {
 }
 
 /* ==========================================================================
-   7d. FORCE en-US LOCALE — Ensure lang="en-US" on frontend
+   7d. FORCE en-US LOCALE — Fallback when Polylang is not active
    ========================================================================== */
 
 add_filter( 'locale', 'roden_force_en_us_locale' );
 function roden_force_en_us_locale( $locale ) {
-    if ( ! is_admin() ) {
+    if ( ! is_admin() && ! function_exists( 'pll_current_language' ) ) {
         return 'en_US';
     }
     return $locale;

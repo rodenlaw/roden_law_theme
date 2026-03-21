@@ -1833,6 +1833,52 @@ input[type="submit"] {
     flex-shrink: 0;
 }
 
+/* Language Switcher */
+.lang-switcher {
+    flex-shrink: 0;
+    margin-left: var(--space-md);
+}
+
+.lang-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.lang-list li {
+    line-height: 1;
+}
+
+.lang-list li + li::before {
+    content: "|";
+    color: var(--color-gray-light);
+    margin: 0 0.35em;
+    font-size: 0.75rem;
+}
+
+.lang-list li a {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--color-gray-light);
+    text-decoration: none;
+    padding: 0.25em 0.15em;
+    transition: color 0.2s ease;
+}
+
+.lang-list li a:hover {
+    color: var(--color-orange);
+}
+
+.lang-list li.current-lang a {
+    color: var(--color-white);
+}
+
 /* Menu Toggle Bars (hamburger icon) */
 .menu-toggle-bar {
     display: block;
@@ -2429,6 +2475,11 @@ input[type="submit"] {
 
     .header-cta {
         display: none;
+    }
+
+    .lang-switcher {
+        margin-left: auto;
+        margin-right: var(--space-sm);
     }
 
     .roden-other-offices__grid {

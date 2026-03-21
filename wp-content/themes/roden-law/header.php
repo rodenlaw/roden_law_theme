@@ -96,6 +96,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </a>
             </div>
 
+            <!-- Language Switcher -->
+            <?php if ( function_exists( 'pll_the_languages' ) ) : ?>
+            <div class="lang-switcher">
+                <ul class="lang-list">
+                    <?php pll_the_languages( array(
+                        'show_names'       => 1,
+                        'show_flags'       => 0,
+                        'hide_current'     => 0,
+                        'display_names_as' => 'slug',
+                    ) ); ?>
+                </ul>
+            </div>
+            <?php endif; ?>
+
             <!-- Mobile Phone CTA (visible only on mobile) -->
             <a href="tel:<?php echo esc_attr( $firm['phone_e164'] ); ?>"
                class="mobile-phone-cta"
