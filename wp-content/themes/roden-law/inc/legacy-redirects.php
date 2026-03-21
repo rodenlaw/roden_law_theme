@@ -96,24 +96,24 @@ function roden_get_legacy_redirect_map() {
         // New: /practice-areas/[slug]/savannah-ga/
         // ══════════════════════════════════════════════════════════════
 
-        '/practice-areas/savannah/car-accident-lawyers/'          => '/practice-areas/car-accident-lawyers/savannah-ga/',
-        '/practice-areas/savannah/truck-accident-lawyers/'        => '/practice-areas/truck-accident-lawyers/savannah-ga/',
-        '/practice-areas/savannah/slip-and-fall-attorneys/'       => '/practice-areas/slip-and-fall-lawyers/savannah-ga/',
-        '/practice-areas/savannah/motorcycle-accident-lawyers/'   => '/practice-areas/motorcycle-accident-lawyers/savannah-ga/',
-        '/practice-areas/savannah/medical-malpractice-attorneys/' => '/practice-areas/medical-malpractice-lawyers/savannah-ga/',
-        '/practice-areas/savannah/wrongful-death-lawyers/'        => '/practice-areas/wrongful-death-lawyers/savannah-ga/',
-        '/practice-areas/savannah/workers-compensation-lawyers/'  => '/practice-areas/workers-compensation-lawyers/savannah-ga/',
-        '/practice-areas/savannah/dog-bite-lawyers/'              => '/practice-areas/dog-bite-lawyers/savannah-ga/',
-        '/practice-areas/savannah/brain-injury-lawyers/'          => '/practice-areas/brain-injury-lawyers/savannah-ga/',
-        '/practice-areas/savannah/spinal-cord-injury-lawyers/'    => '/practice-areas/spinal-cord-injury-lawyers/savannah-ga/',
-        '/practice-areas/savannah/maritime-lawyers/'              => '/practice-areas/maritime-injury-lawyers/savannah-ga/',
-        '/practice-areas/savannah/product-liability-lawyers/'     => '/practice-areas/product-liability-lawyers/savannah-ga/',
-        '/practice-areas/savannah/boating-accident-lawyers/'      => '/practice-areas/boating-accident-lawyers/savannah-ga/',
-        '/practice-areas/savannah/burn-injury-lawyers/'           => '/practice-areas/burn-injury-lawyers/savannah-ga/',
-        '/practice-areas/savannah/construction-accident-lawyers/' => '/practice-areas/construction-accident-lawyers/savannah-ga/',
-        '/practice-areas/savannah/nursing-home-abuse-attorneys/'  => '/practice-areas/nursing-home-abuse-lawyers/savannah-ga/',
-        '/practice-areas/savannah/personal-injury-lawyers/'       => '/practice-areas/car-accident-lawyers/savannah-ga/',
-        '/practice-areas/savannah/coronavirus-business-claims/'   => '/practice-areas/car-accident-lawyers/savannah-ga/',
+        '/practice-areas/savannah/car-accident-lawyers/'          => '/car-accident-lawyers/savannah-ga/',
+        '/practice-areas/savannah/truck-accident-lawyers/'        => '/truck-accident-lawyers/savannah-ga/',
+        '/practice-areas/savannah/slip-and-fall-attorneys/'       => '/slip-and-fall-lawyers/savannah-ga/',
+        '/practice-areas/savannah/motorcycle-accident-lawyers/'   => '/motorcycle-accident-lawyers/savannah-ga/',
+        '/practice-areas/savannah/medical-malpractice-attorneys/' => '/medical-malpractice-lawyers/savannah-ga/',
+        '/practice-areas/savannah/wrongful-death-lawyers/'        => '/wrongful-death-lawyers/savannah-ga/',
+        '/practice-areas/savannah/workers-compensation-lawyers/'  => '/workers-compensation-lawyers/savannah-ga/',
+        '/practice-areas/savannah/dog-bite-lawyers/'              => '/dog-bite-lawyers/savannah-ga/',
+        '/practice-areas/savannah/brain-injury-lawyers/'          => '/brain-injury-lawyers/savannah-ga/',
+        '/practice-areas/savannah/spinal-cord-injury-lawyers/'    => '/spinal-cord-injury-lawyers/savannah-ga/',
+        '/practice-areas/savannah/maritime-lawyers/'              => '/maritime-injury-lawyers/savannah-ga/',
+        '/practice-areas/savannah/product-liability-lawyers/'     => '/product-liability-lawyers/savannah-ga/',
+        '/practice-areas/savannah/boating-accident-lawyers/'      => '/boating-accident-lawyers/savannah-ga/',
+        '/practice-areas/savannah/burn-injury-lawyers/'           => '/burn-injury-lawyers/savannah-ga/',
+        '/practice-areas/savannah/construction-accident-lawyers/' => '/construction-accident-lawyers/savannah-ga/',
+        '/practice-areas/savannah/nursing-home-abuse-attorneys/'  => '/nursing-home-abuse-lawyers/savannah-ga/',
+        '/practice-areas/savannah/personal-injury-lawyers/'       => '/personal-injury-lawyers/savannah-ga/', // Updated ROD-63: PI pages now live
+        '/practice-areas/savannah/coronavirus-business-claims/'   => '/car-accident-lawyers/savannah-ga/',
 
         // ══════════════════════════════════════════════════════════════
         // CATEGORY 3: Charleston old intersection pages (16 pages)
@@ -121,22 +121,22 @@ function roden_get_legacy_redirect_map() {
         // New: /practice-areas/[slug]/charleston-sc/
         // ══════════════════════════════════════════════════════════════
 
-        '/practice-areas/charleston/car-accident-lawyers/'          => '/practice-areas/car-accident-lawyers/charleston-sc/',
-        '/practice-areas/charleston/truck-accident-lawyers/'        => '/practice-areas/truck-accident-lawyers/charleston-sc/',
-        '/practice-areas/charleston/slip-and-fall-lawyer/'          => '/practice-areas/slip-and-fall-lawyers/charleston-sc/',
-        '/practice-areas/charleston/motorcycle-accident-lawyers/'   => '/practice-areas/motorcycle-accident-lawyers/charleston-sc/',
-        '/practice-areas/charleston/medical-malpractice-attorney/'  => '/practice-areas/medical-malpractice-lawyers/charleston-sc/',
-        '/practice-areas/charleston/wrongful-death-lawyers/'        => '/practice-areas/wrongful-death-lawyers/charleston-sc/',
-        '/practice-areas/charleston/workers-compensation-lawyer/'   => '/practice-areas/workers-compensation-lawyers/charleston-sc/',
-        '/practice-areas/charleston/dog-bite-lawyers/'              => '/practice-areas/dog-bite-lawyers/charleston-sc/',
-        '/practice-areas/charleston/brain-injury-lawyers/'          => '/practice-areas/brain-injury-lawyers/charleston-sc/',
-        '/practice-areas/charleston/spinal-cord-injury-lawyers/'    => '/practice-areas/spinal-cord-injury-lawyers/charleston-sc/',
-        '/practice-areas/charleston/product-liability-lawyers/'     => '/practice-areas/product-liability-lawyers/charleston-sc/',
-        '/practice-areas/charleston/boating-accident-lawyers/'      => '/practice-areas/boating-accident-lawyers/charleston-sc/',
-        '/practice-areas/charleston/burn-injury-lawyers/'           => '/practice-areas/burn-injury-lawyers/charleston-sc/',
-        '/practice-areas/charleston/construction-accident-lawyers/' => '/practice-areas/construction-accident-lawyers/charleston-sc/',
-        '/practice-areas/charleston/nursing-home-abuse-attorneys/'  => '/practice-areas/nursing-home-abuse-lawyers/charleston-sc/',
-        '/practice-areas/charleston/personal-injury-lawyer/'        => '/practice-areas/car-accident-lawyers/charleston-sc/',
+        '/practice-areas/charleston/car-accident-lawyers/'          => '/car-accident-lawyers/charleston-sc/',
+        '/practice-areas/charleston/truck-accident-lawyers/'        => '/truck-accident-lawyers/charleston-sc/',
+        '/practice-areas/charleston/slip-and-fall-lawyer/'          => '/slip-and-fall-lawyers/charleston-sc/',
+        '/practice-areas/charleston/motorcycle-accident-lawyers/'   => '/motorcycle-accident-lawyers/charleston-sc/',
+        '/practice-areas/charleston/medical-malpractice-attorney/'  => '/medical-malpractice-lawyers/charleston-sc/',
+        '/practice-areas/charleston/wrongful-death-lawyers/'        => '/wrongful-death-lawyers/charleston-sc/',
+        '/practice-areas/charleston/workers-compensation-lawyer/'   => '/workers-compensation-lawyers/charleston-sc/',
+        '/practice-areas/charleston/dog-bite-lawyers/'              => '/dog-bite-lawyers/charleston-sc/',
+        '/practice-areas/charleston/brain-injury-lawyers/'          => '/brain-injury-lawyers/charleston-sc/',
+        '/practice-areas/charleston/spinal-cord-injury-lawyers/'    => '/spinal-cord-injury-lawyers/charleston-sc/',
+        '/practice-areas/charleston/product-liability-lawyers/'     => '/product-liability-lawyers/charleston-sc/',
+        '/practice-areas/charleston/boating-accident-lawyers/'      => '/boating-accident-lawyers/charleston-sc/',
+        '/practice-areas/charleston/burn-injury-lawyers/'           => '/burn-injury-lawyers/charleston-sc/',
+        '/practice-areas/charleston/construction-accident-lawyers/' => '/construction-accident-lawyers/charleston-sc/',
+        '/practice-areas/charleston/nursing-home-abuse-attorneys/'  => '/nursing-home-abuse-lawyers/charleston-sc/',
+        '/practice-areas/charleston/personal-injury-lawyer/'        => '/personal-injury-lawyers/charleston-sc/', // Updated ROD-63: PI pages now live
 
         // ══════════════════════════════════════════════════════════════
         // CATEGORY 4a: Albany pages — no office (16 pages)
@@ -230,39 +230,39 @@ function roden_get_legacy_redirect_map() {
         // Unique content — redirect to closest new intersection page
         // ══════════════════════════════════════════════════════════════
 
-        '/practice-areas/savannah/car-accident-lawyers/bike-accidents/'        => '/practice-areas/car-accident-lawyers/savannah-ga/',
-        '/practice-areas/savannah/car-accident-lawyers/bus-accidents/'         => '/practice-areas/car-accident-lawyers/savannah-ga/',
-        '/practice-areas/savannah/car-accident-lawyers/georgia-pip-insurance/' => '/practice-areas/car-accident-lawyers/savannah-ga/',
-        '/practice-areas/savannah/car-accident-lawyers/hit-and-run-accidents/' => '/practice-areas/car-accident-lawyers/savannah-ga/',
-        '/practice-areas/savannah/car-accident-lawyers/pedestrian-accidents/'  => '/practice-areas/pedestrian-accident-lawyers/savannah-ga/',
+        '/practice-areas/savannah/car-accident-lawyers/bike-accidents/'        => '/car-accident-lawyers/savannah-ga/',
+        '/practice-areas/savannah/car-accident-lawyers/bus-accidents/'         => '/car-accident-lawyers/savannah-ga/',
+        '/practice-areas/savannah/car-accident-lawyers/georgia-pip-insurance/' => '/car-accident-lawyers/savannah-ga/',
+        '/practice-areas/savannah/car-accident-lawyers/hit-and-run-accidents/' => '/car-accident-lawyers/savannah-ga/',
+        '/practice-areas/savannah/car-accident-lawyers/pedestrian-accidents/'  => '/pedestrian-accident-lawyers/savannah-ga/',
 
-        '/practice-areas/savannah/medical-malpractice-attorneys/cosmetic-surgery/'       => '/practice-areas/medical-malpractice-lawyers/savannah-ga/',
-        '/practice-areas/savannah/medical-malpractice-attorneys/dental-negligence/'      => '/practice-areas/medical-malpractice-lawyers/savannah-ga/',
-        '/practice-areas/savannah/medical-malpractice-attorneys/faq/'                    => '/practice-areas/medical-malpractice-lawyers/savannah-ga/',
-        '/practice-areas/savannah/medical-malpractice-attorneys/hospital-negligence/'    => '/practice-areas/medical-malpractice-lawyers/savannah-ga/',
-        '/practice-areas/savannah/medical-malpractice-attorneys/medication-errors/'      => '/practice-areas/medical-malpractice-lawyers/savannah-ga/',
-        '/practice-areas/savannah/medical-malpractice-attorneys/misdiagnosis/'           => '/practice-areas/medical-malpractice-lawyers/savannah-ga/',
-        '/practice-areas/savannah/medical-malpractice-attorneys/ob-gyn-negligence/'      => '/practice-areas/medical-malpractice-lawyers/savannah-ga/',
-        '/practice-areas/savannah/medical-malpractice-attorneys/orthopedic-injury/'      => '/practice-areas/medical-malpractice-lawyers/savannah-ga/',
-        '/practice-areas/savannah/medical-malpractice-attorneys/psychiatric-negligence/' => '/practice-areas/medical-malpractice-lawyers/savannah-ga/',
-        '/practice-areas/savannah/medical-malpractice-attorneys/surgical-errors/'        => '/practice-areas/medical-malpractice-lawyers/savannah-ga/',
+        '/practice-areas/savannah/medical-malpractice-attorneys/cosmetic-surgery/'       => '/medical-malpractice-lawyers/savannah-ga/',
+        '/practice-areas/savannah/medical-malpractice-attorneys/dental-negligence/'      => '/medical-malpractice-lawyers/savannah-ga/',
+        '/practice-areas/savannah/medical-malpractice-attorneys/faq/'                    => '/medical-malpractice-lawyers/savannah-ga/',
+        '/practice-areas/savannah/medical-malpractice-attorneys/hospital-negligence/'    => '/medical-malpractice-lawyers/savannah-ga/',
+        '/practice-areas/savannah/medical-malpractice-attorneys/medication-errors/'      => '/medical-malpractice-lawyers/savannah-ga/',
+        '/practice-areas/savannah/medical-malpractice-attorneys/misdiagnosis/'           => '/medical-malpractice-lawyers/savannah-ga/',
+        '/practice-areas/savannah/medical-malpractice-attorneys/ob-gyn-negligence/'      => '/medical-malpractice-lawyers/savannah-ga/',
+        '/practice-areas/savannah/medical-malpractice-attorneys/orthopedic-injury/'      => '/medical-malpractice-lawyers/savannah-ga/',
+        '/practice-areas/savannah/medical-malpractice-attorneys/psychiatric-negligence/' => '/medical-malpractice-lawyers/savannah-ga/',
+        '/practice-areas/savannah/medical-malpractice-attorneys/surgical-errors/'        => '/medical-malpractice-lawyers/savannah-ga/',
 
-        '/practice-areas/savannah/nursing-home-abuse-attorneys/bedsores/'                    => '/practice-areas/nursing-home-abuse-lawyers/savannah-ga/',
-        '/practice-areas/savannah/nursing-home-abuse-attorneys/faqs/'                        => '/practice-areas/nursing-home-abuse-lawyers/savannah-ga/',
-        '/practice-areas/savannah/nursing-home-abuse-attorneys/malnutrition-and-dehydration/' => '/practice-areas/nursing-home-abuse-lawyers/savannah-ga/',
-        '/practice-areas/savannah/nursing-home-abuse-attorneys/resident-bill-of-rights/'     => '/practice-areas/nursing-home-abuse-lawyers/savannah-ga/',
+        '/practice-areas/savannah/nursing-home-abuse-attorneys/bedsores/'                    => '/nursing-home-abuse-lawyers/savannah-ga/',
+        '/practice-areas/savannah/nursing-home-abuse-attorneys/faqs/'                        => '/nursing-home-abuse-lawyers/savannah-ga/',
+        '/practice-areas/savannah/nursing-home-abuse-attorneys/malnutrition-and-dehydration/' => '/nursing-home-abuse-lawyers/savannah-ga/',
+        '/practice-areas/savannah/nursing-home-abuse-attorneys/resident-bill-of-rights/'     => '/nursing-home-abuse-lawyers/savannah-ga/',
 
-        '/practice-areas/savannah/product-liability-lawyers/faq/'                         => '/practice-areas/product-liability-lawyers/savannah-ga/',
-        '/practice-areas/savannah/slip-and-fall-attorneys/premises-liability/'             => '/practice-areas/premises-liability-lawyers/savannah-ga/',
-        '/practice-areas/savannah/wrongful-death-lawyers/georgia-punitive-damages-lawyer/' => '/practice-areas/wrongful-death-lawyers/savannah-ga/',
-        '/practice-areas/savannah/wrongful-death-lawyers/statute-of-limitations/'         => '/practice-areas/wrongful-death-lawyers/savannah-ga/',
+        '/practice-areas/savannah/product-liability-lawyers/faq/'                         => '/product-liability-lawyers/savannah-ga/',
+        '/practice-areas/savannah/slip-and-fall-attorneys/premises-liability/'             => '/premises-liability-lawyers/savannah-ga/',
+        '/practice-areas/savannah/wrongful-death-lawyers/georgia-punitive-damages-lawyer/' => '/wrongful-death-lawyers/savannah-ga/',
+        '/practice-areas/savannah/wrongful-death-lawyers/statute-of-limitations/'         => '/wrongful-death-lawyers/savannah-ga/',
 
         // ══════════════════════════════════════════════════════════════
         // CATEGORY 6: Orphaned & test pages (3 pages)
         // ══════════════════════════════════════════════════════════════
 
         '/truck-accident-lawyer-2/'      => '/practice-areas/truck-accident-lawyers/',
-        '/columbia-car-accident-lawyers/' => '/practice-areas/car-accident-lawyers/columbia-sc/',
+        '/columbia-car-accident-lawyers/' => '/car-accident-lawyers/columbia-sc/',
         '/practice-area/3536/'           => '/practice-areas/',
 
         // ══════════════════════════════════════════════════════════════
