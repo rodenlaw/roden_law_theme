@@ -87,7 +87,7 @@ function roden_get_legacy_redirect_map() {
         '/practice-areas/medical-malpractice-attorneys/'  => '/practice-areas/medical-malpractice-lawyers/',
         '/practice-areas/nursing-home-abuse-attorneys/'   => '/practice-areas/nursing-home-abuse-lawyers/',
         '/practice-areas/slip-and-fall-attorneys/'        => '/practice-areas/slip-and-fall-lawyers/',
-        '/practice-areas/personal-injury-lawyers/'        => '/practice-areas/',
+        // '/practice-areas/personal-injury-lawyers/' — LIVE pillar page now exists; redirect removed (ROD-63)
         '/practice-areas/coronavirus-business-claims/'    => false, // 410 Gone — deprecated content
 
         // ══════════════════════════════════════════════════════════════
