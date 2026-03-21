@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "NAP accuracy per directory per office for all 5 Roden Law locations",
-    "last_updated": "2026-03-21T05:00:00Z",
+    "last_updated": "2026-03-21T05:30:00Z",
     "version": "1.1.0",
     "nap_fields": [
       "name",
@@ -56,7 +56,7 @@
       "website": "https://rodenlaw.com"
     }
   },
-  "last_run": "2026-03-21T05:00:00Z",
+  "last_run": "2026-03-21T05:30:00Z",
   "last_audited_office": "darien-ga",
   "session_log": [
     {
@@ -105,6 +105,18 @@
         "ROD-87"
       ],
       "notes": "Charleston audit. Overall NAP health is good \u2014 no P0 or P1 discrepancies. BBB, LawInfo, GBP, Yelp, FindLaw all show correct 127 King St NAP. Missing: Martindale (no Charleston org page, only Savannah/Darien); Avvo and Super Lawyers firm listings unconfirmed. GBP confirmed active (67 reviews, 5 stars). Local pack: not visible for any of 3 queries but GBP exists \u2014 competition issue not citation. Issue IDs to be updated after creation."
+    },
+    {
+      "date": "2026-03-21",
+      "office": "columbia-sc",
+      "run_id": "273ff271-c0fb-425f-b253-3de38558846b",
+      "issues_created": [
+        "ROD-90",
+        "ROD-91",
+        "ROD-92",
+        "ROD-93"
+      ],
+      "notes": "Columbia audit. COLD START \u2014 near-zero citation footprint. No GBP, no Yelp, no BBB, no Martindale, no LawInfo, no FindLaw Columbia listing found. Address 1545 Sumter St., Suite B not appearing in any directory searches. Local pack: completely absent for all 3 target queries. This is the weakest local SEO profile of all 5 offices. Priority: GBP creation is blocking all other local pack progress. Issue IDs to be updated after creation."
     }
   ],
   "citation_audits": {
@@ -534,8 +546,138 @@
       ]
     },
     "columbia-sc": {
-      "last_audited": null,
-      "directories": []
+      "last_audited": "2026-03-21",
+      "directories": [
+        {
+          "name": "Google Maps / GBP",
+          "url": null,
+          "status": "MISSING",
+          "last_verified": "2026-03-21",
+          "notes": "No Columbia GBP found in any search results. Local pack queries return Jeffcoat, Joye, Berger, Louthian \u2014 no Roden Law. Without a GBP, zero local pack eligibility for Columbia queries.",
+          "discrepancies": [
+            {
+              "field": "listing",
+              "canonical": "Should exist for 1545 Sumter St., Suite B, Columbia, SC 29201",
+              "found": "No indexed Columbia GBP",
+              "severity": "P0",
+              "paperclip_issue": "ROD-91"
+            }
+          ]
+        },
+        {
+          "name": "BBB",
+          "url": null,
+          "status": "MISSING",
+          "last_verified": "2026-03-21",
+          "notes": "Only Charleston BBB listing found (bbb.org/us/sc/charleston). No Columbia BBB profile.",
+          "discrepancies": [
+            {
+              "field": "listing",
+              "canonical": "Should exist",
+              "found": "No listing",
+              "severity": "P2",
+              "paperclip_issue": "ROD-92"
+            }
+          ]
+        },
+        {
+          "name": "Yelp",
+          "url": null,
+          "status": "MISSING",
+          "last_verified": "2026-03-21",
+          "notes": "No Columbia Yelp listing found. Only Charleston Yelp returned for all Roden Law queries.",
+          "discrepancies": [
+            {
+              "field": "listing",
+              "canonical": "Should exist",
+              "found": "No listing",
+              "severity": "P2",
+              "paperclip_issue": "ROD-93"
+            }
+          ]
+        },
+        {
+          "name": "Martindale",
+          "url": null,
+          "status": "MISSING",
+          "last_verified": "2026-03-21",
+          "notes": "No Columbia Martindale listing. Only Savannah and Darien org pages found (org ID 300038619). Add alongside ROD-86 Charleston fix.",
+          "discrepancies": [
+            {
+              "field": "listing",
+              "canonical": "Should exist",
+              "found": "No listing",
+              "severity": "P2",
+              "paperclip_issue": "ROD-93"
+            }
+          ]
+        },
+        {
+          "name": "LawInfo",
+          "url": null,
+          "status": "MISSING",
+          "last_verified": "2026-03-21",
+          "notes": "Only Charleston LawInfo listing found. No Columbia LawInfo page.",
+          "discrepancies": [
+            {
+              "field": "listing",
+              "canonical": "Should exist",
+              "found": "No listing",
+              "severity": "P2",
+              "paperclip_issue": "ROD-93"
+            }
+          ]
+        },
+        {
+          "name": "FindLaw",
+          "url": null,
+          "status": "MISSING",
+          "last_verified": "2026-03-21",
+          "notes": "Only Charleston FindLaw profile found (5232075_1). No Columbia-specific page. FindLaw may allow adding multiple office locations to one profile.",
+          "discrepancies": [
+            {
+              "field": "listing",
+              "canonical": "Should exist",
+              "found": "No listing",
+              "severity": "P2",
+              "paperclip_issue": "ROD-93"
+            }
+          ]
+        },
+        {
+          "name": "Avvo",
+          "url": null,
+          "status": "MISSING",
+          "last_verified": "2026-03-21",
+          "notes": "No Columbia Avvo firm listing found. Attorney Ivy S. Montano (Columbia associate) has not surfaced in Avvo results.",
+          "discrepancies": [
+            {
+              "field": "listing",
+              "canonical": "Should exist",
+              "found": "No listing",
+              "severity": "P2",
+              "paperclip_issue": "ROD-93"
+            }
+          ]
+        },
+        {
+          "name": "Super Lawyers",
+          "url": null,
+          "status": "MISSING",
+          "last_verified": "2026-03-21",
+          "notes": "No Columbia firm listing or SC-based attorney profiles found for Roden Law on Super Lawyers.",
+          "discrepancies": [
+            {
+              "field": "listing",
+              "canonical": "Should exist",
+              "found": "No listing",
+              "severity": "P2",
+              "paperclip_issue": "ROD-93"
+            }
+          ]
+        }
+      ],
+      "cold_start_note": "Columbia office appears to have near-zero citation footprint. No directory citations indexed with the 1545 Sumter St., Suite B, Columbia, SC 29201 address. This is likely a newer or less-established office. Priority action: create GBP first, then systematically build citation profile. See ROD-88 and sub-issues."
     },
     "myrtle-beach-sc": {
       "last_audited": null,
@@ -668,7 +810,47 @@
         ]
       }
     ],
-    "columbia-sc": [],
+    "columbia-sc": [
+      {
+        "query": "personal injury lawyer Columbia SC",
+        "position": null,
+        "in_pack": false,
+        "checked_date": "2026-03-21",
+        "notes": "Not visible. No GBP. Competitors: Jeffcoat, Joye, Kenneth Berger, Kassel McVey, Louthian, George Sink.",
+        "competitors_visible": [
+          "Jeffcoat Firm",
+          "Joye Law Firm",
+          "Kenneth Berger",
+          "Kassel McVey",
+          "Louthian Firm",
+          "George Sink PA"
+        ]
+      },
+      {
+        "query": "car accident attorney Columbia SC",
+        "position": null,
+        "in_pack": false,
+        "checked_date": "2026-03-21",
+        "notes": "Not visible. No GBP.",
+        "competitors_visible": [
+          "Louthian Firm",
+          "Joye Law Firm",
+          "Jeffcoat Firm"
+        ]
+      },
+      {
+        "query": "Columbia SC injury lawyer",
+        "position": null,
+        "in_pack": false,
+        "checked_date": "2026-03-21",
+        "notes": "Not visible. No GBP.",
+        "competitors_visible": [
+          "Goings Law Firm",
+          "Strom Law",
+          "DSB Law Firm"
+        ]
+      }
+    ],
     "myrtle-beach-sc": []
   },
   "review_data": {
@@ -705,7 +887,20 @@
         "notes": "Updated December 2025. Review count not confirmed (403 on fetch)."
       }
     },
-    "columbia-sc": {},
+    "columbia-sc": {
+      "google": {
+        "count": null,
+        "rating": null,
+        "last_checked": "2026-03-21",
+        "notes": "No Columbia GBP found \u2014 no review data available."
+      },
+      "yelp": {
+        "count": null,
+        "rating": null,
+        "last_checked": "2026-03-21",
+        "notes": "No Columbia Yelp listing found."
+      }
+    },
     "myrtle-beach-sc": {}
   },
   "directories": {
@@ -720,7 +915,7 @@
     "savannah-ga": "2026-03-20",
     "darien-ga": "2026-03-21",
     "charleston-sc": "2026-03-21",
-    "columbia-sc": null,
+    "columbia-sc": "2026-03-21",
     "myrtle-beach-sc": null
   }
 }
