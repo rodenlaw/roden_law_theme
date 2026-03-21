@@ -97,7 +97,58 @@ function roden_exclude_staff_from_sitemap( $args, $post_type ) {
             array( 'key' => '_roden_team_role', 'compare' => 'NOT EXISTS' ),
         );
     }
+    // Exclude junk pages by slug
+    if ( 'page' === $post_type ) {
+        $exclude_slugs = array(
+            'test',
+            'thank-you',
+            'gracias-ppc-2',
+            'gracias-ppc-3',
+            'privacy-policy-2',
+            'car-accident-lawyer',
+            'south-carolina-truck-accident-lawyer',
+            'columbia-truck-accident-lawyer',
+            'charleston-car-accident-lawyer',
+            'south-carolina-car-accident-lawyer',
+        );
+        $exclude_ids = array();
+        foreach ( $exclude_slugs as $slug ) {
+            $page = get_page_by_path( $slug );
+            if ( $page ) {
+                $exclude_ids[] = $page->ID;
+            }
+        }
+        // Also exclude old legacy practice-areas listing pages
+        foreach ( array( 'savannah', 'brunswick', 'charleston' ) as $city ) {
+            $page = get_page_by_path( $city . '/practice-areas' );
+            if ( $page ) {
+                $exclude_ids[] = $page->ID;
+            }
+        }
+        if ( $exclude_ids ) {
+            $args['post__not_in'] = isset( $args['post__not_in'] )
+                ? array_merge( $args['post__not_in'], $exclude_ids )
+                : $exclude_ids;
+        }
+    }
     return $args;
+}
+
+/* Remove staff, old case-result (hyphenated) CPTs from sitemap entirely */
+add_filter( 'wp_sitemaps_post_types', 'roden_remove_cpts_from_sitemap' );
+function roden_remove_cpts_from_sitemap( $post_types ) {
+    unset( $post_types['staff'] );
+    unset( $post_types['case-result'] );
+    return $post_types;
+}
+
+/* Remove users/author archives from sitemap */
+add_filter( 'wp_sitemaps_add_provider', 'roden_remove_users_sitemap', 10, 2 );
+function roden_remove_users_sitemap( $provider, $name ) {
+    if ( 'users' === $name ) {
+        return false;
+    }
+    return $provider;
 }
 
 add_action( 'template_redirect', 'roden_staff_redirect' );
