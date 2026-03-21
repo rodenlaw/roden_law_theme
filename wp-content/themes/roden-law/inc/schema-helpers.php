@@ -362,6 +362,18 @@ function roden_schema_local_business_office( $firm, $key, $office ) {
         ),
     );
 
+    // aggregateRating — only output when per-office GBP review count has been populated.
+    $review_count = isset( $office['review_count'] ) ? intval( $office['review_count'] ) : 0;
+    if ( $review_count > 0 ) {
+        $schema['aggregateRating'] = array(
+            '@type'       => 'AggregateRating',
+            'ratingValue' => '4.9',
+            'bestRating'  => '5',
+            'worstRating' => '1',
+            'reviewCount' => $review_count,
+        );
+    }
+
     $logo_url = roden_get_logo_url();
     if ( $logo_url ) {
         $schema['image'] = $logo_url;
