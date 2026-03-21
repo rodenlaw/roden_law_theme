@@ -215,6 +215,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .header-phone { white-space: nowrap; }
 
+/* Mobile Phone CTA */
+.mobile-phone-cta {
+    display: none; align-items: center; justify-content: center;
+    width: 40px; height: 40px; border-radius: 50%;
+    background: var(--orange); color: var(--white);
+    text-decoration: none; flex-shrink: 0;
+    transition: var(--transition);
+}
+.mobile-phone-cta:hover { background: var(--orange-text, #e0a010); }
+.mobile-phone-cta svg { display: block; }
+
 /* Mobile Toggle */
 .mobile-toggle {
     display: none; background: none; border: none; cursor: pointer; padding: 8px;
@@ -1786,6 +1797,7 @@ body.nav-open { overflow: hidden; }
 @media (max-width: 768px) {
     .main-nav { display: none; }
     .header-cta { display: none; }
+    .mobile-phone-cta { display: flex; }
     .mobile-toggle { display: block; }
     .top-bar { display: none; }
     .hero-title { font-size: 28px; }
