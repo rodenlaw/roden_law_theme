@@ -648,29 +648,7 @@ function roden_contact_form_sidebar( $local_phone = '' ) {
             </div>
             <input type="tel" name="phone" id="rsf-phone" placeholder="(555) 555-5555" required>
             <input type="email" name="email" id="rsf-email" placeholder="Email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
-            <select name="case_type" required>
-                <option value="" disabled selected>Case Type</option>
-                <option value="Car Accident">Car Accident</option>
-                <option value="Truck Accident">Truck Accident</option>
-                <option value="Motorcycle Accident">Motorcycle Accident</option>
-                <option value="Slip &amp; Fall">Slip &amp; Fall</option>
-                <option value="Medical Malpractice">Medical Malpractice</option>
-                <option value="Wrongful Death">Wrongful Death</option>
-                <option value="Workers' Compensation">Workers' Compensation</option>
-                <option value="Dog Bite">Dog Bite</option>
-                <option value="Brain Injury">Brain Injury</option>
-                <option value="Spinal Cord Injury">Spinal Cord Injury</option>
-                <option value="Maritime Injury">Maritime Injury</option>
-                <option value="Product Liability">Product Liability</option>
-                <option value="Boating Accident">Boating Accident</option>
-                <option value="Burn Injury">Burn Injury</option>
-                <option value="Construction Accident">Construction Accident</option>
-                <option value="Nursing Home Abuse">Nursing Home Abuse</option>
-                <option value="Premises Liability">Premises Liability</option>
-                <option value="Pedestrian Accident">Pedestrian Accident</option>
-                <option value="Other">Other</option>
-            </select>
-            <textarea name="message" placeholder="Please describe what happened" rows="3"></textarea>
+            <textarea name="message" placeholder="Please describe what happened" rows="6"></textarea>
             <label class="rsf-consent">
                 <input type="checkbox" name="consent" value="1" checked required>
                 <span>I hereby expressly consent to receive automated communications including calls, texts, emails, and/or prerecorded messages. By submitting this form, you agree to our <a href="<?php echo esc_url( home_url( '/terms-privacy-policy/' ) ); ?>" target="_blank">Terms &amp; Privacy Policy</a>.</span>

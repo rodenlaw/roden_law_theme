@@ -923,25 +923,7 @@ $city_is_custom = ! empty( $city_raw );
                     </div>
                 </div>
                 <div class="form-group">
-                    <select name="case_type" required>
-                        <option value="" disabled selected>Type of Truck Accident</option>
-                        <option value="18-Wheeler / Tractor-Trailer">18-Wheeler / Tractor-Trailer</option>
-                        <option value="Jackknife Accident">Jackknife Accident</option>
-                        <option value="Rear-End by Truck">Rear-End by Truck</option>
-                        <option value="Underride / Override">Underride / Override</option>
-                        <option value="Truck Rollover">Truck Rollover</option>
-                        <option value="Wide Turn Accident">Wide Turn Accident</option>
-                        <option value="Delivery Truck / Van">Delivery Truck / Van</option>
-                        <option value="Hazmat / Tanker Spill">Hazmat / Tanker Spill</option>
-                        <option value="Overloaded / Unsecured Cargo">Overloaded / Unsecured Cargo</option>
-                        <option value="Brake Failure">Brake Failure</option>
-                        <option value="Fatigued / Drowsy Trucker">Fatigued / Drowsy Trucker</option>
-                        <option value="Blind Spot / No-Zone">Blind Spot / No-Zone</option>
-                        <option value="Other Truck Accident">Other Truck Accident</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <textarea name="message" placeholder="Please describe what happened (location, injuries, truck company if known)" rows="3"></textarea>
+                    <textarea name="message" placeholder="Please describe what happened (location, injuries, truck company if known)" rows="6"></textarea>
                 </div>
                 <label class="form-consent" style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;cursor:pointer;">
                     <input type="checkbox" name="consent" value="1" checked required style="width:18px;height:18px;min-width:18px;margin-top:2px;accent-color:#f5a623;cursor:pointer;">

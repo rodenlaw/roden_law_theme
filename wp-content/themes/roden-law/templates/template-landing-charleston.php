@@ -921,25 +921,7 @@ $city         = ( $city_raw && strpos( $city_raw, '{' ) === false ) ? $city_raw 
                     </div>
                 </div>
                 <div class="form-group">
-                    <select name="case_type" required>
-                        <option value="" disabled selected>Type of Car Accident</option>
-                        <option value="Rear-End Accident">Rear-End Accident</option>
-                        <option value="T-Bone / Side Impact">T-Bone / Side Impact</option>
-                        <option value="Head-On Collision">Head-On Collision</option>
-                        <option value="Hit and Run">Hit and Run</option>
-                        <option value="Multi-Vehicle Pileup">Multi-Vehicle Pileup</option>
-                        <option value="Uber / Lyft Accident">Uber / Lyft Accident</option>
-                        <option value="Drunk Driver Accident">Drunk Driver Accident</option>
-                        <option value="Distracted Driver">Distracted Driver</option>
-                        <option value="Uninsured Motorist">Uninsured Motorist</option>
-                        <option value="Intersection Accident">Intersection Accident</option>
-                        <option value="Highway / Interstate">Highway / Interstate</option>
-                        <option value="Parking Lot Accident">Parking Lot Accident</option>
-                        <option value="Other">Other</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <textarea name="message" placeholder="Please describe what happened" rows="3"></textarea>
+                    <textarea name="message" placeholder="Please describe what happened" rows="6"></textarea>
                 </div>
                 <label class="form-consent" style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;cursor:pointer;">
                     <input type="checkbox" name="consent" value="1" checked required style="width:18px;height:18px;min-width:18px;margin-top:2px;accent-color:#f5a623;cursor:pointer;">
