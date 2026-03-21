@@ -25,7 +25,7 @@ function roden_get_attorney_id( $slug ) {
 }
 
 $eric_roden_id    = roden_get_attorney_id( 'eric-roden' );
-$graeham_gillin_id = roden_get_attorney_id( 'graeham-gillin' );
+$graeham_gillin_id = roden_get_attorney_id( 'graeham-c-gillin' );
 $joshua_dorminy_id = roden_get_attorney_id( 'joshua-dorminy' );
 
 WP_CLI::log( "Attorney IDs — Eric: {$eric_roden_id}, Graeham: {$graeham_gillin_id}, Joshua: {$joshua_dorminy_id}" );
