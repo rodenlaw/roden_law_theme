@@ -42,8 +42,8 @@ add_action( 'init', function () {
         }
     }
 
-    // Run the seeder
-    require_once get_template_directory() . '/inc/seed-spanish-translations.php';
+    // Run the seeder (use require, not require_once, so re-runs work)
+    require get_template_directory() . '/inc/seed-spanish-translations.php';
 
     // Flush rewrite rules
     flush_rewrite_rules();

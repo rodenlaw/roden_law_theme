@@ -297,26 +297,46 @@ if ( $front_page_id ) {
 WP_CLI::log( '' );
 WP_CLI::log( '═══ LOCATION PAGES ═══' );
 
+// Map location keys to office_key values used in _roden_office_key meta
+$office_key_map = array(
+    'savannah-ga'     => 'savannah',
+    'darien-ga'       => 'darien',
+    'charleston-sc'   => 'charleston',
+    'columbia-sc'     => 'columbia',
+    'myrtle-beach-sc' => 'myrtle-beach',
+);
+
 foreach ( $translations['locations'] as $slug => $es_data ) {
-    // Location slugs may include state path, try both formats
-    $en_post = get_page_by_path( $slug, OBJECT, 'location' );
+    $office_key = isset( $office_key_map[ $slug ] ) ? $office_key_map[ $slug ] : $slug;
+
+    // Find location by _roden_office_key meta field
+    $query = new WP_Query( array(
+        'post_type'      => 'location',
+        'posts_per_page' => 1,
+        'post_status'    => 'publish',
+        'meta_key'       => '_roden_office_key',
+        'meta_value'     => $office_key,
+        'lang'           => 'en', // Polylang filter: only English posts
+    ) );
+
+    $en_post = $query->have_posts() ? $query->posts[0] : null;
+    wp_reset_postdata();
 
     if ( ! $en_post ) {
-        // Try with state prefix: georgia/savannah-ga, south-carolina/charleston-sc
-        $state_map = array(
-            'savannah-ga'    => 'georgia/savannah-ga',
-            'darien-ga'      => 'georgia/darien-ga',
-            'charleston-sc'  => 'south-carolina/charleston-sc',
-            'columbia-sc'    => 'south-carolina/columbia-sc',
-            'myrtle-beach-sc' => 'south-carolina/myrtle-beach-sc',
-        );
-        if ( isset( $state_map[ $slug ] ) ) {
-            $en_post = get_page_by_path( $state_map[ $slug ], OBJECT, 'location' );
-        }
+        // Fallback: try without lang filter
+        $query2 = new WP_Query( array(
+            'post_type'      => 'location',
+            'posts_per_page' => 1,
+            'post_status'    => 'publish',
+            'meta_key'       => '_roden_office_key',
+            'meta_value'     => $office_key,
+        ) );
+        $en_post = $query2->have_posts() ? $query2->posts[0] : null;
+        wp_reset_postdata();
     }
 
     if ( ! $en_post ) {
-        WP_CLI::warning( "Location \"{$slug}\" not found. Skipping." );
+        WP_CLI::warning( "Location \"{$slug}\" (office_key: {$office_key}) not found. Skipping." );
         continue;
     }
 
