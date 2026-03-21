@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "NAP accuracy per directory per office for all 5 Roden Law locations",
-    "last_updated": "2026-03-21T05:30:00Z",
+    "last_updated": "2026-03-21T06:00:00Z",
     "version": "1.1.0",
     "nap_fields": [
       "name",
@@ -56,7 +56,7 @@
       "website": "https://rodenlaw.com"
     }
   },
-  "last_run": "2026-03-21T05:30:00Z",
+  "last_run": "2026-03-21T06:00:00Z",
   "last_audited_office": "darien-ga",
   "session_log": [
     {
@@ -117,6 +117,17 @@
         "ROD-93"
       ],
       "notes": "Columbia audit. COLD START \u2014 near-zero citation footprint. No GBP, no Yelp, no BBB, no Martindale, no LawInfo, no FindLaw Columbia listing found. Address 1545 Sumter St., Suite B not appearing in any directory searches. Local pack: completely absent for all 3 target queries. This is the weakest local SEO profile of all 5 offices. Priority: GBP creation is blocking all other local pack progress. Issue IDs to be updated after creation."
+    },
+    {
+      "date": "2026-03-21",
+      "office": "myrtle-beach-sc",
+      "run_id": "674e6d64-0587-4158-ae49-dcbb92d60b5d",
+      "issues_created": [
+        "ROD-94",
+        "ROD-95",
+        "ROD-96"
+      ],
+      "notes": "Myrtle Beach (Murrells Inlet) audit. COLD START \u2014 zero citation footprint. No GBP, no Yelp, no BBB, no Martindale, no LawInfo, no FindLaw. No local pack presence. Key risk: office is physically in Murrells Inlet, SC 29576 but marketed as Myrtle Beach \u2014 any directory submission must use Murrells Inlet as city. Issue IDs to be updated after creation."
     }
   ],
   "citation_audits": {
@@ -680,8 +691,138 @@
       "cold_start_note": "Columbia office appears to have near-zero citation footprint. No directory citations indexed with the 1545 Sumter St., Suite B, Columbia, SC 29201 address. This is likely a newer or less-established office. Priority action: create GBP first, then systematically build citation profile. See ROD-88 and sub-issues."
     },
     "myrtle-beach-sc": {
-      "last_audited": null,
-      "directories": []
+      "last_audited": "2026-03-21",
+      "city_note": "IMPORTANT: Physical address is Murrells Inlet, SC 29576 \u2014 NOT Myrtle Beach. Any directory submission must use Murrells Inlet as the city. Listing as Myrtle Beach creates a city-level NAP discrepancy.",
+      "directories": [
+        {
+          "name": "Google Maps / GBP",
+          "url": null,
+          "status": "MISSING",
+          "last_verified": "2026-03-21",
+          "notes": "No GBP found for Murrells Inlet or Myrtle Beach. Zero local pack presence for all target queries.",
+          "discrepancies": [
+            {
+              "field": "listing",
+              "canonical": "Should exist for 631 Bellamy Ave., Suite C-B, Murrells Inlet, SC 29576",
+              "found": "No indexed GBP",
+              "severity": "P0",
+              "paperclip_issue": "ROD-95"
+            }
+          ]
+        },
+        {
+          "name": "BBB",
+          "url": null,
+          "status": "MISSING",
+          "last_verified": "2026-03-21",
+          "notes": "No Myrtle Beach or Murrells Inlet BBB listing found.",
+          "discrepancies": [
+            {
+              "field": "listing",
+              "canonical": "Should exist",
+              "found": "No listing",
+              "severity": "P2",
+              "paperclip_issue": "ROD-96"
+            }
+          ]
+        },
+        {
+          "name": "Yelp",
+          "url": null,
+          "status": "MISSING",
+          "last_verified": "2026-03-21",
+          "notes": "No Yelp listing found for Murrells Inlet or Myrtle Beach Roden Law office.",
+          "discrepancies": [
+            {
+              "field": "listing",
+              "canonical": "Should exist",
+              "found": "No listing",
+              "severity": "P2",
+              "paperclip_issue": "ROD-96"
+            }
+          ]
+        },
+        {
+          "name": "Martindale",
+          "url": null,
+          "status": "MISSING",
+          "last_verified": "2026-03-21",
+          "notes": "No Myrtle Beach or Murrells Inlet Martindale listing. Same org as Savannah/Darien (300038619).",
+          "discrepancies": [
+            {
+              "field": "listing",
+              "canonical": "Should exist",
+              "found": "No listing",
+              "severity": "P2",
+              "paperclip_issue": "ROD-96"
+            }
+          ]
+        },
+        {
+          "name": "LawInfo",
+          "url": null,
+          "status": "MISSING",
+          "last_verified": "2026-03-21",
+          "notes": "No Myrtle Beach or Murrells Inlet LawInfo listing found.",
+          "discrepancies": [
+            {
+              "field": "listing",
+              "canonical": "Should exist",
+              "found": "No listing",
+              "severity": "P2",
+              "paperclip_issue": "ROD-96"
+            }
+          ]
+        },
+        {
+          "name": "FindLaw",
+          "url": null,
+          "status": "MISSING",
+          "last_verified": "2026-03-21",
+          "notes": "No Myrtle Beach or Murrells Inlet FindLaw page. Only Charleston profile found.",
+          "discrepancies": [
+            {
+              "field": "listing",
+              "canonical": "Should exist",
+              "found": "No listing",
+              "severity": "P2",
+              "paperclip_issue": "ROD-96"
+            }
+          ]
+        },
+        {
+          "name": "Avvo",
+          "url": null,
+          "status": "MISSING",
+          "last_verified": "2026-03-21",
+          "notes": "No Myrtle Beach Avvo firm listing found.",
+          "discrepancies": [
+            {
+              "field": "listing",
+              "canonical": "Should exist",
+              "found": "No listing",
+              "severity": "P2",
+              "paperclip_issue": "ROD-96"
+            }
+          ]
+        },
+        {
+          "name": "Super Lawyers",
+          "url": null,
+          "status": "MISSING",
+          "last_verified": "2026-03-21",
+          "notes": "No Myrtle Beach firm listing. Super Lawyers does have a Myrtle Beach attorney directory page.",
+          "discrepancies": [
+            {
+              "field": "listing",
+              "canonical": "Should exist",
+              "found": "No listing",
+              "severity": "P2",
+              "paperclip_issue": "ROD-96"
+            }
+          ]
+        }
+      ]
     }
   },
   "local_pack_positions": {
@@ -851,7 +992,49 @@
         ]
       }
     ],
-    "myrtle-beach-sc": []
+    "myrtle-beach-sc": [
+      {
+        "query": "personal injury lawyer Myrtle Beach SC",
+        "position": null,
+        "in_pack": false,
+        "checked_date": "2026-03-21",
+        "notes": "Not visible. No GBP. Competitors: Lovely Law Firm, Beach Injury Lawyers, Axelrod & Associates, Chandler Law, Wright Injury Law, Maguire Law, George Sink.",
+        "competitors_visible": [
+          "Lovely Law Firm",
+          "Beach Injury Lawyers",
+          "Axelrod & Associates",
+          "Chandler Law Firm",
+          "Wright Injury Law",
+          "Maguire Law Firm",
+          "George Sink PA"
+        ]
+      },
+      {
+        "query": "car accident attorney Myrtle Beach SC",
+        "position": null,
+        "in_pack": false,
+        "checked_date": "2026-03-21",
+        "notes": "Not visible. No GBP.",
+        "competitors_visible": [
+          "Lovely Law Firm",
+          "Kinon Law Firm",
+          "Rice Law",
+          "MDSW Legal"
+        ]
+      },
+      {
+        "query": "Myrtle Beach SC injury lawyer",
+        "position": null,
+        "in_pack": false,
+        "checked_date": "2026-03-21",
+        "notes": "Not visible. No GBP.",
+        "competitors_visible": [
+          "Jebaily Law Firm",
+          "Yates Attorneys",
+          "Maguire Law Firm"
+        ]
+      }
+    ]
   },
   "review_data": {
     "savannah-ga": {
@@ -901,7 +1084,20 @@
         "notes": "No Columbia Yelp listing found."
       }
     },
-    "myrtle-beach-sc": {}
+    "myrtle-beach-sc": {
+      "google": {
+        "count": null,
+        "rating": null,
+        "last_checked": "2026-03-21",
+        "notes": "No GBP \u2014 no review data available."
+      },
+      "yelp": {
+        "count": null,
+        "rating": null,
+        "last_checked": "2026-03-21",
+        "notes": "No Yelp listing."
+      }
+    }
   },
   "directories": {
     "savannah-ga": [],
@@ -916,6 +1112,6 @@
     "darien-ga": "2026-03-21",
     "charleston-sc": "2026-03-21",
     "columbia-sc": "2026-03-21",
-    "myrtle-beach-sc": null
+    "myrtle-beach-sc": "2026-03-21"
   }
 }
