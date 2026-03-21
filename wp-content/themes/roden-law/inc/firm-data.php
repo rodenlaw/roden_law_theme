@@ -264,6 +264,7 @@ function roden_firm_data() {
            ================================================================== */
 
         'practice_areas' => array(
+            'personal-injury-lawyers',
             'car-accident-lawyers',
             'truck-accident-lawyers',
             'slip-and-fall-lawyers',
