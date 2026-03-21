@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "NAP accuracy per directory per office for all 5 Roden Law locations",
-    "last_updated": "2026-03-21T04:15:00Z",
+    "last_updated": "2026-03-21T05:00:00Z",
     "version": "1.1.0",
     "nap_fields": [
       "name",
@@ -56,7 +56,7 @@
       "website": "https://rodenlaw.com"
     }
   },
-  "last_run": "2026-03-21T04:15:00Z",
+  "last_run": "2026-03-21T05:00:00Z",
   "last_audited_office": "darien-ga",
   "session_log": [
     {
@@ -94,6 +94,17 @@
         "ROD-84"
       ],
       "notes": "Darien full audit. Canonical NAP: 1108 North Way, Darien, GA 31305, (912) 303-5850. Key findings: (1) Martindale shows 'Roden Love LLC' \u2014 P1 name discrepancy, same pattern as Savannah. Address/phone/website correct. (2) McIntosh Chamber listing shows wrong address: 13 St. Andrews Ct., Brunswick, GA 31520 \u2014 P0. (3) No Darien GBP confirmed indexed in Google Maps \u2014 potential missing GBP, P0. (4) No Darien Yelp listing \u2014 P2. (5) No Darien BBB listing \u2014 P2. (6) MAJOR: Brunswick office at 13 St. Andrews Ct., Brunswick GA 31520 appears across 6+ directories (LawInfo, FindLaw-Brunswick, Town Planner, Yelp-Brunswick, ReachAttorneys) and on rodenlaw.com practice area pages. This 6th office is NOT in canonical firm-data.php. Needs immediate clarification from Founding Engineer. Issue IDs to be updated once created."
+    },
+    {
+      "date": "2026-03-21",
+      "office": "charleston-sc",
+      "run_id": "e0886e4e-957c-4179-b94f-8de640f84d3f",
+      "issues_created": [
+        "ROD-85",
+        "ROD-86",
+        "ROD-87"
+      ],
+      "notes": "Charleston audit. Overall NAP health is good \u2014 no P0 or P1 discrepancies. BBB, LawInfo, GBP, Yelp, FindLaw all show correct 127 King St NAP. Missing: Martindale (no Charleston org page, only Savannah/Darien); Avvo and Super Lawyers firm listings unconfirmed. GBP confirmed active (67 reviews, 5 stars). Local pack: not visible for any of 3 queries but GBP exists \u2014 competition issue not citation. Issue IDs to be updated after creation."
     }
   ],
   "citation_audits": {
@@ -437,9 +448,90 @@
       }
     },
     "charleston-sc": {
-      "last_audited": null,
-      "directories": [],
-      "notes": "BBB listing observed during Savannah audit: 127 King St Ste 200, Charleston, SC 29401, (843) 790-8999 \u2014 appears correct. Confirm on full Charleston audit."
+      "last_audited": "2026-03-21",
+      "directories": [
+        {
+          "name": "BBB",
+          "url": "https://www.bbb.org/us/sc/charleston/profile/legal-malpractice-attorney/roden-law-0663-34348463",
+          "status": "MATCH",
+          "last_verified": "2026-03-21",
+          "notes": "Verified via WebFetch. All NAP fields confirmed: Name: Roden Law, Address: 127 King St Ste 200, Charleston, SC 29401, Phone: (843) 790-8999, Website: rodenlaw.com.",
+          "discrepancies": []
+        },
+        {
+          "name": "LawInfo",
+          "url": "https://www.lawinfo.com/lawfirm/south-carolina/charleston/roden-law/de9f8502-b1e8-4a42-a171-e391d0e2a265.html",
+          "status": "MATCH",
+          "last_verified": "2026-03-21",
+          "notes": "Verified via WebFetch. Address 127 King St, Suite 200, Charleston, SC 29401, phone 843-790-8999 correct. Website shows http://www.rodenlaw.com vs https://rodenlaw.com \u2014 P3 protocol/www difference.",
+          "discrepancies": [
+            {
+              "field": "website_protocol",
+              "canonical": "https://rodenlaw.com",
+              "found": "http://www.rodenlaw.com",
+              "severity": "P3",
+              "paperclip_issue": null
+            }
+          ]
+        },
+        {
+          "name": "Google Maps / GBP",
+          "url": "https://www.google.com/maps/place/?q=place_id:ChIJkx4ENNF7_ogRd1O08AhaJSw",
+          "status": "MATCH",
+          "last_verified": "2026-03-21",
+          "notes": "GBP confirmed indexed. CID: ChIJkx4ENNF7_ogRd1O08AhaJSw. Address 127 King St confirmed from Waze/search snippets. 5-star rating, 67 reviews.",
+          "discrepancies": []
+        },
+        {
+          "name": "Yelp",
+          "url": "https://www.yelp.com/biz/roden-law-charleston-2",
+          "status": "LIKELY_MATCH",
+          "last_verified": "2026-03-21",
+          "notes": "Updated December 2025. Snippet shows 127 King St, Charleston, South Carolina \u2014 appears correct. 403 on direct fetch. No discrepancies visible in search snippets.",
+          "discrepancies": []
+        },
+        {
+          "name": "FindLaw",
+          "url": "https://lawyers.findlaw.com/profile/view/5232075_1",
+          "status": "LIKELY_MATCH",
+          "last_verified": "2026-03-21",
+          "notes": "Charleston listing confirmed. 403 on direct fetch. Search snippets confirm 127 King Street, Suite 200, Charleston, SC 29401.",
+          "discrepancies": []
+        },
+        {
+          "name": "Martindale",
+          "url": null,
+          "status": "MISSING",
+          "last_verified": "2026-03-21",
+          "notes": "No Charleston Martindale listing found. Site: search only returns Savannah and Darien pages (org ID 300038619). Martindale may allow adding a Charleston office location to the same org account \u2014 can likely be done when fixing ROD-19 name update.",
+          "discrepancies": [
+            {
+              "field": "listing",
+              "canonical": "Should exist",
+              "found": "No listing",
+              "severity": "P2",
+              "paperclip_issue": "ROD-86"
+            }
+          ]
+        },
+        {
+          "name": "Avvo",
+          "url": null,
+          "status": "UNVERIFIED",
+          "last_verified": "2026-03-21",
+          "notes": "No Charleston firm listing found via site: search. Individual attorney profiles (Eric Roden: Excellent rating) exist but are Savannah-keyed. No dedicated firm page for Charleston confirmed.",
+          "discrepancies": [],
+          "notes_issue": "ROD-87"
+        },
+        {
+          "name": "Super Lawyers",
+          "url": null,
+          "status": "UNVERIFIED",
+          "last_verified": "2026-03-21",
+          "notes": "Only Savannah-based Eric Roden attorney profile found. No Charleston firm listing or SC-specific attorney profile confirmed.",
+          "discrepancies": []
+        }
+      ]
     },
     "columbia-sc": {
       "last_audited": null,
@@ -533,7 +625,49 @@
         ]
       }
     ],
-    "charleston-sc": [],
+    "charleston-sc": [
+      {
+        "query": "personal injury lawyer Charleston SC",
+        "position": null,
+        "in_pack": false,
+        "checked_date": "2026-03-21",
+        "notes": "Not visible. Highly competitive market. GBP exists \u2014 gap is authority/proximity not citation.",
+        "competitors_visible": [
+          "Joye Law Firm",
+          "Yarborough Applegate",
+          "Steinberg Law Firm",
+          "Gus Anastopoulo Law",
+          "Hugley Law Firm",
+          "John Price Law Firm"
+        ]
+      },
+      {
+        "query": "car accident attorney Charleston SC",
+        "position": null,
+        "in_pack": false,
+        "checked_date": "2026-03-21",
+        "notes": "Not visible.",
+        "competitors_visible": [
+          "Steinberg Law Firm",
+          "Joye Law Firm",
+          "The Hartman Law Firm",
+          "Rosen Law Firm"
+        ]
+      },
+      {
+        "query": "Charleston SC injury lawyer",
+        "position": null,
+        "in_pack": false,
+        "checked_date": "2026-03-21",
+        "notes": "Not visible. Derrick Law Firm, Mickelsen Dalton, Joe Cunningham Law prominent.",
+        "competitors_visible": [
+          "Derrick Law Firm",
+          "Mickelsen Dalton",
+          "Joe Cunningham Law",
+          "Joye Law Firm"
+        ]
+      }
+    ],
     "columbia-sc": [],
     "myrtle-beach-sc": []
   },
@@ -555,7 +689,22 @@
       }
     },
     "darien-ga": {},
-    "charleston-sc": {},
+    "charleston-sc": {
+      "google": {
+        "count": 67,
+        "rating": 5.0,
+        "last_review_date": null,
+        "last_checked": "2026-03-21",
+        "notes": "From Birdeye aggregator and search snippet. GBP CID: ChIJkx4ENNF7_ogRd1O08AhaJSw."
+      },
+      "yelp": {
+        "count": null,
+        "rating": null,
+        "last_checked": "2026-03-21",
+        "listing_url": "https://www.yelp.com/biz/roden-law-charleston-2",
+        "notes": "Updated December 2025. Review count not confirmed (403 on fetch)."
+      }
+    },
     "columbia-sc": {},
     "myrtle-beach-sc": {}
   },
@@ -570,7 +719,7 @@
   "last_audit_by_office": {
     "savannah-ga": "2026-03-20",
     "darien-ga": "2026-03-21",
-    "charleston-sc": null,
+    "charleston-sc": "2026-03-21",
     "columbia-sc": null,
     "myrtle-beach-sc": null
   }
