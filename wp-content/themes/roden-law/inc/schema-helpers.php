@@ -120,6 +120,11 @@ function roden_output_schema() {
         roden_schema_faq_page();
         roden_schema_speakable_practice_area();
 
+        // LocalBusiness on intersection pages — ties the page to the physical office entity.
+        if ( function_exists( 'roden_is_intersection_page' ) && roden_is_intersection_page() ) {
+            roden_schema_local_business_single( $firm );
+        }
+
         // Article schema for sub-type pages (child PA posts without an office key).
         if ( roden_is_subtype_page() ) {
             roden_schema_article_subtype( $firm );
