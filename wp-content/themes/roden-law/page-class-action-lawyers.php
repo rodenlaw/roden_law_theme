@@ -349,7 +349,7 @@ $firm = roden_firm_data();
      ═══════════════════════════════════════════════════════════════════════ -->
 <div class="pa-mobile-cta" aria-label="Contact Roden Law">
     <a href="tel:<?php echo esc_attr( $firm['phone_e164'] ); ?>" class="pa-mobile-cta__phone">&#128222; <?php echo esc_html( $firm['phone'] ); ?></a>
-    <a href="#contact" class="pa-mobile-cta__review">Free Review</a>
+    <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="pa-mobile-cta__review">Free Review</a>
 </div>
 
 <?php get_footer(); ?>
