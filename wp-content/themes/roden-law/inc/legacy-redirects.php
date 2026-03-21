@@ -161,26 +161,46 @@ function roden_get_legacy_redirect_map() {
         '/practice-areas/albany/wrongful-death-lawyers/'        => '/practice-areas/wrongful-death-lawyers/',
 
         // ══════════════════════════════════════════════════════════════
-        // CATEGORY 4b: Brunswick pages — no office (16 pages)
-        // Redirect to pillar pages
+        // CATEGORY 4b: Brunswick pages — former office, now Darien
+        // Redirect /practice-areas/brunswick/* → Darien intersection pages
+        // Redirect /brunswick/* → Darien intersection pages
         // ══════════════════════════════════════════════════════════════
 
-        '/practice-areas/brunswick/boating-accident-lawyers/'      => '/practice-areas/boating-accident-lawyers/',
-        '/practice-areas/brunswick/brain-injury-lawyers/'          => '/practice-areas/brain-injury-lawyers/',
-        '/practice-areas/brunswick/burn-injury-lawyers/'           => '/practice-areas/burn-injury-lawyers/',
-        '/practice-areas/brunswick/car-accident-lawyer/'           => '/practice-areas/car-accident-lawyers/',
-        '/practice-areas/brunswick/construction-accident-lawyers/' => '/practice-areas/construction-accident-lawyers/',
-        '/practice-areas/brunswick/dog-bite-lawyers/'              => '/practice-areas/dog-bite-lawyers/',
-        '/practice-areas/brunswick/medical-malpractice-attorney/'  => '/practice-areas/medical-malpractice-lawyers/',
-        '/practice-areas/brunswick/motorcycle-accident-lawyers/'   => '/practice-areas/motorcycle-accident-lawyers/',
-        '/practice-areas/brunswick/nursing-home-abuse-lawyer/'     => '/practice-areas/nursing-home-abuse-lawyers/',
-        '/practice-areas/brunswick/personal-injury-lawyer/'        => '/practice-areas/',
-        '/practice-areas/brunswick/product-liability-lawyers/'     => '/practice-areas/product-liability-lawyers/',
-        '/practice-areas/brunswick/slip-and-fall-lawyer/'          => '/practice-areas/slip-and-fall-lawyers/',
-        '/practice-areas/brunswick/spinal-cord-injury-lawyers/'    => '/practice-areas/spinal-cord-injury-lawyers/',
-        '/practice-areas/brunswick/truck-accident-lawyers/'        => '/practice-areas/truck-accident-lawyers/',
-        '/practice-areas/brunswick/workers-compensation-attorney/' => '/practice-areas/workers-compensation-lawyers/',
-        '/practice-areas/brunswick/wrongful-death-lawyers/'        => '/practice-areas/wrongful-death-lawyers/',
+        '/practice-areas/brunswick/boating-accident-lawyers/'      => '/boating-accident-lawyers/darien-ga/',
+        '/practice-areas/brunswick/brain-injury-lawyers/'          => '/brain-injury-lawyers/darien-ga/',
+        '/practice-areas/brunswick/burn-injury-lawyers/'           => '/burn-injury-lawyers/darien-ga/',
+        '/practice-areas/brunswick/car-accident-lawyer/'           => '/car-accident-lawyers/darien-ga/',
+        '/practice-areas/brunswick/construction-accident-lawyers/' => '/construction-accident-lawyers/darien-ga/',
+        '/practice-areas/brunswick/dog-bite-lawyers/'              => '/dog-bite-lawyers/darien-ga/',
+        '/practice-areas/brunswick/medical-malpractice-attorney/'  => '/medical-malpractice-lawyers/darien-ga/',
+        '/practice-areas/brunswick/motorcycle-accident-lawyers/'   => '/motorcycle-accident-lawyers/darien-ga/',
+        '/practice-areas/brunswick/nursing-home-abuse-lawyer/'     => '/nursing-home-abuse-lawyers/darien-ga/',
+        '/practice-areas/brunswick/personal-injury-lawyer/'        => '/personal-injury-lawyers/darien-ga/',
+        '/practice-areas/brunswick/product-liability-lawyers/'     => '/product-liability-lawyers/darien-ga/',
+        '/practice-areas/brunswick/slip-and-fall-lawyer/'          => '/slip-and-fall-lawyers/darien-ga/',
+        '/practice-areas/brunswick/spinal-cord-injury-lawyers/'    => '/spinal-cord-injury-lawyers/darien-ga/',
+        '/practice-areas/brunswick/truck-accident-lawyers/'        => '/truck-accident-lawyers/darien-ga/',
+        '/practice-areas/brunswick/workers-compensation-attorney/' => '/workers-compensation-lawyers/darien-ga/',
+        '/practice-areas/brunswick/wrongful-death-lawyers/'        => '/wrongful-death-lawyers/darien-ga/',
+
+        // /brunswick/[slug]/ format (no /practice-areas/ prefix)
+        '/brunswick/boating-accident-lawyers/'      => '/boating-accident-lawyers/darien-ga/',
+        '/brunswick/brain-injury-lawyers/'          => '/brain-injury-lawyers/darien-ga/',
+        '/brunswick/burn-injury-lawyers/'           => '/burn-injury-lawyers/darien-ga/',
+        '/brunswick/car-accident-lawyers/'          => '/car-accident-lawyers/darien-ga/',
+        '/brunswick/construction-accident-lawyers/' => '/construction-accident-lawyers/darien-ga/',
+        '/brunswick/dog-bite-lawyers/'              => '/dog-bite-lawyers/darien-ga/',
+        '/brunswick/medical-malpractice-lawyers/'   => '/medical-malpractice-lawyers/darien-ga/',
+        '/brunswick/motorcycle-accident-lawyers/'   => '/motorcycle-accident-lawyers/darien-ga/',
+        '/brunswick/nursing-home-abuse-lawyers/'    => '/nursing-home-abuse-lawyers/darien-ga/',
+        '/brunswick/personal-injury-lawyers/'       => '/personal-injury-lawyers/darien-ga/',
+        '/brunswick/personal-injury-lawyer/'        => '/personal-injury-lawyers/darien-ga/',
+        '/brunswick/product-liability-lawyers/'     => '/product-liability-lawyers/darien-ga/',
+        '/brunswick/slip-and-fall-lawyers/'         => '/slip-and-fall-lawyers/darien-ga/',
+        '/brunswick/spinal-cord-injury-lawyers/'    => '/spinal-cord-injury-lawyers/darien-ga/',
+        '/brunswick/truck-accident-lawyers/'        => '/truck-accident-lawyers/darien-ga/',
+        '/brunswick/workers-compensation-lawyers/'  => '/workers-compensation-lawyers/darien-ga/',
+        '/brunswick/wrongful-death-lawyers/'        => '/wrongful-death-lawyers/darien-ga/',
 
         // ══════════════════════════════════════════════════════════════
         // CATEGORY 4c: Macon pages — no office (17 pages)
