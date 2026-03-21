@@ -327,6 +327,16 @@ function roden_schema_local_business_all( $firm ) {
 
 function roden_schema_local_business_single( $firm ) {
     $office_key = get_post_meta( get_the_ID(), '_roden_office_key', true );
+
+    // Fallback: derive from post_name slug when meta is absent (intersection pages).
+    // roden_is_intersection_page() already confirmed post_name is a known office slug.
+    if ( ! $office_key ) {
+        $post = get_post();
+        if ( $post ) {
+            $office_key = roden_office_key_from_slug( $post->post_name );
+        }
+    }
+
     if ( ! $office_key || ! isset( $firm['offices'][ $office_key ] ) ) {
         return;
     }
