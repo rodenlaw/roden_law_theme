@@ -1,0 +1,577 @@
+{
+  "_meta": {
+    "description": "NAP accuracy per directory per office for all 5 Roden Law locations",
+    "last_updated": "2026-03-21T04:15:00Z",
+    "version": "1.1.0",
+    "nap_fields": [
+      "name",
+      "address",
+      "phone",
+      "website",
+      "hours",
+      "categories"
+    ],
+    "offices": [
+      "savannah-ga",
+      "darien-ga",
+      "charleston-sc",
+      "columbia-sc",
+      "myrtle-beach-sc"
+    ]
+  },
+  "canonical_nap": {
+    "savannah-ga": {
+      "name": "Roden Law",
+      "display_name": "Roden Law \u2014 Savannah",
+      "address": "333 Commercial Dr., Savannah, GA 31406",
+      "phone": "(912) 303-5850",
+      "website": "https://rodenlaw.com"
+    },
+    "darien-ga": {
+      "name": "Roden Law",
+      "display_name": "Roden Law \u2014 Darien",
+      "address": "1108 North Way, Darien, GA 31305",
+      "phone": "(912) 303-5850",
+      "website": "https://rodenlaw.com"
+    },
+    "charleston-sc": {
+      "name": "Roden Law",
+      "display_name": "Roden Law \u2014 Charleston",
+      "address": "127 King Street, Suite 200, Charleston, SC 29401",
+      "phone": "(843) 790-8999",
+      "website": "https://rodenlaw.com"
+    },
+    "columbia-sc": {
+      "name": "Roden Law",
+      "display_name": "Roden Law \u2014 Columbia",
+      "address": "1545 Sumter St., Suite B, Columbia, SC 29201",
+      "phone": "(803) 219-2816",
+      "website": "https://rodenlaw.com"
+    },
+    "myrtle-beach-sc": {
+      "name": "Roden Law",
+      "display_name": "Roden Law \u2014 Myrtle Beach",
+      "address": "631 Bellamy Ave., Suite C-B, Murrells Inlet, SC 29576",
+      "phone": "(843) 612-1980",
+      "website": "https://rodenlaw.com"
+    }
+  },
+  "last_run": "2026-03-21T04:15:00Z",
+  "last_audited_office": "darien-ga",
+  "session_log": [
+    {
+      "date": "2026-03-20",
+      "office": "savannah-ga",
+      "run_id": "a03ba37d-1ed9-43e8-808b-b156f2d2bfa5",
+      "issues_created": [
+        "ROD-17",
+        "ROD-18",
+        "ROD-19",
+        "ROD-20",
+        "ROD-21",
+        "ROD-22"
+      ],
+      "notes": "First heartbeat run. 2 P0 discrepancies: stale Yelp listing and Connect Savannah listing both pointing to old Congress St address. 2 P1 name discrepancies: Martindale and lawyers.com still show old entity name. 1 P2 missing BBB listing. Local pack visibility: absent from top 10 organic for all 3 target queries \u2014 baseline established. Avvo, FindLaw, Justia returned 403 on direct fetch; NAP appears correct from search snippets."
+    },
+    {
+      "date": "2026-03-20",
+      "office": "savannah-ga",
+      "run_id": "e519f3e3-dcf4-40dd-92eb-209d4e66ca8d",
+      "issues_created": [],
+      "notes": "Verification heartbeat. Confirmed all 4 open Savannah NAP issues still active. ROD-17 (Yelp stale): confirmed active, Updated Dec 2025, 7 E Congress St. ROD-18 (Connect Savannah): confirmed active, old name/address, 'Update This Location' public link available. ROD-19 (Martindale): confirmed active, name shows 'Roden Love LLC', address correct. ROD-21 (lawyers.com): confirmed in search results as 'Roden + Love, LLC'. New additional findings: HG.org and Attorney Yellow Pages both show old entity name \u2014 logged as new P2 discrepancies. All 4 tasks blocked pending SEO Strategist platform access."
+    },
+    {
+      "date": "2026-03-21",
+      "office": "darien-ga",
+      "run_id": "1c70f521-feac-4b5b-8f2e-2081f30a9401",
+      "issues_created": [
+        "ROD-78",
+        "ROD-79",
+        "ROD-80",
+        "ROD-81",
+        "ROD-82",
+        "ROD-83",
+        "ROD-84"
+      ],
+      "notes": "Darien full audit. Canonical NAP: 1108 North Way, Darien, GA 31305, (912) 303-5850. Key findings: (1) Martindale shows 'Roden Love LLC' \u2014 P1 name discrepancy, same pattern as Savannah. Address/phone/website correct. (2) McIntosh Chamber listing shows wrong address: 13 St. Andrews Ct., Brunswick, GA 31520 \u2014 P0. (3) No Darien GBP confirmed indexed in Google Maps \u2014 potential missing GBP, P0. (4) No Darien Yelp listing \u2014 P2. (5) No Darien BBB listing \u2014 P2. (6) MAJOR: Brunswick office at 13 St. Andrews Ct., Brunswick GA 31520 appears across 6+ directories (LawInfo, FindLaw-Brunswick, Town Planner, Yelp-Brunswick, ReachAttorneys) and on rodenlaw.com practice area pages. This 6th office is NOT in canonical firm-data.php. Needs immediate clarification from Founding Engineer. Issue IDs to be updated once created."
+    }
+  ],
+  "citation_audits": {
+    "savannah-ga": {
+      "last_audited": "2026-03-20",
+      "directories": [
+        {
+          "name": "Avvo",
+          "url": "https://www.avvo.com/attorneys/31401-ga-eric-roden-4234565.html",
+          "listing_type": "attorney_profile",
+          "status": "UNVERIFIED",
+          "notes": "403 on direct fetch. Search snippets indicate correct NAP. Attorney profile page \u2014 no separate firm listing confirmed.",
+          "discrepancies": []
+        },
+        {
+          "name": "Martindale",
+          "url": "https://www.martindale.com/organization/roden-love-llc-300038619/savannah-georgia-300053913-f/",
+          "status": "DISCREPANCY",
+          "last_verified": "2026-03-20",
+          "notes": "Verified 2026-03-20: listing still active under old entity name. Address and phone are correct. Fix requires Martindale firm account login. Note: lawyers.com (ROD-21) is a Martindale property \u2014 may auto-update when this is corrected.",
+          "discrepancies": [
+            {
+              "field": "name",
+              "canonical": "Roden Law",
+              "found": "Roden Love LLC",
+              "severity": "P1",
+              "paperclip_issue": "ROD-19"
+            },
+            {
+              "field": "address_format",
+              "canonical": "333 Commercial Dr.",
+              "found": "333 Commercial Drive",
+              "severity": "P3",
+              "paperclip_issue": "ROD-19"
+            }
+          ]
+        },
+        {
+          "name": "FindLaw",
+          "url": "https://lawyers.findlaw.com/georgia/savannah/4965481_1/",
+          "status": "LIKELY_MATCH",
+          "notes": "403 on direct fetch. Multiple search queries confirm address 333 Commercial Dr. and phone (912) 303-5850. Firm name appears as Roden Law.",
+          "discrepancies": []
+        },
+        {
+          "name": "Justia",
+          "url": "https://lawyers.justia.com/lawyer/eric-l-roden-1499407",
+          "listing_type": "attorney_profile",
+          "status": "LIKELY_MATCH",
+          "notes": "403 on direct fetch. Search snippets show correct address and phone.",
+          "discrepancies": []
+        },
+        {
+          "name": "Super Lawyers",
+          "url": "https://profiles.superlawyers.com/georgia/savannah/lawfirm/roden-law/156f7c8d-6d1e-4c7d-b968-8a0fa4ed1398.html",
+          "status": "MATCH",
+          "notes": "Minor P3: shows 'Commercial Drive' instead of 'Commercial Dr.' \u2014 below threshold for action.",
+          "discrepancies": [
+            {
+              "field": "address_format",
+              "canonical": "333 Commercial Dr.",
+              "found": "333 Commercial Drive",
+              "severity": "P3",
+              "paperclip_issue": null
+            }
+          ]
+        },
+        {
+          "name": "Yelp (current/correct)",
+          "url": "https://www.yelp.com/biz/roden-law-savannah",
+          "status": "LIKELY_MATCH",
+          "notes": "403 on direct fetch. Search snippet: RODEN LAW at 333 Commercial Dr, Savannah, Georgia. Updated June 2025. 58 reviews, 4.9 stars.",
+          "discrepancies": []
+        },
+        {
+          "name": "Yelp (STALE DUPLICATE \u2014 action required)",
+          "url": "https://www.yelp.com/biz/roden-love-llc-savannah",
+          "status": "DISCREPANCY",
+          "notes": "Active duplicate listing with old name and old address. Last updated December 2025 \u2014 still live. Requires removal/merge.",
+          "discrepancies": [
+            {
+              "field": "name",
+              "canonical": "Roden Law",
+              "found": "RODEN + LOVE, LLC",
+              "severity": "P0",
+              "paperclip_issue": "ROD-17"
+            },
+            {
+              "field": "address",
+              "canonical": "333 Commercial Dr., Savannah, GA 31406",
+              "found": "7 E Congress St, Savannah, Georgia",
+              "severity": "P0",
+              "paperclip_issue": "ROD-17"
+            }
+          ]
+        },
+        {
+          "name": "BBB",
+          "url": null,
+          "status": "MISSING",
+          "last_verified": "2026-03-20",
+          "notes": "No Savannah listing found. BBB search for 'Roden Law' near Savannah, GA returns only the Charleston office (127 King St Ste 200, Charleston, SC 29401). Submission required at https://www.bbb.org/accreditation/apply. Action required by SEO Strategist \u2014 tracked in ROD-20.",
+          "submission_details": {
+            "submit_url": "https://www.bbb.org/accreditation/apply",
+            "canonical_name": "Roden Law",
+            "canonical_address": "333 Commercial Dr., Savannah, GA 31406",
+            "canonical_phone": "(912) 303-5850",
+            "canonical_website": "https://rodenlaw.com",
+            "category": "Lawyers / Attorneys",
+            "note": "Consider applying for BBB accreditation alongside basic listing submission for added trust signal."
+          },
+          "discrepancies": [
+            {
+              "field": "listing",
+              "canonical": "Should exist",
+              "found": "No listing",
+              "severity": "P2",
+              "paperclip_issue": "ROD-20"
+            }
+          ]
+        },
+        {
+          "name": "Google Maps / GBP",
+          "url": "https://www.google.com/maps?cid=1808156815976375344",
+          "status": "MATCH",
+          "notes": "GBP verified and active at 333 Commercial Dr, Savannah, GA 31406. 5-star average. Review count ~38-58 (varies by aggregator).",
+          "discrepancies": []
+        },
+        {
+          "name": "Connect Savannah (STALE \u2014 action required)",
+          "url": "https://community.connectsavannah.com/location/roden-love-llc-3345152",
+          "status": "DISCREPANCY",
+          "last_verified": "2026-03-20",
+          "notes": "Verified live on 2026-03-20. Shows old entity name, old vacated Congress St address, and old rodenlovelaw.com domain. 'Update This Location' public link available.",
+          "discrepancies": [
+            {
+              "field": "name",
+              "canonical": "Roden Law",
+              "found": "Roden + Love, LLC",
+              "severity": "P0",
+              "paperclip_issue": "ROD-18"
+            },
+            {
+              "field": "address",
+              "canonical": "333 Commercial Dr., Savannah, GA 31406",
+              "found": "E Congress St #706, Savannah, GA 31401",
+              "severity": "P0",
+              "paperclip_issue": "ROD-18"
+            },
+            {
+              "field": "website",
+              "canonical": "https://rodenlaw.com",
+              "found": "www.rodenlovelaw.com",
+              "severity": "P1",
+              "paperclip_issue": "ROD-18",
+              "notes": "Old domain discovered during 2026-03-20 verification. Fix alongside name/address."
+            }
+          ]
+        },
+        {
+          "name": "lawyers.com",
+          "url": "https://www.lawyers.com/savannah/georgia/roden-love-llc-159124119-f/",
+          "status": "DISCREPANCY",
+          "last_verified": "2026-03-20",
+          "notes": "Martindale-Hubbell property. Confirmed active in search results as 'Roden + Love, LLC'. Dependent on Martindale fix (ROD-19) \u2014 may auto-sync within 2-4 weeks of Martindale name update. If no auto-sync after that window, requires separate lawyers.com login to update display name. Blocked on ROD-19 resolution.",
+          "discrepancies": [
+            {
+              "field": "name",
+              "canonical": "Roden Law",
+              "found": "Roden + Love, LLC",
+              "severity": "P1",
+              "paperclip_issue": "ROD-21"
+            }
+          ]
+        },
+        {
+          "name": "HG.org",
+          "url": "https://www.hg.org/attorney/roden-love-llc/108574",
+          "status": "DISCREPANCY",
+          "notes": "Found in search results showing old entity name. Direct fetch returned ECONNREFUSED. Confirmed via Google search snippet: listed as 'Roden + Love, LLC'. Severity P2 \u2014 name-only discrepancy, address not confirmed from snippet.",
+          "discrepancies": [
+            {
+              "field": "name",
+              "canonical": "Roden Law",
+              "found": "Roden + Love, LLC",
+              "severity": "P2",
+              "paperclip_issue": "ROD-53"
+            }
+          ]
+        },
+        {
+          "name": "Attorney Yellow Pages",
+          "url": "https://www.attorneyyellowpages.com/personal-injury/roden-love-llc/",
+          "status": "DISCREPANCY",
+          "notes": "Found in search results. Listed as 'Roden Love LLC'. Address and phone not confirmed. Low-authority directory but contributes to old-name citation footprint.",
+          "discrepancies": [
+            {
+              "field": "name",
+              "canonical": "Roden Law",
+              "found": "Roden Love LLC",
+              "severity": "P2",
+              "paperclip_issue": "ROD-54"
+            }
+          ]
+        }
+      ]
+    },
+    "darien-ga": {
+      "last_audited": "2026-03-21",
+      "directories": [
+        {
+          "name": "Martindale",
+          "url": "https://www.martindale.com/organization/roden-love-llc-300038619/darien-georgia-300053915-f/",
+          "status": "DISCREPANCY",
+          "last_verified": "2026-03-21",
+          "notes": "Listing active under old entity name. Address (1108 North Way, Darien, GA 31305), phone (912) 303-5850, and website (rodenlaw.com) are correct. Same root issue as Savannah ROD-19 \u2014 likely part of the same Martindale firm account.",
+          "discrepancies": [
+            {
+              "field": "name",
+              "canonical": "Roden Law",
+              "found": "Roden Love LLC",
+              "severity": "P1",
+              "paperclip_issue": "ROD-81"
+            }
+          ]
+        },
+        {
+          "name": "McIntosh County Chamber of Commerce",
+          "url": "https://business.darienmcintoshchamber.com/business-directory/Details/roden-law-3146027",
+          "status": "DISCREPANCY",
+          "last_verified": "2026-03-21",
+          "notes": "Chamber listing shows Brunswick address instead of Darien. Name and phone correct. Critical P0 \u2014 this is the local chamber for the Darien office and it points to a different city/address.",
+          "discrepancies": [
+            {
+              "field": "address",
+              "canonical": "1108 North Way, Darien, GA 31305",
+              "found": "13 St. Andrews Court, Brunswick, GA 31520",
+              "severity": "P0",
+              "paperclip_issue": "ROD-79"
+            }
+          ]
+        },
+        {
+          "name": "Google Maps / GBP",
+          "url": null,
+          "status": "MISSING",
+          "last_verified": "2026-03-21",
+          "notes": "No indexed Darien GBP found in Google Maps searches. Only Savannah CID (1808156815976375344) returned. Without a GBP, Roden Law has no local pack presence for Darien queries. Must verify directly in GBP dashboard \u2014 may exist but be unverified/suppressed.",
+          "discrepancies": [
+            {
+              "field": "listing",
+              "canonical": "Should exist for 1108 North Way, Darien, GA 31305",
+              "found": "No indexed Darien GBP",
+              "severity": "P0",
+              "paperclip_issue": "ROD-80"
+            }
+          ]
+        },
+        {
+          "name": "Yelp",
+          "url": null,
+          "status": "MISSING",
+          "last_verified": "2026-03-21",
+          "notes": "No Darien-specific Yelp listing found. A Brunswick Yelp listing exists at https://www.yelp.com/biz/roden-law-brunswick (Updated March 2026). Brunswick is a separate unlisted office. Darien listing is absent.",
+          "discrepancies": [
+            {
+              "field": "listing",
+              "canonical": "Should exist",
+              "found": "No Darien listing",
+              "severity": "P2",
+              "paperclip_issue": "ROD-83"
+            }
+          ]
+        },
+        {
+          "name": "BBB",
+          "url": null,
+          "status": "MISSING",
+          "last_verified": "2026-03-21",
+          "notes": "No Darien listing found. Only Charleston BBB profile exists (https://www.bbb.org/us/sc/charleston/profile/legal-malpractice-attorney/roden-law-0663-34348463).",
+          "discrepancies": [
+            {
+              "field": "listing",
+              "canonical": "Should exist",
+              "found": "No listing",
+              "severity": "P2",
+              "paperclip_issue": "ROD-84"
+            }
+          ]
+        },
+        {
+          "name": "Super Lawyers",
+          "url": null,
+          "status": "MISSING",
+          "last_verified": "2026-03-21",
+          "notes": "No Darien firm listing found. Only Savannah profile exists (https://profiles.superlawyers.com/georgia/savannah/lawfirm/roden-law/156f7c8d-6d1e-4c7d-b968-8a0fa4ed1398.html).",
+          "discrepancies": []
+        },
+        {
+          "name": "Avvo",
+          "url": null,
+          "status": "UNVERIFIED",
+          "last_verified": "2026-03-21",
+          "notes": "No Darien-specific Avvo listing found in search results. Search returned Avvo GA lawyer directory pages and attorney-level profiles (Savannah). Could not confirm a firm listing for Darien.",
+          "discrepancies": []
+        },
+        {
+          "name": "FindLaw",
+          "url": "https://lawyers.findlaw.com/georgia/brunswick/5174281_1/",
+          "status": "NOTE",
+          "last_verified": "2026-03-21",
+          "notes": "FindLaw has a Brunswick (not Darien) listing for Roden Law at 13 St. Andrews Ct., Brunswick, GA 31520. No separate Darien FindLaw listing found. This is part of the Brunswick unlisted office issue \u2014 see brunswick_office_discovery.",
+          "discrepancies": []
+        },
+        {
+          "name": "Justia",
+          "url": "https://lawyers.justia.com/lawyer/eric-l-roden-1499407",
+          "status": "UNVERIFIED",
+          "last_verified": "2026-03-21",
+          "notes": "Only attorney-level profile (Savannah) found. No Darien firm listing confirmed on Justia.",
+          "discrepancies": []
+        }
+      ],
+      "brunswick_office_discovery": {
+        "address": "13 St. Andrews Ct., Brunswick, GA 31520",
+        "phone": "(912) 303-5850",
+        "confirmed_in_directories": [
+          "LawInfo",
+          "FindLaw",
+          "Town Planner",
+          "Yelp (Updated March 2026)",
+          "ReachAttorneys",
+          "McIntosh Chamber (erroneously applied to Darien listing)"
+        ],
+        "firm_website_pages": [
+          "https://rodenlaw.com/practice-areas/brunswick/personal-injury-lawyer/"
+        ],
+        "status": "UNLISTED_IN_FIRM_DATA",
+        "notes": "Brunswick office not in canonical firm-data.php. Needs clarification: is this a 6th active office, a former office, or a service area address? Until clarified, directories listing it with Darien as the city (e.g. McIntosh Chamber) create NAP confusion.",
+        "paperclip_issue": "ROD-82"
+      }
+    },
+    "charleston-sc": {
+      "last_audited": null,
+      "directories": [],
+      "notes": "BBB listing observed during Savannah audit: 127 King St Ste 200, Charleston, SC 29401, (843) 790-8999 \u2014 appears correct. Confirm on full Charleston audit."
+    },
+    "columbia-sc": {
+      "last_audited": null,
+      "directories": []
+    },
+    "myrtle-beach-sc": {
+      "last_audited": null,
+      "directories": []
+    }
+  },
+  "local_pack_positions": {
+    "savannah-ga": [
+      {
+        "query": "personal injury lawyer Savannah GA",
+        "position": null,
+        "in_pack": false,
+        "checked_date": "2026-03-20",
+        "notes": "Not visible in top 10 organic results. Baseline established \u2014 no prior data.",
+        "competitors_visible": [
+          "Farah & Farah",
+          "Spiva Law Group",
+          "Bowen Painter Injury Lawyers",
+          "T. Madden & Associates",
+          "Owens & Mulherin",
+          "Cook & Tolley"
+        ]
+      },
+      {
+        "query": "car accident attorney Savannah GA",
+        "position": null,
+        "in_pack": false,
+        "checked_date": "2026-03-20",
+        "notes": "Not visible in top 10 organic results.",
+        "competitors_visible": [
+          "Farah & Farah",
+          "George Sink P.A.",
+          "Lasky Justus Law",
+          "The Brown Firm",
+          "Bowen Painter Injury Lawyers"
+        ]
+      },
+      {
+        "query": "Savannah GA injury lawyer",
+        "position": null,
+        "in_pack": false,
+        "checked_date": "2026-03-20",
+        "notes": "Not visible in top 10 organic results.",
+        "competitors_visible": [
+          "Jamie Casino Injury Attorneys",
+          "Owens & Mulherin",
+          "Harris Lowry Manton LLP",
+          "Spiva Law Group",
+          "Farah & Farah"
+        ]
+      }
+    ],
+    "darien-ga": [
+      {
+        "query": "personal injury lawyer Darien GA",
+        "position": null,
+        "in_pack": false,
+        "checked_date": "2026-03-21",
+        "notes": "No Roden Law local pack presence. No Darien GBP confirmed. Competitors visible: Coppage Law Firm, Forsyth Law, Balbo & Gregg (Hinesville). Without a verified Darien GBP, local pack eligibility is zero.",
+        "competitors_visible": [
+          "Coppage Law Firm",
+          "Forsyth Law LLC",
+          "Balbo & Gregg"
+        ]
+      },
+      {
+        "query": "car accident attorney Darien GA",
+        "position": null,
+        "in_pack": false,
+        "checked_date": "2026-03-21",
+        "notes": "No Roden Law in local pack. Competitors: Montlick, Georgia Auto Law, Kenneth Nugent.",
+        "competitors_visible": [
+          "Montlick Injury Attorneys",
+          "Georgia Auto Law",
+          "Kenneth S. Nugent PC"
+        ]
+      },
+      {
+        "query": "Darien GA injury lawyer",
+        "position": null,
+        "in_pack": false,
+        "checked_date": "2026-03-21",
+        "notes": "No Roden Law in local pack. darien-attorneys.com (criminal) and Coppage visible.",
+        "competitors_visible": [
+          "Coppage Law Firm",
+          "darien-attorneys.com"
+        ]
+      }
+    ],
+    "charleston-sc": [],
+    "columbia-sc": [],
+    "myrtle-beach-sc": []
+  },
+  "review_data": {
+    "savannah-ga": {
+      "google": {
+        "count": 38,
+        "rating": 5.0,
+        "last_review_date": null,
+        "last_checked": "2026-03-20",
+        "notes": "Count from aggregator (Birdeye page 1). GBP CID: 1808156815976375344. Direct GBP access not available."
+      },
+      "yelp": {
+        "count": 58,
+        "rating": 4.9,
+        "last_checked": "2026-03-20",
+        "listing_url": "https://www.yelp.com/biz/roden-law-savannah",
+        "notes": "From search snippet. Direct page returned 403."
+      }
+    },
+    "darien-ga": {},
+    "charleston-sc": {},
+    "columbia-sc": {},
+    "myrtle-beach-sc": {}
+  },
+  "directories": {
+    "savannah-ga": [],
+    "darien-ga": [],
+    "charleston-sc": [],
+    "columbia-sc": [],
+    "myrtle-beach-sc": []
+  },
+  "discrepancies": [],
+  "last_audit_by_office": {
+    "savannah-ga": "2026-03-20",
+    "darien-ga": "2026-03-21",
+    "charleston-sc": null,
+    "columbia-sc": null,
+    "myrtle-beach-sc": null
+  }
+}
