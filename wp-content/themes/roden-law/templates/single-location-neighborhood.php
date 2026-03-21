@@ -51,7 +51,7 @@ $state_key    = $office['state'];
 $jurisdiction = isset( $firm['jurisdiction'][ $state_key ] ) ? $firm['jurisdiction'][ $state_key ] : null;
 $stats        = $firm['trust_stats'];
 
-// Meta title / SEO fields from Yoast/RankMath are handled by those plugins.
+// Meta title / SEO fields from Yoast are handled by that plugin if active.
 // H1 from post meta or auto-generated.
 $h1 = get_post_meta( $post_id, '_roden_neighborhood_h1', true );
 if ( ! $h1 ) {

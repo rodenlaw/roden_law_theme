@@ -62,30 +62,7 @@ function roden_theme_setup() {
 }
 
 /* ==========================================================================
-   3. REDIRECTS — Old Rank Math Location URLs → New Hierarchical URLs
-   ========================================================================== */
-
-add_action( 'template_redirect', 'roden_legacy_location_redirects', 1 );
-function roden_legacy_location_redirects() {
-    if ( ! is_singular( 'rank_math_locations' ) ) {
-        return;
-    }
-
-    $redirects = array(
-        'savannah-georgia'                    => '/locations/georgia/savannah/',
-        'charleston-south-carolina-location'  => '/locations/south-carolina/charleston/',
-    );
-
-    $slug = get_post_field( 'post_name', get_the_ID() );
-
-    if ( isset( $redirects[ $slug ] ) ) {
-        wp_redirect( home_url( $redirects[ $slug ] ), 301 );
-        exit;
-    }
-}
-
-/* ==========================================================================
-   3a-2. OLD-FORMAT PAGE REDIRECTS — Legacy pages → canonical URLs
+   3. OLD-FORMAT PAGE REDIRECTS — Legacy pages → canonical URLs
    ========================================================================== */
 
 add_action( 'template_redirect', 'roden_old_page_redirects', 1 );
@@ -431,7 +408,7 @@ function roden_homepage_meta_description() {
         return;
     }
     // Skip if an SEO plugin already outputs a meta description.
-    if ( defined( 'WPSEO_VERSION' ) || class_exists( 'RankMath' ) ) {
+    if ( defined( 'WPSEO_VERSION' ) ) {
         return;
     }
     echo '<meta name="description" content="Roden Law is a personal injury law firm with offices in Charleston, Savannah, Columbia, Myrtle Beach, and Darien. Over $250 million recovered for injured clients. Free consultation. No fees unless we win. Call 1-844-RESULTS.">' . "\n";
