@@ -78,9 +78,9 @@ function roden_flush_rank_math_rewrites() {
     set_transient( 'roden_rewrites_flushed_v2', 1, YEAR_IN_SECONDS );
 }
 
-/* Force WP core sitemap rendering before Polylang or redirect_canonical interfere.
-   Polylang strips the sitemap query var between parse_request and template_redirect,
-   so we intercept at template_redirect priority 0 and manually trigger rendering. */
+/* Force WP core sitemap rendering. Hooks into both init (early, before any
+   template processing) and template_redirect (fallback). */
+add_action( 'init', 'roden_force_sitemap_rendering', 999 );
 add_action( 'template_redirect', 'roden_force_sitemap_rendering', 0 );
 function roden_force_sitemap_rendering() {
     $uri = trim( parse_url( $_SERVER['REQUEST_URI'], PHP_URL_PATH ), '/' );
