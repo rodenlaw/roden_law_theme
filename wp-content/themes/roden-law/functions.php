@@ -94,7 +94,19 @@ function roden_old_page_redirects() {
 }
 
 /* ==========================================================================
-   3b. STAFF — Redirect single pages & exclude from sitemap
+   3b. PREVENT PERMALINK MANAGER FROM REDIRECTING SITEMAPS
+   ========================================================================== */
+
+add_filter( 'permalink_manager_filter_redirect', 'roden_allow_sitemap_urls', 10, 3 );
+function roden_allow_sitemap_urls( $redirect_url, $old_url, $query ) {
+    if ( isset( $_SERVER['REQUEST_URI'] ) && strpos( $_SERVER['REQUEST_URI'], 'sitemap' ) !== false ) {
+        return false;
+    }
+    return $redirect_url;
+}
+
+/* ==========================================================================
+   3c. STAFF — Redirect single pages & exclude from sitemap
    ========================================================================== */
 
 add_filter( 'wp_sitemaps_posts_query_args', 'roden_exclude_staff_from_sitemap', 10, 2 );
