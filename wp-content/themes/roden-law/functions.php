@@ -116,7 +116,6 @@ function roden_force_sitemap_rendering() {
         $sitemap_list = $server->index->get_sitemap_list();
         header( 'Content-Type: application/xml; charset=UTF-8' );
         header( 'X-Robots-Tag: noindex, follow' );
-        header( 'X-Roden-Sitemap: index' );
         echo $server->renderer->get_sitemap_index_xml( $sitemap_list );
         exit;
     }
@@ -135,8 +134,7 @@ function roden_force_sitemap_rendering() {
             if ( ! empty( $url_list ) ) {
                 header( 'Content-Type: application/xml; charset=UTF-8' );
                 header( 'X-Robots-Tag: noindex, follow' );
-                header( 'X-Roden-Sitemap: sub' );
-                echo $server->renderer->get_sitemap_xml( $url_list );
+                    echo $server->renderer->get_sitemap_xml( $url_list );
                 exit;
             }
         }
@@ -150,8 +148,7 @@ function roden_force_sitemap_rendering() {
             if ( ! empty( $url_list ) ) {
                 header( 'Content-Type: application/xml; charset=UTF-8' );
                 header( 'X-Robots-Tag: noindex, follow' );
-                header( 'X-Roden-Sitemap: sub' );
-                echo $server->renderer->get_sitemap_xml( $url_list );
+                    echo $server->renderer->get_sitemap_xml( $url_list );
                 exit;
             }
         }
