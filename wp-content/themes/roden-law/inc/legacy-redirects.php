@@ -5,7 +5,7 @@
  * 301 redirects for old practice-area CPT pages → new practice_area CPT pages.
  * Generated March 2026 from dev site audit.
  *
- * TOTAL: 122 redirects across 7 categories
+ * TOTAL: 135+ redirects across 10 categories + 4 pattern-based rules
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit;
@@ -63,6 +63,35 @@ function roden_legacy_content_redirects() {
         }
 
         wp_redirect( home_url( $dest ), 301 );
+        exit;
+    }
+
+    // ── Pattern-based redirects ──────────────────────────────────────────
+    // These handle entire URL prefixes rather than individual pages.
+
+    // /case-result/[slug]/ → /case-results/[slug]/ (old singular → new plural CPT slug)
+    if ( preg_match( '#^/case-result/([^/]+)/?$#', $clean_path, $m ) ) {
+        wp_redirect( home_url( '/case-results/' . $m[1] . '/' ), 301 );
+        exit;
+    }
+
+    // /testimonial/[slug]/ → /testimonials/[slug]/ (old singular → new plural CPT slug)
+    if ( preg_match( '#^/testimonial/([^/]+)/?$#', $clean_path, $m ) ) {
+        wp_redirect( home_url( '/testimonials/' . $m[1] . '/' ), 301 );
+        exit;
+    }
+
+    // /staff/[name]/ → /attorneys/ (old staff CPT pages)
+    if ( preg_match( '#^/staff/[^/]+/?$#', $clean_path ) ) {
+        wp_redirect( home_url( '/attorneys/' ), 301 );
+        exit;
+    }
+
+    // /class-action/[slug]/ → 410 Gone (discontinued practice area)
+    if ( preg_match( '#^/class-action/[^/]+/?$#', $clean_path ) ) {
+        status_header( 410 );
+        nocache_headers();
+        echo '<h1>410 Gone</h1><p>This page has been permanently removed.</p>';
         exit;
     }
 }
@@ -271,6 +300,32 @@ function roden_get_legacy_redirect_map() {
         // already live at root. Redirects would break working URLs.
         // Re-enable after changing permalink structure to /blog/%postname%/.
         // ══════════════════════════════════════════════════════════════
+
+        // ══════════════════════════════════════════════════════════════
+        // CATEGORY 8: Old staff / attorney URLs (26+ pages)
+        // Old CPT used /staff/[name]/ and /who-we-are/attorneys/[name]/
+        // ══════════════════════════════════════════════════════════════
+
+        '/who-we-are/attorneys/allison-marani/'   => '/attorneys/',
+        '/who-we-are/attorneys/j-michael-parsons/' => '/attorneys/',
+        '/who-we-are/attorneys/joseph-padgett/'   => '/attorneys/',
+        '/who-we-are/attorneys/troy-a-williams/'  => '/attorneys/',
+
+        // ══════════════════════════════════════════════════════════════
+        // CATEGORY 9: Old city practice area index pages
+        // ══════════════════════════════════════════════════════════════
+
+        '/savannah/practice-areas/'   => '/practice-areas/',
+        '/charleston/practice-areas/' => '/practice-areas/',
+        '/brunswick/practice-areas/'  => '/practice-areas/',
+
+        // ══════════════════════════════════════════════════════════════
+        // CATEGORY 10: Misc old pages
+        // ══════════════════════════════════════════════════════════════
+
+        '/areas-we-serve/'     => '/locations/',
+        '/es/'                 => '/',
+        '/class-action-lawyers/' => '/practice-areas/',
 
     );
 }
