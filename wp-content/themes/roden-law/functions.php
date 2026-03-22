@@ -142,10 +142,11 @@ function roden_staff_redirect() {
    3c-2. DISABLE USERS SITEMAP + LEGACY CPT SITEMAPS
    ========================================================================== */
 
-// Remove the users sitemap entirely (exposes author accounts).
-add_filter( 'wp_sitemaps_add_provider', 'roden_remove_users_sitemap', 10, 2 );
-function roden_remove_users_sitemap( $provider, $name ) {
-    if ( 'users' === $name ) {
+// Remove users and taxonomies sitemaps entirely.
+// Users: exposes author accounts. Taxonomies: post_tag generates 348 thin URLs.
+add_filter( 'wp_sitemaps_add_provider', 'roden_remove_sitemap_providers', 10, 2 );
+function roden_remove_sitemap_providers( $provider, $name ) {
+    if ( 'users' === $name || 'taxonomies' === $name ) {
         return false;
     }
     return $provider;
@@ -171,6 +172,7 @@ function roden_exclude_toxic_pages_from_sitemap( $args, $post_type ) {
             'gracias-ppc-2',
             'gracias-ppc-3',
             'thank-you',
+            'thank-you-ppc-2',
             'test',
             'privacy-policy-2',
             'car-accident-lawyer',
@@ -178,6 +180,9 @@ function roden_exclude_toxic_pages_from_sitemap( $args, $post_type ) {
             'columbia-truck-accident-lawyer',
             'charleston-car-accident-lawyer',
             'south-carolina-car-accident-lawyer',
+            'brunswick',
+            'savannah',
+            'charleston',
         );
 
         // Get post IDs by slug to exclude.
