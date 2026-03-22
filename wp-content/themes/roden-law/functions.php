@@ -78,6 +78,39 @@ function roden_flush_rank_math_rewrites() {
     set_transient( 'roden_rewrites_flushed_v2', 1, YEAR_IN_SECONDS );
 }
 
+/* Force WP core sitemap rendering before Polylang or redirect_canonical interfere.
+   Polylang strips the sitemap query var between parse_request and template_redirect,
+   so we intercept at template_redirect priority 0 and manually trigger rendering. */
+add_action( 'template_redirect', 'roden_force_sitemap_rendering', 0 );
+function roden_force_sitemap_rendering() {
+    $uri = trim( parse_url( $_SERVER['REQUEST_URI'], PHP_URL_PATH ), '/' );
+
+    if ( strpos( $uri, 'wp-sitemap' ) !== 0 ) {
+        return;
+    }
+
+    // Parse the URI to determine sitemap query vars
+    if ( $uri === 'wp-sitemap.xml' ) {
+        set_query_var( 'sitemap', 'index' );
+    } elseif ( preg_match( '#^wp-sitemap-([a-z]+?)-([a-z\d_-]+?)-(\d+?)\.xml$#', $uri, $m ) ) {
+        set_query_var( 'sitemap', $m[1] );
+        set_query_var( 'sitemap-subtype', $m[2] );
+        set_query_var( 'paged', (int) $m[3] );
+    } elseif ( preg_match( '#^wp-sitemap-([a-z]+?)-(\d+?)\.xml$#', $uri, $m ) ) {
+        set_query_var( 'sitemap', $m[1] );
+        set_query_var( 'paged', (int) $m[2] );
+    } elseif ( $uri === 'wp-sitemap.xsl' ) {
+        set_query_var( 'sitemap-stylesheet', 'sitemap' );
+    } elseif ( $uri === 'wp-sitemap-index.xsl' ) {
+        set_query_var( 'sitemap-stylesheet', 'index' );
+    } else {
+        return;
+    }
+
+    // Trigger WP core sitemap rendering
+    wp_sitemaps_get_server()->render_sitemaps();
+}
+
 /* Prevent redirect_canonical from hijacking sitemap requests. */
 add_filter( 'redirect_canonical', 'roden_prevent_sitemap_canonical_redirect', 1 );
 function roden_prevent_sitemap_canonical_redirect( $redirect_url ) {
@@ -85,29 +118,6 @@ function roden_prevent_sitemap_canonical_redirect( $redirect_url ) {
         return false;
     }
     return $redirect_url;
-}
-
-/* Ensure Polylang does not strip the sitemap query var during request parsing. */
-add_filter( 'request', 'roden_preserve_sitemap_query_var', 1 );
-function roden_preserve_sitemap_query_var( $query_vars ) {
-    if ( strpos( $_SERVER['REQUEST_URI'], 'wp-sitemap' ) === false ) {
-        return $query_vars;
-    }
-    // If the sitemap query var was stripped, re-add it
-    if ( empty( $query_vars['sitemap'] ) ) {
-        $uri = trim( $_SERVER['REQUEST_URI'], '/' );
-        if ( $uri === 'wp-sitemap.xml' ) {
-            $query_vars['sitemap'] = 'index';
-        } elseif ( preg_match( '#^wp-sitemap-([a-z]+?)-([a-z\d_-]+?)-(\d+?)\.xml$#', $uri, $m ) ) {
-            $query_vars['sitemap']         = $m[1];
-            $query_vars['sitemap-subtype'] = $m[2];
-            $query_vars['paged']           = (int) $m[3];
-        } elseif ( preg_match( '#^wp-sitemap-([a-z]+?)-(\d+?)\.xml$#', $uri, $m ) ) {
-            $query_vars['sitemap'] = $m[1];
-            $query_vars['paged']   = (int) $m[2];
-        }
-    }
-    return $query_vars;
 }
 
 /* ==========================================================================
