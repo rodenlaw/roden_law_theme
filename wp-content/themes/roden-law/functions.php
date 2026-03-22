@@ -62,109 +62,6 @@ function roden_theme_setup() {
 }
 
 /* ==========================================================================
-   2b. ENSURE WP CORE SITEMAPS ARE ENABLED
-   Rank Math may have disabled them; force them back on after uninstall.
-   ========================================================================== */
-
-add_filter( 'wp_sitemaps_enabled', '__return_true', 99 );
-
-/* One-time flush to purge leftover Rank Math rewrite rules */
-add_action( 'init', 'roden_flush_rank_math_rewrites', 0 );
-function roden_flush_rank_math_rewrites() {
-    if ( get_transient( 'roden_rewrites_flushed_v2' ) ) {
-        return;
-    }
-    flush_rewrite_rules();
-    set_transient( 'roden_rewrites_flushed_v2', 1, YEAR_IN_SECONDS );
-}
-
-/* Serve WP core sitemaps early at wp_loaded, before template processing.
-   This avoids interference from redirect_canonical, Polylang, and Edge caching.
-   WP Engine rewrites /wp-sitemap.xml to /index.php?sitemap=wp&sitemap_n=
-   so we detect sitemaps via both URI path and query string. */
-add_action( 'wp_loaded', 'roden_force_sitemap_rendering', 0 );
-function roden_force_sitemap_rendering() {
-    $uri = trim( parse_url( $_SERVER['REQUEST_URI'], PHP_URL_PATH ), '/' );
-
-    // Detect sitemap request via URI path or WP Engine's rewritten query string
-    $is_sitemap = ( strpos( $uri, 'wp-sitemap' ) === 0 );
-    if ( ! $is_sitemap && isset( $_GET['sitemap'] ) ) {
-        $is_sitemap = true;
-        // Reconstruct the URI from WP Engine's query params
-        $sitemap_val = sanitize_text_field( $_GET['sitemap'] );
-        if ( $sitemap_val === 'wp' || $sitemap_val === 'index' ) {
-            $uri = 'wp-sitemap.xml';
-        }
-    }
-
-    if ( ! $is_sitemap ) {
-        return;
-    }
-
-    // Don't run in admin or CLI
-    if ( is_admin() || ( defined( 'WP_CLI' ) && WP_CLI ) ) {
-        return;
-    }
-
-    $server = wp_sitemaps_get_server();
-    if ( ! $server->sitemaps_enabled() ) {
-        return;
-    }
-
-    // Sitemap index
-    if ( $uri === 'wp-sitemap.xml' ) {
-        $sitemap_list = $server->index->get_sitemap_list();
-        header( 'Content-Type: application/xml; charset=UTF-8' );
-        header( 'X-Robots-Tag: noindex, follow' );
-        echo $server->renderer->get_sitemap_index_xml( $sitemap_list );
-        exit;
-    }
-
-    // Stylesheets
-    if ( $uri === 'wp-sitemap.xsl' || $uri === 'wp-sitemap-index.xsl' ) {
-        // Let WP core handle stylesheets via normal flow
-        return;
-    }
-
-    // Sub-sitemaps: /wp-sitemap-posts-post-1.xml etc.
-    if ( preg_match( '#^wp-sitemap-([a-z]+?)-([a-z\d_-]+?)-(\d+?)\.xml$#', $uri, $m ) ) {
-        $provider = $server->registry->get_provider( $m[1] );
-        if ( $provider ) {
-            $url_list = $provider->get_url_list( (int) $m[3], $m[2] );
-            if ( ! empty( $url_list ) ) {
-                header( 'Content-Type: application/xml; charset=UTF-8' );
-                header( 'X-Robots-Tag: noindex, follow' );
-                    echo $server->renderer->get_sitemap_xml( $url_list );
-                exit;
-            }
-        }
-    }
-
-    // Provider sitemaps without subtype: /wp-sitemap-users-1.xml etc.
-    if ( preg_match( '#^wp-sitemap-([a-z]+?)-(\d+?)\.xml$#', $uri, $m ) ) {
-        $provider = $server->registry->get_provider( $m[1] );
-        if ( $provider ) {
-            $url_list = $provider->get_url_list( (int) $m[2] );
-            if ( ! empty( $url_list ) ) {
-                header( 'Content-Type: application/xml; charset=UTF-8' );
-                header( 'X-Robots-Tag: noindex, follow' );
-                    echo $server->renderer->get_sitemap_xml( $url_list );
-                exit;
-            }
-        }
-    }
-}
-
-/* Prevent redirect_canonical from hijacking sitemap requests. */
-add_filter( 'redirect_canonical', 'roden_prevent_sitemap_canonical_redirect', 1 );
-function roden_prevent_sitemap_canonical_redirect( $redirect_url ) {
-    if ( get_query_var( 'sitemap' ) || strpos( $_SERVER['REQUEST_URI'], 'wp-sitemap' ) !== false ) {
-        return false;
-    }
-    return $redirect_url;
-}
-
-/* ==========================================================================
    3. OLD-FORMAT PAGE REDIRECTS — Legacy pages → canonical URLs
    ========================================================================== */
 
@@ -209,62 +106,7 @@ function roden_exclude_staff_from_sitemap( $args, $post_type ) {
             array( 'key' => '_roden_team_role', 'compare' => 'NOT EXISTS' ),
         );
     }
-    // Exclude junk/legacy/redirect pages from sitemap by slug
-    if ( 'page' === $post_type ) {
-        $exclude_slugs = array(
-            'test',
-            'thank-you-ppc-2',
-            'gracias-ppc-2',
-            'gracias-ppc-3',
-            'privacy-policy-2',
-            'car-accident-lawyer',
-            'south-carolina-truck-accident-lawyer',
-            'columbia-truck-accident-lawyer',
-            'charleston-car-accident-lawyer',
-            'south-carolina-car-accident-lawyer',
-            'savannah',
-            'brunswick',
-            'charleston',
-            'class-actions',
-        );
-        $exclude_pages = get_posts( array(
-            'post_type'      => 'page',
-            'post_status'    => 'publish',
-            'post_name__in'  => $exclude_slugs,
-            'fields'         => 'ids',
-            'posts_per_page' => -1,
-        ) );
-        if ( $exclude_pages ) {
-            $args['post__not_in'] = isset( $args['post__not_in'] )
-                ? array_merge( $args['post__not_in'], $exclude_pages )
-                : $exclude_pages;
-        }
-    }
     return $args;
-}
-
-/* Remove unwanted CPTs from sitemap entirely */
-add_filter( 'wp_sitemaps_post_types', 'roden_remove_cpts_from_sitemap' );
-function roden_remove_cpts_from_sitemap( $post_types ) {
-    unset( $post_types['staff'] );
-    unset( $post_types['case-result'] );
-    return $post_types;
-}
-
-/* Remove thin-content taxonomy archives from sitemap */
-add_filter( 'wp_sitemaps_taxonomies', 'roden_remove_taxonomies_from_sitemap' );
-function roden_remove_taxonomies_from_sitemap( $taxonomies ) {
-    unset( $taxonomies['post_tag'] );
-    return $taxonomies;
-}
-
-/* Remove users/author archives from sitemap */
-add_filter( 'wp_sitemaps_add_provider', 'roden_remove_users_sitemap', 10, 2 );
-function roden_remove_users_sitemap( $provider, $name ) {
-    if ( 'users' === $name ) {
-        return false;
-    }
-    return $provider;
 }
 
 add_action( 'template_redirect', 'roden_staff_redirect' );
@@ -300,30 +142,13 @@ function roden_legacy_attorney_redirect() {
 }
 
 /* ==========================================================================
-   3d. SITEMAP REDIRECT — /sitemap.xml → /wp-sitemap.xml
-   ========================================================================== */
-
-add_action( 'template_redirect', 'roden_redirect_sitemap_xml', 1 );
-function roden_redirect_sitemap_xml() {
-    if ( '/sitemap.xml' === $_SERVER['REQUEST_URI'] ) {
-        wp_redirect( home_url( '/wp-sitemap.xml' ), 301 );
-        exit;
-    }
-}
-
-/* ==========================================================================
-   3e. 404 REDIRECT — Send most 404s to the homepage
+   3d. 404 REDIRECT — Send all 404s to the homepage
    ========================================================================== */
 
 add_action( 'template_redirect', 'roden_redirect_404_to_home' );
 function roden_redirect_404_to_home() {
     if ( is_404() ) {
-        $uri = $_SERVER['REQUEST_URI'];
-        // Don't redirect sitemap, feed, or API requests — let them 404 properly
-        if ( preg_match( '#(sitemap|\.xml|/feed/|/wp-json/)#i', $uri ) ) {
-            return;
-        }
-        wp_redirect( home_url( '/' ), 301 );
+        wp_redirect( home_url( '/' ), 302 );
         exit;
     }
 }
