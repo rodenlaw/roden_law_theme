@@ -12,6 +12,16 @@
 
 defined( 'ABSPATH' ) || exit;
 
+// ── SITEMAP REDIRECT — must run before ANY plugin can intercept ─────────
+// Redirect /wp-sitemap*.xml (no trailing slash) → trailing-slash version.
+// Raw PHP header() because wp_redirect() fires too late; Permalink Manager
+// hijacks the request before WordPress hooks like init/template_redirect.
+if ( isset( $_SERVER['REQUEST_URI'] ) && preg_match( '#^/(wp-sitemap[^?]*\.xml)$#', $_SERVER['REQUEST_URI'], $_sm ) ) {
+    header( 'Location: ' . home_url( '/' . $_sm[1] . '/' ), true, 301 );
+    exit;
+}
+unset( $_sm );
+
 /* ==========================================================================
    1. LOAD INC/ MODULES
    ========================================================================== */
@@ -100,23 +110,8 @@ function roden_old_page_redirects() {
 // Force-enable WP core sitemaps (removed SEO plugins may have left them disabled).
 add_filter( 'wp_sitemaps_enabled', '__return_true', 99 );
 
-// Redirect non-trailing-slash sitemap URLs to trailing-slash versions.
-// Google has indexed /wp-sitemap.xml/ (with slash) and it works correctly.
-// The non-slash version gets hijacked by Permalink Manager + Media Library Plus.
-// Hooking into 'init' ensures this runs before any plugin can interfere.
-add_action( 'init', 'roden_redirect_sitemaps_to_trailing_slash', 0 );
-function roden_redirect_sitemaps_to_trailing_slash() {
-    if ( ! isset( $_SERVER['REQUEST_URI'] ) ) {
-        return;
-    }
-    $uri = $_SERVER['REQUEST_URI'];
-
-    // Only handle sitemap XML requests that are missing a trailing slash.
-    if ( preg_match( '#^/(wp-sitemap[^?]*\.xml)$#', $uri, $m ) ) {
-        wp_redirect( home_url( '/' . $m[1] . '/' ), 301 );
-        exit;
-    }
-}
+// Note: sitemap trailing-slash redirect is handled at the top of this file
+// with raw PHP header() to run before any plugin can intercept.
 
 /* ==========================================================================
    3c. STAFF — Redirect single pages & exclude from sitemap
