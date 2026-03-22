@@ -68,23 +68,23 @@ function roden_theme_setup() {
 
 add_filter( 'wp_sitemaps_enabled', '__return_true', 99 );
 
-/* Clean up leftover Rank Math sitemap rewrite rules on init */
-add_action( 'init', 'roden_cleanup_rank_math_rewrites', 0 );
-function roden_cleanup_rank_math_rewrites() {
-    $rules = get_option( 'rewrite_rules' );
-    if ( ! is_array( $rules ) ) {
+/* One-time flush to purge leftover Rank Math rewrite rules */
+add_action( 'init', 'roden_flush_rank_math_rewrites', 0 );
+function roden_flush_rank_math_rewrites() {
+    if ( get_transient( 'roden_rewrites_flushed_v2' ) ) {
         return;
     }
-    $dirty = false;
-    foreach ( $rules as $pattern => $rewrite ) {
-        if ( strpos( $rewrite, 'sitemap_n' ) !== false || strpos( $pattern, 'sitemap' ) !== false && strpos( $rewrite, 'wp-sitemap' ) === false ) {
-            unset( $rules[ $pattern ] );
-            $dirty = true;
-        }
+    flush_rewrite_rules();
+    set_transient( 'roden_rewrites_flushed_v2', 1, YEAR_IN_SECONDS );
+}
+
+/* Block any redirect from /wp-sitemap*.xml — catch Rank Math leftovers */
+add_filter( 'wp_redirect', 'roden_block_sitemap_redirect', 1, 2 );
+function roden_block_sitemap_redirect( $location, $status ) {
+    if ( strpos( $_SERVER['REQUEST_URI'], 'wp-sitemap' ) !== false && strpos( $location, 'sitemap_n' ) !== false ) {
+        return false;
     }
-    if ( $dirty ) {
-        update_option( 'rewrite_rules', $rules );
-    }
+    return $location;
 }
 
 /* ==========================================================================
