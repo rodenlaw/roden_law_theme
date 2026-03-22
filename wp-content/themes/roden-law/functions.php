@@ -71,31 +71,24 @@ function roden_old_page_redirects() {
         return;
     }
 
+    // Map page slugs to their canonical destinations
     $redirects = array(
         'car-accident-lawyer'                  => '/practice-areas/car-accident-lawyers/',
         'charleston-car-accident-lawyer'       => '/practice-areas/car-accident-lawyers/charleston-sc/',
         'south-carolina-car-accident-lawyer'   => '/practice-areas/car-accident-lawyers/',
         'south-carolina-truck-accident-lawyer' => '/practice-areas/truck-accident-lawyers/',
         'columbia-truck-accident-lawyer'       => '/practice-areas/truck-accident-lawyers/columbia-sc/',
+        'savannah'                             => '/practice-areas/',
+        'brunswick'                            => '/practice-areas/',
+        'charleston'                           => '/practice-areas/',
+        'thank-you-ppc-2'                      => '/',
+        'class-actions'                        => '/class-action-lawyers/',
     );
 
     $slug = get_post_field( 'post_name', get_the_ID() );
 
     if ( isset( $redirects[ $slug ] ) ) {
         wp_redirect( home_url( $redirects[ $slug ] ), 301 );
-        exit;
-    }
-
-    // Old city/practice-areas listing pages
-    $path = trim( $_SERVER['REQUEST_URI'], '/' );
-    $city_redirects = array(
-        'savannah/practice-areas'  => '/practice-areas/',
-        'charleston/practice-areas' => '/practice-areas/',
-        'brunswick/practice-areas' => '/practice-areas/',
-    );
-
-    if ( isset( $city_redirects[ $path ] ) ) {
-        wp_redirect( home_url( $city_redirects[ $path ] ), 301 );
         exit;
     }
 }
@@ -113,11 +106,11 @@ function roden_exclude_staff_from_sitemap( $args, $post_type ) {
             array( 'key' => '_roden_team_role', 'compare' => 'NOT EXISTS' ),
         );
     }
-    // Exclude junk pages by slug
+    // Exclude junk/legacy/redirect pages from sitemap by slug
     if ( 'page' === $post_type ) {
         $exclude_slugs = array(
             'test',
-            'thank-you',
+            'thank-you-ppc-2',
             'gracias-ppc-2',
             'gracias-ppc-3',
             'privacy-policy-2',
@@ -126,25 +119,22 @@ function roden_exclude_staff_from_sitemap( $args, $post_type ) {
             'columbia-truck-accident-lawyer',
             'charleston-car-accident-lawyer',
             'south-carolina-car-accident-lawyer',
+            'savannah',
+            'brunswick',
+            'charleston',
+            'class-actions',
         );
-        $exclude_ids = array();
-        foreach ( $exclude_slugs as $slug ) {
-            $page = get_page_by_path( $slug );
-            if ( $page ) {
-                $exclude_ids[] = $page->ID;
-            }
-        }
-        // Also exclude old legacy practice-areas listing pages
-        foreach ( array( 'savannah', 'brunswick', 'charleston' ) as $city ) {
-            $page = get_page_by_path( $city . '/practice-areas' );
-            if ( $page ) {
-                $exclude_ids[] = $page->ID;
-            }
-        }
-        if ( $exclude_ids ) {
+        $exclude_pages = get_posts( array(
+            'post_type'      => 'page',
+            'post_status'    => 'publish',
+            'post_name__in'  => $exclude_slugs,
+            'fields'         => 'ids',
+            'posts_per_page' => -1,
+        ) );
+        if ( $exclude_pages ) {
             $args['post__not_in'] = isset( $args['post__not_in'] )
-                ? array_merge( $args['post__not_in'], $exclude_ids )
-                : $exclude_ids;
+                ? array_merge( $args['post__not_in'], $exclude_pages )
+                : $exclude_pages;
         }
     }
     return $args;
