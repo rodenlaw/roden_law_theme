@@ -100,24 +100,40 @@ function roden_old_page_redirects() {
 // Force-enable WP core sitemaps (removed SEO plugins may have left them disabled).
 add_filter( 'wp_sitemaps_enabled', '__return_true', 99 );
 
-// Serve sitemaps at priority 0 on template_redirect — before Permalink Manager
-// (priority 1) and redirect_canonical (priority 10) can intercept the request.
-add_action( 'template_redirect', 'roden_serve_sitemaps_early', 0 );
-function roden_serve_sitemaps_early() {
+// Strip Permalink Manager hooks on sitemap requests so it can't redirect them.
+// PM hooks into multiple actions (parse_request, template_redirect, etc.) so we
+// must remove all of them early, then let WP core sitemaps render at priority 10.
+add_action( 'wp', 'roden_unhook_pm_for_sitemaps', 0 );
+function roden_unhook_pm_for_sitemaps() {
     if ( ! isset( $_SERVER['REQUEST_URI'] ) ) {
         return;
     }
-    $uri = $_SERVER['REQUEST_URI'];
-    if ( strpos( $uri, 'sitemap' ) === false && strpos( $uri, '.xml' ) === false ) {
+    if ( strpos( $_SERVER['REQUEST_URI'], 'sitemap' ) === false && strpos( $_SERVER['REQUEST_URI'], '.xml' ) === false ) {
         return;
     }
-    $sitemaps = wp_sitemaps_get_server();
-    if ( $sitemaps ) {
-        // render_sitemaps() checks for the sitemap query var internally
-        // and exits with XML output if matched. Otherwise it returns.
-        global $wp;
-        $sitemaps->render_sitemaps( $wp );
+
+    // Remove all Permalink Manager hooks that could redirect.
+    global $wp_filter;
+    $hooks_to_clean = array( 'template_redirect', 'parse_request', 'wp', 'redirect_canonical' );
+    foreach ( $hooks_to_clean as $hook ) {
+        if ( ! isset( $wp_filter[ $hook ] ) ) {
+            continue;
+        }
+        foreach ( $wp_filter[ $hook ]->callbacks as $priority => $callbacks ) {
+            foreach ( $callbacks as $id => $callback ) {
+                $fn = $callback['function'];
+                if ( is_array( $fn ) && is_object( $fn[0] ) && strpos( get_class( $fn[0] ), 'Permalink_Manager' ) !== false ) {
+                    remove_action( $hook, $fn, $priority );
+                }
+                if ( is_string( $fn ) && strpos( $fn, 'permalink_manager' ) !== false ) {
+                    remove_action( $hook, $fn, $priority );
+                }
+            }
+        }
     }
+
+    // Also block canonical redirect (Media Library Plus slug conflict).
+    add_filter( 'redirect_canonical', '__return_false', 0 );
 }
 
 /* ==========================================================================
