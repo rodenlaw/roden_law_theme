@@ -140,12 +140,19 @@ function roden_exclude_staff_from_sitemap( $args, $post_type ) {
     return $args;
 }
 
-/* Remove staff, old case-result (hyphenated) CPTs from sitemap entirely */
+/* Remove unwanted CPTs from sitemap entirely */
 add_filter( 'wp_sitemaps_post_types', 'roden_remove_cpts_from_sitemap' );
 function roden_remove_cpts_from_sitemap( $post_types ) {
     unset( $post_types['staff'] );
     unset( $post_types['case-result'] );
     return $post_types;
+}
+
+/* Remove thin-content taxonomy archives from sitemap */
+add_filter( 'wp_sitemaps_taxonomies', 'roden_remove_taxonomies_from_sitemap' );
+function roden_remove_taxonomies_from_sitemap( $taxonomies ) {
+    unset( $taxonomies['post_tag'] );
+    return $taxonomies;
 }
 
 /* Remove users/author archives from sitemap */
