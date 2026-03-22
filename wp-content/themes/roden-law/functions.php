@@ -107,6 +107,9 @@ function roden_force_sitemap_rendering() {
         return;
     }
 
+    // Debug header to confirm this code executes
+    header( 'X-Roden-Sitemap: matched-' . $uri );
+
     // Trigger WP core sitemap rendering
     wp_sitemaps_get_server()->render_sitemaps();
 }
