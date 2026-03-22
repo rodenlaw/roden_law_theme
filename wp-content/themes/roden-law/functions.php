@@ -109,10 +109,16 @@ function roden_pm_skip_sitemaps( $redirect_url, $old_url, $query ) {
     return $redirect_url;
 }
 
-// Prevent WordPress canonical redirect on sitemap URLs.
+// Prevent WordPress canonical redirect from sending sitemaps to non-sitemap URLs.
+// Allow trailing-slash redirects within sitemap URLs (required for WP core sitemaps).
 add_filter( 'redirect_canonical', 'roden_canonical_skip_sitemaps', 10, 2 );
 function roden_canonical_skip_sitemaps( $redirect_url, $requested_url ) {
     if ( isset( $_SERVER['REQUEST_URI'] ) && strpos( $_SERVER['REQUEST_URI'], 'sitemap' ) !== false ) {
+        // Allow redirect if destination is also a sitemap URL (e.g. trailing slash).
+        if ( strpos( $redirect_url, 'sitemap' ) !== false ) {
+            return $redirect_url;
+        }
+        // Block redirect away from sitemap URLs.
         return false;
     }
     return $redirect_url;
