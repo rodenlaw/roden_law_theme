@@ -172,6 +172,14 @@ function roden_legacy_attorney_redirect() {
 
 add_action( 'template_redirect', 'roden_redirect_404_to_home', 20 );
 function roden_redirect_404_to_home() {
+    // Don't redirect sitemap or XML requests — let WordPress handle them.
+    if ( isset( $_SERVER['REQUEST_URI'] ) ) {
+        $uri = $_SERVER['REQUEST_URI'];
+        if ( strpos( $uri, 'sitemap' ) !== false || strpos( $uri, '.xml' ) !== false ) {
+            return;
+        }
+    }
+
     if ( is_404() ) {
         wp_redirect( home_url( '/' ), 302 );
         exit;
