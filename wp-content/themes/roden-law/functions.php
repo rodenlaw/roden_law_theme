@@ -109,19 +109,32 @@ function roden_pm_skip_sitemaps( $redirect_url, $old_url, $query ) {
     return $redirect_url;
 }
 
-// Prevent WordPress canonical redirect from sending sitemaps to non-sitemap URLs.
-// Allow trailing-slash redirects within sitemap URLs (required for WP core sitemaps).
+// Block ALL canonical redirects on sitemap URLs.
+// A Media Library Plus folder post with slug "sitemap" (ID 590) causes
+// redirect_canonical to send /wp-sitemap.xml → /?sitemap_n. Block it entirely.
 add_filter( 'redirect_canonical', 'roden_canonical_skip_sitemaps', 10, 2 );
 function roden_canonical_skip_sitemaps( $redirect_url, $requested_url ) {
     if ( isset( $_SERVER['REQUEST_URI'] ) && strpos( $_SERVER['REQUEST_URI'], 'sitemap' ) !== false ) {
-        // Allow redirect if destination is also a sitemap URL (e.g. trailing slash).
-        if ( strpos( $redirect_url, 'sitemap' ) !== false ) {
-            return $redirect_url;
-        }
-        // Block redirect away from sitemap URLs.
         return false;
     }
     return $redirect_url;
+}
+
+// Ensure /wp-sitemap*.xml (no trailing slash) serves XML by hooking into
+// parse_request before anything else can hijack the sitemap query var.
+add_action( 'parse_request', 'roden_force_sitemap_rendering', 0 );
+function roden_force_sitemap_rendering( $wp ) {
+    if ( ! isset( $_SERVER['REQUEST_URI'] ) ) {
+        return;
+    }
+    $uri = $_SERVER['REQUEST_URI'];
+    if ( preg_match( '#/wp-sitemap.*\.xml#', $uri ) && isset( $wp->query_vars['sitemap'] ) ) {
+        // Let WordPress core sitemaps handle it — just ensure no redirect happens.
+        $sitemaps = wp_sitemaps_get_server();
+        if ( $sitemaps ) {
+            $sitemaps->render_sitemaps( $wp );
+        }
+    }
 }
 
 /* ==========================================================================
