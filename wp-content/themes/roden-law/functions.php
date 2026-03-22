@@ -79,12 +79,25 @@ function roden_flush_rank_math_rewrites() {
 }
 
 /* Serve WP core sitemaps early at wp_loaded, before template processing.
-   This avoids interference from redirect_canonical, Polylang, and Edge caching. */
+   This avoids interference from redirect_canonical, Polylang, and Edge caching.
+   WP Engine rewrites /wp-sitemap.xml to /index.php?sitemap=wp&sitemap_n=
+   so we detect sitemaps via both URI path and query string. */
 add_action( 'wp_loaded', 'roden_force_sitemap_rendering', 0 );
 function roden_force_sitemap_rendering() {
     $uri = trim( parse_url( $_SERVER['REQUEST_URI'], PHP_URL_PATH ), '/' );
 
-    if ( strpos( $uri, 'wp-sitemap' ) !== 0 ) {
+    // Detect sitemap request via URI path or WP Engine's rewritten query string
+    $is_sitemap = ( strpos( $uri, 'wp-sitemap' ) === 0 );
+    if ( ! $is_sitemap && isset( $_GET['sitemap'] ) ) {
+        $is_sitemap = true;
+        // Reconstruct the URI from WP Engine's query params
+        $sitemap_val = sanitize_text_field( $_GET['sitemap'] );
+        if ( $sitemap_val === 'wp' || $sitemap_val === 'index' ) {
+            $uri = 'wp-sitemap.xml';
+        }
+    }
+
+    if ( ! $is_sitemap ) {
         return;
     }
 
