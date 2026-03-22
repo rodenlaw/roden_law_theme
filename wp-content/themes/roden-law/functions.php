@@ -12,16 +12,6 @@
 
 defined( 'ABSPATH' ) || exit;
 
-// ── SITEMAP REDIRECT — must run before ANY plugin can intercept ─────────
-// Redirect /wp-sitemap*.xml (no trailing slash) → trailing-slash version.
-// Raw PHP header() because wp_redirect() fires too late; Permalink Manager
-// hijacks the request before WordPress hooks like init/template_redirect.
-if ( isset( $_SERVER['REQUEST_URI'] ) && preg_match( '#^/(wp-sitemap[^?]*\.xml)$#', $_SERVER['REQUEST_URI'], $_sm ) ) {
-    header( 'Location: ' . home_url( '/' . $_sm[1] . '/' ), true, 301 );
-    exit;
-}
-unset( $_sm );
-
 /* ==========================================================================
    1. LOAD INC/ MODULES
    ========================================================================== */
@@ -109,9 +99,6 @@ function roden_old_page_redirects() {
 
 // Force-enable WP core sitemaps (removed SEO plugins may have left them disabled).
 add_filter( 'wp_sitemaps_enabled', '__return_true', 99 );
-
-// Note: sitemap trailing-slash redirect is handled at the top of this file
-// with raw PHP header() to run before any plugin can intercept.
 
 /* ==========================================================================
    3c. STAFF — Redirect single pages & exclude from sitemap
