@@ -152,12 +152,13 @@ function roden_remove_sitemap_providers( $provider, $name ) {
     return $provider;
 }
 
-// Remove legacy CPT sitemaps: case-result (hyphen), class-action, staff.
+// Remove legacy/thin CPT sitemaps.
 add_filter( 'wp_sitemaps_post_types', 'roden_remove_legacy_cpt_sitemaps' );
 function roden_remove_legacy_cpt_sitemaps( $post_types ) {
-    unset( $post_types['case-result'] );
-    unset( $post_types['class-action'] );
-    unset( $post_types['staff'] );
+    unset( $post_types['case-result'] );   // Legacy hyphen-slug duplicate.
+    unset( $post_types['class-action'] );  // Old CPT, not in theme.
+    unset( $post_types['staff'] );         // Old CPT, not in theme.
+    unset( $post_types['testimonial'] );   // 21 thin pages — just a quote + CTA.
     return $post_types;
 }
 
