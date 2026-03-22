@@ -100,6 +100,16 @@ function roden_old_page_redirects() {
 // Force-enable WP core sitemaps (removed SEO plugins may have left them disabled).
 add_filter( 'wp_sitemaps_enabled', '__return_true', 99 );
 
+// Block canonical redirects on sitemap URLs so WordPress doesn't redirect
+// them to unrelated posts or strip trailing slashes.
+add_filter( 'redirect_canonical', 'roden_canonical_skip_sitemaps', 10, 2 );
+function roden_canonical_skip_sitemaps( $redirect_url, $requested_url ) {
+    if ( isset( $_SERVER['REQUEST_URI'] ) && strpos( $_SERVER['REQUEST_URI'], 'sitemap' ) !== false ) {
+        return false;
+    }
+    return $redirect_url;
+}
+
 /* ==========================================================================
    3c. STAFF — Redirect single pages & exclude from sitemap
    ========================================================================== */
