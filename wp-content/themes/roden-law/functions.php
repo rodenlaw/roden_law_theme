@@ -147,6 +147,102 @@ function roden_staff_redirect() {
 }
 
 /* ==========================================================================
+   3c-2. DISABLE USERS SITEMAP + LEGACY CPT SITEMAPS
+   ========================================================================== */
+
+// Remove the users sitemap entirely (exposes author accounts).
+add_filter( 'wp_sitemaps_add_provider', 'roden_remove_users_sitemap', 10, 2 );
+function roden_remove_users_sitemap( $provider, $name ) {
+    if ( 'users' === $name ) {
+        return false;
+    }
+    return $provider;
+}
+
+// Remove legacy CPT sitemaps: case-result (hyphen), class-action, staff.
+add_filter( 'wp_sitemaps_post_types', 'roden_remove_legacy_cpt_sitemaps' );
+function roden_remove_legacy_cpt_sitemaps( $post_types ) {
+    unset( $post_types['case-result'] );
+    unset( $post_types['class-action'] );
+    unset( $post_types['staff'] );
+    return $post_types;
+}
+
+/* ==========================================================================
+   3c-3. EXCLUDE TOXIC / LOW-VALUE PAGES FROM SITEMAP
+   ========================================================================== */
+
+add_filter( 'wp_sitemaps_posts_query_args', 'roden_exclude_toxic_pages_from_sitemap', 10, 2 );
+function roden_exclude_toxic_pages_from_sitemap( $args, $post_type ) {
+    if ( 'page' === $post_type ) {
+        $exclude_slugs = array(
+            'gracias-ppc-2',
+            'gracias-ppc-3',
+            'thank-you',
+            'test',
+            'privacy-policy-2',
+            'car-accident-lawyer',
+            'south-carolina-truck-accident-lawyer',
+            'columbia-truck-accident-lawyer',
+            'charleston-car-accident-lawyer',
+            'south-carolina-car-accident-lawyer',
+        );
+
+        // Get post IDs by slug to exclude.
+        $exclude_ids = array();
+        $pages = get_posts( array(
+            'post_type'      => 'page',
+            'post_status'    => 'publish',
+            'post_name__in'  => $exclude_slugs,
+            'fields'         => 'ids',
+            'posts_per_page' => 50,
+        ) );
+        $exclude_ids = array_merge( $exclude_ids, $pages );
+
+        // Exclude old office URL structure: /savannah/practice-areas/, etc.
+        // These are child pages with slug 'practice-areas' under city parents.
+        $office_pa_pages = get_posts( array(
+            'post_type'      => 'page',
+            'post_status'    => 'publish',
+            'name'           => 'practice-areas',
+            'fields'         => 'ids',
+            'posts_per_page' => 20,
+        ) );
+        foreach ( $office_pa_pages as $pa_page_id ) {
+            $parent = get_post( wp_get_post_parent_id( $pa_page_id ) );
+            if ( $parent && in_array( $parent->post_name, array( 'savannah', 'brunswick', 'charleston' ), true ) ) {
+                $exclude_ids[] = $pa_page_id;
+            }
+        }
+
+        if ( ! empty( $exclude_ids ) ) {
+            $existing = isset( $args['post__not_in'] ) ? $args['post__not_in'] : array();
+            $args['post__not_in'] = array_merge( $existing, $exclude_ids );
+        }
+    }
+
+    // Exclude duplicate class-action-lawyers if it's a practice_area.
+    if ( 'practice_area' === $post_type ) {
+        $dupes = get_posts( array(
+            'post_type'      => 'practice_area',
+            'post_status'    => 'publish',
+            'name'           => 'class-action-lawyers',
+            'fields'         => 'ids',
+            'posts_per_page' => 10,
+        ) );
+        if ( count( $dupes ) > 1 ) {
+            // Keep the first (oldest), exclude the rest.
+            sort( $dupes );
+            array_shift( $dupes );
+            $existing = isset( $args['post__not_in'] ) ? $args['post__not_in'] : array();
+            $args['post__not_in'] = array_merge( $existing, $dupes );
+        }
+    }
+
+    return $args;
+}
+
+/* ==========================================================================
    3c. LEGACY /who-we-are/attorneys/ → /attorneys/ redirect
    ========================================================================== */
 
