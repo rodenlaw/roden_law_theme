@@ -62,6 +62,32 @@ function roden_theme_setup() {
 }
 
 /* ==========================================================================
+   2b. ENSURE WP CORE SITEMAPS ARE ENABLED
+   Rank Math may have disabled them; force them back on after uninstall.
+   ========================================================================== */
+
+add_filter( 'wp_sitemaps_enabled', '__return_true', 99 );
+
+/* Clean up leftover Rank Math sitemap rewrite rules on init */
+add_action( 'init', 'roden_cleanup_rank_math_rewrites', 0 );
+function roden_cleanup_rank_math_rewrites() {
+    $rules = get_option( 'rewrite_rules' );
+    if ( ! is_array( $rules ) ) {
+        return;
+    }
+    $dirty = false;
+    foreach ( $rules as $pattern => $rewrite ) {
+        if ( strpos( $rewrite, 'sitemap_n' ) !== false || strpos( $pattern, 'sitemap' ) !== false && strpos( $rewrite, 'wp-sitemap' ) === false ) {
+            unset( $rules[ $pattern ] );
+            $dirty = true;
+        }
+    }
+    if ( $dirty ) {
+        update_option( 'rewrite_rules', $rules );
+    }
+}
+
+/* ==========================================================================
    3. OLD-FORMAT PAGE REDIRECTS — Legacy pages → canonical URLs
    ========================================================================== */
 
