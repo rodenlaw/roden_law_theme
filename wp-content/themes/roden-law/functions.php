@@ -107,11 +107,42 @@ function roden_force_sitemap_rendering() {
         return;
     }
 
-    // Debug header to confirm this code executes
-    header( 'X-Roden-Sitemap: matched-' . $uri );
+    // Set query vars and render sitemap directly
+    global $wp_query;
+    $wp_query->set( 'sitemap', get_query_var( 'sitemap' ) ?: $wp_query->get( 'sitemap' ) );
 
-    // Trigger WP core sitemap rendering
-    wp_sitemaps_get_server()->render_sitemaps();
+    $server = wp_sitemaps_get_server();
+
+    // Render index
+    if ( get_query_var( 'sitemap' ) === 'index' ) {
+        $sitemap_list = $server->index->get_sitemap_list();
+        header( 'Content-Type: application/xml; charset=UTF-8' );
+        header( 'X-Roden-Sitemap: index' );
+        echo $server->renderer->get_sitemap_index_xml( $sitemap_list );
+        exit;
+    }
+
+    // Render stylesheet
+    if ( get_query_var( 'sitemap-stylesheet' ) ) {
+        $server->render_sitemaps();
+        return;
+    }
+
+    // Render sub-sitemap
+    $provider = $server->registry->get_provider( get_query_var( 'sitemap' ) );
+    if ( $provider ) {
+        $paged = absint( get_query_var( 'paged' ) ) ?: 1;
+        $url_list = $provider->get_url_list( $paged, get_query_var( 'sitemap-subtype' ) );
+        if ( ! empty( $url_list ) ) {
+            header( 'Content-Type: application/xml; charset=UTF-8' );
+            header( 'X-Roden-Sitemap: sub' );
+            echo $server->renderer->get_sitemap_xml( $url_list );
+            exit;
+        }
+    }
+
+    // Fallback to standard rendering
+    $server->render_sitemaps();
 }
 
 /* Prevent redirect_canonical from hijacking sitemap requests. */
