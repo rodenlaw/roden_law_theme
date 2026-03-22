@@ -78,16 +78,36 @@ function roden_flush_rank_math_rewrites() {
     set_transient( 'roden_rewrites_flushed_v2', 1, YEAR_IN_SECONDS );
 }
 
-/* Prevent redirect_canonical from hijacking sitemap requests.
-   Polylang + redirect_canonical fire at priority 10, same as render_sitemaps,
-   and canonical redirect runs first, redirecting the sitemap URL before
-   the sitemap renderer can output XML. */
+/* Prevent redirect_canonical from hijacking sitemap requests. */
 add_filter( 'redirect_canonical', 'roden_prevent_sitemap_canonical_redirect', 1 );
 function roden_prevent_sitemap_canonical_redirect( $redirect_url ) {
     if ( get_query_var( 'sitemap' ) || strpos( $_SERVER['REQUEST_URI'], 'wp-sitemap' ) !== false ) {
         return false;
     }
     return $redirect_url;
+}
+
+/* Ensure Polylang does not strip the sitemap query var during request parsing. */
+add_filter( 'request', 'roden_preserve_sitemap_query_var', 1 );
+function roden_preserve_sitemap_query_var( $query_vars ) {
+    if ( strpos( $_SERVER['REQUEST_URI'], 'wp-sitemap' ) === false ) {
+        return $query_vars;
+    }
+    // If the sitemap query var was stripped, re-add it
+    if ( empty( $query_vars['sitemap'] ) ) {
+        $uri = trim( $_SERVER['REQUEST_URI'], '/' );
+        if ( $uri === 'wp-sitemap.xml' ) {
+            $query_vars['sitemap'] = 'index';
+        } elseif ( preg_match( '#^wp-sitemap-([a-z]+?)-([a-z\d_-]+?)-(\d+?)\.xml$#', $uri, $m ) ) {
+            $query_vars['sitemap']         = $m[1];
+            $query_vars['sitemap-subtype'] = $m[2];
+            $query_vars['paged']           = (int) $m[3];
+        } elseif ( preg_match( '#^wp-sitemap-([a-z]+?)-(\d+?)\.xml$#', $uri, $m ) ) {
+            $query_vars['sitemap'] = $m[1];
+            $query_vars['paged']   = (int) $m[2];
+        }
+    }
+    return $query_vars;
 }
 
 /* ==========================================================================
