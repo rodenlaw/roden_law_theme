@@ -100,40 +100,23 @@ function roden_old_page_redirects() {
 // Force-enable WP core sitemaps (removed SEO plugins may have left them disabled).
 add_filter( 'wp_sitemaps_enabled', '__return_true', 99 );
 
-// Prevent Permalink Manager from redirecting sitemap URLs.
-add_filter( 'permalink_manager_filter_redirect', 'roden_pm_skip_sitemaps', 10, 3 );
-function roden_pm_skip_sitemaps( $redirect_url, $old_url, $query ) {
-    if ( isset( $_SERVER['REQUEST_URI'] ) && strpos( $_SERVER['REQUEST_URI'], 'sitemap' ) !== false ) {
-        return false;
-    }
-    return $redirect_url;
-}
-
-// Block ALL canonical redirects on sitemap URLs.
-// A Media Library Plus folder post with slug "sitemap" (ID 590) causes
-// redirect_canonical to send /wp-sitemap.xml → /?sitemap_n. Block it entirely.
-add_filter( 'redirect_canonical', 'roden_canonical_skip_sitemaps', 10, 2 );
-function roden_canonical_skip_sitemaps( $redirect_url, $requested_url ) {
-    if ( isset( $_SERVER['REQUEST_URI'] ) && strpos( $_SERVER['REQUEST_URI'], 'sitemap' ) !== false ) {
-        return false;
-    }
-    return $redirect_url;
-}
-
-// Ensure /wp-sitemap*.xml (no trailing slash) serves XML by hooking into
-// parse_request before anything else can hijack the sitemap query var.
-add_action( 'parse_request', 'roden_force_sitemap_rendering', 0 );
-function roden_force_sitemap_rendering( $wp ) {
+// Serve sitemaps at priority 0 on template_redirect — before Permalink Manager
+// (priority 1) and redirect_canonical (priority 10) can intercept the request.
+add_action( 'template_redirect', 'roden_serve_sitemaps_early', 0 );
+function roden_serve_sitemaps_early() {
     if ( ! isset( $_SERVER['REQUEST_URI'] ) ) {
         return;
     }
     $uri = $_SERVER['REQUEST_URI'];
-    if ( preg_match( '#/wp-sitemap.*\.xml#', $uri ) && isset( $wp->query_vars['sitemap'] ) ) {
-        // Let WordPress core sitemaps handle it — just ensure no redirect happens.
-        $sitemaps = wp_sitemaps_get_server();
-        if ( $sitemaps ) {
-            $sitemaps->render_sitemaps( $wp );
-        }
+    if ( strpos( $uri, 'sitemap' ) === false && strpos( $uri, '.xml' ) === false ) {
+        return;
+    }
+    $sitemaps = wp_sitemaps_get_server();
+    if ( $sitemaps ) {
+        // render_sitemaps() checks for the sitemap query var internally
+        // and exits with XML output if matched. Otherwise it returns.
+        global $wp;
+        $sitemaps->render_sitemaps( $wp );
     }
 }
 
