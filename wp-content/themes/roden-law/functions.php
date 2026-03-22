@@ -78,10 +78,9 @@ function roden_flush_rank_math_rewrites() {
     set_transient( 'roden_rewrites_flushed_v2', 1, YEAR_IN_SECONDS );
 }
 
-/* Force WP core sitemap rendering. Hooks into both init (early, before any
-   template processing) and template_redirect (fallback). */
-add_action( 'init', 'roden_force_sitemap_rendering', 999 );
-add_action( 'template_redirect', 'roden_force_sitemap_rendering', 0 );
+/* Serve WP core sitemaps early at wp_loaded, before template processing.
+   This avoids interference from redirect_canonical, Polylang, and Edge caching. */
+add_action( 'wp_loaded', 'roden_force_sitemap_rendering', 0 );
 function roden_force_sitemap_rendering() {
     $uri = trim( parse_url( $_SERVER['REQUEST_URI'], PHP_URL_PATH ), '/' );
 
@@ -89,60 +88,61 @@ function roden_force_sitemap_rendering() {
         return;
     }
 
-    // Parse the URI to determine sitemap query vars
-    if ( $uri === 'wp-sitemap.xml' ) {
-        set_query_var( 'sitemap', 'index' );
-    } elseif ( preg_match( '#^wp-sitemap-([a-z]+?)-([a-z\d_-]+?)-(\d+?)\.xml$#', $uri, $m ) ) {
-        set_query_var( 'sitemap', $m[1] );
-        set_query_var( 'sitemap-subtype', $m[2] );
-        set_query_var( 'paged', (int) $m[3] );
-    } elseif ( preg_match( '#^wp-sitemap-([a-z]+?)-(\d+?)\.xml$#', $uri, $m ) ) {
-        set_query_var( 'sitemap', $m[1] );
-        set_query_var( 'paged', (int) $m[2] );
-    } elseif ( $uri === 'wp-sitemap.xsl' ) {
-        set_query_var( 'sitemap-stylesheet', 'sitemap' );
-    } elseif ( $uri === 'wp-sitemap-index.xsl' ) {
-        set_query_var( 'sitemap-stylesheet', 'index' );
-    } else {
+    // Don't run in admin or CLI
+    if ( is_admin() || ( defined( 'WP_CLI' ) && WP_CLI ) ) {
         return;
     }
 
-    // Set query vars and render sitemap directly
-    global $wp_query;
-    $wp_query->set( 'sitemap', get_query_var( 'sitemap' ) ?: $wp_query->get( 'sitemap' ) );
-
     $server = wp_sitemaps_get_server();
+    if ( ! $server->sitemaps_enabled() ) {
+        return;
+    }
 
-    // Render index
-    if ( get_query_var( 'sitemap' ) === 'index' ) {
+    // Sitemap index
+    if ( $uri === 'wp-sitemap.xml' ) {
         $sitemap_list = $server->index->get_sitemap_list();
         header( 'Content-Type: application/xml; charset=UTF-8' );
+        header( 'X-Robots-Tag: noindex, follow' );
         header( 'X-Roden-Sitemap: index' );
         echo $server->renderer->get_sitemap_index_xml( $sitemap_list );
         exit;
     }
 
-    // Render stylesheet
-    if ( get_query_var( 'sitemap-stylesheet' ) ) {
-        $server->render_sitemaps();
+    // Stylesheets
+    if ( $uri === 'wp-sitemap.xsl' || $uri === 'wp-sitemap-index.xsl' ) {
+        // Let WP core handle stylesheets via normal flow
         return;
     }
 
-    // Render sub-sitemap
-    $provider = $server->registry->get_provider( get_query_var( 'sitemap' ) );
-    if ( $provider ) {
-        $paged = absint( get_query_var( 'paged' ) ) ?: 1;
-        $url_list = $provider->get_url_list( $paged, get_query_var( 'sitemap-subtype' ) );
-        if ( ! empty( $url_list ) ) {
-            header( 'Content-Type: application/xml; charset=UTF-8' );
-            header( 'X-Roden-Sitemap: sub' );
-            echo $server->renderer->get_sitemap_xml( $url_list );
-            exit;
+    // Sub-sitemaps: /wp-sitemap-posts-post-1.xml etc.
+    if ( preg_match( '#^wp-sitemap-([a-z]+?)-([a-z\d_-]+?)-(\d+?)\.xml$#', $uri, $m ) ) {
+        $provider = $server->registry->get_provider( $m[1] );
+        if ( $provider ) {
+            $url_list = $provider->get_url_list( (int) $m[3], $m[2] );
+            if ( ! empty( $url_list ) ) {
+                header( 'Content-Type: application/xml; charset=UTF-8' );
+                header( 'X-Robots-Tag: noindex, follow' );
+                header( 'X-Roden-Sitemap: sub' );
+                echo $server->renderer->get_sitemap_xml( $url_list );
+                exit;
+            }
         }
     }
 
-    // Fallback to standard rendering
-    $server->render_sitemaps();
+    // Provider sitemaps without subtype: /wp-sitemap-users-1.xml etc.
+    if ( preg_match( '#^wp-sitemap-([a-z]+?)-(\d+?)\.xml$#', $uri, $m ) ) {
+        $provider = $server->registry->get_provider( $m[1] );
+        if ( $provider ) {
+            $url_list = $provider->get_url_list( (int) $m[2] );
+            if ( ! empty( $url_list ) ) {
+                header( 'Content-Type: application/xml; charset=UTF-8' );
+                header( 'X-Robots-Tag: noindex, follow' );
+                header( 'X-Roden-Sitemap: sub' );
+                echo $server->renderer->get_sitemap_xml( $url_list );
+                exit;
+            }
+        }
+    }
 }
 
 /* Prevent redirect_canonical from hijacking sitemap requests. */
