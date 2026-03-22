@@ -94,11 +94,24 @@ function roden_old_page_redirects() {
 }
 
 /* ==========================================================================
-   3b. PREVENT PERMALINK MANAGER FROM REDIRECTING SITEMAPS
+   3b. ENSURE CORE SITEMAPS WORK — prevent plugin/redirect interference
    ========================================================================== */
 
+// Force-enable WP core sitemaps (may have been disabled by a removed SEO plugin).
+add_filter( 'wp_sitemaps_enabled', '__return_true', 99 );
+
+// Prevent Permalink Manager from redirecting sitemap URLs.
 add_filter( 'permalink_manager_filter_redirect', 'roden_allow_sitemap_urls', 10, 3 );
 function roden_allow_sitemap_urls( $redirect_url, $old_url, $query ) {
+    if ( isset( $_SERVER['REQUEST_URI'] ) && strpos( $_SERVER['REQUEST_URI'], 'sitemap' ) !== false ) {
+        return false;
+    }
+    return $redirect_url;
+}
+
+// Prevent WordPress canonical redirect from interfering with sitemap URLs.
+add_filter( 'redirect_canonical', 'roden_allow_sitemap_canonical', 10, 2 );
+function roden_allow_sitemap_canonical( $redirect_url, $requested_url ) {
     if ( isset( $_SERVER['REQUEST_URI'] ) && strpos( $_SERVER['REQUEST_URI'], 'sitemap' ) !== false ) {
         return false;
     }
