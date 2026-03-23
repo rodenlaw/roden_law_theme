@@ -94,6 +94,23 @@ function roden_legacy_content_redirects() {
         echo '<h1>410 Gone</h1><p>This page has been permanently removed.</p>';
         exit;
     }
+
+    // ── Blog post catch-all: old /%postname%/ → /blog/%postname%/ ────────
+    // With permalink structure changed to /blog/%postname%/, old root-level
+    // blog URLs need to redirect. Check if a post exists at /blog/[slug]/
+    // before redirecting (to avoid catching practice areas or other CPTs).
+    $slug = trim( $clean_path, '/' );
+    if ( $slug
+         && false === strpos( $slug, '/' )            // single-segment path only
+         && ! is_front_page()                          // skip homepage
+         && 0 !== strpos( $slug, 'wp-' )               // skip WordPress system paths
+    ) {
+        $post_obj = get_page_by_path( $slug, OBJECT, 'post' );
+        if ( $post_obj && 'publish' === $post_obj->post_status ) {
+            wp_redirect( home_url( '/blog/' . $slug . '/' ), 301 );
+            exit;
+        }
+    }
 }
 
 function roden_get_legacy_redirect_map() {
@@ -295,11 +312,17 @@ function roden_get_legacy_redirect_map() {
         '/practice-area/3536/'           => '/practice-areas/',
 
         // ══════════════════════════════════════════════════════════════
-        // CATEGORY 7: Root-level blog posts (7 pages)
-        // SKIPPED — permalink structure is /%postname%/ so these posts
-        // already live at root. Redirects would break working URLs.
-        // Re-enable after changing permalink structure to /blog/%postname%/.
+        // CATEGORY 7: Root-level blog posts → /blog/ prefix
+        // ACTIVATED 2026-03-22 — permalink structure changed to /blog/%postname%/
+        // Permalink Manager Pro removed. These redirects catch old root URLs.
         // ══════════════════════════════════════════════════════════════
+
+        '/a-pedestrians-guide-to-claiming-lost-wages-in-charleston/'          => '/blog/a-pedestrians-guide-to-claiming-lost-wages-in-charleston/',
+        '/filing-a-claim-after-a-hazmat-truck-crash-in-charleston/'           => '/blog/filing-a-claim-after-a-hazmat-truck-crash-in-charleston/',
+        '/how-poor-truck-maintenance-causes-charleston-accidents/'            => '/blog/how-poor-truck-maintenance-causes-charleston-accidents/',
+        '/your-guide-to-justice-after-a-charleston-truck-accident/'           => '/blog/your-guide-to-justice-after-a-charleston-truck-accident/',
+        '/a-guide-to-car-accident-claims-at-columbias-toughest-intersections/' => '/blog/a-guide-to-car-accident-claims-at-columbias-toughest-intersections/',
+        '/protecting-your-rights-after-a-myrtle-beach-car-accident/'         => '/blog/protecting-your-rights-after-a-myrtle-beach-car-accident/',
 
         // ══════════════════════════════════════════════════════════════
         // CATEGORY 8: Old staff / attorney URLs (26+ pages)
@@ -326,6 +349,21 @@ function roden_get_legacy_redirect_map() {
         '/areas-we-serve/'     => '/locations/',
         '/es/'                 => '/',
         '/class-action-lawyers/' => '/practice-areas/',
+
+        // ══════════════════════════════════════════════════════════════
+        // CATEGORY 11: Blog audit — Phase 0 immediate fixes (2026-03-22)
+        // Broken slugs, duplicate content consolidation
+        // ══════════════════════════════════════════════════════════════
+
+        // Broken template-variable slug → contact page
+        '/request-your-free-case-review-today-main_phone_number/' => '/contact/',
+
+        // Duplicate Coleman Boulevard posts → canonical version
+        '/car-accidents-on-coleman-boulevard/' => '/blog/car-accidents-on-coleman-boulevard-in-mount-pleasant/',
+
+        // Duplicate Columbia truck accident guides → single canonical post
+        '/your-first-steps-after-a-truck-accident-in-downtown-columbia-sc/' => '/blog/your-step-by-step-guide-after-a-downtown-columbia-truck-accident/',
+        '/a-practical-guide-after-a-truck-accident-in-downtown-columbia/'   => '/blog/your-step-by-step-guide-after-a-downtown-columbia-truck-accident/',
 
     );
 }
