@@ -1210,7 +1210,7 @@ $city         = ( $city_raw && strpos( $city_raw, '{' ) === false ) ? $city_raw 
                 </div>
                 <div class="full-fields visible">
                     <div class="form-group">
-                        <textarea name="message" placeholder="Please describe what happened" rows="6"></textarea>
+                        <textarea name="message" placeholder="Please describe what happened" rows="8"></textarea>
                     </div>
                 </div>
                 <label class="form-consent" style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;cursor:pointer;">
@@ -1528,7 +1528,6 @@ $city         = ( $city_raw && strpos( $city_raw, '{' ) === false ) ? $city_raw 
         var tabs = document.querySelectorAll('.form-tab');
         var fullFields = document.querySelectorAll('.full-fields');
         var emailInput = document.getElementById('lp-email');
-        var caseSelect = document.querySelector('select[name="case_type"]');
         var textarea = document.querySelector('textarea[name="message"]');
 
         tabs.forEach(function(tab) {
@@ -1544,14 +1543,12 @@ $city         = ( $city_raw && strpos( $city_raw, '{' ) === false ) ? $city_raw 
                     });
                     /* Remove required from hidden fields */
                     if (emailInput) emailInput.required = false;
-                    if (caseSelect) caseSelect.required = false;
                 } else {
                     fullFields.forEach(function(el) {
                         el.classList.remove('hidden');
                         el.classList.add('visible');
                     });
                     if (emailInput) emailInput.required = true;
-                    if (caseSelect) caseSelect.required = true;
                 }
             });
         });

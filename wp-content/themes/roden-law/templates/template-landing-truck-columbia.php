@@ -923,7 +923,7 @@ $city_is_custom = ! empty( $city_raw );
                     </div>
                 </div>
                 <div class="form-group">
-                    <textarea name="message" placeholder="Please describe what happened (location, injuries, truck company if known)" rows="6"></textarea>
+                    <textarea name="message" placeholder="Please describe what happened (location, injuries, truck company if known)" rows="8"></textarea>
                 </div>
                 <label class="form-consent" style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;cursor:pointer;">
                     <input type="checkbox" name="consent" value="1" checked required style="width:18px;height:18px;min-width:18px;margin-top:2px;accent-color:#f5a623;cursor:pointer;">
