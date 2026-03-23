@@ -648,7 +648,7 @@ function roden_contact_form_sidebar( $local_phone = '' ) {
             </div>
             <input type="tel" name="phone" id="rsf-phone" placeholder="(555) 555-5555" required>
             <input type="email" name="email" id="rsf-email" placeholder="Email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
-            <textarea name="message" placeholder="Please describe what happened" rows="6"></textarea>
+            <textarea name="message" placeholder="Please describe what happened" rows="8"></textarea>
             <label class="rsf-consent">
                 <input type="checkbox" name="consent" value="1" checked required>
                 <span>I hereby expressly consent to receive automated communications including calls, texts, emails, and/or prerecorded messages. By submitting this form, you agree to our <a href="<?php echo esc_url( home_url( '/terms-privacy-policy/' ) ); ?>" target="_blank">Terms &amp; Privacy Policy</a>.</span>

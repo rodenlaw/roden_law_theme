@@ -497,7 +497,7 @@ function roden_sidebar_form_handler() {
     $consent    = ! empty( $_POST['consent'] ) ? 1 : 0;
 
     // Validate required fields.
-    if ( ! $first_name || ! $last_name || ! $phone || ! $email || ! $case_type || ! $consent ) {
+    if ( ! $first_name || ! $last_name || ! $phone || ! $email || ! $consent ) {
         wp_send_json_error( 'Please fill in all required fields and accept the consent.' );
     }
 
