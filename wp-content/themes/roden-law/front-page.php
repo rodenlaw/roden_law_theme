@@ -257,8 +257,8 @@ $practice_areas = array(
                             <span><?php esc_html_e( '100% contingency. You pay nothing unless we win.', 'roden-law' ); ?></span>
                         </div>
                         <div class="founder-value">
-                            <strong><?php esc_html_e( '5 Office Locations', 'roden-law' ); ?></strong>
-                            <span><?php esc_html_e( 'Local attorneys in Savannah, Charleston, Columbia, Myrtle Beach, and Darien', 'roden-law' ); ?></span>
+                            <strong><?php esc_html_e( '6 Office Locations', 'roden-law' ); ?></strong>
+                            <span><?php esc_html_e( 'Local attorneys in Savannah, Charleston, North Charleston, Columbia, Myrtle Beach, and Darien', 'roden-law' ); ?></span>
                         </div>
                     </div>
                 </div>

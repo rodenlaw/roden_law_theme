@@ -29,7 +29,7 @@ function roden_firm_data() {
         'founded'      => '2013',
 
         /* ==================================================================
-           OFFICES — 5 Locations
+           OFFICES — 6 Locations
            ================================================================== */
 
         'offices' => array(
@@ -112,6 +112,33 @@ function roden_firm_data() {
                 ),
                 'directions'   => 'Our Charleston office is in the heart of downtown on King Street, Suite 200, near the intersection of King and Calhoun streets. From I-26 East, take Exit 221B onto Meeting Street heading south, then turn right on Calhoun and left on King. From Mount Pleasant, cross the Ravenel Bridge and follow US-17 S to the Meeting Street exit. Street and garage parking available nearby.',
                 'map_embed'    => 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354.570788089184!2d-79.9329881!3d32.7771216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88fe7bd134041e93%3A0x2c255a08f0b45377!2sRoden%20Law!5e0!3m2!1sen!2sus!4v1773074802432!5m2!1sen!2sus',
+                // GBP review count — populate from Google Business Profile. 0 = suppress aggregateRating schema.
+                'review_count' => 0,
+            ),
+            'north-charleston' => array(
+                'name'         => 'Roden Law — North Charleston',
+                'street'       => '2703 Spruill Ave',
+                'city'         => 'North Charleston',
+                'state'        => 'SC',
+                'state_full'   => 'South Carolina',
+                'zip'          => '29405',
+                'phone'        => '(843) 612-6561',
+                'phone_raw'    => '+18436126561',
+                'latitude'     => 32.8546,
+                'longitude'    => -79.9748,
+                'timezone'     => 'America/New_York',
+                'court'        => 'Charleston County Circuit Court',
+                'court_address'=> '100 Broad St., Charleston, SC 29401',
+                'slug'         => 'north-charleston-sc',
+                'state_slug'   => 'south-carolina',
+                'service_area' => 'North Charleston, Goose Creek, Summerville, Hanahan, and surrounding communities.',
+                'attorneys'    => array( 'graeham-gillin', 'kiley-reidy', 'zach-stohr' ),
+                'nearby_communities' => array(
+                    'Goose Creek', 'Summerville', 'Hanahan', 'Ladson',
+                    'Moncks Corner', 'Park Circle', 'Dorchester',
+                    'Lincolnville', 'Jedburg', 'Sangaree',
+                ),
+                'directions'   => 'Our North Charleston office is located on Spruill Avenue in the Park Circle area. From I-26, take Exit 213 onto E Montague Ave heading east, then turn left on Spruill Ave. From downtown Charleston, take I-26 W to Exit 213. Free client parking is available on site.',
                 // GBP review count — populate from Google Business Profile. 0 = suppress aggregateRating schema.
                 'review_count' => 0,
             ),
@@ -233,7 +260,7 @@ function roden_firm_data() {
             'review_count'  => 500,   // Numeric for schema AggregateRating reviewCount
             'cases'         => '5,000+',
             'experience'    => '62',
-            'offices'       => '5',
+            'offices'       => '6',
         ),
 
         /* ==================================================================
