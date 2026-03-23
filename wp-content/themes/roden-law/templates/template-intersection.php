@@ -3,7 +3,7 @@
  * Template: Intersection Page (Practice Area x Location)
  *
  * Displayed for child practice_area posts that have a _roden_pa_office_key
- * matching one of the 5 offices (e.g. /car-accident-lawyers/savannah-ga/).
+ * matching one of the 6 offices (e.g. /car-accident-lawyers/savannah-ga/).
  *
  * @package RodenLaw
  */
@@ -113,7 +113,7 @@ $related_subtypes = get_posts( array(
 </section>
 
 <!-- ================================================================
-     LOCATION MATRIX — All 5 offices for this practice area
+     LOCATION MATRIX — All 6 offices for this practice area
      ================================================================ -->
 <section class="section-location-matrix">
     <div class="container">

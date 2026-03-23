@@ -32,7 +32,7 @@ WP_CLI::log( "Attorney IDs — Eric: {$eric_roden_id}, Graeham: {$graeham_gillin
 
 // ── Pillar page content ─────────────────────────────────────────────────────
 $pillar_content = <<<'HTML'
-<p>When you or a loved one suffers an injury because of someone else's negligence, you deserve experienced legal representation that fights for every dollar you're owed. Roden Law's personal injury attorneys serve clients across Georgia and South Carolina from five office locations — Savannah, Darien, Charleston, Columbia, and Myrtle Beach. We have recovered more than <strong>$250 million</strong> for injured clients, and we handle every case on a <strong>contingency fee basis</strong>: you pay nothing unless we win.</p>
+<p>When you or a loved one suffers an injury because of someone else's negligence, you deserve experienced legal representation that fights for every dollar you're owed. Roden Law's personal injury attorneys serve clients across Georgia and South Carolina from six office locations — Savannah, Darien, Charleston, North Charleston, Columbia, and Myrtle Beach. We have recovered more than <strong>$250 million</strong> for injured clients, and we handle every case on a <strong>contingency fee basis</strong>: you pay nothing unless we win.</p>
 
 <h2>What Is a Personal Injury Claim?</h2>
 <p>A personal injury claim arises when one person's negligent, reckless, or intentional conduct causes physical, emotional, or financial harm to another person. To establish liability, four elements must be proven: the at-fault party owed you a duty of care; they breached that duty; their breach directly caused your injuries; and you suffered actual damages as a result.</p>
@@ -62,7 +62,7 @@ $pillar_content = <<<'HTML'
 <li><strong>5,000+ Cases Handled:</strong> Experience across every type of personal injury case means your attorney has seen situations like yours before.</li>
 <li><strong>Senior Attorney Involvement:</strong> Unlike high-volume advertising firms, your case is handled by an attorney — not a paralegal or case manager.</li>
 <li><strong>No Upfront Costs:</strong> We work on a contingency fee basis. If we do not recover compensation for you, you owe us nothing.</li>
-<li><strong>Five Office Locations:</strong> We have physical offices in <a href="/locations/georgia/savannah/">Savannah</a>, <a href="/locations/georgia/darien/">Darien</a>, <a href="/locations/south-carolina/charleston/">Charleston</a>, <a href="/locations/south-carolina/columbia/">Columbia</a>, and <a href="/locations/south-carolina/myrtle-beach/">Myrtle Beach</a> — serving clients across the Southeast coast.</li>
+<li><strong>Six Office Locations:</strong> We have physical offices in <a href="/locations/georgia/savannah/">Savannah</a>, <a href="/locations/georgia/darien/">Darien</a>, <a href="/locations/south-carolina/charleston/">Charleston</a>, <a href="/locations/south-carolina/north-charleston/">North Charleston</a>, <a href="/locations/south-carolina/columbia/">Columbia</a>, and <a href="/locations/south-carolina/myrtle-beach/">Myrtle Beach</a> — serving clients across the Southeast coast.</li>
 </ul>
 
 <h2>Georgia Personal Injury Law</h2>
@@ -99,11 +99,12 @@ $pillar_content = <<<'HTML'
 <p>In cases involving willful misconduct, fraud, or gross negligence — such as a drunk driver or a company that concealed a known product defect — courts may award punitive damages to punish the defendant and deter similar conduct.</p>
 
 <h2>Our Office Locations</h2>
-<p>Roden Law maintains five offices across Georgia and South Carolina to serve clients where they live and where their accidents happen:</p>
+<p>Roden Law maintains six offices across Georgia and South Carolina to serve clients where they live and where their accidents happen:</p>
 <ul>
 <li><a href="/personal-injury-lawyers/savannah-ga/"><strong>Savannah, GA</strong></a> — 333 Commercial Dr., Savannah, GA 31406 — (912) 303-5850</li>
 <li><a href="/personal-injury-lawyers/darien-ga/"><strong>Darien, GA</strong></a> — 1108 North Way, Darien, GA 31305 — (912) 303-5850</li>
 <li><a href="/personal-injury-lawyers/charleston-sc/"><strong>Charleston, SC</strong></a> — 127 King Street, Suite 200, Charleston, SC 29401 — (843) 790-8999</li>
+<li><a href="/personal-injury-lawyers/north-charleston-sc/"><strong>North Charleston, SC</strong></a> — 2703 Spruill Ave, North Charleston, SC 29405 — (843) 612-6561</li>
 <li><a href="/personal-injury-lawyers/columbia-sc/"><strong>Columbia, SC</strong></a> — 1545 Sumter St., Suite B, Columbia, SC 29201 — (803) 219-2816</li>
 <li><a href="/personal-injury-lawyers/myrtle-beach-sc/"><strong>Myrtle Beach, SC</strong></a> — 631 Bellamy Ave., Suite C-B, Murrells Inlet, SC 29576 — (843) 612-1980</li>
 </ul>

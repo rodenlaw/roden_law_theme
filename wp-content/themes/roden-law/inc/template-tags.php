@@ -377,11 +377,11 @@ function roden_location_cards( $exclude_key = '' ) {
 }
 
 /* ==========================================================================
-   LOCATION MATRIX — 5-office grid with intersection links per practice area
+   LOCATION MATRIX — 6-office grid with intersection links per practice area
    ========================================================================== */
 
 /**
- * Render the location matrix showing all 5 offices with links
+ * Render the location matrix showing all 6 offices with links
  * to the intersection page for the current (or specified) practice area.
  *
  * @param int|null $pillar_id Practice area pillar post ID (defaults to current or parent).

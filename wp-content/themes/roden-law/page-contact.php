@@ -83,7 +83,7 @@ $stats = $firm['trust_stats'];
         <div class="site-container">
             <div class="section-header">
                 <h2><?php esc_html_e( 'Our Office Locations', 'roden-law' ); ?></h2>
-                <p><?php esc_html_e( '5 offices across Georgia and South Carolina', 'roden-law' ); ?></p>
+                <p><?php esc_html_e( '6 offices across Georgia and South Carolina', 'roden-law' ); ?></p>
             </div>
 
             <div class="locations-grid">

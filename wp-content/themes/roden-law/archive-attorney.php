@@ -20,7 +20,7 @@ $firm = roden_firm_data();
         <p class="hero-subtitle">
             <?php esc_html_e( 'Meet the experienced personal injury attorneys at Roden Law. Licensed in Georgia and South Carolina, our team has recovered', 'roden-law' ); ?>
             <strong><?php echo esc_html( $firm['trust_stats']['recovered'] ); ?></strong>
-            <?php esc_html_e( 'for injured clients across 5 office locations.', 'roden-law' ); ?>
+            <?php esc_html_e( 'for injured clients across 6 office locations.', 'roden-law' ); ?>
         </p>
     </div>
 </section>

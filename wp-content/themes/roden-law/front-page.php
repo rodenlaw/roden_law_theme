@@ -3,7 +3,7 @@
  * Homepage Template (front-page.php)
  *
  * Full homepage with: hero + contact form, trust bar, practice areas grid,
- * locations grid (5 offices), case results, testimonials, and bottom CTA.
+ * locations grid (6 offices), case results, testimonials, and bottom CTA.
  *
  * Schema output for this page (auto via functions.php):
  * Organization, LegalService, LocalBusiness ×5, Speakable,
@@ -54,7 +54,7 @@ $practice_areas = array(
                         <?php
                         printf(
                             /* translators: %s: amount recovered */
-                            esc_html__( 'Roden Law has recovered %s for injury victims across Savannah, Charleston, Columbia, Myrtle Beach, and Darien. No fees unless we win. Free case review 24/7.', 'roden-law' ),
+                            esc_html__( 'Roden Law has recovered %s for injury victims across Savannah, Charleston, North Charleston, Columbia, Myrtle Beach, and Darien. No fees unless we win. Free case review 24/7.', 'roden-law' ),
                             '<strong>' . esc_html( $stats['recovered'] ) . '</strong>'
                         );
                         ?>
@@ -193,7 +193,7 @@ $practice_areas = array(
 
 
     <!-- ============================================================
-         LOCATIONS GRID — 5 OFFICES
+         LOCATIONS GRID — 6 OFFICES
          ============================================================ -->
     <section class="section" id="locations">
         <div class="site-container">
