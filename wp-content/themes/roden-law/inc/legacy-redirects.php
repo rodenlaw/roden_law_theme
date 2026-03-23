@@ -95,6 +95,15 @@ function roden_legacy_content_redirects() {
         exit;
     }
 
+    // ── Strip "blog-" prefix from old slugs ──────────────────────────────
+    // Old posts had slugs like "blog-what-to-do-when-you-are-in-a-car-accident"
+    // which now resolve to /blog/blog-what-to-do.../
+    // Redirect to /blog/what-to-do.../ (the new slug after bulk rename)
+    if ( preg_match( '#^/blog/blog-(.+?)/?$#', $clean_path, $m ) ) {
+        wp_redirect( home_url( '/blog/' . $m[1] . '/' ), 301 );
+        exit;
+    }
+
     // ── Blog post catch-all: old /%postname%/ → /blog/%postname%/ ────────
     // With permalink structure changed to /blog/%postname%/, old root-level
     // blog URLs need to redirect. Check if a post exists at /blog/[slug]/
@@ -364,6 +373,12 @@ function roden_get_legacy_redirect_map() {
         // Duplicate Columbia truck accident guides → single canonical post
         '/your-first-steps-after-a-truck-accident-in-downtown-columbia-sc/' => '/blog/your-step-by-step-guide-after-a-downtown-columbia-truck-accident/',
         '/a-practical-guide-after-a-truck-accident-in-downtown-columbia/'   => '/blog/your-step-by-step-guide-after-a-downtown-columbia-truck-accident/',
+
+        // Service pages moved from blog to pages
+        '/blog/savannah-ppi-attorney/'                                         => '/savannah-ppi-attorney/',
+        '/blog/blog-savannah-ppi-attorney/'                                    => '/savannah-ppi-attorney/',
+        '/blog/free-consultation-with-charleston-personal-injury-lawyer/'       => '/free-consultation-with-charleston-personal-injury-lawyer/',
+        '/blog/blog-free-consultation-with-charleston-personal-injury-lawyer/'  => '/free-consultation-with-charleston-personal-injury-lawyer/',
 
     );
 }
