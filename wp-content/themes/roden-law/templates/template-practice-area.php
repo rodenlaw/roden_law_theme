@@ -87,6 +87,24 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
 </div>
 
 <!-- ═══════════════════════════════════════════════════════════════════════
+     JUMP-TO-SECTION NAV (sticky on scroll, mobile-friendly horizontal scroll)
+     ═══════════════════════════════════════════════════════════════════════ -->
+<nav class="pa-jump-nav" aria-label="<?php esc_attr_e( 'Page sections', 'roden-law' ); ?>">
+    <div class="container">
+        <ul class="pa-jump-nav__list">
+            <li><a href="#pa-overview">Overview</a></li>
+            <li><a href="#pa-case-types">Case Types</a></li>
+            <li><a href="#pa-deadlines">Deadlines</a></li>
+            <li><a href="#pa-your-case">Your Case</a></li>
+            <li><a href="#pa-compensation">Compensation</a></li>
+            <li><a href="#pa-results">Results</a></li>
+            <li><a href="#pa-faqs">FAQs</a></li>
+            <li><a href="#pa-contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════════════════
      SECTION 3: LOCATION MATRIX
      ═══════════════════════════════════════════════════════════════════════ -->
 <section class="section-location-matrix">
@@ -153,7 +171,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
             <!-- ═══════════════════════════════════════════════════════════
                  SECTION 4: WHY HIRE A [Practice Area] LAWYER?
                  ═══════════════════════════════════════════════════════════ -->
-            <div class="content-section pa-why-hire">
+            <div class="content-section pa-why-hire" id="pa-overview">
                 <h2>Why Hire <?php the_title(); ?>?</h2>
                 <?php if ( $why_hire ) : ?>
                     <div class="pa-why-hire__body">
@@ -176,7 +194,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                  SECTION 6: TYPES OF CASES WE HANDLE (Sub-Types)
                  ═══════════════════════════════════════════════════════════ -->
             <?php if ( $child_subtypes || $sub_types ) : ?>
-                <div class="content-section">
+                <div class="content-section" id="pa-case-types">
                     <h2>Types of <?php the_title(); ?> Cases We Handle</h2>
                     <div class="sub-types-grid">
                         <?php if ( $child_subtypes ) : ?>
@@ -202,7 +220,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                  SECTION 7: STATUTE OF LIMITATIONS (GA vs SC)
                  ═══════════════════════════════════════════════════════════ -->
             <?php if ( $sol_ga || $sol_sc ) : ?>
-                <div class="content-section">
+                <div class="content-section" id="pa-deadlines">
                     <h2>Meeting the Statute of Limitations</h2>
                     <div class="sol-grid">
                         <?php if ( $sol_ga && in_array( $jurisdiction, array( 'both', 'ga', 'GA' ) ) ) : ?>
@@ -227,7 +245,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
             <!-- ═══════════════════════════════════════════════════════════
                  SECTION 8: DO I HAVE A CASE? (4 Elements of Negligence)
                  ═══════════════════════════════════════════════════════════ -->
-            <div class="content-section pa-elements-section">
+            <div class="content-section pa-elements-section" id="pa-your-case">
                 <h2>Do I Have a Case?</h2>
                 <p>Before our attorneys can take legal action, we must prove the four elements of negligence existed in your accident:</p>
                 <div class="pa-elements">
@@ -269,7 +287,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
             <!-- ═══════════════════════════════════════════════════════════
                  SECTION 9: COMPENSATION TYPES
                  ═══════════════════════════════════════════════════════════ -->
-            <div class="content-section pa-compensation">
+            <div class="content-section pa-compensation" id="pa-compensation">
                 <h2>Types of Compensation You Can Recover</h2>
                 <div class="pa-compensation__grid">
                     <div class="pa-compensation__col">
@@ -358,7 +376,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
             <!-- ═══════════════════════════════════════════════════════════
                  SECTION 13: CASE RESULTS
                  ═══════════════════════════════════════════════════════════ -->
-            <div class="content-section">
+            <div class="content-section" id="pa-results">
                 <h2>Recent Case Results</h2>
                 <?php roden_case_results_grid( array( 'count' => 4, 'columns' => 3, 'practice_category' => $cat_slug ) ); ?>
             </div>
@@ -398,13 +416,15 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
             <!-- ═══════════════════════════════════════════════════════════
                  SECTION 15: FAQ SECTION
                  ═══════════════════════════════════════════════════════════ -->
-            <?php if ( $atty ) : ?>
-                <p class="pa-faq-attribution">
-                    Reviewed by <strong><?php echo esc_html( $atty->post_title ); ?></strong>,
-                    <?php echo esc_html( $atty_title ); ?> — Licensed in Georgia &amp; South Carolina
-                </p>
-            <?php endif; ?>
-            <?php roden_faq_section( $post_id ); ?>
+            <div id="pa-faqs">
+                <?php if ( $atty ) : ?>
+                    <p class="pa-faq-attribution">
+                        Reviewed by <strong><?php echo esc_html( $atty->post_title ); ?></strong>,
+                        <?php echo esc_html( $atty_title ); ?> — Licensed in Georgia &amp; South Carolina
+                    </p>
+                <?php endif; ?>
+                <?php roden_faq_section( $post_id ); ?>
+            </div>
 
             <!-- ═══════════════════════════════════════════════════════════
                  INLINE CTA BANNER (#3 of 3)
@@ -526,7 +546,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
             <!-- ═══════════════════════════════════════════════════════════
                  SECTION 17: BOTTOM CTA BLOCK
                  ═══════════════════════════════════════════════════════════ -->
-            <div class="bottom-cta-box">
+            <div class="bottom-cta-box" id="pa-contact">
                 <h2>Contact Our <?php the_title(); ?> Today</h2>
                 <p>If you were injured and believe another party is at fault, contact us for a free, no-obligation review. We dedicate our skills and resources to recovering the maximum compensation you deserve — at no upfront cost.</p>
                 <div class="cta-actions">

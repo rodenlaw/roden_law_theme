@@ -2701,6 +2701,62 @@ input[type="submit"] {
     font-weight: 600;
 }
 
+/* ── Jump-to-Section Nav (Practice Area pages) ────────────────────────── */
+
+.pa-jump-nav {
+    background: var(--white, #fff);
+    border-bottom: 1px solid var(--color-border, #E0DDD8);
+    position: sticky;
+    top: 72px; /* below sticky header */
+    z-index: 90;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.pa-jump-nav .container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+.pa-jump-nav .container::-webkit-scrollbar {
+    display: none;
+}
+
+.pa-jump-nav__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    white-space: nowrap;
+}
+
+.pa-jump-nav__list li a {
+    display: block;
+    padding: 12px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--gray-600, #666);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.pa-jump-nav__list li a:hover,
+.pa-jump-nav__list li a.active {
+    color: var(--navy, #013046);
+    border-bottom-color: var(--orange, #FCB415);
+}
+
+@media (max-width: 768px) {
+    .pa-jump-nav {
+        top: 60px; /* smaller header on mobile */
+    }
+    .pa-jump-nav__list li a {
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+}
+
 .trust-badge img {
     width: 32px;
     height: 32px;

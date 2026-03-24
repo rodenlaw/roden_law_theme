@@ -886,6 +886,44 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+/* --- Gravity Forms validation styles --- */
+.gform_wrapper .gfield_error input,
+.gform_wrapper .gfield_error select,
+.gform_wrapper .gfield_error textarea {
+    border-color: #dc2626 !important;
+    box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.15);
+}
+.gform_wrapper .validation_message,
+.gform_wrapper .gfield_description.validation_message {
+    color: #dc2626;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 4px;
+    line-height: 1.4;
+}
+.gform_wrapper .gform_validation_errors,
+.gform_wrapper .validation_error {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: var(--radius);
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    color: #991b1b;
+    font-size: 13px;
+}
+.gform_wrapper .gform_validation_errors h2 {
+    color: #991b1b;
+    font-size: 14px;
+    margin: 0 0 4px;
+}
+
+/* --- Native HTML5 validation for sidebar form --- */
+.roden-sidebar-form input:invalid:not(:placeholder-shown),
+.roden-sidebar-form textarea:invalid:not(:placeholder-shown) {
+    border-color: #dc2626;
+    box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.15);
+}
+
 /* --- Disclaimer below form --- */
 .sidebar-contact-form .form-disclaimer {
     text-align: center;

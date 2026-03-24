@@ -146,7 +146,7 @@
         function startAutoAdvance() {
             autoTimer = setInterval(function () {
                 goToPage(currentPage + 1);
-            }, 6000);
+            }, 8000);
         }
 
         function resetAutoAdvance() {
@@ -191,6 +191,20 @@
                 track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
             });
         }
+
+        // Keyboard navigation: arrow keys when carousel or buttons are focused
+        carousel.setAttribute('tabindex', '0');
+        carousel.setAttribute('role', 'region');
+        carousel.setAttribute('aria-label', 'Case results');
+        carousel.addEventListener('keydown', function (e) {
+            if (e.key === 'ArrowLeft') {
+                e.preventDefault();
+                track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            } else if (e.key === 'ArrowRight') {
+                e.preventDefault();
+                track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        });
     });
 
     /* ── Sticky Mobile CTA Bar ────────────────────────────────── */
@@ -213,6 +227,34 @@
         // Start hidden, slide up
         mobileCta.style.transform = 'translateY(100%)';
         mobileCta.style.transition = 'transform 0.3s ease';
+    }
+
+    /* ── Jump Nav Active Section Tracking ──────────────────────── */
+
+    var jumpNav = document.querySelector('.pa-jump-nav');
+    if (jumpNav) {
+        var jumpLinks = jumpNav.querySelectorAll('a[href^="#"]');
+        var sections = [];
+        jumpLinks.forEach(function (link) {
+            var target = document.querySelector(link.getAttribute('href'));
+            if (target) sections.push({ link: link, el: target });
+        });
+
+        if (sections.length) {
+            var headerOffset = 140; // header + jump nav height
+            window.addEventListener('scroll', function () {
+                var scrollY = window.pageYOffset + headerOffset;
+                var current = null;
+                for (var i = sections.length - 1; i >= 0; i--) {
+                    if (scrollY >= sections[i].el.offsetTop) {
+                        current = sections[i].link;
+                        break;
+                    }
+                }
+                jumpLinks.forEach(function (l) { l.classList.remove('active'); });
+                if (current) current.classList.add('active');
+            }, { passive: true });
+        }
     }
 
     /* ── Sticky Header Shadow on Scroll ───────────────────────── */
