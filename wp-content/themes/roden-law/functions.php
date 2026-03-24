@@ -101,15 +101,10 @@ function roden_old_page_redirects() {
 add_filter( 'wp_sitemaps_enabled', '__return_true', 99 );
 
 // Block canonical redirects on sitemap URLs so WordPress doesn't redirect
-// them to unrelated posts, but allow trailing-slash normalization.
+// them to unrelated posts or add trailing slashes that break rewrite rules.
 add_filter( 'redirect_canonical', 'roden_canonical_skip_sitemaps', 10, 2 );
 function roden_canonical_skip_sitemaps( $redirect_url, $requested_url ) {
     if ( isset( $_SERVER['REQUEST_URI'] ) && strpos( $_SERVER['REQUEST_URI'], 'sitemap' ) !== false ) {
-        // Allow trailing-slash normalization (e.g. /wp-sitemap.xml → /wp-sitemap.xml/)
-        // but block redirects that would send sitemap URLs to unrelated pages.
-        if ( $redirect_url && strpos( $redirect_url, 'sitemap' ) !== false ) {
-            return $redirect_url;
-        }
         return false;
     }
     return $redirect_url;
