@@ -68,17 +68,27 @@ function roden_enqueue_assets() {
 // Preload hero images (moved from WPCode snippet)
 add_action( 'wp_head', 'roden_preload_hero_images', 1 );
 function roden_preload_hero_images() {
-    if ( ! is_front_page() ) {
+    // Homepage: preload background + founder images.
+    if ( is_front_page() ) {
+        $upload_dir = wp_get_upload_dir()['baseurl'];
+        $theme_dir  = get_template_directory_uri();
+
+        echo '<link rel="preload" as="image" href="' . esc_url( $upload_dir ) . '/assets/media/images/bg-hero-home-columns.webp" type="image/webp" media="(min-width: 768px)">' . "\n";
+        echo '<link rel="preload" as="image" href="' . esc_url( $upload_dir ) . '/2025/02/bg-hero-home-columns_mobile.webp" type="image/webp" media="(max-width: 767px)">' . "\n";
+        echo '<link rel="preload" as="image" href="' . esc_url( $theme_dir ) . '/assets/images/img-hero-eric-roden-2024-desktop.webp" type="image/webp" media="(min-width: 1199px)">' . "\n";
+        echo '<link rel="preload" as="image" href="' . esc_url( $theme_dir ) . '/assets/images/img-hero-eric-roden-2024-tablet.webp" type="image/webp" media="(min-width: 768px)">' . "\n";
+        echo '<link rel="preload" as="image" href="' . esc_url( $theme_dir ) . '/assets/images/img-hero-eric-roden-2024-mobile.webp" type="image/webp" media="(max-width: 767px)">' . "\n";
         return;
     }
-    $upload_dir = wp_get_upload_dir()['baseurl'];
-    $theme_dir  = get_template_directory_uri();
 
-    echo '<link rel="preload" as="image" href="' . esc_url( $upload_dir ) . '/assets/media/images/bg-hero-home-columns.webp" type="image/webp" media="(min-width: 768px)">' . "\n";
-    echo '<link rel="preload" as="image" href="' . esc_url( $upload_dir ) . '/2025/02/bg-hero-home-columns_mobile.webp" type="image/webp" media="(max-width: 767px)">' . "\n";
-    echo '<link rel="preload" as="image" href="' . esc_url( $theme_dir ) . '/assets/images/img-hero-eric-roden-2024-desktop.webp" type="image/webp" media="(min-width: 1199px)">' . "\n";
-    echo '<link rel="preload" as="image" href="' . esc_url( $theme_dir ) . '/assets/images/img-hero-eric-roden-2024-tablet.webp" type="image/webp" media="(min-width: 768px)">' . "\n";
-    echo '<link rel="preload" as="image" href="' . esc_url( $theme_dir ) . '/assets/images/img-hero-eric-roden-2024-mobile.webp" type="image/webp" media="(max-width: 767px)">' . "\n";
+    // Interior pages: preload featured image (LCP candidate).
+    if ( is_singular( array( 'practice_area', 'location', 'attorney', 'post' ) ) && has_post_thumbnail() ) {
+        $img_id  = get_post_thumbnail_id();
+        $img_src = wp_get_attachment_image_url( $img_id, 'large' );
+        if ( $img_src ) {
+            echo '<link rel="preload" as="image" href="' . esc_url( $img_src ) . '">' . "\n";
+        }
+    }
 }
 
 // Preconnect to Google Fonts domains
@@ -93,7 +103,7 @@ add_filter( 'style_loader_tag', 'roden_async_google_fonts', 10, 4 );
 function roden_async_google_fonts( $html, $handle, $href, $media ) {
     if ( 'roden-google-fonts' === $handle ) {
         // Preload + swap: loads font CSS without blocking render
-        $html  = '<link rel="preload" as="style" href="' . esc_url( $href ) . '" onload="this.onload=null;this.rel=\'stylesheet\'">' . "\n";
+        $html  = '<link rel="preload" as="style" href="' . esc_url( $href ) . '" crossorigin onload="this.onload=null;this.rel=\'stylesheet\'">' . "\n";
         $html .= '<noscript><link rel="stylesheet" href="' . esc_url( $href ) . '"></noscript>' . "\n";
     }
     return $html;

@@ -62,7 +62,10 @@
         btn.className = 'sub-menu-toggle';
         btn.setAttribute( 'aria-expanded', 'false' );
         btn.setAttribute( 'aria-label', 'Toggle submenu' );
-        btn.innerHTML = '<span aria-hidden="true">&#9662;</span>';
+        var chevron = document.createElement( 'span' );
+        chevron.setAttribute( 'aria-hidden', 'true' );
+        chevron.textContent = '\u25BE';
+        btn.appendChild( chevron );
         link.parentNode.insertBefore( btn, link.nextSibling );
 
         btn.addEventListener( 'click', function( e ) {

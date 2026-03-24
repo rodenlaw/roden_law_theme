@@ -104,6 +104,7 @@
         var dots = carousel.querySelectorAll('.testimonial-dot');
         var cards = track ? track.querySelectorAll('.testimonial-card') : [];
         var currentPage = 0;
+        var carouselInterval = parseInt(carousel.getAttribute('data-interval'), 10) || 8000;
         var autoTimer = null;
 
         function getPerPage() {
@@ -148,7 +149,7 @@
         function startAutoAdvance() {
             autoTimer = setInterval(function () {
                 goToPage(currentPage + 1);
-            }, 8000);
+            }, carouselInterval);
         }
 
         function resetAutoAdvance() {
@@ -243,7 +244,8 @@
         });
 
         if (sections.length) {
-            var headerOffset = 140; // header + jump nav height
+            var siteHeader = document.querySelector('.site-header');
+            var headerOffset = (siteHeader ? siteHeader.offsetHeight : 72) + jumpNav.offsetHeight + 16;
             window.addEventListener('scroll', function () {
                 var scrollY = window.pageYOffset + headerOffset;
                 var current = null;

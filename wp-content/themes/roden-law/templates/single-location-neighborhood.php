@@ -136,9 +136,9 @@ $directions_url = 'https://www.google.com/maps/dir/' . urlencode( $neighborhood_
      ================================================================ -->
 <section class="section section-map">
     <iframe
-        title="Map — <?php echo esc_attr( $office['name'] ); ?>"
+        title="<?php printf( esc_attr__( 'Location map for Roden Law — %s', 'roden-law' ), esc_attr( $office['market_name'] ) ); ?>"
         src="<?php echo esc_url( $map_embed ); ?>"
-        width="100%" height="350"
+        width="100%" height="400"
         style="border:0; display:block;"
         allowfullscreen loading="lazy"
         referrerpolicy="no-referrer-when-downgrade">

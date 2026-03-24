@@ -2,6 +2,13 @@
    RODEN LAW — AI-SEO WORDPRESS THEME STYLESHEET
    Design System: Navy (#013046) + Gold (#FCB415) + Light (#F8F6F2)
    Typography: Merriweather (serif headings) + Inter (body sans-serif)
+
+   BREAKPOINTS:
+     1024px — Desktop nav collapse, grid adjustments
+      900px — Tablet: hero stacks, sidebar below content, 2-col grids
+      768px — Mobile: hamburger nav, single-column, sticky CTA appears
+      480px — Small mobile: form fields stack, compact spacing
+      375px — Tiny screens: full-width drawer, minimal pagination
    ═══════════════════════════════════════════════════════════════════════════ */
 
 /* ─── CSS VARIABLES ────────────────────────────────────────────────────── */
@@ -132,7 +139,7 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none; line-height: 1.2;
 }
 .btn-lg { padding: 16px 32px; font-size: 15px; }
-.btn-sm { padding: 8px 14px; font-size: 12px; }
+.btn-sm { padding: 8px 14px; font-size: 12px; min-height: 44px; }
 .btn-block { width: 100%; }
 
 .btn-primary {
@@ -2109,6 +2116,7 @@ body.nav-open { overflow: hidden; }
         grid-template-columns: 1fr;
     }
     .pagination .page-numbers { min-width: 32px; height: 32px; font-size: 12px; padding: 6px; }
+    .mobile-nav-drawer { width: 100%; }
 }
 
 /* ═══════════════════════════════════════════════════════════════════════════
