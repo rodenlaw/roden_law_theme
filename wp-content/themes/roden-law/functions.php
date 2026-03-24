@@ -119,7 +119,11 @@ function roden_sitemap_trailing_slash_fix() {
         return;
     }
     $uri = strtok( $_SERVER['REQUEST_URI'], '?' );
-    if ( rtrim( $uri, '/' ) === '/wp-sitemap.xml' && $uri === '/wp-sitemap.xml' ) {
+    // Temp debug: log what URI we see on every request.
+    if ( strpos( $uri, 'sitemap' ) !== false ) {
+        error_log( 'SITEMAP_DEBUG: URI=[' . $uri . '] MATCH=[' . ( $uri === '/wp-sitemap.xml' ? 'YES' : 'NO' ) . ']' );
+    }
+    if ( $uri === '/wp-sitemap.xml' ) {
         wp_redirect( home_url( '/wp-sitemap.xml/' ), 301 );
         exit;
     }
