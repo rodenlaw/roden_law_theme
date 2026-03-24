@@ -119,7 +119,7 @@ add_action( 'template_redirect', 'roden_sitemap_trailing_slash_fix', 1 );
 function roden_sitemap_trailing_slash_fix() {
     $sitemap = get_query_var( 'sitemap' );
     if ( $sitemap === 'wp' ) {
-        wp_redirect( home_url( '/wp-sitemap.xml/' ), 301 );
+        wp_redirect( home_url( '/wp-sitemap.xml' ), 301 );
         exit;
     }
 }

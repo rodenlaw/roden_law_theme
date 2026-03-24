@@ -84,17 +84,9 @@ else :
         'orderby'        => 'title',
         'order'          => 'ASC',
         'meta_query'     => [
-            'relation' => 'AND',
-            [
-                'relation' => 'OR',
-                [ 'key' => '_roden_pa_office_key', 'compare' => 'NOT EXISTS' ],
-                [ 'key' => '_roden_pa_office_key', 'value' => '', 'compare' => '=' ],
-            ],
-            [
-                'relation' => 'OR',
-                [ 'key' => '_roden_parent_subtype', 'compare' => 'NOT EXISTS' ],
-                [ 'key' => '_roden_parent_subtype', 'value' => '', 'compare' => '=' ],
-            ],
+            'relation' => 'OR',
+            [ 'key' => '_roden_pa_office_key', 'compare' => 'NOT EXISTS' ],
+            [ 'key' => '_roden_pa_office_key', 'value' => '', 'compare' => '=' ],
         ],
     ]);
 
