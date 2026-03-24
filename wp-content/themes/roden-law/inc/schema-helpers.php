@@ -126,7 +126,7 @@ function roden_output_schema() {
         }
 
         // Article schema for sub-type pages (child PA posts without an office key).
-        if ( roden_is_subtype_page() ) {
+        if ( function_exists( 'roden_is_subtype_page' ) && roden_is_subtype_page() ) {
             roden_schema_article_subtype( $firm );
         }
     }
@@ -151,6 +151,14 @@ function roden_output_schema() {
         roden_schema_attorneys_list( $firm );
     }
 
+    if ( is_singular( 'case_result' ) ) {
+        roden_schema_case_result( $firm );
+    }
+
+    if ( is_singular( 'testimonial' ) ) {
+        roden_schema_testimonial( $firm );
+    }
+
     if ( is_singular( 'resource' ) ) {
         roden_schema_howto();
     }
@@ -158,6 +166,11 @@ function roden_output_schema() {
     if ( is_singular( 'post' ) ) {
         roden_schema_article( $firm );
         roden_schema_faq_page();
+    }
+
+    // Taxonomy archives — CollectionPage schema
+    if ( is_tax( 'practice_category' ) || is_tax( 'location_served' ) ) {
+        roden_schema_taxonomy_archive( $firm );
     }
 
     // Contact page — Organization with ContactPoint
@@ -1797,4 +1810,148 @@ function roden_schema_sc_statewide( $firm ) {
         $office = $firm['offices'][ $key ];
         roden_schema_local_business_office( $firm, $key, $office );
     }
+}
+
+/* ==========================================================================
+   CASE RESULT — Singular page schema
+   ========================================================================== */
+
+function roden_schema_case_result( $firm ) {
+    $post_id     = get_the_ID();
+    $amount      = get_post_meta( $post_id, '_roden_case_amount', true );
+    $result_type = get_post_meta( $post_id, '_roden_case_type', true );
+    $accident    = get_post_meta( $post_id, '_roden_accident_type', true );
+    $description = get_post_meta( $post_id, '_roden_description', true );
+    $attorney_id = get_post_meta( $post_id, '_roden_attorney', true );
+
+    $schema = array(
+        '@context'    => 'https://schema.org',
+        '@type'       => 'CreativeWork',
+        'name'        => get_the_title( $post_id ),
+        'description' => $description ?: wp_trim_words( get_the_excerpt( $post_id ), 30 ),
+        'url'         => get_permalink( $post_id ),
+        'publisher'   => array(
+            '@type' => 'Organization',
+            '@id'   => $firm['url'] . '/#organization',
+            'name'  => $firm['name'],
+        ),
+    );
+
+    if ( $amount ) {
+        // Parse numeric value from formatted amount (e.g., "$3,000,000" → 3000000).
+        $numeric = preg_replace( '/[^0-9.]/', '', $amount );
+        if ( $numeric ) {
+            $schema['about'] = array(
+                '@type'    => 'MonetaryAmount',
+                'currency' => 'USD',
+                'value'    => $numeric,
+                'name'     => $amount . ( $result_type ? ' ' . ucfirst( $result_type ) : '' ),
+            );
+        }
+    }
+
+    if ( $accident ) {
+        $schema['keywords'] = $accident;
+    }
+
+    if ( $attorney_id ) {
+        $atty = get_post( $attorney_id );
+        if ( $atty && 'publish' === $atty->post_status ) {
+            $schema['author'] = array(
+                '@type' => 'Person',
+                '@id'   => $firm['url'] . '/attorneys/' . $atty->post_name . '/#person',
+                'name'  => $atty->post_title,
+            );
+        }
+    }
+
+    roden_json_ld( $schema );
+}
+
+/* ==========================================================================
+   TESTIMONIAL — Singular page schema (Review)
+   ========================================================================== */
+
+function roden_schema_testimonial( $firm ) {
+    $post_id = get_the_ID();
+    $content = wp_strip_all_tags( get_the_content( null, false, $post_id ) );
+
+    $schema = array(
+        '@context'     => 'https://schema.org',
+        '@type'        => 'Review',
+        'itemReviewed' => array(
+            '@type' => 'LegalService',
+            '@id'   => $firm['url'] . '/#legalservice',
+            'name'  => $firm['name'],
+        ),
+        'reviewBody'   => $content,
+        'name'         => get_the_title( $post_id ),
+        'url'          => get_permalink( $post_id ),
+        'author'       => array(
+            '@type' => 'Person',
+            'name'  => get_the_title( $post_id ),
+        ),
+        'reviewRating' => array(
+            '@type'       => 'Rating',
+            'ratingValue' => '5',
+            'bestRating'  => '5',
+        ),
+        'publisher'    => array(
+            '@type' => 'Organization',
+            '@id'   => $firm['url'] . '/#organization',
+            'name'  => $firm['name'],
+        ),
+    );
+
+    roden_json_ld( $schema );
+}
+
+/* ==========================================================================
+   TAXONOMY ARCHIVE — CollectionPage schema
+   ========================================================================== */
+
+function roden_schema_taxonomy_archive( $firm ) {
+    $term = get_queried_object();
+    if ( ! $term || ! is_a( $term, 'WP_Term' ) ) {
+        return;
+    }
+
+    $schema = array(
+        '@context'    => 'https://schema.org',
+        '@type'       => 'CollectionPage',
+        'name'        => single_term_title( '', false ),
+        'description' => term_description( $term ) ?: sprintf( '%s — %s', $term->name, $firm['name'] ),
+        'url'         => get_term_link( $term ),
+        'isPartOf'    => array(
+            '@type' => 'WebSite',
+            '@id'   => $firm['url'] . '/#website',
+            'name'  => $firm['name'],
+        ),
+    );
+
+    // List items in this collection.
+    $posts = get_posts( array(
+        'post_type'      => 'any',
+        'posts_per_page' => 20,
+        'tax_query'      => array(
+            array(
+                'taxonomy' => $term->taxonomy,
+                'field'    => 'term_id',
+                'terms'    => $term->term_id,
+            ),
+        ),
+    ) );
+
+    if ( $posts ) {
+        $schema['hasPart'] = array();
+        foreach ( $posts as $p ) {
+            $schema['hasPart'][] = array(
+                '@type' => 'WebPage',
+                'name'  => $p->post_title,
+                'url'   => get_permalink( $p ),
+            );
+        }
+    }
+
+    roden_json_ld( $schema );
 }
