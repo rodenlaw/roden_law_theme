@@ -112,14 +112,14 @@ function roden_canonical_skip_sitemaps( $redirect_url, $requested_url ) {
 
 // WP Engine serves /wp-sitemap.xml (no trailing slash) as the blog homepage
 // because the rewrite rule only matches with a trailing slash on their stack.
-// Redirect the bare URL to the trailing-slash version which works correctly.
-add_action( 'template_redirect', 'roden_sitemap_trailing_slash_fix', 1 );
+// Intercept early via 'init' and redirect to the trailing-slash version.
+add_action( 'init', 'roden_sitemap_trailing_slash_fix' );
 function roden_sitemap_trailing_slash_fix() {
     if ( ! isset( $_SERVER['REQUEST_URI'] ) ) {
         return;
     }
     $uri = strtok( $_SERVER['REQUEST_URI'], '?' );
-    if ( $uri === '/wp-sitemap.xml' ) {
+    if ( rtrim( $uri, '/' ) === '/wp-sitemap.xml' && $uri === '/wp-sitemap.xml' ) {
         wp_redirect( home_url( '/wp-sitemap.xml/' ), 301 );
         exit;
     }
