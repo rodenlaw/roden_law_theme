@@ -502,6 +502,19 @@ add_action( 'wp_ajax_nopriv_roden_sidebar_submit', 'roden_sidebar_form_handler' 
 function roden_sidebar_form_handler() {
     check_ajax_referer( 'roden_sidebar_form', 'roden_form_nonce' );
 
+    // Honeypot: if hidden field is filled, it's a bot.
+    if ( ! empty( $_POST['website_url'] ) ) {
+        wp_send_json_success( array( 'message' => 'Thank you! We will be in touch shortly.' ) );
+    }
+
+    // Rate limit: max 5 submissions per IP per hour.
+    $ip_key = 'roden_form_' . md5( $_SERVER['REMOTE_ADDR'] ?? 'unknown' );
+    $count  = (int) get_transient( $ip_key );
+    if ( $count >= 5 ) {
+        wp_send_json_error( 'Too many submissions. Please try again later or call us directly.' );
+    }
+    set_transient( $ip_key, $count + 1, HOUR_IN_SECONDS );
+
     $first_name = sanitize_text_field( $_POST['first_name'] ?? '' );
     $last_name  = sanitize_text_field( $_POST['last_name'] ?? '' );
     $phone      = sanitize_text_field( $_POST['phone'] ?? '' );

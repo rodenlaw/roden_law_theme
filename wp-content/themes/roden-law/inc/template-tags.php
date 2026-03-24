@@ -642,6 +642,9 @@ function roden_contact_form_sidebar( $local_phone = '' ) {
         <p class="form-subtitle">No fees unless we win<br>500+ 5-star reviews</p>
         <form class="roden-sidebar-form" id="roden-sidebar-form" novalidate>
             <?php wp_nonce_field( 'roden_sidebar_form', 'roden_form_nonce' ); ?>
+            <div style="position:absolute;left:-9999px;" aria-hidden="true">
+                <input type="text" name="website_url" tabindex="-1" autocomplete="off">
+            </div>
             <div class="rsf-row rsf-half">
                 <div>
                     <label for="rsf-first-name" class="screen-reader-text"><?php esc_html_e( 'First Name', 'roden-law' ); ?></label>

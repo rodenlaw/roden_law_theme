@@ -23,7 +23,7 @@ function roden_firm_data() {
         'legal_entity' => 'Roden Love LLC',
         'vanity_phone' => '1-844-RESULTS',
         'phone_raw'    => '+18447378587',
-        'url'          => 'https://rodenlaw.com',
+        'url'          => home_url(),
         'description'  => 'Personal injury law firm serving Georgia and South Carolina with over $250 million recovered for injured clients.',
         'licensed_in'  => array( 'Georgia', 'South Carolina' ),
         'founded'      => '2013',

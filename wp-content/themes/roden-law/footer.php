@@ -123,20 +123,20 @@ $footer_practice_areas = array(
                     <h4 class="footer-heading footer-heading-accent">
                         <?php esc_html_e( 'Free Case Review', 'roden-law' ); ?>
                     </h4>
-                    <p class="footer-cta-text">Injured? Find out what your case is worth. No fees unless we win.</p>
-                    <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="footer-cta-btn">Get Your Free Case Review</a>
+                    <p class="footer-cta-text"><?php esc_html_e( 'Injured? Find out what your case is worth. No fees unless we win.', 'roden-law' ); ?></p>
+                    <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="footer-cta-btn"><?php esc_html_e( 'Get Your Free Case Review', 'roden-law' ); ?></a>
                 </div>
 
             </div><!-- .footer-grid -->
 
             <!-- Legal Disclaimers -->
             <div class="footer-disclaimers">
-                <p><strong>Disclaimer:</strong> Attorney Eric Roden is responsible for the content of this website, and his primary office address is 333 Commercial Drive, Savannah, GA 31406. South Carolina cases are principally handled out of the Charleston and North Charleston, South Carolina offices. South Carolina cases are primarily handled by attorney Graeham Gillin, and the primary office addresses are 127 King Street, Charleston, SC 29401 and 2703 Spruill Ave, North Charleston, SC 29405. Georgia cases are principally handled out of the Savannah and Darien, Georgia offices.</p>
-                <p><strong>Case Results:</strong> Case "value," "results," and/or "maximum compensation" is determined from the total settlement amount. The settlement amounts shown are gross numbers before attorney's fees and cost deductions. The % fees will be computed before deducting expenses and costs from the gross settlement. Each case is unique, and the examples shown are just that, examples of past results. Past results do not guarantee or suggest recovery in your specific case. Each case is different.</p>
-                <p><strong>No Upfront Fees:</strong> Fees and costs apply only upon successful recovery. No fees or costs with no recovery.</p>
-                <p><strong>Testimonials:</strong> Testimonials reflect individual experiences and do not guarantee similar outcomes. No clients were paid for endorsements unless otherwise disclosed.</p>
-                <p><strong>Content:</strong> The term 'expert witness' refers to individuals who testify based on their professional expertise in court. Roden Law attorneys do not claim the title of legal 'expert' as defined by South Carolina Rule 7.4(b), unless certified by the appropriate authority.</p>
-                <p>The information contained in this Website is provided for informational purposes only and should not be construed as legal advice on any subject matter. Furthermore, The Firm does not wish to represent anyone desiring representation based upon viewing this Website in a state where this Website fails to comply with all laws and ethical rules of that state. Roden Law is licensed to practice in the states of Georgia and South Carolina. Reproduction, distribution, republication, and/or retransmission of material contained within The Roden Law Website is prohibited unless the prior written permission of Roden Law has been obtained.</p>
+                <p><strong><?php esc_html_e( 'Disclaimer:', 'roden-law' ); ?></strong> <?php esc_html_e( 'Attorney Eric Roden is responsible for the content of this website, and his primary office address is 333 Commercial Drive, Savannah, GA 31406. South Carolina cases are principally handled out of the Charleston and North Charleston, South Carolina offices. South Carolina cases are primarily handled by attorney Graeham Gillin, and the primary office addresses are 127 King Street, Charleston, SC 29401 and 2703 Spruill Ave, North Charleston, SC 29405. Georgia cases are principally handled out of the Savannah and Darien, Georgia offices.', 'roden-law' ); ?></p>
+                <p><strong><?php esc_html_e( 'Case Results:', 'roden-law' ); ?></strong> <?php esc_html_e( 'Case "value," "results," and/or "maximum compensation" is determined from the total settlement amount. The settlement amounts shown are gross numbers before attorney\'s fees and cost deductions. The % fees will be computed before deducting expenses and costs from the gross settlement. Each case is unique, and the examples shown are just that, examples of past results. Past results do not guarantee or suggest recovery in your specific case. Each case is different.', 'roden-law' ); ?></p>
+                <p><strong><?php esc_html_e( 'No Upfront Fees:', 'roden-law' ); ?></strong> <?php esc_html_e( 'Fees and costs apply only upon successful recovery. No fees or costs with no recovery.', 'roden-law' ); ?></p>
+                <p><strong><?php esc_html_e( 'Testimonials:', 'roden-law' ); ?></strong> <?php esc_html_e( 'Testimonials reflect individual experiences and do not guarantee similar outcomes. No clients were paid for endorsements unless otherwise disclosed.', 'roden-law' ); ?></p>
+                <p><strong><?php esc_html_e( 'Content:', 'roden-law' ); ?></strong> <?php esc_html_e( 'The term \'expert witness\' refers to individuals who testify based on their professional expertise in court. Roden Law attorneys do not claim the title of legal \'expert\' as defined by South Carolina Rule 7.4(b), unless certified by the appropriate authority.', 'roden-law' ); ?></p>
+                <p><?php esc_html_e( 'The information contained in this Website is provided for informational purposes only and should not be construed as legal advice on any subject matter. Furthermore, The Firm does not wish to represent anyone desiring representation based upon viewing this Website in a state where this Website fails to comply with all laws and ethical rules of that state. Roden Law is licensed to practice in the states of Georgia and South Carolina. Reproduction, distribution, republication, and/or retransmission of material contained within The Roden Law Website is prohibited unless the prior written permission of Roden Law has been obtained.', 'roden-law' ); ?></p>
             </div>
 
             <!-- Copyright Bar -->
@@ -165,15 +165,10 @@ $footer_practice_areas = array(
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="pa-mobile-cta__review"><?php esc_html_e( 'Free Review', 'roden-law' ); ?></a>
 </div>
 
-<!-- JuvoLeads Live Chat (desktop only) -->
-<script>
-if (window.innerWidth > 768) {
-    var s = document.createElement('script');
-    s.src = 'https://cdn.juvoleads.com/tag/9262634398.js';
-    s.async = true;
-    document.body.appendChild(s);
-}
-</script>
+<!-- JuvoLeads Live Chat (desktop only, loaded conditionally) -->
+<?php if ( ! wp_is_mobile() ) : ?>
+    <script id="juvoleads-loader" defer src="https://cdn.juvoleads.com/tag/9262634398.js"></script>
+<?php endif; ?>
 
 <?php wp_footer(); ?>
 </body>

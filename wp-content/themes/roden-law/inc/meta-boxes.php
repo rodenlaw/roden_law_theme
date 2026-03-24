@@ -905,6 +905,12 @@ function roden_save_meta_fields( $post_id ) {
         return;
     }
 
+    // Only process CPTs and posts that use our meta boxes.
+    $supported_types = array( 'practice_area', 'location', 'attorney', 'case_result', 'testimonial', 'resource', 'post' );
+    if ( ! in_array( get_post_type( $post_id ), $supported_types, true ) ) {
+        return;
+    }
+
     /* ── Practice Area: Jurisdiction & SOL ───────────────────────── */
 
     if ( isset( $_POST['_roden_pa_jurisdiction_nonce'] ) &&
@@ -1036,10 +1042,12 @@ function roden_save_meta_fields( $post_id ) {
             sanitize_text_field( $_POST['_roden_neighborhood_population'] ?? '' ) );
         update_post_meta( $post_id, '_roden_neighborhood_court',
             sanitize_text_field( $_POST['_roden_neighborhood_court'] ?? '' ) );
+        $raw_lat = sanitize_text_field( $_POST['_roden_neighborhood_latitude'] ?? '' );
+        $raw_lng = sanitize_text_field( $_POST['_roden_neighborhood_longitude'] ?? '' );
         update_post_meta( $post_id, '_roden_neighborhood_latitude',
-            sanitize_text_field( $_POST['_roden_neighborhood_latitude'] ?? '' ) );
+            '' !== $raw_lat ? (string) floatval( $raw_lat ) : '' );
         update_post_meta( $post_id, '_roden_neighborhood_longitude',
-            sanitize_text_field( $_POST['_roden_neighborhood_longitude'] ?? '' ) );
+            '' !== $raw_lng ? (string) floatval( $raw_lng ) : '' );
     }
 
     /* ── Location: Office Key ────────────────────────────────────── */
