@@ -643,12 +643,21 @@ function roden_contact_form_sidebar( $local_phone = '' ) {
         <form class="roden-sidebar-form" id="roden-sidebar-form" novalidate>
             <?php wp_nonce_field( 'roden_sidebar_form', 'roden_form_nonce' ); ?>
             <div class="rsf-row rsf-half">
-                <input type="text" name="first_name" placeholder="First Name" required>
-                <input type="text" name="last_name" placeholder="Last Name" required>
+                <div>
+                    <label for="rsf-first-name" class="screen-reader-text"><?php esc_html_e( 'First Name', 'roden-law' ); ?></label>
+                    <input type="text" name="first_name" id="rsf-first-name" placeholder="First Name" autocomplete="given-name" required>
+                </div>
+                <div>
+                    <label for="rsf-last-name" class="screen-reader-text"><?php esc_html_e( 'Last Name', 'roden-law' ); ?></label>
+                    <input type="text" name="last_name" id="rsf-last-name" placeholder="Last Name" autocomplete="family-name" required>
+                </div>
             </div>
-            <input type="tel" name="phone" id="rsf-phone" placeholder="(555) 555-5555" required>
-            <input type="email" name="email" id="rsf-email" placeholder="Email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
-            <textarea name="message" placeholder="Please describe what happened" rows="8"></textarea>
+            <label for="rsf-phone" class="screen-reader-text"><?php esc_html_e( 'Phone Number', 'roden-law' ); ?></label>
+            <input type="tel" name="phone" id="rsf-phone" placeholder="(555) 555-5555" autocomplete="tel" required>
+            <label for="rsf-email" class="screen-reader-text"><?php esc_html_e( 'Email Address', 'roden-law' ); ?></label>
+            <input type="email" name="email" id="rsf-email" placeholder="Email" autocomplete="email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
+            <label for="rsf-message" class="screen-reader-text"><?php esc_html_e( 'Describe what happened', 'roden-law' ); ?></label>
+            <textarea name="message" id="rsf-message" placeholder="Please describe what happened" rows="8"></textarea>
             <label class="rsf-consent">
                 <input type="checkbox" name="consent" value="1" checked required>
                 <span>I hereby expressly consent to receive automated communications including calls, texts, emails, and/or prerecorded messages. By submitting this form, you agree to our <a href="<?php echo esc_url( home_url( '/terms-privacy-policy/' ) ); ?>" target="_blank">Terms &amp; Privacy Policy</a>.</span>

@@ -21,15 +21,15 @@
     --gray-100:     #f5f5f5;
     --gray-200:     #e0e0e0;
     --gray-300:     #cccccc;
-    --gray-400:     #999999;
-    --gray-500:     #888888;
+    --gray-400:     #767676;
+    --gray-500:     #717171;
     --gray-600:     #666666;
     --gray-700:     #555555;
     --gray-800:     #333333;
     --gray-900:     #1a1a1a;
     --text-primary: #333333;
     --text-secondary:#666666;
-    --text-muted:   #888888;
+    --text-muted:   #717171;
     --text-light:   #aab4c8;
     --font-serif:   'Merriweather', Georgia, serif;
     --font-sans:    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -58,6 +58,40 @@ body {
 img { max-width: 100%; height: auto; display: block; }
 a { color: var(--navy); text-decoration: none; transition: var(--transition); }
 a:hover { color: var(--orange-text); }
+
+/* ─── FOCUS STATES (WCAG 2.1 — keyboard navigation) ─────────────────── */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[role="button"]:focus-visible,
+summary:focus-visible {
+    outline: 2px solid var(--orange);
+    outline-offset: 2px;
+}
+/* Dark backgrounds: use white outline for visibility */
+.bg-navy a:focus-visible,
+.bg-navy button:focus-visible,
+.hero a:focus-visible,
+.hero button:focus-visible,
+.sidebar-contact-form a:focus-visible,
+.sidebar-contact-form button:focus-visible,
+.site-header a:focus-visible,
+.site-header button:focus-visible,
+.footer a:focus-visible,
+.footer button:focus-visible {
+    outline-color: var(--white);
+}
+/* Form fields: keep orange ring style but make it visible */
+.roden-sidebar-form input:focus-visible,
+.roden-sidebar-form select:focus-visible,
+.roden-sidebar-form textarea:focus-visible,
+.search-field:focus-visible {
+    outline: none;
+    border-color: var(--orange);
+    box-shadow: 0 0 0 3px rgba(252, 180, 21, 0.4);
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-serif);
@@ -768,7 +802,7 @@ h1, h2, h3, h4, h5, h6 {
 .roden-sidebar-form textarea:focus {
     outline: none;
     border-color: var(--orange);
-    box-shadow: 0 0 0 2px rgba(252, 180, 21, 0.25);
+    box-shadow: 0 0 0 3px rgba(252, 180, 21, 0.4);
 }
 .roden-sidebar-form select {
     appearance: none;
