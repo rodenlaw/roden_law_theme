@@ -45,7 +45,7 @@ $post_type = get_post_type();
                         get_template_part( 'template-parts/content', 'card' );
                     endwhile; ?>
                 </div>
-                <nav class="pagination">
+                <nav class="pagination" aria-label="<?php esc_attr_e( 'Archive pagination', 'roden-law' ); ?>">
                     <?php the_posts_pagination( [ 'mid_size' => 2, 'prev_text' => '← Previous', 'next_text' => 'Next →' ] ); ?>
                 </nav>
             <?php endif; ?>

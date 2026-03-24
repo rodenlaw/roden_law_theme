@@ -953,7 +953,7 @@ $city_is_custom = ! empty( $city_raw );
             <div class="no-fee-icon">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
             </div>
-            Free Case Evaluation
+            Free Case Review
         </div>
         <div class="no-fee-item">
             <div class="no-fee-icon">

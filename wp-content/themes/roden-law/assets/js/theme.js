@@ -6,6 +6,8 @@
 (function () {
     'use strict';
 
+    var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
     /* ── FAQ Accordion ────────────────────────────────────────── */
 
     document.querySelectorAll('.faq-question').forEach(function (btn) {
@@ -63,7 +65,7 @@
                     ? document.querySelector('.site-header').offsetHeight
                     : 0;
                 var top = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 16;
-                window.scrollTo({ top: top, behavior: 'smooth' });
+                window.scrollTo({ top: top, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
             }
         });
     });
@@ -154,7 +156,7 @@
             startAutoAdvance();
         }
 
-        startAutoAdvance();
+        if (!prefersReducedMotion) startAutoAdvance();
 
         // Pause on hover
         carousel.addEventListener('mouseenter', function () {
@@ -162,7 +164,7 @@
         });
 
         carousel.addEventListener('mouseleave', function () {
-            startAutoAdvance();
+            if (!prefersReducedMotion) startAutoAdvance();
         });
 
         // Handle resize — recalculate position
@@ -270,7 +272,7 @@
         }, { passive: true });
 
         backToTop.addEventListener('click', function () {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            window.scrollTo({ top: 0, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
         });
     }
 

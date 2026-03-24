@@ -255,7 +255,7 @@ $related_subtypes = get_posts( array(
                     <a href="tel:<?php echo esc_attr( $office['phone_raw'] ); ?>" class="btn btn-primary">
                         Call <?php echo esc_html( $office['phone'] ); ?>
                     </a>
-                    <a href="#contact" class="btn btn-outline-light">Free Case Evaluation</a>
+                    <a href="#contact" class="btn btn-outline-light">Free Case Review</a>
                 </div>
             </div>
 

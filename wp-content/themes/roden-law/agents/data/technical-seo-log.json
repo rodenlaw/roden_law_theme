@@ -1,0 +1,45 @@
+{
+  "_meta": {
+    "description": "Crawl, index, and speed history for Roden Law technical SEO monitoring",
+    "last_updated": null,
+    "version": "1.0.0",
+    "check_types": ["crawl", "index-coverage", "core-web-vitals", "pagespeed", "mobile-usability", "schema-errors"],
+    "tools": ["google-search-console", "pagespeed-insights", "screaming-frog", "semrush", "manual"]
+  },
+  "crawl_runs": [],
+  "index_coverage": {
+    "snapshots": [],
+    "excluded_urls": [],
+    "noindex_intentional": [],
+    "noindex_unintentional": []
+  },
+  "core_web_vitals": {
+    "snapshots": [],
+    "by_page_type": {
+      "homepage": [],
+      "pillar": [],
+      "intersection": [],
+      "location": [],
+      "blog_post": []
+    }
+  },
+  "pagespeed": {
+    "snapshots": [],
+    "regressions": []
+  },
+  "redirects": {
+    "log": [],
+    "chains": [],
+    "broken": []
+  },
+  "robots_txt": {
+    "snapshots": []
+  },
+  "sitemap": {
+    "snapshots": [],
+    "errors": []
+  },
+  "schema_errors": [],
+  "alerts": [],
+  "last_full_crawl": null
+}

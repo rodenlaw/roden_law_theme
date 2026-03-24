@@ -88,7 +88,7 @@
                 <p>If you were injured and believe another party is at fault, contact us for a free, no-obligation review. We dedicate our skills and resources to recovering the maximum compensation you deserve — at no upfront cost.</p>
                 <div class="cta-actions">
                     <a href="tel:<?php echo esc_attr($firm['phone_e164']); ?>" class="btn btn-primary">&#128222; Call <?php echo esc_html($firm['phone']); ?></a>
-                    <a href="#contact" class="btn btn-outline-light">Free Case Evaluation</a>
+                    <a href="#contact" class="btn btn-outline-light">Free Case Review</a>
                 </div>
             </div>
         </article>

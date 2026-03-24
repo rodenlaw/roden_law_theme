@@ -1,0 +1,46 @@
+{
+  "_meta": {
+    "description": "Page freshness scores and content decay signals for Roden Law site",
+    "last_updated": null,
+    "version": "1.0.0",
+    "score_range": "0–100 (100 = fully fresh, 0 = severely stale)",
+    "decay_signals": [
+      "statute_of_limitations_outdated",
+      "statute_citation_missing",
+      "no_author_attribution",
+      "thin_word_count",
+      "missing_faqs",
+      "no_internal_links",
+      "no_case_results",
+      "stale_publish_date",
+      "broken_links",
+      "missing_schema",
+      "no_location_targeting"
+    ],
+    "page_types": ["pillar", "intersection", "subtype", "location", "attorney", "blog_post", "resource"]
+  },
+  "pages": [],
+  "by_page_type": {
+    "pillar": [],
+    "intersection": [],
+    "subtype": [],
+    "location": [],
+    "attorney": [],
+    "blog_post": [],
+    "resource": []
+  },
+  "decay_thresholds": {
+    "critical": 40,
+    "warning": 65,
+    "healthy": 80
+  },
+  "refresh_queue": [],
+  "last_full_audit": null,
+  "summary": {
+    "total_pages_audited": 0,
+    "critical_count": 0,
+    "warning_count": 0,
+    "healthy_count": 0,
+    "avg_score": null
+  }
+}

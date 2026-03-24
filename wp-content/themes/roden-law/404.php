@@ -11,9 +11,12 @@ $firm = roden_firm_data();
     <div class="container text-center">
         <h1 class="hero-title">Page Not Found</h1>
         <p class="hero-subtitle">The page you're looking for doesn't exist or has been moved.</p>
-        <div class="hero-actions">
+        <div class="blog-search" style="max-width: 480px; margin: 24px auto 0;">
+            <?php get_search_form(); ?>
+        </div>
+        <div class="hero-actions" style="margin-top: 16px;">
             <a href="<?php echo esc_url(home_url('/')); ?>" class="btn btn-primary btn-lg">Go to Homepage</a>
-            <a href="tel:<?php echo esc_attr($firm['phone_e164']); ?>" class="btn btn-outline-light btn-lg">📞 Call <?php echo esc_html($firm['phone']); ?></a>
+            <a href="tel:<?php echo esc_attr($firm['phone_e164']); ?>" class="btn btn-outline-light btn-lg">Call <?php echo esc_html($firm['phone']); ?></a>
         </div>
     </div>
 </section>

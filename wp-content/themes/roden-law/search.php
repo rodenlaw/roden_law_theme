@@ -62,10 +62,36 @@ $firm = roden_firm_data();
                         <li>Try more general search terms</li>
                         <li>Browse our <a href="<?php echo esc_url( home_url( '/practice-areas/' ) ); ?>">practice areas</a></li>
                     </ul>
+
+                    <?php
+                    $popular_pas = get_posts( [ 'post_type' => 'practice_area', 'posts_per_page' => 4, 'post_parent' => 0, 'orderby' => 'menu_order', 'order' => 'ASC' ] );
+                    if ( $popular_pas ) : ?>
+                        <h3 style="margin-top: 24px;">Popular Practice Areas</h3>
+                        <div class="sub-types-grid" style="margin-bottom: 24px;">
+                            <?php foreach ( $popular_pas as $pa ) : ?>
+                                <a href="<?php echo esc_url( get_permalink( $pa ) ); ?>" class="sub-type-card sub-type-link">
+                                    <span class="st-name"><?php echo esc_html( $pa->post_title ); ?></span>
+                                    <span class="st-arrow">&rarr;</span>
+                                </a>
+                            <?php endforeach; ?>
+                        </div>
+                    <?php endif; ?>
+
+                    <?php
+                    $recent_posts = get_posts( [ 'posts_per_page' => 3, 'post_status' => 'publish' ] );
+                    if ( $recent_posts ) : ?>
+                        <h3>Recent Articles</h3>
+                        <ul class="sidebar-links">
+                            <?php foreach ( $recent_posts as $rp ) : ?>
+                                <li><a href="<?php echo esc_url( get_permalink( $rp ) ); ?>"><?php echo esc_html( $rp->post_title ); ?></a></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    <?php endif; ?>
+
                     <div class="no-results-cta">
                         <p>Need help with a personal injury case?</p>
                         <a href="tel:<?php echo esc_attr( $firm['phone_e164'] ); ?>" class="btn btn-primary"><?php echo esc_html( $firm['phone'] ); ?></a>
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>#contact" class="btn btn-dark">Free Case Evaluation</a>
+                        <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn-dark">Free Case Review</a>
                     </div>
                 </div>
             <?php endif; ?>
@@ -77,7 +103,7 @@ $firm = roden_firm_data();
                     <h3>Injured? Talk to a Lawyer.</h3>
                     <p>Free consultation. No fees unless we win.</p>
                     <a href="tel:<?php echo esc_attr( $firm['phone_e164'] ); ?>" class="btn btn-primary btn-block"><?php echo esc_html( $firm['phone'] ); ?></a>
-                    <a href="#contact" class="btn btn-outline-light btn-block">Free Case Evaluation</a>
+                    <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn-outline-light btn-block">Free Case Review</a>
                 </div>
 
                 <div class="sidebar-widget">

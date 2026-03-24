@@ -1,0 +1,16 @@
+[
+  {
+    "cycle": 1,
+    "date": "2026-03-20",
+    "task": "ROD-9",
+    "combos_audited": [
+      "car-accident-lawyers x savannah-ga",
+      "truck-accident-lawyers x charleston-sc",
+      "wrongful-death-lawyers x columbia-sc"
+    ],
+    "questions_collected": 17,
+    "gaps_found": 14,
+    "issues_created": 12,
+    "issues": ["ROD-33", "ROD-34", "ROD-35", "ROD-36", "ROD-37", "ROD-38", "ROD-39", "ROD-40", "ROD-41", "ROD-42", "ROD-43", "ROD-44"]
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "_meta": {
+    "description": "Keyword position tracking over time for PI keywords across 5 Roden Law markets",
+    "last_updated": null,
+    "version": "1.0.0",
+    "markets": ["savannah-ga", "darien-ga", "charleston-sc", "columbia-sc", "myrtle-beach-sc"],
+    "tracked_serps": ["google-organic", "google-local-pack", "bing-organic"]
+  },
+  "snapshots": [],
+  "keywords": {
+    "savannah-ga": [],
+    "darien-ga": [],
+    "charleston-sc": [],
+    "columbia-sc": [],
+    "myrtle-beach-sc": []
+  },
+  "competitors": {
+    "savannah-ga": [],
+    "darien-ga": [],
+    "charleston-sc": [],
+    "columbia-sc": [],
+    "myrtle-beach-sc": []
+  },
+  "alerts": []
+}

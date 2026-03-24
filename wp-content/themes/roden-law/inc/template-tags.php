@@ -679,7 +679,7 @@ function roden_inline_cta_banner() {
     ?>
     <div class="inline-cta-banner">
         <div class="cta-text">
-            <strong>Free Case Evaluation &mdash; No Fees Unless We Win</strong>
+            <strong>Free Case Review &mdash; No Fees Unless We Win</strong>
             <span>Available 24/7 &middot; Georgia &amp; South Carolina</span>
         </div>
         <a href="tel:<?php echo esc_attr( $firm['phone_e164'] ); ?>" class="btn btn-primary"><?php echo esc_html( $firm['phone'] ); ?></a>

@@ -121,9 +121,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <button class="menu-toggle" aria-controls="site-navigation"
                     aria-expanded="false"
                     aria-label="<?php esc_attr_e( 'Toggle Menu', 'roden-law' ); ?>">
-                <span class="menu-toggle-bar"></span>
-                <span class="menu-toggle-bar"></span>
-                <span class="menu-toggle-bar"></span>
+                <span class="menu-toggle-bar" aria-hidden="true"></span>
+                <span class="menu-toggle-bar" aria-hidden="true"></span>
+                <span class="menu-toggle-bar" aria-hidden="true"></span>
             </button>
 
         </div>

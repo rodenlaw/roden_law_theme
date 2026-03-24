@@ -1,0 +1,47 @@
+{
+  "_meta": {
+    "description": "Tracks rotation position across 110 PA × city combos (22 PAs × 5 cities)",
+    "order": "PA-first: for each PA, iterate all 5 cities before moving to next PA",
+    "total_combos": 110,
+    "cities": ["savannah-ga", "darien-ga", "charleston-sc", "columbia-sc", "myrtle-beach-sc"],
+    "practice_areas": [
+      "car-accident-lawyers",
+      "truck-accident-lawyers",
+      "slip-and-fall-lawyers",
+      "motorcycle-accident-lawyers",
+      "medical-malpractice-lawyers",
+      "wrongful-death-lawyers",
+      "workers-compensation-lawyers",
+      "dog-bite-lawyers",
+      "brain-injury-lawyers",
+      "spinal-cord-injury-lawyers",
+      "maritime-injury-lawyers",
+      "product-liability-lawyers",
+      "boating-accident-lawyers",
+      "burn-injury-lawyers",
+      "construction-accident-lawyers",
+      "nursing-home-abuse-lawyers",
+      "premises-liability-lawyers",
+      "pedestrian-accident-lawyers",
+      "bicycle-accident-lawyers",
+      "electric-scooter-accident-lawyers",
+      "atv-side-by-side-accident-lawyers",
+      "golf-cart-accident-lawyers"
+    ]
+  },
+  "next_index": 3,
+  "cycles_completed": 1,
+  "last_cycle_date": "2026-03-20",
+  "history": [
+    {
+      "cycle": 1,
+      "date": "2026-03-20",
+      "combos": [
+        "car-accident-lawyers x savannah-ga",
+        "truck-accident-lawyers x charleston-sc",
+        "wrongful-death-lawyers x columbia-sc"
+      ],
+      "note": "Task ROD-9 specified these 3 combos (not standard rotation order). Standard rotation begins next cycle at index 3 (car-accident-lawyers x columbia-sc)."
+    }
+  ]
+}

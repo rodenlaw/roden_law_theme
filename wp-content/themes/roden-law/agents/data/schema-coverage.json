@@ -1,0 +1,390 @@
+{
+  "_meta": {
+    "description": "Schema type × page type validation matrix for Roden Law",
+    "last_updated": "2026-03-21",
+    "audited_by": "Schema Auditor (a8332982)",
+    "audit_source": "PHP source review — inc/schema-helpers.php + inc/firm-data.php (v1.3.0 reflects post-fix schema pushes through 2026-03-20)",
+    "version": "1.3.0",
+    "schema_types": [
+      "Organization",
+      "LawFirm",
+      "LegalService",
+      "LocalBusiness",
+      "Person",
+      "FAQPage",
+      "HowTo",
+      "BreadcrumbList",
+      "Speakable",
+      "AggregateRating",
+      "WebSite",
+      "BlogPosting",
+      "Article"
+    ],
+    "page_types": [
+      "homepage",
+      "pillar",
+      "intersection",
+      "subtype",
+      "location",
+      "neighborhood_location",
+      "attorney",
+      "case_result",
+      "resource",
+      "blog_post",
+      "archive",
+      "sc_ppc_landing"
+    ],
+    "status_legend": {
+      "present": "Schema block confirmed present and valid (by PHP source)",
+      "present_warn": "Schema block present but has issues",
+      "absent_ok": "Schema block absent — expected/correct for this page type",
+      "absent_gap": "Schema block absent — MISSING, should be present",
+      "not_audited": "Page type not yet audited"
+    }
+  },
+  "matrix": {
+    "homepage": {
+      "Organization": "present",
+      "LawFirm": "present",
+      "LegalService": "present",
+      "LocalBusiness": "present",
+      "Person": "absent_ok",
+      "FAQPage": "absent_ok",
+      "HowTo": "absent_ok",
+      "BreadcrumbList": "present",
+      "Speakable": "present",
+      "AggregateRating": "present",
+      "WebSite": "present",
+      "BlogPosting": "absent_ok",
+      "Article": "absent_ok",
+      "_notes": "Organization now correctly typed as ['Organization','LawFirm']. LocalBusiness @type now includes LawFirm. reviewCount sourced from firm_data. Single-item BreadcrumbList emitted."
+    },
+    "pillar": {
+      "Organization": "absent_ok",
+      "LawFirm": "absent_ok",
+      "LegalService": "present",
+      "LocalBusiness": "absent_ok",
+      "Person": "present",
+      "FAQPage": "present",
+      "HowTo": "absent_ok",
+      "BreadcrumbList": "present",
+      "Speakable": "present",
+      "AggregateRating": "absent_ok",
+      "WebSite": "absent_ok",
+      "BlogPosting": "absent_ok",
+      "Article": "absent_ok",
+      "_notes": "LegalService now uses page-specific @id ('{page_url}#legalservice') with isPartOf back to firm entity. roden_schema_pa_attorney() outputs Person for E-E-A-T."
+    },
+    "intersection": {
+      "Organization": "absent_ok",
+      "LawFirm": "absent_ok",
+      "LegalService": "present",
+      "LocalBusiness": "present",
+      "Person": "present",
+      "FAQPage": "present",
+      "HowTo": "absent_ok",
+      "BreadcrumbList": "present",
+      "Speakable": "present",
+      "AggregateRating": "absent_ok",
+      "WebSite": "absent_ok",
+      "BlogPosting": "absent_ok",
+      "Article": "absent_ok",
+      "_notes": "ERR-006 resolved: roden_get_canonical_url() now builds correct /[parent-slug]/[child-slug]/ paths without /practice-areas/ prefix. LocalBusiness now output via roden_schema_local_business_single(). Person via roden_schema_pa_attorney(). LegalService areaServed narrowed to office city."
+    },
+    "subtype": {
+      "Organization": "absent_ok",
+      "LawFirm": "absent_ok",
+      "LegalService": "present",
+      "LocalBusiness": "absent_ok",
+      "Person": "present",
+      "FAQPage": "present",
+      "HowTo": "absent_ok",
+      "BreadcrumbList": "present",
+      "Speakable": "present",
+      "AggregateRating": "absent_ok",
+      "WebSite": "absent_ok",
+      "BlogPosting": "absent_ok",
+      "Article": "present",
+      "_notes": "ERR-006 resolved: canonical URL mismatch fixed. Person schema output via roden_schema_pa_attorney(). Article schema from roden_schema_article_subtype() with About link to parent pillar. WARN-005 (wordCount) remains a content-level concern."
+    },
+    "location": {
+      "Organization": "absent_ok",
+      "LawFirm": "absent_ok",
+      "LegalService": "present",
+      "LocalBusiness": "present",
+      "Person": "absent_ok",
+      "FAQPage": "present",
+      "HowTo": "absent_ok",
+      "BreadcrumbList": "present",
+      "Speakable": "present",
+      "AggregateRating": "absent_ok",
+      "WebSite": "absent_ok",
+      "BlogPosting": "absent_ok",
+      "Article": "absent_ok",
+      "_notes": "Speakable now added (was absent_gap in v1.2.0). LegalService emitted via LocalBusiness @type ['LocalBusiness','LegalService','LawFirm']. FAQPage populated from _roden_faqs meta. BreadcrumbList includes State intermediate crumb."
+    },
+    "neighborhood_location": {
+      "Organization": "absent_ok",
+      "LawFirm": "absent_ok",
+      "LegalService": "present",
+      "LocalBusiness": "present",
+      "Person": "absent_ok",
+      "FAQPage": "present",
+      "HowTo": "absent_ok",
+      "BreadcrumbList": "present",
+      "Speakable": "present",
+      "AggregateRating": "absent_ok",
+      "WebSite": "absent_ok",
+      "BlogPosting": "absent_ok",
+      "Article": "absent_ok",
+      "_notes": "NEW page type added in recent schema push. roden_schema_neighborhood_legal_service() outputs rich LegalService with areaServed (neighborhood + parsed service area communities), makesOffer (6 top PAs), geo (neighborhood-specific if lat/lng set), openingHours, and directions URL. roden_schema_local_business_neighborhood() outputs parent office LocalBusiness with neighborhood in areaServed. BreadcrumbList navigates: Locations > State > City > Neighborhood."
+    },
+    "attorney": {
+      "Organization": "absent_ok",
+      "LawFirm": "absent_ok",
+      "LegalService": "absent_ok",
+      "LocalBusiness": "absent_ok",
+      "Person": "present",
+      "FAQPage": "absent_ok",
+      "HowTo": "absent_ok",
+      "BreadcrumbList": "present",
+      "Speakable": "absent_ok",
+      "AggregateRating": "absent_ok",
+      "WebSite": "absent_ok",
+      "BlogPosting": "absent_ok",
+      "Article": "absent_ok",
+      "_notes": "ERR-001 resolved: Person @id now always uses rodenlaw.com canonical domain. Eric Roden now shows SC bar admission (ERR-004 resolved). worksFor @type correctly set to 'Organization' matching /#organization @id."
+    },
+    "case_result": {
+      "Organization": "absent_ok",
+      "LawFirm": "absent_ok",
+      "LegalService": "absent_ok",
+      "LocalBusiness": "absent_ok",
+      "Person": "absent_ok",
+      "FAQPage": "absent_ok",
+      "HowTo": "absent_ok",
+      "BreadcrumbList": "present",
+      "Speakable": "absent_ok",
+      "AggregateRating": "absent_ok",
+      "WebSite": "absent_ok",
+      "BlogPosting": "absent_ok",
+      "Article": "absent_ok",
+      "_notes": "BreadcrumbList code confirmed: is_singular('case_result') falls through to generic is_singular() branch. No rich schema type needed for case results."
+    },
+    "resource": {
+      "Organization": "absent_ok",
+      "LawFirm": "absent_ok",
+      "LegalService": "absent_ok",
+      "LocalBusiness": "absent_ok",
+      "Person": "absent_ok",
+      "FAQPage": "absent_ok",
+      "HowTo": "present",
+      "BreadcrumbList": "present",
+      "Speakable": "absent_ok",
+      "AggregateRating": "absent_ok",
+      "WebSite": "absent_ok",
+      "BlogPosting": "absent_ok",
+      "Article": "absent_ok",
+      "_notes": "HowTo built from ordered list items (Strategy 1) or H2/H3 headings (Strategy 2). Fallback if no steps found is silent skip. BreadcrumbList: Locations > Resources > [Title]."
+    },
+    "blog_post": {
+      "Organization": "absent_ok",
+      "LawFirm": "absent_ok",
+      "LegalService": "absent_ok",
+      "LocalBusiness": "absent_ok",
+      "Person": "absent_ok",
+      "FAQPage": "present",
+      "HowTo": "absent_ok",
+      "BreadcrumbList": "present",
+      "Speakable": "absent_ok",
+      "AggregateRating": "absent_ok",
+      "WebSite": "absent_ok",
+      "BlogPosting": "present",
+      "Article": "absent_ok",
+      "_notes": "WARN-002 resolved: image dimensions now use wp_get_attachment_image_src() so width/height match the 'large' size URL. Author linked to attorney Person entity when _roden_author_attorney meta is set. WARN-004 (ToC text in description) remains an editorial concern."
+    },
+    "sc_ppc_landing": {
+      "Organization": "absent_ok",
+      "LawFirm": "absent_ok",
+      "LegalService": "present",
+      "LocalBusiness": "present",
+      "Person": "absent_ok",
+      "FAQPage": "present",
+      "HowTo": "absent_ok",
+      "BreadcrumbList": "absent_ok",
+      "Speakable": "absent_ok",
+      "AggregateRating": "absent_ok",
+      "WebSite": "absent_ok",
+      "BlogPosting": "absent_ok",
+      "Article": "absent_ok",
+      "_notes": "ERR-007 RESOLVED: roden_schema_sc_statewide() now outputs LegalService (SC-wide areaServed, serviceLocation = 3 SC offices), FAQPage (6 SC-specific Q&As with S.C. Code § citations), and LocalBusiness for all 3 SC offices. BreadcrumbList intentionally excluded — template is in $is_landing list."
+    },
+    "archive": {
+      "Organization": "absent_ok",
+      "LawFirm": "absent_ok",
+      "LegalService": "absent_ok",
+      "LocalBusiness": "absent_ok",
+      "Person": "present_warn",
+      "FAQPage": "absent_ok",
+      "HowTo": "absent_ok",
+      "BreadcrumbList": "present",
+      "Speakable": "absent_ok",
+      "AggregateRating": "absent_ok",
+      "WebSite": "absent_ok",
+      "BlogPosting": "absent_ok",
+      "Article": "absent_ok",
+      "_notes": "Attorneys archive outputs ItemList wrapping Person entities. OPEN: worksFor @type:'LegalService' still references /#organization @id — type mismatch. See ERR-003 (partial fix). BreadcrumbList via is_post_type_archive() branch."
+    }
+  },
+  "errors": [
+    {
+      "id": "ERR-003",
+      "severity": "medium",
+      "status": "partial_fix",
+      "page_type": "archive",
+      "schema_type": "Person",
+      "issue": "PARTIAL FIX: In roden_schema_attorneys_list() (schema-helpers.php line 1626-1629), worksFor has @type:'LegalService' but @id:'https://rodenlaw.com/#organization'. The attorney page (roden_schema_person) and PA attribution (roden_schema_pa_attorney) now correctly use @type:'Organization', but the archive page attorney list still has the mismatch.",
+      "impact": "Medium: JSON-LD consumers dereferencing the @id on the attorneys archive page find an Organization entity, not a LegalService. Entity resolution ambiguity for AI citation indexing.",
+      "expected_fix": "In roden_schema_attorneys_list(), change worksFor @type from 'LegalService' to 'Organization' to match the /#organization @id."
+    },
+    {
+      "id": "WARN-004",
+      "severity": "low",
+      "status": "open",
+      "page_type": "blog_post",
+      "schema_type": "BlogPosting",
+      "issue": "BlogPosting description field includes auto-generated Table of Contents text from the excerpt when no manual excerpt is set, producing messy, SEO-unfriendly descriptions.",
+      "expected_fix": "Require manual excerpt on all blog posts. Add wp_admin notice or meta box guidance to prompt editors."
+    },
+    {
+      "id": "WARN-005",
+      "severity": "info",
+      "status": "open",
+      "page_type": "subtype",
+      "schema_type": "Article",
+      "issue": "Sub-type pages with low wordCount (e.g., under 800 words) may not qualify for Article rich results. Google prefers substantial article content.",
+      "expected_fix": "Expand sub-type page content to minimum 1000 words. Editorial/content task, not a schema code issue."
+    }
+  ],
+  "resolved_errors": [
+    {
+      "id": "ERR-001",
+      "resolved_in": "2026-03-20",
+      "resolution": "roden_schema_person() now uses $firm['url'] . '/attorneys/' . $atty_slug . '/#person' for canonical @id, not get_permalink()."
+    },
+    {
+      "id": "ERR-002",
+      "resolved_in": "2026-03-20",
+      "resolution": "roden_schema_organization() now outputs @type: array('Organization', 'LawFirm')."
+    },
+    {
+      "id": "ERR-004",
+      "resolved_in": "2026-03-20",
+      "resolution": "firm-data.php eric-roden bar_admissions now includes 'South Carolina'. Schema code supplements from firm data to build hasCredential, so SC bar now appears."
+    },
+    {
+      "id": "ERR-005",
+      "resolved_in": "2026-03-20",
+      "resolution": "roden_schema_legal_service() now generates page-specific @id ('{page_url}#legalservice') for non-homepage pages, with isPartOf pointing to /#legalservice."
+    },
+    {
+      "id": "ERR-006",
+      "resolved_in": "2026-03-20",
+      "resolution": "roden_get_canonical_url() helper introduced. For child practice_area posts, builds URL as home_url('/parent-slug/child-slug/') without /practice-areas/ prefix. All schema functions use this for URL and @id fields."
+    },
+    {
+      "id": "ERR-007",
+      "resolved_in": "2026-03-20",
+      "resolution": "roden_schema_sc_statewide() function added. Dispatcher triggers it via is_page_template('templates/template-landing-sc-statewide.php'). Outputs LegalService + FAQPage + LocalBusiness (3 SC offices)."
+    },
+    {
+      "id": "WARN-001",
+      "resolved_in": "2026-03-20",
+      "resolution": "reviewCount now sourced from $firm['trust_stats']['review_count'] (firm-data.php line 223) with fallback to 500."
+    },
+    {
+      "id": "WARN-002",
+      "resolved_in": "2026-03-20",
+      "resolution": "roden_schema_article() now uses wp_get_attachment_image_src($img_id, 'large') to get URL + dimensions for the same image size."
+    },
+    {
+      "id": "WARN-003",
+      "resolved_in": "2026-03-20",
+      "resolution": "roden_schema_local_business_office() @type changed to array('LocalBusiness', 'LegalService', 'LawFirm')."
+    }
+  ],
+  "rich_results_eligibility": {
+    "homepage": {
+      "Organization_LawFirm": "eligible",
+      "LocalBusiness": "eligible",
+      "Sitelinks_Searchbox": "eligible",
+      "AggregateRating": "eligible"
+    },
+    "pillar": {
+      "FAQ": "eligible",
+      "BreadcrumbList": "eligible"
+    },
+    "intersection": {
+      "FAQ": "eligible",
+      "LocalBusiness": "eligible",
+      "BreadcrumbList": "eligible"
+    },
+    "subtype": {
+      "FAQ": "eligible",
+      "Article": "eligible_if_content_sufficient",
+      "BreadcrumbList": "eligible"
+    },
+    "location": {
+      "LocalBusiness": "eligible",
+      "FAQ": "eligible",
+      "BreadcrumbList": "eligible"
+    },
+    "neighborhood_location": {
+      "LocalBusiness": "eligible",
+      "FAQ": "eligible",
+      "BreadcrumbList": "eligible"
+    },
+    "attorney": {
+      "Person": "eligible",
+      "BreadcrumbList": "eligible"
+    },
+    "blog_post": {
+      "FAQ": "eligible",
+      "Article_BlogPosting": "eligible",
+      "BreadcrumbList": "eligible"
+    },
+    "sc_ppc_landing": {
+      "LegalService": "eligible",
+      "FAQ": "eligible",
+      "LocalBusiness": "eligible"
+    }
+  },
+  "validation_runs": [
+    {
+      "run_date": "2026-03-21",
+      "auditor": "Schema Auditor agent",
+      "run_id": "0e7e4ef0-4998-463f-85ca-5a4eff1d2d7a",
+      "task": "ROD-62",
+      "pages_audited": "PHP source review only — inc/schema-helpers.php (1779 lines) + inc/firm-data.php + inc/rewrite-rules.php. All dispatcher logic, schema builder functions, and office data cross-referenced.",
+      "method": "Static PHP source analysis. No live site fetch (per CLAUDE.md rules). Diff from v1.2.0 based on code-confirmed fixes.",
+      "summary": "6 critical/high errors resolved, 3 warnings resolved. 1 error remains (ERR-003 partial). 2 content-level warnings remain (WARN-004, WARN-005). 1 new page type documented (neighborhood_location). 9/10 prior schema coverage gaps closed."
+    },
+    {
+      "run_date": "2026-03-20",
+      "auditor": "Schema Auditor agent",
+      "run_id": "d62dd1f2-477d-482c-b8c2-279391d235ac",
+      "task": "ROD-24",
+      "pages_audited": [
+        "https://rodenlaw.com/ (homepage)",
+        "https://rodenlaw.com/practice-areas/car-accident-lawyers/ (pillar)",
+        "https://rodenlaw.com/car-accident-lawyers/savannah-ga/ (intersection)",
+        "https://rodenlaw.com/car-accident-lawyers/drunk-driver-accident/ (subtype)",
+        "https://rodenlaw.com/locations/georgia/savannah/ (location)",
+        "https://rodenlaw.com/attorneys/eric-roden/ (attorney)",
+        "https://rodenlaw.com/blog/south-carolina-pedestrian-right-of-way-laws/ (blog post)",
+        "https://rodenlaw.com/south-carolina-car-accident-lawyer/ (SC PPC landing)"
+      ],
+      "method": "WebFetch HTML inspection of production site (rodenlaw.com)"
+    }
+  ]
+}
