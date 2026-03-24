@@ -25,9 +25,10 @@ $is_subtype      = ( $post->post_parent > 0 ) && ! $is_intersection;
 $is_pillar       = ! $is_intersection && ! $is_subtype;
 
 // ── Shared data ─────────────────────────────────────────────────────────
-$jurisdiction  = get_post_meta( $post_id, '_roden_jurisdiction', true ) ?: 'both';
-$sol_ga        = get_post_meta( $post_id, '_roden_sol_ga', true );
-$sol_sc        = get_post_meta( $post_id, '_roden_sol_sc', true );
+$jurisdiction_raw = get_post_meta( $post_id, '_roden_jurisdiction', true ) ?: 'both';
+$jurisdiction     = strtolower( $jurisdiction_raw ); // Normalize: meta stores 'GA'/'SC', templates expect 'ga'/'sc'.
+$sol_ga           = get_post_meta( $post_id, '_roden_sol_ga', true );
+$sol_sc           = get_post_meta( $post_id, '_roden_sol_sc', true );
 $sub_types_raw     = get_post_meta( $post_id, '_roden_sub_types', true );
 $author_id         = get_post_meta( $post_id, '_roden_author_attorney', true );
 $sub_types         = $sub_types_raw ? array_filter( array_map( 'trim', explode( "\n", $sub_types_raw ) ) ) : [];

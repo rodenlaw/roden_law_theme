@@ -658,6 +658,7 @@ function roden_sidebar_form_js() {
 add_action( 'wp_ajax_roden_load_more_results', 'roden_load_more_results_handler' );
 add_action( 'wp_ajax_nopriv_roden_load_more_results', 'roden_load_more_results_handler' );
 function roden_load_more_results_handler() {
+    check_ajax_referer( 'roden_load_more_results', 'nonce' );
     $offset   = absint( $_POST['offset'] ?? 0 );
     $exclude  = absint( $_POST['exclude'] ?? 0 );
     $category = sanitize_text_field( $_POST['category'] ?? '' );
@@ -758,6 +759,7 @@ function roden_load_more_js() {
         var loadMoreWrap = btn ? btn.parentNode : null;
         var total = btn ? parseInt(btn.getAttribute('data-total'), 10) : 0;
         var ajaxUrl = '<?php echo esc_url( admin_url( 'admin-ajax.php' ) ); ?>';
+        var ajaxNonce = '<?php echo wp_create_nonce( 'roden_load_more_results' ); ?>';
         var activeCategory = '';
 
         // Filter buttons
@@ -779,6 +781,7 @@ function roden_load_more_js() {
 
                 var fd = new FormData();
                 fd.append('action', 'roden_load_more_results');
+                fd.append('nonce', ajaxNonce);
                 fd.append('offset', 0);
                 fd.append('exclude', btn ? btn.getAttribute('data-exclude') : '');
                 if (category) fd.append('category', category);
@@ -816,6 +819,7 @@ function roden_load_more_js() {
 
             var fd = new FormData();
             fd.append('action', 'roden_load_more_results');
+            fd.append('nonce', ajaxNonce);
             fd.append('offset', offset);
             fd.append('exclude', exclude);
             if (activeCategory) fd.append('category', activeCategory);

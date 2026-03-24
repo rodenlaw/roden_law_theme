@@ -119,17 +119,26 @@ $related_subtypes = get_posts( array(
     <div class="container">
         <h2 class="matrix-title"><?php echo esc_html( $parent_title ); ?> — All Locations</h2>
         <div class="location-matrix-grid">
+            <?php
+            // Pre-fetch all sibling intersections in one query (avoid N+1).
+            $all_siblings = get_posts( array(
+                'post_type'      => 'practice_area',
+                'post_parent'    => $post->post_parent,
+                'posts_per_page' => 10,
+                'meta_key'       => '_roden_pa_office_key',
+                'meta_compare'   => 'EXISTS',
+            ) );
+            $sibling_urls = array();
+            foreach ( $all_siblings as $sib ) {
+                $sib_key = get_post_meta( $sib->ID, '_roden_pa_office_key', true );
+                if ( $sib_key ) {
+                    $sibling_urls[ $sib_key ] = get_permalink( $sib );
+                }
+            }
+            ?>
             <?php foreach ( $firm['offices'] as $key => $o ) :
-                $is_current = ( $key === $pa_office_key );
-                // Find sibling intersection page for this office
-                $sibling_posts = get_posts( array(
-                    'post_type'   => 'practice_area',
-                    'post_parent' => $post->post_parent,
-                    'meta_key'    => '_roden_pa_office_key',
-                    'meta_value'  => $key,
-                    'numberposts' => 1,
-                ) );
-                $intersection_url = ! empty( $sibling_posts ) ? get_permalink( $sibling_posts[0] ) : '#';
+                $is_current       = ( $key === $pa_office_key );
+                $intersection_url = isset( $sibling_urls[ $key ] ) ? $sibling_urls[ $key ] : '#';
             ?>
                 <div class="matrix-card <?php echo $is_current ? 'matrix-card-active' : ''; ?>">
                     <span class="matrix-state state-<?php echo esc_attr( strtolower( $o['state'] ) ); ?>">
