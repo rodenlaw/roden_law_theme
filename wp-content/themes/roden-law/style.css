@@ -3060,7 +3060,7 @@ input[type="submit"] {
     }
 
     /* Add bottom padding to body so content isn't hidden behind sticky CTA */
-    body.single-practice_area {
+    body {
         padding-bottom: 70px;
     }
 }

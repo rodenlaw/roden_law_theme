@@ -156,6 +156,12 @@ $footer_practice_areas = array(
 
 </div><!-- #page -->
 
+<!-- Sticky Mobile CTA Bar (visible on mobile after scrolling past hero) -->
+<div class="pa-mobile-cta" aria-label="<?php esc_attr_e( 'Contact Roden Law', 'roden-law' ); ?>">
+    <a href="tel:<?php echo esc_attr( $firm['phone_e164'] ); ?>" class="pa-mobile-cta__phone">&#128222; <?php echo esc_html( $firm['phone'] ); ?></a>
+    <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="pa-mobile-cta__review"><?php esc_html_e( 'Free Review', 'roden-law' ); ?></a>
+</div>
+
 <!-- JuvoLeads Live Chat (desktop only) -->
 <script>
 if (window.innerWidth > 768) {

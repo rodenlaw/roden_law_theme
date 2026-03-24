@@ -44,9 +44,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="site-container">
             <div class="top-bar-left">
                 <span class="top-bar-text">
-                    <?php esc_html_e( 'Serving Georgia & South Carolina', 'roden-law' ); ?>
+                    <span class="top-bar-geo"><?php esc_html_e( 'Serving Georgia & South Carolina', 'roden-law' ); ?></span>
                     <span class="top-bar-divider" aria-hidden="true">&mdash;</span>
-                    <?php esc_html_e( 'No Fees Unless We Win', 'roden-law' ); ?>
+                    <span class="top-bar-trust"><?php esc_html_e( 'No Fees Unless We Win', 'roden-law' ); ?></span>
                 </span>
             </div>
             <div class="top-bar-right">

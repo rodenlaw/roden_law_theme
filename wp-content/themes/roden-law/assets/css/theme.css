@@ -1833,7 +1833,9 @@ body.nav-open { overflow: hidden; }
     .header-cta { display: none; }
     .mobile-phone-cta { display: flex; }
     .mobile-toggle { display: block; }
-    .top-bar { display: none; }
+    .top-bar-geo { display: none; }
+    .top-bar-divider { display: none; }
+    .top-bar-consult { display: none; }
     .hero-title { font-size: 28px; }
     .hero { padding: 48px 16px; }
     .section { padding: 40px 16px; }
