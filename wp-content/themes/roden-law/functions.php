@@ -115,15 +115,10 @@ function roden_canonical_skip_sitemaps( $redirect_url, $requested_url ) {
 // Intercept early via 'init' and redirect to the trailing-slash version.
 add_action( 'init', 'roden_sitemap_trailing_slash_fix' );
 function roden_sitemap_trailing_slash_fix() {
-    if ( ! isset( $_SERVER['REQUEST_URI'] ) ) {
-        return;
-    }
-    $uri = strtok( $_SERVER['REQUEST_URI'], '?' );
-    // Temp debug header.
-    if ( strpos( $uri, 'sitemap' ) !== false ) {
-        header( 'X-Sitemap-Debug: uri=' . $uri );
-    }
-    if ( $uri === '/wp-sitemap.xml' ) {
+    $uri = isset( $_SERVER['REQUEST_URI'] ) ? $_SERVER['REQUEST_URI'] : 'unset';
+    header( 'X-Roden-Init: ran uri=' . strtok( $uri, '?' ) );
+    $path = strtok( $uri, '?' );
+    if ( $path === '/wp-sitemap.xml' ) {
         wp_redirect( home_url( '/wp-sitemap.xml/' ), 301 );
         exit;
     }
