@@ -81,7 +81,7 @@ function roden_old_page_redirects() {
         'savannah'                             => '/practice-areas/',
         'brunswick'                            => '/practice-areas/',
         'charleston'                           => '/practice-areas/',
-        'thank-you-ppc-2'                      => '/',
+        // 'thank-you-ppc-2' removed — page renamed to 'thank-you' for conversion tracking
         'class-actions'                        => '/class-action-lawyers/',
     );
 
