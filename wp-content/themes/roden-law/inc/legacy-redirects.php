@@ -19,19 +19,29 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 add_filter( 'register_post_type_args', 'roden_neutralize_old_practice_area_cpt', 10, 2 );
 
 function roden_neutralize_old_practice_area_cpt( $args, $post_type ) {
-    if ( 'practice-area' !== $post_type ) {
-        return $args;
+    if ( 'practice-area' === $post_type ) {
+        $args['public']              = false;
+        $args['publicly_queryable']  = false;
+        $args['exclude_from_search'] = true;
+        $args['has_archive']         = false;
+        $args['show_ui']             = true;
+        $args['show_in_menu']        = true;
+        $args['label']               = 'Old Practice Areas (Legacy)';
+        $args['labels']['name']      = 'Old Practice Areas (Legacy)';
+        $args['labels']['menu_name'] = 'Old PAs (Legacy)';
     }
 
-    $args['public']              = false;
-    $args['publicly_queryable']  = false;
-    $args['exclude_from_search'] = true;
-    $args['has_archive']         = false;
-    $args['show_ui']             = true;
-    $args['show_in_menu']        = true;
-    $args['label']               = 'Old Practice Areas (Legacy)';
-    $args['labels']['name']      = 'Old Practice Areas (Legacy)';
-    $args['labels']['menu_name'] = 'Old PAs (Legacy)';
+    if ( 'class-action' === $post_type ) {
+        $args['public']              = false;
+        $args['publicly_queryable']  = false;
+        $args['exclude_from_search'] = true;
+        $args['has_archive']         = false;
+        $args['show_ui']             = true;
+        $args['show_in_menu']        = true;
+        $args['label']               = 'Old Class Actions (Legacy)';
+        $args['labels']['name']      = 'Old Class Actions (Legacy)';
+        $args['labels']['menu_name'] = 'Old CAs (Legacy)';
+    }
 
     return $args;
 }
