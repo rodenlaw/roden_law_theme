@@ -380,5 +380,19 @@ function roden_get_legacy_redirect_map() {
         '/blog/free-consultation-with-charleston-personal-injury-lawyer/'       => '/free-consultation-with-charleston-personal-injury-lawyer/',
         '/blog/blog-free-consultation-with-charleston-personal-injury-lawyer/'  => '/free-consultation-with-charleston-personal-injury-lawyer/',
 
+        // ══════════════════════════════════════════════════════════════
+        // CATEGORY 12: Blog audit — Duplicate content redirects (2026-03-25)
+        // Thin posts consolidated into stronger rewritten articles
+        // ══════════════════════════════════════════════════════════════
+
+        // "Can a car accident lawyer help with insurance" → "Are accident lawyers worth it"
+        '/can-a-car-accident-lawyer-help-with-claiming-insurance-benefits/' => '/are-accident-lawyers-worth-it/',
+
+        // "Car accident claims: why you need an attorney" → "Are accident lawyers worth it"
+        '/how-can-an-attorney-help-with-my-car-accident-claim/' => '/are-accident-lawyers-worth-it/',
+
+        // "Should I pursue a PI claim after car accident" → "Do I have a PI case"
+        '/i-was-in-a-car-accident-should-i-pursue-a-personal-injury-claim/' => '/how-do-i-know-if-i-have-a-personal-injury-case/',
+
     );
 }
