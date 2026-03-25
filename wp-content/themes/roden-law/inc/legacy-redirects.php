@@ -357,7 +357,7 @@ function roden_get_legacy_redirect_map() {
 
         '/areas-we-serve/'     => '/locations/',
         '/es/'                 => '/',
-        '/class-action-lawyers/' => '/practice-areas/',
+        // '/class-action-lawyers/' redirect removed — page template exists and should render (page-class-action-lawyers.php)
 
         // ══════════════════════════════════════════════════════════════
         // CATEGORY 11: Blog audit — Phase 0 immediate fixes (2026-03-22)
