@@ -198,7 +198,7 @@ function roden_exclude_toxic_pages_from_sitemap( $args, $post_type ) {
             'brunswick',
             'savannah',
             'charleston',
-            'class-action-lawyers',  // 301-redirects to /practice-areas/ — not a canonical URL.
+            // 'class-action-lawyers' removed — pillar page is now live and should be indexed
         );
 
         // Get post IDs by slug to exclude.
