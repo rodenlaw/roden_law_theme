@@ -402,5 +402,29 @@ function roden_get_legacy_redirect_map() {
         // "Should I pursue a PI claim after car accident" → "Do I have a PI case"
         '/i-was-in-a-car-accident-should-i-pursue-a-personal-injury-claim/' => '/how-do-i-know-if-i-have-a-personal-injury-case/',
 
+        // "Upsides of filing a PI lawsuit" → "Do I have a PI case"
+        '/what-are-the-upsides-of-filing-a-personal-injury-lawsuit/' => '/how-do-i-know-if-i-have-a-personal-injury-case/',
+
+        // "Benefits of WC claims" → "Am I eligible for WC"
+        '/what-are-the-benefits-of-workers-compensation-claims/' => '/am-i-eligible-for-workers-compensation/',
+
+        // "Why is WC so important" → "Am I eligible for WC"
+        '/why-is-workers-compensation-so-important-to-have/' => '/am-i-eligible-for-workers-compensation/',
+
+        // "Why consult a PI lawyer" → "Are accident lawyers worth it"
+        '/why-should-i-consult-a-personal-injury-lawyer-for-my-accident/' => '/are-accident-lawyers-worth-it/',
+
+        // "Why hire an accident lawyer" → "Are accident lawyers worth it"
+        '/why-should-i-hire-an-accident-lawyer-after-an-accident/' => '/are-accident-lawyers-worth-it/',
+
+        // "Why is having a PI lawyer important" → "Are accident lawyers worth it"
+        '/why-is-having-a-personal-injury-lawyer-important/' => '/are-accident-lawyers-worth-it/',
+
+        // "When should you hire an attorney" → "Are accident lawyers worth it"
+        '/when-should-you-hire-an-attorney-after-being-in-an-accident/' => '/are-accident-lawyers-worth-it/',
+
+        // "Benefits of hiring a WC lawyer" → "Are accident lawyers worth it"
+        '/what-are-the-benefits-of-hiring-a-workers-compensation-lawyer/' => '/are-accident-lawyers-worth-it/',
+
     );
 }
