@@ -85,7 +85,8 @@ $firm = roden_firm_data();
         <div class="sub-types-grid">
             <?php
             $class_actions = new WP_Query( array(
-                'post_type'      => 'class-action',
+                'post_type'      => 'page',
+                'post_parent'    => get_the_ID(),
                 'posts_per_page' => -1,
                 'post_status'    => 'publish',
                 'orderby'        => 'title',

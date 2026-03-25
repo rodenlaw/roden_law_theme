@@ -87,11 +87,9 @@ function roden_legacy_content_redirects() {
         exit;
     }
 
-    // /class-action/[slug]/ → 410 Gone (discontinued practice area)
-    if ( preg_match( '#^/class-action/[^/]+/?$#', $clean_path ) ) {
-        status_header( 410 );
-        nocache_headers();
-        echo '<h1>410 Gone</h1><p>This page has been permanently removed.</p>';
+    // /class-action/[slug]/ → /class-action-lawyers/[slug]/ (old CPT → new child pages)
+    if ( preg_match( '#^/class-action/([^/]+)/?$#', $clean_path, $m ) ) {
+        wp_redirect( home_url( '/class-action-lawyers/' . $m[1] . '/' ), 301 );
         exit;
     }
 
