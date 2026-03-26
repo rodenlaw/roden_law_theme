@@ -186,6 +186,8 @@ $created = 0;
 $skipped = 0;
 
 foreach ( $pillars as $p ) {
+    echo "Processing: {$p['slug']}\n";
+
     // Check if slug already exists.
     $existing = get_posts( array(
         'post_type'   => $pa_post_type,
@@ -195,12 +197,16 @@ foreach ( $pillars as $p ) {
         'numberposts' => 1,
     ) );
 
+    echo "Existing count: " . count( $existing ) . "\n";
+
     if ( ! empty( $existing ) ) {
+        echo "SKIP: already exists ID {$existing[0]->ID}\n";
         WP_CLI::log( "  SKIP: \"{$p['title']}\" already exists (ID {$existing[0]->ID})" );
         $skipped++;
         continue;
     }
 
+    echo "Inserting...\n";
     $post_id = wp_insert_post( array(
         'post_type'    => $pa_post_type,
         'post_title'   => wp_strip_all_tags( html_entity_decode( $p['title'], ENT_QUOTES, 'UTF-8' ) ),
@@ -213,9 +219,11 @@ foreach ( $pillars as $p ) {
     ), true );
 
     if ( is_wp_error( $post_id ) ) {
+        echo "FAIL: " . $post_id->get_error_message() . "\n";
         WP_CLI::warning( "  FAIL: \"{$p['title']}\" — " . $post_id->get_error_message() );
         continue;
     }
+    echo "Created ID: {$post_id}\n";
 
     // Meta fields.
     update_post_meta( $post_id, '_roden_jurisdiction', 'both' );
