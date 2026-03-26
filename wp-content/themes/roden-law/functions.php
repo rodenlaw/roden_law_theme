@@ -74,10 +74,6 @@ function roden_old_page_redirects() {
     // Map page slugs to their canonical destinations
     $redirects = array(
         'car-accident-lawyer'                  => '/practice-areas/car-accident-lawyers/',
-        'charleston-car-accident-lawyer'       => '/practice-areas/car-accident-lawyers/charleston-sc/',
-        'south-carolina-car-accident-lawyer'   => '/practice-areas/car-accident-lawyers/',
-        'south-carolina-truck-accident-lawyer' => '/practice-areas/truck-accident-lawyers/',
-        'columbia-truck-accident-lawyer'       => '/practice-areas/truck-accident-lawyers/columbia-sc/',
         'savannah'                             => '/practice-areas/',
         'brunswick'                            => '/practice-areas/',
         'charleston'                           => '/practice-areas/',
@@ -191,10 +187,6 @@ function roden_exclude_toxic_pages_from_sitemap( $args, $post_type ) {
             'test',
             'privacy-policy-2',
             'car-accident-lawyer',
-            'south-carolina-truck-accident-lawyer',
-            'columbia-truck-accident-lawyer',
-            'charleston-car-accident-lawyer',
-            'south-carolina-car-accident-lawyer',
             'brunswick',
             'savannah',
             'charleston',
