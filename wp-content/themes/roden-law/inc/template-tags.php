@@ -524,6 +524,7 @@ function roden_intersection_grid( $office_key, $columns = 3 ) {
         'electric-scooter-accident-lawyers'  => 'Electric Scooter Accident Lawyers',
         'atv-side-by-side-accident-lawyers'  => 'ATV & Side-by-Side Accident Lawyers',
         'golf-cart-accident-lawyers'         => 'Golf Cart Accident Lawyers',
+        'e-bike-accident-lawyers'            => 'E-Bike Accident Lawyers',
     );
 
     // Try to load pillar posts from the DB for titles + thumbnails.

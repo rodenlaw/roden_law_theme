@@ -479,6 +479,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                     'electric-scooter-accident-lawyers'  => 'personal-injury',
                     'atv-side-by-side-accident-lawyers'  => 'personal-injury',
                     'golf-cart-accident-lawyers'         => 'personal-injury',
+                    'e-bike-accident-lawyers'            => 'bicycle-accident',
                 );
                 $pa_slug   = $post->post_name;
                 $blog_cat  = isset( $pa_to_blog_cat[ $pa_slug ] ) ? $pa_to_blog_cat[ $pa_slug ] : '';

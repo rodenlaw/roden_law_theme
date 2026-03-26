@@ -325,6 +325,7 @@ function roden_firm_data() {
             'electric-scooter-accident-lawyers',
             'atv-side-by-side-accident-lawyers',
             'golf-cart-accident-lawyers',
+            'e-bike-accident-lawyers',
         ),
     );
 
