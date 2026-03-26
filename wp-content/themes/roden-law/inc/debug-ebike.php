@@ -1,47 +1,38 @@
 <?php
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
-// Try inserting directly
 $pa_post_type = 'practice_area';
 if ( ! post_type_exists( $pa_post_type ) ) {
     $pa_post_type = 'practice-area';
 }
 
-echo "Using post type: {$pa_post_type}\n";
+echo "Post type: {$pa_post_type}\n";
 
-// Check what the seeder's get_posts finds
-$existing = get_posts( array(
-    'post_type'   => $pa_post_type,
-    'name'        => 'e-bike-accident-lawyers',
-    'post_parent' => 0,
-    'post_status' => array( 'publish', 'draft', 'pending', 'private', 'trash' ),
-    'numberposts' => 1,
-) );
-echo "Existing (seeder query): " . count( $existing ) . "\n";
+$eric = get_page_by_path( 'eric-roden', OBJECT, 'attorney' );
+$author_attorney_id = $eric ? $eric->ID : 0;
+echo "Eric ID: {$author_attorney_id}\n";
 
-// Try a broader search
-global $wpdb;
-$rows = $wpdb->get_results( "SELECT ID, post_type, post_name, post_status, post_parent FROM {$wpdb->posts} WHERE post_name = 'e-bike-accident-lawyers' LIMIT 10" );
-echo "DB matches for slug 'e-bike-accident-lawyers': " . count( $rows ) . "\n";
-foreach ( $rows as $r ) {
-    echo "  ID={$r->ID} type={$r->post_type} status={$r->post_status} parent={$r->post_parent}\n";
-}
-
-// Try inserting a test post
-$test_id = wp_insert_post( array(
+$post_id = wp_insert_post( array(
     'post_type'    => $pa_post_type,
-    'post_title'   => 'E-Bike Accident Lawyers TEST',
-    'post_name'    => 'e-bike-accident-lawyers-test-delete-me',
-    'post_content' => 'test',
-    'post_status'  => 'draft',
+    'post_title'   => 'E-Bike Accident Lawyers',
+    'post_name'    => 'e-bike-accident-lawyers',
+    'post_content' => '<h2>E-Bike Accident Lawyers Serving Georgia &amp; South Carolina</h2><p>Test content.</p>',
+    'post_excerpt' => 'Test excerpt for e-bike accident lawyers.',
+    'post_status'  => 'publish',
     'post_parent'  => 0,
     'post_author'  => 1,
 ), true );
 
-if ( is_wp_error( $test_id ) ) {
-    echo "INSERT FAILED: " . $test_id->get_error_message() . "\n";
+if ( is_wp_error( $post_id ) ) {
+    echo "INSERT FAILED: " . $post_id->get_error_message() . "\n";
 } else {
-    echo "TEST INSERT OK: ID {$test_id}\n";
-    wp_delete_post( $test_id, true );
-    echo "Cleaned up test post\n";
+    echo "CREATED ID: {$post_id}\n";
+
+    update_post_meta( $post_id, '_roden_jurisdiction', 'both' );
+    update_post_meta( $post_id, '_roden_sol_ga', 'O.C.G.A. § 9-3-33' );
+    update_post_meta( $post_id, '_roden_sol_sc', 'S.C. Code § 15-3-530' );
+    if ( $author_attorney_id ) {
+        update_post_meta( $post_id, '_roden_author_attorney', $author_attorney_id );
+    }
+    echo "Meta set OK\n";
 }
