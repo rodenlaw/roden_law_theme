@@ -25,6 +25,7 @@ require_once get_template_directory() . '/inc/nav-menus.php';
 require_once get_template_directory() . '/inc/enqueue.php';
 require_once get_template_directory() . '/inc/meta-boxes.php';
 require_once get_template_directory() . '/inc/legacy-redirects.php';
+require_once get_template_directory() . '/inc/llms-txt.php';
 
 // Belt-and-suspenders: verify template-tags loaded (require retries if require_once cached a failure)
 if ( ! function_exists( 'roden_breadcrumb_html' ) ) {
@@ -453,6 +454,10 @@ function roden_custom_robots_txt( $output, $public ) {
     }
 
     $output .= "Sitemap: https://rodenlaw.com/wp-sitemap.xml\n";
+
+    $output .= "\n# LLM-friendly site information\n";
+    $output .= "# https://llmstxt.org/\n";
+    $output .= "# See /llms.txt and /llms-full.txt\n";
 
     return $output;
 }
