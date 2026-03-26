@@ -16,9 +16,6 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-echo "SCRIPT START\n";
-echo "WP_CLI exists: " . ( class_exists( 'WP_CLI' ) ? 'yes' : 'no' ) . "\n";
-
 /* ------------------------------------------------------------------
    Look up Eric Roden's attorney post ID for author attribution
    ------------------------------------------------------------------ */
@@ -45,22 +42,10 @@ if ( ! post_type_exists( $pa_post_type ) ) {
 }
 
 /* ------------------------------------------------------------------
-   Pillar definitions
+   Content body (defined outside array to avoid heredoc-in-array issues)
    ------------------------------------------------------------------ */
 
-echo "BEFORE PILLARS ARRAY\n";
-$pillars = array(
-
-    /* ============================================================
-       1. E-Bike Accident Lawyers
-       ============================================================ */
-    array(
-        'title'   => 'E-Bike Accident Lawyers',
-        'slug'    => 'e-bike-accident-lawyers',
-        'excerpt' => 'Injured in an e-bike accident in Georgia or South Carolina? Our attorneys fight for maximum compensation in cases involving vehicle collisions, battery fires, defective equipment, and all types of electric bicycle crashes.',
-        'hero_intro' => 'E-bikes reach speeds of 20–28 mph with riders exposed to the same hazards as cyclists — but with nearly twice the injury severity. Research shows e-bike crashes produce traumatic brain injuries at double the rate of regular bicycle accidents and cranial hemorrhages at nearly five times the rate. Both Georgia and South Carolina have enacted specific e-bike statutes that affect your rights after a crash.',
-        'why_hire' => '<p>E-bike accident cases are uniquely complex — liability may involve the driver who struck you, the e-bike manufacturer (especially in battery fire cases), a rental or tour company, or a government entity responsible for dangerous road conditions. Insurance companies routinely blame e-bike riders for traveling too fast or riding where they shouldn\'t, and an experienced attorney knows how to dismantle these defenses.</p><p>Georgia enacted HB 454 (effective July 1, 2019), creating a three-class e-bike system under <a href="https://law.justia.com/codes/georgia/title-40/chapter-6/article-12/" target="_blank" rel="noopener">O.C.G.A. §§ 40-6-300 through 40-6-303</a>. Class I e-bikes are pedal-assist only up to 20 mph. Class II adds a throttle (still 20 mph max). Class III is pedal-assist up to 28 mph. All classes are capped at 750 watts. Georgia requires helmets for all ages on Class III e-bikes and restricts Class III riders to age 15 and older.</p><p>South Carolina takes a different approach under <a href="https://www.scstatehouse.gov/code/t56c001.php" target="_blank" rel="noopener">S.C. Code § 56-1-10(29)</a> (H.3174, effective February 3, 2020). South Carolina does not use a class system — instead, it defines an e-bike as a bicycle with a motor of 750 watts or less that cannot exceed 20 mph on motor power alone. E-bikes exceeding these thresholds may be reclassified as mopeds requiring registration and insurance. South Carolina has no statewide helmet law for e-bike riders, and riders have the same rights and duties as bicyclists under <a href="https://www.scstatehouse.gov/code/t56c005.php" target="_blank" rel="noopener">S.C. Code § 56-5-3520</a>.</p>',
-        'content' => <<<'HTML'
+$ebike_content = <<<'HTML'
 <h2>E-Bike Accident Lawyers Serving Georgia &amp; South Carolina</h2>
 <p>Electric bicycles have transformed transportation across Georgia and South Carolina, offering an efficient, accessible way to commute, exercise, and explore. But with their rapid adoption has come a surge in serious injuries. A peer-reviewed study analyzing CPSC data found 45,586 e-bike injuries requiring emergency department visits between 2017 and 2022 — a roughly 30-fold increase over that period. The higher speeds, heavier frames, and battery-related hazards of e-bikes make crashes significantly more dangerous than traditional bicycle accidents.</p>
 <p>At <a href="/attorneys/eric-roden/">Roden Law</a>, our e-bike accident lawyers represent injured riders throughout Georgia and South Carolina. We understand the specific e-bike statutes in both states, the complex liability issues involving manufacturers and battery defects, and the severe injuries these crashes cause. If you or a loved one has been hurt in an e-bike accident, we fight for full compensation — on a contingency fee basis with no upfront costs.</p>
@@ -131,7 +116,24 @@ $pillars = array(
 </ul>
 <p>Georgia applies modified comparative fault — you can recover damages if you are less than 50% at fault (<a href="https://law.justia.com/codes/georgia/title-51/chapter-12/section-51-12-33/" target="_blank" rel="noopener">O.C.G.A. § 51-12-33</a>). South Carolina allows recovery if you are less than 51% at fault. Even if you were partially at fault — for example, not wearing a helmet or exceeding a speed limit — you may still recover significant compensation.</p>
 <p>If you or a loved one has been injured in an e-bike accident in Georgia or South Carolina, contact Roden Law for a free consultation. We handle all e-bike accident cases on a contingency fee basis — you pay nothing unless we win.</p>
-HTML,
+HTML;
+
+/* ------------------------------------------------------------------
+   Pillar definitions
+   ------------------------------------------------------------------ */
+
+$pillars = array(
+
+    /* ============================================================
+       1. E-Bike Accident Lawyers
+       ============================================================ */
+    array(
+        'title'   => 'E-Bike Accident Lawyers',
+        'slug'    => 'e-bike-accident-lawyers',
+        'excerpt' => 'Injured in an e-bike accident in Georgia or South Carolina? Our attorneys fight for maximum compensation in cases involving vehicle collisions, battery fires, defective equipment, and all types of electric bicycle crashes.',
+        'hero_intro' => 'E-bikes reach speeds of 20–28 mph with riders exposed to the same hazards as cyclists — but with nearly twice the injury severity. Research shows e-bike crashes produce traumatic brain injuries at double the rate of regular bicycle accidents and cranial hemorrhages at nearly five times the rate. Both Georgia and South Carolina have enacted specific e-bike statutes that affect your rights after a crash.',
+        'why_hire' => '<p>E-bike accident cases are uniquely complex — liability may involve the driver who struck you, the e-bike manufacturer (especially in battery fire cases), a rental or tour company, or a government entity responsible for dangerous road conditions. Insurance companies routinely blame e-bike riders for traveling too fast or riding where they shouldn\'t, and an experienced attorney knows how to dismantle these defenses.</p><p>Georgia enacted HB 454 (effective July 1, 2019), creating a three-class e-bike system under <a href="https://law.justia.com/codes/georgia/title-40/chapter-6/article-12/" target="_blank" rel="noopener">O.C.G.A. §§ 40-6-300 through 40-6-303</a>. Class I e-bikes are pedal-assist only up to 20 mph. Class II adds a throttle (still 20 mph max). Class III is pedal-assist up to 28 mph. All classes are capped at 750 watts. Georgia requires helmets for all ages on Class III e-bikes and restricts Class III riders to age 15 and older.</p><p>South Carolina takes a different approach under <a href="https://www.scstatehouse.gov/code/t56c001.php" target="_blank" rel="noopener">S.C. Code § 56-1-10(29)</a> (H.3174, effective February 3, 2020). South Carolina does not use a class system — instead, it defines an e-bike as a bicycle with a motor of 750 watts or less that cannot exceed 20 mph on motor power alone. E-bikes exceeding these thresholds may be reclassified as mopeds requiring registration and insurance. South Carolina has no statewide helmet law for e-bike riders, and riders have the same rights and duties as bicyclists under <a href="https://www.scstatehouse.gov/code/t56c005.php" target="_blank" rel="noopener">S.C. Code § 56-5-3520</a>.</p>',
+        'content' => $ebike_content,
         'category_name' => 'E-Bike Accidents',
         'category_slug' => 'e-bike-accidents',
         'sub_types' => array(
@@ -186,13 +188,10 @@ HTML,
    INSERT POSTS
    ------------------------------------------------------------------ */
 
-echo "PILLARS COUNT: " . count( $pillars ) . "\n";
 $created = 0;
 $skipped = 0;
 
 foreach ( $pillars as $p ) {
-    echo "Processing: {$p['slug']}\n";
-
     // Check if slug already exists.
     $existing = get_posts( array(
         'post_type'   => $pa_post_type,
@@ -202,16 +201,12 @@ foreach ( $pillars as $p ) {
         'numberposts' => 1,
     ) );
 
-    echo "Existing count: " . count( $existing ) . "\n";
-
     if ( ! empty( $existing ) ) {
-        echo "SKIP: already exists ID {$existing[0]->ID}\n";
         WP_CLI::log( "  SKIP: \"{$p['title']}\" already exists (ID {$existing[0]->ID})" );
         $skipped++;
         continue;
     }
 
-    echo "Inserting...\n";
     $post_id = wp_insert_post( array(
         'post_type'    => $pa_post_type,
         'post_title'   => wp_strip_all_tags( html_entity_decode( $p['title'], ENT_QUOTES, 'UTF-8' ) ),
@@ -224,11 +219,9 @@ foreach ( $pillars as $p ) {
     ), true );
 
     if ( is_wp_error( $post_id ) ) {
-        echo "FAIL: " . $post_id->get_error_message() . "\n";
         WP_CLI::warning( "  FAIL: \"{$p['title']}\" — " . $post_id->get_error_message() );
         continue;
     }
-    echo "Created ID: {$post_id}\n";
 
     // Meta fields.
     update_post_meta( $post_id, '_roden_jurisdiction', 'both' );
