@@ -45,6 +45,7 @@ if ( ! post_type_exists( $pa_post_type ) ) {
    Pillar definitions
    ------------------------------------------------------------------ */
 
+echo "BEFORE PILLARS ARRAY\n";
 $pillars = array(
 
     /* ============================================================
@@ -182,6 +183,7 @@ HTML,
    INSERT POSTS
    ------------------------------------------------------------------ */
 
+echo "PILLARS COUNT: " . count( $pillars ) . "\n";
 $created = 0;
 $skipped = 0;
 
