@@ -13,37 +13,50 @@
 defined( 'ABSPATH' ) || exit;
 
 /* ==========================================================================
-   1. REQUEST INTERCEPTOR — hooked to do_parse_request
+   1. REWRITE RULES + QUERY VARS
    ========================================================================== */
 
-add_filter( 'do_parse_request', 'roden_serve_llms_txt', 5 );
+add_action( 'init', 'roden_llms_txt_rewrite_rules' );
 
 /**
- * Intercept /llms.txt and /llms-full.txt requests before WordPress routing.
+ * Register rewrite rules for /llms.txt and /llms-full.txt.
  *
- * @param bool $do_parse Whether to continue parsing the request.
- * @return bool
+ * WP Engine's nginx intercepts .txt requests as static files, so we use
+ * WordPress rewrite rules to route these through PHP.
  */
-function roden_serve_llms_txt( $do_parse ) {
-    $path = isset( $_SERVER['REQUEST_URI'] )
-        ? strtok( sanitize_text_field( wp_unslash( $_SERVER['REQUEST_URI'] ) ), '?' )
-        : '';
+function roden_llms_txt_rewrite_rules() {
+    add_rewrite_rule( '^llms\.txt$', 'index.php?roden_llms_txt=1', 'top' );
+    add_rewrite_rule( '^llms-full\.txt$', 'index.php?roden_llms_txt=full', 'top' );
+}
 
-    if ( '/llms.txt' === $path ) {
-        header( 'Content-Type: text/markdown; charset=utf-8' );
-        header( 'X-Robots-Tag: noindex' );
-        echo roden_generate_llms_txt( false );
-        exit;
+add_filter( 'query_vars', 'roden_llms_txt_query_vars' );
+
+/**
+ * Register the custom query var.
+ */
+function roden_llms_txt_query_vars( $vars ) {
+    $vars[] = 'roden_llms_txt';
+    return $vars;
+}
+
+add_action( 'template_redirect', 'roden_serve_llms_txt' );
+
+/**
+ * Serve llms.txt / llms-full.txt content when the query var is set.
+ */
+function roden_serve_llms_txt() {
+    $val = get_query_var( 'roden_llms_txt' );
+
+    if ( ! $val ) {
+        return;
     }
 
-    if ( '/llms-full.txt' === $path ) {
-        header( 'Content-Type: text/markdown; charset=utf-8' );
-        header( 'X-Robots-Tag: noindex' );
-        echo roden_generate_llms_txt( true );
-        exit;
-    }
+    $full = ( 'full' === $val );
 
-    return $do_parse;
+    header( 'Content-Type: text/markdown; charset=utf-8' );
+    header( 'X-Robots-Tag: noindex' );
+    echo roden_generate_llms_txt( $full );
+    exit;
 }
 
 /* ==========================================================================
