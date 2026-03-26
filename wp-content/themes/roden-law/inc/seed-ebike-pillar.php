@@ -16,6 +16,9 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
+echo "SCRIPT START\n";
+echo "WP_CLI exists: " . ( class_exists( 'WP_CLI' ) ? 'yes' : 'no' ) . "\n";
+
 /* ------------------------------------------------------------------
    Look up Eric Roden's attorney post ID for author attribution
    ------------------------------------------------------------------ */
