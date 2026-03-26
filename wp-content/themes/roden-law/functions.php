@@ -457,7 +457,7 @@ function roden_custom_robots_txt( $output, $public ) {
 
     $output .= "\n# LLM-friendly site information\n";
     $output .= "# https://llmstxt.org/\n";
-    $output .= "# See /llms.txt and /llms-full.txt\n";
+    $output .= "# See /llms and /llms-full\n";
 
     return $output;
 }

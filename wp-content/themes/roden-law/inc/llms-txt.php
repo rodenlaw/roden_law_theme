@@ -19,14 +19,14 @@ defined( 'ABSPATH' ) || exit;
 add_action( 'init', 'roden_llms_txt_rewrite_rules' );
 
 /**
- * Register rewrite rules for /llms.txt and /llms-full.txt.
+ * Register rewrite rules for /llms and /llms-full.
  *
- * WP Engine's nginx intercepts .txt requests as static files, so we use
- * WordPress rewrite rules to route these through PHP.
+ * WP Engine's nginx intercepts .txt requests as static files (404 before
+ * PHP runs), so we serve at extensionless URLs with Content-Type: text/markdown.
  */
 function roden_llms_txt_rewrite_rules() {
-    add_rewrite_rule( '^llms\.txt$', 'index.php?roden_llms_txt=1', 'top' );
-    add_rewrite_rule( '^llms-full\.txt$', 'index.php?roden_llms_txt=full', 'top' );
+    add_rewrite_rule( '^llms/?$', 'index.php?roden_llms_txt=1', 'top' );
+    add_rewrite_rule( '^llms-full/?$', 'index.php?roden_llms_txt=full', 'top' );
 }
 
 add_filter( 'query_vars', 'roden_llms_txt_query_vars' );
