@@ -91,24 +91,23 @@ $directions_url = 'https://www.google.com/maps/dir/' . urlencode( $neighborhood_
                 </span>
                 <h1 class="hero-title"><?php echo esc_html( $h1 ); ?></h1>
                 <p class="hero-subtitle">
-                    Roden Law's <?php echo esc_html( $office['market_name'] ); ?> office serves injury victims throughout <?php echo esc_html( $neighborhood_name ); ?>
-                    <?php if ( $service_area ) :
-                        $area_text = wp_strip_all_tags( $service_area );
-                        // Strip "Serving {anything}, " prefix to get just the surrounding areas list.
-                        // Handles all patterns: "Serving Pooler, ...", "Serving the French Quarter, ...",
-                        // "Serving downtown Conway, ...", "Serving active-duty personnel, ...", etc.
+                    <?php
+                    $subtitle = 'Roden Law\'s ' . esc_html( $office['market_name'] ) . ' office serves injury victims throughout ' . esc_html( $neighborhood_name );
+                    if ( $service_area ) {
+                        $area_text  = wp_strip_all_tags( $service_area );
                         $area_clean = preg_replace( '/^Serving\s+[^,]+,\s*/i', '', $area_text );
-                        // Remove trailing period so we can control punctuation.
                         $area_clean = rtrim( $area_clean, '.' );
-                        if ( $area_clean && $area_clean !== $area_text ) : ?>
-                            , <?php echo esc_html( $area_clean ); ?>.
-                        <?php else : ?>
-                            and the surrounding area.
-                        <?php endif; ?>
-                    <?php else : ?>
-                        and the surrounding area.
-                    <?php endif; ?>
-                    No fees unless we win.
+                        if ( $area_clean && $area_clean !== $area_text ) {
+                            $subtitle .= ', ' . esc_html( $area_clean ) . '.';
+                        } else {
+                            $subtitle .= ' and the surrounding area.';
+                        }
+                    } else {
+                        $subtitle .= ' and the surrounding area.';
+                    }
+                    $subtitle .= ' No fees unless we win.';
+                    echo $subtitle;
+                    ?>
                 </p>
 
                 <!-- Trust Stats -->
