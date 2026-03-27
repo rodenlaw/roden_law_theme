@@ -51,6 +51,7 @@ function roden_breadcrumb_html() {
                 // Collect all ancestors up to (and including) the office page.
                 $ancestors = array();
                 $walk_id   = wp_get_post_parent_id( get_the_ID() );
+                $state_url = trailingslashit( home_url( '/locations/' . $o['state_slug'] . '/' ) );
                 while ( $walk_id ) {
                     $ancestors[] = $walk_id;
                     // Stop once we reach the office-level page (has _roden_office_key).
@@ -62,6 +63,10 @@ function roden_breadcrumb_html() {
                 // Ancestors are child-first; reverse to get root-first order.
                 $ancestors = array_reverse( $ancestors );
                 foreach ( $ancestors as $anc_id ) {
+                    // Skip state-level ancestors — already added above from office data.
+                    if ( trailingslashit( get_permalink( $anc_id ) ) === $state_url ) {
+                        continue;
+                    }
                     $crumbs[] = '<a href="' . esc_url( get_permalink( $anc_id ) ) . '">' . esc_html( get_the_title( $anc_id ) ) . '</a>';
                 }
             }

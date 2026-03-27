@@ -877,24 +877,38 @@ function roden_schema_breadcrumbs() {
         $is_neighborhood = get_post_meta( get_the_ID(), '_roden_is_neighborhood', true );
 
         if ( $is_neighborhood ) {
-            // Neighborhood: Locations > State > City > Neighborhood
+            // Neighborhood: Locations > State > [ancestors] > Neighborhood
             $parent_office_key = get_post_meta( get_the_ID(), '_roden_parent_office_key', true );
-            $parent_id = wp_get_post_parent_id( get_the_ID() );
             if ( $parent_office_key && isset( $firm['offices'][ $parent_office_key ] ) ) {
                 $office = $firm['offices'][ $parent_office_key ];
+                $state_url = trailingslashit( home_url( '/locations/' . $office['state_slug'] . '/' ) );
                 $items[] = array(
                     '@type'    => 'ListItem',
                     'position' => $position++,
                     'name'     => $office['state_full'],
                     'item'     => home_url( '/locations/' . $office['state_slug'] . '/' ),
                 );
-                // Only add parent city crumb if it differs from current page title (avoids duplication).
-                if ( $parent_id && strcasecmp( $office['market_name'], get_the_title() ) !== 0 ) {
+                // Walk ancestor chain (same logic as HTML breadcrumb in template-tags.php).
+                $ancestors = array();
+                $walk_id   = wp_get_post_parent_id( get_the_ID() );
+                while ( $walk_id ) {
+                    $ancestors[] = $walk_id;
+                    if ( get_post_meta( $walk_id, '_roden_office_key', true ) ) {
+                        break;
+                    }
+                    $walk_id = wp_get_post_parent_id( $walk_id );
+                }
+                $ancestors = array_reverse( $ancestors );
+                foreach ( $ancestors as $anc_id ) {
+                    // Skip state-level ancestors — already added above.
+                    if ( trailingslashit( get_permalink( $anc_id ) ) === $state_url ) {
+                        continue;
+                    }
                     $items[] = array(
                         '@type'    => 'ListItem',
                         'position' => $position++,
-                        'name'     => $office['market_name'],
-                        'item'     => get_permalink( $parent_id ),
+                        'name'     => get_the_title( $anc_id ),
+                        'item'     => get_permalink( $anc_id ),
                     );
                 }
             }
@@ -1060,11 +1074,7 @@ function roden_schema_speakable_location() {
         'url'       => get_permalink(),
         'speakable' => array(
             '@type'       => 'SpeakableSpecification',
-            'cssSelector' => array(
-                '.location-hero__tagline',
-                '.location-intro',
-                '.location-service-area',
-            ),
+            'cssSelector' => array( '.hero h1', '.hero-subtitle' ),
         ),
     ) );
 }
@@ -1525,6 +1535,8 @@ function roden_schema_local_business_neighborhood( $firm ) {
 
     $office            = $firm['offices'][ $parent_office_key ];
     $neighborhood_name = get_the_title();
+    $parent_id         = wp_get_post_parent_id( $post_id );
+    $parent_is_neighborhood = $parent_id ? get_post_meta( $parent_id, '_roden_is_neighborhood', true ) : false;
 
     $schema = array(
         '@context'   => 'https://schema.org',
@@ -1538,7 +1550,7 @@ function roden_schema_local_business_neighborhood( $firm ) {
         'geo'        => roden_schema_geo( $office ),
         'areaServed' => array(
             array(
-                '@type' => 'City',
+                '@type' => $parent_is_neighborhood ? 'Neighborhood' : 'City',
                 'name'  => $neighborhood_name . ', ' . $office['state'],
             ),
             array(

@@ -55,7 +55,7 @@ $stats        = $firm['trust_stats'];
 // H1 from post meta or auto-generated.
 $h1 = get_post_meta( $post_id, '_roden_neighborhood_h1', true );
 if ( ! $h1 ) {
-    $h1 = 'Personal Injury Lawyer Serving ' . $neighborhood_name . ', ' . $office['state'];
+    $h1 = 'Personal Injury Lawyer Serving ' . $neighborhood_name . ', ' . $office['state_full'];
 }
 
 // Map embed URL for parent office
@@ -92,8 +92,21 @@ $directions_url = 'https://www.google.com/maps/dir/' . urlencode( $neighborhood_
                 <h1 class="hero-title"><?php echo esc_html( $h1 ); ?></h1>
                 <p class="hero-subtitle">
                     Roden Law's <?php echo esc_html( $office['market_name'] ); ?> office serves injury victims throughout <?php echo esc_html( $neighborhood_name ); ?>
-                    <?php if ( $service_area ) : ?>
-                        and the surrounding <?php echo esc_html( wp_strip_all_tags( $service_area ) ); ?>
+                    <?php if ( $service_area ) :
+                        $area_text = wp_strip_all_tags( $service_area );
+                        // Strip "Serving {anything}, " prefix to get just the surrounding areas list.
+                        // Handles all patterns: "Serving Pooler, ...", "Serving the French Quarter, ...",
+                        // "Serving downtown Conway, ...", "Serving active-duty personnel, ...", etc.
+                        $area_clean = preg_replace( '/^Serving\s+[^,]+,\s*/i', '', $area_text );
+                        // Remove trailing period so we can control punctuation.
+                        $area_clean = rtrim( $area_clean, '.' );
+                        if ( $area_clean && $area_clean !== $area_text ) : ?>
+                            , <?php echo esc_html( $area_clean ); ?>.
+                        <?php else : ?>
+                            and the surrounding area.
+                        <?php endif; ?>
+                    <?php else : ?>
+                        and the surrounding area.
                     <?php endif; ?>
                     No fees unless we win.
                 </p>
@@ -372,7 +385,7 @@ if ( ! empty( $sub_neighborhoods ) ) :
                 <p class="section-subtitle">Roden Law's <?php echo esc_html( $office['market_name'] ); ?> office serves communities throughout <?php echo esc_html( $parent_title ); ?> and the surrounding area.</p>
             <?php else : ?>
                 <h2 class="section-title">Other Neighborhoods We Serve Near <?php echo esc_html( $neighborhood_name ); ?></h2>
-                <p class="section-subtitle">Roden Law's <?php echo esc_html( $office['market_name'] ); ?> office serves communities throughout the greater <?php echo esc_html( $office['market_name'] ); ?> metro region.</p>
+                <p class="section-subtitle">Roden Law's <?php echo esc_html( $office['market_name'] ); ?> office serves communities throughout the greater <?php echo esc_html( $office['market_name'] ); ?> area.</p>
             <?php endif; ?>
         </div>
         <?php roden_neighborhood_grid( $post_id ); ?>
@@ -388,7 +401,7 @@ if ( ! empty( $sub_neighborhoods ) ) :
         <h2 class="text-white">Injured in <?php echo esc_html( $neighborhood_name ); ?>? Contact Our <?php echo esc_html( $office['market_name'] ); ?> Office Today</h2>
         <p class="text-white" style="opacity:0.85; max-width:600px; margin:0 auto var(--space-xl, 32px);">
             No fees unless we win. Roden Law's <a href="<?php echo esc_url( get_permalink( wp_get_post_parent_id( $post_id ) ) ); ?>" style="color: var(--orange, #FCB415); text-decoration: underline;"><?php echo esc_html( $office['market_name'] ); ?> office</a>
-            serves all of <?php echo esc_html( $neighborhood_name ); ?> and the surrounding <?php echo esc_html( $office['state_full'] ); ?> communities.
+            serves all of <?php echo esc_html( $neighborhood_name ); ?> and the surrounding <?php echo esc_html( $office['market_name'] ); ?> area.
         </p>
         <div class="hero-ctas" style="justify-content:center;">
             <a href="tel:<?php echo esc_attr( $office['phone_raw'] ); ?>" class="btn btn-primary btn-lg">
