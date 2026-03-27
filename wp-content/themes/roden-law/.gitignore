@@ -29,7 +29,7 @@ create-intersection-pages.php
 inc/batch-create-*.php
 inc/data/
 
-# Content reference files
-content/
+# Content reference files (now tracked for backup)
+# content/
 bin/
 !bin/setup-meta.php
