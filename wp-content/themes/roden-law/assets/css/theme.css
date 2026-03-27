@@ -2050,6 +2050,8 @@ body.nav-open { overflow: hidden; }
 
 .neighborhood-roads-content {
     max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
 }
 
 /* Hospital Cards */
