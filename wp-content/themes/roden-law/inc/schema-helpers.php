@@ -668,6 +668,24 @@ function roden_schema_pa_attorney( $firm ) {
         $schema['image'] = get_the_post_thumbnail_url( $atty->ID, 'attorney-headshot' );
     }
 
+    // sameAs — Avvo, LinkedIn, and additional profile links (E-E-A-T)
+    $same_as  = array();
+    $avvo     = get_post_meta( $atty->ID, '_roden_avvo_url', true );
+    $linkedin = get_post_meta( $atty->ID, '_roden_linkedin_url', true );
+    $extra    = get_post_meta( $atty->ID, '_roden_same_as', true );
+    if ( $avvo ) {
+        $same_as[] = $avvo;
+    }
+    if ( $linkedin ) {
+        $same_as[] = $linkedin;
+    }
+    if ( is_array( $extra ) ) {
+        $same_as = array_merge( $same_as, $extra );
+    }
+    if ( ! empty( $same_as ) ) {
+        $schema['sameAs'] = array_values( array_unique( $same_as ) );
+    }
+
     roden_json_ld( $schema );
 }
 
