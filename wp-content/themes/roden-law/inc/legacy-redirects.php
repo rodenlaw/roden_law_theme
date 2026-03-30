@@ -116,20 +116,33 @@ function roden_legacy_content_redirects() {
 
     // Map of old PA slugs → current PA slugs (only where they differ)
     $pa_slug_map = array(
-        'medical-malpractice-attorneys' => 'medical-malpractice-lawyers',
-        'medical-malpractice-attorney'  => 'medical-malpractice-lawyers',
-        'maritime-lawyers'              => 'maritime-injury-lawyers',
-        'nursing-home-abuse-attorneys'  => 'nursing-home-abuse-lawyers',
-        'nursing-home-abuse-attorney'   => 'nursing-home-abuse-lawyers',
-        'nursing-home-abuse-lawyer'     => 'nursing-home-abuse-lawyers',
-        'slip-and-fall-attorneys'       => 'slip-and-fall-lawyers',
-        'slip-and-fall-attorney'        => 'slip-and-fall-lawyers',
-        'slip-and-fall-lawyer'          => 'slip-and-fall-lawyers',
-        'workers-compensation-attorney' => 'workers-compensation-lawyers',
-        'personal-injury-lawyer'        => 'personal-injury-lawyers',
+        'medical-malpractice-attorneys'  => 'medical-malpractice-lawyers',
+        'medical-malpractice-attorney'   => 'medical-malpractice-lawyers',
+        'maritime-lawyers'               => 'maritime-injury-lawyers',
+        'nursing-home-abuse-attorneys'   => 'nursing-home-abuse-lawyers',
+        'nursing-home-abuse-attorney'    => 'nursing-home-abuse-lawyers',
+        'nursing-home-abuse-lawyer'      => 'nursing-home-abuse-lawyers',
+        'slip-and-fall-attorneys'        => 'slip-and-fall-lawyers',
+        'slip-and-fall-attorney'         => 'slip-and-fall-lawyers',
+        'slip-and-fall-lawyer'           => 'slip-and-fall-lawyers',
+        'workers-compensation-attorney'  => 'workers-compensation-lawyers',
+        'workers-compensation-lawyer'    => 'workers-compensation-lawyers',
+        'personal-injury-lawyer'         => 'personal-injury-lawyers',
+        'car-accident-lawyer'            => 'car-accident-lawyers',
+        'truck-accident-lawyer'          => 'truck-accident-lawyers',
+        'burn-injury-lawyer'             => 'burn-injury-lawyers',
+        'brain-injury-lawyer'            => 'brain-injury-lawyers',
+        'wrongful-death-lawyer'          => 'wrongful-death-lawyers',
+        'boating-accident-lawyer'        => 'boating-accident-lawyers',
+        'spinal-cord-injury-lawyer'      => 'spinal-cord-injury-lawyers',
+        'motorcycle-accident-lawyer'     => 'motorcycle-accident-lawyers',
+        'construction-accident-lawyer'   => 'construction-accident-lawyers',
+        'dog-bite-lawyer'                => 'dog-bite-lawyers',
+        'product-liability-lawyer'       => 'product-liability-lawyers',
+        'coronavirus-business-claims'    => 'car-accident-lawyers', // deprecated → most relevant pillar
     );
 
-    // City → destination slug mapping
+    // City → destination slug mapping (cities with offices)
     $city_dest = array(
         'savannah'   => 'savannah-ga',
         'charleston' => 'charleston-sc',
@@ -154,10 +167,39 @@ function roden_legacy_content_redirects() {
         exit;
     }
 
-    // /albany/[pa-slug]/ → /practice-areas/[pa-slug]/ (no office)
-    if ( preg_match( '#^/albany/([^/]+)/?$#', $clean_path, $m ) ) {
-        $pa_slug = isset( $pa_slug_map[ $m[1] ] ) ? $pa_slug_map[ $m[1] ] : $m[1];
+    // /albany/[pa-slug]/ and /macon/[pa-slug]/ → /practice-areas/[pa-slug]/ (no office)
+    if ( preg_match( '#^/(albany|macon)/([^/]+)/?$#', $clean_path, $m ) ) {
+        $pa_slug = isset( $pa_slug_map[ $m[2] ] ) ? $pa_slug_map[ $m[2] ] : $m[2];
         wp_redirect( home_url( '/practice-areas/' . $pa_slug . '/' ), 301 );
+        exit;
+    }
+
+    // /macon/practice-areas/ and /albany/practice-areas/ → /practice-areas/
+    if ( preg_match( '#^/(macon|albany)/practice-areas/?$#', $clean_path ) ) {
+        wp_redirect( home_url( '/practice-areas/' ), 301 );
+        exit;
+    }
+
+    // /practice-area/[slug]/ → /practice-areas/[corrected-slug]/ (old singular CPT)
+    if ( preg_match( '#^/practice-area/([^/]+)/?$#', $clean_path, $m ) ) {
+        $pa_slug = isset( $pa_slug_map[ $m[1] ] ) ? $pa_slug_map[ $m[1] ] : $m[1];
+        // Ensure trailing 's' for pluralization if not in map
+        if ( substr( $pa_slug, -1 ) !== 's' ) {
+            $pa_slug .= 's';
+        }
+        wp_redirect( home_url( '/practice-areas/' . $pa_slug . '/' ), 301 );
+        exit;
+    }
+
+    // /practice-area-location/[city]/ → /practice-areas/ (old taxonomy-style URLs)
+    if ( preg_match( '#^/practice-area-location/[^/]+#', $clean_path ) ) {
+        wp_redirect( home_url( '/practice-areas/' ), 301 );
+        exit;
+    }
+
+    // /tag/[slug]/ → /blog/ (old tag archives, taxonomy removed from sitemap)
+    if ( preg_match( '#^/tag/[^/]+/?$#', $clean_path ) ) {
+        wp_redirect( home_url( '/blog/' ), 301 );
         exit;
     }
 
@@ -184,6 +226,14 @@ function roden_legacy_content_redirects() {
     // which now resolve to /blog/blog-what-to-do.../
     // Redirect to /blog/what-to-do.../ (the new slug after bulk rename)
     if ( preg_match( '#^/blog/blog-(.+?)/?$#', $clean_path, $m ) ) {
+        wp_redirect( home_url( '/blog/' . $m[1] . '/' ), 301 );
+        exit;
+    }
+
+    // Root-level /blog-[slug]/ → /blog/[slug]/ (old root posts with blog- prefix)
+    // These are single-segment URLs from the old /%postname%/ structure where
+    // the post slug itself started with "blog-".
+    if ( preg_match( '#^/blog-(.+?)/?$#', $clean_path, $m ) ) {
         wp_redirect( home_url( '/blog/' . $m[1] . '/' ), 301 );
         exit;
     }
@@ -521,10 +571,19 @@ function roden_get_legacy_redirect_map() {
         // Old privacy policy slug
         '/terms-privacy-policy/' => '/privacy-policy/',
 
+        // Old results page → case results
+        '/results/' => '/case-results/',
+
+        // Old pillar slug variants
+        '/practice-areas/medical-malpractice-attorneys/' => '/practice-areas/medical-malpractice-lawyers/',
+
         // Root-level blog posts that may have been renamed (catch-all won't find them)
         '/car-crash-crush-injuries-in-charleston/'                                        => '/blog/car-crash-crush-injuries-in-charleston/',
         '/should-i-worry-if-i-have-stomach-pain-after-a-car-accident-in-charleston/'      => '/blog/stomach-pain-after-a-car-accident-in-charleston/',
         '/a-charleston-residents-guide-to-tourist-car-accidents/'                          => '/blog/a-charleston-residents-guide-to-tourist-car-accidents/',
+
+        // Ivy Montano — slug mismatch (old: ivy-montano, current: ivy-s-montano)
+        '/who-we-are/attorneys/ivy-montano/' => '/attorneys/ivy-s-montano/',
 
     );
 }

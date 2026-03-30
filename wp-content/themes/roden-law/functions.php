@@ -213,6 +213,8 @@ function roden_exclude_toxic_pages_from_sitemap( $args, $post_type ) {
             'columbia-truck-accident-lawyer',                       // Duplicates PA CPT intersection.
             'charleston-car-accident-lawyer',                       // Duplicates PA CPT intersection.
             'south-carolina-car-accident-lawyer',                   // Duplicates PA CPT intersection.
+            'class-actions',                                         // Old page, redirects to /class-action-lawyers/.
+            'home-espanol',                                          // Old Spanish homepage, no longer served.
         );
 
         // Get post IDs by slug to exclude.
