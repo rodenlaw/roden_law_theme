@@ -782,19 +782,42 @@ $in_location  = 'in ' . $city;
         .faq-item.open .faq-question::after {
             content: '\2212';
         }
-        .faq-answer {
+        .landing-page .faq-answer {
+            display: block !important;
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.3s ease;
+            padding: 0;
+            border-top: none;
         }
-        .faq-item.open .faq-answer {
+        .landing-page .faq-item.open .faq-answer {
             max-height: 800px;
         }
-        .faq-answer p {
+        .landing-page .faq-answer p {
             padding-top: 12px;
             font-size: 15px;
             color: var(--text-muted);
             line-height: 1.7;
+        }
+        .landing-page .faq-question {
+            width: auto;
+            background: none !important;
+            border: none;
+            padding: 20px 0;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            color: var(--navy);
+        }
+        .landing-page .faq-question[aria-expanded="true"] {
+            background: none !important;
+            color: var(--navy);
+        }
+        .landing-page .faq-item {
+            border: none;
+            border-bottom: 1px solid #edf2f7;
+            border-radius: 0;
+            overflow: visible;
         }
 
         /* ===== OFFICES ===== */
