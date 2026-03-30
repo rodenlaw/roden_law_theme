@@ -275,13 +275,14 @@ function roden_exclude_toxic_pages_from_sitemap( $args, $post_type ) {
 
 add_action( 'template_redirect', 'roden_legacy_attorney_redirect', 2 );
 function roden_legacy_attorney_redirect() {
-    if ( ! is_404() ) {
-        return;
-    }
-    $path = trim( $_SERVER['REQUEST_URI'], '/' );
-    if ( preg_match( '#^who-we-are/attorneys/([^/?]+)#', $path, $m ) ) {
-        wp_redirect( home_url( '/attorneys/' . $m[1] . '/' ), 301 );
-        exit;
+    $path = trim( strtok( $_SERVER['REQUEST_URI'], '?' ), '/' );
+    // /who-we-are/attorneys/[name]/ → /attorneys/[name]/ (skip names already in static map)
+    if ( preg_match( '#^who-we-are/attorneys/([^/]+)#', $path, $m ) ) {
+        $static_names = array( 'allison-marani', 'j-michael-parsons', 'joseph-padgett', 'troy-a-williams', 'caroline-shaw', 'jeff-fitzpatrick-jr' );
+        if ( ! in_array( $m[1], $static_names, true ) ) {
+            wp_redirect( home_url( '/attorneys/' . $m[1] . '/' ), 301 );
+            exit;
+        }
     }
     if ( preg_match( '#^who-we-are/attorneys/?$#', $path ) ) {
         wp_redirect( home_url( '/attorneys/' ), 301 );

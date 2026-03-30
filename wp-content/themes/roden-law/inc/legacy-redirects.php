@@ -103,6 +103,82 @@ function roden_legacy_content_redirects() {
         exit;
     }
 
+    // /class-action-lawyers/[category]/[case]/ → /class-action-lawyers/ (nested old class-action pages)
+    if ( preg_match( '#^/class-action-lawyers/[^/]+/[^/]+/?$#', $clean_path ) ) {
+        wp_redirect( home_url( '/class-action-lawyers/' ), 301 );
+        exit;
+    }
+
+    // ── City-first intersection redirects ──────────────────────────────
+    // Old format: /[city]/[pa-slug]/ and /[city]/[pa-slug]/[subtype]/
+    // New format: /[pa-slug]/[city-state]/
+    // Covers savannah, charleston, brunswick (edge cases), albany, macon
+
+    // Map of old PA slugs → current PA slugs (only where they differ)
+    $pa_slug_map = array(
+        'medical-malpractice-attorneys' => 'medical-malpractice-lawyers',
+        'medical-malpractice-attorney'  => 'medical-malpractice-lawyers',
+        'maritime-lawyers'              => 'maritime-injury-lawyers',
+        'nursing-home-abuse-attorneys'  => 'nursing-home-abuse-lawyers',
+        'nursing-home-abuse-attorney'   => 'nursing-home-abuse-lawyers',
+        'nursing-home-abuse-lawyer'     => 'nursing-home-abuse-lawyers',
+        'slip-and-fall-attorneys'       => 'slip-and-fall-lawyers',
+        'slip-and-fall-attorney'        => 'slip-and-fall-lawyers',
+        'slip-and-fall-lawyer'          => 'slip-and-fall-lawyers',
+        'workers-compensation-attorney' => 'workers-compensation-lawyers',
+        'personal-injury-lawyer'        => 'personal-injury-lawyers',
+    );
+
+    // City → destination slug mapping
+    $city_dest = array(
+        'savannah'   => 'savannah-ga',
+        'charleston' => 'charleston-sc',
+        'brunswick'  => 'darien-ga',
+    );
+
+    // /[city]/[pa-slug]/[subtype]/ → /[pa-slug]/[city-state]/ (3-segment, check first)
+    if ( preg_match( '#^/(savannah|charleston|brunswick)/([^/]+)/([^/]+)/?$#', $clean_path, $m ) ) {
+        $city    = $m[1];
+        $pa_slug = isset( $pa_slug_map[ $m[2] ] ) ? $pa_slug_map[ $m[2] ] : $m[2];
+        $dest    = $city_dest[ $city ];
+        wp_redirect( home_url( '/' . $pa_slug . '/' . $dest . '/' ), 301 );
+        exit;
+    }
+
+    // /[city]/[pa-slug]/ → /[pa-slug]/[city-state]/ (2-segment)
+    if ( preg_match( '#^/(savannah|charleston|brunswick)/([^/]+)/?$#', $clean_path, $m ) ) {
+        $city    = $m[1];
+        $pa_slug = isset( $pa_slug_map[ $m[2] ] ) ? $pa_slug_map[ $m[2] ] : $m[2];
+        $dest    = $city_dest[ $city ];
+        wp_redirect( home_url( '/' . $pa_slug . '/' . $dest . '/' ), 301 );
+        exit;
+    }
+
+    // /albany/[pa-slug]/ → /practice-areas/[pa-slug]/ (no office)
+    if ( preg_match( '#^/albany/([^/]+)/?$#', $clean_path, $m ) ) {
+        $pa_slug = isset( $pa_slug_map[ $m[1] ] ) ? $pa_slug_map[ $m[1] ] : $m[1];
+        wp_redirect( home_url( '/practice-areas/' . $pa_slug . '/' ), 301 );
+        exit;
+    }
+
+    // /es/[anything] → / (Spanish content removed)
+    if ( preg_match( '#^/es/.+#', $clean_path ) ) {
+        wp_redirect( home_url( '/' ), 301 );
+        exit;
+    }
+
+    // /who-we-are/attorney/[name]/ → /attorneys/[name]/ (singular 'attorney' variant)
+    if ( preg_match( '#^/who-we-are/attorney/([^/]+)/?$#', $clean_path, $m ) ) {
+        wp_redirect( home_url( '/attorneys/' . $m[1] . '/' ), 301 );
+        exit;
+    }
+
+    // /attorney/[mangled-slug]/ → /attorneys/ (old CPT with bad slugs)
+    if ( preg_match( '#^/attorney/[^/]+/?$#', $clean_path ) ) {
+        wp_redirect( home_url( '/attorneys/' ), 301 );
+        exit;
+    }
+
     // ── Strip "blog-" prefix from old slugs ──────────────────────────────
     // Old posts had slugs like "blog-what-to-do-when-you-are-in-a-car-accident"
     // which now resolve to /blog/blog-what-to-do.../
@@ -246,6 +322,12 @@ function roden_get_legacy_redirect_map() {
         '/practice-areas/brunswick/workers-compensation-attorney/' => '/workers-compensation-lawyers/darien-ga/',
         '/practice-areas/brunswick/wrongful-death-lawyers/'        => '/wrongful-death-lawyers/darien-ga/',
 
+        // /brunswick/[slug]/ format — singular/variant slugs not covered above
+        '/brunswick/medical-malpractice-attorney/'   => '/medical-malpractice-lawyers/darien-ga/',
+        '/brunswick/workers-compensation-attorney/'  => '/workers-compensation-lawyers/darien-ga/',
+        '/brunswick/nursing-home-abuse-lawyer/'      => '/nursing-home-abuse-lawyers/darien-ga/',
+        '/brunswick/slip-and-fall-lawyer/'           => '/slip-and-fall-lawyers/darien-ga/',
+
         // /brunswick/[slug]/ format (no /practice-areas/ prefix)
         '/brunswick/boating-accident-lawyers/'      => '/boating-accident-lawyers/darien-ga/',
         '/brunswick/brain-injury-lawyers/'          => '/brain-injury-lawyers/darien-ga/',
@@ -346,10 +428,12 @@ function roden_get_legacy_redirect_map() {
         // Old CPT used /staff/[name]/ and /who-we-are/attorneys/[name]/
         // ══════════════════════════════════════════════════════════════
 
-        '/who-we-are/attorneys/allison-marani/'   => '/attorneys/',
-        '/who-we-are/attorneys/j-michael-parsons/' => '/attorneys/',
-        '/who-we-are/attorneys/joseph-padgett/'   => '/attorneys/',
-        '/who-we-are/attorneys/troy-a-williams/'  => '/attorneys/',
+        '/who-we-are/attorneys/allison-marani/'      => '/attorneys/',
+        '/who-we-are/attorneys/j-michael-parsons/'  => '/attorneys/',
+        '/who-we-are/attorneys/joseph-padgett/'     => '/attorneys/',
+        '/who-we-are/attorneys/troy-a-williams/'    => '/attorneys/',
+        '/who-we-are/attorneys/caroline-shaw/'       => '/attorneys/',
+        '/who-we-are/attorneys/jeff-fitzpatrick-jr/' => '/attorneys/',
 
         // ══════════════════════════════════════════════════════════════
         // CATEGORY 9: Old city practice area index pages
@@ -425,6 +509,22 @@ function roden_get_legacy_redirect_map() {
 
         // "Benefits of hiring a WC lawyer" → "Are accident lawyers worth it"
         '/what-are-the-benefits-of-hiring-a-workers-compensation-lawyer/' => '/are-accident-lawyers-worth-it/',
+
+        // ══════════════════════════════════════════════════════════════
+        // CATEGORY 13: Sitemap audit — 2026-03-30
+        // URLs found in sitemap returning 404
+        // ══════════════════════════════════════════════════════════════
+
+        // Old paginated practice area archive
+        '/practice-areas/general/page/24/' => '/practice-areas/',
+
+        // Old privacy policy slug
+        '/terms-privacy-policy/' => '/privacy-policy/',
+
+        // Root-level blog posts that may have been renamed (catch-all won't find them)
+        '/car-crash-crush-injuries-in-charleston/'                                        => '/blog/car-crash-crush-injuries-in-charleston/',
+        '/should-i-worry-if-i-have-stomach-pain-after-a-car-accident-in-charleston/'      => '/blog/stomach-pain-after-a-car-accident-in-charleston/',
+        '/a-charleston-residents-guide-to-tourist-car-accidents/'                          => '/blog/a-charleston-residents-guide-to-tourist-car-accidents/',
 
     );
 }
