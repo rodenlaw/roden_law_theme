@@ -43,6 +43,24 @@ $in_location  = 'in ' . $city;
         /* ===== RESET & BASE ===== */
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         html { scroll-behavior: smooth; }
+        /* Skip link (a11y) */
+        .skip-link {
+            position: absolute;
+            top: -100px;
+            left: 16px;
+            background: var(--gold);
+            color: var(--navy-deep);
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            z-index: 2000;
+            transition: top 0.2s;
+        }
+        .skip-link:focus {
+            top: 12px;
+        }
         body {
             font-family: 'Open Sans', Arial, sans-serif;
             color: #1a2332;
@@ -200,7 +218,7 @@ $in_location  = 'in ' . $city;
         .hero h1 .gold { color: var(--gold); }
         .hero-sub {
             font-size: 18px;
-            color: #c0cad8;
+            color: #d4dce8;
             line-height: 1.7;
             margin-bottom: 28px;
             max-width: 540px;
@@ -568,7 +586,7 @@ $in_location  = 'in ' . $city;
         }
         .results-section .section-eyebrow { color: var(--gold); }
         .results-section .section-title { color: var(--white); }
-        .results-section .section-sub { color: #8899aa; }
+        .results-section .section-sub { color: #a0b0c0; }
         .results-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -770,7 +788,7 @@ $in_location  = 'in ' . $city;
             transition: max-height 0.3s ease;
         }
         .faq-item.open .faq-answer {
-            max-height: 300px;
+            max-height: 800px;
         }
         .faq-answer p {
             padding-top: 12px;
@@ -901,6 +919,44 @@ $in_location  = 'in ' . $city;
             padding: 0 24px;
         }
 
+        /* ===== ACCESSIBILITY ===== */
+        /* Screen-reader only utility */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            white-space: nowrap;
+            border: 0;
+        }
+        /* Focus styles for keyboard nav */
+        a:focus-visible,
+        button:focus-visible,
+        input:focus-visible,
+        select:focus-visible,
+        textarea:focus-visible,
+        .faq-question:focus-visible {
+            outline: 3px solid var(--gold);
+            outline-offset: 2px;
+            border-radius: 4px;
+        }
+        /* Scroll margin so anchored elements clear fixed mobile bar */
+        #leadForm {
+            scroll-margin-top: 72px;
+        }
+        /* Reduced motion support */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
         /* ===== RESPONSIVE ===== */
         @media (max-width: 1024px) {
             .hero-inner {
@@ -945,6 +1001,7 @@ $in_location  = 'in ' . $city;
     <?php wp_head(); ?>
 </head>
 <body <?php body_class( 'landing-page' ); ?>>
+<a class="skip-link" href="#leadForm">Skip to Free Case Review</a>
 
 <!-- ===== TOP BAR ===== -->
 <div class="top-bar">
@@ -960,6 +1017,7 @@ $in_location  = 'in ' . $city;
     </div>
 </div>
 
+<main id="main-content">
 <!-- ===== HERO ===== -->
 <section class="hero">
     <div class="hero-bg-image"></div>
@@ -1008,29 +1066,34 @@ $in_location  = 'in ' . $city;
                 <?php wp_nonce_field( 'roden_sidebar_form', 'roden_form_nonce' ); ?>
                 <div class="form-row">
                     <div class="form-group">
-                        <input type="text" name="first_name" placeholder="First Name*" required>
+                        <label for="lp-fname" class="sr-only">First Name</label>
+                        <input type="text" name="first_name" id="lp-fname" placeholder="First Name*" autocomplete="given-name" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="last_name" placeholder="Last Name*" required>
+                        <label for="lp-lname" class="sr-only">Last Name</label>
+                        <input type="text" name="last_name" id="lp-lname" placeholder="Last Name*" autocomplete="family-name" required>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group">
-                        <input type="tel" name="phone" id="lp-phone" placeholder="(555) 555-5555" required>
+                        <label for="lp-phone" class="sr-only">Phone Number</label>
+                        <input type="tel" name="phone" id="lp-phone" placeholder="(555) 555-5555" autocomplete="tel" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" name="email" id="lp-email" placeholder="Email Address*" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
+                        <label for="lp-email" class="sr-only">Email Address</label>
+                        <input type="email" name="email" id="lp-email" placeholder="Email Address*" autocomplete="email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
                     </div>
                 </div>
                 <div class="form-group">
-                    <textarea name="message" placeholder="Please describe what happened" rows="8"></textarea>
+                    <label for="lp-message" class="sr-only">Describe what happened</label>
+                    <textarea name="message" id="lp-message" placeholder="Please describe what happened" rows="4"></textarea>
                 </div>
                 <label class="form-consent" style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;cursor:pointer;">
                     <input type="checkbox" name="consent" value="1" checked required style="width:18px;height:18px;min-width:18px;margin-top:2px;accent-color:#f5a623;cursor:pointer;">
-                    <span style="font-size:11px;color:#94a3b8;line-height:1.5;">I hereby expressly consent to receive automated communications including calls, texts, emails, and/or prerecorded messages. By submitting this form, you agree to our <a href="<?php echo esc_url( home_url( '/terms-privacy-policy/' ) ); ?>" target="_blank" style="color:#f5a623;text-decoration:underline;">Terms &amp; Privacy Policy</a>.</span>
+                    <span style="font-size:12px;color:#64748b;line-height:1.5;">I hereby expressly consent to receive automated communications including calls, texts, emails, and/or prerecorded messages. By submitting this form, you agree to our <a href="<?php echo esc_url( home_url( '/terms-privacy-policy/' ) ); ?>" target="_blank" style="color:#f5a623;text-decoration:underline;">Terms &amp; Privacy Policy</a>.</span>
                 </label>
                 <button type="submit" class="form-submit">Get My Free Case Review &rarr;</button>
-                <p class="form-error" style="display:none;color:#ff6b6b;font-size:13px;text-align:center;margin-top:8px;"></p>
+                <p class="form-error" role="alert" aria-live="assertive" style="display:none;color:#ff6b6b;font-size:13px;text-align:center;margin-top:8px;"></p>
             </form>
             <div class="form-trust">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2ecc71" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
@@ -1255,37 +1318,37 @@ $in_location  = 'in ' . $city;
             </div>
             <div>
                 <div class="faq-item open">
-                    <div class="faq-question">How much does it cost to hire Roden Law?</div>
+                    <div class="faq-question" tabindex="0" role="button">How much does it cost to hire Roden Law?</div>
                     <div class="faq-answer">
                         <p>Nothing upfront. We work on a contingency fee basis, which means you pay zero out of pocket. Our fee comes from a percentage of your settlement or verdict &mdash; only if we win. If we don't recover money for you, you owe us nothing.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">How long do I have to file a car accident claim in Georgia?</div>
+                    <div class="faq-question" tabindex="0" role="button">How long do I have to file a car accident claim in Georgia?</div>
                     <div class="faq-answer">
                         <p>Georgia has a <?php echo esc_html( $ga_law['statute_years'] ); ?>-year statute of limitations for personal injury claims from the date of the accident (<?php echo esc_html( $ga_law['statute_cite'] ); ?>). This is shorter than many states, so acting quickly is critical. Evidence disappears, witnesses forget details, and the insurance company may use delay against you. Contact an attorney as soon as possible.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">What if I was partially at fault for the accident?</div>
+                    <div class="faq-question" tabindex="0" role="button">What if I was partially at fault for the accident?</div>
                     <div class="faq-answer">
                         <p>Under Georgia's modified comparative fault law (<?php echo esc_html( $ga_law['comp_fault_cite'] ); ?>), you can still recover compensation as long as you were less than 50% at fault. Your award is reduced by your percentage of fault. For example, if you were 20% at fault and damages total $100,000, you could recover $80,000. Insurance companies often try to inflate your fault percentage &mdash; our attorneys fight back.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">What compensation can I receive after a car accident in Georgia?</div>
+                    <div class="faq-question" tabindex="0" role="button">What compensation can I receive after a car accident in Georgia?</div>
                     <div class="faq-answer">
                         <p>You may be entitled to compensation for medical bills (past and future), lost wages and earning capacity, pain and suffering, property damage, and in some cases, punitive damages. Georgia does not cap compensatory damages in most personal injury cases, so the value depends on the severity of your injuries and the circumstances of the accident.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">What if the other driver doesn't have insurance?</div>
+                    <div class="faq-question" tabindex="0" role="button">What if the other driver doesn't have insurance?</div>
                     <div class="faq-answer">
                         <p>Georgia requires drivers to carry minimum liability coverage, but not all drivers comply. You may still be able to recover compensation through your own uninsured/underinsured motorist (UM/UIM) coverage. Our attorneys will investigate every avenue to ensure you get the compensation you deserve.</p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">Should I talk to the other driver's insurance company?</div>
+                    <div class="faq-question" tabindex="0" role="button">Should I talk to the other driver's insurance company?</div>
                     <div class="faq-answer">
                         <p>No. Insurance adjusters are trained to get you to say things that can reduce your claim. Before giving any recorded statement, talk to a Roden Law attorney first. We'll handle all communication with the insurance companies so you don't accidentally hurt your case.</p>
                     </div>
@@ -1342,6 +1405,7 @@ $in_location  = 'in ' . $city;
     </div>
 </section>
 
+</main>
 <!-- ===== FOOTER ===== -->
 <footer class="lp-footer">
     <p>
@@ -1351,8 +1415,8 @@ $in_location  = 'in ' . $city;
 </footer>
 
 <!-- ===== MOBILE CALL BAR (TOP) ===== -->
-<div class="mobile-cta-bar">
-    <a href="tel:<?php echo esc_attr( $tel ); ?>">
+<div class="mobile-cta-bar" role="complementary" aria-label="Call now">
+    <a href="tel:<?php echo esc_attr( $tel ); ?>" aria-label="Call Roden Law at <?php echo esc_attr( $phone ); ?>">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         Call Now &mdash; <?php echo esc_html( $phone ); ?>
     </a>
@@ -1360,14 +1424,26 @@ $in_location  = 'in ' . $city;
 
 <script>
     /* FAQ Toggle */
+    function toggleFaq(question) {
+        var item = question.parentElement;
+        var isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(function(i) {
+            if (i !== item) {
+                i.classList.remove('open');
+                i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+            }
+        });
+        item.classList.toggle('open');
+        question.setAttribute('aria-expanded', String(!isOpen));
+    }
     document.querySelectorAll('.faq-question').forEach(function(question) {
-        question.addEventListener('click', function() {
-            var item = this.parentElement;
-            var allItems = document.querySelectorAll('.faq-item');
-            allItems.forEach(function(i) {
-                if (i !== item) i.classList.remove('open');
-            });
-            item.classList.toggle('open');
+        question.setAttribute('aria-expanded', question.parentElement.classList.contains('open') ? 'true' : 'false');
+        question.addEventListener('click', function() { toggleFaq(this); });
+        question.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggleFaq(this);
+            }
         });
     });
 
