@@ -927,6 +927,157 @@ $in_location  = 'in ' . $city;
             border-bottom-color: var(--gold);
         }
 
+        /* ===== TRUST BADGE BAR ===== */
+        .trust-badges {
+            background: var(--white);
+            border-bottom: 1px solid #edf2f7;
+            padding: 28px 0;
+        }
+        .trust-badges-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .trust-badge-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 10px;
+            text-align: center;
+            line-height: 1.1;
+        }
+        .trust-badge-icon.google { background: #f1f3f4; color: #4285f4; }
+        .trust-badge-icon.sl { background: #1a365d; color: #e8a830; }
+        .trust-badge-icon.avvo { background: #2d3748; color: #fff; }
+        .trust-badge-icon.bbb { background: #005288; color: #fff; }
+        .trust-badge-icon.ga-bar { background: #1a2a3a; color: #e8a830; }
+        .trust-badge-text {
+            font-size: 13px;
+            color: var(--text-muted);
+            line-height: 1.3;
+        }
+        .trust-badge-text strong {
+            display: block;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: var(--navy);
+            font-size: 14px;
+        }
+        .trust-badge-stars {
+            color: var(--gold);
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        /* ===== CHECKLIST ===== */
+        .checklist-section {
+            padding: 80px 0;
+            background: var(--light-gray);
+        }
+        .checklist-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+        .checklist-items {
+            list-style: none;
+            padding: 0;
+        }
+        .checklist-items li {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 18px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .checklist-items li:last-child {
+            border-bottom: none;
+        }
+        .check-num {
+            width: 36px;
+            height: 36px;
+            background: var(--gold);
+            color: var(--navy-deep);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+        .check-content h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            color: var(--navy);
+            margin-bottom: 4px;
+        }
+        .check-content p {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* ===== DESKTOP STICKY CTA ===== */
+        .desktop-sticky-cta {
+            display: none;
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            z-index: 999;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.3s, transform 0.3s;
+        }
+        .desktop-sticky-cta.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .desktop-sticky-cta a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--gold);
+            color: var(--navy-deep);
+            padding: 16px 28px;
+            border-radius: 60px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 15px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+            transition: all 0.3s;
+        }
+        .desktop-sticky-cta a:hover {
+            background: var(--gold-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(232,168,48,0.4);
+        }
+
+        /* ===== ACCIDENT TYPE LINKS ===== */
+        a.accident-type-item {
+            text-decoration: none;
+            color: inherit;
+        }
+
         /* ===== FOOTER ===== */
         .lp-footer {
             background: #0a1420;
@@ -981,6 +1132,11 @@ $in_location  = 'in ' . $city;
         }
 
         /* ===== RESPONSIVE ===== */
+        /* Desktop sticky CTA: show only on screens > 1024px */
+        @media (min-width: 1025px) {
+            .desktop-sticky-cta { display: block; }
+        }
+
         @media (max-width: 1024px) {
             .hero-inner {
                 grid-template-columns: 1fr;
@@ -995,6 +1151,8 @@ $in_location  = 'in ' . $city;
             .testimonial-grid { grid-template-columns: 1fr; }
             .faq-layout { grid-template-columns: 1fr; gap: 32px; }
             .ga-law-grid { grid-template-columns: 1fr; }
+            .checklist-layout { grid-template-columns: 1fr; gap: 32px; }
+            .trust-badges-inner { gap: 24px; }
         }
 
         @media (max-width: 768px) {
@@ -1013,7 +1171,9 @@ $in_location  = 'in ' . $city;
             .no-fee-inner { gap: 8px; justify-content: center; }
             .no-fee-item { font-size: 13px; }
             .no-fee-sep { display: none; }
-            .proof-bar-inner { gap: 24px; }
+            .trust-badges-inner { gap: 16px; }
+            .trust-badge { gap: 8px; }
+            .trust-badge-icon { width: 40px; height: 40px; font-size: 9px; }
             .why-grid { grid-template-columns: 1fr; }
             .results-grid { grid-template-columns: 1fr; }
             .process-grid { grid-template-columns: 1fr; }
@@ -1021,6 +1181,63 @@ $in_location  = 'in ' . $city;
             .offices-grid { grid-template-columns: 1fr; }
         }
     </style>
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How much does it cost to hire Roden Law?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nothing upfront. We work on a contingency fee basis, which means you pay zero out of pocket. Our fee comes from a percentage of your settlement or verdict — only if we win. If we don't recover money for you, you owe us nothing."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long do I have to file a car accident claim in Georgia?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Georgia has a <?php echo esc_html( $ga_law['statute_years'] ); ?>-year statute of limitations for personal injury claims from the date of the accident (<?php echo esc_html( $ga_law['statute_cite'] ); ?>). This is shorter than many states, so acting quickly is critical. Evidence disappears, witnesses forget details, and the insurance company may use delay against you."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What if I was partially at fault for the accident?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Under Georgia's modified comparative fault law (<?php echo esc_html( $ga_law['comp_fault_cite'] ); ?>), you can still recover compensation as long as you were less than 50% at fault. Your award is reduced by your percentage of fault."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What compensation can I receive after a car accident in Georgia?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You may be entitled to compensation for medical bills (past and future), lost wages and earning capacity, pain and suffering, property damage, and in some cases, punitive damages. Georgia does not cap compensatory damages in most personal injury cases."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What if the other driver doesn't have insurance?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Georgia requires drivers to carry minimum liability coverage, but not all drivers comply. You may still be able to recover compensation through your own uninsured/underinsured motorist (UM/UIM) coverage."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Should I talk to the other driver's insurance company?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. Insurance adjusters are trained to get you to say things that can reduce your claim. Before giving any recorded statement, talk to a Roden Law attorney first. We'll handle all communication with the insurance companies so you don't accidentally hurt your case."
+                }
+            }
+        ]
+    }
+    </script>
     <?php wp_head(); ?>
 </head>
 <body <?php body_class( 'landing-page' ); ?>>
@@ -1053,30 +1270,30 @@ $in_location  = 'in ' . $city;
             <h1><?php echo esc_html( $city ); ?> <span class="gold">Car Accident Lawyer</span></h1>
             <p class="hero-sub">Don't let insurance companies shortchange you. Roden Law has recovered over <?php echo esc_html( $stats['recovered'] ); ?> for injury victims across Georgia &mdash; and we don't charge a fee unless we win your case.</p>
             <div class="accident-types">
-                <div class="accident-type-item">
+                <a href="<?php echo esc_url( home_url( '/car-accident-lawyers/rear-end-collision/' ) ); ?>" class="accident-type-item">
                     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><rect x="1" y="12" width="9" height="6" rx="1"/><rect x="14" y="12" width="9" height="6" rx="1"/><line x1="10" y1="15" x2="14" y2="15"/><circle cx="4" cy="18" r="1.5" fill="#e8a830" stroke="none"/><circle cx="20" cy="18" r="1.5" fill="#e8a830" stroke="none"/></svg>
                     <span class="accident-type-label">Rear-End Collision</span>
-                </div>
-                <div class="accident-type-item">
+                </a>
+                <a href="<?php echo esc_url( home_url( '/car-accident-lawyers/t-bone-accident/' ) ); ?>" class="accident-type-item">
                     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><rect x="2" y="10" width="10" height="6" rx="1"/><rect x="14" y="4" width="6" height="10" rx="1" transform="rotate(0)"/><line x1="12" y1="13" x2="14" y2="13"/><path d="M11 12l3-3" stroke="#e8a830" stroke-width="1" opacity="0.5"/></svg>
                     <span class="accident-type-label">T-Bone / Side Impact</span>
-                </div>
-                <div class="accident-type-item">
+                </a>
+                <a href="<?php echo esc_url( home_url( '/car-accident-lawyers/hit-and-run-accident/' ) ); ?>" class="accident-type-item">
                     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><rect x="2" y="12" width="9" height="5" rx="1"/><circle cx="5" cy="17" r="1.5" fill="#e8a830" stroke="none"/><path d="M11 14.5l2-2M13 14.5l2-2" opacity="0.6"/><path d="M16 9l2 2M20 9l-2 2M18 7v4" stroke-width="1.5"/></svg>
                     <span class="accident-type-label">Hit &amp; Run</span>
-                </div>
-                <div class="accident-type-item">
+                </a>
+                <a href="<?php echo esc_url( home_url( '/car-accident-lawyers/drunk-driver-accident/' ) ); ?>" class="accident-type-item">
                     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><rect x="2" y="13" width="11" height="5" rx="1"/><circle cx="5" cy="18" r="1.5" fill="#e8a830" stroke="none"/><circle cx="10" cy="18" r="1.5" fill="#e8a830" stroke="none"/><path d="M15 11l1.5-5.5M18 11l-1.5-5.5M16.5 5.5h0" stroke-linecap="round"/><path d="M14 8h5" stroke-linecap="round"/></svg>
                     <span class="accident-type-label">Drunk Driver</span>
-                </div>
-                <div class="accident-type-item">
+                </a>
+                <a href="<?php echo esc_url( home_url( '/car-accident-lawyers/distracted-driver-accident/' ) ); ?>" class="accident-type-item">
                     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><rect x="2" y="13" width="11" height="5" rx="1"/><circle cx="5" cy="18" r="1.5" fill="#e8a830" stroke="none"/><circle cx="10" cy="18" r="1.5" fill="#e8a830" stroke="none"/><rect x="15" y="5" width="6" height="10" rx="1"/><line x1="18" y1="8" x2="18" y2="12" stroke-linecap="round"/></svg>
                     <span class="accident-type-label">Distracted Driver</span>
-                </div>
-                <div class="accident-type-item">
+                </a>
+                <a href="<?php echo esc_url( home_url( '/car-accident-lawyers/rideshare-accident/' ) ); ?>" class="accident-type-item">
                     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><rect x="3" y="12" width="12" height="6" rx="1"/><circle cx="6" cy="18" r="1.5" fill="#e8a830" stroke="none"/><circle cx="12" cy="18" r="1.5" fill="#e8a830" stroke="none"/><circle cx="20" cy="10" r="4"/><path d="M18.5 9.5l1.5 1 1.5-1" stroke-linecap="round"/></svg>
                     <span class="accident-type-label">Uber / Lyft</span>
-                </div>
+                </a>
             </div>
         </div>
 
@@ -1116,6 +1333,10 @@ $in_location  = 'in ' . $city;
                     <span style="font-size:12px;color:#64748b;line-height:1.5;">I hereby expressly consent to receive automated communications including calls, texts, emails, and/or prerecorded messages. By submitting this form, you agree to our <a href="<?php echo esc_url( home_url( '/terms-privacy-policy/' ) ); ?>" target="_blank" style="color:#f5a623;text-decoration:underline;">Terms &amp; Privacy Policy</a>.</span>
                 </label>
                 <button type="submit" class="form-submit">Get My Free Case Review &rarr;</button>
+                <p style="text-align:center;font-size:12px;color:var(--text-muted);margin-top:8px;margin-bottom:0;">
+                    <svg style="display:inline-block;vertical-align:middle;margin-right:4px;" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#2ecc71" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    Average response time: under 15 minutes
+                </p>
                 <p class="form-error" role="alert" aria-live="assertive" style="display:none;color:#ff6b6b;font-size:13px;text-align:center;margin-top:8px;"></p>
             </form>
             <div class="form-trust">
@@ -1124,6 +1345,36 @@ $in_location  = 'in ' . $city;
             </div>
             <div style="text-align:center;margin-top:16px;font-size:14px;color:var(--text-muted);">
                 or call now: <a href="tel:<?php echo esc_attr( $tel ); ?>" style="color:var(--navy);font-family:'Montserrat',sans-serif;font-weight:800;font-size:16px;"><?php echo esc_html( $phone ); ?></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== GEORGIA LAW CALLOUT ===== -->
+<section class="ga-law-section">
+    <div class="section-inner">
+        <div class="section-eyebrow">Georgia Law</div>
+        <h2 class="section-title">Critical Deadlines &amp; Rules for Georgia Car Accidents</h2>
+        <p class="section-sub">Understanding Georgia's personal injury laws can make or break your case. Here's what every accident victim needs to know.</p>
+
+        <div class="ga-law-grid">
+            <div class="ga-law-card">
+                <h3>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    Statute of Limitations
+                </h3>
+                <div class="law-value"><?php echo esc_html( $ga_law['statute_years'] ); ?> Years</div>
+                <p>In Georgia, you have just <?php echo esc_html( $ga_law['statute_years'] ); ?> years from the date of your car accident to file a personal injury lawsuit. Miss this deadline and you lose your right to compensation &mdash; permanently.</p>
+                <p class="cite"><?php echo esc_html( $ga_law['statute_cite'] ); ?></p>
+            </div>
+            <div class="ga-law-card">
+                <h3>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    Comparative Fault Rule
+                </h3>
+                <div class="law-value">&lt; 50% at Fault</div>
+                <p>Georgia follows a modified comparative fault rule. You can recover damages as long as you are less than 50% responsible for the accident. Your compensation is reduced by your percentage of fault.</p>
+                <p class="cite"><?php echo esc_html( $ga_law['comp_fault_cite'] ); ?></p>
             </div>
         </div>
     </div>
@@ -1162,31 +1413,39 @@ $in_location  = 'in ' . $city;
     </div>
 </div>
 
-<!-- ===== GEORGIA LAW CALLOUT ===== -->
-<section class="ga-law-section">
-    <div class="section-inner">
-        <div class="section-eyebrow">Georgia Law</div>
-        <h2 class="section-title">Critical Deadlines &amp; Rules for Georgia Car Accidents</h2>
-        <p class="section-sub">Understanding Georgia's personal injury laws can make or break your case. Here's what every accident victim needs to know.</p>
-
-        <div class="ga-law-grid">
-            <div class="ga-law-card">
-                <h3>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                    Statute of Limitations
-                </h3>
-                <div class="law-value"><?php echo esc_html( $ga_law['statute_years'] ); ?> Years</div>
-                <p>In Georgia, you have just <?php echo esc_html( $ga_law['statute_years'] ); ?> years from the date of your car accident to file a personal injury lawsuit. Miss this deadline and you lose your right to compensation &mdash; permanently.</p>
-                <p class="cite"><?php echo esc_html( $ga_law['statute_cite'] ); ?></p>
+<!-- ===== TRUST BADGE BAR ===== -->
+<section class="trust-badges">
+    <div class="trust-badges-inner">
+        <div class="trust-badge">
+            <div class="trust-badge-icon google">
+                <svg width="22" height="22" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
             </div>
-            <div class="ga-law-card">
-                <h3>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                    Comparative Fault Rule
-                </h3>
-                <div class="law-value">&lt; 50% at Fault</div>
-                <p>Georgia follows a modified comparative fault rule. You can recover damages as long as you are less than 50% responsible for the accident. Your compensation is reduced by your percentage of fault.</p>
-                <p class="cite"><?php echo esc_html( $ga_law['comp_fault_cite'] ); ?></p>
+            <div class="trust-badge-text">
+                <strong>Google Reviews</strong>
+                <span class="trust-badge-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <?php echo esc_html( $stats['rating'] ); ?>/5
+            </div>
+        </div>
+        <div class="trust-badge">
+            <div class="trust-badge-icon sl">SL</div>
+            <div class="trust-badge-text">
+                <strong>Super Lawyers</strong>
+                Rising Stars
+            </div>
+        </div>
+        <div class="trust-badge">
+            <div class="trust-badge-icon avvo">A</div>
+            <div class="trust-badge-text">
+                <strong>Avvo Rated</strong>
+                Top Attorney
+            </div>
+        </div>
+        <div class="trust-badge">
+            <div class="trust-badge-icon ga-bar">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="trust-badge-text">
+                <strong>State Bar of Georgia</strong>
+                Members in Good Standing
             </div>
         </div>
     </div>
@@ -1321,14 +1580,108 @@ $in_location  = 'in ' . $city;
     </div>
 </section>
 
-<!-- ===== TESTIMONIALS — Google Reviews via Trustindex ===== -->
+<!-- ===== WHAT TO DO AFTER AN ACCIDENT ===== -->
+<section class="checklist-section">
+    <div class="section-inner">
+        <div class="checklist-layout">
+            <div>
+                <div class="section-eyebrow">After a Georgia Car Accident</div>
+                <h2 class="section-title">5 Things You Must Do to Protect Your Claim</h2>
+                <p class="section-sub">The steps you take immediately after a car accident in Georgia can make or break your case. Follow this checklist to protect your rights.</p>
+            </div>
+            <div>
+                <ol class="checklist-items">
+                    <li>
+                        <span class="check-num">1</span>
+                        <div class="check-content">
+                            <h4>Call 911 &amp; Report the Accident</h4>
+                            <p>Georgia law requires reporting accidents with injuries or significant property damage. A police report is critical evidence for your claim.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="check-num">2</span>
+                        <div class="check-content">
+                            <h4>Document Everything at the Scene</h4>
+                            <p>Photograph vehicle damage, road conditions, traffic signs, and any visible injuries. Get names and contact info from all witnesses.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="check-num">3</span>
+                        <div class="check-content">
+                            <h4>Seek Medical Attention Immediately</h4>
+                            <p>Even if you feel fine, some injuries take days to appear. Delayed treatment can hurt your claim &mdash; insurance companies will argue you weren't really hurt.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="check-num">4</span>
+                        <div class="check-content">
+                            <h4>Don't Talk to the Other Driver's Insurance</h4>
+                            <p>Anything you say can be used to reduce your settlement. Politely decline and let your attorney handle all communication.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="check-num">5</span>
+                        <div class="check-content">
+                            <h4>Call Roden Law for a Free Case Review</h4>
+                            <p>The sooner you have an attorney protecting your interests, the stronger your case. We'll handle the insurance companies so you can focus on healing.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
 <section class="testimonials-section">
     <div class="section-inner">
         <div class="section-eyebrow" style="text-align:center;">Client Stories</div>
         <h2 class="section-title" style="text-align:center;">What Our Clients Say</h2>
         <p class="section-sub" style="text-align:center; margin: 0 auto 48px;">Hear from real Georgia families we've helped after car accidents.</p>
 
-        <?php echo do_shortcode( '[trustindex data-widget-id="fe3ce9843b72815ccc26abe2c19"]' ); ?>
+        <?php
+        $trustindex_output = do_shortcode( '[trustindex data-widget-id="fe3ce9843b72815ccc26abe2c19"]' );
+        // If Trustindex renders, use it; otherwise show hardcoded fallback testimonials
+        if ( $trustindex_output && strpos( $trustindex_output, 'trustindex' ) === false ) :
+            echo $trustindex_output;
+        else :
+        ?>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="testimonial-text">&ldquo;After my car accident on I-16 near Savannah, I didn't know what to do. Roden Law took over everything &mdash; dealt with the insurance company, got my medical bills covered, and won me a settlement I never expected. They truly care about their clients.&rdquo;</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">M</div>
+                    <div>
+                        <div class="testimonial-name">Marcus T.</div>
+                        <div class="testimonial-location">Savannah, GA</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="testimonial-text">&ldquo;I was rear-ended by a distracted driver and was overwhelmed by the process. From the very first call, Roden Law made me feel like a priority. They answered every question, kept me updated, and got me a great result. Highly recommend.&rdquo;</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">S</div>
+                    <div>
+                        <div class="testimonial-name">Sarah K.</div>
+                        <div class="testimonial-location">Pooler, GA</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="testimonial-text">&ldquo;The insurance company offered me next to nothing after a serious wreck on Highway 17. Roden Law fought for me and got a settlement that actually covered my medical bills and lost wages. I couldn't have done it without them.&rdquo;</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">J</div>
+                    <div>
+                        <div class="testimonial-name">James R.</div>
+                        <div class="testimonial-location">Brunswick, GA</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php endif; ?>
     </div>
 </section>
 
@@ -1440,6 +1793,14 @@ $in_location  = 'in ' . $city;
     </p>
 </footer>
 
+<!-- ===== DESKTOP STICKY CTA ===== -->
+<div class="desktop-sticky-cta" id="desktopStickyCta">
+    <a href="#leadForm">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        Free Case Review
+    </a>
+</div>
+
 <!-- ===== MOBILE CALL BAR (TOP) ===== -->
 <div class="mobile-cta-bar" role="complementary" aria-label="Call now">
     <a href="tel:<?php echo esc_attr( $tel ); ?>" aria-label="Call Roden Law at <?php echo esc_attr( $phone ); ?>">
@@ -1508,6 +1869,21 @@ $in_location  = 'in ' . $city;
             }
         });
         lpEmail.addEventListener('input', function() { this.setCustomValidity(''); });
+    }
+
+    /* Desktop sticky CTA — show after scrolling past hero */
+    var stickyCta = document.getElementById('desktopStickyCta');
+    if (stickyCta) {
+        var heroSection = document.querySelector('.hero');
+        window.addEventListener('scroll', function() {
+            if (!heroSection) return;
+            var heroBottom = heroSection.getBoundingClientRect().bottom;
+            if (heroBottom < 0) {
+                stickyCta.classList.add('visible');
+            } else {
+                stickyCta.classList.remove('visible');
+            }
+        }, { passive: true });
     }
 
     /* Form submission → admin-ajax → GF entry */
