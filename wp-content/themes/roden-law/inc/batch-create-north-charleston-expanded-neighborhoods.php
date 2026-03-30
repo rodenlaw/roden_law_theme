@@ -36,10 +36,10 @@ if ( ! is_array( $neighborhoods ) || empty( $neighborhoods ) ) {
 
 WP_CLI::log( sprintf( 'Found %d neighborhoods in data file.', count( $neighborhoods ) ) );
 
-// Get North Charleston parent post ID (child of Charleston)
-$north_charleston = get_page_by_path( 'south-carolina/charleston/north-charleston', OBJECT, 'location' );
+// Get North Charleston parent post ID
+$north_charleston = get_page_by_path( 'north-charleston', OBJECT, 'location' );
 if ( ! $north_charleston ) {
-    WP_CLI::error( 'North Charleston location page not found at path: south-carolina/charleston/north-charleston' );
+    WP_CLI::error( 'North Charleston location page not found at path: north-charleston' );
     return;
 }
 
@@ -52,7 +52,7 @@ $errors  = 0;
 foreach ( $neighborhoods as $n ) {
     // Check if already exists
     $existing = get_page_by_path(
-        'south-carolina/charleston/north-charleston/' . $n['slug'],
+        'north-charleston/' . $n['slug'],
         OBJECT,
         'location'
     );
