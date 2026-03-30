@@ -1639,13 +1639,6 @@ $in_location  = 'in ' . $city;
         <h2 class="section-title" style="text-align:center;">What Our Clients Say</h2>
         <p class="section-sub" style="text-align:center; margin: 0 auto 48px;">Hear from real Georgia families we've helped after car accidents.</p>
 
-        <?php
-        $trustindex_output = do_shortcode( '[trustindex data-widget-id="fe3ce9843b72815ccc26abe2c19"]' );
-        // If Trustindex renders, use it; otherwise show hardcoded fallback testimonials
-        if ( $trustindex_output && strpos( $trustindex_output, 'trustindex' ) === false ) :
-            echo $trustindex_output;
-        else :
-        ?>
         <div class="testimonial-grid">
             <div class="testimonial-card">
                 <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
@@ -1681,7 +1674,6 @@ $in_location  = 'in ' . $city;
                 </div>
             </div>
         </div>
-        <?php endif; ?>
     </div>
 </section>
 
