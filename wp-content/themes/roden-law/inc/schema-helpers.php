@@ -721,6 +721,7 @@ function roden_schema_faq_page() {
     roden_json_ld( array(
         '@context'   => 'https://schema.org',
         '@type'      => 'FAQPage',
+        '@id'        => roden_get_canonical_url() . '#faqs',
         'mainEntity' => $faq_entities,
     ) );
 }
@@ -760,6 +761,7 @@ function roden_schema_howto() {
     $schema = array(
         '@context'    => 'https://schema.org',
         '@type'       => 'HowTo',
+        '@id'         => $url . '#howto',
         'name'        => $title,
         'description' => get_the_excerpt( $post_id ) ?: wp_trim_words( $content, 30 ),
         'url'         => $url,
@@ -1029,9 +1031,11 @@ function roden_schema_breadcrumbs() {
         return;
     }
 
+    $breadcrumb_url = is_front_page() ? home_url( '/' ) : roden_get_canonical_url();
     roden_json_ld( array(
         '@context'        => 'https://schema.org',
         '@type'           => 'BreadcrumbList',
+        '@id'             => $breadcrumb_url . '#breadcrumbs',
         'itemListElement' => $items,
     ) );
 }
@@ -1044,6 +1048,7 @@ function roden_schema_speakable_homepage( $firm ) {
     roden_json_ld( array(
         '@context'  => 'https://schema.org',
         '@type'     => 'WebPage',
+        '@id'       => $firm['url'] . '#webpage',
         'name'      => $firm['name'] . ' — Personal Injury Lawyers in Georgia & South Carolina',
         'url'       => $firm['url'],
         'speakable' => array(
@@ -1054,11 +1059,13 @@ function roden_schema_speakable_homepage( $firm ) {
 }
 
 function roden_schema_speakable_practice_area() {
+    $url = roden_get_canonical_url();
     roden_json_ld( array(
         '@context'  => 'https://schema.org',
         '@type'     => 'WebPage',
+        '@id'       => $url . '#webpage',
         'name'      => get_the_title(),
-        'url'       => roden_get_canonical_url(),
+        'url'       => $url,
         'speakable' => array(
             '@type'       => 'SpeakableSpecification',
             'cssSelector' => array( '.hero h1', '.hero p' ),
@@ -1067,11 +1074,13 @@ function roden_schema_speakable_practice_area() {
 }
 
 function roden_schema_speakable_location() {
+    $url = get_permalink();
     roden_json_ld( array(
         '@context'  => 'https://schema.org',
         '@type'     => 'WebPage',
+        '@id'       => $url . '#webpage',
         'name'      => get_the_title(),
-        'url'       => get_permalink(),
+        'url'       => $url,
         'speakable' => array(
             '@type'       => 'SpeakableSpecification',
             'cssSelector' => array( '.hero h1', '.hero-subtitle' ),
