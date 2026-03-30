@@ -1025,7 +1025,7 @@ $in_location  = 'in ' . $city;
         <div class="hero-content">
             <div class="hero-eyebrow">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                <?php echo esc_html( $city ); ?> Car Accident Attorneys
+                Trusted Georgia Trial Attorneys
             </div>
             <h1><?php echo esc_html( $city ); ?> <span class="gold">Car Accident Lawyer</span></h1>
             <p class="hero-sub">Don't let insurance companies shortchange you. Roden Law has recovered over <?php echo esc_html( $stats['recovered'] ); ?> for injury victims across Georgia &mdash; and we don't charge a fee unless we win your case.</p>
@@ -1099,6 +1099,9 @@ $in_location  = 'in ' . $city;
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2ecc71" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
                 100% confidential. No obligation. No upfront fees &mdash; ever.
             </div>
+            <div style="text-align:center;margin-top:16px;font-size:14px;color:var(--text-muted);">
+                or call now: <a href="tel:<?php echo esc_attr( $tel ); ?>" style="color:var(--navy);font-family:'Montserrat',sans-serif;font-weight:800;font-size:16px;"><?php echo esc_html( $phone ); ?></a>
+            </div>
         </div>
     </div>
 </section>
@@ -1135,6 +1138,36 @@ $in_location  = 'in ' . $city;
         </div>
     </div>
 </div>
+
+<!-- ===== GEORGIA LAW CALLOUT ===== -->
+<section class="ga-law-section">
+    <div class="section-inner">
+        <div class="section-eyebrow">Georgia Law</div>
+        <h2 class="section-title">Critical Deadlines &amp; Rules for Georgia Car Accidents</h2>
+        <p class="section-sub">Understanding Georgia's personal injury laws can make or break your case. Here's what every accident victim needs to know.</p>
+
+        <div class="ga-law-grid">
+            <div class="ga-law-card">
+                <h3>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    Statute of Limitations
+                </h3>
+                <div class="law-value"><?php echo esc_html( $ga_law['statute_years'] ); ?> Years</div>
+                <p>In Georgia, you have just <?php echo esc_html( $ga_law['statute_years'] ); ?> years from the date of your car accident to file a personal injury lawsuit. Miss this deadline and you lose your right to compensation &mdash; permanently.</p>
+                <p class="cite"><?php echo esc_html( $ga_law['statute_cite'] ); ?></p>
+            </div>
+            <div class="ga-law-card">
+                <h3>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    Comparative Fault Rule
+                </h3>
+                <div class="law-value">&lt; 50% at Fault</div>
+                <p>Georgia follows a modified comparative fault rule. You can recover damages as long as you are less than 50% responsible for the accident. Your compensation is reduced by your percentage of fault.</p>
+                <p class="cite"><?php echo esc_html( $ga_law['comp_fault_cite'] ); ?></p>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- ===== WHY CHOOSE RODEN LAW ===== -->
 <section class="why-section">
@@ -1185,36 +1218,6 @@ $in_location  = 'in ' . $city;
                 </div>
                 <h3>24/7 Availability</h3>
                 <p>Accidents don't wait for business hours. Reach us any time &mdash; day, night, or weekend &mdash; for a free consultation about your car accident case.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ===== GEORGIA LAW CALLOUT ===== -->
-<section class="ga-law-section">
-    <div class="section-inner">
-        <div class="section-eyebrow">Georgia Law</div>
-        <h2 class="section-title">Critical Deadlines &amp; Rules for Georgia Car Accidents</h2>
-        <p class="section-sub">Understanding Georgia's personal injury laws can make or break your case. Here's what every accident victim needs to know.</p>
-
-        <div class="ga-law-grid">
-            <div class="ga-law-card">
-                <h3>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                    Statute of Limitations
-                </h3>
-                <div class="law-value"><?php echo esc_html( $ga_law['statute_years'] ); ?> Years</div>
-                <p>In Georgia, you have just <?php echo esc_html( $ga_law['statute_years'] ); ?> years from the date of your car accident to file a personal injury lawsuit. Miss this deadline and you lose your right to compensation &mdash; permanently.</p>
-                <p class="cite"><?php echo esc_html( $ga_law['statute_cite'] ); ?></p>
-            </div>
-            <div class="ga-law-card">
-                <h3>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                    Comparative Fault Rule
-                </h3>
-                <div class="law-value">&lt; 50% at Fault</div>
-                <p>Georgia follows a modified comparative fault rule. You can recover damages as long as you are less than 50% responsible for the accident. Your compensation is reduced by your percentage of fault.</p>
-                <p class="cite"><?php echo esc_html( $ga_law['comp_fault_cite'] ); ?></p>
             </div>
         </div>
     </div>
