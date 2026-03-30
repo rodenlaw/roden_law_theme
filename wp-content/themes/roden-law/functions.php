@@ -363,6 +363,7 @@ function roden_register_page_templates( $templates ) {
     $templates['templates/template-landing-truck.php']          = 'Truck Accident Landing Page';
     $templates['templates/template-landing-truck-columbia.php'] = 'Truck Accident Landing Page — Columbia';
     $templates['templates/template-landing-sc-statewide.php']  = 'Landing Page — SC Statewide';
+    $templates['templates/template-landing-ga-car-accident.php'] = 'Landing Page — GA Car Accident';
     return $templates;
 }
 
