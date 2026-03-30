@@ -39,6 +39,7 @@ $in_location  = 'in ' . $city;
     <meta name="description" content="Injured in a car accident <?php echo esc_attr( $in_location ); ?>? Roden Law has recovered <?php echo esc_attr( $stats['recovered'] ); ?> for injury victims. Free case review. No fee unless we win. Call <?php echo esc_attr( $phone ); ?>.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap" as="style">
     <style>
         /* ===== RESET & BASE ===== */
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -1024,7 +1025,7 @@ $in_location  = 'in ' . $city;
             font-size: 14px;
             flex-shrink: 0;
         }
-        .check-content h4 {
+        .check-content h3 {
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
             font-size: 16px;
@@ -1594,35 +1595,35 @@ $in_location  = 'in ' . $city;
                     <li>
                         <span class="check-num">1</span>
                         <div class="check-content">
-                            <h4>Call 911 &amp; Report the Accident</h4>
+                            <h3>Call 911 &amp; Report the Accident</h3>
                             <p>Georgia law requires reporting accidents with injuries or significant property damage. A police report is critical evidence for your claim.</p>
                         </div>
                     </li>
                     <li>
                         <span class="check-num">2</span>
                         <div class="check-content">
-                            <h4>Document Everything at the Scene</h4>
+                            <h3>Document Everything at the Scene</h3>
                             <p>Photograph vehicle damage, road conditions, traffic signs, and any visible injuries. Get names and contact info from all witnesses.</p>
                         </div>
                     </li>
                     <li>
                         <span class="check-num">3</span>
                         <div class="check-content">
-                            <h4>Seek Medical Attention Immediately</h4>
+                            <h3>Seek Medical Attention Immediately</h3>
                             <p>Even if you feel fine, some injuries take days to appear. Delayed treatment can hurt your claim &mdash; insurance companies will argue you weren't really hurt.</p>
                         </div>
                     </li>
                     <li>
                         <span class="check-num">4</span>
                         <div class="check-content">
-                            <h4>Don't Talk to the Other Driver's Insurance</h4>
+                            <h3>Don't Talk to the Other Driver's Insurance</h3>
                             <p>Anything you say can be used to reduce your settlement. Politely decline and let your attorney handle all communication.</p>
                         </div>
                     </li>
                     <li>
                         <span class="check-num">5</span>
                         <div class="check-content">
-                            <h4>Call Roden Law for a Free Case Review</h4>
+                            <h3>Call Roden Law for a Free Case Review</h3>
                             <p>The sooner you have an attorney protecting your interests, the stronger your case. We'll handle the insurance companies so you can focus on healing.</p>
                         </div>
                     </li>
@@ -1873,14 +1874,16 @@ $in_location  = 'in ' . $city;
         lpEmail.addEventListener('input', function() { this.setCustomValidity(''); });
     }
 
-    /* Desktop sticky CTA — show after scrolling past hero */
+    /* Desktop sticky CTA — show after scrolling past hero, hide at bottom CTA */
     var stickyCta = document.getElementById('desktopStickyCta');
     if (stickyCta) {
         var heroSection = document.querySelector('.hero');
+        var bottomCta = document.querySelector('.bottom-cta');
         window.addEventListener('scroll', function() {
             if (!heroSection) return;
             var heroBottom = heroSection.getBoundingClientRect().bottom;
-            if (heroBottom < 0) {
+            var bottomCtaTop = bottomCta ? bottomCta.getBoundingClientRect().top : Infinity;
+            if (heroBottom < 0 && bottomCtaTop > window.innerHeight) {
                 stickyCta.classList.add('visible');
             } else {
                 stickyCta.classList.remove('visible');
