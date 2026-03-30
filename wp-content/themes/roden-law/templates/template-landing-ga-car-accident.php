@@ -1639,6 +1639,15 @@ $in_location  = 'in ' . $city;
         <h2 class="section-title" style="text-align:center;">What Our Clients Say</h2>
         <p class="section-sub" style="text-align:center; margin: 0 auto 48px;">Hear from real Georgia families we've helped after car accidents.</p>
 
+        <?php
+        // Try Trustindex widget (active on production). If plugin isn't installed,
+        // do_shortcode returns the raw shortcode string — fall back to hardcoded cards.
+        $ti_shortcode = '[trustindex data-widget-id="fe3ce9843b72815ccc26abe2c19"]';
+        $ti_output    = do_shortcode( $ti_shortcode );
+        if ( $ti_output !== $ti_shortcode ) :
+            echo $ti_output;
+        else :
+        ?>
         <div class="testimonial-grid">
             <div class="testimonial-card">
                 <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
@@ -1674,6 +1683,7 @@ $in_location  = 'in ' . $city;
                 </div>
             </div>
         </div>
+        <?php endif; ?>
     </div>
 </section>
 
