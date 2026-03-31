@@ -70,32 +70,6 @@
         });
     });
 
-    /* ── Phone Link Tracking (GA4 Event) ──────────────────────── */
-
-    document.querySelectorAll('a[href^="tel:"]').forEach(function (link) {
-        link.addEventListener('click', function () {
-            if (typeof gtag === 'function') {
-                gtag('event', 'phone_call', {
-                    event_category: 'contact',
-                    event_label: link.getAttribute('href'),
-                });
-            }
-        });
-    });
-
-    /* ── Form Submission Tracking ─────────────────────────────── */
-
-    document.querySelectorAll('.gform_wrapper form, .roden-contact-form, .roden-footer-form').forEach(function (form) {
-        form.addEventListener('submit', function () {
-            if (typeof gtag === 'function') {
-                gtag('event', 'form_submit', {
-                    event_category: 'contact',
-                    event_label: form.closest('.sidebar-contact-form') ? 'sidebar' : 'footer',
-                });
-            }
-        });
-    });
-
     /* ── Testimonial Carousel ─────────────────────────────────── */
 
     var carousel = document.querySelector('.testimonial-carousel');

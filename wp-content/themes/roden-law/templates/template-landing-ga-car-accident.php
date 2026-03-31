@@ -1305,6 +1305,7 @@ $in_location  = 'in ' . $city;
             <p class="form-subtitle">Find out what your case is worth &mdash; in minutes.</p>
             <form id="leadForm" action="#" method="POST" novalidate>
                 <?php wp_nonce_field( 'roden_sidebar_form', 'roden_form_nonce' ); ?>
+                <input type="hidden" name="gclid" class="roden-gclid" value="">
                 <div class="form-row">
                     <div class="form-group">
                         <label for="lp-fname" class="sr-only">First Name</label>

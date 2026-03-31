@@ -180,6 +180,31 @@ function roden_legacy_content_redirects() {
         exit;
     }
 
+    // /practice-areas/[city]/[pa-slug]/[subtype]/ → /[pa-slug]/[city-state]/ (3-segment under practice-areas)
+    if ( preg_match( '#^/practice-areas/(savannah|charleston|brunswick)/([^/]+)/([^/]+)/?$#', $clean_path, $m ) ) {
+        $city    = $m[1];
+        $pa_slug = isset( $pa_slug_map[ $m[2] ] ) ? $pa_slug_map[ $m[2] ] : $m[2];
+        $dest    = $city_dest[ $city ];
+        wp_redirect( home_url( '/' . $pa_slug . '/' . $dest . '/' ), 301 );
+        exit;
+    }
+
+    // /practice-areas/[city]/[pa-slug]/ → /[pa-slug]/[city-state]/ (2-segment under practice-areas)
+    if ( preg_match( '#^/practice-areas/(savannah|charleston|brunswick)/([^/]+)/?$#', $clean_path, $m ) ) {
+        $city    = $m[1];
+        $pa_slug = isset( $pa_slug_map[ $m[2] ] ) ? $pa_slug_map[ $m[2] ] : $m[2];
+        $dest    = $city_dest[ $city ];
+        wp_redirect( home_url( '/' . $pa_slug . '/' . $dest . '/' ), 301 );
+        exit;
+    }
+
+    // /practice-areas/[albany|macon]/[pa-slug]/ → /practice-areas/[pa-slug]/ (no office)
+    if ( preg_match( '#^/practice-areas/(albany|macon)/([^/]+)/?$#', $clean_path, $m ) ) {
+        $pa_slug = isset( $pa_slug_map[ $m[2] ] ) ? $pa_slug_map[ $m[2] ] : $m[2];
+        wp_redirect( home_url( '/practice-areas/' . $pa_slug . '/' ), 301 );
+        exit;
+    }
+
     // /practice-area/[slug]/ → /practice-areas/[corrected-slug]/ (old singular CPT)
     if ( preg_match( '#^/practice-area/([^/]+)/?$#', $clean_path, $m ) ) {
         $pa_slug = isset( $pa_slug_map[ $m[1] ] ) ? $pa_slug_map[ $m[1] ] : $m[1];

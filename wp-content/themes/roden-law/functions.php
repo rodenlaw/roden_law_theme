@@ -427,27 +427,6 @@ function roden_thankyou_noindex( $robots ) {
     return $robots;
 }
 
-add_action( 'wp_head', 'roden_thankyou_conversion_tracking' );
-function roden_thankyou_conversion_tracking() {
-    if ( ! is_page( 'thank-you' ) ) {
-        return;
-    }
-    ?>
-    <script>
-    window.addEventListener('load', function () {
-        /* Google Analytics / GA4 generate_lead event */
-        if (typeof gtag === 'function') {
-            gtag('event', 'generate_lead', {
-                event_category: 'contact',
-                event_label: 'form_submission',
-                value: 1
-            });
-        }
-    });
-    </script>
-    <?php
-}
-
 /* ==========================================================================
    7b. ROBOTS.TXT — Remove Crawl-delay + welcome AI crawlers
    ========================================================================== */
@@ -544,6 +523,7 @@ function roden_sidebar_form_handler() {
     $case_type  = sanitize_text_field( $_POST['case_type'] ?? '' );
     $message    = sanitize_textarea_field( $_POST['message'] ?? '' );
     $consent    = ! empty( $_POST['consent'] ) ? 1 : 0;
+    $gclid      = sanitize_text_field( $_POST['gclid'] ?? '' );
 
     // Validate required fields.
     if ( ! $first_name || ! $last_name || ! $phone || ! $email || ! $consent ) {
@@ -568,6 +548,10 @@ function roden_sidebar_form_handler() {
         $entry_id = GFAPI::add_entry( $entry_data );
 
         if ( ! is_wp_error( $entry_id ) ) {
+            // Store gclid as entry meta for Google Ads attribution.
+            if ( $gclid ) {
+                gform_update_meta( $entry_id, 'gclid', $gclid );
+            }
             // Trigger GF notifications (admin alert + client confirmation emails).
             $form  = GFAPI::get_form( 1 );
             $entry = GFAPI::get_entry( $entry_id );
@@ -577,7 +561,7 @@ function roden_sidebar_form_handler() {
         // Fallback: send email directly.
         $to      = 'intake@rodenlaw.com';
         $subject = 'New Case Review: ' . $case_type . ' — ' . $first_name . ' ' . $last_name;
-        $body    = "Name: $first_name $last_name\nPhone: $phone\nEmail: $email\nCase Type: $case_type\nMessage: $message";
+        $body    = "Name: $first_name $last_name\nPhone: $phone\nEmail: $email\nCase Type: $case_type\nMessage: $message" . ( $gclid ? "\nGCLID: $gclid" : '' );
         wp_mail( $to, $subject, $body );
     }
 
@@ -592,6 +576,18 @@ function roden_sidebar_form_js() {
     ?>
     <script>
     (function(){
+        /* --- gclid capture: store from URL, populate hidden fields --- */
+        (function() {
+            var params = new URLSearchParams(window.location.search);
+            var gclid = params.get('gclid');
+            if (gclid) { try { sessionStorage.setItem('roden_gclid', gclid); } catch(e){} }
+            var stored = null;
+            try { stored = sessionStorage.getItem('roden_gclid'); } catch(e){}
+            if (stored) {
+                document.querySelectorAll('.roden-gclid').forEach(function(el) { el.value = stored; });
+            }
+        })();
+
         var form = document.getElementById('roden-sidebar-form');
         if (!form) return;
 
