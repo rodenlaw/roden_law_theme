@@ -165,11 +165,6 @@ $footer_practice_areas = array(
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="pa-mobile-cta__review"><?php esc_html_e( 'Free Review', 'roden-law' ); ?></a>
 </div>
 
-<!-- JuvoLeads Live Chat (desktop only, loaded conditionally) -->
-<?php if ( ! wp_is_mobile() ) : ?>
-    <script id="juvoleads-loader" defer src="https://cdn.juvoleads.com/tag/9262634398.js"></script>
-<?php endif; ?>
-
 <?php wp_footer(); ?>
 </body>
 </html>
