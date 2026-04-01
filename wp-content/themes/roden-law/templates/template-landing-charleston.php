@@ -1290,5 +1290,6 @@ $city         = ( $city_raw && strpos( $city_raw, '{' ) === false ) ? $city_raw 
 </script>
 
 <?php wp_footer(); ?>
+<script type="text/javascript" src="//cdn.callrail.com/companies/481994887/9f5e5ebaf1d98d87a441/12/swap.js"></script>
 </body>
 </html>
