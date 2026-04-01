@@ -479,7 +479,7 @@ function roden_homepage_meta_description() {
     if ( defined( 'WPSEO_VERSION' ) ) {
         return;
     }
-    echo '<meta name="description" content="Roden Law is a personal injury law firm with offices in Charleston, Savannah, Columbia, Myrtle Beach, and Darien. Over $250 million recovered for injured clients. Free consultation. No fees unless we win. Call 1-844-RESULTS.">' . "\n";
+    echo '<meta name="description" content="Roden Law is a personal injury law firm with offices in Charleston, Savannah, Columbia, Myrtle Beach, and Darien. Over $250 million recovered for injured clients. Free consultation. No fees unless we win. Call 844-RESULTS.">' . "\n";
 }
 
 /* ==========================================================================
@@ -651,14 +651,14 @@ function roden_sidebar_form_js() {
                 if (data.success && data.data.redirect) {
                     window.location.href = data.data.redirect;
                 } else {
-                    errEl.textContent = data.data || 'Something went wrong. Please call 1-844-RESULTS.';
+                    errEl.textContent = data.data || 'Something went wrong. Please call 844-RESULTS.';
                     errEl.style.display = 'block';
                     btn.disabled = false;
                     btn.textContent = 'See If You Qualify';
                 }
             })
             .catch(function(){
-                errEl.textContent = 'Network error. Please call 1-844-RESULTS.';
+                errEl.textContent = 'Network error. Please call 844-RESULTS.';
                 errEl.style.display = 'block';
                 btn.disabled = false;
                 btn.textContent = 'See If You Qualify';

@@ -17,7 +17,7 @@ defined( 'ABSPATH' ) || exit;
 $firm  = roden_firm_data();
 $stats = $firm['trust_stats'];
 $ga_law = $firm['jurisdiction']['GA'];
-$phone = '1-844-RESULTS';
+$phone = '844-RESULTS';
 $tel   = '18447378587';
 
 // Dynamic city from Google Ads ?city= parameter. Falls back to Georgia default.
@@ -1928,14 +1928,14 @@ $in_location  = 'in ' . $city;
             if (data.success && data.data.redirect) {
                 window.location.href = data.data.redirect;
             } else {
-                errEl.textContent = data.data || 'Something went wrong. Please call 1-844-RESULTS.';
+                errEl.textContent = data.data || 'Something went wrong. Please call 844-RESULTS.';
                 errEl.style.display = 'block';
                 btn.disabled = false;
                 btn.textContent = 'Get My Free Case Review \u2192';
             }
         })
         .catch(function(){
-            errEl.textContent = 'Network error. Please call 1-844-RESULTS.';
+            errEl.textContent = 'Network error. Please call 844-RESULTS.';
             errEl.style.display = 'block';
             btn.disabled = false;
             btn.textContent = 'Get My Free Case Review \u2192';

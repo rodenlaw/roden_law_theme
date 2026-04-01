@@ -21,7 +21,7 @@ function roden_firm_data() {
     $data = array(
         'name'         => 'Roden Law',
         'legal_entity' => 'Roden Love LLC',
-        'vanity_phone' => '1-844-RESULTS',
+        'vanity_phone' => '844-RESULTS',
         'phone_raw'    => '+18447378587',
         'url'          => home_url(),
         'description'  => 'Personal injury law firm serving Georgia and South Carolina with over $250 million recovered for injured clients.',

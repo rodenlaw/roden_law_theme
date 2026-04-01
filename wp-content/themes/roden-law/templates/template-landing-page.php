@@ -1223,14 +1223,14 @@ $tel   = $firm['phone_raw'];
             if (data.success && data.data.redirect) {
                 window.location.href = data.data.redirect;
             } else {
-                errEl.textContent = data.data || 'Something went wrong. Please call 1-844-RESULTS.';
+                errEl.textContent = data.data || 'Something went wrong. Please call 844-RESULTS.';
                 errEl.style.display = 'block';
                 btn.disabled = false;
                 btn.textContent = 'Get My Free Case Review \u2192';
             }
         })
         .catch(function(){
-            errEl.textContent = 'Network error. Please call 1-844-RESULTS.';
+            errEl.textContent = 'Network error. Please call 844-RESULTS.';
             errEl.style.display = 'block';
             btn.disabled = false;
             btn.textContent = 'Get My Free Case Review \u2192';

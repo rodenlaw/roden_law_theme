@@ -14,7 +14,7 @@ defined( 'ABSPATH' ) || exit;
 $firm  = roden_firm_data();
 $stats = $firm['trust_stats'];
 $office = $firm['offices']['charleston'];
-$phone = '1-844-RESULTS';
+$phone = '844-RESULTS';
 $tel   = '18447378587';
 
 // Dynamic city from Google Ads ?city= parameter. Falls back to Charleston.
@@ -1274,14 +1274,14 @@ $city         = ( $city_raw && strpos( $city_raw, '{' ) === false ) ? $city_raw 
             if (data.success && data.data.redirect) {
                 window.location.href = data.data.redirect;
             } else {
-                errEl.textContent = data.data || 'Something went wrong. Please call 1-844-RESULTS.';
+                errEl.textContent = data.data || 'Something went wrong. Please call 844-RESULTS.';
                 errEl.style.display = 'block';
                 btn.disabled = false;
                 btn.textContent = 'Get My Free Case Review \u2192';
             }
         })
         .catch(function(){
-            errEl.textContent = 'Network error. Please call 1-844-RESULTS.';
+            errEl.textContent = 'Network error. Please call 844-RESULTS.';
             errEl.style.display = 'block';
             btn.disabled = false;
             btn.textContent = 'Get My Free Case Review \u2192';
