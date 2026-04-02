@@ -19,6 +19,7 @@ $office_key  = get_post_meta( $post_id, '_roden_atty_office_key', true );
 $bar_raw     = get_post_meta( $post_id, '_roden_bar_admissions', true );
 $edu_raw     = get_post_meta( $post_id, '_roden_education', true );
 $awards_raw  = get_post_meta( $post_id, '_roden_awards', true );
+$badges_raw  = get_post_meta( $post_id, '_roden_atty_badges', true );
 $avvo_url    = get_post_meta( $post_id, '_roden_avvo_url', true );
 $linkedin    = get_post_meta( $post_id, '_roden_linkedin_url', true );
 
@@ -52,6 +53,19 @@ if ( is_array( $awards_raw ) ) {
     }
 } elseif ( $awards_raw ) {
     $award_items = array_filter( array_map( 'trim', explode( "\n", $awards_raw ) ) );
+}
+
+// Badges = repeater array of ['image'=>filename, 'alt'=>alt text]
+$badge_items = [];
+if ( is_array( $badges_raw ) ) {
+    foreach ( $badges_raw as $badge ) {
+        if ( ! empty( $badge['image'] ) ) {
+            $badge_items[] = [
+                'image' => $badge['image'],
+                'alt'   => $badge['alt'] ?? '',
+            ];
+        }
+    }
 }
 
 include get_template_directory() . '/templates/template-attorney.php';

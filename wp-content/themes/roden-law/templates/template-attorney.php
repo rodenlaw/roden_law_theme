@@ -122,6 +122,19 @@
                 </div>
             <?php endif; ?>
 
+            <!-- Award Badges -->
+            <?php if ( ! empty( $badge_items ) ) : ?>
+                <div class="credential-section attorney-badge-section">
+                    <div class="attorney-badge-grid">
+                        <?php foreach ( $badge_items as $badge ) : ?>
+                            <div class="attorney-badge-item">
+                                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/' . $badge['image'] ); ?>" alt="<?php echo esc_attr( $badge['alt'] ); ?>" loading="lazy" width="150" height="150">
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+            <?php endif; ?>
+
             <!-- Case Results -->
             <div class="content-section">
                 <h2>Notable Results</h2>

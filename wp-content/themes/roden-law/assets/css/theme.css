@@ -1332,6 +1332,14 @@ h2.key-takeaways-title {
 }
 .credential-list .check { color: var(--orange-text); flex-shrink: 0; margin-top: 2px; }
 
+/* Attorney award badges */
+.attorney-badge-grid {
+    display: flex; flex-wrap: wrap; gap: 20px; align-items: center;
+}
+.attorney-badge-item img {
+    width: 150px; height: auto; border-radius: 50%; object-fit: contain;
+}
+
 /* Jurisdiction badges sidebar */
 .jurisdiction-badges { display: flex; gap: 8px; margin-top: 12px; }
 .jurisdiction-badge {
