@@ -277,7 +277,51 @@ $in_location  = 'in ' . $city;
             font-family: 'Montserrat', sans-serif;
             font-weight: 600;
             letter-spacing: 0.5px;
-            margin-bottom: 28px;
+            margin-bottom: 12px;
+        }
+        .hero-experience {
+            color: rgba(255,255,255,0.85);
+            font-family: 'Open Sans', sans-serif;
+            font-size: clamp(13px, 2vw, 15px);
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            margin-bottom: 0;
+        }
+        .hero-experience span { color: var(--gold); font-weight: 700; }
+        /* Hero text CTA */
+        .hero-text-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border: 2px solid var(--gold);
+            color: var(--gold);
+            background: transparent;
+            border-radius: 12px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 15px;
+            min-height: 48px;
+            transition: all 0.3s;
+            margin-left: 12px;
+        }
+        .hero-text-cta:hover {
+            background: var(--gold);
+            color: var(--navy-deep);
+            transform: translateY(-2px);
+        }
+        @media (max-width: 768px) {
+            .hero-text-cta {
+                margin-left: 0;
+                margin-top: 8px;
+            }
+        }
+        /* Mobile text CTA in sticky bar */
+        .mobile-cta-text {
+            flex: 1;
+            background: transparent !important;
+            color: var(--gold) !important;
+            border: 2px solid var(--gold);
         }
 
         /* ===== ATTORNEY PHOTO STRIP ===== */
@@ -1606,12 +1650,19 @@ $in_location  = 'in ' . $city;
             <h1><?php echo esc_html( $city ); ?> <span class="gold">Car Accident Lawyers</span></h1>
             <p class="hero-sub">Don't let insurance companies shortchange you. Roden Law has recovered over <?php echo esc_html( $stats['recovered'] ); ?> for injury victims across South Carolina &mdash; and we don't charge a fee unless we win your case.</p>
 
-            <!-- Hero Call CTA -->
-            <a href="tel:<?php echo esc_attr( $tel ); ?>" class="hero-call-cta">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                Call Now: <?php echo esc_html( $phone ); ?>
-            </a>
+            <!-- Hero CTAs -->
+            <div class="hero-cta-row">
+                <a href="tel:<?php echo esc_attr( $tel ); ?>" class="hero-call-cta">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    Call Now: <?php echo esc_html( $phone ); ?>
+                </a>
+                <a href="sms:<?php echo esc_attr( $tel ); ?>" class="hero-text-cta" aria-label="Send a text message to Roden Law">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    Text Us
+                </a>
+            </div>
             <div class="hero-call-sub">Available 24/7 &mdash; Free Consultation</div>
+            <p class="hero-experience">Serving South Carolina since <span>2013</span> &middot; <?php echo esc_html( $stats['recovered'] ); ?>+ recovered</p>
 
             <!-- Attorney Photo Strip -->
             <div class="attorney-strip">
@@ -1949,7 +2000,7 @@ $in_location  = 'in ' . $city;
                 Call Now: <?php echo esc_html( $phone ); ?>
             </a>
         </div>
-        <p class="cta-subtext">Available 24/7 &middot; No upfront fees &middot; 100% confidential</p>
+        <p class="cta-subtext">Available 24/7 &middot; No upfront fees &middot; Call or text <?php echo esc_html( $phone ); ?></p>
     </div>
 </section>
 
@@ -2048,7 +2099,7 @@ $in_location  = 'in ' . $city;
                 Call Now: <?php echo esc_html( $phone ); ?>
             </a>
         </div>
-        <p class="cta-subtext">Available 24/7 &middot; No upfront fees &middot; 100% confidential</p>
+        <p class="cta-subtext">Available 24/7 &middot; No upfront fees &middot; Call or text <?php echo esc_html( $phone ); ?></p>
     </div>
 </section>
 
@@ -2205,7 +2256,7 @@ $in_location  = 'in ' . $city;
                 Call Now: <?php echo esc_html( $phone ); ?>
             </a>
         </div>
-        <p class="cta-subtext">Available 24/7 &middot; No upfront fees &middot; 100% confidential</p>
+        <p class="cta-subtext">Available 24/7 &middot; No upfront fees &middot; Call or text <?php echo esc_html( $phone ); ?></p>
     </div>
 </section>
 
@@ -2246,6 +2297,10 @@ $in_location  = 'in ' . $city;
         <a href="tel:<?php echo esc_attr( $tel ); ?>" class="mobile-cta-call" aria-label="Call Roden Law at <?php echo esc_attr( $phone ); ?>">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             Call Now
+        </a>
+        <a href="sms:<?php echo esc_attr( $tel ); ?>" class="mobile-cta-text" aria-label="Text Roden Law">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Text Us
         </a>
         <a href="#leadForm" class="mobile-cta-review" aria-label="Get a free case review">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
