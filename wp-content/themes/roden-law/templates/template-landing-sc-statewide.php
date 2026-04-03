@@ -47,12 +47,15 @@ $in_location  = 'in ' . $city;
     <title>South Carolina Car Accident Lawyers | Roden Law</title>
     <meta name="description" content="Injured in a car accident <?php echo esc_attr( $in_location ); ?>? Roden Law has recovered <?php echo esc_attr( $stats['recovered'] ); ?> for injury victims. Free case review. No fee unless we win. Call <?php echo esc_attr( $phone ); ?>.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap" as="style">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.callrail.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         /* ===== RESET & BASE ===== */
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        html { scroll-behavior: smooth; }
+        html { scroll-behavior: smooth; overflow-x: hidden; }
+        body { overflow-x: hidden; }
         /* Skip link (a11y) */
         .skip-link {
             position: absolute;
@@ -1570,7 +1573,7 @@ $in_location  = 'in ' . $city;
                     ?>
                         <div class="atty-photo" title="<?php echo esc_attr( $atty['name'] ); ?>">
                             <?php if ( ! empty( $headshot ) ) : ?>
-                                <img src="<?php echo esc_url( wp_get_attachment_image_url( $headshot[0]->ID, 'thumbnail' ) ); ?>" alt="<?php echo esc_attr( $atty['name'] ); ?>">
+                                <img src="<?php echo esc_url( wp_get_attachment_image_url( $headshot[0]->ID, 'thumbnail' ) ); ?>" alt="<?php echo esc_attr( $atty['name'] ); ?>" fetchpriority="high">
                             <?php else : ?>
                                 <?php echo esc_html( $atty['initials'] ); ?>
                             <?php endif; ?>
