@@ -179,6 +179,10 @@ $in_location  = 'in ' . $city;
             font-weight: 800;
             font-size: 18px;
             letter-spacing: 0.5px;
+            padding: 8px 4px;
+            min-height: 44px;
+            display: inline-flex;
+            align-items: center;
         }
 
         /* ===== HERO ===== */
@@ -407,7 +411,8 @@ $in_location  = 'in ' . $city;
         }
         .form-tab {
             flex: 1;
-            padding: 12px;
+            padding: 14px 12px;
+            min-height: 48px;
             text-align: center;
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
@@ -440,6 +445,60 @@ $in_location  = 'in ' . $city;
         .form-group {
             margin-bottom: 14px;
         }
+        /* Floating label field wrapper */
+        .float-field {
+            position: relative;
+        }
+        .float-field input,
+        .float-field textarea {
+            width: 100%;
+            padding: 20px 16px 8px;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 15px;
+            color: var(--text-dark);
+            transition: border-color 0.2s;
+            background: #f8fafc;
+        }
+        .float-field input::placeholder,
+        .float-field textarea::placeholder {
+            color: transparent;
+        }
+        .float-field label {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 15px;
+            color: #a0aec0;
+            pointer-events: none;
+            transition: all 0.2s ease;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .float-field textarea ~ label {
+            top: 20px;
+            transform: none;
+        }
+        .float-field input:focus,
+        .float-field textarea:focus {
+            outline: none;
+            border-color: var(--gold);
+            background: white;
+        }
+        .float-field input:focus + label,
+        .float-field input:not(:placeholder-shown) + label {
+            top: 6px;
+            transform: none;
+            font-size: 11px;
+            color: var(--gold);
+        }
+        .float-field textarea:focus ~ label,
+        .float-field textarea:not(:placeholder-shown) ~ label {
+            top: 4px;
+            font-size: 11px;
+            color: var(--gold);
+        }
         .form-group input,
         .form-group select,
         .form-group textarea {
@@ -463,6 +522,10 @@ $in_location  = 'in ' . $city;
         .form-group input::placeholder,
         .form-group textarea::placeholder {
             color: #a0aec0;
+        }
+        .form-consent a {
+            display: inline;
+            padding: 6px 2px;
         }
         .form-row {
             display: grid;
@@ -1514,7 +1577,7 @@ $in_location  = 'in ' . $city;
     <?php wp_head(); ?>
 </head>
 <body <?php body_class( 'landing-page' ); ?>>
-<a class="skip-link" href="#leadForm">Skip to Free Case Review</a>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 
 <!-- ===== TOP BAR ===== -->
 <div class="top-bar">
@@ -1623,33 +1686,33 @@ $in_location  = 'in ' . $city;
                 <button type="button" class="form-tab" data-tab="quick">Quick Callback</button>
             </div>
 
-            <form id="leadForm" action="#" method="POST" novalidate>
+            <form id="leadForm" action="#" method="POST" novalidate aria-label="Free case review request form">
                 <?php wp_nonce_field( 'roden_sidebar_form', 'roden_form_nonce' ); ?>
                 <input type="hidden" name="gclid" class="roden-gclid" value="">
                 <div class="form-row">
-                    <div class="form-group">
-                        <label for="lp-fname" class="sr-only">First Name</label>
-                        <input type="text" name="first_name" id="lp-fname" placeholder="First Name*" autocomplete="given-name" required>
+                    <div class="form-group float-field">
+                        <input type="text" name="first_name" id="lp-fname" placeholder=" " autocomplete="given-name" required>
+                        <label for="lp-fname">First Name*</label>
                     </div>
-                    <div class="form-group">
-                        <label for="lp-lname" class="sr-only">Last Name</label>
-                        <input type="text" name="last_name" id="lp-lname" placeholder="Last Name*" autocomplete="family-name" required>
+                    <div class="form-group float-field">
+                        <input type="text" name="last_name" id="lp-lname" placeholder=" " autocomplete="family-name" required>
+                        <label for="lp-lname">Last Name*</label>
                     </div>
                 </div>
                 <div class="form-row">
-                    <div class="form-group">
-                        <label for="lp-phone" class="sr-only">Phone Number</label>
-                        <input type="tel" name="phone" id="lp-phone" placeholder="(555) 555-5555" autocomplete="tel" required>
+                    <div class="form-group float-field">
+                        <input type="tel" name="phone" id="lp-phone" placeholder=" " autocomplete="tel" required>
+                        <label for="lp-phone">Phone Number*</label>
                     </div>
-                    <div class="form-group full-fields visible">
-                        <label for="lp-email" class="sr-only">Email Address</label>
-                        <input type="email" name="email" id="lp-email" placeholder="Email Address*" autocomplete="email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
+                    <div class="form-group float-field full-fields visible">
+                        <input type="email" name="email" id="lp-email" placeholder=" " autocomplete="email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
+                        <label for="lp-email">Email Address*</label>
                     </div>
                 </div>
                 <div class="full-fields visible">
-                    <div class="form-group">
-                        <label for="lp-message" class="sr-only">Describe what happened</label>
-                        <textarea name="message" id="lp-message" placeholder="Please describe what happened" rows="4"></textarea>
+                    <div class="form-group float-field">
+                        <textarea name="message" id="lp-message" placeholder=" " rows="4"></textarea>
+                        <label for="lp-message">Describe what happened</label>
                     </div>
                 </div>
                 <label class="form-consent" style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;cursor:pointer;">
