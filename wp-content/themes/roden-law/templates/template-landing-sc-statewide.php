@@ -1223,6 +1223,85 @@ $in_location  = 'in ' . $city;
             border-bottom-color: var(--gold);
         }
 
+        /* ===== MID-PAGE CTA BAND ===== */
+        .mid-page-cta {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-deep) 100%);
+            padding: 48px 24px;
+            text-align: center;
+        }
+        .mid-page-cta h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: clamp(22px, 3vw, 30px);
+            color: var(--white);
+            margin-bottom: 24px;
+            line-height: 1.3;
+        }
+        .mid-page-cta .cta-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .mid-page-cta .cta-btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--gold);
+            color: var(--navy-deep);
+            padding: 14px 32px;
+            border-radius: 10px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 16px;
+            min-height: 48px;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        .mid-page-cta .cta-btn-primary:hover {
+            background: var(--gold-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(232,168,48,0.3);
+        }
+        .mid-page-cta .cta-btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: transparent;
+            color: var(--gold);
+            padding: 14px 32px;
+            border-radius: 10px;
+            border: 2px solid var(--gold);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            min-height: 48px;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        .mid-page-cta .cta-btn-secondary:hover {
+            background: rgba(232,168,48,0.1);
+            transform: translateY(-2px);
+        }
+        .mid-page-cta .cta-subtext {
+            color: rgba(255,255,255,0.6);
+            font-size: 14px;
+            margin-top: 18px;
+        }
+        @media (max-width: 600px) {
+            .mid-page-cta .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            .mid-page-cta .cta-btn-primary,
+            .mid-page-cta .cta-btn-secondary {
+                width: 100%;
+                max-width: 320px;
+                justify-content: center;
+            }
+        }
+
         /* ===== DESKTOP STICKY CTA ===== */
         .desktop-sticky-cta {
             display: none;
@@ -1793,6 +1872,21 @@ $in_location  = 'in ' . $city;
     </div>
 </section>
 
+<!-- ===== MID-PAGE CTA: After Results ===== -->
+<section class="mid-page-cta">
+    <div class="section-inner">
+        <h2>Injured in a Car Accident? Get Your Free Case Review Now.</h2>
+        <div class="cta-buttons">
+            <a href="#leadForm" class="cta-btn-primary" aria-label="Scroll to free case review form">Get My Free Case Review &rarr;</a>
+            <a href="tel:<?php echo esc_attr( $tel ); ?>" class="cta-btn-secondary" aria-label="Call Roden Law at <?php echo esc_attr( $phone ); ?>">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                Call Now: <?php echo esc_html( $phone ); ?>
+            </a>
+        </div>
+        <p class="cta-subtext">Available 24/7 &middot; No upfront fees &middot; 100% confidential</p>
+    </div>
+</section>
+
 <!-- ===== PROCESS ===== -->
 <section class="process-section">
     <div class="section-inner">
@@ -1874,6 +1968,21 @@ $in_location  = 'in ' . $city;
                 </ol>
             </div>
         </div>
+    </div>
+</section>
+
+<!-- ===== MID-PAGE CTA: After Checklist ===== -->
+<section class="mid-page-cta">
+    <div class="section-inner">
+        <h2>Done With the Checklist? Let Us Handle the Rest.</h2>
+        <div class="cta-buttons">
+            <a href="#leadForm" class="cta-btn-primary" aria-label="Scroll to free case review form">Get My Free Case Review &rarr;</a>
+            <a href="tel:<?php echo esc_attr( $tel ); ?>" class="cta-btn-secondary" aria-label="Call Roden Law at <?php echo esc_attr( $phone ); ?>">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                Call Now: <?php echo esc_html( $phone ); ?>
+            </a>
+        </div>
+        <p class="cta-subtext">Available 24/7 &middot; No upfront fees &middot; 100% confidential</p>
     </div>
 </section>
 
@@ -2016,6 +2125,21 @@ $in_location  = 'in ' . $city;
                 </div>
             </div>
         </div>
+    </div>
+</section>
+
+<!-- ===== MID-PAGE CTA: After FAQ ===== -->
+<section class="mid-page-cta">
+    <div class="section-inner">
+        <h2>Still Have Questions? Talk to a South Carolina Car Accident Lawyer.</h2>
+        <div class="cta-buttons">
+            <a href="#leadForm" class="cta-btn-primary" aria-label="Scroll to free case review form">Get My Free Case Review &rarr;</a>
+            <a href="tel:<?php echo esc_attr( $tel ); ?>" class="cta-btn-secondary" aria-label="Call Roden Law at <?php echo esc_attr( $phone ); ?>">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                Call Now: <?php echo esc_html( $phone ); ?>
+            </a>
+        </div>
+        <p class="cta-subtext">Available 24/7 &middot; No upfront fees &middot; 100% confidential</p>
     </div>
 </section>
 
