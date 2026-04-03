@@ -2095,6 +2095,14 @@ $in_location  = 'in ' . $city;
         });
     })();
 
+    /* Auto-select Quick Callback tab when ?form=quick is in URL (for Google Ads) */
+    (function() {
+        if (new URLSearchParams(window.location.search).get('form') === 'quick') {
+            var quickTab = document.querySelector('.form-tab[data-tab="quick"]');
+            if (quickTab) quickTab.click();
+        }
+    })();
+
     /* FAQ Toggle with keyboard support */
     function toggleFaq(question) {
         var item = question.parentElement;
