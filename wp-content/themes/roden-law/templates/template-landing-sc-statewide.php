@@ -6,8 +6,16 @@
  * Outputs its own <!DOCTYPE html>, <head>, and all CSS/JS inline for page speed.
  * Shows all 4 SC offices. Designed for Google Ads traffic with noindex/nofollow.
  *
- * Supports ?city= parameter for dynamic city insertion from Google Ads.
- * Default city: South Carolina. SC offices: Charleston, North Charleston, Columbia, Myrtle Beach.
+ * Supports URL parameters for Google Ads dynamic insertion:
+ *   ?city=   — dynamic city (default: South Carolina)
+ *   ?type=   — accident type swap (default: car-accident). Allowed values:
+ *              car-accident, rear-end-collision, truck-accident, motorcycle-accident,
+ *              pedestrian-accident, bicycle-accident, hit-and-run, drunk-driver-accident,
+ *              rideshare-accident, wrongful-death
+ *   ?form=quick — auto-selects Quick Callback form tab
+ *
+ * Example: ?city=Charleston&type=rear-end-collision&form=quick
+ * SC offices: Charleston, North Charleston, Columbia, Myrtle Beach.
  *
  * @package Roden_Law
  */
@@ -37,6 +45,168 @@ $city         = ( $city_raw && strpos( $city_raw, '{' ) === false ) ? $city_raw 
 
 // Use "in South Carolina" or "in [City]" depending on whether we have a specific city.
 $in_location  = 'in ' . $city;
+
+// ── Dynamic accident type from ?type= parameter ──────────────────────────────
+// Whitelist of allowed types. Each entry can optionally override hero_sub, faqs,
+// and results for deep customisation; otherwise the generic content is shown with
+// the type label swapped in.
+//
+// URL examples:
+//   ?type=rear-end-collision&city=Charleston&form=quick
+//   ?type=truck-accident&city=Columbia
+$allowed_types = array(
+	'car-accident' => array(
+		'label'        => 'Car Accident',
+		'label_lower'  => 'car accident',
+		'label_plural' => 'Car Accidents',
+		'article'      => 'a',
+	),
+	'rear-end-collision' => array(
+		'label'        => 'Rear-End Collision',
+		'label_lower'  => 'rear-end collision',
+		'label_plural' => 'Rear-End Collisions',
+		'article'      => 'a',
+		'hero_sub'     => 'Rear-ended and injured? Insurance companies count on you accepting lowball offers for &ldquo;minor&rdquo; impacts. Roden Law has recovered over %s for rear-end collision victims &mdash; and we don\'t charge a fee unless we win your case.',
+		'faqs'         => array(
+			array(
+				'q' => 'Who is at fault in a rear-end collision in South Carolina?',
+				'a' => 'In South Carolina, the rear driver is presumed at fault because they have a duty to maintain a safe following distance. However, exceptions exist: if the front vehicle brake-checks, has broken brake lights, or reverses suddenly, the front driver may share or bear full liability.',
+			),
+			array(
+				'q' => 'How much is my rear-end collision case worth?',
+				'a' => 'Case value depends on medical costs, lost wages, pain and suffering, future earning capacity, and the defendant\'s insurance limits. Even a &ldquo;minor&rdquo; rear-end impact can cause serious injuries like whiplash, herniated discs, and TBI. We evaluate every case individually.',
+			),
+			array(
+				'q' => 'What if my symptoms appeared days after the rear-end collision?',
+				'a' => 'Delayed symptoms are extremely common in rear-end collisions, especially whiplash and soft tissue injuries. Seek medical attention as soon as symptoms appear and tell your doctor they started after the collision. Medical records linking your symptoms to the accident are critical evidence.',
+			),
+			array(
+				'q' => 'How long do I have to file a rear-end collision claim in South Carolina?',
+				'a' => sprintf( 'You have %s years from the date of the rear-end collision to file a personal injury lawsuit in South Carolina (%s). However, waiting weakens your case &mdash; evidence disappears, witnesses forget details, and the insurance company delays your recovery.', esc_html( $sc_law['statute_years'] ), esc_html( $sc_law['statute_cite'] ) ),
+			),
+			array(
+				'q' => 'What if I was partially at fault for being rear-ended?',
+				'a' => 'Under South Carolina\'s modified comparative fault rule, you can still recover compensation as long as you were less than 51% at fault. Your award is reduced by your fault percentage. Insurance companies often try to inflate your fault &mdash; our attorneys fight back.',
+			),
+			array(
+				'q' => 'How much does it cost to hire Roden Law for a rear-end collision?',
+				'a' => 'Nothing upfront. We work on a contingency fee basis &mdash; you pay zero out of pocket. Our fee comes from a percentage of your settlement or verdict, only if we win. If we don\'t recover money for you, you owe us nothing.',
+			),
+		),
+		'results' => array(
+			array( 'type' => 'Rear-End Collision', 'amount' => '$2,800,000', 'desc' => 'Rear-end collision with traumatic brain injury' ),
+			array( 'type' => 'Multi-Car Rear-End', 'amount' => '$1,650,000', 'desc' => 'Multi-car rear-end pileup on I-26' ),
+			array( 'type' => 'Rear-End Collision', 'amount' => '$975,000', 'desc' => 'Rear-end at stoplight with herniated discs' ),
+			array( 'type' => 'Whiplash Injury', 'amount' => '$425,000', 'desc' => 'Rear-end collision whiplash with chronic pain' ),
+			array( 'type' => 'Delayed Symptoms', 'amount' => '$350,000', 'desc' => 'Low-speed rear-end with delayed symptoms' ),
+			array( 'type' => 'Commercial Vehicle', 'amount' => '$3,200,000', 'desc' => 'Commercial vehicle rear-end collision' ),
+		),
+	),
+	'truck-accident' => array(
+		'label'        => 'Truck Accident',
+		'label_lower'  => 'truck accident',
+		'label_plural' => 'Truck Accidents',
+		'article'      => 'a',
+	),
+	'motorcycle-accident' => array(
+		'label'        => 'Motorcycle Accident',
+		'label_lower'  => 'motorcycle accident',
+		'label_plural' => 'Motorcycle Accidents',
+		'article'      => 'a',
+	),
+	'pedestrian-accident' => array(
+		'label'        => 'Pedestrian Accident',
+		'label_lower'  => 'pedestrian accident',
+		'label_plural' => 'Pedestrian Accidents',
+		'article'      => 'a',
+	),
+	'bicycle-accident' => array(
+		'label'        => 'Bicycle Accident',
+		'label_lower'  => 'bicycle accident',
+		'label_plural' => 'Bicycle Accidents',
+		'article'      => 'a',
+	),
+	'hit-and-run' => array(
+		'label'        => 'Hit and Run Accident',
+		'label_lower'  => 'hit and run accident',
+		'label_plural' => 'Hit and Run Accidents',
+		'article'      => 'a',
+	),
+	'drunk-driver-accident' => array(
+		'label'        => 'Drunk Driving Accident',
+		'label_lower'  => 'drunk driving accident',
+		'label_plural' => 'Drunk Driving Accidents',
+		'article'      => 'a',
+	),
+	'rideshare-accident' => array(
+		'label'        => 'Rideshare Accident',
+		'label_lower'  => 'rideshare accident',
+		'label_plural' => 'Rideshare Accidents',
+		'article'      => 'a',
+	),
+	'wrongful-death' => array(
+		'label'        => 'Wrongful Death',
+		'label_lower'  => 'wrongful death case',
+		'label_plural' => 'Wrongful Death Cases',
+		'article'      => 'a',
+	),
+);
+
+$type_raw  = isset( $_GET['type'] ) ? sanitize_text_field( wp_unslash( $_GET['type'] ) ) : '';
+// Fall back to default if empty, unrecognised, or contains unresolved Google Ads macro.
+$type_slug = ( $type_raw && isset( $allowed_types[ $type_raw ] ) && strpos( $type_raw, '{' ) === false )
+	? $type_raw
+	: 'car-accident';
+$type_cfg     = $allowed_types[ $type_slug ];
+$type_label   = $type_cfg['label'];            // "Car Accident", "Rear-End Collision"
+$type_lower   = $type_cfg['label_lower'];       // "car accident", "rear-end collision"
+$type_plural  = $type_cfg['label_plural'];      // "Car Accidents", "Rear-End Collisions"
+$type_article = $type_cfg['article'];           // "a" (for "Injured in a …")
+
+// Hero subtitle — override or generic.
+$hero_sub = isset( $type_cfg['hero_sub'] )
+	? sprintf( $type_cfg['hero_sub'], esc_html( $stats['recovered'] ) )
+	: 'Don\'t let insurance companies shortchange you. Roden Law has recovered over ' . esc_html( $stats['recovered'] ) . ' for injury victims across South Carolina &mdash; and we don\'t charge a fee unless we win your case.';
+
+// FAQs — override or generic with type label swapped in.
+$default_faqs = array(
+	array(
+		'q' => 'How much does it cost to hire Roden Law?',
+		'a' => 'Nothing upfront. We work on a contingency fee basis, which means you pay zero out of pocket. Our fee comes from a percentage of your settlement or verdict &mdash; only if we win. If we don\'t recover money for you, you owe us nothing.',
+	),
+	array(
+		'q' => sprintf( 'How long do I have to file a %s claim in South Carolina?', $type_lower ),
+		'a' => sprintf( 'South Carolina has a %s-year statute of limitations for personal injury claims from the date of the accident (%s). However, waiting can hurt your case &mdash; evidence disappears, witnesses forget details, and the insurance company may use delay against you. Contact an attorney as soon as possible.', esc_html( $sc_law['statute_years'] ), esc_html( $sc_law['statute_cite'] ) ),
+	),
+	array(
+		'q' => 'What if I was partially at fault for the accident?',
+		'a' => 'Under South Carolina\'s modified comparative fault rule, you can still recover compensation as long as you were less than 51% at fault. Your award is reduced by your percentage of fault. For example, if you were 20% at fault and damages total $100,000, you could recover $80,000. Insurance companies often try to inflate your fault percentage &mdash; our attorneys fight back.',
+	),
+	array(
+		'q' => sprintf( 'What compensation can I receive after a %s in South Carolina?', $type_lower ),
+		'a' => 'You may be entitled to compensation for medical bills (past and future), lost wages and earning capacity, pain and suffering, property damage, and in some cases, punitive damages. The value depends on the severity of your injuries and the circumstances of the accident.',
+	),
+	array(
+		'q' => 'What if the other driver doesn\'t have insurance?',
+		'a' => 'South Carolina requires drivers to carry minimum liability coverage, but not all drivers comply. You may still be able to recover compensation through your own uninsured/underinsured motorist (UM/UIM) coverage. Our attorneys will investigate every avenue to ensure you get the compensation you deserve.',
+	),
+	array(
+		'q' => 'Should I talk to the other driver\'s insurance company?',
+		'a' => 'No. Insurance adjusters are trained to get you to say things that can reduce your claim. Before giving any recorded statement, talk to a Roden Law attorney first. We\'ll handle all communication with the insurance companies so you don\'t accidentally hurt your case.',
+	),
+);
+$faqs = isset( $type_cfg['faqs'] ) ? $type_cfg['faqs'] : $default_faqs;
+
+// Case results — override or generic.
+$default_results = array(
+	array( 'type' => 'Auto Accident',     'amount' => '$3,000,000',  'desc' => 'Settlement &mdash; Multi-vehicle collision' ),
+	array( 'type' => 'Truck Accident',     'amount' => '$27,000,000', 'desc' => 'Settlement &mdash; Commercial truck crash' ),
+	array( 'type' => 'Car Accident',       'amount' => '$1,850,000',  'desc' => 'Verdict &mdash; Rear-end collision with TBI' ),
+	array( 'type' => 'Hit and Run',        'amount' => '$975,000',    'desc' => 'Settlement &mdash; Uninsured motorist claim' ),
+	array( 'type' => 'Intersection Crash', 'amount' => '$2,100,000',  'desc' => 'Settlement &mdash; T-bone collision injuries' ),
+	array( 'type' => 'Rideshare Accident', 'amount' => '$650,000',    'desc' => 'Settlement &mdash; Uber passenger injuries' ),
+);
+$results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_results;
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -44,8 +214,8 @@ $in_location  = 'in ' . $city;
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
-    <title>South Carolina Car Accident Lawyers | Roden Law</title>
-    <meta name="description" content="Injured in a car accident <?php echo esc_attr( $in_location ); ?>? Roden Law has recovered <?php echo esc_attr( $stats['recovered'] ); ?> for injury victims. Free case review. No fee unless we win. Call <?php echo esc_attr( $phone ); ?>.">
+    <title>South Carolina <?php echo esc_attr( $type_label ); ?> Lawyers | Roden Law</title>
+    <meta name="description" content="Injured in <?php echo esc_attr( $type_article ); ?> <?php echo esc_attr( $type_lower ); ?> <?php echo esc_attr( $in_location ); ?>? Roden Law has recovered <?php echo esc_attr( $stats['recovered'] ); ?> for injury victims. Free case review. No fee unless we win. Call <?php echo esc_attr( $phone ); ?>.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="https://cdn.callrail.com">
@@ -1561,60 +1731,22 @@ $in_location  = 'in ' . $city;
             .mobile-cta-review { display: none; }
         }
     </style>
-    <!-- FAQPage Schema -->
+    <!-- FAQPage Schema (dynamic — driven by $faqs array) -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
+            <?php foreach ( $faqs as $fi => $faq ) : ?>
             {
                 "@type": "Question",
-                "name": "How much does it cost to hire Roden Law?",
+                "name": <?php echo wp_json_encode( wp_strip_all_tags( $faq['q'] ) ); ?>,
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Nothing upfront. We work on a contingency fee basis, which means you pay zero out of pocket. Our fee comes from a percentage of your settlement or verdict — only if we win. If we don't recover money for you, you owe us nothing."
+                    "text": <?php echo wp_json_encode( wp_strip_all_tags( $faq['a'] ) ); ?>
                 }
-            },
-            {
-                "@type": "Question",
-                "name": "How long do I have to file a car accident claim in South Carolina?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "South Carolina has a <?php echo esc_html( $sc_law['statute_years'] ); ?>-year statute of limitations for personal injury claims from the date of the accident (<?php echo esc_html( $sc_law['statute_cite'] ); ?>). However, waiting can hurt your case — evidence disappears, witnesses forget details, and the insurance company may use delay against you. Contact an attorney as soon as possible."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What if I was partially at fault for the accident?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Under South Carolina's modified comparative fault rule, you can still recover compensation as long as you were less than 51% at fault. Your award is reduced by your percentage of fault. For example, if you were 20% at fault and damages total $100,000, you could recover $80,000. Insurance companies often try to inflate your fault percentage — our attorneys fight back."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What compensation can I receive after a car accident in South Carolina?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "You may be entitled to compensation for medical bills (past and future), lost wages and earning capacity, pain and suffering, property damage, and in some cases, punitive damages. The value depends on the severity of your injuries and the circumstances of the accident."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What if the other driver doesn't have insurance?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "South Carolina requires drivers to carry minimum liability coverage, but not all drivers comply. You may still be able to recover compensation through your own uninsured/underinsured motorist (UM/UIM) coverage. Our attorneys will investigate every avenue to ensure you get the compensation you deserve."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Should I talk to the other driver's insurance company?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "No. Insurance adjusters are trained to get you to say things that can reduce your claim. Before giving any recorded statement, talk to a Roden Law attorney first. We'll handle all communication with the insurance companies so you don't accidentally hurt your case."
-                }
-            }
+            }<?php echo $fi < count( $faqs ) - 1 ? ',' : ''; ?>
+            <?php endforeach; ?>
         ]
     }
     </script>
@@ -1647,8 +1779,8 @@ $in_location  = 'in ' . $city;
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
                 Trusted South Carolina Trial Attorneys
             </div>
-            <h1><?php echo esc_html( $city ); ?> <span class="gold">Car Accident Lawyers</span></h1>
-            <p class="hero-sub">Don't let insurance companies shortchange you. Roden Law has recovered over <?php echo esc_html( $stats['recovered'] ); ?> for injury victims across South Carolina &mdash; and we don't charge a fee unless we win your case.</p>
+            <h1><?php echo esc_html( $city ); ?> <span class="gold"><?php echo esc_html( $type_label ); ?> Lawyers</span></h1>
+            <p class="hero-sub"><?php echo $hero_sub; ?></p>
 
             <!-- Hero CTAs -->
             <div class="hero-cta-row">
@@ -1796,7 +1928,7 @@ $in_location  = 'in ' . $city;
 <section class="sc-law-section">
     <div class="section-inner">
         <div class="section-eyebrow">South Carolina Law</div>
-        <h2 class="section-title">Critical Deadlines &amp; Rules for South Carolina Car Accidents</h2>
+        <h2 class="section-title">Critical Deadlines &amp; Rules for South Carolina <?php echo esc_html( $type_plural ); ?></h2>
         <p class="section-sub">Understanding South Carolina's personal injury laws can make or break your case. Here's what every accident victim needs to know.</p>
 
         <div class="sc-law-grid">
@@ -1806,7 +1938,7 @@ $in_location  = 'in ' . $city;
                     Statute of Limitations
                 </h3>
                 <div class="law-value"><?php echo esc_html( $sc_law['statute_years'] ); ?> Years</div>
-                <p>In South Carolina, you have <?php echo esc_html( $sc_law['statute_years'] ); ?> years from the date of your car accident to file a personal injury lawsuit. Miss this deadline and you lose your right to compensation &mdash; permanently.</p>
+                <p>In South Carolina, you have <?php echo esc_html( $sc_law['statute_years'] ); ?> years from the date of your <?php echo esc_html( $type_lower ); ?> to file a personal injury lawsuit. Miss this deadline and you lose your right to compensation &mdash; permanently.</p>
                 <p class="cite"><?php echo esc_html( $sc_law['statute_cite'] ); ?></p>
             </div>
             <div class="sc-law-card">
@@ -1896,7 +2028,7 @@ $in_location  = 'in ' . $city;
 <section class="why-section">
     <div class="section-inner">
         <div class="section-eyebrow">Your Road to Results</div>
-        <h2 class="section-title">Why <?php echo esc_html( $city ); ?> Chooses Roden Law After a Car Accident</h2>
+        <h2 class="section-title">Why <?php echo esc_html( $city ); ?> Chooses Roden Law After <?php echo esc_html( $type_article ); ?> <?php echo esc_html( $type_label ); ?></h2>
         <p class="section-sub">When you're dealing with injuries, lost wages, and mounting medical bills, you need a legal team that fights as hard as you do.</p>
 
         <div class="why-grid">
@@ -1919,7 +2051,7 @@ $in_location  = 'in ' . $city;
                     <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
                 </div>
                 <h3><?php echo esc_html( $stats['recovered'] ); ?> Recovered for Clients</h3>
-                <p>Results matter. Our track record of multi-million dollar verdicts and settlements shows we know how to maximize the value of your car accident claim.</p>
+                <p>Results matter. Our track record of multi-million dollar verdicts and settlements shows we know how to maximize the value of your <?php echo esc_html( $type_lower ); ?> claim.</p>
             </div>
             <div class="why-card">
                 <div class="why-icon">
@@ -1940,7 +2072,7 @@ $in_location  = 'in ' . $city;
                     <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
                 </div>
                 <h3>24/7 Availability</h3>
-                <p>Accidents don't wait for business hours. Reach us any time &mdash; day, night, or weekend &mdash; for a free consultation about your car accident case.</p>
+                <p>Accidents don't wait for business hours. Reach us any time &mdash; day, night, or weekend &mdash; for a free consultation about your <?php echo esc_html( $type_lower ); ?> case.</p>
             </div>
         </div>
     </div>
@@ -1951,39 +2083,16 @@ $in_location  = 'in ' . $city;
     <div class="section-inner">
         <div class="section-eyebrow">Proven Results</div>
         <h2 class="section-title">Real Results for South Carolina Clients</h2>
-        <p class="section-sub">Our track record speaks for itself. Here are just a few of the recoveries we've secured for car accident victims across South Carolina.</p>
+        <p class="section-sub">Our track record speaks for itself. Here are just a few of the recoveries we've secured for <?php echo esc_html( $type_lower ); ?> victims across South Carolina.</p>
 
         <div class="results-grid">
+            <?php foreach ( $results as $r ) : ?>
             <div class="result-card">
-                <div class="result-type">Auto Accident</div>
-                <div class="result-amount">$3,000,000</div>
-                <div class="result-desc">Settlement &mdash; Multi-vehicle collision</div>
+                <div class="result-type"><?php echo esc_html( $r['type'] ); ?></div>
+                <div class="result-amount"><?php echo esc_html( $r['amount'] ); ?></div>
+                <div class="result-desc"><?php echo $r['desc']; ?></div>
             </div>
-            <div class="result-card">
-                <div class="result-type">Truck Accident</div>
-                <div class="result-amount">$27,000,000</div>
-                <div class="result-desc">Settlement &mdash; Commercial truck crash</div>
-            </div>
-            <div class="result-card">
-                <div class="result-type">Car Accident</div>
-                <div class="result-amount">$1,850,000</div>
-                <div class="result-desc">Verdict &mdash; Rear-end collision with TBI</div>
-            </div>
-            <div class="result-card">
-                <div class="result-type">Hit and Run</div>
-                <div class="result-amount">$975,000</div>
-                <div class="result-desc">Settlement &mdash; Uninsured motorist claim</div>
-            </div>
-            <div class="result-card">
-                <div class="result-type">Intersection Crash</div>
-                <div class="result-amount">$2,100,000</div>
-                <div class="result-desc">Settlement &mdash; T-bone collision injuries</div>
-            </div>
-            <div class="result-card">
-                <div class="result-type">Rideshare Accident</div>
-                <div class="result-amount">$650,000</div>
-                <div class="result-desc">Settlement &mdash; Uber passenger injuries</div>
-            </div>
+            <?php endforeach; ?>
         </div>
         <p class="results-disclaimer">*Results may vary depending on your particular facts and legal circumstances. Past results do not guarantee future outcomes.</p>
     </div>
@@ -1992,7 +2101,7 @@ $in_location  = 'in ' . $city;
 <!-- ===== MID-PAGE CTA: After Results ===== -->
 <section class="mid-page-cta">
     <div class="section-inner">
-        <h2>Injured in a Car Accident? Get Your Free Case Review Now.</h2>
+        <h2>Injured in <?php echo esc_html( $type_article ); ?> <?php echo esc_html( $type_label ); ?>? Get Your Free Case Review Now.</h2>
         <div class="cta-buttons">
             <a href="#leadForm" class="cta-btn-primary" aria-label="Scroll to free case review form">Get My Free Case Review &rarr;</a>
             <a href="tel:<?php echo esc_attr( $tel ); ?>" class="cta-btn-secondary" aria-label="Call Roden Law at <?php echo esc_attr( $phone ); ?>">
@@ -2041,9 +2150,9 @@ $in_location  = 'in ' . $city;
     <div class="section-inner">
         <div class="checklist-layout">
             <div>
-                <div class="section-eyebrow">After a South Carolina Car Accident</div>
-                <h2 class="section-title">5 Things You Must Do After a South Carolina Car Accident</h2>
-                <p class="section-sub">The steps you take immediately after a car accident in South Carolina can make or break your case. Follow this checklist to protect your rights.</p>
+                <div class="section-eyebrow">After a South Carolina <?php echo esc_html( $type_label ); ?></div>
+                <h2 class="section-title">5 Things You Must Do After a South Carolina <?php echo esc_html( $type_label ); ?></h2>
+                <p class="section-sub">The steps you take immediately after <?php echo esc_html( $type_article ); ?> <?php echo esc_html( $type_lower ); ?> in South Carolina can make or break your case. Follow this checklist to protect your rights.</p>
             </div>
             <div>
                 <ol class="checklist-items">
@@ -2143,7 +2252,7 @@ $in_location  = 'in ' . $city;
     <div class="section-inner">
         <div class="section-eyebrow" style="text-align:center;">Client Stories</div>
         <h2 class="section-title" style="text-align:center;">What Our South Carolina Clients Say</h2>
-        <p class="section-sub" style="text-align:center; margin: 0 auto 48px;">Hear from real South Carolina families we've helped after car accidents.</p>
+        <p class="section-sub" style="text-align:center; margin: 0 auto 48px;">Hear from real South Carolina families we've helped after <?php echo esc_html( strtolower( $type_plural ) ); ?>.</p>
 
         <?php
         // Try Trustindex widget (active on production). If plugin isn't installed,
@@ -2199,47 +2308,19 @@ $in_location  = 'in ' . $city;
         <div class="faq-layout">
             <div>
                 <div class="section-eyebrow">FAQ</div>
-                <h2 class="section-title">Questions About Your South Carolina Car Accident Case?</h2>
-                <p class="section-sub">Get answers to the most common questions we hear from car accident victims across South Carolina.</p>
+                <h2 class="section-title">Questions About Your South Carolina <?php echo esc_html( $type_label ); ?> Case?</h2>
+                <p class="section-sub">Get answers to the most common questions we hear from <?php echo esc_html( $type_lower ); ?> victims across South Carolina.</p>
                 <a href="#leadForm" class="cta-phone" style="font-size:16px; padding: 16px 32px; display: inline-flex;">Talk to a Lawyer Now &rarr;</a>
             </div>
             <div>
-                <div class="faq-item open">
-                    <div class="faq-question" tabindex="0" role="button" aria-expanded="true">How much does it cost to hire Roden Law?</div>
+                <?php foreach ( $faqs as $faq_i => $faq ) : ?>
+                <div class="faq-item<?php echo 0 === $faq_i ? ' open' : ''; ?>">
+                    <div class="faq-question" tabindex="0" role="button" aria-expanded="<?php echo 0 === $faq_i ? 'true' : 'false'; ?>"><?php echo $faq['q']; ?></div>
                     <div class="faq-answer">
-                        <p>Nothing upfront. We work on a contingency fee basis, which means you pay zero out of pocket. Our fee comes from a percentage of your settlement or verdict &mdash; only if we win. If we don't recover money for you, you owe us nothing.</p>
+                        <p><?php echo $faq['a']; ?></p>
                     </div>
                 </div>
-                <div class="faq-item">
-                    <div class="faq-question" tabindex="0" role="button" aria-expanded="false">How long do I have to file a car accident claim in South Carolina?</div>
-                    <div class="faq-answer">
-                        <p>South Carolina has a <?php echo esc_html( $sc_law['statute_years'] ); ?>-year statute of limitations for personal injury claims from the date of the accident (<?php echo esc_html( $sc_law['statute_cite'] ); ?>). However, waiting can hurt your case &mdash; evidence disappears, witnesses forget details, and the insurance company may use delay against you. Contact an attorney as soon as possible.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" tabindex="0" role="button" aria-expanded="false">What if I was partially at fault for the accident?</div>
-                    <div class="faq-answer">
-                        <p>Under South Carolina's modified comparative fault rule, you can still recover compensation as long as you were less than 51% at fault. Your award is reduced by your percentage of fault. For example, if you were 20% at fault and damages total $100,000, you could recover $80,000. Insurance companies often try to inflate your fault percentage &mdash; our attorneys fight back.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" tabindex="0" role="button" aria-expanded="false">What compensation can I receive after a car accident in South Carolina?</div>
-                    <div class="faq-answer">
-                        <p>You may be entitled to compensation for medical bills (past and future), lost wages and earning capacity, pain and suffering, property damage, and in some cases, punitive damages. The value depends on the severity of your injuries and the circumstances of the accident.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" tabindex="0" role="button" aria-expanded="false">What if the other driver doesn't have insurance?</div>
-                    <div class="faq-answer">
-                        <p>South Carolina requires drivers to carry minimum liability coverage, but not all drivers comply. You may still be able to recover compensation through your own uninsured/underinsured motorist (UM/UIM) coverage. Our attorneys will investigate every avenue to ensure you get the compensation you deserve.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" tabindex="0" role="button" aria-expanded="false">Should I talk to the other driver's insurance company?</div>
-                    <div class="faq-answer">
-                        <p>No. Insurance adjusters are trained to get you to say things that can reduce your claim. Before giving any recorded statement, talk to a Roden Law attorney first. We'll handle all communication with the insurance companies so you don't accidentally hurt your case.</p>
-                    </div>
-                </div>
+                <?php endforeach; ?>
             </div>
         </div>
     </div>
@@ -2248,7 +2329,7 @@ $in_location  = 'in ' . $city;
 <!-- ===== MID-PAGE CTA: After FAQ ===== -->
 <section class="mid-page-cta">
     <div class="section-inner">
-        <h2>Still Have Questions? Talk to a South Carolina Car Accident Lawyer.</h2>
+        <h2>Still Have Questions? Talk to a South Carolina <?php echo esc_html( $type_label ); ?> Lawyer.</h2>
         <div class="cta-buttons">
             <a href="#leadForm" class="cta-btn-primary" aria-label="Scroll to free case review form">Get My Free Case Review &rarr;</a>
             <a href="tel:<?php echo esc_attr( $tel ); ?>" class="cta-btn-secondary" aria-label="Call Roden Law at <?php echo esc_attr( $phone ); ?>">
