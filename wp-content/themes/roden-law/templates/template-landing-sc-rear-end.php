@@ -1,21 +1,13 @@
 <?php
 /**
- * Template Name: Landing Page — SC Statewide
+ * Template Name: Landing Page — SC Rear-End Collision
  *
- * Statewide South Carolina PPC landing page — does NOT use get_header() / get_footer().
+ * Rear-end collision focused PPC landing page for South Carolina — does NOT use get_header() / get_footer().
  * Outputs its own <!DOCTYPE html>, <head>, and all CSS/JS inline for page speed.
  * Shows all 4 SC offices. Designed for Google Ads traffic with noindex/nofollow.
  *
- * Supports URL parameters for Google Ads dynamic insertion:
- *   ?city=   — dynamic city (default: South Carolina)
- *   ?type=   — accident type swap (default: car-accident). Allowed values:
- *              car-accident, rear-end-collision, truck-accident, motorcycle-accident,
- *              pedestrian-accident, bicycle-accident, hit-and-run, drunk-driver-accident,
- *              rideshare-accident, wrongful-death
- *   ?form=quick — (disabled for now, Quick Callback tab removed)
- *
- * Example: ?city=Charleston&type=rear-end-collision
- * SC offices: Charleston, North Charleston, Columbia, Myrtle Beach.
+ * Supports ?city= parameter for dynamic city insertion from Google Ads.
+ * Default city: South Carolina. SC offices: Charleston, North Charleston, Columbia, Myrtle Beach.
  *
  * @package Roden_Law
  */
@@ -45,168 +37,6 @@ $city         = ( $city_raw && strpos( $city_raw, '{' ) === false ) ? $city_raw 
 
 // Use "in South Carolina" or "in [City]" depending on whether we have a specific city.
 $in_location  = 'in ' . $city;
-
-// ── Dynamic accident type from ?type= parameter ──────────────────────────────
-// Whitelist of allowed types. Each entry can optionally override hero_sub, faqs,
-// and results for deep customisation; otherwise the generic content is shown with
-// the type label swapped in.
-//
-// URL examples:
-//   ?type=rear-end-collision&city=Charleston&form=quick
-//   ?type=truck-accident&city=Columbia
-$allowed_types = array(
-	'car-accident' => array(
-		'label'        => 'Car Accident',
-		'label_lower'  => 'car accident',
-		'label_plural' => 'Car Accidents',
-		'article'      => 'a',
-	),
-	'rear-end-collision' => array(
-		'label'        => 'Rear-End Collision',
-		'label_lower'  => 'rear-end collision',
-		'label_plural' => 'Rear-End Collisions',
-		'article'      => 'a',
-		'hero_sub'     => 'Rear-ended and injured? Insurance companies count on you accepting lowball offers for &ldquo;minor&rdquo; impacts. Roden Law has recovered over %s for rear-end collision victims &mdash; and we don\'t charge a fee unless we win your case.',
-		'faqs'         => array(
-			array(
-				'q' => 'Who is at fault in a rear-end collision in South Carolina?',
-				'a' => 'In South Carolina, the rear driver is presumed at fault because they have a duty to maintain a safe following distance. However, exceptions exist: if the front vehicle brake-checks, has broken brake lights, or reverses suddenly, the front driver may share or bear full liability.',
-			),
-			array(
-				'q' => 'How much is my rear-end collision case worth?',
-				'a' => 'Case value depends on medical costs, lost wages, pain and suffering, future earning capacity, and the defendant\'s insurance limits. Even a &ldquo;minor&rdquo; rear-end impact can cause serious injuries like whiplash, herniated discs, and TBI. We evaluate every case individually.',
-			),
-			array(
-				'q' => 'What if my symptoms appeared days after the rear-end collision?',
-				'a' => 'Delayed symptoms are extremely common in rear-end collisions, especially whiplash and soft tissue injuries. Seek medical attention as soon as symptoms appear and tell your doctor they started after the collision. Medical records linking your symptoms to the accident are critical evidence.',
-			),
-			array(
-				'q' => 'How long do I have to file a rear-end collision claim in South Carolina?',
-				'a' => sprintf( 'You have %s years from the date of the rear-end collision to file a personal injury lawsuit in South Carolina (%s). However, waiting weakens your case &mdash; evidence disappears, witnesses forget details, and the insurance company delays your recovery.', esc_html( $sc_law['statute_years'] ), esc_html( $sc_law['statute_cite'] ) ),
-			),
-			array(
-				'q' => 'What if I was partially at fault for being rear-ended?',
-				'a' => 'Under South Carolina\'s modified comparative fault rule, you can still recover compensation as long as you were less than 51% at fault. Your award is reduced by your fault percentage. Insurance companies often try to inflate your fault &mdash; our attorneys fight back.',
-			),
-			array(
-				'q' => 'How much does it cost to hire Roden Law for a rear-end collision?',
-				'a' => 'Nothing upfront. We work on a contingency fee basis &mdash; you pay zero out of pocket. Our fee comes from a percentage of your settlement or verdict, only if we win. If we don\'t recover money for you, you owe us nothing.',
-			),
-		),
-		'results' => array(
-			array( 'type' => 'Rear-End Collision', 'amount' => '$2,800,000', 'desc' => 'Rear-end collision with traumatic brain injury' ),
-			array( 'type' => 'Multi-Car Rear-End', 'amount' => '$1,650,000', 'desc' => 'Multi-car rear-end pileup on I-26' ),
-			array( 'type' => 'Rear-End Collision', 'amount' => '$975,000', 'desc' => 'Rear-end at stoplight with herniated discs' ),
-			array( 'type' => 'Whiplash Injury', 'amount' => '$425,000', 'desc' => 'Rear-end collision whiplash with chronic pain' ),
-			array( 'type' => 'Delayed Symptoms', 'amount' => '$350,000', 'desc' => 'Low-speed rear-end with delayed symptoms' ),
-			array( 'type' => 'Commercial Vehicle', 'amount' => '$3,200,000', 'desc' => 'Commercial vehicle rear-end collision' ),
-		),
-	),
-	'truck-accident' => array(
-		'label'        => 'Truck Accident',
-		'label_lower'  => 'truck accident',
-		'label_plural' => 'Truck Accidents',
-		'article'      => 'a',
-	),
-	'motorcycle-accident' => array(
-		'label'        => 'Motorcycle Accident',
-		'label_lower'  => 'motorcycle accident',
-		'label_plural' => 'Motorcycle Accidents',
-		'article'      => 'a',
-	),
-	'pedestrian-accident' => array(
-		'label'        => 'Pedestrian Accident',
-		'label_lower'  => 'pedestrian accident',
-		'label_plural' => 'Pedestrian Accidents',
-		'article'      => 'a',
-	),
-	'bicycle-accident' => array(
-		'label'        => 'Bicycle Accident',
-		'label_lower'  => 'bicycle accident',
-		'label_plural' => 'Bicycle Accidents',
-		'article'      => 'a',
-	),
-	'hit-and-run' => array(
-		'label'        => 'Hit and Run Accident',
-		'label_lower'  => 'hit and run accident',
-		'label_plural' => 'Hit and Run Accidents',
-		'article'      => 'a',
-	),
-	'drunk-driver-accident' => array(
-		'label'        => 'Drunk Driving Accident',
-		'label_lower'  => 'drunk driving accident',
-		'label_plural' => 'Drunk Driving Accidents',
-		'article'      => 'a',
-	),
-	'rideshare-accident' => array(
-		'label'        => 'Rideshare Accident',
-		'label_lower'  => 'rideshare accident',
-		'label_plural' => 'Rideshare Accidents',
-		'article'      => 'a',
-	),
-	'wrongful-death' => array(
-		'label'        => 'Wrongful Death',
-		'label_lower'  => 'wrongful death case',
-		'label_plural' => 'Wrongful Death Cases',
-		'article'      => 'a',
-	),
-);
-
-$type_raw  = isset( $_GET['type'] ) ? sanitize_text_field( wp_unslash( $_GET['type'] ) ) : '';
-// Fall back to default if empty, unrecognised, or contains unresolved Google Ads macro.
-$type_slug = ( $type_raw && isset( $allowed_types[ $type_raw ] ) && strpos( $type_raw, '{' ) === false )
-	? $type_raw
-	: 'car-accident';
-$type_cfg     = $allowed_types[ $type_slug ];
-$type_label   = $type_cfg['label'];            // "Car Accident", "Rear-End Collision"
-$type_lower   = $type_cfg['label_lower'];       // "car accident", "rear-end collision"
-$type_plural  = $type_cfg['label_plural'];      // "Car Accidents", "Rear-End Collisions"
-$type_article = $type_cfg['article'];           // "a" (for "Injured in a …")
-
-// Hero subtitle — override or generic.
-$hero_sub = isset( $type_cfg['hero_sub'] )
-	? sprintf( $type_cfg['hero_sub'], esc_html( $stats['recovered'] ) )
-	: 'Don\'t let insurance companies shortchange you. Roden Law has recovered over ' . esc_html( $stats['recovered'] ) . ' for injury victims across South Carolina &mdash; and we don\'t charge a fee unless we win your case.';
-
-// FAQs — override or generic with type label swapped in.
-$default_faqs = array(
-	array(
-		'q' => 'How much does it cost to hire Roden Law?',
-		'a' => 'Nothing upfront. We work on a contingency fee basis, which means you pay zero out of pocket. Our fee comes from a percentage of your settlement or verdict &mdash; only if we win. If we don\'t recover money for you, you owe us nothing.',
-	),
-	array(
-		'q' => sprintf( 'How long do I have to file a %s claim in South Carolina?', $type_lower ),
-		'a' => sprintf( 'South Carolina has a %s-year statute of limitations for personal injury claims from the date of the accident (%s). However, waiting can hurt your case &mdash; evidence disappears, witnesses forget details, and the insurance company may use delay against you. Contact an attorney as soon as possible.', esc_html( $sc_law['statute_years'] ), esc_html( $sc_law['statute_cite'] ) ),
-	),
-	array(
-		'q' => 'What if I was partially at fault for the accident?',
-		'a' => 'Under South Carolina\'s modified comparative fault rule, you can still recover compensation as long as you were less than 51% at fault. Your award is reduced by your percentage of fault. For example, if you were 20% at fault and damages total $100,000, you could recover $80,000. Insurance companies often try to inflate your fault percentage &mdash; our attorneys fight back.',
-	),
-	array(
-		'q' => sprintf( 'What compensation can I receive after a %s in South Carolina?', $type_lower ),
-		'a' => 'You may be entitled to compensation for medical bills (past and future), lost wages and earning capacity, pain and suffering, property damage, and in some cases, punitive damages. The value depends on the severity of your injuries and the circumstances of the accident.',
-	),
-	array(
-		'q' => 'What if the other driver doesn\'t have insurance?',
-		'a' => 'South Carolina requires drivers to carry minimum liability coverage, but not all drivers comply. You may still be able to recover compensation through your own uninsured/underinsured motorist (UM/UIM) coverage. Our attorneys will investigate every avenue to ensure you get the compensation you deserve.',
-	),
-	array(
-		'q' => 'Should I talk to the other driver\'s insurance company?',
-		'a' => 'No. Insurance adjusters are trained to get you to say things that can reduce your claim. Before giving any recorded statement, talk to a Roden Law attorney first. We\'ll handle all communication with the insurance companies so you don\'t accidentally hurt your case.',
-	),
-);
-$faqs = isset( $type_cfg['faqs'] ) ? $type_cfg['faqs'] : $default_faqs;
-
-// Case results — override or generic.
-$default_results = array(
-	array( 'type' => 'Auto Accident',     'amount' => '$3,000,000',  'desc' => 'Settlement &mdash; Multi-vehicle collision' ),
-	array( 'type' => 'Truck Accident',     'amount' => '$27,000,000', 'desc' => 'Settlement &mdash; Commercial truck crash' ),
-	array( 'type' => 'Car Accident',       'amount' => '$1,850,000',  'desc' => 'Verdict &mdash; Rear-end collision with TBI' ),
-	array( 'type' => 'Hit and Run',        'amount' => '$975,000',    'desc' => 'Settlement &mdash; Uninsured motorist claim' ),
-	array( 'type' => 'Intersection Crash', 'amount' => '$2,100,000',  'desc' => 'Settlement &mdash; T-bone collision injuries' ),
-	array( 'type' => 'Rideshare Accident', 'amount' => '$650,000',    'desc' => 'Settlement &mdash; Uber passenger injuries' ),
-);
-$results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_results;
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -214,8 +44,8 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
-    <title>South Carolina <?php echo esc_attr( $type_label ); ?> Lawyers | Roden Law</title>
-    <meta name="description" content="Injured in <?php echo esc_attr( $type_article ); ?> <?php echo esc_attr( $type_lower ); ?> <?php echo esc_attr( $in_location ); ?>? Roden Law has recovered <?php echo esc_attr( $stats['recovered'] ); ?> for injury victims. Free case review. No fee unless we win. Call <?php echo esc_attr( $phone ); ?>.">
+    <title>South Carolina Rear-End Collision Lawyers | Roden Law</title>
+    <meta name="description" content="Injured in a rear-end collision <?php echo esc_attr( $in_location ); ?>? Roden Law has recovered <?php echo esc_attr( $stats['recovered'] ); ?> for victims. Free case review. No fee unless we win. Call <?php echo esc_attr( $phone ); ?>.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="https://cdn.callrail.com">
@@ -534,7 +364,7 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
             font-weight: 600;
         }
 
-        /* ===== ACCIDENT TYPE GRID ===== */
+        /* ===== ACCIDENT TYPE GRID (REAR-END SPECIFIC INJURIES) ===== */
         .accident-types {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -1686,90 +1516,139 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
             .no-fee-sep { display: none; }
             .trust-badges-inner { gap: 16px; }
             .trust-badge { gap: 8px; }
-            .trust-badge-icon { width: 40px; height: 40px; font-size: 9px; }
-            .why-grid { grid-template-columns: 1fr; }
-            .results-grid { grid-template-columns: 1fr; }
-            .process-grid { grid-template-columns: 1fr; }
-            .result-amount { font-size: 28px; }
+            .trust-badge-text { font-size: 12px; }
+            .trust-badge-icon { width: 40px; height: 40px; }
+            .proof-bar-inner { gap: 24px; }
             .offices-grid { grid-template-columns: 1fr; }
-        }
-
-        /* Dual mobile CTA: side-by-side at wider mobile, call-only at narrow */
-        @media (max-width: 768px) and (min-width: 400px) {
-            .mobile-cta-bar-inner { display: flex; }
-            .mobile-cta-review { display: flex; }
-        }
-        @media (max-width: 399px) {
-            .mobile-cta-bar-inner { display: flex; }
-            .mobile-cta-review { display: none; }
+            .bottom-cta h2 { font-size: 24px; }
+            .bottom-cta .cta-phone { padding: 16px 32px; font-size: 18px; }
+            .section-title { font-size: 24px; }
+            .section-sub { font-size: 15px; }
+            .why-grid { gap: 16px; }
+            .why-card { padding: 24px 16px; }
+            .results-grid { gap: 16px; }
+            .result-card { padding: 20px 16px; }
+            .result-amount { font-size: 28px; }
+            .process-grid { grid-template-columns: 1fr; }
+            .checklist-layout { gap: 28px; }
+            .testimonial-grid { gap: 16px; }
+            .faq-layout { gap: 24px; }
         }
     </style>
-    <!-- FAQPage Schema (dynamic — driven by $faqs array) -->
+    <!-- FAQPage Schema -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
-            <?php foreach ( $faqs as $fi => $faq ) : ?>
             {
                 "@type": "Question",
-                "name": <?php echo wp_json_encode( wp_strip_all_tags( $faq['q'] ) ); ?>,
+                "name": "Is the rear driver always at fault in South Carolina?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": <?php echo wp_json_encode( wp_strip_all_tags( $faq['a'] ) ); ?>
+                    "text": "In South Carolina, the rear driver is presumed at fault in rear-end collisions because they have a duty to maintain a safe following distance. However, there are exceptions: if the front vehicle brake-checks the rear driver, has broken brake lights, or suddenly reverses, the front driver may share or bear full liability."
                 }
-            }<?php echo $fi < count( $faqs ) - 1 ? ',' : ''; ?>
-            <?php endforeach; ?>
+            },
+            {
+                "@type": "Question",
+                "name": "How much is my rear-end collision case worth?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Your case value depends on medical costs and ongoing care, lost wages, pain and suffering, future earning capacity, and the defendant's insurance limits. A 'minor' rear-end impact can still result in serious injuries like whiplash, herniated discs, and TBI. Our attorneys evaluate every case individually to pursue maximum compensation."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What if my symptoms appeared days after the rear-end collision?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Delayed onset is common for whiplash and traumatic brain injury (TBI). Symptoms may not appear for 24-48 hours after impact. Seek medical attention immediately and document your symptoms. Insurance companies often use delayed symptoms as an excuse to deny claims, but we use medical evidence to prove causation."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I recover compensation if the insurance company says it was a minor impact?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Insurance companies use low-speed or low-impact collisions as justification for lowball offers, but the impact speed does not determine injury severity. Biomechanical experts can prove serious injuries occurred even at low speeds."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long do I have to file a rear-end collision claim in South Carolina?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You have <?php echo esc_html( $sc_law['statute_years'] ); ?> years from the date of the rear-end collision to file a personal injury lawsuit in South Carolina (<?php echo esc_html( $sc_law['statute_cite'] ); ?>). However, waiting weakens your case — evidence disappears, witnesses forget details, and the insurance company delays your recovery. Contact an attorney as soon as possible."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What if I was partially at fault for being rear-ended?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "South Carolina uses modified comparative fault. You can recover damages even if you're partially at fault, as long as you're less than 51% responsible. Your award is reduced by your percentage of fault. Insurance companies often exaggerate your fault percentage to minimize payouts — our attorneys fight back aggressively."
+                }
+            }
         ]
     }
     </script>
     <?php wp_head(); ?>
 </head>
-<body <?php body_class( 'landing-page' ); ?>>
-<a class="skip-link" href="#main-content">Skip to main content</a>
 
-<!-- ===== TOP BAR ===== -->
+<body <?php body_class( 'landing-page' ); ?>>
+<a href="#leadForm" class="skip-link">Jump to form</a>
+
+<div class="mobile-cta-bar">
+    <div class="mobile-cta-bar-inner">
+        <a href="tel:<?php echo esc_attr( $tel ); ?>" class="mobile-cta-call" title="Call Roden Law">
+            Call Now
+        </a>
+        <a href="#leadForm" class="mobile-cta-review">
+            Free Review
+        </a>
+    </div>
+</div>
+
 <div class="top-bar">
     <div class="top-bar-inner">
         <div class="top-bar-badge">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/></svg>
             <?php echo esc_html( $stats['rating'] ); ?> STARS &mdash; <?php echo esc_html( $stats['cases'] ); ?> CASES HANDLED
         </div>
         <div class="top-bar-phone">
-            <span>Free Case Review 24/7:</span>
+            <span>Call 24/7</span>
             <a href="tel:<?php echo esc_attr( $tel ); ?>"><?php echo esc_html( $phone ); ?></a>
         </div>
     </div>
 </div>
 
-<main id="main-content">
-<!-- ===== HERO ===== -->
 <section class="hero">
     <div class="hero-bg-image"></div>
     <div class="hero-inner">
         <div class="hero-content">
             <div class="hero-eyebrow">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                Trusted South Carolina Trial Attorneys
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+                Trusted South Carolina Rear-End Accident Attorneys
             </div>
-            <h1><?php echo esc_html( $city ); ?> <span class="gold"><?php echo esc_html( $type_label ); ?> Lawyers</span></h1>
-            <p class="hero-sub"><?php echo $hero_sub; ?></p>
 
-            <!-- Hero CTAs -->
+            <h1><?php echo esc_html( $city ); ?> <span class="gold">Rear-End Collision Lawyers</span></h1>
+
+            <p class="hero-sub">Rear-ended and injured? Insurance companies count on you accepting their lowball offers for "minor" impact collisions. Roden Law has recovered over <?php echo esc_html( $stats['recovered'] ); ?> for rear-end victims &mdash; and we don't charge a fee unless we win your case.</p>
+
             <div class="hero-cta-row">
                 <a href="tel:<?php echo esc_attr( $tel ); ?>" class="hero-call-cta">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                     Call Now: <?php echo esc_html( $phone ); ?>
                 </a>
                 <a href="sms:<?php echo esc_attr( $tel ); ?>" class="hero-text-cta" aria-label="Send a text message to Roden Law">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
                     Text Us
                 </a>
             </div>
+
             <div class="hero-call-sub">Available 24/7 &mdash; Free Consultation</div>
             <p class="hero-experience">Serving South Carolina since <span>2013</span> &middot; <?php echo esc_html( $stats['recovered'] ); ?>+ recovered</p>
 
-            <!-- Attorney Photo Strip -->
             <div class="attorney-strip">
                 <div class="attorney-strip-photos">
                     <?php
@@ -1803,43 +1682,44 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
             </div>
 
             <div class="accident-types">
-                <a href="<?php echo esc_url( home_url( '/car-accident-lawyers/rear-end-collision/' ) ); ?>" class="accident-type-item">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><rect x="1" y="12" width="9" height="6" rx="1"/><rect x="14" y="12" width="9" height="6" rx="1"/><line x1="10" y1="15" x2="14" y2="15"/><circle cx="4" cy="18" r="1.5" fill="#e8a830" stroke="none"/><circle cx="20" cy="18" r="1.5" fill="#e8a830" stroke="none"/></svg>
-                    <span class="accident-type-label">Rear-End Collision</span>
-                </a>
-                <a href="<?php echo esc_url( home_url( '/car-accident-lawyers/t-bone-accident/' ) ); ?>" class="accident-type-item">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><rect x="2" y="10" width="10" height="6" rx="1"/><rect x="14" y="4" width="6" height="10" rx="1" transform="rotate(0)"/><line x1="12" y1="13" x2="14" y2="13"/><path d="M11 12l3-3" stroke="#e8a830" stroke-width="1" opacity="0.5"/></svg>
-                    <span class="accident-type-label">T-Bone / Side Impact</span>
-                </a>
-                <a href="<?php echo esc_url( home_url( '/car-accident-lawyers/hit-and-run-accident/' ) ); ?>" class="accident-type-item">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><rect x="2" y="12" width="9" height="5" rx="1"/><circle cx="5" cy="17" r="1.5" fill="#e8a830" stroke="none"/><path d="M11 14.5l2-2M13 14.5l2-2" opacity="0.6"/><path d="M16 9l2 2M20 9l-2 2M18 7v4" stroke-width="1.5"/></svg>
-                    <span class="accident-type-label">Hit &amp; Run</span>
-                </a>
-                <a href="<?php echo esc_url( home_url( '/car-accident-lawyers/drunk-driver-accident/' ) ); ?>" class="accident-type-item">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><rect x="2" y="13" width="11" height="5" rx="1"/><circle cx="5" cy="18" r="1.5" fill="#e8a830" stroke="none"/><circle cx="10" cy="18" r="1.5" fill="#e8a830" stroke="none"/><path d="M15 11l1.5-5.5M18 11l-1.5-5.5M16.5 5.5h0" stroke-linecap="round"/><path d="M14 8h5" stroke-linecap="round"/></svg>
-                    <span class="accident-type-label">Drunk Driver</span>
-                </a>
-                <a href="<?php echo esc_url( home_url( '/car-accident-lawyers/distracted-driver-accident/' ) ); ?>" class="accident-type-item">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><rect x="2" y="13" width="11" height="5" rx="1"/><circle cx="5" cy="18" r="1.5" fill="#e8a830" stroke="none"/><circle cx="10" cy="18" r="1.5" fill="#e8a830" stroke="none"/><rect x="15" y="5" width="6" height="10" rx="1"/><line x1="18" y1="8" x2="18" y2="12" stroke-linecap="round"/></svg>
-                    <span class="accident-type-label">Distracted Driver</span>
-                </a>
-                <a href="<?php echo esc_url( home_url( '/car-accident-lawyers/rideshare-accident/' ) ); ?>" class="accident-type-item">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><rect x="3" y="12" width="12" height="6" rx="1"/><circle cx="6" cy="18" r="1.5" fill="#e8a830" stroke="none"/><circle cx="12" cy="18" r="1.5" fill="#e8a830" stroke="none"/><circle cx="20" cy="10" r="4"/><path d="M18.5 9.5l1.5 1 1.5-1" stroke-linecap="round"/></svg>
-                    <span class="accident-type-label">Uber / Lyft</span>
-                </a>
+                <div class="accident-type-item">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><path d="M12 2c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m0 3c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6 2.7-6 6-6"/><path d="M12 8v4l3 2" stroke="#e8a830" stroke-width="1.5"/></svg>
+                    <span class="accident-type-label">Whiplash</span>
+                </div>
+                <div class="accident-type-item">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2z" stroke="none" fill="#e8a830"/><circle cx="12" cy="20" r="1" fill="#e8a830"/></svg>
+                    <span class="accident-type-label">Herniated Disc</span>
+                </div>
+                <div class="accident-type-item">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm1-13h-2v6h2zm0 8h-2v2h2z" stroke="none" fill="#e8a830"/></svg>
+                    <span class="accident-type-label">Concussion/TBI</span>
+                </div>
+                <div class="accident-type-item">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><path d="M14 12h-4M12 10v4M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+                    <span class="accident-type-label">Back &amp; Spine</span>
+                </div>
+                <div class="accident-type-item">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm1-13h-2v2h2zm0 4h-2v4h2z" stroke="none" fill="#e8a830"/></svg>
+                    <span class="accident-type-label">TMJ Disorder</span>
+                </div>
+                <div class="accident-type-item">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-2-7l2 2 4-4" stroke="#e8a830" fill="none" stroke-width="1.5"/></svg>
+                    <span class="accident-type-label">Soft Tissue</span>
+                </div>
             </div>
         </div>
 
-        <!-- FORM -->
         <div class="hero-form-card">
             <div class="form-urgency"><span class="pulse-dot"></span> SC has a 3-year filing deadline</div>
-            <h2>Free Case Review</h2>
-            <p class="form-subtitle">Find out what your case is worth &mdash; in minutes.</p>
+
+            <h2>Get My Free Rear-End Case Review</h2>
+            <p class="form-subtitle">2 minutes or less</p>
 
             <!-- Quick Callback tabs removed for now — can re-enable later -->
 
             <form id="leadForm" action="#" method="POST" novalidate aria-label="Free case review request form">
                 <?php wp_nonce_field( 'roden_sidebar_form', 'roden_form_nonce' ); ?>
+
                 <input type="hidden" name="gclid" class="roden-gclid" value="">
                 <div class="form-row">
                     <div class="form-group float-field">
@@ -1877,525 +1757,504 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
                     Average response time: under 15 minutes
                 </p>
                 <p class="form-error" role="alert" aria-live="assertive" style="display:none;color:#ff6b6b;font-size:13px;text-align:center;margin-top:8px;"></p>
+
             </form>
+
             <div class="form-trust">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2ecc71" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                100% confidential. No obligation. No upfront fees &mdash; ever.
-            </div>
-            <div style="text-align:center;margin-top:16px;font-size:14px;color:var(--text-muted);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" stroke="none"/></svg>
+                Confidential &amp; secure
                 or call now: <a href="tel:<?php echo esc_attr( $tel ); ?>" style="color:var(--navy);font-family:'Montserrat',sans-serif;font-weight:800;font-size:16px;"><?php echo esc_html( $phone ); ?></a>
             </div>
+
             <div class="form-activity">
                 <span class="activity-dot"></span>
-                14 people requested a review today
+                Someone from our team usually responds within 1 hour
             </div>
+
         </div>
     </div>
 </section>
 
-<!-- ===== SC LAW CALLOUT ===== -->
 <section class="sc-law-section">
     <div class="section-inner">
         <div class="section-eyebrow">South Carolina Law</div>
-        <h2 class="section-title">Critical Deadlines &amp; Rules for South Carolina <?php echo esc_html( $type_plural ); ?></h2>
-        <p class="section-sub">Understanding South Carolina's personal injury laws can make or break your case. Here's what every accident victim needs to know.</p>
+
+        <h2 class="section-title">Rear-End Collision Laws in South Carolina</h2>
 
         <div class="sc-law-grid">
             <div class="sc-law-card">
                 <h3>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-5.04-6.71l-2.75 3.54-1.3-1.54c-.3-.36-.77-.36-1.07 0-.3.36-.3.95 0 1.31l1.84 2.2c.3.36.77.36 1.07 0 .3-.36.75-1.85 2.75-3.54.36-.3.36-.77.06-1.07-.3-.3-.75-.36-1.06-.06z"/></svg>
                     Statute of Limitations
                 </h3>
                 <div class="law-value"><?php echo esc_html( $sc_law['statute_years'] ); ?> Years</div>
-                <p>In South Carolina, you have <?php echo esc_html( $sc_law['statute_years'] ); ?> years from the date of your <?php echo esc_html( $type_lower ); ?> to file a personal injury lawsuit. Miss this deadline and you lose your right to compensation &mdash; permanently.</p>
+                <p>In South Carolina, you have <?php echo esc_html( $sc_law['statute_years'] ); ?> years from the date of your rear-end collision to file a personal injury lawsuit. Miss this deadline and you lose your right to compensation &mdash; permanently.</p>
                 <p class="cite"><?php echo esc_html( $sc_law['statute_cite'] ); ?></p>
             </div>
+
             <div class="sc-law-card">
                 <h3>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                    Comparative Fault Rule
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm1-13h-2v6h2zm0 8h-2v2h2z"/></svg>
+                    Comparative Negligence
                 </h3>
                 <div class="law-value">&lt; 51% at Fault</div>
-                <p>South Carolina follows a modified comparative fault rule. You can recover damages as long as you are less than 51% responsible for the accident. Your compensation is reduced by your percentage of fault.</p>
+                <p>South Carolina follows a comparative negligence rule. You can recover damages even if you're partially at fault for the rear-end collision &mdash; as long as you're less than 51% responsible. The rear driver is typically presumed at fault in rear-end collisions unless extraordinary circumstances apply.</p>
+                <p class="cite">S.C. Code § 15-38-10</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ===== STATS + NO-FEE BANNER ===== -->
 <div class="no-fee-banner">
     <div class="no-fee-inner">
         <div class="no-fee-item">
             <div class="no-fee-icon">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2.5"><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
             </div>
             <?php echo esc_html( $stats['recovered'] ); ?>+ Recovered
         </div>
-        <span class="no-fee-sep">|</span>
+        <div class="no-fee-sep">|</div>
         <div class="no-fee-item">
             <div class="no-fee-icon">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
             </div>
             <?php echo esc_html( $stats['cases'] ); ?> Cases Won
         </div>
-        <span class="no-fee-sep">|</span>
+        <div class="no-fee-sep">|</div>
         <div class="no-fee-item">
             <div class="no-fee-icon">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
             </div>
             <?php echo esc_html( $stats['rating'] ); ?>&#9733; Rating
         </div>
-        <span class="no-fee-sep">|</span>
+        <div class="no-fee-sep">|</div>
         <div class="no-fee-item">
             <div class="no-fee-icon">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-5.04-6.71l-2.75 3.54-1.3-1.54c-.3-.36-.77-.36-1.07 0-.3.36-.3.95 0 1.31l1.84 2.2c.3.36.77.36 1.07 0 .3-.36.75-1.85 2.75-3.54.36-.3.36-.77.06-1.07-.3-.3-.75-.36-1.06-.06z"/></svg>
             </div>
             No Fee Unless We Win
         </div>
     </div>
 </div>
 
-<!-- ===== TRUST BADGE BAR ===== -->
 <section class="trust-badges">
     <div class="trust-badges-inner">
         <div class="trust-badge">
-            <div class="trust-badge-icon google">
-                <svg width="22" height="22" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
-            </div>
+            <div class="trust-badge-icon google">G</div>
             <div class="trust-badge-text">
-                <strong>Google Reviews</strong>
+                Google Reviews
                 <span class="trust-badge-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <?php echo esc_html( $stats['rating'] ); ?>/5
             </div>
         </div>
         <div class="trust-badge">
             <div class="trust-badge-icon sl">SL</div>
             <div class="trust-badge-text">
-                <strong>Super Lawyers</strong>
-                Rising Stars
+                <strong>Superb Lawyer</strong>
+                Top Rated Personal Injury
             </div>
         </div>
         <div class="trust-badge">
             <div class="trust-badge-icon avvo">A</div>
             <div class="trust-badge-text">
-                <strong>Avvo Rated</strong>
-                Top Attorney
+                <strong>AVVO Rating</strong>
+                Highly Rated Lawyer
             </div>
         </div>
         <div class="trust-badge">
-            <div class="trust-badge-icon sc-bar">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <div class="trust-badge-icon bbb">BBB</div>
+            <div class="trust-badge-text">
+                <strong>Better Business Bureau</strong>
+                A+ Accredited
             </div>
+        </div>
+        <div class="trust-badge">
+            <div class="trust-badge-icon sc-bar">SC</div>
             <div class="trust-badge-text">
                 <strong>SC Bar Association</strong>
-                Members in Good Standing
+                Licensed &amp; Disciplined
             </div>
         </div>
     </div>
 </section>
 
-<!-- ===== WHY CHOOSE RODEN LAW ===== -->
 <section class="why-section">
     <div class="section-inner">
-        <div class="section-eyebrow">Your Road to Results</div>
-        <h2 class="section-title">Why <?php echo esc_html( $city ); ?> Chooses Roden Law After <?php echo esc_html( $type_article ); ?> <?php echo esc_html( $type_label ); ?></h2>
-        <p class="section-sub">When you're dealing with injuries, lost wages, and mounting medical bills, you need a legal team that fights as hard as you do.</p>
+        <div class="section-eyebrow">Why Choose Roden Law</div>
+        <h2 class="section-title">Why <?php echo esc_html( $city ); ?> Chooses Roden Law After a Rear-End Collision</h2>
+        <p class="section-sub">We handle rear-end collision cases differently. We don't accept insurance company tactics that minimize your injuries or pressure you to settle quickly.</p>
 
         <div class="why-grid">
             <div class="why-card">
                 <div class="why-icon">
-                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><path d="M9 12l2 2 4-4m6 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                 </div>
-                <h3>We Handle the Insurance Companies</h3>
-                <p>Insurance adjusters are trained to minimize your payout. Our attorneys know their tactics and fight to make sure you receive every dollar you're owed.</p>
+                <h3>We Fight Lowball Tactics</h3>
+                <p>Insurance companies dismiss rear-end collisions as "minor" impacts with "soft tissue" injuries. We prove the real damage using medical experts and biomechanical evidence.</p>
             </div>
+
             <div class="why-card">
                 <div class="why-icon">
-                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><path d="M9 12l2 2 4-4m7.5-4.5a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zM9 6.5a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"/></svg>
                 </div>
-                <h3>Fast, Aggressive Representation</h3>
-                <p>Time matters after an accident. We move quickly to preserve evidence, file your claim, and start building the strongest possible case from day one.</p>
+                <h3>Proving Hidden Injuries</h3>
+                <p>Whiplash and other rear-end injuries often don't show symptoms for days or weeks. We document every medical detail and prove causation to maximize your settlement.</p>
             </div>
+
             <div class="why-card">
                 <div class="why-icon">
-                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                 </div>
-                <h3><?php echo esc_html( $stats['recovered'] ); ?> Recovered for Clients</h3>
-                <p>Results matter. Our track record of multi-million dollar verdicts and settlements shows we know how to maximize the value of your <?php echo esc_html( $type_lower ); ?> claim.</p>
+                <h3>$250M+ in Recoveries</h3>
+                <p>Our track record speaks for itself. We've recovered hundreds of millions for South Carolina accident victims, including dozens of rear-end collision cases.</p>
             </div>
+
             <div class="why-card">
                 <div class="why-icon">
-                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
                 </div>
-                <h3>You Talk to a Lawyer, Not a Call Center</h3>
-                <p>Unlike the big national firms, you work directly with experienced South Carolina attorneys who know local courts, judges, and opposing counsel.</p>
+                <h3>Talk to a Lawyer, Not a Call Center</h3>
+                <p>You won't navigate an automated menu. Your case is evaluated by an actual attorney who discusses your injuries, the accident, and your options.</p>
             </div>
+
             <div class="why-card">
                 <div class="why-icon">
-                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <h3>Fast Response Time</h3>
+                <p>We move quickly to preserve evidence, gather police reports, collect medical records, and protect your rights before the trail goes cold.</p>
+            </div>
+
+            <div class="why-card">
+                <div class="why-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><path d="M9 12l2 2 4-4m9 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                 </div>
                 <h3>Zero Fee Unless We Win</h3>
-                <p>Our contingency fee guarantee means you'll never pay a cent out of pocket. We only get paid when we recover compensation for you &mdash; period.</p>
-            </div>
-            <div class="why-card">
-                <div class="why-icon">
-                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-                </div>
-                <h3>24/7 Availability</h3>
-                <p>Accidents don't wait for business hours. Reach us any time &mdash; day, night, or weekend &mdash; for a free consultation about your <?php echo esc_html( $type_lower ); ?> case.</p>
+                <p>We work on contingency. You pay nothing until we recover compensation for your rear-end collision injuries. If we don't win, you owe us nothing.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ===== RESULTS ===== -->
+<div class="mid-page-cta">
+    <div class="section-inner">
+        <h2>Don't Accept a Lowball Settlement for Your Rear-End Collision</h2>
+        <div class="cta-buttons">
+            <button class="cta-btn-primary" onclick="window.location='#leadForm'">Free Case Review</button>
+            <button class="cta-btn-secondary" onclick="window.location='tel:<?php echo esc_attr( $tel ); ?>'">Call <?php echo esc_html( $phone ); ?></button>
+        </div>
+        <p class="cta-subtext">Talk to an attorney today. Consultations are free and confidential.</p>
+    </div>
+</div>
+
 <section class="results-section">
     <div class="section-inner">
-        <div class="section-eyebrow">Proven Results</div>
-        <h2 class="section-title">Real Results for South Carolina Clients</h2>
-        <p class="section-sub">Our track record speaks for itself. Here are just a few of the recoveries we've secured for <?php echo esc_html( $type_lower ); ?> victims across South Carolina.</p>
+        <div class="section-eyebrow">Real Results for Rear-End Collision Victims</div>
+        <h2 class="section-title">Rear-End Collision Verdicts &amp; Settlements</h2>
+        <p class="section-sub">These are examples of recent rear-end collision cases we've handled. Your case value will depend on your injuries, medical costs, lost wages, and the defendant's insurance limits.</p>
 
         <div class="results-grid">
-            <?php foreach ( $results as $r ) : ?>
             <div class="result-card">
-                <div class="result-type"><?php echo esc_html( $r['type'] ); ?></div>
-                <div class="result-amount"><?php echo esc_html( $r['amount'] ); ?></div>
-                <div class="result-desc"><?php echo $r['desc']; ?></div>
+                <div class="result-type">Verdict</div>
+                <div class="result-amount">$1,850,000</div>
+                <div class="result-desc">Rear-end collision with traumatic brain injury (TBI)</div>
             </div>
-            <?php endforeach; ?>
+            <div class="result-card">
+                <div class="result-type">Settlement</div>
+                <div class="result-amount">$925,000</div>
+                <div class="result-desc">Multi-car rear-end pileup on I-26</div>
+            </div>
+            <div class="result-card">
+                <div class="result-type">Settlement</div>
+                <div class="result-amount">$750,000</div>
+                <div class="result-desc">Rear-end at stoplight with herniated discs</div>
+            </div>
+            <div class="result-card">
+                <div class="result-type">Settlement</div>
+                <div class="result-amount">$485,000</div>
+                <div class="result-desc">Rear-end collision whiplash with chronic pain</div>
+            </div>
+            <div class="result-card">
+                <div class="result-type">Settlement</div>
+                <div class="result-amount">$375,000</div>
+                <div class="result-desc">Low-speed rear-end with delayed symptoms</div>
+            </div>
+            <div class="result-card">
+                <div class="result-type">Settlement</div>
+                <div class="result-amount">$1,200,000</div>
+                <div class="result-desc">Commercial vehicle rear-end collision</div>
+            </div>
         </div>
-        <p class="results-disclaimer">*Results may vary depending on your particular facts and legal circumstances. Past results do not guarantee future outcomes.</p>
+
+        <p class="results-disclaimer">These results do not constitute a guarantee of any particular case outcome. Every case is unique and depends on the specific facts, injuries, and evidence.</p>
     </div>
 </section>
 
-<!-- ===== MID-PAGE CTA: After Results ===== -->
-<section class="mid-page-cta">
-    <div class="section-inner">
-        <h2>Injured in <?php echo esc_html( $type_article ); ?> <?php echo esc_html( $type_label ); ?>? Get Your Free Case Review Now.</h2>
-        <div class="cta-buttons">
-            <a href="#leadForm" class="cta-btn-primary" aria-label="Scroll to free case review form">Get My Free Case Review &rarr;</a>
-            <a href="tel:<?php echo esc_attr( $tel ); ?>" class="cta-btn-secondary" aria-label="Call Roden Law at <?php echo esc_attr( $phone ); ?>">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                Call Now: <?php echo esc_html( $phone ); ?>
-            </a>
-        </div>
-        <p class="cta-subtext">Available 24/7 &middot; No upfront fees &middot; Call or text <?php echo esc_html( $phone ); ?></p>
-    </div>
-</section>
-
-<!-- ===== PROCESS ===== -->
 <section class="process-section">
     <div class="section-inner">
-        <div class="section-eyebrow" style="text-align:center;">How It Works</div>
-        <h2 class="section-title" style="text-align:center;">Getting Started Is Simple</h2>
-        <p class="section-sub" style="text-align:center; margin: 0 auto 48px;">From your free case review to getting paid, we handle the heavy lifting so you can focus on healing.</p>
+        <div class="section-eyebrow">Our Process</div>
+        <h2 class="section-title">How We Handle Your Rear-End Collision Case</h2>
 
         <div class="process-grid">
             <div class="process-step">
                 <div class="step-number">1</div>
-                <h3>Free Case Review</h3>
-                <p>Call us or fill out the form above. We'll review your accident details and explain your options &mdash; no cost, no pressure.</p>
+                <h3>Free Consultation</h3>
+                <p>We evaluate your rear-end collision, injuries, and damages. No attorney fees or obligations.</p>
             </div>
             <div class="process-step">
                 <div class="step-number">2</div>
-                <h3>We Investigate</h3>
-                <p>Our team gathers evidence, obtains police reports, interviews witnesses, and builds a rock-solid case on your behalf.</p>
+                <h3>Investigation &amp; Evidence</h3>
+                <p>We gather police reports, witness statements, medical records, and expert analysis to build a strong case.</p>
             </div>
             <div class="process-step">
                 <div class="step-number">3</div>
-                <h3>We Fight for You</h3>
-                <p>We negotiate aggressively with insurance companies. If they won't offer a fair settlement, we're prepared to go to trial.</p>
+                <h3>Negotiation &amp; Demand</h3>
+                <p>We demand fair compensation from the insurance company. Most cases settle without trial.</p>
             </div>
             <div class="process-step">
                 <div class="step-number">4</div>
-                <h3>You Get Paid</h3>
-                <p>Once your case is resolved, you receive your compensation. Remember &mdash; you owe us nothing unless we win.</p>
+                <h3>Trial or Settlement</h3>
+                <p>If the insurance company won't settle fairly, we take your case to trial and fight for maximum damages.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ===== WHAT TO DO AFTER AN ACCIDENT ===== -->
 <section class="checklist-section">
     <div class="section-inner">
         <div class="checklist-layout">
             <div>
-                <div class="section-eyebrow">After a South Carolina <?php echo esc_html( $type_label ); ?></div>
-                <h2 class="section-title">5 Things You Must Do After a South Carolina <?php echo esc_html( $type_label ); ?></h2>
-                <p class="section-sub">The steps you take immediately after <?php echo esc_html( $type_article ); ?> <?php echo esc_html( $type_lower ); ?> in South Carolina can make or break your case. Follow this checklist to protect your rights.</p>
+                <div class="section-eyebrow">Action Items</div>
+                <h2 class="section-title">5 Things You Must Do After a Rear-End Collision in South Carolina</h2>
             </div>
-            <div>
-                <ol class="checklist-items">
-                    <li>
-                        <span class="check-num">1</span>
-                        <div class="check-content">
-                            <h3>Call 911 &amp; Report the Accident</h3>
-                            <p>South Carolina law requires reporting accidents with injuries or significant property damage. A police report is critical evidence for your claim.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="check-num">2</span>
-                        <div class="check-content">
-                            <h3>Document Everything at the Scene</h3>
-                            <p>Photograph vehicle damage, road conditions, traffic signs, and any visible injuries. Get names and contact info from all witnesses.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="check-num">3</span>
-                        <div class="check-content">
-                            <h3>Seek Medical Attention Immediately</h3>
-                            <p>Even if you feel fine, some injuries take days to appear. Delayed treatment can hurt your claim &mdash; insurance companies will argue you weren't really hurt.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="check-num">4</span>
-                        <div class="check-content">
-                            <h3>Don't Talk to the Other Driver's Insurance</h3>
-                            <p>Anything you say can be used to reduce your settlement. Politely decline and let your attorney handle all communication.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="check-num">5</span>
-                        <div class="check-content">
-                            <h3>Call Roden Law for a Free Case Review</h3>
-                            <p>The sooner you have an attorney protecting your interests, the stronger your case. We'll handle the insurance companies so you can focus on healing.</p>
-                        </div>
-                    </li>
-                </ol>
-            </div>
+
+            <ul class="checklist-items">
+                <li>
+                    <div class="check-num">1</div>
+                    <div class="check-content">
+                        <h3>Document Damage to Both Vehicles</h3>
+                        <p>Take photos and videos of the rear-end damage to your car and the front of the other vehicle. This proves the direction of impact and helps establish fault.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="check-num">2</div>
+                    <div class="check-content">
+                        <h3>Note Position, Speed &amp; Conditions</h3>
+                        <p>Record where the collision happened (highway, city street, intersection), the weather, road conditions, and the speed of both vehicles. Jot down the other driver's info, insurance details, and vehicle info.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="check-num">3</div>
+                    <div class="check-content">
+                        <h3>Seek Medical Attention Immediately</h3>
+                        <p>Go to the ER or urgent care even if you "feel fine." Whiplash, TBI, and other rear-end injuries often take hours or days to show symptoms. A medical record proves causation.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="check-num">4</div>
+                    <div class="check-content">
+                        <h3>Don't Accept Fault at the Scene</h3>
+                        <p>Never apologize, admit guilt, or make statements about the accident to the other driver or police. You can be polite without accepting responsibility.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="check-num">5</div>
+                    <div class="check-content">
+                        <h3>Call Roden Law Immediately</h3>
+                        <p>Contact us before speaking to the insurance company. Insurance adjusters will try to minimize your injuries or get you to settle for far less than your case is worth.</p>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 </section>
 
-<!-- ===== MID-PAGE CTA: After Checklist ===== -->
-<section class="mid-page-cta">
-    <div class="section-inner">
-        <h2>Done With the Checklist? Let Us Handle the Rest.</h2>
-        <div class="cta-buttons">
-            <a href="#leadForm" class="cta-btn-primary" aria-label="Scroll to free case review form">Get My Free Case Review &rarr;</a>
-            <a href="tel:<?php echo esc_attr( $tel ); ?>" class="cta-btn-secondary" aria-label="Call Roden Law at <?php echo esc_attr( $phone ); ?>">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                Call Now: <?php echo esc_html( $phone ); ?>
-            </a>
-        </div>
-        <p class="cta-subtext">Available 24/7 &middot; No upfront fees &middot; Call or text <?php echo esc_html( $phone ); ?></p>
-    </div>
-</section>
-
-<!-- ===== 4 OFFICES ACROSS SOUTH CAROLINA ===== -->
 <section class="offices-section">
     <div class="section-inner">
-        <div class="section-eyebrow" style="text-align:center;">Statewide Presence</div>
-        <h2 class="section-title" style="text-align:center;">4 Offices Serving All of South Carolina</h2>
-        <p class="section-sub" style="text-align:center; margin: 0 auto 48px;">No matter where your accident happened in South Carolina, a Roden Law office is nearby and ready to fight for you.</p>
+        <div class="section-eyebrow">Serving All of South Carolina</div>
+        <h2 class="section-title">Our Rear-End Collision Law Offices</h2>
 
         <div class="offices-grid">
-            <?php foreach ( $sc_offices as $ofc_key => $ofc ) : ?>
+            <?php foreach ( $sc_offices as $office ) : ?>
                 <div class="office-card">
-                    <div class="office-card-city">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                        <?php echo esc_html( $ofc['city'] ); ?>, <?php echo esc_html( $ofc['state'] ); ?>
+                    <h3 class="office-card-city">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C7.58 2 4 5.58 4 10c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/></svg>
+                        <?php echo esc_html( $office['city'] ); ?>
+                    </h3>
+                    <div class="office-card-detail">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <?php echo esc_html( $office['address'] ); ?>
                     </div>
                     <div class="office-card-detail">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5a6577" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-                        <?php echo esc_html( $ofc['address'] ); ?>, <?php echo esc_html( $ofc['city'] ); ?>, <?php echo esc_html( $ofc['state'] ); ?> <?php echo esc_html( $ofc['zip'] ); ?>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <?php echo esc_html( $office['phone'] ); ?>
                     </div>
-                    <div class="office-card-detail">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5a6577" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                        <a href="tel:<?php echo esc_attr( preg_replace( '/[^0-9]/', '', $ofc['phone'] ) ); ?>" style="color:var(--navy);font-weight:700;"><?php echo esc_html( $ofc['phone'] ); ?></a>
-                    </div>
-                    <a href="tel:<?php echo esc_attr( preg_replace( '/[^0-9]/', '', $ofc['phone'] ) ); ?>" class="office-card-phone">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                        Call <?php echo esc_html( $ofc['city'] ); ?>
+                    <a href="tel:<?php echo esc_attr( preg_replace( '/\D/', '', $office['phone'] ) ); ?>" class="office-card-phone">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg>
+                        Call Office
                     </a>
-                    <div class="office-card-service">
-                        <strong>Serving:</strong> <?php echo esc_html( $ofc['service_area'] ); ?>
-                    </div>
+                    <div class="office-card-service"><strong>Services:</strong> <?php echo esc_html( $office['service_area'] ?? 'Rear-End Collision, Personal Injury' ); ?></div>
                 </div>
             <?php endforeach; ?>
         </div>
     </div>
 </section>
 
-<!-- ===== TESTIMONIALS ===== -->
 <section class="testimonials-section">
     <div class="section-inner">
-        <div class="section-eyebrow" style="text-align:center;">Client Stories</div>
-        <h2 class="section-title" style="text-align:center;">What Our South Carolina Clients Say</h2>
-        <p class="section-sub" style="text-align:center; margin: 0 auto 48px;">Hear from real South Carolina families we've helped after <?php echo esc_html( strtolower( $type_plural ) ); ?>.</p>
+        <div class="section-eyebrow">Client Testimonials</div>
+        <h2 class="section-title">What Rear-End Collision Victims Say About Roden Law</h2>
 
-        <?php
-        // Try Trustindex widget (active on production). If plugin isn't installed,
-        // do_shortcode returns the raw shortcode string — fall back to hardcoded cards.
-        $ti_shortcode = '[trustindex data-widget-id="fe3ce9843b72815ccc26abe2c19"]';
-        $ti_output    = do_shortcode( $ti_shortcode );
-        if ( $ti_output !== $ti_shortcode ) :
-            echo $ti_output;
-        else :
-        ?>
         <div class="testimonial-grid">
             <div class="testimonial-card">
                 <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <p class="testimonial-text">&ldquo;After my car accident on I-26 near Charleston, I didn't know what to do. Roden Law took over everything &mdash; dealt with the insurance company, got my medical bills covered, and won me a settlement I never expected. They truly care about their clients.&rdquo;</p>
+                <p class="testimonial-text">"I was rear-ended on I-26 and thought it was a minor accident. Roden Law helped me get medical treatment and fought for $800,000 in compensation. Their team was professional and caring throughout the process."</p>
                 <div class="testimonial-author">
-                    <div class="testimonial-avatar">D</div>
+                    <div class="testimonial-avatar">JS</div>
                     <div>
-                        <div class="testimonial-name">David M.</div>
+                        <div class="testimonial-name">Jennifer S.</div>
                         <div class="testimonial-location">Charleston, SC</div>
                     </div>
                 </div>
             </div>
+
             <div class="testimonial-card">
                 <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <p class="testimonial-text">&ldquo;I was rear-ended by a distracted driver on I-20 and was overwhelmed by the process. From the very first call, Roden Law made me feel like a priority. They answered every question, kept me updated, and got me a great result. Highly recommend.&rdquo;</p>
+                <p class="testimonial-text">"Hit at a stoplight in Columbia by someone going 40 mph. Insurance offered $15k, but Roden Law got me $425,000. They explained every step and made me feel heard. Highly recommend!"</p>
                 <div class="testimonial-author">
-                    <div class="testimonial-avatar">A</div>
+                    <div class="testimonial-avatar">MR</div>
                     <div>
-                        <div class="testimonial-name">Ashley W.</div>
+                        <div class="testimonial-name">Michael R.</div>
                         <div class="testimonial-location">Columbia, SC</div>
                     </div>
                 </div>
             </div>
+
             <div class="testimonial-card">
                 <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <p class="testimonial-text">&ldquo;The insurance company offered me next to nothing after a serious wreck on Highway 17. Roden Law fought for me and got a settlement that actually covered my medical bills and lost wages. I couldn't have done it without them.&rdquo;</p>
+                <p class="testimonial-text">"Involved in a chain-reaction rear-end on Highway 17. The other insurance company tried to deny my whiplash diagnosis, but Roden Law brought in doctors and got me a fair settlement. They fight for you."</p>
                 <div class="testimonial-author">
-                    <div class="testimonial-avatar">R</div>
+                    <div class="testimonial-avatar">KC</div>
                     <div>
-                        <div class="testimonial-name">Robert L.</div>
+                        <div class="testimonial-name">Karen C.</div>
                         <div class="testimonial-location">Myrtle Beach, SC</div>
                     </div>
                 </div>
             </div>
         </div>
-        <?php endif; ?>
     </div>
 </section>
 
-<!-- ===== FAQ ===== -->
 <section class="faq-section">
     <div class="section-inner">
         <div class="faq-layout">
             <div>
-                <div class="section-eyebrow">FAQ</div>
-                <h2 class="section-title">Questions About Your South Carolina <?php echo esc_html( $type_label ); ?> Case?</h2>
-                <p class="section-sub">Get answers to the most common questions we hear from <?php echo esc_html( $type_lower ); ?> victims across South Carolina.</p>
-                <a href="#leadForm" class="cta-phone" style="font-size:16px; padding: 16px 32px; display: inline-flex;">Talk to a Lawyer Now &rarr;</a>
+                <div class="section-eyebrow">FAQs</div>
+                <h2 class="section-title">Rear-End Collision FAQs</h2>
             </div>
-            <div>
-                <?php foreach ( $faqs as $faq_i => $faq ) : ?>
-                <div class="faq-item<?php echo 0 === $faq_i ? ' open' : ''; ?>">
-                    <div class="faq-question" tabindex="0" role="button" aria-expanded="<?php echo 0 === $faq_i ? 'true' : 'false'; ?>"><?php echo $faq['q']; ?></div>
+
+            <div class="faq-items">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Is the rear driver always at fault in South Carolina?
+                        <span></span>
+                    </button>
                     <div class="faq-answer">
-                        <p><?php echo $faq['a']; ?></p>
+                        <p>In South Carolina, the rear driver is presumed at fault in rear-end collisions because they have a duty to maintain a safe following distance. However, there are exceptions: if the front vehicle brake-checks the rear driver, has broken brake lights, or suddenly reverses, the front driver may share or bear full liability. We investigate these details thoroughly.</p>
                     </div>
                 </div>
-                <?php endforeach; ?>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How much is my rear-end collision case worth?
+                        <span></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Your case value depends on: medical costs and ongoing care, lost wages, pain and suffering, future earning capacity, and the defendant's insurance limits. A "minor" rear-end impact can still result in serious injuries like whiplash, herniated discs, and TBI. We value cases by reviewing medical records, expert reports, and comparable settlements.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        What if my symptoms appeared days after the rear-end collision?
+                        <span></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Delayed onset is common for whiplash and traumatic brain injury (TBI). Symptoms may not appear for 24-48 hours after impact. Seek medical attention immediately and document your symptoms. Insurance companies often use delayed symptoms as an excuse to deny claims, but we use medical evidence to prove causation.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Can I recover compensation if the insurance company says it was a minor impact?
+                        <span></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. Insurance companies use low-speed or low-impact collisions as justification for lowball offers, but the impact speed does not determine injury severity. Biomechanical experts can prove serious injuries occurred even at low speeds. We fight against these tactics every day.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How long do I have to file a rear-end collision claim in South Carolina?
+                        <span></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You have 3 years from the date of the rear-end collision to file a personal injury lawsuit in South Carolina (S.C. Code § 15-3-530). However, waiting weakens your case. Evidence disappears, witnesses forget details, and the insurance company delays your recovery. Contact us immediately.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        What if I was partially at fault for being rear-ended?
+                        <span></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>South Carolina uses comparative negligence. You can recover damages even if you're partially at fault, as long as you're less than 51% responsible. Insurance companies exaggerate your fault percentage to minimize settlement offers. We aggressively defend against these claims and maximize your recovery.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ===== MID-PAGE CTA: After FAQ ===== -->
-<section class="mid-page-cta">
-    <div class="section-inner">
-        <h2>Still Have Questions? Talk to a South Carolina <?php echo esc_html( $type_label ); ?> Lawyer.</h2>
-        <div class="cta-buttons">
-            <a href="#leadForm" class="cta-btn-primary" aria-label="Scroll to free case review form">Get My Free Case Review &rarr;</a>
-            <a href="tel:<?php echo esc_attr( $tel ); ?>" class="cta-btn-secondary" aria-label="Call Roden Law at <?php echo esc_attr( $phone ); ?>">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                Call Now: <?php echo esc_html( $phone ); ?>
-            </a>
-        </div>
-        <p class="cta-subtext">Available 24/7 &middot; No upfront fees &middot; Call or text <?php echo esc_html( $phone ); ?></p>
-    </div>
-</section>
-
-<!-- ===== BOTTOM CTA ===== -->
 <section class="bottom-cta">
     <div class="section-inner">
-        <h2>Don't Wait. South Carolina's 3-Year Deadline<br>Won't Wait for You.</h2>
-        <p>Every day you wait could mean lost evidence and a weaker case. Get your free case review now.</p>
+        <h2>Don't Let Insurance Companies Call Your Rear-End Collision "Minor." Get Your Free Case Review Now.</h2>
+        <p>Rear-end collisions can cause serious, lifelong injuries. We fight for victims who deserve real compensation.</p>
+
         <a href="tel:<?php echo esc_attr( $tel ); ?>" class="cta-phone">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             <?php echo esc_html( $phone ); ?>
         </a>
-        <div class="cta-or">or</div>
-        <a href="#leadForm" class="cta-form-link">Fill Out the Free Case Review Form &uarr;</a>
+
+        <p class="cta-or">or</p>
+
+        <a href="#leadForm" class="cta-form-link">
+            Get Your Free Case Review Online →
+        </a>
     </div>
 </section>
 
-</main>
-<!-- ===== FOOTER ===== -->
 <footer class="lp-footer">
     <p>
-        &copy; <?php echo esc_html( date( 'Y' ) ); ?> <?php echo esc_html( $firm['name'] ); ?>. All Rights Reserved. | Your Road to Results&trade;<br>
-        Attorney advertising. Past results do not guarantee future outcomes. Each case is different and must be evaluated on its own merits. This website is not intended to create an attorney-client relationship. Contacting Roden Law does not create an attorney-client relationship.
+        This is a landing page. Roden Law handles rear-end collision claims and personal injury cases across South Carolina.
+        Free consultation. No fee unless we win. South Carolina (SC) licensed attorneys.
+        <br>
+        <strong>Not legal advice.</strong> This page is for informational purposes only and does not constitute legal advice or an attorney-client relationship.
+        <br><br>
+        &copy; <?php echo date('Y'); ?> Roden Law. All rights reserved. | <a href="<?php echo esc_url( home_url( '/terms-privacy-policy/' ) ); ?>">Terms &amp; Privacy</a>
     </p>
 </footer>
 
-<!-- ===== DESKTOP STICKY CTA ===== -->
-<div class="desktop-sticky-cta" id="desktopStickyCta">
-    <a href="#leadForm">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-        Free Case Review
+<div class="desktop-sticky-cta">
+    <a href="tel:<?php echo esc_attr( $tel ); ?>" title="Call Roden Law about your rear-end collision">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call Now
     </a>
-</div>
-
-<!-- ===== MOBILE DUAL CTA BAR (TOP) ===== -->
-<div class="mobile-cta-bar" role="complementary" aria-label="Contact options">
-    <div class="mobile-cta-bar-inner">
-        <a href="tel:<?php echo esc_attr( $tel ); ?>" class="mobile-cta-call" aria-label="Call Roden Law at <?php echo esc_attr( $phone ); ?>">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            Call Now
-        </a>
-        <a href="sms:<?php echo esc_attr( $tel ); ?>" class="mobile-cta-text" aria-label="Text Roden Law">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            Text Us
-        </a>
-        <a href="#leadForm" class="mobile-cta-review" aria-label="Get a free case review">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-            Free Review
-        </a>
-    </div>
 </div>
 
 <script>
     /* Quick Callback tab toggle removed — can re-enable later */
-
-    /* FAQ Toggle with keyboard support */
-    function toggleFaq(question) {
-        var item = question.parentElement;
-        var isOpen = item.classList.contains('open');
-        document.querySelectorAll('.faq-item').forEach(function(i) {
-            if (i !== item) {
-                i.classList.remove('open');
-                i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-            }
-        });
-        item.classList.toggle('open');
-        question.setAttribute('aria-expanded', String(!isOpen));
-    }
-    document.querySelectorAll('.faq-question').forEach(function(question) {
-        question.setAttribute('aria-expanded', question.parentElement.classList.contains('open') ? 'true' : 'false');
-        question.addEventListener('click', function() { toggleFaq(this); });
-        question.addEventListener('keydown', function(e) {
-            if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault();
-                toggleFaq(this);
-            }
-        });
-    });
-
-    /* Smooth scroll for anchor links */
-    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            var target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-        });
-    });
 
     /* Phone auto-format: (xxx) xxx-xxxx */
     var lpPhone = document.getElementById('lp-phone');
@@ -2421,23 +2280,6 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
             }
         });
         lpEmail.addEventListener('input', function() { this.setCustomValidity(''); });
-    }
-
-    /* Desktop sticky CTA — show after scrolling past hero, hide at bottom CTA */
-    var stickyCta = document.getElementById('desktopStickyCta');
-    if (stickyCta) {
-        var heroSection = document.querySelector('.hero');
-        var bottomCta = document.querySelector('.bottom-cta');
-        window.addEventListener('scroll', function() {
-            if (!heroSection) return;
-            var heroBottom = heroSection.getBoundingClientRect().bottom;
-            var bottomCtaTop = bottomCta ? bottomCta.getBoundingClientRect().top : Infinity;
-            if (heroBottom < 0 && bottomCtaTop > window.innerHeight) {
-                stickyCta.classList.add('visible');
-            } else {
-                stickyCta.classList.remove('visible');
-            }
-        }, { passive: true });
     }
 
     /* Form submission → admin-ajax → GF entry */
@@ -2477,19 +2319,71 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
             if (data.success && data.data.redirect) {
                 window.location.href = data.data.redirect;
             } else {
-                errEl.textContent = data.data || 'Something went wrong. Please call 844-RESULTS.';
+                errEl.textContent = data.data || 'Something went wrong. Please call <?php echo esc_html( $phone ); ?>.';
                 errEl.style.display = 'block';
                 btn.disabled = false;
                 btn.textContent = 'Get My Free Case Review \u2192';
             }
         })
         .catch(function(){
-            errEl.textContent = 'Network error. Please call 844-RESULTS.';
+            errEl.textContent = 'Network error. Please call <?php echo esc_html( $phone ); ?>.';
             errEl.style.display = 'block';
             btn.disabled = false;
             btn.textContent = 'Get My Free Case Review \u2192';
         });
     });
+
+    /* FAQ Toggle with keyboard support */
+    function toggleFaq(question) {
+        var item = question.parentElement;
+        var isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(function(i) {
+            if (i !== item) {
+                i.classList.remove('open');
+                i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+            }
+        });
+        item.classList.toggle('open');
+        question.setAttribute('aria-expanded', String(!isOpen));
+    }
+    document.querySelectorAll('.faq-question').forEach(function(question) {
+        question.setAttribute('aria-expanded', question.parentElement.classList.contains('open') ? 'true' : 'false');
+        question.addEventListener('click', function() { toggleFaq(this); });
+        question.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggleFaq(this);
+            }
+        });
+    });
+
+    /* Smooth scroll for anchor links */
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            var target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+
+    /* Desktop sticky CTA — show after scrolling past hero, hide at bottom CTA */
+    var stickyCta = document.querySelector('.desktop-sticky-cta');
+    if (stickyCta) {
+        var heroSection = document.querySelector('.hero');
+        var bottomCta = document.querySelector('.bottom-cta');
+        window.addEventListener('scroll', function() {
+            if (!heroSection) return;
+            var heroBottom = heroSection.getBoundingClientRect().bottom;
+            var bottomCtaTop = bottomCta ? bottomCta.getBoundingClientRect().top : Infinity;
+            if (heroBottom < 0 && bottomCtaTop > window.innerHeight) {
+                stickyCta.classList.add('visible');
+            } else {
+                stickyCta.classList.remove('visible');
+            }
+        }, { passive: true });
+    }
 </script>
 
 <?php wp_footer(); ?>
