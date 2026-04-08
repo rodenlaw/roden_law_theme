@@ -179,6 +179,18 @@ function roden_add_meta_boxes() {
         'normal',
         'high'
     );
+
+    /* ── SEO Meta Description (all public CPTs + posts + pages) ── */
+
+    $seo_screens = array( 'practice_area', 'location', 'attorney', 'case_result', 'resource', 'post', 'page' );
+    add_meta_box(
+        'roden_seo_meta',
+        __( 'SEO Meta Description', 'roden-law' ),
+        'roden_seo_meta_box',
+        $seo_screens,
+        'normal',
+        'low'
+    );
 }
 
 /* ==========================================================================
@@ -906,7 +918,7 @@ function roden_save_meta_fields( $post_id ) {
     }
 
     // Only process CPTs and posts that use our meta boxes.
-    $supported_types = array( 'practice_area', 'location', 'attorney', 'case_result', 'testimonial', 'resource', 'post' );
+    $supported_types = array( 'practice_area', 'location', 'attorney', 'case_result', 'testimonial', 'resource', 'post', 'page' );
     if ( ! in_array( get_post_type( $post_id ), $supported_types, true ) ) {
         return;
     }
@@ -1168,4 +1180,44 @@ function roden_save_meta_fields( $post_id ) {
         update_post_meta( $post_id, '_roden_attorney',
             absint( $_POST['_roden_attorney'] ?? 0 ) );
     }
+
+    /* ── SEO Meta Description ───────────────────────────────────── */
+
+    if ( isset( $_POST['_roden_seo_meta_nonce'] ) &&
+         wp_verify_nonce( $_POST['_roden_seo_meta_nonce'], 'roden_seo_meta_nonce' ) ) {
+        update_post_meta( $post_id, '_roden_meta_description',
+            sanitize_text_field( $_POST['_roden_meta_description'] ?? '' ) );
+    }
+}
+
+/* ==========================================================================
+   SEO META DESCRIPTION META BOX CALLBACK
+   ========================================================================== */
+
+/**
+ * SEO Meta Description meta box — custom override for any post type.
+ */
+function roden_seo_meta_box( $post ) {
+    wp_nonce_field( 'roden_seo_meta_nonce', '_roden_seo_meta_nonce' );
+
+    $desc = get_post_meta( $post->ID, '_roden_meta_description', true );
+    ?>
+    <p>
+        <label for="roden_meta_description"><strong><?php esc_html_e( 'Custom Meta Description', 'roden-law' ); ?></strong></label>
+    </p>
+    <textarea id="roden_meta_description" name="_roden_meta_description"
+              rows="3" style="width:100%;" maxlength="160"
+              placeholder="<?php esc_attr_e( 'Leave blank for auto-generated description (recommended). Max 160 characters.', 'roden-law' ); ?>"
+    ><?php echo esc_textarea( $desc ); ?></textarea>
+    <p class="description">
+        <?php
+        $len = mb_strlen( $desc );
+        printf(
+            /* translators: %d: character count */
+            esc_html__( '%d / 160 characters. Leave blank to auto-generate from content.', 'roden-law' ),
+            $len
+        );
+        ?>
+    </p>
+    <?php
 }
