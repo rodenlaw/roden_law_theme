@@ -30,7 +30,7 @@ $firm = roden_firm_data();
                 <?php
                 $pas = get_posts(['post_type'=>'practice_area','posts_per_page'=>8,'orderby'=>'menu_order','order'=>'ASC']);
                 echo '<ul>';
-                foreach ($pas as $pa) echo '<li><a href="'.esc_url(get_permalink($pa)).'">'.esc_html($pa->post_title).'</a></li>';
+                foreach ($pas as $pa) echo '<li><a href="'.esc_url(roden_get_canonical_url($pa)).'">'.esc_html($pa->post_title).'</a></li>';
                 echo '</ul>';
                 ?>
             </div>

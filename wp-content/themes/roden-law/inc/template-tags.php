@@ -456,7 +456,7 @@ function roden_practice_areas_grid( $columns = 4 ) {
     if ( ! empty( $areas ) ) {
         foreach ( $areas as $area ) {
             ?>
-            <a href="<?php echo esc_url( get_permalink( $area ) ); ?>" class="practice-area-card">
+            <a href="<?php echo esc_url( roden_get_canonical_url( $area ) ); ?>" class="practice-area-card">
                 <?php if ( has_post_thumbnail( $area ) ) : ?>
                     <?php echo get_the_post_thumbnail( $area, 'card-thumb', array( 'class' => 'pa-thumb' ) ); ?>
                 <?php endif; ?>
@@ -932,7 +932,7 @@ function roden_related_practice_areas( $count = 6 ) {
         <h3 class="sidebar-title"><?php echo esc_html( $heading ); ?></h3>
         <ul>
             <?php foreach ( $related as $pa ) : ?>
-                <li><a href="<?php echo esc_url( get_permalink( $pa ) ); ?>"><?php echo esc_html( $pa->post_title ); ?></a></li>
+                <li><a href="<?php echo esc_url( roden_get_canonical_url( $pa ) ); ?>"><?php echo esc_html( $pa->post_title ); ?></a></li>
             <?php endforeach; ?>
         </ul>
     </div>

@@ -90,7 +90,7 @@ $firm = roden_firm_data();
             ?>
             <div class="practice-areas-grid cols-3">
                 <?php foreach ( $all_areas as $area ) : ?>
-                    <a href="<?php echo esc_url( get_permalink( $area ) ); ?>" class="card practice-area-card">
+                    <a href="<?php echo esc_url( roden_get_canonical_url( $area ) ); ?>" class="card practice-area-card">
                         <h3><?php echo esc_html( $area->post_title ); ?></h3>
                         <span class="card-arrow" aria-hidden="true">&rarr;</span>
                     </a>
