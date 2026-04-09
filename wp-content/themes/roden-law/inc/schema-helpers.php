@@ -96,6 +96,41 @@ function roden_get_canonical_url( $post_or_id = null ) {
     return get_permalink( $post );
 }
 
+/**
+ * Get a clean description for schema, truncated at sentence boundaries.
+ *
+ * Prefers the custom excerpt, then extracts the first 1-2 sentences from content.
+ * Avoids garbled mid-sentence truncation in JSON-LD description fields.
+ *
+ * @param int|null $post_id Post ID or null for current post.
+ * @return string Clean description string.
+ */
+function roden_schema_description( $post_id = null ) {
+    $post_id = $post_id ?: get_the_ID();
+    $excerpt = get_the_excerpt( $post_id );
+
+    // If the post has a hand-written excerpt, use it as-is.
+    if ( $excerpt && has_excerpt( $post_id ) ) {
+        return html_entity_decode( wp_strip_all_tags( $excerpt ), ENT_QUOTES, 'UTF-8' );
+    }
+
+    // Otherwise, extract the first 2 sentences from the content.
+    $content = wp_strip_all_tags( get_post_field( 'post_content', $post_id ) );
+    $content = html_entity_decode( $content, ENT_QUOTES, 'UTF-8' );
+    $content = preg_replace( '/\s+/', ' ', trim( $content ) );
+
+    // Match up to 2 sentences (ending in . ! or ?).
+    if ( preg_match( '/^(.+?[.!?])\s+(.+?[.!?])\s/', $content, $m ) ) {
+        return trim( $m[1] . ' ' . $m[2] );
+    }
+    if ( preg_match( '/^(.+?[.!?])\s/', $content, $m ) ) {
+        return trim( $m[1] );
+    }
+
+    // Last resort: word-based truncation.
+    return wp_trim_words( $content, 30, '…' );
+}
+
 /* ==========================================================================
    SCHEMA DISPATCHER (wp_head hook)
    ========================================================================== */
@@ -109,9 +144,7 @@ function roden_output_schema() {
         roden_schema_legal_service( $firm );
         roden_schema_local_business_all( $firm );
         roden_schema_speakable_homepage( $firm );
-        roden_schema_aggregate_rating( $firm );
         roden_schema_website( $firm );
-        roden_schema_breadcrumbs(); // Single-item homepage breadcrumb (site hierarchy signal)
     }
 
     if ( roden_is_pa_singular() ) {
@@ -145,6 +178,7 @@ function roden_output_schema() {
 
     if ( is_singular( 'attorney' ) ) {
         roden_schema_person( $firm );
+        roden_schema_speakable_attorney();
     }
 
     if ( is_post_type_archive( 'attorney' ) ) {
@@ -166,6 +200,11 @@ function roden_output_schema() {
     if ( is_singular( 'post' ) ) {
         roden_schema_article( $firm );
         roden_schema_faq_page();
+    }
+
+    // Blog archive — CollectionPage schema
+    if ( is_home() ) {
+        roden_schema_blog_archive( $firm );
     }
 
     // Taxonomy archives — CollectionPage schema
@@ -297,15 +336,18 @@ function roden_schema_legal_service( $firm ) {
         ),
     );
 
-    // Non-homepage pages: link back to the firm-level entity
-    if ( ! is_front_page() ) {
+    // Homepage: nest AggregateRating directly in LegalService (Google prefers this).
+    // Non-homepage pages: link back to the firm-level entity.
+    if ( is_front_page() ) {
+        $schema['aggregateRating'] = roden_schema_aggregate_rating( $firm );
+    } else {
         $schema['isPartOf'] = array( '@id' => $firm_ls_id );
     }
 
     // On singular practice area, customize for that page
     if ( roden_is_pa_singular() ) {
         $schema['name']        = get_the_title() . ' — ' . $firm['name'];
-        $schema['description'] = get_the_excerpt() ?: wp_trim_words( get_the_content(), 30 );
+        $schema['description'] = roden_schema_description();
 
         // Narrow areaServed on intersection pages to the specific location
         if ( function_exists( 'roden_is_intersection_page' ) && roden_is_intersection_page() ) {
@@ -321,16 +363,23 @@ function roden_schema_legal_service( $firm ) {
         }
 
         // Link to the attorney providing this service (E-E-A-T provider signal).
+        // Falls back to Eric Roden (founding partner) when no author is assigned.
         $author_id = get_post_meta( get_the_ID(), '_roden_author_attorney', true );
-        if ( $author_id ) {
-            $atty = get_post( $author_id );
-            if ( $atty && 'publish' === $atty->post_status ) {
-                $schema['provider'] = array(
-                    '@type' => 'Person',
-                    '@id'   => get_permalink( $atty ) . '#person',
-                    'name'  => $atty->post_title,
-                );
-            }
+        $atty      = $author_id ? get_post( $author_id ) : null;
+
+        if ( $atty && 'publish' === $atty->post_status ) {
+            $schema['provider'] = array(
+                '@type' => 'Person',
+                '@id'   => get_permalink( $atty ) . '#person',
+                'name'  => $atty->post_title,
+            );
+        } else {
+            // Fallback: Eric Roden as default provider for E-E-A-T
+            $schema['provider'] = array(
+                '@type' => 'Person',
+                '@id'   => $firm['url'] . '/attorneys/eric-roden/#person',
+                'name'  => 'Eric Roden',
+            );
         }
     }
 
@@ -1037,14 +1086,23 @@ function roden_schema_breadcrumbs() {
         );
     }
 
-    // Allow single-item BreadcrumbList on homepage (signals top of hierarchy);
-    // require at least 2 items on all other pages.
-    $min_items = is_front_page() ? 1 : 2;
-    if ( count( $items ) < $min_items ) {
+    // Require at least 2 items for a meaningful breadcrumb trail.
+    if ( count( $items ) < 2 ) {
         return;
     }
 
-    $breadcrumb_url = is_front_page() ? home_url( '/' ) : roden_get_canonical_url();
+    // Use appropriate URL for the @id — archive pages need special handling
+    // because roden_get_canonical_url() calls get_post() which returns the
+    // first post in the loop on archives, not the archive page itself.
+    if ( is_home() ) {
+        $breadcrumb_url = get_permalink( get_option( 'page_for_posts' ) ) ?: home_url( '/blog/' );
+    } elseif ( is_post_type_archive() ) {
+        $breadcrumb_url = get_post_type_archive_link( get_queried_object()->name ?? get_post_type() );
+    } elseif ( is_tax() || is_category() || is_tag() ) {
+        $breadcrumb_url = get_term_link( get_queried_object() );
+    } else {
+        $breadcrumb_url = roden_get_canonical_url();
+    }
     roden_json_ld( array(
         '@context'        => 'https://schema.org',
         '@type'           => 'BreadcrumbList',
@@ -1101,28 +1159,37 @@ function roden_schema_speakable_location() {
     ) );
 }
 
+function roden_schema_speakable_attorney() {
+    $url = get_permalink();
+    roden_json_ld( array(
+        '@context'  => 'https://schema.org',
+        '@type'     => 'WebPage',
+        '@id'       => $url . '#webpage',
+        'name'      => get_the_title(),
+        'url'       => $url,
+        'speakable' => array(
+            '@type'       => 'SpeakableSpecification',
+            'cssSelector' => array( '.attorney-hero h1', '.attorney-hero .attorney-title' ),
+        ),
+    ) );
+}
+
 /* ==========================================================================
    9. AggregateRating (Homepage)
    ========================================================================== */
 
 function roden_schema_aggregate_rating( $firm ) {
-    // Outputs AggregateRating as a standalone entity that references the
-    // LegalService via itemReviewed, avoiding duplicate @id conflicts.
+    // Returns AggregateRating data array for nesting inside another entity.
+    // Called by roden_schema_legal_service() on the homepage.
     $review_count = $firm['trust_stats']['review_count'] ?? 500;
 
-    roden_json_ld( array(
-        '@context'     => 'https://schema.org',
-        '@type'        => 'AggregateRating',
-        'ratingValue'  => $firm['trust_stats']['rating'],
-        'bestRating'   => '5',
-        'worstRating'  => '1',
-        'reviewCount'  => $review_count,
-        'itemReviewed' => array(
-            '@type' => 'LegalService',
-            '@id'   => $firm['url'] . '/#legalservice',
-            'name'  => $firm['name'],
-        ),
-    ) );
+    return array(
+        '@type'       => 'AggregateRating',
+        'ratingValue' => $firm['trust_stats']['rating'],
+        'bestRating'  => '5',
+        'worstRating' => '1',
+        'reviewCount' => $review_count,
+    );
 }
 
 /* ==========================================================================
@@ -1189,6 +1256,12 @@ function roden_schema_article( $firm ) {
                 'width'  => $img_src[1],
                 'height' => $img_src[2],
             );
+        }
+    } else {
+        // Fallback to firm logo — Google recommends every BlogPosting has an image.
+        $logo_url = roden_get_logo_url();
+        if ( $logo_url ) {
+            $schema['image'] = $logo_url;
         }
     }
 
@@ -1956,6 +2029,48 @@ function roden_schema_testimonial( $firm ) {
             'name'  => $firm['name'],
         ),
     );
+
+    roden_json_ld( $schema );
+}
+
+/* ==========================================================================
+   BLOG ARCHIVE — CollectionPage schema
+   ========================================================================== */
+
+function roden_schema_blog_archive( $firm ) {
+    $blog_url = get_permalink( get_option( 'page_for_posts' ) ) ?: home_url( '/blog/' );
+
+    $schema = array(
+        '@context'    => 'https://schema.org',
+        '@type'       => 'CollectionPage',
+        '@id'         => $blog_url . '#collectionpage',
+        'name'        => 'Blog — ' . $firm['name'],
+        'description' => 'Legal insights, guides, and news from the personal injury attorneys at ' . $firm['name'] . '.',
+        'url'         => $blog_url,
+        'isPartOf'    => array(
+            '@type' => 'WebSite',
+            '@id'   => $firm['url'] . '/#website',
+            'name'  => $firm['name'],
+        ),
+    );
+
+    // List recent posts.
+    $posts = get_posts( array(
+        'post_type'      => 'post',
+        'posts_per_page' => 20,
+        'post_status'    => 'publish',
+    ) );
+
+    if ( $posts ) {
+        $schema['hasPart'] = array();
+        foreach ( $posts as $p ) {
+            $schema['hasPart'][] = array(
+                '@type' => 'BlogPosting',
+                'name'  => $p->post_title,
+                'url'   => get_permalink( $p ),
+            );
+        }
+    }
 
     roden_json_ld( $schema );
 }
