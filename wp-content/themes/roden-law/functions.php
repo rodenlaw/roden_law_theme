@@ -12,6 +12,12 @@
 
 defined( 'ABSPATH' ) || exit;
 
+// Canonical domain for schema @ids — ensures dev/staging sites don't leak
+// non-canonical domains into structured data. Override in wp-config.php if needed.
+if ( ! defined( 'RODEN_CANONICAL_URL' ) ) {
+    define( 'RODEN_CANONICAL_URL', 'https://rodenlaw.com' );
+}
+
 /* ==========================================================================
    1. LOAD INC/ MODULES
    ========================================================================== */

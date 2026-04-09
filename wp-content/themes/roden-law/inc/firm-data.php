@@ -18,12 +18,18 @@ defined( 'ABSPATH' ) || exit;
  * @return array Firm data including offices, attorneys, stats, social, jurisdiction, and practice areas.
  */
 function roden_firm_data() {
+    // Canonical URL — always use the production domain for schema @ids so
+    // dev/staging sites don't leak non-canonical domains into structured data.
+    $canonical_url = ( defined( 'RODEN_CANONICAL_URL' ) && RODEN_CANONICAL_URL )
+        ? rtrim( RODEN_CANONICAL_URL, '/' )
+        : rtrim( home_url(), '/' );
+
     $data = array(
         'name'         => 'Roden Law',
         'legal_entity' => 'Roden Love LLC',
         'vanity_phone' => '844-RESULTS',
         'phone_raw'    => '+18447378587',
-        'url'          => home_url(),
+        'url'          => $canonical_url,
         'description'  => 'Personal injury law firm serving Georgia and South Carolina with over $250 million recovered for injured clients.',
         'licensed_in'  => array( 'Georgia', 'South Carolina' ),
         'founded'      => '2013',
