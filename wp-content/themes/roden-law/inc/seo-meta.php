@@ -178,9 +178,9 @@ function roden_output_meta_description() {
 function roden_seo_get_description() {
     $firm = roden_firm_data();
 
-    // Homepage.
+    // Homepage — keyword-rich description with office locations and CTA.
     if ( is_front_page() ) {
-        return roden_seo_truncate( $firm['description'], 160 );
+        return 'Roden Law is a personal injury law firm with offices in Savannah, Charleston, Columbia, Myrtle Beach, and Darien. $250M+ recovered. Free consultation.';
     }
 
     // Singular pages — check for a custom meta description field first.

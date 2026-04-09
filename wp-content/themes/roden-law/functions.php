@@ -329,6 +329,39 @@ function roden_exclude_toxic_pages_from_sitemap( $args, $post_type ) {
 }
 
 /* ==========================================================================
+   3c-4. SITEMAP URL FIX — Use canonical rewrite URLs for child practice_area posts
+   ========================================================================== */
+
+// WordPress core sitemaps use get_permalink() which returns /practice-areas/parent/child/
+// for hierarchical CPTs. Our canonical URLs are /parent/child/ (via rewrite rules).
+// This filter corrects the sitemap URLs to match the canonical tags.
+add_filter( 'wp_sitemaps_posts_entry', 'roden_fix_sitemap_practice_area_urls', 10, 2 );
+function roden_fix_sitemap_practice_area_urls( $sitemap_entry, $post ) {
+    if ( ! in_array( $post->post_type, array( 'practice_area', 'practice-area' ), true ) ) {
+        return $sitemap_entry;
+    }
+
+    // Only child posts need fixing — pillar URLs are already correct.
+    if ( $post->post_parent ) {
+        $sitemap_entry['loc'] = roden_get_canonical_url( $post );
+    }
+
+    return $sitemap_entry;
+}
+
+/* ==========================================================================
+   3c-5. SITEMAP <lastmod> — Add last-modified dates for crawl prioritization
+   ========================================================================== */
+
+// WordPress core sitemaps omit <lastmod> by default. Adding it helps Google
+// prioritize recrawling recently-updated pages.
+add_filter( 'wp_sitemaps_posts_entry', 'roden_sitemap_add_lastmod', 10, 2 );
+function roden_sitemap_add_lastmod( $sitemap_entry, $post ) {
+    $sitemap_entry['lastmod'] = get_the_modified_date( 'Y-m-d\TH:i:sP', $post );
+    return $sitemap_entry;
+}
+
+/* ==========================================================================
    3c. LEGACY /who-we-are/attorneys/ → /attorneys/ redirect
    ========================================================================== */
 
@@ -524,20 +557,10 @@ function roden_custom_robots_txt( $output, $public ) {
 }
 
 /* ==========================================================================
-   7c. HOMEPAGE META DESCRIPTION
+   7c. HOMEPAGE META DESCRIPTION — handled by inc/seo-meta.php
    ========================================================================== */
-
-add_action( 'wp_head', 'roden_homepage_meta_description', 1 );
-function roden_homepage_meta_description() {
-    if ( ! is_front_page() ) {
-        return;
-    }
-    // Skip if an SEO plugin already outputs a meta description.
-    if ( defined( 'WPSEO_VERSION' ) ) {
-        return;
-    }
-    echo '<meta name="description" content="Roden Law is a personal injury law firm with offices in Charleston, Savannah, Columbia, Myrtle Beach, and Darien. Over $250 million recovered for injured clients. Free consultation. No fees unless we win. Call 844-RESULTS.">' . "\n";
-}
+// Removed: duplicate meta description was being output here AND in seo-meta.php.
+// The seo-meta.php module now handles all meta descriptions sitewide.
 
 /* ==========================================================================
    7d. FORCE en-US LOCALE — Fallback when Polylang is not active
