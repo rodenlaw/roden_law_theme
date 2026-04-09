@@ -15,7 +15,14 @@ $reading_time = roden_reading_time();
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'blog-card' ); ?>>
     <?php if ( has_post_thumbnail() ) : ?>
         <a href="<?php the_permalink(); ?>" class="blog-card-thumb">
-            <?php the_post_thumbnail( 'card-thumb', array( 'loading' => 'lazy' ) ); ?>
+            <?php
+            $thumb_id  = get_post_thumbnail_id();
+            $thumb_alt = get_post_meta( $thumb_id, '_wp_attachment_image_alt', true );
+            the_post_thumbnail( 'card-thumb', array(
+                'loading' => 'lazy',
+                'alt'     => $thumb_alt ? $thumb_alt : get_the_title(),
+            ) );
+            ?>
         </a>
     <?php endif; ?>
 

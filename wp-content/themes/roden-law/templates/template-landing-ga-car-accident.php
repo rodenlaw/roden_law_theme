@@ -1332,7 +1332,7 @@ $in_location  = 'in ' . $city;
                 </div>
                 <label class="form-consent" style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;cursor:pointer;">
                     <input type="checkbox" name="consent" value="1" checked required style="width:18px;height:18px;min-width:18px;margin-top:2px;accent-color:#f5a623;cursor:pointer;">
-                    <span style="font-size:12px;color:#64748b;line-height:1.5;">I hereby expressly consent to receive automated communications including calls, texts, emails, and/or prerecorded messages. By submitting this form, you agree to our <a href="<?php echo esc_url( home_url( '/terms-privacy-policy/' ) ); ?>" target="_blank" style="color:#f5a623;text-decoration:underline;">Terms &amp; Privacy Policy</a>.</span>
+                    <span style="font-size:12px;color:#64748b;line-height:1.5;">I hereby expressly consent to receive automated communications including calls, texts, emails, and/or prerecorded messages. By submitting this form, you agree to our <a href="<?php echo esc_url( home_url( '/terms-privacy-policy/' ) ); ?>" target="_blank" rel="noopener noreferrer" style="color:#f5a623;text-decoration:underline;">Terms &amp; Privacy Policy</a>.</span>
                 </label>
                 <button type="submit" class="form-submit">Get My Free Case Review &rarr;</button>
                 <p style="text-align:center;font-size:12px;color:var(--text-muted);margin-top:8px;margin-bottom:0;">

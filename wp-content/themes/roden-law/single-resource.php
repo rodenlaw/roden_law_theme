@@ -27,7 +27,7 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
                 <div class="post-author">
                     <div class="post-author-photo">
                         <?php if ( has_post_thumbnail( $atty ) ) : ?>
-                            <?php echo get_the_post_thumbnail( $atty, 'thumbnail' ); ?>
+                            <?php echo get_the_post_thumbnail( $atty, 'thumbnail', array( 'alt' => esc_attr( $atty->post_title . ', ' . $atty_title . ' at Roden Law' ) ) ); ?>
                         <?php endif; ?>
                     </div>
                     <div class="post-author-info">

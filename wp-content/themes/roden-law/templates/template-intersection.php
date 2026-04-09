@@ -226,7 +226,7 @@ $related_subtypes = get_posts( array(
                 <div class="author-card">
                     <div class="author-photo">
                         <?php if ( has_post_thumbnail( $atty ) ) : ?>
-                            <?php echo get_the_post_thumbnail( $atty, 'thumbnail' ); ?>
+                            <?php echo get_the_post_thumbnail( $atty, 'thumbnail', array( 'alt' => esc_attr( $atty->post_title . ', ' . $atty_title . ' at Roden Law' ) ) ); ?>
                         <?php else : ?>
                             <div class="author-photo-placeholder"></div>
                         <?php endif; ?>

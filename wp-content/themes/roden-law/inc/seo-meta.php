@@ -14,19 +14,64 @@ defined( 'ABSPATH' ) || exit;
    0. PAGINATED TITLE — append "– Page N" on archive pages 2+
    ========================================================================== */
 
-add_filter( 'document_title_parts', 'roden_seo_paginated_title' );
+add_filter( 'document_title_parts', 'roden_seo_title_optimization' );
 /**
- * Append page number to title on paginated archives.
+ * Optimize title tags for SEO.
+ *
+ * - Practice area pages: append location or jurisdiction context.
+ * - Intersection pages: include city + state for local SEO.
+ * - Paginated archives: append "– Page N".
  *
  * @param array $title_parts Title parts array.
  * @return array
  */
-function roden_seo_paginated_title( $title_parts ) {
+function roden_seo_title_optimization( $title_parts ) {
+    $firm = roden_firm_data();
+
+    // Practice area pages — add jurisdiction/location context.
+    if ( is_singular() && in_array( get_post_type(), array( 'practice_area', 'practice-area' ), true ) ) {
+        $post    = get_post();
+        $post_id = $post->ID;
+
+        if ( $post->post_parent ) {
+            $office_key = get_post_meta( $post_id, '_roden_pa_office_key', true );
+
+            if ( $office_key && isset( $firm['offices'][ $office_key ] ) ) {
+                // Intersection page — append "in City, ST".
+                $office = $firm['offices'][ $office_key ];
+                $title_parts['title'] .= ' in ' . $office['city'] . ', ' . $office['state'];
+            } else {
+                // Sub-type page — append jurisdiction.
+                $jurisdiction = strtolower( get_post_meta( $post_id, '_roden_jurisdiction', true ) ?: 'both' );
+                if ( 'ga' === $jurisdiction ) {
+                    $title_parts['title'] .= ' in Georgia';
+                } elseif ( 'sc' === $jurisdiction ) {
+                    $title_parts['title'] .= ' in South Carolina';
+                } else {
+                    $title_parts['title'] .= ' in Georgia & South Carolina';
+                }
+            }
+        } else {
+            // Pillar page — append "in Georgia & South Carolina".
+            $title_parts['title'] .= ' in Georgia & South Carolina';
+        }
+    }
+
+    // Location pages — append state.
+    if ( is_singular( 'location' ) ) {
+        $office_key = get_post_meta( get_the_ID(), '_roden_office_key', true );
+        if ( $office_key && isset( $firm['offices'][ $office_key ] ) ) {
+            $office = $firm['offices'][ $office_key ];
+            $title_parts['title'] .= ' – ' . $office['state_full'] . ' Personal Injury Lawyers';
+        }
+    }
+
+    // Paginated archives — append page number.
     $paged = get_query_var( 'paged', 0 );
     if ( $paged >= 2 ) {
-        /* translators: %d: page number */
         $title_parts['title'] .= sprintf( ' – Page %d', $paged );
     }
+
     return $title_parts;
 }
 

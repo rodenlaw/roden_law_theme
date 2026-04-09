@@ -670,7 +670,7 @@ function roden_contact_form_sidebar( $local_phone = '' ) {
             <textarea name="message" id="rsf-message" placeholder="Please describe what happened" rows="8"></textarea>
             <label class="rsf-consent">
                 <input type="checkbox" name="consent" value="1" checked required>
-                <span>I hereby expressly consent to receive automated communications including calls, texts, emails, and/or prerecorded messages. By submitting this form, you agree to our <a href="<?php echo esc_url( home_url( '/terms-privacy-policy/' ) ); ?>" target="_blank">Terms &amp; Privacy Policy</a>.</span>
+                <span>I hereby expressly consent to receive automated communications including calls, texts, emails, and/or prerecorded messages. By submitting this form, you agree to our <a href="<?php echo esc_url( home_url( '/terms-privacy-policy/' ) ); ?>" target="_blank" rel="noopener noreferrer">Terms &amp; Privacy Policy</a>.</span>
             </label>
             <button type="submit" class="rsf-submit-btn">See If You Qualify</button>
             <p class="rsf-error" style="display:none;"></p>
