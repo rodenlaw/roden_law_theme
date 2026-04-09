@@ -99,10 +99,10 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
                     $prev = get_previous_post();
                     $next = get_next_post();
                     if ( $prev ) :
-                        echo '<a href="' . esc_url(get_permalink($prev)) . '" class="post-nav-link post-nav-prev"><span class="nav-label">← Previous</span><span class="nav-title">' . esc_html($prev->post_title) . '</span></a>';
+                        echo '<a href="' . esc_url(get_permalink($prev)) . '" class="post-nav-link post-nav-prev" rel="prev"><span class="nav-label">← Previous</span><span class="nav-title">' . esc_html($prev->post_title) . '</span></a>';
                     endif;
                     if ( $next ) :
-                        echo '<a href="' . esc_url(get_permalink($next)) . '" class="post-nav-link post-nav-next"><span class="nav-label">Next →</span><span class="nav-title">' . esc_html($next->post_title) . '</span></a>';
+                        echo '<a href="' . esc_url(get_permalink($next)) . '" class="post-nav-link post-nav-next" rel="next"><span class="nav-label">Next →</span><span class="nav-title">' . esc_html($next->post_title) . '</span></a>';
                     endif;
                     ?>
                 </div>

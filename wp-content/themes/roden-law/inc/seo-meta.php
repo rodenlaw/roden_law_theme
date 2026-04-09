@@ -11,6 +11,26 @@
 defined( 'ABSPATH' ) || exit;
 
 /* ==========================================================================
+   0. PAGINATED TITLE — append "– Page N" on archive pages 2+
+   ========================================================================== */
+
+add_filter( 'document_title_parts', 'roden_seo_paginated_title' );
+/**
+ * Append page number to title on paginated archives.
+ *
+ * @param array $title_parts Title parts array.
+ * @return array
+ */
+function roden_seo_paginated_title( $title_parts ) {
+    $paged = get_query_var( 'paged', 0 );
+    if ( $paged >= 2 ) {
+        /* translators: %d: page number */
+        $title_parts['title'] .= sprintf( ' – Page %d', $paged );
+    }
+    return $title_parts;
+}
+
+/* ==========================================================================
    1. CANONICAL TAG
    ========================================================================== */
 

@@ -49,4 +49,27 @@ $firm = roden_firm_data();
     </div>
 </section>
 
+<?php
+// Output BreadcrumbList schema for 404 page — maintains site structure signal.
+if ( function_exists( 'roden_json_ld' ) ) {
+    roden_json_ld( array(
+        '@context'        => 'https://schema.org',
+        '@type'           => 'BreadcrumbList',
+        'itemListElement' => array(
+            array(
+                '@type'    => 'ListItem',
+                'position' => 1,
+                'name'     => 'Home',
+                'item'     => home_url( '/' ),
+            ),
+            array(
+                '@type'    => 'ListItem',
+                'position' => 2,
+                'name'     => 'Page Not Found',
+            ),
+        ),
+    ) );
+}
+?>
+
 <?php get_footer(); ?>

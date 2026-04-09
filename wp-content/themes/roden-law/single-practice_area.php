@@ -73,6 +73,19 @@ elseif ( $is_subtype ) :
         ],
     ]);
 
+    // Get intersection pages (same parent, with office keys) for location cross-links.
+    $sibling_intersections = get_posts([
+        'post_type'      => $pa_post_type,
+        'post_parent'    => $post->post_parent,
+        'posts_per_page' => 10,
+        'orderby'        => 'title',
+        'order'          => 'ASC',
+        'meta_query'     => [
+            [ 'key' => '_roden_pa_office_key', 'compare' => 'EXISTS' ],
+            [ 'key' => '_roden_pa_office_key', 'value' => '', 'compare' => '!=' ],
+        ],
+    ]);
+
     include get_template_directory() . '/templates/template-subtype.php';
 
 else :

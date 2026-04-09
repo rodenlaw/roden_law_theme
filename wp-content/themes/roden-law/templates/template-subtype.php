@@ -117,6 +117,21 @@
                 </div>
                 <?php endif; ?>
 
+                <!-- Location Pages -->
+                <?php if ( ! empty( $sibling_intersections ) ) : ?>
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">&#128205; See by Location</h3>
+                    <ul class="sidebar-links">
+                        <?php foreach ( $sibling_intersections as $int_page ) :
+                            $int_office = get_post_meta( $int_page->ID, '_roden_pa_office_key', true );
+                            $int_city = isset( $firm['offices'][ $int_office ] ) ? $firm['offices'][ $int_office ]['city'] . ', ' . $firm['offices'][ $int_office ]['state'] : $int_page->post_title;
+                        ?>
+                            <li><a href="<?php echo esc_url( roden_get_canonical_url( $int_page ) ); ?>">&rarr; <?php echo esc_html( $int_city ); ?></a></li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
+                <?php endif; ?>
+
                 <!-- Filing Deadlines -->
                 <div class="sidebar-widget sidebar-deadlines">
                     <h3 class="widget-title">&#9201; Filing Deadlines</h3>
