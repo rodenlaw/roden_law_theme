@@ -111,7 +111,7 @@
                     <h3 class="widget-title">Related Case Types</h3>
                     <ul class="sidebar-links">
                         <?php foreach ( $siblings as $sib ) : ?>
-                            <li><a href="<?php echo esc_url( get_permalink( $sib ) ); ?>">&rarr; <?php echo esc_html( $sib->post_title ); ?></a></li>
+                            <li><a href="<?php echo esc_url( roden_get_canonical_url( $sib ) ); ?>">&rarr; <?php echo esc_html( $sib->post_title ); ?></a></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>

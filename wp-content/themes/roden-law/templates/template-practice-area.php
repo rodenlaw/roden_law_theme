@@ -133,7 +133,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                 // Prefer intersection page; fall back to location page.
                 foreach ( $child_intersections as $ci ) {
                     if ( get_post_meta( $ci->ID, '_roden_pa_office_key', true ) === $key ) {
-                        $matrix_url   = get_permalink( $ci );
+                        $matrix_url   = roden_get_canonical_url( $ci );
                         $matrix_label = 'City Page';
                         break;
                     }
@@ -199,7 +199,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                     <div class="sub-types-grid">
                         <?php if ( $child_subtypes ) : ?>
                             <?php foreach ( $child_subtypes as $cst ) : ?>
-                                <a href="<?php echo esc_url( get_permalink( $cst ) ); ?>" class="sub-type-card sub-type-link">
+                                <a href="<?php echo esc_url( roden_get_canonical_url( $cst ) ); ?>" class="sub-type-card sub-type-link">
                                     <span class="st-name"><?php echo esc_html( $cst->post_title ); ?></span>
                                     <span class="st-arrow">&rarr;</span>
                                 </a>

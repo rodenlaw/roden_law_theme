@@ -132,7 +132,7 @@ $related_subtypes = get_posts( array(
             foreach ( $all_siblings as $sib ) {
                 $sib_key = get_post_meta( $sib->ID, '_roden_pa_office_key', true );
                 if ( $sib_key ) {
-                    $sibling_urls[ $sib_key ] = get_permalink( $sib );
+                    $sibling_urls[ $sib_key ] = roden_get_canonical_url( $sib );
                 }
             }
             ?>
@@ -294,7 +294,7 @@ $related_subtypes = get_posts( array(
                     <ul class="sidebar-links">
                         <?php foreach ( $related_subtypes as $sib ) : ?>
                             <li>
-                                <a href="<?php echo esc_url( get_permalink( $sib ) ); ?>">
+                                <a href="<?php echo esc_url( roden_get_canonical_url( $sib ) ); ?>">
                                     &rarr; <?php echo esc_html( $sib->post_title ); ?>
                                 </a>
                             </li>
