@@ -58,7 +58,7 @@ $attorney    = $attorney_id ? get_post( $attorney_id ) : null;
                     <div class="author-card">
                         <div class="author-photo">
                             <?php if ( has_post_thumbnail( $attorney ) ) : ?>
-                                <?php echo get_the_post_thumbnail( $attorney, 'thumbnail' ); ?>
+                                <?php echo get_the_post_thumbnail( $attorney, 'thumbnail', array( 'alt' => esc_attr( $attorney->post_title . ', ' . $atty_title . ' at Roden Law' ) ) ); ?>
                             <?php endif; ?>
                         </div>
                         <div class="author-info">

@@ -585,13 +585,35 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                 <div class="sidebar-widget">
                     <h3 class="widget-title">Related Practice Areas</h3>
                     <?php
-                    $related_pas = get_posts( array(
-                        'post_type'      => 'practice_area',
-                        'posts_per_page' => 7,
-                        'exclude'        => array( $post_id ),
-                        'post_parent'    => 0,
-                        'orderby'        => 'rand',
-                    ) );
+                    // Pull related PAs from the same practice_category first, then fill randomly.
+                    $pa_terms     = wp_get_object_terms( $post_id, 'practice_category', array( 'fields' => 'ids' ) );
+                    $related_pas  = array();
+                    if ( ! is_wp_error( $pa_terms ) && ! empty( $pa_terms ) ) {
+                        $related_pas = get_posts( array(
+                            'post_type'      => 'practice_area',
+                            'posts_per_page' => 7,
+                            'exclude'        => array( $post_id ),
+                            'post_parent'    => 0,
+                            'orderby'        => 'rand',
+                            'tax_query'      => array( array(
+                                'taxonomy' => 'practice_category',
+                                'field'    => 'term_id',
+                                'terms'    => $pa_terms,
+                            ) ),
+                        ) );
+                    }
+                    // Back-fill if fewer than 7 category-matched results.
+                    if ( count( $related_pas ) < 7 ) {
+                        $exclude_ids = array_merge( array( $post_id ), wp_list_pluck( $related_pas, 'ID' ) );
+                        $fill = get_posts( array(
+                            'post_type'      => 'practice_area',
+                            'posts_per_page' => 7 - count( $related_pas ),
+                            'exclude'        => $exclude_ids,
+                            'post_parent'    => 0,
+                            'orderby'        => 'rand',
+                        ) );
+                        $related_pas = array_merge( $related_pas, $fill );
+                    }
                     if ( $related_pas ) :
                         echo '<ul class="sidebar-links">';
                         foreach ( $related_pas as $r ) {

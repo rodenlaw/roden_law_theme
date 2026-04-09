@@ -59,7 +59,7 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
 
             <?php if ( has_post_thumbnail() ) : ?>
                 <figure class="post-featured-image">
-                    <?php the_post_thumbnail( 'large' ); ?>
+                    <?php the_post_thumbnail( 'large', array( 'alt' => esc_attr( get_the_title() ) ) ); ?>
                 </figure>
             <?php endif; ?>
 

@@ -25,31 +25,23 @@
                         other.setAttribute('aria-expanded', 'false');
                         var otherAnswer = other.closest('.faq-item').querySelector('.faq-answer');
                         var otherToggle = other.querySelector('.faq-toggle');
-                        if (otherAnswer) otherAnswer.style.display = 'none';
+                        if (otherAnswer) otherAnswer.classList.remove('faq-answer-open');
                         if (otherToggle) otherToggle.textContent = '+';
                     }
                 });
             }
 
-            // Toggle current
+            // Toggle current via CSS class (avoids inline style reflow)
             if (isOpen) {
                 btn.setAttribute('aria-expanded', 'false');
-                if (answer) answer.style.display = 'none';
+                if (answer) answer.classList.remove('faq-answer-open');
                 if (toggle) toggle.textContent = '+';
             } else {
                 btn.setAttribute('aria-expanded', 'true');
-                if (answer) answer.style.display = 'block';
+                if (answer) answer.classList.add('faq-answer-open');
                 if (toggle) toggle.textContent = '−';
             }
         });
-    });
-
-    // Initialize FAQ answers as hidden
-    document.querySelectorAll('.faq-answer').forEach(function (answer) {
-        var btn = answer.closest('.faq-item').querySelector('.faq-question');
-        if (btn && btn.getAttribute('aria-expanded') !== 'true') {
-            answer.style.display = 'none';
-        }
     });
 
     /* ── Smooth Scroll for Anchor Links ───────────────────────── */
@@ -142,9 +134,11 @@
             if (!prefersReducedMotion) startAutoAdvance();
         });
 
-        // Handle resize — recalculate position
+        // Handle resize — recalculate position (debounced)
+        var resizeTimer = null;
         window.addEventListener('resize', function () {
-            goToPage(0);
+            if (resizeTimer) clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(function () { goToPage(0); }, 150);
         });
     }
 
@@ -184,88 +178,99 @@
         });
     });
 
-    /* ── Sticky Mobile CTA Bar ────────────────────────────────── */
+    /* ── Sticky Mobile CTA Bar (Intersection Observer) ─────────── */
 
     var mobileCta = document.querySelector('.pa-mobile-cta');
     if (mobileCta) {
-        var ctaVisible = false;
-        window.addEventListener('scroll', function () {
-            var scrollY = window.pageYOffset;
-            // Show after scrolling past the hero (approx 500px)
-            if (scrollY > 500 && !ctaVisible) {
-                mobileCta.style.transform = 'translateY(0)';
-                ctaVisible = true;
-            } else if (scrollY <= 500 && ctaVisible) {
-                mobileCta.style.transform = 'translateY(100%)';
-                ctaVisible = false;
-            }
-        }, { passive: true });
-
-        // Start hidden, slide up
+        // Start hidden
         mobileCta.style.transform = 'translateY(100%)';
         mobileCta.style.transition = 'transform 0.3s ease';
+
+        // Create a sentinel element at the 500px scroll threshold
+        var ctaSentinel = document.createElement('div');
+        ctaSentinel.style.cssText = 'position:absolute;top:500px;height:1px;width:1px;pointer-events:none;';
+        document.body.appendChild(ctaSentinel);
+
+        var ctaObserver = new IntersectionObserver(function (entries) {
+            // When sentinel scrolls out of view (above viewport), show CTA
+            mobileCta.style.transform = entries[0].isIntersecting ? 'translateY(100%)' : 'translateY(0)';
+        });
+        ctaObserver.observe(ctaSentinel);
     }
 
-    /* ── Jump Nav Active Section Tracking ──────────────────────── */
+    /* ── Jump Nav Active Section Tracking (Intersection Observer) ── */
 
     var jumpNav = document.querySelector('.pa-jump-nav');
     if (jumpNav) {
         var jumpLinks = jumpNav.querySelectorAll('a[href^="#"]');
-        var sections = [];
+        var sectionMap = {};
+        var sectionEls = [];
+
         jumpLinks.forEach(function (link) {
             var target = document.querySelector(link.getAttribute('href'));
-            if (target) sections.push({ link: link, el: target });
+            if (target) {
+                sectionMap[target.id] = link;
+                sectionEls.push(target);
+            }
         });
 
-        if (sections.length) {
+        if (sectionEls.length) {
             var siteHeader = document.querySelector('.site-header');
-            var headerOffset = (siteHeader ? siteHeader.offsetHeight : 72) + jumpNav.offsetHeight + 16;
-            window.addEventListener('scroll', function () {
-                var scrollY = window.pageYOffset + headerOffset;
-                var current = null;
-                for (var i = sections.length - 1; i >= 0; i--) {
-                    if (scrollY >= sections[i].el.offsetTop) {
-                        current = sections[i].link;
-                        break;
+            var topOffset = (siteHeader ? siteHeader.offsetHeight : 72) + jumpNav.offsetHeight + 16;
+
+            var sectionObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        jumpLinks.forEach(function (l) { l.classList.remove('active'); });
+                        var active = sectionMap[entry.target.id];
+                        if (active) active.classList.add('active');
                     }
-                }
-                jumpLinks.forEach(function (l) { l.classList.remove('active'); });
-                if (current) current.classList.add('active');
-            }, { passive: true });
+                });
+            }, {
+                rootMargin: '-' + topOffset + 'px 0px -60% 0px',
+                threshold: 0
+            });
+
+            sectionEls.forEach(function (el) { sectionObserver.observe(el); });
         }
     }
 
-    /* ── Back to Top Button ─────────────────────────────────────── */
+    /* ── Back to Top Button (Intersection Observer) ─────────────── */
 
     var backToTop = document.querySelector('.back-to-top');
     if (backToTop) {
-        window.addEventListener('scroll', function () {
-            if (window.pageYOffset > 600) {
-                backToTop.classList.add('visible');
-            } else {
+        var bttSentinel = document.createElement('div');
+        bttSentinel.style.cssText = 'position:absolute;top:600px;height:1px;width:1px;pointer-events:none;';
+        document.body.appendChild(bttSentinel);
+
+        var bttObserver = new IntersectionObserver(function (entries) {
+            if (entries[0].isIntersecting) {
                 backToTop.classList.remove('visible');
+            } else {
+                backToTop.classList.add('visible');
             }
-        }, { passive: true });
+        });
+        bttObserver.observe(bttSentinel);
 
         backToTop.addEventListener('click', function () {
             window.scrollTo({ top: 0, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
         });
     }
 
-    /* ── Sticky Header Shadow on Scroll ───────────────────────── */
+    /* ── Sticky Header Shadow (Intersection Observer) ─────────── */
 
     var header = document.querySelector('.site-header');
     if (header) {
-        var lastScroll = 0;
-        window.addEventListener('scroll', function () {
-            var current = window.pageYOffset;
-            if (current > 10) {
-                header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.12)';
-            } else {
-                header.style.boxShadow = '0 2px 16px rgba(0,0,0,0.08)';
-            }
-            lastScroll = current;
-        }, { passive: true });
+        var shadowSentinel = document.createElement('div');
+        shadowSentinel.style.cssText = 'position:absolute;top:10px;height:1px;width:1px;pointer-events:none;';
+        document.body.appendChild(shadowSentinel);
+
+        var shadowObserver = new IntersectionObserver(function (entries) {
+            header.style.boxShadow = entries[0].isIntersecting
+                ? '0 2px 16px rgba(0,0,0,0.08)'
+                : '0 2px 20px rgba(0,0,0,0.12)';
+        });
+        shadowObserver.observe(shadowSentinel);
     }
 
 })();

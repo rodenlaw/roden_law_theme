@@ -1331,6 +1331,7 @@ function roden_schema_article_subtype( $firm ) {
     $schema = array(
         '@context'      => 'https://schema.org',
         '@type'         => 'Article',
+        '@id'           => $canonical_url . '#article',
         'headline'      => get_the_title( $post_id ),
         'description'   => html_entity_decode( wp_strip_all_tags( $excerpt ?: wp_trim_words( $content, 30 ) ), ENT_QUOTES, 'UTF-8' ),
         'url'           => $canonical_url,

@@ -17,6 +17,7 @@ defined( 'ABSPATH' ) || exit;
 add_action( 'wp_enqueue_scripts', 'roden_enqueue_assets' );
 function roden_enqueue_assets() {
     $theme_version = wp_get_theme()->get( 'Version' );
+    $min           = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 
     // Google Fonts — loaded async via preload pattern (non-render-blocking)
     wp_enqueue_style(
@@ -37,7 +38,7 @@ function roden_enqueue_assets() {
     // Theme component & layout styles
     wp_enqueue_style(
         'roden-theme',
-        get_template_directory_uri() . '/assets/css/theme.css',
+        get_template_directory_uri() . '/assets/css/theme' . $min . '.css',
         array( 'roden-style' ),
         $theme_version
     );
@@ -45,16 +46,16 @@ function roden_enqueue_assets() {
     // Mobile navigation toggle
     wp_enqueue_script(
         'roden-navigation',
-        get_template_directory_uri() . '/js/navigation.js',
+        get_template_directory_uri() . '/js/navigation' . $min . '.js',
         array(),
         $theme_version,
         array( 'strategy' => 'defer', 'in_footer' => true )
     );
 
-    // Theme JS (FAQ accordion, smooth scroll, GA tracking, sticky header)
+    // Theme JS (FAQ accordion, smooth scroll, sticky header)
     wp_enqueue_script(
         'roden-theme',
-        get_template_directory_uri() . '/assets/js/theme.js',
+        get_template_directory_uri() . '/assets/js/theme' . $min . '.js',
         array(),
         $theme_version,
         array( 'strategy' => 'defer', 'in_footer' => true )
@@ -107,6 +108,45 @@ function roden_async_google_fonts( $html, $handle, $href, $media ) {
         $html .= '<noscript><link rel="stylesheet" href="' . esc_url( $href ) . '"></noscript>' . "\n";
     }
     return $html;
+}
+
+/* ==========================================================================
+   CRITICAL CSS — Inline above-the-fold styles to reduce LCP
+   ========================================================================== */
+
+add_action( 'wp_head', 'roden_critical_css', 2 );
+function roden_critical_css() {
+    ?>
+    <style id="roden-critical-css">
+    :root{--navy:#013046;--navy-dark:#001a2e;--orange:#FCB415;--orange-dark:#D49B00;--orange-text:#B8860B;--light:#F8F6F2;--white:#fff;--gray-200:#e0e0e0;--gray-500:#717171;--text-primary:#333;--text-light:#aab4c8;--font-serif:'Merriweather',Georgia,serif;--font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--radius:8px;--shadow:0 2px 16px rgba(0,0,0,.08);--container:960px;--container-lg:1140px;--transition:all .2s ease}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{font-size:16px;scroll-padding-top:140px}
+    body{font-family:var(--font-sans);color:var(--text-primary);line-height:1.7;background:var(--white)}
+    img{max-width:100%;height:auto;display:block}
+    h1,h2,h3{font-family:var(--font-serif);font-weight:800;line-height:1.25;color:var(--navy)}
+    .container{max-width:var(--container);margin:0 auto;padding:0 24px}
+    .screen-reader-text{clip:rect(1px,1px,1px,1px);position:absolute;height:1px;width:1px;overflow:hidden}
+    .top-bar{background:var(--navy-dark);color:var(--text-light);font-size:12px;border-bottom:1px solid rgba(255,255,255,.1);transition:transform .3s ease,opacity .2s ease}
+    .top-bar-inner{display:flex;justify-content:space-between;align-items:center;padding:8px 24px;max-width:var(--container-lg);margin:0 auto}
+    .top-bar-hidden{transform:translateY(-100%);opacity:0;pointer-events:none}
+    .site-header{background:var(--white);border-bottom:3px solid var(--orange);position:sticky;top:0;z-index:50;box-shadow:var(--shadow);transition:box-shadow .3s ease}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:72px;max-width:var(--container-lg);margin:0 auto}
+    .site-brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+    .site-brand a{text-decoration:none;display:flex;align-items:center;gap:10px}
+    .site-brand img,.custom-logo-link img,.custom-logo{max-height:48px;width:auto;display:block;height:auto}
+    .brand-name{font-weight:800;font-size:18px;color:var(--navy);letter-spacing:-.3px;font-family:var(--font-serif);display:block;line-height:1.2}
+    .nav-menu{list-style:none;display:flex;gap:6px;margin:0;padding:0}
+    .nav-menu li a{display:block;padding:8px 14px;font-size:13px;font-weight:600;color:var(--navy);border-bottom:2px solid transparent;transition:var(--transition)}
+    .hero{background:var(--navy);color:var(--white);padding:64px 0 56px;position:relative;overflow:hidden}
+    .hero-title{font-size:clamp(28px,4vw,44px);font-weight:900;margin-bottom:16px;color:var(--white)}
+    .hero p{font-size:17px;line-height:1.7;color:rgba(255,255,255,.85);max-width:620px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:12px 24px;border-radius:6px;font-weight:700;font-size:14px;cursor:pointer;transition:var(--transition);border:2px solid transparent;text-decoration:none;line-height:1.2}
+    .btn-primary{background:var(--orange);color:var(--navy);border-color:var(--orange);font-weight:800}
+    .btn-dark{background:var(--navy);color:var(--white);border-color:var(--navy)}
+    .breadcrumb{font-size:13px;margin-bottom:16px;color:rgba(255,255,255,.6)}
+    .breadcrumb a{color:rgba(255,255,255,.7);text-decoration:none}
+    </style>
+    <?php
 }
 
 /* ==========================================================================
