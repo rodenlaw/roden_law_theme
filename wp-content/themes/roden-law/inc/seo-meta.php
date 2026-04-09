@@ -404,12 +404,21 @@ function roden_output_twitter_card() {
    5. TAXONOMY ARCHIVE NOINDEX
    ========================================================================== */
 
-add_action( 'wp_head', 'roden_output_taxonomy_noindex', 1 );
+add_action( 'wp_head', 'roden_output_noindex_pages', 1 );
 /**
- * Output noindex for taxonomy archives that duplicate pillar page content.
+ * Output noindex for thin/duplicate archive pages:
+ * - Taxonomy archives (practice_category, location_served, tags)
+ * - Search results (aggregated, not unique content)
+ * - Author archives (exposes user accounts, thin content)
+ * - Date archives (thin chronological listings)
  */
-function roden_output_taxonomy_noindex() {
-    if ( is_tax( 'practice_category' ) || is_tax( 'location_served' ) || is_tag() ) {
+function roden_output_noindex_pages() {
+    if (
+        is_tax( 'practice_category' ) || is_tax( 'location_served' ) || is_tag()
+        || is_search()
+        || is_author()
+        || is_date()
+    ) {
         echo '<meta name="robots" content="noindex, follow" />' . "\n";
     }
 }

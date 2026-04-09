@@ -64,6 +64,29 @@ function roden_theme_setup() {
 }
 
 /* ==========================================================================
+   2a. DISABLE COMMENTS ON ALL CPTs — prevent spam on service pages
+   ========================================================================== */
+
+add_action( 'init', 'roden_disable_cpt_comments' );
+function roden_disable_cpt_comments() {
+    $cpts = array( 'practice_area', 'location', 'attorney', 'case_result', 'testimonial', 'resource' );
+    foreach ( $cpts as $cpt ) {
+        remove_post_type_support( $cpt, 'comments' );
+        remove_post_type_support( $cpt, 'trackbacks' );
+    }
+}
+
+// Auto-close comments on CPT posts that may already have them open.
+add_filter( 'comments_open', 'roden_close_cpt_comments', 10, 2 );
+function roden_close_cpt_comments( $open, $post_id ) {
+    $cpts = array( 'practice_area', 'location', 'attorney', 'case_result', 'testimonial', 'resource' );
+    if ( in_array( get_post_type( $post_id ), $cpts, true ) ) {
+        return false;
+    }
+    return $open;
+}
+
+/* ==========================================================================
    2b. GOOGLE TAG MANAGER — fires on ALL templates including landing pages
    ========================================================================== */
 

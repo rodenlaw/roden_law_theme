@@ -319,6 +319,19 @@ function roden_schema_legal_service( $firm ) {
                 );
             }
         }
+
+        // Link to the attorney providing this service (E-E-A-T provider signal).
+        $author_id = get_post_meta( get_the_ID(), '_roden_author_attorney', true );
+        if ( $author_id ) {
+            $atty = get_post( $author_id );
+            if ( $atty && 'publish' === $atty->post_status ) {
+                $schema['provider'] = array(
+                    '@type' => 'Person',
+                    '@id'   => get_permalink( $atty ) . '#person',
+                    'name'  => $atty->post_title,
+                );
+            }
+        }
     }
 
     roden_json_ld( $schema );
@@ -1093,20 +1106,21 @@ function roden_schema_speakable_location() {
    ========================================================================== */
 
 function roden_schema_aggregate_rating( $firm ) {
-    // Reflects verified Google Reviews count — sourced from firm data config.
-    // References the existing LegalService entity instead of creating a new one.
+    // Outputs AggregateRating as a standalone entity that references the
+    // LegalService via itemReviewed, avoiding duplicate @id conflicts.
     $review_count = $firm['trust_stats']['review_count'] ?? 500;
 
     roden_json_ld( array(
-        '@context'        => 'https://schema.org',
-        '@type'           => 'LegalService',
-        '@id'             => $firm['url'] . '/#legalservice',
-        'aggregateRating' => array(
-            '@type'       => 'AggregateRating',
-            'ratingValue' => $firm['trust_stats']['rating'],
-            'bestRating'  => '5',
-            'worstRating' => '1',
-            'reviewCount' => $review_count,
+        '@context'     => 'https://schema.org',
+        '@type'        => 'AggregateRating',
+        'ratingValue'  => $firm['trust_stats']['rating'],
+        'bestRating'   => '5',
+        'worstRating'  => '1',
+        'reviewCount'  => $review_count,
+        'itemReviewed' => array(
+            '@type' => 'LegalService',
+            '@id'   => $firm['url'] . '/#legalservice',
+            'name'  => $firm['name'],
         ),
     ) );
 }
@@ -1145,6 +1159,7 @@ function roden_schema_article( $firm ) {
     $schema = array(
         '@context'      => 'https://schema.org',
         '@type'         => 'BlogPosting',
+        '@id'           => get_permalink( $post_id ) . '#blogposting',
         'headline'      => get_the_title( $post_id ),
         'description'   => html_entity_decode( wp_strip_all_tags( $excerpt ?: wp_trim_words( $content, 30 ) ), ENT_QUOTES, 'UTF-8' ),
         'url'           => get_permalink( $post_id ),

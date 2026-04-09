@@ -98,12 +98,12 @@ function roden_preconnect_hints() {
     echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>' . "\n";
 }
 
-// Make Google Fonts non-render-blocking via media swap
+// Google Fonts: use media="print" swap to load non-render-blocking without inline JS.
+// The &display=swap in the URL handles FOUT; this avoids CSP issues from onload handlers.
 add_filter( 'style_loader_tag', 'roden_async_google_fonts', 10, 4 );
 function roden_async_google_fonts( $html, $handle, $href, $media ) {
     if ( 'roden-google-fonts' === $handle ) {
-        // Preload + swap: loads font CSS without blocking render
-        $html  = '<link rel="preload" as="style" href="' . esc_url( $href ) . '" crossorigin onload="this.onload=null;this.rel=\'stylesheet\'">' . "\n";
+        $html  = '<link rel="stylesheet" href="' . esc_url( $href ) . '" media="print" onload="this.media=\'all\'" crossorigin>' . "\n";
         $html .= '<noscript><link rel="stylesheet" href="' . esc_url( $href ) . '"></noscript>' . "\n";
     }
     return $html;

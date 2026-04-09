@@ -131,7 +131,7 @@ function roden_register_post_types() {
         'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt', 'custom-fields' ),
         'menu_icon'          => 'dashicons-awards',
         'menu_position'      => 8,
-        'show_in_rest'       => true,
+        'show_in_rest'       => false, // No REST API — prevents content scraping.
     ) );
 
     // ── Testimonials ──────────────────────────────────────────────────────
@@ -157,7 +157,7 @@ function roden_register_post_types() {
         'supports'           => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
         'menu_icon'          => 'dashicons-format-quote',
         'menu_position'      => 9,
-        'show_in_rest'       => true,
+        'show_in_rest'       => false, // No REST API — prevents content scraping.
     ) );
 
     // ── Resources ─────────────────────────────────────────────────────────
