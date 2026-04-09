@@ -163,7 +163,7 @@ $directions_url = 'https://www.google.com/maps/dir/' . urlencode( $neighborhood_
             </div>
             <div class="map-nap-actions">
                 <a href="tel:<?php echo esc_attr( $office['phone_raw'] ); ?>" class="btn btn-primary"><?php echo esc_html( $office['phone'] ); ?></a>
-                <a href="<?php echo esc_url( $directions_url ); ?>" class="btn btn-outline-light" target="_blank" rel="noopener noreferrer">Get Directions from <?php echo esc_html( $neighborhood_name ); ?></a>
+                <a href="<?php echo esc_url( $directions_url ); ?>" class="btn btn-outline-light" target="_blank" rel="noopener noreferrer nofollow">Get Directions from <?php echo esc_html( $neighborhood_name ); ?></a>
             </div>
         </div>
     </div>

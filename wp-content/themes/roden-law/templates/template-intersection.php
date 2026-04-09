@@ -101,7 +101,7 @@ $related_subtypes = get_posts( array(
                     </div>
                     <div class="nap-actions">
                         <a href="tel:<?php echo esc_attr( $office['phone_raw'] ); ?>" class="btn btn-primary">Call Now</a>
-                        <a href="<?php echo esc_url( $office['map_url'] ); ?>" class="btn btn-outline-light" target="_blank" rel="noopener noreferrer">Get Directions</a>
+                        <a href="<?php echo esc_url( $office['map_url'] ); ?>" class="btn btn-outline-light" target="_blank" rel="noopener noreferrer nofollow">Get Directions</a>
                     </div>
                 </div>
             </div>
@@ -313,7 +313,7 @@ $related_subtypes = get_posts( array(
                     <a href="tel:<?php echo esc_attr( $office['phone_raw'] ); ?>" class="nap-card-phone">
                         <?php echo esc_html( $office['phone'] ); ?>
                     </a>
-                    <a href="<?php echo esc_url( $office['map_url'] ); ?>" class="btn btn-dark btn-block" target="_blank" rel="noopener noreferrer">
+                    <a href="<?php echo esc_url( $office['map_url'] ); ?>" class="btn btn-dark btn-block" target="_blank" rel="noopener noreferrer nofollow">
                         View on Google Maps
                     </a>
                 </div>

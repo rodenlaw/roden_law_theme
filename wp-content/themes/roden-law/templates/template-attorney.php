@@ -29,10 +29,10 @@
                 </div>
                 <div class="attorney-profile-links">
                     <?php if ( $avvo_url ) : ?>
-                        <a href="<?php echo esc_url($avvo_url); ?>" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener noreferrer">Avvo Profile</a>
+                        <a href="<?php echo esc_url($avvo_url); ?>" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener noreferrer nofollow">Avvo Profile</a>
                     <?php endif; ?>
                     <?php if ( $linkedin ) : ?>
-                        <a href="<?php echo esc_url($linkedin); ?>" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        <a href="<?php echo esc_url($linkedin); ?>" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener noreferrer nofollow">LinkedIn</a>
                     <?php endif; ?>
                 </div>
             </div>

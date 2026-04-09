@@ -44,35 +44,35 @@ $footer_practice_areas = array(
                         <?php if ( ! empty( $firm['social']['facebook'] ) ) : ?>
                             <a href="<?php echo esc_url( $firm['social']['facebook'] ); ?>"
                                aria-label="<?php esc_attr_e( 'Facebook', 'roden-law' ); ?>"
-                               target="_blank" rel="noopener noreferrer">
+                               target="_blank" rel="noopener noreferrer nofollow">
                                 <span aria-hidden="true">f</span>
                             </a>
                         <?php endif; ?>
                         <?php if ( ! empty( $firm['social']['linkedin'] ) ) : ?>
                             <a href="<?php echo esc_url( $firm['social']['linkedin'] ); ?>"
                                aria-label="<?php esc_attr_e( 'LinkedIn', 'roden-law' ); ?>"
-                               target="_blank" rel="noopener noreferrer">
+                               target="_blank" rel="noopener noreferrer nofollow">
                                 <span aria-hidden="true">in</span>
                             </a>
                         <?php endif; ?>
                         <?php if ( ! empty( $firm['social']['twitter'] ) ) : ?>
                             <a href="<?php echo esc_url( $firm['social']['twitter'] ); ?>"
                                aria-label="<?php esc_attr_e( 'X / Twitter', 'roden-law' ); ?>"
-                               target="_blank" rel="noopener noreferrer">
+                               target="_blank" rel="noopener noreferrer nofollow">
                                 <span aria-hidden="true">x</span>
                             </a>
                         <?php endif; ?>
                         <?php if ( ! empty( $firm['social']['youtube'] ) ) : ?>
                             <a href="<?php echo esc_url( $firm['social']['youtube'] ); ?>"
                                aria-label="<?php esc_attr_e( 'YouTube', 'roden-law' ); ?>"
-                               target="_blank" rel="noopener noreferrer">
+                               target="_blank" rel="noopener noreferrer nofollow">
                                 <span aria-hidden="true">&#9654;</span>
                             </a>
                         <?php endif; ?>
                         <?php if ( ! empty( $firm['social']['instagram'] ) ) : ?>
                             <a href="<?php echo esc_url( $firm['social']['instagram'] ); ?>"
                                aria-label="<?php esc_attr_e( 'Instagram', 'roden-law' ); ?>"
-                               target="_blank" rel="noopener noreferrer">
+                               target="_blank" rel="noopener noreferrer nofollow">
                                 <span aria-hidden="true">ig</span>
                             </a>
                         <?php endif; ?>

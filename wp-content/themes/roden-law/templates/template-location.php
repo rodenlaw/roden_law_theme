@@ -149,7 +149,7 @@ $faqs          = get_post_meta( $post_id, '_roden_faqs', true );
             </div>
             <div class="map-nap-actions">
                 <a href="tel:<?php echo esc_attr( $office['phone_raw'] ); ?>" class="btn btn-primary"><?php echo esc_html( $office['phone'] ); ?></a>
-                <a href="<?php echo esc_url( $office['map_url'] ); ?>" class="btn btn-outline-light" target="_blank" rel="noopener noreferrer">Get Directions</a>
+                <a href="<?php echo esc_url( $office['map_url'] ); ?>" class="btn btn-outline-light" target="_blank" rel="noopener noreferrer nofollow">Get Directions</a>
             </div>
         </div>
     </div>
@@ -362,7 +362,7 @@ if ( ! empty( $neighborhood_children ) ) :
         <div class="directions-box">
             <h3>How to Find Our <?php echo esc_html( $office['market_name'] ); ?> Office</h3>
             <p><?php echo esc_html( $office['directions'] ); ?></p>
-            <a href="<?php echo esc_url( $office['map_url'] ); ?>" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            <a href="<?php echo esc_url( $office['map_url'] ); ?>" class="btn btn-primary" target="_blank" rel="noopener noreferrer nofollow">
                 Get Directions on Google Maps
             </a>
         </div>

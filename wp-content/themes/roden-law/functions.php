@@ -485,7 +485,7 @@ function roden_custom_robots_txt( $output, $public ) {
         $output .= "User-agent: {$bot}\nAllow: /\n\n";
     }
 
-    $output .= "Sitemap: https://rodenlaw.com/wp-sitemap.xml/\n";
+    $output .= "Sitemap: " . home_url( '/wp-sitemap.xml/' ) . "\n";
 
     $output .= "\n# LLM-friendly site information\n";
     $output .= "# https://llmstxt.org/\n";
