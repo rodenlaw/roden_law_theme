@@ -28,6 +28,12 @@ add_filter( 'document_title_parts', 'roden_seo_title_optimization' );
 function roden_seo_title_optimization( $title_parts ) {
     $firm = roden_firm_data();
 
+    // Homepage — descriptive title with primary keywords.
+    if ( is_front_page() ) {
+        $title_parts['title'] = 'Personal Injury Lawyers in Georgia & South Carolina';
+        return $title_parts;
+    }
+
     // Practice area pages — add jurisdiction/location context.
     if ( is_singular() && in_array( get_post_type(), array( 'practice_area', 'practice-area' ), true ) ) {
         $post    = get_post();
@@ -37,9 +43,13 @@ function roden_seo_title_optimization( $title_parts ) {
             $office_key = get_post_meta( $post_id, '_roden_pa_office_key', true );
 
             if ( $office_key && isset( $firm['offices'][ $office_key ] ) ) {
-                // Intersection page — append "in City, ST".
-                $office = $firm['offices'][ $office_key ];
-                $title_parts['title'] .= ' in ' . $office['city'] . ', ' . $office['state'];
+                // Intersection page — append "in City, ST" only if not already present.
+                // Post titles like "Car Accident Lawyers in Savannah, GA" already contain the location.
+                $office  = $firm['offices'][ $office_key ];
+                $geo_tag = $office['city'] . ', ' . $office['state'];
+                if ( false === stripos( $title_parts['title'], $geo_tag ) ) {
+                    $title_parts['title'] .= ' in ' . $geo_tag;
+                }
             } else {
                 // Sub-type page — append jurisdiction.
                 $jurisdiction = strtolower( get_post_meta( $post_id, '_roden_jurisdiction', true ) ?: 'both' );
@@ -63,6 +73,16 @@ function roden_seo_title_optimization( $title_parts ) {
         if ( $office_key && isset( $firm['offices'][ $office_key ] ) ) {
             $office = $firm['offices'][ $office_key ];
             $title_parts['title'] .= ' – ' . $office['state_full'] . ' Personal Injury Lawyers';
+        }
+    }
+
+    // Attorney pages — append role for E-E-A-T and search context.
+    if ( is_singular( 'attorney' ) ) {
+        $atty_title = get_post_meta( get_the_ID(), '_roden_atty_title', true );
+        if ( $atty_title ) {
+            $title_parts['title'] .= ', ' . $atty_title;
+        } else {
+            $title_parts['title'] .= ', Personal Injury Attorney';
         }
     }
 
@@ -178,9 +198,9 @@ function roden_output_meta_description() {
 function roden_seo_get_description() {
     $firm = roden_firm_data();
 
-    // Homepage — keyword-rich description with office locations and CTA.
+    // Homepage.
     if ( is_front_page() ) {
-        return 'Roden Law is a personal injury law firm with offices in Savannah, Charleston, Columbia, Myrtle Beach, and Darien. $250M+ recovered. Free consultation.';
+        return roden_seo_truncate( $firm['description'], 160 );
     }
 
     // Singular pages — check for a custom meta description field first.
