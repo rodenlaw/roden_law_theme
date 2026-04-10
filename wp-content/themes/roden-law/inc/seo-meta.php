@@ -267,19 +267,21 @@ function roden_seo_auto_description( $post_id, $firm ) {
             $post = get_post( $post_id );
             if ( $post->post_parent ) {
                 // Intersection or sub-type — include parent context.
-                $parent = get_post( $post->post_parent );
-                $parent_title = $parent ? get_the_title( $parent ) : '';
-                $office_key = get_post_meta( $post_id, '_roden_office_key', true );
+                // Check both meta keys: _roden_pa_office_key (current) and _roden_office_key (legacy).
+                $office_key = get_post_meta( $post_id, '_roden_pa_office_key', true );
+                if ( ! $office_key ) {
+                    $office_key = get_post_meta( $post_id, '_roden_office_key', true );
+                }
 
-                if ( $office_key ) {
-                    // Intersection page.
-                    $offices = $firm['offices'];
-                    $city = isset( $offices[ $office_key ] ) ? $offices[ $office_key ]['city'] . ', ' . $offices[ $office_key ]['state'] : '';
-                    return roden_seo_truncate( $title . '. Experienced ' . strtolower( $parent_title ) . ' serving ' . $city . '. Free consultation. No fees unless we win.', 160 );
+                if ( $office_key && isset( $firm['offices'][ $office_key ] ) ) {
+                    // Intersection page — shorter template to stay under 155 chars.
+                    $office = $firm['offices'][ $office_key ];
+                    $city   = $office['city'] . ', ' . $office['state'];
+                    return roden_seo_truncate( $title . '. Local personal injury lawyers in ' . $city . '. Free consultation — no fees unless we win.', 155 );
                 }
 
                 // Sub-type page.
-                return roden_seo_truncate( $title . '. ' . $firm['name'] . ' handles ' . strtolower( $title ) . ' cases across Georgia and South Carolina. Free consultation.', 160 );
+                return roden_seo_truncate( $title . '. ' . $firm['name'] . ' handles ' . strtolower( $title ) . ' cases across Georgia and South Carolina. Free consultation.', 155 );
             }
 
             // Pillar page.
@@ -460,7 +462,7 @@ function roden_seo_get_og_image() {
         $thumb_id = get_post_thumbnail_id();
         if ( $thumb_id ) {
             $img = wp_get_attachment_image_src( $thumb_id, 'large' );
-            if ( $img ) {
+            if ( $img && $img[1] >= 600 ) {
                 return array(
                     'url'    => $img[0],
                     'width'  => $img[1],
@@ -471,7 +473,19 @@ function roden_seo_get_og_image() {
         }
     }
 
-    // Fallback: site logo.
+    // Fallback: default social sharing image (1200x630).
+    // Check for a dedicated OG image in the theme's assets folder first.
+    $default_og_path = get_template_directory() . '/assets/images/og-default.jpg';
+    if ( file_exists( $default_og_path ) ) {
+        return array(
+            'url'    => get_template_directory_uri() . '/assets/images/og-default.jpg',
+            'width'  => 1200,
+            'height' => 630,
+            'alt'    => 'Roden Law — Personal Injury Lawyers in Georgia & South Carolina',
+        );
+    }
+
+    // Final fallback: site logo (better than nothing).
     $logo_id = get_theme_mod( 'custom_logo' );
     if ( $logo_id ) {
         $img = wp_get_attachment_image_src( $logo_id, 'full' );
@@ -495,7 +509,7 @@ function roden_seo_get_og_image() {
  * @param int    $length Max length.
  * @return string
  */
-function roden_seo_truncate( $text, $length = 160 ) {
+function roden_seo_truncate( $text, $length = 155 ) {
     $text = wp_strip_all_tags( $text );
     $text = preg_replace( '/\s+/', ' ', trim( $text ) );
 
@@ -503,11 +517,18 @@ function roden_seo_truncate( $text, $length = 160 ) {
         return $text;
     }
 
-    $truncated = mb_substr( $text, 0, $length );
-    // Cut at last word boundary.
+    // Reserve space for ellipsis character.
+    $truncated = mb_substr( $text, 0, $length - 1 );
+    // Cut at last word boundary (within the last 20% of the string).
     $last_space = mb_strrpos( $truncated, ' ' );
-    if ( $last_space > $length * 0.8 ) {
+    if ( $last_space > ( $length - 1 ) * 0.8 ) {
         $truncated = mb_substr( $truncated, 0, $last_space );
+    }
+
+    // Only add ellipsis if the text was actually truncated mid-sentence.
+    $last_char = mb_substr( $truncated, -1 );
+    if ( ! in_array( $last_char, array( '.', '!', '?' ), true ) ) {
+        $truncated .= '…';
     }
 
     return $truncated;
