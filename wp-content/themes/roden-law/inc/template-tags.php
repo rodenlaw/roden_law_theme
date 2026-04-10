@@ -456,7 +456,7 @@ function roden_practice_areas_grid( $columns = 4 ) {
     if ( ! empty( $areas ) ) {
         foreach ( $areas as $area ) {
             ?>
-            <a href="<?php echo esc_url( roden_get_canonical_url( $area ) ); ?>" class="practice-area-card">
+            <a href="<?php echo esc_url( get_permalink( $area ) ); ?>" class="practice-area-card">
                 <?php if ( has_post_thumbnail( $area ) ) : ?>
                     <?php echo get_the_post_thumbnail( $area, 'card-thumb', array( 'class' => 'pa-thumb' ) ); ?>
                 <?php endif; ?>
@@ -719,6 +719,113 @@ function roden_stats_bar() {
 }
 
 /* ==========================================================================
+   LAST UPDATED DATE (AI Freshness Signal)
+   ========================================================================== */
+
+/**
+ * Output a visible "Last Updated" date for AI freshness signals.
+ * AI systems weight recency heavily — pages with visible dates get cited more.
+ *
+ * @param int|null $post_id Post ID (defaults to current).
+ */
+function roden_last_updated_date( $post_id = null ) {
+    if ( ! $post_id ) {
+        $post_id = get_the_ID();
+    }
+    $modified = get_the_modified_date( 'F j, Y', $post_id );
+    if ( ! $modified ) {
+        return;
+    }
+    echo '<p class="last-updated">';
+    echo '<time datetime="' . esc_attr( get_the_modified_date( 'c', $post_id ) ) . '">';
+    echo 'Last updated: ' . esc_html( $modified );
+    echo '</time>';
+    echo '</p>';
+}
+
+/* ==========================================================================
+   AI DEFINITION BLOCK (Extractable Answer Block)
+   ========================================================================== */
+
+/**
+ * Output a structured definition block optimized for AI snippet extraction.
+ * Renders a 40-60 word direct-answer paragraph that AI systems can extract
+ * as a standalone response to "What is [practice area]?" queries.
+ *
+ * @param string $practice_area_title The practice area title (e.g., "Car Accident Lawyers").
+ * @param string $custom_definition   Optional custom definition text from post meta.
+ */
+function roden_ai_definition_block( $practice_area_title, $custom_definition = '' ) {
+    if ( $custom_definition ) {
+        $definition = $custom_definition;
+    } else {
+        // Use the post excerpt as the definition if available.
+        $definition = get_the_excerpt();
+    }
+
+    if ( ! $definition ) {
+        return;
+    }
+
+    echo '<div class="ai-definition-block" data-ai-extractable="true">';
+    echo '<p class="definition-text">' . wp_kses_post( $definition ) . '</p>';
+    echo '</div>';
+}
+
+/* ==========================================================================
+   WHAT TO DO AFTER [ACCIDENT TYPE] (Structured Steps for AI Extraction)
+   ========================================================================== */
+
+/**
+ * Output structured "What to Do" steps for intersection/practice area pages.
+ * These step-by-step blocks are highly citable by AI systems for
+ * "what to do after [accident type] in [city]" queries.
+ *
+ * @param string $accident_type e.g., "a car accident"
+ * @param string $city          e.g., "Savannah, GA"
+ * @param string $state_full    e.g., "Georgia"
+ */
+function roden_what_to_do_steps( $accident_type, $city = '', $state_full = '' ) {
+    $location_label = $city ? " in {$city}" : '';
+    $state_label    = $state_full ?: 'your state';
+    ?>
+    <div class="content-section what-to-do-steps" data-ai-extractable="true">
+        <h2>What to Do After <?php echo esc_html( ucfirst( $accident_type ) . $location_label ); ?></h2>
+        <ol class="steps-list">
+            <li>
+                <strong>Ensure safety and call 911.</strong>
+                Move to a safe location if possible. Call emergency services to report the accident and request medical attention for anyone injured.
+            </li>
+            <li>
+                <strong>Seek immediate medical attention.</strong>
+                Even if injuries seem minor, get examined by a doctor. Some injuries — such as traumatic brain injuries or internal bleeding — may not show symptoms immediately.
+            </li>
+            <li>
+                <strong>Document the scene.</strong>
+                Take photos of all vehicles, injuries, road conditions, traffic signs, and any visible damage. Collect names and contact information from witnesses.
+            </li>
+            <li>
+                <strong>Exchange information with all parties.</strong>
+                Get the other driver's name, insurance information, license plate number, and driver's license number. Do not admit fault or apologize.
+            </li>
+            <li>
+                <strong>Report the accident to police.</strong>
+                <?php echo esc_html( $state_label ); ?> law requires accident reports when there are injuries or significant property damage. Request a copy of the police report.
+            </li>
+            <li>
+                <strong>Notify your insurance company.</strong>
+                Report the accident to your insurer promptly. Provide factual information only — do not speculate about fault or the extent of your injuries.
+            </li>
+            <li>
+                <strong>Contact an experienced personal injury attorney.</strong>
+                An attorney can protect your rights, handle communications with insurance companies, and help you pursue the full compensation you deserve. Roden Law offers free consultations — call today.
+            </li>
+        </ol>
+    </div>
+    <?php
+}
+
+/* ==========================================================================
    READING TIME
    ========================================================================== */
 
@@ -932,7 +1039,7 @@ function roden_related_practice_areas( $count = 6 ) {
         <h3 class="sidebar-title"><?php echo esc_html( $heading ); ?></h3>
         <ul>
             <?php foreach ( $related as $pa ) : ?>
-                <li><a href="<?php echo esc_url( roden_get_canonical_url( $pa ) ); ?>"><?php echo esc_html( $pa->post_title ); ?></a></li>
+                <li><a href="<?php echo esc_url( get_permalink( $pa ) ); ?>"><?php echo esc_html( $pa->post_title ); ?></a></li>
             <?php endforeach; ?>
         </ul>
     </div>

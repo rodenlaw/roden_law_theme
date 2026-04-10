@@ -3235,3 +3235,89 @@ input[type="submit"] {
     }
 }
 
+/* ==========================================================================
+   AI SEO — Content Extraction Optimized Elements
+   ========================================================================== */
+
+/* Last Updated Date — Freshness signal for AI systems */
+.last-updated {
+    font-size: 0.85rem;
+    color: var(--color-text-light, #888);
+    margin: 8px 0 0;
+    font-style: italic;
+}
+
+.hero .last-updated {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* AI Definition Block — Extractable answer paragraph */
+.ai-definition-block {
+    background: var(--color-light-bg, #F8F6F2);
+    border-left: 4px solid var(--color-navy, #013046);
+    padding: 20px 24px;
+    margin-bottom: 32px;
+    border-radius: 0 6px 6px 0;
+}
+
+.ai-definition-block .definition-text {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--color-text-dark, #333);
+    margin: 0;
+}
+
+/* What to Do Steps — Structured list for AI extraction */
+.what-to-do-steps {
+    background: var(--color-light-bg, #F8F6F2);
+    border-radius: 8px;
+    padding: 32px;
+    margin-bottom: 32px;
+}
+
+.what-to-do-steps h2 {
+    margin-top: 0;
+}
+
+.steps-list {
+    counter-reset: step-counter;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.steps-list li {
+    counter-increment: step-counter;
+    position: relative;
+    padding: 16px 0 16px 48px;
+    border-bottom: 1px solid var(--color-border, #e0e0e0);
+    line-height: 1.6;
+}
+
+.steps-list li:last-child {
+    border-bottom: none;
+}
+
+.steps-list li::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 16px;
+    width: 32px;
+    height: 32px;
+    background: var(--color-navy, #013046);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.steps-list li strong {
+    display: block;
+    color: var(--color-navy, #013046);
+    margin-bottom: 4px;
+}
+

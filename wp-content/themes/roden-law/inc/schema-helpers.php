@@ -28,24 +28,11 @@ defined( 'ABSPATH' ) || exit;
    ========================================================================== */
 
 /**
- * Output a JSON-LD script tag — or collect into @graph when buffering.
- *
- * When $roden_schema_graph is an array (set by the dispatcher), entities are
- * collected and later flushed as a single @graph block. Outside the dispatcher,
- * entities are output as standalone script tags for backwards compatibility.
+ * Output a JSON-LD script tag.
  *
  * @param array $data Schema data array.
  */
 function roden_json_ld( $data ) {
-    global $roden_schema_graph;
-
-    if ( is_array( $roden_schema_graph ) ) {
-        // Strip @context — the @graph wrapper provides it once.
-        unset( $data['@context'] );
-        $roden_schema_graph[] = $data;
-        return;
-    }
-
     echo '<script type="application/ld+json">' . "\n";
     echo wp_json_encode( $data, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT );
     echo "\n" . '</script>' . "\n";
@@ -109,52 +96,12 @@ function roden_get_canonical_url( $post_or_id = null ) {
     return get_permalink( $post );
 }
 
-/**
- * Get a clean description for schema, truncated at sentence boundaries.
- *
- * Prefers the custom excerpt, then extracts the first 1-2 sentences from content.
- * Avoids garbled mid-sentence truncation in JSON-LD description fields.
- *
- * @param int|null $post_id Post ID or null for current post.
- * @return string Clean description string.
- */
-function roden_schema_description( $post_id = null ) {
-    $post_id = $post_id ?: get_the_ID();
-    $excerpt = get_the_excerpt( $post_id );
-
-    // If the post has a hand-written excerpt, use it as-is.
-    if ( $excerpt && has_excerpt( $post_id ) ) {
-        return html_entity_decode( wp_strip_all_tags( $excerpt ), ENT_QUOTES, 'UTF-8' );
-    }
-
-    // Otherwise, extract the first 2 sentences from the content.
-    $content = wp_strip_all_tags( get_post_field( 'post_content', $post_id ) );
-    $content = html_entity_decode( $content, ENT_QUOTES, 'UTF-8' );
-    $content = preg_replace( '/\s+/', ' ', trim( $content ) );
-
-    // Match up to 2 sentences (ending in . ! or ?).
-    if ( preg_match( '/^(.+?[.!?])\s+(.+?[.!?])\s/', $content, $m ) ) {
-        return trim( $m[1] . ' ' . $m[2] );
-    }
-    if ( preg_match( '/^(.+?[.!?])\s/', $content, $m ) ) {
-        return trim( $m[1] );
-    }
-
-    // Last resort: word-based truncation.
-    return wp_trim_words( $content, 30, '…' );
-}
-
 /* ==========================================================================
    SCHEMA DISPATCHER (wp_head hook)
    ========================================================================== */
 
 add_action( 'wp_head', 'roden_output_schema', 1 );
 function roden_output_schema() {
-    global $roden_schema_graph;
-
-    // Collect all entities into a single @graph block for better entity resolution.
-    $roden_schema_graph = array();
-
     $firm = roden_firm_data();
 
     if ( is_front_page() ) {
@@ -162,7 +109,9 @@ function roden_output_schema() {
         roden_schema_legal_service( $firm );
         roden_schema_local_business_all( $firm );
         roden_schema_speakable_homepage( $firm );
+        roden_schema_aggregate_rating( $firm );
         roden_schema_website( $firm );
+        roden_schema_breadcrumbs(); // Single-item homepage breadcrumb (site hierarchy signal)
     }
 
     if ( roden_is_pa_singular() ) {
@@ -171,9 +120,10 @@ function roden_output_schema() {
         roden_schema_faq_page();
         roden_schema_speakable_practice_area();
 
-        // LocalBusiness on intersection pages — ties the page to the physical office entity.
+        // LocalBusiness + HowTo on intersection pages — ties to physical office + "What to Do" steps.
         if ( function_exists( 'roden_is_intersection_page' ) && roden_is_intersection_page() ) {
             roden_schema_local_business_single( $firm );
+            roden_schema_intersection_howto( $firm );
         }
 
         // Article schema for sub-type pages (child PA posts without an office key).
@@ -196,7 +146,6 @@ function roden_output_schema() {
 
     if ( is_singular( 'attorney' ) ) {
         roden_schema_person( $firm );
-        roden_schema_speakable_attorney();
     }
 
     if ( is_post_type_archive( 'attorney' ) ) {
@@ -220,17 +169,12 @@ function roden_output_schema() {
         roden_schema_faq_page();
     }
 
-    // Blog archive — CollectionPage schema
-    if ( is_home() ) {
-        roden_schema_blog_archive( $firm );
-    }
-
     // Taxonomy archives — CollectionPage schema
     if ( is_tax( 'practice_category' ) || is_tax( 'location_served' ) ) {
         roden_schema_taxonomy_archive( $firm );
     }
 
-    // Contact page — ContactPage with ContactPoints
+    // Contact page — Organization with ContactPoint
     if ( is_page( 'contact' ) ) {
         roden_schema_contact_page( $firm );
     }
@@ -248,19 +192,6 @@ function roden_output_schema() {
     if ( ! is_front_page() && ! $is_landing ) {
         roden_schema_breadcrumbs();
     }
-
-    // Flush all collected entities as a single @graph block.
-    if ( ! empty( $roden_schema_graph ) ) {
-        echo '<script type="application/ld+json">' . "\n";
-        echo wp_json_encode( array(
-            '@context' => 'https://schema.org',
-            '@graph'   => $roden_schema_graph,
-        ), JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT );
-        echo "\n" . '</script>' . "\n";
-    }
-
-    // Stop collecting — any subsequent roden_json_ld() calls output standalone.
-    $roden_schema_graph = null;
 }
 
 /* ==========================================================================
@@ -367,18 +298,18 @@ function roden_schema_legal_service( $firm ) {
         ),
     );
 
-    // Homepage: nest AggregateRating directly in LegalService (Google prefers this).
-    // Non-homepage pages: link back to the firm-level entity.
-    if ( is_front_page() ) {
-        $schema['aggregateRating'] = roden_schema_aggregate_rating( $firm );
-    } else {
+    // Non-homepage pages: link back to the firm-level entity
+    if ( ! is_front_page() ) {
         $schema['isPartOf'] = array( '@id' => $firm_ls_id );
     }
 
     // On singular practice area, customize for that page
     if ( roden_is_pa_singular() ) {
         $schema['name']        = get_the_title() . ' — ' . $firm['name'];
-        $schema['description'] = roden_schema_description();
+        $schema['description'] = get_the_excerpt() ?: wp_trim_words( get_the_content(), 30 );
+
+        // dateModified — critical AI freshness signal (+40% citation boost with recency)
+        $schema['dateModified'] = get_the_modified_date( 'c' );
 
         // Narrow areaServed on intersection pages to the specific location
         if ( function_exists( 'roden_is_intersection_page' ) && roden_is_intersection_page() ) {
@@ -394,23 +325,16 @@ function roden_schema_legal_service( $firm ) {
         }
 
         // Link to the attorney providing this service (E-E-A-T provider signal).
-        // Falls back to Eric Roden (founding partner) when no author is assigned.
         $author_id = get_post_meta( get_the_ID(), '_roden_author_attorney', true );
-        $atty      = $author_id ? get_post( $author_id ) : null;
-
-        if ( $atty && 'publish' === $atty->post_status ) {
-            $schema['provider'] = array(
-                '@type' => 'Person',
-                '@id'   => get_permalink( $atty ) . '#person',
-                'name'  => $atty->post_title,
-            );
-        } else {
-            // Fallback: Eric Roden as default provider for E-E-A-T
-            $schema['provider'] = array(
-                '@type' => 'Person',
-                '@id'   => $firm['url'] . '/attorneys/eric-roden/#person',
-                'name'  => 'Eric Roden',
-            );
+        if ( $author_id ) {
+            $atty = get_post( $author_id );
+            if ( $atty && 'publish' === $atty->post_status ) {
+                $schema['provider'] = array(
+                    '@type' => 'Person',
+                    '@id'   => get_permalink( $atty ) . '#person',
+                    'name'  => $atty->post_title,
+                );
+            }
         }
     }
 
@@ -918,6 +842,68 @@ function roden_extract_howto_steps( $content ) {
 }
 
 /* ==========================================================================
+   6b. HowTo — Intersection pages ("What to Do After [Accident] in [City]")
+   ========================================================================== */
+
+/**
+ * Output HowTo schema for intersection pages' "What to Do" steps.
+ * These target high-value "what to do after [accident] in [city]" queries
+ * that frequently trigger AI Overviews and Google featured snippets.
+ *
+ * @param array $firm Firm data from roden_firm_data().
+ */
+function roden_schema_intersection_howto( $firm ) {
+    $post    = get_post();
+    $parent  = $post->post_parent ? get_post( $post->post_parent ) : null;
+
+    if ( ! $parent ) {
+        return;
+    }
+
+    $office_key = get_post_meta( get_the_ID(), '_roden_pa_office_key', true );
+    $office     = isset( $firm['offices'][ $office_key ] ) ? $firm['offices'][ $office_key ] : null;
+
+    if ( ! $office ) {
+        return;
+    }
+
+    $accident_type = strtolower( str_replace( ' Lawyers', '', $parent->post_title ) );
+    $city_label    = $office['market_name'] . ', ' . $office['state'];
+    $url           = roden_get_canonical_url();
+
+    $steps = array(
+        array( 'name' => 'Ensure safety and call 911',                 'text' => 'Move to a safe location if possible. Call emergency services to report the accident and request medical attention for anyone injured.' ),
+        array( 'name' => 'Seek immediate medical attention',           'text' => 'Even if injuries seem minor, get examined by a doctor. Some injuries may not show symptoms immediately.' ),
+        array( 'name' => 'Document the scene',                        'text' => 'Take photos of all vehicles, injuries, road conditions, traffic signs, and any visible damage. Collect names and contact information from witnesses.' ),
+        array( 'name' => 'Exchange information with all parties',      'text' => 'Get the other driver\'s name, insurance information, license plate number, and driver\'s license number. Do not admit fault or apologize.' ),
+        array( 'name' => 'Report the accident to police',             'text' => $office['state_full'] . ' law requires accident reports when there are injuries or significant property damage. Request a copy of the police report.' ),
+        array( 'name' => 'Notify your insurance company',             'text' => 'Report the accident to your insurer promptly. Provide factual information only — do not speculate about fault or the extent of your injuries.' ),
+        array( 'name' => 'Contact an experienced personal injury attorney', 'text' => 'An attorney can protect your rights, handle communications with insurance companies, and help you pursue the full compensation you deserve.' ),
+    );
+
+    $step_entities = array();
+    foreach ( $steps as $i => $step ) {
+        $step_entities[] = array(
+            '@type'    => 'HowToStep',
+            'position' => $i + 1,
+            'name'     => $step['name'],
+            'text'     => $step['text'],
+            'url'      => $url . '#step-' . sanitize_title( $step['name'] ),
+        );
+    }
+
+    roden_json_ld( array(
+        '@context'    => 'https://schema.org',
+        '@type'       => 'HowTo',
+        '@id'         => $url . '#howto',
+        'name'        => 'What to Do After ' . ucfirst( $accident_type ) . ' in ' . $city_label,
+        'description' => 'Step-by-step guide on what to do after ' . $accident_type . ' in ' . $city_label . '. Protect your rights and maximize your compensation.',
+        'url'         => $url,
+        'step'        => $step_entities,
+    ) );
+}
+
+/* ==========================================================================
    7. BreadcrumbList (Sitewide, except homepage)
    ========================================================================== */
 
@@ -1117,23 +1103,14 @@ function roden_schema_breadcrumbs() {
         );
     }
 
-    // Require at least 2 items for a meaningful breadcrumb trail.
-    if ( count( $items ) < 2 ) {
+    // Allow single-item BreadcrumbList on homepage (signals top of hierarchy);
+    // require at least 2 items on all other pages.
+    $min_items = is_front_page() ? 1 : 2;
+    if ( count( $items ) < $min_items ) {
         return;
     }
 
-    // Use appropriate URL for the @id — archive pages need special handling
-    // because roden_get_canonical_url() calls get_post() which returns the
-    // first post in the loop on archives, not the archive page itself.
-    if ( is_home() ) {
-        $breadcrumb_url = get_permalink( get_option( 'page_for_posts' ) ) ?: home_url( '/blog/' );
-    } elseif ( is_post_type_archive() ) {
-        $breadcrumb_url = get_post_type_archive_link( get_queried_object()->name ?? get_post_type() );
-    } elseif ( is_tax() || is_category() || is_tag() ) {
-        $breadcrumb_url = get_term_link( get_queried_object() );
-    } else {
-        $breadcrumb_url = roden_get_canonical_url();
-    }
+    $breadcrumb_url = is_front_page() ? home_url( '/' ) : roden_get_canonical_url();
     roden_json_ld( array(
         '@context'        => 'https://schema.org',
         '@type'           => 'BreadcrumbList',
@@ -1163,14 +1140,20 @@ function roden_schema_speakable_homepage( $firm ) {
 function roden_schema_speakable_practice_area() {
     $url = roden_get_canonical_url();
     roden_json_ld( array(
-        '@context'  => 'https://schema.org',
-        '@type'     => 'WebPage',
-        '@id'       => $url . '#webpage',
-        'name'      => get_the_title(),
-        'url'       => $url,
-        'speakable' => array(
+        '@context'      => 'https://schema.org',
+        '@type'         => 'WebPage',
+        '@id'           => $url . '#webpage',
+        'name'          => get_the_title(),
+        'url'           => $url,
+        'dateModified'  => get_the_modified_date( 'c' ),
+        'speakable'     => array(
             '@type'       => 'SpeakableSpecification',
-            'cssSelector' => array( '.hero h1', '.hero p' ),
+            'cssSelector' => array(
+                '.hero h1',
+                '.hero p',
+                '.ai-definition-block',
+                '.what-to-do-steps',
+            ),
         ),
     ) );
 }
@@ -1178,29 +1161,15 @@ function roden_schema_speakable_practice_area() {
 function roden_schema_speakable_location() {
     $url = get_permalink();
     roden_json_ld( array(
-        '@context'  => 'https://schema.org',
-        '@type'     => 'WebPage',
-        '@id'       => $url . '#webpage',
-        'name'      => get_the_title(),
-        'url'       => $url,
-        'speakable' => array(
+        '@context'      => 'https://schema.org',
+        '@type'         => 'WebPage',
+        '@id'           => $url . '#webpage',
+        'name'          => get_the_title(),
+        'url'           => $url,
+        'dateModified'  => get_the_modified_date( 'c' ),
+        'speakable'     => array(
             '@type'       => 'SpeakableSpecification',
-            'cssSelector' => array( '.hero h1', '.hero-subtitle' ),
-        ),
-    ) );
-}
-
-function roden_schema_speakable_attorney() {
-    $url = get_permalink();
-    roden_json_ld( array(
-        '@context'  => 'https://schema.org',
-        '@type'     => 'WebPage',
-        '@id'       => $url . '#webpage',
-        'name'      => get_the_title(),
-        'url'       => $url,
-        'speakable' => array(
-            '@type'       => 'SpeakableSpecification',
-            'cssSelector' => array( '.attorney-hero h1', '.attorney-hero .attorney-title' ),
+            'cssSelector' => array( '.hero h1', '.hero-subtitle', '.why-choose-grid', '.jurisdiction-cards' ),
         ),
     ) );
 }
@@ -1210,17 +1179,23 @@ function roden_schema_speakable_attorney() {
    ========================================================================== */
 
 function roden_schema_aggregate_rating( $firm ) {
-    // Returns AggregateRating data array for nesting inside another entity.
-    // Called by roden_schema_legal_service() on the homepage.
+    // Outputs AggregateRating as a standalone entity that references the
+    // LegalService via itemReviewed, avoiding duplicate @id conflicts.
     $review_count = $firm['trust_stats']['review_count'] ?? 500;
 
-    return array(
-        '@type'       => 'AggregateRating',
-        'ratingValue' => $firm['trust_stats']['rating'],
-        'bestRating'  => '5',
-        'worstRating' => '1',
-        'reviewCount' => $review_count,
-    );
+    roden_json_ld( array(
+        '@context'     => 'https://schema.org',
+        '@type'        => 'AggregateRating',
+        'ratingValue'  => $firm['trust_stats']['rating'],
+        'bestRating'   => '5',
+        'worstRating'  => '1',
+        'reviewCount'  => $review_count,
+        'itemReviewed' => array(
+            '@type' => 'LegalService',
+            '@id'   => $firm['url'] . '/#legalservice',
+            'name'  => $firm['name'],
+        ),
+    ) );
 }
 
 /* ==========================================================================
@@ -1287,12 +1262,6 @@ function roden_schema_article( $firm ) {
                 'width'  => $img_src[1],
                 'height' => $img_src[2],
             );
-        }
-    } else {
-        // Fallback to firm logo — Google recommends every BlogPosting has an image.
-        $logo_url = roden_get_logo_url();
-        if ( $logo_url ) {
-            $schema['image'] = $logo_url;
         }
     }
 
@@ -1362,7 +1331,6 @@ function roden_schema_article_subtype( $firm ) {
     $schema = array(
         '@context'      => 'https://schema.org',
         '@type'         => 'Article',
-        '@id'           => $canonical_url . '#article',
         'headline'      => get_the_title( $post_id ),
         'description'   => html_entity_decode( wp_strip_all_tags( $excerpt ?: wp_trim_words( $content, 30 ) ), ENT_QUOTES, 'UTF-8' ),
         'url'           => $canonical_url,
@@ -1380,18 +1348,17 @@ function roden_schema_article_subtype( $firm ) {
         ),
     );
 
-    // Featured image — use wp_get_attachment_image_src to get dimensions matching the 'large' URL.
+    // Featured image.
     if ( has_post_thumbnail( $post_id ) ) {
-        $img_id  = get_post_thumbnail_id( $post_id );
-        $img_src = wp_get_attachment_image_src( $img_id, 'large' );
-        if ( $img_src ) {
-            $schema['image'] = array(
-                '@type'  => 'ImageObject',
-                'url'    => $img_src[0],
-                'width'  => $img_src[1],
-                'height' => $img_src[2],
-            );
-        }
+        $img_url  = get_the_post_thumbnail_url( $post_id, 'large' );
+        $img_id   = get_post_thumbnail_id( $post_id );
+        $img_meta = wp_get_attachment_metadata( $img_id );
+        $schema['image'] = array(
+            '@type'  => 'ImageObject',
+            'url'    => $img_url,
+            'width'  => $img_meta['width'] ?? 0,
+            'height' => $img_meta['height'] ?? 0,
+        );
     }
 
     // Author — linked attorney from _roden_author_attorney meta.
@@ -1451,27 +1418,20 @@ function roden_schema_contact_page( $firm ) {
         );
     }
 
-    // Use ContactPage @type and reference the Organization by @id instead of
-    // re-declaring it (which would conflict with the fuller homepage definition).
     $schema = array(
-        '@context'  => 'https://schema.org',
-        '@type'     => 'ContactPage',
-        '@id'       => $firm['url'] . '/contact/#contactpage',
-        'name'      => 'Contact ' . $firm['name'],
-        'url'       => $firm['url'] . '/contact/',
-        'about'     => array(
-            '@type' => 'Organization',
-            '@id'   => $firm['url'] . '/#organization',
-            'name'  => $firm['name'],
-        ),
-        'mainEntity' => array(
-            '@type'        => 'Organization',
-            '@id'          => $firm['url'] . '/#organization',
-            'name'         => $firm['name'],
-            'telephone'    => $firm['vanity_phone'],
-            'contactPoint' => $contact_points,
-        ),
+        '@context'     => 'https://schema.org',
+        '@type'        => 'Organization',
+        '@id'          => $firm['url'] . '/#organization',
+        'name'         => $firm['name'],
+        'url'          => $firm['url'],
+        'telephone'    => $firm['vanity_phone'],
+        'contactPoint' => $contact_points,
     );
+
+    $logo_url = roden_get_logo_url();
+    if ( $logo_url ) {
+        $schema['logo'] = $logo_url;
+    }
 
     roden_json_ld( $schema );
 }
@@ -1826,7 +1786,7 @@ function roden_schema_attorneys_list( $firm ) {
         }
 
         $person['worksFor'] = array(
-            '@type' => 'Organization',
+            '@type' => 'LegalService',
             '@id'   => $firm['url'] . '/#organization',
             'name'  => $firm['name'],
         );
@@ -1917,7 +1877,6 @@ function roden_schema_sc_statewide( $firm ) {
     roden_json_ld( array(
         '@context'   => 'https://schema.org',
         '@type'      => 'FAQPage',
-        '@id'        => $page_url . '#faqs',
         'mainEntity' => array(
             array(
                 '@type'          => 'Question',
@@ -1995,7 +1954,6 @@ function roden_schema_case_result( $firm ) {
     $schema = array(
         '@context'    => 'https://schema.org',
         '@type'       => 'CreativeWork',
-        '@id'         => get_permalink( $post_id ) . '#caseresult',
         'name'        => get_the_title( $post_id ),
         'description' => $description ?: wp_trim_words( get_the_excerpt( $post_id ), 30 ),
         'url'         => get_permalink( $post_id ),
@@ -2045,30 +2003,20 @@ function roden_schema_testimonial( $firm ) {
     $post_id = get_the_ID();
     $content = wp_strip_all_tags( get_the_content( null, false, $post_id ) );
 
-    // Client name: use _roden_client_name meta if set, otherwise fall back to post title.
-    $client_name = get_post_meta( $post_id, '_roden_client_name', true );
-    if ( ! $client_name ) {
-        $client_name = get_the_title( $post_id );
-    }
-
-    // Review name: generate a descriptive name distinct from the author.
-    $review_name = 'Review of ' . $firm['name'] . ' by ' . $client_name;
-
     $schema = array(
         '@context'     => 'https://schema.org',
         '@type'        => 'Review',
-        '@id'          => get_permalink( $post_id ) . '#review',
         'itemReviewed' => array(
             '@type' => 'LegalService',
             '@id'   => $firm['url'] . '/#legalservice',
             'name'  => $firm['name'],
         ),
         'reviewBody'   => $content,
-        'name'         => $review_name,
+        'name'         => get_the_title( $post_id ),
         'url'          => get_permalink( $post_id ),
         'author'       => array(
             '@type' => 'Person',
-            'name'  => $client_name,
+            'name'  => get_the_title( $post_id ),
         ),
         'reviewRating' => array(
             '@type'       => 'Rating',
@@ -2081,48 +2029,6 @@ function roden_schema_testimonial( $firm ) {
             'name'  => $firm['name'],
         ),
     );
-
-    roden_json_ld( $schema );
-}
-
-/* ==========================================================================
-   BLOG ARCHIVE — CollectionPage schema
-   ========================================================================== */
-
-function roden_schema_blog_archive( $firm ) {
-    $blog_url = get_permalink( get_option( 'page_for_posts' ) ) ?: home_url( '/blog/' );
-
-    $schema = array(
-        '@context'    => 'https://schema.org',
-        '@type'       => 'CollectionPage',
-        '@id'         => $blog_url . '#collectionpage',
-        'name'        => 'Blog — ' . $firm['name'],
-        'description' => 'Legal insights, guides, and news from the personal injury attorneys at ' . $firm['name'] . '.',
-        'url'         => $blog_url,
-        'isPartOf'    => array(
-            '@type' => 'WebSite',
-            '@id'   => $firm['url'] . '/#website',
-            'name'  => $firm['name'],
-        ),
-    );
-
-    // List recent posts.
-    $posts = get_posts( array(
-        'post_type'      => 'post',
-        'posts_per_page' => 20,
-        'post_status'    => 'publish',
-    ) );
-
-    if ( $posts ) {
-        $schema['hasPart'] = array();
-        foreach ( $posts as $p ) {
-            $schema['hasPart'][] = array(
-                '@type' => 'BlogPosting',
-                'name'  => $p->post_title,
-                'url'   => get_permalink( $p ),
-            );
-        }
-    }
 
     roden_json_ld( $schema );
 }

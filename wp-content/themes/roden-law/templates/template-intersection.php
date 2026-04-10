@@ -78,6 +78,8 @@ $related_subtypes = get_posts( array(
                     Roden Law's <?php echo esc_html( $office['market_name'] ); ?> <?php echo esc_html( strtolower( $parent_title ) ); ?> serve <?php echo esc_html( $office['service_area'] ); ?> No fees unless we win.
                 </p>
 
+                <?php roden_last_updated_date( $post_id ); ?>
+
                 <!-- NAP Block -->
                 <div class="nap-block">
                     <h3 class="nap-name"><?php echo esc_html( $office['name'] ); ?></h3>
@@ -132,7 +134,7 @@ $related_subtypes = get_posts( array(
             foreach ( $all_siblings as $sib ) {
                 $sib_key = get_post_meta( $sib->ID, '_roden_pa_office_key', true );
                 if ( $sib_key ) {
-                    $sibling_urls[ $sib_key ] = roden_get_canonical_url( $sib );
+                    $sibling_urls[ $sib_key ] = get_permalink( $sib );
                 }
             }
             ?>
@@ -169,10 +171,29 @@ $related_subtypes = get_posts( array(
         <!-- MAIN COLUMN -->
         <article class="main-content">
 
+            <!-- AI Definition Block (extractable answer for AI systems) -->
+            <?php roden_ai_definition_block( get_the_title() ); ?>
+
             <!-- Editor Content -->
             <div class="entry-content">
                 <?php the_content(); ?>
             </div>
+
+            <!-- What to Do Steps (AI-extractable for "what to do after X in Y" queries) -->
+            <?php
+            $accident_type_label = $parent_title ? strtolower( str_replace( ' Lawyers', '', $parent_title ) ) : 'an accident';
+            // Convert "car accident" to "a car accident"
+            if ( strpos( $accident_type_label, 'a ' ) !== 0 && strpos( $accident_type_label, 'an ' ) !== 0 ) {
+                $vowels = array( 'a', 'e', 'i', 'o', 'u' );
+                $article = in_array( strtolower( $accident_type_label[0] ), $vowels ) ? 'an ' : 'a ';
+                $accident_type_label = $article . $accident_type_label;
+            }
+            roden_what_to_do_steps(
+                $accident_type_label,
+                $office['market_name'] . ', ' . $office['state'],
+                $office['state_full']
+            );
+            ?>
 
             <!-- State Law Box (single jurisdiction) -->
             <?php if ( $jurisdiction ) : ?>
@@ -294,7 +315,7 @@ $related_subtypes = get_posts( array(
                     <ul class="sidebar-links">
                         <?php foreach ( $related_subtypes as $sib ) : ?>
                             <li>
-                                <a href="<?php echo esc_url( roden_get_canonical_url( $sib ) ); ?>">
+                                <a href="<?php echo esc_url( get_permalink( $sib ) ); ?>">
                                     &rarr; <?php echo esc_html( $sib->post_title ); ?>
                                 </a>
                             </li>

@@ -27,6 +27,8 @@
                     <p class="hero-subtitle"><?php echo wp_kses_post( get_the_excerpt() ); ?></p>
                 <?php endif; ?>
 
+                <?php roden_last_updated_date( $post_id ); ?>
+
                 <?php roden_stats_bar(); ?>
 
                 <div class="hero-actions">
@@ -44,6 +46,9 @@
 <div class="content-with-sidebar">
     <div class="container content-sidebar-grid">
         <article class="main-content">
+
+            <!-- AI Definition Block -->
+            <?php roden_ai_definition_block( get_the_title() ); ?>
 
             <div class="entry-content">
                 <?php the_content(); ?>
@@ -111,7 +116,7 @@
                     <h3 class="widget-title">Related Case Types</h3>
                     <ul class="sidebar-links">
                         <?php foreach ( $siblings as $sib ) : ?>
-                            <li><a href="<?php echo esc_url( roden_get_canonical_url( $sib ) ); ?>">&rarr; <?php echo esc_html( $sib->post_title ); ?></a></li>
+                            <li><a href="<?php echo esc_url( get_permalink( $sib ) ); ?>">&rarr; <?php echo esc_html( $sib->post_title ); ?></a></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>

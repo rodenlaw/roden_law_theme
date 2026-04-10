@@ -43,6 +43,8 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                     <?php endif; ?>
                 </div>
 
+                <?php roden_last_updated_date( $post_id ); ?>
+
                 <?php roden_stats_bar(); ?>
 
                 <div class="hero-actions">
@@ -133,7 +135,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                 // Prefer intersection page; fall back to location page.
                 foreach ( $child_intersections as $ci ) {
                     if ( get_post_meta( $ci->ID, '_roden_pa_office_key', true ) === $key ) {
-                        $matrix_url   = roden_get_canonical_url( $ci );
+                        $matrix_url   = get_permalink( $ci );
                         $matrix_label = 'City Page';
                         break;
                     }
@@ -169,6 +171,11 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
         <article class="main-content">
 
             <!-- ═══════════════════════════════════════════════════════════
+                 AI DEFINITION BLOCK (extractable answer for AI systems)
+                 ═══════════════════════════════════════════════════════════ -->
+            <?php roden_ai_definition_block( get_the_title(), $hero_intro ); ?>
+
+            <!-- ═══════════════════════════════════════════════════════════
                  SECTION 4: WHY HIRE A [Practice Area] LAWYER?
                  ═══════════════════════════════════════════════════════════ -->
             <div class="content-section pa-why-hire" id="pa-overview">
@@ -199,7 +206,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                     <div class="sub-types-grid">
                         <?php if ( $child_subtypes ) : ?>
                             <?php foreach ( $child_subtypes as $cst ) : ?>
-                                <a href="<?php echo esc_url( roden_get_canonical_url( $cst ) ); ?>" class="sub-type-card sub-type-link">
+                                <a href="<?php echo esc_url( get_permalink( $cst ) ); ?>" class="sub-type-card sub-type-link">
                                     <span class="st-name"><?php echo esc_html( $cst->post_title ); ?></span>
                                     <span class="st-arrow">&rarr;</span>
                                 </a>
@@ -585,35 +592,13 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                 <div class="sidebar-widget">
                     <h3 class="widget-title">Related Practice Areas</h3>
                     <?php
-                    // Pull related PAs from the same practice_category first, then fill randomly.
-                    $pa_terms     = wp_get_object_terms( $post_id, 'practice_category', array( 'fields' => 'ids' ) );
-                    $related_pas  = array();
-                    if ( ! is_wp_error( $pa_terms ) && ! empty( $pa_terms ) ) {
-                        $related_pas = get_posts( array(
-                            'post_type'      => 'practice_area',
-                            'posts_per_page' => 7,
-                            'exclude'        => array( $post_id ),
-                            'post_parent'    => 0,
-                            'orderby'        => 'rand',
-                            'tax_query'      => array( array(
-                                'taxonomy' => 'practice_category',
-                                'field'    => 'term_id',
-                                'terms'    => $pa_terms,
-                            ) ),
-                        ) );
-                    }
-                    // Back-fill if fewer than 7 category-matched results.
-                    if ( count( $related_pas ) < 7 ) {
-                        $exclude_ids = array_merge( array( $post_id ), wp_list_pluck( $related_pas, 'ID' ) );
-                        $fill = get_posts( array(
-                            'post_type'      => 'practice_area',
-                            'posts_per_page' => 7 - count( $related_pas ),
-                            'exclude'        => $exclude_ids,
-                            'post_parent'    => 0,
-                            'orderby'        => 'rand',
-                        ) );
-                        $related_pas = array_merge( $related_pas, $fill );
-                    }
+                    $related_pas = get_posts( array(
+                        'post_type'      => 'practice_area',
+                        'posts_per_page' => 7,
+                        'exclude'        => array( $post_id ),
+                        'post_parent'    => 0,
+                        'orderby'        => 'rand',
+                    ) );
                     if ( $related_pas ) :
                         echo '<ul class="sidebar-links">';
                         foreach ( $related_pas as $r ) {
