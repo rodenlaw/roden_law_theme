@@ -253,6 +253,12 @@ function roden_seo_get_description() {
 /**
  * Auto-generate a meta description for singular posts.
  *
+ * Each template is crafted to:
+ * - Include the primary keyword naturally (title / practice area / location).
+ * - Add a unique data point per page (stat, jurisdiction, service area) so no
+ *   two pages produce an identical description.
+ * - End with a CTA that fits within 155-160 chars.
+ *
  * @param int   $post_id Post ID.
  * @param array $firm    Firm data.
  * @return string
@@ -264,56 +270,253 @@ function roden_seo_auto_description( $post_id, $firm ) {
     switch ( $post_type ) {
         case 'practice_area':
         case 'practice-area':
-            $post = get_post( $post_id );
-            if ( $post->post_parent ) {
-                // Intersection or sub-type — include parent context.
-                // Check both meta keys: _roden_pa_office_key (current) and _roden_office_key (legacy).
-                $office_key = get_post_meta( $post_id, '_roden_pa_office_key', true );
-                if ( ! $office_key ) {
-                    $office_key = get_post_meta( $post_id, '_roden_office_key', true );
-                }
-
-                if ( $office_key && isset( $firm['offices'][ $office_key ] ) ) {
-                    // Intersection page — shorter template to stay under 155 chars.
-                    $office = $firm['offices'][ $office_key ];
-                    $city   = $office['city'] . ', ' . $office['state'];
-                    return roden_seo_truncate( $title . '. Local personal injury lawyers in ' . $city . '. Free consultation — no fees unless we win.', 155 );
-                }
-
-                // Sub-type page.
-                return roden_seo_truncate( $title . '. ' . $firm['name'] . ' handles ' . strtolower( $title ) . ' cases across Georgia and South Carolina. Free consultation.', 155 );
-            }
-
-            // Pillar page.
-            return roden_seo_truncate( $title . ' at ' . $firm['name'] . '. Serving Georgia and South Carolina with over $250M recovered. Free consultation — no fees unless we win.', 160 );
+            return roden_seo_auto_desc_practice_area( $post_id, $title, $firm );
 
         case 'location':
-            $office_key = get_post_meta( $post_id, '_roden_office_key', true );
-            $offices = $firm['offices'];
-            $city = isset( $offices[ $office_key ] ) ? $offices[ $office_key ]['city'] . ', ' . $offices[ $office_key ]['state'] : '';
-            return roden_seo_truncate( $firm['name'] . ' in ' . $city . '. Personal injury lawyers with local expertise. Free consultation — call today.', 160 );
+            return roden_seo_auto_desc_location( $post_id, $title, $firm );
 
         case 'attorney':
-            $atty_title = get_post_meta( $post_id, '_roden_title', true );
-            $label = $atty_title ? $title . ', ' . $atty_title : $title;
-            return roden_seo_truncate( $label . ' at ' . $firm['name'] . '. Personal injury attorney serving Georgia and South Carolina.', 160 );
+            return roden_seo_auto_desc_attorney( $post_id, $title, $firm );
 
         case 'case_result':
-            $amount = get_post_meta( $post_id, '_roden_amount', true );
-            $type   = get_post_meta( $post_id, '_roden_result_type', true );
-            $prefix = $amount ? $amount . ' ' . ucfirst( $type ?: 'recovery' ) . '. ' : '';
-            return roden_seo_truncate( $prefix . $title . '. ' . $firm['name'] . ' — over $250 million recovered for injured clients.', 160 );
+            return roden_seo_auto_desc_case_result( $post_id, $title, $firm );
 
         case 'resource':
-            return roden_seo_truncate( $title . '. Free legal resource from ' . $firm['name'] . '. Personal injury guidance for Georgia and South Carolina.', 160 );
+            return roden_seo_auto_desc_resource( $post_id, $title, $firm );
 
         case 'post':
         default:
-            // Blog posts — first 160 chars of content.
-            $content = get_the_content( null, false, $post_id );
-            $content = wp_strip_all_tags( strip_shortcodes( $content ) );
-            return roden_seo_truncate( $content, 160 );
+            return roden_seo_auto_desc_blog( $post_id, $title, $firm );
     }
+}
+
+/**
+ * Meta description for practice_area posts (pillar, intersection, sub-type).
+ */
+function roden_seo_auto_desc_practice_area( $post_id, $title, $firm ) {
+    $post = get_post( $post_id );
+
+    if ( ! $post->post_parent ) {
+        // --- Pillar page ---
+        // e.g. "Car Accident Lawyers serving Georgia & South Carolina. Over $250M recovered. Free consultation — no fees unless we win."
+        return roden_seo_truncate(
+            $title . ' serving Georgia & South Carolina. Over $250M recovered. Free consultation — no fees unless we win.',
+            160
+        );
+    }
+
+    // Child page — intersection or sub-type.
+    $office_key = get_post_meta( $post_id, '_roden_pa_office_key', true );
+    if ( ! $office_key ) {
+        $office_key = get_post_meta( $post_id, '_roden_office_key', true );
+    }
+
+    $parent      = get_post( $post->post_parent );
+    $parent_name = $parent ? get_the_title( $parent ) : '';
+
+    if ( $office_key && isset( $firm['offices'][ $office_key ] ) ) {
+        // --- Intersection page ---
+        $office = $firm['offices'][ $office_key ];
+        $city   = $office['city'];
+        $state  = $office['state_full'];
+        $court  = $office['court'];
+        $sol    = isset( $firm['jurisdiction'][ $office['state'] ]['statute_years'] )
+            ? $firm['jurisdiction'][ $office['state'] ]['statute_years'] . '-year'
+            : '';
+
+        // e.g. "Experienced car accident lawyers in Savannah, Georgia. 2-year filing deadline. Local team near Chatham County Superior Court. Free case review."
+        $desc = $parent_name . ' in ' . $city . ', ' . $state . '.';
+        if ( $sol ) {
+            $desc .= ' ' . ucfirst( $sol ) . ' filing deadline.';
+        }
+        $desc .= ' Local team near ' . $court . '. Free case review.';
+        return roden_seo_truncate( $desc, 160 );
+    }
+
+    // --- Sub-type page ---
+    // e.g. "Drunk driver accident lawyers at Roden Law. Experienced with drunk driving injury claims in Georgia & South Carolina. Free consultation."
+    // Strip trailing "Lawyers" / "Attorneys" to build a natural phrase.
+    $case_type = preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', $title );
+    $desc = $title . ' at ' . $firm['name'] . '. Experienced with '
+        . strtolower( $case_type ) . ' injury claims in Georgia & South Carolina. Free consultation.';
+    return roden_seo_truncate( $desc, 160 );
+}
+
+/**
+ * Meta description for location posts.
+ */
+function roden_seo_auto_desc_location( $post_id, $title, $firm ) {
+    $office_key = get_post_meta( $post_id, '_roden_office_key', true );
+
+    // Neighborhood pages (no office key or _roden_is_neighborhood flag).
+    $is_neighborhood = get_post_meta( $post_id, '_roden_is_neighborhood', true );
+    if ( $is_neighborhood ) {
+        $parent_key = get_post_meta( $post_id, '_roden_parent_office_key', true );
+        $parent_office = ( $parent_key && isset( $firm['offices'][ $parent_key ] ) )
+            ? $firm['offices'][ $parent_key ] : null;
+        $near = $parent_office ? ' near ' . $parent_office['city'] : '';
+        return roden_seo_truncate(
+            'Personal injury lawyers serving ' . $title . $near . '. ' . $firm['name'] . ' — free consultation, no fees unless we win.',
+            160
+        );
+    }
+
+    if ( ! $office_key || ! isset( $firm['offices'][ $office_key ] ) ) {
+        return roden_seo_truncate(
+            $firm['name'] . ' — ' . $title . '. Personal injury lawyers serving Georgia & South Carolina. Free consultation.',
+            160
+        );
+    }
+
+    $office = $firm['offices'][ $office_key ];
+
+    // Build service area snippet — first 3 cities from service_area string.
+    $svc = $office['service_area'];
+    $cities_str = '';
+    if ( $svc ) {
+        $parts = array_map( 'trim', explode( ',', strtok( $svc, '.' ) ) );
+        // Take up to 3 nearby cities (skip the office city itself, which is usually first).
+        $nearby = array_slice( array_filter( $parts, function( $c ) use ( $office ) {
+            return stripos( $c, $office['city'] ) === false && stripos( $c, 'surrounding' ) === false;
+        }), 0, 3 );
+        if ( $nearby ) {
+            $cities_str = ' Also serving ' . implode( ', ', $nearby ) . '.';
+        }
+    }
+
+    // e.g. "Roden Law in Savannah, GA — personal injury lawyers with over $250M recovered. Also serving Pooler, Richmond Hill, Hinesville. Call (912) 303-5850."
+    return roden_seo_truncate(
+        $firm['name'] . ' in ' . $office['city'] . ', ' . $office['state']
+        . ' — personal injury lawyers with over $250M recovered.'
+        . $cities_str
+        . ' Call ' . $office['phone'] . '.',
+        160
+    );
+}
+
+/**
+ * Meta description for attorney posts.
+ */
+function roden_seo_auto_desc_attorney( $post_id, $title, $firm ) {
+    // Title / role.
+    $atty_title = get_post_meta( $post_id, '_roden_atty_title', true );
+    $label = $atty_title ? $title . ', ' . $atty_title : $title . ', Personal Injury Attorney';
+
+    // Office location.
+    $office_key = get_post_meta( $post_id, '_roden_atty_office_key', true );
+    $office_city = '';
+    if ( $office_key && isset( $firm['offices'][ $office_key ] ) ) {
+        $o = $firm['offices'][ $office_key ];
+        $office_city = $o['city'] . ', ' . $o['state'];
+    }
+
+    // Bar admissions — extract state names.
+    $bar_raw = get_post_meta( $post_id, '_roden_bar_admissions', true );
+    $bar_str = '';
+    if ( $bar_raw ) {
+        // Bar field may be textarea with lines like "Georgia, 2015" or serialized.
+        $states = array();
+        foreach ( explode( "\n", $bar_raw ) as $line ) {
+            $line = trim( $line );
+            if ( $line ) {
+                $parts = array_map( 'trim', explode( ',', $line ) );
+                if ( $parts ) {
+                    $states[] = $parts[0]; // State name.
+                }
+            }
+        }
+        $states = array_unique( $states );
+        if ( $states ) {
+            $bar_str = ' Licensed in ' . implode( ' & ', array_slice( $states, 0, 2 ) ) . '.';
+        }
+    }
+
+    // e.g. "Eric Roden, Founding Partner at Roden Law in Savannah, GA. Licensed in Georgia & South Carolina. Free consultation."
+    $desc = $label . ' at ' . $firm['name'];
+    if ( $office_city ) {
+        $desc .= ' in ' . $office_city;
+    }
+    $desc .= '.' . $bar_str . ' Free consultation.';
+    return roden_seo_truncate( $desc, 160 );
+}
+
+/**
+ * Meta description for case_result posts.
+ */
+function roden_seo_auto_desc_case_result( $post_id, $title, $firm ) {
+    $amount = get_post_meta( $post_id, '_roden_case_amount', true );
+    if ( ! $amount ) {
+        $amount = get_post_meta( $post_id, '_roden_amount', true );
+    }
+    $type = get_post_meta( $post_id, '_roden_case_result_type', true );
+    if ( ! $type ) {
+        $type = get_post_meta( $post_id, '_roden_result_type', true );
+    }
+
+    if ( $amount ) {
+        // e.g. "$3,000,000 Settlement — Truck Accident Case. Roden Law has recovered over $250M for injured clients across Georgia & South Carolina."
+        $prefix = $amount . ' ' . ucfirst( $type ?: 'Recovery' ) . ' — ';
+        return roden_seo_truncate(
+            $prefix . $title . '. ' . $firm['name'] . ' has recovered over $250M for injured clients across Georgia & South Carolina.',
+            160
+        );
+    }
+
+    return roden_seo_truncate(
+        $title . '. ' . $firm['name'] . ' — over $250 million recovered for injured clients in Georgia & South Carolina.',
+        160
+    );
+}
+
+/**
+ * Meta description for resource posts.
+ */
+function roden_seo_auto_desc_resource( $post_id, $title, $firm ) {
+    // Pull jurisdiction for context.
+    $jurisdiction = get_post_meta( $post_id, '_roden_jurisdiction', true );
+    $geo = 'Georgia & South Carolina';
+    if ( 'georgia' === strtolower( $jurisdiction ) || 'ga' === strtolower( $jurisdiction ) ) {
+        $geo = 'Georgia';
+    } elseif ( 'south-carolina' === strtolower( $jurisdiction ) || 'sc' === strtolower( $jurisdiction ) ) {
+        $geo = 'South Carolina';
+    }
+
+    // e.g. "What to Do After a Car Accident in Georgia. Step-by-step legal guide from Roden Law. Know your rights and protect your claim."
+    return roden_seo_truncate(
+        $title . '. Step-by-step legal guide from ' . $firm['name'] . '. Know your rights and protect your claim in ' . $geo . '.',
+        160
+    );
+}
+
+/**
+ * Meta description for blog posts.
+ */
+function roden_seo_auto_desc_blog( $post_id, $title, $firm ) {
+    // Try excerpt-quality content first: manual excerpt > first paragraph of content.
+    $excerpt = get_the_excerpt( $post_id );
+    if ( $excerpt ) {
+        $cleaned = wp_strip_all_tags( $excerpt );
+        // Only use if it's a real excerpt, not auto-generated content trim.
+        if ( mb_strlen( $cleaned ) >= 50 ) {
+            return roden_seo_truncate( $cleaned, 160 );
+        }
+    }
+
+    // Extract first meaningful paragraph from post content.
+    $content = get_post_field( 'post_content', $post_id );
+    $content = strip_shortcodes( $content );
+    $content = wp_strip_all_tags( $content );
+    $content = preg_replace( '/\s+/', ' ', trim( $content ) );
+
+    if ( mb_strlen( $content ) >= 50 ) {
+        return roden_seo_truncate( $content, 160 );
+    }
+
+    // Final fallback.
+    return roden_seo_truncate(
+        $title . '. Personal injury insights from ' . $firm['name'] . ', serving Georgia & South Carolina.',
+        160
+    );
 }
 
 /* ==========================================================================
