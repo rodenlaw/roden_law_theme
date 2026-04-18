@@ -59,7 +59,7 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
 
             <?php if ( has_post_thumbnail() ) : ?>
                 <figure class="post-featured-image">
-                    <?php the_post_thumbnail( 'large', array( 'alt' => esc_attr( get_the_title() ) ) ); ?>
+                    <?php the_post_thumbnail( 'large' ); ?>
                 </figure>
             <?php endif; ?>
 
@@ -157,7 +157,7 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
                     $pas = get_posts(['post_type'=>'practice_area','posts_per_page'=>6,'orderby'=>'menu_order','order'=>'ASC']);
                     echo '<ul class="sidebar-links">';
                     foreach ( $pas as $pa ) {
-                        echo '<li><a href="' . esc_url(roden_get_canonical_url($pa)) . '">→ ' . esc_html($pa->post_title) . '</a></li>';
+                        echo '<li><a href="' . esc_url(get_permalink($pa)) . '">→ ' . esc_html($pa->post_title) . '</a></li>';
                     }
                     echo '</ul>';
                     ?>

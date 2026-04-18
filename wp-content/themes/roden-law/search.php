@@ -69,7 +69,7 @@ $firm = roden_firm_data();
                         <h3 style="margin-top: 24px;">Popular Practice Areas</h3>
                         <div class="sub-types-grid" style="margin-bottom: 24px;">
                             <?php foreach ( $popular_pas as $pa ) : ?>
-                                <a href="<?php echo esc_url( roden_get_canonical_url( $pa ) ); ?>" class="sub-type-card sub-type-link">
+                                <a href="<?php echo esc_url( get_permalink( $pa ) ); ?>" class="sub-type-card sub-type-link">
                                     <span class="st-name"><?php echo esc_html( $pa->post_title ); ?></span>
                                     <span class="st-arrow">&rarr;</span>
                                 </a>
@@ -124,7 +124,7 @@ $firm = roden_firm_data();
                     $pas = get_posts( [ 'post_type' => 'practice_area', 'posts_per_page' => 6, 'orderby' => 'menu_order', 'order' => 'ASC' ] );
                     echo '<ul class="sidebar-links">';
                     foreach ( $pas as $pa ) {
-                        echo '<li><a href="' . esc_url( roden_get_canonical_url( $pa ) ) . '">' . esc_html( $pa->post_title ) . '</a></li>';
+                        echo '<li><a href="' . esc_url( get_permalink( $pa ) ) . '">' . esc_html( $pa->post_title ) . '</a></li>';
                     }
                     echo '</ul>';
                     ?>

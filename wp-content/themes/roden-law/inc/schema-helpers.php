@@ -402,12 +402,14 @@ function roden_schema_local_business_office( $firm, $key, $office ) {
         ),
     );
 
-    // aggregateRating — only output when per-office GBP review count has been populated.
-    $review_count = isset( $office['review_count'] ) ? intval( $office['review_count'] ) : 0;
+    // aggregateRating — output when per-office GBP review count has been populated.
+    // review_count and review_rating are set in inc/firm-data.php per office.
+    $review_count  = isset( $office['review_count'] ) ? intval( $office['review_count'] ) : 0;
+    $review_rating = isset( $office['review_rating'] ) ? $office['review_rating'] : '4.9';
     if ( $review_count > 0 ) {
         $schema['aggregateRating'] = array(
             '@type'       => 'AggregateRating',
-            'ratingValue' => '4.9',
+            'ratingValue' => $review_rating,
             'bestRating'  => '5',
             'worstRating' => '1',
             'reviewCount' => $review_count,
@@ -1153,6 +1155,9 @@ function roden_schema_speakable_practice_area() {
                 '.hero p',
                 '.ai-definition-block',
                 '.what-to-do-steps',
+                '.expert-quote-block',
+                '.jurisdiction-comparison',
+                '.ai-stats-block',
             ),
         ),
     ) );

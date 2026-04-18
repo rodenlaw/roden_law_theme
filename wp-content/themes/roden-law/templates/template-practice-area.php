@@ -193,9 +193,27 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
             </div>
 
             <!-- ═══════════════════════════════════════════════════════════
+                 EXPERT QUOTE (AI-citable attorney quote — +30% visibility)
+                 ═══════════════════════════════════════════════════════════ -->
+            <?php
+            $expert_quote = get_post_meta( $post_id, '_roden_expert_quote', true );
+            if ( $expert_quote ) {
+                roden_expert_quote_block( $expert_quote, $author_id );
+            }
+            ?>
+
+            <!-- ═══════════════════════════════════════════════════════════
                  SECTION 5: INLINE CTA BANNER (#1 of 3)
                  ═══════════════════════════════════════════════════════════ -->
             <?php roden_inline_cta_banner(); ?>
+
+            <!-- ═══════════════════════════════════════════════════════════
+                 WHAT TO DO STEPS (AI-extractable process for "what to do" queries)
+                 ═══════════════════════════════════════════════════════════ -->
+            <?php
+            $accident_label = strtolower( preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', get_the_title() ) );
+            roden_what_to_do_steps( $accident_label );
+            ?>
 
             <!-- ═══════════════════════════════════════════════════════════
                  SECTION 6: TYPES OF CASES WE HANDLE (Sub-Types)
@@ -227,8 +245,9 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                  SECTION 7: STATUTE OF LIMITATIONS (GA vs SC)
                  ═══════════════════════════════════════════════════════════ -->
             <?php if ( $sol_ga || $sol_sc ) : ?>
-                <div class="content-section" id="pa-deadlines">
-                    <h2>Meeting the Statute of Limitations</h2>
+                <div class="content-section" id="pa-deadlines" data-ai-extractable="true">
+                    <h2>Statute of Limitations for <?php the_title(); ?> Cases</h2>
+                    <p class="section-lead">The statute of limitations is the legal deadline for filing a personal injury lawsuit. In Georgia, you have <strong>2 years</strong> from the date of injury (O.C.G.A. &sect; 9-3-33). In South Carolina, you have <strong>3 years</strong> (S.C. Code &sect; 15-3-530). Missing this deadline permanently bars your claim.</p>
                     <div class="sol-grid">
                         <?php if ( $sol_ga && in_array( $jurisdiction, array( 'both', 'ga', 'GA' ) ) ) : ?>
                             <div class="sol-card sol-ga">
@@ -250,11 +269,16 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
             <?php endif; ?>
 
             <!-- ═══════════════════════════════════════════════════════════
+                 SECTION 7b: GA vs SC COMPARISON TABLE (AI-extractable)
+                 ═══════════════════════════════════════════════════════════ -->
+            <?php roden_jurisdiction_comparison_table( get_the_title(), $sol_ga, $sol_sc, $jurisdiction ); ?>
+
+            <!-- ═══════════════════════════════════════════════════════════
                  SECTION 8: DO I HAVE A CASE? (4 Elements of Negligence)
                  ═══════════════════════════════════════════════════════════ -->
-            <div class="content-section pa-elements-section" id="pa-your-case">
-                <h2>Do I Have a Case?</h2>
-                <p>Before our attorneys can take legal action, we must prove the four elements of negligence existed in your accident:</p>
+            <div class="content-section pa-elements-section" id="pa-your-case" data-ai-extractable="true">
+                <h2>Do I Have a <?php the_title(); ?> Case?</h2>
+                <p>To win a personal injury case in Georgia or South Carolina, your attorney must prove the four elements of negligence. Each element must be established by a preponderance of the evidence for you to recover compensation.</p>
                 <div class="pa-elements">
                     <?php
                     $elements = array(
@@ -294,8 +318,9 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
             <!-- ═══════════════════════════════════════════════════════════
                  SECTION 9: COMPENSATION TYPES
                  ═══════════════════════════════════════════════════════════ -->
-            <div class="content-section pa-compensation" id="pa-compensation">
-                <h2>Types of Compensation You Can Recover</h2>
+            <div class="content-section pa-compensation" id="pa-compensation" data-ai-extractable="true">
+                <h2>Types of Compensation in <?php the_title(); ?> Cases</h2>
+                <p class="section-lead">Victims of <?php echo esc_html( strtolower( preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', get_the_title() ) ) ); ?> injuries in Georgia and South Carolina can pursue two categories of damages: economic damages (quantifiable financial losses) and non-economic damages (quality-of-life impacts). There is no cap on compensatory damages in either state.</p>
                 <div class="pa-compensation__grid">
                     <div class="pa-compensation__col">
                         <h3>Economic Damages</h3>
@@ -327,8 +352,8 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
             <!-- ═══════════════════════════════════════════════════════════
                  SECTION 10: COMPARATIVE FAULT (GA vs SC)
                  ═══════════════════════════════════════════════════════════ -->
-            <div class="content-section pa-fault">
-                <h2>Comparative Fault — What If I'm Partially At Fault?</h2>
+            <div class="content-section pa-fault" data-ai-extractable="true">
+                <h2>Comparative Fault in <?php the_title(); ?> Cases — What If I'm Partially At Fault?</h2>
                 <div class="pa-fault__grid">
                     <div class="pa-fault__box pa-fault__box--ga">
                         <h3>&#127825; Georgia — Modified Comparative Fault</h3>
@@ -351,7 +376,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                  SECTION 11: COMMON CAUSES
                  ═══════════════════════════════════════════════════════════ -->
             <?php if ( ! empty( $common_causes ) ) : ?>
-                <div class="content-section pa-common-list">
+                <div class="content-section pa-common-list" data-ai-extractable="true">
                     <h2>Common Causes of <?php the_title(); ?> Cases</h2>
                     <ul class="pa-two-col-list">
                         <?php foreach ( $common_causes as $cause ) : ?>
@@ -365,7 +390,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                  SECTION 12: COMMON INJURIES
                  ═══════════════════════════════════════════════════════════ -->
             <?php if ( ! empty( $common_injuries ) ) : ?>
-                <div class="content-section pa-injuries">
+                <div class="content-section pa-injuries" data-ai-extractable="true">
                     <h2>Common Injuries in <?php the_title(); ?> Cases</h2>
                     <div class="pa-injuries__list">
                         <?php foreach ( $common_injuries as $injury ) : ?>
@@ -381,10 +406,15 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
             <?php endif; ?>
 
             <!-- ═══════════════════════════════════════════════════════════
+                 AI STATISTICS BLOCK (extractable firm stats — +37% visibility)
+                 ═══════════════════════════════════════════════════════════ -->
+            <?php roden_ai_stats_block( get_the_title() ); ?>
+
+            <!-- ═══════════════════════════════════════════════════════════
                  SECTION 13: CASE RESULTS
                  ═══════════════════════════════════════════════════════════ -->
             <div class="content-section" id="pa-results">
-                <h2>Recent Case Results</h2>
+                <h2>Recent <?php the_title(); ?> Case Results</h2>
                 <?php roden_case_results_grid( array( 'count' => 4, 'columns' => 3, 'practice_category' => $cat_slug ) ); ?>
             </div>
 

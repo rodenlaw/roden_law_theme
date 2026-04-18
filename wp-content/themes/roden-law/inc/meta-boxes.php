@@ -82,6 +82,14 @@ function roden_add_meta_boxes() {
     );
 
     add_meta_box(
+        'roden_pa_expert_quote',
+        __( 'Expert Quote (AI SEO)', 'roden-law' ),
+        'roden_pa_expert_quote_meta_box',
+        'practice_area',
+        'normal'
+    );
+
+    add_meta_box(
         'roden_pa_common_causes',
         __( 'Common Causes', 'roden-law' ),
         'roden_pa_common_causes_meta_box',
@@ -315,6 +323,20 @@ function roden_pa_why_hire_meta_box( $post ) {
     ) );
     ?>
     <p class="description"><?php esc_html_e( '2-3 paragraphs explaining why this specific type of case needs an attorney. Must be unique per practice area.', 'roden-law' ); ?></p>
+    <?php
+}
+
+/** Expert Quote meta box — AI-citable attorney quote for practice area pages. */
+function roden_pa_expert_quote_meta_box( $post ) {
+    wp_nonce_field( 'roden_pa_expert_quote_nonce', '_roden_pa_expert_quote_nonce' );
+    $value = get_post_meta( $post->ID, '_roden_expert_quote', true );
+    ?>
+    <p>
+        <label for="roden_expert_quote"><strong><?php esc_html_e( 'Attorney quote about this practice area:', 'roden-law' ); ?></strong></label><br>
+        <textarea id="roden_expert_quote" name="_roden_expert_quote"
+                  rows="3" style="width:100%;"><?php echo esc_textarea( $value ); ?></textarea>
+    </p>
+    <p class="description"><?php esc_html_e( 'A 1-2 sentence quote from the assigned author attorney. Will be displayed with their name, title, and bar admissions. AI systems cite expert quotes +30% more often.', 'roden-law' ); ?></p>
     <?php
 }
 
@@ -995,6 +1017,14 @@ function roden_save_meta_fields( $post_id ) {
          wp_verify_nonce( $_POST['_roden_pa_why_hire_nonce'], 'roden_pa_why_hire_nonce' ) ) {
         update_post_meta( $post_id, '_roden_why_hire',
             wp_kses_post( $_POST['_roden_why_hire'] ?? '' ) );
+    }
+
+    /* ── Practice Area: Expert Quote (AI SEO) ─────────────────── */
+
+    if ( isset( $_POST['_roden_pa_expert_quote_nonce'] ) &&
+         wp_verify_nonce( $_POST['_roden_pa_expert_quote_nonce'], 'roden_pa_expert_quote_nonce' ) ) {
+        update_post_meta( $post_id, '_roden_expert_quote',
+            sanitize_textarea_field( $_POST['_roden_expert_quote'] ?? '' ) );
     }
 
     /* ── Practice Area: Common Causes ───────────────────────────── */

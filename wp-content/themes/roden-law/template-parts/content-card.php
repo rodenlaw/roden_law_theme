@@ -15,7 +15,7 @@ $cat_name   = ! empty($categories) ? $categories[0]->name : '';
 <article class="blog-card" id="post-<?php the_ID(); ?>">
     <?php if ( has_post_thumbnail() ) : ?>
         <a href="<?php the_permalink(); ?>" class="blog-card-image">
-            <?php the_post_thumbnail( 'card-thumb', array( 'alt' => esc_attr( get_the_title() ) ) ); ?>
+            <?php the_post_thumbnail( 'card-thumb' ); ?>
             <?php if ( $cat_name ) : ?>
                 <span class="blog-card-tag"><?php echo esc_html($cat_name); ?></span>
             <?php endif; ?>

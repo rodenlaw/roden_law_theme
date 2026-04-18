@@ -1076,9 +1076,7 @@ a.sub-type-link:hover { background: var(--light); border-color: var(--orange); }
 .faq-answer {
     padding: 14px 18px; font-size: 13px; color: var(--gray-700);
     line-height: 1.8; border-top: 1px solid var(--gray-100);
-    display: none; /* collapsed by default — toggled via .faq-answer-open class */
 }
-.faq-answer.faq-answer-open { display: block; }
 .faq-answer p { margin: 0; }
 
 /* ─── AUTHOR ATTRIBUTION ──────────────────────────────────────────────── */
