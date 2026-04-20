@@ -97,6 +97,11 @@ $footer_practice_areas = array(
                                 <?php esc_html_e( 'Other Personal Injuries', 'roden-law' ); ?>
                             </a>
                         </li>
+                        <li>
+                            <a href="<?php echo esc_url( home_url( '/resources/' ) ); ?>">
+                                <?php esc_html_e( 'Resources', 'roden-law' ); ?>
+                            </a>
+                        </li>
                     </ul>
                 </div>
 

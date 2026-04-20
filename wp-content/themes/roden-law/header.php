@@ -136,6 +136,7 @@ function roden_fallback_menu() {
                 <li class="menu-item"><a href="<?php echo esc_url( home_url( '/attorneys/' ) ); ?>"><?php esc_html_e( 'Attorneys', 'roden-law' ); ?></a></li>
                 <li class="menu-item"><a href="<?php echo esc_url( home_url( '/testimonials/' ) ); ?>"><?php esc_html_e( 'Testimonials', 'roden-law' ); ?></a></li>
                 <li class="menu-item"><a href="<?php echo esc_url( home_url( '/blog/' ) ); ?>"><?php esc_html_e( 'Blog', 'roden-law' ); ?></a></li>
+                <li class="menu-item"><a href="<?php echo esc_url( home_url( '/resources/' ) ); ?>"><?php esc_html_e( 'Resources', 'roden-law' ); ?></a></li>
             </ul>
         </li>
         <li class="menu-item"><a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"><?php esc_html_e( 'Contact', 'roden-law' ); ?></a></li>
