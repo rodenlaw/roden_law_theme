@@ -19,10 +19,11 @@ function roden_register_nav_menus() {
 }
 
 /**
- * Inject "Resources" link into the About Us submenu of the primary nav.
+ * Inject "Resources" link into the primary/mobile nav.
  *
- * Works whether the menu is a WP admin-assigned menu or the fallback.
- * Appends the link after "Blog" inside the About Us sub-menu.
+ * Appends after the last </li> in the menu (end of top-level items).
+ * If "Blog" is found, inserts after it. Otherwise appends to the end
+ * of the menu before the Contact item.
  */
 add_filter( 'wp_nav_menu_items', 'roden_inject_resources_nav_link', 10, 2 );
 function roden_inject_resources_nav_link( $items, $args ) {
@@ -30,13 +31,29 @@ function roden_inject_resources_nav_link( $items, $args ) {
         return $items;
     }
 
+    // Don't add if already present.
+    if ( false !== strpos( $items, '/resources/' ) ) {
+        return $items;
+    }
+
     $resources_link = '<li class="menu-item"><a href="' . esc_url( home_url( '/resources/' ) ) . '">Resources</a></li>';
 
-    // Insert after the Blog link inside the About Us sub-menu.
-    $blog_pattern = '/(<a[^>]*href="[^"]*\/blog\/[^"]*"[^>]*>Blog<\/a><\/li>)/i';
+    // Try to insert after a Blog link (any format).
+    $blog_pattern = '/(<li[^>]*>\\s*<a[^>]*>[^<]*Blog[^<]*<\/a>\\s*<\/li>)/i';
     if ( preg_match( $blog_pattern, $items ) ) {
-        $items = preg_replace( $blog_pattern, '$1' . "\n" . '                ' . $resources_link, $items, 1 );
+        $items = preg_replace( $blog_pattern, '$1' . "\n" . $resources_link, $items, 1 );
+        return $items;
     }
+
+    // Fallback: insert before the Contact menu item.
+    $contact_pattern = '/(<li[^>]*>\\s*<a[^>]*>[^<]*Contact[^<]*<\/a>)/i';
+    if ( preg_match( $contact_pattern, $items ) ) {
+        $items = preg_replace( $contact_pattern, $resources_link . "\n" . '$1', $items, 1 );
+        return $items;
+    }
+
+    // Last resort: append to end.
+    $items .= "\n" . $resources_link;
 
     return $items;
 }
