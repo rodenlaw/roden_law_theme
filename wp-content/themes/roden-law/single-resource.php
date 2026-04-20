@@ -37,6 +37,12 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
                 </div>
             <?php endif; ?>
             <span class="post-date"><?php echo esc_html( get_the_date() ); ?></span>
+            <?php
+            $modified = get_the_modified_date( 'U' );
+            $published = get_the_date( 'U' );
+            if ( $modified && ( $modified - $published ) > 86400 ) : ?>
+                <span class="post-updated">Updated: <?php echo esc_html( get_the_modified_date() ); ?></span>
+            <?php endif; ?>
             <span class="post-read-time"><?php echo (int) roden_reading_time(); ?> min read</span>
         </div>
     </div>

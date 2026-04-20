@@ -174,10 +174,49 @@ $related_subtypes = get_posts( array(
             <!-- AI Definition Block (extractable answer for AI systems) -->
             <?php roden_ai_definition_block( get_the_title() ); ?>
 
-            <!-- Editor Content -->
-            <div class="entry-content">
-                <?php the_content(); ?>
-            </div>
+            <!-- ═══════════════════════════════════════════════════════════
+                 WHY HIRE SECTION (uses own content, then parent fallback)
+                 ═══════════════════════════════════════════════════════════ -->
+            <?php
+            $int_why_hire = get_post_meta( $post_id, '_roden_why_hire', true );
+            if ( $int_why_hire ) : ?>
+                <div class="content-section pa-why-hire">
+                    <h2>Why Hire <?php echo esc_html( $parent_title ); ?> in <?php echo esc_html( $office['market_name'] ); ?>?</h2>
+                    <div class="pa-why-hire__body">
+                        <?php echo apply_filters( 'the_content', $int_why_hire ); ?>
+                    </div>
+                </div>
+            <?php elseif ( get_the_content() ) : ?>
+                <div class="entry-content">
+                    <?php the_content(); ?>
+                </div>
+            <?php elseif ( $parent_post ) :
+                $parent_why_hire = get_post_meta( $parent_post->ID, '_roden_why_hire', true );
+                if ( $parent_why_hire ) : ?>
+                <div class="content-section pa-why-hire">
+                    <h2>Why Hire <?php echo esc_html( $parent_title ); ?> in <?php echo esc_html( $office['market_name'] ); ?>?</h2>
+                    <div class="pa-why-hire__body">
+                        <?php echo apply_filters( 'the_content', $parent_why_hire ); ?>
+                    </div>
+                </div>
+                <?php endif; ?>
+            <?php endif; ?>
+            <p>At Roden Law, our <?php echo esc_html( $office['market_name'] ); ?> personal injury attorneys have helped clients across <?php echo esc_html( $office['state_full'] ); ?> secure millions in compensation. We provide a free, no-obligation case review and charge no upfront legal fees.</p>
+
+            <!-- ═══════════════════════════════════════════════════════════
+                 EXPERT QUOTE (AI-citable attorney quote — +30% visibility)
+                 ═══════════════════════════════════════════════════════════ -->
+            <?php
+            $expert_quote = get_post_meta( $post_id, '_roden_expert_quote', true );
+            if ( ! $expert_quote && $parent_post ) {
+                $expert_quote = get_post_meta( $parent_post->ID, '_roden_expert_quote', true );
+            }
+            if ( $expert_quote ) {
+                roden_expert_quote_block( $expert_quote, $author_id );
+            }
+            ?>
+
+            <?php roden_inline_cta_banner(); ?>
 
             <!-- What to Do Steps (AI-extractable for "what to do after X in Y" queries) -->
             <?php
@@ -222,7 +261,75 @@ $related_subtypes = get_posts( array(
             </div>
             <?php endif; ?>
 
+            <!-- ═══════════════════════════════════════════════════════════
+                 ELEMENTS OF NEGLIGENCE (AI-extractable)
+                 ═══════════════════════════════════════════════════════════ -->
+            <?php
+            $accident_label_clean = strtolower( preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', $parent_title ) );
+            ?>
+            <div class="content-section pa-elements-section" data-ai-extractable="true">
+                <h2>Do I Have a <?php echo esc_html( ucfirst( $accident_label_clean ) ); ?> Case in <?php echo esc_html( $office['market_name'] ); ?>?</h2>
+                <p>To win a personal injury case in <?php echo esc_html( $office['state_full'] ); ?>, your attorney must prove four elements of negligence by a preponderance of the evidence.</p>
+                <div class="pa-elements">
+                    <?php
+                    $elements = array(
+                        array( 'num' => '01', 'title' => 'Duty of Care', 'body' => 'The other party owed you a legal duty to act in a manner that ensured your safety.' ),
+                        array( 'num' => '02', 'title' => 'Breach of Duty', 'body' => 'The other party breached that duty by failing to act as a reasonably prudent person would have in the same situation.' ),
+                        array( 'num' => '03', 'title' => 'Causation', 'body' => 'The breach directly caused your injuries. We gather evidence proving that but for their negligence, you would not have been harmed.' ),
+                        array( 'num' => '04', 'title' => 'Damages', 'body' => 'You suffered actual, quantifiable damages — medical expenses, lost income, pain and suffering — as a direct result of the at-fault party\'s breach.' ),
+                    );
+                    foreach ( $elements as $el ) : ?>
+                        <div class="pa-element">
+                            <div class="pa-element__num"><?php echo esc_html( $el['num'] ); ?></div>
+                            <div class="pa-element__content">
+                                <h3><?php echo esc_html( $el['title'] ); ?></h3>
+                                <p><?php echo esc_html( $el['body'] ); ?></p>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+
+            <!-- ═══════════════════════════════════════════════════════════
+                 COMPENSATION TYPES (AI-extractable)
+                 ═══════════════════════════════════════════════════════════ -->
+            <div class="content-section pa-compensation" data-ai-extractable="true">
+                <h2>Types of Compensation in <?php echo esc_html( $office['state_full'] ); ?> <?php echo esc_html( ucfirst( $accident_label_clean ) ); ?> Cases</h2>
+                <p class="section-lead">Victims of <?php echo esc_html( $accident_label_clean ); ?> injuries in <?php echo esc_html( $office['state_full'] ); ?> can pursue two categories of damages: economic damages (quantifiable financial losses) and non-economic damages (quality-of-life impacts). There is no cap on compensatory damages in <?php echo esc_html( $office['state_full'] ); ?>.</p>
+                <div class="pa-compensation__grid">
+                    <div class="pa-compensation__col">
+                        <h3>Economic Damages</h3>
+                        <ul>
+                            <li>Past and future medical expenses</li>
+                            <li>Lost wages or income</li>
+                            <li>Loss of earning capacity</li>
+                            <li>Property damage and vehicle repair/replacement</li>
+                            <li>Cost of rehabilitation and physical therapy</li>
+                            <li>Assistive medical equipment</li>
+                            <li>Cost of long-term or lifelong care</li>
+                        </ul>
+                    </div>
+                    <div class="pa-compensation__col">
+                        <h3>Non-Economic Damages</h3>
+                        <ul>
+                            <li>Pain and suffering</li>
+                            <li>Mental and emotional distress</li>
+                            <li>Loss of companionship (spouse/family)</li>
+                            <li>Disability and disfigurement</li>
+                            <li>Loss of enjoyment of life</li>
+                            <li>Humiliation or loss of reputation</li>
+                        </ul>
+                        <p class="pa-compensation__note"><em>Non-economic damages can only be pursued through a personal injury lawsuit, not a standard insurance claim.</em></p>
+                    </div>
+                </div>
+            </div>
+
             <?php roden_inline_cta_banner(); ?>
+
+            <!-- ═══════════════════════════════════════════════════════════
+                 AI STATISTICS BLOCK (+37% visibility)
+                 ═══════════════════════════════════════════════════════════ -->
+            <?php roden_ai_stats_block( get_the_title() ); ?>
 
             <!-- Office Attorneys -->
             <div class="content-section">

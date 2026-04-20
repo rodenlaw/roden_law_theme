@@ -70,6 +70,8 @@ $faqs          = get_post_meta( $post_id, '_roden_faqs', true );
                     Roden Law's <?php echo esc_html( $office['market_name'] ); ?> personal injury attorneys have recovered <strong><?php echo esc_html( $stats['recovered'] ); ?></strong> for injury victims across <?php echo esc_html( $service_area ); ?> No fees unless we win.
                 </p>
 
+                <?php roden_last_updated_date( $post_id ); ?>
+
                 <!-- Trust Stats (matching homepage hero-stats) -->
                 <div class="hero-stats">
                     <div class="hero-stat">
@@ -241,6 +243,28 @@ if ( ! empty( $neighborhood_children ) ) :
         </div>
     </div>
 </section>
+
+<!-- ================================================================
+     5b. EXPERT QUOTE (AI-citable — +30% visibility)
+     ================================================================ -->
+<?php
+// Try to find an expert quote from the lead attorney at this office
+$location_attorneys = get_posts( array(
+    'post_type'      => 'attorney',
+    'posts_per_page' => 1,
+    'meta_key'       => '_roden_office_key',
+    'meta_value'     => $office_key,
+    'orderby'        => 'menu_order',
+    'order'          => 'ASC',
+) );
+$loc_expert_quote = get_post_meta( $post_id, '_roden_expert_quote', true );
+if ( $loc_expert_quote && ! empty( $location_attorneys ) ) {
+    roden_expert_quote_block( $loc_expert_quote, $location_attorneys[0]->ID );
+} elseif ( $loc_expert_quote ) {
+    // Show quote without specific attorney attribution
+    echo '<blockquote class="expert-quote-block" data-ai-extractable="true"><p>&ldquo;' . wp_kses_post( $loc_expert_quote ) . '&rdquo;</p><footer><cite>&mdash; Roden Law, ' . esc_html( $office['market_name'] ) . ' Office</cite></footer></blockquote>';
+}
+?>
 
 <!-- ================================================================
      6. WHY CHOOSE — 4-column cards (full-width)

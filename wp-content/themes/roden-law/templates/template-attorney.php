@@ -62,6 +62,8 @@
                     <?php endif; ?>
                 </div>
 
+                <?php roden_last_updated_date( $post_id ); ?>
+
                 <div class="hero-actions">
                     <?php if ( $office ) : ?>
                         <a href="tel:<?php echo esc_attr($firm['phone_raw']); ?>" class="btn btn-primary btn-lg">&#128222; <?php echo esc_html($firm['vanity_phone']); ?></a>
@@ -82,6 +84,85 @@
             <h2>About <?php the_title(); ?></h2>
             <div class="entry-content">
                 <?php the_content(); ?>
+            </div>
+
+            <!-- ═══════════════════════════════════════════════════════════
+                 EXPERT QUOTE (AI-citable — +30% visibility)
+                 ═══════════════════════════════════════════════════════════ -->
+            <?php
+            $atty_quote = get_post_meta( $post_id, '_roden_expert_quote', true );
+            if ( $atty_quote ) : ?>
+                <blockquote class="expert-quote-block" data-ai-extractable="true" itemscope itemtype="https://schema.org/Quotation">
+                    <p itemprop="text">&ldquo;<?php echo wp_kses_post( $atty_quote ); ?>&rdquo;</p>
+                    <footer>
+                        <cite itemscope itemtype="https://schema.org/Person">
+                            &mdash; <span itemprop="name"><?php the_title(); ?></span>,
+                            <?php if ( $title ) : ?>
+                                <span itemprop="jobTitle"><?php echo esc_html( $title ); ?></span>,
+                            <?php endif; ?>
+                            <span itemprop="worksFor" itemscope itemtype="https://schema.org/LegalService">
+                                <span itemprop="name">Roden Law</span>
+                            </span>
+                        </cite>
+                    </footer>
+                </blockquote>
+            <?php endif; ?>
+
+            <!-- ═══════════════════════════════════════════════════════════
+                 PRACTICE AREA SPECIALIZATIONS (GEO: topical authority)
+                 ═══════════════════════════════════════════════════════════ -->
+            <?php
+            // Find practice areas where this attorney is the assigned author
+            $attorney_pas = get_posts( array(
+                'post_type'      => 'practice_area',
+                'posts_per_page' => 20,
+                'post_parent'    => 0,
+                'meta_key'       => '_roden_author_attorney',
+                'meta_value'     => $post_id,
+                'orderby'        => 'title',
+                'order'          => 'ASC',
+            ) );
+            if ( $attorney_pas ) : ?>
+                <div class="content-section attorney-specializations" data-ai-extractable="true">
+                    <h2><?php the_title(); ?>&rsquo;s Practice Areas</h2>
+                    <p><?php the_title(); ?> focuses on the following areas of personal injury law, serving clients across <?php echo $office ? esc_html( $office['state_full'] ) : 'Georgia and South Carolina'; ?>:</p>
+                    <div class="specialization-grid">
+                        <?php foreach ( $attorney_pas as $pa ) : ?>
+                            <a href="<?php echo esc_url( get_permalink( $pa ) ); ?>" class="specialization-card">
+                                <span class="spec-name"><?php echo esc_html( $pa->post_title ); ?></span>
+                                <span class="spec-arrow">&rarr;</span>
+                            </a>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+            <?php endif; ?>
+
+            <!-- ═══════════════════════════════════════════════════════════
+                 EXPERIENCE & RESULTS NARRATIVE (E-E-A-T depth)
+                 ═══════════════════════════════════════════════════════════ -->
+            <?php
+            $firm = roden_firm_data();
+            $years_experience = get_post_meta( $post_id, '_roden_years_experience', true );
+            ?>
+            <div class="content-section attorney-experience" data-ai-extractable="true">
+                <h2>Experience &amp; Track Record</h2>
+                <div class="experience-stats">
+                    <?php if ( $years_experience ) : ?>
+                        <div class="exp-stat">
+                            <span class="exp-stat__num"><?php echo esc_html( $years_experience ); ?>+</span>
+                            <span class="exp-stat__label">Years of Experience</span>
+                        </div>
+                    <?php endif; ?>
+                    <div class="exp-stat">
+                        <span class="exp-stat__num"><?php echo esc_html( $firm['recovered'] ); ?></span>
+                        <span class="exp-stat__label">Recovered (Firm Total)</span>
+                    </div>
+                    <div class="exp-stat">
+                        <span class="exp-stat__num"><?php echo esc_html( $firm['rating'] ); ?>&#9733;</span>
+                        <span class="exp-stat__label">Client Rating</span>
+                    </div>
+                </div>
+                <p><?php the_title(); ?> and the Roden Law team have recovered over <?php echo esc_html( $firm['recovered'] ); ?> for injured clients across Georgia and South Carolina. <?php if ( $office ) : ?>Based in <?php echo esc_html( $office['market_name'] ); ?>, <?php the_title(); ?> regularly appears before the <?php echo esc_html( $office['court'] ); ?> and is deeply familiar with local procedures and judges.<?php endif; ?></p>
             </div>
 
             <!-- Education -->
