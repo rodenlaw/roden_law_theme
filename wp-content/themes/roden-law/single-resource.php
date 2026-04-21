@@ -52,6 +52,15 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
     <div class="container content-sidebar-grid">
 
         <article class="main-content entry-content">
+            <?php
+            $key_takeaways = get_post_meta( $post_id, '_roden_key_takeaways', true );
+            if ( $key_takeaways ) : ?>
+                <section class="key-takeaways-box">
+                    <h2 class="key-takeaways-title">Key Takeaways</h2>
+                    <p><?php echo wp_kses_post( $key_takeaways ); ?></p>
+                </section>
+            <?php endif; ?>
+
             <?php if ( has_post_thumbnail() ) : ?>
                 <figure class="post-featured-image">
                     <?php the_post_thumbnail( 'large' ); ?>

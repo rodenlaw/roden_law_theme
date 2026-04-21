@@ -51,7 +51,7 @@ function roden_add_meta_boxes() {
         'roden_key_takeaways',
         __( 'Key Takeaways (AI Summary)', 'roden-law' ),
         'roden_key_takeaways_meta_box',
-        'post',
+        array( 'post', 'resource' ),
         'normal',
         'high'
     );
