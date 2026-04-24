@@ -22,6 +22,10 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
+error_reporting( E_ALL );
+ini_set( 'display_errors', 1 );
+WP_CLI::log( 'Charleston seeder starting...' );
+
 /* ------------------------------------------------------------------
    Author attribution
    ------------------------------------------------------------------ */
