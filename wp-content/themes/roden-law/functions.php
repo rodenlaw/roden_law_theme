@@ -273,6 +273,11 @@ function roden_exclude_toxic_pages_from_sitemap( $args, $post_type ) {
             'south-carolina-car-accident-lawyer',                   // Duplicates PA CPT intersection.
             'class-actions',                                         // Old page, redirects to /class-action-lawyers/.
             'home-espanol',                                          // Old Spanish homepage, no longer served.
+            'who-we-are',                                            // Redirects to /about/.
+            'contact-us',                                            // Redirects to /contact/.
+            'areas-we-serve',                                        // Redirects to /locations/.
+            'results',                                               // Redirects to /case-results/.
+            'terms-privacy-policy',                                  // Redirects to /privacy-policy/.
         );
 
         // Get post IDs by slug to exclude.
@@ -301,6 +306,16 @@ function roden_exclude_toxic_pages_from_sitemap( $args, $post_type ) {
                 $exclude_ids[] = $pa_page_id;
             }
         }
+
+        // Exclude /practice-areas/service-areas/ child page — redirects to /locations/.
+        $service_area_pages = get_posts( array(
+            'post_type'      => 'page',
+            'post_status'    => 'publish',
+            'name'           => 'service-areas',
+            'fields'         => 'ids',
+            'posts_per_page' => 5,
+        ) );
+        $exclude_ids = array_merge( $exclude_ids, $service_area_pages );
 
         if ( ! empty( $exclude_ids ) ) {
             $existing = isset( $args['post__not_in'] ) ? $args['post__not_in'] : array();
