@@ -357,11 +357,11 @@ HTML,
 <tr><th>Month</th><th>Primary Truck Danger</th><th>Why</th></tr>
 </thead>
 <tbody>
-<tr><td>March–April</td><td>Construction vehicles</td><td>Hotels and attractions rush renovations before summer; dump trucks, flatbeds, and concrete mixers crowd roadways</td></tr>
+<tr><td>March-April</td><td>Construction vehicles</td><td>Hotels and attractions rush renovations before summer; dump trucks, flatbeds, and concrete mixers crowd roadways</td></tr>
 <tr><td>May</td><td>Construction + early delivery surge</td><td>Renovation projects overlap with increasing tourist traffic; delivery trucks ramp up to stock businesses</td></tr>
-<tr><td>June–August</td><td>All truck types peak simultaneously</td><td>Population triples; delivery, fuel, construction, and moving trucks all operate at maximum volume alongside peak tourist traffic</td></tr>
+<tr><td>June-August</td><td>All truck types peak simultaneously</td><td>Population triples; delivery, fuel, construction, and moving trucks all operate at maximum volume alongside peak tourist traffic</td></tr>
 <tr><td>September</td><td>Delivery trucks + moving trucks</td><td>End-of-season turnover; businesses restocking and seasonal workers moving out</td></tr>
-<tr><td>October–November</td><td>Construction vehicles return</td><td>Post-season renovation window; construction trucks return to roads with reduced but still significant traffic</td></tr>
+<tr><td>October-November</td><td>Construction vehicles return</td><td>Post-season renovation window; construction trucks return to roads with reduced but still significant traffic</td></tr>
 </tbody>
 </table>
 
