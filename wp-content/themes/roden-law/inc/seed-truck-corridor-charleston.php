@@ -22,10 +22,6 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-error_reporting( E_ALL );
-ini_set( 'display_errors', 1 );
-file_put_contents( '/tmp/charleston-seeder.log', "Starting charleston seeder at " . date('Y-m-d H:i:s') . "\n" );
-
 /* ------------------------------------------------------------------
    Author attribution
    ------------------------------------------------------------------ */

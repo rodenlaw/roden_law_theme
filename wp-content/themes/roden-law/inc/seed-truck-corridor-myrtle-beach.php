@@ -20,22 +20,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /* ------------------------------------------------------------------
-   Author attribution — Myrtle Beach / Grand Strand attorney
+   Author attribution
    ------------------------------------------------------------------ */
 
-$author_id = 0;
-$slugs_to_try = array( 'nolan-alexander', 'kiley-reidy', 'graeham-c-gillin' );
-foreach ( $slugs_to_try as $slug ) {
-    $atty = get_page_by_path( $slug, OBJECT, 'attorney' );
-    if ( $atty ) {
-        $author_id = $atty->ID;
-        WP_CLI::log( "Author: {$atty->post_title} (ID {$author_id})" );
-        break;
-    }
-}
-if ( ! $author_id ) {
-    WP_CLI::warning( 'No attorney found for author attribution.' );
-}
+$graeham = get_page_by_path( 'graeham-c-gillin', OBJECT, 'attorney' );
+$author_id = $graeham ? $graeham->ID : 0;
+WP_CLI::log( $author_id ? "Author: Graeham C. Gillin (ID {$author_id})" : 'WARNING: Attorney not found.' );
 
 /* ------------------------------------------------------------------
    Taxonomy terms
@@ -312,7 +302,7 @@ HTML,
     array(
         'title'      => 'Seasonal Truck Accident Dangers in Myrtle Beach',
         'slug'       => 'seasonal-truck-accidents-myrtle-beach',
-        'excerpt'    => 'The only guide covering how Myrtle Beach\'s seasonal tourism cycle creates unique truck accident dangers. Population triples in summer, increasing delivery trucks, construction vehicles, fuel tankers, and moving trucks on roads shared with tourists. South Carolina truck accident law (S.C. Code § 15-3-530).',
+        'excerpt'    => 'Guide to seasonal truck accident dangers in Myrtle Beach, SC. Population triples in summer, increasing delivery trucks, construction vehicles, fuel tankers, and moving trucks on roads shared with tourists. South Carolina truck accident law (S.C. Code 15-3-530).',
         'categories' => array( 'truck-accidents' ),
         'content'    => <<<'HTML'
 <h2>Why Myrtle Beach Has a Seasonal Truck Accident Problem No One Talks About</h2>
