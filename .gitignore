@@ -1,0 +1,25 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Dependencies
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Next.js
+next/.next/
+next/out/
+
+# Vercel
+.vercel
+
+# Claude Code local state
+.claude/
