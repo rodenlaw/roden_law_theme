@@ -37,7 +37,7 @@ $subtypes = array(
         array( 'url' => $wd,     'text' => 'Wrongful Death Lawyers' ),
         array( 'url' => $brain,  'text' => 'Brain Injury Lawyers' ),
     ),
-    'overloaded-cargo-accident' => array(
+    'overloaded-improperly-loaded-cargo' => array(
         array( 'url' => '/resources/port-of-savannah-truck-routes/',           'text' => 'Port of Savannah Truck Routes' ),
         array( 'url' => '/resources/port-of-charleston-truck-routes/',         'text' => 'Port of Charleston Truck Routes' ),
         array( 'url' => '/resources/pooler-warehouse-district-truck-accidents/', 'text' => 'Pooler Warehouse District Truck Accidents' ),

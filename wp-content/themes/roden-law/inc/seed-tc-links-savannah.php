@@ -25,7 +25,7 @@ $constr  = '/practice-areas/construction-accident-lawyers/';
 // Truck sub-type URLs
 $st_18w   = '/practice-areas/truck-accident-lawyers/18-wheeler-semi-truck-accident/';
 $st_fat   = '/practice-areas/truck-accident-lawyers/fatigued-trucker-accident/';
-$st_cargo = '/practice-areas/truck-accident-lawyers/overloaded-cargo-accident/';
+$st_cargo = '/practice-areas/truck-accident-lawyers/overloaded-improperly-loaded-cargo/';
 $st_brake = '/practice-areas/truck-accident-lawyers/brake-failure-accident/';
 $st_under = '/practice-areas/truck-accident-lawyers/underride-override-accident/';
 $st_deliv = '/practice-areas/truck-accident-lawyers/commercial-van-delivery-truck-accident/';
