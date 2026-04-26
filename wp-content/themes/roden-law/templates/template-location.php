@@ -218,6 +218,65 @@ if ( ! empty( $neighborhood_children ) ) :
 <?php endif; ?>
 
 <!-- ================================================================
+     4c. LOCAL LEGAL RESOURCES (auto-renders resources relevant to this office)
+     ================================================================ -->
+<?php
+$loc_resource_query = new WP_Query( array(
+    'post_type'      => 'resource',
+    'posts_per_page' => 6,
+    'post_status'    => 'publish',
+    'orderby'        => 'date',
+    'order'          => 'DESC',
+) );
+if ( $loc_resource_query->have_posts() ) :
+    // Filter and boost resources relevant to this office's geographic area.
+    $loc_boosted = array();
+    $loc_rest    = array();
+    $loc_market_slug = sanitize_title( $office['market_name'] );
+    $loc_city_slug   = sanitize_title( $office['city'] );
+    $loc_state_lower = strtolower( $office['state'] );
+
+    while ( $loc_resource_query->have_posts() ) {
+        $loc_resource_query->the_post();
+        $r_slug = get_post_field( 'post_name', get_the_ID() );
+        $r_item = array(
+            'title' => get_the_title(),
+            'url'   => get_the_permalink(),
+        );
+        if ( strpos( $r_slug, $loc_market_slug ) !== false || strpos( $r_slug, $loc_city_slug ) !== false ) {
+            $loc_boosted[] = $r_item;
+        } else {
+            $loc_rest[] = $r_item;
+        }
+    }
+    wp_reset_postdata();
+
+    // Only show this section if we have at least 1 local resource.
+    if ( ! empty( $loc_boosted ) ) :
+        $loc_items = array_slice( array_merge( $loc_boosted, $loc_rest ), 0, 6 );
+?>
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Legal Resources for <?php echo esc_html( $office['market_name'] ); ?></h2>
+            <p class="section-subtitle">Guides and resources about accident hotspots, local roads, and injury claims in the <?php echo esc_html( $office['market_name'] ); ?> area.</p>
+        </div>
+        <div class="pa-resources__grid">
+            <?php foreach ( $loc_items as $lr ) : ?>
+                <a href="<?php echo esc_url( $lr['url'] ); ?>" class="resource-link">
+                    <span class="resource-link__title"><?php echo esc_html( $lr['title'] ); ?></span>
+                    <span class="resource-link__arrow">&rarr;</span>
+                </a>
+            <?php endforeach; ?>
+        </div>
+    </div>
+</section>
+<?php
+    endif;
+endif;
+?>
+
+<!-- ================================================================
      5. ABOUT — full-width section with the_content()
      ================================================================ -->
 <section class="section">

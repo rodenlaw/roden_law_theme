@@ -343,6 +343,17 @@ $related_subtypes = get_posts( array(
                 <?php roden_case_results_grid( array( 'count' => 3, 'columns' => 3, 'practice_category' => $cat_slug ) ); ?>
             </div>
 
+            <!-- Related Guides & Resources (local + practice-area filtered) -->
+            <?php
+            roden_related_resources( array(
+                'count'      => 4,
+                'cat_slug'   => $cat_slug,
+                'office_key' => $pa_office_key,
+                'heading'    => 'Local ' . esc_html( $parent_title ) . ' Resources',
+                'display'    => 'section',
+            ) );
+            ?>
+
             <!-- Author Attribution (E-E-A-T) -->
             <?php if ( $author_id ) :
                 $atty = get_post( $author_id );

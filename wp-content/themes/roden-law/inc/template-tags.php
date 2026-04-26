@@ -1263,6 +1263,153 @@ function roden_expert_quote_block( $quote, $attorney_id = 0 ) {
  * @param string $sol_sc              SC statute of limitations text.
  * @param string $jurisdiction        'both', 'ga', or 'sc'. Only 'both' shows the table.
  */
+/* ==========================================================================
+   RELATED RESOURCES — for sidebars and content sections
+   ========================================================================== */
+
+/**
+ * Render a list of related resource posts.
+ *
+ * Queries resources by practice_category taxonomy and/or geographic relevance
+ * (office slug in the resource's post_name). Useful in intersection, sub-type,
+ * location, and resource page sidebars/sections.
+ *
+ * @param array $args {
+ *     @type int    $count          Max resources to show. Default 6.
+ *     @type string $cat_slug       practice_category slug to filter by.
+ *     @type string $office_key     Office key for geographic relevance (matches slug fragments).
+ *     @type string $heading        Section heading. Default 'Related Guides'.
+ *     @type string $display        'sidebar' for compact list, 'section' for card grid. Default 'sidebar'.
+ *     @type int    $exclude        Post ID to exclude (current resource page).
+ * }
+ */
+function roden_related_resources( $args = array() ) {
+    $defaults = array(
+        'count'      => 6,
+        'cat_slug'   => '',
+        'office_key' => '',
+        'heading'    => 'Related Guides',
+        'display'    => 'sidebar',
+        'exclude'    => 0,
+    );
+    $args = wp_parse_args( $args, $defaults );
+
+    $firm = roden_firm_data();
+
+    // Build query: filter by practice_category if provided.
+    $query_args = array(
+        'post_type'      => 'resource',
+        'posts_per_page' => $args['count'] + 4, // over-fetch to allow dedup/filtering
+        'post_status'    => 'publish',
+        'orderby'        => 'date',
+        'order'          => 'DESC',
+    );
+
+    if ( $args['exclude'] ) {
+        $query_args['post__not_in'] = array( $args['exclude'] );
+    }
+
+    if ( $args['cat_slug'] ) {
+        $query_args['tax_query'] = array(
+            array(
+                'taxonomy' => 'practice_category',
+                'field'    => 'slug',
+                'terms'    => $args['cat_slug'],
+            ),
+        );
+    }
+
+    $resources = new WP_Query( $query_args );
+
+    if ( ! $resources->have_posts() ) {
+        wp_reset_postdata();
+        return;
+    }
+
+    // If office_key provided, boost resources whose slug contains the office's city/market name.
+    $boosted = array();
+    $rest    = array();
+    $office_slugs = array();
+
+    if ( $args['office_key'] && isset( $firm['offices'][ $args['office_key'] ] ) ) {
+        $o = $firm['offices'][ $args['office_key'] ];
+        $office_slugs[] = sanitize_title( $o['city'] );
+        $office_slugs[] = sanitize_title( $o['market_name'] );
+        // Add state-level identifiers
+        $office_slugs[] = strtolower( $o['state'] );
+    }
+
+    while ( $resources->have_posts() ) {
+        $resources->the_post();
+        $slug = get_post_field( 'post_name', get_the_ID() );
+
+        $is_local = false;
+        foreach ( $office_slugs as $fragment ) {
+            if ( strpos( $slug, $fragment ) !== false ) {
+                $is_local = true;
+                break;
+            }
+        }
+
+        $item = array(
+            'id'    => get_the_ID(),
+            'title' => get_the_title(),
+            'url'   => get_the_permalink(),
+        );
+
+        if ( $is_local ) {
+            $boosted[] = $item;
+        } else {
+            $rest[] = $item;
+        }
+    }
+    wp_reset_postdata();
+
+    // Merge: local resources first, then others, capped at $count.
+    $items = array_slice( array_merge( $boosted, $rest ), 0, $args['count'] );
+
+    if ( empty( $items ) ) {
+        return;
+    }
+
+    if ( 'section' === $args['display'] ) :
+    // Full-width card grid (for main content area)
+    ?>
+    <div class="content-section pa-guides">
+        <h2><?php echo esc_html( $args['heading'] ); ?></h2>
+        <div class="pa-resources__grid">
+            <?php foreach ( $items as $item ) : ?>
+                <a href="<?php echo esc_url( $item['url'] ); ?>" class="resource-link">
+                    <span class="resource-link__title"><?php echo esc_html( $item['title'] ); ?></span>
+                    <span class="resource-link__arrow">&rarr;</span>
+                </a>
+            <?php endforeach; ?>
+        </div>
+    </div>
+    <?php
+    else :
+    // Sidebar list
+    ?>
+    <div class="sidebar-widget sidebar-related-resources">
+        <h3 class="widget-title"><?php echo esc_html( $args['heading'] ); ?></h3>
+        <ul class="sidebar-links">
+            <?php foreach ( $items as $item ) : ?>
+                <li>
+                    <a href="<?php echo esc_url( $item['url'] ); ?>">
+                        &rarr; <?php echo esc_html( $item['title'] ); ?>
+                    </a>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+    <?php
+    endif;
+}
+
+/* ==========================================================================
+   JURISDICTION COMPARISON TABLE
+   ========================================================================== */
+
 function roden_jurisdiction_comparison_table( $practice_area_title, $sol_ga = '', $sol_sc = '', $jurisdiction = 'both' ) {
     // Only show comparison table when both jurisdictions apply.
     if ( 'both' !== strtolower( $jurisdiction ) ) {

@@ -71,6 +71,23 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
 
             <?php roden_inline_cta_banner(); ?>
 
+            <?php
+            // See Also links (internal link injection via _roden_see_also meta)
+            $see_also = get_post_meta( $post_id, '_roden_see_also', true );
+            if ( ! empty( $see_also ) && is_array( $see_also ) ) : ?>
+                <div class="content-section see-also-section">
+                    <h2>Related Pages</h2>
+                    <div class="pa-resources__grid">
+                        <?php foreach ( $see_also as $link ) : ?>
+                            <a href="<?php echo esc_url( home_url( $link['url'] ) ); ?>" class="resource-link">
+                                <span class="resource-link__title"><?php echo esc_html( $link['text'] ); ?></span>
+                                <span class="resource-link__arrow">&rarr;</span>
+                            </a>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+            <?php endif; ?>
+
             <?php roden_faq_section( $post_id ); ?>
 
             <?php roden_author_attribution( $post_id ); ?>
@@ -81,6 +98,19 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
                 <?php roden_contact_form_sidebar(); ?>
 
                 <?php roden_filing_deadlines_sidebar(); ?>
+
+                <?php
+                // Related resources (sibling resources in same practice_category)
+                $res_cat_terms = wp_get_object_terms( $post_id, 'practice_category', array( 'fields' => 'slugs' ) );
+                $res_cat_slug  = ( ! is_wp_error( $res_cat_terms ) && ! empty( $res_cat_terms ) ) ? $res_cat_terms[0] : '';
+                roden_related_resources( array(
+                    'count'   => 5,
+                    'cat_slug' => $res_cat_slug,
+                    'heading'  => 'Related Guides',
+                    'display'  => 'sidebar',
+                    'exclude'  => $post_id,
+                ) );
+                ?>
 
                 <?php roden_related_practice_areas( 6 ); ?>
 

@@ -226,6 +226,40 @@
                 <?php roden_case_results_grid( [ 'count' => 3, 'columns' => 3 ] ); ?>
             </div>
 
+            <!-- See Also links (internal link injection via _roden_see_also meta) -->
+            <?php
+            $see_also = get_post_meta( $post_id, '_roden_see_also', true );
+            if ( ! empty( $see_also ) && is_array( $see_also ) ) : ?>
+                <div class="content-section see-also-section">
+                    <h2>Related Pages</h2>
+                    <div class="pa-resources__grid">
+                        <?php foreach ( $see_also as $link ) : ?>
+                            <a href="<?php echo esc_url( home_url( $link['url'] ) ); ?>" class="resource-link">
+                                <span class="resource-link__title"><?php echo esc_html( $link['text'] ); ?></span>
+                                <span class="resource-link__arrow">&rarr;</span>
+                            </a>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+            <?php endif; ?>
+
+            <!-- Related Guides & Resources -->
+            <?php
+            $subtype_cat_slug = '';
+            $subtype_pa_terms = $parent_post ? wp_get_object_terms( $parent_post->ID, 'practice_category', array( 'fields' => 'slugs' ) ) : array();
+            if ( ! is_wp_error( $subtype_pa_terms ) && ! empty( $subtype_pa_terms ) ) {
+                $subtype_cat_slug = $subtype_pa_terms[0];
+            }
+            if ( $subtype_cat_slug ) {
+                roden_related_resources( array(
+                    'count'   => 4,
+                    'cat_slug' => $subtype_cat_slug,
+                    'heading'  => 'Related Guides & Legal Resources',
+                    'display'  => 'section',
+                ) );
+            }
+            ?>
+
             <!-- ═══════════════════════════════════════════════════════════
                  AUTHOR ATTRIBUTION (E-E-A-T)
                  ═══════════════════════════════════════════════════════════ -->
