@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'wordpress/**'
 
 concurrency:
   group: deploy-wpengine
@@ -33,7 +35,8 @@ jobs:
             IdentitiesOnly yes
           EOL
 
-      - name: Deploy via Git Push
+      - name: Deploy wordpress/ subtree to WP Engine
         run: |
           git remote add wpengine git@git.wpengine.com:rodenlawdev1.git
-          git push wpengine main --force
+          git subtree split --prefix=wordpress -b deploy-branch
+          git push wpengine deploy-branch:main --force

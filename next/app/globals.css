@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Colors — from WordPress style.css */
+  --color-navy: #013046;
+  --color-navy-dark: #001a2e;
+  --color-navy-light: #1a5f80;
+  --color-orange: #FCB415;
+  --color-orange-light: #FDC94A;
+  --color-orange-dark: #D49B00;
+  --color-orange-text: #B8860B;
+  --color-green: #27AE60;
+  --color-light: #F8F6F2;
+  --color-border: #E0DDD8;
+  --color-gray-50: #fafafa;
+  --color-gray-100: #f5f5f5;
+  --color-gray-200: #e0e0e0;
+  --color-gray-300: #cccccc;
+  --color-gray-400: #767676;
+  --color-gray-500: #717171;
+  --color-gray-600: #666666;
+  --color-gray-700: #555555;
+  --color-gray-800: #333333;
+  --color-gray-900: #1a1a1a;
+
+  /* Fonts */
+  --font-heading: var(--font-merriweather);
+  --font-body: var(--font-inter);
+}
+
+/* Base styles */
+body {
+  font-family: var(--font-body);
+  color: var(--color-gray-800);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-navy);
+  line-height: 1.25;
+}
+
+a {
+  color: var(--color-navy);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover { color: var(--color-orange-text); }
+
+blockquote {
+  border-left: 4px solid var(--color-orange);
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  background: var(--color-light);
+  font-style: italic;
+}
+
+/* Focus states — WCAG 2.1 */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--color-orange);
+  outline-offset: 2px;
+}
+
+/* Screen reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
