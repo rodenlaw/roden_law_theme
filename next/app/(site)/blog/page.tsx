@@ -5,6 +5,7 @@ import { getBlogPosts } from "@/lib/queries/blog";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { urlForImage } from "@/sanity/lib/image";
 
+export const revalidate = 3600;
 export const metadata: Metadata = {
   title: "Blog",
   description: "Legal insights, accident news, and injury law resources for Georgia and South Carolina residents — written by licensed personal injury attorneys.",

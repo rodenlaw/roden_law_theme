@@ -5,6 +5,7 @@ import { getFirmData } from "@/lib/firm-data";
 import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { BottomCta } from "@/components/sections/BottomCta";
 
+export const revalidate = 3600;
 export const metadata: Metadata = {
   title: "Case Results",
   description: "View Roden Law's case results. Over $250M recovered for injured clients across Georgia and South Carolina.",

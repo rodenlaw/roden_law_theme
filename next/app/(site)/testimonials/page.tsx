@@ -5,6 +5,7 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { BottomCta } from "@/components/sections/BottomCta";
 import { PortableText } from "@/components/shared/PortableText";
 
+export const revalidate = 3600;
 export const metadata: Metadata = {
   title: "Testimonials",
   description: "Read what our clients say about Roden Law. 500+ five-star reviews across Georgia and South Carolina.",

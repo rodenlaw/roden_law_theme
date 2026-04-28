@@ -7,6 +7,8 @@ import { Breadcrumbs } from "@/components/shared/Breadcrumbs";
 import { BottomCta } from "@/components/sections/BottomCta";
 import { urlForImage } from "@/sanity/lib/image";
 
+export const revalidate = 3600; // Revalidate every hour
+
 export const metadata: Metadata = {
   title: "Our Attorneys",
   description: "Meet the experienced personal injury attorneys at Roden Law. Licensed in Georgia and South Carolina.",
