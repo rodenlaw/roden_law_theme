@@ -18,8 +18,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { neighborhood } = await params;
-  const loc = await getNeighborhoodBySlug(neighborhood);
+  const { city, neighborhood } = await params;
+  const loc = await getNeighborhoodBySlug(neighborhood, city);
   if (!loc) return {};
   return {
     title: loc.title,
@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function NeighborhoodPage({ params }: Props) {
   const { state, city, neighborhood } = await params;
-  const loc = await getNeighborhoodBySlug(neighborhood);
+  const loc = await getNeighborhoodBySlug(neighborhood, city);
   if (!loc) notFound();
 
   const firm = getFirmData();

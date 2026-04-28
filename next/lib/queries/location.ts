@@ -1,4 +1,5 @@
 import { client } from "@/sanity/lib/client";
+import { getFirmData, type OfficeKey } from "@/lib/firm-data";
 
 const LOCATION_FIELDS = `
   _id,
@@ -28,10 +29,19 @@ const LOCATION_FIELDS = `
   }
 `;
 
+/**
+ * Derive state slug from an office key using firm data.
+ */
+function stateSlugFromOfficeKey(key: string): string {
+  const firm = getFirmData();
+  const office = key ? firm.offices[key as OfficeKey] : null;
+  return office?.stateSlug || "georgia";
+}
+
 export async function getLocationBySlug(stateSlug: string, citySlug: string) {
-  // Try to find by matching slug and parent state slug
   return client.fetch(
-    `*[_type == "location" && slug.current == $citySlug && !isNeighborhood && language == "en"][0]{
+    `*[_type == "location" && slug.current == $citySlug && language == "en"
+      && (officeKey != "" || !isNeighborhood)][0]{
       ${LOCATION_FIELDS},
       "neighborhoodChildren": *[_type == "location" && parentLocation._ref == ^._id && isNeighborhood && language == "en"] | order(title asc) {
         title, "slug": slug.current
@@ -41,39 +51,58 @@ export async function getLocationBySlug(stateSlug: string, citySlug: string) {
   );
 }
 
-export async function getNeighborhoodBySlug(neighborhoodSlug: string) {
+export async function getNeighborhoodBySlug(neighborhoodSlug: string, parentCitySlug: string) {
   return client.fetch(
-    `*[_type == "location" && slug.current == $neighborhoodSlug && isNeighborhood && language == "en"][0]{
+    `*[_type == "location" && slug.current == $neighborhoodSlug && isNeighborhood && language == "en"
+      && parentLocation->slug.current == $parentCitySlug][0]{
       ${LOCATION_FIELDS},
       "subNeighborhoods": *[_type == "location" && parentLocation._ref == ^._id && language == "en"] | order(title asc) {
         title, "slug": slug.current
       }
     }`,
-    { neighborhoodSlug },
+    { neighborhoodSlug, parentCitySlug },
   );
 }
 
 export async function getAllLocationParams() {
-  return client.fetch<{ state: string; city: string }[]>(
-    `*[_type == "location" && !isNeighborhood && language == "en"]{
-      "city": slug.current,
-      "state": select(
-        officeKey in ["savannah", "darien"] => "georgia",
-        "south-carolina"
-      )
+  // Only return locations that have an officeKey (actual office pages, not state landing pages)
+  const locations = await client.fetch<{ slug: string; officeKey: string }[]>(
+    `*[_type == "location" && officeKey != "" && !isNeighborhood && language == "en"]{
+      "slug": slug.current,
+      officeKey
     }`,
   );
+
+  return locations.map((loc) => ({
+    state: stateSlugFromOfficeKey(loc.officeKey),
+    city: loc.slug,
+  }));
 }
 
 export async function getAllNeighborhoodParams() {
-  return client.fetch<{ state: string; city: string; neighborhood: string }[]>(
-    `*[_type == "location" && isNeighborhood && language == "en"]{
-      "neighborhood": slug.current,
-      "city": parentLocation->slug.current,
-      "state": select(
-        parentOfficeKey in ["savannah", "darien"] => "georgia",
-        "south-carolina"
-      )
+  const neighborhoods = await client.fetch<{
+    slug: string;
+    parentSlug: string;
+    parentOfficeKey: string;
+    officeKey: string;
+  }[]>(
+    `*[_type == "location" && isNeighborhood && language == "en"
+      && parentLocation->slug.current != null]{
+      "slug": slug.current,
+      "parentSlug": parentLocation->slug.current,
+      parentOfficeKey,
+      "officeKey": parentLocation->officeKey
     }`,
   );
+
+  return neighborhoods
+    .filter((n) => n.parentSlug) // Must have a valid parent
+    .map((n) => {
+      const key = n.parentOfficeKey || n.officeKey || "";
+      return {
+        state: stateSlugFromOfficeKey(key),
+        city: n.parentSlug,
+        neighborhood: n.slug,
+      };
+    });
 }
