@@ -23,3 +23,9 @@ next/out/
 
 # Claude Code local state
 .claude/
+
+# Migration data (large export files)
+next/scripts/roden-export.json
+
+# Leftover WP directory (moved to wordpress/)
+wp-content/

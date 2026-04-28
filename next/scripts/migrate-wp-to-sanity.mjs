@@ -441,45 +441,54 @@ async function migrateResources() {
   console.log(`  Created ${result.results.length} resource documents`);
 }
 
-// --- Migrate Blog Posts ---
+// --- Migrate Blog Posts (batched to avoid 4MB limit) ---
 async function migrateBlogPosts() {
   console.log("\n=== Migrating Blog Posts ===");
-  const txn = client.transaction();
+  const BATCH_SIZE = 50;
+  let total = 0;
 
-  for (const post of data.post) {
-    const m = post.meta;
-    const faqs = [];
-    if (m._roden_faqs && Array.isArray(m._roden_faqs)) {
-      for (const faq of m._roden_faqs) {
-        if (faq.question && faq.answer) {
-          faqs.push({ _type: "faq", _key: `faq_${faqs.length}`, question: faq.question, answer: faq.answer });
+  for (let i = 0; i < data.post.length; i += BATCH_SIZE) {
+    const batch = data.post.slice(i, i + BATCH_SIZE);
+    const txn = client.transaction();
+
+    for (const post of batch) {
+      const m = post.meta;
+      const faqs = [];
+      if (m._roden_faqs && Array.isArray(m._roden_faqs)) {
+        for (const faq of m._roden_faqs) {
+          if (faq.question && faq.answer) {
+            faqs.push({ _type: "faq", _key: `faq_${faqs.length}`, question: faq.question, answer: faq.answer });
+          }
         }
       }
+
+      const doc = {
+        _id: sanityId("blogPost", post.id),
+        _type: "blogPost",
+        title: post.title,
+        slug: { _type: "slug", current: post.slug },
+        publishedAt: new Date(post.date).toISOString(),
+        excerpt: post.excerpt || "",
+        keyTakeaways: m._roden_key_takeaways || "",
+        body: htmlToBlocks(post.content),
+        faqs: faqs.length ? faqs : undefined,
+        seoMetaDescription: post.excerpt?.slice(0, 160) || "",
+        language: "en",
+      };
+
+      if (m._roden_author_attorney) {
+        doc.authorAttorney = sanityRef("attorney", m._roden_author_attorney);
+      }
+
+      txn.createOrReplace(doc);
     }
 
-    const doc = {
-      _id: sanityId("blogPost", post.id),
-      _type: "blogPost",
-      title: post.title,
-      slug: { _type: "slug", current: post.slug },
-      publishedAt: new Date(post.date).toISOString(),
-      excerpt: post.excerpt || "",
-      keyTakeaways: m._roden_key_takeaways || "",
-      body: htmlToBlocks(post.content),
-      faqs: faqs.length ? faqs : undefined,
-      seoMetaDescription: post.excerpt?.slice(0, 160) || "",
-      language: "en",
-    };
-
-    if (m._roden_author_attorney) {
-      doc.authorAttorney = sanityRef("attorney", m._roden_author_attorney);
-    }
-
-    txn.createOrReplace(doc);
+    const result = await txn.commit();
+    total += result.results.length;
+    console.log(`  Batch ${Math.floor(i / BATCH_SIZE) + 1}: ${result.results.length} posts (${total}/${data.post.length})`);
   }
 
-  const result = await txn.commit();
-  console.log(`  Created ${result.results.length} blog post documents`);
+  console.log(`  Created ${total} blog post documents total`);
 }
 
 // --- Run ---
