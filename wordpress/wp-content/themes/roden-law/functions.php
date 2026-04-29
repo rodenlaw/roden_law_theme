@@ -622,13 +622,28 @@ function roden_sidebar_form_handler() {
         }
     } else {
         // Fallback: send email directly.
-        $to      = 'intake@rodenlaw.com';
+        $to      = 'intake@rodenlaw.com, msimons@rodenlaw.com';
         $subject = 'New Case Review: ' . $case_type . ' — ' . $first_name . ' ' . $last_name;
         $body    = "Name: $first_name $last_name\nPhone: $phone\nEmail: $email\nCase Type: $case_type\nMessage: $message" . ( $gclid ? "\nGCLID: $gclid" : '' );
         wp_mail( $to, $subject, $body );
     }
 
     wp_send_json_success( array( 'redirect' => home_url( '/thank-you/' ) ) );
+}
+
+/**
+ * Add msimons@rodenlaw.com to all Gravity Forms admin notifications.
+ */
+add_filter( 'gform_notification', 'roden_add_msimons_to_notifications', 10, 3 );
+function roden_add_msimons_to_notifications( $notification, $form, $entry ) {
+    $extra = 'msimons@rodenlaw.com';
+    if ( 'admin' === rgar( $notification, 'toType' ) || ! rgar( $notification, 'toType' ) ) {
+        $to = rgar( $notification, 'to', '' );
+        if ( stripos( $to, $extra ) === false ) {
+            $notification['to'] = $to ? $to . ', ' . $extra : $extra;
+        }
+    }
+    return $notification;
 }
 
 /**
