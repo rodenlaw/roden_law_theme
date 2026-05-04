@@ -297,12 +297,12 @@ function roden_firm_data() {
            ================================================================== */
 
         'legal_directories' => array(
-            'gbp_savannah'         => '', // Google Business Profile place URL (https://g.page/...)
-            'gbp_charleston'       => '',
-            'gbp_north_charleston' => '',
-            'gbp_columbia'         => '',
-            'gbp_myrtle_beach'     => '',
-            'gbp_darien'           => '',
+            'gbp_savannah'         => 'https://share.google/pf1cxsIxuXgHTWwl2',
+            'gbp_charleston'       => 'https://share.google/GfVAAnKPpCR6mdR8C',
+            'gbp_north_charleston' => 'https://share.google/v7fwlLKOUZVK5PSCd',
+            'gbp_columbia'         => 'https://share.google/MYa3mQpoPwZjCnrHj',
+            'gbp_myrtle_beach'     => 'https://share.google/MqXF349LuG3dKLY1L',
+            'gbp_darien'           => 'https://share.google/WEJrZTzNzPAtkQ0xw',
             'avvo'                 => '', // https://www.avvo.com/attorneys/...
             'justia'               => '', // https://lawyers.justia.com/lawfirm/...
             'super_lawyers'        => '', // https://profiles.superlawyers.com/...
