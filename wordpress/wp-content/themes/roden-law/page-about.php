@@ -45,6 +45,10 @@ $firm = roden_firm_data();
                     <h2><?php esc_html_e( 'Our Story', 'roden-law' ); ?></h2>
 
                     <p>
+                        <?php esc_html_e( 'Roden Law is a personal injury law firm serving Georgia and South Carolina from six offices across Savannah, Darien, Charleston, North Charleston, Columbia, and the Myrtle Beach area. The firm has recovered more than $250 million for injured clients and operates exclusively on contingency — clients owe no fees unless we win.', 'roden-law' ); ?>
+                    </p>
+
+                    <p>
                         <?php esc_html_e( 'Roden Law was founded in 2013 by Eric L. Roden and Tyler M. Love with a singular mission: fighting for injury victims. We built our firm on the principle that every person harmed by another\'s negligence deserves aggressive, personal representation — not the assembly-line treatment you get at larger firms.', 'roden-law' ); ?>
                     </p>
 

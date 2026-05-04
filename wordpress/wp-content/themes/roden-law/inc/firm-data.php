@@ -289,6 +289,32 @@ function roden_firm_data() {
         ),
 
         /* ==================================================================
+           LEGAL-INDUSTRY DIRECTORY PROFILES
+           Surfaces the firm as a recognized legal entity to AI systems
+           that cross-reference Avvo, Justia, Super Lawyers, BBB, GBP, etc.
+           Empty strings are filtered out before being added to schema sameAs.
+           Populate as profiles are claimed/verified.
+           ================================================================== */
+
+        'legal_directories' => array(
+            'gbp_savannah'         => '', // Google Business Profile place URL (https://g.page/...)
+            'gbp_charleston'       => '',
+            'gbp_north_charleston' => '',
+            'gbp_columbia'         => '',
+            'gbp_myrtle_beach'     => '',
+            'gbp_darien'           => '',
+            'avvo'                 => '', // https://www.avvo.com/attorneys/...
+            'justia'               => '', // https://lawyers.justia.com/lawfirm/...
+            'super_lawyers'        => '', // https://profiles.superlawyers.com/...
+            'martindale'           => '', // https://www.martindale.com/...
+            'findlaw'              => '', // https://lawyers.findlaw.com/profile/...
+            'lawyers_com'          => '', // https://www.lawyers.com/...
+            'bbb'                  => '', // https://www.bbb.org/...
+            'wikidata'             => '', // https://www.wikidata.org/wiki/Q...
+            'crunchbase'           => '', // https://www.crunchbase.com/organization/...
+        ),
+
+        /* ==================================================================
            JURISDICTION LAW DATA
            ================================================================== */
 

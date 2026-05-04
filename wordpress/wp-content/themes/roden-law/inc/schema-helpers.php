@@ -179,6 +179,14 @@ function roden_output_schema() {
         roden_schema_contact_page( $firm );
     }
 
+    // About page — AboutPage tied to the firm Organization entity.
+    // The strongest entity-defining page on the site needs schema that
+    // explicitly links its content to the firm @id so AI systems treat it
+    // as the canonical "what is Roden Law" answer source.
+    if ( is_page( 'about' ) ) {
+        roden_schema_about_page( $firm );
+    }
+
     // SC statewide PPC landing page — LegalService + FAQPage + LocalBusiness (SC offices)
     if ( is_page_template( 'templates/template-landing-sc-statewide.php' ) ) {
         roden_schema_sc_statewide( $firm );
@@ -199,6 +207,14 @@ function roden_output_schema() {
    ========================================================================== */
 
 function roden_schema_organization( $firm ) {
+    // Merge social + legal directory profiles, drop empties, dedupe.
+    // Social handles + legal directories (Avvo, Justia, GBP, etc.) help AI
+    // systems cross-reference the firm as an authoritative legal entity.
+    $same_as = array_filter( array_merge(
+        array_values( $firm['social'] ),
+        array_values( $firm['legal_directories'] ?? array() )
+    ) );
+
     $schema = array(
         '@context'     => 'https://schema.org',
         '@type'        => array( 'Organization', 'LawFirm' ),
@@ -207,13 +223,13 @@ function roden_schema_organization( $firm ) {
         'legalName'    => $firm['legal_entity'],
         'url'          => $firm['url'],
         'description'  => $firm['description'],
-        'telephone'    => $firm['vanity_phone'],
+        'telephone'    => $firm['phone_e164'],
         'foundingDate' => $firm['founded'],
         'areaServed'   => array(
             array( '@type' => 'State', 'name' => 'Georgia' ),
             array( '@type' => 'State', 'name' => 'South Carolina' ),
         ),
-        'sameAs' => array_values( $firm['social'] ),
+        'sameAs' => array_values( array_unique( $same_as ) ),
     );
 
     $logo_url = roden_get_logo_url();
@@ -279,7 +295,7 @@ function roden_schema_legal_service( $firm ) {
         'name'        => $firm['name'],
         'url'         => $ls_url,
         'description' => $firm['description'],
-        'telephone'   => $firm['vanity_phone'],
+        'telephone'   => $firm['phone_e164'],
         'priceRange'  => 'Free Consultation',
         'areaServed'  => array(
             array( '@type' => 'State', 'name' => 'Georgia' ),
@@ -1408,6 +1424,31 @@ function roden_schema_article_subtype( $firm ) {
 }
 
 /* ==========================================================================
+   8a. AboutPage (About page) — entity definition for AI systems
+   ========================================================================== */
+
+function roden_schema_about_page( $firm ) {
+    $url = roden_get_canonical_url();
+
+    $schema = array(
+        '@context'    => 'https://schema.org',
+        '@type'       => 'AboutPage',
+        '@id'         => rtrim( $url, '/' ) . '/#aboutpage',
+        'url'         => $url,
+        'name'        => 'About Roden Law',
+        'description' => $firm['description'],
+        // mainEntity links this page's content to the canonical firm entity
+        // defined on the homepage. AI systems use this to route "what is
+        // Roden Law" queries to the entity, not just this page.
+        'mainEntity'  => array(
+            '@id' => $firm['url'] . '/#organization',
+        ),
+    );
+
+    roden_json_ld( $schema );
+}
+
+/* ==========================================================================
    8. ContactPage (Contact page)
    ========================================================================== */
 
@@ -1429,7 +1470,7 @@ function roden_schema_contact_page( $firm ) {
         '@id'          => $firm['url'] . '/#organization',
         'name'         => $firm['name'],
         'url'          => $firm['url'],
-        'telephone'    => $firm['vanity_phone'],
+        'telephone'    => $firm['phone_e164'],
         'contactPoint' => $contact_points,
     );
 
