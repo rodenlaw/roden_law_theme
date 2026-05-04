@@ -285,11 +285,48 @@ function roden_generate_llms_txt( $full = false ) {
    ========================================================================== */
 
 /**
- * Flush llms.txt transient caches when relevant content changes.
+ * Flush llms.txt transient caches and regenerate static files.
+ *
+ * AI bots that follow the llmstxt.org spec request /llms.txt directly. WP
+ * Engine's nginx serves .txt as static files (404 before PHP runs), so we
+ * keep static copies at ABSPATH/llms.txt and ABSPATH/llms-full.txt that mirror
+ * the dynamic /llms and /llms-full routes. Skip autosaves, revisions, and
+ * non-published posts to avoid spurious file rewrites on every keystroke.
  */
-function roden_llms_txt_flush_cache() {
+function roden_llms_txt_flush_cache( $post_id = null ) {
+    if ( $post_id ) {
+        if ( wp_is_post_autosave( $post_id ) || wp_is_post_revision( $post_id ) ) {
+            return;
+        }
+        if ( 'publish' !== get_post_status( $post_id ) ) {
+            return;
+        }
+    }
+
     delete_transient( 'roden_llms_txt' );
     delete_transient( 'roden_llms_full_txt' );
+
+    roden_llms_txt_write_static_files();
+}
+
+/**
+ * Write the dynamic llms.txt content to static files at the WP root.
+ * Uses atomic temp-file-and-rename so concurrent reads never see a partial.
+ */
+function roden_llms_txt_write_static_files() {
+    $targets = array(
+        ABSPATH . 'llms.txt'      => roden_generate_llms_txt( false ),
+        ABSPATH . 'llms-full.txt' => roden_generate_llms_txt( true ),
+    );
+
+    foreach ( $targets as $path => $content ) {
+        $tmp = $path . '.tmp';
+        if ( false !== @file_put_contents( $tmp, $content, LOCK_EX ) ) {
+            @rename( $tmp, $path );
+        }
+        // Silent failure: fall back to the dynamic /llms route.
+        // No fatal — write permission issues should not break post saves.
+    }
 }
 
 add_action( 'save_post_practice_area', 'roden_llms_txt_flush_cache' );

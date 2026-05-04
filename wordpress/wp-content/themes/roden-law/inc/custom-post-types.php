@@ -241,3 +241,26 @@ function roden_register_taxonomies() {
         'show_in_rest'       => true,
     ) );
 }
+
+/* ==========================================================================
+   SITEMAP HYGIENE — Drop empty CPT sitemaps from /sitemap.xml
+   ========================================================================== */
+
+/**
+ * Exclude post types with zero published posts from the WP sitemap index.
+ *
+ * WP core's sitemap occasionally renders an empty <sitemap/> element when a
+ * registered public CPT has no published posts. Strict XML parsers (and some
+ * AI crawlers) flag this as malformed. Filter the post-type list down to ones
+ * with at least one published post.
+ */
+add_filter( 'wp_sitemaps_post_types', 'roden_drop_empty_sitemap_post_types' );
+function roden_drop_empty_sitemap_post_types( $post_types ) {
+    foreach ( $post_types as $slug => $obj ) {
+        $count = wp_count_posts( $slug );
+        if ( empty( $count->publish ) ) {
+            unset( $post_types[ $slug ] );
+        }
+    }
+    return $post_types;
+}
