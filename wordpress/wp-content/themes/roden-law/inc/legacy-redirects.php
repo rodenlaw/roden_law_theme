@@ -79,6 +79,15 @@ function roden_legacy_content_redirects() {
     // ── Pattern-based redirects ──────────────────────────────────────────
     // These handle entire URL prefixes rather than individual pages.
 
+    // /es/* → / (Polylang removed 2026-05-05; Spanish content was 1 empty
+    // placeholder + 2 drafts. Pre-removal, /es/* was already in an infinite
+    // 301 redirect loop, so nothing was indexed. This 301 prevents future 404s
+    // if Google or any external link ever surfaces an /es/ URL.)
+    if ( preg_match( '#^/es(/.*)?$#', $clean_path ) ) {
+        wp_redirect( home_url( '/' ), 301 );
+        exit;
+    }
+
     // /case-result/[slug]/ → /case-results/[slug]/ (old singular → new plural CPT slug)
     if ( preg_match( '#^/case-result/([^/]+)/?$#', $clean_path, $m ) ) {
         wp_redirect( home_url( '/case-results/' . $m[1] . '/' ), 301 );
