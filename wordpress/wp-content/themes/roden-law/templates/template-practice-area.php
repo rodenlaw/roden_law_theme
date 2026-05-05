@@ -494,6 +494,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
             // Fall back to WordPress category by mapping the PA slug to a blog category.
             if ( ! $has_tax_filter ) {
                 $pa_to_blog_cat = array(
+                    'personal-injury-lawyers'           => 'personal-injury',
                     'car-accident-lawyers'              => 'car-accident',
                     'truck-accident-lawyers'             => 'truck-accident',
                     'motorcycle-accident-lawyers'        => 'personal-injury',
