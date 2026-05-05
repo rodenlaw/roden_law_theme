@@ -6,6 +6,9 @@ on:
       - main
     paths:
       - 'wordpress/**'
+  # Allow manual re-deploy from the Actions tab (handy for cache flushes,
+  # rolling forward after a non-wordpress/ commit, or testing prod auth).
+  workflow_dispatch:
 
 concurrency:
   group: deploy-wpengine
@@ -13,7 +16,7 @@ concurrency:
 
 jobs:
   deploy:
-    name: Deploy Theme to WP Engine
+    name: Deploy Theme to WP Engine (dev + prod)
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
@@ -35,8 +38,22 @@ jobs:
             IdentitiesOnly yes
           EOL
 
-      - name: Deploy wordpress/ subtree to WP Engine
+      # Build the deploy branch once and push it to both environments.
+      # `git subtree split` extracts the wordpress/ subtree so its contents
+      # become the root of the pushed tree, which is what WPE expects.
+      - name: Build deploy branch (subtree split of wordpress/)
+        run: git subtree split --prefix=wordpress -b deploy-branch
+
+      - name: Deploy to dev (rodenlawdev1)
         run: |
-          git remote add wpengine git@git.wpengine.com:rodenlawdev1.git
-          git subtree split --prefix=wordpress -b deploy-branch
-          git push wpengine deploy-branch:main --force
+          git remote add wpe-dev git@git.wpengine.com:rodenlawdev1.git
+          git push wpe-dev deploy-branch:main --force
+
+      # Prod requires the WPE_SSHG_KEY public key to be registered on the
+      # rodenlawprod environment in the WP Engine portal. If this step
+      # fails with "Permission denied (publickey)", add the public key
+      # under: WPE Portal → rodenlawprod → SSH Gateway → Add SSH Key.
+      - name: Deploy to prod (rodenlawprod)
+        run: |
+          git remote add wpe-prod git@git.wpengine.com:rodenlawprod.git
+          git push wpe-prod deploy-branch:main --force

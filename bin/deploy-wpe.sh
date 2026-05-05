@@ -1,16 +1,26 @@
 #!/usr/bin/env bash
 #
-# Deploy the Roden Law WordPress theme to WP Engine production.
+# FALLBACK deploy script for the Roden Law WordPress theme.
 #
-# Why this exists: the repo is a monorepo (wordpress/ + next/) but WP
-# Engine's git deploy maps repo root → site root. Theme files end up at
-# /sites/rodenlawprod/wordpress/wp-content/themes/roden-law/ instead of
-# the active path /sites/rodenlawprod/wp-content/themes/roden-law/, and
-# every `git push production main` wipes the live theme. This script
-# bypasses WPE git deploy entirely and rsyncs the theme straight into
-# the active path over SSH, then flushes object + Varnish caches.
+# Normal deploy path: push to GitHub `main` → the .github/workflows/deploy.yml
+# action does `git subtree split` and pushes the wordpress/ subtree to BOTH
+# rodenlawdev1 AND rodenlawprod via WPE git remotes. That handles 99% of cases.
 #
-# See ../memory/feedback_wpe_deploy_path_mismatch.md for the long story.
+# Use this script when:
+#   - GitHub Actions is down or rate-limited
+#   - You need to skip CI for an emergency hot-fix
+#   - You want to ship uncommitted changes (NOTE: script still requires
+#     committed changes — it deploys from the git index, not working tree)
+#
+# What it does (when you DO need it):
+#   - Stages tracked theme files via `git checkout-index` (only committed
+#     code deploys; working-tree edits silently skipped by design)
+#   - rsyncs over SSH directly to /sites/rodenlawprod/wp-content/themes/roden-law/
+#   - Flushes WP object cache + WPE Varnish (`wp page-cache flush`)
+#   - Verifies critical theme files exist on the server
+#
+# This script ONLY targets prod (rodenlawprod). For dev (rodenlawdev1),
+# push to main and let the GitHub Action handle it.
 #
 # Usage:
 #   bin/deploy-wpe.sh             # full deploy: rsync + flush both caches
@@ -19,8 +29,10 @@
 # Prerequisites:
 #   - Run from repo root
 #   - SSH key at ~/.ssh/wpengine_ed25519
-#   - All changes you want deployed are COMMITTED (script deploys from the
-#     git index via `git checkout-index`, not the working tree)
+#
+# History: this script was the primary deploy mechanism briefly (2026-05-05)
+# while the deploy.yml workflow was still dev-only. After the workflow was
+# extended to also push prod, this became the fallback.
 
 set -euo pipefail
 
