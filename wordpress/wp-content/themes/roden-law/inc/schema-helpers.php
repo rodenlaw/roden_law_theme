@@ -242,15 +242,16 @@ function roden_schema_organization( $firm ) {
         $schema['image'] = $logo_url;
     }
 
-    // All offices as sub-locations
+    // All offices as sub-locations. Reference the canonical LocalBusiness
+    // @id (defined by roden_schema_local_business_office on the same page)
+    // so AI systems treat the nested entries and standalone blocks as the
+    // same entities — no duplicated sameAs/address/geo to drift out of sync.
     $locations = array();
     foreach ( $firm['offices'] as $key => $office ) {
         $locations[] = array(
-            '@type'     => 'LocalBusiness',
-            'name'      => $office['name'],
-            'address'   => roden_schema_postal_address( $office ),
-            'telephone' => $office['phone'],
-            'geo'       => roden_schema_geo( $office ),
+            '@type' => 'LocalBusiness',
+            '@id'   => $firm['url'] . '/locations/' . $office['state_slug'] . '/' . sanitize_title( $office['market_name'] ) . '/#localbusiness',
+            'name'  => $office['name'],
         );
     }
     $schema['location'] = $locations;
@@ -417,6 +418,17 @@ function roden_schema_local_business_office( $firm, $key, $office ) {
             'name'  => $firm['name'],
         ),
     );
+
+    // Per-location sameAs — Google Business Profile, Yelp, etc. These are
+    // location-scoped entities (one listing per office), so they belong on
+    // the LocalBusiness, not the firm-level Organization. Filter empties.
+    $office_same_as = array_filter( array(
+        $office['gbp_url']  ?? '',
+        $office['yelp_url'] ?? '',
+    ) );
+    if ( ! empty( $office_same_as ) ) {
+        $schema['sameAs'] = array_values( $office_same_as );
+    }
 
     // aggregateRating — output when per-office GBP review count has been populated.
     // review_count and review_rating are set in inc/firm-data.php per office.
@@ -1717,6 +1729,17 @@ function roden_schema_local_business_neighborhood( $firm ) {
             'name'  => $firm['name'],
         ),
     );
+
+    // Per-location sameAs — Google Business Profile, Yelp, etc. These are
+    // location-scoped entities (one listing per office), so they belong on
+    // the LocalBusiness, not the firm-level Organization. Filter empties.
+    $office_same_as = array_filter( array(
+        $office['gbp_url']  ?? '',
+        $office['yelp_url'] ?? '',
+    ) );
+    if ( ! empty( $office_same_as ) ) {
+        $schema['sameAs'] = array_values( $office_same_as );
+    }
 
     $logo_url = roden_get_logo_url();
     if ( $logo_url ) {

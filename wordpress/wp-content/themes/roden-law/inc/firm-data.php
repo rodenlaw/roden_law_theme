@@ -42,6 +42,8 @@ function roden_firm_data() {
                 'zip'          => '31406',
                 'phone'        => '(912) 303-5850',
                 'phone_raw'    => '+19123035850',
+                'gbp_url'      => 'https://share.google/pf1cxsIxuXgHTWwl2',
+                'yelp_url'     => '',
                 'latitude'     => 32.0291,
                 'longitude'    => -81.0490,
                 'timezone'     => 'America/New_York',
@@ -71,6 +73,8 @@ function roden_firm_data() {
                 'zip'          => '31305',
                 'phone'        => '(912) 303-5850',
                 'phone_raw'    => '+19123035850',
+                'gbp_url'      => 'https://share.google/WEJrZTzNzPAtkQ0xw',
+                'yelp_url'     => '',
                 'latitude'     => 31.3702,
                 'longitude'    => -81.4340,
                 'timezone'     => 'America/New_York',
@@ -100,6 +104,8 @@ function roden_firm_data() {
                 'zip'          => '29401',
                 'phone'        => '(843) 790-8999',
                 'phone_raw'    => '+18437908999',
+                'gbp_url'      => 'https://share.google/GfVAAnKPpCR6mdR8C',
+                'yelp_url'     => '',
                 'latitude'     => 32.7876,
                 'longitude'    => -79.9353,
                 'timezone'     => 'America/New_York',
@@ -130,6 +136,8 @@ function roden_firm_data() {
                 'zip'          => '29405',
                 'phone'        => '(843) 612-6561',
                 'phone_raw'    => '+18436126561',
+                'gbp_url'      => 'https://share.google/v7fwlLKOUZVK5PSCd',
+                'yelp_url'     => '',
                 'latitude'     => 32.8546,
                 'longitude'    => -79.9748,
                 'timezone'     => 'America/New_York',
@@ -160,6 +168,8 @@ function roden_firm_data() {
                 'zip'          => '29201',
                 'phone'        => '(803) 219-2816',
                 'phone_raw'    => '+18032192816',
+                'gbp_url'      => 'https://share.google/MYa3mQpoPwZjCnrHj',
+                'yelp_url'     => '',
                 'latitude'     => 34.0007,
                 'longitude'    => -81.0348,
                 'timezone'     => 'America/New_York',
@@ -190,6 +200,8 @@ function roden_firm_data() {
                 'zip'          => '29576',
                 'phone'        => '(843) 612-1980',
                 'phone_raw'    => '+18436121980',
+                'gbp_url'      => 'https://share.google/MqXF349LuG3dKLY1L',
+                'yelp_url'     => '',
                 'latitude'     => 33.5510,
                 'longitude'    => -79.0465,
                 'timezone'     => 'America/New_York',
@@ -289,29 +301,22 @@ function roden_firm_data() {
         ),
 
         /* ==================================================================
-           LEGAL-INDUSTRY DIRECTORY PROFILES
-           Surfaces the firm as a recognized legal entity to AI systems
-           that cross-reference Avvo, Justia, Super Lawyers, BBB, GBP, etc.
+           FIRM-LEVEL DIRECTORY PROFILES
+           Only firm/Organization-scope directories belong here. Lawyer
+           directories (Avvo, Justia, Super Lawyers, Martindale, FindLaw,
+           Lawyers.com) list individual attorneys, not firms — those go on
+           per-attorney post meta (_roden_avvo_url, _roden_linkedin_url,
+           _roden_same_as) and feed into roden_schema_person() instead.
+           Per-location entities (Google Business Profile, Yelp) live on each
+           office in the offices array as `gbp_url`, `yelp_url` — they belong
+           on per-office LocalBusiness sameAs, not firm-level Org sameAs.
            Empty strings are filtered out before being added to schema sameAs.
-           Populate as profiles are claimed/verified.
            ================================================================== */
 
         'legal_directories' => array(
-            'gbp_savannah'         => 'https://share.google/pf1cxsIxuXgHTWwl2',
-            'gbp_charleston'       => 'https://share.google/GfVAAnKPpCR6mdR8C',
-            'gbp_north_charleston' => 'https://share.google/v7fwlLKOUZVK5PSCd',
-            'gbp_columbia'         => 'https://share.google/MYa3mQpoPwZjCnrHj',
-            'gbp_myrtle_beach'     => 'https://share.google/MqXF349LuG3dKLY1L',
-            'gbp_darien'           => 'https://share.google/WEJrZTzNzPAtkQ0xw',
-            'avvo'                 => '', // https://www.avvo.com/attorneys/...
-            'justia'               => '', // https://lawyers.justia.com/lawfirm/...
-            'super_lawyers'        => '', // https://profiles.superlawyers.com/...
-            'martindale'           => '', // https://www.martindale.com/...
-            'findlaw'              => '', // https://lawyers.findlaw.com/profile/...
-            'lawyers_com'          => '', // https://www.lawyers.com/...
-            'bbb'                  => '', // https://www.bbb.org/...
-            'wikidata'             => '', // https://www.wikidata.org/wiki/Q...
-            'crunchbase'           => '', // https://www.crunchbase.com/organization/...
+            'bbb'        => '', // https://www.bbb.org/us/.../profile/personal-injury-attorney/...
+            'wikidata'   => '', // https://www.wikidata.org/wiki/Q... (only if entry exists)
+            'crunchbase' => '', // https://www.crunchbase.com/organization/... (only if profile exists)
         ),
 
         /* ==================================================================
