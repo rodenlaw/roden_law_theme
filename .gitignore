@@ -27,5 +27,6 @@ next/out/
 # Migration data (large export files)
 next/scripts/roden-export.json
 
-# Leftover WP directory (moved to wordpress/)
-wp-content/
+# Leftover WP directory (moved to wordpress/) — root-anchored so it only
+# matches a literal wp-content/ at repo root, not wordpress/wp-content/
+/wp-content/

@@ -201,7 +201,6 @@ $related_subtypes = get_posts( array(
                 </div>
                 <?php endif; ?>
             <?php endif; ?>
-            <p>At Roden Law, our <?php echo esc_html( $office['market_name'] ); ?> personal injury attorneys have helped clients across <?php echo esc_html( $office['state_full'] ); ?> secure millions in compensation. We provide a free, no-obligation case review and charge no upfront legal fees.</p>
 
             <!-- ═══════════════════════════════════════════════════════════
                  EXPERT QUOTE (AI-citable attorney quote — +30% visibility)
@@ -262,11 +261,29 @@ $related_subtypes = get_posts( array(
             <?php endif; ?>
 
             <!-- ═══════════════════════════════════════════════════════════
-                 ELEMENTS OF NEGLIGENCE (AI-extractable)
+                 OFFICE LOCAL CONTEXT (per-office "Filing in [Court]")
+                 No-op when office has no local_context configured.
+                 ═══════════════════════════════════════════════════════════ -->
+            <?php roden_office_local_context_block( $office, $jurisdiction ); ?>
+
+            <!-- ═══════════════════════════════════════════════════════════
+                 NEGLIGENCE / LIABILITY FRAMING
+                 Pillar override (when _roden_pillar_negligence_intro set on
+                 parent) replaces the generic 4-element block. Falls back to
+                 the universal 4-element block for pillars without overrides.
                  ═══════════════════════════════════════════════════════════ -->
             <?php
-            $accident_label_clean = strtolower( preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', $parent_title ) );
+            $accident_label_clean    = strtolower( preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', $parent_title ) );
+            $pillar_negligence_html  = $parent_post
+                ? roden_render_pillar_intro( $parent_post->ID, '_roden_pillar_negligence_intro', $office, $jurisdiction )
+                : '';
             ?>
+            <?php if ( $pillar_negligence_html ) : ?>
+            <div class="content-section pa-pillar-negligence" data-ai-extractable="true">
+                <h2>Do I Have a <?php echo esc_html( ucfirst( $accident_label_clean ) ); ?> Case in <?php echo esc_html( $office['market_name'] ); ?>?</h2>
+                <?php echo $pillar_negligence_html; ?>
+            </div>
+            <?php else : ?>
             <div class="content-section pa-elements-section" data-ai-extractable="true">
                 <h2>Do I Have a <?php echo esc_html( ucfirst( $accident_label_clean ) ); ?> Case in <?php echo esc_html( $office['market_name'] ); ?>?</h2>
                 <p>To win a personal injury case in <?php echo esc_html( $office['state_full'] ); ?>, your attorney must prove four elements of negligence by a preponderance of the evidence.</p>
@@ -289,10 +306,25 @@ $related_subtypes = get_posts( array(
                     <?php endforeach; ?>
                 </div>
             </div>
+            <?php endif; ?>
 
             <!-- ═══════════════════════════════════════════════════════════
-                 COMPENSATION TYPES (AI-extractable)
+                 COMPENSATION / DAMAGES FRAMING
+                 Pillar override (when _roden_pillar_compensation_intro set on
+                 parent) replaces the generic two-column block. Falls back to
+                 the universal economic/non-economic split.
                  ═══════════════════════════════════════════════════════════ -->
+            <?php
+            $pillar_compensation_html = $parent_post
+                ? roden_render_pillar_intro( $parent_post->ID, '_roden_pillar_compensation_intro', $office, $jurisdiction )
+                : '';
+            ?>
+            <?php if ( $pillar_compensation_html ) : ?>
+            <div class="content-section pa-pillar-compensation" data-ai-extractable="true">
+                <h2>Types of Compensation in <?php echo esc_html( $office['state_full'] ); ?> <?php echo esc_html( ucfirst( $accident_label_clean ) ); ?> Cases</h2>
+                <?php echo $pillar_compensation_html; ?>
+            </div>
+            <?php else : ?>
             <div class="content-section pa-compensation" data-ai-extractable="true">
                 <h2>Types of Compensation in <?php echo esc_html( $office['state_full'] ); ?> <?php echo esc_html( ucfirst( $accident_label_clean ) ); ?> Cases</h2>
                 <p class="section-lead">Victims of <?php echo esc_html( $accident_label_clean ); ?> injuries in <?php echo esc_html( $office['state_full'] ); ?> can pursue two categories of damages: economic damages (quantifiable financial losses) and non-economic damages (quality-of-life impacts). There is no cap on compensatory damages in <?php echo esc_html( $office['state_full'] ); ?>.</p>
@@ -323,6 +355,7 @@ $related_subtypes = get_posts( array(
                     </div>
                 </div>
             </div>
+            <?php endif; ?>
 
             <?php roden_inline_cta_banner(); ?>
 

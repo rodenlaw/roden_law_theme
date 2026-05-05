@@ -105,6 +105,22 @@ function roden_add_meta_boxes() {
         'normal'
     );
 
+    add_meta_box(
+        'roden_pa_negligence_intro',
+        __( 'Pillar Negligence Intro (intersections inherit)', 'roden-law' ),
+        'roden_pa_negligence_intro_meta_box',
+        'practice_area',
+        'normal'
+    );
+
+    add_meta_box(
+        'roden_pa_compensation_intro',
+        __( 'Pillar Compensation Intro (intersections inherit)', 'roden-law' ),
+        'roden_pa_compensation_intro_meta_box',
+        'practice_area',
+        'normal'
+    );
+
     /* ── Location ──────────────────────────────────────────────────── */
 
     add_meta_box(
@@ -392,6 +408,47 @@ function roden_pa_common_injuries_meta_box( $post ) {
     </div>
     <button type="button" class="button" id="roden-add-injury"><?php esc_html_e( '+ Add Injury', 'roden-law' ); ?></button>
     <p class="description"><?php esc_html_e( 'Common injuries for this practice area. Include 1-2 sentence descriptions per injury.', 'roden-law' ); ?></p>
+    <?php
+}
+
+/**
+ * Pillar Negligence Intro meta box.
+ * Inherited by all intersection pages under this pillar (replaces boilerplate
+ * "To win a personal injury case in [state]…" text). Supports tokens:
+ * {city} {market_name} {state_full} {state_short} {office_court}
+ * {office_court_address} {sol_years} {sol_cite} {comp_fault_threshold}
+ */
+function roden_pa_negligence_intro_meta_box( $post ) {
+    wp_nonce_field( 'roden_pa_negligence_intro_nonce', '_roden_pa_negligence_intro_nonce' );
+    $value = get_post_meta( $post->ID, '_roden_pillar_negligence_intro', true );
+    wp_editor( $value, 'roden_pillar_negligence_editor', array(
+        'textarea_name' => '_roden_pillar_negligence_intro',
+        'textarea_rows' => 6,
+        'media_buttons' => false,
+        'teeny'         => true,
+    ) );
+    ?>
+    <p class="description"><?php esc_html_e( 'PA-specific framing for the negligence/liability section. Renders on every intersection page under this pillar (e.g. car-accident-lawyers/savannah-ga/, /charleston-sc/, etc.) with per-intersection token replacement. Tokens: {city} {market_name} {state_full} {state_short} {office_court} {office_court_address} {sol_years} {sol_cite} {comp_fault_threshold}', 'roden-law' ); ?></p>
+    <?php
+}
+
+/**
+ * Pillar Compensation Intro meta box.
+ * Inherited by all intersection pages under this pillar (replaces boilerplate
+ * "Victims of [accident_type] injuries can pursue two categories…" text).
+ * Same token set as negligence intro.
+ */
+function roden_pa_compensation_intro_meta_box( $post ) {
+    wp_nonce_field( 'roden_pa_compensation_intro_nonce', '_roden_pa_compensation_intro_nonce' );
+    $value = get_post_meta( $post->ID, '_roden_pillar_compensation_intro', true );
+    wp_editor( $value, 'roden_pillar_compensation_editor', array(
+        'textarea_name' => '_roden_pillar_compensation_intro',
+        'textarea_rows' => 6,
+        'media_buttons' => false,
+        'teeny'         => true,
+    ) );
+    ?>
+    <p class="description"><?php esc_html_e( 'PA-specific framing for the compensation/damages section. Renders on every intersection page under this pillar with per-intersection token replacement. Same token set as negligence intro.', 'roden-law' ); ?></p>
     <?php
 }
 
@@ -1060,6 +1117,22 @@ function roden_save_meta_fields( $post_id ) {
             }
         }
         update_post_meta( $post_id, '_roden_common_injuries', $clean );
+    }
+
+    /* ── Practice Area: Pillar Negligence Intro (intersections inherit) ── */
+
+    if ( isset( $_POST['_roden_pa_negligence_intro_nonce'] ) &&
+         wp_verify_nonce( $_POST['_roden_pa_negligence_intro_nonce'], 'roden_pa_negligence_intro_nonce' ) ) {
+        update_post_meta( $post_id, '_roden_pillar_negligence_intro',
+            wp_kses_post( $_POST['_roden_pillar_negligence_intro'] ?? '' ) );
+    }
+
+    /* ── Practice Area: Pillar Compensation Intro (intersections inherit) ── */
+
+    if ( isset( $_POST['_roden_pa_compensation_intro_nonce'] ) &&
+         wp_verify_nonce( $_POST['_roden_pa_compensation_intro_nonce'], 'roden_pa_compensation_intro_nonce' ) ) {
+        update_post_meta( $post_id, '_roden_pillar_compensation_intro',
+            wp_kses_post( $_POST['_roden_pillar_compensation_intro'] ?? '' ) );
     }
 
     /* ── Location: Neighborhood ─────────────────────────────────── */

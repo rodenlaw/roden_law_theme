@@ -59,6 +59,17 @@ function roden_firm_data() {
                     'Georgetown', 'Thunderbolt', 'Wilmington Island',
                 ),
                 'directions'   => 'Our Savannah office is located on Commercial Drive, just off Abercorn Street near Oglethorpe Mall. From I-16 East, take Exit 164A onto I-516 E/DeRenne Ave, then turn south on Abercorn St. From I-95, take Exit 94 onto GA-204 E (Abercorn St) toward Savannah. Free client parking is available in our building lot.',
+                // Local context essay — rendered as "Filing a Personal Injury Case in {market}"
+                // section on every intersection page for this office (template-intersection.php).
+                // 150-250 words of court process, local hazards, and state-specific filing notes.
+                'local_context' => <<<'EOT'
+Filing a personal injury case in Savannah means filing in **Chatham County Superior Court at 133 Montgomery Street**, where civil complaints are submitted electronically through **PeachCourt eFileGA**, Georgia's statewide e-filing system. Georgia law gives an injured person **two years from the crash date** to file under O.C.G.A. § 9-3-33, and Georgia's modified comparative negligence rule (O.C.G.A. § 51-12-33) bars recovery only if the plaintiff is 50% or more at fault.
+
+Local injury patterns reflect Savannah's role as a port city: I-95 through Pooler, I-516 from the Port of Savannah, and the I-16/I-95 interchange concentrate commercial-truck crashes, while DeRenne Avenue, Abercorn Street (SR 204), and the historic downtown grid generate persistent pedestrian and intersection collisions. Seriously injured victims across southeast Georgia are routed to **Memorial Health University Medical Center on Waters Avenue** — the region's only Level I trauma center — frequently arriving by LifeStar helicopter.
+
+Two Georgia rules matter most for Savannah cases: **O.C.G.A. § 33-7-11** allows "added-on" UM/UIM stacking above the at-fault driver's limits, and **O.C.G.A. § 40-1-112** permits direct action against a motor carrier's insurer — a meaningful advantage in port-related truck-crash litigation.
+EOT
+,
                 // GBP review count — powers per-office AggregateRating schema.
                 // VERIFY: pulled from Birdeye/Google Apr 2026. Update quarterly from GBP dashboard.
                 'review_count' => 58,
@@ -90,6 +101,14 @@ function roden_firm_data() {
                     'South Newport', 'Crescent',
                 ),
                 'directions'   => 'Our Darien office is on North Way, conveniently located near the I-95/US-17 interchange in McIntosh County. From I-95, take Exit 49 (GA-251) toward Darien and head east on North Way. From Brunswick, take US-17 North approximately 16 miles. The office is easily accessible from the Golden Isles and surrounding coastal communities.',
+                'local_context' => <<<'EOT'
+Filing a personal injury case in Darien means filing in **McIntosh County Superior Court at 310 Northway** — part of the Brunswick Judicial Circuit and the trial forum for all PI cases above the magistrate-court limit. Civil complaints are submitted through **PeachCourt eFileGA**, Georgia's statewide e-filing system. Georgia gives injured plaintiffs **two years to file under O.C.G.A. § 9-3-33**, and the modified-comparative-negligence rule in O.C.G.A. § 51-12-33 bars recovery if the plaintiff is 50% or more at fault.
+
+McIntosh County's crash profile is dominated by two corridors: roughly 18 miles of **I-95** (Exits 49 and 58 are the principal crash-cluster interchanges) and **US-17 / SR 251**, which carry logging trucks bound for coastal mills and serve as hurricane-evacuation routes. Because McIntosh has no Level I trauma center, seriously injured victims are typically flown by LifeStar to **Memorial Health University Medical Center in Savannah** — the only Level I trauma center in southeast Georgia.
+
+Two Georgia statutes carry outsized weight in this county's truck-heavy docket: **O.C.G.A. § 33-7-11** allows "added-on" UM/UIM stacking above the at-fault driver's limits, and **O.C.G.A. § 40-1-112** permits direct action against a motor carrier's insurer.
+EOT
+,
                 // GBP review count — powers per-office AggregateRating schema.
                 // VERIFY: Darien is a smaller satellite office. Update quarterly from GBP dashboard.
                 'review_count' => 12,
@@ -122,6 +141,14 @@ function roden_firm_data() {
                 ),
                 'directions'   => 'Our Charleston office is in the heart of downtown on King Street, Suite 200, near the intersection of King and Calhoun streets. From I-26 East, take Exit 221B onto Meeting Street heading south, then turn right on Calhoun and left on King. From Mount Pleasant, cross the Ravenel Bridge and follow US-17 S to the Meeting Street exit. Street and garage parking available nearby.',
                 'map_embed'    => 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354.570788089184!2d-79.9329881!3d32.7771216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88fe7bd134041e93%3A0x2c255a08f0b45377!2sRoden%20Law!5e0!3m2!1sen!2sus!4v1773074802432!5m2!1sen!2sus',
+                'local_context' => <<<'EOT'
+Filing a personal injury case in downtown Charleston means filing in the **Charleston County Court of Common Pleas at 100 Broad Street**, on the Tyler Odyssey-based South Carolina E-Filing system. Most cases are sent to mandatory mediation under SC ADR rules before reaching the jury trial roster, and a typical contested case takes **18–30 months** from complaint to verdict.
+
+Charleston's peninsula geography concentrates risk on a few well-known corridors: the **Crosstown (US-17 / Septima P. Clark Parkway)**, the **Arthur Ravenel Jr. Bridge** to Mount Pleasant, and the dense tourist grid around **King and Market Streets**, where rideshare drop-offs and carriage tours mix with out-of-state drivers. Charleston County logged **more than 2,500 truck-related crashes in 2023**, and the **I-26/I-526 interchange just west of the peninsula recorded 354 collisions over a five-year period**. Serious-injury patients from peninsula crashes are routed to **MUSC Health (171 Ashley Ave) — the Lowcountry's only Level I trauma center**.
+
+Under South Carolina law, you have **3 years to file under S.C. Code § 15-3-530**, and you can recover only if you are **less than 51% at fault**. Shorter notice deadlines apply if SCDOT or the City of Charleston is a defendant under the SC Tort Claims Act.
+EOT
+,
                 // GBP review count — powers per-office AggregateRating schema.
                 // VERIFY: pulled from Birdeye/Google Apr 2026. Update quarterly from GBP dashboard.
                 'review_count' => 80,
@@ -154,6 +181,14 @@ function roden_firm_data() {
                     'St. Stephen', 'Walterboro',
                 ),
                 'directions'   => 'Our North Charleston office is located on Spruill Avenue in the Park Circle area. From I-26, take Exit 213 onto E Montague Ave heading east, then turn left on Spruill Ave. From downtown Charleston, take I-26 W to Exit 213. Free client parking is available on site.',
+                'local_context' => <<<'EOT'
+North Charleston personal injury cases are filed in the **Charleston County Court of Common Pleas at 100 Broad Street downtown** and submitted through the **South Carolina E-Filing System** on Tyler's Odyssey platform. Common Pleas civil cases are sent to mandatory mediation under SC ADR rules before reaching the trial roster, and a contested truck or industrial case typically takes 18–30 months — longer when FMCSA records, ELD logs, and port chassis-pool inspection histories are in play.
+
+North Charleston's hazard profile is dominated by **port and industrial truck traffic** funneling between the **Hugh Leatherman Terminal** and the **I-26 / I-526 / Rivers Avenue** corridor: SCDOT records **354 collisions over five years at the I-26/I-526 interchange** alone, and Charleston County logged **over 2,500 truck-related crashes in 2023**. Spruill Avenue, North Rhett Avenue, Aviation Avenue, and the **Ashley Phosphate Road / I-26 interchange** are the city's recurring crash corridors. Serious crash victims are routed to **Trident Medical Center (Level II trauma)** at 9330 Medical Plaza Drive, with the most critical patients flown to **MUSC Health (Level I)** downtown.
+
+South Carolina's **3-year statute of limitations (S.C. Code § 15-3-530)** and **51%-bar comparative fault rule** apply, and shorter Tort Claims Act notice deadlines apply when SCDOT or the SC Ports Authority is a defendant.
+EOT
+,
                 // GBP review count — powers per-office AggregateRating schema.
                 // VERIFY: new office, may share Charleston GBP. Update quarterly from GBP dashboard.
                 'review_count' => 15,
@@ -185,6 +220,14 @@ function roden_firm_data() {
                     'Dentsville', 'Hopkins',
                 ),
                 'directions'   => 'Our Columbia office is on Sumter Street in the downtown corridor, near the University of South Carolina campus. From I-26, take Exit 111B onto Elmwood Ave, then turn south on Sumter St. From I-77, take Exit 16A onto I-277 and follow signs to Sumter Street. From I-20, take Exit 74 onto Broad River Rd toward downtown. Street metered parking and nearby garage parking are available.',
+                'local_context' => <<<'EOT'
+Filing a personal injury case in Columbia means working through the **Richland County Court of Common Pleas at 1701 Main Street**, where civil complaints are submitted electronically through South Carolina's statewide **Tyler Odyssey e-filing system** and placed on a 365-day case-management track under SCRCP Rule 40. Most contested cases are sent to mandatory mediation before trial under SC ADR Rule 3.
+
+Crash victims in the Midlands disproportionately come from one place: the **I-26/I-20/I-77 interchange known as Malfunction Junction**, now in the middle of SCDOT's **$2.08 billion Carolina Crossroads reconstruction** — the largest project in agency history — which will keep active work zones on I-26 between Piney Grove Road and I-77 in flux through roughly 2029. Severe-injury crashes from that corridor, from I-77 north toward Blythewood, and from Two Notch and Broad River Roads are routed to **Prisma Health Richland**, the Midlands' only Level I trauma center.
+
+South Carolina law gives injured plaintiffs **three years to file under S.C. Code § 15-3-530**, applies a **51% modified-comparative-fault bar**, and allows stacking of uninsured and underinsured motorist coverage — a critical lever when a Malfunction Junction pile-up exceeds the at-fault driver's 25/50/25 minimum policy.
+EOT
+,
                 // GBP review count — powers per-office AggregateRating schema.
                 // VERIFY: pulled Apr 2026. Update quarterly from GBP dashboard.
                 'review_count' => 18,
@@ -217,6 +260,14 @@ function roden_firm_data() {
                     'Little River', 'Loris', 'Georgetown',
                 ),
                 'directions'   => 'Our Myrtle Beach area office is on Bellamy Avenue in Murrells Inlet, Suite C-B, just off US-17 Business in the heart of the Grand Strand. From Myrtle Beach, take US-17 S (Kings Highway) approximately 12 miles south. From Georgetown, take US-17 N about 20 miles. From Conway, take US-501 to US-17 S. The office is near Brookgreen Gardens and Huntington Beach State Park.',
+                'local_context' => <<<'EOT'
+Filing a personal injury case in the Myrtle Beach market means filing in **Horry County Court of Common Pleas at 1301 Second Avenue in Conway**, where civil complaints are submitted through South Carolina's mandatory **Tyler Odyssey e-filing system** and most cases are routed to mediation before trial under SC ADR Rule 3.
+
+The Grand Strand draws roughly 17–20 million visitors a year, and that seasonal surge reshapes the local crash picture: **US-17 Business and Ocean Boulevard** see heavy pedestrian and golf-cart traffic, while drivers choose between the slower, congested **US-501** and the faster but higher-severity **SC-22 Conway Bypass** to reach the beach. Golf carts add a wrinkle unique to coastal SC — under **S.C. Code § 56-2-100**, a permitted cart may only operate in daylight, within four miles of the owner's address, on roads posted 35 mph or less, by a licensed driver. Crashes outside those limits open the door to negligence-per-se and rental-property claims. Severe-injury victims are routed to **Grand Strand Medical Center** in Myrtle Beach or stabilized at **Tidelands Waccamaw** in Murrells Inlet.
+
+South Carolina applies a **three-year statute of limitations under S.C. Code § 15-3-530**, a **51% modified-comparative-fault bar**, and allows stacking of UM/UIM coverage — often the largest recovery source when an out-of-state tourist is hit by a minimum-limits driver.
+EOT
+,
                 // GBP review count — powers per-office AggregateRating schema.
                 // VERIFY: pulled Apr 2026. Update quarterly from GBP dashboard.
                 'review_count' => 22,

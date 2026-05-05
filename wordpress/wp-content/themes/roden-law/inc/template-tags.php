@@ -1461,3 +1461,106 @@ function roden_jurisdiction_comparison_table( $practice_area_title, $sol_ga = ''
     </div>
     <?php
 }
+
+/**
+ * Replace per-intersection local tokens in pillar-level content.
+ *
+ * Tokens supported:
+ *   {city}, {market_name}, {state_full}, {state_short},
+ *   {office_court}, {office_court_address},
+ *   {sol_years}, {sol_cite}, {comp_fault_threshold}
+ *
+ * @param string $text         Source text with {token} placeholders.
+ * @param array  $office       Office array from firm-data.
+ * @param array  $jurisdiction Jurisdiction array from firm-data ($firm['jurisdiction'][$state_key]).
+ * @return string
+ */
+function roden_replace_local_tokens( $text, $office, $jurisdiction = array() ) {
+    if ( ! $text ) return '';
+
+    $market_name = isset( $office['market_name'] ) && $office['market_name']
+        ? $office['market_name']
+        : ( $office['city'] ?? '' );
+
+    $threshold = '';
+    if ( ! empty( $jurisdiction['comp_fault_rule'] ) ) {
+        if ( preg_match( '/(\d{2})%/', $jurisdiction['comp_fault_rule'], $m ) ) {
+            $threshold = $m[1] . '%';
+        }
+    }
+
+    $tokens = array(
+        '{city}'                 => $office['city'] ?? '',
+        '{market_name}'          => $market_name,
+        '{state_full}'           => $office['state_full'] ?? '',
+        '{state_short}'          => $office['state'] ?? '',
+        '{office_court}'         => $office['court'] ?? '',
+        '{office_court_address}' => $office['court_address'] ?? '',
+        '{sol_years}'            => isset( $jurisdiction['statute_years'] ) ? (string) $jurisdiction['statute_years'] : '',
+        '{sol_cite}'             => $jurisdiction['statute_cite'] ?? '',
+        '{comp_fault_threshold}' => $threshold,
+    );
+
+    return strtr( $text, $tokens );
+}
+
+/**
+ * Convert lightweight `**bold**` markdown to <strong> tags. Pillar intros and
+ * office local-context essays use **bold** for emphasis on statute citations
+ * and key terms; the_content's wpautop filter doesn't process markdown.
+ *
+ * @param string $text Source with **bold** markers.
+ * @return string Same text with `**foo**` replaced by `<strong>foo</strong>`.
+ */
+function roden_markdown_bold_to_html( $text ) {
+    if ( ! $text ) return '';
+    return preg_replace( '/\*\*([^*\n]+)\*\*/', '<strong>$1</strong>', $text );
+}
+
+/**
+ * Render a pillar-level content block (negligence intro, compensation intro, etc.)
+ * with per-intersection token replacement. Used on intersection pages to avoid
+ * boilerplate duplication across all 6 sibling intersections.
+ *
+ * @param int    $parent_id    Parent pillar post ID.
+ * @param string $meta_key     Pillar meta field to read (e.g. '_roden_pillar_negligence_intro').
+ * @param array  $office       Office array.
+ * @param array  $jurisdiction Jurisdiction array.
+ * @return string Rendered HTML, or '' if pillar meta is empty.
+ */
+function roden_render_pillar_intro( $parent_id, $meta_key, $office, $jurisdiction = array() ) {
+    if ( ! $parent_id ) return '';
+    $raw = get_post_meta( $parent_id, $meta_key, true );
+    if ( ! $raw ) return '';
+    $with_tokens = roden_replace_local_tokens( $raw, $office, $jurisdiction );
+    $with_bold   = roden_markdown_bold_to_html( $with_tokens );
+    return apply_filters( 'the_content', $with_bold );
+}
+
+/**
+ * Render the per-office "Filing in [Court]" local context block on intersection
+ * and (optionally) location pages. Pulls from the office's `local_context` array
+ * key in firm-data. Returns '' if the office has no local context configured.
+ *
+ * @param array $office       Office array (must include 'local_context' key).
+ * @param array $jurisdiction Jurisdiction array.
+ * @return void Outputs HTML directly (or nothing).
+ */
+function roden_office_local_context_block( $office, $jurisdiction = array() ) {
+    $body = isset( $office['local_context'] ) ? trim( $office['local_context'] ) : '';
+    if ( ! $body ) return;
+
+    $body = roden_replace_local_tokens( $body, $office, $jurisdiction );
+    $body = roden_markdown_bold_to_html( $body );
+    $market_name = isset( $office['market_name'] ) && $office['market_name']
+        ? $office['market_name']
+        : ( $office['city'] ?? '' );
+    ?>
+    <div class="content-section pa-local-context" data-ai-extractable="true">
+        <h2>Filing a Personal Injury Case in <?php echo esc_html( $market_name ); ?></h2>
+        <div class="pa-local-context__body">
+            <?php echo apply_filters( 'the_content', $body ); ?>
+        </div>
+    </div>
+    <?php
+}
