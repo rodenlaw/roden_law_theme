@@ -170,6 +170,42 @@ function roden_seo_get_canonical() {
 }
 
 /* ==========================================================================
+   1b. SITEMAP — emit canonical URLs for practice_area children
+   ========================================================================== */
+
+add_filter( 'wp_sitemaps_posts_entry', 'roden_sitemap_canonical_entry', 10, 3 );
+/**
+ * Override the sitemap entry URL for practice_area children so the sitemap
+ * publishes the same URL the page's <link rel="canonical"> points to.
+ *
+ * Without this, WP emits the default CPT URL (/practice-areas/{pillar}/{child}/)
+ * for the 132 intersection + 192 sub-type posts, while every page sets
+ * canonical to the rewritten URL (/{pillar}/{child}/). Both URLs return 200,
+ * the canonical de-duplicates them for indexing, but the sitemap-canonical
+ * mismatch wastes Googlebot's crawl budget and dilutes signals during the
+ * consolidation window.
+ *
+ * @param array   $entry      Sitemap URL entry: [ 'loc' => ..., ... ].
+ * @param WP_Post $post       The post being added.
+ * @param string  $post_type  The post type.
+ * @return array
+ */
+function roden_sitemap_canonical_entry( $entry, $post, $post_type ) {
+    if ( ! in_array( $post_type, array( 'practice_area', 'practice-area' ), true ) ) {
+        return $entry;
+    }
+
+    if ( function_exists( 'roden_get_canonical_url' ) ) {
+        $canonical = roden_get_canonical_url( $post );
+        if ( $canonical ) {
+            $entry['loc'] = $canonical;
+        }
+    }
+
+    return $entry;
+}
+
+/* ==========================================================================
    2. META DESCRIPTION
    ========================================================================== */
 

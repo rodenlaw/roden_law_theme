@@ -366,24 +366,15 @@ function roden_legacy_attorney_redirect() {
 }
 
 /* ==========================================================================
-   3d. 404 REDIRECT — Send all 404s to the homepage
-   ========================================================================== */
-
-add_action( 'template_redirect', 'roden_redirect_404_to_home', 20 );
-function roden_redirect_404_to_home() {
-    // Don't redirect sitemap or XML requests — let WordPress handle them.
-    if ( isset( $_SERVER['REQUEST_URI'] ) ) {
-        $uri = $_SERVER['REQUEST_URI'];
-        if ( strpos( $uri, 'sitemap' ) !== false || strpos( $uri, '.xml' ) !== false ) {
-            return;
-        }
-    }
-
-    if ( is_404() ) {
-        wp_redirect( home_url( '/' ), 302 );
-        exit;
-    }
-}
+   3d. 404 HANDLING — let WordPress serve real 404s
+   ==========================================================================
+   Removed 2026-05-05: the previous global 404→home soft redirect (302 to /)
+   created a soft-404 anti-pattern. Every typo'd URL, every deleted page, and
+   every junk URL Google had historically indexed bounced to the homepage as
+   a 200 response, which Google flags as a quality signal and prevents stale
+   URLs from deindexing. Real 404s are now served by 404.php at the theme
+   root. For URLs that should redirect, add explicit 301 entries to
+   inc/legacy-redirects.php instead. */
 
 /* ==========================================================================
    4. TEMPLATE ROUTING — Bridge ACF CPT names to theme templates

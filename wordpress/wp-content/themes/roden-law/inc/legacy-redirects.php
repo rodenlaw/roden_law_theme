@@ -301,7 +301,12 @@ function roden_get_legacy_redirect_map() {
         '/practice-areas/medical-malpractice-attorneys/'  => '/practice-areas/medical-malpractice-lawyers/',
         '/practice-areas/nursing-home-abuse-attorneys/'   => '/practice-areas/nursing-home-abuse-lawyers/',
         '/practice-areas/slip-and-fall-attorneys/'        => '/practice-areas/slip-and-fall-lawyers/',
-        // '/practice-areas/personal-injury-lawyers/' — LIVE pillar page now exists; redirect removed (ROD-63)
+        // Restored 2026-05-05: the PI pillar post does NOT exist on prod (DB
+        // verified). Without this 301, the URL would 404 (the global 404→home
+        // soft redirect was removed in the same commit). Tracked as F-NEW-1b
+        // in the prod audit memory; the long-term fix is to build a real PI
+        // pillar page and delete this entry.
+        '/practice-areas/personal-injury-lawyers/'        => '/',
         '/practice-areas/coronavirus-business-claims/'    => false, // 410 Gone — deprecated content
 
         // ══════════════════════════════════════════════════════════════
