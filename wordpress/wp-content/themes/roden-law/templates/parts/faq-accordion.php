@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Part: FAQ Accordion with FAQPage schema
+ * Template Part: FAQ Accordion (HTML only — FAQPage schema is JSON-LD via schema-helpers.php)
  *
  * Thin wrapper around roden_faq_section() from template-tags.php.
  *
