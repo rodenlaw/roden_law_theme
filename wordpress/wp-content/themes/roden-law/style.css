@@ -2068,27 +2068,37 @@ input[type="submit"] {
 }
 
 .footer-offices-col .footer-state-bucket + .footer-state-bucket {
+    margin-top: var(--space-md);
     padding-top: var(--space-md);
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
+/* State landing heading — always-visible, prominent. The orange link plus
+   the always-on underline read as a clickable section header in both
+   default and hover states. */
 .footer-offices-col .footer-state-heading {
     font-family: var(--font-body);
-    font-size: 0.7rem;
+    font-size: 0.875rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: #aab4c8;
+    letter-spacing: 0.06em;
     margin: 0 0 var(--space-sm) 0;
 }
 
-.footer-offices-col .footer-state-heading a {
+.footer-offices-col .footer-state-heading a,
+.footer-offices-col .footer-state-heading a:link,
+.footer-offices-col .footer-state-heading a:visited {
     color: var(--color-orange);
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+    opacity: 1;
 }
 
-.footer-offices-col .footer-state-heading a:hover {
-    text-decoration: underline;
+.footer-offices-col .footer-state-heading a:hover,
+.footer-offices-col .footer-state-heading a:focus-visible {
+    color: var(--color-white);
+    text-decoration-color: var(--color-orange);
 }
 
 /* Mini Form in Footer */
