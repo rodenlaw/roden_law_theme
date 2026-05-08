@@ -19,19 +19,29 @@ function roden_register_nav_menus() {
 }
 
 /**
- * Inject "Georgia Offices" + "South Carolina Offices" state landing links
- * into the Locations sub-menu of any menu assigned to the primary, mobile,
- * or footer theme location.
+ * Inject "Georgia" + "South Carolina" state-landing links into the Locations
+ * sub-menu and re-parent each office under the appropriate state.
  *
- * The two synthetic items are added as direct children of whatever top-level
- * "Locations" item exists (matched by URL: any item whose URL ends in
- * /locations/), positioned BEFORE the city-office children so users see the
- * state-level options first. Idempotent — bails if a state-landing child
- * already exists.
+ * Applies to menus assigned to the primary, mobile, or footer theme location.
  *
- * Fires before the menu walker, so the items appear in the rendered HTML
- * with proper sub-menu wrapping. No DB writes; the items live in memory
- * only and are re-injected per request.
+ * Resulting hierarchy:
+ *
+ *   Locations
+ *   ├── Georgia                       → /locations/georgia/
+ *   │   ├── Savannah, GA              → /locations/georgia/savannah/
+ *   │   └── Darien, GA                → /locations/georgia/darien/
+ *   └── South Carolina                → /locations/south-carolina/
+ *       ├── Charleston, SC
+ *       ├── North Charleston, SC
+ *       ├── Columbia, SC
+ *       └── Myrtle Beach, SC
+ *
+ * The state items live in memory only — no DB writes. Idempotent: bails if
+ * a state-landing child is already present.
+ *
+ * The visual treatment of the third-level sub-menus (inline rendering, bold
+ * state header, indented offices) is handled in style.css under the
+ * .menu-item-state-landing class set on the synthetic items.
  */
 add_filter( 'wp_get_nav_menu_items', 'roden_inject_state_landings_in_locations_submenu', 10, 3 );
 function roden_inject_state_landings_in_locations_submenu( $items, $menu, $args ) {
@@ -69,6 +79,9 @@ function roden_inject_state_landings_in_locations_submenu( $items, $menu, $args 
         return $items;
     }
 
+    $synth_id_ga = 9999991;
+    $synth_id_sc = 9999992;
+
     // Idempotency: bail if a state-landing child is already present.
     foreach ( $items as $item ) {
         if ( (int) $item->menu_item_parent !== $locations_parent_id ) {
@@ -85,10 +98,10 @@ function roden_inject_state_landings_in_locations_submenu( $items, $menu, $args 
     //
     // menu_order MUST be unique across all items: WP's nav-menu walker uses it
     // as an array key (`$sorted[ $item->menu_order ] = $item`), so duplicates
-    // collapse into a single slot. We mirror the synthetic ID into menu_order
-    // to guarantee uniqueness; the side effect is the two items render at the
-    // end of the Locations sub-menu (after the city offices) rather than the
-    // top, but both items render reliably.
+    // collapse into a single slot. Mirroring the synthetic ID into menu_order
+    // guarantees uniqueness; PHP arrays preserve insertion order, so inserting
+    // these items immediately after the Locations parent renders them at the
+    // top of its sub-menu.
     $build_item = function ( $id, $title, $url, $parent_id ) {
         return (object) array(
             'ID'                => $id,
@@ -111,11 +124,29 @@ function roden_inject_state_landings_in_locations_submenu( $items, $menu, $args 
         );
     };
 
-    $ga = $build_item( 9999991, __( 'Georgia Offices', 'roden-law' ), home_url( '/locations/georgia/' ), $locations_parent_id );
-    $sc = $build_item( 9999992, __( 'South Carolina Offices', 'roden-law' ), home_url( '/locations/south-carolina/' ), $locations_parent_id );
+    $ga = $build_item( $synth_id_ga, __( 'Georgia', 'roden-law' ), home_url( '/locations/georgia/' ), $locations_parent_id );
+    $sc = $build_item( $synth_id_sc, __( 'South Carolina', 'roden-law' ), home_url( '/locations/south-carolina/' ), $locations_parent_id );
+
+    // Re-parent each existing direct child of Locations under the appropriate
+    // state synthetic item. The walker will then render offices nested inside
+    // their state's sub-menu (third-level UL), which CSS renders inline.
+    foreach ( $items as $item ) {
+        if ( (int) $item->menu_item_parent !== $locations_parent_id ) {
+            continue;
+        }
+        $path = wp_parse_url( trailingslashit( $item->url ?? '' ), PHP_URL_PATH );
+        if ( null === $path ) {
+            continue;
+        }
+        if ( 0 === strpos( $path, '/locations/georgia/' ) ) {
+            $item->menu_item_parent = (string) $synth_id_ga;
+        } elseif ( 0 === strpos( $path, '/locations/south-carolina/' ) ) {
+            $item->menu_item_parent = (string) $synth_id_sc;
+        }
+    }
 
     // Insert the two state items immediately after the Locations parent so the
-    // walker treats them as the first sub-menu children.
+    // walker treats them as the first children in source order.
     $insert_at = null;
     foreach ( $items as $idx => $item ) {
         if ( (int) $item->ID === $locations_parent_id ) {

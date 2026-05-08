@@ -119,13 +119,27 @@ function roden_fallback_menu() {
         <li class="menu-item menu-item-has-children">
             <a href="<?php echo esc_url( home_url( '/locations/' ) ); ?>"><?php esc_html_e( 'Locations', 'roden-law' ); ?></a>
             <ul class="sub-menu">
-                <li class="menu-item menu-item-state-landing"><a href="<?php echo esc_url( home_url( '/locations/georgia/' ) ); ?>"><?php esc_html_e( 'Georgia Offices', 'roden-law' ); ?></a></li>
-                <li class="menu-item menu-item-state-landing"><a href="<?php echo esc_url( home_url( '/locations/south-carolina/' ) ); ?>"><?php esc_html_e( 'South Carolina Offices', 'roden-law' ); ?></a></li>
-                <?php foreach ( $firm['offices'] as $office ) :
-                    $city_slug = sanitize_title( $office['market_name'] );
-                    $url = home_url( '/locations/' . $office['state_slug'] . '/' . $city_slug . '/' );
+                <?php
+                $fallback_state_buckets = array(
+                    array( 'state_full' => __( 'Georgia', 'roden-law' ), 'state_abbr' => 'GA', 'state_slug' => 'georgia' ),
+                    array( 'state_full' => __( 'South Carolina', 'roden-law' ), 'state_abbr' => 'SC', 'state_slug' => 'south-carolina' ),
+                );
+                foreach ( $fallback_state_buckets as $bucket ) :
                 ?>
-                    <li class="menu-item"><a href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( $office['market_name'] . ', ' . $office['state'] ); ?></a></li>
+                    <li class="menu-item menu-item-has-children menu-item-state-landing">
+                        <a href="<?php echo esc_url( home_url( '/locations/' . $bucket['state_slug'] . '/' ) ); ?>"><?php echo esc_html( $bucket['state_full'] ); ?></a>
+                        <ul class="sub-menu">
+                            <?php foreach ( $firm['offices'] as $office ) :
+                                if ( $office['state'] !== $bucket['state_abbr'] ) {
+                                    continue;
+                                }
+                                $city_slug = sanitize_title( $office['market_name'] );
+                                $url = home_url( '/locations/' . $office['state_slug'] . '/' . $city_slug . '/' );
+                            ?>
+                                <li class="menu-item"><a href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( $office['market_name'] . ', ' . $office['state'] ); ?></a></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </li>
                 <?php endforeach; ?>
             </ul>
         </li>
