@@ -137,6 +137,8 @@ function roden_output_schema() {
         if ( $is_neighborhood ) {
             roden_schema_neighborhood_legal_service( $firm );
             roden_schema_local_business_neighborhood( $firm );
+        } elseif ( roden_is_state_landing() ) {
+            roden_schema_state_landing( $firm );
         } else {
             roden_schema_local_business_single( $firm );
         }
@@ -1759,6 +1761,130 @@ function roden_schema_local_business_neighborhood( $firm ) {
     }
 
     roden_json_ld( $schema );
+}
+
+/* ==========================================================================
+   15. State Landing Page schema (F-NEW-4)
+   ========================================================================== */
+
+/**
+ * Detect if the current request is a state landing page.
+ *
+ * State landings are `location` posts at /locations/georgia/ and
+ * /locations/south-carolina/ — the parent locations under which the
+ * city offices and neighborhoods nest. They have no _roden_office_key
+ * and are not _roden_is_neighborhood.
+ *
+ * @return string|false State slug ('georgia' | 'south-carolina') or false.
+ */
+function roden_is_state_landing() {
+    if ( ! is_singular( 'location' ) ) {
+        return false;
+    }
+    $post = get_post();
+    if ( ! $post ) {
+        return false;
+    }
+    if ( get_post_meta( $post->ID, '_roden_is_neighborhood', true ) ) {
+        return false;
+    }
+    if ( get_post_meta( $post->ID, '_roden_office_key', true ) ) {
+        return false;
+    }
+    if ( in_array( $post->post_name, array( 'georgia', 'south-carolina' ), true ) ) {
+        return $post->post_name;
+    }
+    return false;
+}
+
+/**
+ * Output state-landing schema: state-scoped LegalService (with firm
+ * AggregateRating + state areaServed + serviceLocation refs) and a
+ * state-scoped Organization with department[] linking to the in-state
+ * office LocalBusiness entities.
+ *
+ * Closes the F-NEW-4 audit finding: state landings previously emitted
+ * only WebPage/BreadcrumbList/FAQPage and were schema-thin compared to
+ * the office pages they sit above. Also closes the F-NEW-3 gap on state
+ * landings (no LegalService entity to attach the firm rating to).
+ *
+ * @param array $firm Firm data from roden_firm_data().
+ */
+function roden_schema_state_landing( $firm ) {
+    $state_slug = roden_is_state_landing();
+    if ( ! $state_slug ) {
+        return;
+    }
+
+    $state_full = ( 'georgia' === $state_slug ) ? 'Georgia' : 'South Carolina';
+    $state_abbr = ( 'georgia' === $state_slug ) ? 'GA' : 'SC';
+
+    $page_url = roden_get_canonical_url();
+    $page_url = trailingslashit( $page_url );
+
+    // Build serviceLocation list (full ref) and department[] (lightweight @id ref)
+    // for every office whose state matches this landing page.
+    $service_locations = array();
+    $department_refs   = array();
+    foreach ( $firm['offices'] as $office ) {
+        if ( $office['state'] !== $state_abbr ) {
+            continue;
+        }
+        $office_lb_id = $firm['url'] . '/locations/' . $office['state_slug'] . '/' . sanitize_title( $office['market_name'] ) . '/#localbusiness';
+        $service_locations[] = array(
+            '@type'     => array( 'LegalService', 'LocalBusiness' ),
+            '@id'       => $office_lb_id,
+            'name'      => $office['name'],
+            'address'   => roden_schema_postal_address( $office ),
+            'telephone' => $office['phone'],
+            'geo'       => roden_schema_geo( $office ),
+        );
+        $department_refs[] = array(
+            '@type' => 'LocalBusiness',
+            '@id'   => $office_lb_id,
+            'name'  => $office['name'],
+        );
+    }
+
+    // --- LegalService (state-scoped) ---
+    roden_json_ld( array(
+        '@context'        => 'https://schema.org',
+        '@type'           => 'LegalService',
+        '@id'             => $page_url . '#legalservice',
+        'name'            => 'Personal Injury Lawyers in ' . $state_full . ' — ' . $firm['name'],
+        'url'             => $page_url,
+        'description'     => 'Roden Law represents personal injury victims throughout ' . $state_full . '. Free consultation, no fees unless we win.',
+        'telephone'       => $firm['phone_e164'],
+        'priceRange'      => 'Free Consultation — Contingency Fee',
+        'serviceType'     => 'Personal Injury Law',
+        'dateModified'    => get_the_modified_date( 'c' ),
+        'areaServed'      => array(
+            '@type' => 'State',
+            'name'  => $state_full,
+        ),
+        'serviceLocation' => $service_locations,
+        'aggregateRating' => roden_schema_firm_aggregate_rating( $firm ),
+        'isPartOf'        => array( '@id' => $firm['url'] . '/#legalservice' ),
+    ) );
+
+    // --- Organization (state-scoped) with department[] ---
+    roden_json_ld( array(
+        '@context'           => 'https://schema.org',
+        '@type'              => array( 'Organization', 'LawFirm' ),
+        '@id'                => $page_url . '#organization',
+        'name'               => $firm['name'] . ' — ' . $state_full,
+        'url'                => $page_url,
+        'parentOrganization' => array(
+            '@type' => 'Organization',
+            '@id'   => $firm['url'] . '/#organization',
+            'name'  => $firm['name'],
+        ),
+        'areaServed'         => array(
+            '@type' => 'State',
+            'name'  => $state_full,
+        ),
+        'department'         => $department_refs,
+    ) );
 }
 
 /* ==========================================================================

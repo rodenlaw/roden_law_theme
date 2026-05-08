@@ -119,6 +119,8 @@ function roden_fallback_menu() {
         <li class="menu-item menu-item-has-children">
             <a href="<?php echo esc_url( home_url( '/locations/' ) ); ?>"><?php esc_html_e( 'Locations', 'roden-law' ); ?></a>
             <ul class="sub-menu">
+                <li class="menu-item menu-item-state-landing"><a href="<?php echo esc_url( home_url( '/locations/georgia/' ) ); ?>"><?php esc_html_e( 'Georgia Offices', 'roden-law' ); ?></a></li>
+                <li class="menu-item menu-item-state-landing"><a href="<?php echo esc_url( home_url( '/locations/south-carolina/' ) ); ?>"><?php esc_html_e( 'South Carolina Offices', 'roden-law' ); ?></a></li>
                 <?php foreach ( $firm['offices'] as $office ) :
                     $city_slug = sanitize_title( $office['market_name'] );
                     $url = home_url( '/locations/' . $office['state_slug'] . '/' . $city_slug . '/' );

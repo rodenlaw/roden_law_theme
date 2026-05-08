@@ -1995,12 +1995,17 @@ input[type="submit"] {
     margin-bottom: var(--space-md);
 }
 
-.footer-offices-col .footer-office h5 {
+.footer-offices-col .footer-office h5,
+.footer-offices-col .footer-office h6 {
     font-family: var(--font-body);
     font-size: 0.8rem;
     font-weight: 700;
     color: var(--color-white);
     margin-bottom: 2px;
+}
+
+.footer-offices-col .footer-office h6 a {
+    color: var(--color-white);
 }
 
 .footer-offices-col .footer-office address {
@@ -2016,6 +2021,35 @@ input[type="submit"] {
 
 .footer-offices-col .footer-office a:hover {
     color: var(--color-orange);
+}
+
+/* State buckets — group offices under a clickable state-landing heading. */
+.footer-offices-col .footer-state-bucket {
+    margin-bottom: var(--space-lg);
+}
+
+.footer-offices-col .footer-state-bucket + .footer-state-bucket {
+    padding-top: var(--space-md);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-offices-col .footer-state-heading {
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #aab4c8;
+    margin: 0 0 var(--space-sm) 0;
+}
+
+.footer-offices-col .footer-state-heading a {
+    color: var(--color-orange);
+    text-decoration: none;
+}
+
+.footer-offices-col .footer-state-heading a:hover {
+    text-decoration: underline;
 }
 
 /* Mini Form in Footer */
