@@ -43,10 +43,14 @@ function roden_seo_title_optimization( $title_parts ) {
             $office_key = get_post_meta( $post_id, '_roden_pa_office_key', true );
 
             if ( $office_key && isset( $firm['offices'][ $office_key ] ) ) {
-                // Intersection page — append "in City, ST" only if not already present.
-                // Post titles like "Car Accident Lawyers in Savannah, GA" already contain the location.
+                // Intersection page — append "in {Market}, ST" only if not already present.
+                // Post titles like "Car Accident Lawyers in Savannah, GA" already contain the
+                // market name. Use market_name (not city) because for the Myrtle Beach office,
+                // city = "Murrells Inlet" while market_name = "Myrtle Beach"; checking against
+                // the mailing city would miss the dedup and append a redundant phrase
+                // (e.g. "...in Myrtle Beach, SC in Murrells Inlet, SC – Roden Law").
                 $office  = $firm['offices'][ $office_key ];
-                $geo_tag = $office['city'] . ', ' . $office['state'];
+                $geo_tag = $office['market_name'] . ', ' . $office['state'];
                 if ( false === stripos( $title_parts['title'], $geo_tag ) ) {
                     $title_parts['title'] .= ' in ' . $geo_tag;
                 }
@@ -352,8 +356,11 @@ function roden_seo_auto_desc_practice_area( $post_id, $title, $firm ) {
 
     if ( $office_key && isset( $firm['offices'][ $office_key ] ) ) {
         // --- Intersection page ---
+        // Use market_name as the SEO-facing city (e.g. "Myrtle Beach" rather than the
+        // mailing-city "Murrells Inlet"); for offices where city == market_name behavior
+        // is unchanged.
         $office = $firm['offices'][ $office_key ];
-        $city   = $office['city'];
+        $city   = $office['market_name'];
         $state  = $office['state_full'];
         $court  = $office['court'];
         $sol    = isset( $firm['jurisdiction'][ $office['state'] ]['statute_years'] )
@@ -390,7 +397,7 @@ function roden_seo_auto_desc_location( $post_id, $title, $firm ) {
         $parent_key = get_post_meta( $post_id, '_roden_parent_office_key', true );
         $parent_office = ( $parent_key && isset( $firm['offices'][ $parent_key ] ) )
             ? $firm['offices'][ $parent_key ] : null;
-        $near = $parent_office ? ' near ' . $parent_office['city'] : '';
+        $near = $parent_office ? ' near ' . $parent_office['market_name'] : '';
         return roden_seo_truncate(
             'Personal injury lawyers serving ' . $title . $near . '. ' . $firm['name'] . ' — free consultation, no fees unless we win.',
             160
@@ -411,9 +418,14 @@ function roden_seo_auto_desc_location( $post_id, $title, $firm ) {
     $cities_str = '';
     if ( $svc ) {
         $parts = array_map( 'trim', explode( ',', strtok( $svc, '.' ) ) );
-        // Take up to 3 nearby cities (skip the office city itself, which is usually first).
+        // Take up to 3 nearby cities (skip the office's own market and mailing city).
+        // Filter both `market_name` and `city` because for the Myrtle Beach office these
+        // differ (Myrtle Beach vs. Murrells Inlet) and both appear in service_area —
+        // filtering only one would leave the other in the "Also serving …" list.
         $nearby = array_slice( array_filter( $parts, function( $c ) use ( $office ) {
-            return stripos( $c, $office['city'] ) === false && stripos( $c, 'surrounding' ) === false;
+            return stripos( $c, $office['market_name'] ) === false
+                && stripos( $c, $office['city'] ) === false
+                && stripos( $c, 'surrounding' ) === false;
         }), 0, 3 );
         if ( $nearby ) {
             $cities_str = ' Also serving ' . implode( ', ', $nearby ) . '.';
@@ -422,7 +434,7 @@ function roden_seo_auto_desc_location( $post_id, $title, $firm ) {
 
     // e.g. "Roden Law in Savannah, GA — personal injury lawyers with over $250M recovered. Also serving Pooler, Richmond Hill, Hinesville. Call (912) 303-5850."
     return roden_seo_truncate(
-        $firm['name'] . ' in ' . $office['city'] . ', ' . $office['state']
+        $firm['name'] . ' in ' . $office['market_name'] . ', ' . $office['state']
         . ' — personal injury lawyers with over $250M recovered.'
         . $cities_str
         . ' Call ' . $office['phone'] . '.',
