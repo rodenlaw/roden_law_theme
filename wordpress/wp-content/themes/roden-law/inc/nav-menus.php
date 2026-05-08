@@ -82,6 +82,13 @@ function roden_inject_state_landings_in_locations_submenu( $items, $menu, $args 
 
     // Build synthetic menu items. IDs use a high range to avoid colliding with
     // real DB-backed items. type='custom' is the standard for hand-crafted links.
+    //
+    // menu_order MUST be unique across all items: WP's nav-menu walker uses it
+    // as an array key (`$sorted[ $item->menu_order ] = $item`), so duplicates
+    // collapse into a single slot. We mirror the synthetic ID into menu_order
+    // to guarantee uniqueness; the side effect is the two items render at the
+    // end of the Locations sub-menu (after the city offices) rather than the
+    // top, but both items render reliably.
     $build_item = function ( $id, $title, $url, $parent_id ) {
         return (object) array(
             'ID'                => $id,
@@ -98,7 +105,7 @@ function roden_inject_state_landings_in_locations_submenu( $items, $menu, $args 
             'description'       => '',
             'classes'           => array( 'menu-item', 'menu-item-state-landing' ),
             'xfn'               => '',
-            'menu_order'        => 0,
+            'menu_order'        => $id,
             'post_type'         => 'nav_menu_item',
             'post_status'       => 'publish',
         );
