@@ -858,7 +858,7 @@ function roden_reading_time() {
 }
 
 /* ==========================================================================
-   FAQ ACCORDION (HTML output — complements FAQPage schema)
+   FAQ ACCORDION (HTML output — FAQPage schema is JSON-LD only, in schema-helpers.php)
    ========================================================================== */
 
 function roden_faq_section( $post_id = null ) {
@@ -872,21 +872,19 @@ function roden_faq_section( $post_id = null ) {
     ?>
     <div class="faq-section" id="faq" data-ai-extractable="true">
         <h2 class="section-title">Frequently Asked Questions</h2>
-        <div class="faq-accordion" itemscope itemtype="https://schema.org/FAQPage">
+        <div class="faq-accordion">
             <?php foreach ( $faqs as $i => $faq ) :
                 if ( empty( $faq['question'] ) || empty( $faq['answer'] ) ) {
                     continue;
                 }
                 ?>
-                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="faq-item">
                     <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-<?php echo (int) $i; ?>">
-                        <span itemprop="name"><?php echo esc_html( $faq['question'] ); ?></span>
+                        <span><?php echo esc_html( $faq['question'] ); ?></span>
                         <span class="faq-toggle" aria-hidden="true">+</span>
                     </button>
-                    <div class="faq-answer" id="faq-answer-<?php echo (int) $i; ?>"
-                         itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"
-                         style="display:none;">
-                        <p itemprop="text"><?php echo wp_kses_post( $faq['answer'] ); ?></p>
+                    <div class="faq-answer" id="faq-answer-<?php echo (int) $i; ?>" style="display:none;">
+                        <p><?php echo wp_kses_post( $faq['answer'] ); ?></p>
                     </div>
                 </div>
             <?php endforeach; ?>
