@@ -321,6 +321,45 @@ blockquote {
     left: 100%;
 }
 
+/* State-landing items (Georgia / South Carolina) act as bold section headers
+   inside the Locations sub-menu, with their offices nested underneath inline
+   (not as a side flyout). The state name is itself a clickable link to the
+   state landing page. */
+.main-navigation .menu-item-state-landing > a {
+    font-weight: 700;
+}
+
+/* Override the third-level flyout for state-landing's children so the
+   offices render inline within the same dropdown panel, always visible
+   (no hover-to-expand on a sibling). */
+.main-navigation .menu-item-state-landing > .sub-menu {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    top: auto;
+    left: auto;
+    min-width: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    margin-bottom: var(--space-xs);
+}
+
+/* Indent the office links so they read as nested under the state header. */
+.main-navigation .menu-item-state-landing > .sub-menu > li > a {
+    padding-left: calc(var(--space-lg) * 1.75);
+    font-weight: 500;
+}
+
+/* Mobile: state-landing children stay always-visible (no tap-to-expand on
+   the state header — the user wants to see all offices). Also hide the
+   sub-menu-toggle WP injects on the state item. */
+.main-navigation .menu-item-state-landing > .sub-menu-toggle {
+    display: none !important;
+}
+
 /* Dropdown arrow indicator for parent items */
 .main-navigation > ul > li.menu-item-has-children > a::after {
     content: '';
