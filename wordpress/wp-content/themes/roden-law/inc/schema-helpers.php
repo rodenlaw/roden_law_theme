@@ -328,8 +328,10 @@ function roden_schema_legal_service( $firm ) {
         // dateModified — critical AI freshness signal (+40% citation boost with recency)
         $schema['dateModified'] = get_the_modified_date( 'c' );
 
+        $is_intersection = function_exists( 'roden_is_intersection_page' ) && roden_is_intersection_page();
+
         // Narrow areaServed on intersection pages to the specific location
-        if ( function_exists( 'roden_is_intersection_page' ) && roden_is_intersection_page() ) {
+        if ( $is_intersection ) {
             $office = roden_get_intersection_office();
             if ( $office ) {
                 $schema['areaServed'] = array(
@@ -339,6 +341,14 @@ function roden_schema_legal_service( $firm ) {
                     ),
                 );
             }
+        }
+
+        // Firm-wide aggregateRating on pillar + sub-type LegalService entities.
+        // Skipped on intersection pages because those already carry the per-office
+        // aggregateRating on the co-emitted LocalBusiness — adding the firm-wide
+        // number on top would mix two scopes into the same page's rating signals.
+        if ( ! $is_intersection ) {
+            $schema['aggregateRating'] = roden_schema_firm_aggregate_rating( $firm );
         }
 
         // Link to the attorney providing this service (E-E-A-T provider signal).
@@ -402,6 +412,7 @@ function roden_schema_local_business_office( $firm, $key, $office ) {
         'priceRange' => 'Free Consultation',
         'address'    => roden_schema_postal_address( $office ),
         'geo'        => roden_schema_geo( $office ),
+        'areaServed' => roden_schema_office_area_served( $office ),
         'openingHoursSpecification' => array(
             array(
                 '@type'     => 'OpeningHoursSpecification',
@@ -1636,6 +1647,7 @@ function roden_schema_neighborhood_legal_service( $firm ) {
         'knowsAbout'  => $knows_about,
         'makesOffer'  => $offers,
         'hasMap'      => $directions_url,
+        'aggregateRating' => roden_schema_firm_aggregate_rating( $firm ),
         'openingHoursSpecification' => array(
             array(
                 '@type'     => 'OpeningHoursSpecification',
@@ -1782,6 +1794,74 @@ function roden_schema_geo( $office ) {
         'latitude'  => $office['latitude'],
         'longitude' => $office['longitude'],
     );
+}
+
+/**
+ * Build the firm-wide AggregateRating schema fragment.
+ *
+ * Used to attach the firm's collective 4.9★ / 500-review rating to LegalService
+ * entities on pillar, sub-type, and neighborhood pages. Office LocalBusiness
+ * entities use their own per-office rating in roden_schema_local_business_office.
+ *
+ * @param array $firm Firm data from roden_firm_data().
+ * @return array AggregateRating schema fragment.
+ */
+function roden_schema_firm_aggregate_rating( $firm ) {
+    $review_count = isset( $firm['trust_stats']['review_count'] ) ? intval( $firm['trust_stats']['review_count'] ) : 500;
+    $rating       = isset( $firm['trust_stats']['rating'] ) ? $firm['trust_stats']['rating'] : '4.9';
+    return array(
+        '@type'       => 'AggregateRating',
+        'ratingValue' => $rating,
+        'bestRating'  => '5',
+        'worstRating' => '1',
+        'reviewCount' => $review_count,
+    );
+}
+
+/**
+ * Build the areaServed list for an office LocalBusiness entity.
+ *
+ * Sources from $office['market_name'] (primary city) plus $office['nearby_communities']
+ * (the list already curated in firm-data.php). Each entry is a Place with
+ * containedInPlace pointing at the office's state.
+ *
+ * @param array $office Office data from roden_firm_data().
+ * @return array Array of Place schema fragments.
+ */
+function roden_schema_office_area_served( $office ) {
+    $state_full = $office['state_full'] ?? $office['state'];
+    $state_part = array(
+        '@type' => 'State',
+        'name'  => $state_full,
+    );
+
+    $places = array(
+        array(
+            '@type'            => 'City',
+            'name'             => $office['market_name'] . ', ' . $office['state'],
+            'containedInPlace' => $state_part,
+        ),
+    );
+
+    $nearby = isset( $office['nearby_communities'] ) && is_array( $office['nearby_communities'] )
+        ? $office['nearby_communities']
+        : array();
+    foreach ( $nearby as $community ) {
+        $community = trim( $community );
+        if ( '' === $community ) {
+            continue;
+        }
+        if ( strcasecmp( $community, $office['market_name'] ) === 0 ) {
+            continue;
+        }
+        $places[] = array(
+            '@type'            => 'Place',
+            'name'             => $community . ', ' . $office['state'],
+            'containedInPlace' => $state_part,
+        );
+    }
+
+    return $places;
 }
 
 /* ==========================================================================
