@@ -105,20 +105,57 @@ $footer_practice_areas = array(
                     </ul>
                 </div>
 
-                <!-- Column 3: Our Offices -->
+                <!-- Column 3: Our Offices — grouped by state with state-landing header links -->
                 <div class="footer-col footer-offices-col">
                     <h4 class="footer-heading footer-heading-accent">
                         <?php esc_html_e( 'Our Offices', 'roden-law' ); ?>
                     </h4>
-                    <?php foreach ( $firm['offices'] as $key => $office ) : ?>
-                        <div class="footer-office">
-                            <h5><?php echo esc_html( $office['market_name'] . ', ' . $office['state'] ); ?></h5>
-                            <address>
-                                <?php echo esc_html( $office['street'] ); ?><br>
-                                <a href="tel:<?php echo esc_attr( $is_local_page ? $office['phone_raw'] : $firm['phone_raw'] ); ?>">
-                                    <?php echo esc_html( $is_local_page ? $office['phone'] : $firm['vanity_phone'] ); ?>
+                    <?php
+                    $state_buckets = array(
+                        array(
+                            'state_full' => __( 'Georgia', 'roden-law' ),
+                            'state_abbr' => 'GA',
+                            'state_slug' => 'georgia',
+                        ),
+                        array(
+                            'state_full' => __( 'South Carolina', 'roden-law' ),
+                            'state_abbr' => 'SC',
+                            'state_slug' => 'south-carolina',
+                        ),
+                    );
+                    foreach ( $state_buckets as $bucket ) :
+                        $state_landing_url = home_url( '/locations/' . $bucket['state_slug'] . '/' );
+                    ?>
+                        <div class="footer-state-bucket">
+                            <h5 class="footer-state-heading">
+                                <a href="<?php echo esc_url( $state_landing_url ); ?>">
+                                    <?php
+                                    /* translators: %s: state name (Georgia or South Carolina) */
+                                    echo esc_html( sprintf( __( '%s Offices', 'roden-law' ), $bucket['state_full'] ) );
+                                    ?>
                                 </a>
-                            </address>
+                            </h5>
+                            <?php foreach ( $firm['offices'] as $key => $office ) :
+                                if ( $office['state'] !== $bucket['state_abbr'] ) {
+                                    continue;
+                                }
+                                $city_slug = sanitize_title( $office['market_name'] );
+                                $office_url = home_url( '/locations/' . $office['state_slug'] . '/' . $city_slug . '/' );
+                            ?>
+                                <div class="footer-office">
+                                    <h6>
+                                        <a href="<?php echo esc_url( $office_url ); ?>">
+                                            <?php echo esc_html( $office['market_name'] . ', ' . $office['state'] ); ?>
+                                        </a>
+                                    </h6>
+                                    <address>
+                                        <?php echo esc_html( $office['street'] ); ?><br>
+                                        <a href="tel:<?php echo esc_attr( $is_local_page ? $office['phone_raw'] : $firm['phone_raw'] ); ?>">
+                                            <?php echo esc_html( $is_local_page ? $office['phone'] : $firm['vanity_phone'] ); ?>
+                                        </a>
+                                    </address>
+                                </div>
+                            <?php endforeach; ?>
                         </div>
                     <?php endforeach; ?>
                 </div>
