@@ -299,7 +299,7 @@ function roden_schema_legal_service( $firm ) {
         'url'         => $ls_url,
         'description' => $firm['description'],
         'telephone'   => $firm['phone_e164'],
-        'priceRange'  => 'Free Consultation',
+        'priceRange'  => '$$',
         'areaServed'  => array(
             array( '@type' => 'State', 'name' => 'Georgia' ),
             array( '@type' => 'State', 'name' => 'South Carolina' ),
@@ -411,7 +411,7 @@ function roden_schema_local_business_office( $firm, $key, $office ) {
         'name'       => $office['name'],
         'url'        => $firm['url'] . '/locations/' . $office['state_slug'] . '/' . sanitize_title( $office['market_name'] ) . '/',
         'telephone'  => $office['phone'],
-        'priceRange' => 'Free Consultation',
+        'priceRange' => '$$',
         'address'    => roden_schema_postal_address( $office ),
         'geo'        => roden_schema_geo( $office ),
         'areaServed' => roden_schema_office_area_served( $office ),
@@ -480,7 +480,7 @@ function roden_schema_person( $firm ) {
         'name'       => $firm['name'],
         'url'        => $firm['url'],
         'telephone'  => $firm['phone_e164'],
-        'priceRange' => 'Contingency (No Fee Unless We Win)',
+        'priceRange' => '$$',
     );
     if ( $office_key && isset( $firm['offices'][ $office_key ] ) ) {
         $office = $firm['offices'][ $office_key ];
@@ -1113,7 +1113,7 @@ function roden_schema_breadcrumbs() {
             'item'     => get_permalink(),
         );
 
-    } elseif ( is_singular() ) {
+    } elseif ( is_singular() && ! is_front_page() ) {
         $items[] = array(
             '@type'    => 'ListItem',
             'position' => $position++,
@@ -1478,13 +1478,25 @@ function roden_schema_about_page( $firm ) {
    ========================================================================== */
 
 function roden_schema_contact_page( $firm ) {
-    $contact_points = array();
+    // Group offices by phone so shared lines (e.g. Savannah + Darien on the GA
+    // intake number) emit one ContactPoint with a combined areaServed.
+    $by_phone = array();
     foreach ( $firm['offices'] as $office ) {
+        $phone = $office['phone'];
+        if ( ! isset( $by_phone[ $phone ] ) ) {
+            $by_phone[ $phone ] = array();
+        }
+        $by_phone[ $phone ][] = $office['state_full'];
+    }
+
+    $contact_points = array();
+    foreach ( $by_phone as $phone => $states ) {
+        $states_unique = array_values( array_unique( $states ) );
         $contact_points[] = array(
-            '@type'       => 'ContactPoint',
-            'telephone'   => $office['phone'],
-            'contactType' => 'customer service',
-            'areaServed'  => $office['state_full'],
+            '@type'             => 'ContactPoint',
+            'telephone'         => $phone,
+            'contactType'       => 'customer service',
+            'areaServed'        => count( $states_unique ) === 1 ? $states_unique[0] : $states_unique,
             'availableLanguage' => array( 'English', 'Spanish' ),
         );
     }
@@ -1586,12 +1598,21 @@ function roden_schema_neighborhood_legal_service( $firm ) {
     if ( $service_area_text ) {
         $communities = array_filter( array_map( 'trim', preg_split( '/[,\n]+/', $service_area_text ) ) );
         foreach ( $communities as $community ) {
-            if ( strcasecmp( $community, $neighborhood_name ) !== 0 ) {
-                $area_served[] = array(
-                    '@type' => 'Place',
-                    'name'  => $community,
-                );
+            if ( strcasecmp( $community, $neighborhood_name ) === 0 ) {
+                continue;
             }
+            // Reject prose fragments: too long for a place name, or starts with
+            // a conjunction/article (e.g. "and surrounding communities along…").
+            if ( mb_strlen( $community ) > 60 ) {
+                continue;
+            }
+            if ( preg_match( '/^(and|or|the|including|serving|plus)\b/i', $community ) ) {
+                continue;
+            }
+            $area_served[] = array(
+                '@type' => 'Place',
+                'name'  => $community,
+            );
         }
     }
 
@@ -1641,7 +1662,7 @@ function roden_schema_neighborhood_legal_service( $firm ) {
         'description' => 'Personal injury lawyers serving ' . $neighborhood_name . ', ' . $office['state'] . '. Free consultation. No fees unless we win.',
         'url'         => get_permalink(),
         'telephone'   => $office['phone'],
-        'priceRange'  => 'Free consultation, contingency fee',
+        'priceRange'  => '$$',
         'serviceType' => 'Personal Injury Law',
         'address'     => roden_schema_postal_address( $office ),
         'geo'         => $geo,
@@ -1714,7 +1735,7 @@ function roden_schema_local_business_neighborhood( $firm ) {
         'name'       => $office['name'],
         'url'        => $firm['url'] . '/locations/' . $office['state_slug'] . '/' . sanitize_title( $office['market_name'] ) . '/',
         'telephone'  => $office['phone'],
-        'priceRange' => 'Free Consultation',
+        'priceRange' => '$$',
         'address'    => roden_schema_postal_address( $office ),
         'geo'        => roden_schema_geo( $office ),
         'areaServed' => array(
@@ -1855,7 +1876,7 @@ function roden_schema_state_landing( $firm ) {
         'url'             => $page_url,
         'description'     => 'Roden Law represents personal injury victims throughout ' . $state_full . '. Free consultation, no fees unless we win.',
         'telephone'       => $firm['phone_e164'],
-        'priceRange'      => 'Free Consultation — Contingency Fee',
+        'priceRange'      => '$$',
         'serviceType'     => 'Personal Injury Law',
         'dateModified'    => get_the_modified_date( 'c' ),
         'areaServed'      => array(
@@ -2119,7 +2140,7 @@ function roden_schema_sc_statewide( $firm ) {
         'url'             => $page_url,
         'description'     => 'Roden Law represents car accident victims throughout South Carolina. With offices in Charleston, Columbia, and Myrtle Beach, our attorneys fight for maximum compensation on a contingency fee — no fees unless we win.',
         'telephone'       => $firm['vanity_phone'],
-        'priceRange'      => 'Free Consultation — Contingency Fee',
+        'priceRange'      => '$$',
         'areaServed'      => array(
             '@type' => 'State',
             'name'  => 'South Carolina',
