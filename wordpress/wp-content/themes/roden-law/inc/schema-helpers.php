@@ -39,6 +39,35 @@ function roden_json_ld( $data ) {
 }
 
 /**
+ * Build a clean description string for schema. Prefers a hand-authored meta
+ * description, falls back to the post excerpt, then to a trimmed content
+ * fallback. Strips the WP excerpt-truncation suffix (`[…]` / `[&hellip;]`)
+ * which leaks into auto-generated descriptions and reads as broken text in
+ * SERPs and AI citations.
+ *
+ * @param int|null $post_id Post ID (defaults to current post).
+ * @return string Cleaned description.
+ */
+function roden_schema_clean_description( $post_id = null ) {
+    $post_id = $post_id ?: get_the_ID();
+    $meta    = get_post_meta( $post_id, '_roden_meta_description', true );
+    if ( $meta ) {
+        return trim( wp_strip_all_tags( $meta ) );
+    }
+
+    $excerpt = get_the_excerpt( $post_id );
+    if ( $excerpt ) {
+        // Drop the trailing "[…]" / "[&hellip;]" / "…" WP appends to auto-excerpts.
+        $excerpt = preg_replace( '/\s*\[(?:&hellip;|\xE2\x80\xA6|\.{3})\]\s*$/u', '', $excerpt );
+        $excerpt = preg_replace( '/\s*\xE2\x80\xA6\s*$/u', '', $excerpt );
+        return trim( wp_strip_all_tags( html_entity_decode( $excerpt, ENT_QUOTES, 'UTF-8' ) ) );
+    }
+
+    $content = get_post_field( 'post_content', $post_id );
+    return trim( wp_trim_words( wp_strip_all_tags( $content ), 30, '' ) );
+}
+
+/**
  * Check if we're viewing a singular practice_area post.
  * Handles both our CPT slug (practice_area) and ACF's (practice-area).
  *
@@ -106,10 +135,9 @@ function roden_output_schema() {
 
     if ( is_front_page() ) {
         roden_schema_organization( $firm );
-        roden_schema_legal_service( $firm );
+        roden_schema_legal_service( $firm ); // emits aggregateRating inline on homepage
         roden_schema_local_business_all( $firm );
         roden_schema_speakable_homepage( $firm );
-        roden_schema_aggregate_rating( $firm );
         roden_schema_website( $firm );
         roden_schema_breadcrumbs(); // Single-item homepage breadcrumb (site hierarchy signal)
     }
@@ -335,10 +363,26 @@ function roden_schema_legal_service( $firm ) {
         $schema['isPartOf'] = array( '@id' => $firm_ls_id );
     }
 
+    // Homepage carries the firm-wide AggregateRating inline as a property of
+    // the LegalService it rates, not as a standalone node. Google's review
+    // snippet docs expect aggregateRating to be a property of the reviewed
+    // entity; standalone nodes only bind reliably inside a single @graph.
+    if ( is_front_page() ) {
+        $review_count = isset( $firm['trust_stats']['review_count'] ) ? intval( $firm['trust_stats']['review_count'] ) : 500;
+        $rating       = isset( $firm['trust_stats']['rating'] ) ? $firm['trust_stats']['rating'] : '4.9';
+        $schema['aggregateRating'] = array(
+            '@type'       => 'AggregateRating',
+            'ratingValue' => $rating,
+            'bestRating'  => '5',
+            'worstRating' => '1',
+            'reviewCount' => $review_count,
+        );
+    }
+
     // On singular practice area, customize for that page
     if ( roden_is_pa_singular() ) {
         $schema['name']        = get_the_title() . ' — ' . $firm['name'];
-        $schema['description'] = get_the_excerpt() ?: wp_trim_words( get_the_content(), 30 );
+        $schema['description'] = roden_schema_clean_description( get_the_ID() );
 
         // dateModified — critical AI freshness signal (+40% citation boost with recency)
         $schema['dateModified'] = get_the_modified_date( 'c' );
@@ -1260,28 +1304,11 @@ function roden_schema_speakable_location() {
 }
 
 /* ==========================================================================
-   9. AggregateRating (Homepage)
+   9. AggregateRating — emitted inline on the homepage LegalService entity
+   by roden_schema_legal_service(). Per-office ratings ride on each
+   LocalBusiness in roden_schema_local_business_office when the per-office
+   GBP review_count is populated. No standalone AggregateRating function.
    ========================================================================== */
-
-function roden_schema_aggregate_rating( $firm ) {
-    // Outputs AggregateRating as a standalone entity that references the
-    // LegalService via itemReviewed, avoiding duplicate @id conflicts.
-    $review_count = $firm['trust_stats']['review_count'] ?? 500;
-
-    roden_json_ld( array(
-        '@context'     => 'https://schema.org',
-        '@type'        => 'AggregateRating',
-        'ratingValue'  => $firm['trust_stats']['rating'],
-        'bestRating'   => '5',
-        'worstRating'  => '1',
-        'reviewCount'  => $review_count,
-        'itemReviewed' => array(
-            '@type' => 'LegalService',
-            '@id'   => $firm['url'] . '/#legalservice',
-            'name'  => $firm['name'],
-        ),
-    ) );
-}
 
 /* ==========================================================================
    10. WebSite with Sitelinks Searchbox (Homepage)
