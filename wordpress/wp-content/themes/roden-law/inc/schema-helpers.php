@@ -163,7 +163,16 @@ function roden_output_schema() {
     }
 
     if ( is_singular( 'resource' ) ) {
-        roden_schema_howto();
+        // Most resource posts are informational articles, not step-by-step
+        // guides. Emit Article/BlogPosting by default; opt into HowTo only
+        // when the post is explicitly flagged via _roden_is_howto meta (set
+        // for genuine "What to do after X" content).
+        $is_howto = get_post_meta( get_the_ID(), '_roden_is_howto', true );
+        if ( $is_howto ) {
+            roden_schema_howto();
+        } else {
+            roden_schema_article( $firm );
+        }
     }
 
     if ( is_singular( 'post' ) ) {
@@ -1157,7 +1166,22 @@ function roden_schema_breadcrumbs() {
         return;
     }
 
-    $breadcrumb_url = is_front_page() ? home_url( '/' ) : roden_get_canonical_url();
+    // Pick the correct URL for the @id. roden_get_canonical_url() falls back
+    // to get_permalink(), which on archive pages returns the loop's current
+    // post (the *first* post in the archive), not the archive itself. This
+    // makes the resource/blog archive breadcrumb @id point at a stale single
+    // post unless we special-case the archive cases first.
+    if ( is_front_page() ) {
+        $breadcrumb_url = home_url( '/' );
+    } elseif ( is_post_type_archive() ) {
+        $breadcrumb_url = get_post_type_archive_link( get_queried_object()->name ?? get_post_type() );
+    } elseif ( is_home() ) {
+        $breadcrumb_url = get_permalink( get_option( 'page_for_posts' ) ) ?: home_url( '/blog/' );
+    } elseif ( is_search() ) {
+        $breadcrumb_url = get_search_link();
+    } else {
+        $breadcrumb_url = roden_get_canonical_url();
+    }
     roden_json_ld( array(
         '@context'        => 'https://schema.org',
         '@type'           => 'BreadcrumbList',
