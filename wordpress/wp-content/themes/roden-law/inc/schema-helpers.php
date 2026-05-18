@@ -345,13 +345,13 @@ function roden_schema_legal_service( $firm ) {
             }
         }
 
-        // Firm-wide aggregateRating on pillar + sub-type LegalService entities.
-        // Skipped on intersection pages because those already carry the per-office
-        // aggregateRating on the co-emitted LocalBusiness — adding the firm-wide
-        // number on top would mix two scopes into the same page's rating signals.
-        if ( ! $is_intersection ) {
-            $schema['aggregateRating'] = roden_schema_firm_aggregate_rating( $firm );
-        }
+        // No aggregateRating on per-PA LegalService entities. Asserting the
+        // firm-wide rating on every practice-area page is treated by Google as
+        // self-serving review snippet markup (the rating is about the firm,
+        // not the specific service) and risks sitewide review-snippet
+        // suppression / manual action. Per-office ratings on the co-emitted
+        // intersection LocalBusiness are still allowed because they're scoped
+        // to a real reviewed entity (the office's GBP listing).
 
         // Link to the attorney providing this service (E-E-A-T provider signal).
         $author_id = get_post_meta( get_the_ID(), '_roden_author_attorney', true );
@@ -1670,7 +1670,6 @@ function roden_schema_neighborhood_legal_service( $firm ) {
         'knowsAbout'  => $knows_about,
         'makesOffer'  => $offers,
         'hasMap'      => $directions_url,
-        'aggregateRating' => roden_schema_firm_aggregate_rating( $firm ),
         'openingHoursSpecification' => array(
             array(
                 '@type'     => 'OpeningHoursSpecification',
@@ -1884,7 +1883,6 @@ function roden_schema_state_landing( $firm ) {
             'name'  => $state_full,
         ),
         'serviceLocation' => $service_locations,
-        'aggregateRating' => roden_schema_firm_aggregate_rating( $firm ),
         'isPartOf'        => array( '@id' => $firm['url'] . '/#legalservice' ),
     ) );
 
@@ -1940,28 +1938,6 @@ function roden_schema_geo( $office ) {
         '@type'     => 'GeoCoordinates',
         'latitude'  => $office['latitude'],
         'longitude' => $office['longitude'],
-    );
-}
-
-/**
- * Build the firm-wide AggregateRating schema fragment.
- *
- * Used to attach the firm's collective 4.9★ / 500-review rating to LegalService
- * entities on pillar, sub-type, and neighborhood pages. Office LocalBusiness
- * entities use their own per-office rating in roden_schema_local_business_office.
- *
- * @param array $firm Firm data from roden_firm_data().
- * @return array AggregateRating schema fragment.
- */
-function roden_schema_firm_aggregate_rating( $firm ) {
-    $review_count = isset( $firm['trust_stats']['review_count'] ) ? intval( $firm['trust_stats']['review_count'] ) : 500;
-    $rating       = isset( $firm['trust_stats']['rating'] ) ? $firm['trust_stats']['rating'] : '4.9';
-    return array(
-        '@type'       => 'AggregateRating',
-        'ratingValue' => $rating,
-        'bestRating'  => '5',
-        'worstRating' => '1',
-        'reviewCount' => $review_count,
     );
 }
 
