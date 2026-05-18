@@ -272,6 +272,10 @@ function roden_schema_organization( $firm ) {
         ),
     );
 
+    // ContactPoints live on the canonical Organization so the contact page can
+    // just reference #organization by @id instead of redefining the entity.
+    $schema['contactPoint'] = roden_build_contact_points( $firm );
+
     roden_json_ld( $schema );
 }
 
@@ -472,27 +476,15 @@ function roden_schema_local_business_office( $firm, $key, $office ) {
 function roden_schema_person( $firm ) {
     $post_id = get_the_ID();
 
-    // Build worksFor: @type must be Organization to match @id /#organization
+    // worksFor is a graph stub — the canonical Organization is defined once
+    // on the homepage. Redefining it here with different properties would
+    // create a conflicting @id and degrade entity recognition.
     $office_key = get_post_meta( $post_id, '_roden_atty_office_key', true );
     $works_for  = array(
-        '@type'      => 'Organization',
-        '@id'        => $firm['url'] . '/#organization',
-        'name'       => $firm['name'],
-        'url'        => $firm['url'],
-        'telephone'  => $firm['phone_e164'],
-        'priceRange' => '$$',
+        '@type' => 'Organization',
+        '@id'   => $firm['url'] . '/#organization',
+        'name'  => $firm['name'],
     );
-    if ( $office_key && isset( $firm['offices'][ $office_key ] ) ) {
-        $office = $firm['offices'][ $office_key ];
-        $works_for['address'] = array(
-            '@type'           => 'PostalAddress',
-            'streetAddress'   => $office['street'],
-            'addressLocality' => $office['city'],
-            'addressRegion'   => $office['state'],
-            'postalCode'      => $office['zip'],
-            'addressCountry'  => 'US',
-        );
-    }
 
     // Use canonical rodenlaw.com domain for @id regardless of current site URL
     // (prevents dev site domain from leaking into Person @id on staging/dev).
@@ -509,6 +501,18 @@ function roden_schema_person( $firm ) {
         'description' => html_entity_decode( wp_strip_all_tags( get_the_excerpt() ?: wp_trim_words( get_the_content(), 30 ) ), ENT_QUOTES, 'UTF-8' ),
         'worksFor'    => $works_for,
     );
+
+    // workLocation — graph-link to the attorney's primary office LocalBusiness.
+    // Provides geographic context without redefining the office entity.
+    if ( $office_key && isset( $firm['offices'][ $office_key ] ) ) {
+        $office = $firm['offices'][ $office_key ];
+        $market_slug = sanitize_title( $office['market_name'] ?? $office['city'] );
+        $schema['workLocation'] = array(
+            '@type' => 'LocalBusiness',
+            '@id'   => $firm['url'] . '/locations/' . $office['state_slug'] . '/' . $market_slug . '/#localbusiness',
+            'name'  => $office['name'],
+        );
+    }
 
     // Featured image
     if ( has_post_thumbnail() ) {
@@ -1170,9 +1174,12 @@ function roden_schema_speakable_homepage( $firm ) {
     roden_json_ld( array(
         '@context'  => 'https://schema.org',
         '@type'     => 'WebPage',
-        '@id'       => $firm['url'] . '#webpage',
+        '@id'       => $firm['url'] . '/#webpage',
         'name'      => $firm['name'] . ' — Personal Injury Lawyers in Georgia & South Carolina',
         'url'       => $firm['url'],
+        'isPartOf'  => array( '@id' => $firm['url'] . '/#website' ),
+        'about'     => array( '@id' => $firm['url'] . '/#organization' ),
+        'breadcrumb' => array( '@id' => $firm['url'] . '/#breadcrumbs' ),
         'speakable' => array(
             '@type'       => 'SpeakableSpecification',
             'cssSelector' => array( '.hero h1', '.hero p', '.trust-bar' ),
@@ -1181,7 +1188,8 @@ function roden_schema_speakable_homepage( $firm ) {
 }
 
 function roden_schema_speakable_practice_area() {
-    $url = roden_get_canonical_url();
+    $firm = roden_firm_data();
+    $url  = roden_get_canonical_url();
     roden_json_ld( array(
         '@context'      => 'https://schema.org',
         '@type'         => 'WebPage',
@@ -1189,6 +1197,9 @@ function roden_schema_speakable_practice_area() {
         'name'          => get_the_title(),
         'url'           => $url,
         'dateModified'  => get_the_modified_date( 'c' ),
+        'isPartOf'      => array( '@id' => $firm['url'] . '/#website' ),
+        'about'         => array( '@id' => $firm['url'] . '/#organization' ),
+        'breadcrumb'    => array( '@id' => $url . '#breadcrumbs' ),
         'speakable'     => array(
             '@type'       => 'SpeakableSpecification',
             'cssSelector' => array(
@@ -1205,7 +1216,8 @@ function roden_schema_speakable_practice_area() {
 }
 
 function roden_schema_speakable_location() {
-    $url = get_permalink();
+    $firm = roden_firm_data();
+    $url  = get_permalink();
     roden_json_ld( array(
         '@context'      => 'https://schema.org',
         '@type'         => 'WebPage',
@@ -1213,6 +1225,9 @@ function roden_schema_speakable_location() {
         'name'          => get_the_title(),
         'url'           => $url,
         'dateModified'  => get_the_modified_date( 'c' ),
+        'isPartOf'      => array( '@id' => $firm['url'] . '/#website' ),
+        'about'         => array( '@id' => $firm['url'] . '/#organization' ),
+        'breadcrumb'    => array( '@id' => $url . '#breadcrumbs' ),
         'speakable'     => array(
             '@type'       => 'SpeakableSpecification',
             'cssSelector' => array( '.hero h1', '.hero-subtitle', '.why-choose-grid', '.jurisdiction-cards' ),
@@ -1478,8 +1493,38 @@ function roden_schema_about_page( $firm ) {
    ========================================================================== */
 
 function roden_schema_contact_page( $firm ) {
-    // Group offices by phone so shared lines (e.g. Savannah + Darien on the GA
-    // intake number) emit one ContactPoint with a combined areaServed.
+    // Mirror the AboutPage pattern: emit a ContactPage entity scoped to this
+    // URL and link to the canonical #organization (defined on the homepage)
+    // via mainEntity. ContactPoints live on #organization itself — do not
+    // redefine the organization here, which would create a conflicting
+    // @id with different properties on each page.
+    $url = roden_get_canonical_url();
+
+    $schema = array(
+        '@context'   => 'https://schema.org',
+        '@type'      => 'ContactPage',
+        '@id'        => rtrim( $url, '/' ) . '/#contactpage',
+        'url'        => $url,
+        'name'       => 'Contact Roden Law',
+        'description' => 'Contact Roden Law personal injury attorneys for a free consultation. Offices in Savannah, Darien, Charleston, North Charleston, Columbia, and Myrtle Beach.',
+        'mainEntity' => array(
+            '@id' => $firm['url'] . '/#organization',
+        ),
+    );
+
+    roden_json_ld( $schema );
+}
+
+/**
+ * Build the deduplicated ContactPoint[] array used by the canonical
+ * Organization entity. Offices that share a phone line (e.g. Savannah +
+ * Darien on the GA intake number) collapse into one ContactPoint with a
+ * combined areaServed list.
+ *
+ * @param array $firm Firm data from roden_firm_data().
+ * @return array ContactPoint schema fragments.
+ */
+function roden_build_contact_points( $firm ) {
     $by_phone = array();
     foreach ( $firm['offices'] as $office ) {
         $phone = $office['phone'];
@@ -1500,23 +1545,7 @@ function roden_schema_contact_page( $firm ) {
             'availableLanguage' => array( 'English', 'Spanish' ),
         );
     }
-
-    $schema = array(
-        '@context'     => 'https://schema.org',
-        '@type'        => 'Organization',
-        '@id'          => $firm['url'] . '/#organization',
-        'name'         => $firm['name'],
-        'url'          => $firm['url'],
-        'telephone'    => $firm['phone_e164'],
-        'contactPoint' => $contact_points,
-    );
-
-    $logo_url = roden_get_logo_url();
-    if ( $logo_url ) {
-        $schema['logo'] = $logo_url;
-    }
-
-    roden_json_ld( $schema );
+    return $contact_points;
 }
 
 /* ==========================================================================
