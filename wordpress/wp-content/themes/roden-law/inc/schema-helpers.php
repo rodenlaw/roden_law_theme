@@ -373,6 +373,14 @@ function roden_schema_legal_service( $firm ) {
         $schema['isPartOf'] = array( '@id' => $firm_ls_id );
     }
 
+    // image — firm logo as a fallback so the LocalBusiness-derived rich
+    // result has the required image field. Per-PA hero images are not
+    // surfaced as schema today; once they are, prefer those for pillar pages.
+    $logo_url = roden_get_logo_url();
+    if ( $logo_url ) {
+        $schema['image'] = $logo_url;
+    }
+
     // Homepage carries the firm-wide AggregateRating inline as a property of
     // the LegalService it rates, not as a standalone node. Google's review
     // snippet docs expect aggregateRating to be a property of the reviewed
@@ -1245,16 +1253,19 @@ function roden_schema_breadcrumbs() {
    ========================================================================== */
 
 function roden_schema_speakable_homepage( $firm ) {
+    // url is intentionally omitted here. The @id already encodes the page URL,
+    // and co-emitting `url` next to the homepage Organization's `url` produces
+    // a "Duplicate field url" non-critical warning in Google's Rich Results
+    // Test for the merged Organization rich result.
     roden_json_ld( array(
-        '@context'  => 'https://schema.org',
-        '@type'     => 'WebPage',
-        '@id'       => $firm['url'] . '/#webpage',
-        'name'      => $firm['name'] . ' — Personal Injury Lawyers in Georgia & South Carolina',
-        'url'       => $firm['url'],
-        'isPartOf'  => array( '@id' => $firm['url'] . '/#website' ),
-        'about'     => array( '@id' => $firm['url'] . '/#organization' ),
+        '@context'   => 'https://schema.org',
+        '@type'      => 'WebPage',
+        '@id'        => $firm['url'] . '/#webpage',
+        'name'       => $firm['name'] . ' — Personal Injury Lawyers in Georgia & South Carolina',
+        'isPartOf'   => array( '@id' => $firm['url'] . '/#website' ),
+        'about'      => array( '@id' => $firm['url'] . '/#organization' ),
         'breadcrumb' => array( '@id' => $firm['url'] . '/#breadcrumbs' ),
-        'speakable' => array(
+        'speakable'  => array(
             '@type'       => 'SpeakableSpecification',
             'cssSelector' => array( '.hero h1', '.hero p', '.trust-bar' ),
         ),
@@ -1264,17 +1275,19 @@ function roden_schema_speakable_homepage( $firm ) {
 function roden_schema_speakable_practice_area() {
     $firm = roden_firm_data();
     $url  = roden_get_canonical_url();
+    // url omitted — @id encodes the URL, and a sibling LegalService entity on
+    // the same page already declares the canonical url, causing a duplicate
+    // warning when Google merges entities for the rich result.
     roden_json_ld( array(
-        '@context'      => 'https://schema.org',
-        '@type'         => 'WebPage',
-        '@id'           => $url . '#webpage',
-        'name'          => get_the_title(),
-        'url'           => $url,
-        'dateModified'  => get_the_modified_date( 'c' ),
-        'isPartOf'      => array( '@id' => $firm['url'] . '/#website' ),
-        'about'         => array( '@id' => $firm['url'] . '/#organization' ),
-        'breadcrumb'    => array( '@id' => $url . '#breadcrumbs' ),
-        'speakable'     => array(
+        '@context'     => 'https://schema.org',
+        '@type'        => 'WebPage',
+        '@id'          => $url . '#webpage',
+        'name'         => get_the_title(),
+        'dateModified' => get_the_modified_date( 'c' ),
+        'isPartOf'     => array( '@id' => $firm['url'] . '/#website' ),
+        'about'        => array( '@id' => $firm['url'] . '/#organization' ),
+        'breadcrumb'   => array( '@id' => $url . '#breadcrumbs' ),
+        'speakable'    => array(
             '@type'       => 'SpeakableSpecification',
             'cssSelector' => array(
                 '.hero h1',
@@ -1292,17 +1305,17 @@ function roden_schema_speakable_practice_area() {
 function roden_schema_speakable_location() {
     $firm = roden_firm_data();
     $url  = get_permalink();
+    // url omitted — see roden_schema_speakable_practice_area note above.
     roden_json_ld( array(
-        '@context'      => 'https://schema.org',
-        '@type'         => 'WebPage',
-        '@id'           => $url . '#webpage',
-        'name'          => get_the_title(),
-        'url'           => $url,
-        'dateModified'  => get_the_modified_date( 'c' ),
-        'isPartOf'      => array( '@id' => $firm['url'] . '/#website' ),
-        'about'         => array( '@id' => $firm['url'] . '/#organization' ),
-        'breadcrumb'    => array( '@id' => $url . '#breadcrumbs' ),
-        'speakable'     => array(
+        '@context'     => 'https://schema.org',
+        '@type'        => 'WebPage',
+        '@id'          => $url . '#webpage',
+        'name'         => get_the_title(),
+        'dateModified' => get_the_modified_date( 'c' ),
+        'isPartOf'     => array( '@id' => $firm['url'] . '/#website' ),
+        'about'        => array( '@id' => $firm['url'] . '/#organization' ),
+        'breadcrumb'   => array( '@id' => $url . '#breadcrumbs' ),
+        'speakable'    => array(
             '@type'       => 'SpeakableSpecification',
             'cssSelector' => array( '.hero h1', '.hero-subtitle', '.why-choose-grid', '.jurisdiction-cards' ),
         ),
@@ -2444,8 +2457,12 @@ function roden_schema_collection_page( $firm, $type, $post_type ) {
         $schema['description'] = wp_strip_all_tags( $desc );
     }
 
-    // Recent posts as hasPart references (entity-graph link only, no
-    // redefinition). Cap at 10 to keep payload reasonable.
+    // Recent posts as an ItemList. Using ListItem entries instead of a
+    // hasPart array of BlogPosting stubs avoids the validator treating
+    // each archive entry as a standalone BlogPosting and flagging it for
+    // missing image/author — the actual post pages already carry full
+    // BlogPosting / HowTo schema. ItemList is the canonical pattern for
+    // a CollectionPage / Blog index.
     $recent = get_posts( array(
         'post_type'      => $post_type,
         'posts_per_page' => 10,
@@ -2453,19 +2470,21 @@ function roden_schema_collection_page( $firm, $type, $post_type ) {
         'no_found_rows'  => true,
     ) );
     if ( $recent ) {
-        $has_part = array();
+        $list_items = array();
+        $position   = 1;
         foreach ( $recent as $p ) {
-            $is_howto = 'resource' === $post_type && get_post_meta( $p->ID, '_roden_is_howto', true );
-            $part_type = $is_howto ? 'HowTo' : 'BlogPosting';
-            $suffix    = $is_howto ? '#howto' : '#blogposting';
-            $has_part[] = array(
-                '@type'    => $part_type,
-                '@id'      => get_permalink( $p ) . $suffix,
+            $list_items[] = array(
+                '@type'    => 'ListItem',
+                'position' => $position++,
                 'url'      => get_permalink( $p ),
-                'headline' => $p->post_title,
+                'name'     => $p->post_title,
             );
         }
-        $schema['hasPart'] = $has_part;
+        $schema['mainEntity'] = array(
+            '@type'           => 'ItemList',
+            'numberOfItems'   => count( $list_items ),
+            'itemListElement' => $list_items,
+        );
     }
 
     roden_json_ld( $schema );
