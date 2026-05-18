@@ -269,7 +269,6 @@ function roden_schema_organization( $firm ) {
         '@type'        => array( 'Organization', 'LawFirm' ),
         '@id'          => $firm['url'] . '/#organization',
         'name'         => $firm['name'],
-        'legalName'    => $firm['legal_entity'],
         'url'          => $firm['url'],
         'description'  => $firm['description'],
         'telephone'    => $firm['phone_e164'],
@@ -280,6 +279,13 @@ function roden_schema_organization( $firm ) {
         ),
         'sameAs' => array_values( array_unique( $same_as ) ),
     );
+
+    // legalName only when the registered legal name differs from the brand
+    // name. Today legal_entity equals name; emitting both is redundant and
+    // misleads validators that treat them as distinct entities.
+    if ( ! empty( $firm['legal_entity'] ) && $firm['legal_entity'] !== $firm['name'] ) {
+        $schema['legalName'] = $firm['legal_entity'];
+    }
 
     $logo_url = roden_get_logo_url();
     if ( $logo_url ) {
@@ -907,6 +913,34 @@ function roden_schema_howto() {
 }
 
 /**
+ * Build a readable HowTo step name from the step body text.
+ *
+ * The previous approach (wp_trim_words at 8 words) sliced mid-sentence,
+ * producing fragments like "Move to safety: If your vehicle is drivable,".
+ * This helper prefers the first natural clause break (`.`, `?`, `!`,
+ * `:`, `;` or em/en dash) within the first 80 characters, falling back to
+ * an 8-word trim with trailing punctuation stripped.
+ *
+ * @param string $text Plain-text step body.
+ * @return string Clean step name.
+ */
+function roden_howto_step_name( $text ) {
+    $text = trim( $text );
+    if ( '' === $text ) {
+        return '';
+    }
+    // Prefer the first natural clause/sentence break inside the leading 80 chars.
+    if ( preg_match( '/^([^.!?:;\x{2014}\x{2013}]{8,80}?)\s*[.!?:;\x{2014}\x{2013}]/u', $text, $m ) ) {
+        $name = trim( $m[1] );
+        if ( mb_strlen( $name ) >= 8 ) {
+            return $name;
+        }
+    }
+    // Fallback: first 8 words with trailing punctuation trimmed off.
+    return rtrim( wp_trim_words( $text, 8, '' ), " \t\n\r\0\x0B,;:.-" );
+}
+
+/**
  * Extract HowTo steps from post content.
  * Strategy 1: <ol><li> elements. Strategy 2: H2/H3 headings.
  *
@@ -923,7 +957,7 @@ function roden_extract_howto_steps( $content ) {
                 $text = wp_strip_all_tags( $li );
                 if ( strlen( $text ) > 5 ) {
                     $steps[] = array(
-                        'name' => wp_trim_words( $text, 8, '' ),
+                        'name' => roden_howto_step_name( $text ),
                         'text' => $text,
                     );
                 }
@@ -1755,11 +1789,15 @@ function roden_schema_neighborhood_legal_service( $firm ) {
         );
     }
 
+    // Neighborhood-distinct name so the entity reads as a service *for that
+    // neighborhood* rather than a duplicate of the parent office's listing.
+    // Avoids the previous "Roden Law — Savannah" appearing identically on
+    // every neighborhood under Savannah.
     $schema = array(
         '@context'    => 'https://schema.org',
         '@type'       => 'LegalService',
         '@id'         => get_permalink() . '#legalservice',
-        'name'        => $office['name'],
+        'name'        => $office['name'] . ' — Serving ' . $neighborhood_name,
         'description' => 'Personal injury lawyers serving ' . $neighborhood_name . ', ' . $office['state'] . '. Free consultation. No fees unless we win.',
         'url'         => get_permalink(),
         'telephone'   => $office['phone'],

@@ -20,7 +20,7 @@ defined( 'ABSPATH' ) || exit;
 function roden_firm_data() {
     $data = array(
         'name'         => 'Roden Law',
-        'legal_entity' => 'Roden Love LLC',
+        'legal_entity' => 'Roden Law',
         'vanity_phone' => '844-RESULTS',
         'phone_raw'    => '+18447378587',
         'url'          => home_url(),
