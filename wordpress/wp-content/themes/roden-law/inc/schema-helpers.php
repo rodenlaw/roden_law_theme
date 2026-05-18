@@ -213,6 +213,16 @@ function roden_output_schema() {
         roden_schema_taxonomy_archive( $firm );
     }
 
+    // CPT archives + blog index — CollectionPage / Blog schema. Previously
+    // these pages emitted only a BreadcrumbList, leaving the archive itself
+    // entity-less in the graph.
+    if ( is_post_type_archive( 'resource' ) ) {
+        roden_schema_collection_page( $firm, 'CollectionPage', 'resource' );
+    }
+    if ( is_home() ) {
+        roden_schema_collection_page( $firm, 'Blog', 'post' );
+    }
+
     // Contact page — Organization with ContactPoint
     if ( is_page( 'contact' ) ) {
         roden_schema_contact_page( $firm );
@@ -410,18 +420,14 @@ function roden_schema_legal_service( $firm ) {
         // intersection LocalBusiness are still allowed because they're scoped
         // to a real reviewed entity (the office's GBP listing).
 
-        // Link to the attorney providing this service (E-E-A-T provider signal).
-        $author_id = get_post_meta( get_the_ID(), '_roden_author_attorney', true );
-        if ( $author_id ) {
-            $atty = get_post( $author_id );
-            if ( $atty && 'publish' === $atty->post_status ) {
-                $schema['provider'] = array(
-                    '@type' => 'Person',
-                    '@id'   => get_permalink( $atty ) . '#person',
-                    'name'  => $atty->post_title,
-                );
-            }
-        }
+        // provider is always the firm (Organization) — a single attorney
+        // doesn't "provide" an entire practice area, and Person isn't a
+        // valid provider type for LegalService in Google's parsing. E-E-A-T
+        // attorney attribution still ships through roden_schema_pa_attorney()
+        // as a separate Person entity referenced by the WebPage / Article.
+        $schema['provider'] = array(
+            '@id' => $firm['url'] . '/#organization',
+        );
     }
 
     roden_json_ld( $schema );
@@ -1321,6 +1327,8 @@ function roden_schema_website( $firm ) {
         '@id'             => $firm['url'] . '/#website',
         'name'            => $firm['name'],
         'url'             => $firm['url'],
+        'inLanguage'      => 'en-US',
+        'publisher'       => array( '@id' => $firm['url'] . '/#organization' ),
         'potentialAction' => array(
             '@type'       => 'SearchAction',
             'target'      => array(
@@ -2387,6 +2395,84 @@ function roden_schema_testimonial( $firm ) {
 
 /* ==========================================================================
    TAXONOMY ARCHIVE — CollectionPage schema
+   ========================================================================== */
+
+/* ==========================================================================
+   16. CollectionPage / Blog (CPT archive + blog index)
+   ========================================================================== */
+
+/**
+ * Emit a CollectionPage (or Blog) entity for archive pages that otherwise
+ * have no page-level schema. The recent posts are referenced via hasPart
+ * for entity-graph completeness (each link points at the post's existing
+ * BlogPosting / Article @id rather than redefining it).
+ *
+ * @param array  $firm      Firm data from roden_firm_data().
+ * @param string $type      Schema.org type ('CollectionPage' or 'Blog').
+ * @param string $post_type WP post type the archive iterates ('resource' / 'post').
+ */
+function roden_schema_collection_page( $firm, $type, $post_type ) {
+    if ( 'post' === $post_type ) {
+        $url  = get_permalink( get_option( 'page_for_posts' ) ) ?: home_url( '/blog/' );
+        $name = single_post_title( '', false ) ?: __( 'Blog', 'roden-law' );
+        $desc = get_bloginfo( 'description' );
+    } else {
+        $obj  = get_queried_object();
+        $url  = get_post_type_archive_link( $post_type );
+        $name = isset( $obj->labels->name ) ? $obj->labels->name : post_type_archive_title( '', false );
+        $desc = isset( $obj->description ) ? $obj->description : '';
+    }
+
+    if ( ! $url ) {
+        return;
+    }
+
+    $base_id = rtrim( $url, '/' ) . '/';
+
+    $schema = array(
+        '@context'   => 'https://schema.org',
+        '@type'      => $type,
+        '@id'        => $base_id . '#' . strtolower( $type ),
+        'url'        => $url,
+        'name'       => $name,
+        'isPartOf'   => array( '@id' => $firm['url'] . '/#website' ),
+        'about'      => array( '@id' => $firm['url'] . '/#organization' ),
+        'breadcrumb' => array( '@id' => $base_id . '#breadcrumbs' ),
+    );
+
+    if ( $desc ) {
+        $schema['description'] = wp_strip_all_tags( $desc );
+    }
+
+    // Recent posts as hasPart references (entity-graph link only, no
+    // redefinition). Cap at 10 to keep payload reasonable.
+    $recent = get_posts( array(
+        'post_type'      => $post_type,
+        'posts_per_page' => 10,
+        'post_status'    => 'publish',
+        'no_found_rows'  => true,
+    ) );
+    if ( $recent ) {
+        $has_part = array();
+        foreach ( $recent as $p ) {
+            $is_howto = 'resource' === $post_type && get_post_meta( $p->ID, '_roden_is_howto', true );
+            $part_type = $is_howto ? 'HowTo' : 'BlogPosting';
+            $suffix    = $is_howto ? '#howto' : '#blogposting';
+            $has_part[] = array(
+                '@type'    => $part_type,
+                '@id'      => get_permalink( $p ) . $suffix,
+                'url'      => get_permalink( $p ),
+                'headline' => $p->post_title,
+            );
+        }
+        $schema['hasPart'] = $has_part;
+    }
+
+    roden_json_ld( $schema );
+}
+
+/* ==========================================================================
+   15. Taxonomy archives (existing)
    ========================================================================== */
 
 function roden_schema_taxonomy_archive( $firm ) {
