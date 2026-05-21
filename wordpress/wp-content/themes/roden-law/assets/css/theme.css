@@ -1340,11 +1340,24 @@ h2.key-takeaways-title {
     width: 150px; height: auto; border-radius: 50%; object-fit: contain;
 }
 
-/* Jurisdiction badges sidebar */
-.jurisdiction-badges { display: flex; gap: 8px; margin-top: 12px; }
-.jurisdiction-badge {
-    flex: 1; text-align: center; background: var(--navy); color: var(--white);
-    padding: 8px; border-radius: 4px; font-weight: 700; font-size: 14px;
+/* Jurisdiction list sidebar */
+.jurisdiction-list {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 0;
+}
+.jurisdiction-list li {
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    font-size: 14px;
+    font-weight: 500;
+}
+.jurisdiction-list li:last-child { border-bottom: 0; }
+.jurisdiction-list li::before {
+    content: "✓";
+    color: var(--orange);
+    font-weight: 700;
+    margin-right: 8px;
 }
 
 /* ─── FOOTER ───────────────────────────────────────────────────────────── */

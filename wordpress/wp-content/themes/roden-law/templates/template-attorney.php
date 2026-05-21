@@ -245,13 +245,13 @@
                 <div class="sidebar-widget">
                     <h3 class="widget-title">Jurisdiction</h3>
                     <p><?php the_title(); ?> is licensed to practice in:</p>
-                    <div class="jurisdiction-badges">
+                    <ul class="jurisdiction-list">
                         <?php foreach ( $bar_items as $bar ) :
                             $parts = array_map('trim', explode(' — ', $bar));
                         ?>
-                            <span class="jurisdiction-badge"><?php echo esc_html($parts[0]); ?></span>
+                            <li><?php echo esc_html($parts[0]); ?></li>
                         <?php endforeach; ?>
-                    </div>
+                    </ul>
                 </div>
             </div>
         </aside>
