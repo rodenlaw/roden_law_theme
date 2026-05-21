@@ -134,16 +134,20 @@ $firm = roden_firm_data();
     </section>
 
     <!-- ============================================================
-         MEET OUR ATTORNEYS
+         MEET OUR TEAM
          ============================================================ -->
-    <section class="section section-alt" id="attorneys">
+    <section class="section section-alt" id="team">
         <div class="site-container">
             <div class="section-header">
-                <h2><?php esc_html_e( 'Meet Our Attorneys', 'roden-law' ); ?></h2>
-                <p><?php esc_html_e( 'Experienced trial lawyers fighting for injury victims across Georgia and South Carolina.', 'roden-law' ); ?></p>
+                <h2><?php esc_html_e( 'Meet Our Team', 'roden-law' ); ?></h2>
+                <p><?php esc_html_e( 'Experienced trial lawyers and the dedicated staff supporting injury victims across Georgia and South Carolina.', 'roden-law' ); ?></p>
             </div>
 
+            <h3 class="team-subheading"><?php esc_html_e( 'Attorneys', 'roden-law' ); ?></h3>
             <?php roden_attorneys_grid( array( 'columns' => 4, 'role' => 'attorney' ) ); ?>
+
+            <h3 class="team-subheading" style="margin-top: var(--space-xl);"><?php esc_html_e( 'Staff', 'roden-law' ); ?></h3>
+            <?php roden_staff_grid( array( 'columns' => 4 ) ); ?>
 
             <div class="text-center" style="margin-top: var(--space-xl);">
                 <a href="<?php echo esc_url( home_url( '/attorneys/' ) ); ?>" class="btn btn-outline-navy">
