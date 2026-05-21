@@ -246,10 +246,8 @@
                     <h3 class="widget-title">Jurisdiction</h3>
                     <p><?php the_title(); ?> is licensed to practice in:</p>
                     <ul class="jurisdiction-list">
-                        <?php foreach ( $bar_items as $bar ) :
-                            $parts = array_map('trim', explode(' — ', $bar));
-                        ?>
-                            <li><?php echo esc_html($parts[0]); ?></li>
+                        <?php foreach ( $bar_items as $bar ) : ?>
+                            <li><?php echo esc_html( trim( $bar ) ); ?></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>
