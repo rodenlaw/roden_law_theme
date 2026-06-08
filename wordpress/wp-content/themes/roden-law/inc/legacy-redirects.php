@@ -305,8 +305,11 @@ function roden_get_legacy_redirect_map() {
         // Departed attorneys — profile pages 301 to /about/.
         // Their attorney CPT posts are also moved to draft status so they
         // stop appearing in the attorneys grid.
-        '/attorneys/kiley-reidy/'   => '/about/',
-        '/attorneys/zach-stohr/'    => '/about/',
+        '/attorneys/kiley-reidy/'    => '/about/',
+        '/attorneys/zach-stohr/'     => '/about/',
+        '/attorneys/hillary-burris/' => '/about/',
+        '/attorneys/haley-yokeley/'  => '/about/',
+        '/attorneys/marina-baldwin/' => '/about/',
 
         // ══════════════════════════════════════════════════════════════
         // CATEGORY 1: Old pillar pages with different slugs (6 pages)
