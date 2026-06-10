@@ -95,7 +95,7 @@ export function ContactForm({
 
   if (status === "success") {
     return (
-      <div className={`relative bg-paper border border-rule rounded-[24px] ${pad} text-center shadow-[0_12px_36px_rgba(31,45,68,0.10)]`}>
+      <div role="status" aria-live="polite" className={`relative bg-paper border border-rule rounded-[24px] ${pad} text-center shadow-[0_12px_36px_rgba(31,45,68,0.10)]`}>
         <h3 className="font-heading text-2xl text-ink mb-2">Thank you.</h3>
         <p className="text-slate text-sm">
           We&apos;ve received your information and a senior attorney will be in touch shortly.
@@ -197,7 +197,7 @@ export function ContactForm({
         </button>
 
         {errorMsg && (
-          <p className="text-terra-deep text-sm">{errorMsg}</p>
+          <p role="alert" className="text-terra-deep text-sm">{errorMsg}</p>
         )}
       </form>
 

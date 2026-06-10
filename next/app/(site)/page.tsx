@@ -67,7 +67,7 @@ export default async function HomePage() {
                   Get your free case review <span aria-hidden="true">→</span>
                 </Link>
                 <a href={`tel:${firm.phoneE164}`} className="inline-flex items-center gap-2 px-7 py-4 rounded-full border-[1.5px] border-ink text-ink font-bold hover:bg-ink hover:text-cream transition-colors no-underline">
-                  ☎ Call {firm.vanityPhone}
+                  <span aria-hidden="true">☎</span> Call {firm.vanityPhone}
                 </a>
               </div>
               <div className="flex flex-wrap gap-10 px-9 py-8 bg-paper border border-rule rounded-[24px] shadow-[0_10px_30px_rgba(31,45,68,0.06)] max-w-[620px]">
@@ -87,7 +87,7 @@ export default async function HomePage() {
             {/* Hero photo stack */}
             <div className="relative aspect-[4/5] w-full max-w-[460px] mx-auto">
               <div className="absolute top-7 left-2 lg:-left-7 z-20 flex items-center gap-3 bg-paper rounded-full px-5 py-3 shadow-[0_8px_24px_rgba(31,45,68,0.12)] text-[13px] font-bold">
-                <span className="text-honey tracking-widest">★★★★★</span>
+                <span className="text-honey tracking-widest" aria-hidden="true">★★★★★</span>
                 <span>{stats.reviews} five-star reviews</span>
               </div>
               <div className="porch-frame absolute inset-0">
@@ -259,7 +259,7 @@ export default async function HomePage() {
                   <div className="text-slate text-sm leading-[1.5]">{office.street}, {office.city}, {office.state} {office.zip}</div>
                 </div>
                 <div className="text-right shrink-0">
-                  <div className="text-ink font-semibold text-sm whitespace-nowrap">☎ {office.phone}</div>
+                  <div className="text-ink font-semibold text-sm whitespace-nowrap"><span aria-hidden="true">☎</span> {office.phone}</div>
                   <span className="text-terra text-sm font-semibold inline-block mt-2 group-hover:translate-x-1 transition-transform">Visit →</span>
                 </div>
               </Link>
@@ -299,7 +299,7 @@ export default async function HomePage() {
       <ReviewsBlock />
 
       {/* ── Final CTA + intake form ──────────────────────── */}
-      <section id="free-case-review" className="bg-terra text-paper scroll-mt-20">
+      <section id="free-case-review" className="bg-terra-deep text-paper scroll-mt-20">
         <div className="mx-auto max-w-[1200px] px-6 lg:px-[88px] py-[100px]">
           <div className="grid lg:grid-cols-2 gap-14 items-center">
             <div>

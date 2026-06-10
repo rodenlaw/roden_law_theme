@@ -13,7 +13,8 @@ export function ComparativeFault({ jurisdiction }: ComparativeFaultProps) {
       </h2>
       <div className="grid sm:grid-cols-2 gap-4">
         {showGa && (
-          <div className="bg-paper border border-rule border-l-4 border-l-honey-deep rounded-[20px] p-6">
+          <div className="bg-paper border border-rule rounded-[20px] p-6">
+            <span className="inline-block w-2.5 h-2.5 rounded-full bg-honey-deep mb-3" aria-hidden="true" />
             <h3 className="font-heading text-[21px] text-ink mb-2">Georgia</h3>
             <p className="text-sm text-slate leading-[1.6]">
               Modified comparative fault — you can recover damages if you are{" "}
@@ -23,7 +24,8 @@ export function ComparativeFault({ jurisdiction }: ComparativeFaultProps) {
           </div>
         )}
         {showSc && (
-          <div className="bg-paper border border-rule border-l-4 border-l-terra rounded-[20px] p-6">
+          <div className="bg-paper border border-rule rounded-[20px] p-6">
+            <span className="inline-block w-2.5 h-2.5 rounded-full bg-terra mb-3" aria-hidden="true" />
             <h3 className="font-heading text-[21px] text-ink mb-2">South Carolina</h3>
             <p className="text-sm text-slate leading-[1.6]">
               Modified comparative fault — you can recover damages if you are{" "}

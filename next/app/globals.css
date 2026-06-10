@@ -10,7 +10,7 @@
   --color-paper: #FFFBF1;
   --color-honey: #D7A84A;
   --color-honey-deep: #A87B23;
-  --color-terra: #C76B45;
+  --color-terra: #B35530;      /* darkened from #C76B45 for WCAG AA: white-on-terra & terra-text ≈4.8:1 */
   --color-terra-deep: #9F4A28;
   --color-slate: rgba(31, 45, 68, 0.74); /* body-text muted — kept ≥4.5:1 on cream/paper (WCAG AA) */
   --color-rule: rgba(31, 45, 68, 0.15);
@@ -65,10 +65,11 @@
   a:hover { color: var(--color-terra); }
 
   blockquote {
-    border-left: 4px solid var(--color-honey);
-    padding: 1rem 1.5rem;
+    padding: 1.25rem 1.75rem;
     margin-bottom: 1.5rem;
     background: var(--color-paper);
+    border: 1px solid var(--color-rule);
+    border-radius: 14px;
     font-style: italic;
   }
 }
