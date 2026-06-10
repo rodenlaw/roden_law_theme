@@ -6,8 +6,33 @@ import { useState } from "react";
 import { getFirmData } from "@/lib/firm-data";
 import { MobileMenu } from "./MobileMenu";
 
+// Main practice areas surfaced in the header dropdown (mirrors the WP menu).
+const PRACTICE_AREAS: { label: string; href: string }[] = [
+  { label: "Boating Accident", href: "/practice-areas/boating-accident-lawyers/" },
+  { label: "Brain Injury", href: "/practice-areas/brain-injury-lawyers/" },
+  { label: "Burn Injury", href: "/practice-areas/burn-injury-lawyers/" },
+  { label: "Car Accident", href: "/practice-areas/car-accident-lawyers/" },
+  { label: "Construction Accident", href: "/practice-areas/construction-accident-lawyers/" },
+  { label: "Dog Bite", href: "/practice-areas/dog-bite-lawyers/" },
+  { label: "Maritime", href: "/practice-areas/maritime-injury-lawyers/" },
+  { label: "Medical Malpractice", href: "/practice-areas/medical-malpractice-lawyers/" },
+  { label: "Motorcycle Accident", href: "/practice-areas/motorcycle-accident-lawyers/" },
+  { label: "Nursing Home Abuse", href: "/practice-areas/nursing-home-abuse-lawyers/" },
+  { label: "Personal Injury", href: "/practice-areas/personal-injury-lawyers/" },
+  { label: "Product Liability", href: "/practice-areas/product-liability-lawyers/" },
+  { label: "Slip and Fall", href: "/practice-areas/slip-and-fall-lawyers/" },
+  { label: "Spinal Cord Injury", href: "/practice-areas/spinal-cord-injury-lawyers/" },
+  { label: "Truck Accident", href: "/practice-areas/truck-accident-lawyers/" },
+  { label: "Workers' Compensation", href: "/practice-areas/workers-compensation-lawyers/" },
+  { label: "Wrongful Death", href: "/practice-areas/wrongful-death-lawyers/" },
+];
+
 const NAV_ITEMS = [
-  { label: "Practice Areas", href: "/practice-areas/" },
+  {
+    label: "Practice Areas",
+    href: "/practice-areas/",
+    children: [{ label: "All Practice Areas", href: "/practice-areas/" }, ...PRACTICE_AREAS],
+  },
   {
     label: "Locations",
     href: "/locations/",
@@ -89,7 +114,7 @@ export function Header() {
                     {item.label}
                   </Link>
                   {item.children && item.children.length > 0 && (
-                    <ul className="hidden group-hover:block absolute top-full left-0 bg-paper border border-rule rounded-2xl shadow-[0_12px_32px_rgba(31,45,68,0.14)] min-w-[230px] py-2 z-50 list-none">
+                    <ul className="hidden group-hover:block absolute top-full left-0 bg-paper border border-rule rounded-2xl shadow-[0_12px_32px_rgba(31,45,68,0.14)] min-w-[230px] max-h-[min(72vh,560px)] overflow-y-auto py-2 z-50 list-none">
                       {item.children.map((child) => (
                         <li key={child.href}>
                           <Link
