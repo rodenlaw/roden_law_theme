@@ -23,8 +23,20 @@ function decode(s: string): string {
     .replace(/&amp;/g, "&")
     .replace(/&#0?39;|&rsquo;|&#8217;/g, "’")
     .replace(/&quot;/g, '"')
+    .replace(/&ldquo;|&#8220;/g, "“")
+    .replace(/&rdquo;|&#8221;/g, "”")
     .replace(/&ndash;|&#8211;/g, "–")
-    .replace(/&mdash;/g, "—");
+    .replace(/&mdash;|&#8212;/g, "—")
+    .replace(/&sect;/g, "§")
+    .replace(/&deg;/g, "°")
+    .replace(/&nbsp;/g, " ");
+}
+
+// keyTakeaways is a plain-text field but some WP exports carry inline markup;
+// strip any tags + decode entities so it never renders raw <strong>/&sect;.
+function cleanText(s?: string | null): string {
+  if (!s) return "";
+  return decode(s.replace(/<[^>]+>/g, "")).replace(/\s+/g, " ").trim();
 }
 
 export async function generateStaticParams() {
@@ -38,7 +50,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!res) return {};
   return {
     title: decode(res.title),
-    description: res.seoMetaDescription || res.keyTakeaways?.slice(0, 160),
+    description: res.seoMetaDescription || cleanText(res.keyTakeaways).slice(0, 160),
   };
 }
 
@@ -106,7 +118,7 @@ export default async function ResourcePage({ params }: Props) {
                 <span className="absolute -top-3 left-7 bg-ink text-cream px-3.5 py-1 rounded-full font-mono text-[10px] tracking-[0.18em] font-bold">
                   KEY TAKEAWAYS
                 </span>
-                <p className="font-heading text-[19px] leading-[1.55] text-ink m-0">{res.keyTakeaways}</p>
+                <p className="font-heading text-[19px] leading-[1.55] text-ink m-0">{cleanText(res.keyTakeaways)}</p>
               </section>
             )}
 
