@@ -107,5 +107,29 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }));
 
-  return [...staticPages, ...paPages, ...locationPages, ...attorneyPages, ...blogPages, ...resourcePages];
+  // Case result detail pages
+  const caseResults = await client.fetch<{ slug: string; modified: string }[]>(
+    `*[_type == "caseResult" && language == "en" && defined(slug.current)]{"slug": slug.current, "modified": _updatedAt}`,
+  );
+  const caseResultPages: MetadataRoute.Sitemap = caseResults.map((cr) => ({
+    url: `${SITE_URL}/case-results/${cr.slug}/`,
+    lastModified: cr.modified,
+    changeFrequency: "monthly" as const,
+    priority: 0.5,
+  }));
+
+  // State landing pages
+  const statePages: MetadataRoute.Sitemap = ["georgia", "south-carolina"].map((state) => ({
+    url: `${SITE_URL}/locations/${state}/`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  const all = [
+    ...staticPages, ...paPages, ...locationPages, ...statePages,
+    ...attorneyPages, ...blogPages, ...resourcePages, ...caseResultPages,
+  ];
+  // Canonical URLs carry NO trailing slash (matches live WP + trailingSlash:false).
+  return all.map((e) => ({ ...e, url: e.url.replace(/\/$/, "") || SITE_URL }));
 }

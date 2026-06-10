@@ -22,7 +22,17 @@ const INITIAL_STATE: ContactFormState = {
   honeypot: "",
 };
 
-export function ContactForm() {
+export function ContactForm({
+  variant = "compact",
+  ribbonLabel = "Free 24/7",
+  heading = "Tell us what happened.",
+  sub = "A senior attorney will respond within the hour.",
+}: {
+  variant?: "compact" | "wide";
+  ribbonLabel?: string;
+  heading?: string;
+  sub?: string;
+} = {}) {
   const [form, setForm] = useState(INITIAL_STATE);
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
@@ -80,25 +90,29 @@ export function ContactForm() {
     [form],
   );
 
+  const pad = variant === "wide" ? "p-8 sm:p-12" : "p-8";
+  const headingSize = variant === "wide" ? "text-3xl sm:text-4xl" : "text-2xl";
+
   if (status === "success") {
     return (
-      <div className="bg-light border border-border rounded-lg p-6 text-center">
-        <h3 className="font-heading text-xl font-bold text-navy mb-2">Thank You!</h3>
-        <p className="text-gray-600 text-sm">
-          We&apos;ve received your information and will be in touch within 24 hours.
+      <div className={`relative bg-paper border border-rule rounded-[24px] ${pad} text-center shadow-[0_12px_36px_rgba(31,45,68,0.10)]`}>
+        <h3 className="font-heading text-2xl text-ink mb-2">Thank you.</h3>
+        <p className="text-slate text-sm">
+          We&apos;ve received your information and a senior attorney will be in touch shortly.
         </p>
       </div>
     );
   }
 
   return (
-    <div className="bg-light border border-border rounded-lg p-6">
-      <h3 className="font-heading text-xl font-bold text-navy mb-1">Free Case Review</h3>
-      <p className="text-sm text-gray-600 mb-4">
-        No fees unless we win<br />500+ 5-star reviews
-      </p>
+    <div className={`relative bg-paper border border-rule rounded-[24px] ${pad} shadow-[0_12px_36px_rgba(31,45,68,0.10)]`}>
+      <span className="absolute -top-3.5 left-8 bg-terra text-paper text-[11px] font-bold uppercase tracking-[0.14em] px-3.5 py-1.5 rounded-full">
+        {ribbonLabel}
+      </span>
+      <h3 className={`font-heading ${headingSize} text-ink mt-3 mb-2`}>{heading}</h3>
+      <p className="text-sm text-slate mb-6">{sub}</p>
 
-      <form onSubmit={handleSubmit} noValidate className="space-y-3">
+      <form onSubmit={handleSubmit} noValidate className="space-y-2.5">
         {/* Honeypot */}
         <div className="absolute -left-[9999px]" aria-hidden="true">
           <input type="text" name="honeypot" tabIndex={-1} autoComplete="off" value={form.honeypot} onChange={handleChange} />
@@ -112,7 +126,7 @@ export function ContactForm() {
               type="text" name="firstName" id="rsf-first-name"
               placeholder="First Name" autoComplete="given-name" required
               value={form.firstName} onChange={handleChange}
-              className="w-full px-3 py-2.5 border border-gray-200 rounded text-sm focus:border-orange focus:ring-2 focus:ring-orange/40 outline-none"
+              className="w-full px-4 py-3.5 bg-cream-2 border border-transparent rounded-xl text-sm text-ink placeholder:text-slate focus:border-terra focus:bg-cream outline-none"
             />
           </div>
           <div>
@@ -121,7 +135,7 @@ export function ContactForm() {
               type="text" name="lastName" id="rsf-last-name"
               placeholder="Last Name" autoComplete="family-name" required
               value={form.lastName} onChange={handleChange}
-              className="w-full px-3 py-2.5 border border-gray-200 rounded text-sm focus:border-orange focus:ring-2 focus:ring-orange/40 outline-none"
+              className="w-full px-4 py-3.5 bg-cream-2 border border-transparent rounded-xl text-sm text-ink placeholder:text-slate focus:border-terra focus:bg-cream outline-none"
             />
           </div>
         </div>
@@ -132,7 +146,7 @@ export function ContactForm() {
             type="tel" name="phone" id="rsf-phone"
             placeholder="(555) 555-5555" autoComplete="tel" required
             value={form.phone} onChange={handleChange}
-            className="w-full px-3 py-2.5 border border-gray-200 rounded text-sm focus:border-orange focus:ring-2 focus:ring-orange/40 outline-none"
+            className="w-full px-4 py-3.5 bg-cream-2 border border-transparent rounded-xl text-sm text-ink placeholder:text-slate focus:border-terra focus:bg-cream outline-none"
           />
         </div>
 
@@ -142,7 +156,7 @@ export function ContactForm() {
             type="email" name="email" id="rsf-email"
             placeholder="Email" autoComplete="email" required
             value={form.email} onChange={handleChange}
-            className="w-full px-3 py-2.5 border border-gray-200 rounded text-sm focus:border-orange focus:ring-2 focus:ring-orange/40 outline-none"
+            className="w-full px-4 py-3.5 bg-cream-2 border border-transparent rounded-xl text-sm text-ink placeholder:text-slate focus:border-terra focus:bg-cream outline-none"
           />
         </div>
 
@@ -152,23 +166,23 @@ export function ContactForm() {
             name="message" id="rsf-message"
             placeholder="Please describe what happened" rows={6}
             value={form.message} onChange={handleChange}
-            className="w-full px-3 py-2.5 border border-gray-200 rounded text-sm focus:border-orange focus:ring-2 focus:ring-orange/40 outline-none resize-y"
+            className="w-full px-4 py-3.5 bg-cream-2 border border-transparent rounded-xl text-sm text-ink placeholder:text-slate focus:border-terra focus:bg-cream outline-none resize-y"
           />
         </div>
 
         {/* Consent */}
-        <label className="flex items-start gap-2 text-xs text-gray-600 cursor-pointer">
+        <label className="flex items-start gap-2 text-xs text-slate cursor-pointer pt-1">
           <input
             type="checkbox" name="consent"
             checked={form.consent}
             onChange={handleChange}
             required
-            className="mt-0.5 shrink-0"
+            className="mt-0.5 shrink-0 accent-terra"
           />
           <span>
             I hereby expressly consent to receive automated communications including calls, texts,
             emails, and/or prerecorded messages. By submitting this form, you agree to our{" "}
-            <a href="/terms-privacy-policy/" target="_blank" rel="noopener noreferrer" className="underline">
+            <a href="/terms-privacy-policy/" target="_blank" rel="noopener noreferrer" className="underline hover:text-terra">
               Terms &amp; Privacy Policy
             </a>.
           </span>
@@ -177,18 +191,18 @@ export function ContactForm() {
         <button
           type="submit"
           disabled={status === "submitting"}
-          className="w-full bg-orange text-navy font-extrabold py-3 rounded-md hover:bg-orange-dark transition-colors disabled:opacity-60 text-sm"
+          className="w-full bg-terra text-paper font-bold py-4 rounded-[14px] hover:bg-terra-deep transition-colors disabled:opacity-60 text-[15px] mt-2"
         >
-          {status === "submitting" ? "Submitting..." : "See If You Qualify"}
+          {status === "submitting" ? "Submitting…" : "See if you qualify →"}
         </button>
 
         {errorMsg && (
-          <p className="text-red-600 text-sm">{errorMsg}</p>
+          <p className="text-terra-deep text-sm">{errorMsg}</p>
         )}
       </form>
 
-      <p className="text-[11px] text-gray-500 mt-3">
-        Results may vary depending on your particular facts and legal circumstances.
+      <p className="text-[11px] text-slate mt-3 text-center">
+        By submitting, you consent to be contacted. No fees unless we win.
       </p>
     </div>
   );

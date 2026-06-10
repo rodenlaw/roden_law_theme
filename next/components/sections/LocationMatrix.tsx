@@ -14,7 +14,7 @@ export function LocationMatrix({ offices, pillarSlug, intersections, currentSlug
   );
 
   return (
-    <section className="bg-light py-8">
+    <section className="bg-paper border-y border-rule py-8">
       <div className="mx-auto max-w-[1200px] px-6">
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
           {Object.entries(offices).map(([key, office]) => {
@@ -27,23 +27,23 @@ export function LocationMatrix({ offices, pillarSlug, intersections, currentSlug
             return (
               <div
                 key={key}
-                className={`rounded-lg p-3 text-center transition-colors ${
+                className={`rounded-[16px] p-3 text-center transition-colors ${
                   isCurrent
-                    ? "bg-navy text-white"
-                    : "bg-white border border-border hover:border-orange"
+                    ? "bg-ink text-cream"
+                    : "bg-cream border border-rule hover:border-terra"
                 }`}
               >
-                <span className={`inline-block text-[10px] uppercase tracking-widest mb-1 ${
-                  office.state === "GA" ? "text-green" : "text-orange"
+                <span className={`inline-block font-mono text-[10px] uppercase tracking-[0.1em] mb-1 ${
+                  isCurrent ? "text-honey" : office.state === "GA" ? "text-honey-deep" : "text-terra"
                 }`}>
                   {office.state}
                 </span>
                 {isCurrent ? (
-                  <p className="font-heading font-bold text-sm">{office.marketName}</p>
+                  <p className="font-heading text-base">{office.marketName}</p>
                 ) : (
                   <Link
                     href={href}
-                    className="block font-heading font-bold text-sm text-navy hover:text-orange-text no-underline"
+                    className="block font-heading text-base text-ink hover:text-terra no-underline"
                   >
                     {office.marketName}
                   </Link>

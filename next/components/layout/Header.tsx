@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { getFirmData } from "@/lib/firm-data";
 import { MobileMenu } from "./MobileMenu";
@@ -49,17 +50,17 @@ export function Header() {
   return (
     <>
       {/* Top Bar */}
-      <div className="bg-navy-dark text-gray-400 text-xs border-b border-white/10">
+      <div className="bg-ink text-cream/70 text-xs">
         <div className="mx-auto max-w-[1200px] px-6 flex items-center justify-between py-2">
           <span>
             <span>Serving Georgia &amp; South Carolina</span>
-            <span className="mx-2 opacity-50" aria-hidden="true">&mdash;</span>
-            <span>No Fees Unless We Win</span>
+            <span className="mx-2 opacity-40" aria-hidden="true">&mdash;</span>
+            <span className="font-semibold text-honey">No Fees Unless We Win</span>
           </span>
           <div className="hidden sm:flex items-center gap-4">
             <a
               href={`tel:${firm.phoneE164}`}
-              className="text-orange font-bold hover:text-orange-light"
+              className="font-bold text-honey hover:text-honey/80"
             >
               {firm.vanityPhone}
             </a>
@@ -69,41 +70,31 @@ export function Header() {
       </div>
 
       {/* Site Header */}
-      <header className="sticky top-0 z-50 bg-white border-b-3 border-orange shadow-sm">
-        <div className="mx-auto max-w-[1200px] px-6 flex items-center justify-between h-[72px]">
+      <header className="sticky top-0 z-50 bg-paper border-b border-rule">
+        <div className="mx-auto max-w-[1200px] px-6 flex items-center justify-between h-[76px]">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5 shrink-0 no-underline">
-            <span className="w-9 h-9 bg-navy rounded flex items-center justify-center text-white font-black text-base font-heading">
-              R
-            </span>
-            <span className="block">
-              <span className="block font-heading font-extrabold text-lg text-navy leading-tight tracking-tight">
-                {firm.name}
-              </span>
-              <span className="block text-[9px] text-gray-500 uppercase tracking-[1.5px]">
-                Personal Injury Attorneys
-              </span>
-            </span>
+          <Link href="/" className="flex items-center shrink-0 no-underline" aria-label={firm.name}>
+            <Image src="/roden-law-logo.png" alt={firm.name} width={158} height={40} priority className="h-9 w-auto" />
           </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden lg:block" aria-label="Primary Menu">
-            <ul className="flex gap-1.5 list-none m-0 p-0">
+            <ul className="flex gap-1 list-none m-0 p-0">
               {navItems.map((item) => (
                 <li key={item.href} className="relative group">
                   <Link
                     href={item.href}
-                    className="block px-3.5 py-2 text-[13px] font-semibold text-navy border-b-2 border-transparent hover:text-orange-text hover:border-orange transition-all no-underline"
+                    className="block px-3.5 py-2 text-[14px] font-semibold text-ink-2 hover:text-terra transition-colors no-underline"
                   >
                     {item.label}
                   </Link>
                   {item.children && item.children.length > 0 && (
-                    <ul className="hidden group-hover:block absolute top-full left-0 bg-white border border-gray-200 rounded-lg shadow-lg min-w-[220px] py-2 z-50 list-none">
+                    <ul className="hidden group-hover:block absolute top-full left-0 bg-paper border border-rule rounded-2xl shadow-[0_12px_32px_rgba(31,45,68,0.14)] min-w-[230px] py-2 z-50 list-none">
                       {item.children.map((child) => (
                         <li key={child.href}>
                           <Link
                             href={child.href}
-                            className="block px-4 py-2 text-[13px] text-navy hover:text-orange-text hover:bg-gray-50 no-underline"
+                            className="block px-4 py-2 text-[13px] text-ink-2 hover:text-terra hover:bg-cream-2 no-underline"
                           >
                             {child.label}
                           </Link>
@@ -117,20 +108,27 @@ export function Header() {
           </nav>
 
           {/* Desktop CTA */}
-          <div className="hidden lg:block">
+          <div className="hidden lg:flex items-center gap-4">
             <a
               href={`tel:${firm.phoneE164}`}
-              className="inline-flex items-center px-6 py-2.5 bg-orange text-navy font-extrabold text-sm rounded-md hover:bg-orange-dark transition-colors no-underline"
+              className="inline-flex items-center gap-2 text-sm font-bold text-ink hover:text-terra no-underline"
             >
+              <span className="w-2 h-2 rounded-full bg-green-600" aria-hidden="true" />
               {firm.vanityPhone}
             </a>
+            <Link
+              href="/contact/"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-terra text-paper font-bold text-sm rounded-full hover:bg-terra-deep transition-colors no-underline"
+            >
+              Free case review <span aria-hidden="true">&rarr;</span>
+            </Link>
           </div>
 
           {/* Mobile Phone + Hamburger */}
           <div className="flex items-center gap-3 lg:hidden">
             <a
               href={`tel:${firm.phoneE164}`}
-              className="flex items-center justify-center w-10 h-10 rounded-full bg-orange text-white no-underline hover:bg-orange-dark transition-colors"
+              className="flex items-center justify-center w-10 h-10 rounded-full bg-terra text-paper no-underline hover:bg-terra-deep transition-colors"
               aria-label="Call us now"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
@@ -141,9 +139,9 @@ export function Header() {
               aria-label="Toggle Menu"
               aria-expanded={mobileOpen}
             >
-              <span className="block w-6 h-0.5 bg-navy mb-1.5" aria-hidden="true" />
-              <span className="block w-6 h-0.5 bg-navy mb-1.5" aria-hidden="true" />
-              <span className="block w-6 h-0.5 bg-navy" aria-hidden="true" />
+              <span className="block w-6 h-0.5 bg-ink mb-1.5" aria-hidden="true" />
+              <span className="block w-6 h-0.5 bg-ink mb-1.5" aria-hidden="true" />
+              <span className="block w-6 h-0.5 bg-ink" aria-hidden="true" />
             </button>
           </div>
         </div>

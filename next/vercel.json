@@ -7,5 +7,9 @@
     { "source": "/xmlrpc.php", "destination": "/", "permanent": false },
     { "source": "/feed/:path*", "destination": "/blog/", "permanent": true },
     { "source": "/comments/feed/:path*", "destination": "/", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/llms.txt", "destination": "/llms" },
+    { "source": "/llms-full.txt", "destination": "/llms-full" }
   ]
 }

@@ -4,6 +4,7 @@ import attorney from "./attorney";
 import caseResult from "./caseResult";
 import testimonial from "./testimonial";
 import resource from "./resource";
+import classAction from "./classAction";
 import blogPost from "./blogPost";
 import practiceCategory from "./practiceCategory";
 import locationServed from "./locationServed";
@@ -19,6 +20,7 @@ export const schemaTypes = [
   caseResult,
   testimonial,
   resource,
+  classAction,
   blogPost,
   // Taxonomies
   practiceCategory,

@@ -4,18 +4,18 @@ export function InlineCta() {
   const firm = getFirmData();
 
   return (
-    <div className="flex flex-col sm:flex-row items-center justify-between gap-4 bg-light rounded-lg px-6 py-5 my-8 border border-border">
+    <div className="flex flex-col sm:flex-row items-center justify-between gap-4 bg-paper rounded-[20px] px-7 py-6 my-8 border border-rule">
       <div>
-        <strong className="block text-navy font-heading text-base">
+        <strong className="block text-ink font-heading text-[19px] font-normal">
           Free Case Review &mdash; No Fees Unless We Win
         </strong>
-        <span className="text-sm text-gray-600">
+        <span className="text-sm text-slate">
           Available 24/7 &middot; Georgia &amp; South Carolina
         </span>
       </div>
       <a
         href={`tel:${firm.phoneE164}`}
-        className="inline-flex items-center px-6 py-3 bg-orange text-navy font-extrabold rounded-md hover:bg-orange-dark transition-colors no-underline text-sm shrink-0"
+        className="inline-flex items-center px-7 py-4 bg-terra text-paper font-bold rounded-full hover:bg-terra-deep transition-colors no-underline text-sm shrink-0"
       >
         {firm.phone}
       </a>

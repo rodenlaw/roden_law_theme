@@ -49,14 +49,14 @@ export function MobileMenu({ open, onClose, navItems, phone, phoneE164 }: Mobile
       {/* Drawer */}
       <div
         ref={drawerRef}
-        className="absolute top-0 right-0 w-[300px] h-full bg-white overflow-y-auto"
+        className="absolute top-0 right-0 w-[300px] h-full bg-paper overflow-y-auto"
       >
         {/* Drawer Header */}
-        <div className="flex items-center justify-between px-5 py-4 border-b-2 border-orange">
-          <span className="font-heading font-extrabold text-navy">Menu</span>
+        <div className="flex items-center justify-between px-5 py-4 border-b border-terra">
+          <span className="font-heading font-extrabold text-ink">Menu</span>
           <button
             onClick={onClose}
-            className="p-2 text-navy bg-transparent border-none cursor-pointer text-xl leading-none"
+            className="p-2 text-ink bg-transparent border-none cursor-pointer text-xl leading-none"
             aria-label="Close menu"
           >
             &times;
@@ -71,7 +71,7 @@ export function MobileMenu({ open, onClose, navItems, phone, phoneE164 }: Mobile
                 <Link
                   href={item.href}
                   onClick={onClose}
-                  className="block py-2.5 px-3 text-[15px] font-semibold text-navy hover:text-orange-text hover:bg-gray-50 rounded no-underline"
+                  className="block py-2.5 px-3 text-[15px] font-semibold text-ink hover:text-terra hover:bg-cream-2 rounded no-underline"
                 >
                   {item.label}
                 </Link>
@@ -82,7 +82,7 @@ export function MobileMenu({ open, onClose, navItems, phone, phoneE164 }: Mobile
                         <Link
                           href={child.href}
                           onClick={onClose}
-                          className="block py-2 px-3 text-sm text-gray-600 hover:text-orange-text no-underline"
+                          className="block py-2 px-3 text-sm text-slate hover:text-terra no-underline"
                         >
                           {child.label}
                         </Link>
@@ -99,11 +99,11 @@ export function MobileMenu({ open, onClose, navItems, phone, phoneE164 }: Mobile
         <div className="px-5 pb-5">
           <a
             href={`tel:${phoneE164}`}
-            className="block w-full text-center bg-orange text-navy font-extrabold py-3.5 rounded-md hover:bg-orange-dark transition-colors no-underline"
+            className="block w-full text-center bg-terra text-paper font-bold py-3.5 rounded-full hover:bg-terra-deep transition-colors no-underline"
           >
             {phone}
           </a>
-          <p className="text-center text-xs text-gray-500 mt-2">Free 24/7 Consultations</p>
+          <p className="text-center text-xs text-slate mt-2">Free 24/7 Consultations</p>
         </div>
       </div>
     </div>

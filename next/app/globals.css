@@ -1,61 +1,76 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @theme inline {
-  /* Colors — from WordPress style.css */
-  --color-navy: #013046;
-  --color-navy-dark: #001a2e;
-  --color-navy-light: #1a5f80;
-  --color-orange: #FCB415;
-  --color-orange-light: #FDC94A;
-  --color-orange-dark: #D49B00;
-  --color-orange-text: #B8860B;
-  --color-green: #27AE60;
-  --color-light: #F8F6F2;
-  --color-border: #E0DDD8;
-  --color-gray-50: #fafafa;
-  --color-gray-100: #f5f5f5;
-  --color-gray-200: #e0e0e0;
-  --color-gray-300: #cccccc;
-  --color-gray-400: #767676;
-  --color-gray-500: #717171;
-  --color-gray-600: #666666;
-  --color-gray-700: #555555;
-  --color-gray-800: #333333;
-  --color-gray-900: #1a1a1a;
+  /* ── "The Front Porch" palette (porch variant) ── */
+  --color-ink: #1F2D44;
+  --color-ink-2: #2D3D55;
+  --color-cream: #FAF3E5;
+  --color-cream-2: #F3EAD3;
+  --color-paper: #FFFBF1;
+  --color-honey: #D7A84A;
+  --color-honey-deep: #A87B23;
+  --color-terra: #C76B45;
+  --color-terra-deep: #9F4A28;
+  --color-slate: rgba(31, 45, 68, 0.65);
+  --color-rule: rgba(31, 45, 68, 0.15);
 
-  /* Fonts */
-  --font-heading: var(--font-merriweather);
-  --font-body: var(--font-inter);
+  /* Front Porch spacing/radius */
+  --spacing-section: 120px;   /* airy --pad-section */
+  --spacing-pad-x: 88px;      /* airy --pad-x */
+  --radius-porch: 24px;
+
+  /* Fonts — Front Porch (Editorial Heritage): Newsreader + Source Sans 3 + JetBrains Mono */
+  --font-heading: var(--font-newsreader);
+  --font-body: var(--font-source-sans);
+  --font-mono: var(--font-jetbrains);
+
+  /* Elevation & radius — mirror WordPress theme.css (--shadow/--radius) so the
+     Next.js cards match the live site. Usage: shadow-card / shadow-elevated,
+     rounded-card / rounded-card-lg. */
+  --shadow-card: 0 2px 16px rgba(0, 0, 0, 0.08);
+  --shadow-elevated: 0 4px 32px rgba(0, 0, 0, 0.12);
+  --radius-card: 8px;
+  --radius-card-lg: 12px;
 }
 
-/* Base styles */
-body {
-  font-family: var(--font-body);
-  color: var(--color-gray-800);
-  line-height: 1.7;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* Base styles — MUST be in @layer base so Tailwind utilities (text-white,
+   text-gray-*, etc.) override these element defaults. Unlayered, the h1–h6 / a
+   color rules beat utilities and render navy-on-navy (invisible) on dark heroes. */
+@layer base {
+  body {
+    font-family: var(--font-body);
+    color: var(--color-ink);
+    background: var(--color-cream);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
-  color: var(--color-navy);
-  line-height: 1.25;
-}
+  /* Headings INHERIT color (Tailwind-preflight behavior). Forcing navy here
+     made hero <h1>s — which rely on the parent section's text-white — render
+     navy-on-navy (explicit color beats inherited). Body headings set their own
+     text-navy explicitly. */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: inherit;
+    line-height: 1.25;
+  }
 
-a {
-  color: var(--color-navy);
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-a:hover { color: var(--color-orange-text); }
+  a {
+    color: var(--color-ink);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  a:hover { color: var(--color-terra); }
 
-blockquote {
-  border-left: 4px solid var(--color-orange);
-  padding: 1rem 1.5rem;
-  margin-bottom: 1.5rem;
-  background: var(--color-light);
-  font-style: italic;
+  blockquote {
+    border-left: 4px solid var(--color-honey);
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    background: var(--color-paper);
+    font-style: italic;
+  }
 }
 
 /* Focus states — WCAG 2.1 */
@@ -64,8 +79,77 @@ button:focus-visible,
 input:focus-visible,
 textarea:focus-visible,
 select:focus-visible {
-  outline: 2px solid var(--color-orange);
+  outline: 2px solid var(--color-terra);
   outline-offset: 2px;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   "The Front Porch" component primitives — the bespoke structures
+   that don't express cleanly as utilities. Consumed by React
+   components via these porch-* classes. (Layout/atomic styling is
+   done with Tailwind utilities on the new @theme tokens.)
+   ───────────────────────────────────────────────────────────── */
+@layer components {
+  /* Eyebrow kicker — appears above most section headings */
+  .porch-eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-terra);
+  }
+
+  /* Italic display accents used inside headlines */
+  .porch-em { font-style: italic; color: var(--color-terra); }
+  .porch-ho { font-style: italic; color: var(--color-honey-deep); }
+
+  /* Signature asymmetric photo frame (rounded bottom-left "blob") */
+  .porch-frame {
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px 24px 24px 80px;
+    background: var(--color-ink);
+    box-shadow: 0 20px 60px rgba(31, 45, 68, 0.18), 0 4px 12px rgba(31, 45, 68, 0.08);
+  }
+
+  /* Warm radial-gradient glow behind heroes / feature sections */
+  .porch-glow { position: relative; overflow: hidden; }
+  .porch-glow::before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; top: 0;
+    height: 70%;
+    background:
+      radial-gradient(ellipse 60% 50% at 80% 30%, rgba(215, 168, 74, 0.18), transparent 70%),
+      radial-gradient(ellipse 50% 50% at 10% 80%, rgba(199, 107, 69, 0.10), transparent 65%);
+    pointer-events: none;
+  }
+
+  /* Labeled placeholder where a photo will go (founder/office/skyline) */
+  .porch-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background:
+      linear-gradient(135deg, var(--color-cream-2), var(--color-paper));
+    color: var(--color-slate);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 16px;
+  }
+  .porch-placeholder--dark {
+    background: linear-gradient(135deg, var(--color-ink), var(--color-ink-2));
+    color: rgba(250, 243, 229, 0.55);
+  }
+  .porch-placeholder--warm {
+    background: linear-gradient(135deg, var(--color-terra), var(--color-honey-deep));
+    color: rgba(255, 251, 241, 0.8);
+  }
 }
 
 /* Screen reader only */

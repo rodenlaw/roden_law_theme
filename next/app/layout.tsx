@@ -1,17 +1,28 @@
 import type { Metadata } from "next";
-import { Inter, Merriweather } from "next/font/google";
+import { Newsreader, Source_Sans_3, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+// "The Front Porch" — Editorial Heritage typography.
+// Newsreader (display serif, italic-forward) + Source Sans 3 (body) + JetBrains Mono (labels).
+const newsreader = Newsreader({
+  variable: "--font-newsreader",
   subsets: ["latin"],
+  weight: ["400", "500"],
+  style: ["normal", "italic"],
   display: "swap",
 });
 
-const merriweather = Merriweather({
-  variable: "--font-merriweather",
+const sourceSans = Source_Sans_3({
+  variable: "--font-source-sans",
   subsets: ["latin"],
-  weight: ["400", "700", "900"],
+  weight: ["400", "600", "700"],
+  display: "swap",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains",
+  subsets: ["latin"],
+  weight: ["400", "500"],
   display: "swap",
 });
 
@@ -32,7 +43,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${merriweather.variable}`}
+      className={`${newsreader.variable} ${sourceSans.variable} ${jetbrainsMono.variable}`}
     >
       <body>{children}</body>
     </html>

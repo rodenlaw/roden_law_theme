@@ -15,7 +15,7 @@ const components: PortableTextComponents = {
             alt={value.alt || ""}
             width={800}
             height={450}
-            className="rounded-lg w-full h-auto"
+            className="rounded-[20px] w-full h-auto"
           />
         </figure>
       );
@@ -28,7 +28,7 @@ const components: PortableTextComponents = {
       return (
         <a
           href={href}
-          className="text-navy underline hover:text-orange-text"
+          className="text-terra underline hover:text-terra-deep"
           {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
         >
           {children}
@@ -41,7 +41,7 @@ const components: PortableTextComponents = {
 export function PortableText({ value }: { value: PortableTextBlock[] }) {
   if (!value) return null;
   return (
-    <div className="prose prose-gray max-w-none">
+    <div className="prose max-w-none text-slate prose-headings:font-heading prose-headings:text-ink prose-headings:font-normal prose-strong:text-ink prose-a:text-terra hover:prose-a:text-terra-deep">
       <SanityPortableText value={value} components={components} />
     </div>
   );

@@ -24,17 +24,17 @@ const ELEMENTS = [
 export function ElementsOfNegligence() {
   return (
     <section className="mb-10" data-ai-extractable="true">
-      <h2 className="font-heading text-2xl font-bold text-navy mb-4">
+      <h2 className="font-heading text-[clamp(28px,3.5vw,40px)] leading-[1.1] mb-4">
         Do I Have a Case? The 4 Elements of Negligence
       </h2>
       <div className="grid sm:grid-cols-2 gap-4">
         {ELEMENTS.map((el) => (
-          <div key={el.num} className="bg-light rounded-lg p-5 border border-border">
-            <span className="inline-flex items-center justify-center w-8 h-8 bg-navy text-white font-bold text-sm rounded-full mb-3">
+          <div key={el.num} className="bg-paper rounded-[20px] p-6 border border-rule">
+            <span className="inline-flex items-center justify-center w-9 h-9 bg-ink text-cream font-heading text-base rounded-full mb-3">
               {el.num}
             </span>
-            <h3 className="font-heading text-base font-bold text-navy mb-2">{el.title}</h3>
-            <p className="text-sm text-gray-700">{el.body}</p>
+            <h3 className="font-heading text-[21px] text-ink mb-2">{el.title}</h3>
+            <p className="text-sm text-slate leading-[1.6]">{el.body}</p>
           </div>
         ))}
       </div>

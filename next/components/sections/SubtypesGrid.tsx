@@ -11,7 +11,7 @@ export function SubtypesGrid({ subtypes, pillarSlug, heading }: SubtypesGridProp
 
   return (
     <section className="mb-10" id="pa-case-types">
-      <h2 className="font-heading text-2xl font-bold text-navy mb-4">
+      <h2 className="font-heading text-[clamp(28px,3.5vw,40px)] leading-[1.1] mb-4">
         {heading || "Types of Cases We Handle"}
       </h2>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -19,7 +19,7 @@ export function SubtypesGrid({ subtypes, pillarSlug, heading }: SubtypesGridProp
           <Link
             key={st.slug}
             href={`/${pillarSlug}/${st.slug}/`}
-            className="block bg-light rounded-lg px-4 py-3 text-sm font-semibold text-navy hover:bg-orange/10 hover:text-orange-text border border-border transition-colors no-underline"
+            className="block bg-paper rounded-[20px] px-5 py-4 text-sm font-semibold text-ink border border-rule hover:-translate-y-[3px] hover:shadow-[0_12px_32px_rgba(31,45,68,0.10)] hover:text-terra transition-all no-underline"
           >
             {st.title}
           </Link>

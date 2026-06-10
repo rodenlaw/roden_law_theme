@@ -14,6 +14,7 @@ import { createClient } from "@sanity/client";
 import { readFileSync } from "fs";
 import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
+import { htmlToBlocks as htmlToPortableText } from "./html-to-portable-text.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -51,38 +52,15 @@ const OFFICE_SLUGS = new Set([
   "north-charleston-sc", "columbia-sc", "myrtle-beach-sc",
 ]);
 
+// Accumulates conversion stats across the whole run (e.g. images dropped from
+// body content because WP media URLs can't be referenced as Sanity assets here).
+const conversionStats = { droppedImages: 0 };
+
+// Rich HTML → Portable Text: preserves links, bold/italic/underline/code marks,
+// headings, blockquotes, and bullet/numbered (incl. nested) lists. See
+// ./html-to-portable-text.mjs for the implementation and tests.
 function htmlToBlocks(html) {
-  if (!html || !html.trim()) return [];
-  // Simple HTML → Portable Text conversion
-  // Strips tags and creates basic block structure
-  // For production, use @sanity/block-tools with JSDOM
-  const text = html
-    .replace(/<br\s*\/?>/gi, "\n")
-    .replace(/<\/p>/gi, "\n\n")
-    .replace(/<[^>]+>/g, "")
-    .replace(/&amp;/g, "&")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
-    .replace(/&quot;/g, '"')
-    .replace(/&#039;/g, "'")
-    .replace(/&rsquo;/g, "\u2019")
-    .replace(/&lsquo;/g, "\u2018")
-    .replace(/&rdquo;/g, "\u201D")
-    .replace(/&ldquo;/g, "\u201C")
-    .replace(/&mdash;/g, "\u2014")
-    .replace(/&ndash;/g, "\u2013")
-    .replace(/&nbsp;/g, " ")
-    .trim();
-
-  if (!text) return [];
-
-  return text.split(/\n\n+/).filter(Boolean).map((para, i) => ({
-    _type: "block",
-    _key: `block_${i}`,
-    style: "normal",
-    markDefs: [],
-    children: [{ _type: "span", _key: `span_${i}`, text: para.trim(), marks: [] }],
-  }));
+  return htmlToPortableText(html, conversionStats);
 }
 
 function slugify(str) {
@@ -512,6 +490,13 @@ async function main() {
   await migrateBlogPosts();
 
   console.log("\n=== Migration Complete ===");
+  if (conversionStats.droppedImages) {
+    console.log(
+      `\n⚠  ${conversionStats.droppedImages} inline image(s) were dropped from body content ` +
+        `(WP media URLs can't be referenced as Sanity assets in this import). ` +
+        `Re-add via Studio or a separate asset-upload pass if needed.`
+    );
+  }
 }
 
 main().catch((err) => {

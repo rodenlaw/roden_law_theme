@@ -11,34 +11,34 @@ export function LandingHero({ title, subtitle, stateBadge }: LandingHeroProps) {
   const firm = getFirmData();
 
   return (
-    <section className="bg-navy text-white py-14 lg:py-20">
-      <div className="mx-auto max-w-[1200px] px-6">
-        <div className="grid lg:grid-cols-[1fr_380px] gap-10">
+    <section className="porch-glow">
+      <div className="mx-auto max-w-[1200px] px-6 lg:px-[88px] pt-16 pb-20 lg:pb-24">
+        <div className="grid lg:grid-cols-[1fr_380px] gap-10 lg:gap-16 items-center">
           <div>
             {stateBadge && (
-              <span className="inline-block text-xs uppercase tracking-widest text-orange mb-3">{stateBadge}</span>
+              <p className="porch-eyebrow mb-5">{stateBadge}</p>
             )}
-            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-black mb-4 leading-tight">
+            <h1 className="font-heading font-normal text-ink text-[clamp(40px,5.5vw,68px)] leading-[1.05] tracking-[-0.02em] mb-6">
               {title}
             </h1>
-            <p className="text-lg text-gray-300 mb-6 max-w-xl">{subtitle}</p>
-            <div className="grid grid-cols-3 gap-4 mb-6 max-w-md">
-              <div className="text-center">
-                <span className="block text-2xl font-black text-orange">{firm.trustStats.recovered}</span>
-                <span className="text-xs text-gray-400">Recovered</span>
+            <p className="text-[19px] leading-[1.55] text-ink-2 mb-8 max-w-xl">{subtitle}</p>
+            <div className="flex flex-wrap gap-9 px-8 py-6 bg-paper border border-rule rounded-[24px] shadow-[0_10px_30px_rgba(31,45,68,0.06)] mb-8 max-w-md">
+              <div>
+                <span className="block font-heading text-[32px] font-medium leading-none text-ink">{firm.trustStats.recovered}</span>
+                <span className="text-xs font-bold tracking-[0.1em] uppercase text-slate mt-1.5 block">Recovered</span>
               </div>
-              <div className="text-center">
-                <span className="block text-2xl font-black text-orange">{firm.trustStats.rating}&#9733;</span>
-                <span className="text-xs text-gray-400">Rating</span>
+              <div>
+                <span className="block font-heading text-[32px] font-medium leading-none text-ink">{firm.trustStats.rating}&#9733;</span>
+                <span className="text-xs font-bold tracking-[0.1em] uppercase text-slate mt-1.5 block">Rating</span>
               </div>
-              <div className="text-center">
-                <span className="block text-2xl font-black text-orange">{firm.trustStats.cases}</span>
-                <span className="text-xs text-gray-400">Cases</span>
+              <div>
+                <span className="block font-heading text-[32px] font-medium leading-none text-ink">{firm.trustStats.cases}</span>
+                <span className="text-xs font-bold tracking-[0.1em] uppercase text-slate mt-1.5 block">Cases</span>
               </div>
             </div>
             <a
               href={`tel:${firm.phoneE164}`}
-              className="inline-block bg-orange text-navy font-extrabold px-8 py-3.5 rounded-md hover:bg-orange-dark transition-colors no-underline text-lg"
+              className="inline-flex items-center gap-2 bg-terra text-paper font-bold px-7 py-4 rounded-full hover:bg-terra-deep transition-colors no-underline text-lg"
             >
               Call {firm.phone}
             </a>

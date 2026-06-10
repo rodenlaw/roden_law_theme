@@ -30,14 +30,20 @@ export function Footer() {
 
   return (
     <>
-      <footer className="bg-navy text-white" role="contentinfo">
-        <div className="mx-auto max-w-[1200px] px-6 py-12">
+      <footer className="bg-ink text-cream/75" role="contentinfo">
+        <div className="mx-auto max-w-[1200px] px-6 py-16">
           {/* 4-Column Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
             {/* Column 1: Firm Info */}
             <div>
-              <h4 className="text-white font-heading font-bold text-lg mb-3">{firm.name}</h4>
-              <p className="text-gray-400 text-sm leading-relaxed mb-4">
+              <div className="flex items-center gap-2.5 mb-3">
+                <span className="w-9 h-9 rounded-full bg-honey text-ink flex items-center justify-center font-heading text-lg" aria-hidden="true">R</span>
+                <span className="font-heading text-xl text-cream">{firm.name}</span>
+              </div>
+              <p className="text-honey text-sm font-semibold mb-3">
+                <span aria-hidden="true">{"★".repeat(5)}</span> {firm.trustStats.rating}/5 &middot; {firm.trustStats.reviews} reviews
+              </p>
+              <p className="text-cream/60 text-sm leading-relaxed mb-4">
                 {firm.trustStats.recovered} recovered for injury victims across Georgia and South
                 Carolina. No fees unless we win.
               </p>
@@ -49,7 +55,7 @@ export function Footer() {
                     aria-label={SOCIAL_LABELS[key] ?? key}
                     target="_blank"
                     rel="noopener noreferrer nofollow"
-                    className="flex items-center justify-center w-8 h-8 bg-white/10 rounded text-xs font-bold text-white hover:bg-orange hover:text-navy transition-colors no-underline"
+                    className="flex items-center justify-center w-8 h-8 bg-cream/10 rounded-full text-xs font-bold text-cream hover:bg-honey hover:text-ink transition-colors no-underline"
                   >
                     <span aria-hidden="true">{SOCIAL_ICONS[key] ?? key[0]}</span>
                   </a>
@@ -59,25 +65,25 @@ export function Footer() {
 
             {/* Column 2: Practice Areas */}
             <div>
-              <h4 className="text-orange font-heading font-bold text-lg mb-3">Practice Areas</h4>
+              <h4 className="text-honey font-mono text-xs font-bold uppercase tracking-[0.14em] mb-4">Practice Areas</h4>
               <ul className="list-none m-0 p-0 space-y-1.5">
                 {FOOTER_PRACTICE_AREAS.map(({ label, slug }) => (
                   <li key={slug}>
                     <Link
                       href={`/practice-areas/${slug}/`}
-                      className="text-gray-400 text-sm hover:text-white no-underline"
+                      className="text-cream/70 text-sm hover:text-cream no-underline"
                     >
                       {label}
                     </Link>
                   </li>
                 ))}
                 <li>
-                  <Link href="/practice-areas/" className="text-gray-400 text-sm hover:text-white no-underline">
+                  <Link href="/practice-areas/" className="text-cream/70 text-sm hover:text-cream no-underline">
                     Other Personal Injuries
                   </Link>
                 </li>
                 <li>
-                  <Link href="/resources/" className="text-gray-400 text-sm hover:text-white no-underline">
+                  <Link href="/resources/" className="text-cream/70 text-sm hover:text-cream no-underline">
                     Resources
                   </Link>
                 </li>
@@ -86,19 +92,19 @@ export function Footer() {
 
             {/* Column 3: Offices */}
             <div>
-              <h4 className="text-orange font-heading font-bold text-lg mb-3">Our Offices</h4>
+              <h4 className="text-honey font-mono text-xs font-bold uppercase tracking-[0.14em] mb-4">Our Offices</h4>
               <div className="space-y-3">
                 {Object.values(firm.offices).map((office) => (
                   <div key={office.slug}>
-                    <h5 className="text-white text-sm font-semibold mb-0.5">
+                    <h5 className="text-cream text-sm font-semibold mb-0.5">
                       {office.marketName}, {office.state}
                     </h5>
-                    <address className="not-italic text-gray-400 text-xs leading-relaxed">
+                    <address className="not-italic text-cream/60 text-xs leading-relaxed">
                       {office.street}
                       <br />
                       <a
                         href={`tel:${firm.phoneRaw}`}
-                        className="text-gray-400 hover:text-orange no-underline"
+                        className="text-cream/60 hover:text-honey no-underline"
                       >
                         {firm.vanityPhone}
                       </a>
@@ -110,13 +116,13 @@ export function Footer() {
 
             {/* Column 4: CTA */}
             <div>
-              <h4 className="text-orange font-heading font-bold text-lg mb-3">Free Case Review</h4>
-              <p className="text-gray-400 text-sm mb-4">
+              <h4 className="text-honey font-mono text-xs font-bold uppercase tracking-[0.14em] mb-4">Free Case Review</h4>
+              <p className="text-cream/60 text-sm mb-4">
                 Injured? Find out what your case is worth. No fees unless we win.
               </p>
               <Link
                 href="/contact/"
-                className="inline-block w-full text-center bg-orange text-navy font-extrabold py-3 rounded-md hover:bg-orange-dark transition-colors no-underline text-sm"
+                className="inline-block w-full text-center bg-terra text-paper font-bold py-3 rounded-full hover:bg-terra-deep transition-colors no-underline text-sm"
               >
                 Get Your Free Case Review
               </Link>
@@ -124,9 +130,9 @@ export function Footer() {
           </div>
 
           {/* Disclaimers */}
-          <div className="border-t border-white/10 pt-6 space-y-3 text-[11px] text-gray-500 leading-relaxed">
+          <div className="border-t border-cream/15 pt-6 space-y-3 text-[11px] text-cream/45 leading-relaxed">
             <p>
-              <strong className="text-gray-400">Disclaimer:</strong> Attorney Eric Roden is
+              <strong className="text-cream/60">Disclaimer:</strong> Attorney Eric Roden is
               responsible for the content of this website, and his primary office address is 333
               Commercial Drive, Savannah, GA 31406. South Carolina cases are principally handled out
               of the Charleston and North Charleston, South Carolina offices. South Carolina cases are
@@ -135,7 +141,7 @@ export function Footer() {
               Georgia cases are principally handled out of the Savannah and Darien, Georgia offices.
             </p>
             <p>
-              <strong className="text-gray-400">Case Results:</strong> Case &ldquo;value,&rdquo;
+              <strong className="text-cream/60">Case Results:</strong> Case &ldquo;value,&rdquo;
               &ldquo;results,&rdquo; and/or &ldquo;maximum compensation&rdquo; is determined from the
               total settlement amount. The settlement amounts shown are gross numbers before
               attorney&apos;s fees and cost deductions. Each case is unique, and the examples shown
@@ -143,16 +149,16 @@ export function Footer() {
               recovery in your specific case.
             </p>
             <p>
-              <strong className="text-gray-400">No Upfront Fees:</strong> Fees and costs apply only
+              <strong className="text-cream/60">No Upfront Fees:</strong> Fees and costs apply only
               upon successful recovery. No fees or costs with no recovery.
             </p>
           </div>
 
           {/* Copyright */}
-          <div className="border-t border-white/10 mt-6 pt-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-500">
+          <div className="border-t border-cream/15 mt-6 pt-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-cream/45">
             <span>
               &copy; {year} {firm.legalEntity}. All Rights Reserved |{" "}
-              <Link href="/privacy-policy/" className="text-gray-500 hover:text-white no-underline">
+              <Link href="/privacy-policy/" className="text-cream/45 hover:text-cream no-underline">
                 Privacy Policy
               </Link>
             </span>

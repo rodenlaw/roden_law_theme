@@ -8,26 +8,26 @@ export function ComparativeFault({ jurisdiction }: ComparativeFaultProps) {
 
   return (
     <section className="mb-10" data-ai-extractable="true">
-      <h2 className="font-heading text-2xl font-bold text-navy mb-4">
+      <h2 className="font-heading text-[clamp(28px,3.5vw,40px)] leading-[1.1] mb-4">
         Comparative Fault Rules
       </h2>
       <div className="grid sm:grid-cols-2 gap-4">
         {showGa && (
-          <div className="bg-light border-l-4 border-green rounded-lg p-5">
-            <h3 className="font-heading text-base font-bold text-navy mb-2">Georgia</h3>
-            <p className="text-sm text-gray-700">
+          <div className="bg-paper border border-rule border-l-4 border-l-honey-deep rounded-[20px] p-6">
+            <h3 className="font-heading text-[21px] text-ink mb-2">Georgia</h3>
+            <p className="text-sm text-slate leading-[1.6]">
               Modified comparative fault — you can recover damages if you are{" "}
-              <strong>less than 50% at fault</strong> for the accident.
+              <strong className="text-ink">less than 50% at fault</strong> for the accident.
             </p>
-            <p className="text-xs text-gray-500 mt-2">O.C.G.A. § 51-12-33</p>
+            <p className="text-xs text-slate mt-2">O.C.G.A. § 51-12-33</p>
           </div>
         )}
         {showSc && (
-          <div className="bg-light border-l-4 border-orange rounded-lg p-5">
-            <h3 className="font-heading text-base font-bold text-navy mb-2">South Carolina</h3>
-            <p className="text-sm text-gray-700">
+          <div className="bg-paper border border-rule border-l-4 border-l-terra rounded-[20px] p-6">
+            <h3 className="font-heading text-[21px] text-ink mb-2">South Carolina</h3>
+            <p className="text-sm text-slate leading-[1.6]">
               Modified comparative fault — you can recover damages if you are{" "}
-              <strong>less than 51% at fault</strong> for the accident.
+              <strong className="text-ink">less than 51% at fault</strong> for the accident.
             </p>
           </div>
         )}

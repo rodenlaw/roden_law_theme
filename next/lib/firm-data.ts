@@ -424,7 +424,7 @@ const practiceAreas: string[] = [
 export function getFirmData(): FirmData {
   return {
     name: "Roden Law",
-    legalEntity: "Roden Love LLC",
+    legalEntity: "Roden Law",
     vanityPhone: "844-RESULTS",
     phoneRaw: "+18447378587",
     url: SITE_URL,

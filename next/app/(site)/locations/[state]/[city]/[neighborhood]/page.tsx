@@ -42,9 +42,9 @@ export default async function NeighborhoodPage({ params }: Props) {
 
   return (
     <>
-      {/* Hero */}
-      <section className="bg-navy text-white py-12 lg:py-16">
-        <div className="mx-auto max-w-[1200px] px-6">
+      {/* ── Hero ─────────────────────────────────────────── */}
+      <section className="porch-glow border-b border-rule">
+        <div className="mx-auto max-w-[1200px] px-6 lg:px-[88px] pt-8 pb-16">
           <Breadcrumbs
             items={[
               { label: "Home", href: "/" },
@@ -54,39 +54,37 @@ export default async function NeighborhoodPage({ params }: Props) {
               { label: loc.title },
             ]}
           />
-          <div className="grid lg:grid-cols-[1fr_340px] gap-10 mt-4">
+          <div className="grid lg:grid-cols-[1fr_340px] gap-10 lg:gap-16 items-start mt-4">
             <div>
-              <span className={`inline-block text-[10px] uppercase tracking-widest mb-2 ${office.state === "GA" ? "text-green" : "text-orange"}`}>
+              <p className="porch-eyebrow mb-4">
                 Serving {loc.title} from our {office.marketName} office
-              </span>
-              <h1 className="font-heading text-3xl md:text-4xl font-black mb-4">
-                Personal Injury Lawyer Serving {loc.title}, {office.stateFull}
+              </p>
+              <h1 className="font-heading font-normal text-ink text-[clamp(34px,5vw,60px)] leading-[1.04] tracking-[-0.02em] mb-6">
+                Personal injury lawyer serving <span className="porch-em">{loc.title}, {office.stateFull}.</span>
               </h1>
-              <p className="text-lg text-gray-300 mb-6 max-w-2xl">
+              <p className="text-[18px] leading-[1.55] text-ink-2 max-w-[52ch] mb-8">
                 Roden Law&apos;s {office.marketName} office serves injury victims throughout {loc.title} and the surrounding area. No fees unless we win.
               </p>
 
               {/* Trust Stats */}
-              <div className="grid grid-cols-3 gap-4 mb-6 max-w-md">
-                <div className="text-center">
-                  <span className="block text-2xl font-black text-orange">{firm.trustStats.recovered}</span>
-                  <span className="text-xs text-gray-400">Recovered</span>
-                </div>
-                <div className="text-center">
-                  <span className="block text-2xl font-black text-orange">{firm.trustStats.rating}&#9733;</span>
-                  <span className="text-xs text-gray-400">Rating</span>
-                </div>
-                <div className="text-center">
-                  <span className="block text-2xl font-black text-orange">{firm.trustStats.cases}</span>
-                  <span className="text-xs text-gray-400">Cases</span>
-                </div>
+              <div className="flex flex-wrap gap-8 mb-8">
+                {[
+                  { n: firm.trustStats.recovered, l: "Recovered" },
+                  { n: `${firm.trustStats.rating}★`, l: "Rating" },
+                  { n: firm.trustStats.cases, l: "Cases" },
+                ].map((s) => (
+                  <div key={s.l}>
+                    <div className="font-heading text-[32px] font-medium leading-none text-ink">{s.n}</div>
+                    <div className="text-[11px] font-bold tracking-[0.1em] uppercase text-slate mt-1.5">{s.l}</div>
+                  </div>
+                ))}
               </div>
 
               <a
                 href={`tel:${office.phoneRaw}`}
-                className="inline-block bg-orange text-navy font-extrabold px-8 py-3.5 rounded-md hover:bg-orange-dark transition-colors no-underline"
+                className="inline-flex items-center gap-2 bg-terra text-paper font-bold px-7 py-3.5 rounded-full hover:bg-terra-deep transition-colors no-underline"
               >
-                Call {office.phone}
+                ☎ Call {office.phone}
               </a>
             </div>
             <div className="hidden lg:block">
@@ -96,22 +94,22 @@ export default async function NeighborhoodPage({ params }: Props) {
         </div>
       </section>
 
-      {/* Content */}
-      <div className="mx-auto max-w-[1200px] px-6 py-12">
-        <div className="grid lg:grid-cols-[1fr_340px] gap-10">
+      {/* ── Content ──────────────────────────────────────── */}
+      <div className="mx-auto max-w-[1200px] px-6 lg:px-[88px] py-[72px]">
+        <div className="grid lg:grid-cols-[1fr_340px] gap-12 lg:gap-[64px]">
           <div className="min-w-0">
             {/* About Section */}
-            <section className="mb-10">
-              <h2 className="font-heading text-2xl font-bold text-navy mb-2">
-                About {loc.title}
+            <section className="mb-12">
+              <h2 className="font-heading text-[clamp(26px,3vw,36px)] leading-[1.1] mb-2">
+                About <span className="porch-em">{loc.title}.</span>
               </h2>
               {loc.population && (
-                <p className="text-sm text-gray-500 mb-4">Population: {loc.population}</p>
+                <p className="font-mono text-[12px] tracking-[0.06em] text-slate mb-4">Population: {loc.population}</p>
               )}
               {loc.body ? (
                 <PortableText value={loc.body} />
               ) : (
-                <p className="text-gray-700">
+                <p className="text-ink-2 leading-[1.6]">
                   Roden Law&apos;s {office.marketName} office serves injury victims in {loc.title} and
                   the surrounding {office.stateFull} communities. If you&apos;ve been injured in{" "}
                   {loc.title}, contact us for a free case review.
@@ -121,11 +119,11 @@ export default async function NeighborhoodPage({ params }: Props) {
 
             {/* Dangerous Roads */}
             {loc.roads && (
-              <section className="mb-10" data-ai-extractable="true">
-                <h2 className="font-heading text-2xl font-bold text-navy mb-4">
+              <section className="mb-12" data-ai-extractable="true">
+                <h2 className="font-heading text-[28px] mb-4">
                   Dangerous Roads &amp; Accident Hotspots
                 </h2>
-                <div className="bg-light rounded-lg p-5 text-sm text-gray-700 whitespace-pre-line">
+                <div className="bg-paper border border-rule rounded-[18px] p-6 text-sm text-ink-2 leading-[1.6] whitespace-pre-line">
                   {loc.roads}
                 </div>
               </section>
@@ -133,11 +131,11 @@ export default async function NeighborhoodPage({ params }: Props) {
 
             {/* Hospitals */}
             {loc.hospitals && (
-              <section className="mb-10">
-                <h2 className="font-heading text-2xl font-bold text-navy mb-4">
+              <section className="mb-12">
+                <h2 className="font-heading text-[28px] mb-4">
                   Nearby Hospitals &amp; Emergency Rooms
                 </h2>
-                <div className="bg-light rounded-lg p-5 text-sm text-gray-700 whitespace-pre-line">
+                <div className="bg-paper border border-rule rounded-[18px] p-6 text-sm text-ink-2 leading-[1.6] whitespace-pre-line">
                   {loc.hospitals}
                 </div>
               </section>
@@ -145,11 +143,11 @@ export default async function NeighborhoodPage({ params }: Props) {
 
             {/* Landmarks */}
             {loc.landmarks && (
-              <section className="mb-10">
-                <h2 className="font-heading text-2xl font-bold text-navy mb-4">
+              <section className="mb-12">
+                <h2 className="font-heading text-[28px] mb-4">
                   Local Landmarks &amp; Points of Interest
                 </h2>
-                <div className="bg-light rounded-lg p-5 text-sm text-gray-700 whitespace-pre-line">
+                <div className="bg-paper border border-rule rounded-[18px] p-6 text-sm text-ink-2 leading-[1.6] whitespace-pre-line">
                   {loc.landmarks}
                 </div>
               </section>
@@ -157,29 +155,29 @@ export default async function NeighborhoodPage({ params }: Props) {
 
             {/* Court Info */}
             {loc.court && (
-              <section className="mb-10">
-                <h2 className="font-heading text-xl font-bold text-navy mb-3">
+              <section className="mb-12">
+                <h2 className="font-heading text-[26px] mb-3">
                   Local Court
                 </h2>
-                <p className="text-gray-700">{loc.court}</p>
+                <p className="text-ink-2 leading-[1.6]">{loc.court}</p>
               </section>
             )}
 
             {/* State Law */}
             {jurisdiction && (
-              <section className="mb-10 bg-light rounded-lg p-6" data-ai-extractable="true">
-                <h2 className="font-heading text-xl font-bold text-navy mb-4">
+              <section className="mb-12 bg-paper border border-rule rounded-[20px] p-8" data-ai-extractable="true">
+                <h2 className="font-heading text-[26px] mb-5">
                   {office.stateFull} Filing Rules
                 </h2>
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div>
-                    <span className="text-xs uppercase tracking-widest text-gray-500">Statute of Limitations</span>
-                    <p className="text-navy font-bold text-lg">{jurisdiction.statuteYears} years</p>
-                    <p className="text-sm text-gray-600">{jurisdiction.statuteCite}</p>
+                    <span className="font-mono text-[11px] tracking-[0.12em] uppercase text-slate">Statute of Limitations</span>
+                    <p className="font-heading text-ink text-xl mt-1">{jurisdiction.statuteYears} years</p>
+                    <p className="text-sm text-slate">{jurisdiction.statuteCite}</p>
                   </div>
                   <div>
-                    <span className="text-xs uppercase tracking-widest text-gray-500">Comparative Fault</span>
-                    <p className="text-navy font-bold text-sm">{jurisdiction.compFaultRule}</p>
+                    <span className="font-mono text-[11px] tracking-[0.12em] uppercase text-slate">Comparative Fault</span>
+                    <p className="text-ink font-semibold text-sm mt-1">{jurisdiction.compFaultRule}</p>
                   </div>
                 </div>
               </section>
@@ -187,16 +185,16 @@ export default async function NeighborhoodPage({ params }: Props) {
 
             {/* Sub-Neighborhoods */}
             {loc.subNeighborhoods && loc.subNeighborhoods.length > 0 && (
-              <section className="mb-10">
-                <h2 className="font-heading text-2xl font-bold text-navy mb-4">
-                  Areas Within {loc.title}
+              <section className="mb-12">
+                <h2 className="font-heading text-[clamp(24px,3vw,32px)] leading-[1.1] mb-6">
+                  Areas within <span className="porch-em">{loc.title}.</span>
                 </h2>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
                   {loc.subNeighborhoods.map((n: { title: string; slug: string }) => (
                     <Link
                       key={n.slug}
                       href={`/locations/${state}/${city}/${n.slug}/`}
-                      className="block bg-light rounded-lg px-4 py-3 text-sm font-semibold text-navy hover:bg-orange/10 hover:text-orange-text border border-border transition-colors no-underline"
+                      className="block bg-paper rounded-[14px] px-4 py-3.5 text-sm font-semibold text-ink border border-rule hover:border-terra hover:text-terra hover:-translate-y-[2px] hover:shadow-[0_8px_20px_rgba(31,45,68,0.08)] transition-all no-underline"
                     >
                       {n.title}
                     </Link>
@@ -216,26 +214,26 @@ export default async function NeighborhoodPage({ params }: Props) {
           </div>
 
           <aside className="hidden lg:block">
-            <div className="sticky top-[88px] space-y-6">
+            <div className="sticky top-[88px] space-y-5">
               <ContactForm />
               {/* NAP Card */}
-              <div className="bg-light rounded-lg p-4">
-                <h4 className="font-heading text-sm font-bold text-navy mb-2">{office.name}</h4>
-                <address className="not-italic text-sm text-gray-600 mb-2">
+              <div className="bg-paper border border-rule rounded-[18px] p-5">
+                <h4 className="font-mono text-[10px] tracking-[0.16em] uppercase text-terra font-bold mb-3">{office.name}</h4>
+                <address className="not-italic text-sm text-slate mb-3 leading-[1.5]">
                   {office.street}<br />
                   {office.city}, {office.state} {office.zip}
                 </address>
-                <a href={`tel:${office.phoneRaw}`} className="block text-sm font-bold text-orange hover:text-orange-dark no-underline mb-2">
+                <a href={`tel:${office.phoneRaw}`} className="block text-sm font-bold text-terra hover:text-terra-deep no-underline mb-2">
                   {office.phone}
                 </a>
-                <a href={office.mapUrl} target="_blank" rel="noopener noreferrer nofollow" className="text-xs text-navy hover:text-orange-text no-underline">
+                <a href={office.mapUrl} target="_blank" rel="noopener noreferrer nofollow" className="text-xs font-semibold text-ink hover:text-terra no-underline">
                   Get Directions &rarr;
                 </a>
               </div>
               {/* Back to City */}
-              <div className="bg-light rounded-lg p-4">
-                <h4 className="font-heading text-sm font-bold text-navy mb-2">Back to Office</h4>
-                <Link href={`/locations/${state}/${city}/`} className="text-sm text-navy hover:text-orange-text no-underline">
+              <div className="bg-paper border border-rule rounded-[18px] p-5">
+                <h4 className="font-mono text-[10px] tracking-[0.16em] uppercase text-terra font-bold mb-3">Back to Office</h4>
+                <Link href={`/locations/${state}/${city}/`} className="text-sm font-semibold text-ink hover:text-terra no-underline">
                   &larr; {office.marketName}, {office.state}
                 </Link>
               </div>
