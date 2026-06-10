@@ -39,6 +39,27 @@ function cleanText(s?: string | null): string {
   return decode(s.replace(/<[^>]+>/g, "")).replace(/\s+/g, " ").trim();
 }
 
+// Minimal Portable Text renderer for the Key Takeaways box — preserves the
+// bold/italic emphasis without pulling in the full prose PortableText styling.
+function RichTakeaways({ blocks }: { blocks: PTBlock[] }) {
+  return (
+    <div className="font-heading text-[19px] leading-[1.55] text-ink space-y-3">
+      {blocks.map((b, bi) => (
+        <p key={b._key ?? bi} className="m-0">
+          {(b.children ?? []).map((span, si) => {
+            const marks = span.marks ?? [];
+            if (marks.includes("strong")) return <strong key={si} className="font-bold text-ink">{span.text}</strong>;
+            if (marks.includes("em")) return <em key={si}>{span.text}</em>;
+            return <span key={si}>{span.text}</span>;
+          })}
+        </p>
+      ))}
+    </div>
+  );
+}
+interface PTSpan { _key?: string; text: string; marks?: string[] }
+interface PTBlock { _key?: string; children?: PTSpan[] }
+
 export async function generateStaticParams() {
   const slugs = await getAllResourceSlugs();
   return slugs.map((slug) => ({ slug }));
@@ -113,12 +134,16 @@ export default async function ResourcePage({ params }: Props) {
         <div className="grid lg:grid-cols-[1fr_340px] gap-12 lg:gap-[64px]">
           <article className="min-w-0">
             {/* Key Takeaways */}
-            {res.keyTakeaways && (
+            {(res.keyTakeawaysRich?.length || res.keyTakeaways) && (
               <section className="relative bg-paper border border-rule rounded-[20px] px-8 py-7 mb-10">
                 <span className="absolute -top-3 left-7 bg-ink text-cream px-3.5 py-1 rounded-full font-mono text-[10px] tracking-[0.18em] font-bold">
                   KEY TAKEAWAYS
                 </span>
-                <p className="font-heading text-[19px] leading-[1.55] text-ink m-0">{cleanText(res.keyTakeaways)}</p>
+                {res.keyTakeawaysRich?.length ? (
+                  <RichTakeaways blocks={res.keyTakeawaysRich} />
+                ) : (
+                  <p className="font-heading text-[19px] leading-[1.55] text-ink m-0">{cleanText(res.keyTakeaways)}</p>
+                )}
               </section>
             )}
 

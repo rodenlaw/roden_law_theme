@@ -97,6 +97,7 @@ export async function getResourceBySlug(slug: string) {
       "slug": slug.current,
       jurisdiction,
       keyTakeaways,
+      keyTakeawaysRich,
       body,
       faqs,
       seoMetaDescription,
