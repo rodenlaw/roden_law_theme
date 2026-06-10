@@ -35,7 +35,7 @@ const RESERVED_TOP = new Set([
   // hardcoded SEO/landing pages in app/(site)
   "georgia-car-accident-lawyer", "south-carolina-car-accident-lawyer",
   "south-carolina-rear-end-accident-lawyer", "truck-accident-lawyers-columbia-sc",
-  "truck-accident-lawyers-near-me", "high-tide", "privacy-policy",
+  "truck-accident-lawyers-near-me", "privacy-policy",
 ]);
 
 function looksLikeCurrentRoute(path: string): boolean {
