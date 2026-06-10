@@ -18,9 +18,12 @@ export function PorchPlaceholder({
       : variant === "warm"
         ? "porch-placeholder--warm"
         : "";
+  // Reads as an intentional branded panel (monogram), not a wireframe showing a
+  // dev label. The descriptive label is kept for screen readers / dev reference.
   return (
-    <div className={`porch-placeholder ${variantClass} ${className}`} aria-hidden="true">
-      <span>{label}</span>
+    <div className={`porch-placeholder ${variantClass} ${className}`} title={label}>
+      <span className="porch-placeholder__mark" aria-hidden="true">R</span>
+      <span className="sr-only">{label}</span>
     </div>
   );
 }

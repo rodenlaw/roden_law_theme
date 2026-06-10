@@ -136,16 +136,13 @@ export default async function HomePage() {
           <p className="text-slate max-w-[50ch] text-[17px] leading-[1.6]">Whatever happened, there&apos;s a chance we can help — or point you toward someone who can. Calls are always free.</p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {FEATURED_PAS.map((p, i) => (
+          {FEATURED_PAS.map((p) => (
             <Link
               key={p.slug}
               href={`/practice-areas/${p.slug}/`}
               className="group bg-paper border border-rule rounded-[20px] p-6 min-h-[220px] flex flex-col hover:-translate-y-[3px] hover:shadow-[0_12px_32px_rgba(31,45,68,0.10)] transition-all no-underline"
             >
-              <div className="flex items-baseline justify-between pb-3 mb-5 border-b border-rule">
-                <span className="font-heading italic text-[13px] text-honey-deep">Nº {String(i + 1).padStart(2, "0")}</span>
-                <span className="w-1.5 h-1.5 rounded-full bg-honey" aria-hidden="true" />
-              </div>
+              <span className="w-2 h-2 rounded-full bg-honey mb-6" aria-hidden="true" />
               <h3 className="font-heading text-[21px] leading-[1.15] tracking-[-0.01em] mb-2">{p.name}</h3>
               <p className="text-slate text-sm leading-[1.55] grow">{p.copy}</p>
               <span className="text-terra text-sm font-semibold mt-4 group-hover:translate-x-1 transition-transform inline-block">Learn more →</span>
@@ -194,61 +191,76 @@ export default async function HomePage() {
       </section>
 
       {/* ── Results ──────────────────────────────────────── */}
-      <section className="mx-auto max-w-[1200px] px-6 lg:px-[88px] py-[120px]">
-        <div className="grid md:grid-cols-2 gap-14 items-end mb-14">
-          <div>
-            <p className="porch-eyebrow mb-2">Recent Results</p>
+      {caseResults.length > 0 && (
+        <section className="mx-auto max-w-[1200px] px-6 lg:px-[88px] py-[120px]">
+          <div className="grid md:grid-cols-2 gap-14 items-end mb-14">
             <h2 className="font-heading text-[clamp(36px,4vw,56px)] leading-[1.04]">Real cases. <span className="porch-em">Real recoveries.</span></h2>
+            <p className="text-slate max-w-[50ch] text-[17px] leading-[1.6]">A snapshot of recent outcomes. Every case is different, but the pattern is the same: we prepare like we&apos;re going to trial, and the carriers respond.</p>
           </div>
-          <p className="text-slate max-w-[50ch] text-[17px] leading-[1.6]">A snapshot of recent outcomes. Every case is different, but the pattern is the same: we prepare like we&apos;re going to trial, and the carriers respond.</p>
-        </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {caseResults.map((r: { _id: string; slug: string; amount?: string; resultType?: string; title: string }, i: number) => (
-            <Link
-              key={r._id}
-              href={`/case-results/${r.slug}/`}
-              className={`flex flex-col justify-between rounded-[20px] p-7 min-h-[230px] border no-underline transition-all hover:-translate-y-[3px] ${
-                i === 0 ? "bg-ink border-ink text-cream" : "bg-paper border-rule"
-              }`}
-            >
-              <div>
-                {r.resultType && <div className={`text-[11px] uppercase tracking-[0.12em] font-bold mb-3 ${i === 0 ? "text-honey" : "text-terra"}`}>{r.resultType}</div>}
-                <div className={`font-heading text-[40px] font-medium leading-none mb-3 ${i === 0 ? "text-honey" : "text-ink"}`}>{r.amount}</div>
-                <div className={`text-sm leading-[1.5] ${i === 0 ? "text-cream/75" : "text-slate"}`}>{r.title}</div>
-              </div>
-              <div className={`flex items-center justify-between text-xs mt-4 pt-4 border-t ${i === 0 ? "border-cream/20 text-cream/60" : "border-rule text-slate"}`}>
-                <span>Verified outcome</span><span className="font-semibold">View →</span>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </section>
+          <div className="grid lg:grid-cols-[1.3fr_1fr] gap-6 items-stretch">
+            {/* Featured outcome */}
+            {(() => {
+              const r = caseResults[0] as { _id: string; slug: string; amount?: string; resultType?: string; title: string };
+              return (
+                <Link
+                  href={`/case-results/${r.slug}/`}
+                  className="group flex flex-col justify-between bg-ink text-cream rounded-[24px] p-10 lg:p-12 no-underline transition-shadow hover:shadow-[0_20px_50px_rgba(31,45,68,0.25)] min-h-[300px]"
+                >
+                  <div>
+                    {r.resultType && <div className="text-[11px] uppercase tracking-[0.14em] font-bold text-honey mb-5">{r.resultType}</div>}
+                    <div className="font-heading font-medium text-honey leading-[0.95] text-[clamp(56px,8vw,96px)] tracking-[-0.02em]">{r.amount}</div>
+                    <div className="text-cream/80 text-[17px] leading-[1.5] mt-4 max-w-[34ch]">{r.title}</div>
+                  </div>
+                  <div className="flex items-center justify-between text-xs mt-8 pt-5 border-t border-cream/20 text-cream/60">
+                    <span>Verified outcome</span>
+                    <span className="font-semibold text-cream group-hover:translate-x-1 transition-transform inline-block">View case →</span>
+                  </div>
+                </Link>
+              );
+            })()}
+            {/* Rail of remaining outcomes */}
+            <div className="flex flex-col gap-4">
+              {caseResults.slice(1).map((r: { _id: string; slug: string; amount?: string; resultType?: string; title: string }) => (
+                <Link
+                  key={r._id}
+                  href={`/case-results/${r.slug}/`}
+                  className="group flex items-center gap-5 bg-paper border border-rule rounded-[18px] px-6 py-5 no-underline transition-all hover:-translate-y-[2px] hover:shadow-[0_12px_28px_rgba(31,45,68,0.10)]"
+                >
+                  <div className="font-heading text-ink font-medium leading-none text-[34px] shrink-0 w-[140px]">{r.amount}</div>
+                  <div className="min-w-0">
+                    {r.resultType && <div className="text-[10px] uppercase tracking-[0.12em] font-bold text-terra mb-1">{r.resultType}</div>}
+                    <div className="text-slate text-sm leading-[1.45] line-clamp-2">{r.title}</div>
+                  </div>
+                  <span className="ml-auto text-terra font-semibold text-sm shrink-0 group-hover:translate-x-1 transition-transform" aria-hidden="true">→</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ── Locations ────────────────────────────────────── */}
       <section className="bg-paper border-y border-rule">
         <div className="mx-auto max-w-[1200px] px-6 lg:px-[88px] py-[100px]">
-          <div className="grid md:grid-cols-2 gap-14 items-end mb-14">
-            <div>
-              <p className="porch-eyebrow mb-2">Our Offices</p>
-              <h2 className="font-heading text-[clamp(36px,4vw,56px)] leading-[1.04]">Six places to find us — <span className="porch-em">all close to home.</span></h2>
-            </div>
+          <div className="grid md:grid-cols-2 gap-14 items-end mb-12">
+            <h2 className="font-heading text-[clamp(36px,4vw,56px)] leading-[1.04]">Six places to find us — <span className="porch-em">all close to home.</span></h2>
             <p className="text-slate max-w-[50ch] text-[17px] leading-[1.6]">Drop in, give a call, or schedule a visit. Wherever you live in coastal Georgia or South Carolina, there&apos;s an attorney nearby.</p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 gap-x-12 border-t border-rule">
             {Object.values(firm.offices).map((office) => (
               <Link
                 key={office.slug}
                 href={`/locations/${office.stateSlug}/${office.slug.replace(/-[a-z]{2}$/, "")}/`}
-                className="group bg-cream border border-rule rounded-[24px] overflow-hidden no-underline hover:-translate-y-[3px] hover:shadow-[0_12px_32px_rgba(31,45,68,0.10)] transition-all"
+                className="group flex items-start justify-between gap-6 py-6 border-b border-rule no-underline"
               >
-                <div className="h-40 relative">
-                  <PorchPlaceholder label={`${office.marketName} · skyline`} variant="warm" />
-                </div>
-                <div className="p-6">
+                <div className="min-w-0">
                   <span className="text-[11px] font-bold uppercase tracking-[0.12em] text-terra">{office.stateFull}</span>
-                  <h3 className="font-heading text-[22px] mt-1 mb-2 group-hover:text-terra transition-colors">{office.marketName}</h3>
-                  <div className="text-slate text-sm leading-[1.5]">{office.street}<br />{office.city}, {office.state} {office.zip}</div>
-                  <div className="text-ink font-semibold text-sm mt-2">☎ {office.phone}</div>
+                  <h3 className="font-heading text-[24px] mt-1 mb-1.5 text-ink group-hover:text-terra transition-colors">{office.marketName}</h3>
+                  <div className="text-slate text-sm leading-[1.5]">{office.street}, {office.city}, {office.state} {office.zip}</div>
+                </div>
+                <div className="text-right shrink-0">
+                  <div className="text-ink font-semibold text-sm whitespace-nowrap">☎ {office.phone}</div>
+                  <span className="text-terra text-sm font-semibold inline-block mt-2 group-hover:translate-x-1 transition-transform">Visit →</span>
                 </div>
               </Link>
             ))}
@@ -259,10 +271,7 @@ export default async function HomePage() {
       {/* ── Attorneys ────────────────────────────────────── */}
       <section className="mx-auto max-w-[1200px] px-6 lg:px-[88px] py-[120px]">
         <div className="grid md:grid-cols-2 gap-14 items-end mb-14">
-          <div>
-            <p className="porch-eyebrow mb-2">Meet the team</p>
-            <h2 className="font-heading text-[clamp(36px,4vw,56px)] leading-[1.04]">Lawyers who&apos;ll <span className="porch-em">know your name.</span></h2>
-          </div>
+          <h2 className="font-heading text-[clamp(36px,4vw,56px)] leading-[1.04]">Lawyers who&apos;ll <span className="porch-em">know your name.</span></h2>
           <p className="text-slate max-w-[50ch] text-[17px] leading-[1.6]">You won&apos;t get bounced between case managers and junior associates. From your first call, you work with the attorneys representing you.</p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
