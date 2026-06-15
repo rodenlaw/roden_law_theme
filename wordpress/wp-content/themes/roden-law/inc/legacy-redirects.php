@@ -71,9 +71,25 @@ function roden_fix_dead_nav_links( $items, $args ) {
 add_action( 'template_redirect', 'roden_legacy_content_redirects', 1 );
 
 function roden_legacy_content_redirects() {
-    // Deleted "Service Areas" page (id 3126) still indexed and linked
-    // externally as /?page_id=3126 — 301 direct hits to the live hub.
-    if ( isset( $_GET['page_id'] ) && '3126' === (string) $_GET['page_id'] ) {
+    // Deleted pages still indexed/linked as raw ?page_id= permalinks.
+    // (Query strings are stripped below, so handle them before path matching.)
+    if ( isset( $_GET['page_id'] ) ) {
+        $dead_page_ids = array(
+            '3126' => '/practice-areas/', // "Service Areas" (also linked from header nav)
+            '1894' => '/',                // deleted page, destination unknown → home
+        );
+        $pid = (string) $_GET['page_id'];
+        if ( isset( $dead_page_ids[ $pid ] ) ) {
+            wp_redirect( home_url( $dead_page_ids[ $pid ] ), 301 );
+            exit;
+        }
+    }
+
+    // Neutralized legacy practice-area CPT raw permalinks
+    // (?post_type=practice-area&p=ID). The CPT is non-public (see
+    // roden_neutralize_old_practice_area_cpt above), so these all 404.
+    // Send the whole family to the practice-areas hub.
+    if ( isset( $_GET['post_type'], $_GET['p'] ) && 'practice-area' === $_GET['post_type'] ) {
         wp_redirect( home_url( '/practice-areas/' ), 301 );
         exit;
     }
@@ -402,6 +418,11 @@ function roden_get_legacy_redirect_map() {
         '/blog/south-carolina-car-accident-settlement-amounts/' => '/blog/average-personal-injury-settlement-amounts/',
         '/blog/south-carolina-truck-crash-evidence-eld-dashcam-spoliation/' => '/practice-areas/truck-accident-lawyers/',
         '/blog/what-are-the-benefits-of-workers-compensation-claims/' => '/am-i-eligible-for-workers-compensation/',
+
+        // Root-level deleted posts + a misspelled-path URL still indexed
+        '/who-is-at-fault-in-a-charleston-merge-accident/'            => '/car-accident-lawyers/charleston-sc/',
+        '/thank-you-ppc-2/'                                          => '/',
+        '/practice-ares/savannah/savannah-slip-and-fall-accidents/'  => '/slip-and-fall-lawyers/savannah-ga/',
 
 
         // ══════════════════════════════════════════════════════════════
