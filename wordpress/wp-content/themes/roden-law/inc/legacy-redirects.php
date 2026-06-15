@@ -47,12 +47,37 @@ function roden_neutralize_old_practice_area_cpt( $args, $post_type ) {
 }
 
 /* ------------------------------------------------------------------
+   Header nav: "View All Service Areas" pointed at ?page_id=3126, a
+   deleted page (sitewide 404). Rewrite that menu item to the live
+   Practice Areas hub. Robust to menu-item ID changes — matches the URL.
+   Remove this filter once the menu item is fixed in Appearance → Menus.
+   ------------------------------------------------------------------ */
+
+add_filter( 'wp_nav_menu_objects', 'roden_fix_dead_nav_links', 10, 2 );
+
+function roden_fix_dead_nav_links( $items, $args ) {
+    foreach ( $items as $item ) {
+        if ( isset( $item->url ) && false !== strpos( $item->url, 'page_id=3126' ) ) {
+            $item->url = home_url( '/practice-areas/' );
+        }
+    }
+    return $items;
+}
+
+/* ------------------------------------------------------------------
    301 Redirects — old URLs → new URLs
    ------------------------------------------------------------------ */
 
 add_action( 'template_redirect', 'roden_legacy_content_redirects', 1 );
 
 function roden_legacy_content_redirects() {
+    // Deleted "Service Areas" page (id 3126) still indexed and linked
+    // externally as /?page_id=3126 — 301 direct hits to the live hub.
+    if ( isset( $_GET['page_id'] ) && '3126' === (string) $_GET['page_id'] ) {
+        wp_redirect( home_url( '/practice-areas/' ), 301 );
+        exit;
+    }
+
     $request = rtrim( $_SERVER['REQUEST_URI'], '/' ) . '/';
 
     // Strip query strings for matching
@@ -89,8 +114,15 @@ function roden_legacy_content_redirects() {
     }
 
     // /case-result/[slug]/ → /case-results/[slug]/ (old singular → new plural CPT slug)
+    // Only redirect to the specific result if it still exists; otherwise the
+    // pluralized path 404s (many old case-result posts were removed). Fall
+    // back to the live /case-results/ archive.
     if ( preg_match( '#^/case-result/([^/]+)/?$#', $clean_path, $m ) ) {
-        wp_redirect( home_url( '/case-results/' . $m[1] . '/' ), 301 );
+        $cr   = get_page_by_path( $m[1], OBJECT, 'case_result' );
+        $dest = ( $cr && 'publish' === $cr->post_status )
+            ? get_permalink( $cr->ID )
+            : home_url( '/case-results/' );
+        wp_redirect( $dest, 301 );
         exit;
     }
 
@@ -257,18 +289,18 @@ function roden_legacy_content_redirects() {
 
     // ── Strip "blog-" prefix from old slugs ──────────────────────────────
     // Old posts had slugs like "blog-what-to-do-when-you-are-in-a-car-accident"
-    // which now resolve to /blog/blog-what-to-do.../
-    // Redirect to /blog/what-to-do.../ (the new slug after bulk rename)
+    // now resolving to /blog/blog-what-to-do.../. Many of these posts were
+    // later consolidated or deleted, so a blind redirect to /blog/[slug]/
+    // produced a 301→404 chain. roden_resolve_legacy_blog_dest() picks the
+    // correct live destination (consolidation target, live post, or /blog/).
     if ( preg_match( '#^/blog/blog-(.+?)/?$#', $clean_path, $m ) ) {
-        wp_redirect( home_url( '/blog/' . $m[1] . '/' ), 301 );
+        wp_redirect( roden_resolve_legacy_blog_dest( $m[1] ), 301 );
         exit;
     }
 
-    // Root-level /blog-[slug]/ → /blog/[slug]/ (old root posts with blog- prefix)
-    // These are single-segment URLs from the old /%postname%/ structure where
-    // the post slug itself started with "blog-".
+    // Root-level /blog-[slug]/ (old /%postname%/ posts whose slug began "blog-").
     if ( preg_match( '#^/blog-(.+?)/?$#', $clean_path, $m ) ) {
-        wp_redirect( home_url( '/blog/' . $m[1] . '/' ), 301 );
+        wp_redirect( roden_resolve_legacy_blog_dest( $m[1] ), 301 );
         exit;
     }
 
@@ -290,8 +322,87 @@ function roden_legacy_content_redirects() {
     }
 }
 
+/**
+ * Resolve where a legacy "blog-"-prefixed slug should 301 to.
+ * Order: explicit consolidation map (root-level key) → a live /blog/[slug]/
+ * post → /blog/ archive fallback. Never returns a known-404 URL.
+ */
+function roden_resolve_legacy_blog_dest( $base ) {
+    $base = trim( $base, '/' );
+
+    // 1. Consolidation map keyed at root level (CATEGORY 12 entries), e.g.
+    //    '/why-should-i-hire-an-accident-lawyer-after-an-accident/' => '/are-...'
+    $map = roden_get_legacy_redirect_map();
+    $key = '/' . $base . '/';
+    if ( isset( $map[ $key ] ) && false !== $map[ $key ] ) {
+        return home_url( $map[ $key ] );
+    }
+
+    // 2. A live blog post actually exists at /blog/[slug]/.
+    $post_obj = get_page_by_path( $base, OBJECT, 'post' );
+    if ( $post_obj && 'publish' === $post_obj->post_status ) {
+        return home_url( '/blog/' . $base . '/' );
+    }
+
+    // 3. Safe fallback — the blog index (200), never a 404.
+    return home_url( '/blog/' );
+}
+
 function roden_get_legacy_redirect_map() {
     return array(
+
+        // ══════════════════════════════════════════════════════════════
+        // CATEGORY 14: 404 remediation — 2026-06-15
+        // Live-site audit found these returning a hard 404 with no redirect
+        // (pages live as recently as April 2026). See docs/404-audit-2026-06-15.md
+        // ══════════════════════════════════════════════════════════════
+
+        // Old top-level practice-area pages (single segment never matched the
+        // /[pa]/[city]/ intersection rewrite, so they 404). → pillar pages.
+        '/burn-injury-lawyers/'          => '/practice-areas/burn-injury-lawyers/',
+        '/construction-accident-lawyers/' => '/practice-areas/construction-accident-lawyers/',
+        '/product-liability-lawyers/'    => '/practice-areas/product-liability-lawyers/',
+        '/slip-and-fall-lawyers/'        => '/practice-areas/slip-and-fall-lawyers/',
+        '/workers-compensation-lawyers/' => '/practice-areas/workers-compensation-lawyers/',
+        '/wrongful-death-lawyers/'       => '/practice-areas/wrongful-death-lawyers/',
+
+        // Old CTA + stray index pages
+        '/free-case-review/'             => '/contact/',
+        '/practice-areas/brunswick/'     => '/practice-areas/',
+        '/practice-areas/general/'       => '/practice-areas/',
+
+        // Intended sub-type page that was never created
+        '/car-accident-lawyers/rideshare-accident/' => '/practice-areas/car-accident-lawyers/',
+
+        // Taxonomy archives removed from the site
+        '/category/lost-wages-support/'              => '/blog/',
+        '/class-action-category/dangerous-drugs/'    => '/class-action-lawyers/',
+        '/class-action-category/defective-medical-devices/' => '/class-action-lawyers/',
+        '/class-action-category/defective-products/' => '/class-action-lawyers/',
+        '/class-action-lawyers/dangerous-drugs/'     => '/class-action-lawyers/',
+
+        // Deleted / renamed blog posts → closest live topical page
+        '/blog/a-practical-guide-after-a-truck-accident-in-downtown-columbia/' => '/blog/your-step-by-step-guide-after-a-downtown-columbia-truck-accident/',
+        '/blog/accidents-near-musc-and-calhoun-street/'        => '/car-accident-lawyers/charleston-sc/',
+        '/accidents-near-musc-and-calhoun-street/'             => '/car-accident-lawyers/charleston-sc/',
+        '/blog/blunt-force-trauma-after-savannah-car-crash/'   => '/blog/blunt-force-trauma-from-a-crash-what-you-need-to-know/',
+        '/blog/can-passengers-be-at-fault-for-a-savannah-crash/' => '/car-accident-lawyers/savannah-ga/',
+        '/blog/charleston-car-crash-facial-injuries/'          => '/car-accident-lawyers/charleston-sc/',
+        '/blog/charleston-port-drayage-truck-accidents/'       => '/truck-accident-lawyers/charleston-sc/',
+        '/blog/highway-hypnosis-what-it-is-why-it-is-a-crash-risk/' => '/practice-areas/car-accident-lawyers/',
+        '/blog/highway-road-shoulder-accidents-in-charleston/' => '/car-accident-lawyers/charleston-sc/',
+        '/blog/how-to-get-your-charleston-police-accident-report/' => '/car-accident-lawyers/charleston-sc/',
+        '/blog/i-was-in-a-car-accident-should-i-pursue-a-personal-injury-claim/' => '/how-do-i-know-if-i-have-a-personal-injury-case/',
+        '/blog/legal-help-shoulder-injuries-after-charleston-car-crash/' => '/car-accident-lawyers/charleston-sc/',
+        '/blog/liability-for-backing-up-crashes-in-charleston/' => '/car-accident-lawyers/charleston-sc/',
+        '/blog/myrtle-beach-golf-cart-laws/'                   => '/practice-areas/golf-cart-accident-lawyers/',
+        '/blog/south-carolina-golf-cart-laws/'                 => '/practice-areas/golf-cart-accident-lawyers/',
+        '/blog/request-your-free-case-review-today-main_phone_number/' => '/contact/',
+        '/blog/sapelo-island-ferry-dock-collapse-causing-fatality-and-serious-injuries/' => '/practice-areas/maritime-injury-lawyers/',
+        '/blog/south-carolina-car-accident-settlement-amounts/' => '/blog/average-personal-injury-settlement-amounts/',
+        '/blog/south-carolina-truck-crash-evidence-eld-dashcam-spoliation/' => '/practice-areas/truck-accident-lawyers/',
+        '/blog/what-are-the-benefits-of-workers-compensation-claims/' => '/am-i-eligible-for-workers-compensation/',
+
 
         // ══════════════════════════════════════════════════════════════
         // CATEGORY 0: Old page URLs → new page URLs
