@@ -249,7 +249,7 @@ $practice_areas = array(
 
                     <div class="founder-values">
                         <div class="founder-value">
-                            <strong><?php esc_html_e( '$250M+ Recovered', 'roden-law' ); ?></strong>
+                            <strong><?php esc_html_e( '$300M+ Recovered', 'roden-law' ); ?></strong>
                             <span><?php esc_html_e( 'Proven track record across Georgia and South Carolina', 'roden-law' ); ?></span>
                         </div>
                         <div class="founder-value">

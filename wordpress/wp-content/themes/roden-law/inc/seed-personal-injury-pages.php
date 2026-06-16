@@ -32,7 +32,7 @@ WP_CLI::log( "Attorney IDs — Eric: {$eric_roden_id}, Graeham: {$graeham_gillin
 
 // ── Pillar page content ─────────────────────────────────────────────────────
 $pillar_content = <<<'HTML'
-<p>When you or a loved one suffers an injury because of someone else's negligence, you deserve experienced legal representation that fights for every dollar you're owed. Roden Law's personal injury attorneys serve clients across Georgia and South Carolina from six office locations — Savannah, Darien, Charleston, North Charleston, Columbia, and Myrtle Beach. We have recovered more than <strong>$250 million</strong> for injured clients, and we handle every case on a <strong>contingency fee basis</strong>: you pay nothing unless we win.</p>
+<p>When you or a loved one suffers an injury because of someone else's negligence, you deserve experienced legal representation that fights for every dollar you're owed. Roden Law's personal injury attorneys serve clients across Georgia and South Carolina from six office locations — Savannah, Darien, Charleston, North Charleston, Columbia, and Myrtle Beach. We have recovered more than <strong>$300 million</strong> for injured clients, and we handle every case on a <strong>contingency fee basis</strong>: you pay nothing unless we win.</p>
 
 <h2>What Is a Personal Injury Claim?</h2>
 <p>A personal injury claim arises when one person's negligent, reckless, or intentional conduct causes physical, emotional, or financial harm to another person. To establish liability, four elements must be proven: the at-fault party owed you a duty of care; they breached that duty; their breach directly caused your injuries; and you suffered actual damages as a result.</p>
@@ -58,7 +58,7 @@ $pillar_content = <<<'HTML'
 <h2>Why Choose Roden Law?</h2>
 <p>Choosing the right personal injury attorney can mean the difference between a lowball insurance settlement and the full compensation your injuries warrant. Here is what sets Roden Law apart from other firms:</p>
 <ul>
-<li><strong>$250M+ Recovered:</strong> Our track record speaks for itself. We have secured millions in verdicts and settlements for clients throughout Georgia and South Carolina.</li>
+<li><strong>$300M+ Recovered:</strong> Our track record speaks for itself. We have secured millions in verdicts and settlements for clients throughout Georgia and South Carolina.</li>
 <li><strong>5,000+ Cases Handled:</strong> Experience across every type of personal injury case means your attorney has seen situations like yours before.</li>
 <li><strong>Senior Attorney Involvement:</strong> Unlike high-volume advertising firms, your case is handled by an attorney — not a paralegal or case manager.</li>
 <li><strong>No Upfront Costs:</strong> We work on a contingency fee basis. If we do not recover compensation for you, you owe us nothing.</li>

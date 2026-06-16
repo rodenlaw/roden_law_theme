@@ -273,7 +273,7 @@ function roden_seo_get_description() {
     }
 
     if ( is_post_type_archive( 'case_result' ) ) {
-        return roden_seo_truncate( 'View our case results. ' . $firm['name'] . ' has recovered over $250 million for injured clients in Georgia and South Carolina.', 160 );
+        return roden_seo_truncate( 'View our case results. ' . $firm['name'] . ' has recovered over $300 million for injured clients in Georgia and South Carolina.', 160 );
     }
 
     if ( is_home() ) {
@@ -338,9 +338,9 @@ function roden_seo_auto_desc_practice_area( $post_id, $title, $firm ) {
 
     if ( ! $post->post_parent ) {
         // --- Pillar page ---
-        // e.g. "Car Accident Lawyers serving Georgia & South Carolina. Over $250M recovered. Free consultation — no fees unless we win."
+        // e.g. "Car Accident Lawyers serving Georgia & South Carolina. Over $300M+ recovered. Free consultation — no fees unless we win."
         return roden_seo_truncate(
-            $title . ' serving Georgia & South Carolina. Over $250M recovered. Free consultation — no fees unless we win.',
+            $title . ' serving Georgia & South Carolina. Over $300M+ recovered. Free consultation — no fees unless we win.',
             160
         );
     }
@@ -432,10 +432,10 @@ function roden_seo_auto_desc_location( $post_id, $title, $firm ) {
         }
     }
 
-    // e.g. "Roden Law in Savannah, GA — personal injury lawyers with over $250M recovered. Also serving Pooler, Richmond Hill, Hinesville. Call (912) 303-5850."
+    // e.g. "Roden Law in Savannah, GA — personal injury lawyers with over $300M+ recovered. Also serving Pooler, Richmond Hill, Hinesville. Call (912) 303-5850."
     return roden_seo_truncate(
         $firm['name'] . ' in ' . $office['market_name'] . ', ' . $office['state']
-        . ' — personal injury lawyers with over $250M recovered.'
+        . ' — personal injury lawyers with over $300M+ recovered.'
         . $cities_str
         . ' Call ' . $office['phone'] . '.',
         160
@@ -502,16 +502,16 @@ function roden_seo_auto_desc_case_result( $post_id, $title, $firm ) {
     }
 
     if ( $amount ) {
-        // e.g. "$3,000,000 Settlement — Truck Accident Case. Roden Law has recovered over $250M for injured clients across Georgia & South Carolina."
+        // e.g. "$3,000,000 Settlement — Truck Accident Case. Roden Law has recovered over $300M+ for injured clients across Georgia & South Carolina."
         $prefix = $amount . ' ' . ucfirst( $type ?: 'Recovery' ) . ' — ';
         return roden_seo_truncate(
-            $prefix . $title . '. ' . $firm['name'] . ' has recovered over $250M for injured clients across Georgia & South Carolina.',
+            $prefix . $title . '. ' . $firm['name'] . ' has recovered over $300M+ for injured clients across Georgia & South Carolina.',
             160
         );
     }
 
     return roden_seo_truncate(
-        $title . '. ' . $firm['name'] . ' — over $250 million recovered for injured clients in Georgia & South Carolina.',
+        $title . '. ' . $firm['name'] . ' — over $300 million recovered for injured clients in Georgia & South Carolina.',
         160
     );
 }

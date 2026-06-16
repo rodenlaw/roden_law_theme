@@ -349,7 +349,7 @@ HTML,
             ),
             array(
                 'question' => 'How much is an I-26 truck accident case worth?',
-                'answer'   => 'Truck accident cases typically produce significantly higher settlements and verdicts than car accidents due to injury severity. Cases involving permanent disability, spinal injury, or traumatic brain injury often settle in the six- and seven-figure range. Wrongful death cases may exceed $1 million. Roden Law has recovered over $250 million for clients across all case types.',
+                'answer'   => 'Truck accident cases typically produce significantly higher settlements and verdicts than car accidents due to injury severity. Cases involving permanent disability, spinal injury, or traumatic brain injury often settle in the six- and seven-figure range. Wrongful death cases may exceed $1 million. Roden Law has recovered over $300 million for clients across all case types.',
             ),
         ),
     ),

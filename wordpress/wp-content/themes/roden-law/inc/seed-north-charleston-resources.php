@@ -236,7 +236,7 @@ HTML,
             ),
             array(
                 'question' => 'How much is my North Charleston car accident case worth?',
-                'answer'   => 'Case value depends on the severity of your injuries, medical expenses, lost income, permanence of injury, and impact on daily life. Roden Law has recovered over $250 million for clients. We evaluate every case individually during a free consultation — there is no obligation and no fee unless we win.',
+                'answer'   => 'Case value depends on the severity of your injuries, medical expenses, lost income, permanence of injury, and impact on daily life. Roden Law has recovered over $300 million for clients. We evaluate every case individually during a free consultation — there is no obligation and no fee unless we win.',
             ),
         ),
         'categories' => array( $cat_car_id ),

@@ -108,7 +108,7 @@ Check that `_roden_author_attorney` is set to a valid attorney post ID.
 ### 4e. Firm Stats Freshness
 
 Grep the pillar page content for any of the following stat references and verify they match current values:
-- "$250M+" or "$250 million+" — current: $250M+
+- "$300M+" or "$300 million+" — current: $300M+
 - "500+ reviews" — current: 500+
 - "5,000+ cases" — current: 5,000+
 - "62 years" combined experience — current: 62 years

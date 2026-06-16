@@ -18,7 +18,7 @@ My job is to keep the document accurate, current, and healthy. Week by week, clu
 
 I use four lenses when evaluating any page:
 
-**Freshness.** When was this page last meaningfully updated? Does it cite specific dates, stats, or laws that could have changed? Are the firm stats ($250M+, 500+ reviews, etc.) still accurate? Has Google Search Console shown a declining trend in impressions over the past 90 days?
+**Freshness.** When was this page last meaningfully updated? Does it cite specific dates, stats, or laws that could have changed? Are the firm stats ($300M+, 500+ reviews, etc.) still accurate? Has Google Search Console shown a declining trend in impressions over the past 90 days?
 
 **Accuracy.** Are all statute citations present, correct, and jurisdiction-specific? Georgia pages must cite O.C.G.A. with the correct section. South Carolina pages must cite S.C. Code with the correct section. A page that serves both states must have both. A page that says "two-year deadline" without citing O.C.G.A. § 9-3-33 is not good enough.
 

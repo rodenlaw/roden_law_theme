@@ -101,7 +101,7 @@ $subtypes = array(
 <p>Georgia follows a modified comparative fault rule under <a href="https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-33/" target="_blank" rel="noopener">O.C.G.A. § 51-12-33</a>, meaning you can recover damages as long as you are less than 50% at fault. South Carolina applies a similar modified comparative negligence standard, barring recovery only if you are 51% or more responsible. Insurance companies frequently try to shift blame to the scooter rider — claiming they were riding recklessly or ignoring traffic signals — which is why thorough evidence preservation and skilled legal representation are essential.</p>
 
 <h2>Why Choose Roden Law for Your E-Scooter Collision Case</h2>
-<p>Our team has recovered over $250 million for injured clients across Georgia and South Carolina. We understand the emerging legal landscape surrounding electric scooters, and we bring the same aggressive representation to e-scooter cases that we apply to all motor vehicle accident claims. We work on a contingency fee basis — you pay nothing unless we win your case.</p>
+<p>Our team has recovered over $300 million for injured clients across Georgia and South Carolina. We understand the emerging legal landscape surrounding electric scooters, and we bring the same aggressive representation to e-scooter cases that we apply to all motor vehicle accident claims. We work on a contingency fee basis — you pay nothing unless we win your case.</p>
 HTML,
         'faqs' => array(
             array(

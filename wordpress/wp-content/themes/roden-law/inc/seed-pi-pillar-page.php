@@ -30,7 +30,7 @@ $slug         = 'personal-injury-lawyers';
 $eric_post = get_page_by_path( 'eric-roden', OBJECT, 'attorney' );
 $author_id = $eric_post ? $eric_post->ID : 0;
 
-$hero_intro = 'Personal injury law in Georgia and South Carolina exists to make injured victims whole when another party\'s negligence causes them harm. Roden Law has recovered more than $250 million for personal injury clients across both states, with a 4.9-star average client rating. We work on contingency — no fee unless we win.';
+$hero_intro = 'Personal injury law in Georgia and South Carolina exists to make injured victims whole when another party\'s negligence causes them harm. Roden Law has recovered more than $300 million for personal injury clients across both states, with a 4.9-star average client rating. We work on contingency — no fee unless we win.';
 
 // _roden_why_hire is the ONE meta field the pillar template renders as free-form
 // HTML in the page body. All inline copy + sub-PA links must live here, or they
@@ -76,7 +76,7 @@ $why_hire .= '<p>All Roden Law personal injury cases are handled on a <strong>co
 
 // Minimal post_content as fallback (template ignores it when why_hire is set,
 // but a safety net in case why_hire is ever cleared in admin).
-$content = '<p>Personal injury law in Georgia and South Carolina covers car and truck accidents, slip-and-falls, medical malpractice, defective products, wrongful death, and more. Roden Law has recovered $250M+ for personal injury clients across both states. See the sections below for the negligence framework, damages, comparative-fault rules, statutes of limitations, and FAQs.</p>';
+$content = '<p>Personal injury law in Georgia and South Carolina covers car and truck accidents, slip-and-falls, medical malpractice, defective products, wrongful death, and more. Roden Law has recovered $300M+ for personal injury clients across both states. See the sections below for the negligence framework, damages, comparative-fault rules, statutes of limitations, and FAQs.</p>';
 
 // FAQs — 8 location-agnostic Q&As about PI law in GA + SC.
 $faqs = array(
@@ -134,7 +134,7 @@ $post_args = array(
     'post_title'   => 'Personal Injury Lawyers',
     'post_name'    => $slug,
     'post_content' => $content,
-    'post_excerpt' => 'Personal injury law in Georgia and South Carolina covers car accidents, truck wrecks, slip-and-falls, medical malpractice, defective products, wrongful death, and more. Roden Law has recovered $250M+ for personal injury clients across both states.',
+    'post_excerpt' => 'Personal injury law in Georgia and South Carolina covers car accidents, truck wrecks, slip-and-falls, medical malpractice, defective products, wrongful death, and more. Roden Law has recovered $300M+ for personal injury clients across both states.',
     'post_status'  => 'publish',
     'post_parent'  => 0,
     'post_author'  => 1,

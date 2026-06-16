@@ -56,7 +56,7 @@ if ( $is_state_page ) :
                     Personal Injury Lawyers<br>in <?php echo esc_html($state_full); ?>
                 </h1>
                 <p class="hero-subtitle">
-                    Roden Law serves injury victims across <?php echo esc_html($state_full); ?> from <?php echo count($state_offices); ?> office<?php echo count($state_offices) > 1 ? 's' : ''; ?>. We have recovered $250M+ for our clients. Free case review — no fees unless we win.
+                    Roden Law serves injury victims across <?php echo esc_html($state_full); ?> from <?php echo count($state_offices); ?> office<?php echo count($state_offices) > 1 ? 's' : ''; ?>. We have recovered $300M+ for our clients. Free case review — no fees unless we win.
                 </p>
                 <div class="hero-buttons">
                     <a href="tel:<?php echo esc_attr($firm['phone_e164']); ?>" class="btn btn-primary">📞 Call <?php echo esc_html($firm['phone']); ?></a>

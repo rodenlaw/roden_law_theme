@@ -45,7 +45,7 @@ $firm = roden_firm_data();
                     <h2><?php esc_html_e( 'Our Story', 'roden-law' ); ?></h2>
 
                     <p>
-                        <?php esc_html_e( 'Roden Law is a personal injury law firm serving Georgia and South Carolina from six offices across Savannah, Darien, Charleston, North Charleston, Columbia, and the Myrtle Beach area. The firm has recovered more than $250 million for injured clients and operates exclusively on contingency — clients owe no fees unless we win.', 'roden-law' ); ?>
+                        <?php esc_html_e( 'Roden Law is a personal injury law firm serving Georgia and South Carolina from six offices across Savannah, Darien, Charleston, North Charleston, Columbia, and the Myrtle Beach area. The firm has recovered more than $300 million for injured clients and operates exclusively on contingency — clients owe no fees unless we win.', 'roden-law' ); ?>
                     </p>
 
                     <p>
@@ -120,7 +120,7 @@ $firm = roden_firm_data();
         <div class="site-container">
             <div class="section-header">
                 <h2><?php esc_html_e( 'Our Results Speak for Themselves', 'roden-law' ); ?></h2>
-                <p><?php esc_html_e( 'We have recovered over $250 million for injury victims across Georgia and South Carolina.', 'roden-law' ); ?></p>
+                <p><?php esc_html_e( 'We have recovered over $300 million for injury victims across Georgia and South Carolina.', 'roden-law' ); ?></p>
             </div>
 
             <?php roden_case_results_grid( array( 'count' => 3, 'columns' => 3 ) ); ?>

@@ -1904,7 +1904,7 @@ $in_location  = 'in ' . $city;
                 <div class="why-icon">
                     <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                 </div>
-                <h3>$250M+ in Recoveries</h3>
+                <h3>$300M+ in Recoveries</h3>
                 <p>Our track record speaks for itself. We've recovered hundreds of millions for South Carolina accident victims, including dozens of rear-end collision cases.</p>
             </div>
 

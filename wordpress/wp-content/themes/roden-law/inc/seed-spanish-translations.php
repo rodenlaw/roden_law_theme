@@ -57,10 +57,10 @@ $translations = array(
     // ── Homepage (static front page) ──────────────────────────────
     'homepage' => array(
         'title'   => 'Abogados de Lesiones Personales en Georgia y Carolina del Sur',
-        'excerpt' => 'Roden Law es un bufete de abogados de lesiones personales con oficinas en Savannah, Charleston, North Charleston, Columbia, Myrtle Beach y Darien. Más de $250 millones recuperados. Consulta gratuita.',
+        'excerpt' => 'Roden Law es un bufete de abogados de lesiones personales con oficinas en Savannah, Charleston, North Charleston, Columbia, Myrtle Beach y Darien. Más de $300 millones recuperados. Consulta gratuita.',
         'content' => <<<'HTML'
 <h2>Abogados de Lesiones Personales — Sirviendo Georgia y Carolina del Sur</h2>
-<p>En Roden Law, luchamos por los derechos de las víctimas de lesiones personales en todo Georgia y Carolina del Sur. Con más de $250 millones recuperados para nuestros clientes, nuestro equipo de abogados experimentados está listo para ayudarle a obtener la compensación que merece.</p>
+<p>En Roden Law, luchamos por los derechos de las víctimas de lesiones personales en todo Georgia y Carolina del Sur. Con más de $300 millones recuperados para nuestros clientes, nuestro equipo de abogados experimentados está listo para ayudarle a obtener la compensación que merece.</p>
 <p>No cobramos honorarios a menos que ganemos su caso. Llame hoy para una consulta gratuita: <strong>1-844-RESULTS</strong>.</p>
 <p><strong>6 oficinas</strong> para servirle mejor — Savannah, Charleston, North Charleston, Columbia, Myrtle Beach y Darien.</p>
 HTML,
@@ -119,7 +119,7 @@ HTML,
     'pillars' => array(
         'car-accident-lawyers' => array(
             'title'   => 'Abogados de Accidentes de Auto',
-            'excerpt' => 'Abogados de accidentes de auto en Georgia y Carolina del Sur. Más de $250 millones recuperados. Sin honorarios a menos que ganemos. Consulta gratuita.',
+            'excerpt' => 'Abogados de accidentes de auto en Georgia y Carolina del Sur. Más de $300 millones recuperados. Sin honorarios a menos que ganemos. Consulta gratuita.',
             'content' => <<<'HTML'
 <h2>Abogados de Accidentes de Auto en Georgia y Carolina del Sur</h2>
 <p>Los accidentes de auto son la causa principal de lesiones personales en Georgia y Carolina del Sur. En Roden Law, nuestros abogados de accidentes automovilísticos han recuperado millones de dólares para víctimas de choques causados por conductores negligentes, distraídos o ebrios.</p>

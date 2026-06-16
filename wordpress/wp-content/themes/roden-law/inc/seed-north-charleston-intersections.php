@@ -145,7 +145,7 @@ function roden_nc_intersection_content( $pa_name, $pa_slug ) {
 
 <h2>Why Choose Roden Law in North Charleston?</h2>
 <ul>
-<li><strong>\$250M+ Recovered</strong> for injured clients across Georgia and South Carolina</li>
+<li><strong>\$300M+ Recovered</strong> for injured clients across Georgia and South Carolina</li>
 <li><strong>Local Office in Park Circle</strong> — 2703 Spruill Ave, North Charleston, SC 29405</li>
 <li><strong>No Upfront Costs</strong> — contingency fee basis; you pay nothing unless we win</li>
 <li><strong>Experienced Trial Attorneys</strong> — our team practices in Charleston County Circuit Court and Berkeley County Circuit Court</li>

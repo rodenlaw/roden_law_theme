@@ -43,7 +43,7 @@ This document lists every tool this agent is authorized to use, how to use it, a
 | `§ 9-3-33` | Verify the exact Georgia personal injury SOL section |
 | `§ 15-3-530` | Verify the exact South Carolina personal injury SOL section |
 | `§ 51-12-33` | Verify Georgia comparative fault section |
-| `\$250M` or `250 million` | Find firm stat references (recovery amount) |
+| `\$300M` or `300 million` | Find firm stat references (recovery amount) |
 | `500\+.*review` or `reviews` near count | Find review count stat references |
 | `5,000\+.*case` | Find case count stat references |
 | `62 years` | Find experience stat references |
