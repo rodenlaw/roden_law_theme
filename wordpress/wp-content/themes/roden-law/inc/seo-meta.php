@@ -122,18 +122,8 @@ function roden_output_canonical() {
     }
 
     // Skip noindex landing pages.
-    $noindex_templates = array(
-        'templates/template-landing-page.php',
-        'templates/template-landing-truck.php',
-        'templates/template-landing-truck-columbia.php',
-        'templates/template-landing-charleston.php',
-        'templates/template-landing-sc-statewide.php',
-        'templates/template-landing-ga-car-accident.php',
-    );
-    foreach ( $noindex_templates as $tpl ) {
-        if ( is_page_template( $tpl ) ) {
-            return;
-        }
+    if ( roden_is_noindex_landing() ) {
+        return;
     }
 
     $url = roden_seo_get_canonical();
@@ -207,6 +197,40 @@ function roden_sitemap_canonical_entry( $entry, $post, $post_type ) {
     }
 
     return $entry;
+}
+
+add_filter( 'wp_sitemaps_posts_query_args', 'roden_sitemap_exclude_noindex_pages', 10, 2 );
+/**
+ * Exclude noindex PPC landing pages from the XML sitemap.
+ *
+ * The landing templates (see roden_noindex_page_templates) hardcode
+ * <meta robots noindex>, yet WP's core sitemap still lists the underlying
+ * page (e.g. /georgia-car-accident-lawyer/). A noindex URL in the sitemap is
+ * a conflicting signal, so drop these pages — keeping the meta_query
+ * permissive for default-template pages (no _wp_page_template meta).
+ *
+ * @param array  $args      WP_Query args for the sitemap provider.
+ * @param string $post_type The post type being queried.
+ * @return array
+ */
+function roden_sitemap_exclude_noindex_pages( $args, $post_type ) {
+    if ( 'page' !== $post_type || ! function_exists( 'roden_noindex_page_templates' ) ) {
+        return $args;
+    }
+
+    $clause = array(
+        'relation' => 'OR',
+        array( 'key' => '_wp_page_template', 'compare' => 'NOT EXISTS' ),
+        array( 'key' => '_wp_page_template', 'value' => roden_noindex_page_templates(), 'compare' => 'NOT IN' ),
+    );
+
+    if ( ! empty( $args['meta_query'] ) ) {
+        $args['meta_query'] = array( 'relation' => 'AND', $args['meta_query'], $clause );
+    } else {
+        $args['meta_query'] = $clause;
+    }
+
+    return $args;
 }
 
 /* ==========================================================================

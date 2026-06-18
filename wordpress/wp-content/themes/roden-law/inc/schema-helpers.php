@@ -125,6 +125,39 @@ function roden_get_canonical_url( $post_or_id = null ) {
     return get_permalink( $post );
 }
 
+/**
+ * Page templates that are intentionally noindex (PPC / Google Ads landing
+ * pages). Centralized so canonical output, breadcrumb schema, and sitemap
+ * exclusion stay in sync — these pages hardcode <meta robots noindex> and
+ * must not emit a canonical, carry BreadcrumbList, or appear in the sitemap.
+ *
+ * @return string[] Template paths relative to the theme root.
+ */
+function roden_noindex_page_templates() {
+    return array(
+        'templates/template-landing-page.php',
+        'templates/template-landing-truck.php',
+        'templates/template-landing-truck-columbia.php',
+        'templates/template-landing-charleston.php',
+        'templates/template-landing-sc-statewide.php',
+        'templates/template-landing-ga-car-accident.php',
+    );
+}
+
+/**
+ * Whether the current request renders a noindex landing page template.
+ *
+ * @return bool
+ */
+function roden_is_noindex_landing() {
+    foreach ( roden_noindex_page_templates() as $tpl ) {
+        if ( is_page_template( $tpl ) ) {
+            return true;
+        }
+    }
+    return false;
+}
+
 /* ==========================================================================
    SCHEMA DISPATCHER (wp_head hook)
    ========================================================================== */
@@ -241,12 +274,8 @@ function roden_output_schema() {
         roden_schema_sc_statewide( $firm );
     }
 
-    // BreadcrumbList on all pages except front page and noindex landing pages
-    $is_landing = is_page_template( 'templates/template-landing-page.php' )
-               || is_page_template( 'templates/template-landing-truck.php' )
-               || is_page_template( 'templates/template-landing-truck-columbia.php' )
-               || is_page_template( 'templates/template-landing-sc-statewide.php' );
-    if ( ! is_front_page() && ! $is_landing ) {
+    // BreadcrumbList on all pages except front page and noindex landing pages.
+    if ( ! is_front_page() && ! roden_is_noindex_landing() ) {
         roden_schema_breadcrumbs();
     }
 }
