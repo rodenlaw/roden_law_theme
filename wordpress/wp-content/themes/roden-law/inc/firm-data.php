@@ -125,8 +125,8 @@ EOT
                 'phone_raw'    => '+18437908999',
                 'gbp_url'      => 'https://share.google/GfVAAnKPpCR6mdR8C',
                 'yelp_url'     => '',
-                'latitude'     => 32.7876,
-                'longitude'    => -79.9353,
+                'latitude'     => 32.777514,
+                'longitude'    => -79.932945,
                 'timezone'     => 'America/New_York',
                 'court'        => 'Charleston County Circuit Court',
                 'court_address'=> '100 Broad St., Charleston, SC 29401',
@@ -449,9 +449,8 @@ EOT
         $office['lat']         = $office['latitude'];
         $office['lng']         = $office['longitude'];
         // Directions destination uses the full mailing address (not raw
-        // lat/lng) so Google geocodes the actual office. The stored coords are
-        // imprecise for some offices (e.g. Charleston is ~1km off the real
-        // pin), which dropped "Get Directions" on a random spot.
+        // lat/lng) so Google geocodes the actual office and shows the business
+        // pin. This is robust even if a stored coordinate drifts.
         $office['map_url']     = 'https://www.google.com/maps/dir/?api=1&destination='
                                  . rawurlencode(
                                      $office['street'] . ', ' . $office['city'] . ', '
