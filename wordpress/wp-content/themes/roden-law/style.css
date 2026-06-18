@@ -408,8 +408,17 @@ input[type="submit"] {
     line-height: 1.4;
 }
 
-.btn:active {
+.btn:active,
+button[type="submit"]:active,
+input[type="submit"]:active {
     transform: translateY(1px);
+}
+
+.btn:focus-visible,
+button[type="submit"]:focus-visible,
+input[type="submit"]:focus-visible {
+    outline: 2px solid var(--color-orange);
+    outline-offset: 2px;
 }
 
 .btn-primary {
@@ -538,7 +547,7 @@ input[type="submit"] {
    ========================================================================== */
 
 .badge-bar {
-    background: var(--color-light);
+    background: var(--color-navy);
     border-bottom: 1px solid var(--color-border);
     padding: var(--space-lg) 0;
 }
@@ -561,7 +570,7 @@ input[type="submit"] {
     width: auto;
     object-fit: contain;
     filter: brightness(0) invert(1);
-    opacity: 0.85;
+    opacity: 1;
 }
 
 .badge-item img:hover {
@@ -738,6 +747,24 @@ input[type="submit"] {
     color: #F5A623;
     font-size: 1.1rem;
     flex-shrink: 0;
+}
+
+/* Homepage testimonials — 3-up native block (replaces empty 3rd-party widget) */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+    margin-top: var(--space-xl);
+}
+
+.testimonials-more-link {
+    font-weight: 600;
+    color: var(--color-navy);
+}
+
+.testimonials-more-link:hover,
+.testimonials-more-link:focus {
+    color: var(--color-orange-text);
 }
 
 /* ==========================================================================
@@ -1190,9 +1217,9 @@ input[type="submit"] {
 }
 
 .btn-outline-white {
-    background: transparent;
+    background: rgba(255, 255, 255, 0.06);
     color: var(--color-white);
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.6);
 }
 
 .btn-outline-white:hover,
@@ -1323,6 +1350,17 @@ input[type="submit"] {
     grid-template-columns: repeat(3, 1fr);
 }
 
+/* Homepage: 6 practice-area tiles in a balanced 3x2 (no orphan card). */
+body.home .practice-area-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Shared centered "see all" link below a section grid. */
+.section-cta {
+    margin-top: var(--space-xl);
+    text-align: center;
+}
+
 .practice-area-grid .practice-area-card {
     display: flex;
     align-items: center;
@@ -1354,6 +1392,12 @@ input[type="submit"] {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: var(--space-md);
+}
+
+/* Homepage: 6 offices in a balanced 3x2 (no orphan card). Scoped so the
+   location-page reuse of .locations-grid is unaffected. */
+body.home .locations-grid {
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .location-card {
@@ -1781,7 +1825,7 @@ input[type="submit"] {
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto var(--space-md);
-    border: 3px solid var(--color-border);
+    border: 3px solid var(--color-navy);
 }
 
 .attorney-spotlight-photo img {
@@ -2548,6 +2592,13 @@ input[type="submit"] {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    /* Homepage 3x2 grids drop to 2 cols on tablet (body.home outranks the
+       bare-class rules above, so it needs its own breakpoint). */
+    body.home .practice-area-grid,
+    body.home .locations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .results-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -2619,6 +2670,16 @@ input[type="submit"] {
     }
 
     .locations-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Homepage 3x2 grids stack on mobile (body.home outranks bare-class). */
+    body.home .practice-area-grid,
+    body.home .locations-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials-grid {
         grid-template-columns: 1fr;
     }
 

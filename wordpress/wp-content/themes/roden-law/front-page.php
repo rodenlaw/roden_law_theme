@@ -32,6 +32,8 @@ $practice_areas = array(
     array( 'name' => 'Truck Accident Lawyers',       'slug' => 'truck-accident-lawyers',       'scenario' => 'Hit by a commercial truck?' ),
     array( 'name' => 'Motorcycle Accident Lawyers',  'slug' => 'motorcycle-accident-lawyers',  'scenario' => 'Motorcycle crash injuries?' ),
     array( 'name' => 'Pedestrian Accident Lawyers',  'slug' => 'pedestrian-accident-lawyers',  'scenario' => 'Struck as a pedestrian?' ),
+    array( 'name' => 'Bicycle Accident Lawyers',     'slug' => 'bicycle-accident-lawyers',     'scenario' => 'Hurt while cycling?' ),
+    array( 'name' => 'Boating Accident Lawyers',     'slug' => 'boating-accident-lawyers',     'scenario' => 'Injured on the water?' ),
 );
 ?>
 
@@ -182,10 +184,11 @@ $practice_areas = array(
                         <span class="card-arrow" aria-hidden="true">&rarr;</span>
                     </a>
                 <?php endforeach; ?>
-                <a href="<?php echo esc_url( home_url( '/practice-areas/' ) ); ?>"
-                   class="card practice-area-card">
-                    <h3><?php esc_html_e( 'Other Personal Injury Types', 'roden-law' ); ?></h3>
-                    <span class="card-arrow" aria-hidden="true">&rarr;</span>
+            </div>
+
+            <div class="section-cta">
+                <a href="<?php echo esc_url( home_url( '/practice-areas/' ) ); ?>" class="btn btn-outline-navy">
+                    <?php esc_html_e( 'View All Practice Areas', 'roden-law' ); ?> &rarr;
                 </a>
             </div>
         </div>
@@ -321,7 +324,44 @@ $practice_areas = array(
                 <p><?php esc_html_e( 'Our clients trust us to fight for maximum compensation.', 'roden-law' ); ?></p>
             </div>
 
-            <?php echo do_shortcode( '[trustindex data-widget-id="fe3ce9843b72815ccc26abe2c19"]' ); ?>
+            <?php
+            $testimonial_query = new WP_Query( array(
+                'post_type'      => 'testimonial',
+                'posts_per_page' => 3,
+                'orderby'        => 'date',
+                'order'          => 'DESC',
+            ) );
+
+            if ( $testimonial_query->have_posts() ) : ?>
+                <div class="testimonials-grid">
+                    <?php while ( $testimonial_query->have_posts() ) : $testimonial_query->the_post();
+                        $client   = get_the_title();
+                        $location = get_post_meta( get_the_ID(), '_roden_testimonial_location', true );
+                        $quote    = wp_trim_words( wp_strip_all_tags( get_the_content() ), 45 );
+                    ?>
+                        <div class="card testimonial-card">
+                            <p class="testimonial-text"><?php echo esc_html( $quote ); ?></p>
+                            <div class="testimonial-footer">
+                                <p class="author"><?php
+                                    echo esc_html( $client );
+                                    if ( $location ) {
+                                        echo ' &mdash; ' . esc_html( $location );
+                                    }
+                                ?></p>
+                                <span class="stars" aria-label="<?php esc_attr_e( '5 star rating', 'roden-law' ); ?>">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            </div>
+                        </div>
+                    <?php endwhile; ?>
+                </div>
+            <?php endif;
+            wp_reset_postdata();
+            ?>
+
+            <div class="section-cta">
+                <a href="<?php echo esc_url( home_url( '/testimonials/' ) ); ?>" class="testimonials-more-link">
+                    <?php esc_html_e( 'Read More Client Reviews', 'roden-law' ); ?> &rarr;
+                </a>
+            </div>
         </div>
     </section>
 
@@ -363,7 +403,7 @@ $practice_areas = array(
                 <?php endwhile; ?>
             </div>
 
-            <div class="text-center" style="margin-top: var(--space-xl);">
+            <div class="section-cta">
                 <a href="<?php echo esc_url( home_url( '/attorneys/' ) ); ?>" class="btn btn-outline-navy">
                     <?php esc_html_e( 'Meet the Full Team', 'roden-law' ); ?> &rarr;
                 </a>
@@ -382,10 +422,10 @@ $practice_areas = array(
     <section class="section bg-navy cta-bottom">
         <div class="site-container text-center">
             <h2 class="text-white"><?php esc_html_e( 'Injured? Get Your Free Case Review Today.', 'roden-law' ); ?></h2>
-            <p class="text-white" style="opacity:0.85; max-width:600px; margin:0 auto var(--space-xl);">
+            <p>
                 <?php esc_html_e( 'No fees unless we win. Available 24/7 across Georgia and South Carolina.', 'roden-law' ); ?>
             </p>
-            <div class="hero-ctas" style="justify-content:center;">
+            <div class="hero-ctas">
                 <a href="tel:<?php echo esc_attr( $firm['phone_e164'] ); ?>"
                    class="btn btn-primary btn-lg">
                     <?php
