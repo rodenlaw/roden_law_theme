@@ -65,6 +65,46 @@ function roden_fix_dead_nav_links( $items, $args ) {
 }
 
 /* ------------------------------------------------------------------
+   301: duplicate CPT path → canonical top-level URL.
+
+   Child practice_area posts (intersection + sub-type) resolve at BOTH
+   the canonical rewrite path /{pillar}/{child}/ AND WordPress's native
+   hierarchical CPT path /practice-areas/{pillar}/{child}/. The latter is
+   a duplicate (served 200, canonical-tagged to the top-level). 301 it to
+   the canonical so the duplicate stops serving 200 for external/legacy
+   hits. Internal links are already fixed at the source by the
+   post_type_link filter (roden_pa_permalink). Pillars are untouched.
+   ------------------------------------------------------------------ */
+
+add_action( 'template_redirect', 'roden_redirect_duplicate_pa_path', 1 );
+
+function roden_redirect_duplicate_pa_path() {
+    if ( ! function_exists( 'roden_is_pa_singular' ) || ! roden_is_pa_singular() ) {
+        return;
+    }
+
+    $post = get_post();
+    if ( ! $post || ! $post->post_parent ) {
+        return; // Pillars (no parent) keep /practice-areas/{slug}/.
+    }
+
+    $canonical = roden_get_canonical_url( $post );
+    if ( ! $canonical ) {
+        return;
+    }
+
+    // Compare path-only to avoid host/query noise and redirect loops.
+    $canonical_path = trailingslashit( (string) wp_parse_url( $canonical, PHP_URL_PATH ) );
+    $request_path   = trailingslashit( strtok( $_SERVER['REQUEST_URI'], '?' ) );
+
+    if ( $request_path !== $canonical_path ) {
+        $qs     = ( isset( $_SERVER['QUERY_STRING'] ) && '' !== $_SERVER['QUERY_STRING'] ) ? '?' . $_SERVER['QUERY_STRING'] : '';
+        wp_safe_redirect( $canonical . $qs, 301 );
+        exit;
+    }
+}
+
+/* ------------------------------------------------------------------
    301 Redirects — old URLs → new URLs
    ------------------------------------------------------------------ */
 

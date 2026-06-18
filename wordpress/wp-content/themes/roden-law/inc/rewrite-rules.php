@@ -45,6 +45,42 @@ function roden_rewrite_rules() {
 }
 
 /* ==========================================================================
+   CANONICAL PERMALINKS FOR CHILD PRACTICE AREAS
+   ========================================================================== */
+
+add_filter( 'post_type_link', 'roden_pa_permalink', 10, 2 );
+
+/**
+ * Force get_permalink() to return the canonical top-level URL for child
+ * practice_area posts (intersection + sub-type).
+ *
+ * Without this, WordPress's hierarchical CPT permalink resolves to the
+ * duplicate path /practice-areas/{pillar}/{child}/, so every internal link
+ * built from get_permalink() (nav, sub-type grids, sibling lists, breadcrumb
+ * parent crumb) points at the non-canonical duplicate — contradicting the
+ * canonical tag and feeding the duplicate to crawlers. Routing the permalink
+ * through roden_get_canonical_url() makes internal links agree with the
+ * canonical: /{pillar}/{child}/.
+ *
+ * Pillars (no parent) and other post types pass through unchanged.
+ *
+ * @param string  $url  The post's permalink.
+ * @param WP_Post $post The post in question.
+ * @return string Canonical permalink.
+ */
+function roden_pa_permalink( $url, $post ) {
+    if (
+        $post instanceof WP_Post
+        && in_array( $post->post_type, array( 'practice_area', 'practice-area' ), true )
+        && $post->post_parent
+        && function_exists( 'roden_get_canonical_url' )
+    ) {
+        return roden_get_canonical_url( $post );
+    }
+    return $url;
+}
+
+/* ==========================================================================
    FLUSH REWRITE RULES ON THEME ACTIVATION
    ========================================================================== */
 
