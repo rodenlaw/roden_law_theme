@@ -713,6 +713,20 @@ h1, h2, h3, h4, h5, h6 {
 .nap-hours { font-size: 11px; color: var(--text-light); margin-top: 4px; }
 .nap-actions { margin-top: 14px; display: flex; gap: 10px; }
 
+/* CTA buttons in the NAP / map cards: equal height + same alignment.
+   The legacy `.hero .btn-primary { margin-top }` rule (style.css) leaks onto
+   "Call Now" inside these cards, shrinking it in the align-items:stretch row
+   while the outlined "Get Directions" stays full height. Reset the margin and
+   pin both to equal width so the pair is balanced. Loaded after style.css, so
+   this wins the cascade tie with `.hero .btn-primary`. */
+.nap-actions .btn,
+.map-nap-actions .btn {
+    margin: 0;
+    flex: 1 1 0;
+    min-height: 48px;
+    white-space: nowrap;
+}
+
 /* Map embed */
 .map-embed {
     border-radius: var(--radius-lg); overflow: hidden;

@@ -448,8 +448,15 @@ EOT
         $office['phone_e164']  = $office['phone_raw'];
         $office['lat']         = $office['latitude'];
         $office['lng']         = $office['longitude'];
+        // Directions destination uses the full mailing address (not raw
+        // lat/lng) so Google geocodes the actual office. The stored coords are
+        // imprecise for some offices (e.g. Charleston is ~1km off the real
+        // pin), which dropped "Get Directions" on a random spot.
         $office['map_url']     = 'https://www.google.com/maps/dir/?api=1&destination='
-                                 . $office['latitude'] . ',' . $office['longitude'];
+                                 . rawurlencode(
+                                     $office['street'] . ', ' . $office['city'] . ', '
+                                     . $office['state'] . ' ' . $office['zip']
+                                 );
 
         // Jurisdiction-derived fields
         $state_key = $office['state']; // 'GA' or 'SC'
