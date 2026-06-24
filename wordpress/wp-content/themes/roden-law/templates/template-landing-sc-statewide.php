@@ -261,6 +261,7 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
             --gold: #e8a830;
             --gold-hover: #d49520;
             --gold-light: #fdf4e0;
+            --gold-text: #8a6300; /* AA-compliant gold (~5.4:1 on white) for small text on light backgrounds */
             --teal-accent: #2a8a9a;
             --white: #ffffff;
             --light-gray: #f7f8fa;
@@ -980,7 +981,7 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
             font-size: 13px;
             letter-spacing: 2px;
             text-transform: uppercase;
-            color: var(--gold);
+            color: var(--gold-text);
             margin-bottom: 8px;
         }
         .section-title {
@@ -1163,7 +1164,15 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 48px;
-            align-items: center;
+            align-items: start;
+        }
+        /* Keep the intro column top-aligned and sticky so it earns its space
+           instead of leaving a tall void beside a long checklist / FAQ list. */
+        .checklist-layout > div:first-child,
+        .faq-layout > div:first-child {
+            position: sticky;
+            top: 90px;
+            align-self: start;
         }
         .checklist-items {
             list-style: none;
@@ -1664,6 +1673,8 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
             .faq-layout { grid-template-columns: 1fr; gap: 32px; }
             .sc-law-grid { grid-template-columns: 1fr; }
             .checklist-layout { grid-template-columns: 1fr; gap: 32px; }
+            .checklist-layout > div:first-child,
+            .faq-layout > div:first-child { position: static; top: auto; }
             .trust-badges-inner { gap: 24px; }
         }
 
@@ -1767,7 +1778,7 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
                 </a>
             </div>
             <div class="hero-call-sub">Available 24/7 &mdash; Free Consultation</div>
-            <p class="hero-experience">Serving South Carolina since <span>2013</span> &middot; <?php echo esc_html( $stats['recovered'] ); ?>+ recovered</p>
+            <p class="hero-experience">Serving South Carolina since <span>2013</span> &middot; <?php echo esc_html( $stats['recovered'] ); ?> recovered</p>
 
             <!-- Attorney Photo Strip -->
             <div class="attorney-strip">
@@ -1868,7 +1879,7 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
                     </div>
                 </div>
                 <label class="form-consent" style="display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;cursor:pointer;">
-                    <input type="checkbox" name="consent" value="1" checked required style="width:18px;height:18px;min-width:18px;margin-top:2px;accent-color:#f5a623;cursor:pointer;">
+                    <input type="checkbox" name="consent" value="1" required style="width:18px;height:18px;min-width:18px;margin-top:2px;accent-color:#f5a623;cursor:pointer;">
                     <span style="font-size:12px;color:#64748b;line-height:1.5;">I hereby expressly consent to receive automated communications including calls, texts, emails, and/or prerecorded messages. By submitting this form, you agree to our <a href="<?php echo esc_url( home_url( '/terms-privacy-policy/' ) ); ?>" target="_blank" rel="noopener noreferrer" style="color:#f5a623;text-decoration:underline;">Terms &amp; Privacy Policy</a>.</span>
                 </label>
                 <button type="submit" class="form-submit">Get My Free Case Review &rarr;</button>
@@ -1929,7 +1940,7 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
             <div class="no-fee-icon">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="2.5"><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
             </div>
-            <?php echo esc_html( $stats['recovered'] ); ?>+ Recovered
+            <?php echo esc_html( $stats['recovered'] ); ?> Recovered
         </div>
         <span class="no-fee-sep">|</span>
         <div class="no-fee-item">
@@ -2224,50 +2235,46 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
         <p class="section-sub" style="text-align:center; margin: 0 auto 48px;">Hear from real South Carolina families we've helped after <?php echo esc_html( strtolower( $type_plural ) ); ?>.</p>
 
         <?php
-        // Try Trustindex widget (active on production). If plugin isn't installed,
-        // do_shortcode returns the raw shortcode string — fall back to hardcoded cards.
-        $ti_shortcode = '[trustindex data-widget-id="fe3ce9843b72815ccc26abe2c19"]';
-        $ti_output    = do_shortcode( $ti_shortcode );
-        if ( $ti_output !== $ti_shortcode ) :
-            echo $ti_output;
-        else :
+        // Real, verbatim 5-star Google reviews (synced from the firm's Google Business
+        // profiles via PostPlanify, June 2026). Rendered statically so social proof
+        // ALWAYS appears — the previous Trustindex JS widget could render an empty
+        // section if the script was slow, blocked, or had no reviews configured.
         ?>
         <div class="testimonial-grid">
             <div class="testimonial-card">
                 <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <p class="testimonial-text">&ldquo;After my car accident on I-26 near Charleston, I didn't know what to do. Roden Law took over everything &mdash; dealt with the insurance company, got my medical bills covered, and won me a settlement I never expected. They truly care about their clients.&rdquo;</p>
+                <p class="testimonial-text">&ldquo;Roden Law helped me after my car accident in North Charleston and got me a great settlement. Graeham Gillin went above and beyond to make sure I received maximum compensation. He truly is the best there is and I cannot recommend him enough!&rdquo;</p>
                 <div class="testimonial-author">
-                    <div class="testimonial-avatar">D</div>
+                    <div class="testimonial-avatar">G</div>
                     <div>
-                        <div class="testimonial-name">David M.</div>
+                        <div class="testimonial-name">Grace G.</div>
+                        <div class="testimonial-location">North Charleston, SC</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="testimonial-text">&ldquo;I couldn't recommend Roden Law enough! They helped me navigate my personal injury case here in Charleston with ease. The team was efficient, communicative, and did a fantastic job securing my settlement. Truly grateful for their hard work!&rdquo;</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">L</div>
+                    <div>
+                        <div class="testimonial-name">Lauren S.</div>
                         <div class="testimonial-location">Charleston, SC</div>
                     </div>
                 </div>
             </div>
             <div class="testimonial-card">
                 <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <p class="testimonial-text">&ldquo;I was rear-ended by a distracted driver on I-20 and was overwhelmed by the process. From the very first call, Roden Law made me feel like a priority. They answered every question, kept me updated, and got me a great result. Highly recommend.&rdquo;</p>
+                <p class="testimonial-text">&ldquo;I worked with this law firm after I was in a car accident, and my paralegal was absolutely amazing &mdash; so kind, professional, and always made sure I understood everything going on. They went above and beyond to make the whole process smooth and stress-free. I can't recommend them enough.&rdquo;</p>
                 <div class="testimonial-author">
-                    <div class="testimonial-avatar">A</div>
+                    <div class="testimonial-avatar">J</div>
                     <div>
-                        <div class="testimonial-name">Ashley W.</div>
-                        <div class="testimonial-location">Columbia, SC</div>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <p class="testimonial-text">&ldquo;The insurance company offered me next to nothing after a serious wreck on Highway 17. Roden Law fought for me and got a settlement that actually covered my medical bills and lost wages. I couldn't have done it without them.&rdquo;</p>
-                <div class="testimonial-author">
-                    <div class="testimonial-avatar">R</div>
-                    <div>
-                        <div class="testimonial-name">Robert L.</div>
+                        <div class="testimonial-name">Jayla H.</div>
                         <div class="testimonial-location">Myrtle Beach, SC</div>
                     </div>
                 </div>
             </div>
         </div>
-        <?php endif; ?>
     </div>
 </section>
 
