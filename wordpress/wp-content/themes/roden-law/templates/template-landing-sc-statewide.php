@@ -1310,6 +1310,9 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
             border: 1px solid #edf2f7;
             position: relative;
         }
+        /* Suppress the global theme's decorative "" quote glyph (style.css
+           .testimonial-card::before) — it overlaps the star rating on this LP. */
+        .testimonials-section .testimonial-card::before { content: none; }
         .testimonial-stars {
             color: var(--gold);
             font-size: 18px;
@@ -1904,6 +1907,57 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
     </div>
 </section>
 
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials-section">
+    <div class="section-inner">
+        <div class="section-eyebrow" style="text-align:center;">Client Stories</div>
+        <h2 class="section-title" style="text-align:center;">What Our South Carolina Clients Say</h2>
+        <p class="section-sub" style="text-align:center; margin: 0 auto 48px;">Hear from real South Carolina families we've helped after <?php echo esc_html( strtolower( $type_plural ) ); ?>.</p>
+
+        <?php
+        // Real, verbatim 5-star Google reviews (synced from the firm's Google Business
+        // profiles via PostPlanify, June 2026). Rendered statically so social proof
+        // ALWAYS appears — the previous Trustindex JS widget could render an empty
+        // section if the script was slow, blocked, or had no reviews configured.
+        ?>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="testimonial-text">&ldquo;Roden Law helped me after my car accident in North Charleston and got me a great settlement. Graeham Gillin went above and beyond to make sure I received maximum compensation. He truly is the best there is and I cannot recommend him enough!&rdquo;</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">G</div>
+                    <div>
+                        <div class="testimonial-name">Grace G.</div>
+                        <div class="testimonial-location">North Charleston, SC</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="testimonial-text">&ldquo;I couldn't recommend Roden Law enough! They helped me navigate my personal injury case here in Charleston with ease. The team was efficient, communicative, and did a fantastic job securing my settlement. Truly grateful for their hard work!&rdquo;</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">L</div>
+                    <div>
+                        <div class="testimonial-name">Lauren S.</div>
+                        <div class="testimonial-location">Charleston, SC</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="testimonial-text">&ldquo;I worked with this law firm after I was in a car accident, and my paralegal was absolutely amazing &mdash; so kind, professional, and always made sure I understood everything going on. They went above and beyond to make the whole process smooth and stress-free. I can't recommend them enough.&rdquo;</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">J</div>
+                    <div>
+                        <div class="testimonial-name">Jayla H.</div>
+                        <div class="testimonial-location">Myrtle Beach, SC</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- ===== SC LAW CALLOUT ===== -->
 <section class="sc-law-section">
     <div class="section-inner">
@@ -2227,56 +2281,6 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
     </div>
 </section>
 
-<!-- ===== TESTIMONIALS ===== -->
-<section class="testimonials-section">
-    <div class="section-inner">
-        <div class="section-eyebrow" style="text-align:center;">Client Stories</div>
-        <h2 class="section-title" style="text-align:center;">What Our South Carolina Clients Say</h2>
-        <p class="section-sub" style="text-align:center; margin: 0 auto 48px;">Hear from real South Carolina families we've helped after <?php echo esc_html( strtolower( $type_plural ) ); ?>.</p>
-
-        <?php
-        // Real, verbatim 5-star Google reviews (synced from the firm's Google Business
-        // profiles via PostPlanify, June 2026). Rendered statically so social proof
-        // ALWAYS appears — the previous Trustindex JS widget could render an empty
-        // section if the script was slow, blocked, or had no reviews configured.
-        ?>
-        <div class="testimonial-grid">
-            <div class="testimonial-card">
-                <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <p class="testimonial-text">&ldquo;Roden Law helped me after my car accident in North Charleston and got me a great settlement. Graeham Gillin went above and beyond to make sure I received maximum compensation. He truly is the best there is and I cannot recommend him enough!&rdquo;</p>
-                <div class="testimonial-author">
-                    <div class="testimonial-avatar">G</div>
-                    <div>
-                        <div class="testimonial-name">Grace G.</div>
-                        <div class="testimonial-location">North Charleston, SC</div>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <p class="testimonial-text">&ldquo;I couldn't recommend Roden Law enough! They helped me navigate my personal injury case here in Charleston with ease. The team was efficient, communicative, and did a fantastic job securing my settlement. Truly grateful for their hard work!&rdquo;</p>
-                <div class="testimonial-author">
-                    <div class="testimonial-avatar">L</div>
-                    <div>
-                        <div class="testimonial-name">Lauren S.</div>
-                        <div class="testimonial-location">Charleston, SC</div>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <p class="testimonial-text">&ldquo;I worked with this law firm after I was in a car accident, and my paralegal was absolutely amazing &mdash; so kind, professional, and always made sure I understood everything going on. They went above and beyond to make the whole process smooth and stress-free. I can't recommend them enough.&rdquo;</p>
-                <div class="testimonial-author">
-                    <div class="testimonial-avatar">J</div>
-                    <div>
-                        <div class="testimonial-name">Jayla H.</div>
-                        <div class="testimonial-location">Myrtle Beach, SC</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <!-- ===== FAQ ===== -->
 <section class="faq-section">
