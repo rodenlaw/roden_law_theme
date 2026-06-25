@@ -1337,7 +1337,7 @@ $in_location  = 'in ' . $city;
                 <button type="submit" class="form-submit">Get My Free Case Review &rarr;</button>
                 <p style="text-align:center;font-size:12px;color:var(--text-muted);margin-top:8px;margin-bottom:0;">
                     <svg style="display:inline-block;vertical-align:middle;margin-right:4px;" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#2ecc71" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-                    Average response time: under 15 minutes
+                    We answer 24/7 &mdash; a real person, not a call center
                 </p>
                 <p class="form-error" role="alert" aria-live="assertive" style="display:none;color:#ff6b6b;font-size:13px;text-align:center;margin-top:8px;"></p>
             </form>
