@@ -1354,6 +1354,12 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
             font-size: 12px;
             color: var(--text-muted);
         }
+        .testimonial-date {
+            font-size: 11px;
+            color: var(--text-muted);
+            opacity: 0.75;
+            margin-top: 2px;
+        }
 
         /* ===== FAQ ===== */
         .faq-section {
@@ -1929,6 +1935,7 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
                     <div>
                         <div class="testimonial-name">Grace G.</div>
                         <div class="testimonial-location">North Charleston, SC</div>
+                        <div class="testimonial-date">April 2026</div>
                     </div>
                 </div>
             </div>
@@ -1940,6 +1947,7 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
                     <div>
                         <div class="testimonial-name">Lauren S.</div>
                         <div class="testimonial-location">Charleston, SC</div>
+                        <div class="testimonial-date">April 2026</div>
                     </div>
                 </div>
             </div>
@@ -1951,6 +1959,7 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
                     <div>
                         <div class="testimonial-name">Jayla H.</div>
                         <div class="testimonial-location">Myrtle Beach, SC</div>
+                        <div class="testimonial-date">November 2025</div>
                     </div>
                 </div>
             </div>
