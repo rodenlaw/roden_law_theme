@@ -1983,6 +1983,42 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
                     </div>
                 </div>
             </div>
+            <div class="testimonial-card">
+                <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="testimonial-text">&ldquo;Huge thank you to Roden Law! They made a difficult process feel easy with great communication and efficiency. If you're looking for a personal injury team in the Charleston area that actually cares about your recovery, this is it. Highly recommended!&rdquo;</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">M</div>
+                    <div>
+                        <div class="testimonial-name">Mark S.</div>
+                        <div class="testimonial-location">Charleston, SC</div>
+                        <div class="testimonial-date">April 2026</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="testimonial-text">&ldquo;Roden Law's North Charleston office is conveniently located on Spruill Avenue. The staff is friendly and helpful. I'd definitely recommend them for anyone who needs help with a car accident &mdash; their attention to care is unmatched.&rdquo;</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">Z</div>
+                    <div>
+                        <div class="testimonial-name">Zaria L.</div>
+                        <div class="testimonial-location">North Charleston, SC</div>
+                        <div class="testimonial-date">June 2026</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="testimonial-text">&ldquo;I had such a great experience with Roden Law after a golf cart accident. The entire team was professional, attentive, and made everything so easy to understand. The paralegal I worked with was amazing &mdash; super responsive, kind, and really went above and beyond to help me through the process. Highly recommend them if you ever need a personal injury attorney in Myrtle Beach!&rdquo;</p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">C</div>
+                    <div>
+                        <div class="testimonial-name">Christianna V.</div>
+                        <div class="testimonial-location">Myrtle Beach, SC</div>
+                        <div class="testimonial-date">November 2025</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
