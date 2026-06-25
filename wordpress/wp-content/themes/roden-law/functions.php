@@ -572,6 +572,16 @@ function roden_sidebar_form_handler() {
 
     $first_name = sanitize_text_field( $_POST['first_name'] ?? '' );
     $last_name  = sanitize_text_field( $_POST['last_name'] ?? '' );
+
+    // Some landing pages collect a single "Full Name" field instead of first/last.
+    // Split it into first/last so the GF entry mapping below still works.
+    $full_name = sanitize_text_field( $_POST['full_name'] ?? '' );
+    if ( $full_name && ! $first_name && ! $last_name ) {
+        $name_parts = preg_split( '/\s+/', trim( $full_name ), 2 );
+        $first_name = $name_parts[0] ?? '';
+        $last_name  = isset( $name_parts[1] ) ? $name_parts[1] : '';
+    }
+
     $phone      = sanitize_text_field( $_POST['phone'] ?? '' );
     $email      = sanitize_email( $_POST['email'] ?? '' );
     $case_type  = sanitize_text_field( $_POST['case_type'] ?? '' );
@@ -579,9 +589,10 @@ function roden_sidebar_form_handler() {
     $consent    = ! empty( $_POST['consent'] ) ? 1 : 0;
     $gclid      = sanitize_text_field( $_POST['gclid'] ?? '' );
 
-    // Validate required fields.
-    if ( ! $first_name || ! $last_name || ! $phone || ! $email || ! $consent ) {
-        wp_send_json_error( 'Please fill in all required fields and accept the consent.' );
+    // Validate required fields. Name (first), phone, and consent are required;
+    // email and last name are optional (some pages collect name + phone only).
+    if ( ! $first_name || ! $phone || ! $consent ) {
+        wp_send_json_error( 'Please fill in your name and phone number, and accept the consent.' );
     }
 
     // Create a GF entry directly (bypasses form validation so Zip isn't required).
