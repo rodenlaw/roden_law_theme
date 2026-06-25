@@ -414,6 +414,12 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
             margin-bottom: 18px;
         }
         .hero h1 .gold { color: var(--gold); }
+        /* Headline A/B test: both variants render in the markup; only the active
+           one shows. data-hl is set on <html> in <head> before paint, so there is
+           no flash and no layout shift. No-JS / control falls back to variant A. */
+        .hl-variant { display: none; }
+        html[data-hl="b"] .hl-control { display: none; }
+        html[data-hl="b"] .hl-variant { display: block; }
         .hero-sub {
             font-size: 18px;
             color: #d4dce8;
@@ -1744,6 +1750,26 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
     }
     </script>
     <?php wp_head(); ?>
+    <script>
+    /* Headline A/B assignment — runs in <head> before first paint (no flash / no CLS).
+       Buckets the visitor 50/50 into variant a|b, persists 60 days, and exposes the
+       variant to GTM (dataLayer.hl_variant) and to the lead form (window.__rodenHl). */
+    (function(){
+        try {
+            var m = document.cookie.match(/(?:^|;\s*)roden_hl=([ab])/);
+            var v = m ? m[1] : (Math.random() < 0.5 ? 'a' : 'b');
+            if (!m) {
+                document.cookie = 'roden_hl=' + v + ';path=/;max-age=' + (60 * 86400) + ';SameSite=Lax';
+            }
+            document.documentElement.setAttribute('data-hl', v);
+            window.__rodenHl = v;
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({ hl_variant: v });
+        } catch (e) {
+            document.documentElement.setAttribute('data-hl', 'a');
+        }
+    })();
+    </script>
 </head>
 <body <?php body_class( 'landing-page' ); ?>>
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -1772,7 +1798,10 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
                 Trusted South Carolina Trial Attorneys
             </div>
-            <h1><?php echo esc_html( $city ); ?> <span class="gold"><?php echo esc_html( $type_label ); ?> Lawyers</span></h1>
+            <h1>
+                <span class="hl-control"><?php echo esc_html( $city ); ?> <span class="gold"><?php echo esc_html( $type_label ); ?> Lawyers</span></span>
+                <span class="hl-variant">Injured in <?php echo esc_html( $type_article ); ?> <?php echo esc_html( $type_lower ); ?>? <span class="gold">Get Every Dollar You&rsquo;re Owed.</span></span>
+            </h1>
             <p class="hero-sub"><?php echo $hero_sub; ?></p>
 
             <!-- Hero CTAs -->
@@ -1885,6 +1914,7 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
             <form id="leadForm" action="#" method="POST" novalidate aria-label="Free case review request form">
                 <?php wp_nonce_field( 'roden_sidebar_form', 'roden_form_nonce' ); ?>
                 <input type="hidden" name="gclid" class="roden-gclid" value="">
+                <input type="hidden" name="hl_variant" class="roden-hl" value="">
                 <div>
                     <div class="form-group float-field">
                         <input type="text" name="full_name" id="lp-name" placeholder=" " autocomplete="name" required>
@@ -2437,6 +2467,12 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
 
 <script>
     /* Quick Callback tab toggle removed — can re-enable later */
+
+    /* Headline A/B: stamp the assigned variant into the lead form (CRM record) */
+    (function(){
+        var v = window.__rodenHl || document.documentElement.getAttribute('data-hl') || 'a';
+        document.querySelectorAll('.roden-hl').forEach(function(el){ el.value = v; });
+    })();
 
     /* FAQ Toggle with keyboard support */
     function toggleFaq(question) {

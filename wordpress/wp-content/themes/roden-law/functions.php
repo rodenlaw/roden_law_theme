@@ -588,6 +588,7 @@ function roden_sidebar_form_handler() {
     $message    = sanitize_textarea_field( $_POST['message'] ?? '' );
     $consent    = ! empty( $_POST['consent'] ) ? 1 : 0;
     $gclid      = sanitize_text_field( $_POST['gclid'] ?? '' );
+    $hl_variant = sanitize_text_field( $_POST['hl_variant'] ?? '' );
 
     // Validate required fields. Name (first), phone, and consent are required;
     // email and last name are optional (some pages collect name + phone only).
@@ -616,6 +617,10 @@ function roden_sidebar_form_handler() {
             // Store gclid as entry meta for Google Ads attribution.
             if ( $gclid ) {
                 gform_update_meta( $entry_id, 'gclid', $gclid );
+            }
+            // Store headline A/B variant for conversion attribution (when present).
+            if ( $hl_variant ) {
+                gform_update_meta( $entry_id, 'hl_variant', $hl_variant );
             }
             // Trigger GF notifications (admin alert + client confirmation emails).
             $form  = GFAPI::get_form( 1 );
