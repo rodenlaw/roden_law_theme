@@ -1793,26 +1793,45 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
             <div class="attorney-strip">
                 <div class="attorney-strip-photos">
                     <?php
-                    // SC attorneys: Gillin, Reidy, Stohr, Montano.
+                    // SC attorneys: Gillin, Reidy, Stohr, Montano. Pull each headshot from
+                    // the `attorney` CPT (featured image) by post slug; fall back to initials
+                    // if the attorney post or its featured image is missing.
                     $sc_attorneys = array(
-                        array( 'initials' => 'GG', 'name' => 'Graeham Gillin' ),
-                        array( 'initials' => 'KR', 'name' => 'Kiley Reidy' ),
-                        array( 'initials' => 'ZS', 'name' => 'Zach Stohr' ),
-                        array( 'initials' => 'IM', 'name' => 'Ivy Montano' ),
+                        array( 'initials' => 'GG', 'slug' => 'graeham-c-gillin', 'name' => 'Graeham C. Gillin' ),
+                        array( 'initials' => 'KR', 'slug' => 'kiley-reidy',      'name' => 'Kiley Reidy' ),
+                        array( 'initials' => 'ZS', 'slug' => 'zach-stohr',       'name' => 'Zach Stohr' ),
+                        array( 'initials' => 'IM', 'slug' => 'ivy-s-montano',    'name' => 'Ivy S. Montano' ),
                     );
                     foreach ( $sc_attorneys as $atty ) :
-                        // Check for an attorney headshot attachment.
-                        $atty_slug = sanitize_title( $atty['name'] );
-                        $headshot  = get_posts( array(
-                            'post_type'   => 'attachment',
-                            'post_status' => 'inherit',
-                            'name'        => $atty_slug,
-                            'numberposts' => 1,
-                        ) );
+                        // Resolve the attorney post: try the slug first, then fall back to a
+                        // title match so a slightly-off slug never silently drops to initials.
+                        $headshot_html = '';
+                        $atty_post     = get_page_by_path( $atty['slug'], OBJECT, 'attorney' );
+                        if ( ! $atty_post ) {
+                            $by_title = get_posts( array(
+                                'post_type'        => 'attorney',
+                                'title'            => $atty['name'],
+                                'post_status'      => 'publish',
+                                'numberposts'      => 1,
+                                'suppress_filters' => false,
+                            ) );
+                            $atty_post = ! empty( $by_title ) ? $by_title[0] : null;
+                        }
+                        if ( $atty_post && has_post_thumbnail( $atty_post->ID ) ) {
+                            $headshot_html = get_the_post_thumbnail(
+                                $atty_post->ID,
+                                'thumbnail',
+                                array(
+                                    'alt'           => esc_attr( $atty['name'] . ' — Roden Law South Carolina attorney' ),
+                                    'loading'       => 'eager',
+                                    'fetchpriority' => 'high',
+                                )
+                            );
+                        }
                     ?>
                         <div class="atty-photo" title="<?php echo esc_attr( $atty['name'] ); ?>">
-                            <?php if ( ! empty( $headshot ) ) : ?>
-                                <img src="<?php echo esc_url( wp_get_attachment_image_url( $headshot[0]->ID, 'thumbnail' ) ); ?>" alt="<?php echo esc_attr( $atty['name'] ); ?>" fetchpriority="high">
+                            <?php if ( $headshot_html ) : ?>
+                                <?php echo $headshot_html; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- get_the_post_thumbnail returns safe markup ?>
                             <?php else : ?>
                                 <?php echo esc_html( $atty['initials'] ); ?>
                             <?php endif; ?>
@@ -1822,28 +1841,33 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
                 <span class="attorney-strip-caption">Your SC Legal Team</span>
             </div>
 
+            <?php
+            // Accident-type tiles. On a paid landing page these must NOT link off-page
+            // (that leaks paid traffic away from the form/call). Each tile scrolls to
+            // the lead form instead — the smooth-scroll JS handles the #leadForm anchor.
+            ?>
             <div class="accident-types">
-                <a href="<?php echo esc_url( home_url( '/car-accident-lawyers/rear-end-collision/' ) ); ?>" class="accident-type-item">
+                <a href="#leadForm" class="accident-type-item" aria-label="Get a free case review for a rear-end collision">
                     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><rect x="1" y="12" width="9" height="6" rx="1"/><rect x="14" y="12" width="9" height="6" rx="1"/><line x1="10" y1="15" x2="14" y2="15"/><circle cx="4" cy="18" r="1.5" fill="#e8a830" stroke="none"/><circle cx="20" cy="18" r="1.5" fill="#e8a830" stroke="none"/></svg>
                     <span class="accident-type-label">Rear-End Collision</span>
                 </a>
-                <a href="<?php echo esc_url( home_url( '/car-accident-lawyers/t-bone-accident/' ) ); ?>" class="accident-type-item">
+                <a href="#leadForm" class="accident-type-item" aria-label="Get a free case review for a T-bone or side-impact crash">
                     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><rect x="2" y="10" width="10" height="6" rx="1"/><rect x="14" y="4" width="6" height="10" rx="1" transform="rotate(0)"/><line x1="12" y1="13" x2="14" y2="13"/><path d="M11 12l3-3" stroke="#e8a830" stroke-width="1" opacity="0.5"/></svg>
                     <span class="accident-type-label">T-Bone / Side Impact</span>
                 </a>
-                <a href="<?php echo esc_url( home_url( '/car-accident-lawyers/hit-and-run-accident/' ) ); ?>" class="accident-type-item">
+                <a href="#leadForm" class="accident-type-item" aria-label="Get a free case review for a hit-and-run accident">
                     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><rect x="2" y="12" width="9" height="5" rx="1"/><circle cx="5" cy="17" r="1.5" fill="#e8a830" stroke="none"/><path d="M11 14.5l2-2M13 14.5l2-2" opacity="0.6"/><path d="M16 9l2 2M20 9l-2 2M18 7v4" stroke-width="1.5"/></svg>
                     <span class="accident-type-label">Hit &amp; Run</span>
                 </a>
-                <a href="<?php echo esc_url( home_url( '/car-accident-lawyers/drunk-driver-accident/' ) ); ?>" class="accident-type-item">
+                <a href="#leadForm" class="accident-type-item" aria-label="Get a free case review for a drunk-driving accident">
                     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><rect x="2" y="13" width="11" height="5" rx="1"/><circle cx="5" cy="18" r="1.5" fill="#e8a830" stroke="none"/><circle cx="10" cy="18" r="1.5" fill="#e8a830" stroke="none"/><path d="M15 11l1.5-5.5M18 11l-1.5-5.5M16.5 5.5h0" stroke-linecap="round"/><path d="M14 8h5" stroke-linecap="round"/></svg>
                     <span class="accident-type-label">Drunk Driver</span>
                 </a>
-                <a href="<?php echo esc_url( home_url( '/car-accident-lawyers/distracted-driver-accident/' ) ); ?>" class="accident-type-item">
+                <a href="#leadForm" class="accident-type-item" aria-label="Get a free case review for a distracted-driving accident">
                     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><rect x="2" y="13" width="11" height="5" rx="1"/><circle cx="5" cy="18" r="1.5" fill="#e8a830" stroke="none"/><circle cx="10" cy="18" r="1.5" fill="#e8a830" stroke="none"/><rect x="15" y="5" width="6" height="10" rx="1"/><line x1="18" y1="8" x2="18" y2="12" stroke-linecap="round"/></svg>
                     <span class="accident-type-label">Distracted Driver</span>
                 </a>
-                <a href="<?php echo esc_url( home_url( '/car-accident-lawyers/rideshare-accident/' ) ); ?>" class="accident-type-item">
+                <a href="#leadForm" class="accident-type-item" aria-label="Get a free case review for an Uber or Lyft rideshare accident">
                     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8a830" stroke-width="1.5"><rect x="3" y="12" width="12" height="6" rx="1"/><circle cx="6" cy="18" r="1.5" fill="#e8a830" stroke="none"/><circle cx="12" cy="18" r="1.5" fill="#e8a830" stroke="none"/><circle cx="20" cy="10" r="4"/><path d="M18.5 9.5l1.5 1 1.5-1" stroke-linecap="round"/></svg>
                     <span class="accident-type-label">Uber / Lyft</span>
                 </a>
@@ -1861,14 +1885,10 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
             <form id="leadForm" action="#" method="POST" novalidate aria-label="Free case review request form">
                 <?php wp_nonce_field( 'roden_sidebar_form', 'roden_form_nonce' ); ?>
                 <input type="hidden" name="gclid" class="roden-gclid" value="">
-                <div class="form-row">
+                <div>
                     <div class="form-group float-field">
-                        <input type="text" name="first_name" id="lp-fname" placeholder=" " autocomplete="given-name" required>
-                        <label for="lp-fname">First Name*</label>
-                    </div>
-                    <div class="form-group float-field">
-                        <input type="text" name="last_name" id="lp-lname" placeholder=" " autocomplete="family-name" required>
-                        <label for="lp-lname">Last Name*</label>
+                        <input type="text" name="full_name" id="lp-name" placeholder=" " autocomplete="name" required>
+                        <label for="lp-name">Full Name*</label>
                     </div>
                 </div>
                 <div class="form-row">
@@ -1877,8 +1897,8 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
                         <label for="lp-phone">Phone Number*</label>
                     </div>
                     <div class="form-group float-field">
-                        <input type="email" name="email" id="lp-email" placeholder=" " autocomplete="email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
-                        <label for="lp-email">Email Address*</label>
+                        <input type="email" name="email" id="lp-email" placeholder=" " autocomplete="email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                        <label for="lp-email">Email Address (optional)</label>
                     </div>
                 </div>
                 <div>
@@ -2475,9 +2495,9 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
             if (lpPhone) lpPhone.focus();
             return;
         }
-        /* Validate email */
+        /* Validate email only if provided (email is optional) */
         var emailVal = lpEmail ? lpEmail.value.trim() : '';
-        if (!/^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/.test(emailVal)) {
+        if (emailVal && !/^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/.test(emailVal)) {
             errEl.textContent = 'Please enter a valid email address.';
             errEl.style.display = 'block';
             if (lpEmail) lpEmail.focus();
