@@ -1827,8 +1827,6 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
                     // if the attorney post or its featured image is missing.
                     $sc_attorneys = array(
                         array( 'initials' => 'GG', 'slug' => 'graeham-c-gillin', 'name' => 'Graeham C. Gillin' ),
-                        array( 'initials' => 'KR', 'slug' => 'kiley-reidy',      'name' => 'Kiley Reidy' ),
-                        array( 'initials' => 'ZS', 'slug' => 'zach-stohr',       'name' => 'Zach Stohr' ),
                         array( 'initials' => 'IM', 'slug' => 'ivy-s-montano',    'name' => 'Ivy S. Montano' ),
                     );
                     foreach ( $sc_attorneys as $atty ) :
