@@ -234,6 +234,12 @@ function roden_output_schema() {
         } else {
             roden_schema_article( $firm );
         }
+        // FAQPage is additive — emit it alongside the Article/HowTo whenever the
+        // resource has FAQs, mirroring blog `post` handling above. Closes the
+        // AI-SEO gap where resource pages rendered a visible FAQ accordion but
+        // emitted no FAQPage JSON-LD, so AI engines couldn't extract the Q&A
+        // (audit 2026-06-26).
+        roden_schema_faq_page();
     }
 
     if ( is_singular( 'post' ) ) {
