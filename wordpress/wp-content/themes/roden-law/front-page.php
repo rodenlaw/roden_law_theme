@@ -320,7 +320,7 @@ $practice_areas = array(
         <div class="site-container">
             <div class="testimonial-social-proof">
                 <div class="social-proof-stars" aria-label="<?php esc_attr_e( '5 star rating', 'roden-law' ); ?>">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <h2><?php esc_html_e( '500+ Five-Star Reviews', 'roden-law' ); ?></h2>
+                <h2><?php esc_html_e( 'Hundreds of Five-Star Reviews', 'roden-law' ); ?></h2>
                 <p><?php esc_html_e( 'Our clients trust us to fight for maximum compensation.', 'roden-law' ); ?></p>
             </div>
 

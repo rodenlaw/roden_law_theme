@@ -426,16 +426,22 @@ function roden_schema_legal_service( $firm ) {
     // the LegalService it rates, not as a standalone node. Google's review
     // snippet docs expect aggregateRating to be a property of the reviewed
     // entity; standalone nodes only bind reliably inside a single @graph.
+    // Only emit aggregateRating when we have a real, verifiable review count
+    // (the live per-office GBP sum from firm-data). Never fall back to a
+    // hardcoded figure — an inflated reviewCount is a Google structured-data
+    // violation and gets the rich result stripped.
     if ( is_front_page() ) {
-        $review_count = isset( $firm['trust_stats']['review_count'] ) ? intval( $firm['trust_stats']['review_count'] ) : 500;
+        $review_count = isset( $firm['trust_stats']['review_count'] ) ? intval( $firm['trust_stats']['review_count'] ) : 0;
         $rating       = isset( $firm['trust_stats']['rating'] ) ? $firm['trust_stats']['rating'] : '4.9';
-        $schema['aggregateRating'] = array(
-            '@type'       => 'AggregateRating',
-            'ratingValue' => $rating,
-            'bestRating'  => '5',
-            'worstRating' => '1',
-            'reviewCount' => $review_count,
-        );
+        if ( $review_count > 0 ) {
+            $schema['aggregateRating'] = array(
+                '@type'       => 'AggregateRating',
+                'ratingValue' => $rating,
+                'bestRating'  => '5',
+                'worstRating' => '1',
+                'reviewCount' => $review_count,
+            );
+        }
     }
 
     // On singular practice area, customize for that page
