@@ -40,6 +40,9 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
             <?php endif; ?>
             <span class="post-date"><?php echo get_the_date(); ?></span>
             <span class="post-read-time"><?php echo roden_reading_time(); ?> min read</span>
+            <?php if ( get_the_modified_date( 'Y-m-d' ) !== get_the_date( 'Y-m-d' ) ) : ?>
+                <span class="post-updated"><time datetime="<?php echo esc_attr( get_the_modified_date( 'c' ) ); ?>">Updated <?php echo esc_html( get_the_modified_date( 'F j, Y' ) ); ?></time></span>
+            <?php endif; ?>
         </div>
     </div>
 </section>

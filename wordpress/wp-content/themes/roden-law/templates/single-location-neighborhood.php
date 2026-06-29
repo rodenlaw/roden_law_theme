@@ -110,6 +110,8 @@ $directions_url = 'https://www.google.com/maps/dir/' . urlencode( $neighborhood_
                     ?>
                 </p>
 
+                <?php roden_last_updated_date(); ?>
+
                 <!-- Trust Stats -->
                 <div class="hero-stats">
                     <div class="hero-stat">
