@@ -2400,21 +2400,32 @@ function roden_schema_case_result( $firm ) {
     $amount      = get_post_meta( $post_id, '_roden_case_amount', true );
     $result_type = get_post_meta( $post_id, '_roden_case_type', true );
     $accident    = get_post_meta( $post_id, '_roden_accident_type', true );
+    $injury      = get_post_meta( $post_id, '_roden_injury_type', true );
     $description = get_post_meta( $post_id, '_roden_description', true );
     $attorney_id = get_post_meta( $post_id, '_roden_attorney', true );
 
     $schema = array(
-        '@context'    => 'https://schema.org',
-        '@type'       => 'CreativeWork',
-        'name'        => get_the_title( $post_id ),
-        'description' => $description ?: wp_trim_words( get_the_excerpt( $post_id ), 30 ),
-        'url'         => get_permalink( $post_id ),
-        'publisher'   => array(
+        '@context'      => 'https://schema.org',
+        '@type'         => 'CreativeWork',
+        'name'          => get_the_title( $post_id ),
+        'description'   => $description ?: wp_trim_words( get_the_excerpt( $post_id ), 30 ),
+        'url'           => get_permalink( $post_id ),
+        'datePublished' => get_the_date( 'c', $post_id ),
+        'publisher'     => array(
             '@type' => 'Organization',
             '@id'   => $firm['url'] . '/#organization',
             'name'  => $firm['name'],
         ),
     );
+
+    // Jurisdiction/market the result was achieved in, when tagged.
+    $loc_terms = get_the_terms( $post_id, 'location_served' );
+    if ( $loc_terms && ! is_wp_error( $loc_terms ) ) {
+        $schema['spatialCoverage'] = array(
+            '@type' => 'Place',
+            'name'  => $loc_terms[0]->name,
+        );
+    }
 
     if ( $amount ) {
         // Parse numeric value from formatted amount (e.g., "$3,000,000" → 3000000).
@@ -2429,8 +2440,9 @@ function roden_schema_case_result( $firm ) {
         }
     }
 
-    if ( $accident ) {
-        $schema['keywords'] = $accident;
+    $keywords = array_filter( array( $accident, $injury ) );
+    if ( $keywords ) {
+        $schema['keywords'] = implode( ', ', $keywords );
     }
 
     if ( $attorney_id ) {

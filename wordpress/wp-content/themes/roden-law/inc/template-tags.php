@@ -1199,6 +1199,74 @@ function roden_ai_stats_block( $practice_area_title = '' ) {
     <?php
 }
 
+/**
+ * Case Result — AI-extractable result summary block.
+ *
+ * Renders a self-contained, entity-rich answer passage (firm, amount, result
+ * type, accident, injury, location, and the insurer's initial offer when known)
+ * that AI engines can quote without surrounding context — the citable asset on
+ * a case-result page. Factual case data only; deliberately NO Review markup,
+ * because case results carry no real client review to back it. (AI-SEO audit
+ * 2026-06-29.)
+ *
+ * @param int $post_id Optional case_result post ID. Defaults to current post.
+ */
+function roden_case_result_summary( $post_id = 0 ) {
+    $post_id = $post_id ? $post_id : get_the_ID();
+
+    $amount        = get_post_meta( $post_id, '_roden_case_amount', true );
+    $result_type   = get_post_meta( $post_id, '_roden_case_type', true );
+    $accident_type = get_post_meta( $post_id, '_roden_accident_type', true );
+    $injury_type   = get_post_meta( $post_id, '_roden_injury_type', true );
+    $initial_offer = get_post_meta( $post_id, '_roden_result_initial_offer', true );
+
+    // Nothing citable without a recovery amount.
+    if ( empty( $amount ) ) {
+        return;
+    }
+
+    // Location from the location_served taxonomy, if assigned.
+    $location  = '';
+    $loc_terms = get_the_terms( $post_id, 'location_served' );
+    if ( $loc_terms && ! is_wp_error( $loc_terms ) ) {
+        $location = $loc_terms[0]->name;
+    }
+
+    $type_label = $result_type ? strtolower( $result_type ) : 'recovery';
+
+    // Build the lead sentence from whatever facts are present (each value escaped).
+    $sentence = sprintf( 'Roden Law secured a %s %s', esc_html( $amount ), esc_html( $type_label ) );
+    if ( $accident_type ) {
+        $sentence .= sprintf( ' in a %s case', esc_html( $accident_type ) );
+    }
+    if ( $injury_type ) {
+        $sentence .= sprintf( ' involving %s', esc_html( $injury_type ) );
+    }
+    if ( $location ) {
+        $sentence .= sprintf( ' in %s', esc_html( $location ) );
+    }
+    $sentence .= '.';
+    if ( $initial_offer ) {
+        $sentence .= sprintf( ' The insurance company initially offered just %s before Roden Law intervened.', esc_html( $initial_offer ) );
+    }
+    ?>
+    <div class="case-result-summary" data-ai-extractable="true">
+        <h2>Result Summary</h2>
+        <p class="case-result-lead"><?php echo $sentence; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped — pieces escaped above. ?></p>
+        <table class="case-result-facts">
+            <tbody>
+                <tr><th scope="row">Amount recovered</th><td><?php echo esc_html( $amount ); echo $result_type ? ' (' . esc_html( $result_type ) . ')' : ''; ?></td></tr>
+                <?php if ( $accident_type ) : ?><tr><th scope="row">Case type</th><td><?php echo esc_html( $accident_type ); ?></td></tr><?php endif; ?>
+                <?php if ( $injury_type ) : ?><tr><th scope="row">Injury</th><td><?php echo esc_html( $injury_type ); ?></td></tr><?php endif; ?>
+                <?php if ( $initial_offer ) : ?><tr><th scope="row">Insurer&rsquo;s initial offer</th><td><?php echo esc_html( $initial_offer ); ?></td></tr><?php endif; ?>
+                <?php if ( $location ) : ?><tr><th scope="row">Location</th><td><?php echo esc_html( $location ); ?></td></tr><?php endif; ?>
+            </tbody>
+        </table>
+        <p class="case-result-summary-note">Result reported by Roden Law. Past results do not guarantee a similar outcome in your case.</p>
+    </div>
+    <?php
+}
+
 /* ==========================================================================
    EXPERT QUOTE BLOCK (AI-Citable Attorney Quote)
    ========================================================================== */

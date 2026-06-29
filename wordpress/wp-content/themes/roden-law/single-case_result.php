@@ -39,6 +39,8 @@ $attorney    = $attorney_id ? get_post( $attorney_id ) : null;
     <div class="container content-sidebar-grid">
 
         <article class="main-content">
+            <?php roden_case_result_summary( $post_id ); ?>
+
             <?php if ( $description ) : ?>
                 <div class="content-section">
                     <h2>Case Details</h2>
