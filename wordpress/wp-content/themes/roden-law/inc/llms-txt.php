@@ -12,6 +12,17 @@
 
 defined( 'ABSPATH' ) || exit;
 
+/**
+ * Generator output version. BUMP THIS whenever roden_generate_llms_txt()'s
+ * output changes (new fields, copy edits, formatting). On the first request
+ * after a deploy, the version mismatch self-triggers a one-time regeneration
+ * of the static llms.txt / llms-full.txt files — see
+ * roden_llms_txt_maybe_regenerate(). Without it, a code deploy updates the
+ * dynamic /llms route but leaves the static files stale until the next
+ * save_post.
+ */
+define( 'RODEN_LLMS_TXT_VERSION', '2026-06-29.1' );
+
 /* ==========================================================================
    1. REWRITE RULES + QUERY VARS
    ========================================================================== */
@@ -339,6 +350,29 @@ add_action( 'save_post_location',      'roden_llms_txt_flush_cache' );
 add_action( 'save_post_resource',      'roden_llms_txt_flush_cache' );
 add_action( 'save_post_case_result',   'roden_llms_txt_flush_cache' );
 add_action( 'save_post_post',          'roden_llms_txt_flush_cache' );
+
+add_action( 'init', 'roden_llms_txt_maybe_regenerate', 20 );
+
+/**
+ * Regenerate static llms files when the generator version changes (on deploy).
+ *
+ * A code deploy updates llms-txt.php but NOT the static llms.txt /
+ * llms-full.txt files at ABSPATH — those are otherwise only rewritten on a
+ * save_post. Comparing the stored option against RODEN_LLMS_TXT_VERSION lets a
+ * deploy self-trigger one regeneration on the first request afterward.
+ *
+ * Cheap: a single autoloaded option read per request; the flush + file write
+ * runs only on the first request after a version bump. The write is atomic
+ * (temp-file + rename), so the brief window where concurrent requests may all
+ * regenerate is harmless — they produce identical output.
+ */
+function roden_llms_txt_maybe_regenerate() {
+    if ( get_option( 'roden_llms_txt_version' ) === RODEN_LLMS_TXT_VERSION ) {
+        return;
+    }
+    roden_llms_txt_flush_cache();
+    update_option( 'roden_llms_txt_version', RODEN_LLMS_TXT_VERSION, true );
+}
 
 /* ==========================================================================
    4. HELPER
