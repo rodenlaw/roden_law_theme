@@ -98,7 +98,7 @@ function roden_generate_llms_txt( $full = false ) {
     $output .= "- **Total Recovered**: {$firm['trust_stats']['recovered']}\n";
     $output .= "- **Client Rating**: {$firm['trust_stats']['rating']} stars across hundreds of verified Google reviews\n";
     $output .= "- **Cases Handled**: {$firm['trust_stats']['cases']}\n";
-    $output .= "- **Combined Experience**: {$firm['trust_stats']['experience']}\n";
+    $output .= "- **Combined Experience**: {$firm['experience']}\n";
     $output .= "- **Fee Structure**: Contingency — no fees unless we win\n";
     $output .= "- **Consultations**: Free, available 24/7\n";
     $output .= "- **Bar Admissions**: Georgia State Bar, South Carolina State Bar\n";
@@ -118,7 +118,7 @@ function roden_generate_llms_txt( $full = false ) {
 
     foreach ( $pillars as $pillar ) {
         $url   = get_permalink( $pillar );
-        $title = get_the_title( $pillar );
+        $title = roden_llms_decode( get_the_title( $pillar ) );
         $desc  = roden_llms_get_excerpt( $pillar );
         $output .= "- [{$title}]({$url})";
         if ( $desc ) {
@@ -138,7 +138,7 @@ function roden_generate_llms_txt( $full = false ) {
             ) );
             foreach ( $children as $child ) {
                 $child_url   = get_permalink( $child );
-                $child_title = get_the_title( $child );
+                $child_title = roden_llms_decode( get_the_title( $child ) );
                 $output .= "  - [{$child_title}]({$child_url})\n";
             }
         }
@@ -208,7 +208,7 @@ function roden_generate_llms_txt( $full = false ) {
             $output .= "### Resources\n\n";
             foreach ( $resources as $res ) {
                 $res_url   = get_permalink( $res );
-                $res_title = get_the_title( $res );
+                $res_title = roden_llms_decode( get_the_title( $res ) );
                 $output   .= "- [{$res_title}]({$res_url})\n";
             }
             $output .= "\n";
@@ -226,7 +226,7 @@ function roden_generate_llms_txt( $full = false ) {
             $output .= "### Recent Blog Posts\n\n";
             foreach ( $posts as $blog ) {
                 $blog_url   = get_permalink( $blog );
-                $blog_title = get_the_title( $blog );
+                $blog_title = roden_llms_decode( get_the_title( $blog ) );
                 $output    .= "- [{$blog_title}]({$blog_url})\n";
             }
             $output .= "\n";
@@ -244,7 +244,7 @@ function roden_generate_llms_txt( $full = false ) {
             $output .= "### Case Results\n\n";
             foreach ( $results as $cr ) {
                 $cr_url    = get_permalink( $cr );
-                $cr_title  = get_the_title( $cr );
+                $cr_title  = roden_llms_decode( get_the_title( $cr ) );
                 $cr_amount = get_post_meta( $cr->ID, '_roden_amount', true );
                 $output   .= "- [{$cr_title}]({$cr_url})";
                 if ( $cr_amount ) {
@@ -345,6 +345,20 @@ add_action( 'save_post_post',          'roden_llms_txt_flush_cache' );
    ========================================================================== */
 
 /**
+ * Decode HTML entities for plain-text Markdown output.
+ *
+ * WordPress titles/excerpts pass through wptexturize and entity encoding
+ * (e.g. "&#038;", "&#8217;"), which leak into llms.txt as literal entity
+ * codes. llms.txt is plain Markdown, so decode them back to real characters.
+ *
+ * @param string $text Possibly entity-encoded text.
+ * @return string Decoded plain text.
+ */
+function roden_llms_decode( $text ) {
+    return html_entity_decode( (string) $text, ENT_QUOTES | ENT_HTML5, 'UTF-8' );
+}
+
+/**
  * Get a short plain-text excerpt for a post (max ~160 chars).
  *
  * @param WP_Post $post Post object.
@@ -355,6 +369,7 @@ function roden_llms_get_excerpt( $post ) {
     if ( ! $excerpt ) {
         $excerpt = wp_strip_all_tags( $post->post_content );
     }
+    $excerpt = roden_llms_decode( $excerpt );
     $excerpt = str_replace( array( "\r", "\n" ), ' ', $excerpt );
     $excerpt = preg_replace( '/\s+/', ' ', trim( $excerpt ) );
 
