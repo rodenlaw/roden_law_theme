@@ -332,8 +332,8 @@ EOT
         'trust_stats' => array(
             'recovered'     => '$300M+',
             'rating'        => '4.9',
-            'reviews'       => '500+',
-            'review_count'  => 500,   // Numeric for schema AggregateRating reviewCount
+            'reviews'       => 'Hundreds of 5-Star Reviews', // Non-numeric display copy. Real total is the live per-office GBP sum (~205); see review_count computed in the aliases section below.
+            'review_count'  => 0,     // Computed below as the live sum of per-office GBP review_count — feeds schema AggregateRating reviewCount. Never hardcode; keep it honest + auto-updating.
             'cases'         => '5,000+',
             'experience'    => '62',
             'offices'       => '6',
@@ -435,6 +435,19 @@ EOT
     $data['reviews']       = $data['trust_stats']['reviews'];
     $data['cases_handled'] = $data['trust_stats']['cases'];
     $data['experience']    = $data['trust_stats']['experience'] . ' years';
+
+    // Live review count: sum of per-office Google Business Profile review counts.
+    // Keeps schema AggregateRating reviewCount honest and auto-updating as the
+    // per-office counts in the offices array are maintained — the real verifiable
+    // total, not a rounded marketing figure. Display copy stays non-numeric
+    // (trust_stats['reviews']); this number is for structured data only.
+    $review_total = 0;
+    foreach ( $data['offices'] as $office_data ) {
+        if ( isset( $office_data['review_count'] ) ) {
+            $review_total += intval( $office_data['review_count'] );
+        }
+    }
+    $data['trust_stats']['review_count'] = $review_total;
 
     // Per-office aliases
     foreach ( $data['offices'] as $key => &$office ) {

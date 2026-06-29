@@ -641,14 +641,17 @@ function roden_neighborhood_grid( $current_post_id ) {
    CONTACT FORM SIDEBAR (CTA box)
    ========================================================================== */
 
-function roden_contact_form_sidebar( $local_phone = '' ) {
+function roden_contact_form_sidebar( $local_phone = '', $source = '' ) {
     ?>
     <div class="sidebar-contact-form">
         <h3 class="form-title">Free Case Review</h3>
-        <p class="form-subtitle">No fees unless we win<br>500+ 5-star reviews</p>
+        <p class="form-subtitle">No fees unless we win<br>Hundreds of 5-star reviews</p>
         <form class="roden-sidebar-form" id="roden-sidebar-form" novalidate>
             <?php wp_nonce_field( 'roden_sidebar_form', 'roden_form_nonce' ); ?>
             <input type="hidden" name="gclid" class="roden-gclid" value="">
+            <?php if ( $source ) : ?>
+            <input type="hidden" name="source" value="<?php echo esc_attr( $source ); ?>">
+            <?php endif; ?>
             <div style="position:absolute;left:-9999px;" aria-hidden="true">
                 <input type="text" name="website_url" tabindex="-1" autocomplete="off">
             </div>
@@ -1084,7 +1087,7 @@ function roden_why_roden_sidebar() {
             </li>
             <li>
                 <strong><?php echo esc_html( $firm['trust_stats']['rating'] ); ?> Stars</strong>
-                <span><?php echo esc_html( $firm['trust_stats']['reviews'] ); ?> Client Reviews</span>
+                <span><?php echo esc_html( $firm['trust_stats']['reviews'] ); ?></span>
             </li>
             <li>
                 <strong><?php echo esc_html( $firm['trust_stats']['offices'] ); ?> Offices</strong>
@@ -1179,7 +1182,7 @@ function roden_ai_stats_block( $practice_area_title = '' ) {
                 </tr>
                 <tr>
                     <td><strong><?php echo esc_html( $firm['rating'] ); ?> / 5.0</strong></td>
-                    <td>Average client rating based on <?php echo esc_html( $firm['reviews'] ); ?> verified reviews</td>
+                    <td>Average client rating across hundreds of verified Google reviews from our six offices</td>
                 </tr>
                 <tr>
                     <td><strong><?php echo esc_html( $firm['cases_handled'] ); ?></strong></td>
