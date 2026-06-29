@@ -61,6 +61,7 @@ if ( $is_state_page ) :
                 <div class="hero-buttons">
                     <a href="tel:<?php echo esc_attr($firm['phone_e164']); ?>" class="btn btn-primary">📞 Call <?php echo esc_html($firm['phone']); ?></a>
                 </div>
+                <?php roden_last_updated_date( $post_id ); ?>
             </div>
             <div class="hero-map-form">
                 <?php roden_contact_form_sidebar(); ?>

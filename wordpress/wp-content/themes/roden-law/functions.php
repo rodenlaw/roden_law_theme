@@ -512,10 +512,14 @@ function roden_custom_robots_txt( $output, $public ) {
         'GPTBot',
         'Google-Extended',
         'PerplexityBot',
+        'Perplexity-User',
         'ClaudeBot',
+        'Claude-SearchBot',
         'anthropic-ai',
         'Applebot-Extended',
         'cohere-ai',
+        'Amazonbot',
+        'Bytespider',
     );
     foreach ( $ai_bots as $bot ) {
         $output .= "User-agent: {$bot}\nAllow: /\n\n";
