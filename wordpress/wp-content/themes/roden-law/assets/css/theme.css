@@ -1230,6 +1230,62 @@ h2.key-takeaways-title {
     margin: 0;
 }
 
+/* Case Result — AI-extractable Result Summary */
+.case-result-summary {
+    background: var(--light-bg, #F8F6F2);
+    border-left: 4px solid var(--orange, #FCB415);
+    padding: 22px 26px;
+    margin-bottom: 28px;
+    border-radius: 0 6px 6px 0;
+}
+.case-result-summary > h2 {
+    font-size: 17px;
+    font-weight: 800;
+    color: var(--navy, #013046);
+    margin: 0 0 12px 0;
+    line-height: 1.2;
+}
+.case-result-lead {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-dark, #333);
+    margin: 0 0 16px 0;
+    font-weight: 600;
+}
+.case-result-facts {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 0 12px 0;
+}
+.case-result-facts th,
+.case-result-facts td {
+    text-align: left;
+    padding: 8px 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-bottom: 1px solid var(--border, #e0e0e0);
+    vertical-align: top;
+}
+.case-result-facts th {
+    width: 42%;
+    font-weight: 700;
+    color: var(--navy, #013046);
+}
+.case-result-facts td {
+    color: var(--text-dark, #333);
+}
+.case-result-facts tr:last-child th,
+.case-result-facts tr:last-child td {
+    border-bottom: none;
+}
+.case-result-summary-note {
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--text-light, #888);
+    margin: 0;
+    font-style: italic;
+}
+
 /* Blog Post Single */
 .post-meta-bar {
     display: flex; align-items: center; gap: 16px; margin-top: 16px;
