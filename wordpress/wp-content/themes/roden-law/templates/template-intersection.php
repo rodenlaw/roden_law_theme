@@ -203,6 +203,16 @@ $related_subtypes = get_posts( array(
             <?php endif; ?>
 
             <!-- ═══════════════════════════════════════════════════════════
+                 HUB-AND-SPOKE: up-link to the SC statewide pillar (SC only;
+                 no-op until the matching SC pillar page is published)
+                 ═══════════════════════════════════════════════════════════ -->
+            <?php
+            if ( function_exists( 'roden_sc_statewide_uplink' ) && $parent_post ) {
+                roden_sc_statewide_uplink( $office, $parent_post->post_name, $parent_title );
+            }
+            ?>
+
+            <!-- ═══════════════════════════════════════════════════════════
                  EXPERT QUOTE (AI-citable attorney quote — +30% visibility)
                  ═══════════════════════════════════════════════════════════ -->
             <?php

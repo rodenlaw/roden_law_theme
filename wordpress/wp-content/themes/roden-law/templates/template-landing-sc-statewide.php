@@ -153,6 +153,16 @@ $allowed_types = array(
 );
 
 $type_raw  = isset( $_GET['type'] ) ? sanitize_text_field( wp_unslash( $_GET['type'] ) ) : '';
+// SEO pillar pages pin their accident type via the _roden_landing_type page meta,
+// so a clean canonical URL (e.g. /south-carolina-truck-accident-lawyer/) resolves
+// to the right type without a ?type= query param. The query param (used by Google
+// Ads PPC traffic) still wins when present and valid.
+if ( '' === $type_raw ) {
+	$pinned_type = get_post_meta( get_the_ID(), '_roden_landing_type', true );
+	if ( $pinned_type ) {
+		$type_raw = $pinned_type;
+	}
+}
 // Fall back to default if empty, unrecognised, or contains unresolved Google Ads macro.
 $type_slug = ( $type_raw && isset( $allowed_types[ $type_raw ] ) && strpos( $type_raw, '{' ) === false )
 	? $type_raw

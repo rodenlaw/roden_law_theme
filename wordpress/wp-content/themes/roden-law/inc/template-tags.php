@@ -897,6 +897,66 @@ function roden_faq_section( $post_id = null ) {
 }
 
 /* ==========================================================================
+   SC STATEWIDE PILLAR HUB-AND-SPOKE LINK (intersection pages → SC pillar)
+   ==========================================================================
+   Maps a practice-area pillar slug to its indexable SC statewide pillar URL and
+   renders an "up-link" on SC intersection (PA × city) pages so the city spokes
+   anchor up into the statewide hub (SC competitor gap analysis 2026-06-29,
+   P0-4 hub-and-spoke). Only renders for SC offices and only when a matching SC
+   pillar exists, so it is safe before the pillars are published. */
+
+/**
+ * Map a pillar slug to the indexable SC statewide pillar slug (or null).
+ *
+ * @param string $pillar_slug e.g. 'truck-accident-lawyers'
+ * @return string|null SC statewide pillar slug, or null if none.
+ */
+function roden_sc_statewide_pillar_slug( $pillar_slug ) {
+    $map = array(
+        'car-accident-lawyers'           => 'south-carolina-car-accident-lawyer',
+        'truck-accident-lawyers'         => 'south-carolina-truck-accident-lawyers',
+        'motorcycle-accident-lawyers'    => 'south-carolina-motorcycle-accident-lawyer',
+        'wrongful-death-lawyers'         => 'south-carolina-wrongful-death-lawyer',
+        'workers-compensation-lawyers'   => 'south-carolina-workers-compensation-lawyer',
+    );
+    return isset( $map[ $pillar_slug ] ) ? $map[ $pillar_slug ] : null;
+}
+
+/**
+ * Render the hub-and-spoke up-link to the SC statewide pillar on an SC
+ * intersection page. No-op unless the office is in SC AND a published SC pillar
+ * page exists for the parent pillar.
+ *
+ * @param array       $office      The office array (must include 'state').
+ * @param string      $parent_slug The parent pillar post_name.
+ * @param string      $parent_title The parent pillar title (for link text fallback).
+ */
+function roden_sc_statewide_uplink( $office, $parent_slug, $parent_title = '' ) {
+    if ( empty( $office['state'] ) || 'SC' !== $office['state'] ) {
+        return;
+    }
+    $sc_slug = roden_sc_statewide_pillar_slug( $parent_slug );
+    if ( ! $sc_slug ) {
+        return;
+    }
+    // Only link when the SC pillar page is actually published (avoids 404s
+    // while pillars are still drafts).
+    $pillar = get_page_by_path( $sc_slug, OBJECT, 'page' );
+    if ( ! $pillar || 'publish' !== $pillar->post_status ) {
+        return;
+    }
+    $url   = home_url( '/' . $sc_slug . '/' );
+    $label = get_the_title( $pillar );
+    ?>
+    <div class="content-section sc-statewide-uplink" data-ai-extractable="true">
+        <p>Serving all of South Carolina:
+        see our statewide <a href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( $label ); ?></a>
+        page for South Carolina&rsquo;s filing deadline, comparative-fault rule, and how these cases work across the state.</p>
+    </div>
+    <?php
+}
+
+/* ==========================================================================
    FILING DEADLINES SIDEBAR — Statute of limitations by jurisdiction
    ========================================================================== */
 

@@ -47,11 +47,13 @@ function roden_add_meta_boxes() {
         'side'
     );
 
+    // 'page' is included so the indexable SC statewide pillar pages
+    // (template-pillar-sc-statewide.php) keep editable Key Takeaways + FAQs.
     add_meta_box(
         'roden_key_takeaways',
         __( 'Key Takeaways (AI Summary)', 'roden-law' ),
         'roden_key_takeaways_meta_box',
-        array( 'post', 'resource' ),
+        array( 'post', 'resource', 'page' ),
         'normal',
         'high'
     );
@@ -60,7 +62,7 @@ function roden_add_meta_boxes() {
         'roden_faqs',
         __( 'FAQs (generates FAQPage schema)', 'roden-law' ),
         'roden_faqs_meta_box',
-        array( 'practice_area', 'location', 'post', 'resource' ),
+        array( 'practice_area', 'location', 'post', 'resource', 'page' ),
         'normal',
         'high'
     );

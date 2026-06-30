@@ -280,6 +280,14 @@ function roden_output_schema() {
         roden_schema_sc_statewide( $firm );
     }
 
+    // SC statewide INDEXABLE organic pillar — per-practice LegalService keyed to
+    // the page's own canonical, plus FAQPage from the page's _roden_faqs.
+    // (BreadcrumbList is added below because this template is NOT noindex.)
+    if ( is_page_template( 'templates/template-pillar-sc-statewide.php' ) ) {
+        roden_schema_sc_pillar( $firm );
+        roden_schema_faq_page();
+    }
+
     // BreadcrumbList on all pages except front page and noindex landing pages.
     if ( ! is_front_page() && ! roden_is_noindex_landing() ) {
         roden_schema_breadcrumbs();
@@ -2389,6 +2397,62 @@ function roden_schema_sc_statewide( $firm ) {
         $office = $firm['offices'][ $key ];
         roden_schema_local_business_office( $firm, $key, $office );
     }
+}
+
+/* ==========================================================================
+   SC STATEWIDE PILLAR (INDEXABLE) — LegalService per practice pillar
+   ==========================================================================
+   Fires on pages using templates/template-pillar-sc-statewide.php. Unlike the
+   noindex PPC roden_schema_sc_statewide(), this keys every @id off the page's
+   OWN canonical URL (each pillar has a distinct URL like
+   /south-carolina-truck-accident-lawyer/), emits a LegalService scoped to that
+   practice, and lists the SC offices as serviceLocation. FAQPage is emitted
+   separately by the shared roden_schema_faq_page() (reads _roden_faqs), and
+   BreadcrumbList comes from the standard dispatcher because this template is
+   NOT in roden_noindex_page_templates(). */
+
+function roden_schema_sc_pillar( $firm ) {
+    $page_url       = roden_get_canonical_url();
+    $practice_label = (string) get_post_meta( get_the_ID(), '_roden_pillar_practice', true );
+    $service_type   = $practice_label ? $practice_label . ' Law' : 'Personal Injury Law';
+    $sc_keys        = array( 'charleston', 'north-charleston', 'columbia', 'myrtle-beach' );
+
+    $service_locations = array();
+    foreach ( $sc_keys as $key ) {
+        if ( ! isset( $firm['offices'][ $key ] ) ) {
+            continue;
+        }
+        $office              = $firm['offices'][ $key ];
+        $service_locations[] = array(
+            '@type'     => array( 'LegalService', 'LocalBusiness' ),
+            '@id'       => $firm['url'] . '/locations/south-carolina/' . $key . '/#localbusiness',
+            'name'      => $office['name'],
+            'address'   => roden_schema_postal_address( $office ),
+            'telephone' => $office['phone'],
+            'geo'       => roden_schema_geo( $office ),
+        );
+    }
+
+    roden_json_ld( array(
+        '@context'        => 'https://schema.org',
+        '@type'           => 'LegalService',
+        '@id'             => $page_url . '#legalservice',
+        'name'            => get_the_title() . ' — Roden Law',
+        'url'             => $page_url,
+        'description'     => 'Roden Law represents ' . ( $practice_label ? strtolower( $practice_label ) . ' ' : '' ) . 'injury victims throughout South Carolina on a contingency fee — no fees unless we win.',
+        'telephone'       => $firm['vanity_phone'],
+        'priceRange'      => '$$',
+        'areaServed'      => array(
+            '@type' => 'State',
+            'name'  => 'South Carolina',
+        ),
+        'serviceType'     => $service_type,
+        'serviceLocation' => $service_locations,
+        'parentOrganization' => array(
+            '@type' => 'Organization',
+            '@id'   => $firm['url'] . '/#organization',
+        ),
+    ) );
 }
 
 /* ==========================================================================
