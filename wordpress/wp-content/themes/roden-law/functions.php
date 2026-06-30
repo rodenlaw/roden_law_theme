@@ -28,6 +28,7 @@ require_once get_template_directory() . '/inc/legacy-redirects.php';
 require_once get_template_directory() . '/inc/llms-txt.php';
 require_once get_template_directory() . '/inc/seo-meta.php';
 require_once get_template_directory() . '/inc/ai-seo.php';
+require_once get_template_directory() . '/inc/intake-webhook.php';
 
 // Belt-and-suspenders: verify template-tags loaded (require retries if require_once cached a failure)
 if ( ! function_exists( 'roden_breadcrumb_html' ) ) {
@@ -630,6 +631,12 @@ function roden_sidebar_form_handler() {
             $form  = GFAPI::get_form( 1 );
             $entry = GFAPI::get_entry( $entry_id );
             GFAPI::send_notifications( $form, $entry );
+
+            // Forward the lead to the intake system. GFAPI::add_entry() does NOT
+            // fire gform_after_submission, so we send it explicitly here.
+            if ( function_exists( 'roden_send_lead_to_intake' ) && ! is_wp_error( $entry ) ) {
+                roden_send_lead_to_intake( $entry, $form );
+            }
         }
     } else {
         // Fallback: send email directly.
@@ -637,6 +644,27 @@ function roden_sidebar_form_handler() {
         $subject = 'New Case Review: ' . $case_type . ' — ' . $first_name . ' ' . $last_name;
         $body    = "Name: $first_name $last_name\nPhone: $phone\nEmail: $email\nCase Type: $case_type\nMessage: $message" . ( $gclid ? "\nGCLID: $gclid" : '' );
         wp_mail( $to, $subject, $body );
+
+        // Forward the lead to the intake system even when Gravity Forms is absent.
+        if ( function_exists( 'roden_intake_post' ) ) {
+            roden_intake_post( array(
+                'event_id'     => function_exists( 'wp_generate_uuid4' ) ? wp_generate_uuid4() : md5( $phone . $email . $message ),
+                'source'       => 'wordpress-ajax-fallback',
+                'site'         => home_url(),
+                'submitted_at' => current_time( 'c' ),
+                'first_name'   => $first_name,
+                'last_name'    => $last_name,
+                'email'        => $email,
+                'phone'        => $phone,
+                'case_type'    => $case_type,
+                'message'      => $message,
+                'source_url'   => wp_get_referer() ? wp_get_referer() : home_url(),
+                'gclid'        => $gclid,
+                'hl_variant'   => $hl_variant,
+                'ip'           => $_SERVER['REMOTE_ADDR'] ?? '',
+                'user_agent'   => $_SERVER['HTTP_USER_AGENT'] ?? '',
+            ) );
+        }
     }
 
     wp_send_json_success( array( 'redirect' => home_url( '/thank-you/' ) ) );
