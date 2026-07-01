@@ -29,7 +29,7 @@ $attorney_id = ( $p = get_page_by_path( 'graeham-c-gillin', OBJECT, 'attorney' )
 WP_CLI::log( "Pillar ID: {$pillar_id} | Attorney ID: {$attorney_id}" );
 
 $content = <<<'HTML'
-<p><strong>Roden Law represents people injured in car accidents across the Myrtle Beach area and the Grand Strand</strong> — Myrtle Beach, North Myrtle Beach, Murrells Inlet, Surfside Beach, Conway, and Pawleys Island. Every case is handled on a <strong>contingency fee basis: you pay nothing unless we win</strong>. Roden Law has recovered <strong>more than $300 million</strong> for injured clients and holds a <strong>4.9-star average from 500+ client reviews</strong>. Our office is in Murrells Inlet at 631 Bellamy Avenue, Suite C-B, just off US-17. Call <a href="tel:+18436121980">(843) 612-1980</a> for a free, confidential case review.</p>
+<p><strong>Roden Law represents people injured in car accidents across the Myrtle Beach area and the Grand Strand</strong> — Myrtle Beach, North Myrtle Beach, Murrells Inlet, Surfside Beach, Conway, and Pawleys Island. Every case is handled on a <strong>contingency fee basis: you pay nothing unless we win</strong>. Roden Law has recovered <strong>more than $300 million</strong> for injured clients and holds a <strong>4.9-star average from hundreds of client reviews</strong>. Our office is in Murrells Inlet at 631 Bellamy Avenue, Suite C-B, just off US-17. Call <a href="tel:+18436121980">(843) 612-1980</a> for a free, confidential case review.</p>
 
 <h2>Why Choose Roden Law for a Myrtle Beach Car Accident Claim</h2>
 <p>The Grand Strand draws roughly 17–20 million visitors a year, and that seasonal surge reshapes the local crash picture — out-of-state drivers unfamiliar with the roads, congested resort corridors, and a defense bar experienced at minimizing tourist claims. What sets Roden Law apart is direct attorney involvement: you work with your attorney, not a rotating desk of case managers, from intake through settlement or verdict.</p>
@@ -117,7 +117,7 @@ if ( $attorney_id ) {
 $faqs = array(
 	array(
 		'question' => 'Who are the best car accident lawyers in Myrtle Beach, SC?',
-		'answer'   => 'Roden Law is a leading car accident firm serving Myrtle Beach and the Grand Strand, with a 4.9-star average from 500+ client reviews and more than $300 million recovered for injured clients across Georgia and South Carolina. Our Murrells Inlet office handles every case on a contingency fee basis — no fee unless we win — and you work directly with your attorney. Call (843) 612-1980 for a free consultation.',
+		'answer'   => 'Roden Law is a leading car accident firm serving Myrtle Beach and the Grand Strand, with a 4.9-star average from hundreds of client reviews and more than $300 million recovered for injured clients across Georgia and South Carolina. Our Murrells Inlet office handles every case on a contingency fee basis — no fee unless we win — and you work directly with your attorney. Call (843) 612-1980 for a free consultation.',
 	),
 	array(
 		'question' => 'I was hurt in a crash while visiting Myrtle Beach. Can I still file a claim?',

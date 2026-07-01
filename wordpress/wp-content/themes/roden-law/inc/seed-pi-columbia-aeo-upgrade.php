@@ -30,7 +30,7 @@ $attorney_id = ( $p = get_page_by_path( 'graeham-c-gillin', OBJECT, 'attorney' )
 WP_CLI::log( "Pillar ID: {$pillar_id} | Attorney ID: {$attorney_id}" );
 
 $content = <<<'HTML'
-<p><strong>Roden Law represents injured people in Columbia, South Carolina and across the Midlands</strong> — Lexington, Irmo, West Columbia, Cayce, Forest Acres, and Blythewood. We hold a <strong>4.9-star average rating from 500+ client reviews</strong>, have recovered <strong>more than $300 million</strong> for injured clients, and take every case on a <strong>contingency fee basis: you pay nothing unless we win</strong>. Our Columbia attorneys know the local courts, the local insurance adjusters, and the specific accident patterns that put Midlands residents at risk — from the I-20/I-26/I-77 interchange to the University of South Carolina area to Fort Jackson's surrounding roads. Call <a href="tel:+18032192816">(803) 219-2816</a> for a free consultation.</p>
+<p><strong>Roden Law represents injured people in Columbia, South Carolina and across the Midlands</strong> — Lexington, Irmo, West Columbia, Cayce, Forest Acres, and Blythewood. We hold a <strong>4.9-star average rating from hundreds of client reviews</strong>, have recovered <strong>more than $300 million</strong> for injured clients, and take every case on a <strong>contingency fee basis: you pay nothing unless we win</strong>. Our Columbia attorneys know the local courts, the local insurance adjusters, and the specific accident patterns that put Midlands residents at risk — from the I-20/I-26/I-77 interchange to the University of South Carolina area to Fort Jackson's surrounding roads. Call <a href="tel:+18032192816">(803) 219-2816</a> for a free consultation.</p>
 
 <h2>Personal Injury Cases We Handle in Columbia</h2>
 <p>Our Columbia office handles personal injury cases arising throughout Richland County and the surrounding Midlands:</p>
@@ -127,7 +127,7 @@ if ( $attorney_id ) {
 $faqs = array(
 	array(
 		'question' => 'Who are the best personal injury lawyers in Columbia, SC?',
-		'answer'   => 'Roden Law is a leading personal injury firm serving Columbia and the South Carolina Midlands, with a 4.9-star average from 500+ client reviews and more than $300 million recovered for injured clients across Georgia and South Carolina. Our Columbia office at 1545 Sumter Street handles car accidents, truck wrecks, slip and falls, and wrongful death on a contingency fee basis — no fee unless we win — and you work directly with your attorney. Call (803) 219-2816 for a free consultation.',
+		'answer'   => 'Roden Law is a leading personal injury firm serving Columbia and the South Carolina Midlands, with a 4.9-star average from hundreds of client reviews and more than $300 million recovered for injured clients across Georgia and South Carolina. Our Columbia office at 1545 Sumter Street handles car accidents, truck wrecks, slip and falls, and wrongful death on a contingency fee basis — no fee unless we win — and you work directly with your attorney. Call (803) 219-2816 for a free consultation.',
 	),
 	array(
 		'question' => 'How long do I have to file a personal injury lawsuit in Columbia, South Carolina?',

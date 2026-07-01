@@ -36,7 +36,7 @@ WP_CLI::log( "Pillar ID: {$pillar_id} | Attorney ID: {$attorney_id}" );
 
 // ── Page content (car-accident specific; answer-first for AEO) ───────────────
 $content = <<<'HTML'
-<p><strong>Roden Law represents people injured in car accidents in Columbia, South Carolina and throughout the Midlands</strong> — Lexington, Irmo, West Columbia, Cayce, Forest Acres, and Blythewood. Our Columbia attorneys handle every case on a <strong>contingency fee basis: you pay nothing unless we win</strong>. Roden Law has recovered <strong>more than $300 million</strong> for injured clients across Georgia and South Carolina and holds a <strong>4.9-star average rating from 500+ client reviews</strong>. Call <a href="tel:+18032192816">(803) 219-2816</a> for a free, confidential case review.</p>
+<p><strong>Roden Law represents people injured in car accidents in Columbia, South Carolina and throughout the Midlands</strong> — Lexington, Irmo, West Columbia, Cayce, Forest Acres, and Blythewood. Our Columbia attorneys handle every case on a <strong>contingency fee basis: you pay nothing unless we win</strong>. Roden Law has recovered <strong>more than $300 million</strong> for injured clients across Georgia and South Carolina and holds a <strong>4.9-star average rating from hundreds of client reviews</strong>. Call <a href="tel:+18032192816">(803) 219-2816</a> for a free, confidential case review.</p>
 
 <h2>Why Choose Roden Law for a Columbia Car Accident Claim</h2>
 <p>Columbia's car accident market is crowded with high-volume advertising firms. What separates Roden Law is direct attorney involvement: you work with your attorney — not a rotating desk of case managers — from intake through settlement or verdict. Our office at 1545 Sumter Street, Suite B sits in the downtown corridor minutes from the Richland County Court of Common Pleas, so filings, hearings, and client meetings happen without the delays that come from running a Midlands case out of a distant Charleston or Atlanta office.</p>
@@ -127,7 +127,7 @@ if ( $attorney_id ) {
 $faqs = array(
 	array(
 		'question' => 'Who are the best car accident lawyers in Columbia, SC?',
-		'answer'   => 'Roden Law is a leading car accident firm serving Columbia and the Midlands, with a 4.9-star average from 500+ client reviews and more than $300 million recovered for injured clients across Georgia and South Carolina. Our Columbia office at 1545 Sumter Street handles every case on a contingency fee basis — no fee unless we win — and you work directly with your attorney, not a case manager. Call (803) 219-2816 for a free consultation.',
+		'answer'   => 'Roden Law is a leading car accident firm serving Columbia and the Midlands, with a 4.9-star average from hundreds of client reviews and more than $300 million recovered for injured clients across Georgia and South Carolina. Our Columbia office at 1545 Sumter Street handles every case on a contingency fee basis — no fee unless we win — and you work directly with your attorney, not a case manager. Call (803) 219-2816 for a free consultation.',
 	),
 	array(
 		'question' => 'How long do I have to file a car accident claim in Columbia, South Carolina?',

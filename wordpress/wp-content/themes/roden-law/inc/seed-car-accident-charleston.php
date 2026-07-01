@@ -29,7 +29,7 @@ $attorney_id = ( $p = get_page_by_path( 'graeham-c-gillin', OBJECT, 'attorney' )
 WP_CLI::log( "Pillar ID: {$pillar_id} | Attorney ID: {$attorney_id}" );
 
 $content = <<<'HTML'
-<p><strong>Roden Law represents people injured in car accidents in Charleston, South Carolina and throughout the Lowcountry</strong> — Mount Pleasant, West Ashley, James Island, Johns Island, and Daniel Island. Every case is handled on a <strong>contingency fee basis: you pay nothing unless we win</strong>. Roden Law has recovered <strong>more than $300 million</strong> for injured clients and holds a <strong>4.9-star average from 500+ client reviews</strong>. Our downtown office sits at 127 King Street, Suite 200, minutes from the Charleston County courthouse. Call <a href="tel:+18437908999">(843) 790-8999</a> for a free, confidential case review.</p>
+<p><strong>Roden Law represents people injured in car accidents in Charleston, South Carolina and throughout the Lowcountry</strong> — Mount Pleasant, West Ashley, James Island, Johns Island, and Daniel Island. Every case is handled on a <strong>contingency fee basis: you pay nothing unless we win</strong>. Roden Law has recovered <strong>more than $300 million</strong> for injured clients and holds a <strong>4.9-star average from hundreds of client reviews</strong>. Our downtown office sits at 127 King Street, Suite 200, minutes from the Charleston County courthouse. Call <a href="tel:+18437908999">(843) 790-8999</a> for a free, confidential case review.</p>
 
 <h2>Why Choose Roden Law for a Charleston Car Accident Claim</h2>
 <p>Charleston's peninsula geography and heavy tourist traffic make its crashes uniquely complex, and the local insurance defense bar knows it. What sets Roden Law apart is direct attorney involvement: you work with your attorney — not a rotating desk of case managers — from intake through settlement or verdict. Our King Street office is steps from the Charleston County Court of Common Pleas, so filings, hearings, and client meetings happen without delay.</p>
@@ -117,7 +117,7 @@ if ( $attorney_id ) {
 $faqs = array(
 	array(
 		'question' => 'Who are the best car accident lawyers in Charleston, SC?',
-		'answer'   => 'Roden Law is a leading car accident firm serving Charleston and the Lowcountry, with a 4.9-star average from 500+ client reviews and more than $300 million recovered for injured clients across Georgia and South Carolina. Our downtown office at 127 King Street handles every case on a contingency fee basis — no fee unless we win — and you work directly with your attorney. Call (843) 790-8999 for a free consultation.',
+		'answer'   => 'Roden Law is a leading car accident firm serving Charleston and the Lowcountry, with a 4.9-star average from hundreds of client reviews and more than $300 million recovered for injured clients across Georgia and South Carolina. Our downtown office at 127 King Street handles every case on a contingency fee basis — no fee unless we win — and you work directly with your attorney. Call (843) 790-8999 for a free consultation.',
 	),
 	array(
 		'question' => 'How long do I have to file a car accident claim in Charleston, South Carolina?',
