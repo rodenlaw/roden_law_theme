@@ -38,6 +38,7 @@ $content = '<p>Motorcycle riders who are hurt in a crash in South Carolina face 
 <li><strong>Distracted or impaired driving</strong> &mdash; the driver never sees the motorcycle.</li>
 <li><strong>Road hazards and defects</strong> &mdash; potholes, debris, or poor road design.</li>
 </ul>
+<p>Because most motorcycle crashes are caused by another driver, they often involve the same insurers and defense tactics as a <a href="/south-carolina-car-accident-lawyers/">South Carolina car accident</a> claim &mdash; with the added hurdle of rider bias.</p>
 
 <h2>Does South Carolina&rsquo;s helmet law affect my claim?</h2>
 <p>South Carolina only requires <strong>riders and passengers under 21</strong> to wear a helmet (S.C. Code &sect; 56-5-3660); riders 21 and older are not legally required to wear one. Whether you were wearing a helmet does not automatically decide your case. South Carolina has no statute squarely deciding how helmet use affects a motorcycle injury claim, so insurers may still try to argue that a rider&rsquo;s choices added to the severity of the injuries under the comparative negligence rule &mdash; an argument our attorneys are prepared to counter. (Notably, South Carolina law bars that kind of argument for seat belts, but there is no equivalent statutory bar for motorcycle helmets.)</p>

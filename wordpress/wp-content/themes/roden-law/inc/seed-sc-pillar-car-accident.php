@@ -58,6 +58,7 @@ $content = '<p>A car accident can upend your life in seconds &mdash; medical bil
 <li><strong>Running red lights and failure to yield</strong> &mdash; intersection collisions.</li>
 <li><strong>Rear-end and merge crashes</strong> &mdash; in congested corridors like Malfunction Junction in Columbia.</li>
 </ul>
+<p>Crashes involving other vehicle types follow their own rules and insurers. If you were hurt by a commercial truck or while riding a motorcycle, see our <a href="/south-carolina-truck-accident-lawyers/">South Carolina truck accident lawyers</a> and <a href="/south-carolina-motorcycle-accident-lawyer/">South Carolina motorcycle accident lawyers</a> pages.</p>
 
 <h2>Talk to a South Carolina car accident lawyer for free</h2>
 <p>Roden Law represents car accident victims throughout South Carolina, from the Lowcountry and the Midlands to the Grand Strand and the Upstate. A car accident attorney will review your case at no cost, explain the deadline that applies to you, and start protecting your evidence right away. There are no fees unless we win. Explore our <a href="/practice-areas/car-accident-lawyers/">car accident practice</a> &mdash; one of the <a href="/south-carolina-personal-injury-lawyer/">South Carolina personal injury</a> claims we handle statewide.</p>';

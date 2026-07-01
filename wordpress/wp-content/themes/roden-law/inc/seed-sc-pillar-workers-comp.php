@@ -34,8 +34,8 @@ $content = '<p>A workplace injury can put your health, your paycheck, and your f
 <p>Under the South Carolina Workers&rsquo; Compensation Act (S.C. Code Title 42), an injured worker is generally entitled to:</p>
 <ul>
 <li><strong>Medical treatment</strong> for the work injury, covered by the employer&rsquo;s insurer.</li>
-<li><strong>Wage-replacement benefits</strong> &mdash; a portion of your average weekly wage while you cannot work.</li>
-<li><strong>Permanent disability or impairment benefits</strong> if the injury leaves lasting effects.</li>
+<li><strong>Wage-replacement benefits</strong> &mdash; a portion of your average weekly wage while you cannot work (see <a href="/resources/how-much-does-south-carolina-workers-comp-pay/">how much South Carolina workers&rsquo; comp pays</a>).</li>
+<li><strong>Permanent disability or impairment benefits</strong> if the injury leaves lasting effects &mdash; based on your <a href="/resources/south-carolina-workers-comp-impairment-rating-mmi/">impairment rating at MMI</a> and the <a href="/resources/south-carolina-workers-comp-body-part-values/">scheduled value of the body part affected</a>.</li>
 <li><strong>Vocational and related benefits</strong> in some cases, depending on the injury.</li>
 </ul>
 <p>Importantly, workers&rsquo; comp is a no-fault system: you generally do not have to prove your employer did anything wrong to qualify.</p>
@@ -44,7 +44,7 @@ $content = '<p>A workplace injury can put your health, your paycheck, and your f
 <p>Workers&rsquo; comp runs on its own timeline, separate from the 3-year deadline for ordinary injury lawsuits. You must <strong>report your injury to your employer within 90 days</strong> of the accident (S.C. Code &sect; 42-15-20) &mdash; in writing whenever possible &mdash; and you must <strong>file your claim with the South Carolina Workers&rsquo; Compensation Commission within 2 years</strong> of the injury (S.C. Code &sect; 42-15-40). Missing either deadline can cost you your benefits, so report the injury right away and do not wait to file. (Some injuries, such as repetitive-trauma or occupational-disease conditions, follow special rules for when the clock starts.)</p>
 
 <h2>What should I do if my workers&rsquo; comp claim is denied?</h2>
-<p>Denials are common &mdash; insurers may dispute whether the injury is work-related, whether it is as serious as you say, or whether you reported it in time. A denial is not the end. You have the right to request a hearing before the South Carolina Workers&rsquo; Compensation Commission and to appeal. A workers&rsquo; compensation lawyer can gather the medical evidence, meet the deadlines, and present your case at the hearing.</p>
+<p>Denials are common &mdash; insurers may dispute whether the injury is work-related, whether it is as serious as you say, or whether you reported it in time. A denial is not the end. You have the right to request a hearing before the South Carolina Workers&rsquo; Compensation Commission and to appeal &mdash; our guide on <a href="/resources/south-carolina-workers-comp-claim-denied/">what to do when a South Carolina workers&rsquo; comp claim is denied</a> walks through each step. A workers&rsquo; compensation lawyer can gather the medical evidence, meet the deadlines, and present your case at the hearing.</p>
 
 <h2>Can I sue a third party in addition to my workers&rsquo; comp claim?</h2>
 <p>Workers&rsquo; comp usually bars you from suing your own employer, but if someone <em>other</em> than your employer caused your injury &mdash; for example, a negligent driver, a defective machine, or an outside contractor &mdash; you may have a separate <strong>third-party personal injury claim</strong>. That claim can recover damages workers&rsquo; comp does not, such as full lost wages and pain and suffering. South Carolina&rsquo;s <a href="/resources/south-carolina-comparative-negligence/">comparative negligence</a> rule applies to that separate claim.</p>
