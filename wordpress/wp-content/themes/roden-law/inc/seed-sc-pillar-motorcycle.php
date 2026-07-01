@@ -49,7 +49,7 @@ $content = '<p>Motorcycle riders who are hurt in a crash in South Carolina face 
 <p>South Carolina uses a <strong>modified comparative negligence</strong> rule: you can recover as long as you were less than 51% at fault, with your award reduced by your share of fault. Because insurers often try to pin extra blame on riders, this rule is a frequent battleground &mdash; see how <a href="/resources/south-carolina-comparative-negligence/">South Carolina comparative negligence</a> works, and ask about <a href="/resources/south-carolina-um-uim-stacking/">stacking UM/UIM coverage</a> when the at-fault driver is underinsured.</p>
 
 <h2>Talk to a South Carolina motorcycle accident lawyer for free</h2>
-<p>Roden Law represents motorcycle crash victims throughout South Carolina. A motorcycle accident attorney will review your case at no cost, explain your deadline, and start building the evidence to overcome insurer bias. There are no fees unless we win. Explore our <a href="/practice-areas/motorcycle-accident-lawyers/">motorcycle accident practice</a>.</p>';
+<p>Roden Law represents motorcycle crash victims throughout South Carolina. A motorcycle accident attorney will review your case at no cost, explain your deadline, and start building the evidence to overcome insurer bias. There are no fees unless we win. Explore our <a href="/practice-areas/motorcycle-accident-lawyers/">motorcycle accident practice</a> &mdash; one part of the range of <a href="/south-carolina-personal-injury-lawyer/">South Carolina personal injury</a> cases we handle statewide.</p>';
 
 $faqs = array(
     array(

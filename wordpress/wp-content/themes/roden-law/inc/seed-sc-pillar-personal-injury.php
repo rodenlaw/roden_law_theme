@@ -34,7 +34,7 @@ $content = '<p>When someone else&rsquo;s carelessness leaves you injured in Sout
 <h2>What types of cases do South Carolina personal injury lawyers handle?</h2>
 <p>Personal injury covers any harm caused by another party&rsquo;s negligence. Roden Law handles the full range across South Carolina:</p>
 <ul>
-<li><a href="/south-carolina-car-accident-lawyer/">Car accidents</a> &mdash; the most common injury claims statewide.</li>
+<li><a href="/south-carolina-car-accident-lawyers/">Car accidents</a> &mdash; the most common injury claims statewide.</li>
 <li><a href="/south-carolina-truck-accident-lawyers/">Truck accidents</a> &mdash; complex cases against trucking companies and their insurers.</li>
 <li><a href="/south-carolina-motorcycle-accident-lawyer/">Motorcycle accidents</a> &mdash; where riders face built-in insurer bias.</li>
 <li><a href="/south-carolina-workers-compensation-lawyer/">Workplace injuries</a> &mdash; workers&rsquo; compensation and third-party claims.</li>

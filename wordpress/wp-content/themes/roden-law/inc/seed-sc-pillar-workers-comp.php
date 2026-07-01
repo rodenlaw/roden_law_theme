@@ -50,7 +50,7 @@ $content = '<p>A workplace injury can put your health, your paycheck, and your f
 <p>Workers&rsquo; comp usually bars you from suing your own employer, but if someone <em>other</em> than your employer caused your injury &mdash; for example, a negligent driver, a defective machine, or an outside contractor &mdash; you may have a separate <strong>third-party personal injury claim</strong>. That claim can recover damages workers&rsquo; comp does not, such as full lost wages and pain and suffering. South Carolina&rsquo;s <a href="/resources/south-carolina-comparative-negligence/">comparative negligence</a> rule applies to that separate claim.</p>
 
 <h2>Talk to a South Carolina workers&rsquo; compensation lawyer for free</h2>
-<p>If you were hurt at work anywhere in South Carolina, Roden Law will explain your rights, help you meet the deadlines, and fight a denial if one comes. A workers&rsquo; compensation attorney will review your case at no cost, and there are no fees unless we win. Explore our <a href="/practice-areas/workers-compensation-lawyers/">workers&rsquo; compensation practice</a>.</p>';
+<p>If you were hurt at work anywhere in South Carolina, Roden Law will explain your rights, help you meet the deadlines, and fight a denial if one comes. A workers&rsquo; compensation attorney will review your case at no cost, and there are no fees unless we win. Explore our <a href="/practice-areas/workers-compensation-lawyers/">workers&rsquo; compensation practice</a>. If someone other than your employer helped cause your workplace injury, you may also have a separate <a href="/south-carolina-personal-injury-lawyer/">South Carolina personal injury</a> claim.</p>';
 
 $faqs = array(
     array(
