@@ -1434,7 +1434,7 @@ h2.key-takeaways-title {
 
 .site-footer { background: var(--navy); color: var(--white); padding: 48px 24px 0; }
 .footer-grid {
-    display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 32px;
+    display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr; gap: 32px;
     max-width: var(--container); margin: 0 auto;
 }
 .footer-brand-name { font-family: var(--font-serif); font-size: 20px; font-weight: 700; margin-bottom: 12px; }

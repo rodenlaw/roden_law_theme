@@ -23,6 +23,16 @@ $footer_practice_areas = array(
     'Motorcycle Accidents'  => 'motorcycle-accident-lawyers',
     'Pedestrian Accidents'  => 'pedestrian-accident-lawyers',
 );
+
+// South Carolina statewide pillars (root-relative paths — heading gives SC context).
+$footer_sc_pillars = array(
+    'Car Accidents'         => '/south-carolina-car-accident-lawyers/',
+    'Truck Accidents'       => '/south-carolina-truck-accident-lawyers/',
+    'Motorcycle Accidents'  => '/south-carolina-motorcycle-accident-lawyer/',
+    'Workers&rsquo; Compensation' => '/south-carolina-workers-compensation-lawyer/',
+    'Wrongful Death'        => '/south-carolina-wrongful-death-lawyer/',
+    'Personal Injury'       => '/south-carolina-personal-injury-lawyer/',
+);
 ?>
     </div><!-- .site-content -->
 
@@ -160,7 +170,23 @@ $footer_practice_areas = array(
                     <?php endforeach; ?>
                 </div>
 
-                <!-- Column 4: Free Case Review CTA -->
+                <!-- Column 4: South Carolina statewide pillars -->
+                <div class="footer-col footer-sc-statewide">
+                    <h4 class="footer-heading footer-heading-accent">
+                        <?php esc_html_e( 'South Carolina', 'roden-law' ); ?>
+                    </h4>
+                    <ul class="footer-links">
+                        <?php foreach ( $footer_sc_pillars as $label => $path ) : ?>
+                            <li>
+                                <a href="<?php echo esc_url( home_url( $path ) ); ?>">
+                                    <?php echo wp_kses( $label, array() ); ?>
+                                </a>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
+
+                <!-- Column 5: Free Case Review CTA -->
                 <div class="footer-col footer-form-col">
                     <h4 class="footer-heading footer-heading-accent">
                         <?php esc_html_e( 'Free Case Review', 'roden-law' ); ?>
