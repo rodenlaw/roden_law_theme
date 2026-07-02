@@ -175,6 +175,45 @@ $related_subtypes = get_posts( array(
             <?php roden_ai_definition_block( get_the_title() ); ?>
 
             <!-- ═══════════════════════════════════════════════════════════
+                 KEY TAKEAWAYS (extractable summary box for AI/snippets).
+                 Renders a hand-written _roden_key_takeaways if set; otherwise
+                 auto-generates a jurisdiction-aware summary from the office +
+                 firm-data law values already shown in the State Law box below
+                 (no new facts — resummarized for extractability, near-zero cost).
+                 ═══════════════════════════════════════════════════════════ -->
+            <?php
+            $int_takeaways = get_post_meta( $post_id, '_roden_key_takeaways', true );
+            if ( ! $int_takeaways && $jurisdiction ) {
+                $ta_label   = strtolower( preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', $parent_title ) );
+                if ( '' === $ta_label ) {
+                    $ta_label = 'accident';
+                }
+                $ta_article = in_array( strtolower( $ta_label[0] ), array( 'a', 'e', 'i', 'o', 'u' ), true ) ? 'an' : 'a';
+                // Derive a clean fault threshold from the canonical rule string
+                // ("Modified — recover if less than 51% at fault" → "less than 51% at fault").
+                $ta_fault = trim( preg_replace( '/^Modified\s*[—-]\s*recover if\s*/i', '', $jurisdiction['comp_fault_rule'] ) );
+                if ( '' === $ta_fault ) {
+                    $ta_fault = $jurisdiction['comp_fault_rule'];
+                }
+                $int_takeaways = sprintf(
+                    'If you were injured in %1$s %2$s in %3$s, %4$s, you generally have %5$s years from the date of injury to file a lawsuit (%6$s). %4$s follows a modified comparative negligence rule — you can still recover as long as you are %7$s, with your award reduced by your percentage of fault. There is no cap on compensatory damages in an ordinary %4$s injury case. Roden Law represents %3$s injury victims on a contingency fee: the consultation is free and there is no fee unless we win.',
+                    esc_html( $ta_article ),
+                    esc_html( $ta_label ),
+                    esc_html( $office['market_name'] ),
+                    esc_html( $office['state_full'] ),
+                    esc_html( $jurisdiction['statute_years'] ),
+                    esc_html( $jurisdiction['statute_cite'] ),
+                    esc_html( $ta_fault )
+                );
+            }
+            if ( $int_takeaways ) : ?>
+            <section class="key-takeaways-box" data-ai-extractable="true">
+                <h2 class="key-takeaways-title">Key Takeaways</h2>
+                <p><?php echo wp_kses_post( $int_takeaways ); ?></p>
+            </section>
+            <?php endif; ?>
+
+            <!-- ═══════════════════════════════════════════════════════════
                  WHY HIRE SECTION (uses own content, then parent fallback)
                  ═══════════════════════════════════════════════════════════ -->
             <?php
