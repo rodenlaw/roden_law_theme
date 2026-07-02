@@ -872,26 +872,59 @@ function roden_faq_section( $post_id = null ) {
     if ( ! is_array( $faqs ) || empty( $faqs ) ) {
         return;
     }
+
+    // Opt-in grouped rendering: if any FAQ carries a 'category', render grouped
+    // <h3> sections, each with its own .faq-accordion so the "close others" JS
+    // scopes per group. FAQs without a category render flat (unchanged).
+    $has_categories = false;
+    foreach ( $faqs as $faq ) {
+        if ( ! empty( $faq['category'] ) ) {
+            $has_categories = true;
+            break;
+        }
+    }
+
+    // Shared single-item renderer — identical markup in both modes.
+    $render_item = function ( $faq, $uid ) {
+        if ( empty( $faq['question'] ) || empty( $faq['answer'] ) ) {
+            return;
+        }
+        ?>
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-<?php echo esc_attr( $uid ); ?>">
+                <span><?php echo esc_html( $faq['question'] ); ?></span>
+                <span class="faq-toggle" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faq-answer-<?php echo esc_attr( $uid ); ?>" style="display:none;">
+                <p><?php echo wp_kses_post( $faq['answer'] ); ?></p>
+            </div>
+        </div>
+        <?php
+    };
     ?>
     <div class="faq-section" id="faq" data-ai-extractable="true">
         <h2 class="section-title">Frequently Asked Questions</h2>
-        <div class="faq-accordion">
-            <?php foreach ( $faqs as $i => $faq ) :
-                if ( empty( $faq['question'] ) || empty( $faq['answer'] ) ) {
-                    continue;
-                }
-                ?>
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-<?php echo (int) $i; ?>">
-                        <span><?php echo esc_html( $faq['question'] ); ?></span>
-                        <span class="faq-toggle" aria-hidden="true">+</span>
-                    </button>
-                    <div class="faq-answer" id="faq-answer-<?php echo (int) $i; ?>" style="display:none;">
-                        <p><?php echo wp_kses_post( $faq['answer'] ); ?></p>
+        <?php if ( $has_categories ) :
+            // Group, preserving first-seen category order.
+            $grouped = array();
+            foreach ( $faqs as $faq ) {
+                $cat = ! empty( $faq['category'] ) ? $faq['category'] : 'More Questions';
+                $grouped[ $cat ][] = $faq;
+            }
+            $uid = 0;
+            foreach ( $grouped as $cat => $items ) : ?>
+                <div class="faq-category">
+                    <h3 class="faq-category-title"><?php echo esc_html( $cat ); ?></h3>
+                    <div class="faq-accordion">
+                        <?php foreach ( $items as $faq ) { $render_item( $faq, ++$uid ); } ?>
                     </div>
                 </div>
-            <?php endforeach; ?>
-        </div>
+            <?php endforeach;
+        else : ?>
+            <div class="faq-accordion">
+                <?php foreach ( $faqs as $i => $faq ) { $render_item( $faq, (int) $i ); } ?>
+            </div>
+        <?php endif; ?>
     </div>
     <?php
 }
