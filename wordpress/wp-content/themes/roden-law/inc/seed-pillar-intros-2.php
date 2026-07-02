@@ -12,7 +12,7 @@ $pillar_intros = array(
 
     'dog-bite-lawyers' => array(
         'negligence' => <<<'EOT'
-**Georgia and South Carolina take sharply different approaches to dog-bite liability.** **South Carolina is a strict-liability state** under **S.C. Code § 47-3-110** — a dog owner is liable for injuries to a person lawfully on public or private property regardless of the dog's prior viciousness. No "first bite" required. **Georgia is a modified one-bite state** under **O.C.G.A. § 51-2-7**: the owner is liable only if the dog was vicious or dangerous *and* the owner knew it. The Georgia Supreme Court in *Steagald v. Eason*, 300 Ga. 717 (2017), confirmed that violation of a local **leash ordinance** can substitute for the scienter element. Whichever state your case is in, you have {sol_years} years to file under {sol_cite}.
+{{SC}}**South Carolina is a strict-liability state** under **S.C. Code § 47-3-110** — a dog owner is liable for injuries to a person lawfully on public or private property regardless of the dog's prior viciousness. No "first bite" required. {{/SC}}{{GA}}**Georgia is a modified one-bite state** under **O.C.G.A. § 51-2-7**: the owner is liable only if the dog was vicious or dangerous *and* the owner knew it. The Georgia Supreme Court in *Steagald v. Eason*, 300 Ga. 717 (2017), confirmed that violation of a local **leash ordinance** can substitute for the scienter element. {{/GA}}You have {sol_years} years to file under {sol_cite}.
 EOT
 ,
         'compensation' => <<<'EOT'
@@ -38,7 +38,7 @@ Spinal cord injury (SCI), like TBI, is an injury type rather than a stand-alone 
 EOT
 ,
         'compensation' => <<<'EOT'
-**Lifetime care costs drive the case.** Plaintiffs typically present a **life-care plan** quantifying attendant care, durable medical equipment, home modifications, recurring surgeries, mobility devices, and bowel/bladder management — frequently valued at $5 million to $15 million or more for severe complete injuries. {state_full} permits full economic recovery; noneconomic damages are uncapped outside the medical-malpractice context. Future medical damages must be **reduced to present value** under O.C.G.A. § 51-12-13 (Georgia) or *Haltiwanger v. Barr*, 258 S.C. 27 (1972) (South Carolina). Plaintiff economists and vocational experts are essential.
+**Lifetime care costs drive the case.** Plaintiffs typically present a **life-care plan** quantifying attendant care, durable medical equipment, home modifications, recurring surgeries, mobility devices, and bowel/bladder management — frequently valued at $5 million to $15 million or more for severe complete injuries. {state_full} permits full economic recovery; noneconomic damages are uncapped outside the medical-malpractice context. Future medical damages must be **reduced to present value** {{GA}}under O.C.G.A. § 51-12-13{{/GA}}{{SC}}under *Haltiwanger v. Barr*, 258 S.C. 27 (1972){{/SC}}. Plaintiff economists and vocational experts are essential.
 EOT
 ,
     ),
@@ -56,22 +56,22 @@ EOT
 
     'product-liability-lawyers' => array(
         'negligence' => <<<'EOT'
-Product liability recognizes **three defect theories**: (1) manufacturing defect, (2) design defect, and (3) warning/instruction defect. **Georgia codified strict products liability at O.C.G.A. § 51-1-11(b)(1)** for manufacturers — but the doctrine does *not* extend to non-manufacturer sellers (retailers, distributors), who can only be sued in negligence. **South Carolina recognizes strict liability under S.C. Code § 15-73-10** (adopting Restatement (Second) § 402A) and applies a **risk-utility test** for design defects per *Branham v. Ford Motor Co.*, 390 S.C. 203 (2010). Federal preemption (FDA, NHTSA, FIFRA) routinely narrows recoverable theories for drugs, vehicles, and pesticides. Filing deadline: {sol_years} years from injury under {sol_cite}.
+Product liability recognizes **three defect theories**: (1) manufacturing defect, (2) design defect, and (3) warning/instruction defect. {{GA}}**Georgia codified strict products liability at O.C.G.A. § 51-1-11(b)(1)** for manufacturers — but the doctrine does *not* extend to non-manufacturer sellers (retailers, distributors), who can only be sued in negligence. {{/GA}}{{SC}}**South Carolina recognizes strict liability under S.C. Code § 15-73-10** (adopting Restatement (Second) § 402A) and applies a **risk-utility test** for design defects per *Branham v. Ford Motor Co.*, 390 S.C. 203 (2010). {{/SC}}Federal preemption (FDA, NHTSA, FIFRA) routinely narrows recoverable theories for drugs, vehicles, and pesticides. Filing deadline: {sol_years} years from injury under {sol_cite}.
 EOT
 ,
         'compensation' => <<<'EOT'
-Standard tort damages apply, with **enhanced punitive exposure**: **Georgia's $250,000 punitive cap does NOT apply to product-liability cases** under O.C.G.A. § 51-12-5.1(e)(1) — punitive damages are uncapped, but the State of Georgia takes 75% of the punitive award after attorneys' fees and costs. South Carolina's 3:1 ratio / $500,000 punitive cap (S.C. Code § 15-32-530) applies with felony and intoxication exceptions. Federal preemption (e.g., *Riegel v. Medtronic, Inc.*, 552 U.S. 312 (2008) for PMA medical devices) can bar entire categories of claims, so coverage analysis is critical in any drug or device case.
+Standard tort damages apply, with **enhanced punitive exposure**. {{GA}}**Georgia's $250,000 punitive cap does NOT apply to product-liability cases** under O.C.G.A. § 51-12-5.1(e)(1) — punitive damages are uncapped, but the State of Georgia takes 75% of the punitive award after attorneys' fees and costs. {{/GA}}{{SC}}South Carolina's 3:1 ratio / $500,000 punitive cap (S.C. Code § 15-32-530) applies with felony and intoxication exceptions. {{/SC}}Federal preemption (e.g., *Riegel v. Medtronic, Inc.*, 552 U.S. 312 (2008) for PMA medical devices) can bar entire categories of claims, so coverage analysis is critical in any drug or device case.
 EOT
 ,
     ),
 
     'boating-accident-lawyers' => array(
         'negligence' => <<<'EOT'
-Boating cases sit at the intersection of state recreational-watercraft statutes and **federal admiralty jurisdiction** (when on navigable waters). Operator negligence is commonly built on BUI laws — Georgia: **O.C.G.A. § 52-7-12** (.08 BAC) plus the 2013 **Kile Glover Boat Safety Act** raising age and education requirements; South Carolina: **S.C. Code § 50-21-112 to -114**. On navigable waters, the **Limitation of Liability Act, 46 U.S.C. § 30501**, lets a vessel owner cap liability to the post-casualty value of the vessel — a frequent defense in fatal recreational-boat cases. Choosing between admiralty and state-court forums materially affects recovery.
+Boating cases sit at the intersection of state recreational-watercraft statutes and **federal admiralty jurisdiction** (when on navigable waters). Operator negligence is commonly built on BUI laws. {{GA}}Georgia prohibits boating under the influence under **O.C.G.A. § 52-7-12** (.08 BAC), plus the 2013 **Kile Glover Boat Safety Act** raising age and education requirements. {{/GA}}{{SC}}South Carolina prohibits boating under the influence under **S.C. Code § 50-21-112 to -114**. {{/SC}}On navigable waters, the **Limitation of Liability Act, 46 U.S.C. § 30501**, lets a vessel owner cap liability to the post-casualty value of the vessel — a frequent defense in fatal recreational-boat cases. Choosing between admiralty and state-court forums materially affects recovery.
 EOT
 ,
         'compensation' => <<<'EOT'
-On navigable waters in death cases, **DOHSA limits recovery to pecuniary losses** for non-seamen passengers — **barring noneconomic loss-of-society claims** entirely (a major trap for the unwary). State-water cases follow ordinary tort damages with full noneconomic recovery available, including pain and suffering, loss of enjoyment, and disfigurement. In a Georgia state-water boating death, the **"full value of life" measure (O.C.G.A. § 51-4-1)** can dramatically increase the recovery vs. an admiralty claim. Coverage analysis frequently involves the boat's policy, the operator's homeowners' policy (often excluding watercraft over a length threshold), and any commercial liability policy.
+On navigable waters in death cases, **DOHSA limits recovery to pecuniary losses** for non-seamen passengers — **barring noneconomic loss-of-society claims** entirely (a major trap for the unwary). State-water cases follow ordinary tort damages with full noneconomic recovery available, including pain and suffering, loss of enjoyment, and disfigurement. {{GA}}In a Georgia state-water boating death, the **"full value of life" measure (O.C.G.A. § 51-4-1)** can dramatically increase the recovery vs. an admiralty claim. {{/GA}}Coverage analysis frequently involves the boat's policy, the operator's homeowners' policy (often excluding watercraft over a length threshold), and any commercial liability policy.
 EOT
 ,
     ),
@@ -82,18 +82,18 @@ Burn cases are not their own theory — liability rides on the underlying claim:
 EOT
 ,
         'compensation' => <<<'EOT'
-Burn damages skew toward extreme noneconomic values: **scarring, disfigurement, multiple skin grafts, contracture-release surgeries, and lifelong cosmetic and psychological consequences**. Both Georgia and South Carolina permit disfigurement damages as a separate jury consideration; in workers' compensation, statutory disfigurement awards apply (GA: O.C.G.A. § 34-9-263; SC: S.C. Code § 42-9-30(20)). Severe burn cases routinely include burn-unit ICU costs of $1 million+, multi-year reconstructive surgery, and lifelong pressure-garment and psychological care.
+Burn damages skew toward extreme noneconomic values: **scarring, disfigurement, multiple skin grafts, contracture-release surgeries, and lifelong cosmetic and psychological consequences**. Both Georgia and South Carolina permit disfigurement damages as a separate jury consideration; in workers' compensation, statutory disfigurement awards apply {{GA}}under O.C.G.A. § 34-9-263{{/GA}}{{SC}}under S.C. Code § 42-9-30(20){{/SC}}. Severe burn cases routinely include burn-unit ICU costs of $1 million+, multi-year reconstructive surgery, and lifelong pressure-garment and psychological care.
 EOT
 ,
     ),
 
     'construction-accident-lawyers' => array(
         'negligence' => <<<'EOT'
-Construction injuries usually involve a layered defendant pool: **employer** (workers' compensation exclusive remedy), **general contractor**, **subcontractors**, **property owner**, and **equipment manufacturers**. **OSHA regulations (29 C.F.R. Part 1926)** support negligence-per-se theories against non-employer third parties — but **OSHA itself creates no private right of action**. The **statutory employer doctrine** (GA: O.C.G.A. § 34-9-8; SC: S.C. Code § 42-1-400) can extend workers'-comp immunity *up* the contractor chain, eliminating tort recovery against general contractors in many cases. {market_name} job-site investigations require fast preservation of scene photos, OSHA reports, and equipment.
+Construction injuries usually involve a layered defendant pool: **employer** (workers' compensation exclusive remedy), **general contractor**, **subcontractors**, **property owner**, and **equipment manufacturers**. **OSHA regulations (29 C.F.R. Part 1926)** support negligence-per-se theories against non-employer third parties — but **OSHA itself creates no private right of action**. The **statutory employer doctrine** ({{GA}}O.C.G.A. § 34-9-8{{/GA}}{{SC}}S.C. Code § 42-1-400{{/SC}}) can extend workers'-comp immunity *up* the contractor chain, eliminating tort recovery against general contractors in many cases. {market_name} job-site investigations require fast preservation of scene photos, OSHA reports, and equipment.
 EOT
 ,
         'compensation' => <<<'EOT'
-Workers' compensation covers the worker against the employer (medical, TTD, PPD, death benefits — but **no pain and suffering**). **Tort recovery against third parties** (general contractor, equipment manufacturer, property owner) is the path to noneconomic damages, full future earning capacity, and medicals beyond the WC schedule. Subrogation by the WC carrier under O.C.G.A. § 34-9-11.1 (GA) and S.C. Code § 42-1-560 (SC) reduces net recovery, but skilled negotiation can substantially limit the carrier's lien. Multi-defendant apportionment under {state_full}'s comparative-fault statute is the central strategic question.
+Workers' compensation covers the worker against the employer (medical, TTD, PPD, death benefits — but **no pain and suffering**). **Tort recovery against third parties** (general contractor, equipment manufacturer, property owner) is the path to noneconomic damages, full future earning capacity, and medicals beyond the WC schedule. Subrogation by the WC carrier {{GA}}under O.C.G.A. § 34-9-11.1{{/GA}}{{SC}}under S.C. Code § 42-1-560{{/SC}} reduces net recovery, but skilled negotiation can substantially limit the carrier's lien. Multi-defendant apportionment under {state_full}'s comparative-fault statute is the central strategic question.
 EOT
 ,
     ),

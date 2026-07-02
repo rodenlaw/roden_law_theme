@@ -1690,10 +1690,34 @@ function roden_markdown_bold_to_html( $text ) {
  * @param array  $jurisdiction Jurisdiction array.
  * @return string Rendered HTML, or '' if pillar meta is empty.
  */
+/**
+ * Resolve {{GA}}...{{/GA}} / {{SC}}...{{/SC}} conditional blocks for a single-
+ * jurisdiction context (intersection pages render one office's state only): keep
+ * the office's state, drop the other, and unwrap the kept markers. Unknown/empty
+ * state fails safe by unwrapping BOTH (shows all) rather than stripping everything.
+ * Content without markers is returned unchanged (backward compatible).
+ *
+ * @param string $text
+ * @param array  $office Office array (uses 'state' = 'GA'|'SC').
+ * @return string
+ */
+function roden_strip_state_conditionals( $text, $office ) {
+    $state = strtoupper( isset( $office['state'] ) ? $office['state'] : '' );
+    if ( 'GA' === $state || 'SC' === $state ) {
+        $other = ( 'GA' === $state ) ? 'SC' : 'GA';
+        $text  = preg_replace( '/\{\{' . $other . '\}\}.*?\{\{\/' . $other . '\}\}/s', '', $text );
+        $text  = str_replace( array( '{{' . $state . '}}', '{{/' . $state . '}}' ), '', $text );
+    } else {
+        $text = str_replace( array( '{{GA}}', '{{/GA}}', '{{SC}}', '{{/SC}}' ), '', $text );
+    }
+    return $text;
+}
+
 function roden_render_pillar_intro( $parent_id, $meta_key, $office, $jurisdiction = array() ) {
     if ( ! $parent_id ) return '';
     $raw = get_post_meta( $parent_id, $meta_key, true );
     if ( ! $raw ) return '';
+    $raw         = roden_strip_state_conditionals( $raw, $office );
     $with_tokens = roden_replace_local_tokens( $raw, $office, $jurisdiction );
     $with_bold   = roden_markdown_bold_to_html( $with_tokens );
     return apply_filters( 'the_content', $with_bold );
