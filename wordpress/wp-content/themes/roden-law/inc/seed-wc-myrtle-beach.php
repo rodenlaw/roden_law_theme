@@ -1,0 +1,134 @@
+<?php
+/**
+ * Seeder: workers-compensation-lawyers × Myrtle Beach, SC intersection page (ENRICH)
+ *
+ * UPDATES the existing thin templated stub at /workers-compensation-lawyers/
+ * myrtle-beach-sc/ in place with rich, practice-specific, hyperlocal body content
+ * + FAQPage meta + attorney attribution. Part of P2 row-9 enrichment (2026-06).
+ * Office is physically in Murrells Inlet but markets the Grand Strand.
+ *
+ * The intersection template auto-generates the SC state-law box, "what to do"
+ * steps, negligence/elements, compensation block, Key Takeaways, attorneys, case
+ * results, and FAQ accordion. post_content ADDS what the template lacks: answer-
+ * first intro, "why Roden Law", local industry/claim drivers (hospitality/
+ * construction), and WC-specific SC deadline nuances.
+ *
+ * Usage:
+ *   wp eval-file wp-content/themes/roden-law/inc/seed-wc-myrtle-beach.php
+ * Safe to re-run: updates the existing page in place (does NOT create a new one).
+ */
+
+defined( 'ABSPATH' ) || exit;
+
+WP_CLI::log( 'Enriching workers-compensation-lawyers × Myrtle Beach, SC...' );
+
+$pillar = get_page_by_path( 'workers-compensation-lawyers', OBJECT, 'practice_area' );
+if ( ! $pillar ) {
+	WP_CLI::error( 'Pillar "workers-compensation-lawyers" not found. Seed the pillar first.' );
+}
+$pillar_id   = $pillar->ID;
+$attorney_id = ( $p = get_page_by_path( 'graeham-c-gillin', OBJECT, 'attorney' ) ) ? $p->ID : 0;
+WP_CLI::log( "Pillar ID: {$pillar_id} | Attorney ID: {$attorney_id}" );
+
+$content = <<<'HTML'
+<p><strong>Roden Law represents injured workers across the Grand Strand</strong> — Myrtle Beach, North Myrtle Beach, Murrells Inlet, Surfside Beach, Conway, and Pawleys Island — in South Carolina workers' compensation claims. Workers' comp is a <strong>no-fault</strong> system, so you do not have to prove your employer was negligent to receive benefits. We handle every claim on a <strong>contingency fee basis: you pay nothing unless we win</strong>. Roden Law has recovered <strong>more than $300 million</strong> for injured clients across Georgia and South Carolina and holds a <strong>4.9-star average from hundreds of client reviews</strong>. Our office is in Murrells Inlet, just off US-17. Call <a href="tel:+18436121980">(843) 612-1980</a> for a free, confidential claim review.</p>
+
+<h2>Why Choose Roden Law for a Grand Strand Workers' Comp Claim</h2>
+<p>The Grand Strand economy runs on hospitality, tourism, retail, and construction — industries that lean heavily on seasonal and hourly workers, and where carriers frequently dispute average weekly wage or push injured workers back to the job too soon. What separates Roden Law is direct attorney involvement — you work with your attorney, not a rotating desk of case managers — from the first injury report through your impairment rating and settlement. Our Murrells Inlet office knows the Horry and Georgetown County employers and the adjusters who handle their claims.</p>
+<ul>
+<li><strong>No fee unless we win</strong> — free consultation and no out-of-pocket cost to pursue your claim.</li>
+<li><strong>We fight benefit cutoffs</strong> — when the carrier stops your checks or denies surgery, we take it to the Commission.</li>
+<li><strong>Full-value settlements</strong> — we account for your impairment rating, future medical needs, and lost earning capacity before you sign anything.</li>
+</ul>
+
+<h2>Common Grand Strand Workplace Injuries We Handle</h2>
+<p>Tourism and construction drive the region's most common on-the-job injuries:</p>
+<ul>
+<li><strong>Hospitality and restaurant injuries</strong> — burns, slips, and lifting injuries among hotel, resort, restaurant, and amusement-venue staff along Kings Highway and Ocean Boulevard.</li>
+<li><strong>Construction injuries</strong> — falls, struck-by, and equipment injuries on the constant hotel, condo, and commercial construction across Myrtle Beach and Conway.</li>
+<li><strong>Retail and seasonal-worker injuries</strong> — slips, falls, and lifting injuries at the outlets and beachfront retail, where wage disputes are common for seasonal staff.</li>
+<li><strong>Golf-course and grounds injuries</strong> — equipment and heat-related injuries among the Grand Strand's large golf and hospitality workforce.</li>
+</ul>
+
+<h2>South Carolina Workers' Comp Deadlines Are Different — Don't Miss Them</h2>
+<h3>Report to Your Employer Within 90 Days</h3>
+<p>You must notify your employer of a work injury <strong>within 90 days under S.C. Code § 42-15-20</strong>. Report it in writing and keep a copy — verbal-only reports are a common ground for carriers to dispute a claim.</p>
+<h3>File With the Commission Within 2 Years</h3>
+<p>A workers' comp claim is filed with the <strong>South Carolina Workers' Compensation Commission within two years under S.C. Code § 42-15-40</strong> — <strong>not</strong> the three-year tort statute of limitations that applies to car-accident and other injury cases. Missing the two-year deadline can bar your benefits entirely.</p>
+<h3>What Your Benefits Are Worth</h3>
+<p>Temporary total disability pays <strong>66⅔% of your average weekly wage</strong>, subject to a statewide maximum that South Carolina resets each year. Seasonal and tip-based wages make the average-weekly-wage calculation especially contested on the Grand Strand — getting it right directly affects your check. Permanent injuries are valued under the <strong>body-part schedule in S.C. Code § 42-9-30</strong> based on the impairment rating you receive at maximum medical improvement (MMI).</p>
+
+<h2>Learn More About South Carolina Workers' Comp</h2>
+<ul>
+<li><a href="/resources/how-much-does-south-carolina-workers-comp-pay/">How much does South Carolina workers' comp pay?</a></li>
+<li><a href="/resources/south-carolina-workers-comp-claim-denied/">What to do if your South Carolina workers' comp claim is denied</a></li>
+<li><a href="/south-carolina-workers-compensation-lawyer/">South Carolina workers' compensation lawyer — statewide overview</a></li>
+</ul>
+HTML;
+
+$existing = get_posts( array(
+	'post_type'      => 'practice_area',
+	'post_status'    => array( 'publish', 'draft' ),
+	'post_parent'    => $pillar_id,
+	'name'           => 'myrtle-beach-sc',
+	'posts_per_page' => 1,
+) );
+
+$postarr = array(
+	'post_type'    => 'practice_area',
+	'post_status'  => 'publish',
+	'post_title'   => "Workers' Compensation Lawyers in Myrtle Beach, SC",
+	'post_name'    => 'myrtle-beach-sc',
+	'post_content' => $content,
+	'post_parent'  => $pillar_id,
+);
+
+if ( $existing ) {
+	$post_id       = $existing[0]->ID;
+	$postarr['ID'] = $post_id;
+	wp_update_post( $postarr );
+	WP_CLI::log( "Updated existing post ID: {$post_id}" );
+} else {
+	$post_id = wp_insert_post( $postarr, true );
+	if ( is_wp_error( $post_id ) ) {
+		WP_CLI::error( 'Failed to create page: ' . $post_id->get_error_message() );
+	}
+	WP_CLI::log( "Created post ID: {$post_id}" );
+}
+
+update_post_meta( $post_id, '_roden_pa_office_key', 'myrtle-beach' );
+update_post_meta( $post_id, '_roden_office_key', 'myrtle-beach' );
+update_post_meta( $post_id, '_roden_jurisdiction', 'south-carolina' );
+if ( $attorney_id ) {
+	update_post_meta( $post_id, '_roden_author_attorney', $attorney_id );
+}
+
+$faqs = array(
+	array(
+		'question' => "Who are the best workers' comp lawyers in Myrtle Beach, SC?",
+		'answer'   => "Roden Law is a leading workers' compensation firm serving Myrtle Beach and the Grand Strand, with a 4.9-star average from hundreds of client reviews and more than $300 million recovered for injured clients across Georgia and South Carolina. Our Murrells Inlet office handles every claim on a contingency fee basis — no fee unless we win — and you work directly with your attorney. Call (843) 612-1980 for a free consultation.",
+	),
+	array(
+		'question' => "How long do I have to file a workers' comp claim in South Carolina?",
+		'answer'   => 'You must report the injury to your employer within 90 days (S.C. Code § 42-15-20) and file your claim with the South Carolina Workers\' Compensation Commission within two years (S.C. Code § 42-15-40). This two-year deadline is different from the three-year deadline for car-accident and other injury cases.',
+	),
+	array(
+		'question' => 'I\'m a seasonal or tipped worker on the Grand Strand — how is my workers\' comp check calculated?',
+		'answer'   => 'Your benefit is based on your average weekly wage, which for seasonal and tip-based work can be complicated and is often disputed by the carrier. Getting the calculation right directly affects your weekly check, so it is worth having an attorney review your wage records. Call (843) 612-1980 for a free review.',
+	),
+	array(
+		'question' => 'How much does workers\' comp pay in South Carolina?',
+		'answer'   => 'Temporary total disability pays two-thirds (66⅔%) of your average weekly wage, up to a statewide maximum that South Carolina sets each year. Permanent injuries are valued under the body-part schedule in S.C. Code § 42-9-30 based on your impairment rating at maximum medical improvement.',
+	),
+	array(
+		'question' => 'Can I pick my own doctor for a Myrtle Beach workers\' comp injury?',
+		'answer'   => 'Generally no — in South Carolina the employer or its insurer directs your medical care and chooses the treating physician. Because that doctor also assigns the impairment rating that drives your settlement, it is important to have an attorney who can challenge inadequate care or a lowball rating.',
+	),
+	array(
+		'question' => 'What if my Grand Strand workers\' comp claim is denied or my checks stop?',
+		'answer'   => 'A denial or benefit cutoff is not the end — you can request a hearing before the South Carolina Workers\' Compensation Commission. Roden Law regularly takes disputed claims to the Commission to restore medical care and wage benefits. Call (843) 612-1980 for a free review.',
+	),
+);
+update_post_meta( $post_id, '_roden_faqs', $faqs );
+
+WP_CLI::success( "Enriched /workers-compensation-lawyers/myrtle-beach-sc/ — post ID {$post_id}" );
