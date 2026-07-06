@@ -404,11 +404,19 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                 <div class="content-section pa-injuries" data-ai-extractable="true">
                     <h2><?php printf( /* translators: %s: practice area title. */ esc_html__( 'Common Injuries in %s Cases', 'roden-law' ), esc_html( get_the_title() ) ); ?></h2>
                     <div class="pa-injuries__list">
-                        <?php foreach ( $common_injuries as $injury ) : ?>
+                        <?php foreach ( $common_injuries as $injury ) :
+                            // Tolerate both shapes: array{name, description} (canonical)
+                            // and plain string (defensive — a string entry fataled here).
+                            $injury_name = is_array( $injury ) ? ( $injury['name'] ?? '' ) : (string) $injury;
+                            $injury_desc = is_array( $injury ) ? ( $injury['description'] ?? '' ) : '';
+                            if ( '' === $injury_name ) {
+                                continue;
+                            }
+                        ?>
                             <div class="pa-injury">
-                                <strong class="pa-injury__name"><?php echo esc_html( $injury['name'] ); ?></strong>
-                                <?php if ( ! empty( $injury['description'] ) ) : ?>
-                                    <p class="pa-injury__desc"><?php echo esc_html( $injury['description'] ); ?></p>
+                                <strong class="pa-injury__name"><?php echo esc_html( $injury_name ); ?></strong>
+                                <?php if ( $injury_desc ) : ?>
+                                    <p class="pa-injury__desc"><?php echo esc_html( $injury_desc ); ?></p>
                                 <?php endif; ?>
                             </div>
                         <?php endforeach; ?>
