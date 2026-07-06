@@ -59,6 +59,13 @@ function roden_rewrite_rules() {
         'top'
     );
 
+    // Spanish resource: /es/resources/{slug}/ → resource 'es-{slug}'.
+    add_rewrite_rule(
+        '^es/resources/([^/]+)/?$',
+        'index.php?post_type=resource&resource=es-$matches[1]',
+        'top'
+    );
+
     // Spanish office page: /es/locations/{state}/{city}/ → location 'es-{city}'.
     // ES office posts are top-level location posts named es-{city}; the state
     // segment is cosmetic (mirrors the EN URL) and city slugs are unique.

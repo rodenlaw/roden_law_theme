@@ -3599,3 +3599,79 @@ msgstr "Sin Honorarios a Menos que Ganemos • Consulta Gratuita 24/7"
 # Runtime-lookup msgid (firm-data comp_fault_rule, GA — not pot-extractable)
 msgid "Modified — recover if less than 50% at fault"
 msgstr "Modificada — puede recuperar si tiene menos del 50% de culpa"
+
+#: single-resource.php
+msgid "Updated:"
+msgstr "Actualizado:"
+
+#: single-resource.php
+#, php-format
+msgid "%d min read"
+msgstr "%d min de lectura"
+
+#: templates/template-pillar-sc-statewide.php
+msgid "South Carolina Law That Affects Your Case"
+msgstr "Leyes de Carolina del Sur que Afectan su Caso"
+
+#: templates/template-pillar-sc-statewide.php
+msgid "Filing Deadline (Statute of Limitations)"
+msgstr "Plazo para Presentar su Demanda (Plazo Legal)"
+
+#: templates/template-pillar-sc-statewide.php
+#, php-format
+msgid "%s years"
+msgstr "%s años"
+
+#: templates/template-pillar-sc-statewide.php
+#, php-format
+msgid "South Carolina generally gives injured people %s years from the date of injury to file a personal injury lawsuit. Some claims — especially those against a government entity under the South Carolina Tort Claims Act — have shorter deadlines."
+msgstr "En Carolina del Sur, las personas lesionadas generalmente tienen %s años desde la fecha de la lesión para presentar una demanda por lesiones personales. Algunos reclamos — especialmente contra entidades del gobierno bajo la South Carolina Tort Claims Act — tienen plazos más cortos."
+
+#: templates/template-pillar-sc-statewide.php
+msgid "Modified Comparative Negligence"
+msgstr "Negligencia Comparativa Modificada"
+
+#: templates/template-pillar-sc-statewide.php
+msgid "51% bar"
+msgstr "límite del 51%"
+
+#: templates/template-pillar-sc-statewide.php
+msgid "Under South Carolina's modified comparative negligence rule, you can still recover compensation as long as you were less than 51% at fault. Your award is reduced by your share of fault — insurers often try to inflate it, and our attorneys push back."
+msgstr "Bajo la regla de negligencia comparativa modificada de Carolina del Sur, usted todavía puede recuperar compensación siempre que haya tenido menos del 51% de culpa. Su indemnización se reduce según su porcentaje de culpa — las aseguradoras suelen intentar inflarlo, y nuestros abogados lo combaten."
+
+#: templates/template-pillar-sc-statewide.php
+msgid "Learn more:"
+msgstr "Más información:"
+
+#: templates/template-pillar-sc-statewide.php
+msgid "South Carolina statute of limitations"
+msgstr "plazo legal para demandar en Carolina del Sur"
+
+#: templates/template-pillar-sc-statewide.php
+msgid "South Carolina comparative negligence"
+msgstr "negligencia comparativa en Carolina del Sur"
+
+#: templates/template-pillar-sc-statewide.php
+msgid "stacking UM/UIM coverage"
+msgstr "apilar cobertura UM/UIM"
+
+#: templates/template-pillar-sc-statewide.php
+msgid "Roden Law Offices Serving All of South Carolina"
+msgstr "Oficinas de Roden Law Sirviendo a Todo Carolina del Sur"
+
+#: templates/template-pillar-sc-statewide.php
+msgid "Free Case Review — No Fee Unless We Win"
+msgstr "Revisión Gratuita de su Caso — Sin Honorarios a Menos que Ganemos"
+
+#: templates/template-pillar-sc-statewide.php
+#, php-format
+msgid "If you were injured in a South Carolina %s, a Roden Law attorney will review your case at no cost and explain your options. We work on a contingency fee basis — you pay nothing unless we recover for you."
+msgstr "Si usted resultó lesionado en %s en Carolina del Sur, un abogado de Roden Law revisará su caso sin costo y le explicará sus opciones. Trabajamos con honorarios de contingencia — no paga nada a menos que recuperemos para usted."
+
+#: templates/template-pillar-sc-statewide.php
+msgid "If you were injured in South Carolina, a Roden Law attorney will review your case at no cost and explain your options. We work on a contingency fee basis — you pay nothing unless we recover for you."
+msgstr "Si usted resultó lesionado en Carolina del Sur, un abogado de Roden Law revisará su caso sin costo y le explicará sus opciones. Trabajamos con honorarios de contingencia — no paga nada a menos que recuperemos para usted."
+
+#: templates/template-pillar-sc-statewide.php
+msgid "Request a Free Case Review"
+msgstr "Solicite una Revisión Gratuita de su Caso"

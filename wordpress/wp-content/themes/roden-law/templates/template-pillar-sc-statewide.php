@@ -73,7 +73,7 @@ get_header();
 
             <?php if ( $key_takeaways ) : ?>
                 <section class="key-takeaways-box" data-ai-extractable="true">
-                    <h2 class="key-takeaways-title">Key Takeaways</h2>
+                    <h2 class="key-takeaways-title"><?php esc_html_e( 'Key Takeaways', 'roden-law' ); ?></h2>
                     <p><?php echo wp_kses_post( $key_takeaways ); ?></p>
                 </section>
             <?php endif; ?>
@@ -87,38 +87,31 @@ get_header();
 
             <!-- ===== SOUTH CAROLINA LAW CALLOUT (SC-only — no GA bleed) ===== -->
             <div class="sc-law-callout">
-                <h2>South Carolina Law That Affects Your Case</h2>
+                <h2><?php esc_html_e( 'South Carolina Law That Affects Your Case', 'roden-law' ); ?></h2>
                 <div class="sc-law-grid">
                     <div class="sc-law-card">
-                        <h3>Filing Deadline (Statute of Limitations)</h3>
-                        <p class="law-value"><?php echo esc_html( $sc_law['statute_years'] ); ?> years</p>
-                        <p>South Carolina generally gives injured people
-                        <?php echo esc_html( $sc_law['statute_years'] ); ?> years from the date of injury to
-                        file a personal injury lawsuit. Some claims &mdash; especially those against a
-                        government entity under the South Carolina Tort Claims Act &mdash; have shorter
-                        deadlines.</p>
+                        <h3><?php esc_html_e( 'Filing Deadline (Statute of Limitations)', 'roden-law' ); ?></h3>
+                        <p class="law-value"><?php printf( /* translators: %s: number of years. */ esc_html__( '%s years', 'roden-law' ), esc_html( $sc_law['statute_years'] ) ); ?></p>
+                        <p><?php printf( /* translators: %s: number of years. */ esc_html__( 'South Carolina generally gives injured people %s years from the date of injury to file a personal injury lawsuit. Some claims — especially those against a government entity under the South Carolina Tort Claims Act — have shorter deadlines.', 'roden-law' ), esc_html( $sc_law['statute_years'] ) ); ?></p>
                         <p class="cite"><?php echo esc_html( $sc_law['statute_cite'] ); ?></p>
                     </div>
                     <div class="sc-law-card">
-                        <h3>Modified Comparative Negligence</h3>
-                        <p class="law-value">51% bar</p>
-                        <p>Under South Carolina&rsquo;s modified comparative negligence rule, you can still
-                        recover compensation as long as you were less than 51% at fault. Your award is
-                        reduced by your share of fault &mdash; insurers often try to inflate it, and our
-                        attorneys push back.</p>
+                        <h3><?php esc_html_e( 'Modified Comparative Negligence', 'roden-law' ); ?></h3>
+                        <p class="law-value"><?php esc_html_e( '51% bar', 'roden-law' ); ?></p>
+                        <p><?php esc_html_e( "Under South Carolina's modified comparative negligence rule, you can still recover compensation as long as you were less than 51% at fault. Your award is reduced by your share of fault — insurers often try to inflate it, and our attorneys push back.", 'roden-law' ); ?></p>
                     </div>
                 </div>
                 <p class="sc-law-links">
-                    Learn more:
-                    <a href="/resources/south-carolina-statute-of-limitations/">South Carolina statute of limitations</a> &middot;
-                    <a href="/resources/south-carolina-comparative-negligence/">South Carolina comparative negligence</a> &middot;
-                    <a href="/resources/south-carolina-um-uim-stacking/">stacking UM/UIM coverage</a>
+                    <?php esc_html_e( 'Learn more:', 'roden-law' ); ?>
+                    <a href="<?php echo esc_url( roden_lang_home_url( null, '/resources/south-carolina-statute-of-limitations/' ) ); ?>"><?php esc_html_e( 'South Carolina statute of limitations', 'roden-law' ); ?></a> &middot;
+                    <a href="<?php echo esc_url( roden_lang_home_url( null, '/resources/south-carolina-comparative-negligence/' ) ); ?>"><?php esc_html_e( 'South Carolina comparative negligence', 'roden-law' ); ?></a> &middot;
+                    <a href="<?php echo esc_url( roden_lang_home_url( null, '/resources/south-carolina-um-uim-stacking/' ) ); ?>"><?php esc_html_e( 'stacking UM/UIM coverage', 'roden-law' ); ?></a>
                 </p>
             </div>
 
             <!-- ===== 4 OFFICES ACROSS SOUTH CAROLINA ===== -->
             <div class="sc-offices-strip">
-                <h2>Roden Law Offices Serving All of South Carolina</h2>
+                <h2><?php esc_html_e( 'Roden Law Offices Serving All of South Carolina', 'roden-law' ); ?></h2>
                 <div class="sc-offices-grid">
                     <?php
                     foreach ( $sc_office_keys as $key ) :
@@ -144,12 +137,23 @@ get_header();
 
             <!-- ===== BOTTOM CTA ===== -->
             <div class="sc-pillar-cta">
-                <h2>Free Case Review &mdash; No Fee Unless We Win</h2>
-                <p>If you were injured<?php echo $practice_label ? ' in a South Carolina ' . esc_html( strtolower( $practice_label ) ) : ' in South Carolina'; ?>,
-                a Roden Law attorney will review your case at no cost and explain your options.
-                We work on a contingency fee basis &mdash; you pay nothing unless we recover for you.</p>
-                <p><a class="btn btn-primary" href="tel:18447378587">Call 1-844-RESULTS</a>
-                <a class="btn btn-secondary" href="/contact/">Request a Free Case Review</a></p>
+                <h2><?php esc_html_e( 'Free Case Review — No Fee Unless We Win', 'roden-law' ); ?></h2>
+                <p><?php
+                // ES pages seed _roden_pillar_practice_l with the article included
+                // (e.g. "un accidente de camión") — the msgstr carries the phrasing.
+                $practice_label_l = get_post_meta( get_the_ID(), '_roden_pillar_practice_l', true ) ?: strtolower( (string) $practice_label );
+                if ( $practice_label_l ) {
+                    printf(
+                        /* translators: %s: lowercase practice phrase, e.g. "truck accident". */
+                        esc_html__( 'If you were injured in a South Carolina %s, a Roden Law attorney will review your case at no cost and explain your options. We work on a contingency fee basis — you pay nothing unless we recover for you.', 'roden-law' ),
+                        esc_html( $practice_label_l )
+                    );
+                } else {
+                    esc_html_e( 'If you were injured in South Carolina, a Roden Law attorney will review your case at no cost and explain your options. We work on a contingency fee basis — you pay nothing unless we recover for you.', 'roden-law' );
+                }
+                ?></p>
+                <p><a class="btn btn-primary" href="tel:18447378587"><?php printf( esc_html__( 'Call %s', 'roden-law' ), '1-844-RESULTS' ); ?></a>
+                <a class="btn btn-secondary" href="<?php echo esc_url( roden_lang_home_url( null, '/contact/' ) ); ?>"><?php esc_html_e( 'Request a Free Case Review', 'roden-law' ); ?></a></p>
             </div>
 
         </article>

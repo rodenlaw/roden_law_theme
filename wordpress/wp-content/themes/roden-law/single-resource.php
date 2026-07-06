@@ -41,9 +41,9 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
             $modified = get_the_modified_date( 'U' );
             $published = get_the_date( 'U' );
             if ( $modified && ( $modified - $published ) > 86400 ) : ?>
-                <span class="post-updated">Updated: <?php echo esc_html( get_the_modified_date() ); ?></span>
+                <span class="post-updated"><?php esc_html_e( 'Updated:', 'roden-law' ); ?> <?php echo esc_html( get_the_modified_date() ); ?></span>
             <?php endif; ?>
-            <span class="post-read-time"><?php echo (int) roden_reading_time(); ?> min read</span>
+            <span class="post-read-time"><?php printf( /* translators: %d: reading time in minutes. */ esc_html__( '%d min read', 'roden-law' ), (int) roden_reading_time() ); ?></span>
         </div>
     </div>
 </section>
@@ -56,7 +56,7 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
             $key_takeaways = get_post_meta( $post_id, '_roden_key_takeaways', true );
             if ( $key_takeaways ) : ?>
                 <section class="key-takeaways-box">
-                    <h2 class="key-takeaways-title">Key Takeaways</h2>
+                    <h2 class="key-takeaways-title"><?php esc_html_e( 'Key Takeaways', 'roden-law' ); ?></h2>
                     <p><?php echo wp_kses_post( $key_takeaways ); ?></p>
                 </section>
             <?php endif; ?>
@@ -76,7 +76,7 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
             $see_also = get_post_meta( $post_id, '_roden_see_also', true );
             if ( ! empty( $see_also ) && is_array( $see_also ) ) : ?>
                 <div class="content-section see-also-section">
-                    <h2>Related Pages</h2>
+                    <h2><?php esc_html_e( 'Related Pages', 'roden-law' ); ?></h2>
                     <div class="pa-resources__grid">
                         <?php foreach ( $see_also as $link ) : ?>
                             <a href="<?php echo esc_url( home_url( $link['url'] ) ); ?>" class="resource-link">
@@ -106,7 +106,7 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
                 roden_related_resources( array(
                     'count'   => 5,
                     'cat_slug' => $res_cat_slug,
-                    'heading'  => 'Related Guides',
+                    'heading'  => __( 'Related Guides', 'roden-law' ),
                     'display'  => 'sidebar',
                     'exclude'  => $post_id,
                 ) );
