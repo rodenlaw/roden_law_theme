@@ -386,6 +386,36 @@ function roden_inject_lang_switcher_nav_item( $items, $args ) {
 }
 
 /* ==========================================================================
+   8b. ES HOMEPAGE TEMPLATE — mirror the English homepage design
+   ========================================================================== */
+
+// The 'es' root page renders through front-page.php (the full homepage
+// layout: hero + form, badges, how-it-works, PA grid, offices, founder,
+// results, testimonials, attorneys, CTA). All of its chrome is gettext, so
+// it comes out in Spanish; locale-aware links inside the template point the
+// grids at /es/ pages. Priority 20 — before the CPT bridge at 1001, after
+// core template resolution.
+add_filter( 'template_include', 'roden_es_home_template', 20 );
+function roden_es_home_template( $template ) {
+    if ( ! is_page() || 'es' !== roden_current_lang() ) {
+        return $template;
+    }
+    $post = get_queried_object();
+    if (
+        $post instanceof WP_Post
+        && 'es' === $post->post_name
+        && 0 === (int) $post->post_parent
+        && 'es' === roden_post_lang( $post )
+    ) {
+        $home = get_template_directory() . '/front-page.php';
+        if ( file_exists( $home ) ) {
+            return $home;
+        }
+    }
+    return $template;
+}
+
+/* ==========================================================================
    9. ES NAV MENU LOCATIONS
    ========================================================================== */
 

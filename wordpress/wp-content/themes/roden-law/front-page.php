@@ -17,6 +17,10 @@ get_header();
 $firm  = roden_firm_data();
 $stats = $firm['trust_stats'];
 
+// This template also renders the Spanish homepage (/es/, routed via
+// roden_es_home_template() in inc/i18n.php) — all chrome is gettext.
+$home_lang = function_exists( 'roden_current_lang' ) ? roden_current_lang() : 'en';
+
 // Top 15 case results from CPT (sorted by raw amount, highest first)
 $top_results_query = new WP_Query( array(
     'post_type'      => 'case_result',
@@ -26,15 +30,22 @@ $top_results_query = new WP_Query( array(
     'order'          => 'DESC',
 ) );
 
-// Featured practice areas for grid
+// Featured practice areas for grid. The Spanish homepage features
+// workers'-comp + construction instead of bicycle/boating: both are
+// translated pillars, and work injuries are the core Spanish-audience need.
 $practice_areas = array(
-    array( 'name' => 'Car Accident Lawyers',        'slug' => 'car-accident-lawyers',        'scenario' => 'Injured in a car accident?' ),
-    array( 'name' => 'Truck Accident Lawyers',       'slug' => 'truck-accident-lawyers',       'scenario' => 'Hit by a commercial truck?' ),
-    array( 'name' => 'Motorcycle Accident Lawyers',  'slug' => 'motorcycle-accident-lawyers',  'scenario' => 'Motorcycle crash injuries?' ),
-    array( 'name' => 'Pedestrian Accident Lawyers',  'slug' => 'pedestrian-accident-lawyers',  'scenario' => 'Struck as a pedestrian?' ),
-    array( 'name' => 'Bicycle Accident Lawyers',     'slug' => 'bicycle-accident-lawyers',     'scenario' => 'Hurt while cycling?' ),
-    array( 'name' => 'Boating Accident Lawyers',     'slug' => 'boating-accident-lawyers',     'scenario' => 'Injured on the water?' ),
+    array( 'name' => __( 'Car Accident Lawyers', 'roden-law' ),        'slug' => 'car-accident-lawyers',        'scenario' => __( 'Injured in a car accident?', 'roden-law' ) ),
+    array( 'name' => __( 'Truck Accident Lawyers', 'roden-law' ),      'slug' => 'truck-accident-lawyers',      'scenario' => __( 'Hit by a commercial truck?', 'roden-law' ) ),
+    array( 'name' => __( 'Motorcycle Accident Lawyers', 'roden-law' ), 'slug' => 'motorcycle-accident-lawyers', 'scenario' => __( 'Motorcycle crash injuries?', 'roden-law' ) ),
+    array( 'name' => __( 'Pedestrian Accident Lawyers', 'roden-law' ), 'slug' => 'pedestrian-accident-lawyers', 'scenario' => __( 'Struck as a pedestrian?', 'roden-law' ) ),
 );
+if ( 'es' === $home_lang ) {
+    $practice_areas[] = array( 'name' => __( "Workers' Compensation Lawyers", 'roden-law' ),   'slug' => 'workers-compensation-lawyers',   'scenario' => __( 'Injured at work?', 'roden-law' ) );
+    $practice_areas[] = array( 'name' => __( 'Construction Accident Lawyers', 'roden-law' ),   'slug' => 'construction-accident-lawyers',  'scenario' => __( 'Hurt on a construction site?', 'roden-law' ) );
+} else {
+    $practice_areas[] = array( 'name' => __( 'Bicycle Accident Lawyers', 'roden-law' ),        'slug' => 'bicycle-accident-lawyers',       'scenario' => __( 'Hurt while cycling?', 'roden-law' ) );
+    $practice_areas[] = array( 'name' => __( 'Boating Accident Lawyers', 'roden-law' ),        'slug' => 'boating-accident-lawyers',       'scenario' => __( 'Injured on the water?', 'roden-law' ) );
+}
 ?>
 
     <!-- ============================================================
@@ -78,7 +89,7 @@ $practice_areas = array(
                         </div>
                     </div>
 
-                    <p class="hero-guarantee">&#10003; No Fees Unless We Win &bull; Free Consultation 24/7</p>
+                    <p class="hero-guarantee">&#10003; <?php esc_html_e( 'No Fees Unless We Win • Free Consultation 24/7', 'roden-law' ); ?></p>
 
                     <!-- Hero CTAs -->
                     <div class="hero-ctas">
@@ -175,7 +186,7 @@ $practice_areas = array(
 
             <div class="practice-area-grid">
                 <?php foreach ( $practice_areas as $pa ) : ?>
-                    <a href="<?php echo esc_url( home_url( '/practice-areas/' . $pa['slug'] . '/' ) ); ?>"
+                    <a href="<?php echo esc_url( roden_lang_home_url( $home_lang, '/practice-areas/' . $pa['slug'] . '/' ) ); ?>"
                        class="card practice-area-card">
                         <div>
                             <span class="card-scenario"><?php echo esc_html( $pa['scenario'] ); ?></span>
@@ -187,7 +198,7 @@ $practice_areas = array(
             </div>
 
             <div class="section-cta">
-                <a href="<?php echo esc_url( home_url( '/practice-areas/' ) ); ?>" class="btn btn-outline-navy">
+                <a href="<?php echo esc_url( roden_lang_home_url( $home_lang, '/practice-areas/' ) ); ?>" class="btn btn-outline-navy">
                     <?php esc_html_e( 'View All Practice Areas', 'roden-law' ); ?> &rarr;
                 </a>
             </div>
@@ -218,7 +229,7 @@ $practice_areas = array(
                         <a href="tel:<?php echo esc_attr( $office['phone_raw'] ); ?>" class="location-phone">
                             <?php echo esc_html( $office['phone'] ); ?>
                         </a>
-                        <a href="<?php echo esc_url( home_url( '/locations/' . $office['state_slug'] . '/' . sanitize_title( $office['market_name'] ) . '/' ) ); ?>"
+                        <a href="<?php echo esc_url( roden_lang_home_url( $home_lang, '/locations/' . $office['state_slug'] . '/' . sanitize_title( $office['market_name'] ) . '/' ) ); ?>"
                            class="location-link">
                             <?php esc_html_e( 'View Office', 'roden-law' ); ?> &rarr;
                         </a>
@@ -299,8 +310,15 @@ $practice_areas = array(
                                 <span class="case-type"><?php echo esc_html( $category ); ?></span>
                             <?php endif; ?>
                             <span class="amount"><?php echo esc_html( $amount ); ?></span>
-                            <?php if ( $type ) : ?>
-                                <span class="case-label"><?php echo esc_html( ucfirst( $type ) ); ?></span>
+                            <?php if ( $type ) :
+                                $type_labels = array(
+                                    'settlement' => __( 'Settlement', 'roden-law' ),
+                                    'verdict'    => __( 'Verdict', 'roden-law' ),
+                                    'recovery'   => __( 'Recovery', 'roden-law' ),
+                                );
+                                $type_label = $type_labels[ strtolower( $type ) ] ?? ucfirst( $type );
+                            ?>
+                                <span class="case-label"><?php echo esc_html( $type_label ); ?></span>
                             <?php endif; ?>
                         </div>
                     <?php endwhile;

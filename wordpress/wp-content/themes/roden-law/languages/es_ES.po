@@ -1712,17 +1712,17 @@ msgstr ""
 #: inc/meta-boxes.php:919
 #: inc/meta-boxes 2.php:860
 msgid "Settlement"
-msgstr ""
+msgstr "Acuerdo"
 
 #: inc/meta-boxes.php:920
 #: inc/meta-boxes 2.php:861
 msgid "Verdict"
-msgstr ""
+msgstr "Veredicto"
 
 #: inc/meta-boxes.php:921
 #: inc/meta-boxes 2.php:862
 msgid "Recovery"
-msgstr ""
+msgstr "Recuperación"
 
 #: inc/meta-boxes.php:922
 #: inc/meta-boxes 2.php:863
@@ -3559,3 +3559,39 @@ msgstr "Por ejemplo, si usted presentó una demanda de $100,000 y un tribunal de
 #: templates/template-subtype.php:344
 msgid "See by Location"
 msgstr "Ver por Ubicación"
+
+#: front-page.php
+msgid "Injured in a car accident?"
+msgstr "¿Lesionado en un accidente de auto?"
+
+#: front-page.php
+msgid "Hit by a commercial truck?"
+msgstr "¿Golpeado por un camión comercial?"
+
+#: front-page.php
+msgid "Motorcycle crash injuries?"
+msgstr "¿Lesiones por un accidente de motocicleta?"
+
+#: front-page.php
+msgid "Struck as a pedestrian?"
+msgstr "¿Atropellado como peatón?"
+
+#: front-page.php
+msgid "Injured at work?"
+msgstr "¿Se lesionó en el trabajo?"
+
+#: front-page.php
+msgid "Hurt on a construction site?"
+msgstr "¿Lesionado en una obra de construcción?"
+
+#: front-page.php
+msgid "Hurt while cycling?"
+msgstr "¿Lesionado mientras andaba en bicicleta?"
+
+#: front-page.php
+msgid "Injured on the water?"
+msgstr "¿Lesionado en el agua?"
+
+#: front-page.php
+msgid "No Fees Unless We Win • Free Consultation 24/7"
+msgstr "Sin Honorarios a Menos que Ganemos • Consulta Gratuita 24/7"
