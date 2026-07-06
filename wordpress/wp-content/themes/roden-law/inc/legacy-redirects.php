@@ -160,14 +160,9 @@ function roden_legacy_content_redirects() {
     // ── Pattern-based redirects ──────────────────────────────────────────
     // These handle entire URL prefixes rather than individual pages.
 
-    // /es/* → / (Polylang removed 2026-05-05; Spanish content was 1 empty
-    // placeholder + 2 drafts. Pre-removal, /es/* was already in an infinite
-    // 301 redirect loop, so nothing was indexed. This 301 prevents future 404s
-    // if Google or any external link ever surfaces an /es/ URL.)
-    if ( preg_match( '#^/es(/.*)?$#', $clean_path ) ) {
-        wp_redirect( home_url( '/' ), 301 );
-        exit;
-    }
+    // /es/* redirect REMOVED 2026-07-06: the Spanish site is live (bespoke
+    // locale layer in inc/i18n.php). The old blanket /es/* → / 301 dated from
+    // the 2026-05-05 Polylang removal and was killing every Spanish page.
 
     // /case-result/[slug]/ → /case-results/[slug]/ (old singular → new plural CPT slug)
     // Only redirect to the specific result if it still exists; otherwise the
@@ -325,11 +320,7 @@ function roden_legacy_content_redirects() {
         exit;
     }
 
-    // /es/[anything] → / (Spanish content removed)
-    if ( preg_match( '#^/es/.+#', $clean_path ) ) {
-        wp_redirect( home_url( '/' ), 301 );
-        exit;
-    }
+    // /es/[anything] redirect REMOVED 2026-07-06 — Spanish site is live.
 
     // /who-we-are/attorney/[name]/ → /attorneys/[name]/ (singular 'attorney' variant)
     if ( preg_match( '#^/who-we-are/attorney/([^/]+)/?$#', $clean_path, $m ) ) {
@@ -717,7 +708,7 @@ function roden_get_legacy_redirect_map() {
         // ══════════════════════════════════════════════════════════════
 
         '/areas-we-serve/'     => '/locations/',
-        '/es/'                 => '/',
+        // '/es/' => '/' removed 2026-07-06 — the Spanish homepage is live.
         // '/class-action-lawyers/' redirect removed — page template exists and should render (page-class-action-lawyers.php)
 
         // ══════════════════════════════════════════════════════════════
