@@ -70,6 +70,14 @@ Local injury patterns reflect Savannah's role as a port city: I-95 through Poole
 Two Georgia rules matter most for Savannah cases: **O.C.G.A. § 33-7-11** allows "added-on" UM/UIM stacking above the at-fault driver's limits, and **O.C.G.A. § 40-1-112** permits direct action against a motor carrier's insurer — a meaningful advantage in port-related truck-crash litigation.
 EOT
 ,
+                'local_context_es' => <<<'EOT'
+Presentar un caso de lesiones personales en Savannah significa presentarlo ante el **Chatham County Superior Court, ubicado en 133 Montgomery Street**, donde las demandas civiles se presentan electrónicamente a través de **PeachCourt eFileGA**, el sistema estatal de presentación electrónica de Georgia. La ley de Georgia otorga a la persona lesionada **dos años a partir de la fecha del accidente** para presentar la demanda conforme a O.C.G.A. § 9-3-33, y la regla de negligencia comparativa modificada de Georgia (O.C.G.A. § 51-12-33) impide la recuperación únicamente si el demandante tiene un 50% o más de culpa.
+
+Los patrones locales de lesiones reflejan el papel de Savannah como ciudad portuaria: la I-95 a la altura de Pooler, la I-516 desde el Port of Savannah y el intercambiador de la I-16/I-95 concentran los choques de camiones comerciales, mientras que DeRenne Avenue, Abercorn Street (SR 204) y la cuadrícula del centro histórico generan colisiones constantes de peatones y en intersecciones. Las víctimas con lesiones graves de todo el sureste de Georgia son trasladadas al **Memorial Health University Medical Center, en Waters Avenue** — el único centro de trauma de Nivel I de la región — y con frecuencia llegan a bordo del helicóptero LifeStar.
+
+Dos reglas de Georgia son las que más pesan en los casos de Savannah: **O.C.G.A. § 33-7-11** permite la acumulación ("stacking") adicional de cobertura UM/UIM por encima de los límites del conductor culpable, y **O.C.G.A. § 40-1-112** permite demandar directamente a la aseguradora del transportista — una ventaja significativa en litigios de choques de camiones vinculados al puerto.
+EOT
+,
                 // GBP review count — powers per-office AggregateRating schema.
                 // VERIFY: pulled from Birdeye/Google Apr 2026. Update quarterly from GBP dashboard.
                 'review_count' => 58,
@@ -107,6 +115,14 @@ Filing a personal injury case in Darien means filing in **McIntosh County Superi
 McIntosh County's crash profile is dominated by two corridors: roughly 18 miles of **I-95** (Exits 49 and 58 are the principal crash-cluster interchanges) and **US-17 / SR 251**, which carry logging trucks bound for coastal mills and serve as hurricane-evacuation routes. Because McIntosh has no Level I trauma center, seriously injured victims are typically flown by LifeStar to **Memorial Health University Medical Center in Savannah** — the only Level I trauma center in southeast Georgia.
 
 Two Georgia statutes carry outsized weight in this county's truck-heavy docket: **O.C.G.A. § 33-7-11** allows "added-on" UM/UIM stacking above the at-fault driver's limits, and **O.C.G.A. § 40-1-112** permits direct action against a motor carrier's insurer.
+EOT
+,
+                'local_context_es' => <<<'EOT'
+Presentar un caso de lesiones personales en Darien significa presentarlo ante el **McIntosh County Superior Court, ubicado en 310 Northway** — parte del Brunswick Judicial Circuit y el foro de juicio para todos los casos de lesiones personales que superan el límite del tribunal de magistrados. Las demandas civiles se presentan a través de **PeachCourt eFileGA**, el sistema estatal de presentación electrónica de Georgia. Georgia otorga a los demandantes lesionados **dos años para presentar la demanda conforme a O.C.G.A. § 9-3-33**, y la regla de negligencia comparativa modificada de O.C.G.A. § 51-12-33 impide la recuperación si el demandante tiene un 50% o más de culpa.
+
+El perfil de accidentes del condado de McIntosh está dominado por dos corredores: aproximadamente 18 millas de la **I-95** (las salidas 49 y 58 son los principales intercambiadores con concentración de choques) y la **US-17 / SR 251**, por donde circulan camiones madereros con destino a los aserraderos costeros y que sirven como rutas de evacuación en caso de huracán. Como el condado de McIntosh no cuenta con un centro de trauma de Nivel I, las víctimas con lesiones graves suelen ser trasladadas en el helicóptero LifeStar al **Memorial Health University Medical Center en Savannah** — el único centro de trauma de Nivel I del sureste de Georgia.
+
+Dos estatutos de Georgia tienen un peso decisivo en la carga judicial de este condado, dominada por casos de camiones: **O.C.G.A. § 33-7-11** permite la acumulación ("stacking") adicional de cobertura UM/UIM por encima de los límites del conductor culpable, y **O.C.G.A. § 40-1-112** permite demandar directamente a la aseguradora del transportista.
 EOT
 ,
                 // GBP review count — powers per-office AggregateRating schema.
@@ -149,6 +165,14 @@ Charleston's peninsula geography concentrates risk on a few well-known corridors
 Under South Carolina law, you have **3 years to file under S.C. Code § 15-3-530**, and you can recover only if you are **less than 51% at fault**. Shorter notice deadlines apply if SCDOT or the City of Charleston is a defendant under the SC Tort Claims Act.
 EOT
 ,
+                'local_context_es' => <<<'EOT'
+Presentar un caso de lesiones personales en el centro de Charleston significa presentarlo ante el **Charleston County Court of Common Pleas, ubicado en 100 Broad Street**, a través del sistema de presentación electrónica de Carolina del Sur basado en Tyler Odyssey. La mayoría de los casos se envían a mediación obligatoria conforme a las reglas de ADR de Carolina del Sur antes de llegar al calendario de juicios con jurado, y un caso disputado típico tarda **de 18 a 30 meses** desde la demanda hasta el veredicto.
+
+La geografía peninsular de Charleston concentra el riesgo en unos pocos corredores bien conocidos: el **Crosstown (US-17 / Septima P. Clark Parkway)**, el puente **Arthur Ravenel Jr. Bridge** hacia Mount Pleasant y la densa zona turística alrededor de **King Street y Market Street**, donde los descensos de pasajeros de rideshare y los paseos en carruaje se mezclan con conductores de otros estados. El condado de Charleston registró **más de 2,500 choques relacionados con camiones en 2023**, y el **intercambiador de la I-26/I-526, justo al oeste de la península, registró 354 colisiones en un período de cinco años**. Los pacientes con lesiones graves por choques en la península son trasladados a **MUSC Health (171 Ashley Ave) — el único centro de trauma de Nivel I del Lowcountry**.
+
+Conforme a la ley de Carolina del Sur, usted tiene **3 años para presentar la demanda conforme a S.C. Code § 15-3-530**, y solo puede recuperar una indemnización si tiene **menos del 51% de culpa**. Se aplican plazos de notificación más cortos si el SCDOT o la Ciudad de Charleston es parte demandada conforme a la SC Tort Claims Act.
+EOT
+,
                 // GBP review count — powers per-office AggregateRating schema.
                 // VERIFY: pulled from Birdeye/Google Apr 2026. Update quarterly from GBP dashboard.
                 'review_count' => 80,
@@ -187,6 +211,14 @@ North Charleston personal injury cases are filed in the **Charleston County Cour
 North Charleston's hazard profile is dominated by **port and industrial truck traffic** funneling between the **Hugh Leatherman Terminal** and the **I-26 / I-526 / Rivers Avenue** corridor: SCDOT records **354 collisions over five years at the I-26/I-526 interchange** alone, and Charleston County logged **over 2,500 truck-related crashes in 2023**. Spruill Avenue, North Rhett Avenue, Aviation Avenue, and the **Ashley Phosphate Road / I-26 interchange** are the city's recurring crash corridors. Serious crash victims are routed to **Trident Medical Center (Level II trauma)** at 9330 Medical Plaza Drive, with the most critical patients flown to **MUSC Health (Level I)** downtown.
 
 South Carolina's **3-year statute of limitations (S.C. Code § 15-3-530)** and **51%-bar comparative fault rule** apply, and shorter Tort Claims Act notice deadlines apply when SCDOT or the SC Ports Authority is a defendant.
+EOT
+,
+                'local_context_es' => <<<'EOT'
+Los casos de lesiones personales de North Charleston se presentan ante el **Charleston County Court of Common Pleas, ubicado en 100 Broad Street en el centro de Charleston**, y se tramitan a través del **South Carolina E-Filing System** en la plataforma Odyssey de Tyler. Los casos civiles de Common Pleas se envían a mediación obligatoria conforme a las reglas de ADR de Carolina del Sur antes de llegar al calendario de juicios, y un caso disputado de camiones o industrial típicamente tarda de 18 a 30 meses — más tiempo cuando entran en juego los registros de la FMCSA, los registros ELD y los historiales de inspección del parque de chasis portuarios.
+
+El perfil de riesgo de North Charleston está dominado por el **tráfico de camiones portuarios e industriales** que circula entre la **Hugh Leatherman Terminal** y el corredor de la **I-26 / I-526 / Rivers Avenue**: el SCDOT registra **354 colisiones en cinco años solo en el intercambiador de la I-26/I-526**, y el condado de Charleston registró **más de 2,500 choques relacionados con camiones en 2023**. Spruill Avenue, North Rhett Avenue, Aviation Avenue y el **intercambiador de Ashley Phosphate Road / I-26** son los corredores de choques recurrentes de la ciudad. Las víctimas de choques graves son trasladadas al **Trident Medical Center (trauma de Nivel II)**, en 9330 Medical Plaza Drive, y los pacientes más críticos son trasladados en helicóptero a **MUSC Health (Nivel I)** en el centro de la ciudad.
+
+Se aplican el **plazo de prescripción de 3 años de Carolina del Sur (S.C. Code § 15-3-530)** y la **regla de culpa comparativa con barrera del 51%**, y rigen plazos de notificación más cortos bajo la Tort Claims Act cuando el SCDOT o la SC Ports Authority es parte demandada.
 EOT
 ,
                 // GBP review count — powers per-office AggregateRating schema.
@@ -228,6 +260,14 @@ Crash victims in the Midlands disproportionately come from one place: the **I-26
 South Carolina law gives injured plaintiffs **three years to file under S.C. Code § 15-3-530**, applies a **51% modified-comparative-fault bar**, and allows stacking of uninsured and underinsured motorist coverage — a critical lever when a Malfunction Junction pile-up exceeds the at-fault driver's 25/50/25 minimum policy.
 EOT
 ,
+                'local_context_es' => <<<'EOT'
+Presentar un caso de lesiones personales en Columbia implica tramitarlo ante el **Richland County Court of Common Pleas, ubicado en 1701 Main Street**, donde las demandas civiles se presentan electrónicamente a través del sistema estatal de presentación electrónica **Tyler Odyssey** de Carolina del Sur y se colocan en una vía de gestión de casos de 365 días conforme a la Regla 40 de las SCRCP. La mayoría de los casos disputados se envían a mediación obligatoria antes del juicio conforme a la Regla 3 de ADR de Carolina del Sur.
+
+Las víctimas de accidentes en los Midlands provienen de manera desproporcionada de un solo lugar: el **intercambiador de la I-26/I-20/I-77 conocido como Malfunction Junction**, actualmente en plena reconstrucción bajo el proyecto **Carolina Crossroads de $2.08 mil millones** del SCDOT — el más grande en la historia de la agencia — que mantendrá zonas de obras activas y cambiantes en la I-26 entre Piney Grove Road y la I-77 hasta aproximadamente 2029. Los choques con lesiones graves de ese corredor, de la I-77 hacia el norte rumbo a Blythewood, y de Two Notch Road y Broad River Road son trasladados a **Prisma Health Richland**, el único centro de trauma de Nivel I de los Midlands.
+
+La ley de Carolina del Sur otorga a los demandantes lesionados **tres años para presentar la demanda conforme a S.C. Code § 15-3-530**, aplica una **barrera de culpa comparativa modificada del 51%** y permite la acumulación ("stacking") de coberturas de motorista no asegurado e infrasegurado — una herramienta crítica cuando un choque múltiple en Malfunction Junction supera la póliza mínima 25/50/25 del conductor culpable.
+EOT
+,
                 // GBP review count — powers per-office AggregateRating schema.
                 // VERIFY: pulled Apr 2026. Update quarterly from GBP dashboard.
                 'review_count' => 18,
@@ -266,6 +306,14 @@ Filing a personal injury case in the Myrtle Beach market means filing in **Horry
 The Grand Strand draws roughly 17–20 million visitors a year, and that seasonal surge reshapes the local crash picture: **US-17 Business and Ocean Boulevard** see heavy pedestrian and golf-cart traffic, while drivers choose between the slower, congested **US-501** and the faster but higher-severity **SC-22 Conway Bypass** to reach the beach. Golf carts add a wrinkle unique to coastal SC — under **S.C. Code § 56-2-100**, a permitted cart may only operate in daylight, within four miles of the owner's address, on roads posted 35 mph or less, by a licensed driver. Crashes outside those limits open the door to negligence-per-se and rental-property claims. Severe-injury victims are routed to **Grand Strand Medical Center** in Myrtle Beach or stabilized at **Tidelands Waccamaw** in Murrells Inlet.
 
 South Carolina applies a **three-year statute of limitations under S.C. Code § 15-3-530**, a **51% modified-comparative-fault bar**, and allows stacking of UM/UIM coverage — often the largest recovery source when an out-of-state tourist is hit by a minimum-limits driver.
+EOT
+,
+                'local_context_es' => <<<'EOT'
+Presentar un caso de lesiones personales en el mercado de Myrtle Beach significa presentarlo ante el **Horry County Court of Common Pleas, ubicado en 1301 Second Avenue en Conway**, donde las demandas civiles se tramitan a través del sistema obligatorio de presentación electrónica **Tyler Odyssey** de Carolina del Sur y la mayoría de los casos se envían a mediación antes del juicio conforme a la Regla 3 de ADR de Carolina del Sur.
+
+El Grand Strand atrae aproximadamente de 17 a 20 millones de visitantes al año, y ese aumento estacional transforma el panorama local de accidentes: **US-17 Business y Ocean Boulevard** registran un intenso tráfico de peatones y carritos de golf, mientras que los conductores eligen entre la **US-501**, más lenta y congestionada, y la **SC-22 Conway Bypass**, más rápida pero con choques de mayor gravedad, para llegar a la playa. Los carritos de golf añaden una particularidad propia de la costa de Carolina del Sur: conforme a **S.C. Code § 56-2-100**, un carrito con permiso solo puede circular durante el día, dentro de un radio de cuatro millas del domicilio del propietario, en vías con límite de velocidad de 35 mph o menos y conducido por una persona con licencia. Los choques que ocurren fuera de esos límites abren la puerta a reclamos por negligencia per se y contra propiedades de alquiler. Las víctimas con lesiones graves son trasladadas al **Grand Strand Medical Center** en Myrtle Beach o estabilizadas en **Tidelands Waccamaw** en Murrells Inlet.
+
+Carolina del Sur aplica un **plazo de prescripción de tres años conforme a S.C. Code § 15-3-530**, una **barrera de culpa comparativa modificada del 51%** y permite la acumulación ("stacking") de cobertura UM/UIM — a menudo la mayor fuente de recuperación cuando un turista de otro estado es atropellado por un conductor con límites mínimos de póliza.
 EOT
 ,
                 // GBP review count — powers per-office AggregateRating schema.

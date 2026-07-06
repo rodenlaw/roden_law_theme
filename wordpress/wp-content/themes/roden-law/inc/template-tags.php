@@ -1824,7 +1824,13 @@ function roden_render_pillar_intro( $parent_id, $meta_key, $office, $jurisdictio
  * @return void Outputs HTML directly (or nothing).
  */
 function roden_office_local_context_block( $office, $jurisdiction = array() ) {
-    $body = isset( $office['local_context'] ) ? trim( $office['local_context'] ) : '';
+    // Locale-aware: Spanish pages render the office's local_context_es essay;
+    // if it doesn't exist the block is skipped — never English on /es/.
+    if ( function_exists( 'roden_current_lang' ) && 'es' === roden_current_lang() ) {
+        $body = isset( $office['local_context_es'] ) ? trim( $office['local_context_es'] ) : '';
+    } else {
+        $body = isset( $office['local_context'] ) ? trim( $office['local_context'] ) : '';
+    }
     if ( ! $body ) return;
 
     $body = roden_replace_local_tokens( $body, $office, $jurisdiction );
