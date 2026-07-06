@@ -4,7 +4,7 @@ Theme URI: https://rodenlaw.com
 Author: Roden Law
 Author URI: https://rodenlaw.com
 Description: Custom AI-SEO optimized WordPress theme for Roden Law personal injury firm serving Georgia and South Carolina across 5 office locations. Built with structured data, E-E-A-T compliance, and local SEO as core architecture principles.
-Version: 1.4.10
+Version: 1.4.11
 Requires at least: 6.0
 Tested up to: 6.7
 Requires PHP: 8.0
@@ -1956,6 +1956,53 @@ body.home .locations-grid {
 
 .lang-list li a:hover {
     color: var(--color-orange);
+}
+
+/* Language switcher items (EN | ES) — markup from roden_language_switcher() */
+.lang-switcher-item {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--color-gray-light);
+    text-decoration: none;
+    padding: 0.25em 0.15em;
+    transition: color 0.2s ease;
+}
+
+.lang-switcher-item + .lang-switcher-item::before {
+    content: "|";
+    color: var(--color-gray-light);
+    margin: 0 0.35em;
+    font-weight: 400;
+}
+
+a.lang-switcher-item:hover,
+a.lang-switcher-item:focus {
+    color: var(--color-orange);
+}
+
+.lang-switcher-item.is-current {
+    color: var(--color-orange);
+}
+
+.lang-switcher--footer {
+    display: inline-block;
+    margin-left: var(--space-md);
+}
+
+/* Español/English item inside the nav (mobile reachability) */
+.menu-item-lang-switch a {
+    font-weight: 600;
+}
+
+@media (min-width: 769px) {
+    /* Desktop (nav not collapsed): the top-bar switcher is visible, hide the
+       nav duplicate. Mobile keeps both — top bar retains .top-bar-right. */
+    .menu-item-lang-switch {
+        display: none;
+    }
 }
 
 .lang-list li.current-lang a {

@@ -1,0 +1,3561 @@
+# Copyright (C) 2026 Roden Law
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Roden Law 1.4.11\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/roden-law\n"
+"Last-Translator: Blue Sky Studio <brian@blueskystud.io>\n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-07-06T17:34:28+00:00\n"
+"PO-Revision-Date: 2026-07-06T00:00:00+00:00\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Claude Code\n"
+"X-Domain: roden-law\n"
+
+#. Theme Name of the theme
+#. Author of the theme
+#: style.css
+msgid "Roden Law"
+msgstr ""
+
+#. Theme URI of the theme
+#. Author URI of the theme
+#: style.css
+msgid "https://rodenlaw.com"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "Custom AI-SEO optimized WordPress theme for Roden Law personal injury firm serving Georgia and South Carolina across 5 office locations. Built with structured data, E-E-A-T compliance, and local SEO as core architecture principles."
+msgstr ""
+
+#: 404.php:12
+msgid "Page Not Found"
+msgstr "Página No Encontrada"
+
+#: 404.php:13
+msgid "The page you're looking for doesn't exist or has been moved."
+msgstr "La página que busca no existe o ha sido movida."
+
+#: 404.php:18
+msgid "Go to Homepage"
+msgstr "Ir a la Página de Inicio"
+
+#. translators: %s: phone number.
+#. translators: %s: vanity phone
+#: 404.php:19
+#: archive-attorney.php:63
+#: archive-practice_area.php:123
+#: front-page.php:90
+#: front-page.php:433
+#: page-about.php:174
+#: page-about 2.php:166
+#: page-contact.php:127
+#: page-testimonials.php:58
+#: templates/parts/hero-location.php:65
+#: templates/parts/hero-practice-area.php:34
+#: templates/template-intersection.php:510
+#: templates/template-location.php:102
+#: templates/template-location.php:542
+#: templates/template-practice-area.php:51
+#: templates/template-practice-area.php:615
+#: templates/template-subtype.php:35
+#: templates/template-subtype.php:311
+#, php-format
+msgid "Call %s"
+msgstr "Llame al %s"
+
+#: 404.php:26
+msgid "Looking for Something?"
+msgstr "¿Busca Algo?"
+
+#: 404.php:29
+#: footer.php:98
+#: footer 2.php:85
+#: header.php:125
+#: header.php:145
+#: header 2.php:118
+#: inc/custom-post-types.php:33
+#: inc/custom-post-types.php:45
+#: inc/custom-post-types 2.php:33
+#: inc/custom-post-types 2.php:45
+#: inc/schema-helpers.php:1175
+#: inc/schema-helpers 2.php:928
+#: inc/template-tags.php:29
+msgid "Practice Areas"
+msgstr "Áreas de Práctica"
+
+#: 404.php:42
+#: header.php:127
+#: header.php:147
+#: header 2.php:120
+#: inc/custom-post-types.php:61
+#: inc/custom-post-types.php:73
+#: inc/custom-post-types 2.php:61
+#: inc/custom-post-types 2.php:73
+#: inc/schema-helpers.php:1202
+#: inc/schema-helpers 2.php:955
+#: inc/template-tags.php:41
+msgid "Locations"
+msgstr "Oficinas"
+
+#: archive-attorney.php:19
+msgid "Our Attorneys"
+msgstr "Nuestros Abogados"
+
+#: archive-attorney.php:21
+msgid "Meet the experienced personal injury attorneys at Roden Law. Licensed in Georgia and South Carolina, our team has recovered"
+msgstr "Conozca a los experimentados abogados de lesiones personales de Roden Law. Con licencia en Georgia y Carolina del Sur, nuestro equipo ha recuperado"
+
+#: archive-attorney.php:23
+msgid "for injured clients across 6 office locations."
+msgstr "para clientes lesionados desde 6 oficinas."
+
+#: archive-attorney.php:37
+msgid "Meet the Team"
+msgstr "Conozca al Equipo"
+
+#: archive-attorney.php:49
+msgid "Our Staff"
+msgstr "Nuestro Personal"
+
+#: archive-attorney.php:57
+#: page-contact.php:53
+msgid "Schedule a Free Consultation"
+msgstr "Programe una Consulta Gratuita"
+
+#: archive-attorney.php:59
+msgid "Speak directly with one of our experienced personal injury attorneys. No fees unless we win."
+msgstr "Hable directamente con uno de nuestros experimentados abogados de lesiones personales. Sin honorarios a menos que ganemos."
+
+#. translators: %s: phone number.
+#: archive-attorney.php:66
+#: archive-practice_area.php:126
+#: footer.php:195
+#: footer 2.php:129
+#: front-page.php:439
+#: inc/template-tags.php:664
+#: templates/template-intersection.php:512
+#: templates/template-location.php:544
+#: templates/template-practice-area.php:616
+#: templates/template-subtype.php:312
+msgid "Free Case Review"
+msgstr "Revisión Gratuita de su Caso"
+
+#: archive-practice_area.php:20
+#: front-page.php:172
+msgid "Personal Injury Practice Areas"
+msgstr "Áreas de Práctica de Lesiones Personales"
+
+#: archive-practice_area.php:22
+msgid "Roden Law handles all types of personal injury cases across Georgia and South Carolina. Our attorneys have recovered"
+msgstr "Roden Law maneja todo tipo de casos de lesiones personales en Georgia y Carolina del Sur. Nuestros abogados han recuperado"
+
+#: archive-practice_area.php:24
+msgid "for injured clients. Select a practice area below to learn more."
+msgstr "para clientes lesionados. Seleccione un área de práctica a continuación para obtener más información."
+
+#: archive-practice_area.php:108
+#: footer.php:124
+#: footer 2.php:111
+msgid "Our Offices"
+msgstr "Nuestras Oficinas"
+
+#: archive-practice_area.php:109
+msgid "We serve clients from 5 locations across Georgia and South Carolina."
+msgstr "Atendemos a clientes desde 5 oficinas en Georgia y Carolina del Sur."
+
+#: archive-practice_area.php:117
+msgid "Injured? Get Your Free Case Review."
+msgstr "¿Lesionado? Obtenga la Revisión Gratuita de su Caso."
+
+#: archive-practice_area.php:119
+#: front-page.php:426
+#: page-about.php:167
+#: page-about 2.php:159
+#: page-contact.php:120
+#: page-testimonials.php:51
+msgid "No fees unless we win. Available 24/7 across Georgia and South Carolina."
+msgstr "Sin honorarios a menos que ganemos. Disponibles 24/7 en Georgia y Carolina del Sur."
+
+#: archive.php:48
+msgid "Archive pagination"
+msgstr "Paginación del archivo"
+
+#: footer.php:21
+msgid "Car Accidents"
+msgstr "Accidentes de Auto"
+
+#: footer.php:22
+msgid "Truck Accidents"
+msgstr "Accidentes de Camión"
+
+#: footer.php:23
+msgid "Motorcycle Accidents"
+msgstr "Accidentes de Motocicleta"
+
+#: footer.php:24
+msgid "Pedestrian Accidents"
+msgstr "Accidentes de Peatones"
+
+#: footer.php:54
+#: footer 2.php:41
+msgid "recovered for injury victims across Georgia and South Carolina. No fees unless we win."
+msgstr "recuperados para víctimas de lesiones en Georgia y Carolina del Sur. Sin honorarios a menos que ganemos."
+
+#: footer.php:59
+#: footer 2.php:46
+msgid "Facebook"
+msgstr "Facebook"
+
+#: footer.php:66
+#: footer 2.php:53
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: footer.php:73
+#: footer 2.php:60
+msgid "X / Twitter"
+msgstr "X / Twitter"
+
+#: footer.php:80
+#: footer 2.php:67
+msgid "YouTube"
+msgstr "YouTube"
+
+#: footer.php:87
+#: footer 2.php:74
+msgid "Instagram"
+msgstr "Instagram"
+
+#: footer.php:110
+#: footer 2.php:97
+msgid "Other Personal Injuries"
+msgstr "Otras Lesiones Personales"
+
+#: footer.php:115
+#: footer 2.php:102
+#: header.php:182
+#: header 2.php:139
+#: inc/custom-post-types.php:167
+#: inc/custom-post-types.php:178
+#: inc/custom-post-types 2.php:167
+#: inc/custom-post-types 2.php:178
+#: inc/nav-menus.php:182
+#: inc/schema-helpers.php:1304
+#: inc/schema-helpers 2.php:1051
+#: inc/template-tags.php:102
+msgid "Resources"
+msgstr "Recursos"
+
+#: footer.php:129
+#: header.php:151
+#: inc/meta-boxes.php:242
+#: inc/meta-boxes 2.php:224
+#: inc/nav-menus.php:127
+#: inc/template-tags.php:1681
+#: single-practice_area.php:43
+#: templates/template-practice-area.php:635
+#: templates/template-subtype.php:362
+msgid "Georgia"
+msgstr "Georgia"
+
+#: footer.php:134
+#: footer.php:179
+#: header.php:152
+#: inc/meta-boxes.php:243
+#: inc/meta-boxes 2.php:225
+#: inc/nav-menus.php:128
+#: inc/template-tags.php:1682
+#: single-practice_area.php:44
+#: templates/template-practice-area.php:639
+#: templates/template-subtype.php:366
+msgid "South Carolina"
+msgstr "Carolina del Sur"
+
+#. translators: %s: state name (Georgia or South Carolina)
+#. translators: %s: number of offices.
+#: footer.php:147
+#: footer.php:147
+#, php-format
+msgctxt "state name"
+msgid "%s Offices"
+msgstr "Oficinas de %s"
+
+#: inc/template-tags.php:1258
+#, php-format
+msgctxt "office count"
+msgid "%s Offices"
+msgstr "%s Oficinas"
+
+#: footer.php:197
+#: footer 2.php:131
+msgid "Injured? Find out what your case is worth. No fees unless we win."
+msgstr "¿Lesionado? Descubra cuánto vale su caso. Sin honorarios a menos que ganemos."
+
+#: footer.php:198
+#: footer 2.php:132
+msgid "Get Your Free Case Review"
+msgstr "Obtenga la Revisión Gratuita de su Caso"
+
+#: footer.php:205
+#: footer 2.php:139
+msgid "Disclaimer:"
+msgstr "Aviso Legal:"
+
+#: footer.php:205
+#: footer 2.php:139
+msgid "Attorney Eric Roden is responsible for the content of this website, and his primary office address is 333 Commercial Drive, Savannah, GA 31406. South Carolina cases are principally handled out of the Charleston and North Charleston, South Carolina offices. South Carolina cases are primarily handled by attorney Graeham Gillin, and the primary office addresses are 127 King Street, Charleston, SC 29401 and 2703 Spruill Ave, North Charleston, SC 29405. Georgia cases are principally handled out of the Savannah and Darien, Georgia offices."
+msgstr "El abogado Eric Roden es responsable del contenido de este sitio web, y la dirección de su oficina principal es 333 Commercial Drive, Savannah, GA 31406. Los casos de Carolina del Sur se manejan principalmente desde las oficinas de Charleston y North Charleston, Carolina del Sur. Los casos de Carolina del Sur son manejados principalmente por el abogado Graeham Gillin, y las direcciones de las oficinas principales son 127 King Street, Charleston, SC 29401 y 2703 Spruill Ave, North Charleston, SC 29405. Los casos de Georgia se manejan principalmente desde las oficinas de Savannah y Darien, Georgia."
+
+#: footer.php:206
+#: footer 2.php:140
+msgid "Case Results:"
+msgstr "Resultados de Casos:"
+
+#: footer.php:206
+#: footer 2.php:140
+msgid "Case \"value,\" \"results,\" and/or \"maximum compensation\" is determined from the total settlement amount. The settlement amounts shown are gross numbers before attorney's fees and cost deductions. The % fees will be computed before deducting expenses and costs from the gross settlement. Each case is unique, and the examples shown are just that, examples of past results. Past results do not guarantee or suggest recovery in your specific case. Each case is different."
+msgstr "El \"valor\" del caso, los \"resultados\" y/o la \"compensación máxima\" se determinan a partir del monto total del acuerdo. Los montos de acuerdo mostrados son cifras brutas antes de deducir los honorarios del abogado y los costos. El % de honorarios se calculará antes de deducir gastos y costos del acuerdo bruto. Cada caso es único, y los ejemplos mostrados son solo eso, ejemplos de resultados pasados. Los resultados pasados no garantizan ni sugieren una recuperación en su caso específico. Cada caso es diferente."
+
+#: footer.php:207
+#: footer 2.php:141
+msgid "No Upfront Fees:"
+msgstr "Sin Honorarios por Adelantado:"
+
+#: footer.php:207
+#: footer 2.php:141
+msgid "Fees and costs apply only upon successful recovery. No fees or costs with no recovery."
+msgstr "Los honorarios y costos aplican solo si hay una recuperación exitosa. Sin recuperación, no hay honorarios ni costos."
+
+#: footer.php:208
+#: footer 2.php:142
+msgid "Testimonials:"
+msgstr "Testimonios:"
+
+#: footer.php:208
+#: footer 2.php:142
+msgid "Testimonials reflect individual experiences and do not guarantee similar outcomes. No clients were paid for endorsements unless otherwise disclosed."
+msgstr "Los testimonios reflejan experiencias individuales y no garantizan resultados similares. Ningún cliente recibió pago por su recomendación, salvo que se indique lo contrario."
+
+#: footer.php:209
+#: footer 2.php:143
+msgid "Content:"
+msgstr "Contenido:"
+
+#: footer.php:209
+#: footer 2.php:143
+msgid "The term 'expert witness' refers to individuals who testify based on their professional expertise in court. Roden Law attorneys do not claim the title of legal 'expert' as defined by South Carolina Rule 7.4(b), unless certified by the appropriate authority."
+msgstr "El término 'testigo experto' se refiere a personas que testifican ante un tribunal con base en su experiencia profesional. Los abogados de Roden Law no reclaman el título de 'experto' legal según lo define la South Carolina Rule 7.4(b), a menos que estén certificados por la autoridad correspondiente."
+
+#: footer.php:210
+#: footer 2.php:144
+msgid "The information contained in this Website is provided for informational purposes only and should not be construed as legal advice on any subject matter. Furthermore, The Firm does not wish to represent anyone desiring representation based upon viewing this Website in a state where this Website fails to comply with all laws and ethical rules of that state. Roden Law is licensed to practice in the states of Georgia and South Carolina. Reproduction, distribution, republication, and/or retransmission of material contained within The Roden Law Website is prohibited unless the prior written permission of Roden Law has been obtained."
+msgstr "La información contenida en este sitio web se proporciona únicamente con fines informativos y no debe interpretarse como asesoramiento legal sobre ningún tema. Además, El Bufete no desea representar a nadie que busque representación con base en la visualización de este sitio web en un estado donde este sitio web no cumpla con todas las leyes y normas éticas de ese estado. Roden Law tiene licencia para ejercer en los estados de Georgia y Carolina del Sur. La reproducción, distribución, republicación y/o retransmisión del material contenido en el sitio web de Roden Law está prohibida a menos que se haya obtenido el permiso previo por escrito de Roden Law."
+
+#: footer.php:217
+#: footer 2.php:151
+msgid "All Rights Reserved"
+msgstr "Todos los Derechos Reservados"
+
+#: footer.php:218
+#: footer 2.php:152
+msgid "Privacy Policy"
+msgstr "Política de Privacidad"
+
+#: footer.php:221
+#: footer 2.php:155
+msgid "Licensed in Georgia & South Carolina"
+msgstr "Con Licencia en Georgia y Carolina del Sur"
+
+#: footer.php:232
+#: footer 2.php:165
+msgid "Back to top"
+msgstr "Volver arriba"
+
+#: footer.php:235
+#: footer 2.php:168
+#: page-contact.php:23
+msgid "Contact Roden Law"
+msgstr "Contacte a Roden Law"
+
+#: footer.php:237
+#: footer 2.php:170
+msgid "Free Review"
+msgstr "Revisión Gratuita"
+
+#. translators: %s: number of offices.
+#: front-page.php:50
+#: inc/template-tags.php:1259
+#: single-practice_area.php:42
+#: templates/parts/hero-practice-area.php:14
+msgid "Georgia & South Carolina"
+msgstr "Georgia y Carolina del Sur"
+
+#: front-page.php:51
+msgid "Personal Injury Lawyers"
+msgstr "Abogados de Lesiones Personales"
+
+#: front-page.php:52
+msgid "Who Fight for Maximum Compensation"
+msgstr "Que Luchan por la Compensación Máxima"
+
+#. translators: %s: amount recovered
+#: front-page.php:59
+#, php-format
+msgid "Roden Law has recovered %s for injury victims across Savannah, Charleston, North Charleston, Columbia, Myrtle Beach, and Darien. No fees unless we win. Free case review 24/7."
+msgstr "Roden Law ha recuperado %s para víctimas de lesiones en Savannah, Charleston, North Charleston, Columbia, Myrtle Beach y Darien. Sin honorarios a menos que ganemos. Revisión gratuita de su caso 24/7."
+
+#: front-page.php:69
+#: inc/template-tags.php:734
+#: inc/template-tags.php:1251
+#: templates/parts/hero-location.php:51
+#: templates/template-location.php:87
+msgid "Recovered for Clients"
+msgstr "Recuperados para Clientes"
+
+#: front-page.php:73
+#: inc/template-tags.php:735
+#: templates/parts/hero-location.php:55
+#: templates/template-location.php:91
+msgid "Client Rating"
+msgstr "Calificación de Clientes"
+
+#: front-page.php:77
+#: inc/template-tags.php:736
+#: page-contact.php:70
+#: templates/parts/hero-location.php:59
+#: templates/template-location.php:95
+msgid "Cases Handled"
+msgstr "Casos Manejados"
+
+#: front-page.php:111
+msgid "Bar association memberships"
+msgstr "Membresías en asociaciones de abogados"
+
+#: front-page.php:116
+#: templates/template-location.php:124
+#: templates/template-practice-area.php:68
+msgid "State Bar of Georgia"
+msgstr "State Bar of Georgia"
+
+#: front-page.php:120
+#: templates/template-location.php:128
+#: templates/template-practice-area.php:69
+msgid "American Association for Justice"
+msgstr "American Association for Justice"
+
+#: front-page.php:124
+#: templates/template-practice-area.php:70
+msgid "Georgia Trial Lawyers Association"
+msgstr "Georgia Trial Lawyers Association"
+
+#: front-page.php:128
+#: templates/template-location.php:136
+#: templates/template-practice-area.php:71
+msgid "American Bar Association"
+msgstr "American Bar Association"
+
+#: front-page.php:141
+msgid "How It Works"
+msgstr "Cómo Funciona"
+
+#: front-page.php:142
+msgid "Getting started is simple — and completely free."
+msgstr "Comenzar es simple — y completamente gratis."
+
+#: front-page.php:148
+msgid "Free Consultation"
+msgstr "Consulta Gratuita"
+
+#: front-page.php:149
+msgid "Tell us what happened. We'll review your case for free — no obligation."
+msgstr "Cuéntenos qué pasó. Revisaremos su caso gratis — sin compromiso."
+
+#: front-page.php:153
+msgid "We Build Your Case"
+msgstr "Construimos su Caso"
+
+#: front-page.php:154
+msgid "Our attorneys investigate, gather evidence, and handle all legal work."
+msgstr "Nuestros abogados investigan, reúnen evidencia y se encargan de todo el trabajo legal."
+
+#: front-page.php:158
+msgid "You Get Compensated"
+msgstr "Usted Recibe su Compensación"
+
+#: front-page.php:159
+msgid "We negotiate maximum compensation. No fees unless we win."
+msgstr "Negociamos la compensación máxima. Sin honorarios a menos que ganemos."
+
+#: front-page.php:173
+msgid "We handle all types of personal injury cases throughout Georgia and South Carolina."
+msgstr "Manejamos todo tipo de casos de lesiones personales en Georgia y Carolina del Sur."
+
+#: front-page.php:191
+msgid "View All Practice Areas"
+msgstr "Ver Todas las Áreas de Práctica"
+
+#: front-page.php:204
+msgid "Our Offices in Georgia & South Carolina"
+msgstr "Nuestras Oficinas en Georgia y Carolina del Sur"
+
+#: front-page.php:223
+#: inc/template-tags.php:382
+#: page-contact.php:105
+#: templates/template-location.php:524
+msgid "View Office"
+msgstr "Ver Oficina"
+
+#: front-page.php:241
+#: page-about.php:40
+#: page-about 2.php:40
+msgid "Eric Roden, Founding Partner of Roden Law"
+msgstr "Eric Roden, Socio Fundador de Roden Law"
+
+#: front-page.php:246
+#: inc/template-tags.php:1247
+#: templates/template-intersection.php:582
+#: templates/template-practice-area.php:672
+#: templates/template-subtype.php:374
+msgid "Why Roden Law?"
+msgstr "¿Por Qué Roden Law?"
+
+#: front-page.php:249
+#: page-about.php:60
+#: page-about 2.php:56
+msgid "I started Roden Law because I saw too many injury victims get lowballed by insurance companies. Our team fights for every dollar you deserve — and we don't get paid unless you do."
+msgstr "Fundé Roden Law porque vi a demasiadas víctimas de lesiones recibir ofertas muy por debajo de lo justo por parte de las aseguradoras. Nuestro equipo lucha por cada dólar que usted merece — y no cobramos a menos que usted cobre."
+
+#: front-page.php:250
+#: page-about.php:61
+#: page-about 2.php:57
+msgid "— Eric Roden, Founding Partner"
+msgstr "— Eric Roden, Socio Fundador"
+
+#: front-page.php:255
+msgid "$300M+ Recovered"
+msgstr "$300M+ Recuperados"
+
+#: front-page.php:256
+msgid "Proven track record across Georgia and South Carolina"
+msgstr "Historial comprobado en Georgia y Carolina del Sur"
+
+#: front-page.php:259
+msgid "No Upfront Costs"
+msgstr "Sin Costos por Adelantado"
+
+#: front-page.php:260
+msgid "100% contingency. You pay nothing unless we win."
+msgstr "100% de contingencia. Usted no paga nada a menos que ganemos."
+
+#: front-page.php:263
+msgid "6 Office Locations"
+msgstr "6 Oficinas"
+
+#: front-page.php:264
+msgid "Local attorneys in Savannah, Charleston, North Charleston, Columbia, Myrtle Beach, and Darien"
+msgstr "Abogados locales en Savannah, Charleston, North Charleston, Columbia, Myrtle Beach y Darien"
+
+#: front-page.php:280
+#: page-about.php:122
+#: page-about 2.php:118
+#: templates/template-location.php:451
+msgid "Our Results Speak for Themselves"
+msgstr "Nuestros Resultados Hablan por Sí Mismos"
+
+#: front-page.php:284
+msgid "Scroll left"
+msgstr "Desplazar a la izquierda"
+
+#: front-page.php:310
+msgid "Scroll right"
+msgstr "Desplazar a la derecha"
+
+#: front-page.php:322
+#: front-page.php:351
+msgid "5 star rating"
+msgstr "Calificación de 5 estrellas"
+
+#: front-page.php:323
+msgid "Hundreds of Five-Star Reviews"
+msgstr "Cientos de Reseñas de Cinco Estrellas"
+
+#: front-page.php:324
+msgid "Our clients trust us to fight for maximum compensation."
+msgstr "Nuestros clientes confían en nosotros para luchar por la compensación máxima."
+
+#: front-page.php:362
+msgid "Read More Client Reviews"
+msgstr "Leer Más Reseñas de Clientes"
+
+#: front-page.php:384
+#: page-about 2.php:138
+msgid "Meet Our Attorneys"
+msgstr "Conozca a Nuestros Abogados"
+
+#: front-page.php:385
+#: page-about 2.php:139
+msgid "Experienced trial lawyers fighting for injury victims across Georgia and South Carolina."
+msgstr "Abogados litigantes experimentados que luchan por las víctimas de lesiones en Georgia y Carolina del Sur."
+
+#: front-page.php:408
+msgid "Meet the Full Team"
+msgstr "Conozca al Equipo Completo"
+
+#: front-page.php:424
+#: page-testimonials.php:49
+msgid "Injured? Get Your Free Case Review Today."
+msgstr "¿Lesionado? Obtenga la Revisión Gratuita de su Caso Hoy."
+
+#: functions.php:446
+#: functions 2.php:450
+msgid "Practice Area Sidebar"
+msgstr "Barra Lateral de Áreas de Práctica"
+
+#: functions.php:448
+#: functions 2.php:452
+msgid "Sidebar for practice area pages"
+msgstr "Barra lateral para páginas de áreas de práctica"
+
+#: functions.php:456
+#: functions 2.php:460
+msgid "Location Sidebar"
+msgstr "Barra Lateral de Oficinas"
+
+#: functions.php:458
+#: functions 2.php:462
+msgid "Sidebar for location pages"
+msgstr "Barra lateral para páginas de oficinas"
+
+#: functions.php:466
+#: functions 2.php:470
+msgid "Blog Sidebar"
+msgstr "Barra Lateral del Blog"
+
+#: functions.php:468
+#: functions 2.php:472
+msgid "Sidebar for blog and resource pages"
+msgstr "Barra lateral para páginas de blog y recursos"
+
+#: functions.php:476
+#: functions 2.php:480
+msgid "Footer Widgets"
+msgstr "Widgets del Pie de Página"
+
+#: functions.php:478
+#: functions 2.php:482
+msgid "Footer widget area"
+msgstr "Área de widgets del pie de página"
+
+#: functions.php:579
+msgid "Thank you! We will be in touch shortly."
+msgstr "¡Gracias! Nos pondremos en contacto en breve."
+
+#: functions.php:586
+msgid "Too many submissions. Please try again later or call us directly."
+msgstr "Demasiados envíos. Intente de nuevo más tarde o llámenos directamente."
+
+#: functions.php:613
+msgid "Please fill in your name and phone number, and accept the consent."
+msgstr "Por favor complete su nombre y número de teléfono, y acepte el consentimiento."
+
+#: functions.php:746
+msgid "Please enter a valid email (e.g. name@example.com)"
+msgstr "Por favor ingrese un correo electrónico válido (p. ej. name@example.com)"
+
+#: functions.php:761
+msgid "Please enter a valid 10-digit phone number."
+msgstr "Por favor ingrese un número de teléfono válido de 10 dígitos."
+
+#: functions.php:769
+msgid "Please enter a valid email address."
+msgstr "Por favor ingrese una dirección de correo electrónico válida."
+
+#: functions.php:775
+msgid "Submitting…"
+msgstr "Enviando…"
+
+#: functions.php:788
+msgid "Something went wrong. Please call 844-RESULTS."
+msgstr "Algo salió mal. Por favor llame al 844-RESULTS."
+
+#: functions.php:791
+#: functions.php:798
+#: inc/template-tags.php:702
+msgid "See If You Qualify"
+msgstr "Vea Si Califica"
+
+#: functions.php:795
+msgid "Network error. Please call 844-RESULTS."
+msgstr "Error de red. Por favor llame al 844-RESULTS."
+
+#: header.php:27
+#: header 2.php:27
+msgid "Skip to content"
+msgstr "Saltar al contenido"
+
+#: header.php:36
+#: header 2.php:36
+msgid "Serving Georgia & South Carolina"
+msgstr "Sirviendo a Georgia y Carolina del Sur"
+
+#: header.php:38
+#: header 2.php:38
+msgid "No Fees Unless We Win"
+msgstr "Sin Honorarios a Menos que Ganemos"
+
+#: header.php:45
+#: header 2.php:45
+#: templates/template-intersection.php:588
+#: templates/template-practice-area.php:678
+#: templates/template-subtype.php:380
+msgid "Free 24/7 Consultations"
+msgstr "Consultas Gratuitas 24/7"
+
+#: header.php:62
+#: header 2.php:61
+msgid "Personal Injury Attorneys"
+msgstr "Abogados de Lesiones Personales"
+
+#: header.php:69
+#: header 2.php:68
+msgid "Primary Menu"
+msgstr "Menú principal"
+
+#: header.php:92
+#: header 2.php:91
+msgid "Call us now"
+msgstr "Llámenos ahora"
+
+#: header.php:99
+#: header 2.php:98
+msgid "Toggle Menu"
+msgstr "Abrir/cerrar menú"
+
+#: header.php:137
+#: header.php:176
+#: header 2.php:133
+msgid "About Us"
+msgstr "Sobre Nosotros"
+
+#: header.php:138
+#: header.php:185
+#: header 2.php:142
+#: templates/template-practice-area.php:104
+msgid "Contact"
+msgstr "Contacto"
+
+#: header.php:173
+#: header 2.php:130
+#: templates/template-practice-area.php:102
+msgid "Results"
+msgstr "Resultados"
+
+#: header.php:174
+#: header 2.php:131
+msgid "Class Actions"
+msgstr "Demandas Colectivas"
+
+#: header.php:178
+#: header 2.php:135
+#: page-about.php:24
+#: page-about 2.php:24
+msgid "About Roden Law"
+msgstr "Sobre Roden Law"
+
+#: header.php:179
+#: header 2.php:136
+#: inc/custom-post-types.php:88
+#: inc/custom-post-types.php:99
+#: inc/custom-post-types 2.php:88
+#: inc/custom-post-types 2.php:99
+#: inc/schema-helpers.php:1276
+#: inc/schema-helpers 2.php:1023
+#: inc/template-tags.php:89
+#: page-about.php:146
+msgid "Attorneys"
+msgstr "Abogados"
+
+#: header.php:180
+#: header 2.php:137
+#: inc/custom-post-types.php:140
+#: inc/custom-post-types.php:151
+#: inc/custom-post-types 2.php:140
+#: inc/custom-post-types 2.php:151
+msgid "Testimonials"
+msgstr "Testimonios"
+
+#: header.php:181
+#: header 2.php:138
+#: inc/schema-helpers.php:1318
+#: inc/schema-helpers.php:1348
+#: inc/schema-helpers.php:2643
+#: inc/schema-helpers 2.php:1065
+#: inc/schema-helpers 2.php:1095
+#: inc/template-tags.php:98
+#: inc/template-tags.php:109
+#: inc/template-tags.php:113
+#: inc/template-tags.php:118
+msgid "Blog"
+msgstr "Blog"
+
+#: inc/custom-post-types.php:34
+#: inc/custom-post-types 2.php:34
+msgid "Practice Area"
+msgstr ""
+
+#: inc/custom-post-types.php:35
+#: inc/custom-post-types.php:63
+#: inc/custom-post-types.php:90
+#: inc/custom-post-types.php:116
+#: inc/custom-post-types.php:142
+#: inc/custom-post-types.php:169
+#: inc/custom-post-types 2.php:35
+#: inc/custom-post-types 2.php:63
+#: inc/custom-post-types 2.php:90
+#: inc/custom-post-types 2.php:116
+#: inc/custom-post-types 2.php:142
+#: inc/custom-post-types 2.php:169
+msgid "Add New"
+msgstr ""
+
+#: inc/custom-post-types.php:36
+#: inc/custom-post-types 2.php:36
+msgid "Add New Practice Area"
+msgstr ""
+
+#: inc/custom-post-types.php:37
+#: inc/custom-post-types 2.php:37
+msgid "Edit Practice Area"
+msgstr ""
+
+#: inc/custom-post-types.php:38
+#: inc/custom-post-types 2.php:38
+msgid "New Practice Area"
+msgstr ""
+
+#: inc/custom-post-types.php:39
+#: inc/custom-post-types 2.php:39
+msgid "View Practice Area"
+msgstr ""
+
+#: inc/custom-post-types.php:40
+#: inc/custom-post-types 2.php:40
+msgid "Search Practice Areas"
+msgstr ""
+
+#: inc/custom-post-types.php:41
+#: inc/custom-post-types 2.php:41
+msgid "No practice areas found"
+msgstr ""
+
+#: inc/custom-post-types.php:42
+#: inc/custom-post-types 2.php:42
+msgid "No practice areas found in trash"
+msgstr ""
+
+#: inc/custom-post-types.php:43
+#: inc/custom-post-types 2.php:43
+msgid "Parent Practice Area:"
+msgstr ""
+
+#: inc/custom-post-types.php:44
+#: inc/custom-post-types 2.php:44
+msgid "All Practice Areas"
+msgstr ""
+
+#: inc/custom-post-types.php:62
+#: inc/custom-post-types 2.php:62
+#: inc/template-tags.php:1441
+msgid "Location"
+msgstr "Ubicación"
+
+#: inc/custom-post-types.php:64
+#: inc/custom-post-types 2.php:64
+msgid "Add New Location"
+msgstr ""
+
+#: inc/custom-post-types.php:65
+#: inc/custom-post-types 2.php:65
+msgid "Edit Location"
+msgstr ""
+
+#: inc/custom-post-types.php:66
+#: inc/custom-post-types 2.php:66
+msgid "New Location"
+msgstr ""
+
+#: inc/custom-post-types.php:67
+#: inc/custom-post-types 2.php:67
+msgid "View Location"
+msgstr ""
+
+#: inc/custom-post-types.php:68
+#: inc/custom-post-types 2.php:68
+msgid "Search Locations"
+msgstr ""
+
+#: inc/custom-post-types.php:69
+#: inc/custom-post-types 2.php:69
+msgid "No locations found"
+msgstr ""
+
+#: inc/custom-post-types.php:70
+#: inc/custom-post-types 2.php:70
+msgid "No locations found in trash"
+msgstr ""
+
+#: inc/custom-post-types.php:71
+#: inc/custom-post-types 2.php:71
+msgid "Parent Location:"
+msgstr ""
+
+#: inc/custom-post-types.php:72
+#: inc/custom-post-types 2.php:72
+msgid "All Locations"
+msgstr ""
+
+#: inc/custom-post-types.php:89
+#: inc/custom-post-types 2.php:89
+#: inc/meta-boxes.php:714
+#: inc/meta-boxes 2.php:655
+msgid "Attorney"
+msgstr ""
+
+#: inc/custom-post-types.php:91
+#: inc/custom-post-types 2.php:91
+msgid "Add New Attorney"
+msgstr ""
+
+#: inc/custom-post-types.php:92
+#: inc/custom-post-types 2.php:92
+msgid "Edit Attorney"
+msgstr ""
+
+#: inc/custom-post-types.php:93
+#: inc/custom-post-types 2.php:93
+msgid "New Attorney"
+msgstr ""
+
+#: inc/custom-post-types.php:94
+#: inc/custom-post-types 2.php:94
+msgid "View Attorney"
+msgstr ""
+
+#: inc/custom-post-types.php:95
+#: inc/custom-post-types 2.php:95
+msgid "Search Attorneys"
+msgstr ""
+
+#: inc/custom-post-types.php:96
+#: inc/custom-post-types 2.php:96
+msgid "No attorneys found"
+msgstr ""
+
+#: inc/custom-post-types.php:97
+#: inc/custom-post-types 2.php:97
+msgid "No attorneys found in trash"
+msgstr ""
+
+#: inc/custom-post-types.php:98
+#: inc/custom-post-types 2.php:98
+msgid "All Attorneys"
+msgstr ""
+
+#: inc/custom-post-types.php:114
+#: inc/custom-post-types.php:125
+#: inc/custom-post-types 2.php:114
+#: inc/custom-post-types 2.php:125
+#: inc/schema-helpers.php:1290
+#: inc/schema-helpers 2.php:1037
+#: inc/template-tags.php:93
+msgid "Case Results"
+msgstr "Resultados de Casos"
+
+#: inc/custom-post-types.php:115
+#: inc/custom-post-types 2.php:115
+msgid "Case Result"
+msgstr ""
+
+#: inc/custom-post-types.php:117
+#: inc/custom-post-types 2.php:117
+msgid "Add New Case Result"
+msgstr ""
+
+#: inc/custom-post-types.php:118
+#: inc/custom-post-types 2.php:118
+msgid "Edit Case Result"
+msgstr ""
+
+#: inc/custom-post-types.php:119
+#: inc/custom-post-types 2.php:119
+msgid "New Case Result"
+msgstr ""
+
+#: inc/custom-post-types.php:120
+#: inc/custom-post-types 2.php:120
+msgid "View Case Result"
+msgstr ""
+
+#: inc/custom-post-types.php:121
+#: inc/custom-post-types 2.php:121
+msgid "Search Case Results"
+msgstr ""
+
+#: inc/custom-post-types.php:122
+#: inc/custom-post-types 2.php:122
+msgid "No case results found"
+msgstr ""
+
+#: inc/custom-post-types.php:123
+#: inc/custom-post-types 2.php:123
+msgid "No case results found in trash"
+msgstr ""
+
+#: inc/custom-post-types.php:124
+#: inc/custom-post-types 2.php:124
+msgid "All Case Results"
+msgstr ""
+
+#: inc/custom-post-types.php:141
+#: inc/custom-post-types 2.php:141
+msgid "Testimonial"
+msgstr ""
+
+#: inc/custom-post-types.php:143
+#: inc/custom-post-types 2.php:143
+msgid "Add New Testimonial"
+msgstr ""
+
+#: inc/custom-post-types.php:144
+#: inc/custom-post-types 2.php:144
+msgid "Edit Testimonial"
+msgstr ""
+
+#: inc/custom-post-types.php:145
+#: inc/custom-post-types 2.php:145
+msgid "New Testimonial"
+msgstr ""
+
+#: inc/custom-post-types.php:146
+#: inc/custom-post-types 2.php:146
+msgid "View Testimonial"
+msgstr ""
+
+#: inc/custom-post-types.php:147
+#: inc/custom-post-types 2.php:147
+msgid "Search Testimonials"
+msgstr ""
+
+#: inc/custom-post-types.php:148
+#: inc/custom-post-types 2.php:148
+msgid "No testimonials found"
+msgstr ""
+
+#: inc/custom-post-types.php:149
+#: inc/custom-post-types 2.php:149
+msgid "No testimonials found in trash"
+msgstr ""
+
+#: inc/custom-post-types.php:150
+#: inc/custom-post-types 2.php:150
+msgid "All Testimonials"
+msgstr ""
+
+#: inc/custom-post-types.php:168
+#: inc/custom-post-types 2.php:168
+msgid "Resource"
+msgstr ""
+
+#: inc/custom-post-types.php:170
+#: inc/custom-post-types 2.php:170
+msgid "Add New Resource"
+msgstr ""
+
+#: inc/custom-post-types.php:171
+#: inc/custom-post-types 2.php:171
+msgid "Edit Resource"
+msgstr ""
+
+#: inc/custom-post-types.php:172
+#: inc/custom-post-types 2.php:172
+msgid "New Resource"
+msgstr ""
+
+#: inc/custom-post-types.php:173
+#: inc/custom-post-types 2.php:173
+msgid "View Resource"
+msgstr ""
+
+#: inc/custom-post-types.php:174
+#: inc/custom-post-types 2.php:174
+msgid "Search Resources"
+msgstr ""
+
+#: inc/custom-post-types.php:175
+#: inc/custom-post-types 2.php:175
+msgid "No resources found"
+msgstr ""
+
+#: inc/custom-post-types.php:176
+#: inc/custom-post-types 2.php:176
+msgid "No resources found in trash"
+msgstr ""
+
+#: inc/custom-post-types.php:177
+#: inc/custom-post-types 2.php:177
+msgid "All Resources"
+msgstr ""
+
+#: inc/custom-post-types.php:206
+#: inc/custom-post-types.php:216
+#: inc/custom-post-types 2.php:206
+#: inc/custom-post-types 2.php:216
+msgid "Practice Categories"
+msgstr ""
+
+#: inc/custom-post-types.php:207
+#: inc/custom-post-types 2.php:207
+msgid "Practice Category"
+msgstr ""
+
+#: inc/custom-post-types.php:208
+#: inc/custom-post-types 2.php:208
+msgid "Search Practice Categories"
+msgstr ""
+
+#: inc/custom-post-types.php:209
+#: inc/custom-post-types 2.php:209
+msgid "All Practice Categories"
+msgstr ""
+
+#: inc/custom-post-types.php:210
+#: inc/custom-post-types 2.php:210
+msgid "Edit Practice Category"
+msgstr ""
+
+#: inc/custom-post-types.php:211
+#: inc/custom-post-types 2.php:211
+msgid "Update Practice Category"
+msgstr ""
+
+#: inc/custom-post-types.php:212
+#: inc/custom-post-types 2.php:212
+msgid "Add New Practice Category"
+msgstr ""
+
+#: inc/custom-post-types.php:213
+#: inc/custom-post-types 2.php:213
+msgid "New Practice Category Name"
+msgstr ""
+
+#: inc/custom-post-types.php:214
+#: inc/custom-post-types 2.php:214
+msgid "Parent Practice Category"
+msgstr ""
+
+#: inc/custom-post-types.php:215
+#: inc/custom-post-types 2.php:215
+msgid "Parent Practice Category:"
+msgstr ""
+
+#: inc/custom-post-types.php:228
+#: inc/custom-post-types.php:236
+#: inc/custom-post-types 2.php:228
+#: inc/custom-post-types 2.php:236
+msgid "Locations Served"
+msgstr ""
+
+#: inc/custom-post-types.php:229
+#: inc/custom-post-types 2.php:229
+msgid "Location Served"
+msgstr ""
+
+#: inc/custom-post-types.php:230
+#: inc/custom-post-types 2.php:230
+msgid "Search Locations Served"
+msgstr ""
+
+#: inc/custom-post-types.php:231
+#: inc/custom-post-types 2.php:231
+msgid "All Locations Served"
+msgstr ""
+
+#: inc/custom-post-types.php:232
+#: inc/custom-post-types 2.php:232
+msgid "Edit Location Served"
+msgstr ""
+
+#: inc/custom-post-types.php:233
+#: inc/custom-post-types 2.php:233
+msgid "Update Location Served"
+msgstr ""
+
+#: inc/custom-post-types.php:234
+#: inc/custom-post-types 2.php:234
+msgid "Add New Location Served"
+msgstr ""
+
+#: inc/custom-post-types.php:235
+#: inc/custom-post-types 2.php:235
+msgid "New Location Served Name"
+msgstr ""
+
+#: inc/i18n.php:345
+#: inc/i18n.php:381
+msgid "English"
+msgstr "English"
+
+#: inc/i18n.php:346
+#: inc/i18n.php:381
+msgid "Español"
+msgstr "Español"
+
+#: inc/i18n.php:350
+msgid "Language"
+msgstr "Idioma"
+
+#: inc/i18n.php:395
+msgid "Primary Navigation (Español)"
+msgstr "Navegación Principal (Español)"
+
+#: inc/i18n.php:396
+msgid "Footer Navigation (Español)"
+msgstr "Navegación de Pie de Página (Español)"
+
+#: inc/meta-boxes.php:28
+#: inc/meta-boxes 2.php:28
+msgid "Jurisdiction & Statute of Limitations"
+msgstr ""
+
+#: inc/meta-boxes.php:36
+#: inc/meta-boxes 2.php:36
+msgid "Intersection Office Key"
+msgstr ""
+
+#: inc/meta-boxes.php:44
+#: inc/meta-boxes 2.php:44
+msgid "Author Attribution (E-E-A-T)"
+msgstr ""
+
+#: inc/meta-boxes.php:54
+#: inc/meta-boxes 2.php:52
+msgid "Key Takeaways (AI Summary)"
+msgstr ""
+
+#: inc/meta-boxes.php:63
+#: inc/meta-boxes 2.php:61
+msgid "FAQs (generates FAQPage schema)"
+msgstr ""
+
+#: inc/meta-boxes.php:72
+#: inc/meta-boxes 2.php:70
+msgid "Hero Intro Paragraph"
+msgstr ""
+
+#: inc/meta-boxes.php:80
+#: inc/meta-boxes 2.php:78
+msgid "Why Hire Section Content"
+msgstr ""
+
+#: inc/meta-boxes.php:88
+#: inc/meta-boxes 2.php:86
+msgid "Expert Quote (AI SEO)"
+msgstr ""
+
+#: inc/meta-boxes.php:96
+#: inc/meta-boxes 2.php:94
+msgid "Common Causes"
+msgstr ""
+
+#: inc/meta-boxes.php:104
+#: inc/meta-boxes 2.php:102
+msgid "Common Injuries"
+msgstr ""
+
+#: inc/meta-boxes.php:112
+msgid "Pillar Negligence Intro (intersections inherit)"
+msgstr ""
+
+#: inc/meta-boxes.php:120
+msgid "Pillar Compensation Intro (intersections inherit)"
+msgstr ""
+
+#: inc/meta-boxes.php:130
+#: inc/meta-boxes 2.php:112
+msgid "Office Configuration"
+msgstr ""
+
+#: inc/meta-boxes.php:138
+#: inc/meta-boxes.php:677
+#: inc/meta-boxes 2.php:120
+#: inc/meta-boxes 2.php:618
+msgid "Service Area"
+msgstr ""
+
+#: inc/meta-boxes.php:146
+#: inc/meta-boxes 2.php:128
+msgid "Google Maps Embed URL"
+msgstr ""
+
+#: inc/meta-boxes.php:154
+#: inc/meta-boxes 2.php:136
+msgid "Local Content (courts, institutions)"
+msgstr ""
+
+#: inc/meta-boxes.php:164
+#: inc/meta-boxes 2.php:146
+msgid "Neighborhood Configuration"
+msgstr ""
+
+#: inc/meta-boxes.php:175
+#: inc/meta-boxes 2.php:157
+msgid "Attorney Profile"
+msgstr ""
+
+#: inc/meta-boxes.php:184
+#: inc/meta-boxes 2.php:166
+msgid "Education"
+msgstr ""
+
+#: inc/meta-boxes.php:192
+#: inc/meta-boxes 2.php:174
+msgid "Awards & Recognition"
+msgstr ""
+
+#: inc/meta-boxes.php:202
+#: inc/meta-boxes 2.php:184
+msgid "Case Result Details"
+msgstr ""
+
+#: inc/meta-boxes.php:214
+#: inc/meta-boxes 2.php:196
+msgid "SEO Meta Description"
+msgstr ""
+
+#: inc/meta-boxes.php:238
+#: inc/meta-boxes 2.php:220
+msgid "Jurisdiction:"
+msgstr ""
+
+#: inc/meta-boxes.php:240
+#: inc/meta-boxes.php:918
+#: inc/meta-boxes 2.php:222
+#: inc/meta-boxes 2.php:859
+msgid "— Select —"
+msgstr ""
+
+#: inc/meta-boxes.php:241
+#: inc/meta-boxes 2.php:223
+msgid "Both (GA & SC)"
+msgstr ""
+
+#: inc/meta-boxes.php:246
+#: inc/meta-boxes 2.php:228
+msgid "Pillar pages: \"Both\". Intersection pages: auto-detected from office."
+msgstr ""
+
+#: inc/meta-boxes.php:251
+#: inc/meta-boxes 2.php:233
+msgid "SOL Override — Georgia:"
+msgstr ""
+
+#: inc/meta-boxes.php:257
+#: inc/meta-boxes 2.php:239
+msgid "SOL Override — South Carolina:"
+msgstr ""
+
+#: inc/meta-boxes.php:262
+#: inc/meta-boxes 2.php:244
+msgid "Leave blank to use defaults from firm data config."
+msgstr ""
+
+#: inc/meta-boxes.php:273
+#: inc/meta-boxes 2.php:255
+msgid "Office (intersection pages only):"
+msgstr ""
+
+#: inc/meta-boxes.php:275
+#: inc/meta-boxes 2.php:257
+msgid "— None (pillar or sub-type) —"
+msgstr ""
+
+#: inc/meta-boxes.php:283
+#: inc/meta-boxes 2.php:265
+msgid "Set for intersection pages (PA × Location). Leave blank for pillar or sub-type pages."
+msgstr ""
+
+#: inc/meta-boxes.php:304
+#: inc/meta-boxes 2.php:286
+msgid "Attributed Attorney:"
+msgstr ""
+
+#: inc/meta-boxes.php:306
+#: inc/meta-boxes.php:974
+#: inc/meta-boxes 2.php:288
+#: inc/meta-boxes 2.php:915
+msgid "— Select Attorney —"
+msgstr ""
+
+#: inc/meta-boxes.php:314
+#: inc/meta-boxes 2.php:296
+msgid "Attorney for \"About the Author\" section and Person schema. Required for E-E-A-T."
+msgstr ""
+
+#: inc/meta-boxes.php:324
+#: inc/meta-boxes 2.php:306
+msgid "Hero intro (2-3 sentences, unique per practice area):"
+msgstr ""
+
+#: inc/meta-boxes.php:328
+#: inc/meta-boxes 2.php:310
+msgid "Displayed below the H1 in the hero section. Should summarize the practice area."
+msgstr ""
+
+#: inc/meta-boxes.php:343
+#: inc/meta-boxes 2.php:325
+msgid "2-3 paragraphs explaining why this specific type of case needs an attorney. Must be unique per practice area."
+msgstr ""
+
+#: inc/meta-boxes.php:353
+#: inc/meta-boxes 2.php:335
+msgid "Attorney quote about this practice area:"
+msgstr ""
+
+#: inc/meta-boxes.php:357
+#: inc/meta-boxes 2.php:339
+msgid "A 1-2 sentence quote from the assigned author attorney. Will be displayed with their name, title, and bar admissions. AI systems cite expert quotes +30% more often."
+msgstr ""
+
+#: inc/meta-boxes.php:379
+#: inc/meta-boxes 2.php:361
+msgid "+ Add Cause"
+msgstr ""
+
+#: inc/meta-boxes.php:380
+#: inc/meta-boxes 2.php:362
+msgid "Common causes specific to this practice area. Displayed in a 2-column list."
+msgstr ""
+
+#: inc/meta-boxes.php:397
+#: inc/meta-boxes 2.php:379
+msgid "Injury Name:"
+msgstr ""
+
+#: inc/meta-boxes.php:403
+#: inc/meta-boxes 2.php:385
+msgid "Description:"
+msgstr ""
+
+#: inc/meta-boxes.php:411
+#: inc/meta-boxes 2.php:393
+msgid "+ Add Injury"
+msgstr ""
+
+#: inc/meta-boxes.php:412
+#: inc/meta-boxes 2.php:394
+msgid "Common injuries for this practice area. Include 1-2 sentence descriptions per injury."
+msgstr ""
+
+#: inc/meta-boxes.php:433
+msgid "PA-specific framing for the negligence/liability section. Renders on every intersection page under this pillar (e.g. car-accident-lawyers/savannah-ga/, /charleston-sc/, etc.) with per-intersection token replacement. Tokens: {city} {market_name} {state_full} {state_short} {office_court} {office_court_address} {sol_years} {sol_cite} {comp_fault_threshold}"
+msgstr ""
+
+#: inc/meta-boxes.php:453
+msgid "PA-specific framing for the compensation/damages section. Renders on every intersection page under this pillar with per-intersection token replacement. Same token set as negligence intro."
+msgstr ""
+
+#: inc/meta-boxes.php:487
+#: inc/meta-boxes 2.php:428
+#, php-format
+msgid "Question %d:"
+msgstr ""
+
+#: inc/meta-boxes.php:492
+#: inc/meta-boxes 2.php:433
+msgid "Answer:"
+msgstr ""
+
+#: inc/meta-boxes.php:499
+#: inc/meta-boxes 2.php:440
+msgid "+ Add FAQ"
+msgstr ""
+
+#: inc/meta-boxes.php:500
+#: inc/meta-boxes 2.php:441
+msgid "Add 5-8 FAQs per page. Generates FAQPage schema automatically."
+msgstr ""
+
+#: inc/meta-boxes.php:515
+#: inc/meta-boxes 2.php:456
+msgid "Office:"
+msgstr ""
+
+#: inc/meta-boxes.php:517
+#: inc/meta-boxes.php:732
+#: inc/meta-boxes 2.php:458
+#: inc/meta-boxes 2.php:673
+msgid "— Select Office —"
+msgstr ""
+
+#: inc/meta-boxes.php:525
+#: inc/meta-boxes 2.php:466
+msgid "Links this location page to firm data config."
+msgstr ""
+
+#: inc/meta-boxes.php:535
+#: inc/meta-boxes 2.php:476
+msgid "Service area description (overrides firm-data default if set):"
+msgstr ""
+
+#: inc/meta-boxes.php:539
+#: inc/meta-boxes 2.php:480
+msgid "List surrounding cities and neighborhoods this office serves."
+msgstr ""
+
+#: inc/meta-boxes.php:549
+#: inc/meta-boxes 2.php:490
+msgid "Custom Map Embed URL:"
+msgstr ""
+
+#: inc/meta-boxes.php:554
+#: inc/meta-boxes 2.php:495
+msgid "Leave blank to auto-generate from office address."
+msgstr ""
+
+#: inc/meta-boxes.php:569
+#: inc/meta-boxes 2.php:510
+msgid "Additional content about local courts, institutions, and community ties."
+msgstr ""
+
+#: inc/meta-boxes.php:597
+#: inc/meta-boxes 2.php:538
+msgid "This is a Neighborhood page"
+msgstr ""
+
+#: inc/meta-boxes.php:600
+#: inc/meta-boxes 2.php:541
+msgid "Check this box if this location page is a neighborhood/community sub-page of a parent office page."
+msgstr ""
+
+#: inc/meta-boxes.php:606
+#: inc/meta-boxes 2.php:547
+msgid "Parent Office"
+msgstr ""
+
+#: inc/meta-boxes.php:609
+#: inc/meta-boxes 2.php:550
+msgid "— Select Parent Office —"
+msgstr ""
+
+#: inc/meta-boxes.php:616
+#: inc/meta-boxes 2.php:557
+msgid "The parent office this neighborhood is served by."
+msgstr ""
+
+#: inc/meta-boxes.php:620
+#: inc/meta-boxes 2.php:561
+msgid "Population"
+msgstr ""
+
+#: inc/meta-boxes.php:628
+#: inc/meta-boxes 2.php:569
+msgid "Court Jurisdiction"
+msgstr ""
+
+#: inc/meta-boxes.php:636
+#: inc/meta-boxes 2.php:577
+msgid "Latitude"
+msgstr ""
+
+#: inc/meta-boxes.php:644
+#: inc/meta-boxes 2.php:585
+msgid "Longitude"
+msgstr ""
+
+#: inc/meta-boxes.php:649
+#: inc/meta-boxes 2.php:590
+msgid "Optional. Neighborhood-specific coordinates for schema geo data. Falls back to parent office coords."
+msgstr ""
+
+#: inc/meta-boxes.php:653
+#: inc/meta-boxes 2.php:594
+msgid "Dangerous Roads"
+msgstr ""
+
+#: inc/meta-boxes.php:657
+#: inc/meta-boxes 2.php:598
+msgid "Dangerous roads, intersections, and corridors in this neighborhood."
+msgstr ""
+
+#: inc/meta-boxes.php:661
+#: inc/meta-boxes 2.php:602
+msgid "Nearest Hospitals"
+msgstr ""
+
+#: inc/meta-boxes.php:665
+#: inc/meta-boxes 2.php:606
+msgid "One per line. Format: Name — Address — Phone"
+msgstr ""
+
+#: inc/meta-boxes.php:669
+#: inc/meta-boxes 2.php:610
+msgid "Landmarks"
+msgstr ""
+
+#: inc/meta-boxes.php:673
+#: inc/meta-boxes 2.php:614
+msgid "Key local landmarks, comma-separated."
+msgstr ""
+
+#: inc/meta-boxes.php:681
+#: inc/meta-boxes 2.php:622
+msgid "Surrounding communities this neighborhood page serves."
+msgstr ""
+
+#: inc/meta-boxes.php:711
+#: inc/meta-boxes 2.php:652
+msgid "Team Role"
+msgstr ""
+
+#: inc/meta-boxes.php:715
+#: inc/meta-boxes 2.php:656
+#: page-about.php:149
+msgid "Staff"
+msgstr "Personal"
+
+#: inc/meta-boxes.php:717
+#: inc/meta-boxes 2.php:658
+msgid "Attorneys appear in the attorneys grid with links to their profile. Staff appear in a separate section without profile links."
+msgstr ""
+
+#: inc/meta-boxes.php:721
+#: inc/meta-boxes 2.php:662
+msgid "Job Title"
+msgstr ""
+
+#: inc/meta-boxes.php:729
+#: inc/meta-boxes 2.php:670
+msgid "Primary Office"
+msgstr ""
+
+#: inc/meta-boxes.php:742
+#: inc/meta-boxes 2.php:683
+msgid "Bar Admissions"
+msgstr ""
+
+#: inc/meta-boxes.php:746
+#: inc/meta-boxes 2.php:687
+msgid "One per line. Format: \"State Bar — Year\" (e.g., \"Georgia Bar — 2015\")"
+msgstr ""
+
+#: inc/meta-boxes.php:750
+#: inc/meta-boxes 2.php:691
+msgid "Avvo Profile URL"
+msgstr ""
+
+#: inc/meta-boxes.php:758
+#: inc/meta-boxes 2.php:699
+msgid "LinkedIn Profile URL"
+msgstr ""
+
+#: inc/meta-boxes.php:782
+#: inc/meta-boxes 2.php:723
+msgid "Degree:"
+msgstr ""
+
+#: inc/meta-boxes.php:788
+#: inc/meta-boxes 2.php:729
+msgid "Institution:"
+msgstr ""
+
+#: inc/meta-boxes.php:796
+#: inc/meta-boxes 2.php:737
+msgid "+ Add Education"
+msgstr ""
+
+#: inc/meta-boxes.php:813
+#: inc/meta-boxes 2.php:754
+msgid "Award:"
+msgstr ""
+
+#: inc/meta-boxes.php:819
+#: inc/meta-boxes 2.php:760
+msgid "Year:"
+msgstr ""
+
+#: inc/meta-boxes.php:827
+#: inc/meta-boxes 2.php:768
+msgid "+ Add Award"
+msgstr ""
+
+#: inc/meta-boxes.php:906
+#: inc/meta-boxes 2.php:847
+msgid "Amount"
+msgstr ""
+
+#: inc/meta-boxes.php:911
+#: inc/meta-boxes 2.php:852
+msgid "Display format (e.g., \"$3,000,000\" or \"$250K\")."
+msgstr ""
+
+#: inc/meta-boxes.php:915
+#: inc/meta-boxes 2.php:856
+msgid "Result Type"
+msgstr ""
+
+#: inc/meta-boxes.php:919
+#: inc/meta-boxes 2.php:860
+msgid "Settlement"
+msgstr ""
+
+#: inc/meta-boxes.php:920
+#: inc/meta-boxes 2.php:861
+msgid "Verdict"
+msgstr ""
+
+#: inc/meta-boxes.php:921
+#: inc/meta-boxes 2.php:862
+msgid "Recovery"
+msgstr ""
+
+#: inc/meta-boxes.php:922
+#: inc/meta-boxes 2.php:863
+msgid "Resolution"
+msgstr ""
+
+#: inc/meta-boxes.php:923
+#: inc/meta-boxes 2.php:864
+msgid "Policy Limits"
+msgstr ""
+
+#: inc/meta-boxes.php:928
+#: inc/meta-boxes 2.php:869
+msgid "Accident Type"
+msgstr ""
+
+#: inc/meta-boxes.php:937
+#: inc/meta-boxes 2.php:878
+msgid "The type of accident or incident (e.g., Auto Accident, Truck Accident)."
+msgstr ""
+
+#: inc/meta-boxes.php:941
+#: inc/meta-boxes 2.php:882
+msgid "Injury Type"
+msgstr ""
+
+#: inc/meta-boxes.php:950
+#: inc/meta-boxes 2.php:891
+msgid "The type of injury sustained (e.g., Traumatic Brain Injury, Broken Bones)."
+msgstr ""
+
+#: inc/meta-boxes.php:954
+#: inc/meta-boxes 2.php:895
+msgid "Initial Insurance Offer"
+msgstr ""
+
+#: inc/meta-boxes.php:959
+#: inc/meta-boxes 2.php:900
+msgid "Optional. Insurance company's initial offer for before/after comparison display."
+msgstr ""
+
+#: inc/meta-boxes.php:963
+#: inc/meta-boxes 2.php:904
+msgid "Description"
+msgstr ""
+
+#: inc/meta-boxes.php:967
+#: inc/meta-boxes 2.php:908
+msgid "Brief case summary for display on case results pages."
+msgstr ""
+
+#: inc/meta-boxes.php:971
+#: inc/meta-boxes 2.php:912
+msgid "Lead Attorney"
+msgstr ""
+
+#: inc/meta-boxes.php:1311
+#: inc/meta-boxes 2.php:1236
+msgid "Custom Meta Description"
+msgstr ""
+
+#: inc/meta-boxes.php:1315
+#: inc/meta-boxes 2.php:1240
+msgid "Leave blank for auto-generated description (recommended). Max 160 characters."
+msgstr ""
+
+#. translators: %d: character count
+#: inc/meta-boxes.php:1322
+#: inc/meta-boxes 2.php:1247
+#, php-format
+msgid "%d / 160 characters. Leave blank to auto-generate from content."
+msgstr ""
+
+#: inc/nav-menus.php:15
+#: inc/nav-menus 2.php:15
+msgid "Primary Navigation"
+msgstr "Navegación Principal"
+
+#: inc/nav-menus.php:16
+#: inc/nav-menus 2.php:16
+msgid "Footer Navigation"
+msgstr "Navegación de Pie de Página"
+
+#: inc/nav-menus.php:17
+#: inc/nav-menus 2.php:17
+msgid "Mobile Navigation"
+msgstr "Navegación Móvil"
+
+#: inc/schema-helpers.php:1120
+msgid "Ensure safety and call 911"
+msgstr "Garantice la seguridad y llame al 911"
+
+#: inc/schema-helpers.php:1120
+#: inc/template-tags.php:868
+msgid "Move to a safe location if possible. Call emergency services to report the accident and request medical attention for anyone injured."
+msgstr "Muévase a un lugar seguro si es posible. Llame a los servicios de emergencia para reportar el accidente y solicite atención médica para cualquier persona lesionada."
+
+#: inc/schema-helpers.php:1121
+msgid "Seek immediate medical attention"
+msgstr "Busque atención médica inmediata"
+
+#: inc/schema-helpers.php:1121
+msgid "Even if injuries seem minor, get examined by a doctor. Some injuries may not show symptoms immediately."
+msgstr "Aunque las lesiones parezcan menores, hágase examinar por un médico. Algunas lesiones pueden no mostrar síntomas de inmediato."
+
+#: inc/schema-helpers.php:1122
+msgid "Document the scene"
+msgstr "Documente la escena"
+
+#: inc/schema-helpers.php:1122
+#: inc/template-tags.php:876
+msgid "Take photos of all vehicles, injuries, road conditions, traffic signs, and any visible damage. Collect names and contact information from witnesses."
+msgstr "Tome fotos de todos los vehículos, las lesiones, las condiciones de la vía, las señales de tránsito y cualquier daño visible. Recopile nombres e información de contacto de los testigos."
+
+#: inc/schema-helpers.php:1123
+msgid "Exchange information with all parties"
+msgstr "Intercambie información con todas las partes"
+
+#: inc/schema-helpers.php:1123
+#: inc/template-tags.php:880
+msgid "Get the other driver's name, insurance information, license plate number, and driver's license number. Do not admit fault or apologize."
+msgstr "Obtenga el nombre del otro conductor, su información de seguro, el número de placa y el número de licencia de conducir. No admita culpa ni se disculpe."
+
+#. translators: %s: full state name, e.g. "Georgia".
+#: inc/schema-helpers.php:1125
+msgid "Report the accident to police"
+msgstr "Reporte el accidente a la policía"
+
+#. translators: %s: full state name, e.g. "Georgia".
+#. translators: %s: state name, e.g. "Georgia", or the phrase "your state".
+#: inc/schema-helpers.php:1125
+#: inc/template-tags.php:887
+#, php-format
+msgid "%s law requires accident reports when there are injuries or significant property damage. Request a copy of the police report."
+msgstr "La ley de %s exige reportes de accidente cuando hay lesiones o daños materiales significativos. Solicite una copia del reporte policial."
+
+#: inc/schema-helpers.php:1126
+msgid "Notify your insurance company"
+msgstr "Notifique a su compañía de seguros"
+
+#: inc/schema-helpers.php:1126
+#: inc/template-tags.php:894
+msgid "Report the accident to your insurer promptly. Provide factual information only — do not speculate about fault or the extent of your injuries."
+msgstr "Reporte el accidente a su aseguradora de inmediato. Proporcione solo información factual — no especule sobre la culpa ni sobre el alcance de sus lesiones."
+
+#: inc/schema-helpers.php:1127
+msgid "Contact an experienced personal injury attorney"
+msgstr "Contacte a un abogado experimentado en lesiones personales"
+
+#: inc/schema-helpers.php:1127
+msgid "An attorney can protect your rights, handle communications with insurance companies, and help you pursue the full compensation you deserve."
+msgstr "Un abogado puede proteger sus derechos, encargarse de las comunicaciones con las compañías de seguros y ayudarle a buscar la compensación completa que usted merece."
+
+#. translators: 1: accident type, e.g. "a car accident"; 2: city label, e.g. "Savannah, GA".
+#. translators: 1: accident type, e.g. "A Car Accident"; 2: city + state, e.g. "Savannah, GA".
+#: inc/schema-helpers.php:1146
+#: inc/template-tags.php:853
+#, php-format
+msgid "What to Do After %1$s in %2$s"
+msgstr "Qué Hacer Después de %1$s en %2$s"
+
+#. translators: 1: accident type; 2: city label.
+#: inc/schema-helpers.php:1148
+#, php-format
+msgid "Step-by-step guide on what to do after %1$s in %2$s. Protect your rights and maximize your compensation."
+msgstr "Guía paso a paso sobre qué hacer después de %1$s en %2$s. Proteja sus derechos y maximice su compensación."
+
+#: inc/schema-helpers.php:1167
+#: inc/schema-helpers 2.php:920
+#: inc/template-tags.php:24
+msgid "Home"
+msgstr "Inicio"
+
+#: inc/schema-helpers.php:1340
+#: inc/schema-helpers 2.php:1087
+#: inc/template-tags.php:106
+msgid "Search Results"
+msgstr "Resultados de Búsqueda"
+
+#: inc/seo-meta.php:33
+msgid "Personal Injury Lawyers in Georgia & South Carolina"
+msgstr "Abogados de Lesiones Personales en Georgia y Carolina del Sur"
+
+#. translators: %s: city + state abbreviation, e.g. "Savannah, GA".
+#: inc/seo-meta.php:56
+#, php-format
+msgid " in %s"
+msgstr " en %s"
+
+#: inc/seo-meta.php:62
+msgid " in Georgia"
+msgstr " en Georgia"
+
+#: inc/seo-meta.php:64
+msgid " in South Carolina"
+msgstr " en Carolina del Sur"
+
+#: inc/seo-meta.php:66
+#: inc/seo-meta.php:71
+msgid " in Georgia & South Carolina"
+msgstr " en Georgia y Carolina del Sur"
+
+#. translators: %s: full state name, e.g. "Georgia".
+#: inc/seo-meta.php:81
+#, php-format
+msgid " – %s Personal Injury Lawyers"
+msgstr " – Abogados de Lesiones Personales de %s"
+
+#. translators: %d: archive page number.
+#: inc/seo-meta.php:99
+#, php-format
+msgid " – Page %d"
+msgstr " – Página %d"
+
+#: inc/template-tags.php:128
+msgid "Breadcrumb"
+msgstr "Ruta de navegación"
+
+#. translators: %s: practice area title, e.g. "Car Accident Lawyers".
+#: inc/template-tags.php:412
+#, php-format
+msgid "%s by Location"
+msgstr "%s por Ubicación"
+
+#: inc/template-tags.php:447
+#: inc/template-tags.php:519
+msgid "Car Accident Lawyers"
+msgstr "Abogados de Accidentes de Auto"
+
+#: inc/template-tags.php:448
+#: inc/template-tags.php:520
+msgid "Truck Accident Lawyers"
+msgstr "Abogados de Accidentes de Camiones"
+
+#: inc/template-tags.php:449
+#: inc/template-tags.php:522
+msgid "Motorcycle Accident Lawyers"
+msgstr "Abogados de Accidentes de Motocicleta"
+
+#: inc/template-tags.php:450
+#: inc/template-tags.php:536
+msgid "Pedestrian Accident Lawyers"
+msgstr "Abogados de Accidentes de Peatones"
+
+#: inc/template-tags.php:489
+#: inc/template-tags 2.php:480
+msgid "Other Personal Injury Types"
+msgstr "Otros Tipos de Lesiones Personales"
+
+#: inc/template-tags.php:521
+msgid "Slip & Fall Lawyers"
+msgstr "Abogados de Resbalones y Caídas"
+
+#: inc/template-tags.php:523
+msgid "Medical Malpractice Lawyers"
+msgstr "Abogados de Negligencia Médica"
+
+#: inc/template-tags.php:524
+msgid "Wrongful Death Lawyers"
+msgstr "Abogados de Muerte por Negligencia"
+
+#: inc/template-tags.php:525
+msgid "Workers' Compensation Lawyers"
+msgstr "Abogados de Compensación Laboral"
+
+#: inc/template-tags.php:526
+msgid "Dog Bite Lawyers"
+msgstr "Abogados de Mordeduras de Perro"
+
+#: inc/template-tags.php:527
+msgid "Brain Injury Lawyers"
+msgstr "Abogados de Lesiones Cerebrales"
+
+#: inc/template-tags.php:528
+msgid "Spinal Cord Injury Lawyers"
+msgstr "Abogados de Lesiones de la Médula Espinal"
+
+#: inc/template-tags.php:529
+msgid "Maritime Injury Lawyers"
+msgstr "Abogados de Lesiones Marítimas"
+
+#: inc/template-tags.php:530
+msgid "Product Liability Lawyers"
+msgstr "Abogados de Responsabilidad de Productos"
+
+#: inc/template-tags.php:531
+msgid "Boating Accident Lawyers"
+msgstr "Abogados de Accidentes de Navegación"
+
+#: inc/template-tags.php:532
+msgid "Burn Injury Lawyers"
+msgstr "Abogados de Quemaduras"
+
+#: inc/template-tags.php:533
+msgid "Construction Accident Lawyers"
+msgstr "Abogados de Accidentes de Construcción"
+
+#: inc/template-tags.php:534
+msgid "Nursing Home Abuse Lawyers"
+msgstr "Abogados de Abuso en Hogares de Ancianos"
+
+#: inc/template-tags.php:535
+msgid "Premises Liability Lawyers"
+msgstr "Abogados de Responsabilidad de Locales"
+
+#: inc/template-tags.php:537
+msgid "Bicycle Accident Lawyers"
+msgstr "Abogados de Accidentes de Bicicleta"
+
+#: inc/template-tags.php:538
+msgid "Electric Scooter Accident Lawyers"
+msgstr "Abogados de Accidentes de Scooter Eléctrico"
+
+#: inc/template-tags.php:539
+msgid "ATV & Side-by-Side Accident Lawyers"
+msgstr "Abogados de Accidentes de ATV y Side-by-Side"
+
+#: inc/template-tags.php:540
+msgid "Golf Cart Accident Lawyers"
+msgstr "Abogados de Accidentes de Carritos de Golf"
+
+#: inc/template-tags.php:541
+msgid "E-Bike Accident Lawyers"
+msgstr "Abogados de Accidentes de Bicicleta Eléctrica"
+
+#. translators: %s: neighborhood population figure.
+#: inc/template-tags.php:651
+#: templates/template-location.php:217
+#, php-format
+msgid "Pop. %s"
+msgstr "Pob. %s"
+
+#: inc/template-tags.php:665
+msgid "No fees unless we win"
+msgstr "Sin honorarios a menos que ganemos"
+
+#: inc/template-tags.php:665
+msgid "Hundreds of 5-star reviews"
+msgstr "Cientos de reseñas de 5 estrellas"
+
+#: inc/template-tags.php:678
+#: inc/template-tags.php:679
+#: inc/template-tags 2.php:657
+msgid "First Name"
+msgstr "Nombre"
+
+#: inc/template-tags.php:682
+#: inc/template-tags.php:683
+#: inc/template-tags 2.php:661
+msgid "Last Name"
+msgstr "Apellido"
+
+#: inc/template-tags.php:686
+#: inc/template-tags 2.php:665
+msgid "Phone Number"
+msgstr "Número de Teléfono"
+
+#: inc/template-tags.php:688
+#: inc/template-tags 2.php:667
+msgid "Email Address"
+msgstr "Dirección de Correo Electrónico"
+
+#: inc/template-tags.php:689
+msgid "Email"
+msgstr "Correo Electrónico"
+
+#: inc/template-tags.php:690
+#: inc/template-tags 2.php:669
+msgid "Describe what happened"
+msgstr "Describa lo que pasó"
+
+#: inc/template-tags.php:691
+msgid "Please describe what happened"
+msgstr "Por favor describa lo que pasó"
+
+#. translators: %s: link to the Terms & Privacy Policy page.
+#: inc/template-tags.php:697
+#, php-format
+msgid "I hereby expressly consent to receive automated communications including calls, texts, emails, and/or prerecorded messages. By submitting this form, you agree to our %s."
+msgstr "Por la presente doy mi consentimiento expreso para recibir comunicaciones automatizadas, incluyendo llamadas, mensajes de texto, correos electrónicos y/o mensajes pregrabados. Al enviar este formulario, usted acepta nuestros %s."
+
+#: inc/template-tags.php:698
+msgid "Terms &amp; Privacy Policy"
+msgstr "Términos y Política de Privacidad"
+
+#: inc/template-tags.php:705
+msgid "Results may vary depending on your particular facts and legal circumstances."
+msgstr "Los resultados pueden variar según sus hechos particulares y circunstancias legales."
+
+#: inc/template-tags.php:719
+msgid "Free Case Review — No Fees Unless We Win"
+msgstr "Revisión Gratuita de su Caso — Sin Honorarios a Menos que Ganemos"
+
+#: inc/template-tags.php:720
+msgid "Available 24/7 · Georgia & South Carolina"
+msgstr "Disponibles 24/7 · Georgia y Carolina del Sur"
+
+#: inc/template-tags.php:768
+msgid "Last updated:"
+msgstr "Última actualización:"
+
+#. translators: %s: practice area label, e.g. "Car Accident".
+#: inc/template-tags.php:813
+#, php-format
+msgid "What Is a %s Case?"
+msgstr "¿Qué Es un Caso de %s?"
+
+#. translators: 1: attorney name (bold), 2: attorney title.
+#: inc/template-tags.php:821
+#, php-format
+msgid "Reviewed by %1$s, %2$s at Roden Law"
+msgstr "Revisado por %1$s, %2$s en Roden Law"
+
+#. translators: 1: attorney name (bold), 2: attorney title.
+#: inc/template-tags.php:821
+#, php-format
+msgid "Reviewed by %1$s at Roden Law"
+msgstr "Revisado por %1$s en Roden Law"
+
+#: inc/template-tags.php:846
+msgid "your state"
+msgstr "su estado"
+
+#. translators: %s: accident type, e.g. "A Car Accident".
+#: inc/template-tags.php:860
+#, php-format
+msgid "What to Do After %s"
+msgstr "Qué Hacer Después de %s"
+
+#: inc/template-tags.php:867
+msgid "Ensure safety and call 911."
+msgstr "Garantice la seguridad y llame al 911."
+
+#: inc/template-tags.php:871
+msgid "Seek immediate medical attention."
+msgstr "Busque atención médica inmediata."
+
+#: inc/template-tags.php:872
+msgid "Even if injuries seem minor, get examined by a doctor. Some injuries — such as traumatic brain injuries or internal bleeding — may not show symptoms immediately."
+msgstr "Aunque las lesiones parezcan menores, hágase examinar por un médico. Algunas lesiones — como las lesiones cerebrales traumáticas o el sangrado interno — pueden no mostrar síntomas de inmediato."
+
+#: inc/template-tags.php:875
+msgid "Document the scene."
+msgstr "Documente la escena."
+
+#: inc/template-tags.php:879
+msgid "Exchange information with all parties."
+msgstr "Intercambie información con todas las partes."
+
+#: inc/template-tags.php:883
+msgid "Report the accident to police."
+msgstr "Reporte el accidente a la policía."
+
+#: inc/template-tags.php:893
+msgid "Notify your insurance company."
+msgstr "Notifique a su compañía de seguros."
+
+#: inc/template-tags.php:897
+msgid "Contact an experienced personal injury attorney."
+msgstr "Contacte a un abogado experimentado en lesiones personales."
+
+#: inc/template-tags.php:898
+msgid "An attorney can protect your rights, handle communications with insurance companies, and help you pursue the full compensation you deserve. Roden Law offers free consultations — call today."
+msgstr "Un abogado puede proteger sus derechos, encargarse de las comunicaciones con las compañías de seguros y ayudarle a buscar la compensación completa que usted merece. Roden Law ofrece consultas gratuitas — llame hoy."
+
+#: inc/template-tags.php:958
+msgid "Frequently Asked Questions"
+msgstr "Preguntas Frecuentes"
+
+#: inc/template-tags.php:963
+msgid "More Questions"
+msgstr "Más Preguntas"
+
+#. translators: %s: link to the South Carolina statewide pillar page (anchor text is the page title).
+#: inc/template-tags.php:1040
+#, php-format
+msgid "Serving all of South Carolina: see our statewide %s page for South Carolina’s filing deadline, comparative-fault rule, and how these cases work across the state."
+msgstr "Sirviendo a toda Carolina del Sur: consulte nuestra página estatal de %s para conocer el plazo legal para demandar en Carolina del Sur, la regla de culpa comparativa y cómo funcionan estos casos en todo el estado."
+
+#: inc/template-tags.php:1091
+#: templates/template-practice-area.php:631
+#: templates/template-subtype.php:358
+msgid "Filing Deadlines"
+msgstr "Plazos Legales"
+
+#. translators: 1: number of years; 2: statute citation, e.g. "O.C.G.A. § 9-3-33".
+#. translators: 1: number of years; 2: statute citation.
+#: inc/template-tags.php:1107
+#: templates/template-intersection.php:315
+#: templates/template-location.php:402
+#, php-format
+msgid "%1$s years (%2$s)"
+msgstr "%1$s años (%2$s)"
+
+#: inc/template-tags.php:1116
+#: inc/template-tags.php:1687
+#: templates/template-intersection.php:313
+#: templates/template-location.php:400
+msgid "Statute of Limitations"
+msgstr "Plazo Legal para Demandar"
+
+#: inc/template-tags.php:1118
+#: templates/template-intersection.php:319
+#: templates/template-location.php:406
+msgid "Comparative Fault"
+msgstr "Culpa Comparativa"
+
+#: inc/template-tags.php:1123
+msgid "Deadlines may vary. Contact us for case-specific guidance."
+msgstr "Los plazos pueden variar. Contáctenos para orientación específica sobre su caso."
+
+#: inc/template-tags.php:1151
+msgid "Comparative Fault Rules"
+msgstr "Reglas de Culpa Comparativa"
+
+#: inc/template-tags.php:1205
+#: templates/template-subtype.php:234
+msgid "Related Pages"
+msgstr "Páginas Relacionadas"
+
+#: inc/template-tags.php:1221
+msgid "Other Practice Areas"
+msgstr "Otras Áreas de Práctica"
+
+#. translators: %s: star rating, e.g. "4.9".
+#: inc/template-tags.php:1254
+#, php-format
+msgid "%s Stars"
+msgstr "%s Estrellas"
+
+#: inc/template-tags.php:1262
+msgid "No Fee Guarantee"
+msgstr "Garantía de Sin Honorarios"
+
+#: inc/template-tags.php:1263
+msgid "You don't pay unless we win"
+msgstr "Usted no paga a menos que ganemos"
+
+#: inc/template-tags.php:1301
+#: templates/template-intersection.php:466
+#: templates/template-practice-area.php:437
+#: templates/template-subtype.php:277
+msgid "About the Author"
+msgstr "Sobre el Autor"
+
+#: inc/template-tags.php:1319
+msgid "View Full Profile"
+msgstr "Ver Perfil Completo"
+
+#: inc/template-tags.php:1338
+msgid "Personal Injury"
+msgstr "Lesiones Personales"
+
+#. translators: %s: practice area title, e.g. "Car Accident Lawyers" or "Personal Injury".
+#: inc/template-tags.php:1341
+#, php-format
+msgid "Roden Law %s Results at a Glance"
+msgstr "%s de Roden Law: Resultados de un Vistazo"
+
+#: inc/template-tags.php:1346
+msgid "Recovered for injured clients across Georgia and South Carolina"
+msgstr "Recuperados para clientes lesionados en Georgia y Carolina del Sur"
+
+#. translators: %s: star rating, e.g. "4.9".
+#: inc/template-tags.php:1349
+#, php-format
+msgid "%s / 5.0"
+msgstr "%s / 5.0"
+
+#. translators: %s: star rating, e.g. "4.9".
+#: inc/template-tags.php:1350
+msgid "Average client rating across hundreds of verified Google reviews from our six offices"
+msgstr "Calificación promedio de clientes en cientos de reseñas verificadas de Google de nuestras seis oficinas"
+
+#. translators: %s: founding year, e.g. "2013".
+#: inc/template-tags.php:1354
+#, php-format
+msgid "Cases successfully handled since %s"
+msgstr "Casos manejados con éxito desde %s"
+
+#: inc/template-tags.php:1358
+msgid "Combined attorney experience across 5 office locations"
+msgstr "Experiencia combinada de abogados en 5 oficinas"
+
+#. translators: %s: month and year, e.g. "July 2026".
+#: inc/template-tags.php:1362
+#, php-format
+msgid "Source: Roden Law firm records and verified Google Business Profile reviews, updated %s."
+msgstr "Fuente: registros del bufete Roden Law y reseñas verificadas de Google Business Profile, actualizado en %s."
+
+#: inc/template-tags.php:1400
+msgid "recovery"
+msgstr "recuperación"
+
+#. translators: %s: accident/case type, e.g. "car accident". Appended to "Roden Law secured a [amount] [settlement]".
+#: inc/template-tags.php:1406
+#, php-format
+msgid "in a %s case"
+msgstr "en un caso de %s"
+
+#. translators: %s: injury type, e.g. "a traumatic brain injury". Appended to the case-result lead sentence.
+#: inc/template-tags.php:1409
+#, php-format
+msgid "involving %s"
+msgstr "que involucró %s"
+
+#. translators: %s: location name, e.g. "Savannah, GA". Appended to the case-result lead sentence.
+#. translators: %s: city + state, e.g. "Savannah, GA".
+#: inc/template-tags.php:1412
+#: templates/parts/hero-location.php:34
+#: templates/template-location.php:67
+#, php-format
+msgid "in %s"
+msgstr "en %s"
+
+#. translators: 1: recovery amount, e.g. "$3,000,000"; 2: result type, e.g. "settlement"; 3: optional "in a … case" clause; 4: optional "involving …" clause; 5: optional "in [location]" clause.
+#: inc/template-tags.php:1417
+#, php-format
+msgid "Roden Law secured a %1$s %2$s%3$s%4$s%5$s."
+msgstr "Roden Law obtuvo un %2$s de %1$s%3$s%4$s%5$s."
+
+#. translators: %s: the insurer's initial offer amount, e.g. "$25,000".
+#: inc/template-tags.php:1427
+#, php-format
+msgid "The insurance company initially offered just %s before Roden Law intervened."
+msgstr "La compañía de seguros inicialmente ofreció solo %s antes de que Roden Law interviniera."
+
+#: inc/template-tags.php:1433
+msgid "Result Summary"
+msgstr "Resumen del Resultado"
+
+#: inc/template-tags.php:1437
+msgid "Amount recovered"
+msgstr "Monto recuperado"
+
+#: inc/template-tags.php:1438
+msgid "Case type"
+msgstr "Tipo de caso"
+
+#: inc/template-tags.php:1439
+msgid "Injury"
+msgstr "Lesión"
+
+#: inc/template-tags.php:1440
+msgid "Insurer’s initial offer"
+msgstr "Oferta inicial de la aseguradora"
+
+#: inc/template-tags.php:1444
+msgid "Result reported by Roden Law. Past results do not guarantee a similar outcome in your case."
+msgstr "Resultado reportado por Roden Law. Los resultados pasados no garantizan un resultado similar en su caso."
+
+#: inc/template-tags.php:1539
+msgid "Related Guides"
+msgstr "Guías Relacionadas"
+
+#. translators: %s: practice area label with "Lawyers/Attorneys" stripped, e.g. "Car Accident".
+#: inc/template-tags.php:1675
+#, php-format
+msgid "Georgia vs. South Carolina %s Laws"
+msgstr "Leyes de %s: Georgia vs. Carolina del Sur"
+
+#. translators: %s: lowercase practice area label, e.g. "car accident".
+#: inc/template-tags.php:1676
+#, php-format
+msgid "If you were injured in Georgia or South Carolina, the laws governing your %s claim differ by state. Below is a side-by-side comparison of the key legal rules that affect your case."
+msgstr "Si usted resultó lesionado en Georgia o Carolina del Sur, las leyes que rigen su reclamo de %s difieren según el estado. A continuación encontrará una comparación lado a lado de las reglas legales clave que afectan su caso."
+
+#: inc/template-tags.php:1680
+msgid "Legal Rule"
+msgstr "Regla Legal"
+
+#: inc/template-tags.php:1688
+msgid "2 years (O.C.G.A. § 9-3-33)"
+msgstr "2 años (O.C.G.A. § 9-3-33)"
+
+#: inc/template-tags.php:1689
+msgid "3 years (S.C. Code § 15-3-530)"
+msgstr "3 años (S.C. Code § 15-3-530)"
+
+#: inc/template-tags.php:1692
+msgid "Comparative Fault Rule"
+msgstr "Regla de Culpa Comparativa"
+
+#: inc/template-tags.php:1693
+msgid "Modified — recover if less than 50% at fault (O.C.G.A. § 51-12-33)"
+msgstr "Modificada — puede recuperar si tiene menos del 50% de culpa (O.C.G.A. § 51-12-33)"
+
+#: inc/template-tags.php:1694
+msgid "Modified — recover if less than 51% at fault"
+msgstr "Modificada — puede recuperar si tiene menos del 51% de culpa"
+
+#: inc/template-tags.php:1697
+msgid "Damage Cap"
+msgstr "Límite de Daños"
+
+#: inc/template-tags.php:1698
+msgid "No cap on compensatory damages; punitive capped at $250,000 in most cases (O.C.G.A. § 51-12-5.1)"
+msgstr "Sin límite en daños compensatorios; daños punitivos limitados a $250,000 en la mayoría de los casos (O.C.G.A. § 51-12-5.1)"
+
+#: inc/template-tags.php:1699
+msgid "No cap on compensatory damages; no statutory punitive cap (jury discretion)"
+msgstr "Sin límite en daños compensatorios; sin límite legal para daños punitivos (a discreción del jurado)"
+
+#: inc/template-tags.php:1702
+msgid "Minimum Auto Insurance"
+msgstr "Seguro de Auto Mínimo"
+
+#: inc/template-tags.php:1703
+#: inc/template-tags.php:1704
+msgid "25/50/25 liability coverage required"
+msgstr "Se requiere cobertura de responsabilidad de 25/50/25"
+
+#: inc/template-tags.php:1707
+msgid "Filing Court"
+msgstr "Tribunal de Presentación"
+
+#: inc/template-tags.php:1708
+msgid "Superior Court (claims over $15,000)"
+msgstr "Superior Court (reclamos de más de $15,000)"
+
+#: inc/template-tags.php:1709
+msgid "Circuit Court (claims over $7,500)"
+msgstr "Circuit Court (reclamos de más de $7,500)"
+
+#. translators: %s: month and year, e.g. "July 2026".
+#: inc/template-tags.php:1713
+#, php-format
+msgid "Source: Georgia Code (O.C.G.A.) and South Carolina Code of Laws. Verified %s."
+msgstr "Fuente: Código de Georgia (O.C.G.A.) y Código de Leyes de Carolina del Sur. Verificado en %s."
+
+#. translators: %s: city/market name, e.g. "Savannah".
+#: inc/template-tags.php:1837
+#, php-format
+msgid "Filing a Personal Injury Case in %s"
+msgstr "Cómo Presentar un Caso de Lesiones Personales en %s"
+
+#. Template Name of the theme
+msgid "About Page"
+msgstr ""
+
+#: page-about.php:26
+#: page-about 2.php:26
+msgid "Personal injury attorneys fighting for maximum compensation across Georgia and South Carolina since 2013."
+msgstr "Abogados de lesiones personales que luchan por la compensación máxima en Georgia y Carolina del Sur desde 2013."
+
+#: page-about.php:45
+#: page-about 2.php:45
+msgid "Our Story"
+msgstr "Nuestra Historia"
+
+#: page-about.php:48
+msgid "Roden Law is a personal injury law firm serving Georgia and South Carolina from six offices across Savannah, Darien, Charleston, North Charleston, Columbia, and the Myrtle Beach area. The firm has recovered more than $300 million for injured clients and operates exclusively on contingency — clients owe no fees unless we win."
+msgstr "Roden Law es un bufete de lesiones personales que sirve a Georgia y Carolina del Sur desde seis oficinas en Savannah, Darien, Charleston, North Charleston, Columbia y el área de Myrtle Beach. El bufete ha recuperado más de $300 millones para clientes lesionados y opera exclusivamente por contingencia — los clientes no deben honorarios a menos que ganemos."
+
+#: page-about.php:52
+#: page-about 2.php:48
+msgid "Roden Law was founded in 2013 by Eric L. Roden and Tyler M. Love with a singular mission: fighting for injury victims. We built our firm on the principle that every person harmed by another's negligence deserves aggressive, personal representation — not the assembly-line treatment you get at larger firms."
+msgstr "Roden Law fue fundado en 2013 por Eric L. Roden y Tyler M. Love con una misión singular: luchar por las víctimas de lesiones. Construimos nuestro bufete sobre el principio de que toda persona dañada por la negligencia de otro merece una representación agresiva y personal — no el trato en serie que recibe en bufetes más grandes."
+
+#: page-about.php:56
+#: page-about 2.php:52
+msgid "We understand that serious injuries create emotional, physical, and financial hardship. That's why our attorneys personally handle every case — you'll always speak directly with a lawyer who knows your story and is invested in your outcome."
+msgstr "Entendemos que las lesiones graves crean dificultades emocionales, físicas y financieras. Por eso nuestros abogados manejan personalmente cada caso — usted siempre hablará directamente con un abogado que conoce su historia y está comprometido con su resultado."
+
+#: page-about.php:75
+#: page-about 2.php:71
+msgid "Our Commitment to You"
+msgstr "Nuestro Compromiso con Usted"
+
+#: page-about.php:76
+#: page-about 2.php:72
+msgid "At Roden Law, our injury attorneys are not afraid to do what it takes to help you obtain the maximum compensation you deserve — even if it means taking your case to trial."
+msgstr "En Roden Law, nuestros abogados de lesiones no temen hacer lo que sea necesario para ayudarle a obtener la compensación máxima que usted merece — incluso si eso significa llevar su caso a juicio."
+
+#: page-about.php:81
+#: page-about 2.php:77
+msgid "Relentless Advocacy"
+msgstr "Defensa Incansable"
+
+#: page-about.php:82
+#: page-about 2.php:78
+msgid "We work tirelessly to secure the best possible outcome for every client, whether through negotiation or trial."
+msgstr "Trabajamos incansablemente para lograr el mejor resultado posible para cada cliente, ya sea mediante negociación o juicio."
+
+#: page-about.php:85
+#: page-about 2.php:81
+msgid "Consistent Pursuit of Justice"
+msgstr "Búsqueda Constante de Justicia"
+
+#: page-about.php:86
+#: page-about 2.php:82
+msgid "We maintain consistency in pursuing justice across every case, no matter the size or complexity."
+msgstr "Mantenemos la consistencia en la búsqueda de justicia en cada caso, sin importar su tamaño o complejidad."
+
+#: page-about.php:89
+#: page-about 2.php:85
+msgid "Honest Guidance"
+msgstr "Orientación Honesta"
+
+#: page-about.php:90
+#: page-about 2.php:86
+msgid "We provide realistic explanations of how we can help and what to expect at every stage of your case."
+msgstr "Proporcionamos explicaciones realistas de cómo podemos ayudar y qué esperar en cada etapa de su caso."
+
+#: page-about.php:93
+#: page-about 2.php:89
+msgid "Open Communication"
+msgstr "Comunicación Abierta"
+
+#: page-about.php:94
+#: page-about 2.php:90
+msgid "We prioritize client communication from intake through settlement or trial — you'll always know where your case stands."
+msgstr "Priorizamos la comunicación con el cliente desde el inicio hasta el acuerdo o el juicio — usted siempre sabrá en qué punto está su caso."
+
+#: page-about.php:99
+#: page-about 2.php:95
+msgid "We Don't Get Paid Unless You Do"
+msgstr "No Cobramos a Menos que Usted Cobre"
+
+#: page-about.php:101
+#: page-about 2.php:97
+msgid "Roden Law operates exclusively on contingency. Our attorneys collect payment only from settlement or verdict proceeds — you will never owe us a fee if we don't recover compensation for you. This means our financial interests are completely aligned with yours."
+msgstr "Roden Law opera exclusivamente por contingencia. Nuestros abogados cobran únicamente de los fondos del acuerdo o veredicto — usted nunca nos deberá honorarios si no recuperamos compensación para usted. Esto significa que nuestros intereses financieros están completamente alineados con los suyos."
+
+#: page-about.php:123
+msgid "We have recovered over $300 million for injury victims across Georgia and South Carolina."
+msgstr "Hemos recuperado más de $300 millones para víctimas de lesiones en Georgia y Carolina del Sur."
+
+#: page-about.php:130
+#: page-about 2.php:126
+msgid "View All Case Results"
+msgstr "Ver Todos los Resultados de Casos"
+
+#: page-about.php:142
+msgid "Meet Our Team"
+msgstr "Conozca a Nuestro Equipo"
+
+#: page-about.php:143
+msgid "Experienced trial lawyers and the dedicated staff supporting injury victims across Georgia and South Carolina."
+msgstr "Abogados litigantes experimentados y el personal dedicado que apoya a las víctimas de lesiones en Georgia y Carolina del Sur."
+
+#: page-about.php:154
+#: page-about 2.php:146
+msgid "View All Attorneys"
+msgstr "Ver Todos los Abogados"
+
+#: page-about.php:165
+#: page-about 2.php:157
+#: page-contact.php:118
+msgid "Ready to Get Started?"
+msgstr "¿Listo para Comenzar?"
+
+#: page-about 2.php:119
+msgid "We have recovered over $250 million for injury victims across Georgia and South Carolina."
+msgstr ""
+
+#: page-contact.php:25
+msgid "Injured? Get your free case review today. No fees unless we win."
+msgstr "¿Lesionado? Obtenga la revisión gratuita de su caso hoy. Sin honorarios a menos que ganemos."
+
+#: page-contact.php:45
+msgid "Call Us 24/7"
+msgstr "Llámenos 24/7"
+
+#: page-contact.php:49
+msgid "Free Consultation &bull; No Fees Unless We Win"
+msgstr "Consulta Gratuita &bull; Sin Honorarios a Menos que Ganemos"
+
+#: page-contact.php:54
+msgid "The moments following a personal injury can be overwhelming and uncertain. Our accomplished attorneys can guide you through the complex aftermath of an accident and help you obtain the justice you need to move on with your life."
+msgstr "Los momentos posteriores a una lesión personal pueden ser abrumadores e inciertos. Nuestros destacados abogados pueden guiarle a través de las complejas secuelas de un accidente y ayudarle a obtener la justicia que necesita para seguir adelante con su vida."
+
+#: page-contact.php:55
+msgid "Our team has decades of combined experience helping injury victims get the compensation they need to cover medical care, lost wages, pain and suffering, and other damages. There is no risk in contacting us — we offer free, no-obligation consultations."
+msgstr "Nuestro equipo tiene décadas de experiencia combinada ayudando a las víctimas de lesiones a obtener la compensación que necesitan para cubrir atención médica, salarios perdidos, dolor y sufrimiento, y otros daños. No hay riesgo en contactarnos — ofrecemos consultas gratuitas y sin compromiso."
+
+#: page-contact.php:62
+msgid "Recovered"
+msgstr "Recuperados"
+
+#: page-contact.php:66
+msgid "Rating"
+msgstr "Calificación"
+
+#: page-contact.php:85
+msgid "Our Office Locations"
+msgstr "Nuestras Oficinas"
+
+#: page-contact.php:86
+#, php-format
+msgid "%d offices across Georgia and South Carolina"
+msgstr "%d oficinas en Georgia y Carolina del Sur"
+
+#: search.php:19
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Resultados de Búsqueda para: %s"
+
+#: search.php:24
+#, php-format
+msgid "%d results found"
+msgstr "%d resultados encontrados"
+
+#: search.php:26
+msgid "No results found. Try a different search term."
+msgstr "No se encontraron resultados. Intente con otro término de búsqueda."
+
+#: searchform.php:8
+msgid "Site search"
+msgstr "Búsqueda del sitio"
+
+#: searchform.php:9
+msgid "Search for:"
+msgstr "Buscar:"
+
+#: searchform.php:10
+msgid "Search articles (e.g. 'truck accident')"
+msgstr "Buscar artículos (p. ej. 'accidente de camión')"
+
+#: searchform.php:11
+msgid "Search"
+msgstr "Buscar"
+
+#: templates/parts/hero-location.php:33
+#: templates/template-location.php:66
+msgid "Personal Injury Lawyer"
+msgstr "Abogado de Lesiones Personales"
+
+#. translators: 1: city/market name; 2: amount recovered wrapped in <strong>; 3: service area sentence (ends with a period).
+#: templates/parts/hero-location.php:40
+#: templates/template-location.php:73
+#, php-format
+msgid "Roden Law's %1$s personal injury attorneys have recovered %2$s for injury victims across %3$s No fees unless we win."
+msgstr "Los abogados de lesiones personales de Roden Law en %1$s han recuperado %2$s para víctimas de lesiones en %3$s Sin honorarios a menos que ganemos."
+
+#: templates/parts/hero-practice-area.php:23
+#: templates/template-subtype.php:24
+msgid "SERVING:"
+msgstr "SIRVIENDO A:"
+
+#: templates/single-location-neighborhood.php:153
+#: templates/template-location.php:147
+#: templates/template-location 2.php:139
+#, php-format
+msgid "Location map for Roden Law — %s"
+msgstr "Mapa de ubicación de Roden Law — %s"
+
+#. translators: 1: city/market name; 2: lowercase practice area title, e.g. "car accident lawyers"; 3: service area sentence (ends with a period).
+#: templates/template-intersection.php:89
+#, php-format
+msgid "Roden Law's %1$s %2$s serve %3$s No fees unless we win."
+msgstr "Los %2$s de Roden Law en %1$s sirven a %3$s Sin honorarios a menos que ganemos."
+
+#: templates/template-intersection.php:104
+msgid "Address"
+msgstr "Dirección"
+
+#: templates/template-intersection.php:113
+msgid "Phone"
+msgstr "Teléfono"
+
+#: templates/template-intersection.php:117
+msgid "Available 24/7"
+msgstr "Disponibles 24/7"
+
+#: templates/template-intersection.php:121
+msgid "Call Now"
+msgstr "Llame Ahora"
+
+#: templates/template-intersection.php:122
+#: templates/template-location.php:162
+msgid "Get Directions"
+msgstr "Cómo Llegar"
+
+#. translators: %s: practice area title.
+#: templates/template-intersection.php:138
+#, php-format
+msgid "%s — All Locations"
+msgstr "%s — Todas las Ubicaciones"
+
+#: templates/template-intersection.php:177
+msgid "Current Page"
+msgstr "Página Actual"
+
+#: templates/template-intersection.php:209
+msgid "accident"
+msgstr "accidente"
+
+#. translators: 1: article "a"/"an"; 2: accident type, e.g. "car accident"; 3: city/market name; 4: state name; 5: statute-of-limitations years; 6: statute citation; 7: fault threshold phrase, e.g. "less than 51% at fault".
+#: templates/template-intersection.php:220
+#, php-format
+msgid "If you were injured in %1$s %2$s in %3$s, %4$s, you generally have %5$s years from the date of injury to file a lawsuit (%6$s). %4$s follows a modified comparative negligence rule — you can still recover as long as you are %7$s, with your award reduced by your percentage of fault. There is no cap on compensatory damages in an ordinary %4$s injury case. Roden Law represents %3$s injury victims on a contingency fee: the consultation is free and there is no fee unless we win."
+msgstr "Si usted resultó lesionado en %1$s %2$s en %3$s, %4$s, generalmente tiene %5$s años desde la fecha de la lesión para presentar una demanda (%6$s). %4$s sigue una regla de negligencia comparativa modificada — aún puede recuperar compensación siempre que tenga %7$s, y su indemnización se reduce según su porcentaje de culpa. No hay límite a los daños compensatorios en un caso ordinario de lesiones en %4$s. Roden Law representa a víctimas de lesiones en %3$s con honorarios de contingencia: la consulta es gratuita y no hay honorarios a menos que ganemos."
+
+#: templates/template-intersection.php:232
+msgid "Key Takeaways"
+msgstr "Puntos Clave"
+
+#. translators: 1: practice area title; 2: city/market name.
+#: templates/template-intersection.php:244
+#: templates/template-intersection.php:257
+#, php-format
+msgid "Why Hire %1$s in %2$s?"
+msgstr "¿Por Qué Contratar %1$s en %2$s?"
+
+#: templates/template-intersection.php:292
+msgid "an accident"
+msgstr "un accidente"
+
+#. translators: %s: state name, e.g. "Georgia".
+#. translators: %s: state name.
+#: templates/template-intersection.php:310
+#: templates/template-location.php:394
+#, php-format
+msgid "%s Personal Injury Law"
+msgstr "Ley de Lesiones Personales de %s"
+
+#. translators: 1: capitalized accident type, e.g. "Car accident"; 2: city/market name.
+#: templates/template-intersection.php:352
+#: templates/template-intersection.php:357
+#, php-format
+msgid "Do I Have a %1$s Case in %2$s?"
+msgstr "¿Tengo un Caso de %1$s en %2$s?"
+
+#. translators: %s: state name.
+#: templates/template-intersection.php:358
+#, php-format
+msgid "To win a personal injury case in %s, your attorney must prove four elements of negligence by a preponderance of the evidence."
+msgstr "Para ganar un caso de lesiones personales en %s, su abogado debe probar cuatro elementos de negligencia por preponderancia de la evidencia."
+
+#: templates/template-intersection.php:362
+#: templates/template-practice-area.php:298
+#: templates/template-subtype.php:116
+msgid "Duty of Care"
+msgstr "Deber de Cuidado"
+
+#: templates/template-intersection.php:362
+#: templates/template-subtype.php:116
+msgid "The other party owed you a legal duty to act in a manner that ensured your safety."
+msgstr "La otra parte tenía el deber legal de actuar de una manera que garantizara su seguridad."
+
+#: templates/template-intersection.php:363
+#: templates/template-practice-area.php:303
+#: templates/template-subtype.php:117
+msgid "Breach of Duty"
+msgstr "Incumplimiento del Deber"
+
+#: templates/template-intersection.php:363
+msgid "The other party breached that duty by failing to act as a reasonably prudent person would have in the same situation."
+msgstr "La otra parte incumplió ese deber al no actuar como lo habría hecho una persona razonablemente prudente en la misma situación."
+
+#: templates/template-intersection.php:364
+#: templates/template-practice-area.php:308
+#: templates/template-subtype.php:118
+msgid "Causation"
+msgstr "Causalidad"
+
+#: templates/template-intersection.php:364
+#: templates/template-subtype.php:118
+msgid "The breach directly caused your injuries. We gather evidence proving that but for their negligence, you would not have been harmed."
+msgstr "El incumplimiento causó directamente sus lesiones. Reunimos evidencia que prueba que, de no ser por su negligencia, usted no habría resultado dañado."
+
+#: templates/template-intersection.php:365
+#: templates/template-practice-area.php:313
+#: templates/template-subtype.php:119
+msgid "Damages"
+msgstr "Daños y Perjuicios"
+
+#: templates/template-intersection.php:365
+#: templates/template-practice-area.php:314
+msgid "You suffered actual, quantifiable damages — medical expenses, lost income, pain and suffering — as a direct result of the at-fault party's breach."
+msgstr "Usted sufrió daños reales y cuantificables — gastos médicos, ingresos perdidos, dolor y sufrimiento — como resultado directo del incumplimiento de la parte culpable."
+
+#. translators: 1: state name; 2: capitalized accident type, e.g. "Car accident".
+#: templates/template-intersection.php:393
+#: templates/template-intersection.php:398
+#, php-format
+msgid "Types of Compensation in %1$s %2$s Cases"
+msgstr "Tipos de Compensación en Casos de %2$s en %1$s"
+
+#. translators: 1: lowercase accident type; 2: state name.
+#: templates/template-intersection.php:399
+#, php-format
+msgid "Victims of %1$s injuries in %2$s can pursue two categories of damages: economic damages (quantifiable financial losses) and non-economic damages (quality-of-life impacts). There is no cap on compensatory damages in %2$s."
+msgstr "Las víctimas de lesiones por %1$s en %2$s pueden buscar dos categorías de daños: daños económicos (pérdidas financieras cuantificables) y daños no económicos (impactos en la calidad de vida). No hay límite a los daños compensatorios en %2$s."
+
+#: templates/template-intersection.php:402
+#: templates/template-practice-area.php:337
+#: templates/template-subtype.php:141
+msgid "Economic Damages"
+msgstr "Daños Económicos"
+
+#: templates/template-intersection.php:404
+#: templates/template-practice-area.php:339
+#: templates/template-subtype.php:143
+msgid "Past and future medical expenses"
+msgstr "Gastos médicos pasados y futuros"
+
+#: templates/template-intersection.php:405
+#: templates/template-practice-area.php:340
+#: templates/template-subtype.php:144
+msgid "Lost wages or income"
+msgstr "Salarios o ingresos perdidos"
+
+#: templates/template-intersection.php:406
+#: templates/template-practice-area.php:341
+#: templates/template-subtype.php:145
+msgid "Loss of earning capacity"
+msgstr "Pérdida de capacidad de generar ingresos"
+
+#: templates/template-intersection.php:407
+#: templates/template-practice-area.php:342
+msgid "Property damage and vehicle repair/replacement"
+msgstr "Daños a la propiedad y reparación/reemplazo del vehículo"
+
+#: templates/template-intersection.php:408
+#: templates/template-practice-area.php:343
+#: templates/template-subtype.php:147
+msgid "Cost of rehabilitation and physical therapy"
+msgstr "Costo de rehabilitación y fisioterapia"
+
+#: templates/template-intersection.php:409
+#: templates/template-practice-area.php:344
+#: templates/template-subtype.php:148
+msgid "Assistive medical equipment"
+msgstr "Equipo médico de asistencia"
+
+#: templates/template-intersection.php:410
+#: templates/template-practice-area.php:345
+#: templates/template-subtype.php:149
+msgid "Cost of long-term or lifelong care"
+msgstr "Costo de cuidados a largo plazo o de por vida"
+
+#: templates/template-intersection.php:414
+#: templates/template-practice-area.php:349
+#: templates/template-subtype.php:153
+msgid "Non-Economic Damages"
+msgstr "Daños No Económicos"
+
+#: templates/template-intersection.php:416
+#: templates/template-practice-area.php:351
+#: templates/template-subtype.php:155
+msgid "Pain and suffering"
+msgstr "Dolor y sufrimiento"
+
+#: templates/template-intersection.php:417
+#: templates/template-practice-area.php:352
+#: templates/template-subtype.php:156
+msgid "Mental and emotional distress"
+msgstr "Angustia mental y emocional"
+
+#: templates/template-intersection.php:418
+#: templates/template-practice-area.php:353
+#: templates/template-subtype.php:157
+msgid "Loss of companionship (spouse/family)"
+msgstr "Pérdida de compañía (cónyuge/familia)"
+
+#: templates/template-intersection.php:419
+#: templates/template-practice-area.php:354
+#: templates/template-subtype.php:158
+msgid "Disability and disfigurement"
+msgstr "Discapacidad y desfiguración"
+
+#: templates/template-intersection.php:420
+#: templates/template-practice-area.php:355
+#: templates/template-subtype.php:159
+msgid "Loss of enjoyment of life"
+msgstr "Pérdida del disfrute de la vida"
+
+#: templates/template-intersection.php:421
+#: templates/template-practice-area.php:356
+#: templates/template-subtype.php:160
+msgid "Humiliation or loss of reputation"
+msgstr "Humillación o pérdida de reputación"
+
+#: templates/template-intersection.php:423
+#: templates/template-practice-area.php:358
+#: templates/template-subtype.php:162
+msgid "Non-economic damages can only be pursued through a personal injury lawsuit, not a standard insurance claim."
+msgstr "Los daños no económicos solo pueden buscarse mediante una demanda de lesiones personales, no mediante un reclamo de seguro estándar."
+
+#. translators: %s: city/market name.
+#: templates/template-intersection.php:438
+#, php-format
+msgid "Our %s Attorneys"
+msgstr "Nuestros Abogados de %s"
+
+#: templates/template-intersection.php:444
+#: templates/template-subtype.php:225
+msgid "Recent Case Results"
+msgstr "Resultados de Casos Recientes"
+
+#. translators: %s: practice area title.
+#: templates/template-intersection.php:454
+#, php-format
+msgid "Local %s Resources"
+msgstr "Recursos Locales de %s"
+
+#. translators: 1: attorney name; 2: attorney title.
+#: templates/template-intersection.php:470
+#: templates/template-practice-area.php:441
+#: templates/template-subtype.php:281
+#, php-format
+msgid "%1$s, %2$s at Roden Law"
+msgstr "%1$s, %2$s en Roden Law"
+
+#. translators: %s: city/market name.
+#: templates/template-intersection.php:497
+#, php-format
+msgid "Contact Our %s Office Today"
+msgstr "Contacte a Nuestra Oficina de %s Hoy"
+
+#. translators: 1: city/market name; 2: phone number link.
+#: templates/template-intersection.php:502
+#, php-format
+msgid "If you were injured in %1$s and believe another party is at fault, contact us for a free, no-obligation review. Call %2$s — no upfront cost."
+msgstr "Si usted resultó lesionado en %1$s y cree que otra parte tiene la culpa, contáctenos para una revisión gratuita y sin compromiso. Llame al %2$s — sin costo por adelantado."
+
+#: templates/template-intersection.php:528
+#: templates/template-subtype.php:324
+msgid "Main Practice Area"
+msgstr "Área de Práctica Principal"
+
+#: templates/template-intersection.php:538
+#: templates/template-subtype.php:332
+msgid "Related Case Types"
+msgstr "Tipos de Casos Relacionados"
+
+#: templates/template-intersection.php:562
+msgid "View on Google Maps"
+msgstr "Ver en Google Maps"
+
+#. translators: %s: state name.
+#: templates/template-intersection.php:569
+#, php-format
+msgid "%s Filing Deadline"
+msgstr "Plazo para Presentar su Demanda en %s"
+
+#. translators: %s: number of years.
+#: templates/template-intersection.php:572
+#, php-format
+msgid "%s yr"
+msgstr "%s años"
+
+#: templates/template-intersection.php:576
+#: templates/template-practice-area.php:642
+#: templates/template-subtype.php:369
+msgid "Missing the deadline forfeits your right to recover."
+msgstr "No cumplir con el plazo le hace perder su derecho a recuperar compensación."
+
+#. translators: %s: amount recovered, e.g. "$300M+".
+#: templates/template-intersection.php:584
+#: templates/template-practice-area.php:674
+#: templates/template-subtype.php:376
+#, php-format
+msgid "%s Recovered for Clients"
+msgstr "%s Recuperados para Clientes"
+
+#. translators: %s: star rating, e.g. "4.9".
+#. translators: %s: star rating followed by a star glyph, e.g. "4.9★".
+#: templates/template-intersection.php:585
+#: templates/template-practice-area.php:675
+#: templates/template-subtype.php:377
+#, php-format
+msgid "%s Average Client Rating"
+msgstr "%s de Calificación Promedio de Clientes"
+
+#. translators: %s: number of cases handled, e.g. "5,000+".
+#: templates/template-intersection.php:586
+#: templates/template-practice-area.php:676
+#: templates/template-subtype.php:378
+#, php-format
+msgid "%s Cases Successfully Handled"
+msgstr "%s Casos Manejados con Éxito"
+
+#. translators: %s: number of cases handled, e.g. "5,000+".
+#: templates/template-intersection.php:587
+#: templates/template-location.php:368
+#: templates/template-practice-area.php:677
+#: templates/template-subtype.php:379
+msgid "No Fee Unless We Win"
+msgstr "Sin Honorarios a Menos que Ganemos"
+
+#: templates/template-intersection.php:589
+#: templates/template-practice-area.php:679
+#: templates/template-subtype.php:381
+msgid "Licensed in GA & SC"
+msgstr "Con Licencia en GA y SC"
+
+#. Template Name of the theme
+msgid "Landing Page — Charleston"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Landing Page — GA Car Accident"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Landing Page"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Landing Page — SC Rear-End Collision"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Landing Page — SC Statewide"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Truck Accident Landing Page — Columbia"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Truck Accident Landing Page"
+msgstr ""
+
+#: templates/template-location.php:25
+msgid "Office not configured. Please set the Office Key in the admin."
+msgstr "Oficina no configurada. Configure la Clave de Oficina en el panel de administración."
+
+#: templates/template-location.php:132
+msgid "Georgia Trial Lawyers"
+msgstr "Georgia Trial Lawyers"
+
+#. translators: %s: city/market name.
+#: templates/template-location.php:174
+#, php-format
+msgid "Cases We Handle in %s"
+msgstr "Casos que Manejamos en %s"
+
+#. translators: 1: city/market name; 2: state name.
+#: templates/template-location.php:175
+#, php-format
+msgid "Our %1$s attorneys handle all types of personal injury cases in %2$s."
+msgstr "Nuestros abogados de %1$s manejan todo tipo de casos de lesiones personales en %2$s."
+
+#. translators: %s: city/market name.
+#: templates/template-location.php:205
+#, php-format
+msgid "Areas Served in the %s Metro Region"
+msgstr "Áreas Atendidas en la Región Metropolitana de %s"
+
+#. translators: %s: city/market name (used twice).
+#: templates/template-location.php:207
+#, php-format
+msgid "Roden Law's %1$s office serves injury victims throughout the greater %1$s metro region. Click any area below to learn about local accident hotspots, nearby hospitals, and how we can help."
+msgstr "La oficina de Roden Law en %1$s sirve a víctimas de lesiones en toda la región metropolitana de %1$s. Haga clic en cualquier área a continuación para conocer los puntos locales de accidentes, los hospitales cercanos y cómo podemos ayudar."
+
+#. translators: 1: city/market name; 2: phone number link.
+#: templates/template-location.php:227
+#, php-format
+msgid "Don't see your area? We serve all of the greater %1$s metro region. Call %2$s for a free consultation."
+msgstr "¿No ve su área? Servimos a toda la región metropolitana de %1$s. Llame al %2$s para una consulta gratuita."
+
+#. translators: %s: city/market name.
+#: templates/template-location.php:282
+#, php-format
+msgid "Legal Resources for %s"
+msgstr "Recursos Legales para %s"
+
+#. translators: %s: city/market name.
+#: templates/template-location.php:283
+#, php-format
+msgid "Guides and resources about accident hotspots, local roads, and injury claims in the %s area."
+msgstr "Guías y recursos sobre puntos de accidentes, vías locales y reclamos por lesiones en el área de %s."
+
+#. translators: %s: city/market name.
+#: templates/template-location.php:306
+#, php-format
+msgid "About Our %s Office"
+msgstr "Sobre Nuestra Oficina de %s"
+
+#. translators: 1: city/market name (used twice); 2: state name.
+#: templates/template-location.php:316
+#, php-format
+msgid "Roden Law's %1$s office serves injury victims throughout the region. Our %1$s personal injury attorneys handle all types of injury claims under %2$s law."
+msgstr "La oficina de Roden Law en %1$s sirve a víctimas de lesiones en toda la región. Nuestros abogados de lesiones personales de %1$s manejan todo tipo de reclamos por lesiones bajo la ley de %2$s."
+
+#. translators: %s: service area sentence (ends with a period).
+#: templates/template-location.php:322
+#, php-format
+msgid "Serving %s"
+msgstr "Sirviendo a %s"
+
+#. translators: %s: city/market name.
+#: templates/template-location.php:354
+#, php-format
+msgid "Roden Law, %s Office"
+msgstr "Roden Law, Oficina de %s"
+
+#. translators: %s: city/market name.
+#: templates/template-location.php:364
+#, php-format
+msgid "Why Choose Roden Law in %s?"
+msgstr "¿Por Qué Elegir Roden Law en %s?"
+
+#: templates/template-location.php:369
+msgid "You pay nothing upfront. Our contingency fee model means we only get paid when you recover compensation."
+msgstr "Usted no paga nada por adelantado. Nuestro modelo de honorarios de contingencia significa que solo cobramos cuando usted recupera compensación."
+
+#. translators: %s: amount recovered, e.g. "$300M+".
+#: templates/template-location.php:372
+#, php-format
+msgid "%s Recovered"
+msgstr "%s Recuperados"
+
+#. translators: %s: amount recovered, e.g. "$300M+".
+#: templates/template-location.php:373
+#, php-format
+msgid "Our track record speaks for itself — over %s recovered for personal injury victims."
+msgstr "Nuestro historial habla por sí mismo — más de %s recuperados para víctimas de lesiones personales."
+
+#. translators: %s: state name.
+#: templates/template-location.php:376
+#, php-format
+msgid "Local %s Attorneys"
+msgstr "Abogados Locales de %s"
+
+#. translators: 1: city/market name; 2: state name; 3: local court name.
+#: templates/template-location.php:377
+#, php-format
+msgid "Our %1$s team practices in %2$s courts, including the %3$s."
+msgstr "Nuestro equipo de %1$s ejerce en los tribunales de %2$s, incluido el %3$s."
+
+#. translators: %s: star rating, e.g. "4.9".
+#: templates/template-location.php:380
+#, php-format
+msgid "%s-Star Client Rating"
+msgstr "Calificación de Clientes de %s Estrellas"
+
+#. translators: 1: star rating; 2: review-count phrase, e.g. "hundreds of".
+#: templates/template-location.php:381
+#, php-format
+msgid "Rated %1$s stars from %2$s client reviews. Our clients trust us to deliver results."
+msgstr "Calificados con %1$s estrellas en %2$s reseñas de clientes. Nuestros clientes confían en nosotros para obtener resultados."
+
+#: templates/template-location.php:420
+msgid "Address:"
+msgstr "Dirección:"
+
+#. translators: 1: city/market name; 2: local court name.
+#: templates/template-location.php:425
+#, php-format
+msgid "Our %1$s attorneys regularly appear before the %2$s and are familiar with local procedures and filing requirements."
+msgstr "Nuestros abogados de %1$s comparecen regularmente ante el %2$s y están familiarizados con los procedimientos locales y los requisitos de presentación."
+
+#. translators: %s: city/market name.
+#: templates/template-location.php:439
+#, php-format
+msgid "Your %s Attorneys"
+msgstr "Sus Abogados de %s"
+
+#. translators: %s: city/market name.
+#: templates/template-location.php:463
+#, php-format
+msgid "Communities We Serve from %s"
+msgstr "Comunidades que Atendemos desde %s"
+
+#. translators: 1: city/market name; 2: service area sentence (ends with a period).
+#: templates/template-location.php:464
+#, php-format
+msgid "Our %1$s personal injury lawyers proudly serve %2$s"
+msgstr "Nuestros abogados de lesiones personales de %1$s sirven con orgullo a %2$s"
+
+#. translators: %s: city/market name.
+#: templates/template-location.php:475
+#, php-format
+msgid "How to Find Our %s Office"
+msgstr "Cómo Encontrar Nuestra Oficina de %s"
+
+#: templates/template-location.php:478
+msgid "Get Directions on Google Maps"
+msgstr "Cómo Llegar en Google Maps"
+
+#: templates/template-location.php:502
+msgid "Our Other Offices"
+msgstr "Nuestras Otras Oficinas"
+
+#. translators: %d: number of offices.
+#: templates/template-location.php:503
+#, php-format
+msgid "Roden Law serves injury victims across Georgia and South Carolina from %d offices."
+msgstr "Roden Law sirve a víctimas de lesiones en Georgia y Carolina del Sur desde %d oficinas."
+
+#. translators: %s: city/market name.
+#: templates/template-location.php:536
+#, php-format
+msgid "Injured in %s? Get Your Free Case Review Today."
+msgstr "¿Lesionado en %s? Obtenga la Revisión Gratuita de su Caso Hoy."
+
+#. translators: %s: state name.
+#: templates/template-location.php:538
+#, php-format
+msgid "No fees unless we win. Available 24/7 across %s."
+msgstr "Sin honorarios a menos que ganemos. Disponibles 24/7 en %s."
+
+#. Template Name of the theme
+msgid "SC Statewide Pillar (Indexable)"
+msgstr ""
+
+#: templates/template-practice-area.php:36
+msgid "Serving:"
+msgstr "Sirviendo a:"
+
+#. translators: %s: bar association name.
+#: templates/template-practice-area.php:80
+#, php-format
+msgid "%s Member Badge"
+msgstr "Insignia de Miembro de %s"
+
+#: templates/template-practice-area.php:94
+#: templates/template-practice-area 2.php:94
+msgid "Page sections"
+msgstr "Secciones de la página"
+
+#: templates/template-practice-area.php:97
+msgid "Overview"
+msgstr "Resumen"
+
+#: templates/template-practice-area.php:98
+msgid "Case Types"
+msgstr "Tipos de Casos"
+
+#: templates/template-practice-area.php:99
+msgid "Deadlines"
+msgstr "Plazos"
+
+#: templates/template-practice-area.php:100
+msgid "Your Case"
+msgstr "Su Caso"
+
+#: templates/template-practice-area.php:101
+msgid "Compensation"
+msgstr "Compensación"
+
+#: templates/template-practice-area.php:103
+msgid "FAQs"
+msgstr "Preguntas Frecuentes"
+
+#. translators: %s: practice area title.
+#: templates/template-practice-area.php:114
+#, php-format
+msgid "Our %s Offices"
+msgstr "Nuestras Oficinas de %s"
+
+#. translators: %s: practice area title, e.g. "Car Accident Lawyers".
+#. translators: %s: practice area title.
+#: templates/template-practice-area.php:186
+#: templates/template-subtype.php:60
+#, php-format
+msgid "Why Hire %s?"
+msgstr "¿Por Qué Contratar %s?"
+
+#: templates/template-practice-area.php:196
+msgid "At Roden Law, our personal injury attorneys have helped numerous victims secure millions in compensation across Georgia and South Carolina. We provide all potential clients with a free, no-obligation review of their claim and do not charge upfront legal fees."
+msgstr "En Roden Law, nuestros abogados de lesiones personales han ayudado a numerosas víctimas a obtener millones en compensación en Georgia y Carolina del Sur. Ofrecemos a todos los clientes potenciales una revisión gratuita y sin compromiso de su reclamo y no cobramos honorarios legales por adelantado."
+
+#. translators: %s: practice area title.
+#: templates/template-practice-area.php:227
+#, php-format
+msgid "Types of %s Cases We Handle"
+msgstr "Tipos de Casos de %s que Manejamos"
+
+#. translators: %s: practice area title.
+#. translators: %s: case type with "Lawyers/Attorneys" stripped.
+#: templates/template-practice-area.php:253
+#: templates/template-subtype.php:172
+#, php-format
+msgid "Statute of Limitations for %s Cases"
+msgstr "Plazo Legal para Demandar en Casos de %s"
+
+#. translators: 1: "2 years" wrapped in <strong>; 2: "3 years" wrapped in <strong>.
+#: templates/template-practice-area.php:257
+#, php-format
+msgid "The statute of limitations is the legal deadline for filing a personal injury lawsuit. In Georgia, you have %1$s from the date of injury (O.C.G.A. § 9-3-33). In South Carolina, you have %2$s (S.C. Code § 15-3-530). Missing this deadline permanently bars your claim."
+msgstr "El plazo legal para demandar es la fecha límite legal para presentar una demanda de lesiones personales. En Georgia, usted tiene %1$s desde la fecha de la lesión (O.C.G.A. § 9-3-33). En Carolina del Sur, usted tiene %2$s (S.C. Code § 15-3-530). No cumplir con este plazo impide permanentemente su reclamo."
+
+#. translators: %s: "2 years" wrapped in <strong>.
+#: templates/template-practice-area.php:258
+#: templates/template-subtype.php:173
+msgid "2 years"
+msgstr "2 años"
+
+#. translators: %s: "3 years" wrapped in <strong>.
+#: templates/template-practice-area.php:259
+#: templates/template-subtype.php:173
+msgid "3 years"
+msgstr "3 años"
+
+#: templates/template-practice-area.php:265
+#: templates/template-subtype.php:177
+msgid "Georgia Filing Deadline"
+msgstr "Plazo para Presentar su Demanda en Georgia"
+
+#: templates/template-practice-area.php:266
+#: templates/template-subtype.php:178
+msgid "2 Years"
+msgstr "2 Años"
+
+#: templates/template-practice-area.php:272
+#: templates/template-subtype.php:184
+msgid "South Carolina Filing Deadline"
+msgstr "Plazo para Presentar su Demanda en Carolina del Sur"
+
+#: templates/template-practice-area.php:273
+#: templates/template-subtype.php:185
+msgid "3 Years"
+msgstr "3 Años"
+
+#: templates/template-practice-area.php:278
+msgid "If you fail to file within the statute of limitations, your claim will be dismissed and you will permanently lose the right to pursue compensation. You should not hesitate to consult with a skilled attorney to ensure your claim is filed on time."
+msgstr "Si no presenta su demanda dentro del plazo legal, su reclamo será desestimado y perderá permanentemente el derecho a buscar compensación. No dude en consultar con un abogado capacitado para asegurar que su reclamo se presente a tiempo."
+
+#. translators: %s: practice area title.
+#: templates/template-practice-area.php:291
+#, php-format
+msgid "Do I Have a %s Case?"
+msgstr "¿Tengo un Caso de %s?"
+
+#. translators: %s: practice area title.
+#: templates/template-practice-area.php:292
+msgid "To win a personal injury case in Georgia or South Carolina, your attorney must prove the four elements of negligence. Each element must be established by a preponderance of the evidence for you to recover compensation."
+msgstr "Para ganar un caso de lesiones personales en Georgia o Carolina del Sur, su abogado debe probar los cuatro elementos de la negligencia. Cada elemento debe establecerse por preponderancia de la evidencia para que usted recupere compensación."
+
+#: templates/template-practice-area.php:299
+msgid "The other party owed you a duty of care and was obligated to act in a manner that ensured your safety and the safety of others."
+msgstr "La otra parte le debía un deber de cuidado y estaba obligada a actuar de una manera que garantizara su seguridad y la de los demás."
+
+#: templates/template-practice-area.php:304
+msgid "The other party breached that duty by failing to act as a reasonably safe and prudent person would have in the same situation."
+msgstr "La otra parte incumplió ese deber al no actuar como lo habría hecho una persona razonablemente segura y prudente en la misma situación."
+
+#: templates/template-practice-area.php:309
+msgid "The at-fault party's conduct and the resulting accident directly caused your injuries. We gather evidence to prove that but for their negligence, you would not have been harmed."
+msgstr "La conducta de la parte culpable y el accidente resultante causaron directamente sus lesiones. Reunimos evidencia para probar que, de no ser por su negligencia, usted no habría resultado dañado."
+
+#. translators: %s: practice area title.
+#: templates/template-practice-area.php:333
+#, php-format
+msgid "Types of Compensation in %s Cases"
+msgstr "Tipos de Compensación en Casos de %s"
+
+#. translators: %s: lowercase accident type, e.g. "car accident".
+#: templates/template-practice-area.php:334
+#, php-format
+msgid "Victims of %s injuries in Georgia and South Carolina can pursue two categories of damages: economic damages (quantifiable financial losses) and non-economic damages (quality-of-life impacts). There is no cap on compensatory damages in either state."
+msgstr "Las víctimas de lesiones por %s en Georgia y Carolina del Sur pueden buscar dos categorías de daños: daños económicos (pérdidas financieras cuantificables) y daños no económicos (impactos en la calidad de vida). No hay límite a los daños compensatorios en ninguno de los dos estados."
+
+#. translators: %s: practice area title.
+#: templates/template-practice-area.php:367
+#, php-format
+msgid "Comparative Fault in %s Cases — What If I'm Partially At Fault?"
+msgstr "Culpa Comparativa en Casos de %s — ¿Qué Pasa Si Soy Parcialmente Culpable?"
+
+#: templates/template-practice-area.php:370
+#: templates/template-subtype.php:202
+msgid "Georgia — Modified Comparative Fault"
+msgstr "Georgia — Culpa Comparativa Modificada"
+
+#. translators: %s: the phrase "less than 50% at fault" wrapped in <strong>.
+#: templates/template-practice-area.php:371
+#: templates/template-subtype.php:203
+#, php-format
+msgid "You can recover if %s (O.C.G.A. § 51-12-33). Your award is reduced by your fault percentage."
+msgstr "Usted puede recuperar compensación si tiene %s (O.C.G.A. § 51-12-33). Su indemnización se reduce según su porcentaje de culpa."
+
+#. translators: %s: the phrase "less than 50% at fault" wrapped in <strong>.
+#: templates/template-practice-area.php:371
+#: templates/template-subtype.php:203
+msgid "less than 50% at fault"
+msgstr "menos del 50% de culpa"
+
+#: templates/template-practice-area.php:374
+#: templates/template-subtype.php:208
+msgid "South Carolina — Modified Comparative Fault"
+msgstr "Carolina del Sur — Culpa Comparativa Modificada"
+
+#. translators: %s: the phrase "less than 51% at fault" wrapped in <strong>.
+#: templates/template-practice-area.php:375
+#: templates/template-subtype.php:209
+#, php-format
+msgid "You can recover if %s. Your award is reduced by your fault percentage."
+msgstr "Usted puede recuperar compensación si tiene %s. Su indemnización se reduce según su porcentaje de culpa."
+
+#. translators: %s: the phrase "less than 51% at fault" wrapped in <strong>.
+#: templates/template-practice-area.php:375
+#: templates/template-subtype.php:209
+msgid "less than 51% at fault"
+msgstr "menos del 51% de culpa"
+
+#: templates/template-practice-area.php:378
+msgid "For example, if you filed a $100,000 lawsuit and a court finds you are 30% at fault, your award would be reduced to $70,000. Our attorneys will work to minimize any fault assigned to you."
+msgstr "Por ejemplo, si usted presentó una demanda de $100,000 y un tribunal determina que usted tiene un 30% de culpa, su indemnización se reduciría a $70,000. Nuestros abogados trabajarán para minimizar cualquier culpa que se le asigne."
+
+#. translators: %s: practice area title.
+#: templates/template-practice-area.php:391
+#, php-format
+msgid "Common Causes of %s Cases"
+msgstr "Causas Comunes de Casos de %s"
+
+#. translators: %s: practice area title.
+#: templates/template-practice-area.php:405
+#, php-format
+msgid "Common Injuries in %s Cases"
+msgstr "Lesiones Comunes en Casos de %s"
+
+#. translators: %s: practice area title.
+#: templates/template-practice-area.php:428
+#, php-format
+msgid "Recent %s Case Results"
+msgstr "Resultados Recientes de Casos de %s"
+
+#. translators: 1: attorney name wrapped in <strong>; 2: attorney title.
+#: templates/template-practice-area.php:473
+#, php-format
+msgid "Reviewed by %1$s, %2$s — Licensed in Georgia & South Carolina"
+msgstr "Revisado por %1$s, %2$s — Con Licencia en Georgia y Carolina del Sur"
+
+#: templates/template-practice-area.php:552
+msgid "Related Resources"
+msgstr "Recursos Relacionados"
+
+#: templates/template-practice-area.php:593
+#: templates/template-subtype.php:257
+msgid "Related Guides & Legal Resources"
+msgstr "Guías y Recursos Legales Relacionados"
+
+#. translators: %s: practice area title, e.g. "Car Accident Lawyers".
+#. translators: %s: practice area title.
+#: templates/template-practice-area.php:612
+#: templates/template-subtype.php:308
+#, php-format
+msgid "Contact Our %s Today"
+msgstr "Contacte a Nuestros %s Hoy"
+
+#. translators: %s: practice area title, e.g. "Car Accident Lawyers".
+#. translators: %s: practice area title.
+#: templates/template-practice-area.php:613
+#: templates/template-subtype.php:309
+msgid "If you were injured and believe another party is at fault, contact us for a free, no-obligation review. We dedicate our skills and resources to recovering the maximum compensation you deserve — at no upfront cost."
+msgstr "Si usted resultó lesionado y cree que otra parte tiene la culpa, contáctenos para una revisión gratuita y sin compromiso. Dedicamos nuestras habilidades y recursos a recuperar la compensación máxima que usted merece — sin costo por adelantado."
+
+#: templates/template-practice-area.php:634
+#: templates/template-subtype.php:361
+msgid "2 yr"
+msgstr "2 años"
+
+#: templates/template-practice-area.php:638
+#: templates/template-subtype.php:365
+msgid "3 yr"
+msgstr "3 años"
+
+#: templates/template-practice-area.php:647
+msgid "Related Practice Areas"
+msgstr "Áreas de Práctica Relacionadas"
+
+#. translators: %s: case type with "Lawyers/Attorneys" stripped, e.g. "Drunk Driver Accident".
+#: templates/template-subtype.php:71
+#, php-format
+msgid "Why You Need a Lawyer for %s Cases"
+msgstr "Por Qué Necesita un Abogado para Casos de %s"
+
+#. translators: %s: case type with "Lawyers/Attorneys" stripped.
+#: templates/template-subtype.php:111
+#, php-format
+msgid "Proving Your %s Case"
+msgstr "Cómo Probar su Caso de %s"
+
+#. translators: %s: lowercase accident type with leading article, e.g. "a drunk driver accident".
+#: templates/template-subtype.php:112
+#, php-format
+msgid "To win a personal injury case involving %s, your attorney must establish the four elements of negligence by a preponderance of the evidence."
+msgstr "Para ganar un caso de lesiones personales que involucra %s, su abogado debe establecer los cuatro elementos de la negligencia por preponderancia de la evidencia."
+
+#: templates/template-subtype.php:117
+msgid "The other party breached that duty by failing to act as a reasonably prudent person would have."
+msgstr "La otra parte incumplió ese deber al no actuar como lo habría hecho una persona razonablemente prudente."
+
+#: templates/template-subtype.php:119
+msgid "You suffered actual, quantifiable damages — medical expenses, lost income, pain and suffering — as a direct result."
+msgstr "Usted sufrió daños reales y cuantificables — gastos médicos, ingresos perdidos, dolor y sufrimiento — como resultado directo."
+
+#. translators: %s: case type with "Lawyers/Attorneys" stripped.
+#: templates/template-subtype.php:137
+#, php-format
+msgid "Compensation Available in %s Cases"
+msgstr "Compensación Disponible en Casos de %s"
+
+#. translators: %s: lowercase accident type with leading article.
+#: templates/template-subtype.php:138
+#, php-format
+msgid "Victims of %s injuries in Georgia and South Carolina can pursue economic damages (quantifiable financial losses) and non-economic damages (quality-of-life impacts). There is no cap on compensatory damages in either state."
+msgstr "Las víctimas de lesiones por %s en Georgia y Carolina del Sur pueden buscar daños económicos (pérdidas financieras cuantificables) y daños no económicos (impactos en la calidad de vida). No hay límite a los daños compensatorios en ninguno de los dos estados."
+
+#: templates/template-subtype.php:146
+msgid "Property damage and repair/replacement"
+msgstr "Daños a la propiedad y reparación/reemplazo"
+
+#. translators: %s: case type with "Lawyers/Attorneys" stripped.
+#: templates/template-subtype.php:173
+msgid "The statute of limitations is the legal deadline for filing a personal injury lawsuit."
+msgstr "El plazo legal para demandar es la fecha límite legal para presentar una demanda de lesiones personales."
+
+#. translators: %s: "2 years" wrapped in <strong>.
+#: templates/template-subtype.php:173
+#, php-format
+msgid "In Georgia, you have %s from the date of injury (O.C.G.A. § 9-3-33)."
+msgstr "En Georgia, usted tiene %s desde la fecha de la lesión (O.C.G.A. § 9-3-33)."
+
+#. translators: %s: "3 years" wrapped in <strong>.
+#: templates/template-subtype.php:173
+#, php-format
+msgid "In South Carolina, you have %s (S.C. Code § 15-3-530)."
+msgstr "En Carolina del Sur, usted tiene %s (S.C. Code § 15-3-530)."
+
+#. translators: %s: "3 years" wrapped in <strong>.
+#: templates/template-subtype.php:173
+msgid "Missing this deadline permanently bars your claim."
+msgstr "No cumplir con este plazo impide permanentemente su reclamo."
+
+#: templates/template-subtype.php:190
+msgid "If you fail to file within the statute of limitations, your claim will be dismissed and you will permanently lose the right to pursue compensation."
+msgstr "Si no presenta su demanda dentro del plazo legal, su reclamo será desestimado y perderá permanentemente el derecho a buscar compensación."
+
+#: templates/template-subtype.php:198
+msgid "What If I'm Partially At Fault?"
+msgstr "¿Qué Pasa Si Soy Parcialmente Culpable?"
+
+#: templates/template-subtype.php:213
+msgid "For example, if you filed a $100,000 lawsuit and a court finds you are 30% at fault, your award would be reduced to $70,000. Our attorneys work to minimize any fault assigned to you."
+msgstr "Por ejemplo, si usted presentó una demanda de $100,000 y un tribunal determina que usted tiene un 30% de culpa, su indemnización se reduciría a $70,000. Nuestros abogados trabajan para minimizar cualquier culpa que se le asigne."
+
+#: templates/template-subtype.php:344
+msgid "See by Location"
+msgstr "Ver por Ubicación"

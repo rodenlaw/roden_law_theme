@@ -20,12 +20,13 @@ function roden_breadcrumb_html() {
     }
 
     $firm   = roden_firm_data();
-    $crumbs = array( '<a href="' . esc_url( home_url( '/' ) ) . '">Home</a>' );
+    $lang   = function_exists( 'roden_current_lang' ) ? roden_current_lang() : 'en';
+    $crumbs = array( '<a href="' . esc_url( roden_lang_home_url( $lang ) ) . '">' . esc_html__( 'Home', 'roden-law' ) . '</a>' );
 
     if ( ( function_exists( 'roden_is_pa_singular' ) && roden_is_pa_singular() )
          || is_singular( 'practice_area' ) ) {
 
-        $crumbs[] = '<a href="' . esc_url( home_url( '/practice-areas/' ) ) . '">Practice Areas</a>';
+        $crumbs[] = '<a href="' . esc_url( roden_lang_home_url( $lang, '/practice-areas/' ) ) . '">' . esc_html__( 'Practice Areas', 'roden-law' ) . '</a>';
 
         $pa_post = get_post( get_the_ID() );
         if ( $pa_post->post_parent ) {
@@ -37,9 +38,13 @@ function roden_breadcrumb_html() {
         $crumbs[] = '<span class="breadcrumb-current">' . esc_html( get_the_title() ) . '</span>';
 
     } elseif ( is_singular( 'location' ) ) {
-        $crumbs[] = '<a href="' . esc_url( home_url( '/locations/' ) ) . '">Locations</a>';
+        $crumbs[] = '<a href="' . esc_url( roden_lang_home_url( $lang, '/locations/' ) ) . '">' . esc_html__( 'Locations', 'roden-law' ) . '</a>';
 
         $is_neighborhood = get_post_meta( get_the_ID(), '_roden_is_neighborhood', true );
+        // No Spanish state pages — skip state/ancestor crumbs on /es/.
+        if ( 'es' === $lang ) {
+            $is_neighborhood = false;
+        }
         if ( $is_neighborhood ) {
             // Neighborhood page: walk ancestors up to the office page.
             // Supports arbitrary depth: Home > Locations > State > City > [Intermediate Neighborhood] > Current
@@ -73,7 +78,7 @@ function roden_breadcrumb_html() {
         } else {
             // Standard office page: Home > Locations > State > City
             $office_key = get_post_meta( get_the_ID(), '_roden_office_key', true );
-            if ( $office_key && isset( $firm['offices'][ $office_key ] ) ) {
+            if ( 'en' === $lang && $office_key && isset( $firm['offices'][ $office_key ] ) ) {
                 $o = $firm['offices'][ $office_key ];
                 $crumbs[] = '<a href="' . esc_url( home_url( '/locations/' . $o['state_slug'] . '/' ) ) . '">' . esc_html( $o['state_full'] ) . '</a>';
             }
@@ -81,36 +86,36 @@ function roden_breadcrumb_html() {
         $crumbs[] = '<span class="breadcrumb-current">' . esc_html( get_the_title() ) . '</span>';
 
     } elseif ( is_singular( 'attorney' ) ) {
-        $crumbs[] = '<a href="' . esc_url( home_url( '/attorneys/' ) ) . '">Attorneys</a>';
+        $crumbs[] = '<a href="' . esc_url( home_url( '/attorneys/' ) ) . '">' . esc_html__( 'Attorneys', 'roden-law' ) . '</a>';
         $crumbs[] = '<span class="breadcrumb-current">' . esc_html( get_the_title() ) . '</span>';
 
     } elseif ( is_singular( 'case_result' ) ) {
-        $crumbs[] = '<a href="' . esc_url( home_url( '/case-results/' ) ) . '">Case Results</a>';
+        $crumbs[] = '<a href="' . esc_url( home_url( '/case-results/' ) ) . '">' . esc_html__( 'Case Results', 'roden-law' ) . '</a>';
         $crumbs[] = '<span class="breadcrumb-current">' . esc_html( get_the_title() ) . '</span>';
 
     } elseif ( is_singular( 'post' ) ) {
         $blog_url = get_permalink( get_option( 'page_for_posts' ) ) ?: home_url( '/blog/' );
-        $crumbs[] = '<a href="' . esc_url( $blog_url ) . '">Blog</a>';
+        $crumbs[] = '<a href="' . esc_url( $blog_url ) . '">' . esc_html__( 'Blog', 'roden-law' ) . '</a>';
         $crumbs[] = '<span class="breadcrumb-current">' . esc_html( get_the_title() ) . '</span>';
 
     } elseif ( is_singular( 'resource' ) ) {
-        $crumbs[] = '<a href="' . esc_url( home_url( '/resources/' ) ) . '">Resources</a>';
+        $crumbs[] = '<a href="' . esc_url( home_url( '/resources/' ) ) . '">' . esc_html__( 'Resources', 'roden-law' ) . '</a>';
         $crumbs[] = '<span class="breadcrumb-current">' . esc_html( get_the_title() ) . '</span>';
 
     } elseif ( is_search() ) {
-        $crumbs[] = '<span class="breadcrumb-current">Search Results</span>';
+        $crumbs[] = '<span class="breadcrumb-current">' . esc_html__( 'Search Results', 'roden-law' ) . '</span>';
 
     } elseif ( is_home() ) {
-        $crumbs[] = '<span class="breadcrumb-current">Blog</span>';
+        $crumbs[] = '<span class="breadcrumb-current">' . esc_html__( 'Blog', 'roden-law' ) . '</span>';
 
     } elseif ( is_category() ) {
         $blog_url = get_permalink( get_option( 'page_for_posts' ) ) ?: home_url( '/blog/' );
-        $crumbs[] = '<a href="' . esc_url( $blog_url ) . '">Blog</a>';
+        $crumbs[] = '<a href="' . esc_url( $blog_url ) . '">' . esc_html__( 'Blog', 'roden-law' ) . '</a>';
         $crumbs[] = '<span class="breadcrumb-current">' . esc_html( single_cat_title( '', false ) ) . '</span>';
 
     } elseif ( is_tag() ) {
         $blog_url = get_permalink( get_option( 'page_for_posts' ) ) ?: home_url( '/blog/' );
-        $crumbs[] = '<a href="' . esc_url( $blog_url ) . '">Blog</a>';
+        $crumbs[] = '<a href="' . esc_url( $blog_url ) . '">' . esc_html__( 'Blog', 'roden-law' ) . '</a>';
         $crumbs[] = '<span class="breadcrumb-current">' . esc_html( single_tag_title( '', false ) ) . '</span>';
 
     } elseif ( is_post_type_archive() ) {
@@ -120,7 +125,7 @@ function roden_breadcrumb_html() {
         $crumbs[] = '<span class="breadcrumb-current">' . esc_html( get_the_title() ) . '</span>';
     }
 
-    echo '<nav class="breadcrumbs" aria-label="Breadcrumb"><span class="breadcrumb-list">'
+    echo '<nav class="breadcrumbs" aria-label="' . esc_attr__( 'Breadcrumb', 'roden-law' ) . '"><span class="breadcrumb-list">'
          . implode( ' <span class="breadcrumb-sep">&rsaquo;</span> ', $crumbs )
          . '</span></nav>';
 }
@@ -374,7 +379,7 @@ function roden_location_cards( $exclude_key = '' ) {
             <a href="tel:<?php echo esc_attr( $office['phone_raw'] ); ?>" class="location-phone">
                 <?php echo esc_html( $office['phone'] ); ?>
             </a>
-            <a href="<?php echo esc_url( $url ); ?>" class="location-link">View Office &rarr;</a>
+            <a href="<?php echo esc_url( $url ); ?>" class="location-link"><?php esc_html_e( 'View Office', 'roden-law' ); ?> &rarr;</a>
         </div>
         <?php
     }
@@ -402,7 +407,11 @@ function roden_location_matrix( $pillar_id = null ) {
     $firm        = roden_firm_data();
 
     echo '<div class="location-matrix">';
-    echo '<h3 class="matrix-title">' . esc_html( $pillar ? $pillar->post_title : '' ) . ' by Location</h3>';
+    echo '<h3 class="matrix-title">' . sprintf(
+        /* translators: %s: practice area title, e.g. "Car Accident Lawyers". */
+        esc_html__( '%s by Location', 'roden-law' ),
+        esc_html( $pillar ? $pillar->post_title : '' )
+    ) . '</h3>';
     echo '<div class="matrix-grid">';
 
     foreach ( $firm['offices'] as $key => $office ) {
@@ -435,10 +444,10 @@ function roden_practice_areas_grid( $columns = 4 ) {
     );
 
     $featured = array(
-        'Car Accident Lawyers'        => 'car-accident-lawyers',
-        'Truck Accident Lawyers'       => 'truck-accident-lawyers',
-        'Motorcycle Accident Lawyers'  => 'motorcycle-accident-lawyers',
-        'Pedestrian Accident Lawyers'  => 'pedestrian-accident-lawyers',
+        __( 'Car Accident Lawyers', 'roden-law' )        => 'car-accident-lawyers',
+        __( 'Truck Accident Lawyers', 'roden-law' )      => 'truck-accident-lawyers',
+        __( 'Motorcycle Accident Lawyers', 'roden-law' ) => 'motorcycle-accident-lawyers',
+        __( 'Pedestrian Accident Lawyers', 'roden-law' ) => 'pedestrian-accident-lawyers',
     );
 
     // Try to load from CPT posts.
@@ -507,29 +516,29 @@ function roden_intersection_grid( $office_key, $columns = 3 ) {
 
     // All 22 pillar slug => label pairs (fallback).
     $pa_labels = array(
-        'car-accident-lawyers'              => 'Car Accident Lawyers',
-        'truck-accident-lawyers'             => 'Truck Accident Lawyers',
-        'slip-and-fall-lawyers'              => 'Slip & Fall Lawyers',
-        'motorcycle-accident-lawyers'        => 'Motorcycle Accident Lawyers',
-        'medical-malpractice-lawyers'        => 'Medical Malpractice Lawyers',
-        'wrongful-death-lawyers'             => 'Wrongful Death Lawyers',
-        'workers-compensation-lawyers'       => 'Workers\' Compensation Lawyers',
-        'dog-bite-lawyers'                   => 'Dog Bite Lawyers',
-        'brain-injury-lawyers'               => 'Brain Injury Lawyers',
-        'spinal-cord-injury-lawyers'         => 'Spinal Cord Injury Lawyers',
-        'maritime-injury-lawyers'            => 'Maritime Injury Lawyers',
-        'product-liability-lawyers'          => 'Product Liability Lawyers',
-        'boating-accident-lawyers'           => 'Boating Accident Lawyers',
-        'burn-injury-lawyers'                => 'Burn Injury Lawyers',
-        'construction-accident-lawyers'      => 'Construction Accident Lawyers',
-        'nursing-home-abuse-lawyers'         => 'Nursing Home Abuse Lawyers',
-        'premises-liability-lawyers'         => 'Premises Liability Lawyers',
-        'pedestrian-accident-lawyers'        => 'Pedestrian Accident Lawyers',
-        'bicycle-accident-lawyers'           => 'Bicycle Accident Lawyers',
-        'electric-scooter-accident-lawyers'  => 'Electric Scooter Accident Lawyers',
-        'atv-side-by-side-accident-lawyers'  => 'ATV & Side-by-Side Accident Lawyers',
-        'golf-cart-accident-lawyers'         => 'Golf Cart Accident Lawyers',
-        'e-bike-accident-lawyers'            => 'E-Bike Accident Lawyers',
+        'car-accident-lawyers'              => __( 'Car Accident Lawyers', 'roden-law' ),
+        'truck-accident-lawyers'             => __( 'Truck Accident Lawyers', 'roden-law' ),
+        'slip-and-fall-lawyers'              => __( 'Slip & Fall Lawyers', 'roden-law' ),
+        'motorcycle-accident-lawyers'        => __( 'Motorcycle Accident Lawyers', 'roden-law' ),
+        'medical-malpractice-lawyers'        => __( 'Medical Malpractice Lawyers', 'roden-law' ),
+        'wrongful-death-lawyers'             => __( 'Wrongful Death Lawyers', 'roden-law' ),
+        'workers-compensation-lawyers'       => __( 'Workers\' Compensation Lawyers', 'roden-law' ),
+        'dog-bite-lawyers'                   => __( 'Dog Bite Lawyers', 'roden-law' ),
+        'brain-injury-lawyers'               => __( 'Brain Injury Lawyers', 'roden-law' ),
+        'spinal-cord-injury-lawyers'         => __( 'Spinal Cord Injury Lawyers', 'roden-law' ),
+        'maritime-injury-lawyers'            => __( 'Maritime Injury Lawyers', 'roden-law' ),
+        'product-liability-lawyers'          => __( 'Product Liability Lawyers', 'roden-law' ),
+        'boating-accident-lawyers'           => __( 'Boating Accident Lawyers', 'roden-law' ),
+        'burn-injury-lawyers'                => __( 'Burn Injury Lawyers', 'roden-law' ),
+        'construction-accident-lawyers'      => __( 'Construction Accident Lawyers', 'roden-law' ),
+        'nursing-home-abuse-lawyers'         => __( 'Nursing Home Abuse Lawyers', 'roden-law' ),
+        'premises-liability-lawyers'         => __( 'Premises Liability Lawyers', 'roden-law' ),
+        'pedestrian-accident-lawyers'        => __( 'Pedestrian Accident Lawyers', 'roden-law' ),
+        'bicycle-accident-lawyers'           => __( 'Bicycle Accident Lawyers', 'roden-law' ),
+        'electric-scooter-accident-lawyers'  => __( 'Electric Scooter Accident Lawyers', 'roden-law' ),
+        'atv-side-by-side-accident-lawyers'  => __( 'ATV & Side-by-Side Accident Lawyers', 'roden-law' ),
+        'golf-cart-accident-lawyers'         => __( 'Golf Cart Accident Lawyers', 'roden-law' ),
+        'e-bike-accident-lawyers'            => __( 'E-Bike Accident Lawyers', 'roden-law' ),
     );
 
     // Try to load pillar posts from the DB for titles + thumbnails.
@@ -549,12 +558,16 @@ function roden_intersection_grid( $office_key, $columns = 3 ) {
     }
 
     // Check which pillars have intersection pages for this office.
-    $intersection_check = get_posts( array(
+    $intersection_check_args = array(
         'post_type'      => 'practice_area',
         'posts_per_page' => -1,
         'post_name__in'  => array( $office_slug ),
         'fields'         => 'id=>parent',
-    ) );
+    );
+    if ( function_exists( 'roden_es_exclusion_meta_query' ) ) {
+        $intersection_check_args['meta_query'] = roden_es_exclusion_meta_query();
+    }
+    $intersection_check = get_posts( $intersection_check_args );
     $pillars_with_intersection = array();
     foreach ( $intersection_check as $ic ) {
         $parent_slug = get_post_field( 'post_name', $ic->post_parent );
@@ -604,7 +617,7 @@ function roden_neighborhood_grid( $current_post_id ) {
         return;
     }
 
-    $siblings = get_posts( array(
+    $sibling_args = array(
         'post_type'      => 'location',
         'post_parent'    => $parent_id,
         'posts_per_page' => -1,
@@ -614,7 +627,11 @@ function roden_neighborhood_grid( $current_post_id ) {
         'orderby'        => 'title',
         'order'          => 'ASC',
         'post_status'    => 'publish',
-    ) );
+    );
+    if ( function_exists( 'roden_es_exclusion_meta_query' ) ) {
+        $sibling_args['meta_query'] = roden_es_exclusion_meta_query();
+    }
+    $siblings = get_posts( $sibling_args );
 
     if ( empty( $siblings ) ) {
         return;
@@ -631,7 +648,7 @@ function roden_neighborhood_grid( $current_post_id ) {
             </a>',
             esc_url( get_permalink( $sibling->ID ) ),
             esc_html( $sibling->post_title ),
-            $pop ? '<span class="neighborhood-pop">Pop. ' . esc_html( $pop ) . '</span>' : ''
+            $pop ? '<span class="neighborhood-pop">' . sprintf( /* translators: %s: neighborhood population figure. */ esc_html__( 'Pop. %s', 'roden-law' ), esc_html( $pop ) ) . '</span>' : ''
         );
     }
     echo '</div>';
@@ -644,11 +661,12 @@ function roden_neighborhood_grid( $current_post_id ) {
 function roden_contact_form_sidebar( $local_phone = '', $source = '' ) {
     ?>
     <div class="sidebar-contact-form">
-        <h3 class="form-title">Free Case Review</h3>
-        <p class="form-subtitle">No fees unless we win<br>Hundreds of 5-star reviews</p>
+        <h3 class="form-title"><?php esc_html_e( 'Free Case Review', 'roden-law' ); ?></h3>
+        <p class="form-subtitle"><?php esc_html_e( 'No fees unless we win', 'roden-law' ); ?><br><?php esc_html_e( 'Hundreds of 5-star reviews', 'roden-law' ); ?></p>
         <form class="roden-sidebar-form" id="roden-sidebar-form" novalidate>
             <?php wp_nonce_field( 'roden_sidebar_form', 'roden_form_nonce' ); ?>
             <input type="hidden" name="gclid" class="roden-gclid" value="">
+            <input type="hidden" name="lang" value="<?php echo esc_attr( function_exists( 'roden_current_lang' ) ? roden_current_lang() : 'en' ); ?>">
             <?php if ( $source ) : ?>
             <input type="hidden" name="source" value="<?php echo esc_attr( $source ); ?>">
             <?php endif; ?>
@@ -658,27 +676,33 @@ function roden_contact_form_sidebar( $local_phone = '', $source = '' ) {
             <div class="rsf-row rsf-half">
                 <div>
                     <label for="rsf-first-name" class="screen-reader-text"><?php esc_html_e( 'First Name', 'roden-law' ); ?></label>
-                    <input type="text" name="first_name" id="rsf-first-name" placeholder="First Name" autocomplete="given-name" required>
+                    <input type="text" name="first_name" id="rsf-first-name" placeholder="<?php esc_attr_e( 'First Name', 'roden-law' ); ?>" autocomplete="given-name" required>
                 </div>
                 <div>
                     <label for="rsf-last-name" class="screen-reader-text"><?php esc_html_e( 'Last Name', 'roden-law' ); ?></label>
-                    <input type="text" name="last_name" id="rsf-last-name" placeholder="Last Name" autocomplete="family-name" required>
+                    <input type="text" name="last_name" id="rsf-last-name" placeholder="<?php esc_attr_e( 'Last Name', 'roden-law' ); ?>" autocomplete="family-name" required>
                 </div>
             </div>
             <label for="rsf-phone" class="screen-reader-text"><?php esc_html_e( 'Phone Number', 'roden-law' ); ?></label>
             <input type="tel" name="phone" id="rsf-phone" placeholder="(555) 555-5555" autocomplete="tel" required>
             <label for="rsf-email" class="screen-reader-text"><?php esc_html_e( 'Email Address', 'roden-law' ); ?></label>
-            <input type="email" name="email" id="rsf-email" placeholder="Email" autocomplete="email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
+            <input type="email" name="email" id="rsf-email" placeholder="<?php esc_attr_e( 'Email', 'roden-law' ); ?>" autocomplete="email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" required>
             <label for="rsf-message" class="screen-reader-text"><?php esc_html_e( 'Describe what happened', 'roden-law' ); ?></label>
-            <textarea name="message" id="rsf-message" placeholder="Please describe what happened" rows="8"></textarea>
+            <textarea name="message" id="rsf-message" placeholder="<?php esc_attr_e( 'Please describe what happened', 'roden-law' ); ?>" rows="8"></textarea>
             <label class="rsf-consent">
                 <input type="checkbox" name="consent" value="1" checked required>
-                <span>I hereby expressly consent to receive automated communications including calls, texts, emails, and/or prerecorded messages. By submitting this form, you agree to our <a href="<?php echo esc_url( home_url( '/terms-privacy-policy/' ) ); ?>" target="_blank" rel="noopener noreferrer">Terms &amp; Privacy Policy</a>.</span>
+                <span><?php
+                    printf(
+                        /* translators: %s: link to the Terms & Privacy Policy page. */
+                        wp_kses( __( 'I hereby expressly consent to receive automated communications including calls, texts, emails, and/or prerecorded messages. By submitting this form, you agree to our %s.', 'roden-law' ), array( 'a' => array( 'href' => array(), 'target' => array(), 'rel' => array() ) ) ),
+                        '<a href="' . esc_url( home_url( '/terms-privacy-policy/' ) ) . '" target="_blank" rel="noopener noreferrer">' . esc_html__( 'Terms &amp; Privacy Policy', 'roden-law' ) . '</a>'
+                    );
+                ?></span>
             </label>
-            <button type="submit" class="rsf-submit-btn">See If You Qualify</button>
+            <button type="submit" class="rsf-submit-btn"><?php esc_html_e( 'See If You Qualify', 'roden-law' ); ?></button>
             <p class="rsf-error" style="display:none;"></p>
         </form>
-        <p class="form-disclaimer">Results may vary depending on your particular facts and legal circumstances.</p>
+        <p class="form-disclaimer"><?php esc_html_e( 'Results may vary depending on your particular facts and legal circumstances.', 'roden-law' ); ?></p>
     </div>
     <?php
 }
@@ -692,8 +716,8 @@ function roden_inline_cta_banner() {
     ?>
     <div class="inline-cta-banner">
         <div class="cta-text">
-            <strong>Free Case Review &mdash; No Fees Unless We Win</strong>
-            <span>Available 24/7 &middot; Georgia &amp; South Carolina</span>
+            <strong><?php esc_html_e( 'Free Case Review — No Fees Unless We Win', 'roden-law' ); ?></strong>
+            <span><?php esc_html_e( 'Available 24/7 · Georgia & South Carolina', 'roden-law' ); ?></span>
         </div>
         <a href="tel:<?php echo esc_attr( $firm['phone_e164'] ); ?>" class="btn btn-primary"><?php echo esc_html( $firm['phone'] ); ?></a>
     </div>
@@ -707,9 +731,9 @@ function roden_inline_cta_banner() {
 function roden_stats_bar() {
     $firm  = roden_firm_data();
     $stats = array(
-        array( 'num' => $firm['recovered'],     'label' => 'Recovered for Clients' ),
-        array( 'num' => $firm['rating'] . '★',  'label' => 'Client Rating' ),
-        array( 'num' => $firm['cases_handled'], 'label' => 'Cases Handled' ),
+        array( 'num' => $firm['recovered'],     'label' => __( 'Recovered for Clients', 'roden-law' ) ),
+        array( 'num' => $firm['rating'] . '★',  'label' => __( 'Client Rating', 'roden-law' ) ),
+        array( 'num' => $firm['cases_handled'], 'label' => __( 'Cases Handled', 'roden-law' ) ),
     );
     echo '<div class="stats-bar">';
     foreach ( $stats as $s ) {
@@ -741,7 +765,7 @@ function roden_last_updated_date( $post_id = null ) {
     }
     echo '<p class="last-updated">';
     echo '<time datetime="' . esc_attr( get_the_modified_date( 'c', $post_id ) ) . '">';
-    echo 'Last updated: ' . esc_html( $modified );
+    echo esc_html__( 'Last updated:', 'roden-law' ) . ' ' . esc_html( $modified );
     echo '</time>';
     echo '</p>';
 }
@@ -786,11 +810,19 @@ function roden_ai_definition_block( $practice_area_title, $custom_definition = '
     }
     ?>
     <div class="ai-definition-block" data-ai-extractable="true">
-        <h2>What Is a <?php echo esc_html( $label ); ?> Case?</h2>
+        <h2><?php printf( /* translators: %s: practice area label, e.g. "Car Accident". */ esc_html__( 'What Is a %s Case?', 'roden-law' ), esc_html( $label ) ); ?></h2>
         <p class="definition-text"><?php echo wp_kses_post( $definition ); ?></p>
         <?php if ( $author_name ) : ?>
             <p class="definition-attribution">
-                — Reviewed by <strong><?php echo esc_html( $author_name ); ?></strong><?php if ( $author_title ) : ?>, <?php echo esc_html( $author_title ); ?><?php endif; ?> at Roden Law
+                <?php
+                echo '— ';
+                printf(
+                    /* translators: 1: attorney name (bold), 2: attorney title. */
+                    $author_title ? esc_html__( 'Reviewed by %1$s, %2$s at Roden Law', 'roden-law' ) : esc_html__( 'Reviewed by %1$s at Roden Law', 'roden-law' ),
+                    '<strong>' . esc_html( $author_name ) . '</strong>',
+                    esc_html( $author_title )
+                );
+                ?>
             </p>
         <?php endif; ?>
     </div>
@@ -811,39 +843,59 @@ function roden_ai_definition_block( $practice_area_title, $custom_definition = '
  * @param string $state_full    e.g., "Georgia"
  */
 function roden_what_to_do_steps( $accident_type, $city = '', $state_full = '' ) {
-    $location_label = $city ? " in {$city}" : '';
-    $state_label    = $state_full ?: 'your state';
+    $state_label = $state_full ?: __( 'your state', 'roden-law' );
     ?>
     <div class="content-section what-to-do-steps" data-ai-extractable="true">
-        <h2>What to Do After <?php echo esc_html( ucfirst( $accident_type ) . $location_label ); ?></h2>
+        <h2><?php
+        if ( $city ) {
+            printf(
+                /* translators: 1: accident type, e.g. "A Car Accident"; 2: city + state, e.g. "Savannah, GA". */
+                esc_html__( 'What to Do After %1$s in %2$s', 'roden-law' ),
+                esc_html( ucfirst( $accident_type ) ),
+                esc_html( $city )
+            );
+        } else {
+            printf(
+                /* translators: %s: accident type, e.g. "A Car Accident". */
+                esc_html__( 'What to Do After %s', 'roden-law' ),
+                esc_html( ucfirst( $accident_type ) )
+            );
+        }
+        ?></h2>
         <ol class="steps-list">
             <li>
-                <strong>Ensure safety and call 911.</strong>
-                Move to a safe location if possible. Call emergency services to report the accident and request medical attention for anyone injured.
+                <strong><?php esc_html_e( 'Ensure safety and call 911.', 'roden-law' ); ?></strong>
+                <?php esc_html_e( 'Move to a safe location if possible. Call emergency services to report the accident and request medical attention for anyone injured.', 'roden-law' ); ?>
             </li>
             <li>
-                <strong>Seek immediate medical attention.</strong>
-                Even if injuries seem minor, get examined by a doctor. Some injuries — such as traumatic brain injuries or internal bleeding — may not show symptoms immediately.
+                <strong><?php esc_html_e( 'Seek immediate medical attention.', 'roden-law' ); ?></strong>
+                <?php esc_html_e( 'Even if injuries seem minor, get examined by a doctor. Some injuries — such as traumatic brain injuries or internal bleeding — may not show symptoms immediately.', 'roden-law' ); ?>
             </li>
             <li>
-                <strong>Document the scene.</strong>
-                Take photos of all vehicles, injuries, road conditions, traffic signs, and any visible damage. Collect names and contact information from witnesses.
+                <strong><?php esc_html_e( 'Document the scene.', 'roden-law' ); ?></strong>
+                <?php esc_html_e( 'Take photos of all vehicles, injuries, road conditions, traffic signs, and any visible damage. Collect names and contact information from witnesses.', 'roden-law' ); ?>
             </li>
             <li>
-                <strong>Exchange information with all parties.</strong>
-                Get the other driver's name, insurance information, license plate number, and driver's license number. Do not admit fault or apologize.
+                <strong><?php esc_html_e( 'Exchange information with all parties.', 'roden-law' ); ?></strong>
+                <?php esc_html_e( 'Get the other driver\'s name, insurance information, license plate number, and driver\'s license number. Do not admit fault or apologize.', 'roden-law' ); ?>
             </li>
             <li>
-                <strong>Report the accident to police.</strong>
-                <?php echo esc_html( $state_label ); ?> law requires accident reports when there are injuries or significant property damage. Request a copy of the police report.
+                <strong><?php esc_html_e( 'Report the accident to police.', 'roden-law' ); ?></strong>
+                <?php
+                printf(
+                    /* translators: %s: state name, e.g. "Georgia", or the phrase "your state". */
+                    esc_html__( '%s law requires accident reports when there are injuries or significant property damage. Request a copy of the police report.', 'roden-law' ),
+                    esc_html( $state_label )
+                );
+                ?>
             </li>
             <li>
-                <strong>Notify your insurance company.</strong>
-                Report the accident to your insurer promptly. Provide factual information only — do not speculate about fault or the extent of your injuries.
+                <strong><?php esc_html_e( 'Notify your insurance company.', 'roden-law' ); ?></strong>
+                <?php esc_html_e( 'Report the accident to your insurer promptly. Provide factual information only — do not speculate about fault or the extent of your injuries.', 'roden-law' ); ?>
             </li>
             <li>
-                <strong>Contact an experienced personal injury attorney.</strong>
-                An attorney can protect your rights, handle communications with insurance companies, and help you pursue the full compensation you deserve. Roden Law offers free consultations — call today.
+                <strong><?php esc_html_e( 'Contact an experienced personal injury attorney.', 'roden-law' ); ?></strong>
+                <?php esc_html_e( 'An attorney can protect your rights, handle communications with insurance companies, and help you pursue the full compensation you deserve. Roden Law offers free consultations — call today.', 'roden-law' ); ?>
             </li>
         </ol>
     </div>
@@ -903,12 +955,12 @@ function roden_faq_section( $post_id = null ) {
     };
     ?>
     <div class="faq-section" id="faq" data-ai-extractable="true">
-        <h2 class="section-title">Frequently Asked Questions</h2>
+        <h2 class="section-title"><?php esc_html_e( 'Frequently Asked Questions', 'roden-law' ); ?></h2>
         <?php if ( $has_categories ) :
             // Group, preserving first-seen category order.
             $grouped = array();
             foreach ( $faqs as $faq ) {
-                $cat = ! empty( $faq['category'] ) ? $faq['category'] : 'More Questions';
+                $cat = ! empty( $faq['category'] ) ? $faq['category'] : __( 'More Questions', 'roden-law' );
                 $grouped[ $cat ][] = $faq;
             }
             $uid = 0;
@@ -982,9 +1034,13 @@ function roden_sc_statewide_uplink( $office, $parent_slug, $parent_title = '' ) 
     $label = get_the_title( $pillar );
     ?>
     <div class="content-section sc-statewide-uplink" data-ai-extractable="true">
-        <p>Serving all of South Carolina:
-        see our statewide <a href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( $label ); ?></a>
-        page for South Carolina&rsquo;s filing deadline, comparative-fault rule, and how these cases work across the state.</p>
+        <p><?php
+        printf(
+            /* translators: %s: link to the South Carolina statewide pillar page (anchor text is the page title). */
+            esc_html__( 'Serving all of South Carolina: see our statewide %s page for South Carolina’s filing deadline, comparative-fault rule, and how these cases work across the state.', 'roden-law' ),
+            '<a href="' . esc_url( $url ) . '">' . esc_html( $label ) . '</a>'
+        );
+        ?></p>
     </div>
     <?php
 }
@@ -1032,7 +1088,7 @@ function roden_filing_deadlines_sidebar( $jurisdiction = '' ) {
     $sol_sc_override = get_post_meta( get_the_ID(), '_roden_sol_sc', true );
     ?>
     <div class="sidebar-filing-deadlines">
-        <h3 class="sidebar-title">Filing Deadlines</h3>
+        <h3 class="sidebar-title"><?php esc_html_e( 'Filing Deadlines', 'roden-law' ); ?></h3>
         <?php foreach ( $states as $state_key ) :
             if ( ! isset( $firm['jurisdiction'][ $state_key ] ) ) {
                 continue;
@@ -1046,20 +1102,25 @@ function roden_filing_deadlines_sidebar( $jurisdiction = '' ) {
             } elseif ( 'SC' === $state_key && $sol_sc_override ) {
                 $sol_text = $sol_sc_override;
             } else {
-                $sol_text = $j['statute_years'] . ' years (' . $j['statute_cite'] . ')';
+                $sol_text = sprintf(
+                    /* translators: 1: number of years; 2: statute citation, e.g. "O.C.G.A. § 9-3-33". */
+                    __( '%1$s years (%2$s)', 'roden-law' ),
+                    $j['statute_years'],
+                    $j['statute_cite']
+                );
             }
             ?>
             <div class="deadline-state">
                 <h4><?php echo esc_html( $j['state_full'] ); ?></h4>
                 <dl>
-                    <dt>Statute of Limitations</dt>
+                    <dt><?php esc_html_e( 'Statute of Limitations', 'roden-law' ); ?></dt>
                     <dd><?php echo esc_html( $sol_text ); ?></dd>
-                    <dt>Comparative Fault</dt>
+                    <dt><?php esc_html_e( 'Comparative Fault', 'roden-law' ); ?></dt>
                     <dd><?php echo esc_html( $j['comp_fault_rule'] ); ?></dd>
                 </dl>
             </div>
         <?php endforeach; ?>
-        <p class="sidebar-disclaimer">Deadlines may vary. Contact us for case-specific guidance.</p>
+        <p class="sidebar-disclaimer"><?php esc_html_e( 'Deadlines may vary. Contact us for case-specific guidance.', 'roden-law' ); ?></p>
     </div>
     <?php
 }
@@ -1087,7 +1148,7 @@ function roden_comparative_fault_display( $jurisdiction = '' ) {
     $states = ( 'both' === $jurisdiction ) ? array( 'GA', 'SC' ) : array( $jurisdiction );
     ?>
     <div class="comparative-fault">
-        <h3 class="section-subtitle">Comparative Fault Rules</h3>
+        <h3 class="section-subtitle"><?php esc_html_e( 'Comparative Fault Rules', 'roden-law' ); ?></h3>
         <div class="fault-grid cols-<?php echo count( $states ); ?>">
             <?php foreach ( $states as $state_key ) :
                 if ( ! isset( $firm['jurisdiction'][ $state_key ] ) ) {
@@ -1123,30 +1184,41 @@ function roden_related_practice_areas( $count = 6 ) {
     $post    = get_post();
     $current = $post->ID;
 
+    // Keep Spanish (_roden_locale=es) posts out of English-page listings.
+    $es_exclusion = function_exists( 'roden_es_exclusion_meta_query' ) ? roden_es_exclusion_meta_query() : null;
+
     if ( $post->post_parent ) {
         // Child page — show siblings
-        $siblings = get_posts( array(
+        $sibling_args = array(
             'post_type'      => $post->post_type,
             'post_parent'    => $post->post_parent,
             'posts_per_page' => $count + 1,
             'post__not_in'   => array( $current ),
             'orderby'        => 'title',
             'order'          => 'ASC',
-        ) );
+        );
+        if ( $es_exclusion ) {
+            $sibling_args['meta_query'] = $es_exclusion;
+        }
+        $siblings = get_posts( $sibling_args );
         $related = array_slice( $siblings, 0, $count );
-        $heading = 'Related Pages';
+        $heading = __( 'Related Pages', 'roden-law' );
     } else {
         // Pillar page — show other pillars
-        $pillars = get_posts( array(
+        $pillar_args = array(
             'post_type'      => $post->post_type,
             'post_parent'    => 0,
             'posts_per_page' => $count + 1,
             'post__not_in'   => array( $current ),
             'orderby'        => 'menu_order',
             'order'          => 'ASC',
-        ) );
+        );
+        if ( $es_exclusion ) {
+            $pillar_args['meta_query'] = $es_exclusion;
+        }
+        $pillars = get_posts( $pillar_args );
         $related = array_slice( $pillars, 0, $count );
-        $heading = 'Other Practice Areas';
+        $heading = __( 'Other Practice Areas', 'roden-law' );
     }
 
     if ( empty( $related ) ) {
@@ -1172,23 +1244,23 @@ function roden_why_roden_sidebar() {
     $firm = roden_firm_data();
     ?>
     <div class="sidebar-why-roden">
-        <h3 class="sidebar-title">Why Roden Law?</h3>
+        <h3 class="sidebar-title"><?php esc_html_e( 'Why Roden Law?', 'roden-law' ); ?></h3>
         <ul class="trust-signals">
             <li>
                 <strong><?php echo esc_html( $firm['trust_stats']['recovered'] ); ?></strong>
-                <span>Recovered for Clients</span>
+                <span><?php esc_html_e( 'Recovered for Clients', 'roden-law' ); ?></span>
             </li>
             <li>
-                <strong><?php echo esc_html( $firm['trust_stats']['rating'] ); ?> Stars</strong>
+                <strong><?php printf( /* translators: %s: star rating, e.g. "4.9". */ esc_html__( '%s Stars', 'roden-law' ), esc_html( $firm['trust_stats']['rating'] ) ); ?></strong>
                 <span><?php echo esc_html( $firm['trust_stats']['reviews'] ); ?></span>
             </li>
             <li>
-                <strong><?php echo esc_html( $firm['trust_stats']['offices'] ); ?> Offices</strong>
-                <span>Georgia &amp; South Carolina</span>
+                <strong><?php printf( /* translators: %s: number of offices. */ esc_html( _x( '%s Offices', 'office count', 'roden-law' ) ), esc_html( $firm['trust_stats']['offices'] ) ); ?></strong>
+                <span><?php esc_html_e( 'Georgia & South Carolina', 'roden-law' ); ?></span>
             </li>
             <li>
-                <strong>No Fee Guarantee</strong>
-                <span>You don't pay unless we win</span>
+                <strong><?php esc_html_e( 'No Fee Guarantee', 'roden-law' ); ?></strong>
+                <span><?php esc_html_e( 'You don\'t pay unless we win', 'roden-law' ); ?></span>
             </li>
         </ul>
     </div>
@@ -1226,7 +1298,7 @@ function roden_author_attribution( $post_id = null ) {
     $excerpt        = get_the_excerpt( $atty ) ?: wp_trim_words( $atty->post_content, 30 );
     ?>
     <div class="author-attribution" itemscope itemtype="https://schema.org/Person">
-        <h3 class="attribution-heading">About the Author</h3>
+        <h3 class="attribution-heading"><?php esc_html_e( 'About the Author', 'roden-law' ); ?></h3>
         <div class="attribution-inner">
             <?php if ( has_post_thumbnail( $atty ) ) : ?>
                 <a href="<?php echo esc_url( get_permalink( $atty ) ); ?>" class="attribution-photo">
@@ -1244,7 +1316,7 @@ function roden_author_attribution( $post_id = null ) {
                     <span class="attribution-bar"><?php echo esc_html( implode( ' | ', $bar_list ) ); ?></span>
                 <?php endif; ?>
                 <p class="attribution-excerpt"><?php echo esc_html( $excerpt ); ?></p>
-                <a href="<?php echo esc_url( get_permalink( $atty ) ); ?>" class="attribution-link">View Full Profile &rarr;</a>
+                <a href="<?php echo esc_url( get_permalink( $atty ) ); ?>" class="attribution-link"><?php esc_html_e( 'View Full Profile', 'roden-law' ); ?> &rarr;</a>
             </div>
         </div>
     </div>
@@ -1263,31 +1335,31 @@ function roden_author_attribution( $post_id = null ) {
  */
 function roden_ai_stats_block( $practice_area_title = '' ) {
     $firm  = roden_firm_data();
-    $label = $practice_area_title ? ' ' . esc_html( $practice_area_title ) : ' Personal Injury';
+    $label = $practice_area_title ? $practice_area_title : __( 'Personal Injury', 'roden-law' );
     ?>
     <div class="ai-stats-block" data-ai-extractable="true">
-        <h3>Roden Law<?php echo $label; ?> Results at a Glance</h3>
+        <h3><?php printf( /* translators: %s: practice area title, e.g. "Car Accident Lawyers" or "Personal Injury". */ esc_html__( 'Roden Law %s Results at a Glance', 'roden-law' ), esc_html( $label ) ); ?></h3>
         <table class="ai-stats-table">
             <tbody>
                 <tr>
                     <td><strong><?php echo esc_html( $firm['recovered'] ); ?></strong></td>
-                    <td>Recovered for injured clients across Georgia and South Carolina</td>
+                    <td><?php esc_html_e( 'Recovered for injured clients across Georgia and South Carolina', 'roden-law' ); ?></td>
                 </tr>
                 <tr>
-                    <td><strong><?php echo esc_html( $firm['rating'] ); ?> / 5.0</strong></td>
-                    <td>Average client rating across hundreds of verified Google reviews from our six offices</td>
+                    <td><strong><?php printf( /* translators: %s: star rating, e.g. "4.9". */ esc_html__( '%s / 5.0', 'roden-law' ), esc_html( $firm['rating'] ) ); ?></strong></td>
+                    <td><?php esc_html_e( 'Average client rating across hundreds of verified Google reviews from our six offices', 'roden-law' ); ?></td>
                 </tr>
                 <tr>
                     <td><strong><?php echo esc_html( $firm['cases_handled'] ); ?></strong></td>
-                    <td>Cases successfully handled since <?php echo esc_html( $firm['founded'] ); ?></td>
+                    <td><?php printf( /* translators: %s: founding year, e.g. "2013". */ esc_html__( 'Cases successfully handled since %s', 'roden-law' ), esc_html( $firm['founded'] ) ); ?></td>
                 </tr>
                 <tr>
                     <td><strong><?php echo esc_html( $firm['experience'] ); ?></strong></td>
-                    <td>Combined attorney experience across 5 office locations</td>
+                    <td><?php esc_html_e( 'Combined attorney experience across 5 office locations', 'roden-law' ); ?></td>
                 </tr>
             </tbody>
         </table>
-        <p class="ai-stats-source">Source: Roden Law firm records and verified Google Business Profile reviews, updated <?php echo esc_html( date( 'F Y' ) ); ?>.</p>
+        <p class="ai-stats-source"><?php printf( /* translators: %s: month and year, e.g. "July 2026". */ esc_html__( 'Source: Roden Law firm records and verified Google Business Profile reviews, updated %s.', 'roden-law' ), esc_html( date_i18n( 'F Y' ) ) ); ?></p>
     </div>
     <?php
 }
@@ -1325,37 +1397,51 @@ function roden_case_result_summary( $post_id = 0 ) {
         $location = $loc_terms[0]->name;
     }
 
-    $type_label = $result_type ? strtolower( $result_type ) : 'recovery';
+    $type_label = $result_type ? strtolower( $result_type ) : __( 'recovery', 'roden-law' );
 
     // Build the lead sentence from whatever facts are present (each value escaped).
-    $sentence = sprintf( 'Roden Law secured a %s %s', esc_html( $amount ), esc_html( $type_label ) );
-    if ( $accident_type ) {
-        $sentence .= sprintf( ' in a %s case', esc_html( $accident_type ) );
-    }
-    if ( $injury_type ) {
-        $sentence .= sprintf( ' involving %s', esc_html( $injury_type ) );
-    }
-    if ( $location ) {
-        $sentence .= sprintf( ' in %s', esc_html( $location ) );
-    }
-    $sentence .= '.';
+    // Optional clauses are translated as standalone units and slotted into the
+    // lead-sentence msgid via placeholders (empty when the fact is missing).
+    $accident_clause = $accident_type
+        ? ' ' . sprintf( /* translators: %s: accident/case type, e.g. "car accident". Appended to "Roden Law secured a [amount] [settlement]". */ __( 'in a %s case', 'roden-law' ), esc_html( $accident_type ) )
+        : '';
+    $injury_clause = $injury_type
+        ? ' ' . sprintf( /* translators: %s: injury type, e.g. "a traumatic brain injury". Appended to the case-result lead sentence. */ __( 'involving %s', 'roden-law' ), esc_html( $injury_type ) )
+        : '';
+    $location_clause = $location
+        ? ' ' . sprintf( /* translators: %s: location name, e.g. "Savannah, GA". Appended to the case-result lead sentence. */ __( 'in %s', 'roden-law' ), esc_html( $location ) )
+        : '';
+
+    $sentence = sprintf(
+        /* translators: 1: recovery amount, e.g. "$3,000,000"; 2: result type, e.g. "settlement"; 3: optional "in a … case" clause; 4: optional "involving …" clause; 5: optional "in [location]" clause. */
+        __( 'Roden Law secured a %1$s %2$s%3$s%4$s%5$s.', 'roden-law' ),
+        esc_html( $amount ),
+        esc_html( $type_label ),
+        $accident_clause,
+        $injury_clause,
+        $location_clause
+    );
     if ( $initial_offer ) {
-        $sentence .= sprintf( ' The insurance company initially offered just %s before Roden Law intervened.', esc_html( $initial_offer ) );
+        $sentence .= ' ' . sprintf(
+            /* translators: %s: the insurer's initial offer amount, e.g. "$25,000". */
+            __( 'The insurance company initially offered just %s before Roden Law intervened.', 'roden-law' ),
+            esc_html( $initial_offer )
+        );
     }
     ?>
     <div class="case-result-summary" data-ai-extractable="true">
-        <h2>Result Summary</h2>
+        <h2><?php esc_html_e( 'Result Summary', 'roden-law' ); ?></h2>
         <p class="case-result-lead"><?php echo $sentence; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped — pieces escaped above. ?></p>
         <table class="case-result-facts">
             <tbody>
-                <tr><th scope="row">Amount recovered</th><td><?php echo esc_html( $amount ); echo $result_type ? ' (' . esc_html( $result_type ) . ')' : ''; ?></td></tr>
-                <?php if ( $accident_type ) : ?><tr><th scope="row">Case type</th><td><?php echo esc_html( $accident_type ); ?></td></tr><?php endif; ?>
-                <?php if ( $injury_type ) : ?><tr><th scope="row">Injury</th><td><?php echo esc_html( $injury_type ); ?></td></tr><?php endif; ?>
-                <?php if ( $initial_offer ) : ?><tr><th scope="row">Insurer&rsquo;s initial offer</th><td><?php echo esc_html( $initial_offer ); ?></td></tr><?php endif; ?>
-                <?php if ( $location ) : ?><tr><th scope="row">Location</th><td><?php echo esc_html( $location ); ?></td></tr><?php endif; ?>
+                <tr><th scope="row"><?php esc_html_e( 'Amount recovered', 'roden-law' ); ?></th><td><?php echo esc_html( $amount ); echo $result_type ? ' (' . esc_html( $result_type ) . ')' : ''; ?></td></tr>
+                <?php if ( $accident_type ) : ?><tr><th scope="row"><?php esc_html_e( 'Case type', 'roden-law' ); ?></th><td><?php echo esc_html( $accident_type ); ?></td></tr><?php endif; ?>
+                <?php if ( $injury_type ) : ?><tr><th scope="row"><?php esc_html_e( 'Injury', 'roden-law' ); ?></th><td><?php echo esc_html( $injury_type ); ?></td></tr><?php endif; ?>
+                <?php if ( $initial_offer ) : ?><tr><th scope="row"><?php esc_html_e( 'Insurer’s initial offer', 'roden-law' ); ?></th><td><?php echo esc_html( $initial_offer ); ?></td></tr><?php endif; ?>
+                <?php if ( $location ) : ?><tr><th scope="row"><?php esc_html_e( 'Location', 'roden-law' ); ?></th><td><?php echo esc_html( $location ); ?></td></tr><?php endif; ?>
             </tbody>
         </table>
-        <p class="case-result-summary-note">Result reported by Roden Law. Past results do not guarantee a similar outcome in your case.</p>
+        <p class="case-result-summary-note"><?php esc_html_e( 'Result reported by Roden Law. Past results do not guarantee a similar outcome in your case.', 'roden-law' ); ?></p>
     </div>
     <?php
 }
@@ -1450,7 +1536,7 @@ function roden_related_resources( $args = array() ) {
         'count'      => 6,
         'cat_slug'   => '',
         'office_key' => '',
-        'heading'    => 'Related Guides',
+        'heading'    => __( 'Related Guides', 'roden-law' ),
         'display'    => 'sidebar',
         'exclude'    => 0,
     );
@@ -1466,6 +1552,11 @@ function roden_related_resources( $args = array() ) {
         'orderby'        => 'date',
         'order'          => 'DESC',
     );
+
+    // Keep Spanish (_roden_locale=es) resources out of English-page listings.
+    if ( function_exists( 'roden_es_exclusion_meta_query' ) ) {
+        $query_args['meta_query'] = roden_es_exclusion_meta_query();
+    }
 
     if ( $args['exclude'] ) {
         $query_args['post__not_in'] = array( $args['exclude'] );
@@ -1581,45 +1672,45 @@ function roden_jurisdiction_comparison_table( $practice_area_title, $sol_ga = ''
     $label = preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', $practice_area_title );
     ?>
     <div class="jurisdiction-comparison" data-ai-extractable="true">
-        <h2>Georgia vs. South Carolina <?php echo esc_html( $label ); ?> Laws</h2>
-        <p class="comparison-intro">If you were injured in Georgia or South Carolina, the laws governing your <?php echo esc_html( strtolower( $label ) ); ?> claim differ by state. Below is a side-by-side comparison of the key legal rules that affect your case.</p>
+        <h2><?php printf( /* translators: %s: practice area label with "Lawyers/Attorneys" stripped, e.g. "Car Accident". */ esc_html__( 'Georgia vs. South Carolina %s Laws', 'roden-law' ), esc_html( $label ) ); ?></h2>
+        <p class="comparison-intro"><?php printf( /* translators: %s: lowercase practice area label, e.g. "car accident". */ esc_html__( 'If you were injured in Georgia or South Carolina, the laws governing your %s claim differ by state. Below is a side-by-side comparison of the key legal rules that affect your case.', 'roden-law' ), esc_html( strtolower( $label ) ) ); ?></p>
         <table class="comparison-table">
             <thead>
                 <tr>
-                    <th scope="col">Legal Rule</th>
-                    <th scope="col">Georgia</th>
-                    <th scope="col">South Carolina</th>
+                    <th scope="col"><?php esc_html_e( 'Legal Rule', 'roden-law' ); ?></th>
+                    <th scope="col"><?php esc_html_e( 'Georgia', 'roden-law' ); ?></th>
+                    <th scope="col"><?php esc_html_e( 'South Carolina', 'roden-law' ); ?></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td><strong>Statute of Limitations</strong></td>
-                    <td><?php echo esc_html( $sol_ga ?: '2 years (O.C.G.A. § 9-3-33)' ); ?></td>
-                    <td><?php echo esc_html( $sol_sc ?: '3 years (S.C. Code § 15-3-530)' ); ?></td>
+                    <td><strong><?php esc_html_e( 'Statute of Limitations', 'roden-law' ); ?></strong></td>
+                    <td><?php echo esc_html( $sol_ga ?: __( '2 years (O.C.G.A. § 9-3-33)', 'roden-law' ) ); ?></td>
+                    <td><?php echo esc_html( $sol_sc ?: __( '3 years (S.C. Code § 15-3-530)', 'roden-law' ) ); ?></td>
                 </tr>
                 <tr>
-                    <td><strong>Comparative Fault Rule</strong></td>
-                    <td>Modified — recover if less than 50% at fault (O.C.G.A. &sect; 51-12-33)</td>
-                    <td>Modified — recover if less than 51% at fault</td>
+                    <td><strong><?php esc_html_e( 'Comparative Fault Rule', 'roden-law' ); ?></strong></td>
+                    <td><?php esc_html_e( 'Modified — recover if less than 50% at fault (O.C.G.A. § 51-12-33)', 'roden-law' ); ?></td>
+                    <td><?php esc_html_e( 'Modified — recover if less than 51% at fault', 'roden-law' ); ?></td>
                 </tr>
                 <tr>
-                    <td><strong>Damage Cap</strong></td>
-                    <td>No cap on compensatory damages; punitive capped at $250,000 in most cases (O.C.G.A. &sect; 51-12-5.1)</td>
-                    <td>No cap on compensatory damages; no statutory punitive cap (jury discretion)</td>
+                    <td><strong><?php esc_html_e( 'Damage Cap', 'roden-law' ); ?></strong></td>
+                    <td><?php esc_html_e( 'No cap on compensatory damages; punitive capped at $250,000 in most cases (O.C.G.A. § 51-12-5.1)', 'roden-law' ); ?></td>
+                    <td><?php esc_html_e( 'No cap on compensatory damages; no statutory punitive cap (jury discretion)', 'roden-law' ); ?></td>
                 </tr>
                 <tr>
-                    <td><strong>Minimum Auto Insurance</strong></td>
-                    <td>25/50/25 liability coverage required</td>
-                    <td>25/50/25 liability coverage required</td>
+                    <td><strong><?php esc_html_e( 'Minimum Auto Insurance', 'roden-law' ); ?></strong></td>
+                    <td><?php esc_html_e( '25/50/25 liability coverage required', 'roden-law' ); ?></td>
+                    <td><?php esc_html_e( '25/50/25 liability coverage required', 'roden-law' ); ?></td>
                 </tr>
                 <tr>
-                    <td><strong>Filing Court</strong></td>
-                    <td>Superior Court (claims over $15,000)</td>
-                    <td>Circuit Court (claims over $7,500)</td>
+                    <td><strong><?php esc_html_e( 'Filing Court', 'roden-law' ); ?></strong></td>
+                    <td><?php esc_html_e( 'Superior Court (claims over $15,000)', 'roden-law' ); ?></td>
+                    <td><?php esc_html_e( 'Circuit Court (claims over $7,500)', 'roden-law' ); ?></td>
                 </tr>
             </tbody>
         </table>
-        <p class="comparison-source"><em>Source: Georgia Code (O.C.G.A.) and South Carolina Code of Laws. Verified <?php echo esc_html( date( 'F Y' ) ); ?>.</em></p>
+        <p class="comparison-source"><em><?php printf( /* translators: %s: month and year, e.g. "July 2026". */ esc_html__( 'Source: Georgia Code (O.C.G.A.) and South Carolina Code of Laws. Verified %s.', 'roden-law' ), esc_html( date_i18n( 'F Y' ) ) ); ?></em></p>
     </div>
     <?php
 }
@@ -1743,7 +1834,7 @@ function roden_office_local_context_block( $office, $jurisdiction = array() ) {
         : ( $office['city'] ?? '' );
     ?>
     <div class="content-section pa-local-context" data-ai-extractable="true">
-        <h2>Filing a Personal Injury Case in <?php echo esc_html( $market_name ); ?></h2>
+        <h2><?php printf( /* translators: %s: city/market name, e.g. "Savannah". */ esc_html__( 'Filing a Personal Injury Case in %s', 'roden-law' ), esc_html( $market_name ) ); ?></h2>
         <div class="pa-local-context__body">
             <?php echo apply_filters( 'the_content', $body ); ?>
         </div>

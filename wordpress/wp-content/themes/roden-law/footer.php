@@ -18,11 +18,14 @@ $is_local_page = is_singular( 'location' );
 
 // Practice areas for footer links (matches homepage featured grid)
 $footer_practice_areas = array(
-    'Car Accidents'        => 'car-accident-lawyers',
-    'Truck Accidents'       => 'truck-accident-lawyers',
-    'Motorcycle Accidents'  => 'motorcycle-accident-lawyers',
-    'Pedestrian Accidents'  => 'pedestrian-accident-lawyers',
+    __( 'Car Accidents', 'roden-law' )        => 'car-accident-lawyers',
+    __( 'Truck Accidents', 'roden-law' )      => 'truck-accident-lawyers',
+    __( 'Motorcycle Accidents', 'roden-law' ) => 'motorcycle-accident-lawyers',
+    __( 'Pedestrian Accidents', 'roden-law' ) => 'pedestrian-accident-lawyers',
 );
+
+// Current-language home helper (falls back to home_url pre-i18n).
+$footer_lang = function_exists( 'roden_current_lang' ) ? roden_current_lang() : 'en';
 
 // South Carolina statewide pillars (root-relative paths — heading gives SC context).
 $footer_sc_pillars = array(
@@ -97,13 +100,13 @@ $footer_sc_pillars = array(
                     <ul class="footer-links">
                         <?php foreach ( $footer_practice_areas as $label => $slug ) : ?>
                             <li>
-                                <a href="<?php echo esc_url( home_url( '/practice-areas/' . $slug . '/' ) ); ?>">
+                                <a href="<?php echo esc_url( roden_lang_home_url( $footer_lang, '/practice-areas/' . $slug . '/' ) ); ?>">
                                     <?php echo esc_html( $label ); ?>
                                 </a>
                             </li>
                         <?php endforeach; ?>
                         <li>
-                            <a href="<?php echo esc_url( home_url( '/practice-areas/' ) ); ?>">
+                            <a href="<?php echo esc_url( roden_lang_home_url( $footer_lang, '/practice-areas/' ) ); ?>">
                                 <?php esc_html_e( 'Other Personal Injuries', 'roden-law' ); ?>
                             </a>
                         </li>
@@ -141,7 +144,7 @@ $footer_sc_pillars = array(
                                 <a href="<?php echo esc_url( $state_landing_url ); ?>">
                                     <?php
                                     /* translators: %s: state name (Georgia or South Carolina) */
-                                    echo esc_html( sprintf( __( '%s Offices', 'roden-law' ), $bucket['state_full'] ) );
+                                    echo esc_html( sprintf( _x( '%s Offices', 'state name', 'roden-law' ), $bucket['state_full'] ) );
                                     ?>
                                 </a>
                             </h5>
@@ -150,7 +153,7 @@ $footer_sc_pillars = array(
                                     continue;
                                 }
                                 $city_slug = sanitize_title( $office['market_name'] );
-                                $office_url = home_url( '/locations/' . $office['state_slug'] . '/' . $city_slug . '/' );
+                                $office_url = roden_lang_home_url( $footer_lang, '/locations/' . $office['state_slug'] . '/' . $city_slug . '/' );
                             ?>
                                 <div class="footer-office">
                                     <h6>
@@ -192,7 +195,7 @@ $footer_sc_pillars = array(
                         <?php esc_html_e( 'Free Case Review', 'roden-law' ); ?>
                     </h4>
                     <p class="footer-cta-text"><?php esc_html_e( 'Injured? Find out what your case is worth. No fees unless we win.', 'roden-law' ); ?></p>
-                    <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="footer-cta-btn"><?php esc_html_e( 'Get Your Free Case Review', 'roden-law' ); ?></a>
+                    <a href="<?php echo esc_url( roden_lang_home_url( $footer_lang, '/contact/' ) ); ?>" class="footer-cta-btn"><?php esc_html_e( 'Get Your Free Case Review', 'roden-law' ); ?></a>
                 </div>
 
             </div><!-- .footer-grid -->
@@ -216,6 +219,7 @@ $footer_sc_pillars = array(
                 </span>
                 <span>
                     <?php esc_html_e( 'Licensed in Georgia & South Carolina', 'roden-law' ); ?>
+                    <?php if ( function_exists( 'roden_language_switcher' ) ) { roden_language_switcher( 'footer' ); } ?>
                 </span>
             </div>
 
@@ -230,7 +234,7 @@ $footer_sc_pillars = array(
 <!-- Sticky Mobile CTA Bar (visible on mobile after scrolling past hero) -->
 <div class="pa-mobile-cta" aria-label="<?php esc_attr_e( 'Contact Roden Law', 'roden-law' ); ?>">
     <a href="tel:<?php echo esc_attr( $firm['phone_e164'] ); ?>" class="pa-mobile-cta__phone">&#128222; <?php echo esc_html( $firm['phone'] ); ?></a>
-    <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="pa-mobile-cta__review"><?php esc_html_e( 'Free Review', 'roden-law' ); ?></a>
+    <a href="<?php echo esc_url( roden_lang_home_url( $footer_lang, '/contact/' ) ); ?>" class="pa-mobile-cta__review"><?php esc_html_e( 'Free Review', 'roden-law' ); ?></a>
 </div>
 
 <?php wp_footer(); ?>

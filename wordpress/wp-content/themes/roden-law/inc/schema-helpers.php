@@ -33,6 +33,18 @@ defined( 'ABSPATH' ) || exit;
  * @param array $data Schema data array.
  */
 function roden_json_ld( $data ) {
+    // Spanish pages: stamp inLanguage on CreativeWork-derived nodes so search
+    // engines associate the /es/ silo's structured data with Spanish.
+    // (Not valid on Organization/LocalBusiness/Person types — skip those.)
+    if (
+        function_exists( 'roden_current_lang' ) && 'es' === roden_current_lang()
+        && isset( $data['@type'] ) && is_string( $data['@type'] )
+        && in_array( $data['@type'], array( 'FAQPage', 'HowTo', 'BlogPosting', 'Article', 'WebPage', 'WebSite' ), true )
+        && ! isset( $data['inLanguage'] )
+    ) {
+        $data['inLanguage'] = 'es';
+    }
+
     echo '<script type="application/ld+json">' . "\n";
     echo wp_json_encode( $data, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT );
     echo "\n" . '</script>' . "\n";
@@ -109,6 +121,42 @@ function roden_get_canonical_url( $post_or_id = null ) {
     $post = $post_or_id ? get_post( $post_or_id ) : get_post();
     if ( ! $post ) {
         return get_permalink( $post_or_id );
+    }
+
+    // Spanish CPT posts (internal es- slugs): canonical is the EN counterpart's
+    // canonical path mirrored under /es/. Pages under the 'es' parent page
+    // already resolve natively (/es/contact/) so they fall through to
+    // get_permalink(). See inc/i18n.php for the locale model.
+    if (
+        'page' !== $post->post_type
+        && function_exists( 'roden_post_lang' )
+        && 'es' === roden_post_lang( $post )
+    ) {
+        $en_id = (int) get_post_meta( $post->ID, '_roden_translation_of', true );
+        if ( $en_id ) {
+            $en_path = wp_parse_url( roden_get_canonical_url( $en_id ), PHP_URL_PATH );
+            if ( $en_path && '/' !== $en_path ) {
+                return home_url( '/es' . trailingslashit( $en_path ) );
+            }
+        }
+
+        // Fallback when no EN counterpart is linked: build from the es- slug.
+        $slug = roden_strip_es_slug( $post->post_name );
+        if ( in_array( $post->post_type, array( 'practice_area', 'practice-area' ), true ) ) {
+            if ( $post->post_parent ) {
+                $parent = get_post( $post->post_parent );
+                if ( $parent ) {
+                    return home_url( '/es/' . roden_strip_es_slug( $parent->post_name ) . '/' . $post->post_name . '/' );
+                }
+            }
+            return home_url( '/es/practice-areas/' . $slug . '/' );
+        }
+        if ( 'location' === $post->post_type ) {
+            $office_key = get_post_meta( $post->ID, '_roden_office_key', true );
+            $office     = ( $office_key && function_exists( 'roden_get_office' ) ) ? roden_get_office( $office_key ) : null;
+            $state_slug = $office['state_slug'] ?? 'georgia';
+            return home_url( '/es/locations/' . $state_slug . '/' . $slug . '/' );
+        }
     }
 
     // Only intercept child practice_area posts — pillar and other types are fine.
@@ -1069,13 +1117,14 @@ function roden_schema_intersection_howto( $firm ) {
     $url           = roden_get_canonical_url();
 
     $steps = array(
-        array( 'name' => 'Ensure safety and call 911',                 'text' => 'Move to a safe location if possible. Call emergency services to report the accident and request medical attention for anyone injured.' ),
-        array( 'name' => 'Seek immediate medical attention',           'text' => 'Even if injuries seem minor, get examined by a doctor. Some injuries may not show symptoms immediately.' ),
-        array( 'name' => 'Document the scene',                        'text' => 'Take photos of all vehicles, injuries, road conditions, traffic signs, and any visible damage. Collect names and contact information from witnesses.' ),
-        array( 'name' => 'Exchange information with all parties',      'text' => 'Get the other driver\'s name, insurance information, license plate number, and driver\'s license number. Do not admit fault or apologize.' ),
-        array( 'name' => 'Report the accident to police',             'text' => $office['state_full'] . ' law requires accident reports when there are injuries or significant property damage. Request a copy of the police report.' ),
-        array( 'name' => 'Notify your insurance company',             'text' => 'Report the accident to your insurer promptly. Provide factual information only — do not speculate about fault or the extent of your injuries.' ),
-        array( 'name' => 'Contact an experienced personal injury attorney', 'text' => 'An attorney can protect your rights, handle communications with insurance companies, and help you pursue the full compensation you deserve.' ),
+        array( 'name' => __( 'Ensure safety and call 911', 'roden-law' ),                 'text' => __( 'Move to a safe location if possible. Call emergency services to report the accident and request medical attention for anyone injured.', 'roden-law' ) ),
+        array( 'name' => __( 'Seek immediate medical attention', 'roden-law' ),           'text' => __( 'Even if injuries seem minor, get examined by a doctor. Some injuries may not show symptoms immediately.', 'roden-law' ) ),
+        array( 'name' => __( 'Document the scene', 'roden-law' ),                        'text' => __( 'Take photos of all vehicles, injuries, road conditions, traffic signs, and any visible damage. Collect names and contact information from witnesses.', 'roden-law' ) ),
+        array( 'name' => __( 'Exchange information with all parties', 'roden-law' ),      'text' => __( 'Get the other driver\'s name, insurance information, license plate number, and driver\'s license number. Do not admit fault or apologize.', 'roden-law' ) ),
+        /* translators: %s: full state name, e.g. "Georgia". */
+        array( 'name' => __( 'Report the accident to police', 'roden-law' ),             'text' => sprintf( __( '%s law requires accident reports when there are injuries or significant property damage. Request a copy of the police report.', 'roden-law' ), $office['state_full'] ) ),
+        array( 'name' => __( 'Notify your insurance company', 'roden-law' ),             'text' => __( 'Report the accident to your insurer promptly. Provide factual information only — do not speculate about fault or the extent of your injuries.', 'roden-law' ) ),
+        array( 'name' => __( 'Contact an experienced personal injury attorney', 'roden-law' ), 'text' => __( 'An attorney can protect your rights, handle communications with insurance companies, and help you pursue the full compensation you deserve.', 'roden-law' ) ),
     );
 
     $step_entities = array();
@@ -1093,8 +1142,10 @@ function roden_schema_intersection_howto( $firm ) {
         '@context'    => 'https://schema.org',
         '@type'       => 'HowTo',
         '@id'         => $url . '#howto',
-        'name'        => 'What to Do After ' . ucfirst( $accident_type ) . ' in ' . $city_label,
-        'description' => 'Step-by-step guide on what to do after ' . $accident_type . ' in ' . $city_label . '. Protect your rights and maximize your compensation.',
+        /* translators: 1: accident type, e.g. "a car accident"; 2: city label, e.g. "Savannah, GA". */
+        'name'        => sprintf( __( 'What to Do After %1$s in %2$s', 'roden-law' ), ucfirst( $accident_type ), $city_label ),
+        /* translators: 1: accident type; 2: city label. */
+        'description' => sprintf( __( 'Step-by-step guide on what to do after %1$s in %2$s. Protect your rights and maximize your compensation.', 'roden-law' ), $accident_type, $city_label ),
         'url'         => $url,
         'step'        => $step_entities,
     ) );
@@ -1107,13 +1158,14 @@ function roden_schema_intersection_howto( $firm ) {
 function roden_schema_breadcrumbs() {
     $items    = array();
     $position = 1;
+    $lang     = function_exists( 'roden_current_lang' ) ? roden_current_lang() : 'en';
 
     // Home
     $items[] = array(
         '@type'    => 'ListItem',
         'position' => $position++,
         'name'     => __( 'Home', 'roden-law' ),
-        'item'     => home_url( '/' ),
+        'item'     => roden_lang_home_url( $lang ),
     );
 
     if ( roden_is_pa_singular() ) {
@@ -1121,7 +1173,7 @@ function roden_schema_breadcrumbs() {
             '@type'    => 'ListItem',
             'position' => $position++,
             'name'     => __( 'Practice Areas', 'roden-law' ),
-            'item'     => home_url( '/practice-areas/' ),
+            'item'     => roden_lang_home_url( $lang, '/practice-areas/' ),
         );
 
         // If child (intersection or sub-type), add parent pillar
@@ -1148,11 +1200,17 @@ function roden_schema_breadcrumbs() {
             '@type'    => 'ListItem',
             'position' => $position++,
             'name'     => __( 'Locations', 'roden-law' ),
-            'item'     => home_url( '/locations/' ),
+            'item'     => roden_lang_home_url( $lang, '/locations/' ),
         );
 
         $firm            = roden_firm_data();
         $is_neighborhood = get_post_meta( get_the_ID(), '_roden_is_neighborhood', true );
+
+        // No Spanish state landing pages exist — skip the state crumb on /es/
+        // so every breadcrumb item resolves to a live /es/ URL.
+        if ( 'es' === $lang ) {
+            $is_neighborhood = false;
+        }
 
         if ( $is_neighborhood ) {
             // Neighborhood: Locations > State > [ancestors] > Neighborhood
@@ -1193,7 +1251,7 @@ function roden_schema_breadcrumbs() {
         } else {
             // Standard office: Locations > State > City
             $office_key = get_post_meta( get_the_ID(), '_roden_office_key', true );
-            if ( $office_key && isset( $firm['offices'][ $office_key ] ) ) {
+            if ( 'en' === $lang && $office_key && isset( $firm['offices'][ $office_key ] ) ) {
                 $office = $firm['offices'][ $office_key ];
                 $items[] = array(
                     '@type'    => 'ListItem',

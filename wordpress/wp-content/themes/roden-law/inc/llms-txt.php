@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) || exit;
  * dynamic /llms route but leaves the static files stale until the next
  * save_post.
  */
-define( 'RODEN_LLMS_TXT_VERSION', '2026-06-29.1' );
+define( 'RODEN_LLMS_TXT_VERSION', '2026-07-06.1' );
 
 /* ==========================================================================
    1. REWRITE RULES + QUERY VARS
@@ -125,6 +125,8 @@ function roden_generate_llms_txt( $full = false ) {
         'post_status'    => 'publish',
         'orderby'        => 'menu_order title',
         'order'          => 'ASC',
+        // English-only here; Spanish pillars get their own "En Español" section.
+        'meta_query'     => function_exists( 'roden_es_exclusion_meta_query' ) ? roden_es_exclusion_meta_query() : array(),
     ) );
 
     foreach ( $pillars as $pillar ) {
@@ -195,6 +197,29 @@ function roden_generate_llms_txt( $full = false ) {
         $output .= "\n";
     }
     $output .= "\n";
+
+    // ── En Español — Spanish-language pages ─────────────────────────────
+    $es_pillars = get_posts( array(
+        'post_type'      => 'practice_area',
+        'post_parent'    => 0,
+        'posts_per_page' => 30,
+        'post_status'    => 'publish',
+        'orderby'        => 'menu_order title',
+        'order'          => 'ASC',
+        'meta_key'       => '_roden_locale',
+        'meta_value'     => 'es',
+    ) );
+    if ( $es_pillars ) {
+        $output .= "## En Español\n\n";
+        $output .= "Roden Law ofrece contenido en español para las comunidades hispanohablantes de Georgia y Carolina del Sur.\n\n";
+        $output .= "- [Página principal en español]({$site}/es/)\n";
+        foreach ( $es_pillars as $es_pillar ) {
+            $es_url   = function_exists( 'roden_get_canonical_url' ) ? roden_get_canonical_url( $es_pillar ) : get_permalink( $es_pillar );
+            $es_title = roden_llms_decode( get_the_title( $es_pillar ) );
+            $output  .= "- [{$es_title}]({$es_url})\n";
+        }
+        $output .= "\n";
+    }
 
     // ── Optional / Additional Resources ─────────────────────────────────
     $output .= "## Optional\n\n";

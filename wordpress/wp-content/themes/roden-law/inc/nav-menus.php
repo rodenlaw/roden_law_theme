@@ -179,7 +179,7 @@ function roden_inject_resources_nav_link( $items, $args ) {
         return $items;
     }
 
-    $resources_link = '<li class="menu-item"><a href="' . esc_url( home_url( '/resources/' ) ) . '">Resources</a></li>';
+    $resources_link = '<li class="menu-item"><a href="' . esc_url( home_url( '/resources/' ) ) . '">' . esc_html__( 'Resources', 'roden-law' ) . '</a></li>';
 
     // Try to insert after a Blog link (any format).
     $blog_pattern = '/(<li[^>]*>\\s*<a[^>]*>[^<]*Blog[^<]*<\/a>\\s*<\/li>)/i';

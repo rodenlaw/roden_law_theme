@@ -43,6 +43,7 @@ $firm = roden_firm_data();
                     <?php echo esc_html( $firm['vanity_phone'] ); ?>
                 </a>
                 <span class="top-bar-consult"><?php esc_html_e( 'Free 24/7 Consultations', 'roden-law' ); ?></span>
+                <?php if ( function_exists( 'roden_language_switcher' ) ) { roden_language_switcher( 'topbar' ); } ?>
             </div>
         </div>
     </div>
@@ -68,7 +69,7 @@ $firm = roden_firm_data();
                  aria-label="<?php esc_attr_e( 'Primary Menu', 'roden-law' ); ?>">
                 <?php
                 wp_nav_menu( array(
-                    'theme_location' => 'primary',
+                    'theme_location' => function_exists( 'roden_primary_nav_location' ) ? roden_primary_nav_location() : 'primary',
                     'menu_id'        => 'primary-menu',
                     'menu_class'     => 'nav-menu',
                     'container'      => false,
@@ -110,9 +111,35 @@ $firm = roden_firm_data();
 /**
  * Fallback menu when no menu is assigned to the primary location.
  * Outputs links to the main CPT archives and a few key pages.
+ *
+ * On Spanish (/es/) requests this renders a curated Spanish menu limited to
+ * sections that exist in Spanish (no Results/Blog/Testimonials), with labels
+ * translated via gettext and URLs under /es/.
  */
 function roden_fallback_menu() {
     $firm = roden_firm_data();
+
+    if ( function_exists( 'roden_current_lang' ) && 'es' === roden_current_lang() ) {
+        ?>
+        <ul id="primary-menu" class="nav-menu">
+            <li class="menu-item"><a href="<?php echo esc_url( roden_lang_home_url( 'es', '/practice-areas/' ) ); ?>"><?php esc_html_e( 'Practice Areas', 'roden-law' ); ?></a></li>
+            <li class="menu-item menu-item-has-children">
+                <a href="<?php echo esc_url( roden_lang_home_url( 'es', '/locations/' ) ); ?>"><?php esc_html_e( 'Locations', 'roden-law' ); ?></a>
+                <ul class="sub-menu">
+                    <?php foreach ( $firm['offices'] as $office ) :
+                        $city_slug = sanitize_title( $office['market_name'] );
+                        $url = roden_lang_home_url( 'es', '/locations/' . $office['state_slug'] . '/' . $city_slug . '/' );
+                    ?>
+                        <li class="menu-item"><a href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( $office['market_name'] . ', ' . $office['state'] ); ?></a></li>
+                    <?php endforeach; ?>
+                </ul>
+            </li>
+            <li class="menu-item"><a href="<?php echo esc_url( roden_lang_home_url( 'es', '/about/' ) ); ?>"><?php esc_html_e( 'About Us', 'roden-law' ); ?></a></li>
+            <li class="menu-item"><a href="<?php echo esc_url( roden_lang_home_url( 'es', '/contact/' ) ); ?>"><?php esc_html_e( 'Contact', 'roden-law' ); ?></a></li>
+        </ul>
+        <?php
+        return;
+    }
     ?>
     <ul id="primary-menu" class="nav-menu">
         <li class="menu-item"><a href="<?php echo esc_url( home_url( '/practice-areas/' ) ); ?>"><?php esc_html_e( 'Practice Areas', 'roden-law' ); ?></a></li>

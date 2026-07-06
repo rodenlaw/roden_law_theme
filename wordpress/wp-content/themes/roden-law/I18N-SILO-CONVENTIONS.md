@@ -1,10 +1,15 @@
 # Spanish (i18n) Silo Conventions — Roden Law
 
-Status: **conventions only — not yet built.** Today the site is English-only:
-`roden_force_en_us_locale()` pins `en_US` and only `inc/seed-spanish-translations.php`
-exists. Lock these rules in **before** the Spanish build so the practice-area silo
-doesn't have to be re-migrated later. Principles below are platform-agnostic; the WP
-implementation notes assume the current theme architecture.
+Status: **BUILT (Phase 1, 2026-07) — bespoke, no plugin.** The locale layer lives in
+`inc/i18n.php` (decision: no multilingual plugins — Polylang/WPML rejected). ES posts
+are separate posts linked by `_roden_translation_of` / `_roden_translation_es` meta;
+CPT posts carry an internal `es-` slug prefix mapped to public `/es/` URLs by
+`inc/rewrite-rules.php` + permalink filters; pages live as children of the top-level
+`es` page. Chrome translates via gettext (`languages/es_ES.mo`). One deviation from
+§3 below: hreflang ships as per-page head tags (scale is <1K URLs), not sitemap
+`<xhtml:link>` — revisit if the ES silo grows past ~2-3K URLs. Content seeds via
+`inc/es/seed-es-batch-*.php` (drafts; publish after review). The rules below remain
+the contract.
 
 ---
 

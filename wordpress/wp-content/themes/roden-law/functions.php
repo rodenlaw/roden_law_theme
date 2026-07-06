@@ -20,6 +20,7 @@ require_once get_template_directory() . '/inc/firm-data.php';
 require_once get_template_directory() . '/inc/custom-post-types.php';
 require_once get_template_directory() . '/inc/rewrite-rules.php';
 require_once get_template_directory() . '/inc/schema-helpers.php';
+require_once get_template_directory() . '/inc/i18n.php';
 require_once get_template_directory() . '/inc/template-tags.php';
 require_once get_template_directory() . '/inc/nav-menus.php';
 require_once get_template_directory() . '/inc/enqueue.php';
@@ -216,7 +217,9 @@ function roden_remove_sitemap_providers( $provider, $name ) {
     return $provider;
 }
 
-// Remove /es/ Spanish sitemap — no Spanish content exists; artifact of translation plugin.
+// Remove /es/wp-sitemap* — artifact of an old translation plugin. Still correct
+// under the bespoke Spanish build (inc/i18n.php): ES URLs are listed in the MAIN
+// /wp-sitemap.xml (locale-aware permalinks), and no separate /es/ sitemap exists.
 // Two-pronged approach: (1) strip /es/ entries from the sitemap index so crawlers
 // never discover them, and (2) return 404 if a crawler has already cached the URL.
 add_filter( 'wp_sitemaps_index_entry', 'roden_remove_es_sitemap_index_entry', 10, 1 );
@@ -255,6 +258,7 @@ add_filter( 'wp_sitemaps_posts_query_args', 'roden_exclude_toxic_pages_from_site
 function roden_exclude_toxic_pages_from_sitemap( $args, $post_type ) {
     if ( 'page' === $post_type ) {
         $exclude_slugs = array(
+            'gracias',       // Spanish thank-you page (noindex, mirrors thank-you).
             'gracias-ppc-2',
             'gracias-ppc-3',
             'thank-you',
@@ -562,16 +566,24 @@ add_action( 'wp_ajax_nopriv_roden_sidebar_submit', 'roden_sidebar_form_handler' 
 function roden_sidebar_form_handler() {
     check_ajax_referer( 'roden_sidebar_form', 'roden_form_nonce' );
 
+    // Language of the submitting page (hidden field added by the sidebar form).
+    // Switch locale so validation/response strings come back in Spanish for
+    // /es/ submissions — admin-ajax context doesn't inherit the page locale.
+    $lang = ( 'es' === ( $_POST['lang'] ?? '' ) ) ? 'es' : 'en';
+    if ( 'es' === $lang ) {
+        switch_to_locale( 'es_ES' );
+    }
+
     // Honeypot: if hidden field is filled, it's a bot.
     if ( ! empty( $_POST['website_url'] ) ) {
-        wp_send_json_success( array( 'message' => 'Thank you! We will be in touch shortly.' ) );
+        wp_send_json_success( array( 'message' => __( 'Thank you! We will be in touch shortly.', 'roden-law' ) ) );
     }
 
     // Rate limit: max 5 submissions per IP per hour.
     $ip_key = 'roden_form_' . md5( $_SERVER['REMOTE_ADDR'] ?? 'unknown' );
     $count  = (int) get_transient( $ip_key );
     if ( $count >= 5 ) {
-        wp_send_json_error( 'Too many submissions. Please try again later or call us directly.' );
+        wp_send_json_error( __( 'Too many submissions. Please try again later or call us directly.', 'roden-law' ) );
     }
     set_transient( $ip_key, $count + 1, HOUR_IN_SECONDS );
 
@@ -598,7 +610,7 @@ function roden_sidebar_form_handler() {
     // Validate required fields. Name (first), phone, and consent are required;
     // email and last name are optional (some pages collect name + phone only).
     if ( ! $first_name || ! $phone || ! $consent ) {
-        wp_send_json_error( 'Please fill in your name and phone number, and accept the consent.' );
+        wp_send_json_error( __( 'Please fill in your name and phone number, and accept the consent.', 'roden-law' ) );
     }
 
     // Create a GF entry directly (bypasses form validation so Zip isn't required).
@@ -619,6 +631,8 @@ function roden_sidebar_form_handler() {
         $entry_id = GFAPI::add_entry( $entry_data );
 
         if ( ! is_wp_error( $entry_id ) ) {
+            // Store the lead's language (en/es) for intake routing + reporting.
+            gform_update_meta( $entry_id, 'lead_language', $lang );
             // Store gclid as entry meta for Google Ads attribution.
             if ( $gclid ) {
                 gform_update_meta( $entry_id, 'gclid', $gclid );
@@ -661,13 +675,16 @@ function roden_sidebar_form_handler() {
                 'source_url'   => wp_get_referer() ? wp_get_referer() : home_url(),
                 'gclid'        => $gclid,
                 'hl_variant'   => $hl_variant,
+                'language'     => $lang,
                 'ip'           => $_SERVER['REMOTE_ADDR'] ?? '',
                 'user_agent'   => $_SERVER['HTTP_USER_AGENT'] ?? '',
             ) );
         }
     }
 
-    wp_send_json_success( array( 'redirect' => home_url( '/thank-you/' ) ) );
+    // Spanish submissions land on the Spanish thank-you page.
+    $thanks = ( 'es' === $lang ) ? '/es/gracias/' : '/thank-you/';
+    wp_send_json_success( array( 'redirect' => home_url( $thanks ) ) );
 }
 
 /**
@@ -726,7 +743,7 @@ function roden_sidebar_form_js() {
             emailInput.addEventListener('blur', function() {
                 var v = this.value.trim();
                 if (v && !/^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/.test(v)) {
-                    this.setCustomValidity('Please enter a valid email (e.g. name@example.com)');
+                    this.setCustomValidity('<?php echo esc_js( __( 'Please enter a valid email (e.g. name@example.com)', 'roden-law' ) ); ?>');
                 } else {
                     this.setCustomValidity('');
                 }
@@ -741,7 +758,7 @@ function roden_sidebar_form_js() {
             /* Validate phone has 10 digits */
             var phoneDigits = (phoneInput ? phoneInput.value : '').replace(/\D/g, '');
             if (phoneDigits.length !== 10) {
-                errEl.textContent = 'Please enter a valid 10-digit phone number.';
+                errEl.textContent = '<?php echo esc_js( __( 'Please enter a valid 10-digit phone number.', 'roden-law' ) ); ?>';
                 errEl.style.display = 'block';
                 if (phoneInput) phoneInput.focus();
                 return;
@@ -749,13 +766,13 @@ function roden_sidebar_form_js() {
             /* Validate email format */
             var emailVal = emailInput ? emailInput.value.trim() : '';
             if (!/^[^\s@]+@[^\s@]+\.[a-zA-Z]{2,}$/.test(emailVal)) {
-                errEl.textContent = 'Please enter a valid email address.';
+                errEl.textContent = '<?php echo esc_js( __( 'Please enter a valid email address.', 'roden-law' ) ); ?>';
                 errEl.style.display = 'block';
                 if (emailInput) emailInput.focus();
                 return;
             }
             btn.disabled = true;
-            btn.textContent = 'Submitting…';
+            btn.textContent = '<?php echo esc_js( __( 'Submitting…', 'roden-law' ) ); ?>';
             errEl.style.display = 'none';
             var fd = new FormData(form);
             fd.append('action', 'roden_sidebar_submit');
@@ -768,17 +785,17 @@ function roden_sidebar_form_js() {
                 if (data.success && data.data.redirect) {
                     window.location.href = data.data.redirect;
                 } else {
-                    errEl.textContent = data.data || 'Something went wrong. Please call 844-RESULTS.';
+                    errEl.textContent = data.data || '<?php echo esc_js( __( 'Something went wrong. Please call 844-RESULTS.', 'roden-law' ) ); ?>';
                     errEl.style.display = 'block';
                     btn.disabled = false;
-                    btn.textContent = 'See If You Qualify';
+                    btn.textContent = '<?php echo esc_js( __( 'See If You Qualify', 'roden-law' ) ); ?>';
                 }
             })
             .catch(function(){
-                errEl.textContent = 'Network error. Please call 844-RESULTS.';
+                errEl.textContent = '<?php echo esc_js( __( 'Network error. Please call 844-RESULTS.', 'roden-law' ) ); ?>';
                 errEl.style.display = 'block';
                 btn.disabled = false;
-                btn.textContent = 'See If You Qualify';
+                btn.textContent = '<?php echo esc_js( __( 'See If You Qualify', 'roden-law' ) ); ?>';
             });
         });
     })();

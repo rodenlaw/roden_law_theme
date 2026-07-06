@@ -11,7 +11,7 @@
 defined( 'ABSPATH' ) || exit;
 
 $firm = isset( $firm ) ? $firm : roden_firm_data();
-$jurisdiction_label = isset( $jurisdiction_label ) ? $jurisdiction_label : 'Georgia & South Carolina';
+$jurisdiction_label = isset( $jurisdiction_label ) ? $jurisdiction_label : __( 'Georgia & South Carolina', 'roden-law' );
 ?>
 <section class="hero hero-practice-area">
     <div class="container">
@@ -20,7 +20,7 @@ $jurisdiction_label = isset( $jurisdiction_label ) ? $jurisdiction_label : 'Geor
             <div class="hero-content">
                 <div class="speakable-hero" data-speakable="true">
                     <h1 class="hero-title"><?php the_title(); ?></h1>
-                    <p class="hero-jurisdiction">&#9878; SERVING: <strong><?php echo esc_html( $jurisdiction_label ); ?></strong></p>
+                    <p class="hero-jurisdiction">&#9878; <?php esc_html_e( 'SERVING:', 'roden-law' ); ?> <strong><?php echo esc_html( $jurisdiction_label ); ?></strong></p>
                 </div>
                 <div class="speakable-intro" data-speakable="true">
                     <?php if ( has_excerpt() ) : ?>
@@ -31,7 +31,7 @@ $jurisdiction_label = isset( $jurisdiction_label ) ? $jurisdiction_label : 'Geor
                 <?php roden_stats_bar(); ?>
 
                 <div class="hero-actions">
-                    <a href="tel:<?php echo esc_attr( $firm['phone_e164'] ); ?>" class="btn btn-primary btn-lg">&#128222; Call <?php echo esc_html( $firm['phone'] ); ?></a>
+                    <a href="tel:<?php echo esc_attr( $firm['phone_e164'] ); ?>" class="btn btn-primary btn-lg">&#128222; <?php printf( /* translators: %s: phone number. */ esc_html__( 'Call %s', 'roden-law' ), esc_html( $firm['phone'] ) ); ?></a>
                 </div>
             </div>
             <div class="hero-form">

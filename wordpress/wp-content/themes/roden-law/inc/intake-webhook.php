@@ -146,9 +146,16 @@ function roden_intake_payload_from_entry( $entry, $form = array() ) {
 	$entry_id   = (string) rgar( $entry, 'id' );
 	$source_url = (string) rgar( $entry, 'source_url' );
 
-	// gclid / hl_variant are stored as entry meta by the AJAX handler.
+	// gclid / hl_variant / lead_language are stored as entry meta by the AJAX handler.
 	$gclid      = $entry_id && function_exists( 'gform_get_meta' ) ? (string) gform_get_meta( $entry_id, 'gclid' ) : '';
 	$hl_variant = $entry_id && function_exists( 'gform_get_meta' ) ? (string) gform_get_meta( $entry_id, 'hl_variant' ) : '';
+	$language   = $entry_id && function_exists( 'gform_get_meta' ) ? (string) gform_get_meta( $entry_id, 'lead_language' ) : '';
+
+	// Fallback: infer Spanish from the submitting page URL (/es/…).
+	if ( ! $language ) {
+		$src_path = (string) wp_parse_url( (string) rgar( $entry, 'source_url' ), PHP_URL_PATH );
+		$language = preg_match( '#^/es(/|$)#', $src_path ) ? 'es' : 'en';
+	}
 
 	$payload = array(
 		'event_id'     => function_exists( 'wp_generate_uuid4' ) ? wp_generate_uuid4() : md5( $entry_id . $source_url . $phone ),
@@ -167,6 +174,7 @@ function roden_intake_payload_from_entry( $entry, $form = array() ) {
 		'source_url'   => $source_url,
 		'gclid'        => $gclid,
 		'hl_variant'   => $hl_variant,
+		'language'     => $language,
 		'ip'           => (string) rgar( $entry, 'ip' ),
 		'user_agent'   => (string) rgar( $entry, 'user_agent' ),
 		'labeled'      => $labeled,

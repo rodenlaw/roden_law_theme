@@ -30,7 +30,7 @@ function roden_seo_title_optimization( $title_parts ) {
 
     // Homepage — descriptive title with primary keywords.
     if ( is_front_page() ) {
-        $title_parts['title'] = 'Personal Injury Lawyers in Georgia & South Carolina';
+        $title_parts['title'] = __( 'Personal Injury Lawyers in Georgia & South Carolina', 'roden-law' );
         return $title_parts;
     }
 
@@ -52,22 +52,23 @@ function roden_seo_title_optimization( $title_parts ) {
                 $office  = $firm['offices'][ $office_key ];
                 $geo_tag = $office['market_name'] . ', ' . $office['state'];
                 if ( false === stripos( $title_parts['title'], $geo_tag ) ) {
-                    $title_parts['title'] .= ' in ' . $geo_tag;
+                    /* translators: %s: city + state abbreviation, e.g. "Savannah, GA". */
+                    $title_parts['title'] .= sprintf( __( ' in %s', 'roden-law' ), $geo_tag );
                 }
             } else {
                 // Sub-type page — append jurisdiction.
                 $jurisdiction = strtolower( get_post_meta( $post_id, '_roden_jurisdiction', true ) ?: 'both' );
                 if ( 'ga' === $jurisdiction ) {
-                    $title_parts['title'] .= ' in Georgia';
+                    $title_parts['title'] .= __( ' in Georgia', 'roden-law' );
                 } elseif ( 'sc' === $jurisdiction ) {
-                    $title_parts['title'] .= ' in South Carolina';
+                    $title_parts['title'] .= __( ' in South Carolina', 'roden-law' );
                 } else {
-                    $title_parts['title'] .= ' in Georgia & South Carolina';
+                    $title_parts['title'] .= __( ' in Georgia & South Carolina', 'roden-law' );
                 }
             }
         } else {
             // Pillar page — append "in Georgia & South Carolina".
-            $title_parts['title'] .= ' in Georgia & South Carolina';
+            $title_parts['title'] .= __( ' in Georgia & South Carolina', 'roden-law' );
         }
     }
 
@@ -76,7 +77,8 @@ function roden_seo_title_optimization( $title_parts ) {
         $office_key = get_post_meta( get_the_ID(), '_roden_office_key', true );
         if ( $office_key && isset( $firm['offices'][ $office_key ] ) ) {
             $office = $firm['offices'][ $office_key ];
-            $title_parts['title'] .= ' – ' . $office['state_full'] . ' Personal Injury Lawyers';
+            /* translators: %s: full state name, e.g. "Georgia". */
+            $title_parts['title'] .= sprintf( __( ' – %s Personal Injury Lawyers', 'roden-law' ), $office['state_full'] );
         }
     }
 
@@ -93,7 +95,8 @@ function roden_seo_title_optimization( $title_parts ) {
     // Paginated archives — append page number.
     $paged = get_query_var( 'paged', 0 );
     if ( $paged >= 2 ) {
-        $title_parts['title'] .= sprintf( ' – Page %d', $paged );
+        /* translators: %d: archive page number. */
+        $title_parts['title'] .= sprintf( __( ' – Page %d', 'roden-law' ), $paged );
     }
 
     return $title_parts;
@@ -606,7 +609,7 @@ function roden_output_open_graph() {
 
     $firm = roden_firm_data();
     $og   = array(
-        'og:locale'    => 'en_US',
+        'og:locale'    => ( function_exists( 'roden_current_lang' ) && 'es' === roden_current_lang() ) ? 'es_ES' : 'en_US',
         'og:site_name' => $firm['name'],
     );
 

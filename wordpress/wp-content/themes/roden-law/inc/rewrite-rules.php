@@ -41,7 +41,32 @@ function roden_rewrite_rules() {
             'index.php?post_type=practice_area&practice_area=' . $slug . '/$matches[1]',
             'top'
         );
+
+        // Spanish mirror: /es/car-accident-lawyers/charleston-sc/
+        // ES posts store an internal 'es-' slug prefix (see inc/i18n.php), so the
+        // pillar resolves as es-{slug} and children keep the mirrored slug.
+        add_rewrite_rule(
+            '^es/' . preg_quote( $slug, '/' ) . '/([^/]+)/?$',
+            'index.php?post_type=practice_area&practice_area=es-' . $slug . '/$matches[1]',
+            'top'
+        );
     }
+
+    // Spanish pillar: /es/practice-areas/car-accident-lawyers/ → practice_area 'es-car-accident-lawyers'.
+    add_rewrite_rule(
+        '^es/practice-areas/([^/]+)/?$',
+        'index.php?post_type=practice_area&practice_area=es-$matches[1]',
+        'top'
+    );
+
+    // Spanish office page: /es/locations/{state}/{city}/ → location 'es-{city}'.
+    // ES office posts are top-level location posts named es-{city}; the state
+    // segment is cosmetic (mirrors the EN URL) and city slugs are unique.
+    add_rewrite_rule(
+        '^es/locations/[^/]+/([^/]+)/?$',
+        'index.php?post_type=location&location=es-$matches[1]',
+        'top'
+    );
 }
 
 /* ==========================================================================

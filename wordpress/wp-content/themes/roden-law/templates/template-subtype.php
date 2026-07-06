@@ -21,7 +21,7 @@
             <div class="hero-content">
                 <div class="speakable-hero" data-speakable="true">
                     <h1 class="hero-title"><?php the_title(); ?></h1>
-                    <p class="hero-jurisdiction">&#9878; SERVING: <strong><?php echo esc_html( $jurisdiction_label ); ?></strong></p>
+                    <p class="hero-jurisdiction">&#9878; <?php esc_html_e( 'SERVING:', 'roden-law' ); ?> <strong><?php echo esc_html( $jurisdiction_label ); ?></strong></p>
                 </div>
                 <?php if ( has_excerpt() ) : ?>
                     <p class="hero-subtitle"><?php echo wp_kses_post( get_the_excerpt() ); ?></p>
@@ -32,7 +32,7 @@
                 <?php roden_stats_bar(); ?>
 
                 <div class="hero-actions">
-                    <a href="tel:<?php echo esc_attr($firm['phone_e164']); ?>" class="btn btn-primary btn-lg">&#128222; Call <?php echo esc_html($firm['phone']); ?></a>
+                    <a href="tel:<?php echo esc_attr($firm['phone_e164']); ?>" class="btn btn-primary btn-lg">&#128222; <?php printf( /* translators: %s: phone number. */ esc_html__( 'Call %s', 'roden-law' ), esc_html( $firm['phone'] ) ); ?></a>
                 </div>
             </div>
             <div class="hero-form">
@@ -57,7 +57,7 @@
             $subtype_why_hire = get_post_meta( $post_id, '_roden_why_hire', true );
             if ( $subtype_why_hire ) : ?>
                 <div class="content-section pa-why-hire">
-                    <h2>Why Hire <?php the_title(); ?>?</h2>
+                    <h2><?php printf( /* translators: %s: practice area title. */ esc_html__( 'Why Hire %s?', 'roden-law' ), esc_html( get_the_title() ) ); ?></h2>
                     <div class="pa-why-hire__body">
                         <?php echo apply_filters( 'the_content', $subtype_why_hire ); ?>
                     </div>
@@ -68,7 +68,7 @@
                 </div>
             <?php elseif ( $parent_post && $why_hire ) : ?>
                 <div class="content-section pa-why-hire">
-                    <h2>Why You Need a Lawyer for <?php echo esc_html( preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', get_the_title() ) ); ?> Cases</h2>
+                    <h2><?php printf( /* translators: %s: case type with "Lawyers/Attorneys" stripped, e.g. "Drunk Driver Accident". */ esc_html__( 'Why You Need a Lawyer for %s Cases', 'roden-law' ), esc_html( preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', get_the_title() ) ) ); ?></h2>
                     <div class="pa-why-hire__body">
                         <?php echo apply_filters( 'the_content', $why_hire ); ?>
                     </div>
@@ -108,15 +108,15 @@
                  ELEMENTS OF NEGLIGENCE (inherited from pillar — AI-extractable)
                  ═══════════════════════════════════════════════════════════ -->
             <div class="content-section pa-elements-section" data-ai-extractable="true">
-                <h2>Proving Your <?php echo esc_html( preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', get_the_title() ) ); ?> Case</h2>
-                <p>To win a personal injury case involving <?php echo esc_html( $accident_type_lower ); ?>, your attorney must establish the four elements of negligence by a preponderance of the evidence.</p>
+                <h2><?php printf( /* translators: %s: case type with "Lawyers/Attorneys" stripped. */ esc_html__( 'Proving Your %s Case', 'roden-law' ), esc_html( preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', get_the_title() ) ) ); ?></h2>
+                <p><?php printf( /* translators: %s: lowercase accident type with leading article, e.g. "a drunk driver accident". */ esc_html__( 'To win a personal injury case involving %s, your attorney must establish the four elements of negligence by a preponderance of the evidence.', 'roden-law' ), esc_html( $accident_type_lower ) ); ?></p>
                 <div class="pa-elements">
                     <?php
                     $elements = array(
-                        array( 'num' => '01', 'title' => 'Duty of Care', 'body' => 'The other party owed you a legal duty to act in a manner that ensured your safety.' ),
-                        array( 'num' => '02', 'title' => 'Breach of Duty', 'body' => 'The other party breached that duty by failing to act as a reasonably prudent person would have.' ),
-                        array( 'num' => '03', 'title' => 'Causation', 'body' => 'The breach directly caused your injuries. We gather evidence proving that but for their negligence, you would not have been harmed.' ),
-                        array( 'num' => '04', 'title' => 'Damages', 'body' => 'You suffered actual, quantifiable damages — medical expenses, lost income, pain and suffering — as a direct result.' ),
+                        array( 'num' => '01', 'title' => __( 'Duty of Care', 'roden-law' ), 'body' => __( 'The other party owed you a legal duty to act in a manner that ensured your safety.', 'roden-law' ) ),
+                        array( 'num' => '02', 'title' => __( 'Breach of Duty', 'roden-law' ), 'body' => __( 'The other party breached that duty by failing to act as a reasonably prudent person would have.', 'roden-law' ) ),
+                        array( 'num' => '03', 'title' => __( 'Causation', 'roden-law' ), 'body' => __( 'The breach directly caused your injuries. We gather evidence proving that but for their negligence, you would not have been harmed.', 'roden-law' ) ),
+                        array( 'num' => '04', 'title' => __( 'Damages', 'roden-law' ), 'body' => __( 'You suffered actual, quantifiable damages — medical expenses, lost income, pain and suffering — as a direct result.', 'roden-law' ) ),
                     );
                     foreach ( $elements as $el ) : ?>
                         <div class="pa-element">
@@ -134,32 +134,32 @@
                  COMPENSATION TYPES (AI-extractable)
                  ═══════════════════════════════════════════════════════════ -->
             <div class="content-section pa-compensation" data-ai-extractable="true">
-                <h2>Compensation Available in <?php echo esc_html( preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', get_the_title() ) ); ?> Cases</h2>
-                <p class="section-lead">Victims of <?php echo esc_html( $accident_type_lower ); ?> injuries in Georgia and South Carolina can pursue economic damages (quantifiable financial losses) and non-economic damages (quality-of-life impacts). There is no cap on compensatory damages in either state.</p>
+                <h2><?php printf( /* translators: %s: case type with "Lawyers/Attorneys" stripped. */ esc_html__( 'Compensation Available in %s Cases', 'roden-law' ), esc_html( preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', get_the_title() ) ) ); ?></h2>
+                <p class="section-lead"><?php printf( /* translators: %s: lowercase accident type with leading article. */ esc_html__( 'Victims of %s injuries in Georgia and South Carolina can pursue economic damages (quantifiable financial losses) and non-economic damages (quality-of-life impacts). There is no cap on compensatory damages in either state.', 'roden-law' ), esc_html( $accident_type_lower ) ); ?></p>
                 <div class="pa-compensation__grid">
                     <div class="pa-compensation__col">
-                        <h3>Economic Damages</h3>
+                        <h3><?php esc_html_e( 'Economic Damages', 'roden-law' ); ?></h3>
                         <ul>
-                            <li>Past and future medical expenses</li>
-                            <li>Lost wages or income</li>
-                            <li>Loss of earning capacity</li>
-                            <li>Property damage and repair/replacement</li>
-                            <li>Cost of rehabilitation and physical therapy</li>
-                            <li>Assistive medical equipment</li>
-                            <li>Cost of long-term or lifelong care</li>
+                            <li><?php esc_html_e( 'Past and future medical expenses', 'roden-law' ); ?></li>
+                            <li><?php esc_html_e( 'Lost wages or income', 'roden-law' ); ?></li>
+                            <li><?php esc_html_e( 'Loss of earning capacity', 'roden-law' ); ?></li>
+                            <li><?php esc_html_e( 'Property damage and repair/replacement', 'roden-law' ); ?></li>
+                            <li><?php esc_html_e( 'Cost of rehabilitation and physical therapy', 'roden-law' ); ?></li>
+                            <li><?php esc_html_e( 'Assistive medical equipment', 'roden-law' ); ?></li>
+                            <li><?php esc_html_e( 'Cost of long-term or lifelong care', 'roden-law' ); ?></li>
                         </ul>
                     </div>
                     <div class="pa-compensation__col">
-                        <h3>Non-Economic Damages</h3>
+                        <h3><?php esc_html_e( 'Non-Economic Damages', 'roden-law' ); ?></h3>
                         <ul>
-                            <li>Pain and suffering</li>
-                            <li>Mental and emotional distress</li>
-                            <li>Loss of companionship (spouse/family)</li>
-                            <li>Disability and disfigurement</li>
-                            <li>Loss of enjoyment of life</li>
-                            <li>Humiliation or loss of reputation</li>
+                            <li><?php esc_html_e( 'Pain and suffering', 'roden-law' ); ?></li>
+                            <li><?php esc_html_e( 'Mental and emotional distress', 'roden-law' ); ?></li>
+                            <li><?php esc_html_e( 'Loss of companionship (spouse/family)', 'roden-law' ); ?></li>
+                            <li><?php esc_html_e( 'Disability and disfigurement', 'roden-law' ); ?></li>
+                            <li><?php esc_html_e( 'Loss of enjoyment of life', 'roden-law' ); ?></li>
+                            <li><?php esc_html_e( 'Humiliation or loss of reputation', 'roden-law' ); ?></li>
                         </ul>
-                        <p class="pa-compensation__note"><em>Non-economic damages can only be pursued through a personal injury lawsuit, not a standard insurance claim.</em></p>
+                        <p class="pa-compensation__note"><em><?php esc_html_e( 'Non-economic damages can only be pursued through a personal injury lawsuit, not a standard insurance claim.', 'roden-law' ); ?></em></p>
                     </div>
                 </div>
             </div>
@@ -169,25 +169,25 @@
                  ═══════════════════════════════════════════════════════════ -->
             <?php if ( $sol_ga || $sol_sc ) : ?>
                 <div class="content-section" data-ai-extractable="true">
-                    <h2>Statute of Limitations for <?php echo esc_html( preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', get_the_title() ) ); ?> Cases</h2>
-                    <p class="section-lead">The statute of limitations is the legal deadline for filing a personal injury lawsuit. <?php if ( in_array($jurisdiction, ['both','ga']) ) : ?>In Georgia, you have <strong>2 years</strong> from the date of injury (O.C.G.A. &sect; 9-3-33). <?php endif; ?><?php if ( in_array($jurisdiction, ['both','sc']) ) : ?>In South Carolina, you have <strong>3 years</strong> (S.C. Code &sect; 15-3-530). <?php endif; ?>Missing this deadline permanently bars your claim.</p>
+                    <h2><?php printf( /* translators: %s: case type with "Lawyers/Attorneys" stripped. */ esc_html__( 'Statute of Limitations for %s Cases', 'roden-law' ), esc_html( preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', get_the_title() ) ) ); ?></h2>
+                    <p class="section-lead"><?php esc_html_e( 'The statute of limitations is the legal deadline for filing a personal injury lawsuit.', 'roden-law' ); ?> <?php if ( in_array($jurisdiction, ['both','ga']) ) : ?><?php printf( /* translators: %s: "2 years" wrapped in <strong>. */ esc_html__( 'In Georgia, you have %s from the date of injury (O.C.G.A. § 9-3-33).', 'roden-law' ), '<strong>' . esc_html__( '2 years', 'roden-law' ) . '</strong>' ); ?> <?php endif; ?><?php if ( in_array($jurisdiction, ['both','sc']) ) : ?><?php printf( /* translators: %s: "3 years" wrapped in <strong>. */ esc_html__( 'In South Carolina, you have %s (S.C. Code § 15-3-530).', 'roden-law' ), '<strong>' . esc_html__( '3 years', 'roden-law' ) . '</strong>' ); ?> <?php endif; ?><?php esc_html_e( 'Missing this deadline permanently bars your claim.', 'roden-law' ); ?></p>
                     <div class="sol-grid">
                         <?php if ( $sol_ga && in_array($jurisdiction, ['both','ga']) ) : ?>
                             <div class="sol-card sol-ga">
-                                <span class="sol-state">&#127825; Georgia Filing Deadline</span>
-                                <span class="sol-years">2 Years</span>
+                                <span class="sol-state">&#127825; <?php esc_html_e( 'Georgia Filing Deadline', 'roden-law' ); ?></span>
+                                <span class="sol-years"><?php esc_html_e( '2 Years', 'roden-law' ); ?></span>
                                 <span class="sol-cite"><?php echo esc_html( $sol_ga ); ?></span>
                             </div>
                         <?php endif; ?>
                         <?php if ( $sol_sc && in_array($jurisdiction, ['both','sc']) ) : ?>
                             <div class="sol-card sol-sc">
-                                <span class="sol-state">&#127769; South Carolina Filing Deadline</span>
-                                <span class="sol-years">3 Years</span>
+                                <span class="sol-state">&#127769; <?php esc_html_e( 'South Carolina Filing Deadline', 'roden-law' ); ?></span>
+                                <span class="sol-years"><?php esc_html_e( '3 Years', 'roden-law' ); ?></span>
                                 <span class="sol-cite"><?php echo esc_html( $sol_sc ); ?></span>
                             </div>
                         <?php endif; ?>
                     </div>
-                    <p>If you fail to file within the statute of limitations, your claim will be dismissed and you will permanently lose the right to pursue compensation.</p>
+                    <p><?php esc_html_e( 'If you fail to file within the statute of limitations, your claim will be dismissed and you will permanently lose the right to pursue compensation.', 'roden-law' ); ?></p>
                 </div>
             <?php endif; ?>
 
@@ -195,22 +195,22 @@
                  COMPARATIVE FAULT (AI-extractable)
                  ═══════════════════════════════════════════════════════════ -->
             <div class="content-section pa-fault" data-ai-extractable="true">
-                <h2>What If I'm Partially At Fault?</h2>
+                <h2><?php esc_html_e( 'What If I\'m Partially At Fault?', 'roden-law' ); ?></h2>
                 <div class="pa-fault__grid">
                     <?php if ( in_array($jurisdiction, ['both','ga']) ) : ?>
                     <div class="pa-fault__box pa-fault__box--ga">
-                        <h3>&#127825; Georgia — Modified Comparative Fault</h3>
-                        <p>You can recover if <strong>less than 50% at fault</strong> (O.C.G.A. &sect; 51-12-33). Your award is reduced by your fault percentage.</p>
+                        <h3>&#127825; <?php esc_html_e( 'Georgia — Modified Comparative Fault', 'roden-law' ); ?></h3>
+                        <p><?php printf( /* translators: %s: the phrase "less than 50% at fault" wrapped in <strong>. */ esc_html__( 'You can recover if %s (O.C.G.A. § 51-12-33). Your award is reduced by your fault percentage.', 'roden-law' ), '<strong>' . esc_html__( 'less than 50% at fault', 'roden-law' ) . '</strong>' ); ?></p>
                     </div>
                     <?php endif; ?>
                     <?php if ( in_array($jurisdiction, ['both','sc']) ) : ?>
                     <div class="pa-fault__box pa-fault__box--sc">
-                        <h3>&#127769; South Carolina — Modified Comparative Fault</h3>
-                        <p>You can recover if <strong>less than 51% at fault</strong>. Your award is reduced by your fault percentage.</p>
+                        <h3>&#127769; <?php esc_html_e( 'South Carolina — Modified Comparative Fault', 'roden-law' ); ?></h3>
+                        <p><?php printf( /* translators: %s: the phrase "less than 51% at fault" wrapped in <strong>. */ esc_html__( 'You can recover if %s. Your award is reduced by your fault percentage.', 'roden-law' ), '<strong>' . esc_html__( 'less than 51% at fault', 'roden-law' ) . '</strong>' ); ?></p>
                     </div>
                     <?php endif; ?>
                 </div>
-                <p>For example, if you filed a $100,000 lawsuit and a court finds you are 30% at fault, your award would be reduced to $70,000. Our attorneys work to minimize any fault assigned to you.</p>
+                <p><?php esc_html_e( 'For example, if you filed a $100,000 lawsuit and a court finds you are 30% at fault, your award would be reduced to $70,000. Our attorneys work to minimize any fault assigned to you.', 'roden-law' ); ?></p>
             </div>
 
             <?php roden_inline_cta_banner(); ?>
@@ -222,7 +222,7 @@
 
             <!-- Case Results -->
             <div class="content-section">
-                <h2>Recent Case Results</h2>
+                <h2><?php esc_html_e( 'Recent Case Results', 'roden-law' ); ?></h2>
                 <?php roden_case_results_grid( [ 'count' => 3, 'columns' => 3 ] ); ?>
             </div>
 
@@ -231,7 +231,7 @@
             $see_also = get_post_meta( $post_id, '_roden_see_also', true );
             if ( ! empty( $see_also ) && is_array( $see_also ) ) : ?>
                 <div class="content-section see-also-section">
-                    <h2>Related Pages</h2>
+                    <h2><?php esc_html_e( 'Related Pages', 'roden-law' ); ?></h2>
                     <div class="pa-resources__grid">
                         <?php foreach ( $see_also as $link ) : ?>
                             <a href="<?php echo esc_url( home_url( $link['url'] ) ); ?>" class="resource-link">
@@ -254,7 +254,7 @@
                 roden_related_resources( array(
                     'count'   => 4,
                     'cat_slug' => $subtype_cat_slug,
-                    'heading'  => 'Related Guides & Legal Resources',
+                    'heading'  => __( 'Related Guides & Legal Resources', 'roden-law' ),
                     'display'  => 'section',
                 ) );
             }
@@ -274,11 +274,11 @@
                     $atty_bar   = get_post_meta( $atty->ID, '_roden_bar_admissions', true );
             ?>
             <div class="content-section author-attribution">
-                <h2>About the Author</h2>
+                <h2><?php esc_html_e( 'About the Author', 'roden-law' ); ?></h2>
                 <div class="author-card">
                     <div class="author-photo">
                         <?php if ( has_post_thumbnail( $atty ) ) : ?>
-                            <?php echo get_the_post_thumbnail( $atty, 'thumbnail', array( 'alt' => esc_attr( $atty->post_title . ', ' . $atty_title . ' at Roden Law' ) ) ); ?>
+                            <?php echo get_the_post_thumbnail( $atty, 'thumbnail', array( 'alt' => esc_attr( sprintf( /* translators: 1: attorney name; 2: attorney title. */ __( '%1$s, %2$s at Roden Law', 'roden-law' ), $atty->post_title, $atty_title ) ) ) ); ?>
                         <?php else : ?>
                             <div class="author-photo-placeholder">&#128100;</div>
                         <?php endif; ?>
@@ -305,11 +305,11 @@
 
             <!-- Bottom CTA -->
             <div class="bottom-cta-box">
-                <h2>Contact Our <?php the_title(); ?> Today</h2>
-                <p>If you were injured and believe another party is at fault, contact us for a free, no-obligation review. We dedicate our skills and resources to recovering the maximum compensation you deserve — at no upfront cost.</p>
+                <h2><?php printf( /* translators: %s: practice area title. */ esc_html__( 'Contact Our %s Today', 'roden-law' ), esc_html( get_the_title() ) ); ?></h2>
+                <p><?php esc_html_e( 'If you were injured and believe another party is at fault, contact us for a free, no-obligation review. We dedicate our skills and resources to recovering the maximum compensation you deserve — at no upfront cost.', 'roden-law' ); ?></p>
                 <div class="cta-actions">
-                    <a href="tel:<?php echo esc_attr($firm['phone_e164']); ?>" class="btn btn-primary">&#128222; Call <?php echo esc_html($firm['phone']); ?></a>
-                    <a href="#contact" class="btn btn-outline-light">Free Case Review</a>
+                    <a href="tel:<?php echo esc_attr($firm['phone_e164']); ?>" class="btn btn-primary">&#128222; <?php printf( /* translators: %s: phone number. */ esc_html__( 'Call %s', 'roden-law' ), esc_html( $firm['phone'] ) ); ?></a>
+                    <a href="#contact" class="btn btn-outline-light"><?php esc_html_e( 'Free Case Review', 'roden-law' ); ?></a>
                 </div>
             </div>
         </article>
@@ -321,7 +321,7 @@
                 <!-- Back to Pillar -->
                 <?php if ( $parent_post ) : ?>
                 <div class="sidebar-widget">
-                    <h3 class="widget-title">&#128203; Main Practice Area</h3>
+                    <h3 class="widget-title">&#128203; <?php esc_html_e( 'Main Practice Area', 'roden-law' ); ?></h3>
                     <a href="<?php echo esc_url( $parent_url ); ?>" class="sidebar-back-link">&larr; <?php echo esc_html( $parent_title ); ?></a>
                 </div>
                 <?php endif; ?>
@@ -329,7 +329,7 @@
                 <!-- Related Sub-Types -->
                 <?php if ( $siblings ) : ?>
                 <div class="sidebar-widget">
-                    <h3 class="widget-title">Related Case Types</h3>
+                    <h3 class="widget-title"><?php esc_html_e( 'Related Case Types', 'roden-law' ); ?></h3>
                     <ul class="sidebar-links">
                         <?php foreach ( $siblings as $sib ) : ?>
                             <li><a href="<?php echo esc_url( get_permalink( $sib ) ); ?>">&rarr; <?php echo esc_html( $sib->post_title ); ?></a></li>
@@ -341,7 +341,7 @@
                 <!-- Location Pages -->
                 <?php if ( ! empty( $sibling_intersections ) ) : ?>
                 <div class="sidebar-widget">
-                    <h3 class="widget-title">&#128205; See by Location</h3>
+                    <h3 class="widget-title">&#128205; <?php esc_html_e( 'See by Location', 'roden-law' ); ?></h3>
                     <ul class="sidebar-links">
                         <?php foreach ( $sibling_intersections as $int_page ) :
                             $int_office = get_post_meta( $int_page->ID, '_roden_pa_office_key', true );
@@ -355,30 +355,30 @@
 
                 <!-- Filing Deadlines -->
                 <div class="sidebar-widget sidebar-deadlines">
-                    <h3 class="widget-title">&#9201; Filing Deadlines</h3>
+                    <h3 class="widget-title">&#9201; <?php esc_html_e( 'Filing Deadlines', 'roden-law' ); ?></h3>
                     <div class="deadline-badges">
                         <div class="deadline-badge deadline-ga">
-                            <span class="deadline-years">2 yr</span>
-                            <span class="deadline-state">Georgia</span>
+                            <span class="deadline-years"><?php esc_html_e( '2 yr', 'roden-law' ); ?></span>
+                            <span class="deadline-state"><?php esc_html_e( 'Georgia', 'roden-law' ); ?></span>
                         </div>
                         <div class="deadline-badge deadline-sc">
-                            <span class="deadline-years">3 yr</span>
-                            <span class="deadline-state">South Carolina</span>
+                            <span class="deadline-years"><?php esc_html_e( '3 yr', 'roden-law' ); ?></span>
+                            <span class="deadline-state"><?php esc_html_e( 'South Carolina', 'roden-law' ); ?></span>
                         </div>
                     </div>
-                    <p class="deadline-warning">Missing the deadline forfeits your right to recover.</p>
+                    <p class="deadline-warning"><?php esc_html_e( 'Missing the deadline forfeits your right to recover.', 'roden-law' ); ?></p>
                 </div>
 
                 <!-- Why Roden Law -->
                 <div class="sidebar-widget sidebar-why-us">
-                    <h3 class="widget-title">Why Roden Law?</h3>
+                    <h3 class="widget-title"><?php esc_html_e( 'Why Roden Law?', 'roden-law' ); ?></h3>
                     <ul class="why-us-list">
-                        <li>&#10003; <?php echo esc_html($firm['recovered']); ?> Recovered for Clients</li>
-                        <li>&#10003; <?php echo esc_html($firm['rating']); ?>&#9733; Average Client Rating</li>
-                        <li>&#10003; <?php echo esc_html($firm['cases_handled']); ?> Cases Successfully Handled</li>
-                        <li>&#10003; No Fee Unless We Win</li>
-                        <li>&#10003; Free 24/7 Consultations</li>
-                        <li>&#10003; Licensed in GA &amp; SC</li>
+                        <li>&#10003; <?php printf( /* translators: %s: amount recovered, e.g. "$300M+". */ esc_html__( '%s Recovered for Clients', 'roden-law' ), esc_html( $firm['recovered'] ) ); ?></li>
+                        <li>&#10003; <?php printf( /* translators: %s: star rating followed by a star glyph, e.g. "4.9★". */ esc_html__( '%s Average Client Rating', 'roden-law' ), esc_html( $firm['rating'] ) . '&#9733;' ); ?></li>
+                        <li>&#10003; <?php printf( /* translators: %s: number of cases handled, e.g. "5,000+". */ esc_html__( '%s Cases Successfully Handled', 'roden-law' ), esc_html( $firm['cases_handled'] ) ); ?></li>
+                        <li>&#10003; <?php esc_html_e( 'No Fee Unless We Win', 'roden-law' ); ?></li>
+                        <li>&#10003; <?php esc_html_e( 'Free 24/7 Consultations', 'roden-law' ); ?></li>
+                        <li>&#10003; <?php esc_html_e( 'Licensed in GA & SC', 'roden-law' ); ?></li>
                     </ul>
                 </div>
             </div>

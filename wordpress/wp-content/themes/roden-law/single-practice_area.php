@@ -39,9 +39,9 @@ $common_injuries   = get_post_meta( $post_id, '_roden_common_injuries', true );
 if ( ! is_array( $common_causes ) )  $common_causes  = array();
 if ( ! is_array( $common_injuries ) ) $common_injuries = array();
 
-$jurisdiction_label = 'Georgia & South Carolina';
-if ( $jurisdiction === 'ga' ) $jurisdiction_label = 'Georgia';
-elseif ( $jurisdiction === 'sc' ) $jurisdiction_label = 'South Carolina';
+$jurisdiction_label = __( 'Georgia & South Carolina', 'roden-law' );
+if ( $jurisdiction === 'ga' ) $jurisdiction_label = __( 'Georgia', 'roden-law' );
+elseif ( $jurisdiction === 'sc' ) $jurisdiction_label = __( 'South Carolina', 'roden-law' );
 
 // Parent pillar data (for intersection + subtype)
 $parent_post = $post->post_parent ? get_post( $post->post_parent ) : null;

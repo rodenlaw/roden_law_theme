@@ -22,7 +22,7 @@ $post_id    = get_the_ID();
 $office_key = get_post_meta( $post_id, '_roden_office_key', true );
 
 if ( ! $office_key || ! isset( $firm['offices'][ $office_key ] ) ) {
-    echo '<div class="container"><p>Office not configured. Please set the Office Key in the admin.</p></div>';
+    echo '<div class="container"><p>' . esc_html__( 'Office not configured. Please set the Office Key in the admin.', 'roden-law' ) . '</p></div>';
     return;
 }
 
@@ -63,11 +63,19 @@ $faqs          = get_post_meta( $post_id, '_roden_faqs', true );
                     <?php echo esc_html( $office['state_full'] ); ?>
                 </span>
                 <h1 class="hero-title">
-                    Personal Injury Lawyer<br>
-                    <span class="text-accent">in <?php echo esc_html( $office['market_name'] . ', ' . $office['state'] ); ?></span>
+                    <?php esc_html_e( 'Personal Injury Lawyer', 'roden-law' ); ?><br>
+                    <span class="text-accent"><?php printf( /* translators: %s: city + state, e.g. "Savannah, GA". */ esc_html__( 'in %s', 'roden-law' ), esc_html( $office['market_name'] . ', ' . $office['state'] ) ); ?></span>
                 </h1>
                 <p class="hero-subtitle">
-                    Roden Law's <?php echo esc_html( $office['market_name'] ); ?> personal injury attorneys have recovered <strong><?php echo esc_html( $stats['recovered'] ); ?></strong> for injury victims across <?php echo esc_html( $service_area ); ?> No fees unless we win.
+                    <?php
+                    printf(
+                        /* translators: 1: city/market name; 2: amount recovered wrapped in <strong>; 3: service area sentence (ends with a period). */
+                        esc_html__( 'Roden Law\'s %1$s personal injury attorneys have recovered %2$s for injury victims across %3$s No fees unless we win.', 'roden-law' ),
+                        esc_html( $office['market_name'] ),
+                        '<strong>' . esc_html( $stats['recovered'] ) . '</strong>',
+                        esc_html( $service_area )
+                    );
+                    ?>
                 </p>
 
                 <?php roden_last_updated_date( $post_id ); ?>
@@ -76,22 +84,22 @@ $faqs          = get_post_meta( $post_id, '_roden_faqs', true );
                 <div class="hero-stats">
                     <div class="hero-stat">
                         <span class="stat-number"><?php echo esc_html( $stats['recovered'] ); ?></span>
-                        <span class="stat-label">Recovered for Clients</span>
+                        <span class="stat-label"><?php esc_html_e( 'Recovered for Clients', 'roden-law' ); ?></span>
                     </div>
                     <div class="hero-stat">
                         <span class="stat-number"><?php echo esc_html( $stats['rating'] ); ?>&#9733;</span>
-                        <span class="stat-label">Client Rating</span>
+                        <span class="stat-label"><?php esc_html_e( 'Client Rating', 'roden-law' ); ?></span>
                     </div>
                     <div class="hero-stat">
                         <span class="stat-number"><?php echo esc_html( $stats['cases'] ); ?></span>
-                        <span class="stat-label">Cases Handled</span>
+                        <span class="stat-label"><?php esc_html_e( 'Cases Handled', 'roden-law' ); ?></span>
                     </div>
                 </div>
 
                 <!-- Hero CTAs -->
                 <div class="hero-ctas">
                     <a href="tel:<?php echo esc_attr( $office['phone_raw'] ); ?>" class="btn btn-primary btn-lg">
-                        Call <?php echo esc_html( $office['phone'] ); ?>
+                        <?php printf( /* translators: %s: phone number. */ esc_html__( 'Call %s', 'roden-law' ), esc_html( $office['phone'] ) ); ?>
                     </a>
                 </div>
             </div>
@@ -113,19 +121,19 @@ $faqs          = get_post_meta( $post_id, '_roden_faqs', true );
         <div class="badge-bar-inner">
             <div class="badge-item">
                 <span class="badge-icon" aria-hidden="true"></span>
-                <span class="badge-label">State Bar of Georgia</span>
+                <span class="badge-label"><?php esc_html_e( 'State Bar of Georgia', 'roden-law' ); ?></span>
             </div>
             <div class="badge-item">
                 <span class="badge-icon" aria-hidden="true"></span>
-                <span class="badge-label">American Association for Justice</span>
+                <span class="badge-label"><?php esc_html_e( 'American Association for Justice', 'roden-law' ); ?></span>
             </div>
             <div class="badge-item">
                 <span class="badge-icon" aria-hidden="true"></span>
-                <span class="badge-label">Georgia Trial Lawyers</span>
+                <span class="badge-label"><?php esc_html_e( 'Georgia Trial Lawyers', 'roden-law' ); ?></span>
             </div>
             <div class="badge-item">
                 <span class="badge-icon" aria-hidden="true"></span>
-                <span class="badge-label">American Bar Association</span>
+                <span class="badge-label"><?php esc_html_e( 'American Bar Association', 'roden-law' ); ?></span>
             </div>
         </div>
     </div>
@@ -151,7 +159,7 @@ $faqs          = get_post_meta( $post_id, '_roden_faqs', true );
             </div>
             <div class="map-nap-actions">
                 <a href="tel:<?php echo esc_attr( $office['phone_raw'] ); ?>" class="btn btn-primary"><?php echo esc_html( $office['phone'] ); ?></a>
-                <a href="<?php echo esc_url( $office['map_url'] ); ?>" class="btn btn-outline-light" target="_blank" rel="noopener noreferrer nofollow">Get Directions</a>
+                <a href="<?php echo esc_url( $office['map_url'] ); ?>" class="btn btn-outline-light" target="_blank" rel="noopener noreferrer nofollow"><?php esc_html_e( 'Get Directions', 'roden-law' ); ?></a>
             </div>
         </div>
     </div>
@@ -163,8 +171,8 @@ $faqs          = get_post_meta( $post_id, '_roden_faqs', true );
 <section class="section section-alt">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Cases We Handle in <?php echo esc_html( $office['market_name'] ); ?></h2>
-            <p class="section-subtitle">Our <?php echo esc_html( $office['market_name'] ); ?> attorneys handle all types of personal injury cases in <?php echo esc_html( $office['state_full'] ); ?>.</p>
+            <h2 class="section-title"><?php printf( /* translators: %s: city/market name. */ esc_html__( 'Cases We Handle in %s', 'roden-law' ), esc_html( $office['market_name'] ) ); ?></h2>
+            <p class="section-subtitle"><?php printf( /* translators: 1: city/market name; 2: state name. */ esc_html__( 'Our %1$s attorneys handle all types of personal injury cases in %2$s.', 'roden-law' ), esc_html( $office['market_name'] ), esc_html( $office['state_full'] ) ); ?></p>
         </div>
         <?php roden_intersection_grid( $office_key, 3 ); ?>
     </div>
@@ -174,7 +182,7 @@ $faqs          = get_post_meta( $post_id, '_roden_faqs', true );
      4b. NEIGHBORHOODS SERVED (auto-renders if parent has neighborhood children)
      ================================================================ -->
 <?php
-$neighborhood_children = get_posts( array(
+$neighborhood_children_args = array(
     'post_type'      => 'location',
     'post_parent'    => $post_id,
     'posts_per_page' => -1,
@@ -183,17 +191,20 @@ $neighborhood_children = get_posts( array(
     'orderby'        => 'title',
     'order'          => 'ASC',
     'post_status'    => 'publish',
-) );
+);
+if ( function_exists( 'roden_es_exclusion_meta_query' ) ) {
+    $neighborhood_children_args['meta_query'] = roden_es_exclusion_meta_query();
+}
+$neighborhood_children = get_posts( $neighborhood_children_args );
 
 if ( ! empty( $neighborhood_children ) ) :
 ?>
 <section class="section roden-neighborhoods-served">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Areas Served in the <?php echo esc_html( $office['market_name'] ); ?> Metro Region</h2>
+            <h2 class="section-title"><?php printf( /* translators: %s: city/market name. */ esc_html__( 'Areas Served in the %s Metro Region', 'roden-law' ), esc_html( $office['market_name'] ) ); ?></h2>
             <p class="section-subtitle">
-                Roden Law's <?php echo esc_html( $office['market_name'] ); ?> office serves injury victims throughout the greater <?php echo esc_html( $office['market_name'] ); ?> metro region.
-                Click any area below to learn about local accident hotspots, nearby hospitals, and how we can help.
+                <?php printf( /* translators: %s: city/market name (used twice). */ esc_html__( 'Roden Law\'s %1$s office serves injury victims throughout the greater %1$s metro region. Click any area below to learn about local accident hotspots, nearby hospitals, and how we can help.', 'roden-law' ), esc_html( $office['market_name'] ) ); ?>
             </p>
         </div>
         <div class="roden-neighborhood-grid">
@@ -203,15 +214,21 @@ if ( ! empty( $neighborhood_children ) ) :
                 <a href="<?php echo esc_url( get_permalink( $child->ID ) ); ?>" class="neighborhood-card">
                     <span class="neighborhood-name"><?php echo esc_html( $child->post_title ); ?></span>
                     <?php if ( $child_pop ) : ?>
-                        <span class="neighborhood-pop">Pop. <?php echo esc_html( $child_pop ); ?></span>
+                        <span class="neighborhood-pop"><?php printf( /* translators: %s: neighborhood population figure. */ esc_html__( 'Pop. %s', 'roden-law' ), esc_html( $child_pop ) ); ?></span>
                     <?php endif; ?>
                     <span class="neighborhood-arrow">&rarr;</span>
                 </a>
             <?php endforeach; ?>
         </div>
         <p class="neighborhoods-note">
-            Don't see your area? We serve all of the greater <?php echo esc_html( $office['market_name'] ); ?> metro region.
-            Call <a href="tel:<?php echo esc_attr( $office['phone_raw'] ); ?>"><?php echo esc_html( $office['phone'] ); ?></a> for a free consultation.
+            <?php
+            printf(
+                /* translators: 1: city/market name; 2: phone number link. */
+                esc_html__( 'Don\'t see your area? We serve all of the greater %1$s metro region. Call %2$s for a free consultation.', 'roden-law' ),
+                esc_html( $office['market_name'] ),
+                '<a href="tel:' . esc_attr( $office['phone_raw'] ) . '">' . esc_html( $office['phone'] ) . '</a>'
+            );
+            ?>
         </p>
     </div>
 </section>
@@ -221,13 +238,17 @@ if ( ! empty( $neighborhood_children ) ) :
      4c. LOCAL LEGAL RESOURCES (auto-renders resources relevant to this office)
      ================================================================ -->
 <?php
-$loc_resource_query = new WP_Query( array(
+$loc_resource_args = array(
     'post_type'      => 'resource',
     'posts_per_page' => 6,
     'post_status'    => 'publish',
     'orderby'        => 'date',
     'order'          => 'DESC',
-) );
+);
+if ( function_exists( 'roden_es_exclusion_meta_query' ) ) {
+    $loc_resource_args['meta_query'] = roden_es_exclusion_meta_query();
+}
+$loc_resource_query = new WP_Query( $loc_resource_args );
 if ( $loc_resource_query->have_posts() ) :
     // Filter and boost resources relevant to this office's geographic area.
     $loc_boosted = array();
@@ -258,8 +279,8 @@ if ( $loc_resource_query->have_posts() ) :
 <section class="section">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Legal Resources for <?php echo esc_html( $office['market_name'] ); ?></h2>
-            <p class="section-subtitle">Guides and resources about accident hotspots, local roads, and injury claims in the <?php echo esc_html( $office['market_name'] ); ?> area.</p>
+            <h2 class="section-title"><?php printf( /* translators: %s: city/market name. */ esc_html__( 'Legal Resources for %s', 'roden-law' ), esc_html( $office['market_name'] ) ); ?></h2>
+            <p class="section-subtitle"><?php printf( /* translators: %s: city/market name. */ esc_html__( 'Guides and resources about accident hotspots, local roads, and injury claims in the %s area.', 'roden-law' ), esc_html( $office['market_name'] ) ); ?></p>
         </div>
         <div class="pa-resources__grid">
             <?php foreach ( $loc_items as $lr ) : ?>
@@ -282,7 +303,7 @@ endif;
 <section class="section">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">About Our <?php echo esc_html( $office['market_name'] ); ?> Office</h2>
+            <h2 class="section-title"><?php printf( /* translators: %s: city/market name. */ esc_html__( 'About Our %s Office', 'roden-law' ), esc_html( $office['market_name'] ) ); ?></h2>
         </div>
         <div class="entry-content">
             <?php
@@ -290,8 +311,17 @@ endif;
             if ( trim( $content ) ) {
                 the_content();
             } else {
-                echo '<p>Roden Law\'s ' . esc_html( $office['market_name'] ) . ' office serves injury victims throughout the region. Our ' . esc_html( $office['market_name'] ) . ' personal injury attorneys handle all types of injury claims under ' . esc_html( $office['state_full'] ) . ' law.</p>';
-                echo '<p>Serving ' . esc_html( $service_area ) . '</p>';
+                echo '<p>' . sprintf(
+                    /* translators: 1: city/market name (used twice); 2: state name. */
+                    esc_html__( 'Roden Law\'s %1$s office serves injury victims throughout the region. Our %1$s personal injury attorneys handle all types of injury claims under %2$s law.', 'roden-law' ),
+                    esc_html( $office['market_name'] ),
+                    esc_html( $office['state_full'] )
+                ) . '</p>';
+                echo '<p>' . sprintf(
+                    /* translators: %s: service area sentence (ends with a period). */
+                    esc_html__( 'Serving %s', 'roden-law' ),
+                    esc_html( $service_area )
+                ) . '</p>';
             }
             ?>
             <?php if ( $local_content ) : ?>
@@ -321,7 +351,7 @@ if ( $loc_expert_quote && ! empty( $location_attorneys ) ) {
     roden_expert_quote_block( $loc_expert_quote, $location_attorneys[0]->ID );
 } elseif ( $loc_expert_quote ) {
     // Show quote without specific attorney attribution
-    echo '<blockquote class="expert-quote-block" data-ai-extractable="true"><p>&ldquo;' . wp_kses_post( $loc_expert_quote ) . '&rdquo;</p><footer><cite>&mdash; Roden Law, ' . esc_html( $office['market_name'] ) . ' Office</cite></footer></blockquote>';
+    echo '<blockquote class="expert-quote-block" data-ai-extractable="true"><p>&ldquo;' . wp_kses_post( $loc_expert_quote ) . '&rdquo;</p><footer><cite>&mdash; ' . sprintf( /* translators: %s: city/market name. */ esc_html__( 'Roden Law, %s Office', 'roden-law' ), esc_html( $office['market_name'] ) ) . '</cite></footer></blockquote>';
 }
 ?>
 
@@ -331,24 +361,24 @@ if ( $loc_expert_quote && ! empty( $location_attorneys ) ) {
 <section class="section section-alt">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Why Choose Roden Law in <?php echo esc_html( $office['market_name'] ); ?>?</h2>
+            <h2 class="section-title"><?php printf( /* translators: %s: city/market name. */ esc_html__( 'Why Choose Roden Law in %s?', 'roden-law' ), esc_html( $office['market_name'] ) ); ?></h2>
         </div>
         <div class="why-choose-grid">
             <div class="card why-choose-card">
-                <h3>No Fee Unless We Win</h3>
-                <p>You pay nothing upfront. Our contingency fee model means we only get paid when you recover compensation.</p>
+                <h3><?php esc_html_e( 'No Fee Unless We Win', 'roden-law' ); ?></h3>
+                <p><?php esc_html_e( 'You pay nothing upfront. Our contingency fee model means we only get paid when you recover compensation.', 'roden-law' ); ?></p>
             </div>
             <div class="card why-choose-card">
-                <h3><?php echo esc_html( $stats['recovered'] ); ?> Recovered</h3>
-                <p>Our track record speaks for itself — over <?php echo esc_html( $stats['recovered'] ); ?> recovered for personal injury victims.</p>
+                <h3><?php printf( /* translators: %s: amount recovered, e.g. "$300M+". */ esc_html__( '%s Recovered', 'roden-law' ), esc_html( $stats['recovered'] ) ); ?></h3>
+                <p><?php printf( /* translators: %s: amount recovered, e.g. "$300M+". */ esc_html__( 'Our track record speaks for itself — over %s recovered for personal injury victims.', 'roden-law' ), esc_html( $stats['recovered'] ) ); ?></p>
             </div>
             <div class="card why-choose-card">
-                <h3>Local <?php echo esc_html( $office['state_full'] ); ?> Attorneys</h3>
-                <p>Our <?php echo esc_html( $office['market_name'] ); ?> team practices in <?php echo esc_html( $office['state_full'] ); ?> courts, including the <?php echo esc_html( $office['court'] ); ?>.</p>
+                <h3><?php printf( /* translators: %s: state name. */ esc_html__( 'Local %s Attorneys', 'roden-law' ), esc_html( $office['state_full'] ) ); ?></h3>
+                <p><?php printf( /* translators: 1: city/market name; 2: state name; 3: local court name. */ esc_html__( 'Our %1$s team practices in %2$s courts, including the %3$s.', 'roden-law' ), esc_html( $office['market_name'] ), esc_html( $office['state_full'] ), esc_html( $office['court'] ) ); ?></p>
             </div>
             <div class="card why-choose-card">
-                <h3><?php echo esc_html( $stats['rating'] ); ?>-Star Client Rating</h3>
-                <p>Rated <?php echo esc_html( $stats['rating'] ); ?> stars from <?php echo esc_html( $stats['reviews'] ); ?> client reviews. Our clients trust us to deliver results.</p>
+                <h3><?php printf( /* translators: %s: star rating, e.g. "4.9". */ esc_html__( '%s-Star Client Rating', 'roden-law' ), esc_html( $stats['rating'] ) ); ?></h3>
+                <p><?php printf( /* translators: 1: star rating; 2: review-count phrase, e.g. "hundreds of". */ esc_html__( 'Rated %1$s stars from %2$s client reviews. Our clients trust us to deliver results.', 'roden-law' ), esc_html( $stats['rating'] ), esc_html( $stats['reviews'] ) ); ?></p>
             </div>
         </div>
     </div>
@@ -361,20 +391,19 @@ if ( $loc_expert_quote && ! empty( $location_attorneys ) ) {
 <section class="section">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title"><?php echo esc_html( $jurisdiction['state_full'] ); ?> Personal Injury Law</h2>
+            <h2 class="section-title"><?php printf( /* translators: %s: state name. */ esc_html__( '%s Personal Injury Law', 'roden-law' ), esc_html( $jurisdiction['state_full'] ) ); ?></h2>
         </div>
         <div class="jurisdiction-cards">
             <div class="state-law-box">
                 <div class="law-details-grid">
                     <div class="law-detail">
-                        <span class="law-label">Statute of Limitations</span>
+                        <span class="law-label"><?php esc_html_e( 'Statute of Limitations', 'roden-law' ); ?></span>
                         <span class="law-value">
-                            <?php echo esc_html( $jurisdiction['statute_years'] ); ?> years
-                            (<?php echo esc_html( $jurisdiction['statute_cite'] ); ?>)
+                            <?php printf( /* translators: 1: number of years; 2: statute citation. */ esc_html__( '%1$s years (%2$s)', 'roden-law' ), esc_html( $jurisdiction['statute_years'] ), esc_html( $jurisdiction['statute_cite'] ) ); ?>
                         </span>
                     </div>
                     <div class="law-detail">
-                        <span class="law-label">Comparative Fault</span>
+                        <span class="law-label"><?php esc_html_e( 'Comparative Fault', 'roden-law' ); ?></span>
                         <span class="law-value">
                             <?php echo esc_html( $jurisdiction['comp_fault_rule'] ); ?>
                             <?php if ( $jurisdiction['comp_fault_cite'] ) : ?>
@@ -388,12 +417,12 @@ if ( $loc_expert_quote && ! empty( $location_attorneys ) ) {
                 <h3><?php echo esc_html( $office['court'] ); ?></h3>
                 <?php if ( ! empty( $office['court_address'] ) ) : ?>
                 <div class="court-detail">
-                    <span class="law-label">Address:</span>
+                    <span class="law-label"><?php esc_html_e( 'Address:', 'roden-law' ); ?></span>
                     <span class="law-value"><?php echo esc_html( $office['court_address'] ); ?></span>
                 </div>
                 <?php endif; ?>
                 <p style="margin-top:12px; font-size:0.9rem; color:var(--gray-600);">
-                    Our <?php echo esc_html( $office['market_name'] ); ?> attorneys regularly appear before the <?php echo esc_html( $office['court'] ); ?> and are familiar with local procedures and filing requirements.
+                    <?php printf( /* translators: 1: city/market name; 2: local court name. */ esc_html__( 'Our %1$s attorneys regularly appear before the %2$s and are familiar with local procedures and filing requirements.', 'roden-law' ), esc_html( $office['market_name'] ), esc_html( $office['court'] ) ); ?>
                 </p>
             </div>
         </div>
@@ -407,7 +436,7 @@ if ( $loc_expert_quote && ! empty( $location_attorneys ) ) {
 <section class="section section-alt">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Your <?php echo esc_html( $office['market_name'] ); ?> Attorneys</h2>
+            <h2 class="section-title"><?php printf( /* translators: %s: city/market name. */ esc_html__( 'Your %s Attorneys', 'roden-law' ), esc_html( $office['market_name'] ) ); ?></h2>
         </div>
         <?php roden_attorneys_grid( array( 'office_key' => $office_key, 'columns' => 3 ) ); ?>
     </div>
@@ -419,7 +448,7 @@ if ( $loc_expert_quote && ! empty( $location_attorneys ) ) {
 <section class="section bg-navy">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title text-white">Our Results Speak for Themselves</h2>
+            <h2 class="section-title text-white"><?php esc_html_e( 'Our Results Speak for Themselves', 'roden-law' ); ?></h2>
         </div>
         <?php roden_case_results_grid( array( 'count' => 4, 'columns' => 4 ) ); ?>
     </div>
@@ -431,8 +460,8 @@ if ( $loc_expert_quote && ! empty( $location_attorneys ) ) {
 <section class="section section-alt">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Communities We Serve from <?php echo esc_html( $office['market_name'] ); ?></h2>
-            <p class="section-subtitle">Our <?php echo esc_html( $office['market_name'] ); ?> personal injury lawyers proudly serve <?php echo esc_html( $service_area ); ?></p>
+            <h2 class="section-title"><?php printf( /* translators: %s: city/market name. */ esc_html__( 'Communities We Serve from %s', 'roden-law' ), esc_html( $office['market_name'] ) ); ?></h2>
+            <p class="section-subtitle"><?php printf( /* translators: 1: city/market name; 2: service area sentence (ends with a period). */ esc_html__( 'Our %1$s personal injury lawyers proudly serve %2$s', 'roden-law' ), esc_html( $office['market_name'] ), esc_html( $service_area ) ); ?></p>
         </div>
         <?php if ( ! empty( $office['nearby_communities'] ) ) : ?>
         <div class="communities-grid">
@@ -443,10 +472,10 @@ if ( $loc_expert_quote && ! empty( $location_attorneys ) ) {
         <?php endif; ?>
         <?php if ( ! empty( $office['directions'] ) ) : ?>
         <div class="directions-box">
-            <h3>How to Find Our <?php echo esc_html( $office['market_name'] ); ?> Office</h3>
+            <h3><?php printf( /* translators: %s: city/market name. */ esc_html__( 'How to Find Our %s Office', 'roden-law' ), esc_html( $office['market_name'] ) ); ?></h3>
             <p><?php echo esc_html( $office['directions'] ); ?></p>
             <a href="<?php echo esc_url( $office['map_url'] ); ?>" class="btn btn-primary" target="_blank" rel="noopener noreferrer nofollow">
-                Get Directions on Google Maps
+                <?php esc_html_e( 'Get Directions on Google Maps', 'roden-law' ); ?>
             </a>
         </div>
         <?php endif; ?>
@@ -470,8 +499,8 @@ if ( $loc_expert_quote && ! empty( $location_attorneys ) ) {
 <section class="section section-alt">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title">Our Other Offices</h2>
-            <p class="section-subtitle">Roden Law serves injury victims across Georgia and South Carolina from <?php echo count( $firm['offices'] ); ?> offices.</p>
+            <h2 class="section-title"><?php esc_html_e( 'Our Other Offices', 'roden-law' ); ?></h2>
+            <p class="section-subtitle"><?php printf( /* translators: %d: number of offices. */ esc_html__( 'Roden Law serves injury victims across Georgia and South Carolina from %d offices.', 'roden-law' ), count( $firm['offices'] ) ); ?></p>
         </div>
         <div class="locations-grid">
             <?php foreach ( $firm['offices'] as $k => $o ) :
@@ -492,7 +521,7 @@ if ( $loc_expert_quote && ! empty( $location_attorneys ) ) {
                 <a href="tel:<?php echo esc_attr( $o['phone_raw'] ); ?>" class="location-phone">
                     <?php echo esc_html( $o['phone'] ); ?>
                 </a>
-                <a href="<?php echo esc_url( $office_url ); ?>" class="location-link">View Office &rarr;</a>
+                <a href="<?php echo esc_url( $office_url ); ?>" class="location-link"><?php esc_html_e( 'View Office', 'roden-law' ); ?> &rarr;</a>
             </div>
             <?php endforeach; ?>
         </div>
@@ -504,15 +533,15 @@ if ( $loc_expert_quote && ! empty( $location_attorneys ) ) {
      ================================================================ -->
 <section class="section bg-navy cta-bottom">
     <div class="container text-center">
-        <h2 class="text-white">Injured in <?php echo esc_html( $office['market_name'] ); ?>? Get Your Free Case Review Today.</h2>
+        <h2 class="text-white"><?php printf( /* translators: %s: city/market name. */ esc_html__( 'Injured in %s? Get Your Free Case Review Today.', 'roden-law' ), esc_html( $office['market_name'] ) ); ?></h2>
         <p class="text-white" style="opacity:0.85; max-width:600px; margin:0 auto var(--space-xl, 32px);">
-            No fees unless we win. Available 24/7 across <?php echo esc_html( $office['state_full'] ); ?>.
+            <?php printf( /* translators: %s: state name. */ esc_html__( 'No fees unless we win. Available 24/7 across %s.', 'roden-law' ), esc_html( $office['state_full'] ) ); ?>
         </p>
         <div class="hero-ctas" style="justify-content:center;">
             <a href="tel:<?php echo esc_attr( $office['phone_raw'] ); ?>" class="btn btn-primary btn-lg">
-                Call <?php echo esc_html( $office['phone'] ); ?>
+                <?php printf( /* translators: %s: phone number. */ esc_html__( 'Call %s', 'roden-law' ), esc_html( $office['phone'] ) ); ?>
             </a>
-            <a href="#free-case-review" class="btn btn-outline-light btn-lg">Free Case Review</a>
+            <a href="#free-case-review" class="btn btn-outline-light btn-lg"><?php esc_html_e( 'Free Case Review', 'roden-law' ); ?></a>
         </div>
     </div>
 </section>
