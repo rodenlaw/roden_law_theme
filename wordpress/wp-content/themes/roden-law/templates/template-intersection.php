@@ -203,7 +203,12 @@ $related_subtypes = get_posts( array(
                  ═══════════════════════════════════════════════════════════ -->
             <?php
             $int_takeaways = get_post_meta( $post_id, '_roden_key_takeaways', true );
-            if ( ! $int_takeaways && $jurisdiction ) {
+            // Spanish intersections must seed _roden_key_takeaways — the
+            // auto-generator below derives its label/fault phrasing from
+            // English data (parent-title suffix strip, firm-data rule string)
+            // and would emit mixed-language text on /es/ pages.
+            $int_is_es = function_exists( 'roden_current_lang' ) && 'es' === roden_current_lang();
+            if ( ! $int_takeaways && $jurisdiction && ! $int_is_es ) {
                 $ta_label   = strtolower( preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', $parent_title ) );
                 if ( '' === $ta_label ) {
                     $ta_label = __( 'accident', 'roden-law' );
@@ -289,12 +294,22 @@ $related_subtypes = get_posts( array(
 
             <!-- What to Do Steps (AI-extractable for "what to do after X in Y" queries) -->
             <?php
-            $accident_type_label = $parent_title ? strtolower( str_replace( ' Lawyers', '', $parent_title ) ) : __( 'an accident', 'roden-law' );
-            // Convert "car accident" to "a car accident"
-            if ( strpos( $accident_type_label, 'a ' ) !== 0 && strpos( $accident_type_label, 'an ' ) !== 0 ) {
-                $vowels = array( 'a', 'e', 'i', 'o', 'u' );
-                $article = in_array( strtolower( $accident_type_label[0] ), $vowels ) ? 'an ' : 'a ';
-                $accident_type_label = $article . $accident_type_label;
+            // Locale-safe accident phrase: ES intersections seed
+            // _roden_accident_phrase (e.g. "un accidente de auto") because the
+            // English article/suffix derivation below doesn't apply to Spanish.
+            $accident_type_label = get_post_meta( $post_id, '_roden_accident_phrase', true );
+            if ( ! $accident_type_label ) {
+                if ( $int_is_es || ! $parent_title ) {
+                    $accident_type_label = __( 'an accident', 'roden-law' );
+                } else {
+                    $accident_type_label = strtolower( str_replace( ' Lawyers', '', $parent_title ) );
+                    // Convert "car accident" to "a car accident"
+                    if ( strpos( $accident_type_label, 'a ' ) !== 0 && strpos( $accident_type_label, 'an ' ) !== 0 ) {
+                        $vowels = array( 'a', 'e', 'i', 'o', 'u' );
+                        $article = in_array( strtolower( $accident_type_label[0] ), $vowels ) ? 'an ' : 'a ';
+                        $accident_type_label = $article . $accident_type_label;
+                    }
+                }
             }
             roden_what_to_do_steps(
                 $accident_type_label,
@@ -318,7 +333,12 @@ $related_subtypes = get_posts( array(
                         <div class="law-detail">
                             <span class="law-label"><?php esc_html_e( 'Comparative Fault', 'roden-law' ); ?></span>
                             <span class="law-value">
-                                <?php echo esc_html( $jurisdiction['comp_fault_rule'] ); ?>
+                                <?php
+                                // Runtime lookup: firm-data rule strings have
+                                // hand-added msgids in es_ES.po (make-pot can't
+                                // extract variable msgids).
+                                echo esc_html( __( $jurisdiction['comp_fault_rule'], 'roden-law' ) ); // phpcs:ignore WordPress.WP.I18n.NonSingularStringLiteralText
+                                ?>
                                 <?php if ( $jurisdiction['comp_fault_cite'] ) : ?>
                                     (<?php echo esc_html( $jurisdiction['comp_fault_cite'] ); ?>)
                                 <?php endif; ?>

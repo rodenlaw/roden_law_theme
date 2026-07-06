@@ -213,6 +213,41 @@ function roden_es_seed_find_pillar( $slug ) {
 }
 
 /**
+ * Find an EN intersection page: child of the EN pillar whose slug is the
+ * office city-state slug (e.g. car-accident-lawyers + charleston-sc).
+ *
+ * @param string $pillar_slug EN pillar slug.
+ * @param string $office_slug Office city-state slug (charleston-sc, …).
+ * @return WP_Post|null
+ */
+function roden_es_seed_find_intersection( $pillar_slug, $office_slug ) {
+    $en_pillar = roden_es_seed_find_pillar( $pillar_slug );
+    if ( ! $en_pillar ) {
+        return null;
+    }
+    $q = get_posts( array(
+        'post_type'   => $en_pillar->post_type,
+        'name'        => $office_slug,
+        'post_parent' => $en_pillar->ID,
+        'post_status' => 'publish',
+        'numberposts' => 1,
+    ) );
+    return $q ? $q[0] : null;
+}
+
+/**
+ * ES pillar post ID for a given EN pillar slug (via the translation link).
+ * ES intersections are parented to this.
+ *
+ * @param string $pillar_slug EN pillar slug.
+ * @return int ES pillar ID, or 0 if the pillar has no ES translation yet.
+ */
+function roden_es_seed_es_pillar_id( $pillar_slug ) {
+    $en = roden_es_seed_find_pillar( $pillar_slug );
+    return $en ? (int) get_post_meta( $en->ID, '_roden_translation_es', true ) : 0;
+}
+
+/**
  * Find (or report missing) the ES root page ('es'), parent of all ES pages.
  *
  * @return int Page ID or 0.

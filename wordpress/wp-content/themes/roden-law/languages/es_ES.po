@@ -3595,3 +3595,7 @@ msgstr "¿Lesionado en el agua?"
 #: front-page.php
 msgid "No Fees Unless We Win • Free Consultation 24/7"
 msgstr "Sin Honorarios a Menos que Ganemos • Consulta Gratuita 24/7"
+
+# Runtime-lookup msgid (firm-data comp_fault_rule, GA — not pot-extractable)
+msgid "Modified — recover if less than 50% at fault"
+msgstr "Modificada — puede recuperar si tiene menos del 50% de culpa"

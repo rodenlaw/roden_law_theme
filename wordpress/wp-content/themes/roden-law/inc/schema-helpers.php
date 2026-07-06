@@ -1112,7 +1112,12 @@ function roden_schema_intersection_howto( $firm ) {
         return;
     }
 
-    $accident_type = strtolower( str_replace( ' Lawyers', '', $parent->post_title ) );
+    // ES intersections seed _roden_accident_phrase (e.g. "un accidente de
+    // auto"); the English suffix-strip below doesn't apply to Spanish titles.
+    $accident_type = get_post_meta( get_the_ID(), '_roden_accident_phrase', true );
+    if ( ! $accident_type ) {
+        $accident_type = strtolower( str_replace( ' Lawyers', '', $parent->post_title ) );
+    }
     $city_label    = $office['market_name'] . ', ' . $office['state'];
     $url           = roden_get_canonical_url();
 
