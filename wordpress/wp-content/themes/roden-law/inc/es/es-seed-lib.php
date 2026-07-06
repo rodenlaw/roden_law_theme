@@ -182,6 +182,22 @@ function roden_es_seed_find_location( $office_key ) {
     ) );
     $post = $q->have_posts() ? $q->posts[0] : null;
     wp_reset_postdata();
+
+    // Fallback: find by slug. North Charleston exists as a firm-data office
+    // but its EN location post was built as a neighborhood page (no
+    // _roden_office_key meta) — match it by post_name instead.
+    if ( ! $post ) {
+        $by_slug = get_posts( array(
+            'post_type'   => 'location',
+            'name'        => $office_key,
+            'post_status' => 'publish',
+            'numberposts' => 1,
+        ) );
+        if ( $by_slug && 'es' !== get_post_meta( $by_slug[0]->ID, '_roden_locale', true ) ) {
+            $post = $by_slug[0];
+        }
+    }
+
     return $post;
 }
 

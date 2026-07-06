@@ -52,6 +52,10 @@ if ( $en ) {
 <p>En Carolina del Sur, por lo general usted tiene <strong>3 años</strong> desde la fecha del accidente para presentar una demanda por lesiones personales (S.C. Code § 15-3-530). La evidencia desaparece rápido en los casos de camiones y accidentes industriales — <a href="/es/contact/">contáctenos hoy</a>.</p>
 HTML,
         'meta'    => array(
+            // EN North Charleston is a neighborhood page without an office key;
+            // set the key on the ES post so it renders as a full office page
+            // (firm-data has the complete north-charleston office entry).
+            '_roden_office_key'       => 'north-charleston',
             '_roden_meta_description' => 'Abogados de lesiones personales en North Charleston, SC. Hablamos español. Consulta gratuita: (843) 612-6561. Sin honorarios a menos que ganemos.',
             '_roden_service_area'     => 'North Charleston, Goose Creek, Summerville, Hanahan, Ladson, Moncks Corner y las comunidades de los tres condados del Lowcountry.',
             '_roden_local_content'    => '<p>Los casos de lesiones personales de North Charleston se presentan generalmente ante el Charleston County Circuit Court, en el centro de Charleston. Nuestros abogados manejan con regularidad casos de accidentes de camiones y lesiones industriales vinculados al corredor de la I-26, la I-526 y Rivers Avenue.</p><p>Nuestra oficina está en Spruill Avenue, en la zona de Park Circle, con estacionamiento gratuito para clientes. Si no puede visitarnos, atendemos su consulta gratuita por teléfono o videollamada, en español.</p>',
