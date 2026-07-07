@@ -157,6 +157,9 @@ function roden_get_canonical_url( $post_or_id = null ) {
             $state_slug = $office['state_slug'] ?? 'georgia';
             return home_url( '/es/locations/' . $state_slug . '/' . $slug . '/' );
         }
+        if ( 'post' === $post->post_type ) {
+            return home_url( '/es/blog/' . $slug . '/' );
+        }
     }
 
     // Only intercept child practice_area posts — pillar and other types are fine.

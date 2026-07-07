@@ -74,6 +74,40 @@ function roden_rewrite_rules() {
         'index.php?post_type=location&location=es-$matches[1]',
         'top'
     );
+
+    // Spanish blog post: /es/blog/{slug}/ → post 'es-{slug}'.
+    add_rewrite_rule(
+        '^es/blog/([^/]+)/?$',
+        'index.php?name=es-$matches[1]',
+        'top'
+    );
+
+    // Spanish blog index: /es/blog/ → post archive; roden_es_filter_main_query()
+    // narrows it to ES-locale posts on /es/ requests.
+    add_rewrite_rule(
+        '^es/blog/?$',
+        'index.php?post_type=post',
+        'top'
+    );
+}
+
+/* ==========================================================================
+   ONE-SHOT FLUSH ON RULE CHANGES (no SSH needed)
+   ========================================================================== */
+
+add_action( 'init', 'roden_maybe_flush_rewrites', 20 );
+
+/**
+ * Flush rewrite rules once per rule-set version. Bump the version constant
+ * whenever roden_rewrite_rules() changes so the flush happens automatically
+ * on the first request after deploy instead of requiring `wp rewrite flush`.
+ */
+function roden_maybe_flush_rewrites() {
+    $version = '2026-07-07.1';
+    if ( get_option( 'roden_rewrite_version' ) !== $version ) {
+        flush_rewrite_rules();
+        update_option( 'roden_rewrite_version', $version );
+    }
 }
 
 /* ==========================================================================

@@ -252,6 +252,10 @@ function roden_es_filter_main_query( $query ) {
         return;
     }
     if ( roden_is_es_request() ) {
+        // ES archive requests (/es/blog/) list only Spanish posts.
+        $query->set( 'meta_query', array(
+            array( 'key' => '_roden_locale', 'value' => 'es' ),
+        ) );
         return;
     }
     $clause   = roden_es_exclusion_meta_query();
