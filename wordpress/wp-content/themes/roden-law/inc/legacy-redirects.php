@@ -118,25 +118,26 @@ add_action( 'template_redirect', 'roden_legacy_sitemap_redirects', 1 );
 function roden_legacy_sitemap_redirects() {
     $path = wp_parse_url( $_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH ) ?: '/';
 
-    // TEMP diagnostic (remove after legacy-sitemap 301 verification): WPE's
-    // proxy rewrites *-sitemap.xml to /index.php — find any server var that
-    // still carries the original client path.
-    if ( ! headers_sent() && '/index.php' === $path ) {
-        $probe = array();
-        foreach ( array( 'REQUEST_URI', 'REDIRECT_URL', 'REDIRECT_REQUEST_URI', 'DOCUMENT_URI', 'SCRIPT_URL', 'SCRIPT_URI', 'PATH_INFO', 'ORIG_PATH_INFO', 'HTTP_X_ORIGINAL_URI', 'HTTP_X_ORIGINAL_URL', 'HTTP_X_REWRITE_URL', 'WPE_REQUEST_URI', 'HTTP_X_WPE_REQUEST_URI' ) as $k ) {
-            if ( isset( $_SERVER[ $k ] ) ) {
-                $probe[] = $k . '=' . $_SERVER[ $k ];
-            }
-        }
-        header( 'X-Roden-Probe2: ' . rawurlencode( implode( '|', $probe ) ) );
-    }
-
     // Never touch core sitemap URLs (/wp-sitemap*.xml renders on this same
     // hook at priority 10 — matching them here would break live sitemaps).
     if ( 0 === strpos( $path, '/wp-sitemap' ) ) {
         return;
     }
 
+    // WPE's front proxy rewrites the Yoast URL shapes before PHP sees them
+    // (verified via header probe 2026-07-08): /sitemap_index.xml arrives as
+    // /index.php?sitemap=1, /{type}-sitemap{N}.xml as /index.php?sitemap=…
+    // — the original path is unrecoverable, but the injected query var is
+    // the fingerprint. Core sitemap requests never carry ?sitemap= in the
+    // real client query string (their rewrite is WP-internal), so this only
+    // matches proxied legacy URLs (or direct ?sitemap= probes, same intent).
+    if ( '/index.php' === $path && isset( $_GET['sitemap'] ) ) {
+        wp_safe_redirect( home_url( '/wp-sitemap.xml/' ), 301 );
+        exit;
+    }
+
+    // Path-shape fallback for environments without the proxy rewrite
+    // (dev installs, future WPE config changes).
     if ( preg_match( '#^/(sitemap_index\.xml|[a-z0-9_-]+-sitemap[0-9]*\.xml)$#', $path ) ) {
         wp_safe_redirect( home_url( '/wp-sitemap.xml/' ), 301 );
         exit;
