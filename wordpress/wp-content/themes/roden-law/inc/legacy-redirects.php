@@ -439,6 +439,20 @@ function roden_get_legacy_redirect_map() {
     return array(
 
         // ══════════════════════════════════════════════════════════════
+        // CATEGORY 15: duplicate location pages — 2026-07-08 audit item #5
+        // Same town published under two parents (keyword cannibalization),
+        // plus city-under-itself pages duplicating their office parent.
+        // Losing posts are drafted by inc/seed-dedupe-location-pages.php.
+        // ══════════════════════════════════════════════════════════════
+
+        '/locations/georgia/savannah/effingham-county/guyton/'              => '/locations/georgia/savannah/guyton/',
+        '/locations/georgia/savannah/effingham-county/springfield/'         => '/locations/georgia/savannah/springfield/',
+        '/locations/south-carolina/charleston/mount-pleasant/sullivans-island/' => '/locations/south-carolina/charleston/sullivans-island/',
+        '/locations/south-carolina/columbia/columbia/'                      => '/locations/south-carolina/columbia/',
+        '/locations/south-carolina/myrtle-beach/myrtle-beach/'              => '/locations/south-carolina/myrtle-beach/',
+        '/locations/georgia/darien/darien/'                                 => '/locations/georgia/darien/',
+
+        // ══════════════════════════════════════════════════════════════
         // CATEGORY 14: 404 remediation — 2026-06-15
         // Live-site audit found these returning a hard 404 with no redirect
         // (pages live as recently as April 2026). See docs/404-audit-2026-06-15.md
