@@ -111,7 +111,7 @@ $footer_sc_pillars = array(
                             </a>
                         </li>
                         <li>
-                            <a href="<?php echo esc_url( home_url( '/resources/' ) ); ?>">
+                            <a href="<?php echo esc_url( roden_lang_home_url( $footer_lang, '/resources/' ) ); ?>">
                                 <?php esc_html_e( 'Resources', 'roden-law' ); ?>
                             </a>
                         </li>
@@ -179,9 +179,10 @@ $footer_sc_pillars = array(
                         <?php esc_html_e( 'South Carolina', 'roden-law' ); ?>
                     </h4>
                     <ul class="footer-links">
-                        <?php foreach ( $footer_sc_pillars as $label => $path ) : ?>
+                        <?php // All six SC pillars have live /es/ twins — link the current locale's version.
+                        foreach ( $footer_sc_pillars as $label => $path ) : ?>
                             <li>
-                                <a href="<?php echo esc_url( home_url( $path ) ); ?>">
+                                <a href="<?php echo esc_url( roden_lang_home_url( $footer_lang, $path ) ); ?>">
                                     <?php echo wp_kses( $label, array() ); ?>
                                 </a>
                             </li>

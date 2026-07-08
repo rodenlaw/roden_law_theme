@@ -102,6 +102,18 @@ function roden_seo_title_optimization( $title_parts ) {
         }
     }
 
+    // Case results — ~156 posts share templated titles ("$100,000 Settlement
+    // | Auto Accident" appears 8×). Append the served location, or the case
+    // year when no location term is set, to differentiate.
+    if ( is_singular( 'case_result' ) ) {
+        $terms = get_the_terms( get_the_ID(), 'location_served' );
+        if ( $terms && ! is_wp_error( $terms ) ) {
+            $title_parts['title'] .= ' – ' . $terms[0]->name;
+        } else {
+            $title_parts['title'] .= ' – ' . get_the_date( 'Y' );
+        }
+    }
+
     // Attorney pages — append role for E-E-A-T and search context.
     if ( is_singular( 'attorney' ) ) {
         $atty_title = get_post_meta( get_the_ID(), '_roden_atty_title', true );

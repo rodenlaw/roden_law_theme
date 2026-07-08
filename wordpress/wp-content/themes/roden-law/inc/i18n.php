@@ -318,6 +318,24 @@ function roden_output_hreflang() {
         return;
     }
 
+    // Static hub pairs: the EN side of /practice-areas/, /locations/, and
+    // /resources/ is a CPT archive or unpaired page — no post meta can link
+    // it to its ES twin page, so these three pairs match by path.
+    $hub_paths = array( '/practice-areas/', '/locations/', '/resources/' );
+    $req_path  = trailingslashit( wp_parse_url( $_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH ) ?: '/' );
+    $base_path = preg_replace( '#^/es/#', '/', $req_path );
+    if ( roden_es_enabled() && in_array( $base_path, $hub_paths, true ) ) {
+        $urls = array(
+            'en'        => home_url( $base_path ),
+            'es'        => home_url( '/es' . $base_path ),
+            'x-default' => home_url( $base_path ),
+        );
+        foreach ( $urls as $code => $url ) {
+            echo '<link rel="alternate" hreflang="' . esc_attr( $code ) . '" href="' . esc_url( $url ) . '" />' . "\n";
+        }
+        return;
+    }
+
     if ( ! is_singular() ) {
         return;
     }

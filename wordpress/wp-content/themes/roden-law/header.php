@@ -113,7 +113,7 @@ $firm = roden_firm_data();
  * Outputs links to the main CPT archives and a few key pages.
  *
  * On Spanish (/es/) requests this renders a curated Spanish menu limited to
- * sections that exist in Spanish (no Results/Blog/Testimonials), with labels
+ * sections that exist in Spanish (no Results/Testimonials), with labels
  * translated via gettext and URLs under /es/.
  */
 function roden_fallback_menu() {
@@ -134,6 +134,7 @@ function roden_fallback_menu() {
                     <?php endforeach; ?>
                 </ul>
             </li>
+            <li class="menu-item"><a href="<?php echo esc_url( function_exists( 'roden_blog_home_url' ) ? roden_blog_home_url( 'es' ) : roden_lang_home_url( 'es', '/blog/' ) ); ?>"><?php esc_html_e( 'Blog', 'roden-law' ); ?></a></li>
             <li class="menu-item"><a href="<?php echo esc_url( roden_lang_home_url( 'es', '/about/' ) ); ?>"><?php esc_html_e( 'About Us', 'roden-law' ); ?></a></li>
             <li class="menu-item"><a href="<?php echo esc_url( roden_lang_home_url( 'es', '/contact/' ) ); ?>"><?php esc_html_e( 'Contact', 'roden-law' ); ?></a></li>
         </ul>
