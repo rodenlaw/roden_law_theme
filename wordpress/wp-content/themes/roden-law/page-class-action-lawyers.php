@@ -222,48 +222,13 @@ $firm = roden_firm_data();
             <?php roden_inline_cta_banner(); ?>
 
             <!-- ═══════════════════════════════════════════════════════════
-                 SECTION 8: FAQ SECTION (Hardcoded)
+                 SECTION 8: FAQ SECTION (meta-driven)
+                 Renders from _roden_faqs so the visible accordion and the
+                 FAQPage JSON-LD (schema-helpers.php) share one source of
+                 truth. The original 5 hardcoded Q&As were seeded into the
+                 meta 2026-07-08 (see docs/seo-geo-audit-2026-07-08.md).
                  ═══════════════════════════════════════════════════════════ -->
-            <div class="faq-section" id="faq">
-                <h2 class="section-title">Frequently Asked Questions</h2>
-                <div class="faq-accordion">
-                    <?php
-                    $faqs = array(
-                        array(
-                            'question' => 'What is the difference between a mass tort and a class action lawsuit?',
-                            'answer'   => 'In a <strong>class action</strong>, one lawsuit is filed on behalf of an entire group, and any settlement is divided among all class members. In a <strong>mass tort</strong>, each plaintiff files their own individual claim, but the cases are consolidated for pretrial proceedings. Mass torts typically result in higher individual compensation because each person\'s unique injuries and damages are evaluated separately.',
-                        ),
-                        array(
-                            'question' => 'How much does it cost to join a class action or mass tort lawsuit?',
-                            'answer'   => 'There is no upfront cost. Roden Law handles mass tort and class action cases on a <strong>contingency fee basis</strong>, which means you pay nothing unless we recover compensation for you. We cover all investigation, filing, and litigation costs, and our fees are a percentage of your recovery.',
-                        ),
-                        array(
-                            'question' => 'How long do mass tort and class action cases take?',
-                            'answer'   => 'These cases can take anywhere from <strong>one to several years</strong> depending on the complexity of the litigation, the number of plaintiffs, and whether the case goes to trial or settles. Our attorneys keep clients informed throughout the process and work to resolve cases as efficiently as possible.',
-                        ),
-                        array(
-                            'question' => 'How do I know if I qualify for a class action or mass tort lawsuit?',
-                            'answer'   => 'If you have been harmed by a dangerous drug, defective product, toxic chemical, or other corporate negligence, you may qualify. Contact us for a <strong>free, no-obligation case review</strong>. Our attorneys will evaluate your situation, review your medical records, and determine whether you have a viable claim.',
-                        ),
-                        array(
-                            'question' => 'Can I still file a claim if I did not experience severe side effects?',
-                            'answer'   => 'Potentially, yes. Eligibility depends on the specific lawsuit and the criteria established for participation. Even if your injuries seem minor, they may still qualify for compensation. The best way to find out is to <strong>contact our attorneys for a free evaluation</strong> of your specific circumstances.',
-                        ),
-                    );
-
-                    foreach ( $faqs as $i => $faq ) : ?>
-                        <div class="faq-item">
-                            <button class="faq-question" aria-expanded="false" aria-controls="faq-ca-answer-<?php echo (int) $i; ?>">
-                                <span><?php echo esc_html( $faq['question'] ); ?></span>
-                                <span class="faq-toggle">+</span>
-                            </button>
-                            <div class="faq-answer" id="faq-ca-answer-<?php echo (int) $i; ?>" hidden>
-                                <p><?php echo wp_kses_post( $faq['answer'] ); ?></p>
-                            </div>
-                        </div>
-                    <?php endforeach; ?>
-                </div>
-            </div>
+            <?php roden_faq_section(); ?>
 
             <!-- ═══════════════════════════════════════════════════════════
                  INLINE CTA BANNER (#3)

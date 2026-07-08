@@ -25,6 +25,15 @@ if ( ! function_exists( 'roden_breadcrumb_html' ) ) {
             endwhile;
             ?>
         </article>
+        <?php
+        // Class-action tort pages: visible FAQ accordion pairing with the
+        // FAQPage JSON-LD from schema-helpers.php (Google requires the
+        // marked-up Q&A to be visible on the page). Renders nothing until
+        // _roden_faqs is populated.
+        if ( function_exists( 'roden_class_action_page_type' ) && roden_class_action_page_type() ) {
+            roden_faq_section();
+        }
+        ?>
     </div>
 </section>
 
