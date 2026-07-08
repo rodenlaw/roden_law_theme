@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) || exit;
  * dynamic /llms route but leaves the static files stale until the next
  * save_post.
  */
-define( 'RODEN_LLMS_TXT_VERSION', '2026-07-06.1' );
+define( 'RODEN_LLMS_TXT_VERSION', '2026-07-08.1' );
 
 /* ==========================================================================
    1. REWRITE RULES + QUERY VARS
@@ -157,6 +157,34 @@ function roden_generate_llms_txt( $full = false ) {
         }
     }
     $output .= "\n";
+
+    // ── Class Actions & Mass Torts ──────────────────────────────────────
+    // Regular pages under /class-action-lawyers/ (not practice_area posts),
+    // so the Practice Areas loop above never picks them up. Without this
+    // section AI engines reading the firm profile have no signal that Roden
+    // handles mass torts at all (audit G1, 2026-07-08).
+    $ca_hub = get_page_by_path( 'class-action-lawyers' );
+    if ( $ca_hub ) {
+        $output .= "## Class Actions & Mass Torts\n\n";
+        $output .= "Roden Law represents individuals in [class action and mass tort litigation](" . get_permalink( $ca_hub ) . ") over dangerous drugs, defective medical devices, and toxic exposure.\n\n";
+
+        $ca_children = get_pages( array(
+            'parent'      => $ca_hub->ID,
+            'post_status' => 'publish',
+            'sort_column' => 'post_title',
+        ) );
+        foreach ( $ca_children as $ca_child ) {
+            $ca_url   = get_permalink( $ca_child );
+            $ca_title = roden_llms_decode( get_the_title( $ca_child ) );
+            $ca_desc  = roden_llms_get_excerpt( $ca_child );
+            $output  .= "- [{$ca_title}]({$ca_url})";
+            if ( $ca_desc ) {
+                $output .= ": {$ca_desc}";
+            }
+            $output .= "\n";
+        }
+        $output .= "\n";
+    }
 
     // ── Office Locations ────────────────────────────────────────────────
     $output .= "## Office Locations\n\n";

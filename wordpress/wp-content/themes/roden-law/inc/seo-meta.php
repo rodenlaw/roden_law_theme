@@ -116,6 +116,23 @@ function roden_seo_title_optimization( $title_parts ) {
         }
     }
 
+    // Class-action pages — hub + 14 tort children (regular pages under
+    // /class-action-lawyers/) otherwise title as the bare tort name
+    // ("Camp Lejeune – Roden Law"): no "lawsuit", no "lawyer", no claim
+    // language in the most schema/title-saturated SERPs the firm competes in.
+    // Detect by parent slug (not ID — prod/dev IDs differ).
+    if ( is_page() ) {
+        $ca_post = get_post();
+        if ( 'class-action-lawyers' === $ca_post->post_name && ! $ca_post->post_parent ) {
+            $title_parts['title'] = __( 'Class Action & Mass Tort Lawyers', 'roden-law' );
+        } elseif ( $ca_post->post_parent && 'class-action-lawyers' === get_post( $ca_post->post_parent )->post_name ) {
+            // Strip a trailing "Lawsuit(s)" from the tort name so titles like
+            // "Paraquat Lawsuits" don't become "Paraquat Lawsuits Lawsuit Lawyers".
+            $tort = preg_replace( '/\s+Lawsuits?$/i', '', $title_parts['title'] );
+            $title_parts['title'] = sprintf( __( '%s Lawsuit Lawyers', 'roden-law' ), $tort );
+        }
+    }
+
     // Attorney pages — append role for E-E-A-T and search context.
     if ( is_singular( 'attorney' ) ) {
         $atty_title = get_post_meta( get_the_ID(), '_roden_atty_title', true );

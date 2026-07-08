@@ -137,7 +137,14 @@ $footer_sc_pillars = array(
                         ),
                     );
                     foreach ( $state_buckets as $bucket ) :
-                        $state_landing_url = home_url( '/locations/' . $bucket['state_slug'] . '/' );
+                        // State-landing pages have no /es/ twins (404), so on
+                        // Spanish pages the heading links to the ES locations
+                        // hub instead of bleeding users back into the EN silo
+                        // (audit G6, 2026-07-08). Office links below already
+                        // localize via roden_lang_home_url().
+                        $state_landing_url = ( 'es' === $footer_lang )
+                            ? roden_lang_home_url( 'es', '/locations/' )
+                            : home_url( '/locations/' . $bucket['state_slug'] . '/' );
                     ?>
                         <div class="footer-state-bucket">
                             <h5 class="footer-state-heading">

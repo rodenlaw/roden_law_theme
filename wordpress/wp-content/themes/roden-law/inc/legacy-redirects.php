@@ -439,6 +439,18 @@ function roden_get_legacy_redirect_map() {
     return array(
 
         // ══════════════════════════════════════════════════════════════
+        // CATEGORY 16: dead flat LPs — 2026-07-08 SEO/GEO audit item G2
+        // Former flat landing-page URLs (present as routes in the Next.js
+        // mirror, so they were live pages) returning hard 404s with no
+        // redirect. Zero Semrush backlinks/keywords — hygiene 301s to the
+        // closest silo equivalents.
+        // ══════════════════════════════════════════════════════════════
+
+        '/truck-accident-lawyers-columbia-sc/'      => '/truck-accident-lawyers/columbia-sc/',
+        '/truck-accident-lawyers-near-me/'          => '/practice-areas/truck-accident-lawyers/',
+        '/south-carolina-rear-end-accident-lawyer/' => '/car-accident-lawyers/rear-end-collision/',
+
+        // ══════════════════════════════════════════════════════════════
         // CATEGORY 15: duplicate location pages — 2026-07-08 audit item #5
         // Same town published under two parents (keyword cannibalization),
         // plus city-under-itself pages duplicating their office parent.

@@ -226,6 +226,23 @@ function roden_output_schema() {
         roden_schema_breadcrumbs(); // Single-item homepage breadcrumb (site hierarchy signal)
     }
 
+    // Spanish homepage — /es/ is a regular page rendered through
+    // front-page.php via template_include, so is_front_page() is false and
+    // the block above never fires (it shipped with only a BreadcrumbList,
+    // vs 11 nodes on the EN home — audit G3, 2026-07-08). Mirror the entity
+    // graph: Organization/LocalBusiness are language-neutral (same @ids —
+    // re-asserting them strengthens entity association), LegalService takes
+    // its non-front-page branch (page-scoped @id, isPartOf firm entity), and
+    // the WebPage node is ES-specific (roden_json_ld stamps inLanguage:es).
+    // WebSite is intentionally not re-emitted: its @id/inLanguage belong to
+    // the EN home. aggregateRating stays homepage-only by design.
+    if ( function_exists( 'roden_is_es_home' ) && roden_is_es_home() ) {
+        roden_schema_organization( $firm );
+        roden_schema_legal_service( $firm );
+        roden_schema_local_business_all( $firm );
+        roden_schema_es_home_webpage( $firm );
+    }
+
     if ( roden_is_pa_singular() ) {
         roden_schema_legal_service( $firm );
         roden_schema_pa_attorney( $firm );
@@ -268,6 +285,13 @@ function roden_output_schema() {
 
     if ( is_singular( 'case_result' ) ) {
         roden_schema_case_result( $firm );
+    }
+
+    // Class-action hub + tort children — regular pages, so no PA branch fires.
+    $ca_type = roden_class_action_page_type();
+    if ( $ca_type ) {
+        roden_schema_class_action( $firm, $ca_type );
+        roden_schema_faq_page(); // meta-driven; silent until _roden_faqs is populated
     }
 
     if ( is_singular( 'testimonial' ) ) {
@@ -545,6 +569,128 @@ function roden_schema_legal_service( $firm ) {
     }
 
     roden_json_ld( $schema );
+}
+
+/* ==========================================================================
+   2b. LegalService — Class Action / Mass Tort pages
+   ========================================================================== */
+
+/**
+ * Detect the class-action hub or a tort child page.
+ *
+ * These are regular WP pages (hub + 14 tort children under
+ * /class-action-lawyers/), not practice_area posts, so the PA schema branch
+ * never fires for them. Detect by slug/parent slug — prod and dev IDs differ.
+ *
+ * @return string|false 'hub', 'child', or false.
+ */
+function roden_class_action_page_type() {
+    if ( ! is_page() ) {
+        return false;
+    }
+    $post = get_post();
+    if ( ! $post ) {
+        return false;
+    }
+    if ( 'class-action-lawyers' === $post->post_name && ! $post->post_parent ) {
+        return 'hub';
+    }
+    if ( $post->post_parent ) {
+        $parent = get_post( $post->post_parent );
+        if ( $parent && 'class-action-lawyers' === $parent->post_name ) {
+            return 'child';
+        }
+    }
+    return false;
+}
+
+/**
+ * LegalService for the class-action hub + tort child pages.
+ *
+ * Mirrors roden_schema_legal_service() conventions: page-scoped @id,
+ * isPartOf → firm-level LegalService, provider → firm Organization,
+ * no aggregateRating (self-serving markup risk).
+ *
+ * @param array  $firm Firm data.
+ * @param string $type 'hub' or 'child' (from roden_class_action_page_type()).
+ */
+function roden_schema_class_action( $firm, $type ) {
+    $url = roden_get_canonical_url();
+
+    $schema = array(
+        '@context'    => 'https://schema.org',
+        '@type'       => 'LegalService',
+        '@id'         => rtrim( $url, '/' ) . '/#legalservice',
+        'url'         => $url,
+        'telephone'   => $firm['phone_e164'],
+        'priceRange'  => '$$',
+        'areaServed'  => array(
+            array( '@type' => 'State', 'name' => 'Georgia' ),
+            array( '@type' => 'State', 'name' => 'South Carolina' ),
+        ),
+        'isPartOf'    => array( '@id' => $firm['url'] . '/#legalservice' ),
+        'provider'    => array( '@id' => $firm['url'] . '/#organization' ),
+        // dateModified — AI freshness signal, mirrors the PA LegalService.
+        'dateModified' => get_the_modified_date( 'c' ),
+    );
+
+    if ( 'hub' === $type ) {
+        $schema['name']        = 'Class Action & Mass Tort Lawyers — ' . $firm['name'];
+        $schema['serviceType'] = 'Class Action & Mass Tort Litigation';
+        // knowsAbout — the live tort roster, so the entity stays in sync as
+        // torts are added/retired.
+        $children = get_pages( array(
+            'parent'      => get_the_ID(),
+            'post_status' => 'publish',
+        ) );
+        if ( $children ) {
+            $schema['knowsAbout'] = array_values( wp_list_pluck( $children, 'post_title' ) );
+        }
+    } else {
+        // Strip a trailing "Lawsuit(s)" from the tort name (matches the title
+        // filter in seo-meta.php) so "Paraquat Lawsuits" doesn't double up.
+        $tort = preg_replace( '/\s+Lawsuits?$/i', '', get_the_title() );
+        $schema['name']        = $tort . ' Lawsuit Lawyers — ' . $firm['name'];
+        $schema['serviceType'] = $tort . ' Lawsuit Litigation';
+    }
+
+    $description = roden_schema_clean_description( get_the_ID() );
+    if ( $description ) {
+        $schema['description'] = $description;
+    }
+
+    $logo_url = roden_get_logo_url();
+    if ( $logo_url ) {
+        $schema['image'] = $logo_url;
+    }
+
+    roden_json_ld( $schema );
+}
+
+/**
+ * WebPage node for the Spanish homepage — the ES counterpart of
+ * roden_schema_speakable_homepage(). Same speakable selectors (identical
+ * front-page.php markup); Spanish name from the page title; links into the
+ * EN-home WebSite/Organization entities. inLanguage:es is added by
+ * roden_json_ld().
+ *
+ * @param array $firm Firm data.
+ */
+function roden_schema_es_home_webpage( $firm ) {
+    $es_url = roden_get_canonical_url();
+    roden_json_ld( array(
+        '@context'  => 'https://schema.org',
+        '@type'     => 'WebPage',
+        '@id'       => rtrim( $es_url, '/' ) . '/#webpage',
+        'url'       => $es_url,
+        'name'      => html_entity_decode( get_the_title(), ENT_QUOTES | ENT_HTML5, 'UTF-8' ) . ' — ' . $firm['name'],
+        'isPartOf'  => array( '@id' => $firm['url'] . '/#website' ),
+        'about'     => array( '@id' => $firm['url'] . '/#organization' ),
+        'speakable' => array(
+            '@type'       => 'SpeakableSpecification',
+            'cssSelector' => array( '.hero h1', '.hero p', '.trust-bar' ),
+        ),
+    ) );
 }
 
 /* ==========================================================================

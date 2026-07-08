@@ -461,18 +461,28 @@ function roden_inject_lang_switcher_nav_item( $items, $args ) {
 // it comes out in Spanish; locale-aware links inside the template point the
 // grids at /es/ pages. Priority 20 — before the CPT bridge at 1001, after
 // core template resolution.
-add_filter( 'template_include', 'roden_es_home_template', 20 );
-function roden_es_home_template( $template ) {
+/**
+ * Whether the current request is the Spanish homepage (/es/) — a regular
+ * page (post_name 'es', no parent, locale es) rendered with front-page.php,
+ * so is_front_page() is FALSE for it. Schema and template code that wants
+ * homepage treatment for /es/ must use this instead.
+ *
+ * @return bool
+ */
+function roden_is_es_home() {
     if ( ! is_page() || 'es' !== roden_current_lang() ) {
-        return $template;
+        return false;
     }
     $post = get_queried_object();
-    if (
-        $post instanceof WP_Post
+    return $post instanceof WP_Post
         && 'es' === $post->post_name
         && 0 === (int) $post->post_parent
-        && 'es' === roden_post_lang( $post )
-    ) {
+        && 'es' === roden_post_lang( $post );
+}
+
+add_filter( 'template_include', 'roden_es_home_template', 20 );
+function roden_es_home_template( $template ) {
+    if ( roden_is_es_home() ) {
         $home = get_template_directory() . '/front-page.php';
         if ( file_exists( $home ) ) {
             return $home;
