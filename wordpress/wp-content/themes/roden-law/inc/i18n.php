@@ -187,6 +187,9 @@ function roden_strip_es_slug( $slug ) {
 // practice_area posts through roden_get_canonical_url(); this catches the
 // remaining ES CPT posts (top-level pillars, locations).
 add_filter( 'post_type_link', 'roden_es_post_type_link', 20, 2 );
+// Blog posts use the 'post_link' filter (not 'post_type_link') — same mapping,
+// so ES blog posts emit /es/blog/{slug}/ in the sitemap, feeds, and templates.
+add_filter( 'post_link', 'roden_es_post_type_link', 20, 2 );
 function roden_es_post_type_link( $url, $post ) {
     if ( $post instanceof WP_Post
         && 'es' === roden_post_lang( $post )
