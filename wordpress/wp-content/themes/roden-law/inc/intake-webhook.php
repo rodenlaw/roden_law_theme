@@ -100,7 +100,17 @@ function roden_intake_payload_from_entry( $entry, $form = array() ) {
 			case 'name':
 				$first_name = trim( (string) rgar( $entry, $id . '.3' ) );
 				$last_name  = trim( (string) rgar( $entry, $id . '.6' ) );
-				$value      = trim( $first_name . ' ' . $last_name );
+				// Entries created via GFAPI::add_entry() (the AJAX handler) store a
+				// flat value under the field id instead of .3/.6 subinputs.
+				if ( '' === $first_name && '' === $last_name ) {
+					$flat = trim( (string) rgar( $entry, (string) $id ) );
+					if ( '' !== $flat ) {
+						$parts      = preg_split( '/\s+/', $flat, 2 );
+						$first_name = $parts[0];
+						$last_name  = isset( $parts[1] ) ? $parts[1] : '';
+					}
+				}
+				$value = trim( $first_name . ' ' . $last_name );
 				break;
 
 			case 'email':
@@ -120,7 +130,28 @@ function roden_intake_payload_from_entry( $entry, $form = array() ) {
 					$value = (string) GFFormsModel::get_lead_field_value( $entry, $field );
 				}
 				// Heuristic mapping for common labels when types are generic.
+				// Form 1 stores first/last name as two plain TEXT fields (ids 9/10),
+				// not a GF name field — without this, first_name/last_name stay
+				// empty and the intake server rejects the lead with a 400.
 				$llabel = strtolower( (string) $label );
+				if ( '' !== $value && false !== strpos( $llabel, 'name' ) && false === strpos( $llabel, 'business' ) && false === strpos( $llabel, 'company' ) ) {
+					if ( '' === $first_name && ( false !== strpos( $llabel, 'first' ) || false !== strpos( $llabel, 'nombre' ) ) ) {
+						$first_name = $value;
+					} elseif ( '' === $last_name && ( false !== strpos( $llabel, 'last' ) || false !== strpos( $llabel, 'apellido' ) ) ) {
+						$last_name = $value;
+					} elseif ( '' === $first_name && '' === $last_name ) {
+						// Single "Name" / "Full Name" style field: split it.
+						$parts      = preg_split( '/\s+/', trim( $value ), 2 );
+						$first_name = $parts[0];
+						$last_name  = isset( $parts[1] ) ? $parts[1] : '';
+					}
+				}
+				if ( '' === $email && false !== strpos( $llabel, 'email' ) && is_email( $value ) ) {
+					$email = $value;
+				}
+				if ( '' === $phone && ( false !== strpos( $llabel, 'phone' ) || false !== strpos( $llabel, 'teléfono' ) || false !== strpos( $llabel, 'telefono' ) ) ) {
+					$phone = $value;
+				}
 				if ( '' === $case_type && ( false !== strpos( $llabel, 'case' ) || false !== strpos( $llabel, 'practice' ) || false !== strpos( $llabel, 'matter' ) ) ) {
 					$case_type = $value;
 				}
