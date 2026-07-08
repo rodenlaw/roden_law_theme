@@ -277,14 +277,52 @@ function roden_intake_post( array $payload ) {
 
 	if ( is_wp_error( $response ) ) {
 		error_log( '[roden-intake] webhook error: ' . $response->get_error_message() . ' | entry ' . ( $payload['entry_id'] ?? '?' ) );
+		roden_intake_alert_failure( $payload, 'WP_Error: ' . $response->get_error_message() );
 		return false;
 	}
 
 	$code = (int) wp_remote_retrieve_response_code( $response );
 	if ( $code < 200 || $code >= 300 ) {
 		error_log( '[roden-intake] webhook non-2xx (' . $code . '): ' . wp_remote_retrieve_body( $response ) . ' | entry ' . ( $payload['entry_id'] ?? '?' ) );
+		roden_intake_alert_failure( $payload, 'HTTP ' . $code . ': ' . wp_remote_retrieve_body( $response ) );
 		return false;
 	}
 
 	return true;
+}
+
+/**
+ * Email the admin when a lead fails to reach the intake system, so failures
+ * are never silent (the 2026-06-30→07-08 empty-name bug dropped ~15 leads
+ * with nothing but an error_log line to show for it).
+ *
+ * Throttled to one email per hour — during an outage every lead fails, and
+ * the first alert is enough to start investigating. The lead itself is safe
+ * in Gravity Forms entries either way.
+ *
+ * @param array  $payload The lead payload that failed to deliver.
+ * @param string $detail  Error detail (WP_Error message or HTTP status + body).
+ */
+function roden_intake_alert_failure( array $payload, $detail ) {
+	if ( get_transient( 'roden_intake_alert_sent' ) ) {
+		return;
+	}
+	set_transient( 'roden_intake_alert_sent', 1, HOUR_IN_SECONDS );
+
+	$to = apply_filters( 'roden_intake_alert_email', 'admin@rodenlaw.com' );
+
+	$name = trim( ( $payload['first_name'] ?? '' ) . ' ' . ( $payload['last_name'] ?? '' ) );
+	$body = "A lead could not be delivered to the intake system (intrial).\n\n"
+		. 'Error: ' . $detail . "\n\n"
+		. 'Lead: ' . ( $name ?: '(no name)' ) . "\n"
+		. 'Phone: ' . ( $payload['phone'] ?? '' ) . "\n"
+		. 'Email: ' . ( $payload['email'] ?? '' ) . "\n"
+		. 'GF entry ID: ' . ( $payload['entry_id'] ?? '?' ) . "\n"
+		. 'Submitted from: ' . ( $payload['source_url'] ?? '' ) . "\n\n"
+		. "The lead is saved in WordPress under Forms → Entries — nothing is lost, "
+		. "but it will NOT appear in intrial until the webhook is fixed.\n"
+		. "Further failures within the next hour will not be emailed; "
+		. "check recent Gravity Forms entries against intrial once the issue is resolved.";
+
+	wp_mail( $to, '[Roden Law] Intake webhook failure — lead did not reach intrial', $body );
 }
