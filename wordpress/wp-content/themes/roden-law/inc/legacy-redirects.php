@@ -118,6 +118,12 @@ add_action( 'template_redirect', 'roden_legacy_sitemap_redirects', 1 );
 function roden_legacy_sitemap_redirects() {
     $path = wp_parse_url( $_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH ) ?: '/';
 
+    // TEMP diagnostic (remove after legacy-sitemap 301 verification): shows
+    // whether this hook runs and what URI PHP receives behind WPE's proxy.
+    if ( ! headers_sent() ) {
+        header( 'X-Roden-Probe: ' . rawurlencode( $path ) );
+    }
+
     // Never touch core sitemap URLs (/wp-sitemap*.xml renders on this same
     // hook at priority 10 — matching them here would break live sitemaps).
     if ( 0 === strpos( $path, '/wp-sitemap' ) ) {
