@@ -75,6 +75,14 @@ function roden_rewrite_rules() {
         'top'
     );
 
+    // Spanish blog pagination: /es/blog/page/2/ → paged ES post archive.
+    // Registered before the {slug} rule so 'page' is never read as a post name.
+    add_rewrite_rule(
+        '^es/blog/page/([0-9]+)/?$',
+        'index.php?post_type=post&paged=$matches[1]',
+        'top'
+    );
+
     // Spanish blog post: /es/blog/{slug}/ → post 'es-{slug}'.
     add_rewrite_rule(
         '^es/blog/([^/]+)/?$',
@@ -103,7 +111,7 @@ add_action( 'init', 'roden_maybe_flush_rewrites', 20 );
  * on the first request after deploy instead of requiring `wp rewrite flush`.
  */
 function roden_maybe_flush_rewrites() {
-    $version = '2026-07-07.1';
+    $version = '2026-07-08.1';
     if ( get_option( 'roden_rewrite_version' ) !== $version ) {
         flush_rewrite_rules();
         update_option( 'roden_rewrite_version', $version );

@@ -96,6 +96,26 @@ function roden_lang_home_url( $lang = null, $path = '/' ) {
     return home_url( $path );
 }
 
+/**
+ * Blog index URL for a language.
+ *
+ * The Spanish blog hub (/es/blog/) is a rewrite-driven virtual URL — there is
+ * no page_for_posts post behind it — so every consumer (canonical, hreflang,
+ * breadcrumbs, schema, sitemap) must build it from here to stay in agreement.
+ *
+ * @param string|null $lang 'en' or 'es' (defaults to current request language).
+ * @return string
+ */
+function roden_blog_home_url( $lang = null ) {
+    if ( null === $lang ) {
+        $lang = roden_current_lang();
+    }
+    if ( 'es' === $lang ) {
+        return home_url( '/es/blog/' );
+    }
+    return get_permalink( get_option( 'page_for_posts' ) ) ?: home_url( '/blog/' );
+}
+
 /* ==========================================================================
    2. LOCALE SWITCH — Spanish gettext on /es/ requests
    ========================================================================== */
@@ -277,7 +297,28 @@ function roden_es_filter_main_query( $query ) {
 // Priority 2: after canonical/schema (1), before styles.
 add_action( 'wp_head', 'roden_output_hreflang', 2 );
 function roden_output_hreflang() {
-    if ( ! is_singular() || is_404() || is_search() ) {
+    if ( is_404() || is_search() ) {
+        return;
+    }
+
+    // Blog hub pair: /blog/ ↔ /es/blog/. Page 1 only — paginated views have
+    // no 1:1 counterpart (the two locales paginate independently).
+    if ( is_home() ) {
+        if ( ! roden_es_enabled() || (int) get_query_var( 'paged', 0 ) >= 2 ) {
+            return;
+        }
+        $urls = array(
+            'en'        => roden_blog_home_url( 'en' ),
+            'es'        => roden_blog_home_url( 'es' ),
+            'x-default' => roden_blog_home_url( 'en' ),
+        );
+        foreach ( $urls as $code => $url ) {
+            echo '<link rel="alternate" hreflang="' . esc_attr( $code ) . '" href="' . esc_url( $url ) . '" />' . "\n";
+        }
+        return;
+    }
+
+    if ( ! is_singular() ) {
         return;
     }
     if ( function_exists( 'roden_is_noindex_landing' ) && roden_is_noindex_landing() ) {
@@ -467,4 +508,41 @@ function roden_es_gracias_noindex( $robots ) {
         $robots['nofollow'] = true;
     }
     return $robots;
+}
+
+/* ==========================================================================
+   12. SITEMAP — virtual ES hub URLs (no post behind them)
+   ========================================================================== */
+
+// /es/blog/ is rewrite-driven (no page_for_posts post), so WP's core post/page
+// sitemap providers never see it. Register a tiny provider for ES hub URLs
+// that exist only as rewrites — without this the ES blog silo has no
+// sitemap-listed entry point.
+add_action( 'wp_sitemaps_init', 'roden_register_es_sitemap_provider' );
+function roden_register_es_sitemap_provider( $sitemaps ) {
+    if ( ! class_exists( 'WP_Sitemaps_Provider' ) || ! roden_es_enabled() ) {
+        return;
+    }
+
+    $provider = new class() extends WP_Sitemaps_Provider {
+        public function __construct() {
+            $this->name        = 'roden-es-hubs';
+            $this->object_type = 'roden-es-hubs';
+        }
+
+        public function get_url_list( $page_num, $object_subtype = '' ) {
+            if ( $page_num > 1 ) {
+                return array();
+            }
+            return array(
+                array( 'loc' => roden_blog_home_url( 'es' ) ),
+            );
+        }
+
+        public function get_max_num_pages( $object_subtype = '' ) {
+            return 1;
+        }
+    };
+
+    $sitemaps->registry->add_provider( $provider->name, $provider );
 }

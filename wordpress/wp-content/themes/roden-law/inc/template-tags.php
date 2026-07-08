@@ -94,7 +94,10 @@ function roden_breadcrumb_html() {
         $crumbs[] = '<span class="breadcrumb-current">' . esc_html( get_the_title() ) . '</span>';
 
     } elseif ( is_singular( 'post' ) ) {
-        $blog_url = get_permalink( get_option( 'page_for_posts' ) ) ?: home_url( '/blog/' );
+        // Lang-aware: ES posts crumb to /es/blog/, not cross-locale to /blog/.
+        $blog_url = function_exists( 'roden_blog_home_url' )
+            ? roden_blog_home_url( $lang )
+            : ( get_permalink( get_option( 'page_for_posts' ) ) ?: home_url( '/blog/' ) );
         $crumbs[] = '<a href="' . esc_url( $blog_url ) . '">' . esc_html__( 'Blog', 'roden-law' ) . '</a>';
         $crumbs[] = '<span class="breadcrumb-current">' . esc_html( get_the_title() ) . '</span>';
 

@@ -34,6 +34,14 @@ function roden_seo_title_optimization( $title_parts ) {
         return $title_parts;
     }
 
+    // Blog index — both locales otherwise fall through to a bare site-name
+    // title (the ES hub has no page_for_posts post at all).
+    if ( is_home() ) {
+        $title_parts['title'] = ( function_exists( 'roden_current_lang' ) && 'es' === roden_current_lang() )
+            ? 'Blog de Lesiones Personales'
+            : 'Personal Injury Blog & Legal Insights';
+    }
+
     // Practice area pages — add jurisdiction/location context.
     if ( is_singular() && in_array( get_post_type(), array( 'practice_area', 'practice-area' ), true ) ) {
         $post    = get_post();
@@ -95,8 +103,12 @@ function roden_seo_title_optimization( $title_parts ) {
     // Paginated archives — append page number.
     $paged = get_query_var( 'paged', 0 );
     if ( $paged >= 2 ) {
-        /* translators: %d: archive page number. */
-        $title_parts['title'] .= sprintf( __( ' – Page %d', 'roden-law' ), $paged );
+        if ( function_exists( 'roden_current_lang' ) && 'es' === roden_current_lang() ) {
+            $title_parts['title'] .= sprintf( ' – Página %d', $paged );
+        } else {
+            /* translators: %d: archive page number. */
+            $title_parts['title'] .= sprintf( __( ' – Page %d', 'roden-law' ), $paged );
+        }
     }
 
     return $title_parts;
@@ -160,7 +172,17 @@ function roden_seo_get_canonical() {
     }
 
     if ( is_home() ) {
-        return get_permalink( get_option( 'page_for_posts' ) ) ?: home_url( '/blog/' );
+        // Locale-aware: /es/blog/ self-canonicals (never cross-locale to /blog/).
+        $url = function_exists( 'roden_blog_home_url' )
+            ? roden_blog_home_url()
+            : ( get_permalink( get_option( 'page_for_posts' ) ) ?: home_url( '/blog/' ) );
+
+        // Paginated views self-canonical (/blog/page/2/), never back to page 1.
+        $paged = (int) get_query_var( 'paged', 0 );
+        if ( $paged >= 2 ) {
+            $url = trailingslashit( $url ) . 'page/' . $paged . '/';
+        }
+        return $url;
     }
 
     return '';
@@ -304,6 +326,9 @@ function roden_seo_get_description() {
     }
 
     if ( is_home() ) {
+        if ( function_exists( 'roden_current_lang' ) && 'es' === roden_current_lang() ) {
+            return roden_seo_truncate( 'Noticias, guías y consejos legales sobre lesiones personales de ' . $firm['name'] . '. Sirviendo a Georgia y Carolina del Sur en español.', 160 );
+        }
         return roden_seo_truncate( 'Personal injury news, guides, and legal insights from ' . $firm['name'] . '. Serving Georgia and South Carolina.', 160 );
     }
 

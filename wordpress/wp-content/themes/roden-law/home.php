@@ -2,8 +2,9 @@
 /**
  * Blog Home Template (Posts Page)
  *
- * WordPress loads home.php for the blog posts page (Settings > Reading > Posts page).
- * This takes priority over index.php in the template hierarchy.
+ * WordPress loads home.php for the blog posts page (Settings > Reading > Posts page)
+ * and for the rewrite-driven Spanish hub /es/blog/ (both resolve as is_home).
+ * All user-facing strings are locale-branched on $is_es.
  *
  * @package RodenLaw
  */
@@ -12,7 +13,8 @@ get_header();
 if ( ! function_exists( 'roden_breadcrumb_html' ) ) {
     require_once get_template_directory() . '/inc/template-tags.php';
 }
-$firm = roden_firm_data();
+$firm  = roden_firm_data();
+$is_es = function_exists( 'roden_current_lang' ) && 'es' === roden_current_lang();
 ?>
 
 <section class="hero hero-blog">
@@ -27,18 +29,22 @@ $firm = roden_firm_data();
             } elseif ( is_tax() ) {
                 single_term_title();
             } elseif ( is_search() ) {
-                printf( 'Search Results: %s', get_search_query() );
+                printf( $is_es ? 'Resultados de Búsqueda: %s' : 'Search Results: %s', get_search_query() );
             } else {
-                echo 'Roden Law Blog';
+                echo $is_es ? 'Blog de Roden Law' : 'Roden Law Blog';
             }
             ?>
         </h1>
         <p class="hero-subtitle">
-            Legal insights, accident news, and injury law resources for Georgia and South Carolina residents — written by licensed personal injury attorneys.
+            <?php echo $is_es
+                ? 'Consejos legales, noticias de accidentes y recursos sobre lesiones personales para residentes de Georgia y Carolina del Sur — escritos por abogados licenciados.'
+                : 'Legal insights, accident news, and injury law resources for Georgia and South Carolina residents — written by licensed personal injury attorneys.'; ?>
         </p>
+        <?php if ( ! $is_es ) : // Search queries resolve English-only; hide the box on /es/blog/. ?>
         <div class="blog-search">
             <?php get_search_form(); ?>
         </div>
+        <?php endif; ?>
     </div>
 </section>
 
@@ -53,18 +59,20 @@ $firm = roden_firm_data();
                     endwhile; ?>
                 </div>
 
-                <nav class="pagination" aria-label="Blog pagination">
+                <nav class="pagination" aria-label="<?php echo esc_attr( $is_es ? 'Paginación del blog' : 'Blog pagination' ); ?>">
                     <?php
                     the_posts_pagination( [
                         'mid_size'  => 2,
-                        'prev_text' => '← Previous',
-                        'next_text' => 'Next →',
+                        'prev_text' => $is_es ? '← Anterior' : '← Previous',
+                        'next_text' => $is_es ? 'Siguiente →' : 'Next →',
                     ] );
                     ?>
                 </nav>
             <?php else : ?>
                 <div class="no-results">
-                    <p>No articles found. Try a different search term or category.</p>
+                    <p><?php echo $is_es
+                        ? 'No se encontraron artículos.'
+                        : 'No articles found. Try a different search term or category.'; ?></p>
                 </div>
             <?php endif; ?>
         </div>
@@ -72,12 +80,13 @@ $firm = roden_firm_data();
         <aside class="sidebar sidebar-blog">
             <div class="sidebar-sticky">
                 <div class="sidebar-widget sidebar-consult-cta">
-                    <h3>Injured? Talk to a Lawyer.</h3>
-                    <p>Free consultation. No fees unless we win.</p>
+                    <h3><?php echo $is_es ? '¿Lesionado? Hable con un Abogado.' : 'Injured? Talk to a Lawyer.'; ?></h3>
+                    <p><?php echo $is_es ? 'Consulta gratuita. No paga honorarios a menos que ganemos.' : 'Free consultation. No fees unless we win.'; ?></p>
                     <a href="tel:<?php echo esc_attr($firm['phone_e164']); ?>" class="btn btn-primary btn-block"><?php echo esc_html($firm['phone']); ?></a>
-                    <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn-outline-light btn-block">Free Case Review</a>
+                    <a href="<?php echo esc_url( roden_lang_home_url( null, '/contact/' ) ); ?>" class="btn btn-outline-light btn-block"><?php echo $is_es ? 'Evaluación Gratuita de Su Caso' : 'Free Case Review'; ?></a>
                 </div>
 
+                <?php if ( ! $is_es ) : // Categories are English-only taxonomy archives. ?>
                 <div class="sidebar-widget">
                     <h3 class="widget-title">Categories</h3>
                     <ul class="sidebar-links">
@@ -89,11 +98,26 @@ $firm = roden_firm_data();
                         ?>
                     </ul>
                 </div>
+                <?php endif; ?>
 
                 <div class="sidebar-widget">
-                    <h3 class="widget-title">Practice Areas</h3>
+                    <h3 class="widget-title"><?php echo $is_es ? 'Áreas de Práctica' : 'Practice Areas'; ?></h3>
                     <?php
-                    $pas = get_posts(['post_type'=>'practice_area','posts_per_page'=>6,'orderby'=>'menu_order','order'=>'ASC']);
+                    // Locale-filter so ES pillars never leak into the EN sidebar
+                    // (and the ES hub links Spanish pillars, not English ones).
+                    $pa_args = [
+                        'post_type'      => 'practice_area',
+                        'posts_per_page' => 6,
+                        'orderby'        => 'menu_order',
+                        'order'          => 'ASC',
+                        'post_parent'    => 0,
+                    ];
+                    if ( function_exists( 'roden_es_exclusion_meta_query' ) ) {
+                        $pa_args['meta_query'] = $is_es
+                            ? [ [ 'key' => '_roden_locale', 'value' => 'es' ] ]
+                            : roden_es_exclusion_meta_query();
+                    }
+                    $pas = get_posts( $pa_args );
                     echo '<ul class="sidebar-links">';
                     foreach ( $pas as $pa ) {
                         echo '<li><a href="' . esc_url(get_permalink($pa)) . '">' . esc_html($pa->post_title) . '</a></li>';

@@ -1320,11 +1320,15 @@ function roden_schema_breadcrumbs() {
         );
 
     } elseif ( is_singular( 'post' ) ) {
-        $items[] = array(
+        // ES posts crumb to the Spanish hub, not cross-locale to /blog/.
+        $post_lang = function_exists( 'roden_post_lang' ) ? roden_post_lang() : 'en';
+        $items[]   = array(
             '@type'    => 'ListItem',
             'position' => $position++,
             'name'     => __( 'Blog', 'roden-law' ),
-            'item'     => get_permalink( get_option( 'page_for_posts' ) ) ?: home_url( '/blog/' ),
+            'item'     => function_exists( 'roden_blog_home_url' )
+                ? roden_blog_home_url( $post_lang )
+                : ( get_permalink( get_option( 'page_for_posts' ) ) ?: home_url( '/blog/' ) ),
         );
         $items[] = array(
             '@type'    => 'ListItem',
@@ -1354,7 +1358,9 @@ function roden_schema_breadcrumbs() {
             '@type'    => 'ListItem',
             'position' => $position++,
             'name'     => __( 'Blog', 'roden-law' ),
-            'item'     => get_permalink( get_option( 'page_for_posts' ) ) ?: home_url( '/blog/' ),
+            'item'     => function_exists( 'roden_blog_home_url' )
+                ? roden_blog_home_url()
+                : ( get_permalink( get_option( 'page_for_posts' ) ) ?: home_url( '/blog/' ) ),
         );
 
     } elseif ( is_post_type_archive() ) {
@@ -1383,7 +1389,9 @@ function roden_schema_breadcrumbs() {
     } elseif ( is_post_type_archive() ) {
         $breadcrumb_url = get_post_type_archive_link( get_queried_object()->name ?? get_post_type() );
     } elseif ( is_home() ) {
-        $breadcrumb_url = get_permalink( get_option( 'page_for_posts' ) ) ?: home_url( '/blog/' );
+        $breadcrumb_url = function_exists( 'roden_blog_home_url' )
+            ? roden_blog_home_url()
+            : ( get_permalink( get_option( 'page_for_posts' ) ) ?: home_url( '/blog/' ) );
     } elseif ( is_search() ) {
         $breadcrumb_url = get_search_link();
     } else {
@@ -2646,10 +2654,20 @@ function roden_schema_testimonial( $firm ) {
  * @param string $post_type WP post type the archive iterates ('resource' / 'post').
  */
 function roden_schema_collection_page( $firm, $type, $post_type ) {
+    $lang = function_exists( 'roden_current_lang' ) ? roden_current_lang() : 'en';
+
     if ( 'post' === $post_type ) {
-        $url  = get_permalink( get_option( 'page_for_posts' ) ) ?: home_url( '/blog/' );
-        $name = single_post_title( '', false ) ?: __( 'Blog', 'roden-law' );
-        $desc = get_bloginfo( 'description' );
+        if ( 'es' === $lang ) {
+            $url  = roden_blog_home_url( 'es' );
+            $name = 'Blog de Lesiones Personales';
+            $desc = 'Noticias, guías y consejos legales sobre lesiones personales de ' . $firm['name'] . ' en español.';
+        } else {
+            $url  = function_exists( 'roden_blog_home_url' )
+                ? roden_blog_home_url( 'en' )
+                : ( get_permalink( get_option( 'page_for_posts' ) ) ?: home_url( '/blog/' ) );
+            $name = single_post_title( '', false ) ?: __( 'Blog', 'roden-law' );
+            $desc = get_bloginfo( 'description' );
+        }
     } else {
         $obj  = get_queried_object();
         $url  = get_post_type_archive_link( $post_type );
@@ -2684,12 +2702,21 @@ function roden_schema_collection_page( $firm, $type, $post_type ) {
     // missing image/author — the actual post pages already carry full
     // BlogPosting / HowTo schema. ItemList is the canonical pattern for
     // a CollectionPage / Blog index.
-    $recent = get_posts( array(
+    // Locale-filter the list: without this the EN blog hub's ItemList fills
+    // with the most recent posts regardless of language — after a Spanish
+    // publishing batch that was 11 /es/blog/ URLs on the English page.
+    $recent_args = array(
         'post_type'      => $post_type,
         'posts_per_page' => 10,
         'post_status'    => 'publish',
         'no_found_rows'  => true,
-    ) );
+    );
+    if ( function_exists( 'roden_es_exclusion_meta_query' ) ) {
+        $recent_args['meta_query'] = ( 'es' === $lang )
+            ? array( array( 'key' => '_roden_locale', 'value' => 'es' ) )
+            : roden_es_exclusion_meta_query();
+    }
+    $recent = get_posts( $recent_args );
     if ( $recent ) {
         $list_items = array();
         $position   = 1;
