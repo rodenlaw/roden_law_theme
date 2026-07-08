@@ -544,5 +544,7 @@ function roden_register_es_sitemap_provider( $sitemaps ) {
         }
     };
 
-    $sitemaps->registry->add_provider( $provider->name, $provider );
+    // NOTE: $name/$object_type are protected on WP_Sitemaps_Provider — never
+    // read them from outside the instance (fatals on every request).
+    $sitemaps->registry->add_provider( 'roden-es-hubs', $provider );
 }
