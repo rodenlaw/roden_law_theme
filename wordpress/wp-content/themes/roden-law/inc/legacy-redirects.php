@@ -118,10 +118,17 @@ add_action( 'template_redirect', 'roden_legacy_sitemap_redirects', 1 );
 function roden_legacy_sitemap_redirects() {
     $path = wp_parse_url( $_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH ) ?: '/';
 
-    // TEMP diagnostic (remove after legacy-sitemap 301 verification): shows
-    // whether this hook runs and what URI PHP receives behind WPE's proxy.
-    if ( ! headers_sent() ) {
-        header( 'X-Roden-Probe: ' . rawurlencode( $path ) );
+    // TEMP diagnostic (remove after legacy-sitemap 301 verification): WPE's
+    // proxy rewrites *-sitemap.xml to /index.php — find any server var that
+    // still carries the original client path.
+    if ( ! headers_sent() && '/index.php' === $path ) {
+        $probe = array();
+        foreach ( array( 'REQUEST_URI', 'REDIRECT_URL', 'REDIRECT_REQUEST_URI', 'DOCUMENT_URI', 'SCRIPT_URL', 'SCRIPT_URI', 'PATH_INFO', 'ORIG_PATH_INFO', 'HTTP_X_ORIGINAL_URI', 'HTTP_X_ORIGINAL_URL', 'HTTP_X_REWRITE_URL', 'WPE_REQUEST_URI', 'HTTP_X_WPE_REQUEST_URI' ) as $k ) {
+            if ( isset( $_SERVER[ $k ] ) ) {
+                $probe[] = $k . '=' . $_SERVER[ $k ];
+            }
+        }
+        header( 'X-Roden-Probe2: ' . rawurlencode( implode( '|', $probe ) ) );
     }
 
     // Never touch core sitemap URLs (/wp-sitemap*.xml renders on this same
