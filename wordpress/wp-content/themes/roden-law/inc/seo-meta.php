@@ -87,6 +87,18 @@ function roden_seo_title_optimization( $title_parts ) {
             $office = $firm['offices'][ $office_key ];
             /* translators: %s: full state name, e.g. "Georgia". */
             $title_parts['title'] .= sprintf( __( ' – %s Personal Injury Lawyers', 'roden-law' ), $office['state_full'] );
+        } elseif (
+            // Neighborhood/city pages (no office key) otherwise title as the
+            // bare place name ("Irmo – Roden Law") — no keyword, no state, and
+            // cross-state collisions (Georgetown GA vs SC). EN only: Spanish
+            // location pages carry their own Spanish titles.
+            ( ! function_exists( 'roden_post_lang' ) || 'en' === roden_post_lang( get_the_ID() ) )
+            && false === stripos( $title_parts['title'], 'lawyer' )
+        ) {
+            $state_abbr = roden_seo_location_state_abbr( get_the_ID() );
+            $title_parts['title'] .= $state_abbr
+                ? sprintf( ', %s Personal Injury Lawyers', $state_abbr )
+                : ' Personal Injury Lawyers';
         }
     }
 
@@ -114,6 +126,27 @@ function roden_seo_title_optimization( $title_parts ) {
     }
 
     return $title_parts;
+}
+
+/**
+ * State abbreviation for a location post, parsed from its permalink.
+ *
+ * Every location URL is rooted at /locations/{state-slug}/…, which covers
+ * all depths (city, neighborhood, sub-neighborhood) without relying on the
+ * parent-office meta being populated.
+ *
+ * @param int $post_id Location post ID.
+ * @return string 'GA', 'SC', or '' when the slug is unrecognized.
+ */
+function roden_seo_location_state_abbr( $post_id ) {
+    $path = wp_parse_url( get_permalink( $post_id ), PHP_URL_PATH ) ?: '';
+    // Require a segment below the state so the state hubs themselves
+    // (/locations/georgia/) fall through to the state-less suffix —
+    // "Georgia Personal Injury Lawyers", not "Georgia, GA …".
+    if ( preg_match( '#/locations/(georgia|south-carolina)/[^/]#', $path, $m ) ) {
+        return 'georgia' === $m[1] ? 'GA' : 'SC';
+    }
+    return '';
 }
 
 /* ==========================================================================

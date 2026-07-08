@@ -105,6 +105,32 @@ function roden_redirect_duplicate_pa_path() {
 }
 
 /* ------------------------------------------------------------------
+   301: legacy Yoast sitemap URLs → core sitemap index.
+
+   /sitemap_index.xml and /{type}-sitemap{N}.xml predate the move to WP
+   core sitemaps. They fall through to the blog template and serve a
+   200 text/html page — a soft-200 that parses as a broken sitemap for
+   anything (GSC included) still holding the old references.
+   ------------------------------------------------------------------ */
+
+add_action( 'template_redirect', 'roden_legacy_sitemap_redirects', 1 );
+
+function roden_legacy_sitemap_redirects() {
+    $path = wp_parse_url( $_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH ) ?: '/';
+
+    // Never touch core sitemap URLs (/wp-sitemap*.xml renders on this same
+    // hook at priority 10 — matching them here would break live sitemaps).
+    if ( 0 === strpos( $path, '/wp-sitemap' ) ) {
+        return;
+    }
+
+    if ( preg_match( '#^/(sitemap_index\.xml|[a-z0-9_-]+-sitemap[0-9]*\.xml)$#', $path ) ) {
+        wp_safe_redirect( home_url( '/wp-sitemap.xml/' ), 301 );
+        exit;
+    }
+}
+
+/* ------------------------------------------------------------------
    301 Redirects — old URLs → new URLs
    ------------------------------------------------------------------ */
 
