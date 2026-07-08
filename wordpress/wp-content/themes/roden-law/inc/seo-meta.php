@@ -100,9 +100,11 @@ function roden_seo_title_optimization( $title_parts ) {
         }
     }
 
-    // Paginated archives — append page number.
+    // Paginated archives — append page number. Core adds its own 'page' part
+    // ("Page N") for paged views; drop it or the suffix doubles up.
     $paged = get_query_var( 'paged', 0 );
     if ( $paged >= 2 ) {
+        unset( $title_parts['page'] );
         if ( function_exists( 'roden_current_lang' ) && 'es' === roden_current_lang() ) {
             $title_parts['title'] .= sprintf( ' – Página %d', $paged );
         } else {

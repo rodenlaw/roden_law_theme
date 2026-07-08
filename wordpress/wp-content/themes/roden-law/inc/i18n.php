@@ -524,10 +524,12 @@ function roden_register_es_sitemap_provider( $sitemaps ) {
         return;
     }
 
+    // Name must be plain [a-z]+ — core's sitemap rewrite patterns parse
+    // hyphenated names as provider-subtype and the URL 404s to HTML.
     $provider = new class() extends WP_Sitemaps_Provider {
         public function __construct() {
-            $this->name        = 'roden-es-hubs';
-            $this->object_type = 'roden-es-hubs';
+            $this->name        = 'eshubs';
+            $this->object_type = 'eshubs';
         }
 
         public function get_url_list( $page_num, $object_subtype = '' ) {
@@ -546,5 +548,5 @@ function roden_register_es_sitemap_provider( $sitemaps ) {
 
     // NOTE: $name/$object_type are protected on WP_Sitemaps_Provider — never
     // read them from outside the instance (fatals on every request).
-    $sitemaps->registry->add_provider( 'roden-es-hubs', $provider );
+    $sitemaps->registry->add_provider( 'eshubs', $provider );
 }
