@@ -385,10 +385,6 @@ h1, h2, h3, h4, h5, h6 {
 .bg-navy { background: var(--navy); }
 .bg-navy .section-title { color: var(--white); }
 .bg-navy .section-subtitle { color: var(--text-light); }
-.section-cta {
-    background: linear-gradient(135deg, var(--navy), var(--navy-dark));
-    padding: 72px 24px;
-}
 
 .section-header { margin-bottom: 40px; }
 .section-title { font-size: 28px; font-weight: 800; margin-bottom: 8px; }
