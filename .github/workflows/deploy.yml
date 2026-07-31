@@ -31,10 +31,23 @@ jobs:
           fetch-depth: 0
 
       - name: Setup SSH key
+        env:
+          WPE_KEY: ${{ secrets.WPE_SSHG_KEY_PRIVATE }}
         run: |
           mkdir -p ~/.ssh
-          echo "${{ secrets.WPE_SSHG_KEY_PRIVATE }}" > ~/.ssh/wpe_key
+          # printf, not echo: guarantees exactly one trailing newline, which
+          # OpenSSH requires. Written via env rather than direct interpolation
+          # so the value never becomes part of the script text.
+          printf '%s\n' "$WPE_KEY" > ~/.ssh/wpe_key
           chmod 600 ~/.ssh/wpe_key
+          # Fingerprint only — never the key. Confirms the secret survived
+          # transfer and identifies which key CI is actually using.
+          if ssh-keygen -lf ~/.ssh/wpe_key; then
+            echo "Key loaded OK (fingerprint above)."
+          else
+            echo "::error::The private key in WPE_SSHG_KEY_PRIVATE is malformed or truncated."
+            exit 1
+          fi
           ssh-keyscan -t rsa git.wpengine.com >> ~/.ssh/known_hosts 2>/dev/null
           cat >> ~/.ssh/config <<EOL
           Host git.wpengine.com
