@@ -92,7 +92,6 @@ jobs:
           set -o pipefail
           GW=rodenlawprod@rodenlawprod.ssh.wpengine.net
           THEME=wp-content/themes/roden-law
-          EXCL="! -path './blog images/*' ! -name '*.bak*' ! -name '.DS_Store'"
 
           ssh-keyscan -t rsa,ecdsa,ed25519 rodenlawprod.ssh.wpengine.net >> ~/.ssh/known_hosts 2>/dev/null || true
 
@@ -111,33 +110,53 @@ jobs:
             {
               echo "### ⚠️ Drift check did not run"
               echo
-              echo "\`WPE_GATEWAY_KEY_PRIVATE\` is not set, so **production was not checked**."
-              echo "Set it to a key registered on the WP Engine SSH gateway for \`rodenlawprod\`."
-              echo "It is a *different* registry from the git deploy key in \`WPE_SSHG_KEY_PRIVATE\`."
+              echo "`WPE_GATEWAY_KEY_PRIVATE` is not set, so **production was not checked**."
+              echo "Set it to a key registered on the WP Engine SSH gateway for `rodenlawprod`."
+              echo "It is a *different* registry from the git deploy key in `WPE_SSHG_KEY_PRIVATE`."
             } >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
 
-          if ! ssh -i ~/.ssh/wpe_gateway_key -o IdentitiesOnly=yes -o StrictHostKeyChecking=no -o ConnectTimeout=20 "$GW" \
-               "cd ~/sites/rodenlawprod/$THEME && find . -type f $EXCL -exec md5sum {} + | sort -k2" \
-               > /tmp/prod.md5 2>/dev/null; then
+          # The remote script goes over stdin, NOT as an ssh argument. Passing it
+          # as an argument makes the remote shell re-parse it, and the theme
+          # contains a directory with a space in its name ("blog images"), which
+          # word-splits and breaks find's expression — silently yielding zero
+          # files, so every deploy looks like total drift. Learned the hard way.
+          if ! ssh -i ~/.ssh/wpe_gateway_key -o IdentitiesOnly=yes -o StrictHostKeyChecking=no \
+                   -o BatchMode=yes -o ConnectTimeout=20 "$GW" 'bash -s' > /tmp/prod.md5 2>/dev/null <<'REMOTE'
+          cd ~/sites/rodenlawprod/wp-content/themes/roden-law || exit 1
+          find . -type f ! -path './blog images/*' ! -name '*.bak*' ! -name '.DS_Store' \
+            -exec md5sum {} + | sort -k2
+          REMOTE
+          then
             echo "::warning::Drift check INACTIVE — could not reach the SSH gateway."
             {
               echo "### ⚠️ Drift check did not run"
               echo
-              echo "Could not reach \`$GW\`, so **this deploy was not checked against production**."
-              echo "If anyone edited the server directly, those changes have just been destroyed."
-              echo
-              echo "\`WPE_GATEWAY_KEY_PRIVATE\` is set but was rejected. Confirm that key is"
-              echo "registered under WPE Portal → *SSH Gateway* for the \`rodenlawprod\` environment."
+              echo "Could not reach the gateway, so **this deploy was not checked against production**."
+              echo "Confirm the `WPE_GATEWAY_KEY_PRIVATE` key is registered under"
+              echo "WPE Portal → *SSH Gateway* for the `rodenlawprod` environment."
             } >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
 
-          ( cd "/tmp/deployed/$THEME" && eval "find . -type f $EXCL -exec md5sum {} +" | sort -k2 ) > /tmp/deployed.md5
+          if [ ! -s /tmp/prod.md5 ]; then
+            echo "::warning::Drift check INACTIVE — the production listing came back empty."
+            {
+              echo "### ⚠️ Drift check did not run"
+              echo
+              echo "The gateway responded but returned no files, so no comparison was possible."
+              echo "Treating this as inconclusive rather than as total drift."
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          ( cd "/tmp/deployed/$THEME" \
+            && find . -type f ! -path './blog images/*' ! -name '*.bak*' ! -name '.DS_Store' \
+                 -exec md5sum {} + | sort -k2 ) > /tmp/deployed.md5
 
           if diff -q /tmp/deployed.md5 /tmp/prod.md5 >/dev/null; then
-            echo "No drift: production matches the last deployed tree."
+            echo "No drift: production matches the last deployed tree ($(wc -l < /tmp/prod.md5) files)."
             exit 0
           fi
 
@@ -146,6 +165,8 @@ jobs:
             echo "### Production has drifted from the last deployed tree"
             echo
             echo "Files edited on the server and never committed. **Deploying now destroys them.**"
+            echo
+            echo "\`<\` only in the deployed tree · \`>\` only on / differing on production"
             echo
             echo '```'
             diff /tmp/deployed.md5 /tmp/prod.md5 | grep '^[<>]' | awk '{print $1, $3}' | sort -u -k2 | head -60
