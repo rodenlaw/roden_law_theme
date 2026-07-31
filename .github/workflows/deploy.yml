@@ -9,6 +9,11 @@ on:
   # Allow manual re-deploy from the Actions tab (handy for cache flushes,
   # rolling forward after a non-wordpress/ commit, or testing prod auth).
   workflow_dispatch:
+    inputs:
+      allow_drift:
+        description: 'Deploy even if production has uncommitted edits (DESTROYS them)'
+        type: boolean
+        default: false
 
 concurrency:
   group: deploy-wpengine
@@ -38,6 +43,77 @@ jobs:
             IdentitiesOnly yes
           EOL
 
+      # ─────────────────────────────────────────────────────────────────────
+      # Drift guard.
+      #
+      # The deploy below force-pushes, so anything edited on the server and not
+      # committed here is destroyed without warning. That has happened: 28 theme
+      # files were edited over SSH between 2026-07-10 and 07-31 while this repo
+      # sat untouched, and were one workflow run from being erased.
+      #
+      # The comparison is production-on-disk vs THE TREE WE LAST DEPLOYED (the
+      # WPE remote's main), NOT vs this commit — comparing against this commit
+      # would flag every legitimate change and block all deploys.
+      #
+      # Any difference means someone edited the server directly. Fails closed on
+      # real drift; fails OPEN if the check itself cannot run, so an SSH or
+      # tooling problem can never block a deploy.
+      # ─────────────────────────────────────────────────────────────────────
+      - name: Detect production drift
+        id: drift
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          GW=rodenlawprod@rodenlawprod.ssh.wpengine.net
+          THEME=wp-content/themes/roden-law
+          EXCL="! -path './blog images/*' ! -name '*.bak*' ! -name '.DS_Store'"
+
+          ssh-keyscan -t rsa,ecdsa,ed25519 rodenlawprod.ssh.wpengine.net >> ~/.ssh/known_hosts 2>/dev/null || true
+
+          git remote add wpe-prod git@git.wpengine.com:rodenlawprod.git 2>/dev/null || true
+          if ! git fetch -q wpe-prod main; then
+            echo "::warning::Could not fetch the deployed tree from WP Engine — drift check skipped."
+            exit 0
+          fi
+
+          mkdir -p /tmp/deployed
+          git archive FETCH_HEAD | tar x -C /tmp/deployed || {
+            echo "::warning::Could not extract the deployed tree — drift check skipped."; exit 0; }
+
+          if ! ssh -i ~/.ssh/wpe_key -o StrictHostKeyChecking=no -o ConnectTimeout=20 "$GW" \
+               "cd ~/sites/rodenlawprod/$THEME && find . -type f $EXCL -exec md5sum {} + | sort -k2" \
+               > /tmp/prod.md5 2>/dev/null; then
+            echo "::warning::Could not reach the SSH gateway — drift check skipped."
+            exit 0
+          fi
+
+          ( cd "/tmp/deployed/$THEME" && eval "find . -type f $EXCL -exec md5sum {} +" | sort -k2 ) > /tmp/deployed.md5
+
+          if diff -q /tmp/deployed.md5 /tmp/prod.md5 >/dev/null; then
+            echo "No drift: production matches the last deployed tree."
+            exit 0
+          fi
+
+          echo "drifted=true" >> "$GITHUB_OUTPUT"
+          {
+            echo "### Production has drifted from the last deployed tree"
+            echo
+            echo "Files edited on the server and never committed. **Deploying now destroys them.**"
+            echo
+            echo '```'
+            diff /tmp/deployed.md5 /tmp/prod.md5 | grep '^[<>]' | awk '{print $1, $3}' | sort -u -k2 | head -60
+            echo '```'
+            echo
+            echo "Commit the drift first. To deploy anyway and discard it, re-run with **allow_drift**."
+          } >> "$GITHUB_STEP_SUMMARY"
+          exit 1
+
+      - name: Stop if production has uncommitted edits
+        if: steps.drift.outcome == 'failure' && inputs.allow_drift != true
+        run: |
+          echo "::error::Production has uncommitted edits that this deploy would destroy. See the job summary. Commit them, or re-run with allow_drift to discard."
+          exit 1
+
       # `git subtree split` extracts the wordpress/ subtree so its contents
       # become the root of the pushed tree, which is what WPE expects.
       - name: Build deploy branch (subtree split of wordpress/)
@@ -49,5 +125,6 @@ jobs:
       # under: WPE Portal → rodenlawprod → SSH Gateway → Add SSH Key.
       - name: Deploy to prod (rodenlawprod)
         run: |
-          git remote add wpe-prod git@git.wpengine.com:rodenlawprod.git
+          # The drift-check step may already have added this remote.
+          git remote add wpe-prod git@git.wpengine.com:rodenlawprod.git 2>/dev/null || true
           git push wpe-prod deploy-branch:main --force
