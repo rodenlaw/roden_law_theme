@@ -33,6 +33,7 @@ jobs:
       - name: Setup SSH key
         env:
           WPE_KEY: ${{ secrets.WPE_SSHG_KEY_PRIVATE }}
+          WPE_GATEWAY_KEY: ${{ secrets.WPE_GATEWAY_KEY_PRIVATE }}
         run: |
           mkdir -p ~/.ssh
           # printf, not echo: guarantees exactly one trailing newline, which
@@ -48,6 +49,18 @@ jobs:
             echo "::error::The private key in WPE_SSHG_KEY_PRIVATE is malformed or truncated."
             exit 1
           fi
+          # Separate key for the SSH gateway. WP Engine keeps two independent
+          # key registries — git deploy keys are per-environment, gateway keys
+          # are per-user account — and a key in one is NOT valid in the other.
+          # Optional: if unset, the drift check simply reports itself inactive.
+          if [ -n "${WPE_GATEWAY_KEY:-}" ]; then
+            printf '%s\n' "$WPE_GATEWAY_KEY" > ~/.ssh/wpe_gateway_key
+            chmod 600 ~/.ssh/wpe_gateway_key
+            ssh-keygen -lf ~/.ssh/wpe_gateway_key >/dev/null 2>&1 \
+              && echo "Gateway key loaded OK." \
+              || echo "::warning::WPE_GATEWAY_KEY_PRIVATE is malformed — drift check will be inactive."
+          fi
+
           ssh-keyscan -t rsa git.wpengine.com >> ~/.ssh/known_hosts 2>/dev/null
           cat >> ~/.ssh/config <<EOL
           Host git.wpengine.com
@@ -93,7 +106,19 @@ jobs:
           git archive FETCH_HEAD | tar x -C /tmp/deployed || {
             echo "::warning::Could not extract the deployed tree — drift check skipped."; exit 0; }
 
-          if ! ssh -i ~/.ssh/wpe_key -o StrictHostKeyChecking=no -o ConnectTimeout=20 "$GW" \
+          if [ ! -f ~/.ssh/wpe_gateway_key ]; then
+            echo "::warning::Drift check INACTIVE — WPE_GATEWAY_KEY_PRIVATE is not set."
+            {
+              echo "### ⚠️ Drift check did not run"
+              echo
+              echo "\`WPE_GATEWAY_KEY_PRIVATE\` is not set, so **production was not checked**."
+              echo "Set it to a key registered on the WP Engine SSH gateway for \`rodenlawprod\`."
+              echo "It is a *different* registry from the git deploy key in \`WPE_SSHG_KEY_PRIVATE\`."
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          if ! ssh -i ~/.ssh/wpe_gateway_key -o IdentitiesOnly=yes -o StrictHostKeyChecking=no -o ConnectTimeout=20 "$GW" \
                "cd ~/sites/rodenlawprod/$THEME && find . -type f $EXCL -exec md5sum {} + | sort -k2" \
                > /tmp/prod.md5 2>/dev/null; then
             echo "::warning::Drift check INACTIVE — could not reach the SSH gateway."
@@ -103,9 +128,8 @@ jobs:
               echo "Could not reach \`$GW\`, so **this deploy was not checked against production**."
               echo "If anyone edited the server directly, those changes have just been destroyed."
               echo
-              echo "The deploy key reaches \`git.wpengine.com\` but not the SSH gateway. To activate:"
-              echo "WPE Portal → **rodenlawprod** → *SSH Gateway* → **Add SSH Key** → paste the public"
-              echo "key matching the \`WPE_SSHG_KEY_PRIVATE\` secret."
+              echo "\`WPE_GATEWAY_KEY_PRIVATE\` is set but was rejected. Confirm that key is"
+              echo "registered under WPE Portal → *SSH Gateway* for the \`rodenlawprod\` environment."
             } >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
