@@ -312,6 +312,20 @@ function roden_pa_author_meta_box( $post ) {
         </select>
     </p>
     <p class="description"><?php esc_html_e( 'Attorney for "About the Author" section and Person schema. Required for E-E-A-T.', 'roden-law' ); ?></p>
+
+    <?php
+    // Review date is separate from attribution on purpose: the attorney above is
+    // who the page is credited to, this is when someone last checked it is still
+    // correct. Only the latter licenses reviewedBy/lastReviewed in schema.
+    $reviewed = get_post_meta( $post->ID, '_roden_last_reviewed', true );
+    ?>
+    <hr style="margin:14px 0;">
+    <p>
+        <label for="roden_last_reviewed"><strong><?php esc_html_e( 'Last Reviewed:', 'roden-law' ); ?></strong></label><br>
+        <input type="date" id="roden_last_reviewed" name="_roden_last_reviewed"
+               value="<?php echo esc_attr( $reviewed ); ?>" style="width:100%;">
+    </p>
+    <p class="description"><?php esc_html_e( 'Date an attorney last verified this page is accurate. Publishes as lastReviewed + reviewedBy. Leave blank if no review has happened — do not guess, an unverified review claim is worse than none. Set this after any legal change, since template edits do not update the post\'s modified date.', 'roden-law' ); ?></p>
     <?php
 }
 
@@ -1034,6 +1048,15 @@ function roden_save_meta_fields( $post_id ) {
          wp_verify_nonce( $_POST['_roden_pa_author_nonce'], 'roden_pa_author_nonce' ) ) {
         update_post_meta( $post_id, '_roden_author_attorney',
             absint( $_POST['_roden_author_attorney'] ?? 0 ) );
+
+        // Store only a valid Y-m-d, and delete rather than store an empty
+        // string — schema treats "set" as the firm asserting a review happened.
+        $reviewed = sanitize_text_field( $_POST['_roden_last_reviewed'] ?? '' );
+        if ( $reviewed && preg_match( '/^\d{4}-\d{2}-\d{2}$/', $reviewed ) && strtotime( $reviewed ) ) {
+            update_post_meta( $post_id, '_roden_last_reviewed', $reviewed );
+        } else {
+            delete_post_meta( $post_id, '_roden_last_reviewed' );
+        }
     }
 
     /* ── Key Takeaways ─────────────────────────────────────────── */

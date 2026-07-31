@@ -483,7 +483,7 @@ function roden_schema_legal_service( $firm ) {
             array( '@type' => 'State', 'name' => 'Georgia' ),
             array( '@type' => 'State', 'name' => 'South Carolina' ),
         ),
-        'serviceType' => 'Personal Injury Law',
+        'serviceType' => roden_schema_service_type(),
         'knowsAbout'  => array(
             'Car Accidents', 'Truck Accidents', 'Slip and Fall',
             'Motorcycle Accidents', 'Medical Malpractice', 'Wrongful Death',
@@ -1599,6 +1599,101 @@ function roden_schema_speakable_homepage( $firm ) {
 }
 
 /**
+ * Editorial-review fields for a page, when a review date has been recorded.
+ *
+ * `post_modified` tracks DATABASE writes, so it misses everything that changes
+ * a page through template code. On 2026-07-31 the workers' comp cluster had its
+ * filing deadlines, steps, schema and headings corrected while every page still
+ * advertised a post_modified up to five months old, and the timestamps had to
+ * be patched by hand. That blind spot returns on the next template change.
+ *
+ * `_roden_last_reviewed` (Y-m-d) is the firm's own answer to "when did an
+ * attorney last check this page?" — it survives template deploys and post
+ * re-saves, and for YMYL legal content it is a truer freshness signal than a
+ * database timestamp.
+ *
+ * Setting it is also what licenses `reviewedBy`. Authorship alone never did:
+ * `_roden_author_attorney` records attribution, not review, and asserting a
+ * review that may not have happened is not a trust signal worth manufacturing.
+ *
+ * @param int   $post_id Post ID.
+ * @param array $firm    Firm data from roden_firm_data().
+ * @return array Fields to merge into a WebPage/Article node (empty if unset).
+ */
+function roden_schema_review_fields( $post_id, $firm ) {
+    $reviewed = trim( (string) get_post_meta( $post_id, '_roden_last_reviewed', true ) );
+    if ( '' === $reviewed ) {
+        return array();
+    }
+
+    $ts = strtotime( $reviewed );
+    if ( ! $ts ) {
+        return array();
+    }
+
+    return array(
+        'lastReviewed' => gmdate( 'Y-m-d', $ts ),
+        'reviewedBy'   => roden_schema_author_node( $post_id, $firm ),
+    );
+}
+
+/**
+ * Resolve schema.org serviceType for the current page.
+ *
+ * Every LegalService node sitewide declared 'Personal Injury Law'. That is
+ * accurate for the firm but imprecise on a practice-area page, and workers'
+ * compensation is not personal injury law at all — it is a separate statutory
+ * scheme. Narrowing it gives search and AI engines a truer entity signal.
+ *
+ * Keyed by the language-neutral pillar slug so Spanish pages (es-*) resolve to
+ * the same English serviceType: the property is a machine-facing category, not
+ * display copy, and splitting it by language would fragment the entity.
+ *
+ * @return string serviceType label.
+ */
+function roden_schema_service_type() {
+    $default = 'Personal Injury Law';
+
+    if ( ! function_exists( 'roden_current_pa_slug' ) ) {
+        return $default;
+    }
+
+    $slug = preg_replace( '/^es-/', '', (string) roden_current_pa_slug() );
+    if ( ! $slug ) {
+        return $default;
+    }
+
+    $types = apply_filters( 'roden_schema_service_types', array(
+        'workers-compensation-lawyers'      => 'Workers\' Compensation Law',
+        'medical-malpractice-lawyers'       => 'Medical Malpractice Law',
+        'nursing-home-abuse-lawyers'        => 'Nursing Home Abuse Law',
+        'wrongful-death-lawyers'            => 'Wrongful Death Law',
+        'maritime-injury-lawyers'           => 'Maritime and Admiralty Law',
+        'product-liability-lawyers'         => 'Product Liability Law',
+        'premises-liability-lawyers'        => 'Premises Liability Law',
+        'slip-and-fall-lawyers'             => 'Premises Liability Law',
+        'dog-bite-lawyers'                  => 'Premises Liability Law',
+        'construction-accident-lawyers'     => 'Construction Injury Law',
+        'car-accident-lawyers'              => 'Car Accident Law',
+        'truck-accident-lawyers'            => 'Truck Accident Law',
+        'motorcycle-accident-lawyers'       => 'Motorcycle Accident Law',
+        'pedestrian-accident-lawyers'       => 'Pedestrian Accident Law',
+        'bicycle-accident-lawyers'          => 'Bicycle Accident Law',
+        'boating-accident-lawyers'          => 'Boating Accident Law',
+        'electric-scooter-accident-lawyers' => 'Motor Vehicle Accident Law',
+        'e-bike-accident-lawyers'           => 'Motor Vehicle Accident Law',
+        'atv-side-by-side-accident-lawyers' => 'Motor Vehicle Accident Law',
+        'golf-cart-accident-lawyers'        => 'Motor Vehicle Accident Law',
+        'brain-injury-lawyers'              => 'Catastrophic Injury Law',
+        'spinal-cord-injury-lawyers'        => 'Catastrophic Injury Law',
+        'burn-injury-lawyers'               => 'Catastrophic Injury Law',
+        'personal-injury-lawyers'           => $default,
+    ) );
+
+    return isset( $types[ $slug ] ) ? $types[ $slug ] : $default;
+}
+
+/**
  * Build the author node for a page, preferring the linked attorney.
  *
  * Legal content is YMYL, where named authorship is a material E-E-A-T signal.
@@ -1641,7 +1736,7 @@ function roden_schema_speakable_practice_area() {
     // url omitted — @id encodes the URL, and a sibling LegalService entity on
     // the same page already declares the canonical url, causing a duplicate
     // warning when Google merges entities for the rich result.
-    roden_json_ld( array(
+    roden_json_ld( array_merge( array(
         '@context'      => 'https://schema.org',
         '@type'         => 'WebPage',
         '@id'           => $url . '#webpage',
@@ -1664,7 +1759,7 @@ function roden_schema_speakable_practice_area() {
                 '.ai-stats-block',
             ),
         ),
-    ) );
+    ), roden_schema_review_fields( get_the_ID(), $firm ) ) );
 }
 
 function roden_schema_speakable_location() {
