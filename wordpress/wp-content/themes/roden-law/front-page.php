@@ -229,7 +229,7 @@ if ( 'es' === $home_lang ) {
                         <a href="tel:<?php echo esc_attr( $office['phone_raw'] ); ?>" class="location-phone">
                             <?php echo esc_html( $office['phone'] ); ?>
                         </a>
-                        <a href="<?php echo esc_url( roden_lang_home_url( $home_lang, '/locations/' . $office['state_slug'] . '/' . sanitize_title( $office['market_name'] ) . '/' ) ); ?>"
+                        <a href="<?php echo esc_url( roden_lang_home_url( $home_lang, '/locations/' . $office['state_slug'] . '/' . sanitize_title( $office['market_name'] ) . '/' ) ); ?>" aria-label="<?php echo esc_attr( sprintf( /* translators: %s: office market name. */ __( 'View %s office', 'roden-law' ), $office['market_name'] ) ); ?>"
                            class="location-link">
                             <?php esc_html_e( 'View Office', 'roden-law' ); ?> &rarr;
                         </a>

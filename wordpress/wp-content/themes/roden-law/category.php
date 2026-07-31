@@ -65,7 +65,7 @@ $firm = roden_firm_data();
                 </div>
 
                 <div class="sidebar-widget">
-                    <h3 class="widget-title">Categories</h3>
+                    <h2 class="widget-title">Categories</h2>
                     <ul class="sidebar-links">
                         <?php
                         $cats = get_categories(['hide_empty'=>true]);
@@ -78,7 +78,7 @@ $firm = roden_firm_data();
                 </div>
 
                 <div class="sidebar-widget">
-                    <h3 class="widget-title">Practice Areas</h3>
+                    <h2 class="widget-title">Practice Areas</h2>
                     <?php
                     $pas = get_posts(['post_type'=>'practice_area','posts_per_page'=>6,'orderby'=>'menu_order','order'=>'ASC']);
                     echo '<ul class="sidebar-links">';

@@ -75,7 +75,7 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
             <!-- Author Box -->
             <?php if ( $atty ) : ?>
                 <div class="author-attribution">
-                    <h3>About the Author</h3>
+                    <h2>About the Author</h2>
                     <div class="author-card">
                         <div class="author-photo">
                             <?php if ( has_post_thumbnail( $atty ) ) : ?>
@@ -85,7 +85,7 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
                             <?php endif; ?>
                         </div>
                         <div class="author-info">
-                            <h4><a href="<?php echo esc_url(get_permalink($atty)); ?>"><?php echo esc_html($atty->post_title); ?></a></h4>
+                            <h3><a href="<?php echo esc_url(get_permalink($atty)); ?>"><?php echo esc_html($atty->post_title); ?></a></h3>
                             <span class="author-title"><?php echo esc_html($atty_title); ?></span>
                             <?php if ( $atty->post_excerpt ) : ?>
                                 <p><?php echo wp_kses_post($atty->post_excerpt); ?></p>
@@ -124,7 +124,7 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
 
                 <!-- Categories -->
                 <div class="sidebar-widget">
-                    <h3 class="widget-title">Categories</h3>
+                    <h2 class="widget-title">Categories</h2>
                     <ul class="sidebar-links">
                         <?php
                         $cats = get_terms(['taxonomy'=>'practice_category','hide_empty'=>true]);
@@ -137,7 +137,7 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
 
                 <!-- Recent Posts -->
                 <div class="sidebar-widget">
-                    <h3 class="widget-title">Recent Posts</h3>
+                    <h2 class="widget-title">Recent Posts</h2>
                     <ul class="sidebar-posts">
                         <?php
                         $recent = get_posts(['posts_per_page'=>5,'exclude'=>[$post_id]]);
@@ -155,7 +155,7 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
 
                 <!-- Practice Areas -->
                 <div class="sidebar-widget">
-                    <h3 class="widget-title">Practice Areas</h3>
+                    <h2 class="widget-title">Practice Areas</h2>
                     <?php
                     $pas = get_posts(['post_type'=>'practice_area','posts_per_page'=>6,'orderby'=>'menu_order','order'=>'ASC']);
                     echo '<ul class="sidebar-links">';

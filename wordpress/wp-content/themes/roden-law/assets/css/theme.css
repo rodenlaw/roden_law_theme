@@ -2273,3 +2273,11 @@ body.nav-open { overflow: hidden; }
     h1, h2, h3 { page-break-after: avoid; }
     .content-section, .entry-content { page-break-inside: avoid; }
 }
+
+/* a11y fix 2026-07: footer heading levels corrected (h4/h5/h6 -> h2/h3/h4);
+   keep the previous compact sizing for the re-leveled elements */
+.footer-state-heading { font-size: 13px; margin: 0 0 6px; }
+.footer-office h4 { margin: 0; font-size: 11px; }
+
+/* a11y fix 2026-07: ai-stats-table first column is now th[scope=row]; keep td look */
+.ai-stats-table th { text-align: left; font-weight: inherit; }

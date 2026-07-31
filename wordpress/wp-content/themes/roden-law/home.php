@@ -88,7 +88,7 @@ $is_es = function_exists( 'roden_current_lang' ) && 'es' === roden_current_lang(
 
                 <?php if ( ! $is_es ) : // Categories are English-only taxonomy archives. ?>
                 <div class="sidebar-widget">
-                    <h3 class="widget-title">Categories</h3>
+                    <h2 class="widget-title">Categories</h2>
                     <ul class="sidebar-links">
                         <?php
                         $cats = get_categories(['hide_empty'=>true]);
@@ -101,7 +101,7 @@ $is_es = function_exists( 'roden_current_lang' ) && 'es' === roden_current_lang(
                 <?php endif; ?>
 
                 <div class="sidebar-widget">
-                    <h3 class="widget-title"><?php echo $is_es ? 'Áreas de Práctica' : 'Practice Areas'; ?></h3>
+                    <h2 class="widget-title"><?php echo $is_es ? 'Áreas de Práctica' : 'Practice Areas'; ?></h2>
                     <?php
                     // Locale-filter so ES pillars never leak into the EN sidebar
                     // (and the ES hub links Spanish pillars, not English ones).

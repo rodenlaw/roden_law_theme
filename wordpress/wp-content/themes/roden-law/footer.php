@@ -37,7 +37,7 @@ $footer_sc_pillars = array(
     'Personal Injury'       => '/south-carolina-personal-injury-lawyer/',
 );
 ?>
-    </div><!-- .site-content -->
+    </main><!-- .site-content -->
 
     <!-- Site Footer -->
     <footer id="colophon" class="site-footer" role="contentinfo">
@@ -48,7 +48,7 @@ $footer_sc_pillars = array(
 
                 <!-- Column 1: Firm Info -->
                 <div class="footer-col footer-about">
-                    <h4 class="footer-heading"><?php echo esc_html( $firm['name'] ); ?></h4>
+                    <h2 class="footer-heading"><?php echo esc_html( $firm['name'] ); ?></h2>
                     <p class="footer-description">
                         <?php echo esc_html( $firm['trust_stats']['recovered'] ); ?>
                         <?php esc_html_e( 'recovered for injury victims across Georgia and South Carolina. No fees unless we win.', 'roden-law' ); ?>
@@ -94,13 +94,13 @@ $footer_sc_pillars = array(
 
                 <!-- Column 2: Practice Areas -->
                 <div class="footer-col footer-practice-areas">
-                    <h4 class="footer-heading footer-heading-accent">
+                    <h2 class="footer-heading footer-heading-accent">
                         <?php esc_html_e( 'Practice Areas', 'roden-law' ); ?>
-                    </h4>
+                    </h2>
                     <ul class="footer-links">
                         <?php foreach ( $footer_practice_areas as $label => $slug ) : ?>
                             <li>
-                                <a href="<?php echo esc_url( roden_lang_home_url( $footer_lang, '/practice-areas/' . $slug . '/' ) ); ?>">
+                                <a href="<?php echo esc_url( roden_lang_home_url( $footer_lang, '/practice-areas/' . $slug . '/' ) ); ?>" aria-label="<?php echo esc_attr( sprintf( /* translators: %s: practice area label. */ __( '%s — all locations', 'roden-law' ), wp_strip_all_tags( $label ) ) ); ?>">
                                     <?php echo esc_html( $label ); ?>
                                 </a>
                             </li>
@@ -120,9 +120,9 @@ $footer_sc_pillars = array(
 
                 <!-- Column 3: Our Offices — grouped by state with state-landing header links -->
                 <div class="footer-col footer-offices-col">
-                    <h4 class="footer-heading footer-heading-accent">
+                    <h2 class="footer-heading footer-heading-accent">
                         <?php esc_html_e( 'Our Offices', 'roden-law' ); ?>
-                    </h4>
+                    </h2>
                     <?php
                     $state_buckets = array(
                         array(
@@ -147,14 +147,14 @@ $footer_sc_pillars = array(
                             : home_url( '/locations/' . $bucket['state_slug'] . '/' );
                     ?>
                         <div class="footer-state-bucket">
-                            <h5 class="footer-state-heading">
+                            <h3 class="footer-state-heading">
                                 <a href="<?php echo esc_url( $state_landing_url ); ?>">
                                     <?php
                                     /* translators: %s: state name (Georgia or South Carolina) */
                                     echo esc_html( sprintf( _x( '%s Offices', 'state name', 'roden-law' ), $bucket['state_full'] ) );
                                     ?>
                                 </a>
-                            </h5>
+                            </h3>
                             <?php foreach ( $firm['offices'] as $key => $office ) :
                                 if ( $office['state'] !== $bucket['state_abbr'] ) {
                                     continue;
@@ -163,11 +163,11 @@ $footer_sc_pillars = array(
                                 $office_url = roden_lang_home_url( $footer_lang, '/locations/' . $office['state_slug'] . '/' . $city_slug . '/' );
                             ?>
                                 <div class="footer-office">
-                                    <h6>
+                                    <h4>
                                         <a href="<?php echo esc_url( $office_url ); ?>">
                                             <?php echo esc_html( $office['market_name'] . ', ' . $office['state'] ); ?>
                                         </a>
-                                    </h6>
+                                    </h4>
                                     <address>
                                         <?php echo esc_html( $office['street'] ); ?><br>
                                         <a href="tel:<?php echo esc_attr( $is_local_page ? $office['phone_raw'] : $firm['phone_raw'] ); ?>">
@@ -182,14 +182,14 @@ $footer_sc_pillars = array(
 
                 <!-- Column 4: South Carolina statewide pillars -->
                 <div class="footer-col footer-sc-statewide">
-                    <h4 class="footer-heading footer-heading-accent">
+                    <h2 class="footer-heading footer-heading-accent">
                         <?php esc_html_e( 'South Carolina', 'roden-law' ); ?>
-                    </h4>
+                    </h2>
                     <ul class="footer-links">
                         <?php // All six SC pillars have live /es/ twins — link the current locale's version.
                         foreach ( $footer_sc_pillars as $label => $path ) : ?>
                             <li>
-                                <a href="<?php echo esc_url( roden_lang_home_url( $footer_lang, $path ) ); ?>">
+                                <a href="<?php echo esc_url( roden_lang_home_url( $footer_lang, $path ) ); ?>" aria-label="<?php echo esc_attr( sprintf( /* translators: %s: practice area label. */ __( '%s — South Carolina', 'roden-law' ), wp_strip_all_tags( $label ) ) ); ?>">
                                     <?php echo wp_kses( $label, array() ); ?>
                                 </a>
                             </li>
@@ -199,9 +199,9 @@ $footer_sc_pillars = array(
 
                 <!-- Column 5: Free Case Review CTA -->
                 <div class="footer-col footer-form-col">
-                    <h4 class="footer-heading footer-heading-accent">
+                    <h2 class="footer-heading footer-heading-accent">
                         <?php esc_html_e( 'Free Case Review', 'roden-law' ); ?>
-                    </h4>
+                    </h2>
                     <p class="footer-cta-text"><?php esc_html_e( 'Injured? Find out what your case is worth. No fees unless we win.', 'roden-law' ); ?></p>
                     <a href="<?php echo esc_url( roden_lang_home_url( $footer_lang, '/contact/' ) ); ?>" class="footer-cta-btn"><?php esc_html_e( 'Get Your Free Case Review', 'roden-law' ); ?></a>
                 </div>

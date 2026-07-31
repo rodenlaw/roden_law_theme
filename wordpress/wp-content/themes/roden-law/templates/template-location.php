@@ -521,7 +521,7 @@ if ( $loc_expert_quote && ! empty( $location_attorneys ) ) {
                 <a href="tel:<?php echo esc_attr( $o['phone_raw'] ); ?>" class="location-phone">
                     <?php echo esc_html( $o['phone'] ); ?>
                 </a>
-                <a href="<?php echo esc_url( $office_url ); ?>" class="location-link"><?php esc_html_e( 'View Office', 'roden-law' ); ?> &rarr;</a>
+                <a href="<?php echo esc_url( $office_url ); ?>" aria-label="<?php echo esc_attr( sprintf( /* translators: %s: office market name. */ __( 'View %s office', 'roden-law' ), $o['market_name'] ) ); ?>" class="location-link"><?php esc_html_e( 'View Office', 'roden-law' ); ?> &rarr;</a>
             </div>
             <?php endforeach; ?>
         </div>

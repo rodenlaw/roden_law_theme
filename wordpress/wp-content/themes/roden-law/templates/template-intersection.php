@@ -98,7 +98,7 @@ $related_subtypes = get_posts( array(
 
                 <!-- NAP Block -->
                 <div class="nap-block">
-                    <h3 class="nap-name"><?php echo esc_html( $office['name'] ); ?></h3>
+                    <h2 class="nap-name"><?php echo esc_html( $office['name'] ); ?></h2>
                     <div class="nap-details">
                         <div class="nap-col">
                             <span class="nap-label"><?php esc_html_e( 'Address', 'roden-law' ); ?></span>
@@ -545,7 +545,7 @@ $related_subtypes = get_posts( array(
                 <!-- Back to Pillar -->
                 <?php if ( $parent_post ) : ?>
                 <div class="sidebar-widget">
-                    <h3 class="widget-title"><?php esc_html_e( 'Main Practice Area', 'roden-law' ); ?></h3>
+                    <h2 class="widget-title"><?php esc_html_e( 'Main Practice Area', 'roden-law' ); ?></h2>
                     <a href="<?php echo esc_url( $parent_url ); ?>" class="sidebar-back-link">
                         &larr; <?php echo esc_html( $parent_title ); ?>
                     </a>
@@ -555,7 +555,7 @@ $related_subtypes = get_posts( array(
                 <!-- Related Sub-Types -->
                 <?php if ( $related_subtypes ) : ?>
                 <div class="sidebar-widget">
-                    <h3 class="widget-title"><?php esc_html_e( 'Related Case Types', 'roden-law' ); ?></h3>
+                    <h2 class="widget-title"><?php esc_html_e( 'Related Case Types', 'roden-law' ); ?></h2>
                     <ul class="sidebar-links">
                         <?php foreach ( $related_subtypes as $sib ) : ?>
                             <li>
@@ -570,7 +570,7 @@ $related_subtypes = get_posts( array(
 
                 <!-- Sidebar NAP Card -->
                 <div class="sidebar-widget sidebar-nap-card">
-                    <h3 class="nap-card-name"><?php echo esc_html( $office['name'] ); ?></h3>
+                    <h3 class="nap-card-name"><?php echo esc_html( $office['name'] ); ?></h2>
                     <address>
                         <?php echo esc_html( $office['street'] ); ?><br>
                         <?php echo esc_html( $office['city'] . ', ' . $office['state'] . ' ' . $office['zip'] ); ?>
@@ -586,7 +586,7 @@ $related_subtypes = get_posts( array(
                 <!-- Filing Deadline (single state) -->
                 <?php if ( $jurisdiction ) : ?>
                 <div class="sidebar-widget sidebar-deadlines">
-                    <h3 class="widget-title"><?php printf( /* translators: %s: state name. */ esc_html__( '%s Filing Deadline', 'roden-law' ), esc_html( $jurisdiction['state_full'] ) ); ?></h3>
+                    <h2 class="widget-title"><?php printf( /* translators: %s: state name. */ esc_html__( '%s Filing Deadline', 'roden-law' ), esc_html( $jurisdiction['state_full'] ) ); ?></h2>
                     <div class="deadline-badges">
                         <div class="deadline-badge <?php echo $state_key === 'GA' ? 'deadline-ga' : 'deadline-sc'; ?>" style="flex:1;">
                             <span class="deadline-years"><?php printf( /* translators: %s: number of years. */ esc_html__( '%s yr', 'roden-law' ), esc_html( $jurisdiction['statute_years'] ) ); ?></span>
@@ -599,7 +599,7 @@ $related_subtypes = get_posts( array(
 
                 <!-- Why Roden Law -->
                 <div class="sidebar-widget sidebar-why-us">
-                    <h3 class="widget-title"><?php esc_html_e( 'Why Roden Law?', 'roden-law' ); ?></h3>
+                    <h2 class="widget-title"><?php esc_html_e( 'Why Roden Law?', 'roden-law' ); ?></h2>
                     <ul class="why-us-list">
                         <li><?php printf( /* translators: %s: amount recovered, e.g. "$300M+". */ esc_html__( '%s Recovered for Clients', 'roden-law' ), esc_html( $firm['recovered'] ) ); ?></li>
                         <li><?php printf( /* translators: %s: star rating, e.g. "4.9". */ esc_html__( '%s Average Client Rating', 'roden-law' ), esc_html( $firm['rating'] ) ); ?></li>

@@ -448,8 +448,8 @@ function roden_register_sidebars() {
         'description'   => __( 'Sidebar for practice area pages', 'roden-law' ),
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget'  => '</div>',
-        'before_title'  => '<h3 class="widget-title">',
-        'after_title'   => '</h3>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
     ) );
 
     register_sidebar( array(
@@ -458,8 +458,8 @@ function roden_register_sidebars() {
         'description'   => __( 'Sidebar for location pages', 'roden-law' ),
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget'  => '</div>',
-        'before_title'  => '<h3 class="widget-title">',
-        'after_title'   => '</h3>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
     ) );
 
     register_sidebar( array(
@@ -468,8 +468,8 @@ function roden_register_sidebars() {
         'description'   => __( 'Sidebar for blog and resource pages', 'roden-law' ),
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget'  => '</div>',
-        'before_title'  => '<h3 class="widget-title">',
-        'after_title'   => '</h3>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
     ) );
 
     register_sidebar( array(
@@ -478,8 +478,8 @@ function roden_register_sidebars() {
         'description'   => __( 'Footer widget area', 'roden-law' ),
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget'  => '</div>',
-        'before_title'  => '<h3 class="widget-title">',
-        'after_title'   => '</h3>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
     ) );
 }
 
@@ -1008,3 +1008,18 @@ function roden_load_more_js() {
     </script>
     <?php
 }
+
+/**
+ * a11y (2026-07): practice-area items in nav menus share visible text with
+ * in-content city links (-> /<pa>/<city>/) and footer state-silo links.
+ * Qualify the nav side's accessible name so agents and screen readers can
+ * tell the destinations apart; visible text is unchanged and included in
+ * the accessible name (WCAG 2.5.3 label-in-name).
+ */
+add_filter( 'nav_menu_link_attributes', function ( $atts, $item ) {
+    if ( 'practice_area' === $item->object && empty( $atts['aria-label'] ) ) {
+        /* translators: %s: practice area menu label. */
+        $atts['aria-label'] = sprintf( __( '%s — all locations', 'roden-law' ), wp_strip_all_tags( $item->title ) );
+    }
+    return $atts;
+}, 10, 2 );

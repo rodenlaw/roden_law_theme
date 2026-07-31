@@ -105,7 +105,7 @@ $firm = roden_firm_data();
         </div>
     </header>
 
-    <div id="main-content" class="site-content">
+    <main id="main-content" class="site-content">
 <?php
 
 /**

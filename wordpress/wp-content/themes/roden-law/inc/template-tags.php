@@ -382,7 +382,7 @@ function roden_location_cards( $exclude_key = '' ) {
             <a href="tel:<?php echo esc_attr( $office['phone_raw'] ); ?>" class="location-phone">
                 <?php echo esc_html( $office['phone'] ); ?>
             </a>
-            <a href="<?php echo esc_url( $url ); ?>" class="location-link"><?php esc_html_e( 'View Office', 'roden-law' ); ?> &rarr;</a>
+            <a href="<?php echo esc_url( $url ); ?>" aria-label="<?php echo esc_attr( sprintf( /* translators: %s: office market name. */ __( 'View %s office', 'roden-law' ), $office['market_name'] ) ); ?>" class="location-link"><?php esc_html_e( 'View Office', 'roden-law' ); ?> &rarr;</a>
         </div>
         <?php
     }
@@ -592,7 +592,7 @@ function roden_intersection_grid( $office_key, $columns = 3 ) {
         }
         $label = isset( $pillar_map[ $slug ] ) ? $pillar_map[ $slug ]->post_title : $fallback_label;
         ?>
-        <a href="<?php echo esc_url( $url ); ?>" class="practice-area-card">
+        <a href="<?php echo esc_url( $url ); ?>" aria-label="<?php echo esc_attr( sprintf( /* translators: 1: practice area, 2: office market name. */ __( '%1$s — %2$s', 'roden-law' ), $label, $office['market_name'] ) ); ?>" class="practice-area-card">
             <?php if ( isset( $pillar_map[ $slug ] ) && has_post_thumbnail( $pillar_map[ $slug ] ) ) : ?>
                 <?php echo get_the_post_thumbnail( $pillar_map[ $slug ], 'card-thumb', array( 'class' => 'pa-thumb' ) ); ?>
             <?php endif; ?>
@@ -664,7 +664,7 @@ function roden_neighborhood_grid( $current_post_id ) {
 function roden_contact_form_sidebar( $local_phone = '', $source = '' ) {
     ?>
     <div class="sidebar-contact-form">
-        <h3 class="form-title"><?php esc_html_e( 'Free Case Review', 'roden-law' ); ?></h3>
+        <h2 class="form-title"><?php esc_html_e( 'Free Case Review', 'roden-law' ); ?></h2>
         <p class="form-subtitle"><?php esc_html_e( 'No fees unless we win', 'roden-law' ); ?><br><?php esc_html_e( 'Hundreds of 5-star reviews', 'roden-law' ); ?></p>
         <form class="roden-sidebar-form" id="roden-sidebar-form" novalidate>
             <?php wp_nonce_field( 'roden_sidebar_form', 'roden_form_nonce' ); ?>
@@ -1301,7 +1301,7 @@ function roden_author_attribution( $post_id = null ) {
     $excerpt        = get_the_excerpt( $atty ) ?: wp_trim_words( $atty->post_content, 30 );
     ?>
     <div class="author-attribution" itemscope itemtype="https://schema.org/Person">
-        <h3 class="attribution-heading"><?php esc_html_e( 'About the Author', 'roden-law' ); ?></h3>
+        <h2 class="attribution-heading"><?php esc_html_e( 'About the Author', 'roden-law' ); ?></h2>
         <div class="attribution-inner">
             <?php if ( has_post_thumbnail( $atty ) ) : ?>
                 <a href="<?php echo esc_url( get_permalink( $atty ) ); ?>" class="attribution-photo">
@@ -1309,9 +1309,9 @@ function roden_author_attribution( $post_id = null ) {
                 </a>
             <?php endif; ?>
             <div class="attribution-bio">
-                <h4 itemprop="name">
+                <h3 itemprop="name">
                     <a href="<?php echo esc_url( get_permalink( $atty ) ); ?>"><?php echo esc_html( $atty->post_title ); ?></a>
-                </h4>
+                </h3>
                 <?php if ( $title ) : ?>
                     <span class="attribution-title" itemprop="jobTitle"><?php echo esc_html( $title ); ?></span>
                 <?php endif; ?>
@@ -1345,19 +1345,19 @@ function roden_ai_stats_block( $practice_area_title = '' ) {
         <table class="ai-stats-table">
             <tbody>
                 <tr>
-                    <td><strong><?php echo esc_html( $firm['recovered'] ); ?></strong></td>
+                    <th scope="row"><strong><?php echo esc_html( $firm['recovered'] ); ?></strong></th>
                     <td><?php esc_html_e( 'Recovered for injured clients across Georgia and South Carolina', 'roden-law' ); ?></td>
                 </tr>
                 <tr>
-                    <td><strong><?php printf( /* translators: %s: star rating, e.g. "4.9". */ esc_html__( '%s / 5.0', 'roden-law' ), esc_html( $firm['rating'] ) ); ?></strong></td>
+                    <th scope="row"><strong><?php printf( /* translators: %s: star rating, e.g. "4.9". */ esc_html__( '%s / 5.0', 'roden-law' ), esc_html( $firm['rating'] ) ); ?></strong></th>
                     <td><?php esc_html_e( 'Average client rating across hundreds of verified Google reviews from our six offices', 'roden-law' ); ?></td>
                 </tr>
                 <tr>
-                    <td><strong><?php echo esc_html( $firm['cases_handled'] ); ?></strong></td>
+                    <th scope="row"><strong><?php echo esc_html( $firm['cases_handled'] ); ?></strong></th>
                     <td><?php printf( /* translators: %s: founding year, e.g. "2013". */ esc_html__( 'Cases successfully handled since %s', 'roden-law' ), esc_html( $firm['founded'] ) ); ?></td>
                 </tr>
                 <tr>
-                    <td><strong><?php echo esc_html( $firm['experience'] ); ?></strong></td>
+                    <th scope="row"><strong><?php echo esc_html( $firm['experience'] ); ?></strong></th>
                     <td><?php esc_html_e( 'Combined attorney experience across 5 office locations', 'roden-law' ); ?></td>
                 </tr>
             </tbody>
@@ -1647,7 +1647,7 @@ function roden_related_resources( $args = array() ) {
     // Sidebar list
     ?>
     <div class="sidebar-widget sidebar-related-resources">
-        <h3 class="widget-title"><?php echo esc_html( $args['heading'] ); ?></h3>
+        <h2 class="widget-title"><?php echo esc_html( $args['heading'] ); ?></h2>
         <ul class="sidebar-links">
             <?php foreach ( $items as $item ) : ?>
                 <li>

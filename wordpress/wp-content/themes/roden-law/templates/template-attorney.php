@@ -234,7 +234,7 @@
         <aside class="sidebar sidebar-attorney">
             <div class="sidebar-sticky">
                 <div class="sidebar-widget sidebar-consult-cta">
-                    <h3 class="widget-title">Schedule a Consultation</h3>
+                    <h2 class="widget-title">Schedule a Consultation</h2>
                     <p>Speak directly with <?php the_title(); ?>. Free &amp; confidential.</p>
                     <?php if ( $office ) : ?>
                         <a href="tel:<?php echo esc_attr($firm['phone_raw']); ?>" class="btn btn-primary btn-block"><?php echo esc_html($firm['vanity_phone']); ?></a>
@@ -243,7 +243,7 @@
                 </div>
 
                 <div class="sidebar-widget">
-                    <h3 class="widget-title">Jurisdiction</h3>
+                    <h2 class="widget-title">Jurisdiction</h2>
                     <p><?php the_title(); ?> is licensed to practice in:</p>
                     <ul class="jurisdiction-list">
                         <?php foreach ( $bar_items as $bar ) : ?>

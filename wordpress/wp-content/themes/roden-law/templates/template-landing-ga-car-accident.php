@@ -1258,7 +1258,7 @@ $in_location  = 'in ' . $city;
     </div>
 </div>
 
-<main id="main-content">
+<div class="landing-content">
 <!-- ===== HERO ===== -->
 <section class="hero">
     <div class="hero-bg-image"></div>
@@ -1788,7 +1788,7 @@ $in_location  = 'in ' . $city;
     </div>
 </section>
 
-</main>
+</div>
 <!-- ===== FOOTER ===== -->
 <footer class="lp-footer">
     <p>

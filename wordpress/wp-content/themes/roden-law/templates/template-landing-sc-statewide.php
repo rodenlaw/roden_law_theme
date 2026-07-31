@@ -1798,7 +1798,7 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
     </div>
 </div>
 
-<main id="main-content">
+<div class="landing-content">
 <!-- ===== HERO ===== -->
 <section class="hero">
     <div class="hero-bg-image"></div>
@@ -2438,7 +2438,7 @@ $results = isset( $type_cfg['results'] ) ? $type_cfg['results'] : $default_resul
     </div>
 </section>
 
-</main>
+</div>
 <!-- ===== FOOTER ===== -->
 <footer class="lp-footer">
     <p>

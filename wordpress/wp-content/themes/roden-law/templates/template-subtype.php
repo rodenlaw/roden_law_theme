@@ -321,7 +321,7 @@
                 <!-- Back to Pillar -->
                 <?php if ( $parent_post ) : ?>
                 <div class="sidebar-widget">
-                    <h3 class="widget-title">&#128203; <?php esc_html_e( 'Main Practice Area', 'roden-law' ); ?></h3>
+                    <h2 class="widget-title">&#128203; <?php esc_html_e( 'Main Practice Area', 'roden-law' ); ?></h2>
                     <a href="<?php echo esc_url( $parent_url ); ?>" class="sidebar-back-link">&larr; <?php echo esc_html( $parent_title ); ?></a>
                 </div>
                 <?php endif; ?>
@@ -329,7 +329,7 @@
                 <!-- Related Sub-Types -->
                 <?php if ( $siblings ) : ?>
                 <div class="sidebar-widget">
-                    <h3 class="widget-title"><?php esc_html_e( 'Related Case Types', 'roden-law' ); ?></h3>
+                    <h2 class="widget-title"><?php esc_html_e( 'Related Case Types', 'roden-law' ); ?></h2>
                     <ul class="sidebar-links">
                         <?php foreach ( $siblings as $sib ) : ?>
                             <li><a href="<?php echo esc_url( get_permalink( $sib ) ); ?>">&rarr; <?php echo esc_html( $sib->post_title ); ?></a></li>
@@ -341,7 +341,7 @@
                 <!-- Location Pages -->
                 <?php if ( ! empty( $sibling_intersections ) ) : ?>
                 <div class="sidebar-widget">
-                    <h3 class="widget-title">&#128205; <?php esc_html_e( 'See by Location', 'roden-law' ); ?></h3>
+                    <h2 class="widget-title">&#128205; <?php esc_html_e( 'See by Location', 'roden-law' ); ?></h2>
                     <ul class="sidebar-links">
                         <?php foreach ( $sibling_intersections as $int_page ) :
                             $int_office = get_post_meta( $int_page->ID, '_roden_pa_office_key', true );
@@ -355,7 +355,7 @@
 
                 <!-- Filing Deadlines -->
                 <div class="sidebar-widget sidebar-deadlines">
-                    <h3 class="widget-title">&#9201; <?php esc_html_e( 'Filing Deadlines', 'roden-law' ); ?></h3>
+                    <h2 class="widget-title">&#9201; <?php esc_html_e( 'Filing Deadlines', 'roden-law' ); ?></h2>
                     <div class="deadline-badges">
                         <div class="deadline-badge deadline-ga">
                             <span class="deadline-years"><?php esc_html_e( '2 yr', 'roden-law' ); ?></span>
@@ -371,7 +371,7 @@
 
                 <!-- Why Roden Law -->
                 <div class="sidebar-widget sidebar-why-us">
-                    <h3 class="widget-title"><?php esc_html_e( 'Why Roden Law?', 'roden-law' ); ?></h3>
+                    <h2 class="widget-title"><?php esc_html_e( 'Why Roden Law?', 'roden-law' ); ?></h2>
                     <ul class="why-us-list">
                         <li>&#10003; <?php printf( /* translators: %s: amount recovered, e.g. "$300M+". */ esc_html__( '%s Recovered for Clients', 'roden-law' ), esc_html( $firm['recovered'] ) ); ?></li>
                         <li>&#10003; <?php printf( /* translators: %s: star rating followed by a star glyph, e.g. "4.9★". */ esc_html__( '%s Average Client Rating', 'roden-law' ), esc_html( $firm['rating'] ) . '&#9733;' ); ?></li>

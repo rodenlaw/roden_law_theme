@@ -95,7 +95,7 @@ if ( $is_state_page ) :
                     <?php echo esc_html( $o['phone'] ); ?>
                 </a>
                 <p class="location-service-area"><?php echo esc_html( $o['service_area'] ); ?></p>
-                <a href="<?php echo esc_url( $url ); ?>" class="location-link">View Office →</a>
+                <a href="<?php echo esc_url( $url ); ?>" aria-label="<?php echo esc_attr( sprintf( /* translators: %s: office market name. */ __( 'View %s office', 'roden-law' ), $o['market_name'] ) ); ?>" class="location-link">View Office →</a>
             </div>
             <?php endforeach; ?>
         </div>
@@ -141,7 +141,7 @@ if ( $is_state_page ) :
         <aside class="sidebar sidebar-location">
             <div class="sidebar-sticky">
                 <div class="sidebar-widget">
-                    <h3 class="widget-title"><?php echo esc_html($state_full); ?> Offices</h3>
+                    <h2 class="widget-title"><?php echo esc_html($state_full); ?> Offices</h2>
                     <ul class="sidebar-links">
                         <?php foreach ( $state_offices as $k => $o ) :
                             $slug = sanitize_title( $o['market_name'] );
@@ -158,7 +158,7 @@ if ( $is_state_page ) :
                 $other_offices = array_filter($firm['offices'], fn($o) => $o['state'] === $other_state);
                 if ($other_offices) : ?>
                 <div class="sidebar-widget">
-                    <h3 class="widget-title"><?php echo esc_html($other_state_full); ?> Offices</h3>
+                    <h2 class="widget-title"><?php echo esc_html($other_state_full); ?> Offices</h2>
                     <ul class="sidebar-links">
                         <?php foreach ( $other_offices as $k => $o ) :
                             $slug = sanitize_title( $o['market_name'] );
