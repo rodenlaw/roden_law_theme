@@ -111,7 +111,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
      ═══════════════════════════════════════════════════════════════════════ -->
 <section class="section-location-matrix">
     <div class="container">
-        <h2 class="matrix-title"><?php printf( /* translators: %s: practice area title. */ esc_html__( 'Our %s Offices', 'roden-law' ), esc_html( get_the_title() ) ); ?></h2>
+        <h2 class="matrix-title"><?php printf( /* translators: %s: practice area title. */ esc_html__( 'Our %s Offices', 'roden-law' ), esc_html( roden_pa_noun() ) ); ?></h2>
         <div class="location-matrix-grid">
             <?php
             // Pre-build location page URL cache keyed by office key.
@@ -216,6 +216,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                  ═══════════════════════════════════════════════════════════ -->
             <?php
             $accident_label = strtolower( preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', get_the_title() ) );
+            $accident_label = roden_pa_accident_phrase( '', $accident_label );
             roden_what_to_do_steps( $accident_label );
             ?>
 
@@ -224,7 +225,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                  ═══════════════════════════════════════════════════════════ -->
             <?php if ( $child_subtypes || $sub_types ) : ?>
                 <div class="content-section" id="pa-case-types">
-                    <h2><?php printf( /* translators: %s: practice area title. */ esc_html__( 'Types of %s Cases We Handle', 'roden-law' ), esc_html( get_the_title() ) ); ?></h2>
+                    <h2><?php printf( /* translators: %s: practice area title. */ esc_html__( 'Types of %s Cases We Handle', 'roden-law' ), esc_html( roden_pa_noun() ) ); ?></h2>
                     <div class="sub-types-grid">
                         <?php if ( $child_subtypes ) : ?>
                             <?php foreach ( $child_subtypes as $cst ) : ?>
@@ -248,34 +249,77 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
             <!-- ═══════════════════════════════════════════════════════════
                  SECTION 7: STATUTE OF LIMITATIONS (GA vs SC)
                  ═══════════════════════════════════════════════════════════ -->
+            <?php
+            // Deadlines and citations were hardcoded here as "2 Years"/"3 Years"
+            // and the tort statutes. That is wrong for any practice area with
+            // its own statutory deadline — see roden_resolve_statute().
+            $pa_sol_ga = roden_resolve_statute( 'GA' );
+            $pa_sol_sc = roden_resolve_statute( 'SC' );
+            $pa_is_statutory = ( $pa_sol_ga && $pa_sol_ga['is_override'] ) || ( $pa_sol_sc && $pa_sol_sc['is_override'] );
+
+            $pa_sol_years = function ( $s ) {
+                return sprintf(
+                    /* translators: %s: number of years. */
+                    _n( '%s Year', '%s Years', (int) $s['statute_years'], 'roden-law' ),
+                    $s['statute_years']
+                );
+            };
+            ?>
             <?php if ( $sol_ga || $sol_sc ) : ?>
                 <div class="content-section" id="pa-deadlines" data-ai-extractable="true">
-                    <h2><?php printf( /* translators: %s: practice area title. */ esc_html__( 'Statute of Limitations for %s Cases', 'roden-law' ), esc_html( get_the_title() ) ); ?></h2>
-                    <p class="section-lead"><?php
+                    <h2><?php
                     printf(
-                        /* translators: 1: "2 years" wrapped in <strong>; 2: "3 years" wrapped in <strong>. */
-                        esc_html__( 'The statute of limitations is the legal deadline for filing a personal injury lawsuit. In Georgia, you have %1$s from the date of injury (O.C.G.A. § 9-3-33). In South Carolina, you have %2$s (S.C. Code § 15-3-530). Missing this deadline permanently bars your claim.', 'roden-law' ),
-                        '<strong>' . esc_html__( '2 years', 'roden-law' ) . '</strong>',
-                        '<strong>' . esc_html__( '3 years', 'roden-law' ) . '</strong>'
+                        /* translators: %s: practice area noun. */
+                        esc_html( $pa_is_statutory ? __( 'Filing Deadlines for %s Claims', 'roden-law' ) : __( 'Statute of Limitations for %s Cases', 'roden-law' ) ),
+                        esc_html( roden_pa_noun() )
                     );
+                    ?></h2>
+                    <p class="section-lead"><?php
+                    if ( $pa_is_statutory ) {
+                        printf(
+                            /* translators: 1: GA deadline in <strong>; 2: GA citation; 3: SC deadline in <strong>; 4: SC citation. */
+                            wp_kses_post( __( 'Workers\' compensation runs on its own deadlines, separate from the personal injury statute of limitations. In Georgia you have %1$s from the date of injury to file your claim (%2$s). In South Carolina you have %3$s (%4$s). You must also report the injury to your employer well before those dates — that notice deadline is much shorter, and missing it can end the claim on its own.', 'roden-law' ) ),
+                            '<strong>' . esc_html( $pa_sol_years( $pa_sol_ga ) ) . '</strong>',
+                            esc_html( $pa_sol_ga['statute_cite'] ),
+                            '<strong>' . esc_html( $pa_sol_years( $pa_sol_sc ) ) . '</strong>',
+                            esc_html( $pa_sol_sc['statute_cite'] )
+                        );
+                    } else {
+                        printf(
+                            /* translators: 1: GA deadline in <strong>; 2: GA citation; 3: SC deadline in <strong>; 4: SC citation. */
+                            wp_kses_post( __( 'The statute of limitations is the legal deadline for filing a personal injury lawsuit. In Georgia, you have %1$s from the date of injury (%2$s). In South Carolina, you have %3$s (%4$s). Missing this deadline permanently bars your claim.', 'roden-law' ) ),
+                            '<strong>' . esc_html( $pa_sol_years( $pa_sol_ga ) ) . '</strong>',
+                            esc_html( $pa_sol_ga['statute_cite'] ),
+                            '<strong>' . esc_html( $pa_sol_years( $pa_sol_sc ) ) . '</strong>',
+                            esc_html( $pa_sol_sc['statute_cite'] )
+                        );
+                    }
                     ?></p>
                     <div class="sol-grid">
                         <?php if ( $sol_ga && in_array( $jurisdiction, array( 'both', 'ga', 'GA' ) ) ) : ?>
                             <div class="sol-card sol-ga">
                                 <span class="sol-state">&#127825; <?php esc_html_e( 'Georgia Filing Deadline', 'roden-law' ); ?></span>
-                                <span class="sol-years"><?php esc_html_e( '2 Years', 'roden-law' ); ?></span>
-                                <span class="sol-cite"><?php echo esc_html( $sol_ga ); ?></span>
+                                <span class="sol-years"><?php echo esc_html( $pa_sol_years( $pa_sol_ga ) ); ?></span>
+                                <span class="sol-cite"><?php echo esc_html( $pa_sol_ga['is_override'] ? $pa_sol_ga['statute_cite'] : $sol_ga ); ?></span>
+                                <?php if ( $pa_sol_ga['notice_detail'] ) : ?>
+                                    <span class="sol-notice"><?php echo esc_html( $pa_sol_ga['notice_label'] . ' ' . $pa_sol_ga['notice_detail'] ); ?></span>
+                                <?php endif; ?>
                             </div>
                         <?php endif; ?>
                         <?php if ( $sol_sc && in_array( $jurisdiction, array( 'both', 'sc', 'SC' ) ) ) : ?>
                             <div class="sol-card sol-sc">
                                 <span class="sol-state">&#127769; <?php esc_html_e( 'South Carolina Filing Deadline', 'roden-law' ); ?></span>
-                                <span class="sol-years"><?php esc_html_e( '3 Years', 'roden-law' ); ?></span>
-                                <span class="sol-cite"><?php echo esc_html( $sol_sc ); ?></span>
+                                <span class="sol-years"><?php echo esc_html( $pa_sol_years( $pa_sol_sc ) ); ?></span>
+                                <span class="sol-cite"><?php echo esc_html( $pa_sol_sc['is_override'] ? $pa_sol_sc['statute_cite'] : $sol_sc ); ?></span>
+                                <?php if ( $pa_sol_sc['notice_detail'] ) : ?>
+                                    <span class="sol-notice"><?php echo esc_html( $pa_sol_sc['notice_label'] . ' ' . $pa_sol_sc['notice_detail'] ); ?></span>
+                                <?php endif; ?>
                             </div>
                         <?php endif; ?>
                     </div>
-                    <p><?php esc_html_e( 'If you fail to file within the statute of limitations, your claim will be dismissed and you will permanently lose the right to pursue compensation. You should not hesitate to consult with a skilled attorney to ensure your claim is filed on time.', 'roden-law' ); ?></p>
+                    <p><?php echo esc_html( $pa_is_statutory
+                        ? __( 'If you miss the filing deadline, your claim will be barred and you will permanently lose the right to pursue benefits. Because the employer-notice deadline comes first and is far shorter, it is worth speaking with an attorney as soon as you are hurt.', 'roden-law' )
+                        : __( 'If you fail to file within the statute of limitations, your claim will be dismissed and you will permanently lose the right to pursue compensation. You should not hesitate to consult with a skilled attorney to ensure your claim is filed on time.', 'roden-law' ) ); ?></p>
                 </div>
             <?php endif; ?>
 
@@ -288,7 +332,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                  SECTION 8: DO I HAVE A CASE? (4 Elements of Negligence)
                  ═══════════════════════════════════════════════════════════ -->
             <div class="content-section pa-elements-section" id="pa-your-case" data-ai-extractable="true">
-                <h2><?php printf( /* translators: %s: practice area title. */ esc_html__( 'Do I Have a %s Case?', 'roden-law' ), esc_html( get_the_title() ) ); ?></h2>
+                <h2><?php printf( /* translators: %s: practice area title. */ esc_html__( 'Do I Have a %s Case?', 'roden-law' ), esc_html( roden_pa_noun() ) ); ?></h2>
                 <p><?php esc_html_e( 'To win a personal injury case in Georgia or South Carolina, your attorney must prove the four elements of negligence. Each element must be established by a preponderance of the evidence for you to recover compensation.', 'roden-law' ); ?></p>
                 <div class="pa-elements">
                     <?php
@@ -330,7 +374,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                  SECTION 9: COMPENSATION TYPES
                  ═══════════════════════════════════════════════════════════ -->
             <div class="content-section pa-compensation" id="pa-compensation" data-ai-extractable="true">
-                <h2><?php printf( /* translators: %s: practice area title. */ esc_html__( 'Types of Compensation in %s Cases', 'roden-law' ), esc_html( get_the_title() ) ); ?></h2>
+                <h2><?php printf( /* translators: %s: practice area title. */ esc_html__( 'Types of Compensation in %s Cases', 'roden-law' ), esc_html( roden_pa_noun() ) ); ?></h2>
                 <p class="section-lead"><?php printf( /* translators: %s: lowercase accident type, e.g. "car accident". */ esc_html__( 'Victims of %s injuries in Georgia and South Carolina can pursue two categories of damages: economic damages (quantifiable financial losses) and non-economic damages (quality-of-life impacts). There is no cap on compensatory damages in either state.', 'roden-law' ), esc_html( strtolower( preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', get_the_title() ) ) ) ); ?></p>
                 <div class="pa-compensation__grid">
                     <div class="pa-compensation__col">
@@ -364,7 +408,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                  SECTION 10: COMPARATIVE FAULT (GA vs SC)
                  ═══════════════════════════════════════════════════════════ -->
             <div class="content-section pa-fault" data-ai-extractable="true">
-                <h2><?php printf( /* translators: %s: practice area title. */ esc_html__( 'Comparative Fault in %s Cases — What If I\'m Partially At Fault?', 'roden-law' ), esc_html( get_the_title() ) ); ?></h2>
+                <h2><?php printf( /* translators: %s: practice area title. */ esc_html__( 'Comparative Fault in %s Cases — What If I\'m Partially At Fault?', 'roden-law' ), esc_html( roden_pa_noun() ) ); ?></h2>
                 <div class="pa-fault__grid">
                     <div class="pa-fault__box pa-fault__box--ga">
                         <h3>&#127825; <?php esc_html_e( 'Georgia — Modified Comparative Fault', 'roden-law' ); ?></h3>
@@ -388,7 +432,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                  ═══════════════════════════════════════════════════════════ -->
             <?php if ( ! empty( $common_causes ) ) : ?>
                 <div class="content-section pa-common-list" data-ai-extractable="true">
-                    <h2><?php printf( /* translators: %s: practice area title. */ esc_html__( 'Common Causes of %s Cases', 'roden-law' ), esc_html( get_the_title() ) ); ?></h2>
+                    <h2><?php printf( /* translators: %s: practice area title. */ esc_html__( 'Common Causes of %s Cases', 'roden-law' ), esc_html( roden_pa_noun() ) ); ?></h2>
                     <ul class="pa-two-col-list">
                         <?php foreach ( $common_causes as $cause ) : ?>
                             <li><?php echo esc_html( $cause ); ?></li>
@@ -402,7 +446,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                  ═══════════════════════════════════════════════════════════ -->
             <?php if ( ! empty( $common_injuries ) ) : ?>
                 <div class="content-section pa-injuries" data-ai-extractable="true">
-                    <h2><?php printf( /* translators: %s: practice area title. */ esc_html__( 'Common Injuries in %s Cases', 'roden-law' ), esc_html( get_the_title() ) ); ?></h2>
+                    <h2><?php printf( /* translators: %s: practice area title. */ esc_html__( 'Common Injuries in %s Cases', 'roden-law' ), esc_html( roden_pa_noun() ) ); ?></h2>
                     <div class="pa-injuries__list">
                         <?php foreach ( $common_injuries as $injury ) :
                             // Tolerate both shapes: array{name, description} (canonical)
@@ -433,7 +477,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                  SECTION 13: CASE RESULTS
                  ═══════════════════════════════════════════════════════════ -->
             <div class="content-section" id="pa-results">
-                <h2><?php printf( /* translators: %s: practice area title. */ esc_html__( 'Recent %s Case Results', 'roden-law' ), esc_html( get_the_title() ) ); ?></h2>
+                <h2><?php printf( /* translators: %s: practice area title. */ esc_html__( 'Recent %s Case Results', 'roden-law' ), esc_html( roden_pa_noun() ) ); ?></h2>
                 <?php roden_case_results_grid( array( 'count' => 4, 'columns' => 3, 'practice_category' => $cat_slug ) ); ?>
             </div>
 

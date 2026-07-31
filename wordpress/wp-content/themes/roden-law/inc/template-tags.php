@@ -11,6 +11,335 @@
 defined( 'ABSPATH' ) || exit;
 
 /* ==========================================================================
+   PRACTICE-AREA RESOLUTION — pillar lookup, display noun, statute resolver
+
+   Pillar, intersection and sub-type pages are all 'practice_area' posts in a
+   parent/child tree whose root is the pillar. Several templates need to know
+   which pillar they belong to — to pick the right filing deadline, the right
+   "what to do" steps, or a grammatical display noun — so the walk-up lives
+   here once instead of being re-derived per template.
+   ========================================================================== */
+
+/**
+ * Walk up to the topmost 'practice_area' ancestor (the pillar).
+ *
+ * @param int|null $post_id Post to resolve. Defaults to the current post.
+ * @return WP_Post|null Pillar post, or null when not a practice_area.
+ */
+function roden_pa_pillar_post( $post_id = null ) {
+    $post_id = $post_id ? $post_id : get_the_ID();
+    if ( ! $post_id ) {
+        return null;
+    }
+
+    $post = get_post( $post_id );
+    if ( ! $post || 'practice_area' !== $post->post_type ) {
+        return null;
+    }
+
+    // Depth guard: a corrupted parent cycle must not hang the request.
+    $depth = 0;
+    while ( $post->post_parent && $depth < 10 ) {
+        $parent = get_post( $post->post_parent );
+        if ( ! $parent || 'practice_area' !== $parent->post_type ) {
+            break;
+        }
+        $post = $parent;
+        $depth++;
+    }
+
+    return $post;
+}
+
+/**
+ * Pillar slug for the current (or given) practice-area post.
+ *
+ * @param int|null $post_id Post to resolve. Defaults to the current post.
+ * @return string Pillar slug, or '' when not a practice_area.
+ */
+function roden_current_pa_slug( $post_id = null ) {
+    $pillar = roden_pa_pillar_post( $post_id );
+    return $pillar ? $pillar->post_name : '';
+}
+
+/**
+ * Grammatical display noun for the practice area, e.g. "Workers' Compensation".
+ *
+ * Post titles end in "Lawyers", which reads fine as a page title but breaks
+ * every heading that interpolates it — "Types of Workers' Compensation Lawyers
+ * Cases We Handle". This strips that trailing role word so headings read
+ * naturally, and on intersection pages it resolves the PILLAR title so the
+ * city suffix ("... in Savannah, GA") never leaks into a heading.
+ *
+ * Applies to every practice area. The 'roden_pa_noun_optin' filter accepts true
+ * (all — the default) or an array of pillar slugs to restrict it; it was
+ * introduced as a staged rollout for workers' compensation and widened once the
+ * output had been verified across the other pillars.
+ *
+ * Spanish titles put the role word first ("Abogados de Compensación Laboral"),
+ * so the trailing-suffix rule cannot reach it — hence the separate leading form.
+ *
+ * @param string   $fallback Text to return when the practice area is excluded.
+ * @param int|null $post_id  Post to resolve. Defaults to the current post.
+ * @return string Display noun.
+ */
+function roden_pa_noun( $fallback = '', $post_id = null ) {
+    $fallback = ( '' !== $fallback ) ? $fallback : get_the_title( $post_id ? $post_id : null );
+
+    $pillar = roden_pa_pillar_post( $post_id );
+    if ( ! $pillar ) {
+        return $fallback;
+    }
+
+    $optin = apply_filters( 'roden_pa_noun_optin', true );
+    if ( true !== $optin && ! in_array( $pillar->post_name, (array) $optin, true ) ) {
+        return $fallback;
+    }
+
+    $noun = $pillar->post_title;
+
+    // English: "Car Accident Lawyers" → "Car Accident".
+    $noun = preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', $noun );
+
+    // Spanish: "Abogados de Compensación Laboral" → "Compensación Laboral".
+    $noun = preg_replace( '/^(Abogad[oa]s?|Aboga(?:do|da)s?)\s+de\s+/iu', '', $noun );
+
+    $noun = trim( $noun, " \t\n\r\0\x0B-–—" );
+
+    // Never return an empty heading — a title that is only a role word
+    // ("Lawyers", "Abogados") would otherwise blank the heading entirely.
+    return ( '' !== $noun ) ? $noun : $fallback;
+}
+
+/**
+ * Resolve the filing deadline for a state, honouring practice-area overrides.
+ *
+ * $firm['jurisdiction'] holds each state's TORT statute of limitations. That is
+ * correct for negligence claims but wrong for statutory schemes with their own
+ * deadline — a Georgia workers' comp claim is one year (O.C.G.A. § 34-9-82),
+ * not the two-year tort SOL. Templates must call this rather than reading
+ * $firm['jurisdiction'][$state]['statute_years'] directly.
+ *
+ * @param string      $state_key Two-letter state key, 'GA' or 'SC'.
+ * @param string|null $pa_slug   Pillar slug. Null = detect from current post.
+ * @return array|null Keys: state_full, statute_years, statute_cite, notice_label,
+ *                    notice_detail, filing_venue, is_override. Null on unknown state.
+ */
+function roden_resolve_statute( $state_key, $pa_slug = null ) {
+    $firm      = roden_firm_data();
+    $state_key = strtoupper( (string) $state_key );
+
+    if ( ! isset( $firm['jurisdiction'][ $state_key ] ) ) {
+        return null;
+    }
+
+    $base = $firm['jurisdiction'][ $state_key ];
+
+    $resolved = array(
+        'state_full'      => $base['state_full'],
+        'statute_years'   => $base['statute_years'],
+        'statute_cite'    => $base['statute_cite'],
+        'comp_fault_rule' => isset( $base['comp_fault_rule'] ) ? $base['comp_fault_rule'] : '',
+        'comp_fault_cite' => isset( $base['comp_fault_cite'] ) ? $base['comp_fault_cite'] : '',
+        'notice_label'    => '',
+        'notice_detail'   => '',
+        'filing_venue'    => '',
+        'is_override'     => false,
+    );
+
+    if ( null === $pa_slug ) {
+        $pa_slug = roden_current_pa_slug();
+    }
+
+    $overrides = isset( $firm['statute_overrides'] ) ? $firm['statute_overrides'] : array();
+
+    // Spanish pages hang off mirrored pillars prefixed 'es-'
+    // (es-workers-compensation-lawyers), which would miss the override map and
+    // silently fall back to the tort statute of limitations — i.e. show injured
+    // Spanish-speaking workers a deadline twice as long as the real one. Strip
+    // the language prefix so the lookup is language-neutral.
+    $lookup_slug = $pa_slug ? preg_replace( '/^es-/', '', (string) $pa_slug ) : '';
+
+    if ( $lookup_slug && isset( $overrides[ $lookup_slug ][ $state_key ] ) ) {
+        $resolved = array_merge( $resolved, $overrides[ $lookup_slug ][ $state_key ] );
+
+        /*
+         * Deadlines and citations are language-neutral facts and must be
+         * corrected on every locale. The prose that accompanies them — notice
+         * wording, filing venue, and the no-fault copy the templates render off
+         * is_override — is English-only until it is translated in es_ES.po.
+         * Shipping machine-untranslated legal copy on a law firm's Spanish
+         * pages is worse than showing the existing translated tort framing, so
+         * ES gets the corrected numbers and keeps its current wording.
+         *
+         * Remove this branch once the workers' compensation strings are
+         * translated; nothing else needs to change.
+         */
+        $is_es = function_exists( 'roden_current_lang' ) && 'es' === roden_current_lang();
+
+        if ( $is_es ) {
+            $resolved['notice_label']  = '';
+            $resolved['notice_detail'] = '';
+            $resolved['filing_venue']  = '';
+            $resolved['is_override']   = false;
+        } else {
+            $resolved['is_override'] = true;
+        }
+    }
+
+    return $resolved;
+}
+
+/**
+ * Sentence-case an accident phrase without flattening a curated one.
+ *
+ * Derived labels arrive lowercase ("car accident") and want capitalizing.
+ * Curated phrases from roden_pa_accident_phrase() are already cased the way
+ * they should read ("a Dog Bite"), and ucfirst() would leave them as
+ * "A Dog Bite". Only touch strings that carry no capitals of their own.
+ *
+ * @param string $phrase Accident phrase.
+ * @return string Phrase ready for a heading.
+ */
+function roden_accident_phrase_case( $phrase ) {
+    $phrase = (string) $phrase;
+    return ( $phrase === strtolower( $phrase ) ) ? ucfirst( $phrase ) : $phrase;
+}
+
+/**
+ * The "what happened to you" noun phrase for a practice area.
+ *
+ * Templates derive this by lowercasing the pillar title and stripping
+ * "Lawyers", which works for event-named areas ("a car accident") but produces
+ * nonsense for areas named after the remedy rather than the event — workers'
+ * compensation yields "What to Do After A workers' compensation".
+ *
+ * Returns a phrase including its article, ready for ucfirst().
+ *
+ * @param string $pa_slug  Pillar slug. Empty = detect from current post.
+ * @param string $fallback Phrase to use when no override applies.
+ * @return string Noun phrase, e.g. "a workplace injury".
+ */
+function roden_pa_accident_phrase( $pa_slug = '', $fallback = '' ) {
+    if ( '' === $pa_slug ) {
+        $pa_slug = roden_current_pa_slug();
+    }
+
+    /*
+     * Callers run these through ucfirst(), which only touches the first
+     * character — so a phrase supplied already title-cased survives intact.
+     * That is how "What to Do After Nursing Home Abuse" reads correctly while
+     * the article-led phrases still render as "After A workplace injury",
+     * matching the site's existing headings.
+     */
+    $phrases = apply_filters(
+        'roden_pa_accident_phrases',
+        array(
+            'workers-compensation-lawyers'   => __( 'a Workplace Injury', 'roden-law' ),
+            'nursing-home-abuse-lawyers'     => __( 'Nursing Home Abuse', 'roden-law' ),
+            'medical-malpractice-lawyers'    => __( 'Suspected Medical Malpractice', 'roden-law' ),
+            'slip-and-fall-lawyers'          => __( 'a Slip and Fall', 'roden-law' ),
+            'premises-liability-lawyers'     => __( 'an Injury on Someone Else\'s Property', 'roden-law' ),
+            'dog-bite-lawyers'               => __( 'a Dog Bite', 'roden-law' ),
+            'wrongful-death-lawyers'         => __( 'a Fatal Accident', 'roden-law' ),
+            'brain-injury-lawyers'           => __( 'a Brain Injury', 'roden-law' ),
+            'spinal-cord-injury-lawyers'     => __( 'a Spinal Cord Injury', 'roden-law' ),
+            'maritime-injury-lawyers'        => __( 'a Maritime Injury', 'roden-law' ),
+            'product-liability-lawyers'      => __( 'an Injury From a Defective Product', 'roden-law' ),
+            'burn-injury-lawyers'            => __( 'a Burn Injury', 'roden-law' ),
+            'construction-accident-lawyers'  => __( 'a Construction Accident', 'roden-law' ),
+        )
+    );
+
+    if ( $pa_slug && isset( $phrases[ $pa_slug ] ) ) {
+        return $phrases[ $pa_slug ];
+    }
+
+    return $fallback;
+}
+
+/**
+ * Filter and order a practice area's sub-types for a given office/state.
+ *
+ * Sub-types are shared across every location under a pillar, but not all of
+ * them travel: "Boeing & Aerospace Worker Injury" describes a North Charleston
+ * employer and is noise — or worse, a credibility hit — on a Savannah page.
+ *
+ * Two opt-in post meta flags control this, so nothing changes for sub-types
+ * that set neither:
+ *   _roden_state_scope     'GA' | 'SC'  — restrict to one state.
+ *   _roden_subtype_hidden  '1'          — suppress everywhere (duplicate pages).
+ *
+ * @param WP_Post[] $subtypes   Sub-type posts.
+ * @param string    $state_key  Two-letter state key of the current page.
+ * @param string    $office_key Office key of the current page, e.g. 'savannah'.
+ * @return WP_Post[] Filtered, ordered sub-types.
+ */
+function roden_filter_subtypes_for_state( $subtypes, $state_key = '', $office_key = '' ) {
+    $state_key = strtoupper( (string) $state_key );
+    $filtered  = array();
+
+    foreach ( $subtypes as $st ) {
+        if ( get_post_meta( $st->ID, '_roden_subtype_hidden', true ) ) {
+            continue;
+        }
+
+        $scope = strtoupper( (string) get_post_meta( $st->ID, '_roden_state_scope', true ) );
+        if ( $scope && $state_key && $scope !== $state_key ) {
+            continue;
+        }
+
+        $filtered[] = $st;
+    }
+
+    /**
+     * Sub-type slugs to promote to the front for a given office.
+     *
+     * Savannah is deliberately absent. The obvious lead for it would be
+     * port-worker-injury — the Port of Savannah defines that market — but that
+     * page is written for South Carolina: it is titled "in South Carolina",
+     * cites only S.C. Code § 42-15-40, and mentions Charleston four times as
+     * often as Savannah. Promoting it on a Georgia page would send an injured
+     * Georgia worker to South Carolina law. A Georgia port-worker page needs
+     * to be written before Savannah gets a priority entry here.
+     *
+     * @param array  $map        office key => array of slugs, most important first.
+     * @param string $office_key Current office key.
+     * @param string $state_key  Current state key.
+     */
+    $priority_map = apply_filters(
+        'roden_subtype_priority_slugs',
+        array(
+            'charleston'       => array( 'port-worker-injury' ),
+            'north-charleston' => array( 'boeing-aerospace-injury', 'port-worker-injury' ),
+        ),
+        $office_key,
+        $state_key
+    );
+
+    $priority = isset( $priority_map[ $office_key ] ) ? $priority_map[ $office_key ] : array();
+
+    if ( $priority ) {
+        usort(
+            $filtered,
+            function ( $a, $b ) use ( $priority ) {
+                $ai = array_search( $a->post_name, $priority, true );
+                $bi = array_search( $b->post_name, $priority, true );
+                $ai = ( false === $ai ) ? PHP_INT_MAX : $ai;
+                $bi = ( false === $bi ) ? PHP_INT_MAX : $bi;
+
+                if ( $ai === $bi ) {
+                    return strcasecmp( $a->post_title, $b->post_title );
+                }
+                return $ai <=> $bi;
+            }
+        );
+    }
+
+    return apply_filters( 'roden_pa_subtypes', $filtered, $state_key, $office_key );
+}
+
+/* ==========================================================================
    BREADCRUMBS (HTML output — complements BreadcrumbList schema)
    ========================================================================== */
 
@@ -785,7 +1114,7 @@ function roden_last_updated_date( $post_id = null ) {
  * @param string $practice_area_title The practice area title (e.g., "Car Accident Lawyers").
  * @param string $custom_definition   Optional custom definition text from post meta.
  */
-function roden_ai_definition_block( $practice_area_title, $custom_definition = '' ) {
+function roden_ai_definition_block( $practice_area_title, $custom_definition = '', $place = '' ) {
     if ( $custom_definition ) {
         $definition = $custom_definition;
     } else {
@@ -796,8 +1125,10 @@ function roden_ai_definition_block( $practice_area_title, $custom_definition = '
         return;
     }
 
-    // Build a clean label for the H2 (strip trailing "Lawyers" / "Attorneys" for natural phrasing).
-    $label = preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', $practice_area_title );
+    // Build a clean label for the H2. Delegates to roden_pa_noun() rather than
+    // repeating the suffix strip, which was English-only and left Spanish pages
+    // reading "¿Qué Es un Caso de Abogados de Compensación Laboral?".
+    $label = roden_pa_noun( $practice_area_title );
     $label = rtrim( $label, ' -' );
 
     // Author attribution for "According to" framing (+30% AI visibility).
@@ -813,7 +1144,22 @@ function roden_ai_definition_block( $practice_area_title, $custom_definition = '
     }
     ?>
     <div class="ai-definition-block" data-ai-extractable="true">
-        <h2><?php printf( /* translators: %s: practice area label, e.g. "Car Accident". */ esc_html__( 'What Is a %s Case?', 'roden-law' ), esc_html( $label ) ); ?></h2>
+        <h2><?php
+        // On intersection pages the title is "<Area> Lawyers in <City>, <ST>",
+        // so the trailing-suffix strip above cannot reach the role word and the
+        // heading renders "What Is a Workers' Compensation Lawyers in Savannah,
+        // GA Case?". Callers pass the place separately to avoid that.
+        if ( $place ) {
+            printf(
+                /* translators: 1: practice area label, e.g. "Workers' Compensation"; 2: place, e.g. "Savannah, GA". */
+                esc_html__( 'What Is a %1$s Case in %2$s?', 'roden-law' ),
+                esc_html( $label ),
+                esc_html( $place )
+            );
+        } else {
+            printf( /* translators: %s: practice area label, e.g. "Car Accident". */ esc_html__( 'What Is a %s Case?', 'roden-law' ), esc_html( $label ) );
+        }
+        ?></h2>
         <p class="definition-text"><?php echo wp_kses_post( $definition ); ?></p>
         <?php if ( $author_name ) : ?>
             <p class="definition-attribution">
@@ -845,8 +1191,556 @@ function roden_ai_definition_block( $practice_area_title, $custom_definition = '
  * @param string $city          e.g., "Savannah, GA"
  * @param string $state_full    e.g., "Georgia"
  */
-function roden_what_to_do_steps( $accident_type, $city = '', $state_full = '' ) {
-    $state_label = $state_full ?: __( 'your state', 'roden-law' );
+/**
+ * Build the ordered "what to do" step list for a practice area.
+ *
+ * Split out of roden_what_to_do_steps() so the visible list and the HowTo
+ * structured data in schema-helpers.php render from ONE source. They used to
+ * be independent, which let the schema drift from the page.
+ *
+ * The default set is the car-accident sequence this function has always
+ * emitted. Practice areas whose real-world process differs materially — comp
+ * claims run through a state board, not an auto insurer — supply their own.
+ *
+ * @param string $pa_slug    Pillar slug. Empty = detect from current post.
+ * @param string $state_full State name for interpolation, e.g. "Georgia".
+ * @param string $state_key  Two-letter state key. Empty = derive from $state_full.
+ * @return array List of array{title:string, body:string}.
+ */
+function roden_what_to_do_steps_data( $pa_slug = '', $state_full = '', $state_key = '' ) {
+    if ( '' === $pa_slug ) {
+        $pa_slug = roden_current_pa_slug();
+    }
+
+    // Derive the state key when only the full name was supplied.
+    if ( '' === $state_key && $state_full ) {
+        $firm = roden_firm_data();
+        foreach ( $firm['jurisdiction'] as $key => $j ) {
+            if ( $j['state_full'] === $state_full ) {
+                $state_key = $key;
+                break;
+            }
+        }
+    }
+
+    if ( 'workers-compensation-lawyers' === $pa_slug ) {
+        $statute = $state_key ? roden_resolve_statute( $state_key, $pa_slug ) : null;
+
+        $notice_detail = ( $statute && $statute['notice_detail'] )
+            ? $statute['notice_detail']
+            : __( 'as soon as possible — every state sets a strict notice deadline', 'roden-law' );
+
+        $filing_venue = ( $statute && $statute['filing_venue'] )
+            ? $statute['filing_venue']
+            : __( 'your state workers\' compensation board', 'roden-law' );
+
+        $filing_deadline = ( $statute && $statute['statute_years'] )
+            ? sprintf(
+                /* translators: 1: number of years; 2: statute citation. */
+                _n( '%1$s year from the date of injury (%2$s)', '%1$s years from the date of injury (%2$s)', (int) $statute['statute_years'], 'roden-law' ),
+                $statute['statute_years'],
+                $statute['statute_cite']
+            )
+            : __( 'before your state deadline expires', 'roden-law' );
+
+        $steps = array(
+            array(
+                'title' => __( 'Report the injury to your employer.', 'roden-law' ),
+                'body'  => sprintf(
+                    /* translators: %s: notice deadline, e.g. "within 30 days of the injury (O.C.G.A. § 34-9-80)". */
+                    __( 'Notify a supervisor or HR in writing %s. This is the deadline injured workers miss most often, and missing it can bar your claim entirely.', 'roden-law' ),
+                    $notice_detail
+                ),
+            ),
+            array(
+                'title' => __( 'Get medical care from an authorized physician.', 'roden-law' ),
+                'body'  => __( 'Your employer should post a panel of physicians. Treating outside that panel without approval can leave you responsible for the bills and give the insurer a reason to dispute your claim — ask for the panel before you choose a doctor, except in an emergency.', 'roden-law' ),
+            ),
+            array(
+                'title' => __( 'Ask for the posted panel of physicians in writing.', 'roden-law' ),
+                'body'  => __( 'If your employer has no valid posted panel, or refuses to provide it, you may be entitled to choose your own treating doctor. Keep a copy of the request.', 'roden-law' ),
+            ),
+            array(
+                'title' => __( 'Document the injury and the conditions that caused it.', 'roden-law' ),
+                'body'  => __( 'Photograph the equipment, work area, and any hazard. Note who witnessed the incident and what you reported, to whom, and when. Keep copies of every form you sign.', 'roden-law' ),
+            ),
+            array(
+                'title' => __( 'File your claim before the deadline.', 'roden-law' ),
+                'body'  => sprintf(
+                    /* translators: 1: filing venue; 2: filing deadline phrase. */
+                    __( 'Reporting the injury to your employer is not the same as filing a claim. File with the %1$s — %2$s.', 'roden-law' ),
+                    $filing_venue,
+                    $filing_deadline
+                ),
+            ),
+            array(
+                'title' => __( 'Do not give a recorded statement without advice.', 'roden-law' ),
+                'body'  => __( 'The insurance adjuster works for your employer\'s carrier, not for you. You are generally not required to give a recorded statement before speaking with an attorney.', 'roden-law' ),
+            ),
+            array(
+                'title' => __( 'Ask whether you also have a third-party claim.', 'roden-law' ),
+                'body'  => __( 'Workers\' compensation does not pay for pain and suffering. If someone other than your employer contributed to the injury — a negligent driver, a contractor on site, or a defective machine\'s manufacturer — a separate claim may recover damages comp cannot. Roden Law offers free consultations.', 'roden-law' ),
+            ),
+        );
+
+        /**
+         * Filter the workers' compensation "what to do" steps.
+         *
+         * @param array  $steps     Step list.
+         * @param string $state_key Two-letter state key.
+         */
+        return apply_filters( 'roden_what_to_do_steps_workers_comp', $steps, $state_key );
+    }
+
+    if ( 'nursing-home-abuse-lawyers' === $pa_slug ) {
+        /*
+         * Evidence in these cases disappears faster than in almost any other:
+         * pressure sores heal or worsen, rooms get cleaned, staffing sheets and
+         * camera footage are overwritten on routine retention schedules. The
+         * steps are ordered to preserve proof before it is gone.
+         */
+        $steps = array(
+            array(
+                'title' => __( 'Make sure the resident is safe, then get an independent medical evaluation.', 'roden-law' ),
+                'body'  => __( 'Call 911 if anyone is in immediate danger. Where you can, have the resident examined by a provider who is not employed by the facility — an outside record of the injury is far harder to dispute later.', 'roden-law' ),
+            ),
+            array(
+                'title' => __( 'Photograph everything today, and keep photographing.', 'roden-law' ),
+                'body'  => __( 'Injuries, bruising, pressure sores, bedding, the room, and where the call button actually sits. Date every photo. Wounds heal or worsen and conditions get quietly corrected long before anyone investigates.', 'roden-law' ),
+            ),
+            array(
+                'title' => __( 'Report it to the facility in writing and ask for the incident report.', 'roden-law' ),
+                'body'  => __( 'A verbal complaint to a nurse or aide leaves no trace. Put it in writing, keep a copy, note who you gave it to and when, and request the facility\'s own incident report.', 'roden-law' ),
+            ),
+            array(
+                'title' => __( 'Report it to the state as well.', 'roden-law' ),
+                'body'  => __( 'In Georgia, the Healthcare Facility Regulation Division of the Department of Community Health licenses and investigates long-term care facilities; in South Carolina, the state agency that licenses the facility does. Either state can also be reached through the Long-Term Care Ombudsman and Adult Protective Services. Reports may be made anonymously, and a state investigation creates a record independent of the facility.', 'roden-law' ),
+            ),
+            array(
+                'title' => __( 'Request the complete records in writing.', 'roden-law' ),
+                'body'  => __( 'Not just the chart — medication administration records, care plans, fall and wound assessments, and staffing schedules. Staffing levels are frequently where these cases are won, and those records are retained the shortest.', 'roden-law' ),
+            ),
+            array(
+                'title' => __( 'Do not sign anything the facility puts in front of you.', 'roden-law' ),
+                'body'  => __( 'Admission packets routinely contain arbitration agreements that give up the right to a jury trial, and paperwork offered after an incident can release the claim entirely. Have anything you are asked to sign reviewed first.', 'roden-law' ),
+            ),
+            array(
+                'title' => __( 'Talk to an attorney before the trail goes cold.', 'roden-law' ),
+                'body'  => __( 'Georgia requires an expert affidavit filed with the complaint in a professional negligence case (O.C.G.A. § 9-11-9.1), and South Carolina requires a Notice of Intent to File Suit with an expert affidavit before suit (S.C. Code § 15-79-125). Both take time to prepare, and both run against a deadline. Roden Law offers free consultations.', 'roden-law' ),
+            ),
+        );
+
+        return apply_filters( 'roden_what_to_do_steps_nursing_home', $steps, $state_key );
+    }
+
+    if ( 'medical-malpractice-lawyers' === $pa_slug ) {
+        $steps = array(
+            array(
+                'title' => __( 'Request your complete medical records in writing.', 'roden-law' ),
+                'body'  => __( 'From every provider and facility involved, not just the one you suspect. Ask for the full file including imaging, nursing notes, and orders. In a malpractice case the records largely are the case.', 'roden-law' ),
+            ),
+            array(
+                'title' => __( 'Keep getting treatment — ideally from someone new.', 'roden-law' ),
+                'body'  => __( 'Your health comes first, and a second opinion may catch something correctable. A gap in treatment is also one of the first things a defense expert points to when arguing an injury was not serious.', 'roden-law' ),
+            ),
+            array(
+                'title' => __( 'Write down what happened while you still remember it.', 'roden-law' ),
+                'body'  => __( 'Dates, who you saw, what you were told before and after, and who else was in the room. The written record is authored entirely by the other side; your account is not.', 'roden-law' ),
+            ),
+            array(
+                'title' => __( 'Do not accept waived bills or a free corrective procedure in exchange for signing.', 'roden-law' ),
+                'body'  => __( 'It is a common and entirely lawful offer. It is also sometimes paired with paperwork that ends your claim. Read what is attached, and have it reviewed before you sign it.', 'roden-law' ),
+            ),
+            array(
+                'title' => __( 'Be careful with risk management and insurance adjusters.', 'roden-law' ),
+                'body'  => __( 'Those calls are documented and they are not made for your benefit. You are not required to give a recorded statement before speaking with an attorney.', 'roden-law' ),
+            ),
+            array(
+                'title' => __( 'Do not assume a bad outcome is — or is not — malpractice.', 'roden-law' ),
+                'body'  => __( 'Medicine carries known risks, and a poor result on its own proves nothing. The question is whether the care fell below the accepted standard, and only a qualified expert in the same field can answer it.', 'roden-law' ),
+            ),
+            array(
+                'title' => __( 'Contact an attorney early — the pre-suit requirements are slow.', 'roden-law' ),
+                'body'  => __( 'Georgia requires an expert affidavit filed with the complaint (O.C.G.A. § 9-11-9.1), and South Carolina requires a Notice of Intent to File Suit with an expert affidavit followed by mandatory mediation (S.C. Code § 15-79-125). Locating the right expert and obtaining that opinion routinely takes months, and Georgia\'s deadline is two years. Roden Law offers free consultations.', 'roden-law' ),
+            ),
+        );
+
+        return apply_filters( 'roden_what_to_do_steps_medical_malpractice', $steps, $state_key );
+    }
+
+    /* ----------------------------------------------------------------------
+       Remaining practice areas whose real-world first steps differ materially
+       from the motor-vehicle sequence. Each is ordered by what decides the
+       case, not by what is easiest to write.
+       ---------------------------------------------------------------------- */
+
+    $library = array();
+
+    $library['slip-and-fall-lawyers'] = array(
+        array(
+            'title' => __( 'Report it before you leave, and get a written incident report.', 'roden-law' ),
+            'body'  => __( 'Tell a manager or owner while you are still there and ask for a copy of the report they fill out. A fall nobody recorded is the single most common reason these claims fail.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Photograph the hazard immediately — before it is cleaned up.', 'roden-law' ),
+            'body'  => __( 'The spill, ice, torn mat, broken step, or missing handrail will be gone within the hour. Capture it from several angles, and include something for scale.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Photograph what was not there, too.', 'roden-law' ),
+            'body'  => __( 'Absent warning cones, burnt-out lighting, and missing handrails matter as much as the hazard itself. Photograph your footwear as well — the defense will raise it.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Get names — witnesses and the employees who responded.', 'roden-law' ),
+            'body'  => __( 'Staff turnover is high in retail and hospitality. The employee who told you "that happens all the time" may be unreachable in six months.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Ask that surveillance footage be preserved, in writing.', 'roden-law' ),
+            'body'  => __( 'Most systems overwrite in days or weeks. A written preservation request creates an obligation and a paper trail if the footage later goes missing.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'See a doctor the same day.', 'roden-law' ),
+            'body'  => __( 'Adrenaline masks injuries and a delay of even a few days becomes an argument that something else caused them.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Do not give a recorded statement or accept a goodwill gesture.', 'roden-law' ),
+            'body'  => __( 'A covered ER visit or a gift card is sometimes offered alongside paperwork that ends the claim. Roden Law offers free consultations — ask before you sign.', 'roden-law' ),
+        ),
+    );
+
+    $library['premises-liability-lawyers'] = array(
+        array(
+            'title' => __( 'Report it to the property owner or manager in writing.', 'roden-law' ),
+            'body'  => __( 'Ask for a copy of any incident report. Verbal notice to whoever was on shift tends to disappear.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Photograph the condition before it is repaired.', 'roden-law' ),
+            'body'  => __( 'Dangerous conditions get fixed quickly once someone is hurt — which is good for everyone except your ability to prove what it looked like.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Work out who actually controlled the property.', 'roden-law' ),
+            'body'  => __( 'Owner, tenant, management company, security contractor, and maintenance vendor are often five different businesses with five different insurers. Note every name and logo you see.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'If you were the victim of a crime on the property, get the police report.', 'roden-law' ),
+            'body'  => __( 'Negligent security claims turn on whether the owner knew the area was dangerous. Prior incidents at the same address are usually the proof, and they are on record.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Request preservation of surveillance footage in writing.', 'roden-law' ),
+            'body'  => __( 'Retention is often measured in days. Ask in writing and keep a copy of the request.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Get medical care and keep every record.', 'roden-law' ),
+            'body'  => __( 'Follow through on referrals. Gaps in treatment are the most common way a serious injury gets valued as a minor one.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Do not sign a release or give a recorded statement.', 'roden-law' ),
+            'body'  => __( 'The adjuster calling within days works for the property owner. Roden Law offers free consultations.', 'roden-law' ),
+        ),
+    );
+
+    $library['dog-bite-lawyers'] = array(
+        array(
+            'title' => __( 'Get medical attention — bite wounds infect.', 'roden-law' ),
+            'body'  => __( 'Puncture wounds close over bacteria and often need irrigation and antibiotics. Facial bites and any bite to a child warrant immediate care.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Identify the owner and get the dog\'s vaccination records.', 'roden-law' ),
+            'body'  => __( 'Name, address, and insurance if they will give it. Rabies vaccination status determines whether you face a post-exposure treatment decision, and it needs answering today.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Report the bite to animal control.', 'roden-law' ),
+            'body'  => __( 'This is the step people skip because they do not want the dog harmed. It also creates the official record — and the history of prior complaints that often decides the case.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Note whether the dog was loose, and photograph where it happened.', 'roden-law' ),
+            'body'  => __( 'In Georgia, showing the dog was off-leash in violation of a local leash or restraint ordinance can establish liability without proving the dog had ever bitten before (O.C.G.A. § 51-2-7). South Carolina imposes liability on the owner regardless of the dog\'s history (S.C. Code § 47-3-110).', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Photograph the wounds as they heal, not just today.', 'roden-law' ),
+            'body'  => __( 'Bite injuries scar, and scarring is a large part of the claim — particularly for children. Photograph on a consistent background at regular intervals.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Ask around about the dog\'s history.', 'roden-law' ),
+            'body'  => __( 'Neighbors frequently know about earlier snaps, lunges, or complaints that never reached animal control. That knowledge is evidence.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Do not let the owner talk you out of a claim as a favor.', 'roden-law' ),
+            'body'  => __( 'These claims are usually paid by homeowner\'s or renter\'s insurance, not out of the owner\'s pocket — which is exactly what that coverage exists for. Roden Law offers free consultations.', 'roden-law' ),
+        ),
+    );
+
+    $library['wrongful-death-lawyers'] = array(
+        array(
+            'title' => __( 'Take care of your family first.', 'roden-law' ),
+            'body'  => __( 'Nothing below is more urgent than that. The steps that follow exist so that decisions made in the first weeks do not quietly cost you later.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Do not let anything be repaired, scrapped, or thrown away.', 'roden-law' ),
+            'body'  => __( 'The vehicle, the equipment, the product, clothing, and personal effects are evidence. Insurers move quickly to total and dispose of vehicles — say no in writing until it has been examined.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Request the official reports.', 'roden-law' ),
+            'body'  => __( 'The police or incident report, and the autopsy or medical examiner\'s report. Ask for the complete file, including photographs, rather than the summary page.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Be careful with early insurance contact.', 'roden-law' ),
+            'body'  => __( 'An offer that arrives before anyone knows the full picture is not generosity. Do not give a recorded statement, sign a release, or cash a settlement check without advice.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Find out who is legally entitled to bring the claim.', 'roden-law' ),
+            'body'  => __( 'It is not simply whoever was closest. Georgia gives the claim first to the surviving spouse, then children, then parents, then the estate (O.C.G.A. § 51-4-2). South Carolina requires the personal representative of the estate to bring it — which means opening an estate first. Getting this wrong wastes months.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Keep the financial records.', 'roden-law' ),
+            'body'  => __( 'Pay records, benefits statements, and tax returns establish what the family lost. Funeral and medical bills belong in the file too.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Speak with an attorney before the deadline runs.', 'roden-law' ),
+            'body'  => __( 'The clock generally runs from the date of death, and separate claims may belong to the estate and to the family. Roden Law offers free, no-obligation consultations.', 'roden-law' ),
+        ),
+    );
+
+    $library['brain-injury-lawyers'] = array(
+        array(
+            'title' => __( 'Get evaluated even if you never lost consciousness.', 'roden-law' ),
+            'body'  => __( 'Most traumatic brain injuries do not involve blacking out. "Walked away from it" is how serious injuries go undocumented on day one.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Make sure every symptom is written into the record.', 'roden-law' ),
+            'body'  => __( 'Headaches, memory lapses, word-finding trouble, sleep disruption, irritability, and light or noise sensitivity. If it is not in the chart, it effectively did not happen.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Keep a daily symptom journal.', 'roden-law' ),
+            'body'  => __( 'Brain injury symptoms fluctuate, and a contemporaneous log is far more persuasive than trying to reconstruct a bad month a year later.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Ask someone close to you to write down what they notice.', 'roden-law' ),
+            'body'  => __( 'Families routinely see changes in temperament, patience, and follow-through that the injured person genuinely cannot perceive. That account carries real weight.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Follow through on every referral.', 'roden-law' ),
+            'body'  => __( 'Neurology, imaging, vestibular therapy, and neuropsychological testing. Missed appointments become the argument that you had recovered.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Do not give a recorded statement while you are symptomatic.', 'roden-law' ),
+            'body'  => __( 'Difficulty recalling detail is a symptom of the injury. On a transcript it reads as inconsistency, and it will be used that way.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Do not settle before the prognosis is known.', 'roden-law' ),
+            'body'  => __( 'Cognitive and behavioral effects can take a year or more to declare themselves, and the lifetime cost of a brain injury dwarfs the early offer. Roden Law offers free consultations.', 'roden-law' ),
+        ),
+    );
+
+    $library['spinal-cord-injury-lawyers'] = array(
+        array(
+            'title' => __( 'Follow the acute care and rehabilitation plan.', 'roden-law' ),
+            'body'  => __( 'Early rehabilitation drives long-term function. It is also the record that establishes what was lost and what was recovered.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Document function, not just diagnosis.', 'roden-law' ),
+            'body'  => __( 'What you could do before and what you can do now — dressing, transfers, driving, working, caring for children. That comparison, not the imaging, is what a jury understands.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Start a running record of costs from day one.', 'roden-law' ),
+            'body'  => __( 'Wheelchairs and replacements, home and vehicle modification, catheters and supplies, transport, and paid or unpaid attendant care. These are the numbers that dominate the claim.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Preserve the evidence of how it happened.', 'roden-law' ),
+            'body'  => __( 'The vehicle, the equipment, the scene. Do not authorize repair or disposal until it has been examined.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Ask whether a third-party claim exists.', 'roden-law' ),
+            'body'  => __( 'If the injury happened at work, workers\' compensation will not pay for pain and suffering or full lifetime care. A claim against someone other than your employer can.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Do not accept an early offer.', 'roden-law' ),
+            'body'  => __( 'These cases are valued on decades of future care, and that valuation needs a life-care plan and an economist — not an adjuster\'s estimate in month three. Roden Law offers free consultations.', 'roden-law' ),
+        ),
+    );
+
+    $library['maritime-injury-lawyers'] = array(
+        array(
+            'title' => __( 'Report the injury and make sure it is entered in the log.', 'roden-law' ),
+            'body'  => __( 'Tell the captain or your supervisor, confirm it was logged, and ask for a copy. An unlogged injury becomes an injury that allegedly happened ashore.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Get medical care, and know your employer may owe it regardless of fault.', 'roden-law' ),
+            'body'  => __( 'A seaman injured in the service of a vessel is generally entitled to maintenance and cure — medical treatment and basic living costs — without proving anyone did anything wrong.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Read the company accident form before you sign it.', 'roden-law' ),
+            'body'  => __( 'You will often be handed a statement written by someone else describing an incident you were present for. Correct it or decline to sign until you have advice.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Photograph the conditions and note who saw it.', 'roden-law' ),
+            'body'  => __( 'Deck condition, gear, lighting, weather, and staffing. Crews rotate off and become very hard to find.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Find out which law covers you — it changes everything.', 'roden-law' ),
+            'body'  => __( 'Crew members generally fall under the Jones Act, with the right to sue the employer directly. Longshore, dock, and terminal workers generally fall under the federal LHWCA. Shoreside workers fall under state workers\' compensation. The three pay very differently.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Do not give a recorded statement to a company representative or insurer.', 'roden-law' ),
+            'body'  => __( 'They are gathering a defense, not helping you. You are generally not required to provide one before speaking with an attorney.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Move quickly — maritime deadlines are short and vary by system.', 'roden-law' ),
+            'body'  => __( 'An LHWCA claim generally requires notice within 30 days and filing within one year (33 U.S.C. § 913). Roden Law offers free consultations.', 'roden-law' ),
+        ),
+    );
+
+    $library['product-liability-lawyers'] = array(
+        array(
+            'title' => __( 'Keep the product. Do not return it, repair it, or send it back.', 'roden-law' ),
+            'body'  => __( 'This is the whole case. Manufacturers and retailers commonly offer to "inspect and replace" the item — once it leaves your hands the evidence is gone and it is generally not coming back.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Keep everything that came with it.', 'roden-law' ),
+            'body'  => __( 'Box, packaging, manual, warning labels, receipt, and any recall or safety notice. Warnings — and their absence — are frequently the heart of the claim.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Photograph the product and the scene before anything is moved.', 'roden-law' ),
+            'body'  => __( 'The failure itself, the surrounding area, and how it was set up or installed. Do not disassemble it to work out what went wrong.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Write down the identifying details.', 'roden-law' ),
+            'body'  => __( 'Make, model, serial or lot number, where and when you bought it, and exactly how you were using it. Model-specific recalls and prior complaints can often be traced from these alone.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Get medical attention and connect the injury to the product in the record.', 'roden-law' ),
+            'body'  => __( 'Tell the provider what caused it, specifically. "Burn" and "burn from a lithium battery in a scooter that ignited while charging" are very different chart entries.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Be cautious about contacting the manufacturer yourself.', 'roden-law' ),
+            'body'  => __( 'Their first response is usually a request to ship the item back for analysis. Report a safety hazard if you wish, but get advice before surrendering the product.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Do not accept a refund or replacement in exchange for signing.', 'roden-law' ),
+            'body'  => __( 'A check for the purchase price is sometimes paired with a release of every claim arising from the injury. Roden Law offers free consultations.', 'roden-law' ),
+        ),
+    );
+
+    $library['burn-injury-lawyers'] = array(
+        array(
+            'title' => __( 'Get to a burn center if one is reachable.', 'roden-law' ),
+            'body'  => __( 'Burn depth is routinely underestimated in a general emergency room, and early specialist treatment changes both outcome and scarring.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Preserve whatever caused it.', 'roden-law' ),
+            'body'  => __( 'The heater, appliance, battery, chemical container, lighter, or vehicle part. Do not discard it, return it, or allow it to be replaced under warranty.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Photograph the injury through every stage of healing.', 'roden-law' ),
+            'body'  => __( 'Burns look dramatically different at one week, three months, and a year. A consistent photographic record is one of the most valuable things you can build.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Identify the cause precisely.', 'roden-law' ),
+            'body'  => __( 'Defective product, gas or propane leak, chemical exposure, electrical fault, building code violation, or a workplace process. Who is responsible follows entirely from this.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Document what the injury costs beyond the hospital bill.', 'roden-law' ),
+            'body'  => __( 'Compression garments, scar treatment, reconstructive procedures, time away from work, and psychological care. Burn injuries carry a large non-medical burden that goes unclaimed when it is not recorded.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Do not settle before the scarring has stabilized.', 'roden-law' ),
+            'body'  => __( 'Final appearance and the need for revision surgery are often not clear for a year or more. An early settlement closes the door on all of it. Roden Law offers free consultations.', 'roden-law' ),
+        ),
+    );
+
+    $library['construction-accident-lawyers'] = array(
+        array(
+            'title' => __( 'Get medical attention and report the injury to your employer.', 'roden-law' ),
+            'body'  => __( 'Report it in writing and keep a copy. Workers\' compensation notice deadlines are short and separate from anything else here.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Know that serious incidents must be reported to OSHA.', 'roden-law' ),
+            'body'  => __( 'An employer must report a work-related fatality within 8 hours, and an in-patient hospitalization, amputation, or loss of an eye within 24 hours (29 CFR 1904.39). If that does not happen, the report can be made directly.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Photograph the site before it changes.', 'roden-law' ),
+            'body'  => __( 'Scaffolding, ladders, guardrails, trench shoring, fall protection, and the equipment involved. Sites are corrected and rebuilt within hours of an injury.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Write down every company on that site.', 'roden-law' ),
+            'body'  => __( 'General contractor, subcontractors, equipment owners, and delivery firms. This is the most valuable ten minutes you will spend — a claim against a company other than your employer can recover damages workers\' compensation never pays.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Get witness names and phone numbers, not just first names.', 'roden-law' ),
+            'body'  => __( 'Crews move between sites and subcontractors finish and leave. A first name and "he worked for the framing crew" is not enough to find someone later.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Preserve the equipment involved.', 'roden-law' ),
+            'body'  => __( 'Ask in writing that the ladder, lift, saw, or harness be kept and not returned to service or to the rental company.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Do not give a recorded statement to any insurer.', 'roden-law' ),
+            'body'  => __( 'Several carriers may contact you, and none of them work for you. Workers\' compensation and a third-party claim can run in parallel — Roden Law offers free consultations.', 'roden-law' ),
+        ),
+    );
+
+    if ( isset( $library[ $pa_slug ] ) ) {
+        /**
+         * Filter a practice area's "what to do" steps.
+         *
+         * @param array  $steps     Step list.
+         * @param string $pa_slug   Pillar slug.
+         * @param string $state_key Two-letter state key.
+         */
+        return apply_filters( 'roden_what_to_do_steps', $library[ $pa_slug ], $pa_slug, $state_key );
+    }
+
+    /* ----------------------------------------------------------------------
+       DEFAULT — motor-vehicle / general negligence sequence.
+       ---------------------------------------------------------------------- */
+
+    $state_label = $state_full ? $state_full : __( 'State', 'roden-law' );
+
+    $steps = array(
+        array(
+            'title' => __( 'Ensure safety and call 911.', 'roden-law' ),
+            'body'  => __( 'Move to a safe location if possible. Call emergency services to report the accident and request medical attention for anyone injured.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Seek immediate medical attention.', 'roden-law' ),
+            'body'  => __( 'Even if injuries seem minor, get examined by a doctor. Some injuries — such as traumatic brain injuries or internal bleeding — may not show symptoms immediately.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Document the scene.', 'roden-law' ),
+            'body'  => __( 'Take photos of all vehicles, injuries, road conditions, traffic signs, and any visible damage. Collect names and contact information from witnesses.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Exchange information with all parties.', 'roden-law' ),
+            'body'  => __( 'Get the other driver\'s name, insurance information, license plate number, and driver\'s license number. Do not admit fault or apologize.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Report the accident to police.', 'roden-law' ),
+            'body'  => sprintf(
+                /* translators: %s: state name, e.g. "Georgia". */
+                __( '%s law requires accident reports when there are injuries or significant property damage. Request a copy of the police report.', 'roden-law' ),
+                $state_label
+            ),
+        ),
+        array(
+            'title' => __( 'Notify your insurance company.', 'roden-law' ),
+            'body'  => __( 'Report the accident to your insurer promptly. Provide factual information only — do not speculate about fault or the extent of your injuries.', 'roden-law' ),
+        ),
+        array(
+            'title' => __( 'Contact an experienced personal injury attorney.', 'roden-law' ),
+            'body'  => __( 'An attorney can protect your rights, handle communications with insurance companies, and help you pursue the full compensation you deserve. Roden Law offers free consultations — call today.', 'roden-law' ),
+        ),
+    );
+
+    /**
+     * Filter the default "what to do" steps.
+     *
+     * @param array  $steps   Step list.
+     * @param string $pa_slug Pillar slug.
+     */
+    return apply_filters( 'roden_what_to_do_steps_default', $steps, $pa_slug );
+}
+
+function roden_what_to_do_steps( $accident_type, $city = '', $state_full = '', $state_key = '' ) {
+    $steps = roden_what_to_do_steps_data( '', $state_full, $state_key );
     ?>
     <div class="content-section what-to-do-steps" data-ai-extractable="true">
         <h2><?php
@@ -854,52 +1748,24 @@ function roden_what_to_do_steps( $accident_type, $city = '', $state_full = '' ) 
             printf(
                 /* translators: 1: accident type, e.g. "A Car Accident"; 2: city + state, e.g. "Savannah, GA". */
                 esc_html__( 'What to Do After %1$s in %2$s', 'roden-law' ),
-                esc_html( ucfirst( $accident_type ) ),
+                esc_html( roden_accident_phrase_case( $accident_type ) ),
                 esc_html( $city )
             );
         } else {
             printf(
                 /* translators: %s: accident type, e.g. "A Car Accident". */
                 esc_html__( 'What to Do After %s', 'roden-law' ),
-                esc_html( ucfirst( $accident_type ) )
+                esc_html( roden_accident_phrase_case( $accident_type ) )
             );
         }
         ?></h2>
         <ol class="steps-list">
-            <li>
-                <strong><?php esc_html_e( 'Ensure safety and call 911.', 'roden-law' ); ?></strong>
-                <?php esc_html_e( 'Move to a safe location if possible. Call emergency services to report the accident and request medical attention for anyone injured.', 'roden-law' ); ?>
-            </li>
-            <li>
-                <strong><?php esc_html_e( 'Seek immediate medical attention.', 'roden-law' ); ?></strong>
-                <?php esc_html_e( 'Even if injuries seem minor, get examined by a doctor. Some injuries — such as traumatic brain injuries or internal bleeding — may not show symptoms immediately.', 'roden-law' ); ?>
-            </li>
-            <li>
-                <strong><?php esc_html_e( 'Document the scene.', 'roden-law' ); ?></strong>
-                <?php esc_html_e( 'Take photos of all vehicles, injuries, road conditions, traffic signs, and any visible damage. Collect names and contact information from witnesses.', 'roden-law' ); ?>
-            </li>
-            <li>
-                <strong><?php esc_html_e( 'Exchange information with all parties.', 'roden-law' ); ?></strong>
-                <?php esc_html_e( 'Get the other driver\'s name, insurance information, license plate number, and driver\'s license number. Do not admit fault or apologize.', 'roden-law' ); ?>
-            </li>
-            <li>
-                <strong><?php esc_html_e( 'Report the accident to police.', 'roden-law' ); ?></strong>
-                <?php
-                printf(
-                    /* translators: %s: state name, e.g. "Georgia", or the phrase "your state". */
-                    esc_html__( '%s law requires accident reports when there are injuries or significant property damage. Request a copy of the police report.', 'roden-law' ),
-                    esc_html( $state_label )
-                );
-                ?>
-            </li>
-            <li>
-                <strong><?php esc_html_e( 'Notify your insurance company.', 'roden-law' ); ?></strong>
-                <?php esc_html_e( 'Report the accident to your insurer promptly. Provide factual information only — do not speculate about fault or the extent of your injuries.', 'roden-law' ); ?>
-            </li>
-            <li>
-                <strong><?php esc_html_e( 'Contact an experienced personal injury attorney.', 'roden-law' ); ?></strong>
-                <?php esc_html_e( 'An attorney can protect your rights, handle communications with insurance companies, and help you pursue the full compensation you deserve. Roden Law offers free consultations — call today.', 'roden-law' ); ?>
-            </li>
+            <?php foreach ( $steps as $step ) : ?>
+                <li>
+                    <strong><?php echo esc_html( $step['title'] ); ?></strong>
+                    <?php echo esc_html( $step['body'] ); ?>
+                </li>
+            <?php endforeach; ?>
         </ol>
     </div>
     <?php
@@ -1093,12 +1959,14 @@ function roden_filing_deadlines_sidebar( $jurisdiction = '' ) {
     <div class="sidebar-filing-deadlines">
         <h3 class="sidebar-title"><?php esc_html_e( 'Filing Deadlines', 'roden-law' ); ?></h3>
         <?php foreach ( $states as $state_key ) :
-            if ( ! isset( $firm['jurisdiction'][ $state_key ] ) ) {
+            // Practice-area aware: a workers' comp page must show the comp
+            // deadline, not the tort SOL. Falls back to jurisdiction defaults.
+            $j = roden_resolve_statute( $state_key );
+            if ( ! $j ) {
                 continue;
             }
-            $j = $firm['jurisdiction'][ $state_key ];
 
-            // Use override if available
+            // Per-page post meta still wins over both.
             $sol_text = '';
             if ( 'GA' === $state_key && $sol_ga_override ) {
                 $sol_text = $sol_ga_override;
@@ -1107,7 +1975,7 @@ function roden_filing_deadlines_sidebar( $jurisdiction = '' ) {
             } else {
                 $sol_text = sprintf(
                     /* translators: 1: number of years; 2: statute citation, e.g. "O.C.G.A. § 9-3-33". */
-                    __( '%1$s years (%2$s)', 'roden-law' ),
+                    _n( '%1$s year (%2$s)', '%1$s years (%2$s)', (int) $j['statute_years'], 'roden-law' ),
                     $j['statute_years'],
                     $j['statute_cite']
                 );
@@ -1116,10 +1984,16 @@ function roden_filing_deadlines_sidebar( $jurisdiction = '' ) {
             <div class="deadline-state">
                 <h4><?php echo esc_html( $j['state_full'] ); ?></h4>
                 <dl>
-                    <dt><?php esc_html_e( 'Statute of Limitations', 'roden-law' ); ?></dt>
+                    <dt><?php echo esc_html( $j['is_override'] ? __( 'Deadline to File a Claim', 'roden-law' ) : __( 'Statute of Limitations', 'roden-law' ) ); ?></dt>
                     <dd><?php echo esc_html( $sol_text ); ?></dd>
-                    <dt><?php esc_html_e( 'Comparative Fault', 'roden-law' ); ?></dt>
-                    <dd><?php echo esc_html( $j['comp_fault_rule'] ); ?></dd>
+                    <?php if ( $j['notice_label'] && $j['notice_detail'] ) : ?>
+                        <dt><?php echo esc_html( $j['notice_label'] ); ?></dt>
+                        <dd><?php echo esc_html( $j['notice_detail'] ); ?></dd>
+                    <?php endif; ?>
+                    <?php if ( $j['comp_fault_rule'] ) : ?>
+                        <dt><?php esc_html_e( 'Comparative Fault', 'roden-law' ); ?></dt>
+                        <dd><?php echo esc_html( $j['comp_fault_rule'] ); ?></dd>
+                    <?php endif; ?>
                 </dl>
             </div>
         <?php endforeach; ?>
@@ -1826,14 +2700,28 @@ function roden_render_pillar_intro( $parent_id, $meta_key, $office, $jurisdictio
  * @param array $jurisdiction Jurisdiction array.
  * @return void Outputs HTML directly (or nothing).
  */
-function roden_office_local_context_block( $office, $jurisdiction = array() ) {
-    // Locale-aware: Spanish pages render the office's local_context_es essay;
-    // if it doesn't exist the block is skipped — never English on /es/.
-    if ( function_exists( 'roden_current_lang' ) && 'es' === roden_current_lang() ) {
-        $body = isset( $office['local_context_es'] ) ? trim( $office['local_context_es'] ) : '';
+function roden_office_local_context_block( $office, $jurisdiction = array(), $variant = '' ) {
+    // Locale-aware: Spanish pages render the office's *_es essay; if it doesn't
+    // exist the block is skipped — never English on /es/.
+    $is_es  = ( function_exists( 'roden_current_lang' ) && 'es' === roden_current_lang() );
+    $suffix = $is_es ? '_es' : '';
+
+    if ( $variant ) {
+        /*
+         * A variant is requested when the default essay would be wrong rather
+         * than merely generic — the tort essay describes filing a civil
+         * complaint in superior court under the two-year statute of
+         * limitations, which is actively misleading on a workers' comp page.
+         * So there is deliberately NO fallback: if the office has no variant
+         * essay, render nothing rather than the wrong one.
+         */
+        $key  = 'local_context_' . $variant . $suffix;
+        $body = isset( $office[ $key ] ) ? trim( $office[ $key ] ) : '';
     } else {
-        $body = isset( $office['local_context'] ) ? trim( $office['local_context'] ) : '';
+        $key  = 'local_context' . $suffix;
+        $body = isset( $office[ $key ] ) ? trim( $office[ $key ] ) : '';
     }
+
     if ( ! $body ) return;
 
     $body = roden_replace_local_tokens( $body, $office, $jurisdiction );
@@ -1842,8 +2730,18 @@ function roden_office_local_context_block( $office, $jurisdiction = array() ) {
         ? $office['market_name']
         : ( $office['city'] ?? '' );
     ?>
+    <?php
+    $headings = apply_filters(
+        'roden_local_context_headings',
+        array(
+            ''   => __( 'Filing a Personal Injury Case in %s', 'roden-law' ),
+            'wc' => __( 'Filing a Workers\' Compensation Claim in %s', 'roden-law' ),
+        )
+    );
+    $heading = isset( $headings[ $variant ] ) ? $headings[ $variant ] : $headings[''];
+    ?>
     <div class="content-section pa-local-context" data-ai-extractable="true">
-        <h2><?php printf( /* translators: %s: city/market name, e.g. "Savannah". */ esc_html__( 'Filing a Personal Injury Case in %s', 'roden-law' ), esc_html( $market_name ) ); ?></h2>
+        <h2><?php printf( /* translators: %s: city/market name, e.g. "Savannah". */ esc_html( $heading ), esc_html( $market_name ) ); ?></h2>
         <div class="pa-local-context__body">
             <?php echo apply_filters( 'the_content', $body ); ?>
         </div>

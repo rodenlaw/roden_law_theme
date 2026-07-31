@@ -78,6 +78,18 @@ Los patrones locales de lesiones reflejan el papel de Savannah como ciudad portu
 Dos reglas de Georgia son las que más pesan en los casos de Savannah: **O.C.G.A. § 33-7-11** permite la acumulación ("stacking") adicional de cobertura UM/UIM por encima de los límites del conductor culpable, y **O.C.G.A. § 40-1-112** permite demandar directamente a la aseguradora del transportista — una ventaja significativa en litigios de choques de camiones vinculados al puerto.
 EOT
 ,
+                // Workers' compensation variant — rendered instead of the tort
+                // essay above on comp intersection pages. A comp claim is filed
+                // with the State Board, not the superior court described above,
+                // so the two must never be interchanged.
+                'local_context_wc' => <<<'EOT'
+A Georgia workers' compensation claim is not filed in court. It goes on **form WC-14 to the State Board of Workers' Compensation**, and Savannah-area claims are handled through the Board's **Savannah field office at 35 Barnard Street**, where the regional trial judges hear disputed cases. Different venue, different procedure, and a different deadline from the personal injury suits filed at the Chatham County courthouse — **one year from the date of injury** under O.C.G.A. § 34-9-82, not two.
+
+The injuries track what Savannah does for a living. Container and equipment work at **Garden City Terminal and the Port of Savannah** produces crush, struck-by, and fall injuries. The warehouse and distribution corridor along **I-16 and Pooler** produces lifting, forklift, and loading-dock injuries. Construction, manufacturing, and hospital work fill out the rest. Seriously injured workers from across southeast Georgia are routed to **Memorial Health University Medical Center on Waters Avenue**, the region's only Level I trauma center.
+
+Two things decide a large share of Savannah claims. Georgia generally requires treatment from the employer's **posted panel of physicians** (O.C.G.A. § 34-9-201), and going off-panel without authorization can cost you coverage. And because so many separate companies operate on a single terminal or job site, a **third-party claim** against a non-employer is often available alongside the comp claim — the only route to the damages workers' compensation never pays.
+EOT
+,
                 // GBP review count — powers per-office AggregateRating schema.
                 // VERIFY: pulled from Birdeye/Google Apr 2026. Update quarterly from GBP dashboard.
                 'review_count' => 58,
@@ -123,6 +135,15 @@ Presentar un caso de lesiones personales en Darien significa presentarlo ante el
 El perfil de accidentes del condado de McIntosh está dominado por dos corredores: aproximadamente 18 millas de la **I-95** (las salidas 49 y 58 son los principales intercambiadores con concentración de choques) y la **US-17 / SR 251**, por donde circulan camiones madereros con destino a los aserraderos costeros y que sirven como rutas de evacuación en caso de huracán. Como el condado de McIntosh no cuenta con un centro de trauma de Nivel I, las víctimas con lesiones graves suelen ser trasladadas en el helicóptero LifeStar al **Memorial Health University Medical Center en Savannah** — el único centro de trauma de Nivel I del sureste de Georgia.
 
 Dos estatutos de Georgia tienen un peso decisivo en la carga judicial de este condado, dominada por casos de camiones: **O.C.G.A. § 33-7-11** permite la acumulación ("stacking") adicional de cobertura UM/UIM por encima de los límites del conductor culpable, y **O.C.G.A. § 40-1-112** permite demandar directamente a la aseguradora del transportista.
+EOT
+,
+                // Workers' compensation variant — see the Savannah office note.
+                'local_context_wc' => <<<'EOT'
+A Georgia workers' compensation claim is not filed in court. It goes on **form WC-14 to the State Board of Workers' Compensation** rather than to McIntosh County Superior Court, and the deadline is **one year from the date of injury** under O.C.G.A. § 34-9-82 — half the two-year window that applies to a personal injury lawsuit.
+
+Coastal Georgia's work is hard on bodies. Commercial fishing and seafood processing produce machinery, deck, and repetitive-motion injuries — and a crew member hurt aboard a vessel may fall under **federal maritime law rather than state workers' compensation**, a distinction that changes the claim entirely. Timber and pulp operations across McIntosh, Wayne, and Long counties remain among the most dangerous work in the state, and the **I-95 corridor** adds warehouse, trucking, and loading-dock injuries. Serious trauma is generally routed to **Memorial Health University Medical Center in Savannah**, the region's only Level I trauma center.
+
+Two things decide a large share of claims here. Georgia generally requires treatment from the employer's **posted panel of physicians** (O.C.G.A. § 34-9-201), and treating off-panel without authorization can leave you holding the bills. And where a company other than your employer contributed — a contractor, a vessel owner, an equipment manufacturer — a **third-party claim** can recover the pain and suffering that workers' compensation never pays.
 EOT
 ,
                 // GBP review count — powers per-office AggregateRating schema.
@@ -436,6 +457,43 @@ EOT
                 'statute_cite'     => 'S.C. Code § 15-3-530',
                 'comp_fault_rule'  => 'Modified — recover if less than 51% at fault',
                 'comp_fault_cite'  => '',
+            ),
+        ),
+
+        /* ==================================================================
+           PRACTICE-AREA STATUTE OVERRIDES
+
+           The 'jurisdiction' array above holds each state's TORT statute of
+           limitations, which is correct for negligence claims (car accidents,
+           premises liability, etc.) but wrong for statutory schemes that carry
+           their own filing deadline.
+
+           Workers' compensation is the case that bit us: a GA comp claim must
+           be filed within ONE year (O.C.G.A. § 34-9-82), not the two-year tort
+           SOL, and SC is TWO years (S.C. Code § 42-15-40), not three. Before
+           this override every WC page rendered the tort deadline above the
+           fold while its own FAQ cited the correct statute.
+
+           Keyed by practice-area pillar slug, then state key. Anything absent
+           here falls back to 'jurisdiction' — see roden_resolve_statute().
+           ================================================================== */
+
+        'statute_overrides' => array(
+            'workers-compensation-lawyers' => array(
+                'GA' => array(
+                    'statute_years'  => 1,
+                    'statute_cite'   => 'O.C.G.A. § 34-9-82',
+                    'notice_label'   => 'Notify your employer',
+                    'notice_detail'  => 'within 30 days of the injury (O.C.G.A. § 34-9-80)',
+                    'filing_venue'   => 'State Board of Workers\' Compensation (form WC-14)',
+                ),
+                'SC' => array(
+                    'statute_years'  => 2,
+                    'statute_cite'   => 'S.C. Code § 42-15-40',
+                    'notice_label'   => 'Notify your employer',
+                    'notice_detail'  => 'within 90 days of the injury (S.C. Code § 42-15-20)',
+                    'filing_venue'   => 'S.C. Workers\' Compensation Commission (Form 50)',
+                ),
             ),
         ),
 

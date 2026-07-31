@@ -68,6 +68,21 @@ $related_subtypes = get_posts( array(
     'order'          => 'ASC',
     'meta_query'     => $related_subtypes_meta_query,
 ) );
+
+// Drop sub-types scoped to the other state (Boeing is a South Carolina
+// employer) and promote the ones that define this market. Sidebar and the
+// in-content grid both render from this list so they can never disagree.
+$related_subtypes = roden_filter_subtypes_for_state(
+    $related_subtypes,
+    $state_key,
+    $pa_office_key
+);
+
+// Practice-area aware deadline. $int_is_statutory marks schemes that run on
+// their own statutory track (workers' compensation) rather than tort law —
+// several sections below are wrong for those and must branch or be skipped.
+$int_statute      = roden_resolve_statute( $state_key );
+$int_is_statutory = ( $int_statute && $int_statute['is_override'] );
 ?>
 
 <!-- ================================================================
@@ -192,7 +207,16 @@ $related_subtypes = get_posts( array(
         <article class="main-content">
 
             <!-- AI Definition Block (extractable answer for AI systems) -->
-            <?php roden_ai_definition_block( get_the_title() ); ?>
+            <?php
+            // roden_pa_noun() returns get_the_title() unchanged for practice
+            // areas that have not opted in, so $int_def_place stays empty and
+            // those pages keep their existing heading.
+            $int_def_noun  = roden_pa_noun();
+            $int_def_place = ( $int_def_noun !== get_the_title() )
+                ? $office['market_name'] . ', ' . $office['state']
+                : '';
+            roden_ai_definition_block( $int_def_noun, '', $int_def_place );
+            ?>
 
             <!-- ═══════════════════════════════════════════════════════════
                  KEY TAKEAWAYS (extractable summary box for AI/snippets).
@@ -220,17 +244,46 @@ $related_subtypes = get_posts( array(
                 if ( '' === $ta_fault ) {
                     $ta_fault = $jurisdiction['comp_fault_rule'];
                 }
-                $int_takeaways = sprintf(
-                    /* translators: 1: article "a"/"an"; 2: accident type, e.g. "car accident"; 3: city/market name; 4: state name; 5: statute-of-limitations years; 6: statute citation; 7: fault threshold phrase, e.g. "less than 51% at fault". */
-                    __( 'If you were injured in %1$s %2$s in %3$s, %4$s, you generally have %5$s years from the date of injury to file a lawsuit (%6$s). %4$s follows a modified comparative negligence rule — you can still recover as long as you are %7$s, with your award reduced by your percentage of fault. There is no cap on compensatory damages in an ordinary %4$s injury case. Roden Law represents %3$s injury victims on a contingency fee: the consultation is free and there is no fee unless we win.', 'roden-law' ),
-                    esc_html( $ta_article ),
-                    esc_html( $ta_label ),
-                    esc_html( $office['market_name'] ),
-                    esc_html( $office['state_full'] ),
-                    esc_html( $jurisdiction['statute_years'] ),
-                    esc_html( $jurisdiction['statute_cite'] ),
-                    esc_html( $ta_fault )
-                );
+
+                $ta_statute = roden_resolve_statute( $office['state'] );
+
+                if ( $ta_statute && $ta_statute['is_override'] ) {
+                    /*
+                     * Statutory schemes (workers' compensation) need their own
+                     * summary. The tort paragraph below is wrong for them twice
+                     * over: it quotes the tort SOL instead of the claim-filing
+                     * deadline, and it asserts comparative negligence — which
+                     * has no application in a no-fault comp system.
+                     */
+                    $ta_deadline = sprintf(
+                        /* translators: 1: number of years; 2: statute citation. */
+                        _n( '%1$s year from the date of injury (%2$s)', '%1$s years from the date of injury (%2$s)', (int) $ta_statute['statute_years'], 'roden-law' ),
+                        $ta_statute['statute_years'],
+                        $ta_statute['statute_cite']
+                    );
+
+                    $int_takeaways = sprintf(
+                        /* translators: 1: city/market name; 2: state name; 3: employer-notice deadline phrase; 4: filing venue; 5: claim-filing deadline phrase. */
+                        __( 'If you were hurt on the job in %1$s, %2$s, report the injury to your employer %3$s, then file your claim with the %4$s — %5$s. %2$s workers\' compensation is a no-fault system: you do not have to prove your employer was negligent, and being partly at fault does not bar benefits. It does not, however, pay for pain and suffering. If someone other than your employer contributed to the injury, a separate third-party claim may recover damages workers\' compensation cannot. Roden Law represents injured %1$s workers on a contingency fee: the consultation is free and there is no fee unless we win.', 'roden-law' ),
+                        esc_html( $office['market_name'] ),
+                        esc_html( $office['state_full'] ),
+                        esc_html( $ta_statute['notice_detail'] ),
+                        esc_html( $ta_statute['filing_venue'] ),
+                        esc_html( $ta_deadline )
+                    );
+                } else {
+                    $int_takeaways = sprintf(
+                        /* translators: 1: article "a"/"an"; 2: accident type, e.g. "car accident"; 3: city/market name; 4: state name; 5: statute-of-limitations years; 6: statute citation; 7: fault threshold phrase, e.g. "less than 51% at fault". */
+                        __( 'If you were injured in %1$s %2$s in %3$s, %4$s, you generally have %5$s years from the date of injury to file a lawsuit (%6$s). %4$s follows a modified comparative negligence rule — you can still recover as long as you are %7$s, with your award reduced by your percentage of fault. There is no cap on compensatory damages in an ordinary %4$s injury case. Roden Law represents %3$s injury victims on a contingency fee: the consultation is free and there is no fee unless we win.', 'roden-law' ),
+                        esc_html( $ta_article ),
+                        esc_html( $ta_label ),
+                        esc_html( $office['market_name'] ),
+                        esc_html( $office['state_full'] ),
+                        esc_html( $ta_statute ? $ta_statute['statute_years'] : $jurisdiction['statute_years'] ),
+                        esc_html( $ta_statute ? $ta_statute['statute_cite'] : $jurisdiction['statute_cite'] ),
+                        esc_html( $ta_fault )
+                    );
+                }
             }
             if ( $int_takeaways ) : ?>
             <section class="key-takeaways-box" data-ai-extractable="true">
@@ -298,6 +351,12 @@ $related_subtypes = get_posts( array(
             // _roden_accident_phrase (e.g. "un accidente de auto") because the
             // English article/suffix derivation below doesn't apply to Spanish.
             $accident_type_label = get_post_meta( $post_id, '_roden_accident_phrase', true );
+            if ( ! $accident_type_label && ! $int_is_es ) {
+                // Practice areas named after the remedy rather than the event
+                // need an explicit phrase — "After A workers' compensation" is
+                // what the generic derivation below produces.
+                $accident_type_label = roden_pa_accident_phrase();
+            }
             if ( ! $accident_type_label ) {
                 if ( $int_is_es || ! $parent_title ) {
                     $accident_type_label = __( 'an accident', 'roden-law' );
@@ -314,22 +373,41 @@ $related_subtypes = get_posts( array(
             roden_what_to_do_steps(
                 $accident_type_label,
                 $office['market_name'] . ', ' . $office['state'],
-                $office['state_full']
+                $office['state_full'],
+                $office['state']
             );
             ?>
 
             <!-- State Law Box (single jurisdiction) -->
-            <?php if ( $jurisdiction ) : ?>
+            <?php
+            if ( $jurisdiction && $int_statute ) :
+                // Heading names the practice area, not a hardcoded "Personal
+                // Injury" — a workers' comp page reading "Georgia Personal
+                // Injury Law" is both wrong and confusing.
+                $int_law_noun = roden_pa_noun( __( 'Personal Injury', 'roden-law' ) );
+                ?>
             <div class="content-section">
                 <div class="state-law-box">
-                    <h3><?php printf( /* translators: %s: state name, e.g. "Georgia". */ esc_html__( '%s Personal Injury Law', 'roden-law' ), esc_html( $jurisdiction['state_full'] ) ); ?></h3>
+                    <h3><?php printf( /* translators: 1: state name, e.g. "Georgia"; 2: practice area noun, e.g. "Workers' Compensation". */ esc_html__( '%1$s %2$s Law', 'roden-law' ), esc_html( $jurisdiction['state_full'] ), esc_html( $int_law_noun ) ); ?></h3>
                     <div class="law-details-grid">
                         <div class="law-detail">
-                            <span class="law-label"><?php esc_html_e( 'Statute of Limitations', 'roden-law' ); ?></span>
+                            <span class="law-label"><?php echo esc_html( $int_statute['is_override'] ? __( 'Deadline to File a Claim', 'roden-law' ) : __( 'Statute of Limitations', 'roden-law' ) ); ?></span>
                             <span class="law-value">
-                                <?php printf( /* translators: 1: number of years; 2: statute citation. */ esc_html__( '%1$s years (%2$s)', 'roden-law' ), esc_html( $jurisdiction['statute_years'] ), esc_html( $jurisdiction['statute_cite'] ) ); ?>
+                                <?php printf( /* translators: 1: number of years; 2: statute citation. */ esc_html( _n( '%1$s year (%2$s)', '%1$s years (%2$s)', (int) $int_statute['statute_years'], 'roden-law' ) ), esc_html( $int_statute['statute_years'] ), esc_html( $int_statute['statute_cite'] ) ); ?>
                             </span>
                         </div>
+                        <?php if ( $int_statute['notice_label'] && $int_statute['notice_detail'] ) : ?>
+                        <div class="law-detail">
+                            <span class="law-label"><?php echo esc_html( $int_statute['notice_label'] ); ?></span>
+                            <span class="law-value"><?php echo esc_html( $int_statute['notice_detail'] ); ?></span>
+                        </div>
+                        <?php endif; ?>
+                        <?php if ( $int_statute['is_override'] ) : ?>
+                        <div class="law-detail">
+                            <span class="law-label"><?php esc_html_e( 'Fault', 'roden-law' ); ?></span>
+                            <span class="law-value"><?php esc_html_e( 'No-fault — benefits do not depend on proving employer negligence', 'roden-law' ); ?></span>
+                        </div>
+                        <?php else : ?>
                         <div class="law-detail">
                             <span class="law-label"><?php esc_html_e( 'Comparative Fault', 'roden-law' ); ?></span>
                             <span class="law-value">
@@ -344,16 +422,53 @@ $related_subtypes = get_posts( array(
                                 <?php endif; ?>
                             </span>
                         </div>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
             <?php endif; ?>
 
             <!-- ═══════════════════════════════════════════════════════════
+                 TYPES OF CASES WE HANDLE (Sub-Types)
+                 Mirrors the pillar page's #pa-case-types grid so a visitor who
+                 lands on the city page gets the same routes into the sub-type
+                 pages. Uses the state-filtered $related_subtypes above, so the
+                 sidebar list and this grid always match.
+                 ═══════════════════════════════════════════════════════════ -->
+            <?php if ( $related_subtypes ) : ?>
+                <div class="content-section" id="pa-case-types">
+                    <h2><?php
+                    printf(
+                        /* translators: 1: practice area noun, e.g. "Workers' Compensation"; 2: city/market name. */
+                        esc_html__( 'Types of %1$s Cases We Handle in %2$s', 'roden-law' ),
+                        esc_html( roden_pa_noun( $parent_title ) ),
+                        esc_html( $office['market_name'] )
+                    );
+                    ?></h2>
+                    <div class="sub-types-grid">
+                        <?php foreach ( $related_subtypes as $cst ) : ?>
+                            <a href="<?php echo esc_url( get_permalink( $cst ) ); ?>" class="sub-type-card sub-type-link">
+                                <span class="st-name"><?php echo esc_html( $cst->post_title ); ?></span>
+                                <span class="st-arrow">&rarr;</span>
+                            </a>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+            <?php endif; ?>
+
+            <!-- ═══════════════════════════════════════════════════════════
                  OFFICE LOCAL CONTEXT (per-office "Filing in [Court]")
                  No-op when office has no local_context configured.
                  ═══════════════════════════════════════════════════════════ -->
-            <?php roden_office_local_context_block( $office, $jurisdiction ); ?>
+            <?php
+            /*
+             * The default per-office essay describes filing a civil complaint
+             * in superior court under the tort SOL — wrong on a comp page, so
+             * statutory pages request their own variant. Offices without one
+             * render nothing rather than the misleading default.
+             */
+            roden_office_local_context_block( $office, $jurisdiction, $int_is_statutory ? 'wc' : '' );
+            ?>
 
             <!-- ═══════════════════════════════════════════════════════════
                  NEGLIGENCE / LIABILITY FRAMING
@@ -363,18 +478,44 @@ $related_subtypes = get_posts( array(
                  ═══════════════════════════════════════════════════════════ -->
             <?php
             $accident_label_clean    = strtolower( preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', $parent_title ) );
+            // ucfirst() on a lowercased title yields "Workers' compensation".
+            // roden_pa_noun() returns the pillar's own casing instead.
+            $accident_label_display  = roden_pa_noun( ucfirst( $accident_label_clean ) );
             $pillar_negligence_html  = $parent_post
                 ? roden_render_pillar_intro( $parent_post->ID, '_roden_pillar_negligence_intro', $office, $jurisdiction )
                 : '';
             ?>
             <?php if ( $pillar_negligence_html ) : ?>
             <div class="content-section pa-pillar-negligence" data-ai-extractable="true">
-                <h2><?php printf( /* translators: 1: capitalized accident type, e.g. "Car accident"; 2: city/market name. */ esc_html__( 'Do I Have a %1$s Case in %2$s?', 'roden-law' ), esc_html( ucfirst( $accident_label_clean ) ), esc_html( $office['market_name'] ) ); ?></h2>
+                <h2><?php printf( /* translators: 1: practice area noun, e.g. "Workers' Compensation"; 2: city/market name. */ esc_html__( 'Do I Have a %1$s Case in %2$s?', 'roden-law' ), esc_html( $accident_label_display ), esc_html( $office['market_name'] ) ); ?></h2>
                 <?php echo $pillar_negligence_html; ?>
+            </div>
+            <?php elseif ( $int_is_statutory ) : ?>
+            <div class="content-section pa-elements-section" data-ai-extractable="true">
+                <h2><?php printf( /* translators: 1: practice area noun, e.g. "Workers' Compensation"; 2: city/market name. */ esc_html__( 'Do I Have a %1$s Case in %2$s?', 'roden-law' ), esc_html( $accident_label_display ), esc_html( $office['market_name'] ) ); ?></h2>
+                <p><?php printf( /* translators: %s: state name. */ esc_html__( '%s workers\' compensation is a no-fault system. You do not have to prove your employer did anything wrong — you have to show the injury arose out of and in the course of your employment, and that you met the notice and filing deadlines.', 'roden-law' ), esc_html( $office['state_full'] ) ); ?></p>
+                <div class="pa-elements">
+                    <?php
+                    $elements = array(
+                        array( 'num' => '01', 'title' => __( 'Covered Employment', 'roden-law' ), 'body' => __( 'You were an employee of a business required to carry workers\' compensation coverage. Independent contractors are treated differently, and misclassification is common — it is worth checking.', 'roden-law' ) ),
+                        array( 'num' => '02', 'title' => __( 'Arising Out of Employment', 'roden-law' ), 'body' => __( 'The injury was connected to what your job required you to do. This covers sudden accidents as well as conditions that developed over time, such as repetitive stress and occupational disease.', 'roden-law' ) ),
+                        array( 'num' => '03', 'title' => __( 'In the Course of Employment', 'roden-law' ), 'body' => __( 'The injury happened while you were working or doing something reasonably incidental to your work. Disputes here often decide the claim, particularly for travel, breaks, and off-site tasks.', 'roden-law' ) ),
+                        array( 'num' => '04', 'title' => __( 'Timely Notice and Filing', 'roden-law' ), 'body' => __( 'You reported the injury to your employer within the statutory notice period and filed the claim with the state board before the deadline. Both are strict, and both are separate steps.', 'roden-law' ) ),
+                    );
+                    foreach ( $elements as $el ) : ?>
+                        <div class="pa-element">
+                            <div class="pa-element__num"><?php echo esc_html( $el['num'] ); ?></div>
+                            <div class="pa-element__content">
+                                <h3><?php echo esc_html( $el['title'] ); ?></h3>
+                                <p><?php echo esc_html( $el['body'] ); ?></p>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
             </div>
             <?php else : ?>
             <div class="content-section pa-elements-section" data-ai-extractable="true">
-                <h2><?php printf( /* translators: 1: capitalized accident type, e.g. "Car accident"; 2: city/market name. */ esc_html__( 'Do I Have a %1$s Case in %2$s?', 'roden-law' ), esc_html( ucfirst( $accident_label_clean ) ), esc_html( $office['market_name'] ) ); ?></h2>
+                <h2><?php printf( /* translators: 1: practice area noun, e.g. "Car Accident"; 2: city/market name. */ esc_html__( 'Do I Have a %1$s Case in %2$s?', 'roden-law' ), esc_html( $accident_label_display ), esc_html( $office['market_name'] ) ); ?></h2>
                 <p><?php printf( /* translators: %s: state name. */ esc_html__( 'To win a personal injury case in %s, your attorney must prove four elements of negligence by a preponderance of the evidence.', 'roden-law' ), esc_html( $office['state_full'] ) ); ?></p>
                 <div class="pa-elements">
                     <?php
@@ -410,12 +551,42 @@ $related_subtypes = get_posts( array(
             ?>
             <?php if ( $pillar_compensation_html ) : ?>
             <div class="content-section pa-pillar-compensation" data-ai-extractable="true">
-                <h2><?php printf( /* translators: 1: state name; 2: capitalized accident type, e.g. "Car accident". */ esc_html__( 'Types of Compensation in %1$s %2$s Cases', 'roden-law' ), esc_html( $office['state_full'] ), esc_html( ucfirst( $accident_label_clean ) ) ); ?></h2>
+                <h2><?php printf( /* translators: 1: state name; 2: practice area noun, e.g. "Workers' Compensation". */ esc_html__( 'Types of Compensation in %1$s %2$s Cases', 'roden-law' ), esc_html( $office['state_full'] ), esc_html( $accident_label_display ) ); ?></h2>
                 <?php echo $pillar_compensation_html; ?>
+            </div>
+            <?php elseif ( $int_is_statutory ) : ?>
+            <div class="content-section pa-compensation" data-ai-extractable="true">
+                <h2><?php printf( /* translators: 1: state name; 2: practice area noun. */ esc_html__( 'What %1$s %2$s Benefits Cover', 'roden-law' ), esc_html( $office['state_full'] ), esc_html( $accident_label_display ) ); ?></h2>
+                <p class="section-lead"><?php printf( /* translators: %s: state name. */ esc_html__( 'Workers\' compensation pays a defined set of statutory benefits — it does not pay for pain and suffering, and the wage benefits are capped by %s law. That is why a separate third-party claim matters when someone other than your employer contributed to the injury.', 'roden-law' ), esc_html( $office['state_full'] ) ); ?></p>
+                <div class="pa-compensation__grid">
+                    <div class="pa-compensation__col">
+                        <h3><?php esc_html_e( 'Workers\' Compensation Benefits', 'roden-law' ); ?></h3>
+                        <ul>
+                            <li><?php esc_html_e( 'Authorized medical treatment and prescriptions', 'roden-law' ); ?></li>
+                            <li><?php esc_html_e( 'Temporary total disability (a portion of your average weekly wage)', 'roden-law' ); ?></li>
+                            <li><?php esc_html_e( 'Temporary partial disability for reduced-earnings work', 'roden-law' ); ?></li>
+                            <li><?php esc_html_e( 'Permanent partial disability under the body-part schedule', 'roden-law' ); ?></li>
+                            <li><?php esc_html_e( 'Mileage to and from authorized medical appointments', 'roden-law' ); ?></li>
+                            <li><?php esc_html_e( 'Vocational rehabilitation, where available', 'roden-law' ); ?></li>
+                            <li><?php esc_html_e( 'Death benefits for surviving dependents', 'roden-law' ); ?></li>
+                        </ul>
+                    </div>
+                    <div class="pa-compensation__col">
+                        <h3><?php esc_html_e( 'Only Through a Third-Party Claim', 'roden-law' ); ?></h3>
+                        <ul>
+                            <li><?php esc_html_e( 'Pain and suffering', 'roden-law' ); ?></li>
+                            <li><?php esc_html_e( 'Mental and emotional distress', 'roden-law' ); ?></li>
+                            <li><?php esc_html_e( 'Loss of companionship (spouse/family)', 'roden-law' ); ?></li>
+                            <li><?php esc_html_e( 'Disfigurement and loss of enjoyment of life', 'roden-law' ); ?></li>
+                            <li><?php esc_html_e( 'Full wage loss beyond the statutory cap', 'roden-law' ); ?></li>
+                        </ul>
+                        <p class="pa-compensation__note"><em><?php esc_html_e( 'These are unavailable through workers\' compensation. They require a claim against a party other than your employer — a negligent driver, an on-site contractor, or the manufacturer of a defective machine.', 'roden-law' ); ?></em></p>
+                    </div>
+                </div>
             </div>
             <?php else : ?>
             <div class="content-section pa-compensation" data-ai-extractable="true">
-                <h2><?php printf( /* translators: 1: state name; 2: capitalized accident type, e.g. "Car accident". */ esc_html__( 'Types of Compensation in %1$s %2$s Cases', 'roden-law' ), esc_html( $office['state_full'] ), esc_html( ucfirst( $accident_label_clean ) ) ); ?></h2>
+                <h2><?php printf( /* translators: 1: state name; 2: practice area noun, e.g. "Car Accident". */ esc_html__( 'Types of Compensation in %1$s %2$s Cases', 'roden-law' ), esc_html( $office['state_full'] ), esc_html( $accident_label_display ) ); ?></h2>
                 <p class="section-lead"><?php printf( /* translators: 1: lowercase accident type; 2: state name. */ esc_html__( 'Victims of %1$s injuries in %2$s can pursue two categories of damages: economic damages (quantifiable financial losses) and non-economic damages (quality-of-life impacts). There is no cap on compensatory damages in %2$s.', 'roden-law' ), esc_html( $accident_label_clean ), esc_html( $office['state_full'] ) ); ?></p>
                 <div class="pa-compensation__grid">
                     <div class="pa-compensation__col">
@@ -471,7 +642,7 @@ $related_subtypes = get_posts( array(
                 'count'      => 4,
                 'cat_slug'   => $cat_slug,
                 'office_key' => $pa_office_key,
-                'heading'    => sprintf( /* translators: %s: practice area title. */ __( 'Local %s Resources', 'roden-law' ), $parent_title ),
+                'heading'    => sprintf( /* translators: %s: practice area noun. */ __( 'Local %s Resources', 'roden-law' ), roden_pa_noun( $parent_title ) ),
                 'display'    => 'section',
             ) );
             ?>
@@ -584,15 +755,32 @@ $related_subtypes = get_posts( array(
                 </div>
 
                 <!-- Filing Deadline (single state) -->
-                <?php if ( $jurisdiction ) : ?>
+                <?php
+                $sb_statute = roden_resolve_statute( $state_key );
+                if ( $jurisdiction && $sb_statute ) : ?>
                 <div class="sidebar-widget sidebar-deadlines">
                     <h2 class="widget-title"><?php printf( /* translators: %s: state name. */ esc_html__( '%s Filing Deadline', 'roden-law' ), esc_html( $jurisdiction['state_full'] ) ); ?></h2>
                     <div class="deadline-badges">
                         <div class="deadline-badge <?php echo $state_key === 'GA' ? 'deadline-ga' : 'deadline-sc'; ?>" style="flex:1;">
-                            <span class="deadline-years"><?php printf( /* translators: %s: number of years. */ esc_html__( '%s yr', 'roden-law' ), esc_html( $jurisdiction['statute_years'] ) ); ?></span>
+                            <span class="deadline-years"><?php
+                            // Same msgid for both forms: English reads "1 yr" / "2 yr" either
+                            // way, but Spanish needs año/años and cannot get it from __().
+                            printf(
+                                /* translators: %s: number of years. */
+                                esc_html( _n( '%s yr', '%s yr', (int) $sb_statute['statute_years'], 'roden-law' ) ),
+                                esc_html( $sb_statute['statute_years'] )
+                            );
+                            ?></span>
                             <span class="deadline-state"><?php echo esc_html( $jurisdiction['state_full'] ); ?></span>
                         </div>
                     </div>
+                    <p class="deadline-cite"><?php echo esc_html( $sb_statute['statute_cite'] ); ?></p>
+                    <?php if ( $sb_statute['notice_detail'] ) : ?>
+                        <p class="deadline-notice">
+                            <strong><?php echo esc_html( $sb_statute['notice_label'] ); ?>:</strong>
+                            <?php echo esc_html( $sb_statute['notice_detail'] ); ?>
+                        </p>
+                    <?php endif; ?>
                     <p class="deadline-warning"><?php esc_html_e( 'Missing the deadline forfeits your right to recover.', 'roden-law' ); ?></p>
                 </div>
                 <?php endif; ?>

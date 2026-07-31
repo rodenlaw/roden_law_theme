@@ -674,6 +674,12 @@ h1, h2, h3, h4, h5, h6 {
 .sol-ga .sol-years { color: var(--navy); }
 .sol-sc .sol-years { color: var(--orange); }
 .sol-cite { display: block; font-size: 11px; color: var(--gray-600); margin-top: 4px; }
+/* Employer-notice deadline — only rendered for statutory schemes (workers' comp),
+   where the notice period is shorter than the filing deadline above it. */
+.sol-notice {
+    display: block; font-size: 11px; line-height: 1.45; color: var(--gray-700);
+    margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--gray-200);
+}
 
 /* ─── STATE LAW BOX ────────────────────────────────────────────────────── */
 
@@ -986,6 +992,12 @@ h1, h2, h3, h4, h5, h6 {
 .deadline-sc { background: var(--orange); }
 .deadline-years { display: block; font-size: 20px; font-weight: 900; }
 .deadline-state { display: block; font-size: 9px; margin-top: 2px; opacity: 0.8; }
+.deadline-cite { font-size: 11px; color: var(--gray-600); text-align: center; margin: 0 0 8px; }
+.deadline-notice {
+    font-size: 11px; line-height: 1.45; color: var(--gray-700);
+    margin: 0 0 8px; padding: 8px; border-radius: 4px; background: var(--gray-100);
+}
+.deadline-notice strong { color: var(--navy); }
 .deadline-warning { font-size: 11px; color: var(--gray-500); text-align: center; }
 
 /* Sidebar Why Us */
@@ -1632,6 +1644,15 @@ h2.key-takeaways-title {
     filter: brightness(0) invert(1); opacity: 0.85;
 }
 .badge-item img:hover { opacity: 1; }
+
+/* Text fallback: the bar sits on --navy, so labels must never inherit the
+   body color (#333 on #013046 = 1.1:1). #fff on --navy = 13.9:1. */
+.badge-label {
+    color: var(--white);
+    font-size: 14px; font-weight: 600;
+    letter-spacing: 0.04em; text-transform: uppercase;
+}
+.badge-icon:empty { display: none; }
 
 /* ─── LOCATION PAGE — Hero Stats (match homepage hero) ────────────────── */
 

@@ -1264,31 +1264,39 @@ function roden_schema_intersection_howto( $firm ) {
     // ES intersections seed _roden_accident_phrase (e.g. "un accidente de
     // auto"); the English suffix-strip below doesn't apply to Spanish titles.
     $accident_type = get_post_meta( get_the_ID(), '_roden_accident_phrase', true );
+    if ( ! $accident_type && function_exists( 'roden_pa_accident_phrase' ) ) {
+        $accident_type = roden_pa_accident_phrase();
+    }
     if ( ! $accident_type ) {
         $accident_type = strtolower( str_replace( ' Lawyers', '', $parent->post_title ) );
     }
     $city_label    = $office['market_name'] . ', ' . $office['state'];
     $url           = roden_get_canonical_url();
 
-    $steps = array(
-        array( 'name' => __( 'Ensure safety and call 911', 'roden-law' ),                 'text' => __( 'Move to a safe location if possible. Call emergency services to report the accident and request medical attention for anyone injured.', 'roden-law' ) ),
-        array( 'name' => __( 'Seek immediate medical attention', 'roden-law' ),           'text' => __( 'Even if injuries seem minor, get examined by a doctor. Some injuries may not show symptoms immediately.', 'roden-law' ) ),
-        array( 'name' => __( 'Document the scene', 'roden-law' ),                        'text' => __( 'Take photos of all vehicles, injuries, road conditions, traffic signs, and any visible damage. Collect names and contact information from witnesses.', 'roden-law' ) ),
-        array( 'name' => __( 'Exchange information with all parties', 'roden-law' ),      'text' => __( 'Get the other driver\'s name, insurance information, license plate number, and driver\'s license number. Do not admit fault or apologize.', 'roden-law' ) ),
-        /* translators: %s: full state name, e.g. "Georgia". */
-        array( 'name' => __( 'Report the accident to police', 'roden-law' ),             'text' => sprintf( __( '%s law requires accident reports when there are injuries or significant property damage. Request a copy of the police report.', 'roden-law' ), $office['state_full'] ) ),
-        array( 'name' => __( 'Notify your insurance company', 'roden-law' ),             'text' => __( 'Report the accident to your insurer promptly. Provide factual information only — do not speculate about fault or the extent of your injuries.', 'roden-law' ) ),
-        array( 'name' => __( 'Contact an experienced personal injury attorney', 'roden-law' ), 'text' => __( 'An attorney can protect your rights, handle communications with insurance companies, and help you pursue the full compensation you deserve.', 'roden-law' ) ),
-    );
+    // Single source of truth with the visible list in roden_what_to_do_steps().
+    // These two used to hold independent copies of the steps, which is how the
+    // page and its structured data drifted apart: every practice area — including
+    // workers' compensation — emitted the car-accident sequence as HowTo.
+    $steps = function_exists( 'roden_what_to_do_steps_data' )
+        ? roden_what_to_do_steps_data( '', $office['state_full'], $office['state'] )
+        : array();
+
+    if ( ! $steps ) {
+        return;
+    }
 
     $step_entities = array();
     foreach ( $steps as $i => $step ) {
+        // Step titles carry a trailing period for the visible list; schema
+        // step names read better without it.
+        $step_name = rtrim( $step['title'], '.' );
+
         $step_entities[] = array(
             '@type'    => 'HowToStep',
             'position' => $i + 1,
-            'name'     => $step['name'],
-            'text'     => $step['text'],
-            'url'      => $url . '#step-' . sanitize_title( $step['name'] ),
+            'name'     => $step_name,
+            'text'     => $step['body'],
+            'url'      => $url . '#step-' . sanitize_title( $step_name ),
         );
     }
 
@@ -1297,7 +1305,7 @@ function roden_schema_intersection_howto( $firm ) {
         '@type'       => 'HowTo',
         '@id'         => $url . '#howto',
         /* translators: 1: accident type, e.g. "a car accident"; 2: city label, e.g. "Savannah, GA". */
-        'name'        => sprintf( __( 'What to Do After %1$s in %2$s', 'roden-law' ), ucfirst( $accident_type ), $city_label ),
+        'name'        => sprintf( __( 'What to Do After %1$s in %2$s', 'roden-law' ), function_exists( 'roden_accident_phrase_case' ) ? roden_accident_phrase_case( $accident_type ) : ucfirst( $accident_type ), $city_label ),
         /* translators: 1: accident type; 2: city label. */
         'description' => sprintf( __( 'Step-by-step guide on what to do after %1$s in %2$s. Protect your rights and maximize your compensation.', 'roden-law' ), $accident_type, $city_label ),
         'url'         => $url,

@@ -33,11 +33,26 @@ $court             = get_post_meta( $post_id, '_roden_neighborhood_court', true 
 $faqs              = get_post_meta( $post_id, '_roden_faqs', true );
 $neighborhood_name = get_the_title();
 
-// Resolve parent office — fall back to office key on parent post
+// Resolve parent office — walk ancestors when the post has no explicit key.
+//
+// The previous fallback read only '_roden_office_key' on the immediate parent.
+// Neighborhood posts store the office under '_roden_parent_office_key' and
+// leave '_roden_office_key' unset, so that lookup never resolved anything and
+// a post missing its own key fell through to the "not configured" notice.
+// Check both keys, and walk the full ancestor chain rather than one level.
 if ( ! $parent_office_key ) {
-    $parent_id = wp_get_post_parent_id( $post_id );
-    if ( $parent_id ) {
-        $parent_office_key = get_post_meta( $parent_id, '_roden_office_key', true );
+    $anc_id = wp_get_post_parent_id( $post_id );
+    $depth  = 0;
+    while ( $anc_id && $depth < 5 ) {
+        foreach ( array( '_roden_parent_office_key', '_roden_office_key' ) as $anc_key ) {
+            $anc_val = get_post_meta( $anc_id, $anc_key, true );
+            if ( $anc_val ) {
+                $parent_office_key = $anc_val;
+                break 2;
+            }
+        }
+        $anc_id = wp_get_post_parent_id( $anc_id );
+        $depth++;
     }
 }
 
@@ -307,32 +322,75 @@ if ( ! empty( $sub_neighborhoods ) ) :
 <!-- ================================================================
      7. STATE LAW BOX
      ================================================================ -->
-<?php if ( $jurisdiction ) : ?>
+<?php
+/*
+ * Neighborhood pages are general personal injury by default, so the tort
+ * statute of limitations is the right answer for every page that exists today.
+ * They are still routed through roden_resolve_statute() rather than reading
+ * $jurisdiction directly: this is the fourth template in the practice-area
+ * family, and the other three each shipped the tort deadline onto a workers'
+ * comp page before being fixed. Setting _roden_neighborhood_practice_area to a
+ * pillar slug (e.g. 'workers-compensation-lawyers') makes this page resolve the
+ * right deadline instead of repeating that bug.
+ */
+$nb_pa_slug = get_post_meta( $post_id, '_roden_neighborhood_practice_area', true );
+if ( ! $nb_pa_slug ) {
+    $nb_pa_slug = null; // null → resolver auto-detects; '' would force tort defaults.
+}
+$nb_statute   = function_exists( 'roden_resolve_statute' ) ? roden_resolve_statute( $state_key, $nb_pa_slug ) : null;
+$nb_statutory = ( $nb_statute && $nb_statute['is_override'] );
+
+// Heading noun follows the practice area when one is set.
+$nb_law_noun = 'Personal Injury';
+if ( $nb_pa_slug ) {
+    $nb_pa_post = get_page_by_path( $nb_pa_slug, OBJECT, 'practice_area' );
+    if ( $nb_pa_post && function_exists( 'roden_pa_noun' ) ) {
+        $nb_law_noun = roden_pa_noun( $nb_law_noun, $nb_pa_post->ID );
+    }
+}
+?>
+<?php if ( $jurisdiction && $nb_statute ) : ?>
 <section class="section">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title"><?php echo esc_html( $jurisdiction['state_full'] ); ?> Personal Injury Law</h2>
+            <h2 class="section-title"><?php echo esc_html( $jurisdiction['state_full'] . ' ' . $nb_law_noun ); ?> Law</h2>
         </div>
         <div class="jurisdiction-cards">
             <div class="state-law-box">
                 <div class="law-details-grid">
                     <div class="law-detail">
-                        <span class="law-label">Statute of Limitations</span>
+                        <span class="law-label"><?php echo esc_html( $nb_statutory ? 'Deadline to File a Claim' : 'Statute of Limitations' ); ?></span>
                         <span class="law-value">
-                            <?php echo esc_html( $jurisdiction['statute_years'] ); ?> years
-                            (<?php echo esc_html( $jurisdiction['statute_cite'] ); ?>)
+                            <?php
+                            printf(
+                                /* translators: 1: number of years; 2: statute citation. */
+                                esc_html( _n( '%1$s year (%2$s)', '%1$s years (%2$s)', (int) $nb_statute['statute_years'], 'roden-law' ) ),
+                                esc_html( $nb_statute['statute_years'] ),
+                                esc_html( $nb_statute['statute_cite'] )
+                            );
+                            ?>
                         </span>
                     </div>
+                    <?php if ( $nb_statute['notice_label'] && $nb_statute['notice_detail'] ) : ?>
                     <div class="law-detail">
-                        <span class="law-label">Comparative Fault</span>
+                        <span class="law-label"><?php echo esc_html( $nb_statute['notice_label'] ); ?></span>
+                        <span class="law-value"><?php echo esc_html( $nb_statute['notice_detail'] ); ?></span>
+                    </div>
+                    <?php endif; ?>
+                    <div class="law-detail">
+                        <span class="law-label"><?php echo esc_html( $nb_statutory ? 'Fault' : 'Comparative Fault' ); ?></span>
                         <span class="law-value">
-                            <?php echo esc_html( $jurisdiction['comp_fault_rule'] ); ?>
-                            <?php if ( $jurisdiction['comp_fault_cite'] ) : ?>
-                                (<?php echo esc_html( $jurisdiction['comp_fault_cite'] ); ?>)
+                            <?php if ( $nb_statutory ) : ?>
+                                No-fault — benefits do not depend on proving employer negligence
+                            <?php else : ?>
+                                <?php echo esc_html( $jurisdiction['comp_fault_rule'] ); ?>
+                                <?php if ( $jurisdiction['comp_fault_cite'] ) : ?>
+                                    (<?php echo esc_html( $jurisdiction['comp_fault_cite'] ); ?>)
+                                <?php endif; ?>
                             <?php endif; ?>
                         </span>
                     </div>
-                    <?php if ( $court ) : ?>
+                    <?php if ( $court && ! $nb_statutory ) : ?>
                     <div class="law-detail">
                         <span class="law-label">Court Jurisdiction</span>
                         <span class="law-value"><?php echo esc_html( $court ); ?></span>

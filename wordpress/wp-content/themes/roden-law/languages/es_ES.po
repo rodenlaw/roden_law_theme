@@ -2961,12 +2961,6 @@ msgstr "Ver en Google Maps"
 msgid "%s Filing Deadline"
 msgstr "Plazo para Presentar su Demanda en %s"
 
-#. translators: %s: number of years.
-#: templates/template-intersection.php:572
-#, php-format
-msgid "%s yr"
-msgstr "%s años"
-
 #: templates/template-intersection.php:576
 #: templates/template-practice-area.php:642
 #: templates/template-subtype.php:369
@@ -3675,3 +3669,75 @@ msgstr "Si usted resultó lesionado en Carolina del Sur, un abogado de Roden Law
 #: templates/template-pillar-sc-statewide.php
 msgid "Request a Free Case Review"
 msgstr "Solicite una Revisión Gratuita de su Caso"
+
+#
+# ─────────────────────────────────────────────────────────────────────────
+# Added 2026-07-30 — practice-area-aware filing deadlines.
+#
+# Parameterising the statute citations changed several msgids, which dropped
+# their existing translations and left English on the Spanish pillar and
+# sub-type pages. These restore them, reusing the prior wording verbatim.
+#
+# The workers' compensation prose (no-fault framing, notice wording, benefit
+# lists, comp "what to do" steps) is deliberately NOT here: it is suppressed on
+# /es/ by roden_resolve_statute() until a human translator produces it. Machine
+# Spanish on a law firm's legal-advice pages is not an acceptable stopgap.
+# ─────────────────────────────────────────────────────────────────────────
+
+#. translators: 1: number of years; 2: statute citation.
+#, php-format
+msgid "%1$s year (%2$s)"
+msgid_plural "%1$s years (%2$s)"
+msgstr[0] "%1$s año (%2$s)"
+msgstr[1] "%1$s años (%2$s)"
+
+#. translators: %s: number of years.
+#, php-format
+msgid "%s Year"
+msgid_plural "%s Years"
+msgstr[0] "%s Año"
+msgstr[1] "%s Años"
+
+#. translators: %s: number of years.
+#, php-format
+msgid "%s year"
+msgid_plural "%s years"
+msgstr[0] "%s año"
+msgstr[1] "%s años"
+
+#. translators: %s: number of years. Same msgid both forms — English reads
+#. "1 yr"/"2 yr" either way; Spanish needs año/años.
+#, php-format
+msgid "%s yr"
+msgid_plural "%s yr"
+msgstr[0] "%s año"
+msgstr[1] "%s años"
+
+#. translators: 1: state name; 2: practice area noun.
+#, php-format
+msgid "%1$s %2$s Law"
+msgstr "Ley de %2$s de %1$s"
+
+#. translators: 1: practice area noun; 2: city/market name.
+#, php-format
+msgid "Types of %1$s Cases We Handle in %2$s"
+msgstr "Tipos de Casos de %1$s que Manejamos en %2$s"
+
+#. translators: 1: GA deadline; 2: GA citation; 3: SC deadline; 4: SC citation.
+#, php-format
+msgid "The statute of limitations is the legal deadline for filing a personal injury lawsuit. In Georgia, you have %1$s from the date of injury (%2$s). In South Carolina, you have %3$s (%4$s). Missing this deadline permanently bars your claim."
+msgstr "El plazo legal para demandar es la fecha límite legal para presentar una demanda de lesiones personales. En Georgia, usted tiene %1$s desde la fecha de la lesión (%2$s). En Carolina del Sur, usted tiene %3$s (%4$s). No cumplir con este plazo impide permanentemente su reclamo."
+
+#. translators: 1: deadline; 2: statute citation.
+#, php-format
+msgid "In Georgia, you have %1$s from the date of injury (%2$s)."
+msgstr "En Georgia, usted tiene %1$s desde la fecha de la lesión (%2$s)."
+
+#. translators: 1: deadline; 2: statute citation.
+#, php-format
+msgid "In South Carolina, you have %1$s (%2$s)."
+msgstr "En Carolina del Sur, usted tiene %1$s (%2$s)."
+
+#. translators: used where no state is known, as in "State law requires...".
+msgid "State"
+msgstr "La ley estatal"
