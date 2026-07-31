@@ -455,6 +455,25 @@ function roden_get_legacy_redirect_map() {
         '/workers-compensation-lawyers/warehouse-logistics-injury/' => '/workers-compensation-lawyers/warehouse-distribution-injury/',
 
         // ══════════════════════════════════════════════════════════════
+        // CATEGORY 17b: duplicate Savannah neighborhoods — 2026-07-31
+        // Ardsley Park and Georgetown each existed twice: once flat under
+        // /savannah/ and once nested under its district. The district-nested
+        // version wins both times — Savannah's other direct children are
+        // CITIES (Pooler, Rincon, Guyton, Statesboro), so a neighborhood
+        // sitting at that level is structurally wrong, and the nested pages
+        // also carry ~50% more content. Neither had inbound internal links,
+        // so nothing is lost by choosing on structure.
+        //
+        // Note this is the opposite choice from CATEGORY 15's Guyton and
+        // Springfield, and deliberately so: those two ARE Effingham County
+        // towns, so flat-under-the-office-city was correct for them.
+        // The rule is cities flat, neighborhoods under their district.
+        // ══════════════════════════════════════════════════════════════
+
+        '/locations/georgia/savannah/ardsley-park/' => '/locations/georgia/savannah/midtown-savannah/ardsley-park-chatham-crescent/',
+        '/locations/georgia/savannah/georgetown/'   => '/locations/georgia/savannah/southside-savannah/georgetown-savannah/',
+
+        // ══════════════════════════════════════════════════════════════
         // CATEGORY 16: dead flat LPs — 2026-07-08 SEO/GEO audit item G2
         // Former flat landing-page URLs (present as routes in the Next.js
         // mirror, so they were live pages) returning hard 404s with no
