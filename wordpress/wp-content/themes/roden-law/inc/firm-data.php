@@ -480,19 +480,29 @@ EOT
 
         'statute_overrides' => array(
             'workers-compensation-lawyers' => array(
+                /*
+                 * The prose fields are translatable: they render inside
+                 * sentences on the page, so leaving them as bare English was
+                 * what forced roden_resolve_statute() to blank them on /es/
+                 * rather than emit English mid-Spanish-sentence. roden_firm_data()
+                 * is rebuilt per call and the textdomain loads on
+                 * after_setup_theme, so __() resolves correctly here.
+                 * Statute citations stay untranslated — a code section is a
+                 * proper name in both languages.
+                 */
                 'GA' => array(
                     'statute_years'  => 1,
                     'statute_cite'   => 'O.C.G.A. § 34-9-82',
-                    'notice_label'   => 'Notify your employer',
-                    'notice_detail'  => 'within 30 days of the injury (O.C.G.A. § 34-9-80)',
-                    'filing_venue'   => 'State Board of Workers\' Compensation (form WC-14)',
+                    'notice_label'   => __( 'Notify your employer', 'roden-law' ),
+                    'notice_detail'  => __( 'within 30 days of the injury (O.C.G.A. § 34-9-80)', 'roden-law' ),
+                    'filing_venue'   => __( 'State Board of Workers\' Compensation (form WC-14)', 'roden-law' ),
                 ),
                 'SC' => array(
                     'statute_years'  => 2,
                     'statute_cite'   => 'S.C. Code § 42-15-40',
-                    'notice_label'   => 'Notify your employer',
-                    'notice_detail'  => 'within 90 days of the injury (S.C. Code § 42-15-20)',
-                    'filing_venue'   => 'S.C. Workers\' Compensation Commission (Form 50)',
+                    'notice_label'   => __( 'Notify your employer', 'roden-law' ),
+                    'notice_detail'  => __( 'within 90 days of the injury (S.C. Code § 42-15-20)', 'roden-law' ),
+                    'filing_venue'   => __( 'S.C. Workers\' Compensation Commission (Form 50)', 'roden-law' ),
                 ),
             ),
         ),

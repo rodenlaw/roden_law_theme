@@ -3747,3 +3747,125 @@ msgstr "En Carolina del Sur, usted tiene %1$s (%2$s)."
 #. translators: used where no state is known, as in "State law requires...".
 msgid "State"
 msgstr "La ley estatal"
+
+# ── Workers' compensation (Spanish) — added 2026-07-31 ──
+# These strings previously had no catalog entry at all, which is why
+# roden_resolve_statute() suppressed the comp prose on /es/ rather than
+# emit English mid-sentence. With these in place the suppression is gone.
+
+msgid "Notify your employer"
+msgstr "Notifique a su empleador"
+
+msgid "within 30 days of the injury (O.C.G.A. § 34-9-80)"
+msgstr "dentro de los 30 días posteriores a la lesión (O.C.G.A. § 34-9-80)"
+
+msgid "within 90 days of the injury (S.C. Code § 42-15-20)"
+msgstr "dentro de los 90 días posteriores a la lesión (S.C. Code § 42-15-20)"
+
+msgid "State Board of Workers' Compensation (form WC-14)"
+msgstr "State Board of Workers' Compensation (formulario WC-14)"
+
+msgid "S.C. Workers' Compensation Commission (Form 50)"
+msgstr "S.C. Workers' Compensation Commission (Formulario 50)"
+
+msgid "Report the injury to your employer."
+msgstr "Reporte la lesión a su empleador."
+
+msgid "Notify a supervisor or HR in writing %s. This is the deadline injured workers miss most often, and missing it can bar your claim entirely."
+msgstr "Notifique por escrito a un supervisor o a Recursos Humanos %s. Este es el plazo que los trabajadores lesionados pasan por alto con más frecuencia, y perderlo puede anular su reclamo por completo."
+
+msgid "Get medical care from an authorized physician."
+msgstr "Reciba atención médica de un médico autorizado."
+
+msgid "Your employer should post a panel of physicians. Treating outside that panel without approval can leave you responsible for the bills and give the insurer a reason to dispute your claim — ask for the panel before you choose a doctor, except in an emergency."
+msgstr "Su empleador debe tener publicado un panel de médicos. Atenderse fuera de ese panel sin autorización puede dejarlo responsable de las facturas y darle a la aseguradora un motivo para disputar su reclamo: pida el panel antes de elegir médico, salvo en una emergencia."
+
+msgid "Ask for the posted panel of physicians in writing."
+msgstr "Pida por escrito el panel de médicos publicado."
+
+msgid "If your employer has no valid posted panel, or refuses to provide it, you may be entitled to choose your own treating doctor. Keep a copy of the request."
+msgstr "Si su empleador no tiene un panel válido publicado, o se niega a proporcionarlo, usted podría tener derecho a elegir su propio médico tratante. Conserve una copia de la solicitud."
+
+msgid "Document the injury and the conditions that caused it."
+msgstr "Documente la lesión y las condiciones que la causaron."
+
+msgid "Photograph the equipment, work area, and any hazard. Note who witnessed the incident and what you reported, to whom, and when. Keep copies of every form you sign."
+msgstr "Fotografíe el equipo, el área de trabajo y cualquier peligro. Anote quién presenció el incidente y qué reportó, a quién y cuándo. Conserve copias de cada formulario que firme."
+
+msgid "File your claim before the deadline."
+msgstr "Presente su reclamo antes del plazo límite."
+
+msgid "Reporting the injury to your employer is not the same as filing a claim. File with the %1$s — %2$s."
+msgstr "Reportar la lesión a su empleador no es lo mismo que presentar un reclamo. Preséntelo ante %1$s: %2$s."
+
+msgid "Do not give a recorded statement without advice."
+msgstr "No dé una declaración grabada sin asesoría legal."
+
+msgid "The insurance adjuster works for your employer's carrier, not for you. You are generally not required to give a recorded statement before speaking with an attorney."
+msgstr "El ajustador de seguros trabaja para la aseguradora de su empleador, no para usted. Por lo general, no está obligado a dar una declaración grabada antes de hablar con un abogado."
+
+msgid "Ask whether you also have a third-party claim."
+msgstr "Pregunte si además tiene un reclamo contra terceros."
+
+msgid "Workers' compensation does not pay for pain and suffering. If someone other than your employer contributed to the injury — a negligent driver, a contractor on site, or a defective machine's manufacturer — a separate claim may recover damages comp cannot. Roden Law offers free consultations."
+msgstr "La compensación laboral no paga por dolor y sufrimiento. Si alguien distinto de su empleador contribuyó a la lesión —un conductor negligente, un contratista en la obra o el fabricante de una máquina defectuosa— un reclamo aparte podría recuperar daños que la compensación laboral no cubre. Roden Law ofrece consultas gratuitas."
+
+msgid "as soon as possible — every state sets a strict notice deadline"
+msgstr "lo antes posible: cada estado fija un plazo estricto de notificación"
+
+msgid "your state workers' compensation board"
+msgstr "la junta de compensación laboral de su estado"
+
+msgid "before your state deadline expires"
+msgstr "antes de que venza el plazo de su estado"
+
+msgid "Workers' compensation is a no-fault system. You do not have to prove your employer did anything wrong — you have to show the injury arose out of and in the course of your employment, and that you met the notice and filing deadlines."
+msgstr "La compensación laboral es un sistema sin culpa. No tiene que probar que su empleador hizo algo mal: tiene que demostrar que la lesión surgió del empleo y en el curso del mismo, y que cumplió con los plazos de notificación y presentación."
+
+msgid "Timely Notice and Filing"
+msgstr "Notificación y presentación a tiempo"
+
+msgid "Workers' compensation pays a defined set of statutory benefits. It does not pay for pain and suffering, and the wage benefits are capped by statute — which is why a separate third-party claim matters when someone other than your employer contributed to the injury."
+msgstr "La compensación laboral paga un conjunto definido de beneficios establecidos por ley. No paga por dolor y sufrimiento, y los beneficios salariales tienen un tope legal: por eso un reclamo aparte contra terceros es importante cuando alguien distinto de su empleador contribuyó a la lesión."
+
+msgid "Workers' Compensation Benefits"
+msgstr "Beneficios de compensación laboral"
+
+msgid "Only Through a Third-Party Claim"
+msgstr "Solo mediante un reclamo contra terceros"
+
+msgid "Filing Deadlines for %s Claims"
+msgstr "Plazos de presentación para reclamos de %s"
+
+msgid "What If the Accident Was My Fault?"
+msgstr "¿Qué pasa si el accidente fue mi culpa?"
+
+msgid "Workers' compensation is a no-fault system. Carelessness on your part does not reduce your benefits and does not bar the claim — you do not have to prove anyone was negligent, and your employer does not get to argue you were. Benefits can be denied in narrow circumstances, such as an injury caused by intoxication or by a wilful attempt to injure yourself or someone else, but ordinary mistakes on the job are not among them."
+msgstr "La compensación laboral es un sistema sin culpa. Un descuido de su parte no reduce sus beneficios ni impide el reclamo: no tiene que probar que alguien fue negligente, y su empleador no puede alegar que usted lo fue. Los beneficios pueden negarse en circunstancias limitadas, como una lesión causada por intoxicación o por un intento deliberado de lesionarse a sí mismo o a otra persona, pero los errores comunes en el trabajo no están entre ellas."
+
+msgid "Fault does matter in one place: a third-party claim against someone other than your employer. There, the ordinary comparative-fault rules apply and your share of responsibility can reduce what you recover — another reason to have those claims evaluated early."
+msgstr "La culpa sí importa en un caso: un reclamo contra un tercero distinto de su empleador. Allí se aplican las reglas ordinarias de culpa comparativa y su porcentaje de responsabilidad puede reducir lo que recupere, otra razón para que esos reclamos se evalúen a tiempo."
+
+msgid "Deadline to File a Claim"
+msgstr "Plazo para presentar un reclamo"
+
+msgid "No-fault — benefits do not depend on proving employer negligence"
+msgstr "Sin culpa: los beneficios no dependen de probar negligencia del empleador"
+
+msgid "%s workers' compensation is a no-fault system. You do not have to prove your employer did anything wrong — you have to show the injury arose out of and in the course of your employment, and that you met the notice and filing deadlines."
+msgstr "La compensación laboral de %s es un sistema sin culpa. No tiene que probar que su empleador hizo algo mal: tiene que demostrar que la lesión surgió del empleo y en el curso del mismo, y que cumplió con los plazos de notificación y presentación."
+
+msgid "Workers' compensation pays a defined set of statutory benefits — it does not pay for pain and suffering, and the wage benefits are capped by %s law. That is why a separate third-party claim matters when someone other than your employer contributed to the injury."
+msgstr "La compensación laboral paga un conjunto definido de beneficios establecidos por ley: no paga por dolor y sufrimiento, y los beneficios salariales tienen un tope según la ley de %s. Por eso un reclamo aparte contra terceros es importante cuando alguien distinto de su empleador contribuyó a la lesión."
+
+msgid "Workers' compensation runs on its own deadlines, separate from the personal injury statute of limitations. In Georgia you have %1$s from the date of injury to file your claim (%2$s). In South Carolina you have %3$s (%4$s). You must also report the injury to your employer well before those dates — that notice deadline is much shorter, and missing it can end the claim on its own."
+msgstr "La compensación laboral tiene sus propios plazos, distintos del plazo de prescripción para lesiones personales. En Georgia usted tiene %1$s desde la fecha de la lesión para presentar su reclamo (%2$s). En Carolina del Sur tiene %3$s (%4$s). También debe reportar la lesión a su empleador mucho antes de esas fechas: ese plazo de notificación es mucho más corto, y perderlo puede terminar el reclamo por sí solo."
+
+msgid "If you were hurt on the job in %1$s, %2$s, report the injury to your employer %3$s, then file your claim with the %4$s — %5$s. %2$s workers' compensation is a no-fault system: you do not have to prove your employer was negligent, and being partly at fault does not bar benefits. It does not, however, pay for pain and suffering. If someone other than your employer contributed to the injury, a separate third-party claim may recover damages workers' compensation cannot. Roden Law represents injured %1$s workers on a contingency fee: the consultation is free and there is no fee unless we win."
+msgstr "Si se lesionó en el trabajo en %1$s, %2$s, reporte la lesión a su empleador %3$s y luego presente su reclamo ante %4$s: %5$s. La compensación laboral de %2$s es un sistema sin culpa: no tiene que probar que su empleador fue negligente, y tener parte de la culpa no le impide recibir beneficios. Sin embargo, no paga por dolor y sufrimiento. Si alguien distinto de su empleador contribuyó a la lesión, un reclamo aparte contra terceros podría recuperar daños que la compensación laboral no cubre. Roden Law representa a trabajadores lesionados de %1$s con honorarios por contingencia: la consulta es gratis y no cobramos a menos que ganemos."
+
+msgid "%1$s year from the date of injury (%2$s)"
+msgid_plural "%1$s years from the date of injury (%2$s)"
+msgstr[0] "%1$s año desde la fecha de la lesión (%2$s)"
+msgstr[1] "%1$s años desde la fecha de la lesión (%2$s)"
+

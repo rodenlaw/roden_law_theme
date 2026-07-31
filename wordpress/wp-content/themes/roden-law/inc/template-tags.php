@@ -164,27 +164,21 @@ function roden_resolve_statute( $state_key, $pa_slug = null ) {
         $resolved = array_merge( $resolved, $overrides[ $lookup_slug ][ $state_key ] );
 
         /*
-         * Deadlines and citations are language-neutral facts and must be
-         * corrected on every locale. The prose that accompanies them — notice
-         * wording, filing venue, and the no-fault copy the templates render off
-         * is_override — is English-only until it is translated in es_ES.po.
-         * Shipping machine-untranslated legal copy on a law firm's Spanish
-         * pages is worse than showing the existing translated tort framing, so
-         * ES gets the corrected numbers and keeps its current wording.
+         * Both locales now get the full statutory treatment.
          *
-         * Remove this branch once the workers' compensation strings are
-         * translated; nothing else needs to change.
+         * Until 2026-07-31 this branch blanked the prose fields and forced
+         * is_override = false on /es/, because the comp strings had no entry in
+         * es_ES.po at all — not untranslated, simply absent — so the templates
+         * would have rendered English legal copy mid-Spanish-sentence. Spanish
+         * pages got the corrected deadlines with their existing translated tort
+         * framing, which was right on the numbers and wrong on the concept: it
+         * described comparative fault on a no-fault claim.
+         *
+         * The 38 missing strings are now translated (see es_ES.po), and the
+         * statute_overrides prose in inc/firm-data.php is wrapped in __(), so
+         * the suppression is gone.
          */
-        $is_es = function_exists( 'roden_current_lang' ) && 'es' === roden_current_lang();
-
-        if ( $is_es ) {
-            $resolved['notice_label']  = '';
-            $resolved['notice_detail'] = '';
-            $resolved['filing_venue']  = '';
-            $resolved['is_override']   = false;
-        } else {
-            $resolved['is_override'] = true;
-        }
+        $resolved['is_override'] = true;
     }
 
     return $resolved;
@@ -1462,6 +1456,27 @@ function roden_what_to_do_context_finish( $ctx ) {
 function roden_what_to_do_steps_data( $pa_slug = '', $state_full = '', $state_key = '' ) {
     if ( '' === $pa_slug ) {
         $pa_slug = roden_current_pa_slug();
+    }
+
+    /*
+     * Spanish pillars are prefixed 'es-', so they never matched the curated
+     * branches below and every Spanish page fell through to the motor-vehicle
+     * default — including workers' comp, which told Spanish-speaking injured
+     * workers to exchange insurance details with the other driver.
+     *
+     * The prefix is stripped ONLY for practice areas whose step set is actually
+     * translated. The default sequence IS in es_ES.po; the other twelve curated
+     * sets are not, so stripping globally would trade a translated-but-generic
+     * checklist for an untranslated-but-specific one — the wrong trade on a law
+     * firm's Spanish pages. Add a slug here when its set lands in the catalog.
+     */
+    $es_translated = apply_filters( 'roden_what_to_do_steps_es_ready', array(
+        'workers-compensation-lawyers',
+    ) );
+
+    $bare_slug = preg_replace( '/^es-/', '', (string) $pa_slug );
+    if ( $bare_slug !== $pa_slug && in_array( $bare_slug, $es_translated, true ) ) {
+        $pa_slug = $bare_slug;
     }
 
     // Derive the state key when only the full name was supplied.
