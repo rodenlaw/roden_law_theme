@@ -347,34 +347,16 @@ $int_is_statutory = ( $int_statute && $int_statute['is_override'] );
 
             <!-- What to Do Steps (AI-extractable for "what to do after X in Y" queries) -->
             <?php
-            // Locale-safe accident phrase: ES intersections seed
-            // _roden_accident_phrase (e.g. "un accidente de auto") because the
-            // English article/suffix derivation below doesn't apply to Spanish.
-            $accident_type_label = get_post_meta( $post_id, '_roden_accident_phrase', true );
-            if ( ! $accident_type_label && ! $int_is_es ) {
-                // Practice areas named after the remedy rather than the event
-                // need an explicit phrase — "After A workers' compensation" is
-                // what the generic derivation below produces.
-                $accident_type_label = roden_pa_accident_phrase();
-            }
-            if ( ! $accident_type_label ) {
-                if ( $int_is_es || ! $parent_title ) {
-                    $accident_type_label = __( 'an accident', 'roden-law' );
-                } else {
-                    $accident_type_label = strtolower( str_replace( ' Lawyers', '', $parent_title ) );
-                    // Convert "car accident" to "a car accident"
-                    if ( strpos( $accident_type_label, 'a ' ) !== 0 && strpos( $accident_type_label, 'an ' ) !== 0 ) {
-                        $vowels = array( 'a', 'e', 'i', 'o', 'u' );
-                        $article = in_array( strtolower( $accident_type_label[0] ), $vowels ) ? 'an ' : 'a ';
-                        $accident_type_label = $article . $accident_type_label;
-                    }
-                }
-            }
+            // Locale-safe accident phrase, office city and state all resolve in
+            // roden_what_to_do_context() so the HowTo schema in
+            // schema-helpers.php renders from the same values.
+            $wtd_ctx             = roden_what_to_do_context();
+            $accident_type_label = $wtd_ctx['accident_phrase'];
             roden_what_to_do_steps(
                 $accident_type_label,
-                $office['market_name'] . ', ' . $office['state'],
-                $office['state_full'],
-                $office['state']
+                $wtd_ctx['city'],
+                $wtd_ctx['state_full'],
+                $wtd_ctx['state_key']
             );
             ?>
 

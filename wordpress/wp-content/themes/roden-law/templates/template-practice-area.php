@@ -215,9 +215,15 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                  WHAT TO DO STEPS (AI-extractable process for "what to do" queries)
                  ═══════════════════════════════════════════════════════════ -->
             <?php
-            $accident_label = strtolower( preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', get_the_title() ) );
-            $accident_label = roden_pa_accident_phrase( '', $accident_label );
-            roden_what_to_do_steps( $accident_label );
+            // Derivation lives in roden_what_to_do_context() so the HowTo
+            // schema in schema-helpers.php renders from the same values.
+            $wtd_ctx = roden_what_to_do_context();
+            roden_what_to_do_steps(
+                $wtd_ctx['accident_phrase'],
+                $wtd_ctx['city'],
+                $wtd_ctx['state_full'],
+                $wtd_ctx['state_key']
+            );
             ?>
 
             <!-- ═══════════════════════════════════════════════════════════

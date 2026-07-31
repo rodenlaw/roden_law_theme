@@ -1890,6 +1890,12 @@ msgstr "Qué Hacer Después de %1$s en %2$s"
 msgid "Step-by-step guide on what to do after %1$s in %2$s. Protect your rights and maximize your compensation."
 msgstr "Guía paso a paso sobre qué hacer después de %1$s en %2$s. Proteja sus derechos y maximice su compensación."
 
+#. translators: %s: accident type.
+#: inc/schema-helpers.php:1305
+#, php-format
+msgid "Step-by-step guide on what to do after %s. Protect your rights and maximize your compensation."
+msgstr "Guía paso a paso sobre qué hacer después de %s. Proteja sus derechos y maximice su compensación."
+
 #: inc/schema-helpers.php:1167
 #: inc/schema-helpers 2.php:920
 #: inc/template-tags.php:24

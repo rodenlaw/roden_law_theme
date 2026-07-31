@@ -94,17 +94,19 @@
                  WHAT TO DO STEPS (AI-extractable for "what to do after X" queries)
                  ═══════════════════════════════════════════════════════════ -->
             <?php
-            $accident_type_label = preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', get_the_title() );
-            $accident_type_lower = strtolower( $accident_type_label );
-            if ( strpos( $accident_type_lower, 'a ' ) !== 0 && strpos( $accident_type_lower, 'an ' ) !== 0 ) {
-                $vowels = array( 'a', 'e', 'i', 'o', 'u' );
-                $article = in_array( strtolower( $accident_type_lower[0] ), $vowels ) ? 'an ' : 'a ';
-                $accident_type_lower = $article . $accident_type_lower;
-            }
-            // Sub-type titles are case types, not events, so the derivation above
-            // yields "a savannah port worker injury". Practice areas that define an
-            // event phrase override it.
-            $accident_type_lower = roden_pa_accident_phrase( '', $accident_type_lower );
+            // Accident phrase and state resolution live in
+            // roden_what_to_do_context() so the HowTo schema in
+            // schema-helpers.php renders from the same values.
+            $wtd_ctx = roden_what_to_do_context();
+            roden_what_to_do_steps(
+                $wtd_ctx['accident_phrase'],
+                $wtd_ctx['city'],
+                $wtd_ctx['state_full'],
+                $wtd_ctx['state_key']
+            );
+
+            // Reused by the negligence and damages sentences further down.
+            $accident_type_lower = $wtd_ctx['accident_phrase'];
 
             // Statutory schemes (workers' comp) are no-fault and run on their own
             // deadlines — several sections below are wrong for them.
@@ -112,8 +114,6 @@
             $st_state_key = ( 'sc' === $st_jur ) ? 'SC' : 'GA';
             $st_statute   = roden_resolve_statute( $st_state_key );
             $st_statutory = ( $st_statute && $st_statute['is_override'] );
-
-            roden_what_to_do_steps( $accident_type_lower, '', '', $st_statutory ? $st_state_key : '' );
             ?>
 
             <!-- ═══════════════════════════════════════════════════════════

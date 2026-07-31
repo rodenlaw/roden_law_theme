@@ -249,10 +249,14 @@ function roden_output_schema() {
         roden_schema_faq_page();
         roden_schema_speakable_practice_area();
 
-        // LocalBusiness + HowTo on intersection pages — ties to physical office + "What to Do" steps.
+        // HowTo mirrors the visible "What to Do" list, which all three
+        // practice-area tiers render. Emitting it only for intersections left
+        // the pillar and every sub-type with no machine-readable steps.
+        roden_schema_what_to_do_howto( $firm );
+
+        // LocalBusiness on intersection pages — ties the page to a physical office.
         if ( function_exists( 'roden_is_intersection_page' ) && roden_is_intersection_page() ) {
             roden_schema_local_business_single( $firm );
-            roden_schema_intersection_howto( $firm );
         }
 
         // Article schema for sub-type pages (child PA posts without an office key).
@@ -1240,50 +1244,41 @@ function roden_extract_howto_steps( $content ) {
    ========================================================================== */
 
 /**
- * Output HowTo schema for intersection pages' "What to Do" steps.
+ * Output HowTo schema for a practice-area page's "What to Do" steps.
  * These target high-value "what to do after [accident] in [city]" queries
  * that frequently trigger AI Overviews and Google featured snippets.
  *
+ * Applies to all three practice-area tiers. It was intersection-only until
+ * 2026-07-31, so the pillar and every sub-type rendered a visible step list
+ * — markup literally commented "AI-extractable" — with no machine-readable
+ * counterpart. The pillar is the most authoritative page in each cluster and
+ * was the one going unread.
+ *
+ * Heading text and steps both come from roden_what_to_do_context(), the same
+ * source the visible list renders from, so the two cannot disagree.
+ *
  * @param array $firm Firm data from roden_firm_data().
  */
-function roden_schema_intersection_howto( $firm ) {
-    $post    = get_post();
-    $parent  = $post->post_parent ? get_post( $post->post_parent ) : null;
-
-    if ( ! $parent ) {
+function roden_schema_what_to_do_howto( $firm ) {
+    if ( ! function_exists( 'roden_what_to_do_context' ) || ! function_exists( 'roden_what_to_do_steps_data' ) ) {
         return;
     }
 
-    $office_key = get_post_meta( get_the_ID(), '_roden_pa_office_key', true );
-    $office     = isset( $firm['offices'][ $office_key ] ) ? $firm['offices'][ $office_key ] : null;
-
-    if ( ! $office ) {
+    $ctx = roden_what_to_do_context();
+    if ( ! $ctx || '' === $ctx['accident_phrase'] ) {
         return;
     }
 
-    // ES intersections seed _roden_accident_phrase (e.g. "un accidente de
-    // auto"); the English suffix-strip below doesn't apply to Spanish titles.
-    $accident_type = get_post_meta( get_the_ID(), '_roden_accident_phrase', true );
-    if ( ! $accident_type && function_exists( 'roden_pa_accident_phrase' ) ) {
-        $accident_type = roden_pa_accident_phrase();
-    }
-    if ( ! $accident_type ) {
-        $accident_type = strtolower( str_replace( ' Lawyers', '', $parent->post_title ) );
-    }
-    $city_label    = $office['market_name'] . ', ' . $office['state'];
-    $url           = roden_get_canonical_url();
-
-    // Single source of truth with the visible list in roden_what_to_do_steps().
-    // These two used to hold independent copies of the steps, which is how the
-    // page and its structured data drifted apart: every practice area — including
-    // workers' compensation — emitted the car-accident sequence as HowTo.
-    $steps = function_exists( 'roden_what_to_do_steps_data' )
-        ? roden_what_to_do_steps_data( '', $office['state_full'], $office['state'] )
-        : array();
-
+    $steps = roden_what_to_do_steps_data( '', $ctx['state_full'], $ctx['state_key'] );
     if ( ! $steps ) {
         return;
     }
+
+    $url           = roden_get_canonical_url();
+    $accident_type = $ctx['accident_phrase'];
+    $phrase_cased  = function_exists( 'roden_accident_phrase_case' )
+        ? roden_accident_phrase_case( $accident_type )
+        : ucfirst( $accident_type );
 
     $step_entities = array();
     foreach ( $steps as $i => $step ) {
@@ -1300,17 +1295,37 @@ function roden_schema_intersection_howto( $firm ) {
         );
     }
 
+    // Pillar and sub-type pages carry no city, matching the visible heading.
+    if ( '' !== $ctx['city'] ) {
+        /* translators: 1: accident type, e.g. "a car accident"; 2: city label, e.g. "Savannah, GA". */
+        $name = sprintf( __( 'What to Do After %1$s in %2$s', 'roden-law' ), $phrase_cased, $ctx['city'] );
+        /* translators: 1: accident type; 2: city label. */
+        $description = sprintf( __( 'Step-by-step guide on what to do after %1$s in %2$s. Protect your rights and maximize your compensation.', 'roden-law' ), $accident_type, $ctx['city'] );
+    } else {
+        /* translators: %s: accident type, e.g. "a workplace injury". */
+        $name = sprintf( __( 'What to Do After %s', 'roden-law' ), $phrase_cased );
+        /* translators: %s: accident type. */
+        $description = sprintf( __( 'Step-by-step guide on what to do after %s. Protect your rights and maximize your compensation.', 'roden-law' ), $accident_type );
+    }
+
     roden_json_ld( array(
         '@context'    => 'https://schema.org',
         '@type'       => 'HowTo',
         '@id'         => $url . '#howto',
-        /* translators: 1: accident type, e.g. "a car accident"; 2: city label, e.g. "Savannah, GA". */
-        'name'        => sprintf( __( 'What to Do After %1$s in %2$s', 'roden-law' ), function_exists( 'roden_accident_phrase_case' ) ? roden_accident_phrase_case( $accident_type ) : ucfirst( $accident_type ), $city_label ),
-        /* translators: 1: accident type; 2: city label. */
-        'description' => sprintf( __( 'Step-by-step guide on what to do after %1$s in %2$s. Protect your rights and maximize your compensation.', 'roden-law' ), $accident_type, $city_label ),
+        'name'        => $name,
+        'description' => $description,
         'url'         => $url,
         'step'        => $step_entities,
     ) );
+}
+
+/**
+ * Back-compat alias for the intersection-only name this emitter shipped under.
+ *
+ * @param array $firm Firm data from roden_firm_data().
+ */
+function roden_schema_intersection_howto( $firm ) {
+    roden_schema_what_to_do_howto( $firm );
 }
 
 /* ==========================================================================
@@ -1583,6 +1598,43 @@ function roden_schema_speakable_homepage( $firm ) {
     ) );
 }
 
+/**
+ * Build the author node for a page, preferring the linked attorney.
+ *
+ * Legal content is YMYL, where named authorship is a material E-E-A-T signal.
+ * Pillar and intersection pages shipped without any author node at all; only
+ * sub-types (via the Article emitter) carried one.
+ *
+ * Note this asserts authorship only. It deliberately does NOT emit
+ * `reviewedBy`/`lastReviewed`: `_roden_author_attorney` records attribution,
+ * not that a human attorney reviewed the page, and claiming a review that may
+ * not have happened is exactly the kind of trust signal that should not be
+ * manufactured. Add those once the firm confirms a review process.
+ *
+ * @param int   $post_id Post ID.
+ * @param array $firm    Firm data from roden_firm_data().
+ * @return array Person node for the attorney, else the firm Organization.
+ */
+function roden_schema_author_node( $post_id, $firm ) {
+    $author_id = get_post_meta( $post_id, '_roden_author_attorney', true );
+    $atty      = $author_id ? get_post( $author_id ) : null;
+
+    if ( $atty && 'publish' === $atty->post_status ) {
+        return array(
+            '@type' => 'Person',
+            '@id'   => $firm['url'] . '/attorneys/' . $atty->post_name . '/#person',
+            'name'  => $atty->post_title,
+            'url'   => str_replace( home_url(), $firm['url'], get_permalink( $atty ) ),
+        );
+    }
+
+    return array(
+        '@type' => 'Organization',
+        '@id'   => $firm['url'] . '/#organization',
+        'name'  => $firm['name'],
+    );
+}
+
 function roden_schema_speakable_practice_area() {
     $firm = roden_firm_data();
     $url  = roden_get_canonical_url();
@@ -1590,14 +1642,16 @@ function roden_schema_speakable_practice_area() {
     // the same page already declares the canonical url, causing a duplicate
     // warning when Google merges entities for the rich result.
     roden_json_ld( array(
-        '@context'     => 'https://schema.org',
-        '@type'        => 'WebPage',
-        '@id'          => $url . '#webpage',
-        'name'         => get_the_title(),
-        'dateModified' => get_the_modified_date( 'c' ),
-        'isPartOf'     => array( '@id' => $firm['url'] . '/#website' ),
-        'about'        => array( '@id' => $firm['url'] . '/#organization' ),
-        'breadcrumb'   => array( '@id' => $url . '#breadcrumbs' ),
+        '@context'      => 'https://schema.org',
+        '@type'         => 'WebPage',
+        '@id'           => $url . '#webpage',
+        'name'          => get_the_title(),
+        'datePublished' => get_the_date( 'c' ),
+        'dateModified'  => get_the_modified_date( 'c' ),
+        'author'        => roden_schema_author_node( get_the_ID(), $firm ),
+        'isPartOf'      => array( '@id' => $firm['url'] . '/#website' ),
+        'about'         => array( '@id' => $firm['url'] . '/#organization' ),
+        'breadcrumb'    => array( '@id' => $url . '#breadcrumbs' ),
         'speakable'    => array(
             '@type'       => 'SpeakableSpecification',
             'cssSelector' => array(
@@ -1806,23 +1860,7 @@ function roden_schema_article_subtype( $firm ) {
     }
 
     // Author — linked attorney from _roden_author_attorney meta.
-    $author_id = get_post_meta( $post_id, '_roden_author_attorney', true );
-    $atty      = $author_id ? get_post( $author_id ) : null;
-
-    if ( $atty && 'publish' === $atty->post_status ) {
-        $schema['author'] = array(
-            '@type' => 'Person',
-            '@id'   => $firm['url'] . '/attorneys/' . $atty->post_name . '/#person',
-            'name'  => $atty->post_title,
-            'url'   => str_replace( home_url(), $firm['url'], get_permalink( $atty ) ),
-        );
-    } else {
-        $schema['author'] = array(
-            '@type' => 'Organization',
-            '@id'   => $firm['url'] . '/#organization',
-            'name'  => $firm['name'],
-        );
-    }
+    $schema['author'] = roden_schema_author_node( $post_id, $firm );
 
     // Publisher logo.
     $logo_url = roden_get_logo_url();

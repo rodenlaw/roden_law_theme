@@ -1192,6 +1192,110 @@ function roden_ai_definition_block( $practice_area_title, $custom_definition = '
  * @param string $state_full    e.g., "Georgia"
  */
 /**
+ * Prefix an accident phrase with the correct indefinite article.
+ *
+ * "car accident" → "a car accident"; "injury" → "an injury". Already-articled
+ * phrases pass through untouched.
+ *
+ * @param string $phrase Lowercase accident phrase.
+ * @return string Phrase with a leading article.
+ */
+function roden_what_to_do_article( $phrase ) {
+    $phrase = (string) $phrase;
+    if ( '' === $phrase ) {
+        return $phrase;
+    }
+    if ( 0 === strpos( $phrase, 'a ' ) || 0 === strpos( $phrase, 'an ' ) ) {
+        return $phrase;
+    }
+    $vowels = array( 'a', 'e', 'i', 'o', 'u' );
+    return ( in_array( strtolower( $phrase[0] ), $vowels, true ) ? 'an ' : 'a ' ) . $phrase;
+}
+
+/**
+ * Resolve the "What to Do" heading/step context for a practice-area post.
+ *
+ * The three practice-area templates each derived these four values inline, and
+ * the HowTo emitter in schema-helpers.php held a fourth copy of the
+ * intersection derivation. That duplication is why the visible steps and the
+ * structured data drifted apart once already. This is now the single source:
+ * templates render from it and the schema emitter reads the same values, so a
+ * page and its HowTo cannot disagree.
+ *
+ * @param int|null $post_id Post ID (defaults to current post).
+ * @return array|null array{accident_phrase,city,state_full,state_key}, or null.
+ */
+function roden_what_to_do_context( $post_id = null ) {
+    if ( ! $post_id ) {
+        $post_id = get_the_ID();
+    }
+    $post = get_post( $post_id );
+    if ( ! $post ) {
+        return null;
+    }
+
+    $ctx = array(
+        'accident_phrase' => '',
+        'city'            => '',
+        'state_full'      => '',
+        'state_key'       => '',
+    );
+
+    $firm         = roden_firm_data();
+    $is_es        = function_exists( 'roden_current_lang' ) && 'es' === roden_current_lang();
+    $parent_post  = $post->post_parent ? get_post( $post->post_parent ) : null;
+    $parent_title = $parent_post ? $parent_post->post_title : '';
+
+    // ── Intersection: office key decides, matching single-practice_area.php's router.
+    $office_key = get_post_meta( $post_id, '_roden_pa_office_key', true );
+    $office     = ( $office_key && isset( $firm['offices'][ $office_key ] ) ) ? $firm['offices'][ $office_key ] : null;
+
+    if ( $office ) {
+        // ES intersections seed _roden_accident_phrase ("un accidente de auto")
+        // because the English article/suffix derivation doesn't apply to them.
+        $phrase = get_post_meta( $post_id, '_roden_accident_phrase', true );
+        if ( ! $phrase && ! $is_es ) {
+            $phrase = roden_pa_accident_phrase();
+        }
+        if ( ! $phrase ) {
+            if ( $is_es || ! $parent_title ) {
+                $phrase = __( 'an accident', 'roden-law' );
+            } else {
+                $phrase = roden_what_to_do_article( strtolower( str_replace( ' Lawyers', '', $parent_title ) ) );
+            }
+        }
+        $ctx['accident_phrase'] = $phrase;
+        $ctx['city']            = $office['market_name'] . ', ' . $office['state'];
+        $ctx['state_full']      = $office['state_full'];
+        $ctx['state_key']       = $office['state'];
+        return $ctx;
+    }
+
+    // ── Sub-type: any other child post.
+    if ( $post->post_parent ) {
+        $label = preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', get_the_title( $post_id ) );
+        // Sub-type titles are case types, not events, so the derivation yields
+        // "a savannah port worker injury". Practice areas that define an event
+        // phrase override it.
+        $ctx['accident_phrase'] = roden_pa_accident_phrase( '', roden_what_to_do_article( strtolower( $label ) ) );
+
+        // Statutory schemes (workers' comp) are no-fault and run on their own
+        // deadlines, so the steps need the state; tort sub-types stay generic.
+        $jur       = strtolower( (string) ( get_post_meta( $post_id, '_roden_jurisdiction', true ) ?: 'both' ) );
+        $state_key = ( 'sc' === $jur ) ? 'SC' : 'GA';
+        $statute   = roden_resolve_statute( $state_key );
+        $ctx['state_key'] = ( $statute && ! empty( $statute['is_override'] ) ) ? $state_key : '';
+        return $ctx;
+    }
+
+    // ── Pillar: two-state, so no city and no state-specific deadlines.
+    $label = strtolower( preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', get_the_title( $post_id ) ) );
+    $ctx['accident_phrase'] = roden_pa_accident_phrase( '', $label );
+
+    return $ctx;
+}
+
+/**
  * Build the ordered "what to do" step list for a practice area.
  *
  * Split out of roden_what_to_do_steps() so the visible list and the HowTo
