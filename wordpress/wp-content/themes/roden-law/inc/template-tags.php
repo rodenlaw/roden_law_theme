@@ -203,6 +203,14 @@ function roden_resolve_statute( $state_key, $pa_slug = null ) {
  */
 function roden_accident_phrase_case( $phrase ) {
     $phrase = (string) $phrase;
+
+    // Spanish keeps sentence case mid-heading. "Qué Hacer Después de Un
+    // accidente de auto" capitalizes an article in the middle of a sentence,
+    // which is wrong in Spanish; the phrase belongs lowercase after "de".
+    if ( function_exists( 'roden_current_lang' ) && 'es' === roden_current_lang() ) {
+        return $phrase;
+    }
+
     return ( $phrase === strtolower( $phrase ) ) ? ucfirst( $phrase ) : $phrase;
 }
 
@@ -248,6 +256,21 @@ function roden_pa_accident_phrase( $pa_slug = '', $fallback = '' ) {
             'product-liability-lawyers'      => __( 'an Injury From a Defective Product', 'roden-law' ),
             'burn-injury-lawyers'            => __( 'a Burn Injury', 'roden-law' ),
             'construction-accident-lawyers'  => __( 'a Construction Accident', 'roden-law' ),
+
+            /*
+             * Spanish pillars. Most ES titles reduce to a sensible bare plural
+             * once "Abogados de " is stripped ("Accidentes de Auto"), and need
+             * no entry here. These three name the remedy rather than the event,
+             * so the strip alone would leave "Qué Hacer Después de Compensación
+             * Laboral" — "what to do after workers' compensation".
+             *
+             * Not wrapped in __(): these keys only ever match on Spanish pillars,
+             * so the string is already in its target language. A Spanish msgid
+             * would just sit untranslatable in the catalog.
+             */
+            'es-workers-compensation-lawyers' => 'una Lesión en el Trabajo',
+            'es-premises-liability-lawyers'   => 'una Lesión en Propiedad Ajena',
+            'es-product-liability-lawyers'    => 'una Lesión por un Producto Defectuoso',
         )
     );
 
@@ -1235,10 +1258,11 @@ function roden_what_to_do_context( $post_id = null ) {
     }
 
     $ctx = array(
-        'accident_phrase' => '',
-        'city'            => '',
-        'state_full'      => '',
-        'state_key'       => '',
+        'accident_phrase'       => '',
+        'accident_phrase_lower' => '',
+        'city'                  => '',
+        'state_full'            => '',
+        'state_key'             => '',
     );
 
     $firm         = roden_firm_data();
@@ -1261,23 +1285,26 @@ function roden_what_to_do_context( $post_id = null ) {
             if ( $is_es || ! $parent_title ) {
                 $phrase = __( 'an accident', 'roden-law' );
             } else {
-                $phrase = roden_what_to_do_article( strtolower( str_replace( ' Lawyers', '', $parent_title ) ) );
+                $phrase = roden_what_to_do_article( str_replace( ' Lawyers', '', $parent_title ) );
             }
         }
         $ctx['accident_phrase'] = $phrase;
         $ctx['city']            = $office['market_name'] . ', ' . $office['state'];
         $ctx['state_full']      = $office['state_full'];
         $ctx['state_key']       = $office['state'];
-        return $ctx;
+        return roden_what_to_do_context_finish( $ctx );
     }
 
     // ── Sub-type: any other child post.
     if ( $post->post_parent ) {
         $label = preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', get_the_title( $post_id ) );
         // Sub-type titles are case types, not events, so the derivation yields
-        // "a savannah port worker injury". Practice areas that define an event
+        // "a Savannah Port Worker Injury". Practice areas that define an event
         // phrase override it.
-        $ctx['accident_phrase'] = roden_pa_accident_phrase( '', roden_what_to_do_article( strtolower( $label ) ) );
+        $ctx['accident_phrase'] = roden_pa_accident_phrase(
+            '',
+            $is_es ? $label : roden_what_to_do_article( $label )
+        );
 
         // Statutory schemes (workers' comp) are no-fault and run on their own
         // deadlines, so the steps need the state; tort sub-types stay generic.
@@ -1285,12 +1312,44 @@ function roden_what_to_do_context( $post_id = null ) {
         $state_key = ( 'sc' === $jur ) ? 'SC' : 'GA';
         $statute   = roden_resolve_statute( $state_key );
         $ctx['state_key'] = ( $statute && ! empty( $statute['is_override'] ) ) ? $state_key : '';
-        return $ctx;
+        return roden_what_to_do_context_finish( $ctx );
     }
 
     // ── Pillar: two-state, so no city and no state-specific deadlines.
-    $label = strtolower( preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', get_the_title( $post_id ) ) );
-    $ctx['accident_phrase'] = roden_pa_accident_phrase( '', $label );
+    //
+    // Pillar titles are already title-cased ("Car Accident Lawyers"). Lowercasing
+    // them here and leaning on ucfirst() is what produced "What to Do After Car
+    // accident" — no article and a sentence-cased noun. roden_pa_noun() strips
+    // the role word in both languages, including the Spanish leading "Abogados
+    // de ", which otherwise left every ES pillar reading "Qué Hacer Después de
+    // Abogados de Accidentes de Auto" — "what to do after car accident lawyers".
+    $label = roden_pa_noun( '', $post_id );
+
+    // Spanish takes a bare plural after "de" ("Después de Accidentes de Auto");
+    // an English-style indefinite article would be wrong, and the gender needed
+    // to pick un/una is not derivable from the title.
+    $ctx['accident_phrase'] = roden_pa_accident_phrase(
+        '',
+        $is_es ? $label : roden_what_to_do_article( $label )
+    );
+
+    return roden_what_to_do_context_finish( $ctx );
+}
+
+/**
+ * Fill in the lowercase variant of the resolved accident phrase.
+ *
+ * Headings want "a Rear-End Collision"; the negligence and damages sentences
+ * on sub-type pages want it mid-prose as "a rear-end collision".
+ *
+ * @param array $ctx Context array with accident_phrase set.
+ * @return array Same array with accident_phrase_lower filled in.
+ */
+function roden_what_to_do_context_finish( $ctx ) {
+    $phrase = $ctx['accident_phrase'];
+    $ctx['accident_phrase_lower'] = function_exists( 'mb_strtolower' )
+        ? mb_strtolower( $phrase, 'UTF-8' )
+        : strtolower( $phrase );
 
     return $ctx;
 }

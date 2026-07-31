@@ -105,8 +105,10 @@
                 $wtd_ctx['state_key']
             );
 
-            // Reused by the negligence and damages sentences further down.
-            $accident_type_lower = $wtd_ctx['accident_phrase'];
+            // Reused by the negligence and damages sentences further down, which
+            // want the phrase mid-prose ("a rear-end collision"), not in the
+            // heading case the steps use.
+            $accident_type_lower = $wtd_ctx['accident_phrase_lower'];
 
             // Statutory schemes (workers' comp) are no-fault and run on their own
             // deadlines — several sections below are wrong for them.
