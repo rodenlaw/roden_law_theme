@@ -83,7 +83,17 @@ jobs:
           if ! ssh -i ~/.ssh/wpe_key -o StrictHostKeyChecking=no -o ConnectTimeout=20 "$GW" \
                "cd ~/sites/rodenlawprod/$THEME && find . -type f $EXCL -exec md5sum {} + | sort -k2" \
                > /tmp/prod.md5 2>/dev/null; then
-            echo "::warning::Could not reach the SSH gateway — drift check skipped."
+            echo "::warning::Drift check INACTIVE — could not reach the SSH gateway."
+            {
+              echo "### ⚠️ Drift check did not run"
+              echo
+              echo "Could not reach \`$GW\`, so **this deploy was not checked against production**."
+              echo "If anyone edited the server directly, those changes have just been destroyed."
+              echo
+              echo "The deploy key reaches \`git.wpengine.com\` but not the SSH gateway. To activate:"
+              echo "WPE Portal → **rodenlawprod** → *SSH Gateway* → **Add SSH Key** → paste the public"
+              echo "key matching the \`WPE_SSHG_KEY_PRIVATE\` secret."
+            } >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
 

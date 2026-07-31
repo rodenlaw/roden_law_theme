@@ -18,6 +18,17 @@ This has already happened once. Between 2026-07-10 and 2026-07-31 the repo sat u
 workers'-compensation fix on 07-30. Both were one workflow run from being erased. They were
 recovered and committed on 2026-07-31 (`b3557f6`, `5e2429b`).
 
+## ⚠️ The drift guard is currently INACTIVE
+
+`deploy.yml` has a drift check that compares production against the last-deployed tree and
+blocks the deploy if someone edited the server directly. **It is not working yet** — the deploy
+key reaches `git.wpengine.com` but is not registered on the SSH gateway, so the check fails open
+and every run reports "Drift check INACTIVE" in the job summary.
+
+To activate: WPE Portal → **rodenlawprod** → *SSH Gateway* → **Add SSH Key**, pasting the public
+key that matches the `WPE_SSHG_KEY_PRIVATE` repo secret. Until then, the guard provides **no
+protection** — verify by hand before pushing (see "Before you start" below).
+
 ## Layout
 
 | Path | Notes |
