@@ -439,6 +439,22 @@ function roden_get_legacy_redirect_map() {
     return array(
 
         // ══════════════════════════════════════════════════════════════
+        // CATEGORY 17: duplicate warehouse sub-types — 2026-07-31
+        // "Warehouse & Logistics Injury" (4630, SC-scoped, published
+        // 2026-04-20) and "Warehouse and Distribution Injury" (4109, both
+        // states, 2026-03-10) both rendered on all four SC location pages —
+        // straight keyword cannibalization between two near-identical pages.
+        //
+        // 4109 survives: older, covers GA and SC, 5 FAQs vs 3, and the only
+        // one with inbound internal links (4630 had zero). 4630's genuinely
+        // distinct material — temporary/staffing-agency worker rights and
+        // heat illness — was merged into 4109 first, so the redirect does
+        // not drop content.
+        // ══════════════════════════════════════════════════════════════
+
+        '/workers-compensation-lawyers/warehouse-logistics-injury/' => '/workers-compensation-lawyers/warehouse-distribution-injury/',
+
+        // ══════════════════════════════════════════════════════════════
         // CATEGORY 16: dead flat LPs — 2026-07-08 SEO/GEO audit item G2
         // Former flat landing-page URLs (present as routes in the Next.js
         // mirror, so they were live pages) returning hard 404s with no
