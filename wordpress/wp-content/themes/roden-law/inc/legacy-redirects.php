@@ -489,7 +489,8 @@ function roden_get_legacy_redirect_map() {
         // CATEGORY 15: duplicate location pages — 2026-07-08 audit item #5
         // Same town published under two parents (keyword cannibalization),
         // plus city-under-itself pages duplicating their office parent.
-        // Losing posts are drafted by inc/seed-dedupe-location-pages.php.
+        // Losing posts were set to draft directly; the one-shot script that did
+        // it was removed with the rest of the dead seeders (see git history).
         // ══════════════════════════════════════════════════════════════
 
         '/locations/georgia/savannah/effingham-county/guyton/'              => '/locations/georgia/savannah/guyton/',
