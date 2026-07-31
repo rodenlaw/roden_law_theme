@@ -1215,6 +1215,95 @@ function roden_ai_definition_block( $practice_area_title, $custom_definition = '
  * @param string $state_full    e.g., "Georgia"
  */
 /**
+ * Render the sidebar "Filing Deadlines" badge widget, resolver-driven.
+ *
+ * The pillar and sub-type templates each carried a byte-identical copy of this
+ * markup with the year values HARDCODED as "2 yr" / "3 yr" — the tort statutes
+ * of limitation. On a workers' comp page that told a Georgia worker they had
+ * two years to file when O.C.G.A. § 34-9-82 gives them one, directly
+ * contradicting the correct figure in the same page's main content.
+ *
+ * That is the same defect the 2026-07-30 pass set out to remove; it survived
+ * because the conversion covered the main-content deadline sections and missed
+ * this widget in two of the four templates. Hence one shared renderer.
+ *
+ * The intersection template keeps its own single-state variant: it is already
+ * resolver-driven and its heading names the state ("Georgia Filing Deadline"),
+ * so it is deliberately not folded in here.
+ *
+ * @param string[] $state_keys Two-letter state keys to show, e.g. array( 'GA', 'SC' ).
+ */
+function roden_deadline_badges_sidebar( $state_keys ) {
+    $resolved = array();
+    foreach ( (array) $state_keys as $key ) {
+        $statute = roden_resolve_statute( $key );
+        if ( $statute ) {
+            $resolved[ strtoupper( $key ) ] = $statute;
+        }
+    }
+
+    if ( ! $resolved ) {
+        return;
+    }
+
+    $multi = count( $resolved ) > 1;
+    ?>
+    <div class="sidebar-widget sidebar-deadlines">
+        <h2 class="widget-title">&#9201; <?php esc_html_e( 'Filing Deadlines', 'roden-law' ); ?></h2>
+        <div class="deadline-badges">
+            <?php foreach ( $resolved as $key => $statute ) : ?>
+                <div class="deadline-badge <?php echo ( 'GA' === $key ) ? 'deadline-ga' : 'deadline-sc'; ?>">
+                    <span class="deadline-years"><?php
+                        // Same msgid for both forms: English reads "1 yr" / "2 yr"
+                        // either way, but Spanish needs año/años.
+                        printf(
+                            /* translators: %s: number of years. */
+                            esc_html( _n( '%s yr', '%s yr', (int) $statute['statute_years'], 'roden-law' ) ),
+                            esc_html( $statute['statute_years'] )
+                        );
+                    ?></span>
+                    <span class="deadline-state"><?php echo esc_html( $statute['state_full'] ); ?></span>
+                </div>
+            <?php endforeach; ?>
+        </div>
+        <?php foreach ( $resolved as $statute ) : ?>
+            <p class="deadline-cite"><?php
+                // Two-state widgets need the citation labelled, or it is unclear
+                // which state each belongs to.
+                echo esc_html( $multi ? $statute['state_full'] . ': ' . $statute['statute_cite'] : $statute['statute_cite'] );
+            ?></p>
+            <?php if ( $statute['notice_label'] && $statute['notice_detail'] ) : ?>
+                <p class="deadline-notice">
+                    <strong><?php echo esc_html( $statute['notice_label'] ); ?>:</strong>
+                    <?php echo esc_html( $statute['notice_detail'] ); ?>
+                </p>
+            <?php endif; ?>
+        <?php endforeach; ?>
+        <p class="deadline-warning"><?php esc_html_e( 'Missing the deadline forfeits your right to recover.', 'roden-law' ); ?></p>
+    </div>
+    <?php
+}
+
+/**
+ * Map a page's jurisdiction meta to the state keys its sidebar should show.
+ *
+ * @param string $jurisdiction 'ga' | 'sc' | 'both' (case-insensitive).
+ * @return string[] State keys.
+ */
+function roden_jurisdiction_state_keys( $jurisdiction ) {
+    $jurisdiction = strtolower( (string) $jurisdiction );
+
+    if ( 'ga' === $jurisdiction ) {
+        return array( 'GA' );
+    }
+    if ( 'sc' === $jurisdiction ) {
+        return array( 'SC' );
+    }
+
+    return array( 'GA', 'SC' );
+}
+
+/**
  * Prefix an accident phrase with the correct indefinite article.
  *
  * "car accident" → "a car accident"; "injury" → "an injury". Already-articled

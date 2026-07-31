@@ -444,20 +444,7 @@
                 <?php endif; ?>
 
                 <!-- Filing Deadlines -->
-                <div class="sidebar-widget sidebar-deadlines">
-                    <h2 class="widget-title">&#9201; <?php esc_html_e( 'Filing Deadlines', 'roden-law' ); ?></h2>
-                    <div class="deadline-badges">
-                        <div class="deadline-badge deadline-ga">
-                            <span class="deadline-years"><?php esc_html_e( '2 yr', 'roden-law' ); ?></span>
-                            <span class="deadline-state"><?php esc_html_e( 'Georgia', 'roden-law' ); ?></span>
-                        </div>
-                        <div class="deadline-badge deadline-sc">
-                            <span class="deadline-years"><?php esc_html_e( '3 yr', 'roden-law' ); ?></span>
-                            <span class="deadline-state"><?php esc_html_e( 'South Carolina', 'roden-law' ); ?></span>
-                        </div>
-                    </div>
-                    <p class="deadline-warning"><?php esc_html_e( 'Missing the deadline forfeits your right to recover.', 'roden-law' ); ?></p>
-                </div>
+                <?php roden_deadline_badges_sidebar( roden_jurisdiction_state_keys( $jurisdiction ) ); ?>
 
                 <!-- Why Roden Law -->
                 <div class="sidebar-widget sidebar-why-us">

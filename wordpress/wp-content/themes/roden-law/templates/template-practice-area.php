@@ -412,21 +412,43 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
 
             <!-- ═══════════════════════════════════════════════════════════
                  SECTION 10: COMPARATIVE FAULT (GA vs SC)
+                 Comparative fault has no application in a no-fault statutory
+                 scheme — under workers' comp, being partly at fault does not
+                 reduce or bar benefits. The sub-type template already branched
+                 here; the pillar did not, so the workers' comp pillar published
+                 the tort apportionment rule (O.C.G.A. § 51-12-33) as if it
+                 governed comp claims. Strings match template-subtype.php.
                  ═══════════════════════════════════════════════════════════ -->
+            <?php
+            $pa_fault_statute   = roden_resolve_statute( 'GA' );
+            $pa_fault_statutory = ( $pa_fault_statute && $pa_fault_statute['is_override'] );
+            ?>
+            <?php if ( $pa_fault_statutory ) : ?>
+            <div class="content-section pa-fault" data-ai-extractable="true">
+                <h2><?php esc_html_e( 'What If the Accident Was My Fault?', 'roden-law' ); ?></h2>
+                <p><?php esc_html_e( 'Workers\' compensation is a no-fault system. Carelessness on your part does not reduce your benefits and does not bar the claim — you do not have to prove anyone was negligent, and your employer does not get to argue you were. Benefits can be denied in narrow circumstances, such as an injury caused by intoxication or by a wilful attempt to injure yourself or someone else, but ordinary mistakes on the job are not among them.', 'roden-law' ); ?></p>
+                <p><?php esc_html_e( 'Fault does matter in one place: a third-party claim against someone other than your employer. There, the ordinary comparative-fault rules apply and your share of responsibility can reduce what you recover — another reason to have those claims evaluated early.', 'roden-law' ); ?></p>
+            </div>
+            <?php else : ?>
             <div class="content-section pa-fault" data-ai-extractable="true">
                 <h2><?php printf( /* translators: %s: practice area title. */ esc_html__( 'Comparative Fault in %s Cases — What If I\'m Partially At Fault?', 'roden-law' ), esc_html( roden_pa_noun() ) ); ?></h2>
                 <div class="pa-fault__grid">
+                    <?php if ( in_array( $jurisdiction, array( 'both', 'ga' ), true ) ) : ?>
                     <div class="pa-fault__box pa-fault__box--ga">
                         <h3>&#127825; <?php esc_html_e( 'Georgia — Modified Comparative Fault', 'roden-law' ); ?></h3>
                         <p><?php printf( /* translators: %s: the phrase "less than 50% at fault" wrapped in <strong>. */ esc_html__( 'You can recover if %s (O.C.G.A. § 51-12-33). Your award is reduced by your fault percentage.', 'roden-law' ), '<strong>' . esc_html__( 'less than 50% at fault', 'roden-law' ) . '</strong>' ); ?></p>
                     </div>
+                    <?php endif; ?>
+                    <?php if ( in_array( $jurisdiction, array( 'both', 'sc' ), true ) ) : ?>
                     <div class="pa-fault__box pa-fault__box--sc">
                         <h3>&#127769; <?php esc_html_e( 'South Carolina — Modified Comparative Fault', 'roden-law' ); ?></h3>
                         <p><?php printf( /* translators: %s: the phrase "less than 51% at fault" wrapped in <strong>. */ esc_html__( 'You can recover if %s. Your award is reduced by your fault percentage.', 'roden-law' ), '<strong>' . esc_html__( 'less than 51% at fault', 'roden-law' ) . '</strong>' ); ?></p>
                     </div>
+                    <?php endif; ?>
                 </div>
                 <p><?php esc_html_e( 'For example, if you filed a $100,000 lawsuit and a court finds you are 30% at fault, your award would be reduced to $70,000. Our attorneys will work to minimize any fault assigned to you.', 'roden-law' ); ?></p>
             </div>
+            <?php endif; ?>
 
             <!-- ═══════════════════════════════════════════════════════════
                  INLINE CTA BANNER (#2 of 3)
@@ -685,20 +707,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                 <?php roden_contact_form_sidebar(); ?>
 
                 <!-- Filing Deadlines -->
-                <div class="sidebar-widget sidebar-deadlines">
-                    <h2 class="widget-title">&#9201; <?php esc_html_e( 'Filing Deadlines', 'roden-law' ); ?></h2>
-                    <div class="deadline-badges">
-                        <div class="deadline-badge deadline-ga">
-                            <span class="deadline-years"><?php esc_html_e( '2 yr', 'roden-law' ); ?></span>
-                            <span class="deadline-state"><?php esc_html_e( 'Georgia', 'roden-law' ); ?></span>
-                        </div>
-                        <div class="deadline-badge deadline-sc">
-                            <span class="deadline-years"><?php esc_html_e( '3 yr', 'roden-law' ); ?></span>
-                            <span class="deadline-state"><?php esc_html_e( 'South Carolina', 'roden-law' ); ?></span>
-                        </div>
-                    </div>
-                    <p class="deadline-warning"><?php esc_html_e( 'Missing the deadline forfeits your right to recover.', 'roden-law' ); ?></p>
-                </div>
+                <?php roden_deadline_badges_sidebar( roden_jurisdiction_state_keys( $jurisdiction ) ); ?>
 
                 <!-- Related Practice Areas -->
                 <div class="sidebar-widget">
