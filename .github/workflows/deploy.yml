@@ -182,6 +182,91 @@ jobs:
           echo "::error::Production has uncommitted edits that this deploy would destroy. See the job summary. Commit them, or re-run with allow_drift to discard."
           exit 1
 
+      # ─────────────────────────────────────────────────────────────────────
+      # Content-meta drift.
+      #
+      # WARNS, never blocks — deliberately different from the theme check
+      # above. Theme drift means this deploy is about to destroy work, so it
+      # has to stop. Content lives in the database, which the deploy never
+      # touches, so content drift is a review signal rather than a hazard.
+      #
+      # It exists because the database is where the legal errors keep hiding.
+      # Workers' comp pages carried the TORT statute of limitations in
+      # _roden_sol_ga/_sc: fixed on the English posts 2026-07-30, then found
+      # again on the Spanish twins on 07-31, three weeks later and by accident.
+      # A diff on content/meta.json shows that class of error immediately.
+      # ─────────────────────────────────────────────────────────────────────
+      - name: Detect content-meta drift
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          GW=rodenlawprod@rodenlawprod.ssh.wpengine.net
+
+          if [ ! -f ~/.ssh/wpe_gateway_key ]; then
+            echo "::warning::Content-meta check skipped — WPE_GATEWAY_KEY_PRIVATE is not set."
+            exit 0
+          fi
+
+          # The exporter goes over stdin, so it never has to live in the theme
+          # and never deploys. `wp eval-file -` reads the script from STDIN.
+          if ! ssh -i ~/.ssh/wpe_gateway_key -o IdentitiesOnly=yes -o StrictHostKeyChecking=no \
+                   -o BatchMode=yes -o ConnectTimeout=30 "$GW" \
+                   "wp --path=/home/wpe-user/sites/rodenlawprod eval-file -" \
+                   < bin/export-content-meta.php > /tmp/prod-meta.json 2>/dev/null; then
+            echo "::warning::Content-meta check skipped — could not run the exporter on production."
+            exit 0
+          fi
+
+          if [ ! -s /tmp/prod-meta.json ] || ! python3 -c "import json,sys; json.load(open('/tmp/prod-meta.json'))" 2>/dev/null; then
+            echo "::warning::Content-meta check skipped — production returned no usable JSON."
+            exit 0
+          fi
+
+          if [ ! -f content/meta.json ]; then
+            echo "::warning::content/meta.json is missing from the repo — nothing to compare against."
+            exit 0
+          fi
+
+          if diff -q content/meta.json /tmp/prod-meta.json >/dev/null; then
+            echo "Content meta matches the committed record ($(python3 -c "import json;print(json.load(open('/tmp/prod-meta.json'))['_count'])") posts)."
+            exit 0
+          fi
+
+          ADDED=$(diff <(python3 -c "import json;print('\n'.join(sorted(json.load(open('content/meta.json'))['posts'])))") \
+                       <(python3 -c "import json;print('\n'.join(sorted(json.load(open('/tmp/prod-meta.json'))['posts'])))") \
+                  | grep -c '^>' || true)
+          REMOVED=$(diff <(python3 -c "import json;print('\n'.join(sorted(json.load(open('content/meta.json'))['posts'])))") \
+                         <(python3 -c "import json;print('\n'.join(sorted(json.load(open('/tmp/prod-meta.json'))['posts'])))") \
+                    | grep -c '^<' || true)
+
+          echo "::warning::Content meta on production differs from content/meta.json. Regenerate and commit it."
+          {
+            echo "### Content meta has drifted from the committed record"
+            echo
+            echo "Production content changed without \`content/meta.json\` being regenerated."
+            echo "**This did not block the deploy** — the database is untouched by deploys."
+            echo
+            echo "| | |"
+            echo "|---|---|"
+            echo "| Posts only on production | $ADDED |"
+            echo "| Posts only in the repo | $REMOVED |"
+            echo
+            echo "Refresh it with:"
+            echo '```'
+            echo 'ssh rodenlawprod@rodenlawprod.ssh.wpengine.net \'
+            echo '  "wp --path=/home/wpe-user/sites/rodenlawprod eval-file -" \'
+            echo '  < bin/export-content-meta.php > content/meta.json'
+            echo '```'
+            echo
+            echo "<details><summary>First 80 differing lines</summary>"
+            echo
+            echo '```diff'
+            diff content/meta.json /tmp/prod-meta.json | head -80
+            echo '```'
+            echo "</details>"
+          } >> "$GITHUB_STEP_SUMMARY"
+          exit 0
+
       # `git subtree split` extracts the wordpress/ subtree so its contents
       # become the root of the pushed tree, which is what WPE expects.
       - name: Build deploy branch (subtree split of wordpress/)

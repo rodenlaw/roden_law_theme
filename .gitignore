@@ -30,3 +30,7 @@ next/scripts/roden-export.json
 # Leftover WP directory (moved to wordpress/) — root-anchored so it only
 # matches a literal wp-content/ at repo root, not wordpress/wp-content/
 /wp-content/
+
+# Content-meta export is committed on purpose (content/meta.json); scratch
+# copies from ad-hoc runs are not.
+content/meta.*.json

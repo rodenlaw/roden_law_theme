@@ -38,13 +38,56 @@ lets an agent key answer and will tell you a key works when it does not.
 If the gateway key is missing or unreachable the check reports itself **inactive** in the job
 summary and the deploy proceeds — it can never block shipping on its own failure.
 
+## The content-meta record
+
+`content/meta.json` is a generated snapshot of the post meta that carries legal
+and SEO weight — jurisdiction, SOL citations, review dates, FAQ text, attorney
+attribution, translation pairs — across `practice_area`, `location` and
+`resource` posts. **Do not hand-edit it. Regenerate it:**
+
+```bash
+ssh rodenlawprod@rodenlawprod.ssh.wpengine.net \
+  "wp --path=/home/wpe-user/sites/rodenlawprod eval-file -" \
+  < bin/export-content-meta.php > content/meta.json
+```
+
+Commit it whenever you change content meta. `deploy.yml` regenerates it against
+production on every deploy and **warns** (never blocks) when it has drifted —
+the database is untouched by deploys, so drift is a review signal, not a hazard.
+
+It exists because the database is where the legal errors keep hiding. Workers'
+comp pages carried the *tort* statute of limitations in `_roden_sol_ga`/`_sc`;
+that was fixed on the English posts on 2026-07-30 and then found again on the
+Spanish twins on 07-31, three weeks later and only by accident. A diff on this
+file surfaces that class of error immediately.
+
+Post **bodies** are deliberately not in it — ~8 MB of prose across 474 posts
+that nobody would review. A periodic `wp db export` is the right protection for
+those, and it is still not set up.
+
 ## Layout
 
 | Path | Notes |
 |---|---|
 | `wordpress/wp-content/themes/roden-law/` | The theme. `git subtree split` makes `wordpress/` the deploy root. |
+| `bin/` | Repo tooling. Piped to prod over stdin — never deployed. |
+| `content/meta.json` | Generated content-meta record (see above) |
 | `.github/workflows/deploy.yml` | Deploy to WP Engine prod (`rodenlawprod`) |
 | `next/` | Separate migration workstream — not deployed by the WP workflow |
+
+## `inc/` holds live code only
+
+Every file in `wordpress/wp-content/themes/roden-law/inc/` is required by
+`functions.php`. In July 2026 that directory also held **286 spent one-shot
+scripts** — 6.1 MB of `seed-*`, `batch-*`, `fix-*`, `optimize-*` — that had
+already run, were loaded by nothing, and had drifted from the content they
+created. `seed-wc-charleston.php` still described South Carolina TTD in terms
+the live page had not used for months.
+
+They were removed (`bbae8f1`; git history is the archive). **Do not add
+one-shot migration scripts back here.** Run them from `bin/` over stdin, or
+delete them once applied — a spent script in `inc/` reads as authoritative and
+is not.
 
 ## Before you start
 
