@@ -72,3 +72,72 @@ or run the toolkit manually. Draft spec, ready to transcribe into
 - GA4: sessions + form submits where `site_language=es`; GBP UTM sessions.
 - GF/intake: count of `lead_language=es` leads; contact→sign rate vs English.
 - Semrush re-pull: rodenlaw.com Spanish keyword count (baseline: 0).
+
+## 7. 30-day review — recorded 2026-08-01 (day 26)
+
+**Semrush (US database, `rodenlaw.com/es/`). Baseline was zero.**
+
+| Metric | Value |
+|---|---|
+| Unique Spanish keywords ranking | 75 |
+| Ranking positions (keyword × URL rows) | 111 |
+| Distinct `/es/` URLs ranking | 25 |
+| Positions in the top 5 | 17 |
+
+Best: `abogado de accidentes de camiones en carolina del sur` #2 ·
+`abogado de accidentes de camion en columbia` #3 · `abogado de accidentes de
+charleston` #3. Head terms are on page 2–3 and are the next lift:
+`abogado de accidente de camion` (1,900/mo, $124 CPC) #27, `abogados de
+accidentes de auto cerca de mi` (880) #20, `abogado de accidente de peatón`
+(720) #28.
+
+GSC, GA4 and `lead_language=es` counts still need Brian's account access (§2).
+
+**What the ranking data says to build** — Google is substituting adjacent pages
+for practice areas the Spanish silo does not have. Thirteen top-20 rankings are
+served by the wrong practice area:
+
+| Query intent | Page actually ranking | Rows | Vol/mo |
+|---|---|---:|---:|
+| motorcycle | car-accident page | 4 | 370 |
+| car | truck / construction page | 5 | 330 |
+| bus | truck pillar / location hub | 2 | 220 |
+| personal injury | location hub / car page | 3 | 190 |
+
+`/es/practice-areas/personal-injury-lawyers/` **404s** — the head term
+"abogado de lesiones personales" is 9,900/mo and currently lands on location
+hubs at positions 55–99.
+
+### Structural fixes shipped 2026-08-01 (theme 1.4.17 → 1.4.20)
+
+The silo was routing its own internal links back into English. Fixed across
+four commits; measured English links in the page body, before → after:
+
+| Page type | Before | After |
+|---|---:|---:|
+| ES pillar | 24 | 7 |
+| ES intersection | 15 | 11 |
+| ES location | 34 | 6–15 |
+| ES blog post | 40 | 8 |
+
+What was wrong:
+
+1. `roden_es_exclusion_meta_query()` applied unconditionally at 16 call sites —
+   correct on English pages, backwards on Spanish ones. Replaced with
+   `roden_locale_meta_query()` (`inc/i18n.php`). `inc/llms-txt.php` keeps the
+   exclusion on purpose and is commented to say so.
+2. Both practice-area grids built URLs from hardcoded slug literals with
+   `home_url()`, so they could never emit `/es/`.
+3. The blog sidebar was entirely English on `/es/`, and its unfiltered
+   Recent-Posts query leaked the *other* way — Spanish posts in the English
+   sidebar of 446 EN posts.
+4. `/es/{pillar}/{city}/` with no Spanish post 301'd to the **English
+   car-accident page for that city** via core's 404 permalink guessing —
+   114 combinations. They now 301 to the Spanish pillar; the guess is disabled
+   on `/es/`.
+
+The residual English links are the language switcher plus pages with no Spanish
+counterpart (attorney bios, privacy). Verified after deploy: every ES page type
+still returns 200, `lang="es-ES"`, self-canonical, the en/es/x-default hreflang
+trio, `inLanguage: es`, and its FAQ entities. English pillar and intersection
+link counts are byte-identical to the pre-deploy baseline.
