@@ -141,3 +141,56 @@ counterpart (attorney bios, privacy). Verified after deploy: every ES page type
 still returns 200, `lang="es-ES"`, self-canonical, the en/es/x-default hreflang
 trio, `inLanguage: es`, and its FAQ entities. English pillar and intersection
 link counts are byte-identical to the pre-deploy baseline.
+
+### In-body links (2026-08-01)
+
+Templates were only half the problem. 236 links inside ES post bodies — authored
+by the Spanish writer agent — pointed at English URLs. `bin/es-relink-body-links.php`
+rewrote the ones with a published Spanish twin: **62 in the first pass, 14 more
+after the Phase B pages landed**, leaving 160 whose targets genuinely have no
+Spanish counterpart. It is idempotent; **re-run it after publishing any Spanish
+page.**
+
+`/charleston/` and `/savannah/` needed explicit mappings — they are legacy pages
+that 301 to the *English* `/practice-areas/` hub, so from a Spanish body they
+were wrong twice over.
+
+## 8. Phase B — 19 pages, published 2026-08-01
+
+Built the pages the ranking data asked for. Spanish practice-area URLs: **43 → 62**.
+
+- `/es/practice-areas/personal-injury-lawyers/` — previously a **404**, against
+  9,900/mo for "abogado de lesiones personales".
+- `/es/{motorcycle,bicycle,pedestrian}-accident-lawyers/{6 office cities}/`
+
+All 19 verified live: 200, `lang="es-ES"`, self-canonical, hreflang trio,
+`inLanguage: es`, 5 FAQ entities per city page and 8 on the pillar, correct
+per-state deadline (2 años in Georgia, 3 in South Carolina). The EN↔ES parity
+diff across all 77 Spanish CPT posts is clean — zero SOL, jurisdiction, author
+or reciprocal-backlink discrepancies.
+
+Seeded with `bin/es-seed-pages.php`, which **inherits all legal and structural
+meta from the English twin** and localises statutes by translating only the unit
+word, so a citation can never be retyped or hallucinated. Writers supply prose
+only, checked by a validator before anything reaches the database.
+
+Two findings from that pass:
+
+1. **Dormant wrong data on the English bicycle pages.** Savannah and Darien —
+   both Georgia — carry a populated `_roden_sol_sc`. It is inert today because
+   `_roden_jurisdiction` gates it, and the live pages render only the GA
+   citation and a "2 yr" badge. It becomes a real bug the day the resolver or a
+   jurisdiction value changes. Worth clearing.
+2. **The Georgia city pages are boilerplate — in English.** The six GA-city
+   pages across these three practice areas run ~1,520 characters against
+   3,420–4,400 for the twelve South Carolina ones, and each city's motorcycle
+   and pedestrian pages are byte-identical once the practice-area words are
+   neutralised. Savannah is the firm's home market. This is an English content
+   problem that the Spanish pages inherited and had to work around.
+
+### Still open
+
+- **Phase C**: the FAQ deficit — 22 ES pillars at 5 questions against 10 in
+  English, and the SC personal-injury FAQ hub at 22 against 95.
+- **Georgia resources in Spanish**: all 9 ES resources are South Carolina.
+- **Fluent-speaker review** of the whole silo (§3) — still not signed off.
