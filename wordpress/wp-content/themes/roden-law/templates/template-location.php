@@ -192,8 +192,8 @@ $neighborhood_children_args = array(
     'order'          => 'ASC',
     'post_status'    => 'publish',
 );
-if ( function_exists( 'roden_es_exclusion_meta_query' ) ) {
-    $neighborhood_children_args['meta_query'] = roden_es_exclusion_meta_query();
+if ( function_exists( 'roden_locale_meta_query' ) ) {
+    $neighborhood_children_args['meta_query'] = roden_locale_meta_query();
 }
 $neighborhood_children = get_posts( $neighborhood_children_args );
 
@@ -245,8 +245,8 @@ $loc_resource_args = array(
     'orderby'        => 'date',
     'order'          => 'DESC',
 );
-if ( function_exists( 'roden_es_exclusion_meta_query' ) ) {
-    $loc_resource_args['meta_query'] = roden_es_exclusion_meta_query();
+if ( function_exists( 'roden_locale_meta_query' ) ) {
+    $loc_resource_args['meta_query'] = roden_locale_meta_query();
 }
 $loc_resource_query = new WP_Query( $loc_resource_args );
 if ( $loc_resource_query->have_posts() ) :

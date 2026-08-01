@@ -52,11 +52,11 @@ $related_subtypes_meta_query = array(
     array( 'key' => '_roden_pa_office_key', 'compare' => 'NOT EXISTS' ),
     array( 'key' => '_roden_pa_office_key', 'value' => '', 'compare' => '=' ),
 );
-if ( function_exists( 'roden_es_exclusion_meta_query' ) ) {
+if ( function_exists( 'roden_locale_meta_query' ) ) {
     $related_subtypes_meta_query = array(
         'relation' => 'AND',
         $related_subtypes_meta_query,
-        roden_es_exclusion_meta_query(),
+        roden_locale_meta_query(),
     );
 }
 $related_subtypes = get_posts( array(
@@ -161,8 +161,8 @@ $int_is_statutory = ( $int_statute && $int_statute['is_override'] );
                 'meta_key'       => '_roden_pa_office_key',
                 'meta_compare'   => 'EXISTS',
             );
-            if ( function_exists( 'roden_es_exclusion_meta_query' ) ) {
-                $all_siblings_args['meta_query'] = roden_es_exclusion_meta_query();
+            if ( function_exists( 'roden_locale_meta_query' ) ) {
+                $all_siblings_args['meta_query'] = roden_locale_meta_query();
             }
             $all_siblings = get_posts( $all_siblings_args );
             $sibling_urls = array();
@@ -174,15 +174,19 @@ $int_is_statutory = ( $int_statute && $int_statute['is_override'] );
             }
             ?>
             <?php foreach ( $firm['offices'] as $key => $o ) :
-                $is_current       = ( $key === $pa_office_key );
-                $intersection_url = isset( $sibling_urls[ $key ] ) ? $sibling_urls[ $key ] : '#';
+                $is_current = ( $key === $pa_office_key );
+                // No sibling for this office → render the city unlinked rather
+                // than href="#". Rare in English (all six offices have pages for
+                // most pillars); the norm on /es/, where only four practice
+                // areas have city pages so far.
+                $intersection_url = isset( $sibling_urls[ $key ] ) ? $sibling_urls[ $key ] : '';
             ?>
                 <div class="matrix-card <?php echo $is_current ? 'matrix-card-active' : ''; ?>">
                     <span class="matrix-state state-<?php echo esc_attr( strtolower( $o['state'] ) ); ?>">
                         <?php echo esc_html( $o['state'] ); ?>
                     </span>
                     <h3 class="matrix-city">
-                        <?php if ( ! $is_current ) : ?>
+                        <?php if ( ! $is_current && $intersection_url ) : ?>
                             <a href="<?php echo esc_url( $intersection_url ); ?>"><?php echo esc_html( $o['market_name'] ); ?></a>
                         <?php else : ?>
                             <?php echo esc_html( $o['market_name'] ); ?>

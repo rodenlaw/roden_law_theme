@@ -913,8 +913,8 @@ function roden_intersection_grid( $office_key, $columns = 3 ) {
         'post_name__in'  => array( $office_slug ),
         'fields'         => 'id=>parent',
     );
-    if ( function_exists( 'roden_es_exclusion_meta_query' ) ) {
-        $intersection_check_args['meta_query'] = roden_es_exclusion_meta_query();
+    if ( function_exists( 'roden_locale_meta_query' ) ) {
+        $intersection_check_args['meta_query'] = roden_locale_meta_query();
     }
     $intersection_check = get_posts( $intersection_check_args );
     $pillars_with_intersection = array();
@@ -977,8 +977,8 @@ function roden_neighborhood_grid( $current_post_id ) {
         'order'          => 'ASC',
         'post_status'    => 'publish',
     );
-    if ( function_exists( 'roden_es_exclusion_meta_query' ) ) {
-        $sibling_args['meta_query'] = roden_es_exclusion_meta_query();
+    if ( function_exists( 'roden_locale_meta_query' ) ) {
+        $sibling_args['meta_query'] = roden_locale_meta_query();
     }
     $siblings = get_posts( $sibling_args );
 
@@ -2328,8 +2328,8 @@ function roden_related_practice_areas( $count = 6 ) {
     $post    = get_post();
     $current = $post->ID;
 
-    // Keep Spanish (_roden_locale=es) posts out of English-page listings.
-    $es_exclusion = function_exists( 'roden_es_exclusion_meta_query' ) ? roden_es_exclusion_meta_query() : null;
+    // Match the request's locale: Spanish siblings/pillars on /es/, English elsewhere.
+    $locale_mq = function_exists( 'roden_locale_meta_query' ) ? roden_locale_meta_query() : null;
 
     if ( $post->post_parent ) {
         // Child page — show siblings
@@ -2341,8 +2341,8 @@ function roden_related_practice_areas( $count = 6 ) {
             'orderby'        => 'title',
             'order'          => 'ASC',
         );
-        if ( $es_exclusion ) {
-            $sibling_args['meta_query'] = $es_exclusion;
+        if ( $locale_mq ) {
+            $sibling_args['meta_query'] = $locale_mq;
         }
         $siblings = get_posts( $sibling_args );
         $related = array_slice( $siblings, 0, $count );
@@ -2357,8 +2357,8 @@ function roden_related_practice_areas( $count = 6 ) {
             'orderby'        => 'menu_order',
             'order'          => 'ASC',
         );
-        if ( $es_exclusion ) {
-            $pillar_args['meta_query'] = $es_exclusion;
+        if ( $locale_mq ) {
+            $pillar_args['meta_query'] = $locale_mq;
         }
         $pillars = get_posts( $pillar_args );
         $related = array_slice( $pillars, 0, $count );
@@ -2697,9 +2697,9 @@ function roden_related_resources( $args = array() ) {
         'order'          => 'DESC',
     );
 
-    // Keep Spanish (_roden_locale=es) resources out of English-page listings.
-    if ( function_exists( 'roden_es_exclusion_meta_query' ) ) {
-        $query_args['meta_query'] = roden_es_exclusion_meta_query();
+    // Match the request's locale: Spanish resources on /es/, English elsewhere.
+    if ( function_exists( 'roden_locale_meta_query' ) ) {
+        $query_args['meta_query'] = roden_locale_meta_query();
     }
 
     if ( $args['exclude'] ) {

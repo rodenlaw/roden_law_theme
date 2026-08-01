@@ -29,8 +29,8 @@ $firm = roden_firm_data();
                 <h3><?php esc_html_e( 'Practice Areas', 'roden-law' ); ?></h3>
                 <?php
                 $pas_args = ['post_type'=>'practice_area','posts_per_page'=>8,'orderby'=>'menu_order','order'=>'ASC'];
-                if ( function_exists( 'roden_es_exclusion_meta_query' ) ) {
-                    $pas_args['meta_query'] = roden_es_exclusion_meta_query();
+                if ( function_exists( 'roden_locale_meta_query' ) ) {
+                    $pas_args['meta_query'] = roden_locale_meta_query();
                 }
                 $pas = get_posts( $pas_args );
                 echo '<ul>';

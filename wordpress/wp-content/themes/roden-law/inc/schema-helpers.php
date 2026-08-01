@@ -2998,10 +2998,8 @@ function roden_schema_collection_page( $firm, $type, $post_type ) {
         'post_status'    => 'publish',
         'no_found_rows'  => true,
     );
-    if ( function_exists( 'roden_es_exclusion_meta_query' ) ) {
-        $recent_args['meta_query'] = ( 'es' === $lang )
-            ? array( array( 'key' => '_roden_locale', 'value' => 'es' ) )
-            : roden_es_exclusion_meta_query();
+    if ( function_exists( 'roden_locale_meta_query' ) ) {
+        $recent_args['meta_query'] = roden_locale_meta_query( $lang );
     }
     $recent = get_posts( $recent_args );
     if ( $recent ) {

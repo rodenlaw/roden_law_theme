@@ -249,12 +249,83 @@ function roden_es_canonical_redirect() {
 }
 
 /* ==========================================================================
+   5b. MISSING ES INTERSECTIONS — never fall out of the locale
+   ========================================================================== */
+
+/**
+ * WordPress guesses a permalink for 404s from the last path segment. On /es/
+ * that guess crosses the locale AND the practice area.
+ *
+ * /es/{pillar}/{city}/ rewrites to practice_area=es-{pillar}/{city}. When the
+ * Spanish child does not exist the query 404s, and core's
+ * redirect_guess_404_permalink() then matches post_name LIKE '{city}%' — which
+ * hits the ENGLISH intersection under whichever pillar happens to come first.
+ * Measured on production 2026-08-01:
+ *
+ *   /es/dog-bite-lawyers/columbia-sc/        → 301 → /car-accident-lawyers/columbia-sc/
+ *   /es/slip-and-fall-lawyers/charleston-sc/ → 301 → /car-accident-lawyers/charleston-sc/
+ *
+ * A Spanish reader asking about dog bites landed on an English car-crash page.
+ * 114 pillar × city combinations behaved this way — every one that has no
+ * Spanish post yet.
+ *
+ * Two guards, because they cover different holes:
+ *   - the pillar fallback below keeps the reader in Spanish, on-topic, with a
+ *     301 that consolidates rather than 404s;
+ *   - roden_es_disable_404_guess() stops the cross-locale guess for every other
+ *     /es/ 404 (typos, retired slugs), which the fallback cannot match.
+ */
+
+// Priority 2: after roden_legacy_content_redirects (1), before the ES canonical
+// redirect (3) and well before core's redirect_canonical (10).
+add_action( 'template_redirect', 'roden_es_missing_intersection_fallback', 2 );
+function roden_es_missing_intersection_fallback() {
+    if ( is_admin() || ! is_404() || ! roden_is_es_request() ) {
+        return;
+    }
+
+    $path = wp_parse_url( $_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH ) ?: '/';
+    if ( ! preg_match( '#^/es/([^/]+)/[^/]+/?$#', $path, $m ) ) {
+        return;
+    }
+
+    // /es/practice-areas/…, /es/locations/…, /es/resources/…, /es/blog/… are
+    // their own rewrites, not pillar × city.
+    if ( in_array( $m[1], array( 'practice-areas', 'locations', 'resources', 'blog' ), true ) ) {
+        return;
+    }
+
+    $pillar = get_page_by_path( 'es-' . $m[1], OBJECT, 'practice_area' );
+    if ( $pillar && 'publish' === $pillar->post_status ) {
+        wp_safe_redirect( roden_get_canonical_url( $pillar ), 301 );
+        exit;
+    }
+}
+
+/**
+ * Disable core's 404 permalink guessing on /es/ requests.
+ *
+ * The guess is a LIKE match on the last path segment with no locale awareness,
+ * so on Spanish URLs it reliably lands on English content. Better to 404.
+ *
+ * @param bool $do Whether to attempt the guess.
+ * @return bool
+ */
+add_filter( 'do_redirect_guess_404_permalink', 'roden_es_disable_404_guess' );
+function roden_es_disable_404_guess( $do ) {
+    return roden_is_es_request() ? false : $do;
+}
+
+/* ==========================================================================
    6. QUERY HYGIENE — keep ES posts out of English listings
    ========================================================================== */
 
 /**
  * Meta query clause excluding Spanish posts. Reusable in template queries
  * (grids, related-content lists) that would otherwise sweep in ES posts.
+ *
+ * Prefer roden_locale_meta_query() in anything that renders on both locales —
+ * this clause is only ever correct on an English request.
  *
  * @return array
  */
@@ -264,6 +335,42 @@ function roden_es_exclusion_meta_query() {
         array( 'key' => '_roden_locale', 'compare' => 'NOT EXISTS' ),
         array( 'key' => '_roden_locale', 'value' => 'es', 'compare' => '!=' ),
     );
+}
+
+/**
+ * Meta query clause selecting posts of the CURRENT request's language.
+ *
+ * The exclusion clause above is right on English pages and exactly backwards on
+ * Spanish ones: applied unconditionally it makes every related-content module on
+ * /es/ list English posts. That is what shipped — 17 call sites across the four
+ * practice-area templates, the location template, 404.php and llms-txt.php each
+ * called roden_es_exclusion_meta_query() directly, so a single ES pillar carried
+ * 24 links out to English pages, six of them to EN pillars whose Spanish twins
+ * already existed. Only home.php and schema-helpers.php branched on locale, and
+ * they did it with their own inline copies.
+ *
+ * Anything that renders on both locales should call this instead. Callers that
+ * genuinely only ever run in English (nothing does today) can keep using the
+ * exclusion clause directly.
+ *
+ * On /es/ this deliberately returns Spanish posts ONLY, with no English
+ * fallback: the silo is self-canonical per locale (§7), so a module with no
+ * Spanish counterpart renders empty rather than leaking authority and readers
+ * back into English. An empty module is the signal that the ES page is missing.
+ *
+ * @param string|null $lang 'en' or 'es' (defaults to current request language).
+ * @return array
+ */
+function roden_locale_meta_query( $lang = null ) {
+    if ( null === $lang ) {
+        $lang = roden_current_lang();
+    }
+    if ( 'es' === $lang ) {
+        return array(
+            array( 'key' => '_roden_locale', 'value' => 'es' ),
+        );
+    }
+    return roden_es_exclusion_meta_query();
 }
 
 // Main queries: archives, search, blog home. Singular queries resolve by
@@ -276,12 +383,10 @@ function roden_es_filter_main_query( $query ) {
     }
     if ( roden_is_es_request() ) {
         // ES archive requests (/es/blog/) list only Spanish posts.
-        $query->set( 'meta_query', array(
-            array( 'key' => '_roden_locale', 'value' => 'es' ),
-        ) );
+        $query->set( 'meta_query', roden_locale_meta_query( 'es' ) );
         return;
     }
-    $clause   = roden_es_exclusion_meta_query();
+    $clause   = roden_locale_meta_query( 'en' );
     $existing = $query->get( 'meta_query' );
     if ( ! empty( $existing ) ) {
         $query->set( 'meta_query', array( 'relation' => 'AND', $existing, $clause ) );

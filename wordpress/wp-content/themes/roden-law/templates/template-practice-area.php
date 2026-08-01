@@ -121,8 +121,8 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                 'posts_per_page' => 10,
                 'post_status'    => 'publish',
             );
-            if ( function_exists( 'roden_es_exclusion_meta_query' ) ) {
-                $location_posts_args['meta_query'] = roden_es_exclusion_meta_query();
+            if ( function_exists( 'roden_locale_meta_query' ) ) {
+                $location_posts_args['meta_query'] = roden_locale_meta_query();
             }
             $location_posts = get_posts( $location_posts_args );
             foreach ( $location_posts as $lp ) {
@@ -574,8 +574,8 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                 'posts_per_page' => 6,
                 'post_status'    => 'publish',
             );
-            if ( function_exists( 'roden_es_exclusion_meta_query' ) ) {
-                $related_args['meta_query'] = roden_es_exclusion_meta_query();
+            if ( function_exists( 'roden_locale_meta_query' ) ) {
+                $related_args['meta_query'] = roden_locale_meta_query();
             }
 
             // Try practice_category taxonomy first.
@@ -655,8 +655,8 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                 'orderby'        => 'date',
                 'order'          => 'DESC',
             );
-            if ( function_exists( 'roden_es_exclusion_meta_query' ) ) {
-                $resource_args['meta_query'] = roden_es_exclusion_meta_query();
+            if ( function_exists( 'roden_locale_meta_query' ) ) {
+                $resource_args['meta_query'] = roden_locale_meta_query();
             }
             if ( $cat_slug ) {
                 $resource_args['tax_query'] = array(
@@ -720,8 +720,8 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                         'post_parent'    => 0,
                         'orderby'        => 'rand',
                     );
-                    if ( function_exists( 'roden_es_exclusion_meta_query' ) ) {
-                        $related_pas_args['meta_query'] = roden_es_exclusion_meta_query();
+                    if ( function_exists( 'roden_locale_meta_query' ) ) {
+                        $related_pas_args['meta_query'] = roden_locale_meta_query();
                     }
                     $related_pas = get_posts( $related_pas_args );
                     if ( $related_pas ) :

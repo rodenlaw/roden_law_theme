@@ -125,7 +125,10 @@ function roden_generate_llms_txt( $full = false ) {
         'post_status'    => 'publish',
         'orderby'        => 'menu_order title',
         'order'          => 'ASC',
-        // English-only here; Spanish pillars get their own "En Español" section.
+        // English-only here; Spanish pillars get their own "En Español" section
+        // below. This is the ONE listing that must not become locale-aware —
+        // /llms is a single document covering both locales, not a per-locale
+        // page, so do NOT swap this for roden_locale_meta_query().
         'meta_query'     => function_exists( 'roden_es_exclusion_meta_query' ) ? roden_es_exclusion_meta_query() : array(),
     ) );
 

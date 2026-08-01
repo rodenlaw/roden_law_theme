@@ -112,10 +112,8 @@ $is_es = function_exists( 'roden_current_lang' ) && 'es' === roden_current_lang(
                         'order'          => 'ASC',
                         'post_parent'    => 0,
                     ];
-                    if ( function_exists( 'roden_es_exclusion_meta_query' ) ) {
-                        $pa_args['meta_query'] = $is_es
-                            ? [ [ 'key' => '_roden_locale', 'value' => 'es' ] ]
-                            : roden_es_exclusion_meta_query();
+                    if ( function_exists( 'roden_locale_meta_query' ) ) {
+                        $pa_args['meta_query'] = roden_locale_meta_query( $is_es ? 'es' : 'en' );
                     }
                     $pas = get_posts( $pa_args );
                     echo '<ul class="sidebar-links">';
