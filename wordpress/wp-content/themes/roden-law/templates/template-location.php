@@ -503,11 +503,36 @@ if ( $loc_expert_quote && ! empty( $location_attorneys ) ) {
             <p class="section-subtitle"><?php printf( /* translators: %d: number of offices. */ esc_html__( 'Roden Law serves injury victims across Georgia and South Carolina from %d offices.', 'roden-law' ), count( $firm['offices'] ) ); ?></p>
         </div>
         <div class="locations-grid">
-            <?php foreach ( $firm['offices'] as $k => $o ) :
+            <?php
+            // This list was sending readers to the ENGLISH office pages from
+            // every /es/ location page. Resolve the actual Spanish posts rather
+            // than assuming the /es/ URL exists: a missing one would 404, and
+            // the rule for this silo is to omit rather than link out of locale.
+            $loc_lang   = function_exists( 'roden_current_lang' ) ? roden_current_lang() : 'en';
+            $loc_is_es  = ( 'es' === $loc_lang );
+            $es_offices = array();
+            if ( $loc_is_es ) {
+                foreach ( get_posts( array(
+                    'post_type'      => 'location',
+                    'posts_per_page' => -1,
+                    'post_status'    => 'publish',
+                    'meta_query'     => array( array( 'key' => '_roden_locale', 'value' => 'es' ) ),
+                ) ) as $es_loc ) {
+                    $es_offices[ roden_strip_es_slug( $es_loc->post_name ) ] = $es_loc;
+                }
+            }
+            foreach ( $firm['offices'] as $k => $o ) :
                 if ( $k === $office_key ) continue;
                 $slug       = sanitize_title( $o['market_name'] );
                 $state_slug = $o['state'] === 'GA' ? 'georgia' : 'south-carolina';
-                $office_url = home_url( '/locations/' . $state_slug . '/' . $slug . '/' );
+                if ( $loc_is_es ) {
+                    if ( ! isset( $es_offices[ $slug ] ) ) {
+                        continue; // no Spanish page for this office yet
+                    }
+                    $office_url = get_permalink( $es_offices[ $slug ] );
+                } else {
+                    $office_url = home_url( '/locations/' . $state_slug . '/' . $slug . '/' );
+                }
             ?>
             <div class="card location-card">
                 <span class="badge <?php echo 'GA' === $o['state'] ? 'badge-ga' : 'badge-sc'; ?>">
