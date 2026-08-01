@@ -5,7 +5,7 @@
         "location",
         "resource"
     ],
-    "_count": 689,
+    "_count": 708,
     "posts": {
         "/?post_type=location&p=3808": {
             "type": "location",
@@ -680,7 +680,8 @@
                 "_roden_jurisdiction": "south-carolina",
                 "_roden_pa_office_key": "charleston",
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
+                "_roden_sol_sc": "S.C. Code § 15-3-530",
+                "_roden_translation_es": "/es/bicycle-accident-lawyers/charleston-sc/"
             }
         },
         "/bicycle-accident-lawyers/columbia-sc/": {
@@ -718,7 +719,8 @@
                 "_roden_jurisdiction": "south-carolina",
                 "_roden_pa_office_key": "columbia",
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
+                "_roden_sol_sc": "S.C. Code § 15-3-530",
+                "_roden_translation_es": "/es/bicycle-accident-lawyers/columbia-sc/"
             }
         },
         "/bicycle-accident-lawyers/darien-ga/": {
@@ -756,7 +758,8 @@
                 "_roden_jurisdiction": "ga",
                 "_roden_pa_office_key": "darien",
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
+                "_roden_sol_sc": "S.C. Code § 15-3-530",
+                "_roden_translation_es": "/es/bicycle-accident-lawyers/darien-ga/"
             }
         },
         "/bicycle-accident-lawyers/distracted-driver-bicycle-accident/": {
@@ -959,7 +962,8 @@
                 "_roden_jurisdiction": "south-carolina",
                 "_roden_pa_office_key": "myrtle-beach",
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
+                "_roden_sol_sc": "S.C. Code § 15-3-530",
+                "_roden_translation_es": "/es/bicycle-accident-lawyers/myrtle-beach-sc/"
             }
         },
         "/bicycle-accident-lawyers/north-charleston-sc/": {
@@ -996,7 +1000,8 @@
                 ],
                 "_roden_jurisdiction": "south-carolina",
                 "_roden_pa_office_key": "north-charleston",
-                "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)"
+                "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)",
+                "_roden_translation_es": "/es/bicycle-accident-lawyers/north-charleston-sc/"
             }
         },
         "/bicycle-accident-lawyers/right-hook-left-cross-collision/": {
@@ -1100,7 +1105,8 @@
                 "_roden_jurisdiction": "ga",
                 "_roden_pa_office_key": "savannah",
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
+                "_roden_sol_sc": "S.C. Code § 15-3-530",
+                "_roden_translation_es": "/es/bicycle-accident-lawyers/savannah-ga/"
             }
         },
         "/boating-accident-lawyers/boating-under-influence/": {
@@ -4861,6 +4867,239 @@
                 "_roden_sol_sc": "S.C. Code § 15-3-530"
             }
         },
+        "/es/bicycle-accident-lawyers/charleston-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Abogados de Accidentes de Bicicleta en Charleston, SC",
+            "meta": {
+                "_roden_accident_phrase": "un accidente de bicicleta",
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "¿Cuánto tiempo tengo para presentar un reclamo por accidente de bicicleta en Carolina del Sur?",
+                        "answer": "El plazo general es de 3 años desde la fecha de la lesión (S.C. Code § 15-3-530). Las lesiones de un ciclista suelen ser graves y el caso toma tiempo, así que lo mejor es que revisemos su reclamo cuanto antes, mientras la evidencia y los testigos siguen disponibles. Llame a nuestra oficina de Charleston al (843) 790-8999 para una revisión gratuita y confidencial."
+                    },
+                    {
+                        "question": "¿Tengo los mismos derechos que un carro si ando en bicicleta en Charleston?",
+                        "answer": "Sí. Bajo S.C. Code § 56-5-3410 y siguientes, quien anda en bicicleta por una vía de Carolina del Sur tiene, por lo general, los mismos derechos y deberes que el conductor de un vehículo. Usted tiene derecho a usar la calle y los conductores están obligados a compartirla, incluso en las calles angostas de la península de Charleston."
+                    },
+                    {
+                        "question": "¿Cuánto espacio debe dejarme un conductor al rebasarme en Carolina del Sur?",
+                        "answer": "La ley de rebase seguro de Carolina del Sur, S.C. Code § 56-5-3435, exige que el conductor deje al menos tres pies de espacio al rebasar una bicicleta. Un conductor que pasa demasiado cerca y provoca el choque violó la ley, y eso es prueba fuerte de negligencia en su reclamo."
+                    },
+                    {
+                        "question": "¿Perjudica mi reclamo no haber usado casco?",
+                        "answer": "No automáticamente. Carolina del Sur no tiene una ley estatal que obligue a los adultos a usar casco en bicicleta, aunque algunas ordenanzas locales sí aplican. La aseguradora puede usar la falta de casco para intentar reducir el pago, pero eso no elimina su derecho a recuperar ni excusa la negligencia del conductor que lo atropelló."
+                    },
+                    {
+                        "question": "¿Cuánto cuesta contratar a Roden Law para un caso de bicicleta en Charleston?",
+                        "answer": "Roden Law maneja los casos de bicicleta en Charleston con honorarios de contingencia: usted no paga honorarios ni gastos por adelantado y solo cobramos si ganamos. Si no hay recuperación, no nos debe nada. La consulta es gratuita y en español, y no preguntamos por su estatus migratorio; su estatus no le impide reclamar una compensación. Llame al (843) 790-8999."
+                    }
+                ],
+                "_roden_jurisdiction": "south-carolina",
+                "_roden_last_reviewed": "2026-08-01",
+                "_roden_locale": "es",
+                "_roden_meta_description": "Abogados de accidentes de bicicleta en Charleston, SC. Roden Law lo atiende en español, con consulta gratis y sin honorarios si no ganamos. (843) 790-8999.",
+                "_roden_pa_office_key": "charleston",
+                "_roden_sol_ga": "O.C.G.A. § 9-3-33",
+                "_roden_sol_sc": "S.C. Code § 15-3-530",
+                "_roden_translation_of": "/bicycle-accident-lawyers/charleston-sc/"
+            }
+        },
+        "/es/bicycle-accident-lawyers/columbia-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Abogados de Accidentes de Bicicleta en Columbia, SC",
+            "meta": {
+                "_roden_accident_phrase": "un accidente de bicicleta",
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "¿Cuánto tiempo tengo para presentar un reclamo por accidente de bicicleta en Carolina del Sur?",
+                        "answer": "El plazo general es de 3 años desde la fecha de la lesión (S.C. Code § 15-3-530). Conviene no esperar: las lesiones de un ciclista suelen requerir tratamiento largo y la evidencia se pierde con el tiempo. Llame a nuestra oficina de Columbia al (803) 219-2816 y revisamos su caso gratis, en español y sin compromiso."
+                    },
+                    {
+                        "question": "¿Son comunes los accidentes de bicicleta cerca de USC y Five Points?",
+                        "answer": "Sí. El campus de USC y el distrito de Five Points concentran mucho ciclismo estudiantil que se mezcla con tráfico pesado de vehículos. Los giros a la derecha frente al ciclista, la falta de ceder el paso y las puertas que se abren de golpe son causas frecuentes de choques en esa zona de Columbia."
+                    },
+                    {
+                        "question": "¿Cuánto espacio debe dejarme un conductor al rebasarme en Columbia?",
+                        "answer": "La ley de rebase seguro de Carolina del Sur, S.C. Code § 56-5-3435, exige al conductor dejar al menos tres pies de espacio al pasar junto a una bicicleta. En corredores anchos como Two Notch Road el rebase inseguro es común, y violar esa ley es prueba fuerte de negligencia en su reclamo."
+                    },
+                    {
+                        "question": "¿Perjudica mi reclamo no haber usado casco?",
+                        "answer": "No automáticamente. Carolina del Sur no tiene una ley estatal que obligue a los adultos a usar casco en bicicleta, aunque algunas ordenanzas locales sí aplican. La aseguradora puede usar la falta de casco para intentar reducir el pago, pero eso no elimina su derecho a recuperar ni excusa la negligencia del conductor."
+                    },
+                    {
+                        "question": "¿Cuánto cuesta un abogado de accidentes de bicicleta en Columbia?",
+                        "answer": "Roden Law maneja los casos de bicicleta de Columbia con honorarios de contingencia: usted no paga honorarios ni gastos por adelantado y solo cobramos si ganamos su caso. Si no hay recuperación, no nos debe nada. La consulta es gratuita y en español, y no preguntamos por su estatus migratorio; su estatus no le impide reclamar una compensación. Llame al (803) 219-2816."
+                    }
+                ],
+                "_roden_jurisdiction": "south-carolina",
+                "_roden_last_reviewed": "2026-08-01",
+                "_roden_locale": "es",
+                "_roden_meta_description": "Abogados de accidentes de bicicleta en Columbia, SC. Roden Law lo atiende en español, con consulta gratis y sin honorarios si no ganamos. (803) 219-2816.",
+                "_roden_pa_office_key": "columbia",
+                "_roden_sol_ga": "O.C.G.A. § 9-3-33",
+                "_roden_sol_sc": "S.C. Code § 15-3-530",
+                "_roden_translation_of": "/bicycle-accident-lawyers/columbia-sc/"
+            }
+        },
+        "/es/bicycle-accident-lawyers/darien-ga/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Abogados de Accidentes de Bicicleta en Darien, GA",
+            "meta": {
+                "_roden_accident_phrase": "un accidente de bicicleta",
+                "_roden_author_attorney": "Eric Roden",
+                "_roden_faqs": [
+                    {
+                        "question": "¿Qué debo hacer después de un accidente de bicicleta en Darien?",
+                        "answer": "Busque atención médica de inmediato, aunque no sienta dolor: las conmociones cerebrales y las hemorragias internas suelen aparecer horas o días después. Llame al 911 y asegúrese de que se haga un reporte policial. Tome fotos de su bicicleta, del vehículo, de la carretera y de sus lesiones, y consiga el seguro del conductor y los datos de los testigos. No dé una declaración grabada a la aseguradora antes de hablar con un abogado. Llame a Roden Law al (912) 303-5850 para una consulta gratuita en español."
+                    },
+                    {
+                        "question": "¿Cuánto tiempo tengo para presentar una demanda por accidente de bicicleta en Georgia?",
+                        "answer": "En Georgia usted tiene 2 años desde la fecha del accidente para presentar una demanda por lesiones personales, incluidos los accidentes de bicicleta (O.C.G.A. § 9-3-33). Pasado ese plazo, casi con seguridad pierde el derecho a reclamar cualquier compensación. Le recomendamos consultar a un abogado lo antes posible, porque la evidencia se pierde y los testigos olvidan lo que vieron. Llame a nuestra oficina de Darien al (912) 303-5850 para una evaluación gratuita."
+                    },
+                    {
+                        "question": "¿Puedo reclamar si el conductor dice que yo tuve la culpa?",
+                        "answer": "En muchos casos sí. Georgia aplica una regla de negligencia comparativa modificada: usted puede recuperar daños siempre que su responsabilidad sea menor al 50% (O.C.G.A. § 51-12-33), aunque el monto se reduce según el porcentaje de culpa que se le asigne. Culpar al ciclista es la táctica más común de las aseguradoras. Un abogado con experiencia puede demostrar la negligencia real del conductor con fotos, reportes, peritaje del choque y testimonios."
+                    },
+                    {
+                        "question": "¿Cuánto cuesta contratar a un abogado de accidentes de bicicleta en Darien?",
+                        "answer": "No paga nada por adelantado. Roden Law maneja los casos de bicicleta con honorarios de contingencia: la consulta es gratuita y solo cobramos si ganamos su caso. Si no hay recuperación, usted no nos debe honorarios. Tampoco preguntamos por su estatus migratorio; su estatus no le impide reclamar una compensación. Llame al (912) 303-5850 y lo atendemos en español."
+                    },
+                    {
+                        "question": "¿Qué compensación puedo recibir por un accidente de bicicleta?",
+                        "answer": "Las víctimas de un accidente de bicicleta pueden reclamar gastos médicos (emergencia, cirugía, rehabilitación y tratamiento futuro), salarios perdidos y pérdida de capacidad de trabajo, dolor y sufrimiento, daños a la bicicleta y al equipo, cicatrices y desfiguración, y pérdida del disfrute de la vida. Como el ciclista no tiene ninguna barrera que lo proteja, las lesiones suelen ser graves: traumatismo craneal, fracturas, lesiones de columna y raspones profundos. El valor de su caso depende de la gravedad de las lesiones, del impacto en su vida diaria y de la fuerza de la evidencia."
+                    }
+                ],
+                "_roden_jurisdiction": "ga",
+                "_roden_last_reviewed": "2026-08-01",
+                "_roden_locale": "es",
+                "_roden_meta_description": "¿Sufrió un accidente de bicicleta en Darien o el condado de McIntosh? Roden Law lo atiende en español. Consulta gratis. Llame al (912) 303-5850.",
+                "_roden_pa_office_key": "darien",
+                "_roden_sol_ga": "O.C.G.A. § 9-3-33",
+                "_roden_sol_sc": "S.C. Code § 15-3-530",
+                "_roden_translation_of": "/bicycle-accident-lawyers/darien-ga/"
+            }
+        },
+        "/es/bicycle-accident-lawyers/myrtle-beach-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Abogados de Accidentes de Bicicleta en Myrtle Beach, SC",
+            "meta": {
+                "_roden_accident_phrase": "un accidente de bicicleta",
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "¿Cuánto tiempo tengo para presentar un reclamo por accidente de bicicleta en Carolina del Sur?",
+                        "answer": "El plazo general es de 3 años desde la fecha de la lesión (S.C. Code § 15-3-530). En el Grand Strand hay una razón más para no esperar: muchos testigos son visitantes que regresan a sus estados en pocos días. Llame a nuestra oficina de Myrtle Beach al (843) 612-1980 para una revisión gratuita y confidencial de su caso."
+                    },
+                    {
+                        "question": "¿Por qué son tan comunes los accidentes de bicicleta en el Grand Strand?",
+                        "answer": "El tráfico turístico de temporada, el ciclismo en la zona de playa y los conductores de fuera que no conocen las calles aumentan mucho el riesgo para los ciclistas en Myrtle Beach, sobre todo en Ocean Boulevard y la US-17 durante el verano y los fines de semana de eventos."
+                    },
+                    {
+                        "question": "¿Cuánto espacio debe dejarme un conductor al rebasarme en Carolina del Sur?",
+                        "answer": "La ley de rebase seguro de Carolina del Sur, S.C. Code § 56-5-3435, exige al conductor dejar al menos tres pies de espacio al pasar junto a una bicicleta. En carreteras concurridas del Grand Strand como la US-17, el rebase inseguro es una causa frecuente de choques y es prueba fuerte de negligencia."
+                    },
+                    {
+                        "question": "¿Perjudica mi reclamo no haber usado casco?",
+                        "answer": "No automáticamente. Carolina del Sur no tiene una ley estatal que obligue a los adultos a usar casco en bicicleta, aunque algunas ordenanzas locales sí aplican. La falta de casco puede usarse para intentar reducir el pago, pero no elimina su derecho a recuperar ni excusa la negligencia del conductor que lo atropelló."
+                    },
+                    {
+                        "question": "¿Cuánto cuesta un abogado de accidentes de bicicleta en Myrtle Beach?",
+                        "answer": "Roden Law maneja los casos de bicicleta del Grand Strand con honorarios de contingencia: usted no paga honorarios ni gastos por adelantado y solo cobramos si ganamos. Si no hay recuperación, no nos debe nada. La consulta es gratuita y en español, y no preguntamos por su estatus migratorio; su estatus no le impide reclamar una compensación. Llame al (843) 612-1980."
+                    }
+                ],
+                "_roden_jurisdiction": "south-carolina",
+                "_roden_last_reviewed": "2026-08-01",
+                "_roden_locale": "es",
+                "_roden_meta_description": "Abogados de accidentes de bicicleta en Myrtle Beach y el Grand Strand. Consulta gratis y en español, sin honorarios si no ganamos. (843) 612-1980.",
+                "_roden_pa_office_key": "myrtle-beach",
+                "_roden_sol_ga": "O.C.G.A. § 9-3-33",
+                "_roden_sol_sc": "S.C. Code § 15-3-530",
+                "_roden_translation_of": "/bicycle-accident-lawyers/myrtle-beach-sc/"
+            }
+        },
+        "/es/bicycle-accident-lawyers/north-charleston-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Abogados de Accidentes de Bicicleta en North Charleston, SC",
+            "meta": {
+                "_roden_accident_phrase": "un accidente de bicicleta",
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "¿Cuánto tiempo tengo para presentar un reclamo por accidente de bicicleta en Carolina del Sur?",
+                        "answer": "El plazo general es de 3 años desde la fecha de la lesión (S.C. Code § 15-3-530). Como las lesiones de un ciclista suelen ser graves y la evidencia se pierde rápido, lo mejor es que revisemos su caso lo antes posible. Llame a nuestra oficina de North Charleston al (843) 612-6561 para una revisión gratuita y confidencial de su reclamo."
+                    },
+                    {
+                        "question": "¿Cuánto espacio debe dejarme un conductor al rebasarme en North Charleston?",
+                        "answer": "La ley de rebase seguro de Carolina del Sur, S.C. Code § 56-5-3435, exige al conductor dejar al menos tres pies de espacio al pasar junto a una bicicleta. En avenidas anchas y rápidas como Rivers Avenue, el rebase inseguro es una causa frecuente de choques y constituye prueba fuerte de negligencia del conductor."
+                    },
+                    {
+                        "question": "¿Tienen los ciclistas los mismos derechos que los carros en Carolina del Sur?",
+                        "answer": "Sí. Bajo S.C. Code § 56-5-3410 y siguientes, la persona que anda en bicicleta por una vía pública de Carolina del Sur tiene, por lo general, los mismos derechos y deberes que el conductor de un vehículo. Usted tiene derecho a usar la calle y los demás conductores están obligados a compartirla con usted."
+                    },
+                    {
+                        "question": "¿Qué pasa si el conductor que me atropelló no tenía seguro o se dio a la fuga?",
+                        "answer": "Todavía puede haber una vía de recuperación. Su propia cobertura contra conductores sin seguro o con seguro insuficiente (UM/UIM) muchas veces aplica cuando a un ciclista lo atropella un conductor sin seguro o que huye del lugar. Reporte el hecho a la policía cuanto antes, anote todo lo que recuerde del vehículo y busque cámaras cercanas. Llame al (843) 612-6561 y revisamos gratis qué coberturas puede usar."
+                    },
+                    {
+                        "question": "¿Cuánto cuesta un abogado de accidentes de bicicleta en North Charleston?",
+                        "answer": "Roden Law maneja los casos de bicicleta de North Charleston con honorarios de contingencia: no paga honorarios ni gastos por adelantado y solo cobramos si ganamos. Si no hay recuperación, usted no nos debe nada. La consulta es gratuita y en español, y no preguntamos por su estatus migratorio; su estatus no le impide reclamar una compensación."
+                    }
+                ],
+                "_roden_jurisdiction": "south-carolina",
+                "_roden_last_reviewed": "2026-08-01",
+                "_roden_locale": "es",
+                "_roden_meta_description": "Abogados de accidentes de bicicleta en North Charleston, SC. Consulta gratis y en español, sin honorarios a menos que ganemos. Llame al (843) 612-6561.",
+                "_roden_pa_office_key": "north-charleston",
+                "_roden_sol_sc": "3 años (S.C. Code § 15-3-530)",
+                "_roden_translation_of": "/bicycle-accident-lawyers/north-charleston-sc/"
+            }
+        },
+        "/es/bicycle-accident-lawyers/savannah-ga/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Abogados de Accidentes de Bicicleta en Savannah, GA",
+            "meta": {
+                "_roden_accident_phrase": "un accidente de bicicleta",
+                "_roden_author_attorney": "Eric Roden",
+                "_roden_faqs": [
+                    {
+                        "question": "¿Qué debo hacer después de un accidente de bicicleta en Savannah?",
+                        "answer": "Busque atención médica de inmediato, aunque se sienta bien: las conmociones cerebrales y las hemorragias internas muchas veces no dan síntomas el primer día. Llame al 911 y pida el reporte policial. Tome fotos de su bicicleta, del vehículo, de la calle y de sus lesiones, y anote los datos del conductor y de cualquier testigo. No dé una declaración grabada a la aseguradora antes de hablar con un abogado. Llame a Roden Law al (912) 303-5850 para una consulta gratuita en español."
+                    },
+                    {
+                        "question": "¿Cuánto tiempo tengo para demandar por un accidente de bicicleta en Georgia?",
+                        "answer": "En Georgia el plazo general para presentar una demanda por lesiones personales, incluidos los accidentes de bicicleta, es de 2 años desde la fecha del accidente (O.C.G.A. § 9-3-33). Si deja pasar ese plazo, casi con seguridad pierde el derecho a reclamar. Dos años parecen mucho tiempo, pero la evidencia desaparece, los testigos olvidan detalles y las aseguradoras usan la demora en su contra. Llame a nuestra oficina de Savannah al (912) 303-5850 para una evaluación gratuita de su caso."
+                    },
+                    {
+                        "question": "¿Puedo demandar al conductor que me atropelló mientras andaba en bicicleta?",
+                        "answer": "Sí. En Georgia el ciclista tiene los mismos derechos sobre la vía que el conductor de un automóvil. Si el conductor iba distraído, no cedió el paso, abrió su puerta frente a usted o se pasó una luz roja, usted puede presentar un reclamo por lesiones personales. Georgia aplica una regla de negligencia comparativa modificada: usted puede recuperar daños siempre que su responsabilidad sea menor al 50% (O.C.G.A. § 51-12-33). Aunque el conductor diga que usted tuvo parte de la culpa, un abogado con experiencia puede demostrar el alcance real de la negligencia de él."
+                    },
+                    {
+                        "question": "¿Cuánto cuesta contratar a un abogado de accidentes de bicicleta en Savannah?",
+                        "answer": "Nada por adelantado. Roden Law trabaja con honorarios de contingencia: la consulta es gratuita y solo cobramos si ganamos su caso. Si no hay recuperación, usted no nos debe nada. Tampoco preguntamos por su estatus migratorio; su estatus migratorio no le impide reclamar una compensación por sus lesiones. Atendemos en español al (912) 303-5850."
+                    },
+                    {
+                        "question": "¿Qué pasa si el conductor se dio a la fuga después de atropellarme?",
+                        "answer": "Todavía puede recuperar una compensación. Si usted tiene cobertura contra conductores sin seguro (UM) en su póliza de auto, esa cobertura muchas veces se aplica aunque iba en bicicleta y no manejando. Reporte el atropello y fuga a la policía de Savannah de inmediato, anote todo lo que recuerde del vehículo (color, marca, modelo, placa y dirección en que huyó) y revise si hay cámaras de seguridad cerca. Roden Law ha manejado numerosos casos de atropello y fuga en Georgia: llame al (912) 303-5850."
+                    }
+                ],
+                "_roden_jurisdiction": "ga",
+                "_roden_last_reviewed": "2026-08-01",
+                "_roden_locale": "es",
+                "_roden_meta_description": "¿Sufrió un accidente de bicicleta en Savannah? Roden Law lo atiende en español. Consulta gratis, sin honorarios si no ganamos. (912) 303-5850.",
+                "_roden_pa_office_key": "savannah",
+                "_roden_sol_ga": "O.C.G.A. § 9-3-33",
+                "_roden_sol_sc": "S.C. Code § 15-3-530",
+                "_roden_translation_of": "/bicycle-accident-lawyers/savannah-ga/"
+            }
+        },
         "/es/car-accident-lawyers/charleston-sc/": {
             "type": "practice_area",
             "status": "publish",
@@ -5357,6 +5596,462 @@
                 "_roden_locale": "es",
                 "_roden_meta_description": "Abogados de lesiones personales en North Charleston, SC. Hablamos español. Consulta gratuita: (843) 612-6561. Sin honorarios a menos que ganemos.",
                 "_roden_translation_of": "/locations/south-carolina/north-charleston/"
+            }
+        },
+        "/es/motorcycle-accident-lawyers/charleston-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Abogados de Accidentes de Motocicleta en Charleston, SC",
+            "meta": {
+                "_roden_accident_phrase": "un accidente de motocicleta",
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "¿Cuánto tiempo tengo para presentar un reclamo por un accidente de motocicleta en Charleston?",
+                        "answer": "En Carolina del Sur tiene 3 años desde la fecha del choque para presentar la demanda (S.C. Code § 15-3-530). Esperar sale caro: la evidencia del lugar y la memoria de los testigos se pierden rápido, y en la península los videos de cámaras y negocios se borran en cuestión de días. Llame al (843) 790-8999 para una revisión gratuita de su caso."
+                    },
+                    {
+                        "question": "¿Pierdo mi reclamo si no llevaba casco?",
+                        "answer": "No. En Carolina del Sur el casco solo es obligatorio para menores de 21 años (S.C. Code § 56-5-3660), y no existe ninguna ley que le quite el derecho a reclamar por no usarlo si usted tiene 21 o más. La aseguradora igual va a intentar culparlo por eso; nuestro trabajo es cortar ese argumento y mantener el foco en el conductor que causó el choque."
+                    },
+                    {
+                        "question": "El conductor que me chocó solo tenía el seguro mínimo. ¿Qué puedo hacer?",
+                        "answer": "Las lesiones de un motociclista casi siempre superan el mínimo de 25/50/25 que exige Carolina del Sur. La ley del estado permite acumular (stacking) su propia cobertura contra conductores sin seguro o con seguro insuficiente (UM/UIM) entre varias pólizas, y con frecuencia esa es la mayor fuente de recuperación. Nosotros identificamos y reclamamos todas las pólizas disponibles, no solo la del otro conductor."
+                    },
+                    {
+                        "question": "¿Cuáles son las vías más peligrosas para motociclistas en Charleston?",
+                        "answer": "El puente Arthur Ravenel Jr., el Crosstown (US-17 / Septima P. Clark Parkway) y el enlace de la I-26 con la I-526 son los tramos más peligrosos para una moto. A eso se suman los giros a la izquierda en la península y sobre Savannah Highway (US-17), y el tráfico turístico alrededor de King y Market Street, donde los conductores de fuera del estado no alcanzan a ver al motociclista."
+                    },
+                    {
+                        "question": "¿Cuánto cuesta contratar a Roden Law?",
+                        "answer": "Nada por adelantado. Llevamos los casos de motocicleta por honorarios de contingencia: cobramos un porcentaje de lo que recuperemos y, si no ganamos, usted no paga honorarios. La consulta es gratuita, confidencial y en español, y no le preguntamos por su estatus migratorio. Roden Law ha recuperado más de $300 millones para clientes lesionados en Georgia y Carolina del Sur. Llame al (843) 790-8999."
+                    }
+                ],
+                "_roden_jurisdiction": "south-carolina",
+                "_roden_last_reviewed": "2026-08-01",
+                "_roden_locale": "es",
+                "_roden_meta_description": "Abogados de accidentes de motocicleta en Charleston, SC. Consulta gratis y en español, sin honorarios si no ganamos. Llame al (843) 790-8999.",
+                "_roden_pa_office_key": "charleston",
+                "_roden_sol_sc": "3 años (S.C. Code § 15-3-530)",
+                "_roden_translation_of": "/motorcycle-accident-lawyers/charleston-sc/"
+            }
+        },
+        "/es/motorcycle-accident-lawyers/columbia-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Abogados de Accidentes de Motocicleta en Columbia, SC",
+            "meta": {
+                "_roden_accident_phrase": "un accidente de motocicleta",
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "¿Cuánto tiempo tengo para presentar un reclamo por un accidente de motocicleta en Columbia?",
+                        "answer": "En Carolina del Sur el plazo es de 3 años desde la fecha del choque (S.C. Code § 15-3-530). Conviene actuar mucho antes, sobre todo si el accidente ocurrió en una zona de obra: la señalización y el trazado de los carriles cambian de una semana a otra y después es difícil demostrar cómo estaba la vía ese día. Llame al (803) 219-2816 para una consulta gratuita."
+                    },
+                    {
+                        "question": "¿Pierdo mi reclamo si no llevaba casco?",
+                        "answer": "No. En Carolina del Sur el casco solo es obligatorio para menores de 21 años (S.C. Code § 56-5-3660), y ninguna ley le quita el derecho a reclamar por no usarlo si usted tiene 21 o más. La aseguradora igual va a intentar culparlo por eso; nuestro trabajo es cortar ese argumento y mantener el foco en el conductor que causó el choque."
+                    },
+                    {
+                        "question": "El conductor que me chocó solo tenía el seguro mínimo. ¿Qué puedo hacer?",
+                        "answer": "Las lesiones de un motociclista casi siempre superan el mínimo de 25/50/25 que exige Carolina del Sur. La ley del estado permite acumular (stacking) su propia cobertura contra conductores sin seguro o con seguro insuficiente (UM/UIM) entre varias pólizas, y con frecuencia esa es la mayor fuente de recuperación. Nosotros identificamos y reclamamos todas las pólizas disponibles, no solo la del otro conductor."
+                    },
+                    {
+                        "question": "¿Cuáles son las vías más peligrosas para motociclistas en Columbia?",
+                        "answer": "Los giros a la izquierda en Two Notch Road (US-1), Garners Ferry Road, Forest Drive y Broad River Road producen los choques más comunes y más graves para una moto. Malfunction Junction —el cruce de la I-20, la I-26 y la I-77— y las zonas de obra de Carolina Crossroads también son especialmente peligrosas por los cambios de carril y los escombros en la vía."
+                    },
+                    {
+                        "question": "¿Cuánto cuesta contratar a Roden Law?",
+                        "answer": "Nada por adelantado. Llevamos los casos de motocicleta por honorarios de contingencia: cobramos un porcentaje de lo que recuperemos y, si no ganamos, usted no paga honorarios. La consulta es gratuita, confidencial y en español, y no le preguntamos por su estatus migratorio. Roden Law ha recuperado más de $300 millones para clientes lesionados en Georgia y Carolina del Sur. Llame al (803) 219-2816."
+                    }
+                ],
+                "_roden_jurisdiction": "south-carolina",
+                "_roden_last_reviewed": "2026-08-01",
+                "_roden_locale": "es",
+                "_roden_meta_description": "Abogados de accidentes de motocicleta en Columbia, SC. Consulta gratis y en español, sin honorarios si no ganamos. Llame al (803) 219-2816.",
+                "_roden_pa_office_key": "columbia",
+                "_roden_sol_sc": "3 años (S.C. Code § 15-3-530)",
+                "_roden_translation_of": "/motorcycle-accident-lawyers/columbia-sc/"
+            }
+        },
+        "/es/motorcycle-accident-lawyers/darien-ga/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Abogados de Accidentes de Motocicleta en Darien, GA",
+            "meta": {
+                "_roden_accident_phrase": "un accidente de motocicleta",
+                "_roden_author_attorney": "Joshua Dorminy",
+                "_roden_faqs": [
+                    {
+                        "question": "¿Cuánto tiempo tengo para demandar por un accidente de motocicleta en Darien?",
+                        "answer": "En Georgia el plazo es de 2 años contados desde la fecha del accidente (O.C.G.A. § 9-3-33). Pasado ese tiempo, lo más probable es que pierda el derecho a reclamar cualquier compensación. En los corredores de la I-95 y la US-17 el tiempo corre todavía más en su contra, porque la mayoría de los testigos son viajeros de paso. Llame a nuestra oficina de Darien al (912) 303-5850 para una consulta gratuita."
+                    },
+                    {
+                        "question": "¿Atienden accidentes de motocicleta en Brunswick, St. Simons Island y Jekyll Island?",
+                        "answer": "Sí. Desde la oficina de Darien atendemos a motociclistas lesionados en todo el condado de McIntosh y las Golden Isles: Brunswick, St. Simons Island, Jekyll Island, Waycross y las comunidades costeras vecinas. Los casos del condado se presentan en el Tribunal Superior del condado de McIntosh, en 310 Northway, Darien, dentro del circuito judicial de Brunswick. Llame al (912) 303-5850 y le explicamos en la misma llamada cómo seguir."
+                    },
+                    {
+                        "question": "¿Y si el reporte policial dice que yo tuve parte de la culpa?",
+                        "answer": "Un reporte policial no decide su caso. En Georgia rige la negligencia comparativa modificada (O.C.G.A. § 51-12-33): usted recupera compensación mientras su culpa sea menor al 50%, con el monto reducido según ese porcentaje. Si le asignan 20% de culpa y sus daños son de $100,000, recibiría $80,000. Con 50% o más no recupera nada, y por eso la aseguradora empuja tanto esa versión de los hechos. Nosotros la revisamos con la evidencia del lugar."
+                    },
+                    {
+                        "question": "¿Puedo reclamar si no tengo estatus legal en Estados Unidos?",
+                        "answer": "No preguntamos por su estatus migratorio y no es lo que define su reclamo. Su estatus no le impide reclamar una compensación en Georgia por las lesiones que le causó otro conductor. Toda la consulta es confidencial, gratuita y en español, y usted decide si quiere seguir adelante después de escuchar sus opciones."
+                    },
+                    {
+                        "question": "¿Cuánto cuesta un abogado de accidentes de motocicleta en Darien?",
+                        "answer": "No paga nada por adelantado. Trabajamos por honorarios de contingencia: cobramos un porcentaje de lo que recuperemos y, si no ganamos, usted no paga honorarios. No hay cobros por consulta ni por hora. Roden Law ha recuperado más de $300 millones para clientes lesionados en Georgia y Carolina del Sur. Llame al (912) 303-5850 para una revisión gratuita de su caso."
+                    }
+                ],
+                "_roden_jurisdiction": "GA",
+                "_roden_last_reviewed": "2026-08-01",
+                "_roden_locale": "es",
+                "_roden_meta_description": "Abogados de accidentes de motocicleta en Darien, GA y las Golden Isles. Consulta gratis en español, sin honorarios si no ganamos: (912) 303-5850.",
+                "_roden_pa_office_key": "darien",
+                "_roden_sol_ga": "2 años (O.C.G.A. § 9-3-33)",
+                "_roden_translation_of": "/motorcycle-accident-lawyers/darien-ga/"
+            }
+        },
+        "/es/motorcycle-accident-lawyers/myrtle-beach-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Abogados de Accidentes de Motocicleta en Myrtle Beach, SC",
+            "meta": {
+                "_roden_accident_phrase": "un accidente de motocicleta",
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "¿Cuánto tiempo tengo para presentar un reclamo por un accidente de motocicleta en Myrtle Beach?",
+                        "answer": "En Carolina del Sur el plazo es de 3 años desde la fecha del choque (S.C. Code § 15-3-530), y corre igual si usted vive en otro estado. Conviene llamar mucho antes: en el Grand Strand la mayoría de los testigos son visitantes que se van a los pocos días y después es muy difícil ubicarlos. Llame al (843) 612-1980 para una consulta gratuita."
+                    },
+                    {
+                        "question": "Me accidenté en mi moto durante Bike Week estando de visita. ¿Puedo reclamar igual?",
+                        "answer": "Sí. La ley de Carolina del Sur rige el choque que ocurre en Carolina del Sur, sin importar dónde viva usted, y el plazo de tres años empieza a correr desde la fecha del accidente. No tiene que regresar al estado para que nosotros armemos su caso: manejamos los reclamos de visitantes de principio a fin. Un abogado de Carolina del Sur, y no el de su ciudad, es quien mejor puede llevarlo. Llame al (843) 612-1980."
+                    },
+                    {
+                        "question": "¿Pierdo mi reclamo si no llevaba casco?",
+                        "answer": "No. En Carolina del Sur el casco solo es obligatorio para menores de 21 años (S.C. Code § 56-5-3660), y ninguna ley le quita el derecho a reclamar por no usarlo si usted tiene 21 o más. La aseguradora igual va a intentar culparlo por eso; nuestro trabajo es cortar ese argumento y mantener el foco en el conductor que causó el choque."
+                    },
+                    {
+                        "question": "El conductor que me chocó solo tenía el seguro mínimo. ¿Qué puedo hacer?",
+                        "answer": "Las lesiones de un motociclista casi siempre superan el mínimo de 25/50/25 que exige Carolina del Sur. La ley del estado permite acumular (stacking) su propia cobertura contra conductores sin seguro o con seguro insuficiente (UM/UIM) entre varias pólizas, y con frecuencia esa es la mayor fuente de recuperación. Nosotros identificamos y reclamamos todas las pólizas disponibles, no solo la del otro conductor."
+                    },
+                    {
+                        "question": "¿Cuánto cuesta contratar a Roden Law?",
+                        "answer": "Nada por adelantado. Llevamos los casos de motocicleta por honorarios de contingencia: cobramos un porcentaje de lo que recuperemos y, si no ganamos, usted no paga honorarios. La consulta es gratuita, confidencial y en español, y no le preguntamos por su estatus migratorio. Roden Law ha recuperado más de $300 millones para clientes lesionados en Georgia y Carolina del Sur. Llame al (843) 612-1980."
+                    }
+                ],
+                "_roden_jurisdiction": "south-carolina",
+                "_roden_last_reviewed": "2026-08-01",
+                "_roden_locale": "es",
+                "_roden_meta_description": "Abogados de accidentes de motocicleta en Myrtle Beach y el Grand Strand. Consulta gratis en español, sin honorarios si no ganamos: (843) 612-1980.",
+                "_roden_pa_office_key": "myrtle-beach",
+                "_roden_sol_sc": "3 años (S.C. Code § 15-3-530)",
+                "_roden_translation_of": "/motorcycle-accident-lawyers/myrtle-beach-sc/"
+            }
+        },
+        "/es/motorcycle-accident-lawyers/north-charleston-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Abogados de Accidentes de Motocicleta en North Charleston, SC",
+            "meta": {
+                "_roden_accident_phrase": "un accidente de motocicleta",
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "¿Cuánto tiempo tengo para presentar un reclamo por un accidente de motocicleta en North Charleston?",
+                        "answer": "En Carolina del Sur el plazo es de 3 años desde la fecha del choque (S.C. Code § 15-3-530). Aun así, conviene llamar mucho antes: en Rivers Avenue y en los patios de carga los videos de seguridad se borran en pocos días y los testigos cambian de trabajo o de ciudad. Llame a nuestra oficina de North Charleston al (843) 612-6561 para una consulta gratuita."
+                    },
+                    {
+                        "question": "¿Pierdo mi reclamo si no llevaba casco?",
+                        "answer": "No. En Carolina del Sur el casco solo es obligatorio para menores de 21 años (S.C. Code § 56-5-3660), y ninguna ley le quita el derecho a reclamar por no usarlo si usted tiene 21 o más. La aseguradora igual va a intentar culparlo por eso; nuestro trabajo es cortar ese argumento y mantener el foco en el conductor que causó el choque."
+                    },
+                    {
+                        "question": "El conductor que me chocó solo tenía el seguro mínimo. ¿Qué puedo hacer?",
+                        "answer": "Las lesiones de un motociclista casi siempre superan el mínimo de 25/50/25 que exige Carolina del Sur. La ley del estado permite acumular (stacking) su propia cobertura contra conductores sin seguro o con seguro insuficiente (UM/UIM) entre varias pólizas, y esa suele ser la mayor fuente de recuperación. Si el vehículo que lo golpeó era comercial o de carga, también puede haber una póliza mucho más alta detrás."
+                    },
+                    {
+                        "question": "¿Cuáles son las vías más peligrosas para motociclistas en North Charleston?",
+                        "answer": "Rivers Avenue (US-52/78) encabeza la lista por su tráfico comercial pesado y sus entradas continuas, seguida por el enlace de la I-26 con la I-526 y las rutas de carga de Palmetto Commerce Parkway. Los giros a la izquierda en las arterias de los tres condados y los camiones que sirven al puerto y a las bodegas son las otras causas que más vemos."
+                    },
+                    {
+                        "question": "¿Cuánto cuesta contratar a Roden Law?",
+                        "answer": "Nada por adelantado. Llevamos los casos de motocicleta por honorarios de contingencia: cobramos un porcentaje de lo que recuperemos y, si no ganamos, usted no paga honorarios. La consulta es gratuita, confidencial y en español, y no le preguntamos por su estatus migratorio. Roden Law ha recuperado más de $300 millones para clientes lesionados en Georgia y Carolina del Sur. Llame al (843) 612-6561."
+                    }
+                ],
+                "_roden_jurisdiction": "south-carolina",
+                "_roden_last_reviewed": "2026-08-01",
+                "_roden_locale": "es",
+                "_roden_meta_description": "Abogados de accidentes de motocicleta en North Charleston, SC. Consulta gratis y en español, sin honorarios si no ganamos: (843) 612-6561.",
+                "_roden_pa_office_key": "north-charleston",
+                "_roden_sol_sc": "3 años (S.C. Code § 15-3-530)",
+                "_roden_translation_of": "/motorcycle-accident-lawyers/north-charleston-sc/"
+            }
+        },
+        "/es/motorcycle-accident-lawyers/savannah-ga/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Abogados de Accidentes de Motocicleta en Savannah, GA",
+            "meta": {
+                "_roden_accident_phrase": "un accidente de motocicleta",
+                "_roden_author_attorney": "Eric Roden",
+                "_roden_faqs": [
+                    {
+                        "question": "¿Cuánto tiempo tengo para demandar por un accidente de motocicleta en Savannah?",
+                        "answer": "En Georgia el plazo es de 2 años contados desde la fecha del accidente (O.C.G.A. § 9-3-33). Si deja pasar ese plazo, lo normal es que pierda para siempre el derecho a reclamar. Dos años parecen mucho, pero las pruebas de un choque de moto desaparecen rápido: la motocicleta se repara, los videos se borran y los testigos olvidan detalles. Llame a nuestra oficina de Savannah al (912) 303-5850 para una consulta gratuita."
+                    },
+                    {
+                        "question": "¿Puedo reclamar si yo también tuve parte de la culpa?",
+                        "answer": "Sí, siempre que su responsabilidad sea menor al 50%. Georgia aplica una regla de negligencia comparativa modificada (O.C.G.A. § 51-12-33): su compensación se reduce según su porcentaje de culpa, así que si le asignan un 20% y sus daños son de $100,000, recibiría $80,000. Con 50% o más, ya no recupera nada. Por eso las aseguradoras intentan echarle la culpa al motociclista desde el primer día, y por eso conviene hablar con un abogado antes de dar cualquier declaración."
+                    },
+                    {
+                        "question": "¿Qué debo hacer después de un accidente de motocicleta en Savannah?",
+                        "answer": "Llame al 911 y acepte la atención médica aunque crea que puede caminar; en moto no hay carrocería que lo proteja y las lesiones serias pueden sentirse horas después. Si puede, tome fotos y video de la motocicleta, del otro vehículo, de la señalización y del pavimento, y pida nombre y teléfono de los testigos. No admita culpa ni dé declaraciones grabadas a la aseguradora del otro conductor. Los heridos graves se atienden en el Memorial Health University Medical Center; pida copia del reporte policial en cuanto pueda."
+                    },
+                    {
+                        "question": "¿Mi estatus migratorio afecta mi reclamo por el accidente?",
+                        "answer": "No le preguntamos por su estatus migratorio y no es lo que decide su reclamo. Lo que importa es que otro conductor causó el accidente y que usted resultó lesionado. Su estatus no le impide reclamar una compensación en Georgia. Lo atendemos en español de principio a fin y la consulta es confidencial y sin compromiso."
+                    },
+                    {
+                        "question": "¿Cuánto cuesta un abogado de accidentes de motocicleta en Savannah?",
+                        "answer": "Nada por adelantado. Roden Law trabaja por honorarios de contingencia: nuestros honorarios salen de un porcentaje de lo que recuperemos para usted y, si no ganamos, usted no paga honorarios. No hay cuotas por consulta ni cobros por hora. Roden Law ha recuperado más de $300 millones para clientes lesionados en Georgia y Carolina del Sur. Llame al (912) 303-5850 para una revisión gratuita de su caso."
+                    }
+                ],
+                "_roden_jurisdiction": "GA",
+                "_roden_last_reviewed": "2026-08-01",
+                "_roden_locale": "es",
+                "_roden_meta_description": "Abogados de accidentes de motocicleta en Savannah, GA. Consulta gratis y en español, sin honorarios si no ganamos. Llame al (912) 303-5850.",
+                "_roden_pa_office_key": "savannah",
+                "_roden_sol_ga": "2 años (O.C.G.A. § 9-3-33)",
+                "_roden_translation_of": "/motorcycle-accident-lawyers/savannah-ga/"
+            }
+        },
+        "/es/pedestrian-accident-lawyers/charleston-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Abogados de Accidentes de Peatones en Charleston, SC",
+            "meta": {
+                "_roden_accident_phrase": "un accidente de peatón",
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "¿Cuánto tiempo tengo para presentar un reclamo por un accidente de peatón en Charleston?",
+                        "answer": "El plazo general en Carolina del Sur es de 3 años desde la fecha de la lesión (S.C. Code § 15-3-530). Las lesiones de peatón suelen ser graves, así que conviene revisar el caso cuanto antes, mientras los videos y los testigos todavía existen."
+                    },
+                    {
+                        "question": "¿El conductor siempre tiene la preferencia sobre el peatón en Carolina del Sur?",
+                        "answer": "No. La ley de Carolina del Sur (S.C. Code §§ 56-5-3110 a 56-5-3230) da al peatón la preferencia en cruces marcados y no marcados, y exige a los conductores un alto grado de cuidado con las personas a pie. Un conductor que no cede el paso normalmente es negligente."
+                    },
+                    {
+                        "question": "¿Puedo recuperar compensación si crucé fuera del paso peatonal?",
+                        "answer": "Con frecuencia sí. Carolina del Sur aplica la regla de negligencia comparativa modificada del 51%: usted recupera mientras no haya tenido más del 50% de la culpa. Cruzar a mitad de cuadra puede reducir el monto, pero rara vez elimina el reclamo, y el conductor pudo haber fallado en mantener la debida vigilancia."
+                    },
+                    {
+                        "question": "¿Qué pasa si el conductor huyó o no tenía seguro?",
+                        "answer": "Los atropellos con fuga y con conductores sin seguro son comunes en Charleston. En esos casos su propia cobertura de motorista sin seguro o con seguro insuficiente (UM/UIM) suele ser la fuente de recuperación, y Carolina del Sur permite apilar esa cobertura. Roden Law identifica todas las pólizas que puedan aplicar."
+                    },
+                    {
+                        "question": "¿Cuánto cuesta un abogado de accidentes de peatones en Charleston?",
+                        "answer": "Nada por adelantado. Roden Law maneja estos casos con honorarios de contingencia: no paga honorarios ni costos iniciales y solo cobramos si ganamos. Si no hay recuperación, usted no nos debe nada. La consulta es gratuita, en español, y su estatus migratorio no le impide reclamar una compensación."
+                    }
+                ],
+                "_roden_jurisdiction": "south-carolina",
+                "_roden_last_reviewed": "2026-08-01",
+                "_roden_locale": "es",
+                "_roden_meta_description": "Abogados de accidentes de peatones en Charleston, SC. Hablamos español. Oficina en King Street. Consulta gratis: (843) 790-8999. Sin costo inicial.",
+                "_roden_pa_office_key": "charleston",
+                "_roden_sol_sc": "3 años (S.C. Code § 15-3-530)",
+                "_roden_translation_of": "/pedestrian-accident-lawyers/charleston-sc/"
+            }
+        },
+        "/es/pedestrian-accident-lawyers/columbia-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Abogados de Accidentes de Peatones en Columbia, SC",
+            "meta": {
+                "_roden_accident_phrase": "un accidente de peatón",
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "¿Cuánto tiempo tengo para presentar un reclamo por un accidente de peatón en Columbia?",
+                        "answer": "El plazo general en Carolina del Sur es de 3 años desde la fecha de la lesión (S.C. Code § 15-3-530). Como las lesiones de peatón suelen ser graves y la evidencia dura poco, lo mejor es que revisemos su caso lo antes posible."
+                    },
+                    {
+                        "question": "¿El conductor siempre tiene la preferencia sobre el peatón en Carolina del Sur?",
+                        "answer": "No. La ley de Carolina del Sur (S.C. Code §§ 56-5-3110 a 56-5-3230) da al peatón la preferencia en cruces marcados y no marcados, y exige a los conductores un alto grado de cuidado con las personas a pie. No ceder el paso en un cruce es, por lo general, negligencia."
+                    },
+                    {
+                        "question": "¿Son frecuentes los atropellos cerca de USC y Five Points?",
+                        "answer": "Sí. El campus de USC y el distrito de Five Points tienen el tráfico peatonal más denso de los Midlands, con estudiantes y multitudes nocturnas cruzando calles concurridas. Los conductores que giran o van distraídos y atropellan a peatones cerca de los cruces son una causa constante de estos choques."
+                    },
+                    {
+                        "question": "¿Qué pasa si el conductor huyó o no tenía seguro?",
+                        "answer": "Los atropellos con fuga y con conductores sin seguro son comunes. En esos casos su propia cobertura de motorista sin seguro o con seguro insuficiente (UM/UIM) suele ser la fuente de recuperación, y Carolina del Sur permite apilarla. Roden Law identifica todas las pólizas que puedan aplicar."
+                    },
+                    {
+                        "question": "¿Cuánto cuesta un abogado de accidentes de peatones en Columbia?",
+                        "answer": "Nada por adelantado. Roden Law maneja estos casos con honorarios de contingencia: no paga costos iniciales y solo cobramos si ganamos; si no hay recuperación, usted no nos debe nada. La consulta es gratuita y en español, y su estatus migratorio no le impide reclamar una compensación."
+                    }
+                ],
+                "_roden_jurisdiction": "south-carolina",
+                "_roden_last_reviewed": "2026-08-01",
+                "_roden_locale": "es",
+                "_roden_meta_description": "Abogados de accidentes de peatones en Columbia, SC. Atropellos en USC, Five Points y Gervais. Hablamos español. Consulta gratis: (803) 219-2816.",
+                "_roden_pa_office_key": "columbia",
+                "_roden_sol_sc": "3 años (S.C. Code § 15-3-530)",
+                "_roden_translation_of": "/pedestrian-accident-lawyers/columbia-sc/"
+            }
+        },
+        "/es/pedestrian-accident-lawyers/darien-ga/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Abogados de Accidentes de Peatones en Darien, GA",
+            "meta": {
+                "_roden_accident_phrase": "un accidente de peatón",
+                "_roden_author_attorney": "Joshua Dorminy",
+                "_roden_faqs": [
+                    {
+                        "question": "¿Cuánto tiempo tengo para presentar un reclamo por un accidente de peatón en Darien?",
+                        "answer": "En Georgia el plazo general es de 2 años desde la fecha del atropello (O.C.G.A. § 9-3-33). Si hay una entidad del gobierno involucrada, los plazos de notificación son más cortos. Mientras más pronto llame, más fácil es preservar los videos y ubicar a los testigos."
+                    },
+                    {
+                        "question": "¿Puedo reclamar si crucé el US-17 fuera de un cruce peatonal?",
+                        "answer": "Muchas veces sí. Georgia aplica negligencia comparativa modificada (O.C.G.A. § 51-12-33): usted recupera compensación siempre que haya sido menos del 50% culpable, aunque el monto baja según su porcentaje de culpa. El conductor sigue obligado a manejar con la debida atención."
+                    },
+                    {
+                        "question": "¿Dónde se maneja mi caso si me atropellaron en Darien?",
+                        "answer": "Los casos de nuestros clientes de Darien se presentan generalmente ante el McIntosh County Superior Court. Nuestros abogados manejan reclamos en los condados de McIntosh, Glynn, Wayne y Long, y atienden también a Brunswick, St. Simons Island, Jekyll Island y Waycross."
+                    },
+                    {
+                        "question": "¿Atienden en español y preguntan por mi estatus migratorio?",
+                        "answer": "Sí atendemos en español, y su estatus migratorio no le impide reclamar una compensación por un accidente de peatón en Georgia. Su consulta es confidencial de principio a fin. Nuestra oficina está en 1108 North Way, Darien, GA 31305; llame al (912) 303-5850."
+                    },
+                    {
+                        "question": "¿Cuánto cuesta un abogado de accidentes de peatones en Darien?",
+                        "answer": "Nada por adelantado. Trabajamos con honorarios de contingencia: solo cobramos un porcentaje si recuperamos dinero para usted, y si no hay recuperación, no hay honorarios ni costos. La consulta inicial es gratuita y en español."
+                    }
+                ],
+                "_roden_jurisdiction": "GA",
+                "_roden_last_reviewed": "2026-08-01",
+                "_roden_locale": "es",
+                "_roden_meta_description": "Abogados de accidentes de peatones en Darien, GA y el condado de McIntosh. Hablamos español. Consulta gratis: (912) 303-5850. Sin honorarios si no ganamos.",
+                "_roden_pa_office_key": "darien",
+                "_roden_sol_ga": "2 años (O.C.G.A. § 9-3-33)",
+                "_roden_translation_of": "/pedestrian-accident-lawyers/darien-ga/"
+            }
+        },
+        "/es/pedestrian-accident-lawyers/myrtle-beach-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Abogados de Accidentes de Peatones en Myrtle Beach, SC",
+            "meta": {
+                "_roden_accident_phrase": "un accidente de peatón",
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "¿Cuánto tiempo tengo para presentar un reclamo por un accidente de peatón en Myrtle Beach?",
+                        "answer": "El plazo general en Carolina del Sur es de 3 años desde la fecha de la lesión (S.C. Code § 15-3-530). Conviene no esperar: en el Grand Strand los testigos suelen ser visitantes de paso y los videos de hoteles y comercios se borran en pocos días."
+                    },
+                    {
+                        "question": "¿Por qué hay tantos atropellos en Myrtle Beach?",
+                        "answer": "El Grand Strand recibe un tráfico peatonal turístico enorme, sobre todo en Ocean Boulevard y el US-17. Visitantes que no conocen las calles, cruces de noche y fines de semana de eventos con multitudes aumentan el riesgo de que un conductor atropelle a un peatón."
+                    },
+                    {
+                        "question": "¿Puedo recuperar compensación si crucé fuera del paso peatonal?",
+                        "answer": "Con frecuencia sí. Carolina del Sur aplica la regla del 51% de negligencia comparativa modificada: usted recupera mientras no haya tenido más del 50% de la culpa. Cruzar a mitad de cuadra puede reducir el monto, pero rara vez elimina el reclamo, y el conductor pudo no haber mantenido la debida vigilancia."
+                    },
+                    {
+                        "question": "¿Dónde se maneja un caso de atropello en Myrtle Beach?",
+                        "answer": "Los casos de lesiones personales ocurridos en Myrtle Beach y casi todo el Grand Strand se manejan en el condado de Horry, con tribunal en Conway; los del vecino condado de Georgetown se ven allá. El plazo general para demandar es de 3 años desde la fecha de la lesión (S.C. Code § 15-3-530)."
+                    },
+                    {
+                        "question": "¿Cuánto cuesta un abogado de accidentes de peatones en Myrtle Beach?",
+                        "answer": "Nada por adelantado. Trabajamos con honorarios de contingencia: no paga honorarios ni costos iniciales y solo cobramos si ganamos; si no hay recuperación, no nos debe nada. La consulta es gratuita y en español, y su estatus migratorio no le impide reclamar una compensación."
+                    }
+                ],
+                "_roden_jurisdiction": "south-carolina",
+                "_roden_last_reviewed": "2026-08-01",
+                "_roden_locale": "es",
+                "_roden_meta_description": "Abogados de accidentes de peatones en Myrtle Beach y el Grand Strand. Atropellos en Ocean Blvd y US-17. Hablamos español. Gratis: (843) 612-1980.",
+                "_roden_pa_office_key": "myrtle-beach",
+                "_roden_sol_sc": "3 años (S.C. Code § 15-3-530)",
+                "_roden_translation_of": "/pedestrian-accident-lawyers/myrtle-beach-sc/"
+            }
+        },
+        "/es/pedestrian-accident-lawyers/north-charleston-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Abogados de Accidentes de Peatones en North Charleston, SC",
+            "meta": {
+                "_roden_accident_phrase": "un accidente de peatón",
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "¿Cuánto tiempo tengo para presentar un reclamo por un accidente de peatón en North Charleston?",
+                        "answer": "El plazo general en Carolina del Sur es de 3 años desde la fecha de la lesión (S.C. Code § 15-3-530). Las lesiones de peatón suelen ser graves y la evidencia desaparece rápido, así que conviene que revisemos su caso lo antes posible."
+                    },
+                    {
+                        "question": "¿Por qué hay tantos atropellos en Rivers Avenue?",
+                        "answer": "Rivers Avenue (US-52/US-78) es un corredor comercial ancho, rápido y de varios carriles, con tráfico pesado y cruces constantes hacia las paradas de autobús. Por eso figura entre las vías más peligrosas de la región para las personas a pie, y las altas velocidades hacen que los atropellos sean especialmente graves."
+                    },
+                    {
+                        "question": "¿Puedo recuperar compensación si crucé fuera del paso peatonal?",
+                        "answer": "Con frecuencia sí. Carolina del Sur aplica la regla del 51% de negligencia comparativa modificada: usted recupera mientras no haya tenido más del 50% de la culpa. Cruzar a mitad de cuadra puede reducir el monto, pero rara vez elimina el reclamo."
+                    },
+                    {
+                        "question": "¿Qué pasa si el conductor huyó o no tenía seguro?",
+                        "answer": "Los atropellos con fuga y con conductores sin seguro son comunes en las avenidas de North Charleston. En esos casos su propia cobertura de motorista sin seguro o con seguro insuficiente (UM/UIM) suele ser la fuente de recuperación, y Carolina del Sur permite apilar esa cobertura."
+                    },
+                    {
+                        "question": "¿Cuánto cuesta un abogado de accidentes de peatones en North Charleston?",
+                        "answer": "Nada por adelantado. Trabajamos con honorarios de contingencia: no paga costos iniciales y solo cobramos si ganamos; si no hay recuperación, no nos debe nada. La consulta es gratuita y en español, y su estatus migratorio no le impide reclamar una compensación."
+                    }
+                ],
+                "_roden_jurisdiction": "south-carolina",
+                "_roden_last_reviewed": "2026-08-01",
+                "_roden_locale": "es",
+                "_roden_meta_description": "Abogados de accidentes de peatones en North Charleston, SC. Atropellos en Rivers Avenue. Hablamos español. Consulta gratis: (843) 612-6561.",
+                "_roden_pa_office_key": "north-charleston",
+                "_roden_sol_sc": "3 años (S.C. Code § 15-3-530)",
+                "_roden_translation_of": "/pedestrian-accident-lawyers/north-charleston-sc/"
+            }
+        },
+        "/es/pedestrian-accident-lawyers/savannah-ga/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Abogados de Accidentes de Peatones en Savannah, GA",
+            "meta": {
+                "_roden_accident_phrase": "un accidente de peatón",
+                "_roden_author_attorney": "Eric Roden",
+                "_roden_faqs": [
+                    {
+                        "question": "¿Cuánto tiempo tengo para presentar un reclamo por un accidente de peatón en Savannah?",
+                        "answer": "En Georgia el plazo general es de 2 años desde la fecha del atropello (O.C.G.A. § 9-3-33). Si hay una entidad del gobierno involucrada, los plazos de notificación son aún más cortos. Llame cuanto antes: los videos de las cámaras se borran mucho antes de que venza ese plazo."
+                    },
+                    {
+                        "question": "¿Puedo reclamar si iba cruzando fuera del paso peatonal?",
+                        "answer": "Muchas veces sí. Georgia aplica negligencia comparativa modificada (O.C.G.A. § 51-12-33): usted puede recuperar compensación siempre que haya sido menos del 50% culpable, aunque el monto se reduce según su porcentaje de culpa. El conductor también tenía el deber de mantener la debida atención."
+                    },
+                    {
+                        "question": "¿Dónde ocurren más atropellos en Savannah?",
+                        "answer": "Abercorn Street (SR 204), DeRenne Avenue y la cuadrícula del centro histórico generan colisiones constantes de peatones e intersección, sobre todo donde el tráfico turístico se cruza con conductores que giran. Las víctimas con lesiones graves son trasladadas al Memorial Health University Medical Center, en Waters Avenue."
+                    },
+                    {
+                        "question": "¿Atienden en español y preguntan por mi estatus migratorio?",
+                        "answer": "Sí atendemos en español, de la consulta gratuita al cierre del caso. Su estatus migratorio no le impide reclamar una compensación por un accidente de peatón en Georgia, y todo lo que nos cuente es confidencial. Llame al (912) 303-5850."
+                    },
+                    {
+                        "question": "¿Cuánto cuesta un abogado de accidentes de peatones en Savannah?",
+                        "answer": "Nada por adelantado. Trabajamos con honorarios de contingencia: solo cobramos un porcentaje si recuperamos dinero para usted, y si no ganamos, usted no nos debe honorarios. La consulta inicial es gratuita, en español y sin compromiso."
+                    }
+                ],
+                "_roden_jurisdiction": "GA",
+                "_roden_last_reviewed": "2026-08-01",
+                "_roden_locale": "es",
+                "_roden_meta_description": "Abogados de accidentes de peatones en Savannah, GA. Hablamos español. Consulta gratis: (912) 303-5850. Sin honorarios a menos que ganemos.",
+                "_roden_pa_office_key": "savannah",
+                "_roden_sol_ga": "2 años (O.C.G.A. § 9-3-33)",
+                "_roden_translation_of": "/pedestrian-accident-lawyers/savannah-ga/"
             }
         },
         "/es/practice-areas/atv-side-by-side-accident-lawyers/": {
@@ -5897,6 +6592,55 @@
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33",
                 "_roden_sol_sc": "S.C. Code § 15-3-530",
                 "_roden_translation_of": "/practice-areas/pedestrian-accident-lawyers/"
+            }
+        },
+        "/es/practice-areas/personal-injury-lawyers/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Abogados de Lesiones Personales",
+            "meta": {
+                "_roden_author_attorney": "Eric Roden",
+                "_roden_faqs": [
+                    {
+                        "question": "¿Qué es un caso de lesiones personales?",
+                        "answer": "Es cualquier reclamo civil en el que usted pide compensación por el daño físico, emocional o económico que le causó la negligencia, la imprudencia o la conducta intencional de otra persona o empresa. Las categorías más comunes son los choques de vehículos, las caídas en propiedad ajena, la negligencia médica, los productos defectuosos y la muerte por negligencia. A usted le corresponde probar que la otra parte causó el daño y cuánto vale ese daño."
+                    },
+                    {
+                        "question": "¿Cuánto tiempo tengo para presentar un reclamo en Georgia o Carolina del Sur?",
+                        "answer": "En Georgia, el plazo general es de 2 años desde la fecha de la lesión (O.C.G.A. § 9-3-33). En Carolina del Sur es de 3 años (S.C. Code § 15-3-530). Los casos de negligencia médica siguen reglas parecidas pero distintas, con plazos máximos de 5 años en Georgia (O.C.G.A. § 9-3-71) y 6 años en Carolina del Sur (S.C. Code § 15-3-545). Los reclamos contra entidades del gobierno exigen un aviso previo mucho más corto. Si deja vencer el plazo que le aplica, pierde el derecho a reclamar para siempre."
+                    },
+                    {
+                        "question": "¿Qué pasa si yo tuve parte de la culpa?",
+                        "answer": "Todavía puede reclamar. Los dos estados usan negligencia comparativa modificada: en Georgia recupera si tuvo menos del 50% de la culpa (O.C.G.A. § 51-12-33) y en Carolina del Sur si tuvo menos del 51%, con la compensación reducida según su porcentaje. Por ejemplo, en un reclamo de $100,000 con un 30% de culpa suya, la recuperación sería de $70,000. Al llegar al 50% en Georgia o al 51% en Carolina del Sur, la ley cierra la puerta por completo. Por eso nunca acepte sin pelear la versión de culpa que le da la aseguradora."
+                    },
+                    {
+                        "question": "¿Cuánto vale mi caso de lesiones personales?",
+                        "answer": "El valor depende de la gravedad de sus lesiones, del total de gastos médicos presentes y futuros, de los salarios y la capacidad de trabajo que perdió, de los daños a su propiedad, del impacto en su calidad de vida, de la cobertura de seguro disponible y de la fuerza de la evidencia sobre quién tuvo la culpa. Roden Law ha obtenido acuerdos y veredictos que van desde decenas de miles hasta millones de dólares. La evaluación de su caso es gratuita y ningún abogado serio le garantiza una cifra de antemano."
+                    },
+                    {
+                        "question": "¿Cuánto cuesta contratar a un abogado de lesiones personales?",
+                        "answer": "Nada por adelantado. Trabajamos con honorarios de contingencia: nuestro pago es un porcentaje de lo que recuperemos por acuerdo o veredicto, y no cobramos honorarios si no ganamos su caso. Los gastos del caso — presentación, deposiciones, peritos — los adelanta la firma y se reembolsan de la recuperación, también solo si ganamos. Contratar abogado no le representa ningún riesgo económico. La consulta es gratuita y en español, y no preguntamos por su estatus migratorio."
+                    },
+                    {
+                        "question": "¿Qué tipo de compensación puedo recuperar?",
+                        "answer": "Puede reclamar tres categorías de daños. Los económicos: gastos médicos pasados y futuros, salarios perdidos, pérdida de capacidad de trabajo y daños a su propiedad, sin límite legal en ninguno de los dos estados. Los no económicos: dolor y sufrimiento, angustia mental, discapacidad, desfiguración y pérdida del disfrute de la vida, tampoco limitados en los casos comunes de lesiones personales (Carolina del Sur solo los limita en casos de negligencia médica). Y los daños punitivos por conducta gravemente negligente o intencional, limitados por O.C.G.A. § 51-12-5.1 en Georgia y S.C. Code § 15-32-530 en Carolina del Sur, con excepciones importantes para productos defectuosos y casos de intoxicación."
+                    },
+                    {
+                        "question": "¿Debo hablar con la aseguradora de la otra parte?",
+                        "answer": "No sin un abogado. Los ajustadores están entrenados para sacarle frases que reduzcan o destruyan su reclamo: le pedirán una declaración grabada, harán preguntas dirigidas y después usarán en su contra lo que usted diga. Puede negarse con educación y remitirlos a su abogado, que se encarga de toda la comunicación. La aseguradora no está de su lado; su interés económico es exactamente el contrario al suyo."
+                    },
+                    {
+                        "question": "¿Qué debo hacer inmediatamente después de lesionarme?",
+                        "answer": "Busque atención médica aunque se sienta bien: las conmociones cerebrales, las lesiones de tejidos blandos y las hemorragias internas no siempre se notan el primer día. Tome fotos y video del lugar, pida los datos de los testigos y haga el reporte policial o de incidente. No admita culpa ni pida disculpas. Guarde la evidencia física (ropa, calzado, equipo dañado) y hable con un abogado antes de dar cualquier declaración grabada o firmar un documento de la aseguradora."
+                    }
+                ],
+                "_roden_jurisdiction": "both",
+                "_roden_last_reviewed": "2026-08-01",
+                "_roden_locale": "es",
+                "_roden_meta_description": "Abogados de lesiones personales en Georgia y Carolina del Sur. Más de $300 millones recuperados. Atendemos en español. Consulta gratis: 1-844-RESULTS.",
+                "_roden_sol_ga": "O.C.G.A. § 9-3-33",
+                "_roden_sol_sc": "S.C. Code § 15-3-530",
+                "_roden_translation_of": "/practice-areas/personal-injury-lawyers/"
             }
         },
         "/es/practice-areas/premises-liability-lawyers/": {
@@ -12745,7 +13489,8 @@
                 ],
                 "_roden_jurisdiction": "south-carolina",
                 "_roden_pa_office_key": "charleston",
-                "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)"
+                "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)",
+                "_roden_translation_es": "/es/motorcycle-accident-lawyers/charleston-sc/"
             }
         },
         "/motorcycle-accident-lawyers/columbia-sc/": {
@@ -12782,7 +13527,8 @@
                 ],
                 "_roden_jurisdiction": "south-carolina",
                 "_roden_pa_office_key": "columbia",
-                "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)"
+                "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)",
+                "_roden_translation_es": "/es/motorcycle-accident-lawyers/columbia-sc/"
             }
         },
         "/motorcycle-accident-lawyers/darien-ga/": {
@@ -12815,7 +13561,8 @@
                 ],
                 "_roden_jurisdiction": "GA",
                 "_roden_pa_office_key": "darien",
-                "_roden_sol_ga": "2 years (O.C.G.A. § 9-3-33)"
+                "_roden_sol_ga": "2 years (O.C.G.A. § 9-3-33)",
+                "_roden_translation_es": "/es/motorcycle-accident-lawyers/darien-ga/"
             }
         },
         "/motorcycle-accident-lawyers/dorchester-road-motorcycle/": {
@@ -13061,7 +13808,8 @@
                 ],
                 "_roden_jurisdiction": "south-carolina",
                 "_roden_pa_office_key": "myrtle-beach",
-                "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)"
+                "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)",
+                "_roden_translation_es": "/es/motorcycle-accident-lawyers/myrtle-beach-sc/"
             }
         },
         "/motorcycle-accident-lawyers/north-charleston-sc/": {
@@ -13098,7 +13846,8 @@
                 ],
                 "_roden_jurisdiction": "south-carolina",
                 "_roden_pa_office_key": "north-charleston",
-                "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)"
+                "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)",
+                "_roden_translation_es": "/es/motorcycle-accident-lawyers/north-charleston-sc/"
             }
         },
         "/motorcycle-accident-lawyers/rear-end-motorcycle-accident/": {
@@ -13164,7 +13913,8 @@
                 ],
                 "_roden_jurisdiction": "GA",
                 "_roden_pa_office_key": "savannah",
-                "_roden_sol_ga": "2 years (O.C.G.A. § 9-3-33)"
+                "_roden_sol_ga": "2 years (O.C.G.A. § 9-3-33)",
+                "_roden_translation_es": "/es/motorcycle-accident-lawyers/savannah-ga/"
             }
         },
         "/motorcycle-accident-lawyers/single-vehicle-motorcycle-crash/": {
@@ -13745,7 +14495,8 @@
                 ],
                 "_roden_jurisdiction": "south-carolina",
                 "_roden_pa_office_key": "charleston",
-                "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)"
+                "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)",
+                "_roden_translation_es": "/es/pedestrian-accident-lawyers/charleston-sc/"
             }
         },
         "/pedestrian-accident-lawyers/columbia-sc/": {
@@ -13782,7 +14533,8 @@
                 ],
                 "_roden_jurisdiction": "south-carolina",
                 "_roden_pa_office_key": "columbia",
-                "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)"
+                "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)",
+                "_roden_translation_es": "/es/pedestrian-accident-lawyers/columbia-sc/"
             }
         },
         "/pedestrian-accident-lawyers/crosswalk-accident/": {
@@ -13848,7 +14600,8 @@
                 ],
                 "_roden_jurisdiction": "GA",
                 "_roden_pa_office_key": "darien",
-                "_roden_sol_ga": "2 years (O.C.G.A. § 9-3-33)"
+                "_roden_sol_ga": "2 years (O.C.G.A. § 9-3-33)",
+                "_roden_translation_es": "/es/pedestrian-accident-lawyers/darien-ga/"
             }
         },
         "/pedestrian-accident-lawyers/distracted-driver-pedestrian-accident/": {
@@ -14050,7 +14803,8 @@
                 ],
                 "_roden_jurisdiction": "south-carolina",
                 "_roden_pa_office_key": "myrtle-beach",
-                "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)"
+                "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)",
+                "_roden_translation_es": "/es/pedestrian-accident-lawyers/myrtle-beach-sc/"
             }
         },
         "/pedestrian-accident-lawyers/north-charleston-sc/": {
@@ -14087,7 +14841,8 @@
                 ],
                 "_roden_jurisdiction": "south-carolina",
                 "_roden_pa_office_key": "north-charleston",
-                "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)"
+                "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)",
+                "_roden_translation_es": "/es/pedestrian-accident-lawyers/north-charleston-sc/"
             }
         },
         "/pedestrian-accident-lawyers/rivers-avenue-pedestrian/": {
@@ -14131,7 +14886,8 @@
                 ],
                 "_roden_jurisdiction": "GA",
                 "_roden_pa_office_key": "savannah",
-                "_roden_sol_ga": "2 years (O.C.G.A. § 9-3-33)"
+                "_roden_sol_ga": "2 years (O.C.G.A. § 9-3-33)",
+                "_roden_translation_es": "/es/pedestrian-accident-lawyers/savannah-ga/"
             }
         },
         "/pedestrian-accident-lawyers/school-zone-pedestrian-accident/": {
@@ -15124,7 +15880,8 @@
                 ],
                 "_roden_jurisdiction": "both",
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
+                "_roden_sol_sc": "S.C. Code § 15-3-530",
+                "_roden_translation_es": "/es/practice-areas/personal-injury-lawyers/"
             }
         },
         "/practice-areas/premises-liability-lawyers/": {
