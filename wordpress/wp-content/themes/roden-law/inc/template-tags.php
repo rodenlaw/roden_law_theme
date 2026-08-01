@@ -799,12 +799,19 @@ function roden_practice_areas_grid( $columns = 4 ) {
         __( 'Pedestrian Accident Lawyers', 'roden-law' ) => 'pedestrian-accident-lawyers',
     );
 
+    // ES pillars live under 'es-'-prefixed slugs (inc/i18n.php §4), so look up
+    // the prefixed slugs on a Spanish request and build Spanish URLs below.
+    $lang  = function_exists( 'roden_current_lang' ) ? roden_current_lang() : 'en';
+    $is_es = ( 'es' === $lang );
+
     // Try to load from CPT posts.
     $areas = get_posts( array(
         'post_type'      => 'practice_area',
         'posts_per_page' => -1,
         'post_parent'    => 0,
-        'post_name__in'  => $featured_slugs,
+        'post_name__in'  => $is_es
+            ? array_map( function ( $s ) { return 'es-' . $s; }, $featured_slugs )
+            : $featured_slugs,
         'orderby'        => 'post_name__in',
         'order'          => 'ASC',
     ) );
@@ -825,15 +832,19 @@ function roden_practice_areas_grid( $columns = 4 ) {
     } else {
         // Fallback if no CPT posts exist yet.
         foreach ( $featured as $name => $slug ) {
-            $url = home_url( '/practice-areas/' . $slug . '/' );
+            $url = function_exists( 'roden_lang_home_url' )
+                ? roden_lang_home_url( $lang, '/practice-areas/' . $slug . '/' )
+                : home_url( '/practice-areas/' . $slug . '/' );
             echo '<a href="' . esc_url( $url ) . '" class="practice-area-card">';
             echo '<span class="pa-name">' . esc_html( $name ) . '</span>';
             echo '</a>';
         }
     }
 
-    // "Other" catch-all link.
-    $archive_url = home_url( '/practice-areas/' );
+    // "Other" catch-all link — the hub for this locale.
+    $archive_url = function_exists( 'roden_lang_home_url' )
+        ? roden_lang_home_url( $lang, '/practice-areas/' )
+        : home_url( '/practice-areas/' );
     echo '<a href="' . esc_url( $archive_url ) . '" class="practice-area-card">';
     echo '<span class="pa-name">' . esc_html__( 'Other Personal Injury Types', 'roden-law' ) . '</span>';
     echo '</a>';
@@ -890,23 +901,37 @@ function roden_intersection_grid( $office_key, $columns = 3 ) {
         'e-bike-accident-lawyers'            => __( 'E-Bike Accident Lawyers', 'roden-law' ),
     );
 
+    // Locale of the request. ES pillars are stored under 'es-'-prefixed slugs
+    // (inc/i18n.php §4), so every slug lookup and every URL below has to be
+    // built for the right language — this grid is the location template's main
+    // practice-area module, and hardcoding home_url() had it linking all 22
+    // English pillars from every /es/ office page.
+    $lang      = function_exists( 'roden_current_lang' ) ? roden_current_lang() : 'en';
+    $is_es     = ( 'es' === $lang );
+    $slug_for  = function ( $slug ) use ( $is_es ) {
+        return $is_es ? 'es-' . $slug : $slug;
+    };
+
     // Try to load pillar posts from the DB for titles + thumbnails.
     $pillar_posts = get_posts( array(
         'post_type'      => 'practice_area',
         'posts_per_page' => -1,
         'post_parent'    => 0,
-        'post_name__in'  => array_keys( $pa_labels ),
+        'post_name__in'  => array_map( $slug_for, array_keys( $pa_labels ) ),
         'orderby'        => 'menu_order',
         'order'          => 'ASC',
     ) );
 
-    // Index by slug for lookup.
+    // Index by public slug (the 'es-' prefix is internal only) for lookup.
     $pillar_map = array();
     foreach ( $pillar_posts as $p ) {
-        $pillar_map[ $p->post_name ] = $p;
+        $key = function_exists( 'roden_strip_es_slug' ) ? roden_strip_es_slug( $p->post_name ) : $p->post_name;
+        $pillar_map[ $key ] = $p;
     }
 
-    // Check which pillars have intersection pages for this office.
+    // Check which pillars have intersection pages for this office. ES
+    // intersections keep the plain city slug — only pillars are prefixed —
+    // so post_name__in matches in both locales.
     $intersection_check_args = array(
         'post_type'      => 'practice_area',
         'posts_per_page' => -1,
@@ -921,6 +946,11 @@ function roden_intersection_grid( $office_key, $columns = 3 ) {
     foreach ( $intersection_check as $ic ) {
         $parent_slug = get_post_field( 'post_name', $ic->post_parent );
         if ( $parent_slug ) {
+            // Parent of an ES intersection is 'es-car-accident-lawyers'; key the
+            // map on the public slug so it lines up with $pa_labels.
+            if ( function_exists( 'roden_strip_es_slug' ) ) {
+                $parent_slug = roden_strip_es_slug( $parent_slug );
+            }
             $pillars_with_intersection[ $parent_slug ] = true;
         }
     }
@@ -928,11 +958,20 @@ function roden_intersection_grid( $office_key, $columns = 3 ) {
     echo '<div class="practice-areas-grid cols-' . intval( $columns ) . '">';
 
     foreach ( $pa_labels as $slug => $fallback_label ) {
-        // Link to intersection page if it exists, otherwise fall back to pillar page.
+        // Link to intersection page if it exists, otherwise fall back to pillar
+        // page. roden_lang_home_url() prefixes /es/ on Spanish requests; the
+        // permalink filter already maps ES posts to their public URL.
         if ( isset( $pillars_with_intersection[ $slug ] ) ) {
-            $url = home_url( '/' . $slug . '/' . $office_slug . '/' );
+            $url = function_exists( 'roden_lang_home_url' )
+                ? roden_lang_home_url( $lang, '/' . $slug . '/' . $office_slug . '/' )
+                : home_url( '/' . $slug . '/' . $office_slug . '/' );
         } elseif ( isset( $pillar_map[ $slug ] ) ) {
             $url = get_permalink( $pillar_map[ $slug ] );
+        } elseif ( $is_es ) {
+            // No Spanish pillar for this practice area yet. Linking the English
+            // one would put the reader back in the wrong language, so skip the
+            // card entirely — the gap is the signal to build the page.
+            continue;
         } else {
             $url = home_url( '/practice-areas/' . $slug . '/' );
         }
