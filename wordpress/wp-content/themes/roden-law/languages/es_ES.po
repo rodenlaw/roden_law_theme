@@ -3869,3 +3869,19 @@ msgid_plural "%1$s years from the date of injury (%2$s)"
 msgstr[0] "%1$s año desde la fecha de la lesión (%2$s)"
 msgstr[1] "%1$s años desde la fecha de la lesión (%2$s)"
 
+
+#: single.php:127
+msgid "Injured? Talk to a Lawyer."
+msgstr "¿Está lesionado? Hable con un abogado."
+
+#: single.php:128
+msgid "Free consultation. No fees unless we win."
+msgstr "Consulta gratuita. No cobramos honorarios a menos que ganemos."
+
+#: single.php:142
+msgid "Categories"
+msgstr "Categorías"
+
+#: single.php:157
+msgid "Recent Posts"
+msgstr "Entradas Recientes"

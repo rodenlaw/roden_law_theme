@@ -114,17 +114,34 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
 
         <aside class="sidebar sidebar-blog">
             <div class="sidebar-sticky">
+                <?php
+                // This whole sidebar rendered in English on /es/ blog posts and
+                // linked out of the locale. $blog_lang drives both.
+                $blog_lang   = function_exists( 'roden_current_lang' ) ? roden_current_lang() : 'en';
+                $blog_is_es  = ( 'es' === $blog_lang );
+                $blog_mq     = function_exists( 'roden_locale_meta_query' ) ? roden_locale_meta_query( $blog_lang ) : null;
+                $contact_url = function_exists( 'roden_lang_home_url' )
+                    ? roden_lang_home_url( $blog_lang, '/contact/' )
+                    : home_url( '/contact/' );
+                ?>
                 <!-- CTA -->
                 <div class="sidebar-widget sidebar-consult-cta">
-                    <h3>Injured? Talk to a Lawyer.</h3>
-                    <p>Free consultation. No fees unless we win.</p>
+                    <h3><?php esc_html_e( 'Injured? Talk to a Lawyer.', 'roden-law' ); ?></h3>
+                    <p><?php esc_html_e( 'Free consultation. No fees unless we win.', 'roden-law' ); ?></p>
                     <a href="tel:<?php echo esc_attr($firm['phone_e164']); ?>" class="btn btn-primary btn-block">📞 <?php echo esc_html($firm['phone']); ?></a>
-                    <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn btn-outline-light btn-block">Free Case Review</a>
+                    <a href="<?php echo esc_url( $contact_url ); ?>" class="btn btn-outline-light btn-block"><?php esc_html_e( 'Free Case Review', 'roden-law' ); ?></a>
                 </div>
 
+                <?php
+                // Categories: practice_category archives exist in English only —
+                // there is no /es/practice-category/ route — so this widget has no
+                // Spanish counterpart and is omitted rather than linking out of
+                // the locale. It was 24 of the 40 English links on every ES post.
+                if ( ! $blog_is_es ) :
+                ?>
                 <!-- Categories -->
                 <div class="sidebar-widget">
-                    <h2 class="widget-title">Categories</h2>
+                    <h2 class="widget-title"><?php esc_html_e( 'Categories', 'roden-law' ); ?></h2>
                     <ul class="sidebar-links">
                         <?php
                         $cats = get_terms(['taxonomy'=>'practice_category','hide_empty'=>true]);
@@ -134,13 +151,21 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
                         ?>
                     </ul>
                 </div>
+                <?php endif; ?>
 
                 <!-- Recent Posts -->
                 <div class="sidebar-widget">
-                    <h2 class="widget-title">Recent Posts</h2>
+                    <h2 class="widget-title"><?php esc_html_e( 'Recent Posts', 'roden-law' ); ?></h2>
                     <ul class="sidebar-posts">
                         <?php
-                        $recent = get_posts(['posts_per_page'=>5,'exclude'=>[$post_id]]);
+                        // Unfiltered, this listed whichever posts were newest —
+                        // which since the /es/ launch meant Spanish posts showing
+                        // in the ENGLISH sidebar, and vice versa.
+                        $recent_args = ['posts_per_page'=>5,'exclude'=>[$post_id]];
+                        if ( $blog_mq ) {
+                            $recent_args['meta_query'] = $blog_mq;
+                        }
+                        $recent = get_posts($recent_args);
                         foreach ( $recent as $r ) :
                         ?>
                             <li>
@@ -155,9 +180,13 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
 
                 <!-- Practice Areas -->
                 <div class="sidebar-widget">
-                    <h2 class="widget-title">Practice Areas</h2>
+                    <h2 class="widget-title"><?php esc_html_e( 'Practice Areas', 'roden-law' ); ?></h2>
                     <?php
-                    $pas = get_posts(['post_type'=>'practice_area','posts_per_page'=>6,'orderby'=>'menu_order','order'=>'ASC']);
+                    $pa_args = ['post_type'=>'practice_area','posts_per_page'=>6,'post_parent'=>0,'orderby'=>'menu_order','order'=>'ASC'];
+                    if ( $blog_mq ) {
+                        $pa_args['meta_query'] = $blog_mq;
+                    }
+                    $pas = get_posts($pa_args);
                     echo '<ul class="sidebar-links">';
                     foreach ( $pas as $pa ) {
                         echo '<li><a href="' . esc_url(get_permalink($pa)) . '">→ ' . esc_html($pa->post_title) . '</a></li>';
