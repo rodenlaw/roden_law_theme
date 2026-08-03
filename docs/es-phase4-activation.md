@@ -239,6 +239,37 @@ answer for it.
 `_roden_see_also` is deliberately not inherited when seeding: it holds English
 paths, and copying it would put English links back on Spanish pages.
 
+### Content errors the Spanish pass surfaced in the ENGLISH pages
+
+Adapting content is an audit of it. Four problems on
+`/resources/georgia-{car,truck}-accident-settlement-value/`, all still live in
+English:
+
+1. **Nestlehutt is misstated on the car page** — and the pair contradict each
+   other. The car page says the Georgia Supreme Court "struck down the state's
+   noneconomic damages cap"; the truck page correctly calls it the
+   medical-malpractice cap. *Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt*
+   (2010) struck O.C.G.A. § 51-13-1, the $350,000 cap on noneconomic damages in
+   **medical malpractice** actions. Georgia never had a general noneconomic cap
+   covering car accidents. The page's conclusion is right, its stated reason is
+   not. **Fixed on the Spanish side** (`bin/es-fix-nestlehutt-framing.php`);
+   the English is untouched.
+2. **The car page contradicts its own table.** Key Takeaways and the body both
+   say settlements run "roughly $15,000 and $75,000 for moderate injuries",
+   while the severity table puts Moderate at $25,000–$100,000 and Minor at
+   $5,000–$25,000. Two different ranges for the same tier on one page. Not
+   fixable without the firm's call on which is right, so it was carried across
+   verbatim and the Spanish reproduces it.
+3. **The truck table's Moderate row prices the same described injuries** —
+   broken bones, longer treatment, time off work — at low-to-mid six figures,
+   a 5–10× step over the car page's $25,000–$100,000 for the same description.
+   Defensible on carrier limits, but it is the row most likely to read as a
+   promise of value.
+4. **The truck page cites the firm's own statistics in the grammatical form of
+   a third-party attribution** ("According to those publicly reported firm
+   figures…"). Rendered in Spanish as a plain statement so it does not imply an
+   outside source vouching for the firm.
+
 ### Still open
 
 - **Fluent-speaker review** of the whole silo (§3) — still not signed off, and
