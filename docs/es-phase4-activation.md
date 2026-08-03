@@ -188,9 +188,65 @@ Two findings from that pass:
    neutralised. Savannah is the firm's home market. This is an English content
    problem that the Spanish pages inherited and had to work around.
 
+## 9. Phase C — FAQ parity and Georgia resources, 2026-08-03
+
+**FAQ deficit: 253 → 0.** Every paired Spanish page now matches its English
+twin's question count — 635 against 635 across 79 Spanish posts.
+
+| | before | after |
+|---|---:|---:|
+| SC personal-injury FAQ hub | 22 | 94 (of 95) |
+| Practice-area pillars | 5 each | 10 each |
+| Location pages | 4 each | 8 each |
+| Intersections, SC resource guides | short 1–3 | at twin's count |
+
+The hub lands at 94 rather than 95 because it was split across two writers by
+disjoint English ranges and both judged one question already covered by the live
+Spanish set. Parity in substance.
+
+`bin/es-update-faqs.php` is **append-only**: it never rewrites a published
+answer, skips questions already present (matched on a normalised form, so
+accents and punctuation cannot smuggle a duplicate through), and **refuses to
+exceed the English twin's count** — overshooting means a writer invented
+questions. Re-running it is a no-op.
+
+Drafts were gated before touching the database on: cross-state statute leakage,
+untranslated "years", duplicates against what was published, and **diacritic
+density per file** — an earlier batch had come back with every accent stripped,
+which is invisible to every other check and obvious to a Spanish reader.
+
+`/es/workers-compensation-lawyers/darien-ga/` sits at 6 against the English 5 and
+was left alone: its extra questions are immigration status, Spanish-language
+service and shrimp-boat coverage — real questions a Spanish reader has and an
+English one does not. Localisation, not drift.
+
+### Georgia resources — two of fifteen, deliberately
+
+`/es/resources/georgia-{car,truck}-accident-settlement-value/` are live. The
+other thirteen Georgia resources were **not** translated, and the reason should
+survive this decision:
+
+- All nine pre-existing Spanish resource pages rank for **zero** keywords.
+- Thirteen of the fifteen English Georgia resources do not appear in the top-40
+  resource URLs by traffic; the best draws **three visits a month**.
+
+They are hyper-local truck-corridor pages. Translating pages that do not earn in
+English will not make them earn in Spanish. Revisit if the English versions ever
+start ranking. "Cuánto vale mi caso" is the exception — it is the question
+someone asks while deciding whether to call a lawyer, and Georgia had no Spanish
+answer for it.
+
+`_roden_see_also` is deliberately not inherited when seeding: it holds English
+paths, and copying it would put English links back on Spanish pages.
+
 ### Still open
 
-- **Phase C**: the FAQ deficit — 22 ES pillars at 5 questions against 10 in
-  English, and the SC personal-injury FAQ hub at 22 against 95.
-- **Georgia resources in Spanish**: all 9 ES resources are South Carolina.
-- **Fluent-speaker review** of the whole silo (§3) — still not signed off.
+- **Fluent-speaker review** of the whole silo (§3) — still not signed off, and
+  the silo is now considerably larger than when that checklist was written.
+- **Dormant `_roden_sol_sc` on the Georgia bicycle pages** — inert today, flagged
+  independently by three writers. Worth clearing.
+- **The Georgia city pages are boilerplate in English** (§8) — unchanged.
+- **Cross-links inside FAQ answers**: writers correctly declined to invent `/es/`
+  paths for `/resources/south-carolina-um-uim-stacking/` and
+  `/resources/south-carolina-workers-comp-body-part-values/`. Both Spanish
+  equivalents exist and those answers could carry the links.
