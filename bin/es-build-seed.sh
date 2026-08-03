@@ -2,6 +2,7 @@
 # Build a self-contained seeder (payload + logic) for piping to prod over stdin.
 #
 #   bin/es-build-seed.sh drafts.json > /tmp/seed.php
+#   SEEDER=es-update-faqs.php bin/es-build-seed.sh faqs.json > /tmp/faqs.php
 #   ssh <prod> "wp --path=<site> eval-file -" < /tmp/seed.php          # dry run
 #   ssh <prod> "wp --path=<site> eval-file - apply" < /tmp/seed.php    # apply
 #
@@ -24,4 +25,4 @@ fi
 printf "<?php define('RODEN_SEED_JSON', <<<'RODENJSON'\n"
 cat "$1"
 printf "\nRODENJSON\n);\n"
-tail -n +2 "$here/es-seed-pages.php"
+tail -n +2 "$here/${SEEDER:-es-seed-pages.php}"
