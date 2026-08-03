@@ -5,7 +5,7 @@
         "location",
         "resource"
     ],
-    "_count": 708,
+    "_count": 710,
     "posts": {
         "/?post_type=location&p=3808": {
             "type": "location",
@@ -7539,6 +7539,76 @@
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33",
                 "_roden_sol_sc": "S.C. Code § 15-3-530",
                 "_roden_translation_of": "/practice-areas/wrongful-death-lawyers/"
+            }
+        },
+        "/es/resources/georgia-car-accident-settlement-value/": {
+            "type": "resource",
+            "status": "publish",
+            "title": "¿Cuánto Vale un Caso de Accidente de Auto en Georgia?",
+            "meta": {
+                "_roden_author_attorney": "Eric Roden",
+                "_roden_faqs": [
+                    {
+                        "question": "¿Cuál es el acuerdo promedio por accidente de auto en Georgia?",
+                        "answer": "No existe un promedio único confiable, porque los acuerdos por accidentes de auto en Georgia van desde unos miles de dólares por lesiones menores hasta varios millones por lesiones catastróficas. El valor depende de la gravedad de las lesiones, las facturas médicas, los ingresos perdidos, la culpa y los límites de seguro disponibles. Cada caso es único y ningún resultado está garantizado."
+                    },
+                    {
+                        "question": "¿Cuánto tiempo tengo para reclamar por un accidente de auto en Georgia?",
+                        "answer": "En Georgia generalmente tiene 2 años desde la fecha del choque para presentar una demanda por accidente de auto bajo el O.C.G.A. § 9-3-33. Si deja pasar ese plazo, normalmente pierde por completo el derecho a recuperar compensación. Actuar temprano también ayuda a preservar la evidencia y a proteger el valor de su reclamo."
+                    },
+                    {
+                        "question": "¿Mi propia culpa reduce mi acuerdo por accidente de auto en Georgia?",
+                        "answer": "Sí. Georgia usa la negligencia comparativa modificada bajo el O.C.G.A. § 51-12-33, así que solo puede recuperar si su culpa es menor al 50%, y su compensación se reduce según su porcentaje de culpa. Si su caso vale $100,000 y tiene 20% de culpa, recupera $80,000. Con 50% de culpa o más, no recupera nada."
+                    },
+                    {
+                        "question": "¿Hay un tope a los daños por accidente de auto en Georgia?",
+                        "answer": "No. Georgia no impone ningún tope a los daños compensatorios en casos de accidentes de auto — la Corte Suprema de Georgia anuló el tope a los daños no económicos en Atlanta Oculoplastic Surgery v. Nestlehutt (2010). Los daños punitivos generalmente se limitan a $250,000 bajo el O.C.G.A. § 51-12-5.1, pero ese tope no aplica cuando el conductor culpable manejaba bajo los efectos del alcohol o las drogas."
+                    },
+                    {
+                        "question": "¿Qué pasa si el conductor culpable no tiene suficiente seguro en Georgia?",
+                        "answer": "Georgia solo exige $25,000 por persona en cobertura de responsabilidad, un límite que una lesión grave agota rápido. Cuando eso ocurre, su propia cobertura de motorista sin seguro o con seguro insuficiente (UM/UIM) puede cubrir la diferencia. Identificar cada póliza disponible es uno de los pasos más importantes para maximizar lo que un reclamo serio en Georgia realmente puede pagar."
+                    }
+                ],
+                "_roden_jurisdiction": "ga",
+                "_roden_last_reviewed": "2026-08-03",
+                "_roden_locale": "es",
+                "_roden_meta_description": "¿Cuánto vale un accidente de auto en Georgia? De unos miles a varios millones de dólares según lesiones, culpa y seguro. Consulta gratis en español.",
+                "_roden_translation_of": "/resources/georgia-car-accident-settlement-value/"
+            }
+        },
+        "/es/resources/georgia-truck-accident-settlement-value/": {
+            "type": "resource",
+            "status": "publish",
+            "title": "¿Cuánto Vale un Caso de Accidente de Camión en Georgia?",
+            "meta": {
+                "_roden_author_attorney": "Eric Roden",
+                "_roden_faqs": [
+                    {
+                        "question": "¿Cuál es el acuerdo promedio por accidente de camión en Georgia?",
+                        "answer": "No existe un promedio único confiable, porque los acuerdos por accidentes de camión en Georgia van desde decenas de miles de dólares por lesiones menores hasta siete dígitos o más por lesiones catastróficas. El valor depende de la gravedad de la lesión, los costos médicos, los ingresos perdidos, la culpa y el seguro disponible. Cualquier promedio que le citen puede ser engañoso para su caso específico."
+                    },
+                    {
+                        "question": "¿Por qué los casos de accidentes de camión en Georgia valen más que los de auto?",
+                        "answer": "Los casos de camión tienden a valer más porque los camiones comerciales llevan mucho más seguro: un mínimo interestatal de $750,000 exigido por la FMCSA y a menudo $1 millón o más, frente a una póliza de auto pequeña. Los choques con camión también involucran a varios demandados posibles, como la empresa de transporte, el intermediario de carga y quien cargó la mercancía, cada uno con cobertura propia."
+                    },
+                    {
+                        "question": "¿Cuánto tiempo tengo para demandar por un accidente de camión en Georgia?",
+                        "answer": "En Georgia generalmente tiene 2 años desde la fecha de la lesión para presentar una demanda por accidente de camión (O.C.G.A. § 9-3-33). Dejar pasar ese plazo normalmente significa perder el derecho a recuperar, por más fuerte que sea su caso. Actuar temprano también ayuda a preservar evidencia crucial del transporte, como las bitácoras del conductor y los videos de la cámara del tablero."
+                    },
+                    {
+                        "question": "¿Puedo recuperar algo si tuve parte de la culpa en el choque con el camión?",
+                        "answer": "Sí, siempre que su culpa haya sido menor al 50%. Georgia sigue la negligencia comparativa modificada (O.C.G.A. § 51-12-33), así que puede recuperar si su porcentaje de culpa queda por debajo del 50%, con su compensación reducida en ese porcentaje. Con 50% de culpa o más, queda excluido de recuperar cualquier cosa."
+                    },
+                    {
+                        "question": "¿Hay daños punitivos disponibles en un caso de accidente de camión en Georgia?",
+                        "answer": "A veces. Los daños punitivos en Georgia generalmente se limitan a $250,000 bajo el O.C.G.A. § 51-12-5.1, pero ese tope no aplica en reclamos por responsabilidad de producto ni cuando un conductor actuó bajo los efectos del alcohol o las drogas o con la intención de causar daño. Un choque causado por un camionero intoxicado o por equipo defectuoso puede sostener daños punitivos sin tope en casos limitados."
+                    }
+                ],
+                "_roden_jurisdiction": "ga",
+                "_roden_last_reviewed": "2026-08-03",
+                "_roden_locale": "es",
+                "_roden_meta_description": "¿Cuánto vale un accidente de camión en Georgia? De decenas de miles a varios millones según lesiones, culpa y pólizas. Consulta gratis en español.",
+                "_roden_translation_of": "/resources/georgia-truck-accident-settlement-value/"
             }
         },
         "/es/resources/how-much-does-south-carolina-workers-comp-pay/": {
@@ -18745,7 +18815,8 @@
                     }
                 ],
                 "_roden_jurisdiction": "ga",
-                "_roden_meta_description": "Most Georgia car accident settlements range from a few thousand to several million dollars, depending on injury severity, fault, and insurance limits."
+                "_roden_meta_description": "Most Georgia car accident settlements range from a few thousand to several million dollars, depending on injury severity, fault, and insurance limits.",
+                "_roden_translation_es": "/es/resources/georgia-car-accident-settlement-value/"
             }
         },
         "/resources/georgia-truck-accident-settlement-value/": {
@@ -18777,7 +18848,8 @@
                     }
                 ],
                 "_roden_jurisdiction": "ga",
-                "_roden_meta_description": "Georgia truck accident settlements range from tens of thousands to several million dollars, driven by injury severity, lost income, and policy limits."
+                "_roden_meta_description": "Georgia truck accident settlements range from tens of thousands to several million dollars, driven by injury severity, lost income, and policy limits.",
+                "_roden_translation_es": "/es/resources/georgia-truck-accident-settlement-value/"
             }
         },
         "/resources/highway-22-truck-accidents-conway-bypass/": {
