@@ -1,7 +1,9 @@
 # English settlement-value pages — content review
 
 Date: 2026-08-03 · Scope: the 8 English `*-settlement-value` resource pages
-Status: **nothing changed in English.** Proposed fixes only, for the firm's review.
+Status: **all four applied 2026-08-03** (`bin/en-fix-ga-settlement-pages.php`), verified live
+and diffed against the pre-change backup. Written first as a proposal; kept as the record of
+what changed and why.
 
 These surfaced while adapting the two Georgia guides into Spanish. Adapting content
 is an audit of it: a writer working line by line, forced to restate every claim,
@@ -175,17 +177,35 @@ The Spanish twin already renders it as a plain statement.
 
 ---
 
-## Applying these
+## Applied
 
 All four are content edits to post bodies and post meta — **database, not theme**, so
-they do not go through the deploy. Nothing here has been applied.
+they never went through the deploy. Applied 2026-08-03 via
+`bin/en-fix-ga-settlement-pages.php`, which requires each replacement to match exactly
+once and aborts without writing otherwise. `content/meta.json` regenerated, since #1b
+and #2 touch `_roden_faqs` and `_roden_key_takeaways`.
 
-If approved, they can be scripted the same way as the Spanish fix: exact
-before/after string matching that aborts rather than guessing if the text has since
-changed (`bin/es-fix-nestlehutt-framing.php` is the template). Regenerate
-`content/meta.json` afterwards, since #1b and #2 touch `_roden_faqs` and
-`_roden_key_takeaways`.
+All three Georgia pages — English car, English truck, Spanish car — now describe
+*Nestlehutt* the same way.
 
-Issue #1 is the one worth doing regardless of the others: it is a misstatement of a
-published holding on a law firm's website, and the firm's own truck page already
-states it correctly.
+### The first attempt broke two of them
+
+Worth recording, because the failure was silent and the script reported success.
+
+Two replacements contained literal dollar amounts. PHP reads `$25` and `$100` in a
+`preg_replace` **replacement** as backreferences, up to two digits — not literals — so
+`$25,000 and $100,000` was written to the live page as `,000 and 0,000`. A third used
+`$1` against an apostrophe character class that was never parenthesised, so `the
+firm's` became `the firms`. The script printed "All 6 replacements matched exactly
+once" and was, on its own terms, correct: the *patterns* matched fine. The damage was
+in the replacement strings.
+
+Caught by verifying the rendered pages afterwards rather than trusting that output,
+and repaired within minutes by `bin/en-fix-ga-settlement-repair.php` using
+`str_replace` only. Then diffed both posts against the pre-change backup
+(`data/es-relink-backups/2026-08-03-en-settlement-pages-before.json`) to confirm
+exactly the six intended edits and nothing else.
+
+**Rule: never put a `$` in a `preg_replace` replacement.** Use `str_replace` for
+literal swaps, or `preg_replace_callback` and build the string yourself. And verify
+content edits against the rendered page, not against the edit script's own report.
