@@ -18807,7 +18807,7 @@
                     },
                     {
                         "question": "Is there a cap on car accident damages in Georgia?",
-                        "answer": "No. Georgia places no cap on compensatory damages in car accident cases — the Georgia Supreme Court struck down the noneconomic damages cap in Atlanta Oculoplastic Surgery v. Nestlehutt (2010). Punitive damages are generally capped at $250,000 under O.C.G.A. § 51-12-5.1, but that cap does not apply when the at-fault driver was under the influence."
+                        "answer": "No. Georgia places no cap on compensatory damages in car accident cases. The only statutory cap on noneconomic damages Georgia enacted applied to medical malpractice claims, and the Georgia Supreme Court struck it down in Atlanta Oculoplastic Surgery v. Nestlehutt (2010). Punitive damages are generally capped at $250,000 under O.C.G.A. § 51-12-5.1, but that cap does not apply when the at-fault driver was under the influence."
                     },
                     {
                         "question": "What if the at-fault driver doesn't have enough insurance in Georgia?",
@@ -18815,6 +18815,7 @@
                     }
                 ],
                 "_roden_jurisdiction": "ga",
+                "_roden_last_reviewed": "2026-08-03",
                 "_roden_meta_description": "Most Georgia car accident settlements range from a few thousand to several million dollars, depending on injury severity, fault, and insurance limits.",
                 "_roden_translation_es": "/es/resources/georgia-car-accident-settlement-value/"
             }
@@ -18848,6 +18849,7 @@
                     }
                 ],
                 "_roden_jurisdiction": "ga",
+                "_roden_last_reviewed": "2026-08-03",
                 "_roden_meta_description": "Georgia truck accident settlements range from tens of thousands to several million dollars, driven by injury severity, lost income, and policy limits.",
                 "_roden_translation_es": "/es/resources/georgia-truck-accident-settlement-value/"
             }
