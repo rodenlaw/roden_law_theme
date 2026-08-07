@@ -2133,16 +2133,32 @@ function roden_last_reviewed_html( $post_id = null ) {
         return '';
     }
 
+    // The label translates through the theme's `locale` filter, but the MONTH
+    // NAME does not: date_i18n reads $wp_locale, which core builds before the
+    // theme's filter is in play, so an /es/ page rendered "Última revisión:
+    // August 3, 2026" — half translated. switch_to_locale rebuilds $wp_locale
+    // with the core es_ES month names (that pack is installed). Same idiom the
+    // AJAX handler in functions.php uses for the same reason: a context that
+    // does not inherit the page locale. Restored immediately.
+    $switched = false;
+    if ( function_exists( 'roden_current_lang' ) && 'es' === roden_current_lang() ) {
+        $switched = switch_to_locale( 'es_ES' );
+    }
+
+    $label = sprintf(
+        /* translators: %s: date an attorney last reviewed this page. */
+        __( 'Last reviewed: %s', 'roden-law' ),
+        date_i18n( get_option( 'date_format' ), $ts )
+    );
+
+    if ( $switched ) {
+        restore_previous_locale();
+    }
+
     return sprintf(
         '<time class="post-reviewed" datetime="%1$s">%2$s</time>',
         esc_attr( gmdate( 'Y-m-d', $ts ) ),
-        esc_html(
-            sprintf(
-                /* translators: %s: date an attorney last reviewed this page. */
-                __( 'Last reviewed: %s', 'roden-law' ),
-                date_i18n( get_option( 'date_format' ), $ts )
-            )
-        )
+        esc_html( $label )
     );
 }
 
