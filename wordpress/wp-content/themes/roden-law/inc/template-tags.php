@@ -2134,26 +2134,42 @@ function roden_last_reviewed_html( $post_id = null ) {
     }
 
     // The label translates through the theme's `locale` filter, but the MONTH
-    // NAME does not: date_i18n reads $wp_locale, which core builds before the
-    // theme's filter is in play, so an /es/ page rendered "Última revisión:
-    // August 3, 2026" — half translated. switch_to_locale rebuilds $wp_locale
-    // with the core es_ES month names (that pack is installed). Same idiom the
-    // AJAX handler in functions.php uses for the same reason: a context that
-    // does not inherit the page locale. Restored immediately.
-    $switched = false;
-    if ( function_exists( 'roden_current_lang' ) && 'es' === roden_current_lang() ) {
-        $switched = switch_to_locale( 'es_ES' );
+    // NAME does not, and the obvious fix does not work. date_i18n reads
+    // $wp_locale, which core builds with English months before the theme's
+    // filter is in play, so /es/ rendered "Última revisión: August 3, 2026".
+    // switch_to_locale( 'es_ES' ) cannot repair it: WP_Locale_Switcher returns
+    // false without doing anything when the requested locale already equals
+    // determine_locale(), and the theme's filter has already made that es_ES.
+    // The switch silently no-ops and $wp_locale is never rebuilt — verified on
+    // production before this was replaced.
+    //
+    // So format Spanish explicitly. Deterministic, no dependence on when core
+    // happened to instantiate $wp_locale, and no locale switching mid-render.
+    $is_es = ( function_exists( 'roden_current_lang' ) && 'es' === roden_current_lang() )
+        || 'es_ES' === get_locale();
+
+    if ( $is_es ) {
+        $months_es = array(
+            1 => 'enero', 2 => 'febrero', 3 => 'marzo', 4 => 'abril',
+            5 => 'mayo', 6 => 'junio', 7 => 'julio', 8 => 'agosto',
+            9 => 'septiembre', 10 => 'octubre', 11 => 'noviembre', 12 => 'diciembre',
+        );
+        $formatted = sprintf(
+            /* translators: 1: day of month, 2: month name in Spanish, 3: four-digit year. */
+            _x( '%1$d de %2$s de %3$d', 'Spanish long date', 'roden-law' ),
+            (int) gmdate( 'j', $ts ),
+            $months_es[ (int) gmdate( 'n', $ts ) ],
+            (int) gmdate( 'Y', $ts )
+        );
+    } else {
+        $formatted = date_i18n( get_option( 'date_format' ), $ts );
     }
 
     $label = sprintf(
         /* translators: %s: date an attorney last reviewed this page. */
         __( 'Last reviewed: %s', 'roden-law' ),
-        date_i18n( get_option( 'date_format' ), $ts )
+        $formatted
     );
-
-    if ( $switched ) {
-        restore_previous_locale();
-    }
 
     return sprintf(
         '<time class="post-reviewed" datetime="%1$s">%2$s</time>',
