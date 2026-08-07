@@ -1217,16 +1217,30 @@ function roden_ai_definition_block( $practice_area_title, $custom_definition = '
         }
         ?></h2>
         <p class="definition-text"><?php echo wp_kses_post( $definition ); ?></p>
-        <?php if ( $author_name ) : ?>
+        <?php
+        // The review date rides with the attribution rather than getting its own
+        // block: "reviewed by whom" and "reviewed when" are one claim, and the
+        // three practice-area templates all reach it through this function, so
+        // it lands on pillar, intersection and sub-type without touching them
+        // individually. Rendered even when no attorney is set, because the date
+        // is meaningful on its own and 81 practice-area pages carry one.
+        $reviewed_html = roden_last_reviewed_html();
+        if ( $author_name || $reviewed_html ) : ?>
             <p class="definition-attribution">
                 <?php
-                echo '— ';
-                printf(
-                    /* translators: 1: attorney name (bold), 2: attorney title. */
-                    $author_title ? esc_html__( 'Reviewed by %1$s, %2$s at Roden Law', 'roden-law' ) : esc_html__( 'Reviewed by %1$s at Roden Law', 'roden-law' ),
-                    '<strong>' . esc_html( $author_name ) . '</strong>',
-                    esc_html( $author_title )
-                );
+                if ( $author_name ) {
+                    echo '— ';
+                    printf(
+                        /* translators: 1: attorney name (bold), 2: attorney title. */
+                        $author_title ? esc_html__( 'Reviewed by %1$s, %2$s at Roden Law', 'roden-law' ) : esc_html__( 'Reviewed by %1$s at Roden Law', 'roden-law' ),
+                        '<strong>' . esc_html( $author_name ) . '</strong>',
+                        esc_html( $author_title )
+                    );
+                }
+                if ( $reviewed_html ) {
+                    echo $author_name ? ' · ' : '— ';
+                    echo $reviewed_html; // escaped in roden_last_reviewed_html()
+                }
                 ?>
             </p>
         <?php endif; ?>
@@ -2085,6 +2099,51 @@ function roden_reading_time() {
     $content    = get_post_field( 'post_content', get_the_ID() );
     $word_count = str_word_count( wp_strip_all_tags( $content ) );
     return max( 1, ceil( $word_count / 250 ) );
+}
+
+/**
+ * Visible "Last reviewed" line, from `_roden_last_reviewed`.
+ *
+ * The meta already licenses schema's `lastReviewed`/`reviewedBy` (see
+ * roden_schema_review_fields), but until now nothing rendered it for a human:
+ * 101 published posts carried a review date that only a crawler could see.
+ *
+ * `post_modified` is not a substitute, for the reason recorded in
+ * schema-helpers.php — it moves on template deploys and bulk re-saves without
+ * anyone having checked the law, and in July 2026 the workers' comp cluster
+ * advertised timestamps up to five months stale. For YMYL legal content the
+ * date an attorney actually reviewed the page is the honest freshness signal,
+ * and it is one AI answer engines look for.
+ *
+ * Returns '' when unset or unparseable so callers can omit the element
+ * entirely rather than print an empty label.
+ *
+ * @param int|null $post_id Defaults to the current post.
+ * @return string Escaped HTML, or '' if no valid date is set.
+ */
+function roden_last_reviewed_html( $post_id = null ) {
+    $post_id  = $post_id ? (int) $post_id : get_the_ID();
+    $reviewed = trim( (string) get_post_meta( $post_id, '_roden_last_reviewed', true ) );
+    if ( '' === $reviewed ) {
+        return '';
+    }
+
+    $ts = strtotime( $reviewed );
+    if ( ! $ts ) {
+        return '';
+    }
+
+    return sprintf(
+        '<time class="post-reviewed" datetime="%1$s">%2$s</time>',
+        esc_attr( gmdate( 'Y-m-d', $ts ) ),
+        esc_html(
+            sprintf(
+                /* translators: %s: date an attorney last reviewed this page. */
+                __( 'Last reviewed: %s', 'roden-law' ),
+                date_i18n( get_option( 'date_format' ), $ts )
+            )
+        )
+    );
 }
 
 /* ==========================================================================
