@@ -44,6 +44,7 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
                 <span class="post-updated"><time datetime="<?php echo esc_attr( get_the_modified_date( 'c' ) ); ?>">Updated <?php echo esc_html( get_the_modified_date( 'F j, Y' ) ); ?></time></span>
             <?php endif; ?>
             <?php echo roden_last_reviewed_html(); // escaped in the helper; '' when unset ?>
+            <?php echo roden_last_refreshed_html(); // escaped in the helper; '' when unset ?>
         </div>
     </div>
 </section>

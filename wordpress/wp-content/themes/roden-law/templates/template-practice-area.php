@@ -548,12 +548,39 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                 <?php if ( $atty ) : ?>
                     <p class="pa-faq-attribution">
                         <?php
-                        printf(
-                            /* translators: 1: attorney name wrapped in <strong>; 2: attorney title. */
-                            esc_html__( 'Reviewed by %1$s, %2$s — Licensed in Georgia & South Carolina', 'roden-law' ),
-                            '<strong>' . esc_html( $atty->post_title ) . '</strong>',
-                            esc_html( $atty_title )
+                        // The licensure clause was hardcoded to "Georgia & South
+                        // Carolina" next to whoever was named. Eric Roden is
+                        // admitted in Georgia only (confirmed 2026-08-07), which
+                        // made it a false credential on every pillar bylined to
+                        // him. Render the attorney's actual admissions instead.
+                        // "Georgia" and "South Carolina" already carry
+                        // translations, so run the state names through gettext
+                        // rather than printing the raw English on /es/.
+                        $atty_states = array_map(
+                            function ( $s ) { return __( $s, 'roden-law' ); }, // phpcs:ignore
+                            roden_attorney_bar_states( $atty->ID )
                         );
+                        $state_list  = implode(
+                            /* translators: separator between two state names, e.g. "Georgia & South Carolina". */
+                            _x( ' & ', 'bar admission state separator', 'roden-law' ),
+                            $atty_states
+                        );
+                        if ( $state_list ) {
+                            printf(
+                                /* translators: 1: attorney name wrapped in <strong>; 2: attorney title; 3: state(s) of bar admission. */
+                                esc_html__( 'Reviewed by %1$s, %2$s — Licensed in %3$s', 'roden-law' ),
+                                '<strong>' . esc_html( $atty->post_title ) . '</strong>',
+                                esc_html( $atty_title ),
+                                esc_html( $state_list )
+                            );
+                        } else {
+                            printf(
+                                /* translators: 1: attorney name wrapped in <strong>; 2: attorney title. */
+                                esc_html__( 'Reviewed by %1$s, %2$s at Roden Law', 'roden-law' ),
+                                '<strong>' . esc_html( $atty->post_title ) . '</strong>',
+                                esc_html( $atty_title )
+                            );
+                        }
                         ?>
                     </p>
                 <?php endif; ?>

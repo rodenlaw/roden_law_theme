@@ -45,6 +45,7 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
             <?php endif; ?>
             <span class="post-read-time"><?php printf( /* translators: %d: reading time in minutes. */ esc_html__( '%d min read', 'roden-law' ), (int) roden_reading_time() ); ?></span>
             <?php echo roden_last_reviewed_html(); // escaped in the helper; '' when unset ?>
+            <?php echo roden_last_refreshed_html(); // escaped in the helper; '' when unset ?>
         </div>
     </div>
 </section>

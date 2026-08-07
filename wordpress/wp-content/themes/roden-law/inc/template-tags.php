@@ -2102,6 +2102,113 @@ function roden_reading_time() {
 }
 
 /**
+ * States an attorney is actually admitted in.
+ *
+ * Reads the attorney post's own `_roden_bar_admissions` (the authoritative
+ * record, one entry per line) and supplements from firm-data.php, matching how
+ * schema-helpers.php builds hasCredential — so the visible byline and the
+ * structured data cannot disagree.
+ *
+ * This exists because the byline on practice-area pages hardcoded "Licensed in
+ * Georgia & South Carolina" next to whoever was named, regardless of their
+ * admissions. On 2026-08-07 the firm confirmed Eric Roden is admitted in
+ * Georgia only, which made that line a false credential claim on every pillar
+ * page bylined to him.
+ *
+ * @param int $atty_id Attorney post ID.
+ * @return array<string> e.g. array( 'Georgia' ) or array( 'Georgia', 'South Carolina' ).
+ */
+function roden_attorney_bar_states( $atty_id ) {
+    $states = array();
+    $raw    = (string) get_post_meta( $atty_id, '_roden_bar_admissions', true );
+    foreach ( array( 'Georgia', 'South Carolina' ) as $state ) {
+        if ( '' !== $raw && false !== stripos( $raw, $state ) ) {
+            $states[] = $state;
+        }
+    }
+
+    $firm  = function_exists( 'roden_firm_data' ) ? roden_firm_data() : array();
+    $slug  = get_post_field( 'post_name', $atty_id );
+    $extra = $firm['attorneys'][ $slug ]['bar_admissions'] ?? array();
+    foreach ( (array) $extra as $state ) {
+        if ( ! in_array( $state, $states, true ) ) {
+            $states[] = $state;
+        }
+    }
+    return $states;
+}
+
+/**
+ * Visible "Updated" line, from `_roden_last_refreshed`.
+ *
+ * Deliberately NOT `_roden_last_reviewed`, and deliberately not worded as a
+ * review. The two fields make different claims and only one of them is an
+ * E-E-A-T assertion:
+ *
+ *   _roden_last_reviewed   an attorney checked this page. Licenses
+ *                          `lastReviewed` + `reviewedBy` in schema.
+ *   _roden_last_refreshed  the content was corrected or updated on this date.
+ *                          Says nothing about who, and emits no reviewedBy.
+ *
+ * The distinction exists because pages get factual corrections far more often
+ * than they get attorney review — the 2026-08-07 seat-belt fixes being the
+ * case in point: the law had changed under them and the copy was wrong, but no
+ * lawyer had signed off on the rewrite. Stamping those as "reviewed" would have
+ * manufactured exactly the trust signal schema-helpers.php warns against, while
+ * leaving them undated would hide a real and recent correction.
+ *
+ * Renders alongside "Last reviewed" when both are set; neither replaces the
+ * other.
+ *
+ * @param int|null $post_id Defaults to the current post.
+ * @return string Escaped HTML, or '' if no valid date is set.
+ */
+function roden_last_refreshed_html( $post_id = null ) {
+    $post_id   = $post_id ? (int) $post_id : get_the_ID();
+    $refreshed = trim( (string) get_post_meta( $post_id, '_roden_last_refreshed', true ) );
+    if ( '' === $refreshed ) {
+        return '';
+    }
+
+    $ts = strtotime( $refreshed );
+    if ( ! $ts ) {
+        return '';
+    }
+
+    $is_es = ( function_exists( 'roden_current_lang' ) && 'es' === roden_current_lang() )
+        || 'es_ES' === get_locale();
+
+    if ( $is_es ) {
+        $months_es = array(
+            1 => 'enero', 2 => 'febrero', 3 => 'marzo', 4 => 'abril',
+            5 => 'mayo', 6 => 'junio', 7 => 'julio', 8 => 'agosto',
+            9 => 'septiembre', 10 => 'octubre', 11 => 'noviembre', 12 => 'diciembre',
+        );
+        $formatted = sprintf(
+            /* translators: 1: day of month, 2: month name in Spanish, 3: four-digit year. */
+            _x( '%1$d de %2$s de %3$d', 'Spanish long date', 'roden-law' ),
+            (int) gmdate( 'j', $ts ),
+            $months_es[ (int) gmdate( 'n', $ts ) ],
+            (int) gmdate( 'Y', $ts )
+        );
+    } else {
+        $formatted = date_i18n( get_option( 'date_format' ), $ts );
+    }
+
+    return sprintf(
+        '<time class="post-refreshed" datetime="%1$s">%2$s</time>',
+        esc_attr( gmdate( 'Y-m-d', $ts ) ),
+        esc_html(
+            sprintf(
+                /* translators: %s: date the content was last updated. */
+                __( 'Content updated: %s', 'roden-law' ),
+                $formatted
+            )
+        )
+    );
+}
+
+/**
  * Visible "Last reviewed" line, from `_roden_last_reviewed`.
  *
  * The meta already licenses schema's `lastReviewed`/`reviewedBy` (see

@@ -3896,3 +3896,19 @@ msgstr "Última revisión: %s"
 msgctxt "Spanish long date"
 msgid "%1$d de %2$s de %3$d"
 msgstr "%1$d de %2$s de %3$d"
+
+#: templates/template-practice-area.php
+#. translators: 1: attorney name wrapped in <strong>; 2: attorney title; 3: state(s) of bar admission.
+msgid "Reviewed by %1$s, %2$s — Licensed in %3$s"
+msgstr "Revisado por %1$s, %2$s — Con Licencia en %3$s"
+
+#: templates/template-practice-area.php
+#. translators: separator between two state names, e.g. "Georgia & South Carolina".
+msgctxt "bar admission state separator"
+msgid " & "
+msgstr " y "
+
+#: inc/template-tags.php
+#. translators: %s: date the content was last updated.
+msgid "Content updated: %s"
+msgstr "Contenido actualizado: %s"
