@@ -5,7 +5,7 @@
         "location",
         "resource"
     ],
-    "_count": 710,
+    "_count": 711,
     "posts": {
         "/?post_type=location&p=3808": {
             "type": "location",
@@ -20597,6 +20597,53 @@
                     }
                 ],
                 "_roden_jurisdiction": "sc"
+            }
+        },
+        "/resources/truck-accident-settlement-process/": {
+            "type": "resource",
+            "status": "publish",
+            "title": "How Do I Start the Settlement Process With a Truck Accident Lawyer?",
+            "meta": {
+                "_roden_author_attorney": "Joshua Dorminy",
+                "_roden_faqs": [
+                    {
+                        "question": "How long does a truck accident settlement take?",
+                        "answer": "A truck accident case that settles without a lawsuit commonly resolves in six months to two years from the crash, and cases that require filing suit typically run two to four years. The biggest variable is how long you treat, because no responsible demand goes out before you reach maximum medical improvement."
+                    },
+                    {
+                        "question": "Is there an average truck accident settlement?",
+                        "answer": "There is no average worth relying on. Truck settlements span an enormous range, because a soft-tissue claim against a single $750,000 federal-minimum policy and a catastrophic-injury claim reaching several companies' layered coverage both sit inside the same \"average.\" What actually drives value is injury severity, how many defendants share liability, and the total insurance available under 49 CFR § 387.9. For state-specific ranges, see what a <a href=\"/resources/georgia-truck-accident-settlement-value/\">Georgia truck accident case is worth</a> or a <a href=\"/resources/south-carolina-truck-accident-settlement-value/\">South Carolina truck accident case is worth</a>."
+                    },
+                    {
+                        "question": "What does it cost to hire a truck accident lawyer?",
+                        "answer": "Nothing upfront. Roden Law handles truck accident claims on a contingency fee: the consultation is free, there is no hourly billing, and you owe no legal fee unless we recover for you. Case expenses such as records, experts and filing fees are advanced by the firm and itemized on your settlement statement."
+                    },
+                    {
+                        "question": "Will I have to go to court?",
+                        "answer": "Probably not. Most truck accident claims settle before trial, and many settle before a lawsuit is filed at all. Filing suit is a negotiating step as much as a litigation step — it opens formal discovery and forces the carrier to produce records it will not hand over voluntarily. If your case is filed, expect a deposition."
+                    },
+                    {
+                        "question": "The trucking company's insurer already called me — what do I do?",
+                        "answer": "Take the adjuster's name, company and number, say you are represented or will be, and end the call politely without giving a recorded statement. You are not obligated to give the other side's insurer a recorded statement, and doing so before you know the extent of your injuries usually helps them more than you."
+                    },
+                    {
+                        "question": "What if I was partly at fault?",
+                        "answer": "You can still recover in both states. In Georgia you may recover if you are less than 50% at fault, with your award reduced by your share (O.C.G.A. § 51-12-33). In South Carolina you may recover if you are less than 51% at fault. Trucking insurers push fault toward the injured driver for exactly this reason."
+                    },
+                    {
+                        "question": "Can I start a claim before I finish medical treatment?",
+                        "answer": "Yes — and you should. Starting the claim and finishing treatment are separate things. Your lawyer begins preserving evidence, identifying the carrier and building liability in week one while you keep treating; what waits for the end of treatment is the demand, not the case. Starting early protects the six-month window under 49 CFR § 395.8(k)(1)."
+                    },
+                    {
+                        "question": "Do I really need a lawyer for a truck accident claim?",
+                        "answer": "For a commercial truck crash with real injuries, yes. Truck claims are governed by federal regulations, involve records that can lawfully be destroyed within months, and often include several liable companies with separate insurance policies and their own investigators on scene the same day. An unrepresented claimant negotiates against a defense operation that started immediately."
+                    }
+                ],
+                "_roden_jurisdiction": "both",
+                "_roden_last_reviewed": "2026-08-06",
+                "_roden_meta_description": "Starting a truck accident settlement takes one free call. The seven phases, what your lawyer needs from you, and the Georgia and South Carolina deadlines.",
+                "_roden_sol_ga": "2 years (O.C.G.A. § 9-3-33)",
+                "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)"
             }
         },
         "/resources/two-notch-road-truck-accidents-columbia/": {
