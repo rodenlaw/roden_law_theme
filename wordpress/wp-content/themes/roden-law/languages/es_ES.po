@@ -3890,3 +3890,9 @@ msgstr "Entradas Recientes"
 #. translators: %s: date an attorney last reviewed this page.
 msgid "Last reviewed: %s"
 msgstr "Última revisión: %s"
+
+#: inc/template-tags.php
+#. translators: 1: day of month, 2: month name in Spanish, 3: four-digit year.
+msgctxt "Spanish long date"
+msgid "%1$d de %2$s de %3$d"
+msgstr "%1$d de %2$s de %3$d"
