@@ -3885,3 +3885,8 @@ msgstr "Categorías"
 #: single.php:157
 msgid "Recent Posts"
 msgstr "Entradas Recientes"
+
+#: inc/template-tags.php
+#. translators: %s: date an attorney last reviewed this page.
+msgid "Last reviewed: %s"
+msgstr "Última revisión: %s"
