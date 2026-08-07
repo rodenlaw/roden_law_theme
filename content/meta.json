@@ -5,7 +5,7 @@
         "location",
         "resource"
     ],
-    "_count": 711,
+    "_count": 712,
     "posts": {
         "/?post_type=location&p=3808": {
             "type": "location",
@@ -18818,6 +18818,44 @@
                 "_roden_last_reviewed": "2026-08-03",
                 "_roden_meta_description": "Most Georgia car accident settlements range from a few thousand to several million dollars, depending on injury severity, fault, and insurance limits.",
                 "_roden_translation_es": "/es/resources/georgia-car-accident-settlement-value/"
+            }
+        },
+        "/resources/georgia-statute-of-limitations/": {
+            "type": "resource",
+            "status": "publish",
+            "title": "How Long Do I Have to File a Personal Injury Claim in Georgia?",
+            "meta": {
+                "_roden_author_attorney": "Eric Roden",
+                "_roden_faqs": [
+                    {
+                        "question": "How long do I have to file a personal injury lawsuit in Georgia?",
+                        "answer": "In Georgia you generally have two years from the date of your injury to file a personal injury lawsuit, under O.C.G.A. § 9-3-33. That covers car and truck crashes, motorcycle and pedestrian collisions, slip-and-falls and most negligence claims. Damage to your vehicle is separate, carrying four years under O.C.G.A. § 9-3-32."
+                    },
+                    {
+                        "question": "What happens if I miss the statute of limitations in Georgia?",
+                        "answer": "If you file after the deadline, the defendant moves to dismiss and the court almost always grants it — you recover nothing, however strong the case was. The exceptions are narrow and statutory: minority (O.C.G.A. § 9-3-90), an unrepresented estate (O.C.G.A. § 9-3-92), or a pending criminal prosecution (O.C.G.A. § 9-3-99)."
+                    },
+                    {
+                        "question": "Is the deadline different if I'm suing a city or a government agency?",
+                        "answer": "Yes, and far shorter. A claim against a Georgia city requires written ante litem notice to the governing authority within six months of the event, under O.C.G.A. § 36-33-5, stating the specific dollar amount sought. Counties get 12 months (O.C.G.A. § 36-11-1); the state requires notice within 12 months (O.C.G.A. § 50-21-26)."
+                    },
+                    {
+                        "question": "How long do I have to file a workers' compensation claim in Georgia?",
+                        "answer": "One year from the date of injury, under O.C.G.A. § 34-9-82 — not the two years that applies to a personal injury lawsuit. The clock can reset: if your employer furnished remedial treatment or paid weekly benefits, you may file within one year of the last employer-furnished treatment, or two years of the last benefit payment."
+                    },
+                    {
+                        "question": "Does the deadline change if the accident involved a criminal charge like DUI?",
+                        "answer": "It can. Under O.C.G.A. § 9-3-99, the limitation period for a tort committed against a crime victim is tolled while a criminal prosecution arising from the same facts is pending, capped at six years. That tolling is fact-specific and never a reason to delay — your evidence disappears on its own timetable."
+                    },
+                    {
+                        "question": "Do I have to file a lawsuit, or is a claim with the insurance company enough?",
+                        "answer": "Filing a claim with an insurance company does not stop the statute of limitations. Only filing suit in court within the O.C.G.A. § 9-3-33 period preserves your right to recover, and a claim still \"in negotiation\" on the two-year anniversary is about to be worthless. For value, see what a <a href=\"/resources/georgia-car-accident-settlement-value/\">Georgia car accident case is worth</a> or a <a href=\"/resources/georgia-truck-accident-settlement-value/\">Georgia truck accident case is worth</a>."
+                    }
+                ],
+                "_roden_jurisdiction": "georgia-only",
+                "_roden_last_reviewed": "2026-08-07",
+                "_roden_meta_description": "Georgia gives you 2 years to file a personal injury lawsuit (O.C.G.A. § 9-3-33) — but workers' comp runs 1 year and a claim against a city runs just 6 months.",
+                "_roden_sol_ga": "2 years (O.C.G.A. § 9-3-33)"
             }
         },
         "/resources/georgia-truck-accident-settlement-value/": {
