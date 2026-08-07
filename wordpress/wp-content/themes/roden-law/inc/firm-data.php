@@ -349,10 +349,17 @@ EOT
            ================================================================== */
 
         'attorneys' => array(
+            // Georgia only — corrected 2026-08-07 on the firm's confirmation.
+            // This array supplements the attorney post's own
+            // `_roden_bar_admissions` in schema-helpers.php, so a wrong entry
+            // publishes a false credential as structured data. Post 3729's own
+            // record already read Georgia only (State Bar of Georgia, Georgia
+            // Court of Appeals, Supreme Court of Georgia); this file was the
+            // outlier and the source of the SC attribution on `both` pages.
             'eric-roden' => array(
                 'name'           => 'Eric Roden',
                 'title'          => 'Founding Partner, CEO',
-                'bar_admissions' => array( 'Georgia', 'South Carolina' ),
+                'bar_admissions' => array( 'Georgia' ),
                 'office'         => 'savannah',
             ),
             'tyler-love' => array(

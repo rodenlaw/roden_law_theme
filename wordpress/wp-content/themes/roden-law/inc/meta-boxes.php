@@ -327,6 +327,18 @@ function roden_pa_author_meta_box( $post ) {
     </p>
     <p class="description"><?php esc_html_e( 'Date an attorney last verified this page is accurate. Publishes as lastReviewed + reviewedBy. Leave blank if no review has happened — do not guess, an unverified review claim is worse than none. Set this after any legal change, since template edits do not update the post\'s modified date.', 'roden-law' ); ?></p>
     <?php
+    // Separate field, separate claim. Content gets corrected far more often
+    // than it gets attorney review, and conflating the two either manufactures
+    // a review that did not happen or hides a correction that did.
+    $refreshed = get_post_meta( $post->ID, '_roden_last_refreshed', true );
+    ?>
+    <p>
+        <label for="roden_last_refreshed"><strong><?php esc_html_e( 'Content Updated:', 'roden-law' ); ?></strong></label><br>
+        <input type="date" id="roden_last_refreshed" name="_roden_last_refreshed"
+               value="<?php echo esc_attr( $refreshed ); ?>" style="width:100%;">
+    </p>
+    <p class="description"><?php esc_html_e( 'Date the content was last corrected or updated. Renders as "Content updated" and makes NO claim that an attorney reviewed it — publishes no reviewedBy. Use this when a page is fixed but not lawyer-verified; use Last Reviewed only after an actual review.', 'roden-law' ); ?></p>
+    <?php
 }
 
 /** Hero Intro paragraph meta box. */
@@ -1056,6 +1068,14 @@ function roden_save_meta_fields( $post_id ) {
             update_post_meta( $post_id, '_roden_last_reviewed', $reviewed );
         } else {
             delete_post_meta( $post_id, '_roden_last_reviewed' );
+        }
+
+        // Same validation, different claim — see the field description.
+        $refreshed = sanitize_text_field( $_POST['_roden_last_refreshed'] ?? '' );
+        if ( $refreshed && preg_match( '/^\d{4}-\d{2}-\d{2}$/', $refreshed ) && strtotime( $refreshed ) ) {
+            update_post_meta( $post_id, '_roden_last_refreshed', $refreshed );
+        } else {
+            delete_post_meta( $post_id, '_roden_last_refreshed' );
         }
     }
 
