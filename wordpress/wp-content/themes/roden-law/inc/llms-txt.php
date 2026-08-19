@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) || exit;
  * dynamic /llms route but leaves the static files stale until the next
  * save_post.
  */
-define( 'RODEN_LLMS_TXT_VERSION', '2026-08-19.1' );
+define( 'RODEN_LLMS_TXT_VERSION', '2026-08-19.2' );
 
 /* ==========================================================================
    1. REWRITE RULES + QUERY VARS
@@ -107,7 +107,7 @@ function roden_generate_llms_txt( $full = false ) {
     $output .= "## Firm Credentials\n\n";
     $output .= "- **Founded**: {$firm['founded']}\n";
     $output .= "- **Total Recovered**: {$firm['trust_stats']['recovered']}\n";
-    $output .= "- **Client Rating**: {$firm['trust_stats']['rating']} stars across {$firm['trust_stats']['review_count']} verified Google reviews across 6 offices\n";
+    $output .= "- **Client Rating**: {$firm['trust_stats']['rating']} stars from {$firm['trust_stats']['review_count']} verified Google reviews across {$firm['trust_stats']['offices']} offices\n";
     $output .= "- **Cases Handled**: {$firm['trust_stats']['cases']}\n";
     $output .= "- **Combined Experience**: {$firm['experience']}\n";
     $output .= "- **Fee Structure**: Contingency — no fees unless we win\n";
@@ -206,10 +206,37 @@ function roden_generate_llms_txt( $full = false ) {
     // ── Attorneys ───────────────────────────────────────────────────────
     $output .= "## Attorneys\n\n";
 
+    // Resolve each attorney's real permalink rather than assuming the firm-data
+    // array key is the WP post slug. It is not, for two of the seven: the keys
+    // 'graeham-gillin' and 'ivy-montano' belong to posts slugged
+    // 'graeham-c-gillin' and 'ivy-s-montano', so this file — the one written
+    // specifically for AI engines — was the only place on the site publishing a
+    // 404 for the partner bylined on essentially every South Carolina page.
+    //
+    // Matching on post_title keeps firm-data and WP in sync without a second
+    // hand-maintained slug field to drift. Attorneys whose bio is unpublished
+    // are listed without a link rather than linked to a page that redirects.
+    $atty_posts = get_posts( array(
+        'post_type'   => 'attorney',
+        'post_status' => 'publish',
+        'numberposts' => -1,
+    ) );
+    $atty_by_title = array();
+    foreach ( $atty_posts as $atty_post ) {
+        $atty_by_title[ $atty_post->post_title ] = $atty_post;
+    }
+
     foreach ( $firm['attorneys'] as $slug => $atty ) {
-        $atty_url = "{$site}/attorneys/{$slug}/";
-        $bars     = implode( ', ', $atty['bar_admissions'] );
-        $output  .= "- [{$atty['name']}]({$atty_url}): {$atty['title']} — Licensed in {$bars}";
+        $bars  = implode( ', ', $atty['bar_admissions'] );
+        $match = isset( $atty_by_title[ $atty['name'] ] ) ? $atty_by_title[ $atty['name'] ] : null;
+
+        if ( $match ) {
+            $atty_url = str_replace( home_url(), $site, get_permalink( $match->ID ) );
+            $output  .= "- [{$atty['name']}]({$atty_url}): {$atty['title']} — Licensed in {$bars}";
+        } else {
+            $output .= "- {$atty['name']}: {$atty['title']} — Licensed in {$bars}";
+        }
+
         if ( $full && ! empty( $atty['focus'] ) ) {
             $output .= " — {$atty['focus']}";
         }
