@@ -1826,12 +1826,25 @@ function roden_schema_speakable_location() {
     $firm = roden_firm_data();
     $url  = get_permalink();
     // url omitted — see roden_schema_speakable_practice_area note above.
+    //
+    // `author` only. Location pages carried no attribution at all — audit F6
+    // found 0% authorship across 211 published pages, against 100% on
+    // practice_area and resource. roden_schema_author_node() names the
+    // bar-admitted attorney when _roden_author_attorney is set and falls back
+    // to the Organization when it is not, so this is honest in both states.
+    //
+    // Deliberately NOT merging roden_schema_review_fields() here, as the
+    // practice-area WebPage does. That would publish `reviewedBy` +
+    // `lastReviewed`, which assert that an attorney checked the page on a given
+    // date. Authorship is attribution; review is a separate claim and stays
+    // licensed by _roden_last_reviewed alone.
     roden_json_ld( array(
         '@context'     => 'https://schema.org',
         '@type'        => 'WebPage',
         '@id'          => $url . '#webpage',
         'name'         => get_the_title(),
         'dateModified' => get_the_modified_date( 'c' ),
+        'author'       => roden_schema_author_node( get_the_ID(), $firm ),
         'isPartOf'     => array( '@id' => $firm['url'] . '/#website' ),
         'about'        => array( '@id' => $firm['url'] . '/#organization' ),
         'breadcrumb'   => array( '@id' => $url . '#breadcrumbs' ),
