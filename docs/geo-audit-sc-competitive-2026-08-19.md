@@ -181,8 +181,31 @@ What to Do After a Car Accident in Charleston, SC    ← template, roden_what_to
 `inc/template-tags.php:2066` emits the second inside a `data-ai-extractable="true"` block. Two
 competing answers to one question splits the extraction signal.
 
-**Fix:** editorial — remove the body-authored heading on those three pages; the template block
-is the canonical one.
+**Correction (2026-08-19, during execution):** this audit's first recommendation — "remove the
+body-authored heading; the template block is canonical" — was **backwards**, and checking the
+two blocks side by side is what showed it. The template's list is the same generic six steps on
+every car-accident page ("Ensure safety and call 911", "Document the scene"…). The body's list
+is locally specific on all three pages:
+
+| Page | What only the body version says |
+|---|---|
+| Charleston | Charleston PD / county sheriff / SCHP by crash location; MUSC Health as the Lowcountry's only Level I trauma centre; the Charleston office number |
+| Columbia | Columbia PD / Richland County Sheriff / SCHP; Midlands highway crash context; the Columbia office number |
+| Myrtle Beach | Myrtle Beach PD / Horry County police / SCHP; Grand Strand Medical Center and Tidelands Waccamaw; "call before you leave town" for out-of-state visitors |
+
+The body copy is the differentiated content. But the template block is what feeds the `HowTo`
+JSON-LD — a schema type no competitor in this market emits — so deleting it would trade a real
+GEO asset for a heading fix.
+
+**Fix applied:** retitle the body heading so the two stop competing, keeping both the local copy
+and the HowTo schema. `bin/retitle-what-to-do-duplicates.php` sets "Your {City} Crash Checklist"
+on posts 3624 / 3625 / 3626. Idempotent, verifies each write, and skips rather than guesses if
+the expected heading is not found exactly once. Bodies backed up to `data/db-backups/` first.
+
+**Open question, not a today fix:** the generic template steps are weaker content than the local
+ones on every page that has both. Feeding the `HowTo` schema from local steps instead would be
+the better end state — but that is a template refactor touching ~400 pages and a content call,
+not a bug fix.
 
 ---
 
