@@ -1406,9 +1406,11 @@ function roden_what_to_do_context( $post_id = null ) {
     $parent_post  = $post->post_parent ? get_post( $post->post_parent ) : null;
     $parent_title = $parent_post ? $parent_post->post_title : '';
 
-    // ── Intersection: office key decides, matching single-practice_area.php's router.
+    // ── Intersection: market key decides, matching single-practice_area.php's router.
+    // roden_market() resolves offices and service-area towns alike; indexing
+    // $firm['offices'] here would leave every town page without its context.
     $office_key = get_post_meta( $post_id, '_roden_pa_office_key', true );
-    $office     = ( $office_key && isset( $firm['offices'][ $office_key ] ) ) ? $firm['offices'][ $office_key ] : null;
+    $office     = $office_key ? roden_market( $office_key ) : null;
 
     if ( $office ) {
         // ES intersections seed _roden_accident_phrase ("un accidente de auto")

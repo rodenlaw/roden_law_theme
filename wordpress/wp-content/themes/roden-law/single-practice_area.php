@@ -19,8 +19,15 @@ $post_id = get_the_ID();
 $post    = get_post( $post_id );
 
 // ── Detect page type ────────────────────────────────────────────────────
+// _roden_pa_office_key holds a MARKET key: one of the 6 offices, or one of the
+// service-area towns served from them. Resolve through roden_market() rather
+// than indexing $firm['offices'] — that lookup cannot see service areas, so a
+// town page would fall through to $is_subtype and render with the wrong
+// template while schema-helpers.php (which detects by slug) still treated it as
+// an intersection. The two detection paths must agree.
 $pa_office_key   = get_post_meta( $post_id, '_roden_pa_office_key', true );
-$is_intersection = ! empty( $pa_office_key ) && isset( $firm['offices'][ $pa_office_key ] );
+$pa_market       = $pa_office_key ? roden_market( $pa_office_key ) : null;
+$is_intersection = ( null !== $pa_market );
 $is_subtype      = ( $post->post_parent > 0 ) && ! $is_intersection;
 $is_pillar       = ! $is_intersection && ! $is_subtype;
 

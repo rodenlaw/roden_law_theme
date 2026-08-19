@@ -728,25 +728,66 @@ function roden_schema_local_business_all( $firm ) {
    ========================================================================== */
 
 function roden_schema_local_business_single( $firm ) {
-    $office_key = get_post_meta( get_the_ID(), '_roden_office_key', true );
+    $market_key = get_post_meta( get_the_ID(), '_roden_office_key', true );
 
-    // Fallback: derive from post_name slug when meta is absent (intersection pages).
-    // roden_is_intersection_page() already confirmed post_name is a known office slug.
-    if ( ! $office_key ) {
+    // Intersection pages carry the market on _roden_pa_office_key; fall back to
+    // the post_name slug, which roden_is_intersection_page() has already
+    // confirmed is a known market slug.
+    if ( ! $market_key ) {
+        $market_key = get_post_meta( get_the_ID(), '_roden_pa_office_key', true );
+    }
+    if ( ! $market_key ) {
         $post = get_post();
         if ( $post ) {
-            $office_key = roden_office_key_from_slug( $post->post_name );
+            $market_key = roden_market_key_from_slug( $post->post_name );
         }
     }
 
-    if ( ! $office_key || ! isset( $firm['offices'][ $office_key ] ) ) {
+    if ( ! $market_key ) {
         return;
     }
-    roden_schema_local_business_office( $firm, $office_key, $firm['offices'][ $office_key ] );
+
+    // A service-area town has no office at that address. Publishing a second
+    // LocalBusiness named for the town — with its own @id, and necessarily
+    // carrying the parent office's street address — would assert a place of
+    // business the firm does not occupy, and would fragment the office entity
+    // across two @ids. Emit the PARENT office's LocalBusiness instead, with the
+    // town added to areaServed, so the graph says "this office serves
+    // Summerville" rather than "there is an office in Summerville".
+    if ( function_exists( 'roden_is_service_area' ) && roden_is_service_area( $market_key ) ) {
+        $market      = roden_market( $market_key );
+        $parent_key  = $market['parent_office_key'] ?? '';
+        if ( ! $parent_key || ! isset( $firm['offices'][ $parent_key ] ) ) {
+            return;
+        }
+        roden_schema_local_business_office(
+            $firm,
+            $parent_key,
+            $firm['offices'][ $parent_key ],
+            $market['market_name']
+        );
+        return;
+    }
+
+    if ( ! isset( $firm['offices'][ $market_key ] ) ) {
+        return;
+    }
+    roden_schema_local_business_office( $firm, $market_key, $firm['offices'][ $market_key ] );
 }
 
-/** Shared LocalBusiness builder for one office. */
-function roden_schema_local_business_office( $firm, $key, $office ) {
+/**
+ * Shared LocalBusiness builder for one office.
+ *
+ * @param array  $firm             Firm data.
+ * @param string $key              Office key.
+ * @param array  $office           Office data — must be a REAL office, never a
+ *                                 resolved service area, so address and geo can
+ *                                 only ever describe a place the firm occupies.
+ * @param string $extra_area_served Optional town name to add to areaServed when
+ *                                 this office is being published on behalf of a
+ *                                 service-area page.
+ */
+function roden_schema_local_business_office( $firm, $key, $office, $extra_area_served = '' ) {
     $schema = array(
         '@context'   => 'https://schema.org',
         '@type'      => array( 'LocalBusiness', 'LegalService', 'LawFirm' ),
@@ -757,7 +798,7 @@ function roden_schema_local_business_office( $firm, $key, $office ) {
         'priceRange' => '$$',
         'address'    => roden_schema_postal_address( $office ),
         'geo'        => roden_schema_geo( $office ),
-        'areaServed' => roden_schema_office_area_served( $office ),
+        'areaServed' => roden_schema_office_area_served( $office, $extra_area_served ),
         'openingHoursSpecification' => array(
             array(
                 '@type'     => 'OpeningHoursSpecification',
@@ -2519,7 +2560,7 @@ function roden_schema_geo( $office ) {
  * @param array $office Office data from roden_firm_data().
  * @return array Array of Place schema fragments.
  */
-function roden_schema_office_area_served( $office ) {
+function roden_schema_office_area_served( $office, $extra = '' ) {
     $state_full = $office['state_full'] ?? $office['state'];
     $state_part = array(
         '@type' => 'State',
@@ -2534,6 +2575,17 @@ function roden_schema_office_area_served( $office ) {
         ),
     );
 
+    // A service-area town this office serves. Listed as a served Place, never
+    // as the office's own City — the office stays where it actually is.
+    $extra = trim( (string) $extra );
+    if ( '' !== $extra && strcasecmp( $extra, $office['market_name'] ) !== 0 ) {
+        $places[] = array(
+            '@type'            => 'Place',
+            'name'             => $extra . ', ' . $office['state'],
+            'containedInPlace' => $state_part,
+        );
+    }
+
     $nearby = isset( $office['nearby_communities'] ) && is_array( $office['nearby_communities'] )
         ? $office['nearby_communities']
         : array();
@@ -2543,6 +2595,10 @@ function roden_schema_office_area_served( $office ) {
             continue;
         }
         if ( strcasecmp( $community, $office['market_name'] ) === 0 ) {
+            continue;
+        }
+        // Already emitted above as the service-area town.
+        if ( '' !== $extra && strcasecmp( $community, $extra ) === 0 ) {
             continue;
         }
         $places[] = array(

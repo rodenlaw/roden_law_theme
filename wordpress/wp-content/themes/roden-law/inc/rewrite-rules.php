@@ -211,7 +211,12 @@ function roden_practice_area_type( $post_id = null ) {
 
 /**
  * Detect whether a practice_area post is an intersection page.
- * Intersection pages are child posts whose slug matches a known office city-state slug.
+ * Intersection pages are child posts whose slug matches a known market
+ * city-state slug — the 6 offices plus the service-area towns served from them.
+ *
+ * Matched against roden_get_market_slugs(), not roden_get_office_slugs(): a
+ * service-area page whose slug is not recognised here falls through to
+ * roden_is_subtype_page() and renders with the wrong template and schema.
  *
  * @param int|null $post_id Post ID (defaults to current post).
  * @return bool True if this is an intersection page.
@@ -226,8 +231,8 @@ function roden_is_intersection_page( $post_id = null ) {
         return false;
     }
 
-    $office_slugs = roden_get_office_slugs();
-    return in_array( $post->post_name, $office_slugs, true );
+    $market_slugs = roden_get_market_slugs();
+    return in_array( $post->post_name, $market_slugs, true );
 }
 
 /**
@@ -251,11 +256,15 @@ function roden_is_subtype_page( $post_id = null ) {
 }
 
 /**
- * Get the office data for the current intersection page.
+ * Get the market data for the current intersection page.
  * Returns null if the current page is not an intersection page.
  *
+ * For a service-area town this returns the resolved market — the parent
+ * office's contact details under the town's own geography — never a synthetic
+ * office. Check $market['is_service_area'] to branch.
+ *
  * @param int|null $post_id Post ID (defaults to current post).
- * @return array|null Office data array from roden_firm_data(), or null.
+ * @return array|null Market data array from roden_market(), or null.
  */
 function roden_get_intersection_office( $post_id = null ) {
     if ( ! $post_id ) {
@@ -270,13 +279,13 @@ function roden_get_intersection_office( $post_id = null ) {
     if ( ! $post ) {
         return null;
     }
-    $office_key = roden_office_key_from_slug( $post->post_name );
+    $market_key = roden_market_key_from_slug( $post->post_name );
 
-    if ( ! $office_key ) {
+    if ( ! $market_key ) {
         return null;
     }
 
-    return roden_get_office( $office_key );
+    return roden_market( $market_key );
 }
 
 /**

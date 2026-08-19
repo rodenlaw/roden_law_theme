@@ -22,7 +22,24 @@ $post_id = get_the_ID();
 $post    = get_post( $post_id );
 
 $pa_office_key = get_post_meta( $post_id, '_roden_pa_office_key', true );
-$office        = $firm['offices'][ $pa_office_key ];
+
+// Resolve through roden_market(), which covers the 6 offices AND the
+// service-area towns served from them. The previous
+// $firm['offices'][ $pa_office_key ] was unguarded and fatalled on any key it
+// did not know — including every service area.
+$office = roden_market( $pa_office_key );
+
+// An unresolvable key is a data error (meta pointing at a market that no
+// longer exists). Bail to the sub-type template rather than fatalling.
+if ( null === $office ) {
+    if ( current_user_can( 'edit_posts' ) ) {
+        echo '<div class="container"><p><strong>' . esc_html__( 'Configuration error:', 'roden-law' ) . '</strong> '
+            . esc_html__( 'this page\'s market key does not match any office or service area.', 'roden-law' )
+            . '</p></div>';
+    }
+    return;
+}
+
 $state_key     = $office['state']; // 'GA' or 'SC'
 $jurisdiction  = isset( $firm['jurisdiction'][ $state_key ] ) ? $firm['jurisdiction'][ $state_key ] : null;
 
@@ -114,6 +131,19 @@ $int_is_statutory = ( $int_statute && $int_statute['is_override'] );
                 <!-- NAP Block -->
                 <div class="nap-block">
                     <h3 class="nap-name"><?php echo esc_html( $office['name'] ); ?></h3>
+                    <?php if ( ! empty( $office['is_service_area'] ) ) : ?>
+                        <?php // The firm has no office in this town. Say so plainly, above
+                              // the address, so the parent office's address below is never
+                              // read as a local one. ?>
+                        <p class="nap-serving-note"><?php
+                            printf(
+                                /* translators: 1: town served, e.g. "Summerville"; 2: office the firm actually occupies, e.g. "North Charleston". */
+                                esc_html__( 'We serve %1$s clients from our %2$s office — there is no Roden Law office in %1$s.', 'roden-law' ),
+                                esc_html( $office['market_name'] ),
+                                esc_html( $office['parent_office_name'] )
+                            );
+                        ?></p>
+                    <?php endif; ?>
                     <div class="nap-details">
                         <div class="nap-col">
                             <span class="nap-label"><?php esc_html_e( 'Address', 'roden-law' ); ?></span>
@@ -157,7 +187,9 @@ $int_is_statutory = ( $int_statute && $int_statute['is_override'] );
             $all_siblings_args = array(
                 'post_type'      => 'practice_area',
                 'post_parent'    => $post->post_parent,
-                'posts_per_page' => 10,
+                // Was 10, which silently truncated once markets outgrew the six
+                // offices — leaving office cards unlinked at random.
+                'posts_per_page' => -1,
                 'meta_key'       => '_roden_pa_office_key',
                 'meta_compare'   => 'EXISTS',
             );
