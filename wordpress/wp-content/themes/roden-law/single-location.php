@@ -141,7 +141,7 @@ if ( $is_state_page ) :
         <aside class="sidebar sidebar-location">
             <div class="sidebar-sticky">
                 <div class="sidebar-widget">
-                    <h2 class="widget-title"><?php echo esc_html($state_full); ?> Offices</h2>
+                    <h3 class="widget-title"><?php echo esc_html($state_full); ?> Offices</h3>
                     <ul class="sidebar-links">
                         <?php foreach ( $state_offices as $k => $o ) :
                             $slug = sanitize_title( $o['market_name'] );
@@ -158,7 +158,7 @@ if ( $is_state_page ) :
                 $other_offices = array_filter($firm['offices'], fn($o) => $o['state'] === $other_state);
                 if ($other_offices) : ?>
                 <div class="sidebar-widget">
-                    <h2 class="widget-title"><?php echo esc_html($other_state_full); ?> Offices</h2>
+                    <h3 class="widget-title"><?php echo esc_html($other_state_full); ?> Offices</h3>
                     <ul class="sidebar-links">
                         <?php foreach ( $other_offices as $k => $o ) :
                             $slug = sanitize_title( $o['market_name'] );

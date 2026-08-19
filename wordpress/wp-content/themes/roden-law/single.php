@@ -143,7 +143,7 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
                 ?>
                 <!-- Categories -->
                 <div class="sidebar-widget">
-                    <h2 class="widget-title"><?php esc_html_e( 'Categories', 'roden-law' ); ?></h2>
+                    <h3 class="widget-title"><?php esc_html_e( 'Categories', 'roden-law' ); ?></h3>
                     <ul class="sidebar-links">
                         <?php
                         $cats = get_terms(['taxonomy'=>'practice_category','hide_empty'=>true]);
@@ -157,7 +157,7 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
 
                 <!-- Recent Posts -->
                 <div class="sidebar-widget">
-                    <h2 class="widget-title"><?php esc_html_e( 'Recent Posts', 'roden-law' ); ?></h2>
+                    <h3 class="widget-title"><?php esc_html_e( 'Recent Posts', 'roden-law' ); ?></h3>
                     <ul class="sidebar-posts">
                         <?php
                         // Unfiltered, this listed whichever posts were newest —
@@ -182,7 +182,7 @@ $atty_title = $atty ? get_post_meta( $atty->ID, '_roden_atty_title', true ) : ''
 
                 <!-- Practice Areas -->
                 <div class="sidebar-widget">
-                    <h2 class="widget-title"><?php esc_html_e( 'Practice Areas', 'roden-law' ); ?></h2>
+                    <h3 class="widget-title"><?php esc_html_e( 'Practice Areas', 'roden-law' ); ?></h3>
                     <?php
                     $pa_args = ['post_type'=>'practice_area','posts_per_page'=>6,'post_parent'=>0,'orderby'=>'menu_order','order'=>'ASC'];
                     if ( $blog_mq ) {

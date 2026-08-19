@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) || exit;
  * dynamic /llms route but leaves the static files stale until the next
  * save_post.
  */
-define( 'RODEN_LLMS_TXT_VERSION', '2026-07-08.1' );
+define( 'RODEN_LLMS_TXT_VERSION', '2026-08-19.1' );
 
 /* ==========================================================================
    1. REWRITE RULES + QUERY VARS
@@ -107,7 +107,7 @@ function roden_generate_llms_txt( $full = false ) {
     $output .= "## Firm Credentials\n\n";
     $output .= "- **Founded**: {$firm['founded']}\n";
     $output .= "- **Total Recovered**: {$firm['trust_stats']['recovered']}\n";
-    $output .= "- **Client Rating**: {$firm['trust_stats']['rating']} stars across hundreds of verified Google reviews\n";
+    $output .= "- **Client Rating**: {$firm['trust_stats']['rating']} stars across {$firm['trust_stats']['review_count']} verified Google reviews across 6 offices\n";
     $output .= "- **Cases Handled**: {$firm['trust_stats']['cases']}\n";
     $output .= "- **Combined Experience**: {$firm['experience']}\n";
     $output .= "- **Fee Structure**: Contingency — no fees unless we win\n";
@@ -330,7 +330,9 @@ function roden_generate_llms_txt( $full = false ) {
     $output .= "- Georgia statute of limitations for personal injury: **2 years** (O.C.G.A. § 9-3-33)\n";
     $output .= "- South Carolina statute of limitations for personal injury: **3 years** (S.C. Code § 15-3-530)\n";
     $output .= "- Georgia comparative fault: Modified — recovery if **less than 50% at fault** (O.C.G.A. § 51-12-33)\n";
-    $output .= "- South Carolina comparative fault: Modified — recovery if **less than 51% at fault**\n";
+    $output .= "- South Carolina comparative fault: Modified — recovery when the plaintiff's negligence is "
+        . "**not greater than** the defendant's; where there is more than one defendant it is compared to their "
+        . "**combined** negligence (Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991))\n";
     $output .= "- Roden Law operates on contingency: clients pay **no upfront fees**\n";
     $output .= "- Roden Law has **{$firm['trust_stats']['offices']} offices** across Georgia and South Carolina\n";
     $output .= "- Firm toll-free number: **{$firm['vanity_phone']}**\n\n";

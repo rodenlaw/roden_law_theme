@@ -23,6 +23,21 @@
 
 defined( 'ABSPATH' ) || exit;
 
+/**
+ * Minimum GBP reviews before an office publishes an AggregateRating.
+ *
+ * A star rating derived from one or two reviews is not an aggregate — it is a
+ * single opinion wearing schema. Publishing one (and, worse, publishing the
+ * firm-wide 4.9 over it) misrepresents the office to both Google and to any AI
+ * engine reading the markup, and unrepresentative aggregate ratings are a
+ * structured-data policy problem in their own right.
+ *
+ * As of Aug 2026 this suppresses Darien (0 reviews), North Charleston (2),
+ * Columbia (2) and Myrtle Beach (2). They start publishing automatically once
+ * the counts in inc/firm-data.php are updated past the threshold.
+ */
+defined( 'RODEN_MIN_AGGREGATE_REVIEWS' ) || define( 'RODEN_MIN_AGGREGATE_REVIEWS', 5 );
+
 /* ==========================================================================
    HELPERS
    ========================================================================== */
@@ -516,11 +531,12 @@ function roden_schema_legal_service( $firm ) {
     // Only emit aggregateRating when we have a real, verifiable review count
     // (the live per-office GBP sum from firm-data). Never fall back to a
     // hardcoded figure — an inflated reviewCount is a Google structured-data
-    // violation and gets the rich result stripped.
+    // violation and gets the rich result stripped. Same floor as the per-office
+    // entities so one rule governs every rating the site publishes.
     if ( is_front_page() ) {
         $review_count = isset( $firm['trust_stats']['review_count'] ) ? intval( $firm['trust_stats']['review_count'] ) : 0;
         $rating       = isset( $firm['trust_stats']['rating'] ) ? $firm['trust_stats']['rating'] : '4.9';
-        if ( $review_count > 0 ) {
+        if ( $review_count >= RODEN_MIN_AGGREGATE_REVIEWS ) {
             $schema['aggregateRating'] = array(
                 '@type'       => 'AggregateRating',
                 'ratingValue' => $rating,
@@ -770,11 +786,14 @@ function roden_schema_local_business_office( $firm, $key, $office ) {
         $schema['sameAs'] = array_values( $office_same_as );
     }
 
-    // aggregateRating — output when per-office GBP review count has been populated.
-    // review_count and review_rating are set in inc/firm-data.php per office.
+    // aggregateRating — output only when this office has enough of its own GBP
+    // reviews to make an aggregate meaningful (RODEN_MIN_AGGREGATE_REVIEWS).
+    // review_count and review_rating are set in inc/firm-data.php per office and
+    // are that office's own live figures — never the firm-wide average, which
+    // would publish 4.9 over a two-review listing.
     $review_count  = isset( $office['review_count'] ) ? intval( $office['review_count'] ) : 0;
-    $review_rating = isset( $office['review_rating'] ) ? $office['review_rating'] : '4.9';
-    if ( $review_count > 0 ) {
+    $review_rating = isset( $office['review_rating'] ) ? $office['review_rating'] : '';
+    if ( $review_count >= RODEN_MIN_AGGREGATE_REVIEWS && '' !== $review_rating ) {
         $schema['aggregateRating'] = array(
             '@type'       => 'AggregateRating',
             'ratingValue' => $review_rating,
