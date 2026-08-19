@@ -582,8 +582,8 @@ msgid "5 star rating"
 msgstr "Calificación de 5 estrellas"
 
 #: front-page.php:323
-msgid "Hundreds of Five-Star Reviews"
-msgstr "Cientos de Reseñas de Cinco Estrellas"
+msgid "%d+ Verified Google Reviews"
+msgstr "%d+ Reseñas Verificadas de Google"
 
 #: front-page.php:324
 msgid "Our clients trust us to fight for maximum compensation."
@@ -2066,8 +2066,8 @@ msgid "No fees unless we win"
 msgstr "Sin honorarios a menos que ganemos"
 
 #: inc/template-tags.php:665
-msgid "Hundreds of 5-star reviews"
-msgstr "Cientos de reseñas de 5 estrellas"
+msgid "%d+ verified Google reviews"
+msgstr "%d+ reseñas verificadas de Google"
 
 #: inc/template-tags.php:678
 #: inc/template-tags.php:679
@@ -2300,8 +2300,8 @@ msgstr "%s / 5.0"
 
 #. translators: %s: star rating, e.g. "4.9".
 #: inc/template-tags.php:1350
-msgid "Average client rating across hundreds of verified Google reviews from our six offices"
-msgstr "Calificación promedio de clientes en cientos de reseñas verificadas de Google de nuestras seis oficinas"
+msgid "Average client rating across %d+ verified Google reviews from our six offices"
+msgstr "Calificación promedio de clientes en más de %d reseñas verificadas de Google de nuestras seis oficinas"
 
 #. translators: %s: founding year, e.g. "2013".
 #: inc/template-tags.php:1354

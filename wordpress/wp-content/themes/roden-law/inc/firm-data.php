@@ -1026,6 +1026,11 @@ EOT
     $data['trust_stats']['reviews'] = $review_total >= 20
         ? sprintf( '%d+ verified Google', intdiv( $review_total, 10 ) * 10 )
         : 'verified Google';
+
+    // The same figure as a bare integer. Display strings that must be
+    // translated need the number on its own — embedding the English phrase
+    // above into a Spanish sentence produced "170+ verified Google reseñas".
+    $data['trust_stats']['review_count_rounded'] = intdiv( $review_total, 10 ) * 10;
     $data['reviews'] = $data['trust_stats']['reviews'];
 
     // Per-office aliases
