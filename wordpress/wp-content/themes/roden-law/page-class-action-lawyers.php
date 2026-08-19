@@ -258,7 +258,7 @@ $firm = roden_firm_data();
 
                 <!-- Filing Deadlines -->
                 <div class="sidebar-widget sidebar-deadlines">
-                    <h2 class="widget-title">&#9201; Filing Deadlines</h2>
+                    <h3 class="widget-title">&#9201; Filing Deadlines</h3>
                     <div class="deadline-badges">
                         <div class="deadline-badge deadline-ga">
                             <span class="deadline-years">Varies</span>
@@ -274,7 +274,7 @@ $firm = roden_firm_data();
 
                 <!-- Related Practice Areas -->
                 <div class="sidebar-widget">
-                    <h2 class="widget-title">Related Practice Areas</h2>
+                    <h3 class="widget-title">Related Practice Areas</h3>
                     <?php
                     $related_pas = get_posts( array(
                         'post_type'      => 'practice_area',
@@ -294,7 +294,7 @@ $firm = roden_firm_data();
 
                 <!-- Why Roden Law -->
                 <div class="sidebar-widget sidebar-why-us">
-                    <h2 class="widget-title">Why Roden Law?</h2>
+                    <h3 class="widget-title">Why Roden Law?</h3>
                     <ul class="why-us-list">
                         <li>&#10003; <?php echo esc_html( $firm['recovered'] ); ?> Recovered for Clients</li>
                         <li>&#10003; <?php echo esc_html( $firm['rating'] ); ?>&#9733; Average Client Rating</li>

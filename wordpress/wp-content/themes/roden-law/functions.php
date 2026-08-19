@@ -448,8 +448,8 @@ function roden_register_sidebars() {
         'description'   => __( 'Sidebar for practice area pages', 'roden-law' ),
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget'  => '</div>',
-        'before_title'  => '<h2 class="widget-title">',
-        'after_title'   => '</h2>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
     ) );
 
     register_sidebar( array(
@@ -458,8 +458,8 @@ function roden_register_sidebars() {
         'description'   => __( 'Sidebar for location pages', 'roden-law' ),
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget'  => '</div>',
-        'before_title'  => '<h2 class="widget-title">',
-        'after_title'   => '</h2>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
     ) );
 
     register_sidebar( array(
@@ -468,8 +468,8 @@ function roden_register_sidebars() {
         'description'   => __( 'Sidebar for blog and resource pages', 'roden-law' ),
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget'  => '</div>',
-        'before_title'  => '<h2 class="widget-title">',
-        'after_title'   => '</h2>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
     ) );
 
     register_sidebar( array(
@@ -478,8 +478,8 @@ function roden_register_sidebars() {
         'description'   => __( 'Footer widget area', 'roden-law' ),
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget'  => '</div>',
-        'before_title'  => '<h2 class="widget-title">',
-        'after_title'   => '</h2>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
     ) );
 }
 

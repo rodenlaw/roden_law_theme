@@ -42,7 +42,7 @@ function roden_firm_data() {
                 'zip'          => '31406',
                 'phone'        => '(912) 303-5850',
                 'phone_raw'    => '+19123035850',
-                'gbp_url'      => 'https://share.google/pf1cxsIxuXgHTWwl2',
+                'gbp_url'      => 'https://www.google.com/maps/place/?q=place_id:ChIJITbCLWSe-4gRMCR5SgvdFxk',
                 'yelp_url'     => '',
                 'latitude'     => 32.004624,
                 'longitude'    => -81.108187,
@@ -91,8 +91,8 @@ Two things decide a large share of Savannah claims. Georgia generally requires t
 EOT
 ,
                 // GBP review count — powers per-office AggregateRating schema.
-                // VERIFY: pulled from Birdeye/Google Apr 2026. Update quarterly from GBP dashboard.
-                'review_count' => 58,
+                // VERIFY: live Google Business Profile, Aug 2026. Update quarterly from GBP dashboard.
+                'review_count' => 59,
                 'review_rating' => '4.9',
             ),
             'darien' => array(
@@ -104,7 +104,7 @@ EOT
                 'zip'          => '31305',
                 'phone'        => '(912) 303-5850',
                 'phone_raw'    => '+19123035850',
-                'gbp_url'      => 'https://share.google/WEJrZTzNzPAtkQ0xw',
+                'gbp_url'      => 'https://www.google.com/maps/place/?q=place_id:ChIJXQbDRmsr-4gRjV1Mk7Zh4-k',
                 'yelp_url'     => '',
                 'latitude'     => 31.378489,
                 'longitude'    => -81.433499,
@@ -147,9 +147,11 @@ Two things decide a large share of claims here. Georgia generally requires treat
 EOT
 ,
                 // GBP review count — powers per-office AggregateRating schema.
-                // VERIFY: Darien is a smaller satellite office. Update quarterly from GBP dashboard.
-                'review_count' => 12,
-                'review_rating' => '4.9',
+                // VERIFY: live Google Business Profile, Aug 2026. Darien has no reviews yet, so it
+                // falls under the AggregateRating emit threshold and no rating is published for
+                // this office. Update quarterly from GBP dashboard.
+                'review_count' => 0,
+                'review_rating' => '0.0',
             ),
             'charleston' => array(
                 'name'         => 'Roden Law — Charleston',
@@ -160,7 +162,7 @@ EOT
                 'zip'          => '29401',
                 'phone'        => '(843) 790-8999',
                 'phone_raw'    => '+18437908999',
-                'gbp_url'      => 'https://share.google/GfVAAnKPpCR6mdR8C',
+                'gbp_url'      => 'https://www.google.com/maps/place/?q=place_id:ChIJkx4ENNF7_ogRd1O08AhaJSw',
                 'yelp_url'     => '',
                 'latitude'     => 32.777514,
                 'longitude'    => -79.932945,
@@ -195,8 +197,8 @@ Conforme a la ley de Carolina del Sur, usted tiene **3 años para presentar la d
 EOT
 ,
                 // GBP review count — powers per-office AggregateRating schema.
-                // VERIFY: pulled from Birdeye/Google Apr 2026. Update quarterly from GBP dashboard.
-                'review_count' => 80,
+                // VERIFY: live Google Business Profile, Aug 2026. Update quarterly from GBP dashboard.
+                'review_count' => 105,
                 'review_rating' => '4.9',
             ),
             'north-charleston' => array(
@@ -208,7 +210,7 @@ EOT
                 'zip'          => '29405',
                 'phone'        => '(843) 612-6561',
                 'phone_raw'    => '+18436126561',
-                'gbp_url'      => 'https://share.google/v7fwlLKOUZVK5PSCd',
+                'gbp_url'      => 'https://www.google.com/maps/place/?q=place_id:ChIJS2CVHEh7_ogRIEA4SfdJ3A8',
                 'yelp_url'     => '',
                 'latitude'     => 32.847324,
                 'longitude'    => -79.961197,
@@ -243,8 +245,8 @@ Se aplican el **plazo de prescripción de 3 años de Carolina del Sur (S.C. Code
 EOT
 ,
                 // GBP review count — powers per-office AggregateRating schema.
-                // VERIFY: new office, may share Charleston GBP. Update quarterly from GBP dashboard.
-                'review_count' => 15,
+                // VERIFY: live Google Business Profile, Aug 2026 — its own listing, not Charleston's.
+                'review_count' => 2,
                 'review_rating' => '5.0',
             ),
             'columbia' => array(
@@ -256,7 +258,7 @@ EOT
                 'zip'          => '29201',
                 'phone'        => '(803) 219-2816',
                 'phone_raw'    => '+18032192816',
-                'gbp_url'      => 'https://share.google/MYa3mQpoPwZjCnrHj',
+                'gbp_url'      => 'https://www.google.com/maps/place/?q=place_id:ChIJQZdkRQCl-IgRVi202Pu6b1I',
                 'yelp_url'     => '',
                 'latitude'     => 34.006782,
                 'longitude'    => -81.034492,
@@ -290,9 +292,9 @@ La ley de Carolina del Sur otorga a los demandantes lesionados **tres años para
 EOT
 ,
                 // GBP review count — powers per-office AggregateRating schema.
-                // VERIFY: pulled Apr 2026. Update quarterly from GBP dashboard.
-                'review_count' => 18,
-                'review_rating' => '4.9',
+                // VERIFY: live Google Business Profile, Aug 2026. Update quarterly from GBP dashboard.
+                'review_count' => 2,
+                'review_rating' => '5.0',
             ),
             'myrtle-beach' => array(
                 'name'         => 'Roden Law — Myrtle Beach',
@@ -304,7 +306,7 @@ EOT
                 'zip'          => '29576',
                 'phone'        => '(843) 612-1980',
                 'phone_raw'    => '+18436121980',
-                'gbp_url'      => 'https://share.google/MqXF349LuG3dKLY1L',
+                'gbp_url'      => 'https://www.google.com/maps/place/?q=place_id:ChIJXV6kZKE5AIkRS6GJSoJ0xAA',
                 'yelp_url'     => '',
                 'latitude'     => 33.555038,
                 'longitude'    => -79.042453,
@@ -338,9 +340,9 @@ Carolina del Sur aplica un **plazo de prescripción de tres años conforme a S.C
 EOT
 ,
                 // GBP review count — powers per-office AggregateRating schema.
-                // VERIFY: pulled Apr 2026. Update quarterly from GBP dashboard.
-                'review_count' => 22,
-                'review_rating' => '4.9',
+                // VERIFY: live Google Business Profile, Aug 2026. Update quarterly from GBP dashboard.
+                'review_count' => 2,
+                'review_rating' => '5.0',
             ),
         ),
 
@@ -408,7 +410,7 @@ EOT
         'trust_stats' => array(
             'recovered'     => '$300M+',
             'rating'        => '4.9',
-            'reviews'       => 'Hundreds of 5-Star Reviews', // Non-numeric display copy. Real total is the live per-office GBP sum (~205); see review_count computed in the aliases section below.
+            'reviews'       => '',    // Derived in the aliases section below from the live per-office GBP sum — do not hand-write it.
             'review_count'  => 0,     // Computed below as the live sum of per-office GBP review_count — feeds schema AggregateRating reviewCount. Never hardcode; keep it honest + auto-updating.
             'cases'         => '5,000+',
             'experience'    => '62',
@@ -463,7 +465,11 @@ EOT
                 'statute_years'    => 3,
                 'statute_cite'     => 'S.C. Code § 15-3-530',
                 'comp_fault_rule'  => 'Modified — recover if less than 51% at fault',
-                'comp_fault_cite'  => '',
+                // South Carolina's comparative-fault rule is judicial, not statutory —
+                // adopted in Nelson for causes of action arising on or after 1991-07-01.
+                // Georgia's cite is a code section; South Carolina's is the case, and
+                // leaving it empty was why the SC rule read as an uncited assertion.
+                'comp_fault_cite'  => 'Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991)',
             ),
         ),
 
@@ -562,8 +568,7 @@ EOT
     // Live review count: sum of per-office Google Business Profile review counts.
     // Keeps schema AggregateRating reviewCount honest and auto-updating as the
     // per-office counts in the offices array are maintained — the real verifiable
-    // total, not a rounded marketing figure. Display copy stays non-numeric
-    // (trust_stats['reviews']); this number is for structured data only.
+    // total, not a rounded marketing figure.
     $review_total = 0;
     foreach ( $data['offices'] as $office_data ) {
         if ( isset( $office_data['review_count'] ) ) {
@@ -571,6 +576,17 @@ EOT
         }
     }
     $data['trust_stats']['review_count'] = $review_total;
+
+    // Display phrase, derived from the same live sum rather than written by hand.
+    // The hand-written value said "Hundreds of 5-Star Reviews" against a real
+    // total of 170, and it is substituted into "Rated %1$s stars from %2$s client
+    // reviews" — which rendered as "from Hundreds of 5-Star Reviews client
+    // reviews" on all 211 location pages. Deriving it keeps the claim true as the
+    // counts change and keeps that sentence grammatical.
+    $data['trust_stats']['reviews'] = $review_total >= 20
+        ? sprintf( '%d+ verified Google', intdiv( $review_total, 10 ) * 10 )
+        : 'verified Google';
+    $data['reviews'] = $data['trust_stats']['reviews'];
 
     // Per-office aliases
     foreach ( $data['offices'] as $key => &$office ) {

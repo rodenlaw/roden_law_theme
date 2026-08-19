@@ -111,7 +111,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
      ═══════════════════════════════════════════════════════════════════════ -->
 <section class="section-location-matrix">
     <div class="container">
-        <h2 class="matrix-title"><?php printf( /* translators: %s: practice area title. */ esc_html__( 'Our %s Offices', 'roden-law' ), esc_html( roden_pa_noun() ) ); ?></h2>
+        <h3 class="matrix-title"><?php printf( /* translators: %s: practice area title. */ esc_html__( 'Our %s Offices', 'roden-law' ), esc_html( roden_pa_noun() ) ); ?></h3>
         <div class="location-matrix-grid">
             <?php
             // Pre-build location page URL cache keyed by office key.
@@ -738,7 +738,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
 
                 <!-- Related Practice Areas -->
                 <div class="sidebar-widget">
-                    <h2 class="widget-title"><?php esc_html_e( 'Related Practice Areas', 'roden-law' ); ?></h2>
+                    <h3 class="widget-title"><?php esc_html_e( 'Related Practice Areas', 'roden-law' ); ?></h3>
                     <?php
                     $related_pas_args = array(
                         'post_type'      => 'practice_area',
@@ -763,7 +763,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
 
                 <!-- Why Roden Law -->
                 <div class="sidebar-widget sidebar-why-us">
-                    <h2 class="widget-title"><?php esc_html_e( 'Why Roden Law?', 'roden-law' ); ?></h2>
+                    <h3 class="widget-title"><?php esc_html_e( 'Why Roden Law?', 'roden-law' ); ?></h3>
                     <ul class="why-us-list">
                         <li>&#10003; <?php printf( /* translators: %s: amount recovered, e.g. "$300M+". */ esc_html__( '%s Recovered for Clients', 'roden-law' ), esc_html( $firm['recovered'] ) ); ?></li>
                         <li>&#10003; <?php printf( /* translators: %s: star rating followed by a star glyph, e.g. "4.9★". */ esc_html__( '%s Average Client Rating', 'roden-law' ), esc_html( $firm['rating'] ) . '&#9733;' ); ?></li>

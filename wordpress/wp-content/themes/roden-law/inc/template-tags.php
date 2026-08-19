@@ -1049,7 +1049,7 @@ function roden_neighborhood_grid( $current_post_id ) {
 function roden_contact_form_sidebar( $local_phone = '', $source = '' ) {
     ?>
     <div class="sidebar-contact-form">
-        <h2 class="form-title"><?php esc_html_e( 'Free Case Review', 'roden-law' ); ?></h2>
+        <h3 class="form-title"><?php esc_html_e( 'Free Case Review', 'roden-law' ); ?></h3>
         <p class="form-subtitle"><?php esc_html_e( 'No fees unless we win', 'roden-law' ); ?><br><?php esc_html_e( 'Hundreds of 5-star reviews', 'roden-law' ); ?></p>
         <form class="roden-sidebar-form" id="roden-sidebar-form" novalidate>
             <?php wp_nonce_field( 'roden_sidebar_form', 'roden_form_nonce' ); ?>
@@ -1296,7 +1296,7 @@ function roden_deadline_badges_sidebar( $state_keys ) {
     $multi = count( $resolved ) > 1;
     ?>
     <div class="sidebar-widget sidebar-deadlines">
-        <h2 class="widget-title">&#9201; <?php esc_html_e( 'Filing Deadlines', 'roden-law' ); ?></h2>
+        <h3 class="widget-title">&#9201; <?php esc_html_e( 'Filing Deadlines', 'roden-law' ); ?></h3>
         <div class="deadline-badges">
             <?php foreach ( $resolved as $key => $statute ) : ?>
                 <div class="deadline-badge <?php echo ( 'GA' === $key ) ? 'deadline-ga' : 'deadline-sc'; ?>">
@@ -3025,7 +3025,7 @@ function roden_related_resources( $args = array() ) {
     // Sidebar list
     ?>
     <div class="sidebar-widget sidebar-related-resources">
-        <h2 class="widget-title"><?php echo esc_html( $args['heading'] ); ?></h2>
+        <h3 class="widget-title"><?php echo esc_html( $args['heading'] ); ?></h3>
         <ul class="sidebar-links">
             <?php foreach ( $items as $item ) : ?>
                 <li>

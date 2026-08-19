@@ -48,7 +48,7 @@ $footer_sc_pillars = array(
 
                 <!-- Column 1: Firm Info -->
                 <div class="footer-col footer-about">
-                    <h2 class="footer-heading"><?php echo esc_html( $firm['name'] ); ?></h2>
+                    <h3 class="footer-heading"><?php echo esc_html( $firm['name'] ); ?></h3>
                     <p class="footer-description">
                         <?php echo esc_html( $firm['trust_stats']['recovered'] ); ?>
                         <?php esc_html_e( 'recovered for injury victims across Georgia and South Carolina. No fees unless we win.', 'roden-law' ); ?>
@@ -94,9 +94,9 @@ $footer_sc_pillars = array(
 
                 <!-- Column 2: Practice Areas -->
                 <div class="footer-col footer-practice-areas">
-                    <h2 class="footer-heading footer-heading-accent">
+                    <h3 class="footer-heading footer-heading-accent">
                         <?php esc_html_e( 'Practice Areas', 'roden-law' ); ?>
-                    </h2>
+                    </h3>
                     <ul class="footer-links">
                         <?php foreach ( $footer_practice_areas as $label => $slug ) : ?>
                             <li>
@@ -120,9 +120,9 @@ $footer_sc_pillars = array(
 
                 <!-- Column 3: Our Offices — grouped by state with state-landing header links -->
                 <div class="footer-col footer-offices-col">
-                    <h2 class="footer-heading footer-heading-accent">
+                    <h3 class="footer-heading footer-heading-accent">
                         <?php esc_html_e( 'Our Offices', 'roden-law' ); ?>
-                    </h2>
+                    </h3>
                     <?php
                     $state_buckets = array(
                         array(
@@ -147,14 +147,14 @@ $footer_sc_pillars = array(
                             : home_url( '/locations/' . $bucket['state_slug'] . '/' );
                     ?>
                         <div class="footer-state-bucket">
-                            <h3 class="footer-state-heading">
+                            <h4 class="footer-state-heading">
                                 <a href="<?php echo esc_url( $state_landing_url ); ?>">
                                     <?php
                                     /* translators: %s: state name (Georgia or South Carolina) */
                                     echo esc_html( sprintf( _x( '%s Offices', 'state name', 'roden-law' ), $bucket['state_full'] ) );
                                     ?>
                                 </a>
-                            </h3>
+                            </h4>
                             <?php foreach ( $firm['offices'] as $key => $office ) :
                                 if ( $office['state'] !== $bucket['state_abbr'] ) {
                                     continue;
@@ -182,9 +182,9 @@ $footer_sc_pillars = array(
 
                 <!-- Column 4: South Carolina statewide pillars -->
                 <div class="footer-col footer-sc-statewide">
-                    <h2 class="footer-heading footer-heading-accent">
+                    <h3 class="footer-heading footer-heading-accent">
                         <?php esc_html_e( 'South Carolina', 'roden-law' ); ?>
-                    </h2>
+                    </h3>
                     <ul class="footer-links">
                         <?php // All six SC pillars have live /es/ twins — link the current locale's version.
                         foreach ( $footer_sc_pillars as $label => $path ) : ?>
@@ -199,9 +199,9 @@ $footer_sc_pillars = array(
 
                 <!-- Column 5: Free Case Review CTA -->
                 <div class="footer-col footer-form-col">
-                    <h2 class="footer-heading footer-heading-accent">
+                    <h3 class="footer-heading footer-heading-accent">
                         <?php esc_html_e( 'Free Case Review', 'roden-law' ); ?>
-                    </h2>
+                    </h3>
                     <p class="footer-cta-text"><?php esc_html_e( 'Injured? Find out what your case is worth. No fees unless we win.', 'roden-law' ); ?></p>
                     <a href="<?php echo esc_url( roden_lang_home_url( $footer_lang, '/contact/' ) ); ?>" class="footer-cta-btn"><?php esc_html_e( 'Get Your Free Case Review', 'roden-law' ); ?></a>
                 </div>
