@@ -397,6 +397,14 @@ EOT
                 'trauma_center' => 'Trident Medical Center (Adult Level II)',
                 'latitude'      => 33.018497,
                 'longitude'     => -80.175560,
+                'local_context' => <<<'EOT'
+Filing a personal injury case in Summerville means filing in the **{office_court}** — and Dorchester County's courthouse is not in Summerville. Civil complaints go to **{office_court_address}**, about 25 miles down US-78, through South Carolina's mandatory **Tyler Odyssey e-filing system**, with most cases routed to mediation before trial under SC ADR Rule 3. The Troy Knight Judicial Complex on Deming Way in Summerville is closer, but it houses Family Court and does not hear personal injury claims.
+
+Summerville's crash pattern is driven by one thing: **I-26**, the freight artery carrying container traffic between the Port of Charleston and Columbia, Charlotte and the Upstate. Trucks leaving the Hugh Leatherman and Columbus Street terminals for inland destinations pass through here, and that through-traffic meets one of the fastest-growing residential areas in South Carolina on roads never built for the combination. **US-17A (Main Street/Boone Hill Road)**, **Berlin G. Myers Parkway**, **Old Trolley Road**, **Dorchester Road** and **Central Avenue** carry most of the area's serious-injury crashes. Severe injuries are routed to **Trident Medical Center** in North Charleston, the Lowcountry's **Adult Level II** trauma centre, or to **MUSC** in Charleston for Level I and paediatric trauma.
+
+South Carolina applies a **{sol_years}-year statute of limitations under {sol_cite}**. Recovery is barred once a plaintiff's own negligence is *greater than* the combined negligence of the defendants — the modified comparative-fault rule adopted in *Nelson v. Concrete Supply Co.* Stacking of UM/UIM coverage is permitted and is often the largest recovery source when a minimum-limits driver causes a catastrophic crash.
+EOT
+,
             ),
             'goose-creek' => array(
                 'market_name'   => 'Goose Creek',
@@ -412,6 +420,14 @@ EOT
                 'trauma_center' => 'Trident Medical Center (Adult Level II)',
                 'latitude'      => 32.981000,
                 'longitude'     => -80.032600,
+                'local_context' => <<<'EOT'
+Filing a personal injury case in Goose Creek means filing in the **{office_court}** at **{office_court_address}** — Berkeley County, not Charleston County, even though Goose Creek sits minutes from North Charleston. Complaints go through South Carolina's mandatory **Tyler Odyssey e-filing system**, and most cases are routed to mediation before trial under SC ADR Rule 3. Berkeley County recorded **58 fatal collisions in 2023**, the fifth-highest of any county in South Carolina, according to the SCDPS Traffic Collision Fact Book.
+
+Goose Creek's defining hazard is **US-52**, where heavy truck traffic crosses active railroad grade crossings. The corridor funnels logging trucks out of Berkeley County's timber land and oversized military transports out of **Joint Base Charleston**, and it has produced a documented pattern of train-versus-truck collisions unlike anywhere else in the Lowcountry — including a September 2024 collision in which a train struck a tractor-trailer hauling a military vehicle, and a January 2021 grade-crossing crash near St. James Avenue that sent six people to hospital. Away from the rail line, **US-176 at US-17A (Carnes Crossroads)**, **Red Bank Road** and **Henry E. Brown Jr. Boulevard** carry the bulk of local injury crashes. Severe injuries go to **Trident Medical Center**, the **Adult Level II** trauma centre in North Charleston, or to **MUSC** for Level I and paediatric care.
+
+South Carolina applies a **{sol_years}-year statute of limitations under {sol_cite}**. Recovery is barred once a plaintiff's own negligence is *greater than* the combined negligence of the defendants — *Nelson v. Concrete Supply Co.* Where a railroad or a federally regulated motor carrier is involved, event-recorder and hours-of-service data are frequently decisive and are routinely overwritten unless preserved early.
+EOT
+,
             ),
             'moncks-corner' => array(
                 'market_name'   => 'Moncks Corner',
@@ -427,6 +443,14 @@ EOT
                 'trauma_center' => 'Trident Medical Center (Adult Level II)',
                 'latitude'      => 33.195900,
                 'longitude'     => -80.014100,
+                'local_context' => <<<'EOT'
+Moncks Corner is the Berkeley County seat, which means the **{office_court}** — where every Berkeley County personal injury case is filed — sits in town at **{office_court_address}**. Complaints are submitted through South Carolina's mandatory **Tyler Odyssey e-filing system**, and most cases are routed to mediation before trial under SC ADR Rule 3. Berkeley County recorded **58 fatal collisions in 2023**, fifth-highest in South Carolina per the SCDPS Traffic Collision Fact Book.
+
+The town sits where three kinds of traffic meet. **US-52** carries commercial and logging trucks south toward Goose Creek and the Port of Charleston across active rail crossings. **US-17A** and **SC-6** carry commuter traffic from the fast-growing Cane Bay and Carnes Crossroads developments toward Summerville and North Charleston. And **Lake Moultrie** draws seasonal recreational traffic — boat trailers, out-of-town drivers unfamiliar with two-lane rural roads, and the alcohol-involved crashes that follow a summer weekend on the water. There is no trauma centre in Moncks Corner: severe injuries are transported to **Trident Medical Center** in North Charleston (**Adult Level II**) or to **MUSC** in Charleston for Level I and paediatric trauma.
+
+South Carolina applies a **{sol_years}-year statute of limitations under {sol_cite}**. Recovery is barred once a plaintiff's own negligence is *greater than* the combined negligence of the defendants — *Nelson v. Concrete Supply Co.* Stacking of UM/UIM coverage is permitted, and on rural Berkeley County roads where minimum-limits policies are common it is frequently the largest available source of recovery.
+EOT
+,
             ),
             'mount-pleasant' => array(
                 'market_name'   => 'Mount Pleasant',
@@ -442,6 +466,14 @@ EOT
                 'trauma_center' => 'MUSC Medical Center (Adult and Pediatric Level I)',
                 'latitude'      => 32.832300,
                 'longitude'     => -79.828400,
+                'local_context' => <<<'EOT'
+Filing a personal injury case in Mount Pleasant means filing in the **{office_court}** at **{office_court_address}** — across the Ravenel Bridge in downtown Charleston. Complaints go through South Carolina's mandatory **Tyler Odyssey e-filing system**, with most cases routed to mediation before trial under SC ADR Rule 3. Charleston County recorded **16,118 collisions in 2023**, the second-highest total of any county in South Carolina, including 70 fatal collisions and 75 people killed, per the SCDPS Traffic Collision Fact Book.
+
+**US-17** is the county's single worst roadway, accounting for 1,942 of those collisions on its own. Through Mount Pleasant it runs as **Johnnie Dodds Boulevard** and **Coleman Boulevard**, carrying commuter volume, tourist traffic and port freight through signalised intersections and constant turning movements. The **Arthur Ravenel Jr. Bridge** concentrates every east-bound Charleston commuter into a fixed corridor with no shoulder escape, and the **Isle of Palms Connector** adds seasonal beach traffic. Container trucks serving the **Wando Welch Terminal** — one of the busiest container terminals on the East Coast — move through Mount Pleasant streets to reach I-526. Severe injuries are routed to **MUSC** in Charleston, the state's only **Adult and Paediatric Level I** trauma centre.
+
+South Carolina applies a **{sol_years}-year statute of limitations under {sol_cite}**. Recovery is barred once a plaintiff's own negligence is *greater than* the combined negligence of the defendants — *Nelson v. Concrete Supply Co.* Stacking of UM/UIM coverage is permitted and often matters most when an out-of-state visitor is struck by a minimum-limits driver.
+EOT
+,
             ),
             'hilton-head' => array(
                 'market_name'   => 'Hilton Head Island',
@@ -457,6 +489,14 @@ EOT
                 'trauma_center' => 'MUSC Medical Center (Adult and Pediatric Level I)',
                 'latitude'      => 32.216300,
                 'longitude'     => -80.752600,
+                'local_context' => <<<'EOT'
+Filing a personal injury case arising on Hilton Head Island means filing in the **{office_court}** at **{office_court_address}** — roughly 40 miles off-island in Beaufort. Complaints are submitted through South Carolina's mandatory **Tyler Odyssey e-filing system**, and most cases are routed to mediation before trial under SC ADR Rule 3.
+
+Hilton Head's crash profile is unlike anywhere else Roden Law practises, because the island has exactly one road on and off it. **US-278** carries every resident, worker, delivery vehicle and visitor across the bridges at Mackay Creek and Skull Creek, and a single crash on that corridor has no alternate route to absorb it. On-island, **William Hilton Parkway**, **Pope Avenue** and the **Sea Pines Circle** rotary mix unfamiliar seasonal drivers with more than sixty miles of public pathways used by cyclists and pedestrians — a combination that produces a disproportionate share of vulnerable-road-user injuries. There is **no DPH-designated trauma centre on the island**: seriously injured patients are stabilised locally and transported off-island, which lengthens the treatment record and makes early preservation of EMS and transfer documentation important.
+
+South Carolina applies a **{sol_years}-year statute of limitations under {sol_cite}**. Recovery is barred once a plaintiff's own negligence is *greater than* the combined negligence of the defendants — *Nelson v. Concrete Supply Co.* Visitors injured on the island should not assume their home-state policy governs: South Carolina permits stacking of UM/UIM coverage, and that often decides the real value of a claim against a minimum-limits local driver.
+EOT
+,
             ),
 
             /* ---- Grand Strand ------------------------------------------ */
@@ -475,6 +515,14 @@ EOT
                 'trauma_center' => 'Conway Medical Center (Adult Level III)',
                 'latitude'      => 33.835900,
                 'longitude'     => -79.047800,
+                'local_context' => <<<'EOT'
+Conway is where Grand Strand personal injury cases are actually filed. The **{office_court}** sits at **{office_court_address}**, which means a Myrtle Beach crash, a Surfside Beach crash and a Conway crash all end up before the same court in this town. Complaints are submitted through South Carolina's mandatory **Tyler Odyssey e-filing system**, and most cases are routed to mediation before trial under SC ADR Rule 3. Horry County recorded **11,109 collisions and 64 fatal collisions in 2023**, the fourth-highest totals in South Carolina per the SCDPS Traffic Collision Fact Book.
+
+Two corridors dominate the local crash picture, and they fail in opposite ways. **SC-22, the Conway Bypass**, is a high-speed limited-access route carrying freight from I-95 to the coast across elevated bridge sections over the Waccamaw River — where a truck striking stopped traffic has nowhere to go, and neither does anyone in front of it. **US-501** between Conway and Myrtle Beach is the reverse: a congested commercial corridor absorbing tourist volume through signalised intersections and constant turning movements. **Conway Medical Center** is the local **Adult Level III** trauma centre; the most severe injuries are transferred to **Grand Strand Medical Center** in Myrtle Beach, an **Adult Level I** centre.
+
+South Carolina applies a **{sol_years}-year statute of limitations under {sol_cite}**. Recovery is barred once a plaintiff's own negligence is *greater than* the combined negligence of the defendants — *Nelson v. Concrete Supply Co.* For visitors injured on the Grand Strand, stacked UM/UIM coverage from an out-of-state policy is frequently the difference between a minimum-limits recovery and a full one.
+EOT
+,
             ),
             'north-myrtle-beach' => array(
                 'market_name'   => 'North Myrtle Beach',
@@ -490,6 +538,14 @@ EOT
                 'trauma_center' => 'Grand Strand Medical Center (Adult Level I)',
                 'latitude'      => 33.816000,
                 'longitude'     => -78.680000,
+                'local_context' => <<<'EOT'
+Filing a personal injury case in North Myrtle Beach means filing in the **{office_court}** at **{office_court_address}** — inland in Conway, where all Horry County civil cases are heard. Complaints go through South Carolina's mandatory **Tyler Odyssey e-filing system**, with most cases routed to mediation before trial under SC ADR Rule 3. Horry County recorded **11,109 collisions and 64 fatal collisions in 2023**, fourth-highest in the state per the SCDPS Traffic Collision Fact Book.
+
+North Myrtle Beach's crash pattern is seasonal and vehicular-mix driven. **US-17 (Kings Highway)** and **Main Street** carry beach traffic through signalised commercial strips, while **SC-31 (Carolina Bays Parkway)** moves it at highway speed a few miles inland — so the same trip can involve two entirely different risk profiles. Golf carts are a genuine feature of local traffic rather than a novelty: under **S.C. Code § 56-2-100** a permitted cart may operate only in daylight, within four miles of the owner's address, on roads posted 35 mph or less, and only with a licensed driver. Crashes outside those limits open the door to negligence-per-se arguments and to claims against rental operators. Severe injuries are routed to **Grand Strand Medical Center** in Myrtle Beach, the region's **Adult Level I** trauma centre.
+
+South Carolina applies a **{sol_years}-year statute of limitations under {sol_cite}**. Recovery is barred once a plaintiff's own negligence is *greater than* the combined negligence of the defendants — *Nelson v. Concrete Supply Co.* Stacking of UM/UIM coverage is permitted and often decides the outcome when a visitor is hit by a minimum-limits driver.
+EOT
+,
             ),
             'pawleys-island' => array(
                 'market_name'   => 'Pawleys Island',
@@ -505,6 +561,14 @@ EOT
                 'trauma_center' => 'Tidelands Waccamaw Community Hospital (Adult Level IV)',
                 'latitude'      => 33.429300,
                 'longitude'     => -79.122000,
+                'local_context' => <<<'EOT'
+Filing a personal injury case in Pawleys Island means filing in the **{office_court}** at **{office_court_address}** — Georgetown County, not Horry, even though Pawleys Island sits on the Grand Strand and most local traffic flows north toward Murrells Inlet and Myrtle Beach. Complaints are submitted through South Carolina's mandatory **Tyler Odyssey e-filing system**, and most cases are routed to mediation before trial under SC ADR Rule 3.
+
+**US-17 (Ocean Highway)** is effectively the only through route, and along the Waccamaw Neck it narrows from the multi-lane divided highway drivers experience further north into sections with at-grade beach access turns, cyclists, and vehicles slowing for causeways to the island itself. Crashes here often involve a driver travelling at highway speed meeting a turning or stopped vehicle with no dedicated turn lane. The nearest designated trauma centre is **Tidelands Waccamaw Community Hospital** in Murrells Inlet, which carries an **Adult Level IV** designation — the lowest tier, meaning it stabilises and transfers rather than providing definitive trauma care. Severely injured patients are moved on to **Grand Strand Medical Center** in Myrtle Beach (**Adult Level I**), and that transfer chain is a routine feature of serious Pawleys Island cases.
+
+South Carolina applies a **{sol_years}-year statute of limitations under {sol_cite}**. Recovery is barred once a plaintiff's own negligence is *greater than* the combined negligence of the defendants — *Nelson v. Concrete Supply Co.* Stacking of UM/UIM coverage is permitted and is frequently the largest available recovery source in a serious Waccamaw Neck crash.
+EOT
+,
             ),
 
             /* ---- Midlands ---------------------------------------------- */
@@ -523,6 +587,14 @@ EOT
                 'trauma_center' => 'Regional Medical Center, Orangeburg (Adult Level III)',
                 'latitude'      => 33.491800,
                 'longitude'     => -80.855600,
+                'local_context' => <<<'EOT'
+Orangeburg County personal injury cases are filed in the **{office_court}**, in the First Judicial Circuit, through South Carolina's mandatory **Tyler Odyssey e-filing system**, with most cases routed to mediation before trial under SC ADR Rule 3. Roden Law is admitted throughout South Carolina and handles Orangeburg cases from our Columbia office. The county recorded **34 fatal collisions in 2023**, the ninth-highest of any county in the state, per the SCDPS Traffic Collision Fact Book — a striking figure for a county of its population.
+
+That concentration has a structural cause: Orangeburg County sits on the **I-26 / I-95 junction**, where the Charleston-to-Columbia freight corridor crosses the main Northeast-to-Florida interstate. Long-haul traffic with no local destination passes through in volume, and it feeds onto surface routes never designed to receive it — **US-301**, **US-601**, **US-21** and **US-178** carry a mix of interstate overflow, agricultural equipment and local traffic on largely two-lane alignments. **The Regional Medical Center** in Orangeburg is the county's **Adult Level III** trauma centre; the most severe injuries are transferred to **Prisma Health Richland** in Columbia, an **Adult Level I** centre.
+
+South Carolina applies a **{sol_years}-year statute of limitations under {sol_cite}**. Recovery is barred once a plaintiff's own negligence is *greater than* the combined negligence of the defendants — *Nelson v. Concrete Supply Co.* Where an interstate motor carrier is involved, federal hours-of-service and maintenance records under 49 C.F.R. are often decisive, and they are routinely overwritten unless preserved early.
+EOT
+,
             ),
             'sumter' => array(
                 'market_name'   => 'Sumter',
@@ -538,6 +610,14 @@ EOT
                 'trauma_center' => 'Prisma Health Richland (Adult Level I)',
                 'latitude'      => 33.920400,
                 'longitude'     => -80.341400,
+                'local_context' => <<<'EOT'
+Sumter County personal injury cases are filed in the **{office_court}** at **{office_court_address}**, in the Third Judicial Circuit, through South Carolina's mandatory **Tyler Odyssey e-filing system**, with most cases routed to mediation before trial under SC ADR Rule 3. Roden Law is admitted throughout South Carolina and handles Sumter cases from our Columbia office. The county recorded **30 fatal collisions in 2023**, tenth-highest in the state per the SCDPS Traffic Collision Fact Book.
+
+Sumter's traffic is shaped by **Shaw Air Force Base**, which puts a large, largely young and frequently rotating driving population onto local roads, and by the town's role as a regional hub for the surrounding rural counties. **US-76/US-378**, **US-521**, **US-15** and **SC-441** carry that combined military, commuter and agricultural traffic, much of it on two-lane alignments with unlit shoulders and at-grade field access — the conditions behind South Carolina's persistent pattern of rural fatal crashes. There is no designated trauma centre in Sumter County: seriously injured patients are transported to **Prisma Health Richland** in Columbia, an **Adult Level I** centre, roughly 45 miles away.
+
+South Carolina applies a **{sol_years}-year statute of limitations under {sol_cite}**. Recovery is barred once a plaintiff's own negligence is *greater than* the combined negligence of the defendants — *Nelson v. Concrete Supply Co.* Where an active-duty service member is injured, coordination between military health benefits, TRICARE recovery rights and the civil claim needs to be handled early, because the lien position affects what actually reaches the client.
+EOT
+,
             ),
             'blythewood' => array(
                 'market_name'   => 'Blythewood',
@@ -553,6 +633,14 @@ EOT
                 'trauma_center' => 'Prisma Health Richland (Adult Level I)',
                 'latitude'      => 34.212900,
                 'longitude'     => -80.973000,
+                'local_context' => <<<'EOT'
+Filing a personal injury case in Blythewood means filing in the **{office_court}** at **{office_court_address}** — Richland County, in downtown Columbia. Complaints go through South Carolina's mandatory **Tyler Odyssey e-filing system**, with most cases routed to mediation before trial under SC ADR Rule 3. Richland County recorded **12,450 collisions and 58 fatal collisions in 2023**, the third-highest collision total in South Carolina per the SCDPS Traffic Collision Fact Book.
+
+Blythewood's exposure is almost entirely **I-77**. The interstate is the freight spine between Columbia and Charlotte, and Blythewood sits on the stretch where long-haul trucks are still at highway speed while local traffic is entering and leaving at **Exit 27 (SC-34)** and **Blythewood Road**. The result is a classic speed-differential corridor: a merging vehicle and an 80,000-pound truck arriving at the same point with a 20 mph gap between them. Rapid residential growth north of Columbia has added commuter volume to interchanges built for a much smaller town. Severe injuries are routed to **Prisma Health Richland** in Columbia, the Midlands' **Adult Level I** trauma centre.
+
+South Carolina applies a **{sol_years}-year statute of limitations under {sol_cite}**. Recovery is barred once a plaintiff's own negligence is *greater than* the combined negligence of the defendants — *Nelson v. Concrete Supply Co.* Where an interstate motor carrier is involved, federal hours-of-service and maintenance records under 49 C.F.R. are often decisive, and they are routinely overwritten unless preserved early.
+EOT
+,
             ),
             'irmo' => array(
                 'market_name'   => 'Irmo',
@@ -568,6 +656,14 @@ EOT
                 'trauma_center' => 'Lexington Medical Center (Adult Level III)',
                 'latitude'      => 34.085700,
                 'longitude'     => -81.183400,
+                'local_context' => <<<'EOT'
+Filing a personal injury case in Irmo means filing in the **{office_court}** at **{office_court_address}** in downtown Columbia. Complaints are submitted through South Carolina's mandatory **Tyler Odyssey e-filing system**, and most cases are routed to mediation before trial under SC ADR Rule 3. Richland County recorded **12,450 collisions and 58 fatal collisions in 2023**, the third-highest collision total in the state per the SCDPS Traffic Collision Fact Book.
+
+Irmo's crash pattern is retail-corridor congestion rather than open-road speed. **I-26 at St. Andrews Road** is one of the most crash-prone interchanges in South Carolina, feeding traffic into the **Harbison Boulevard** retail district — a concentration of shopping centres, restaurants and hotels whose access drives produce constant turning and merging conflicts. **Lake Murray Boulevard (SC-60)** and **Broad River Road (US-176)** carry the same volume through signalised commercial strips, and **Lake Murray** adds weekend recreational traffic and boat trailers to the mix. **Lexington Medical Center** is the nearest designated centre at **Adult Level III**; the most severe injuries go to **Prisma Health Richland**, the Midlands' **Adult Level I** trauma centre.
+
+South Carolina applies a **{sol_years}-year statute of limitations under {sol_cite}**. Recovery is barred once a plaintiff's own negligence is *greater than* the combined negligence of the defendants — *Nelson v. Concrete Supply Co.* In low-speed retail-corridor collisions the injury is frequently soft-tissue and the insurer's first move is to argue the impact was too minor to hurt anyone — which makes early, consistent medical documentation decisive.
+EOT
+,
             ),
 
             /* ---- Upstate ------------------------------------------------
@@ -592,6 +688,14 @@ EOT
                 'trauma_center' => 'Spartanburg Medical Center (Adult Level I)',
                 'latitude'      => 34.949600,
                 'longitude'     => -81.932000,
+                'local_context' => <<<'EOT'
+Spartanburg County personal injury cases are filed in the **{office_court}** at **{office_court_address}**, in the Seventh Judicial Circuit, through South Carolina's mandatory **Tyler Odyssey e-filing system**. Roden Law is admitted throughout South Carolina and handles Upstate cases from our Columbia office; we do not maintain a Spartanburg office.
+
+Spartanburg County carries one of the heaviest crash burdens in the state. The **SCDPS 2023 Traffic Collision Fact Book** records **11,002 collisions** in the county that year, including **71 fatal collisions and 84 people killed** — tied with Greenville County for the most fatal collisions of any county in South Carolina. **I-85** alone accounted for 1,311 of those collisions, followed by **US-29** (985), **US-176** (656), **US-221** (509) and **I-26** (464). The interchange of **I-85 and SC-290** was the county's single worst location at 175 collisions. I-85 is the Charlotte-to-Atlanta freight spine, and its interchanges put merging local traffic directly into sustained interstate truck volume. **Spartanburg Medical Center** is the regional **Adult Level I** trauma centre.
+
+South Carolina applies a **{sol_years}-year statute of limitations under {sol_cite}**. Recovery is barred once a plaintiff's own negligence is *greater than* the combined negligence of the defendants — *Nelson v. Concrete Supply Co.* Where an interstate motor carrier is involved, federal hours-of-service and maintenance records under 49 C.F.R. are often decisive, and they are routinely overwritten unless preserved early.
+EOT
+,
             ),
             'rock-hill' => array(
                 'market_name'   => 'Rock Hill',
@@ -607,6 +711,14 @@ EOT
                 'trauma_center' => 'Piedmont Medical Center (Adult Level III)',
                 'latitude'      => 34.924900,
                 'longitude'     => -81.025100,
+                'local_context' => <<<'EOT'
+Rock Hill personal injury cases are filed in the **{office_court}** at **{office_court_address}**, in the Sixteenth Judicial Circuit — the county courthouse is in the town of York, not in Rock Hill. Complaints go through South Carolina's mandatory **Tyler Odyssey e-filing system**, with most cases routed to mediation before trial under SC ADR Rule 3. Roden Law is admitted throughout South Carolina and handles York County cases from our Columbia office. York County recorded **29 fatal collisions in 2023** per the SCDPS Traffic Collision Fact Book.
+
+**I-77** defines the local crash picture. The corridor is the freight and commuter link between Columbia and Charlotte, and the stretch through York County carries long-haul trucks alongside a growing volume of daily commuters heading north into North Carolina. Surface routes absorb the overflow: **Cherry Road (SC-161)**, **Dave Lyle Boulevard** and **US-21** carry retail, commuter and truck traffic through signalised intersections that were built for a smaller Rock Hill. **Piedmont Medical Center** in Rock Hill is the county's designated **Adult Level III** trauma centre — the nearest Level I facilities are across the state line in Charlotte, which routinely puts a South Carolina claim on a North Carolina treatment record.
+
+South Carolina applies a **{sol_years}-year statute of limitations under {sol_cite}**. Recovery is barred once a plaintiff's own negligence is *greater than* the combined negligence of the defendants — *Nelson v. Concrete Supply Co.* Where a crash involves a North Carolina driver or out-of-state treatment, which policy's coverage and which state's law apply are threshold questions worth settling early.
+EOT
+,
             ),
             'fort-mill' => array(
                 'market_name'   => 'Fort Mill',
@@ -622,6 +734,14 @@ EOT
                 'trauma_center' => 'Piedmont Medical Center (Adult Level III)',
                 'latitude'      => 35.007400,
                 'longitude'     => -80.945000,
+                'local_context' => <<<'EOT'
+Fort Mill personal injury cases are filed in the **{office_court}** at **{office_court_address}**, in the Sixteenth Judicial Circuit — roughly 25 miles west in the town of York. Complaints are submitted through South Carolina's mandatory **Tyler Odyssey e-filing system**, and most cases are routed to mediation before trial under SC ADR Rule 3. Roden Law is admitted throughout South Carolina and handles York County cases from our Columbia office. York County recorded **29 fatal collisions in 2023** per the SCDPS Traffic Collision Fact Book.
+
+Fort Mill's traffic is Charlotte's traffic. The town sits directly below the state line, and **I-77** carries a heavy daily commuter flow north into Mecklenburg County and back, mixed with the same long-haul freight that runs the length of the corridor. **SC-160** and **US-21** feed that interstate volume through a road network that has absorbed one of the fastest residential growth rates in South Carolina without a matching expansion in capacity. The practical consequence for an injured person is jurisdictional: the crash is in South Carolina, the at-fault driver frequently lives in North Carolina, and the nearest Level I trauma care is in Charlotte. **Piedmont Medical Center** in Rock Hill is the closest South Carolina designated centre, at **Adult Level III**.
+
+South Carolina applies a **{sol_years}-year statute of limitations under {sol_cite}** — one year longer than North Carolina's, which matters when a claim could plausibly be brought in either state. Recovery is barred once a plaintiff's own negligence is *greater than* the combined negligence of the defendants — *Nelson v. Concrete Supply Co.* North Carolina, by contrast, still applies pure contributory negligence, under which any fault at all defeats the claim entirely. Where the case is filed can decide whether it exists.
+EOT
+,
             ),
             'greer' => array(
                 'market_name'   => 'Greer',
@@ -639,6 +759,14 @@ EOT
                 'trauma_center' => 'Prisma Health Greenville Memorial Hospital (Adult Level I)',
                 'latitude'      => 34.938700,
                 'longitude'     => -82.227100,
+                'local_context' => <<<'EOT'
+Greer personal injury cases are filed in the **{office_court}** at **{office_court_address}**, in the Thirteenth Judicial Circuit, through South Carolina's mandatory **Tyler Odyssey e-filing system**, with most cases routed to mediation before trial under SC ADR Rule 3. Roden Law is admitted throughout South Carolina and handles Upstate cases from our Columbia office. Greer straddles the Greenville–Spartanburg county line; Greenville County recorded **16,640 collisions and 71 fatal collisions in 2023** — the most of any county in South Carolina on both measures — per the SCDPS Traffic Collision Fact Book.
+
+Few towns of Greer's size carry as much freight. **Inland Port Greer** moves Port of Charleston containers by rail into the Upstate, where they transfer to trucks; the **BMW Manufacturing plant** and **GSP International Airport** sit either side of town; and **I-85**, the Charlotte-to-Atlanta corridor, runs through the middle of it. The result is a sustained volume of heavy commercial vehicles on roads that also serve ordinary local traffic — **SC-14**, **SC-101** and **Wade Hampton Boulevard (US-29)** carry the mix through signalised intersections and at-grade commercial access. Severe injuries are routed to **Prisma Health Greenville Memorial Hospital**, the Upstate's **Adult Level I** trauma centre.
+
+South Carolina applies a **{sol_years}-year statute of limitations under {sol_cite}**. Recovery is barred once a plaintiff's own negligence is *greater than* the combined negligence of the defendants — *Nelson v. Concrete Supply Co.* Where an interstate motor carrier or an intermodal operator is involved, federal hours-of-service, maintenance and container-weight records are often decisive, and they are routinely overwritten unless preserved early.
+EOT
+,
             ),
             'simpsonville' => array(
                 'market_name'   => 'Simpsonville',
@@ -654,6 +782,14 @@ EOT
                 'trauma_center' => 'Prisma Health Greenville Memorial Hospital (Adult Level I)',
                 'latitude'      => 34.737000,
                 'longitude'     => -82.254300,
+                'local_context' => <<<'EOT'
+Simpsonville personal injury cases are filed in the **{office_court}** at **{office_court_address}**, in the Thirteenth Judicial Circuit, through South Carolina's mandatory **Tyler Odyssey e-filing system**, with most cases routed to mediation before trial under SC ADR Rule 3. Roden Law is admitted throughout South Carolina and handles Upstate cases from our Columbia office. Greenville County recorded **16,640 collisions and 71 fatal collisions in 2023** — the highest of any county in South Carolina on both measures — per the SCDPS Traffic Collision Fact Book.
+
+Simpsonville sits in the Golden Strip, the corridor of rapid suburban growth south of Greenville, and its crash pattern reflects that: commuter volume on infrastructure built for a smaller town. **I-385** is the spine, carrying daily traffic into Greenville and connecting to the **Woodruff Road** district — among the most congested stretches of road in the state and a persistent concentration of collisions. Locally, **SC-14**, **Fairview Road** and **Harrison Bridge Road** carry retail and residential traffic through signalised intersections with heavy turning movements. Severe injuries are routed to **Prisma Health Greenville Memorial Hospital**, the Upstate's **Adult Level I** trauma centre.
+
+South Carolina applies a **{sol_years}-year statute of limitations under {sol_cite}**. Recovery is barred once a plaintiff's own negligence is *greater than* the combined negligence of the defendants — *Nelson v. Concrete Supply Co.* In congested-corridor collisions the insurer's first argument is usually that a low-speed impact could not have caused the injury, which makes early and consistent medical documentation decisive.
+EOT
+,
             ),
         ),
 
