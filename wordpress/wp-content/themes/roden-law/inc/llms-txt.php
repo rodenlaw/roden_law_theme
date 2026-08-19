@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) || exit;
  * dynamic /llms route but leaves the static files stale until the next
  * save_post.
  */
-define( 'RODEN_LLMS_TXT_VERSION', '2026-08-19.2' );
+define( 'RODEN_LLMS_TXT_VERSION', '2026-08-19.3' );
 
 /* ==========================================================================
    1. REWRITE RULES + QUERY VARS
