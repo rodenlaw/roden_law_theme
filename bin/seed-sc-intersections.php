@@ -108,7 +108,15 @@ if ( $fatal ) {
  */
 
 foreach ( $payload['pages'] as $i => $p ) {
+	$guarded = array();
 	foreach ( (array) ( $p['faqs'] ?? array() ) as $faq ) {
+		$guarded[] = array( 'question' => $faq['question'] ?? '', 'answer' => $faq['answer'] ?? '' );
+	}
+	// Why Hire copy is published prose too — hold it to the same standard.
+	if ( ! empty( $p['why_hire'] ) ) {
+		$guarded[] = array( 'question' => '', 'answer' => $p['why_hire'] );
+	}
+	foreach ( $guarded as $faq ) {
 		$text = ( $faq['question'] ?? '' ) . ' ' . ( $faq['answer'] ?? '' );
 		if ( preg_match( '/O\.C\.G\.A\./u', $text ) ) {
 			printf( "ABORT  page %d (%s/%s): Georgia statute cited on a South Carolina page\n", $i, $p['pillar'], $p['market'] );
@@ -186,8 +194,9 @@ foreach ( $payload['pages'] as $p ) {
 	$target_status = $publish ? 'publish' : 'draft';
 
 	if ( ! $apply ) {
-		printf( "  would %-7s %-34s %-22s %-28s %d FAQs\n",
-			$post_id ? 'update' : 'create', $p['pillar'], $slug, $title, count( $faqs ) );
+		printf( "  would %-7s %-34s %-22s %d FAQs%s\n",
+			$post_id ? 'update' : 'create', $p['pillar'], $slug, count( $faqs ),
+			empty( $p['why_hire'] ) ? '  (no why_hire — will inherit pillar copy)' : ' + why_hire' );
 		$counts[ $post_id ? 'updated' : 'created' ]++;
 		continue;
 	}
@@ -241,6 +250,16 @@ foreach ( $payload['pages'] as $p ) {
 	if ( $faqs ) {
 		$meta['_roden_faqs'] = $faqs;
 	}
+	/*
+	 * Per-page "Why Hire" copy. Without it the intersection template falls back
+	 * to the parent pillar's block, which on `both`-scoped pillars describes the
+	 * firm's Georgia AND South Carolina practice — accurate, but generic
+	 * two-state boilerplate in the most prominent prose section of a page whose
+	 * whole purpose is to be specific to one town.
+	 */
+	if ( ! empty( $p['why_hire'] ) ) {
+		$meta['_roden_why_hire'] = wp_kses_post( $p['why_hire'] );
+	}
 
 	foreach ( $meta as $k => $v ) {
 		update_post_meta( $post_id, $k, $v );
@@ -271,8 +290,9 @@ foreach ( $payload['pages'] as $p ) {
 	if ( $publish ) {
 		$counts['published']++;
 	}
-	printf( "  %-8s #%-6d %-34s %-22s %d FAQs\n",
-		$was_new ? 'created' : 'updated', $post_id, $p['pillar'], $slug, count( $faqs ) );
+	printf( "  %-8s #%-6d %-34s %-22s %d FAQs%s\n",
+		$was_new ? 'created' : 'updated', $post_id, $p['pillar'], $slug, count( $faqs ),
+		empty( $p['why_hire'] ) ? '  (inherits pillar copy)' : ' + why_hire' );
 }
 
 printf( "\n%s\n", str_repeat( '-', 78 ) );
