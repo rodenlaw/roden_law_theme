@@ -494,6 +494,53 @@ Item 5 and 6 need account access; hand those to the client via `!`.
 
 ---
 
+## Execution log — 2026-08-19
+
+| # | Item | Outcome |
+|---|---|---|
+| 1 | Review counts + `AggregateRating` gate | **Live** (PR #33). Verified: Savannah 4.9/59, Charleston 4.9/105, Darien / N.Charleston / Columbia / Myrtle Beach suppressed. |
+| 2 | Demote chrome headings | **Live** (PR #33). 45 emitters across 16 files. Re-measured on the same 30 SC pages: chrome H2 **13 → 0**, content H2 16.1 → 16.1 (nothing lost), first content H2 index **3 → 0** on all 30. |
+| 3 | Retitle duplicate `What to Do After` | **Live** (DB, `bin/retitle-what-to-do-duplicates.php`). All three self-verified; no near-duplicate H2 pairs remain and the `HowTo` schema is intact with 7 steps. |
+| 4 | Cite *Nelson v. Concrete Supply Co.* | **Live** (PR #33), present in both the Jurisdiction and Key Legal Facts sections. |
+| 5 | Canonical Place ID URLs | **Live** (PR #33), all six offices. |
+| 6 | Columbia GBP phone + categories | Open — needs client account access. |
+| 7 | BBB category + `sameAs` | Open — needs client account access. |
+
+Also fixed in passing: the location-page sentence that rendered *"Rated 4.9 stars from
+Hundreds of 5-Star Reviews client reviews"* on all 211 location pages now reads
+"from 170+ verified Google client reviews", derived from the same live sum as the schema.
+
+### F10 — `llms.txt` published 404s for both SC attorneys — **HIGH (found during verification)**
+
+`inc/llms-txt.php` built `/attorneys/{key}/` from the `firm-data.php` array key. For five of
+seven attorneys the key equals the WP post slug; for two it does not:
+
+| Published in `llms.txt` | Real post slug | Status |
+|---|---|---|
+| `/attorneys/graeham-gillin/` | `graeham-c-gillin` | **404** |
+| `/attorneys/ivy-montano/` | `ivy-s-montano` | **404** |
+| `/attorneys/kiley-reidy/` | `kiley-reidy` | 301 — post is a **draft** |
+| `/attorneys/zach-stohr/` | `zach-stohr` | 301 — post is a **draft** |
+
+Both 404s were the South Carolina attorneys, and **Graeham C. Gillin carries the byline on 202
+SC pages**. The site's own bylines were always correct — templates and `roden_schema_person()`
+resolve via `get_permalink()` — so `llms.txt`, the file written specifically for AI engines,
+was the only place on the site publishing a dead link for the firm's SC partner. An engine
+following it to verify authorship found nothing.
+
+**Fixed** in PR #34: resolves each permalink the way the schema does, matching on `post_title`
+so there is no second hand-maintained slug field to drift. Attorneys whose bio is unpublished
+are listed without a link rather than linked to a redirect.
+
+**Open (editorial):** Kiley Reidy's and Zach Stohr's bio posts are drafts. Publishing them is
+the real fix — both are SC-licensed, and the SC roster is exactly the E-E-A-T signal F7 is
+about.
+
+This is the same failure class as F1 and F8: a hand-maintained value in `firm-data.php` quietly
+becoming a false published claim.
+
+---
+
 ## Appendix — what shipped since 2026-07-08
 
 `1b96026` (class-action visibility, ES home schema, dead-LP 301s) and `2f37142` (class-action
