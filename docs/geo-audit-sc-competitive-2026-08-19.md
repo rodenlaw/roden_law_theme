@@ -466,7 +466,7 @@ Item 5 and 6 need account access; hand those to the client via `!`.
    outranks every remaining item on this list in expected impact.
 9. **Get listed where the AI answers come from.** Super Lawyers, Justia, Avvo, Expertise,
    Best Lawyers, Enjuris and Lawyers.com are the actual sources for SC "best lawyer" queries.
-   Roden's SC-licensed attorneys (Gillin, Reidy, Stohr, Montano) need complete, review-bearing
+   Roden's current SC-licensed attorneys (Gillin, Montano) need complete, review-bearing
    profiles on each. This is the only route into commercial-intent AI answers.
 10. **Populate `_roden_last_reviewed`** across the 602 published posts without one — location
     pages first (6/211).
@@ -532,12 +532,54 @@ following it to verify authorship found nothing.
 so there is no second hand-maintained slug field to drift. Attorneys whose bio is unpublished
 are listed without a link rather than linked to a redirect.
 
-**Open (editorial):** Kiley Reidy's and Zach Stohr's bio posts are drafts. Publishing them is
-the real fix — both are SC-licensed, and the SC roster is exactly the E-E-A-T signal F7 is
-about.
+**Correction (2026-08-19, from the client):** Kiley Reidy and Zach Stohr are **no longer with
+the firm**. Their bios are drafts deliberately and must stay that way — "publish the two bios"
+was the wrong call.
+
+The real problem is the opposite one: they are still listed as **current associates**. See F11.
 
 This is the same failure class as F1 and F8: a hand-maintained value in `firm-data.php` quietly
 becoming a false published claim.
+
+### F11 — Two departed attorneys are still listed as current staff — **HIGH (accuracy)**
+
+Kiley Reidy and Zach Stohr have left the firm. The departure was handled at two of the four
+layers and missed the other two.
+
+**Done:** `inc/legacy-redirects.php:570` 301s both profile URLs to `/about/` under a
+"Departed attorneys" block, and both attorney CPT posts were moved to draft so they drop out of
+the attorneys grid. Three other departures — Hillary Burris, Haley Yokeley, Marina Baldwin —
+were carried through completely and are already absent from `firm-data.php`.
+
+**Missed, for these two only:**
+
+| Location | What it still says |
+|---|---|
+| `inc/firm-data.php` attorneys array | Full entries: "Kiley Reidy — Associate", "Zach Stohr — Associate", both "Licensed in South Carolina" |
+| `inc/firm-data.php` office rosters (×3) | Charleston, North Charleston and Columbia all list them under `attorneys` |
+| `templates/template-landing-sc-rear-end.php:1656` | Hardcoded `$sc_attorneys` strip renders "KR / Kiley Reidy" and "ZS / Zach Stohr" |
+
+**Live exposure is limited but real.** `llms.txt` is generated from the firm-data attorneys
+array, so it currently tells AI engines the firm employs two South Carolina associates it does
+not:
+
+```
+- Kiley Reidy: Associate — Licensed in South Carolina
+- Zach Stohr: Associate — Licensed in South Carolina
+```
+
+Everything else is already contained: the SC rear-end landing page 301s (it was one of the dead
+LPs redirected after the 2026-07-08 audit), so that template does not render; the homepage
+`Person` schema carries only Eric Roden and Tyler Love; and no published page is bylined to
+either attorney — `_roden_author_attorney` never referenced them.
+
+**Fix:** remove both from the `firm-data.php` attorneys array and from the three office rosters,
+and drop them from the landing template's hardcoded strip. The redirects and draft posts stay
+exactly as they are.
+
+This is F1/F8/F10's failure class again — a hand-maintained value in `firm-data.php` outliving
+the fact it described.
+
 
 ---
 
