@@ -434,8 +434,14 @@
                     <h3 class="widget-title">&#128205; <?php esc_html_e( 'See by Location', 'roden-law' ); ?></h3>
                     <ul class="sidebar-links">
                         <?php foreach ( $sibling_intersections as $int_page ) :
-                            $int_office = get_post_meta( $int_page->ID, '_roden_pa_office_key', true );
-                            $int_city = isset( $firm['offices'][ $int_office ] ) ? $firm['offices'][ $int_office ]['city'] . ', ' . $firm['offices'][ $int_office ]['state'] : $int_page->post_title;
+                            $int_office  = get_post_meta( $int_page->ID, '_roden_pa_office_key', true );
+                            $int_market  = $int_office ? roden_market( $int_office ) : null;
+                            // Offices keep their mailing city, exactly as before. A service
+                            // area has no city of its own here — its mailing city is the
+                            // parent office's — so it is labelled by market_name.
+                            $int_city    = $int_market
+                                ? ( empty( $int_market['is_service_area'] ) ? $int_market['city'] : $int_market['market_name'] ) . ', ' . $int_market['state']
+                                : $int_page->post_title;
                         ?>
                             <li><a href="<?php echo esc_url( roden_get_canonical_url( $int_page ) ); ?>">&rarr; <?php echo esc_html( $int_city ); ?></a></li>
                         <?php endforeach; ?>

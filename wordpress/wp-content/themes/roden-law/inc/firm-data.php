@@ -347,6 +347,317 @@ EOT
         ),
 
         /* ==================================================================
+           SERVICE AREAS — towns Roden serves from an office elsewhere
+
+           These are NOT offices and must never be merged into the 'offices'
+           array. That array is looped to build the location matrix on every
+           intersection page, to emit a LocalBusiness for each office, to
+           inject the offices nav, and to compute trust_stats['offices'] — so
+           adding a town there would publish "Roden Law has 23 offices" as a
+           factual claim. Same failure class as the AggregateRating bug that
+           published 4.9 stars over a profile with zero reviews (PR #33).
+
+           A service area carries only its own verifiable geography. Everything
+           else — street, phone, GBP, attorneys, reviews — is resolved from
+           'parent_office' by roden_market(). A page built on one of these keys
+           must emit the PARENT office's LocalBusiness with areaServed naming
+           the town, never a synthetic address at the town itself.
+
+           'court' / 'court_address': verified against the SC Judicial Branch
+           courthouse directory (sccourts.org), Aug 2026. Where the Common
+           Pleas street address could not be verified from a primary source,
+           'court_address' is left empty rather than guessed — templates treat
+           it as optional. Do not fill these in from memory.
+
+           'trauma_center': verified against the SC DPH designated trauma
+           centre list, Aug 2026. Levels are load-bearing — the Georgia side
+           published a false "only Level I" claim in 55 places. Re-verify
+           against dph.sc.gov before changing one.
+
+           'local_context' is deliberately absent here. It is authored per town
+           alongside that town's pages; until then roden_market() falls back to
+           the parent office's block rather than rendering an empty section.
+           ================================================================== */
+
+        'service_areas' => array(
+
+            /* ---- Charleston / North Charleston (Lowcountry) ------------- */
+
+            'summerville' => array(
+                'market_name'   => 'Summerville',
+                'parent_office' => 'north-charleston',
+                'slug'          => 'summerville-sc',
+                'city'          => 'Summerville',
+                'state'         => 'SC',
+                'state_full'    => 'South Carolina',
+                'state_slug'    => 'south-carolina',
+                'county'        => 'Dorchester',
+                'court'         => 'Dorchester County Court of Common Pleas',
+                'court_address' => '5200 E. Jim Bilton Blvd., St. George, SC 29477',
+                'trauma_center' => 'Trident Medical Center (Adult Level II)',
+                'latitude'      => 33.018497,
+                'longitude'     => -80.175560,
+            ),
+            'goose-creek' => array(
+                'market_name'   => 'Goose Creek',
+                'parent_office' => 'north-charleston',
+                'slug'          => 'goose-creek-sc',
+                'city'          => 'Goose Creek',
+                'state'         => 'SC',
+                'state_full'    => 'South Carolina',
+                'state_slug'    => 'south-carolina',
+                'county'        => 'Berkeley',
+                'court'         => 'Berkeley County Court of Common Pleas',
+                'court_address' => '300-B California Ave., Moncks Corner, SC 29461',
+                'trauma_center' => 'Trident Medical Center (Adult Level II)',
+                'latitude'      => 32.981000,
+                'longitude'     => -80.032600,
+            ),
+            'moncks-corner' => array(
+                'market_name'   => 'Moncks Corner',
+                'parent_office' => 'north-charleston',
+                'slug'          => 'moncks-corner-sc',
+                'city'          => 'Moncks Corner',
+                'state'         => 'SC',
+                'state_full'    => 'South Carolina',
+                'state_slug'    => 'south-carolina',
+                'county'        => 'Berkeley',
+                'court'         => 'Berkeley County Court of Common Pleas',
+                'court_address' => '300-B California Ave., Moncks Corner, SC 29461',
+                'trauma_center' => 'Trident Medical Center (Adult Level II)',
+                'latitude'      => 33.195900,
+                'longitude'     => -80.014100,
+            ),
+            'mount-pleasant' => array(
+                'market_name'   => 'Mount Pleasant',
+                'parent_office' => 'charleston',
+                'slug'          => 'mount-pleasant-sc',
+                'city'          => 'Mount Pleasant',
+                'state'         => 'SC',
+                'state_full'    => 'South Carolina',
+                'state_slug'    => 'south-carolina',
+                'county'        => 'Charleston',
+                'court'         => 'Charleston County Court of Common Pleas',
+                'court_address' => '100 Broad St., Charleston, SC 29401',
+                'trauma_center' => 'MUSC Medical Center (Adult and Pediatric Level I)',
+                'latitude'      => 32.832300,
+                'longitude'     => -79.828400,
+            ),
+            'hilton-head' => array(
+                'market_name'   => 'Hilton Head Island',
+                'parent_office' => 'charleston',
+                'slug'          => 'hilton-head-sc',
+                'city'          => 'Hilton Head Island',
+                'state'         => 'SC',
+                'state_full'    => 'South Carolina',
+                'state_slug'    => 'south-carolina',
+                'county'        => 'Beaufort',
+                'court'         => 'Beaufort County Court of Common Pleas',
+                'court_address' => '102 Ribaut Rd., Beaufort, SC 29902',
+                'trauma_center' => 'MUSC Medical Center (Adult and Pediatric Level I)',
+                'latitude'      => 32.216300,
+                'longitude'     => -80.752600,
+            ),
+
+            /* ---- Grand Strand ------------------------------------------ */
+
+            'conway' => array(
+                'market_name'   => 'Conway',
+                'parent_office' => 'myrtle-beach',
+                'slug'          => 'conway-sc',
+                'city'          => 'Conway',
+                'state'         => 'SC',
+                'state_full'    => 'South Carolina',
+                'state_slug'    => 'south-carolina',
+                'county'        => 'Horry',
+                'court'         => 'Horry County Court of Common Pleas',
+                'court_address' => '1301 2nd Ave., Conway, SC 29526',
+                'trauma_center' => 'Conway Medical Center (Adult Level III)',
+                'latitude'      => 33.835900,
+                'longitude'     => -79.047800,
+            ),
+            'north-myrtle-beach' => array(
+                'market_name'   => 'North Myrtle Beach',
+                'parent_office' => 'myrtle-beach',
+                'slug'          => 'north-myrtle-beach-sc',
+                'city'          => 'North Myrtle Beach',
+                'state'         => 'SC',
+                'state_full'    => 'South Carolina',
+                'state_slug'    => 'south-carolina',
+                'county'        => 'Horry',
+                'court'         => 'Horry County Court of Common Pleas',
+                'court_address' => '1301 2nd Ave., Conway, SC 29526',
+                'trauma_center' => 'Grand Strand Medical Center (Adult Level I)',
+                'latitude'      => 33.816000,
+                'longitude'     => -78.680000,
+            ),
+            'pawleys-island' => array(
+                'market_name'   => 'Pawleys Island',
+                'parent_office' => 'myrtle-beach',
+                'slug'          => 'pawleys-island-sc',
+                'city'          => 'Pawleys Island',
+                'state'         => 'SC',
+                'state_full'    => 'South Carolina',
+                'state_slug'    => 'south-carolina',
+                'county'        => 'Georgetown',
+                'court'         => 'Georgetown County Court of Common Pleas',
+                'court_address' => '401 Cleland St., Georgetown, SC 29440',
+                'trauma_center' => 'Tidelands Waccamaw Community Hospital (Adult Level IV)',
+                'latitude'      => 33.429300,
+                'longitude'     => -79.122000,
+            ),
+
+            /* ---- Midlands ---------------------------------------------- */
+
+            'orangeburg' => array(
+                'market_name'   => 'Orangeburg',
+                'parent_office' => 'columbia',
+                'slug'          => 'orangeburg-sc',
+                'city'          => 'Orangeburg',
+                'state'         => 'SC',
+                'state_full'    => 'South Carolina',
+                'state_slug'    => 'south-carolina',
+                'county'        => 'Orangeburg',
+                'court'         => 'Orangeburg County Court of Common Pleas',
+                'court_address' => '', // Common Pleas street address unverified — do not guess.
+                'trauma_center' => 'Regional Medical Center, Orangeburg (Adult Level III)',
+                'latitude'      => 33.491800,
+                'longitude'     => -80.855600,
+            ),
+            'sumter' => array(
+                'market_name'   => 'Sumter',
+                'parent_office' => 'columbia',
+                'slug'          => 'sumter-sc',
+                'city'          => 'Sumter',
+                'state'         => 'SC',
+                'state_full'    => 'South Carolina',
+                'state_slug'    => 'south-carolina',
+                'county'        => 'Sumter',
+                'court'         => 'Sumter County Court of Common Pleas',
+                'court_address' => '215 N. Harvin St., Sumter, SC 29150',
+                'trauma_center' => 'Prisma Health Richland (Adult Level I)',
+                'latitude'      => 33.920400,
+                'longitude'     => -80.341400,
+            ),
+            'blythewood' => array(
+                'market_name'   => 'Blythewood',
+                'parent_office' => 'columbia',
+                'slug'          => 'blythewood-sc',
+                'city'          => 'Blythewood',
+                'state'         => 'SC',
+                'state_full'    => 'South Carolina',
+                'state_slug'    => 'south-carolina',
+                'county'        => 'Richland',
+                'court'         => 'Richland County Court of Common Pleas',
+                'court_address' => '1701 Main St., Columbia, SC 29201',
+                'trauma_center' => 'Prisma Health Richland (Adult Level I)',
+                'latitude'      => 34.212900,
+                'longitude'     => -80.973000,
+            ),
+            'irmo' => array(
+                'market_name'   => 'Irmo',
+                'parent_office' => 'columbia',
+                'slug'          => 'irmo-sc',
+                'city'          => 'Irmo',
+                'state'         => 'SC',
+                'state_full'    => 'South Carolina',
+                'state_slug'    => 'south-carolina',
+                'county'        => 'Richland',
+                'court'         => 'Richland County Court of Common Pleas',
+                'court_address' => '1701 Main St., Columbia, SC 29201',
+                'trauma_center' => 'Lexington Medical Center (Adult Level III)',
+                'latitude'      => 34.085700,
+                'longitude'     => -81.183400,
+            ),
+
+            /* ---- Upstate ------------------------------------------------
+               No Roden office, no Google Business Profile and no reviews in
+               this region. Templates must not render a NAP block implying a
+               local address here — the serving office is Columbia and must be
+               labelled as such. Built on the firm's statewide SC bar
+               admission; the citable facts below are public record.
+               ------------------------------------------------------------ */
+
+            'spartanburg' => array(
+                'market_name'   => 'Spartanburg',
+                'parent_office' => 'columbia',
+                'slug'          => 'spartanburg-sc',
+                'city'          => 'Spartanburg',
+                'state'         => 'SC',
+                'state_full'    => 'South Carolina',
+                'state_slug'    => 'south-carolina',
+                'county'        => 'Spartanburg',
+                'court'         => 'Spartanburg County Court of Common Pleas',
+                'court_address' => '180 Magnolia St., Spartanburg, SC 29306',
+                'trauma_center' => 'Spartanburg Medical Center (Adult Level I)',
+                'latitude'      => 34.949600,
+                'longitude'     => -81.932000,
+            ),
+            'rock-hill' => array(
+                'market_name'   => 'Rock Hill',
+                'parent_office' => 'columbia',
+                'slug'          => 'rock-hill-sc',
+                'city'          => 'Rock Hill',
+                'state'         => 'SC',
+                'state_full'    => 'South Carolina',
+                'state_slug'    => 'south-carolina',
+                'county'        => 'York',
+                'court'         => 'York County Court of Common Pleas',
+                'court_address' => 'Moss Justice Center, 1675 York Hwy., York, SC 29745',
+                'trauma_center' => 'Piedmont Medical Center (Adult Level III)',
+                'latitude'      => 34.924900,
+                'longitude'     => -81.025100,
+            ),
+            'fort-mill' => array(
+                'market_name'   => 'Fort Mill',
+                'parent_office' => 'columbia',
+                'slug'          => 'fort-mill-sc',
+                'city'          => 'Fort Mill',
+                'state'         => 'SC',
+                'state_full'    => 'South Carolina',
+                'state_slug'    => 'south-carolina',
+                'county'        => 'York',
+                'court'         => 'York County Court of Common Pleas',
+                'court_address' => 'Moss Justice Center, 1675 York Hwy., York, SC 29745',
+                'trauma_center' => 'Piedmont Medical Center (Adult Level III)',
+                'latitude'      => 35.007400,
+                'longitude'     => -80.945000,
+            ),
+            'greer' => array(
+                'market_name'   => 'Greer',
+                'parent_office' => 'columbia',
+                'slug'          => 'greer-sc',
+                'city'          => 'Greer',
+                'state'         => 'SC',
+                'state_full'    => 'South Carolina',
+                'state_slug'    => 'south-carolina',
+                // Greer straddles the Greenville/Spartanburg county line;
+                // Greenville is the larger share and the default venue.
+                'county'        => 'Greenville',
+                'court'         => 'Greenville County Court of Common Pleas',
+                'court_address' => '301 University Ridge, Greenville, SC 29601',
+                'trauma_center' => 'Prisma Health Greenville Memorial Hospital (Adult Level I)',
+                'latitude'      => 34.938700,
+                'longitude'     => -82.227100,
+            ),
+            'simpsonville' => array(
+                'market_name'   => 'Simpsonville',
+                'parent_office' => 'columbia',
+                'slug'          => 'simpsonville-sc',
+                'city'          => 'Simpsonville',
+                'state'         => 'SC',
+                'state_full'    => 'South Carolina',
+                'state_slug'    => 'south-carolina',
+                'county'        => 'Greenville',
+                'court'         => 'Greenville County Court of Common Pleas',
+                'court_address' => '301 University Ridge, Greenville, SC 29601',
+                'trauma_center' => 'Prisma Health Greenville Memorial Hospital (Adult Level I)',
+                'latitude'      => 34.737000,
+                'longitude'     => -82.254300,
+            ),
+        ),
+
+        /* ==================================================================
            ATTORNEYS — 7 Key Attorneys
            ================================================================== */
 
@@ -658,6 +969,178 @@ function roden_get_office_slugs() {
         $slugs[] = $office['slug'];
     }
     return $slugs;
+}
+
+/* ==========================================================================
+   MARKETS — offices and service areas under one lookup
+
+   A "market" is anywhere the firm publishes a city-scoped page: the 6 real
+   offices plus the service-area towns served from them. roden_market() is the
+   only supported way to resolve one. Templates must not index
+   $firm['offices'][ $key ] directly — that lookup is unguarded, fatals on an
+   unknown key, and cannot see service areas.
+   ========================================================================== */
+
+/**
+ * Resolve a market (office or service area) to a full, render-ready array.
+ *
+ * An office is returned exactly as roden_firm_data() built it, so existing
+ * pages are byte-identical. A service area is the parent office's contact
+ * details with the town's own geography laid over the top.
+ *
+ * Three invariants make a service area safe to publish:
+ *
+ *  - `review_count` is forced to 0 and `review_rating` to '', so the
+ *    AggregateRating gate in schema-helpers.php can never attribute the parent
+ *    office's Google reviews to a town with no profile of its own.
+ *  - `street`, `zip`, `latitude` and `longitude` stay the PARENT office's, so a
+ *    LocalBusiness can never claim an address the firm does not occupy. The
+ *    town's own coordinates are exposed separately as `area_lat`/`area_lng`.
+ *  - `is_service_area` is true and `parent_office_key` is set, so templates and
+ *    schema can branch on "we serve here" rather than "we are here".
+ *
+ * @param string $key Market key — an office key ('charleston') or a service
+ *                    area key ('summerville').
+ * @return array|null Market data, or null if the key matches neither.
+ */
+function roden_market( $key ) {
+    if ( ! is_string( $key ) || '' === $key ) {
+        return null;
+    }
+
+    $firm = roden_firm_data();
+
+    // Offices win: an office key always resolves to the office, untouched.
+    if ( isset( $firm['offices'][ $key ] ) ) {
+        return $firm['offices'][ $key ];
+    }
+
+    if ( ! isset( $firm['service_areas'][ $key ] ) ) {
+        return null;
+    }
+
+    $area   = $firm['service_areas'][ $key ];
+    $parent = isset( $firm['offices'][ $area['parent_office'] ] )
+        ? $firm['offices'][ $area['parent_office'] ]
+        : null;
+
+    // A service area with a broken parent pointer is a data error, not a page.
+    if ( ! $parent ) {
+        return null;
+    }
+
+    $market = $parent;
+
+    // The town's own geography and venue, laid over the parent office.
+    // NOTE: 'city', 'street' and 'zip' are deliberately NOT overridden. They are
+    // rendered together as one postal address in the NAP block, so laying the
+    // town over the parent's street and ZIP would print a fabricated address —
+    // "Spartanburg, SC 29201" against Columbia's street. The town's identity
+    // lives in 'market_name' alone; the address always stays whole and true.
+    foreach ( array(
+        'market_name',
+        'state',
+        'state_full',
+        'state_slug',
+        'county',
+        'court',
+        'court_address',
+        'trauma_center',
+        'slug',
+    ) as $own ) {
+        if ( isset( $area[ $own ] ) && '' !== $area[ $own ] ) {
+            $market[ $own ] = $area[ $own ];
+        }
+    }
+
+    // Town coordinates are exposed under their own keys. `latitude`/`longitude`
+    // deliberately remain the parent office's so schema geo agrees with the
+    // street address it is published alongside.
+    $market['area_lat'] = isset( $area['latitude'] ) ? $area['latitude'] : null;
+    $market['area_lng'] = isset( $area['longitude'] ) ? $area['longitude'] : null;
+
+    // Never inherit the parent's Google reviews. See invariant above.
+    $market['review_count']  = 0;
+    $market['review_rating'] = '';
+
+    $market['is_service_area']   = true;
+    $market['service_area_key']  = $key;
+    $market['parent_office_key'] = $area['parent_office'];
+    $market['parent_office_name'] = $parent['market_name'];
+
+    // `local_context` is authored per town. Until a town has its own, fall back
+    // to the parent office's block rather than rendering an empty section.
+    if ( isset( $area['local_context'] ) && '' !== $area['local_context'] ) {
+        $market['local_context'] = $area['local_context'];
+    }
+    if ( isset( $area['local_context_es'] ) && '' !== $area['local_context_es'] ) {
+        $market['local_context_es'] = $area['local_context_es'];
+    }
+
+    // Re-derive the aliases roden_firm_data() computes for offices, now that
+    // the state may differ from the parent's.
+    $state_key = $market['state'];
+    if ( isset( $firm['jurisdiction'][ $state_key ] ) ) {
+        $j                 = $firm['jurisdiction'][ $state_key ];
+        $market['sol']     = $j['statute_years'] . ' years (' . $j['statute_cite'] . ')';
+        $market['fault']   = $j['comp_fault_rule'];
+    }
+
+    return $market;
+}
+
+/**
+ * Is this key a service area rather than a real office?
+ *
+ * @param string $key Market key.
+ * @return bool
+ */
+function roden_is_service_area( $key ) {
+    $firm = roden_firm_data();
+    return ! isset( $firm['offices'][ $key ] ) && isset( $firm['service_areas'][ $key ] );
+}
+
+/**
+ * Get all market city-state slugs — offices plus service areas.
+ *
+ * This is what intersection detection matches a post_name against. Using
+ * roden_get_office_slugs() there would silently route every service-area page
+ * to the sub-type template instead.
+ *
+ * @return array Slugs (e.g. 'charleston-sc', 'summerville-sc').
+ */
+function roden_get_market_slugs() {
+    $firm  = roden_firm_data();
+    $slugs = roden_get_office_slugs();
+    foreach ( $firm['service_areas'] as $area ) {
+        if ( ! empty( $area['slug'] ) ) {
+            $slugs[] = $area['slug'];
+        }
+    }
+    return $slugs;
+}
+
+/**
+ * Get the market key matching a city-state slug ('summerville-sc' => 'summerville').
+ *
+ * Offices are checked first so existing slugs resolve exactly as they always have.
+ *
+ * @param string $city_slug The city-state slug to look up.
+ * @return string|null Market key, or null if no match.
+ */
+function roden_market_key_from_slug( $city_slug ) {
+    $office_key = roden_office_key_from_slug( $city_slug );
+    if ( $office_key ) {
+        return $office_key;
+    }
+
+    $firm = roden_firm_data();
+    foreach ( $firm['service_areas'] as $key => $area ) {
+        if ( isset( $area['slug'] ) && $area['slug'] === $city_slug ) {
+            return $key;
+        }
+    }
+    return null;
 }
 
 /**

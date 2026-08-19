@@ -50,14 +50,15 @@ function roden_seo_title_optimization( $title_parts ) {
         if ( $post->post_parent ) {
             $office_key = get_post_meta( $post_id, '_roden_pa_office_key', true );
 
-            if ( $office_key && isset( $firm['offices'][ $office_key ] ) ) {
+            $office_market = $office_key ? roden_market( $office_key ) : null;
+            if ( $office_market ) {
                 // Intersection page — append "in {Market}, ST" only if not already present.
                 // Post titles like "Car Accident Lawyers in Savannah, GA" already contain the
                 // market name. Use market_name (not city) because for the Myrtle Beach office,
                 // city = "Murrells Inlet" while market_name = "Myrtle Beach"; checking against
                 // the mailing city would miss the dedup and append a redundant phrase
                 // (e.g. "...in Myrtle Beach, SC in Murrells Inlet, SC – Roden Law").
-                $office  = $firm['offices'][ $office_key ];
+                $office  = $office_market;
                 $geo_tag = $office['market_name'] . ', ' . $office['state'];
                 if ( false === stripos( $title_parts['title'], $geo_tag ) ) {
                     /* translators: %s: city + state abbreviation, e.g. "Savannah, GA". */
@@ -472,12 +473,14 @@ function roden_seo_auto_desc_practice_area( $post_id, $title, $firm ) {
     $parent      = get_post( $post->post_parent );
     $parent_name = $parent ? get_the_title( $parent ) : '';
 
-    if ( $office_key && isset( $firm['offices'][ $office_key ] ) ) {
+    $seo_market = $office_key ? roden_market( $office_key ) : null;
+    if ( $seo_market ) {
         // --- Intersection page ---
         // Use market_name as the SEO-facing city (e.g. "Myrtle Beach" rather than the
         // mailing-city "Murrells Inlet"); for offices where city == market_name behavior
-        // is unchanged.
-        $office = $firm['offices'][ $office_key ];
+        // is unchanged. Service-area towns resolve to their own market_name with the
+        // parent office's contact details behind it.
+        $office = $seo_market;
         $city   = $office['market_name'];
         $state  = $office['state_full'];
         $court  = $office['court'];
