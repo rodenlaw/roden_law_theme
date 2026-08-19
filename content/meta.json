@@ -2598,7 +2598,7 @@
         },
         "/car-accident-lawyers/blythewood-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Car Accident Lawyers in Blythewood, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -2851,7 +2851,7 @@
         },
         "/car-accident-lawyers/conway-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Car Accident Lawyers in Conway, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -3053,7 +3053,7 @@
         },
         "/car-accident-lawyers/fort-mill-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Car Accident Lawyers in Fort Mill, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -3078,7 +3078,7 @@
         },
         "/car-accident-lawyers/goose-creek-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Car Accident Lawyers in Goose Creek, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -3148,7 +3148,7 @@
         },
         "/car-accident-lawyers/greer-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Car Accident Lawyers in Greer, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -3276,7 +3276,7 @@
         },
         "/car-accident-lawyers/irmo-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Car Accident Lawyers in Irmo, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -3301,7 +3301,7 @@
         },
         "/car-accident-lawyers/moncks-corner-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Car Accident Lawyers in Moncks Corner, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -3326,7 +3326,7 @@
         },
         "/car-accident-lawyers/mount-pleasant-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Car Accident Lawyers in Mount Pleasant, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -3468,7 +3468,7 @@
         },
         "/car-accident-lawyers/north-myrtle-beach-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Car Accident Lawyers in North Myrtle Beach, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -3497,7 +3497,7 @@
         },
         "/car-accident-lawyers/orangeburg-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Car Accident Lawyers in Orangeburg, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -3625,7 +3625,7 @@
         },
         "/car-accident-lawyers/rock-hill-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Car Accident Lawyers in Rock Hill, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -3737,7 +3737,7 @@
         },
         "/car-accident-lawyers/simpsonville-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Car Accident Lawyers in Simpsonville, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -3762,7 +3762,7 @@
         },
         "/car-accident-lawyers/spartanburg-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Car Accident Lawyers in Spartanburg, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -3791,7 +3791,7 @@
         },
         "/car-accident-lawyers/summerville-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Car Accident Lawyers in Summerville, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -3820,7 +3820,7 @@
         },
         "/car-accident-lawyers/sumter-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Car Accident Lawyers in Sumter, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -16156,7 +16156,7 @@
         },
         "/motorcycle-accident-lawyers/spartanburg-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Motorcycle Accident Lawyers in Spartanburg, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -16181,7 +16181,7 @@
         },
         "/motorcycle-accident-lawyers/summerville-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Motorcycle Accident Lawyers in Summerville, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -17257,7 +17257,7 @@
         },
         "/personal-injury-lawyers/conway-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Personal Injury Lawyers in Conway, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -17282,7 +17282,7 @@
         },
         "/personal-injury-lawyers/goose-creek-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Personal Injury Lawyers in Goose Creek, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -17307,7 +17307,7 @@
         },
         "/personal-injury-lawyers/hilton-head-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Personal Injury Lawyers in Hilton Head Island, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -17336,7 +17336,7 @@
         },
         "/personal-injury-lawyers/mount-pleasant-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Personal Injury Lawyers in Mount Pleasant, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -17398,7 +17398,7 @@
         },
         "/personal-injury-lawyers/north-charleston-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Personal Injury Lawyers in North Charleston, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -17427,7 +17427,7 @@
         },
         "/personal-injury-lawyers/orangeburg-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Personal Injury Lawyers in Orangeburg, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -17452,7 +17452,7 @@
         },
         "/personal-injury-lawyers/pawleys-island-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Personal Injury Lawyers in Pawleys Island, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -17477,7 +17477,7 @@
         },
         "/personal-injury-lawyers/summerville-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Personal Injury Lawyers in Summerville, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -22309,7 +22309,7 @@
         },
         "/slip-and-fall-lawyers/goose-creek-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Slip & Fall Lawyers in Goose Creek, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -23395,7 +23395,7 @@
         },
         "/truck-accident-lawyers/conway-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Truck Accident Lawyers in Conway, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -23581,7 +23581,7 @@
         },
         "/truck-accident-lawyers/moncks-corner-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Truck Accident Lawyers in Moncks Corner, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -23740,7 +23740,7 @@
         },
         "/truck-accident-lawyers/rock-hill-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Truck Accident Lawyers in Rock Hill, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -23799,7 +23799,7 @@
         },
         "/truck-accident-lawyers/spartanburg-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Truck Accident Lawyers in Spartanburg, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -23824,7 +23824,7 @@
         },
         "/truck-accident-lawyers/summerville-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Truck Accident Lawyers in Summerville, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -24174,7 +24174,7 @@
         },
         "/workers-compensation-lawyers/goose-creek-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Workers' Compensation Lawyers in Goose Creek, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -24412,7 +24412,7 @@
         },
         "/workers-compensation-lawyers/rock-hill-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Workers' Compensation Lawyers in Rock Hill, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -24508,7 +24508,7 @@
         },
         "/workers-compensation-lawyers/spartanburg-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Workers' Compensation Lawyers in Spartanburg, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
@@ -24533,7 +24533,7 @@
         },
         "/workers-compensation-lawyers/summerville-sc/": {
             "type": "practice_area",
-            "status": "draft",
+            "status": "publish",
             "title": "Workers' Compensation Lawyers in Summerville, SC",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
