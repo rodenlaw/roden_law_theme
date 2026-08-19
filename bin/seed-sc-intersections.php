@@ -60,6 +60,8 @@ if ( ! is_array( $payload ) || empty( $payload['pages'] ) ) {
 	exit( 1 );
 }
 
+global $wpdb;
+
 $firm = roden_firm_data();
 
 /* ── Pre-flight 1: the author must resolve to a published attorney ───────── */
@@ -145,16 +147,33 @@ foreach ( $payload['pages'] as $p ) {
 	// "{Pillar Title} in {Market}, {ST}".
 	$title = sprintf( '%s in %s, %s', $pillar->post_title, $market_name, $market['state'] );
 
-	// Idempotency: one child of this pillar with this slug.
-	$existing = get_posts( array(
-		'post_type'        => 'practice_area',
-		'post_parent'      => $pillar->ID,
-		'name'             => $slug,
-		'post_status'      => 'any',
-		'numberposts'      => 1,
-		'suppress_filters' => false,
-	) );
-	$post_id = $existing ? (int) $existing[0]->ID : 0;
+	/*
+	 * Idempotency: one child of this pillar with this slug.
+	 *
+	 * Queried directly against wp_posts rather than through get_posts( name => ... ).
+	 * `practice_area` is a HIERARCHICAL post type, and WP_Query treats those like
+	 * pages — `name` does not reliably match, so the lookup silently returned
+	 * nothing and a second run created a complete duplicate set of all 35 pages
+	 * (2026-08-19; the duplicates were trashed). A direct parent+slug query is
+	 * exact and cannot be defeated by post-type hierarchy or status filtering.
+	 *
+	 * 'trash' is excluded so a trashed duplicate is never resurrected, but every
+	 * other status is matched so a hand-published page is found and updated
+	 * rather than duplicated.
+	 */
+	$post_id = (int) $wpdb->get_var(
+		$wpdb->prepare(
+			"SELECT ID FROM {$wpdb->posts}
+			 WHERE post_type = 'practice_area'
+			   AND post_parent = %d
+			   AND post_name = %s
+			   AND post_status != 'trash'
+			 ORDER BY ID ASC LIMIT 1",
+			$pillar->ID,
+			$slug
+		)
+	);
+	$existing = $post_id ? array( get_post( $post_id ) ) : array();
 
 	// A page with no FAQs may be drafted but never published — it would ship
 	// with no FAQPage schema and nothing town-specific in the body.
@@ -206,11 +225,18 @@ foreach ( $payload['pages'] as $p ) {
 		'_roden_jurisdiction'    => $payload['_jurisdiction'] ?? 'SC',
 		'_roden_author_attorney' => $author_id,
 	);
-	foreach ( array( '_roden_sol_sc', '_roden_sol_ga' ) as $sol_key ) {
-		$inherited = get_post_meta( $pillar->ID, $sol_key, true );
-		if ( '' !== $inherited ) {
-			$meta[ $sol_key ] = $inherited;
-		}
+	// Inherit ONLY the statute for this page's jurisdiction. Pillars scoped to
+	// `both` carry _roden_sol_ga as well, and copying it onto a South Carolina
+	// page leaves a Georgia deadline sitting in the meta of an SC page — latent
+	// fuel for the shared-template jurisdiction bug that has recurred five times
+	// here. The established convention on the existing SC intersections is to
+	// carry the SC statute alone.
+	$jurisdiction = $payload['_jurisdiction'] ?? 'SC';
+	$sol_key      = ( 'GA' === $jurisdiction ) ? '_roden_sol_ga' : '_roden_sol_sc';
+	$drop_key     = ( 'GA' === $jurisdiction ) ? '_roden_sol_sc' : '_roden_sol_ga';
+	$inherited    = get_post_meta( $pillar->ID, $sol_key, true );
+	if ( '' !== $inherited ) {
+		$meta[ $sol_key ] = $inherited;
 	}
 	if ( $faqs ) {
 		$meta['_roden_faqs'] = $faqs;
@@ -218,6 +244,10 @@ foreach ( $payload['pages'] as $p ) {
 
 	foreach ( $meta as $k => $v ) {
 		update_post_meta( $post_id, $k, $v );
+	}
+	// Clear the other jurisdiction's statute if an earlier run left one behind.
+	if ( '' !== (string) get_post_meta( $post_id, $drop_key, true ) ) {
+		delete_post_meta( $post_id, $drop_key );
 	}
 
 	// Verify the load-bearing ones actually persisted.

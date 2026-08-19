@@ -5,7 +5,7 @@
         "location",
         "resource"
     ],
-    "_count": 712,
+    "_count": 747,
     "posts": {
         "/?post_type=location&p=3808": {
             "type": "location",
@@ -2596,6 +2596,31 @@
                 "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)"
             }
         },
+        "/car-accident-lawyers/blythewood-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Car Accident Lawyers in Blythewood, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Which court hears a Blythewood car accident case?",
+                        "answer": "The Richland County Court of Common Pleas at 1701 Main St. in downtown Columbia. Richland County recorded 12,450 collisions and 58 fatal collisions in 2023, the third-highest collision total in South Carolina."
+                    },
+                    {
+                        "question": "Why is I-77 through Blythewood a crash corridor?",
+                        "answer": "It is the freight spine between Columbia and Charlotte, and Blythewood sits where long-haul trucks are still at highway speed while local traffic enters and leaves at Exit 27 (SC-34) and Blythewood Road. That speed differential — a merging vehicle and an 80,000-pound truck arriving at the same point — is the recurring pattern."
+                    },
+                    {
+                        "question": "How long do I have to file?",
+                        "answer": "Three years from the date of the crash under S.C. Code § 15-3-530. Where an interstate motor carrier is involved, hours-of-service and maintenance records under 49 C.F.R. are often decisive and are routinely overwritten unless preserved early."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "blythewood",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
         "/car-accident-lawyers/bus-accident/": {
             "type": "practice_area",
             "status": "publish",
@@ -2824,6 +2849,35 @@
                 "_roden_sol_sc": "S.C. Code § 15-3-530"
             }
         },
+        "/car-accident-lawyers/conway-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Car Accident Lawyers in Conway, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Is the Horry County courthouse in Conway?",
+                        "answer": "Yes. The Horry County Court of Common Pleas sits at 1301 2nd Ave. in Conway, which means Myrtle Beach, Surfside Beach and Conway crashes all end up before the same court in this town. Horry County recorded 11,109 collisions and 64 fatal collisions in 2023, fourth-highest in South Carolina."
+                    },
+                    {
+                        "question": "What makes Highway 22 and US-501 dangerous in different ways?",
+                        "answer": "SC-22, the Conway Bypass, is a high-speed limited-access route with elevated bridge sections over the Waccamaw River, where a truck striking stopped traffic leaves nowhere to go. US-501 is the opposite problem: congested tourist volume through signalised intersections with constant turning movements."
+                    },
+                    {
+                        "question": "Where are seriously injured Conway patients treated?",
+                        "answer": "Conway Medical Center is the local trauma centre at Adult Level III. The most severe injuries are transferred to Grand Strand Medical Center in Myrtle Beach, an Adult Level I centre, and that transfer chain is a routine feature of serious Conway cases."
+                    },
+                    {
+                        "question": "How long do I have to file a Conway car accident claim?",
+                        "answer": "Three years from the date of the crash under S.C. Code § 15-3-530. For visitors injured on the Grand Strand, stacked UM/UIM coverage from an out-of-state policy is often the difference between a minimum-limits recovery and a full one."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "conway",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
         "/car-accident-lawyers/darien-ga/": {
             "type": "practice_area",
             "status": "publish",
@@ -2997,6 +3051,60 @@
                 "_roden_sol_sc": "S.C. Code § 15-3-530"
             }
         },
+        "/car-accident-lawyers/fort-mill-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Car Accident Lawyers in Fort Mill, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Where is a Fort Mill car accident case filed?",
+                        "answer": "In the York County Court of Common Pleas at the Moss Justice Center, 1675 York Hwy., roughly 25 miles west in the town of York. York County recorded 29 fatal collisions in 2023."
+                    },
+                    {
+                        "question": "Why does Charlotte traffic matter to a Fort Mill crash?",
+                        "answer": "Fort Mill sits directly below the state line, and I-77 carries a heavy daily commuter flow into Mecklenburg County and back, mixed with long-haul freight. SC-160 and US-21 feed that volume through a road network that has absorbed one of the fastest residential growth rates in South Carolina without matching capacity."
+                    },
+                    {
+                        "question": "Does it matter whether my case is filed in South Carolina or North Carolina?",
+                        "answer": "It can decide whether you have a case at all. South Carolina applies modified comparative fault — you recover unless your negligence exceeds the defendants' combined negligence. North Carolina still applies pure contributory negligence, under which any fault at all defeats the claim. South Carolina's filing deadline is also a year longer, at three years under S.C. Code § 15-3-530."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "fort-mill",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
+        "/car-accident-lawyers/goose-creek-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Car Accident Lawyers in Goose Creek, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Which county handles a Goose Creek car accident case?",
+                        "answer": "Berkeley County, not Charleston County — despite Goose Creek sitting minutes from North Charleston. Cases are filed in the Berkeley County Court of Common Pleas at 300-B California Ave. in Moncks Corner. Berkeley County recorded 58 fatal collisions in 2023, fifth-highest in South Carolina."
+                    },
+                    {
+                        "question": "Why are there so many train and truck collisions on US-52?",
+                        "answer": "US-52 carries heavy commercial traffic — including logging trucks out of Berkeley County timber land and oversized military transports from Joint Base Charleston — across active railroad grade crossings. A September 2024 collision involved a train striking a tractor-trailer hauling a military vehicle; a January 2021 grade-crossing crash near St. James Avenue sent six people to hospital."
+                    },
+                    {
+                        "question": "Which Goose Creek intersections see the most crashes?",
+                        "answer": "US-176 at US-17A, known locally as Carnes Crossroads, along with Red Bank Road and Henry E. Brown Jr. Boulevard. Rapid development around Carnes Crossroads has added turning volume to an intersection carrying regional through traffic."
+                    },
+                    {
+                        "question": "How long do I have to file after a Goose Creek crash?",
+                        "answer": "Three years under S.C. Code § 15-3-530. Where a railroad is involved, event-recorder data and crossing-signal maintenance records are usually decisive and are routinely overwritten unless preserved early."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "goose-creek",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
         "/car-accident-lawyers/government-vehicle-accident/": {
             "type": "practice_area",
             "status": "publish",
@@ -3035,6 +3143,35 @@
                 ],
                 "_roden_jurisdiction": "both",
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
+        "/car-accident-lawyers/greer-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Car Accident Lawyers in Greer, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Which county handles a Greer car accident case?",
+                        "answer": "Greer straddles the Greenville–Spartanburg county line. Greenville County is the usual venue, filed in the Greenville County Court of Common Pleas at 301 University Ridge, Thirteenth Judicial Circuit. Greenville County recorded 16,640 collisions and 71 fatal collisions in 2023 — the most of any South Carolina county on both measures."
+                    },
+                    {
+                        "question": "Why does a town of Greer's size carry so much truck traffic?",
+                        "answer": "Inland Port Greer moves Port of Charleston containers by rail into the Upstate, where they transfer to trucks. The BMW Manufacturing plant and GSP International Airport sit either side of town, and I-85 runs through the middle — putting sustained heavy commercial volume onto roads that also serve ordinary local traffic on SC-14, SC-101 and Wade Hampton Boulevard."
+                    },
+                    {
+                        "question": "Does Roden Law have a Greer office?",
+                        "answer": "No. Roden Law is admitted throughout South Carolina and handles Upstate cases from our Columbia office. There is no Roden Law office in Greer."
+                    },
+                    {
+                        "question": "Where are severe injuries treated?",
+                        "answer": "Prisma Health Greenville Memorial Hospital, the Upstate's Adult Level I trauma centre."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "greer",
                 "_roden_sol_sc": "S.C. Code § 15-3-530"
             }
         },
@@ -3135,6 +3272,85 @@
                 "_roden_jurisdiction": "sc",
                 "_roden_sol_ga": "2 years (O.C.G.A. § 9-3-33)",
                 "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)"
+            }
+        },
+        "/car-accident-lawyers/irmo-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Car Accident Lawyers in Irmo, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Where is an Irmo car accident case filed?",
+                        "answer": "In the Richland County Court of Common Pleas at 1701 Main St. in downtown Columbia. Richland County recorded 12,450 collisions and 58 fatal collisions in 2023, third-highest in the state by total collisions."
+                    },
+                    {
+                        "question": "Why do so many Irmo crashes happen around Harbison?",
+                        "answer": "I-26 at St. Andrews Road is one of the most crash-prone interchanges in South Carolina, and it feeds directly into the Harbison Boulevard retail district — a concentration of shopping centres, restaurants and hotels whose access drives produce constant turning and merging conflicts."
+                    },
+                    {
+                        "question": "The impact seemed minor but I am in pain — does that hurt my claim?",
+                        "answer": "It is the argument insurers make most often in retail-corridor collisions: that a low-speed impact could not have caused the injury. Early and consistent medical documentation, starting from the first visit, is what answers it."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "irmo",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
+        "/car-accident-lawyers/moncks-corner-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Car Accident Lawyers in Moncks Corner, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Is the courthouse in Moncks Corner?",
+                        "answer": "Yes. Moncks Corner is the Berkeley County seat, and the Berkeley County Court of Common Pleas sits at 300-B California Ave. in town. Every Berkeley County civil case — including crashes in Goose Creek, Hanahan and Cane Bay — is filed here."
+                    },
+                    {
+                        "question": "What causes most serious crashes around Moncks Corner?",
+                        "answer": "Three streams of traffic meeting on rural alignments: commercial and logging trucks on US-52 heading toward the Port of Charleston, commuter volume on US-17A and SC-6 from the Cane Bay and Carnes Crossroads developments, and seasonal recreational traffic around Lake Moultrie."
+                    },
+                    {
+                        "question": "How long do I have to file a Moncks Corner car accident claim?",
+                        "answer": "Three years from the date of the crash under S.C. Code § 15-3-530. On rural Berkeley County roads where minimum-limits policies are common, identifying every available UM/UIM policy early often matters more than the filing deadline."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "moncks-corner",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
+        "/car-accident-lawyers/mount-pleasant-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Car Accident Lawyers in Mount Pleasant, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Where is a Mount Pleasant car accident case filed?",
+                        "answer": "In the Charleston County Court of Common Pleas at 100 Broad St., across the Ravenel Bridge in downtown Charleston. Charleston County recorded 16,118 collisions in 2023 — the second-highest total of any county in South Carolina — including 70 fatal collisions."
+                    },
+                    {
+                        "question": "Which Mount Pleasant roads are the most dangerous?",
+                        "answer": "US-17, which runs through town as Johnnie Dodds Boulevard and Coleman Boulevard, is the single worst roadway in Charleston County, accounting for 1,942 collisions in 2023. The Arthur Ravenel Jr. Bridge concentrates commuter traffic into a corridor with no shoulder escape, and the Isle of Palms Connector adds seasonal beach volume."
+                    },
+                    {
+                        "question": "Do port trucks contribute to Mount Pleasant crashes?",
+                        "answer": "Yes. Container traffic serving the Wando Welch Terminal, one of the busiest container terminals on the East Coast, moves through Mount Pleasant streets to reach I-526 — putting heavy commercial vehicles onto roads that also carry local and tourist traffic."
+                    },
+                    {
+                        "question": "How long do I have to file?",
+                        "answer": "Three years from the date of the crash under S.C. Code § 15-3-530. Severe injuries are routed to MUSC, the state's only Adult and Paediatric Level I trauma centre, and those records are central to valuing the claim."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "mount-pleasant",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
             }
         },
         "/car-accident-lawyers/multi-vehicle-pileup/": {
@@ -3250,6 +3466,64 @@
                 "_roden_translation_es": "/es/car-accident-lawyers/north-charleston-sc/"
             }
         },
+        "/car-accident-lawyers/north-myrtle-beach-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Car Accident Lawyers in North Myrtle Beach, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Where is a North Myrtle Beach car accident case filed?",
+                        "answer": "In the Horry County Court of Common Pleas at 1301 2nd Ave. in Conway, inland from the coast. Horry County recorded 11,109 collisions and 64 fatal collisions in 2023, fourth-highest in South Carolina."
+                    },
+                    {
+                        "question": "What are the rules for golf carts in North Myrtle Beach?",
+                        "answer": "Under S.C. Code § 56-2-100, a permitted golf cart may operate only in daylight, within four miles of the owner's registered address, on roads posted 35 mph or less, and only with a licensed driver. A crash outside those limits opens the door to negligence-per-se arguments and to claims against rental operators."
+                    },
+                    {
+                        "question": "Why does the same trip feel like two different roads?",
+                        "answer": "Because it often is. US-17 (Kings Highway) and Main Street carry beach traffic through signalised commercial strips, while SC-31, the Carolina Bays Parkway, moves the same traffic at highway speed a few miles inland — two entirely different crash profiles on one journey."
+                    },
+                    {
+                        "question": "Where are severe injuries treated?",
+                        "answer": "Grand Strand Medical Center in Myrtle Beach, the region's Adult Level I trauma centre."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "north-myrtle-beach",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
+        "/car-accident-lawyers/orangeburg-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Car Accident Lawyers in Orangeburg, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Why does Orangeburg County have so many fatal crashes?",
+                        "answer": "It recorded 34 fatal collisions in 2023, ninth-highest of any South Carolina county — striking for its population. The structural cause is the I-26 / I-95 junction, where the Charleston-to-Columbia freight corridor crosses the main Northeast-to-Florida interstate, putting long-haul traffic with no local destination onto surface routes like US-301, US-601, US-21 and US-178."
+                    },
+                    {
+                        "question": "Where is an Orangeburg car accident case filed?",
+                        "answer": "In the Orangeburg County Court of Common Pleas, in the First Judicial Circuit, through South Carolina's mandatory Tyler Odyssey e-filing system. Most cases are routed to mediation before trial under SC ADR Rule 3."
+                    },
+                    {
+                        "question": "Where are seriously injured patients treated?",
+                        "answer": "The Regional Medical Center in Orangeburg is the county's Adult Level III trauma centre. The most severe injuries are transferred to Prisma Health Richland in Columbia, an Adult Level I centre."
+                    },
+                    {
+                        "question": "How long do I have to file?",
+                        "answer": "Three years from the date of the crash under S.C. Code § 15-3-530. Where an interstate motor carrier is involved, federal hours-of-service and maintenance records under 49 C.F.R. are often decisive and are routinely overwritten unless preserved early."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "orangeburg",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
         "/car-accident-lawyers/rear-end-collision/": {
             "type": "practice_area",
             "status": "publish",
@@ -3349,6 +3623,35 @@
                 "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)"
             }
         },
+        "/car-accident-lawyers/rock-hill-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Car Accident Lawyers in Rock Hill, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Is the courthouse in Rock Hill?",
+                        "answer": "No. York County cases are filed in the York County Court of Common Pleas at the Moss Justice Center, 1675 York Hwy. in the town of York, Sixteenth Judicial Circuit. York County recorded 29 fatal collisions in 2023."
+                    },
+                    {
+                        "question": "Why does I-77 dominate Rock Hill crash statistics?",
+                        "answer": "It is the freight and commuter link between Columbia and Charlotte, carrying long-haul trucks alongside a growing volume of daily commuters heading north into North Carolina. Surface routes absorb the overflow — Cherry Road (SC-161), Dave Lyle Boulevard and US-21 carry retail, commuter and truck traffic through intersections built for a smaller Rock Hill."
+                    },
+                    {
+                        "question": "I was treated in Charlotte — does that complicate my claim?",
+                        "answer": "It is common and manageable, but worth planning for. Piedmont Medical Center in Rock Hill is the county's Adult Level III trauma centre; the nearest Level I facilities are across the state line, which routinely puts a South Carolina claim on a North Carolina treatment record."
+                    },
+                    {
+                        "question": "What if the at-fault driver lives in North Carolina?",
+                        "answer": "Which state's law applies becomes a threshold question worth settling early. South Carolina allows recovery under modified comparative fault; North Carolina still applies pure contributory negligence, under which any fault at all defeats a claim entirely."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "rock-hill",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
         "/car-accident-lawyers/savannah-ga/": {
             "type": "practice_area",
             "status": "publish",
@@ -3429,6 +3732,118 @@
                 ],
                 "_roden_jurisdiction": "both",
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
+        "/car-accident-lawyers/simpsonville-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Car Accident Lawyers in Simpsonville, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Where is a Simpsonville car accident case filed?",
+                        "answer": "In the Greenville County Court of Common Pleas at 301 University Ridge, Thirteenth Judicial Circuit. Greenville County recorded 16,640 collisions and 71 fatal collisions in 2023 — the highest of any county in South Carolina on both measures."
+                    },
+                    {
+                        "question": "Which roads produce the most Simpsonville crashes?",
+                        "answer": "I-385 is the spine, carrying commuter traffic into Greenville and connecting to the Woodruff Road district, among the most congested stretches of road in the state. Locally, SC-14, Fairview Road and Harrison Bridge Road carry retail and residential traffic through signalised intersections with heavy turning movements."
+                    },
+                    {
+                        "question": "The crash seemed minor — is it still worth a claim?",
+                        "answer": "In congested-corridor collisions the insurer's first argument is usually that a low-speed impact could not have caused injury. Consistent medical documentation from the first visit onward is what answers it. The filing deadline is three years under S.C. Code § 15-3-530."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "simpsonville",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
+        "/car-accident-lawyers/spartanburg-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Car Accident Lawyers in Spartanburg, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "How dangerous are Spartanburg County roads?",
+                        "answer": "The SCDPS 2023 Traffic Collision Fact Book records 11,002 collisions in the county, including 71 fatal collisions and 84 people killed — tied with Greenville County for the most fatal collisions of any county in South Carolina. I-85 alone accounted for 1,311 collisions, followed by US-29 (985), US-176 (656), US-221 (509) and I-26 (464)."
+                    },
+                    {
+                        "question": "Which Spartanburg interchange sees the most crashes?",
+                        "answer": "I-85 at SC-290, the county's single worst location at 175 collisions in 2023. I-85 is the Charlotte-to-Atlanta freight spine, and its interchanges put merging local traffic directly into sustained interstate truck volume."
+                    },
+                    {
+                        "question": "Does Roden Law have a Spartanburg office?",
+                        "answer": "No. Roden Law is admitted throughout South Carolina and handles Upstate cases from our Columbia office. There is no Roden Law office in Spartanburg."
+                    },
+                    {
+                        "question": "Where is the case filed, and by when?",
+                        "answer": "In the Spartanburg County Court of Common Pleas at 180 Magnolia St., Seventh Judicial Circuit, within three years of the crash under S.C. Code § 15-3-530. Severe injuries are treated at Spartanburg Medical Center, the regional Adult Level I trauma centre."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "spartanburg",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
+        "/car-accident-lawyers/summerville-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Car Accident Lawyers in Summerville, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Which court hears a Summerville car accident case?",
+                        "answer": "Dorchester County Court of Common Pleas, at 5200 E. Jim Bilton Blvd. in St. George — about 25 miles from Summerville. The Troy Knight Judicial Complex on Deming Way in Summerville is closer but hears Family Court matters, not personal injury claims. Complaints are filed through South Carolina's mandatory Tyler Odyssey e-filing system."
+                    },
+                    {
+                        "question": "Why are there so many truck crashes on Summerville roads?",
+                        "answer": "I-26 is the freight corridor between the Port of Charleston and Columbia, Charlotte and the Upstate. Container traffic leaving the Hugh Leatherman and Columbus Street terminals passes through Summerville, then feeds onto US-17A, Berlin G. Myers Parkway, Old Trolley Road, Dorchester Road and Central Avenue — roads carrying residential growth they were never designed for."
+                    },
+                    {
+                        "question": "Where will I be treated after a serious Summerville crash?",
+                        "answer": "Trident Medical Center in North Charleston is the nearest designated trauma centre, at Adult Level II. Level I and paediatric trauma cases are routed to MUSC in Charleston. Which facility you are taken to often shapes the medical record, so keep every EMS and transfer document."
+                    },
+                    {
+                        "question": "How long do I have to file a car accident claim in Summerville?",
+                        "answer": "Three years from the date of the crash, under S.C. Code § 15-3-530. Claims against a government body are shorter and carry notice requirements under the South Carolina Tort Claims Act, so a crash involving a municipal or county vehicle should be assessed immediately."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "summerville",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
+        "/car-accident-lawyers/sumter-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Car Accident Lawyers in Sumter, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Where is a Sumter car accident case filed?",
+                        "answer": "In the Sumter County Court of Common Pleas at 215 N. Harvin St., in the Third Judicial Circuit, through South Carolina's mandatory Tyler Odyssey e-filing system. Sumter County recorded 30 fatal collisions in 2023, tenth-highest in the state."
+                    },
+                    {
+                        "question": "How does Shaw Air Force Base affect local crash risk?",
+                        "answer": "It puts a large, largely young and frequently rotating driving population onto local roads. Combined with Sumter's role as a regional hub for surrounding rural counties, that traffic concentrates on US-76/US-378, US-521, US-15 and SC-441 — much of it two-lane, unlit at the shoulder, with at-grade field access."
+                    },
+                    {
+                        "question": "Where will I be treated after a serious Sumter crash?",
+                        "answer": "There is no designated trauma centre in Sumter County. Seriously injured patients are transported roughly 45 miles to Prisma Health Richland in Columbia, an Adult Level I centre."
+                    },
+                    {
+                        "question": "I am active-duty military — does that change my claim?",
+                        "answer": "It can. Coordination between military health benefits, TRICARE recovery rights and the civil claim needs handling early, because the lien position affects what actually reaches you at the end."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "sumter",
                 "_roden_sol_sc": "S.C. Code § 15-3-530"
             }
         },
@@ -15739,6 +16154,56 @@
                 "_roden_sol_sc": "S.C. Code § 15-3-530"
             }
         },
+        "/motorcycle-accident-lawyers/spartanburg-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Motorcycle Accident Lawyers in Spartanburg, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Does South Carolina require motorcycle helmets?",
+                        "answer": "Only for riders under 21. For an adult rider, riding without a helmet is not negligence per se, though insurers routinely argue it contributed to head injuries — an argument that runs through comparative fault rather than barring the claim."
+                    },
+                    {
+                        "question": "Which Spartanburg roads are worst for riders?",
+                        "answer": "US-29 and US-176 carry heavy local traffic through signalised commercial corridors, and both rank among the county's worst roadways — 985 and 656 collisions respectively in 2023. Left-turn conflicts at commercial driveways are the recurring motorcycle pattern."
+                    },
+                    {
+                        "question": "What if the at-fault driver had minimum coverage?",
+                        "answer": "South Carolina permits stacking of uninsured and underinsured motorist coverage, frequently the largest available recovery source in a serious motorcycle case. Every policy in the household should be identified before settling with the at-fault insurer."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "spartanburg",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
+        "/motorcycle-accident-lawyers/summerville-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Motorcycle Accident Lawyers in Summerville, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Does not wearing a helmet affect my Summerville motorcycle claim?",
+                        "answer": "South Carolina requires helmets only for riders under 21. For an adult rider, going without one is not negligence per se, though insurers routinely argue it contributed to head injuries. That argument runs through comparative fault, not through an automatic bar."
+                    },
+                    {
+                        "question": "Which Summerville roads produce the most motorcycle crashes?",
+                        "answer": "The same corridors that carry the area's general crash burden — US-17A, Berlin G. Myers Parkway, Old Trolley Road and Dorchester Road. Left-turn conflicts at commercial driveways are the recurring pattern: a driver turning across a rider's path after misjudging closing speed."
+                    },
+                    {
+                        "question": "What if the driver who hit me had minimum-limits insurance?",
+                        "answer": "South Carolina permits stacking of uninsured and underinsured motorist coverage, which is frequently the largest available recovery source in a serious motorcycle case. Every policy in the household should be identified before settling with the at-fault driver's insurer."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "summerville",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
         "/nursing-home-abuse-lawyers/assisted-living-abuse/": {
             "type": "practice_area",
             "status": "publish",
@@ -16790,6 +17255,110 @@
                 "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)"
             }
         },
+        "/personal-injury-lawyers/conway-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Personal Injury Lawyers in Conway, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Why do Myrtle Beach cases get filed in Conway?",
+                        "answer": "Because Conway is the Horry County seat and the Court of Common Pleas sits here, at 1301 2nd Ave. Every Horry County civil case is filed in Conway regardless of where in the county the injury happened."
+                    },
+                    {
+                        "question": "What is the deadline for a Conway injury claim?",
+                        "answer": "Three years from the date of injury under S.C. Code § 15-3-530. Workers' compensation runs on a two-year deadline under § 42-15-40, and claims against a government body carry shorter notice requirements."
+                    },
+                    {
+                        "question": "Can I still recover if I was partly to blame?",
+                        "answer": "Yes, unless your own negligence was greater than the defendants' combined negligence. That is South Carolina's modified comparative-fault rule from Nelson v. Concrete Supply Co.; below the threshold, your award is reduced by your share."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "conway",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
+        "/personal-injury-lawyers/goose-creek-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Personal Injury Lawyers in Goose Creek, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Where is a Goose Creek injury case filed?",
+                        "answer": "In the Berkeley County Court of Common Pleas at 300-B California Ave. in Moncks Corner, through South Carolina's mandatory Tyler Odyssey e-filing system. Most cases are routed to mediation before trial under SC ADR Rule 3."
+                    },
+                    {
+                        "question": "Where are seriously injured Goose Creek patients treated?",
+                        "answer": "Trident Medical Center in North Charleston is the nearest designated trauma centre at Adult Level II. Level I and paediatric trauma cases go to MUSC in Charleston."
+                    },
+                    {
+                        "question": "How is fault decided in South Carolina?",
+                        "answer": "Under Nelson v. Concrete Supply Co., you can recover as long as your own negligence is not greater than the combined negligence of the defendants. Your award is then reduced by your percentage of fault."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "goose-creek",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
+        "/personal-injury-lawyers/hilton-head-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Personal Injury Lawyers in Hilton Head Island, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Where is a Hilton Head injury case filed?",
+                        "answer": "In the Beaufort County Court of Common Pleas at 102 Ribaut Rd. in Beaufort, roughly 40 miles off-island. Complaints go through South Carolina's mandatory Tyler Odyssey e-filing system, with most cases routed to mediation before trial under SC ADR Rule 3."
+                    },
+                    {
+                        "question": "Is there a trauma centre on Hilton Head Island?",
+                        "answer": "No. The island has no DPH-designated trauma centre, so seriously injured patients are stabilised locally and transported off-island. That transfer lengthens the treatment record and makes early preservation of EMS and transfer documentation important to the claim."
+                    },
+                    {
+                        "question": "Why do so many Hilton Head crashes involve US-278?",
+                        "answer": "It is the only road on and off the island, carrying every resident, worker, delivery vehicle and visitor across the Mackay Creek and Skull Creek bridges. A single crash on that corridor has no alternate route to absorb it."
+                    },
+                    {
+                        "question": "I was injured while on holiday — does my home-state policy apply?",
+                        "answer": "Not necessarily in the way you expect. South Carolina permits stacking of uninsured and underinsured motorist coverage, and that frequently decides the real value of a claim against a minimum-limits local driver. Every applicable policy should be identified before anything is settled."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "hilton-head",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
+        "/personal-injury-lawyers/mount-pleasant-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Personal Injury Lawyers in Mount Pleasant, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Which court hears Mount Pleasant injury cases?",
+                        "answer": "The Charleston County Court of Common Pleas at 100 Broad St. in Charleston. Complaints are filed through South Carolina's mandatory Tyler Odyssey e-filing system, and most cases are routed to mediation before trial under SC ADR Rule 3."
+                    },
+                    {
+                        "question": "What is the filing deadline in South Carolina?",
+                        "answer": "Three years from the date of injury under S.C. Code § 15-3-530. Workers' compensation and medical malpractice claims run on separate statutes, and claims against a government body carry shorter notice requirements under the Tort Claims Act."
+                    },
+                    {
+                        "question": "Does being partly at fault stop me recovering?",
+                        "answer": "Not unless your share is greater than the defendants' combined negligence. Under Nelson v. Concrete Supply Co., South Carolina applies modified comparative fault: below that threshold you recover, with the award reduced by your percentage."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "mount-pleasant",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
         "/personal-injury-lawyers/myrtle-beach-sc/": {
             "type": "practice_area",
             "status": "publish",
@@ -16825,6 +17394,110 @@
                 "_roden_jurisdiction": "south-carolina",
                 "_roden_pa_office_key": "myrtle-beach",
                 "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)"
+            }
+        },
+        "/personal-injury-lawyers/north-charleston-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Personal Injury Lawyers in North Charleston, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Where is a North Charleston injury case filed?",
+                        "answer": "In the Charleston County Court of Common Pleas at 100 Broad St. in Charleston. Parts of North Charleston fall in Berkeley and Dorchester counties, so the correct venue depends on where the injury occurred — worth confirming early, because filing in the wrong county costs time."
+                    },
+                    {
+                        "question": "What is the deadline for a North Charleston injury claim?",
+                        "answer": "Three years from the date of injury under S.C. Code § 15-3-530. Workers' compensation runs on two years under § 42-15-40, and claims against a government body carry shorter notice requirements under the South Carolina Tort Claims Act."
+                    },
+                    {
+                        "question": "Where are seriously injured patients treated?",
+                        "answer": "Trident Medical Center in North Charleston is the Adult Level II trauma centre. Level I and paediatric trauma cases are routed to MUSC in Charleston."
+                    },
+                    {
+                        "question": "Can I recover if I was partly at fault?",
+                        "answer": "Yes, unless your own negligence was greater than the combined negligence of the defendants. That is South Carolina's modified comparative-fault rule from Nelson v. Concrete Supply Co.; below that threshold your award is reduced in proportion to your share."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "north-charleston",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
+        "/personal-injury-lawyers/orangeburg-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Personal Injury Lawyers in Orangeburg, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Does Roden Law have an office in Orangeburg?",
+                        "answer": "No. Roden Law is admitted throughout South Carolina and handles Orangeburg County cases from our Columbia office. There is no Roden Law office in Orangeburg."
+                    },
+                    {
+                        "question": "Where is an Orangeburg injury case heard?",
+                        "answer": "In the Orangeburg County Court of Common Pleas, First Judicial Circuit, through South Carolina's mandatory Tyler Odyssey e-filing system, with most cases routed to mediation before trial under SC ADR Rule 3."
+                    },
+                    {
+                        "question": "What is the filing deadline?",
+                        "answer": "Three years from the date of injury under S.C. Code § 15-3-530. Workers' compensation runs on two years under § 42-15-40, and claims against a government body carry shorter notice requirements under the Tort Claims Act."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "orangeburg",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
+        "/personal-injury-lawyers/pawleys-island-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Personal Injury Lawyers in Pawleys Island, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Which county handles a Pawleys Island injury case?",
+                        "answer": "Georgetown County, not Horry — even though Pawleys Island sits on the Grand Strand and most local traffic flows north toward Murrells Inlet. Cases are filed in the Georgetown County Court of Common Pleas at 401 Cleland St. in Georgetown."
+                    },
+                    {
+                        "question": "What is the nearest trauma centre to Pawleys Island?",
+                        "answer": "Tidelands Waccamaw Community Hospital in Murrells Inlet, which carries an Adult Level IV designation — the lowest tier, meaning it stabilises and transfers rather than providing definitive trauma care. Severely injured patients are moved on to Grand Strand Medical Center in Myrtle Beach, an Adult Level I centre."
+                    },
+                    {
+                        "question": "Why is US-17 through Pawleys Island a crash risk?",
+                        "answer": "Along the Waccamaw Neck it narrows from the multi-lane divided highway drivers experience further north into sections with at-grade beach access turns, cyclists and vehicles slowing for causeways — so a driver at highway speed meets a turning or stopped vehicle with no dedicated turn lane."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "pawleys-island",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
+        "/personal-injury-lawyers/summerville-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Personal Injury Lawyers in Summerville, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Do I have to travel to St. George for my Summerville injury case?",
+                        "answer": "The Dorchester County Court of Common Pleas sits in St. George, about 25 miles away, and that is where a Summerville case is filed. Most cases resolve without a trial — South Carolina routes the majority to mediation before trial under ADR Rule 3 — so appearances at the courthouse itself are usually limited."
+                    },
+                    {
+                        "question": "What is the deadline for a personal injury claim in Summerville?",
+                        "answer": "Three years from the date of injury under S.C. Code § 15-3-530. Workers' compensation and medical malpractice run on different statutes, and claims against a government body carry shorter notice requirements under the Tort Claims Act."
+                    },
+                    {
+                        "question": "Can I recover if I was partly at fault?",
+                        "answer": "Yes, up to a point. Under Nelson v. Concrete Supply Co., recovery is barred only once your own negligence is greater than the combined negligence of the defendants. Below that line your award is reduced in proportion to your share of fault."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "summerville",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
             }
         },
         "/practice-areas/atv-side-by-side-accident-lawyers/": {
@@ -21634,6 +22307,31 @@
                 "_roden_sol_ga": "2 years (O.C.G.A. § 9-3-33)"
             }
         },
+        "/slip-and-fall-lawyers/goose-creek-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Slip & Fall Lawyers in Goose Creek, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "What do I have to prove in a Goose Creek slip and fall case?",
+                        "answer": "That the property owner knew about the hazard or should have discovered it, and failed to fix or warn about it. Actual or constructive notice is the usual battleground — which is why incident reports, maintenance logs and surveillance footage matter, and why they need to be requested before they are overwritten."
+                    },
+                    {
+                        "question": "How long does a store have to keep the video of my fall?",
+                        "answer": "There is no fixed legal retention period, and many systems overwrite in 14 to 30 days. A preservation letter sent promptly is often the difference between having the footage and arguing about what it would have shown."
+                    },
+                    {
+                        "question": "What is the deadline for a premises liability claim?",
+                        "answer": "Three years from the date of the fall under S.C. Code § 15-3-530. If the property is owned by a government body, the South Carolina Tort Claims Act imposes shorter notice requirements."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "goose-creek",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
         "/slip-and-fall-lawyers/grocery-store-slip-and-fall/": {
             "type": "practice_area",
             "status": "publish",
@@ -22695,6 +23393,31 @@
                 "_roden_sol_sc": "S.C. Code § 15-3-530"
             }
         },
+        "/truck-accident-lawyers/conway-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Truck Accident Lawyers in Conway, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Why is the Conway Bypass so dangerous for truck crashes?",
+                        "answer": "SC-22 carries freight from I-95 to the Grand Strand at highway speed across elevated bridge sections with concrete barriers on both sides. On a bridge there is no shoulder to leave the roadway, so a rear-end impact by a loaded truck has nowhere to dissipate."
+                    },
+                    {
+                        "question": "What evidence matters most after a Conway truck crash?",
+                        "answer": "The electronic logging device record, the engine control module download, dashcam footage and the carrier's maintenance and driver-qualification files. Federal retention periods under 49 C.F.R. are short, so preservation demands should go out before those windows close."
+                    },
+                    {
+                        "question": "Which court will hear the case?",
+                        "answer": "The Horry County Court of Common Pleas at 1301 2nd Ave. in Conway, through South Carolina's mandatory Tyler Odyssey e-filing system, with most cases routed to mediation before trial under SC ADR Rule 3."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "conway",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
         "/truck-accident-lawyers/darien-ga/": {
             "type": "practice_area",
             "status": "publish",
@@ -22856,6 +23579,31 @@
                 "_roden_sol_sc": "S.C. Code § 15-3-530"
             }
         },
+        "/truck-accident-lawyers/moncks-corner-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Truck Accident Lawyers in Moncks Corner, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Why do logging trucks feature in so many Berkeley County crashes?",
+                        "answer": "Berkeley County timber land feeds loaded logging trucks onto US-52 and the surrounding two-lane roads. Unprocessed timber secured by chains and stakes behaves differently from packaged freight: when a load shifts or a truck overturns, the logs themselves become the hazard to following vehicles."
+                    },
+                    {
+                        "question": "What should be preserved after a Moncks Corner truck crash?",
+                        "answer": "Electronic logging device data, the engine control module download, driver-qualification and maintenance files, and any weight tickets. Federal retention windows under 49 C.F.R. are short, so a preservation demand should go out immediately."
+                    },
+                    {
+                        "question": "Where will the case be heard?",
+                        "answer": "In the Berkeley County Court of Common Pleas in Moncks Corner, through South Carolina's mandatory Tyler Odyssey e-filing system, with most cases routed to mediation before trial under SC ADR Rule 3."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "moncks-corner",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
         "/truck-accident-lawyers/myrtle-beach-sc/": {
             "type": "practice_area",
             "status": "publish",
@@ -22990,6 +23738,31 @@
                 "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)"
             }
         },
+        "/truck-accident-lawyers/rock-hill-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Truck Accident Lawyers in Rock Hill, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Why is the I-77 corridor a truck-crash concern?",
+                        "answer": "It links Columbia to Charlotte and carries sustained long-haul freight through an area with fast-growing commuter volume. Trucks at highway speed and local traffic entering and leaving at county interchanges produce the speed-differential crashes typical of the corridor."
+                    },
+                    {
+                        "question": "What evidence should be preserved immediately?",
+                        "answer": "Electronic logging device data, engine control module downloads, dashcam footage and the carrier's maintenance and driver-qualification files. Federal retention periods under 49 C.F.R. are short, so a preservation demand should go out before those windows close."
+                    },
+                    {
+                        "question": "Where would the case be filed?",
+                        "answer": "In the York County Court of Common Pleas at the Moss Justice Center, 1675 York Hwy. in York, through South Carolina's mandatory Tyler Odyssey e-filing system."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "rock-hill",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
         "/truck-accident-lawyers/savannah-ga/": {
             "type": "practice_area",
             "status": "publish",
@@ -23022,6 +23795,60 @@
                 "_roden_pa_office_key": "savannah",
                 "_roden_sol_ga": "2 years (O.C.G.A. § 9-3-33)",
                 "_roden_translation_es": "/es/truck-accident-lawyers/savannah-ga/"
+            }
+        },
+        "/truck-accident-lawyers/spartanburg-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Truck Accident Lawyers in Spartanburg, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Why does I-85 produce so many Spartanburg truck crashes?",
+                        "answer": "It is the Charlotte-to-Atlanta freight corridor and the county's worst roadway, with 1,311 collisions in 2023. Its interchanges — I-85 at SC-290 worst among them at 175 collisions — put local traffic merging at surface speed directly into sustained interstate truck volume."
+                    },
+                    {
+                        "question": "What has to be preserved after an Upstate truck crash?",
+                        "answer": "Electronic logging device data, the engine control module download, dashcam footage, and the carrier's maintenance and driver-qualification files. Federal retention windows under 49 C.F.R. are short, and a carrier has no duty to keep what nobody has asked for."
+                    },
+                    {
+                        "question": "Who else can be liable besides the driver?",
+                        "answer": "The motor carrier, the trailer owner, a freight broker, a maintenance contractor, and where cargo shifted, the shipper or loader. On a corridor carrying interstate freight, several entities with separate insurance towers are often involved."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "spartanburg",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
+        "/truck-accident-lawyers/summerville-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Truck Accident Lawyers in Summerville, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "What makes I-26 through Summerville dangerous for truck crashes?",
+                        "answer": "It is the primary freight route between the Port of Charleston and inland destinations, so it carries a truck share well above the statewide average — and that traffic meets commuter volume from one of South Carolina's fastest-growing residential areas at interchanges built for far lower loads."
+                    },
+                    {
+                        "question": "What evidence disappears after a Summerville truck crash?",
+                        "answer": "Electronic logging device data, engine-control-module downloads, dashcam footage and driver-qualification files. Federal retention periods under 49 C.F.R. are short, and carriers are not obliged to keep records you have not asked for. A spoliation letter should go out before those windows close."
+                    },
+                    {
+                        "question": "Who can be held liable besides the truck driver?",
+                        "answer": "The motor carrier, the trailer owner, a broker who arranged the load, a maintenance contractor, and — where cargo shifted — the shipper or loader. Port-container cases in particular often involve several entities with separate insurance towers."
+                    },
+                    {
+                        "question": "How long do I have to file a truck accident claim in Summerville?",
+                        "answer": "Three years from the crash under S.C. Code § 15-3-530. That is the outer limit for filing suit, not for investigating — the evidence that decides a trucking case is usually gone long before the deadline."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "summerville",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
             }
         },
         "/truck-accident-lawyers/underride-override-accident/": {
@@ -23345,6 +24172,31 @@
                 "_roden_sol_sc": "S.C. Code § 42-15-40"
             }
         },
+        "/workers-compensation-lawyers/goose-creek-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Workers' Compensation Lawyers in Goose Creek, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "What is the deadline for a Goose Creek workers' compensation claim?",
+                        "answer": "Two years from the date of injury under S.C. Code § 42-15-40, with notice to your employer required within 90 days under § 42-15-20. Both are shorter than the three-year deadline that applies to ordinary injury claims."
+                    },
+                    {
+                        "question": "I was hurt working at Joint Base Charleston — which system covers me?",
+                        "answer": "It depends on your employment status. Federal civilian employees fall under FECA rather than South Carolina workers' compensation, and contractor employees on federal property may fall under the Longshore and Harbor Workers' Compensation Act, which carries a one-year deadline under 33 U.S.C. § 913. Getting the system right at the outset matters."
+                    },
+                    {
+                        "question": "Can I bring a claim beyond workers' compensation?",
+                        "answer": "Often yes. Compensation is the exclusive remedy against your employer, but a third-party claim can run alongside it — against a subcontractor, an equipment manufacturer, a property owner, or the at-fault driver where the injury happened on the road."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "goose-creek",
+                "_roden_sol_sc": "S.C. Code § 42-15-40"
+            }
+        },
         "/workers-compensation-lawyers/gulfstream-aerospace-injury/": {
             "type": "practice_area",
             "status": "publish",
@@ -23558,6 +24410,31 @@
                 "_roden_sol_sc": "S.C. Code § 42-15-40"
             }
         },
+        "/workers-compensation-lawyers/rock-hill-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Workers' Compensation Lawyers in Rock Hill, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "What are the deadlines for a York County workers' compensation claim?",
+                        "answer": "Two years from the date of injury under S.C. Code § 42-15-40, and notice to your employer within 90 days under § 42-15-20. Both run shorter than the three-year deadline for ordinary injury claims."
+                    },
+                    {
+                        "question": "I live in South Carolina but work in Charlotte — which state covers me?",
+                        "answer": "It depends on where you were hired, where you normally work and where the injury happened, and the answer is not always the state you live in. Getting the coverage question right at the outset matters, because filing in the wrong system can cost the claim."
+                    },
+                    {
+                        "question": "Where is the case decided?",
+                        "answer": "Before the South Carolina Workers' Compensation Commission, not the York County courts — an administrative process with its own hearing procedure, deadlines and appeal path."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "rock-hill",
+                "_roden_sol_sc": "S.C. Code § 42-15-40"
+            }
+        },
         "/workers-compensation-lawyers/savannah-ga/": {
             "type": "practice_area",
             "status": "publish",
@@ -23627,6 +24504,56 @@
                 "_roden_meta_description": "Hurt at the Port of Savannah or Brunswick? Federal Longshore Act benefits often exceed Georgia comp and let you choose your own doctor.",
                 "_roden_sol_ga": "O.C.G.A. § 34-9-82",
                 "_roden_state_scope": "GA"
+            }
+        },
+        "/workers-compensation-lawyers/spartanburg-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Workers' Compensation Lawyers in Spartanburg, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "What is the deadline for a Spartanburg workers' compensation claim?",
+                        "answer": "Two years from the date of injury under S.C. Code § 42-15-40, with notice to your employer required within 90 days under § 42-15-20. Both are shorter than the three-year deadline for ordinary injury claims, and late notice is a common reason valid claims are denied."
+                    },
+                    {
+                        "question": "Where is a workers' compensation case heard?",
+                        "answer": "Before the South Carolina Workers' Compensation Commission, not the Spartanburg County courts. It is an administrative process with its own hearing and appeal procedure, which is why its deadlines and evidence rules differ from a civil case."
+                    },
+                    {
+                        "question": "Can I bring a claim outside the compensation system?",
+                        "answer": "Often yes. Compensation is the exclusive remedy against your employer, but a third-party claim can run alongside it — against a subcontractor, an equipment manufacturer, a property owner, or an at-fault driver where the injury happened on the road. Those claims run on the three-year tort statute."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "spartanburg",
+                "_roden_sol_sc": "S.C. Code § 42-15-40"
+            }
+        },
+        "/workers-compensation-lawyers/summerville-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Workers' Compensation Lawyers in Summerville, SC",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "How long do I have to file a workers' compensation claim in Summerville?",
+                        "answer": "Two years from the date of injury under S.C. Code § 42-15-40 — a different and shorter deadline than the three-year personal injury statute. You must also notify your employer within 90 days under § 42-15-20, and late notice is one of the most common reasons a valid claim is denied."
+                    },
+                    {
+                        "question": "Can I sue my employer after a Summerville workplace injury?",
+                        "answer": "Generally no — workers' compensation is an exclusive remedy against the employer. But a third party can often be sued separately: a subcontractor, an equipment manufacturer, a property owner, or the driver in a work-related crash. Those third-party claims run on the three-year tort statute."
+                    },
+                    {
+                        "question": "Where is my workers' compensation case heard?",
+                        "answer": "Before the South Carolina Workers' Compensation Commission, not in the Dorchester County courts. It is an administrative process with its own hearing procedure and appeal path, which is why the deadlines and evidence rules differ from a civil injury case."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_pa_office_key": "summerville",
+                "_roden_sol_sc": "S.C. Code § 42-15-40"
             }
         },
         "/workers-compensation-lawyers/third-party-workplace-injury/": {
