@@ -172,7 +172,7 @@ EOT
                 'slug'         => 'charleston-sc',
                 'state_slug'   => 'south-carolina',
                 'service_area' => 'Charleston, Mount Pleasant, West Ashley, James Island, Johns Island, Daniel Island, and surrounding Lowcountry communities.',
-                'attorneys'    => array( 'graeham-gillin', 'kiley-reidy', 'zach-stohr' ),
+                'attorneys'    => array( 'graeham-gillin' ),
                 'nearby_communities' => array(
                     'Mount Pleasant', 'West Ashley', 'James Island', 'Johns Island',
                     'Daniel Island', 'Isle of Palms', 'Folly Beach', "Sullivan's Island",
@@ -220,7 +220,7 @@ EOT
                 'slug'         => 'north-charleston-sc',
                 'state_slug'   => 'south-carolina',
                 'service_area' => 'North Charleston, Goose Creek, Summerville, Hanahan, Ladson, Moncks Corner, and surrounding tri-county communities.',
-                'attorneys'    => array( 'graeham-gillin', 'kiley-reidy', 'zach-stohr' ),
+                'attorneys'    => array( 'graeham-gillin' ),
                 'nearby_communities' => array(
                     'Goose Creek', 'Summerville', 'Hanahan', 'Ladson',
                     'Moncks Corner', 'Park Circle', 'Dorchester',
@@ -268,7 +268,7 @@ EOT
                 'slug'         => 'columbia-sc',
                 'state_slug'   => 'south-carolina',
                 'service_area' => 'Columbia, Lexington, Irmo, West Columbia, Cayce, Forest Acres, and surrounding Midlands South Carolina communities.',
-                'attorneys'    => array( 'graeham-gillin', 'kiley-reidy' ),
+                'attorneys'    => array( 'graeham-gillin' ),
                 'nearby_communities' => array(
                     'Lexington', 'Irmo', 'West Columbia', 'Cayce',
                     'Forest Acres', 'Blythewood', 'Elgin', 'Chapin',
@@ -350,6 +350,11 @@ EOT
            ATTORNEYS — 7 Key Attorneys
            ================================================================== */
 
+        // Departures must be removed from here as well as redirected and drafted.
+        // inc/legacy-redirects.php 301s a departed attorney's profile to /about/ and
+        // the CPT post is moved to draft, but this array is what llms.txt is built
+        // from — Kiley Reidy and Zach Stohr stayed here after leaving and the file
+        // went on advertising two South Carolina associates the firm did not employ.
         'attorneys' => array(
             // Georgia only — corrected 2026-08-07 on the firm's confirmation.
             // This array supplements the attorney post's own
@@ -380,18 +385,6 @@ EOT
             'graeham-gillin' => array(
                 'name'           => 'Graeham C. Gillin',
                 'title'          => 'Partner, COO',
-                'bar_admissions' => array( 'South Carolina' ),
-                'office'         => 'charleston',
-            ),
-            'kiley-reidy' => array(
-                'name'           => 'Kiley Reidy',
-                'title'          => 'Associate',
-                'bar_admissions' => array( 'South Carolina' ),
-                'office'         => 'charleston',
-            ),
-            'zach-stohr' => array(
-                'name'           => 'Zach Stohr',
-                'title'          => 'Associate',
                 'bar_admissions' => array( 'South Carolina' ),
                 'office'         => 'charleston',
             ),

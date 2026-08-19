@@ -1652,11 +1652,11 @@ $in_location  = 'in ' . $city;
             <div class="attorney-strip">
                 <div class="attorney-strip-photos">
                     <?php
-                    // SC attorneys: Gillin, Reidy, Stohr, Montano.
+                    // SC attorneys: Gillin, Montano. Reidy and Stohr left the firm;
+                    // this strip is hardcoded rather than read from firm-data, so it
+                    // kept rendering them after they were removed everywhere else.
                     $sc_attorneys = array(
                         array( 'initials' => 'GG', 'name' => 'Graeham Gillin' ),
-                        array( 'initials' => 'KR', 'name' => 'Kiley Reidy' ),
-                        array( 'initials' => 'ZS', 'name' => 'Zach Stohr' ),
                         array( 'initials' => 'IM', 'name' => 'Ivy Montano' ),
                     );
                     foreach ( $sc_attorneys as $atty ) :
