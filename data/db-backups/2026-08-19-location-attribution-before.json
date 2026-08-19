@@ -1,0 +1,1339 @@
+{
+    "captured_for": "bin/backfill-location-attribution.php",
+    "keys": [
+        "_roden_jurisdiction",
+        "_roden_author_attorney",
+        "_roden_sol_sc",
+        "_roden_sol_ga",
+        "_roden_last_reviewed"
+    ],
+    "post_count": 219,
+    "posts": [
+        {
+            "id": 4883,
+            "slug": "es-north-charleston",
+            "status": "publish",
+            "meta": {
+                "_roden_last_reviewed": "2026-08-03"
+            }
+        },
+        {
+            "id": 4871,
+            "slug": "es-columbia",
+            "status": "publish",
+            "meta": {
+                "_roden_last_reviewed": "2026-08-03"
+            }
+        },
+        {
+            "id": 4872,
+            "slug": "es-myrtle-beach",
+            "status": "publish",
+            "meta": {
+                "_roden_last_reviewed": "2026-08-03"
+            }
+        },
+        {
+            "id": 4869,
+            "slug": "es-darien",
+            "status": "publish",
+            "meta": {
+                "_roden_last_reviewed": "2026-08-03"
+            }
+        },
+        {
+            "id": 4870,
+            "slug": "es-charleston",
+            "status": "publish",
+            "meta": {
+                "_roden_last_reviewed": "2026-08-03"
+            }
+        },
+        {
+            "id": 4868,
+            "slug": "es-savannah",
+            "status": "publish",
+            "meta": {
+                "_roden_last_reviewed": "2026-08-03"
+            }
+        },
+        {
+            "id": 4335,
+            "slug": "egypt",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4334,
+            "slug": "marlow",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4333,
+            "slug": "guyton",
+            "status": "draft",
+            "meta": []
+        },
+        {
+            "id": 4332,
+            "slug": "springfield",
+            "status": "draft",
+            "meta": []
+        },
+        {
+            "id": 4331,
+            "slug": "south-effingham",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4330,
+            "slug": "georgia-southern",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4329,
+            "slug": "town-center",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4328,
+            "slug": "town-center",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4327,
+            "slug": "town-center",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4326,
+            "slug": "fort-stewart-area",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4325,
+            "slug": "city-center",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4324,
+            "slug": "ardsley-park-chatham-crescent",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4323,
+            "slug": "river-street",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4322,
+            "slug": "historic-district",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4321,
+            "slug": "savannah-quarters",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4320,
+            "slug": "georgetown-savannah",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4319,
+            "slug": "west-pooler",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4318,
+            "slug": "godley-station",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4317,
+            "slug": "pier-area",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4316,
+            "slug": "marshwalk",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4315,
+            "slug": "waterfront",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4314,
+            "slug": "historic-district",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4313,
+            "slug": "town-center",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4312,
+            "slug": "socastee-village",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4311,
+            "slug": "the-farm",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4310,
+            "slug": "barefoot-landing",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4309,
+            "slug": "historic-district",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4308,
+            "slug": "golden-mile",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4307,
+            "slug": "grande-dunes",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4306,
+            "slug": "market-common",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4305,
+            "slug": "pine-forest-inn",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4304,
+            "slug": "wescott",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4303,
+            "slug": "summers-corner",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4302,
+            "slug": "sangaree",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4301,
+            "slug": "knightsville",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4300,
+            "slug": "nexton",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4299,
+            "slug": "cane-bay",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4298,
+            "slug": "historic-district",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4297,
+            "slug": "grand-oaks-plantation",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4296,
+            "slug": "south-windermere",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4295,
+            "slug": "ashley-river-road",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4294,
+            "slug": "byrnes-downs",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4293,
+            "slug": "west-ashley-park",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4292,
+            "slug": "shadowmoss",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4291,
+            "slug": "citadel-mall-area",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4290,
+            "slug": "avondale",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4289,
+            "slug": "westchester",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4288,
+            "slug": "brickhope-plantation",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4287,
+            "slug": "devon-forest",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4286,
+            "slug": "howe-hall",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4285,
+            "slug": "boulder-bluff",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4284,
+            "slug": "carnes-crossroads",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4283,
+            "slug": "liberty-hall-plantation",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4282,
+            "slug": "crowfield-plantation",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4281,
+            "slug": "wagener-terrace",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4280,
+            "slug": "the-crosstown",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4279,
+            "slug": "cannonborough-elliotborough",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4278,
+            "slug": "ansonborough",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4277,
+            "slug": "harleston-village",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4276,
+            "slug": "king-street-district",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4275,
+            "slug": "french-quarter",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4274,
+            "slug": "south-of-broad",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4273,
+            "slug": "sullivans-island",
+            "status": "draft",
+            "meta": []
+        },
+        {
+            "id": 4272,
+            "slug": "rivertowne",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4271,
+            "slug": "snee-farm",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4270,
+            "slug": "shem-creek",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4269,
+            "slug": "dunes-west",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4268,
+            "slug": "carolina-park",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4267,
+            "slug": "belle-hall",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4266,
+            "slug": "park-west",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4265,
+            "slug": "ion",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4264,
+            "slug": "old-village",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4263,
+            "slug": "northwoods",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4262,
+            "slug": "wescott-plantation",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4261,
+            "slug": "chicora-cherokee",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4260,
+            "slug": "charleston-heights",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4259,
+            "slug": "oak-terrace-preserve",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4258,
+            "slug": "ferndale",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4257,
+            "slug": "liberty-hill",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4256,
+            "slug": "dorchester-terrace-waylyn",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4255,
+            "slug": "olde-north-charleston",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 4254,
+            "slug": "park-circle",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3887,
+            "slug": "harrietts-bluff",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3886,
+            "slug": "sea-island",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3885,
+            "slug": "screven",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3884,
+            "slug": "odum",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3883,
+            "slug": "eulonia",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3882,
+            "slug": "townsend",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3881,
+            "slug": "white-oak",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3880,
+            "slug": "waverly",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3879,
+            "slug": "kings-bay",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3878,
+            "slug": "dock-junction",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3877,
+            "slug": "hoboken",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3876,
+            "slug": "alma",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3875,
+            "slug": "blackshear",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3874,
+            "slug": "ludowici",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3873,
+            "slug": "nahunta",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3872,
+            "slug": "woodbine",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3871,
+            "slug": "darien",
+            "status": "draft",
+            "meta": []
+        },
+        {
+            "id": 3870,
+            "slug": "jekyll-island",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3869,
+            "slug": "folkston",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3868,
+            "slug": "jesup",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3867,
+            "slug": "waycross",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3866,
+            "slug": "st-marys",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3865,
+            "slug": "kingsland",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3864,
+            "slug": "st-simons-island",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3863,
+            "slug": "brunswick",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3862,
+            "slug": "pelion",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3861,
+            "slug": "gaston",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3860,
+            "slug": "camden",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3859,
+            "slug": "pine-ridge",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3858,
+            "slug": "south-congaree",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3857,
+            "slug": "elgin",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3856,
+            "slug": "batesburg-leesville",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3855,
+            "slug": "springdale",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3854,
+            "slug": "hopkins",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3853,
+            "slug": "lugoff",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3852,
+            "slug": "northeast-columbia",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3851,
+            "slug": "woodfield",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3850,
+            "slug": "chapin",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3849,
+            "slug": "blythewood",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3848,
+            "slug": "oak-grove",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3847,
+            "slug": "red-bank",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3846,
+            "slug": "forest-acres",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3845,
+            "slug": "dentsville",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3844,
+            "slug": "seven-oaks",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3843,
+            "slug": "st-andrews",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3842,
+            "slug": "irmo",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3841,
+            "slug": "cayce",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3840,
+            "slug": "west-columbia",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3839,
+            "slug": "lexington",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3838,
+            "slug": "columbia",
+            "status": "draft",
+            "meta": []
+        },
+        {
+            "id": 3837,
+            "slug": "green-sea",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3836,
+            "slug": "galivants-ferry",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3835,
+            "slug": "wampee",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3834,
+            "slug": "briarcliffe-acres",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3833,
+            "slug": "atlantic-beach",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3832,
+            "slug": "andrews",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3831,
+            "slug": "bucksport",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3830,
+            "slug": "burgess",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3829,
+            "slug": "red-hill",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3828,
+            "slug": "litchfield-beach",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3827,
+            "slug": "aynor",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3826,
+            "slug": "loris",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3825,
+            "slug": "longs",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3824,
+            "slug": "forestbrook",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3823,
+            "slug": "georgetown",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3822,
+            "slug": "pawleys-island",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3821,
+            "slug": "murrells-inlet",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3820,
+            "slug": "little-river",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3819,
+            "slug": "garden-city-beach",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3818,
+            "slug": "socastee",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3817,
+            "slug": "surfside-beach",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3816,
+            "slug": "carolina-forest",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3815,
+            "slug": "north-myrtle-beach",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3814,
+            "slug": "conway",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3813,
+            "slug": "myrtle-beach",
+            "status": "draft",
+            "meta": []
+        },
+        {
+            "id": 3812,
+            "slug": "eastside-savannah",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3811,
+            "slug": "bryan-county",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3810,
+            "slug": "ardsley-park",
+            "status": "draft",
+            "meta": []
+        },
+        {
+            "id": 3809,
+            "slug": "westside-savannah",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3808,
+            "slug": "georgetown",
+            "status": "draft",
+            "meta": []
+        },
+        {
+            "id": 3807,
+            "slug": "guyton",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3806,
+            "slug": "springfield",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3805,
+            "slug": "skidaway-island",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3804,
+            "slug": "whitemarsh-island",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3803,
+            "slug": "thunderbolt",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3802,
+            "slug": "isle-of-hope",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3801,
+            "slug": "downtown-savannah",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3800,
+            "slug": "bloomingdale",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3799,
+            "slug": "effingham-county",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3798,
+            "slug": "statesboro",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3797,
+            "slug": "hinesville",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3796,
+            "slug": "midtown-savannah",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3795,
+            "slug": "southside-savannah",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3794,
+            "slug": "tybee-island",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3793,
+            "slug": "wilmington-island",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3792,
+            "slug": "port-wentworth",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3791,
+            "slug": "garden-city",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3790,
+            "slug": "rincon",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3789,
+            "slug": "richmond-hill",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3788,
+            "slug": "pooler",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3762,
+            "slug": "mount-pleasant",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3763,
+            "slug": "north-charleston",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3764,
+            "slug": "summerville",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3765,
+            "slug": "west-ashley",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3766,
+            "slug": "goose-creek",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3767,
+            "slug": "james-island",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3768,
+            "slug": "johns-island",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3769,
+            "slug": "daniel-island",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3770,
+            "slug": "ladson",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3771,
+            "slug": "hanahan",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3772,
+            "slug": "folly-beach",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3773,
+            "slug": "isle-of-palms",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3774,
+            "slug": "sullivans-island",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3775,
+            "slug": "downtown-charleston",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3776,
+            "slug": "moncks-corner",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3777,
+            "slug": "kiawah-island",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3778,
+            "slug": "seabrook-island",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3780,
+            "slug": "awendaw",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3781,
+            "slug": "hollywood",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3782,
+            "slug": "ravenel",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3783,
+            "slug": "meggett",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3784,
+            "slug": "wadmalaw-island",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3785,
+            "slug": "edisto-island",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3786,
+            "slug": "mcclellanville",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3597,
+            "slug": "savannah",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3598,
+            "slug": "darien",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3599,
+            "slug": "charleston",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3600,
+            "slug": "columbia",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3601,
+            "slug": "myrtle-beach",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3595,
+            "slug": "georgia",
+            "status": "publish",
+            "meta": []
+        },
+        {
+            "id": 3596,
+            "slug": "south-carolina",
+            "status": "publish",
+            "meta": []
+        }
+    ]
+}
