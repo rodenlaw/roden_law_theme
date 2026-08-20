@@ -63,6 +63,22 @@ if ( ! $parent_office_key || ! isset( $firm['offices'][ $parent_office_key ] ) )
 
 $office       = $firm['offices'][ $parent_office_key ];
 $state_key    = $office['state'];
+
+/*
+ * Is this page's town a service area — somewhere the firm serves but has no
+ * office? The NAP bar below renders the PARENT office's full street address, so
+ * on a page headed "Personal Injury Lawyer Serving Spartanburg" that reads as a
+ * local presence unless it is labelled. template-intersection.php already
+ * carries this disclosure; this is the second of the four templates that share
+ * practice-area rendering, and CLAUDE.md records that a fix applied to one is
+ * not applied to the others.
+ *
+ * Resolved from the post slug rather than a meta flag, so it stays true
+ * automatically as service_areas changes.
+ */
+$nb_market       = function_exists( 'roden_market' ) ? roden_market( $post->post_name ) : null;
+$nb_is_area      = ( $nb_market && ! empty( $nb_market['is_service_area'] ) );
+$nb_serving_from = $nb_is_area ? $nb_market['parent_office_name'] : '';
 $jurisdiction = isset( $firm['jurisdiction'][ $state_key ] ) ? $firm['jurisdiction'][ $state_key ] : null;
 $stats        = $firm['trust_stats'];
 
@@ -176,6 +192,16 @@ $directions_url = 'https://www.google.com/maps/dir/' . urlencode( $neighborhood_
         <div class="container map-nap-inner">
             <div class="map-nap-address">
                 <strong><?php echo esc_html( $office['name'] ); ?></strong>
+                <?php if ( $nb_is_area ) : ?>
+                    <span class="nap-serving-note"><?php
+                        printf(
+                            /* translators: 1: town served, e.g. "Spartanburg"; 2: the office the firm actually occupies, e.g. "Columbia". */
+                            esc_html__( 'We serve %1$s clients from our %2$s office — there is no Roden Law office in %1$s.', 'roden-law' ),
+                            esc_html( $neighborhood_name ),
+                            esc_html( $nb_serving_from )
+                        );
+                    ?></span>
+                <?php endif; ?>
                 <span><?php echo esc_html( $office['street'] . ', ' . $office['city'] . ', ' . $office['state'] . ' ' . $office['zip'] ); ?></span>
             </div>
             <div class="map-nap-actions">
