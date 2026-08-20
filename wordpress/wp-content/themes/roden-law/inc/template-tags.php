@@ -1050,7 +1050,8 @@ function roden_contact_form_sidebar( $local_phone = '', $source = '' ) {
     ?>
     <div class="sidebar-contact-form">
         <h3 class="form-title"><?php esc_html_e( 'Free Case Review', 'roden-law' ); ?></h3>
-        <p class="form-subtitle"><?php esc_html_e( 'No fees unless we win', 'roden-law' ); ?><br><?php esc_html_e( 'Hundreds of 5-star reviews', 'roden-law' ); ?></p>
+        <?php $rf_stats = roden_firm_data(); ?>
+        <p class="form-subtitle"><?php esc_html_e( 'No fees unless we win', 'roden-law' ); ?><br><?php printf( /* translators: %d: rounded live Google review count, e.g. 170. */ esc_html__( '%d+ verified Google reviews', 'roden-law' ), (int) $rf_stats['trust_stats']['review_count_rounded'] ); ?></p>
         <form class="roden-sidebar-form" id="roden-sidebar-form" novalidate>
             <?php wp_nonce_field( 'roden_sidebar_form', 'roden_form_nonce' ); ?>
             <input type="hidden" name="gclid" class="roden-gclid" value="">
@@ -2730,7 +2731,7 @@ function roden_ai_stats_block( $practice_area_title = '' ) {
                 </tr>
                 <tr>
                     <th scope="row"><strong><?php printf( /* translators: %s: star rating, e.g. "4.9". */ esc_html__( '%s / 5.0', 'roden-law' ), esc_html( $firm['rating'] ) ); ?></strong></th>
-                    <td><?php esc_html_e( 'Average client rating across hundreds of verified Google reviews from our six offices', 'roden-law' ); ?></td>
+                    <td><?php printf( /* translators: %d: rounded live Google review count, e.g. 170. */ esc_html__( 'Average client rating across %d+ verified Google reviews from our six offices', 'roden-law' ), (int) $firm['trust_stats']['review_count_rounded'] ); ?></td>
                 </tr>
                 <tr>
                     <th scope="row"><strong><?php echo esc_html( $firm['cases_handled'] ); ?></strong></th>

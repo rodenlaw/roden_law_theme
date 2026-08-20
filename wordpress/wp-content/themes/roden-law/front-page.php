@@ -338,7 +338,7 @@ if ( 'es' === $home_lang ) {
         <div class="site-container">
             <div class="testimonial-social-proof">
                 <div class="social-proof-stars" aria-label="<?php esc_attr_e( '5 star rating', 'roden-law' ); ?>">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <h2><?php esc_html_e( 'Hundreds of Five-Star Reviews', 'roden-law' ); ?></h2>
+                <h2><?php printf( /* translators: %d: rounded live Google review count, e.g. 170. */ esc_html__( '%d+ Verified Google Reviews', 'roden-law' ), (int) $firm['trust_stats']['review_count_rounded'] ); ?></h2>
                 <p><?php esc_html_e( 'Our clients trust us to fight for maximum compensation.', 'roden-law' ); ?></p>
             </div>
 

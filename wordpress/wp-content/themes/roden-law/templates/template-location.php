@@ -378,7 +378,7 @@ if ( $loc_expert_quote && ! empty( $location_attorneys ) ) {
             </div>
             <div class="card why-choose-card">
                 <h3><?php printf( /* translators: %s: star rating, e.g. "4.9". */ esc_html__( '%s-Star Client Rating', 'roden-law' ), esc_html( $stats['rating'] ) ); ?></h3>
-                <p><?php printf( /* translators: 1: star rating; 2: review-count phrase, e.g. "hundreds of". */ esc_html__( 'Rated %1$s stars from %2$s client reviews. Our clients trust us to deliver results.', 'roden-law' ), esc_html( $stats['rating'] ), esc_html( $stats['reviews'] ) ); ?></p>
+                <p><?php printf( /* translators: 1: star rating, e.g. "4.9"; 2: derived review-count phrase from firm-data, e.g. "170+ verified Google". */ esc_html__( 'Rated %1$s stars from %2$s client reviews. Our clients trust us to deliver results.', 'roden-law' ), esc_html( $stats['rating'] ), esc_html( $stats['reviews'] ) ); ?></p>
             </div>
         </div>
     </div>
