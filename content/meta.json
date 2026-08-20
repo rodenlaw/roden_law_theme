@@ -211,198 +211,6 @@
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33"
             }
         },
-        "/?post_type=location&p=5331": {
-            "type": "location",
-            "status": "draft",
-            "title": "Hilton Head Island",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Where would my Hilton Head injury case be filed?",
-                        "answer": "In the Beaufort County Court of Common Pleas at 102 Ribaut Rd. in Beaufort, roughly 40 miles off-island. Complaints go through South Carolina's mandatory Tyler Odyssey e-filing system, and most cases are routed to mediation before trial under SC ADR Rule 3."
-                    },
-                    {
-                        "question": "Is there a trauma centre on Hilton Head Island?",
-                        "answer": "No. The island has no DPH-designated trauma centre, so seriously injured patients are stabilised locally and transported off-island. That transfer lengthens the treatment record and makes early preservation of EMS and transfer documentation important to the claim."
-                    },
-                    {
-                        "question": "I was injured on holiday — does South Carolina law apply?",
-                        "answer": "Yes. South Carolina law governs a crash that happens here regardless of where you live, and it permits stacking of uninsured and underinsured motorist coverage. That often decides the real value of a claim against a minimum-limits local driver, so every applicable policy should be identified before anything is settled."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/?post_type=location&p=5332": {
-            "type": "location",
-            "status": "draft",
-            "title": "Orangeburg",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Why does Orangeburg County have so many fatal crashes?",
-                        "answer": "It recorded 34 fatal collisions in 2023, ninth-highest of any South Carolina county, which is striking for its population. The structural cause is the I-26 / I-95 junction: long-haul traffic with no local destination passes through in volume and feeds onto two-lane surface routes like US-301, US-601, US-21 and US-178 that were never designed to receive it."
-                    },
-                    {
-                        "question": "Does Roden Law have an Orangeburg office?",
-                        "answer": "No. Roden Law is admitted throughout South Carolina and handles Orangeburg County cases from our Columbia office. The case is still filed and litigated in the First Judicial Circuit, on Orangeburg County's rules and before an Orangeburg County jury."
-                    },
-                    {
-                        "question": "Where would I be treated after a serious Orangeburg crash?",
-                        "answer": "The Regional Medical Center in Orangeburg is the county's Adult Level III trauma centre. The most severe injuries are transferred to Prisma Health Richland in Columbia, an Adult Level I centre, and that transfer chain is a routine feature of serious cases here."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/?post_type=location&p=5333": {
-            "type": "location",
-            "status": "draft",
-            "title": "Sumter",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "How does Shaw Air Force Base affect crash risk in Sumter?",
-                        "answer": "It puts a large, largely young and frequently rotating driving population onto local roads. Combined with Sumter's role as a regional hub for the surrounding rural counties, that traffic concentrates on US-76/US-378, US-521, US-15 and SC-441 — much of it two-lane, unlit at the shoulder, with at-grade field access."
-                    },
-                    {
-                        "question": "I am active-duty military — does that change my claim?",
-                        "answer": "It can. TRICARE and military treatment facilities assert recovery rights against a civil settlement, and a lien resolved late — or not at all — reduces what actually reaches you. We identify those interests at the outset and negotiate them alongside the claim rather than after it."
-                    },
-                    {
-                        "question": "Where would I be treated after a serious Sumter crash?",
-                        "answer": "There is no DPH-designated trauma centre in Sumter County. Prisma Health Tuomey Hospital in Sumter handles local emergency care, and seriously injured patients are transported roughly 45 miles to Prisma Health Richland in Columbia, an Adult Level I centre."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/?post_type=location&p=5334": {
-            "type": "location",
-            "status": "draft",
-            "title": "Spartanburg",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "How dangerous are Spartanburg County roads?",
-                        "answer": "The SCDPS 2023 Traffic Collision Fact Book records 11,002 collisions in the county, including 71 fatal collisions and 84 people killed — tied with Greenville County for the most fatal collisions of any county in South Carolina. I-85 alone accounted for 1,311 collisions, followed by US-29 (985), US-176 (656), US-221 (509) and I-26 (464)."
-                    },
-                    {
-                        "question": "Which Spartanburg interchange sees the most crashes?",
-                        "answer": "I-85 at SC-290, the county's single worst location at 175 collisions in 2023. I-85 is the Charlotte-to-Atlanta freight spine, and its interchanges put merging local traffic directly into sustained interstate truck volume."
-                    },
-                    {
-                        "question": "Does Roden Law have a Spartanburg office?",
-                        "answer": "No. Roden Law is admitted throughout South Carolina and handles Upstate cases from our Columbia office. Cases are filed in the Spartanburg County Court of Common Pleas at 180 Magnolia St., in the Seventh Judicial Circuit, within three years of the crash under S.C. Code § 15-3-530."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/?post_type=location&p=5335": {
-            "type": "location",
-            "status": "draft",
-            "title": "Rock Hill",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Is the York County courthouse in Rock Hill?",
-                        "answer": "No. York County cases are filed in the York County Court of Common Pleas at the Moss Justice Center, 1675 York Hwy. in the town of York, in the Sixteenth Judicial Circuit. York County recorded 29 fatal collisions in 2023."
-                    },
-                    {
-                        "question": "What if the driver who hit me lives in North Carolina?",
-                        "answer": "Which state's law applies becomes a threshold question worth settling early. South Carolina allows recovery under modified comparative fault; North Carolina still applies pure contributory negligence, under which any fault at all defeats a claim entirely. South Carolina's filing deadline is also a year longer, at three years."
-                    },
-                    {
-                        "question": "I was treated in Charlotte — does that complicate my claim?",
-                        "answer": "It is common and manageable, but worth planning for. Piedmont Medical Center in Rock Hill is York County's Adult Level III trauma centre; the nearest Level I facilities are across the state line, which routinely puts a South Carolina claim on a North Carolina treatment record."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/?post_type=location&p=5336": {
-            "type": "location",
-            "status": "draft",
-            "title": "Fort Mill",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Does it matter whether my case is filed in South Carolina or North Carolina?",
-                        "answer": "It can decide whether you have a case at all. South Carolina applies modified comparative fault — you recover unless your negligence exceeds the defendants' combined negligence. North Carolina still applies pure contributory negligence, under which any fault whatsoever bars recovery. South Carolina's filing deadline is also a year longer, at three years under S.C. Code § 15-3-530."
-                    },
-                    {
-                        "question": "Where would a Fort Mill case be filed?",
-                        "answer": "In the York County Court of Common Pleas at the Moss Justice Center, 1675 York Hwy., roughly 25 miles west in the town of York. Complaints go through South Carolina's mandatory Tyler Odyssey e-filing system."
-                    },
-                    {
-                        "question": "Why are there so many crashes on I-77 near Fort Mill?",
-                        "answer": "The town sits directly below the state line, so I-77 carries a heavy daily commuter flow into Mecklenburg County and back, mixed with long-haul freight. SC-160 and US-21 feed that interstate volume through a road network that has grown far faster than its capacity."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/?post_type=location&p=5337": {
-            "type": "location",
-            "status": "draft",
-            "title": "Greer",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Which county handles a Greer injury case?",
-                        "answer": "Greer straddles the Greenville–Spartanburg county line. Greenville County is the usual venue, filed in the Greenville County Court of Common Pleas at 301 University Ridge, in the Thirteenth Judicial Circuit. Greenville County recorded 16,640 collisions and 71 fatal collisions in 2023 — the most of any South Carolina county on both measures."
-                    },
-                    {
-                        "question": "Why does a town of Greer's size carry so much truck traffic?",
-                        "answer": "Inland Port Greer moves Port of Charleston containers by rail into the Upstate, where they transfer to trucks. The BMW Manufacturing plant and GSP International Airport sit either side of town, and I-85 runs through the middle — putting sustained heavy commercial volume onto roads that also serve ordinary local traffic."
-                    },
-                    {
-                        "question": "Where are severe injuries treated near Greer?",
-                        "answer": "Prisma Health Greer Memorial Hospital handles local emergency care but is not on the SC DPH designated trauma centre list. Severe injuries are routed to Prisma Health Greenville Memorial Hospital, the Upstate's Adult Level I trauma centre."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/?post_type=location&p=5338": {
-            "type": "location",
-            "status": "draft",
-            "title": "Simpsonville",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Which roads produce the most Simpsonville crashes?",
-                        "answer": "I-385 is the spine, carrying commuter traffic into Greenville and connecting to the Woodruff Road district, among the most congested stretches of road in the state. Locally, SC-14, Fairview Road and Harrison Bridge Road carry retail and residential traffic through signalised intersections with heavy turning movements."
-                    },
-                    {
-                        "question": "The crash seemed minor — is it still worth a claim?",
-                        "answer": "In congested-corridor collisions the insurer's first argument is usually that a low-speed impact could not have caused injury. Consistent medical documentation from the first visit onward is what answers it. The filing deadline is three years under S.C. Code § 15-3-530."
-                    },
-                    {
-                        "question": "Where would a Simpsonville case be filed?",
-                        "answer": "In the Greenville County Court of Common Pleas at 301 University Ridge, in the Thirteenth Judicial Circuit, through South Carolina's mandatory Tyler Odyssey e-filing system. Most cases are routed to mediation before trial under SC ADR Rule 3."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
         "/atv-side-by-side-accident-lawyers/atv-product-defect/": {
             "type": "practice_area",
             "status": "publish",
@@ -13196,6 +13004,78 @@
                 "_roden_sol_sc": "S.C. Code § 15-3-530"
             }
         },
+        "/locations/south-carolina/fort-mill/": {
+            "type": "location",
+            "status": "publish",
+            "title": "Fort Mill",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Does it matter whether my case is filed in South Carolina or North Carolina?",
+                        "answer": "It can decide whether you have a case at all. South Carolina applies modified comparative fault — you recover unless your negligence exceeds the defendants' combined negligence. North Carolina still applies pure contributory negligence, under which any fault whatsoever bars recovery. South Carolina's filing deadline is also a year longer, at three years under S.C. Code § 15-3-530."
+                    },
+                    {
+                        "question": "Where would a Fort Mill case be filed?",
+                        "answer": "In the York County Court of Common Pleas at the Moss Justice Center, 1675 York Hwy., roughly 25 miles west in the town of York. Complaints go through South Carolina's mandatory Tyler Odyssey e-filing system."
+                    },
+                    {
+                        "question": "Why are there so many crashes on I-77 near Fort Mill?",
+                        "answer": "The town sits directly below the state line, so I-77 carries a heavy daily commuter flow into Mecklenburg County and back, mixed with long-haul freight. SC-160 and US-21 feed that interstate volume through a road network that has grown far faster than its capacity."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
+        "/locations/south-carolina/greer/": {
+            "type": "location",
+            "status": "publish",
+            "title": "Greer",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Which county handles a Greer injury case?",
+                        "answer": "Greer straddles the Greenville–Spartanburg county line. Greenville County is the usual venue, filed in the Greenville County Court of Common Pleas at 301 University Ridge, in the Thirteenth Judicial Circuit. Greenville County recorded 16,640 collisions and 71 fatal collisions in 2023 — the most of any South Carolina county on both measures."
+                    },
+                    {
+                        "question": "Why does a town of Greer's size carry so much truck traffic?",
+                        "answer": "Inland Port Greer moves Port of Charleston containers by rail into the Upstate, where they transfer to trucks. The BMW Manufacturing plant and GSP International Airport sit either side of town, and I-85 runs through the middle — putting sustained heavy commercial volume onto roads that also serve ordinary local traffic."
+                    },
+                    {
+                        "question": "Where are severe injuries treated near Greer?",
+                        "answer": "Prisma Health Greer Memorial Hospital handles local emergency care but is not on the SC DPH designated trauma centre list. Severe injuries are routed to Prisma Health Greenville Memorial Hospital, the Upstate's Adult Level I trauma centre."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
+        "/locations/south-carolina/hilton-head/": {
+            "type": "location",
+            "status": "publish",
+            "title": "Hilton Head Island",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Where would my Hilton Head injury case be filed?",
+                        "answer": "In the Beaufort County Court of Common Pleas at 102 Ribaut Rd. in Beaufort, roughly 40 miles off-island. Complaints go through South Carolina's mandatory Tyler Odyssey e-filing system, and most cases are routed to mediation before trial under SC ADR Rule 3."
+                    },
+                    {
+                        "question": "Is there a trauma centre on Hilton Head Island?",
+                        "answer": "No. The island has no DPH-designated trauma centre, so seriously injured patients are stabilised locally and transported off-island. That transfer lengthens the treatment record and makes early preservation of EMS and transfer documentation important to the claim."
+                    },
+                    {
+                        "question": "I was injured on holiday — does South Carolina law apply?",
+                        "answer": "Yes. South Carolina law governs a crash that happens here regardless of where you live, and it permits stacking of uninsured and underinsured motorist coverage. That often decides the real value of a claim against a minimum-limits local driver, so every applicable policy should be identified before anything is settled."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
         "/locations/south-carolina/myrtle-beach/": {
             "type": "location",
             "status": "publish",
@@ -14864,6 +14744,126 @@
                     {
                         "question": "Why is Dorchester Road so dangerous near Wescott Plantation?",
                         "answer": "Dorchester Road carries high volumes of traffic from residential developments, Joint Base Charleston, and I-26 commuters through an area with numerous subdivision entrances, commercial driveways, and traffic signals. The rapid growth of communities like Wescott has outpaced road capacity improvements."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
+        "/locations/south-carolina/orangeburg/": {
+            "type": "location",
+            "status": "publish",
+            "title": "Orangeburg",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Why does Orangeburg County have so many fatal crashes?",
+                        "answer": "It recorded 34 fatal collisions in 2023, ninth-highest of any South Carolina county, which is striking for its population. The structural cause is the I-26 / I-95 junction: long-haul traffic with no local destination passes through in volume and feeds onto two-lane surface routes like US-301, US-601, US-21 and US-178 that were never designed to receive it."
+                    },
+                    {
+                        "question": "Does Roden Law have an Orangeburg office?",
+                        "answer": "No. Roden Law is admitted throughout South Carolina and handles Orangeburg County cases from our Columbia office. The case is still filed and litigated in the First Judicial Circuit, on Orangeburg County's rules and before an Orangeburg County jury."
+                    },
+                    {
+                        "question": "Where would I be treated after a serious Orangeburg crash?",
+                        "answer": "The Regional Medical Center in Orangeburg is the county's Adult Level III trauma centre. The most severe injuries are transferred to Prisma Health Richland in Columbia, an Adult Level I centre, and that transfer chain is a routine feature of serious cases here."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
+        "/locations/south-carolina/rock-hill/": {
+            "type": "location",
+            "status": "publish",
+            "title": "Rock Hill",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Is the York County courthouse in Rock Hill?",
+                        "answer": "No. York County cases are filed in the York County Court of Common Pleas at the Moss Justice Center, 1675 York Hwy. in the town of York, in the Sixteenth Judicial Circuit. York County recorded 29 fatal collisions in 2023."
+                    },
+                    {
+                        "question": "What if the driver who hit me lives in North Carolina?",
+                        "answer": "Which state's law applies becomes a threshold question worth settling early. South Carolina allows recovery under modified comparative fault; North Carolina still applies pure contributory negligence, under which any fault at all defeats a claim entirely. South Carolina's filing deadline is also a year longer, at three years."
+                    },
+                    {
+                        "question": "I was treated in Charlotte — does that complicate my claim?",
+                        "answer": "It is common and manageable, but worth planning for. Piedmont Medical Center in Rock Hill is York County's Adult Level III trauma centre; the nearest Level I facilities are across the state line, which routinely puts a South Carolina claim on a North Carolina treatment record."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
+        "/locations/south-carolina/simpsonville/": {
+            "type": "location",
+            "status": "publish",
+            "title": "Simpsonville",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Which roads produce the most Simpsonville crashes?",
+                        "answer": "I-385 is the spine, carrying commuter traffic into Greenville and connecting to the Woodruff Road district, among the most congested stretches of road in the state. Locally, SC-14, Fairview Road and Harrison Bridge Road carry retail and residential traffic through signalised intersections with heavy turning movements."
+                    },
+                    {
+                        "question": "The crash seemed minor — is it still worth a claim?",
+                        "answer": "In congested-corridor collisions the insurer's first argument is usually that a low-speed impact could not have caused injury. Consistent medical documentation from the first visit onward is what answers it. The filing deadline is three years under S.C. Code § 15-3-530."
+                    },
+                    {
+                        "question": "Where would a Simpsonville case be filed?",
+                        "answer": "In the Greenville County Court of Common Pleas at 301 University Ridge, in the Thirteenth Judicial Circuit, through South Carolina's mandatory Tyler Odyssey e-filing system. Most cases are routed to mediation before trial under SC ADR Rule 3."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
+        "/locations/south-carolina/spartanburg/": {
+            "type": "location",
+            "status": "publish",
+            "title": "Spartanburg",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "How dangerous are Spartanburg County roads?",
+                        "answer": "The SCDPS 2023 Traffic Collision Fact Book records 11,002 collisions in the county, including 71 fatal collisions and 84 people killed — tied with Greenville County for the most fatal collisions of any county in South Carolina. I-85 alone accounted for 1,311 collisions, followed by US-29 (985), US-176 (656), US-221 (509) and I-26 (464)."
+                    },
+                    {
+                        "question": "Which Spartanburg interchange sees the most crashes?",
+                        "answer": "I-85 at SC-290, the county's single worst location at 175 collisions in 2023. I-85 is the Charlotte-to-Atlanta freight spine, and its interchanges put merging local traffic directly into sustained interstate truck volume."
+                    },
+                    {
+                        "question": "Does Roden Law have a Spartanburg office?",
+                        "answer": "No. Roden Law is admitted throughout South Carolina and handles Upstate cases from our Columbia office. Cases are filed in the Spartanburg County Court of Common Pleas at 180 Magnolia St., in the Seventh Judicial Circuit, within three years of the crash under S.C. Code § 15-3-530."
+                    }
+                ],
+                "_roden_jurisdiction": "SC",
+                "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
+        "/locations/south-carolina/sumter/": {
+            "type": "location",
+            "status": "publish",
+            "title": "Sumter",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "How does Shaw Air Force Base affect crash risk in Sumter?",
+                        "answer": "It puts a large, largely young and frequently rotating driving population onto local roads. Combined with Sumter's role as a regional hub for the surrounding rural counties, that traffic concentrates on US-76/US-378, US-521, US-15 and SC-441 — much of it two-lane, unlit at the shoulder, with at-grade field access."
+                    },
+                    {
+                        "question": "I am active-duty military — does that change my claim?",
+                        "answer": "It can. TRICARE and military treatment facilities assert recovery rights against a civil settlement, and a lien resolved late — or not at all — reduces what actually reaches you. We identify those interests at the outset and negotiate them alongside the claim rather than after it."
+                    },
+                    {
+                        "question": "Where would I be treated after a serious Sumter crash?",
+                        "answer": "There is no DPH-designated trauma centre in Sumter County. Prisma Health Tuomey Hospital in Sumter handles local emergency care, and seriously injured patients are transported roughly 45 miles to Prisma Health Richland in Columbia, an Adult Level I centre."
                     }
                 ],
                 "_roden_jurisdiction": "SC",
