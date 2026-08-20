@@ -341,7 +341,13 @@ if ( ! empty( $sub_neighborhoods ) ) :
             <h2 class="section-title">Cases We Handle in <?php echo esc_html( $neighborhood_name ); ?></h2>
             <p class="section-subtitle">Our <?php echo esc_html( $office['market_name'] ); ?> attorneys handle all types of personal injury cases for <?php echo esc_html( $neighborhood_name ); ?> residents.</p>
         </div>
-        <?php roden_intersection_grid( $parent_office_key, 3 ); ?>
+        <?php
+        // A service-area town links to ITS OWN intersection pages; a true
+        // neighbourhood of an office city links to that office's. Passing the
+        // parent office key unconditionally would put "Cases We Handle in
+        // Spartanburg" above links to Columbia's pages.
+        roden_intersection_grid( $nb_is_area ? $post->post_name : $parent_office_key, 3 );
+        ?>
     </div>
 </section>
 

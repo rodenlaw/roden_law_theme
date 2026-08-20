@@ -865,14 +865,25 @@ function roden_practice_areas_grid( $columns = 4 ) {
  * @param int    $columns    Number of grid columns (default 3).
  */
 function roden_intersection_grid( $office_key, $columns = 3 ) {
-    $firm   = roden_firm_data();
-    $office = isset( $firm['offices'][ $office_key ] ) ? $firm['offices'][ $office_key ] : null;
+    $firm = roden_firm_data();
+
+    /*
+     * Resolve through roden_market() rather than indexing $firm['offices'].
+     * A service-area town has its own intersection pages — Spartanburg has four —
+     * and indexing offices only meant this grid could never link to them. On a
+     * town page it would either bail, or (once callers passed the parent office
+     * key) advertise the PARENT city's pages under the town's heading.
+     */
+    $office = function_exists( 'roden_market' ) ? roden_market( $office_key ) : null;
+    if ( ! $office && isset( $firm['offices'][ $office_key ] ) ) {
+        $office = $firm['offices'][ $office_key ];
+    }
 
     if ( ! $office ) {
         return;
     }
 
-    $office_slug = $office['slug']; // e.g. 'savannah-ga'
+    $office_slug = $office['slug']; // e.g. 'savannah-ga', 'spartanburg-sc'
 
     // All 22 pillar slug => label pairs (fallback).
     $pa_labels = array(
@@ -941,10 +952,19 @@ function roden_intersection_grid( $office_key, $columns = 3 ) {
     if ( function_exists( 'roden_locale_meta_query' ) ) {
         $intersection_check_args['meta_query'] = roden_locale_meta_query();
     }
+    /*
+     * NOTE: 'fields' => 'id=>parent' makes get_posts() return array( ID => parent ID )
+     * — plain integers, NOT post objects. The previous loop read $ic->post_parent
+     * on an integer, so $parent_slug was always empty and this map was always
+     * EMPTY. Every location and neighbourhood page therefore linked its
+     * "Cases We Handle" cards to the generic pillar instead of the city's own
+     * intersection page, silently, on ~219 pages. Verified against production:
+     * the buggy loop produced 0 entries where the corrected one produces 30.
+     */
     $intersection_check = get_posts( $intersection_check_args );
     $pillars_with_intersection = array();
-    foreach ( $intersection_check as $ic ) {
-        $parent_slug = get_post_field( 'post_name', $ic->post_parent );
+    foreach ( $intersection_check as $ic_id => $ic_parent_id ) {
+        $parent_slug = get_post_field( 'post_name', $ic_parent_id );
         if ( $parent_slug ) {
             // Parent of an ES intersection is 'es-car-accident-lawyers'; key the
             // map on the public slug so it lines up with $pa_labels.
