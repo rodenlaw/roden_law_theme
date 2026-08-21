@@ -1,0 +1,68 @@
+# Disavow file — rodenlaw.com
+# Generated 2026-08-21 for SEO-PREEMPTION-PLAN-rodenlaw.md, Phase 0 item 3.
+#
+# Every domain below was verified against Semrush Backlink Analytics for
+# rodenlaw.com specifically — not inherited from the georgiaautolaw.com list.
+# Each entry actually links to this domain.
+#
+# PARTIAL BY DESIGN. Two things are deliberately NOT here:
+#
+#  1. The three domain-name anchor networks — rodenlovelaw.com (119 referring
+#     domains), policylimitscharters.com (95) and iluvgus.com (22). These are
+#     held pending the [OWNER] ownership question in Phase 0 item 2. If the firm
+#     or its vendor commissioned them, disavowing is the wrong move and the
+#     vendor needs stopping instead. Extend this file once that is answered.
+#
+#  2. The remainder of the PBN vendor cluster. The Semrush API unit balance hit
+#     zero partway through enumeration, so 3 of ~5 PBN domains are listed.
+#     Re-run the 'Buy Backlinks Online Cheap' anchor query to complete it.
+#
+# Upload at https://search.google.com/search-console/disavow-links [OWNER]
+
+# Cluster 1 — 'darksidelinks' injection network
+# Anchor: 'JOIN OUR TELEGRAM https://t.me/s/darksidelinks'. First seen 2026-02-24, the same
+# timestamp this network hit georgiaautolaw.com — one operation targeting both firm properties.
+# All links nofollow, all from one footprint page repeated across hosts.
+domain:agroinsursas.com
+domain:ateliereleaurorei.ro
+domain:baddebtsolutions.com
+domain:bluecantera.com
+domain:cttbeats.capetownthing.co.za
+domain:dcoutesnjacob.com
+domain:elibrary-smpia15.alazharcilacap.sch.id
+domain:eliotzigmundjazz.com
+domain:greattraveladvisor.com
+domain:gwc.spottedcow.media
+domain:harian24.com
+domain:hwnerds.com
+domain:jomtien-realty.com
+domain:keirseybooks.com
+domain:medidocs.com
+domain:phs.intconference.org
+domain:prothor-ing.com
+domain:revan-me.com
+domain:seh.intconference.org
+domain:shop.lopezexpressgt.com
+domain:shop.thesocialhouseja.com
+domain:sportsprint.com.au
+domain:subhikh.com
+domain:theambiencenews.com
+domain:thetarotalk.com
+domain:truebookies.com
+domain:xedulichdaklak.com
+
+# Cluster 2 — 'quarterlinks25' paid-article network
+# Anchor: 'OUR TELEGRAM CHANEL https://t.me/s/quarterlinks25'. Footprint page:
+# 'quarterlinks-dofollow-article-links-just-for-25-4848'.
+#   (already listed above) gwc.spottedcow.media
+domain:kelas.seomuda.id
+domain:olivare.com.ar
+domain:sisgroup.lk
+domain:slapshady.com
+
+# Cluster 3 — PBN vendor sales-copy anchors (INCOMPLETE, see header)
+# Anchor: 'High Quality Dofollow Backlinks DA 50 PA 40 Premium PBN Network Service ...'.
+# The anchors advertise the vendor's own client domains, including the three held-back domains.
+domain:lydiaroyrealestate.com
+domain:plumeriamarketing.com
+domain:portailorange.net
