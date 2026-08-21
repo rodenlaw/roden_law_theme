@@ -57,7 +57,17 @@ Items marked **[OWNER]** cannot be done in code — surface them as a checklist 
 1. **[OWNER] Check GSC → Manual Actions** for this property. (georgiaautolaw.com was clean; confirm here. If an action exists, this plan becomes the reconsideration evidence package.)
 2. **[OWNER — BLOCKER for disavow completeness] Answer the domain-ownership question:** who owns/commissioned `rodenlovelaw.com`, `policylimitscharters.com`, and `iluvgus.com`? Each got ~95–119 referring domains linking to rodenlaw.com with the bare domain as anchor text, all appearing Nov 2025–Jan 2026 — not organic velocity. If a citation/link vendor is doing this, identify and **stop them**; the darksidelinks timestamps prove one operation targets both firm properties.
 3. **Build and upload the disavow file** (partial now, don't wait on #2): the clusters below are disavowable today. Reuse the georgiaautolaw disavow domain list for the shared networks — the darksidelinks and PBN clusters are the same networks; verify each domain actually links to rodenlaw.com via the GSC link export or Semrush before including. Add the quarterlinks25 sources. Hold the three domain-name anchor networks out until #2 is answered, then extend the file.
-4. **Fix GBP tracking variants in code:** 301 any URL with `utm_campaign=gmb_*` (and generally strip/canonicalize `utm_*` on indexable URLs) to the clean path. Known live example: `/locations/south-carolina/myrtle-beach/?utm_campaign=gmb_mb`. **[OWNER]** update the website links in all six Google Business Profiles to clean URLs.
+4. **Fix GBP tracking variants:** 301 the tagged URL to the clean path. **[OWNER — now the primary fix, not a follow-up]** retag the website links in all six Google Business Profiles as `?ref=gmb_<market>`.
+
+> **Amended 2026-08-21 — this item originally prescribed a PHP 301 on `utm_*`. That is unimplementable on this host.** WP Engine strips `utm_*` and `gclid` from the request before it reaches PHP, then reattaches them to the URL returned to the visitor ([wpengine.com/support/utm-gclid-variables-caching/](https://wpengine.com/support/utm-gclid-variables-caching/)). A handler keyed on `utm_*` deploys cleanly, passes its tests, and silently never fires — as one did, shipped and verified inert the same day.
+>
+> Verified live: WordPress's own `redirect_canonical` preserved `?cb=23957` while `?utm_campaign=TESTVALUE` vanished from the otherwise identical request. Had PHP seen the parameter, the priority-1 handler would have fired first.
+>
+> **The working shape** is `?ref=gmb_<market>`, which WP Engine passes through: PHP sees it, stashes it in a cookie for lead attribution, and 301s to the clean path — a directive rather than a hint, and no indexable variant. Implemented in `roden_canonicalize_tracking_params()`. Do not add `utm_*` back to that list; it will look right and do nothing.
+>
+> **Two consequences.** The ~6 already-indexed `?utm_campaign=` variants cannot be redirected from PHP at all; they decay once the profiles stop linking them and the canonical reasserts, so do not read their persistence as failure. And the GBP retag is no longer optional cleanup — it is the only thing that stops new variants being created.
+>
+> A WP Engine cache exclusion for `utm_*` would make the original approach work and was **rejected**: it forces every tagged request to bypass page cache, which is the highest-intent traffic on the site, to fix what the retag fixes for free.
 5. **Baseline export [OWNER]:** GSC performance by page and query (16 months) + indexed-page list; save as the before-picture for `RECOVERY-LOG.md`.
 
 ---

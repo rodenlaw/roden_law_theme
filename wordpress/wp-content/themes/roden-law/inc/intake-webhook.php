@@ -213,12 +213,12 @@ function roden_intake_payload_from_entry( $entry, $form = array() ) {
 	);
 
 	// Pull utm_* out of the source URL query string when present, falling back
-	// to the cookie parked by roden_canonicalize_tracking_params() — that 301
-	// strips utm_* from indexable URLs, so GBP-sourced leads no longer carry
-	// them on source_url.
+	// to the cookie parked by roden_canonicalize_tracking_params(). That 301
+	// cleans the URL before the browser renders it, so a GBP-sourced lead's
+	// Referer — and therefore source_url — no longer carries the campaign tag.
 	$utm = roden_intake_utm_from_url( $source_url );
 	if ( empty( $utm ) ) {
-		$utm = roden_intake_utm_from_cookie();
+		$utm = roden_intake_campaign_from_cookie();
 	}
 	$payload = array_merge( $payload, $utm );
 
@@ -257,32 +257,45 @@ function roden_intake_utm_from_url( $url ) {
 }
 
 /**
- * Read utm_* values from the cookie parked at redirect time.
+ * Read the campaign tag from the cookie parked at redirect time.
  *
  * roden_canonicalize_tracking_params() in inc/legacy-redirects.php 301s
- * tracking URLs to their clean path for indexation reasons. It stores the
- * stripped values first so attribution is not lost with them.
+ * ?ref=<tag> URLs to their clean path for indexation reasons, storing the tag
+ * first so attribution is not lost with it. The tag is `ref` rather than
+ * utm_campaign because WP Engine strips utm_* before PHP ever sees it.
  *
- * @return array Associative array of utm_* keys (only those present).
+ * @return array Campaign fields for the intake payload.
  */
-function roden_intake_utm_from_cookie() {
+function roden_intake_campaign_from_cookie() {
 	$out    = array();
-	$cookie = defined( 'RODEN_UTM_COOKIE' ) ? RODEN_UTM_COOKIE : 'roden_utm';
+	$cookie = defined( 'RODEN_REF_COOKIE' ) ? RODEN_REF_COOKIE : 'roden_ref';
 
 	if ( empty( $_COOKIE[ $cookie ] ) ) {
 		return $out;
 	}
 
 	$decoded = json_decode( (string) wp_unslash( $_COOKIE[ $cookie ] ), true );
-	if ( ! is_array( $decoded ) ) {
+	if ( ! is_array( $decoded ) || empty( $decoded['ref'] ) || ! is_string( $decoded['ref'] ) ) {
 		return $out;
 	}
 
-	foreach ( array( 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content' ) as $k ) {
-		if ( ! empty( $decoded[ $k ] ) && is_string( $decoded[ $k ] ) ) {
-			$out[ $k ] = sanitize_text_field( $decoded[ $k ] );
-		}
+	$ref = sanitize_text_field( $decoded['ref'] );
+	if ( '' === $ref ) {
+		return $out;
 	}
+
+	/*
+	 * Mapped onto the utm_* shape the CRM already reports on. The profiles
+	 * tagged with utm_campaign=gmb_<market> until WP Engine's parameter
+	 * stripping forced the switch to ?ref=, and downstream reporting still
+	 * keys on utm_campaign — so the field name is preserved deliberately.
+	 */
+	$out['utm_campaign'] = $ref;
+	if ( 0 === strpos( $ref, 'gmb_' ) ) {
+		$out['utm_source'] = 'google-business-profile';
+		$out['utm_medium'] = 'organic';
+	}
+
 	return $out;
 }
 
