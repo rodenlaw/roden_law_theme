@@ -58,8 +58,9 @@ otherwise ready to ship. From `SEO-PREEMPTION-PLAN-rodenlaw.md` Phase 0 and §7.
 - [ ] **The 8 town pages published on 2026-08-20 are now flagged for removal.**
       Fort Mill, Greer, Hilton Head, Orangeburg, Rock Hill, Simpsonville,
       Spartanburg and Sumter got location pages the day before this plan was
-      written. None is an office market, all are ~130–170 unique words, and being
-      one day old they have no ranking history to justify keeping them. They are
+      written. None is an office market, all are ~270–320 unique words against a median of 843 for the office-city
+      pages, and being one day old they have no ranking history to justify
+      keeping them. They are
       the exact page type the plan's guardrail now forbids creating. Confirm they
       go, or say what service history justifies keeping them.
 

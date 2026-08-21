@@ -4,8 +4,9 @@
  *
  * SEO pre-emption plan rule 4: city pages in markets with no office, kept only
  * with real rankings/traffic or genuine service history. These eight were
- * published 2026-08-20, carry 129-168 unique words, and have zero inbound
- * internal links in post content, post meta or the nav menus.
+ * published 2026-08-20, carry 270-322 unique words against a median of 843 for
+ * the office-city pages, and have zero inbound internal links in post content,
+ * post meta or the nav menus.
  *
  * ORDER MATTERS. The 301s in inc/legacy-redirects.php
  * (roden_phase1_removed_urls) must be LIVE before this runs, or the eight URLs

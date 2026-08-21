@@ -15,7 +15,15 @@
 $types = get_post_types( array( 'public' => true ), 'names' );
 unset( $types['attachment'] );
 
-$meta_body_keys = array( '_roden_why_hire', '_roden_intro', '_roden_content', '_roden_body' );
+/*
+ * Every meta key that carries reader-visible prose. _roden_faqs was missing
+ * from the first version of this script, which undercounted every page that
+ * has FAQs — the batch (d) pages read as 78-122 words when they are really
+ * 210-366. Verdicts did not depend on the count (the plan's rules are
+ * structural), but the evidence quoted alongside them was wrong.
+ * _roden_faqs is stored as an array, so it is flattened rather than skipped.
+ */
+$meta_body_keys = array( '_roden_why_hire', '_roden_intro', '_roden_content', '_roden_body', '_roden_faqs' );
 
 $out = fopen( 'php://stdout', 'w' );
 fputcsv( $out, array( 'url', 'post_type', 'path_depth', 'locale', 'post_id', 'slug', 'words', 'parent_id', 'status', 'title' ) );
@@ -49,6 +57,15 @@ foreach ( $types as $type ) {
                 $mv = get_post_meta( $p->ID, $mk, true );
                 if ( is_string( $mv ) && '' !== $mv ) {
                     $text .= ' ' . $mv;
+                } elseif ( is_array( $mv ) ) {
+                    array_walk_recursive(
+                        $mv,
+                        function ( $v ) use ( &$text ) {
+                            if ( is_scalar( $v ) ) {
+                                $text .= ' ' . $v;
+                            }
+                        }
+                    );
                 }
             }
             $words = str_word_count( wp_strip_all_tags( strip_shortcodes( $text ) ) );
