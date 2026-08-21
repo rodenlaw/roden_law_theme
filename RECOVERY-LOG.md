@@ -85,7 +85,7 @@ into 8 city-tier towns and 109 nested municipalities; see the recommendation in
 
 | Date | Batch | URLs before | URLs after | Removed | Notes |
 |---|---|---:|---:|---:|---|
-| 2026-08-21 | **(b)** non-office city pages | 1,659 | 1,651 | 8 | Redirects **live and verified** (8/8 single-hop). CMS trash step prepared, dry-run clean, **not yet applied**. |
+| 2026-08-21 | **(b)** non-office city pages | 1,659 | 1,651 | 8 | **COMPLETE.** Redirects live, 8 posts trashed, caches flushed. Verified after deletion: 8/8 single-hop 301, no 404s; location sitemap 219 → 211. Backup: `docs/backups/batch-b-sc-town-locations-2026-08-21.json`. |
 | *pending deploy* | **(d)** non-office city×practice | 1,651 | 1,617 | 34 | Redirects committed, CMS trash prepared and dry-run clean. **Not yet applied.** |
 
 ### Batch (d) — the 34 non-office city×practice pages
@@ -107,6 +107,10 @@ references in post content or post meta.
 
 Same ordering rule as batch (b): the 301s must be live before the CMS entries
 go. Apply with `bin/remove-nonoffice-city-practice.php`.
+
+Batch (b) confirmed the ordering works: after its 8 posts were trashed the URLs
+still returned single-hop 301s rather than 404s, because the redirect map is
+keyed on path and never consulted the post.
 
 **Note on the office-city pages that stay:** the thinnest sits at 280 words.
 Rule 6 flags those for a Phase 2 rewrite, not deletion.
