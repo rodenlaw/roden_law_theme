@@ -899,3 +899,217 @@ function roden_get_legacy_redirect_map() {
 
     );
 }
+
+/* ------------------------------------------------------------------
+   301: tracking-parameter URLs → clean canonical path.
+
+   SEO pre-emption plan, Phase 0 item 4. The six Google Business
+   Profiles link to their location pages with ?utm_campaign=gmb_*
+   appended. Those variants return 200 and already emit a correct
+   <link rel="canonical"> to the clean path — and Google indexes and
+   ranks them anyway, because a canonical is a hint and six strong
+   external links outvote it. /locations/south-carolina/myrtle-beach/
+   ?utm_campaign=gmb_mb carries ~3% of sitewide traffic in place of
+   the clean URL. A 301 is a directive, so it settles what the
+   canonical could not.
+
+   ATTRIBUTION: the intake webhook reads utm_* off the Gravity Forms
+   entry's source_url (see roden_intake_utm_from_url). Stripping the
+   params with a bare redirect would silently destroy GBP lead-source
+   attribution — the redirect fires long before any page JS could
+   stash them the way the gclid capture in functions.php does. So the
+   values are parked in a short-lived cookie first and the webhook
+   falls back to it.
+
+   gclid is deliberately NOT stripped: it is Google Ads auto-tagging,
+   it is not an indexation problem, and the paid-conversion path
+   depends on it reaching the form.
+   ------------------------------------------------------------------ */
+
+if ( ! defined( 'RODEN_UTM_COOKIE' ) ) {
+    define( 'RODEN_UTM_COOKIE', 'roden_utm' );
+}
+
+/**
+ * The tracking parameters that get stripped from indexable URLs.
+ *
+ * @return string[]
+ */
+function roden_tracking_params() {
+    return array(
+        'utm_source',
+        'utm_medium',
+        'utm_campaign',
+        'utm_term',
+        'utm_content',
+        'utm_id',
+    );
+}
+
+add_action( 'template_redirect', 'roden_canonicalize_tracking_params', 1 );
+
+function roden_canonicalize_tracking_params() {
+    // Never interfere with admin, AJAX, REST, cron, previews or feeds.
+    if ( is_admin() || wp_doing_ajax() || is_preview() || is_feed() ) {
+        return;
+    }
+    if ( defined( 'DOING_CRON' ) && DOING_CRON ) {
+        return;
+    }
+    if ( defined( 'REST_REQUEST' ) && REST_REQUEST ) {
+        return;
+    }
+
+    // Only ever redirect idempotent reads. A POST carries form data.
+    $method = isset( $_SERVER['REQUEST_METHOD'] ) ? strtoupper( (string) $_SERVER['REQUEST_METHOD'] ) : 'GET';
+    if ( 'GET' !== $method && 'HEAD' !== $method ) {
+        return;
+    }
+
+    if ( empty( $_GET ) || ! is_array( $_GET ) ) {
+        return;
+    }
+
+    $tracking = roden_tracking_params();
+    $present  = array_intersect( $tracking, array_keys( $_GET ) );
+    if ( empty( $present ) ) {
+        return;
+    }
+
+    // Park the values before dropping them, so lead attribution survives.
+    roden_stash_utm_cookie( $_GET, $tracking );
+
+    // Keep every non-tracking parameter (gclid, pagination, form state…).
+    $keep = array();
+    foreach ( $_GET as $k => $v ) {
+        if ( ! in_array( $k, $tracking, true ) ) {
+            $keep[ $k ] = $v;
+        }
+    }
+
+    $request_uri = isset( $_SERVER['REQUEST_URI'] ) ? (string) $_SERVER['REQUEST_URI'] : '/';
+    $path        = (string) wp_parse_url( $request_uri, PHP_URL_PATH );
+    if ( '' === $path ) {
+        $path = '/';
+    }
+
+    $dest = home_url( $path );
+
+    if ( ! empty( $keep ) ) {
+        // add_query_arg() encodes values itself — pre-encoding double-escapes.
+        $dest = add_query_arg( wp_unslash( $keep ), $dest );
+    }
+
+    wp_redirect( $dest, 301 );
+    exit;
+}
+
+/**
+ * Store the inbound utm_* values in a short-lived cookie.
+ *
+ * Read back by the intake webhook when the submitted page's source_url
+ * has already been cleaned by the 301 above.
+ *
+ * @param array    $params   Raw request parameters.
+ * @param string[] $tracking Tracking keys to persist.
+ */
+function roden_stash_utm_cookie( $params, $tracking ) {
+    if ( headers_sent() ) {
+        return;
+    }
+
+    $utm = array();
+    foreach ( $tracking as $k ) {
+        if ( ! empty( $params[ $k ] ) && is_string( $params[ $k ] ) ) {
+            $utm[ $k ] = sanitize_text_field( wp_unslash( $params[ $k ] ) );
+        }
+    }
+    if ( empty( $utm ) ) {
+        return;
+    }
+
+    setcookie(
+        RODEN_UTM_COOKIE,
+        wp_json_encode( $utm ),
+        array(
+            'expires'  => time() + ( 30 * DAY_IN_SECONDS ),
+            'path'     => COOKIEPATH ? COOKIEPATH : '/',
+            'domain'   => COOKIE_DOMAIN,
+            'secure'   => is_ssl(),
+            'httponly' => false, // readable by the form JS if it ever needs it
+            'samesite' => 'Lax',
+        )
+    );
+}
+
+/* ------------------------------------------------------------------
+   301: Phase 1 removals — URLs culled by the SEO pre-emption plan.
+
+   Path-keyed rather than post-ID-keyed on purpose: these fire whether or
+   not the underlying post still exists, so the redirect can ship BEFORE
+   the CMS entry is deleted. That ordering is the point — deploy first and
+   the page stops being indexable immediately; delete the post afterwards
+   so it cannot regenerate. Reversing it would open a 404 window, which
+   the plan forbids.
+
+   Registered at priority 0, ahead of the tracking-parameter handler, so a
+   removed URL carrying utm_* still resolves in a SINGLE hop rather than
+   chaining removal→clean→destination.
+
+   Batch (b), shipped 2026-08-21: the eight non-office city pages published
+   2026-08-20. No office in any of these markets, ~130-170 unique words
+   each, and zero inbound internal links anywhere in post content, post
+   meta or the nav menus — orphans from the day they were created. The
+   service-area data behind them stays in $firm['service_areas']; it feeds
+   the city x practice pages, which are a separate decision.
+   ------------------------------------------------------------------ */
+
+/**
+ * Removed path => 301 destination. Append future batches here.
+ *
+ * @return array<string,string>
+ */
+function roden_phase1_removed_urls() {
+    return array(
+        // Batch (b) — non-office city pages failing plan rule 4.
+        '/locations/south-carolina/fort-mill/'    => '/locations/south-carolina/',
+        '/locations/south-carolina/greer/'        => '/locations/south-carolina/',
+        '/locations/south-carolina/hilton-head/'  => '/locations/south-carolina/',
+        '/locations/south-carolina/orangeburg/'   => '/locations/south-carolina/',
+        '/locations/south-carolina/rock-hill/'    => '/locations/south-carolina/',
+        '/locations/south-carolina/simpsonville/' => '/locations/south-carolina/',
+        '/locations/south-carolina/spartanburg/'  => '/locations/south-carolina/',
+        '/locations/south-carolina/sumter/'       => '/locations/south-carolina/',
+    );
+}
+
+add_action( 'template_redirect', 'roden_phase1_removal_redirects', 0 );
+
+function roden_phase1_removal_redirects() {
+    if ( is_admin() || wp_doing_ajax() || is_preview() || is_feed() ) {
+        return;
+    }
+    if ( defined( 'REST_REQUEST' ) && REST_REQUEST ) {
+        return;
+    }
+
+    $method = isset( $_SERVER['REQUEST_METHOD'] ) ? strtoupper( (string) $_SERVER['REQUEST_METHOD'] ) : 'GET';
+    if ( 'GET' !== $method && 'HEAD' !== $method ) {
+        return;
+    }
+
+    $request_uri = isset( $_SERVER['REQUEST_URI'] ) ? (string) $_SERVER['REQUEST_URI'] : '/';
+    $path        = (string) wp_parse_url( $request_uri, PHP_URL_PATH );
+    if ( '' === $path ) {
+        return;
+    }
+    $path = trailingslashit( $path );
+
+    $map = roden_phase1_removed_urls();
+    if ( ! isset( $map[ $path ] ) ) {
+        return;
+    }
+
+    wp_redirect( home_url( $map[ $path ] ), 301 );
+    exit;
+}
