@@ -74,8 +74,9 @@ Target: **418–535 location + practice-area URLs, down from 668.**
 |---|---:|---:|
 | Baseline (2026-08-21) | 668 | 1,659 |
 | After batch (b) — 8 removed | 660 | 1,651 |
-| After batch (d) — 34 removed | **626** | **1,617** |
-| Remaining to the top of the target band | 91 | — |
+| After batch (d) — 34 removed | 626 | 1,617 |
+| After batch (a) — 88 removed | **538** | **1,529** |
+| Remaining to the top of the target band | 3 | — |
 
 Still to come: batch (a) neighbourhood/subdivision pages (88), batch (c) practice
 micro-permutations (11 consolidate), batch (e) `/es/` mirror sync, batch (f) the
@@ -102,7 +103,7 @@ into 8 city-tier towns and 109 nested municipalities; see the recommendation in
 | Date | Batch | URLs before | URLs after | Removed | Notes |
 |---|---|---:|---:|---:|---|
 | 2026-08-21 | **(b)** non-office city pages | 1,659 | 1,651 | 8 | **COMPLETE.** Redirects live, 8 posts trashed, caches flushed. Verified after deletion: 8/8 single-hop 301, no 404s; location sitemap 219 → 211. Backup: `docs/backups/batch-b-sc-town-locations-2026-08-21.json`. |
-| *pending deploy* | **(a)** neighbourhood + subdivision | 1,617 | 1,529 | 88 | Relink applied (53 links, 23 posts). Redirects committed, trash dry-run clean. **Not yet applied.** |
+| 2026-08-21 | **(a)** neighbourhood + subdivision | 1,617 | 1,529 | 88 | **COMPLETE.** Relink applied (53 links, 23 posts, `post_modified` preserved), redirects live, 88 posts trashed, caches flushed. Verified after deletion: 88/88 single-hop 301, no 404s; location sitemap 211 → 123. Backups: `batch-a-relink-*.json`, `batch-a-neighborhood-locations-*.json`. |
 | 2026-08-21 | **(d)** non-office city×practice | 1,651 | 1,617 | 34 | **COMPLETE.** Redirects live, 34 posts trashed, caches flushed. Verified after deletion: 34/34 single-hop 301, no 404s; practice_area sitemap 449 → 415; intersection grids self-healed to pillars, zero surviving links. Backup: `docs/backups/batch-d-nonoffice-city-practice-2026-08-21.json`. |
 
 ### Batch (a) — the 88 neighbourhood and subdivision pages
@@ -135,9 +136,9 @@ values identical before and after.
 
 | Step | Status |
 |---|---|
-| Relink 53 links across 23 posts | **Applied 2026-08-21.** 0 inbound refs remain; anchor text preserved |
-| 88 redirects | Committed, verified against the real code |
-| Trash 88 posts | Dry-run clean, 88/88, **pending deploy** |
+| Relink 53 links across 23 posts | **Applied.** 0 inbound refs remain; anchor text preserved; `post_modified` byte-identical before and after |
+| 88 redirects | **Live.** 88/88 single-hop, verified before and after deletion |
+| Trash 88 posts | **Applied.** 88/88; location sitemap 211 → 123 |
 
 ### Batch (d) — the 34 non-office city×practice pages
 
