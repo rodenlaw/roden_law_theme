@@ -102,7 +102,42 @@ into 8 city-tier towns and 109 nested municipalities; see the recommendation in
 | Date | Batch | URLs before | URLs after | Removed | Notes |
 |---|---|---:|---:|---:|---|
 | 2026-08-21 | **(b)** non-office city pages | 1,659 | 1,651 | 8 | **COMPLETE.** Redirects live, 8 posts trashed, caches flushed. Verified after deletion: 8/8 single-hop 301, no 404s; location sitemap 219 → 211. Backup: `docs/backups/batch-b-sc-town-locations-2026-08-21.json`. |
+| *pending deploy* | **(a)** neighbourhood + subdivision | 1,617 | 1,529 | 88 | Relink applied (53 links, 23 posts). Redirects committed, trash dry-run clean. **Not yet applied.** |
 | 2026-08-21 | **(d)** non-office city×practice | 1,651 | 1,617 | 34 | **COMPLETE.** Redirects live, 34 posts trashed, caches flushed. Verified after deletion: 34/34 single-hop 301, no 404s; practice_area sitemap 449 → 415; intersection grids self-healed to pillars, zero surviving links. Backup: `docs/backups/batch-d-nonoffice-city-practice-2026-08-21.json`. |
+
+### Batch (a) — the 88 neighbourhood and subdivision pages
+
+Rule 3: every location page below city level. 19 at tier 3 (districts of an
+office city — West Ashley, Downtown Charleston, Park Circle, Midtown Savannah…)
+and 69 at tier 4 (subdivisions — Old Village, Godley Station, Liberty Hall
+Plantation…). 209–342 unique words. This is the layer the audit named as the
+primary doorway liability.
+
+**Redirect targets are the tier-2 city hub, not the immediate parent.** Several
+of these sit under a tier-3 municipality (Mount Pleasant, Goose Creek,
+Summerville) that is still EVALUATE. Pointing at one would risk a 301 chain if
+it is later removed; the office-city hub above it is a guaranteed keep, so every
+target is chain-proof by construction.
+
+**These were not orphans.** 23 blog posts carried 53 contextual editorial links
+into them — the first batch where the plan's "strip internal links" step had
+real work. `bin/relink-batch-a-locations.php` repoints the href at the parent
+city hub and leaves the anchor text alone, so "West Ashley" still reads as a
+link and simply resolves to Charleston rather than being unwrapped.
+
+That script writes `post_content` as a direct column update rather than through
+`wp_update_post()`, deliberately. `wp_update_post()` stamps `post_modified`, and
+`single.php` renders an "Updated <date>" line from it with schema `dateModified`
+and `og:article:modified_time` alongside — so repointing a hyperlink would have
+advertised 23 legal blog posts as freshly updated. On a site being re-rated for
+quality that is the wrong signal. Verified: all 34 candidate `post_modified`
+values identical before and after.
+
+| Step | Status |
+|---|---|
+| Relink 53 links across 23 posts | **Applied 2026-08-21.** 0 inbound refs remain; anchor text preserved |
+| 88 redirects | Committed, verified against the real code |
+| Trash 88 posts | Dry-run clean, 88/88, **pending deploy** |
 
 ### Batch (d) — the 34 non-office city×practice pages
 
