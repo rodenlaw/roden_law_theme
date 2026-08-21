@@ -66,6 +66,22 @@ down from 668**. The five structural criteria (classified exactly once, zero
 internal 404s, zero internal links through 301s, sitemaps 200-only, 20 spot-checked
 single-hop redirects) were always the real test and are unchanged.
 
+### Progress against the restated criterion
+
+Target: **418–535 location + practice-area URLs, down from 668.**
+
+| | Location + practice area | All public URLs |
+|---|---:|---:|
+| Baseline (2026-08-21) | 668 | 1,659 |
+| After batch (b) — 8 removed | 660 | 1,651 |
+| After batch (d) — 34 removed | **626** | **1,617** |
+| Remaining to the top of the target band | 91 | — |
+
+Still to come: batch (a) neighbourhood/subdivision pages (88), batch (c) practice
+micro-permutations (11 consolidate), batch (e) `/es/` mirror sync, batch (f) the
+129 duplicate case results, and the 109 tier-3 EVALUATE rows pending the GSC
+export.
+
 ### End-state arithmetic
 
 | Scope | Now | After definite removals | If all EVALUATE also go |
@@ -86,7 +102,7 @@ into 8 city-tier towns and 109 nested municipalities; see the recommendation in
 | Date | Batch | URLs before | URLs after | Removed | Notes |
 |---|---|---:|---:|---:|---|
 | 2026-08-21 | **(b)** non-office city pages | 1,659 | 1,651 | 8 | **COMPLETE.** Redirects live, 8 posts trashed, caches flushed. Verified after deletion: 8/8 single-hop 301, no 404s; location sitemap 219 → 211. Backup: `docs/backups/batch-b-sc-town-locations-2026-08-21.json`. |
-| *pending deploy* | **(d)** non-office city×practice | 1,651 | 1,617 | 34 | Redirects committed, CMS trash prepared and dry-run clean. **Not yet applied.** |
+| 2026-08-21 | **(d)** non-office city×practice | 1,651 | 1,617 | 34 | **COMPLETE.** Redirects live, 34 posts trashed, caches flushed. Verified after deletion: 34/34 single-hop 301, no 404s; practice_area sitemap 449 → 415; intersection grids self-healed to pillars, zero surviving links. Backup: `docs/backups/batch-d-nonoffice-city-practice-2026-08-21.json`. |
 
 ### Batch (d) — the 34 non-office city×practice pages
 
@@ -105,8 +121,10 @@ these makes every "Cases We Handle" grid fall back on its own. Verified against
 the function rather than assumed, and confirmed by a DB sweep: zero inbound
 references in post content or post meta.
 
-Same ordering rule as batch (b): the 301s must be live before the CMS entries
-go. Apply with `bin/remove-nonoffice-city-practice.php`.
+Applied 2026-08-21. The self-healing claim was verified on the live site, not
+just against the function: Summerville's location page now renders 24 statewide
+pillar links and zero links to removed pages, and a DB sweep finds no published
+post linking to any trashed city×practice URL.
 
 Batch (b) confirmed the ordering works: after its 8 posts were trashed the URLs
 still returned single-hop 301s rather than 404s, because the redirect map is
