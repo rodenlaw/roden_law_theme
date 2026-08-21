@@ -174,7 +174,7 @@ def main(src, dest):
     keep = counts.get('KEEP', 0)
     print(f'\n  End state if every EVALUATE is removed: {keep} URLs')
     print(f'  End state if every EVALUATE is kept:    {keep + counts.get("EVALUATE",0)} URLs')
-    print('  Plan target: 250-350 URLs')
+    print('  Plan target: 418-535 location + practice-area URLs (see RECOVERY-LOG.md)')
 
 
 if __name__ == '__main__':

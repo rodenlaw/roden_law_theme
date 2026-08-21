@@ -1066,9 +1066,10 @@ function roden_stash_ref_cookie( $params, $tracking ) {
    chaining removal→clean→destination.
 
    Batch (b), shipped 2026-08-21: the eight non-office city pages published
-   2026-08-20. No office in any of these markets, ~130-170 unique words
-   each, and zero inbound internal links anywhere in post content, post
-   meta or the nav menus — orphans from the day they were created. The
+   2026-08-20. No office in any of these markets, ~270-320 unique words
+   each against a median of 843 for the office-city pages, and zero inbound
+   internal links anywhere in post content, post meta or the nav menus —
+   orphans from the day they were created. The
    service-area data behind them stays in $firm['service_areas']; it feeds
    the city x practice pages, which are a separate decision.
    ------------------------------------------------------------------ */
@@ -1089,6 +1090,42 @@ function roden_phase1_removed_urls() {
         '/locations/south-carolina/simpsonville/' => '/locations/south-carolina/',
         '/locations/south-carolina/spartanburg/'  => '/locations/south-carolina/',
         '/locations/south-carolina/sumter/'       => '/locations/south-carolina/',
+
+        // Batch (d) — city x practice in markets with no office, plan rule 7.
+        '/car-accident-lawyers/blythewood-sc/'          => '/practice-areas/car-accident-lawyers/',
+        '/car-accident-lawyers/conway-sc/'              => '/practice-areas/car-accident-lawyers/',
+        '/car-accident-lawyers/fort-mill-sc/'           => '/practice-areas/car-accident-lawyers/',
+        '/car-accident-lawyers/goose-creek-sc/'         => '/practice-areas/car-accident-lawyers/',
+        '/car-accident-lawyers/greer-sc/'               => '/practice-areas/car-accident-lawyers/',
+        '/car-accident-lawyers/irmo-sc/'                => '/practice-areas/car-accident-lawyers/',
+        '/car-accident-lawyers/moncks-corner-sc/'       => '/practice-areas/car-accident-lawyers/',
+        '/car-accident-lawyers/mount-pleasant-sc/'      => '/practice-areas/car-accident-lawyers/',
+        '/car-accident-lawyers/north-myrtle-beach-sc/'  => '/practice-areas/car-accident-lawyers/',
+        '/car-accident-lawyers/orangeburg-sc/'          => '/practice-areas/car-accident-lawyers/',
+        '/car-accident-lawyers/rock-hill-sc/'           => '/practice-areas/car-accident-lawyers/',
+        '/car-accident-lawyers/simpsonville-sc/'        => '/practice-areas/car-accident-lawyers/',
+        '/car-accident-lawyers/spartanburg-sc/'         => '/practice-areas/car-accident-lawyers/',
+        '/car-accident-lawyers/summerville-sc/'         => '/practice-areas/car-accident-lawyers/',
+        '/car-accident-lawyers/sumter-sc/'              => '/practice-areas/car-accident-lawyers/',
+        '/motorcycle-accident-lawyers/spartanburg-sc/'  => '/practice-areas/motorcycle-accident-lawyers/',
+        '/motorcycle-accident-lawyers/summerville-sc/'  => '/practice-areas/motorcycle-accident-lawyers/',
+        '/personal-injury-lawyers/conway-sc/'           => '/practice-areas/personal-injury-lawyers/',
+        '/personal-injury-lawyers/goose-creek-sc/'      => '/practice-areas/personal-injury-lawyers/',
+        '/personal-injury-lawyers/hilton-head-sc/'      => '/practice-areas/personal-injury-lawyers/',
+        '/personal-injury-lawyers/mount-pleasant-sc/'   => '/practice-areas/personal-injury-lawyers/',
+        '/personal-injury-lawyers/orangeburg-sc/'       => '/practice-areas/personal-injury-lawyers/',
+        '/personal-injury-lawyers/pawleys-island-sc/'   => '/practice-areas/personal-injury-lawyers/',
+        '/personal-injury-lawyers/summerville-sc/'      => '/practice-areas/personal-injury-lawyers/',
+        '/slip-and-fall-lawyers/goose-creek-sc/'        => '/practice-areas/slip-and-fall-lawyers/',
+        '/truck-accident-lawyers/conway-sc/'            => '/practice-areas/truck-accident-lawyers/',
+        '/truck-accident-lawyers/moncks-corner-sc/'     => '/practice-areas/truck-accident-lawyers/',
+        '/truck-accident-lawyers/rock-hill-sc/'         => '/practice-areas/truck-accident-lawyers/',
+        '/truck-accident-lawyers/spartanburg-sc/'       => '/practice-areas/truck-accident-lawyers/',
+        '/truck-accident-lawyers/summerville-sc/'       => '/practice-areas/truck-accident-lawyers/',
+        '/workers-compensation-lawyers/goose-creek-sc/' => '/practice-areas/workers-compensation-lawyers/',
+        '/workers-compensation-lawyers/rock-hill-sc/'   => '/practice-areas/workers-compensation-lawyers/',
+        '/workers-compensation-lawyers/spartanburg-sc/' => '/practice-areas/workers-compensation-lawyers/',
+        '/workers-compensation-lawyers/summerville-sc/' => '/practice-areas/workers-compensation-lawyers/',
     );
 }
 

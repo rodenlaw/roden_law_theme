@@ -85,15 +85,40 @@ into 8 city-tier towns and 109 nested municipalities; see the recommendation in
 
 | Date | Batch | URLs before | URLs after | Removed | Notes |
 |---|---|---:|---:|---:|---|
-| *pending deploy* | **(b)** non-office city pages | 1,659 | 1,651 | 8 | Approved 2026-08-21. Redirects committed, CMS deletion prepared and dry-run clean. **Not yet applied — see ordering below.** |
+| 2026-08-21 | **(b)** non-office city pages | 1,659 | 1,651 | 8 | Redirects **live and verified** (8/8 single-hop). CMS trash step prepared, dry-run clean, **not yet applied**. |
+| *pending deploy* | **(d)** non-office city×practice | 1,651 | 1,617 | 34 | Redirects committed, CMS trash prepared and dry-run clean. **Not yet applied.** |
+
+### Batch (d) — the 34 non-office city×practice pages
+
+Rule 7: city×practice in a market with no office, 301 to the statewide practice
+page. All English, 195–354 unique words (median 251) against a median of 843 for
+the office-city pages that are kept.
+
+17 towns: Summerville (5), Goose Creek (4), Spartanburg (4), Conway (3), Rock
+Hill (3), Moncks Corner (2), Mount Pleasant (2), Orangeburg (2), and one each for
+Blythewood, Fort Mill, Greer, Hilton Head, Irmo, North Myrtle Beach, Pawleys
+Island, Simpsonville, Sumter.
+
+**Internal links need no stripping.** `roden_intersection_grid()` queries for
+each intersection post and links to the pillar when it is absent, so trashing
+these makes every "Cases We Handle" grid fall back on its own. Verified against
+the function rather than assumed, and confirmed by a DB sweep: zero inbound
+references in post content or post meta.
+
+Same ordering rule as batch (b): the 301s must be live before the CMS entries
+go. Apply with `bin/remove-nonoffice-city-practice.php`.
+
+**Note on the office-city pages that stay:** the thinnest sits at 280 words.
+Rule 6 flags those for a Phase 2 rewrite, not deletion.
 
 ### Batch (b) — the eight non-office SC town pages
 
 Hilton Head (5331), Orangeburg (5332), Sumter (5333), Spartanburg (5334),
 Rock Hill (5335), Fort Mill (5336), Greer (5337), Simpsonville (5338).
 
-Published 2026-08-20, 129–168 unique words each, no office in any of these
-markets, and **zero inbound internal links** in post content, post meta or the
+Published 2026-08-20, 270–322 unique words each against a median of 843 for
+the office-city pages, no office in any of these markets, and **zero inbound
+internal links** in post content, post meta or the
 nav menus — orphans from creation. All eight 301 to
 `/locations/south-carolina/`.
 
