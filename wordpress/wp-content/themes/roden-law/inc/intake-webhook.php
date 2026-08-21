@@ -212,8 +212,15 @@ function roden_intake_payload_from_entry( $entry, $form = array() ) {
 		'raw_fields'   => $raw_fields,
 	);
 
-	// Pull utm_* out of the source URL query string when present.
-	$payload = array_merge( $payload, roden_intake_utm_from_url( $source_url ) );
+	// Pull utm_* out of the source URL query string when present, falling back
+	// to the cookie parked by roden_canonicalize_tracking_params() — that 301
+	// strips utm_* from indexable URLs, so GBP-sourced leads no longer carry
+	// them on source_url.
+	$utm = roden_intake_utm_from_url( $source_url );
+	if ( empty( $utm ) ) {
+		$utm = roden_intake_utm_from_cookie();
+	}
+	$payload = array_merge( $payload, $utm );
 
 	/**
 	 * Filter the outgoing intake payload (final say before send).
@@ -244,6 +251,36 @@ function roden_intake_utm_from_url( $url ) {
 	foreach ( array( 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content' ) as $k ) {
 		if ( ! empty( $params[ $k ] ) ) {
 			$out[ $k ] = sanitize_text_field( wp_unslash( $params[ $k ] ) );
+		}
+	}
+	return $out;
+}
+
+/**
+ * Read utm_* values from the cookie parked at redirect time.
+ *
+ * roden_canonicalize_tracking_params() in inc/legacy-redirects.php 301s
+ * tracking URLs to their clean path for indexation reasons. It stores the
+ * stripped values first so attribution is not lost with them.
+ *
+ * @return array Associative array of utm_* keys (only those present).
+ */
+function roden_intake_utm_from_cookie() {
+	$out    = array();
+	$cookie = defined( 'RODEN_UTM_COOKIE' ) ? RODEN_UTM_COOKIE : 'roden_utm';
+
+	if ( empty( $_COOKIE[ $cookie ] ) ) {
+		return $out;
+	}
+
+	$decoded = json_decode( (string) wp_unslash( $_COOKIE[ $cookie ] ), true );
+	if ( ! is_array( $decoded ) ) {
+		return $out;
+	}
+
+	foreach ( array( 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content' ) as $k ) {
+		if ( ! empty( $decoded[ $k ] ) && is_string( $decoded[ $k ] ) ) {
+			$out[ $k ] = sanitize_text_field( $decoded[ $k ] );
 		}
 	}
 	return $out;
