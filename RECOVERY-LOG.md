@@ -103,7 +103,7 @@ into 8 city-tier towns and 109 nested municipalities; see the recommendation in
 | Date | Batch | URLs before | URLs after | Removed | Notes |
 |---|---|---:|---:|---:|---|
 | 2026-08-21 | **(b)** non-office city pages | 1,659 | 1,651 | 8 | **COMPLETE.** Redirects live, 8 posts trashed, caches flushed. Verified after deletion: 8/8 single-hop 301, no 404s; location sitemap 219 → 211. Backup: `docs/backups/batch-b-sc-town-locations-2026-08-21.json`. |
-| *pending deploy* | **(f)** duplicate case-result URLs | 1,529 | 1,529 | 0 | 129 duplicate URLs 301 to their canonical twin. No post removed — these are duplicate *URLs*, not duplicate content. 27 legacy-only slugs left live pending a decision. |
+| 2026-08-21 | **(f)** duplicate case-result URLs | 1,529 | 1,529 | 0 | **COMPLETE.** 129 duplicate URLs 301 single-hop to their canonical twin; all 27 legacy-only slugs still return 200, proving the pattern did not over-match. No post removed — duplicate *URLs*, not duplicate content. Retiring the 27 remains an open decision. |
 | 2026-08-21 | **(a)** neighbourhood + subdivision | 1,617 | 1,529 | 88 | **COMPLETE.** Relink applied (53 links, 23 posts, `post_modified` preserved), redirects live, 88 posts trashed, caches flushed. Verified after deletion: 88/88 single-hop 301, no 404s; location sitemap 211 → 123. Backups: `batch-a-relink-*.json`, `batch-a-neighborhood-locations-*.json`. |
 | 2026-08-21 | **(d)** non-office city×practice | 1,651 | 1,617 | 34 | **COMPLETE.** Redirects live, 34 posts trashed, caches flushed. Verified after deletion: 34/34 single-hop 301, no 404s; practice_area sitemap 449 → 415; intersection grids self-healed to pillars, zero surviving links. Backup: `docs/backups/batch-d-nonoffice-city-practice-2026-08-21.json`. |
 
