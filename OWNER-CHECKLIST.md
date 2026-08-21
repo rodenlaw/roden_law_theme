@@ -47,15 +47,29 @@ otherwise ready to ship. From `SEO-PREEMPTION-PLAN-rodenlaw.md` Phase 0 and §7.
       the exact page type the plan's guardrail now forbids creating. Confirm they
       go, or say what service history justifies keeping them.
 
-- [ ] **The 250–350 URL acceptance criterion is not reachable** as written — see
-      `RECOVERY-LOG.md` for the arithmetic. Guardrail-protected pages alone are
-      991 URLs. Either the target was scoped to location + practice-area only
-      (where the honest end state is 418–535), or it assumed cutting the blog and
-      case results, which the guardrails forbid. Pick one before batch (a) ships.
+- [ ] **The 117 EVALUATE rows** — this is what the end-state number now hinges on,
+      and it splits cleanly in two:
+      - **8 city-tier towns** (the ones published 2026-08-20, above). No ranking
+        history, no office, forbidden page type. *Recommendation: remove.* You can
+        decide these today — they need no data.
+      - **109 municipalities nested under an office city** (Mount Pleasant,
+        Summerville, Goose Creek, Brunswick, Conway, Lexington…). Plan rule 4 keeps
+        only those with real rankings, traffic or genuine service history. That
+        needs the GSC baseline export — it is the one decision genuinely blocked on
+        data, and it is why the export is on this list.
 
 - [ ] **Brand name** — the site says "Roden Law"; registrations and citations say
       "Roden + Love, LLC". One name everywhere. Domain migration stays frozen
       regardless (plan guardrail).
+
+## Resolved — no longer needs your input
+
+- [x] **The 250–350 URL acceptance criterion.** It was not a target but leftover
+      arithmetic (`~1,500 total − ~1,145 doorway`), built on counts that were wrong:
+      location is 219 pages not ~470, practice-area 449 not ~650–700, and the
+      484-post blog went uncounted. Restated against the scope Phase 1 actually
+      governs — **418–535 location + practice-area URLs, down from 668**. The plan
+      and `RECOVERY-LOG.md` both carry the corrected figures and the derivation.
 
 ## Already shipped (no action needed)
 

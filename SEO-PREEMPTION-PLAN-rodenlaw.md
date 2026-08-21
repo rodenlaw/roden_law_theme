@@ -26,7 +26,7 @@ Pattern: Google re-rates this domain at every update, each verdict harsher (top-
 
 **Root causes, ranked:**
 
-1. **Doorway architecture (primary risk).** ~1,500 total URLs: ~470 location pages FIVE levels deep (state → metro → suburb → neighborhood → subdivision: `/locations/south-carolina/charleston/mount-pleasant/old-village/`, `/locations/south-carolina/north-charleston/goose-creek/liberty-hall-plantation/`, `/locations/georgia/savannah/pooler/godley-station/`) + ~650–700 practice URLs including micro-permutations (`/workers-compensation-lawyers/gulfstream-aerospace-injury/`, `/car-accident-lawyers/i-26-accident/`) + `/es/` mirror. Templated place-name-swap content, verified by sampling. **Key difference from the sister site: 6 real offices** — Savannah GA, Darien GA, Charleston SC, North Charleston SC, Columbia SC, Myrtle Beach SC — so city-level pages for real markets are legitimate. The liability is everything below city level.
+1. **Doorway architecture (primary risk).** ~1,500 total URLs: ~470 location pages FIVE levels deep (state → metro → suburb → neighborhood → subdivision: `/locations/south-carolina/charleston/mount-pleasant/old-village/`, `/locations/south-carolina/north-charleston/goose-creek/liberty-hall-plantation/`, `/locations/georgia/savannah/pooler/godley-station/`) + ~650–700 practice URLs including micro-permutations (`/workers-compensation-lawyers/gulfstream-aerospace-injury/`, `/car-accident-lawyers/i-26-accident/`) + `/es/` mirror. Templated place-name-swap content, verified by sampling. *(Counts corrected 2026-08-21: **219** location and **449** practice-area URLs, per the site's own sitemaps and a post-type enumeration. The pattern described here is real and confirmed — only the magnitudes were overstated. See the amendment in §4.)* **Key difference from the sister site: 6 real offices** — Savannah GA, Darien GA, Charleston SC, North Charleston SC, Columbia SC, Myrtle Beach SC — so city-level pages for real markets are legitimate. The liability is everything below city level.
 2. **Spam link networks — identical to the sister site.** "darksidelinks" injection network (26 domains, first seen 2026-02-24, same timestamp as on georgiaautolaw.com — one operation hit both), same PBN vendor (5 domains, Jun 2026), "quarterlinks25" Telegram network (5 domains). Plus three unexplained domain-name anchor blasts (see Phase 0 blockers).
 3. **GBP tracking URLs indexed.** `/locations/south-carolina/myrtle-beach/?utm_campaign=gmb_mb` ranks in place of the clean URL; with 6 offices, expect ~6 variants.
 4. **Brand-identity split.** Site says "Roden Law"; registered name and citations say "Roden + Love, LLC"; a rebrand domain (rodenlovelaw.com, currently not resolving) is being seeded into anchor text at scale.
@@ -77,9 +77,35 @@ Produce `url-triage.csv` first (columns: `url, post_type, level, classification,
 7. **REMOVE (city×practice, non-office cities)** — 301 to the statewide practice page.
 8. **MIRROR RULE (`/es/`)** — Spanish pages live or die with their English counterpart, EXCEPT: any `/es/` page currently outranking or out-earning its English twin is kept regardless. Verify reciprocal hreflang on all survivors.
 
-**Execution order (batches):** (a) sub-neighborhood + neighborhood location pages, (b) non-office city pages failing rule 4, (c) practice micro-permutations, (d) non-office city×practice, (e) `/es/` mirror sync. After each batch: delete the CMS entries so pages can't regenerate, strip internal links to removed URLs (menus, footers, "areas we serve" blocks, related-links modules), regenerate sitemaps.
+**Execution order (batches):** (a) sub-neighborhood + neighborhood location pages, (b) non-office city pages failing rule 4, (c) practice micro-permutations, (d) non-office city×practice, (e) `/es/` mirror sync, (f) legacy `case-result` CPT retirement.
 
-**Acceptance criteria:** end-state ~250–350 URLs, every URL classified exactly once, zero internal 404s, zero internal links resolving through 301s, sitemaps contain only 200-status canonical URLs, spot-check 20 removed URLs → single-hop 301 to a sensible target.
+> **Batch (f) added 2026-08-21.** 129 case results are published at two live URLs
+> simultaneously — `/case-results/{slug}/` (the `case_result` CPT, sitemap-listed) and
+> `/blog/case-result/{slug}/` (the legacy `case-result` CPT, not sitemap-listed). Both
+> return 200 and the legacy URL **self-canonicalizes**, so Google sees 129 independent
+> duplicate pairs rather than one canonical page each. This is not a doorway problem and
+> the case results themselves are guardrail-protected — only the duplicate URL layer goes.
+> Fix follows the pattern already in `inc/legacy-redirects.php` for the `practice-area`
+> and `class-action` CPTs: neutralize the legacy CPT (`public` false, keep wp-admin
+> access) and 301 `/blog/case-result/{slug}/` → `/case-results/{slug}/`. 27 legacy slugs
+> have no counterpart in the new CPT — redirect those to `/case-results/` rather than
+> dropping them. Safe to ship independently of (a)–(e); it touches no location or
+> practice-area URL. After each batch: delete the CMS entries so pages can't regenerate, strip internal links to removed URLs (menus, footers, "areas we serve" blocks, related-links modules), regenerate sitemaps.
+
+**Acceptance criteria:** end-state **418–535 location + practice-area URLs** (from 668), every URL classified exactly once, zero internal 404s, zero internal links resolving through 301s, sitemaps contain only 200-status canonical URLs, spot-check 20 removed URLs → single-hop 301 to a sensible target.
+
+> **Amended 2026-08-21 — the original criterion read "end-state ~250–350 URLs".** That
+> figure was not a judgment about what should survive; it was this section's own
+> arithmetic, `~1,500 total − ~1,145 doorway = ~355`. The total was close (the site's
+> sitemaps list 1,439 indexable URLs) but the decomposition was wrong. Location is **219**
+> pages, not ~470, and practice-area is **449**, not ~650–700 — both confirmed against
+> `wp-sitemap-posts-location-1.xml` and `-practice_area-1.xml` and against a direct post-type
+> enumeration. The doorway layer is 46% of the site, not 76%, and the 484-post blog that the
+> guardrails protect was never counted. Guardrail-protected types alone total 991 URLs, so
+> ~250–350 was unreachable without cutting the blog and case results that §2 forbids
+> touching. The criterion is therefore restated against the scope Phase 1 actually governs.
+> Whole-site context, not a gate: 1,659 public URLs today → 1,409–1,526 after this phase.
+> The five structural criteria above were always the real test and are unchanged.
 
 ---
 
