@@ -1252,3 +1252,81 @@ function roden_phase1_removal_redirects() {
     wp_redirect( home_url( $map[ $path ] ), 301 );
     exit;
 }
+
+/* ------------------------------------------------------------------
+   301: legacy case-result CPT → the canonical /case-results/ URL.
+
+   Phase 1 batch (f). 156 case results are published twice: once as the
+   `case_result` CPT at /case-results/{slug}/ (sitemap-listed, canonical)
+   and once as the legacy hyphen-slug `case-result` CPT at
+   /blog/case-result/{slug}/. 129 of them share a slug, both return 200,
+   and the legacy URL SELF-canonicalises — so Google sees 129 independent
+   duplicate pairs rather than one canonical page each.
+
+   Matched by pattern rather than a hardcoded list of 129 paths, and the
+   redirect only fires when a published `case_result` with that slug
+   actually exists. That matters: 27 legacy slugs have NO counterpart, and
+   those are left serving their own content rather than being swept into
+   the archive. Case results are guardrail-protected (plan §2) and those 27
+   are unique posts, not leftovers — retiring them is a separate decision,
+   not a side effect of de-duplication.
+
+   The legacy CPT is therefore NOT neutralised here. Doing so would remove
+   the front-end URL for those 27 as well. Once they are dealt with, add
+   'case-result' to roden_neutralize_old_practice_area_cpt() above and this
+   handler becomes the sole route.
+
+   `case_result` is non-hierarchical, so a slug lookup is reliable against
+   it — unlike `location` and `practice_area`.
+   ------------------------------------------------------------------ */
+
+add_action( 'template_redirect', 'roden_legacy_case_result_redirect', 0 );
+
+function roden_legacy_case_result_redirect() {
+    if ( is_admin() || wp_doing_ajax() || is_preview() || is_feed() ) {
+        return;
+    }
+    if ( defined( 'REST_REQUEST' ) && REST_REQUEST ) {
+        return;
+    }
+
+    $method = isset( $_SERVER['REQUEST_METHOD'] ) ? strtoupper( (string) $_SERVER['REQUEST_METHOD'] ) : 'GET';
+    if ( 'GET' !== $method && 'HEAD' !== $method ) {
+        return;
+    }
+
+    $request_uri = isset( $_SERVER['REQUEST_URI'] ) ? (string) $_SERVER['REQUEST_URI'] : '/';
+    $path        = (string) wp_parse_url( $request_uri, PHP_URL_PATH );
+
+    if ( ! preg_match( '#^/blog/case-result/([^/]+)/?$#', $path, $m ) ) {
+        return;
+    }
+
+    $slug = sanitize_title( $m[1] );
+    if ( '' === $slug ) {
+        return;
+    }
+
+    $twin = get_posts( array(
+        'post_type'        => 'case_result',
+        'post_status'      => 'publish',
+        'name'             => $slug,
+        'posts_per_page'   => 1,
+        'fields'           => 'ids',
+        'no_found_rows'    => true,
+        'suppress_filters' => false,
+    ) );
+
+    // No canonical twin: leave the legacy page serving its own content.
+    if ( empty( $twin ) ) {
+        return;
+    }
+
+    $dest = get_permalink( $twin[0] );
+    if ( ! $dest ) {
+        return;
+    }
+
+    wp_redirect( $dest, 301 );
+    exit;
+}

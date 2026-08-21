@@ -103,8 +103,41 @@ into 8 city-tier towns and 109 nested municipalities; see the recommendation in
 | Date | Batch | URLs before | URLs after | Removed | Notes |
 |---|---|---:|---:|---:|---|
 | 2026-08-21 | **(b)** non-office city pages | 1,659 | 1,651 | 8 | **COMPLETE.** Redirects live, 8 posts trashed, caches flushed. Verified after deletion: 8/8 single-hop 301, no 404s; location sitemap 219 → 211. Backup: `docs/backups/batch-b-sc-town-locations-2026-08-21.json`. |
+| *pending deploy* | **(f)** duplicate case-result URLs | 1,529 | 1,529 | 0 | 129 duplicate URLs 301 to their canonical twin. No post removed — these are duplicate *URLs*, not duplicate content. 27 legacy-only slugs left live pending a decision. |
 | 2026-08-21 | **(a)** neighbourhood + subdivision | 1,617 | 1,529 | 88 | **COMPLETE.** Relink applied (53 links, 23 posts, `post_modified` preserved), redirects live, 88 posts trashed, caches flushed. Verified after deletion: 88/88 single-hop 301, no 404s; location sitemap 211 → 123. Backups: `batch-a-relink-*.json`, `batch-a-neighborhood-locations-*.json`. |
 | 2026-08-21 | **(d)** non-office city×practice | 1,651 | 1,617 | 34 | **COMPLETE.** Redirects live, 34 posts trashed, caches flushed. Verified after deletion: 34/34 single-hop 301, no 404s; practice_area sitemap 449 → 415; intersection grids self-healed to pillars, zero surviving links. Backup: `docs/backups/batch-d-nonoffice-city-practice-2026-08-21.json`. |
+
+### Batch (f) — the duplicated case-result URLs
+
+156 case results are published twice: as `case_result` at `/case-results/{slug}/`
+(sitemap-listed, canonical) and as the legacy hyphen-slug `case-result` CPT at
+`/blog/case-result/{slug}/`. **129 share a slug**, both return 200, and the
+legacy URL *self-canonicalises* — so Google sees 129 independent duplicate pairs.
+
+Matched by pattern, not a hardcoded list, and the redirect fires **only where a
+published `case_result` with that slug exists**. Zero inbound internal links.
+
+**The 27 legacy-only slugs are deliberately left serving their own content.**
+My earlier plan amendment assumed they were leftovers and said to sweep them into
+`/case-results/`. That assumption was wrong: they are unique posts, not orphan
+URLs, and case results are guardrail-protected under plan §2. The legacy CPT is
+therefore *not* neutralised yet — doing so would remove their front-end URL as a
+side effect.
+
+What they actually are, measured rather than assumed:
+
+- 57–174 bytes of `post_content` each — a sentence or two
+- raw `<br>` markup in every title (`$27,000,000 Settlement | Truck <br> Accident`)
+- one slug is literally `2969`; one title reads `$750,00` (a digit short);
+  one has slug `100000-recovery-animal-attack` against a `$130,000` title
+- top value $27,000,000 — **already present in the canonical CPT**, whose range
+  ($27M, $10.86M, $9.8M, $3.35M…) dwarfs the legacy-only set's second-place $950k
+- **zero** legacy-only values exceed the canonical CPT's maximum
+
+So they carry no credential the site does not already publish, and every one is
+malformed. Recommendation is to retire them to `/case-results/` and then
+neutralise the CPT — but that is a call on guardrail-protected content, so it is
+recorded here rather than taken silently.
 
 ### Batch (a) — the 88 neighbourhood and subdivision pages
 
