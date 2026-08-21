@@ -901,49 +901,59 @@ function roden_get_legacy_redirect_map() {
 }
 
 /* ------------------------------------------------------------------
-   301: tracking-parameter URLs → clean canonical path.
+   301: campaign-tag URLs -> clean canonical path.
 
-   SEO pre-emption plan, Phase 0 item 4. The six Google Business
-   Profiles link to their location pages with ?utm_campaign=gmb_*
-   appended. Those variants return 200 and already emit a correct
-   <link rel="canonical"> to the clean path — and Google indexes and
-   ranks them anyway, because a canonical is a hint and six strong
-   external links outvote it. /locations/south-carolina/myrtle-beach/
-   ?utm_campaign=gmb_mb carries ~3% of sitewide traffic in place of
-   the clean URL. A 301 is a directive, so it settles what the
-   canonical could not.
+   Phase 0 item 4. The six Google Business Profiles link to their location
+   pages with a campaign tag appended. Those variants return 200 and already
+   emit a correct canonical to the clean path, and Google indexes and ranks
+   them anyway, because a canonical is a hint and six strong external links
+   outvote it. /locations/south-carolina/myrtle-beach/?utm_campaign=gmb_mb
+   carries ~3% of sitewide traffic in place of the clean URL. A 301 is a
+   directive, so it settles what the canonical could not.
 
-   ATTRIBUTION: the intake webhook reads utm_* off the Gravity Forms
-   entry's source_url (see roden_intake_utm_from_url). Stripping the
-   params with a bare redirect would silently destroy GBP lead-source
-   attribution — the redirect fires long before any page JS could
-   stash them the way the gclid capture in functions.php does. So the
-   values are parked in a short-lived cookie first and the webhook
-   falls back to it.
+   WHY `ref` AND NOT `utm_*`. WP Engine strips utm_* and gclid from the
+   request before it reaches PHP, then reattaches them to the URL returned to
+   the visitor (wpengine.com/support/utm-gclid-variables-caching/). A handler
+   keyed on utm_* cannot fire on this host. Verified live on 2026-08-21:
+   WordPress's own redirect_canonical preserved ?cb=23957 while
+   ?utm_campaign=TESTVALUE vanished from the otherwise identical request.
 
-   gclid is deliberately NOT stripped: it is Google Ads auto-tagging,
-   it is not an indexation problem, and the paid-conversion path
-   depends on it reaching the form.
+   So the profiles must tag with ?ref=gmb_<market>, which WP Engine passes
+   through untouched. Do not "fix" this by adding utm_* back to the list
+   below — it will look right and do nothing.
+
+   The already-indexed ?utm_campaign= variants cannot be redirected from PHP
+   for the same reason. They decay once the profiles stop linking them and
+   the canonical reasserts. The alternative, a WP Engine cache exclusion for
+   utm_*, was rejected: it makes every tagged request bypass page cache,
+   which is the highest-intent traffic on the site.
+
+   ATTRIBUTION. The intake webhook reads campaign data off the Gravity Forms
+   entry's source_url, which derives from the Referer. This redirect fires
+   before the browser ever renders the tagged URL, so a later form submit
+   would carry the clean path and lose the tag. The value is parked in a
+   cookie first and the webhook falls back to it, mapping ref -> utm_campaign
+   so downstream CRM reporting keys on the field it always has.
+
+   gclid is not handled here. WP Engine strips it too, and the theme already
+   captures it client-side via sessionStorage in functions.php, which is the
+   pattern WP Engine recommends for stripped parameters.
    ------------------------------------------------------------------ */
 
-if ( ! defined( 'RODEN_UTM_COOKIE' ) ) {
-    define( 'RODEN_UTM_COOKIE', 'roden_utm' );
+if ( ! defined( 'RODEN_REF_COOKIE' ) ) {
+    define( 'RODEN_REF_COOKIE', 'roden_ref' );
 }
 
 /**
- * The tracking parameters that get stripped from indexable URLs.
+ * Campaign-tag parameters stripped from indexable URLs.
+ *
+ * Must contain only parameters WP Engine passes through to PHP. utm_* and
+ * gclid do not qualify — see the note above.
  *
  * @return string[]
  */
 function roden_tracking_params() {
-    return array(
-        'utm_source',
-        'utm_medium',
-        'utm_campaign',
-        'utm_term',
-        'utm_content',
-        'utm_id',
-    );
+    return array( 'ref' );
 }
 
 add_action( 'template_redirect', 'roden_canonicalize_tracking_params', 1 );
@@ -976,10 +986,10 @@ function roden_canonicalize_tracking_params() {
         return;
     }
 
-    // Park the values before dropping them, so lead attribution survives.
-    roden_stash_utm_cookie( $_GET, $tracking );
+    // Park the value before dropping it, so lead attribution survives.
+    roden_stash_ref_cookie( $_GET, $tracking );
 
-    // Keep every non-tracking parameter (gclid, pagination, form state…).
+    // Keep every non-campaign parameter (pagination, search, form state...).
     $keep = array();
     foreach ( $_GET as $k => $v ) {
         if ( ! in_array( $k, $tracking, true ) ) {
@@ -996,7 +1006,7 @@ function roden_canonicalize_tracking_params() {
     $dest = home_url( $path );
 
     if ( ! empty( $keep ) ) {
-        // add_query_arg() encodes values itself — pre-encoding double-escapes.
+        // add_query_arg() encodes values itself - pre-encoding double-escapes.
         $dest = add_query_arg( wp_unslash( $keep ), $dest );
     }
 
@@ -1005,32 +1015,31 @@ function roden_canonicalize_tracking_params() {
 }
 
 /**
- * Store the inbound utm_* values in a short-lived cookie.
+ * Store the inbound campaign tag in a short-lived cookie.
  *
- * Read back by the intake webhook when the submitted page's source_url
- * has already been cleaned by the 301 above.
+ * Read back by the intake webhook once the 301 above has cleaned the URL.
  *
  * @param array    $params   Raw request parameters.
- * @param string[] $tracking Tracking keys to persist.
+ * @param string[] $tracking Campaign keys to persist.
  */
-function roden_stash_utm_cookie( $params, $tracking ) {
+function roden_stash_ref_cookie( $params, $tracking ) {
     if ( headers_sent() ) {
         return;
     }
 
-    $utm = array();
+    $tags = array();
     foreach ( $tracking as $k ) {
         if ( ! empty( $params[ $k ] ) && is_string( $params[ $k ] ) ) {
-            $utm[ $k ] = sanitize_text_field( wp_unslash( $params[ $k ] ) );
+            $tags[ $k ] = sanitize_text_field( wp_unslash( $params[ $k ] ) );
         }
     }
-    if ( empty( $utm ) ) {
+    if ( empty( $tags ) ) {
         return;
     }
 
     setcookie(
-        RODEN_UTM_COOKIE,
-        wp_json_encode( $utm ),
+        RODEN_REF_COOKIE,
+        wp_json_encode( $tags ),
         array(
             'expires'  => time() + ( 30 * DAY_IN_SECONDS ),
             'path'     => COOKIEPATH ? COOKIEPATH : '/',

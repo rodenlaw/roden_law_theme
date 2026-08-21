@@ -27,11 +27,27 @@ otherwise ready to ship. From `SEO-PREEMPTION-PLAN-rodenlaw.md` Phase 0 and §7.
       34 domains across 3 verified spam clusters. Partial by design (see the two
       exclusions noted in the file header).
 
-- [ ] **Update the website link in all six Google Business Profiles** to the clean
-      URL, with no `utm_campaign=gmb_*` appended. The code now 301s those
-      variants, so leaving the GBP links as-is just means every visitor takes an
-      extra hop. Profiles: Savannah GA · Darien GA · Charleston SC ·
-      North Charleston SC · Columbia SC · Myrtle Beach SC.
+- [ ] **Retag the website link in all six Google Business Profiles** — this moved
+      up: it is now the *only* thing that fixes the indexed tracking variants,
+      not a follow-up to a code change.
+
+      Use `?ref=gmb_<market>`, **not** `utm_campaign=gmb_<market>` and **not** a
+      bare clean URL. WP Engine strips `utm_*` before PHP, so the redirect can
+      never fire on those; a bare clean URL would work for SEO but throw away
+      GBP lead attribution entirely. `?ref=` 301s to the clean path *and* keeps
+      attribution via a cookie.
+
+      | Profile | Website link to set |
+      |---|---|
+      | Savannah GA | `/locations/georgia/savannah/?ref=gmb_sav` |
+      | Darien GA | `/locations/georgia/darien/?ref=gmb_dar` |
+      | Charleston SC | `/locations/south-carolina/charleston/?ref=gmb_chs` |
+      | North Charleston SC | `/locations/south-carolina/north-charleston/?ref=gmb_nchs` |
+      | Columbia SC | `/locations/south-carolina/columbia/?ref=gmb_col` |
+      | Myrtle Beach SC | `/locations/south-carolina/myrtle-beach/?ref=gmb_mb` |
+
+      The existing `?utm_campaign=` variants already in the index cannot be
+      redirected from PHP. They decay once the profiles stop linking them.
 
 - [ ] **Export the GSC baseline** — performance by page and by query, 16 months,
       plus the indexed-page list. This is the before-picture for `RECOVERY-LOG.md`

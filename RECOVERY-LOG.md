@@ -122,7 +122,9 @@ city×practice tier.
 
 | Date | Change | Ref |
 |---|---|---|
-| 2026-08-21 | Phase 0.4 — 301 tracking-parameter URLs to their clean path; utm_* parked in a cookie so intake attribution survives the redirect | `inc/legacy-redirects.php`, `inc/intake-webhook.php` |
+| 2026-08-21 | Phase 0.4 — 301 tracking-parameter URLs to their clean path; campaign tag parked in a cookie so intake attribution survives the redirect | `inc/legacy-redirects.php`, `inc/intake-webhook.php` |
+| 2026-08-21 | Phase 1 batch (b) — the 8 non-office town pages 301 to the state hub. **Verified live: all 8 single-hop.** | `inc/legacy-redirects.php` |
+| 2026-08-21 | Phase 0.4 retargeted `utm_*` → `ref` after the first version shipped and was verified **inert** — WP Engine strips `utm_*` before PHP. See the amendment in plan §3 item 4. | `inc/legacy-redirects.php`, `inc/intake-webhook.php` |
 
 ## Update boundaries to measure against
 
