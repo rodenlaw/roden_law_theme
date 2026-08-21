@@ -83,11 +83,40 @@ into 8 city-tier towns and 109 nested municipalities; see the recommendation in
 
 ## Batch log
 
-_No batches shipped yet. Phase 1 is gated on owner approval of `url-triage.csv`._
-
 | Date | Batch | URLs before | URLs after | Removed | Notes |
 |---|---|---:|---:|---:|---|
-| — | — | — | — | — | — |
+| *pending deploy* | **(b)** non-office city pages | 1,659 | 1,651 | 8 | Approved 2026-08-21. Redirects committed, CMS deletion prepared and dry-run clean. **Not yet applied — see ordering below.** |
+
+### Batch (b) — the eight non-office SC town pages
+
+Hilton Head (5331), Orangeburg (5332), Sumter (5333), Spartanburg (5334),
+Rock Hill (5335), Fort Mill (5336), Greer (5337), Simpsonville (5338).
+
+Published 2026-08-20, 129–168 unique words each, no office in any of these
+markets, and **zero inbound internal links** in post content, post meta or the
+nav menus — orphans from creation. All eight 301 to
+`/locations/south-carolina/`.
+
+**Ordering is not optional.** The 301s must be live before the CMS entries go,
+or the eight URLs 404 in the gap and the plan forbids 404s. The redirects are
+path-keyed (`roden_phase1_removed_urls()`), so they fire whether or not the post
+still exists:
+
+1. Merge the PR → deploy. **This alone completes the SEO removal** — the pages
+   stop being indexable the moment the redirect is live.
+2. `ssh $H "wp --path=$P eval-file - apply" < bin/remove-sc-town-locations.php > backup-8-towns.json`
+   → trashes the entries so the pages cannot regenerate. Reversible with
+   `wp post untrash <ID>`; the JSON backup carries full content and meta.
+3. Flush both cache layers, then verify the eight 301s resolve single-hop.
+
+The service-area data behind these towns stays in `$firm['service_areas']` — it
+feeds the city×practice pages, which are a separate decision (see below).
+
+**Left standing deliberately:** the 14 practice-area pages for these same towns
+(`/car-accident-lawyers/rock-hill-sc/` and siblings, 80–103 unique words each).
+They classify REMOVE under rule 7 and are batch (d), not batch (b). Removing the
+location pages without them leaves the same doorway pattern live at the
+city×practice tier.
 
 ## Shipped outside the batch sequence
 

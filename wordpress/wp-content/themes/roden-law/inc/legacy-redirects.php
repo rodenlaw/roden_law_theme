@@ -1041,3 +1041,75 @@ function roden_stash_utm_cookie( $params, $tracking ) {
         )
     );
 }
+
+/* ------------------------------------------------------------------
+   301: Phase 1 removals — URLs culled by the SEO pre-emption plan.
+
+   Path-keyed rather than post-ID-keyed on purpose: these fire whether or
+   not the underlying post still exists, so the redirect can ship BEFORE
+   the CMS entry is deleted. That ordering is the point — deploy first and
+   the page stops being indexable immediately; delete the post afterwards
+   so it cannot regenerate. Reversing it would open a 404 window, which
+   the plan forbids.
+
+   Registered at priority 0, ahead of the tracking-parameter handler, so a
+   removed URL carrying utm_* still resolves in a SINGLE hop rather than
+   chaining removal→clean→destination.
+
+   Batch (b), shipped 2026-08-21: the eight non-office city pages published
+   2026-08-20. No office in any of these markets, ~130-170 unique words
+   each, and zero inbound internal links anywhere in post content, post
+   meta or the nav menus — orphans from the day they were created. The
+   service-area data behind them stays in $firm['service_areas']; it feeds
+   the city x practice pages, which are a separate decision.
+   ------------------------------------------------------------------ */
+
+/**
+ * Removed path => 301 destination. Append future batches here.
+ *
+ * @return array<string,string>
+ */
+function roden_phase1_removed_urls() {
+    return array(
+        // Batch (b) — non-office city pages failing plan rule 4.
+        '/locations/south-carolina/fort-mill/'    => '/locations/south-carolina/',
+        '/locations/south-carolina/greer/'        => '/locations/south-carolina/',
+        '/locations/south-carolina/hilton-head/'  => '/locations/south-carolina/',
+        '/locations/south-carolina/orangeburg/'   => '/locations/south-carolina/',
+        '/locations/south-carolina/rock-hill/'    => '/locations/south-carolina/',
+        '/locations/south-carolina/simpsonville/' => '/locations/south-carolina/',
+        '/locations/south-carolina/spartanburg/'  => '/locations/south-carolina/',
+        '/locations/south-carolina/sumter/'       => '/locations/south-carolina/',
+    );
+}
+
+add_action( 'template_redirect', 'roden_phase1_removal_redirects', 0 );
+
+function roden_phase1_removal_redirects() {
+    if ( is_admin() || wp_doing_ajax() || is_preview() || is_feed() ) {
+        return;
+    }
+    if ( defined( 'REST_REQUEST' ) && REST_REQUEST ) {
+        return;
+    }
+
+    $method = isset( $_SERVER['REQUEST_METHOD'] ) ? strtoupper( (string) $_SERVER['REQUEST_METHOD'] ) : 'GET';
+    if ( 'GET' !== $method && 'HEAD' !== $method ) {
+        return;
+    }
+
+    $request_uri = isset( $_SERVER['REQUEST_URI'] ) ? (string) $_SERVER['REQUEST_URI'] : '/';
+    $path        = (string) wp_parse_url( $request_uri, PHP_URL_PATH );
+    if ( '' === $path ) {
+        return;
+    }
+    $path = trailingslashit( $path );
+
+    $map = roden_phase1_removed_urls();
+    if ( ! isset( $map[ $path ] ) ) {
+        return;
+    }
+
+    wp_redirect( home_url( $map[ $path ] ), 301 );
+    exit;
+}
