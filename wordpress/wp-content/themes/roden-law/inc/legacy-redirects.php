@@ -1080,6 +1080,20 @@ function roden_stash_ref_cookie( $params, $tracking ) {
  * @return array<string,string>
  */
 function roden_phase1_removed_urls() {
+    /*
+     * The corridor fold is a separate decision from the Phase 1 batches and lives
+     * in its own function, not in the array below. Two reasons. It is sourced from
+     * GSC evidence rather than the plan's classification rules, and its targets get
+     * repointed at the Corridor Report when Study #1 publishes — an edit that should
+     * be obvious and self-contained rather than buried among 130 batch entries.
+     */
+    return array_merge( roden_phase1_batch_urls(), roden_corridor_fold_urls() );
+}
+
+/**
+ * Phase 1 batches (a), (b) and (d) — the doorway cull.
+ */
+function roden_phase1_batch_urls() {
     return array(
         // Batch (b) — non-office city pages failing plan rule 4.
         '/locations/south-carolina/fort-mill/'    => '/locations/south-carolina/',
@@ -1240,6 +1254,41 @@ function roden_phase1_removed_urls() {
         '/workers-compensation-lawyers/boeing-aerospace-injury/'     => '/practice-areas/workers-compensation-lawyers/',
         '/workers-compensation-lawyers/gulfstream-aerospace-injury/' => '/practice-areas/workers-compensation-lawyers/',
         '/workers-compensation-lawyers/savannah-port-worker-injury/' => '/practice-areas/workers-compensation-lawyers/',
+    );
+}
+
+/**
+ * Corridor fold — the 11 April-2026 corridor resources that earned ZERO clicks in
+ * the 13 months to 2026-08-22 (docs/gsc-evidence-2026-08-24.md). Owner-approved
+ * 2026-08-24.
+ *
+ * The other 37 pages in that seeding band rank page-one and are KEEP. The Steinberg
+ * plan assumed the whole campaign would fold into the I-26/I-95 Corridor Report;
+ * the data said otherwise, and folding the performers would have discarded working
+ * long-tail. Only the dead ones are here.
+ *
+ * Targets are practice pillars because pillars are guardrail keeps and therefore
+ * chain-proof — the same reasoning batch (a) used for tier-2 city hubs. Redirecting
+ * to a surviving sibling corridor page would read better and would risk a chain if
+ * that sibling is ever folded.
+ *
+ * WHEN STUDY #1 PUBLISHES: repoint these to the Corridor Report's URL. This map is
+ * a flat lookup read once at template_redirect, so changing a destination stays
+ * single-hop. Do not add a second hop.
+ */
+function roden_corridor_fold_urls() {
+    return array(
+        '/resources/construction-zone-accidents-north-charleston/'           => '/practice-areas/car-accident-lawyers/',
+        '/resources/rideshare-accident-north-charleston/'                    => '/practice-areas/car-accident-lawyers/',
+        '/resources/what-to-do-after-car-accident-north-charleston/'         => '/practice-areas/car-accident-lawyers/',
+        '/resources/workers-comp-north-charleston-warehouse-port/'           => '/practice-areas/workers-compensation-lawyers/',
+        '/resources/highway-501-truck-accidents-conway-myrtle-beach/'        => '/practice-areas/truck-accident-lawyers/',
+        '/resources/lexington-county-truck-accidents-distribution-corridor/' => '/practice-areas/truck-accident-lawyers/',
+        '/resources/mount-pleasant-truck-accidents-wando-welch/'             => '/practice-areas/truck-accident-lawyers/',
+        '/resources/ogeechee-road-truck-accidents-savannah/'                 => '/practice-areas/truck-accident-lawyers/',
+        '/resources/port-of-charleston-truck-routes/'                        => '/practice-areas/truck-accident-lawyers/',
+        '/resources/seasonal-truck-accidents-myrtle-beach/'                  => '/practice-areas/truck-accident-lawyers/',
+        '/resources/us-17-truck-accidents-grand-strand/'                     => '/practice-areas/truck-accident-lawyers/',
     );
 }
 

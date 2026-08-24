@@ -50,8 +50,9 @@ test most of this band passes, and the Steinberg plan's instinct to fold all of 
 the Corridor Report would discard page-one long-tail to build an asset that has to earn
 its position from zero.
 
-**Recommendation:** keep the performers as-is; fold only the **11 zero-click
-pages** into Study #1 as chapters, with 301s. Revisit the weak tail (1–3 clicks over 13
+**Recommendation — APPROVED by the owner 2026-08-24, shipped as the corridor-fold
+PR:** keep the 37 performers as-is; fold only the **11 zero-click pages** into Study #1
+as chapters, with 301s. Revisit the weak tail (1–3 clicks over 13
 months, which is noise) once the study exists and can absorb them.
 
 ### Corridor pages earning clicks — keep
@@ -142,8 +143,9 @@ than it says anything about the corridor band.
 43 with clicks split at a natural break: Woodbine (21) and Folkston (6) are
 worth keeping; the rest sit at 1–4 clicks over 13 months.
 
-**This is a deletion decision on 66 URLs and needs owner sign-off before any
-batch is built.**
+**DEFERRED 2026-08-24.** The owner is pursuing Search Console API access to get
+impressions for the zero-click pages before any of these are removed — the one number
+this export cannot supply. No batch is built until that lands.
 
 ### Nested location pages earning clicks
 
