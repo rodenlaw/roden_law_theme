@@ -28,7 +28,7 @@ Across the top-1,000 pages: **24,691 clicks · 7,810,894 impressions.**
 | Blog *(guardrail KEEP)* | 484 | 341 | 16,639 | **67.4%** |
 | Corridor band *(EVALUATE)* | 48 | 37 | 311 | 1.3% |
 | Legal library *(KEEP)* | 19 | 15 | 273 | 1.1% |
-| Nested locations *(EVALUATE)* | 117 | 43 | 91 | 0.4% |
+| Nested locations *(EVALUATE, live)* | 109 | 43 | 91 | 0.4% |
 
 The blog is the site, and the guardrails are right about that.
 
@@ -118,7 +118,15 @@ Impressions unknown per the caveat above; confirm before redirecting.
 
 ## Finding 2 — the nested location pages are the dead weight, and it is not close
 
-**74 of 117 earned zero clicks in 13 months.** The 43 that
+> **Corrected after first pass.** The 117 EVALUATE rows come from the 2026-08-21
+> inventory, which predates batch (b). Eight of them —
+> `/locations/south-carolina/{fort-mill, greer, hilton-head, orangeburg, rock-hill,
+> simpsonville, spartanburg, sumter}/` — were already trashed and already 301 (spot-checked
+> live). They are stale rows, not candidates. The live population is **109**, and the
+> zero-click set is **66**, not 74. Every count below is against the live population.
+
+
+**66 of 109 still-live pages earned zero clicks in 13 months.** The 43 that
 earned any produced **91 clicks between them** — 0.8 per page over more
 than a year. Only two pages clear 5 clicks.
 
@@ -129,12 +137,12 @@ clicks**. Google serves it constantly; nobody wants it.
 This is the population plan rule 4 was written for, and the data says so far more clearly
 than it says anything about the corridor band.
 
-**Recommendation:** the 74 zero-click pages are REMOVE candidates under rule 4,
+**Recommendation:** the 66 zero-click pages are REMOVE candidates under rule 4,
 301 to the parent office-city hub — the same chain-proof target batch (a) used. The
 43 with clicks split at a natural break: Woodbine (21) and Folkston (6) are
 worth keeping; the rest sit at 1–4 clicks over 13 months.
 
-**This is a deletion decision on 74+ URLs and needs owner sign-off before any
+**This is a deletion decision on 66 URLs and needs owner sign-off before any
 batch is built.**
 
 ### Nested location pages earning clicks
@@ -185,81 +193,73 @@ batch is built.**
 | `/locations/south-carolina/columbia/west-columbia/` | 1 | 773 | 10.08 |
 | `/locations/georgia/savannah/whitemarsh-island/` | 1 | 116 | 10.65 |
 
-### Zero clicks in 13 months — 74 pages
+### Zero clicks in 13 months — 66 pages
 
 | Page | Clicks | Impressions | Avg pos |
 |---|---:|---:|---:|
-| `/locations/south-carolina/myrtle-beach/atlantic-beach/` | 0 | — | — |
-| `/locations/south-carolina/charleston/awendaw/` | 0 | — | — |
-| `/locations/south-carolina/myrtle-beach/aynor/` | 0 | — | — |
+| `/locations/georgia/darien/dock-junction/` | 0 | — | — |
+| `/locations/georgia/darien/eulonia/` | 0 | — | — |
+| `/locations/georgia/darien/ludowici/` | 0 | — | — |
+| `/locations/georgia/darien/odum/` | 0 | — | — |
+| `/locations/georgia/darien/screven/` | 0 | — | — |
+| `/locations/georgia/darien/st-marys/` | 0 | — | — |
+| `/locations/georgia/darien/townsend/` | 0 | — | — |
+| `/locations/georgia/darien/waverly/` | 0 | — | — |
+| `/locations/georgia/darien/white-oak/` | 0 | — | — |
 | `/locations/georgia/savannah/bloomingdale/` | 0 | — | — |
+| `/locations/georgia/savannah/effingham-county/` | 0 | — | — |
+| `/locations/georgia/savannah/garden-city/` | 0 | — | — |
+| `/locations/georgia/savannah/guyton/` | 0 | — | — |
+| `/locations/georgia/savannah/isle-of-hope/` | 0 | — | — |
+| `/locations/georgia/savannah/richmond-hill/` | 0 | — | — |
+| `/locations/georgia/savannah/rincon/` | 0 | — | — |
+| `/locations/georgia/savannah/springfield/` | 0 | — | — |
+| `/locations/georgia/savannah/thunderbolt/` | 0 | — | — |
+| `/locations/georgia/savannah/tybee-island/` | 0 | — | — |
+| `/locations/georgia/savannah/wilmington-island/` | 0 | — | — |
+| `/locations/south-carolina/charleston/awendaw/` | 0 | — | — |
+| `/locations/south-carolina/charleston/edisto-island/` | 0 | — | — |
+| `/locations/south-carolina/charleston/folly-beach/` | 0 | — | — |
+| `/locations/south-carolina/charleston/hollywood/` | 0 | — | — |
+| `/locations/south-carolina/charleston/johns-island/` | 0 | — | — |
+| `/locations/south-carolina/charleston/kiawah-island/` | 0 | — | — |
+| `/locations/south-carolina/charleston/mcclellanville/` | 0 | — | — |
+| `/locations/south-carolina/charleston/meggett/` | 0 | — | — |
+| `/locations/south-carolina/charleston/ravenel/` | 0 | — | — |
+| `/locations/south-carolina/charleston/seabrook-island/` | 0 | — | — |
+| `/locations/south-carolina/charleston/sullivans-island/` | 0 | — | — |
+| `/locations/south-carolina/charleston/wadmalaw-island/` | 0 | — | — |
 | `/locations/south-carolina/columbia/blythewood/` | 0 | — | — |
+| `/locations/south-carolina/columbia/camden/` | 0 | — | — |
+| `/locations/south-carolina/columbia/dentsville/` | 0 | — | — |
+| `/locations/south-carolina/columbia/gaston/` | 0 | — | — |
+| `/locations/south-carolina/columbia/hopkins/` | 0 | — | — |
+| `/locations/south-carolina/columbia/irmo/` | 0 | — | — |
+| `/locations/south-carolina/columbia/lexington/` | 0 | — | — |
+| `/locations/south-carolina/columbia/oak-grove/` | 0 | — | — |
+| `/locations/south-carolina/columbia/pelion/` | 0 | — | — |
+| `/locations/south-carolina/columbia/pine-ridge/` | 0 | — | — |
+| `/locations/south-carolina/columbia/seven-oaks/` | 0 | — | — |
+| `/locations/south-carolina/columbia/south-congaree/` | 0 | — | — |
+| `/locations/south-carolina/columbia/springdale/` | 0 | — | — |
+| `/locations/south-carolina/columbia/st-andrews/` | 0 | — | — |
+| `/locations/south-carolina/columbia/woodfield/` | 0 | — | — |
+| `/locations/south-carolina/myrtle-beach/atlantic-beach/` | 0 | — | — |
+| `/locations/south-carolina/myrtle-beach/aynor/` | 0 | — | — |
 | `/locations/south-carolina/myrtle-beach/briarcliffe-acres/` | 0 | — | — |
 | `/locations/south-carolina/myrtle-beach/bucksport/` | 0 | — | — |
 | `/locations/south-carolina/myrtle-beach/burgess/` | 0 | — | — |
-| `/locations/south-carolina/columbia/camden/` | 0 | — | — |
-| `/locations/south-carolina/columbia/dentsville/` | 0 | — | — |
-| `/locations/georgia/darien/dock-junction/` | 0 | — | — |
-| `/locations/south-carolina/charleston/edisto-island/` | 0 | — | — |
-| `/locations/georgia/savannah/effingham-county/` | 0 | — | — |
-| `/locations/georgia/darien/eulonia/` | 0 | — | — |
-| `/locations/south-carolina/charleston/folly-beach/` | 0 | — | — |
 | `/locations/south-carolina/myrtle-beach/forestbrook/` | 0 | — | — |
-| `/locations/south-carolina/fort-mill/` | 0 | — | — |
 | `/locations/south-carolina/myrtle-beach/galivants-ferry/` | 0 | — | — |
-| `/locations/georgia/savannah/garden-city/` | 0 | — | — |
 | `/locations/south-carolina/myrtle-beach/garden-city-beach/` | 0 | — | — |
-| `/locations/south-carolina/columbia/gaston/` | 0 | — | — |
 | `/locations/south-carolina/myrtle-beach/green-sea/` | 0 | — | — |
-| `/locations/south-carolina/greer/` | 0 | — | — |
-| `/locations/georgia/savannah/guyton/` | 0 | — | — |
-| `/locations/south-carolina/north-charleston/hanahan/` | 0 | — | — |
-| `/locations/south-carolina/hilton-head/` | 0 | — | — |
-| `/locations/south-carolina/charleston/hollywood/` | 0 | — | — |
-| `/locations/south-carolina/columbia/hopkins/` | 0 | — | — |
-| `/locations/south-carolina/columbia/irmo/` | 0 | — | — |
-| `/locations/georgia/savannah/isle-of-hope/` | 0 | — | — |
-| `/locations/south-carolina/charleston/johns-island/` | 0 | — | — |
-| `/locations/south-carolina/charleston/kiawah-island/` | 0 | — | — |
-| `/locations/south-carolina/columbia/lexington/` | 0 | — | — |
 | `/locations/south-carolina/myrtle-beach/litchfield-beach/` | 0 | — | — |
 | `/locations/south-carolina/myrtle-beach/longs/` | 0 | — | — |
 | `/locations/south-carolina/myrtle-beach/loris/` | 0 | — | — |
-| `/locations/georgia/darien/ludowici/` | 0 | — | — |
-| `/locations/south-carolina/charleston/mcclellanville/` | 0 | — | — |
-| `/locations/south-carolina/charleston/meggett/` | 0 | — | — |
-| `/locations/south-carolina/north-charleston/moncks-corner/` | 0 | — | — |
 | `/locations/south-carolina/myrtle-beach/north-myrtle-beach/` | 0 | — | — |
-| `/locations/south-carolina/columbia/oak-grove/` | 0 | — | — |
-| `/locations/georgia/darien/odum/` | 0 | — | — |
-| `/locations/south-carolina/orangeburg/` | 0 | — | — |
 | `/locations/south-carolina/myrtle-beach/pawleys-island/` | 0 | — | — |
-| `/locations/south-carolina/columbia/pelion/` | 0 | — | — |
-| `/locations/south-carolina/columbia/pine-ridge/` | 0 | — | — |
-| `/locations/south-carolina/charleston/ravenel/` | 0 | — | — |
 | `/locations/south-carolina/myrtle-beach/red-hill/` | 0 | — | — |
-| `/locations/georgia/savannah/richmond-hill/` | 0 | — | — |
-| `/locations/georgia/savannah/rincon/` | 0 | — | — |
-| `/locations/south-carolina/rock-hill/` | 0 | — | — |
-| `/locations/georgia/darien/screven/` | 0 | — | — |
-| `/locations/south-carolina/charleston/seabrook-island/` | 0 | — | — |
-| `/locations/south-carolina/columbia/seven-oaks/` | 0 | — | — |
-| `/locations/south-carolina/simpsonville/` | 0 | — | — |
 | `/locations/south-carolina/myrtle-beach/socastee/` | 0 | — | — |
-| `/locations/south-carolina/columbia/south-congaree/` | 0 | — | — |
-| `/locations/south-carolina/spartanburg/` | 0 | — | — |
-| `/locations/south-carolina/columbia/springdale/` | 0 | — | — |
-| `/locations/georgia/savannah/springfield/` | 0 | — | — |
-| `/locations/south-carolina/columbia/st-andrews/` | 0 | — | — |
-| `/locations/georgia/darien/st-marys/` | 0 | — | — |
-| `/locations/south-carolina/charleston/sullivans-island/` | 0 | — | — |
-| `/locations/south-carolina/sumter/` | 0 | — | — |
-| `/locations/georgia/savannah/thunderbolt/` | 0 | — | — |
-| `/locations/georgia/darien/townsend/` | 0 | — | — |
-| `/locations/georgia/savannah/tybee-island/` | 0 | — | — |
-| `/locations/south-carolina/charleston/wadmalaw-island/` | 0 | — | — |
 | `/locations/south-carolina/myrtle-beach/wampee/` | 0 | — | — |
-| `/locations/georgia/darien/waverly/` | 0 | — | — |
-| `/locations/georgia/darien/white-oak/` | 0 | — | — |
-| `/locations/georgia/savannah/wilmington-island/` | 0 | — | — |
-| `/locations/south-carolina/columbia/woodfield/` | 0 | — | — |
+| `/locations/south-carolina/north-charleston/hanahan/` | 0 | — | — |
+| `/locations/south-carolina/north-charleston/moncks-corner/` | 0 | — | — |

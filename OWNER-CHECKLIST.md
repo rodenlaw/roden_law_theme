@@ -73,11 +73,13 @@ otherwise ready to ship. From `SEO-PREEMPTION-PLAN-rodenlaw.md` Phase 0 and §7.
       `docs/gsc-evidence-2026-08-24.md` for the full per-URL tables. Two decisions,
       and the evidence points in opposite directions:
 
-      - **117 nested location pages: 74 earned ZERO clicks in 13 months.** The 43
-        that earned anything produced 91 clicks between them — 0.8 per page over
-        more than a year, and only Woodbine (21) and Folkston (6) clear five.
+      - **109 live nested location pages: 66 earned ZERO clicks in 13 months.**
+        The 43 that earned anything produced 91 clicks between them — 0.8 per page
+        over more than a year, and only Woodbine (21) and Folkston (6) clear five.
+        *(The triage lists 117; eight are stale rows for pages batch (b) already
+        removed and which already 301.)*
         `/locations/south-carolina/north-charleston/goose-creek/` is the pattern in
-        one row: 13,248 impressions, 2 clicks. *Recommendation: remove the 74, 301
+        one row: 13,248 impressions, 2 clicks. *Recommendation: remove the 66, 301
         to the parent office-city hub.* **This needs your sign-off — it is a
         deletion batch.**
 
