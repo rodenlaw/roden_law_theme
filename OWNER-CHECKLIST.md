@@ -51,7 +51,13 @@ otherwise ready to ship. From `SEO-PREEMPTION-PLAN-rodenlaw.md` Phase 0 and §7.
 
 - [ ] **Export the GSC baseline** — performance by page and by query, 16 months,
       plus the indexed-page list. This is the before-picture for `RECOVERY-LOG.md`
-      and it is also the evidence the 117 EVALUATE rows are waiting on.
+      and it is also the evidence the EVALUATE rows are waiting on.
+
+      **This one export now unblocks 157 URLs, not 109.** The 48 April-2026
+      corridor `/resources/` pages were reclassified KEEP → EVALUATE on
+      2026-08-24 (see the amendment in plan §2), and they need the same
+      per-URL clicks-and-impressions data as the 109 nested municipalities.
+      It is the single highest-leverage item left on this list.
 
 ## Decisions needed
 

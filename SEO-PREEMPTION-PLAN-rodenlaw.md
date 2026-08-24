@@ -40,6 +40,38 @@ Pattern: Google re-rates this domain at every update, each verdict harsher (top-
 ## 2. Guardrails
 
 - **Never remove or degrade:** homepage; the 6 office-city hub pages and their state parents; statewide/primary practice pages; attorney profiles; case results; the blog comparison cluster; `/es/` counterparts of all of the above; contact/about.
+
+> **Amended 2026-08-24 — the `resource` post type is not a guardrail category.**
+> `url-triage.csv` classified all 78 resources KEEP with the reason "guardrail
+> keep-list: resource page", which protected a type this section never named. The
+> type holds two unrelated bodies of work, and their post IDs separate them with a
+> 116-ID gap and no overlap:
+>
+> | Band | Count | What it is |
+> |---|---:|---|
+> | 4806–5223 | 19 | The statewide legal-reference library — statutes of limitation, comparative negligence, UM/UIM, workers' comp, settlement values. **This is the guardrail content.** |
+> | 4617–4690 | 48 | One April 2026 seeding campaign of road-and-city permutation pages, shipped a month before the May 2026 core that cut positions 1–3 from 145 to 68. |
+>
+> §8 of this plan already names `/resources/two-notch-road-truck-accidents-columbia/`
+> as a micro-permutation example — a page the triage was simultaneously protecting.
+>
+> The 48 are reclassified **EVALUATE**, not REMOVE, and the distinction is
+> load-bearing. Their bodies are **not** templated: measured pairwise on live
+> `entry-content`, self-similarity runs 1.2–1.8× the library's baseline and converges
+> toward parity at longer n-grams. These are 700–1,955 words of substantively distinct
+> prose, nothing like the 250-word place-name swaps of batches (a) and (d), and they
+> must not be removed on a templating argument that the evidence does not support.
+>
+> What is doorway-shaped is the generative pattern and the resulting query overlap —
+> 5 slugs target I-26, 5 target construction zones, 6 target ports — and the fact that
+> the site's own `roden_related_resources()` surfaces none of them, even on
+> `/truck-accident-lawyers/charleston-sc/`, whose most obvious companions
+> (`i-526-truck-accidents-charleston`, `port-of-charleston-truck-routes`) sit in this
+> band.
+>
+> Disposition needs per-URL GSC clicks and impressions — the same export the
+> EVALUATE location rows wait on. Pages earning real impressions become chapters of
+> the Steinberg plan's Corridor Report; the rest 301 into it.
 - **Every removed URL gets a single-hop, server-side 301.** No 404s, no chains, no client-side redirects.
 - **Batched deploys with owner approval** per batch (see Phase 1 ordering). Never mass-delete in one push.
 - **No new location, neighborhood, road, or permutation pages** for the duration of this project, no exceptions.
