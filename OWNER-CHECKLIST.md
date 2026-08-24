@@ -53,11 +53,10 @@ otherwise ready to ship. From `SEO-PREEMPTION-PLAN-rodenlaw.md` Phase 0 and §7.
       plus the indexed-page list. This is the before-picture for `RECOVERY-LOG.md`
       and it is also the evidence the EVALUATE rows are waiting on.
 
-      **This one export now unblocks 157 URLs, not 109.** The 48 April-2026
-      corridor `/resources/` pages were reclassified KEEP → EVALUATE on
-      2026-08-24 (see the amendment in plan §2), and they need the same
-      per-URL clicks-and-impressions data as the 109 nested municipalities.
-      It is the single highest-leverage item left on this list.
+      **Delivered 2026-08-24** — `docs/gsc-2026-08-24/`. Analysis in
+      `docs/gsc-evidence-2026-08-24.md`. Two caveats worth knowing: the window
+      is 13 months, not 16, and `Pages.csv` caps at 1,000 rows with a 1-click
+      minimum, so zero-click pages are absent and their impressions unknown.
 
 ## Decisions needed
 
@@ -70,16 +69,24 @@ otherwise ready to ship. From `SEO-PREEMPTION-PLAN-rodenlaw.md` Phase 0 and §7.
       the exact page type the plan's guardrail now forbids creating. Confirm they
       go, or say what service history justifies keeping them.
 
-- [ ] **The 117 EVALUATE rows** — this is what the end-state number now hinges on,
-      and it splits cleanly in two:
-      - **8 city-tier towns** (the ones published 2026-08-20, above). No ranking
-        history, no office, forbidden page type. *Recommendation: remove.* You can
-        decide these today — they need no data.
-      - **109 municipalities nested under an office city** (Mount Pleasant,
-        Summerville, Goose Creek, Brunswick, Conway, Lexington…). Plan rule 4 keeps
-        only those with real rankings, traffic or genuine service history. That
-        needs the GSC baseline export — it is the one decision genuinely blocked on
-        data, and it is why the export is on this list.
+- [ ] **The EVALUATE rows — now answerable.** The data landed; see
+      `docs/gsc-evidence-2026-08-24.md` for the full per-URL tables. Two decisions,
+      and the evidence points in opposite directions:
+
+      - **117 nested location pages: 74 earned ZERO clicks in 13 months.** The 43
+        that earned anything produced 91 clicks between them — 0.8 per page over
+        more than a year, and only Woodbine (21) and Folkston (6) clear five.
+        `/locations/south-carolina/north-charleston/goose-creek/` is the pattern in
+        one row: 13,248 impressions, 2 clicks. *Recommendation: remove the 74, 301
+        to the parent office-city hub.* **This needs your sign-off — it is a
+        deletion batch.**
+
+      - **48 corridor `/resources/` pages: keep most of them.** This one came back
+        against expectation. 37 of 48 earn clicks at page-one positions, 311 total
+        — more than the whole legal library earns on 19 pages. Folding them all into
+        the Corridor Report, as the Steinberg plan assumes, would throw away working
+        long-tail. *Recommendation: fold only the 11 zero-click pages into Study #1;
+        keep the rest.*
 
 - [ ] **Brand name** — the site says "Roden Law"; registrations and citations say
       "Roden + Love, LLC". One name everywhere. Domain migration stays frozen

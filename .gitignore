@@ -34,3 +34,6 @@ next/scripts/roden-export.json
 # Content-meta export is committed on purpose (content/meta.json); scratch
 # copies from ad-hoc runs are not.
 content/meta.*.json
+
+# GSC exports are evidence, not build input — keep the data, ignore the unzip folder
+/https___rodenlaw.com_-Performance-on-Search-*/
