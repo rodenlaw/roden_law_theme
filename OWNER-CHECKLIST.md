@@ -80,15 +80,16 @@ otherwise ready to ship. From `SEO-PREEMPTION-PLAN-rodenlaw.md` Phase 0 and §7.
         removed and which already 301.)*
         `/locations/south-carolina/north-charleston/goose-creek/` is the pattern in
         one row: 13,248 impressions, 2 clicks. *Recommendation: remove the 66, 301
-        to the parent office-city hub.* **This needs your sign-off — it is a
-        deletion batch.**
+        to the parent office-city hub.* **DEFERRED 2026-08-24** pending Search
+        Console API access — the UI export cannot give impressions for zero-click
+        pages, and that is the number worth having before deleting one.
 
       - **48 corridor `/resources/` pages: keep most of them.** This one came back
         against expectation. 37 of 48 earn clicks at page-one positions, 311 total
         — more than the whole legal library earns on 19 pages. Folding them all into
         the Corridor Report, as the Steinberg plan assumes, would throw away working
         long-tail. *Recommendation: fold only the 11 zero-click pages into Study #1;
-        keep the rest.*
+        keep the rest.* **APPROVED 2026-08-24** — shipped as the corridor-fold PR.
 
 - [ ] **Brand name** — the site says "Roden Law"; registrations and citations say
       "Roden + Love, LLC". One name everywhere. Domain migration stays frozen
