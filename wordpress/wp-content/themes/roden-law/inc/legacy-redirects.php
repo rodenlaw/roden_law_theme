@@ -1219,6 +1219,27 @@ function roden_phase1_removed_urls() {
         '/workers-compensation-lawyers/rock-hill-sc/'   => '/practice-areas/workers-compensation-lawyers/',
         '/workers-compensation-lawyers/spartanburg-sc/' => '/practice-areas/workers-compensation-lawyers/',
         '/workers-compensation-lawyers/summerville-sc/' => '/practice-areas/workers-compensation-lawyers/',
+
+        // Batch (c) — practice micro-permutations, plan rule 5: single-road and
+        // single-employer pages that exist to catch a query, not to answer one.
+        // Targets are the parent pillar for now. Several of these carry real
+        // substance (gulfstream 2,003 words, savannah-port 1,489, i-26 1,072)
+        // and the Steinberg plan reuses that material in the I-26/I-95 Corridor
+        // Report and the Port Worker Injury Report. When those studies publish,
+        // repoint the target here — this map is a flat path lookup consulted
+        // once at template_redirect, so changing a destination stays single-hop
+        // and needs no second migration.
+        '/car-accident-lawyers/ashley-phosphate-road-accident/'    => '/practice-areas/car-accident-lawyers/',
+        '/car-accident-lawyers/dorchester-road-accident/'          => '/practice-areas/car-accident-lawyers/',
+        '/car-accident-lawyers/i-26-accident/'                     => '/practice-areas/car-accident-lawyers/',
+        '/car-accident-lawyers/i-526-accident/'                    => '/practice-areas/car-accident-lawyers/',
+        '/car-accident-lawyers/rivers-avenue-accident/'            => '/practice-areas/car-accident-lawyers/',
+        '/motorcycle-accident-lawyers/dorchester-road-motorcycle/' => '/practice-areas/motorcycle-accident-lawyers/',
+        '/pedestrian-accident-lawyers/rivers-avenue-pedestrian/'   => '/practice-areas/pedestrian-accident-lawyers/',
+        '/truck-accident-lawyers/i-26-truck-accident/'             => '/practice-areas/truck-accident-lawyers/',
+        '/workers-compensation-lawyers/boeing-aerospace-injury/'     => '/practice-areas/workers-compensation-lawyers/',
+        '/workers-compensation-lawyers/gulfstream-aerospace-injury/' => '/practice-areas/workers-compensation-lawyers/',
+        '/workers-compensation-lawyers/savannah-port-worker-injury/' => '/practice-areas/workers-compensation-lawyers/',
     );
 }
 
