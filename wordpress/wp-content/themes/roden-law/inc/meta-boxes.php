@@ -325,7 +325,7 @@ function roden_pa_author_meta_box( $post ) {
         <input type="date" id="roden_last_reviewed" name="_roden_last_reviewed"
                value="<?php echo esc_attr( $reviewed ); ?>" style="width:100%;">
     </p>
-    <p class="description"><?php esc_html_e( 'Date an attorney last verified this page is accurate. Publishes as lastReviewed + reviewedBy. Leave blank if no review has happened — do not guess, an unverified review claim is worse than none. Set this after any legal change, since template edits do not update the post\'s modified date.', 'roden-law' ); ?></p>
+    <p class="description"><?php esc_html_e( 'Date an attorney last verified this page is accurate. Publishes as lastReviewed + reviewedBy on practice-area, resource and blog pages — location pages record the date but deliberately publish no review claim. Leave blank if no review has happened — do not guess, an unverified review claim is worse than none. Set this after any legal change, since template edits do not update the post\'s modified date.', 'roden-law' ); ?></p>
     <?php
     // Separate field, separate claim. Content gets corrected far more often
     // than it gets attorney review, and conflating the two either manufactures

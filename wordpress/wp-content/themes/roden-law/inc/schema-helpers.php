@@ -1905,10 +1905,25 @@ function roden_schema_article( $firm ) {
         'datePublished' => get_the_date( 'c', $post_id ),
         'dateModified'  => get_the_modified_date( 'c', $post_id ),
         'wordCount'     => str_word_count( wp_strip_all_tags( $content ) ),
-        'mainEntityOfPage' => array(
+        // Review fields belong HERE, not on the BlogPosting above: schema.org
+        // scopes `lastReviewed` to WebPage, and this is the only WebPage node a
+        // resource or blog post emits. Attaching them to the Article node would
+        // be off-domain.
+        //
+        // Until 2026-08-25 they were emitted nowhere for these post types.
+        // roden_schema_review_fields() was called only by the practice-area
+        // WebPage, so 18 published resource pages carried an attorney-review
+        // date that never reached the markup — including the Corridor Report and
+        // the two-state guides — while inc/meta-boxes.php told editors the field
+        // "Publishes as lastReviewed + reviewedBy". It did not.
+        //
+        // Location pages still omit these deliberately (see the note in
+        // roden_schema_speakable_location); they do not route through this
+        // function, so that decision is unaffected.
+        'mainEntityOfPage' => array_merge( array(
             '@type' => 'WebPage',
             '@id'   => get_permalink( $post_id ),
-        ),
+        ), roden_schema_review_fields( $post_id, $firm ) ),
         'publisher' => array(
             '@type' => 'Organization',
             '@id'   => $firm['url'] . '/#organization',
