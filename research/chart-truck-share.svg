@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 258" role="img" aria-labelledby="ccTitle ccDesc" style="max-width:100%;height:auto;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif">
+<title id="ccTitle">Share of fatal crashes involving a large truck, by corridor segment</title>
+<desc id="ccDesc">GA I-95 45.1 percent of 71 fatal crashes; SC I-95 35.8 percent of 106 fatal crashes; SC I-26 26.7 percent of 146 fatal crashes. Source: NHTSA FARS 2020 to 2024.</desc>
+<text x="0" y="22" font-size="15" font-weight="700" fill="var(--roden-text,#111)">Fatal crashes involving a large truck, 2020&#8211;2024</text>
+<text x="0" y="41" font-size="12.5" fill="var(--roden-muted,#555)">Share of all fatal crashes on each corridor segment</text>
+<text x="120" y="78" text-anchor="end" font-size="13.5" fill="var(--roden-text,#111)">GA I-95</text>
+<rect x="132" y="56" width="498.0" height="34" fill="var(--roden-accent,#0b5c8a)" rx="3"/>
+<text x="640.0" y="78" font-size="13.5" font-weight="600" fill="var(--roden-text,#111)">45.1%</text>
+<text x="692.0" y="78" font-size="12" fill="var(--roden-muted,#666)">32 of 71</text>
+<text x="120" y="130" text-anchor="end" font-size="13.5" fill="var(--roden-text,#111)">SC I-95</text>
+<rect x="132" y="108" width="395.3" height="34" fill="var(--roden-bar,#7aa8bf)" rx="3"/>
+<text x="537.3" y="130" font-size="13.5" font-weight="600" fill="var(--roden-text,#111)">35.8%</text>
+<text x="589.3" y="130" font-size="12" fill="var(--roden-muted,#666)">38 of 106</text>
+<text x="120" y="182" text-anchor="end" font-size="13.5" fill="var(--roden-text,#111)">SC I-26</text>
+<rect x="132" y="160" width="294.8" height="34" fill="var(--roden-bar,#7aa8bf)" rx="3"/>
+<text x="436.8" y="182" font-size="13.5" font-weight="600" fill="var(--roden-text,#111)">26.7%</text>
+<text x="488.8" y="182" font-size="12" fill="var(--roden-muted,#666)">39 of 146</text>
+<text x="0" y="246" font-size="11.5" fill="var(--roden-muted,#666)">Source: NHTSA Fatality Analysis Reporting System, 2020&#8211;2024 annual files. Fatal crashes only.</text>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" role="img" aria-labelledby="yrTitle yrDesc" style="max-width:100%;height:auto;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif">
+<title id="yrTitle">Fatal crashes per year on I-26 and I-95 in Georgia and South Carolina</title>
+<desc id="yrDesc">2020: 67 fatal crashes, 25 involving a large truck; 2021: 84 fatal crashes, 29 involving a large truck; 2022: 64 fatal crashes, 25 involving a large truck; 2023: 62 fatal crashes, 14 involving a large truck; 2024: 46 fatal crashes, 16 involving a large truck.</desc>
+<text x="0" y="22" font-size="15" font-weight="700" fill="var(--roden-text,#111)">Fatal crashes per year, I-26 and I-95 (GA + SC)</text>
+<text x="0" y="41" font-size="12.5" fill="var(--roden-muted,#555)">Darker segment: at least one large truck involved</text>
+<rect x="67.6" y="92.9" width="84.0" height="161.1" fill="var(--roden-bar,#c3d7e2)" rx="2"/>
+<rect x="67.6" y="193.9" width="84.0" height="60.1" fill="var(--roden-accent,#0b5c8a)" rx="2"/>
+<text x="109.6" y="84.9" text-anchor="middle" font-size="12.5" font-weight="600" fill="var(--roden-text,#111)">67</text>
+<text x="109.6" y="272.0" text-anchor="middle" font-size="12.5" fill="var(--roden-muted,#555)">2020</text>
+<rect x="198.8" y="52.0" width="84.0" height="202.0" fill="var(--roden-bar,#c3d7e2)" rx="2"/>
+<rect x="198.8" y="184.3" width="84.0" height="69.7" fill="var(--roden-accent,#0b5c8a)" rx="2"/>
+<text x="240.8" y="44.0" text-anchor="middle" font-size="12.5" font-weight="600" fill="var(--roden-text,#111)">84</text>
+<text x="240.8" y="272.0" text-anchor="middle" font-size="12.5" fill="var(--roden-muted,#555)">2021</text>
+<rect x="330.0" y="100.1" width="84.0" height="153.9" fill="var(--roden-bar,#c3d7e2)" rx="2"/>
+<rect x="330.0" y="193.9" width="84.0" height="60.1" fill="var(--roden-accent,#0b5c8a)" rx="2"/>
+<text x="372.0" y="92.1" text-anchor="middle" font-size="12.5" font-weight="600" fill="var(--roden-text,#111)">64</text>
+<text x="372.0" y="272.0" text-anchor="middle" font-size="12.5" fill="var(--roden-muted,#555)">2022</text>
+<rect x="461.2" y="104.9" width="84.0" height="149.1" fill="var(--roden-bar,#c3d7e2)" rx="2"/>
+<rect x="461.2" y="220.3" width="84.0" height="33.7" fill="var(--roden-accent,#0b5c8a)" rx="2"/>
+<text x="503.2" y="96.9" text-anchor="middle" font-size="12.5" font-weight="600" fill="var(--roden-text,#111)">62</text>
+<text x="503.2" y="272.0" text-anchor="middle" font-size="12.5" fill="var(--roden-muted,#555)">2023</text>
+<rect x="592.4" y="143.4" width="84.0" height="110.6" fill="var(--roden-bar,#c3d7e2)" rx="2"/>
+<rect x="592.4" y="215.5" width="84.0" height="38.5" fill="var(--roden-accent,#0b5c8a)" rx="2"/>
+<text x="634.4" y="135.4" text-anchor="middle" font-size="12.5" font-weight="600" fill="var(--roden-text,#111)">46</text>
+<text x="634.4" y="272.0" text-anchor="middle" font-size="12.5" fill="var(--roden-muted,#555)">2024</text>
+<text x="0" y="290" font-size="11.5" fill="var(--roden-muted,#666)">Source: NHTSA Fatality Analysis Reporting System. Fatal crashes only; 2024 file may be revised.</text>
+</svg>
