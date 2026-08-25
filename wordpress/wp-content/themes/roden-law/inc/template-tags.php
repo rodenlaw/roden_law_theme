@@ -2920,6 +2920,93 @@ function roden_expert_quote_block( $quote, $attorney_id = 0 ) {
    ========================================================================== */
 
 /**
+ * Render the "Related Pages" block from a post's _roden_see_also meta.
+ *
+ * Extracted because the markup existed twice, byte-identical, in
+ * single-resource.php and templates/template-subtype.php — a fifth instance of
+ * the duplicated-render problem CLAUDE.md says "has bitten twice". Both now
+ * call this.
+ *
+ * It also normalizes the stored path, which is the reason it exists at all.
+ * _roden_see_also holds hardcoded strings written by the April 2026 seeders in
+ * the NESTED form `/practice-areas/{pillar}/{child}/`. That is the duplicate
+ * path: roden_get_canonical_url() gives every child practice_area the FLAT
+ * canonical `/{pillar}/{child}/`, and roden_redirect_duplicate_pa_path() 301s
+ * the nested form to it. So every one of these links was a hop.
+ *
+ * Measured on the live site before this landed: 85 links across 40 resource
+ * pages resolving through a 301, against 8 distinct nested targets. The plan's
+ * acceptance criteria require "zero internal links resolving through 301s"
+ * (SEO-PREEMPTION-PLAN-rodenlaw.md §4), so this was that criterion failing.
+ *
+ * The fix is at render time, not in the database, for three reasons: the meta
+ * is not in content/meta.json's export whitelist so a DB rewrite leaves no
+ * review trail; update_post_meta() on 40 legal pages is churn on content whose
+ * disposition is still open; and a template fix cannot be undone by a future
+ * seeder writing the nested form again.
+ *
+ * The transformation is the exact inverse of roden_get_canonical_url(): a
+ * three-segment path under /practice-areas/ is always a child, because pillars
+ * are two segments and keep theirs. Anything else is passed through untouched.
+ *
+ * @param int    $post_id Post to read _roden_see_also from.
+ * @param string $heading Section heading. Default 'Related Pages'.
+ */
+function roden_see_also_links( $post_id, $heading = '' ) {
+    $see_also = get_post_meta( $post_id, '_roden_see_also', true );
+    if ( empty( $see_also ) || ! is_array( $see_also ) ) {
+        return;
+    }
+
+    if ( '' === $heading ) {
+        $heading = __( 'Related Pages', 'roden-law' );
+    }
+    ?>
+    <div class="content-section see-also-section">
+        <h2><?php echo esc_html( $heading ); ?></h2>
+        <div class="pa-resources__grid">
+            <?php foreach ( $see_also as $link ) : ?>
+                <?php if ( empty( $link['url'] ) ) { continue; } ?>
+                <a href="<?php echo esc_url( home_url( roden_canonicalize_pa_path( $link['url'] ) ) ); ?>" class="resource-link">
+                    <span class="resource-link__title"><?php echo esc_html( isset( $link['text'] ) ? $link['text'] : '' ); ?></span>
+                    <span class="resource-link__arrow">&rarr;</span>
+                </a>
+            <?php endforeach; ?>
+        </div>
+    </div>
+    <?php
+}
+
+/**
+ * Collapse a nested practice-area path to its flat canonical.
+ *
+ * `/practice-areas/{pillar}/{child}/` => `/{pillar}/{child}/`, matching
+ * roden_get_canonical_url() for child practice_area posts. Two-segment pillar
+ * paths and every other path are returned unchanged.
+ *
+ * Kept separate from the renderer so it is testable and so any other consumer
+ * of a stored practice-area path can reuse it rather than re-deriving the rule.
+ *
+ * @param string $path Stored path, with or without a leading/trailing slash.
+ * @return string Canonical path, always leading- and trailing-slashed.
+ */
+function roden_canonicalize_pa_path( $path ) {
+    $path = (string) $path;
+
+    // Only touch site-relative paths; leave absolute URLs and anchors alone.
+    if ( '' === $path || '/' !== $path[0] ) {
+        return $path;
+    }
+
+    $segments = array_values( array_filter( explode( '/', $path ), 'strlen' ) );
+    if ( 3 !== count( $segments ) || 'practice-areas' !== $segments[0] ) {
+        return $path;
+    }
+
+    return '/' . $segments[1] . '/' . $segments[2] . '/';
+}
+
+/**
  * Render a list of related resource posts.
  *
  * Queries resources by practice_category taxonomy and/or geographic relevance

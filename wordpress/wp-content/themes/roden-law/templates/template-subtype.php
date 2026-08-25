@@ -316,22 +316,10 @@
                 <?php roden_case_results_grid( [ 'count' => 3, 'columns' => 3 ] ); ?>
             </div>
 
-            <!-- See Also links (internal link injection via _roden_see_also meta) -->
-            <?php
-            $see_also = get_post_meta( $post_id, '_roden_see_also', true );
-            if ( ! empty( $see_also ) && is_array( $see_also ) ) : ?>
-                <div class="content-section see-also-section">
-                    <h2><?php esc_html_e( 'Related Pages', 'roden-law' ); ?></h2>
-                    <div class="pa-resources__grid">
-                        <?php foreach ( $see_also as $link ) : ?>
-                            <a href="<?php echo esc_url( home_url( $link['url'] ) ); ?>" class="resource-link">
-                                <span class="resource-link__title"><?php echo esc_html( $link['text'] ); ?></span>
-                                <span class="resource-link__arrow">&rarr;</span>
-                            </a>
-                        <?php endforeach; ?>
-                    </div>
-                </div>
-            <?php endif; ?>
+            <!-- "Related Pages" from _roden_see_also. Shared renderer: it
+                 normalizes the stored nested practice-area paths to their flat
+                 canonical. See roden_see_also_links() in inc/template-tags.php. -->
+            <?php roden_see_also_links( $post_id ); ?>
 
             <!-- Related Guides & Resources -->
             <?php
