@@ -80,9 +80,11 @@ otherwise ready to ship. From `SEO-PREEMPTION-PLAN-rodenlaw.md` Phase 0 and §7.
         removed and which already 301.)*
         `/locations/south-carolina/north-charleston/goose-creek/` is the pattern in
         one row: 13,248 impressions, 2 clicks. *Recommendation: remove the 66, 301
-        to the parent office-city hub.* **DEFERRED 2026-08-24** pending Search
-        Console API access — the UI export cannot give impressions for zero-click
-        pages, and that is the number worth having before deleting one.
+        to the parent office-city hub.* **The API data landed 2026-08-25 and
+        settles it:** those 66 pages took **21,548 impressions and earned 1
+        click** — CTR 0.005% against the site's own 0.48% at the same positions.
+        They are not invisible; they are shown constantly and refused. **Awaiting
+        your go-ahead to build the batch.**
 
       - **48 corridor `/resources/` pages: keep most of them.** This one came back
         against expectation. 37 of 48 earn clicks at page-one positions, 311 total
