@@ -670,6 +670,44 @@ is the shared-template drift pattern in a different costume.
 exists to explain, so the guide describes the rule **without asserting the
 threshold** pending resolution against the statute.
 
+### SB 68 propagation audit — 2026-08-25
+
+Written because one statutory change was found unpropagated for sixteen months,
+by accident. This checks the other seven. **One real failure, already fixed;
+everything else clean.** Full method and per-section table in
+`docs/sb68-propagation-audit-2026-08-25.md`.
+
+**Five of SB 68's eight sections appear on zero pages** — anchoring, pleading
+timing, dismissal, attorney's fees, bifurcation, negligent security. All
+procedural. The site is client-facing, never stated those rules, and cannot have
+got them wrong.
+
+**The one substantive change that reaches a client's case — whether a jury hears
+about their seat belt — is exactly the one that failed to propagate.** Worth
+naming: the sections most likely to appear on the site are the sections most
+likely to go stale, so a "which sections do we even mention" pass is the cheap
+first move on any future amendment.
+
+**§ 51-12-33 — 283 pages, all clean.** SB 68 did not amend the 50% bar, and the
+source brief records that claiming it did is the commonest error in circulation.
+No page makes it. The one flag was a false positive: the SOL page correctly says
+*"SB 68 altered no deadline"*, caught by a regex hunting the assertion rather
+than its negation.
+
+**§ 51-12-5.1 — verified, and the site is right.** The brief left punitive damages
+unverified while 54 pages cite the section, so it was checked against the
+statutory text: (g) caps tort punitive damages at $250,000; (f) removes the limit
+for specific intent or impairment **against an active tort-feasor**; (e) removes
+it for product liability. SB 68 amended none of them. Of 61 sentences, 59 state it
+accurately. Two omit the active-tort-feasor limit, but both concern the impaired
+driver — who is the active tort-feasor — so both are correct as written. Flagged
+as imprecise where a second defendant exists, not changed.
+
+**What is still missing:** nothing on this site systematically tracks whether a
+statutory change has reached the pages stating the old rule. The cheapest standing
+version is to sweep every page citing an amended section, not just the page about
+it. That is precisely how the seat-belt reversal survived sixteen months.
+
 ### Batch (f) — the duplicated case-result URLs
 
 156 case results are published twice: as `case_result` at `/case-results/{slug}/`
