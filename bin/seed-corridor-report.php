@@ -82,6 +82,19 @@ if ( ! $apply ) {
     exit( 0 );
 }
 
+/*
+ * Resolve the post author. Institutional rather than a person, matching the
+ * analyst credit: the analysis is machine-generated from published federal data.
+ */
+$author_login = ! empty( $p['author_user'] ) ? $p['author_user'] : 'Roden Law';
+$author_user  = get_user_by( 'login', $author_login );
+if ( ! $author_user ) {
+    fprintf( $err, "ABORT: WordPress user '%s' not found — refusing to seed with author 0.\n", $author_login );
+    exit( 1 );
+}
+$author_id = (int) $author_user->ID;
+fprintf( $err, "  post author: %d %s\n", $author_id, $author_user->display_name );
+
 $postarr = array(
     'post_type'    => 'resource',
     'post_name'    => $p['slug'],
@@ -94,6 +107,16 @@ $postarr = array(
      * public. Publishing is a deliberate second act, not a side effect of seeding.
      */
     'post_status'  => $existing ? $existing[0]->post_status : 'draft',
+    /*
+     * Set the author explicitly. wp_insert_post() run through WP-CLI has no
+     * current user, so an omitted post_author becomes 0 — and on an UPDATE it
+     * silently resets an author that was already correct. Found by re-running
+     * this seeder and watching a deliberate author revert to 0.
+     *
+     * Resolved by login rather than a hardcoded ID so this survives a database
+     * that numbers its users differently.
+     */
+    'post_author'  => $author_id,
 );
 if ( $existing ) {
     $postarr['ID'] = $existing[0]->ID;
@@ -109,8 +132,40 @@ update_post_meta( $id, '_roden_author_attorney', $atty->ID );
 update_post_meta( $id, '_roden_last_refreshed', current_time( 'Y-m-d' ) );
 update_post_meta( $id, '_roden_jurisdiction', 'both' );
 
-/* Attach the dataset. Media library, not the theme directory: deploys force-push
-   over the theme and would delete it. */
+/*
+ * Attach the dataset. Media library, not the theme directory: deploys force-push
+ * over the theme and would delete it.
+ *
+ * Idempotent by necessity. The first version called wp_upload_bits()
+ * unconditionally, so re-running the seeder produced a second attachment at
+ * "…-1.csv" and repointed the meta at it — leaving the original orphaned and the
+ * published download URL silently changed. A seeder that cannot be run twice is
+ * a seeder that will be run twice.
+ */
+$existing_att = get_posts( array(
+    'post_type'      => 'attachment',
+    'post_parent'    => $id,
+    'post_status'    => 'any',
+    'posts_per_page' => -1,
+) );
+$reused = false;
+foreach ( $existing_att as $att_post ) {
+    $file = get_attached_file( $att_post->ID );
+    if ( $file && basename( $file ) === $p['csv_name'] ) {
+        // Overwrite in place so the published URL never changes between editions.
+        file_put_contents( $file, $p['csv_body'] );
+        update_post_meta( $id, '_roden_dataset_url', wp_get_attachment_url( $att_post->ID ) );
+        fprintf( $err, "  dataset updated in place: %s\n", wp_get_attachment_url( $att_post->ID ) );
+        $reused = true;
+        break;
+    }
+}
+if ( $reused ) {
+    fprintf( $err, "\nSeeded as %s. Review, then publish.\n", get_post_status( $id ) );
+    fprintf( $err, "Do NOT set _roden_last_reviewed until an attorney has actually read it.\n" );
+    exit( 0 );
+}
+
 $upload = wp_upload_bits( $p['csv_name'], null, $p['csv_body'] );
 if ( ! empty( $upload['error'] ) ) {
     fprintf( $err, "  WARNING: dataset upload failed: %s\n", $upload['error'] );
