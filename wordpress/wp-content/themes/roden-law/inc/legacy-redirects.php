@@ -1266,6 +1266,34 @@ function roden_phase1_removal_redirects() {
     $path = trailingslashit( $path );
 
     $map = roden_phase1_removed_urls();
+
+    /*
+     * Look up the nested practice-area form too.
+     *
+     * The map is keyed on the FLAT canonical (/car-accident-lawyers/i-26-accident/),
+     * because that is the URL Google indexes. But every child practice_area also has
+     * a nested address (/practice-areas/car-accident-lawyers/i-26-accident/), which
+     * roden_redirect_duplicate_pa_path() 301s to the flat form — and that handler
+     * resolves through get_post(), so it stops working the moment the post is
+     * trashed. The nested URL then 404s, which plan §2 forbids outright.
+     *
+     * This is not hypothetical. Batch (d) shipped on 2026-08-21 and
+     * /practice-areas/car-accident-lawyers/summerville-sc/ and its siblings have
+     * been returning 404 ever since, while the flat form correctly 301s. Found by
+     * a DB sweep for batch (c), which was about to repeat it on 11 more URLs.
+     *
+     * Canonicalising before the lookup fixes the shipped batches, prevents the
+     * repeat, and covers any future practice-area removal without needing a second
+     * set of keys. roden_canonicalize_pa_path() is the same helper the see-also
+     * renderer uses, so there is one definition of the flat/nested relationship.
+     */
+    if ( ! isset( $map[ $path ] ) && function_exists( 'roden_canonicalize_pa_path' ) ) {
+        $flat = roden_canonicalize_pa_path( $path );
+        if ( $flat !== $path && isset( $map[ $flat ] ) ) {
+            $path = $flat;
+        }
+    }
+
     if ( ! isset( $map[ $path ] ) ) {
         return;
     }
