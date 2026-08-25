@@ -30,6 +30,7 @@ require_once get_template_directory() . '/inc/llms-txt.php';
 require_once get_template_directory() . '/inc/seo-meta.php';
 require_once get_template_directory() . '/inc/ai-seo.php';
 require_once get_template_directory() . '/inc/intake-webhook.php';
+require_once get_template_directory() . '/inc/content-guardrails.php';
 
 // Belt-and-suspenders: verify template-tags loaded (require retries if require_once cached a failure)
 if ( ! function_exists( 'roden_breadcrumb_html' ) ) {
