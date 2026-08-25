@@ -1,0 +1,166 @@
+{
+ "Charleston (Post & Courier, WCSC)": {
+  "crashes": 74,
+  "deaths": 83,
+  "truck": 17,
+  "truck_deaths": 22,
+  "share": 23,
+  "rural": 14,
+  "counties": [
+   [
+    "Charleston",
+    23,
+    3,
+    13
+   ],
+   [
+    "Colleton",
+    22,
+    5,
+    23
+   ],
+   [
+    "Berkeley",
+    16,
+    3,
+    19
+   ],
+   [
+    "Dorchester",
+    13,
+    6,
+    46
+   ]
+  ]
+ },
+ "Savannah (Savannah Morning News, WTOC)": {
+  "crashes": 71,
+  "deaths": 83,
+  "truck": 32,
+  "truck_deaths": 36,
+  "share": 45,
+  "rural": 15,
+  "counties": [
+   [
+    "Chatham",
+    21,
+    9,
+    43
+   ],
+   [
+    "Camden",
+    12,
+    6,
+    50
+   ],
+   [
+    "Glynn",
+    12,
+    3,
+    25
+   ],
+   [
+    "Mcintosh",
+    10,
+    6,
+    60
+   ],
+   [
+    "Liberty",
+    10,
+    5,
+    50
+   ]
+  ]
+ },
+ "Columbia / Midlands (WIS, The State)": {
+  "crashes": 102,
+  "deaths": 120,
+  "truck": 28,
+  "truck_deaths": 36,
+  "share": 27,
+  "rural": 24,
+  "counties": [
+   [
+    "Orangeburg",
+    37,
+    9,
+    24
+   ],
+   [
+    "Lexington",
+    19,
+    6,
+    32
+   ],
+   [
+    "Clarendon",
+    14,
+    4,
+    29
+   ],
+   [
+    "Richland",
+    12,
+    3,
+    25
+   ],
+   [
+    "Newberry",
+    11,
+    5,
+    45
+   ]
+  ]
+ },
+ "Pee Dee / Florence (WBTW, SCNow)": {
+  "crashes": 27,
+  "deaths": 31,
+  "truck": 16,
+  "truck_deaths": 19,
+  "share": 59,
+  "rural": 9,
+  "counties": [
+   [
+    "Dillon",
+    14,
+    8,
+    57
+   ],
+   [
+    "Florence",
+    12,
+    7,
+    58
+   ],
+   [
+    "Darlington",
+    1,
+    1,
+    100
+   ]
+  ]
+ },
+ "Upstate (WSPA, Spartanburg)": {
+  "crashes": 30,
+  "deaths": 39,
+  "truck": 13,
+  "truck_deaths": 18,
+  "share": 43,
+  "rural": 9,
+  "counties": [
+   [
+    "Spartanburg",
+    19,
+    8,
+    42
+   ],
+   [
+    "Newberry",
+    11,
+    5,
+    45
+   ]
+  ]
+ }
+}
