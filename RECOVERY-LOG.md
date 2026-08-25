@@ -377,6 +377,51 @@ someone who is not a lawyer.
    `/resources/abercorn-street-truck-accidents-savannah/`, a GSC-confirmed keeper
    asserting both a ranking and a serious-injury ratio in consecutive sentences.
 
+### Statistics audit round 2 — sitewide, applied 2026-08-25
+
+Round 1 recorded that its scope was too narrow. This is the systematic pass:
+**14 further edits across 11 pages**, verified to zero. Full assessment in
+`docs/stat-audit-round2-2026-08-25.md`.
+
+A sweep of every published post produced 1,004 candidate sentences; filtering out
+legal thresholds, dollar figures and statute citations left **254 across 163
+pages**, split by whether the claim is falsifiable.
+
+**The pattern that decided most of it: nationally-sourced claims held up, local
+ones did not.** "563 of South Carolina's 1,038 traffic deaths in 2024" checks out
+exactly against FARS. Every local road ranking failed — none named a retrievable
+publication, and the one that could be tested was wrong.
+
+**Proven false:** *"Chatham County reported 59 traffic deaths in 2022 — a top-5
+county statewide."* FARS gives Chatham **40 deaths, ranked #8** of 152 Georgia
+counties. 59 is **Clayton County's** figure, the actual #5. Both halves wrong.
+
+**Upgraded rather than deleted:** *"US-17 is the most dangerous road in Horry
+County"* turned out directionally supportable — FARS 2024 shows US-17 with more
+fatal crashes than any other Horry roadway, 6 of the county's 57. Replaced with
+that sourced statement citing the exact annual file and access date. The
+accompanying "2,181 motor vehicle accidents" is all-severity, absent from FARS,
+and went. **That is the outcome to aim for: an unsourced superlative becomes a
+smaller, checkable, cited fact.**
+
+Removed elsewhere: the Ashley Phosphate statewide ranking (3 pages, including as
+link anchor text), tri-county and Horry County intersection rankings on two
+**location pages**, a Columbia interchange crash/injury/fatality count, a
+"most dangerous construction zone in the Southeast", and Savannah's "#1 most
+dangerous intersection" with its "1 in 4 crashes" ratio.
+
+**Deliberately left:** generic superlatives that describe a hazard rather than
+rank a named place ("left-turn crashes are among the most dangerous on this
+road") — not falsifiable, not a liability. And
+`/blog/myrtle-beach-dangerous-roads-intersections/`, whose claims name the SC
+Highway Patrol and City of Myrtle Beach police records — weaker than a full
+citation, but a different class from a bare assertion.
+
+**Still open:** the Ashley Phosphate post's *headline* still asserts "South
+Carolina's Deadliest Intersection" while both rounds have now stripped its
+supporting evidence from the body. That is the worst of both states and needs an
+editorial decision.
+
 ### Batch (f) — the duplicated case-result URLs
 
 156 case results are published twice: as `case_result` at `/case-results/{slug}/`
