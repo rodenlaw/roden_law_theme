@@ -509,6 +509,36 @@ along with `/resources/rivers-avenue-truck-accidents-north-charleston/` calling
 Rivers Avenue "one of the four deadliest roads in Charleston County" — a
 falsifiable ranking neither round assessed.
 
+### Rivers Avenue corrected — 2026-08-25
+
+Sourced first this time, per the lesson from the Ashley Phosphate review, and the
+source existed.
+
+**Live 5 News, July 2026, citing SCDOT traffic data:** *"four of the county's five
+deadliest roads are in North Charleston"* — Rivers Avenue, Dorchester Road, Ashley
+Phosphate Road and Remount Road. Verified by fetching the article directly rather
+than trusting a search summary.
+
+The page claimed Rivers Avenue was **"one of the four deadliest roads in Charleston
+County"**. That is a real misreading of a real source: the four are not the county's
+four deadliest, they are the four *in North Charleston* among its five deadliest.
+The page claimed a higher rank than its own evidence supports. Corrected to what
+SCDOT actually says, with the citation and the other three corridors named.
+
+Two more on the same page:
+
+* The heading **"North Charleston's Deadliest Corridor"** asserted a rank nobody
+  published — SCDOT names four corridors and ranks none against the others. Now
+  simply "Truck Accidents on Rivers Avenue, North Charleston".
+* **"This interchange is one of the most dangerous in the Charleston metro area"**
+  was unsourced, but the figure behind it exists: the Rivers Avenue/I-526
+  interchange produced **62 injuries, 2011–2015 — the highest injury total in the
+  tri-county top ten**. Replaced the assertion with the fact, cited.
+
+That last one is the pattern worth repeating: an unsourced superlative usually has
+a smaller, checkable, more interesting fact underneath it. The superlative is what
+someone wrote when they could not be bothered to find the number.
+
 ### Batch (f) — the duplicated case-result URLs
 
 156 case results are published twice: as `case_result` at `/case-results/{slug}/`
