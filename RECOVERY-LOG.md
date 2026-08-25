@@ -472,6 +472,43 @@ directly.
 `reviewedBy` in schema and should be set once — and only once — an attorney has
 genuinely read the page.
 
+### Ashley Phosphate corrected, and three of my removals reversed — 2026-08-25
+
+Reviewing the headline found a source neither earlier round reached, and it cuts
+both ways.
+
+**The claim was false, and worse than uncited.** A *Post and Courier* analysis of
+preliminary SCDPS data, 2011–2015, records **629 crashes** at Ashley Phosphate and
+I-26 — the most of any intersection in the tri-county, but **second statewide**
+behind I-20 at US-176. And decisively for a page calling it the *deadliest*:
+**none of the 629 was fatal**, though 181 people were injured.
+
+Wrong on both halves. Not first in the state, and by the only published figures
+not deadly at all — high-frequency, low-severity, which is a better fact than the
+one the page asserted. Corrected rather than deleted, with the citation. Title now
+*"Why Ashley Phosphate & I-26 Is the Tri-County's Highest-Crash Intersection"* — a
+superlative that is true. Anchor text on an English and a Spanish post repeated
+the false ranking and was reworded.
+
+**Three claims removed earlier today were accurate**, and are restored with the
+citation: "one collision every three days" at Ashley Phosphate; College Park Road
+/ Exit 203 at 381 collisions, second in the tri-county; and 62 injuries at Rivers
+Avenue / I-526, the highest injury total in the top ten.
+
+Removing them was defensible on the evidence then available — uncited, and nothing
+I could reach confirmed them. But **"I could not verify this" is not the same
+finding as "this is false", and the remedy for the first is a source, not a
+deletion.** For the remaining backlog: search for the source before removing a
+claim, not only for a contradiction. A local paper analysing state data does not
+surface from an agency portal query.
+
+**Left deliberately:** the slug still reads `…south-carolinas-deadliest-intersection`.
+Changing it costs a 301 and an exact-match URL during an active recovery; the
+title and body are what a reader sees. Recorded for a later URL-hygiene pass,
+along with `/resources/rivers-avenue-truck-accidents-north-charleston/` calling
+Rivers Avenue "one of the four deadliest roads in Charleston County" — a
+falsifiable ranking neither round assessed.
+
 ### Batch (f) — the duplicated case-result URLs
 
 156 case results are published twice: as `case_result` at `/case-results/{slug}/`
