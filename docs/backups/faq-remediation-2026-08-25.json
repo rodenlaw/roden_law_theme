@@ -1,0 +1,32 @@
+{
+ "batch": "FAQ-meta corrections 2026-08-25 (§ 38-77-150/160, § 34-9-201 verified)",
+ "edits": [
+  {
+   "ID": 1698,
+   "slug": "steps-to-take-if-you-are-involved-in-a-bicycle-hit-and-run",
+   "index": 1,
+   "kind": "reversed-requirement",
+   "note": "said SC UM is 'required unless specifically rejected'; § 38-77-150 makes it mandatory in every policy",
+   "before": "Yes — through your own <strong>uninsured motorist (UM) coverage</strong>. UM coverage pays for your injuries as if the hit-and-run driver had insurance. In Georgia, UM is offered but can be rejected (O.C.G.A. § 33-7-11). In South Carolina, UM is required unless specifically rejected (S.C. Code § 38-77-150). You do not need to have been driving a car — UM covers bicycle accidents too.",
+   "after": "Yes — through your own <strong>uninsured motorist (UM) coverage</strong>. UM coverage pays for your injuries as if the hit-and-run driver had insurance. In Georgia, UM is offered but can be rejected (O.C.G.A. § 33-7-11). In South Carolina it cannot be rejected at all: S.C. Code § 38-77-150 requires every auto policy issued in the state to carry UM, so a South Carolina policyholder has it whether or not they remember choosing it. You do not need to have been driving a car — UM covers bicycle accidents too."
+  },
+  {
+   "ID": 4534,
+   "slug": "how-to-maximize-your-car-accident-compensation-in-south-carolina",
+   "index": 5,
+   "kind": "answers-its-own-question-backwards",
+   "note": "asked whether SC requires UM and answered that it is merely offered and can be declined in writing; § 38-77-150 makes UM mandatory, and it is UIM under § 38-77-160 that is optional",
+   "before": "South Carolina law requires insurers to offer uninsured motorist (UM) and underinsured motorist (UIM) coverage under S.C. Code § 38-77-150. You must sign a written rejection to decline it. If you have UM/UIM coverage and are hit by an uninsured or underinsured driver, you can file a claim under your own policy.",
+   "after": "Yes, for UM — and this is one of the most useful things a South Carolina driver can know. S.C. Code § 38-77-150 provides that no auto policy may be issued or delivered in the state unless it carries uninsured motorist coverage, at limits no lower than the state minimum. You cannot decline it, in writing or otherwise. Underinsured motorist coverage is the optional one: under S.C. Code § 38-77-160 the carrier must offer UIM, and additional UM above the minimum, up to the limits of your liability coverage — but you choose whether to take them. So if you are hit by an uninsured driver in South Carolina, you have UM coverage to claim against. Whether you also have UIM, for a driver who is insured but not insured enough, depends on what you elected."
+  },
+  {
+   "ID": 3610,
+   "slug": "workers-compensation-lawyers",
+   "index": 3,
+   "kind": "understated-right",
+   "note": "said a Georgia worker may 'request' one change of panel physician; the SBWC handbook says they may make that change — no permission needed. Understating a unilateral right on the practice-area pillar page.",
+   "before": "In Georgia, your employer or their insurer provides a panel of at least six physicians, and you must choose from that panel for your initial treatment (O.C.G.A. § 34-9-201). You may request one change of physician from the panel. In South Carolina, the employer has the right to select the treating physician, though you can petition the Commission for a change if you have valid reasons. Our attorneys can help you navigate the medical treatment process in either state.",
+   "after": "In Georgia, your employer must post a panel of at least six physicians and <strong>you</strong> choose your treating doctor from it (O.C.G.A. § 34-9-201). If you are dissatisfied with that choice, you may switch once to another physician on the same panel — you do not need the employer's or the insurer's permission for that first change, though further changes require their agreement. If your employer never posted a valid panel, that failure can free you to treat with a doctor of your own choosing. In South Carolina, the employer has the right to select the treating physician, though you can petition the Commission for a change if you have valid reasons. Our attorneys can help you navigate the medical treatment process in either state."
+  }
+ ]
+}

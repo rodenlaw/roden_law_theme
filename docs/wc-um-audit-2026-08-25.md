@@ -142,6 +142,49 @@ stacking. Two specific claims should be checked first once the text is in hand:
 which the firm has and I do not. A page or two of statute, and the guide is
 half-written already.
 
+## Addendum — the corrections were incomplete, and how that surfaced
+
+After merging, the fixed pages were checked live. Eight of nine were clean.
+`/steps-after-work-injury/` **still carried the false deadline**, on a page whose
+body had just been corrected and whose `post_content` sweep came back clean.
+
+It was in `_roden_faqs`. The sweep had only ever looked at `post_content`.
+
+**FAQ answers are a second content surface, and a worse one to get wrong**, because
+`inc/` renders them into FAQPage structured data. The false deadline was not merely
+published — it was handed to search engines as a machine-readable answer to
+"How long do I have to file a workers' compensation claim?"
+
+Re-sweeping the meta by **claim class rather than by string** found two more real
+errors that a string search could never have matched, because the FAQ wording
+differs from the body wording every time:
+
+| Page | The FAQ said | Verified |
+|---|---|---|
+| `steps-to-take-if-you-are-involved-in-a-bicycle-hit-and-run` (1698) | SC UM is "required unless specifically rejected" | § 38-77-150 makes it mandatory; it cannot be rejected |
+| `how-to-maximize-your-car-accident-compensation-in-south-carolina` (4534) | *Q: "Does South Carolina require uninsured motorist coverage?"* — answered that insurers must **offer** it and "you must sign a written rejection to decline it" | The question is exactly right and the answer is exactly backwards. UM is mandatory under § 38-77-150; UIM is the optional one, under § 38-77-160 |
+| `workers-compensation-lawyers` (3610) | a Georgia worker may "request" one change of panel physician | The SBWC handbook: they *may make* that change. No permission needed — and this is the practice-area pillar page |
+
+That brings the pass to **thirteen false or materially misleading claims across
+nine pages.**
+
+### What was built in response
+
+`bin/apply-faq-remediation.php` — a companion to `apply-stat-remediation.php` that
+patches `_roden_faqs` with the same exact-match guard and read-back verification.
+It exists because the older script structurally cannot see meta, and that gap let a
+corrected claim survive on a page that had just been fixed.
+
+**The rule it encodes:** when a claim is corrected in a body, sweep the meta for the
+same claim *class*, never for the same string. The FAQ almost always words it
+differently, which is precisely why a string sweep misses it.
+
+One further note for whoever checks the next batch: the first live check of
+`/steps-after-work-injury/` showed the corrected FAQ *and* the old one, because
+Cloudflare was still serving an edge copy. A cache-buster query string did not
+defeat it. Two clean fetches a few minutes apart are the check that means
+something.
+
 ## The pattern
 
 Every error above was found by checking a fact against its source in order to
