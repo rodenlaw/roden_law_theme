@@ -539,6 +539,51 @@ That last one is the pattern worth repeating: an unsourced superlative usually h
 a smaller, checkable, more interesting fact underneath it. The superlative is what
 someone wrote when they could not be bothered to find the number.
 
+### Claims assessment round 4 — the backlog, mostly not removed — 2026-08-25
+
+Round 3's method applied to what was left: **search for the source before removing
+a claim.** The result is mostly *not* removal. Full reasoning in
+`docs/stat-audit-round4-2026-08-25.md`.
+
+A re-scan after rounds 1–3 returned 133 claim-shaped sentences across 98 pages.
+Splitting by whether the subject is a **rankable place** or a **hazard type**
+collapses it: 36 sentences across 35 pages are hazard statements — "underride
+crashes are among the deadliest truck accident types", "trench collapses are among
+the deadliest hazards in construction" — which describe a mechanism, not a
+rankable place. Not falsifiable, not a liability, **left alone.** Earlier rounds
+nearly swept them up.
+
+Of the 26 place-ranking pages, most are table-of-contents lines or anchor text
+pointing at three roundup pages. Those roundups are what actually carry the risk.
+
+**Verified true and upgraded:** *"National safety studies have ranked I-95 as one
+of the most dangerous highways in the entire country."* FARS 2022–2024 puts I-95
+**second of 222 interstate designations** by fatal crashes — 924 crashes, 1,020
+deaths, behind only I-10. The claim was right; "national safety studies" named
+nothing checkable. Replaced with the figure and the source.
+
+**Removed:** *"1 in 4 accidents classified as dangerous-level collisions"* —
+*dangerous-level collision* is not a recognised classification in FARS, SCDPS or
+GDOT reporting. The phrase does not mean anything.
+
+**Left alone, and this is the part worth remembering.** Two claims survived
+because my evidence did not address them. The Savannah page says Chatham County
+ranks top-five in Georgia **for total collisions**, citing GDOT; I tested it
+against FARS, found Chatham sixth to eighth by *deaths*, and nearly corrected the
+page on that basis. FARS counts deaths, the claim counts collisions, and Chatham
+is Georgia's fifth-most-populous county. Same for Columbia's I-20 claim, qualified
+"by crash volume" — where FARS happens to agree on direction anyway (I-20 leads
+Richland and Lexington on fatal crashes, 35 to I-77's 31).
+
+**A claim is only falsified by evidence measuring the same thing it measures.**
+Rounds 1–2 removed claims for being unverifiable; round 3 found three of those
+were true; round 4 nearly removed two more on a metric mismatch. Every error this
+week has pointed the same way — toward deleting things that were fine.
+
+**Flagged, not removed:** Columbia's *"934 collisions, killing 5, injuring 260"* —
+specific, all-severity, unsourced. The right next step is a records request to
+SCDPS, not a deletion.
+
 ### Batch (f) — the duplicated case-result URLs
 
 156 case results are published twice: as `case_result` at `/case-results/{slug}/`
