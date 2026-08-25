@@ -584,6 +584,47 @@ week has pointed the same way — toward deleting things that were fine.
 specific, all-severity, unsourced. The right next step is a records request to
 SCDPS, not a deletion.
 
+### Columbia page sourced rather than stripped — 2026-08-25
+
+The flagged claim resolved better than expected, and the method is the point.
+
+The page carried four numeric claims, each hedged as **"in a single recent
+year"** — a phrase that is its own tell. Rather than remove them, I went looking
+for where they came from, and pulled the **SCDPS Traffic Collision Fact Book, 2023
+edition** directly and extracted its tables.
+
+**The claims were real.** SCDPS publishes county totals *and* selected
+intersection tables, and every figure on the page matched that shape — right
+tables, right structure, wrong (or rather, unnamed) year. Not invented: undated
+and uncited.
+
+All four are now dated and cited to the primary source:
+
+| Was | Now |
+|---|---|
+| "more than 12,700 collisions… top five counties" | **12,450 in 2023, third of 46 counties**, 58 fatal, 60 killed |
+| Malfunction Junction "91 collisions, two fatal" | **145 collisions in 2023, none fatal**, 28 injured (Lexington County table) |
+| SC-12 at I-77 "104 collisions, 38 injuries, one fatality" | **116 collisions in 2023**, one fatal, 29 injured (Richland County table) |
+| I-20 Richland "934 collisions, killing 5, injuring 260" | **35 fatal crashes on I-20 in Richland+Lexington 2020–2024** (FARS), 21 in Richland alone; **2,176 collisions on I-20 statewide in 2023** (SCDPS) |
+
+The last one is the only genuine substitution. **SCDPS does not publish a
+route-by-county table** — statewide route totals and county totals are separate
+tables — so "934 collisions on I-20 in Richland" cannot have come from the Fact
+Book and could not be located anywhere. Replaced with two figures that can be
+checked: the fatal count from FARS, which does support that cut, and the statewide
+I-20 total from SCDPS.
+
+Worth noting the claim was *not* fabricated even there: FARS records exactly **5
+deaths on I-20 in Richland in both 2020 and 2023**, matching the "killing 5" half.
+Someone had real data and did not write down where it came from.
+
+**Zero "recent year" phrases remain on the page.** Verified live.
+
+This is the fourth-round method paying off: the page went from four undated
+assertions to four dated, cited figures, and none of them had to be deleted. An
+unsourced number is usually a sourcing failure, not a fabrication — and the
+remedy is the source.
+
 ### Batch (f) — the duplicated case-result URLs
 
 156 case results are published twice: as `case_result` at `/case-results/{slug}/`
