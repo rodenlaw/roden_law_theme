@@ -708,6 +708,40 @@ statutory change has reached the pages stating the old rule. The cheapest standi
 version is to sweep every page citing an amended section, not just the page about
 it. That is precisely how the seat-belt reversal survived sixteen months.
 
+### § 15-38-15 resolved, brand standardised, and SC tort reform found — 2026-08-25
+
+**The threshold.** The site stated S.C. Code § 15-38-15 two ways. The statute
+reads *"joint and several liability does not apply to any defendant whose conduct
+is determined to be **less than fifty percent** of the total fault"* — so a
+defendant at exactly 50% **is** jointly liable. `/resources/south-carolina-comparative-negligence/`
+was right; `/blog/truck-accident-liability/` said "more than 50%" and was wrong.
+Corrected to the statutory wording, and the two-state guide now quotes it directly
+rather than hedging.
+
+**And verifying that turned up something much larger.** South Carolina enacted
+comprehensive tort and liquor-liability reform — **2025 Act No. 42 (H.3430),
+effective 1 January 2026** — and **nothing on this site mentions it**. It removed
+the alcohol exception from § 15-38-15 and created § 61-2-147, under which a
+licensee faces joint and several liability for 50% of actual damages where a DUI
+defendant and an establishment are both liable.
+
+**24 published pages discuss South Carolina dram-shop liability. Zero mention the
+statute that changed it eight months ago.** Assessment and recommended sequence in
+`docs/sc-act42-exposure-2026-08-25.md`. Deliberately not attempted here: doing it
+from a summary is exactly how the Georgia seat-belt error happened.
+
+**Brand: standardised to Roden Law.** The infrastructure was already correct —
+blogname, `firm-data` name and legal entity, all post meta. Twenty marketing-copy
+references across 17 old blog posts updated.
+
+**Two categories deliberately excluded, and a find-and-replace would have ruined
+both.** The three testimonial pages quote clients saying "Roden + Love" — editing
+a client's words falsifies the testimonial. The two privacy policies name
+*"Roden + Love, LLC"* as the entity collecting personal data; that is a legal
+identification, and changing it without confirming the registered entity name
+could make the notice inaccurate. Both left for the firm to decide. *(Also noted:
+the privacy policy exists twice, at `privacy-policy` and `privacy-policy-2`.)*
+
 ### Batch (f) — the duplicated case-result URLs
 
 156 case results are published twice: as `case_result` at `/case-results/{slug}/`
