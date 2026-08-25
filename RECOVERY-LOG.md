@@ -251,6 +251,46 @@ covers every future practice-area removal without a second set of keys.
 Worth keeping as a verification habit: **check both address forms after a
 removal, not just the canonical one.**
 
+### Applied 2026-08-25 — corridor fold and the 66 dead location pages
+
+Both shipped end to end: redirects deployed, relinks applied, posts trashed,
+caches flushed, verified after deletion.
+
+| | Removed | Relinked | Verified |
+|---|---:|---|---|
+| Corridor fold | 11 resources | 20 links / 18 posts | 11/11 single-hop 301 → 200 |
+| Dead locations | 66 locations | 43 links / 21 posts | 66/66 single-hop 301 → 200 |
+
+Sitemaps: location **123 → 57**, resource **78 → 67**, practice_area **415 → 404**.
+Indexable **1,310 → 1,222**. Zero remaining inbound body links to any removed URL
+across all three maps. `post_modified` untouched on all 23 relinked posts that are
+still published (the 3 that were stamped are ones this batch trashed, where
+`wp_trash_post()` legitimately stamps and nothing renders).
+
+**Doorway ratio: 29.2% pre-cull → 22.7% this morning → 19.0% now**, against
+Steinberg Principle 1's ≤25%. Location pages alone are 4.7%. All 175 surviving
+city×practice pages are in the six office markets, which is the defensible tier
+under rule 6. *The ratio is no longer the constraint on this site.*
+
+### Three defects this batch surfaced, none of which the plan predicted
+
+Each was found by a guard or a sweep rather than by reasoning, and each is now
+fixed in a way that covers future batches rather than just this one.
+
+1. **The nested practice-area form 404s after a trash.** Live since batch (d)
+   shipped on 2026-08-21 and invisible because the flat form 301s correctly — which
+   is what anyone spot-checks. Fixed by canonicalising before the map lookup.
+2. **Editorial body links are not the same as template links.** "The pillar grid
+   self-heals" was true and did not answer "is this URL linked". 42 body links on
+   batch (c), 20 on the corridor fold, 43 on the locations.
+3. **`_roden_see_also` is post_meta, so every body sweep misses it.** Five published
+   pages kept see-also entries pointing at the folded resources. Fixed by resolving
+   see-also URLs through the removal map at render time.
+
+**Verification habits worth carrying forward:** check *both* address forms after a
+removal; sweep post_meta as well as post_content; and confirm `post_modified` on
+the posts that are still published, separately from the ones you trashed.
+
 ### Batch (f) — the duplicated case-result URLs
 
 156 case results are published twice: as `case_result` at `/case-results/{slug}/`

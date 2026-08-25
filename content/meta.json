@@ -5,7 +5,7 @@
         "location",
         "resource"
     ],
-    "_count": 614,
+    "_count": 537,
     "posts": {
         "/?post_type=location&p=3808": {
             "type": "location",
@@ -9213,62 +9213,6 @@
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33"
             }
         },
-        "/locations/georgia/darien/dock-junction/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Dock Junction",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "Why is Dock Junction a high-accident area?",
-                        "answer": "Dock Junction sits at the convergence of multiple state and federal routes — US-17, US-341, and GA-99 — creating a confusing interchange area where drivers from multiple directions must navigate overlapping road designations. Tourist traffic heading to the Golden Isles, commercial port traffic, and local commuter traffic all funnel through this area, producing frequent collisions."
-                    },
-                    {
-                        "question": "Which hospital is nearest to Dock Junction?",
-                        "answer": "Southeast Georgia Health System's Brunswick Campus is just 5-10 minutes from Dock Junction, making it one of the closest hospital-accessible communities in the Darien service area."
-                    },
-                    {
-                        "question": "What court handles Dock Junction accident cases?",
-                        "answer": "Dock Junction is in Glynn County, so personal injury cases are filed in Glynn County Superior Court in the Brunswick Judicial Circuit."
-                    },
-                    {
-                        "question": "Does Roden Law handle Dock Junction cases?",
-                        "answer": "Yes. Our Darien office is approximately 20 minutes north via I-95 and serves all of Glynn County. We offer free consultations."
-                    }
-                ],
-                "_roden_jurisdiction": "GA",
-                "_roden_sol_ga": "O.C.G.A. § 9-3-33"
-            }
-        },
-        "/locations/georgia/darien/eulonia/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Eulonia",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "Where is the nearest hospital to Eulonia?",
-                        "answer": "Southeast Georgia Health System's Brunswick Campus is approximately 20 minutes south. Memorial Health in Savannah is approximately 45 minutes north."
-                    },
-                    {
-                        "question": "Does Roden Law serve Eulonia?",
-                        "answer": "Yes. Our Darien office is in the same county and is the closest personal injury firm. Cases are filed in McIntosh County Superior Court."
-                    },
-                    {
-                        "question": "How long do I have to file an injury claim?",
-                        "answer": "Georgia's statute of limitations is 2 years (O.C.G.A. § 9-3-33). Contact us as soon as possible after your accident."
-                    },
-                    {
-                        "question": "What types of accidents occur near Eulonia?",
-                        "answer": "US-17 coastal highway collisions, rural road crashes, and I-95 truck accidents are the most common types in the Eulonia area."
-                    }
-                ],
-                "_roden_jurisdiction": "GA",
-                "_roden_sol_ga": "O.C.G.A. § 9-3-33"
-            }
-        },
         "/locations/georgia/darien/folkston/": {
             "type": "location",
             "status": "publish",
@@ -9465,34 +9409,6 @@
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33"
             }
         },
-        "/locations/georgia/darien/ludowici/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Ludowici",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "Does Roden Law handle cases involving military vehicle accidents near Fort Stewart?",
-                        "answer": "If you were injured in an accident on public roads outside Fort Stewart involving a military vehicle or military personnel, your claim is typically handled under Georgia law. Accidents occurring on-base may involve the Federal Tort Claims Act, which has different procedures and deadlines. Contact us to determine which process applies."
-                    },
-                    {
-                        "question": "What hospital serves Ludowici?",
-                        "answer": "Long County has limited local hospital services. Wayne Memorial Hospital in Jesup is approximately 20 minutes west. Memorial Health University Medical Center in Savannah — the region's Level I Trauma Center — is approximately 45 minutes northeast. Military families may access Winn Army Community Hospital at Fort Stewart."
-                    },
-                    {
-                        "question": "What court handles Long County injury cases?",
-                        "answer": "Personal injury cases from Long County are filed in Long County Superior Court, part of the Atlantic Judicial Circuit. Our Darien office attorneys handle cases throughout this region."
-                    },
-                    {
-                        "question": "How far is Roden Law from Ludowici?",
-                        "answer": "Our Darien office is approximately 25 minutes from Ludowici via US-25/US-301. We serve all of Long County and offer free consultations."
-                    }
-                ],
-                "_roden_jurisdiction": "GA",
-                "_roden_sol_ga": "O.C.G.A. § 9-3-33"
-            }
-        },
         "/locations/georgia/darien/nahunta/": {
             "type": "location",
             "status": "publish",
@@ -9515,62 +9431,6 @@
                     {
                         "question": "Does Roden Law serve Brantley County?",
                         "answer": "Yes. Our Darien office handles personal injury cases throughout Brantley County. We offer free consultations by phone and can meet clients at convenient locations throughout the region."
-                    }
-                ],
-                "_roden_jurisdiction": "GA",
-                "_roden_sol_ga": "O.C.G.A. § 9-3-33"
-            }
-        },
-        "/locations/georgia/darien/odum/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Odum",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "What hospital is nearest to Odum?",
-                        "answer": "Wayne Memorial Hospital in Jesup is approximately 15 minutes north."
-                    },
-                    {
-                        "question": "Are logging truck accidents common near Odum?",
-                        "answer": "Yes. Wayne County's timber industry generates heavy logging truck traffic on GA-169 and surrounding rural roads. These trucks carry massive loads on narrow roads without shoulders, creating serious hazards."
-                    },
-                    {
-                        "question": "Does Roden Law handle Odum cases?",
-                        "answer": "Yes. Our Darien office serves all of Wayne County. Cases are filed in Wayne County Superior Court in Jesup."
-                    },
-                    {
-                        "question": "How long do I have to file a claim?",
-                        "answer": "Georgia's statute of limitations is 2 years from the date of the accident (O.C.G.A. § 9-3-33)."
-                    }
-                ],
-                "_roden_jurisdiction": "GA",
-                "_roden_sol_ga": "O.C.G.A. § 9-3-33"
-            }
-        },
-        "/locations/georgia/darien/screven/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Screven",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "What hospital is nearest to Screven?",
-                        "answer": "Wayne Memorial Hospital in Jesup is approximately 10 minutes away."
-                    },
-                    {
-                        "question": "Does Roden Law serve Screven?",
-                        "answer": "Yes. Our Darien office handles cases throughout Wayne County, filed in Wayne County Superior Court in Jesup."
-                    },
-                    {
-                        "question": "How long do I have to file a claim?",
-                        "answer": "Georgia's statute of limitations is 2 years from the date of the accident (O.C.G.A. § 9-3-33)."
-                    },
-                    {
-                        "question": "What types of accidents are common near Screven?",
-                        "answer": "Commercial truck crashes on US-82, logging truck accidents, and rural road collisions involving agricultural equipment are the most common types."
                     }
                 ],
                 "_roden_jurisdiction": "GA",
@@ -9605,34 +9465,6 @@
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33"
             }
         },
-        "/locations/georgia/darien/st-marys/": {
-            "type": "location",
-            "status": "publish",
-            "title": "St. Marys",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "What makes GA-40 near Kings Bay so dangerous?",
-                        "answer": "GA-40 is the primary commuter route between I-95, Kingsland, and Naval Submarine Base Kings Bay. During shift changes, thousands of military and civilian personnel travel this corridor simultaneously, creating dangerous congestion on a road not originally designed for current volumes. Rear-end collisions and intersection crashes are the most common accident types, particularly at commercial intersections near the base gates."
-                    },
-                    {
-                        "question": "Where is the nearest trauma center to St. Marys?",
-                        "answer": "Southeast Georgia Health System's Camden Campus is in St. Marys and handles emergency cases. For severe trauma requiring a Level I Trauma Center, UF Health Jacksonville is approximately 40 minutes south via I-95 — closer than the Level I center in Savannah. Patients with life-threatening injuries are often airlifted to Jacksonville by helicopter."
-                    },
-                    {
-                        "question": "Can I file a claim if I was injured near the Kings Bay Naval Base entrance?",
-                        "answer": "If your accident occurred on public roads outside the base perimeter, your claim is handled under Georgia law with a 2-year statute of limitations. Accidents occurring on-base may require a Federal Tort Claim, which has different procedures and deadlines. Contact our attorneys as soon as possible so we can determine which process applies to your case."
-                    },
-                    {
-                        "question": "Does Roden Law serve St. Marys from the Darien office?",
-                        "answer": "Yes. Our Darien office at 1108 North Way handles personal injury cases throughout Camden County, including St. Marys. While the drive is approximately 50 minutes via I-95, our attorneys regularly practice in Camden County Superior Court. We offer phone consultations and can meet you at a convenient location."
-                    }
-                ],
-                "_roden_jurisdiction": "GA",
-                "_roden_sol_ga": "O.C.G.A. § 9-3-33"
-            }
-        },
         "/locations/georgia/darien/st-simons-island/": {
             "type": "location",
             "status": "publish",
@@ -9661,62 +9493,6 @@
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33"
             }
         },
-        "/locations/georgia/darien/townsend/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Townsend",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "Where is the nearest hospital to Townsend?",
-                        "answer": "Southeast Georgia Health System's Brunswick Campus is approximately 25 minutes south. Memorial Health University Medical Center in Savannah is approximately 50 minutes north."
-                    },
-                    {
-                        "question": "Does Roden Law serve Townsend?",
-                        "answer": "Yes. Our Darien office at 1108 North Way is the closest personal injury firm to Townsend, located in the same county. Cases are filed in McIntosh County Superior Court."
-                    },
-                    {
-                        "question": "How long do I have to file a claim?",
-                        "answer": "Georgia's statute of limitations is 2 years from the date of the accident (O.C.G.A. § 9-3-33)."
-                    },
-                    {
-                        "question": "What types of accidents are common near Townsend?",
-                        "answer": "I-95 truck crashes, rural road accidents involving timber trucks, and US-17 coastal highway collisions are the most common accident types in the Townsend area."
-                    }
-                ],
-                "_roden_jurisdiction": "GA",
-                "_roden_sol_ga": "O.C.G.A. § 9-3-33"
-            }
-        },
-        "/locations/georgia/darien/waverly/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Waverly",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "What hospital serves Waverly?",
-                        "answer": "Southeast Georgia Health System's Camden Campus in St. Marys is approximately 15 minutes south. The Brunswick Campus is approximately 25 minutes north."
-                    },
-                    {
-                        "question": "Does Roden Law serve Waverly?",
-                        "answer": "Yes. Our Darien office handles personal injury cases throughout Camden County, including Waverly. Call (912) 303-5850 for a free consultation."
-                    },
-                    {
-                        "question": "How long do I have to file an injury claim?",
-                        "answer": "Georgia's statute of limitations is 2 years from the date of the accident (O.C.G.A. § 9-3-33)."
-                    },
-                    {
-                        "question": "What court handles Waverly accident cases?",
-                        "answer": "Waverly is in Camden County, so cases are filed in Camden County Superior Court in Woodbine."
-                    }
-                ],
-                "_roden_jurisdiction": "GA",
-                "_roden_sol_ga": "O.C.G.A. § 9-3-33"
-            }
-        },
         "/locations/georgia/darien/waycross/": {
             "type": "location",
             "status": "publish",
@@ -9739,34 +9515,6 @@
                     {
                         "question": "Does Roden Law travel to Waycross for cases?",
                         "answer": "Yes. Our Darien office is approximately 55 minutes from Waycross via US-82 or US-84. We regularly handle personal injury cases throughout Ware County and appear in Ware County Superior Court. We offer free phone and video consultations to make the process convenient for our Waycross-area clients."
-                    }
-                ],
-                "_roden_jurisdiction": "GA",
-                "_roden_sol_ga": "O.C.G.A. § 9-3-33"
-            }
-        },
-        "/locations/georgia/darien/white-oak/": {
-            "type": "location",
-            "status": "publish",
-            "title": "White Oak",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "What hospital is nearest to White Oak?",
-                        "answer": "Southeast Georgia Health System's Camden Campus in St. Marys is approximately 10 minutes away."
-                    },
-                    {
-                        "question": "Does Roden Law handle White Oak accident cases?",
-                        "answer": "Yes. Our Darien office serves all of Camden County. Cases are filed in Camden County Superior Court in Woodbine."
-                    },
-                    {
-                        "question": "How long do I have to file a claim?",
-                        "answer": "Georgia's statute of limitations is 2 years from the date of the accident (O.C.G.A. § 9-3-33)."
-                    },
-                    {
-                        "question": "Can military families in White Oak file personal injury claims?",
-                        "answer": "Yes. Military families injured in off-base accidents have the same right to file personal injury claims as civilians under Georgia law."
                     }
                 ],
                 "_roden_jurisdiction": "GA",
@@ -9846,30 +9594,6 @@
                 "_roden_translation_es": "/es/locations/georgia/savannah/"
             }
         },
-        "/locations/georgia/savannah/bloomingdale/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Bloomingdale",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "Is Bloomingdale in Chatham County or Effingham County?",
-                        "answer": "Bloomingdale is in Chatham County, so personal injury cases are filed in Chatham County Superior Court. The city borders Effingham County to the west, so if your accident occurred near the county line, our attorneys will determine the correct jurisdiction."
-                    },
-                    {
-                        "question": "How long do I have to file a personal injury claim in Bloomingdale, Georgia?",
-                        "answer": "Georgia has a 2-year statute of limitations for personal injury claims (O.C.G.A. § 9-3-33). This deadline runs from the date of the accident. Missing this deadline almost always means permanently losing your right to compensation. Contact a Roden Law attorney as soon as possible to protect your claim."
-                    },
-                    {
-                        "question": "How long do I have to file a personal injury claim in Bloomingdale, Georgia?",
-                        "answer": "Georgia has a 2-year statute of limitations for personal injury claims (O.C.G.A. § 9-3-33). This deadline runs from the date of the accident. Missing this deadline almost always means permanently losing your right to compensation. Contact a Roden Law attorney as soon as possible to protect your claim."
-                    }
-                ],
-                "_roden_jurisdiction": "GA",
-                "_roden_sol_ga": "O.C.G.A. § 9-3-33"
-            }
-        },
         "/locations/georgia/savannah/bryan-county/": {
             "type": "location",
             "status": "publish",
@@ -9894,78 +9618,6 @@
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33"
             }
         },
-        "/locations/georgia/savannah/effingham-county/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Effingham County",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "Where are Effingham County personal injury cases filed?",
-                        "answer": "Personal injury cases from Effingham County accidents are filed in Effingham County Superior Court in Springfield. Our attorneys practice in Effingham County and handle cases from throughout the county."
-                    },
-                    {
-                        "question": "Why is healthcare access a concern for Effingham County accident victims?",
-                        "answer": "Effingham County has limited emergency healthcare facilities within its borders. Effingham Health System in Springfield provides basic services, but serious injuries typically require transport to Savannah — 30 to 40 minutes from most of Effingham County. This delay in emergency treatment can worsen injury outcomes and is relevant to damages calculations in personal injury cases."
-                    },
-                    {
-                        "question": "How long do I have to file a personal injury claim in Effingham County, Georgia?",
-                        "answer": "Georgia has a 2-year statute of limitations for personal injury claims (O.C.G.A. § 9-3-33). This deadline runs from the date of the accident. Missing this deadline almost always means permanently losing your right to compensation. Contact a Roden Law attorney as soon as possible to protect your claim."
-                    }
-                ],
-                "_roden_jurisdiction": "GA",
-                "_roden_sol_ga": "O.C.G.A. § 9-3-33"
-            }
-        },
-        "/locations/georgia/savannah/garden-city/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Garden City",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "Who is liable if a port truck causes an accident in Garden City?",
-                        "answer": "Liability in port-related truck accidents can involve multiple parties — the truck driver, the trucking company, the port terminal operator, the cargo shipper, the freight broker, and potentially the vehicle or parts manufacturer. Our attorneys conduct full investigations to identify every liable party, which is critical to maximizing your total recovery."
-                    },
-                    {
-                        "question": "What is the nearest emergency room to Garden City?",
-                        "answer": "St. Joseph's Hospital on Mercy Boulevard is the closest full-service hospital, approximately 8 minutes from central Garden City. For severe trauma, Memorial Health University Medical Center — the region's only Level I Trauma Center — is approximately 10 minutes away on Waters Avenue in Savannah."
-                    },
-                    {
-                        "question": "Does Garden City have its own court system?",
-                        "answer": "Garden City has a Municipal Court for traffic violations and misdemeanors, but personal injury lawsuits from Garden City are filed in Chatham County Superior Court in downtown Savannah. Our attorneys practice in Chatham County Superior Court regularly."
-                    }
-                ],
-                "_roden_jurisdiction": "GA",
-                "_roden_sol_ga": "O.C.G.A. § 9-3-33"
-            }
-        },
-        "/locations/georgia/savannah/guyton/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Guyton",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "How far is the nearest trauma center from Guyton?",
-                        "answer": "The nearest Level I Trauma Center is Memorial Health University Medical Center in Savannah, approximately 40 minutes from Guyton. This distance is a significant factor in severe injury outcomes and is relevant to damages claims."
-                    },
-                    {
-                        "question": "How long do I have to file a personal injury claim in Guyton, Georgia?",
-                        "answer": "Georgia has a 2-year statute of limitations for personal injury claims (O.C.G.A. § 9-3-33). This deadline runs from the date of the accident. Missing this deadline almost always means permanently losing your right to compensation. Contact a Roden Law attorney as soon as possible to protect your claim."
-                    },
-                    {
-                        "question": "How long do I have to file a personal injury claim in Guyton, Georgia?",
-                        "answer": "Georgia has a 2-year statute of limitations for personal injury claims (O.C.G.A. § 9-3-33). This deadline runs from the date of the accident. Missing this deadline almost always means permanently losing your right to compensation. Contact a Roden Law attorney as soon as possible to protect your claim."
-                    }
-                ],
-                "_roden_jurisdiction": "GA",
-                "_roden_sol_ga": "O.C.G.A. § 9-3-33"
-            }
-        },
         "/locations/georgia/savannah/hinesville/": {
             "type": "location",
             "status": "publish",
@@ -9983,30 +9635,6 @@
                     },
                     {
                         "question": "How long do I have to file a personal injury claim in Hinesville, Georgia?",
-                        "answer": "Georgia has a 2-year statute of limitations for personal injury claims (O.C.G.A. § 9-3-33). This deadline runs from the date of the accident. Missing this deadline almost always means permanently losing your right to compensation. Contact a Roden Law attorney as soon as possible to protect your claim."
-                    }
-                ],
-                "_roden_jurisdiction": "GA",
-                "_roden_sol_ga": "O.C.G.A. § 9-3-33"
-            }
-        },
-        "/locations/georgia/savannah/isle-of-hope/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Isle of Hope",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "Which court handles personal injury cases from Isle of Hope?",
-                        "answer": "Isle of Hope is unincorporated Chatham County, so personal injury cases are filed in Chatham County Superior Court in downtown Savannah."
-                    },
-                    {
-                        "question": "How long do I have to file a personal injury claim in Isle of Hope, Georgia?",
-                        "answer": "Georgia has a 2-year statute of limitations for personal injury claims (O.C.G.A. § 9-3-33). This deadline runs from the date of the accident. Missing this deadline almost always means permanently losing your right to compensation. Contact a Roden Law attorney as soon as possible to protect your claim."
-                    },
-                    {
-                        "question": "How long do I have to file a personal injury claim in Isle of Hope, Georgia?",
                         "answer": "Georgia has a 2-year statute of limitations for personal injury claims (O.C.G.A. § 9-3-33). This deadline runs from the date of the accident. Missing this deadline almost always means permanently losing your right to compensation. Contact a Roden Law attorney as soon as possible to protect your claim."
                     }
                 ],
@@ -10066,58 +9694,6 @@
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33"
             }
         },
-        "/locations/georgia/savannah/richmond-hill/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Richmond Hill",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "My accident happened in Richmond Hill — will my case be in Chatham or Bryan County?",
-                        "answer": "Richmond Hill is in Bryan County, so personal injury lawsuits from Richmond Hill accidents are typically filed in Bryan County Superior Court in Pembroke. Our attorneys practice in Bryan County and will ensure your case is filed in the correct jurisdiction."
-                    },
-                    {
-                        "question": "Is there an emergency room in Richmond Hill?",
-                        "answer": "Currently, Richmond Hill does not have a full emergency room within city limits. Memorial Health announced plans in September 2025 to build a freestanding ER in Richmond Hill, expected to open in 18-24 months. For now, the nearest emergency care is Memorial Health University Medical Center in Savannah (20 miles north) or Liberty Regional Medical Center in Hinesville (25 miles west). For severe trauma, Memorial Health's Level I Trauma Center is the destination."
-                    },
-                    {
-                        "question": "Can military families from Fort Stewart use Roden Law?",
-                        "answer": "Yes. If you are active-duty military, a military spouse, or a dependent and were injured in an off-base motor vehicle accident or personal injury incident in Richmond Hill or Bryan County, you have the same right to pursue a civilian personal injury claim. Our attorneys handle these cases regularly given the area's proximity to Fort Stewart."
-                    },
-                    {
-                        "question": "How long do I have to file a personal injury claim in Bryan County?",
-                        "answer": "Georgia's 2-year statute of limitations (O.C.G.A. § 9-3-33) applies regardless of which county your accident occurred in. You must file your lawsuit within 2 years of the date of injury. Contact Roden Law as soon as possible to preserve evidence and protect your rights."
-                    }
-                ],
-                "_roden_jurisdiction": "GA",
-                "_roden_sol_ga": "O.C.G.A. § 9-3-33"
-            }
-        },
-        "/locations/georgia/savannah/rincon/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Rincon",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "My accident was on I-16 between Rincon and Savannah — which county has jurisdiction?",
-                        "answer": "I-16 passes through both Effingham County and Chatham County. The jurisdiction depends on exactly where the accident occurred. Our attorneys will determine the correct filing location based on the accident report and mile markers. We practice in both Effingham County Superior Court and Chatham County Superior Court."
-                    },
-                    {
-                        "question": "Why are Effingham County roads so dangerous?",
-                        "answer": "Effingham County's road infrastructure was designed for a rural population and has not kept pace with the explosive suburban growth of the past two decades. Many roads remain unpaved, intersections are poorly aligned, and the single primary corridor — SR-21 — was not designed for the volume of commuter and commercial traffic it now carries. Emergency response times in northern Effingham are also affected by circuitous road layouts."
-                    },
-                    {
-                        "question": "What is the statute of limitations for an accident in Effingham County?",
-                        "answer": "Georgia's 2-year statute of limitations (O.C.G.A. § 9-3-33) applies statewide, including in Effingham County. You have 2 years from the date of your accident to file a lawsuit. This is one of the shorter deadlines in the country, so contacting an attorney promptly is important."
-                    }
-                ],
-                "_roden_jurisdiction": "GA",
-                "_roden_sol_ga": "O.C.G.A. § 9-3-33"
-            }
-        },
         "/locations/georgia/savannah/skidaway-island/": {
             "type": "location",
             "status": "publish",
@@ -10135,30 +9711,6 @@
                     },
                     {
                         "question": "How long do I have to file a personal injury claim in Skidaway Island, Georgia?",
-                        "answer": "Georgia has a 2-year statute of limitations for personal injury claims (O.C.G.A. § 9-3-33). This deadline runs from the date of the accident. Missing this deadline almost always means permanently losing your right to compensation. Contact a Roden Law attorney as soon as possible to protect your claim."
-                    }
-                ],
-                "_roden_jurisdiction": "GA",
-                "_roden_sol_ga": "O.C.G.A. § 9-3-33"
-            }
-        },
-        "/locations/georgia/savannah/springfield/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Springfield",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "Where are personal injury cases from Springfield filed?",
-                        "answer": "Springfield is the Effingham County seat, and personal injury cases are filed in Effingham County Superior Court, which is located in Springfield. Our attorneys practice in Effingham County."
-                    },
-                    {
-                        "question": "How long do I have to file a personal injury claim in Springfield, Georgia?",
-                        "answer": "Georgia has a 2-year statute of limitations for personal injury claims (O.C.G.A. § 9-3-33). This deadline runs from the date of the accident. Missing this deadline almost always means permanently losing your right to compensation. Contact a Roden Law attorney as soon as possible to protect your claim."
-                    },
-                    {
-                        "question": "How long do I have to file a personal injury claim in Springfield, Georgia?",
                         "answer": "Georgia has a 2-year statute of limitations for personal injury claims (O.C.G.A. § 9-3-33). This deadline runs from the date of the accident. Missing this deadline almost always means permanently losing your right to compensation. Contact a Roden Law attorney as soon as possible to protect your claim."
                     }
                 ],
@@ -10190,54 +9742,6 @@
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33"
             }
         },
-        "/locations/georgia/savannah/thunderbolt/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Thunderbolt",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "Is Thunderbolt part of the City of Savannah?",
-                        "answer": "No. Thunderbolt is an independent incorporated municipality in Chatham County with its own government. However, personal injury cases from Thunderbolt are still filed in Chatham County Superior Court."
-                    },
-                    {
-                        "question": "How long do I have to file a personal injury claim in Thunderbolt, Georgia?",
-                        "answer": "Georgia has a 2-year statute of limitations for personal injury claims (O.C.G.A. § 9-3-33). This deadline runs from the date of the accident. Missing this deadline almost always means permanently losing your right to compensation. Contact a Roden Law attorney as soon as possible to protect your claim."
-                    },
-                    {
-                        "question": "How long do I have to file a personal injury claim in Thunderbolt, Georgia?",
-                        "answer": "Georgia has a 2-year statute of limitations for personal injury claims (O.C.G.A. § 9-3-33). This deadline runs from the date of the accident. Missing this deadline almost always means permanently losing your right to compensation. Contact a Roden Law attorney as soon as possible to protect your claim."
-                    }
-                ],
-                "_roden_jurisdiction": "GA",
-                "_roden_sol_ga": "O.C.G.A. § 9-3-33"
-            }
-        },
-        "/locations/georgia/savannah/tybee-island/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Tybee Island",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "What if I was hit by a golf cart on Tybee Island?",
-                        "answer": "Golf carts are common on Tybee Island and are subject to Georgia motor vehicle laws when operated on public roads. If you were struck by a golf cart operated negligently — whether by a resident, tourist, or rental operator — you may have a personal injury claim. The golf cart operator, the rental company, or both may be liable."
-                    },
-                    {
-                        "question": "I was injured at a Tybee Island vacation rental — who is liable?",
-                        "answer": "Property owners and managers of vacation rentals in Georgia have a duty to maintain safe premises. If you were injured due to a hazardous condition — broken stairs, loose railings, inadequate lighting, pool hazards — the property owner, the management company, or both may be liable under Georgia premises liability law."
-                    },
-                    {
-                        "question": "Why does it matter that Tybee has no hospital?",
-                        "answer": "The absence of a hospital on Tybee Island means that severe injuries require transport to Savannah, potentially adding critical time to emergency treatment. This delay can be a factor in the severity of injuries and is relevant to damages calculations in personal injury cases. Our attorneys understand how to account for delayed emergency care in building your case."
-                    }
-                ],
-                "_roden_jurisdiction": "GA",
-                "_roden_sol_ga": "O.C.G.A. § 9-3-33"
-            }
-        },
         "/locations/georgia/savannah/whitemarsh-island/": {
             "type": "location",
             "status": "publish",
@@ -10255,30 +9759,6 @@
                     },
                     {
                         "question": "How long do I have to file a personal injury claim in Whitemarsh Island, Georgia?",
-                        "answer": "Georgia has a 2-year statute of limitations for personal injury claims (O.C.G.A. § 9-3-33). This deadline runs from the date of the accident. Missing this deadline almost always means permanently losing your right to compensation. Contact a Roden Law attorney as soon as possible to protect your claim."
-                    }
-                ],
-                "_roden_jurisdiction": "GA",
-                "_roden_sol_ga": "O.C.G.A. § 9-3-33"
-            }
-        },
-        "/locations/georgia/savannah/wilmington-island/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Wilmington Island",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "What if my accident happened on the Islands Expressway?",
-                        "answer": "The Islands Expressway is a state-maintained road in Chatham County, so your personal injury case would be filed in Chatham County Superior Court. High-speed collisions on the expressway often result in severe injuries. Our attorneys handle these cases regularly and understand the specific traffic patterns and road design issues on this corridor."
-                    },
-                    {
-                        "question": "How long do I have to file a claim for a bicycle accident on Wilmington Island?",
-                        "answer": "Georgia's 2-year statute of limitations (O.C.G.A. § 9-3-33) applies to bicycle accidents just as it does to motor vehicle accidents. If you were struck by a vehicle while cycling on Wilmington Island's roads, you have 2 years to file a lawsuit. Contact us as soon as possible to preserve evidence."
-                    },
-                    {
-                        "question": "How long do I have to file a personal injury claim in Wilmington Island, Georgia?",
                         "answer": "Georgia has a 2-year statute of limitations for personal injury claims (O.C.G.A. § 9-3-33). This deadline runs from the date of the accident. Missing this deadline almost always means permanently losing your right to compensation. Contact a Roden Law attorney as soon as possible to protect your claim."
                     }
                 ],
@@ -10375,78 +9855,6 @@
                 "_roden_translation_es": "/es/locations/south-carolina/charleston/"
             }
         },
-        "/locations/south-carolina/charleston/awendaw/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Awendaw",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "I hit a deer on US-17 near Awendaw and was injured — do I have a case?",
-                        "answer": "While you cannot sue the deer, other parties may be liable depending on the circumstances. If inadequate road signage, missing wildlife crossing warnings, or another driver's negligence contributed to the accident, you may have a claim. Your own uninsured/underinsured motorist coverage may also apply. Contact Roden Law for a free evaluation."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/charleston/edisto-island/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Edisto Island",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "I was injured in a beach rental property on Edisto Island — who is liable?",
-                        "answer": "Liability may fall on the property owner, the rental management company, or both. Common rental property injury scenarios include deck collapses, pool accidents, stairway falls, and failure to maintain safe conditions. South Carolina premises liability law requires property owners and managers to maintain safe conditions for guests. Contact Roden Law for a free evaluation."
-                    },
-                    {
-                        "question": "Is Edisto Island in Charleston County?",
-                        "answer": "Edisto Island spans parts of both Charleston County and Colleton County. The specific location of your accident determines jurisdiction. Our attorneys handle cases in both counties and will ensure your case is filed correctly."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/charleston/folly-beach/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Folly Beach",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "I was hit by a drunk driver near Folly Beach — what should I do?",
-                        "answer": "Call 911 immediately. A DUI accident strengthens your personal injury claim because driving under the influence is negligence per se in South Carolina — meaning the drunk driver's liability is essentially automatic. Do not discuss the accident with the other driver's insurance. Contact Roden Law as soon as possible so we can preserve evidence including police reports and toxicology results."
-                    },
-                    {
-                        "question": "Is there an emergency room on Folly Beach?",
-                        "answer": "No. The closest emergency room is HCA Healthcare James Island ER at 945 Folly Road on James Island, approximately 10 minutes from Folly Beach. For severe trauma, MUSC Medical Center is approximately 20 minutes away in downtown Charleston."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/charleston/hollywood/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Hollywood",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "I was injured in a farming or agricultural accident near Hollywood — can Roden Law help?",
-                        "answer": "Yes. Agricultural and farming accidents can involve workers' compensation claims, product liability claims against equipment manufacturers, or personal injury claims against negligent parties. Our attorneys evaluate all potential sources of compensation. Contact us for a free case review."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
         "/locations/south-carolina/charleston/isle-of-palms/": {
             "type": "location",
             "status": "publish",
@@ -10491,74 +9899,6 @@
                 "_roden_sol_sc": "S.C. Code § 15-3-530"
             }
         },
-        "/locations/south-carolina/charleston/johns-island/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Johns Island",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Is there an emergency room on Johns Island?",
-                        "answer": "Not currently. Roper St. Francis has a primary care facility at Freshfields Village, but it is not a full emergency room. The nearest full-service ERs are Bon Secours St. Francis Hospital in West Ashley (approximately 20 minutes) and MUSC Medical Center in downtown Charleston. MUSC has plans for a Sea Islands Medical Pavilion that will bring emergency services closer to Johns Island in the future."
-                    },
-                    {
-                        "question": "I was in an accident on Bohicket Road — who is responsible for road maintenance?",
-                        "answer": "Road maintenance responsibility depends on the specific section. Bohicket Road is a state-maintained road under SCDOT jurisdiction. If a road defect — potholes, missing signage, inadequate markings — contributed to your accident, the government entity responsible for maintenance may bear partial liability. Our attorneys investigate all contributing factors including road conditions."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/charleston/kiawah-island/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Kiawah Island",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "I was injured at the Kiawah Island Resort — who is responsible?",
-                        "answer": "Liability depends on what caused your injury. The resort, hotel operator, golf course management, pool maintenance company, or property management firm may be liable depending on the circumstances. Premises liability claims at resort properties can be complex and often involve corporate defendants with experienced legal teams. Contact Roden Law for a free evaluation."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/charleston/mcclellanville/": {
-            "type": "location",
-            "status": "publish",
-            "title": "McClellanville",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "I was injured working on a commercial fishing boat out of McClellanville — does Roden Law handle maritime cases?",
-                        "answer": "Yes. Maritime injury claims — including Jones Act claims for seamen and Longshore and Harbor Workers' Compensation Act claims — are a practice area of our firm. Maritime law differs significantly from standard personal injury law, with different statutes, filing requirements, and potential damages. Contact us for a free evaluation of your maritime injury case."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/charleston/meggett/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Meggett",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "How far is the nearest hospital from Meggett?",
-                        "answer": "The nearest full-service hospital is Bon Secours St. Francis Hospital in West Ashley, approximately 25 minutes from Meggett. For severe trauma, MUSC Medical Center in downtown Charleston is approximately 30-35 minutes away. This distance from emergency care is an important factor in personal injury cases, as delayed treatment can worsen outcomes."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
         "/locations/south-carolina/charleston/mount-pleasant/": {
             "type": "location",
             "status": "publish",
@@ -10581,70 +9921,6 @@
                     {
                         "question": "Can Roden Law handle my Mount Pleasant accident case from your Charleston office?",
                         "answer": "Yes. Our Charleston office at 127 King Street is just minutes from Mount Pleasant via the Ravenel Bridge. All Mount Pleasant personal injury cases are filed in Charleston County Circuit Court, which is the same court our attorneys practice in daily. We serve all of the East Cooper area from our Charleston location."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/charleston/ravenel/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Ravenel",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "A truck caused my accident on Savannah Highway near Ravenel — can I sue the trucking company?",
-                        "answer": "Yes. South Carolina law allows you to pursue claims against both the truck driver and the trucking company. The company may be liable under the legal theory of respondeat superior (employer liability) or through its own negligence in hiring, training, or supervising the driver. Our attorneys investigate all potentially liable parties in trucking cases."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/charleston/seabrook-island/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Seabrook Island",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "I was injured in an equestrian accident on Seabrook Island — can I file a claim?",
-                        "answer": "South Carolina's equine liability laws provide some protections for equestrian activity operators, but these protections do not extend to negligence. If your injury resulted from negligent supervision, defective equipment, or failure to warn of known hazards, you may have a claim. Contact Roden Law for a free evaluation of your specific circumstances."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/charleston/sullivans-island/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Sullivan's Island",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "I was hit by a car while cycling on Sullivan's Island — what are my rights?",
-                        "answer": "South Carolina law gives cyclists the same rights and responsibilities as motor vehicle drivers. If a driver struck you due to negligence — failing to maintain safe distance, distracted driving, or failing to yield — you have the right to pursue compensation for your injuries. Sullivan's Island's narrow roads and mixed traffic make these accidents unfortunately common."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/charleston/wadmalaw-island/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Wadmalaw Island",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "I was hit by a drunk driver leaving a Wadmalaw Island vineyard — what are my options?",
-                        "answer": "You may have claims against both the drunk driver and potentially the establishment that over-served them under South Carolina's dram shop laws. South Carolina allows limited claims against alcohol vendors who serve alcohol to visibly intoxicated persons or minors. Our attorneys investigate all potential sources of liability and compensation."
                     }
                 ],
                 "_roden_jurisdiction": "SC",
@@ -10720,54 +9996,6 @@
                 "_roden_sol_sc": "S.C. Code § 15-3-530"
             }
         },
-        "/locations/south-carolina/columbia/blythewood/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Blythewood",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Where is the nearest emergency room to Blythewood?",
-                        "answer": "Providence Health Northeast on Gateway Corporate Boulevard is the nearest hospital with emergency services, located approximately 15 minutes south along I-77. Prisma Health Richland Hospital in downtown Columbia is the closest Level I Trauma Center for severe injuries."
-                    },
-                    {
-                        "question": "My accident was near Fort Jackson — does that affect my case?",
-                        "answer": "If your accident occurred on public roads near Fort Jackson, standard South Carolina personal injury law applies. If the accident involved a military vehicle or occurred on the installation itself, federal tort claims procedures may apply. Our attorneys can evaluate the specific circumstances of your case."
-                    },
-                    {
-                        "question": "How much is my Blythewood accident case worth?",
-                        "answer": "Every case is unique. Compensation depends on the severity of your injuries, medical expenses, lost wages, pain and suffering, and other factors. We provide a free case evaluation to assess the potential value of your claim. Call (803) 219-2816 — there's no fee unless we win."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/columbia/camden/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Camden",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Does Roden Law handle cases in Kershaw County?",
-                        "answer": "Yes. Our Columbia office at 1545 Sumter Street serves clients throughout Kershaw County. Camden cases are filed in Kershaw County Circuit Court. Call (803) 219-2816."
-                    },
-                    {
-                        "question": "Where is the emergency room in Camden?",
-                        "answer": "MUSC Health Kershaw Medical Center on Roberts Street has a 24/7 emergency department. For severe trauma, Prisma Health Richland Hospital in Columbia is the nearest Level I Trauma Center, approximately 30-35 minutes via I-20 or US-1."
-                    },
-                    {
-                        "question": "What is the statute of limitations in Kershaw County?",
-                        "answer": "The same 3-year statute of limitations applies throughout South Carolina (S.C. Code § 15-3-530), including Kershaw County. Contact Roden Law promptly to protect your rights."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
         "/locations/south-carolina/columbia/cayce/": {
             "type": "location",
             "status": "publish",
@@ -10810,30 +10038,6 @@
                     {
                         "question": "Where should I go for emergency treatment after a Chapin accident?",
                         "answer": "Prisma Health Baptist Parkridge Hospital in Irmo is the closest hospital with a full emergency department. Lexington Medical Center in West Columbia is also accessible via I-26. For life-threatening injuries, Prisma Health Richland Hospital in Columbia is the nearest Level I Trauma Center."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/columbia/dentsville/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Dentsville",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Why is Two Notch Road so dangerous near Dentsville?",
-                        "answer": "Two Notch Road is one of the longest and most heavily traveled corridors in the Columbia area. Through Dentsville, it carries a mix of commuter, commercial, and retail traffic with numerous signalized intersections, shopping center entrances, and lane changes. The Sparkleberry Lane intersection handles high volumes from the Village at Sandhill, creating frequent turning-movement conflicts."
-                    },
-                    {
-                        "question": "Which emergency room is closest to Dentsville?",
-                        "answer": "Providence Health Northeast on Gateway Corporate Boulevard is the closest hospital with a full-service emergency room. Prisma Health Richland Hospital in downtown Columbia, the Midlands' only Level I Trauma Center, is approximately 10 minutes south via I-77."
-                    },
-                    {
-                        "question": "How long do I have to file an injury claim after a Dentsville accident?",
-                        "answer": "South Carolina's statute of limitations is 3 years from the date of the accident (S.C. Code § 15-3-530). Contact Roden Law at (803) 219-2816 as soon as possible to preserve evidence and protect your rights."
                     }
                 ],
                 "_roden_jurisdiction": "SC",
@@ -10888,102 +10092,6 @@
                 "_roden_sol_sc": "S.C. Code § 15-3-530"
             }
         },
-        "/locations/south-carolina/columbia/gaston/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Gaston",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "How far is the nearest hospital from Gaston?",
-                        "answer": "Lexington Medical Center in West Columbia is approximately 20 minutes north. For life-threatening injuries, call 911 for emergency transport to the nearest appropriate facility."
-                    },
-                    {
-                        "question": "Does Roden Law handle truck accident cases in Gaston?",
-                        "answer": "Yes. US-321 carries commercial truck traffic, and our attorneys handle truck accident cases involving FMCSA violations, driver fatigue, overloaded cargo, and other trucking negligence. Call (803) 219-2816."
-                    },
-                    {
-                        "question": "What if my accident happened on a rural road with no witnesses?",
-                        "answer": "Our attorneys use accident reconstruction, vehicle black box data, road condition evidence, and other investigative tools to build your case even without eyewitnesses. Contact us for a free evaluation."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/columbia/hopkins/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Hopkins",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Where is the nearest emergency room to Hopkins?",
-                        "answer": "Prisma Health Richland Hospital in Columbia is the nearest major hospital with a Level I Trauma Center, approximately 20-25 minutes north via Garners Ferry Road. There are no hospitals within the Hopkins community itself."
-                    },
-                    {
-                        "question": "Does Roden Law handle accidents on rural roads?",
-                        "answer": "Yes. Our attorneys handle cases involving all road types, including rural two-lane roads where unique hazards like limited lighting, no shoulders, and agricultural equipment contribute to accidents."
-                    },
-                    {
-                        "question": "What if a deer or animal caused my accident in Hopkins?",
-                        "answer": "While you cannot sue an animal, you may have a claim against your own insurance through comprehensive coverage, or against another party if their negligence contributed to the accident (such as a property owner who failed to maintain fencing). Contact us for a free evaluation."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/columbia/irmo/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Irmo",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Irmo straddles two counties — how does that affect my accident case?",
-                        "answer": "Irmo sits on the Lexington-Richland county line. The exact location of your accident determines which county circuit court has jurisdiction. Accidents on the Lexington County side are filed in Lexington County Circuit Court (11th Judicial Circuit), while those on the Richland County side are filed in Richland County Circuit Court (5th Judicial Circuit). Our attorneys practice in both courts."
-                    },
-                    {
-                        "question": "What hospital should I go to after an accident in Irmo?",
-                        "answer": "Prisma Health Baptist Parkridge Hospital on Medical Park Road is located directly in Irmo and has a 24/7 emergency department. Lexington Medical Center Irmo on St. Andrews Road also provides urgent care. For severe trauma, Prisma Health Richland Hospital in Columbia is the closest Level I Trauma Center."
-                    },
-                    {
-                        "question": "Are Lake Murray boating accidents covered under personal injury law?",
-                        "answer": "Yes. Boating accidents on Lake Murray can give rise to personal injury claims if another party's negligence caused your injuries. South Carolina's 3-year statute of limitations applies. Our attorneys handle both motor vehicle and boating accident cases throughout the Midlands."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/columbia/lexington/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Lexington",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "My accident happened in Lexington — will my case be in Richland or Lexington County?",
-                        "answer": "If your accident occurred within Lexington County, your personal injury lawsuit will typically be filed in Lexington County Circuit Court (11th Judicial Circuit), located in the Town of Lexington. Roden Law's attorneys practice in both Richland and Lexington County courts and handle cases throughout the Columbia metro."
-                    },
-                    {
-                        "question": "Where is the nearest emergency room to Lexington, SC?",
-                        "answer": "Lexington Medical Center on Sunset Boulevard in West Columbia is the nearest major hospital and is ranked the #1 hospital in the Columbia metro by U.S. News & World Report. Its emergency department treats nearly 85,000 patients annually. The hospital is a short drive from most Lexington neighborhoods."
-                    },
-                    {
-                        "question": "What is the statute of limitations for a car accident in Lexington County?",
-                        "answer": "South Carolina has a 3-year statute of limitations for personal injury claims (S.C. Code § 15-3-530). This applies throughout the state, including Lexington County. Missing this deadline means permanently losing your right to pursue compensation."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
         "/locations/south-carolina/columbia/lugoff/": {
             "type": "location",
             "status": "publish",
@@ -11002,78 +10110,6 @@
                     {
                         "question": "How long do I have to file a claim after a Lugoff accident?",
                         "answer": "South Carolina's 3-year statute of limitations applies (S.C. Code § 15-3-530). Contact Roden Law promptly to protect your rights. Call (803) 219-2816."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/columbia/oak-grove/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Oak Grove",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Which court handles personal injury cases from Oak Grove?",
-                        "answer": "Oak Grove falls within Lexington County, so personal injury lawsuits are filed in Lexington County Circuit Court (11th Judicial Circuit). Roden Law's attorneys regularly practice in Lexington County court."
-                    },
-                    {
-                        "question": "What if I was partially at fault for my Oak Grove accident?",
-                        "answer": "South Carolina uses a modified comparative fault rule — you can recover damages as long as you are less than 51% at fault. Your compensation is reduced by your percentage of fault. For example, if you're 30% at fault on a $100,000 claim, you recover $70,000. Our attorneys work to minimize any fault assigned to you."
-                    },
-                    {
-                        "question": "How quickly should I contact an attorney after an accident?",
-                        "answer": "As soon as possible. While you have 3 years to file, critical evidence such as surveillance footage, vehicle black box data, and witness memories can deteriorate within days or weeks. Early attorney involvement also prevents costly mistakes with insurance adjusters. Call (803) 219-2816."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/columbia/pelion/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Pelion",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Can Roden Law handle my case even though Pelion is far from Columbia?",
-                        "answer": "Yes. Our Columbia office serves all of Lexington County, including the rural southwestern communities. We can arrange phone or video consultations for convenience, and all Lexington County cases are filed in the same Lexington County Circuit Court."
-                    },
-                    {
-                        "question": "What are common causes of rural road accidents near Pelion?",
-                        "answer": "Common causes include speed-related crashes on two-lane roads, failure to yield at rural intersections, limited sight lines around curves and hills, agricultural equipment conflicts, and impaired driving. Our attorneys understand the unique challenges of rural accident cases."
-                    },
-                    {
-                        "question": "Where is the nearest emergency room to Pelion?",
-                        "answer": "Lexington Medical Center in West Columbia is the nearest major hospital, approximately 25-30 minutes north. Call 911 for emergency transport."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/columbia/pine-ridge/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Pine Ridge",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Is Pine Ridge in Lexington County?",
-                        "answer": "Yes. Personal injury cases from Pine Ridge are filed in Lexington County Circuit Court (11th Judicial Circuit)."
-                    },
-                    {
-                        "question": "Where is the nearest emergency room?",
-                        "answer": "Lexington Medical Center in West Columbia is the closest major hospital, approximately 5-10 minutes away on Sunset Boulevard."
-                    },
-                    {
-                        "question": "How do I pay for a lawyer after my Pine Ridge accident?",
-                        "answer": "Roden Law works on a contingency fee basis — you pay nothing upfront and owe no attorney fees unless we recover compensation for you. Call (803) 219-2816 for a free case review."
                     }
                 ],
                 "_roden_jurisdiction": "SC",
@@ -11104,102 +10140,6 @@
                 "_roden_sol_sc": "S.C. Code § 15-3-530"
             }
         },
-        "/locations/south-carolina/columbia/seven-oaks/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Seven Oaks",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "What is 'Malfunction Junction' and why is it dangerous?",
-                        "answer": "Malfunction Junction is the local name for the I-20/I-26 interchange on the eastern edge of Seven Oaks. It recorded 91 collisions in a recent reporting period, including 2 fatal crashes. The complexity of merging interstate traffic, combined with heavy local and regional volumes, creates a confusing and dangerous driving environment. The SCDOT's Carolina Crossroads project is implementing phased improvements."
-                    },
-                    {
-                        "question": "Is Seven Oaks in Lexington or Richland County?",
-                        "answer": "Seven Oaks is in Lexington County. Personal injury cases from Seven Oaks are filed in Lexington County Circuit Court (11th Judicial Circuit). However, the community borders Richland County, so accidents near the county line may fall under either jurisdiction — our attorneys practice in both courts."
-                    },
-                    {
-                        "question": "How much does it cost to hire Roden Law for a Seven Oaks accident?",
-                        "answer": "Nothing upfront. We work on a contingency fee basis — you pay no attorney fees unless we recover compensation for you. If there is no recovery, there is no fee. Call (803) 219-2816 for a free case review."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/columbia/south-congaree/": {
-            "type": "location",
-            "status": "publish",
-            "title": "South Congaree",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Which court handles South Congaree accident cases?",
-                        "answer": "South Congaree is in Lexington County. Cases are filed in Lexington County Circuit Court (11th Judicial Circuit)."
-                    },
-                    {
-                        "question": "How far is the nearest hospital from South Congaree?",
-                        "answer": "Lexington Medical Center in West Columbia is approximately 10-15 minutes north on US-321."
-                    },
-                    {
-                        "question": "What if the other driver's insurance is offering me a quick settlement?",
-                        "answer": "Be cautious of quick settlement offers — they are almost always far below the true value of your claim, especially before you know the full extent of your injuries. Consult with an attorney before accepting any offer. Roden Law provides free case evaluations. Call (803) 219-2816."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/columbia/springdale/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Springdale",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Is Springdale in Lexington County?",
-                        "answer": "Yes. Personal injury cases from Springdale are filed in Lexington County Circuit Court (11th Judicial Circuit). Roden Law's attorneys practice in both Lexington and Richland County courts."
-                    },
-                    {
-                        "question": "Where is the nearest hospital to Springdale?",
-                        "answer": "Lexington Medical Center on Sunset Boulevard in West Columbia is the closest major hospital, approximately 5-10 minutes away."
-                    },
-                    {
-                        "question": "How much does a Roden Law consultation cost?",
-                        "answer": "Nothing. We provide free, no-obligation case evaluations and work on a contingency fee basis — you pay nothing unless we recover compensation for you. Call (803) 219-2816."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/columbia/st-andrews/": {
-            "type": "location",
-            "status": "publish",
-            "title": "St. Andrews",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Why is Broad River Road so dangerous?",
-                        "answer": "Broad River Road carries heavy volumes of commuter, commercial, and university-related traffic. The road links residential neighborhoods, retail areas, and university routes while handling drivers from across the region. Rush-hour congestion, combined with multiple intersection conflict points and the I-26 interchange, creates conditions for frequent and serious accidents."
-                    },
-                    {
-                        "question": "Is St. Andrews in the city of Columbia?",
-                        "answer": "St. Andrews is an unincorporated census-designated place in Richland County — it is not within the incorporated city limits of Columbia. Personal injury cases are filed in Richland County Circuit Court (5th Judicial Circuit), and law enforcement jurisdiction typically falls under the Richland County Sheriff's Department or South Carolina Highway Patrol."
-                    },
-                    {
-                        "question": "How do I get a copy of my accident report from St. Andrews?",
-                        "answer": "If the Richland County Sheriff's Department or SC Highway Patrol responded to your accident, you can request a copy of the report from the responding agency. Accident reports are typically available within 10 business days. Our office can assist you in obtaining your report as part of your case evaluation."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
         "/locations/south-carolina/columbia/west-columbia/": {
             "type": "location",
             "status": "publish",
@@ -11218,30 +10158,6 @@
                     {
                         "question": "Does Roden Law handle cases in Lexington County courts?",
                         "answer": "Yes. West Columbia falls within Lexington County, and our attorneys regularly practice in Lexington County Circuit Court. Our Columbia office at 1545 Sumter Street is centrally located to serve both Richland and Lexington County residents. Call (803) 219-2816 for a free case review."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/columbia/woodfield/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Woodfield",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "How long do I have to file a claim after a Woodfield accident?",
-                        "answer": "South Carolina's statute of limitations is 3 years from the date of the accident (S.C. Code § 15-3-530). Contact Roden Law promptly to preserve critical evidence."
-                    },
-                    {
-                        "question": "What hospital is closest to Woodfield?",
-                        "answer": "Providence Health Northeast on Gateway Corporate Boulevard is the nearest emergency room. Prisma Health Richland Hospital in downtown Columbia is the closest Level I Trauma Center for severe injuries."
-                    },
-                    {
-                        "question": "Can Roden Law handle my case if the other driver was uninsured?",
-                        "answer": "Yes. You may be able to recover through your own uninsured/underinsured motorist (UM/UIM) coverage. Our attorneys will identify all available insurance sources and pursue every avenue of compensation. Call (803) 219-2816 for a free case review."
                     }
                 ],
                 "_roden_jurisdiction": "SC",
@@ -11317,126 +10233,6 @@
                 "_roden_sol_sc": "S.C. Code § 15-3-530"
             }
         },
-        "/locations/south-carolina/myrtle-beach/atlantic-beach/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Atlantic Beach",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Does Roden Law serve Atlantic Beach?",
-                        "answer": "Yes. We serve all communities in Horry County. Atlantic Beach cases are filed in Horry County Circuit Court."
-                    },
-                    {
-                        "question": "What is the statute of limitations?",
-                        "answer": "3 years (S.C. Code § 15-3-530). Call (843) 612-1980."
-                    },
-                    {
-                        "question": "Where is the nearest emergency room?",
-                        "answer": "Grand Strand Medical Center in Myrtle Beach and McLeod Seacoast Hospital in Little River are both approximately 15 minutes away."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/myrtle-beach/aynor/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Aynor",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Can Roden Law handle a case from Aynor even though your office is on the coast?",
-                        "answer": "Yes. All Horry County personal injury cases are filed in Horry County Circuit Court in Conway, which is between Aynor and our Murrells Inlet office. Our attorneys serve all of Horry County."
-                    },
-                    {
-                        "question": "What is the statute of limitations for an Aynor accident?",
-                        "answer": "South Carolina’s 3-year statute of limitations (S.C. Code § 15-3-530) applies. Contact Roden Law at (843) 612-1980."
-                    },
-                    {
-                        "question": "Where is the nearest emergency room to Aynor?",
-                        "answer": "Conway Medical Center is approximately 20 minutes east and McLeod Loris Hospital is approximately 15 minutes north. For severe trauma, patients are airlifted to Grand Strand Medical Center in Myrtle Beach."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/myrtle-beach/briarcliffe-acres/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Briarcliffe Acres",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Where are Briarcliffe Acres accident cases filed?",
-                        "answer": "Briarcliffe Acres is in Horry County, so cases are filed in Horry County Circuit Court in Conway."
-                    },
-                    {
-                        "question": "Where is the nearest hospital?",
-                        "answer": "Grand Strand Medical Center in Myrtle Beach is the closest full-service hospital and the region’s only Level I Trauma Center."
-                    },
-                    {
-                        "question": "What is the statute of limitations?",
-                        "answer": "3 years (S.C. Code § 15-3-530). Call (843) 612-1980."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/myrtle-beach/bucksport/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Bucksport",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Does Roden Law handle cases from Bucksport?",
-                        "answer": "Yes. We serve all of Horry County. Bucksport cases are filed in Horry County Circuit Court in Conway."
-                    },
-                    {
-                        "question": "Where is the nearest hospital?",
-                        "answer": "Conway Medical Center is approximately 10 minutes north."
-                    },
-                    {
-                        "question": "What is the filing deadline?",
-                        "answer": "3 years from the accident date under South Carolina law (S.C. Code § 15-3-530). Call (843) 612-1980."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/myrtle-beach/burgess/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Burgess",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Where are Burgess accident cases filed?",
-                        "answer": "Personal injury cases from Burgess are filed in Horry County Circuit Court in Conway."
-                    },
-                    {
-                        "question": "Where is the nearest hospital?",
-                        "answer": "Tidelands Waccamaw Community Hospital in Murrells Inlet is the closest, approximately 5 minutes away."
-                    },
-                    {
-                        "question": "What is the statute of limitations?",
-                        "answer": "3 years from the date of the accident (S.C. Code § 15-3-530). Call Roden Law at (843) 612-1980."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
         "/locations/south-carolina/myrtle-beach/carolina-forest/": {
             "type": "location",
             "status": "publish",
@@ -11485,78 +10281,6 @@
                 "_roden_sol_sc": "S.C. Code § 15-3-530"
             }
         },
-        "/locations/south-carolina/myrtle-beach/forestbrook/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Forestbrook",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Where is the nearest emergency room to Forestbrook?",
-                        "answer": "Tidelands Waccamaw Community Hospital in Murrells Inlet and the South Strand Medical Center ER on US-17 Bypass are both approximately 5-10 minutes from Forestbrook, depending on your location within the community."
-                    },
-                    {
-                        "question": "My accident was on Forestbrook Road — can Roden Law help?",
-                        "answer": "Yes. Forestbrook Road accidents are filed in Horry County Circuit Court. Our attorneys handle cases throughout the Forestbrook and South Strand area. Call (843) 612-1980 for a free case review."
-                    },
-                    {
-                        "question": "What is South Carolina’s comparative fault rule?",
-                        "answer": "South Carolina uses modified comparative fault — you can recover damages if you are less than 51% at fault. Your compensation is reduced by your fault percentage. Our attorneys work to minimize any fault assigned to you."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/myrtle-beach/galivants-ferry/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Galivants Ferry",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Does Roden Law serve Galivants Ferry?",
-                        "answer": "Yes. We handle cases throughout all of Horry County. Cases are filed in Horry County Circuit Court in Conway."
-                    },
-                    {
-                        "question": "Where is the nearest hospital?",
-                        "answer": "Conway Medical Center is approximately 15 minutes east on US-501."
-                    },
-                    {
-                        "question": "What is the filing deadline?",
-                        "answer": "3 years (S.C. Code § 15-3-530). Call (843) 612-1980."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/myrtle-beach/garden-city-beach/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Garden City Beach",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "I was injured at the Garden City Pier — do I have a premises liability case?",
-                        "answer": "Potentially yes. If you were injured due to a hazardous condition on the pier — wet surfaces, broken railings, inadequate lighting — the property owner may be liable under South Carolina premises liability law. Document the hazard with photos, report the incident, and contact Roden Law for a free evaluation."
-                    },
-                    {
-                        "question": "Which hospital is closest to Garden City Beach?",
-                        "answer": "Tidelands Waccamaw Community Hospital in Murrells Inlet is the closest full-service hospital, approximately 5 minutes south on US-17. For the most severe trauma, Grand Strand Medical Center in Myrtle Beach is the nearest Level I Trauma Center."
-                    },
-                    {
-                        "question": "How does Roden Law handle Garden City Beach accident cases?",
-                        "answer": "Our Murrells Inlet office is minutes from Garden City Beach. All Garden City cases are filed in Horry County Circuit Court. We work on a contingency fee basis — no fees unless we win compensation for you. Call (843) 612-1980."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
         "/locations/south-carolina/myrtle-beach/georgetown/": {
             "type": "location",
             "status": "publish",
@@ -11575,54 +10299,6 @@
                     {
                         "question": "How long do I have to file an injury claim after a Georgetown accident?",
                         "answer": "South Carolina’s 3-year statute of limitations (S.C. Code § 15-3-530) applies. You must file within 3 years of the accident date. Contact Roden Law promptly to preserve evidence and protect your rights."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/myrtle-beach/green-sea/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Green Sea",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Does Roden Law handle cases from Green Sea?",
-                        "answer": "Yes. All Horry County cases are filed in Horry County Circuit Court in Conway. We serve the entire county."
-                    },
-                    {
-                        "question": "Where is the nearest hospital?",
-                        "answer": "McLeod Loris Hospital is approximately 10 minutes south."
-                    },
-                    {
-                        "question": "What is the statute of limitations?",
-                        "answer": "3 years (S.C. Code § 15-3-530). Call (843) 612-1980."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/myrtle-beach/litchfield-beach/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Litchfield Beach",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Is Litchfield Beach in Horry County or Georgetown County?",
-                        "answer": "Litchfield Beach is in Georgetown County. Personal injury lawsuits are filed in Georgetown County Court of Common Pleas. Our attorneys practice in both Horry and Georgetown County courts."
-                    },
-                    {
-                        "question": "Where is the nearest hospital?",
-                        "answer": "Tidelands Waccamaw Community Hospital in Murrells Inlet is approximately 5-10 minutes north on US-17. Tidelands Georgetown Memorial Hospital is approximately 15 minutes south."
-                    },
-                    {
-                        "question": "What is South Carolina’s statute of limitations?",
-                        "answer": "3 years from the date of the accident (S.C. Code § 15-3-530). Contact Roden Law at (843) 612-1980 for a free consultation."
                     }
                 ],
                 "_roden_jurisdiction": "SC",
@@ -11653,54 +10329,6 @@
                 "_roden_sol_sc": "S.C. Code § 15-3-530"
             }
         },
-        "/locations/south-carolina/myrtle-beach/longs/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Longs",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Which hospital should I go to after an accident in Longs?",
-                        "answer": "McLeod Seacoast Hospital in Little River is the nearest option, approximately 10 minutes east on Highway 9. McLeod Loris Hospital is approximately 15 minutes west. For severe trauma requiring a Level I Trauma Center, patients are transported to Grand Strand Medical Center in Myrtle Beach."
-                    },
-                    {
-                        "question": "Do rural road accidents in Longs have different legal considerations?",
-                        "answer": "The legal principles are the same, but rural road accidents in areas like Longs often involve higher speeds, less lighting, and longer emergency response times — factors that can result in more severe injuries. Evidence preservation is also more challenging, making prompt legal consultation important."
-                    },
-                    {
-                        "question": "How long do I have to file an injury claim?",
-                        "answer": "South Carolina’s 3-year statute of limitations (S.C. Code § 15-3-530) applies. Contact Roden Law at (843) 612-1980 as soon as possible after your accident."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/myrtle-beach/loris/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Loris",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Does Roden Law handle cases from the Loris area?",
-                        "answer": "Yes. Our attorneys serve all of Horry County, including Loris and surrounding western Horry County communities. Cases are filed in Horry County Circuit Court in Conway."
-                    },
-                    {
-                        "question": "Where is the nearest hospital to Loris?",
-                        "answer": "McLeod Loris Hospital at 3655 Mitchell Street provides emergency care. For severe trauma, patients are transported to Grand Strand Medical Center in Myrtle Beach."
-                    },
-                    {
-                        "question": "What is the filing deadline for a Loris accident claim?",
-                        "answer": "South Carolina’s 3-year statute of limitations (S.C. Code § 15-3-530) applies. Contact Roden Law promptly at (843) 612-1980."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
         "/locations/south-carolina/myrtle-beach/murrells-inlet/": {
             "type": "location",
             "status": "publish",
@@ -11725,102 +10353,6 @@
                 "_roden_sol_sc": "S.C. Code § 15-3-530"
             }
         },
-        "/locations/south-carolina/myrtle-beach/north-myrtle-beach/": {
-            "type": "location",
-            "status": "publish",
-            "title": "North Myrtle Beach",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Which hospital is closest to North Myrtle Beach for accident injuries?",
-                        "answer": "McLeod Seacoast Hospital at 4000 Highway 9 East in Little River is the closest full-service hospital to most of North Myrtle Beach. For the most severe trauma, Grand Strand Medical Center in Myrtle Beach is the region’s only Level I Trauma Center, approximately 15 minutes south."
-                    },
-                    {
-                        "question": "I was injured as a pedestrian on Main Street in Ocean Drive — do I have a case?",
-                        "answer": "Likely yes. South Carolina law requires drivers to exercise due care to avoid pedestrians. If a driver was speeding, distracted, or failed to yield at a crosswalk, they may be liable for your injuries. The Ocean Drive area has documented pedestrian safety issues. Contact Roden Law for a free evaluation of your case."
-                    },
-                    {
-                        "question": "What is the statute of limitations for a North Myrtle Beach accident?",
-                        "answer": "South Carolina’s 3-year statute of limitations (S.C. Code § 15-3-530) applies. Your lawsuit must be filed within 3 years of the accident date. Contact an attorney promptly to preserve evidence and protect your rights."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/myrtle-beach/pawleys-island/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Pawleys Island",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "My Pawleys Island accident case is in Georgetown County — can Roden Law still help?",
-                        "answer": "Absolutely. Our attorneys are licensed in South Carolina and practice in Georgetown County Court of Common Pleas. Pawleys Island cases are filed in Georgetown County, and our Murrells Inlet office is just 10 minutes north of Pawleys Island."
-                    },
-                    {
-                        "question": "Which hospital should I go to after an accident near Pawleys Island?",
-                        "answer": "Tidelands Waccamaw Community Hospital in Murrells Inlet is approximately 10 minutes north and provides 24-hour emergency care. Tidelands Georgetown Memorial Hospital in Georgetown is approximately 15 minutes south and also offers 24-hour emergency services."
-                    },
-                    {
-                        "question": "What if I was partially at fault for my Pawleys Island accident?",
-                        "answer": "South Carolina uses a modified comparative fault rule — you can recover damages as long as you are less than 51% at fault. Your compensation is reduced by your percentage of fault. For example, if you are 20% at fault on a $100,000 claim, you recover $80,000."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/myrtle-beach/red-hill/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Red Hill",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Where are Red Hill accident cases filed?",
-                        "answer": "Red Hill is in Horry County, so personal injury cases are filed in Horry County Circuit Court in Conway. Our attorneys practice regularly in this court."
-                    },
-                    {
-                        "question": "Where is the nearest hospital to Red Hill?",
-                        "answer": "Conway Medical Center on Singleton Ridge Road is the closest full-service hospital, approximately 5-10 minutes from most of Red Hill."
-                    },
-                    {
-                        "question": "How long do I have to file a claim?",
-                        "answer": "South Carolina’s 3-year statute of limitations (S.C. Code § 15-3-530) applies. Call (843) 612-1980 as soon as possible after your accident."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/myrtle-beach/socastee/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Socastee",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Where do I file a personal injury lawsuit from a Socastee accident?",
-                        "answer": "Socastee is an unincorporated part of Horry County, so personal injury lawsuits are filed in Horry County Circuit Court in Conway. Our attorneys practice regularly in this court and handle cases from throughout the Socastee area."
-                    },
-                    {
-                        "question": "Is there an emergency room in Socastee?",
-                        "answer": "Conway Medical Center is building a new emergency department at its Health Plaza South campus in Socastee, expected to open in October 2026. Until then, the closest ERs are the South Strand Medical Center on US-17 Bypass and Tidelands Waccamaw Community Hospital in Murrells Inlet."
-                    },
-                    {
-                        "question": "What is the statute of limitations for a Socastee accident claim?",
-                        "answer": "South Carolina’s 3-year statute of limitations (S.C. Code § 15-3-530) applies. File your lawsuit within 3 years of the accident date. Contact Roden Law early to preserve evidence."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
         "/locations/south-carolina/myrtle-beach/surfside-beach/": {
             "type": "location",
             "status": "publish",
@@ -11839,30 +10371,6 @@
                     {
                         "question": "How close is Roden Law to Surfside Beach?",
                         "answer": "Our Murrells Inlet office at 631 Bellamy Ave. is approximately 5 minutes south of Surfside Beach on US-17. All Surfside Beach personal injury cases are filed in Horry County Circuit Court, where our attorneys practice regularly."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/myrtle-beach/wampee/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Wampee",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Does Roden Law handle cases from Wampee?",
-                        "answer": "Yes. We serve all of Horry County. Cases are filed in Horry County Circuit Court in Conway."
-                    },
-                    {
-                        "question": "Where is the nearest hospital?",
-                        "answer": "McLeod Seacoast Hospital in Little River is approximately 10 minutes east on SC-9."
-                    },
-                    {
-                        "question": "What is the statute of limitations?",
-                        "answer": "3 years (S.C. Code § 15-3-530). Call (843) 612-1980."
                     }
                 ],
                 "_roden_jurisdiction": "SC",
@@ -11930,26 +10438,6 @@
                 "_roden_sol_sc": "S.C. Code § 15-3-530"
             }
         },
-        "/locations/south-carolina/north-charleston/hanahan/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Hanahan",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Is Hanahan in Charleston County?",
-                        "answer": "No, Hanahan is in Berkeley County. Personal injury lawsuits from Hanahan accidents are filed in Berkeley County Circuit Court. Our attorneys practice in Berkeley County and handle cases from throughout the Hanahan area."
-                    },
-                    {
-                        "question": "I was hit by a truck on Remount Road — who is liable?",
-                        "answer": "Truck accident liability can extend to multiple parties: the truck driver, the trucking company, the vehicle manufacturer, and the cargo loader. Our attorneys investigate all potentially liable parties to maximize your recovery. The Remount Road industrial corridor sees heavy commercial truck traffic, and FMCSA regulation violations are common factors in these cases."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
         "/locations/south-carolina/north-charleston/ladson/": {
             "type": "location",
             "status": "publish",
@@ -11964,22 +10452,6 @@
                     {
                         "question": "Why is the College Park Road interchange so dangerous?",
                         "answer": "I-26 Exit 203 at College Park Road combines high-speed interstate traffic with complex local road patterns. The entrance and exit ramps frequently back up, and the intersection design creates confusion about lane assignments. Commercial truck traffic from nearby industrial areas adds to the danger."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/north-charleston/moncks-corner/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Moncks Corner",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Is there a hospital in Moncks Corner?",
-                        "answer": "Yes. Roper St. Francis Berkeley Hospital at 730 Stony Landing Road provides emergency and acute care services in Moncks Corner. For more specialized trauma care, Trident Medical Center in North Charleston is approximately 25 minutes south via US-52."
                     }
                 ],
                 "_roden_jurisdiction": "SC",
@@ -17017,37 +15489,6 @@
                 "_roden_jurisdiction": "sc"
             }
         },
-        "/resources/construction-zone-accidents-north-charleston/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "North Charleston Construction Zone Accident Rights",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Who is liable for a construction zone accident in North Charleston?",
-                        "answer": "Liability for a North Charleston construction-zone crash can fall on the contractor, subcontractor, SCDOT, or another driver, depending on the cause. Contractors must use proper signage, barriers, and traffic control. When negligent setup, missing warnings, or unsafe lane shifts cause a crash, the responsible company or agency can be held accountable."
-                    },
-                    {
-                        "question": "Can I sue SCDOT for a poorly designed work zone?",
-                        "answer": "You may pursue a claim against the South Carolina Department of Transportation for a hazardous work zone, but claims against state agencies fall under the South Carolina Tort Claims Act, which imposes shorter notice requirements and damage caps. These cases are complex, so prompt legal action is important to preserve your rights."
-                    },
-                    {
-                        "question": "What are common causes of construction zone truck accidents?",
-                        "answer": "Construction-zone truck accidents commonly result from sudden lane narrowing, abrupt stops in backed-up traffic, inadequate or confusing signage, poor lighting, and speeding through reduced-speed areas. Large trucks need extra stopping distance, so when a work zone forces quick maneuvers, rear-end collisions and rollovers become far more likely."
-                    },
-                    {
-                        "question": "Do reduced speed limits in work zones affect my injury claim?",
-                        "answer": "Yes. Reduced work-zone speed limits set the standard of care for drivers, so exceeding them is strong evidence of negligence in your injury claim. South Carolina also increases penalties for work-zone violations. A driver who ignored posted reduced limits can be held liable for crashes caused by that excessive speed."
-                    },
-                    {
-                        "question": "What evidence helps prove a construction zone accident claim?",
-                        "answer": "Strong evidence in a construction-zone claim includes photos of signage, barriers, and lane markings, the traffic-control plan, the contractor's permits, dashcam or surveillance video, and witness statements. Documenting the work zone quickly matters, because contractors often change the layout soon after a crash, erasing proof of unsafe conditions."
-                    }
-                ],
-                "_roden_jurisdiction": "sc"
-            }
-        },
         "/resources/dangerous-roads-north-charleston/": {
             "type": "resource",
             "status": "publish",
@@ -17304,37 +15745,6 @@
                     {
                         "question": "Can I sue if a dump truck caused the crash on Highway 22?",
                         "answer": "Yes. Multiple parties may be liable: the dump truck driver for following too closely or distracted driving, the construction company that owns the truck for overloading or failing to maintain brakes, and potentially SCDOT for inadequate bridge railing design or insufficient warning signage for stopped traffic. South Carolina allows recovery if you are less than 51% at fault."
-                    }
-                ],
-                "_roden_jurisdiction": "sc"
-            }
-        },
-        "/resources/highway-501-truck-accidents-conway-myrtle-beach/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "Highway 501 Truck Accidents: Conway to Myrtle Beach",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "What are the most dangerous intersections on Highway 501 for truck accidents?",
-                        "answer": "The SCDOT Highway Improvement Safety Program ranked Highway 501 and Four Mile Road in Conway as the highest priority for safety improvements, with 42 accidents since 2008 including 2 fatal crashes. Other high-danger intersections include Highway 501 and US-17 Bypass, Carolina Forest Blvd and Highway 501, and US 501 and Seaboard Street."
-                    },
-                    {
-                        "question": "How does the Highway 501 widening project affect truck accident risk?",
-                        "answer": "The active SCDOT widening project creates construction zone hazards including narrowed lanes, lane shifts, temporary routes, and construction equipment operating adjacent to live traffic. Construction zone truck crashes tend to be more severe because concrete barriers trap vehicles in the impact zone."
-                    },
-                    {
-                        "question": "How long do I have to file a truck accident lawsuit in South Carolina?",
-                        "answer": "South Carolina has a 3-year statute of limitations for personal injury claims (S.C. Code 15-3-530). However, you should contact an attorney within 24-48 hours because critical evidence like ELD data and dash cam footage can be destroyed within days."
-                    },
-                    {
-                        "question": "Who is liable for a truck crash in a construction zone on Highway 501?",
-                        "answer": "Construction zone crashes may involve multiple liable parties: the truck driver, the trucking company, the construction contractor responsible for work zone design and signage, SCDOT if the construction plan was defective, and traffic control subcontractors."
-                    },
-                    {
-                        "question": "What should I document at a Highway 501 truck accident scene?",
-                        "answer": "Photograph the truck company name and USDOT number on the cab door, trailer number, cargo type, all vehicle damage, construction zone signage, mile markers, intersection signals, and road conditions."
                     }
                 ],
                 "_roden_jurisdiction": "sc"
@@ -17687,37 +16097,6 @@
                 "_roden_jurisdiction": "ga"
             }
         },
-        "/resources/lexington-county-truck-accidents-distribution-corridor/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "Lexington County Truck Accidents: Distribution Center Corridor",
-            "meta": {
-                "_roden_author_attorney": "Ivy S. Montano",
-                "_roden_faqs": [
-                    {
-                        "question": "Why are truck accidents increasing in Lexington County, SC?",
-                        "answer": "Lexington County is experiencing a distribution center and logistics boom, anchored by developments like Southern Glazer's $80 million facility. Each new distribution center generates hundreds of daily truck trips on roads designed for residential and local commercial traffic. This collision between industrial truck volume and suburban communities is driving a significant increase in truck-passenger vehicle crashes."
-                    },
-                    {
-                        "question": "Can the distribution center be held liable for a truck accident in Lexington County?",
-                        "answer": "Yes. Distribution centers may be liable when they impose unrealistic delivery schedules that pressure drivers to speed or exceed hours-of-service limits, overload trucks beyond weight limits, improperly secure cargo, or fail to maintain safe loading dock operations. A thorough investigation examines the entire chain of liability from the warehouse floor to the road."
-                    },
-                    {
-                        "question": "What types of trucks cause accidents in Lexington County's distribution corridor?",
-                        "answer": "Distribution corridor crashes involve a wider variety of vehicles than typical interstate truck accidents: tractor-trailers delivering to warehouses, box trucks and straight trucks making local deliveries, refrigerated trucks, delivery vans, and sometimes forklifts or yard trucks that enter public roads. Each vehicle type has different regulatory requirements and liability considerations."
-                    },
-                    {
-                        "question": "Are delivery vans and box trucks subject to the same regulations as tractor-trailers?",
-                        "answer": "Not always. FMCSA regulations fully apply to vehicles over 10,001 pounds or those carrying hazardous materials. Smaller delivery vans may fall below this threshold. However, all commercial vehicle operators must follow traffic laws, and their employers can be held liable under the doctrine of respondeat superior when drivers cause crashes while performing job duties."
-                    },
-                    {
-                        "question": "How long do I have to file a lawsuit after a truck accident in Lexington County?",
-                        "answer": "South Carolina has a 3-year statute of limitations for personal injury claims (S.C. Code § 15-3-530). However, distribution corridor cases require immediate attorney involvement because loading dock records, delivery schedules, security camera footage, and weight tickets can be lost or destroyed quickly. Contact Roden Law at (803) 219-2816 within 24-48 hours of the crash."
-                    }
-                ],
-                "_roden_jurisdiction": "sc"
-            }
-        },
         "/resources/logging-truck-accidents-us-17-mcintosh-glynn/": {
             "type": "resource",
             "status": "publish",
@@ -17749,37 +16128,6 @@
                 "_roden_jurisdiction": "ga"
             }
         },
-        "/resources/mount-pleasant-truck-accidents-wando-welch/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "Mount Pleasant Truck Accidents Near Wando Welch Terminal",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Why are there so many truck accidents in Mount Pleasant?",
-                        "answer": "Mount Pleasant is home to the Wando Welch Terminal, the Port of Charleston's highest-volume container terminal. Thousands of loaded tractor-trailers travel through a primarily residential and suburban community daily via Long Point Road and I-526. The road infrastructure was designed for suburban traffic, not industrial truck volumes, creating a fundamental conflict that produces frequent crashes."
-                    },
-                    {
-                        "question": "Is Long Point Road dangerous because of truck traffic?",
-                        "answer": "Yes. Long Point Road is the primary access route between the Wando Welch Terminal and I-526. It carries heavy container truck traffic through a suburban corridor shared with shoppers at Towne Centre, school traffic, and residential commuters. The road lacks dedicated truck lanes, and the mix of 80,000-pound trucks with passenger vehicles at shopping center driveways creates constant hazards."
-                    },
-                    {
-                        "question": "Who is responsible for a chassis defect that caused a truck accident?",
-                        "answer": "Intermodal chassis are typically owned by leasing companies (DCLI, TRAC, Flexi-Van) and circulate among multiple carriers. The chassis owner bears primary responsibility for maintenance, but the driver must also conduct a pre-trip inspection before leaving the terminal. If a chassis defect — such as worn brakes or bald tires — caused the crash, both the chassis leasing company and potentially the driver and motor carrier may be liable."
-                    },
-                    {
-                        "question": "What if I was hit by a port truck while shopping at Towne Centre?",
-                        "answer": "You have a strong claim against the truck driver, the motor carrier, and potentially the chassis leasing company. Shopping center parking lots and driveways on Long Point Road are known conflict zones between port truck traffic and pedestrian/vehicle traffic. If the shopping center's driveway design contributed to the crash, the property owner may also share liability."
-                    },
-                    {
-                        "question": "How long do I have to file a truck accident lawsuit in Mount Pleasant?",
-                        "answer": "South Carolina's statute of limitations is 3 years from the date of injury (S.C. Code Section 15-3-530). However, you should contact an attorney within 24-48 hours because critical evidence — terminal gate records, chassis inspection logs, container weight certificates, and ELD data — can be destroyed or overwritten within days if not specifically preserved through a legal demand."
-                    }
-                ],
-                "_roden_jurisdiction": "sc"
-            }
-        },
         "/resources/north-charleston-truck-accident-guide/": {
             "type": "resource",
             "status": "publish",
@@ -17809,37 +16157,6 @@
                     }
                 ],
                 "_roden_jurisdiction": "sc"
-            }
-        },
-        "/resources/ogeechee-road-truck-accidents-savannah/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "Ogeechee Road Truck Accidents in Savannah",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "Why is Ogeechee Road so dangerous for truck accidents?",
-                        "answer": "Ogeechee Road (US-17 Alt) is a major commercial corridor that runs directly through residential neighborhoods in south Savannah. The road carries heavy truck traffic from industrial areas, distribution centers, and the Port of Savannah, while apartment complexes, homes, and mobile home communities line both sides. The wide, multi-lane road design encourages high speeds, but constant driveway conflicts, pedestrian crossings, and turning traffic create a deadly mismatch between road speed and road conditions."
-                    },
-                    {
-                        "question": "What happened in the 2023 truck crash into a building on Ogeechee Road?",
-                        "answer": "In January 2023, a truck crashed into a building on Ogeechee Road, killing two people. The crash illustrates a particularly dangerous aspect of this corridor: commercial buildings sit close to travel lanes with minimal setback and no protective barriers. When a truck loses control due to mechanical failure, driver distraction, or other causes, nearby building occupants face a threat that no building code anticipates."
-                    },
-                    {
-                        "question": "Can I sue if a truck crash on Ogeechee Road killed a family member?",
-                        "answer": "Yes. Georgia's wrongful death statute (O.C.G.A. Section 51-4-1) allows the surviving spouse, children, or parents to file a claim for the full value of the life lost. In truck crash wrongful death cases, multiple parties may be liable including the truck driver, trucking company, vehicle manufacturer, and potentially government entities responsible for road design. You have 2 years to file from the date of death."
-                    },
-                    {
-                        "question": "Who is responsible for pedestrian safety on Ogeechee Road?",
-                        "answer": "Multiple parties share responsibility. Truck drivers must exercise due care around pedestrians. The City of Savannah and GDOT have a duty to install protected pedestrian crossings, adequate lighting, and sidewalks in residential areas. Commercial property owners must maintain safe sight lines at driveways. When these duties are breached and a pedestrian is injured, one or more of these parties may be liable for damages."
-                    },
-                    {
-                        "question": "How do I preserve evidence after a truck accident on Ogeechee Road?",
-                        "answer": "Contact a truck accident attorney within 24-48 hours. Your attorney will send preservation letters to the trucking company demanding they preserve the truck's ELD (electronic logging device) data, event data recorder (the truck's black box), dash cam footage, maintenance records, and driver qualification files. Nearby businesses along Ogeechee Road may have surveillance cameras that captured the crash. This evidence can be overwritten or destroyed within days if not formally preserved."
-                    }
-                ],
-                "_roden_jurisdiction": "ga"
             }
         },
         "/resources/pedestrian-bicycle-safety-north-charleston/": {
@@ -17966,37 +16283,6 @@
                 "_roden_jurisdiction": "sc"
             }
         },
-        "/resources/port-of-charleston-truck-routes/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "Port of Charleston Truck Routes: Hugh Leatherman &amp; Wando Welch Terminals",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Who is responsible when a port truck causes an accident in Charleston?",
-                        "answer": "Port truck accidents often involve multiple liable parties: the truck driver, the motor carrier, the chassis leasing company, the shipping line, the terminal operator, and sometimes a freight broker. Each entity may bear responsibility for different aspects of the crash — for example, the chassis lessor for brake defects and the shipping line for an overweight container. An attorney must investigate the full intermodal chain."
-                    },
-                    {
-                        "question": "What is a chassis pool and why does it matter in a truck accident case?",
-                        "answer": "A chassis pool is a shared fleet of wheeled frames that carry shipping containers. In Charleston, chassis from companies like DCLI, TRAC, and Flexi-Van circulate among dozens of drivers and carriers. Because no single driver \"owns\" the chassis, maintenance often falls through the cracks — leading to brake failures, tire blowouts, and lighting defects. The chassis pool operator may be liable for crashes caused by poor maintenance."
-                    },
-                    {
-                        "question": "How do overweight containers cause truck accidents?",
-                        "answer": "Federal law limits truck gross vehicle weight to 80,000 pounds. Overseas shipping containers frequently exceed this limit or contain improperly distributed cargo. An overweight truck has longer stopping distances, higher rollover risk on curves, and causes more severe damage in collisions. The shipping line and terminal operator share liability for releasing overweight containers."
-                    },
-                    {
-                        "question": "What evidence should I collect at a port truck accident scene?",
-                        "answer": "In addition to standard accident documentation, photograph the USDOT number on the cab door, the chassis number and chassis pool markings, the container number, and any visible cargo securement issues (twist locks, container alignment). Note which terminal the truck came from if visible. This information is essential for identifying all liable parties in the intermodal chain."
-                    },
-                    {
-                        "question": "Which roads in Charleston have the most port truck traffic?",
-                        "answer": "The heaviest port truck corridors are I-526 (connecting both terminals), I-26 (inland freight route), Port Access Road (Hugh Leatherman Terminal access), Long Point Road (Wando Welch Terminal access), and Rivers Avenue/US-52 (North Charleston commercial corridor). The I-26/I-526 interchange is the single most dangerous merge point, with 354 collisions recorded over 5 years."
-                    }
-                ],
-                "_roden_jurisdiction": "sc"
-            }
-        },
         "/resources/port-of-savannah-truck-routes/": {
             "type": "resource",
             "status": "publish",
@@ -18028,37 +16314,6 @@
                 "_roden_jurisdiction": "ga"
             }
         },
-        "/resources/rideshare-accident-north-charleston/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "Rideshare Accident Claims in North Charleston: Uber & Lyft Guide",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Who pays for an Uber or Lyft accident in North Charleston?",
-                        "answer": "Who pays after a North Charleston rideshare crash depends on the driver's app status. When the app is off, the driver's personal insurance applies. When the driver is logged in and available, limited rideshare coverage applies. When carrying a passenger or en route to one, Uber and Lyft's one-million-dollar liability policy typically applies."
-                    },
-                    {
-                        "question": "Does Uber's $1 million insurance always cover my injuries?",
-                        "answer": "No. Uber and Lyft's one-million-dollar liability coverage applies only during an active trip, meaning the driver has accepted a ride or has a passenger aboard. If the driver was offline or merely waiting for a request, lower coverage tiers apply, and the rideshare company's full policy will not be available."
-                    },
-                    {
-                        "question": "What insurance applies when a rideshare driver is waiting for a ride request?",
-                        "answer": "When a rideshare driver is logged into the app but has not yet accepted a trip, Uber and Lyft provide contingent liability coverage of roughly fifty thousand dollars per person and one hundred thousand per accident for injuries to others, plus property damage. This fills gaps where the driver's personal policy excludes rideshare use."
-                    },
-                    {
-                        "question": "Can I sue Uber or Lyft directly after a North Charleston crash?",
-                        "answer": "Usually you pursue the company's insurance policy rather than suing Uber or Lyft directly, because drivers are classified as independent contractors. You can file a claim against the at-fault driver and access the applicable rideshare coverage tier. The standard South Carolina three-year filing deadline applies under S.C. Code Section 15-3-530."
-                    },
-                    {
-                        "question": "What should I do as a passenger injured in a rideshare accident?",
-                        "answer": "As an injured rideshare passenger, screenshot your trip details in the app, seek medical attention, and photograph the scene and vehicles. Report the crash to both the police and the rideshare app. Get insurance information from all drivers involved, since multiple policies may apply to your injury claim."
-                    }
-                ],
-                "_roden_jurisdiction": "sc"
-            }
-        },
         "/resources/rivers-avenue-truck-accidents-north-charleston/": {
             "type": "resource",
             "status": "publish",
@@ -18085,37 +16340,6 @@
                     {
                         "question": "Is Rivers Avenue truck accident data publicly available?",
                         "answer": "Yes. The South Carolina Department of Public Safety publishes crash data, and the FMCSA maintains a Safety Measurement System database where you can look up any trucking company's safety record using their USDOT number. Your attorney can also obtain detailed crash reports from North Charleston Police Department and SCHP."
-                    }
-                ],
-                "_roden_jurisdiction": "sc"
-            }
-        },
-        "/resources/seasonal-truck-accidents-myrtle-beach/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "Seasonal Truck Accident Dangers in Myrtle Beach",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Why are truck accidents more common in Myrtle Beach during tourist season?",
-                        "answer": "Myrtle Beach's population roughly triples during summer, driving a massive increase in commercial truck traffic: more delivery trucks, more fuel tankers, more construction vehicles, and more moving trucks. All share roads with millions of tourists unfamiliar with local traffic patterns."
-                    },
-                    {
-                        "question": "What types of trucks increase during Myrtle Beach tourist season?",
-                        "answer": "Every category increases: food and beverage delivery trucks, linen service trucks, fuel tankers, package delivery trucks, construction vehicles, and moving trucks for vacation rental turnovers. June through August sees all truck types at maximum volume simultaneously."
-                    },
-                    {
-                        "question": "Are rental moving trucks dangerous during tourist season?",
-                        "answer": "Yes. Thousands of vacation rental turnovers each week put rental trucks on the road driven by vacationers with no CDL or commercial driving experience. These drivers are unfamiliar with blind spots, wide turns, stopping distances, and height clearances."
-                    },
-                    {
-                        "question": "When are the most dangerous months for truck accidents in Myrtle Beach?",
-                        "answer": "June through August is the peak danger period when all truck types operate at maximum volume alongside peak tourist traffic. March through May is also dangerous as construction vehicles crowd roads for pre-season renovations."
-                    },
-                    {
-                        "question": "Can a business be held liable if their delivery truck causes a crash?",
-                        "answer": "Yes. If a business required delivery practices that created dangerous conditions, such as mandating early-morning deliveries to pedestrian areas or requiring double-parking on busy streets, the business may share liability with the truck driver and trucking company."
                     }
                 ],
                 "_roden_jurisdiction": "sc"
@@ -19132,37 +17356,6 @@
                 "_roden_jurisdiction": "sc"
             }
         },
-        "/resources/us-17-truck-accidents-grand-strand/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "US-17 Truck Accidents in the Grand Strand",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Why do commercial trucks drive on Myrtle Beach side streets and Main Street?",
-                        "answer": "Myrtle Beach has a dense strip of hotels, restaurants, and attractions along the coast that require constant commercial deliveries. Delivery trucks, fuel tankers, construction vehicles, and waste haulers must use Kings Highway, Ocean Boulevard, and Main Street to reach these businesses."
-                    },
-                    {
-                        "question": "How dangerous is the US-17 Bypass for truck accidents?",
-                        "answer": "The US-17 Bypass from Murrells Inlet to North Myrtle Beach experiences frequent bumper-to-bumper traffic backups, especially during tourist season. These backups are particularly dangerous because loaded commercial trucks need 500+ feet to stop at highway speed."
-                    },
-                    {
-                        "question": "Was someone killed by a truck on US-17 in the Grand Strand recently?",
-                        "answer": "Yes. In January 2026, a pedestrian was killed by a tractor-trailer on US-17 north of River Road. This crash highlights the lethal danger when pedestrians encounter commercial trucks on a highway corridor with inadequate crosswalks and minimal lighting."
-                    },
-                    {
-                        "question": "What makes Kings Highway dangerous for truck accidents?",
-                        "answer": "Kings Highway is the Grand Strand's primary north-south commercial corridor running through the heart of Myrtle Beach. It combines heavy commercial truck traffic, tourist pedestrians crossing between hotels and attractions, frequent traffic signals, and turning trucks accessing loading zones."
-                    },
-                    {
-                        "question": "How long do I have to file a truck accident claim in South Carolina?",
-                        "answer": "South Carolina has a 3-year statute of limitations for personal injury claims (S.C. Code 15-3-530). Contact an attorney within 24-48 hours because ELD data, dash cam footage, and drug test results can be lost within days."
-                    }
-                ],
-                "_roden_jurisdiction": "sc"
-            }
-        },
         "/resources/us-52-truck-train-accidents-goose-creek/": {
             "type": "resource",
             "status": "publish",
@@ -19189,68 +17382,6 @@
                     {
                         "question": "What should I do immediately after a truck or train crash on US-52?",
                         "answer": "Call 911 immediately, then move at least 300 feet from the tracks to avoid secondary hazards like fuel spills or debris. Photograph the crossing signals, gates, warning signs, sight lines, and the position of both the truck and train. Document the truck's company name, USDOT number, and cargo type. Get medical treatment at Trident Medical Center in North Charleston. Contact a truck accident attorney within 24 to 48 hours to preserve crossing signal data and the train's event recorder."
-                    }
-                ],
-                "_roden_jurisdiction": "sc"
-            }
-        },
-        "/resources/what-to-do-after-car-accident-north-charleston/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "What to Do After a Car Accident in North Charleston, SC",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Do I need a lawyer after a car accident in North Charleston?",
-                        "answer": "While not legally required, hiring an attorney significantly increases your recovery. Insurance companies have teams of adjusters and attorneys working to minimize your payout. An experienced car accident lawyer handles evidence preservation, claim valuation, and negotiation — and studies consistently show represented claimants recover more than unrepresented ones, even after attorney fees."
-                    },
-                    {
-                        "question": "How long do I have to file a car accident claim in South Carolina?",
-                        "answer": "You have 3 years from the date of the accident to file a personal injury lawsuit under S.C. Code § 15-3-530. However, evidence degrades over time — surveillance footage is overwritten, witnesses forget details, and vehicle damage is repaired. Contact an attorney as soon as possible to preserve your claim."
-                    },
-                    {
-                        "question": "Should I go to the hospital after a minor car accident?",
-                        "answer": "Yes. Many serious injuries — including concussions, whiplash, herniated discs, and internal bleeding — may not show symptoms immediately. Medical documentation within 24-48 hours of the accident also strengthens your legal claim by establishing a direct link between the crash and your injuries. Trident Medical Center and MUSC Health are the closest facilities to most North Charleston accident locations."
-                    },
-                    {
-                        "question": "What if the other driver does not have insurance?",
-                        "answer": "Your own uninsured/underinsured motorist (UM/UIM) coverage may apply. South Carolina law requires insurers to offer this coverage. If you carry UM/UIM on your policy, it can cover your medical expenses, lost wages, and pain and suffering when the at-fault driver is uninsured. An attorney can help you file this claim with your own insurer."
-                    },
-                    {
-                        "question": "How much is my North Charleston car accident case worth?",
-                        "answer": "Case value depends on the severity of your injuries, medical expenses, lost income, permanence of injury, and impact on daily life. Roden Law has recovered over $300 million for clients. We evaluate every case individually during a free consultation — there is no obligation and no fee unless we win."
-                    }
-                ],
-                "_roden_jurisdiction": "sc"
-            }
-        },
-        "/resources/workers-comp-north-charleston-warehouse-port/": {
-            "type": "resource",
-            "status": "publish",
-            "title": "Workers' Comp for North Charleston Warehouse & Port Workers",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Can warehouse and port workers in North Charleston get workers' compensation?",
-                        "answer": "Yes. Most warehouse and port workers in North Charleston are covered by the South Carolina Workers' Compensation Act (S.C. Code Title 42). Covered injuries include those from forklifts, falling cargo, repetitive lifting, and machinery. Benefits apply regardless of who was at fault, as long as the injury arose out of employment."
-                    },
-                    {
-                        "question": "What benefits does South Carolina workers' compensation pay an injured worker?",
-                        "answer": "South Carolina workers' compensation pays for all authorized medical treatment, plus wage-replacement benefits equal to two-thirds of your average weekly wage while you cannot work. It also provides permanent disability awards based on the body part injured. These benefits are administered through the South Carolina Workers' Compensation Commission."
-                    },
-                    {
-                        "question": "Is workers' comp my only option, or can I sue after a port injury?",
-                        "answer": "Workers' compensation is generally the exclusive remedy against your employer in South Carolina, meaning you usually cannot sue your employer directly. However, if a third party such as an equipment manufacturer, contractor, or another company caused your port injury, you may pursue a separate negligence claim against that party."
-                    },
-                    {
-                        "question": "What is a third-party claim for a North Charleston warehouse injury?",
-                        "answer": "A third-party claim lets an injured worker sue someone other than their employer whose negligence caused the harm, such as a defective-machine manufacturer, a delivery company, or a property owner. Unlike workers' comp, a third-party claim can recover pain and suffering and full lost wages on top of comp benefits."
-                    },
-                    {
-                        "question": "How long do I have to report a work injury in South Carolina?",
-                        "answer": "In South Carolina you must report a workplace injury to your employer within 90 days, and you generally have two years to file a workers' compensation claim with the Workers' Compensation Commission. Reporting promptly protects your benefits, since delays give insurers grounds to dispute that the injury was work-related."
                     }
                 ],
                 "_roden_jurisdiction": "sc"
