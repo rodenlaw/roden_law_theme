@@ -116,7 +116,39 @@ into 8 city-tier towns and 109 nested municipalities; see the recommendation in
 | 2026-08-21 | **(f)** duplicate case-result URLs | 1,529 | 1,529 | 0 | **COMPLETE.** 129 duplicate URLs 301 single-hop to their canonical twin; all 27 legacy-only slugs still return 200, proving the pattern did not over-match. No post removed — duplicate *URLs*, not duplicate content. Retiring the 27 remains an open decision. |
 | 2026-08-21 | **(a)** neighbourhood + subdivision | 1,617 | 1,529 | 88 | **COMPLETE.** Relink applied (53 links, 23 posts, `post_modified` preserved), redirects live, 88 posts trashed, caches flushed. Verified after deletion: 88/88 single-hop 301, no 404s; location sitemap 211 → 123. Backups: `batch-a-relink-*.json`, `batch-a-neighborhood-locations-*.json`. |
 | 2026-08-21 | **(d)** non-office city×practice | 1,651 | 1,617 | 34 | **COMPLETE.** Redirects live, 34 posts trashed, caches flushed. Verified after deletion: 34/34 single-hop 301, no 404s; practice_area sitemap 449 → 415; intersection grids self-healed to pillars, zero surviving links. Backup: `docs/backups/batch-d-nonoffice-city-practice-2026-08-21.json`. |
-| 2026-08-24 | **(c)** practice micro-permutations | 1,529 | — | 11 | **STAGED, NOT APPLIED.** Redirects merged into `roden_phase1_removed_urls()`; the CMS trash step waits on deploy. Backup doubles as the source text for the Corridor and Port Worker studies. |
+| 2026-08-25 | **(c)** practice micro-permutations | 1,529 | 1,518 | 11 | **COMPLETE.** Relink applied (51 links, 42 posts, `post_modified` preserved), redirects live, 11 posts trashed, caches flushed. Verified after deletion: 11/11 single-hop 301 flat **and** nested; zero remaining inbound body links; practice_area sitemap 415 → 404. Backups: `batch-c-relink-2026-08-25.json`, `batch-c-micro-permutations-2026-08-25.json` — the latter is also Study #1's source text. |
+
+### Batch (c) — two things the plan did not predict
+
+**PR #61 was wrong that batch (c) needed no link stripping.** The reasoning was
+that all 11 are linked from their parent pillar by `$child_subtypes`, a
+`get_posts()` query that self-heals on trash. True, and not the whole picture: a
+DB sweep found **42 editorial links in post bodies across 25 posts**, which no
+template query touches. Batch (a) hit the same thing at 53 links. *"The grid
+self-heals" answers a different question from "is this URL linked", and only the
+second one gates a removal.* The removal script's guard caught it, which is why
+it aborts rather than warns.
+
+Relink handled 51 links across 42 posts once both address forms were counted.
+`post_modified` verified untouched afterwards — two of the sampled posts still
+show `post_modified === post_date`.
+
+**And the nested practice-area form was 404ing since batch (d) shipped.** Every
+child `practice_area` has a flat canonical and a nested duplicate;
+`roden_redirect_duplicate_pa_path()` 301s nested → flat but resolves through
+`get_post()`, so it stops the moment the post is trashed, and the removal map is
+keyed only on the flat path. So `/practice-areas/car-accident-lawyers/summerville-sc/`
+and its siblings had been returning **404 since 2026-08-21** — a live breach of
+the §2 no-404s rule, invisible because the flat form 301s correctly and that is
+what anyone would spot-check.
+
+Fixed by canonicalising the request path before the map lookup, reusing
+`roden_canonicalize_pa_path()`. Verified: batch (d)'s nested URLs now 301
+single-hop to 200, live pillars and live intersections unaffected. The repair
+covers every future practice-area removal without a second set of keys.
+
+Worth keeping as a verification habit: **check both address forms after a
+removal, not just the canonical one.**
 
 ### Batch (f) — the duplicated case-result URLs
 

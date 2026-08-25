@@ -5,7 +5,7 @@
         "location",
         "resource"
     ],
-    "_count": 625,
+    "_count": 614,
     "posts": {
         "/?post_type=location&p=3808": {
             "type": "location",
@@ -2557,35 +2557,6 @@
                 "_roden_sol_sc": "S.C. Code § 15-3-530"
             }
         },
-        "/car-accident-lawyers/ashley-phosphate-road-accident/": {
-            "type": "practice_area",
-            "status": "publish",
-            "title": "Ashley Phosphate Road Car Accident Lawyers",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Is Ashley Phosphate Road really the most dangerous intersection in South Carolina?",
-                        "answer": "Yes. According to SCDPS collision data, the intersection of Ashley Phosphate Road and I-26 (Exit 209) is the most dangerous intersection in South Carolina, with a crash occurring approximately once every three days. The combination of interstate ramp traffic, multiple left-turn lanes, and high commercial density creates extreme collision risk."
-                    },
-                    {
-                        "question": "What types of accidents are most common at Ashley Phosphate & I-26?",
-                        "answer": "The most common crash types are red-light running T-bone collisions (vehicles failing to stop after exiting I-26 at speed), left-turn crashes (vehicles turning across multiple lanes of opposing traffic), rear-end chain reactions (sudden stops at the signal), and pedestrian strikes (long crossing distances with high turning vehicle volume)."
-                    },
-                    {
-                        "question": "Can I recover damages if I was partially at fault for my Ashley Phosphate Road crash?",
-                        "answer": "Yes. Under South Carolina's modified comparative fault rule, you can recover compensation as long as you were less than 51% at fault for the accident. Your recovery is reduced by your percentage of responsibility. For example, if you are found 20% at fault and your damages are $100,000, you would recover $80,000."
-                    },
-                    {
-                        "question": "Is the city liable for crashes caused by Ashley Phosphate Road's dangerous design?",
-                        "answer": "Potentially. If the city or SCDOT knew of the intersection's dangerous crash history (which is well-documented) and failed to implement adequate safety improvements, they may bear partial liability under the South Carolina Tort Claims Act. These claims have specific notice requirements and shorter filing deadlines — contact an attorney promptly."
-                    }
-                ],
-                "_roden_jurisdiction": "sc",
-                "_roden_sol_ga": "2 years (O.C.G.A. § 9-3-33)",
-                "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)"
-            }
-        },
         "/car-accident-lawyers/bus-accident/": {
             "type": "practice_area",
             "status": "publish",
@@ -2921,35 +2892,6 @@
                 "_roden_sol_sc": "S.C. Code § 15-3-530"
             }
         },
-        "/car-accident-lawyers/dorchester-road-accident/": {
-            "type": "practice_area",
-            "status": "publish",
-            "title": "Dorchester Road Car Accident Lawyers",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Why are motorcycle accidents so common on Dorchester Road?",
-                        "answer": "Dorchester Road combines high speeds, heavy commercial truck traffic, and intersections with limited visibility — a deadly mix for motorcyclists. Left-turning vehicles that fail to see oncoming motorcycles are the primary cause of fatal motorcycle crashes. The road's width also encourages speeding, reducing reaction time for drivers encountering smaller vehicles."
-                    },
-                    {
-                        "question": "Who is liable when a truck rolls over on Dorchester Road?",
-                        "answer": "Liability may rest with the truck driver (for speeding or improper turning), the trucking company (for overloading or inadequate maintenance), or the cargo loader (for improperly securing a load that shifts during turns). Our attorneys investigate all potential parties to maximize recovery."
-                    },
-                    {
-                        "question": "What should I do if a loved one was killed on Dorchester Road?",
-                        "answer": "South Carolina's wrongful death statute allows surviving family members to pursue compensation for medical bills, funeral costs, lost future income, and loss of companionship. The claim must be filed by the estate's personal representative. Contact an attorney promptly — critical evidence like surveillance footage and witness availability diminishes quickly."
-                    },
-                    {
-                        "question": "Does not wearing a motorcycle helmet affect my crash claim in South Carolina?",
-                        "answer": "South Carolina does not require adult riders to wear helmets, so not wearing one is not illegal. However, the defense may argue that helmet non-use contributed to the severity of your head injuries, potentially reducing your recovery under comparative fault. An experienced attorney can argue this distinction effectively and minimize the impact on your claim."
-                    }
-                ],
-                "_roden_jurisdiction": "sc",
-                "_roden_sol_ga": "2 years (O.C.G.A. § 9-3-33)",
-                "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)"
-            }
-        },
         "/car-accident-lawyers/drunk-driver-accident/": {
             "type": "practice_area",
             "status": "publish",
@@ -3063,68 +3005,6 @@
                 "_roden_jurisdiction": "both",
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33",
                 "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/car-accident-lawyers/i-26-accident/": {
-            "type": "practice_area",
-            "status": "publish",
-            "title": "I-26 Car Accident Lawyers",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "What are the most dangerous exits on I-26 in North Charleston?",
-                        "answer": "The Ashley Phosphate Road interchange (Exit 209) is the deadliest intersection in South Carolina, averaging a crash every three days. The I-526 interchange recorded 354 collisions in a five-year period. The Aviation Avenue exit (211A) and Montague Avenue exit (213) also see elevated crash rates due to truck traffic and short merge lanes."
-                    },
-                    {
-                        "question": "Who is liable for an I-26 multi-car pileup?",
-                        "answer": "Multiple drivers may share liability in a pileup. South Carolina's comparative fault system assigns a percentage of fault to each party. You can recover damages from any driver who was more at fault than you. In construction zone pileups, the construction company or SCDOT may also bear partial liability for inadequate warning signs or unsafe lane configurations."
-                    },
-                    {
-                        "question": "How long do I have to file a claim after an I-26 accident?",
-                        "answer": "Under South Carolina law (S.C. Code § 15-3-530), you have 3 years from the date of the accident to file a personal injury lawsuit. However, critical evidence — traffic camera footage, truck black box data, and witness memories — degrades rapidly. Contact an attorney within days, not months."
-                    },
-                    {
-                        "question": "What if a truck caused my I-26 accident?",
-                        "answer": "Truck accident claims on I-26 often involve multiple liable parties: the truck driver, the trucking company, the cargo loader, and maintenance providers. Federal FMCSA regulations impose strict requirements on driver hours, vehicle maintenance, and cargo securement. Violations of these regulations strengthen your case significantly. Our attorneys send immediate preservation letters to prevent destruction of electronic logging device (ELD) data."
-                    },
-                    {
-                        "question": "Does Roden Law handle I-26 accident cases on contingency?",
-                        "answer": "Yes. Roden Law works on a contingency fee basis for all I-26 accident cases — you pay nothing unless we recover compensation for you. Your initial consultation is free. Call our North Charleston office at (843) 612-6561."
-                    }
-                ],
-                "_roden_jurisdiction": "sc",
-                "_roden_sol_ga": "2 years (O.C.G.A. § 9-3-33)",
-                "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)"
-            }
-        },
-        "/car-accident-lawyers/i-526-accident/": {
-            "type": "practice_area",
-            "status": "publish",
-            "title": "I-526 Car Accident Lawyers",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "How many accidents happen on I-526?",
-                        "answer": "The I-526/I-26 interchange alone recorded 354 collisions in a five-year study period. The Rivers Avenue interchange led the tri-county area with 62 injuries over the same timeframe. Overall, I-526 sees hundreds of crashes annually across its 19-mile length."
-                    },
-                    {
-                        "question": "Can I sue the construction company if I was hurt in an I-526 work zone?",
-                        "answer": "Potentially yes. If the construction contractor failed to provide adequate signage, safe lane transitions, or proper traffic control, they may be liable for your crash injuries. Your claim may also be covered by the South Carolina Tort Claims Act if SCDOT bears responsibility for the unsafe conditions."
-                    },
-                    {
-                        "question": "What should I do after an accident on I-526?",
-                        "answer": "Get to the shoulder safely, call 911, stay in or behind your vehicle away from travel lanes, document the scene and mile markers, and contact a personal injury attorney. I-526 crashes often involve multiple vehicles and complex liability — early investigation preserves critical evidence."
-                    },
-                    {
-                        "question": "Why are there so many truck accidents on I-526?",
-                        "answer": "I-526 serves as the primary route connecting the Port of Charleston to I-26 and the regional highway network. Container trucks, fuel tankers, and Boeing supply vehicles create heavy commercial traffic. Short merge lanes and weaving sections force these large vehicles into rapid lane changes that passenger vehicles cannot safely avoid."
-                    }
-                ],
-                "_roden_jurisdiction": "sc",
-                "_roden_sol_ga": "2 years (O.C.G.A. § 9-3-33)",
-                "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)"
             }
         },
         "/car-accident-lawyers/multi-vehicle-pileup/": {
@@ -3308,35 +3188,6 @@
                 "_roden_jurisdiction": "both",
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33",
                 "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/car-accident-lawyers/rivers-avenue-accident/": {
-            "type": "practice_area",
-            "status": "publish",
-            "title": "Rivers Avenue Car Accident Lawyers",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Is Rivers Avenue the most dangerous road in North Charleston?",
-                        "answer": "Rivers Avenue is among the most dangerous corridors in North Charleston. The Rivers/I-526 interchange led the tri-county area in injuries with 62 people hurt over a five-year period. The corridor sees frequent truck rollovers, pedestrian fatalities, and multi-vehicle crashes due to its width, speed, and dense commercial access points."
-                    },
-                    {
-                        "question": "What should I do after a car accident on Rivers Avenue?",
-                        "answer": "Call 911, move to a parking lot or shoulder if possible (Rivers Avenue traffic makes remaining in the road extremely dangerous), photograph the scene and damage, get witness information from nearby businesses, and contact a personal injury attorney before speaking with insurance. Business surveillance cameras along the corridor may have captured your crash — an attorney can send preservation requests before footage is overwritten."
-                    },
-                    {
-                        "question": "Can I sue the city if poor road design caused my Rivers Avenue crash?",
-                        "answer": "Potentially. If inadequate turn lanes, missing pedestrian crossings, or dangerous traffic signal timing contributed to your crash, the city or SCDOT may be partially liable under the South Carolina Tort Claims Act. These claims have strict notice requirements, so consult an attorney promptly."
-                    },
-                    {
-                        "question": "Why are there so many pedestrian accidents on Rivers Avenue?",
-                        "answer": "Rivers Avenue lacks adequate pedestrian infrastructure — bus stops without crosswalks force riders to cross 6 lanes of 50 mph traffic. The road was designed primarily for vehicle throughput, not pedestrian safety, despite serving a transit-dependent population. This design failure makes the corridor deadly for people on foot."
-                    }
-                ],
-                "_roden_jurisdiction": "sc",
-                "_roden_sol_ga": "2 years (O.C.G.A. § 9-3-33)",
-                "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)"
             }
         },
         "/car-accident-lawyers/savannah-ga/": {
@@ -13225,17 +13076,6 @@
                 "_roden_translation_es": "/es/motorcycle-accident-lawyers/darien-ga/"
             }
         },
-        "/motorcycle-accident-lawyers/dorchester-road-motorcycle/": {
-            "type": "practice_area",
-            "status": "publish",
-            "title": "Dorchester Road Motorcycle Accident Lawyers",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_jurisdiction": "sc",
-                "_roden_sol_ga": "2 years (O.C.G.A. § 9-3-33)",
-                "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)"
-            }
-        },
         "/motorcycle-accident-lawyers/drunk-driver-motorcycle-accident/": {
             "type": "practice_area",
             "status": "publish",
@@ -14503,17 +14343,6 @@
                 "_roden_pa_office_key": "north-charleston",
                 "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)",
                 "_roden_translation_es": "/es/pedestrian-accident-lawyers/north-charleston-sc/"
-            }
-        },
-        "/pedestrian-accident-lawyers/rivers-avenue-pedestrian/": {
-            "type": "practice_area",
-            "status": "publish",
-            "title": "Rivers Avenue Pedestrian Accident Lawyers",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_jurisdiction": "sc",
-                "_roden_sol_ga": "2 years (O.C.G.A. § 9-3-33)",
-                "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)"
             }
         },
         "/pedestrian-accident-lawyers/savannah-ga/": {
@@ -20694,35 +20523,6 @@
                 "_roden_sol_sc": "S.C. Code § 15-3-530"
             }
         },
-        "/truck-accident-lawyers/i-26-truck-accident/": {
-            "type": "practice_area",
-            "status": "publish",
-            "title": "I-26 Truck Accident Lawyers",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Why are truck accidents on I-26 so much more serious than car accidents?",
-                        "answer": "A fully loaded tractor-trailer weighs up to 80,000 pounds — 20-30 times more than a passenger car. At highway speed (60+ mph), the kinetic energy in a truck crash is catastrophic. Trucks also require 500+ feet to stop, cannot maneuver quickly, and may jackknife or roll over, affecting multiple vehicles."
-                    },
-                    {
-                        "question": "Can I sue the trucking company, not just the driver?",
-                        "answer": "Yes. Under respondeat superior and direct negligence theories, the trucking company may be liable for negligent hiring, inadequate training, pressure to violate hours-of-service regulations, or failure to maintain vehicles. Companies often carry $1-5 million in liability coverage — far more than individual drivers."
-                    },
-                    {
-                        "question": "What is a spoliation letter and why does it matter?",
-                        "answer": "A spoliation letter is a formal legal notice requiring the trucking company to preserve all evidence — ELD data, dash cam footage, maintenance records, driver logs, and drug test results. Without this letter, companies may overwrite or destroy evidence within days. Roden Law sends these letters immediately upon engagement."
-                    },
-                    {
-                        "question": "How much is an I-26 truck accident case worth?",
-                        "answer": "Truck accident cases typically produce significantly higher settlements and verdicts than car accidents due to injury severity. Cases involving permanent disability, spinal injury, or traumatic brain injury often settle in the six- and seven-figure range. Wrongful death cases may exceed $1 million. Roden Law has recovered over $300 million for clients across all case types."
-                    }
-                ],
-                "_roden_jurisdiction": "sc",
-                "_roden_sol_ga": "2 years (O.C.G.A. § 9-3-33)",
-                "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)"
-            }
-        },
         "/truck-accident-lawyers/jackknife-accident/": {
             "type": "practice_area",
             "status": "publish",
@@ -20955,38 +20755,6 @@
                 "_roden_jurisdiction": "both",
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33",
                 "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/workers-compensation-lawyers/boeing-aerospace-injury/": {
-            "type": "practice_area",
-            "status": "publish",
-            "title": "Boeing & Aerospace Worker Injury Lawyers",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Can I file a personal injury lawsuit if I was hurt at Boeing?",
-                        "answer": "If a third party (not your direct employer) caused or contributed to your injury — such as a defective tool manufacturer, a negligent subcontractor, or a chemical company — you may file a personal injury lawsuit in addition to your workers' comp claim. This allows you to recover pain and suffering damages not available through workers' comp alone."
-                    },
-                    {
-                        "question": "What if I'm a contractor, not a Boeing employee?",
-                        "answer": "Your employment classification matters. If you work through a staffing agency, that agency is typically your employer for workers' comp purposes. However, you may have third-party claims against Boeing itself if their negligence (unsafe conditions, inadequate safety measures) contributed to your injury. An attorney can analyze your specific employment relationship."
-                    },
-                    {
-                        "question": "How much is workers' compensation in South Carolina?",
-                        "answer": "SC workers' comp pays 66.67% of your average weekly wage for temporary total disability, subject to a maximum weekly rate. Medical expenses are covered in full. You cannot recover pain and suffering through workers' comp — but a third-party claim may provide additional compensation. Roden Law evaluates both options for Boeing workers."
-                    },
-                    {
-                        "question": "Can Boeing fire me for filing a workers' comp claim?",
-                        "answer": "South Carolina law prohibits retaliation against employees who file legitimate workers' compensation claims. If you are terminated, demoted, or otherwise punished for filing a claim, you may have a separate retaliation claim. Document any adverse employment actions that occur after you report an injury."
-                    }
-                ],
-                "_roden_jurisdiction": "sc",
-                "_roden_last_reviewed": "2026-07-31",
-                "_roden_meta_description": "Hurt at Boeing's North Charleston campus? Aerospace injuries often involve contractors or equipment makers, opening a claim beyond workers' comp.",
-                "_roden_sol_ga": "O.C.G.A. § 34-9-82",
-                "_roden_sol_sc": "S.C. Code § 42-15-40",
-                "_roden_state_scope": "SC"
             }
         },
         "/workers-compensation-lawyers/charleston-sc/": {
@@ -21245,41 +21013,6 @@
                 "_roden_sol_sc": "S.C. Code § 42-15-40"
             }
         },
-        "/workers-compensation-lawyers/gulfstream-aerospace-injury/": {
-            "type": "practice_area",
-            "status": "publish",
-            "title": "Gulfstream & Aerospace Worker Injury Lawyers",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "Is my chemical exposure claim on the same one-year deadline as a fall or a crush injury?",
-                        "answer": "No. A sudden injury runs on the standard Georgia rule — one year from the date of injury to file (O.C.G.A. § 34-9-82) and 30 days to notify your employer (O.C.G.A. § 34-9-80). Occupational disease is handled separately under O.C.G.A. § 34-9-281: you have one year from when you knew, or reasonably should have known, that your disablement was caused by the disease — but in no event more than seven years after your last injurious exposure. The clock can start later than a date-of-injury rule allows, but the seven-year outside limit is absolute and begins closing once you leave the job that exposed you."
-                    },
-                    {
-                        "question": "Can I get workers' compensation for hearing loss from engine test or riveting in Georgia?",
-                        "answer": "Not through an occupational disease claim. O.C.G.A. § 34-9-280 states expressly that partial loss of hearing due to noise shall not be considered an occupational disease in Georgia. That closes the occupational-disease route for noise-induced partial hearing loss. It does not necessarily mean no claim exists — how a hearing claim can be framed depends on the facts, including whether a discrete traumatic event was involved and the extent of the loss — but a claim built on the assumption that noise damage is an occupational disease starts on the wrong footing. Have it evaluated rather than assuming it is not covered."
-                    },
-                    {
-                        "question": "I work for a supplier or staffing agency, not the aircraft manufacturer. Who pays my claim?",
-                        "answer": "Normally your direct employer — the supplier or staffing agency — carries the workers' compensation coverage, even though you report to the larger facility every shift. Report the injury to both. Whether the site owner can also be sued in tort is a separate question decided by Georgia's statutory-employer rules (O.C.G.A. § 34-9-8, § 34-9-11); where a company qualifies as your statutory employer it is immune from suit. Claims against other companies on site — equipment manufacturers, maintenance contractors, materials suppliers — usually survive, because they are rarely anyone's statutory employer."
-                    },
-                    {
-                        "question": "Can I see my own doctor after an aerospace injury in Georgia?",
-                        "answer": "Generally you must treat within your employer's posted panel of physicians (O.C.G.A. § 34-9-201). Ask for the panel in writing and keep a copy of the request. If your employer has no valid posted panel, or refuses to produce it, you may be entitled to select your own treating physician. Emergency care is an exception — get treatment first. For exposure claims this choice often decides the case, because the treating physician's causation opinion is what the insurer will accept or attack."
-                    },
-                    {
-                        "question": "Does Georgia workers' compensation pay for pain and suffering after an aerospace injury?",
-                        "answer": "No. Georgia workers' compensation pays authorized medical treatment, temporary total disability at two-thirds of your average weekly wage up to a statutory maximum of $800 per week for injuries on or after July 1, 2023, permanent partial disability under the body-part schedule in O.C.G.A. § 34-9-263, and death benefits to dependents. It pays nothing for pain and suffering. Those damages are available only through a claim against a third party — a defective machine's manufacturer, a contractor, or a materials supplier. Your comp carrier will assert a lien against any third-party recovery under O.C.G.A. § 34-9-11.1, which is why the two claims should be handled together."
-                    }
-                ],
-                "_roden_jurisdiction": "ga",
-                "_roden_last_reviewed": "2026-07-31",
-                "_roden_meta_description": "Injured at Gulfstream or an aerospace supplier in Savannah? Exposure claims run on a different deadline than a fall — and hearing loss is treated differently.",
-                "_roden_sol_ga": "O.C.G.A. § 34-9-82",
-                "_roden_state_scope": "GA"
-            }
-        },
         "/workers-compensation-lawyers/myrtle-beach-sc/": {
             "type": "practice_area",
             "status": "publish",
@@ -21492,41 +21225,6 @@
                 "_roden_pa_office_key": "savannah",
                 "_roden_sol_ga": "O.C.G.A. § 34-9-82",
                 "_roden_translation_es": "/es/workers-compensation-lawyers/savannah-ga/"
-            }
-        },
-        "/workers-compensation-lawyers/savannah-port-worker-injury/": {
-            "type": "practice_area",
-            "status": "publish",
-            "title": "Savannah Port Worker Injury Lawyers",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "Am I covered by federal Longshore Act benefits or Georgia workers' comp?",
-                        "answer": "It depends on your duties and where you perform them, not your job title. Workers engaged in maritime employment on navigable waters or the adjoining wharves and terminal areas — longshoremen, shipside crane operators, lashers, ship repairers, terminal checkers — are typically covered by the federal Longshore and Harbor Workers' Compensation Act. Workers in port-adjacent warehouses, drayage trucking, security, and administrative roles are usually covered by Georgia workers' compensation. If you are a member of a vessel's crew you may instead be a seaman under the Jones Act. The three systems pay very differently, so it is worth having the question answered early."
-                    },
-                    {
-                        "question": "Can I choose my own doctor after a Port of Savannah injury?",
-                        "answer": "Under the federal Longshore Act, yes — you generally have the right to choose your own treating physician (33 U.S.C. § 907(b)). Under Georgia workers' compensation, usually no: your employer must post a panel of physicians under O.C.G.A. § 34-9-201 and you are generally required to treat from that panel. Treating off-panel without authorization can leave you responsible for the bills and give the insurer a reason to dispute your claim. If your employer has no valid posted panel, or will not provide it, you may be entitled to choose your own physician — ask for the panel in writing."
-                    },
-                    {
-                        "question": "What is the deadline to file a port worker injury claim in Georgia?",
-                        "answer": "Both systems require notice to your employer within 30 days and a claim within one year of the injury — the Longshore Act under 33 U.S.C. § 913, and Georgia workers' compensation under O.C.G.A. § 34-9-80 and § 34-9-82. Because the deadlines align, one missed date can bar your claim under either system. Reporting the injury to a supervisor is not the same as filing a claim; a Georgia claim is filed on form WC-14 with the State Board of Workers' Compensation. A third-party claim carries its own deadline — generally two years under O.C.G.A. § 9-3-33."
-                    },
-                    {
-                        "question": "Can I sue the ship owner if I was hurt loading or unloading a vessel?",
-                        "answer": "Often, yes. Under Longshore Act § 905(b), vessel owners owe a duty of care to longshoremen working aboard their ships. If unsafe vessel conditions — broken ladders, slippery decks, unstowed or shifted cargo, defective gear — contributed to your injury, you may have a third-party claim against the vessel owner for the full range of damages, including pain and suffering that neither workers' compensation system pays."
-                    },
-                    {
-                        "question": "Does workers' compensation pay for pain and suffering after a port injury?",
-                        "answer": "No. Neither the federal Longshore Act nor Georgia workers' compensation pays non-economic damages. Both are limited to medical treatment, a portion of your lost wages, and scheduled permanent-disability benefits. Pain and suffering, loss of enjoyment of life, and full wage loss are recoverable only through a claim against a party other than your employer — a vessel owner, an equipment manufacturer, an outside trucking company, or another contractor working the same terminal. Port injuries generate these claims more often than most workplace cases because so many separate companies operate on one terminal."
-                    }
-                ],
-                "_roden_jurisdiction": "ga",
-                "_roden_last_reviewed": "2026-07-31",
-                "_roden_meta_description": "Hurt at the Port of Savannah or Brunswick? Federal Longshore Act benefits often exceed Georgia comp and let you choose your own doctor.",
-                "_roden_sol_ga": "O.C.G.A. § 34-9-82",
-                "_roden_state_scope": "GA"
             }
         },
         "/workers-compensation-lawyers/third-party-workplace-injury/": {
