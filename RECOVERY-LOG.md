@@ -93,6 +93,34 @@ alternates and `x-default` on English.
 *(The line this replaces listed (a), (e) and (f) as outstanding; (a) and (f)
 completed the same day it was written.)*
 
+### The `/resources/` corridor band — reclassified 2026-08-24
+
+Recorded here separately from the batch sequence because it changes what the GSC
+export is worth, not what has shipped.
+
+`url-triage.csv` had all 78 `resource` pages as KEEP, reason "guardrail keep-list:
+resource page" — a guardrail written for the statewide legal library that swept up
+a second, unrelated body of work sharing the post type. Post IDs separate them
+cleanly: library **4806–5223** (19 pages), April 2026 corridor campaign
+**4617–4690** (48 pages), a 116-ID gap and no overlap. Plan §8 already named one of
+the 48 as a micro-permutation example while the triage protected it.
+
+The 48 are now **EVALUATE**, and the distinction from REMOVE is load-bearing. The
+templating claim was measured, not assumed, and it does not hold: pairwise
+self-similarity on live `entry-content` runs **1.2–1.8×** the library baseline and
+converges toward parity at longer n-grams. These are 700–1,955 words of
+substantively distinct prose, unlike the 250-word place-name swaps of batches (a)
+and (d). Nothing here may be removed on a duplicate-content argument.
+
+The case against them is the generative pattern and the query overlap it left —
+5 slugs on I-26, 5 on construction zones, 6 on ports — plus the site's own
+`roden_related_resources()` surfacing none of them, even on
+`/truck-accident-lawyers/charleston-sc/`, whose most obvious companions sit in this
+band.
+
+**Consequence for the owner list:** the 16-month GSC export now decides **157**
+URLs, not 109.
+
 ### End-state arithmetic
 
 | Scope | Now | After definite removals | If all EVALUATE also go |
@@ -284,6 +312,39 @@ city×practice tier.
 | 2026-08-21 | Phase 0.4 — 301 tracking-parameter URLs to their clean path; campaign tag parked in a cookie so intake attribution survives the redirect | `inc/legacy-redirects.php`, `inc/intake-webhook.php` |
 | 2026-08-21 | Phase 1 batch (b) — the 8 non-office town pages 301 to the state hub. **Verified live: all 8 single-hop.** | `inc/legacy-redirects.php` |
 | 2026-08-21 | Phase 0.4 retargeted `utm_*` → `ref` after the first version shipped and was verified **inert** — WP Engine strips `utm_*` before PHP. See the amendment in plan §3 item 4. | `inc/legacy-redirects.php`, `inc/intake-webhook.php` |
+
+## KPI snapshot — GSC, 2026-08-24
+
+First snapshot against real search-console data rather than Semrush estimates.
+Source `docs/gsc-2026-08-24/Chart.csv`, 2025-07-23 → 2026-08-22.
+
+| Month | Clicks | Impressions |
+|---|---:|---:|
+| 2025-08 | 3,673 | 1,346,853 |
+| 2025-09 | 2,979 | 747,007 |
+| 2025-10 | 2,440 | 514,344 |
+| 2025-11 | 2,243 | 569,427 |
+| 2025-12 | 1,944 | 525,767 |
+| 2026-01 | 1,181 | 369,211 |
+| 2026-02 | 1,045 | 335,540 |
+| 2026-03 | 1,022 | 413,172 |
+| 2026-04 | 1,668 | 690,740 |
+| 2026-05 | 1,978 | 938,993 |
+| 2026-06 | 1,458 | 634,891 |
+| 2026-07 | 1,191 | 455,824 |
+| 2026-08 *(to 8/22)* | 825 | 314,247 |
+
+The shape matches the Semrush trajectory in plan §1 and adds detail it could not
+see: the Dec 2025 core steps clicks down through January, March–May 2026 recovers
+to roughly half the prior peak, and the May 2026 core reverses it again. **August
+is tracking to ~1,150 — the lowest full month in the window.**
+
+Note this is measured *during* the Aug 2026 spam update and *before* any of the
+cull has had time to be re-crawled at scale. Per plan §6.2 it is a baseline, not a
+verdict. **Judge nothing until the next core update completes.**
+
+Positions 1–3 stays the success metric (baseline 68, Semrush Jul 2026); GSC
+average position is not the same measurement and the two must not be conflated.
 
 ## Update boundaries to measure against
 
