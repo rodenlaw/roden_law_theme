@@ -93,10 +93,58 @@ strengthening; not worth deleting.
 
 **National-agency figures** (NHTSA, FHWA, IIHS, GOHS). Spot-checked and sound.
 
-## Still open
+## Round 3 — the Ashley Phosphate headline, and three removals that were wrong
 
-The Ashley Phosphate blog post's **headline** still asserts "South Carolina's
-Deadliest Intersection". Its body claims are now gone from both rounds, so the
-assertion survives with its evidence stripped out — the worst of both states.
-Retitling a published post is an editorial decision; suggested wording is in
-`docs/stat-audit-2026-08-25.md`.
+Reviewing the headline turned up a source neither earlier round found, and it
+cuts both ways.
+
+**The claim is false, and worse than "unsourced".** A *Post and Courier* analysis
+of preliminary SCDPS data, 2011–2015, found **629 crashes** at Ashley Phosphate
+and I-26 — the most of any intersection in Berkeley, Charleston or Dorchester
+counties, but **second statewide** behind I-20 at US-176 in Columbia. And
+decisively for a page calling it the *deadliest*: **none of the 629 crashes was
+fatal.** 181 people were injured.
+
+So the headline was wrong on both halves. It is not first in the state, and by
+the only figures anyone has published it is not deadly at all — it is
+high-frequency and low-severity, which is a more interesting fact than the one
+the page was asserting.
+
+Corrected rather than deleted: the post now reports the 629 crashes, the
+tri-county ranking, the statewide second place and the zero-fatality finding, all
+cited. Title changed from *"Why Ashley Phosphate & I-26 Is South Carolina's
+Deadliest Intersection"* to *"…Is the Tri-County's Highest-Crash Intersection"* —
+a superlative that is actually true. Anchor text on two posts, one English and one
+Spanish, repeated the false ranking and was reworded.
+
+### Three claims removed earlier today were accurate
+
+The same article sources three of the figures rounds 1 and 2 took out as
+unverifiable:
+
+| Claim | Removed as | Actually |
+|---|---|---|
+| "one collision every 3 days" at Ashley Phosphate | unverifiable | **Accurate** — "one every three days on average" |
+| I-26 Exit 203 / College Park Road, "over 380 accidents", 2nd in tri-county | unverifiable | **Accurate** — 381 collisions, 2nd tri-county, 9th statewide |
+| "62 injuries" at Rivers Avenue / I-526 | unverifiable | **Accurate** — highest injury total in the top ten |
+
+All three are **restored with the citation**. Removing them was defensible on the
+evidence available at the time — they were uncited and nothing I could reach
+confirmed them — but "I could not verify this" is not the same finding as "this is
+false", and the remedy for the first is a source, not a deletion.
+
+The lesson for the rest of the backlog: **search for the source before removing a
+claim, not only for a contradiction.** A local newspaper analysing state data is
+exactly the kind of source that does not surface from an agency portal query.
+
+### Still open
+
+The **slug** still reads `…south-carolinas-deadliest-intersection`. Changing it
+means a 301 and the loss of an exact-match URL during an active recovery, so it is
+recorded as a separate decision rather than taken alongside the title. The title
+and body are what a reader sees; the slug is the weaker signal and can move in a
+later URL-hygiene pass.
+
+`/resources/rivers-avenue-truck-accidents-north-charleston/` still calls Rivers
+Avenue "one of the four deadliest roads in Charleston County" — a falsifiable
+ranking that neither round assessed. It belongs in the next pass.
