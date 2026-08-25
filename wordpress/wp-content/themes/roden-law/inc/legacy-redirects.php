@@ -1276,9 +1276,16 @@ function roden_phase1_batch_urls() {
  * to a surviving sibling corridor page would read better and would risk a chain if
  * that sibling is ever folded.
  *
- * WHEN STUDY #1 PUBLISHES: repoint these to the Corridor Report's URL. This map is
- * a flat lookup read once at template_redirect, so changing a destination stays
- * single-hop. Do not add a second hop.
+ * REPOINTED 2026-08-25, on the day the Corridor Report published. The six pages
+ * whose subject the report actually covers — the road and corridor studies — now
+ * land on it rather than on the truck pillar. The other five keep their pillar
+ * targets: a rideshare page, a workers-comp page and a what-to-do-after guide are
+ * not what a corridor crash study answers, and sending them there would be a worse
+ * landing than the pillar.
+ *
+ * This was a single edit to the destinations, not a second hop. The map is a flat
+ * lookup read once at template_redirect, so a repointed entry still resolves in
+ * one 301. Verified after deploy: 6/6 single-hop to a 200.
  */
 /**
  * The 66 nested location pages that Google serves and nobody clicks.
@@ -1382,13 +1389,13 @@ function roden_corridor_fold_urls() {
         '/resources/rideshare-accident-north-charleston/'                    => '/practice-areas/car-accident-lawyers/',
         '/resources/what-to-do-after-car-accident-north-charleston/'         => '/practice-areas/car-accident-lawyers/',
         '/resources/workers-comp-north-charleston-warehouse-port/'           => '/practice-areas/workers-compensation-lawyers/',
-        '/resources/highway-501-truck-accidents-conway-myrtle-beach/'        => '/practice-areas/truck-accident-lawyers/',
-        '/resources/lexington-county-truck-accidents-distribution-corridor/' => '/practice-areas/truck-accident-lawyers/',
-        '/resources/mount-pleasant-truck-accidents-wando-welch/'             => '/practice-areas/truck-accident-lawyers/',
-        '/resources/ogeechee-road-truck-accidents-savannah/'                 => '/practice-areas/truck-accident-lawyers/',
+        '/resources/highway-501-truck-accidents-conway-myrtle-beach/'        => '/resources/i-26-i-95-corridor-report/',
+        '/resources/lexington-county-truck-accidents-distribution-corridor/' => '/resources/i-26-i-95-corridor-report/',
+        '/resources/mount-pleasant-truck-accidents-wando-welch/'             => '/resources/i-26-i-95-corridor-report/',
+        '/resources/ogeechee-road-truck-accidents-savannah/'                 => '/resources/i-26-i-95-corridor-report/',
         '/resources/port-of-charleston-truck-routes/'                        => '/practice-areas/truck-accident-lawyers/',
-        '/resources/seasonal-truck-accidents-myrtle-beach/'                  => '/practice-areas/truck-accident-lawyers/',
-        '/resources/us-17-truck-accidents-grand-strand/'                     => '/practice-areas/truck-accident-lawyers/',
+        '/resources/seasonal-truck-accidents-myrtle-beach/'                  => '/resources/i-26-i-95-corridor-report/',
+        '/resources/us-17-truck-accidents-grand-strand/'                     => '/resources/i-26-i-95-corridor-report/',
     );
 }
 
