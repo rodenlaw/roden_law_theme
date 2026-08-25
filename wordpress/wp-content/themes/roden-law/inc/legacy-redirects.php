@@ -1087,7 +1087,11 @@ function roden_phase1_removed_urls() {
      * repointed at the Corridor Report when Study #1 publishes — an edit that should
      * be obvious and self-contained rather than buried among 130 batch entries.
      */
-    return array_merge( roden_phase1_batch_urls(), roden_corridor_fold_urls() );
+    return array_merge(
+        roden_phase1_batch_urls(),
+        roden_corridor_fold_urls(),
+        roden_dead_location_urls()
+    );
 }
 
 /**
@@ -1276,6 +1280,102 @@ function roden_phase1_batch_urls() {
  * a flat lookup read once at template_redirect, so changing a destination stays
  * single-hop. Do not add a second hop.
  */
+/**
+ * The 66 nested location pages that Google serves and nobody clicks.
+ *
+ * Plan rule 4 keeps a non-office city page only where there are "real rankings,
+ * traffic or genuine service history". Measured over 2025-07-23 to 2026-08-22 via
+ * the Search Console API (docs/gsc-evidence-2026-08-24.md, Finding 3), these 66
+ * took **21,548 impressions and earned 1 click** — a CTR of 0.005%.
+ *
+ * The comparison is what makes that decisive rather than merely small. At average
+ * positions 5-10 the rest of the site converts 0.48% of impressions; these
+ * converted zero of 6,814, where the site's own rate predicts about 33 clicks.
+ * They are not invisible pages that never got a chance. They are shown constantly
+ * and refused, which is what a doorway page looks like from the outside.
+ *
+ * Note this could not be seen in the GSC UI export, which caps at 1,000 rows with
+ * a one-click minimum and therefore omitted every page in this set. The earlier
+ * read - "zero clicks, impressions unknown" - was a limit of the tooling, not a
+ * property of the pages.
+ *
+ * Targets are the parent office-city hub, which is also the immediate parent here:
+ * these ARE the tier-3 municipalities that batch (a) redirected *past* precisely
+ * because they were still EVALUATE at the time. Now that they are resolved, the
+ * parent is both the natural target and a guardrail keep, so it is chain-proof.
+ * All six hubs verified 200 before this shipped.
+ */
+function roden_dead_location_urls() {
+    return array(
+        '/locations/georgia/darien/dock-junction/'                   => '/locations/georgia/darien/',
+        '/locations/georgia/darien/eulonia/'                         => '/locations/georgia/darien/',
+        '/locations/georgia/darien/ludowici/'                        => '/locations/georgia/darien/',
+        '/locations/georgia/darien/odum/'                            => '/locations/georgia/darien/',
+        '/locations/georgia/darien/screven/'                         => '/locations/georgia/darien/',
+        '/locations/georgia/darien/st-marys/'                        => '/locations/georgia/darien/',
+        '/locations/georgia/darien/townsend/'                        => '/locations/georgia/darien/',
+        '/locations/georgia/darien/waverly/'                         => '/locations/georgia/darien/',
+        '/locations/georgia/darien/white-oak/'                       => '/locations/georgia/darien/',
+        '/locations/georgia/savannah/bloomingdale/'                  => '/locations/georgia/savannah/',
+        '/locations/georgia/savannah/effingham-county/'              => '/locations/georgia/savannah/',
+        '/locations/georgia/savannah/garden-city/'                   => '/locations/georgia/savannah/',
+        '/locations/georgia/savannah/guyton/'                        => '/locations/georgia/savannah/',
+        '/locations/georgia/savannah/isle-of-hope/'                  => '/locations/georgia/savannah/',
+        '/locations/georgia/savannah/richmond-hill/'                 => '/locations/georgia/savannah/',
+        '/locations/georgia/savannah/rincon/'                        => '/locations/georgia/savannah/',
+        '/locations/georgia/savannah/springfield/'                   => '/locations/georgia/savannah/',
+        '/locations/georgia/savannah/thunderbolt/'                   => '/locations/georgia/savannah/',
+        '/locations/georgia/savannah/tybee-island/'                  => '/locations/georgia/savannah/',
+        '/locations/georgia/savannah/wilmington-island/'             => '/locations/georgia/savannah/',
+        '/locations/south-carolina/charleston/awendaw/'              => '/locations/south-carolina/charleston/',
+        '/locations/south-carolina/charleston/edisto-island/'        => '/locations/south-carolina/charleston/',
+        '/locations/south-carolina/charleston/folly-beach/'          => '/locations/south-carolina/charleston/',
+        '/locations/south-carolina/charleston/hollywood/'            => '/locations/south-carolina/charleston/',
+        '/locations/south-carolina/charleston/johns-island/'         => '/locations/south-carolina/charleston/',
+        '/locations/south-carolina/charleston/kiawah-island/'        => '/locations/south-carolina/charleston/',
+        '/locations/south-carolina/charleston/mcclellanville/'       => '/locations/south-carolina/charleston/',
+        '/locations/south-carolina/charleston/meggett/'              => '/locations/south-carolina/charleston/',
+        '/locations/south-carolina/charleston/ravenel/'              => '/locations/south-carolina/charleston/',
+        '/locations/south-carolina/charleston/seabrook-island/'      => '/locations/south-carolina/charleston/',
+        '/locations/south-carolina/charleston/sullivans-island/'     => '/locations/south-carolina/charleston/',
+        '/locations/south-carolina/charleston/wadmalaw-island/'      => '/locations/south-carolina/charleston/',
+        '/locations/south-carolina/columbia/blythewood/'             => '/locations/south-carolina/columbia/',
+        '/locations/south-carolina/columbia/camden/'                 => '/locations/south-carolina/columbia/',
+        '/locations/south-carolina/columbia/dentsville/'             => '/locations/south-carolina/columbia/',
+        '/locations/south-carolina/columbia/gaston/'                 => '/locations/south-carolina/columbia/',
+        '/locations/south-carolina/columbia/hopkins/'                => '/locations/south-carolina/columbia/',
+        '/locations/south-carolina/columbia/irmo/'                   => '/locations/south-carolina/columbia/',
+        '/locations/south-carolina/columbia/lexington/'              => '/locations/south-carolina/columbia/',
+        '/locations/south-carolina/columbia/oak-grove/'              => '/locations/south-carolina/columbia/',
+        '/locations/south-carolina/columbia/pelion/'                 => '/locations/south-carolina/columbia/',
+        '/locations/south-carolina/columbia/pine-ridge/'             => '/locations/south-carolina/columbia/',
+        '/locations/south-carolina/columbia/seven-oaks/'             => '/locations/south-carolina/columbia/',
+        '/locations/south-carolina/columbia/south-congaree/'         => '/locations/south-carolina/columbia/',
+        '/locations/south-carolina/columbia/springdale/'             => '/locations/south-carolina/columbia/',
+        '/locations/south-carolina/columbia/st-andrews/'             => '/locations/south-carolina/columbia/',
+        '/locations/south-carolina/columbia/woodfield/'              => '/locations/south-carolina/columbia/',
+        '/locations/south-carolina/myrtle-beach/atlantic-beach/'     => '/locations/south-carolina/myrtle-beach/',
+        '/locations/south-carolina/myrtle-beach/aynor/'              => '/locations/south-carolina/myrtle-beach/',
+        '/locations/south-carolina/myrtle-beach/briarcliffe-acres/'  => '/locations/south-carolina/myrtle-beach/',
+        '/locations/south-carolina/myrtle-beach/bucksport/'          => '/locations/south-carolina/myrtle-beach/',
+        '/locations/south-carolina/myrtle-beach/burgess/'            => '/locations/south-carolina/myrtle-beach/',
+        '/locations/south-carolina/myrtle-beach/forestbrook/'        => '/locations/south-carolina/myrtle-beach/',
+        '/locations/south-carolina/myrtle-beach/galivants-ferry/'    => '/locations/south-carolina/myrtle-beach/',
+        '/locations/south-carolina/myrtle-beach/garden-city-beach/'  => '/locations/south-carolina/myrtle-beach/',
+        '/locations/south-carolina/myrtle-beach/green-sea/'          => '/locations/south-carolina/myrtle-beach/',
+        '/locations/south-carolina/myrtle-beach/litchfield-beach/'   => '/locations/south-carolina/myrtle-beach/',
+        '/locations/south-carolina/myrtle-beach/longs/'              => '/locations/south-carolina/myrtle-beach/',
+        '/locations/south-carolina/myrtle-beach/loris/'              => '/locations/south-carolina/myrtle-beach/',
+        '/locations/south-carolina/myrtle-beach/north-myrtle-beach/' => '/locations/south-carolina/myrtle-beach/',
+        '/locations/south-carolina/myrtle-beach/pawleys-island/'     => '/locations/south-carolina/myrtle-beach/',
+        '/locations/south-carolina/myrtle-beach/red-hill/'           => '/locations/south-carolina/myrtle-beach/',
+        '/locations/south-carolina/myrtle-beach/socastee/'           => '/locations/south-carolina/myrtle-beach/',
+        '/locations/south-carolina/myrtle-beach/wampee/'             => '/locations/south-carolina/myrtle-beach/',
+        '/locations/south-carolina/north-charleston/hanahan/'        => '/locations/south-carolina/north-charleston/',
+        '/locations/south-carolina/north-charleston/moncks-corner/'  => '/locations/south-carolina/north-charleston/',
+    );
+}
+
 function roden_corridor_fold_urls() {
     return array(
         '/resources/construction-zone-accidents-north-charleston/'           => '/practice-areas/car-accident-lawyers/',

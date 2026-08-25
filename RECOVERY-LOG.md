@@ -157,6 +157,43 @@ not. That is why these 301 rather than 404, and why the bodies are kept.
 The 117 nested location pages — 66 of them zero-click — are **deferred** on the
 same gap, pending Search Console API access.
 
+### The 66 dead location pages — decided 2026-08-25
+
+The last of the EVALUATE backlog, and the Search Console API is what settled it.
+The UI export could not: it caps at 1,000 rows with a one-click minimum and
+omitted every page in this set, which is why they read as "zero clicks,
+impressions unknown" on 2026-08-24. The API pull returns 2,789 pages to the
+export's 999.
+
+**21,548 impressions. 1 click. CTR 0.005%.** Against the site's own rate at
+matching positions:
+
+| Avg position | Rest of site | The 66 |
+|---|---:|---:|
+| 5–10 | 0.48% | **0.00%** (0 of 6,814) |
+| 10–15 | 0.41% | 0.01% |
+| 15–20 | 0.21% | 0.00% |
+
+At positions 5–10 the site's own rate predicts about 33 clicks. They produced
+zero. These are not pages that never got a chance: Google matches them to
+queries, serves them, and no human wants them.
+
+Targets are the parent office-city hub. That differs from batch (a), which
+deliberately redirected *past* the tier-3 municipalities to the tier-2 hub because
+those municipalities were still EVALUATE and might later go. These 66 **are** that
+tier-3 layer; with them resolved the parent is both the natural target and a
+guardrail keep, so it is chain-proof. All six hubs verified 200 before shipping.
+
+Two things done differently, both learned from earlier batches. The paths live in
+`roden_dead_location_urls()` and both scripts read them from there rather than
+carrying a copy, so the redirect map and the removal set cannot drift — batches
+(a), (b) and (d) each held their own list. And the removal script *reports* inbound
+editorial links on a dry run instead of only aborting, so one pass sizes the relink
+workload; it still refuses to apply while any remain. Batch (a) found 53 links
+across 23 posts, so this is not a formality.
+
+Expected after: location URLs 123 → 57, all public 1,529 → 1,463.
+
 ### End-state arithmetic
 
 | Scope | Now | After definite removals | If all EVALUATE also go |

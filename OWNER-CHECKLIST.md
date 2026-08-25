@@ -83,8 +83,9 @@ otherwise ready to ship. From `SEO-PREEMPTION-PLAN-rodenlaw.md` Phase 0 and §7.
         to the parent office-city hub.* **The API data landed 2026-08-25 and
         settles it:** those 66 pages took **21,548 impressions and earned 1
         click** — CTR 0.005% against the site's own 0.48% at the same positions.
-        They are not invisible; they are shown constantly and refused. **Awaiting
-        your go-ahead to build the batch.**
+        They are not invisible; they are shown constantly and refused. **Approved 2026-08-25;
+        batch built and open as a PR.** Redirects deploy first, then the CMS
+        step — the PR carries the ordered commands.
 
       - **48 corridor `/resources/` pages: keep most of them.** This one came back
         against expectation. 37 of 48 earn clicks at page-one positions, 311 total
