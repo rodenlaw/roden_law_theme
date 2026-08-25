@@ -42,8 +42,8 @@ summary and the deploy proceeds — it can never block shipping on its own failu
 
 `content/meta.json` is a generated snapshot of the post meta that carries legal
 and SEO weight — jurisdiction, SOL citations, review dates, FAQ text, attorney
-attribution, translation pairs — across `practice_area`, `location` and
-`resource` posts. **Do not hand-edit it. Regenerate it:**
+attribution, translation pairs — across `practice_area`, `location`, `resource`,
+`post` and `page`. **Do not hand-edit it. Regenerate it:**
 
 ```bash
 ssh rodenlawprod@rodenlawprod.ssh.wpengine.net \
@@ -60,6 +60,20 @@ comp pages carried the *tort* statute of limitations in `_roden_sol_ga`/`_sc`;
 that was fixed on the English posts on 2026-07-30 and then found again on the
 Spanish twins on 07-31, three weeks later and only by accident. A diff on this
 file surfaces that class of error immediately.
+
+`post` and `page` were added on 2026-08-25 for the same reason. A false workers'
+compensation filing deadline was corrected in a page body, a sweep of
+`post_content` came back clean, and the claim was **still on the live page** — it
+also lived in `_roden_faqs`, and blog posts were outside the export. The meta key
+was already whitelisted; the post type was not, leaving 195 FAQ-carrying pages
+(162 posts, 33 pages) unguarded. FAQ answers also render into FAQPage structured
+data, so a wrong one is published twice over.
+
+**When you correct a claim in a body, sweep the meta for the same claim *class*,
+never for the same string** — the FAQ words it differently every time, which is
+exactly why a string sweep misses it. `bin/apply-faq-remediation.php` patches FAQ
+answers; `bin/apply-stat-remediation.php` handles bodies and structurally cannot
+see meta.
 
 Post **bodies** are deliberately not in it — ~8 MB of prose across 474 posts
 that nobody would review. A periodic `wp db export` is the right protection for
