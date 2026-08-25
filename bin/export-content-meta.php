@@ -32,8 +32,24 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit( 1 );
 }
 
-/** Post types whose meta carries legal or SEO weight. */
-$types = array( 'practice_area', 'location', 'resource' );
+/**
+ * Post types whose meta carries legal or SEO weight.
+ *
+ * `post` and `page` were added 2026-08-25, after a false workers' compensation
+ * filing deadline was found living in `_roden_faqs` on a blog post. The body of
+ * that page had just been corrected and a sweep of post_content came back
+ * clean; the claim survived because it was in the FAQ meta, and blog posts were
+ * outside this export entirely.
+ *
+ * That is precisely the failure this file exists to catch — a legal fact
+ * changing in the database, where nothing is versioned and nobody sees a diff —
+ * and the guard was watching three post types while 195 FAQ-carrying pages
+ * (162 posts, 33 pages) sat outside it. FAQ answers also render into FAQPage
+ * structured data, so a wrong one is published twice over.
+ *
+ * Cost measured before making the change: 533 -> 1,064 entries, 2.03 -> 2.74 MB.
+ */
+$types = array( 'practice_area', 'location', 'resource', 'post', 'page' );
 
 /**
  * Meta keys worth versioning.
