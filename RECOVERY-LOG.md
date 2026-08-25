@@ -759,6 +759,38 @@ write something new — none by reading the pages, which read fluently and carry
 correct statute numbers beside incorrect statements of what those statutes say. A
 citation is not a verification, and here it keeps being mistaken for one.
 
+### The FAQ meta was a blind spot — 2026-08-25
+
+PRs #82 and #83 merged, and the corrected pages were then checked live. Eight of
+nine were clean. `/steps-after-work-injury/` still carried the false workers' comp
+deadline — on a page whose body had just been fixed and whose `post_content` sweep
+returned zero.
+
+It was in `_roden_faqs`, which the sweep had never looked at. **FAQ answers render
+into FAQPage structured data**, so the false deadline was not just published, it was
+being handed to search engines as the machine-readable answer to "How long do I
+have to file a workers' compensation claim?"
+
+Re-sweeping meta by claim *class* rather than by string found two more, including
+`how-to-maximize-your-car-accident-compensation-in-south-carolina`, which asks
+*"Does South Carolina require uninsured motorist coverage?"* and answered that
+insurers must merely offer it and you can decline in writing. The question is
+exactly right and the answer is exactly backwards.
+
+Total for the pass: **thirteen false or materially misleading claims across nine
+pages.**
+
+Built in response: `bin/apply-faq-remediation.php`, with the same exact-match guard
+and read-back as the body patcher. The rule it encodes — *when a claim is corrected
+in a body, sweep the meta for the same claim class, never the same string* — is the
+part worth keeping. The FAQ words it differently every time, which is exactly why a
+string sweep misses it.
+
+Also worth recording: the first live check showed both the corrected FAQ and the
+old one, because Cloudflare was still serving an edge copy and a cache-buster query
+string did not defeat it. Two clean fetches minutes apart is the check that means
+something.
+
 ### § 15-38-15 resolved, brand standardised, and SC tort reform found — 2026-08-25
 
 **The threshold.** The site stated S.C. Code § 15-38-15 two ways. The statute
