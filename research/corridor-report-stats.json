@@ -1,0 +1,256 @@
+{
+  "source": "NHTSA FARS national annual files 2020-2024, accessed 2026-08-25",
+  "scope": "Fatal crashes only, on I-26 and I-95 in Georgia and South Carolina",
+  "crashes": 323,
+  "deaths": 374,
+  "truck_crashes": 109,
+  "truck_deaths": 133,
+  "truck_tractor_crashes": 81,
+  "by_year": {
+    "2020": {
+      "crashes": 67,
+      "deaths": 82,
+      "truck_crashes": 25,
+      "truck_deaths": 31
+    },
+    "2021": {
+      "crashes": 84,
+      "deaths": 98,
+      "truck_crashes": 29,
+      "truck_deaths": 33
+    },
+    "2022": {
+      "crashes": 64,
+      "deaths": 72,
+      "truck_crashes": 25,
+      "truck_deaths": 31
+    },
+    "2023": {
+      "crashes": 62,
+      "deaths": 66,
+      "truck_crashes": 14,
+      "truck_deaths": 15
+    },
+    "2024": {
+      "crashes": 46,
+      "deaths": 56,
+      "truck_crashes": 16,
+      "truck_deaths": 23
+    }
+  },
+  "by_segment": {
+    "GA I-95": {
+      "crashes": 71,
+      "deaths": 83,
+      "truck_crashes": 32,
+      "truck_deaths": 36,
+      "truck_share_pct": 45.1
+    },
+    "SC I-26": {
+      "crashes": 146,
+      "deaths": 172,
+      "truck_crashes": 39,
+      "truck_deaths": 51,
+      "truck_share_pct": 26.7
+    },
+    "SC I-95": {
+      "crashes": 106,
+      "deaths": 119,
+      "truck_crashes": 38,
+      "truck_deaths": 46,
+      "truck_share_pct": 35.8
+    }
+  },
+  "by_county": [
+    {
+      "state": "SC",
+      "county": "ORANGEBURG (75)",
+      "crashes": 37,
+      "truck_crashes": 9,
+      "truck_share_pct": 24.3
+    },
+    {
+      "state": "SC",
+      "county": "CHARLESTON (19)",
+      "crashes": 23,
+      "truck_crashes": 3,
+      "truck_share_pct": 13.0
+    },
+    {
+      "state": "SC",
+      "county": "COLLETON (29)",
+      "crashes": 22,
+      "truck_crashes": 5,
+      "truck_share_pct": 22.7
+    },
+    {
+      "state": "GA",
+      "county": "CHATHAM (51)",
+      "crashes": 21,
+      "truck_crashes": 9,
+      "truck_share_pct": 42.9
+    },
+    {
+      "state": "SC",
+      "county": "LEXINGTON (63)",
+      "crashes": 19,
+      "truck_crashes": 6,
+      "truck_share_pct": 31.6
+    },
+    {
+      "state": "SC",
+      "county": "SPARTANBURG (83)",
+      "crashes": 19,
+      "truck_crashes": 8,
+      "truck_share_pct": 42.1
+    },
+    {
+      "state": "SC",
+      "county": "BERKELEY (15)",
+      "crashes": 16,
+      "truck_crashes": 3,
+      "truck_share_pct": 18.8
+    },
+    {
+      "state": "SC",
+      "county": "JASPER (53)",
+      "crashes": 16,
+      "truck_crashes": 3,
+      "truck_share_pct": 18.8
+    },
+    {
+      "state": "SC",
+      "county": "CLARENDON (27)",
+      "crashes": 14,
+      "truck_crashes": 4,
+      "truck_share_pct": 28.6
+    },
+    {
+      "state": "SC",
+      "county": "DILLON (33)",
+      "crashes": 14,
+      "truck_crashes": 8,
+      "truck_share_pct": 57.1
+    },
+    {
+      "state": "SC",
+      "county": "DORCHESTER (35)",
+      "crashes": 13,
+      "truck_crashes": 6,
+      "truck_share_pct": 46.2
+    },
+    {
+      "state": "GA",
+      "county": "CAMDEN (39)",
+      "crashes": 12,
+      "truck_crashes": 6,
+      "truck_share_pct": 50.0
+    },
+    {
+      "state": "GA",
+      "county": "GLYNN (127)",
+      "crashes": 12,
+      "truck_crashes": 3,
+      "truck_share_pct": 25.0
+    },
+    {
+      "state": "SC",
+      "county": "RICHLAND (79)",
+      "crashes": 12,
+      "truck_crashes": 3,
+      "truck_share_pct": 25.0
+    },
+    {
+      "state": "SC",
+      "county": "FLORENCE (41)",
+      "crashes": 12,
+      "truck_crashes": 7,
+      "truck_share_pct": 58.3
+    },
+    {
+      "state": "SC",
+      "county": "NEWBERRY (71)",
+      "crashes": 11,
+      "truck_crashes": 5,
+      "truck_share_pct": 45.5
+    },
+    {
+      "state": "GA",
+      "county": "MCINTOSH (191)",
+      "crashes": 10,
+      "truck_crashes": 6,
+      "truck_share_pct": 60.0
+    },
+    {
+      "state": "GA",
+      "county": "LIBERTY (179)",
+      "crashes": 10,
+      "truck_crashes": 5,
+      "truck_share_pct": 50.0
+    },
+    {
+      "state": "SC",
+      "county": "CALHOUN (17)",
+      "crashes": 9,
+      "truck_crashes": 1,
+      "truck_share_pct": 11.1
+    },
+    {
+      "state": "GA",
+      "county": "BRYAN (29)",
+      "crashes": 5,
+      "truck_crashes": 3,
+      "truck_share_pct": 60.0
+    },
+    {
+      "state": "SC",
+      "county": "LAURENS (59)",
+      "crashes": 5,
+      "truck_crashes": 2,
+      "truck_share_pct": 40.0
+    },
+    {
+      "state": "SC",
+      "county": "HAMPTON (49)",
+      "crashes": 5,
+      "truck_crashes": 1,
+      "truck_share_pct": 20.0
+    },
+    {
+      "state": "SC",
+      "county": "SUMTER (85)",
+      "crashes": 3,
+      "truck_crashes": 1,
+      "truck_share_pct": 33.3
+    },
+    {
+      "state": "SC",
+      "county": "CHESTER (23)",
+      "crashes": 1,
+      "truck_crashes": 1,
+      "truck_share_pct": 100.0
+    },
+    {
+      "state": "GA",
+      "county": "EFFINGHAM (103)",
+      "crashes": 1,
+      "truck_crashes": 0,
+      "truck_share_pct": 0.0
+    },
+    {
+      "state": "SC",
+      "county": "DARLINGTON (31)",
+      "crashes": 1,
+      "truck_crashes": 1,
+      "truck_share_pct": 100.0
+    }
+  ],
+  "land_use": {
+    "Rural": 74,
+    "Urban": 35
+  },
+  "deaths_per_crash": {
+    "truck_involved": 1.22,
+    "no_large_truck": 1.126
+  }
+}
