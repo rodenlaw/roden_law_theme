@@ -625,6 +625,51 @@ assertions to four dated, cited figures, and none of them had to be deleted. An
 unsourced number is usually a sourcing failure, not a fabrication — and the
 remedy is the source.
 
+### Two-state guides — drafted 2026-08-25, and an outdated statute found
+
+Steinberg plan §4's differentiator: content no single-state firm can write. Two
+guides seeded as **drafts** (posts 5352, 5353) in `/resources/`, awaiting attorney
+review. Notes for that review in `research/guides/REVIEW-NOTES.md`.
+
+* **Comparative negligence: the 50% and 51% bars.** The lead fact is the whole
+  argument for two-state content — *a driver found exactly 50% at fault recovers
+  nothing in Georgia and half their damages in South Carolina.* Covers the bars,
+  apportionment, and what each state lets a jury hear about a seat belt.
+* **Filing deadlines.** Two years in Georgia against three in South Carolina,
+  plus the deadlines that run shorter than the headline — workers' compensation at
+  one year in Georgia, South Carolina government claims at two.
+
+**Every legal statement traces to a verified source** — the SB 68 brief's
+allowlist, or one of the site's existing verified pages (5223, 4810, 4811).
+Nothing from a secondary summary, because that brief records that *every*
+secondary source reviewed for it got at least one thing wrong. 24 statements,
+each traced individually.
+
+#### The find: two pages stated Georgia law as it was before April 2025
+
+While assembling the fact base, `/blog/kemira-plant-drive-savannah-fatal-truck-accident-lawyer/`
+and its Spanish twin were asserting that failure to wear a seat belt **is not
+admissible** in Georgia and cannot reduce a family's recovery.
+
+That was true until SB 68 revised O.C.G.A. § 40-8-76.1(d) on **21 April 2025**.
+It has been wrong for sixteen months — on a fatal-crash page, telling bereaved
+families that a defence is unavailable when it is now available. Both pages
+corrected; all four pages citing § 40-8-76.1 now state current law.
+
+This is worse than an unsourced statistic, and it was found by accident while
+gathering facts for something else. **The site needs a standing check that
+recent statutory changes have propagated** — the seat-belt reversal reached the
+two dedicated pages and missed the blog posts that mention it in passing, which
+is the shared-template drift pattern in a different costume.
+
+#### Also flagged, not fixed
+
+`/resources/south-carolina-comparative-negligence/` and a blog page state
+**S.C. Code § 15-38-15 two different ways** — "50% or more" versus "more than
+50%". Those differ at exactly 50%, the same one-point distinction the guide
+exists to explain, so the guide describes the rule **without asserting the
+threshold** pending resolution against the statute.
+
 ### Batch (f) — the duplicated case-result URLs
 
 156 case results are published twice: as `case_result` at `/case-results/{slug}/`
