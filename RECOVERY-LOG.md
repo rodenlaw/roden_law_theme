@@ -422,6 +422,56 @@ Carolina's Deadliest Intersection" while both rounds have now stripped its
 supporting evidence from the body. That is the worst of both states and needs an
 editorial decision.
 
+### Study #1 published — the I-26 / I-95 Corridor Report, 2026-08-25
+
+`/resources/i-26-i-95-corridor-report/`. The first of the Steinberg plan's §3
+linkable research assets, and the first thing on this site built to be checked
+rather than to rank.
+
+**323 fatal crashes, 374 deaths, 109 truck-involved** on I-26 and I-95 across both
+states, 2020–2024, from NHTSA FARS. The headline is a two-state finding no
+single-state competitor can produce: **45% of fatal crashes on Georgia's I-95
+involve a large truck, against 27% on South Carolina's I-26** — an ordering that
+holds under the stricter tractor-trailer-only definition (39/25/18), which is why
+both are published.
+
+The analysis script, the chart generator and the 323-row dataset all ship with it.
+All 33 figures in the prose were verified programmatically against the dataset
+before publication; one failed and was corrected. After the same day's statistics
+audit removed 36 unchecked claims from 21 pages, publishing a research report
+without applying that test to its own numbers would have been indefensible.
+
+**Six of the folded corridor redirects now point at it** (PR #74), verified 6/6
+single-hop 301 → 200. The other five deliberately still point at practice pillars:
+a rideshare page, a workers-comp page, a what-to-do-after guide and the port
+truck-routes page are not what a corridor crash study answers, and sending them
+there would be a worse landing. **Repointing should mean the destination is more
+relevant, not merely newer.**
+
+Three defects were found and fixed between seeding and publication, none of which
+would have surfaced from reading the code:
+
+1. **Inline SVG is destroyed by `wp_kses_post`.** The charts rendered correctly,
+   but the first editor without `unfiltered_html` to hit Update would have
+   silently deleted them and ~4 KB of report. Replaced with the `[roden_chart]`
+   shortcode, which is plain text to KSES; SVGs now live in `assets/charts/`.
+2. **The seeder was not safe to run twice** — it duplicated the dataset
+   attachment and reset `post_author` to 0 on update. Both fixed; it has to run
+   again every year when the next FARS file lands.
+3. **The report promised a downloadable dataset and did not link it.** On a study
+   whose entire value is citability, that was the most important link on the page.
+
+**Operational notes worth keeping.** Publishing through the classic editor
+round-trips content through `wpautop` and strips seeded `<p>` tags, so later edits
+must anchor on plain text. And **Cloudflare fronts WP Engine**: `wp cache flush`
+and `wp page-cache flush` clear the origin while the edge keeps serving for up to
+ten minutes, so verify page content with a cache-buster or read the database
+directly.
+
+**Outstanding:** `_roden_last_reviewed` is unset. It publishes `lastReviewed` and
+`reviewedBy` in schema and should be set once — and only once — an attorney has
+genuinely read the page.
+
 ### Batch (f) — the duplicated case-result URLs
 
 156 case results are published twice: as `case_result` at `/case-results/{slug}/`
