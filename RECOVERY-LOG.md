@@ -332,6 +332,51 @@ removed the same day for taking 540 impressions and no clicks.
 Lawyers* (553 words, April 2026). It is a practice sub-type rather than a location
 page, so it is a content decision for after the freeze, not a guardrail matter.
 
+### Statistics audit — applied 2026-08-25
+
+Five numeric claims repeating verbatim across **12 published pages** were removed:
+22 removals, verified zero remaining. Full trace in `docs/stat-audit-2026-08-25.md`;
+before/after and the removal log in `docs/backups/stat-remediation-2026-08-25.json`.
+
+**Two of the five were not merely uncited — they were wrong.**
+
+*"South Carolina recorded 3,167 large truck crashes in 2024"* does not reproduce.
+Three sources gave three numbers for the same quantity: the site's 3,167, an FMCSA
+MCMIS snapshot at 3,342, and the FMCSA portal queried live at 1,107 (flagged
+incomplete). FMCSA counts are a rolling snapshot, so **any bare figure without a
+source and a snapshot date is indefensible** — a structural problem, not a typo.
+
+*"23% increase in fatal truck accidents"* runs the wrong way. FMCSA shows SC fatal
+large-truck crashes falling 122 → 74 in 2024; the FARS series (113/131/120/111/126)
+peaks at +15.9% in any year pair. Nothing produces 23%.
+
+The other three — "354 collisions", "62 injuries", "2,500 truck-related crashes" —
+could not be verified from any reachable public source.
+
+**A trap worth remembering:** a general web search returned *"According to the most
+recent data from FMCSA, South Carolina recorded 3,167 large truck crashes in
+2024"* — almost the site's own wording. That is very likely the search engine
+paraphrasing these pages back. Circular sourcing is how a number survives four
+years and twelve pages; confirm against the agency portal, never a search summary.
+
+Dated honestly: `_roden_last_refreshed` set on all 12, `_roden_last_reviewed` left
+alone, `post_modified` not stamped. The theme documents that distinction and cites
+the 2026-08-07 seat-belt corrections as precedent — copy that was wrong, fixed by
+someone who is not a lawyer.
+
+**Two things this did NOT fix, both recorded rather than quietly left:**
+
+1. `/blog/ashley-phosphate-i-26-south-carolinas-deadliest-intersection/` — three
+   uncited claims removed from the body, but **the headline still asserts the
+   ranking**. Retitling a published post is an editorial decision; a suggested
+   title is in the audit doc.
+2. **The audit was scoped too narrowly.** A pattern scan found ~30 further pages
+   carrying superlative rankings, ratio claims or aggregate counts. They are only
+   *shaped* like the removed claims — some will be properly sourced — so they need
+   a per-claim assessment pass, not a sweep. Start with
+   `/resources/abercorn-street-truck-accidents-savannah/`, a GSC-confirmed keeper
+   asserting both a ranking and a serious-injury ratio in consecutive sentences.
+
 ### Batch (f) — the duplicated case-result URLs
 
 156 case results are published twice: as `case_result` at `/case-results/{slug}/`
