@@ -328,7 +328,12 @@ function roden_filter_subtypes_for_state( $subtypes, $state_key = '', $office_ke
         'roden_subtype_priority_slugs',
         array(
             'charleston'       => array( 'port-worker-injury' ),
-            'north-charleston' => array( 'boeing-aerospace-injury', 'port-worker-injury' ),
+            // boeing-aerospace-injury was listed here until batch (c) retired it
+            // under plan rule 5. A slug that no longer resolves degrades quietly
+            // (array_search returns false, usort sorts it to PHP_INT_MAX), which
+            // is exactly why a stale entry survives unnoticed — so it goes with
+            // the page. port-worker-injury is a different, surviving sub-type.
+            'north-charleston' => array( 'port-worker-injury' ),
         ),
         $office_key,
         $state_key

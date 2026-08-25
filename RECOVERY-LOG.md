@@ -78,10 +78,20 @@ Target: **418–535 location + practice-area URLs, down from 668.**
 | After batch (a) — 88 removed | **538** | **1,529** |
 | Remaining to the top of the target band | 3 | — |
 
-Still to come: batch (a) neighbourhood/subdivision pages (88), batch (c) practice
-micro-permutations (11 consolidate), batch (e) `/es/` mirror sync, batch (f) the
-129 duplicate case results, and the 109 tier-3 EVALUATE rows pending the GSC
-export.
+Still to come: batch (c) practice micro-permutations (11 consolidate, staged
+2026-08-24) and the 109 tier-3 EVALUATE rows pending the GSC export.
+
+**Batch (e) is closed as N/A.** All 125 `/es/` rows in `url-triage.csv` classify
+KEEP, and none mirrors a page removed by (a), (b), (c) or (d) — the Spanish
+location tree is only the six office cities, which are a guardrail keep. Plan
+rule 8 has nothing to act on. Verified two ways: every `/es/` row cross-checked
+against the REMOVE and CONSOLIDATE sets by both full path and terminal slug (zero
+overlap on either), and an hreflang reciprocity spot-check on survivors — Charleston
+and Darien, both locales — confirming self-canonical per locale, reciprocal `en`/`es`
+alternates and `x-default` on English.
+
+*(The line this replaces listed (a), (e) and (f) as outstanding; (a) and (f)
+completed the same day it was written.)*
 
 ### End-state arithmetic
 
@@ -106,6 +116,7 @@ into 8 city-tier towns and 109 nested municipalities; see the recommendation in
 | 2026-08-21 | **(f)** duplicate case-result URLs | 1,529 | 1,529 | 0 | **COMPLETE.** 129 duplicate URLs 301 single-hop to their canonical twin; all 27 legacy-only slugs still return 200, proving the pattern did not over-match. No post removed — duplicate *URLs*, not duplicate content. Retiring the 27 remains an open decision. |
 | 2026-08-21 | **(a)** neighbourhood + subdivision | 1,617 | 1,529 | 88 | **COMPLETE.** Relink applied (53 links, 23 posts, `post_modified` preserved), redirects live, 88 posts trashed, caches flushed. Verified after deletion: 88/88 single-hop 301, no 404s; location sitemap 211 → 123. Backups: `batch-a-relink-*.json`, `batch-a-neighborhood-locations-*.json`. |
 | 2026-08-21 | **(d)** non-office city×practice | 1,651 | 1,617 | 34 | **COMPLETE.** Redirects live, 34 posts trashed, caches flushed. Verified after deletion: 34/34 single-hop 301, no 404s; practice_area sitemap 449 → 415; intersection grids self-healed to pillars, zero surviving links. Backup: `docs/backups/batch-d-nonoffice-city-practice-2026-08-21.json`. |
+| 2026-08-24 | **(c)** practice micro-permutations | 1,529 | — | 11 | **STAGED, NOT APPLIED.** Redirects merged into `roden_phase1_removed_urls()`; the CMS trash step waits on deploy. Backup doubles as the source text for the Corridor and Port Worker studies. |
 
 ### Batch (f) — the duplicated case-result URLs
 
