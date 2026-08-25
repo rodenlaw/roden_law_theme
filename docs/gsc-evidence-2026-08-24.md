@@ -143,9 +143,8 @@ than it says anything about the corridor band.
 43 with clicks split at a natural break: Woodbine (21) and Folkston (6) are
 worth keeping; the rest sit at 1–4 clicks over 13 months.
 
-**DEFERRED 2026-08-24.** The owner is pursuing Search Console API access to get
-impressions for the zero-click pages before any of these are removed — the one number
-this export cannot supply. No batch is built until that lands.
+**RESOLVED 2026-08-25 — see Finding 3.** The API pull supplied the missing
+impressions, and they settle the question rather than complicate it.
 
 ### Nested location pages earning clicks
 
@@ -265,3 +264,112 @@ this export cannot supply. No batch is built until that lands.
 | `/locations/south-carolina/myrtle-beach/wampee/` | 0 | — | — |
 | `/locations/south-carolina/north-charleston/hanahan/` | 0 | — | — |
 | `/locations/south-carolina/north-charleston/moncks-corner/` | 0 | — | — |
+
+
+---
+
+## Finding 3 — the impressions arrived, and they close the case (2026-08-25)
+
+The gap flagged at the top of this document is closed. `gsc-fetch.py --mode pages`
+against the API returns **2,789 pages** versus the UI export's 999, because it
+paginates on `startRow` with no click ranking. Raw data:
+`docs/gsc-2026-08-24/Pages-full-api.csv`.
+
+**The 66 location pages are not invisible. They are shown constantly and refused.**
+
+They took **21,548 impressions and earned 1 click** — a CTR of **0.005%**. Two of
+them rank in the top 5. Set against the site's own performance at matched positions:
+
+| Avg position | Rest of site | | | The 66 | | |
+|---|---:|---:|---:|---:|---:|---:|
+| | impressions | clicks | CTR | impressions | clicks | CTR |
+| 1–5 | 261,492 | 496 | 0.19% | 3 | 0 | 0.00% |
+| 5–10 | 1,368,527 | 6,564 | **0.48%** | 6,814 | 0 | **0.00%** |
+| 10–15 | 2,589,562 | 10,690 | 0.41% | 7,760 | 1 | 0.01% |
+| 15–20 | 1,371,224 | 2,911 | 0.21% | 5,050 | 0 | 0.00% |
+| 20+ | 3,426,368 | 4,046 | 0.12% | 1,921 | 0 | 0.00% |
+
+At positions 5–10 the site converts 0.48% of impressions. These pages converted
+**zero of 6,814**. At the site's own rate that band alone should have produced ~33
+clicks. Zero is not a small sample talking.
+
+I raised "ranks but nobody clicks" earlier as a reason for caution before deleting.
+It turns out to be the finding itself: Google matches these pages to queries, serves
+them, and no human wants them. That is what a doorway page looks like from the
+outside, and it is a stronger basis for removal than the absence of data was.
+
+**The same test confirms the corridor fold.** The 11 pages approved for folding took
+**3,966 impressions and 0 clicks** — one (`port-of-charleston-truck-routes`) has
+never been served at all. The 37 keepers earn clicks at comparable positions. The two
+populations really are different, and the split holds.
+
+### The 66, by impressions
+
+| Page | Impressions | Clicks | Avg pos |
+|---|---:|---:|---:|
+| `/locations/south-carolina/columbia/blythewood/` | 2,180 | 0 | 7.0 |
+| `/locations/south-carolina/columbia/seven-oaks/` | 1,417 | 0 | 7.0 |
+| `/locations/georgia/darien/dock-junction/` | 906 | 0 | 9.5 |
+| `/locations/south-carolina/columbia/hopkins/` | 819 | 0 | 7.8 |
+| `/locations/south-carolina/myrtle-beach/north-myrtle-beach/` | 741 | 0 | 16.9 |
+| `/locations/south-carolina/north-charleston/moncks-corner/` | 682 | 0 | 16.0 |
+| `/locations/south-carolina/columbia/irmo/` | 667 | 0 | 13.3 |
+| `/locations/georgia/savannah/bloomingdale/` | 578 | 0 | 18.2 |
+| `/locations/south-carolina/columbia/lexington/` | 555 | 0 | 16.8 |
+| `/locations/georgia/savannah/effingham-county/` | 544 | 0 | 11.5 |
+| `/locations/south-carolina/charleston/sullivans-island/` | 540 | 0 | 12.2 |
+| `/locations/south-carolina/charleston/johns-island/` | 530 | 0 | 13.7 |
+| `/locations/south-carolina/columbia/st-andrews/` | 525 | 0 | 11.9 |
+| `/locations/georgia/darien/ludowici/` | 514 | 0 | 9.6 |
+| `/locations/georgia/darien/townsend/` | 502 | 0 | 12.7 |
+| `/locations/south-carolina/columbia/oak-grove/` | 451 | 0 | 12.3 |
+| `/locations/south-carolina/myrtle-beach/loris/` | 436 | 0 | 9.2 |
+| `/locations/georgia/darien/eulonia/` | 431 | 0 | 12.7 |
+| `/locations/georgia/savannah/rincon/` | 369 | 0 | 15.5 |
+| `/locations/georgia/savannah/guyton/` | 355 | 0 | 12.2 |
+| `/locations/georgia/savannah/richmond-hill/` | 327 | 0 | 13.0 |
+| `/locations/south-carolina/charleston/hollywood/` | 323 | 0 | 21.0 |
+| `/locations/south-carolina/columbia/dentsville/` | 309 | 0 | 11.7 |
+| `/locations/georgia/darien/white-oak/` | 304 | 0 | 11.7 |
+| `/locations/georgia/darien/screven/` | 301 | 0 | 8.9 |
+| `/locations/south-carolina/charleston/awendaw/` | 296 | 0 | 27.6 |
+| `/locations/south-carolina/north-charleston/hanahan/` | 292 | 0 | 22.5 |
+| `/locations/south-carolina/myrtle-beach/red-hill/` | 286 | 0 | 24.2 |
+| `/locations/georgia/savannah/isle-of-hope/` | 276 | 0 | 12.1 |
+| `/locations/georgia/savannah/springfield/` | 258 | 0 | 16.9 |
+| `/locations/georgia/savannah/tybee-island/` | 257 | 0 | 13.1 |
+| `/locations/georgia/savannah/thunderbolt/` | 255 | 0 | 12.4 |
+| `/locations/south-carolina/charleston/edisto-island/` | 254 | 0 | 17.9 |
+| `/locations/south-carolina/columbia/south-congaree/` | 252 | 0 | 10.8 |
+| `/locations/georgia/savannah/wilmington-island/` | 246 | 0 | 15.4 |
+| `/locations/georgia/darien/st-marys/` | 241 | 0 | 7.5 |
+| `/locations/south-carolina/myrtle-beach/garden-city-beach/` | 235 | 0 | 16.9 |
+| `/locations/georgia/darien/waverly/` | 231 | 0 | 10.7 |
+| `/locations/south-carolina/myrtle-beach/socastee/` | 227 | 0 | 16.1 |
+| `/locations/south-carolina/myrtle-beach/galivants-ferry/` | 223 | 0 | 15.1 |
+| `/locations/south-carolina/columbia/pine-ridge/` | 202 | 0 | 11.9 |
+| `/locations/south-carolina/columbia/springdale/` | 202 | 0 | 29.1 |
+| `/locations/south-carolina/myrtle-beach/longs/` | 200 | 0 | 12.4 |
+| `/locations/south-carolina/charleston/wadmalaw-island/` | 191 | 0 | 24.6 |
+| `/locations/south-carolina/charleston/meggett/` | 186 | 0 | 17.7 |
+| `/locations/south-carolina/columbia/pelion/` | 178 | 0 | 12.9 |
+| `/locations/georgia/darien/odum/` | 158 | 0 | 10.9 |
+| `/locations/south-carolina/columbia/woodfield/` | 155 | 0 | 11.8 |
+| `/locations/south-carolina/charleston/seabrook-island/` | 145 | 0 | 20.0 |
+| `/locations/south-carolina/myrtle-beach/forestbrook/` | 118 | 0 | 16.2 |
+| `/locations/georgia/savannah/garden-city/` | 116 | 0 | 16.0 |
+| `/locations/south-carolina/myrtle-beach/litchfield-beach/` | 105 | 0 | 15.0 |
+| `/locations/south-carolina/charleston/ravenel/` | 74 | 0 | 20.1 |
+| `/locations/south-carolina/myrtle-beach/bucksport/` | 59 | 0 | 21.1 |
+| `/locations/south-carolina/myrtle-beach/wampee/` | 58 | 0 | 15.1 |
+| `/locations/south-carolina/myrtle-beach/briarcliffe-acres/` | 53 | 0 | 21.6 |
+| `/locations/south-carolina/myrtle-beach/burgess/` | 53 | 0 | 19.3 |
+| `/locations/south-carolina/myrtle-beach/green-sea/` | 51 | 0 | 12.3 |
+| `/locations/south-carolina/myrtle-beach/atlantic-beach/` | 46 | 0 | 18.5 |
+| `/locations/south-carolina/columbia/gaston/` | 38 | 0 | 10.4 |
+| `/locations/south-carolina/charleston/mcclellanville/` | 22 | 1 | 14.3 |
+| `/locations/south-carolina/charleston/folly-beach/` | 3 | 0 | 4.7 |
+| `/locations/south-carolina/columbia/camden/` | 0 | 0 | 0.0 |
+| `/locations/south-carolina/myrtle-beach/aynor/` | 0 | 0 | 0.0 |
+| `/locations/south-carolina/myrtle-beach/pawleys-island/` | 0 | 0 | 0.0 |
+| `/locations/south-carolina/charleston/kiawah-island/` | 0 | 0 | 0.0 |
