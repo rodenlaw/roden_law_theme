@@ -2972,7 +2972,7 @@ function roden_see_also_links( $post_id, $heading = '' ) {
         <div class="pa-resources__grid">
             <?php foreach ( $see_also as $link ) : ?>
                 <?php if ( empty( $link['url'] ) ) { continue; } ?>
-                <a href="<?php echo esc_url( home_url( roden_canonicalize_pa_path( $link['url'] ) ) ); ?>" class="resource-link">
+                <a href="<?php echo esc_url( home_url( roden_resolve_see_also_url( $link['url'] ) ) ); ?>" class="resource-link">
                     <span class="resource-link__title"><?php echo esc_html( isset( $link['text'] ) ? $link['text'] : '' ); ?></span>
                     <span class="resource-link__arrow">&rarr;</span>
                 </a>
@@ -2980,6 +2980,48 @@ function roden_see_also_links( $post_id, $heading = '' ) {
         </div>
     </div>
     <?php
+}
+
+/**
+ * Resolve a stored see-also path to where it should actually point.
+ *
+ * Two steps, and the second is why this exists separately from
+ * roden_canonicalize_pa_path(): a stored path may point at a page that has since
+ * been REMOVED. _roden_see_also holds hardcoded strings, so nothing updates them
+ * when a batch retires its target — the link keeps rendering and simply starts
+ * resolving through a 301, which the plan's acceptance criteria forbid
+ * (SEO-PREEMPTION-PLAN-rodenlaw.md §4).
+ *
+ * That is not hypothetical either. After the corridor fold trashed 11 resources,
+ * five published pages still carried see-also entries pointing at them — found by
+ * sweeping post_meta rather than post_content, which the body-link sweep misses
+ * entirely.
+ *
+ * Resolving through the removal map means a see-also link lands on the redirect's
+ * destination directly, with no hop, and stays correct for every future batch
+ * without anyone remembering to clean the meta. Fixed at render time for the same
+ * reasons as the nested-path normalisation above: the meta is not in
+ * content/meta.json's export whitelist, so a DB rewrite leaves no review trail, and
+ * a template fix cannot be undone by a future seeder.
+ *
+ * @param string $path Stored path.
+ * @return string Path to render, canonicalised and redirect-resolved.
+ */
+function roden_resolve_see_also_url( $path ) {
+    $path = roden_canonicalize_pa_path( $path );
+
+    static $map = null;
+    if ( null === $map ) {
+        $map = function_exists( 'roden_phase1_removed_urls' ) ? roden_phase1_removed_urls() : array();
+    }
+
+    // Single substitution only. The map is verified chain-free, so one hop is all
+    // there is to resolve; looping would invite one if that ever stopped holding.
+    if ( isset( $map[ $path ] ) ) {
+        return $map[ $path ];
+    }
+
+    return $path;
 }
 
 /**
