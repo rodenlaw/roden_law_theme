@@ -121,6 +121,42 @@ band.
 **Consequence for the owner list:** the 16-month GSC export now decides **157**
 URLs, not 109.
 
+### Corridor fold — decided 2026-08-24
+
+The GSC evidence resolved the corridor band, and the answer was not the one the
+Steinberg plan assumed. **37 of the 48 keep their URLs**; **11 fold** into Study #1.
+
+| | Pages | Clicks, 13 mo | Disposition |
+|---|---:|---:|---|
+| Performers | 37 | 311 | **KEEP** — page-one positions, more clicks than the whole 19-page legal library |
+| Zero-click | 11 | 0 | **CONSOLIDATE** — 301 to the practice pillar, repoint to the Corridor Report on publication |
+
+Steinberg §3 priority 1 has the road pages' value flowing into the Corridor
+Report. That is right for the dead ones and wrong for the rest: folding all 48
+would have discarded working long-tail to build an asset that then starts from
+zero. The plan's instinct was sound and its scope was not.
+
+The 11 live in their own `roden_corridor_fold_urls()` rather than in the Phase 1
+array, because this decision came from evidence rather than the plan's
+classification rules, and because repointing the targets at the study later should
+be a self-contained edit rather than a hunt through 130 batch entries.
+
+301 targets are practice pillars rather than a surviving sibling corridor page.
+A sibling would read better and would risk a chain if it is ever folded; pillars
+are guardrail keeps, so the target is chain-proof by construction.
+
+The bodies are harvested before the trash step: ~12,900 words across the 11,
+captured by `bin/fold-corridor-zero-click.php`'s dry run. A content harvest that
+ends in a redirect, not a deletion.
+
+**Confidence bound, recorded because it is easy to lose:** the GSC UI export caps
+`Pages.csv` at 1,000 rows with a 1-click minimum, so zero-click pages are absent
+and their **impressions are unknown**. "Zero clicks" is certain; "invisible" is
+not. That is why these 301 rather than 404, and why the bodies are kept.
+
+The 117 nested location pages — 66 of them zero-click — are **deferred** on the
+same gap, pending Search Console API access.
+
 ### End-state arithmetic
 
 | Scope | Now | After definite removals | If all EVALUATE also go |
