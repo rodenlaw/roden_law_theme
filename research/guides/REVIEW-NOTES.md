@@ -1,25 +1,25 @@
 # Attorney review notes — two-state guides
 
-Both guides are seeded as **drafts**. These are the points a reviewing attorney
-should settle before either is published.
+Three guides are seeded as **drafts** — comparative negligence (5352), filing
+deadlines (5353) and workers' compensation (5354). These are the points a
+reviewing attorney should settle before any of them is published.
 
-## 1. S.C. Code § 15-38-15 — the site states it two ways
+## 1. S.C. Code § 15-38-15 — RESOLVED 2026-08-25
 
-This is a live inconsistency in existing published content, not something the
-guides introduced:
+Settled against the statute. § 15-38-15(A): *"joint and several liability does not
+apply to any defendant whose conduct is determined to be **less than fifty
+percent** of the total fault."* So a defendant at exactly 50% **is** jointly
+liable.
 
-| Page | Wording |
-|---|---|
-| `/resources/south-carolina-comparative-negligence/` (4811) | a defendant found **less than 50%** at fault is responsible only for its own share; a defendant found **50% or more** can be held responsible for the whole judgment |
-| `/blog/…` (1810) | defendants are responsible for their proportionate share, with exceptions for defendants **more than 50%** at fault |
+`/resources/south-carolina-comparative-negligence/` (4811) was right. The blog page
+(1810) said "more than 50%" and was corrected. The comparative-negligence guide now
+quotes the statutory wording rather than describing the rule without asserting a
+threshold.
 
-"50% or more" and "more than 50%" differ at exactly 50% — which is precisely the
-kind of one-point distinction the comparative-negligence guide exists to explain.
-The guide therefore describes the rule **without asserting the threshold**, pending
-this being settled against the statute.
-
-**Action:** confirm the threshold in § 15-38-15, then correct whichever page is
-wrong and tighten the guide to match.
+**Still open, and larger:** verifying this turned up **2025 Act No. 42 (H.3430),
+effective 1 January 2026**, which amended § 15-38-15 and created § 61-2-147. 24
+published pages discuss SC dram-shop liability and none mentions it. See
+`docs/sc-act42-exposure-2026-08-25.md`.
 
 ## 2. Georgia's 50% bar — the claim to guard hardest
 
@@ -54,3 +54,31 @@ Every legal statement in both guides traces to one of:
 
 Nothing was drawn from a secondary summary. The brief records that **every
 secondary source reviewed for it got at least one thing wrong.**
+
+## 5. Workers' compensation guide (5354) — points to confirm
+
+The guide is built entirely on primary sources (`docs/wc-um-audit-2026-08-25.md`
+lists them), but three things are worth a practitioner's eye:
+
+- **Georgia's catastrophic designation.** The guide describes it as a functional
+  test and does not give a pinpoint statute cite, because the SBWC handbook
+  language was verified and the section number was not. Existing site pages cite
+  O.C.G.A. § 34-9-200.1. Confirm before adding the cite.
+- **The 400-week figure.** Taken from the handbook's non-catastrophic total
+  disability provision. The guide does not cite § 34-9-261, which other pages do
+  and which was not verified here.
+- **The framing itself** — that Georgia's route past the cap is argued while South
+  Carolina's is categorical — is the guide's central claim. It follows from the
+  statutory text, but it is an argument about how the two systems behave, and it
+  should read true to someone who has litigated both.
+
+## 6. Blocked: the UM/UIM guide
+
+Not written, deliberately. The Georgia half turns on whether an insured may elect
+"added on"/excess UM rather than "reduced by"/set-off, and the operative text of
+O.C.G.A. § 33-7-11 could not be obtained from any primary source available here.
+Six routes were tried and are listed in the audit.
+
+**What would unblock it:** the current text of § 33-7-11 from LexisNexis or
+Westlaw. Meanwhile 33 pages cite that section and 86 mention stacking; two
+specific claims to check first are named in the audit.

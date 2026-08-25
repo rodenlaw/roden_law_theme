@@ -708,6 +708,57 @@ statutory change has reached the pages stating the old rule. The cheapest standi
 version is to sweep every page citing an amended section, not just the page about
 it. That is precisely how the seat-belt reversal survived sixteen months.
 
+### Ten false legal claims fixed, and the guide that would not verify — 2026-08-25
+
+Setting out to write the last two two-state guides meant verifying the law they
+would rest on. That verification found **ten false claims across six published
+pages**. Full trace, with sources, in `docs/wc-um-audit-2026-08-25.md`.
+
+The two that matter most, both of which would cost a client real money:
+
+**Georgia's filing deadline ran from the wrong event.** `steps-after-work-injury`
+said a claim could be filed "2 years from the last authorized medical treatment."
+O.C.G.A. § 34-9-82 gives **one** year from the last remedial treatment and **two**
+years from the last payment of weekly benefits. The page merged the two and
+attached the longer period to the more common event — so a worker whose last
+treatment was eighteen months ago would read it and conclude they still had time.
+They had none.
+
+**South Carolina's 500-week cap was described as extendable.** Two pages said PTD
+benefits "may be extended if the worker proves continued total disability."
+§ 42-9-10(A) says the opposite: *"in no case may the period covered by the
+compensation exceed five hundred weeks except as provided in subsection (C)"* — a
+closed list of paraplegia, quadriplegia and physical brain damage. One page also
+listed amputation as qualifying for lifetime benefits. It does not.
+
+Also fixed: Georgia's panel-of-physicians rule was stated backwards (the worker
+chooses, not the employer), and South Carolina's UM/UIM rules were wrong in both
+directions on two different pages — UM described as waivable when § 38-77-150
+makes it mandatory, UIM described as mandatory when § 38-77-160 only requires it
+be offered. The site asserted both halves of the truth and both halves of the
+error, sometimes within the same page.
+
+**Shipped:** the workers' compensation guide, draft 5354. Its spine is a point
+only a two-state practice would notice — both states cap wage benefits and both
+have a route past the cap, but Georgia's is a *functional test* that can be argued
+and South Carolina's is a *categorical list* of three conditions. So the headline
+400-vs-500-week comparison inverts for the most badly injured workers. The
+filing-deadlines guide's deliberately blank South Carolina workers' comp cell is
+also now filled, the deadline having been verified.
+
+**Not shipped:** the UM/UIM guide. Georgia offers two structurally different forms
+of UM coverage — "added on" and "reduced by" — that can differ by the entire value
+of the coverage on the same crash, and the operative text of O.C.G.A. § 33-7-11
+could not be obtained from any primary source available here. Six routes were
+tried; all six are recorded. Writing it from memory is precisely what left the
+seat-belt rule wrong for sixteen months, so it waits for the statute. 33 pages
+cite that section and 86 mention stacking, so the exposure is real and is scoped.
+
+**The pattern, again.** Every one of these was found by checking a fact in order to
+write something new — none by reading the pages, which read fluently and carry
+correct statute numbers beside incorrect statements of what those statutes say. A
+citation is not a verification, and here it keeps being mistaken for one.
+
 ### § 15-38-15 resolved, brand standardised, and SC tort reform found — 2026-08-25
 
 **The threshold.** The site stated S.C. Code § 15-38-15 two ways. The statute
