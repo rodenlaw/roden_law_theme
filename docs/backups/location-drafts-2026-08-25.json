@@ -1,0 +1,480 @@
+{
+    "generated": "2026-08-25T15:24:03+00:00",
+    "batch": "location-drafts",
+    "mode": "apply",
+    "note": "Never-published drafts. No URL, no redirect needed. Restore with wp post untrash <ID>.",
+    "posts": [
+        {
+            "ID": 3808,
+            "post_title": "Georgetown",
+            "post_name": "georgetown",
+            "post_status": "draft",
+            "post_parent": 3597,
+            "post_date_gmt": "2026-03-03 18:58:59",
+            "post_content": "<p>Georgetown is an unincorporated community of approximately 12,000 residents in eastern Chatham County, positioned along the King George Boulevard commercial corridor. The intersection of King George Boulevard and Abercorn Street ranks as the third-highest crash intersection in all of Chatham County, with frequent sideswipe and rear-end collisions.</p>\n\n<p>Roden Law serves Georgetown from our Savannah office. Call (912) 303-5850 for a free consultation.</p>",
+            "meta": {
+                "_roden_is_neighborhood": [
+                    "1"
+                ],
+                "_roden_parent_office_key": [
+                    "savannah"
+                ],
+                "_roden_neighborhood_roads": [
+                    "King George Boulevard connects Georgetown to the Abercorn Street corridor, with the King George and Abercorn intersection ranking as the third-highest crash intersection in Chatham County. Tibet Avenue and surrounding roads carry heavy commercial traffic to shopping centers and big-box retailers. The area's road network handles significant overflow from the Abercorn Street corridor."
+                ],
+                "_roden_neighborhood_hospitals": [
+                    "Memorial Health University Medical Center (Level I Trauma Center) — approx. 10 min\nSt. Joseph's Hospital — approx. 10 min"
+                ],
+                "_roden_neighborhood_landmarks": [
+                    "Georgetown shopping area, King George Boulevard commercial corridor, nearby Hunter Army Airfield"
+                ],
+                "_roden_neighborhood_service_area": [
+                    "Serving Georgetown, Largo, Tibet, and surrounding eastern Southside Chatham County communities."
+                ],
+                "_roden_neighborhood_population": [
+                    "~12,000"
+                ],
+                "_roden_neighborhood_court": [
+                    "Chatham County Superior Court"
+                ],
+                "_roden_neighborhood_h1": [
+                    "Personal Injury Lawyer Serving Georgetown, GA"
+                ],
+                "_roden_neighborhood_priority": [
+                    "P3"
+                ],
+                "_roden_faqs": [
+                    "a:3:{i:0;a:2:{s:8:\"question\";s:62:\"Why is the King George and Abercorn intersection so dangerous?\";s:6:\"answer\";s:320:\"This intersection handles extremely high traffic volumes from the Abercorn Street commercial corridor and King George Boulevard, with frequent lane changes, turning movements, and driver distraction from surrounding retail and commercial businesses. It consistently ranks among the top crash locations in Chatham County.\";}i:1;a:2:{s:8:\"question\";s:74:\"How long do I have to file a personal injury claim in Georgetown, Georgia?\";s:6:\"answer\";s:303:\"Georgia has a 2-year statute of limitations for personal injury claims (O.C.G.A. § 9-3-33). This deadline runs from the date of the accident. Missing this deadline almost always means permanently losing your right to compensation. Contact a Roden Law attorney as soon as possible to protect your claim.\";}i:2;a:2:{s:8:\"question\";s:74:\"How long do I have to file a personal injury claim in Georgetown, Georgia?\";s:6:\"answer\";s:303:\"Georgia has a 2-year statute of limitations for personal injury claims (O.C.G.A. § 9-3-33). This deadline runs from the date of the accident. Missing this deadline almost always means permanently losing your right to compensation. Contact a Roden Law attorney as soon as possible to protect your claim.\";}}"
+                ],
+                "_yoast_wpseo_title": [
+                    "Georgetown GA Personal Injury Lawyer | Roden Law | Free Consult"
+                ],
+                "_yoast_wpseo_metadesc": [
+                    "Injured in Georgetown? Roden Law handles accident cases in eastern Chatham County. Free consultation. No fees unless we win."
+                ],
+                "_roden_jurisdiction": [
+                    "GA"
+                ],
+                "_roden_author_attorney": [
+                    "3729"
+                ],
+                "_roden_sol_ga": [
+                    "O.C.G.A. § 9-3-33"
+                ]
+            }
+        },
+        {
+            "ID": 3810,
+            "post_title": "Ardsley Park",
+            "post_name": "ardsley-park",
+            "post_status": "draft",
+            "post_parent": 3597,
+            "post_date_gmt": "2026-03-03 18:59:23",
+            "post_content": "<p>Ardsley Park-Chatham Crescent is one of Savannah's most desirable Midtown neighborhoods, known for tree-lined streets, Craftsman and Colonial Revival homes, and proximity to Daffin Park. However, the neighborhood's narrow streets and heavy tree canopy create limited-visibility conditions that contribute to intersection collisions and pedestrian accidents.</p>\n\n<p>Roden Law serves Ardsley Park and all of Midtown Savannah. Call (912) 303-5850 for a free consultation.</p>",
+            "meta": {
+                "_roden_is_neighborhood": [
+                    "1"
+                ],
+                "_roden_parent_office_key": [
+                    "savannah"
+                ],
+                "_roden_neighborhood_roads": [
+                    "Washington Avenue and Habersham Street carry commuter traffic through residential neighborhoods with narrow tree-canopied streets and parked cars restricting visibility. Bull Street and Abercorn Street border the neighborhood with higher-speed traffic. The grid of residential streets was designed for lower traffic volumes and encounters increasing cut-through traffic from drivers avoiding congested main corridors."
+                ],
+                "_roden_neighborhood_hospitals": [
+                    "Memorial Health University Medical Center (Level I Trauma Center) — approx. 8 min\nCandler Hospital — approx. 5 min"
+                ],
+                "_roden_neighborhood_landmarks": [
+                    "Ardsley Park, Chatham Crescent, Baldwin Park, Daffin Park, Bull Street corridor"
+                ],
+                "_roden_neighborhood_service_area": [
+                    "Serving Ardsley Park, Chatham Crescent, Baldwin Park, and surrounding Midtown Savannah neighborhoods."
+                ],
+                "_roden_neighborhood_population": [
+                    "Part of Savannah — Midtown neighborhood"
+                ],
+                "_roden_neighborhood_court": [
+                    "Chatham County Superior Court"
+                ],
+                "_roden_neighborhood_h1": [
+                    "Personal Injury Lawyer Serving Ardsley Park, GA"
+                ],
+                "_roden_neighborhood_priority": [
+                    "P3"
+                ],
+                "_roden_faqs": [
+                    "a:3:{i:0;a:2:{s:8:\"question\";s:67:\"Can I file a claim for a tree-related car accident in Ardsley Park?\";s:6:\"answer\";s:311:\"If a tree or large branch fell on your vehicle due to the city's failure to maintain roadside trees, you may have a claim against the City of Savannah. Georgia's sovereign immunity doctrine limits but does not eliminate claims against municipalities. Our attorneys can evaluate whether your situation qualifies.\";}i:1;a:2:{s:8:\"question\";s:76:\"How long do I have to file a personal injury claim in Ardsley Park, Georgia?\";s:6:\"answer\";s:303:\"Georgia has a 2-year statute of limitations for personal injury claims (O.C.G.A. § 9-3-33). This deadline runs from the date of the accident. Missing this deadline almost always means permanently losing your right to compensation. Contact a Roden Law attorney as soon as possible to protect your claim.\";}i:2;a:2:{s:8:\"question\";s:76:\"How long do I have to file a personal injury claim in Ardsley Park, Georgia?\";s:6:\"answer\";s:303:\"Georgia has a 2-year statute of limitations for personal injury claims (O.C.G.A. § 9-3-33). This deadline runs from the date of the accident. Missing this deadline almost always means permanently losing your right to compensation. Contact a Roden Law attorney as soon as possible to protect your claim.\";}}"
+                ],
+                "_yoast_wpseo_title": [
+                    "Ardsley Park Personal Injury Lawyer | Roden Law | Free Consult"
+                ],
+                "_yoast_wpseo_metadesc": [
+                    "Injured in Ardsley Park or Chatham Crescent? Roden Law handles accident cases in Savannah's Midtown neighborhoods. Free consultation."
+                ],
+                "_roden_jurisdiction": [
+                    "GA"
+                ],
+                "_roden_author_attorney": [
+                    "3729"
+                ],
+                "_roden_sol_ga": [
+                    "O.C.G.A. § 9-3-33"
+                ]
+            }
+        },
+        {
+            "ID": 3813,
+            "post_title": "Myrtle Beach",
+            "post_name": "myrtle-beach",
+            "post_status": "draft",
+            "post_parent": 3601,
+            "post_date_gmt": "2026-03-03 19:31:12",
+            "post_content": "<p>Myrtle Beach is the largest city on the Grand Strand and one of the most popular tourist destinations on the East Coast, drawing approximately 20 million visitors annually. This massive influx of visitors — most of whom are unfamiliar with local roads — combined with a permanent population of roughly 43,000 creates extremely dangerous driving conditions, particularly along US-17 (Kings Highway) and Highway 501.</p>\n\n<p>Horry County had the second-highest rate of fatal crashes of any county in South Carolina in 2022, with 78 fatal collisions resulting in 80 deaths. US-17 through Myrtle Beach is designated as a high-crash corridor by the South Carolina Department of Public Safety. Roden Law’s Murrells Inlet office at 631 Bellamy Ave. serves all of Myrtle Beach. If you’ve been injured in an accident, call (843) 612-1980 for a free case review.</p>",
+            "meta": {
+                "_roden_is_neighborhood": [
+                    "1"
+                ],
+                "_roden_parent_office_key": [
+                    "myrtle-beach"
+                ],
+                "_roden_neighborhood_roads": [
+                    "US-17 (Kings Highway) is the most dangerous road in Horry County, recording 2,181 motor vehicle accidents in a single year with 20 fatalities and 935 injuries. The US-17 Bypass and SC-544 interchange near Surfside Beach is consistently ranked as the most hazardous intersection in Horry County, with 240 crashes recorded from 2018 to 2020. Highway 501 at Carolina Forest Boulevard is another top-5 dangerous intersection with heavy tourist and commuter traffic creating chaotic merge conditions. The intersection of 38th Avenue North and Kings Highway near Village Square Shopping Center sees high rates of rear-end collisions from distracted driving near businesses and attractions."
+                ],
+                "_roden_neighborhood_hospitals": [
+                    "Grand Strand Medical Center (Level I Adult Trauma / Level II Pediatric Trauma) — 809 82nd Pkwy, Myrtle Beach, SC 29572 — (843) 692-1000\nSouth Strand Medical Center ER — 5050 US-17 BYP S, Myrtle Beach, SC 29588\nCarolina Forest ER (Grand Strand Health) — 2690 Professional Circle, Myrtle Beach, SC 29577"
+                ],
+                "_roden_neighborhood_landmarks": [
+                    "Broadway at the Beach, Myrtle Beach Boardwalk & Promenade, SkyWheel, Coastal Grand Mall, The Market Common, Myrtle Beach State Park, Myrtle Beach International Airport, Pelicans Ballpark"
+                ],
+                "_roden_neighborhood_service_area": [
+                    "Serving Myrtle Beach, Market Common, Grande Dunes, Arcadian Shores, the Golden Mile, and all communities along the Grand Strand from 82nd Parkway to Surfside Beach."
+                ],
+                "_roden_neighborhood_population": [
+                    "~43,000 (metro ~441,000)"
+                ],
+                "_roden_neighborhood_court": [
+                    "Horry County Circuit Court (15th Judicial Circuit)"
+                ],
+                "_roden_neighborhood_h1": [
+                    "Personal Injury Lawyer Serving Myrtle Beach, SC"
+                ],
+                "_roden_neighborhood_priority": [
+                    "P1"
+                ],
+                "_roden_faqs": [
+                    "a:4:{i:0;a:2:{s:8:\"question\";s:79:\"What should I do after a car accident on Kings Highway (US-17) in Myrtle Beach?\";s:6:\"answer\";s:443:\"Call 911 immediately, then move your vehicle out of traffic if it is safe to do so. Exchange insurance information with the other driver and photograph the scene, including traffic signals, lane markings, and any visible damage. Seek medical attention even if you feel fine — adrenaline can mask injuries. Do not give a recorded statement to the other driver’s insurance company. Contact Roden Law at (843) 612-1980 for a free case review.\";}i:1;a:2:{s:8:\"question\";s:64:\"Which hospital should I go to after an accident in Myrtle Beach?\";s:6:\"answer\";s:340:\"Grand Strand Medical Center on 82nd Parkway is the region’s only Level I Adult Trauma Center and Level II Pediatric Trauma Center. For accidents in the south end of Myrtle Beach, the South Strand Medical Center ER on US-17 Bypass South is closer. For accidents near Carolina Forest, the Carolina Forest ER provides 24-hour emergency care.\";}i:2;a:2:{s:8:\"question\";s:67:\"Can a tourist injured in Myrtle Beach file a personal injury claim?\";s:6:\"answer\";s:329:\"Yes. You do not need to be a South Carolina resident to file a personal injury claim for an accident that occurred in the state. South Carolina’s 3-year statute of limitations (S.C. Code § 15-3-530) applies regardless of where you live. Roden Law handles cases for both residents and visitors injured in the Grand Strand area.\";}i:3;a:2:{s:8:\"question\";s:73:\"How long do I have to file an injury claim after a Myrtle Beach accident?\";s:6:\"answer\";s:350:\"South Carolina has a 3-year statute of limitations for personal injury claims (S.C. Code § 15-3-530). You must file your lawsuit within 3 years of the date of your accident. However, evidence deteriorates quickly in a tourist-heavy area — surveillance footage is often overwritten and witnesses leave town. Contact an attorney as soon as possible.\";}}"
+                ],
+                "_yoast_wpseo_title": [
+                    "Myrtle Beach Personal Injury Lawyer | Roden Law | Free Consult"
+                ],
+                "_yoast_wpseo_metadesc": [
+                    "Injured in Myrtle Beach? Roden Law handles car, truck & pedestrian accident cases on US-17, Hwy 501 & Kings Highway. Free consultation. No fees unless we win."
+                ],
+                "_roden_jurisdiction": [
+                    "SC"
+                ],
+                "_roden_author_attorney": [
+                    "3732"
+                ],
+                "_roden_sol_sc": [
+                    "S.C. Code § 15-3-530"
+                ]
+            }
+        },
+        {
+            "ID": 3838,
+            "post_title": "Columbia",
+            "post_name": "columbia",
+            "post_status": "draft",
+            "post_parent": 3600,
+            "post_date_gmt": "2026-03-03 20:07:26",
+            "post_content": "<p>Columbia is the capital of South Carolina and the second-largest city in the state, with approximately 137,000 residents and an 870,000-person metro area. The city sits at the confluence of three rivers and the intersection of three major interstates — I-20, I-26, and I-77 — creating some of the highest traffic volumes in the state. Richland County recorded 12,450 motor vehicle collisions in 2023, ranking it among the most crash-heavy counties in South Carolina. The SCDPS has identified 13 high-crash corridors in the Columbia area, including Broad River Road, Two Notch Road, and Farrow Road.</p>\n\n<p>Roden Law's Columbia office at 1545 Sumter Street is located in the heart of downtown Columbia, minutes from major accident corridors and the Richland County Courthouse. Our personal injury attorneys handle cases involving crashes at Malfunction Junction, on Assembly Street, along Two Notch Road, and throughout the Midlands. If you've been injured in a Columbia accident, call (803) 219-2816 for a free consultation — we work on a contingency fee basis, meaning you pay nothing unless we recover compensation for you.</p>",
+            "meta": {
+                "_roden_is_neighborhood": [
+                    "1"
+                ],
+                "_roden_parent_office_key": [
+                    "columbia"
+                ],
+                "_roden_neighborhood_roads": [
+                    "The I-20 and I-26 interchange — known locally as 'Malfunction Junction' — sits at the center of the state's interstate system and recorded 91 collisions including 2 fatal crashes in a recent reporting period. The SCDOT's Carolina Crossroads project is implementing phased improvements, but the convergence of two busy interstates continues to create a hazardous environment. Assembly Street and Elmwood Avenue recorded 50 collisions with 10 resulting in injuries, making it one of the most dangerous urban intersections in the city. Two Notch Road is one of the longest and most heavily traveled corridors in the Columbia area, with the Sparkleberry Lane intersection identified as a persistent crash hotspot. Broad River Road near I-26 sees heavy rush-hour congestion and frequent rear-end collisions."
+                ],
+                "_roden_neighborhood_hospitals": [
+                    "Prisma Health Richland Hospital (Level I Trauma Center, 641 beds) — 5 Richland Medical Park Dr, Columbia, SC 29203 — (803) 434-7000\nPrisma Health Baptist Hospital — 1600 Marion St, Columbia, SC 29201 — (803) 296-5010\nPrisma Health Children's Hospital–Midlands (Level II Pediatric Trauma) — 7 Richland Medical Park Dr, Columbia, SC 29203 — (803) 434-7000\nProvidence Health Downtown — 2435 Forest Dr, Columbia, SC 29204 — (803) 256-5300"
+                ],
+                "_roden_neighborhood_landmarks": [
+                    "University of South Carolina, South Carolina State House, Riverbanks Zoo & Garden, Soda City Market, Five Points, The Vista, Congaree National Park, Colonial Life Arena, Fort Jackson, Williams-Brice Stadium"
+                ],
+                "_roden_neighborhood_service_area": [
+                    "Serving downtown Columbia, Shandon, Five Points, The Vista, Rosewood, Eau Claire, Cottontown, Elmwood Park, Arsenal Hill, Melrose Heights, and surrounding Midlands communities."
+                ],
+                "_roden_neighborhood_population": [
+                    "~137,000 (city); ~870,000 metro area"
+                ],
+                "_roden_neighborhood_court": [
+                    "Richland County Circuit Court (5th Judicial Circuit)"
+                ],
+                "_roden_neighborhood_h1": [
+                    "Personal Injury Lawyer in Columbia, SC"
+                ],
+                "_roden_neighborhood_priority": [
+                    "P1"
+                ],
+                "_roden_faqs": [
+                    "a:4:{i:0;a:2:{s:8:\"question\";s:58:\"What are the most dangerous intersections in Columbia, SC?\";s:6:\"answer\";s:456:\"According to SCDPS data, the most dangerous intersections include the I-20/I-26 interchange ('Malfunction Junction'), I-26 at US-176 (195 collisions, 60 injuries), Assembly Street at Elmwood Avenue (50 collisions), and Taylor Street at Huger Street (49 collisions). The Two Notch Road corridor and Broad River Road near I-26 are also identified as high-crash corridors. If you've been injured at any of these locations, contact Roden Law at (803) 219-2816.\";}i:1;a:2:{s:8:\"question\";s:63:\"How long do I have to file a personal injury claim in Columbia?\";s:6:\"answer\";s:316:\"South Carolina has a 3-year statute of limitations for personal injury claims (S.C. Code § 15-3-530). You must file your lawsuit within 3 years of the accident date. However, evidence deteriorates and witnesses become harder to locate over time, so contacting an attorney as early as possible strengthens your case.\";}i:2;a:2:{s:8:\"question\";s:63:\"Which hospital should I go to after a car accident in Columbia?\";s:6:\"answer\";s:415:\"For severe or life-threatening injuries, Prisma Health Richland Hospital on Richland Medical Park Drive is the Midlands' only Level I Trauma Center and treats over 3,300 serious injuries annually. Providence Health on Forest Drive and Prisma Health Baptist Hospital downtown also have 24/7 emergency departments. For Lexington County accidents, Lexington Medical Center in West Columbia is another excellent option.\";}i:3;a:2:{s:8:\"question\";s:45:\"Where is Roden Law's Columbia office located?\";s:6:\"answer\";s:321:\"Our Columbia office is at 1545 Sumter Street, Suite B, Columbia, SC 29201. We are centrally located in downtown Columbia, just blocks from the Richland County Courthouse. We serve injury victims throughout Richland County, Lexington County, and the surrounding Midlands region. Call (803) 219-2816 for a free case review.\";}}"
+                ],
+                "_yoast_wpseo_title": [
+                    "Columbia SC Personal Injury Lawyer | Roden Law | Free Consult"
+                ],
+                "_yoast_wpseo_metadesc": [
+                    "Injured in Columbia, SC? Roden Law handles car, truck & pedestrian accident cases near I-20, I-26, Assembly St & Two Notch Rd. Free consultation. No fees unless we win."
+                ],
+                "_roden_jurisdiction": [
+                    "SC"
+                ],
+                "_roden_author_attorney": [
+                    "3732"
+                ],
+                "_roden_sol_sc": [
+                    "S.C. Code § 15-3-530"
+                ]
+            }
+        },
+        {
+            "ID": 3871,
+            "post_title": "Darien",
+            "post_name": "darien",
+            "post_status": "draft",
+            "post_parent": 3598,
+            "post_date_gmt": "2026-03-03 20:37:41",
+            "post_content": "<p>Darien is the county seat of McIntosh County and home to Roden Law's Georgia coastal office at 1108 North Way. With approximately 1,500 city residents and 11,000 countywide, Darien is a historic shrimping community situated at the mouth of the Altamaha River — one of the largest undammed rivers on the East Coast. The city is also home to Fort King George, the oldest English fort on the Georgia coast, dating to 1721.</p>\n\n<p>Despite its small size, Darien sits directly on Interstate 95 and US-17, placing it in the path of massive commercial truck traffic volumes traveling between Savannah and Jacksonville. The rural stretches of I-95 through McIntosh County are particularly dangerous during nighttime and early morning hours, when fatigued truckers pass through with minimal lighting and few rest facilities. Boating accidents on the Altamaha River and surrounding intracoastal waterways also affect McIntosh County residents. As Darien's local personal injury law firm, Roden Law is deeply connected to this community. Call (912) 303-5850 for a free case review.</p>",
+            "meta": {
+                "_roden_is_neighborhood": [
+                    "1"
+                ],
+                "_roden_parent_office_key": [
+                    "darien"
+                ],
+                "_roden_neighborhood_roads": [
+                    "Interstate 95 through McIntosh County between Exits 49 and 58 is a high-speed corridor where commercial tractor-trailer crashes are common, particularly during early morning hours when fatigued long-haul truckers pass through the rural stretch between Savannah and Brunswick. US-17 (Ocean Highway) through Darien crosses the Altamaha River on a bridge that creates dangerous conditions during fog — the Altamaha River bridge approach is a known accident site where rear-end collisions occur when vehicles suddenly slow for the bridge in low-visibility conditions. GA-251 connects I-95 to Darien proper and carries traffic through a narrow corridor with limited shoulders and residential driveways that create turning conflicts. The I-95/GA-251 interchange (Exit 49) is a critical merge point where commercial traffic conflicts with local traffic heading to the Darien waterfront, shrimp docks, and Fort King George. Timber trucks traveling from interior McIntosh County to the coast use narrow county roads not designed for their weight and size."
+                ],
+                "_roden_neighborhood_hospitals": [
+                    "No hospital in Darien — nearest hospital:\nSoutheast Georgia Health System — Brunswick Campus — 2415 Parkwood Dr, Brunswick, GA 31520 — (912) 466-7000 (approx. 20 min south via I-95)\nMemorial Health University Medical Center — 4700 Waters Ave, Savannah, GA 31404 — (912) 350-8000 (Level I Trauma Center, approx. 55 min north via I-95)"
+                ],
+                "_roden_neighborhood_landmarks": [
+                    "Fort King George Historic Site (1721 — oldest fort on Georgia coast), Darien Waterfront Park, Darien Shrimp Docks (Blessing of the Fleet festival), Altamaha River (at Darien River confluence), Sapelo Island Ferry Dock, Hofwyl-Broadfield Plantation State Historic Site, Butler Island Plantation, McIntosh County Courthouse, Roden Law office (1108 North Way)"
+                ],
+                "_roden_neighborhood_service_area": [
+                    "Serving Darien, Townsend, Eulonia, Meridian, South Newport, Sapelo Island, Valona, Crescent, and all of McIntosh County."
+                ],
+                "_roden_neighborhood_population": [
+                    "~1,500 (city); ~11,000 McIntosh County"
+                ],
+                "_roden_neighborhood_court": [
+                    "McIntosh County Superior Court (Brunswick Judicial Circuit)"
+                ],
+                "_roden_neighborhood_h1": [
+                    "Personal Injury Lawyer in Darien, GA"
+                ],
+                "_roden_neighborhood_priority": [
+                    "P2"
+                ],
+                "_roden_faqs": [
+                    "a:4:{i:0;a:2:{s:8:\"question\";s:40:\"Does Roden Law have an office in Darien?\";s:6:\"answer\";s:278:\"Yes. Our Darien office is located at 1108 North Way, Darien, GA 31305. We serve McIntosh County and the surrounding Southeast Georgia region. Our founding partners Eric Roden and Tyler Love are both licensed in Georgia and handle cases throughout the Brunswick Judicial Circuit.\";}i:1;a:2:{s:8:\"question\";s:59:\"What types of accidents are most common in McIntosh County?\";s:6:\"answer\";s:419:\"Interstate 95 tractor-trailer crashes are the most serious and frequent accident type in McIntosh County. US-17 bridge-related accidents near the Altamaha River, logging truck crashes on rural county roads, and boating accidents on the Altamaha River and intracoastal waterways also affect residents. The county's lack of a local hospital means accident victims often face significant delays in reaching emergency care.\";}i:2;a:2:{s:8:\"question\";s:65:\"Where do I go for emergency care if I'm in an accident in Darien?\";s:6:\"answer\";s:334:\"Darien does not have a hospital. The nearest emergency room is at Southeast Georgia Health System's Brunswick Campus, approximately 20 minutes south via I-95. For severe trauma, patients may be airlifted to Memorial Health University Medical Center in Savannah, the region's only Level I Trauma Center, approximately 55 minutes north.\";}i:3;a:2:{s:8:\"question\";s:48:\"What court handles McIntosh County injury cases?\";s:6:\"answer\";s:252:\"Personal injury cases from McIntosh County are filed in McIntosh County Superior Court, part of the Brunswick Judicial Circuit. As Darien's local personal injury firm, our attorneys are intimately familiar with this court and the local legal community.\";}}"
+                ],
+                "_yoast_wpseo_title": [
+                    "Darien GA Personal Injury Lawyer | Roden Law | Local Office"
+                ],
+                "_yoast_wpseo_metadesc": [
+                    "Roden Law's Darien office at 1108 North Way handles car, truck & boat accident cases in McIntosh County near I-95, US-17 & the Altamaha River corridor."
+                ],
+                "_roden_jurisdiction": [
+                    "GA"
+                ],
+                "_roden_author_attorney": [
+                    "3729"
+                ],
+                "_roden_sol_ga": [
+                    "O.C.G.A. § 9-3-33"
+                ]
+            }
+        },
+        {
+            "ID": 4273,
+            "post_title": "Sullivans Island",
+            "post_name": "sullivans-island",
+            "post_status": "draft",
+            "post_parent": 3762,
+            "post_date_gmt": "2026-03-16 21:37:09",
+            "post_content": "<p>Sullivan's Island is a historic barrier island community just east of Mount Pleasant, connected to the mainland by the Ben Sawyer Bridge. The island's small-town character, beautiful beaches, and popular restaurants draw heavy visitor traffic through a road network designed for a fraction of current volumes — especially during summer months.</p>\n\n<p>Roden Law's Charleston office represents Sullivan's Island residents and visitors injured in car accidents on Ben Sawyer Boulevard, bicycle and golf cart collisions on Middle Street, pedestrian accidents at beach access points, and premises liability incidents at island businesses. Our attorneys understand the seasonal traffic patterns and unique liability issues on the barrier islands.</p>\n\n<p>Injured on Sullivan's Island? Contact Roden Law for a free consultation.</p>",
+            "meta": {
+                "_roden_is_neighborhood": [
+                    "1"
+                ],
+                "_roden_parent_office_key": [
+                    "charleston"
+                ],
+                "_roden_neighborhood_roads": [
+                    "Ben Sawyer Boulevard is the sole road connecting Sullivan's Island to Mount Pleasant, and this two-lane bridge and causeway creates a dangerous bottleneck during peak beach season with severe congestion and rear-end collisions. Middle Street through the island's commercial district carries mixed traffic of vehicles, bicycles, golf carts, and pedestrians with limited separation. Station 12 through Station 28 beach access points generate pedestrian crossings across Middle Street from beachgoers carrying equipment and children. The Middle Street and Jasper Boulevard intersection near Fort Moultrie sees tourist traffic unfamiliar with the island's low-speed character."
+                ],
+                "_roden_neighborhood_hospitals": [
+                    "East Cooper Medical Center — 2000 Hospital Dr, Mount Pleasant, SC 29464 — (843) 881-0100\nRoper St. Francis Mount Pleasant Hospital — 3500 Highway 17 North, Mount Pleasant, SC 29466 — (843) 606-7000"
+                ],
+                "_roden_neighborhood_landmarks": [
+                    "Fort Moultrie National Monument, Sullivan's Island Lighthouse, Poe's Tavern, Sullivan's Island beaches, Ben Sawyer Bridge, Station 22 Restaurant"
+                ],
+                "_roden_neighborhood_service_area": [
+                    "Serving Sullivan's Island, Ben Sawyer Boulevard corridor, and the barrier island communities."
+                ],
+                "_roden_neighborhood_population": [
+                    "~2,100"
+                ],
+                "_roden_neighborhood_court": [
+                    "Charleston County Circuit Court"
+                ],
+                "_roden_neighborhood_h1": [
+                    "Personal Injury Lawyer Serving Sullivan's Island, SC"
+                ],
+                "_roden_neighborhood_priority": [
+                    "P1"
+                ],
+                "_roden_faqs": [
+                    "a:3:{i:0;a:2:{s:8:\"question\";s:52:\"What if I'm in an accident on the Ben Sawyer Bridge?\";s:6:\"answer\";s:271:\"Ben Sawyer Bridge accidents can be particularly dangerous due to the narrow roadway, lack of shoulders, and water exposure. Call 911 immediately and stay in your vehicle if possible. The bridge falls under SCDOT jurisdiction. Contact Roden Law for a free case evaluation.\";}i:1;a:2:{s:8:\"question\";s:63:\"Can I file a claim for a bicycle accident on Sullivan's Island?\";s:6:\"answer\";s:246:\"Yes. Cyclists have the same rights as motorists on South Carolina roads. If a driver's negligence caused your bicycle accident on Middle Street or anywhere on the island, you can pursue compensation for injuries, medical bills, and other damages.\";}i:2;a:2:{s:8:\"question\";s:62:\"Who is liable for beach-related injuries on Sullivan's Island?\";s:6:\"answer\";s:317:\"Liability depends on the circumstances. The Town of Sullivan's Island may be liable for dangerous conditions at public beach access points. If a private property owner's negligence (e.g., unsecured construction, falling debris) caused your injury, they may be liable. An attorney can identify the responsible parties.\";}}"
+                ],
+                "_yoast_wpseo_title": [
+                    "Sullivan's Island Personal Injury Lawyer | Roden Law | Free Consult"
+                ],
+                "_yoast_wpseo_metadesc": [
+                    "Injured on Sullivan's Island? Roden Law handles car accidents on Ben Sawyer Blvd, beach injuries, and bicycle crashes. Free consultation. No fees unless we win."
+                ],
+                "_roden_jurisdiction": [
+                    "SC"
+                ],
+                "_roden_author_attorney": [
+                    "3732"
+                ],
+                "_roden_sol_sc": [
+                    "S.C. Code § 15-3-530"
+                ]
+            }
+        },
+        {
+            "ID": 4332,
+            "post_title": "Springfield",
+            "post_name": "springfield",
+            "post_status": "draft",
+            "post_parent": 3799,
+            "post_date_gmt": "2026-03-16 22:24:32",
+            "post_content": "<p>Springfield is the county seat of Effingham County, home to the courthouse, government complex, and the Effingham Health System. As the administrative center of one of Georgia's fastest-growing counties, Springfield handles significant traffic from courthouse visitors, government employees, and Highway 21 commuters passing through.</p>\n\n<p>Roden Law's Savannah office represents Springfield residents injured in car accidents on Highway 21 and Highway 119, pedestrian incidents in the courthouse district, and premises liability cases. Our attorneys regularly appear in Effingham County Superior Court in Springfield.</p>\n\n<p>Injured in Springfield? Call (912) 303-5850 for a free consultation.</p>",
+            "meta": {
+                "_roden_is_neighborhood": [
+                    "1"
+                ],
+                "_roden_parent_office_key": [
+                    "savannah"
+                ],
+                "_roden_neighborhood_roads": [
+                    "Highway 21 through Springfield carries heavy commuter and commercial traffic through the county seat, mixing high-speed through traffic with local traffic heading to the courthouse, government offices, and downtown businesses. Highway 119 intersects Highway 21 in the center of Springfield, creating the city's busiest and most accident-prone junction. Laurel Street and the surrounding downtown grid handle mixed traffic from courthouse visitors, government employees, and local residents. The Highway 21 and Old Augusta Road intersection south of Springfield generates frequent collisions from vehicles navigating between the highway and residential areas."
+                ],
+                "_roden_neighborhood_hospitals": [
+                    "Effingham Health System — 459 Highway 119 S, Springfield, GA 31329 — (912) 754-6484\nMemorial Health University Medical Center — 4700 Waters Ave, Savannah, GA 31404 — (912) 350-8000"
+                ],
+                "_roden_neighborhood_landmarks": [
+                    "Effingham County Courthouse, Springfield city center, Effingham Health System hospital, Highway 21/119 intersection, Effingham County government complex"
+                ],
+                "_roden_neighborhood_service_area": [
+                    "Serving Springfield, the county seat area, and central Effingham County communities."
+                ],
+                "_roden_neighborhood_population": [
+                    "~5,000"
+                ],
+                "_roden_neighborhood_court": [
+                    "Effingham County Superior Court"
+                ],
+                "_roden_neighborhood_h1": [
+                    "Personal Injury Lawyer Serving Springfield, GA"
+                ],
+                "_roden_neighborhood_priority": [
+                    "P1"
+                ],
+                "_roden_faqs": [
+                    "a:3:{i:0;a:2:{s:8:\"question\";s:41:\"Where is the Effingham County Courthouse?\";s:6:\"answer\";s:241:\"The Effingham County Courthouse is located in Springfield at the intersection of Highway 21 and Highway 119. Roden Law practices in Effingham County Superior Court and is familiar with the local court procedures, judges, and legal community.\";}i:1;a:2:{s:8:\"question\";s:53:\"What if I'm injured in a car accident on Highway 119?\";s:6:\"answer\";s:270:\"Highway 119 through Springfield carries a mix of local and through traffic with limited infrastructure. Document the scene, seek medical attention at nearby Effingham Health System, and contact a personal injury attorney. Georgia's 2-year statute of limitations applies.\";}i:2;a:2:{s:8:\"question\";s:77:\"Can I file a claim if a government vehicle causes my accident in Springfield?\";s:6:\"answer\";s:237:\"Claims against Georgia government entities are governed by the Georgia Tort Claims Act (O.C.G.A. § 50-21-20 et seq.), which has specific notice requirements and procedures. An attorney can ensure you meet all deadlines and requirements.\";}}"
+                ],
+                "_yoast_wpseo_title": [
+                    "Springfield GA Personal Injury Lawyer | Roden Law | Free Consult"
+                ],
+                "_yoast_wpseo_metadesc": [
+                    "Injured in Springfield, GA? Roden Law handles Hwy 21 car accidents, courthouse area injuries, and truck crashes in the Effingham County seat. Free consultation."
+                ],
+                "_roden_jurisdiction": [
+                    "GA"
+                ],
+                "_roden_author_attorney": [
+                    "3729"
+                ],
+                "_roden_sol_ga": [
+                    "O.C.G.A. § 9-3-33"
+                ]
+            }
+        },
+        {
+            "ID": 4333,
+            "post_title": "Guyton",
+            "post_name": "guyton",
+            "post_status": "draft",
+            "post_parent": 3799,
+            "post_date_gmt": "2026-03-16 22:24:38",
+            "post_content": "<p>Guyton is a small city in western Effingham County located along the Highway 17 corridor and the CSX railroad line. The town's mix of commercial truck traffic on Highway 17, active railroad crossings, and growing residential traffic from Effingham County's expansion creates unique safety challenges for this rural community.</p>\n\n<p>Roden Law's Savannah office represents Guyton residents injured in car accidents on Highway 17, railroad crossing incidents, truck collisions, and premises liability cases. Our attorneys practice in Effingham County Superior Court and serve all of western Effingham County.</p>\n\n<p>Injured in Guyton? Call (912) 303-5850 for a free case review.</p>",
+            "meta": {
+                "_roden_is_neighborhood": [
+                    "1"
+                ],
+                "_roden_parent_office_key": [
+                    "savannah"
+                ],
+                "_roden_neighborhood_roads": [
+                    "Highway 17 through Guyton carries truck and commercial traffic between Savannah and inland Georgia, with heavy vehicles mixing with local residential traffic in a small-town setting. The active CSX railroad crossings in Guyton create hazardous conditions where vehicles queue across intersections during train passes. Highway 119 connects Guyton to Springfield and carries growing commuter traffic through rural sections with limited infrastructure. Pine Street and Central Boulevard through downtown Guyton see traffic conflicts between through vehicles and the small-town pedestrian environment."
+                ],
+                "_roden_neighborhood_hospitals": [
+                    "Effingham Health System — 459 Highway 119 S, Springfield, GA 31329 — (912) 754-6484\nMemorial Health University Medical Center — 4700 Waters Ave, Savannah, GA 31404 — (912) 350-8000"
+                ],
+                "_roden_neighborhood_landmarks": [
+                    "Downtown Guyton, CSX railroad corridor, Highway 17 commercial strip, Guyton City Hall, Effingham County industrial area"
+                ],
+                "_roden_neighborhood_service_area": [
+                    "Serving Guyton, the Highway 17 corridor, and surrounding western Effingham County communities."
+                ],
+                "_roden_neighborhood_population": [
+                    "~3,000"
+                ],
+                "_roden_neighborhood_court": [
+                    "Effingham County Superior Court"
+                ],
+                "_roden_neighborhood_h1": [
+                    "Personal Injury Lawyer Serving Guyton, GA"
+                ],
+                "_roden_neighborhood_priority": [
+                    "P2"
+                ],
+                "_roden_faqs": [
+                    "a:3:{i:0;a:2:{s:8:\"question\";s:57:\"Who is liable for a railroad crossing accident in Guyton?\";s:6:\"answer\";s:287:\"Liability may fall on the railroad company (CSX), the local or state government responsible for crossing maintenance, or both. If crossing signals, gates, or signage were defective or inadequate, these parties may be held responsible. An attorney can investigate all potential liability.\";}i:1;a:2:{s:8:\"question\";s:59:\"What if a truck causes my accident on Highway 17 in Guyton?\";s:6:\"answer\";s:256:\"Trucking companies can be held liable for accidents caused by their drivers under Georgia law. Federal Motor Carrier Safety Regulations impose strict requirements on truck maintenance, driver hours, and load securement. Violations can strengthen your case.\";}i:2;a:2:{s:8:\"question\";s:33:\"How far is Roden Law from Guyton?\";s:6:\"answer\";s:191:\"Our Savannah office at 333 Commercial Drive is approximately 25 minutes from Guyton. We serve all of Effingham County and practice regularly in Effingham County Superior Court in Springfield.\";}}"
+                ],
+                "_yoast_wpseo_title": [
+                    "Guyton GA Personal Injury Lawyer | Roden Law | Free Consult"
+                ],
+                "_yoast_wpseo_metadesc": [
+                    "Injured in Guyton, GA? Roden Law handles Hwy 17 car accidents, railroad crossing incidents, and truck crashes. Free consultation. No fees unless we win."
+                ],
+                "_roden_jurisdiction": [
+                    "GA"
+                ],
+                "_roden_author_attorney": [
+                    "3729"
+                ],
+                "_roden_sol_ga": [
+                    "O.C.G.A. § 9-3-33"
+                ]
+            }
+        }
+    ]
+}

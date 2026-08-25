@@ -291,6 +291,47 @@ fixed in a way that covers future batches rather than just this one.
 removal; sweep post_meta as well as post_content; and confirm `post_modified` on
 the posts that are still published, separately from the ones you trashed.
 
+### Track E — the guardrail holes, closed 2026-08-25
+
+The cull removed 196 URLs and nothing stopped any of them coming back. Two
+seeders in `bin/` with their payloads still on disk would have recreated 42 in a
+single run, and eight forbidden location drafts were sitting in the CMS one
+Publish click from live. Both plans said "no new location pages, no exceptions";
+neither was enforced anywhere.
+
+| Hole | Closed by |
+|---|---|
+| A Publish click recreates a banned page type | `inc/content-guardrails.php` gates the transition to `publish` |
+| 8 forbidden drafts in the CMS | trashed, backup `docs/backups/location-drafts-2026-08-25.json` |
+| Seeders that recreate batches (b) and (d) | retired with their payloads; `bin/README.md` records why |
+
+**Two rules with different lifetimes, and that distinction is the design.**
+Sub-city pages are banned *permanently* and survive the freeze being lifted. New
+city-tier pages are *frozen* behind `RODEN_LOCATION_FREEZE`, because the plan
+explicitly allows one with a partner-approved business case — a real future need,
+so it gets a documented switch rather than a wall. A third check catches a bug
+rather than a policy breach (a slug equal to its parent's, which publishes a
+duplicate office hub at a nested URL) and runs first, so the freeze cannot swallow
+it and report the wrong reason.
+
+**Proven against production, not just unit-tested.** Attempting to publish a
+sub-city page and a duplicate-of-parent page both came back as `draft`; an
+ordinary blog post published normally; all three test posts force-deleted with no
+residue. `php bin/test-content-guardrails.php` covers ten cases standalone, and
+two of them caught real bugs during development — the duplicate-slug check
+originally sat in an `else` branch, and the sub-city ban did not survive the
+freeze being lifted until a test said so.
+
+The eight drafts were never published, so there is no URL, no index entry and no
+redirect: sitemaps are unchanged at location 57 / practice_area 404. Three of them
+duplicated their own parent office city, two sat under a parent batch (a) had
+already trashed, and one was a second Sullivan's Island page whose tier-3 twin was
+removed the same day for taking 540 impressions and no clicks.
+
+**Left deliberately:** `practice_area` draft 4630, *Warehouse & Logistics Injury
+Lawyers* (553 words, April 2026). It is a practice sub-type rather than a location
+page, so it is a content decision for after the freeze, not a guardrail matter.
+
 ### Batch (f) — the duplicated case-result URLs
 
 156 case results are published twice: as `case_result` at `/case-results/{slug}/`
