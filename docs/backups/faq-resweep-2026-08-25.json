@@ -1,0 +1,86 @@
+{
+ "batch": "FAQ re-sweep 2026-08-25 — survivals of earlier body corrections",
+ "edits": [
+  {
+   "ID": 4654,
+   "slug": "i-20-truck-accidents-columbia",
+   "index": 0,
+   "before": "Truck accidents on I-20 in the Columbia area are alarmingly common and increasing. South Carolina recorded 3,167 large truck crashes in 2024, with fatal truck accidents rising 23% statewide. Richland County consistently reports one of the highest crash rates in the state, and the growth of distribution centers in Lexington County has significantly increased truck volume on the I-20 corridor.",
+   "after": "Truck accidents on I-20 in the Columbia area are a persistent problem. I-20 carries through-freight between Atlanta and Florence, and the growth of distribution centres in Lexington County has significantly increased truck volume on the corridor. Richland County's crash burden reflects that mix of interstate freight, commuter traffic and interchange complexity rather than any single cause.",
+   "kind": "unverifiable-statistic",
+   "note": "repeats the 3,167-crash / 23%-increase pair removed from bodies in round 1 as not reproducible; FMCSA and FARS both show SC fatal truck crashes falling, not rising 23%"
+  },
+  {
+   "ID": 4655,
+   "slug": "i-77-truck-accidents-columbia-rock-hill",
+   "index": 0,
+   "before": "I-77 between Columbia and Rock Hill is one of the most dangerous truck corridors in South Carolina. It carries heavy Charlotte-bound freight traffic, military vehicles from Fort Jackson, and through-freight connecting I-20 to North Carolina. South Carolina recorded 3,167 large truck crashes in 2024, with fatal truck accidents increasing 23%, and the I-77 corridor accounts for a significant portion of Midlands truck crashes.",
+   "after": "I-77 between Columbia and Rock Hill is one of the state's more demanding truck corridors. It carries Charlotte-bound freight traffic, military vehicle movements near Fort Jackson, and through-freight connecting I-20 to North Carolina, alongside suburban commuter traffic and two-lane rural stretches. That mix — heavy trucks sharing road with commuters at differing speeds — is what drives the crash pattern.",
+   "kind": "unverifiable-statistic",
+   "note": "same 3,167 / 23% pair"
+  },
+  {
+   "ID": 4677,
+   "slug": "aviation-avenue-i-26-truck-accidents",
+   "index": 0,
+   "before": "Aviation Avenue sits adjacent to the I-26/I-526 interchange, which recorded 354 collisions over 5 years. The area also serves Boeing South Carolina's manufacturing campus, generating additional truck traffic. The combination of high-speed interstate traffic, frequent congestion-related slowdowns, overheight loads striking overpasses, and merge conflicts at the interchange creates a sustained pattern of severe truck crashes.",
+   "after": "Aviation Avenue sits adjacent to the I-26/I-526 interchange, the busiest freight interchange in the Lowcountry, and the area also serves Boeing South Carolina's manufacturing campus. The combination of high-speed interstate traffic, frequent congestion-related slowdowns, overheight loads striking overpasses, and merge conflicts at the interchange creates a sustained pattern of severe truck crashes.",
+   "kind": "unverifiable-statistic",
+   "note": "repeats the \"354 collisions over 5 years\" figure removed from bodies as unverifiable"
+  },
+  {
+   "ID": 4617,
+   "slug": "dangerous-roads-north-charleston",
+   "index": 2,
+   "before": "Charleston County records hundreds of injury-producing crashes annually, with North Charleston corridors including I-26, I-526, Rivers Avenue, and Ashley Phosphate Road accounting for a significant portion. The I-26/I-526 interchange alone recorded 354 collisions over a five-year study period.",
+   "after": "Charleston County records hundreds of injury-producing crashes annually, with North Charleston corridors including I-26, I-526, Rivers Avenue, and Ashley Phosphate Road accounting for a significant portion. We do not publish a single annual figure for the city, because the counts that circulate for it cannot be traced to a source that reports them on a consistent basis.",
+   "kind": "unverifiable-statistic",
+   "note": "repeats \"354 collisions over a five-year study period\""
+  },
+  {
+   "ID": 4661,
+   "slug": "i-526-truck-accidents-charleston",
+   "index": 0,
+   "before": "I-526 connects the Port of Charleston's two major terminals — Wando Welch and Hugh Leatherman — creating concentrated truck traffic on a highway with narrow lanes, sharp interchange curves, and an ongoing widening project. The I-26/I-526 interchange alone recorded 354 collisions over 5 years. Port trucks add complexity because multiple parties (driver, carrier, chassis lessor, terminal operator) may share liability.",
+   "after": "I-526 connects the Port of Charleston's two major terminals — Wando Welch and Hugh Leatherman — creating concentrated truck traffic on a highway with narrow lanes, sharp interchange curves, and an ongoing widening project. Port trucks add complexity because multiple parties (driver, carrier, chassis lessor, terminal operator) may share liability.",
+   "kind": "unverifiable-statistic",
+   "note": "repeats \"354 collisions over 5 years\""
+  },
+  {
+   "ID": 4664,
+   "slug": "ashley-phosphate-i-26-truck-accidents",
+   "index": 0,
+   "before": "It is the most dangerous intersection in South Carolina, averaging a crash every 3 days. The combination of I-26 off-ramp traffic entering at highway speeds, complex multi-lane turn geometry, heavy commercial truck traffic, and widespread red-light running creates a consistently lethal environment. Trucks are especially dangerous here due to their longer stopping distances and wider turning radii.",
+   "after": "It is among the most crash-prone intersections in South Carolina. A Post and Courier analysis of 2011&ndash;2015 collision data recorded 629 crashes there &mdash; roughly one every three days, and more than at any other intersection in Berkeley, Charleston or Dorchester counties, though it ranked second statewide behind I-20 at US-176 in Columbia. The combination of I-26 off-ramp traffic entering at highway speeds, complex multi-lane turn geometry, heavy commercial truck traffic, and widespread red-light running creates a consistently hazardous environment. Trucks are especially dangerous here due to their longer stopping distances and wider turning radii.",
+   "kind": "false-superlative",
+   "note": "called it the most dangerous intersection in South Carolina; the Post and Courier analysis this site relies on ranked it SECOND statewide, behind I-20 at US-176"
+  },
+  {
+   "ID": 4624,
+   "slug": "ashley-phosphate-i-26-south-carolinas-deadliest-intersection",
+   "index": 0,
+   "before": "According to SCDPS collision data, a crash occurs at the Ashley Phosphate Road and I-26 intersection approximately once every three days on average, making it the most dangerous intersection in South Carolina.",
+   "after": "A Post and Courier analysis of 2011&ndash;2015 collision data recorded 629 crashes at the Ashley Phosphate Road and I-26 intersection &mdash; roughly one every three days. That was more than at any other intersection in Berkeley, Charleston or Dorchester counties, and second in the state behind I-20 at US-176 in Columbia. Worth noting alongside the frequency: none of those 629 crashes was fatal, though 181 people were injured.",
+   "kind": "false-superlative",
+   "note": "said the crash frequency makes it the most dangerous intersection in South Carolina; the same page body says it ranked second statewide and that none of the 629 crashes was fatal"
+  },
+  {
+   "ID": 3553,
+   "slug": "columbia-dangerous-intersections-roads",
+   "index": 0,
+   "before": "The I-20 and US-76 (Broad River Road) interchange is the highest-volume crash location in the Columbia metro area, recording 229 collisions in a single recent year with 56 injuries and one fatality. The I-20/I-26 interchange known as \"Malfunction Junction\" is also among the most dangerous, producing 91 collisions including two fatal crashes.",
+   "after": "The I-20 and US-76 (Broad River Road) interchange and the I-20/I-26 junction known as &ldquo;Malfunction Junction&rdquo; are the two locations most consistently identified as Columbia's worst. Both handle traffic volumes that exceed their design capacity, and both require drivers to merge and weave across multiple lanes at highway speed. We do not attach single-year collision counts to them here, because the figures in circulation cannot be tied to a stated reporting period or source.",
+   "kind": "unverifiable-statistic",
+   "note": "repeats the 229-collision and 91-collision single-year counts removed from this page body as untraceable to a reporting period"
+  },
+  {
+   "ID": 4670,
+   "slug": "abercorn-street-truck-accidents-savannah",
+   "index": 0,
+   "before": "Abercorn Street and White Bluff Road is the #1 most dangerous intersection in Savannah. Data from Savannah-Chatham Metropolitan Police shows that 1 in 4 crashes at this intersection results in serious injury or fatality. The intersection sees a confluence of heavy retail traffic, residential traffic from the White Bluff corridor, and commercial trucks, creating a persistently high-risk environment.",
+   "after": "Abercorn Street and White Bluff Road is widely regarded as the most hazardous intersection on the corridor. The intersection sees a confluence of heavy retail traffic, residential traffic from the White Bluff corridor, and commercial trucks, creating a persistently high-risk environment. We do not publish a serious-injury ratio for it, because the figure commonly quoted cannot be traced to a police or DOT publication.",
+   "kind": "unsourced-ratio",
+   "note": "asserted a \"#1 most dangerous\" ranking and a \"1 in 4 crashes cause serious injury or fatality\" ratio attributed to Savannah-Chatham Metropolitan Police; both were removed from page bodies and neither is traceable to a published source"
+  }
+ ]
+}

@@ -74,6 +74,20 @@ $keys = array(
 	'_roden_translation_es',
 	'_roden_subtype_hidden',
 	'_roden_faqs',
+	// Added 2026-08-25. `_roden_key_takeaways` renders as the summary box above
+	// the article — the first thing a reader sees — and it is where nine
+	// previously-removed statistics were still living after the bodies and the
+	// FAQs had both been corrected.
+	//
+	// It nearly escaped a second time: a sweep of the exported file for those
+	// figures reported ZERO, because the field was not in this list. A sweep
+	// that cannot see a field does not say "unknown" — it says zero. The live
+	// pages disagreed, which is the only reason it surfaced.
+	//
+	// It is prose and it is "body-adjacent", which is why it was excluded. But
+	// it is short, it is edited rarely, and it makes factual claims in bold. It
+	// belongs in the diff.
+	'_roden_key_takeaways',
 );
 
 $posts = get_posts( array(
@@ -154,11 +168,20 @@ foreach ( $posts as $p ) {
 
 	ksort( $meta );
 
+	// `excerpt` is a posts-table column rather than meta, and it is here for the
+	// same reason `_roden_key_takeaways` is: roden_schema_article() renders it as
+	// the Article `description`, so a false claim in it is published as
+	// structured data. Two pages kept a superlative there ("the most dangerous
+	// intersection in South Carolina", on pages whose own bodies said it ranked
+	// second) after their bodies, FAQs and takeaways had all been corrected. It
+	// was the fourth surface found in one sweep, and the last one nothing
+	// watched.
 	$record = array(
-		'type'   => $p->post_type,
-		'status' => $p->post_status,
-		'title'  => $p->post_title,
-		'meta'   => $meta,
+		'type'    => $p->post_type,
+		'status'  => $p->post_status,
+		'title'   => $p->post_title,
+		'excerpt' => $p->post_excerpt,
+		'meta'    => $meta,
 	);
 
 	// Collision would mean two posts resolve to one URL — worth seeing, not

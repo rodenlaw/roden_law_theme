@@ -1,0 +1,23 @@
+{
+    "batch": "FAQ re-sweep 2026-08-25 (third pass)",
+    "edits": [
+        {
+            "ID": 4663,
+            "index": 0,
+            "kind": "unverifiable-statistic",
+            "note": "repeats the '62 injuries over 5 years' figure at the Rivers Avenue/I-526 interchange, removed from bodies in round 1 as untraceable",
+            "before": "Rivers Avenue is one of the four deadliest roads in Charleston County due to its combination of heavy port and industrial truck traffic, multi-lane high-speed design, frequent commercial driveways, and significant pedestrian activity. The Rivers Avenue/I-526 interchange alone produced 62 injuries over 5 years. The road was not designed for the volume of commercial truck traffic it now carries.",
+            "after": "Rivers Avenue is one of the four deadliest roads in Charleston County, alongside Ashley Phosphate Road, Dorchester Road and Remount Road. Its danger comes from the combination of heavy port and industrial truck traffic, a multi-lane high-speed design, frequent commercial driveways, and significant pedestrian activity. The Rivers Avenue and I-526 interchange is a particular concentration point, where interstate ramp traffic meets that commercial corridor. The road was not designed for the volume of commercial truck traffic it now carries.",
+            "slug": "rivers-avenue-truck-accidents-north-charleston"
+        },
+        {
+            "ID": 4682,
+            "index": 0,
+            "kind": "unverifiable-statistic",
+            "note": "repeats 'US-17 is the most dangerous road in Horry County with 2,181 accidents in a single year' — the exact claim removed from bodies in round 2b as unsourced",
+            "before": "The US-17/SC-544 intersection recorded 240 crashes over three years (2018-2020), making it the most hazardous intersection in Horry County. Heavy commercial delivery trucks serving Surfside Beach tourist businesses share the intersection with unfamiliar tourist drivers and pedestrians crossing a multi-lane highway. US-17 itself is the most dangerous road in Horry County with 2,181 accidents in a single year.",
+            "after": "The US-17/SC-544 intersection recorded 240 crashes over three years (2018&ndash;2020), which makes it one of the most crash-prone intersections in Horry County. Heavy commercial delivery trucks serving Surfside Beach tourist businesses share the intersection with unfamiliar tourist drivers and pedestrians crossing a multi-lane highway. US-17 carries a disproportionate share of the county's truck traffic along the whole Grand Strand, which is why crashes cluster on it.",
+            "slug": "us-17-sc-544-truck-accidents-surfside-beach"
+        }
+    ]
+}

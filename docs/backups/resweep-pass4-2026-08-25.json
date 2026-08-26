@@ -1,0 +1,23 @@
+{
+    "batch": "re-sweep pass 4",
+    "edits": [
+        {
+            "ID": 4681,
+            "key": "_roden_key_takeaways",
+            "before": "Highway 22 (Conway Bypass) is a deadly truck corridor connecting I-95 to the Grand Strand. In <strong>August 2025, a dump truck rear-ended stopped traffic near the Waccamaw River bridge</strong>, pushing a Jeep over the railing into the river and <strong>killing Flora Beltran-Gomez, 35, and Earl Burnette, 49</strong>. A <strong>multi-vehicle fatal crash in February 2026 killed 1 more person</strong>. Bridge sections create confined kill zones where vehicles cannot escape truck impacts. Horry County records over <strong>11,000 crashes per year</strong>. South Carolina gives victims <strong>3 years to file</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) with recovery if less than <strong>51% at fault</strong>.",
+            "after": "Highway 22 (Conway Bypass) is a deadly truck corridor connecting I-95 to the Grand Strand. In <strong>August 2025, a dump truck rear-ended stopped traffic near the Waccamaw River bridge</strong>, pushing a Jeep over the railing into the river and <strong>killing Flora Beltran-Gomez, 35, and Earl Burnette, 49</strong>. A <strong>multi-vehicle fatal crash in February 2026 killed 1 more person</strong>. Bridge sections create confined kill zones where vehicles cannot escape truck impacts. South Carolina gives victims <strong>3 years to file</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) with recovery if less than <strong>51% at fault</strong>.",
+            "kind": "unsourced-statistic",
+            "note": "'Horry County records over 11,000 crashes per year' — the same unsourced county figure removed from the US-17/SC-544 page; not traceable to an SCDPS or county publication",
+            "slug": "highway-22-truck-accidents-conway-bypass"
+        },
+        {
+            "ID": 4670,
+            "index": 1,
+            "before": "Abercorn Street is a 10-mile retail corridor with constant driveway conflicts from shopping centers, medical offices, and restaurants. Vehicles turning left across traffic into driveways create conflict points every few hundred feet. Port of Savannah trucks use Abercorn Extension to reach southern Savannah, adding fully loaded tractor-trailers to an already congested corridor. GDOT data shows a 15-20% increase in crashes over five years.",
+            "after": "Abercorn Street is a 10-mile retail corridor with constant driveway conflicts from shopping centers, medical offices, and restaurants. Vehicles turning left across traffic into driveways create conflict points every few hundred feet. Port of Savannah trucks use Abercorn Extension to reach southern Savannah, adding fully loaded tractor-trailers to an already congested corridor.",
+            "kind": "unsourced-statistic",
+            "note": "'GDOT data shows a 15-20% increase in crashes over five years' — attributed to GDOT but not traceable to any GDOT publication",
+            "slug": "abercorn-street-truck-accidents-savannah"
+        }
+    ]
+}

@@ -1,0 +1,86 @@
+{
+ "batch": "Key Takeaways re-sweep 2026-08-25 — survivals of earlier body corrections",
+ "edits": [
+  {
+   "ID": 4654,
+   "slug": "i-20-truck-accidents-columbia",
+   "key": "_roden_key_takeaways",
+   "before": "I-20 is the primary east-west freight artery through the South Carolina Midlands, carrying thousands of tractor-trailers daily through Lexington and Richland counties. South Carolina recorded <strong>3,167 large truck crashes in 2024</strong> with a <strong>23% increase in fatal truck accidents</strong>. Explosive growth in distribution and logistics along the I-20 corridor in <strong>Lexington County</strong> is driving more truck volume onto roads shared with commuters. South Carolina gives victims <strong>3 years to file</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) with recovery if less than <strong>51% at fault</strong>.",
+   "after": "I-20 is the primary east-west freight artery through the South Carolina Midlands, carrying thousands of tractor-trailers daily through Lexington and Richland counties. Explosive growth in distribution and logistics along the I-20 corridor in <strong>Lexington County</strong> is driving more truck volume onto roads shared with commuters. South Carolina gives victims <strong>3 years to file</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) with recovery if less than <strong>51% at fault</strong>.",
+   "kind": "unverifiable-statistic",
+   "note": "the 3,167-crash / 23%-increase pair removed from bodies in round 1 as not reproducible — FMCSA and FARS both show SC fatal truck crashes falling"
+  },
+  {
+   "ID": 4661,
+   "slug": "i-526-truck-accidents-charleston",
+   "key": "_roden_key_takeaways",
+   "before": "I-526 (Mark Clark Expressway) connects the Port of Charleston's two major terminals and carries some of the heaviest commercial truck traffic in South Carolina. The <strong>I-26/I-526 interchange recorded 354 collisions over 5 years</strong>. Charleston County recorded more than <strong>2,500 truck-related accidents in 2023</strong>. Port truck crashes involve multiple liable parties: driver, carrier, <strong>chassis leasing company</strong>, terminal operator, and cargo shipper. South Carolina gives victims <strong>3 years to file</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) with recovery if less than <strong>51% at fault</strong>.",
+   "after": "I-526 (Mark Clark Expressway) connects the Port of Charleston's two major terminals and carries some of the heaviest commercial truck traffic in South Carolina. Port truck crashes involve multiple liable parties: driver, carrier, <strong>chassis leasing company</strong>, terminal operator, and cargo shipper. South Carolina gives victims <strong>3 years to file</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) with recovery if less than <strong>51% at fault</strong>.",
+   "kind": "unverifiable-statistic",
+   "note": "the '354 collisions over 5 years' and 'more than 2,500 truck-related accidents in 2023' figures, both removed from bodies as untraceable"
+  },
+  {
+   "ID": 4663,
+   "slug": "rivers-avenue-truck-accidents-north-charleston",
+   "key": "_roden_key_takeaways",
+   "before": "Rivers Avenue (US-52) is one of the <strong>four deadliest roads in Charleston County</strong> and North Charleston's primary commercial corridor. The <strong>Rivers Avenue/I-526 interchange produced 62 injuries over a 5-year study period</strong>. Heavy truck traffic from port and industrial facilities, Boeing South Carolina, and commercial development create constant hazards. Recent crashes include a <strong>cement truck rollover</strong> and a tractor-trailer striking the I-526 overhead sign. South Carolina gives victims <strong>3 years to file</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) with recovery if less than <strong>51% at fault</strong>.",
+   "after": "Rivers Avenue (US-52) is one of the <strong>four deadliest roads in Charleston County</strong> and North Charleston's primary commercial corridor. Heavy truck traffic from port and industrial facilities, Boeing South Carolina, and commercial development create constant hazards. Recent crashes include a <strong>cement truck rollover</strong> and a tractor-trailer striking the I-526 overhead sign. South Carolina gives victims <strong>3 years to file</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) with recovery if less than <strong>51% at fault</strong>.",
+   "kind": "unverifiable-statistic",
+   "note": "the '62 injuries over a 5-year study period' figure removed from bodies in round 1"
+  },
+  {
+   "ID": 4664,
+   "slug": "ashley-phosphate-i-26-truck-accidents",
+   "key": "_roden_key_takeaways",
+   "before": "The intersection of <strong>Ashley Phosphate Road and I-26</strong> is the <strong>most dangerous intersection in all of South Carolina</strong>, averaging <strong>a crash once every three days</strong>. High-speed I-26 off-ramp traffic, complex left turns, and heavy commercial truck volume are the primary factors. Common crash types include left-turn collisions, rear-end crashes from sudden stops, T-bone accidents from red-light runners, and pedestrian strikes. South Carolina provides <strong>3 years to file an injury claim</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) with recovery if less than <strong>51% at fault</strong>.",
+   "after": "A Post and Courier analysis of 2011&ndash;2015 collision data recorded <strong>629 crashes</strong> at <strong>Ashley Phosphate Road and I-26</strong> &mdash; roughly <strong>one every three days</strong>, more than at any other intersection in Berkeley, Charleston or Dorchester counties, and <strong>second in the state</strong> behind I-20 at US-176 in Columbia. High-speed I-26 off-ramp traffic, complex left turns, and heavy commercial truck volume are the primary factors. Common crash types include left-turn collisions, rear-end crashes from sudden stops, T-bone accidents from red-light runners, and pedestrian strikes. South Carolina gives victims <strong>3 years to file</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) with recovery if less than <strong>51% at fault</strong>.",
+   "kind": "false-superlative",
+   "note": "called it the most dangerous intersection in all of South Carolina; the Post and Courier analysis the page body relies on ranked it SECOND statewide, behind I-20 at US-176"
+  },
+  {
+   "ID": 4670,
+   "slug": "abercorn-street-truck-accidents-savannah",
+   "key": "_roden_key_takeaways",
+   "before": "Abercorn Street between White Bluff Road and DeRenne Avenue is Savannah's <strong>most dangerous retail corridor for truck crashes</strong>, with the Abercorn &amp; White Bluff intersection ranking as the <strong>#1 most dangerous intersection in the city</strong> &mdash; <strong>1 in 4 crashes results in serious injury or fatality</strong>. GDOT data shows a <strong>15&ndash;20% increase in accidents</strong> over the past five years. Port trucks using Abercorn Extension add heavy commercial volume to a corridor already saturated with driveway conflicts and turning traffic. Georgia gives injury victims <strong>2 years to file a lawsuit</strong> (<strong>O.C.G.A. &sect; 9-3-33</strong>) and allows recovery if less than <strong>50% at fault</strong>. Contact Roden Law's Savannah office at <strong>(912) 303-5850</strong> within 24&ndash;48 hours to preserve critical evidence.",
+   "after": "Abercorn Street between White Bluff Road and DeRenne Avenue is one of Savannah's most hazardous retail corridors for truck crashes, with the <strong>Abercorn &amp; White Bluff</strong> intersection the corridor's worst point. Port trucks using Abercorn Extension add heavy commercial volume to a corridor already saturated with driveway conflicts and turning traffic. Georgia gives injury victims <strong>2 years to file a lawsuit</strong> (<strong>O.C.G.A. &sect; 9-3-33</strong>) and allows recovery if less than <strong>50% at fault</strong>. Contact Roden Law's Savannah office at <strong>(912) 303-5850</strong> within 24&ndash;48 hours to preserve critical evidence.",
+   "kind": "unsourced-ratio",
+   "note": "a '#1 most dangerous intersection' ranking, a '1 in 4 crashes results in serious injury or fatality' ratio, and a '15-20% increase' attributed to GDOT — none traceable to a published source, and the first two were removed from bodies"
+  },
+  {
+   "ID": 4677,
+   "slug": "aviation-avenue-i-26-truck-accidents",
+   "key": "_roden_key_takeaways",
+   "before": "The <strong>Aviation Avenue and I-26 interchange</strong> in North Charleston is a high-risk truck accident zone adjacent to the <strong>I-26/I-526 interchange</strong> (354 collisions over 5 years) and <strong>Boeing South Carolina</strong>. A tractor-trailer carrying an <strong>excavator struck the Eagle Drive overpass</strong> near mile marker 207 in 2025, shutting down multiple lanes during rush hour. A crash near Aviation Avenue in February 2024 caused an <strong>11-mile backup</strong>. Overheight loads, speed-congestion cycles, and Boeing-related industrial truck traffic compound the danger. South Carolina gives victims <strong>3 years to file</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) with recovery if less than <strong>51% at fault</strong>.",
+   "after": "The <strong>Aviation Avenue and I-26 interchange</strong> in North Charleston is a high-risk truck accident zone adjacent to the <strong>I-26/I-526 interchange</strong> and <strong>Boeing South Carolina</strong>. A tractor-trailer carrying an <strong>excavator struck the Eagle Drive overpass</strong> near mile marker 207 in 2025, shutting down multiple lanes during rush hour. A crash near Aviation Avenue in February 2024 caused an <strong>11-mile backup</strong>. Overheight loads, speed-congestion cycles, and Boeing-related industrial truck traffic compound the danger. South Carolina gives victims <strong>3 years to file</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) with recovery if less than <strong>51% at fault</strong>.",
+   "kind": "unverifiable-statistic",
+   "note": "the '354 collisions over 5 years' figure"
+  },
+  {
+   "ID": 4682,
+   "slug": "us-17-sc-544-truck-accidents-surfside-beach",
+   "key": "_roden_key_takeaways",
+   "before": "US-17 &amp; SC-544 is the <strong>most hazardous intersection in Horry County</strong>, with <strong>240 crashes over 3 years (2018-2020)</strong>. US-17 is the <strong>most dangerous road in the county</strong> with <strong>2,181 accidents in a single year</strong>. Heavy commercial delivery traffic to Surfside Beach tourist businesses shares the intersection with unfamiliar tourists and <strong>pedestrians crossing a multi-lane highway</strong>. Horry County records over <strong>11,000 crashes per year</strong>. South Carolina gives victims <strong>3 years to file</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) with recovery if less than <strong>51% at fault</strong>.",
+   "after": "US-17 &amp; SC-544 is one of the most hazardous intersections in Horry County, with <strong>240 crashes over 3 years (2018&ndash;2020)</strong>. Heavy commercial delivery traffic to Surfside Beach tourist businesses shares the intersection with unfamiliar tourists and <strong>pedestrians crossing a multi-lane highway</strong>. US-17 carries a disproportionate share of the county's truck traffic along the Grand Strand, which is why crashes cluster on it. South Carolina gives victims <strong>3 years to file</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) with recovery if less than <strong>51% at fault</strong>.",
+   "kind": "unverifiable-statistic",
+   "note": "'US-17 is the most dangerous road in the county with 2,181 accidents in a single year' — removed from bodies in round 2b — plus an unsourced 'over 11,000 crashes per year' county figure"
+  },
+  {
+   "ID": 3553,
+   "slug": "columbia-dangerous-intersections-roads",
+   "key": "_roden_key_takeaways",
+   "before": "Columbia sits at the crossroads of I-20, I-26, and I-77, making its intersections among South Carolina's most dangerous. The I-20/Broad River Road interchange recorded 229 collisions in one year, while \"Malfunction Junction\" (I-20/I-26) produced 91 crashes including two fatalities. South Carolina's three-year statute of limitations (S.C. Code § 15-3-530) and modified comparative fault rule (less than 51% at fault) govern how victims recover compensation for injuries caused at these high-risk crossroads.",
+   "after": "Columbia sits at the crossroads of I-20, I-26, and I-77, and its interchange complexes — particularly the I-20/I-26 junction known as \"Malfunction Junction\" — handle traffic volumes that exceed their design capacity. South Carolina's three-year statute of limitations (S.C. Code § 15-3-530) and modified comparative fault rule (less than 51% at fault) govern how victims recover compensation for injuries caused at these high-risk crossroads.",
+   "kind": "unverifiable-statistic",
+   "note": "the 229-collision and 91-crash single-year counts, both removed from this page's body as untraceable to a stated reporting period"
+  },
+  {
+   "ID": 4624,
+   "slug": "ashley-phosphate-i-26-south-carolinas-deadliest-intersection",
+   "key": "_roden_key_takeaways",
+   "before": "The intersection of <strong>Ashley Phosphate Road and I-26</strong> in North Charleston averages one crash every three days, making it the most dangerous intersection in South Carolina. High-speed off-ramp traffic, complex left turns, and commercial density are the primary factors. Under <strong>S.C. Code § 15-3-530</strong>, injured victims have <strong>3 years</strong> to file suit. Government entities like SCDOT may share liability for design deficiencies under the South Carolina Tort Claims Act.",
+   "after": "A Post and Courier analysis of 2011&ndash;2015 collision data recorded <strong>629 crashes</strong> at <strong>Ashley Phosphate Road and I-26</strong> in North Charleston &mdash; about one every three days, more than at any other intersection in the tri-county area and second in the state behind I-20 at US-176 in Columbia. None of those 629 crashes was fatal, though 181 people were injured. High-speed off-ramp traffic, complex left turns, and commercial density are the primary factors. Under <strong>S.C. Code § 15-3-530</strong>, injured victims have <strong>3 years</strong> to file suit. Government entities like SCDOT may share liability for design deficiencies under the South Carolina Tort Claims Act.",
+   "kind": "false-superlative",
+   "note": "said the crash frequency makes it the most dangerous intersection in South Carolina; the same page's body says it ranked second statewide and that none of the 629 crashes was fatal"
+  }
+ ]
+}

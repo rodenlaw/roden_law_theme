@@ -1,0 +1,23 @@
+{
+ "batch": "post_excerpt re-sweep 2026-08-25",
+ "edits": [
+  {
+   "ID": 4624,
+   "slug": "ashley-phosphate-i-26-south-carolinas-deadliest-intersection",
+   "key": "post_excerpt",
+   "before": "Data shows the Ashley Phosphate Road and I-26 intersection in North Charleston averages a crash every 3 days — making it the most dangerous intersection in South Carolina. Here's why, and what your rights are if you're injured there.",
+   "after": "A Post and Courier analysis of 2011–2015 collision data recorded 629 crashes at the Ashley Phosphate Road and I-26 intersection in North Charleston — about one every three days, the most of any intersection in the tri-county area and second in the state. Here's why, and what your rights are if you're injured there.",
+   "kind": "false-superlative",
+   "note": "post_excerpt called it the most dangerous intersection in South Carolina; the page's own body says it ranked SECOND statewide. The excerpt renders as the Article `description` in schema, so the false claim was being published as structured data after the body, FAQ and takeaways had all been corrected."
+  },
+  {
+   "ID": 4664,
+   "slug": "ashley-phosphate-i-26-truck-accidents",
+   "key": "post_excerpt",
+   "before": "Ashley Phosphate Road and I-26 is the most dangerous intersection in South Carolina, averaging a crash every 3 days. Learn about truck accident risks, common crash types, and your legal rights.",
+   "after": "Ashley Phosphate Road and I-26 is among the most crash-prone intersections in South Carolina, averaging a crash every three days in a Post and Courier analysis of 2011–2015 data. Learn about truck accident risks, common crash types, and your legal rights.",
+   "kind": "false-superlative",
+   "note": "same superlative in post_excerpt"
+  }
+ ]
+}
