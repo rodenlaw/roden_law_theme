@@ -284,3 +284,58 @@ of these live in `post_content` *and* `_roden_faqs`, and the FAQ words them diff
 - S.C. Code §§ 15-32-220, 15-32-530 — scstatehouse.gov
 - O.C.G.A. § 36-33-5 (municipal, 6 months); § 36-11-1 (county, 12 months); § 50-21-26 (state, 12 months)
 - `docs/briefs/2026-08-07-georgia-tort-reform-sb68.md` — SB 68 applicability and § 51-12-33
+
+---
+
+## ADDENDUM — 2026-08-26, found while verifying the $250M correction
+
+### 14 of 90 embedded JSON-LD blocks are invalid JSON
+
+The firm confirmed **$300M** as the correct recovery total, and `bin/fix-recovery-total-250-to-300.php`
+corrected **40 instances across 31 posts** (two spellings — `$250 million` and `$250M` — the second of
+which the audit's first regex could not see, including **9 Spanish twins**). Verified: zero residuals,
+`post_modified` unstamped, two clean live fetches.
+
+Verifying that change surfaced something unrelated and larger. One page's JSON-LD failed to parse — and
+it failed in a block my edit never touched. Validating **all 90** JSON-LD blocks embedded in
+`post_content`:
+
+| | |
+|---|---|
+| Valid | 76 |
+| **Invalid** | **14** (11 English, 3 Spanish) |
+
+**A block that does not parse is not partially indexed — it is discarded entirely.** Every FAQ answer in
+these 14 blocks is invisible as structured data, on exactly the pages the firm is building FAQ content
+for.
+
+**Two causes, both mechanical:**
+
+1. **Unescaped double quotes inside a `"text":"…"` value** (11 pages) — a quoted phrase or party name
+   terminates the JSON string early:
+   - `/es/blog/green-grove-dorchester-road-atv-accident-lawyer-north-charleston/` — `cubre "cualquier calle o carretera pública"`
+   - `/es/blog/mount-pleasant-johnnie-dodds-us-17-uninsured-motorist-lawyer/` — `contra "John Doe"`
+2. **Invalid control characters** — a literal newline or tab inside a JSON string (3 pages):
+   `/blog/understanding-eye-injuries-after-a-savannah-car-accident/`,
+   `/blog/what-are-my-legal-options-after-a-rideshare-crash-in-charleston/`,
+   `/blog/liability-and-causes-for-backing-up-crashes-in-charleston/`
+
+**Full list:** `/blog/mcintosh-county-drunk-driver-accident-lawyer/`,
+`/blog/south-kings-highway-us-17-business-underinsured-motorist-lawyer/`,
+`/blog/garden-city-dean-forest-road-truck-accident-lawyer/`,
+`/blog/st-simons-island-kings-way-motorcycle-accident-lawyer/`,
+`/blog/car-accident-attorney-near-me-west-ashley-citadel-mall/`,
+`/blog/green-grove-dorchester-road-atv-accident-lawyer-north-charleston/`,
+`/blog/n-lake-drive-us-17-business-best-car-accident-lawyer/`,
+`/blog/hipaa-violation-lawsuit-worth/`, `/es/blog/hipaa-violation-lawsuit-worth/`, plus the five named above.
+
+**Fix:** re-encode each block with `wp_json_encode()` rather than hand-repairing the quotes — hand-escaping
+is how these got here. **Add a JSON-LD validity check to `deploy.yml`'s content-meta step**; this class is
+mechanically detectable and should never have survived 90 blocks undetected.
+
+### Still not touched
+
+The same 31 posts hard-code **"500+ reviews"** (19 posts). `trust_stats['reviews']` is derived from the
+live per-office GBP sum *precisely so it cannot be hand-kept*. The firm has not confirmed a figure, so the
+script reports these and changes none of them — see `bin/fix-hundreds-of-reviews-claim.php` for the same
+class. "62 years", "5,000+ cases" and "4.9-star" **do** match `firm-data.php` and were correctly left alone.
