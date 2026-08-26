@@ -185,6 +185,62 @@ Cloudflare was still serving an edge copy. A cache-buster query string did not
 defeat it. Two clean fetches a few minutes apart are the check that means
 something.
 
+## Second addendum — the re-sweep, and two more surfaces
+
+Re-sweeping the earlier statistical corrections against meta found **21 more
+survivals across 15 pages**, and in doing so found that a claim on this site can
+live in **four** places, of which the earlier rounds swept one.
+
+| Surface | What it is | Swept before today |
+|---|---|---|
+| `post_content` | the article body | yes |
+| `_roden_faqs` | FAQ answers — also FAQPage structured data | no (fixed earlier today) |
+| `_roden_key_takeaways` | the summary box **above** the article | **no** |
+| `post_excerpt` | rendered as the Article `description` in schema | **no** |
+
+### The false negative that nearly ended the sweep early
+
+After fixing the FAQ survivals I re-ran the sweep against the exported
+`content/meta.json` and it reported **zero**. The live pages still showed the
+claims.
+
+`_roden_key_takeaways` was not in the export whitelist. The sweep read the field,
+got nothing back because it had never been exported, and reported a clean pass.
+
+**A sweep that cannot see a field does not report "unknown". It reports zero.**
+Confirm a field is actually present in whatever you are sweeping before believing
+a null result. The only reason this surfaced is that the live pages were checked
+as well as the database.
+
+Adding the field to the export immediately found two more. Adding `post_excerpt`
+found the last two: both Ashley Phosphate pages still described the intersection
+as *"the most dangerous in South Carolina"* in their excerpt — which
+`roden_schema_article()` publishes as the Article `description` — on pages whose
+own bodies say it ranked **second**.
+
+### Not everything found was wrong
+
+Three pages carry *"62 injuries between 2011 and 2015"* at the Rivers Avenue/I-526
+interchange. Two cite the Post and Courier analysis. The third stated the same
+figure with no source and a vague "five-year study period" — so it was **cited and
+dated, not deleted**, per the standing rule that an uncited claim is usually a
+sourcing failure rather than a fabrication.
+
+Same for the Ashley Phosphate frequency: *"a crash every three days"* is real and
+sourced. Only the superlative attached to it was false. The corrected pages now
+carry the sourced figure **and** the true ranking.
+
+### What was built
+
+`bin/apply-faq-remediation.php` became **`bin/apply-meta-remediation.php`** one day
+after it was written, generalised to patch FAQ entries, plain string meta, and
+`post_excerpt`, all with the same exact-match guard and read-back. Writing a third
+and fourth one-off script would have been the wrong answer to discovering a third
+and fourth surface.
+
+`content/meta.json` now versions `_roden_key_takeaways` (278 boxes) and
+`excerpt` (483 pages). Both were invisible to review until today.
+
 ## The pattern
 
 Every error above was found by checking a fact against its source in order to

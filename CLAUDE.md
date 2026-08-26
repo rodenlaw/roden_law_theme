@@ -69,6 +69,18 @@ was already whitelisted; the post type was not, leaving 195 FAQ-carrying pages
 (162 posts, 33 pages) unguarded. FAQ answers also render into FAQPage structured
 data, so a wrong one is published twice over.
 
+**A claim can live in four places.** `post_content`, `_roden_faqs` (which also
+becomes FAQPage structured data), `_roden_key_takeaways` (the summary box rendered
+*above* the article), and `post_excerpt` (which `roden_schema_article()` publishes
+as the Article `description`). On 2026-08-25 a single re-sweep found survivals in
+all four. Fix one and the claim is still published three other ways.
+
+**A sweep that cannot see a field reports zero, not "unknown."** That same
+re-sweep reported a clean pass against `content/meta.json` while the live pages
+still showed the claims — `_roden_key_takeaways` was not yet in the export, so the
+sweep read nothing and called it clean. Check the field is actually in whatever
+you are sweeping, and check a live page as well as the database.
+
 **When you correct a claim in a body, sweep the meta for the same claim *class*,
 never for the same string** — the FAQ words it differently every time, which is
 exactly why a string sweep misses it. `bin/apply-faq-remediation.php` patches FAQ

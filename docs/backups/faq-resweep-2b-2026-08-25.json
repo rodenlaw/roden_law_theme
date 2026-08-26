@@ -1,0 +1,14 @@
+{
+ "batch": "FAQ re-sweep 2026-08-25 (second pass)",
+ "edits": [
+  {
+   "ID": 4617,
+   "slug": "dangerous-roads-north-charleston",
+   "index": 0,
+   "before": "The intersection of Ashley Phosphate Road and I-26 is the most dangerous intersection in South Carolina, averaging a crash once every three days according to SCDPS data. The Rivers Avenue and I-526 interchange is the deadliest in terms of injuries, with 62 people injured over a five-year period.",
+   "after": "Ashley Phosphate Road and I-26 is the intersection most often identified as North Charleston's worst. A Post and Courier analysis of 2011&ndash;2015 collision data recorded 629 crashes there &mdash; roughly one every three days, and more than at any other intersection in Berkeley, Charleston or Dorchester counties, though it ranked second statewide behind I-20 at US-176 in Columbia. Ashley Phosphate is also one of the four deadliest roads in Charleston County, alongside Rivers Avenue, Dorchester Road and Remount Road. The Rivers Avenue and I-526 interchange is another concentration point, where interstate ramp traffic meets a dense commercial corridor.",
+   "kind": "false-superlative",
+   "note": "repeated both the 'most dangerous intersection in South Carolina' superlative (it ranked second) and the '62 injuries over five years' figure removed from bodies in round 1"
+  }
+ ]
+}

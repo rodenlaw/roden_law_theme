@@ -759,6 +759,44 @@ write something new — none by reading the pages, which read fluently and carry
 correct statute numbers beside incorrect statements of what those statutes say. A
 citation is not a verification, and here it keeps being mistaken for one.
 
+### The re-sweep: 21 more survivals, and four surfaces — 2026-08-25
+
+Re-sweeping the earlier statistical corrections against meta found **21 survivals
+across 15 pages** — figures the audits had removed from bodies, still published
+elsewhere on the same pages.
+
+A claim on this site can live in **four** places. The earlier rounds swept one.
+
+| Surface | Swept before today |
+|---|---|
+| `post_content` | yes |
+| `_roden_faqs` (also FAQPage schema) | no — fixed earlier today |
+| `_roden_key_takeaways` (the box **above** the article) | **no** |
+| `post_excerpt` (the Article `description` in schema) | **no** |
+
+**The false negative worth remembering.** After the FAQ fixes, the sweep against
+`content/meta.json` reported zero survivals. The live pages still showed them.
+`_roden_key_takeaways` was not in the export whitelist, so the sweep read the
+field, got nothing, and called it a pass. *A sweep that cannot see a field reports
+zero, not "unknown."* It surfaced only because the live pages were checked too.
+
+Adding that field found two more. Adding `post_excerpt` found the last two: both
+Ashley Phosphate pages still called it *"the most dangerous intersection in South
+Carolina"* in the excerpt that becomes the schema `description` — on pages whose
+own bodies say it ranked **second**.
+
+**Not everything found was wrong.** Three pages carry "62 injuries between 2011
+and 2015"; two cite the Post and Courier. The third had the same true figure with
+no source, so it was **cited, not deleted**. Likewise "a crash every three days" at
+Ashley Phosphate is real and sourced — only the superlative attached to it was
+false, and the pages now carry the sourced figure *and* the true ranking.
+
+`bin/apply-faq-remediation.php` became `bin/apply-meta-remediation.php`, handling
+FAQ entries, plain meta and `post_excerpt` under one exact-match guard. Four
+surfaces do not warrant four scripts. `content/meta.json` now versions the
+takeaways box (278 pages) and the excerpt (483) — both invisible to review until
+today.
+
 ### The FAQ meta was a blind spot — 2026-08-25
 
 PRs #82 and #83 merged, and the corrected pages were then checked live. Eight of
