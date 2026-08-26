@@ -708,6 +708,38 @@ statutory change has reached the pages stating the old rule. The cheapest standi
 version is to sweep every page citing an amended section, not just the page about
 it. That is precisely how the seat-belt reversal survived sixteen months.
 
+### The comparative-negligence guide was nearly an orphan — 2026-08-26
+
+It had **one** inbound link. A brand-new authority page with one inbound link does
+not rank, however good it is, and this one is the flagship of the two-state
+cluster.
+
+493 published pages mention comparative fault, which is exactly why this needed
+judgement rather than a sweep: linking from all of them would be worse than
+linking from none. Four were chosen because the guide answers the question their
+reader is already asking, plus one resource hub:
+
+| Page | Why |
+|---|---|
+| `georgia-comparative-negligence-law` (1838) | the closest topical parent on the site; has its own GA-vs-SC comparison table |
+| `south-carolina-comparative-fault-partially-at-fault` (4367) | the SC counterpart, with its own GA comparison section |
+| `determining-fault-in-multi-vehicle-accidents` (1773) | apportionment among multiple defendants *is* the guide's subject |
+| `fault-for-car-accident` (1836) | Georgia-only page where the border case is the obvious next question |
+| `south-carolina-personal-injury-faq` (4814) | resource hub — `_roden_see_also`, no body edit |
+
+**1 → 6 inbound.** All five verified rendering live; the target resolves 200 with
+zero redirect hops.
+
+Note the split in method, which is a property of the theme rather than a
+preference: `roden_see_also_links()` is called only from `single-resource.php` and
+`template-subtype.php`, so `_roden_see_also` renders on resources and nowhere
+else. Blog posts and practice-area pillars need a body edit. Four of these five
+were posts.
+
+The other two guides sit at 3 and 2 inbound and were left alone. The workers'
+comp guide's two are the pillar and a sibling guide, which is the structurally
+right shape; adding volume for its own sake is what built the doorway problem.
+
 ### Act 42 verified — and the alarm I raised was too loud — 2026-08-26
 
 Read 2025 Act No. 42 (H.3430) against the enrolled text and both codified
