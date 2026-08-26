@@ -1,5 +1,30 @@
 # South Carolina Act No. 42 of 2025 — exposure assessment
 
+> **CORRECTED 2026-08-26. Read
+> [`briefs/2026-08-26-sc-act42-liquor-liability.md`](briefs/2026-08-26-sc-act42-liquor-liability.md)
+> instead of this file for any statement of what the Act does.**
+>
+> Two things below are wrong, and both were written before the enrolled text was
+> read:
+>
+> 1. **The severity is overstated.** This document calls the exposure "the same
+>    class as the seat-belt rule." It is not. The seat-belt rule was *actively
+>    false* for sixteen months. A sweep of all four content surfaces found **no
+>    page that Act 42 makes false** — no page states the alcohol exception, and no
+>    page ties joint and several liability to alcohol at all. The exposure is
+>    incompleteness across 25 pages, which is worth fixing and is not an emergency.
+>
+> 2. **"Removed the alcohol exception" is right but incomplete**, and stated alone
+>    it misleads. § 15-38-15(F) was *narrowed* — alcohol and gross negligence came
+>    out, wilful/wanton/reckless/intentional and illegal drugs stayed in, and the
+>    consequence was made express. The Act then added § 61-2-147, which puts a
+>    different alcohol rule back: joint and several liability for **50% of actual
+>    damages** where a verdict is rendered against both a licensee and a
+>    DUI-charged driver. Describing only the removal makes the change read as
+>    one-directionally bad for claimants, which is not what the statute says.
+>
+> The page counts and the recommended sequence below still hold.
+
 **Found 2026-08-25 while verifying a single statutory threshold.** South Carolina
 enacted comprehensive tort and liquor-liability reform — **2025 Act No. 42
 (H.3430)**, signed 12 May 2025, **effective 1 January 2026** — and nothing on this

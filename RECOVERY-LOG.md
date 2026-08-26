@@ -708,6 +708,47 @@ statutory change has reached the pages stating the old rule. The cheapest standi
 version is to sweep every page citing an amended section, not just the page about
 it. That is precisely how the seat-belt reversal survived sixteen months.
 
+### Act 42 verified — and the alarm I raised was too loud — 2026-08-26
+
+Read 2025 Act No. 42 (H.3430) against the enrolled text and both codified
+versions. Fact base: `docs/briefs/2026-08-26-sc-act42-liquor-liability.md`.
+
+**The headline is a negative finding, and it corrects my own earlier one.**
+`docs/sc-act42-exposure-2026-08-25.md` called this "a live legal-accuracy exposure
+of the same class as the seat-belt rule." It is not. The seat-belt rule was
+*actively false* for sixteen months. A sweep of all four content surfaces found
+**no page that Act 42 makes false**: none states the alcohol exception, none ties
+joint and several liability to alcohol, and the three pages pairing "alcohol" with
+"exception" are about *Georgia* punitive-damages caps. What exists is 25 pages
+describing SC dram-shop liability accurately but without the 2026 rule. Worth
+fixing; not an emergency. Saying so accurately matters more than the urgency did.
+
+**What the Act actually does.** § 15-38-15(F) was *narrowed*, not simply gutted:
+alcohol and gross negligence came out of the carve-out, wilful/wanton/reckless/
+intentional and illegal drugs stayed, and the consequence — joint and several
+liability for all of subsection (A)'s damages — is now express. The 50% threshold
+in subsection (A) did **not** change. In place of the alcohol carve-out the Act
+added § 61-2-147: where a verdict is rendered against **both** a licensee and a
+driver charged under § 56-5-2930, § 56-5-2933 or § 56-5-2945, the licensee is
+jointly and severally liable for **50% of actual damages**. One route to full joint
+liability closed and a narrower, more specific one opened.
+
+**A verification trap worth recording.** The Statehouse serves amended bills with
+`sc_strike`/`sc_insert` spans. Strip the tags and struck text reads as retained —
+which inverts § 15-38-15(F) completely. I did exactly that mid-verification and
+briefly concluded the alcohol exception had survived. Resolve the markup, or read
+the codified section, which publishes both versions with effective-date notes.
+
+**Fixed:** the comparative-negligence guide (5352), the only page mentioning Act
+42. It said the removal brought dram-shop cases "under the same comparative-fault
+rules" — it is the apportionment rules, not comparative fault — and omitted
+§ 61-2-147 entirely, which made the change read as one-directionally bad for
+claimants.
+
+**Not done:** the authoritative page, and a scoped pointer on the remaining 22
+pages. Five Georgia-only pages are explicitly out of scope; Act 42 has nothing to
+do with them and adding it would be a new error.
+
 ### Ten false legal claims fixed, and the guide that would not verify — 2026-08-25
 
 Setting out to write the last two two-state guides meant verifying the law they
