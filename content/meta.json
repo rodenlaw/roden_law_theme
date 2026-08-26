@@ -7,7 +7,7 @@
         "post",
         "page"
     ],
-    "_count": 1064,
+    "_count": 1065,
     "posts": {
         "/": {
             "type": "page",
@@ -26367,6 +26367,40 @@
                 "_roden_key_takeaways": "South Carolina follows modified comparative negligence with a 51% bar. You can recover compensation as long as you are less than 51% at fault for your own injuries, but your award is reduced by your percentage of fault. If you are 51% or more at fault, you recover nothing. For example, on a $300,000 case, being 20% at fault leaves you $240,000, while 51% fault leaves you $0. Insurance companies routinely try to inflate your fault percentage to cut or eliminate your payout, which is why how fault is assigned has a direct dollar impact on your case.",
                 "_roden_meta_description": "South Carolina is a modified comparative negligence state with a 51% bar: you can recover if you are less than 51% at fault, but your award drops by your fault share.",
                 "_roden_translation_es": "/es/resources/south-carolina-comparative-negligence/"
+            }
+        },
+        "/resources/south-carolina-liquor-liability-2026/": {
+            "type": "resource",
+            "status": "publish",
+            "title": "What South Carolina's 2026 Liquor Liability Law Changed",
+            "excerpt": "South Carolina rewrote its liquor liability law effective 1 January 2026. What Act 42 changed about a bar's exposure in a drunk-driving case, what it left alone, and why the date of your accident decides which version applies.",
+            "meta": {
+                "_roden_author_attorney": "Eric Roden",
+                "_roden_faqs": [
+                    {
+                        "question": "I was hit by a drunk driver in South Carolina. Does Act 42 apply to my case?",
+                        "answer": "It depends on when your cause of action arose or accrued, not on when you read this. Section 11 of the Act applies it only to causes of action arising or accruing after 1 January 2026. The South Carolina Code publishes both versions of § 15-38-15 for exactly this reason. If your accident is anywhere near that date, establishing which version governs is the first thing to settle, not something to assume."
+                    },
+                    {
+                        "question": "Can I still sue the bar that over-served the driver?",
+                        "answer": "Yes. Act 42 did not abolish dram-shop liability, and that is the most common thing said wrongly about it. What the Act changed is how a licensed establishment's share is calculated. Under § 61-2-147, where a verdict is rendered against both the establishment and a driver charged under § 56-5-2930, § 56-5-2933 or § 56-5-2945, the establishment is jointly and severally liable for fifty percent of the plaintiff's actual damages."
+                    },
+                    {
+                        "question": "Did Act 42 change South Carolina's comparative negligence rule?",
+                        "answer": "No. The rule barring recovery for a plaintiff more than half at fault is untouched, and so is the fifty-percent threshold in § 15-38-15(A) that decides when a defendant faces joint and several liability. This is worth stating plainly because the equivalent claim circulated widely and wrongly about Georgia's 2025 tort reform, and the same error is likely to attach to this Act."
+                    },
+                    {
+                        "question": "Is the change good or bad for injured people?",
+                        "answer": "Neither, cleanly. Removing alcohol from the exception in § 15-38-15(F) closed one route to holding a defendant liable for all the damages. Section 61-2-147 opened a narrower, more specific one aimed squarely at licensed establishments in DUI cases. Which matters more depends on the facts of a particular case — who the defendants are, what each is found to have done, and when it happened."
+                    },
+                    {
+                        "question": "What does the word “knowingly” change in § 61-6-2220?",
+                        "answer": "That section prohibits a licensed establishment from selling alcohol to a person in an intoxicated condition, and Act 42 added that the sale must be made knowingly. It is a single word in an eleven-section act and easy to miss, but that prohibition is the statutory hook a dram-shop claim is built on, so the addition of a knowledge element is not a drafting nicety."
+                    }
+                ],
+                "_roden_jurisdiction": "south-carolina-only",
+                "_roden_key_takeaways": "South Carolina's 2025 Act No. 42 (H.3430) took effect 1 January 2026 and applies only to causes of action arising or accruing after that date, so the South Carolina Code now publishes two versions of S.C. Code § 15-38-15 side by side. The fifty-percent threshold in § 15-38-15(A) did not change. What changed is subsection (F): conduct involving alcohol, and gross negligence, no longer fall outside the limit on joint and several liability. In their place the Act created § 61-2-147, under which a drunk driver charged under § 56-5-2930, § 56-5-2933 or § 56-5-2945 is placed on the jury verdict form, and where a verdict is rendered against both that driver and a licensed establishment, the establishment is jointly and severally liable for fifty percent of the plaintiff's actual damages. The Act also inserted one word into § 61-6-2220: an establishment may not knowingly sell alcohol to a person in an intoxicated condition. Licensee insurance under § 61-2-145 is now stated as an annual aggregate with a per-occurrence floor of half that amount, and a new Chapter 3 of Title 61 requires certified alcohol server training. Act 42 did not abolish dram-shop liability and did not change South Carolina's comparative negligence rule.",
+                "_roden_last_reviewed": "2026-08-26"
             }
         },
         "/resources/south-carolina-motorcycle-accident-settlement-value/": {

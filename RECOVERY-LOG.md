@@ -740,6 +740,34 @@ The other two guides sit at 3 and 2 inbound and were left alone. The workers'
 comp guide's two are the pillar and a sibling guide, which is the structurally
 right shape; adding volume for its own sake is what built the doorway problem.
 
+### Act 42 linking applied — 2026-08-26
+
+The firm published 5355 and set `_roden_last_reviewed`, so the linker's guard
+opened and the pass ran.
+
+**Nine of ten placed automatically. One was refused and placed by hand**, which is
+the behaviour the script was built for rather than a shortfall. `4076
+drunk-driver-motorcycle-accident` is a short page whose dram-shop paragraph
+genuinely *is* its last block, so the rule that skips the final 15% — there to
+avoid landing after "no fee unless we win your case" — excluded it correctly. It
+has no closing CTA, so appending there was right, and it was done manually.
+
+Worth noting what 4076 cites: **S.C. Code § 61-4-580**, which Act 42 amended at
+subsection (B). The page pointing at the change is citing a section the change
+touched.
+
+All ten verified live. The target resolves 200 with zero redirect hops, and the
+five practice-area links resolve to their flat canonicals
+(`/car-accident-lawyers/drunk-driver-accident/` and siblings) rather than the
+nested `/practice-areas/` form that 301s.
+
+The published page renders intact — 12 headings, the comparison table, FAQPage
+schema, and `lastReviewed`/`reviewedBy` from the fix in #85. Zero O.C.G.A.
+citations, which is what `south-carolina-only` requires and what keeps Georgia
+readers away from South Carolina law.
+
+Task 15 closed. `content/meta.json` regenerated to include the new page.
+
 ### The Act 42 page, and why 22 pointers became 10 — 2026-08-26
 
 **The page**: `/resources/south-carolina-liquor-liability-2026/`, draft 5355,
