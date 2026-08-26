@@ -394,3 +394,62 @@ deadline) is sound. Four of those pages also cite **§ 15-78-80** — the option
 the source of the deadline, which is **§ 15-78-110**.
 
 **14 invalid JSON-LD blocks** (see the previous addendum) remain unfixed.
+
+---
+
+## TIER 2 §2.2 AND THE JSON-LD REPAIR — 2026-08-26
+
+### §2.2 closed — 72 changes on 44 pages
+
+`bin/fix-tier2-sctca-notice-wording.php`. The Act imposes **no notice requirement**: it shortens
+the limitation period to two years (§ 15-78-110); the verified claim is optional, filed within one
+year, and *extends* the deadline to three. Every "imposes shorter notice deadlines" and its 28
+sibling phrasings now say so.
+
+**Sentence-scoped, not a blanket swap** — and that distinction is the whole job. "Notice
+requirement" is correct English on this site in three other contexts, and the dry run caught each
+one before it was corrupted:
+
+- **S.C. Code § 15-79-125's 90-day pre-suit Notice of Intent** is a real, mandatory South Carolina
+  notice — for *medical malpractice*. One page names it in the same sentence as the Tort Claims Act.
+- **Georgia's ante litem notice** genuinely is a mandatory pre-suit notice. One sentence covers
+  "Georgia's or South Carolina's Tort Claims Act procedures and notice requirements" — right about
+  Georgia.
+- **The Federal Tort Claims Act** does require an administrative claim, and one page says so correctly.
+
+A blanket replacement would have turned all three from true to false. Only the FTCA page still
+matches the detector, and it should.
+
+The dry run also surfaced a **Tier-1-grade error the audit never found**:
+`/blog/rideshare-accident-i-26-tenmile-north-charleston/` said *"§ 15-78-50 imposes a 2-year
+written-notice requirement."* § 15-78-50 is the Act's **right of action** provision and imposes no
+notice requirement of any length. Repointed to § 15-78-110.
+
+### All 90 embedded JSON-LD blocks are now valid
+
+`bin/fix-invalid-jsonld-blocks.php` repaired **14 of 14**, recovering **75 FAQ questions** that
+search engines were discarding wholesale.
+
+The repair walks each block tracking string state and escapes quotes that are literal rather than
+structural. The first version used a simple lookahead — a `"` followed by `, : } ]` is structural —
+and **13 of 14 repaired, 1 did not**: the Spanish Green Grove page contains
+`cubre "cualquier calle o carretera pública", así que …`, where a literal closing quote is followed
+by a comma. The refinement: in this shape a *structural* close-then-comma is always followed by the
+next key or element (`"`, `{`, `[`), while a *literal* one is followed by prose. That decided it,
+and the 14th repaired.
+
+Nothing was written on faith. Each block had to be currently invalid, parse after repair, retain
+`@context` and `@type`, and re-encode through `wp_json_encode()`.
+
+### One thing I got wrong and checked before acting on it
+
+After the repair the database reported 90/90 valid while two Spanish pages still served an invalid
+block. The obvious inference was a second source — the theme generating bad JSON from `_roden_faqs`.
+**That was wrong.** `roden_json_ld()` uses `wp_json_encode()` correctly and pretty-prints; the
+failing block was single-line, so it was the embedded copy. It was a **stale Cloudflare edge copy**.
+A re-fetch 45 seconds later returned 3 valid, 0 invalid on both. There is no theme bug — and the
+documented rule held: two clean fetches minutes apart are the only real check.
+
+`_roden_last_refreshed` was **not** set by the JSON-LD repair. It fixes machine-readable markup, not
+the words a reader sees; stamping an editorial update would have been false.
+
