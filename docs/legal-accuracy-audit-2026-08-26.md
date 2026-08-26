@@ -339,3 +339,58 @@ The same 31 posts hard-code **"500+ reviews"** (19 posts). `trust_stats['reviews
 live per-office GBP sum *precisely so it cannot be hand-kept*. The firm has not confirmed a figure, so the
 script reports these and changes none of them — see `bin/fix-hundreds-of-reviews-claim.php` for the same
 class. "62 years", "5,000+ cases" and "4.9-star" **do** match `firm-data.php` and were correctly left alone.
+
+## TIER 1 REMEDIATED — 2026-08-26
+
+All Tier-1 findings are corrected on production across four batches. **34 edits on 30 pages.**
+Scripts: `bin/fix-tier1-batch{1,2,3,4}-*.php`. Every edit required an exact-match count, every
+batch aborted before writing if any edit missed, every post was backed up, and `post_modified`
+was never stamped. `_roden_last_refreshed` was set (content corrected); `_roden_last_reviewed`
+was not — no attorney has re-reviewed these, and that meta licenses schema `reviewedBy`.
+
+| Batch | Finding | Edits | Pages |
+|---|---|---:|---:|
+| 1 | §1.1 SC med-mal cap · §1.4 GA municipal ante litem · §1.7 WC triggers | 16 | 9 |
+| 2 | §1.6 SC Tort Claims Act | 29 | 11 |
+| 3 | §1.2 punitive cap · §1.3 BAC · §1.5 county ante litem · §1.7 WC maxima | 14 | 10 |
+| 4 | stragglers found by residual re-sweep | 3 | 2 |
+
+**Two figures were deliberately NOT written.** The Georgia workers' comp weekly maximum and the
+current CPI-adjusted SC malpractice cap are still unconfirmed, so the stale numbers ($383, $550,
+$367) were replaced with the *mechanism* — "set by statute and adjusted periodically by the State
+Board", "adjusted every year for inflation and published in the State Register" — which is true
+whatever the current figure is. Publishing a fourth unverified number would have repeated the
+original mistake.
+
+### What the residual re-sweep caught that the audit had missed
+
+Re-sweeping production after batch 3 found three more instances on pages the audit never listed,
+each phrased differently from the ones it did:
+
+- `/car-accident-lawyers/drunk-driver-accident/` — "does not impose a statutory cap on punitive
+  damages", and in a FAQ answer the noun is dropped entirely: "South Carolina has no statutory cap
+  but requires clear and convincing evidence." No search for the original phrasing finds that.
+- `/blog/ashley-phosphate-road-i-26-dangerous-intersection-charleston/` — a near-twin slug of
+  `ashley-phosphate-i-26-south-carolinas-deadliest-intersection`, which batch 2 did fix. Two pages,
+  one corridor, one error, one of them on the list.
+
+**The audit's own page list was a starting point, not the population.** The population is whatever
+a fresh sweep of production returns after each batch.
+
+### Checked and deliberately left alone
+
+- `/blog/negligence-vs-gross-negligence/` cites "a BAC of 0.15 or higher (nearly double the legal
+  limit)" as an **example of gross negligence**, not as a punitive-cap threshold. Accurate.
+- Nine pages stating South Carolina does not cap compensatory damages are all correctly qualified
+  ("in ordinary injury cases"; "the medical-malpractice cap is the narrow exception"). Accurate.
+- `/car-accident-lawyers/commercial-van-delivery-truck-accident/` describes notice requirements
+  under the **Federal** Tort Claims Act, which genuinely does require an administrative claim.
+
+### Still open
+
+**§2.2 — 46 instances on 32 pages** still describe the SC Tort Claims Act as imposing "shorter
+notice deadlines". Tier 2: the mechanism is wrong but the practical advice (act fast, confirm your
+deadline) is sound. Four of those pages also cite **§ 15-78-80** — the optional verified claim — as
+the source of the deadline, which is **§ 15-78-110**.
+
+**14 invalid JSON-LD blocks** (see the previous addendum) remain unfixed.
