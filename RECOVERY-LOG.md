@@ -740,6 +740,48 @@ The other two guides sit at 3 and 2 inbound and were left alone. The workers'
 comp guide's two are the pillar and a sibling guide, which is the structurally
 right shape; adding volume for its own sake is what built the doorway problem.
 
+### The Act 42 page, and why 22 pointers became 10 — 2026-08-26
+
+**The page**: `/resources/south-carolina-liquor-liability-2026/`, draft 5355,
+written only from `docs/briefs/2026-08-26-sc-act42-liquor-liability.md`. Seeded
+`south-carolina-only`, which the seeder enforces by rejecting any O.C.G.A.
+citation in the body.
+
+Verifying two sections the brief had only listed by subject turned up a detail
+worth the page on its own: **Act 42 inserted the word "knowingly" into
+S.C. Code § 61-6-2220**, the prohibition on serving a person in an intoxicated
+condition. One word in an eleven-section act, and it adds a knowledge element to
+the statutory hook a dram-shop claim hangs on.
+
+**22 pointers became 10, and the cut is objective.** Twelve of the 22 pages
+mention over-serving once or twice as a bullet in a list of possible defendants.
+A pointer to a statute-change page from there is noise, and indiscriminate
+internal linking is the habit this recovery exists to unwind. A page qualifies if
+a heading names the topic (5 pages) or it appears six or more times across body,
+FAQs and takeaways (5 more). Both lists, with counts, are in the script so the
+decision is reviewable.
+
+**The linker refuses to run.** `bin/link-act42-page.php` aborts while the target
+is a draft, because linking ten pages to an unpublished page is a defect, not a
+head start. It finds its own insertion point at run time rather than carrying
+frozen anchors that would be stale by the time the page is published.
+
+**Two hazards found while testing the placement, neither hypothetical:**
+
+1. **90 published pages carry `<script type="application/ld+json">` inside
+   `post_content`**, three of them among the ten targets. Inserting HTML near one
+   corrupts the structured data silently. The linker now refuses to place inside
+   a JSON-LD block. Swept separately: **no previously-corrected claim survives
+   inside one** — checked, not assumed.
+
+2. **The last keyword hit is usually in the closing call to action.** Early
+   versions placed the pointer after "There is no fee unless we win your case"
+   and after an office address. Hits in the final 15% are now skipped, and the
+   enclosing block must actually contain the keyword — a proximity window was
+   tried first and picked up an address paragraph sitting near one.
+
+Two pages (4076, 4729) are reported for manual placement rather than guessed at.
+
 ### Act 42 verified — and the alarm I raised was too loud — 2026-08-26
 
 Read 2025 Act No. 42 (H.3430) against the enrolled text and both codified
