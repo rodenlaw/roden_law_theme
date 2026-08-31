@@ -2171,7 +2171,7 @@
                     },
                     {
                         "question": "How long do I have to file a car accident claim in South Carolina?",
-                        "answer": "The statute of limitations for personal injury claims is three years from the date of the accident (S.C. Code section 15-3-530). For wrongful death claims, the deadline is three years from the date of death. Claims involving government liability for road defects have additional notice requirements under the Tort Claims Act that must be met earlier."
+                        "answer": "The statute of limitations for personal injury claims is three years from the date of the accident (S.C. Code section 15-3-530). For wrongful death claims, the deadline is three years from the date of death. Claims involving government liability for road defects must be filed within two years under the Tort Claims Act (S.C. Code § 15-78-110) — a year less than the usual deadline."
                     },
                     {
                         "question": "Can I recover damages if I was partially at fault for the crash?",
@@ -2451,14 +2451,14 @@
                     },
                     {
                         "question": "How long do I have to file a claim?",
-                        "answer": "Three years in SC. Government claims have additional notice requirements under the Tort Claims Act."
+                        "answer": "Three years in SC. Government claims must be filed within two years under the Tort Claims Act."
                     },
                     {
                         "question": "What evidence should I preserve?",
                         "answer": "Photograph the hazard, your shoes, and your injuries immediately. Note the exact location. Get witness contact info. Report the fall to the property owner or city in writing."
                     }
                 ],
-                "_roden_key_takeaways": "Charleston's historic cobblestone and brick sidewalks create serious slip and fall hazards from uneven surfaces, tree root upheaval, and poor drainage. Property owners must maintain safe walkways under South Carolina premises liability law. Claims against the City of Charleston proceed under the SC Tort Claims Act with a two-year notice requirement and damages cap. Comparative fault bars recovery at 51% or more, and the general filing deadline is three years (S.C. Code § 15-3-530)."
+                "_roden_key_takeaways": "Charleston's historic cobblestone and brick sidewalks create serious slip and fall hazards from uneven surfaces, tree root upheaval, and poor drainage. Property owners must maintain safe walkways under South Carolina premises liability law. Claims against the City of Charleston proceed under the SC Tort Claims Act with a two-year filing deadline and damages cap. Comparative fault bars recovery at 51% or more, and the general filing deadline is three years (S.C. Code § 15-3-530)."
             }
         },
         "/blog/charleston-lyft-driver-ran-red-light-and-hit-my-car/": {
@@ -2492,7 +2492,7 @@
                     },
                     {
                         "question": "Is there a cap on damages in South Carolina medical malpractice cases?",
-                        "answer": "South Carolina does not impose a statutory cap on compensatory damages (economic or non-economic) in medical malpractice cases. Punitive damages are capped at the greater of three times compensatory damages or $500,000 (S.C. Code section 15-32-530), with exceptions for certain egregious conduct."
+                        "answer": "South Carolina does not cap economic damages in medical malpractice cases, but non-economic damages are capped by S.C. Code § 15-32-220 — a base of $350,000 against a single provider and $1.05 million where more than one is liable, adjusted annually for inflation, so the limit that applies today is higher than the base. Punitive damages are capped at the greater of three times compensatory damages or $500,000 (S.C. Code section 15-32-530), with exceptions for certain egregious conduct."
                     },
                     {
                         "question": "Can I sue both the hospital and the doctor in Charleston?",
@@ -2773,7 +2773,7 @@
                     },
                     {
                         "question": "Can I sue if dangerous road design caused my Columbia accident?",
-                        "answer": "Potentially, yes. If a government entity's failure to properly design, maintain, or signal an intersection contributed to your crash, you may have a claim against the City of Columbia, Richland County, or the South Carolina Department of Transportation. These governmental tort claims have specific notice requirements and shortened filing deadlines under the South Carolina Tort Claims Act, so consulting an attorney promptly is critical."
+                        "answer": "Potentially, yes. If a government entity's failure to properly design, maintain, or signal an intersection contributed to your crash, you may have a claim against the City of Columbia, Richland County, or the South Carolina Department of Transportation. These governmental tort claims must be filed within two years under the South Carolina Tort Claims Act, so consulting an attorney promptly is critical."
                     }
                 ],
                 "_roden_key_takeaways": "Columbia sits at the crossroads of I-20, I-26, and I-77, and its interchange complexes — particularly the I-20/I-26 junction known as \"Malfunction Junction\" — handle traffic volumes that exceed their design capacity. South Carolina's three-year statute of limitations (S.C. Code § 15-3-530) and modified comparative fault rule (less than 51% at fault) govern how victims recover compensation for injuries caused at these high-risk crossroads."
@@ -3228,7 +3228,7 @@
                     },
                     {
                         "question": "Does Georgia require a demand letter before filing a lawsuit?",
-                        "answer": "For standard PI claims, no. But Georgia's bad faith statute (O.C.G.A. § 33-4-6) requires a 60-day demand letter before seeking bad faith penalties. Government claims require ante litem notice under O.C.G.A. § 36-33-5."
+                        "answer": "For standard PI claims, no. But Georgia's bad faith statute (O.C.G.A. § 33-4-6) requires a 60-day demand letter before seeking bad faith penalties. Government claims require ante litem notice — six months for a city under O.C.G.A. § 36-33-5, and 12 months for a county (§ 36-11-1) or the state (§ 50-21-26)."
                     },
                     {
                         "question": "What happens after the insurance company receives the demand?",
@@ -3719,7 +3719,7 @@
                     },
                     {
                         "question": "What damages can I recover?",
-                        "answer": "Medical expenses, lost wages, pain and suffering, and potentially punitive damages. SC does not cap compensatory damages in medical malpractice cases."
+                        "answer": "Medical expenses, lost wages, pain and suffering, and potentially punitive damages. South Carolina does not cap economic damages, but non-economic damages are capped under S.C. Code Section 15-32-220 — a $350,000 base per provider, adjusted annually for inflation."
                     },
                     {
                         "question": "What is the difference between a bad outcome and malpractice?",
@@ -4207,17 +4207,17 @@
                     },
                     {
                         "question": "Do I need to file a special notice for claims against the government?",
-                        "answer": "Yes. Georgia requires an ante-litem notice within six months for municipal claims under O.C.G.A. § 36-33-5 and within 12 months for state claims. South Carolina requires notice under the Tort Claims Act within two years under S.C. Code § 15-78-80."
+                        "answer": "Yes. Georgia requires an ante-litem notice within six months for municipal claims under O.C.G.A. § 36-33-5 and within 12 months for state claims. South Carolina requires no pre-suit notice, but the Tort Claims Act shortens the filing deadline to two years (S.C. Code § 15-78-110); filing a verified claim within one year is optional and extends it to three."
                     }
                 ],
-                "_roden_key_takeaways": "Georgia allows two years to file personal injury lawsuits under O.C.G.A. § 9-3-33, while South Carolina allows three years under S.C. Code § 15-3-530. Exceptions include tolling for minors, mental incapacity, and the discovery rule. Government claims require earlier notice — six months in Georgia municipalities, two years under South Carolina's Tort Claims Act. Missing the deadline permanently bars recovery."
+                "_roden_key_takeaways": "Georgia allows two years to file personal injury lawsuits under O.C.G.A. § 9-3-33, while South Carolina allows three years under S.C. Code § 15-3-530. Exceptions include tolling for minors, mental incapacity, and the discovery rule. Government claims run on shorter clocks — ante litem notice within six months for a Georgia city, and a two-year filing deadline under South Carolina's Tort Claims Act. Missing the deadline permanently bars recovery."
             }
         },
         "/blog/georgia-super-speeder-law/": {
             "type": "post",
             "status": "publish",
-            "title": "What Are Excessive Speeding Laws?",
-            "excerpt": "",
+            "title": "Georgia Super Speeder Law: Fines and Penalties",
+            "excerpt": "Georgia's Super Speeder Law adds a $200 surcharge for driving 75+ mph on a two-lane road or 85+ mph anywhere, with license suspension if unpaid within 120 days.",
             "meta": {
                 "_roden_author_attorney": "Eric Roden",
                 "_roden_faqs": [
@@ -4863,7 +4863,7 @@
                     },
                     {
                         "question": "Can I get punitive damages on top of pain and suffering in South Carolina?",
-                        "answer": "Yes, if the defendant's conduct was willful, wanton, or reckless. Under S.C. Code § 15-33-135, punitive damages require clear and convincing evidence. South Carolina has no statutory cap on punitive damages, but courts require that awards be reasonable and proportional to the harm caused."
+                        "answer": "Yes, if the defendant's conduct was willful, wanton, or reckless. Under S.C. Code § 15-33-135, punitive damages require clear and convincing evidence. South Carolina caps punitive damages at the greater of three times compensatory damages or $500,000 (S.C. Code § 15-32-530), and courts additionally require that awards be reasonable and proportional to the harm caused."
                     },
                     {
                         "question": "What evidence helps prove pain and suffering in South Carolina?",
@@ -5051,7 +5051,7 @@
                     },
                     {
                         "question": "How long do I have to file a claim?",
-                        "answer": "Three years in SC (S.C. Code section 15-3-530). Government claims under the Tort Claims Act have additional notice requirements."
+                        "answer": "Three years in SC (S.C. Code section 15-3-530). Government claims under the Tort Claims Act must be filed within two years, not three."
                     },
                     {
                         "question": "What if I was partially at fault?",
@@ -6532,7 +6532,7 @@
                     },
                     {
                         "question": "What if my accident involved a government road in one of these counties?",
-                        "answer": "Claims against the county or SCDOT proceed under the SC Tort Claims Act with specific notice requirements and damage caps that apply regardless of which county."
+                        "answer": "Claims against the county or SCDOT proceed under the SC Tort Claims Act with a two-year filing deadline and damage caps that apply regardless of which county."
                     },
                     {
                         "question": "Can I file in a different county than where the accident occurred?",
@@ -7010,7 +7010,7 @@
                     },
                     {
                         "question": "How long do I have to file a pedestrian accident claim in South Carolina?",
-                        "answer": "The statute of limitations for personal injury claims in South Carolina is three years from the date of the accident (S.C. Code § 15-3-530). Wrongful death claims must be filed within three years of the date of death (S.C. Code § 15-51-20). Claims against government entities under the Tort Claims Act have additional notice requirements that must be met earlier. In Georgia, the deadline is only two years (O.C.G.A. § 9-3-33)."
+                        "answer": "The statute of limitations for personal injury claims in South Carolina is three years from the date of the accident (S.C. Code § 15-3-530). Wrongful death claims must be filed within three years of the date of death (S.C. Code § 15-51-20). Claims against government entities run on a shorter clock — two years under the Tort Claims Act (S.C. Code § 15-78-110), or three if a verified claim is filed with the agency within one year. In Georgia, the deadline is only two years (O.C.G.A. § 9-3-33)."
                     }
                 ],
                 "_roden_key_takeaways": "Rivers Avenue in North Charleston is one of South Carolina's deadliest corridors for pedestrians due to high speeds, inadequate crosswalks, poor lighting, and heavy commercial traffic on a road designed for cars rather than walkers. South Carolina law gives pedestrians rights in crosswalks but also requires them to yield outside marked crossings. Under South Carolina's modified comparative fault rule, injured pedestrians can recover damages if they are less than 51% at fault. The three-year statute of limitations (S.C. Code SS 15-3-530) applies."
@@ -8547,7 +8547,7 @@
                     },
                     {
                         "question": "How long to file in Georgia?",
-                        "answer": "2 years from date of accident (O.C.G.A. § 9-3-33). Government claims need ante litem notice within 12 months."
+                        "answer": "2 years from date of accident (O.C.G.A. § 9-3-33). Government claims need ante litem notice first — six months for a city (O.C.G.A. § 36-33-5), 12 months for a county (§ 36-11-1) or the state (§ 50-21-26)."
                     },
                     {
                         "question": "What is Georgia comparative fault rule?",
@@ -10939,7 +10939,7 @@
                     },
                     {
                         "question": "Are punitive damages available in drunk driving cases?",
-                        "answer": "Yes. Both Georgia and South Carolina allow punitive damages in drunk driving cases to punish especially reckless behavior. Georgia generally caps punitive damages at $250,000, with exceptions for DUI cases. South Carolina has no statutory cap but requires clear and convincing evidence."
+                        "answer": "Yes. Both Georgia and South Carolina allow punitive damages in drunk driving cases to punish especially reckless behavior. Georgia generally caps punitive damages at $250,000, with exceptions for DUI cases. South Carolina caps them at the greater of three times compensatory damages or $500,000 (S.C. Code § 15-32-530) and requires clear and convincing evidence."
                     },
                     {
                         "question": "What is the statute of limitations for a drunk driving accident claim?",
@@ -10973,7 +10973,7 @@
                     },
                     {
                         "question": "What is the ante litem notice requirement in Georgia?",
-                        "answer": "Under O.C.G.A. § 36-33-5, you must provide written notice to the county or municipal governing authority within 6 months of the accident before you can file a lawsuit. The notice must describe the time, place, and extent of your injuries."
+                        "answer": "Under O.C.G.A. § 36-33-5, you must provide written notice to a municipal governing authority within 6 months of the accident before you can file a lawsuit. A claim against a county is different — it must be presented within 12 months under O.C.G.A. § 36-11-1. The notice must describe the time, place, and extent of your injuries."
                     },
                     {
                         "question": "Are there damage caps in government vehicle accident cases?",
@@ -16316,7 +16316,7 @@
                     },
                     {
                         "question": "¿Qué pasa si me caí en propiedad del gobierno, como una acera o un edificio público?",
-                        "answer": "Los reclamos contra entidades gubernamentales siguen reglas distintas y plazos mucho más cortos. En Georgia se rigen por la Ley de Reclamos Extracontractuales de Georgia (O.C.G.A. § 50-21-20), que exige dar un aviso previo (ante litem) dentro de los 12 meses del incidente. Carolina del Sur tiene su propia ley de reclamos contra el Estado (S.C. Code § 15-78-80), con un requisito de aviso de 2 años. La inmunidad gubernamental también puede limitar la cantidad recuperable. Nuestros abogados tienen experiencia manejando estos requisitos adicionales, así que no espere para consultarnos."
+                        "answer": "Los reclamos contra entidades gubernamentales siguen reglas distintas y plazos mucho más cortos. En Georgia se rigen por la Ley de Reclamos Extracontractuales de Georgia (O.C.G.A. § 50-21-20), que exige dar un aviso previo (ante litem) dentro de los 12 meses del incidente. Carolina del Sur tiene su propia ley de reclamos contra el Estado (S.C. Code § 15-78-110), con un plazo de presentación de 2 años. La inmunidad gubernamental también puede limitar la cantidad recuperable. Nuestros abogados tienen experiencia manejando estos requisitos adicionales, así que no espere para consultarnos."
                     },
                     {
                         "question": "¿Cuánto tarda en resolverse un caso de caída?",
@@ -22715,7 +22715,7 @@
                     },
                     {
                         "question": "What is the deadline for a North Charleston injury claim?",
-                        "answer": "Three years from the date of injury under S.C. Code § 15-3-530. Workers' compensation runs on two years under § 42-15-40, and claims against a government body carry shorter notice requirements under the South Carolina Tort Claims Act."
+                        "answer": "Three years from the date of injury under S.C. Code § 15-3-530. Workers' compensation runs on two years under § 42-15-40, and claims against a government body carry a shorter, two-year filing deadline under the South Carolina Tort Claims Act."
                     },
                     {
                         "question": "Where are seriously injured patients treated?",
@@ -23356,7 +23356,7 @@
                     },
                     {
                         "question": "Is there a cap on medical malpractice damages in Georgia or South Carolina?",
-                        "answer": "Georgia does not currently impose a cap on medical malpractice damages. The Georgia Supreme Court struck down the state's $350,000 cap on non-economic damages in Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt (2010). South Carolina also does not cap non-economic damages in medical malpractice cases, though punitive damages are limited to the greater of $500,000 or three times compensatory damages (S.C. Code § 15-32-530)."
+                        "answer": "Georgia does not currently impose a cap on medical malpractice damages. The Georgia Supreme Court struck down the state's $350,000 cap on non-economic damages in Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt (2010). South Carolina does cap non-economic damages in medical malpractice cases: S.C. Code § 15-32-220 sets a base of $350,000 against a single provider and $1.05 million where more than one is liable, adjusted annually for inflation. Punitive damages are separately limited to the greater of $500,000 or three times compensatory damages (S.C. Code § 15-32-530)."
                     },
                     {
                         "question": "What is the difference between medical malpractice and negligence?",
@@ -23742,7 +23742,7 @@
                     },
                     {
                         "question": "What if I fell on government property (sidewalk, public building)?",
-                        "answer": "Claims against government entities in Georgia are governed by the Georgia Tort Claims Act (O.C.G.A. § 50-21-20), which requires ante litem notice within 12 months of the incident. South Carolina has the South Carolina Tort Claims Act (S.C. Code § 15-78-80) with a 2-year notice requirement. Government immunity may also limit recoverable damages. Our attorneys are experienced in navigating these additional procedural requirements."
+                        "answer": "Claims against government entities in Georgia are governed by the Georgia Tort Claims Act (O.C.G.A. § 50-21-20), which requires ante litem notice within 12 months of the incident. South Carolina has the South Carolina Tort Claims Act (S.C. Code § 15-78-110) with a 2-year filing deadline. Government immunity may also limit recoverable damages. Our attorneys are experienced in navigating these additional procedural requirements."
                     },
                     {
                         "question": "How long does a slip and fall case take to settle?",
@@ -24075,7 +24075,7 @@
                     },
                     {
                         "question": "How long do I have to file a Charleston premises liability claim?",
-                        "answer": "The general deadline is three years from the date of injury under S.C. Code § 15-3-530. If the property owner is a government entity, shorter notice requirements and the South Carolina Tort Claims Act damage caps may apply, so it is important to speak with an attorney quickly."
+                        "answer": "The general deadline is three years from the date of injury under S.C. Code § 15-3-530. If the property owner is a government entity, a shorter, two-year filing deadline and the South Carolina Tort Claims Act damage caps may apply, so it is important to speak with an attorney quickly."
                     },
                     {
                         "question": "How much does a Charleston premises liability lawyer cost?",
@@ -24109,11 +24109,11 @@
                     },
                     {
                         "question": "What if I was hurt on government property in Columbia?",
-                        "answer": "Injuries on state, county, city, SCDOT, or public-housing property fall under the South Carolina Tort Claims Act, which caps damages at $300,000 per person and $600,000 per occurrence, bars punitive damages, and imposes shorter notice deadlines. Because Columbia has many government facilities, it is important to identify the owner early and act quickly."
+                        "answer": "Injuries on state, county, city, SCDOT, or public-housing property fall under the South Carolina Tort Claims Act, which caps damages at $300,000 per person and $600,000 per occurrence, bars punitive damages, and shortens the filing deadline to two years. Because Columbia has many government facilities, it is important to identify the owner early and act quickly."
                     },
                     {
                         "question": "How long do I have to file a Columbia premises liability claim?",
-                        "answer": "The general deadline is three years from the date of injury under S.C. Code § 15-3-530. If the property owner is a government entity, shorter notice requirements and the South Carolina Tort Claims Act damage caps may apply, so it is important to speak with an attorney quickly."
+                        "answer": "The general deadline is three years from the date of injury under S.C. Code § 15-3-530. If the property owner is a government entity, a shorter, two-year filing deadline and the South Carolina Tort Claims Act damage caps may apply, so it is important to speak with an attorney quickly."
                     },
                     {
                         "question": "How much does a Columbia premises liability lawyer cost?",
@@ -24253,7 +24253,7 @@
                     },
                     {
                         "question": "How long do I have to file a Myrtle Beach premises liability claim?",
-                        "answer": "The general deadline is three years from the date of injury under S.C. Code § 15-3-530. If the property owner is a government entity, shorter notice requirements and the South Carolina Tort Claims Act damage caps may apply, so it is important to speak with an attorney quickly."
+                        "answer": "The general deadline is three years from the date of injury under S.C. Code § 15-3-530. If the property owner is a government entity, a shorter, two-year filing deadline and the South Carolina Tort Claims Act damage caps may apply, so it is important to speak with an attorney quickly."
                     },
                     {
                         "question": "How much does a Myrtle Beach premises liability lawyer cost?",
@@ -24291,7 +24291,7 @@
                     },
                     {
                         "question": "How long do I have to file a North Charleston premises liability claim?",
-                        "answer": "The general deadline is three years from the date of injury under S.C. Code § 15-3-530. If the property owner is a government entity, shorter notice requirements and the South Carolina Tort Claims Act damage caps may apply, so it is important to speak with an attorney quickly."
+                        "answer": "The general deadline is three years from the date of injury under S.C. Code § 15-3-530. If the property owner is a government entity, a shorter, two-year filing deadline and the South Carolina Tort Claims Act damage caps may apply, so it is important to speak with an attorney quickly."
                     },
                     {
                         "question": "How much does a North Charleston premises liability lawyer cost?",
@@ -25016,7 +25016,7 @@
                     },
                     {
                         "question": "Can I sue SCDOT if the intersection design caused my accident?",
-                        "answer": "Potentially, yes. If the intersection design — such as inadequate signal timing, missing turn signals, or poor sight lines — contributed to the crash, SCDOT may share liability. However, claims against government entities in South Carolina are subject to the SC Tort Claims Act (S.C. Code Section 15-78-80), which imposes shorter notice requirements and damage caps. An attorney must file these claims promptly."
+                        "answer": "Potentially, yes. If the intersection design — such as inadequate signal timing, missing turn signals, or poor sight lines — contributed to the crash, SCDOT may share liability. However, claims against government entities in South Carolina are subject to the SC Tort Claims Act (S.C. Code Section 15-78-110), which shortens the filing deadline to two years and caps damages. An attorney must file these claims promptly."
                     },
                     {
                         "question": "Are there traffic cameras at Ashley Phosphate and I-26?",
@@ -25185,7 +25185,7 @@
                     },
                     {
                         "question": "How long do I have to file a truck accident lawsuit in South Carolina?",
-                        "answer": "South Carolina has a 3-year statute of limitations for personal injury claims (S.C. Code 15-3-530). If your crash involved a government entity like SCDOT — for example, due to construction zone defects or interchange design — the SC Tort Claims Act imposes additional notice requirements. Contact an attorney immediately to preserve evidence and meet all deadlines."
+                        "answer": "South Carolina has a 3-year statute of limitations for personal injury claims (S.C. Code 15-3-530). If your crash involved a government entity like SCDOT — for example, due to construction zone defects or interchange design — the SC Tort Claims Act shortens the filing deadline to two years. Contact an attorney immediately to preserve evidence and meet all deadlines."
                     },
                     {
                         "question": "Who is liable for a truck crash in the Malfunction Junction construction zone?",
@@ -25350,7 +25350,7 @@
                     },
                     {
                         "question": "How long do I have to file a truck accident claim on Dorchester Road?",
-                        "answer": "South Carolina law provides 3 years from the date of injury to file a personal injury claim (S.C. Code Section 15-3-530). However, if a government entity such as SCDOT or the City of North Charleston is involved due to road design defects, the SC Tort Claims Act imposes shorter notice deadlines. Contact an attorney as soon as possible to preserve your rights."
+                        "answer": "South Carolina law provides 3 years from the date of injury to file a personal injury claim (S.C. Code Section 15-3-530). However, if a government entity such as SCDOT or the City of North Charleston is involved due to road design defects, the SC Tort Claims Act shortens the filing deadline to two years. Contact an attorney as soon as possible to preserve your rights."
                     },
                     {
                         "question": "What should I do after a truck accident on Dorchester Road?",
@@ -25862,7 +25862,7 @@
                     },
                     {
                         "question": "Can the I-526 construction zone affect my truck accident claim?",
-                        "answer": "Yes. If unsafe construction zone conditions contributed to the crash — such as confusing lane shifts, inadequate signage, or hazardous barriers — the construction contractor or SCDOT may share liability. Claims against government entities are subject to the SC Tort Claims Act (S.C. Code Section 15-78-80), which imposes shorter notice requirements and damage caps."
+                        "answer": "Yes. If unsafe construction zone conditions contributed to the crash — such as confusing lane shifts, inadequate signage, or hazardous barriers — the construction contractor or SCDOT may share liability. Claims against government entities are subject to the SC Tort Claims Act (S.C. Code Section 15-78-110), which shortens the filing deadline to two years and caps damages."
                     }
                 ],
                 "_roden_jurisdiction": "sc",
@@ -27226,7 +27226,7 @@
                     },
                     {
                         "question": "What is the deadline for filing a truck accident claim in Summerville?",
-                        "answer": "South Carolina's statute of limitations gives you 3 years from the date of injury to file a lawsuit (S.C. Code Section 15-3-530). However, if a government entity (SCDOT, Town of Summerville) is involved, shorter notice deadlines may apply under the SC Tort Claims Act. Contact an attorney promptly — and within 24-48 hours for evidence preservation purposes."
+                        "answer": "South Carolina's statute of limitations gives you 3 years from the date of injury to file a lawsuit (S.C. Code Section 15-3-530). However, if a government entity (SCDOT, Town of Summerville) is involved, a shorter, two-year filing deadline may apply under the SC Tort Claims Act. Contact an attorney promptly — and within 24-48 hours for evidence preservation purposes."
                     }
                 ],
                 "_roden_jurisdiction": "sc",
@@ -27308,7 +27308,7 @@
                     },
                     {
                         "question": "Can the road design be a factor in my truck accident case?",
-                        "answer": "Yes. If infrastructure design defects — such as inadequate signal timing, inconsistent lane widths, or poor intersection geometry — contributed to the crash, SCDOT or Richland County may share liability. However, claims against government entities are subject to the SC Tort Claims Act (S.C. Code Section 15-78-80), which imposes notice requirements and damage caps."
+                        "answer": "Yes. If infrastructure design defects — such as inadequate signal timing, inconsistent lane widths, or poor intersection geometry — contributed to the crash, SCDOT or Richland County may share liability. However, claims against government entities are subject to the SC Tort Claims Act (S.C. Code Section 15-78-110), which shortens the filing deadline to two years and caps damages."
                     }
                 ],
                 "_roden_jurisdiction": "sc",
@@ -27395,7 +27395,7 @@
                     },
                     {
                         "question": "How long do I have to file a slip-and-fall claim in South Carolina?",
-                        "answer": "You generally have three years from the date of the fall under S.C. Code § 15-3-530. But if you fell on government property (the City of Charleston, the county, SCDOT, or MUSC), the South Carolina Tort Claims Act imposes shorter notice deadlines, so talk to an attorney quickly."
+                        "answer": "You generally have three years from the date of the fall under S.C. Code § 15-3-530. But if you fell on government property (the City of Charleston, the county, SCDOT, or MUSC), the South Carolina Tort Claims Act shortens the filing deadline to two years, so talk to an attorney quickly."
                     },
                     {
                         "question": "I slipped at a Charleston hotel while on vacation. Can I still file a claim?",
@@ -27433,7 +27433,7 @@
                     },
                     {
                         "question": "How long do I have to file a slip-and-fall claim in South Carolina?",
-                        "answer": "You generally have three years from the date of the fall under S.C. Code § 15-3-530. But if you fell on government property (a city, county, SCDOT, or public university), the South Carolina Tort Claims Act imposes shorter notice deadlines, so it is important to talk to an attorney quickly."
+                        "answer": "You generally have three years from the date of the fall under S.C. Code § 15-3-530. But if you fell on government property (a city, county, SCDOT, or public university), the South Carolina Tort Claims Act shortens the filing deadline to two years, so it is important to talk to an attorney quickly."
                     },
                     {
                         "question": "What do I have to prove to win a slip-and-fall case in Columbia?",
@@ -27577,7 +27577,7 @@
                     },
                     {
                         "question": "How long do I have to file a slip-and-fall claim in South Carolina?",
-                        "answer": "You generally have three years from the date of the fall under S.C. Code § 15-3-530. If you fell on government property (a city, Horry or Georgetown County, or SCDOT), the Tort Claims Act imposes shorter notice deadlines, so talk to an attorney quickly."
+                        "answer": "You generally have three years from the date of the fall under S.C. Code § 15-3-530. If you fell on government property (a city, Horry or Georgetown County, or SCDOT), the Tort Claims Act shortens the filing deadline to two years, so talk to an attorney quickly."
                     },
                     {
                         "question": "What do I have to prove to win a slip-and-fall case on the Grand Strand?",
@@ -27611,7 +27611,7 @@
                     },
                     {
                         "question": "How long do I have to file a slip-and-fall claim in South Carolina?",
-                        "answer": "You generally have three years from the date of the fall under S.C. Code § 15-3-530. But if you fell on government property (the City of North Charleston, the county, or SCDOT), the South Carolina Tort Claims Act imposes shorter notice deadlines, so talk to an attorney quickly."
+                        "answer": "You generally have three years from the date of the fall under S.C. Code § 15-3-530. But if you fell on government property (the City of North Charleston, the county, or SCDOT), the South Carolina Tort Claims Act shortens the filing deadline to two years, so talk to an attorney quickly."
                     },
                     {
                         "question": "I fell at Tanger Outlets or a store on Rivers Avenue. Who is responsible?",
@@ -27898,7 +27898,7 @@
                     },
                     {
                         "question": "How long do I have to file a car accident lawsuit in South Carolina?",
-                        "answer": "In most cases you have 3 years from the date of the crash to file, under S.C. Code § 15-3-530. Shorter notice deadlines can apply when a government entity is involved under the South Carolina Tort Claims Act, so confirm your specific deadline with an attorney."
+                        "answer": "In most cases you have 3 years from the date of the crash to file, under S.C. Code § 15-3-530. A shorter, two-year filing deadline can apply when a government entity is involved under the South Carolina Tort Claims Act, so confirm your specific deadline with an attorney."
                     },
                     {
                         "question": "What happens if I was partly at fault for the accident?",
@@ -29839,7 +29839,7 @@
                     },
                     {
                         "question": "How long do I have to file a wrongful death claim in South Carolina?",
-                        "answer": "Generally three years from the date of death (S.C. Code § 15-3-530). Claims against a government entity have shorter notice requirements under the South Carolina Tort Claims Act, so it is important to speak with an attorney promptly."
+                        "answer": "Generally three years from the date of death (S.C. Code § 15-3-530). Claims against a government entity have a shorter, two-year filing deadline under the South Carolina Tort Claims Act, so it is important to speak with an attorney promptly."
                     },
                     {
                         "question": "What is the difference between a wrongful death and a survival action?",
@@ -29877,7 +29877,7 @@
                     },
                     {
                         "question": "How long do I have to file a wrongful death claim in South Carolina?",
-                        "answer": "Generally three years from the date of death (S.C. Code § 15-3-530). Claims against a government entity have shorter notice requirements under the South Carolina Tort Claims Act, so it is important to speak with an attorney promptly."
+                        "answer": "Generally three years from the date of death (S.C. Code § 15-3-530). Claims against a government entity have a shorter, two-year filing deadline under the South Carolina Tort Claims Act, so it is important to speak with an attorney promptly."
                     },
                     {
                         "question": "What is the difference between a wrongful death and a survival action?",
@@ -30119,7 +30119,7 @@
                     },
                     {
                         "question": "How long do I have to file a wrongful death claim in South Carolina?",
-                        "answer": "Generally three years from the date of death (S.C. Code § 15-3-530). Claims against a government entity have shorter notice requirements under the South Carolina Tort Claims Act, so it is important to speak with an attorney promptly."
+                        "answer": "Generally three years from the date of death (S.C. Code § 15-3-530). Claims against a government entity have a shorter, two-year filing deadline under the South Carolina Tort Claims Act, so it is important to speak with an attorney promptly."
                     },
                     {
                         "question": "What is the difference between a wrongful death and a survival action?",
@@ -30157,7 +30157,7 @@
                     },
                     {
                         "question": "How long do I have to file a wrongful death claim in South Carolina?",
-                        "answer": "Generally three years from the date of death (S.C. Code § 15-3-530). Claims against a government entity have shorter notice requirements under the South Carolina Tort Claims Act, so it is important to speak with an attorney promptly."
+                        "answer": "Generally three years from the date of death (S.C. Code § 15-3-530). Claims against a government entity have a shorter, two-year filing deadline under the South Carolina Tort Claims Act, so it is important to speak with an attorney promptly."
                     },
                     {
                         "question": "What is the difference between a wrongful death and a survival action?",

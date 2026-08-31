@@ -1,0 +1,9 @@
+{
+  "applied_at": "2026-08-31 19:43:54",
+  "post_id": 1790,
+  "post_name": "georgia-super-speeder-law",
+  "post_title": "What Are Excessive Speeding Laws?",
+  "post_excerpt": "",
+  "post_modified": "2026-03-24 12:52:52",
+  "note": "Step 1 of KNOWLEDGE-BASE-PLAN-rodenlaw.md. Empty post_excerpt meant get_the_excerpt() auto-generated from post_content, which begins with the TOC nav — so the page published its table of contents as both <meta name=description> and the Article schema description. Restore by setting post_title and post_excerpt back to these values."
+}
