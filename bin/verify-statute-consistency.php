@@ -34,8 +34,34 @@
  * before concluding anything. The repo has been here before: 151fd62, "the alarm
  * I raised was too loud."
  *
- * The fix, if this gets invested in further, is to bind each quantity to its
- * NEAREST citation rather than to every citation in the sentence.
+ * FIXED 2026-08-31: quantities now bind to their NEAREST citation, not to every
+ * citation in the sentence. That removed some noise. It did not make the approach
+ * work, for two structural reasons this site is full of:
+ *
+ *   1. TWO-STATE COMPARISON TABLES flatten to one unpunctuated "sentence" holding
+ *      both states' citations and both states' numbers, inches apart. Nearest-
+ *      citation binding is a coin flip there.
+ *   2. JSON-ENCODED FAQ ARRAYS have no sentence boundary between entries, so
+ *      '"},{"question":"' merges the end of one answer with the start of the next.
+ *      This produced the run's other apparent finding: a $25,000 figure bound to
+ *      the punitive-damages cap, which is really Georgia's minimum liability
+ *      coverage in the following FAQ. Correct on both the EN and ES pages.
+ *
+ * SCORE FOR THE FIRST FULL RUN: twelve statutes, ~1,300 claim instances, THREE
+ * things flagged, ZERO real errors. The ante litem alarm, the punitive-cap alarm
+ * and the SC 51%-bar "disagreement" (three equivalent phrasings: "not more than
+ * 50%", "less than 51%", "50% or less") were all artifacts.
+ *
+ * READ THAT AS A RESULT, NOT A FAILURE. It is weak positive evidence that the
+ * high-exposure statutes are internally consistent. It is NOT evidence they are
+ * correct — the car-seat error survived precisely because only one page carried
+ * it, so there was nothing to disagree with. Consistency cannot catch a claim the
+ * whole site gets wrong the same way.
+ *
+ * WHERE THE NEXT EFFORT SHOULD GO: external verification of the top statutes by
+ * READING what the site asserts against the statutory text. Not pattern matching.
+ * This file's value is the inventory it is paired with and the negative result
+ * above, not as an ongoing detector.
  */
 
 $TARGETS = array(
@@ -60,31 +86,67 @@ $rows = get_posts( array(
     'fields'      => 'ids',
 ) );
 
-/** Normalise a claim to its load-bearing quantities, so wording differences collapse. */
-function roden_claim_signature( $sentence ) {
-    $s = strtolower( wp_strip_all_tags( $sentence ) );
-    $sig = array();
-    // durations
-    if ( preg_match_all( '/\b(one|two|three|four|five|six|seven|eight|nine|ten|twelve|1|2|3|4|5|6|7|8|9|10|12|24|30|90|120|180|365)\s*[- ]?\s*(year|month|day)s?\b/', $s, $m, PREG_SET_ORDER ) ) {
-        foreach ( $m as $x ) { $sig[] = $x[1] . $x[2]; }
+/**
+ * Every quantity in a sentence, with its character offset.
+ *
+ * Returned as array( offset => token ). Tokens are normalised so that wording
+ * differences ("two years", "2 years", "2-year") collapse to one signature.
+ */
+function roden_quantities_with_offsets( $s ) {
+    $out = array();
+    $pats = array(
+        '/\b(one|two|three|four|five|six|seven|eight|nine|ten|twelve|1|2|3|4|5|6|7|8|9|10|12|24|30|90|120|180|365)\s*[- ]?\s*(year|month|day)s?\b/i'
+            => function ( $m ) {
+                $w = array( 'one'=>'1','two'=>'2','three'=>'3','four'=>'4','five'=>'5','six'=>'6',
+                            'seven'=>'7','eight'=>'8','nine'=>'9','ten'=>'10','twelve'=>'12' );
+                $n = strtolower( $m[1] );
+                return ( isset( $w[ $n ] ) ? $w[ $n ] : $n ) . strtolower( $m[2] );
+            },
+        '/\b(\d{1,3})\s*(?:%|percent)/i' => function ( $m ) { return $m[1] . 'pct'; },
+        '/\$\s?([\d,]+(?:\.\d+)?)\s*(million|M)?\b/i'
+            => function ( $m ) { return '$' . str_replace( ',', '', $m[1] ) . ( ! empty( $m[2] ) ? 'M' : '' ); },
+    );
+    foreach ( $pats as $re => $fmt ) {
+        if ( preg_match_all( $re, $s, $mm, PREG_SET_ORDER | PREG_OFFSET_CAPTURE ) ) {
+            foreach ( $mm as $m ) {
+                $flat = array_map( function ( $x ) { return $x[0]; }, $m );
+                $out[ $m[0][1] ] = $fmt( $flat );
+            }
+        }
     }
-    // percentages
-    if ( preg_match_all( '/\b(\d{1,3})\s*(?:%|percent)/', $s, $m ) ) {
-        foreach ( $m[1] as $x ) { $sig[] = $x . 'pct'; }
+    // Polarity phrases that flip a rule outright.
+    foreach ( array( 'no cap', 'not admissible', 'no limit', 'does not apply', 'unlimited',
+                     'struck down', 'unconstitutional', 'no statutory cap' ) as $phrase ) {
+        $off = 0;
+        while ( false !== ( $off = stripos( $s, $phrase, $off ) ) ) {
+            $out[ $off ] = '!' . str_replace( ' ', '_', $phrase );
+            $off += strlen( $phrase );
+        }
     }
-    // money
-    if ( preg_match_all( '/\$\s?([\d,]+(?:\.\d+)?)\s*(million)?/', $s, $m, PREG_SET_ORDER ) ) {
-        foreach ( $m as $x ) { $sig[] = '$' . str_replace( ',', '', $x[1] ) . ( ! empty( $x[2] ) ? 'M' : '' ); }
-    }
-    // polarity words that flip a rule
-    foreach ( array( 'no cap', 'not admissible', 'no limit', 'does not apply', 'unlimited', 'struck down', 'unconstitutional' ) as $p ) {
-        if ( false !== strpos( $s, $p ) ) { $sig[] = '!' . str_replace( ' ', '_', $p ); }
-    }
-    sort( $sig );
-    return implode( '|', array_unique( $sig ) );
+    return $out;
 }
 
-$claims = array(); // target => signature => array( count, sample, pages[] )
+/** Offsets of every statute citation in a sentence, as array( offset => "GA 9-3-33" ). */
+function roden_citations_with_offsets( $s ) {
+    $out = array();
+    $re = '/\b(O\.?C\.?G\.?A\.?|S\.?C\.?\s*Code(?:\s*Ann\.?)?)?\s*(?:&sect;|§|Section)?\s*([0-9]+-[0-9]+-[0-9]+(?:\.[0-9]+)?)/i';
+    if ( preg_match_all( $re, $s, $mm, PREG_SET_ORDER | PREG_OFFSET_CAPTURE ) ) {
+        foreach ( $mm as $m ) {
+            $num = $m[2][0];
+            // State is inferred from the label when present; otherwise from the
+            // numbering, which does not collide between the two codes in practice.
+            $label = isset( $m[1][0] ) ? $m[1][0] : '';
+            $state = '';
+            if ( $label ) {
+                $state = ( 0 === stripos( $label, 'O' ) ) ? 'GA' : 'SC';
+            }
+            $out[ $m[2][1] ] = array( 'num' => $num, 'state' => $state );
+        }
+    }
+    return $out;
+}
+
+$claims = array();
 
 foreach ( $rows as $id ) {
     $p = get_post( $id );
@@ -95,19 +157,39 @@ foreach ( $rows as $id ) {
           . ( is_array( $faqs ) ? wp_json_encode( $faqs ) : (string) $faqs ) . ' '
           . (string) get_post_meta( $id, '_roden_key_takeaways', true );
 
-    foreach ( $TARGETS as $cite => $label ) {
-        list( , $num ) = explode( ' ', $cite );
-        $quoted = preg_quote( $num, '/' );
-        // sentence containing the citation
-        foreach ( preg_split( '/(?<=[.!?])\s+/', wp_strip_all_tags( $blob ) ) as $sent ) {
-            if ( ! preg_match( '/' . $quoted . '/', $sent ) ) { continue; }
-            $sig = roden_claim_signature( $sent );
-            if ( '' === $sig ) { continue; }
-            if ( ! isset( $claims[ $cite ][ $sig ] ) ) {
-                $claims[ $cite ][ $sig ] = array( 'n' => 0, 'sample' => trim( preg_replace( '/\s+/', ' ', $sent ) ), 'pages' => array() );
+    foreach ( preg_split( '/(?<=[.!?])\s+/', wp_strip_all_tags( $blob ) ) as $sent ) {
+        $cites = roden_citations_with_offsets( $sent );
+        if ( ! $cites ) { continue; }
+        $qty = roden_quantities_with_offsets( $sent );
+        if ( ! $qty ) { continue; }
+
+        // Bind each quantity to its NEAREST citation. This is the whole point:
+        // a sentence citing several statutes must not hand all of its numbers to
+        // all of them, which is how the first version produced a false alarm.
+        $bound = array();
+        foreach ( $qty as $qoff => $token ) {
+            $best = null; $bestd = PHP_INT_MAX;
+            foreach ( $cites as $coff => $c ) {
+                $d = abs( $qoff - $coff );
+                if ( $d < $bestd ) { $bestd = $d; $best = $coff; }
             }
-            $claims[ $cite ][ $sig ]['n']++;
-            $claims[ $cite ][ $sig ]['pages'][ $id ] = true;
+            if ( null !== $best ) { $bound[ $best ][] = $token; }
+        }
+
+        foreach ( $bound as $coff => $tokens ) {
+            $c = $cites[ $coff ];
+            foreach ( $TARGETS as $target => $label ) {
+                list( $tstate, $tnum ) = explode( ' ', $target );
+                if ( $c['num'] !== $tnum ) { continue; }
+                if ( $c['state'] && $c['state'] !== $tstate ) { continue; }
+                sort( $tokens );
+                $sig = implode( '|', array_unique( $tokens ) );
+                if ( ! isset( $claims[ $target ][ $sig ] ) ) {
+                    $claims[ $target ][ $sig ] = array( 'n' => 0, 'sample' => trim( preg_replace( '/\s+/', ' ', $sent ) ), 'pages' => array() );
+                }
+                $claims[ $target ][ $sig ]['n']++;
+                $claims[ $target ][ $sig ]['pages'][ $id ] = true;
+            }
         }
     }
 }
