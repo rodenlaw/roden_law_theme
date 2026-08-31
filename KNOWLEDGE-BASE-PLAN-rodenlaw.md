@@ -234,20 +234,48 @@ Treatment per page: answer-first opener, statute cited inline, two-state contras
 **Do not retitle a narrow topic into a two-state title** — §2 shows the pattern reflects
 topic scope, not a formatting trick.
 
-### B2 — Convert proven topics from blog format to resource format
+### B2 — Finish the pages that were never finished ✅ *done 2026-08-31*
 
-The site runs an accidental controlled experiment on car-seat law:
+> **This section's original premise was wrong and is corrected here.** It framed the
+> work as a blog→resource *format* conversion, on the strength of a 23× click gap
+> between `/resources/south-carolina-car-seat-laws/` (138 clicks, pos 8.5) and
+> `/blog/georgia-car-seat-law-overview/` (6 clicks, pos 26.9).
+>
+> Format was never the variable. **Both pages use the default template**, and
+> `single.php` already renders key takeaways and FAQs — the only things the
+> `resource` type adds are the see-also block and the sidebar. The real difference:
+> the SC page was finished (1,154 words, 6 question-shaped H2s, statute cited, full
+> `_roden_*` meta) and the GA page was a 2025 stub (678 words, **zero H2s**, no
+> statute, no meta at all).
 
-| Same topic, two formats | Type | Impr | Clicks | Pos |
-|---|---|---:|---:|---:|
-| `/resources/south-carolina-car-seat-laws/` | resource | 18,639 | **138** | 8.5 |
-| `/blog/georgia-car-seat-law-overview/` | post | 9,244 | **6** | 26.9 |
+**So the treatment is: upgrade in place, keep the URL, no 301.** Applied to the
+Georgia page on 2026-08-31 — 678 → 1,064 words, 0 → 7 H2s, statutes cited, and the
+meta it never had. It also carried a **false statement of law** (see §6.1).
 
-**23× the clicks in resource format.** Convert the Georgia post to the resource template
-and extend both with the adult-booster section — four queries, 686 impressions, all
-ranking 7.7–10.1 on *adult* booster law specifically.
+Apply the same test to other candidates before assuming format is the problem:
+open the page and count H2s, statutes and `_roden_*` keys. A page missing all
+three is unfinished, not mis-typed.
 
-Apply the same conversion to other proven rule topics currently sitting in `/blog/`.
+### 6.1 — The car-seat evidence rule, found while verifying Step 2
+
+Checking Georgia's statute surfaced a false statement of law on the **South
+Carolina** page — the site's best-performing resource:
+
+| | Statute | Rule |
+|---|---|---|
+| South Carolina | § 56-5-6460 | Not negligence per se, not contributory negligence, **and not admissible as evidence in any civil action** |
+| Georgia | § 40-8-76(c) | "shall not constitute negligence per se nor contributory negligence per se" — **no admissibility bar** |
+
+The SC page said an insurer "may try to raise that as comparative fault," on
+**three of the four surfaces** — body, `_roden_faqs` (also published as FAQPage
+structured data) and `_roden_key_takeaways`. Corrected 2026-08-31; class re-sweep
+returned 0 survivals.
+
+**The lesson for the rest of this plan:** every page upgraded under Tracks A–C
+should have its legal claims verified against the statute, not carried forward.
+Two of the three legal statements on the Georgia stub were wrong or absent. Assume
+the same rate elsewhere, and note that a *sibling* page is the most likely place
+for a contradicting error to be hiding.
 
 ### B3 — The genuinely missing pages (verified across slug + title + excerpt)
 

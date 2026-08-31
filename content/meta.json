@@ -4081,10 +4081,36 @@
         "/blog/georgia-car-seat-law-overview/": {
             "type": "post",
             "status": "publish",
-            "title": "Georgia Car Seat Law Overview",
-            "excerpt": "",
+            "title": "Georgia Car Seat and Booster Seat Laws",
+            "excerpt": "Georgia requires a child restraint for every child under 8 (O.C.G.A. § 40-8-76), in a rear seat, with narrow exceptions. Reviewed by a Georgia attorney.",
             "meta": {
-                "_roden_author_attorney": "Eric Roden"
+                "_roden_author_attorney": "Eric Roden",
+                "_roden_faqs": [
+                    {
+                        "question": "What are the car seat laws in Georgia?",
+                        "answer": "O.C.G.A. § 40-8-76 requires every driver transporting a child under eight years of age in a passenger automobile, van or pickup truck to provide for the proper restraint of that child in a child passenger restraining system appropriate for the child's height and weight and approved by the U.S. Department of Transportation under Federal Motor Vehicle Safety Standard 213. The child must be restrained in a rear seat, with narrow exceptions. A child whose height is over 4 feet 9 inches is instead restrained by a safety belt under O.C.G.A. § 40-8-76.1."
+                    },
+                    {
+                        "question": "Does my child have to ride in the back seat in Georgia?",
+                        "answer": "Generally yes. O.C.G.A. § 40-8-76 requires a child under eight to be properly restrained in a rear seat. The statute allows a child to be restrained in a front seat only if the vehicle has no rear seating position appropriate for correctly restraining a child, or all appropriate rear seating positions are occupied by other children. There is no weight threshold that permits front-seat riding."
+                    },
+                    {
+                        "question": "What is the 40-pound rule in Georgia's car seat law?",
+                        "answer": "It is often misstated as a front-seat rule. It is not. Under O.C.G.A. § 40-8-76, a child weighing at least 40 pounds may be secured by a lap belt only when the vehicle is not equipped with both lap and shoulder belts, or when every lap-and-shoulder belt other than the driver's is already being used to properly restrain other children. It governs which belt may be used, not where the child may sit."
+                    },
+                    {
+                        "question": "What is the fine for a car seat violation in Georgia?",
+                        "answer": "Under O.C.G.A. § 40-8-76, a first conviction carries a fine of not more than $50.00, and a second or subsequent conviction a fine of not more than $100.00. The statute provides that no court shall impose additional fees or surcharges on such a fine."
+                    },
+                    {
+                        "question": "Can a car seat violation be used against my child's injury claim in Georgia?",
+                        "answer": "O.C.G.A. § 40-8-76(c) provides that a violation \"shall not constitute negligence per se nor contributory negligence per se,\" so a violation does not by itself establish fault. Georgia's statute does not contain the broader evidentiary bar South Carolina's does. South Carolina is the stronger rule for families: under S.C. Code § 56-5-6460 a child-restraint violation is not admissible as evidence in any civil action at all. If your child was hurt in a crash, a Georgia attorney can explain how this applies to your case."
+                    }
+                ],
+                "_roden_jurisdiction": "ga",
+                "_roden_key_takeaways": "Georgia law (O.C.G.A. &sect; 40-8-76) requires every child under eight years old to be restrained in a child passenger restraining system appropriate for the child&rsquo;s height and weight, in a rear seat. A child may ride in front only if the vehicle has no rear seating position appropriate for restraining a child, or all appropriate rear positions are already occupied by other children &mdash; there is no weight condition for riding in front. A child taller than 4 feet 9 inches is restrained by a safety belt instead, under O.C.G.A. &sect; 40-8-76.1. A violation carries a fine of up to $50 for a first conviction and up to $100 for a second or subsequent conviction. Under &sect; 40-8-76(c) a violation is not negligence per se nor contributory negligence per se.",
+                "_roden_last_reviewed": "2026-08-31",
+                "_roden_meta_description": "Georgia requires a child restraint for every child under 8 (O.C.G.A. § 40-8-76), in a rear seat, with narrow exceptions. Reviewed by a Georgia attorney."
             }
         },
         "/blog/georgia-comparative-negligence-law/": {
@@ -26326,11 +26352,12 @@
                     },
                     {
                         "question": "Can not using a car seat hurt my child's injury claim in South Carolina?",
-                        "answer": "It can. If a child was not properly restrained, the at-fault driver's insurer may argue comparative fault to reduce what they owe, claiming the lack of a proper seat contributed to the injuries. South Carolina's modified comparative negligence rule means how fault is divided affects recovery, so properly restraining your child both keeps them safer and removes an argument insurers use against claims."
+                        "answer": "No. S.C. Code § 56-5-6460 provides that a violation of South Carolina's child-restraint article \"shall not constitute negligence, per se, contributory negligence nor be admissible as evidence in any trial of any civil action or trial.\" The at-fault driver's insurer cannot use a car-seat violation to argue comparative fault or to reduce your child's recovery. Georgia's law differs: O.C.G.A. § 40-8-76(c) provides only that a violation is not negligence per se or contributory negligence per se, with no equivalent bar on admissibility."
                     }
                 ],
                 "_roden_jurisdiction": "sc",
-                "_roden_key_takeaways": "South Carolina law (S.C. Code § 56-5-6410) requires children to be secured by age and size in four stages: rear-facing until at least age 2 (or until they outgrow the seat's height/weight limit), forward-facing with a harness after that, a belt-positioning booster once they outgrow the harness (generally from age 4), and a regular seat belt only once the child is at least 8 years old or at least 57 inches tall and the belt fits properly. The safest practice is to keep each child in every stage as long as the seat allows before moving up. Following the law protects your child and also protects an injury claim, because failing to restrain a child can be raised as comparative fault.",
+                "_roden_key_takeaways": "South Carolina law (S.C. Code § 56-5-6410) requires children to be secured by age and size in four stages: rear-facing until at least age 2 (or until they outgrow the seat's height/weight limit), forward-facing with a harness after that, a belt-positioning booster once they outgrow the harness (generally from age 4), and a regular seat belt only once the child is at least 8 years old or at least 57 inches tall and the belt fits properly. The safest practice is to keep each child in every stage as long as the seat allows before moving up. Following the law protects your child, and a violation cannot be used against a claim: S.C. Code &sect; 56-5-6460 makes a child-restraint violation inadmissible as evidence in any civil action. Georgia differs &mdash; O.C.G.A. &sect; 40-8-76(c) says only that a violation is not negligence per se or contributory negligence per se.",
+                "_roden_last_reviewed": "2026-08-31",
                 "_roden_meta_description": "A plain-English guide to South Carolina car seat and booster seat laws by age and size, plus how to keep your child safest on the road. Reviewed by a SC attorney."
             }
         },
