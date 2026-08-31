@@ -21,6 +21,7 @@ $GLOBALS['posts'] = array(
   10 => new WP_Post(10,0,'georgia','publish'),
   20 => new WP_Post(20,10,'savannah','publish'),
   30 => new WP_Post(30,20,'pooler','publish'),
+  40 => new WP_Post(40,0,'charleston-sc','publish'),   // a surviving intersection
 );
 function get_post($id){ return $GLOBALS['posts'][(int)$id] ?? null; }
 function get_post_status($id){ $p=get_post($id); return $p? $p->post_status : false; }
@@ -33,9 +34,9 @@ function add_filter(){} function add_action(){}
 function __($s,$d=''){ return $s; } function esc_html($s){ return $s; } function esc_html__($s,$d=''){ return $s; }
 require __DIR__ . '/../wordpress/wp-content/themes/roden-law/inc/content-guardrails.php';
 
-function try_publish($label,$data,$postarr,$expect){
+function try_publish($label,$data,$postarr,$expect,$fn='roden_guard_location_publish'){
   unset($GLOBALS['notice']);
-  $out = roden_guard_location_publish($data,$postarr);
+  $out = $fn($data,$postarr);
   $got = $out['post_status'];
   $ok  = ($got === $expect);
   printf("%s %-52s -> %-7s %s\n", $ok?'ok  ':'FAIL', $label, $got, $ok?'':"(expected $expect)");
@@ -55,6 +56,18 @@ $f += !try_publish('NEW sub-sub-city under pooler', array('post_type'=>'location
 $f += !try_publish('NEW page whose slug equals its parent', array('post_type'=>'location','post_status'=>'publish','post_parent'=>20,'post_name'=>'savannah'), array('ID'=>0), 'draft');
 // 6. NEW city-tier under a state — frozen
 $f += !try_publish('NEW city under georgia (freeze on)', array('post_type'=>'location','post_status'=>'publish','post_parent'=>10,'post_name'=>'brunswick'), array('ID'=>0), 'draft');
+// --- practice_area permutations, freeze still ON -------------------------------
+// 6b. editing a SURVIVING intersection must pass -- Track A rewrites all 175 in place
+$f += !try_publish('edit published intersection (charleston-sc)', array('post_type'=>'practice_area','post_status'=>'publish','post_parent'=>0,'post_name'=>'charleston-sc'), array('ID'=>40), 'publish', 'roden_guard_practice_permutation_publish');
+// 6c. NEW permutation in an office market -- frozen
+$f += !try_publish('NEW permutation, office city (freeze on)', array('post_type'=>'practice_area','post_status'=>'publish','post_parent'=>0,'post_name'=>'savannah-ga'), array('ID'=>0), 'draft', 'roden_guard_practice_permutation_publish');
+// 6d. a SUB-TYPE must not be mistaken for a permutation
+$f += !try_publish('NEW sub-type is not a permutation', array('post_type'=>'practice_area','post_status'=>'publish','post_parent'=>0,'post_name'=>'atv-rollover-accident'), array('ID'=>0), 'publish', 'roden_guard_practice_permutation_publish');
+// 6e. a PILLAR must not be caught either
+$f += !try_publish('NEW pillar is not a permutation', array('post_type'=>'practice_area','post_status'=>'publish','post_parent'=>0,'post_name'=>'car-accident-lawyers'), array('ID'=>0), 'publish', 'roden_guard_practice_permutation_publish');
+// 6f. a location post is not this guard's business
+$f += !try_publish('location post ignored by practice guard', array('post_type'=>'location','post_status'=>'publish','post_parent'=>20,'post_name'=>'ardsley-park'), array('ID'=>0), 'publish', 'roden_guard_practice_permutation_publish');
+
 // 7. same, freeze lifted
 define('RODEN_LOCATION_FREEZE', false);
 $f += !try_publish('NEW city under georgia (freeze LIFTED)', array('post_type'=>'location','post_status'=>'publish','post_parent'=>10,'post_name'=>'brunswick'), array('ID'=>0), 'publish');
@@ -64,5 +77,15 @@ $f += !try_publish('NEW sub-city (freeze LIFTED) still banned', array('post_type
 $f += !try_publish('blog post is not a location', array('post_type'=>'post','post_status'=>'publish','post_parent'=>0,'post_name'=>'x'), array('ID'=>0), 'publish');
 // 10. saving a location as draft is untouched
 $f += !try_publish('saving a location as draft', array('post_type'=>'location','post_status'=>'draft','post_parent'=>20,'post_name'=>'y'), array('ID'=>0), 'draft');
+// --- practice_area permutations, freeze LIFTED ---------------------------------
+// 11. office-city permutation becomes publishable once the freeze is lifted
+$f += !try_publish('NEW permutation, office city (freeze LIFTED)', array('post_type'=>'practice_area','post_status'=>'publish','post_parent'=>0,'post_name'=>'columbia-sc'), array('ID'=>0), 'publish', 'roden_guard_practice_permutation_publish');
+// 12. NON-office city stays refused even with the freeze lifted -- rule 7's class.
+//     This is the practice-area mirror of case 8: lifting a freeze must not quietly
+//     lift the harder rule sitting behind it.
+$f += !try_publish('NEW permutation, NON-office city (freeze LIFTED)', array('post_type'=>'practice_area','post_status'=>'publish','post_parent'=>0,'post_name'=>'beaufort-sc'), array('ID'=>0), 'draft', 'roden_guard_practice_permutation_publish');
+// 13. saving a permutation as a draft is untouched
+$f += !try_publish('saving a permutation as draft', array('post_type'=>'practice_area','post_status'=>'draft','post_parent'=>0,'post_name'=>'beaufort-sc'), array('ID'=>0), 'draft', 'roden_guard_practice_permutation_publish');
+
 printf("\n%d failures\n",$f);
 exit($f?1:0);

@@ -689,6 +689,109 @@ function roden_seo_auto_desc_blog( $post_id, $title, $firm ) {
 }
 
 /* ==========================================================================
+   2b. EXCERPT HYGIENE — keep navigation furniture out of auto-excerpts
+   ========================================================================== */
+
+add_filter( 'get_the_excerpt', 'roden_excerpt_strip_nav', 9, 2 );
+/**
+ * Generate the auto-excerpt from content that has had its <nav> stripped.
+ *
+ * WHY THIS EXISTS. 126 published posts were publishing their own table of
+ * contents as their description — on two surfaces at once:
+ *
+ *   <meta name="description">  via roden_seo_get_description()
+ *   Article schema description  via roden_schema_article()
+ *
+ * Both read get_the_excerpt(). When post_excerpt is empty WordPress generates
+ * one from post_content, and 124 of these posts open with a hand-authored
+ * <nav class="toc-box"> — so the description read "Table of Contents What Is a
+ * Super Speeder in Georgia? How the Super Speeder Law Works..." The TOC is
+ * authored into post_content by editors in the classic editor; nothing in this
+ * theme emits it, so there is no template-side source to fix. Excerpt time is
+ * the correct layer.
+ *
+ * WHY NOT THE EXISTING GUARD. roden_seo_get_description() already tries to
+ * detect an auto-generated excerpt:
+ *
+ *     if ( $excerpt && $excerpt !== wp_trim_words( get_the_content(), 55, '' ) )
+ *
+ * It cannot work. get_the_excerpt() appends the excerpt_more suffix (" [...]")
+ * and this comparison builds its candidate with '' as the more-text, so the two
+ * strings never match and the branch always passes the excerpt through. That
+ * bug is left alone deliberately: repairing it would swap hundreds of pages
+ * from their excerpt to roden_seo_auto_description() in one deploy, which is a
+ * much larger behavioural change than the defect being fixed here. Once the
+ * excerpt is clean the guard passing through is the RIGHT outcome anyway.
+ *
+ * Runs at priority 9, ahead of core's wp_trim_excerpt() at 10: returning a
+ * non-empty string short-circuits it, because it only generates when the text
+ * it receives is blank.
+ *
+ * Deliberately inert unless there is something to strip. A post with no <nav>
+ * returns untouched and takes core's ordinary path, so this changes the output
+ * of exactly the posts that carry navigation furniture and nothing else.
+ *
+ * @param string       $excerpt The post excerpt (raw post_excerpt at this priority).
+ * @param WP_Post|null $post    The post object.
+ * @return string
+ */
+function roden_excerpt_strip_nav( $excerpt, $post = null ) {
+    static $running = false;
+
+    // A hand-written excerpt always wins; there is nothing to generate.
+    if ( '' !== trim( (string) $excerpt ) ) {
+        return $excerpt;
+    }
+
+    // apply_filters( 'the_content' ) below can reach code that calls
+    // get_the_excerpt(). Without this the pair would recurse.
+    if ( $running ) {
+        return $excerpt;
+    }
+
+    $post = get_post( $post );
+    if ( ! $post instanceof WP_Post ) {
+        return $excerpt;
+    }
+
+    $content = get_the_content( '', false, $post );
+    $cleaned = preg_replace( '#<nav\b[^>]*>.*?</nav>#is', ' ', $content );
+
+    // preg_replace() returns null on failure (e.g. backtrack limit). Treat any
+    // non-string, and any post that had no <nav>, as "not ours" and let core run.
+    if ( ! is_string( $cleaned ) || $cleaned === $content ) {
+        return $excerpt;
+    }
+
+    $running = true;
+
+    // Mirror wp_trim_excerpt()'s pipeline so the only difference is the input.
+    $cleaned = strip_shortcodes( $cleaned );
+    if ( function_exists( 'excerpt_remove_blocks' ) ) {
+        $cleaned = excerpt_remove_blocks( $cleaned );
+    }
+    if ( function_exists( 'excerpt_remove_footnotes' ) ) {
+        $cleaned = excerpt_remove_footnotes( $cleaned );
+    }
+
+    // Core unhooks this for the same reason: excerpt tags are stripped anyway,
+    // and running it here would do image work for text that is about to be
+    // discarded.
+    remove_filter( 'the_content', 'wp_filter_content_tags', 12 );
+    $cleaned = apply_filters( 'the_content', $cleaned );
+    add_filter( 'the_content', 'wp_filter_content_tags', 12 );
+
+    $cleaned = str_replace( ']]>', ']]&gt;', $cleaned );
+
+    $length = (int) apply_filters( 'excerpt_length', (int) _x( '55', 'excerpt_length' ) );
+    $more   = apply_filters( 'excerpt_more', ' ' . '[&hellip;]' );
+
+    $running = false;
+
+    return wp_trim_words( $cleaned, $length, $more );
+}
+
+/* ==========================================================================
    3. OPEN GRAPH TAGS
    ========================================================================== */
 

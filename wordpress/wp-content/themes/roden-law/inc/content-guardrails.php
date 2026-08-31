@@ -32,9 +32,37 @@
  * slug equals its parent's produces /locations/georgia/darien/darien/, a duplicate
  * of a guardrail-protected office hub. Three such drafts exist today.
  *
+ * ---------------------------------------------------------------------------
+ * SECOND POST TYPE, ADDED 2026-08-31: practice_area city permutations.
+ *
+ * The rules above only ever tested `'location' !== $data['post_type']`, so the
+ * OTHER half of the doorway layer was never fenced. Phase 1 of the preemption
+ * plan removed city x practice permutations under rules 5 and 7, and
+ * KNOWLEDGE-BASE-PLAN-rodenlaw.md sec.10 flagged the hole: nothing stopped
+ * /{practice}-lawyers/{city}-{st}/ being published again the next morning.
+ *
+ * A permutation is identified by its slug, not its depth: all 175 surviving
+ * intersections end in one of the six office-city suffixes (charleston-sc,
+ * north-charleston-sc, columbia-sc, myrtle-beach-sc, savannah-ga, darien-ga)
+ * and none of the 230 sub-type pages does. Verified against content/meta.json
+ * on 2026-08-31: 175 matches, zero false positives.
+ *
+ * The same two-lifetime split applies, for the same reason:
+ *
+ *   1. A permutation for a city with NO office is refused outright. That is
+ *      Phase 1 rule 7's class -- the pages that were 301'd to the statewide
+ *      practice page. Opening a seventh office is a code change to
+ *      roden_office_city_slugs(), which is a reviewed act, not a checkbox.
+ *
+ *   2. A permutation for an office city is FROZEN behind RODEN_LOCATION_FREEZE,
+ *      the same constant the location tier uses. Both gates answer one question
+ *      -- "are we opening new geography?" -- so they lift together rather than
+ *      making an editor discover a second constant halfway through.
+ *
  * Nothing here touches already-published posts. It gates the transition to
- * 'publish', so the 43 surviving city-tier pages and the six office hubs are
- * unaffected, and an editor updating one of them is unaffected too.
+ * 'publish', so the 43 surviving city-tier pages, the six office hubs and all
+ * 175 intersections stay editable -- which Track A of the knowledge-base plan
+ * depends on, because it rewrites those 175 in place.
  *
  * @package RodenLaw
  */
@@ -155,6 +183,109 @@ function roden_guard_location_publish( $data, $postarr ) {
     return $data;
 }
 add_filter( 'wp_insert_post_data', 'roden_guard_location_publish', 10, 2 );
+
+/**
+ * The six office-city slugs a practice_area permutation may legitimately use.
+ *
+ * Deliberately a function rather than a constant so opening a seventh office is
+ * a diff someone reviews. Every one of the 175 surviving intersections uses one
+ * of these; no sub-type page does.
+ *
+ * @return string[] Lower-case slugs.
+ */
+function roden_office_city_slugs() {
+    $slugs = array(
+        'charleston-sc',
+        'north-charleston-sc',
+        'columbia-sc',
+        'myrtle-beach-sc',
+        'savannah-ga',
+        'darien-ga',
+    );
+
+    /**
+     * Filter the office-city slug list.
+     *
+     * @param string[] $slugs Office-city slugs.
+     */
+    return (array) apply_filters( 'roden_office_city_slugs', $slugs );
+}
+
+/**
+ * Is this practice_area slug a city permutation, and if so which city?
+ *
+ * Matches the trailing state suffix rather than a list of city names, so a new
+ * non-office city (beaufort-sc, pooler-ga) is caught as a permutation and then
+ * refused by the caller -- rather than sailing through because it is unknown.
+ *
+ * @param string $slug Post slug.
+ * @return string City slug, or '' if this is not a permutation.
+ */
+function roden_practice_city_slug( $slug ) {
+    $slug = strtolower( (string) $slug );
+
+    return preg_match( '/-(ga|sc)$/', $slug ) ? $slug : '';
+}
+
+/**
+ * Refuse to publish a city x practice permutation the plan forbids.
+ *
+ * Sibling of roden_guard_location_publish() rather than a branch inside it: the
+ * two post types have different identifying logic (parent depth vs. slug suffix)
+ * and merging them would obscure both. They share only the notice transient.
+ *
+ * @param array $data    Sanitised post data about to be written.
+ * @param array $postarr Raw post data.
+ * @return array
+ */
+function roden_guard_practice_permutation_publish( $data, $postarr ) {
+    if ( empty( $data['post_type'] ) || 'practice_area' !== $data['post_type'] ) {
+        return $data;
+    }
+    if ( empty( $data['post_status'] ) || 'publish' !== $data['post_status'] ) {
+        return $data;
+    }
+
+    $id = isset( $postarr['ID'] ) ? (int) $postarr['ID'] : 0;
+
+    /*
+     * Already published: this is an edit to one of the 175 survivors, not a new
+     * permutation. Track A rewrites every one of them in place, so this branch
+     * is load-bearing rather than defensive.
+     */
+    if ( $id && 'publish' === get_post_status( $id ) ) {
+        return $data;
+    }
+
+    $city = roden_practice_city_slug( isset( $data['post_name'] ) ? $data['post_name'] : '' );
+
+    // Not a permutation -- a pillar or a sub-type. Sub-types are not fenced.
+    if ( '' === $city ) {
+        return $data;
+    }
+
+    if ( ! in_array( $city, roden_office_city_slugs(), true ) ) {
+        $reason = sprintf(
+            /* translators: %s: city slug, e.g. beaufort-sc. */
+            __( 'City-and-practice pages are only defensible in the six office markets, and "%s" is not one of them. This is the page type Phase 1 rule 7 redirected to the statewide practice page. Point the content at the statewide page instead, or add the city to roden_office_city_slugs() if an office has opened. Kept as a draft.', 'roden-law' ),
+            $city
+        );
+    } elseif ( roden_location_freeze_active() ) {
+        $reason = sprintf(
+            /* translators: %s: city slug, e.g. charleston-sc. */
+            __( 'New city-and-practice permutations are frozen for the duration of the SEO recovery, including in office markets like "%s". The 175 that survived the cull stay editable; new ones do not get created. To publish anyway, define RODEN_LOCATION_FREEZE false in wp-config.php, publish, and set it back. Kept as a draft.', 'roden-law' ),
+            $city
+        );
+    } else {
+        return $data;
+    }
+
+    $data['post_status'] = 'draft';
+    set_transient( 'roden_guard_notice_' . get_current_user_id(), $reason, 60 );
+
+    return $data;
+}
+add_filter( 'wp_insert_post_data', 'roden_guard_practice_permutation_publish', 10, 2 );
 
 /**
  * Surface the refusal in wp-admin.
