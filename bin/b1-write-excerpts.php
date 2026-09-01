@@ -60,6 +60,24 @@ $EXCERPTS = array(
     'insurance-company-ignoring-demand-letter'            => 'Why insurers ignore or delay a demand letter after a personal injury claim, what the silence usually means, and the steps that get a response.',
     'diminished-value-claims-after-car-accident'          => 'A repaired car is worth less than it was. How diminished value claims work in Georgia and South Carolina, and why an appraisal beats the 17c formula.',
     'are-red-light-runners-always-liable-if-they-crash'   => 'Not automatically. How fault is actually decided in Georgia and South Carolina red light crashes, and when the other driver shares the blame.',
+
+    // ---- batch 2, added 2026-09-01: the next 16 by impressions ----
+    'when-does-a-sprained-ankle-become-a-work-injury'     => 'When a sprained ankle at work qualifies for workers\' compensation, how to document it, and why insurers treat soft-tissue injuries with suspicion.',
+    'using-uninsured-underinsured-motorist-coverage-in-georgia' => 'How uninsured and underinsured motorist coverage works in Georgia and South Carolina when the at-fault driver has no insurance or too little.',
+    'impaired-driving-caused-by-prescription-medications' => 'Prescription drugs can impair driving as much as alcohol. Which medications carry the risk, and what it means for fault after a crash.',
+    'gym-injury-liability'                               => 'Who is liable when you are hurt at a gym — the facility, a trainer, or an equipment maker — and what a signed waiver does and does not cover.',
+    'contingency-fee-system'                             => 'How contingency fees work in Georgia and South Carolina injury claims: no upfront cost, the lawyer paid from the recovery, and what the agreement must say.',
+    'georgia-statute-of-limitations'                     => 'How long you have to file a personal injury lawsuit in Georgia and South Carolina, plus the exceptions that shorten or extend the deadline.',
+    'answering-insurance-questions-after-crash'          => 'What to say — and what not to say — when an insurance adjuster calls after a crash in Georgia or South Carolina, and why recorded statements are risky.',
+    'how-car-insurers-use-private-investigators'         => 'Insurers hire private investigators to watch injury claimants. What surveillance is legal in Georgia and South Carolina, and how to protect your claim.',
+    'independent-medical-exams'                          => 'An independent medical exam is arranged by the insurer, not your doctor. What an IME is for, what to expect, and how its report can be challenged.',
+    'what-happens-if-i-resign-while-on-workers-compensation' => 'Resigning does not automatically end workers\' comp benefits in Georgia or South Carolina — but it puts wage replacement at risk. What actually changes.',
+    'burn-injury-workers-compensation'                   => 'How workers\' compensation covers burn injuries — treatment, wage replacement, and permanent scarring — and what makes these claims harder to settle.',
+    'impact-of-surgery-recommendation'                   => 'How a surgery recommendation changes a personal injury claim: what it does to case value, and why insurers scrutinise the decision so closely.',
+    'determining-liability-for-crash-at-four-way-stop-sign' => 'Who is at fault in a four-way stop crash in Savannah? How right of way is decided, and what evidence settles a disputed intersection claim.',
+    'negligence-vs-gross-negligence'                     => 'Ordinary negligence is carelessness; gross negligence is conscious disregard. How that difference changes a car accident claim in Georgia and South Carolina.',
+    'does-workers-compensation-cover-prescriptions'      => 'Workers\' compensation covers prescription medication for a work injury in Georgia and South Carolina. What is covered, and what to do when the insurer refuses.',
+    'claims-for-lost-wages'                              => 'Lost wages and lost earning capacity are different claims. How to prove each after an injury in Georgia or South Carolina, and what documentation you need.',
 );
 
 $backups = array();

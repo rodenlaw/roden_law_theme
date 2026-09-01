@@ -1,0 +1,70 @@
+{
+ "applied_at": "2026-09-01",
+ "note": "Track B1 second pass: post_excerpt was EMPTY on all 16 of these pages. post_excerpt is both the meta description and the Article schema description. Restore by setting post_excerpt back to empty string.",
+ "posts": {
+  "1652": {
+   "url": "https://rodenlaw.com/blog/when-does-a-sprained-ankle-become-a-work-injury/",
+   "post_excerpt": ""
+  },
+  "1757": {
+   "url": "https://rodenlaw.com/blog/using-uninsured-underinsured-motorist-coverage-in-georgia/",
+   "post_excerpt": ""
+  },
+  "2875": {
+   "url": "https://rodenlaw.com/blog/impaired-driving-caused-by-prescription-medications/",
+   "post_excerpt": ""
+  },
+  "1849": {
+   "url": "https://rodenlaw.com/blog/gym-injury-liability/",
+   "post_excerpt": ""
+  },
+  "1753": {
+   "url": "https://rodenlaw.com/blog/contingency-fee-system/",
+   "post_excerpt": ""
+  },
+  "1840": {
+   "url": "https://rodenlaw.com/blog/georgia-statute-of-limitations/",
+   "post_excerpt": ""
+  },
+  "1657": {
+   "url": "https://rodenlaw.com/blog/answering-insurance-questions-after-crash/",
+   "post_excerpt": ""
+  },
+  "1709": {
+   "url": "https://rodenlaw.com/blog/how-car-insurers-use-private-investigators/",
+   "post_excerpt": ""
+  },
+  "1723": {
+   "url": "https://rodenlaw.com/blog/independent-medical-exams/",
+   "post_excerpt": ""
+  },
+  "1697": {
+   "url": "https://rodenlaw.com/blog/what-happens-if-i-resign-while-on-workers-compensation/",
+   "post_excerpt": ""
+  },
+  "1841": {
+   "url": "https://rodenlaw.com/blog/burn-injury-workers-compensation/",
+   "post_excerpt": ""
+  },
+  "1656": {
+   "url": "https://rodenlaw.com/blog/impact-of-surgery-recommendation/",
+   "post_excerpt": ""
+  },
+  "2401": {
+   "url": "https://rodenlaw.com/blog/determining-liability-for-crash-at-four-way-stop-sign/",
+   "post_excerpt": ""
+  },
+  "1756": {
+   "url": "https://rodenlaw.com/blog/negligence-vs-gross-negligence/",
+   "post_excerpt": ""
+  },
+  "1674": {
+   "url": "https://rodenlaw.com/blog/does-workers-compensation-cover-prescriptions/",
+   "post_excerpt": ""
+  },
+  "1706": {
+   "url": "https://rodenlaw.com/blog/claims-for-lost-wages/",
+   "post_excerpt": ""
+  }
+ }
+}
