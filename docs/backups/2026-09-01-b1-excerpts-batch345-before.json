@@ -1,0 +1,198 @@
+{
+ "applied_at": "2026-09-01",
+ "note": "Track B1 batches 3-5: post_excerpt was EMPTY on all 48 of these pages. post_excerpt is both the meta description and the Article schema description. Restore by setting post_excerpt back to empty string.",
+ "posts": {
+  "1822": {
+   "url": "https://rodenlaw.com/blog/four-common-construction-accidents/",
+   "post_excerpt": ""
+  },
+  "2556": {
+   "url": "https://rodenlaw.com/blog/blunt-force-trauma-from-a-crash-what-you-need-to-know/",
+   "post_excerpt": ""
+  },
+  "1671": {
+   "url": "https://rodenlaw.com/blog/what-to-do-when-you-are-in-a-car-accident/",
+   "post_excerpt": ""
+  },
+  "1722": {
+   "url": "https://rodenlaw.com/blog/demand-letters-in-personal-injury-cases/",
+   "post_excerpt": ""
+  },
+  "2701": {
+   "url": "https://rodenlaw.com/blog/dangers-of-emotional-driving-in-savannah-ga/",
+   "post_excerpt": ""
+  },
+  "1708": {
+   "url": "https://rodenlaw.com/blog/switching-lawyers-during-a-case/",
+   "post_excerpt": ""
+  },
+  "1707": {
+   "url": "https://rodenlaw.com/blog/liability-for-sudden-emergency-accidents/",
+   "post_excerpt": ""
+  },
+  "1766": {
+   "url": "https://rodenlaw.com/blog/georgia-law-on-steps-after-car-accident/",
+   "post_excerpt": ""
+  },
+  "1715": {
+   "url": "https://rodenlaw.com/blog/car-insurance-add-ons/",
+   "post_excerpt": ""
+  },
+  "4537": {
+   "url": "https://rodenlaw.com/blog/myrtle-beach-dangerous-roads-intersections/",
+   "post_excerpt": ""
+  },
+  "1838": {
+   "url": "https://rodenlaw.com/blog/georgia-comparative-negligence-law/",
+   "post_excerpt": ""
+  },
+  "1851": {
+   "url": "https://rodenlaw.com/blog/much-worth-ga-worker-compared-states/",
+   "post_excerpt": ""
+  },
+  "3239": {
+   "url": "https://rodenlaw.com/blog/uturn-crash-liability-in-charleston/",
+   "post_excerpt": ""
+  },
+  "2479": {
+   "url": "https://rodenlaw.com/blog/liability-for-crash-due-to-tire-blowout-in-savannah/",
+   "post_excerpt": ""
+  },
+  "3386": {
+   "url": "https://rodenlaw.com/blog/wearing-headphones-while-driving-in-charleston/",
+   "post_excerpt": ""
+  },
+  "2388": {
+   "url": "https://rodenlaw.com/blog/leg-pain-and-leg-injuries-from-crash/",
+   "post_excerpt": ""
+  },
+  "1738": {
+   "url": "https://rodenlaw.com/blog/liability-for-accidents-with-borrowed-vehicles/",
+   "post_excerpt": ""
+  },
+  "1748": {
+   "url": "https://rodenlaw.com/blog/damage-coverage-for-stolen-car/",
+   "post_excerpt": ""
+  },
+  "1823": {
+   "url": "https://rodenlaw.com/blog/driving-tips-around-trucks/",
+   "post_excerpt": ""
+  },
+  "1659": {
+   "url": "https://rodenlaw.com/blog/releasing-medical-records/",
+   "post_excerpt": ""
+  },
+  "1730": {
+   "url": "https://rodenlaw.com/blog/liability-waivers-and-injury-lawsuits/",
+   "post_excerpt": ""
+  },
+  "1712": {
+   "url": "https://rodenlaw.com/blog/letters-of-protection-for-injury-victims/",
+   "post_excerpt": ""
+  },
+  "1780": {
+   "url": "https://rodenlaw.com/blog/rear-end-collision-liability/",
+   "post_excerpt": ""
+  },
+  "1650": {
+   "url": "https://rodenlaw.com/blog/benefits-for-workplace-violence/",
+   "post_excerpt": ""
+  },
+  "1864": {
+   "url": "https://rodenlaw.com/blog/dangerous-tools-garage/",
+   "post_excerpt": ""
+  },
+  "4584": {
+   "url": "https://rodenlaw.com/blog/average-personal-injury-settlement-amounts/",
+   "post_excerpt": ""
+  },
+  "1690": {
+   "url": "https://rodenlaw.com/blog/does-worker-compensation-cover-employee-negligence/",
+   "post_excerpt": ""
+  },
+  "1746": {
+   "url": "https://rodenlaw.com/blog/animal-accident-insurance-coverage/",
+   "post_excerpt": ""
+  },
+  "1830": {
+   "url": "https://rodenlaw.com/blog/truck-accident-injuries/",
+   "post_excerpt": ""
+  },
+  "1714": {
+   "url": "https://rodenlaw.com/blog/accident-claims-with-an-expired-license/",
+   "post_excerpt": ""
+  },
+  "1717": {
+   "url": "https://rodenlaw.com/blog/resolving-claims-through-arbitration/",
+   "post_excerpt": ""
+  },
+  "1702": {
+   "url": "https://rodenlaw.com/blog/maximum-medical-improvement-in-an-injury-claim/",
+   "post_excerpt": ""
+  },
+  "1824": {
+   "url": "https://rodenlaw.com/blog/informed-consent/",
+   "post_excerpt": ""
+  },
+  "1710": {
+   "url": "https://rodenlaw.com/blog/understanding-vicarious-liability/",
+   "post_excerpt": ""
+  },
+  "1720": {
+   "url": "https://rodenlaw.com/blog/options-for-denied-injury-claims/",
+   "post_excerpt": ""
+  },
+  "2398": {
+   "url": "https://rodenlaw.com/blog/why-mitigate-damages-after-a-car-crash/",
+   "post_excerpt": ""
+  },
+  "4589": {
+   "url": "https://rodenlaw.com/blog/what-to-do-after-car-accident-georgia/",
+   "post_excerpt": ""
+  },
+  "1745": {
+   "url": "https://rodenlaw.com/blog/certification-of-permanent-injury/",
+   "post_excerpt": ""
+  },
+  "2500": {
+   "url": "https://rodenlaw.com/blog/what-to-do-if-your-georgia-police-report-is-wrong-or-has-mistakes/",
+   "post_excerpt": ""
+  },
+  "1684": {
+   "url": "https://rodenlaw.com/blog/is-workers-compensation-an-employee-benefit/",
+   "post_excerpt": ""
+  },
+  "2658": {
+   "url": "https://rodenlaw.com/blog/liability-for-crashes-caused-by-not-using-turn-signal/",
+   "post_excerpt": ""
+  },
+  "1839": {
+   "url": "https://rodenlaw.com/blog/steps-after-hit-and-run-accident/",
+   "post_excerpt": ""
+  },
+  "2944": {
+   "url": "https://rodenlaw.com/blog/feeling-fatigued-after-charleston-car-accident/",
+   "post_excerpt": ""
+  },
+  "1878": {
+   "url": "https://rodenlaw.com/blog/workers-comp-benefits-georgia-taxable/",
+   "post_excerpt": ""
+  },
+  "4562": {
+   "url": "https://rodenlaw.com/blog/medical-malpractice-limits-south-carolina/",
+   "post_excerpt": ""
+  },
+  "1811": {
+   "url": "https://rodenlaw.com/blog/recovering-damages-with-pre-existing-injuries/",
+   "post_excerpt": ""
+  },
+  "1806": {
+   "url": "https://rodenlaw.com/blog/filing-medication-error-lawsuit/",
+   "post_excerpt": ""
+  },
+  "1676": {
+   "url": "https://rodenlaw.com/blog/medical-malpractice-limits-georgia/",
+   "post_excerpt": ""
+  }
+ }
+}
