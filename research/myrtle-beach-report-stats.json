@@ -1,0 +1,225 @@
+{
+ "source": "NHTSA FARS national annual files 2020-2024",
+ "scope": "Fatal crashes only, Horry County SC (Myrtle Beach / Grand Strand)",
+ "years": [
+  "2020",
+  "2021",
+  "2022",
+  "2023",
+  "2024"
+ ],
+ "horry": {
+  "crashes": 328,
+  "deaths": 347,
+  "share_of_sc_crashes_pct": 6.5
+ },
+ "georgetown": {
+  "crashes": 77,
+  "deaths": 84
+ },
+ "south_carolina": {
+  "crashes": 5019,
+  "deaths": 5443
+ },
+ "by_year": {
+  "2020": {
+   "horry_crashes": 56,
+   "horry_deaths": 63,
+   "sc_crashes": 964,
+   "sc_deaths": 1066
+  },
+  "2021": {
+   "horry_crashes": 73,
+   "horry_deaths": 80,
+   "sc_crashes": 1112,
+   "sc_deaths": 1198
+  },
+  "2022": {
+   "horry_crashes": 78,
+   "horry_deaths": 80,
+   "sc_crashes": 1019,
+   "sc_deaths": 1094
+  },
+  "2023": {
+   "horry_crashes": 64,
+   "horry_deaths": 66,
+   "sc_crashes": 976,
+   "sc_deaths": 1047
+  },
+  "2024": {
+   "horry_crashes": 57,
+   "horry_deaths": 58,
+   "sc_crashes": 948,
+   "sc_deaths": 1038
+  }
+ },
+ "seasonality": {
+  "horry_summer_crashes": 74,
+  "horry_summer_pct": 22.6,
+  "sc_summer_pct": 26.1,
+  "expected_pct_if_flat": 25.0,
+  "horry_by_month": {
+   "1": 20,
+   "2": 19,
+   "3": 28,
+   "4": 28,
+   "5": 36,
+   "6": 23,
+   "7": 27,
+   "8": 24,
+   "9": 22,
+   "10": 40,
+   "11": 27,
+   "12": 34
+  },
+  "sc_by_month": {
+   "1": 341,
+   "2": 367,
+   "3": 396,
+   "4": 398,
+   "5": 448,
+   "6": 446,
+   "7": 423,
+   "8": 442,
+   "9": 416,
+   "10": 487,
+   "11": 429,
+   "12": 426
+  }
+ },
+ "pedestrian": {
+  "horry_crashes": 93,
+  "horry_pct": 28.4,
+  "sc_pct": 20.2
+ },
+ "roads": [
+  {
+   "road": "US-17",
+   "crashes": 39
+  },
+  {
+   "road": "US-501",
+   "crashes": 23
+  },
+  {
+   "road": "SR-9",
+   "crashes": 9
+  },
+  {
+   "road": "US-701",
+   "crashes": 9
+  },
+  {
+   "road": "SR-9 HWY 9",
+   "crashes": 8
+  },
+  {
+   "road": "US-501 HWY 501",
+   "crashes": 8
+  },
+  {
+   "road": "SR-90",
+   "crashes": 6
+  },
+  {
+   "road": "SR-905",
+   "crashes": 6
+  },
+  {
+   "road": "SR-31 CAROLINA BAYS PKWY",
+   "crashes": 6
+  },
+  {
+   "road": "US-17 S KINGS HWY",
+   "crashes": 6
+  },
+  {
+   "road": "SR-544",
+   "crashes": 5
+  },
+  {
+   "road": "SR-707",
+   "crashes": 5
+  }
+ ],
+ "land_use": {
+  "Urban": 187,
+  "Rural": 141
+ },
+ "intersection": {
+  "Not an Intersection": 237,
+  "Four-Way Intersection": 48,
+  "T-Intersection": 39,
+  "Y-Intersection": 2,
+  "Five Point, or More": 1,
+  "Other Intersection Type": 1
+ },
+ "hour": {
+  "0": 14,
+  "1": 21,
+  "2": 18,
+  "3": 11,
+  "4": 9,
+  "5": 14,
+  "6": 11,
+  "7": 14,
+  "8": 5,
+  "9": 9,
+  "10": 8,
+  "11": 2,
+  "12": 8,
+  "13": 10,
+  "14": 10,
+  "15": 13,
+  "16": 10,
+  "17": 20,
+  "18": 23,
+  "19": 15,
+  "20": 31,
+  "21": 22,
+  "22": 14,
+  "23": 16
+ },
+ "sc_counties_top": [
+  {
+   "county": "GREENVILLE (45)",
+   "crashes": 413
+  },
+  {
+   "county": "HORRY (51)",
+   "crashes": 328
+  },
+  {
+   "county": "CHARLESTON (19)",
+   "crashes": 322
+  },
+  {
+   "county": "SPARTANBURG (83)",
+   "crashes": 317
+  },
+  {
+   "county": "RICHLAND (79)",
+   "crashes": 301
+  },
+  {
+   "county": "LEXINGTON (63)",
+   "crashes": 233
+  },
+  {
+   "county": "BERKELEY (15)",
+   "crashes": 222
+  },
+  {
+   "county": "ANDERSON (7)",
+   "crashes": 214
+  },
+  {
+   "county": "ORANGEBURG (75)",
+   "crashes": 190
+  },
+  {
+   "county": "YORK (91)",
+   "crashes": 160
+  }
+ ]
+}
