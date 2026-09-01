@@ -1,0 +1,10 @@
+{
+ "applied_at": "2026-09-01",
+ "note": "Pre-fix _roden_last_reviewed values that predated their own post_date. That meta publishes as lastReviewed on the WebPage node (#85), so a date earlier than the post existed asserts a review that could not have happened. Set to each post publish date - the earliest date a review could have occurred, and the only value derivable from data. Restore from these values to revert.",
+ "posts": {
+  "5398": {
+   "url": "https://rodenlaw.com/resources/myrtle-beach-fatal-crashes/",
+   "_roden_last_reviewed": "2026-08-31"
+  }
+ }
+}
