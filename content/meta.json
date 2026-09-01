@@ -7,7 +7,7 @@
         "post",
         "page"
     ],
-    "_count": 1065,
+    "_count": 1066,
     "posts": {
         "/": {
             "type": "page",
@@ -6151,7 +6151,7 @@
                 "_roden_faqs": [
                     {
                         "question": "What is the most dangerous road in the Myrtle Beach area?",
-                        "answer": "U.S. 17 (Kings Highway) is ranked as South Carolina's most dangerous highway for summertime travel. Running through the heart of Myrtle Beach and the entire Grand Strand, it produces the highest volume of crashes in the region due to heavy tourist traffic, hundreds of commercial intersections, and frequent pedestrian crossings."
+                        "answer": "U.S. 17 (Kings Highway) carries more fatal crashes than any other route in Horry County — 39 between 2020 and 2024, against 23 on U.S. 501, according to NHTSA federal crash data. Running through the heart of Myrtle Beach and the entire Grand Strand, it combines heavy tourist traffic, hundreds of commercial intersections, and frequent pedestrian crossings."
                     },
                     {
                         "question": "What is the most dangerous intersection in Myrtle Beach?",
@@ -6162,8 +6162,8 @@
                         "answer": "Under S.C. Code § 15-3-530, you have three years from the date of your accident to file a personal injury lawsuit in South Carolina. If you are a Georgia resident injured in Myrtle Beach, be aware that Georgia's deadline is only two years under O.C.G.A. § 9-3-33."
                     },
                     {
-                        "question": "Why are Myrtle Beach roads so dangerous during summer?",
-                        "answer": "The Myrtle Beach area attracts over 20 million visitors annually, with traffic peaking between Memorial Day and Labor Day. The combination of unfamiliar tourist drivers, increased pedestrian activity, higher rates of impaired driving, and more motorcycles and bicycles on the road creates conditions where serious crashes spike dramatically during summer months."
+                        "question": "Are Myrtle Beach roads more dangerous in summer?",
+                        "answer": "Not for fatal crashes. Federal data for 2020–2024 shows 22.6% of Horry County's fatal crashes fell in June through August — below the 25% an even spread across the year would give, and below South Carolina's 26.1%. Summer brings far more traffic, unfamiliar drivers and pedestrian activity and produces more crashes overall, but the fatal ones are spread across the calendar, with October, May and December the worst months."
                     },
                     {
                         "question": "Can I file a claim if I was a tourist injured in a Myrtle Beach car accident?",
@@ -6174,7 +6174,8 @@
                         "answer": "Yes. South Carolina follows a modified comparative fault rule that allows recovery as long as you are less than 51% at fault. Your compensation is reduced by your percentage of responsibility. Georgia applies a similar rule with a slightly stricter threshold of less than 50% at fault under O.C.G.A. § 51-12-33."
                     }
                 ],
-                "_roden_key_takeaways": "The Myrtle Beach area's 20+ million annual visitors transform the Grand Strand into one of South Carolina's most dangerous driving environments. U.S. 17 ranks as the state's deadliest summer highway, while the U.S. 501/Carolina Forest Boulevard intersection leads the region in crashes. South Carolina's three-year statute of limitations (S.C. Code § 15-3-530) and comparative fault rule (less than 51% at fault) protect victims, including out-of-state tourists injured on Grand Strand roads."
+                "_roden_key_takeaways": "The Myrtle Beach area's 20+ million annual visitors transform the Grand Strand into one of South Carolina's most dangerous driving environments. U.S. 17 carries more fatal crashes than any other Horry County route (39 between 2020 and 2024, per federal data), and summer is not the deadliest season — 22.6% of fatal crashes fall in June through August, below an even spread. The U.S. 501/Carolina Forest Boulevard intersection leads the region in crashes. South Carolina's three-year statute of limitations (S.C. Code § 15-3-530) and comparative fault rule (less than 51% at fault) protect victims, including out-of-state tourists injured on Grand Strand roads.",
+                "_roden_last_reviewed": "2026-09-01"
             }
         },
         "/blog/n-lake-drive-dick-pond-road-sc-544-underinsured-motorist-lawyer/": {
@@ -26102,6 +26103,17 @@
                 ],
                 "_roden_jurisdiction": "ga",
                 "_roden_key_takeaways": "Logging trucks on US-17 and rural roads in McIntosh and Glynn counties create unique hazards: <strong>unsecured heavy timber on open trailers</strong>, slow operating speeds creating dangerous speed differentials, and debris shedding onto the roadway. FMCSA cargo securement regulations (<strong>49 CFR &sect; 393.116</strong>) set specific tie-down requirements for logs. Multiple parties may be liable including the truck driver, trucking company, loading crew, and timber harvesting company. Georgia provides <strong>2 years to file</strong> (<strong>O.C.G.A. &sect; 9-3-33</strong>) with recovery if less than <strong>50% at fault</strong>."
+            }
+        },
+        "/resources/myrtle-beach-fatal-crashes/": {
+            "type": "resource",
+            "status": "publish",
+            "title": "Grand Strand Fatal Crash Report: Horry County, 2020–2024",
+            "excerpt": "328 fatal crashes killed 347 people in Horry County, 2020–2024. Summer is not the deadliest season, and 28.4% involved a pedestrian.",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_jurisdiction": "sc",
+                "_roden_last_reviewed": "2026-08-31"
             }
         },
         "/resources/north-charleston-truck-accident-guide/": {
