@@ -127,72 +127,77 @@ The work is upgrading it, not commissioning it.
 
 ---
 
-## 5. Track A — harvest the intersections
+## 5. Track A — harvest the intersections — ❌ **TESTED AND ABANDONED 2026-09-01**
 
-Do **not** delete these. They hold 642,575 impressions of validated demand and the URLs
-carry ranking history. Rewrite the high-impression ones **in place** as answer-first
-two-state references, keeping the URL.
+> **Do not do this. The premise is wrong, and the test is cheap enough that it
+> should have been run before the section was written.**
 
-Value is concentrated, so this is 25 pieces of work, not 175:
+The plan assumed these pages convert at 0.011% because they read as sales pages,
+and that rewriting them as answer-first local references would capture their
+642,575 impressions. Measured across all **86 intersections with ≥500
+impressions**, page substance predicts nothing:
 
-- Top 10 carry **357,194** impressions (57%)
-- Top 25 carry **487,448** impressions (77%)
-- Top 40 carry **552,024** impressions (87%)
+| Predictor | corr. with CTR | corr. with position |
+|---|---:|---:|
+| Word count | **−0.051** | +0.026 |
+| H2 count | −0.095 | +0.013 |
+| FAQ count | +0.050 | +0.184 |
+| Statute citations | −0.038 | +0.013 |
 
-### The harvest list — top 25 EN intersections
+And the sign is backwards from the hypothesis:
 
-| # | Impr | Clicks | Pos | URL |
-|---:|---:|---:|---:|---|
-| 1 | 85,485 | 6 | 19.8 | `/car-accident-lawyers/charleston-sc/` |
-| 2 | 72,236 | 3 | 20.1 | `/car-accident-lawyers/savannah-ga/` |
-| 3 | 45,260 | 5 | 18.9 | `/car-accident-lawyers/columbia-sc/` |
-| 4 | 30,479 | 6 | 16.3 | `/medical-malpractice-lawyers/savannah-ga/` |
-| 5 | 28,168 | 2 | 19.2 | `/workers-compensation-lawyers/charleston-sc/` |
-| 6 | 25,361 | 0 | 13.7 | `/truck-accident-lawyers/charleston-sc/` |
-| 7 | 18,622 | 0 | 16.0 | `/motorcycle-accident-lawyers/charleston-sc/` |
-| 8 | 18,428 | 0 | 15.4 | `/wrongful-death-lawyers/charleston-sc/` |
-| 9 | 17,447 | 3 | 24.9 | `/medical-malpractice-lawyers/charleston-sc/` |
-| 10 | 15,708 | 2 | 54.1 | `/car-accident-lawyers/darien-ga/` |
-| 11 | 14,790 | 1 | 17.5 | `/slip-and-fall-lawyers/savannah-ga/` |
-| 12 | 13,549 | 1 | 18.7 | `/dog-bite-lawyers/charleston-sc/` |
-| 13 | 10,782 | 3 | 23.6 | `/product-liability-lawyers/columbia-sc/` |
-| 14 | 9,266 | 0 | 21.0 | `/workers-compensation-lawyers/columbia-sc/` |
-| 15 | 9,123 | 1 | 25.1 | `/motorcycle-accident-lawyers/columbia-sc/` |
-| 16 | 8,974 | 0 | 16.9 | `/pedestrian-accident-lawyers/charleston-sc/` |
-| 17 | 8,849 | 4 | 16.6 | `/workers-compensation-lawyers/myrtle-beach-sc/` |
-| 18 | 8,188 | 1 | 21.1 | `/boating-accident-lawyers/columbia-sc/` |
-| 19 | 7,617 | 0 | 10.8 | `/pedestrian-accident-lawyers/myrtle-beach-sc/` |
-| 20 | 7,553 | 0 | 17.1 | `/slip-and-fall-lawyers/charleston-sc/` |
-| 21 | 7,314 | 1 | 22.0 | `/truck-accident-lawyers/columbia-sc/` |
-| 22 | 6,768 | 1 | 39.9 | `/pedestrian-accident-lawyers/columbia-sc/` |
-| 23 | 6,071 | 0 | 10.8 | `/bicycle-accident-lawyers/myrtle-beach-sc/` |
-| 24 | 5,721 | 1 | 16.1 | `/dog-bite-lawyers/savannah-ga/` |
-| 25 | 5,689 | 2 | 16.7 | `/dog-bite-lawyers/columbia-sc/` |
+- **Longest 10 pages:** 15 clicks on 246,532 impressions — **0.006%**
+- **Shortest 10 pages:** 9 clicks on 69,871 impressions — **0.013%**
 
-### The rewrite pattern
+`/car-accident-lawyers/charleston-sc/` settles it on its own. It already does
+everything the rewrite pattern below prescribes — answer-first opener, the Ravenel
+Bridge and the I-26/I-526 interchange, Charleston County Court of Common Pleas,
+MUSC trauma routing, § 15-3-530 cited, six substantive FAQs, office NAP — and
+converts **6 clicks on 85,485 impressions**. `/car-accident-lawyers/savannah-ga/`
+is 2,236 words across 10 H2s and converts **3**.
 
-Each harvested page keeps its URL, title tag and commercial CTA, and gains — above the
-fold — the material that earns the click:
+**Honest caveat:** at position ~20 CTR is near zero for everything, so variance is
+compressed and a content effect could hide inside it. The load-bearing number is
+the position correlation — substance does not predict position either (r ≈ 0.02).
+A rewrite that cannot move position cannot pay, because position is what is
+suppressing CTR.
 
-1. **Answer-first opener** (≤ 60 words) naming the controlling statute for that state.
-2. **The local specific**: county court and venue, filing deadline with citation, the
+### What the constraint actually is
+
+Position ~20 on commercial local queries, where the SERP is map pack plus paid.
+That is set by local signals and domain authority, not page copy — and
+`STEINBERG-MODEL-PLAN-rodenlaw.md` §3 said so before this plan was written:
+*"Steinberg's SC car-accident and pedestrian studies earn the editorial links that
+let their templated town pages ride."* Their town pages ride on the engine. This
+site has 491 referring domains against Steinberg's 1,215, and no amount of prose
+on a city page closes that.
+
+### What to do with the 175 pages instead
+
+1. **Leave them.** They are not doorway pages, they cost nothing to keep, and the
+   ratio is 19.0%. Deleting them would forfeit 642,575 impressions of presence for
+   no gain.
+2. **Fix errors when found** — the accuracy passes reach them like any other page.
+3. **Re-test after the link engine moves.** If referring domains rise materially
+   and these pages climb into the top 10, CTR becomes worth optimising and the
+   rewrite pattern below becomes useful. Not before.
+
+### The rewrite pattern (retained for that future case, not for now)
+
+1. Answer-first opener (≤ 60 words) naming the controlling statute for that state.
+2. The local specific: county court and venue, filing deadline with citation, the
    fault rule that applies, local hazard data where a study exists.
-3. **A two-state contrast line** where GA and SC differ.
-4. **One table** of extractable facts (deadline, fault rule, cap, notice requirement).
-5. **Links out** to the relevant Track B reference and Track D study.
+3. A two-state contrast line where GA and SC differ.
+4. One table of extractable facts.
+5. Links out to the relevant Track B reference and Track D study.
 
-**Rule:** if two harvested pages read identically with the city swapped, neither is done.
+### Method note worth keeping
 
-### Tiers that are NOT harvested
-
-- **The 43 satellite towns** — best-performing location tier (position 12.1, 0.199% CTR,
-  every one earns clicks). Leave alone.
-- **The 6 office cities + 2 state hubs** — legitimate but weak (position 31.8). Separate
-  work: NAP matching GBP, county courts, market-specific results. Not this track.
-- **The 39 `/es/` intersections** (11,009 impr, 3 clicks) — harvest only after the
-  English twin ships, per the mirror rule.
-
----
+The test that killed this section is four lines of correlation over data already on
+disk. **Any plan section that asserts a lever should be cheap to falsify, and
+falsified before the work starts, not after ten pages are rewritten.** §6's premise
+was also wrong (see B2) and was caught the same way — by opening the pages instead
+of trusting the summary statistic.
 
 ## 6. Track B — upgrade the reference library that already exists
 
@@ -404,9 +409,9 @@ excerpt + body before declaring anything absent.
 |---|---|---|
 | **1** | B1 upgrades, top 6 by impressions (538,000 impr) | Written, indexed, ranking 16–35. Cheapest possible wins |
 | **2** | B2 format conversions (GA car seat → resource, + adult booster) | 23× proven delta, one template |
-| **3** | Track A harvest, top 10 (357,194 impr / 57%) | Largest block of wasted visibility |
+| **3** | ~~Track A harvest~~ — **cancelled, see §5** | Substance does not predict position or CTR on these pages |
 | **4** | Track C glossary, damages terms first | ~126K impressions; format proven at 857 clicks |
-| **5** | B1 remainder · Track A harvest 11–25 · B3 three new pages | Completes 77% of harvest value |
+| **5** | B1 remainder · B3 three new pages | Completes the reference library |
 | **6** | Study #2 (Myrtle Beach) · Study #3 (Port Worker) | Linkable assets, quarterly |
 | **ongoing** | `/es/` mirrors after English twins ship | |
 
@@ -421,7 +426,7 @@ Append to `RECOVERY-LOG.md` at each phase. Baselines from the 13-month export:
 
 | Metric | Baseline | Target |
 |---|---:|---|
-| Intersection CTR | 0.011% | ≥ 0.30% on harvested pages |
+| Intersection CTR | 0.011% | *no target — not content-addressable (§5)* |
 | Resource-tier clicks | 596 | 1,500 |
 | Upgrade-pool clicks (75 pages) | 4,616 | 9,000 |
 | Two-state page count | 57 | 80 |
