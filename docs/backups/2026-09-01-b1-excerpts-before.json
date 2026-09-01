@@ -1,0 +1,54 @@
+{
+ "applied_at": "2026-09-01",
+ "note": "Track B1 first pass: post_excerpt was EMPTY on all 12 of these pages before this change. post_excerpt is both the meta description (roden_seo_get_description) and the Article schema description (roden_schema_article), so an empty one meant WordPress auto-generated the SERP snippet from the opening 55 words. Restore by setting post_excerpt back to empty string.",
+ "posts": {
+  "1663": {
+   "url": "https://rodenlaw.com/blog/compensatory-damages-vs-punitive-damages/",
+   "post_excerpt": ""
+  },
+  "1679": {
+   "url": "https://rodenlaw.com/blog/can-an-insurance-company-go-against-a-police-report/",
+   "post_excerpt": ""
+  },
+  "1749": {
+   "url": "https://rodenlaw.com/blog/fault-vs-no-fault-car-insurance/",
+   "post_excerpt": ""
+  },
+  "2647": {
+   "url": "https://rodenlaw.com/blog/rollover-crashes-and-what-they-do-to-your-body/",
+   "post_excerpt": ""
+  },
+  "1651": {
+   "url": "https://rodenlaw.com/blog/value-of-pain-and-suffering/",
+   "post_excerpt": ""
+  },
+  "1653": {
+   "url": "https://rodenlaw.com/blog/calculating-compensation-for-whiplash-injuries/",
+   "post_excerpt": ""
+  },
+  "1660": {
+   "url": "https://rodenlaw.com/blog/supporting-a-whiplash-claim/",
+   "post_excerpt": ""
+  },
+  "1649": {
+   "url": "https://rodenlaw.com/blog/claims-against-at-fault-drivers-who-died/",
+   "post_excerpt": ""
+  },
+  "1654": {
+   "url": "https://rodenlaw.com/blog/liability-for-epilepsy-related-car-accidents/",
+   "post_excerpt": ""
+  },
+  "1744": {
+   "url": "https://rodenlaw.com/blog/insurance-company-ignoring-demand-letter/",
+   "post_excerpt": ""
+  },
+  "4585": {
+   "url": "https://rodenlaw.com/blog/diminished-value-claims-after-car-accident/",
+   "post_excerpt": ""
+  },
+  "2586": {
+   "url": "https://rodenlaw.com/blog/are-red-light-runners-always-liable-if-they-crash/",
+   "post_excerpt": ""
+  }
+ }
+}
