@@ -3549,7 +3549,8 @@
                         "answer": "Absolutely. An experienced personal injury attorney can file motions to exclude irrelevant driving history evidence, counter insurance company arguments about your past, and focus the case on the at-fault driver's negligence. At Roden Law, we handle cases on a contingency fee basis — you pay nothing unless we recover compensation for you. Call 1-844-RESULTS for a free consultation."
                     }
                 ],
-                "_roden_key_takeaways": "A prior driving record with traffic violations, DUI charges, or previous accidents does not automatically disqualify you from filing a car accident claim in Georgia or South Carolina. Under Georgia's modified comparative fault rule (O.C.G.A. § 51-12-33), you can recover damages if less than 50% at fault. South Carolina sets the threshold at 51%. Both states follow evidentiary rules that generally prohibit using prior bad acts to prove fault in the current incident, though exceptions exist for pattern evidence and credibility impeachment."
+                "_roden_key_takeaways": "A prior driving record with traffic violations, DUI charges, or previous accidents does not automatically disqualify you from filing a car accident claim in Georgia or South Carolina. Under Georgia's modified comparative fault rule (O.C.G.A. § 51-12-33), you can recover damages if less than 50% at fault. South Carolina sets the threshold at 51%. Both states follow evidentiary rules that generally prohibit using prior bad acts to prove fault in the current incident, though exceptions exist for pattern evidence and credibility impeachment.",
+                "_roden_last_reviewed": "2026-09-01"
             }
         },
         "/blog/driving-tips-around-trucks/": {
@@ -8155,7 +8156,8 @@
                         "answer": "Yes. Truck accident claims frequently involve multiple defendants — the driver, trucking company, cargo loader, maintenance provider, and manufacturer. Filing against all liable parties gives you access to multiple insurance policies and maximizes potential recovery."
                     }
                 ],
-                "_roden_key_takeaways": "Truck accident liability can extend to the driver, trucking company, cargo loader, maintenance provider, and vehicle manufacturer. Federal FMCSA regulations establish safety standards whose violation is strong evidence of negligence. Georgia allows 2 years to file (O.C.G.A. § 9-3-33) while South Carolina allows 3 years (S.C. Code § 15-3-530). Critical evidence like ELD and black box data must be preserved immediately through spoliation letters."
+                "_roden_key_takeaways": "Truck accident liability can extend to the driver, trucking company, cargo loader, maintenance provider, and vehicle manufacturer. Federal FMCSA regulations establish safety standards whose violation is strong evidence of negligence. Georgia allows 2 years to file (O.C.G.A. § 9-3-33) while South Carolina allows 3 years (S.C. Code § 15-3-530). Critical evidence like ELD and black box data must be preserved immediately through spoliation letters.",
+                "_roden_last_reviewed": "2026-09-01"
             }
         },
         "/blog/truck-accident-reconstruction/": {
@@ -18304,7 +18306,7 @@
                     },
                     {
                         "question": "Are punitive damages available in a golf cart DUI accident case?",
-                        "answer": "Yes. Georgia allows unlimited punitive damages in DUI cases (the standard $250,000 cap under O.C.G.A. § 51-12-5.1 does not apply to DUI). South Carolina also allows punitive damages for willful, wanton, or reckless conduct with no statutory cap."
+                        "answer": "Yes. Georgia allows unlimited punitive damages in DUI cases (the standard $250,000 cap under O.C.G.A. § 51-12-5.1 does not apply to DUI). South Carolina normally caps punitive damages at the greater of three times compensatory damages or $500,000 (S.C. Code § 15-32-530), but that cap is removed where the defendant was under the influence to the degree that his or her judgment was substantially impaired (§ 15-32-530(C)), so a golf cart DUI case is uncapped in South Carolina as well."
                     },
                     {
                         "question": "Can I sue the bar or restaurant that served the drunk golf cart driver?",
@@ -18320,6 +18322,7 @@
                     }
                 ],
                 "_roden_jurisdiction": "both",
+                "_roden_last_reviewed": "2026-09-01",
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33",
                 "_roden_sol_sc": "S.C. Code § 15-3-530"
             }
