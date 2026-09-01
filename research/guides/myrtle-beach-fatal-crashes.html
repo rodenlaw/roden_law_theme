@@ -1,0 +1,58 @@
+<p><strong>Between 2020 and 2024, 328 fatal crashes killed 347 people in Horry County, South Carolina</strong> — the county containing Myrtle Beach, North Myrtle Beach, Conway and Surfside Beach. That is 6.5% of every fatal crash in the state, and the second-highest county total in South Carolina, behind Greenville County (413).</p>
+
+<p>This report is a census, not a survey. It counts every crash on a public road in Horry County in which someone died within 30 days, as recorded by the federal Fatality Analysis Reporting System. The analysis script and the crash-level dataset are published below so that any figure here can be checked or contradicted.</p>
+
+<h2>The finding: summer is not the deadliest season on the Grand Strand</h2>
+<p>The common explanation for Myrtle Beach road danger is the summer visitor influx. The fatal-crash record does not support it.</p>
+<p><strong>22.6% of Horry County's fatal crashes occurred in June, July and August</strong> — 74 of 328. That is below the 25.0% a flat distribution across the year would produce, and below South Carolina's own summer share of 26.1%. Summer is, if anything, slightly safer than average on the Grand Strand.</p>
+<p>The worst months are October (40), May (36) and December (34).</p>
+<table class="comparison-table">
+<thead><tr><th>Month</th><th>Fatal crashes, 2020–2024</th></tr></thead>
+<tbody>
+<tr><td>October</td><td>40</td></tr>
+<tr><td>May</td><td>36</td></tr>
+<tr><td>December</td><td>34</td></tr>
+<tr><td>March</td><td>28</td></tr>
+<tr><td>April</td><td>28</td></tr>
+<tr><td>July</td><td>27</td></tr>
+</tbody>
+</table>
+<p>This does not mean summer traffic is harmless. It means the fatal-crash burden is spread across the year rather than concentrated in the tourist season, and that a claim of a summer peak needs a source that measures something other than deaths.</p>
+
+<h2>What is genuinely unusual: people outside vehicles</h2>
+<p>The distinctive feature of Horry County's fatal crashes is not when they happen but who dies in them.</p>
+<p><strong>28.4% of Horry County fatal crashes involved a pedestrian or other non-occupant, against 20.2% statewide</strong> — 1.41× the South Carolina rate. On a coastal strip where people walk between motels, restaurants and the beach across multi-lane arterials, that is the number that separates this county from the rest of the state.</p>
+<p>It pairs with when these crashes happen: the single worst hour is 20:00, and the evening hours dominate. A pedestrian-heavy fatal-crash profile after dark is a different problem from a tourist-traffic-volume problem, and it points at different fixes.</p>
+
+<h2>Five years, and no clear trend</h2>
+<table class="comparison-table">
+<thead><tr><th>Year</th><th>Horry fatal crashes</th><th>Horry deaths</th><th>South Carolina crashes</th></tr></thead>
+<tbody>
+<tr><td>2020</td><td>56</td><td>63</td><td>964</td></tr>
+<tr><td>2021</td><td>73</td><td>80</td><td>1112</td></tr>
+<tr><td>2022</td><td>78</td><td>80</td><td>1019</td></tr>
+<tr><td>2023</td><td>64</td><td>66</td><td>976</td></tr>
+<tr><td>2024</td><td>57</td><td>58</td><td>948</td></tr>
+</tbody>
+</table>
+<p>Horry County's totals rose to 78 in 2022 and fell back since. Five annual points are not a trend, and the most recent year is the least settled.</p>
+
+<h2>Where on the road</h2>
+<p>Two federal routes carry most of the crashes where a route was recorded: <strong>US-17 (45) and US-501 (31)</strong>. US-17 is the Grand Strand's spine — the Kings Highway and bypass corridor that every beach community sits on.</p>
+<p>Most fatal crashes are not at junctions at all. <strong>237 of 328 (72.3%) happened away from any intersection</strong>, which is worth stating plainly because "most dangerous intersections" lists are the usual way this subject is covered. Fatal crashes on the Grand Strand are predominantly a mid-block and open-road problem. The split between urban and rural settings is 187 urban to 141 rural.</p>
+<p>For context, neighbouring Georgetown County — Pawleys Island and Murrells Inlet — recorded 77 fatal crashes and 84 deaths over the same five years.</p>
+
+<h2>What this report does not show</h2>
+<ul>
+<li><strong>It counts deaths, not crashes in general.</strong> FARS records only crashes in which someone died. A junction producing hundreds of injury crashes and no fatalities is invisible here. Nothing in this report ranks intersections by overall crash frequency, and it should not be cited as if it did.</li>
+<li><strong>It has no exposure denominator.</strong> Horry County's resident population is not its road population — the summer visitor load is precisely what people mean by Grand Strand traffic, and no public dataset measures it by segment. "More fatal crashes" is therefore not "more dangerous per mile driven", and no per-capita rate is computed here because the resident denominator would systematically mislead.</li>
+<li><strong>It cannot separate visitors from residents.</strong> FARS records where a crash happened, not where anyone lived.</li>
+<li><strong>2024 is provisional.</strong> FARS is republished as cases complete, so the most recent year may be revised.</li>
+</ul>
+
+<h2>Methodology</h2>
+<p>Source: NHTSA Fatality Analysis Reporting System, national annual files 2020–2024. Horry County is FARS <code>STATE 45, COUNTY 51</code>; Georgetown is <code>COUNTY 43</code>. Summer is months 6–8. "Pedestrian or other non-occupant" is <code>PEDS &gt; 0</code>, which counts persons not in a motor vehicle and is reported with that wording rather than as "pedestrian" alone, because the field is slightly broader.</p>
+<p>The analysis is machine-generated from published federal data by a script committed alongside this report; run it against the same files and it reproduces these numbers exactly, or the report is wrong and should be corrected.</p>
+
+<h2>The data</h2>
+<p>The crash-level dataset behind every figure above is published as a CSV: one row per fatal crash, with year, county, city, month, hour, deaths, non-occupants, roadway, land use, intersection type and coordinates.</p>
