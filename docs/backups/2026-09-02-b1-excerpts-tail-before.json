@@ -1,0 +1,838 @@
+{
+ "applied_at": "2026-09-02",
+ "note": "Track B1 tail: post_excerpt was EMPTY on all of these pages before this change. post_excerpt is both the meta description (roden_seo_get_description) and the Article schema description (roden_schema_article). Restore by setting post_excerpt back to empty string.",
+ "posts": {
+  "1754": {
+   "url": "https://rodenlaw.com/blog/liability-in-a-driverless-car-crash/",
+   "post_excerpt": ""
+  },
+  "1658": {
+   "url": "https://rodenlaw.com/blog/steps-after-work-injury/",
+   "post_excerpt": ""
+  },
+  "1655": {
+   "url": "https://rodenlaw.com/blog/steps-of-a-burn-injury-case/",
+   "post_excerpt": ""
+  },
+  "1763": {
+   "url": "https://rodenlaw.com/blog/major-injuries-from-minor-car-accidents/",
+   "post_excerpt": ""
+  },
+  "1724": {
+   "url": "https://rodenlaw.com/blog/options-for-recovering-more-than-policy-limits/",
+   "post_excerpt": ""
+  },
+  "1848": {
+   "url": "https://rodenlaw.com/blog/longshoreman-injury-claims/",
+   "post_excerpt": ""
+  },
+  "1867": {
+   "url": "https://rodenlaw.com/blog/steps-take-slip-fall-accident-georgia/",
+   "post_excerpt": ""
+  },
+  "1711": {
+   "url": "https://rodenlaw.com/blog/liens-and-your-personal-injury-claims/",
+   "post_excerpt": ""
+  },
+  "1761": {
+   "url": "https://rodenlaw.com/blog/workers-comp-for-carpal-tunnel-syndrome/",
+   "post_excerpt": ""
+  },
+  "1743": {
+   "url": "https://rodenlaw.com/blog/how-to-handle-calls-from-insurance-companies/",
+   "post_excerpt": ""
+  },
+  "1704": {
+   "url": "https://rodenlaw.com/blog/filing-a-claim-for-an-injured-minor/",
+   "post_excerpt": ""
+  },
+  "1850": {
+   "url": "https://rodenlaw.com/blog/2017-safest-college-campuses-in-georgia/",
+   "post_excerpt": ""
+  },
+  "3393": {
+   "url": "https://rodenlaw.com/blog/nerve-damage-after-charleston-car-crash/",
+   "post_excerpt": ""
+  },
+  "3088": {
+   "url": "https://rodenlaw.com/blog/when-to-call-charleston-personal-injury-lawyer/",
+   "post_excerpt": ""
+  },
+  "4590": {
+   "url": "https://rodenlaw.com/blog/what-to-do-after-car-accident-south-carolina/",
+   "post_excerpt": ""
+  },
+  "1798": {
+   "url": "https://rodenlaw.com/blog/advantages-of-a-medical-malpractice-attorney/",
+   "post_excerpt": ""
+  },
+  "1740": {
+   "url": "https://rodenlaw.com/blog/traffic-tickets-and-car-accident-claims/",
+   "post_excerpt": ""
+  },
+  "4581": {
+   "url": "https://rodenlaw.com/blog/rear-end-accident-injuries/",
+   "post_excerpt": ""
+  },
+  "1647": {
+   "url": "https://rodenlaw.com/blog/truck-accident-reconstruction/",
+   "post_excerpt": ""
+  },
+  "3096": {
+   "url": "https://rodenlaw.com/blog/hearing-loss-after-charleston-car-accident/",
+   "post_excerpt": ""
+  },
+  "4646": {
+   "url": "https://rodenlaw.com/blog/south-carolina-statute-of-limitations-personal-injury/",
+   "post_excerpt": ""
+  },
+  "4477": {
+   "url": "https://rodenlaw.com/blog/georgia-pedestrian-right-of-way-laws/",
+   "post_excerpt": ""
+  },
+  "1831": {
+   "url": "https://rodenlaw.com/blog/blind-spot-accidents/",
+   "post_excerpt": ""
+  },
+  "1666": {
+   "url": "https://rodenlaw.com/blog/the-role-of-vocational-rehabilitation-in-workers-compensation-cases/",
+   "post_excerpt": ""
+  },
+  "1736": {
+   "url": "https://rodenlaw.com/blog/when-do-injury-claims-go-to-court/",
+   "post_excerpt": ""
+  },
+  "1758": {
+   "url": "https://rodenlaw.com/blog/qualifications-for-car-accident-witnesses/",
+   "post_excerpt": ""
+  },
+  "4478": {
+   "url": "https://rodenlaw.com/blog/south-carolina-pedestrian-right-of-way-laws/",
+   "post_excerpt": ""
+  },
+  "1737": {
+   "url": "https://rodenlaw.com/blog/pedestrian-liability-for-car-accidents/",
+   "post_excerpt": ""
+  },
+  "1816": {
+   "url": "https://rodenlaw.com/blog/benefits-of-hiring-personal-injury-lawyer/",
+   "post_excerpt": ""
+  },
+  "2425": {
+   "url": "https://rodenlaw.com/blog/knee-injuries-after-georgia-car-crash/",
+   "post_excerpt": ""
+  },
+  "1646": {
+   "url": "https://rodenlaw.com/blog/first-steps-in-a-medical-malpractice-case/",
+   "post_excerpt": ""
+  },
+  "1769": {
+   "url": "https://rodenlaw.com/blog/taxes-on-car-crash-settlement-in-georgia/",
+   "post_excerpt": ""
+  },
+  "1787": {
+   "url": "https://rodenlaw.com/blog/dealing-with-uber-lyft-accident/",
+   "post_excerpt": ""
+  },
+  "1675": {
+   "url": "https://rodenlaw.com/blog/can-someone-sue-me-for-a-car-accident/",
+   "post_excerpt": ""
+  },
+  "1777": {
+   "url": "https://rodenlaw.com/blog/personal-injury-calculating-loss-of-earning-capacity/",
+   "post_excerpt": ""
+  },
+  "1817": {
+   "url": "https://rodenlaw.com/blog/duty-of-care-personal-injury-claim/",
+   "post_excerpt": ""
+  },
+  "1804": {
+   "url": "https://rodenlaw.com/blog/passenger-car-accident-claim/",
+   "post_excerpt": ""
+  },
+  "2761": {
+   "url": "https://rodenlaw.com/blog/how-loud-music-increases-crash-risk-charleston/",
+   "post_excerpt": ""
+  },
+  "2855": {
+   "url": "https://rodenlaw.com/blog/mistakes-charleston-slip-and-fall-victims-make/",
+   "post_excerpt": ""
+  },
+  "1718": {
+   "url": "https://rodenlaw.com/blog/continuing-post-accident-medical-treatment/",
+   "post_excerpt": ""
+  },
+  "3210": {
+   "url": "https://rodenlaw.com/blog/compensation-for-chronic-pain-after-a-car-crash-in-charleston/",
+   "post_excerpt": ""
+  },
+  "2695": {
+   "url": "https://rodenlaw.com/blog/legal-rights-after-memory-loss-savannah-crash/",
+   "post_excerpt": ""
+  },
+  "1719": {
+   "url": "https://rodenlaw.com/blog/car-insurance-claim-denial-tactics/",
+   "post_excerpt": ""
+  },
+  "1682": {
+   "url": "https://rodenlaw.com/blog/how-long-can-a-person-stay-on-workers-compensation/",
+   "post_excerpt": ""
+  },
+  "1648": {
+   "url": "https://rodenlaw.com/blog/after-boat-accident-guide/",
+   "post_excerpt": ""
+  },
+  "2690": {
+   "url": "https://rodenlaw.com/blog/hip-pain-after-car-accident-in-savannah/",
+   "post_excerpt": ""
+  },
+  "1733": {
+   "url": "https://rodenlaw.com/blog/liability-for-crashes-caused-by-teen-drivers/",
+   "post_excerpt": ""
+  },
+  "1852": {
+   "url": "https://rodenlaw.com/blog/settle-workers-comp-case/",
+   "post_excerpt": ""
+  },
+  "1729": {
+   "url": "https://rodenlaw.com/blog/discovery-process-in-personal-injury-cases/",
+   "post_excerpt": ""
+  },
+  "2844": {
+   "url": "https://rodenlaw.com/blog/value-of-car-crash-claim-if-permanent-injuries/",
+   "post_excerpt": ""
+  },
+  "1837": {
+   "url": "https://rodenlaw.com/blog/financial-abuse-at-nursing-homes/",
+   "post_excerpt": ""
+  },
+  "2674": {
+   "url": "https://rodenlaw.com/blog/proving-back-pain-after-savannah-car-crash/",
+   "post_excerpt": ""
+  },
+  "1755": {
+   "url": "https://rodenlaw.com/blog/deposition-in-a-personal-injury-claim/",
+   "post_excerpt": ""
+  },
+  "1765": {
+   "url": "https://rodenlaw.com/blog/refusing-opioid-prescription-in-workers-comp-claim/",
+   "post_excerpt": ""
+  },
+  "1782": {
+   "url": "https://rodenlaw.com/blog/third-party-fault-for-work-injuries/",
+   "post_excerpt": ""
+  },
+  "1703": {
+   "url": "https://rodenlaw.com/blog/driving-record-and-injury-claim/",
+   "post_excerpt": ""
+  },
+  "1750": {
+   "url": "https://rodenlaw.com/blog/liability-for-school-bus-crash/",
+   "post_excerpt": ""
+  },
+  "1771": {
+   "url": "https://rodenlaw.com/blog/what-happens-to-workers-comp-if-employer-bankrupts/",
+   "post_excerpt": ""
+  },
+  "1773": {
+   "url": "https://rodenlaw.com/blog/determining-fault-in-multi-vehicle-accidents/",
+   "post_excerpt": ""
+  },
+  "1799": {
+   "url": "https://rodenlaw.com/blog/safe-driving-in-construction-zones/",
+   "post_excerpt": ""
+  },
+  "1696": {
+   "url": "https://rodenlaw.com/blog/what-if-i-suspect-medical-malpractice/",
+   "post_excerpt": ""
+  },
+  "3413": {
+   "url": "https://rodenlaw.com/blog/legal-rights-if-hit-by-driver-in-company-car-charleston/",
+   "post_excerpt": ""
+  },
+  "1844": {
+   "url": "https://rodenlaw.com/blog/valid-premises-liability-claim-georgia/",
+   "post_excerpt": ""
+  },
+  "1767": {
+   "url": "https://rodenlaw.com/blog/drunk-pedestrian-injury-claims/",
+   "post_excerpt": ""
+  },
+  "1869": {
+   "url": "https://rodenlaw.com/blog/college-campus-safety-tips-every-student-should-know/",
+   "post_excerpt": ""
+  },
+  "1778": {
+   "url": "https://rodenlaw.com/blog/reasons-for-workers-comp-claim-denial/",
+   "post_excerpt": ""
+  },
+  "4586": {
+   "url": "https://rodenlaw.com/blog/ptsd-after-car-accident-compensation/",
+   "post_excerpt": ""
+  },
+  "1772": {
+   "url": "https://rodenlaw.com/blog/benefit-of-a-personal-injury-pain-diary/",
+   "post_excerpt": ""
+  },
+  "4583": {
+   "url": "https://rodenlaw.com/blog/how-much-is-my-car-accident-claim-worth/",
+   "post_excerpt": ""
+  },
+  "1668": {
+   "url": "https://rodenlaw.com/blog/5-most-common-types-of-medical-malpractice-in-2023/",
+   "post_excerpt": ""
+  },
+  "3420": {
+   "url": "https://rodenlaw.com/blog/charleston-parking-lot-car-accident-liability/",
+   "post_excerpt": ""
+  },
+  "1829": {
+   "url": "https://rodenlaw.com/blog/hospital-liability-for-medical-malpractice/",
+   "post_excerpt": ""
+  },
+  "1764": {
+   "url": "https://rodenlaw.com/blog/changing-workers-comp-doctors-in-georgia/",
+   "post_excerpt": ""
+  },
+  "1833": {
+   "url": "https://rodenlaw.com/blog/dog-bite-prevention-tips/",
+   "post_excerpt": ""
+  },
+  "1853": {
+   "url": "https://rodenlaw.com/blog/beginning-motorcycle-biker-risks/",
+   "post_excerpt": ""
+  },
+  "3022": {
+   "url": "https://rodenlaw.com/blog/charleston-car-crash-brain-injuries/",
+   "post_excerpt": ""
+  },
+  "1842": {
+   "url": "https://rodenlaw.com/blog/do-you-need-a-workers-compensation-lawyer/",
+   "post_excerpt": ""
+  },
+  "1826": {
+   "url": "https://rodenlaw.com/blog/choking-at-nursing-homes/",
+   "post_excerpt": ""
+  },
+  "1793": {
+   "url": "https://rodenlaw.com/blog/dangerous-savannah-intersections/",
+   "post_excerpt": ""
+  },
+  "2709": {
+   "url": "https://rodenlaw.com/blog/accepting-a-cash-offer-after-savannah-car-crash/",
+   "post_excerpt": ""
+  },
+  "1791": {
+   "url": "https://rodenlaw.com/blog/car-accidents-and-daylight-savings-time/",
+   "post_excerpt": ""
+  },
+  "1779": {
+   "url": "https://rodenlaw.com/blog/using-dashcams-as-evidence-of-fault-in-a-car-accident/",
+   "post_excerpt": ""
+  },
+  "1862": {
+   "url": "https://rodenlaw.com/blog/common-driver-distractions/",
+   "post_excerpt": ""
+  },
+  "4355": {
+   "url": "https://rodenlaw.com/blog/shem-creek-boating-dock-injuries-mount-pleasant/",
+   "post_excerpt": ""
+  },
+  "1814": {
+   "url": "https://rodenlaw.com/blog/georgia-wrongful-death-lawsuit/",
+   "post_excerpt": ""
+  },
+  "4349": {
+   "url": "https://rodenlaw.com/blog/charleston-medical-malpractice-hospital-claim-south-carolina/",
+   "post_excerpt": ""
+  },
+  "1759": {
+   "url": "https://rodenlaw.com/blog/compensation-while-not-wearing-seat-belt/",
+   "post_excerpt": ""
+  },
+  "1794": {
+   "url": "https://rodenlaw.com/blog/documents-for-personal-injury-claim/",
+   "post_excerpt": ""
+  },
+  "1827": {
+   "url": "https://rodenlaw.com/blog/how-spinal-cord-injuries-affect-you/",
+   "post_excerpt": ""
+  },
+  "4539": {
+   "url": "https://rodenlaw.com/blog/darien-brunswick-dangerous-roads-i95-us17/",
+   "post_excerpt": ""
+  },
+  "4337": {
+   "url": "https://rodenlaw.com/blog/ashley-phosphate-road-i-26-dangerous-intersection-charleston/",
+   "post_excerpt": ""
+  },
+  "1713": {
+   "url": "https://rodenlaw.com/blog/importance-of-eyewitness-testimony/",
+   "post_excerpt": ""
+  },
+  "1861": {
+   "url": "https://rodenlaw.com/blog/summer-driving-safety-tips/",
+   "post_excerpt": ""
+  },
+  "1820": {
+   "url": "https://rodenlaw.com/blog/roadway-hazard-auto-accident/",
+   "post_excerpt": ""
+  },
+  "1728": {
+   "url": "https://rodenlaw.com/blog/why-injury-claims-may-be-delayed/",
+   "post_excerpt": ""
+  },
+  "3082": {
+   "url": "https://rodenlaw.com/blog/tactics-insurers-use-to-deny-crash-claims-charleston/",
+   "post_excerpt": ""
+  },
+  "3105": {
+   "url": "https://rodenlaw.com/blog/why-car-crashes-happen-close-to-home-charleston/",
+   "post_excerpt": ""
+  },
+  "1739": {
+   "url": "https://rodenlaw.com/blog/follow-doctors-orders-after-accident/",
+   "post_excerpt": ""
+  },
+  "3183": {
+   "url": "https://rodenlaw.com/blog/liability-for-roundabout-crashes-in-charleston/",
+   "post_excerpt": ""
+  },
+  "1774": {
+   "url": "https://rodenlaw.com/blog/workers-comp-for-skin-cancer/",
+   "post_excerpt": ""
+  },
+  "4368": {
+   "url": "https://rodenlaw.com/blog/charleston-parking-lot-parking-garage-accident/",
+   "post_excerpt": ""
+  },
+  "2729": {
+   "url": "https://rodenlaw.com/blog/how-to-spot-distracted-drivers-ten-signs-savannah-ga/",
+   "post_excerpt": ""
+  },
+  "3231": {
+   "url": "https://rodenlaw.com/blog/returning-to-work-too-soon-charleston-crash/",
+   "post_excerpt": ""
+  },
+  "1876": {
+   "url": "https://rodenlaw.com/blog/common-workplace-injuries-georgia/",
+   "post_excerpt": ""
+  },
+  "4588": {
+   "url": "https://rodenlaw.com/blog/fmcsa-violations-truck-accident-claims/",
+   "post_excerpt": ""
+  },
+  "1835": {
+   "url": "https://rodenlaw.com/blog/signs-of-concussion-from-car-crash/",
+   "post_excerpt": ""
+  },
+  "1845": {
+   "url": "https://rodenlaw.com/blog/atm-attack-liability/",
+   "post_excerpt": ""
+  },
+  "1809": {
+   "url": "https://rodenlaw.com/blog/workers-compensation-claim-process-georgia/",
+   "post_excerpt": ""
+  },
+  "2795": {
+   "url": "https://rodenlaw.com/blog/charleston-lyft-driver-ran-red-light-and-hit-my-car/",
+   "post_excerpt": ""
+  },
+  "4362": {
+   "url": "https://rodenlaw.com/blog/dog-bite-laws-south-carolina-charleston/",
+   "post_excerpt": ""
+  },
+  "1789": {
+   "url": "https://rodenlaw.com/blog/avoiding-motorcycle-crash-injuries/",
+   "post_excerpt": ""
+  },
+  "1805": {
+   "url": "https://rodenlaw.com/blog/slip-and-fall-negligence-elements/",
+   "post_excerpt": ""
+  },
+  "3467": {
+   "url": "https://rodenlaw.com/blog/18-wheeler-wrecks-on-the-arthur-ravenel-jr-bridge-us-17/",
+   "post_excerpt": ""
+  },
+  "1716": {
+   "url": "https://rodenlaw.com/blog/liability-for-crashes-in-heavy-rainfall/",
+   "post_excerpt": ""
+  },
+  "1661": {
+   "url": "https://rodenlaw.com/blog/commercial-truck-accidents-who-is-at-fault/",
+   "post_excerpt": ""
+  },
+  "1760": {
+   "url": "https://rodenlaw.com/blog/accident-my-fault-can-i-receive-workers-comp/",
+   "post_excerpt": ""
+  },
+  "1800": {
+   "url": "https://rodenlaw.com/blog/road-hazard-car-accident-liability/",
+   "post_excerpt": ""
+  },
+  "4538": {
+   "url": "https://rodenlaw.com/blog/savannah-dangerous-highways-i16-i95-abercorn/",
+   "post_excerpt": ""
+  },
+  "1873": {
+   "url": "https://rodenlaw.com/blog/overview-georgia-distracted-driving-laws/",
+   "post_excerpt": ""
+  },
+  "3035": {
+   "url": "https://rodenlaw.com/blog/charleston-reckless-driving-crash/",
+   "post_excerpt": ""
+  },
+  "1731": {
+   "url": "https://rodenlaw.com/blog/police-report-as-proof-of-liability/",
+   "post_excerpt": ""
+  },
+  "1752": {
+   "url": "https://rodenlaw.com/blog/workers-comp-medical-coverage/",
+   "post_excerpt": ""
+  },
+  "3583": {
+   "url": "https://rodenlaw.com/blog/lower-king-street-pedestrian-safety/",
+   "post_excerpt": ""
+  },
+  "4344": {
+   "url": "https://rodenlaw.com/blog/folly-road-car-accidents-james-island-charleston/",
+   "post_excerpt": ""
+  },
+  "1865": {
+   "url": "https://rodenlaw.com/blog/child-passenger-automobile-safety-georgia/",
+   "post_excerpt": ""
+  },
+  "1726": {
+   "url": "https://rodenlaw.com/blog/paying-medical-bills-during-a-claim/",
+   "post_excerpt": ""
+  },
+  "1819": {
+   "url": "https://rodenlaw.com/blog/third-party-liability-for-work-injury/",
+   "post_excerpt": ""
+  },
+  "1834": {
+   "url": "https://rodenlaw.com/blog/lawsuit-for-work-injury/",
+   "post_excerpt": ""
+  },
+  "1662": {
+   "url": "https://rodenlaw.com/blog/what-to-do-if-your-workers-compensation-claim-is-denied/",
+   "post_excerpt": ""
+  },
+  "1686": {
+   "url": "https://rodenlaw.com/blog/why-wont-a-personal-lawyer-take-my-case/",
+   "post_excerpt": ""
+  },
+  "1812": {
+   "url": "https://rodenlaw.com/blog/personal-injury-lawsuit-steps/",
+   "post_excerpt": ""
+  },
+  "3067": {
+   "url": "https://rodenlaw.com/blog/liability-for-brake-checking-crashes-charleston/",
+   "post_excerpt": ""
+  },
+  "1815": {
+   "url": "https://rodenlaw.com/blog/brain-injury-claim/",
+   "post_excerpt": ""
+  },
+  "4369": {
+   "url": "https://rodenlaw.com/blog/personal-injury-claim-charleston-berkeley-dorchester-county/",
+   "post_excerpt": ""
+  },
+  "1859": {
+   "url": "https://rodenlaw.com/blog/safe-bike-riding-georgias-roadways/",
+   "post_excerpt": ""
+  },
+  "2417": {
+   "url": "https://rodenlaw.com/blog/why-get-black-box-data-after-truck-crash-savannah/",
+   "post_excerpt": ""
+  },
+  "2420": {
+   "url": "https://rodenlaw.com/blog/why-driving-while-hungover-is-a-dangerous-savannah-crash-risk/",
+   "post_excerpt": ""
+  },
+  "1768": {
+   "url": "https://rodenlaw.com/blog/georgia-law-on-tailgating-accident-liability/",
+   "post_excerpt": ""
+  },
+  "1762": {
+   "url": "https://rodenlaw.com/blog/turkey-fryer-injury-claims/",
+   "post_excerpt": ""
+  },
+  "1775": {
+   "url": "https://rodenlaw.com/blog/work-zone-car-accident-liability/",
+   "post_excerpt": ""
+  },
+  "1875": {
+   "url": "https://rodenlaw.com/blog/safety-tips-driving-work-zones-georgia/",
+   "post_excerpt": ""
+  },
+  "2833": {
+   "url": "https://rodenlaw.com/blog/dangerous-rural-crashes-in-charleston/",
+   "post_excerpt": ""
+  },
+  "1866": {
+   "url": "https://rodenlaw.com/blog/drowsy-driving-epidemic-georgia/",
+   "post_excerpt": ""
+  },
+  "4359": {
+   "url": "https://rodenlaw.com/blog/military-base-accidents-joint-base-charleston-rights/",
+   "post_excerpt": ""
+  },
+  "4645": {
+   "url": "https://rodenlaw.com/blog/north-charleston-crime-rate-hit-and-run/",
+   "post_excerpt": ""
+  },
+  "1795": {
+   "url": "https://rodenlaw.com/blog/teenagers-and-driving-distracted/",
+   "post_excerpt": ""
+  },
+  "4350": {
+   "url": "https://rodenlaw.com/blog/how-long-personal-injury-case-charleston-sc/",
+   "post_excerpt": ""
+  },
+  "1801": {
+   "url": "https://rodenlaw.com/blog/workers-compensation-car-accident/",
+   "post_excerpt": ""
+  },
+  "1836": {
+   "url": "https://rodenlaw.com/blog/fault-for-car-accident/",
+   "post_excerpt": ""
+  },
+  "4358": {
+   "url": "https://rodenlaw.com/blog/carriage-tour-accidents-downtown-charleston-liability/",
+   "post_excerpt": ""
+  },
+  "1751": {
+   "url": "https://rodenlaw.com/blog/valuing-compensation-for-a-personal-injury/",
+   "post_excerpt": ""
+  },
+  "4370": {
+   "url": "https://rodenlaw.com/blog/ben-sawyer-boulevard-bridge-accidents-sullivans-island/",
+   "post_excerpt": ""
+  },
+  "1783": {
+   "url": "https://rodenlaw.com/blog/aggressive-driving-in-georgia/",
+   "post_excerpt": ""
+  },
+  "4356": {
+   "url": "https://rodenlaw.com/blog/jones-act-claims-south-carolina-maritime-worker-rights/",
+   "post_excerpt": ""
+  },
+  "1813": {
+   "url": "https://rodenlaw.com/blog/how-do-i-know-if-i-have-a-medical-malpractice-case/",
+   "post_excerpt": ""
+  },
+  "1770": {
+   "url": "https://rodenlaw.com/blog/punitive-damages-in-drunk-driving-accident/",
+   "post_excerpt": ""
+  },
+  "1705": {
+   "url": "https://rodenlaw.com/blog/benefits-of-an-accident-reconstruction-expert/",
+   "post_excerpt": ""
+  },
+  "1683": {
+   "url": "https://rodenlaw.com/blog/what-is-the-role-of-a-personal-injury-lawyer-in-a-case/",
+   "post_excerpt": ""
+  },
+  "1665": {
+   "url": "https://rodenlaw.com/blog/the-most-common-causes-of-truck-accidents/",
+   "post_excerpt": ""
+  },
+  "2475": {
+   "url": "https://rodenlaw.com/blog/who-pays-for-damages-from-t-bone-crashes-in-savannah/",
+   "post_excerpt": ""
+  },
+  "4367": {
+   "url": "https://rodenlaw.com/blog/south-carolina-comparative-fault-partially-at-fault/",
+   "post_excerpt": ""
+  },
+  "1693": {
+   "url": "https://rodenlaw.com/blog/am-i-eligible-for-workers-compensation/",
+   "post_excerpt": ""
+  },
+  "4352": {
+   "url": "https://rodenlaw.com/blog/jet-ski-personal-watercraft-accidents-charleston/",
+   "post_excerpt": ""
+  },
+  "1802": {
+   "url": "https://rodenlaw.com/blog/nursing-home-liability/",
+   "post_excerpt": ""
+  },
+  "1792": {
+   "url": "https://rodenlaw.com/blog/nursing-home-abuse-warning-signs/",
+   "post_excerpt": ""
+  },
+  "1673": {
+   "url": "https://rodenlaw.com/blog/how-do-i-know-if-i-have-a-personal-injury-case/",
+   "post_excerpt": ""
+  },
+  "1721": {
+   "url": "https://rodenlaw.com/blog/when-to-consider-settling-a-claim/",
+   "post_excerpt": ""
+  },
+  "4363": {
+   "url": "https://rodenlaw.com/blog/emergency-room-errors-charleston-misdiagnosis-malpractice/",
+   "post_excerpt": ""
+  },
+  "4361": {
+   "url": "https://rodenlaw.com/blog/charleston-historic-sidewalk-slip-fall-city-liable/",
+   "post_excerpt": ""
+  },
+  "1797": {
+   "url": "https://rodenlaw.com/blog/steps-after-dog-bite/",
+   "post_excerpt": ""
+  },
+  "2738": {
+   "url": "https://rodenlaw.com/blog/liability-in-head-on-collisions-savannah-ga/",
+   "post_excerpt": ""
+  },
+  "1860": {
+   "url": "https://rodenlaw.com/blog/dui-accidents/",
+   "post_excerpt": ""
+  },
+  "2743": {
+   "url": "https://rodenlaw.com/blog/understanding-eye-injuries-after-a-savannah-car-accident/",
+   "post_excerpt": ""
+  },
+  "4353": {
+   "url": "https://rodenlaw.com/blog/maybank-highway-car-accidents-johns-island/",
+   "post_excerpt": ""
+  },
+  "1808": {
+   "url": "https://rodenlaw.com/blog/appealing-a-denied-workers-compensation-claim/",
+   "post_excerpt": ""
+  },
+  "2865": {
+   "url": "https://rodenlaw.com/blog/charleston-rideshare-brake-failure-accident/",
+   "post_excerpt": ""
+  },
+  "1735": {
+   "url": "https://rodenlaw.com/blog/choosing-your-personal-injury-lawyer/",
+   "post_excerpt": ""
+  },
+  "2953": {
+   "url": "https://rodenlaw.com/blog/risk-of-refusing-medical-care-after-car-crash-charleston/",
+   "post_excerpt": ""
+  },
+  "1857": {
+   "url": "https://rodenlaw.com/blog/safest-hospitals-georgia/",
+   "post_excerpt": ""
+  },
+  "4336": {
+   "url": "https://rodenlaw.com/blog/port-of-charleston-injury-claims-longshoremen-dock-workers/",
+   "post_excerpt": ""
+  },
+  "4534": {
+   "url": "https://rodenlaw.com/blog/how-to-maximize-your-car-accident-compensation-in-south-carolina/",
+   "post_excerpt": ""
+  },
+  "1810": {
+   "url": "https://rodenlaw.com/blog/truck-accident-liability/",
+   "post_excerpt": ""
+  },
+  "1681": {
+   "url": "https://rodenlaw.com/blog/tips-for-choosing-a-motor-vehicle-accident-attorney/",
+   "post_excerpt": ""
+  },
+  "3226": {
+   "url": "https://rodenlaw.com/blog/liability-for-charleston-underride-truck-crashes/",
+   "post_excerpt": ""
+  },
+  "4587": {
+   "url": "https://rodenlaw.com/blog/car-totaled-in-accident-what-to-do/",
+   "post_excerpt": ""
+  },
+  "4346": {
+   "url": "https://rodenlaw.com/blog/car-accidents-ladson-i-26-exit-203-danger-zone/",
+   "post_excerpt": ""
+  },
+  "1698": {
+   "url": "https://rodenlaw.com/blog/steps-to-take-if-you-are-involved-in-a-bicycle-hit-and-run/",
+   "post_excerpt": ""
+  },
+  "3376": {
+   "url": "https://rodenlaw.com/blog/second-opinion-for-charleston-car-crash-injuries/",
+   "post_excerpt": ""
+  },
+  "1664": {
+   "url": "https://rodenlaw.com/blog/the-importance-of-gathering-evidence-after-a-motorcycle-accident/",
+   "post_excerpt": ""
+  },
+  "4642": {
+   "url": "https://rodenlaw.com/blog/pedestrian-safety-park-circle-north-charleston/",
+   "post_excerpt": ""
+  },
+  "1855": {
+   "url": "https://rodenlaw.com/blog/georgia-worker-injury-statistics-prevention/",
+   "post_excerpt": ""
+  },
+  "4340": {
+   "url": "https://rodenlaw.com/blog/boating-accidents-charleston-harbor-legal-rights/",
+   "post_excerpt": ""
+  },
+  "1871": {
+   "url": "https://rodenlaw.com/blog/protect-child-dog-bite-injury/",
+   "post_excerpt": ""
+  },
+  "4338": {
+   "url": "https://rodenlaw.com/blog/savannah-highway-truck-accidents-west-ashley-us-17/",
+   "post_excerpt": ""
+  },
+  "4348": {
+   "url": "https://rodenlaw.com/blog/nursing-home-abuse-charleston-signs-families/",
+   "post_excerpt": ""
+  },
+  "4644": {
+   "url": "https://rodenlaw.com/blog/motorcycle-accidents-dorchester-road-data/",
+   "post_excerpt": ""
+  },
+  "1868": {
+   "url": "https://rodenlaw.com/blog/protecting-child-burn-injuries-home/",
+   "post_excerpt": ""
+  },
+  "3462": {
+   "url": "https://rodenlaw.com/blog/charleston-delivery-truck-pedestrian-cyclist-accidents/",
+   "post_excerpt": ""
+  },
+  "4343": {
+   "url": "https://rodenlaw.com/blog/golf-cart-accidents-charleston-island-resort-communities/",
+   "post_excerpt": ""
+  },
+  "2777": {
+   "url": "https://rodenlaw.com/blog/liability-and-causes-for-backing-up-crashes-in-charleston/",
+   "post_excerpt": ""
+  },
+  "1821": {
+   "url": "https://rodenlaw.com/blog/proving-negligence-personal-injury/",
+   "post_excerpt": ""
+  },
+  "4341": {
+   "url": "https://rodenlaw.com/blog/construction-worker-injuries-charleston-sc-rights/",
+   "post_excerpt": ""
+  },
+  "1785": {
+   "url": "https://rodenlaw.com/blog/workers-compensation-benefit-types/",
+   "post_excerpt": ""
+  },
+  "1832": {
+   "url": "https://rodenlaw.com/blog/steps-after-truck-accident/",
+   "post_excerpt": ""
+  },
+  "3054": {
+   "url": "https://rodenlaw.com/blog/compensation-for-car-crash-facial-injuries-charleston/",
+   "post_excerpt": ""
+  },
+  "4345": {
+   "url": "https://rodenlaw.com/blog/boeing-north-charleston-workplace-injuries-workers-comp/",
+   "post_excerpt": ""
+  },
+  "4339": {
+   "url": "https://rodenlaw.com/blog/rivers-avenue-pedestrian-deaths-north-charleston/",
+   "post_excerpt": ""
+  },
+  "4639": {
+   "url": "https://rodenlaw.com/resources/pedestrian-bicycle-safety-north-charleston/",
+   "post_excerpt": ""
+  }
+ }
+}
