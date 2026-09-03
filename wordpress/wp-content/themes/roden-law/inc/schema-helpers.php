@@ -334,11 +334,13 @@ function roden_output_schema() {
         // emitted no FAQPage JSON-LD, so AI engines couldn't extract the Q&A
         // (audit 2026-06-26).
         roden_schema_faq_page();
+        roden_schema_defined_term_set(); // meta-driven; silent until _roden_glossary_terms is set
     }
 
     if ( is_singular( 'post' ) ) {
         roden_schema_article( $firm );
         roden_schema_faq_page();
+        roden_schema_defined_term_set(); // meta-driven; silent until _roden_glossary_terms is set
     }
 
     // Taxonomy archives — CollectionPage schema
@@ -1171,6 +1173,77 @@ function roden_schema_faq_page() {
         '@id'        => roden_get_canonical_url() . '#faqs',
         'mainEntity' => $faq_entities,
     ) );
+}
+
+/* ==========================================================================
+   5b. DefinedTermSet (glossary entries on posts and resources)
+   ========================================================================== */
+
+/**
+ * Output DefinedTermSet schema for pages that define legal terms.
+ *
+ * Meta-driven and silent until `_roden_glossary_terms` is populated, in the
+ * same shape as roden_schema_faq_page(): an array of
+ * `array( 'term' => ..., 'definition' => ... )`, with an optional `anchor`
+ * naming the in-page fragment where the term is defined.
+ *
+ * WHY THIS EXISTS. Definitional queries are the site's worst-converting
+ * intent — brand excluded, they earn 0.475% at position 3-5, about 40% below
+ * the site's own average for that band, and the site holds essentially no
+ * definitional volume at position 1-3 (181 impressions). The knowledge-base
+ * plan proposed a 25-entry glossary to chase that; the return depends entirely
+ * on whether a structured definition can move position 4 to position 2, which
+ * nothing here had tested. This node is the machine-readable half of that
+ * test on one page. It is deliberately reusable and deliberately not yet
+ * rolled out.
+ *
+ * `termCode` is omitted: schema.org expects a controlled-vocabulary identifier
+ * and inventing one per page would assert a taxonomy the firm does not
+ * maintain.
+ */
+function roden_schema_defined_term_set() {
+	$terms = get_post_meta( get_the_ID(), '_roden_glossary_terms', true );
+
+	if ( ! is_array( $terms ) || empty( $terms ) ) {
+		return;
+	}
+
+	$url     = roden_get_canonical_url();
+	$members = array();
+
+	foreach ( $terms as $t ) {
+		if ( empty( $t['term'] ) || empty( $t['definition'] ) ) {
+			continue;
+		}
+
+		$member = array(
+			'@type'       => 'DefinedTerm',
+			'@id'         => $url . '#term-' . sanitize_title( $t['term'] ),
+			'name'        => $t['term'],
+			'description' => $t['definition'],
+			'inDefinedTermSet' => array( '@id' => $url . '#glossary' ),
+		);
+
+		// Only when the page actually renders that anchor — a url pointing at a
+		// fragment that does not exist is a worse signal than no url at all.
+		if ( ! empty( $t['anchor'] ) ) {
+			$member['url'] = $url . '#' . ltrim( $t['anchor'], '#' );
+		}
+
+		$members[] = $member;
+	}
+
+	if ( empty( $members ) ) {
+		return;
+	}
+
+	roden_json_ld( array(
+		'@context'    => 'https://schema.org',
+		'@type'       => 'DefinedTermSet',
+		'@id'         => $url . '#glossary',
+		'name'        => get_the_title(),
+		'hasDefinedTerm' => $members,
+	) );
 }
 
 /* ==========================================================================
