@@ -300,9 +300,46 @@ proposed.**
 
 ---
 
-## 7. Track C — the damages and injury glossary
+## 7. Track C — the damages and injury glossary — ⚠️ **PREMISE CORRECTED 2026-09-03**
 
-The largest under-served vein, and the format is proven:
+**The vein is not under-served, and the query table below was built from a query
+export without checking it against a page list.** Two of the four term families
+already have dedicated pages, and the best performer in the whole vein is missing
+from the table entirely:
+
+| Page | Clicks | Impressions | CTR |
+|---|---:|---:|---:|
+| `/blog/value-of-pain-and-suffering/` | **1,109** | 113,967 | 0.973% |
+| `/blog/compensatory-damages-vs-punitive-damages/` | 857 | 349,782 | 0.245% |
+| `/blog/blunt-force-trauma-from-a-crash…/` | 14 | 20,571 | 0.068% |
+
+This is the §4 error repeating: a sweep that looks at queries and not at pages
+reports a gap that is not there.
+
+**The real constraint is position, not format.** Brand queries excluded:
+
+| Position | Impressions | CTR |
+|---|---:|---:|
+| 1–3 | 7,541 | **6.127%** |
+| 3–5 | 59,373 | 0.793% |
+| 5–10 | 221,838 | 0.252% |
+| 10–20 | 290,072 | 0.154% |
+
+Position 1–3 is worth ~8× position 3–5. The site holds **181** definitional
+impressions at 1–3 — effectively none. Its 27,186 definitional impressions all sit
+at 3–5 earning 0.475%, which is ~40% below the site's own average for that band.
+
+So the return on a 25-entry glossary rests entirely on an **untested assumption**:
+that glossary formatting moves position 4 → 2. Track A died of an assumption of
+that shape. The mechanism differs — structured answer → snippet eligibility, rather
+than word count → rank — so it earns a test, not a build.
+
+**Decision (owner, 2026-09-03): bounded test first.** Rebuild the
+compensatory/punitive cluster only — 27,186 of the 81,630 definitional impressions,
+already at position 3–5 — and let a quarter of measurement decide the other terms.
+
+The original §7 reasoning is kept below, since the format observation still stands:
+
 `/blog/compensatory-damages-vs-punitive-damages/` earns **857 clicks on 349,782
 impressions.**
 
@@ -328,6 +365,20 @@ Build a structured glossary at `/resources/glossary/`: one entry per term — sh
 definition, GA and SC treatment, statute, worked example. `blunt force trauma` and
 `blunt trauma` (37,626 impressions combined) are **medical** entries needing a medical
 citation, not legal ones.
+
+### 7.1 — What the Track C audit actually found
+
+Auditing the target page for the bounded test surfaced a **false statement of South
+Carolina law** on four pages: that the state has no statutory cap on punitive
+damages. It has capped them since 2011 — the greater of three times compensatory
+damages or $500,000, S.C. Code § 15-32-530. The sentence was boilerplate, verbatim
+across three pages and three different surfaces.
+
+Fixed 2026-09-03. Fact base: `docs/briefs/2026-09-03-sc-punitive-damages-cap.md`.
+
+**This is the fourth consecutive cycle in which the accuracy finding was worth more
+than the SEO work that surfaced it**, and the third found while looking for
+something else.
 
 ---
 
