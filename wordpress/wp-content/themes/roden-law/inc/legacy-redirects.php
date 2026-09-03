@@ -439,6 +439,32 @@ function roden_get_legacy_redirect_map() {
     return array(
 
         // ══════════════════════════════════════════════════════════════
+        // CATEGORY 18: dead Spanish practice-area URLs — 2026-09-03
+        // The /es/ silo once used translated path segments,
+        // /es/areas-de-practica/{spanish-slug}/. It now uses the English
+        // segment with the English slug, /es/practice-areas/{slug}/, which
+        // is what every live Spanish practice-area page serves.
+        //
+        // Two of the old URLs never got a redirect and have been returning
+        // hard 404s while still ranking: 24,284 impressions between them in
+        // the 13 months to 2026-08-24, at position ~53. Found by resolving
+        // every GSC page with 500+ impressions against production
+        // (docs/dead-urls-2026-09-03.md); 165 of 181 unresolved URLs already
+        // 301'd correctly, and these were among the nine that did not.
+        //
+        // These are the ONLY two. A prefix pattern was considered and
+        // rejected: /es/areas-de-practica/ has exactly two URLs in the
+        // export at any volume, and a blanket rule over a path segment the
+        // site no longer generates would silently absorb future typos
+        // instead of surfacing them. The blanket /es/* → / redirect removed
+        // on 2026-07-06 is the cautionary case — it killed the entire
+        // Spanish site for two months.
+        // ══════════════════════════════════════════════════════════════
+
+        '/es/areas-de-practica/abogado-de-accidente-de-auto/'        => '/es/practice-areas/car-accident-lawyers/',
+        '/es/areas-de-practica/abogados-de-compensacion-de-trabajo/' => '/es/practice-areas/workers-compensation-lawyers/',
+
+        // ══════════════════════════════════════════════════════════════
         // CATEGORY 17: duplicate warehouse sub-types — 2026-07-31
         // "Warehouse & Logistics Injury" (4630, SC-scoped, published
         // 2026-04-20) and "Warehouse and Distribution Injury" (4109, both
