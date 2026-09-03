@@ -128,9 +128,22 @@ Read before concluding.
 |---|---:|---|
 | 2026-09-03 pass 1 | 12 | hit-and-run penalty tiers wrong on 2 pages (#107) |
 | 2026-09-03 pass 2 | 14 | 0.08 limit cited to § 56-5-2930 on 5 pages; GA wrongful-death deadline cited to a definitions section on 1 |
+| 2026-09-03 pass 3 | 12 | **an invented three-foot passing law for SC on 12 pages**; GA passing duty cited to § 40-6-292 (bicycle riding) on 1 |
 
-**Two for two.** Every pass through this list has found a live error, and neither
+**Three for three.** Every pass through this list has found a live error, and none
 was found by the sweeps that were looking for something else.
+
+Pass 3 found the worst of them. **S.C. Code § 56-5-3435 requires only a "safe
+operating distance" and names no number**; its own heading says so. A 2019-2020
+bill would have defined the term as "not less than three feet" and was not
+enacted. Twelve pages — including four Spanish twins and every South Carolina city
+bicycle page — asserted a three-foot rule anyway, one of them in the words "same
+as Georgia". Georgia does have it (O.C.G.A. § 40-6-56); the rule had been carried
+across the state line.
+
+That is the first error found here where the site **invented a numeric legal
+standard** rather than misciting an existing one. A citation sweep cannot catch
+it: seven of the instances named no statute at all.
 
 ### Known maintenance item
 
