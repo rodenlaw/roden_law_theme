@@ -439,6 +439,89 @@ function roden_get_legacy_redirect_map() {
     return array(
 
         // ══════════════════════════════════════════════════════════════
+        // CATEGORY 19: dead blog posts still ranking — 2026-09-03
+        // Every /blog/ URL in the 13-month GSC export (543 of them, at ANY
+        // volume) resolved against production. 32 return hard 404s while still
+        // ranking, carrying 13,189 impressions and 56 clicks.
+        //
+        // THE 500-IMPRESSION CUTOFF USED IN THE FIRST SWEEP HID 26 OF THEM.
+        // docs/dead-urls-2026-09-03.md reported six blog 404s because it only
+        // resolved pages above that threshold. The threshold was chosen for the
+        // B1 excerpt pool and carried over here without being re-justified;
+        // below it sat four more URLs still ranking in the top 20.
+        //
+        // 31 are redirected. One is deliberately left 404 — see the note at the
+        // end of this block. Every destination was verified live and published
+        // before being written here; every source was verified 404.
+        // ══════════════════════════════════════════════════════════════
+
+        // ── Duplicate-slug artifacts whose original is still live ─────
+        // WordPress appended -2/-3 when a post was saved twice. The original is
+        // published; the suffixed twin 404s. Purely mechanical.
+        '/blog/a-pedestrians-guide-to-claiming-lost-wages-in-charleston-2/'           => '/blog/a-pedestrians-guide-to-claiming-lost-wages-in-charleston/',  // 6 impr
+        '/blog/how-poor-truck-maintenance-causes-charleston-accidents-2/'             => '/blog/how-poor-truck-maintenance-causes-charleston-accidents/',  // 26 impr
+        '/blog/protecting-your-rights-after-a-myrtle-beach-car-accident-2/'           => '/blog/protecting-your-rights-after-a-myrtle-beach-car-accident/',  // 17 impr
+        '/blog/protecting-your-rights-after-a-myrtle-beach-car-accident-3/'           => '/blog/protecting-your-rights-after-a-myrtle-beach-car-accident/',  // 21 impr
+        '/blog/your-guide-to-justice-after-a-charleston-truck-accident-2/'            => '/blog/your-guide-to-justice-after-a-charleston-truck-accident/',  // 36 impr
+
+        // ── Near-exact topical twins ──────────────────────────────────
+        // The dead URL and its destination answer the same question. These are the
+        // safest non-mechanical redirects in the set.
+        '/blog/can-witnesses-be-forced-to-testify-in-car-crash-case/'                 => '/blog/can-a-witness-be-forced-to-testify-for-a-savannah-car-crash-case/',  // 2,233 impr
+        '/blog/witness-testimony/'                                                    => '/blog/importance-of-eyewitness-testimony/',  // 23 impr
+        '/blog/benefits-of-an-accident-reconstructionist/'                            => '/blog/benefits-of-an-accident-reconstruction-expert/',  // 821 impr
+        '/blog/charleston-car-crash-doctor-talk/'                                     => '/blog/how-to-talk-to-your-doctor-about-your-charleston-car-accident-injuries/',  // 438 impr
+        '/blog/a-charleston-residents-guide-to-tourist-car-accidents-2/'              => '/blog/proving-a-tourist-was-at-fault-in-your-charleston-accident/',  // 6 impr
+        '/blog/a-charleston-residents-guide-to-tourist-car-accidents-4/'              => '/blog/proving-a-tourist-was-at-fault-in-your-charleston-accident/',  // 3 impr
+
+        // ── Same subject, nearest surviving page ──────────────────────
+        // No twin survives, so each goes to the closest page that actually answers
+        // the query. Sub-type practice pages are used where the subject IS the
+        // sub-type (delivery vehicles, overloaded cargo) — that is a topical
+        // destination, not the generic-hub dumping that Google reads as a soft 404.
+        '/blog/charlestons-crash-hotspots-to-avoid-in-2025/'                          => '/resources/dangerous-roads-north-charleston/',  // 2,142 impr
+        '/blog/charlestons-crash-hotspots-to-avoid-in-2025-2/'                        => '/resources/dangerous-roads-north-charleston/',  // 53 impr
+        '/blog/legal-options-after-rideshare-crash-in-charleston/'                    => '/blog/dealing-with-uber-lyft-accident/',  // 1,648 impr
+        '/blog/stomach-pain-after-a-car-accident-in-charleston/'                      => '/blog/how-delayed-injuries-could-impact-your-charleston-car-crash-claim/',  // 1,558 impr
+        '/blog/amazon-fedex-delivery-crashes/'                                        => '/car-accident-lawyers/delivery-vehicle-accident/',  // 1,209 impr
+        '/blog/overloaded-semi-trucks-accidents-on-charleston-highways/'              => '/truck-accident-lawyers/overloaded-improperly-loaded-cargo/',  // 190 impr
+        '/blog/why-federal-rules-matter-in-your-port-of-charleston-truck-accident/'   => '/blog/fmcsa-violations-truck-accident-claims/',  // 138 impr
+        '/blog/why-federal-rules-matter-in-your-port-of-charleston-truck-accident-2/' => '/blog/fmcsa-violations-truck-accident-claims/',  // 33 impr
+        '/blog/a-guide-to-car-accident-claims-at-columbias-toughest-intersections-2/' => '/blog/columbia-dangerous-intersections-roads/',  // 21 impr
+        '/blog/who-is-at-fault-in-a-charleston-merge-accident-2/'                     => '/blog/lane-change-accident-liability/',  // 18 impr
+        '/blog/start-personal-injury-claim-from-home/'                                => '/blog/questions-about-filing-a-lawsuit/',  // 430 impr
+        '/blog/your-first-steps-after-a-truck-accident-in-downtown-columbia-sc/'      => '/truck-accident-lawyers/columbia-sc/',  // 28 impr
+        '/blog/why-is-workers-compensation-so-important-to-have/'                     => '/practice-areas/workers-compensation-lawyers/',  // 201 impr
+        '/blog/what-are-the-benefits-of-hiring-a-workers-compensation-lawyer/'        => '/practice-areas/workers-compensation-lawyers/',  // 461 impr
+
+        // ── The "should I hire a lawyer" cluster ──────────────────────
+        // Six near-duplicate posts asking one question, which is why they were culled.
+        // They consolidate onto the surviving canonical answer. The lawsuit-framed
+        // one goes to the lawsuit page instead of the lawyer page.
+        '/blog/why-should-i-hire-an-accident-lawyer-after-an-accident/'               => '/blog/benefits-of-hiring-personal-injury-lawyer/',  // 473 impr
+        '/blog/when-should-you-hire-an-attorney-after-being-in-an-accident/'          => '/blog/benefits-of-hiring-personal-injury-lawyer/',  // 235 impr
+        '/blog/why-is-having-a-personal-injury-lawyer-important/'                     => '/blog/benefits-of-hiring-personal-injury-lawyer/',  // 206 impr
+        '/blog/why-should-i-consult-a-personal-injury-lawyer-for-my-accident/'        => '/blog/benefits-of-hiring-personal-injury-lawyer/',  // 107 impr
+        '/blog/how-can-an-attorney-help-with-my-car-accident-claim/'                  => '/blog/benefits-of-hiring-personal-injury-lawyer/',  // 28 impr
+        '/blog/what-are-the-upsides-of-filing-a-personal-injury-lawsuit/'             => '/blog/questions-about-filing-a-lawsuit/',  // 47 impr
+
+        // NOT REDIRECTED, deliberately:
+        // /blog/car-crash-crush-injuries-in-charleston/ — 333 impressions at
+        // position 20.6. The site has no crush-injury page and no page about a
+        // comparable injury mechanism. Sending a specific injury-type query to a
+        // different injury type is worse than a 404: it is the soft-404 pattern
+        // this repo already flagged on /blog/highway-hypnosis…/ → the car-accident
+        // hub. It stays dead until someone writes the page, which is a real
+        // content opening rather than a redirect problem.
+        //
+        // Also unresolved and NOT a redirect question:
+        // /blog/your-first-steps-after-a-truck-accident-in-downtown-columbia-sc/
+        // has an unpublished DRAFT in the database (post 3526). It is redirected
+        // to the Columbia truck-accident page for now, but publishing the draft
+        // would be the better answer and is the firm's call.
+
+
+        // ══════════════════════════════════════════════════════════════
         // CATEGORY 18: dead Spanish practice-area URLs — 2026-09-03
         // The /es/ silo once used translated path segments,
         // /es/areas-de-practica/{spanish-slug}/. It now uses the English
