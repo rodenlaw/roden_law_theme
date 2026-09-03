@@ -160,3 +160,85 @@ hostname do return honest status codes.
 | [S.C. Code Title 15 Ch. 32](https://www.scstatehouse.gov/code/t15c032.php) | § 15-32-530(A)(B)(C) verbatim; chapter section list |
 
 No secondary source was used for any statement above.
+
+
+---
+
+# SECOND PASS, SAME DAY: THE FIRST SWEEP MISSED THREE MORE PAGES
+
+The remediation above swept for **fixed needles** — `no statutory cap`, `does not
+cap`, `uncapped` and a dozen others. It reported a clean class. It was not clean.
+
+A regex over *negation-near-cap* — rather than a list of phrasings someone thought
+of — found three further pages saying the same false thing in a form the needles
+could not see:
+
+> South Carolina does **not impose a** statutory cap on punitive damages
+
+| Page | Surface |
+|---|---|
+| `/blog/how-to-maximize-your-car-accident-compensation-in-south-carolina/` (4534) | `post_content` |
+| `/blog/how-pain-and-suffering-is-calculated-after-an-accident-in-south-carolina/` (3440) | `post_content` |
+| `/boating-accident-lawyers/boating-under-influence/` (4144) | `post_content` |
+
+**The third one is the lesson.** 4144's `_roden_faqs` was corrected in the first
+pass. Its `post_content` was left asserting the opposite, on the same page, on the
+same day, by the same script — written specifically to honour the four-surfaces
+rule. The rule in `CLAUDE.md` is not "check the other three surfaces once"; it is
+that a claim lives in four places and each must be swept independently.
+
+Two bad-faith comparison tables also asserted no cap — `/blog/car-insurance-claim-denial-tactics/`
+("no fixed statutory cap") and `/blog/options-for-denied-injury-claims/` ("no fixed
+cap"). **§ 15-32-540 excludes only the Tort Claims Act and the Solicitation of
+Charitable Funds Act** from the punitive article, so a bad-faith action against an
+insurer is not exempt and § 15-32-530 caps punitive damages there too.
+
+**Sweep for the claim class with a pattern, not a phrase list.** A needle list can
+only find the wordings you already imagined; it reports zero for the rest, and zero
+reads like clean.
+
+---
+
+# AND THE AUTHORITY: § 15-33-135 IS THE BURDEN, NOT THE CONDUCT
+
+PR #97 corrected two pages citing **§ 15-33-135** for the *cap*. That fix was scoped
+to the wrong thing. The statute is one sentence, headed *"Punitive damages: burden of
+proof"*:
+
+> In any civil action where punitive damages are claimed, the plaintiff has the
+> burden of proving such damages by clear and convincing evidence.
+
+It says nothing about willful, wanton or reckless conduct. That is **§ 15-32-520(D)**:
+
+> Punitive damages may be awarded only if the plaintiff proves by clear and
+> convincing evidence that his harm was the result of the defendant's wilful,
+> wanton, or reckless conduct.
+
+Nine citations survived on seven pages. **Four were correct** and were left alone —
+they cite it for the burden, which is what it holds.
+
+**Three attributed the conduct standard to it** and were re-pointed to § 15-32-520(D):
+
+- `/blog/negligence-vs-gross-negligence/` — the worst of the three. It put *"willful,
+  wanton, or in reckless disregard of the plaintiff's rights"* **in quotation marks**
+  and attributed it to a statute containing none of those words.
+- `/blog/how-to-maximize-your-car-accident-compensation-in-south-carolina/`
+- `/blog/south-carolina-pedestrian-right-of-way-laws/`
+
+**Two sat after a compound clause** where only the burden half was supported.
+Those *gained* § 15-32-520(D) alongside rather than losing § 15-33-135, because the
+burden half genuinely is § 15-33-135: `/blog/truck-accident-liability/` and
+`/golf-cart-accident-lawyers/golf-cart-dui/`.
+
+Script: `bin/fix-sc-punitive-authority-and-cap.php`.
+Backup: `docs/backups/2026-09-03-sc-punitive-authority-and-cap-before.json`.
+
+## After
+
+Re-swept with the regex, not the needles. Every remaining negation-near-cap window
+is correct: it negates the cap on **compensatory** damages, describes **Georgia**, or
+states the § 15-32-530(C) exceptions accurately. Every remaining § 15-33-135 citation
+is for the burden of proof.
+
+`content/meta.json` shows no diff — all ten edits were `post_content`, which is
+deliberately not exported.
