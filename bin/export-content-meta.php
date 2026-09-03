@@ -88,6 +88,16 @@ $keys = array(
 	// it is short, it is edited rarely, and it makes factual claims in bold. It
 	// belongs in the diff.
 	'_roden_key_takeaways',
+
+	// Glossary definitions, added 2026-09-03 with the Track C bounded test.
+	// They are short, they are prose, and they make STATUTORY claims — the
+	// punitive-damages entry names both the O.C.G.A. and S.C. Code caps. A
+	// definition is exactly the shape of content that gets copied to another
+	// page and goes stale there, and roden_schema_defined_term_set() publishes
+	// it as DefinedTerm structured data, so a wrong one is published twice over.
+	// Whitelisted on the same day the key was created, rather than three weeks
+	// later by accident, which is how _roden_key_takeaways got here.
+	'_roden_glossary_terms',
 );
 
 $posts = get_posts( array(

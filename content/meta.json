@@ -2902,6 +2902,26 @@
                         "answer": "No. Roden Law handles personal injury cases on a contingency fee basis, which means you pay no attorney fees unless we recover compensation for you. Your initial consultation is free."
                     }
                 ],
+                "_roden_glossary_terms": [
+                    {
+                        "term": "Compensatory damages",
+                        "anchor": "what-are-compensatory-damages",
+                        "definition": "Money that repays what an injury actually cost — medical bills, lost wages, and non-economic harm such as pain and suffering. Neither Georgia nor South Carolina caps compensatory damages in ordinary injury cases."
+                    },
+                    {
+                        "term": "Punitive damages",
+                        "anchor": "what-are-punitive-damages",
+                        "definition": "Money awarded on top of compensatory damages to punish extreme misconduct and deter it. Georgia caps punitive damages at $250,000 (O.C.G.A. § 51-12-5.1); South Carolina at the greater of three times compensatory damages or $500,000 (S.C. Code § 15-32-530)."
+                    },
+                    {
+                        "term": "Special damages",
+                        "definition": "The measurable financial losses an injury causes — medical expenses, lost income, lost earning capacity, and property damage — proved with bills, records, and expert projections. Also called economic damages."
+                    },
+                    {
+                        "term": "General damages",
+                        "definition": "Losses that arrive with no invoice: physical pain, mental anguish, disfigurement, and loss of enjoyment of life. Proved through testimony and medical records rather than receipts. Also called non-economic damages."
+                    }
+                ],
                 "_roden_key_takeaways": "Compensatory damages reimburse injury victims for medical bills, lost wages, and pain and suffering, while punitive damages punish extreme misconduct like drunk driving or fraud. Georgia caps punitive damages at $250,000 unless specific exceptions apply (O.C.G.A. § 51-12-5.1), and South Carolina caps them at the greater of three times compensatory damages or $500,000 (S.C. Code § 15-32-530) on clear and convincing evidence, a cap lifted where the defendant was intoxicated. Both damage types require thorough documentation and expert testimony to maximize recovery."
             }
         },
