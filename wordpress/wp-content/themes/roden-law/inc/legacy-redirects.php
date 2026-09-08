@@ -148,6 +148,56 @@ function roden_legacy_sitemap_redirects() {
    301 Redirects — old URLs → new URLs
    ------------------------------------------------------------------ */
 
+
+/**
+ * Resolve a redirect destination, falling back if it does not exist.
+ *
+ * WHY THIS EXISTS. A link audit on 2026-09-08 followed every internal redirect
+ * to its target and found three that 301 to a hard 404, carrying 56 internal
+ * links between them:
+ *
+ *   /savannah/personal-injury-lawyers/          -> /personal-injury-lawyers/savannah-ga/  (404)
+ *   /practice-areas/savannah/personal-injury-lawyers/  -> same 404
+ *   /brunswick/personal-injury-lawyer/          -> /personal-injury-lawyers/darien-ga/    (404)
+ *
+ * None of them was a typo. The city-and-practice pattern rules below COMPOSE a
+ * destination -- '/' . $pa_slug . '/' . $city_state . '/' -- and never check that
+ * the composed URL exists. It does exist for most pairs: /car-accident-lawyers/
+ * savannah-ga/ is a real page. It does not exist for personal injury in the two
+ * Georgia markets, because the city-and-practice permutations were only ever
+ * built for the four South Carolina cities.
+ *
+ * Patching the four map entries would have left the generator that produces the
+ * fifth. This check sits in front of every redirect instead, so a destination
+ * that stops existing degrades to the practice-area pillar rather than to a 404.
+ *
+ * A redirect to a 404 is worse than no redirect: the visitor and the crawler both
+ * follow it, and the dead end is one hop further from anything that would have
+ * told them so.
+ *
+ * @param string $dest Intended destination path, e.g. '/personal-injury-lawyers/savannah-ga/'.
+ * @return string A path that resolves.
+ */
+function roden_redirect_dest_or_fallback( $dest ) {
+	if ( url_to_postid( home_url( $dest ) ) ) {
+		return $dest;
+	}
+
+	/*
+	 * Not a post. It may still be a real route -- an archive, the blog index, a
+	 * template-only page -- none of which url_to_postid() can see. Only paths of
+	 * the composed /{practice}/{city-state}/ shape are second-guessed; anything
+	 * else is returned untouched so this can never break a working archive.
+	 */
+	if ( ! preg_match( '#^/([a-z0-9-]+-lawyers)/[a-z0-9-]+-(ga|sc)/$#', $dest, $m ) ) {
+		return $dest;
+	}
+
+	$pillar = '/practice-areas/' . $m[1] . '/';
+
+	return url_to_postid( home_url( $pillar ) ) ? $pillar : '/practice-areas/';
+}
+
 add_action( 'template_redirect', 'roden_legacy_content_redirects', 1 );
 
 function roden_legacy_content_redirects() {
@@ -193,7 +243,7 @@ function roden_legacy_content_redirects() {
             exit;
         }
 
-        wp_redirect( home_url( $dest ), 301 );
+        wp_redirect( home_url( roden_redirect_dest_or_fallback( $dest ) ), 301 );
         exit;
     }
 
@@ -286,7 +336,7 @@ function roden_legacy_content_redirects() {
         $city    = $m[1];
         $pa_slug = isset( $pa_slug_map[ $m[2] ] ) ? $pa_slug_map[ $m[2] ] : $m[2];
         $dest    = $city_dest[ $city ];
-        wp_redirect( home_url( '/' . $pa_slug . '/' . $dest . '/' ), 301 );
+        wp_redirect( home_url( roden_redirect_dest_or_fallback( '/' . $pa_slug . '/' . $dest . '/' ) ), 301 );
         exit;
     }
 
@@ -295,7 +345,7 @@ function roden_legacy_content_redirects() {
         $city    = $m[1];
         $pa_slug = isset( $pa_slug_map[ $m[2] ] ) ? $pa_slug_map[ $m[2] ] : $m[2];
         $dest    = $city_dest[ $city ];
-        wp_redirect( home_url( '/' . $pa_slug . '/' . $dest . '/' ), 301 );
+        wp_redirect( home_url( roden_redirect_dest_or_fallback( '/' . $pa_slug . '/' . $dest . '/' ) ), 301 );
         exit;
     }
 
@@ -317,7 +367,7 @@ function roden_legacy_content_redirects() {
         $city    = $m[1];
         $pa_slug = isset( $pa_slug_map[ $m[2] ] ) ? $pa_slug_map[ $m[2] ] : $m[2];
         $dest    = $city_dest[ $city ];
-        wp_redirect( home_url( '/' . $pa_slug . '/' . $dest . '/' ), 301 );
+        wp_redirect( home_url( roden_redirect_dest_or_fallback( '/' . $pa_slug . '/' . $dest . '/' ) ), 301 );
         exit;
     }
 
@@ -326,7 +376,7 @@ function roden_legacy_content_redirects() {
         $city    = $m[1];
         $pa_slug = isset( $pa_slug_map[ $m[2] ] ) ? $pa_slug_map[ $m[2] ] : $m[2];
         $dest    = $city_dest[ $city ];
-        wp_redirect( home_url( '/' . $pa_slug . '/' . $dest . '/' ), 301 );
+        wp_redirect( home_url( roden_redirect_dest_or_fallback( '/' . $pa_slug . '/' . $dest . '/' ) ), 301 );
         exit;
     }
 
