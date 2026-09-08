@@ -7,7 +7,7 @@
         "post",
         "page"
     ],
-    "_count": 1066,
+    "_count": 1067,
     "posts": {
         "/": {
             "type": "page",
@@ -22827,6 +22827,44 @@
                 "_roden_jurisdiction": "SC",
                 "_roden_pa_office_key": "north-charleston",
                 "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
+        "/personal-injury-lawyers/savannah-ga/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Personal Injury Lawyers in Savannah, GA",
+            "excerpt": "",
+            "meta": {
+                "_roden_author_attorney": "Eric Roden",
+                "_roden_faqs": [
+                    {
+                        "question": "How much does a Savannah personal injury lawyer cost?",
+                        "answer": "Nothing upfront. Roden Law handles Savannah personal injury cases on a contingency fee basis, which means you pay no attorney's fees unless and until we recover compensation for you. Your initial case review is free and confidential, and we advance the costs of investigating and building the case, so you can pursue a claim regardless of your financial situation."
+                    },
+                    {
+                        "question": "How long do I have to file a personal injury claim in Georgia?",
+                        "answer": "Generally two years from the date of the injury (O.C.G.A. § 9-3-33) — a full year less than South Carolina allows. Claims involving a government body run on much shorter clocks: six months' ante litem notice for a city (O.C.G.A. § 36-33-5), twelve months to present a claim to a county (O.C.G.A. § 36-11-1), and twelve months under the Georgia Tort Claims Act (O.C.G.A. § 50-21-26). Miss the notice and the two-year deadline never matters."
+                    },
+                    {
+                        "question": "Do you serve Pooler, Garden City, and Richmond Hill?",
+                        "answer": "Yes. Roden Law's Savannah office serves all of Chatham County and the surrounding coast, including Pooler, Garden City, Port Wentworth, Georgetown, Wilmington Island, Tybee Island, and Richmond Hill in Bryan County. Most non-felony injury cases from these communities are filed in the Chatham County State Court at 133 Montgomery Street."
+                    },
+                    {
+                        "question": "What if I was partly at fault for my Savannah accident?",
+                        "answer": "You may still recover. Georgia follows modified comparative negligence under O.C.G.A. § 51-12-33: you can recover as long as you are less than 50% at fault, though your award is reduced by your percentage of blame. At 50% or more you recover nothing, which is why insurers work to push your share of fault across that line — and why having an attorney investigate and rebut those arguments directly protects your recovery."
+                    },
+                    {
+                        "question": "How much is my Savannah personal injury case worth?",
+                        "answer": "It depends on the severity of your injuries, your documented losses, and the available insurance coverage. Georgia places no statutory cap on pain-and-suffering damages in ordinary injury cases, so recoveries are limited by the evidence rather than an arbitrary ceiling. In practice the real ceiling is often the policy: Georgia's minimum liability limits are $25,000 per person and $50,000 per accident, which is why uninsured and underinsured motorist coverage frequently decides what a serious claim is actually worth."
+                    },
+                    {
+                        "question": "Do I really need a lawyer for a personal injury claim?",
+                        "answer": "For a serious injury, yes — represented claimants typically recover more than those who negotiate alone, even after fees. An attorney identifies every liable party and insurance policy, handles the adjusters, meets Georgia's deadlines including the short government notice periods, and preserves evidence such as black-box data and driver logs before it is overwritten. Because Roden Law works on contingency, there is no financial downside to having experienced counsel evaluate your claim."
+                    }
+                ],
+                "_roden_jurisdiction": "georgia",
+                "_roden_pa_office_key": "savannah",
+                "_roden_sol_ga": "2 years (O.C.G.A. § 9-3-33)"
             }
         },
         "/practice-areas/atv-side-by-side-accident-lawyers/": {
