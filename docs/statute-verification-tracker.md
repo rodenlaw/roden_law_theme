@@ -28,9 +28,19 @@ the 201 unverified statutes average 2.0 pages each, against
 | #108 pass 2 | 14 | 0.08 limit cited to § 56-5-2930 on 5 pages; GA wrongful-death deadline cited to a definitions section |
 | #109 pass 3 | 12 | **an invented three-foot passing law for SC on 12 pages**; GA passing duty cited to § 40-6-292 |
 | pass 4 | 18 | **none** |
+| 2026-09-08 recheck | `SC 15-38-15` re-read | **31 instances on 23 pages** still cited it for the plaintiff's recovery bar — a class #97 had already corrected |
 
 **Three of four passes found a live error, and none surfaced from a sweep looking**
-**for something else.** Pass 4 is the first clean one — 18 statutes, 200+ assertions,
+**for something else.**
+
+**A CORRECTED CLASS CAN COME BACK.** #97 fixed 34 pages that cited § 15-38-15 for
+South Carolina's plaintiff bar; the rule is *Nelson v. Concrete Supply Co.*, and
+the section governs apportionment among defendants. On 2026-09-08 **thirty-one
+instances across twenty-three pages** were carrying it again — including the
+Charleston personal-injury page three times, and a dozen local-SEO blog posts that
+POSTDATE the fix. Remediating a class does not immunise it; the templates that
+generate new pages carry the error forward. Re-check a corrected class when new
+content ships against it. Pass 4 is the first clean one — 18 statutes, 200+ assertions,
 nothing wrong. Worth recording as loudly as the failures: the workers'-compensation
 schedules, the tort-claims caps, the helmet and crosswalk duties and the dram-shop
 conditions are all stated correctly, several of them word-for-word from the statute.
