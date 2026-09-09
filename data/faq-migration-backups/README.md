@@ -16,6 +16,7 @@ scratch directory.
 | `2026-09-09-embedded-schema-to-meta-before.json` | 87 | Inline JSON-LD `<script>` **and** the visible FAQ section removed; Q&A written to `_roden_faqs` (#121) |
 | `2026-09-09-damaged-schema-replaced-before.json` | 3 | Backslash-damaged inline JSON-LD removed; freshly authored FAQs written to `_roden_faqs` (#121) |
 | `2026-09-09-stale-ttd-figure-before.json` | 2 | Stale `$575` Georgia TTD weekly maximum replaced with the date-qualified figure |
+| `2026-09-09-hardcoded-review-lines-before.json` | 112 | Hand-typed "Last reviewed" line removed from the body; date moved to `_roden_last_reviewed` (also records `meta_before`) |
 
 ## Shape
 
