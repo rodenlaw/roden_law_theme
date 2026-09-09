@@ -53,11 +53,36 @@ Not broken, but every one dilutes and slows. The largest:
 | 19 | `/charleston/truck-accident-lawyers/` | `/truck-accident-lawyers/charleston-sc/` |
 | 18 | `/savannah/workers-compensation-lawyers/` | `/workers-compensation-lawyers/savannah-ga/` |
 
-**Not fixed here.** Unlike the 404s these are working links, and rewriting 858 of
-them is a bigger change than an audit should make unannounced. The three bare-pillar
-entries in that list (`/wrongful-death-lawyers/`, `/product-liability-lawyers/`,
-`/workers-compensation-lawyers/` — 63 links) are now handled on save by the new link
-guard, so they will drain as pages are edited.
+**FIXED 2026-09-08**, after the guards shipped in #112 so the map could be built
+against corrected destinations.
+
+| | Targets | Links | → 200 | → 301 |
+|---|---:|---:|---:|---:|
+| Before | 805 | 4,836 | 3,978 | **858** |
+| After | 662 | 4,823 | 4,759 | **64** |
+
+**858 → 64, and the 64 are not real.** They are links to `/`, which the WP Engine
+origin hostname 301s to the canonical domain; a visitor already on `rodenlaw.com`
+gets the homepage directly. Measured from the origin it looks like a hop. It is
+not one, and it was deliberately excluded from the rewrite.
+
+Distinct targets fell from 805 to 662 because 143 superseded URL shapes collapsed
+onto the canonical ones they had been redirecting to.
+
+The map was **generated, not hand-written**: every target resolved, every 301's
+`Location` read, and every destination re-tested for 200. A preflight refuses if
+any destination is itself a redirect source — none was, which is why this pass
+could not introduce a new hop. Shapes collapsed:
+
+| Targets | Shape |
+|---:|---|
+| 98 | `/practice-areas/{city}/{practice}/` → `/{practice}/{city-state}/` |
+| 40 | `/{city}/{practice}/` → `/{practice}/{city-state}/` |
+| 11 | `/blog-{slug}/` → `/blog/{slug}/` |
+| 6 | bare pillar roots → `/practice-areas/{slug}/` |
+| 27 | `/contact-us/`, `/who-we-are/*`, `/es/` city pages, slug renames |
+
+Script: `bin/fix-redirect-hops.php`.
 
 ## Finding 3 — anchor text pointing at pillars
 
