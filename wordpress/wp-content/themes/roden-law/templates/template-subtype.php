@@ -50,6 +50,9 @@
             <!-- AI Definition Block -->
             <?php roden_ai_definition_block( get_the_title() ); ?>
 
+            <!-- Key Takeaways — extractable summary box (see template-tags.php) -->
+            <?php roden_pa_key_takeaways_box( get_the_ID() ); ?>
+
             <!-- ═══════════════════════════════════════════════════════════
                  WHY HIRE SECTION (inherited from parent if not set)
                  ═══════════════════════════════════════════════════════════ -->

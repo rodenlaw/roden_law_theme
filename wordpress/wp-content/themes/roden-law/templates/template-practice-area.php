@@ -179,6 +179,9 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                  ═══════════════════════════════════════════════════════════ -->
             <?php roden_ai_definition_block( get_the_title(), $hero_intro ); ?>
 
+            <!-- Key Takeaways — extractable summary box (see template-tags.php) -->
+            <?php roden_pa_key_takeaways_box( get_the_ID() ); ?>
+
             <!-- ═══════════════════════════════════════════════════════════
                  SECTION 4: WHY HIRE A [Practice Area] LAWYER?
                  ═══════════════════════════════════════════════════════════ -->
