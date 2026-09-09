@@ -2314,6 +2314,201 @@ function roden_last_reviewed_html( $post_id = null ) {
 }
 
 /* ==========================================================================
+   KEY TAKEAWAYS — extractable summary box for practice-area pages
+   ========================================================================== */
+
+/**
+ * Strip the "Modified — recover if " prefix off a comparative-fault rule.
+ *
+ * THE /u MATTERS. firm-data stores "Modified — recover if less than 50% at
+ * fault" with a real em-dash. Without the unicode modifier the class [—-] is a
+ * class over the em-dash's three UTF-8 BYTES, which never matches the character,
+ * so preg_replace returns the subject unchanged. The caller's
+ * `if ( '' === $x )` fallback was written for an empty result and does not fire
+ * on an unchanged one, so the raw rule string flowed straight onto the page:
+ * 176 intersection pages read "you can still recover as long as you are
+ * Modified — recover if less than 50% at fault".
+ *
+ * @param string $rule Rule string from firm-data.
+ * @return string Threshold phrase, e.g. "less than 50% at fault".
+ */
+function roden_pa_fault_threshold( $rule ) {
+	$out = preg_replace( '/^Modified\s*(?:—|–|-)\s*recover if\s*/iu', '', (string) $rule );
+	$out = trim( (string) $out );
+	return '' !== $out ? $out : trim( (string) $rule );
+}
+
+/**
+ * Text for the Key Takeaways box on a practice-area page.
+ *
+ * WHY THIS IS SHARED. Four templates render practice-area pages and CLAUDE.md
+ * records that a fix applied to one is not applied to the others — "this has
+ * bitten twice." Intersections have had an auto-generated takeaways box for
+ * some time; pillars and sub-types render no summary box at all, leaving 206 of
+ * the firm's most commercial pages without the one above-the-fold block AI
+ * answer engines lift most readily.
+ *
+ * The single-state wording below is the intersection template's own, moved here
+ * verbatim so that wiring that template to this function changes nothing it
+ * renders. The only difference in its output is the fault-threshold fix above.
+ *
+ * NO NEW FACTS. Every value comes from roden_resolve_statute() and firm-data —
+ * the same source the deadline and comparative-fault sections further down the
+ * same page already display, so the box cannot drift from the page. The South
+ * Carolina fault rule is cited to Nelson v. Concrete Supply Co. because
+ * firm-data says so; hardcoding S.C. Code § 15-38-15 there is the error this
+ * repo has corrected twice, most recently in 6c0ee36.
+ *
+ * SPANISH PAGES AUTO-GENERATE NOTHING, matching the existing intersection
+ * behaviour: the phrasing is assembled from English firm-data strings and would
+ * emit mixed-language text on /es/. Set _roden_key_takeaways by hand there.
+ *
+ * @param int|null   $post_id Practice-area post. Defaults to current.
+ * @param array|null $office  Office row for an intersection page, else null.
+ * @return string Empty when nothing should render.
+ */
+function roden_pa_key_takeaways_text( $post_id = null, $office = null ) {
+	$post_id = $post_id ? $post_id : get_the_ID();
+
+	// A hand-written box always wins, on every tier.
+	$written = get_post_meta( $post_id, '_roden_key_takeaways', true );
+	if ( $written ) {
+		return $written;
+	}
+
+	$is_es = ( function_exists( 'roden_post_lang' ) && 'es' === roden_post_lang( $post_id ) )
+		|| ( function_exists( 'roden_current_lang' ) && 'es' === roden_current_lang() );
+	if ( $is_es ) {
+		return '';
+	}
+
+	$raw_noun = roden_pa_noun( '', $post_id );
+	$noun     = strtolower( trim( preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', $raw_noun ) ) );
+	if ( '' === $noun ) {
+		$noun = __( 'accident', 'roden-law' );
+	}
+	$article = in_array( substr( $noun, 0, 1 ), array( 'a', 'e', 'i', 'o', 'u' ), true ) ? 'an' : 'a';
+
+	// Which states does this page speak for?
+	if ( is_array( $office ) && ! empty( $office['state'] ) ) {
+		$keys = array( strtoupper( $office['state'] ) );
+	} else {
+		$jur  = strtolower( (string) get_post_meta( $post_id, '_roden_jurisdiction', true ) );
+		$keys = ( 'ga' === $jur ) ? array( 'GA' ) : ( ( 'sc' === $jur ) ? array( 'SC' ) : array( 'GA', 'SC' ) );
+	}
+
+	$law = array();
+	foreach ( $keys as $sk ) {
+		$r = roden_resolve_statute( $sk );
+		if ( $r ) {
+			$law[ $sk ] = $r;
+		}
+	}
+	if ( ! $law ) {
+		return '';
+	}
+
+	$statutory = false;
+	foreach ( $law as $r ) {
+		if ( ! empty( $r['is_override'] ) ) {
+			$statutory = true;
+		}
+	}
+
+	/* ---- single state ------------------------------------------------- */
+	if ( 1 === count( $law ) ) {
+		$r     = reset( $law );
+		$where = is_array( $office ) && ! empty( $office['market_name'] )
+			? $office['market_name'] . ', ' . $r['state_full']
+			: $r['state_full'];
+		$who   = is_array( $office ) && ! empty( $office['market_name'] )
+			? $office['market_name'] . ' '
+			: '';
+
+		if ( $statutory ) {
+			$deadline = sprintf(
+				/* translators: 1: number of years; 2: statute citation. */
+				_n( '%1$s year from the date of injury (%2$s)', '%1$s years from the date of injury (%2$s)', (int) $r['statute_years'], 'roden-law' ),
+				$r['statute_years'],
+				$r['statute_cite']
+			);
+			if ( $r['notice_detail'] && $r['filing_venue'] ) {
+				return sprintf(
+					/* translators: 1: place; 2: state name; 3: employer-notice phrase; 4: filing venue; 5: claim deadline; 6: city prefix or empty. */
+					__( 'If you were hurt on the job in %1$s, report the injury to your employer %3$s, then file your claim with the %4$s — %5$s. %2$s workers\' compensation is a no-fault system: you do not have to prove your employer was negligent, and being partly at fault does not bar benefits. It does not, however, pay for pain and suffering. If someone other than your employer contributed to the injury, a separate third-party claim may recover damages workers\' compensation cannot. Roden Law represents injured %6$sworkers on a contingency fee: the consultation is free and there is no fee unless we win.', 'roden-law' ),
+					$where, $r['state_full'], $r['notice_detail'], $r['filing_venue'], $deadline, $who
+				);
+			}
+			return sprintf(
+				/* translators: 1: place; 2: state name; 3: claim deadline; 4: city prefix or empty. */
+				__( 'If you were hurt on the job in %1$s, workers\' compensation runs on its own deadline — %3$s — and you must report the injury to your employer well before that date. %2$s workers\' compensation is a no-fault system: you do not have to prove your employer was negligent, and being partly at fault does not bar benefits. It does not, however, pay for pain and suffering. If someone other than your employer contributed to the injury, a separate third-party claim may recover damages workers\' compensation cannot. Roden Law represents injured %4$sworkers on a contingency fee: the consultation is free and there is no fee unless we win.', 'roden-law' ),
+				$where, $r['state_full'], $deadline, $who
+			);
+		}
+
+		return sprintf(
+			/* translators: 1: article; 2: practice-area noun; 3: place; 4: state name; 5: years; 6: citation; 7: fault threshold; 8: city prefix or empty. */
+			__( 'If you were injured in %1$s %2$s in %3$s, you generally have %5$s years from the date of injury to file a lawsuit (%6$s). %4$s follows a modified comparative negligence rule — you can still recover as long as you are %7$s, with your award reduced by your percentage of fault. There is no cap on compensatory damages in an ordinary %4$s injury case. Roden Law represents %8$sinjury victims on a contingency fee: the consultation is free and there is no fee unless we win.', 'roden-law' ),
+			$article, $noun, $where, $r['state_full'],
+			$r['statute_years'], $r['statute_cite'],
+			roden_pa_fault_threshold( $r['comp_fault_rule'] ),
+			$who
+		);
+	}
+
+	/* ---- both states -------------------------------------------------- */
+	$ga = isset( $law['GA'] ) ? $law['GA'] : null;
+	$sc = isset( $law['SC'] ) ? $law['SC'] : null;
+
+	if ( $statutory ) {
+		return sprintf(
+			/* translators: 1: GA years; 2: GA citation; 3: SC years; 4: SC citation. */
+			__( 'If you were hurt on the job, workers\' compensation runs on its own filing deadlines, separate from the personal injury statute of limitations: %1$s years from the date of injury in Georgia (%2$s) and %3$s years in South Carolina (%4$s). You must also report the injury to your employer well before those dates, and that notice deadline is much shorter. Workers\' compensation is a no-fault system: you do not have to prove your employer was negligent, and being partly at fault does not bar benefits. It does not, however, pay for pain and suffering. If someone other than your employer contributed to the injury, a separate third-party claim may recover damages workers\' compensation cannot. Roden Law represents injured workers in Georgia and South Carolina on a contingency fee: the consultation is free and there is no fee unless we win.', 'roden-law' ),
+			$ga['statute_years'], $ga['statute_cite'], $sc['statute_years'], $sc['statute_cite']
+		);
+	}
+
+	// "injured in a personal injury" reads badly on the personal-injury pillar.
+	$opening = ( 'personal injury' === $noun )
+		? __( 'If you were injured in Georgia or South Carolina', 'roden-law' )
+		: sprintf(
+			/* translators: 1: article "a"/"an"; 2: practice-area noun. */
+			__( 'If you were injured in %1$s %2$s in Georgia or South Carolina', 'roden-law' ),
+			$article,
+			$noun
+		);
+
+	return sprintf(
+		/* translators: 1: opening clause; 2: GA years; 3: GA citation; 4: SC years; 5: SC citation; 6: GA fault threshold; 7: GA fault citation; 8: SC fault threshold; 9: SC fault citation. */
+		__( '%1$s, the deadline to file a lawsuit is %2$s years from the date of injury in Georgia (%3$s) and %4$s years in South Carolina (%5$s). Both states follow a modified comparative negligence rule: Georgia lets you recover if you are %6$s (%7$s), and South Carolina if you are %8$s (%9$s), with your award reduced by your percentage of fault either way. Roden Law represents injury victims in Georgia and South Carolina on a contingency fee: the consultation is free and there is no fee unless we win.', 'roden-law' ),
+		$opening,
+		$ga['statute_years'], $ga['statute_cite'],
+		$sc['statute_years'], $sc['statute_cite'],
+		roden_pa_fault_threshold( $ga['comp_fault_rule'] ), $ga['comp_fault_cite'],
+		roden_pa_fault_threshold( $sc['comp_fault_rule'] ), $sc['comp_fault_cite']
+	);
+}
+
+/**
+ * Render the Key Takeaways box. Silent when there is nothing to say.
+ *
+ * @param int|null   $post_id Practice-area post.
+ * @param array|null $office  Office row for an intersection, else null.
+ */
+function roden_pa_key_takeaways_box( $post_id = null, $office = null ) {
+	$text = roden_pa_key_takeaways_text( $post_id, $office );
+	if ( ! $text ) {
+		return;
+	}
+	?>
+	<section class="key-takeaways-box" data-ai-extractable="true">
+		<h2 class="key-takeaways-title"><?php esc_html_e( 'Key Takeaways', 'roden-law' ); ?></h2>
+		<p><?php echo wp_kses_post( $text ); ?></p>
+	</section>
+	<?php
+}
+
+/* ==========================================================================
    FAQ ACCORDION (HTML output — FAQPage schema is JSON-LD only, in schema-helpers.php)
    ========================================================================== */
 

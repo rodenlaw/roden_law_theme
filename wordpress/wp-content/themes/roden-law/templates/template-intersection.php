@@ -256,77 +256,12 @@ $int_is_statutory = ( $int_statute && $int_statute['is_override'] );
 
             <!-- ═══════════════════════════════════════════════════════════
                  KEY TAKEAWAYS (extractable summary box for AI/snippets).
-                 Renders a hand-written _roden_key_takeaways if set; otherwise
-                 auto-generates a jurisdiction-aware summary from the office +
-                 firm-data law values already shown in the State Law box below
-                 (no new facts — resummarized for extractability, near-zero cost).
+                 Generator lives in inc/template-tags.php so the pillar and
+                 sub-type templates render the same box from the same values —
+                 CLAUDE.md records that a practice-area fix applied to one of
+                 these four templates and not the others "has bitten twice".
                  ═══════════════════════════════════════════════════════════ -->
-            <?php
-            $int_takeaways = get_post_meta( $post_id, '_roden_key_takeaways', true );
-            // Spanish intersections must seed _roden_key_takeaways — the
-            // auto-generator below derives its label/fault phrasing from
-            // English data (parent-title suffix strip, firm-data rule string)
-            // and would emit mixed-language text on /es/ pages.
-            $int_is_es = function_exists( 'roden_current_lang' ) && 'es' === roden_current_lang();
-            if ( ! $int_takeaways && $jurisdiction && ! $int_is_es ) {
-                $ta_label   = strtolower( preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', $parent_title ) );
-                if ( '' === $ta_label ) {
-                    $ta_label = __( 'accident', 'roden-law' );
-                }
-                $ta_article = in_array( strtolower( $ta_label[0] ), array( 'a', 'e', 'i', 'o', 'u' ), true ) ? 'an' : 'a';
-                // Derive a clean fault threshold from the canonical rule string
-                // ("Modified — recover if less than 51% at fault" → "less than 51% at fault").
-                $ta_fault = trim( preg_replace( '/^Modified\s*[—-]\s*recover if\s*/i', '', $jurisdiction['comp_fault_rule'] ) );
-                if ( '' === $ta_fault ) {
-                    $ta_fault = $jurisdiction['comp_fault_rule'];
-                }
-
-                $ta_statute = roden_resolve_statute( $office['state'] );
-
-                if ( $ta_statute && $ta_statute['is_override'] ) {
-                    /*
-                     * Statutory schemes (workers' compensation) need their own
-                     * summary. The tort paragraph below is wrong for them twice
-                     * over: it quotes the tort SOL instead of the claim-filing
-                     * deadline, and it asserts comparative negligence — which
-                     * has no application in a no-fault comp system.
-                     */
-                    $ta_deadline = sprintf(
-                        /* translators: 1: number of years; 2: statute citation. */
-                        _n( '%1$s year from the date of injury (%2$s)', '%1$s years from the date of injury (%2$s)', (int) $ta_statute['statute_years'], 'roden-law' ),
-                        $ta_statute['statute_years'],
-                        $ta_statute['statute_cite']
-                    );
-
-                    $int_takeaways = sprintf(
-                        /* translators: 1: city/market name; 2: state name; 3: employer-notice deadline phrase; 4: filing venue; 5: claim-filing deadline phrase. */
-                        __( 'If you were hurt on the job in %1$s, %2$s, report the injury to your employer %3$s, then file your claim with the %4$s — %5$s. %2$s workers\' compensation is a no-fault system: you do not have to prove your employer was negligent, and being partly at fault does not bar benefits. It does not, however, pay for pain and suffering. If someone other than your employer contributed to the injury, a separate third-party claim may recover damages workers\' compensation cannot. Roden Law represents injured %1$s workers on a contingency fee: the consultation is free and there is no fee unless we win.', 'roden-law' ),
-                        esc_html( $office['market_name'] ),
-                        esc_html( $office['state_full'] ),
-                        esc_html( $ta_statute['notice_detail'] ),
-                        esc_html( $ta_statute['filing_venue'] ),
-                        esc_html( $ta_deadline )
-                    );
-                } else {
-                    $int_takeaways = sprintf(
-                        /* translators: 1: article "a"/"an"; 2: accident type, e.g. "car accident"; 3: city/market name; 4: state name; 5: statute-of-limitations years; 6: statute citation; 7: fault threshold phrase, e.g. "less than 51% at fault". */
-                        __( 'If you were injured in %1$s %2$s in %3$s, %4$s, you generally have %5$s years from the date of injury to file a lawsuit (%6$s). %4$s follows a modified comparative negligence rule — you can still recover as long as you are %7$s, with your award reduced by your percentage of fault. There is no cap on compensatory damages in an ordinary %4$s injury case. Roden Law represents %3$s injury victims on a contingency fee: the consultation is free and there is no fee unless we win.', 'roden-law' ),
-                        esc_html( $ta_article ),
-                        esc_html( $ta_label ),
-                        esc_html( $office['market_name'] ),
-                        esc_html( $office['state_full'] ),
-                        esc_html( $ta_statute ? $ta_statute['statute_years'] : $jurisdiction['statute_years'] ),
-                        esc_html( $ta_statute ? $ta_statute['statute_cite'] : $jurisdiction['statute_cite'] ),
-                        esc_html( $ta_fault )
-                    );
-                }
-            }
-            if ( $int_takeaways ) : ?>
-            <section class="key-takeaways-box" data-ai-extractable="true">
-                <h2 class="key-takeaways-title"><?php esc_html_e( 'Key Takeaways', 'roden-law' ); ?></h2>
-                <p><?php echo wp_kses_post( $int_takeaways ); ?></p>
-            </section>
-            <?php endif; ?>
+            <?php roden_pa_key_takeaways_box( $post_id, $office ); ?>
 
             <!-- ═══════════════════════════════════════════════════════════
                  WHY HIRE SECTION (uses own content, then parent fallback)
