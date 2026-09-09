@@ -1,0 +1,304 @@
+{
+  "_note": "Verified legal claims permitted in generated FAQ answers. Hand-maintained. Every entry names the evidence that verified it. bin/verify-faq-drafts.php rejects any drafted answer citing an authority absent from this file, and any answer pairing a citation with a quantity this file does not allow.",
+  "_why": "FAQ answers publish twice - visibly via roden_faq_section() and as FAQPage JSON-LD via roden_schema_faq_page() - so a wrong deadline here is served to AI engines as structured data. Three separate incidents (workers' comp pages carrying the tort SOL, S.C. Code 15-38-15 cited for the plaintiff's bar, 15-78-50 cited for a Tort Claims Act deadline) were all this class of error. Recall is not a source; this file is.",
+  "_updated": "2026-09-09",
+  "authorities": {
+    "GA 9-3-33": {
+      "cite": "O.C.G.A. § 9-3-33",
+      "state": "GA",
+      "subject": "personal injury statute of limitations",
+      "claim": "Two years from the date of injury to file a personal injury lawsuit in Georgia.",
+      "quantities": [
+        "2 year",
+        "2 years",
+        "two year",
+        "two years"
+      ],
+      "forbidden_contexts": [
+        "workers compensation",
+        "workers' compensation",
+        "workers comp"
+      ],
+      "evidence": "226 instances across the existing FAQ corpus; canonical. Restricted from workers' comp contexts because that substitution is the documented 2026-07-30 / 07-31 incident."
+    },
+    "SC 15-3-530": {
+      "cite": "S.C. Code § 15-3-530",
+      "state": "SC",
+      "subject": "personal injury statute of limitations",
+      "claim": "Three years from the date of injury to file a personal injury lawsuit in South Carolina.",
+      "quantities": [
+        "3 year",
+        "3 years",
+        "three year",
+        "three years"
+      ],
+      "forbidden_contexts": [
+        "workers compensation",
+        "workers' compensation",
+        "workers comp"
+      ],
+      "evidence": "241 instances across the existing FAQ corpus; canonical. Same workers' comp restriction."
+    },
+    "GA 34-9-82": {
+      "cite": "O.C.G.A. § 34-9-82",
+      "state": "GA",
+      "subject": "workers' compensation limitation",
+      "claim": "One year from the date of the accident to file a workers' compensation claim in Georgia.",
+      "quantities": [
+        "1 year",
+        "one year"
+      ],
+      "evidence": "21 instances in the FAQ corpus; listed in bin/verify-statute-consistency.php $TARGETS."
+    },
+    "GA 34-9-80": {
+      "cite": "O.C.G.A. § 34-9-80",
+      "state": "GA",
+      "subject": "workers' compensation notice to employer",
+      "claim": "Notice of a workplace injury must be given to the employer within 30 days.",
+      "quantities": [
+        "30 day",
+        "30 days",
+        "thirty day",
+        "thirty days"
+      ],
+      "evidence": "Site-consistent across workers' comp practice-area pages. VERIFY BEFORE FIRST USE in a new answer."
+    },
+    "SC 42-15-40": {
+      "cite": "S.C. Code § 42-15-40",
+      "state": "SC",
+      "subject": "workers' compensation limitation",
+      "claim": "Two years from the date of the accident to file a workers' compensation claim in South Carolina.",
+      "quantities": [
+        "2 year",
+        "2 years",
+        "two year",
+        "two years"
+      ],
+      "evidence": "23 instances in the FAQ corpus, single consistent phrasing; listed in $TARGETS."
+    },
+    "SC 42-15-20": {
+      "cite": "S.C. Code § 42-15-20",
+      "state": "SC",
+      "subject": "workers' compensation notice to employer",
+      "claim": "Notice of a workplace injury must be given to the employer within 90 days.",
+      "quantities": [
+        "90 day",
+        "90 days",
+        "ninety day",
+        "ninety days"
+      ],
+      "evidence": "27 instances in the FAQ corpus."
+    },
+    "GA 51-12-33": {
+      "cite": "O.C.G.A. § 51-12-33",
+      "state": "GA",
+      "subject": "comparative fault and apportionment",
+      "claim": "Georgia bars recovery at 50% or more fault; award reduced by the plaintiff's share below that.",
+      "quantities": [
+        "50%",
+        "50 percent"
+      ],
+      "evidence": "116 instances; canonical for Georgia. Note the GA bar is 50%, the SC bar is 51% - do not swap."
+    },
+    "Nelson v. Concrete Supply Co.": {
+      "cite": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991)",
+      "state": "SC",
+      "subject": "comparative negligence bar (plaintiff)",
+      "claim": "South Carolina bars a plaintiff who is more than 50% at fault; recovery allowed at 50% or less, reduced by the plaintiff's share.",
+      "quantities": [
+        "50%",
+        "51%",
+        "50 percent",
+        "51 percent"
+      ],
+      "evidence": "bin/fix-nelson-comparative-bar.php. THIS, NOT S.C. Code 15-38-15, is the authority for the plaintiff's bar. 31 instances across 23 pages miscited 15-38-15 as recently as commit 6c0ee36."
+    },
+    "SC 15-38-15": {
+      "cite": "S.C. Code § 15-38-15",
+      "state": "SC",
+      "subject": "apportionment and joint-and-several liability among DEFENDANTS",
+      "claim": "Governs allocation of fault among defendants and joint-and-several liability. Does NOT establish the plaintiff's comparative-negligence bar.",
+      "quantities": [],
+      "forbidden_contexts": [],
+      "evidence": "bin/fix-nelson-comparative-bar.php. Correct only for defendant-side apportionment. Use Nelson for the plaintiff's bar.",
+      "requires_when_bar_discussed": "Nelson v. Concrete Supply Co."
+    },
+    "SC 15-78-110": {
+      "cite": "S.C. Code § 15-78-110",
+      "state": "SC",
+      "subject": "South Carolina Tort Claims Act limitation",
+      "claim": "An action against a governmental entity is barred unless commenced within two years of the date the loss was or should have been discovered.",
+      "quantities": [
+        "2 year",
+        "2 years",
+        "two year",
+        "two years"
+      ],
+      "evidence": "bin/fix-sctca-mandatory-notice.php."
+    },
+    "SC 15-78-80": {
+      "cite": "S.C. Code § 15-78-80",
+      "state": "SC",
+      "subject": "South Carolina Tort Claims Act verified claim (OPTIONAL)",
+      "claim": "Filing a verified claim with the entity within one year is OPTIONAL and extends the deadline to three years. There is no mandatory pre-suit notice under the SCTCA.",
+      "quantities": [
+        "1 year",
+        "one year",
+        "3 year",
+        "3 years",
+        "three year",
+        "three years"
+      ],
+      "forbidden_contexts": [
+        "must file a written notice",
+        "notice requirement",
+        "mandatory notice",
+        "required to notify",
+        "compliance with specific notice"
+      ],
+      "evidence": "bin/fix-sctca-mandatory-notice.php. Describing this as a requirement tells a reader with a live claim they have already lost it."
+    },
+    "GA 9-3-71": {
+      "cite": "O.C.G.A. § 9-3-71",
+      "state": "GA",
+      "subject": "medical malpractice statute of limitations",
+      "claim": "Two years from the date of injury or discovery, with a five-year statute of repose.",
+      "quantities": [
+        "2 year",
+        "two year",
+        "2 years",
+        "two years",
+        "5 year",
+        "five year"
+      ],
+      "evidence": "21 instances in the FAQ corpus."
+    },
+    "SC 15-3-545": {
+      "cite": "S.C. Code § 15-3-545",
+      "state": "SC",
+      "subject": "medical malpractice statute of limitations",
+      "claim": "Three years from the date of injury or discovery, with a six-year statute of repose.",
+      "quantities": [
+        "3 year",
+        "three year",
+        "3 years",
+        "three years",
+        "6 year",
+        "six year"
+      ],
+      "evidence": "26 instances in the FAQ corpus."
+    },
+    "GA 36-33-5": {
+      "cite": "O.C.G.A. § 36-33-5",
+      "state": "GA",
+      "subject": "municipal ante litem notice",
+      "claim": "Ante litem notice against a Georgia municipality must be presented within six months of the injury.",
+      "quantities": [
+        "6 month",
+        "six month",
+        "6 months",
+        "six months"
+      ],
+      "evidence": "Listed in $TARGETS; confirmed correct across 11 pages during the 2026-08-31 consistency run."
+    },
+    "GA 40-8-76.1": {
+      "cite": "O.C.G.A. § 40-8-76.1",
+      "state": "GA",
+      "subject": "seat belt non-use / seat belt defense",
+      "claim": "Following SB 68 (approved 2025-04-21), subsection (d) permits seat belt non-use to be admitted on negligence, comparative negligence, causation, assumption of risk and apportionment, and it may diminish recovery. There is NO percentage cap on that reduction.",
+      "quantities": [],
+      "forbidden_contexts": [
+        "5%",
+        "5 percent",
+        "percentage cap",
+        "capped at",
+        "up to a certain percentage"
+      ],
+      "evidence": "bin/en-fix-seatbelt-defense-sb68.php and bin/en-fix-seatbelt-faqs.php. Three pages previously asserted a 5% cap or a limit that does not exist anywhere in the Act."
+    },
+    "SC 56-5-6540": {
+      "cite": "S.C. Code § 56-5-6540",
+      "state": "SC",
+      "subject": "seat belt non-use / seat belt defense",
+      "claim": "Subsection (C) provides that a violation is not negligence per se or contributory negligence, and is NOT admissible as evidence in a civil action. Not 'limited' - inadmissible. There is no percentage.",
+      "quantities": [],
+      "forbidden_contexts": [
+        "limits how much",
+        "limited",
+        "reduce your recovery by",
+        "up to a certain percentage",
+        "can be considered"
+      ],
+      "evidence": "bin/en-fix-seatbelt-faqs.php. Three FAQ answers previously described SC as merely 'limiting' admissibility, which is wrong end to end."
+    },
+    "GA 40-6-270": {
+      "cite": "O.C.G.A. § 40-6-270",
+      "state": "GA",
+      "subject": "duty to stop and render aid after a collision",
+      "claim": "A driver involved in an accident must stop at the scene or as close as possible, give their name, address and vehicle registration number, show their driver's license, and render reasonable assistance to anyone injured.",
+      "quantities": [],
+      "evidence": "Stated in /blog/georgia-law-on-steps-after-car-accident/ post_content, which sets out the provision's requirements directly."
+    }
+  },
+  "banned_pairings": [
+    {
+      "pattern": "workers' compensation deadline cited to a tort statute",
+      "if_context": [
+        "workers compensation",
+        "workers' compensation",
+        "workers comp"
+      ],
+      "forbid_cites": [
+        "O.C.G.A. § 9-3-33",
+        "S.C. Code § 15-3-530"
+      ],
+      "evidence": "The 2026-07-30 incident (English posts) and its 2026-07-31 recurrence (Spanish twins). This is the single most repeated legal error on this site."
+    },
+    {
+      "pattern": "plaintiff's comparative bar attributed to the apportionment statute without Nelson",
+      "if_context": [
+        "% bar",
+        "percent bar",
+        "at fault",
+        "your recovery",
+        "recover as long as",
+        "recover only if"
+      ],
+      "forbid_cites_unless_present": {
+        "cite": "S.C. Code § 15-38-15",
+        "requires": "Nelson v. Concrete Supply"
+      },
+      "evidence": "bin/fix-nelson-comparative-bar.php - 31 surviving instances across 23 pages. 15-38-15 is correct for apportionment among DEFENDANTS; an answer discussing the PLAINTIFF's bar must attribute it to Nelson."
+    },
+    {
+      "pattern": "SCTCA described as imposing mandatory pre-suit notice",
+      "if_context": [
+        "tort claims act",
+        "governmental entity",
+        "government entity"
+      ],
+      "forbid_phrases": [
+        "must file a written notice",
+        "notice requirement",
+        "mandatory notice",
+        "required to notify"
+      ],
+      "evidence": "bin/fix-sctca-mandatory-notice.php."
+    },
+    {
+      "pattern": "seat belt defense described as capped at a percentage, or SC non-use described as merely limited",
+      "if_context": [
+        "seat belt",
+        "seatbelt"
+      ],
+      "forbid_phrases": [
+        "by up to 5",
+        "5% at most",
+        "percentage cap",
+        "limits how much a failure to wear",
+        "cannot be used to reduce your recovery by more than"
+      ],
+      "evidence": "bin/en-fix-seatbelt-faqs.php - GA has no cap post-SB 68; SC non-use is inadmissible, not limited."
+    }
+  ]
+}
