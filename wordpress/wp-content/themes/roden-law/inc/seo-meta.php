@@ -86,8 +86,21 @@ function roden_seo_title_optimization( $title_parts ) {
         $office_key = get_post_meta( get_the_ID(), '_roden_office_key', true );
         if ( $office_key && isset( $firm['offices'][ $office_key ] ) ) {
             $office = $firm['offices'][ $office_key ];
-            /* translators: %s: full state name, e.g. "Georgia". */
-            $title_parts['title'] .= sprintf( __( ' – %s Personal Injury Lawyers', 'roden-law' ), $office['state_full'] );
+            // Skip the suffix when the title already carries the practice
+            // keyword. EN office titles are bare place names ("Charleston,
+            // SC") and need it. ES office titles are authored with the
+            // keyword already in them ("Abogados de Lesiones Personales en
+            // Charleston, SC"), so the translated suffix printed the phrase
+            // a second time — all 6/6 Spanish office pages shipped
+            // 108–125-char titles with "Abogados de Lesiones Personales"
+            // duplicated. The neighborhood branch below has always carried
+            // this guard; this branch never did.
+            $lang    = function_exists( 'roden_post_lang' ) ? roden_post_lang( get_the_ID() ) : 'en';
+            $keyword = ( 'es' === $lang ) ? 'Abogados de Lesiones Personales' : 'lawyer';
+            if ( false === stripos( $title_parts['title'], $keyword ) ) {
+                /* translators: %s: full state name, e.g. "Georgia". */
+                $title_parts['title'] .= sprintf( __( ' – %s Personal Injury Lawyers', 'roden-law' ), $office['state_full'] );
+            }
         } elseif (
             // Neighborhood/city pages (no office key) otherwise title as the
             // bare place name ("Irmo – Roden Law") — no keyword, no state, and
