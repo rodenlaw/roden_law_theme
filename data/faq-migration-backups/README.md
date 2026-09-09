@@ -1,7 +1,7 @@
-# FAQ migration backups — 2026-09-09
+# Content-change backups — 2026-09-09
 
-Original `post_content` for every post whose body was edited by the FAQ campaign
-in PRs #120 and #121. Captured by the apply run **before** any write, in the same
+Original `post_content` for every post whose body was edited on 2026-09-09 — the
+FAQ campaign in PRs #120 and #121, plus the stale-TTD-figure correction. Captured by the apply run **before** any write, in the same
 shape as `data/es-relink-backups/`.
 
 `content/meta.json` records the FAQ meta these posts now carry. It does **not**
@@ -15,6 +15,7 @@ scratch directory.
 | `2026-09-09-visible-faq-to-meta-before.json` | 29 | Visible in-body FAQ section removed; its Q&A written to `_roden_faqs` (#120) |
 | `2026-09-09-embedded-schema-to-meta-before.json` | 87 | Inline JSON-LD `<script>` **and** the visible FAQ section removed; Q&A written to `_roden_faqs` (#121) |
 | `2026-09-09-damaged-schema-replaced-before.json` | 3 | Backslash-damaged inline JSON-LD removed; freshly authored FAQs written to `_roden_faqs` (#121) |
+| `2026-09-09-stale-ttd-figure-before.json` | 2 | Stale `$575` Georgia TTD weekly maximum replaced with the date-qualified figure |
 
 ## Shape
 
@@ -24,8 +25,10 @@ scratch directory.
 
 ## Restoring one post
 
-`post_content` only — restoring it does **not** clear `_roden_faqs`, so a post
-restored on its own will render its FAQ twice. Delete the meta in the same step:
+`post_content` only. For the three FAQ files, restoring does **not** clear
+`_roden_faqs`, so a post restored on its own will render its FAQ twice — delete
+the meta in the same step. The TTD file touched no meta, so restoring it is just
+the body write.
 
 ```php
 $b  = json_decode( file_get_contents( 'backup.json' ), true );
