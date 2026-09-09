@@ -28,10 +28,18 @@ the 201 unverified statutes average 2.0 pages each, against
 | #108 pass 2 | 14 | 0.08 limit cited to § 56-5-2930 on 5 pages; GA wrongful-death deadline cited to a definitions section |
 | #109 pass 3 | 12 | **an invented three-foot passing law for SC on 12 pages**; GA passing duty cited to § 40-6-292 |
 | pass 4 | 18 | **none** |
+| 2026-09-09 | `SC 15-78-50`, `-80`, `-110` re-read | **4 instances on 2 pages** cited § 15-78-50 — a section with no deadline in it — for a two-year notice requirement that is neither two years nor required |
 | 2026-09-08 recheck | `SC 15-38-15` re-read | **31 instances on 23 pages** still cited it for the plaintiff's recovery bar — a class #97 had already corrected |
 
 **Three of four passes found a live error, and none surfaced from a sweep looking**
 **for something else.**
+
+**A PAGE CAN CONTRADICT ITSELF ACROSS SURFACES.**
+/blog/rideshare-accident-i-26-tenmile-north-charleston/ cited § 15-78-50 for the
+Tort Claims Act deadline in its visible prose while its own FAQ structured data,
+in the same `post_content`, cited § 15-78-110. One was right. A sweep reading only
+one surface would have found either a clean page or a broken one depending on which
+it read.
 
 **A CORRECTED CLASS CAN COME BACK.** #97 fixed 34 pages that cited § 15-38-15 for
 South Carolina's plaintiff bar; the rule is *Nelson v. Concrete Supply Co.*, and
