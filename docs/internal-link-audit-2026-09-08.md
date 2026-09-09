@@ -127,6 +127,32 @@ The Port of Charleston one is the most interesting: the site has a Savannah port
 truck-routes resource and five pages linking to a Charleston twin that was never
 written. That is a content opening the link graph found by itself.
 
+**RESOLVED 2026-09-09.** 19 anchors across 14 pages, in two different ways:
+
+- **"Savannah personal injury attorneys"** had **6,110 impressions of query demand**
+  and a culled URL still earning **50,500**. That one got its page —
+  `/personal-injury-lawyers/savannah-ga/`.
+- **The rest have zero search demand.** No impression anywhere in the 13-month
+  export for Port of Charleston truck routes, US-17 Grand Strand, Highway 501,
+  Lexington County truck accidents, or road rash. Writing six pages to satisfy six
+  links is backwards, so each anchor was rewritten to name the page it actually
+  reaches.
+
+**Both the href and the anchor text changed.** Repointing alone would only relocate
+the mismatch — the reader would still be promised "Port of Charleston Truck Routes"
+and still not get it.
+
+One was unlinked rather than repointed: "Road rash and abrasion injuries" pointed at
+the burn-injury pillar. Road rash is not a burn, its list siblings are unlinked bold
+text, and no page covers it — so the link came out and the words stayed.
+
+Deliberately out of scope: roughly eighteen anchors of the form "I-26 car accident
+lawyers" that the local-SEO pipeline emits, pointing at the car or truck pillar.
+Those are descriptive rather than title-shaped, and rewriting a pipeline's standard
+cross-link pattern is a decision about the pipeline.
+
+Script: `bin/fix-phantom-page-anchors.php`.
+
 ## Method notes
 
 **Following a redirect from the WP Engine host is unreliable.** Redirect targets use
