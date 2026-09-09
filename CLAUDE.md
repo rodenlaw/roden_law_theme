@@ -142,6 +142,27 @@ site.
 
 ## Gotchas
 
+- **`wp_update_post()` and `wp_insert_post()` expect SLASHED data.** They call
+  `wp_unslash()` on what you hand them, so a literal backslash in `post_content` is
+  silently eaten. Always write `wp_update_post( wp_slash( $data ) )`.
+
+  This is not theoretical. On 2026-09-09, `bin/fix-redirect-hops.php` rewrote hrefs
+  and wrote back with a bare `wp_update_post()`. Four pages carried an inline
+  `<script type="application/ld+json">` FAQPage block whose answer text contained
+  escaped quotes — `\"Charleston, SC 29492\"`, `\"Period 3\"`. Every `\"`
+  collapsed to `"`, the blocks stopped parsing, and 24 FAQ questions silently left
+  the structured data. The href rewrite was correct; the write was not.
+
+  **It fails silently and only on some pages** — the ones whose content happens to
+  contain a backslash. A script can run clean against 300 posts and corrupt four.
+  Nothing in the dry run shows it, because the damage happens inside WordPress
+  after the string you inspected was correct.
+
+  As of that date 43 scripts in `bin/` write `post_content` without `wp_slash()`.
+  Most are spent one-shots; the ones re-run should be fixed as they are touched.
+  **After any bulk content write, re-validate every embedded JSON-LD block** —
+  `bin/repair-jsonld-backslash-damage.php` shows the check.
+
 - **Cache busting is manual.** `inc/enqueue.php` versions assets off the `Version:` line in
   `style.css`. Any CSS/JS change must bump it. After deploy, flush both layers from
   `~/sites/rodenlawprod`: `wp cache flush` **and** `wp page-cache flush`.
