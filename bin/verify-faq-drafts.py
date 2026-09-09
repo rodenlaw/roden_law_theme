@@ -106,11 +106,27 @@ for path, entries in drafts.items():
         verbatim = len(na) > 60 and na[:120] in norm(body)
 
         # The documented recurring error: 15-38-15 given as the authority for the
-        # PLAINTIFF's bar. Correct where it covers apportionment among defendants
-        # AND Nelson carries the bar, so the discriminator is Nelson's presence.
-        if "15-38-15" in a.replace(" ", "") and re.search(r"\b(bar|at fault|recover)\b", al):
-            if "nelson" not in al:
-                fails.append((path, tag, "S.C. Code 15-38-15 used where the plaintiff's bar is discussed without citing Nelson v. Concrete Supply Co."))
+        # PLAINTIFF's bar. It is CORRECT for apportionment among defendants and
+        # for joint-and-several liability, so the discriminator is what the
+        # citation is attached to - not whether Nelson appears somewhere in the
+        # same answer. An answer may state the bar without attributing it to any
+        # statute and then cite 15-38-15 purely for apportionment; that is right,
+        # and keying on Nelson's presence flagged exactly such an answer.
+        APPORTION = ("apportion", "among defendants", "among multiple defendants",
+                     "joint and several", "allocat")
+        BAR_CTX = re.compile(r"\b(bar|at fault|recover)\b")
+        for cm in re.finditer(r"15-38-15", a):
+            # Look BOTH SIDES: the apportionment clause legitimately sits either
+            # before the citation ("fault among defendants is apportioned under
+            # § 15-38-15") or after it ("§ 15-38-15 governs apportionment").
+            near = al[max(0, cm.start() - 110):cm.end() + 110]
+            if any(w in near for w in APPORTION) or "defendant" in near:
+                continue  # attached to apportionment - the correct use
+            if BAR_CTX.search(al) and "nelson" not in near:
+                fails.append((path, tag,
+                    "S.C. Code 15-38-15 cited for the plaintiff's bar - that authority is "
+                    "Nelson v. Concrete Supply Co.; 15-38-15 governs apportionment among defendants"))
+                break
 
         # ---- 1. every citation must be in the registry ----
         cites_found = []

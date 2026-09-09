@@ -2,8 +2,15 @@
 /**
  * Migrate an in-body FAQ section into _roden_faqs meta.
  *
- * Payload: { "<permalink path>": { "faqs": [ {question, answer}, ... ],
- *                                  "block": "<exact post_content substring to remove>" } }
+ * Payload: { "<permalink path>": { "faqs":   [ {question, answer}, ... ],
+ *                                  "blocks": [ "<exact post_content substring to remove>", ... ] } }
+ *
+ * `blocks` is a LIST because the removals are not contiguous. On the
+ * embedded-schema posts the visible FAQ section and the inline JSON-LD script
+ * sit at opposite ends of an "About the Author" block — 82 of 90 carry one —
+ * and that attribution is load-bearing E-E-A-T content that has to survive.
+ * A single start..end range would have deleted it. Legacy single-string
+ * "block" is still accepted.
  * injected as RODEN_SEED_JSON by bin/build-faq-migration.sh.
  *
  * WHY THIS EXISTS
@@ -64,12 +71,12 @@ $backup  = array();
 
 foreach ( $payload as $path => $spec ) {
 
-	$faqs  = isset( $spec['faqs'] ) ? $spec['faqs'] : null;
-	$block = isset( $spec['block'] ) ? $spec['block'] : null;
+	$faqs   = isset( $spec['faqs'] ) ? $spec['faqs'] : null;
+	$blocks = isset( $spec['blocks'] ) ? $spec['blocks'] : ( isset( $spec['block'] ) ? array( $spec['block'] ) : null );
 
-	if ( ! is_array( $faqs ) || count( $faqs ) < 4 || count( $faqs ) > 8 || ! $block ) {
-		printf( "FAIL  %s\n      malformed entry (%d faqs, block %s)\n",
-			$path, is_array( $faqs ) ? count( $faqs ) : 0, $block ? 'present' : 'MISSING' );
+	if ( ! is_array( $faqs ) || count( $faqs ) < 4 || count( $faqs ) > 8 || ! is_array( $blocks ) || ! $blocks ) {
+		printf( "FAIL  %s\n      malformed entry (%d faqs, %d blocks)\n",
+			$path, is_array( $faqs ) ? count( $faqs ) : 0, is_array( $blocks ) ? count( $blocks ) : 0 );
 		$failed++;
 		continue;
 	}
@@ -107,23 +114,49 @@ foreach ( $payload as $path => $spec ) {
 		continue;
 	}
 
-	$content = $post->post_content;
-	$pos     = strpos( $content, $block );
-	if ( false === $pos ) {
-		printf( "SKIP  %s\n      body FAQ block no longer matches (post edited since payload was built)\n", $path );
-		$skipped++;
+	$content     = $post->post_content;
+	$new_content = $content;
+	$removed     = 0;
+	$bad         = false;
+
+	foreach ( $blocks as $block ) {
+		$pos = strpos( $new_content, $block );
+		if ( false === $pos ) {
+			printf( "SKIP  %s\n      a block no longer matches (post edited since payload was built)\n", $path );
+			$skipped++;
+			$bad = true;
+			break;
+		}
+		if ( strpos( $new_content, $block, $pos + 1 ) !== false ) {
+			printf( "FAIL  %s\n      a block appears more than once - refusing to guess\n", $path );
+			$failed++;
+			$bad = true;
+			break;
+		}
+		$new_content = substr_replace( $new_content, '', $pos, strlen( $block ) );
+		$removed    += strlen( $block );
+	}
+	if ( $bad ) {
 		continue;
 	}
-	if ( strpos( $content, $block, $pos + 1 ) !== false ) {
-		printf( "FAIL  %s\n      block appears more than once - refusing to guess\n", $path );
+
+	if ( strlen( $content ) - strlen( $new_content ) !== $removed ) {
+		printf( "FAIL  %s\n      removal length mismatch\n", $path );
 		$failed++;
 		continue;
 	}
 
-	$new_content = substr_replace( $content, '', $pos, strlen( $block ) );
-	if ( strlen( $content ) - strlen( $new_content ) !== strlen( $block ) ) {
-		printf( "FAIL  %s\n      removal length mismatch\n", $path );
-		$failed++;
+	// Attribution must survive. 82 of these posts carry an author block between
+	// the two removals; losing it would strip the page's E-E-A-T signal silently.
+	foreach ( array( 'About the Author', 'Sobre el Autor', 'Acerca del Autor' ) as $marker ) {
+		if ( false !== strpos( $content, $marker ) && false === strpos( $new_content, $marker ) ) {
+			printf( "FAIL  %s\n      removal would delete the \"%s\" block\n", $path, $marker );
+			$failed++;
+			$bad = true;
+			break;
+		}
+	}
+	if ( $bad ) {
 		continue;
 	}
 
@@ -137,9 +170,9 @@ foreach ( $payload as $path => $spec ) {
 		$clean[] = array( 'question' => (string) $f['question'], 'answer' => (string) $f['answer'] );
 	}
 
-	printf( "%s  %s\n      post %d, %d FAQs -> meta, removing %d chars from body (%d -> %d)\n",
+	printf( "%s  %s\n      post %d, %d FAQs -> meta, %d block(s) removing %d chars (%d -> %d)\n",
 		'apply' === $mode ? 'WRITE' : 'WOULD', $path, $post_id,
-		count( $clean ), strlen( $block ), strlen( $content ), strlen( $new_content ) );
+		count( $clean ), count( $blocks ), $removed, strlen( $content ), strlen( $new_content ) );
 
 	if ( 'apply' === $mode ) {
 		$backup[ $path ] = array( 'id' => $post_id, 'post_content' => $content );
@@ -154,11 +187,16 @@ foreach ( $payload as $path => $spec ) {
 
 		clean_post_cache( $post_id );
 		$rb_meta = get_post_meta( $post_id, '_roden_faqs', true );
-		$rb_body = get_post_field( 'post_content', $post_id );
-		if ( ! is_array( $rb_meta ) || count( $rb_meta ) !== count( $clean ) || strpos( $rb_body, $block ) !== false ) {
-			printf( "      !! READBACK MISMATCH - meta=%d expected=%d, block still present=%s\n",
-				is_array( $rb_meta ) ? count( $rb_meta ) : 0, count( $clean ),
-				strpos( $rb_body, $block ) !== false ? 'YES' : 'no' );
+		$rb_body  = get_post_field( 'post_content', $post_id );
+		$leftover = 0;
+		foreach ( $blocks as $block ) {
+			if ( false !== strpos( $rb_body, $block ) ) {
+				$leftover++;
+			}
+		}
+		if ( ! is_array( $rb_meta ) || count( $rb_meta ) !== count( $clean ) || $leftover ) {
+			printf( "      !! READBACK MISMATCH - meta=%d expected=%d, blocks still present=%d\n",
+				is_array( $rb_meta ) ? count( $rb_meta ) : 0, count( $clean ), $leftover );
 			$failed++;
 			continue;
 		}
