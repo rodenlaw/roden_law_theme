@@ -144,7 +144,7 @@ foreach ( $ids as $id ) {
 		if ( ! $APPLY ) { continue; }
 
 		if ( 'post_content' === $sn ) {
-			$res = wp_update_post( array( 'ID' => $id, 'post_content' => $new ), true );
+			$res = wp_update_post( wp_slash( array( 'ID' => $id, 'post_content' => $new ) ), true );
 			if ( is_wp_error( $res ) ) { echo "ERROR $id: " . $res->get_error_message() . "\n"; }
 		} elseif ( $is_array ) {
 			$dec = json_decode( $new, true );

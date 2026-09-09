@@ -139,7 +139,7 @@ $postarr = array(
 if ( $existing ) {
     $postarr['ID'] = $existing[0]->ID;
 }
-$id = wp_insert_post( $postarr, true );
+$id = wp_insert_post( wp_slash( $postarr ) , true );
 if ( is_wp_error( $id ) ) {
     fprintf( $err, "ABORT: %s\n", $id->get_error_message() );
     exit( 1 );

@@ -183,7 +183,7 @@ foreach ( $rows as $id ) {
 
     if ( $APPLY ) {
         if ( $content !== $post->post_content ) {
-            wp_update_post( array( 'ID' => $id, 'post_content' => $content ), true );
+            wp_update_post( wp_slash( array( 'ID' => $id, 'post_content' => $content ) ), true );
         }
         if ( $kt !== $kt_old ) { update_post_meta( $id, '_roden_key_takeaways', $kt ); }
         if ( $faqs_new !== $faqs ) { update_post_meta( $id, '_roden_faqs', $faqs_new ); }

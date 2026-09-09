@@ -158,10 +158,14 @@ site.
   Nothing in the dry run shows it, because the damage happens inside WordPress
   after the string you inspected was correct.
 
-  As of that date 43 scripts in `bin/` write `post_content` without `wp_slash()`.
-  Most are spent one-shots; the ones re-run should be fixed as they are touched.
-  **After any bulk content write, re-validate every embedded JSON-LD block** —
-  `bin/repair-jsonld-backslash-damage.php` shows the check.
+  All 43 call sites in `bin/` were fixed on 2026-09-09, including the spent
+  one-shots — a script that reads as correct and is not is a trap, and these get
+  re-run. `update_post_meta()` unslashes too, so the same rule applies there.
+
+  **`bin/check-unslashed-post-writes.php` is the standing guard.** Run it from a
+  checkout for the static scan of `bin/`, or pipe it to `wp eval-file -` to
+  validate every embedded JSON-LD block on the live site. It exits non-zero on
+  either failure, so it can gate a deploy. Run it after any bulk content write.
 
 - **Cache busting is manual.** `inc/enqueue.php` versions assets off the `Version:` line in
   `style.css`. Any CSS/JS change must bump it. After deploy, flush both layers from

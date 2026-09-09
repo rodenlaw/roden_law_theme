@@ -93,7 +93,7 @@ if ( 'dry-run' === $mode ) {
 
 foreach ( $buffers as $b ) {
 	if ( 'post_content' === $b['field'] ) {
-		$res = wp_update_post( array( 'ID' => $b['id'], 'post_content' => $b['value'] ), true );
+		$res = wp_update_post( wp_slash( array( 'ID' => $b['id'], 'post_content' => $b['value'] ) ), true );
 		if ( is_wp_error( $res ) ) {
 			printf( "FAILED post %d: %s\n", $b['id'], $res->get_error_message() );
 			exit( 1 );

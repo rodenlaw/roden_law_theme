@@ -210,7 +210,7 @@ foreach ( $posts as $p ) {
 	if ( ! $apply ) { continue; }
 
 	if ( $updates ) {
-		$res = wp_update_post( array_merge( array( 'ID' => $p->ID ), $updates ), true );
+		$res = wp_update_post( wp_slash(array_merge( array( 'ID' => $p->ID ), $updates ) ), true );
 		if ( is_wp_error( $res ) ) {
 			printf( "  ERROR #%d %s\n", $p->ID, $res->get_error_message() );
 			continue;

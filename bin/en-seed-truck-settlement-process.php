@@ -163,9 +163,9 @@ if ( $post_id ) {
 	if ( ! $do_pub && 'publish' === $existing[0]->post_status ) {
 		unset( $postarr['post_status'] );
 	}
-	$res = wp_update_post( $postarr, true );
+	$res = wp_update_post( wp_slash( $postarr ) , true );
 } else {
-	$res = wp_insert_post( $postarr, true );
+	$res = wp_insert_post( wp_slash( $postarr ) , true );
 }
 if ( is_wp_error( $res ) ) {
 	fwrite( STDERR, 'FATAL: ' . $res->get_error_message() . "\n" );

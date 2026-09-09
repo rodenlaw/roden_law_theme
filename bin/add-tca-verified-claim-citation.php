@@ -129,7 +129,7 @@ foreach ( $rows as $id ) {
         continue;
     }
     $backups[ $id ] = array( 'url' => get_permalink( $id ), 'post_content' => $post->post_content );
-    wp_update_post( array( 'ID' => $id, 'post_content' => $new ), true );
+    wp_update_post( wp_slash( array( 'ID' => $id, 'post_content' => $new ) ), true );
     update_post_meta( $id, '_roden_last_reviewed', current_time( 'Y-m-d' ) );
     clean_post_cache( $id );
 }

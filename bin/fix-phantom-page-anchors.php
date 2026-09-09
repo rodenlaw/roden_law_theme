@@ -149,7 +149,7 @@ foreach ( $EDITS as $slug => $list ) {
 	printf( "%s %-52s +%d\n", $APPLY ? 'APPLY ' : 'DRYRUN', $slug, $n );
 
 	if ( ! $APPLY ) { continue; }
-	$r = wp_update_post( array( 'ID' => $p->ID, 'post_content' => $c ), true );
+	$r = wp_update_post( wp_slash( array( 'ID' => $p->ID, 'post_content' => $c ) ), true );
 	if ( is_wp_error( $r ) ) { echo "   ERROR " . $r->get_error_message() . "\n"; $ok = false; }
 }
 

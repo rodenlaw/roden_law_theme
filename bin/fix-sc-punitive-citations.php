@@ -133,7 +133,7 @@ foreach ( $EDITS as $e ) {
     }
 
     if ( 'post_content' === $e['field'] ) {
-        wp_update_post( array( 'ID' => $e['id'], 'post_content' => str_replace( $e['search'], $e['replace'], $post->post_content ) ), true );
+        wp_update_post( wp_slash( array( 'ID' => $e['id'], 'post_content' => str_replace( $e['search'], $e['replace'], $post->post_content ) ) ), true );
     } else {
         $faqs = maybe_unserialize( get_post_meta( $e['id'], '_roden_faqs', true ) );
         if ( is_string( $faqs ) ) {

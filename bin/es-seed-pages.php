@@ -175,7 +175,7 @@ foreach ( $payload as $en_path => $d ) {
 		continue;
 	}
 
-	$es_id = wp_insert_post( $postarr, true );
+	$es_id = wp_insert_post( wp_slash( $postarr ) , true );
 	if ( is_wp_error( $es_id ) ) {
 		printf( "ERROR  %-52s %s\n", $en_path, $es_id->get_error_message() );
 		$errors++;

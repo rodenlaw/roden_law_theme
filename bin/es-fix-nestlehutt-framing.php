@@ -28,7 +28,7 @@ printf("body match: %s\nfaq match : %s\n", $hit_body?'yes':'NO', $hit_faq>=0?('f
 if ( ! $hit_body || $hit_faq < 0 ) { echo "\nAborting — text did not match exactly; nothing changed.\n"; exit(1); }
 
 if ( 'apply' === $mode ) {
-    $res = wp_update_post(array('ID'=>$p->ID,'post_content'=>str_replace($body_from,$body_to,$c)), true);
+    $res = wp_update_post( wp_slash( array('ID'=>$p->ID,'post_content'=>str_replace($body_from,$body_to,$c)) ), true );
     if ( is_wp_error($res) ) { echo "FAILED: ".$res->get_error_message()."\n"; exit(1); }
     $faqs[$hit_faq]['answer'] = str_replace($faq_from,$faq_to,$faqs[$hit_faq]['answer']);
     update_post_meta($p->ID,'_roden_faqs',$faqs);
