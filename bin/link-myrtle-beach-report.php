@@ -62,10 +62,10 @@ if ( ! $apply ) {
 
 echo "\nBACKUP-JSON: " . wp_json_encode( array( 'post_id' => 4537, 'post_content' => $post->post_content ) ) . "\n";
 
-wp_update_post( array(
+wp_update_post( wp_slash( array(
     'ID'           => 4537,
     'post_content' => str_replace( $search, $replace, $post->post_content ),
-), true );
+) ), true );
 clean_post_cache( 4537 );
 
 $after = get_post( 4537 );

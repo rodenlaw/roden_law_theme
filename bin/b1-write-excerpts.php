@@ -378,7 +378,7 @@ foreach ( $EXCERPTS as $slug => $excerpt ) {
     }
 
     $backups[ $post->ID ] = array( 'url' => get_permalink( $post->ID ), 'post_excerpt' => $post->post_excerpt );
-    wp_update_post( array( 'ID' => $post->ID, 'post_excerpt' => $excerpt ), true );
+    wp_update_post( wp_slash( array( 'ID' => $post->ID, 'post_excerpt' => $excerpt ) ), true );
     clean_post_cache( $post->ID );
 }
 

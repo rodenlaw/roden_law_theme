@@ -78,7 +78,7 @@ if ( ! $APPLY ) { echo "\nDRY RUN — nothing written\n"; return; }
 $lift = function () { return false; };
 add_filter( 'roden_location_freeze_active', $lift );
 
-$id = wp_insert_post( array(
+$id = wp_insert_post( wp_slash( array(
 	'post_type'    => 'practice_area',
 	'post_status'  => 'publish',
 	'post_title'   => $P['title'],
@@ -86,7 +86,7 @@ $id = wp_insert_post( array(
 	'post_parent'  => $P['parent'],
 	'post_content' => $P['content'],
 	'post_author'  => $parent->post_author,
-), true );
+) ), true );
 
 remove_filter( 'roden_location_freeze_active', $lift );
 

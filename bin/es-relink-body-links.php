@@ -162,7 +162,7 @@ foreach ( $posts as $p ) {
 	);
 
 	if ( 'apply' === $mode ) {
-		$res = wp_update_post( array( 'ID' => $p->ID, 'post_content' => $after ), true );
+		$res = wp_update_post( wp_slash( array( 'ID' => $p->ID, 'post_content' => $after ) ), true );
 		if ( is_wp_error( $res ) ) {
 			fwrite( STDERR, sprintf( "FAILED %d: %s\n", $p->ID, $res->get_error_message() ) );
 			exit( 1 );

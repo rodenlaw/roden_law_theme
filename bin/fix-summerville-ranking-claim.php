@@ -121,7 +121,7 @@ if ( ! $apply ) {
 	exit( 0 );
 }
 
-$res = wp_update_post( array( 'ID' => $post_id, 'post_content' => $content ), true );
+$res = wp_update_post( wp_slash( array( 'ID' => $post_id, 'post_content' => $content ) ), true );
 if ( is_wp_error( $res ) ) {
 	printf( "ERROR  %s\n", $res->get_error_message() );
 	exit( 1 );

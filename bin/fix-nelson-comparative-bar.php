@@ -66,7 +66,7 @@ foreach ( $EDITS as $n => $e ) {
 
 	$new = str_replace( $e['old'], $e['new'], $hay );
 	if ( 'post_content' === $sn ) {
-		$r = wp_update_post( array( 'ID' => $id, 'post_content' => $new ), true );
+		$r = wp_update_post( wp_slash( array( 'ID' => $id, 'post_content' => $new ) ), true );
 		if ( is_wp_error( $r ) ) { echo "   ERROR " . $r->get_error_message() . "\n"; $ok = false; }
 	} elseif ( $is_array ) {
 		$dec = json_decode( $new, true );

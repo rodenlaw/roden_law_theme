@@ -85,7 +85,7 @@ foreach ( $EDITS as $i => $e ) {
 	printf( "%s #%d  %s\n", $APPLY ? 'APPLY ' : 'DRYRUN', $i, $slug );
 
 	if ( ! $APPLY ) { continue; }
-	$r = wp_update_post( array( 'ID' => $p->ID, 'post_content' => str_replace( $old, $new, $c ) ), true );
+	$r = wp_update_post( wp_slash( array( 'ID' => $p->ID, 'post_content' => str_replace( $old, $new, $c ) ) ), true );
 	if ( is_wp_error( $r ) ) { echo "   ERROR " . $r->get_error_message() . "\n"; $ok = false; }
 }
 

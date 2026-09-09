@@ -153,7 +153,7 @@ echo 'BACKUP-JSON: ' . wp_json_encode( array(
     '_roden_key_takeaways' => $kt_old,
 ) ) . "\n";
 
-wp_update_post( array( 'ID' => $id, 'post_content' => $content ), true );
+wp_update_post( wp_slash( array( 'ID' => $id, 'post_content' => $content ) ), true );
 update_post_meta( $id, '_roden_faqs', $faqs );
 update_post_meta( $id, '_roden_key_takeaways', $kt );
 update_post_meta( $id, '_roden_last_reviewed', current_time( 'Y-m-d' ) );

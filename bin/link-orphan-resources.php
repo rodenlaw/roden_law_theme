@@ -142,7 +142,7 @@ foreach ( $PLAN as $hslug => $adds ) {
 		( $new === $c ) ? '  (NO CHANGE)' : '' );
 
 	if ( $APPLY ) {
-		$res = wp_update_post( array( 'ID' => $h->ID, 'post_content' => $new ), true );
+		$res = wp_update_post( wp_slash( array( 'ID' => $h->ID, 'post_content' => $new ) ), true );
 		if ( is_wp_error( $res ) ) { echo "   ERROR " . $res->get_error_message() . "\n"; }
 	}
 }

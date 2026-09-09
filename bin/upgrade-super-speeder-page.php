@@ -71,14 +71,11 @@ $backup = array(
 );
 echo "\nBACKUP-JSON: " . wp_json_encode( $backup ) . "\n";
 
-$res = wp_update_post(
-    array(
+$res = wp_update_post( wp_slash( array(
         'ID'           => $id,
         'post_title'   => $new_title,
         'post_excerpt' => $new_excerpt,
-    ),
-    true
-);
+    ) ), true );
 
 if ( is_wp_error( $res ) ) {
     echo "FAILED: " . $res->get_error_message() . "\n";

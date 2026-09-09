@@ -118,7 +118,7 @@ foreach ( $payload['edits'] as $e ) {
 		continue;
 	}
 
-	$res = wp_update_post( array( 'ID' => $id, 'post_content' => $new ), true );
+	$res = wp_update_post( wp_slash( array( 'ID' => $id, 'post_content' => $new ) ), true );
 	if ( is_wp_error( $res ) ) {
 		echo '  FAIL   ' . $res->get_error_message() . "\n";
 		$failed++;

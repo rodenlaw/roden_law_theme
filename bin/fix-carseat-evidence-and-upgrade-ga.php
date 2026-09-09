@@ -271,17 +271,17 @@ if ( ! $APPLY ) {
 
 $today = current_time( 'Y-m-d' );
 
-wp_update_post( array( 'ID' => 4813, 'post_content' => $sc_content ), true );
+wp_update_post( wp_slash( array( 'ID' => 4813, 'post_content' => $sc_content ) ), true );
 update_post_meta( 4813, '_roden_key_takeaways', $sc_kt );
 update_post_meta( 4813, '_roden_faqs', $faqs );
 update_post_meta( 4813, '_roden_last_reviewed', $today );
 
-wp_update_post( array(
+wp_update_post( wp_slash( array(
     'ID'           => 1874,
     'post_title'   => $ga_title,
     'post_excerpt' => $ga_excerpt,
     'post_content' => $ga_content,
-), true );
+) ), true );
 update_post_meta( 1874, 'custom_h1_title', $ga_title );
 update_post_meta( 1874, '_roden_meta_description', $ga_excerpt );
 update_post_meta( 1874, '_roden_key_takeaways', $ga_kt );

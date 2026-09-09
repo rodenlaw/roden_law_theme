@@ -117,7 +117,7 @@ if ( ! $APPLY ) {
 }
 
 if ( ! $has_block ) {
-	$res = wp_update_post( array( 'ID' => $POST_ID, 'post_content' => $block . $content ), true );
+	$res = wp_update_post( wp_slash( array( 'ID' => $POST_ID, 'post_content' => $block . $content ) ), true );
 	if ( is_wp_error( $res ) ) {
 		echo "ERROR " . $res->get_error_message() . "\n";
 		return;

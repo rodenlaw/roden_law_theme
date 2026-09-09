@@ -140,7 +140,7 @@ foreach ( $edits as $id => $surfaces ) {
 		}
 
 		if ( 'post_content' === $surface || 'post_excerpt' === $surface ) {
-			$res = wp_update_post( array( 'ID' => $id, $surface => $updated ), true );
+			$res = wp_update_post( wp_slash( array( 'ID' => $id, $surface => $updated ) ), true );
 			if ( is_wp_error( $res ) ) {
 				echo "   ERROR " . $res->get_error_message() . "\n";
 				$ok = false;

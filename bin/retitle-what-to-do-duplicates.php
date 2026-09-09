@@ -49,13 +49,10 @@ foreach ( $map as $id => $pair ) {
 
 	$updated = str_replace( $old, $new, $post->post_content );
 
-	$res = wp_update_post(
-		array(
+	$res = wp_update_post( wp_slash( array(
 			'ID'           => $id,
 			'post_content' => $updated,
-		),
-		true
-	);
+		) ), true );
 
 	if ( is_wp_error( $res ) ) {
 		printf( "%d  ERROR %s\n", $id, $res->get_error_message() );

@@ -54,7 +54,7 @@ foreach ( $edits as $n => $e ) {
 	echo ( $APPLY ? 'APPLY ' : 'DRYRUN' ) . " #$n  $id\n";
 	if ( ! $APPLY ) { continue; }
 
-	$res = wp_update_post( array( 'ID' => $id, 'post_content' => str_replace( $old, $new, $hay ) ), true );
+	$res = wp_update_post( wp_slash( array( 'ID' => $id, 'post_content' => str_replace( $old, $new, $hay ) ) ), true );
 	if ( is_wp_error( $res ) ) { echo "   ERROR " . $res->get_error_message() . "\n"; $ok = false; }
 }
 

@@ -55,7 +55,7 @@ foreach ( get_posts( array(
 	printf( "%s %-5d +%d  %s\n", $APPLY ? 'APPLY ' : 'DRYRUN', $p->ID, $n, wp_make_link_relative( get_permalink( $p ) ) );
 
 	if ( ! $APPLY ) { continue; }
-	$res = wp_update_post( array( 'ID' => $p->ID, 'post_content' => $new ), true );
+	$res = wp_update_post( wp_slash( array( 'ID' => $p->ID, 'post_content' => $new ) ), true );
 	if ( is_wp_error( $res ) ) { echo "   ERROR " . $res->get_error_message() . "\n"; }
 }
 
