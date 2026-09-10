@@ -2,14 +2,15 @@
   "_comment": "Hand-tuned configuration that is NOT firm identity. Identity, offices, attorneys and integration IDs live in client.json; gen-configs.mjs merges the two.",
   "localSeo": {
     "writer": {
-      "agent": "roden-content-writer",
+      "agent": "pi-content-writer",
       "expertName": "Eric Roden",
       "additionalExperts": [
         "Graeham C. Gillin"
       ],
       "expertTitle": "founding partner",
       "wordCountTarget": "1500-2400",
-      "esAgent": "roden-content-writer-es"
+      "esAgent": "pi-content-writer-es",
+      "profile": "profiles/writer-profile.md"
     },
     "publish": {
       "target": "wordpress-ssh",
