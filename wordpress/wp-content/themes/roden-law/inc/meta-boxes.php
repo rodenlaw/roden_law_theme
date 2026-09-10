@@ -1335,6 +1335,9 @@ function roden_save_meta_fields( $post_id ) {
          wp_verify_nonce( $_POST['_roden_seo_meta_nonce'], 'roden_seo_meta_nonce' ) ) {
         update_post_meta( $post_id, '_roden_meta_description',
             sanitize_text_field( $_POST['_roden_meta_description'] ?? '' ) );
+
+        update_post_meta( $post_id, '_roden_meta_title',
+            sanitize_text_field( $_POST['_roden_meta_title'] ?? '' ) );
     }
 }
 
@@ -1348,8 +1351,26 @@ function roden_save_meta_fields( $post_id ) {
 function roden_seo_meta_box( $post ) {
     wp_nonce_field( 'roden_seo_meta_nonce', '_roden_seo_meta_nonce' );
 
-    $desc = get_post_meta( $post->ID, '_roden_meta_description', true );
+    $seo_title = get_post_meta( $post->ID, '_roden_meta_title', true );
     ?>
+    <p>
+        <label for="roden_meta_title"><strong><?php esc_html_e( 'Custom SEO Title', 'roden-law' ); ?></strong></label>
+    </p>
+    <input type="text" id="roden_meta_title" name="_roden_meta_title"
+           style="width:100%;" maxlength="70"
+           value="<?php echo esc_attr( $seo_title ); ?>"
+           placeholder="<?php esc_attr_e( 'Leave blank to build the title from the post title (recommended).', 'roden-law' ); ?>" />
+    <p class="description">
+        <?php
+        printf(
+            /* translators: %d: character count */
+            esc_html__( '%d / 60 characters. Replaces the <title> tag ONLY — the H1 stays as the post title, and every other title rule is skipped. Use it where a long, engaging headline pushes the practice keyword and city past what Google renders (~580px). The firm name is not appended, so include it only if it fits.', 'roden-law' ),
+            (int) mb_strlen( $seo_title )
+        );
+        ?>
+    </p>
+
+    <?php $desc = get_post_meta( $post->ID, '_roden_meta_description', true ); ?>
     <p>
         <label for="roden_meta_description"><strong><?php esc_html_e( 'Custom Meta Description', 'roden-law' ); ?></strong></label>
     </p>

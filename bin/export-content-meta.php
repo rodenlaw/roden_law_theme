@@ -67,6 +67,11 @@ $keys = array(
 	'_roden_author_attorney',
 	'_roden_last_reviewed',
 	'_roden_meta_description',
+	// Added 2026-09-09 alongside the field itself. `_roden_meta_title` REPLACES
+	// the <title> tag and short-circuits every other title rule, so a wrong or
+	// stale value is invisible in the CMS and visible in every SERP. It is the
+	// highest-leverage single string on a page; it belongs in the diff.
+	'_roden_meta_title',
 	'_roden_accident_phrase',
 	'_roden_pa_office_key',
 	'_roden_locale',
