@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "slug": "roden",
+  "name": "Roden Law",
+  "shortName": "Roden",
+  "legalEntity": "Roden Love LLC",
+  "aliases": ["Roden Law Personal Injury and Car Accident Law Firm", "rodenlaw"],
+  "siteUrl": "https://rodenlaw.com",
+  "jurisdictions": ["GA", "SC"],
+  "platform": {
+    "framework": "wordpress",
+    "cms": "wordpress",
+    "publishTarget": "wordpress-ssh",
+    "host": "wpengine",
+    "repo": "rodenlaw/roden_law_theme",
+    "_migration": "Moves to the standard Next.js build in Phase 5 of the PI platform plan; the wordpress-ssh adapter is transitional."
+  },
+  "integrations": {
+    "slackChannel": "C0B3W5D41V0",
+    "localFalconGroupKey": "0353427d85aed70",
+    "postplanifyWorkspaceId": "4b791a70-2403-46c9-8e82-5ea36b32070d"
+  },
+  "attorneys": [
+    { "slug": "eric-roden", "name": "Eric Roden", "title": "Founding Partner, CEO", "barStates": ["GA"], "roles": ["expertVoice", "reviewer"] },
+    { "slug": "tyler-love", "name": "Tyler Love", "title": "Founding Partner, CTO", "barStates": ["GA"], "roles": [] },
+    { "slug": "joshua-dorminy", "name": "Joshua Dorminy", "title": "Partner", "barStates": ["GA", "SC"], "roles": [] },
+    { "slug": "graeham-gillin", "name": "Graeham C. Gillin", "title": "Partner, COO", "barStates": ["SC"], "roles": ["reviewer"] },
+    { "slug": "ivy-montano", "name": "Ivy S. Montano", "title": "Associate", "barStates": ["SC"], "roles": [] }
+  ],
+  "locations": [
+    {
+      "label": "Savannah",
+      "city": "Savannah",
+      "state": "GA",
+      "address": "333 Commercial Dr., Savannah, GA 31406 (Chatham County)",
+      "phone": "(912) 303-5850",
+      "gbpPlaceId": "ChIJITbCLWSe-4gRMCR5SgvdFxk",
+      "postplanifyGbpId": "bb3eb361-d2e4-419a-af94-7ebaf0c6415f",
+      "serviceCounties": ["Chatham", "Bryan", "Effingham", "Liberty", "Bulloch"],
+      "highways": ["I-95", "I-16", "Abercorn St"],
+      "competitors": ["Harris Lowry Manton", "Bader Law", "Owens & Mulherin", "Farah & Farah", "Morgan & Morgan", "Georgia Auto Law"],
+      "pipeline": true,
+      "radar": true
+    },
+    {
+      "label": "Darien",
+      "city": "Darien",
+      "state": "GA",
+      "address": "1108 North Way, Darien, GA 31305 (McIntosh County)",
+      "phone": "(912) 303-5850",
+      "gbpPlaceId": "ChIJXQbDRmsr-4gRjV1Mk7Zh4-k",
+      "postplanifyGbpId": "530e12f0-52fe-4a79-9207-c5f1199b0725",
+      "serviceCounties": ["McIntosh", "Glynn"],
+      "highways": ["I-95", "US-17"],
+      "competitors": [],
+      "pipeline": true,
+      "radar": true
+    },
+    {
+      "label": "Charleston",
+      "city": "Charleston",
+      "state": "SC",
+      "address": "127 King Street Suite 200, Charleston, SC 29401 (Charleston County)",
+      "phone": "(843) 790-8999",
+      "gbpPlaceId": "ChIJkx4ENNF7_ogRd1O08AhaJSw",
+      "postplanifyGbpId": "c79a996c-c52d-48a2-bc8d-2fd108e0f691",
+      "serviceCounties": ["Charleston", "Berkeley", "Dorchester"],
+      "highways": ["I-26", "I-526", "US-17"],
+      "competitors": ["Goings Law Firm", "TED Law", "Sahn Law Firm", "Pierce, Sloan, Kennedy & Early", "Philip Berlinsky Law"],
+      "pipeline": true,
+      "radar": true
+    },
+    {
+      "label": "North Charleston",
+      "city": "North Charleston",
+      "state": "SC",
+      "address": "2703 Spruill Ave, North Charleston, SC 29405 (Charleston County)",
+      "phone": "(843) 612-6561",
+      "gbpPlaceId": "ChIJS2CVHEh7_ogRIEA4SfdJ3A8",
+      "postplanifyGbpId": "3a4a2ec0-4274-4217-bfeb-cdbc2ca4188b",
+      "serviceCounties": ["Charleston", "Berkeley", "Dorchester"],
+      "highways": ["I-26", "I-526", "Rivers Ave"],
+      "competitors": ["Philip Berlinsky Law", "Goings Law Firm"],
+      "pipeline": true,
+      "radar": true
+    },
+    {
+      "label": "Columbia",
+      "city": "Columbia",
+      "state": "SC",
+      "address": "1545 Sumter St. Suite B, Columbia, SC 29201 (Richland County)",
+      "phone": "(803) 219-2816",
+      "gbpPlaceId": "ChIJQZdkRQCl-IgRVi202Pu6b1I",
+      "postplanifyGbpId": "7e73b2f6-a8f1-4daf-bdf9-df04275e3a10",
+      "serviceCounties": ["Richland", "Lexington"],
+      "highways": ["I-20", "I-26", "I-77"],
+      "competitors": [],
+      "pipeline": true,
+      "radar": true
+    },
+    {
+      "label": "Myrtle Beach",
+      "city": "Myrtle Beach",
+      "state": "SC",
+      "address": "631 Bellamy Ave. Suite C-B, Murrells Inlet, SC 29576 (Horry County)",
+      "phone": "(843) 612-1980",
+      "gbpPlaceId": "ChIJXV6kZKE5AIkRS6GJSoJ0xAA",
+      "postplanifyGbpId": "b525cde1-0863-419b-ae98-7a41fd388e79",
+      "serviceCounties": ["Horry", "Georgetown"],
+      "highways": ["US-17", "SC-31", "US-501"],
+      "competitors": ["Morris Law Accident Injury Lawyers", "Lofton & Lofton", "Pierce, Sloan, Kennedy & Early"],
+      "pipeline": true,
+      "radar": true
+    }
+  ]
+}

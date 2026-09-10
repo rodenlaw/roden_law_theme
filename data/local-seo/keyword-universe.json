@@ -1,0 +1,673 @@
+{
+  "notes": "Hand-composed by Claude Code under the MVA-only keywordScope rule. Drops the prior universe's premises-liability, medical-negligence, workplace-injury, and standalone catastrophic/wrongful-death themes — all out of scope per Roden's transport-only focus. Roden already has very deep in-scope practice-area coverage (107 of 348 PA slugs are transport-related), so true gaps are mostly sub-type modifiers (rollover MVC, lane-change, drowsy/texting, jackknife, under-ride, tire-blowout) and UM/UIM dedicated pages. The tracking set narrows previously generic ranker terms (e.g. 'brain injury lawyer' → 'brain injury car accident lawyer', 'wrongful death lawyer' → 'wrongful death car accident lawyer') so SoLV pressure stays inside scope. Top 3 strategic moves: (1) build dedicated underinsured-motorist + lane-change MVC sub-type pages, (2) expand commercial-truck sub-types (jackknife, under-ride, tire-blowout) where Roden already owns 18-wheeler/cement/port pillars, (3) deepen rideshare-passenger vs rideshare-driver split (insurance-coverage gap most firms miss).",
+  "themes": [
+    {
+      "id": "passenger-vehicle-collisions",
+      "label": "Car and passenger-vehicle collisions",
+      "intent": "transactional",
+      "priority": "high",
+      "rationale": "Roden's highest-volume case type. Anchors the MVA universe across all 6 offices (Savannah, Darien, Charleston, N. Charleston, Columbia, Myrtle Beach). Interstate corridors I-95, I-26, I-77, I-20, US-17.",
+      "core_terms": [
+        "car accident lawyer",
+        "auto accident attorney",
+        "auto collision lawyer",
+        "drunk driver accident lawyer",
+        "distracted driver accident lawyer",
+        "hit and run accident lawyer",
+        "rear end accident lawyer",
+        "head on collision lawyer",
+        "t bone accident lawyer",
+        "multi vehicle accident lawyer"
+      ],
+      "long_tail": [
+        "car accident attorney near me",
+        "best car accident lawyer in georgia",
+        "best car accident lawyer in south carolina",
+        "drowsy driving accident lawyer",
+        "texting and driving accident lawyer",
+        "left turn accident lawyer",
+        "lane change accident lawyer",
+        "rollover car accident lawyer",
+        "single car accident lawyer",
+        "intersection car accident lawyer",
+        "highway car accident lawyer",
+        "company car accident lawyer",
+        "government vehicle accident lawyer",
+        "side impact collision lawyer",
+        "tire blowout accident lawyer",
+        "side swipe accident lawyer"
+      ],
+      "gaps": [
+        "lane change accident lawyer",
+        "drowsy driving accident lawyer",
+        "tire blowout accident lawyer",
+        "rollover car accident lawyer"
+      ]
+    },
+    {
+      "id": "commercial-trucks",
+      "label": "Commercial trucks and freight",
+      "intent": "transactional",
+      "priority": "high",
+      "rationale": "Highest-value case category. Port of Savannah, Port of Charleston, and the I-95 freight corridor drive volume. Roden already owns 18-wheeler, port-freight, and fatigued-trucker pages; gap is sub-type modifiers competitor firms rank for.",
+      "core_terms": [
+        "truck accident lawyer",
+        "18 wheeler accident lawyer",
+        "semi truck accident lawyer",
+        "commercial vehicle accident lawyer",
+        "big rig accident lawyer",
+        "delivery truck accident lawyer",
+        "box truck accident lawyer",
+        "cement truck accident lawyer"
+      ],
+      "long_tail": [
+        "tractor trailer accident lawyer",
+        "fatal truck accident lawyer",
+        "jackknife truck accident lawyer",
+        "truck under ride accident lawyer",
+        "truck wide turn accident lawyer",
+        "truck rollover accident lawyer",
+        "overloaded truck accident lawyer",
+        "fatigued truck driver accident lawyer",
+        "fmcsr violation truck accident lawyer",
+        "amazon delivery truck accident lawyer",
+        "ups fedex truck accident lawyer",
+        "i 95 truck accident lawyer",
+        "i 26 truck accident lawyer",
+        "port freight truck accident lawyer"
+      ],
+      "gaps": [
+        "jackknife truck accident lawyer",
+        "truck under ride accident lawyer",
+        "truck wide turn accident lawyer"
+      ]
+    },
+    {
+      "id": "motorcycles-and-mopeds",
+      "label": "Motorcycles and mopeds",
+      "intent": "transactional",
+      "priority": "high",
+      "rationale": "Coastal touring routes (US-17, Highway 80, Cherry Grove) drive year-round motorcycle volume. Distinct biker-bias defenses + helmet-statute issues per state. Roden owns intersection-, hit-and-run-, drunk-driver-, and head-on-motorcycle sub-types — gap is lane-splitting and product-defect angles.",
+      "core_terms": [
+        "motorcycle accident lawyer",
+        "motorcycle crash lawyer",
+        "moped accident lawyer",
+        "biker injury lawyer"
+      ],
+      "long_tail": [
+        "lane splitting motorcycle accident lawyer",
+        "motorcycle vs truck accident lawyer",
+        "motorcycle helmet law lawyer",
+        "left turn motorcycle accident lawyer",
+        "single bike motorcycle crash lawyer",
+        "rear end motorcycle accident lawyer",
+        "head on motorcycle collision lawyer",
+        "drunk driver motorcycle accident lawyer",
+        "hit and run motorcycle accident lawyer",
+        "intersection motorcycle accident lawyer",
+        "motorcycle product defect lawyer",
+        "motorcycle group ride accident lawyer"
+      ],
+      "gaps": [
+        "lane splitting motorcycle accident lawyer",
+        "motorcycle product defect lawyer"
+      ]
+    },
+    {
+      "id": "rideshare-and-livery",
+      "label": "Rideshare, taxi, and livery",
+      "intent": "transactional",
+      "priority": "high",
+      "rationale": "Charleston peninsula, Myrtle Beach nightlife, downtown Columbia, and Savannah River St all drive heavy rideshare volume. Distinct insurance-tier coverage (off-app vs Period 1 vs Period 2/3) is the angle most local firms miss.",
+      "core_terms": [
+        "rideshare accident lawyer",
+        "uber accident lawyer",
+        "lyft accident lawyer",
+        "taxi accident lawyer",
+        "limo accident lawyer",
+        "shuttle accident lawyer"
+      ],
+      "long_tail": [
+        "uber passenger accident lawyer",
+        "lyft passenger accident lawyer",
+        "uber driver accident lawyer",
+        "rideshare insurance coverage lawyer",
+        "hit by uber driver lawyer",
+        "hit by lyft driver lawyer",
+        "airport shuttle accident lawyer",
+        "hotel shuttle accident lawyer",
+        "uber eats delivery driver accident lawyer",
+        "doordash delivery driver accident lawyer",
+        "amazon flex driver accident lawyer"
+      ],
+      "gaps": [
+        "rideshare insurance coverage lawyer",
+        "uber driver accident lawyer",
+        "uber eats delivery driver accident lawyer"
+      ]
+    },
+    {
+      "id": "buses",
+      "label": "Buses",
+      "intent": "transactional",
+      "priority": "medium",
+      "rationale": "Public transit (CARTA Charleston, COMET Columbia), school buses, and tourist charter buses (downtown Charleston, Savannah ghost tours, Myrtle Beach charters) all generate distinct claims. Government-defendant Tort Claims Act triggers in SC make timely notice critical.",
+      "core_terms": [
+        "bus accident lawyer",
+        "school bus accident lawyer",
+        "charter bus accident lawyer",
+        "tour bus accident lawyer",
+        "transit bus accident lawyer"
+      ],
+      "long_tail": [
+        "city bus accident lawyer",
+        "carta bus accident lawyer",
+        "comet bus accident lawyer",
+        "greyhound bus accident lawyer",
+        "school bus injury lawyer",
+        "church bus accident lawyer",
+        "shuttle bus accident lawyer",
+        "trolley accident lawyer",
+        "hit by bus pedestrian lawyer",
+        "tour bus rollover lawyer"
+      ],
+      "gaps": [
+        "carta bus accident lawyer",
+        "comet bus accident lawyer",
+        "tour bus rollover lawyer"
+      ]
+    },
+    {
+      "id": "pedestrians",
+      "label": "Pedestrians",
+      "intent": "transactional",
+      "priority": "high",
+      "rationale": "Tourist-walking density — Charleston peninsula, Tybee, Folly, Murrells Inlet boardwalk, Myrtle Beach Boulevard — drives year-round pedestrian-struck volume. Roden owns school-zone, intersection, hit-and-run, drunk-driver, and distracted-driver pedestrian sub-types — gap is parking-lot and crosswalk-specific keywords.",
+      "core_terms": [
+        "pedestrian accident lawyer",
+        "pedestrian struck by car lawyer",
+        "pedestrian crash lawyer"
+      ],
+      "long_tail": [
+        "hit by car pedestrian lawyer",
+        "pedestrian killed by car lawyer",
+        "crosswalk accident lawyer",
+        "parking lot pedestrian accident lawyer",
+        "school zone pedestrian accident lawyer",
+        "intersection pedestrian accident lawyer",
+        "hit and run pedestrian accident lawyer",
+        "drunk driver pedestrian accident lawyer",
+        "distracted driver pedestrian accident lawyer",
+        "jaywalking pedestrian accident lawyer",
+        "pedestrian killed in crosswalk lawyer"
+      ],
+      "gaps": [
+        "crosswalk accident lawyer",
+        "parking lot pedestrian accident lawyer"
+      ]
+    },
+    {
+      "id": "bicycles-and-micromobility",
+      "label": "Bicycles and micromobility (e-bike, e-scooter)",
+      "intent": "transactional",
+      "priority": "medium",
+      "rationale": "Beach-town and downtown bicycle, e-bike, and e-scooter rentals (Charleston, Savannah, Myrtle Beach) and the rise of e-scooter share programs create rapidly growing micromobility claims. Roden owns intersection, road-hazard, drunk-driver, and distracted-driver sub-types in bicycle + e-scooter — gap is dooring and bike-lane-specific keywords.",
+      "core_terms": [
+        "bicycle accident lawyer",
+        "bike accident lawyer",
+        "electric bike accident lawyer",
+        "electric scooter accident lawyer",
+        "e bike accident lawyer",
+        "e scooter accident lawyer"
+      ],
+      "long_tail": [
+        "hit by car bicycle lawyer",
+        "bicycle vs truck accident lawyer",
+        "dooring accident bicycle lawyer",
+        "bike lane accident lawyer",
+        "tourist e bike accident lawyer",
+        "rental e scooter accident lawyer",
+        "bird scooter accident lawyer",
+        "lime scooter accident lawyer",
+        "e scooter vehicle collision lawyer",
+        "e scooter pedestrian accident lawyer",
+        "road hazard bicycle crash lawyer"
+      ],
+      "gaps": [
+        "dooring accident bicycle lawyer",
+        "bike lane accident lawyer",
+        "rental e scooter accident lawyer"
+      ]
+    },
+    {
+      "id": "off-road-and-low-speed-vehicles",
+      "label": "ATV, side-by-side, UTV, and golf carts",
+      "intent": "transactional",
+      "priority": "medium",
+      "rationale": "Coastal Lowcountry hunting/farm ATV use + Surfside/Pawleys/Sea Pines golf-cart-permissive streets generate distinct off-road and low-speed-vehicle claims. Roden owns deep ATV (product, rental, road, rollover, child) and golf-cart (DUI, rollover, ejection, pedestrian, vehicle) coverage — gap is UTV/side-by-side-specific terms and golf-cart rental liability.",
+      "core_terms": [
+        "atv accident lawyer",
+        "side by side accident lawyer",
+        "utv accident lawyer",
+        "golf cart accident lawyer",
+        "off road vehicle accident lawyer",
+        "low speed vehicle accident lawyer"
+      ],
+      "long_tail": [
+        "atv rollover accident lawyer",
+        "child atv injury lawyer",
+        "atv product defect lawyer",
+        "atv rental tour accident lawyer",
+        "golf cart pedestrian accident lawyer",
+        "golf cart rental accident lawyer",
+        "golf cart dui lawyer",
+        "golf cart rollover lawyer",
+        "golf course cart accident lawyer",
+        "polaris ranger accident lawyer",
+        "can am accident lawyer",
+        "utv passenger ejection lawyer"
+      ],
+      "gaps": [
+        "golf cart rental accident lawyer",
+        "utv passenger ejection lawyer",
+        "polaris ranger accident lawyer"
+      ]
+    },
+    {
+      "id": "boating-and-watercraft",
+      "label": "Boating and watercraft",
+      "intent": "transactional",
+      "priority": "medium",
+      "rationale": "Coastal markets (Charleston Harbor, Savannah River, Murrells Inlet, Hilton Head approach) generate boat, jet ski, and pontoon-rental claims year-round. Roden owns boating, jet-ski, pontoon, sailboat, speedboat, tugboat, and boating-under-influence pages — gap is rental-defect and wake-related claims.",
+      "core_terms": [
+        "boating accident lawyer",
+        "boat crash lawyer",
+        "jet ski accident lawyer",
+        "personal watercraft accident lawyer",
+        "boat collision lawyer"
+      ],
+      "long_tail": [
+        "boating under the influence lawyer",
+        "jet ski rental accident lawyer",
+        "pontoon boat accident lawyer",
+        "sailboat accident lawyer",
+        "speedboat collision lawyer",
+        "wake injury boating lawyer",
+        "boat rental defect lawyer",
+        "intracoastal waterway boating accident lawyer",
+        "charleston harbor boating accident lawyer",
+        "tour boat accident lawyer"
+      ],
+      "gaps": [
+        "boat rental defect lawyer",
+        "wake injury boating lawyer",
+        "tour boat accident lawyer"
+      ]
+    },
+    {
+      "id": "uninsured-and-coverage-disputes",
+      "label": "Uninsured / underinsured motorist and coverage disputes",
+      "intent": "transactional",
+      "priority": "high",
+      "rationale": "SC permits UM/UIM stacking (§ 38-77-160); GA generally does not (O.C.G.A. § 33-7-11). Hit-and-run and uninsured-driver claims convert into UM claims, distinct enough to deserve their own ranker — and Roden has no dedicated UIM page despite tracking 'uninsured motorist lawyer'.",
+      "core_terms": [
+        "uninsured motorist lawyer",
+        "underinsured motorist lawyer",
+        "um uim lawyer",
+        "hit and run accident lawyer",
+        "no insurance car accident lawyer"
+      ],
+      "long_tail": [
+        "uninsured motorist claim lawyer south carolina",
+        "underinsured motorist claim lawyer georgia",
+        "stacking um uim coverage lawyer",
+        "hit by uninsured driver lawyer",
+        "phantom vehicle accident lawyer",
+        "uninsured motorist denial lawyer",
+        "underinsured motorist denial lawyer",
+        "bad faith insurance claim lawyer auto"
+      ],
+      "gaps": [
+        "underinsured motorist lawyer",
+        "stacking um uim coverage lawyer",
+        "phantom vehicle accident lawyer"
+      ]
+    },
+    {
+      "id": "catastrophic-and-fatal-from-crashes",
+      "label": "Catastrophic and fatal outcomes from crashes",
+      "intent": "commercial",
+      "priority": "high",
+      "rationale": "Highest case values. Roden owns brain-injury, spinal-cord, burn, and wrongful-death pillars but they read as generic verticals — narrowing the search query to crash-context ('brain injury car accident lawyer', 'wrongful death truck accident lawyer') better matches MVA-only scope and competitive intent.",
+      "core_terms": [
+        "wrongful death car accident lawyer",
+        "wrongful death truck accident lawyer",
+        "fatal car accident lawyer",
+        "fatal truck accident lawyer",
+        "brain injury car accident lawyer",
+        "spinal cord injury car accident lawyer",
+        "catastrophic injury car accident lawyer"
+      ],
+      "long_tail": [
+        "wrongful death motorcycle accident lawyer",
+        "wrongful death pedestrian accident lawyer",
+        "fatal motorcycle accident lawyer",
+        "fatal pedestrian accident lawyer",
+        "tbi from car accident lawyer",
+        "paralysis from car accident lawyer",
+        "burn injury car accident lawyer",
+        "burn injury truck accident lawyer",
+        "amputation from car accident lawyer",
+        "fatal boating accident lawyer",
+        "fatal atv accident lawyer"
+      ],
+      "gaps": [
+        "wrongful death pedestrian accident lawyer",
+        "burn injury car accident lawyer",
+        "fatal motorcycle accident lawyer"
+      ]
+    }
+  ],
+  "tracking_set": [
+    {
+      "keyword": "personal injury lawyer",
+      "theme_id": "passenger-vehicle-collisions",
+      "grid_size": 7,
+      "radius": 5,
+      "measurement": "mi",
+      "why": "Broad anchor — MVA-constrained PI practice ranks here too. Top-of-funnel commercial intent."
+    },
+    {
+      "keyword": "car accident lawyer",
+      "theme_id": "passenger-vehicle-collisions",
+      "grid_size": 7,
+      "radius": 5,
+      "measurement": "mi",
+      "why": "Highest-volume MVA search; primary GBP target."
+    },
+    {
+      "keyword": "car accident attorney near me",
+      "theme_id": "passenger-vehicle-collisions",
+      "grid_size": 7,
+      "radius": 5,
+      "measurement": "mi",
+      "why": "Proximity intent — directly reflects Local Pack quality."
+    },
+    {
+      "keyword": "best car accident lawyer",
+      "theme_id": "passenger-vehicle-collisions",
+      "grid_size": 7,
+      "radius": 5,
+      "measurement": "mi",
+      "why": "Commercial-investigation phrasing — picks up review-driven SERPs."
+    },
+    {
+      "keyword": "drunk driver accident lawyer",
+      "theme_id": "passenger-vehicle-collisions",
+      "grid_size": 7,
+      "radius": 5,
+      "measurement": "mi",
+      "why": "Punitive-damages angle; tourist-corridor relevance (Myrtle Beach, downtown Charleston/Savannah)."
+    },
+    {
+      "keyword": "hit and run accident lawyer",
+      "theme_id": "passenger-vehicle-collisions",
+      "grid_size": 7,
+      "radius": 5,
+      "measurement": "mi",
+      "why": "Sub-type that converts to UM/UIM claims; distinct intent."
+    },
+    {
+      "keyword": "truck accident lawyer",
+      "theme_id": "commercial-trucks",
+      "grid_size": 7,
+      "radius": 5,
+      "measurement": "mi",
+      "why": "High-value commercial-vehicle cases; I-95 + port corridors."
+    },
+    {
+      "keyword": "18 wheeler accident lawyer",
+      "theme_id": "commercial-trucks",
+      "grid_size": 7,
+      "radius": 5,
+      "measurement": "mi",
+      "why": "Distinct from truck — high-intent FMCSR-aware searchers."
+    },
+    {
+      "keyword": "fatal truck accident lawyer",
+      "theme_id": "catastrophic-and-fatal-from-crashes",
+      "grid_size": 7,
+      "radius": 5,
+      "measurement": "mi",
+      "why": "Highest-value truck sub-vertical; pairs catastrophic + commercial-truck themes."
+    },
+    {
+      "keyword": "motorcycle accident lawyer",
+      "theme_id": "motorcycles-and-mopeds",
+      "grid_size": 7,
+      "radius": 5,
+      "measurement": "mi",
+      "why": "Distinct biker-bias defenses; coastal touring routes."
+    },
+    {
+      "keyword": "rideshare accident lawyer",
+      "theme_id": "rideshare-and-livery",
+      "grid_size": 7,
+      "radius": 5,
+      "measurement": "mi",
+      "why": "Growing case type; tiered-insurance complexity."
+    },
+    {
+      "keyword": "uber accident lawyer",
+      "theme_id": "rideshare-and-livery",
+      "grid_size": 7,
+      "radius": 5,
+      "measurement": "mi",
+      "why": "Brand-specific intent; outranks generic 'rideshare' in many cities."
+    },
+    {
+      "keyword": "uninsured motorist lawyer",
+      "theme_id": "uninsured-and-coverage-disputes",
+      "grid_size": 7,
+      "radius": 5,
+      "measurement": "mi",
+      "why": "UM is high-volume in GA + SC; converts hit-and-run claims."
+    },
+    {
+      "keyword": "underinsured motorist lawyer",
+      "theme_id": "uninsured-and-coverage-disputes",
+      "grid_size": 7,
+      "radius": 5,
+      "measurement": "mi",
+      "why": "Distinct from UM — SC stacking rules make this a profitable niche."
+    },
+    {
+      "keyword": "bus accident lawyer",
+      "theme_id": "buses",
+      "grid_size": 7,
+      "radius": 5,
+      "measurement": "mi",
+      "why": "Government-defendant Tort Claims Act angle; transit + school + charter mix."
+    },
+    {
+      "keyword": "pedestrian accident lawyer",
+      "theme_id": "pedestrians",
+      "grid_size": 7,
+      "radius": 5,
+      "measurement": "mi",
+      "why": "Coastal tourist-walking exposure (Charleston peninsula, Tybee, MB boardwalk)."
+    },
+    {
+      "keyword": "bicycle accident lawyer",
+      "theme_id": "bicycles-and-micromobility",
+      "grid_size": 7,
+      "radius": 5,
+      "measurement": "mi",
+      "why": "Hit-by-car bike cases; distinct from motor-vehicle bucket."
+    },
+    {
+      "keyword": "electric scooter accident lawyer",
+      "theme_id": "bicycles-and-micromobility",
+      "grid_size": 7,
+      "radius": 5,
+      "measurement": "mi",
+      "why": "Tourist-rental e-scooter share programs in Charleston/Savannah/MB."
+    },
+    {
+      "keyword": "electric bike accident lawyer",
+      "theme_id": "bicycles-and-micromobility",
+      "grid_size": 7,
+      "radius": 5,
+      "measurement": "mi",
+      "why": "Growing rental category; product-defect overlap."
+    },
+    {
+      "keyword": "atv accident lawyer",
+      "theme_id": "off-road-and-low-speed-vehicles",
+      "grid_size": 7,
+      "radius": 5,
+      "measurement": "mi",
+      "why": "Lowcountry hunting/farm volume; product-defect angle."
+    },
+    {
+      "keyword": "golf cart accident lawyer",
+      "theme_id": "off-road-and-low-speed-vehicles",
+      "grid_size": 7,
+      "radius": 5,
+      "measurement": "mi",
+      "why": "Surfside/Pawleys/Sea Pines golf-cart-permissive streets — niche but distinctive."
+    },
+    {
+      "keyword": "boating accident lawyer",
+      "theme_id": "boating-and-watercraft",
+      "grid_size": 7,
+      "radius": 5,
+      "measurement": "mi",
+      "why": "Coastal-specific — Charleston Harbor, Savannah River, Murrells Inlet/Grand Strand boat traffic."
+    },
+    {
+      "keyword": "jet ski accident lawyer",
+      "theme_id": "boating-and-watercraft",
+      "grid_size": 7,
+      "radius": 5,
+      "measurement": "mi",
+      "why": "Rental-jet-ski tourist exposure; distinct from boat-collision liability."
+    },
+    {
+      "keyword": "wrongful death car accident lawyer",
+      "theme_id": "catastrophic-and-fatal-from-crashes",
+      "grid_size": 7,
+      "radius": 5,
+      "measurement": "mi",
+      "why": "Highest-value fatal-MVA claim; narrows the generic 'wrongful death' query into MVA scope."
+    },
+    {
+      "keyword": "brain injury car accident lawyer",
+      "theme_id": "catastrophic-and-fatal-from-crashes",
+      "grid_size": 7,
+      "radius": 5,
+      "measurement": "mi",
+      "why": "Highest-value TBI claim type; narrows the generic 'brain injury lawyer' query into MVA scope."
+    }
+  ],
+  "generated_at": "2026-05-15T13:48:48.955Z",
+  "client": {
+    "name": "Roden Law",
+    "shortName": "Roden",
+    "siteUrl": "https://rodenlaw.com"
+  },
+  "keywordScope": {
+    "id": "motor-vehicle-and-vulnerable-road-users",
+    "label": "Motor vehicle, vulnerable road user, and transport-accident verticals only",
+    "rule": "Limit the keyword universe to vehicle / transport accident verticals only. EVERY keyword in themes, long_tail, gaps, and tracking_set must center on one of these injury vectors: car, truck (incl. commercial / 18-wheeler / box truck / delivery), motorcycle, ride-share (Uber/Lyft), taxi/limo/shuttle, bus, pedestrian, bicycle, e-scooter, e-bike, ATV / side-by-side / off-road vehicle, golf cart, boat / jet ski / personal watercraft. Catastrophic outcomes (brain injury, spinal cord, burn, fatal/wrongful death) and incident-modifier sub-types (DUI, uninsured/underinsured motorist, hit-and-run, rear-end, head-on, multi-vehicle, rollover, T-bone, distracted driving, drowsy driving, lane change, left-turn) are allowed ONLY when paired with an in-scope vertical (e.g. 'wrongful death car accident lawyer', 'brain injury motorcycle crash lawyer'). Do NOT include premises liability, slip-and-fall, dog bite, medical malpractice, nursing home / elder abuse, workers compensation, construction accident, scaffold fall, product liability (unless defective vehicle/restraint/tire), Jones Act / longshore (unless boat collision), or any standalone non-transport vertical. If a competitor covers an out-of-scope vertical, do NOT flag it as a gap. Generic top-of-funnel PI terms ('personal injury lawyer', 'best personal injury lawyer', 'free consultation injury lawyer') are acceptable as broad anchor keywords because Roden's PI practice is constrained to in-scope verticals — keep these to ≤ 3 of the 25-keyword tracking set.",
+    "allowedVerticals": [
+      "car",
+      "auto",
+      "truck",
+      "commercial-truck",
+      "18-wheeler",
+      "semi",
+      "box-truck",
+      "delivery-vehicle",
+      "motorcycle",
+      "moped",
+      "rideshare",
+      "uber",
+      "lyft",
+      "taxi",
+      "limo",
+      "shuttle",
+      "bus",
+      "school-bus",
+      "charter-bus",
+      "transit-bus",
+      "pedestrian",
+      "bicycle",
+      "bike",
+      "e-scooter",
+      "electric-scooter",
+      "e-bike",
+      "electric-bike",
+      "atv",
+      "side-by-side",
+      "utv",
+      "off-road-vehicle",
+      "golf-cart",
+      "low-speed-vehicle",
+      "boat",
+      "boating",
+      "jet-ski",
+      "personal-watercraft",
+      "pwc"
+    ],
+    "allowedSubTypes": [
+      "drunk-driving",
+      "dui",
+      "drugged-driving",
+      "uninsured-motorist",
+      "underinsured-motorist",
+      "um-uim",
+      "hit-and-run",
+      "rear-end",
+      "head-on",
+      "multi-vehicle",
+      "rollover",
+      "t-bone",
+      "side-impact",
+      "lane-change",
+      "left-turn",
+      "distracted-driving",
+      "texting-and-driving",
+      "drowsy-driving",
+      "wrongful-death-from-vehicle-crash",
+      "fatal-crash",
+      "brain-injury-from-vehicle-crash",
+      "tbi-from-crash",
+      "spinal-cord-injury-from-vehicle-crash",
+      "burn-injury-from-vehicle-crash"
+    ],
+    "excludedVerticals": [
+      "slip and fall",
+      "premises liability",
+      "negligent security",
+      "dog bite",
+      "medical malpractice",
+      "surgical error",
+      "misdiagnosis",
+      "birth injury",
+      "nursing home",
+      "elder abuse",
+      "bed sore",
+      "workers compensation",
+      "workers comp",
+      "construction accident",
+      "scaffold fall",
+      "fall from height",
+      "product liability",
+      "defective product",
+      "maritime injury",
+      "jones act",
+      "longshore"
+    ]
+  }
+}
