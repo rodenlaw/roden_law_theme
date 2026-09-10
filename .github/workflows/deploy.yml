@@ -281,3 +281,61 @@ jobs:
           # The drift-check step may already have added this remote.
           git remote add wpe-prod git@git.wpengine.com:rodenlawprod.git 2>/dev/null || true
           git push wpe-prod deploy-branch:main --force
+
+  # ─────────────────────────────────────────────────────────────────────
+  # Site health after the deploy (PI platform plan, task 3.3).
+  #
+  # Crawls production read-only with the vendored site-health package
+  # (vendor/site-health/, generated from internal-ai-scripts/scripts/site-health
+  # — never edit it here, re-vendor): every sitemap URL, every internal link,
+  # canonicals, the accessibility tree of every rendered page, link topics,
+  # the doorway ratio and granularity floor against the GA + SC place lists,
+  # and redirects.csv replayed for chains and dead ends. The Markdown report
+  # lands in the job summary.
+  #
+  # OBSERVATION MODE until 2026-09-24: `continue-on-error: true` means a red
+  # report never fails the workflow. The theme has already deployed by the
+  # time this runs, so a gate here cannot stop a bad deploy — it stops the
+  # NEXT one from landing on top of it, once enabled. After two weeks of
+  # reports, delete the continue-on-error line and drop --report-only; a
+  # planted broken link then fails the workflow (the package's fixture test
+  # proves that path).
+  #
+  # Production is the target because this workflow deploys to production
+  # (rodenlawprod); rodenlawdev1 receives nothing from it. Concurrency 3 with
+  # 429 back-off: WP Engine throttled a faster crawl.
+  # ─────────────────────────────────────────────────────────────────────
+  site-health:
+    name: Site health (production, observation mode)
+    needs: deploy
+    if: always() && needs.deploy.result == 'success'
+    runs-on: ubuntu-latest
+    # A throttled crawl of ~1,230 pages with 429 back-off can take half an hour.
+    timeout-minutes: 45
+    continue-on-error: true
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # Cloudflare and WP Engine cache the theme's HTML; give the deploy a
+      # moment to settle so the crawl sees the pushed theme, not the old one.
+      - name: Wait for the deploy to settle
+        run: sleep 90
+
+      - name: Crawl production
+        run: |
+          node vendor/site-health/site-health.mjs --repo . --base https://rodenlaw.com --live --report-only \
+            --out /tmp/site-health.json --md "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload the JSON report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-health-report
+          path: /tmp/site-health.json
+          retention-days: 30
