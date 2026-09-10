@@ -4,41 +4,79 @@
   "month": "2026-10",
   "author": "client-strategy-director",
   "generatedAt": "2026-09-10T21:20:00.000Z",
-  "status": "proposed",
+  "status": "applied",
+  "approval": {
+    "by": "Brian Haas",
+    "at": "2026-09-10",
+    "note": "Approved as proposed by the client strategy director; applied by client-ops the same day."
+  },
   "summary": "The autorun stays paused for October: both law packs are unsigned, and a 2026-09-08 recheck found a corrected statute class back on a dozen local-SEO posts that postdate the fix, so the pipeline is still carrying legal errors forward. The only lanes on are the hand-planned reference layer (two two-state guides already drafted and traced to verified sources) and research assets (the FARS method Study #1 proved) — neither adds a location-targeted URL while the doorway ratio sits at 40.9% against a 25% ceiling. One switch moves: the weekly spend cap to $0, as a real backstop behind a pause that is otherwise just a note reading \"resumes on request\". Positions 1-3 stays the success metric at 68; judge nothing until the next core update completes.",
   "lanes": {
     "hyperlocal": {
       "on": false,
       "reason": "Paused since 2026-08-28 for the legal-accuracy remediation, and three independent gates still hold it shut: both law packs are unsigned, the pipeline re-published a corrected statute class into posts that postdate the fix, and its last output was a subdivision-and-street slug while the granularity floor and the 40.9% doorway ratio are both failing. Positions 1-3 is at 68 and no core update has completed, so there is nothing to judge a resume against.",
-      "evidence": ["E1", "E2", "E3", "E4", "E5", "E6", "E9", "E10", "E11"],
+      "evidence": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E9",
+        "E10",
+        "E11"
+      ],
       "notes": "Resuming needs the 32 false-law pages remediated and counted, the packs signed or the lane re-scoped to make no statutory claims, a clean re-check of the SS 15-38-15 class against post-fix content, and targeting raised to the incorporated-municipality floor."
     },
     "referenceLayer": {
       "on": true,
       "reason": "Two two-state guides are already seeded as drafts (posts 5352, 5353) with all 24 legal statements individually traced to the SB 68 allowlist or to verified pages, not to the unsigned packs, so finishing them produces no new claim resting on unverified authority. They are statewide /resources/ pages and add no location-targeted URLs while the cull is still working the doorway ratio down.",
-      "evidence": ["E5", "E11", "E13", "E14"],
+      "evidence": [
+        "E5",
+        "E11",
+        "E13",
+        "E14"
+      ],
       "notes": "Scope is bounded: complete attorney review and publish the two drafted guides, and resolve the SS 15-38-15 threshold. No new drafting against the 201 unverified statutes."
     },
     "researchAssets": {
       "on": true,
       "reason": "Study #1 established a method that survives this site's own scrutiny - FARS-sourced, all 33 prose figures verified programmatically against the shipped dataset before publication - and research assets carry no statutory claims, so the unsigned packs do not gate them. Radar's baseline says this is the missing asset: named in 0 of 3 probes and absent from all 11 watched aggregators.",
-      "evidence": ["E13", "E15", "E17"],
+      "evidence": [
+        "E13",
+        "E15",
+        "E17"
+      ],
       "notes": "The brief names no Study #2 plan, so the topic is unchosen - recorded as an open item rather than assumed. Any second study ships only if every prose figure verifies against its dataset."
     },
     "spanish": {
       "on": false,
       "reason": "It rides on hyperlocal or the reference layer producing new pages; hyperlocal is off and the reference guides are English drafts still awaiting attorney review, with no Spanish twins planned this month. The /es/ twins are also where legal errors have twice outlived the English fix, so the twin must never lead the original.",
-      "evidence": ["E1", "E10", "E14"]
+      "evidence": [
+        "E1",
+        "E10",
+        "E14"
+      ]
     },
     "gbp": {
       "on": false,
       "reason": "GBP posts are scheduled by the autorun, which is paused, and nothing is hand-scheduled this month. Two posts remain pending from the 2026-08-24 run and their scheduled dates have already passed, so they need a human decision rather than a lane.",
-      "evidence": ["E1", "E10", "E12", "E13"]
+      "evidence": [
+        "E1",
+        "E10",
+        "E12",
+        "E13"
+      ]
     },
     "freshness": {
       "on": false,
       "reason": "It has never run for this client - there is no freshness.state.json - and an unvalidated automated writer must not be introduced to a corpus that still carries 32 known false statements of law and 410 unverified page-citations. This site has repeatedly had sweeps report clean against fields they could not see, which is the exact failure mode an automated refresh would reproduce silently.",
-      "evidence": ["E7", "E8", "E16", "E17"],
+      "evidence": [
+        "E7",
+        "E8",
+        "E16",
+        "E17"
+      ],
       "notes": "First real job waiting for it: the January CPI adjustment to S.C. Code SS 15-32-220, which two pages quote at 2026 figures."
     }
   },
@@ -87,7 +125,11 @@
       "from": 12,
       "to": 0,
       "reason": "The only thing holding the pipeline shut is a pause note reading 'content generation resumes on request' - this client has no recovery.paused gate, and the recovery guard reports clear. With both law packs unsigned and the pipeline proven to carry a corrected statute class forward into new posts, the spend cap is the one structural backstop available: at $0 an accidental or casual resume halts before it publishes. Restore to 12 in the same file that turns hyperlocal on.",
-      "evidence": ["E1", "E5", "E6"],
+      "evidence": [
+        "E1",
+        "E5",
+        "E6"
+      ],
       "owner": "client-ops"
     }
   ],

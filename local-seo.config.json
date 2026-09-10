@@ -289,7 +289,7 @@
       "North Charleston",
       "Savannah"
     ],
-    "weeklySpendCapUSD": 12,
+    "weeklySpendCapUSD": 0,
     "deployUrlTemplate": "https://rodenlaw.com/blog/{slug}/",
     "gbpCaptionTemplates": {
       "en": "{title}\n\n{excerpt}\n\nRead the full guide: what to do, who may be liable, and the deadlines that apply.\n\n📞 Free consultation: {phone} — no fees unless we win.",
