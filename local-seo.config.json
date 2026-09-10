@@ -16,14 +16,15 @@
     "workspaceId": "4b791a70-2403-46c9-8e82-5ea36b32070d"
   },
   "writer": {
-    "agent": "roden-content-writer",
+    "agent": "pi-content-writer",
     "expertName": "Eric Roden",
     "additionalExperts": [
       "Graeham C. Gillin"
     ],
     "expertTitle": "founding partner",
     "wordCountTarget": "1500-2400",
-    "esAgent": "roden-content-writer-es"
+    "esAgent": "pi-content-writer-es",
+    "profile": "profiles/writer-profile.md"
   },
   "keywordScope": {
     "id": "motor-vehicle-and-vulnerable-road-users",
