@@ -28,6 +28,36 @@ add_filter( 'document_title_parts', 'roden_seo_title_optimization' );
 function roden_seo_title_optimization( $title_parts ) {
     $firm = roden_firm_data();
 
+    /*
+     * A hand-written SEO title wins outright, and returns before every rule
+     * below — the point of setting one is to escape them.
+     *
+     * WHY THIS EXISTS. The local-SEO long-tail posts are titled as questions:
+     * "Hurt in a Boat Crash at Bucksport Marina? A Bucksport Boating Accident
+     * Lawyer's Guide to the Waccamaw River…". That hook is good for a reader and
+     * good for the H1, but Google renders ~580px of title and the practice
+     * keyword sits past the cut, so the snippet reads as a question with nothing
+     * to say it is a law firm. A survey of all 1,230 indexed titles found 36 in
+     * that state — against 484 that lose only the "– Roden Law" suffix, which
+     * costs nothing.
+     *
+     * Rewriting post_title would fix the snippet and lose the hook. This
+     * separates the two: post_title stays the H1, _roden_meta_title becomes the
+     * <title>. Same division of labour as _roden_meta_description.
+     */
+    if ( is_singular() ) {
+        $seo_title = trim( (string) get_post_meta( get_the_ID(), '_roden_meta_title', true ) );
+        if ( '' !== $seo_title ) {
+            $title_parts['title'] = $seo_title;
+            // The override is the COMPLETE title. Leaving 'site' in place would
+            // have WordPress append " – Roden Law" to a string already budgeted
+            // to fit, which is the opposite of the point, and would make the
+            // character counter in the editor lie about what ships.
+            unset( $title_parts['site'], $title_parts['tagline'] );
+            return $title_parts;
+        }
+    }
+
     // Homepage — descriptive title with primary keywords.
     if ( is_front_page() ) {
         $title_parts['title'] = __( 'Personal Injury Lawyers in Georgia & South Carolina', 'roden-law' );
