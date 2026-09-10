@@ -69,3 +69,5 @@ content/meta.*.json
 
 # Headless director transcripts (the brief itself is committed as the evidence record)
 /strategy/briefs/*.director.log
+# Strategy director run state and the applied-switch ledger (local operational history)
+/data/strategy/
