@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "client": "roden",
+  "month": "2026-10",
+  "author": "client-strategy-director",
+  "generatedAt": "2026-09-10T21:20:00.000Z",
+  "status": "proposed",
+  "summary": "The autorun stays paused for October: both law packs are unsigned, and a 2026-09-08 recheck found a corrected statute class back on a dozen local-SEO posts that postdate the fix, so the pipeline is still carrying legal errors forward. The only lanes on are the hand-planned reference layer (two two-state guides already drafted and traced to verified sources) and research assets (the FARS method Study #1 proved) — neither adds a location-targeted URL while the doorway ratio sits at 40.9% against a 25% ceiling. One switch moves: the weekly spend cap to $0, as a real backstop behind a pause that is otherwise just a note reading \"resumes on request\". Positions 1-3 stays the success metric at 68; judge nothing until the next core update completes.",
+  "lanes": {
+    "hyperlocal": {
+      "on": false,
+      "reason": "Paused since 2026-08-28 for the legal-accuracy remediation, and three independent gates still hold it shut: both law packs are unsigned, the pipeline re-published a corrected statute class into posts that postdate the fix, and its last output was a subdivision-and-street slug while the granularity floor and the 40.9% doorway ratio are both failing. Positions 1-3 is at 68 and no core update has completed, so there is nothing to judge a resume against.",
+      "evidence": ["E1", "E2", "E3", "E4", "E5", "E6", "E9", "E10", "E11"],
+      "notes": "Resuming needs the 32 false-law pages remediated and counted, the packs signed or the lane re-scoped to make no statutory claims, a clean re-check of the SS 15-38-15 class against post-fix content, and targeting raised to the incorporated-municipality floor."
+    },
+    "referenceLayer": {
+      "on": true,
+      "reason": "Two two-state guides are already seeded as drafts (posts 5352, 5353) with all 24 legal statements individually traced to the SB 68 allowlist or to verified pages, not to the unsigned packs, so finishing them produces no new claim resting on unverified authority. They are statewide /resources/ pages and add no location-targeted URLs while the cull is still working the doorway ratio down.",
+      "evidence": ["E5", "E11", "E13", "E14"],
+      "notes": "Scope is bounded: complete attorney review and publish the two drafted guides, and resolve the SS 15-38-15 threshold. No new drafting against the 201 unverified statutes."
+    },
+    "researchAssets": {
+      "on": true,
+      "reason": "Study #1 established a method that survives this site's own scrutiny - FARS-sourced, all 33 prose figures verified programmatically against the shipped dataset before publication - and research assets carry no statutory claims, so the unsigned packs do not gate them. Radar's baseline says this is the missing asset: named in 0 of 3 probes and absent from all 11 watched aggregators.",
+      "evidence": ["E13", "E15", "E17"],
+      "notes": "The brief names no Study #2 plan, so the topic is unchosen - recorded as an open item rather than assumed. Any second study ships only if every prose figure verifies against its dataset."
+    },
+    "spanish": {
+      "on": false,
+      "reason": "It rides on hyperlocal or the reference layer producing new pages; hyperlocal is off and the reference guides are English drafts still awaiting attorney review, with no Spanish twins planned this month. The /es/ twins are also where legal errors have twice outlived the English fix, so the twin must never lead the original.",
+      "evidence": ["E1", "E10", "E14"]
+    },
+    "gbp": {
+      "on": false,
+      "reason": "GBP posts are scheduled by the autorun, which is paused, and nothing is hand-scheduled this month. Two posts remain pending from the 2026-08-24 run and their scheduled dates have already passed, so they need a human decision rather than a lane.",
+      "evidence": ["E1", "E10", "E12", "E13"]
+    },
+    "freshness": {
+      "on": false,
+      "reason": "It has never run for this client - there is no freshness.state.json - and an unvalidated automated writer must not be introduced to a corpus that still carries 32 known false statements of law and 410 unverified page-citations. This site has repeatedly had sweeps report clean against fields they could not see, which is the exact failure mode an automated refresh would reproduce silently.",
+      "evidence": ["E7", "E8", "E16", "E17"],
+      "notes": "First real job waiting for it: the January CPI adjustment to S.C. Code SS 15-32-220, which two pages quote at 2026 figures."
+    }
+  },
+  "targets": [
+    {
+      "metric": "Keywords in positions 1-3 (Semrush, US db)",
+      "current": 68,
+      "target": 68,
+      "by": "2026-12",
+      "source": "Semrush US database, recorded in RECOVERY-LOG.md",
+      "note": "Hold-or-climb, not growth. Success is defined as holding 68 through the next completed core update instead of halving again; judge nothing between update boundaries."
+    },
+    {
+      "metric": "Savannah green-pin share (top-3)",
+      "current": 41.06,
+      "target": 38,
+      "by": "2026-12",
+      "source": "data/local-seo/rank-history.json, scan-2026-08-17-88948a",
+      "note": "A hold target: with hyperlocal off, holding is the honest measurable outcome. Falling below 38% is one of the observations that would argue for re-scoping and resuming the lane."
+    },
+    {
+      "metric": "Radar AI-visibility mentions (probes naming Roden)",
+      "current": "0/3",
+      "target": "1/3",
+      "by": "2026-12",
+      "source": "Radar cycle AI-visibility probes (data/radar/cycles/)",
+      "note": "Radar's own baseline attributes the zero to aggregator absence rather than reviews - Charleston has 106 reviews at 4.9 and still lost the answer - so this target depends on an aggregator-listing decision outside these six lanes."
+    },
+    {
+      "metric": "GSC clicks, monthly",
+      "current": 1191,
+      "target": 1191,
+      "by": "2026-12",
+      "source": "GSC API, sc-domain:rodenlaw.com",
+      "note": "Current is Jul 2026, the last complete month in the 2026-08-24 snapshot; August tracked to ~1,150, the lowest full month in the window. Not measurable until a comparison export exists in data/gsc."
+    }
+  ],
+  "spendCapUsd": {
+    "weekly": 0,
+    "monthly": 0,
+    "reason": "Hyperlocal is off and the autorun is paused; weekly spend has been $0 of the $12 cap since the 2026-08-24 run, which spent $1.35. The cap returns to 12 in the same file that turns hyperlocal back on."
+  },
+  "switches": [
+    {
+      "switch": "autorun.weeklySpendCapUSD",
+      "from": 12,
+      "to": 0,
+      "reason": "The only thing holding the pipeline shut is a pause note reading 'content generation resumes on request' - this client has no recovery.paused gate, and the recovery guard reports clear. With both law packs unsigned and the pipeline proven to carry a corrected statute class forward into new posts, the spend cap is the one structural backstop available: at $0 an accidental or casual resume halts before it publishes. Restore to 12 in the same file that turns hyperlocal on.",
+      "evidence": ["E1", "E5", "E6"],
+      "owner": "client-ops"
+    }
+  ],
+  "evidence": {
+    "E1": {
+      "source": "data/local-seo/autorun.state.json via autorun-ctl.mjs status",
+      "observed": "autorun.enabled is no - 'paused 2026-08-28 during the legal-accuracy remediation - content generation resumes on request'; weekly spend $0 of $12; recovery guard clear; next office Myrtle Beach.",
+      "at": "2026-08-28",
+      "path": "data/local-seo/autorun.state.json"
+    },
+    "E2": {
+      "source": "RECOVERY-LOG.md KPI baseline table (Semrush US database)",
+      "observed": "Keywords in positions 1-3: 68. Success is defined as positions 1-3 holding or climbing through the next core update instead of halving again.",
+      "at": "2026-07",
+      "value": 68,
+      "path": "RECOVERY-LOG.md"
+    },
+    "E3": {
+      "source": "RECOVERY-LOG.md 'Update boundaries to measure against'",
+      "observed": "The Aug 2026 spam update began 8/18 and was still rolling at audit time; the next core update is the verdict the plan exists to change, and nothing is to be judged until it completes.",
+      "at": "2026-08",
+      "path": "RECOVERY-LOG.md"
+    },
+    "E4": {
+      "source": "RECOVERY-LOG.md KPI snapshot - GSC, from docs/gsc-2026-08-24/Chart.csv",
+      "observed": "1,191 clicks in Jul 2026 and 825 through 2026-08-22, tracking to roughly 1,150 - the lowest full month in the 13-month window; recorded as a baseline, not a verdict.",
+      "at": "2026-08-24",
+      "value": 1191,
+      "path": "RECOVERY-LOG.md"
+    },
+    "E5": {
+      "source": "internal-ai-scripts/law/GA.json and SC.json, via the brief's law-pack section",
+      "observed": "Both packs UNSIGNED: GA 22 authorities / 19 rules / 22 unverified, SC 25 authorities / 14 rules / 25 unverified. An unsigned pack is advisory - no NEW claim may cite its authorities. Sign-off packets are with the attorneys (decision D6).",
+      "at": "2026-09-10",
+      "path": "strategy/briefs/2026-10.md"
+    },
+    "E6": {
+      "source": "docs/statute-verification-tracker.md, 2026-09-08 recheck",
+      "observed": "31 instances across 23 pages still cited S.C. Code SS 15-38-15 for the plaintiff's recovery bar - a class already corrected in #97 - including a dozen local-SEO blog posts that POSTDATE the fix, because the templates that generate new pages carry the error forward.",
+      "at": "2026-09-08",
+      "value": 31,
+      "path": "docs/statute-verification-tracker.md"
+    },
+    "E7": {
+      "source": "docs/statute-verification-tracker.md coverage table",
+      "observed": "74 statutes verified against primary text and 201 not; 2,552 page-citations verified and 410 not, of 2,962 total. Three of four verification passes found a live error.",
+      "at": "2026-09-03",
+      "value": 410,
+      "path": "docs/statute-verification-tracker.md"
+    },
+    "E8": {
+      "source": "docs/legal-accuracy-audit-2026-08-26.md",
+      "observed": "32 pages carry a false statement of law across 1,448 published posts and eight surfaces - including the medical-malpractice pillar page denying the S.C. SS 15-32-220 cap, and six pages giving a 12-month Georgia municipal ante litem deadline where O.C.G.A. SS 36-33-5 gives six.",
+      "at": "2026-08-26",
+      "value": 32,
+      "path": "docs/legal-accuracy-audit-2026-08-26.md"
+    },
+    "E9": {
+      "source": "data/site-health/latest.json",
+      "observed": "Overall FAIL: doorway ratio 40.9% - 503 location-targeted of 1,230 indexable URLs against a 25% ceiling - and the granularity floor fails with 162 errors against a floor of incorporated municipality in GA+SC.",
+      "at": "2026-09-10",
+      "value": 40.9,
+      "path": "data/site-health/latest.json"
+    },
+    "E10": {
+      "source": "autorun.state.json last run scan-2026-08-24-abdf97",
+      "observed": "The lane's most recent output was slug 'wando-gardens-faber-place-drive-best-car-accident-lawyer-north-charleston' plus its Spanish twin - a subdivision and a street below the incorporated-municipality floor - with 2 GBP posts still pending.",
+      "at": "2026-08-24",
+      "path": "data/local-seo/autorun.state.json"
+    },
+    "E11": {
+      "source": "RECOVERY-LOG.md 'Progress against the restated criterion'",
+      "observed": "Location + practice-area URLs are down from 668 to 538 against a 418-535 target band, with batch (a) removing 88 neighbourhood and subdivision pages.",
+      "at": "2026-08-25",
+      "value": 538,
+      "path": "RECOVERY-LOG.md"
+    },
+    "E12": {
+      "source": "data/local-seo/rank-history.json, latest scan per office",
+      "observed": "Green pins top-3: Savannah 41.06% (2026-08-17, +4.2 vs previous, -0.5 vs 4 wks), Myrtle Beach 21.77% (2026-08-10), Charleston 17.96% (2026-08-21), Darien 50% (2026-07-13), North Charleston 0% with 25/25 zero-SoLV (2026-08-24), Columbia 0% with 23/23 zero-SoLV (2026-07-14).",
+      "at": "2026-08-24",
+      "path": "data/local-seo/rank-history.json"
+    },
+    "E13": {
+      "source": "Radar cycle 2026-09-07-baseline",
+      "observed": "Named in 0 of 3 AI probes (Savannah, Charleston and Myrtle Beach all 0/1) and absent from all 11 watched aggregators; 4 locations sit below the 20-review floor while Charleston holds 106 reviews at 4.9 and still lost the answer.",
+      "at": "2026-09-07",
+      "value": "0/3",
+      "path": "data/radar/cycles/2026-09-07-baseline.json"
+    },
+    "E14": {
+      "source": "RECOVERY-LOG.md 'Two-state guides - drafted 2026-08-25'",
+      "observed": "Two guides (comparative negligence; filing deadlines) are seeded as DRAFTS in /resources/ as posts 5352 and 5353 awaiting attorney review, with 24 legal statements each traced individually to the SB 68 allowlist or to verified pages 5223, 4810 and 4811 - nothing from a secondary summary.",
+      "at": "2026-08-25",
+      "path": "RECOVERY-LOG.md"
+    },
+    "E15": {
+      "source": "RECOVERY-LOG.md 'Study #1 published - the I-26 / I-95 Corridor Report'",
+      "observed": "/resources/i-26-i-95-corridor-report/ published from NHTSA FARS - 323 fatal crashes, 374 deaths, 109 truck-involved across both states 2020-2024 - with all 33 prose figures verified programmatically against the shipped 323-row dataset before publication; one failed and was corrected.",
+      "at": "2026-08-25",
+      "path": "RECOVERY-LOG.md"
+    },
+    "E16": {
+      "source": "data/local-seo/freshness.state.json (absent)",
+      "observed": "No freshness state file exists for this client - the Tuesday refresh has never run here.",
+      "at": "2026-09-10",
+      "path": "strategy/briefs/2026-10.md"
+    },
+    "E17": {
+      "source": "RECOVERY-LOG.md statistics audit rounds 1 and 2",
+      "observed": "36 unchecked numeric claims removed from 21 pages; nationally-sourced figures held up against FARS while every local road ranking failed, and one proven false claim had both halves wrong. Any bare figure without a source and a snapshot date is indefensible.",
+      "at": "2026-08-25",
+      "path": "RECOVERY-LOG.md"
+    }
+  },
+  "openItems": [
+    {
+      "item": "Attorney sign-off on the GA and SC law packs (decision D6). Until signed, no lane may produce a new legal claim citing their authorities.",
+      "owner": "Eric Roden (GA), Graeham C. Gillin (SC)",
+      "blocking": true
+    },
+    {
+      "item": "MISSING FIGURE: the brief does not state how many of the 32 pages carrying a false statement of law (audit 2026-08-26) have been remediated. The autorun pause exists for exactly this work and cannot be lifted without the number.",
+      "owner": "content-director",
+      "blocking": true
+    },
+    {
+      "item": "201 statutes and 410 page-citations not yet verified against primary text. Work down by exposure, not alphabetically - the unverified set averages 2.0 pages each against 34 for the verified set.",
+      "owner": "Eric Roden, Graeham C. Gillin",
+      "blocking": true
+    },
+    {
+      "item": "Attorney review of the two drafted two-state guides (posts 5352, 5353); the reference layer cannot publish without it.",
+      "owner": "Eric Roden, Graeham C. Gillin",
+      "blocking": true
+    },
+    {
+      "item": "S.C. Code SS 15-38-15 threshold unresolved - the site states it as '50% or more' and as 'more than 50%', which differ at exactly 50%, the distinction the comparative-negligence guide exists to explain.",
+      "owner": "Graeham C. Gillin",
+      "blocking": true
+    },
+    {
+      "item": "No Study #2 topic is named in the brief. The researchAssets lane is on with the method fixed but the subject unchosen; pick one that FARS or an equivalent primary dataset can carry.",
+      "owner": "content-director",
+      "blocking": false
+    },
+    {
+      "item": "This client has no recovery.paused gate - config.overlay.json carries no localSeo.recovery block and the recovery guard reports clear, so the only hold on the pipeline is a note reading 'resumes on request'. Owner decision on whether to add a real gate.",
+      "owner": "owner",
+      "blocking": false
+    },
+    {
+      "item": "Two GBP posts pending from the 2026-08-24 run for a sub-municipal North Charleston post; scheduled dates 2026-09-02 and 2026-09-05 have passed. Release or drop.",
+      "owner": "client-ops",
+      "blocking": false
+    },
+    {
+      "item": "No GSC comparison export in data/gsc - the clicks target cannot be measured until one is produced.",
+      "owner": "client-ops",
+      "blocking": false
+    },
+    {
+      "item": "/blog/ashley-phosphate-i-26-south-carolinas-deadliest-intersection/ still asserts the ranking in its headline after both statistics rounds stripped the supporting evidence from the body.",
+      "owner": "content-director",
+      "blocking": false
+    },
+    {
+      "item": "Study #1 has _roden_last_reviewed unset while publishing lastReviewed and reviewedBy in schema; it needs one genuine attorney read.",
+      "owner": "Eric Roden",
+      "blocking": false
+    },
+    {
+      "item": "Myrtle Beach GBP is registered in Murrells Inlet; Radar's open question is whether that costs the Myrtle Beach map pack and AI answer, and whether a Myrtle Beach address is obtainable.",
+      "owner": "owner",
+      "blocking": false
+    }
+  ],
+  "nextOffice": "Myrtle Beach",
+  "risks": [
+    "The pause has a cost: Savannah is -0.5 and Myrtle Beach -6.6 on green-pin share against four weeks ago, and GSC clicks are at the bottom of the window. That cost is not a reason to resume a lane that is still publishing sub-municipal slugs and re-importing corrected statute errors.",
+    "Rank data is going stale while the lane is off - Darien's scan is 59 days old and Columbia's 58 - so the hold targets rest on measurements that need refreshing before they can be judged.",
+    "The Radar target depends on aggregator presence, which none of these six lanes controls; if no aggregator decision is made, expect 0/3 to persist regardless of what the reference and research lanes ship.",
+    "Turning hyperlocal back on without raising its targeting to the municipality floor would work directly against the cull that has just removed 88 neighbourhood and subdivision pages."
+  ]
+}
