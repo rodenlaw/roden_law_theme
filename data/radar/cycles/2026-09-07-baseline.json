@@ -1,0 +1,171 @@
+{
+  "cycleId": "2026-09-07-baseline",
+  "client": "Roden Law",
+  "baseline": true,
+  "bands": {
+    "discovery": {
+      "aiVisibility": [
+        {
+          "probeId": "hire-family-voice",
+          "engine": "perplexity",
+          "market": "Savannah",
+          "runDate": "2026-09-07",
+          "clientNamed": false,
+          "clientPosition": null,
+          "competitorsNamed": [
+            "Harris Lowry Manton LLP",
+            "Bader Law",
+            "Owens & Mulherin Injury Lawyers",
+            "Farah & Farah",
+            "Morgan & Morgan"
+          ],
+          "sourcesCited": [
+            "farahandfarah.com",
+            "expertise.com",
+            "legaldowntown.com",
+            "enjuris.com",
+            "chattahoocheeinjurylaw.com",
+            "forthepeople.com",
+            "lawyers.com",
+            "owensmulherin.com",
+            "hlmlawfirm.com"
+          ],
+          "answerShape": "list",
+          "finding": "ABSENT.",
+          "watchedAggregatorsCited": [
+            "expertise.com",
+            "legaldowntown.com",
+            "enjuris.com",
+            "lawyers.com"
+          ]
+        },
+        {
+          "probeId": "hire-generic-city",
+          "engine": "perplexity",
+          "market": "Charleston",
+          "runDate": "2026-09-07",
+          "clientNamed": false,
+          "clientPosition": null,
+          "competitorsNamed": [
+            "Goings Law Firm, LLC",
+            "TED Law",
+            "Philip Berlinsky Law",
+            "Sahn Law Firm",
+            "Pierce, Sloan, Kennedy & Early LLC"
+          ],
+          "sourcesCited": [
+            "bestinhood.com",
+            "thelawfirmjournal.com",
+            "lawfirmsquare.com",
+            "superlawyers.com",
+            "findlaw.com",
+            "lawyers.com",
+            "avvo.com",
+            "expertise.com"
+          ],
+          "answerShape": "list",
+          "finding": "ABSENT despite 106 reviews at 4.9 — the second-largest review base among firms considered in this market.",
+          "watchedAggregatorsCited": [
+            "bestinhood.com",
+            "thelawfirmjournal.com",
+            "lawfirmsquare.com",
+            "superlawyers.com",
+            "findlaw.com",
+            "lawyers.com",
+            "avvo.com",
+            "expertise.com"
+          ]
+        },
+        {
+          "probeId": "hire-generic-city",
+          "engine": "perplexity",
+          "market": "Myrtle Beach",
+          "runDate": "2026-09-07",
+          "clientNamed": false,
+          "clientPosition": null,
+          "competitorsNamed": [
+            "Morris Law Accident Injury Lawyers",
+            "Lofton & Lofton, P.C.",
+            "Pierce, Sloan, Kennedy & Early LLC",
+            "Goings Law Firm"
+          ],
+          "sourcesCited": [
+            "thelawfirmjournal.com",
+            "superlawyers.com",
+            "lawfirmsquare.com",
+            "findlaw.com"
+          ],
+          "answerShape": "list",
+          "finding": "ABSENT. GBP is registered in Murrells Inlet, not Myrtle Beach, and carries 2 reviews.",
+          "watchedAggregatorsCited": [
+            "thelawfirmjournal.com",
+            "superlawyers.com",
+            "lawfirmsquare.com",
+            "findlaw.com"
+          ]
+        }
+      ],
+      "summary": "0 for 3. Roden was named in NO AI answer across all three probed markets despite holding offices in each.",
+      "aggregatorsCited": [
+        "avvo.com",
+        "bestinhood.com",
+        "enjuris.com",
+        "expertise.com",
+        "findlaw.com",
+        "lawfirmsquare.com",
+        "lawyers.com",
+        "legaldowntown.com",
+        "superlawyers.com",
+        "thelawfirmjournal.com"
+      ]
+    },
+    "selection": {
+      "reviewMoat": [
+        {
+          "market": "Savannah",
+          "count": 60,
+          "rating": 4.9,
+          "assessment": "Above the 20-review floor but thin against Georgia Auto Law's 384 in the same market."
+        },
+        {
+          "market": "Charleston",
+          "count": 106,
+          "rating": 4.9,
+          "assessment": "Strongest location. In the most-trusted rating band with credible depth."
+        },
+        {
+          "market": "North Charleston",
+          "count": 2,
+          "rating": 5,
+          "assessment": "BELOW FLOOR. ~47% of consumers will not use a local business with fewer than 20 reviews."
+        },
+        {
+          "market": "Myrtle Beach (Murrells Inlet)",
+          "count": 2,
+          "rating": 5,
+          "assessment": "BELOW FLOOR."
+        },
+        {
+          "market": "Columbia",
+          "count": 2,
+          "rating": 5,
+          "assessment": "BELOW FLOOR."
+        },
+        {
+          "market": "Darien",
+          "count": 0,
+          "rating": null,
+          "assessment": "ZERO. No moat at all."
+        }
+      ],
+      "summary": "4 of 6 locations sit below the ~20-review credibility floor; one has zero."
+    }
+  },
+  "openQuestions": [
+    "Is Roden listed on ANY of the 11 watched aggregators? Baseline suggests no for the ones feeding these answers.",
+    "Does the Murrells Inlet GBP address cost the Myrtle Beach map pack and AI answer, and is a Myrtle Beach address obtainable?",
+    "Intake secret-shop has never been run across 6 locations and 2 states.",
+    "Charleston has 106 reviews and still lost the AI answer — evidence that reviews alone are not sufficient without aggregator presence."
+  ],
+  "probeSetVersion": "1.0.0"
+}

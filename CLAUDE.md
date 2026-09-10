@@ -100,6 +100,11 @@ those, and it is still not set up.
 | `content/meta.json` | Generated content-meta record (see above) |
 | `.github/workflows/deploy.yml` | Deploy to WP Engine prod (`rodenlawprod`) |
 | `next/` | Separate migration workstream — not deployed by the WP workflow |
+| `client.json` | The firm's identity record (entity, jurisdictions, offices, attorneys, integration IDs). Hand-typed, the only place these facts live. |
+| `config.overlay.json` | Hand-tuned pipeline/Radar knobs that are not identity (QA gate, keyword scope, rotation, probes). |
+| `local-seo.config.json`, `radar.config.json` | **Generated** from the two files above by `internal-ai-scripts/scripts/clients/gen-configs.mjs`. Do not hand-edit. |
+| `data/local-seo/`, `.env.local` | The local-SEO pipeline's data and secrets (moved here from Drive 2026-09-10; runs/ and state files are gitignored). |
+| `docs/pipeline/` | Pipeline handoff notes from the Drive era, kept for history. |
 
 ## `inc/` holds live code only
 

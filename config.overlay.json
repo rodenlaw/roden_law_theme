@@ -1,0 +1,301 @@
+{
+  "_comment": "Hand-tuned configuration that is NOT firm identity. Identity, offices, attorneys and integration IDs live in client.json; gen-configs.mjs merges the two.",
+  "localSeo": {
+    "writer": {
+      "agent": "roden-content-writer",
+      "expertName": "Eric Roden",
+      "additionalExperts": [
+        "Graeham C. Gillin"
+      ],
+      "expertTitle": "founding partner",
+      "wordCountTarget": "1500-2400",
+      "esAgent": "roden-content-writer-es"
+    },
+    "publish": {
+      "target": "wordpress-ssh",
+      "wordpress": {
+        "sshHost": "rodenlawprod.ssh.wpengine.net",
+        "sshUser": "rodenlawprod",
+        "sshKey": "~/.ssh/wpengine_ed25519",
+        "stagingSshHost": "rodenlawdev1.ssh.wpengine.net",
+        "stagingSshUser": "rodenlawdev1",
+        "practiceAreaPostType": "practice_area",
+        "blogPostType": "post",
+        "metaPrefix": "_roden"
+      },
+      "qaGate": {
+        "_comment": "Auto-publish enabled 2026-07-16 per Brian (calibration satisfied: 12 posts July 7 + 13-14, all gate verdicts matched human review; ES false-fails fixed by the locale-aware gate). High-risk patterns and critical checks still force DRAFT; the autorun Slack-alerts every hold.",
+        "enabled": true,
+        "autoPublishOnPass": true,
+        "minScore": 9,
+        "highRiskPatterns": [
+          "wrongful.{0,5}death",
+          "\\bchild\\b|\\bminor\\b|\\bkid\\b",
+          "\\bfatal\\b",
+          "felony.{0,5}DUI"
+        ],
+        "defaultCategory": {
+          "slug": "car-accident",
+          "name": "Car Accident"
+        },
+        "categoryMap": [
+          {
+            "slug": "motorcycle-accident",
+            "name": "Motorcycle Accident",
+            "pattern": "\\b(motorcycle|moped)\\b"
+          },
+          {
+            "slug": "truck-accident",
+            "name": "Truck Accident",
+            "pattern": "\\b(truck|18.?wheeler|tractor.?trailer|semi.?truck|big.?rig|commercial.?vehicle)\\b"
+          },
+          {
+            "slug": "bicycle-accident",
+            "name": "Bicycle Accident",
+            "pattern": "\\b(bicycle|cyclist)\\b"
+          },
+          {
+            "slug": "pedestrian-accident",
+            "name": "Pedestrian Accident",
+            "pattern": "\\bpedestrian\\b"
+          },
+          {
+            "slug": "rideshare-accident",
+            "name": "Rideshare Accident",
+            "pattern": "\\b(uber|lyft|rideshare|ride.?share)\\b"
+          },
+          {
+            "slug": "bus-accident",
+            "name": "Bus Accident",
+            "pattern": "\\b(bus|transit.?bus|school.?bus|charter.?bus)\\b"
+          },
+          {
+            "slug": "scooter-accident",
+            "name": "Scooter & E-Bike Accident",
+            "pattern": "\\b(e.?scooter|electric.?scooter|e.?bike|electric.?bike)\\b"
+          },
+          {
+            "slug": "atv-accident",
+            "name": "ATV & Off-Road Accident",
+            "pattern": "\\b(atv|utv|side.?by.?side|off.?road)\\b"
+          },
+          {
+            "slug": "golf-cart-accident",
+            "name": "Golf Cart Accident",
+            "pattern": "\\bgolf.?cart\\b"
+          },
+          {
+            "slug": "boating-accident",
+            "name": "Boating Accident",
+            "pattern": "\\b(boat|boating|jet.?ski|watercraft)\\b"
+          },
+          {
+            "slug": "wrongful-death",
+            "name": "Wrongful Death",
+            "pattern": "\\bwrongful.?death\\b"
+          }
+        ]
+      }
+    },
+    "_content_note": "Roden content lives in WordPress, not a file repo. Stage 2 inventory cross-referencing should use lib/wordpress.mjs listWpContent() rather than the file-based inventory.mjs — see the onboarding notes. No content.*Dir applies.",
+    "keywordScope": {
+      "id": "motor-vehicle-and-vulnerable-road-users",
+      "label": "Motor vehicle, vulnerable road user, and transport-accident verticals only",
+      "rule": "Limit the keyword universe to vehicle / transport accident verticals only. EVERY keyword in themes, long_tail, gaps, and tracking_set must center on one of these injury vectors: car, truck (incl. commercial / 18-wheeler / box truck / delivery), motorcycle, ride-share (Uber/Lyft), taxi/limo/shuttle, bus, pedestrian, bicycle, e-scooter, e-bike, ATV / side-by-side / off-road vehicle, golf cart, boat / jet ski / personal watercraft. Catastrophic outcomes (brain injury, spinal cord, burn, fatal/wrongful death) and incident-modifier sub-types (DUI, uninsured/underinsured motorist, hit-and-run, rear-end, head-on, multi-vehicle, rollover, T-bone, distracted driving, drowsy driving, lane change, left-turn) are allowed ONLY when paired with an in-scope vertical (e.g. 'wrongful death car accident lawyer', 'brain injury motorcycle crash lawyer'). Do NOT include premises liability, slip-and-fall, dog bite, medical malpractice, nursing home / elder abuse, workers compensation, construction accident, scaffold fall, product liability (unless defective vehicle/restraint/tire), Jones Act / longshore (unless boat collision), or any standalone non-transport vertical. If a competitor covers an out-of-scope vertical, do NOT flag it as a gap. Generic top-of-funnel PI terms ('personal injury lawyer', 'best personal injury lawyer', 'free consultation injury lawyer') are acceptable as broad anchor keywords because Roden's PI practice is constrained to in-scope verticals — keep these to ≤ 3 of the 25-keyword tracking set.",
+      "allowedVerticals": [
+        "car",
+        "auto",
+        "truck",
+        "commercial-truck",
+        "18-wheeler",
+        "semi",
+        "box-truck",
+        "delivery-vehicle",
+        "motorcycle",
+        "moped",
+        "rideshare",
+        "uber",
+        "lyft",
+        "taxi",
+        "limo",
+        "shuttle",
+        "bus",
+        "school-bus",
+        "charter-bus",
+        "transit-bus",
+        "pedestrian",
+        "bicycle",
+        "bike",
+        "e-scooter",
+        "electric-scooter",
+        "e-bike",
+        "electric-bike",
+        "atv",
+        "side-by-side",
+        "utv",
+        "off-road-vehicle",
+        "golf-cart",
+        "low-speed-vehicle",
+        "boat",
+        "boating",
+        "jet-ski",
+        "personal-watercraft",
+        "pwc"
+      ],
+      "allowedSubTypes": [
+        "drunk-driving",
+        "dui",
+        "drugged-driving",
+        "uninsured-motorist",
+        "underinsured-motorist",
+        "um-uim",
+        "hit-and-run",
+        "rear-end",
+        "head-on",
+        "multi-vehicle",
+        "rollover",
+        "t-bone",
+        "side-impact",
+        "lane-change",
+        "left-turn",
+        "distracted-driving",
+        "texting-and-driving",
+        "drowsy-driving",
+        "wrongful-death-from-vehicle-crash",
+        "fatal-crash",
+        "brain-injury-from-vehicle-crash",
+        "tbi-from-crash",
+        "spinal-cord-injury-from-vehicle-crash",
+        "burn-injury-from-vehicle-crash"
+      ],
+      "excludedVerticals": [
+        "slip and fall",
+        "premises liability",
+        "negligent security",
+        "dog bite",
+        "medical malpractice",
+        "surgical error",
+        "misdiagnosis",
+        "birth injury",
+        "nursing home",
+        "elder abuse",
+        "bed sore",
+        "workers compensation",
+        "workers comp",
+        "construction accident",
+        "scaffold fall",
+        "fall from height",
+        "product liability",
+        "defective product",
+        "maritime injury",
+        "jones act",
+        "longshore"
+      ]
+    },
+    "autorun": {
+      "_comment": "Unattended runner (launchd io.blueskystud.roden-autorun, Mon/Wed/Fri 12:47). Enable/pause via autorun-ctl.mjs / the roden-autorun skill. Defaults: lib/autorun-config.mjs.",
+      "includeSpanish": "always",
+      "locationRotation": [
+        "Myrtle Beach",
+        "Charleston",
+        "North Charleston",
+        "Savannah"
+      ],
+      "weeklySpendCapUSD": 12,
+      "deployUrlTemplate": "https://rodenlaw.com/blog/{slug}/",
+      "gbpCaptionTemplates": {
+        "en": "{title}\n\n{excerpt}\n\nRead the full guide: what to do, who may be liable, and the deadlines that apply.\n\n📞 Free consultation: {phone} — no fees unless we win.",
+        "es": "{title}\n\n{excerpt}\n\nSu estatus migratorio NO le impide reclamar. Atendemos en español.\n\n📞 Consulta gratis: {phone} — no cobramos honorarios a menos que ganemos."
+      }
+    }
+  },
+  "radar": {
+    "scopeNote": "Full PI including workers' compensation. Jurisdiction stamping is mandatory on every finding — GA and SC differ on comparative negligence and filing deadlines, and the two have already been crossed in production content.",
+    "markets": {
+      "Savannah": {
+        "reviewBaseline": {
+          "date": "2026-09-07",
+          "count": 60,
+          "rating": 4.9
+        },
+        "note": "Shared market with Georgia Auto Law, also a Blue Sky client, which holds 384 reviews here to Roden's 60."
+      },
+      "Darien": {
+        "reviewBaseline": {
+          "date": "2026-09-07",
+          "count": 0,
+          "rating": null
+        }
+      },
+      "Charleston": {
+        "reviewBaseline": {
+          "date": "2026-09-07",
+          "count": 106,
+          "rating": 4.9
+        }
+      },
+      "North Charleston": {
+        "reviewBaseline": {
+          "date": "2026-09-07",
+          "count": 2,
+          "rating": 5
+        }
+      },
+      "Myrtle Beach": {
+        "reviewBaseline": {
+          "date": "2026-09-07",
+          "count": 2,
+          "rating": 5
+        },
+        "note": "GBP is registered in Murrells Inlet, not Myrtle Beach. Radar tracks whether that costs us the Myrtle Beach map pack and the AI answer."
+      },
+      "Columbia": {
+        "reviewBaseline": {
+          "date": "2026-09-07",
+          "count": 2,
+          "rating": 5
+        }
+      }
+    },
+    "verticals": [
+      "car accident",
+      "truck accident",
+      "motorcycle accident",
+      "pedestrian accident",
+      "premises liability",
+      "workers compensation",
+      "wrongful death",
+      "dog bite"
+    ],
+    "languages": [
+      "en",
+      "es"
+    ],
+    "aggregators": {
+      "note": "Third-party surfaces observed feeding AI answers in these markets. Roden was absent from every one of them in the 2026-09-07 baseline.",
+      "watch": [
+        "expertise.com",
+        "enjuris.com",
+        "bestinhood.com",
+        "thelawfirmjournal.com",
+        "lawfirmsquare.com",
+        "legaldowntown.com",
+        "superlawyers.com",
+        "avvo.com",
+        "lawyers.com",
+        "findlaw.com",
+        "justia.com"
+      ]
+    },
+    "cadence": {
+      "aiVisibility": "monthly",
+      "questionSpace": "quarterly",
+      "reviewMoat": "monthly",
+      "voiceOfCustomer": "quarterly",
+      "intakeSecretShop": "quarterly",
+      "trustSignalAudit": "quarterly",
+      "intakeAttribution": "continuous",
+      "offlineCommunity": "quarterly"
+    }
+  }
+}
