@@ -60,3 +60,6 @@ content/meta.*.json
 /data/local-seo/refresh-ledger.json
 /data/local-seo/freshness-log.jsonl
 /data/practice-area-drafts/
+
+# WordPress content export cache used by the toolkit content adapter (regenerable)
+/data/content-cache/

@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "updatedAt": "2026-09-10",
+  "notes": "Roden Law statistics registry, seeded from docs/stat-audit-2026-08-25.md, stat-audit-round2 and round4. Every value traces to a primary source with a vintage. The stale[] entries are the claims those audits removed or corrected; their replacements were drafted 2026-09-10 from the audit findings and stay human-reviewed (freshness.allowMergeTierA is false). The law (statutes, caps, deadlines) is NOT here — it lives in internal-ai-scripts/law/<STATE>.json.",
+  "facts": [
+    {
+      "id": "sc-traffic-deaths-annual",
+      "label": "South Carolina traffic fatalities, latest annual (FARS)",
+      "current": { "value": "1,038", "asOf": "2024", "qualifier": "FARS annual file", "source": { "name": "NHTSA FARS", "url": "https://www-fars.nhtsa.dot.gov/States/StatesFatalitiesFatalityRates.aspx", "retrievedAt": "2026-08-25" } },
+      "reviewEveryDays": 180,
+      "stale": []
+    },
+    {
+      "id": "sc-fatal-large-truck-crashes",
+      "label": "South Carolina fatal large-truck crashes by year (FARS 2020–2024: 113, 131, 120, 111, 126)",
+      "current": { "value": "126", "asOf": "2024", "qualifier": "FARS; the largest year-over-year rise in the series is +15.9% (2020→2021)", "source": { "name": "NHTSA FARS", "url": "https://www-fars.nhtsa.dot.gov/", "retrievedAt": "2026-08-25" }, "prior": { "value": "111", "asOf": "2023" } },
+      "reviewEveryDays": 180,
+      "stale": [
+        { "value": "23%", "valuePattern": "23\\s?%\\s+increase in fatal truck", "match": "[^.]*\\b23\\s?% increase in fatal truck accidents[^.]*\\.", "replacement": "According to NHTSA's FARS files, South Carolina recorded 113, 131, 120, 111 and 126 fatal large-truck crashes from 2020 through 2024, with no year-over-year rise larger than 15.9%." }
+      ]
+    },
+    {
+      "id": "sc-large-truck-crashes-all-severity",
+      "label": "South Carolina large-truck crashes, all severities (FMCSA MCMIS, a rolling snapshot)",
+      "current": { "value": "3,342", "asOf": "2024", "qualifier": "MCMIS snapshot dated 2025-09-26; the same query returns different totals as states keep reporting, so any figure needs its snapshot date", "source": { "name": "FMCSA Motor Carrier Management Information System", "url": "https://ai.fmcsa.dot.gov/CrashStatistics/", "retrievedAt": "2026-08-25" } },
+      "reviewEveryDays": 180,
+      "stale": [
+        { "value": "3,167", "match": "South Carolina recorded 3,167 large truck crashes in 2024", "replacement": "FMCSA's crash data snapshot dated September 26, 2025 lists 3,342 large-truck crashes in South Carolina for 2024, a rolling figure that changes as states continue reporting" }
+      ]
+    },
+    {
+      "id": "chatham-county-traffic-deaths-2022",
+      "label": "Chatham County, GA traffic deaths, 2022 (FARS)",
+      "current": { "value": "40", "asOf": "2022", "qualifier": "eighth among Georgia's 152 counties; the 59 figure belongs to Clayton County", "source": { "name": "NHTSA FARS", "url": "https://www-fars.nhtsa.dot.gov/", "retrievedAt": "2026-08-25" } },
+      "reviewEveryDays": 365,
+      "stale": [
+        { "value": "59", "valuePattern": "Chatham County[^.]{0,60}\\b59\\b[^.]{0,40}traffic deaths", "match": "Chatham County reported 59 traffic deaths in 2022[^.]*top-5 county statewide[^.]*\\.", "replacement": "According to NHTSA's FARS data, Chatham County recorded 40 traffic deaths in 2022, eighth among Georgia's 152 counties." }
+      ]
+    },
+    {
+      "id": "us-pedestrian-deaths-2022",
+      "label": "US pedestrian deaths, 2022 (NHTSA)",
+      "current": { "value": "7,522", "asOf": "2022", "qualifier": "NHTSA's published 2022 figure; the final FARS file revised it to 7,593 — cite the source and vintage", "source": { "name": "NHTSA", "url": "https://www.nhtsa.gov/road-safety/pedestrian-safety", "retrievedAt": "2026-08-25" } },
+      "reviewEveryDays": 365,
+      "stale": []
+    },
+    {
+      "id": "horry-county-us17-fatal-crashes-2024",
+      "label": "US-17 fatal crashes in Horry County, 2024 (FARS): 6 of the county's 57",
+      "current": { "value": "6", "asOf": "2024", "qualifier": "US-17 carried more fatal crashes than any other Horry County roadway in the FARS 2024 file (6 of 57)", "source": { "name": "NHTSA FARS", "url": "https://www-fars.nhtsa.dot.gov/", "retrievedAt": "2026-08-25" } },
+      "reviewEveryDays": 365,
+      "stale": [
+        { "value": "2,181", "match": "[^.]*\\b2,181 motor vehicle accidents in a single year[^.]*\\.", "replacement": "According to NHTSA's FARS 2024 file, US-17 carried 6 of Horry County's 57 fatal crashes that year, more than any other roadway in the county." }
+      ]
+    },
+    {
+      "id": "i95-national-fatal-crash-rank",
+      "label": "I-95 among US interstates by fatal crashes, 2022–2024 (FARS): second of 222 designations, 924 crashes, 1,020 deaths",
+      "current": { "value": "924", "asOf": "2022–2024", "qualifier": "second of 222 interstate designations by fatal crashes, behind I-10; 1,020 deaths", "source": { "name": "NHTSA FARS", "url": "https://www-fars.nhtsa.dot.gov/", "retrievedAt": "2026-08-25" } },
+      "reviewEveryDays": 365,
+      "stale": []
+    }
+  ]
+}
