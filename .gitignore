@@ -63,3 +63,9 @@ content/meta.*.json
 
 # WordPress content export cache used by the toolkit content adapter (regenerable)
 /data/content-cache/
+
+# Local site-health reports (the CI job keeps its own as an artifact)
+/data/site-health/
+
+# Headless director transcripts (the brief itself is committed as the evidence record)
+/strategy/briefs/*.director.log
