@@ -165,7 +165,7 @@ if ( ! $featured_id ) {
                    class="btn btn-primary btn-lg">
                     Call <?php echo esc_html( $firm['vanity_phone'] ); ?>
                 </a>
-                <a href="<?php echo esc_url( home_url( '/free-case-review/' ) ); ?>"
+                <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"
                    class="btn btn-outline-white btn-lg">
                     Free Case Review
                 </a>

@@ -592,13 +592,28 @@ function roden_attorneys_grid( $args = array() ) {
     if ( $args['office_key'] ) {
         $meta_query[] = array( 'key' => '_roden_atty_office_key', 'value' => $args['office_key'], 'compare' => '=' );
     }
-    if ( 'attorney' === $args['role'] ) {
-        $meta_query[] = array(
-            'relation' => 'OR',
-            array( 'key' => '_roden_team_role', 'value' => 'attorney' ),
-            array( 'key' => '_roden_team_role', 'compare' => 'NOT EXISTS' ),
-        );
-    }
+
+    /*
+     * Staff are never listed here, whatever the caller asked for.
+     *
+     * This grid links every card to the profile permalink, but
+     * roden_staff_redirect() 301s any profile whose _roden_team_role is
+     * 'staff' to /attorneys/. A staff card is therefore a guaranteed redirect
+     * hop, which is why staff have their own roden_staff_grid() that renders
+     * the same card WITHOUT a link. The meta box says so in as many words:
+     * "Attorneys appear in the attorneys grid with links to their profile.
+     * Staff appear in a separate section without profile links."
+     *
+     * Callers that passed role => 'attorney' already got this. Callers that
+     * passed nothing did not, and silently emitted links to pages that
+     * redirect. Enforcing it in the query means every call site is correct,
+     * including the four templates that share the practice-area rendering.
+     */
+    $meta_query[] = array(
+        'relation' => 'OR',
+        array( 'key' => '_roden_team_role', 'value' => 'staff', 'compare' => '!=' ),
+        array( 'key' => '_roden_team_role', 'compare' => 'NOT EXISTS' ),
+    );
     if ( ! empty( $meta_query ) ) {
         $query_args['meta_query'] = $meta_query;
     }
@@ -1109,7 +1124,7 @@ function roden_contact_form_sidebar( $local_phone = '', $source = '' ) {
                     printf(
                         /* translators: %s: link to the Terms & Privacy Policy page. */
                         wp_kses( __( 'I hereby expressly consent to receive automated communications including calls, texts, emails, and/or prerecorded messages. By submitting this form, you agree to our %s.', 'roden-law' ), array( 'a' => array( 'href' => array(), 'target' => array(), 'rel' => array() ) ) ),
-                        '<a href="' . esc_url( home_url( '/terms-privacy-policy/' ) ) . '" target="_blank" rel="noopener noreferrer">' . esc_html__( 'Terms &amp; Privacy Policy', 'roden-law' ) . '</a>'
+                        '<a href="' . esc_url( home_url( '/privacy-policy/' ) ) . '" target="_blank" rel="noopener noreferrer">' . esc_html__( 'Terms &amp; Privacy Policy', 'roden-law' ) . '</a>'
                     );
                 ?></span>
             </label>
