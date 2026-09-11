@@ -125,6 +125,60 @@ if ( ! $featured_id ) {
     </section>
 
     <!-- ============================================================
+         COMPLETE INDEX
+         ============================================================
+         The grid above shows 20 and reveals the rest with a JS "Load More"
+         button, which a crawler cannot press -- so every case result except
+         the featured one had no click path and all 156 were reported as
+         orphans. This renders the full list server-side so each result is one
+         click from this page, and this page is one click from / via the
+         "Results" nav item. The grid keeps its existing behaviour.
+         ============================================================ -->
+    <section class="section all-results-section">
+        <div class="site-container">
+            <div class="section-header">
+                <h2>All Case Results</h2>
+                <p>Every settlement, verdict and recovery listed above, in full.</p>
+            </div>
+            <?php
+            $all_results = new WP_Query( array(
+                'post_type'      => 'case_result',
+                'posts_per_page' => -1,
+                'post_status'    => 'publish',
+                'orderby'        => 'meta_value_num',
+                'meta_key'       => '_roden_case_amount_raw',
+                'order'          => 'DESC',
+                'no_found_rows'  => true,
+            ) );
+
+            if ( $all_results->have_posts() ) :
+                ?>
+                <ul class="all-results-index">
+                    <?php
+                    while ( $all_results->have_posts() ) :
+                        $all_results->the_post();
+                        $idx_amount = get_post_meta( get_the_ID(), '_roden_case_amount', true );
+                        ?>
+                        <li>
+                            <a href="<?php the_permalink(); ?>">
+                                <?php if ( $idx_amount ) : ?>
+                                    <span class="ari-amount"><?php echo esc_html( $idx_amount ); ?></span>
+                                <?php endif; ?>
+                                <span class="ari-title"><?php the_title(); ?></span>
+                            </a>
+                        </li>
+                        <?php
+                    endwhile;
+                    ?>
+                </ul>
+                <?php
+                wp_reset_postdata();
+            endif;
+            ?>
+        </div>
+    </section>
+
+    <!-- ============================================================
          STATS BAR
          ============================================================ -->
     <section class="roden-section--stat-bar">

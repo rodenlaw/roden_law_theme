@@ -892,19 +892,9 @@ function roden_load_more_results_handler() {
     ob_start();
     while ( $results->have_posts() ) :
         $results->the_post();
-        $amount = get_post_meta( get_the_ID(), '_roden_case_amount', true );
-        $type   = get_post_meta( get_the_ID(), '_roden_case_type', true );
-        $desc   = get_post_meta( get_the_ID(), '_roden_description', true );
-        ?>
-        <div class="result-card">
-            <span class="result-type"><?php echo esc_html( ucfirst( $type ) ); ?></span>
-            <span class="result-amount"><?php echo esc_html( $amount ); ?></span>
-            <span class="result-title"><?php the_title(); ?></span>
-            <?php if ( $desc ) : ?>
-                <p class="result-desc"><?php echo esc_html( $desc ); ?></p>
-            <?php endif; ?>
-        </div>
-        <?php
+        // Same renderer the server-rendered grid uses, so appended cards are
+        // linked too and the two copies cannot drift apart again.
+        roden_case_result_card( get_the_ID() );
     endwhile;
     $html = ob_get_clean();
     wp_reset_postdata();
