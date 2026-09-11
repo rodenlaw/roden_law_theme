@@ -359,18 +359,59 @@ function roden_exclude_toxic_pages_from_sitemap( $args, $post_type ) {
 add_action( 'template_redirect', 'roden_legacy_attorney_redirect', 2 );
 function roden_legacy_attorney_redirect() {
     $path = trim( strtok( $_SERVER['REQUEST_URI'], '?' ), '/' );
-    // /who-we-are/attorneys/[name]/ → /attorneys/[name]/ (skip names already in static map)
+    // /who-we-are/attorneys/[name]/ → the profile's FINAL destination, in one hop.
     if ( preg_match( '#^who-we-are/attorneys/([^/]+)#', $path, $m ) ) {
-        $static_names = array( 'allison-marani', 'j-michael-parsons', 'joseph-padgett', 'troy-a-williams', 'caroline-shaw', 'jeff-fitzpatrick-jr' );
-        if ( ! in_array( $m[1], $static_names, true ) ) {
-            wp_redirect( home_url( '/attorneys/' . $m[1] . '/' ), 301 );
-            exit;
-        }
+        wp_redirect( home_url( roden_resolve_attorney_dest( $m[1] ) ), 301 );
+        exit;
     }
     if ( preg_match( '#^who-we-are/attorneys/?$#', $path ) ) {
         wp_redirect( home_url( '/attorneys/' ), 301 );
         exit;
     }
+}
+
+/**
+ * Where /attorneys/[name]/ actually ends up.
+ *
+ * Two independent mechanisms retire a profile, and a redirect that ignores
+ * them lands on a URL that immediately 301s again:
+ *
+ *   1. inc/legacy-redirects.php maps some departed attorneys to /about/.
+ *   2. roden_staff_redirect() 301s any profile whose _roden_team_role is
+ *      'staff' to the team archive.
+ *
+ * Resolving both here means /who-we-are/attorneys/[name]/ reaches the served
+ * URL in a single hop, and every future departure is handled by whichever of
+ * the two mechanisms is used -- there is no hand-maintained name list to keep
+ * in step. (The previous $static_names array only skipped names that
+ * roden_legacy_content_redirects() already handles at priority 1, so dropping
+ * it changes no destination.)
+ *
+ * @param string $name Profile slug from the legacy URL.
+ * @return string A path that serves, never one that redirects again.
+ */
+function roden_resolve_attorney_dest( $name ) {
+    $target = '/attorneys/' . $name . '/';
+
+    // 1. Explicitly retired in the legacy map (departed attorneys → /about/).
+    if ( function_exists( 'roden_get_legacy_redirect_map' ) ) {
+        $map = roden_get_legacy_redirect_map();
+        if ( isset( $map[ $target ] ) && false !== $map[ $target ] ) {
+            return $map[ $target ];
+        }
+    }
+
+    // 2. No live published profile, or a staff profile that roden_staff_redirect()
+    //    sends to the archive anyway.
+    $atty = get_page_by_path( $name, OBJECT, 'attorney' );
+    if ( ! $atty || 'publish' !== $atty->post_status ) {
+        return '/attorneys/';
+    }
+    if ( 'staff' === get_post_meta( $atty->ID, '_roden_team_role', true ) ) {
+        return '/attorneys/';
+    }
+
+    return $target;
 }
 
 /* ==========================================================================

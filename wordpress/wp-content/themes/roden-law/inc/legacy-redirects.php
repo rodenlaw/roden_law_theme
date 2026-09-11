@@ -178,7 +178,44 @@ function roden_legacy_sitemap_redirects() {
  * @param string $dest Intended destination path, e.g. '/personal-injury-lawyers/savannah-ga/'.
  * @return string A path that resolves.
  */
+/**
+ * Collapse a root-level destination that is really a blog post.
+ *
+ * The permalink structure is /blog/%postname%/, so a destination of the shape
+ * /{slug}/ whose slug belongs to a published post is one hop short: the blog
+ * catch-all at the end of roden_legacy_content_redirects() will 301 it a
+ * second time to /blog/{slug}/. Resolving it here keeps every legacy URL to a
+ * single hop onto a served URL.
+ *
+ * Anything that is not a single-segment path, and anything whose slug is not a
+ * published post, is returned untouched -- this can never rewrite a working
+ * page, archive or CPT route.
+ *
+ * @param string $dest Intended destination path, e.g. '/are-accident-lawyers-worth-it/'.
+ * @return string The one-hop destination.
+ */
+function roden_normalize_blog_dest( $dest ) {
+	if ( ! preg_match( '#^/([a-z0-9-]+)/$#', $dest, $m ) ) {
+		return $dest;
+	}
+
+	$slug = $m[1];
+
+	// The blog index itself is a real route and must not be rewritten.
+	if ( 'blog' === $slug ) {
+		return $dest;
+	}
+
+	$post_obj = get_page_by_path( $slug, OBJECT, 'post' );
+
+	return ( $post_obj && 'publish' === $post_obj->post_status )
+		? '/blog/' . $slug . '/'
+		: $dest;
+}
+
 function roden_redirect_dest_or_fallback( $dest ) {
+	$dest = roden_normalize_blog_dest( $dest );
+
 	if ( url_to_postid( home_url( $dest ) ) ) {
 		return $dest;
 	}
@@ -472,7 +509,10 @@ function roden_resolve_legacy_blog_dest( $base ) {
     $map = roden_get_legacy_redirect_map();
     $key = '/' . $base . '/';
     if ( isset( $map[ $key ] ) && false !== $map[ $key ] ) {
-        return home_url( $map[ $key ] );
+        // Through the same funnel the direct map hits use, so a consolidation
+        // target that is a root-level blog slug resolves to /blog/{slug}/ here
+        // instead of taking a second hop through the blog catch-all.
+        return home_url( roden_redirect_dest_or_fallback( $map[ $key ] ) );
     }
 
     // 2. A live blog post actually exists at /blog/[slug]/.
