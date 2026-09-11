@@ -47,18 +47,40 @@ function roden_neutralize_old_practice_area_cpt( $args, $post_type ) {
 }
 
 /* ------------------------------------------------------------------
-   Header nav: "View All Service Areas" pointed at ?page_id=3126, a
-   deleted page (sitewide 404). Rewrite that menu item to the live
-   Practice Areas hub. Robust to menu-item ID changes — matches the URL.
-   Remove this filter once the menu item is fixed in Appearance → Menus.
+   Header nav items that point at a URL the server does not serve.
+
+   1. "View All Service Areas" pointed at ?page_id=3126, a deleted page
+      (sitewide 404). Rewrite it to the live Practice Areas hub.
+
+   2. "Class Actions" points at page 2324 ("Mass Torts & Class Actions",
+      slug class-actions), which is still published but whose URL is 301'd
+      to /class-action-lawyers/ by roden_old_page_redirects(). Because the
+      only sitewide link into that section went through a redirect, the
+      crawler found no click path from / to the pillar OR to any of its 14
+      children -- 15 URLs unreachable -- while every page on the site
+      carried a nav link that took an avoidable hop.
+
+   Both are matched on the URL, so they survive menu-item ID changes.
+   Remove each once the menu item is fixed in Appearance → Menus;
+   bin/repoint-class-actions-menu-item.php does that for (2).
    ------------------------------------------------------------------ */
 
 add_filter( 'wp_nav_menu_objects', 'roden_fix_dead_nav_links', 10, 2 );
 
 function roden_fix_dead_nav_links( $items, $args ) {
+    $class_actions = home_url( '/class-actions/' );
+
     foreach ( $items as $item ) {
-        if ( isset( $item->url ) && false !== strpos( $item->url, 'page_id=3126' ) ) {
+        if ( ! isset( $item->url ) ) {
+            continue;
+        }
+        if ( false !== strpos( $item->url, 'page_id=3126' ) ) {
             $item->url = home_url( '/practice-areas/' );
+            continue;
+        }
+        // Trailing-slash-insensitive, so a menu item saved without one still matches.
+        if ( untrailingslashit( $item->url ) === untrailingslashit( $class_actions ) ) {
+            $item->url = home_url( '/class-action-lawyers/' );
         }
     }
     return $items;
