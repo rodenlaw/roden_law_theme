@@ -1074,7 +1074,7 @@ function roden_neighborhood_grid( $current_post_id ) {
 function roden_contact_form_sidebar( $local_phone = '', $source = '' ) {
     ?>
     <div class="sidebar-contact-form">
-        <h3 class="form-title"><?php esc_html_e( 'Free Case Review', 'roden-law' ); ?></h3>
+        <h2 class="form-title"><?php esc_html_e( 'Free Case Review', 'roden-law' ); ?></h2>
         <?php $rf_stats = roden_firm_data(); ?>
         <p class="form-subtitle"><?php esc_html_e( 'No fees unless we win', 'roden-law' ); ?><br><?php printf( /* translators: %d: rounded live Google review count, e.g. 170. */ esc_html__( '%d+ verified Google reviews', 'roden-law' ), (int) $rf_stats['trust_stats']['review_count_rounded'] ); ?></p>
         <form class="roden-sidebar-form" id="roden-sidebar-form" novalidate>

@@ -130,7 +130,7 @@ $int_is_statutory = ( $int_statute && $int_statute['is_override'] );
 
                 <!-- NAP Block -->
                 <div class="nap-block">
-                    <h3 class="nap-name"><?php echo esc_html( $office['name'] ); ?></h3>
+                    <h2 class="nap-name"><?php echo esc_html( $office['name'] ); ?></h2>
                     <?php if ( ! empty( $office['is_service_area'] ) ) : ?>
                         <?php // The firm has no office in this town. Say so plainly, above
                               // the address, so the parent office's address below is never
