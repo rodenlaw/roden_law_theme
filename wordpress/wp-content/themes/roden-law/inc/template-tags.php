@@ -488,6 +488,41 @@ function roden_breadcrumb_html() {
    CASE RESULTS GRID
    ========================================================================== */
 
+/**
+ * One case-result card, linked to its own page.
+ *
+ * The card markup used to be inlined twice -- here and in
+ * roden_load_more_results_handler() -- and neither copy wrapped the card in a
+ * link. Every case result is in the sitemap and served, but with nothing
+ * linking to any of them all 156 were orphans. A single renderer means the
+ * server-rendered cards and the ones the Load More button appends can no
+ * longer disagree.
+ *
+ * The <a> carries color: inherit and text-decoration: none, so the card renders
+ * exactly as it did before -- all four inner elements set their own colour.
+ *
+ * @param int $post_id Case result post ID.
+ */
+function roden_case_result_card( $post_id ) {
+    $amount = get_post_meta( $post_id, '_roden_case_amount', true );
+    $type   = get_post_meta( $post_id, '_roden_case_type', true );
+    $desc   = get_post_meta( $post_id, '_roden_description', true );
+    ?>
+    <div class="result-card">
+        <a href="<?php echo esc_url( get_permalink( $post_id ) ); ?>" class="result-card-link">
+            <?php if ( $type ) : ?>
+                <span class="result-type"><?php echo esc_html( ucfirst( $type ) ); ?></span>
+            <?php endif; ?>
+            <span class="result-amount"><?php echo esc_html( $amount ); ?></span>
+            <span class="result-title"><?php echo esc_html( get_the_title( $post_id ) ); ?></span>
+            <?php if ( $desc ) : ?>
+                <p class="result-desc"><?php echo esc_html( $desc ); ?></p>
+            <?php endif; ?>
+        </a>
+    </div>
+    <?php
+}
+
 function roden_case_results_grid( $args = array() ) {
     $defaults = array(
         'count'             => 4,
@@ -549,19 +584,7 @@ function roden_case_results_grid( $args = array() ) {
     echo '<div class="case-results-grid cols-' . intval( $args['columns'] ) . '">';
     while ( $results->have_posts() ) :
         $results->the_post();
-        $amount = get_post_meta( get_the_ID(), '_roden_case_amount', true );
-        $type   = get_post_meta( get_the_ID(), '_roden_case_type', true );
-        $desc   = get_post_meta( get_the_ID(), '_roden_description', true );
-        ?>
-        <div class="result-card">
-            <span class="result-type"><?php echo esc_html( ucfirst( $type ) ); ?></span>
-            <span class="result-amount"><?php echo esc_html( $amount ); ?></span>
-            <span class="result-title"><?php the_title(); ?></span>
-            <?php if ( $desc ) : ?>
-                <p class="result-desc"><?php echo esc_html( $desc ); ?></p>
-            <?php endif; ?>
-        </div>
-        <?php
+        roden_case_result_card( get_the_ID() );
     endwhile;
     echo '</div>';
     echo '<p class="results-disclaimer">Results shown are gross settlement/verdict amounts before fees and costs. Past results do not guarantee similar outcomes.</p>';
