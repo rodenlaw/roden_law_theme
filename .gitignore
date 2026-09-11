@@ -64,8 +64,13 @@ content/meta.*.json
 # WordPress content export cache used by the toolkit content adapter (regenerable)
 /data/content-cache/
 
-# Local site-health reports (the CI job keeps its own as an artifact)
-/data/site-health/
+# Local site-health reports (the CI job keeps its own as an artifact).
+# Ignore the contents rather than the directory, so the exception below works --
+# git cannot re-include a file whose parent directory is itself excluded.
+/data/site-health/*
+# Remediation records are written by hand, not generated, and are the standing
+# answer to "what did we do about that finding". They belong in history.
+!/data/site-health/remediation-*.md
 
 # Headless director transcripts (the brief itself is committed as the evidence record)
 /strategy/briefs/*.director.log
