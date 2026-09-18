@@ -249,6 +249,38 @@ granularity floor 156 → 143. The location post type no longer carries a floor
 violation. What remains is the blog (116 sub-municipal posts EN + ES) and the
 truck-corridor resources (26), which is a content-strategy decision, not a rule-4 one.
 
+### The zero-click intersections and the zero-click sub-municipal posts — decided 2026-09-18
+
+Two owner decisions, both taken on the same Search Console API evidence
+(`docs/gsc-evidence-2026-09-18.md`, 16 months to 2026-09-15).
+
+**Rule 6 reopened.** The 2026-08-25 entry above called the 175 office-city intersections
+"the defensible tier under rule 6". Measured, the tier fails the #68 test at ten times the
+scale: **798,103 impressions, 98 clicks, 0.01% CTR in every position band** against the
+site's 0.12–0.47%, where the site's own rates predict about 1,800 clicks. 129 of the 177
+have zero clicks on 232,293 impressions. Those 129 go, 301 to the practice pillar as batch
+(d) did. The 48 that earned a click (98 between them) are held for a separate decision.
+
+**The blog protection stands, and the rule-4 test is applied inside it.** The sub-floor
+posts earn 881 clicks as a set and the top of it is genuine; none of those move. 60 posts
+have zero clicks in 16 months on 6,526 impressions — 36 English, 24 Spanish twins, mostly
+the pipeline's street-plus-subdivision output from July and August. Those go, 301 to the
+practice pillar the slug names, per rule 5. Same shape as the corridor fold on 2026-08-24:
+keep the performers, fold the dead.
+
+Mechanics: paths in `roden_zero_click_intersection_urls()` and
+`roden_zero_click_blog_urls()`, both scripts read from them. The relink script also
+rewrites the NESTED intersection form (`/practice-areas/{practice}/{city}/`) and skips
+posts the batch is itself retiring; the removal script counts link debt only from posts
+outside the batch. Pre-flight on 2026-09-18: 244 body links across 120 outside-batch posts,
+zero nested-form hits, zero `_roden_see_also` references, zero published children.
+All 33 pillar targets verified 200. Three of the 189 postdate the 2026-08-21 triage
+inventory (`personal-injury-lawyers/savannah-ga`, the EN and ES `wando-gardens-…` posts)
+and have no triage row; the other 186 are flipped KEEP → REMOVE with the evidence.
+
+Expected after: indexable 1,217 → 1,028, location-targeted 486 → 297. **Doorway ratio
+39.9% → 28.9%.** Practice-area sitemap 404 → 275; post sitemap 452 → 392.
+
 ### End-state arithmetic
 
 | Scope | Now | After definite removals | If all EVALUATE also go |
