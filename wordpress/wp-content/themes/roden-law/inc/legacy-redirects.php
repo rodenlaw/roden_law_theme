@@ -1312,7 +1312,9 @@ function roden_phase1_removed_urls() {
         roden_phase1_batch_urls(),
         roden_corridor_fold_urls(),
         roden_dead_location_urls(),
-        roden_evaluate_location_urls()
+        roden_evaluate_location_urls(),
+        roden_zero_click_intersection_urls(),
+        roden_zero_click_blog_urls()
     );
 }
 
@@ -1657,6 +1659,241 @@ function roden_evaluate_location_urls() {
         '/locations/south-carolina/myrtle-beach/little-river/'     => '/locations/south-carolina/myrtle-beach/',
         '/locations/south-carolina/myrtle-beach/murrells-inlet/'   => '/locations/south-carolina/myrtle-beach/',
         '/locations/south-carolina/north-charleston/ladson/'       => '/locations/south-carolina/north-charleston/',
+    );
+}
+
+/**
+ * The 129 zero-click office-city intersections — retired 2026-09-18.
+ *
+ * Plan rule 6 kept city x practice pages in the six office markets as "the
+ * defensible tier". That was a rule judgment made before the tier was measured.
+ * Search Console, 16 months to 2026-09-15 (docs/gsc-2026-09-18/): the 177
+ * surviving intersections took 798,103 impressions and earned 98 clicks, a CTR
+ * of 0.01% in every position band against the site's own 0.12-0.47%. At the
+ * site's rates those impressions predict about 1,800 clicks. These 129 earned
+ * ZERO on 232,293 impressions. Same signature as the 66 (#68) and the 13
+ * (#141), at ten times the scale. Owner-approved 2026-09-18. Evidence:
+ * docs/gsc-evidence-2026-09-18.md.
+ *
+ * Target is the practice pillar, as batch (d) used for the non-office cities:
+ * a guardrail keep, chain-proof, and the page the pillar grid already links
+ * to. The nested /practice-areas/{practice}/{city}/ form resolves through the
+ * canonicalising lookup in roden_phase1_removal_redirects(). All 33 targets
+ * verified 200 before this shipped. The 48 intersections that earned a click
+ * are NOT here; they are a separate decision.
+ */
+function roden_zero_click_intersection_urls() {
+    return array(
+        '/atv-side-by-side-accident-lawyers/charleston-sc/'       => '/practice-areas/atv-side-by-side-accident-lawyers/',
+        '/atv-side-by-side-accident-lawyers/columbia-sc/'         => '/practice-areas/atv-side-by-side-accident-lawyers/',
+        '/atv-side-by-side-accident-lawyers/darien-ga/'           => '/practice-areas/atv-side-by-side-accident-lawyers/',
+        '/atv-side-by-side-accident-lawyers/myrtle-beach-sc/'     => '/practice-areas/atv-side-by-side-accident-lawyers/',
+        '/atv-side-by-side-accident-lawyers/north-charleston-sc/' => '/practice-areas/atv-side-by-side-accident-lawyers/',
+        '/atv-side-by-side-accident-lawyers/savannah-ga/'         => '/practice-areas/atv-side-by-side-accident-lawyers/',
+        '/bicycle-accident-lawyers/charleston-sc/'                => '/practice-areas/bicycle-accident-lawyers/',
+        '/bicycle-accident-lawyers/columbia-sc/'                  => '/practice-areas/bicycle-accident-lawyers/',
+        '/bicycle-accident-lawyers/myrtle-beach-sc/'              => '/practice-areas/bicycle-accident-lawyers/',
+        '/bicycle-accident-lawyers/north-charleston-sc/'          => '/practice-areas/bicycle-accident-lawyers/',
+        '/bicycle-accident-lawyers/savannah-ga/'                  => '/practice-areas/bicycle-accident-lawyers/',
+        '/boating-accident-lawyers/charleston-sc/'                => '/practice-areas/boating-accident-lawyers/',
+        '/boating-accident-lawyers/darien-ga/'                    => '/practice-areas/boating-accident-lawyers/',
+        '/boating-accident-lawyers/myrtle-beach-sc/'              => '/practice-areas/boating-accident-lawyers/',
+        '/boating-accident-lawyers/north-charleston-sc/'          => '/practice-areas/boating-accident-lawyers/',
+        '/boating-accident-lawyers/savannah-ga/'                  => '/practice-areas/boating-accident-lawyers/',
+        '/brain-injury-lawyers/charleston-sc/'                    => '/practice-areas/brain-injury-lawyers/',
+        '/brain-injury-lawyers/columbia-sc/'                      => '/practice-areas/brain-injury-lawyers/',
+        '/brain-injury-lawyers/darien-ga/'                        => '/practice-areas/brain-injury-lawyers/',
+        '/brain-injury-lawyers/myrtle-beach-sc/'                  => '/practice-areas/brain-injury-lawyers/',
+        '/brain-injury-lawyers/north-charleston-sc/'              => '/practice-areas/brain-injury-lawyers/',
+        '/brain-injury-lawyers/savannah-ga/'                      => '/practice-areas/brain-injury-lawyers/',
+        '/burn-injury-lawyers/darien-ga/'                         => '/practice-areas/burn-injury-lawyers/',
+        '/burn-injury-lawyers/myrtle-beach-sc/'                   => '/practice-areas/burn-injury-lawyers/',
+        '/burn-injury-lawyers/north-charleston-sc/'               => '/practice-areas/burn-injury-lawyers/',
+        '/burn-injury-lawyers/savannah-ga/'                       => '/practice-areas/burn-injury-lawyers/',
+        '/car-accident-lawyers/myrtle-beach-sc/'                  => '/practice-areas/car-accident-lawyers/',
+        '/car-accident-lawyers/north-charleston-sc/'              => '/practice-areas/car-accident-lawyers/',
+        '/construction-accident-lawyers/charleston-sc/'           => '/practice-areas/construction-accident-lawyers/',
+        '/construction-accident-lawyers/columbia-sc/'             => '/practice-areas/construction-accident-lawyers/',
+        '/construction-accident-lawyers/darien-ga/'               => '/practice-areas/construction-accident-lawyers/',
+        '/construction-accident-lawyers/myrtle-beach-sc/'         => '/practice-areas/construction-accident-lawyers/',
+        '/construction-accident-lawyers/north-charleston-sc/'     => '/practice-areas/construction-accident-lawyers/',
+        '/construction-accident-lawyers/savannah-ga/'             => '/practice-areas/construction-accident-lawyers/',
+        '/dog-bite-lawyers/darien-ga/'                            => '/practice-areas/dog-bite-lawyers/',
+        '/dog-bite-lawyers/north-charleston-sc/'                  => '/practice-areas/dog-bite-lawyers/',
+        '/electric-scooter-accident-lawyers/charleston-sc/'       => '/practice-areas/electric-scooter-accident-lawyers/',
+        '/electric-scooter-accident-lawyers/columbia-sc/'         => '/practice-areas/electric-scooter-accident-lawyers/',
+        '/electric-scooter-accident-lawyers/darien-ga/'           => '/practice-areas/electric-scooter-accident-lawyers/',
+        '/electric-scooter-accident-lawyers/north-charleston-sc/' => '/practice-areas/electric-scooter-accident-lawyers/',
+        '/electric-scooter-accident-lawyers/savannah-ga/'         => '/practice-areas/electric-scooter-accident-lawyers/',
+        '/es/bicycle-accident-lawyers/charleston-sc/'             => '/es/practice-areas/bicycle-accident-lawyers/',
+        '/es/bicycle-accident-lawyers/columbia-sc/'               => '/es/practice-areas/bicycle-accident-lawyers/',
+        '/es/bicycle-accident-lawyers/darien-ga/'                 => '/es/practice-areas/bicycle-accident-lawyers/',
+        '/es/bicycle-accident-lawyers/myrtle-beach-sc/'           => '/es/practice-areas/bicycle-accident-lawyers/',
+        '/es/bicycle-accident-lawyers/north-charleston-sc/'       => '/es/practice-areas/bicycle-accident-lawyers/',
+        '/es/bicycle-accident-lawyers/savannah-ga/'               => '/es/practice-areas/bicycle-accident-lawyers/',
+        '/es/car-accident-lawyers/charleston-sc/'                 => '/es/practice-areas/car-accident-lawyers/',
+        '/es/car-accident-lawyers/columbia-sc/'                   => '/es/practice-areas/car-accident-lawyers/',
+        '/es/car-accident-lawyers/myrtle-beach-sc/'               => '/es/practice-areas/car-accident-lawyers/',
+        '/es/car-accident-lawyers/savannah-ga/'                   => '/es/practice-areas/car-accident-lawyers/',
+        '/es/construction-accident-lawyers/charleston-sc/'        => '/es/practice-areas/construction-accident-lawyers/',
+        '/es/construction-accident-lawyers/columbia-sc/'          => '/es/practice-areas/construction-accident-lawyers/',
+        '/es/construction-accident-lawyers/myrtle-beach-sc/'      => '/es/practice-areas/construction-accident-lawyers/',
+        '/es/construction-accident-lawyers/north-charleston-sc/'  => '/es/practice-areas/construction-accident-lawyers/',
+        '/es/construction-accident-lawyers/savannah-ga/'          => '/es/practice-areas/construction-accident-lawyers/',
+        '/es/motorcycle-accident-lawyers/charleston-sc/'          => '/es/practice-areas/motorcycle-accident-lawyers/',
+        '/es/motorcycle-accident-lawyers/columbia-sc/'            => '/es/practice-areas/motorcycle-accident-lawyers/',
+        '/es/motorcycle-accident-lawyers/darien-ga/'              => '/es/practice-areas/motorcycle-accident-lawyers/',
+        '/es/motorcycle-accident-lawyers/myrtle-beach-sc/'        => '/es/practice-areas/motorcycle-accident-lawyers/',
+        '/es/motorcycle-accident-lawyers/north-charleston-sc/'    => '/es/practice-areas/motorcycle-accident-lawyers/',
+        '/es/motorcycle-accident-lawyers/savannah-ga/'            => '/es/practice-areas/motorcycle-accident-lawyers/',
+        '/es/pedestrian-accident-lawyers/charleston-sc/'          => '/es/practice-areas/pedestrian-accident-lawyers/',
+        '/es/pedestrian-accident-lawyers/columbia-sc/'            => '/es/practice-areas/pedestrian-accident-lawyers/',
+        '/es/pedestrian-accident-lawyers/darien-ga/'              => '/es/practice-areas/pedestrian-accident-lawyers/',
+        '/es/pedestrian-accident-lawyers/myrtle-beach-sc/'        => '/es/practice-areas/pedestrian-accident-lawyers/',
+        '/es/pedestrian-accident-lawyers/north-charleston-sc/'    => '/es/practice-areas/pedestrian-accident-lawyers/',
+        '/es/pedestrian-accident-lawyers/savannah-ga/'            => '/es/practice-areas/pedestrian-accident-lawyers/',
+        '/es/truck-accident-lawyers/charleston-sc/'               => '/es/practice-areas/truck-accident-lawyers/',
+        '/es/truck-accident-lawyers/columbia-sc/'                 => '/es/practice-areas/truck-accident-lawyers/',
+        '/es/truck-accident-lawyers/myrtle-beach-sc/'             => '/es/practice-areas/truck-accident-lawyers/',
+        '/es/truck-accident-lawyers/north-charleston-sc/'         => '/es/practice-areas/truck-accident-lawyers/',
+        '/es/truck-accident-lawyers/savannah-ga/'                 => '/es/practice-areas/truck-accident-lawyers/',
+        '/es/workers-compensation-lawyers/charleston-sc/'         => '/es/practice-areas/workers-compensation-lawyers/',
+        '/es/workers-compensation-lawyers/darien-ga/'             => '/es/practice-areas/workers-compensation-lawyers/',
+        '/es/workers-compensation-lawyers/myrtle-beach-sc/'       => '/es/practice-areas/workers-compensation-lawyers/',
+        '/es/workers-compensation-lawyers/north-charleston-sc/'   => '/es/practice-areas/workers-compensation-lawyers/',
+        '/golf-cart-accident-lawyers/charleston-sc/'              => '/practice-areas/golf-cart-accident-lawyers/',
+        '/golf-cart-accident-lawyers/columbia-sc/'                => '/practice-areas/golf-cart-accident-lawyers/',
+        '/golf-cart-accident-lawyers/darien-ga/'                  => '/practice-areas/golf-cart-accident-lawyers/',
+        '/golf-cart-accident-lawyers/north-charleston-sc/'        => '/practice-areas/golf-cart-accident-lawyers/',
+        '/golf-cart-accident-lawyers/savannah-ga/'                => '/practice-areas/golf-cart-accident-lawyers/',
+        '/maritime-injury-lawyers/charleston-sc/'                 => '/practice-areas/maritime-injury-lawyers/',
+        '/maritime-injury-lawyers/columbia-sc/'                   => '/practice-areas/maritime-injury-lawyers/',
+        '/maritime-injury-lawyers/north-charleston-sc/'           => '/practice-areas/maritime-injury-lawyers/',
+        '/medical-malpractice-lawyers/north-charleston-sc/'       => '/practice-areas/medical-malpractice-lawyers/',
+        '/motorcycle-accident-lawyers/charleston-sc/'             => '/practice-areas/motorcycle-accident-lawyers/',
+        '/motorcycle-accident-lawyers/darien-ga/'                 => '/practice-areas/motorcycle-accident-lawyers/',
+        '/motorcycle-accident-lawyers/myrtle-beach-sc/'           => '/practice-areas/motorcycle-accident-lawyers/',
+        '/motorcycle-accident-lawyers/north-charleston-sc/'       => '/practice-areas/motorcycle-accident-lawyers/',
+        '/motorcycle-accident-lawyers/savannah-ga/'               => '/practice-areas/motorcycle-accident-lawyers/',
+        '/nursing-home-abuse-lawyers/charleston-sc/'              => '/practice-areas/nursing-home-abuse-lawyers/',
+        '/nursing-home-abuse-lawyers/columbia-sc/'                => '/practice-areas/nursing-home-abuse-lawyers/',
+        '/nursing-home-abuse-lawyers/darien-ga/'                  => '/practice-areas/nursing-home-abuse-lawyers/',
+        '/nursing-home-abuse-lawyers/north-charleston-sc/'        => '/practice-areas/nursing-home-abuse-lawyers/',
+        '/pedestrian-accident-lawyers/charleston-sc/'             => '/practice-areas/pedestrian-accident-lawyers/',
+        '/pedestrian-accident-lawyers/darien-ga/'                 => '/practice-areas/pedestrian-accident-lawyers/',
+        '/pedestrian-accident-lawyers/myrtle-beach-sc/'           => '/practice-areas/pedestrian-accident-lawyers/',
+        '/pedestrian-accident-lawyers/north-charleston-sc/'       => '/practice-areas/pedestrian-accident-lawyers/',
+        '/pedestrian-accident-lawyers/savannah-ga/'               => '/practice-areas/pedestrian-accident-lawyers/',
+        '/personal-injury-lawyers/columbia-sc/'                   => '/practice-areas/personal-injury-lawyers/',
+        '/personal-injury-lawyers/myrtle-beach-sc/'               => '/practice-areas/personal-injury-lawyers/',
+        '/personal-injury-lawyers/savannah-ga/'                   => '/practice-areas/personal-injury-lawyers/',
+        '/premises-liability-lawyers/charleston-sc/'              => '/practice-areas/premises-liability-lawyers/',
+        '/premises-liability-lawyers/columbia-sc/'                => '/practice-areas/premises-liability-lawyers/',
+        '/premises-liability-lawyers/north-charleston-sc/'        => '/practice-areas/premises-liability-lawyers/',
+        '/product-liability-lawyers/darien-ga/'                   => '/practice-areas/product-liability-lawyers/',
+        '/product-liability-lawyers/myrtle-beach-sc/'             => '/practice-areas/product-liability-lawyers/',
+        '/product-liability-lawyers/north-charleston-sc/'         => '/practice-areas/product-liability-lawyers/',
+        '/product-liability-lawyers/savannah-ga/'                 => '/practice-areas/product-liability-lawyers/',
+        '/slip-and-fall-lawyers/charleston-sc/'                   => '/practice-areas/slip-and-fall-lawyers/',
+        '/slip-and-fall-lawyers/darien-ga/'                       => '/practice-areas/slip-and-fall-lawyers/',
+        '/slip-and-fall-lawyers/myrtle-beach-sc/'                 => '/practice-areas/slip-and-fall-lawyers/',
+        '/slip-and-fall-lawyers/north-charleston-sc/'             => '/practice-areas/slip-and-fall-lawyers/',
+        '/spinal-cord-injury-lawyers/charleston-sc/'              => '/practice-areas/spinal-cord-injury-lawyers/',
+        '/spinal-cord-injury-lawyers/columbia-sc/'                => '/practice-areas/spinal-cord-injury-lawyers/',
+        '/spinal-cord-injury-lawyers/darien-ga/'                  => '/practice-areas/spinal-cord-injury-lawyers/',
+        '/spinal-cord-injury-lawyers/north-charleston-sc/'        => '/practice-areas/spinal-cord-injury-lawyers/',
+        '/spinal-cord-injury-lawyers/savannah-ga/'                => '/practice-areas/spinal-cord-injury-lawyers/',
+        '/truck-accident-lawyers/charleston-sc/'                  => '/practice-areas/truck-accident-lawyers/',
+        '/truck-accident-lawyers/darien-ga/'                      => '/practice-areas/truck-accident-lawyers/',
+        '/truck-accident-lawyers/myrtle-beach-sc/'                => '/practice-areas/truck-accident-lawyers/',
+        '/truck-accident-lawyers/north-charleston-sc/'            => '/practice-areas/truck-accident-lawyers/',
+        '/workers-compensation-lawyers/columbia-sc/'              => '/practice-areas/workers-compensation-lawyers/',
+        '/workers-compensation-lawyers/darien-ga/'                => '/practice-areas/workers-compensation-lawyers/',
+        '/workers-compensation-lawyers/north-charleston-sc/'      => '/practice-areas/workers-compensation-lawyers/',
+        '/wrongful-death-lawyers/charleston-sc/'                  => '/practice-areas/wrongful-death-lawyers/',
+        '/wrongful-death-lawyers/north-charleston-sc/'            => '/practice-areas/wrongful-death-lawyers/',
+        '/wrongful-death-lawyers/savannah-ga/'                    => '/practice-areas/wrongful-death-lawyers/',
+    );
+}
+
+/**
+ * The 60 zero-click sub-municipal blog posts — retired 2026-09-18.
+ *
+ * The blog is guardrail-protected as a population (67% of the site's clicks),
+ * and that protection stands: the 83 sub-municipal posts that earn clicks are
+ * untouched, including the Ravenel Bridge cyclist guide at 113. These 60 are
+ * the per-post application of the same test the corridor band got on
+ * 2026-08-24: street, subdivision and route-plus-city slugs below the
+ * granularity floor with ZERO clicks in 16 months (6,526 impressions between
+ * them). 36 English, 24 Spanish twins. Owner-approved 2026-09-18.
+ *
+ * Target is the practice pillar the slug names (car, truck, motorcycle,
+ * pedestrian, boating, ATV, golf cart; rideshare, drunk-driving, bus and
+ * uninsured-motorist posts go to car accidents), per plan rule 5 for
+ * micro-permutations. Spanish posts go to the Spanish pillar.
+ */
+function roden_zero_click_blog_urls() {
+    return array(
+        '/blog/best-car-accident-lawyer-ashley-river-road-greenwood-park-west-ashley/'           => '/practice-areas/car-accident-lawyers/',
+        '/blog/broad-river-road-pedestrian-accident-lawyer-harbison-columbia/'                   => '/practice-areas/pedestrian-accident-lawyers/',
+        '/blog/brunswick-i-95-truck-accident-lawyer/'                                            => '/practice-areas/truck-accident-lawyers/',
+        '/blog/brunswick-ocean-highway-us-17-underinsured-motorist-lawyer-glynn-county/'         => '/practice-areas/car-accident-lawyers/',
+        '/blog/bucksport-marina-waccamaw-intracoastal-boating-accident-lawyer/'                  => '/practice-areas/boating-accident-lawyers/',
+        '/blog/car-accident-attorney-near-me-west-ashley-citadel-mall/'                          => '/practice-areas/car-accident-lawyers/',
+        '/blog/chicora-cherokee-carner-avenue-us-52-car-accident-attorney-north-charleston/'     => '/practice-areas/car-accident-lawyers/',
+        '/blog/darien-i-95-truck-accident-lawyer/'                                               => '/practice-areas/truck-accident-lawyers/',
+        '/blog/dick-pond-road-sc-544-truck-accident-lawyer-surfside-beach/'                      => '/practice-areas/truck-accident-lawyers/',
+        '/blog/edmund-highway-lexington-county-car-accident-lawyer/'                             => '/practice-areas/car-accident-lawyers/',
+        '/blog/five-points-columbia-uber-accident-lawyer/'                                       => '/practice-areas/car-accident-lawyers/',
+        '/blog/garden-city-dean-forest-road-truck-accident-lawyer/'                              => '/practice-areas/truck-accident-lawyers/',
+        '/blog/golf-colony-south-reindeer-road-underinsured-motorist-lawyer/'                    => '/practice-areas/car-accident-lawyers/',
+        '/blog/goose-creek-car-accidents-military-traffic-us-52/'                                => '/practice-areas/car-accident-lawyers/',
+        '/blog/green-grove-dorchester-road-atv-accident-lawyer-north-charleston/'                => '/practice-areas/atv-side-by-side-accident-lawyers/',
+        '/blog/green-grove-mark-clark-expressway-uninsured-motorist-lawyer-north-charleston/'    => '/practice-areas/car-accident-lawyers/',
+        '/blog/i-20-bush-river-road-motorcycle-accident-lawyer-columbia/'                        => '/practice-areas/motorcycle-accident-lawyers/',
+        '/blog/islands-expressway-whitemarsh-island-motorcycle-accident-chatham-county/'         => '/practice-areas/motorcycle-accident-lawyers/',
+        '/blog/kemira-plant-drive-savannah-fatal-truck-accident-lawyer/'                         => '/practice-areas/truck-accident-lawyers/',
+        '/blog/mark-clark-expressway-i-526-18-wheeler-accident-lawyer-north-charleston/'         => '/practice-areas/truck-accident-lawyers/',
+        '/blog/murrells-inlet-jet-ski-accident-lawyer/'                                          => '/practice-areas/boating-accident-lawyers/',
+        '/blog/n-lake-drive-dick-pond-road-sc-544-underinsured-motorist-lawyer/'                 => '/practice-areas/car-accident-lawyers/',
+        '/blog/park-circle-east-montague-drunk-driving-accident-lawyer-north-charleston/'        => '/practice-areas/car-accident-lawyers/',
+        '/blog/rivers-avenue-northwoods-bus-accident-lawyer-north-charleston/'                   => '/practice-areas/car-accident-lawyers/',
+        '/blog/socastee-holmestown-road-underinsured-motorist-lawyer/'                           => '/practice-areas/car-accident-lawyers/',
+        '/blog/southover-mills-b-lane-motorcycle-accident-lawyer/'                               => '/practice-areas/motorcycle-accident-lawyers/',
+        '/blog/st-simons-island-kings-way-motorcycle-accident-lawyer/'                           => '/practice-areas/motorcycle-accident-lawyers/',
+        '/blog/summerville-i-26-18-wheeler-accident-lawyer-dorchester-county/'                   => '/practice-areas/truck-accident-lawyers/',
+        '/blog/sunset-boulevard-west-columbia-drunk-driver-accident-lawyer/'                     => '/practice-areas/car-accident-lawyers/',
+        '/blog/tenmile-i-26-best-car-accident-lawyer-north-charleston/'                          => '/practice-areas/car-accident-lawyers/',
+        '/blog/wando-gardens-faber-place-drive-best-car-accident-lawyer-north-charleston/'       => '/practice-areas/car-accident-lawyers/',
+        '/blog/west-ashley-sam-rittenberg-boulevard-motorcycle-accident-lawyer/'                 => '/practice-areas/motorcycle-accident-lawyers/',
+        '/blog/what-to-do-after-a-truck-accident-on-i-526-in-charleston/'                        => '/practice-areas/truck-accident-lawyers/',
+        '/blog/your-guide-to-documenting-a-james-island-parkway-car-accident/'                   => '/practice-areas/car-accident-lawyers/',
+        '/blog/your-guide-to-rideshare-accidents-in-downtown-charleston/'                        => '/practice-areas/car-accident-lawyers/',
+        '/blog/your-step-by-step-guide-after-a-downtown-columbia-truck-accident/'                => '/practice-areas/truck-accident-lawyers/',
+        '/es/blog/brunswick-ocean-highway-us-17-underinsured-motorist-lawyer-glynn-county/'      => '/es/practice-areas/car-accident-lawyers/',
+        '/es/blog/car-accident-attorney-near-me-west-ashley-citadel-mall/'                       => '/es/practice-areas/car-accident-lawyers/',
+        '/es/blog/cayce-12th-street-uninsured-motorist-lawyer/'                                  => '/es/practice-areas/car-accident-lawyers/',
+        '/es/blog/chicora-cherokee-carner-avenue-us-52-car-accident-attorney-north-charleston/'  => '/es/practice-areas/car-accident-lawyers/',
+        '/es/blog/dick-pond-road-sc-544-truck-accident-lawyer-surfside-beach/'                   => '/es/practice-areas/truck-accident-lawyers/',
+        '/es/blog/east-bay-street-savannah-pedestrian-accident-lawyer/'                          => '/es/practice-areas/pedestrian-accident-lawyers/',
+        '/es/blog/garden-city-ga-21-augusta-road-car-accident-lawyer/'                           => '/es/practice-areas/car-accident-lawyers/',
+        '/es/blog/golf-colony-south-reindeer-road-underinsured-motorist-lawyer/'                 => '/es/practice-areas/car-accident-lawyers/',
+        '/es/blog/green-grove-dorchester-road-atv-accident-lawyer-north-charleston/'             => '/es/practice-areas/atv-side-by-side-accident-lawyers/',
+        '/es/blog/green-grove-mark-clark-expressway-uninsured-motorist-lawyer-north-charleston/' => '/es/practice-areas/car-accident-lawyers/',
+        '/es/blog/i-20-bush-river-road-motorcycle-accident-lawyer-columbia/'                     => '/es/practice-areas/motorcycle-accident-lawyers/',
+        '/es/blog/kemira-plant-drive-savannah-fatal-truck-accident-lawyer/'                      => '/es/practice-areas/truck-accident-lawyers/',
+        '/es/blog/litchfield-pawleys-island-golf-cart-accident-lawyer-georgetown-county/'        => '/es/practice-areas/golf-cart-accident-lawyers/',
+        '/es/blog/mount-pleasant-johnnie-dodds-us-17-uninsured-motorist-lawyer/'                 => '/es/practice-areas/car-accident-lawyers/',
+        '/es/blog/mount-pleasant-mark-clark-expressway-i-526-motorcycle-accident-lawyer/'        => '/es/practice-areas/motorcycle-accident-lawyers/',
+        '/es/blog/murrells-inlet-jet-ski-accident-lawyer/'                                       => '/es/practice-areas/boating-accident-lawyers/',
+        '/es/blog/n-lake-drive-dick-pond-road-sc-544-underinsured-motorist-lawyer/'              => '/es/practice-areas/car-accident-lawyers/',
+        '/es/blog/rivers-avenue-northwoods-bus-accident-lawyer-north-charleston/'                => '/es/practice-areas/car-accident-lawyers/',
+        '/es/blog/southover-mills-b-lane-motorcycle-accident-lawyer/'                            => '/es/practice-areas/motorcycle-accident-lawyers/',
+        '/es/blog/st-andrews-road-widewater-18-wheeler-accident-lawyer-richland-county/'         => '/es/practice-areas/truck-accident-lawyers/',
+        '/es/blog/st-simons-island-kings-way-motorcycle-accident-lawyer/'                        => '/es/practice-areas/motorcycle-accident-lawyers/',
+        '/es/blog/summerville-i-26-18-wheeler-accident-lawyer-dorchester-county/'                => '/es/practice-areas/truck-accident-lawyers/',
+        '/es/blog/tenmile-i-26-best-car-accident-lawyer-north-charleston/'                       => '/es/practice-areas/car-accident-lawyers/',
+        '/es/blog/wando-gardens-faber-place-drive-best-car-accident-lawyer-north-charleston/'    => '/es/practice-areas/car-accident-lawyers/',
     );
 }
 
