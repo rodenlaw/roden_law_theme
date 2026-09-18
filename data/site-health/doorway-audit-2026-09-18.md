@@ -649,3 +649,11 @@ The 13 were retired the same day (#141 for the redirects, then relink and trash 
 production). Re-measured from the live sitemap after the cache flush: **486 of 1,217
 indexable URLs, 39.9%**, floor violations 156 → 143. Location pages no longer carry any
 floor violation. Records: `RECOVERY-LOG.md`, `docs/backups/evaluate-locations-*.json`.
+
+## Applied 2026-09-18, second batch
+
+Steps 1 and 2 of the path above ran the same day (#142 for the redirects, then relink and
+trash on production): the 129 zero-click intersections and the 60 zero-click sub-municipal
+posts. Re-measured from the live sitemap: **297 of 1,028 indexable URLs, 28.9%**, floor
+violations 143 → 83, all of them posts and resources that earn clicks. Evidence:
+`docs/gsc-evidence-2026-09-18.md`. Records: `RECOVERY-LOG.md`, `docs/backups/zero-click-*.json`.

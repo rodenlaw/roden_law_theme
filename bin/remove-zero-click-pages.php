@@ -293,7 +293,18 @@ foreach ( $expect as $id => $e ) {
     $ext = 0;
     foreach ( $ids as $lid ) {
         $lp = trailingslashit( (string) wp_parse_url( get_permalink( $lid ), PHP_URL_PATH ) );
-        if ( ! in_array( $lp, $retiring, true ) ) {
+        if ( in_array( $lp, $retiring, true ) ) {
+            continue;
+        }
+        /*
+         * The LIKE is a substring match, and an English path is a suffix of its
+         * Spanish twin's: '/workers-compensation-lawyers/columbia-sc/' sits inside
+         * '/es/workers-compensation-lawyers/columbia-sc/'. Only count a real href,
+         * i.e. the path preceded by a quote or by the site's own host — the same
+         * forms the relink script rewrites, so the two cannot disagree.
+         */
+        $c = (string) get_post_field( 'post_content', $lid );
+        if ( false !== strpos( $c, '"' . $actual ) || false !== strpos( $c, "'" . $actual ) || false !== strpos( $c, untrailingslashit( home_url() ) . $actual ) ) {
             $ext++;
         }
     }

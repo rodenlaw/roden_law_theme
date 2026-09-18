@@ -281,6 +281,38 @@ and have no triage row; the other 186 are flipped KEEP → REMOVE with the evide
 Expected after: indexable 1,217 → 1,028, location-targeted 486 → 297. **Doorway ratio
 39.9% → 28.9%.** Practice-area sitemap 404 → 275; post sitemap 452 → 392.
 
+### Applied 2026-09-18 — the zero-click intersections and posts
+
+Shipped end to end the same day: redirects deployed in #142, relink applied, posts
+trashed, caches flushed, verified after deletion.
+
+| | Removed | Relinked | Verified |
+|---|---:|---|---|
+| Zero-click intersections | 129 practice_area (93 EN, 36 ES) | 263 links / 120 posts, with the 60 posts | 189/189 flat + 93/93 EN nested, single-hop 301 → 200 |
+| Zero-click sub-municipal posts | 60 posts (36 EN, 24 ES) | | |
+
+Sitemaps: practice_area **405 → 276**, post **486 → 426**, indexable **1,217 → 1,028**.
+`post_modified` untouched on the relinked posts. Zero retired URLs linked from any rendered
+hub, pillar or index page (17 templates swept). Live JSON-LD guard PASS after the direct
+column writes. `content/meta.json` regenerated: `_count` 1,054 → 865, plus a handful of
+Spanish posts whose meta had changed on prod since the last regen (drift the deploy warns
+about, unrelated to this batch).
+
+**Doorway ratio as site-health measures it: 39.9% → 28.9%** (297 of 1,028); granularity
+floor 143 → 83. What remains location-targeted: the 83 sub-municipal posts and
+resources that earn clicks (guardrail keep, and the data agrees), the 48 intersections
+that earned a click (98 between them), the 44 location hubs, and the 6 legacy root city
+pages. Reaching 25% from here is either the 48 + 6 (24.9%) or about 160 non-location pages.
+
+**One defect surfaced, fixed in the script before apply.** The removal script's link-debt
+check was a substring LIKE, and an English intersection path is a suffix of its Spanish
+twin's (`/workers-compensation-lawyers/columbia-sc/` sits inside
+`/es/workers-compensation-lawyers/columbia-sc/`). The dry run reported one phantom link
+from a Spanish state page to a Spanish intersection that stays live. The check now counts
+only a real href (path preceded by a quote or the host), the same forms the relink script
+rewrites, so the two cannot disagree. Carry forward: **any path check on this bilingual
+site must anchor the start of the path.**
+
 ### End-state arithmetic
 
 | Scope | Now | After definite removals | If all EVALUATE also go |
@@ -306,6 +338,7 @@ into 8 city-tier towns and 109 nested municipalities; see the recommendation in
 | 2026-08-21 | **(d)** non-office city×practice | 1,651 | 1,617 | 34 | **COMPLETE.** Redirects live, 34 posts trashed, caches flushed. Verified after deletion: 34/34 single-hop 301, no 404s; practice_area sitemap 449 → 415; intersection grids self-healed to pillars, zero surviving links. Backup: `docs/backups/batch-d-nonoffice-city-practice-2026-08-21.json`. |
 | 2026-08-25 | **(c)** practice micro-permutations | 1,529 | 1,518 | 11 | **COMPLETE.** Relink applied (51 links, 42 posts, `post_modified` preserved), redirects live, 11 posts trashed, caches flushed. Verified after deletion: 11/11 single-hop 301 flat **and** nested; zero remaining inbound body links; practice_area sitemap 415 → 404. Backups: `batch-c-relink-2026-08-25.json`, `batch-c-micro-permutations-2026-08-25.json` — the latter is also Study #1's source text. |
 | 2026-09-18 | **EVALUATE** the 13 rule-4 survivors | 1,230 | 1,217 | 13 | **COMPLETE.** Redirects deployed (#141), relink applied (11 links, 5 posts, all to Ladson, `post_modified` preserved), 13 posts trashed, caches flushed. Verified after deletion: 13/13 single-hop 301 → 200; location sitemap 57 → 44; live JSON-LD guard PASS. Backups: `evaluate-locations-relink-2026-09-18.json`, `evaluate-locations-2026-09-18.json`. |
+| 2026-09-18 | **Zero-click** intersections (129) + sub-municipal posts (60) | 1,217 | 1,028 | 189 | **COMPLETE.** Redirects deployed (#142), relink applied (263 links, 120 posts, `post_modified` preserved), 189 posts trashed, caches flushed. Verified after deletion: 189/189 flat single-hop 301 → 200, 93/93 EN nested forms likewise; the ES nested form never existed (404 on a surviving ES intersection too, zero GSC rows). practice_area sitemap 405 → 276, post 486 → 426. Live JSON-LD guard PASS. Backups: `zero-click-relink-2026-09-18.json`, `zero-click-pages-2026-09-18.json`. |
 
 ### Batch (c) — two things the plan did not predict
 
