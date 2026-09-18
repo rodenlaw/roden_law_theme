@@ -1311,7 +1311,8 @@ function roden_phase1_removed_urls() {
     return array_merge(
         roden_phase1_batch_urls(),
         roden_corridor_fold_urls(),
-        roden_dead_location_urls()
+        roden_dead_location_urls(),
+        roden_evaluate_location_urls()
     );
 }
 
@@ -1617,6 +1618,45 @@ function roden_corridor_fold_urls() {
         '/resources/port-of-charleston-truck-routes/'                        => '/practice-areas/truck-accident-lawyers/',
         '/resources/seasonal-truck-accidents-myrtle-beach/'                  => '/resources/i-26-i-95-corridor-report/',
         '/resources/us-17-truck-accidents-grand-strand/'                     => '/resources/i-26-i-95-corridor-report/',
+    );
+}
+
+/**
+ * The 13 EVALUATE location pages — retired 2026-09-18.
+ *
+ * The last rows the 2026-08-21 triage held under plan rule 4 ("real rankings,
+ * traffic or genuine service history"). They survived #68 because each had at
+ * least one click in the 13-month baseline. A fresh Search Console pull on
+ * 2026-09-18 (docs/gsc-2026-09-18/, 16 months to 2026-09-15) adds nothing:
+ * 19 clicks in total across all 13, every one of them before the August cull,
+ * and zero clicks on 1,069 impressions in the 24 days since. At positions 5-10
+ * they converted 11 of 5,089 impressions where the site's own rate predicts 24.
+ * Rankings without traffic, and no service history — the rule's default applies.
+ *
+ * Every one is an unincorporated place (a CDP, a barrier island, a naval base),
+ * so the granularity floor flags all 13 and none can be rescued by adding it to
+ * the municipality list. Owner-approved 2026-09-18. Evidence:
+ * data/site-health/doorway-audit-2026-09-18.md.
+ *
+ * Targets are the parent office-city hub, as in roden_dead_location_urls():
+ * a guardrail keep, therefore chain-proof. All five hubs verified 200 before
+ * this shipped.
+ */
+function roden_evaluate_location_urls() {
+    return array(
+        '/locations/georgia/darien/harrietts-bluff/'               => '/locations/georgia/darien/',
+        '/locations/georgia/darien/jekyll-island/'                 => '/locations/georgia/darien/',
+        '/locations/georgia/darien/kings-bay/'                     => '/locations/georgia/darien/',
+        '/locations/georgia/darien/sea-island/'                    => '/locations/georgia/darien/',
+        '/locations/georgia/darien/st-simons-island/'              => '/locations/georgia/darien/',
+        '/locations/georgia/savannah/skidaway-island/'             => '/locations/georgia/savannah/',
+        '/locations/georgia/savannah/whitemarsh-island/'           => '/locations/georgia/savannah/',
+        '/locations/south-carolina/columbia/lugoff/'               => '/locations/south-carolina/columbia/',
+        '/locations/south-carolina/columbia/red-bank/'             => '/locations/south-carolina/columbia/',
+        '/locations/south-carolina/myrtle-beach/carolina-forest/'  => '/locations/south-carolina/myrtle-beach/',
+        '/locations/south-carolina/myrtle-beach/little-river/'     => '/locations/south-carolina/myrtle-beach/',
+        '/locations/south-carolina/myrtle-beach/murrells-inlet/'   => '/locations/south-carolina/myrtle-beach/',
+        '/locations/south-carolina/north-charleston/ladson/'       => '/locations/south-carolina/north-charleston/',
     );
 }
 
