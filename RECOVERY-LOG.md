@@ -194,6 +194,41 @@ across 23 posts, so this is not a formality.
 
 Expected after: location URLs 123 → 57, all public 1,529 → 1,463.
 
+### The 13 EVALUATE location pages — decided 2026-09-18
+
+The last rows the triage held under rule 4. They survived #68 because each had at
+least one click in the 13-month baseline, which was the whole test at the time. A
+fresh Search Console API pull on 2026-09-18 (`docs/gsc-2026-09-18/`, 16 months to
+2026-09-15 plus the post-cull window from 2026-08-26) settles them:
+
+| Window | Clicks | Impressions |
+|---|---:|---:|
+| Baseline, 13 months to 2026-08-22 | 19 | 8,303 |
+| 16 months to 2026-09-15 | 19 | 9,515 |
+| Since the cull, 2026-08-26 on | **0** | 1,069 |
+
+Three more months add no clicks. At positions 5–10 the 13 converted 11 of 5,089
+impressions where the site's own rate predicts 24 — weaker than the site, not the
+flat zero that condemned the 66, but rule 4 asks for "real rankings, traffic or
+genuine service history" and only the first is present. Murrells Inlet is where the
+Myrtle Beach GBP is registered, which is an address question, not a page one.
+Every one of the 13 is an unincorporated place (CDP, barrier island, naval base),
+so the site-health granularity floor flags all of them and none can be rescued by
+adding it to the municipality list.
+
+Same mechanics as #68: paths in `roden_evaluate_location_urls()`, both scripts read
+from it, the removal script reports link debt on a dry run and refuses to apply
+while any remains. One new guard: it also refuses to trash a page that still has a
+published child, because `location` is hierarchical and the tier-4 children of
+these were retired in batch (a) — the guard proves that rather than assuming it.
+
+Targets are the parent office-city hub, verified 200 on 2026-09-18. Expected after:
+location URLs 57 → 44, indexable 1,230 → 1,217. **Doorway ratio as site-health
+measures it: 40.6% → 39.9%.** This closes the rule-4 backlog and the location half
+of the granularity floor; it does not move the ratio materially, because that
+ratio is now carried by the blog (193 location-targeted posts) and the office-city
+intersections (177), neither of which Phase 1 governs.
+
 ### End-state arithmetic
 
 | Scope | Now | After definite removals | If all EVALUATE also go |

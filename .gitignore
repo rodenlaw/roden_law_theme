@@ -71,6 +71,7 @@ content/meta.*.json
 # Remediation records are written by hand, not generated, and are the standing
 # answer to "what did we do about that finding". They belong in history.
 !/data/site-health/remediation-*.md
+!/data/site-health/doorway-audit-*.md
 
 # Headless director transcripts (the brief itself is committed as the evidence record)
 /strategy/briefs/*.director.log
