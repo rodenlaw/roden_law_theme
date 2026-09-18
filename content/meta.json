@@ -7,7 +7,7 @@
         "post",
         "page"
     ],
-    "_count": 1067,
+    "_count": 1054,
     "posts": {
         "/": {
             "type": "page",
@@ -27051,35 +27051,6 @@
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33"
             }
         },
-        "/locations/georgia/darien/harrietts-bluff/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Harrietts Bluff",
-            "excerpt": "",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "What hospital serves Harrietts Bluff?",
-                        "answer": "Southeast Georgia Health System's Camden Campus in St. Marys is approximately 20 minutes south. The Brunswick Campus is approximately 25 minutes north."
-                    },
-                    {
-                        "question": "Does Roden Law handle boating accident cases near Harrietts Bluff?",
-                        "answer": "Yes. Our attorneys handle boating and watercraft accident cases on the Satilla River, intracoastal waterways, and surrounding coastal waters. Maritime accident claims can involve different liability standards than motor vehicle cases."
-                    },
-                    {
-                        "question": "What court handles Harrietts Bluff cases?",
-                        "answer": "Harrietts Bluff is in Camden County, so personal injury cases are filed in Camden County Superior Court in Woodbine."
-                    },
-                    {
-                        "question": "How long do I have to file a claim?",
-                        "answer": "Georgia's statute of limitations is 2 years (O.C.G.A. § 9-3-33). Maritime claims may have different deadlines. Contact us promptly to determine which timeline applies."
-                    }
-                ],
-                "_roden_jurisdiction": "GA",
-                "_roden_sol_ga": "O.C.G.A. § 9-3-33"
-            }
-        },
         "/locations/georgia/darien/hoboken/": {
             "type": "location",
             "status": "publish",
@@ -27109,35 +27080,6 @@
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33"
             }
         },
-        "/locations/georgia/darien/jekyll-island/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Jekyll Island",
-            "excerpt": "",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "What are the most common accident types on Jekyll Island?",
-                        "answer": "Bicycle accidents are the most common injury-producing accident type on Jekyll Island, due to the island's heavy rental bicycle traffic and road crossings where multi-use paths intersect with motor vehicle lanes. Golf cart collisions, pedestrian accidents near the commercial core and Driftwood Beach, and motor vehicle crashes on the Jekyll Island Causeway are also frequent."
-                    },
-                    {
-                        "question": "Who is liable if I'm injured on Jekyll Island — a state property?",
-                        "answer": "Liability depends on the specific circumstances. If another driver, cyclist, or golf cart operator caused your injury, standard personal injury negligence rules apply under Georgia law. If a defective road condition or dangerous intersection design on the island contributed to your crash, the Jekyll Island Authority — a state entity — may bear responsibility. Georgia's sovereign immunity rules create specific procedural requirements for claims against state entities."
-                    },
-                    {
-                        "question": "Is there a hospital on Jekyll Island?",
-                        "answer": "No. Jekyll Island has no hospital or emergency room. All serious injuries require transport off-island via the Jekyll Island Causeway to Southeast Georgia Health System's Brunswick Campus, approximately 20 minutes away. This delay in accessing emergency care makes it especially important to document injuries thoroughly and seek follow-up medical attention after any accident on the island."
-                    },
-                    {
-                        "question": "Can I file a claim if I was injured while visiting Jekyll Island from out of state?",
-                        "answer": "Absolutely. If you were injured on Jekyll Island due to another party's negligence, you have the right to file a personal injury claim in Georgia regardless of where you live. Georgia's 2-year statute of limitations applies. Roden Law can manage your case remotely if you've returned home, handling all communications, filings, and negotiations on your behalf."
-                    }
-                ],
-                "_roden_jurisdiction": "GA",
-                "_roden_sol_ga": "O.C.G.A. § 9-3-33"
-            }
-        },
         "/locations/georgia/darien/jesup/": {
             "type": "location",
             "status": "publish",
@@ -27161,35 +27103,6 @@
                     {
                         "question": "How far is Roden Law from Jesup?",
                         "answer": "Our Darien office is approximately 35 minutes from Jesup via US-25/US-341. We handle personal injury cases throughout Wayne County and offer free consultations by phone to make the process convenient."
-                    }
-                ],
-                "_roden_jurisdiction": "GA",
-                "_roden_sol_ga": "O.C.G.A. § 9-3-33"
-            }
-        },
-        "/locations/georgia/darien/kings-bay/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Kings Bay",
-            "excerpt": "",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "Can active-duty service members file personal injury claims in Georgia?",
-                        "answer": "Yes. Active-duty service members injured in off-base accidents due to someone else's negligence have the same right to file personal injury claims as civilians under Georgia law. The 2-year statute of limitations applies. Military service does not waive your right to civil compensation from a negligent party."
-                    },
-                    {
-                        "question": "How does TRICARE interact with a personal injury claim?",
-                        "answer": "If TRICARE pays for medical treatment related to your accident injuries, TRICARE has a right of subrogation — meaning they may seek reimbursement from any personal injury settlement you receive. Our attorneys understand how to structure settlements to account for TRICARE's lien while maximizing your net recovery."
-                    },
-                    {
-                        "question": "What if I'm deployed and need to file a claim?",
-                        "answer": "The Servicemembers Civil Relief Act (SCRA) provides protections for active-duty military, including the ability to delay civil proceedings during deployment. Our attorneys can initiate your claim, preserve evidence, and manage all proceedings while you are deployed."
-                    },
-                    {
-                        "question": "Where should I go for emergency care after an off-base accident?",
-                        "answer": "Southeast Georgia Health System's Camden Campus in St. Marys is the nearest civilian hospital, approximately 10 minutes from the base. For severe trauma, UF Health Jacksonville is approximately 40 minutes south and is the nearest Level I Trauma Center."
                     }
                 ],
                 "_roden_jurisdiction": "GA",
@@ -27248,64 +27161,6 @@
                     {
                         "question": "Does Roden Law serve Brantley County?",
                         "answer": "Yes. Our Darien office handles personal injury cases throughout Brantley County. We offer free consultations by phone and can meet clients at convenient locations throughout the region."
-                    }
-                ],
-                "_roden_jurisdiction": "GA",
-                "_roden_sol_ga": "O.C.G.A. § 9-3-33"
-            }
-        },
-        "/locations/georgia/darien/sea-island/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Sea Island",
-            "excerpt": "",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "Can I file an injury claim if I was hurt at a Sea Island resort facility?",
-                        "answer": "Yes. If you were injured due to negligent maintenance, unsafe conditions, or another party's carelessness on Sea Island, you may have a premises liability or personal injury claim under Georgia law. The 2-year statute of limitations applies."
-                    },
-                    {
-                        "question": "What hospital is nearest to Sea Island?",
-                        "answer": "Southeast Georgia Health System has an urgent care facility on nearby St. Simons Island. The full-service Brunswick Campus hospital is approximately 20 minutes away."
-                    },
-                    {
-                        "question": "Does Georgia law apply to golf cart accidents on Sea Island?",
-                        "answer": "Yes. Golf cart operators on Sea Island are subject to Georgia negligence laws. If a golf cart operator's carelessness caused your injuries, you may be entitled to compensation."
-                    },
-                    {
-                        "question": "Can I file a claim if I was visiting Sea Island from out of state?",
-                        "answer": "Absolutely. Visitors injured due to negligence in Georgia have the right to file personal injury claims under Georgia law regardless of their home state."
-                    }
-                ],
-                "_roden_jurisdiction": "GA",
-                "_roden_sol_ga": "O.C.G.A. § 9-3-33"
-            }
-        },
-        "/locations/georgia/darien/st-simons-island/": {
-            "type": "location",
-            "status": "publish",
-            "title": "St. Simons Island",
-            "excerpt": "",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "What are the most common types of accidents on St. Simons Island?",
-                        "answer": "St. Simons Island sees a higher-than-average rate of bicycle accidents, pedestrian accidents, and golf cart collisions compared to mainland communities. The island's narrow roads, shared vehicle-golf cart traffic, heavy tourist bicycle rentals, and congested village areas create unique hazards. Motor vehicle crashes on the Torras Causeway and at the Frederica/Demere intersection are also very common."
-                    },
-                    {
-                        "question": "Can I file a personal injury claim if I was hit by a golf cart on St. Simons?",
-                        "answer": "Yes. Golf cart operators in Georgia are subject to the same rules of negligence as motor vehicle operators. If a golf cart driver's carelessness caused your injuries, you may be entitled to compensation for medical expenses, lost wages, and pain and suffering. Georgia law allows golf cart operation on certain public roads, and operators must exercise due care to avoid injuring others."
-                    },
-                    {
-                        "question": "Which hospital is closest to St. Simons Island?",
-                        "answer": "Southeast Georgia Health System has an Immediate Care facility on St. Simons Island at 3025 Shrine Road for urgent but non-life-threatening injuries. For emergency or serious trauma, the Brunswick Campus at 2415 Parkwood Drive is the nearest full-service hospital, approximately 15 minutes away via the Torras Causeway."
-                    },
-                    {
-                        "question": "How does Roden Law handle accident cases for St. Simons Island visitors?",
-                        "answer": "If you were injured on St. Simons Island while visiting from out of state, you still have the right to file a personal injury claim in Georgia. Our Darien office handles cases for both residents and visitors throughout the Golden Isles. Georgia's statute of limitations gives you 2 years to file, and our attorneys can manage your case remotely if you've returned home."
                     }
                 ],
                 "_roden_jurisdiction": "GA",
@@ -27520,31 +27375,6 @@
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33"
             }
         },
-        "/locations/georgia/savannah/skidaway-island/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Skidaway Island",
-            "excerpt": "",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "Can I file a premises liability claim for an injury at The Landings?",
-                        "answer": "Yes. If you were injured due to a hazardous condition on The Landings property — including common areas, pools, fitness facilities, golf courses, or roadways — the homeowners' association or property management may be liable. Georgia premises liability law requires property owners and managers to maintain safe conditions."
-                    },
-                    {
-                        "question": "How long do I have to file a personal injury claim in Skidaway Island, Georgia?",
-                        "answer": "Georgia has a 2-year statute of limitations for personal injury claims (O.C.G.A. § 9-3-33). This deadline runs from the date of the accident. Missing this deadline almost always means permanently losing your right to compensation. Contact a Roden Law attorney as soon as possible to protect your claim."
-                    },
-                    {
-                        "question": "How long do I have to file a personal injury claim in Skidaway Island, Georgia?",
-                        "answer": "Georgia has a 2-year statute of limitations for personal injury claims (O.C.G.A. § 9-3-33). This deadline runs from the date of the accident. Missing this deadline almost always means permanently losing your right to compensation. Contact a Roden Law attorney as soon as possible to protect your claim."
-                    }
-                ],
-                "_roden_jurisdiction": "GA",
-                "_roden_sol_ga": "O.C.G.A. § 9-3-33"
-            }
-        },
         "/locations/georgia/savannah/statesboro/": {
             "type": "location",
             "status": "publish",
@@ -27563,31 +27393,6 @@
                     },
                     {
                         "question": "How long do I have to file a personal injury claim in Statesboro, Georgia?",
-                        "answer": "Georgia has a 2-year statute of limitations for personal injury claims (O.C.G.A. § 9-3-33). This deadline runs from the date of the accident. Missing this deadline almost always means permanently losing your right to compensation. Contact a Roden Law attorney as soon as possible to protect your claim."
-                    }
-                ],
-                "_roden_jurisdiction": "GA",
-                "_roden_sol_ga": "O.C.G.A. § 9-3-33"
-            }
-        },
-        "/locations/georgia/savannah/whitemarsh-island/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Whitemarsh Island",
-            "excerpt": "",
-            "meta": {
-                "_roden_author_attorney": "Eric Roden",
-                "_roden_faqs": [
-                    {
-                        "question": "What happens if an accident blocks the only bridge off Whitemarsh Island?",
-                        "answer": "Bridge closures following accidents can delay emergency response to the island. If delayed emergency treatment worsened your injuries, this is relevant to your damages claim. Our attorneys understand how island geography affects accident cases."
-                    },
-                    {
-                        "question": "How long do I have to file a personal injury claim in Whitemarsh Island, Georgia?",
-                        "answer": "Georgia has a 2-year statute of limitations for personal injury claims (O.C.G.A. § 9-3-33). This deadline runs from the date of the accident. Missing this deadline almost always means permanently losing your right to compensation. Contact a Roden Law attorney as soon as possible to protect your claim."
-                    },
-                    {
-                        "question": "How long do I have to file a personal injury claim in Whitemarsh Island, Georgia?",
                         "answer": "Georgia has a 2-year statute of limitations for personal injury claims (O.C.G.A. § 9-3-33). This deadline runs from the date of the accident. Missing this deadline almost always means permanently losing your right to compensation. Contact a Roden Law attorney as soon as possible to protect your claim."
                     }
                 ],
@@ -27932,56 +27737,6 @@
                 "_roden_sol_sc": "S.C. Code § 15-3-530"
             }
         },
-        "/locations/south-carolina/columbia/lugoff/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Lugoff",
-            "excerpt": "",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "My accident happened in Lugoff — which county court handles my case?",
-                        "answer": "Lugoff is in Kershaw County, so personal injury lawsuits are filed in Kershaw County Circuit Court. Roden Law's attorneys serve Kershaw County residents from our Columbia office."
-                    },
-                    {
-                        "question": "Where is the nearest hospital to Lugoff?",
-                        "answer": "MUSC Health Kershaw Medical Center in Camden is the closest hospital with emergency services. For severe trauma, Prisma Health Richland Hospital in Columbia is the closest Level I Trauma Center, approximately 30 minutes southwest via US-1."
-                    },
-                    {
-                        "question": "How long do I have to file a claim after a Lugoff accident?",
-                        "answer": "South Carolina's 3-year statute of limitations applies (S.C. Code § 15-3-530). Contact Roden Law promptly to protect your rights. Call (803) 219-2816."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/columbia/red-bank/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Red Bank",
-            "excerpt": "",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Where is the nearest emergency room to Red Bank?",
-                        "answer": "Lexington Medical Center in West Columbia is the nearest major hospital, approximately 15-20 minutes north on US-1. For life-threatening injuries, Prisma Health Richland Hospital in downtown Columbia has the region's only Level I Trauma Center."
-                    },
-                    {
-                        "question": "How long do I have to file a claim after a Red Bank accident?",
-                        "answer": "South Carolina allows 3 years from the date of the accident to file a personal injury lawsuit (S.C. Code § 15-3-530). Contact Roden Law promptly to ensure evidence is preserved."
-                    },
-                    {
-                        "question": "Does Roden Law handle rural road accidents in Lexington County?",
-                        "answer": "Yes. Our attorneys handle accidents on all road types throughout Lexington County, including rural highways, two-lane roads, and interstate corridors. Rural road accidents often involve unique factors like limited sight lines, speed differentials, and agricultural equipment. Call (803) 219-2816."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
         "/locations/south-carolina/columbia/west-columbia/": {
             "type": "location",
             "status": "publish",
@@ -28078,31 +27833,6 @@
                 "_roden_sol_sc": "S.C. Code § 15-3-530"
             }
         },
-        "/locations/south-carolina/myrtle-beach/carolina-forest/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Carolina Forest",
-            "excerpt": "",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Why is the Highway 501 and Carolina Forest Boulevard intersection so dangerous?",
-                        "answer": "This intersection combines heavy commuter traffic from Carolina Forest’s growing residential population with tourist traffic heading to and from Myrtle Beach. Multiple left turn lanes create confusion, and drivers frequently run red lights or make unsafe lane changes. The SCDPS has flagged this intersection as one of the worst in Horry County in multiple years."
-                    },
-                    {
-                        "question": "Where is the nearest emergency room to Carolina Forest?",
-                        "answer": "The Carolina Forest ER, a Grand Strand Health facility at 2690 Professional Circle, offers 24-hour emergency care within Carolina Forest itself. Conway Medical Center is approximately 10 minutes west on Highway 501. For severe trauma, Grand Strand Medical Center in Myrtle Beach is the region’s Level I Trauma Center."
-                    },
-                    {
-                        "question": "How much does it cost to hire a personal injury lawyer for a Carolina Forest accident?",
-                        "answer": "Nothing upfront. Roden Law works on a contingency fee basis — we only get paid if we recover compensation for you. If there is no recovery, there is no fee. Call (843) 612-1980 for a free, no-obligation case review."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
         "/locations/south-carolina/myrtle-beach/conway/": {
             "type": "location",
             "status": "publish",
@@ -28147,56 +27877,6 @@
                     {
                         "question": "How long do I have to file an injury claim after a Georgetown accident?",
                         "answer": "South Carolina’s 3-year statute of limitations (S.C. Code § 15-3-530) applies. You must file within 3 years of the accident date. Contact Roden Law promptly to preserve evidence and protect your rights."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/myrtle-beach/little-river/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Little River",
-            "excerpt": "",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "I was in an accident near the SC/NC border — which state’s laws apply?",
-                        "answer": "The state where the accident physically occurred determines which laws apply. If the accident happened on the South Carolina side of the border, South Carolina’s 3-year statute of limitations and modified comparative fault rules apply, even if you are a North Carolina resident. Our attorneys can help determine the correct jurisdiction."
-                    },
-                    {
-                        "question": "Where is the nearest hospital to Little River?",
-                        "answer": "McLeod Seacoast Hospital at 4000 Highway 9 East in Little River is the nearest full-service hospital with a 24-bed emergency department. Grand Strand Health is also building a new standalone ER in Little River, expected to open in 2026."
-                    },
-                    {
-                        "question": "Does Roden Law handle cases in northern Horry County?",
-                        "answer": "Yes. Our attorneys serve all of Horry County, including Little River, Longs, Wampee, and communities near the North Carolina border. All cases are filed in Horry County Circuit Court in Conway."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/myrtle-beach/murrells-inlet/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Murrells Inlet",
-            "excerpt": "",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "Is Murrells Inlet in Horry County or Georgetown County?",
-                        "answer": "Murrells Inlet straddles the Horry County/Georgetown County border. Most of the developed area is in Horry County, but some portions fall within Georgetown County. The county where your accident occurred determines where your lawsuit is filed — either Horry County Circuit Court or Georgetown County Court of Common Pleas. Our attorneys practice in both."
-                    },
-                    {
-                        "question": "I slipped and fell at a MarshWalk restaurant — what should I do?",
-                        "answer": "Report the incident to the restaurant management immediately and ask them to create an incident report. Photograph the hazardous condition that caused your fall. Seek medical attention even if your injuries seem minor. South Carolina premises liability law requires businesses to maintain reasonably safe conditions for visitors. Contact Roden Law at (843) 612-1980 for a free case evaluation."
-                    },
-                    {
-                        "question": "How far is Roden Law from Tidelands Waccamaw Hospital?",
-                        "answer": "Our Murrells Inlet office at 631 Bellamy Ave. is approximately 5 minutes from Tidelands Waccamaw Community Hospital. If you’ve been treated for accident injuries at Tidelands Waccamaw, you can visit our office for a free case review at your convenience."
                     }
                 ],
                 "_roden_jurisdiction": "SC",
@@ -28286,27 +27966,6 @@
                     {
                         "question": "What is the statute of limitations for a personal injury case in Berkeley County?",
                         "answer": "South Carolina's 3-year statute of limitations (S.C. Code § 15-3-530) applies regardless of which county your accident occurred in. You must file your lawsuit within 3 years of the date of injury. Contact Roden Law as soon as possible so we can preserve evidence and begin building your case."
-                    }
-                ],
-                "_roden_jurisdiction": "SC",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
-            }
-        },
-        "/locations/south-carolina/north-charleston/ladson/": {
-            "type": "location",
-            "status": "publish",
-            "title": "Ladson",
-            "excerpt": "",
-            "meta": {
-                "_roden_author_attorney": "Graeham C. Gillin",
-                "_roden_faqs": [
-                    {
-                        "question": "My accident was in Ladson — how do I know which county has jurisdiction?",
-                        "answer": "Ladson straddles the Dorchester County and Berkeley County line. The specific location of your accident determines which county's circuit court has jurisdiction. Our attorneys will determine the correct jurisdiction based on the accident location and file your case accordingly. This is a common issue in the Ladson area and one we handle regularly."
-                    },
-                    {
-                        "question": "Why is the College Park Road interchange so dangerous?",
-                        "answer": "I-26 Exit 203 at College Park Road combines high-speed interstate traffic with complex local road patterns. The entrance and exit ramps frequently back up, and the intersection design creates confusion about lane assignments. Commercial truck traffic from nearby industrial areas adds to the danger."
                     }
                 ],
                 "_roden_jurisdiction": "SC",

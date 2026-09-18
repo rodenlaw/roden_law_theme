@@ -642,3 +642,10 @@ Side note from the post-cull pull: 63 of the 79 location URLs retired in August 
 impressions (18,634) and 6 clicks since 2026-08-26. Search Console reports the redirected URL
 until Google recrawls it, so this is expected and should fade; worth re-checking in the
 October compare pull.
+
+## Applied 2026-09-18
+
+The 13 were retired the same day (#141 for the redirects, then relink and trash on
+production). Re-measured from the live sitemap after the cache flush: **486 of 1,217
+indexable URLs, 39.9%**, floor violations 156 → 143. Location pages no longer carry any
+floor violation. Records: `RECOVERY-LOG.md`, `docs/backups/evaluate-locations-*.json`.

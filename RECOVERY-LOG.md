@@ -229,6 +229,26 @@ of the granularity floor; it does not move the ratio materially, because that
 ratio is now carried by the blog (193 location-targeted posts) and the office-city
 intersections (177), neither of which Phase 1 governs.
 
+### Applied 2026-09-18 — the 13 EVALUATE location pages
+
+Shipped end to end the same day: redirects deployed in #141, relink applied, posts
+trashed, caches flushed, verified after deletion.
+
+| | Removed | Relinked | Verified |
+|---|---:|---|---|
+| EVALUATE locations | 13 locations | 11 links / 5 posts (all Ladson) | 13/13 single-hop 301 → 200 |
+
+Sitemaps: location **57 → 44**, indexable **1,230 → 1,217**. `post_modified` untouched
+on all five relinked posts. The child-page guard found nothing to refuse, which
+confirms batch (a) had already cleared the tier-4 layer under these. Live JSON-LD
+guard PASS after the relink's direct column write. `content/meta.json` regenerated:
+the 13 location entries gone, nothing else changed.
+
+**Doorway ratio as site-health measures it: 40.6% → 39.9%** (486 of 1,217), and the
+granularity floor 156 → 143. The location post type no longer carries a floor
+violation. What remains is the blog (116 sub-municipal posts EN + ES) and the
+truck-corridor resources (26), which is a content-strategy decision, not a rule-4 one.
+
 ### End-state arithmetic
 
 | Scope | Now | After definite removals | If all EVALUATE also go |
@@ -253,6 +273,7 @@ into 8 city-tier towns and 109 nested municipalities; see the recommendation in
 | 2026-08-21 | **(a)** neighbourhood + subdivision | 1,617 | 1,529 | 88 | **COMPLETE.** Relink applied (53 links, 23 posts, `post_modified` preserved), redirects live, 88 posts trashed, caches flushed. Verified after deletion: 88/88 single-hop 301, no 404s; location sitemap 211 → 123. Backups: `batch-a-relink-*.json`, `batch-a-neighborhood-locations-*.json`. |
 | 2026-08-21 | **(d)** non-office city×practice | 1,651 | 1,617 | 34 | **COMPLETE.** Redirects live, 34 posts trashed, caches flushed. Verified after deletion: 34/34 single-hop 301, no 404s; practice_area sitemap 449 → 415; intersection grids self-healed to pillars, zero surviving links. Backup: `docs/backups/batch-d-nonoffice-city-practice-2026-08-21.json`. |
 | 2026-08-25 | **(c)** practice micro-permutations | 1,529 | 1,518 | 11 | **COMPLETE.** Relink applied (51 links, 42 posts, `post_modified` preserved), redirects live, 11 posts trashed, caches flushed. Verified after deletion: 11/11 single-hop 301 flat **and** nested; zero remaining inbound body links; practice_area sitemap 415 → 404. Backups: `batch-c-relink-2026-08-25.json`, `batch-c-micro-permutations-2026-08-25.json` — the latter is also Study #1's source text. |
+| 2026-09-18 | **EVALUATE** the 13 rule-4 survivors | 1,230 | 1,217 | 13 | **COMPLETE.** Redirects deployed (#141), relink applied (11 links, 5 posts, all to Ladson, `post_modified` preserved), 13 posts trashed, caches flushed. Verified after deletion: 13/13 single-hop 301 → 200; location sitemap 57 → 44; live JSON-LD guard PASS. Backups: `evaluate-locations-relink-2026-09-18.json`, `evaluate-locations-2026-09-18.json`. |
 
 ### Batch (c) — two things the plan did not predict
 

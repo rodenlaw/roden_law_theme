@@ -1,0 +1,832 @@
+{
+    "generated": "2026-09-18T21:03:14+00:00",
+    "batch": "evaluate-location-pages",
+    "mode": "apply",
+    "note": "Restore with wp post untrash <ID>.",
+    "evidence": "data/site-health/doorway-audit-2026-09-18.md — 19 clicks / 9,515 impressions over 16 months, 0 clicks since 2026-08-26",
+    "link_debt": [],
+    "posts": [
+        {
+            "ID": 3770,
+            "post_title": "Ladson",
+            "post_name": "ladson",
+            "post_type": "location",
+            "post_status": "publish",
+            "post_parent": 3763,
+            "post_date_gmt": "2026-03-02 15:38:11",
+            "permalink": "https://rodenlaw.com/locations/south-carolina/north-charleston/ladson/",
+            "redirects_to": "/locations/south-carolina/north-charleston/",
+            "post_content": "<p>Ladson is a community of approximately 16,000 residents that straddles the Dorchester County and Berkeley County line along the I-26 corridor.</p>\n\n<p>The I-26 Exit 203 interchange at College Park Road recorded 381 collisions between 2011 and 2015 &mdash; the second-highest total of any intersection in the tri-county area and ninth statewide (<a href=\"https://www.postandcourier.com/charleston_sc/what-are-the-tri-countys-10-most-dangerous-intersections/article_74606f92-e1a5-11e6-83b4-4f76f1994275.html\" rel=\"nofollow noopener\">Post and Courier</a> analysis of preliminary South Carolina Department of Public Safety data, 2011&ndash;2015).</p>\n\n<p>Ladson's position at the intersection of I-26 and US-78, combined with heavy commercial and industrial traffic, creates persistent accident risks. The community's split between two counties can create jurisdictional complexity in personal injury cases — our attorneys handle cases in both Dorchester and Berkeley County courts.</p>",
+            "post_excerpt": "",
+            "meta": {
+                "_roden_is_neighborhood": [
+                    "1"
+                ],
+                "_roden_parent_office_key": [
+                    "charleston"
+                ],
+                "_roden_neighborhood_roads": [
+                    "I-26 Exit 203 at College Park Road is the second most dangerous intersection in the tri-county Charleston area, with over 380 accidents in a recent reporting period. The US-78 corridor carries heavy commercial traffic. US-17A connects Ladson to Summerville and Goose Creek through high-volume intersections. Ladson straddles the Dorchester/Berkeley county line, which can create jurisdictional complexity for accident claims."
+                ],
+                "_roden_neighborhood_hospitals": [
+                    "Summerville Medical Center — approximately 10 minutes\nTrident Medical Center — approximately 15 minutes via I-26"
+                ],
+                "_roden_neighborhood_landmarks": [
+                    "Exchange Park (major event venue), Ladson commercial corridor, I-26 Exit 203 interchange area"
+                ],
+                "_roden_neighborhood_service_area": [
+                    "Serving Ladson, College Park, Archdale, and surrounding communities along the I-26 and US-78 corridors in Dorchester and Berkeley Counties."
+                ],
+                "_roden_neighborhood_population": [
+                    "~16,000"
+                ],
+                "_roden_neighborhood_court": [
+                    "Dorchester County Circuit Court / Berkeley County Circuit Court"
+                ],
+                "_roden_neighborhood_h1": [
+                    "Personal Injury Lawyer Serving Ladson, SC"
+                ],
+                "_roden_neighborhood_priority": [
+                    "P2"
+                ],
+                "_roden_faqs": [
+                    "a:2:{i:0;a:2:{s:8:\"question\";s:74:\"My accident was in Ladson — how do I know which county has jurisdiction?\";s:6:\"answer\";s:349:\"Ladson straddles the Dorchester County and Berkeley County line. The specific location of your accident determines which county's circuit court has jurisdiction. Our attorneys will determine the correct jurisdiction based on the accident location and file your case accordingly. This is a common issue in the Ladson area and one we handle regularly.\";}i:1;a:2:{s:8:\"question\";s:54:\"Why is the College Park Road interchange so dangerous?\";s:6:\"answer\";s:299:\"I-26 Exit 203 at College Park Road combines high-speed interstate traffic with complex local road patterns. The entrance and exit ramps frequently back up, and the intersection design creates confusion about lane assignments. Commercial truck traffic from nearby industrial areas adds to the danger.\";}}"
+                ],
+                "_yoast_wpseo_title": [
+                    "Ladson Personal Injury Lawyer | Roden Law | Free Consult"
+                ],
+                "_yoast_wpseo_metadesc": [
+                    "Injured in Ladson? Roden Law handles accident cases near I-26 Exit 203, College Park Rd & the US-78 corridor. Free consultation."
+                ],
+                "_roden_jurisdiction": [
+                    "SC"
+                ],
+                "_roden_author_attorney": [
+                    "3732"
+                ],
+                "_roden_sol_sc": [
+                    "S.C. Code § 15-3-530"
+                ],
+                "_roden_last_refreshed": [
+                    "2026-08-25"
+                ]
+            }
+        },
+        {
+            "ID": 3804,
+            "post_title": "Whitemarsh Island",
+            "post_name": "whitemarsh-island",
+            "post_type": "location",
+            "post_status": "publish",
+            "post_parent": 3597,
+            "post_date_gmt": "2026-03-03 18:58:12",
+            "permalink": "https://rodenlaw.com/locations/georgia/savannah/whitemarsh-island/",
+            "redirects_to": "/locations/georgia/savannah/",
+            "post_content": "<p>Whitemarsh Island is a residential community of approximately 7,000 residents in eastern Chatham County, connected to the mainland via Johnny Mercer Boulevard and the Islands Expressway. Like Wilmington Island to its east, Whitemarsh faces traffic bottlenecks created by limited bridge and road connections.</p>\n\n<p>Roden Law serves Whitemarsh Island from our Savannah office. Call (912) 303-5850 for a free consultation.</p>",
+            "post_excerpt": "",
+            "meta": {
+                "_roden_is_neighborhood": [
+                    "1"
+                ],
+                "_roden_parent_office_key": [
+                    "savannah"
+                ],
+                "_roden_neighborhood_roads": [
+                    "Johnny Mercer Boulevard carries all traffic between Whitemarsh Island and mainland Savannah via the Islands Expressway, creating bottleneck conditions during peak hours. Bryan Woods Road and other local connectors serve residential developments with limited capacity."
+                ],
+                "_roden_neighborhood_hospitals": [
+                    "Memorial Health University Medical Center (Level I Trauma Center) — approx. 15 min\nSt. Joseph's Hospital — approx. 20 min"
+                ],
+                "_roden_neighborhood_landmarks": [
+                    "Savannah Christian Preparatory School, The Landings (nearby on Skidaway Island), Whitemarsh Island residential communities"
+                ],
+                "_roden_neighborhood_service_area": [
+                    "Serving Whitemarsh Island and surrounding eastern Chatham County island communities."
+                ],
+                "_roden_neighborhood_population": [
+                    "~7,000"
+                ],
+                "_roden_neighborhood_court": [
+                    "Chatham County Superior Court"
+                ],
+                "_roden_neighborhood_h1": [
+                    "Personal Injury Lawyer Serving Whitemarsh Island, GA"
+                ],
+                "_roden_neighborhood_priority": [
+                    "P3"
+                ],
+                "_roden_faqs": [
+                    "a:3:{i:0;a:2:{s:8:\"question\";s:73:\"What happens if an accident blocks the only bridge off Whitemarsh Island?\";s:6:\"answer\";s:244:\"Bridge closures following accidents can delay emergency response to the island. If delayed emergency treatment worsened your injuries, this is relevant to your damages claim. Our attorneys understand how island geography affects accident cases.\";}i:1;a:2:{s:8:\"question\";s:81:\"How long do I have to file a personal injury claim in Whitemarsh Island, Georgia?\";s:6:\"answer\";s:303:\"Georgia has a 2-year statute of limitations for personal injury claims (O.C.G.A. § 9-3-33). This deadline runs from the date of the accident. Missing this deadline almost always means permanently losing your right to compensation. Contact a Roden Law attorney as soon as possible to protect your claim.\";}i:2;a:2:{s:8:\"question\";s:81:\"How long do I have to file a personal injury claim in Whitemarsh Island, Georgia?\";s:6:\"answer\";s:303:\"Georgia has a 2-year statute of limitations for personal injury claims (O.C.G.A. § 9-3-33). This deadline runs from the date of the accident. Missing this deadline almost always means permanently losing your right to compensation. Contact a Roden Law attorney as soon as possible to protect your claim.\";}}"
+                ],
+                "_yoast_wpseo_title": [
+                    "Whitemarsh Island Personal Injury Lawyer | Roden Law | Free Consult"
+                ],
+                "_yoast_wpseo_metadesc": [
+                    "Injured on Whitemarsh Island? Roden Law handles accident cases along Johnny Mercer Blvd and the island road network. Free consultation."
+                ],
+                "_roden_jurisdiction": [
+                    "GA"
+                ],
+                "_roden_author_attorney": [
+                    "3729"
+                ],
+                "_roden_sol_ga": [
+                    "O.C.G.A. § 9-3-33"
+                ]
+            }
+        },
+        {
+            "ID": 3805,
+            "post_title": "Skidaway Island",
+            "post_name": "skidaway-island",
+            "post_type": "location",
+            "post_status": "publish",
+            "post_parent": 3597,
+            "post_date_gmt": "2026-03-03 18:58:23",
+            "permalink": "https://rodenlaw.com/locations/georgia/savannah/skidaway-island/",
+            "redirects_to": "/locations/georgia/savannah/",
+            "post_content": "<p>Skidaway Island is home to approximately 8,800 residents, primarily within The Landings — one of the largest gated communities in the Southeast. The island's single access road, Diamond Causeway, means every resident and visitor must use the same corridor, creating congestion and bottleneck hazards.</p>\n\n<p>Golf cart traffic within The Landings creates unique accident risks when mixed with vehicle traffic. Premises liability issues at community amenities are also common. Roden Law serves Skidaway Island from our Savannah office. Call (912) 303-5850 for a free case review.</p>",
+            "post_excerpt": "",
+            "meta": {
+                "_roden_is_neighborhood": [
+                    "1"
+                ],
+                "_roden_parent_office_key": [
+                    "savannah"
+                ],
+                "_roden_neighborhood_roads": [
+                    "Diamond Causeway is the sole road connecting Skidaway Island to the mainland, carrying all traffic for approximately 8,800 residents and visitors to The Landings gated community. The two-lane causeway creates significant congestion during peak hours and any accident on the causeway can isolate the island. McWhorter Road within The Landings carries golf cart, cyclist, and vehicle traffic in a mixed-use environment."
+                ],
+                "_roden_neighborhood_hospitals": [
+                    "Memorial Health University Medical Center (Level I Trauma Center) — approx. 20 min\nCandler Hospital — approx. 15 min"
+                ],
+                "_roden_neighborhood_landmarks": [
+                    "The Landings on Skidaway Island, University of Georgia Marine Education Center and Aquarium, Skidaway Island State Park, Modena Island"
+                ],
+                "_roden_neighborhood_service_area": [
+                    "Serving Skidaway Island, The Landings, and surrounding southeastern Chatham County."
+                ],
+                "_roden_neighborhood_population": [
+                    "~8,800"
+                ],
+                "_roden_neighborhood_court": [
+                    "Chatham County Superior Court"
+                ],
+                "_roden_neighborhood_h1": [
+                    "Personal Injury Lawyer Serving Skidaway Island, GA"
+                ],
+                "_roden_neighborhood_priority": [
+                    "P3"
+                ],
+                "_roden_faqs": [
+                    "a:3:{i:0;a:2:{s:8:\"question\";s:68:\"Can I file a premises liability claim for an injury at The Landings?\";s:6:\"answer\";s:327:\"Yes. If you were injured due to a hazardous condition on The Landings property — including common areas, pools, fitness facilities, golf courses, or roadways — the homeowners' association or property management may be liable. Georgia premises liability law requires property owners and managers to maintain safe conditions.\";}i:1;a:2:{s:8:\"question\";s:79:\"How long do I have to file a personal injury claim in Skidaway Island, Georgia?\";s:6:\"answer\";s:303:\"Georgia has a 2-year statute of limitations for personal injury claims (O.C.G.A. § 9-3-33). This deadline runs from the date of the accident. Missing this deadline almost always means permanently losing your right to compensation. Contact a Roden Law attorney as soon as possible to protect your claim.\";}i:2;a:2:{s:8:\"question\";s:79:\"How long do I have to file a personal injury claim in Skidaway Island, Georgia?\";s:6:\"answer\";s:303:\"Georgia has a 2-year statute of limitations for personal injury claims (O.C.G.A. § 9-3-33). This deadline runs from the date of the accident. Missing this deadline almost always means permanently losing your right to compensation. Contact a Roden Law attorney as soon as possible to protect your claim.\";}}"
+                ],
+                "_yoast_wpseo_title": [
+                    "Skidaway Island Personal Injury Lawyer | Roden Law | Free Consult"
+                ],
+                "_yoast_wpseo_metadesc": [
+                    "Injured on Skidaway Island? Roden Law handles accident cases at The Landings and throughout Chatham County's island communities. Free consultation."
+                ],
+                "_roden_jurisdiction": [
+                    "GA"
+                ],
+                "_roden_author_attorney": [
+                    "3729"
+                ],
+                "_roden_sol_ga": [
+                    "O.C.G.A. § 9-3-33"
+                ]
+            }
+        },
+        {
+            "ID": 3816,
+            "post_title": "Carolina Forest",
+            "post_name": "carolina-forest",
+            "post_type": "location",
+            "post_status": "publish",
+            "post_parent": 3601,
+            "post_date_gmt": "2026-03-03 19:31:53",
+            "permalink": "https://rodenlaw.com/locations/south-carolina/myrtle-beach/carolina-forest/",
+            "redirects_to": "/locations/south-carolina/myrtle-beach/",
+            "post_content": "<p>Carolina Forest is one of the fastest-growing communities in Horry County, a master-planned area of approximately 16,500 residents located between Myrtle Beach and Conway along Highway 501. Nearly half of the 25-square-mile area has been set aside for conservation, but the roads serving it were not designed for the explosive population growth the community has experienced.</p>\n\n<p>The Highway 501 and Carolina Forest Boulevard intersection has been identified by the SCDPS as one of the five worst intersections in Horry County, with complaints of drivers running red lights, cutting others off, and dangerously long wait times. A 30-acre wildfire in the Carolina Forest area in early 2026 caused additional road closures and hazards. Roden Law’s Murrells Inlet attorneys serve Carolina Forest residents. Call (843) 612-1980 for a free consultation.</p>",
+            "post_excerpt": "",
+            "meta": {
+                "_roden_is_neighborhood": [
+                    "1"
+                ],
+                "_roden_parent_office_key": [
+                    "myrtle-beach"
+                ],
+                "_roden_neighborhood_roads": [
+                    "The intersection of Highway 501 and Carolina Forest Boulevard is one of the most dangerous in the Myrtle Beach metro, with over 10% of survey respondents identifying it as the worst intersection in the area. Multiple left turn lanes and heavy traffic create hazardous conditions, and the intersection appeared on the SCDPS list of the five worst intersections in Horry County in both 2018 and 2020. International Drive carries increasing residential traffic as the master-planned community continues rapid growth. The SC-31 (Carolina Bays Parkway) corridor provides faster access to Myrtle Beach but sees high-speed crashes at its interchanges."
+                ],
+                "_roden_neighborhood_hospitals": [
+                    "Carolina Forest ER (Grand Strand Health) — 2690 Professional Circle, Myrtle Beach, SC 29577\nConway Medical Center — 300 Singleton Ridge Rd, Conway, SC 29526 (10 min west)"
+                ],
+                "_roden_neighborhood_landmarks": [
+                    "Tanger Outlets on 501, Carolina Forest Recreation Center, The Forest at Carolina Forest, Topgolf Myrtle Beach, Medieval Times"
+                ],
+                "_roden_neighborhood_service_area": [
+                    "Serving Carolina Forest, Tanger Outlets area, Forestbrook, and surrounding master-planned communities along the Highway 501 and SC-31 corridors."
+                ],
+                "_roden_neighborhood_population": [
+                    "~16,500"
+                ],
+                "_roden_neighborhood_court": [
+                    "Horry County Circuit Court (15th Judicial Circuit)"
+                ],
+                "_roden_neighborhood_h1": [
+                    "Personal Injury Lawyer Serving Carolina Forest, SC"
+                ],
+                "_roden_neighborhood_priority": [
+                    "P1"
+                ],
+                "_roden_faqs": [
+                    "a:3:{i:0;a:2:{s:8:\"question\";s:79:\"Why is the Highway 501 and Carolina Forest Boulevard intersection so dangerous?\";s:6:\"answer\";s:365:\"This intersection combines heavy commuter traffic from Carolina Forest’s growing residential population with tourist traffic heading to and from Myrtle Beach. Multiple left turn lanes create confusion, and drivers frequently run red lights or make unsafe lane changes. The SCDPS has flagged this intersection as one of the worst in Horry County in multiple years.\";}i:1;a:2:{s:8:\"question\";s:55:\"Where is the nearest emergency room to Carolina Forest?\";s:6:\"answer\";s:319:\"The Carolina Forest ER, a Grand Strand Health facility at 2690 Professional Circle, offers 24-hour emergency care within Carolina Forest itself. Conway Medical Center is approximately 10 minutes west on Highway 501. For severe trauma, Grand Strand Medical Center in Myrtle Beach is the region’s Level I Trauma Center.\";}i:2;a:2:{s:8:\"question\";s:86:\"How much does it cost to hire a personal injury lawyer for a Carolina Forest accident?\";s:6:\"answer\";s:217:\"Nothing upfront. Roden Law works on a contingency fee basis — we only get paid if we recover compensation for you. If there is no recovery, there is no fee. Call (843) 612-1980 for a free, no-obligation case review.\";}}"
+                ],
+                "_yoast_wpseo_title": [
+                    "Carolina Forest Personal Injury Lawyer | Roden Law | Free Consult"
+                ],
+                "_yoast_wpseo_metadesc": [
+                    "Injured in Carolina Forest? Roden Law handles accident cases on Hwy 501, Carolina Forest Blvd & International Dr. Free consultation. No fees unless we win."
+                ],
+                "_roden_jurisdiction": [
+                    "SC"
+                ],
+                "_roden_author_attorney": [
+                    "3732"
+                ],
+                "_roden_sol_sc": [
+                    "S.C. Code § 15-3-530"
+                ]
+            }
+        },
+        {
+            "ID": 3820,
+            "post_title": "Little River",
+            "post_name": "little-river",
+            "post_type": "location",
+            "post_status": "publish",
+            "post_parent": 3601,
+            "post_date_gmt": "2026-03-03 19:32:39",
+            "permalink": "https://rodenlaw.com/locations/south-carolina/myrtle-beach/little-river/",
+            "redirects_to": "/locations/south-carolina/myrtle-beach/",
+            "post_content": "<p>Little River is a historic fishing village of approximately 4,500 residents at the northern tip of the Grand Strand, near the North Carolina border. Once a pirate harbor in the 1700s, today Little River sits at the crossroads of US-17 cross-border traffic and SC Highway 9 — a combination that produces frequent and serious motor vehicle accidents.</p>\n\n<p>The SC-9 and SC-57 intersection near Little River recorded more crashes than any other intersection in Horry County between 2020 and 2024. Grand Strand Health is constructing a new standalone emergency department in Little River to address the growing need. Roden Law serves all of the northern Grand Strand from our Murrells Inlet office. Call (843) 612-1980 for a free consultation.</p>",
+            "post_excerpt": "",
+            "meta": {
+                "_roden_is_neighborhood": [
+                    "1"
+                ],
+                "_roden_parent_office_key": [
+                    "myrtle-beach"
+                ],
+                "_roden_neighborhood_roads": [
+                    "US-17 through Little River carries heavy cross-border traffic between South Carolina and North Carolina, with commercial truck traffic adding to the danger. SC Highway 9 runs through the northern part of the community and its intersection with SC-57 was identified as the most dangerous intersection in Horry County with 49 crashes between 2020 and 2024. Sea Mountain Highway connects Little River to North Myrtle Beach with increasing commuter traffic."
+                ],
+                "_roden_neighborhood_hospitals": [
+                    "McLeod Seacoast Hospital — 4000 Hwy 9 East, Little River, SC 29566 — (843) 390-8100\nGrand Strand Health Little River ER (under construction 2026)"
+                ],
+                "_roden_neighborhood_landmarks": [
+                    "Little River Waterfront, Coquina Harbour, North Myrtle Beach Park & Sports Complex (nearby), Vereen Memorial Gardens, Little River fishing fleet"
+                ],
+                "_roden_neighborhood_service_area": [
+                    "Serving Little River, Calabash area, Longs, Wampee, and surrounding communities in northern Horry County near the North Carolina border."
+                ],
+                "_roden_neighborhood_population": [
+                    "~4,500"
+                ],
+                "_roden_neighborhood_court": [
+                    "Horry County Circuit Court (15th Judicial Circuit)"
+                ],
+                "_roden_neighborhood_h1": [
+                    "Personal Injury Lawyer Serving Little River, SC"
+                ],
+                "_roden_neighborhood_priority": [
+                    "P2"
+                ],
+                "_roden_faqs": [
+                    "a:3:{i:0;a:2:{s:8:\"question\";s:74:\"I was in an accident near the SC/NC border — which state’s laws apply?\";s:6:\"answer\";s:339:\"The state where the accident physically occurred determines which laws apply. If the accident happened on the South Carolina side of the border, South Carolina’s 3-year statute of limitations and modified comparative fault rules apply, even if you are a North Carolina resident. Our attorneys can help determine the correct jurisdiction.\";}i:1;a:2:{s:8:\"question\";s:46:\"Where is the nearest hospital to Little River?\";s:6:\"answer\";s:236:\"McLeod Seacoast Hospital at 4000 Highway 9 East in Little River is the nearest full-service hospital with a 24-bed emergency department. Grand Strand Health is also building a new standalone ER in Little River, expected to open in 2026.\";}i:2;a:2:{s:8:\"question\";s:53:\"Does Roden Law handle cases in northern Horry County?\";s:6:\"answer\";s:193:\"Yes. Our attorneys serve all of Horry County, including Little River, Longs, Wampee, and communities near the North Carolina border. All cases are filed in Horry County Circuit Court in Conway.\";}}"
+                ],
+                "_yoast_wpseo_title": [
+                    "Little River Personal Injury Lawyer | Roden Law | Free Consult"
+                ],
+                "_yoast_wpseo_metadesc": [
+                    "Injured in Little River? Roden Law handles accident cases on Hwy 17, Hwy 9 & Sea Mountain Hwy. Serving northern Horry County. Free consultation."
+                ],
+                "_roden_jurisdiction": [
+                    "SC"
+                ],
+                "_roden_author_attorney": [
+                    "3732"
+                ],
+                "_roden_sol_sc": [
+                    "S.C. Code § 15-3-530"
+                ]
+            }
+        },
+        {
+            "ID": 3821,
+            "post_title": "Murrells Inlet",
+            "post_name": "murrells-inlet",
+            "post_type": "location",
+            "post_status": "publish",
+            "post_parent": 3601,
+            "post_date_gmt": "2026-03-03 19:32:50",
+            "permalink": "https://rodenlaw.com/locations/south-carolina/myrtle-beach/murrells-inlet/",
+            "redirects_to": "/locations/south-carolina/myrtle-beach/",
+            "post_content": "<p>Murrells Inlet — celebrated as the Seafood Capital of South Carolina — is home to Roden Law’s Grand Strand office at 631 Bellamy Ave., Suite C-B. This unincorporated community of approximately 10,000 residents sits at the border of Horry and Georgetown counties, with Tidelands Waccamaw Community Hospital providing local emergency care.</p>\n\n<p>US-17 through Murrells Inlet is lined with restaurants, marinas, and tourist attractions that generate heavy turning traffic and pedestrian activity. The MarshWalk boardwalk area is a particular concern for pedestrian safety during evening hours. As the home office for Roden Law’s Myrtle Beach operations, we are deeply familiar with the roads, businesses, and accident patterns of Murrells Inlet. Call (843) 612-1980 for an immediate consultation.</p>",
+            "post_excerpt": "",
+            "meta": {
+                "_roden_is_neighborhood": [
+                    "1"
+                ],
+                "_roden_parent_office_key": [
+                    "myrtle-beach"
+                ],
+                "_roden_neighborhood_roads": [
+                    "US-17 Business through Murrells Inlet carries heavy traffic between the Grand Strand and Pawleys Island, with numerous restaurant and marina driveways creating turning-movement conflicts. The US-17 Bypass runs parallel and its interchanges with local roads see frequent crashes at high speeds. The MarshWalk area generates concentrated pedestrian traffic, especially on weekend evenings during the warmer months."
+                ],
+                "_roden_neighborhood_hospitals": [
+                    "Tidelands Waccamaw Community Hospital (Level IV Trauma Center) — 4070 Hwy 17 Bypass S, Murrells Inlet, SC 29576 — (843) 652-1000"
+                ],
+                "_roden_neighborhood_landmarks": [
+                    "MarshWalk, Huntington Beach State Park, Brookgreen Gardens, Tidelands Waccamaw Community Hospital, Wacca Wache Marina"
+                ],
+                "_roden_neighborhood_service_area": [
+                    "Serving Murrells Inlet, the MarshWalk area, Wacca Wache, Burgess, and surrounding communities along the South Strand."
+                ],
+                "_roden_neighborhood_population": [
+                    "~10,000 (unincorporated)"
+                ],
+                "_roden_neighborhood_court": [
+                    "Horry County Circuit Court / Georgetown County Court of Common Pleas"
+                ],
+                "_roden_neighborhood_h1": [
+                    "Personal Injury Lawyer in Murrells Inlet, SC"
+                ],
+                "_roden_neighborhood_priority": [
+                    "P2"
+                ],
+                "_roden_faqs": [
+                    "a:3:{i:0;a:2:{s:8:\"question\";s:55:\"Is Murrells Inlet in Horry County or Georgetown County?\";s:6:\"answer\";s:356:\"Murrells Inlet straddles the Horry County/Georgetown County border. Most of the developed area is in Horry County, but some portions fall within Georgetown County. The county where your accident occurred determines where your lawsuit is filed — either Horry County Circuit Court or Georgetown County Court of Common Pleas. Our attorneys practice in both.\";}i:1;a:2:{s:8:\"question\";s:66:\"I slipped and fell at a MarshWalk restaurant — what should I do?\";s:6:\"answer\";s:393:\"Report the incident to the restaurant management immediately and ask them to create an incident report. Photograph the hazardous condition that caused your fall. Seek medical attention even if your injuries seem minor. South Carolina premises liability law requires businesses to maintain reasonably safe conditions for visitors. Contact Roden Law at (843) 612-1980 for a free case evaluation.\";}i:2;a:2:{s:8:\"question\";s:54:\"How far is Roden Law from Tidelands Waccamaw Hospital?\";s:6:\"answer\";s:255:\"Our Murrells Inlet office at 631 Bellamy Ave. is approximately 5 minutes from Tidelands Waccamaw Community Hospital. If you’ve been treated for accident injuries at Tidelands Waccamaw, you can visit our office for a free case review at your convenience.\";}}"
+                ],
+                "_yoast_wpseo_title": [
+                    "Murrells Inlet Personal Injury Lawyer | Roden Law | Local Office"
+                ],
+                "_yoast_wpseo_metadesc": [
+                    "Roden Law’s office is located in Murrells Inlet. We handle car, truck & slip-and-fall cases in the Seafood Capital of SC. Free consultation."
+                ],
+                "_roden_jurisdiction": [
+                    "SC"
+                ],
+                "_roden_author_attorney": [
+                    "3732"
+                ],
+                "_roden_sol_sc": [
+                    "S.C. Code § 15-3-530"
+                ]
+            }
+        },
+        {
+            "ID": 3847,
+            "post_title": "Red Bank",
+            "post_name": "red-bank",
+            "post_type": "location",
+            "post_status": "publish",
+            "post_parent": 3600,
+            "post_date_gmt": "2026-03-03 20:09:09",
+            "permalink": "https://rodenlaw.com/locations/south-carolina/columbia/red-bank/",
+            "redirects_to": "/locations/south-carolina/columbia/",
+            "post_content": "<p>Red Bank is an unincorporated community of approximately 10,900 residents in southern Lexington County that experienced a 13.6% population increase from 2010 to 2020. The community sits along the US-1 corridor, which carries commuter traffic between the rural southern portion of the county and the West Columbia/Columbia urban core. As residential development pushes southward, the contrast between higher-speed rural roads and growing suburban traffic creates dangerous conditions.</p>\n\n<p>Roden Law serves Red Bank residents from our Columbia office and handles cases in Lexington County Circuit Court. Call (803) 219-2816 for a free consultation.</p>",
+            "post_excerpt": "",
+            "meta": {
+                "_roden_is_neighborhood": [
+                    "1"
+                ],
+                "_roden_parent_office_key": [
+                    "columbia"
+                ],
+                "_roden_neighborhood_roads": [
+                    "US-1 (Augusta Highway) through Red Bank carries heavy commuter traffic connecting southern Lexington County to West Columbia and Columbia. Old Barnwell Road is a rural-to-suburban corridor that has seen increased accident rates as residential development adds traffic volumes. Edmund Highway intersects with US-1 and handles traffic from the Gaston and Pelion areas. The two-lane rural roads in the Red Bank area create dangerous speed differentials when faster through traffic meets slower local traffic."
+                ],
+                "_roden_neighborhood_hospitals": [
+                    "Lexington Medical Center — 2720 Sunset Blvd, West Columbia, SC 29169 — (803) 791-2000"
+                ],
+                "_roden_neighborhood_landmarks": [
+                    "Congaree National Park (nearby), Red Bank community centers, Lexington County agricultural lands"
+                ],
+                "_roden_neighborhood_service_area": [
+                    "Serving Red Bank, Edmund, Swansea, Gaston, and surrounding southern Lexington County communities."
+                ],
+                "_roden_neighborhood_population": [
+                    "~10,900 (unincorporated CDP)"
+                ],
+                "_roden_neighborhood_court": [
+                    "Lexington County Circuit Court (11th Judicial Circuit)"
+                ],
+                "_roden_neighborhood_h1": [
+                    "Personal Injury Lawyer Serving Red Bank, SC"
+                ],
+                "_roden_neighborhood_priority": [
+                    "P2"
+                ],
+                "_roden_faqs": [
+                    "a:3:{i:0;a:2:{s:8:\"question\";s:48:\"Where is the nearest emergency room to Red Bank?\";s:6:\"answer\";s:244:\"Lexington Medical Center in West Columbia is the nearest major hospital, approximately 15-20 minutes north on US-1. For life-threatening injuries, Prisma Health Richland Hospital in downtown Columbia has the region's only Level I Trauma Center.\";}i:1;a:2:{s:8:\"question\";s:61:\"How long do I have to file a claim after a Red Bank accident?\";s:6:\"answer\";s:178:\"South Carolina allows 3 years from the date of the accident to file a personal injury lawsuit (S.C. Code § 15-3-530). Contact Roden Law promptly to ensure evidence is preserved.\";}i:2;a:2:{s:8:\"question\";s:63:\"Does Roden Law handle rural road accidents in Lexington County?\";s:6:\"answer\";s:296:\"Yes. Our attorneys handle accidents on all road types throughout Lexington County, including rural highways, two-lane roads, and interstate corridors. Rural road accidents often involve unique factors like limited sight lines, speed differentials, and agricultural equipment. Call (803) 219-2816.\";}}"
+                ],
+                "_yoast_wpseo_title": [
+                    "Red Bank SC Personal Injury Lawyer | Roden Law | Free Consult"
+                ],
+                "_yoast_wpseo_metadesc": [
+                    "Injured in Red Bank? Roden Law handles accident cases near US-1, Old Barnwell Rd & Edmund Hwy. Free consultation. No fees unless we win."
+                ],
+                "_roden_jurisdiction": [
+                    "SC"
+                ],
+                "_roden_author_attorney": [
+                    "3732"
+                ],
+                "_roden_sol_sc": [
+                    "S.C. Code § 15-3-530"
+                ]
+            }
+        },
+        {
+            "ID": 3853,
+            "post_title": "Lugoff",
+            "post_name": "lugoff",
+            "post_type": "location",
+            "post_status": "publish",
+            "post_parent": 3600,
+            "post_date_gmt": "2026-03-03 20:10:21",
+            "permalink": "https://rodenlaw.com/locations/south-carolina/columbia/lugoff/",
+            "redirects_to": "/locations/south-carolina/columbia/",
+            "post_content": "<p>Lugoff is an unincorporated community of approximately 7,400 residents in western Kershaw County, serving as a bedroom community for Columbia commuters traveling US-1. The corridor between Lugoff and Columbia carries daily commuter volumes that strain the two-lane and transitional road segments. Accidents along US-1 often involve speed differentials between highway-speed through traffic and slower local traffic accessing commercial developments.</p>\n\n<p>Roden Law handles personal injury cases for Lugoff residents, with cases filed in Kershaw County Circuit Court. Our Columbia office on Sumter Street is conveniently located for Kershaw County clients. Call (803) 219-2816 for a free consultation.</p>",
+            "post_excerpt": "",
+            "meta": {
+                "_roden_is_neighborhood": [
+                    "1"
+                ],
+                "_roden_parent_office_key": [
+                    "columbia"
+                ],
+                "_roden_neighborhood_roads": [
+                    "US-1 (Jefferson Davis Highway) through Lugoff carries heavy commuter traffic connecting Kershaw County to Columbia. US-601 intersects US-1 and handles traffic toward Camden and points north. The transition from rural highway speeds to the commercial Lugoff corridor creates dangerous speed differentials. The US-1/US-601 intersection is a high-volume crossing with turning-movement conflicts."
+                ],
+                "_roden_neighborhood_hospitals": [
+                    "MUSC Health Kershaw Medical Center — 1315 Roberts St, Camden, SC 29020 — (803) 432-4311\nPrisma Health Richland Hospital (Level I Trauma) — 5 Richland Medical Park Dr, Columbia, SC 29203 — (803) 434-7000"
+                ],
+                "_roden_neighborhood_landmarks": [
+                    "Lugoff-Elgin community area, Fort Jackson (nearby), Wateree River corridor"
+                ],
+                "_roden_neighborhood_service_area": [
+                    "Serving Lugoff, Elgin, Camden, Blaney, and surrounding Kershaw County communities."
+                ],
+                "_roden_neighborhood_population": [
+                    "~7,400 (unincorporated CDP)"
+                ],
+                "_roden_neighborhood_court": [
+                    "Kershaw County Circuit Court"
+                ],
+                "_roden_neighborhood_h1": [
+                    "Personal Injury Lawyer Serving Lugoff, SC"
+                ],
+                "_roden_neighborhood_priority": [
+                    "P3"
+                ],
+                "_roden_faqs": [
+                    "a:3:{i:0;a:2:{s:8:\"question\";s:70:\"My accident happened in Lugoff — which county court handles my case?\";s:6:\"answer\";s:178:\"Lugoff is in Kershaw County, so personal injury lawsuits are filed in Kershaw County Circuit Court. Roden Law's attorneys serve Kershaw County residents from our Columbia office.\";}i:1;a:2:{s:8:\"question\";s:40:\"Where is the nearest hospital to Lugoff?\";s:6:\"answer\";s:239:\"MUSC Health Kershaw Medical Center in Camden is the closest hospital with emergency services. For severe trauma, Prisma Health Richland Hospital in Columbia is the closest Level I Trauma Center, approximately 30 minutes southwest via US-1.\";}i:2;a:2:{s:8:\"question\";s:59:\"How long do I have to file a claim after a Lugoff accident?\";s:6:\"answer\";s:151:\"South Carolina's 3-year statute of limitations applies (S.C. Code § 15-3-530). Contact Roden Law promptly to protect your rights. Call (803) 219-2816.\";}}"
+                ],
+                "_yoast_wpseo_title": [
+                    "Lugoff SC Personal Injury Lawyer | Roden Law | Free Consult"
+                ],
+                "_yoast_wpseo_metadesc": [
+                    "Injured in Lugoff? Roden Law handles accident cases near US-1 & US-601 in Kershaw County. Free consultation. No fees unless we win."
+                ],
+                "_roden_jurisdiction": [
+                    "SC"
+                ],
+                "_roden_author_attorney": [
+                    "3732"
+                ],
+                "_roden_sol_sc": [
+                    "S.C. Code § 15-3-530"
+                ]
+            }
+        },
+        {
+            "ID": 3864,
+            "post_title": "St. Simons Island",
+            "post_name": "st-simons-island",
+            "post_type": "location",
+            "post_status": "publish",
+            "post_parent": 3598,
+            "post_date_gmt": "2026-03-03 20:35:58",
+            "permalink": "https://rodenlaw.com/locations/georgia/darien/st-simons-island/",
+            "redirects_to": "/locations/georgia/darien/",
+            "post_content": "<p>St. Simons Island is one of Georgia's four Golden Isles and home to approximately 15,000 year-round residents, with population surging during peak tourism months. The island's unique transportation environment — where golf carts share roads with motor vehicles, cyclists, and pedestrians — creates accident patterns distinct from mainland communities. The F.J. Torras Causeway, the island's only mainland connection, is a critical bottleneck where crashes can strand thousands of residents and visitors.</p>\n\n<p>Bicycle and pedestrian accidents are disproportionately common on St. Simons, particularly along Frederica Road, Demere Road, and the beachfront areas. Golf cart accidents, while often dismissed as minor, can cause serious injuries when golf carts collide with motor vehicles traveling at highway speeds. Roden Law's Darien office serves St. Simons Island residents and visitors who are injured in accidents throughout the Golden Isles. Our attorneys handle all types of personal injury cases filed in Glynn County Superior Court. Call (912) 303-5850 for a free consultation.</p>",
+            "post_excerpt": "",
+            "meta": {
+                "_roden_is_neighborhood": [
+                    "1"
+                ],
+                "_roden_parent_office_key": [
+                    "darien"
+                ],
+                "_roden_neighborhood_roads": [
+                    "The F.J. Torras Causeway connecting St. Simons Island to the mainland is the single access road for approximately 15,000 residents and tens of thousands of annual visitors, creating severe congestion during peak tourist season and dangerous conditions when accidents occur with no alternate route available. Frederica Road, the main north-south artery through the island, carries mixed traffic including golf carts, bicycles, pedestrians, and motor vehicles — a combination that produces frequent collision types uncommon elsewhere. Demere Road near the intersection with Frederica Road is the island's busiest commercial corridor where tourist traffic, residential traffic, and commercial deliveries converge at multiple signalized intersections. Kings Way near the Sea Island Road intersection sees dangerous turning conflicts as vehicles access the Pier Village, resorts, and the Sea Island causeway. Ocean Boulevard along the beachfront area draws heavy pedestrian and bicycle traffic that regularly conflicts with motor vehicles during summer months."
+                ],
+                "_roden_neighborhood_hospitals": [
+                    "Southeast Georgia Health System — Immediate Care, St. Simons Island — 3025 Shrine Rd, St. Simons Island, GA 31522 — (912) 466-5800 (urgent care; not a full hospital)\nSoutheast Georgia Health System — Brunswick Campus — 2415 Parkwood Dr, Brunswick, GA 31520 — (912) 466-7000 (nearest full hospital, approx. 15 min via Torras Causeway)"
+                ],
+                "_roden_neighborhood_landmarks": [
+                    "St. Simons Lighthouse & Museum (1810), Fort Frederica National Monument, Christ Church (1820), Pier Village, Neptune Park & Pool, Bloody Marsh Battle Site, Massengale Park Beach, St. Simons Island Land Trust trails, Sea Island (adjacent), King and Prince Resort, The Lodge at Sea Island Golf Club"
+                ],
+                "_roden_neighborhood_service_area": [
+                    "Serving St. Simons Island, East Beach, North End, Pier Village, Retreat, Harrington, Epworth-by-the-Sea, and adjacent Sea Island and Little St. Simons Island communities."
+                ],
+                "_roden_neighborhood_population": [
+                    "~15,000 (CDP)"
+                ],
+                "_roden_neighborhood_court": [
+                    "Glynn County Superior Court (Brunswick Judicial Circuit)"
+                ],
+                "_roden_neighborhood_h1": [
+                    "Personal Injury Lawyer Serving St. Simons Island, GA"
+                ],
+                "_roden_neighborhood_priority": [
+                    "P1"
+                ],
+                "_roden_faqs": [
+                    "a:4:{i:0;a:2:{s:8:\"question\";s:65:\"What are the most common types of accidents on St. Simons Island?\";s:6:\"answer\";s:403:\"St. Simons Island sees a higher-than-average rate of bicycle accidents, pedestrian accidents, and golf cart collisions compared to mainland communities. The island's narrow roads, shared vehicle-golf cart traffic, heavy tourist bicycle rentals, and congested village areas create unique hazards. Motor vehicle crashes on the Torras Causeway and at the Frederica/Demere intersection are also very common.\";}i:1;a:2:{s:8:\"question\";s:77:\"Can I file a personal injury claim if I was hit by a golf cart on St. Simons?\";s:6:\"answer\";s:387:\"Yes. Golf cart operators in Georgia are subject to the same rules of negligence as motor vehicle operators. If a golf cart driver's carelessness caused your injuries, you may be entitled to compensation for medical expenses, lost wages, and pain and suffering. Georgia law allows golf cart operation on certain public roads, and operators must exercise due care to avoid injuring others.\";}i:2;a:2:{s:8:\"question\";s:47:\"Which hospital is closest to St. Simons Island?\";s:6:\"answer\";s:319:\"Southeast Georgia Health System has an Immediate Care facility on St. Simons Island at 3025 Shrine Road for urgent but non-life-threatening injuries. For emergency or serious trauma, the Brunswick Campus at 2415 Parkwood Drive is the nearest full-service hospital, approximately 15 minutes away via the Torras Causeway.\";}i:3;a:2:{s:8:\"question\";s:72:\"How does Roden Law handle accident cases for St. Simons Island visitors?\";s:6:\"answer\";s:369:\"If you were injured on St. Simons Island while visiting from out of state, you still have the right to file a personal injury claim in Georgia. Our Darien office handles cases for both residents and visitors throughout the Golden Isles. Georgia's statute of limitations gives you 2 years to file, and our attorneys can manage your case remotely if you've returned home.\";}}"
+                ],
+                "_yoast_wpseo_title": [
+                    "St. Simons Island Personal Injury Lawyer | Roden Law | Free Consult"
+                ],
+                "_yoast_wpseo_metadesc": [
+                    "Injured on St. Simons Island, GA? Roden Law handles car, bicycle, pedestrian & golf cart accident cases. Serving the Golden Isles from our Darien office. Free consultation."
+                ],
+                "_roden_jurisdiction": [
+                    "GA"
+                ],
+                "_roden_author_attorney": [
+                    "3729"
+                ],
+                "_roden_sol_ga": [
+                    "O.C.G.A. § 9-3-33"
+                ]
+            }
+        },
+        {
+            "ID": 3870,
+            "post_title": "Jekyll Island",
+            "post_name": "jekyll-island",
+            "post_type": "location",
+            "post_status": "publish",
+            "post_parent": 3598,
+            "post_date_gmt": "2026-03-03 20:37:25",
+            "permalink": "https://rodenlaw.com/locations/georgia/darien/jekyll-island/",
+            "redirects_to": "/locations/georgia/darien/",
+            "post_content": "<p>Jekyll Island is a Georgia state park barrier island that welcomes over 2.5 million visitors annually while maintaining a small year-round population of approximately 700 residents. The island's unique status as a state-managed property with a single causeway access point creates both transportation bottlenecks and distinctive accident patterns involving bicycles, golf carts, and pedestrians alongside motor vehicles.</p>\n\n<p>Bicycle rentals are enormously popular on Jekyll Island, and the island's multi-use paths frequently intersect with motor vehicle roads, creating collision points that injure tourists and residents every season. With no hospital on the island, all serious injuries require emergency transport across the causeway to Brunswick — making prompt medical attention more difficult to obtain than in mainland communities. Roden Law's Darien office serves Jekyll Island injury victims. Our attorneys handle all types of accident cases filed in Glynn County Superior Court. Call (912) 303-5850 for a free consultation.</p>",
+            "post_excerpt": "",
+            "meta": {
+                "_roden_is_neighborhood": [
+                    "1"
+                ],
+                "_roden_parent_office_key": [
+                    "darien"
+                ],
+                "_roden_neighborhood_roads": [
+                    "The Jekyll Island Causeway (GA-520) is the single access road to the island and carries all vehicle, bicycle, and pedestrian traffic across a narrow marshland bridge with no separation between travel lanes and bicycle/pedestrian paths — crashes on the causeway can strand all island visitors and residents. Beachview Drive loops around the eastern side of the island and is heavily used by cyclists and pedestrians, with motor vehicle conflicts increasing during peak tourist season when rental bicycles flood the road. Riverview Drive along the western shore carries golf cart and motor vehicle traffic past the Jekyll Island Club Hotel and Convention Center. Shell Road and Captain Wylly Road through the island's interior are narrow, winding roads shaded by live oaks where sight-line limitations contribute to intersection crashes. Summer Waves Water Park and the Georgia Sea Turtle Center draw heavy pedestrian traffic across roadways near the island's commercial core."
+                ],
+                "_roden_neighborhood_hospitals": [
+                    "No hospital on Jekyll Island — all serious injuries require transport off-island\nSoutheast Georgia Health System — Brunswick Campus — 2415 Parkwood Dr, Brunswick, GA 31520 — (912) 466-7000 (nearest full hospital, approx. 20 min via Jekyll Island Causeway and US-17)"
+                ],
+                "_roden_neighborhood_landmarks": [
+                    "Jekyll Island Club Hotel National Historic Landmark (site of first transcontinental telephone call, 1915), Georgia Sea Turtle Center, Driftwood Beach, Summer Waves Water Park, Jekyll Island Golf Club (Great Dunes & Oleander courses), Horton House ruins (1743), Jekyll Island Convention Center, Jekyll Island Authority (state-managed island)"
+                ],
+                "_roden_neighborhood_service_area": [
+                    "Serving Jekyll Island, including the Jekyll Island Club Historic District, Beachview, Summer Waves area, and all visitors and residents of the Georgia State Park island."
+                ],
+                "_roden_neighborhood_population": [
+                    "~700 year-round; 2.5M+ annual visitors"
+                ],
+                "_roden_neighborhood_court": [
+                    "Glynn County Superior Court (Brunswick Judicial Circuit)"
+                ],
+                "_roden_neighborhood_h1": [
+                    "Personal Injury Lawyer Serving Jekyll Island, GA"
+                ],
+                "_roden_neighborhood_priority": [
+                    "P1"
+                ],
+                "_roden_faqs": [
+                    "a:4:{i:0;a:2:{s:8:\"question\";s:57:\"What are the most common accident types on Jekyll Island?\";s:6:\"answer\";s:376:\"Bicycle accidents are the most common injury-producing accident type on Jekyll Island, due to the island's heavy rental bicycle traffic and road crossings where multi-use paths intersect with motor vehicle lanes. Golf cart collisions, pedestrian accidents near the commercial core and Driftwood Beach, and motor vehicle crashes on the Jekyll Island Causeway are also frequent.\";}i:1;a:2:{s:8:\"question\";s:67:\"Who is liable if I'm injured on Jekyll Island — a state property?\";s:6:\"answer\";s:475:\"Liability depends on the specific circumstances. If another driver, cyclist, or golf cart operator caused your injury, standard personal injury negligence rules apply under Georgia law. If a defective road condition or dangerous intersection design on the island contributed to your crash, the Jekyll Island Authority — a state entity — may bear responsibility. Georgia's sovereign immunity rules create specific procedural requirements for claims against state entities.\";}i:2;a:2:{s:8:\"question\";s:37:\"Is there a hospital on Jekyll Island?\";s:6:\"answer\";s:391:\"No. Jekyll Island has no hospital or emergency room. All serious injuries require transport off-island via the Jekyll Island Causeway to Southeast Georgia Health System's Brunswick Campus, approximately 20 minutes away. This delay in accessing emergency care makes it especially important to document injuries thoroughly and seek follow-up medical attention after any accident on the island.\";}i:3;a:2:{s:8:\"question\";s:83:\"Can I file a claim if I was injured while visiting Jekyll Island from out of state?\";s:6:\"answer\";s:360:\"Absolutely. If you were injured on Jekyll Island due to another party's negligence, you have the right to file a personal injury claim in Georgia regardless of where you live. Georgia's 2-year statute of limitations applies. Roden Law can manage your case remotely if you've returned home, handling all communications, filings, and negotiations on your behalf.\";}}"
+                ],
+                "_yoast_wpseo_title": [
+                    "Jekyll Island GA Personal Injury Lawyer | Roden Law | Free Consult"
+                ],
+                "_yoast_wpseo_metadesc": [
+                    "Injured on Jekyll Island, GA? Roden Law handles bicycle, golf cart, pedestrian & motor vehicle accident cases on the Golden Isles. Free consultation."
+                ],
+                "_roden_jurisdiction": [
+                    "GA"
+                ],
+                "_roden_author_attorney": [
+                    "3729"
+                ],
+                "_roden_sol_ga": [
+                    "O.C.G.A. § 9-3-33"
+                ]
+            }
+        },
+        {
+            "ID": 3879,
+            "post_title": "Kings Bay",
+            "post_name": "kings-bay",
+            "post_type": "location",
+            "post_status": "publish",
+            "post_parent": 3598,
+            "post_date_gmt": "2026-03-03 20:39:41",
+            "permalink": "https://rodenlaw.com/locations/georgia/darien/kings-bay/",
+            "redirects_to": "/locations/georgia/darien/",
+            "post_content": "<p>Naval Submarine Base Kings Bay is the East Coast home port for the U.S. Navy's fleet of Ohio-class Trident ballistic missile submarines — one of the most strategically important military installations in the country. The base encompasses 16,000 acres and supports over 9,000 military and civilian workers, with approximately 15,000 additional dependents living in surrounding communities.</p>\n\n<p>Military families face unique challenges after car accidents, including navigating the intersection of military benefits and Georgia personal injury law. Accidents near base entrances during shift changes are common, and the area's rapid growth has outpaced road infrastructure. Roden Law's Darien office serves the Kings Bay military community throughout Camden County. Our attorneys understand the specific concerns military families face. Call (912) 303-5850 for a free, confidential case review.</p>",
+            "post_excerpt": "",
+            "meta": {
+                "_roden_is_neighborhood": [
+                    "1"
+                ],
+                "_roden_parent_office_key": [
+                    "darien"
+                ],
+                "_roden_neighborhood_roads": [
+                    "GA-40 Spur from I-95 to Kings Bay Naval Base is the primary commuter route for over 9,000 military and civilian workers, with dangerous congestion during shift changes. The base entrance roads create bottleneck conditions where thousands of vehicles queue during morning and evening commutes, increasing rear-end collision risk. Submarine Veterans Highway connects the base to surrounding residential communities and carries heavy daily traffic. The roads surrounding the base perimeter — including Kings Bay Road and Charlie Smith Sr. Highway — carry mixed military commuter and commercial traffic through residential areas with limited traffic control."
+                ],
+                "_roden_neighborhood_hospitals": [
+                    "Naval Branch Health Clinic Kings Bay (on-base, military families)\nSoutheast Georgia Health System — Camden Campus — 2000 Dan Proctor Dr, St. Marys, GA 31558 — (912) 576-6200 (approx. 10 min)\nUF Health Jacksonville — (904) 244-0411 (Level I Trauma Center, approx. 40 min south)"
+                ],
+                "_roden_neighborhood_landmarks": [
+                    "Naval Submarine Base Kings Bay (16,000 acres, Atlantic Fleet Trident submarine home port, one of the most strategic U.S. military installations), Kings Bay Navy Exchange, MWR facilities, Veterans Park"
+                ],
+                "_roden_neighborhood_service_area": [
+                    "Serving active-duty military personnel, civilian contractors, military families, and veterans in the Kings Bay Naval Submarine Base area of Camden County."
+                ],
+                "_roden_neighborhood_population": [
+                    "~9,000+ military & civilian workforce; 15,000+ dependents"
+                ],
+                "_roden_neighborhood_court": [
+                    "Camden County Superior Court (Brunswick Judicial Circuit)"
+                ],
+                "_roden_neighborhood_h1": [
+                    "Personal Injury Lawyer Serving the Kings Bay Military Community, GA"
+                ],
+                "_roden_neighborhood_priority": [
+                    "P2"
+                ],
+                "_roden_faqs": [
+                    "a:4:{i:0;a:2:{s:8:\"question\";s:71:\"Can active-duty service members file personal injury claims in Georgia?\";s:6:\"answer\";s:310:\"Yes. Active-duty service members injured in off-base accidents due to someone else's negligence have the same right to file personal injury claims as civilians under Georgia law. The 2-year statute of limitations applies. Military service does not waive your right to civil compensation from a negligent party.\";}i:1;a:2:{s:8:\"question\";s:55:\"How does TRICARE interact with a personal injury claim?\";s:6:\"answer\";s:316:\"If TRICARE pays for medical treatment related to your accident injuries, TRICARE has a right of subrogation — meaning they may seek reimbursement from any personal injury settlement you receive. Our attorneys understand how to structure settlements to account for TRICARE's lien while maximizing your net recovery.\";}i:2;a:2:{s:8:\"question\";s:46:\"What if I'm deployed and need to file a claim?\";s:6:\"answer\";s:266:\"The Servicemembers Civil Relief Act (SCRA) provides protections for active-duty military, including the ability to delay civil proceedings during deployment. Our attorneys can initiate your claim, preserve evidence, and manage all proceedings while you are deployed.\";}i:3;a:2:{s:8:\"question\";s:64:\"Where should I go for emergency care after an off-base accident?\";s:6:\"answer\";s:252:\"Southeast Georgia Health System's Camden Campus in St. Marys is the nearest civilian hospital, approximately 10 minutes from the base. For severe trauma, UF Health Jacksonville is approximately 40 minutes south and is the nearest Level I Trauma Center.\";}}"
+                ],
+                "_yoast_wpseo_title": [
+                    "Kings Bay GA Personal Injury Lawyer | Roden Law | Free Consult"
+                ],
+                "_yoast_wpseo_metadesc": [
+                    "Injured near Kings Bay Naval Submarine Base? Roden Law serves military families with car, truck & accident cases in Camden County. Free consultation."
+                ],
+                "_roden_jurisdiction": [
+                    "GA"
+                ],
+                "_roden_author_attorney": [
+                    "3729"
+                ],
+                "_roden_sol_ga": [
+                    "O.C.G.A. § 9-3-33"
+                ]
+            }
+        },
+        {
+            "ID": 3886,
+            "post_title": "Sea Island",
+            "post_name": "sea-island",
+            "post_type": "location",
+            "post_status": "publish",
+            "post_parent": 3598,
+            "post_date_gmt": "2026-03-03 20:41:23",
+            "permalink": "https://rodenlaw.com/locations/georgia/darien/sea-island/",
+            "redirects_to": "/locations/georgia/darien/",
+            "post_content": "<p>Sea Island is one of Georgia's Golden Isles and home to The Cloister — a Forbes Five-Star resort that hosts world leaders, PGA Tour events, and international conferences. The exclusive island community has approximately 250 year-round residents but welcomes thousands of guests annually.</p>\n\n<p>Accidents on Sea Island typically involve golf carts, bicycles, pedestrians, and service vehicles rather than high-speed highway crashes. However, injuries from these incidents can be serious, particularly when golf carts collide with service vehicles or guests are struck while walking. Roden Law's Darien office serves Sea Island and all of Glynn County. Call (912) 303-5850 for a free consultation.</p>",
+            "post_excerpt": "",
+            "meta": {
+                "_roden_is_neighborhood": [
+                    "1"
+                ],
+                "_roden_parent_office_key": [
+                    "darien"
+                ],
+                "_roden_neighborhood_roads": [
+                    "Sea Island Road is the sole access road connecting Sea Island to St. Simons Island, carrying all vehicle traffic across a narrow causeway. The intersection of Sea Island Road with Frederica Road on St. Simons Island is a high-traffic convergence point. Within Sea Island, low-speed roads carry a mix of golf carts, service vehicles, and resort guest traffic with pedestrian crossings throughout the property."
+                ],
+                "_roden_neighborhood_hospitals": [
+                    "Southeast Georgia Health System — Immediate Care, St. Simons Island — (912) 466-5800 (approx. 10 min)\nSoutheast Georgia Health System — Brunswick Campus — (912) 466-7000 (approx. 20 min)"
+                ],
+                "_roden_neighborhood_landmarks": [
+                    "The Cloister at Sea Island (Forbes Five-Star resort), Sea Island Golf Club (host of RSM Classic PGA Tour event), The Lodge at Sea Island, Sea Island Beach Club, Rainbow Island (private island within Sea Island complex)"
+                ],
+                "_roden_neighborhood_service_area": [
+                    "Serving Sea Island residents, resort guests, and staff of the Sea Island resort complex."
+                ],
+                "_roden_neighborhood_population": [
+                    "~250+ (exclusive resort community)"
+                ],
+                "_roden_neighborhood_court": [
+                    "Glynn County Superior Court (Brunswick Judicial Circuit)"
+                ],
+                "_roden_neighborhood_h1": [
+                    "Personal Injury Lawyer Serving Sea Island, GA"
+                ],
+                "_roden_neighborhood_priority": [
+                    "P3"
+                ],
+                "_roden_faqs": [
+                    "a:4:{i:0;a:2:{s:8:\"question\";s:73:\"Can I file an injury claim if I was hurt at a Sea Island resort facility?\";s:6:\"answer\";s:241:\"Yes. If you were injured due to negligent maintenance, unsafe conditions, or another party's carelessness on Sea Island, you may have a premises liability or personal injury claim under Georgia law. The 2-year statute of limitations applies.\";}i:1;a:2:{s:8:\"question\";s:39:\"What hospital is nearest to Sea Island?\";s:6:\"answer\";s:165:\"Southeast Georgia Health System has an urgent care facility on nearby St. Simons Island. The full-service Brunswick Campus hospital is approximately 20 minutes away.\";}i:2;a:2:{s:8:\"question\";s:60:\"Does Georgia law apply to golf cart accidents on Sea Island?\";s:6:\"answer\";s:176:\"Yes. Golf cart operators on Sea Island are subject to Georgia negligence laws. If a golf cart operator's carelessness caused your injuries, you may be entitled to compensation.\";}i:3;a:2:{s:8:\"question\";s:66:\"Can I file a claim if I was visiting Sea Island from out of state?\";s:6:\"answer\";s:153:\"Absolutely. Visitors injured due to negligence in Georgia have the right to file personal injury claims under Georgia law regardless of their home state.\";}}"
+                ],
+                "_yoast_wpseo_title": [
+                    "Sea Island GA Personal Injury Lawyer | Roden Law | Free Consult"
+                ],
+                "_yoast_wpseo_metadesc": [
+                    "Injured on Sea Island, GA? Roden Law handles car, bicycle, golf cart & accident cases on the Golden Isles. Free consultation from our Darien office."
+                ],
+                "_roden_jurisdiction": [
+                    "GA"
+                ],
+                "_roden_author_attorney": [
+                    "3729"
+                ],
+                "_roden_sol_ga": [
+                    "O.C.G.A. § 9-3-33"
+                ]
+            }
+        },
+        {
+            "ID": 3887,
+            "post_title": "Harrietts Bluff",
+            "post_name": "harrietts-bluff",
+            "post_type": "location",
+            "post_status": "publish",
+            "post_parent": 3598,
+            "post_date_gmt": "2026-03-03 20:41:37",
+            "permalink": "https://rodenlaw.com/locations/georgia/darien/harrietts-bluff/",
+            "redirects_to": "/locations/georgia/darien/",
+            "post_content": "<p>Harrietts Bluff is an unincorporated coastal community in Camden County with approximately 2,500 residents, situated between I-95 and the Georgia coast. The community's rural access roads — Harrietts Bluff Road and Dover Bluff Road — were designed for light residential traffic but now serve growing populations, creating hazardous conditions on narrow roads with limited safety infrastructure. Roden Law's Darien office serves Harrietts Bluff and all of Camden County. Call (912) 303-5850 for a free consultation.</p>",
+            "post_excerpt": "",
+            "meta": {
+                "_roden_is_neighborhood": [
+                    "1"
+                ],
+                "_roden_parent_office_key": [
+                    "darien"
+                ],
+                "_roden_neighborhood_roads": [
+                    "Harrietts Bluff Road connects the community to I-95 and US-17 through rural stretches with sharp curves, limited sight lines, and no shoulders. Dover Bluff Road provides additional access through similarly rural conditions. The roads through this area were designed for light residential use but now carry increasing traffic volumes as the region grows."
+                ],
+                "_roden_neighborhood_hospitals": [
+                    "Southeast Georgia Health System — Camden Campus — St. Marys, GA — (912) 576-6200 (approx. 20 min)\nSoutheast Georgia Health System — Brunswick Campus — (912) 466-7000 (approx. 25 min north)"
+                ],
+                "_roden_neighborhood_landmarks": [
+                    "Satilla River, Dover Bluff, Crooked River State Park (nearby), coastal marshlands, Cumberland Island ferry access (nearby St. Marys)"
+                ],
+                "_roden_neighborhood_service_area": [
+                    "Serving Harrietts Bluff, Dover Bluff, Tarboro, and the coastal Camden County communities between I-95 and the coast."
+                ],
+                "_roden_neighborhood_population": [
+                    "~2,500 (CDP)"
+                ],
+                "_roden_neighborhood_court": [
+                    "Camden County Superior Court (Brunswick Judicial Circuit)"
+                ],
+                "_roden_neighborhood_h1": [
+                    "Personal Injury Lawyer Serving Harrietts Bluff, GA"
+                ],
+                "_roden_neighborhood_priority": [
+                    "P3"
+                ],
+                "_roden_faqs": [
+                    "a:4:{i:0;a:2:{s:8:\"question\";s:37:\"What hospital serves Harrietts Bluff?\";s:6:\"answer\";s:151:\"Southeast Georgia Health System's Camden Campus in St. Marys is approximately 20 minutes south. The Brunswick Campus is approximately 25 minutes north.\";}i:1;a:2:{s:8:\"question\";s:66:\"Does Roden Law handle boating accident cases near Harrietts Bluff?\";s:6:\"answer\";s:234:\"Yes. Our attorneys handle boating and watercraft accident cases on the Satilla River, intracoastal waterways, and surrounding coastal waters. Maritime accident claims can involve different liability standards than motor vehicle cases.\";}i:2;a:2:{s:8:\"question\";s:41:\"What court handles Harrietts Bluff cases?\";s:6:\"answer\";s:116:\"Harrietts Bluff is in Camden County, so personal injury cases are filed in Camden County Superior Court in Woodbine.\";}i:3;a:2:{s:8:\"question\";s:35:\"How long do I have to file a claim?\";s:6:\"answer\";s:168:\"Georgia's statute of limitations is 2 years (O.C.G.A. § 9-3-33). Maritime claims may have different deadlines. Contact us promptly to determine which timeline applies.\";}}"
+                ],
+                "_yoast_wpseo_title": [
+                    "Harrietts Bluff GA Personal Injury Lawyer | Roden Law | Free Consult"
+                ],
+                "_yoast_wpseo_metadesc": [
+                    "Injured in Harrietts Bluff, GA? Roden Law handles car, truck & boating accident cases in Camden County near I-95 & the Satilla River. Free consultation."
+                ],
+                "_roden_jurisdiction": [
+                    "GA"
+                ],
+                "_roden_author_attorney": [
+                    "3729"
+                ],
+                "_roden_sol_ga": [
+                    "O.C.G.A. § 9-3-33"
+                ]
+            }
+        }
+    ]
+}
