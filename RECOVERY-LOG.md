@@ -369,6 +369,28 @@ the edge cache in front of the site serves rendered pages for up to 600 seconds.
 sweep run inside that window shows the retired links still present (52 hits across 8
 pages here, 0 on a cache-busted fetch). Sweep after the cache has turned over, or bust it.
 
+### The six root-level city pages — decided 2026-09-19
+
+Greenville, Spartanburg and Florence × car accident / workers' compensation, created
+2026-06-30 as pages on the statewide-pillar template alongside the PI landing pages. No
+office in any of the three cities; the `/locations/` pages for the same towns went in batch
+(b) under rule 4. These sat outside every earlier batch because they are pages at the site
+root, not a custom post type. Search Console, 16 months: **one click between the six, on
+2,322 impressions.**
+
+The open question was paid traffic. Checked 2026-09-19 across all four Roden Law ad
+accounts (two search, two Local Services): 540 non-removed ads' final URLs, sitelink and
+promotion assets, page-feed assets, the one Performance Max campaign (paused), campaign
+tracking templates, and every landing page with paid clicks between 2026-06-21 and
+2026-09-18. **Zero references.** Paid traffic lands on the statewide
+`/south-carolina-car-accident-lawyer` page (1,273 clicks in 90 days) and the Columbia
+hub (576), neither of which any batch has touched.
+
+Pre-flight on prod: zero inbound links, zero see-also references, zero children, zero nav
+menu items, no Spanish twins, no hard-coded references in the theme or on the statewide
+page. Target is the practice pillar. Expected after: indexable 981 → 975, location-
+targeted 250 → 244, **doorway ratio 25.5% → 25.0%.**
+
 ### End-state arithmetic
 
 | Scope | Now | After definite removals | If all EVALUATE also go |

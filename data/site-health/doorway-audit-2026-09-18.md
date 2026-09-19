@@ -664,3 +664,11 @@ Step 3: the last 47 office-city intersections (#143). Re-measured from the live 
 **250 of 981 indexable URLs, 25.5%**. The city × practice layer no longer exists. Floor
 violations unchanged at 83, all earning posts and resources. Half a point from the ceiling;
 the 6 legacy root city pages (step 4) take it to 25.0% exactly, pending a Google Ads check.
+
+## Google Ads check for the six root city pages (2026-09-19)
+
+All four Roden Law ad accounts queried through the Ads API: 540 ads' final and mobile URLs,
+sitelink and promotion assets, page-feed assets, Performance Max (one campaign, paused),
+campaign URL templates, and 27 distinct paid landing pages from the last 90 days. None
+references any of the six. Paid traffic lands on `/south-carolina-car-accident-lawyer`
+(1,273 clicks) and `/locations/south-carolina/columbia/` (576). Cleared for a 301.

@@ -1315,7 +1315,8 @@ function roden_phase1_removed_urls() {
         roden_evaluate_location_urls(),
         roden_zero_click_intersection_urls(),
         roden_zero_click_blog_urls(),
-        roden_earning_intersection_urls()
+        roden_earning_intersection_urls(),
+        roden_root_city_page_urls()
     );
 }
 
@@ -1971,6 +1972,34 @@ function roden_earning_intersection_urls() {
         '/wrongful-death-lawyers/columbia-sc/'                => '/practice-areas/wrongful-death-lawyers/',
         '/wrongful-death-lawyers/darien-ga/'                  => '/practice-areas/wrongful-death-lawyers/',
         '/wrongful-death-lawyers/myrtle-beach-sc/'            => '/practice-areas/wrongful-death-lawyers/',
+    );
+}
+
+/**
+ * The six root-level city pages for Greenville, Spartanburg and Florence —
+ * retired 2026-09-19.
+ *
+ * Created 2026-06-30 as WordPress pages on the statewide-pillar template,
+ * alongside the PI landing pages, for three cities with no office. The
+ * /locations/ pages for the same towns went in batch (b) on 2026-08-21 under
+ * plan rule 4; these are the same targeting through a different URL, and sat
+ * outside every earlier batch because they are pages at the site root rather
+ * than a custom post type. Search Console, 16 months to 2026-09-15: one click
+ * between the six, on 2,322 impressions. Google Ads, all four Roden Law
+ * accounts, checked 2026-09-19: no ad, sitelink, page feed, Performance Max
+ * campaign or 90-day paid landing page references any of them. Owner-approved
+ * 2026-09-19. Evidence: data/site-health/doorway-audit-2026-09-18.md.
+ *
+ * Target is the practice pillar the slug names, as for the intersections.
+ */
+function roden_root_city_page_urls() {
+    return array(
+        '/florence-sc-car-accident-lawyer/'            => '/practice-areas/car-accident-lawyers/',
+        '/florence-sc-workers-compensation-lawyer/'    => '/practice-areas/workers-compensation-lawyers/',
+        '/greenville-sc-car-accident-lawyer/'          => '/practice-areas/car-accident-lawyers/',
+        '/greenville-sc-workers-compensation-lawyer/'  => '/practice-areas/workers-compensation-lawyers/',
+        '/spartanburg-sc-car-accident-lawyer/'         => '/practice-areas/car-accident-lawyers/',
+        '/spartanburg-sc-workers-compensation-lawyer/' => '/practice-areas/workers-compensation-lawyers/',
     );
 }
 
