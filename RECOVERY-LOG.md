@@ -339,6 +339,36 @@ children. All 22 pillar targets verified 200. 47 triage rows KEEP → REMOVE.
 Expected after: indexable 1,028 → 981, location-targeted 297 → 250. **Doorway ratio
 28.9% → 25.5%.**
 
+### Applied 2026-09-19 — the last 47 intersections
+
+Shipped end to end: redirects deployed in #143, relink applied, posts trashed, caches
+flushed, verified after deletion.
+
+| | Removed | Relinked | Verified |
+|---|---:|---|---|
+| The last 47 intersections | 47 practice_area (44 EN, 3 ES) | 317 links / 231 posts | 47/47 flat + 44/44 EN nested, single-hop 301 → 200 |
+
+Sitemaps: practice_area **276 → 229**, indexable **1,028 → 981**. `post_modified` untouched
+on the relinked posts. Live JSON-LD guard PASS. `content/meta.json` regenerated,
+`_count` 865 → 818. Production trash audited: 47 trashed today, exactly the batch; no
+published page shares a slug with any of them, so the #142 twin defect cannot recur here.
+
+**The city × practice layer is gone.** 176 intersections existed on 2026-09-17; 0 remain.
+What is left under `/{practice}-lawyers/` is the sub-type pages, which are not
+location-targeted.
+
+**Doorway ratio as site-health measures it: 28.9% → 25.5%** (250 of 981); granularity
+floor unchanged at 83. The 250 still counted: 83 sub-municipal posts and resources that
+earn clicks, 110 blog posts and resources at the municipality level, the 44 location hubs
+and their 6 Spanish twins, the 6 legacy root city pages, and one classifier false positive.
+Half a point from the ceiling: the 6 root pages take it to 25.0% exactly, and every
+non-location page the reference layer adds moves it further.
+
+**Cache note for the verification habit.** The hub and pillar grids self-heal on trash, but
+the edge cache in front of the site serves rendered pages for up to 600 seconds. A template
+sweep run inside that window shows the retired links still present (52 hits across 8
+pages here, 0 on a cache-busted fetch). Sweep after the cache has turned over, or bust it.
+
 ### End-state arithmetic
 
 | Scope | Now | After definite removals | If all EVALUATE also go |
@@ -365,6 +395,7 @@ into 8 city-tier towns and 109 nested municipalities; see the recommendation in
 | 2026-08-25 | **(c)** practice micro-permutations | 1,529 | 1,518 | 11 | **COMPLETE.** Relink applied (51 links, 42 posts, `post_modified` preserved), redirects live, 11 posts trashed, caches flushed. Verified after deletion: 11/11 single-hop 301 flat **and** nested; zero remaining inbound body links; practice_area sitemap 415 → 404. Backups: `batch-c-relink-2026-08-25.json`, `batch-c-micro-permutations-2026-08-25.json` — the latter is also Study #1's source text. |
 | 2026-09-18 | **EVALUATE** the 13 rule-4 survivors | 1,230 | 1,217 | 13 | **COMPLETE.** Redirects deployed (#141), relink applied (11 links, 5 posts, all to Ladson, `post_modified` preserved), 13 posts trashed, caches flushed. Verified after deletion: 13/13 single-hop 301 → 200; location sitemap 57 → 44; live JSON-LD guard PASS. Backups: `evaluate-locations-relink-2026-09-18.json`, `evaluate-locations-2026-09-18.json`. |
 | 2026-09-18 | **Zero-click** intersections (129) + sub-municipal posts (60) | 1,217 | 1,028 | 189 | **COMPLETE.** Redirects deployed (#142), relink applied (263 links, 120 posts, `post_modified` preserved), 189 posts trashed, caches flushed. Verified after deletion: 189/189 flat single-hop 301 → 200, 93/93 EN nested forms likewise; the ES nested form never existed (404 on a surviving ES intersection too, zero GSC rows). practice_area sitemap 405 → 276, post 486 → 426. Live JSON-LD guard PASS. Backups: `zero-click-relink-2026-09-18.json`, `zero-click-pages-2026-09-18.json`. |
+| 2026-09-19 | **The last 47** intersections (rule 6 closed) | 1,028 | 981 | 47 | **COMPLETE.** Redirects deployed (#143), relink applied (317 links, 231 posts, `post_modified` preserved), 47 posts trashed, caches flushed. Verified after deletion: 47/47 flat and 44/44 EN nested single-hop 301 → 200; the two Spanish twins #142 had broken now redirect in one hop. practice_area sitemap 276 → 229. Live JSON-LD guard PASS. No published page shares a slug with the 47; none misroutes. Backups: `earning-intersections-relink-2026-09-19.json`, `earning-intersections-2026-09-19.json`. |
 
 ### Batch (c) — two things the plan did not predict
 

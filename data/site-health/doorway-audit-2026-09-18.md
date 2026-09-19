@@ -657,3 +657,10 @@ trash on production): the 129 zero-click intersections and the 60 zero-click sub
 posts. Re-measured from the live sitemap: **297 of 1,028 indexable URLs, 28.9%**, floor
 violations 143 → 83, all of them posts and resources that earn clicks. Evidence:
 `docs/gsc-evidence-2026-09-18.md`. Records: `RECOVERY-LOG.md`, `docs/backups/zero-click-*.json`.
+
+## Applied 2026-09-19, third batch
+
+Step 3: the last 47 office-city intersections (#143). Re-measured from the live sitemap:
+**250 of 981 indexable URLs, 25.5%**. The city × practice layer no longer exists. Floor
+violations unchanged at 83, all earning posts and resources. Half a point from the ceiling;
+the 6 legacy root city pages (step 4) take it to 25.0% exactly, pending a Google Ads check.
