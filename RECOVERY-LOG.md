@@ -470,6 +470,30 @@ treating a bicycle or e-bike helmet violation as evidence of negligence, while t
 motorcycle statute is silent. The Georgia draft now states both; its remaining open tags are
 mopeds, scooters, ATVs and golf carts.
 
+### The two helmet pages published — 2026-09-19
+
+Owner considered both drafts reviewed and asked for publication. Before anything moved:
+every `[VERIFY — attorney]` tag was resolved in the drafts — the Georgia moped, scooter, ATV
+and golf-cart rows, which no one had traced, were **cut** rather than published untraced; the
+South Carolina claims, all traced to scstatehouse.gov by the writer, kept their citations
+and lost their markers; the motorcycle admissibility question stays framed as a question for
+the rider's attorney. Ten South Carolina sections joined the Verified table with the owner's
+sign-off. "Last reviewed" set to 2026-09-19 on both, by the owner's word this time rather
+than by a seeder stamp.
+
+Published through `bin/en-seed-resource-page.php` (payloads in `research/guides/seed-*-helmet-laws.json`,
+converter `bin/build-helmet-seeds.py`): **post 6312 `/resources/georgia-helmet-laws/`** (Eric
+Roden, `georgia-only`) and **post 6313 `/resources/south-carolina-helmet-laws/`** (Graeham C.
+Gillin, `south-carolina-only`). Every seeder guard passed on dry run: attorney ID resolves to
+the named attorney, takeaways and FAQs in meta not body, and the jurisdiction gate — the
+Georgia page carries no `S.C. Code §` and the South Carolina page no `O.C.G.A. §`. Verified
+live: both 200, FAQPage schema present, `lastReviewed` 2026-09-19 in schema, cross-links
+resolve both ways, zero tag leaks, both in the resource sitemap. Live JSON-LD guard PASS.
+`content/meta.json` regenerated, `_count` 812 → 814.
+
+**Doorway ratio as site-health measures it: 25.0% → 24.97%** (244 of 977). Under the
+ceiling; the check passes. From 40.6% on 2026-09-17.
+
 ### End-state arithmetic
 
 | Scope | Now | After definite removals | If all EVALUATE also go |

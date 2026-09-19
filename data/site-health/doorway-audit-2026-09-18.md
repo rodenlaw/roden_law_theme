@@ -683,3 +683,13 @@ in the toolkit takes the figure to 24.9% with no content change.
 
 Week in summary: 40.6% on 2026-09-17 → 25.0% on 2026-09-19, 255 pages retired across five
 batches (#141, #142, #143, #144, plus the applied commits), all on Search Console evidence.
+
+## Under the ceiling — 2026-09-19
+
+Two statewide resource pages published: `/resources/georgia-helmet-laws/` (post 6312) and
+`/resources/south-carolina-helmet-laws/` (post 6313), neither location-targeted. Re-measured
+from the live sitemap: **244 of 977 indexable URLs, 24.97%**. The site-health check passes on
+`pct <= max` for the first time since it was added. 40.6% on 2026-09-17 → 24.97% on
+2026-09-19: 255 pages retired on Search Console evidence, two added. The `dock-marina-injury`
+classifier false positive is still worth fixing in the toolkit; it is now margin rather than
+the deciding factor.

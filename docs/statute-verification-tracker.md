@@ -11,13 +11,15 @@ a statute is verified.
 
 | | Statutes | Page-citations |
 |---|---:|---:|
-| Verified against primary text | **80** | **2,555** |
+| Verified against primary text | **90** | **2,555** |
 | Not yet verified | 198 | 407 |
-| Total cited | 278 | 2,962 |
+| Total cited | 288 | 2,962 |
 
-*2026-09-19: six Georgia sections verified in the helmet pass. Three of them (`40-6-301`,
-`40-6-302`, `40-6-303`) are not yet cited anywhere on the site — verified ahead of first use
-for the Georgia helmet page — so "Total cited" now counts them as cited-and-verified.*
+*2026-09-19: sixteen sections verified in the helmet pass — six Georgia (codes.findlaw.com)
+and ten South Carolina (scstatehouse.gov, read by the SC writer, owner sign-off the same
+day). Thirteen of them were not cited anywhere on the site before the two helmet pages
+published; they were verified ahead of first use, and the pages now cite them. Page-citation
+counts will catch up on the next full pass.*
 
 By page-citations that is **86%** of the site's statutory exposure, on
 27% of the distinct statutes. The citations are heavily concentrated:
@@ -153,6 +155,13 @@ instances named no statute at all.
 | `GA 40-6-301` | 0 | 2026-09-19 helmet pass — e-bike operator has a bicycle operator's rights and duties |
 | `GA 40-6-302` | 0 | 2026-09-19 helmet pass — labelling; same equipment as bicycles; Class III speedometer |
 | `GA 40-6-303` | 0 | 2026-09-19 helmet pass — (b) no operator under 15 on Class III; (c)(1) every Class III operator and passenger wears a helmet; (c)(5) not evidence of negligence |
+| `SC 56-5-3670`, `56-5-3680` | 0 | 2026-09-19 helmet pass (SC writer, scstatehouse.gov t56c005; owner sign-off 2026-09-19) — goggles or face shield for operators under 21; wind-screen exception |
+| `SC 56-5-3700` | 0 | 2026-09-19 helmet pass — helmet/eye-protection violation: misdemeanor, up to $100 or 30 days |
+| `SC 56-5-3520` | 0 | 2026-09-19 helmet pass — electric-assist bicycle ridden under the bicycle rules |
+| `SC 56-1-10(29)` | 0 | 2026-09-19 helmet pass — "electric-assist bicycle": ≤ 750 W, under 20 mph |
+| `SC 56-2-3070` | 0 | 2026-09-19 helmet pass (t56c002) — (C) moped operator or passenger under 21 wears a helmet; (G) misdemeanor, up to $200 or 30 days |
+| `SC 50-26-30`, `50-26-60`, `50-26-70` | 0 | 2026-09-19 helmet pass (t50c026) — ATV riders 15 and younger: FMVSS 218 helmet and eye protection; $50–$200; farming, hunting, supervised private-land exceptions |
+| `SC 56-5-6540(C)` | 0 | 2026-09-19 helmet pass — seat-belt violation is not negligence per se and not admissible in a civil action (cited for contrast only; there is no helmet equivalent) |
 
 ## Not yet verified — top 30 by exposure
 

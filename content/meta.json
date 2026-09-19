@@ -7,7 +7,7 @@
         "post",
         "page"
     ],
-    "_count": 812,
+    "_count": 814,
     "posts": {
         "/": {
             "type": "page",
@@ -27162,6 +27162,45 @@
                 "_roden_translation_es": "/es/resources/georgia-car-accident-settlement-value/"
             }
         },
+        "/resources/georgia-helmet-laws/": {
+            "type": "resource",
+            "status": "publish",
+            "title": "Georgia Helmet Laws: Who Has to Wear One, and What It Means for Your Injury Claim",
+            "excerpt": "Georgia requires a helmet for every motorcycle rider and every passenger, at any age, under O.C.G.A. § 40-6-315. Here is what the statute actually says, and what helmet use does and does not decide in an injury claim.",
+            "meta": {
+                "_roden_author_attorney": "Eric Roden",
+                "_roden_faqs": [
+                    {
+                        "question": "Does Georgia require motorcycle helmets for adults?",
+                        "answer": "Yes. Georgia requires a helmet for every motorcycle operator and every passenger, at any age, under O.C.G.A. § 40-6-315. There is no adult exemption and no partial rule tied to experience, insurance or license class, which is what makes Georgia a universal helmet state — a requirement the Georgia Governor's Office of Highway Safety records as unchanged since 1969."
+                    },
+                    {
+                        "question": "Can I still recover money if I was not wearing a helmet?",
+                        "answer": "Yes. O.C.G.A. § 51-12-33 lets you recover as long as you are less than 50% at fault, with your award reduced by your share. An insurer may still argue a helmet would have reduced your injuries, so expect the fight to be over fault percentages and medical causation, not over your right to bring a claim."
+                    },
+                    {
+                        "question": "What counts as a legal helmet in Georgia?",
+                        "answer": "An approved helmet. The federal standard behind the DOT certification label is Federal Motor Vehicle Safety Standard No. 218, 49 CFR § 571.218, which sets minimum performance requirements for helmets designed for use by motorcyclists — novelty helmets carry no such certification. Whether a specific helmet satisfies Georgia's approval requirement under § 40-6-315 is a question for your attorney; a DOT-certified helmet is the practical standard riders rely on."
+                    },
+                    {
+                        "question": "Do bicycles and e-bikes have helmet rules in Georgia?",
+                        "answer": "Those vehicles fall outside O.C.G.A. § 40-6-315, which is the motorcycle rule. Bicycles and e-bikes have their own: a rider or passenger under 16 must wear a bicycle helmet on any public road, path, lane or sidewalk (O.C.G.A. § 40-6-296(d)), and because an e-bike rider carries a bicycle rider's duties (O.C.G.A. § 40-6-301), that rule reaches Class I and Class II e-bikes too. A Class III e-bike, the kind whose pedal assistance runs to 28 mph, is stricter: every operator and passenger must wear a helmet at any age, and no one under 15 may operate one (O.C.G.A. § 40-6-303(b)–(c)). Both of those Code sections also say, in so many words, that a helmet violation is not evidence of negligence in a civil case. Mopeds, electric scooters, ATVs and golf carts are governed by other parts of the Code and are outside this page. Either way, the claim proceeds the same way: you pursue the at-fault driver or property owner under Georgia negligence law."
+                    },
+                    {
+                        "question": "How long do I have to file a Georgia motorcycle injury claim?",
+                        "answer": "Two years from the date of the crash, in most cases, under O.C.G.A. § 9-3-33. Claims against a government entity can carry shorter notice deadlines, so the safe assumption is that your window is shorter than you think. Our Georgia filing deadline guide explains how the two-year clock is counted and what pauses it."
+                    },
+                    {
+                        "question": "What does it cost to have Roden Law review my case?",
+                        "answer": "Nothing. Roden Law handles Georgia injury claims on a contingency fee basis, so your case review is free, you pay no upfront fees, and there are no legal fees unless we win your case. The firm has recovered more than $300 million for injured clients."
+                    }
+                ],
+                "_roden_jurisdiction": "georgia-only",
+                "_roden_key_takeaways": "Every motorcycle operator and passenger in Georgia must wear a helmet, at any age — <strong>O.C.G.A. § 40-6-315</strong>. The helmet statute states a traffic duty; it sets no rule about evidence, admissibility or damages in a civil case. You can recover in Georgia as long as you are <strong>less than 50%</strong> at fault — <strong>O.C.G.A. § 51-12-33</strong> — with your award reduced by your share. Insurers use helmet non-use to push a rider's fault percentage upward; that is an adjuster's argument, not a rule the helmet statute imposes. Georgia injury lawsuits generally must be filed within <strong>two years</strong> of the crash — <strong>O.C.G.A. § 9-3-33</strong>. Bicycle riders under 16, and everyone on a Class III e-bike, must wear a bicycle helmet — <strong>O.C.G.A. § 40-6-296(d)</strong> and <strong>§ 40-6-303(c)</strong> — and both sections say a violation is not evidence of negligence.",
+                "_roden_last_reviewed": "2026-09-19",
+                "_roden_meta_description": "Georgia requires a helmet for every motorcycle rider and passenger at any age under O.C.G.A. § 40-6-315. What the statute says — and what it means for your claim."
+            }
+        },
         "/resources/georgia-statute-of-limitations/": {
             "type": "resource",
             "status": "publish",
@@ -28111,6 +28150,45 @@
                 "_roden_key_takeaways": "South Carolina follows modified comparative negligence with a 51% bar. You can recover compensation as long as you are less than 51% at fault for your own injuries, but your award is reduced by your percentage of fault. If you are 51% or more at fault, you recover nothing. For example, on a $300,000 case, being 20% at fault leaves you $240,000, while 51% fault leaves you $0. Insurance companies routinely try to inflate your fault percentage to cut or eliminate your payout, which is why how fault is assigned has a direct dollar impact on your case.",
                 "_roden_meta_description": "South Carolina is a modified comparative negligence state with a 51% bar: you can recover if you are less than 51% at fault, but your award drops by your fault share.",
                 "_roden_translation_es": "/es/resources/south-carolina-comparative-negligence/"
+            }
+        },
+        "/resources/south-carolina-helmet-laws/": {
+            "type": "resource",
+            "status": "publish",
+            "title": "South Carolina Helmet Laws: Who Has to Wear One, and What It Means for Your Injury Claim",
+            "excerpt": "South Carolina requires a helmet only for operators and passengers under 21 on a two-wheeled motorized vehicle (S.C. Code § 56-5-3660). Here is the rule by vehicle type, and what a missing helmet does — and does not — do to an injury claim.",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Do I have to wear a helmet to ride a motorcycle in South Carolina?",
+                        "answer": "Only if you are under 21. S.C. Code § 56-5-3660 makes it unlawful for anyone under 21 to operate or ride upon a two-wheeled motorized vehicle without a Department of Public Safety approved helmet, so a 19-year-old passenger must wear one even when the rider is 30 and need not. Riders 21 and older may legally ride bare-headed statewide."
+                    },
+                    {
+                        "question": "Can I still recover damages if I was not wearing a helmet?",
+                        "answer": "Yes — riding bare-headed at 21 or older violates no South Carolina law, and § 56-5-3660 addresses only who must wear a helmet and the penalty. South Carolina uses modified comparative negligence, so you recover as long as you are less than 51% at fault (Nelson v. Concrete Supply Co.). An insurer may still argue a missing helmet worsened head injuries — an argument answered with medical and crash evidence."
+                    },
+                    {
+                        "question": "Do bicycle or e-bike riders have to wear helmets in South Carolina?",
+                        "answer": "South Carolina's bicycle article sets no helmet requirement at any age, and § 56-5-3520 makes riders of electric-assist bicycles — capped at 750 watts and under 20 mph — subject to the same rules as bicyclists (§§ 56-5-3520, 56-1-10(29)). See our bicycle accident lawyers and e-bike accident claims pages."
+                    },
+                    {
+                        "question": "Do any South Carolina cities require helmets on electric scooters?",
+                        "answer": "No statewide helmet requirement for stand-up electric scooters appears in South Carolina's motor vehicle code, and municipal ordinances are outside the state code. Treat any blanket claim that \"some cities require helmets\" as unconfirmed until a specific ordinance is produced. Our electric scooter accident claims page explains how liability works."
+                    },
+                    {
+                        "question": "Do children have to wear a helmet on an ATV in South Carolina?",
+                        "answer": "Riders 15 and younger may not operate or ride an ATV unless they wear a safety helmet meeting FMVSS #218 and eye protection, with limited exceptions for farming, hunting and supervised use on private property (§§ 50-26-30(G), 50-26-70). See our ATV and side-by-side accident claims page and our South Carolina personal injury FAQ."
+                    },
+                    {
+                        "question": "What does it cost to talk to a lawyer about a helmet argument?",
+                        "answer": "Nothing. Roden Law offers a free case review and works on contingency — you pay nothing upfront and no legal fees unless we win your case. Call (843) 790-8999 or 1-844-RESULTS, or read more about our motorcycle accident lawyers."
+                    }
+                ],
+                "_roden_jurisdiction": "south-carolina-only",
+                "_roden_key_takeaways": "South Carolina requires helmets only for operators and passengers <strong>under 21</strong> on a two-wheeled motorized vehicle — S.C. Code § 56-5-3660. Riders 21 and older break no South Carolina law by riding without a helmet. Section 56-5-3660 sets who must wear a helmet and the penalty; it says nothing about evidence, fault or damages. South Carolina's bicycle article (S.C. Code §§ 56-5-3410 to 56-5-3530) carries no helmet requirement at any age. You can still recover in South Carolina as long as you are <strong>less than 51%</strong> at fault (<em>Nelson v. Concrete Supply Co.</em>).",
+                "_roden_last_reviewed": "2026-09-19",
+                "_roden_meta_description": "South Carolina requires a helmet only for operators and passengers under 21 on a two-wheeled motorized vehicle (S.C. Code § 56-5-3660). Here is the rule by vehicle type, and what a missing helmet does — and does not — do to an injury claim."
             }
         },
         "/resources/south-carolina-liquor-liability-2026/": {
