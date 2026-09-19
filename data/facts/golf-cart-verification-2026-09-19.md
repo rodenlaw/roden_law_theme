@@ -66,6 +66,32 @@ impressions). Neither exists in WordPress; both are legacy URLs in `inc/legacy-r
 that **301 to the accident pillar**, which does not state the law. The demand the plan measured
 is real, it has been arriving for sixteen months, and it lands on a lawyer page.
 
+## Applied — later on 2026-09-19
+
+Owner asked for the fix. `bin/fix-golf-cart-claims.php`, backup
+`docs/backups/golf-cart-claims-2026-09-19.json`: **15 edits across 9 surfaces on 7 posts**,
+cumulative per surface, each guarded on the exact stored text.
+
+| Post | Surface | Change |
+|---|---|---|
+| 4343 | body | The § 56-2-105 rules list rewritten to § 56-2-90 with its seven rules (permit and insurance, 35 mph roads and the four-mile default, crossing at intersections, 16 and licensed, daylight unless an ordinance permits lit night operation, under-12 belts, local ordinances), the act and date named |
+| 4343 | body | "does not require golf cart owners to carry liability insurance" → the permit requires proof of it (§ 56-2-90(A)) and the operator carries it (§ 56-2-90(B)); the coverage-gap list kept, reframed to unpermitted carts and low limits |
+| 4343 | `_roden_faqs[0]`, `[1]` | Both FAQ answers rewritten to the same rule and the same insurance correction |
+| 4364 | body ×3 | Two § 56-2-105 sentences → § 56-2-90, with the permit and the age; "minors under 15" → under 16 (§ 56-2-90(B)) |
+| 4754 | body ×2, `_roden_faqs[4]` | § 56-2-105 → § 56-2-90, "Ann." dropped per house style |
+| 4804 | body | § 56-2-105 → § 56-2-90, replacement noted |
+| 4738 | body ×2 | § 56-2-100 / § 56-3-115 → § 56-2-90 (golf carts) and § 56-2-100 (low-speed vehicles) |
+| 4185 | body | "no comprehensive statewide golf cart statute" → the statute stated, ordinances placed inside it |
+| 4186 | body | "regulates … through local ordinances" → statewide statute, varied by ordinance |
+
+Verified live after cache flush on all seven pages: no stale citation, no false statement;
+the three remaining mentions of § 56-2-105 are the explanatory "replaced § 56-2-105 in May
+2025" clauses. Sweep of all bodies and all meta: § 56-3-115 zero, the three false phrasings
+zero. Live JSON-LD guard PASS. `_roden_last_refreshed` set; `post_modified` untouched;
+`content/meta.json` regenerated. The pillar's uncited "vary by municipality" sentence (4090)
+and every Georgia golf-cart claim (`O.C.G.A. § 40-6-330`, 25 mph) were left as they were,
+not read in this pass.
+
 ## Recommendation
 
 1. **Remediate the eight divergences first**, as a claim-class pass across body and meta:

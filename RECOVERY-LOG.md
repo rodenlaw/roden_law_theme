@@ -509,6 +509,30 @@ matching in `internal-links`, chain detection in `redirects`, location prefixes 
 **Doorway ratio: 24.97% → 24.87%** (243 of 977); granularity floor 83 → 82. Both numbers
 now describe content only.
 
+### Golf-cart law: a repealed statute cited as current on four pages — 2026-09-19
+
+Verifying the next reference-layer topic (SC golf-cart law, the plan's strongest B3 gap by
+demand) found that `S.C. Code § 56-2-105`, which four live pages cited as current law, was
+**repealed 2025-05-22** by 2025 Act No. 64 §2 and replaced by `§ 56-2-90`. Sixteen months.
+Two more pages cited `§ 56-2-100` (low-speed vehicles) and `§ 56-3-115` (today a hearing-loss
+registration notation) for golf-cart eligibility; two sub-type pages said South Carolina has
+no statewide golf-cart statute; the Charleston island-communities post said golf-cart
+liability insurance is not required (the permit requires proof of it); the Daniel Island post
+put the operator age at 15 (it is 16). Verification: `docs/statute-verification-tracker.md`
+"2026-09-19 golf-cart pass"; record: `data/facts/golf-cart-verification-2026-09-19.md`.
+
+Fixed the same day on the owner's word: 15 edits across 9 surfaces on 7 posts
+(`bin/fix-golf-cart-claims.php`, backup `docs/backups/golf-cart-claims-2026-09-19.json`),
+cumulative per surface, verified live, zero survivals across all bodies and all meta,
+JSON-LD guard PASS. No page retired.
+
+**Two lessons.** A verified section can stop existing — the method now re-reads each
+section's HISTORY line on every pass (tracker watch items). And the two old-site URLs
+`/blog/south-carolina-golf-cart-laws/` and `/blog/myrtle-beach-golf-cart-laws/` earned 194
+clicks over 16 months and 301 to the accident pillar, which does not state the law: the
+reference page `/resources/south-carolina-golf-cart-laws/` should take those redirects when
+it publishes.
+
 ### Helmet citations backfilled — 2026-09-19
 
 With the Georgia sections on the Verified table, the bicycle pillar, the e-bike pillar and the
