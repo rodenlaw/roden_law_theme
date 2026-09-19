@@ -11,9 +11,13 @@ a statute is verified.
 
 | | Statutes | Page-citations |
 |---|---:|---:|
-| Verified against primary text | **74** | **2,552** |
-| Not yet verified | 201 | 410 |
-| Total cited | 275 | 2,962 |
+| Verified against primary text | **80** | **2,555** |
+| Not yet verified | 198 | 407 |
+| Total cited | 278 | 2,962 |
+
+*2026-09-19: six Georgia sections verified in the helmet pass. Three of them (`40-6-301`,
+`40-6-302`, `40-6-303`) are not yet cited anywhere on the site — verified ahead of first use
+for the Georgia helmet page — so "Total cited" now counts them as cited-and-verified.*
 
 By page-citations that is **86%** of the site's statutory exposure, on
 27% of the distinct statutes. The citations are heavily concentrated:
@@ -30,6 +34,7 @@ the 201 unverified statutes average 2.0 pages each, against
 | pass 4 | 18 | **none** |
 | 2026-09-09 | `SC 15-78-50`, `-80`, `-110` re-read | **4 instances on 2 pages** cited § 15-78-50 — a section with no deadline in it — for a two-year notice requirement that is neither two years nor required |
 | 2026-09-08 recheck | `SC 15-38-15` re-read | **31 instances on 23 pages** still cited it for the plaintiff's recovery bar — a class #97 had already corrected |
+| 2026-09-19 helmet pass | `GA 40-6-296`, `40-6-300`, `40-6-301`, `40-6-302`, `40-6-303`, `40-1-1(15.3)` read on codes.findlaw.com (current as of 2024-03-28) | **none** on the sections themselves: the site's uncited bicycle (under 16) and e-bike (Class III all ages, no operator under 15, Class I/II ride as bicycles) statements all match the text. The pass surfaced two evidence bars the site had never stated — § 40-6-296(d)(5) and § 40-6-303(c)(5): a bicycle or e-bike helmet violation "shall not … be considered evidence of negligence or liability". The motorcycle statute has no equivalent. Justia and LegiScan 403; the enrolled act (HB 454, 2019) was not cross-checked. |
 
 **Three of four passes found a live error, and none surfaced from a sweep looking**
 **for something else.**
@@ -142,6 +147,12 @@ instances named no statute at all.
 | `SC 61-2-147` | 1 | earlier PRs (#92–#102, briefs) |
 | `GA 40-6-189` | 1 | earlier PRs (#92–#102, briefs) |
 | `GA 40-6-292` | 1 | 2026-09-03 pass 3 (#109) |
+| `GA 40-6-296` | 1 | 2026-09-19 helmet pass — (d): bicycle helmet, riders and passengers under 16, ANSI/Snell; (d)(5) not evidence of negligence |
+| `GA 40-6-300` | 1 | 2026-09-19 helmet pass — Class I/II/III definitions (20 / 20 / 28 mph) |
+| `GA 40-1-1` (15.3) | 1 | 2026-09-19 helmet pass — "electric assisted bicycle": two or three wheels, operative pedals, motor ≤ 750 W |
+| `GA 40-6-301` | 0 | 2026-09-19 helmet pass — e-bike operator has a bicycle operator's rights and duties |
+| `GA 40-6-302` | 0 | 2026-09-19 helmet pass — labelling; same equipment as bicycles; Class III speedometer |
+| `GA 40-6-303` | 0 | 2026-09-19 helmet pass — (b) no operator under 15 on Class III; (c)(1) every Class III operator and passenger wears a helmet; (c)(5) not evidence of negligence |
 
 ## Not yet verified — top 30 by exposure
 

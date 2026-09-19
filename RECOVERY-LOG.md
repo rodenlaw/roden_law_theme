@@ -461,6 +461,15 @@ under-16, e-bike classes) are flagged for the attorneys, not changed.
 **Carry forward: sweep every meta key, not the list you know.** Start from the postmeta
 table and the search term, not from the field names.
 
+*Later the same day:* the Georgia bicycle and e-bike helmet statutes were traced on
+codes.findlaw.com (Justia and LegiScan 403). Six sections joined the Verified table
+(`docs/statute-verification-tracker.md`, "2026-09-19 helmet pass"): every uncited Georgia
+statement on the live pages matched the text, so nothing more was corrected. The pass did
+surface something the site had never said: `§ 40-6-296(d)(5)` and `§ 40-6-303(c)(5)` bar
+treating a bicycle or e-bike helmet violation as evidence of negligence, while the
+motorcycle statute is silent. The Georgia draft now states both; its remaining open tags are
+mopeds, scooters, ATVs and golf carts.
+
 ### End-state arithmetic
 
 | Scope | Now | After definite removals | If all EVALUATE also go |

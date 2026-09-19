@@ -78,10 +78,19 @@ Uncited but not contradicted by anything verified. Trace or cut before the helme
 the Georgia items could not be traced on 2026-09-19 because every free Georgia code host
 returned 403 or 503.
 
-- Georgia bicycle helmets for riders under 16 (`O.C.G.A. § 40-6-296` cited on 4087; uncited on
-  1859 and 4578).
-- Georgia e-bike helmet rules by class (4578 body, FAQ and `_roden_why_hire`: "Class III all
-  ages, riders 15+, under-16 on Class I/II").
+- ~~Georgia bicycle helmets for riders under 16~~ — **traced 2026-09-19** to `O.C.G.A.
+  § 40-6-296(d)` on codes.findlaw.com (current as of 2024-03-28). The live statements on 4087,
+  1859 and 4578 match the text. Also found: (d)(5), a helmet violation "shall not … be
+  considered evidence of negligence or liability". No live page contradicts it — the pages that
+  say bicycle helmet non-use "may be raised as comparative fault" speak of adults, whom the
+  rule does not reach — but the Georgia draft now states the bar, and it is the reason the
+  bicycle and e-bike pages should not adopt the motorcycle pages' insurer-argument framing
+  for riders under 16.
+- ~~Georgia e-bike helmet rules by class~~ — **traced 2026-09-19** to `§ 40-6-300` (classes),
+  `§ 40-6-301` (bicycle rights and duties), `§ 40-6-303(b)` (no operator under 15 on Class III)
+  and `§ 40-6-303(c)` (every Class III operator and passenger; (c)(5) not evidence of
+  negligence). The 4578 statements match. Citations may be backfilled onto 4087, 1859 and 4578
+  as a follow-up; nothing there is wrong.
 - ATV rental operators "must provide … helmets" (4089): a duty-of-care framing with no statute.
 - The scooter municipal-ordinance claim, now omitted on all three surfaces of 4088: if an
   ordinance exists, cite it and restore.
