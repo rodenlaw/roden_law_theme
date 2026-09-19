@@ -436,6 +436,31 @@ firm, not corrected here. And the lesson for the seeders: **a script that publis
 also write `_roden_last_reviewed`** — the meta-box copy already says "leave blank if no
 review has happened", and the field is what licenses the schema review claim.
 
+### The helmet claim class, and the fifth surface — 2026-09-19
+
+The two helmet-law drafts read the 20 pages carrying helmet claims and found a false
+statement of law on the motorcycle pillar: "Georgia does not require helmets for riders over
+18." § 40-6-315 is universal, and the same page's FAQ and negligence intro said so. A sweep of
+the four known surfaces reported the pillar clean. The sentence was in
+`_roden_common_injuries` — a serialized pillar section none of the sweeps, and not the
+content-meta export, had ever read. A sweep of every post-meta key found 22 helmet rows across
+four such fields. Fourth time a claim has survived on a surface the sweep did not read.
+
+Nine edits across five posts (`bin/fix-helmet-claims.php`, backup
+`docs/backups/helmet-claims-2026-09-19.json`, record
+`data/facts/remediation-2026-09-19-helmet.md`): the false statement corrected; two
+unqualified "no statewide helmet law" sentences on the bicycle pillar qualified to bicycles;
+an unsourced municipal-helmet claim removed from three surfaces of the e-scooter pillar; a
+flat "can be used as evidence of comparative fault" reframed as the insurer's argument on
+two surfaces of a blog post; one age threshold made exact. Verified live, zero survivals
+across all bodies and all meta, JSON-LD guard PASS. `bin/export-content-meta.php` now exports
+`_roden_common_injuries`, `_roden_common_causes`, `_roden_why_hire` and
+`_roden_pillar_negligence_intro`. The Georgia items that could not be traced (bicycle
+under-16, e-bike classes) are flagged for the attorneys, not changed.
+
+**Carry forward: sweep every meta key, not the list you know.** Start from the postmeta
+table and the search term, not from the field names.
+
 ### End-state arithmetic
 
 | Scope | Now | After definite removals | If all EVALUATE also go |

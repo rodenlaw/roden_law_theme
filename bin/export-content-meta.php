@@ -94,6 +94,19 @@ $keys = array(
 	// belongs in the diff.
 	'_roden_key_takeaways',
 
+	// Added 2026-09-19, the FIFTH surface. A false statement of law — "Georgia
+	// does not require helmets for riders over 18" — sat on the motorcycle
+	// pillar in `_roden_common_injuries` while the same page's FAQ and
+	// negligence intro stated the universal rule correctly. A sweep of the four
+	// known surfaces reported the pillar clean; a sweep of every post-meta key
+	// found 22 rows of helmet text across these four fields. They are pillar
+	// sections that render as prose and make legal claims, so they belong here
+	// for the same reason `_roden_key_takeaways` does.
+	'_roden_common_injuries',
+	'_roden_common_causes',
+	'_roden_why_hire',
+	'_roden_pillar_negligence_intro',
+
 	// Glossary definitions, added 2026-09-03 with the Track C bounded test.
 	// They are short, they are prose, and they make STATUTORY claims — the
 	// punitive-damages entry names both the O.C.G.A. and S.C. Code caps. A
