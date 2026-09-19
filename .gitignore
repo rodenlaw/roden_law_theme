@@ -60,6 +60,12 @@ content/meta.*.json
 /data/local-seo/refresh-ledger.json
 /data/local-seo/freshness-log.jsonl
 /data/practice-area-drafts/
+# Published pages keep their draft in history (2026-09-19): the two helmet-law pages.
+!/data/practice-area-drafts/
+/data/practice-area-drafts/*
+!/data/practice-area-drafts/2026-09/
+/data/practice-area-drafts/2026-09/*
+!/data/practice-area-drafts/2026-09/*-helmet-laws.md
 
 # WordPress content export cache used by the toolkit content adapter (regenerable)
 /data/content-cache/

@@ -35,10 +35,16 @@
       },
       "competitors": [
         "Harris Lowry Manton",
-        "Bader Law",
-        "Owens & Mulherin",
         "Farah & Farah",
         "Morgan & Morgan",
+        "Suthers & Harper",
+        "Hasner Law",
+        "The Wilson PC",
+        "Bader Law",
+        "Spiva Law Group",
+        "The Brown Firm",
+        "Kenneth S. Nugent",
+        "Bowen Painter Injury Lawyers",
         "Georgia Auto Law"
       ],
       "note": "Shared market with Georgia Auto Law, also a Blue Sky client, which holds 384 reviews here to Roden's 60."
@@ -57,7 +63,15 @@
         "count": 0,
         "rating": null
       },
-      "competitors": []
+      "competitors": [
+        "Coppage Law Firm",
+        "The Law Offices of Joshua W. Branch",
+        "Farah & Farah",
+        "Whitworth & McLelland",
+        "Wallace Harrell III Law",
+        "Bader Law",
+        "Georgia Auto Law"
+      ]
     },
     {
       "label": "Charleston",
@@ -75,11 +89,15 @@
         "rating": 4.9
       },
       "competitors": [
-        "Goings Law Firm",
-        "TED Law",
-        "Sahn Law Firm",
-        "Pierce, Sloan, Kennedy & Early",
-        "Philip Berlinsky Law"
+        "Steinberg Law Firm",
+        "Joye Law Firm",
+        "Joe Cunningham Law",
+        "John Price Law Firm",
+        "Rosen Law Firm",
+        "Kahn Law Firm",
+        "Thurmond Kirchner & Timbes",
+        "Derrick Law Firm",
+        "Pierce, Sloan, Kennedy & Early"
       ]
     },
     {
@@ -98,8 +116,15 @@
         "rating": 5
       },
       "competitors": [
+        "Steinberg Law Firm",
+        "Joye Law Firm",
+        "The Hartman Law Firm",
+        "Bill Green Law Firm",
         "Philip Berlinsky Law",
-        "Goings Law Firm"
+        "Shelly Leeke Law Firm",
+        "Derrick Law Firm",
+        "Goings Law Firm",
+        "Morgan & Morgan"
       ]
     },
     {
@@ -117,7 +142,17 @@
         "count": 2,
         "rating": 5
       },
-      "competitors": []
+      "competitors": [
+        "Jeffcoat Injury and Car Accident Lawyers",
+        "The Stanley Law Group",
+        "Cavanaugh & Thickens",
+        "Marc Brown Law Firm",
+        "Stewart Law Offices",
+        "Goings Law Firm",
+        "McGowan, Hood, Felder & Phillips",
+        "Joye Law Firm",
+        "Morgan & Morgan"
+      ]
     },
     {
       "label": "Myrtle Beach",
@@ -135,9 +170,15 @@
         "rating": 5
       },
       "competitors": [
+        "Maguire Law Firm",
+        "Joye Law Firm",
+        "Chandler Law Firm",
         "Morris Law Accident Injury Lawyers",
-        "Lofton & Lofton",
-        "Pierce, Sloan, Kennedy & Early"
+        "Sansbury Law Firm",
+        "Yates Attorneys at Law",
+        "Derrick Law Firm",
+        "Wright Injury Law",
+        "Beach Injury Lawyers"
       ],
       "note": "GBP is registered in Murrells Inlet, not Myrtle Beach. Radar tracks whether that costs us the Myrtle Beach map pack and the AI answer."
     }

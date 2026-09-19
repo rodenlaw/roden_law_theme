@@ -37,7 +37,16 @@
             "legaldowntown.com",
             "enjuris.com",
             "lawyers.com"
-          ]
+          ],
+          "firmsNamed": [
+            "Harris Lowry Manton LLP",
+            "Bader Law",
+            "Owens & Mulherin Injury Lawyers",
+            "Farah & Farah",
+            "Morgan & Morgan"
+          ],
+          "firmsDetected": 5,
+          "unconfiguredFirms": []
         },
         {
           "probeId": "hire-generic-city",
@@ -74,7 +83,16 @@
             "lawyers.com",
             "avvo.com",
             "expertise.com"
-          ]
+          ],
+          "firmsNamed": [
+            "Goings Law Firm, LLC",
+            "TED Law",
+            "Philip Berlinsky Law",
+            "Sahn Law Firm",
+            "Pierce, Sloan, Kennedy & Early LLC"
+          ],
+          "firmsDetected": 5,
+          "unconfiguredFirms": []
         },
         {
           "probeId": "hire-generic-city",
@@ -102,7 +120,15 @@
             "superlawyers.com",
             "lawfirmsquare.com",
             "findlaw.com"
-          ]
+          ],
+          "firmsNamed": [
+            "Morris Law Accident Injury Lawyers",
+            "Lofton & Lofton, P.C.",
+            "Pierce, Sloan, Kennedy & Early LLC",
+            "Goings Law Firm"
+          ],
+          "firmsDetected": 4,
+          "unconfiguredFirms": []
         }
       ],
       "summary": "0 for 3. Roden was named in NO AI answer across all three probed markets despite holding offices in each.",

@@ -38,7 +38,7 @@
       "postplanifyGbpId": "bb3eb361-d2e4-419a-af94-7ebaf0c6415f",
       "serviceCounties": ["Chatham", "Bryan", "Effingham", "Liberty", "Bulloch"],
       "highways": ["I-95", "I-16", "Abercorn St"],
-      "competitors": ["Harris Lowry Manton", "Bader Law", "Owens & Mulherin", "Farah & Farah", "Morgan & Morgan", "Georgia Auto Law"],
+      "competitors": ["Harris Lowry Manton", "Farah & Farah", "Morgan & Morgan", "Suthers & Harper", "Hasner Law", "The Wilson PC", "Bader Law", "Spiva Law Group", "The Brown Firm", "Kenneth S. Nugent", "Bowen Painter Injury Lawyers", "Georgia Auto Law"],
       "pipeline": true,
       "radar": true
     },
@@ -52,7 +52,7 @@
       "postplanifyGbpId": "530e12f0-52fe-4a79-9207-c5f1199b0725",
       "serviceCounties": ["McIntosh", "Glynn"],
       "highways": ["I-95", "US-17"],
-      "competitors": [],
+      "competitors": ["Coppage Law Firm", "The Law Offices of Joshua W. Branch", "Farah & Farah", "Whitworth & McLelland", "Wallace Harrell III Law", "Bader Law", "Georgia Auto Law"],
       "pipeline": true,
       "radar": true
     },
@@ -66,7 +66,7 @@
       "postplanifyGbpId": "c79a996c-c52d-48a2-bc8d-2fd108e0f691",
       "serviceCounties": ["Charleston", "Berkeley", "Dorchester"],
       "highways": ["I-26", "I-526", "US-17"],
-      "competitors": ["Goings Law Firm", "TED Law", "Sahn Law Firm", "Pierce, Sloan, Kennedy & Early", "Philip Berlinsky Law"],
+      "competitors": ["Steinberg Law Firm", "Joye Law Firm", "Joe Cunningham Law", "John Price Law Firm", "Rosen Law Firm", "Kahn Law Firm", "Thurmond Kirchner & Timbes", "Derrick Law Firm", "Pierce, Sloan, Kennedy & Early"],
       "pipeline": true,
       "radar": true
     },
@@ -80,7 +80,7 @@
       "postplanifyGbpId": "3a4a2ec0-4274-4217-bfeb-cdbc2ca4188b",
       "serviceCounties": ["Charleston", "Berkeley", "Dorchester"],
       "highways": ["I-26", "I-526", "Rivers Ave"],
-      "competitors": ["Philip Berlinsky Law", "Goings Law Firm"],
+      "competitors": ["Steinberg Law Firm", "Joye Law Firm", "The Hartman Law Firm", "Bill Green Law Firm", "Philip Berlinsky Law", "Shelly Leeke Law Firm", "Derrick Law Firm", "Goings Law Firm", "Morgan & Morgan"],
       "pipeline": true,
       "radar": true
     },
@@ -94,7 +94,7 @@
       "postplanifyGbpId": "7e73b2f6-a8f1-4daf-bdf9-df04275e3a10",
       "serviceCounties": ["Richland", "Lexington"],
       "highways": ["I-20", "I-26", "I-77"],
-      "competitors": [],
+      "competitors": ["Jeffcoat Injury and Car Accident Lawyers", "The Stanley Law Group", "Cavanaugh & Thickens", "Marc Brown Law Firm", "Stewart Law Offices", "Goings Law Firm", "McGowan, Hood, Felder & Phillips", "Joye Law Firm", "Morgan & Morgan"],
       "pipeline": true,
       "radar": true
     },
@@ -108,7 +108,7 @@
       "postplanifyGbpId": "b525cde1-0863-419b-ae98-7a41fd388e79",
       "serviceCounties": ["Horry", "Georgetown"],
       "highways": ["US-17", "SC-31", "US-501"],
-      "competitors": ["Morris Law Accident Injury Lawyers", "Lofton & Lofton", "Pierce, Sloan, Kennedy & Early"],
+      "competitors": ["Maguire Law Firm", "Joye Law Firm", "Chandler Law Firm", "Morris Law Accident Injury Lawyers", "Sansbury Law Firm", "Yates Attorneys at Law", "Derrick Law Firm", "Wright Injury Law", "Beach Injury Lawyers"],
       "pipeline": true,
       "radar": true
     }
