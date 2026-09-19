@@ -765,8 +765,11 @@ function roden_get_legacy_redirect_map() {
         '/blog/i-was-in-a-car-accident-should-i-pursue-a-personal-injury-claim/' => '/how-do-i-know-if-i-have-a-personal-injury-case/',
         '/blog/legal-help-shoulder-injuries-after-charleston-car-crash/' => '/car-accident-lawyers/charleston-sc/',
         '/blog/liability-for-backing-up-crashes-in-charleston/' => '/car-accident-lawyers/charleston-sc/',
-        '/blog/myrtle-beach-golf-cart-laws/'                   => '/practice-areas/golf-cart-accident-lawyers/',
-        '/blog/south-carolina-golf-cart-laws/'                 => '/practice-areas/golf-cart-accident-lawyers/',
+        // Repointed 2026-09-19: these two old-site law pages earned 194 clicks over
+        // 16 months while landing on the accident pillar, which does not state the
+        // law. /resources/south-carolina-golf-cart-laws/ (post 6314) does.
+        '/blog/myrtle-beach-golf-cart-laws/'                   => '/resources/south-carolina-golf-cart-laws/',
+        '/blog/south-carolina-golf-cart-laws/'                 => '/resources/south-carolina-golf-cart-laws/',
         '/blog/request-your-free-case-review-today-main_phone_number/' => '/contact/',
         '/blog/sapelo-island-ferry-dock-collapse-causing-fatality-and-serious-injuries/' => '/practice-areas/maritime-injury-lawyers/',
         '/blog/south-carolina-car-accident-settlement-amounts/' => '/blog/average-personal-injury-settlement-amounts/',
