@@ -11,9 +11,13 @@ a statute is verified.
 
 | | Statutes | Page-citations |
 |---|---:|---:|
-| Verified against primary text | **92** | **2,561** |
+| Verified against primary text | **110** | **2,562** |
 | Not yet verified | 196 | 396 |
-| Total cited | 289 | 2,962 |
+| Total cited | 290 | 2,962 |
+
+*2026-09-19, moped pass: eighteen sections verified ahead of first use for the two moped-law
+pages (five Georgia, thirteen South Carolina); `SC 56-2-3010` is now cited on the e-bike
+pillar after its correction.*
 
 *2026-09-19, golf-cart pass: `SC 56-2-100` verified (6 pages, but for the wrong vehicle — see
 the pass log) and `SC 56-2-90` verified ahead of first use. `SC 56-2-105` (5 pages) leaves the
@@ -43,6 +47,7 @@ the 201 unverified statutes average 2.0 pages each, against
 | pass 4 | 18 | **none** |
 | 2026-09-09 | `SC 15-78-50`, `-80`, `-110` re-read | **4 instances on 2 pages** cited § 15-78-50 — a section with no deadline in it — for a two-year notice requirement that is neither two years nor required |
 | 2026-09-08 recheck | `SC 15-38-15` re-read | **31 instances on 23 pages** still cited it for the plaintiff's recovery bar — a class #97 had already corrected |
+| 2026-09-19 moped pass | GA `40-1-1(28)`, `40-1-1(30)`, `40-6-350`, `40-6-351`, `40-6-352`, `40-6-353`, `40-2-20(b)(6)` on codes.findlaw.com (current as of 2024-03-28); SC `56-1-10(26)`, `56-2-3000` to `56-2-3080` on scstatehouse.gov t56c002, and `56-1-1720`, `56-1-1730`, `38-77-30` from the enrolled text of 2017 Act No. 89 (H.3247, eff 2018-11-19) because the Chapter 1 page is too long for the fetcher | **One live error**: the e-bike pillar (4578) said an over-threshold e-bike becomes a moped "requiring title, registration, and insurance"; `§ 56-2-3010` says mopeds are registered but "not required to be titled or insured in this State". Fixed same day (`bin/fix-moped-claims.php`). Only three pages mention mopeds at all. SC `§ 56-5-2930` (DUI) could not be read — the Chapter 5 page truncates before it — so the pages rest on `§ 56-1-10(26)` defining a moped "as a motor vehicle" and do not cite the DUI section. |
 | 2026-09-19 golf-cart pass | `SC 56-2-90`, `56-2-100`, `56-2-105`, `56-3-115` read on scstatehouse.gov; 2025 Act No. 64 (H.3292) read on the bill page | **`§ 56-2-105` was REPEALED 2025-05-22** by Act 64 §2 and replaced by `§ 56-2-90` (Act 64 §1). Four live pages still cite the repealed section as current law (4343, 4364, 4754, 4804). `§ 56-2-100` is the LOW-SPEED VEHICLE section, not a golf-cart one; 4738 cites it and `§ 56-3-115` (today: a deaf/hard-of-hearing registration notation, 2021) for golf-cart eligibility. Two sub-type pages (4185, 4186) say South Carolina has no statewide golf-cart statute. 4343 says SC does not require golf-cart liability insurance; `§ 56-2-90(A)` requires proof of it for the permit. 4364 says the licence rule means "minors under 15" cannot drive; `§ 56-2-90(B)` says at least sixteen. Record: `data/facts/golf-cart-verification-2026-09-19.md`. |
 | 2026-09-19 helmet pass | `GA 40-6-296`, `40-6-300`, `40-6-301`, `40-6-302`, `40-6-303`, `40-1-1(15.3)` read on codes.findlaw.com (current as of 2024-03-28) | **none** on the sections themselves: the site's uncited bicycle (under 16) and e-bike (Class III all ages, no operator under 15, Class I/II ride as bicycles) statements all match the text. The pass surfaced two evidence bars the site had never stated — § 40-6-296(d)(5) and § 40-6-303(c)(5): a bicycle or e-bike helmet violation "shall not … be considered evidence of negligence or liability". The motorcycle statute has no equivalent. Justia and LegiScan 403; the enrolled act (HB 454, 2019) was not cross-checked. |
 
@@ -171,6 +176,19 @@ instances named no statute at all.
 | `SC 50-26-30`, `50-26-60`, `50-26-70` | 0 | 2026-09-19 helmet pass (t50c026) — ATV riders 15 and younger: FMVSS 218 helmet and eye protection; $50–$200; farming, hunting, supervised private-land exceptions |
 | `SC 56-5-6540(C)` | 0 | 2026-09-19 helmet pass — seat-belt violation is not negligence per se and not admissible in a civil action (cited for contrast only; there is no helmet equivalent) |
 | `SC 56-2-90` | 0 | 2026-09-19 golf-cart pass (scstatehouse.gov t56c002; 2025 Act No. 64 §1, eff 2025-05-22) — (A) DMV permit decal + registration, proof of ownership and liability insurance, $5, renew every 5 years or on change of address; (B) operator at least 16 with a valid licence, carrying registration, proof of insurance per § 38-77-140 and licence; (C) municipality/county may by ordinance set hours, methods, locations (only where the limit is ≤ 35 mph), permit night operation with working head- and taillights, designate separated cart paths, and may not require proof of property ownership for a decal; (D) absent an ordinance: daylight only, secondary highway ≤ 35 mph, within 4 miles of the registered address or a gated community's gate, may cross a > 35 mph highway at an intersection; (E) passengers under 12 must wear a fastened safety belt. **Replaces `§ 56-2-105`, repealed by Act 64 §2 the same day.** |
+| `GA 40-1-1(28)`, `(30)` | 0 | 2026-09-19 moped pass — "moped": motor driven cycle, two or three wheels, max two brake horsepower, combustion engine ≤ 50 cc (3.05 cu in), unassisted top speed ≤ 30 mph on level road, automatic drive; "motor driven cycle": motorcycles ≤ 5 bhp and every moped |
+| `GA 40-6-350` | 0 | 2026-09-19 moped pass — moped operator has a vehicle driver's rights and duties, except the headlight/taillight rule of § 40-6-312(e) and the windshield/eye-protection rule of § 40-6-315(b) |
+| `GA 40-6-351` | 0 | 2026-09-19 moped pass — no operator under 15; a valid driver's licence, instruction permit or limited permit of any class required |
+| `GA 40-6-352` | 0 | 2026-09-19 moped pass — every operator AND passenger wears protective headgear meeting the Commissioner of Public Safety's standards; approved motorcycle helmets comply |
+| `GA 40-6-353` | 0 | 2026-09-19 moped pass — DOT commissioner or a local authority may prohibit mopeds on roads in its jurisdiction for safety |
+| `GA 40-2-20(b)(6)` | 0 | 2026-09-19 moped pass — mopeds exempt from registration |
+| `SC 56-1-10(26)` | 0 | 2026-09-19 moped pass — "moped": a cycle "defined as a motor vehicle", ≤ 3 wheels, motor of 50 cc, or electric input over 750 W and not more than 1,500 W |
+| `SC 56-1-1720`, `56-1-1730` | 0 | 2026-09-19 moped pass (2017 Act No. 89 enrolled text) — a valid driver's licence or a moped operator's licence, issued at 15 or older; eligibility "without regard to" any other licence's status; DMV may suspend it only for moped violations |
+| `SC 56-2-3000` | 0 | 2026-09-19 moped pass — carry a valid moped or driver's licence and the moped registration |
+| `SC 56-2-3010` | 1 | 2026-09-19 moped pass — mopeds on public highways registered and licensed like passenger vehicles; **not required to be titled or insured**; exempt from property tax |
+| `SC 56-2-3020` to `56-2-3060`, `56-2-3080` | 0 | 2026-09-19 moped pass — nonresident 180-day rule; application, title on request, fraud penalties; dealers must sell/rent with operable pedals (if fitted), a mirror, head- and running lights, brake lights; $200 / 30 days |
+| `SC 56-2-3070` | 0 | 2026-09-19 moped pass (confirmed the helmet pass) — (A) ride astride a permanent seat; (B) farthest right lane on multilane highways; (C) under 21 wears a § 56-5-3660 helmet; (D) no faster than 35 mph; (E) not on highways posted above 55 mph; (F) headlight and lights on at all times; (G) misdemeanor, $200 / 30 days |
+| `SC 38-77-30` | 0 | 2026-09-19 moped pass (Act 89 text) — mopeds are motor vehicles for uninsured/underinsured motorist coverage purposes only |
 | `SC 56-1-10` (low speed vehicle) | 0 | 2026-09-19 golf-cart pass (SC writer, scstatehouse.gov t56c001; owner sign-off) — four-wheeled motor vehicle, more than 20 and not more than 25 mph in one mile, GVWR under 3,000 lb |
 | `SC 56-2-120` | 0 | 2026-09-19 golf-cart pass (t56c002) — (A) LSVs titled; the State issues no VIN to homemade LSVs or **retrofitted golf carts**, which do not qualify as LSVs; (C) registered, licensed and insured like passenger vehicles |
 | `SC 38-77-140(A)` | 0 | 2026-09-19 golf-cart pass (t38c077) — minimum automobile liability limits $25,000 / $50,000 / $25,000; referenced by § 56-2-90(B)(2) |
