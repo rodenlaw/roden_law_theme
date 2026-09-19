@@ -414,6 +414,28 @@ single-hop 301s verified after deletion, every trashed post recoverable by ID. T
 still counted are the 44 location hubs and their 6 Spanish twins, the 193 blog posts and
 resources with a place in the slug that earn clicks, and the one false positive.
 
+### The two-state guides — record corrected and review closed, 2026-09-19
+
+The content director, planning a third reference-layer page, found that the two two-state
+guides (`/resources/georgia-vs-south-carolina-comparative-negligence/`, post 5352, and
+`/resources/georgia-vs-south-carolina-filing-deadlines/`, post 5353) were **published on
+2026-08-25 at 21:41, the day they were drafted** — not held as drafts, as the October plays
+file and the Q4 strategy both said when written on 2026-09-10. Their `_roden_last_reviewed`
+carried 2026-08-25, the publish minute: a seeder self-stamp, not an attorney's read, on
+pages whose template publishes `lastReviewed` and `reviewedBy` in schema.
+
+The owner confirmed on 2026-09-19 that the attorney review is complete. `_roden_last_reviewed`
+is now 2026-09-19 on both posts, caches flushed. The plays file (`referenceLayer` reason and
+notes, `spanish` reason, evidence E14, and the blocking waits-on item) and the strategy
+(lane table, open items, "what would change this") are corrected to match, each with a note
+saying what they originally said. `validate-plays.mjs` passes.
+
+Two things stand. The guides carry a single attorney author (Eric Roden) where the
+citability standard asks for a GA + SC co-byline; that is an attribution decision for the
+firm, not corrected here. And the lesson for the seeders: **a script that publishes must not
+also write `_roden_last_reviewed`** — the meta-box copy already says "leave blank if no
+review has happened", and the field is what licenses the schema review claim.
+
 ### End-state arithmetic
 
 | Scope | Now | After definite removals | If all EVALUATE also go |

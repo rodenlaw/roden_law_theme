@@ -30,14 +30,14 @@
     },
     "referenceLayer": {
       "on": true,
-      "reason": "Two two-state guides are already seeded as drafts (posts 5352, 5353) with all 24 legal statements individually traced to the SB 68 allowlist or to verified pages, not to the unsigned packs, so finishing them produces no new claim resting on unverified authority. They are statewide /resources/ pages and add no location-targeted URLs while the cull is still working the doorway ratio down.",
+      "reason": "Two two-state guides (posts 5352, 5353) are published and attorney-reviewed as of 2026-09-19, with all 24 legal statements individually traced to the SB 68 allowlist or to verified pages, not to the unsigned packs, so finishing them produces no new claim resting on unverified authority. They are statewide /resources/ pages and add no location-targeted URLs while the cull is still working the doorway ratio down.",
       "evidence": [
         "E5",
         "E11",
         "E13",
         "E14"
       ],
-      "notes": "Scope is bounded: complete attorney review and publish the two drafted guides, and resolve the SS 15-38-15 threshold. No new drafting against the 201 unverified statutes."
+      "notes": "Scope is bounded: the two two-state guides are published and attorney-reviewed (review recorded 2026-09-19); resolve the SS 15-38-15 threshold. No new drafting against the 201 unverified statutes. Correction 2026-09-19: the guides went live on 2026-08-25, the day they were drafted, not held as drafts as this file said when written; the seeder had self-stamped the review date, which has been replaced by the 2026-09-19 review."
     },
     "researchAssets": {
       "on": true,
@@ -51,7 +51,7 @@
     },
     "spanish": {
       "on": false,
-      "reason": "It rides on hyperlocal or the reference layer producing new pages; hyperlocal is off and the reference guides are English drafts still awaiting attorney review, with no Spanish twins planned this month. The /es/ twins are also where legal errors have twice outlived the English fix, so the twin must never lead the original.",
+      "reason": "It rides on hyperlocal or the reference layer producing new pages; hyperlocal is off and the reference guides are English pages with no Spanish twins planned this month. The /es/ twins are also where legal errors have twice outlived the English fix, so the twin must never lead the original.",
       "evidence": [
         "E1",
         "E10",
@@ -222,7 +222,7 @@
     },
     "E14": {
       "source": "RECOVERY-LOG.md 'Two-state guides - drafted 2026-08-25'",
-      "observed": "Two guides (comparative negligence; filing deadlines) are seeded as DRAFTS in /resources/ as posts 5352 and 5353 awaiting attorney review, with 24 legal statements each traced individually to the SB 68 allowlist or to verified pages 5223, 4810 and 4811 - nothing from a secondary summary.",
+      "observed": "Two guides (comparative negligence; filing deadlines) are live in /resources/ as posts 5352 and 5353 (published 2026-08-25; attorney review recorded 2026-09-19; this entry originally read 'seeded as DRAFTS awaiting attorney review', which was wrong when written), with 24 legal statements each traced individually to the SB 68 allowlist or to verified pages 5223, 4810 and 4811 - nothing from a secondary summary.",
       "at": "2026-08-25",
       "path": "RECOVERY-LOG.md"
     },
@@ -258,11 +258,6 @@
     },
     {
       "item": "201 statutes and 410 page-citations not yet verified against primary text. Work down by exposure, not alphabetically - the unverified set averages 2.0 pages each against 34 for the verified set.",
-      "owner": "Eric Roden, Graeham C. Gillin",
-      "blocking": true
-    },
-    {
-      "item": "Attorney review of the two drafted two-state guides (posts 5352, 5353); the reference layer cannot publish without it.",
       "owner": "Eric Roden, Graeham C. Gillin",
       "blocking": true
     },
