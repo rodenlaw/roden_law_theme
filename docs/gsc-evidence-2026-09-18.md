@@ -115,3 +115,73 @@ substantive non-location pages.
   noindex or a new final URL, not a 301. Check the campaigns first.
 - **The truck-corridor resources.** 26 below the floor, but 37 of 38 earn clicks; the
   2026-08-24 pack already settled this band.
+
+## Finding 3 — the 47 intersections that earned a click (2026-09-19)
+
+Held back from #142 for a separate decision because each had at least one click. The
+same 16-month window says the tier fails as a whole, not only at its zero-click end:
+
+**95 clicks on 564,905 impressions. CTR 0.017%**, against the site's 0.12–0.47% at
+matched positions. 28 of the 47 earned exactly one click. The best, Columbia car
+accidents, earned 9 on 55,955 impressions; Charleston car accidents earned 6 on 88,998.
+In the last 90 days the set earned 58 clicks on 335,362 impressions.
+
+Two of the 47 were already unreachable when this was decided: the Spanish twins of two
+English intersections that #142 retired. The theme derives a Spanish intersection's URL
+from its English twin's permalink, so trashing the English page renamed the Spanish URL to
+its `__trashed` form and the real URL 301'd there and on to the pillar in two hops. Both are
+in this batch, which makes the redirect single-hop and then retires them.
+
+**Recommendation — APPROVED 2026-09-19:** retire all 47, 301 to the practice pillar. With
+this the office-city intersection layer is gone; what remains under `/{practice}-lawyers/`
+is the sub-type pages, which are not location-targeted.
+
+| Page | Clicks, 16 mo | Impressions, 16 mo | Clicks, 90 d |
+|---|---:|---:|---:|
+| `/car-accident-lawyers/columbia-sc/` | 9 | 55,955 | 6 |
+| `/medical-malpractice-lawyers/savannah-ga/` | 7 | 39,171 | 4 |
+| `/car-accident-lawyers/charleston-sc/` | 6 | 88,998 | 3 |
+| `/medical-malpractice-lawyers/charleston-sc/` | 6 | 21,464 | 6 |
+| `/medical-malpractice-lawyers/myrtle-beach-sc/` | 4 | 2,763 | 0 |
+| `/workers-compensation-lawyers/myrtle-beach-sc/` | 4 | 11,652 | 3 |
+| `/car-accident-lawyers/darien-ga/` | 3 | 16,342 | 3 |
+| `/car-accident-lawyers/savannah-ga/` | 3 | 89,708 | 1 |
+| `/personal-injury-lawyers/charleston-sc/` | 3 | 21,429 | 3 |
+| `/premises-liability-lawyers/savannah-ga/` | 3 | 5,367 | 1 |
+| `/product-liability-lawyers/columbia-sc/` | 3 | 13,955 | 2 |
+| `/burn-injury-lawyers/columbia-sc/` | 2 | 3,125 | 2 |
+| `/dog-bite-lawyers/columbia-sc/` | 2 | 5,920 | 0 |
+| `/maritime-injury-lawyers/myrtle-beach-sc/` | 2 | 812 | 0 |
+| `/medical-malpractice-lawyers/columbia-sc/` | 2 | 3,487 | 0 |
+| `/nursing-home-abuse-lawyers/savannah-ga/` | 2 | 5,228 | 1 |
+| `/premises-liability-lawyers/darien-ga/` | 2 | 250 | 2 |
+| `/workers-compensation-lawyers/charleston-sc/` | 2 | 36,446 | 1 |
+| `/workers-compensation-lawyers/savannah-ga/` | 2 | 13,042 | 2 |
+| `/bicycle-accident-lawyers/darien-ga/` | 1 | 758 | 0 |
+| `/boating-accident-lawyers/columbia-sc/` | 1 | 14,041 | 0 |
+| `/burn-injury-lawyers/charleston-sc/` | 1 | 1,406 | 1 |
+| `/dog-bite-lawyers/charleston-sc/` | 1 | 17,268 | 1 |
+| `/dog-bite-lawyers/myrtle-beach-sc/` | 1 | 5,157 | 1 |
+| `/dog-bite-lawyers/savannah-ga/` | 1 | 7,221 | 1 |
+| `/electric-scooter-accident-lawyers/myrtle-beach-sc/` | 1 | 410 | 0 |
+| `/es/car-accident-lawyers/north-charleston-sc/` | 1 | 5,156 | 1 |
+| `/es/workers-compensation-lawyers/columbia-sc/` | 1 | 42 | 1 |
+| `/es/workers-compensation-lawyers/savannah-ga/` | 1 | 163 | 1 |
+| `/golf-cart-accident-lawyers/myrtle-beach-sc/` | 1 | 762 | 0 |
+| `/maritime-injury-lawyers/darien-ga/` | 1 | 243 | 1 |
+| `/maritime-injury-lawyers/savannah-ga/` | 1 | 2,707 | 1 |
+| `/medical-malpractice-lawyers/darien-ga/` | 1 | 1,260 | 1 |
+| `/motorcycle-accident-lawyers/columbia-sc/` | 1 | 9,134 | 0 |
+| `/nursing-home-abuse-lawyers/myrtle-beach-sc/` | 1 | 2,297 | 1 |
+| `/pedestrian-accident-lawyers/columbia-sc/` | 1 | 7,210 | 0 |
+| `/personal-injury-lawyers/north-charleston-sc/` | 1 | 137 | 1 |
+| `/premises-liability-lawyers/myrtle-beach-sc/` | 1 | 2,664 | 0 |
+| `/product-liability-lawyers/charleston-sc/` | 1 | 5,884 | 1 |
+| `/slip-and-fall-lawyers/columbia-sc/` | 1 | 4,249 | 0 |
+| `/slip-and-fall-lawyers/savannah-ga/` | 1 | 16,925 | 1 |
+| `/spinal-cord-injury-lawyers/myrtle-beach-sc/` | 1 | 347 | 1 |
+| `/truck-accident-lawyers/columbia-sc/` | 1 | 7,469 | 0 |
+| `/truck-accident-lawyers/savannah-ga/` | 1 | 9,950 | 1 |
+| `/wrongful-death-lawyers/columbia-sc/` | 1 | 4,318 | 0 |
+| `/wrongful-death-lawyers/darien-ga/` | 1 | 382 | 1 |
+| `/wrongful-death-lawyers/myrtle-beach-sc/` | 1 | 2,231 | 1 |

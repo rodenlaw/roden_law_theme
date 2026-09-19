@@ -313,6 +313,32 @@ only a real href (path preceded by a quote or the host), the same forms the reli
 rewrites, so the two cannot disagree. Carry forward: **any path check on this bilingual
 site must anchor the start of the path.**
 
+### The last 47 intersections — decided 2026-09-19
+
+Rule 6 closed. The 47 office-city intersections that survived #142 because they had
+earned a click were measured on the same window: **95 clicks on 564,905 impressions,
+CTR 0.017%**, 28 of them with exactly one click. The tier fails the #68 test as a whole.
+They go, 301 to the practice pillar; with them the city × practice layer is gone entirely.
+Evidence: `docs/gsc-evidence-2026-09-18.md`, Finding 3.
+
+**A defect from #142, found by this batch's inventory.** Two Spanish intersections that
+#142 did not touch (`/es/car-accident-lawyers/north-charleston-sc/`,
+`/es/workers-compensation-lawyers/columbia-sc/`) had become unreachable: the theme builds a
+Spanish intersection's permalink from its English twin's, so trashing the English page
+renamed the Spanish URL to `…__trashed/` and the real URL 301'd there and on to the pillar.
+A full audit of production found exactly the 202 intended posts in the trash and no other
+page misrouting (47 published slug-mates checked, 45 fine). Both twins are in this batch,
+which makes their redirect single-hop at priority 0 and then retires them. **Carry forward:
+never trash an English page whose Spanish twin is meant to stay live; check
+`_roden_translation_es` before any practice-area or blog removal.**
+
+Mechanics as #142, with the two renamed permalinks tolerated by ID. Pre-flight 2026-09-19:
+293 real hrefs across 231 outside-batch posts, zero see-also references, zero published
+children. All 22 pillar targets verified 200. 47 triage rows KEEP → REMOVE.
+
+Expected after: indexable 1,028 → 981, location-targeted 297 → 250. **Doorway ratio
+28.9% → 25.5%.**
+
 ### End-state arithmetic
 
 | Scope | Now | After definite removals | If all EVALUATE also go |

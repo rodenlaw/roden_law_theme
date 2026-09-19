@@ -1314,7 +1314,8 @@ function roden_phase1_removed_urls() {
         roden_dead_location_urls(),
         roden_evaluate_location_urls(),
         roden_zero_click_intersection_urls(),
-        roden_zero_click_blog_urls()
+        roden_zero_click_blog_urls(),
+        roden_earning_intersection_urls()
     );
 }
 
@@ -1894,6 +1895,82 @@ function roden_zero_click_blog_urls() {
         '/es/blog/summerville-i-26-18-wheeler-accident-lawyer-dorchester-county/'                => '/es/practice-areas/truck-accident-lawyers/',
         '/es/blog/tenmile-i-26-best-car-accident-lawyer-north-charleston/'                       => '/es/practice-areas/car-accident-lawyers/',
         '/es/blog/wando-gardens-faber-place-drive-best-car-accident-lawyer-north-charleston/'    => '/es/practice-areas/car-accident-lawyers/',
+    );
+}
+
+/**
+ * The last 47 office-city intersections — retired 2026-09-19.
+ *
+ * What was left of the rule-6 tier after the 129 zero-click pages went (#142).
+ * These earned a click, which is why they were held back a day for a separate
+ * decision. Measured over the same 16 months to 2026-09-15: **95 clicks on
+ * 564,905 impressions, CTR 0.017%**, against the site's 0.12-0.47% at matched
+ * positions. 28 of the 47 earned exactly one click; the best, Columbia car
+ * accidents, earned 9 on 55,955 impressions. The tier fails the #68 test as a
+ * whole, not just at its zero-click end. Owner-approved 2026-09-19. Evidence:
+ * docs/gsc-evidence-2026-09-18.md, Finding 3.
+ *
+ * Two of the 47 are Spanish twins that were already unreachable: the theme
+ * derives a Spanish intersection's URL from its English twin's permalink, so
+ * when #142 trashed the English page WordPress renamed the twin's URL to
+ * `…__trashed` and the real URL 301'd there and on to the pillar in two hops.
+ * Listing them here makes the redirect single-hop at priority 0, and the
+ * removal then retires them. Lesson recorded in RECOVERY-LOG.md: never trash
+ * an English page whose Spanish twin is meant to stay live.
+ *
+ * With this map the office-city intersection layer is gone. What remains
+ * under /{practice}-lawyers/ is the sub-type pages, which are not
+ * location-targeted. Targets are the practice pillars, all 22 verified 200.
+ */
+function roden_earning_intersection_urls() {
+    return array(
+        '/bicycle-accident-lawyers/darien-ga/'                => '/practice-areas/bicycle-accident-lawyers/',
+        '/boating-accident-lawyers/columbia-sc/'              => '/practice-areas/boating-accident-lawyers/',
+        '/burn-injury-lawyers/charleston-sc/'                 => '/practice-areas/burn-injury-lawyers/',
+        '/burn-injury-lawyers/columbia-sc/'                   => '/practice-areas/burn-injury-lawyers/',
+        '/car-accident-lawyers/charleston-sc/'                => '/practice-areas/car-accident-lawyers/',
+        '/car-accident-lawyers/columbia-sc/'                  => '/practice-areas/car-accident-lawyers/',
+        '/car-accident-lawyers/darien-ga/'                    => '/practice-areas/car-accident-lawyers/',
+        '/car-accident-lawyers/savannah-ga/'                  => '/practice-areas/car-accident-lawyers/',
+        '/dog-bite-lawyers/charleston-sc/'                    => '/practice-areas/dog-bite-lawyers/',
+        '/dog-bite-lawyers/columbia-sc/'                      => '/practice-areas/dog-bite-lawyers/',
+        '/dog-bite-lawyers/myrtle-beach-sc/'                  => '/practice-areas/dog-bite-lawyers/',
+        '/dog-bite-lawyers/savannah-ga/'                      => '/practice-areas/dog-bite-lawyers/',
+        '/electric-scooter-accident-lawyers/myrtle-beach-sc/' => '/practice-areas/electric-scooter-accident-lawyers/',
+        '/es/car-accident-lawyers/north-charleston-sc/'       => '/es/practice-areas/car-accident-lawyers/',
+        '/es/workers-compensation-lawyers/columbia-sc/'       => '/es/practice-areas/workers-compensation-lawyers/',
+        '/es/workers-compensation-lawyers/savannah-ga/'       => '/es/practice-areas/workers-compensation-lawyers/',
+        '/golf-cart-accident-lawyers/myrtle-beach-sc/'        => '/practice-areas/golf-cart-accident-lawyers/',
+        '/maritime-injury-lawyers/darien-ga/'                 => '/practice-areas/maritime-injury-lawyers/',
+        '/maritime-injury-lawyers/myrtle-beach-sc/'           => '/practice-areas/maritime-injury-lawyers/',
+        '/maritime-injury-lawyers/savannah-ga/'               => '/practice-areas/maritime-injury-lawyers/',
+        '/medical-malpractice-lawyers/charleston-sc/'         => '/practice-areas/medical-malpractice-lawyers/',
+        '/medical-malpractice-lawyers/columbia-sc/'           => '/practice-areas/medical-malpractice-lawyers/',
+        '/medical-malpractice-lawyers/darien-ga/'             => '/practice-areas/medical-malpractice-lawyers/',
+        '/medical-malpractice-lawyers/myrtle-beach-sc/'       => '/practice-areas/medical-malpractice-lawyers/',
+        '/medical-malpractice-lawyers/savannah-ga/'           => '/practice-areas/medical-malpractice-lawyers/',
+        '/motorcycle-accident-lawyers/columbia-sc/'           => '/practice-areas/motorcycle-accident-lawyers/',
+        '/nursing-home-abuse-lawyers/myrtle-beach-sc/'        => '/practice-areas/nursing-home-abuse-lawyers/',
+        '/nursing-home-abuse-lawyers/savannah-ga/'            => '/practice-areas/nursing-home-abuse-lawyers/',
+        '/pedestrian-accident-lawyers/columbia-sc/'           => '/practice-areas/pedestrian-accident-lawyers/',
+        '/personal-injury-lawyers/charleston-sc/'             => '/practice-areas/personal-injury-lawyers/',
+        '/personal-injury-lawyers/north-charleston-sc/'       => '/practice-areas/personal-injury-lawyers/',
+        '/premises-liability-lawyers/darien-ga/'              => '/practice-areas/premises-liability-lawyers/',
+        '/premises-liability-lawyers/myrtle-beach-sc/'        => '/practice-areas/premises-liability-lawyers/',
+        '/premises-liability-lawyers/savannah-ga/'            => '/practice-areas/premises-liability-lawyers/',
+        '/product-liability-lawyers/charleston-sc/'           => '/practice-areas/product-liability-lawyers/',
+        '/product-liability-lawyers/columbia-sc/'             => '/practice-areas/product-liability-lawyers/',
+        '/slip-and-fall-lawyers/columbia-sc/'                 => '/practice-areas/slip-and-fall-lawyers/',
+        '/slip-and-fall-lawyers/savannah-ga/'                 => '/practice-areas/slip-and-fall-lawyers/',
+        '/spinal-cord-injury-lawyers/myrtle-beach-sc/'        => '/practice-areas/spinal-cord-injury-lawyers/',
+        '/truck-accident-lawyers/columbia-sc/'                => '/practice-areas/truck-accident-lawyers/',
+        '/truck-accident-lawyers/savannah-ga/'                => '/practice-areas/truck-accident-lawyers/',
+        '/workers-compensation-lawyers/charleston-sc/'        => '/practice-areas/workers-compensation-lawyers/',
+        '/workers-compensation-lawyers/myrtle-beach-sc/'      => '/practice-areas/workers-compensation-lawyers/',
+        '/workers-compensation-lawyers/savannah-ga/'          => '/practice-areas/workers-compensation-lawyers/',
+        '/wrongful-death-lawyers/columbia-sc/'                => '/practice-areas/wrongful-death-lawyers/',
+        '/wrongful-death-lawyers/darien-ga/'                  => '/practice-areas/wrongful-death-lawyers/',
+        '/wrongful-death-lawyers/myrtle-beach-sc/'            => '/practice-areas/wrongful-death-lawyers/',
     );
 }
 
