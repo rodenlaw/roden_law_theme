@@ -693,3 +693,9 @@ from the live sitemap: **244 of 977 indexable URLs, 24.97%**. The site-health ch
 2026-09-19: 255 pages retired on Search Console evidence, two added. The `dock-marina-injury`
 classifier false positive is still worth fixing in the toolkit; it is now margin rather than
 the deciding factor.
+
+## Classifier false positive fixed — 2026-09-19
+
+`dock` added to the toolkit classifier's generic-preceder list (`internal-ai-scripts` #53) and
+re-vendored. `/boating-accident-lawyers/dock-marina-injury/` no longer counts. **243 of 977,
+24.87%**; floor violations 82. The ratio now measures content, with no classifier artefact in it.

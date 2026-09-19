@@ -494,6 +494,21 @@ resolve both ways, zero tag leaks, both in the resource sitemap. Live JSON-LD gu
 **Doorway ratio as site-health measures it: 25.0% → 24.97%** (244 of 977). Under the
 ceiling; the check passes. From 40.6% on 2026-09-17.
 
+### The classifier false positive — fixed at the source, 2026-09-19
+
+`/boating-accident-lawyers/dock-marina-injury/`, a practice sub-type, had counted as a
+landmark doorway since the first audit because `dock` was not in the classifier's
+generic-preceder list. Fixed in the toolkit (`internal-ai-scripts` #53, one word) and
+re-vendored here; `vendor.mjs roden --check` passes. Controls: `boat-dock-accident` also
+clears, while `ripley-light-marina-…`, `i-26-truck-accidents-columbia` and the
+`wando-gardens-faber-place-drive-…` slug still classify as places. The re-vendor also
+carried three files the toolkit had moved ahead on since the last vendor (#48: cull-key
+matching in `internal-links`, chain detection in `redirects`, location prefixes in
+`site-urls`), all static-mode paths this WordPress client does not exercise.
+
+**Doorway ratio: 24.97% → 24.87%** (243 of 977); granularity floor 83 → 82. Both numbers
+now describe content only.
+
 ### End-state arithmetic
 
 | Scope | Now | After definite removals | If all EVALUATE also go |
