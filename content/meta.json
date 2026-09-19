@@ -7,7 +7,7 @@
         "post",
         "page"
     ],
-    "_count": 815,
+    "_count": 817,
     "posts": {
         "/": {
             "type": "page",
@@ -24600,7 +24600,7 @@
                     },
                     {
                         "question": "What are the e-bike laws in South Carolina?",
-                        "answer": "South Carolina defines e-bikes under S.C. Code § 56-1-10(29) (H.3174, effective February 3, 2020) with a single definition — no class system. An e-bike must have a motor of 750 watts or less and cannot exceed 20 mph on motor power alone. E-bikes meeting this definition are treated as bicycles. Those exceeding the thresholds may be reclassified as mopeds requiring registration. There is no statewide helmet requirement (S.C. Code § 56-5-3520 applies the bicycle rules, which set none)."
+                        "answer": "South Carolina defines e-bikes under S.C. Code § 56-1-10(29) (H.3174, effective February 3, 2020) with a single definition — no class system. An e-bike must have a motor of 750 watts or less and cannot exceed 20 mph on motor power alone. E-bikes meeting this definition are treated as bicycles. Those exceeding the thresholds may be reclassified as mopeds, which must be registered with the SCDMV (S.C. Code § 56-2-3010). There is no statewide helmet requirement (S.C. Code § 56-5-3520 applies the bicycle rules, which set none)."
                     },
                     {
                         "question": "Can I sue the e-bike manufacturer if the battery caught fire?",
@@ -24630,7 +24630,7 @@
                 "_roden_jurisdiction": "both",
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33",
                 "_roden_sol_sc": "S.C. Code § 15-3-530",
-                "_roden_why_hire": "<p>E-bike accident cases are uniquely complex — liability may involve the driver who struck you, the e-bike manufacturer (especially in battery fire cases), a rental or tour company, or a government entity responsible for dangerous road conditions. Insurance companies routinely blame e-bike riders for traveling too fast or riding where they shouldn't, and an experienced attorney knows how to dismantle these defenses.</p><p>Georgia enacted HB 454 (effective July 1, 2019), creating a three-class e-bike system under <a href=\"https://law.justia.com/codes/georgia/title-40/chapter-6/article-12/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. &sect;&sect; 40-6-300 through 40-6-303</a>. Class I e-bikes are pedal-assist only up to 20 mph. Class II adds a throttle (still 20 mph max). Class III is pedal-assist up to 28 mph. All classes are capped at 750 watts. Georgia requires helmets for all ages on Class III e-bikes and restricts Class III riders to age 15 and older (O.C.G.A. § 40-6-303).</p><p>South Carolina takes a different approach under <a href=\"https://www.scstatehouse.gov/code/t56c001.php\" target=\"_blank\" rel=\"noopener\">S.C. Code &sect; 56-1-10(29)</a> (H.3174, effective February 3, 2020). South Carolina does not use a class system — instead, it defines an e-bike as a bicycle with a motor of 750 watts or less that cannot exceed 20 mph on motor power alone. E-bikes exceeding these thresholds may be reclassified as mopeds requiring registration and insurance. South Carolina has no statewide helmet law for e-bike riders, and riders have the same rights and duties as bicyclists under <a href=\"https://www.scstatehouse.gov/code/t56c005.php\" target=\"_blank\" rel=\"noopener\">S.C. Code &sect; 56-5-3520</a>.</p>"
+                "_roden_why_hire": "<p>E-bike accident cases are uniquely complex — liability may involve the driver who struck you, the e-bike manufacturer (especially in battery fire cases), a rental or tour company, or a government entity responsible for dangerous road conditions. Insurance companies routinely blame e-bike riders for traveling too fast or riding where they shouldn't, and an experienced attorney knows how to dismantle these defenses.</p><p>Georgia enacted HB 454 (effective July 1, 2019), creating a three-class e-bike system under <a href=\"https://law.justia.com/codes/georgia/title-40/chapter-6/article-12/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. &sect;&sect; 40-6-300 through 40-6-303</a>. Class I e-bikes are pedal-assist only up to 20 mph. Class II adds a throttle (still 20 mph max). Class III is pedal-assist up to 28 mph. All classes are capped at 750 watts. Georgia requires helmets for all ages on Class III e-bikes and restricts Class III riders to age 15 and older (O.C.G.A. § 40-6-303).</p><p>South Carolina takes a different approach under <a href=\"https://www.scstatehouse.gov/code/t56c001.php\" target=\"_blank\" rel=\"noopener\">S.C. Code &sect; 56-1-10(29)</a> (H.3174, effective February 3, 2020). South Carolina does not use a class system — instead, it defines an e-bike as a bicycle with a motor of 750 watts or less that cannot exceed 20 mph on motor power alone. E-bikes exceeding these thresholds may be reclassified as mopeds, which must be registered but are not required to be titled or insured (S.C. Code § 56-2-3010). South Carolina has no statewide helmet law for e-bike riders, and riders have the same rights and duties as bicyclists under <a href=\"https://www.scstatehouse.gov/code/t56c005.php\" target=\"_blank\" rel=\"noopener\">S.C. Code &sect; 56-5-3520</a>.</p>"
             }
         },
         "/practice-areas/electric-scooter-accident-lawyers/": {
@@ -27201,6 +27201,45 @@
                 "_roden_meta_description": "Georgia requires a helmet for every motorcycle rider and passenger at any age under O.C.G.A. § 40-6-315. What the statute says — and what it means for your claim."
             }
         },
+        "/resources/georgia-moped-laws/": {
+            "type": "resource",
+            "status": "publish",
+            "title": "Georgia Moped Laws: Who Can Ride, What You Need, and What Happens After a Crash",
+            "excerpt": "Georgia lets you ride a moped at 15 or older with a license of any class, requires headgear on every operator and passenger at any age, and exempts the moped from registration. Here is what each Code section says, and what a moped crash claim looks like in Georgia.",
+            "meta": {
+                "_roden_author_attorney": "Eric Roden",
+                "_roden_faqs": [
+                    {
+                        "question": "Do you need a license to drive a moped in Georgia?",
+                        "answer": "Yes. O.C.G.A. § 40-6-351 requires a driver's license, instruction permit or limited permit, and any class of them satisfies the statute — the section names no motorcycle endorsement. It also bars anyone under 15 from operating a moped, and a suspended license is not a valid one, so confirm your status first."
+                    },
+                    {
+                        "question": "Do you have to register or insure a moped in Georgia?",
+                        "answer": "Georgia exempts mopeds from registration under O.C.G.A. § 40-2-20(b)(6), so that section requires no tag. It says nothing at all about insurance, and no verified Code section states whether a Georgia moped must be insured, so this page states no rule either way. Put that question to a Georgia attorney."
+                    },
+                    {
+                        "question": "Is a helmet required on a moped in Georgia?",
+                        "answer": "Yes, for everyone. O.C.G.A. § 40-6-352 requires the operator and any passenger to wear protective headgear meeting the standards set by the Commissioner of Public Safety, with no age exemption, and an approved motorcycle helmet complies. The rule reaches an adult rider who would be exempt in other states, and it reaches the passenger riding behind you."
+                    },
+                    {
+                        "question": "Can I still recover if I broke a moped rule when I was hit?",
+                        "answer": "Yes, in most cases. Georgia applies modified comparative fault under O.C.G.A. § 51-12-33: you recover as long as you are less than 50% at fault, with your award reduced by your share. Riding without a helmet or a valid license gives the insurer an argument about percentages, answered with crash evidence and medical proof."
+                    },
+                    {
+                        "question": "How long do I have to file a Georgia moped injury claim?",
+                        "answer": "Two years from the date of the crash, in most cases, under O.C.G.A. § 9-3-33. Claims involving a government entity can carry shorter notice deadlines, so treat your window as shorter than you think. Evidence goes quickly in a moped case: the machine is repaired, intersection footage is overwritten, witnesses move on."
+                    },
+                    {
+                        "question": "What does it cost to ask Roden Law about a moped crash?",
+                        "answer": "Nothing. Roden Law reviews Georgia injury claims free of charge and handles them on a contingency fee, so you pay no upfront fees and no legal fees unless we win your case. The firm has recovered more than $300 million for injured clients across 5,000+ cases handled, in Georgia and South Carolina."
+                    }
+                ],
+                "_roden_jurisdiction": "georgia-only",
+                "_roden_key_takeaways": "Anyone 15 or older with a license or permit of any class may ride — <strong>O.C.G.A. § 40-6-351</strong>. Every operator and passenger wears approved headgear at any age — <strong>§ 40-6-352</strong>. Georgia exempts mopeds from registration — <strong>§ 40-2-20(b)(6)</strong>, which says nothing about insurance. A moped has two or three wheels, 2 brake horsepower or less, 50 cc or less, 30 mph — <strong>§ 40-1-1(28)</strong>. A moped operator carries any other Georgia driver's rights and duties — <strong>§ 40-6-350</strong>. File within <strong>two years</strong> — <strong>O.C.G.A. § 9-3-33</strong> — and recover if <strong>less than 50%</strong> at fault — <strong>§ 51-12-33</strong>.",
+                "_roden_last_reviewed": "2026-09-19",
+                "_roden_meta_description": "Georgia moped laws: a license at 15 or older (O.C.G.A. § 40-6-351), a helmet for every rider and passenger (§ 40-6-352), and no registration (§ 40-2-20(b)(6))."
+            }
+        },
         "/resources/georgia-statute-of-limitations/": {
             "type": "resource",
             "status": "publish",
@@ -28262,6 +28301,45 @@
                 "_roden_jurisdiction": "south-carolina-only",
                 "_roden_key_takeaways": "South Carolina's 2025 Act No. 42 (H.3430) took effect 1 January 2026 and applies only to causes of action arising or accruing after that date, so the South Carolina Code now publishes two versions of S.C. Code § 15-38-15 side by side. The fifty-percent threshold in § 15-38-15(A) did not change. What changed is subsection (F): conduct involving alcohol, and gross negligence, no longer fall outside the limit on joint and several liability. In their place the Act created § 61-2-147, under which a drunk driver charged under § 56-5-2930, § 56-5-2933 or § 56-5-2945 is placed on the jury verdict form, and where a verdict is rendered against both that driver and a licensed establishment, the establishment is jointly and severally liable for fifty percent of the plaintiff's actual damages. The Act also inserted one word into § 61-6-2220: an establishment may not knowingly sell alcohol to a person in an intoxicated condition. Licensee insurance under § 61-2-145 is now stated as an annual aggregate with a per-occurrence floor of half that amount, and a new Chapter 3 of Title 61 requires certified alcohol server training. Act 42 did not abolish dram-shop liability and did not change South Carolina's comparative negligence rule.",
                 "_roden_last_reviewed": "2026-08-26"
+            }
+        },
+        "/resources/south-carolina-moped-laws/": {
+            "type": "resource",
+            "status": "publish",
+            "title": "South Carolina Moped Laws: License, Registration, Helmets, and What Happens After a Crash",
+            "excerpt": "South Carolina moped laws require a license at 15 or older and registration with the DMV, but a moped is not required to be titled or insured — S.C. Code §§ 56-1-1720 and 56-2-3010. A helmet is required only under 21. Here is each rule with its section, and how a violation gets used against you after a crash.",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Do you need a license to drive a moped in South Carolina?",
+                        "answer": "Yes. S.C. Code § 56-1-1720(A) requires a valid driver's license or a moped operator's license, which the DMV may issue at 15 or older. Section 56-2-3000 requires you to carry that license and the registration on a public highway."
+                    },
+                    {
+                        "question": "Do mopeds have to be registered and insured in South Carolina?",
+                        "answer": "Registered, yes; insured, no. A moped on a public highway must be registered and licensed with the DMV like a passenger vehicle — S.C. Code § 56-2-3010(A) — but mopeds are \"not required to be titled or insured in this State\" (§ 56-2-3010(C)). They count as motor vehicles for uninsured and underinsured motorist coverage only (§ 38-77-30)."
+                    },
+                    {
+                        "question": "How fast can a moped legally go in South Carolina?",
+                        "answer": "No faster than 35 mph. S.C. Code § 56-2-3070(D) caps moped speed at thirty-five miles per hour, and § 56-2-3070(E) keeps mopeds off any highway posted above fifty-five, though a rider may cross one at an intersection. On a multilane highway the moped must stay in the farthest right lane except to turn left or when that lane is unsafe."
+                    },
+                    {
+                        "question": "Do you have to wear a helmet on a moped in South Carolina?",
+                        "answer": "Only under 21. S.C. Code § 56-2-3070(C) requires a helmet for any moped operator or passenger under twenty-one, meeting the § 56-5-3660 motorcycle standard. At 21 and older a rider may legally ride without one, and neither section makes helmet use a question of fault."
+                    },
+                    {
+                        "question": "How long do I have to file a moped injury lawsuit in South Carolina?",
+                        "answer": "Three years from the date of injury, under S.C. Code § 15-3-530. Waiting costs evidence too, because mopeds get repaired or sold. Fault is decided under Nelson v. Concrete Supply Co.: you recover if you are less than 51% at fault. Our South Carolina personal injury FAQ covers fault and damages."
+                    },
+                    {
+                        "question": "What does it cost to ask a lawyer about a moped crash?",
+                        "answer": "Nothing to ask. Roden Law offers a free case review and works on a contingency fee — you pay nothing upfront and no legal fees unless we win your case. Head injuries are common on these vehicles — see our traumatic brain injury claims page. Call 1-844-RESULTS."
+                    }
+                ],
+                "_roden_jurisdiction": "south-carolina-only",
+                "_roden_key_takeaways": "A moped is \"defined as a motor vehicle\" in South Carolina, so state traffic laws — including DUI — apply — S.C. Code § 56-1-10(26). You may ride at 15 or older with a driver's license or a moped operator's license — S.C. Code § 56-1-1720. Mopeds must be registered like passenger vehicles but are \"not required to be titled or insured\" — S.C. Code § 56-2-3010. A helmet is required for any operator or passenger under 21 — S.C. Code § 56-2-3070(C). A moped may not exceed 35 mph, or use a highway posted above 55 mph — S.C. Code § 56-2-3070(D), (E). File a South Carolina injury lawsuit within three years — S.C. Code § 15-3-530 — and recover if less than 51% at fault (<em>Nelson v. Concrete Supply Co.</em>).",
+                "_roden_last_reviewed": "2026-09-19",
+                "_roden_meta_description": "South Carolina moped laws explained: a license at 15, DMV registration, not titled or insured, helmets under 21, a 35 mph cap — with the statute behind each rule."
             }
         },
         "/resources/south-carolina-motorcycle-accident-settlement-value/": {

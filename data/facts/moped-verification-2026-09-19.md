@@ -59,9 +59,24 @@ The third is the e-bike pillar (4578):
 
 Three edits, three surfaces, one post; verified live; JSON-LD guard PASS.
 
-## The pages
+## The pages — published 2026-09-19
 
-Commissioned as `content-plan/2026-10.md` entries 3a (Georgia, Eric Roden,
-`/resources/georgia-moped-laws/`) and 3b (South Carolina, Graeham C. Gillin,
-`/resources/south-carolina-moped-laws/`), one state per page as the helmet pages were. Both
-slugs are the state name plus the topic. Expected ratio after both: 243 of 980, 24.8%.
+Commissioned as `content-plan/2026-10.md` entries 3a and 3b and published the same day: **post
+6315 `/resources/georgia-moped-laws/`** (Eric Roden, `georgia-only`) and **post 6316
+`/resources/south-carolina-moped-laws/`** (Graeham C. Gillin, `south-carolina-only`), review
+date 2026-09-19 on the owner's word. Both slugs clean in the geo classifier. Seeder guards
+passed; live 200, FAQPage schema, `lastReviewed` in schema, cross-links both ways, both in the
+resource sitemap. Doorway ratio 243 of 980, 24.8%.
+
+**Late correction to the sources note above.** The writer of the South Carolina page reached
+`§ 56-1-1720` on the chapter page itself, and a direct `curl` of the page confirmed it: the
+page is 383 KB and the fetch tool truncates it, but a plain download does not. `§ 56-1-1720(B)`
+adds a rule the enrolled-act reading had not surfaced: a licensed rider under 16 may ride alone
+in daylight only, and at night only with a licensed driver 21 or older with a year's
+experience; (D) makes a violation a misdemeanor at $100, then $200. Both pages state it; the
+tracker row is updated.
+
+Neither writer found a divergence between its page and the e-bike pillar as corrected or the
+state's helmet page. The Georgia writer noted the e-bike pillar's Georgia FAQ reads looser than
+the statute on when an over-threshold e-bike becomes a moped (the definition turns on 2 bhp,
+50 cc and automatic drive, not speed alone); logged here for a later pass, not changed.

@@ -533,6 +533,36 @@ clicks over 16 months and 301 to the accident pillar, which does not state the l
 reference page `/resources/south-carolina-golf-cart-laws/` should take those redirects when
 it publishes.
 
+### The two moped-law pages published — 2026-09-19
+
+The last B3 gap. Owner asked for the full cycle ("do that moped law now"). Eighteen sections
+verified in a day (`docs/statute-verification-tracker.md`, "2026-09-19 moped pass"): the Georgia
+sections on codes.findlaw.com; the South Carolina moped article verbatim on scstatehouse.gov;
+the licence sections first from the enrolled text of 2017 Act No. 89, then verbatim from the
+chapter page by a direct download — the fetch tool truncates that 383 KB page, `curl` does not,
+which is the method note to carry forward. The one section no primary source reachable today
+would yield was South Carolina's DUI statute, so neither page cites it. Record:
+`data/facts/moped-verification-2026-09-19.md`.
+
+Only three live pages mention mopeds. One error: the e-bike pillar said an over-threshold
+e-bike becomes a moped "requiring title, registration, and insurance"; `§ 56-2-3010` says
+mopeds are registered but "not required to be titled or insured". Fixed on three surfaces
+before the pages were written (`bin/fix-moped-claims.php`).
+
+Published, one page per state as the helmet pages were: **post 6315
+`/resources/georgia-moped-laws/`** (Eric Roden — every rider and passenger helmeted, 15 with
+any licence class, exempt from registration, insurance not addressed and not asserted) and
+**post 6316 `/resources/south-carolina-moped-laws/`** (Graeham C. Gillin — licence or moped
+licence at 15, under-16 daylight rule, registered but not titled or insured, under-21 helmet,
+right lane, 35 mph cap, off highways posted above 55). Seeder guards passed; live, FAQPage
+schema, `lastReviewed` 2026-09-19 on the owner's word, cross-links both ways, no divergence
+from the e-bike pillar or the helmet pages. **Doorway ratio 24.85% → 24.80%** (243 of 980).
+
+**The reference layer, end of 2026-09-19:** five statewide pages published this day — GA and
+SC helmet law, SC golf-cart law, GA and SC moped law — every one on statutes verified against
+primary text the same day, with 24 live-page corrections found along the way, four of them
+false statements of law. The B3 list in `KNOWLEDGE-BASE-PLAN-rodenlaw.md` is now clear.
+
 ### The golf-cart reference page published — 2026-09-19
 
 `/resources/south-carolina-golf-cart-laws/` (post 6314), Graeham C. Gillin, `south-carolina-only`,
