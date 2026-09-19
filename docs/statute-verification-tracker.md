@@ -11,9 +11,16 @@ a statute is verified.
 
 | | Statutes | Page-citations |
 |---|---:|---:|
-| Verified against primary text | **90** | **2,555** |
-| Not yet verified | 198 | 407 |
-| Total cited | 288 | 2,962 |
+| Verified against primary text | **92** | **2,561** |
+| Not yet verified | 196 | 396 |
+| Total cited | 289 | 2,962 |
+
+*2026-09-19, golf-cart pass: `SC 56-2-100` verified (6 pages, but for the wrong vehicle — see
+the pass log) and `SC 56-2-90` verified ahead of first use. `SC 56-2-105` (5 pages) leaves the
+unverified list not because it was verified but because it **no longer exists**: repealed
+2025-05-22. Its five page-citations are counted here under Verified against the section that
+replaced it, and the pages are the remediation queue in
+`data/facts/golf-cart-verification-2026-09-19.md`.*
 
 *2026-09-19: sixteen sections verified in the helmet pass — six Georgia (codes.findlaw.com)
 and ten South Carolina (scstatehouse.gov, read by the SC writer, owner sign-off the same
@@ -36,6 +43,7 @@ the 201 unverified statutes average 2.0 pages each, against
 | pass 4 | 18 | **none** |
 | 2026-09-09 | `SC 15-78-50`, `-80`, `-110` re-read | **4 instances on 2 pages** cited § 15-78-50 — a section with no deadline in it — for a two-year notice requirement that is neither two years nor required |
 | 2026-09-08 recheck | `SC 15-38-15` re-read | **31 instances on 23 pages** still cited it for the plaintiff's recovery bar — a class #97 had already corrected |
+| 2026-09-19 golf-cart pass | `SC 56-2-90`, `56-2-100`, `56-2-105`, `56-3-115` read on scstatehouse.gov; 2025 Act No. 64 (H.3292) read on the bill page | **`§ 56-2-105` was REPEALED 2025-05-22** by Act 64 §2 and replaced by `§ 56-2-90` (Act 64 §1). Four live pages still cite the repealed section as current law (4343, 4364, 4754, 4804). `§ 56-2-100` is the LOW-SPEED VEHICLE section, not a golf-cart one; 4738 cites it and `§ 56-3-115` (today: a deaf/hard-of-hearing registration notation, 2021) for golf-cart eligibility. Two sub-type pages (4185, 4186) say South Carolina has no statewide golf-cart statute. 4343 says SC does not require golf-cart liability insurance; `§ 56-2-90(A)` requires proof of it for the permit. 4364 says the licence rule means "minors under 15" cannot drive; `§ 56-2-90(B)` says at least sixteen. Record: `data/facts/golf-cart-verification-2026-09-19.md`. |
 | 2026-09-19 helmet pass | `GA 40-6-296`, `40-6-300`, `40-6-301`, `40-6-302`, `40-6-303`, `40-1-1(15.3)` read on codes.findlaw.com (current as of 2024-03-28) | **none** on the sections themselves: the site's uncited bicycle (under 16) and e-bike (Class III all ages, no operator under 15, Class I/II ride as bicycles) statements all match the text. The pass surfaced two evidence bars the site had never stated — § 40-6-296(d)(5) and § 40-6-303(c)(5): a bicycle or e-bike helmet violation "shall not … be considered evidence of negligence or liability". The motorcycle statute has no equivalent. Justia and LegiScan 403; the enrolled act (HB 454, 2019) was not cross-checked. |
 
 **Three of four passes found a live error, and none surfaced from a sweep looking**
@@ -162,6 +170,8 @@ instances named no statute at all.
 | `SC 56-2-3070` | 0 | 2026-09-19 helmet pass (t56c002) — (C) moped operator or passenger under 21 wears a helmet; (G) misdemeanor, up to $200 or 30 days |
 | `SC 50-26-30`, `50-26-60`, `50-26-70` | 0 | 2026-09-19 helmet pass (t50c026) — ATV riders 15 and younger: FMVSS 218 helmet and eye protection; $50–$200; farming, hunting, supervised private-land exceptions |
 | `SC 56-5-6540(C)` | 0 | 2026-09-19 helmet pass — seat-belt violation is not negligence per se and not admissible in a civil action (cited for contrast only; there is no helmet equivalent) |
+| `SC 56-2-90` | 0 | 2026-09-19 golf-cart pass (scstatehouse.gov t56c002; 2025 Act No. 64 §1, eff 2025-05-22) — (A) DMV permit decal + registration, proof of ownership and liability insurance, $5, renew every 5 years or on change of address; (B) operator at least 16 with a valid licence, carrying registration, proof of insurance per § 38-77-140 and licence; (C) municipality/county may by ordinance set hours, methods, locations (only where the limit is ≤ 35 mph), permit night operation with working head- and taillights, designate separated cart paths, and may not require proof of property ownership for a decal; (D) absent an ordinance: daylight only, secondary highway ≤ 35 mph, within 4 miles of the registered address or a gated community's gate, may cross a > 35 mph highway at an intersection; (E) passengers under 12 must wear a fastened safety belt. **Replaces `§ 56-2-105`, repealed by Act 64 §2 the same day.** |
+| `SC 56-2-100` | 6 | 2026-09-19 golf-cart pass — LOW-SPEED VEHICLES, not golf carts: operation only on ≤ 35 mph highways, may cross faster highways at intersections, FMVSS 500 equipment, local and DOT prohibitions permitted, farm vehicles excluded. The six pages citing it for golf carts miscite. |
 
 ## Not yet verified — top 30 by exposure
 
@@ -169,7 +179,6 @@ instances named no statute at all.
 |---|---:|
 | `SC 50-21-10` | 7 |
 | `SC 56-5-3230` | 6 |
-| `SC 56-2-100` | 6 |
 | `SC 56-5-3150` | 6 |
 | `GA 51-12-4` | 6 |
 | `GA 40-7-120` | 6 |
@@ -179,7 +188,6 @@ instances named no statute at all.
 | `GA 9-3-73` | 5 |
 | `SC 15-36-100` | 5 |
 | `GA 40-6-71` | 5 |
-| `SC 56-2-105` | 5 |
 | `GA 40-6-181` | 5 |
 | `SC 56-5-3890` | 5 |
 | `GA 24-7-702` | 5 |
@@ -222,6 +230,15 @@ caught the 21 instances that cited § 56-5-3435 and missed seven that asserted t
 feet with no citation at all — including the opening paragraph of every city page.
 
 ## Watch items
+
+**A verified section can stop existing.** `SC 56-2-105` was on the site as current
+golf-cart law on four pages for sixteen months after 2025 Act No. 64 repealed it and moved
+the rules to `§ 56-2-90` (2025-05-22). Nothing in the verification method catches a
+repeal after the fact: a page cites the section, the section reads correctly on the day it
+is checked, and the legislature moves it the next session. Each pass should re-read the
+HISTORY line of every section it touches, and any section with an effective date newer
+than the page citing it is a page to re-read. The same pass found `§ 56-3-115` cited for
+golf-cart eligibility; today that number is a deaf/hard-of-hearing registration notation.
 
 **`SC 15-32-220` is inflation-adjusted every January** by the Revenue and Fiscal Affairs
 Office. Two pages quote 2026 figures — roughly $596,001 per provider and about
