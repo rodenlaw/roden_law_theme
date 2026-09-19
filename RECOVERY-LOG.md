@@ -533,6 +533,34 @@ clicks over 16 months and 301 to the accident pillar, which does not state the l
 reference page `/resources/south-carolina-golf-cart-laws/` should take those redirects when
 it publishes.
 
+### The golf-cart reference page published — 2026-09-19
+
+`/resources/south-carolina-golf-cart-laws/` (post 6314), Graeham C. Gillin, `south-carolina-only`,
+built on `§ 56-2-90` with the 2025 change explained and the low-speed-vehicle distinction under
+`§ 56-2-100`, `§ 56-1-10` and `§ 56-2-120`. Published the same day it was commissioned, on
+the owner's word ("run both now"), through `bin/en-seed-resource-page.php` with the payload
+from `bin/build-resource-seed.py` (the helmet converter, generalised to take the page's details
+as arguments). Every seeder guard passed; live 200, FAQPage schema, `lastReviewed` 2026-09-19,
+no Georgia citation. The two old-site law URLs that had earned 194 clicks while landing on the
+accident pillar now 301 to it (#145). **Doorway ratio 24.87% → 24.85%** (243 of 978).
+
+**The writer found three more live errors** while reading the eight pages that state the
+rule — none of which the morning's pass, which searched for the repealed section and three
+known phrasings, had reached: the pillar FAQ said neither state requires golf-cart seat belts
+(`§ 56-2-90(E)` has required them for passengers under 12 since 2025-05-22, and the FAQ
+publishes as structured data); the Charleston island post said a cart modified past 20 mph
+"may have effectively created an unregistered, uninsured LSV" (`§ 56-2-120(A)` says the State
+issues no VIN to retrofitted golf carts and they do not qualify), and its golf-cart-vs-LSV
+table said registration and insurance are not required (both are, `§ 56-2-90(A)`); the Surfside
+post attributed the town's road permission to the state statute. Fixed before the page
+published (`bin/fix-golf-cart-claims-2.php`, 5 edits, 4 surfaces, 3 posts), verified live,
+JSON-LD guard PASS.
+
+**Lesson.** A claim-class sweep that searches for known wrong phrasings finds the phrasings it
+knows. Having a writer read the neighbouring pages against the verified statute, sentence by
+sentence, is a different instrument and found what the search did not. Commission the
+reference page and the neighbour read together.
+
 ### Helmet citations backfilled — 2026-09-19
 
 With the Georgia sections on the Verified table, the bicycle pillar, the e-bike pillar and the

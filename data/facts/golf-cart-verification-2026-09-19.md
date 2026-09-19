@@ -92,6 +92,25 @@ zero. Live JSON-LD guard PASS. `_roden_last_refreshed` set; `post_modified` unto
 and every Georgia golf-cart claim (`O.C.G.A. § 40-6-330`, 25 mph) were left as they were,
 not read in this pass.
 
+## Round 2 — found by the writer, applied 2026-09-19
+
+Reading the eight appendix pages against the statute while drafting the reference page, the
+writer found three more divergences the morning's search had not reached. Confirmed against
+`§ 56-2-90(E)` and `§ 56-2-120(A)` on scstatehouse.gov and fixed with
+`bin/fix-golf-cart-claims-2.php` (backup `docs/backups/golf-cart-claims-2-2026-09-19.json`):
+5 edits, 4 surfaces, 3 posts.
+
+| Post | Surface | Was | Now |
+|---|---|---|---|
+| 4090 pillar | `_roden_faqs[4]` | "neither Georgia nor South Carolina currently requires [seatbelts] for traditional golf carts" | SC law does not require a cart to be equipped with them, but every passenger under 12 must wear a fastened belt on public roads (`§ 56-2-90(E)`, eff 2025-05-22); Georgia claim dropped, not read |
+| 4343 | body | "modifies the cart to exceed 20 mph may have effectively created an unregistered, uninsured LSV" | a retrofitted cart gets no VIN and cannot qualify as an LSV (`§ 56-2-120(A)`); it is simply an unlawful vehicle |
+| 4343 | body | golf-cart vs LSV table: speed "under 20 mph", registration "not required", insurance "not required by state law" | no statutory speed definition; DMV permit and registration (`§ 56-2-90(A)`); proof of insurance for the permit (`§ 56-2-90(A)–(B)`); LSV rows cited to `§ 56-1-10`, `§ 56-2-100`, `§ 56-2-120` |
+| 4343 | `_roden_faqs[4]` | same content as prose | same corrections |
+| 4754 | body | "Surfside Beach permits … under S.C. Code § 56-2-90" | the statute sets the 35 mph cap; the town allows carts on its qualifying streets |
+
+Verified live; sweep for the old phrasings zero; JSON-LD guard PASS. The page then published
+(post 6314) and the two legacy URLs were repointed to it (#145).
+
 ## Recommendation
 
 1. **Remediate the eight divergences first**, as a claim-class pass across body and meta:

@@ -7,7 +7,7 @@
         "post",
         "page"
     ],
-    "_count": 814,
+    "_count": 815,
     "posts": {
         "/": {
             "type": "page",
@@ -5940,7 +5940,7 @@
                     },
                     {
                         "question": "What is the difference between a golf cart and a low-speed vehicle in South Carolina?",
-                        "answer": "Golf carts have a maximum speed under 20 mph and require minimal safety equipment. Low-speed vehicles (LSVs) travel 20-25 mph and must have headlights, taillights, turn signals, mirrors, seatbelts, a windshield, and a VIN. LSVs must be titled, registered, and carry liability insurance. The distinction matters for liability because an LSV without required safety equipment may create additional manufacturer and owner liability."
+                        "answer": "South Carolina law does not define a golf cart by speed; in practice they run under 20 mph. A low-speed vehicle (LSV) is a four-wheeled vehicle whose top speed is more than 20 and not more than 25 mph (S.C. Code § 56-1-10). It must meet federal standard FMVSS 500 — headlights, taillights, turn signals, mirrors, seatbelts, a windshield and a VIN — and be titled, registered and insured like a car (§§ 56-2-100, 56-2-120). A retrofitted golf cart cannot become an LSV: the state issues it no VIN (§ 56-2-120(A)). The distinction matters for liability because an LSV without required safety equipment may create additional manufacturer and owner liability."
                     },
                     {
                         "question": "How long do I have to file a golf cart accident claim in South Carolina?",
@@ -24778,7 +24778,7 @@
                     },
                     {
                         "question": "Are golf carts required to have seatbelts?",
-                        "answer": "Most standard golf carts do not have seatbelts, and neither Georgia nor South Carolina currently requires them for traditional golf carts. However, Low-Speed Vehicles (LSVs) — which look similar but meet higher safety standards — are required to have seatbelts. The absence of safety features is relevant in product liability claims."
+                        "answer": "Most standard golf carts are not built with seatbelts, and South Carolina law does not require a golf cart to be equipped with them. It does require every passenger under 12 to wear a fastened safety belt when the cart is on a public street or highway (S.C. Code § 56-2-90(E), effective May 22, 2025), so a cart that carries children on the road needs them. Low-Speed Vehicles (LSVs) — which look similar but meet higher safety standards — are required to have seatbelts. The absence of safety features is relevant in product liability claims."
                     },
                     {
                         "question": "How long do I have to file a golf cart accident claim?",
@@ -28150,6 +28150,45 @@
                 "_roden_key_takeaways": "South Carolina follows modified comparative negligence with a 51% bar. You can recover compensation as long as you are less than 51% at fault for your own injuries, but your award is reduced by your percentage of fault. If you are 51% or more at fault, you recover nothing. For example, on a $300,000 case, being 20% at fault leaves you $240,000, while 51% fault leaves you $0. Insurance companies routinely try to inflate your fault percentage to cut or eliminate your payout, which is why how fault is assigned has a direct dollar impact on your case.",
                 "_roden_meta_description": "South Carolina is a modified comparative negligence state with a 51% bar: you can recover if you are less than 51% at fault, but your award drops by your fault share.",
                 "_roden_translation_es": "/es/resources/south-carolina-comparative-negligence/"
+            }
+        },
+        "/resources/south-carolina-golf-cart-laws/": {
+            "type": "resource",
+            "status": "publish",
+            "title": "South Carolina Golf Cart Laws: Permits, Where You Can Drive, Who Can Drive, and What Changed in 2025",
+            "excerpt": "South Carolina golf carts may use public roads with a DMV permit decal, on roads posted 35 mph or less, with an operator at least 16 who holds a valid driver's license — S.C. Code § 56-2-90, the section that replaced § 56-2-105 on May 22, 2025. Here is the rule subsection by subsection, what a local ordinance may change, and how it affects an injury claim.",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Can you legally drive a golf cart on the road in South Carolina?",
+                        "answer": "Yes, with a permit and on the roads the statute allows. S.C. Code § 56-2-90 requires a DMV permit decal and registration certificate and limits operation to highways posted 35 mph or less. Absent a local ordinance, a permitted cart may run only in daylight, only on a secondary highway posted 35 mph or less, and only within four miles of the registered address."
+                    },
+                    {
+                        "question": "How old do you have to be to drive a golf cart in South Carolina?",
+                        "answer": "At least 16, with a valid driver's license. Section 56-2-90(B) requires the operator to be at least sixteen years of age, to hold a valid driver's license, and to have the registration certificate, proof of liability insurance and the license in his possession. A 15-year-old cannot legally drive a golf cart on a South Carolina public highway."
+                    },
+                    {
+                        "question": "Can you drive a golf cart at night in South Carolina?",
+                        "answer": "Only where a local ordinance allows it. Section 56-2-90(C)(2) lets a municipality or county permit night operation, provided the cart has working headlights and taillights and stays on roads posted 35 mph or less. With no such ordinance, § 56-2-90(D)(1) limits a permitted cart to daylight hours."
+                    },
+                    {
+                        "question": "Does breaking a golf cart rule mean I lose my injury claim?",
+                        "answer": "A rule violation becomes an argument the insurer has to prove, not an automatic bar. South Carolina uses modified comparative negligence, so you recover as long as you are less than 51% at fault (Nelson v. Concrete Supply Co.). An adjuster will use an expired decal or the wrong road to push your percentage up, and the answer is evidence of what caused the crash. Our South Carolina personal injury FAQ covers fault and damages."
+                    },
+                    {
+                        "question": "How long do I have to file a golf cart injury lawsuit in South Carolina?",
+                        "answer": "Three years from the date of injury, under S.C. Code § 15-3-530. Waiting costs evidence too, because carts get repaired or sold and witnesses move. Head injuries are common in open vehicles and are covered on our traumatic brain injury claims page."
+                    },
+                    {
+                        "question": "What does it cost to ask a lawyer about a golf cart crash?",
+                        "answer": "Nothing to ask. Roden Law offers a free case review and works on a contingency fee — you pay nothing upfront and no legal fees unless we win your case. Call (843) 790-8999 or 1-844-RESULTS, or read what a South Carolina personal injury lawyer does with a case like this."
+                    }
+                ],
+                "_roden_jurisdiction": "south-carolina-only",
+                "_roden_key_takeaways": "A golf cart needs a DMV permit decal and registration certificate before it may use a South Carolina public highway — S.C. Code § 56-2-90(A). The operator must be at least 16 with a valid driver's license, carrying the registration, proof of insurance and the license — § 56-2-90(B). With no local ordinance: daylight only, secondary highways posted 35 mph or less, within four miles of the registered address — § 56-2-90(D). Every golf-cart passenger under 12 must wear a fastened safety belt on public roads — § 56-2-90(E). Section 56-2-105, the golf-cart statute from 2012 to 2025, was repealed on May 22, 2025 and is no longer law. File a South Carolina injury lawsuit within three years — S.C. Code § 15-3-530 — and recover if less than 51% at fault (<em>Nelson v. Concrete Supply Co.</em>).",
+                "_roden_last_reviewed": "2026-09-19",
+                "_roden_meta_description": "South Carolina golf cart laws: the DMV permit decal, roads posted 35 mph or less, operators 16 and older, the four-mile rule, and what 2025 Act No. 64 changed."
             }
         },
         "/resources/south-carolina-helmet-laws/": {
