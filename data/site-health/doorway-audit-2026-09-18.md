@@ -672,3 +672,14 @@ sitelink and promotion assets, page-feed assets, Performance Max (one campaign, 
 campaign URL templates, and 27 distinct paid landing pages from the last 90 days. None
 references any of the six. Paid traffic lands on `/south-carolina-car-accident-lawyer`
 (1,273 clicks) and `/locations/south-carolina/columbia/` (576). Cleared for a 301.
+
+## Applied 2026-09-19, fourth batch
+
+Step 4: the six root city pages (#144), after the Google Ads check cleared them. Re-measured
+from the live sitemap: **244 of 975 indexable URLs, 25.0%** (25.03% unrounded, so the
+site-health check still reports FAIL by 0.03 points). The remaining margin is the
+`dock-marina-injury` classifier false positive noted at the top of this document; fixing it
+in the toolkit takes the figure to 24.9% with no content change.
+
+Week in summary: 40.6% on 2026-09-17 → 25.0% on 2026-09-19, 255 pages retired across five
+batches (#141, #142, #143, #144, plus the applied commits), all on Search Console evidence.

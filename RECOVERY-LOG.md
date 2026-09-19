@@ -391,6 +391,29 @@ menu items, no Spanish twins, no hard-coded references in the theme or on the st
 page. Target is the practice pillar. Expected after: indexable 981 → 975, location-
 targeted 250 → 244, **doorway ratio 25.5% → 25.0%.**
 
+### Applied 2026-09-19 — the six root city pages
+
+Shipped end to end: redirects deployed in #144, relink run and confirmed a no-op, six pages
+trashed, caches flushed, 6/6 verified single-hop 301 → 200. Page sitemap **46 → 40**,
+indexable **981 → 975**. `content/meta.json` regenerated, `_count` 818 → 812. Trash
+audited: 53 today, exactly the 47 + 6; no published page shares a slug with any of them.
+
+**Doorway ratio as site-health measures it: 25.5% → 25.0%** — 244 of 975, which is
+25.03% unrounded. The check compares the unrounded figure to the ceiling, so it still
+reports FAIL by three hundredths of a point. What decides it now is the one classifier
+false positive: `/boating-accident-lawyers/dock-marina-injury/`, a practice sub-type page
+counted as a landmark doorway on the token `dock-marina`. Without it the figure is 243 of
+975, 24.9%, and the check passes. The fix is one line in the toolkit's generic-preceder
+list, followed by a re-vendor; it is not a content change and nothing on the site should
+move for it. Failing that, the first non-location page the reference layer publishes
+flips the check on its own.
+
+**Where the week landed.** 2026-09-17: 499 of 1,230, 40.6%. 2026-09-19: 244 of 975,
+25.0%. Five batches, 255 pages retired, every one on Search Console evidence, all with
+single-hop 301s verified after deletion, every trashed post recoverable by ID. The 244
+still counted are the 44 location hubs and their 6 Spanish twins, the 193 blog posts and
+resources with a place in the slug that earn clicks, and the one false positive.
+
 ### End-state arithmetic
 
 | Scope | Now | After definite removals | If all EVALUATE also go |
@@ -418,6 +441,7 @@ into 8 city-tier towns and 109 nested municipalities; see the recommendation in
 | 2026-09-18 | **EVALUATE** the 13 rule-4 survivors | 1,230 | 1,217 | 13 | **COMPLETE.** Redirects deployed (#141), relink applied (11 links, 5 posts, all to Ladson, `post_modified` preserved), 13 posts trashed, caches flushed. Verified after deletion: 13/13 single-hop 301 → 200; location sitemap 57 → 44; live JSON-LD guard PASS. Backups: `evaluate-locations-relink-2026-09-18.json`, `evaluate-locations-2026-09-18.json`. |
 | 2026-09-18 | **Zero-click** intersections (129) + sub-municipal posts (60) | 1,217 | 1,028 | 189 | **COMPLETE.** Redirects deployed (#142), relink applied (263 links, 120 posts, `post_modified` preserved), 189 posts trashed, caches flushed. Verified after deletion: 189/189 flat single-hop 301 → 200, 93/93 EN nested forms likewise; the ES nested form never existed (404 on a surviving ES intersection too, zero GSC rows). practice_area sitemap 405 → 276, post 486 → 426. Live JSON-LD guard PASS. Backups: `zero-click-relink-2026-09-18.json`, `zero-click-pages-2026-09-18.json`. |
 | 2026-09-19 | **The last 47** intersections (rule 6 closed) | 1,028 | 981 | 47 | **COMPLETE.** Redirects deployed (#143), relink applied (317 links, 231 posts, `post_modified` preserved), 47 posts trashed, caches flushed. Verified after deletion: 47/47 flat and 44/44 EN nested single-hop 301 → 200; the two Spanish twins #142 had broken now redirect in one hop. practice_area sitemap 276 → 229. Live JSON-LD guard PASS. No published page shares a slug with the 47; none misroutes. Backups: `earning-intersections-relink-2026-09-19.json`, `earning-intersections-2026-09-19.json`. |
+| 2026-09-19 | **Six root city pages** (Greenville, Spartanburg, Florence) | 981 | 975 | 6 | **COMPLETE.** Redirects deployed (#144), relink a confirmed no-op (0 links), 6 pages trashed, caches flushed. Verified after deletion: 6/6 single-hop 301 → 200; page sitemap 46 → 40. Google Ads clear across all four accounts. Backup: `root-city-pages-2026-09-19.json`. |
 
 ### Batch (c) — two things the plan did not predict
 
