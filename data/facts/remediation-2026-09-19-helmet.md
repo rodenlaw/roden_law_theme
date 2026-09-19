@@ -95,6 +95,26 @@ returned 403 or 503.
 - The scooter municipal-ordinance claim, now omitted on all three surfaces of 4088: if an
   ordinance exists, cite it and restore.
 
+## Citation backfill — later on 2026-09-19
+
+Once the Georgia sections were traced, the uncited-but-correct statements got their citations
+(`bin/backfill-helmet-citations.php`, backup `docs/backups/helmet-citations-2026-09-19.json`).
+Twelve edits across seven surfaces on three posts; no claim changed.
+
+| Post | Surfaces | Citations added |
+|---|---|---|
+| 4087 `/practice-areas/bicycle-accident-lawyers/` | body, `_roden_faqs[2]` | `§ 40-6-296(d)` on the under-16 rule, twice |
+| 1859 `/blog/safe-bike-riding-georgias-roadways/` | body, `_roden_faqs[2]` | `§ 40-6-296(d)` on the under-16 rule, twice |
+| 4578 `/practice-areas/e-bike-accident-lawyers/` | body (4 sentences, the under-16 row twice), `_roden_why_hire`, `_roden_faqs[0]`, `[1]`, `[4]` | `§ 40-6-303(b)–(c)` on the Class III rule and age floor; `§ 40-6-296(d)` via `§ 40-6-301` on Class I/II under-16; `S.C. Code § 56-5-3520` on the South Carolina no-requirement statement |
+
+Verified live after cache flush; live JSON-LD guard PASS; `_roden_last_refreshed` set,
+`post_modified` untouched. The script applies edits to a running per-surface working copy and
+writes each surface once — `fix-helmet-claims.php` computed each edit from the original, which
+was safe only because it never touched one surface twice. The bicycle page's flat
+"may be raised as comparative fault" sentence still speaks of adults, whom the under-16 rule
+does not reach, so it was left; the evidence bar in `§ 40-6-296(d)(5)` is stated on the new
+Georgia helmet page, which the bicycle page links.
+
 ## Process finding
 
 **Every content sweep on this site must read every post-meta key, not the four it knows

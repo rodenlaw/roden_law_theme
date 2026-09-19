@@ -509,6 +509,17 @@ matching in `internal-links`, chain detection in `redirects`, location prefixes 
 **Doorway ratio: 24.97% → 24.87%** (243 of 977); granularity floor 83 → 82. Both numbers
 now describe content only.
 
+### Helmet citations backfilled — 2026-09-19
+
+With the Georgia sections on the Verified table, the bicycle pillar, the e-bike pillar and the
+Georgia bike-safety post got the citations their correct-but-uncited statements lacked:
+`§ 40-6-296(d)` for the under-16 bicycle rule, `§ 40-6-303(b)–(c)` for Class III, `§ 40-6-301`
+for why the bicycle rule reaches Class I and II, and `S.C. Code § 56-5-3520` for the South
+Carolina e-bike statement. Twelve edits, seven surfaces, three posts, no claim changed
+(`bin/backfill-helmet-citations.php`, `data/facts/remediation-2026-09-19-helmet.md`). One
+script lesson: several edits on the same surface must accumulate on one working copy and write
+once; computing each from the original and writing in turn lets the last erase the rest.
+
 ### End-state arithmetic
 
 | Scope | Now | After definite removals | If all EVALUATE also go |
