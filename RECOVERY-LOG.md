@@ -533,6 +533,17 @@ clicks over 16 months and 301 to the accident pillar, which does not state the l
 reference page `/resources/south-carolina-golf-cart-laws/` should take those redirects when
 it publishes.
 
+### E-bike classification made precise — 2026-09-21
+
+The item the Georgia moped writer flagged on the 19th. The e-bike pillar made speed the trigger
+for an e-bike becoming a moped and offered "a moped or motor vehicle" as alternatives. The
+statutes hinge on motor power — 750 W either side of the line; Georgia's moped at 2 bhp, 30 mph
+and automatic drive (`§ 40-1-1(28)`), South Carolina's at 750–1,500 W (`§ 56-1-10(26)`) — and a
+Georgia moped is a motor vehicle (`§ 40-1-1(33)`, read for this pass with `(29)`). Imprecise
+rather than false, on the one page that is the firm's statement of the rule. Five edits on
+three surfaces (`bin/fix-ebike-classification.php`), verified live, JSON-LD guard PASS. Record
+in `data/facts/moped-verification-2026-09-19.md`.
+
 ### The two moped-law pages published — 2026-09-19
 
 The last B3 gap. Owner asked for the full cycle ("do that moped law now"). Eighteen sections

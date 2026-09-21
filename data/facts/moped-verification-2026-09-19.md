@@ -78,5 +78,30 @@ tracker row is updated.
 
 Neither writer found a divergence between its page and the e-bike pillar as corrected or the
 state's helmet page. The Georgia writer noted the e-bike pillar's Georgia FAQ reads looser than
-the statute on when an over-threshold e-bike becomes a moped (the definition turns on 2 bhp,
-50 cc and automatic drive, not speed alone); logged here for a later pass, not changed.
+the statute on when an over-threshold e-bike becomes a moped; reviewed and fixed 2026-09-21,
+below.
+
+## E-bike classification precision — reviewed and applied 2026-09-21
+
+The pillar (4578) made **speed** the trigger for an e-bike becoming a moped ("exceeding the
+750W or 20 mph thresholds", "a modified Class III capable of 28 mph") and offered "a moped or
+motor vehicle" as alternatives. Against the definitions:
+
+- Georgia's e-bike is a motor of 750 W or less (`§ 40-1-1(15.3)`); the classes cap assistance
+  at 20/20/28 mph (`§ 40-6-300`). Its moped is a motor driven cycle of at most 2 brake
+  horsepower, unassisted top speed 30 mph or less, automatic drive (`§ 40-1-1(28)`); above
+  2 bhp it is a motor driven cycle to 5 bhp, then a motorcycle (`(29)`, `(30)`). A moped **is**
+  a motor vehicle in Georgia — `§ 40-1-1(33)` excludes e-bikes and EPAMDs, not mopeds — so
+  "moped or motor vehicle" was a category error there. Read `(29)` and `(33)` on
+  codes.findlaw.com for this pass; both added to the Verified table.
+- South Carolina's moped hinges on wattage alone: over 750 W up to 1,500 W (`§ 56-1-10(26)`).
+  A 750 W bike whose motor alone exceeds 20 mph leaves the e-bike definition (`§ 56-1-10(29)`)
+  without becoming a moped; and a Class III is pedal-assist, so the 28 mph example was the
+  wrong kind of speed.
+
+Not false in the way the seat-belt or repealed-statute claims were; imprecise on the one page
+that is the firm's statement of the rule, and on the point a reader with a modified bike asks.
+Five edits, three surfaces (body ×2, `_roden_why_hire`, `_roden_faqs[1]`, `[3]`),
+`bin/fix-ebike-classification.php`, backup `docs/backups/ebike-classification-2026-09-21.json`.
+Verified live: the four loose phrasings gone, `§ 56-1-10(26)` and `§ 40-1-1(28)` cited; JSON-LD
+guard PASS; `post_modified` untouched.
