@@ -111,6 +111,16 @@ writer found three more divergences the morning's search had not reached. Confir
 Verified live; sweep for the old phrasings zero; JSON-LD guard PASS. The page then published
 (post 6314) and the two legacy URLs were repointed to it (#145).
 
+## DUI citation — added 2026-09-21
+
+`S.C. Code § 56-5-2930(A)` read by direct download of the chapter page (the fetch tool
+truncates it). It forbids driving "a motor vehicle" impaired; a golf cart is self-propelled and
+therefore a motor vehicle under `§ 56-1-10(7)`. One sentence added to the reference page's
+claim section, and the golf-cart DUI sub-type (4189), which had said "South Carolina's DUI law
+similarly applies" without a section, now cites it in body and FAQ 0 alongside the Georgia
+section it already cited (`O.C.G.A. § 40-6-391(a)`, "any moving vehicle", read the same day).
+`bin/backfill-dui-citations.php`; verified live; JSON-LD guard PASS.
+
 ## Recommendation
 
 1. **Remediate the eight divergences first**, as a claim-class pass across body and meta:

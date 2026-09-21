@@ -533,6 +533,20 @@ clicks over 16 months and 301 to the accident pillar, which does not state the l
 reference page `/resources/south-carolina-golf-cart-laws/` should take those redirects when
 it publishes.
 
+### DUI citations closed — 2026-09-21
+
+The last open item from the 19th. Both DUI sections were unreadable then; both read today.
+`O.C.G.A. § 40-6-391(a)` reaches "any moving vehicle", so it applies to mopeds, golf carts and
+e-bikes without a definitional chain. `S.C. Code § 56-5-2930(A)` reaches "a motor vehicle";
+a moped is one by definition (`§ 56-1-10(26)`) and a golf cart is one because it is
+self-propelled (`§ 56-1-10(7)`), and the chapter's own interlock carve-out for "a moped or
+motorcycle" confirms the reading. Seven edits across four pages — the two moped pages, the
+golf-cart page and the golf-cart DUI sub-type — verified live, JSON-LD guard PASS.
+
+The method note matters more than the citations: **the state's chapter pages are readable by a
+direct download even when the fetch tool truncates them.** Two of Friday's "unreadable"
+sections were readable all along.
+
 ### E-bike classification made precise — 2026-09-21
 
 The item the Georgia moped writer flagged on the 19th. The e-bike pillar made speed the trigger

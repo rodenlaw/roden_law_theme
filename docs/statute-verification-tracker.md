@@ -11,9 +11,14 @@ a statute is verified.
 
 | | Statutes | Page-citations |
 |---|---:|---:|
-| Verified against primary text | **110** | **2,562** |
-| Not yet verified | 196 | 396 |
-| Total cited | 290 | 2,962 |
+| Verified against primary text | **114** | **2,571** |
+| Not yet verified | 195 | 390 |
+| Total cited | 291 | 2,962 |
+
+*2026-09-21: `GA 40-1-1(29)`/`(33)`, `GA 40-6-391(a)`, `SC 56-5-2930(A)` and `SC 56-1-10(7)`
+verified. `§ 40-6-391` had been cited on the golf-cart DUI sub-type and pillar before it was
+read; it moves from the unverified side. Page-citation counts are running estimates until the
+next full pass recounts them.*
 
 *2026-09-19, moped pass: eighteen sections verified ahead of first use for the two moped-law
 pages (five Georgia, thirteen South Carolina); `SC 56-2-3010` is now cited on the e-bike
@@ -178,6 +183,9 @@ instances named no statute at all.
 | `SC 56-5-6540(C)` | 0 | 2026-09-19 helmet pass — seat-belt violation is not negligence per se and not admissible in a civil action (cited for contrast only; there is no helmet equivalent) |
 | `SC 56-2-90` | 0 | 2026-09-19 golf-cart pass (scstatehouse.gov t56c002; 2025 Act No. 64 §1, eff 2025-05-22) — (A) DMV permit decal + registration, proof of ownership and liability insurance, $5, renew every 5 years or on change of address; (B) operator at least 16 with a valid licence, carrying registration, proof of insurance per § 38-77-140 and licence; (C) municipality/county may by ordinance set hours, methods, locations (only where the limit is ≤ 35 mph), permit night operation with working head- and taillights, designate separated cart paths, and may not require proof of property ownership for a decal; (D) absent an ordinance: daylight only, secondary highway ≤ 35 mph, within 4 miles of the registered address or a gated community's gate, may cross a > 35 mph highway at an intersection; (E) passengers under 12 must wear a fastened safety belt. **Replaces `§ 56-2-105`, repealed by Act 64 §2 the same day.** |
 | `GA 40-1-1(28)`, `(30)` | 0 | 2026-09-19 moped pass — "moped": motor driven cycle, two or three wheels, max two brake horsepower, combustion engine ≤ 50 cc (3.05 cu in), unassisted top speed ≤ 30 mph on level road, automatic drive; "motor driven cycle": motorcycles ≤ 5 bhp and every moped |
+| `GA 40-6-391(a)` | 3 | 2026-09-21 DUI pass (codes.findlaw.com, current 2024-03-28) — "A person shall not drive or be in actual physical control of **any moving vehicle** while" impaired, (1)–(6) incl. 0.08 within three hours; no definition of "vehicle" in the section, so it reaches mopeds, golf carts and e-bikes without a definitional chain |
+| `SC 56-5-2930(A)` | 3 | 2026-09-21 DUI pass (scstatehouse.gov t56c005, by direct download — 696 KB, the fetch tool truncates it) — "unlawful for a person to drive **a motor vehicle** within this State while under the influence" to material and appreciable impairment; reaches mopeds via `§ 56-1-10(26)` ("defined as a motor vehicle") and golf carts via `§ 56-1-10(7)` (every self-propelled vehicle). The chapter's interlock provisions carve out "a moped or motorcycle" by name (2017 Act No. 89 §34), which confirms mopeds are otherwise inside the scheme |
+| `SC 56-1-10(7)` | 2 | 2026-09-21 DUI pass — "motor vehicle": every vehicle which is self-propelled, and every vehicle propelled by electric power from overhead trolley wires but not operated upon rails |
 | `GA 40-1-1(29)`, `(33)` | 1 | 2026-09-21 e-bike classification pass (codes.findlaw.com) — "motor vehicle": every self-propelled vehicle other than a personal delivery device, an electric assisted bicycle, or an EPAMD, so a **moped is a motor vehicle** in Georgia; "motorcycle": a motor vehicle with a saddle on ≤ 3 wheels, **excluding** a tractor, an ATV and a moped |
 | `GA 40-6-350` | 0 | 2026-09-19 moped pass — moped operator has a vehicle driver's rights and duties, except the headlight/taillight rule of § 40-6-312(e) and the windshield/eye-protection rule of § 40-6-315(b) |
 | `GA 40-6-351` | 0 | 2026-09-19 moped pass — no operator under 15; a valid driver's licence, instruction permit or limited permit of any class required |

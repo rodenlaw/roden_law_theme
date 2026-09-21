@@ -81,6 +81,27 @@ state's helmet page. The Georgia writer noted the e-bike pillar's Georgia FAQ re
 the statute on when an over-threshold e-bike becomes a moped; reviewed and fixed 2026-09-21,
 below.
 
+## DUI citations — read and added 2026-09-21
+
+Both sections were unreadable on the 19th; a direct download of the 696 KB South Carolina
+chapter page and a FindLaw read from this environment settled them the same way the licence
+sections were settled.
+
+- **`O.C.G.A. § 40-6-391(a)`:** "A person shall not drive or be in actual physical control of
+  **any moving vehicle** while" impaired. No definition of "vehicle" in the section; it reaches
+  a moped without any chain. Added to the Georgia moped page as a rules-table row and a
+  takeaway.
+- **`S.C. Code § 56-5-2930(A)`:** "unlawful for a person to drive **a motor vehicle** within this
+  State while under the influence". A moped is "defined as a motor vehicle" (`§ 56-1-10(26)`),
+  and the same chapter's ignition-interlock provisions carve out "a moped or motorcycle" by
+  name (inserted by 2017 Act No. 89 §34), which confirms mopeds sit inside the DUI scheme.
+  Added to the South Carolina moped page's body sentence and takeaway, which had said
+  "including DUI" without a section.
+
+`bin/backfill-dui-citations.php`, backup `docs/backups/dui-citations-2026-09-21.json`; the same
+run cited the golf-cart pages (see `golf-cart-verification-2026-09-19.md`). Verified live,
+JSON-LD guard PASS.
+
 ## E-bike classification precision — reviewed and applied 2026-09-21
 
 The pillar (4578) made **speed** the trigger for an e-bike becoming a moped ("exceeding the
