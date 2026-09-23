@@ -1,0 +1,455 @@
+{
+  "postId": 4721,
+  "slug": "motorcycle-accident-i-95-glynn-county-brunswick-darien",
+  "liveUrl": "https://rodenlaw.com/blog/motorcycle-accident-i-95-glynn-county-brunswick-darien/",
+  "jurisdiction": "GA",
+  "researchedAt": "2026-09-23",
+  "verifiedClaims": [
+    {
+      "surface": "body",
+      "claim": "The deadline is two years from the crash under O.C.G.A. § 9-3-33",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Georgia Code § 9-3-33 (Justia); profiles/writer-profile.md jurisdiction table",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+      "retrievedAt": "2026-09-23",
+      "note": "Statute: actions for injuries to the person shall be brought within two years after the right of action accrues. Matches the profile table (GA PI SOL 2 years, § 9-3-33)."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia gives you 2 years from the date of the crash under O.C.G.A. § 9-3-33; wrongful-death claims follow the same general window.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Georgia Code § 9-3-33 (Justia), case annotations under 'Wrongful death'",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+      "retrievedAt": "2026-09-23",
+      "note": "Georgia courts apply the § 9-3-33 two-year period to wrongful-death actions (Justia annotation: homicide action 'must be brought within two years from time of injury'). 'Same general window' is accurate hedging; the FAQ's tolling caveat is correct."
+    },
+    {
+      "surface": "body",
+      "claim": "Under O.C.G.A. § 51-12-33, an injured rider can recover damages as long as they are less than 50% at fault; recovery is reduced by their share.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Georgia Code § 51-12-33 (Justia); profiles/writer-profile.md jurisdiction table",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-23",
+      "note": "§ 51-12-33(g): plaintiff 'shall not be entitled to receive any damages if the plaintiff is 50 percent or more responsible'; (a): damages reduced in proportion to plaintiff's percentage of fault. Matches profile table."
+    },
+    {
+      "surface": "body",
+      "claim": "If a jury says you are 50% or more at fault, you recover nothing.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Georgia Code § 51-12-33(g) (Justia)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-23",
+      "note": "Exact statutory bar. The body's '0–49% at fault' and 'Forty percent fault on a $300,000 case is a $180,000 recovery' are arithmetically correct under (a)."
+    },
+    {
+      "surface": "body",
+      "claim": "Glynn County crashes file in the State or Superior Court of Glynn County in Brunswick; crashes north of the Altamaha or on the McIntosh side of I-95 belong in Darien.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Glynn County, GA — State Court; McIntosh County, GA staff directory; New Georgia Encyclopedia — Altamaha River",
+      "sourceUrl": "https://www.glynncounty.org/government/departments/state-court",
+      "retrievedAt": "2026-09-23",
+      "note": "Glynn County State Court (civil suits) and Superior Court (Brunswick Judicial Circuit) both sit in Brunswick. McIntosh County has both a State Court (Judge C. Jean Bolin) and a Superior Court (Atlantic Judicial Circuit), clerk at 310 North Way, Darien. The Altamaha River forms the Glynn–McIntosh county line in its lower reaches (Georgia Encyclopedia: https://www.georgiaencyclopedia.org/articles/geography-environment/altamaha-river/)."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia's hit-and-run statute is O.C.G.A. § 40-6-270",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Georgia Code § 40-6-270 (Justia)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-12/section-40-6-270/",
+      "retrievedAt": "2026-09-23",
+      "note": "Title: 'Hit and run; duty of driver to stop at or return to scene of accident.' Felony (1–5 years) when the accident proximately causes death or serious injury; misdemeanor otherwise."
+    },
+    {
+      "surface": "body",
+      "claim": "rural Coastal Georgia has a high uninsured-driver rate, so your own UM/UIM coverage is often the biggest source of money.",
+      "verdict": "drop",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "No primary source publishes an uninsured-driver rate for 'rural Coastal Georgia' or Glynn/McIntosh counties. The only figure available is statewide and from the Insurance Research Council (industry body, outside the accepted source set): Georgia's uninsured rate is ~25% above the 2023 national rate of 15.4% (https://insurance-research.org/uninsured-motorists/uninsured-and-underinsured-motorists-2017-2023). Drop the regional-rate assertion; keep the UM/UIM advice, which stands on § 33-7-11 alone (see recommendedEdits)."
+    },
+    {
+      "surface": "body",
+      "claim": "Severe motorcycle injuries here stabilize at Southeast Georgia Health System – Brunswick before transfer to Memorial Health Level I Trauma in Savannah.",
+      "verdict": "update",
+      "currentValue": "Memorial Health University Medical Center (Savannah, Chatham County) is a state-designated, ACS-verified Level I trauma center. Southeast Georgia Health System – Brunswick Campus holds no trauma-center designation on the Georgia DPH list (it appears on DPH's stroke-center list only).",
+      "sourceName": "Georgia Department of Public Health — Designated Trauma & Specialty Care Centers (updated 9/1/2026)",
+      "sourceUrl": "https://dph.georgia.gov/EMS/specialty-care-centers-cardiac-trauma-stroke-pediatric",
+      "retrievedAt": "2026-09-23",
+      "note": "The Level I claim for Memorial is verified (DPH list; ACS re-verification reported by WTOC 2023-09-15). The routing assertion ('stabilize at SGHS – Brunswick before transfer') is not documented by any agency source, and the heading 'Trauma routing' implies a designated pathway. Reword to state the two verifiable facts: SGHS Brunswick Campus is the county's hospital/ED; Memorial in Savannah is the region's Level I trauma center. Do not call SGHS Brunswick a trauma center."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia is a universal-helmet state under O.C.G.A. § 40-6-315 — wearing one protects both your head and your claim.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Georgia Code § 40-6-315 (Justia); GOHS 2022 Motorcycles fact sheet",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/part-2/section-40-6-315/",
+      "retrievedAt": "2026-09-23",
+      "note": "§ 40-6-315(a): no person shall operate or ride upon a motorcycle without protective headgear complying with standards established by the commissioner of public safety (DPS Rule 570-13). GOHS: 'Since 1969, Georgia's universal helmet law has never been repealed or changed.'"
+    },
+    {
+      "surface": "body",
+      "claim": "motorcyclists are nearly 24 times more likely than passenger-vehicle occupants to die in a crash per mile traveled, and roughly four times more likely to be injured (NHTSA, Traffic Safety Facts: Motorcycles)",
+      "verdict": "update",
+      "currentValue": "Per 100 million vehicle miles traveled in 2023, the motorcyclist fatality rate (31.39) was almost 28 times the passenger car occupant rate (1.13); the motorcyclist injury rate (409) was almost 5 times the passenger car occupant rate (88). 6,335 motorcyclists killed in 2023 (15% of all traffic fatalities).",
+      "sourceName": "NHTSA, Traffic Safety Facts: Motorcycles — 2023 Data (DOT HS 813 732)",
+      "sourceUrl": "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813732.pdf",
+      "retrievedAt": "2026-09-23",
+      "note": "The '24 times' figure was NHTSA's 2021-data ratio; the current fact sheet (2023 data) says 'almost 28 times' to die and 'almost 5 times' to be injured. NHTSA compares to passenger CAR occupants, not 'passenger-vehicle occupants' — match the wording and stamp the vintage."
+    },
+    {
+      "surface": "body",
+      "claim": "The vulnerability gap widens on a 70-mph interstate with limited shoulders.",
+      "verdict": "update",
+      "currentValue": "70 mph is the lawful maximum on Georgia's federal interstate highways where posted (O.C.G.A. § 40-6-181(b)(3)).",
+      "sourceName": "Georgia Code § 40-6-181 (Justia)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-9/section-40-6-181/",
+      "retrievedAt": "2026-09-23",
+      "note": "The 70-mph figure is verified. 'With limited shoulders' is an unsourced corridor characterization of a full-standard interstate; no GDOT source describes I-95 through Glynn County that way. Keep '70-mph interstate', drop 'with limited shoulders'."
+    },
+    {
+      "surface": "body",
+      "claim": "The Governor's Office of Highway Safety (GOHS) reports that motorcyclists make up roughly 2% of Georgia's registered vehicles but more than 10% of traffic fatalities each year.",
+      "verdict": "update",
+      "currentValue": "Motorcycles represent 0.7% of all registered vehicles in Georgia; motorcyclist deaths were 221 of 1,797 traffic fatalities (12%) in 2022, the state's record year, and 196 in 2023 (an 11% decrease). The share has run 10–12% every year 2013–2022.",
+      "sourceName": "GOHS, Georgia Traffic Safety Facts — 2022 Motorcycles; GOHS, 2023 Overview of Motor Vehicle Crashes",
+      "sourceUrl": "https://www.gahighwaysafety.org/wp-content/uploads/2024/06/2022-Motorcycles-Georgia-Traffic-Safety-Facts.pdf",
+      "retrievedAt": "2026-09-23",
+      "note": "The '2% of registered vehicles' figure is wrong by a factor of ~3 (GOHS: 'Motorcycles consistently represent 0.7% of all registered vehicles'). 'More than 10%' is directionally right; 12% (2022) is the exact figure. 2023 count from https://www.gahighwaysafety.org/wp-content/uploads/2025/10/2023-Overview-of-Motor-Vehicle-Crashes.pdf. GOHS also reports motorcycle operators are 6% of licensed drivers but 18% of driver fatalities (2022) if a stronger contrast is wanted."
+    },
+    {
+      "surface": "body",
+      "claim": "Glynn County's stretch of I-95 — high speeds, sudden thunderstorms, seasonal tourist volume — concentrates that risk.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "data/statistics.json — i95-national-fatal-crash-rank (NHTSA FARS 2022–2024)",
+      "sourceUrl": "https://www-fars.nhtsa.dot.gov/",
+      "retrievedAt": "2026-09-23",
+      "note": "Qualitative; no county-level I-95 motorcycle crash count exists in any primary source, so do not add one. If the editor wants a number here, the registry's verified figure is available: I-95 ranked second of 222 interstate designations by fatal crashes 2022–2024 (924 fatal crashes, 1,020 deaths, FARS)."
+    },
+    {
+      "surface": "body",
+      "claim": "Eric Roden, founding partner of Roden Law, explains that motorcycle defense rarely turns on whether the driver was negligent",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "client.json (attorneys: eric-roden, Founding Partner, CEO, roles expertVoice)",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "Attribution matches the identity record (expertVoice). The quoted 'thirty-percent rider fault' is attorney opinion, not a statistic; leave attributed as-is."
+    },
+    {
+      "surface": "body",
+      "claim": "Crashes involving an 18-wheeler add federal hours-of-service rules, ELD data, and a commercial policy that dwarfs a private-passenger one.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "FMCSA — Hours of Service; 49 CFR § 387.9",
+      "sourceUrl": "https://www.fmcsa.dot.gov/regulations/hours-of-service",
+      "retrievedAt": "2026-09-23",
+      "note": "HOS rules (49 CFR Part 395) and the ELD mandate are FMCSA regulations; the $750,000 minimum for interstate property carriers versus Georgia's $25,000 personal minimum supports 'dwarfs'."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia minimum $25,000/$50,000",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Georgia Code § 33-7-11(a)(1)(A) (Justia)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-7/section-33-7-11/",
+      "retrievedAt": "2026-09-23",
+      "note": "Statutory minimums: $25,000 per person / $50,000 per accident bodily injury / $25,000 property damage (also O.C.G.A. § 40-9-37). The table may add '/$25,000 property damage' for completeness."
+    },
+    {
+      "surface": "body",
+      "claim": "$750K – $5M+ (FMCSA minimums and up)",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "49 CFR § 387.9 (Cornell LII)",
+      "sourceUrl": "https://www.law.cornell.edu/cfr/text/49/387.9",
+      "retrievedAt": "2026-09-23",
+      "note": "Schedule of limits: $750,000 non-hazardous property (for-hire, 10,001+ lbs GVWR); $1,000,000 oil/certain hazmat; $5,000,000 high-hazard hazmat. Range as stated is correct."
+    },
+    {
+      "surface": "body",
+      "claim": "Whatever you elected — often $25K–$250K",
+      "verdict": "update",
+      "currentValue": "Georgia UM/UIM, when carried, is at least $25,000 per person / $50,000 per accident, or equal to the policy's liability limits unless the insured affirmatively chooses a lower amount (§ 33-7-11(a)(1)).",
+      "sourceName": "Georgia Code § 33-7-11(a)(1) (Justia)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-7/section-33-7-11/",
+      "retrievedAt": "2026-09-23",
+      "note": "The $25K floor is statutory; the '$250K' ceiling and 'often' are unsourced market observation. Replace with the statutory framing ('at least $25,000/$50,000, or matching your liability limits by default')."
+    },
+    {
+      "surface": "body",
+      "claim": "Often $1K–$10K",
+      "verdict": "drop",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "MedPay is optional in Georgia and no agency publishes typical limits; the range is unverifiable. Replace the cell with 'Optional; whatever you elected'."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia's minimum liability — $25,000 per person — is often gone before the rider leaves the trauma bay.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Georgia Code § 33-7-11(a)(1)(A) (Justia)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-7/section-33-7-11/",
+      "retrievedAt": "2026-09-23",
+      "note": "$25,000 per-person minimum verified; the rest is characterization."
+    },
+    {
+      "surface": "body",
+      "claim": "Severe motorcycle trauma in Glynn County is typically stabilized at Southeast Georgia Health System – Brunswick Campus, then transferred for neurosurgical or orthopedic care to Memorial Health University Medical Center in Savannah, the region's Level I Trauma Center.",
+      "verdict": "update",
+      "currentValue": "Memorial Health University Medical Center, 4700 Waters Avenue, Savannah, is a state-designated, ACS-verified Level I trauma center and the only Level I in Southeast Georgia. Southeast Georgia Health System – Brunswick Campus (2415 Parkwood Drive) is not a designated trauma center.",
+      "sourceName": "Georgia DPH — Designated Trauma & Specialty Care Centers (updated 9/1/2026); WTOC 2023-09-15",
+      "sourceUrl": "https://dph.georgia.gov/EMS/specialty-care-centers-cardiac-trauma-stroke-pediatric",
+      "retrievedAt": "2026-09-23",
+      "note": "Same finding as the key-takeaway line. 'Typically stabilized ... then transferred' is an unsourced routing claim; reword to the two facts that are verifiable (WTOC: https://www.wtoc.com/2023/09/15/memorial-health-recertified-level-1-trauma-center/)."
+    },
+    {
+      "surface": "body",
+      "claim": "State Patrol response on rural stretches can take time; witnesses leave.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Georgia DPS — Post 23 Brunswick",
+      "sourceUrl": "https://dps.georgia.gov/troop-i-map/post-23-brunswick",
+      "retrievedAt": "2026-09-23",
+      "note": "GSP Post 23 (Brunswick) covers Camden, Glynn and Wayne and 44 miles of I-95 from the Florida line to the McIntosh County line; McIntosh is covered by Post 11 (Hinesville). No response-time figure is claimed, so nothing to correct."
+    },
+    {
+      "surface": "body",
+      "claim": "Crash inside Glynn County (Brunswick, Sterling, Boys Estate, Dock Junction, Country Club Estates, the bulk of I-95): State Court of Glynn County or Superior Court of Glynn County in Brunswick.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Glynn County, GA — State Court (civil law suits); Brunswick Judicial Circuit",
+      "sourceUrl": "https://www.glynncounty.org/government/departments/state-court",
+      "retrievedAt": "2026-09-23",
+      "note": "State Court of Glynn County hears civil suits; Superior Court is the Brunswick Judicial Circuit. Sterling, Dock Junction and Country Club Estates are Census CDPs in Glynn County; 'Boys Estate' is a GNIS populated place in Glynn County (a small unincorporated community). Accurate but low-value; editor may trim."
+    },
+    {
+      "surface": "body",
+      "claim": "Crash on the McIntosh-County side of the Altamaha River basin, or on I-95 north of the line near Darien: State Court of McIntosh County or Superior Court of McIntosh County.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "McIntosh County, GA — Superior Court staff directory; GSCCCA McIntosh clerk listing",
+      "sourceUrl": "https://mcintoshcountyga.com/Directory.aspx?did=18",
+      "retrievedAt": "2026-09-23",
+      "note": "McIntosh County has a State Court (Judge C. Jean Bolin) and a Superior Court (Atlantic Judicial Circuit); the clerk (310 North Way, Darien) handles both. Verified against https://www.gsccca.org/clerks/clerk-results?cid=98."
+    },
+    {
+      "surface": "body",
+      "claim": "Out-of-state defendant with diversity jurisdiction and over $75,000 at stake: can be removed to U.S. District Court for the Southern District of Georgia (Brunswick Division).",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "28 U.S.C. § 1332(a); 28 U.S.C. § 90(c) (Cornell LII); S.D. Ga. Brunswick office",
+      "sourceUrl": "https://www.law.cornell.edu/uscode/text/28/1332",
+      "retrievedAt": "2026-09-23",
+      "note": "§ 1332(a): matter in controversy exceeds $75,000 exclusive of interest and costs. § 90(c): Brunswick Division comprises Appling, Camden, Glynn, Jeff Davis, Long, McIntosh and Wayne (https://www.law.cornell.edu/uscode/text/28/90). Courthouse: 801 Gloucester Street, Brunswick (https://www.gasd.uscourts.gov/content/brunswick)."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia's two-year personal-injury statute of limitations doesn't pause while you re-file.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Georgia Code § 9-3-33 (Justia)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+      "retrievedAt": "2026-09-23",
+      "note": "Correct as a general statement: the limitation period is not tolled by a venue error. (Georgia's renewal statute, § 9-2-61, gives six months to re-file after a dismissal in some circumstances; the post does not contradict it.)"
+    },
+    {
+      "surface": "body",
+      "claim": "under O.C.G.A. § 51-4-2 the spouse and children recover; under O.C.G.A. § 19-7-1, surviving parents recover where applicable.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Georgia Code § 51-4-2(a) and § 19-7-1(c)(2) (Justia)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-4/section-51-4-2/",
+      "retrievedAt": "2026-09-23",
+      "note": "§ 51-4-2(a): surviving spouse or, if none, children recover the full value of the decedent's life. § 19-7-1(c)(2): if the deceased child leaves no spouse or child, the right of recovery is in the parent or parents (https://law.justia.com/codes/georgia/title-19/chapter-7/article-1/section-19-7-1/). 'Where applicable' correctly captures the no-spouse/no-child condition."
+    },
+    {
+      "surface": "body",
+      "claim": "you have two years to act and roughly two weeks before key evidence walks away.",
+      "verdict": "drop",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "'Two years' is verified (§ 9-3-33); 'roughly two weeks' is an invented figure with no source (dashcam overwrite intervals, business-video retention and witness availability vary). Drop the number; keep the urgency without it."
+    },
+    {
+      "surface": "body",
+      "claim": "Eric Roden is the founding partner of Roden Law, admitted in Georgia and South Carolina",
+      "verdict": "update",
+      "currentValue": "Eric Roden — Founding Partner, CEO; bar admission: Georgia (client.json barStates: [\"GA\"]).",
+      "sourceName": "client.json (the firm's identity record; the only place these facts live per CLAUDE.md)",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "The identity record lists Eric Roden as admitted in Georgia only; Joshua Dorminy is the GA+SC attorney. On a Georgia-only post the SC admission is unnecessary anyway. Change to 'admitted in Georgia'. If the record is wrong, fix client.json first, not the post."
+    },
+    {
+      "surface": "body",
+      "claim": "representing injured motorcyclists across Coastal Georgia from the firm's Savannah and Darien offices",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "client.json (locations: Savannah, 333 Commercial Dr.; Darien, 1108 North Way)",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "Both Georgia offices match the identity record."
+    },
+    {
+      "surface": "body",
+      "claim": "Call 1-844-RESULTS",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Theme firm data (inc/firm-data.php vanity_phone '844-RESULTS'; tel:18447378587 in templates)",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "Matches the theme's canonical vanity number."
+    },
+    {
+      "surface": "body",
+      "claim": "on I-95, US-17/GA-25, or any local road inside Glynn County, GA",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "GDOT-maintained routes; US 17 / SR 25 concurrency through Glynn County (AARoads route guide)",
+      "sourceUrl": "https://www.aaroads.com/guides/us-017-north-brunswick-ga/",
+      "retrievedAt": "2026-09-23",
+      "note": "US 17 and SR 25 run concurrently through Glynn County (Sidney Lanier Bridge, Glynn Avenue, north to Darien). Route designation only; no corridor statistic claimed."
+    },
+    {
+      "surface": "excerpt",
+      "claim": "A Brunswick and Darien rider's guide to Georgia motorcycle claims, UM coverage, and the two-year filing deadline.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Georgia Code § 9-3-33 (Justia)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+      "retrievedAt": "2026-09-23",
+      "note": "Two-year deadline verified."
+    },
+    {
+      "surface": "faq:0",
+      "claim": "You have two years from the date of the crash to file a personal-injury lawsuit in Georgia under O.C.G.A. § 9-3-33. Wrongful-death claims arising from a Glynn County motorcycle crash also generally follow a two-year deadline. Narrow tolling rules can apply for minors, incapacitated victims, or certain out-of-state defendants, but treat two years as a hard deadline.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Georgia Code §§ 9-3-33, 9-3-90, 9-3-94 (Justia)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-5/section-9-3-90/",
+      "retrievedAt": "2026-09-23",
+      "note": "§ 9-3-90 tolls for persons under 18 and for legal incompetence at accrual; § 9-3-94 excludes a defendant's period of absence after removing from the state (https://law.justia.com/codes/georgia/title-9/chapter-3/article-5/section-9-3-94/). 'Certain out-of-state defendants' is a fair lay summary of § 9-3-94; optionally tighten to 'a defendant who leaves Georgia'."
+    },
+    {
+      "surface": "faq:1",
+      "claim": "Under O.C.G.A. § 51-12-33, Georgia's modified comparative negligence rule, you can still recover damages as long as you are less than 50% at fault . Your recovery is reduced by your fault percentage — 25% fault on a $200,000 case is a $150,000 recovery — but at 50% or more, you recover nothing.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Georgia Code § 51-12-33(a), (g) (Justia); profiles/writer-profile.md jurisdiction table",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-23",
+      "note": "Rule and arithmetic correct. Cosmetic: stray space before the period in 'at fault .' — remove."
+    },
+    {
+      "surface": "faq:2",
+      "claim": "Georgia's hit-and-run statute, O.C.G.A. § 40-6-270, makes leaving the scene a crime, and a fleeing driver counts as an uninsured motorist for insurance purposes. That means your own UM coverage typically steps in.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Georgia Code § 40-6-270; § 33-7-11(b)(2) (Justia)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-7/section-33-7-11/",
+      "retrievedAt": "2026-09-23",
+      "note": "§ 33-7-11(b)(2): 'A motor vehicle shall be deemed to be uninsured if the owner or operator of the motor vehicle is unknown' — recovery requires actual physical contact, or a corroborating eyewitness other than the claimant, and the crash must be reported under § 40-6-273. The 'typically' hedge is appropriate given those conditions; editor may add the physical-contact/eyewitness condition in one clause."
+    },
+    {
+      "surface": "faq:2",
+      "claim": "Hit-and-run crashes on rural Glynn County corridors are common enough that UM coverage is often the largest source of recovery a rider has.",
+      "verdict": "drop",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "No GOHS, GDOT, FARS or local-news source reports hit-and-run frequency for Glynn County corridors. Drop the frequency assertion; the preceding two sentences carry the legal point on their own. FAQ answers also publish as FAQPage structured data, so this claim is currently published twice."
+    },
+    {
+      "surface": "faq:3",
+      "claim": "Most Glynn County motorcycle crashes are filed in the State Court or Superior Court of Glynn County in Brunswick, depending on damages and parties. Crashes on the McIntosh side of the Altamaha River basin or on I-95 north of the line are filed in State or Superior Court of McIntosh County in Darien. Some cases with out-of-state defendants and over $75,000 at stake can move to federal court.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Glynn County State Court; McIntosh County directory; 28 U.S.C. §§ 90, 1332",
+      "sourceUrl": "https://www.glynncounty.org/government/departments/state-court",
+      "retrievedAt": "2026-09-23",
+      "note": "All three venue statements verified (see body venue claims). Federal venue would be the Brunswick Division of the Southern District of Georgia."
+    },
+    {
+      "surface": "faq:4",
+      "claim": "Georgia is a universal-helmet state under O.C.G.A. § 40-6-315 — all riders must wear a DOT-compliant helmet. Wearing one reduces TBI risk and takes a major comparative-fault argument off the table. Riders who weren't wearing helmets can still recover, but carriers will use it to push their fault percentage up under O.C.G.A. § 51-12-33.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Georgia Code § 40-6-315 (Justia); NHTSA 2023 Motorcycles fact sheet (FMVSS 218)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/part-2/section-40-6-315/",
+      "retrievedAt": "2026-09-23",
+      "note": "The statute requires headgear meeting standards set by the commissioner of public safety (DPS Rule 570-13), which track FMVSS 218 — the DOT standard — so 'DOT-compliant' is an acceptable lay rendering. NHTSA: all helmets sold in the US must meet FMVSS 218; helmets are estimated 37% effective in preventing rider deaths."
+    },
+    {
+      "surface": "faq:5",
+      "claim": "Roden Law handles motorcycle accident cases on a contingency fee — no upfront cost and no legal fees unless we win . Your initial case review is free.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Firm's own fee representation (consistent with body and site-wide CTA)",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "Firm policy, not an external fact; consistent with the post body. Cosmetic: stray space before the period in 'unless we win .' — remove."
+    }
+  ],
+  "recommendedEdits": [
+    "Body, NHTSA paragraph: replace 'nearly 24 times more likely than passenger-vehicle occupants to die in a crash per mile traveled, and roughly four times more likely to be injured' with 'almost 28 times more likely than passenger car occupants to die per mile traveled, and almost five times more likely to be injured (NHTSA, Traffic Safety Facts: Motorcycles, 2023 data)'.",
+    "Body, GOHS paragraph: replace 'roughly 2% of Georgia's registered vehicles but more than 10% of traffic fatalities each year' with 'less than 1% of Georgia's registered vehicles but about 12% of traffic fatalities — 221 of 1,797 deaths in 2022, a record year, and 196 in 2023 (GOHS)'.",
+    "Body, same paragraph: change 'a 70-mph interstate with limited shoulders' to 'a 70-mph interstate' (O.C.G.A. § 40-6-181 supports 70; 'limited shoulders' is unsourced).",
+    "Key Takeaways, hit-and-run bullet: delete 'rural Coastal Georgia has a high uninsured-driver rate, so' and read 'Georgia's hit-and-run statute is O.C.G.A. § 40-6-270; an unknown driver is treated as uninsured under O.C.G.A. § 33-7-11, so your own UM/UIM coverage is often the biggest source of money.'",
+    "Key Takeaways, 'Trauma routing' bullet: replace with 'Memorial Health University Medical Center in Savannah is the region's Level I trauma center; Southeast Georgia Health System's Brunswick Campus is the local hospital.' Do not describe SGHS Brunswick as a trauma center or assert a transfer pathway.",
+    "Body, 'First 72 Hours' opening sentence: same correction — state that Memorial in Savannah is Southeast Georgia's only Level I trauma center and that SGHS Brunswick Campus is the county hospital, without 'typically stabilized ... then transferred'.",
+    "Insurance table, UM row 'Typical Georgia limits': replace 'Whatever you elected — often $25K–$250K' with 'At least $25,000/$50,000 when carried; defaults to your liability limits unless you choose less (O.C.G.A. § 33-7-11)'.",
+    "Insurance table, MedPay row: replace 'Often $1K–$10K' with 'Optional; whatever you elected'.",
+    "Insurance table, BI row: optionally extend 'Georgia minimum $25,000/$50,000' to '$25,000/$50,000/$25,000' (bodily injury per person / per accident / property damage) per O.C.G.A. § 33-7-11(a)(1)(A).",
+    "Closing section: change 'you have two years to act and roughly two weeks before key evidence walks away' to 'you have two years to act and far less time before key evidence walks away'.",
+    "About the Author: change 'admitted in Georgia and South Carolina' to 'admitted in Georgia' (client.json barStates for eric-roden is GA only).",
+    "FAQ 3 (index 2): delete the final sentence 'Hit-and-run crashes on rural Glynn County corridors are common enough that UM coverage is often the largest source of recovery a rider has.' Optionally append to the prior sentence: 'provided there was physical contact with the fleeing vehicle or an eyewitness can corroborate your account.'",
+    "FAQ 2 (index 1) and FAQ 6 (index 5): remove the stray space before the period in 'at fault .' and 'unless we win .'.",
+    "Optional, body 'Different Kind of Risk' section: if a corridor figure is wanted, use the registry's verified stat — I-95 ranked second of 222 interstate designations by fatal crashes 2022–2024 (924 fatal crashes, 1,020 deaths, NHTSA FARS) — rather than any county-level number, which does not exist in a primary source."
+  ],
+  "statuteCitations": [
+    { "section": "O.C.G.A. § 9-3-33", "name": "Injuries to the person (two-year limitation)", "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/" },
+    { "section": "O.C.G.A. § 51-12-33", "name": "Reduction and apportionment of award according to percentages of fault (50% bar)", "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/" },
+    { "section": "O.C.G.A. § 40-6-315", "name": "Headgear and eye-protective devices for riders (universal helmet law)", "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/part-2/section-40-6-315/" },
+    { "section": "O.C.G.A. § 33-7-11", "name": "Uninsured motorist coverage under motor vehicle liability policies ($25,000/$50,000/$25,000; unknown driver deemed uninsured)", "url": "https://law.justia.com/codes/georgia/title-33/chapter-7/section-33-7-11/" },
+    { "section": "O.C.G.A. § 40-6-270", "name": "Hit and run; duty of driver to stop at or return to scene of accident", "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-12/section-40-6-270/" },
+    { "section": "O.C.G.A. § 51-4-2", "name": "Wrongful death of spouse or parent (surviving spouse, then children, recover)", "url": "https://law.justia.com/codes/georgia/title-51/chapter-4/section-51-4-2/" },
+    { "section": "O.C.G.A. § 19-7-1", "name": "Recovery for homicide of child (parents recover when no spouse or child survives)", "url": "https://law.justia.com/codes/georgia/title-19/chapter-7/article-1/section-19-7-1/" },
+    { "section": "O.C.G.A. § 40-6-181", "name": "Maximum speed limits (70 mph on federal interstate highways where posted)", "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-9/section-40-6-181/" },
+    { "section": "O.C.G.A. § 9-3-90", "name": "Tolling — individuals under disability (minors, legal incompetence) when cause of action accrues", "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-5/section-9-3-90/" },
+    { "section": "O.C.G.A. § 9-3-94", "name": "Tolling — removal of defendant from state", "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-5/section-9-3-94/" },
+    { "section": "28 U.S.C. § 1332", "name": "Diversity of citizenship; amount in controversy exceeds $75,000", "url": "https://www.law.cornell.edu/uscode/text/28/1332" },
+    { "section": "28 U.S.C. § 90", "name": "Georgia judicial districts — Brunswick Division: Appling, Camden, Glynn, Jeff Davis, Long, McIntosh, Wayne", "url": "https://www.law.cornell.edu/uscode/text/28/90" },
+    { "section": "49 CFR § 387.9", "name": "Financial responsibility, minimum levels — $750,000 / $1,000,000 / $5,000,000", "url": "https://www.law.cornell.edu/cfr/text/49/387.9" }
+  ],
+  "authoritativeLinks": [
+    { "name": "NHTSA — Traffic Safety Facts: Motorcycles, 2023 Data (DOT HS 813 732)", "url": "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813732.pdf" },
+    { "name": "GOHS — Georgia Traffic Safety Facts: 2022 Motorcycles", "url": "https://www.gahighwaysafety.org/wp-content/uploads/2024/06/2022-Motorcycles-Georgia-Traffic-Safety-Facts.pdf" },
+    { "name": "GOHS — 2023 Overview of Motor Vehicle Crashes in Georgia", "url": "https://www.gahighwaysafety.org/wp-content/uploads/2025/10/2023-Overview-of-Motor-Vehicle-Crashes.pdf" },
+    { "name": "Georgia DPH — Designated Trauma & Specialty Care Centers (Memorial Health, Level I)", "url": "https://dph.georgia.gov/EMS/specialty-care-centers-cardiac-trauma-stroke-pediatric" },
+    { "name": "WTOC — Memorial Health recertified as Level 1 trauma center (2023-09-15)", "url": "https://www.wtoc.com/2023/09/15/memorial-health-recertified-level-1-trauma-center/" },
+    { "name": "Glynn County, GA — State Court", "url": "https://www.glynncounty.org/government/departments/state-court" },
+    { "name": "Glynn County, GA — Brunswick Judicial Circuit (Superior Court)", "url": "https://www.glynncounty.org/government/departments/brunswick-judicial-circuit" },
+    { "name": "McIntosh County, GA — Superior Court / Clerk of Courts directory (Darien)", "url": "https://mcintoshcountyga.com/Directory.aspx?did=18" },
+    { "name": "U.S. District Court, Southern District of Georgia — Brunswick", "url": "https://www.gasd.uscourts.gov/content/brunswick" },
+    { "name": "Georgia DPS — Georgia State Patrol Post 23, Brunswick (Camden, Glynn, Wayne; I-95 to the McIntosh line)", "url": "https://dps.georgia.gov/troop-i-map/post-23-brunswick" },
+    { "name": "FMCSA — Hours of Service", "url": "https://www.fmcsa.dot.gov/regulations/hours-of-service" },
+    { "name": "New Georgia Encyclopedia — Altamaha River (Glynn–McIntosh boundary)", "url": "https://www.georgiaencyclopedia.org/articles/geography-environment/altamaha-river/" },
+    { "name": "NHTSA FARS (registry source for I-95 national fatal-crash rank)", "url": "https://www-fars.nhtsa.dot.gov/" }
+  ]
+}

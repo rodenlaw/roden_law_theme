@@ -1,0 +1,486 @@
+{
+  "postId": 1697,
+  "slug": "what-happens-if-i-resign-while-on-workers-compensation",
+  "liveUrl": "https://rodenlaw.com/blog/what-happens-if-i-resign-while-on-workers-compensation/",
+  "verifiedAt": "2026-09-23",
+  "jurisdictionNote": "Two-state post (Georgia + South Carolina). Reviewer must be Graeham C. Gillin (the post states South Carolina law). Every 'both states' sentence below was checked against both codes; the two that fail are the retaliation claims (Georgia has no such protection) and the S.C. Code § 42-9-60 citation (that section is intoxication/willful injury, not refusal of suitable employment).",
+  "verifiedClaims": [
+    {
+      "surface": "body",
+      "claim": "Resigning does <strong>not</strong> automatically terminate your right to workers' compensation benefits",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 34-9-104(a) (change in condition = change in wage-earning capacity, physical condition or status); Maloney v. Gordon County Farms, 265 Ga. 825 (1995); S.C. Code § 42-9-190 (the only statutory refusal bar, and it is conditional)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-3/part-2/section-34-9-104/",
+      "retrievedAt": "2026-09-23",
+      "note": "Neither code contains a rule that a resignation ends compensation. Georgia treats post-separation wage loss as a change-in-condition question (§ 34-9-104; Maloney). South Carolina bars compensation only during an unjustified refusal of commission-approved suitable employment (§ 42-9-190)."
+    },
+    {
+      "surface": "body",
+      "claim": "Generally <strong>not affected</strong> — treatment for the work injury continues regardless of employment status",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 34-9-200(a); S.C. Code § 42-15-60",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-6/part-1/section-34-9-200/",
+      "retrievedAt": "2026-09-23",
+      "note": "Both medical statutes run to 'the employee entitled to benefits' / the injured employee, with no employment-status condition. See the 400-week qualifier on the medical-benefits paragraph below."
+    },
+    {
+      "surface": "body",
+      "claim": "Generally <strong>not affected</strong> — based on impairment rating, not employment status",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 34-9-240(a) (refusal bar applies 'except benefits pursuant to Code Section 34-9-263'); S.C. Code § 42-9-30 (scheduled permanent partial disability)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-6/part-3/section-34-9-240/",
+      "retrievedAt": "2026-09-23",
+      "note": "Strong support in Georgia: § 34-9-240(a) expressly carves § 34-9-263 PPD benefits out of the suspension for refusing suitable employment. South Carolina scheduled awards under § 42-9-30 run 'for the period specified' regardless of employment."
+    },
+    {
+      "surface": "body",
+      "claim": "In both Georgia and South Carolina, your right to <strong>medical treatment for your work injury continues regardless of whether you are still employed</strong>. The employer's workers' comp insurer remains responsible for all reasonable and necessary medical care related to the workplace injury",
+      "verdict": "update",
+      "currentValue": "Georgia: for non-catastrophic injuries on or after July 1, 2013, the employer's medical obligation runs for a maximum of 400 weeks from the date of injury (O.C.G.A. § 34-9-200(a)(2)); catastrophic injuries and pre-July-2013 injuries have no 400-week cap. South Carolina: medical treatment for up to ten weeks from injury plus such additional time as the Commission judges will lessen the period of disability, and for life in permanent-total cases (S.C. Code § 42-15-60). Neither is conditioned on remaining employed.",
+      "sourceName": "O.C.G.A. § 34-9-200(a)(2); S.C. Code § 42-15-60",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t42c015.php",
+      "retrievedAt": "2026-09-23",
+      "note": "'Continues regardless of employment' is correct; 'all reasonable and necessary medical care' overstates Georgia, which caps non-catastrophic medical at 400 weeks. Add the 400-week clause for Georgia; do not present the SC ten-week floor as a cap (the Commission extends it)."
+    },
+    {
+      "surface": "body",
+      "claim": "TPD benefits are calculated based on the difference between your pre-injury wages and your current reduced earnings.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 34-9-262 (two-thirds of the difference, max $533/week, 350 weeks); S.C. Code § 42-9-20 (66⅔% of the difference, max 340 weeks)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-7/section-34-9-262/",
+      "retrievedAt": "2026-09-23",
+      "note": "Both statutes measure the wage the employee 'is able to earn thereafter', which is what gives the insurer its argument after a voluntary quit with zero earnings."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia courts have addressed the resignation issue in several key decisions.",
+      "verdict": "update",
+      "currentValue": "Name them: Maloney v. Gordon County Farms, 265 Ga. 825 (1995) (employee who leaves or loses a post-injury job and seeks TTD again must prove a change in condition: loss of earning power from the injury, continuing physical limitations, and a diligent but unsuccessful search for suitable work) and Padgett v. Waffle House, Inc., 269 Ga. 105 (1998) (no job-search proof required where the injury itself proximately caused the separation; the employer must prove ability to work and availability of suitable work before stopping TTD).",
+      "sourceName": "Supreme Court of Georgia, via CourtListener",
+      "sourceUrl": "https://www.courtlistener.com/opinion/1353867/maloney-v-gordon-county-farms/",
+      "retrievedAt": "2026-09-23",
+      "note": "Unsourced as written. Both opinions read in full on CourtListener (Free Law Project scans of the official reporter). Padgett: https://www.courtlistener.com/opinion/1329191/padgett-v-waffle-house-inc/"
+    },
+    {
+      "surface": "body",
+      "claim": "The Georgia State Board of Workers' Compensation looks at whether the wage loss is attributable to the injury or to the voluntary departure.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Maloney v. Gordon County Farms, 265 Ga. 825, 827 (1995) ('the dispositive issue has been whether an employee sustained a loss of earning capacity as a result of a compensable work-related injury'); Padgett v. Waffle House, 269 Ga. 105, 106 (1998) ('benefits should be awarded only where the economic change for the worse is proximately caused by the work-related injury')",
+      "sourceUrl": "https://www.courtlistener.com/opinion/1329191/padgett-v-waffle-house-inc/",
+      "retrievedAt": "2026-09-23",
+      "note": "Accurate statement of the proximate-cause inquiry."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>The \"voluntary limitation of income\" defense.</strong> Under O.C.G.A. § 34-9-240, the insurer can argue that you are voluntarily limiting your income by refusing to work or by leaving a job you were capable of performing. If the Board agrees, your wage benefits can be suspended.",
+      "verdict": "update",
+      "currentValue": "O.C.G.A. § 34-9-240 is the refusal-of-suitable-employment statute: an employee who refuses employment procured for them and suitable to their capacity is not entitled to compensation (other than § 34-9-263 PPD) during the refusal 'unless in the opinion of the board such refusal was justified.' The phrase 'voluntary limitation of income' does not appear in the statute. A resignation from a job you were able to do is analyzed as a change in condition under § 34-9-104 and Maloney (whether the ongoing wage loss is caused by the injury), and the Board may suspend income benefits by interlocutory order for 'an unjustified refusal to accept suitable and available employment' (§ 34-9-104(c)).",
+      "sourceName": "O.C.G.A. § 34-9-240(a); § 34-9-104(a), (c)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-6/part-3/section-34-9-240/",
+      "retrievedAt": "2026-09-23",
+      "note": "Rename the defense ('refusal of suitable employment' / 'change in condition'), or keep the insurer's colloquial label but stop attributing it to § 34-9-240 as if it were statutory language. Suspension mechanics are in Board Rule 240 (WC-240 notice at least 10 days before the report date, job approved by the authorized treating physician after an exam within the last 60 days, written job description with hours and pay)."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>The burden is on the employer/insurer</strong> to prove that suitable work was available within your restrictions and that your departure was truly voluntary and not related to your injury.",
+      "verdict": "update",
+      "currentValue": "The burden depends on the posture. To stop TTD after a release to restricted work, the employer must show the employee can work and that suitable work within the restrictions is available (Padgett, citing Peterson/Puritan v. Day). If the employee attempts a tendered suitable job for at least eight cumulative hours or one scheduled workday but cannot continue past 15 working days, benefits are reinstated and 'the burden shall be upon the employer' (§ 34-9-240(b)(1)). But if the employee refuses to attempt the job, the employer may suspend unilaterally on filing the Board form and 'the burden shall shift to the employee' (§ 34-9-240(b)(2)); and an employee who has left a job and seeks reinstated income benefits bears the burden of proving a change in condition, including a diligent but unsuccessful job search, unless the injury itself caused the separation (Maloney; Padgett).",
+      "sourceName": "O.C.G.A. § 34-9-240(b)(1)–(2); Maloney v. Gordon County Farms, 265 Ga. 825, 828 (1995); Padgett v. Waffle House, 269 Ga. 105, 106–107 (1998)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-6/part-3/section-34-9-240/",
+      "retrievedAt": "2026-09-23",
+      "note": "As written this is wrong for the exact scenario the post is about: a worker who resigns and then wants TTD reinstated carries the burden under Maloney. Keep the employer-burden half only for the 'employer wants to stop paying' posture."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Constructive discharge matters.</strong> If you resigned because of intolerable working conditions created by the employer — such as retaliation for filing a claim, harassment, or being assigned duties that violate your medical restrictions — this may be treated as an involuntary termination rather than a voluntary resignation.",
+      "verdict": "update",
+      "currentValue": "Georgia workers' compensation law does not use a 'constructive discharge' doctrine. What matters under Padgett is whether the work injury (or the employer's response to it) proximately caused the separation: where it did, the employee need not prove a job search to recover TTD, and a termination that is a pretext to avoid paying benefits satisfies the proximate-cause requirement (Padgett n.9, citing Hendrix v. American Mut. Liability Ins. Co.). Being assigned duties outside the authorized treating physician's restrictions is the kind of injury-related reason the cases contemplate; general harassment is not addressed in the workers' compensation cases.",
+      "sourceName": "Padgett v. Waffle House, Inc., 269 Ga. 105 (1998)",
+      "sourceUrl": "https://www.courtlistener.com/opinion/1329191/padgett-v-waffle-house-inc/",
+      "retrievedAt": "2026-09-23",
+      "note": "Reframe from 'constructive discharge' (an employment-discrimination term) to 'a separation caused by the injury'. Drop 'retaliation for filing a claim' from the Georgia list unless it is tied to the injury/benefits (see the retaliation findings below)."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Benefits survive resignation.</strong> The South Carolina Workers' Compensation Commission recognizes that benefits are tied to the injury, not the employment relationship.",
+      "verdict": "update",
+      "currentValue": "South Carolina compensation is payable for disability 'resulting from an injury' (§ 42-9-10, § 42-9-20) and medical care is owed to the injured employee (§ 42-15-60); nothing in Title 42 ends benefits on resignation. The only statutory bar tied to work refusal is § 42-9-190.",
+      "sourceName": "S.C. Code §§ 42-9-10, 42-9-20, 42-9-190, 42-15-60",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t42c009.php",
+      "retrievedAt": "2026-09-23",
+      "note": "The substance is right; the attribution 'the Commission recognizes' is unsourced. Attribute to the statute instead."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Voluntary departure defense.</strong> Similar to Georgia, the insurer can argue that wage loss is due to voluntary departure rather than the injury. The Commission examines the totality of the circumstances.",
+      "verdict": "update",
+      "currentValue": "Under § 42-9-190 the question is whether the refusal of commission-approved suitable employment was 'justified' 'in the opinion of the commission'; an employee whose temporary disability payments are stopped may request a hearing, which must be held within sixty days of the request (§ 42-9-260).",
+      "sourceName": "S.C. Code § 42-9-190; § 42-9-260",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t42c009.php",
+      "retrievedAt": "2026-09-23",
+      "note": "'Totality of the circumstances' could not be verified against any primary source; replace with the statutory 'justified' standard and the § 42-9-260 hearing right."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Unjustified refusal to work.</strong> Under S.C. Code § 42-9-60, if an injured worker unjustifiably refuses suitable employment offered by the employer, the Commission may suspend compensation.",
+      "verdict": "update",
+      "currentValue": "S.C. Code § 42-9-190: 'If an injured employee refuses employment procured for him suitable to his capacity and approved by the commission he shall not be entitled to any compensation at any time during the continuance of such refusal unless in the opinion of the commission such refusal was justified.' § 42-9-60 is a different rule: no compensation where the injury was occasioned by the employee's intoxication or wilful intent to injure himself or another.",
+      "sourceName": "S.C. Code § 42-9-190 (correct); § 42-9-60 (wrong section, intoxication/wilful injury)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t42c009.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Wrong section number, repeated in the light-duty section, the key takeaways and FAQ 6. Also note § 42-9-190 requires the employment to be 'approved by the commission' — an employer's bare offer does not by itself trigger the bar."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Good cause matters.</strong> If you resigned for a reason directly related to your injury — for example, the employer refused to honor your restrictions, the job was worsening your condition, or you relocated for medical treatment — the Commission is more likely to find that benefits should continue.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 42-9-190 ('unless in the opinion of the commission such refusal was justified')",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t42c009.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Fair gloss on the 'justified' exception; keep as reasoning, not as a rule."
+    },
+    {
+      "surface": "body",
+      "claim": "Constructive discharge is treated as an <strong>involuntary termination</strong>, not a resignation — which preserves your wage replacement benefits. Both Georgia and South Carolina recognize this doctrine, but proving it requires documentation.",
+      "verdict": "update",
+      "currentValue": "Neither state's workers' compensation statute recognizes a 'constructive discharge' doctrine, and nothing automatically 'preserves' wage benefits. Georgia: where the injury proximately caused the separation the employee is relieved of proving a job search (Padgett), and the employer must prove ability to work and available suitable work before ending TTD. South Carolina: a resignation is weighed under the 'justified' exception of § 42-9-190; separately, discharge or demotion for instituting a claim in good faith is unlawful under § 41-1-80 (remedy: lost wages and reinstatement).",
+      "sourceName": "Padgett v. Waffle House, 269 Ga. 105 (1998); S.C. Code § 42-9-190; § 41-1-80",
+      "sourceUrl": "https://www.courtlistener.com/opinion/1329191/padgett-v-waffle-house-inc/",
+      "retrievedAt": "2026-09-23",
+      "note": "'Both states recognize this doctrine' is unverifiable and, for Georgia, misdescribes the case law. Rewrite as 'why you left matters in both states' without the word 'preserves'."
+    },
+    {
+      "surface": "body",
+      "claim": "In Georgia, this triggers the \"voluntary limitation of income\" defense under O.C.G.A. § 34-9-240. In South Carolina, it may constitute an \"unjustified refusal\" under S.C. Code § 42-9-60. Either way, your wage replacement benefits are at serious risk.",
+      "verdict": "update",
+      "currentValue": "Georgia: refusing a suitable job tendered within the authorized treating physician's restrictions lets the employer suspend income benefits without a Board order under O.C.G.A. § 34-9-240(b)(2) and Board Rule 240 (written WC-240 offer at least ten days before the report date, physician approval after an exam within the last 60 days, job description with hours and pay); PPD under § 34-9-263 is not suspended. South Carolina: refusing commission-approved suitable employment bars compensation during the refusal unless the Commission finds it justified (S.C. Code § 42-9-190).",
+      "sourceName": "O.C.G.A. § 34-9-240; SBWC Board Rule 240 (2025 Rules); S.C. Code § 42-9-190",
+      "sourceUrl": "https://sbwc.georgia.gov/document/publication/2025-rules/download",
+      "retrievedAt": "2026-09-23",
+      "note": "Same two corrections as above: drop the statutory attribution of 'voluntary limitation of income' and replace § 42-9-60 with § 42-9-190."
+    },
+    {
+      "surface": "body",
+      "claim": "Some employers create \"phantom\" light-duty positions that exist only on paper to manufacture a refusal they can report to the insurer.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "SBWC Board Rule 240(b)(3) (offer must attach a description of essential duties, hours, rate of pay, physician approval, and the job location and report date)",
+      "sourceUrl": "https://sbwc.georgia.gov/document/publication/2025-rules/download",
+      "retrievedAt": "2026-09-23",
+      "note": "Commentary, not a legal claim. Rule 240's documentation requirements are the concrete Georgia check; an editor may cite them."
+    },
+    {
+      "surface": "body",
+      "claim": "Is the pay and schedule <strong>comparable?</strong> A light-duty job at half your pre-injury hours or significantly reduced pay may not qualify as \"suitable\" employment.",
+      "verdict": "update",
+      "currentValue": "'Suitable' in both statutes is measured against the employee's physical capacity ('suitable to his or her capacity', O.C.G.A. § 34-9-240(a); 'suitable to his capacity', S.C. Code § 42-9-190), not against pre-injury pay. A within-restrictions job that pays less does not by itself excuse a refusal; the wage gap is compensated as temporary partial disability — two-thirds of the difference, capped at $533/week for up to 350 weeks in Georgia (§ 34-9-262) and 66⅔% of the difference for up to 340 weeks in South Carolina (§ 42-9-20).",
+      "sourceName": "O.C.G.A. § 34-9-240(a); § 34-9-262; S.C. Code § 42-9-190; § 42-9-20",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-7/section-34-9-262/",
+      "retrievedAt": "2026-09-23",
+      "note": "Could not verify any authority that reduced pay or hours makes a job 'unsuitable'; the statutory scheme points the other way (TPD exists for exactly that gap). Rewrite or drop this bullet."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>If the new job pays equal to or more than your pre-injury wage:</strong> TTD benefits end because you are no longer losing income due to the injury",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 34-9-104(a)(1) (change in wage-earning capacity or status); S.C. Code § 42-9-20 (partial compensation is 66⅔% of the difference between pre-injury and post-injury wages)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-3/part-2/section-34-9-104/",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>If the new job pays less than your pre-injury wage:</strong> You may be entitled to TPD benefits covering two-thirds of the difference",
+      "verdict": "keep",
+      "currentValue": "Georgia: two-thirds of the difference, not more than $533.00 per week, for not more than 350 weeks from injury (injuries on or after July 1, 2023). South Carolina: 66⅔% of the difference, not more than 340 weeks, subject to the state maximum weekly rate ($1,189.94 for injuries on or after January 1, 2026; $1,134.43 for 2025).",
+      "sourceName": "O.C.G.A. § 34-9-262; S.C. Code § 42-9-20; SCWCC compensation rates",
+      "sourceUrl": "https://wcc.sc.gov/claims/compensation-rates",
+      "retrievedAt": "2026-09-23",
+      "note": "Two-thirds is correct in both states. Caps are optional to add; if any dollar figure is added it must carry its date-of-injury range."
+    },
+    {
+      "surface": "body",
+      "claim": "Failure to disclose new income while receiving wage benefits can result in fraud allegations and penalties.",
+      "verdict": "keep",
+      "currentValue": "Georgia: a willful false or misleading statement to obtain benefits is a misdemeanor punishable by a $1,000–$10,000 fine and/or up to 12 months' imprisonment (O.C.G.A. § 34-9-19). South Carolina: the Commission must refer suspected false statements or misrepresentations to the Attorney General's Insurance Fraud Division for investigation and prosecution (S.C. Code § 42-9-440).",
+      "sourceName": "O.C.G.A. § 34-9-19; S.C. Code § 42-9-440",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-19/",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "Both Georgia and South Carolina have protections against employer retaliation for filing a workers' compensation claim:",
+      "verdict": "drop",
+      "currentValue": "Only South Carolina does. Georgia has no statutory or common-law remedy for discharge in retaliation for a workers' compensation claim: at-will employment under O.C.G.A. § 34-7-1 controls, and the Court of Appeals expressly declined to create a public-policy exception 'in the absence of any express statutory provision for such a civil remedy in the Act' (Evans v. Bibb Co., 178 Ga. App. 139 (1986)). South Carolina: S.C. Code § 41-1-80.",
+      "sourceName": "Evans v. Bibb Co., 178 Ga. App. 139, 342 S.E.2d 484 (1986); S.C. Code § 41-1-80",
+      "sourceUrl": "https://www.courtlistener.com/opinion/1391565/evans-v-bibb-company/",
+      "retrievedAt": "2026-09-23",
+      "note": "Most consequential error in the post. The sentence must not survive as a 'both states' statement."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Georgia:</strong> O.C.G.A. § 34-9-17 prohibits employers from retaliating against employees for filing a workers' comp claim. If your employer pressures you to resign because you filed a claim, you may have a separate retaliation claim in addition to your workers' comp benefits.",
+      "verdict": "drop",
+      "currentValue": "O.C.G.A. § 34-9-17 is 'Grounds for denial of compensation' — it bars compensation for injuries due to willful misconduct, intoxication or drug use, and says nothing about retaliation. Georgia gives an at-will employee no retaliation claim for being fired (or pushed out) over a workers' compensation claim (Evans v. Bibb Co., 178 Ga. App. 139 (1986); O.C.G.A. § 34-7-1). What Georgia does provide: a termination that is a pretext to avoid paying benefits supports continued income benefits (Padgett n.9), and false statements by an employer to deny benefits are a misdemeanor under § 34-9-19.",
+      "sourceName": "O.C.G.A. § 34-9-17 (text); Evans v. Bibb Co., 178 Ga. App. 139 (1986)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-17/",
+      "retrievedAt": "2026-09-23",
+      "note": "Wrong statute and wrong rule. Replace the Georgia bullet with the accurate statement above; do not promise a 'separate retaliation claim' in Georgia."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>South Carolina:</strong> S.C. Code § 41-1-80 similarly prohibits retaliation. An employer who fires or pressures an employee to resign because of a workers' comp filing can face civil liability.",
+      "verdict": "update",
+      "currentValue": "S.C. Code § 41-1-80: no employer may discharge or demote an employee because the employee instituted, in good faith, a proceeding under the Workers' Compensation Law; the remedy is lost wages and reinstatement; the burden of proof is on the employee; the action must be brought within one year; and the employer has listed affirmative defenses (habitual tardiness or absence, disorderly conduct or intoxication at work, destruction of property, failure to meet work standards, malingering, embezzlement or larceny, violation of written company policy with stated remedies).",
+      "sourceName": "S.C. Code § 41-1-80",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t41c001.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Delete 'similarly' (Georgia has no counterpart). The statute covers discharge or demotion; 'pressures an employee to resign' is not in its text — say 'fires or demotes' and let the constructive-discharge point stand as argument, not statute. Note the one-year deadline and the employee's burden."
+    },
+    {
+      "surface": "body",
+      "claim": "Severance agreements, general releases, and settlement offers may waive your workers' comp rights.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "General caution; not a statement of a specific rule",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "Kept as a cautionary sentence only. Do not expand it with settlement-approval rules (O.C.G.A. § 34-9-15 / S.C. Code § 42-9-390) — those sections were not verified in this run."
+    },
+    {
+      "surface": "body",
+      "claim": "PPD benefits based on an impairment rating are less vulnerable to the voluntary-departure defense than TTD or TPD benefits.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 34-9-240(a) (refusal bar excepts § 34-9-263 benefits); S.C. Code § 42-9-30",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-6/part-3/section-34-9-240/",
+      "retrievedAt": "2026-09-23",
+      "note": "In Georgia this is stronger than 'less vulnerable': PPD is expressly excluded from the § 34-9-240 suspension."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Medical benefits continue regardless of employment status in both Georgia and South Carolina.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 34-9-200; S.C. Code § 42-15-60",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-6/part-1/section-34-9-200/",
+      "retrievedAt": "2026-09-23",
+      "note": "True of both states."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "insurers will invoke the voluntary limitation of income defense (O.C.G.A. § 34-9-240) or unjustified refusal (S.C. Code § 42-9-60)",
+      "verdict": "update",
+      "currentValue": "insurers will argue refusal of suitable employment (O.C.G.A. § 34-9-240) or unjustified refusal of commission-approved suitable employment (S.C. Code § 42-9-190)",
+      "sourceName": "O.C.G.A. § 34-9-240; S.C. Code § 42-9-190",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t42c009.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Wrong SC section (§ 42-9-60 = intoxication/wilful injury). 'Voluntary limitation of income' is not statutory language."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Constructive discharge preserves benefits.",
+      "verdict": "update",
+      "currentValue": "A separation caused by the injury or the employer's response to it is weighed differently from a personal-reasons quit in both states.",
+      "sourceName": "Padgett v. Waffle House, 269 Ga. 105 (1998); S.C. Code § 42-9-190",
+      "sourceUrl": "https://www.courtlistener.com/opinion/1329191/padgett-v-waffle-house-inc/",
+      "retrievedAt": "2026-09-23",
+      "note": "No doctrine 'preserves' benefits; see body finding."
+    },
+    {
+      "surface": "faq:0",
+      "claim": "Not automatically. Workers' compensation benefits are tied to your <strong>work-related injury</strong>, not your employment status. Medical benefits continue regardless of resignation. Wage replacement benefits (TTD and TPD) may continue if your wage loss is due to the injury rather than your choice to leave, but the insurer will likely argue your income loss is voluntary.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 34-9-104; Maloney v. Gordon County Farms; S.C. Code §§ 42-9-190, 42-15-60",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-3/part-2/section-34-9-104/",
+      "retrievedAt": "2026-09-23",
+      "note": "Accurate for both states."
+    },
+    {
+      "surface": "faq:1",
+      "claim": "Yes. In both Georgia (O.C.G.A. § 34-9-200) and South Carolina (S.C. Code § 42-15-60), the employer's workers' comp insurer must continue covering all reasonable and necessary medical treatment for the work injury regardless of your employment status.",
+      "verdict": "update",
+      "currentValue": "Yes. In both Georgia (O.C.G.A. § 34-9-200) and South Carolina (S.C. Code § 42-15-60) the obligation runs to the injured employee regardless of employment status. Georgia caps medical benefits for non-catastrophic injuries on or after July 1, 2013 at 400 weeks from the date of injury; the resignation itself changes nothing.",
+      "sourceName": "O.C.G.A. § 34-9-200(a)(2); S.C. Code § 42-15-60",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-6/part-1/section-34-9-200/",
+      "retrievedAt": "2026-09-23",
+      "note": "Citations are correct. 'All reasonable and necessary' should carry the Georgia 400-week qualifier; this answer also publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:2",
+      "claim": "In Georgia (O.C.G.A. § 34-9-240), the insurer can argue that you are voluntarily limiting your income by resigning from a job you were capable of performing. If the workers' comp board agrees, your wage replacement benefits can be suspended. The burden is on the insurer to prove suitable work was available within your restrictions.",
+      "verdict": "update",
+      "currentValue": "Georgia has no 'voluntary limitation of income' statute. O.C.G.A. § 34-9-240 suspends income benefits (not PPD) while an employee unjustifiably refuses suitable employment; a worker who resigns from a job within restrictions and later seeks TTD must prove a change in condition — continuing limitations from the injury and a diligent but unsuccessful search for suitable work (Maloney v. Gordon County Farms, 265 Ga. 825 (1995)) — unless the injury itself caused the separation (Padgett v. Waffle House, 269 Ga. 105 (1998)). The employer bears the burden of showing ability to work and available suitable work when it is the one trying to stop TTD, and after an employee tries a tendered job but cannot continue past 15 working days (§ 34-9-240(b)(1)).",
+      "sourceName": "O.C.G.A. § 34-9-240; Maloney; Padgett",
+      "sourceUrl": "https://www.courtlistener.com/opinion/1353867/maloney-v-gordon-county-farms/",
+      "retrievedAt": "2026-09-23",
+      "note": "The last sentence reverses the burden for the resignation scenario. Also publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:3",
+      "claim": "This may qualify as <strong>constructive discharge</strong>, which is treated as involuntary termination — preserving your wage benefits. Both Georgia (O.C.G.A. § 34-9-17) and South Carolina (S.C. Code § 41-1-80) prohibit employer retaliation for filing workers' comp claims. Document all incidents of retaliation before resigning.",
+      "verdict": "drop",
+      "currentValue": "South Carolina prohibits discharging or demoting an employee for instituting a workers' compensation proceeding in good faith (S.C. Code § 41-1-80: lost wages and reinstatement; employee bears the burden; one-year deadline). Georgia has no such protection — O.C.G.A. § 34-9-17 concerns grounds for denying compensation (willful misconduct, intoxication), and Georgia courts have refused to recognize a retaliatory-discharge claim (Evans v. Bibb Co., 178 Ga. App. 139 (1986)). In Georgia the reason for the separation still matters to income benefits: where the injury caused it, or the firing was a pretext to avoid paying benefits, the worker need not prove a job search (Padgett v. Waffle House, 269 Ga. 105 (1998)). Document everything before resigning.",
+      "sourceName": "S.C. Code § 41-1-80; O.C.G.A. § 34-9-17 (text); Evans v. Bibb Co.; Padgett",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t41c001.php",
+      "retrievedAt": "2026-09-23",
+      "note": "The Georgia half is false and cites the wrong statute; it also publishes as FAQPage structured data. Replace the whole answer with the corrected text."
+    },
+    {
+      "surface": "faq:4",
+      "claim": "Yes, but it affects your payments. If the new job pays equal to or more than your pre-injury wage, TTD benefits end. If it pays less, you may receive TPD benefits for the difference. Medical benefits continue regardless. You must report new employment to the insurer — failing to disclose income can result in fraud allegations.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 34-9-104, § 34-9-262, § 34-9-19; S.C. Code § 42-9-20, § 42-9-440",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-7/section-34-9-262/",
+      "retrievedAt": "2026-09-23",
+      "note": "Accurate for both states."
+    },
+    {
+      "surface": "faq:5",
+      "claim": "This is one of the highest-risk scenarios. The insurer can argue you refused suitable employment, triggering benefit suspension under Georgia's O.C.G.A. § 34-9-240 or South Carolina's S.C. Code § 42-9-60. Before refusing, have an attorney evaluate whether the job is genuinely within your restrictions and offered in good faith.",
+      "verdict": "update",
+      "currentValue": "Replace 'S.C. Code § 42-9-60' with 'S.C. Code § 42-9-190'. Optional precision: in Georgia the job must be within the authorized treating physician's restrictions and offered in writing under Board Rule 240; in South Carolina the employment must be 'approved by the commission'.",
+      "sourceName": "O.C.G.A. § 34-9-240; SBWC Board Rule 240; S.C. Code § 42-9-190",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t42c009.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Wrong SC section; also publishes as FAQPage structured data."
+    }
+  ],
+  "recommendedEdits": [
+    "Replace every 'S.C. Code § 42-9-60' with 'S.C. Code § 42-9-190' (body: SC rules bullet and light-duty section; key takeaways; FAQ 6). § 42-9-60 is the intoxication/wilful-injury bar.",
+    "Rewrite the retaliation section: delete 'Both Georgia and South Carolina have protections against employer retaliation'; replace the Georgia bullet (§ 34-9-17 is grounds-for-denial, not anti-retaliation) with: Georgia has no retaliatory-discharge remedy for workers' compensation claims (Evans v. Bibb Co., 178 Ga. App. 139 (1986); at-will employment under O.C.G.A. § 34-7-1), but a firing that is a pretext to avoid paying benefits supports continued income benefits (Padgett v. Waffle House, 269 Ga. 105 (1998)).",
+    "South Carolina retaliation bullet: drop 'similarly'; state § 41-1-80 as discharge-or-demotion for instituting a claim in good faith, remedy lost wages and reinstatement, employee bears the burden, one-year deadline.",
+    "FAQ 4 ('resigned because my employer was retaliating'): replace the answer with the corrected two-state text in verifiedClaims faq:3 — it publishes as FAQPage structured data.",
+    "Stop presenting 'voluntary limitation of income' as O.C.G.A. § 34-9-240 language (body GA bullet, light-duty section, key takeaways, FAQ 3). Call it refusal of suitable employment (§ 34-9-240) and, for a quit, a change-in-condition question (§ 34-9-104; Maloney v. Gordon County Farms, 265 Ga. 825 (1995)).",
+    "Fix the Georgia burden-of-proof bullet and FAQ 3's last sentence: a worker who resigns and seeks TTD again bears the burden (Maloney: continuing limitations plus a diligent, unsuccessful job search) unless the injury caused the separation (Padgett); the employer's burden applies when it moves to stop TTD or after a 15-working-day failed job attempt (§ 34-9-240(b)(1)).",
+    "Name the Georgia decisions the post alludes to: Maloney v. Gordon County Farms, 265 Ga. 825 (1995) and Padgett v. Waffle House, Inc., 269 Ga. 105 (1998).",
+    "Replace 'constructive discharge ... preserves your wage replacement benefits. Both Georgia and South Carolina recognize this doctrine' and the key-takeaway 'Constructive discharge preserves benefits' with: the reason for the separation matters in both states — a separation caused by the injury (Georgia: Padgett) or a justified refusal (South Carolina: § 42-9-190) is treated differently from a personal-reasons quit. Do not use 'preserves'.",
+    "Medical-benefits paragraph and FAQ 2: add the Georgia qualifier that non-catastrophic injuries on or after July 1, 2013 carry a 400-week cap on medical benefits (O.C.G.A. § 34-9-200(a)(2)); resignation does not change it.",
+    "Light-duty checklist: rewrite or drop 'A light-duty job at half your pre-injury hours or significantly reduced pay may not qualify as suitable' — suitability is measured against physical capacity in both statutes; the pay gap is what TPD (two-thirds of the difference) covers.",
+    "Optional, if a dollar figure is wanted anywhere: Georgia TTD max $800/week and TPD max $533/week for injuries on or after July 1, 2023 (O.C.G.A. §§ 34-9-261, 34-9-262; SBWC FAQ still lists these as current on 2026-09-23); South Carolina max $1,189.94/week for injuries on or after January 1, 2026 (SCWCC). Always attach the date-of-injury range.",
+    "Statute links, if added, must use the URLs in statuteCitations exactly; the Georgia year-less Justia form for this chapter includes the article/part segment.",
+    "Reviewer for this refresh: Graeham C. Gillin (two-state post that states South Carolina law)."
+  ],
+  "statuteCitations": [
+    {
+      "section": "O.C.G.A. § 34-9-240",
+      "name": "Effect of refusal of suitable employment by injured employee; attempting or refusing to attempt work with restrictions (subsection (a) excepts § 34-9-263 PPD; (b)(1) 15-working-day reinstatement with burden on employer; (b)(2) unilateral suspension with burden on employee)",
+      "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-6/part-3/section-34-9-240/"
+    },
+    {
+      "section": "O.C.G.A. § 34-9-200",
+      "name": "Compensation for medical care and other treatment (400-week cap for non-catastrophic injuries on or after July 1, 2013)",
+      "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-6/part-1/section-34-9-200/"
+    },
+    {
+      "section": "O.C.G.A. § 34-9-104",
+      "name": "Modification of award in event of change in condition (definition; § 34-9-104(c) interlocutory suspension for unjustified refusal of suitable and available employment)",
+      "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-3/part-2/section-34-9-104/"
+    },
+    {
+      "section": "O.C.G.A. § 34-9-261",
+      "name": "Compensation for total disability — two-thirds of AWW, max $800/week for injuries on or after July 1, 2023 (HB 480), 400 weeks; no later amendment in the 2025 Code, and the SBWC FAQ lists $800 as current on 2026-09-23",
+      "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-7/section-34-9-261/"
+    },
+    {
+      "section": "O.C.G.A. § 34-9-262",
+      "name": "Compensation for temporary partial disability — two-thirds of the wage difference, max $533/week for injuries on or after July 1, 2023, 350 weeks",
+      "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-7/section-34-9-262/"
+    },
+    {
+      "section": "O.C.G.A. § 34-9-17",
+      "name": "Grounds for denial of compensation (willful misconduct, intoxication, drugs) — NOT an anti-retaliation statute; do not cite it for retaliation",
+      "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-17/"
+    },
+    {
+      "section": "O.C.G.A. § 34-9-19",
+      "name": "Penalty for false or misleading statements when obtaining or denying benefits (misdemeanor; $1,000–$10,000 fine and/or up to 12 months)",
+      "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-19/"
+    },
+    {
+      "section": "S.C. Code § 42-9-190",
+      "name": "Refusal of suitable employment approved by the commission bars compensation during the refusal unless justified",
+      "url": "https://www.scstatehouse.gov/code/t42c009.php"
+    },
+    {
+      "section": "S.C. Code § 42-9-60",
+      "name": "No compensation where injury occasioned by intoxication or wilful intent to injure — the section the post cites by mistake",
+      "url": "https://www.scstatehouse.gov/code/t42c009.php"
+    },
+    {
+      "section": "S.C. Code § 42-9-10",
+      "name": "Total disability — 66⅔% of AWW, max the state average weekly wage for the preceding fiscal year ($1,189.94 for 2026 per SCWCC), 500 weeks",
+      "url": "https://www.scstatehouse.gov/code/t42c009.php"
+    },
+    {
+      "section": "S.C. Code § 42-9-20",
+      "name": "Partial disability — 66⅔% of the difference between pre- and post-injury average weekly wages, max 340 weeks",
+      "url": "https://www.scstatehouse.gov/code/t42c009.php"
+    },
+    {
+      "section": "S.C. Code § 42-9-260",
+      "name": "Termination or suspension of compensation; employee may request a hearing, to be held within sixty days",
+      "url": "https://www.scstatehouse.gov/code/t42c009.php"
+    },
+    {
+      "section": "S.C. Code § 42-9-440",
+      "name": "Commission must report suspected false statements or misrepresentation to the Attorney General's Insurance Fraud Division",
+      "url": "https://www.scstatehouse.gov/code/t42c009.php"
+    },
+    {
+      "section": "S.C. Code § 42-15-60",
+      "name": "Medical treatment and supplies (ten weeks plus such additional time as the Commission judges; lifetime in permanent-total cases)",
+      "url": "https://www.scstatehouse.gov/code/t42c015.php"
+    },
+    {
+      "section": "S.C. Code § 42-15-40",
+      "name": "Limitation — claim must be filed with the commission within two years after the accident (not in the post; recorded for the two-state deadline check)",
+      "url": "https://www.scstatehouse.gov/code/t42c015.php"
+    },
+    {
+      "section": "S.C. Code § 41-1-80",
+      "name": "No discharge or demotion for instituting workers' compensation proceedings in good faith; lost wages and reinstatement; employee bears burden; one-year limitation; listed employer defenses",
+      "url": "https://www.scstatehouse.gov/code/t41c001.php"
+    }
+  ],
+  "authoritativeLinks": [
+    {
+      "name": "Maloney v. Gordon County Farms, 265 Ga. 825, 462 S.E.2d 606 (Ga. 1995) — CourtListener",
+      "url": "https://www.courtlistener.com/opinion/1353867/maloney-v-gordon-county-farms/"
+    },
+    {
+      "name": "Padgett v. Waffle House, Inc., 269 Ga. 105, 498 S.E.2d 499 (Ga. 1998) — CourtListener",
+      "url": "https://www.courtlistener.com/opinion/1329191/padgett-v-waffle-house-inc/"
+    },
+    {
+      "name": "Evans v. Bibb Co., 178 Ga. App. 139, 342 S.E.2d 484 (Ga. Ct. App. 1986) — CourtListener",
+      "url": "https://www.courtlistener.com/opinion/1391565/evans-v-bibb-company/"
+    },
+    {
+      "name": "Georgia State Board of Workers' Compensation — 2025 Rules (Board Rule 240, Offer of Suitable Employment)",
+      "url": "https://sbwc.georgia.gov/document/publication/2025-rules/download"
+    },
+    {
+      "name": "Georgia State Board of Workers' Compensation — Workers' Compensation Law FAQs ($800 TTD / $533 TPD maximums for injuries on or after July 1, 2023)",
+      "url": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs"
+    },
+    {
+      "name": "South Carolina Workers' Compensation Commission — Compensation Rates (max $1,189.94 effective 1/1/2026; $1,134.43 for 2025; $1,093.67 for 2024)",
+      "url": "https://wcc.sc.gov/claims/compensation-rates"
+    },
+    {
+      "name": "Cornell Legal Information Institute — Workers' compensation overview (already linked in the post; allowlisted host)",
+      "url": "https://www.law.cornell.edu/wex/workers_compensation"
+    }
+  ]
+}

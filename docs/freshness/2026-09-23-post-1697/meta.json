@@ -1,0 +1,31 @@
+{
+ "excerpt": "Resigning does not automatically end workers' comp benefits in Georgia or South Carolina — but it puts wage replacement at risk. What actually changes.",
+ "keyTakeaways": "Resigning while on workers' comp does not automatically end your benefits, but it creates risks. Medical benefits continue regardless of employment status in both Georgia and South Carolina. Wage replacement benefits are vulnerable — insurers will argue refusal of suitable employment (O.C.G.A. § 34-9-240) or unjustified refusal of commission-approved suitable employment (S.C. Code § 42-9-190). A separation caused by the injury or the employer's response to it is weighed differently from a personal-reasons quit in both states. Before resigning, consult an attorney, get your doctor's restrictions documented, and consider waiting until after your impairment rating.",
+ "faqs": [
+  {
+   "question": "Will I lose my workers' comp benefits if I resign?",
+   "answer": "Not automatically. Workers' compensation benefits are tied to your <strong>work-related injury</strong>, not your employment status. Medical benefits continue regardless of resignation. Wage replacement benefits (TTD and TPD) may continue if your wage loss is due to the injury rather than your choice to leave, but the insurer will likely argue your income loss is voluntary."
+  },
+  {
+   "question": "Do medical benefits continue after I resign from my job?",
+   "answer": "Yes. In both Georgia (O.C.G.A. § 34-9-200) and South Carolina (S.C. Code § 42-15-60) the obligation to cover medical treatment for the work injury runs to the injured employee regardless of employment status. Georgia caps medical benefits for non-catastrophic injuries on or after July 1, 2013 at 400 weeks from the date of injury; the resignation itself changes nothing. Covered treatment includes doctor visits, surgery, physical therapy, and prescriptions."
+  },
+  {
+   "question": "What is the 'voluntary limitation of income' defense?",
+   "answer": "It is an insurer's label, not a Georgia statute. O.C.G.A. § 34-9-240 suspends income benefits (not PPD) while an employee unjustifiably refuses suitable employment. A worker who resigns from a job within restrictions and later seeks TTD must prove a change in condition — continuing limitations from the injury and a diligent but unsuccessful search for suitable work (Maloney v. Gordon County Farms, 265 Ga. 825 (1995)) — unless the injury itself caused the separation (Padgett v. Waffle House, 269 Ga. 105 (1998)). The employer bears the burden of showing ability to work and available suitable work when it is the one trying to stop TTD, and after an employee tries a tendered job but cannot continue past 15 working days (§ 34-9-240(b)(1))."
+  },
+  {
+   "question": "What if I resigned because my employer was retaliating against me for filing a claim?",
+   "answer": "South Carolina prohibits discharging or demoting an employee for instituting a workers' compensation proceeding in good faith (S.C. Code § 41-1-80: lost wages and reinstatement; employee bears the burden; one-year deadline). Georgia has no such protection — O.C.G.A. § 34-9-17 concerns grounds for denying compensation (willful misconduct, intoxication), and Georgia courts have refused to recognize a retaliatory-discharge claim (Evans v. Bibb Co., 178 Ga. App. 139 (1986)). In Georgia the reason for the separation still matters to income benefits: where the injury caused it, or the firing was a pretext to avoid paying benefits, the worker need not prove a job search (Padgett v. Waffle House, 269 Ga. 105 (1998)). Document everything before resigning."
+  },
+  {
+   "question": "Can I take a new job while receiving workers' comp benefits?",
+   "answer": "Yes, but it affects your payments. If the new job pays equal to or more than your pre-injury wage, TTD benefits end. If it pays less, you may receive TPD benefits for the difference. Medical benefits continue regardless. You must report new employment to the insurer — failing to disclose income can result in fraud allegations."
+  },
+  {
+   "question": "What happens if I refuse a light-duty job offer and resign instead?",
+   "answer": "This is one of the highest-risk scenarios. The insurer can argue you refused suitable employment, triggering benefit suspension under Georgia's O.C.G.A. § 34-9-240 or South Carolina's S.C. Code § 42-9-190. In Georgia the job must be within the authorized treating physician's restrictions and offered in writing under Board Rule 240; in South Carolina the employment must be approved by the Commission. Before refusing, have an attorney evaluate whether the job is genuinely within your restrictions and offered in good faith."
+  }
+ ],
+ "metaDescription": ""
+}

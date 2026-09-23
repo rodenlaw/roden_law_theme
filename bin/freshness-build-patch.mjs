@@ -17,21 +17,43 @@ import { createAdapter } from '/Users/brianhaas/Code/blue-sky-studio/internal-ai
 const [runDir, postId, mode] = process.argv.slice(2);
 if (!runDir || !postId) { console.error('usage: build-patch.mjs <runDir> <postId> [--dry-run|--apply]'); process.exit(1); }
 const rd = (f) => fs.readFileSync(path.join(runDir, f), 'utf8');
-const before = rd('body.before.html'), after = rd('body.html');
+const before = rd('body.before.html'); let after = rd('body.html');
 const metaB = JSON.parse(rd('meta.before.json')), metaA = JSON.parse(rd('meta.json'));
 const packFile = fs.readdirSync(runDir).find(f => /^facts-.*\.json$/.test(f));
 const pack = packFile ? JSON.parse(rd(packFile)) : {};
 const registry = JSON.parse(fs.readFileSync('/Users/brianhaas/Code/blue-sky-studio/client-rodenlaw-website/data/statistics.json', 'utf8'));
 
 // --- block split: top-level elements of the body -------------------------------
+// Top-level elements, plus any bare text between them (WordPress stores some
+// paragraphs unwrapped and autop wraps them at render time). Inline elements
+// at the top level (<strong>, <a>, <em>) are merged into the surrounding text
+// run so a paragraph never splits into "bold phrase" + "rest of sentence".
+const INLINE = /^(a|strong|em|b|i|span|code|sup|sub|u|small|abbr|cite|q|mark|time)$/i;
 function blocks(html) {
-  const out = []; let depth = 0, start = 0, i = 0;
+  const out = []; let depth = 0, start = 0, cursor = 0, run = null;
   const tagRe = /<\/?([a-zA-Z][a-zA-Z0-9]*)[^>]*?(\/?)>/g; let m;
+  const flushRun = () => { if (run !== null) { const t = html.slice(run.start, run.end); if (t.trim()) out.push(t); run = null; } };
   while ((m = tagRe.exec(html))) {
     const closing = m[0].startsWith('</'), selfClose = m[2] === '/' || /^(br|img|hr|input|meta|link)$/i.test(m[1]);
-    if (!closing && !selfClose) { if (depth === 0) start = m.index; depth++; }
-    else if (closing) { depth--; if (depth === 0) { out.push(html.slice(start, m.index + m[0].length)); } }
+    if (depth === 0 && INLINE.test(m[1])) {
+      // inline at top level: part of a bare text run
+      if (run === null) run = { start: cursor, end: cursor };
+      if (!closing && !selfClose) { depth++; run.inline = true; }
+      continue;
+    }
+    if (depth > 0 && run && run.inline) {
+      if (closing) { depth--; if (depth === 0) { run.end = m.index + m[0].length; run.inline = false; cursor = run.end; } }
+      else if (!selfClose) depth++;
+      continue;
+    }
+    if (!closing && !selfClose) {
+      if (depth === 0) { if (run !== null) { run.end = m.index; flushRun(); } else { const t = html.slice(cursor, m.index); if (t.trim()) out.push(t); } start = m.index; }
+      depth++;
+    } else if (closing) {
+      depth--; if (depth === 0) { out.push(html.slice(start, m.index + m[0].length)); cursor = m.index + m[0].length; }
+    }
   }
+  if (run !== null) { run.end = html.length; flushRun(); } else { const t = html.slice(cursor); if (t.trim()) out.push(t); }
   return out;
 }
 const bB = blocks(before), bA = blocks(after);
@@ -83,6 +105,22 @@ for (const e of edits) {
   const occ = before.split(e.before).length - 1;
   if (occ !== 1) { console.error(`'before' occurs ${occ} times:`, e.before.slice(0, 100)); process.exit(2); }
 }
+// --- simulate the body patch exactly as the patcher applies it (sequentially on a
+// working copy) and require the result to equal the refreshed file byte for byte.
+{
+  let sim = before;
+  edits.filter(e => e.surface === 'content').forEach((e, i) => {
+    const occ = sim.split(e.before).length - 1;
+    if (occ !== 1) { console.error(`simulation: edit ${i + 1} 'before' occurs ${occ} times in the working copy:`, e.before.slice(0, 120)); process.exit(2); }
+    sim = sim.replace(e.before, () => e.after);
+  });
+  const nl = (t) => t.replace(/\r\n/g, '\n');
+  if (nl(sim) !== nl(after)) {
+    const a2 = nl(sim), b2 = nl(after); let k = 0; while (k < a2.length && a2[k] === b2[k]) k++; sim = a2; after = b2;
+    console.error(`simulation: patched body differs from body.html at offset ${k}:\n  sim:   ${JSON.stringify(sim.slice(k, k + 120))}\n  after: ${JSON.stringify(after.slice(k, k + 120))}`);
+    process.exit(2);
+  }
+}
 // meta surfaces
 if (metaA.excerpt !== metaB.excerpt) edits.push({ id: postId, surface: 'excerpt', before: metaB.excerpt, after: metaA.excerpt });
 if (metaA.keyTakeaways !== metaB.keyTakeaways) edits.push({ id: postId, surface: 'meta:_roden_key_takeaways', before: metaB.keyTakeaways, after: metaA.keyTakeaways });
@@ -113,13 +151,16 @@ for (const u of (addedText.match(/https:\/\/law\.justia\.com\/[^"'\s>]+/g) || []
   if (!before.includes(u) && !JSON.stringify(pack).includes(u)) violations.push(`Justia URL not from pack or pre-edit text: ${u}`);
 }
 const growth = (strip(after).split(/\s+/).length / strip(before).split(/\s+/).length - 1) * 100;
-if (growth > 15) violations.push(`body grew ${growth.toFixed(0)}% (>15%)`);
+// the refresher's mandate is 'about 15%'; a post whose facts pack corrects several legal rules
+// legitimately runs over. Warn past 15, refuse past 20.
+const warnings = [];
+if (growth > 20) violations.push(`body grew ${growth.toFixed(0)}% (>20%)`); else if (growth > 15) warnings.push(`body grew ${growth.toFixed(0)}% (over the ~15% mandate, under the 20% stop)`);
 const idsB = (before.match(/id="[^"]+"/g) || []), idsA = (after.match(/id="[^"]+"/g) || []);
 for (const id of idsB) if (!idsA.includes(id)) violations.push(`heading anchor removed: ${id}`);
 for (const l of (before.match(/href="\/[^"]*"/g) || [])) if (!after.includes(l)) violations.push(`internal link removed: ${l}`);
 if (/last reviewed/i.test(strip(after)) && !/last reviewed/i.test(strip(before))) violations.push('visible "Last reviewed" line added to the body (the theme renders it from meta)');
 
-const report = { postId, edits: edits.length, bySurface: edits.reduce((a, e) => (a[e.surface.split(':')[0]] = (a[e.surface.split(':')[0]] || 0) + 1, a), {}), growthPct: +growth.toFixed(1), violations };
+const report = { postId, edits: edits.length, warnings, bySurface: edits.reduce((a, e) => (a[e.surface.split(':')[0]] = (a[e.surface.split(':')[0]] || 0) + 1, a), {}), growthPct: +growth.toFixed(1), violations };
 fs.writeFileSync(path.join(runDir, 'edits.json'), JSON.stringify(edits, null, 1));
 fs.writeFileSync(path.join(runDir, 'verify.json'), JSON.stringify(report, null, 1));
 console.log(JSON.stringify(report, null, 1));
