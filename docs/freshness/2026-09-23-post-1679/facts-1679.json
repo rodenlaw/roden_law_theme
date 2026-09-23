@@ -1,0 +1,414 @@
+{
+  "postId": 1679,
+  "slug": "can-an-insurance-company-go-against-a-police-report",
+  "verifiedAt": "2026-09-23",
+  "verifiedClaims": [
+    {
+      "surface": "body",
+      "claim": "Insurance companies in Georgia and South Carolina are not legally required to accept a police officer's determination of fault.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 56-5-1290 (reports not evidence of negligence); O.C.G.A. § 24-8-803(8) and Maloof v. MARTA, 330 Ga. App. 763 (2015) (report admissible only as to the officer's own observations)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-23",
+      "note": "No statute in either state makes a crash report or an officer's fault finding binding on an insurer; SC goes further and bars the report as evidence of negligence at trial."
+    },
+    {
+      "surface": "body",
+      "claim": "A police report is <strong>not a binding legal ruling</strong> — it is one officer's assessment of what happened based on the evidence available at the scene.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 56-5-1290; O.C.G.A. § 24-8-803(8)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "In Georgia, accident reports are filed with the Georgia Department of Transportation and can be requested through the Georgia Open Records Act (O.C.G.A. § 50-18-70).",
+      "verdict": "update",
+      "currentValue": "In Georgia, crash reports are stored by the Georgia Department of Transportation, the state's designated custodian (the GEARS database). You can buy a copy online through BuyCrash or by mailing GDOT's Individual Crash Report Request form ($5 per report; $2 more for a certified copy). Under the Open Records Act, O.C.G.A. § 50-18-72(a)(5), a requester must submit a written statement of need, but anyone named in the report — a driver, an injured person, a witness, an insurer or their attorney — is entitled to a copy.",
+      "sourceName": "GDOT Crash Data & Reporting page; GDOT Individual Crash Report Request form; O.C.G.A. § 50-18-72(a)(5)",
+      "sourceUrl": "https://www.dot.ga.gov/GDOT/pages/CrashReporting.aspx",
+      "retrievedAt": "2026-09-23",
+      "note": "GDOT page: 'Georgia DOT is the designated state agency for managing and storing the states crash reports in the GEARS database' and 'Crash reports can be purchased directly via the BuyCrash website or by mailing a request to GDOT via the GDOT Request Form.' The request form cites § 50-18-72(a)(5) and lists the statement-of-need categories; fees $5 / +$2 certified. § 50-18-70 is the Act's general findings section; the accident-report rule is § 50-18-72(a)(5). Justia § 50-18-72: https://law.justia.com/codes/georgia/title-50/chapter-18/article-4/section-50-18-72/"
+    },
+    {
+      "surface": "body",
+      "claim": "In South Carolina, crash reports are maintained by the South Carolina Department of Public Safety and can be obtained online or through the responding law enforcement agency.",
+      "verdict": "update",
+      "currentValue": "In South Carolina, the investigating officer's report is forwarded to the Department of Motor Vehicles (S.C. Code § 56-5-1270), and the official copy comes from the SCDMV: request it online, or file a Request for Copy of Collision Report (SCDMV Form FR-50) at any SCDMV branch or by mail with a $10 fee per report.",
+      "sourceName": "S.C. Code § 56-5-1270; SCDMV Collision Reports page",
+      "sourceUrl": "https://www.dmv.sc.gov/vehicle-owners/collision-reports",
+      "retrievedAt": "2026-09-23",
+      "note": "§ 56-5-1270: the officer 'must forward a written report of the accident to the Department of Motor Vehicles.' SCDMV page: request online or via Form FR-50, '$10 per collision report'; the official copy 'will not be available until it has been received and processed by the SCDMV.' SCDPS prepares the forms (§ 56-5-1300) and tabulates statistics (§ 56-5-1350) but is not the custodian of individual reports. The 'through the responding law enforcement agency' clause is not confirmed by SCDMV and should be dropped or left generic."
+    },
+    {
+      "surface": "body",
+      "claim": "the insurer may argue you were partially at fault even if the officer did not note it in the report, which can reduce your award under the comparative fault rules in both Georgia and South Carolina",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(a); Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-23",
+      "note": "Both states reduce the award by the plaintiff's percentage of fault."
+    },
+    {
+      "surface": "body",
+      "claim": "Under Georgia law, drivers involved in an accident that results in injury, death, or property damage exceeding $500 must report the accident to law enforcement (O.C.G.A. § 40-6-273).",
+      "verdict": "update",
+      "currentValue": "Under Georgia law, the driver of a vehicle involved in an accident resulting in injury, death, or apparent property damage of $500 or more must immediately notify the local police, the county sheriff, or the nearest state patrol office (O.C.G.A. § 40-6-273).",
+      "sourceName": "O.C.G.A. § 40-6-273 (Justia, 2025 Code)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-12/section-40-6-273/",
+      "retrievedAt": "2026-09-23",
+      "note": "Statute text: 'property damage to an apparent extent of $500.00 or more shall immediately, by the quickest means of communication, give notice of such accident to the local police department if such accident occurs within a municipality. If such accident occurs outside a municipality, such notice shall be given to the office of the county sheriff or to the nearest office of the state patrol.' The threshold is '$500.00 or more', not 'exceeding $500'."
+    },
+    {
+      "surface": "body",
+      "claim": "The responding officer files a crash report with the Georgia Department of Transportation.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "GDOT Crash Data & Reporting page",
+      "sourceUrl": "https://www.dot.ga.gov/GDOT/pages/CrashReporting.aspx",
+      "retrievedAt": "2026-09-23",
+      "note": "GDOT is 'the designated state agency for managing and storing the states crash reports in the GEARS database'; the Georgia Motor Vehicle Crash Report (GDOT-523) is the official law-enforcement form."
+    },
+    {
+      "surface": "body",
+      "claim": "In Georgia courts, a police report is generally considered <strong>hearsay</strong> and is <strong>not admissible at trial</strong> as proof of fault on its own.",
+      "verdict": "update",
+      "currentValue": "In Georgia courts, the parts of a police report that record the officer's own observations at the scene can come in under the public-records exception to the hearsay rule, O.C.G.A. § 24-8-803(8) (Maloof v. MARTA, Ga. Ct. App. 2015). What drivers and witnesses told the officer is still hearsay within the report and does not come in through it, and the report is not conclusive proof of fault.",
+      "sourceName": "O.C.G.A. § 24-8-803(8); Maloof v. Metropolitan Atlanta Rapid Transit Authority, No. A14A2233 (Ga. Ct. App. Feb. 24, 2015)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-24/chapter-8/article-1/section-24-8-803/",
+      "retrievedAt": "2026-09-23",
+      "note": "§ 24-8-803(8)(B)-(C): public records setting forth 'matters observed pursuant to duty imposed by law' and, 'in civil proceedings ... factual findings resulting from an investigation made pursuant to authority granted by law, unless the sources of information or other circumstances indicate lack of trustworthiness.' Maloof: 'to the extent the police report references observations made by the officer himself, the content of the police report is admissible, and the trial court erred in finding that such constituted hearsay.' Maloof opinion: https://www.courtlistener.com/opinion/2783658/maloof-v-metropolitan-atlanta-rapid-transit-authority/ . The blanket 'not admissible' statement is outdated under the 2013 Evidence Code."
+    },
+    {
+      "surface": "body",
+      "claim": "However, the officer who wrote the report <strong>can testify in person</strong> about what they observed at the scene — the physical evidence, vehicle positions, statements made, and their professional opinion about causation.",
+      "verdict": "update",
+      "currentValue": "However, the officer who wrote the report can testify in person about what they observed at the scene — the physical evidence, vehicle positions and road conditions.",
+      "sourceName": "Maloof v. MARTA (Ga. Ct. App. 2015); O.C.G.A. § 24-8-803(8)",
+      "sourceUrl": "https://www.courtlistener.com/opinion/2783658/maloof-v-metropolitan-atlanta-rapid-transit-authority/",
+      "retrievedAt": "2026-09-23",
+      "note": "Officer testimony about personal observations is supported. No primary source was found supporting a blanket right of a non-eyewitness officer to give a 'professional opinion about causation'; opinion testimony on cause depends on the officer's qualification as an expert. Drop the causation-opinion clause and the 'statements made' item (driver/witness statements relayed by the officer are hearsay)."
+    },
+    {
+      "surface": "body",
+      "claim": "Additionally, any <strong>traffic citations</strong> issued at the scene are admissible and can be strong evidence of negligence.",
+      "verdict": "update",
+      "currentValue": "The citation itself is not evidence in a Georgia civil case: the Court of Appeals holds that 'while convictions for criminal offenses are inadmissible in a civil action of this kind, a plea of guilty may be shown as an admission against interest.' If the other driver pleads guilty to the ticket (or posts a cash bond and fails to appear, which O.C.G.A. § 40-13-58 treats as an admission of guilt), that admission can be used against them — but it is only a circumstance for the jury to weigh, not conclusive proof of negligence.",
+      "sourceName": "Howard v. Lay, 259 Ga. App. 391 (2003); Gaddis v. Skelton, 226 Ga. App. 325 (1997); O.C.G.A. § 40-13-58",
+      "sourceUrl": "https://www.courtlistener.com/opinion/1268783/howard-v-lay/",
+      "retrievedAt": "2026-09-23",
+      "note": "Howard v. Lay (quoting Cannon v. Street): 'while convictions for criminal offenses are inadmissible in a civil action of this kind, a plea of guilty may be shown as an admission against interest.' Gaddis v. Skelton: 'a guilty plea to a traffic violation is admissible as an admission against interest, but does not conclusively establish negligence; it is only a circumstance to be considered along with the other evidence.' Gaddis: https://law.justia.com/cases/georgia/court-of-appeals/1997/a97a0175-0.html . The published sentence is a legal error and is repeated four more times in the post and FAQs."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia follows a <strong>modified comparative fault</strong> rule (O.C.G.A. § 51-12-33): you can recover damages as long as you are <strong>less than 50% at fault</strong>. Your award is reduced by your percentage of responsibility.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(a), (g) (Justia); writer-profile jurisdiction table",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-23",
+      "note": "§ 51-12-33(g): 'the plaintiff shall not be entitled to receive any damages if the plaintiff is 50 percent or more responsible'; (a): damages reduced 'in proportion to his or her percentage of fault.'"
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina requires that accidents involving injury, death, or property damage exceeding $1,000 be reported to law enforcement (S.C. Code § 56-5-1270).",
+      "verdict": "update",
+      "currentValue": "South Carolina requires a driver in a crash involving injury or death to notify the local police, the county sheriff, or the nearest Highway Patrol office immediately (S.C. Code § 56-5-1260). If the crash caused injury, death, or $1,000 or more in property damage and no officer investigated it, the driver or owner must file a written report with the SCDMV within 15 days (S.C. Code § 56-5-1270).",
+      "sourceName": "S.C. Code §§ 56-5-1260, 56-5-1270 (scstatehouse.gov)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-23",
+      "note": "§ 56-5-1260 (immediate notice to law enforcement) covers injury or death only and has no dollar threshold. § 56-5-1270 is the written report to the Department of Motor Vehicles: 'total property damage to an apparent extent of one thousand dollars or more which was not investigated by a law enforcement officer, within fifteen days after the accident, shall forward a written report ... to the Department of Motor Vehicles.' The threshold is '$1,000 or more', not 'exceeding $1,000', and the report goes to SCDMV, not to law enforcement."
+    },
+    {
+      "surface": "body",
+      "claim": "The responding officer files a report with the South Carolina Department of Public Safety.",
+      "verdict": "update",
+      "currentValue": "The investigating officer must forward a written report of the crash to the South Carolina Department of Motor Vehicles within 24 hours of completing the investigation (S.C. Code § 56-5-1270).",
+      "sourceName": "S.C. Code § 56-5-1270",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-23",
+      "note": "'Every law enforcement officer who ... investigates a motor vehicle accident that results in injury to or death of any person or total property damage to an apparent extent of one thousand dollars or more ... within twenty-four hours after completing the investigation, must forward a written report of the accident to the Department of Motor Vehicles.'"
+    },
+    {
+      "surface": "body",
+      "claim": "In South Carolina courts, police reports face similar hearsay limitations but may be admitted under certain exceptions.",
+      "verdict": "update",
+      "currentValue": "In South Carolina the rule is statutory and stricter: none of the required crash reports 'may be evidence of the negligence or due care of either party at the trial of any action at law to recover damages,' although an officer may refer to the report on the stand to refresh their recollection (S.C. Code § 56-5-1290).",
+      "sourceName": "S.C. Code § 56-5-1290 (scstatehouse.gov)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Full text: 'None of the reports required by Sections 56-5-1260 to 56-5-1280 may be evidence of the negligence or due care of either party at the trial of any action at law to recover damages. However, law enforcement officers may refer to these reports when testifying in order to refresh their recollection of events.' The officer's report is one of the reports required by § 56-5-1270, so it is covered. 'May be admitted under certain exceptions' is wrong for SC."
+    },
+    {
+      "surface": "body",
+      "claim": "As in Georgia, the officer can testify about their observations, and traffic citations issued at the scene are admissible evidence of negligence.",
+      "verdict": "update",
+      "currentValue": "The officer can testify about their observations, but a traffic ticket is not: South Carolina law provides that 'no evidence of conviction of any person for any violation of this chapter shall be admissible in any court in any civil action' (S.C. Code § 56-5-6160). A guilty plea to the ticket may be received as an admission, subject to explanation or rebuttal, but a bond forfeiture or a no-contest plea may not (Samuel v. Mouzon, 282 S.C. 616 (Ct. App. 1984)).",
+      "sourceName": "S.C. Code § 56-5-6160; Samuel v. Mouzon, 282 S.C. 616, 320 S.E.2d 482 (Ct. App. 1984)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/court-of-appeals/1984/282-s-c-616-2.html",
+      "retrievedAt": "2026-09-23",
+      "note": "§ 56-5-6160 'Evidence of conviction inadmissible in civil action' (scstatehouse t56c005.php). Samuel v. Mouzon: 'while a criminal conviction is not a binding adjudication of a subsequent civil action based on the same facts, a judgment on a plea of guilty may be received into evidence as an admission, subject to explanation or rebuttal'; bond forfeiture is not an admission; 'a plea of nolo cannot be used as an admission against a defendant in civil litigation' (quoting Kibler v. State). The published sentence is a legal error."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina follows a <strong>modified comparative fault</strong> rule: you can recover damages as long as you are <strong>less than 51% at fault</strong>. Your award is reduced by your percentage of responsibility.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991); writer-profile jurisdiction table; SC law pack",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "Profile is authoritative: recover if less than 51% at fault, authority is Nelson v. Concrete Supply Co., never § 15-38-15. Recommend adding the Nelson citation inline since Georgia's sentence carries its statute."
+    },
+    {
+      "surface": "body",
+      "claim": "Even though a police report may not be directly admissible as evidence of fault in Georgia or South Carolina, it remains highly valuable for several reasons:",
+      "verdict": "update",
+      "currentValue": "Even though a crash report is not evidence of negligence in South Carolina (S.C. Code § 56-5-1290) and only the officer's own observations come in under Georgia's public-records exception (O.C.G.A. § 24-8-803(8)), it remains highly valuable for several reasons:",
+      "sourceName": "S.C. Code § 56-5-1290; O.C.G.A. § 24-8-803(8); Maloof v. MARTA",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-23",
+      "note": "The two states differ; a sentence applying one rule to both must be split."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Foundation for officer testimony</strong> — the report refreshes the officer's memory and provides the basis for their courtroom testimony about what they observed",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 56-5-1290 (officers 'may refer to these reports when testifying in order to refresh their recollection of events')",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Expressly authorized by statute in SC; consistent with Georgia practice."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Settlement leverage</strong> — the vast majority of personal injury cases settle before trial, and during negotiations, the police report carries significant persuasive weight with adjusters and defense attorneys",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "Non-numeric characterization; keep as is and do not add a percentage — no figure in statistics.json covers settlement rates."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Traffic citations</strong> — if the other driver was cited for a violation (running a red light, following too closely, DUI), that citation is admissible and can be powerful evidence of negligence",
+      "verdict": "update",
+      "currentValue": "Guilty pleas — the ticket itself is not admissible in a civil case in either state (Georgia: Howard v. Lay; South Carolina: S.C. Code § 56-5-6160), but if the other driver pleads guilty to the violation, that plea can be shown as an admission against interest, subject to their explanation",
+      "sourceName": "Howard v. Lay, 259 Ga. App. 391 (2003); S.C. Code § 56-5-6160; Samuel v. Mouzon, 282 S.C. 616 (Ct. App. 1984)",
+      "sourceUrl": "https://www.courtlistener.com/opinion/1268783/howard-v-lay/",
+      "retrievedAt": "2026-09-23",
+      "note": "Third repetition of the citation error."
+    },
+    {
+      "surface": "body",
+      "claim": "For a broader overview of how evidence is used in negligence claims, see Cornell Law Institute's <a href=\"https://www.law.cornell.edu/wex/negligence\" target=\"_blank\" rel=\"noopener\">legal definition of negligence</a>.",
+      "verdict": "update",
+      "currentValue": "Cornell Law School's Legal Information Institute",
+      "sourceName": "Legal Information Institute, Cornell Law School — Wex: negligence",
+      "sourceUrl": "https://www.law.cornell.edu/wex/negligence",
+      "retrievedAt": "2026-09-23",
+      "note": "The institution is the Legal Information Institute (LII) at Cornell Law School; 'Cornell Law Institute' is not its name. Link target is fine."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Contact the responding agency</strong> — in Georgia and South Carolina, you can submit a written request to the law enforcement agency asking for factual corrections (e.g., wrong vehicle color, incorrect street name)",
+      "verdict": "update",
+      "currentValue": "Contact the investigating agency — only the agency that wrote the report can change it. Ask the investigating officer, in writing, to correct factual errors (a wrong vehicle description, a misspelled name, the wrong street); whether a supplemental or amended report is issued is up to the officer and the agency.",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "No statute or official page in either state sets out a citizen correction procedure; neither GDOT's nor SCDMV's crash-report page describes one. Keep the advice generic and discretionary; do not describe a formal 'written request' right."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Provide a supplemental statement</strong> — if the officer's narrative does not reflect your account, your attorney can submit a supplemental statement to be attached to the report",
+      "verdict": "drop",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "Not verifiable against any primary source. Official crash reports in both states are law-enforcement documents; a party or attorney statement is not 'attached to the report' by the agency. Replace with: your attorney can put your account and supporting evidence in front of the adjuster and, if needed, the court."
+    },
+    {
+      "surface": "body",
+      "claim": "An inaccurate police report does not doom your claim. Your attorney can present independent evidence that overrides the officer's conclusions.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 56-5-1290; Maloof v. MARTA",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Consistent with the report not being conclusive in either state."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Using citations as evidence of negligence</strong> — traffic tickets issued at the scene are admissible and difficult for the defense to explain away",
+      "verdict": "update",
+      "currentValue": "Using a guilty plea as an admission — the ticket itself is not admissible in either state, but if the other driver pleaded guilty to it, that plea is an admission against interest the jury may weigh (Georgia: Gaddis v. Skelton; South Carolina: Samuel v. Mouzon)",
+      "sourceName": "Gaddis v. Skelton, 226 Ga. App. 325 (1997); S.C. Code § 56-5-6160; Samuel v. Mouzon (S.C. Ct. App. 1984)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/1997/a97a0175-0.html",
+      "retrievedAt": "2026-09-23",
+      "note": "Fourth repetition. Note Gaddis holds the plea is 'not conclusive' and the pleader may explain it — the opposite of 'difficult to explain away'."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Challenging the insurer's investigation</strong> — when the insurance company's conclusions contradict the police report without credible justification, your attorney can argue that the denial was made in bad faith",
+      "verdict": "update",
+      "currentValue": "Challenging the insurer's investigation — when your own insurer (for example on an uninsured or underinsured motorist claim) denies a covered loss in the face of the police report without credible justification, your attorney can pursue the statutory bad-faith penalty: in Georgia, up to 50% of the loss or $5,000, whichever is greater, plus attorney's fees, after a 60-day written demand by the policyholder (O.C.G.A. § 33-4-6); in South Carolina, attorney's fees for an unreasonable refusal to pay (S.C. Code § 38-59-40). Those remedies run to the policyholder against their own insurer; against the other driver's insurer, the leverage is the lawsuit itself.",
+      "sourceName": "O.C.G.A. § 33-4-6(a); S.C. Code §§ 38-59-20, 38-59-40",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-4/section-33-4-6/",
+      "retrievedAt": "2026-09-23",
+      "note": "§ 33-4-6(a): 'the refusal of the insurer to pay the same within 60 days after a demand has been made by the holder of the policy and a finding has been made that such refusal was in bad faith, the insurer shall be liable to pay such holder, in addition to the loss, not more than 50 percent of the liability of the insurer for the loss or $5,000.00, whichever is greater, and all reasonable attorney's fees.' SC § 38-59-40 likewise runs to 'the holder of the policy'; § 38-59-20 defines improper claim practices for regulatory enforcement. As published, the sentence implies a bad-faith claim against the at-fault driver's insurer, which neither statute provides."
+    },
+    {
+      "surface": "body",
+      "claim": "call <strong><a href=\"tel:+18442377858\">1-844-RESULTS</a></strong>",
+      "verdict": "update",
+      "currentValue": "tel:+18447378587",
+      "sourceName": "Theme template templates/template-pillar-sc-statewide.php (tel:18447378587); keypad mapping R-E-S-U-L-T-S = 737-8587",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "The visible text 1-844-RESULTS is correct; the tel: href dials 844-237-7858, a wrong number. Fix the href only."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Police reports are generally not admissible as evidence at trial in either state, though the responding officer can testify about observations.",
+      "verdict": "update",
+      "currentValue": "In South Carolina a crash report cannot be used as evidence of negligence at trial (S.C. Code § 56-5-1290); in Georgia only the officer's own observations come in under the public-records exception (O.C.G.A. § 24-8-803(8)). In both states the responding officer can testify about what they observed.",
+      "sourceName": "S.C. Code § 56-5-1290; O.C.G.A. § 24-8-803(8); Maloof v. MARTA (2015)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-23",
+      "note": "The rules differ by state; 'either state' overstates Georgia."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "If a police report contains errors, you can request corrections through the issuing agency.",
+      "verdict": "update",
+      "currentValue": "If a police report contains errors, you can ask the investigating agency to correct them; whether it issues a supplemental report is at the agency's discretion.",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "No primary source establishes a right to corrections; hedge rather than drop."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Insurance companies can and frequently do dispute police report findings in Georgia and South Carolina, using their own investigators and adjusters to challenge the officer's fault determination.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 56-5-1290; O.C.G.A. § 24-8-803(8)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "faq:0",
+      "claim": "No. Insurance companies are not legally bound by a police officer's fault determination. The police report is one piece of evidence, not a binding legal ruling.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 56-5-1290; O.C.G.A. § 24-8-803(8)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "faq:1",
+      "claim": "The police report itself is generally considered hearsay and may not be directly admissible as proof of fault. However, the officer who wrote the report can testify in person about what they observed at the scene, and any traffic citations issued are admissible as evidence of negligence.",
+      "verdict": "update",
+      "currentValue": "It depends on the state. In South Carolina, a crash report cannot be used as evidence of negligence at trial (S.C. Code § 56-5-1290). In Georgia, the parts recording the officer's own observations can come in under the public-records exception (O.C.G.A. § 24-8-803(8)), but what drivers and witnesses told the officer remains hearsay. In both states the officer can testify about what they observed. A traffic ticket itself is not admissible in a civil case in either state; only the other driver's guilty plea to it can be shown as an admission (Georgia: Howard v. Lay; South Carolina: S.C. Code § 56-5-6160 and Samuel v. Mouzon).",
+      "sourceName": "S.C. Code §§ 56-5-1290, 56-5-6160; O.C.G.A. § 24-8-803(8); Maloof v. MARTA; Howard v. Lay; Samuel v. Mouzon",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-23",
+      "note": "This answer also renders into FAQPage structured data, so the citation error is published twice."
+    },
+    {
+      "surface": "faq:2",
+      "claim": "You can contact the responding law enforcement agency to request corrections to factual errors. Your attorney can also submit a supplemental statement and gather independent evidence such as dashcam footage, photographs, and witness statements to contradict errors in the report.",
+      "verdict": "update",
+      "currentValue": "You can ask the investigating agency to correct factual errors; whether it issues a supplemental report is up to the officer and the agency. Your attorney can also gather independent evidence such as dashcam footage, photographs, and witness statements to contradict errors in the report.",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "Remove 'submit a supplemental statement' (unverifiable; see body drop). The rest is practical advice, not a legal rule."
+    },
+    {
+      "surface": "faq:3",
+      "claim": "In Georgia, you can recover as long as you are less than 50% at fault (O.C.G.A. § 51-12-33). In South Carolina, you can recover as long as you are less than 51% at fault. Your award is reduced by your percentage of responsibility.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(g); Nelson v. Concrete Supply Co., 303 S.C. 243 (1991); writer-profile jurisdiction table",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-23",
+      "note": "Correct in both states. Optional: add '(Nelson v. Concrete Supply Co.)' after the South Carolina sentence; never § 15-38-15."
+    },
+    {
+      "surface": "faq:4",
+      "claim": "Common reasons include: the officer did not witness the accident and relied on statements, the insurer found conflicting evidence such as dashcam or surveillance footage, the insurer located new witnesses, the insurer hired an accident reconstruction expert who reached different conclusions, or the report contains factual errors that undermine its reliability.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "Practical description of adjuster conduct; no legal rule or figure asserted."
+    },
+    {
+      "surface": "faq:5",
+      "claim": "Yes. When an insurance company disputes a police report that supports your claim, an experienced personal injury attorney can subpoena the officer to testify, use traffic citations as evidence of negligence, gather independent evidence to corroborate the report, and challenge the insurer's denial as potentially being made in bad faith.",
+      "verdict": "update",
+      "currentValue": "Yes. When an insurance company disputes a police report that supports your claim, an experienced personal injury attorney can subpoena the officer to testify, use the other driver's guilty plea to a traffic charge as an admission, gather independent evidence to corroborate the report, and — when it is your own insurer refusing a covered claim — pursue the statutory bad-faith penalties (O.C.G.A. § 33-4-6; S.C. Code § 38-59-40).",
+      "sourceName": "Howard v. Lay; S.C. Code § 56-5-6160; O.C.G.A. § 33-4-6; S.C. Code § 38-59-40",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-4/section-33-4-6/",
+      "retrievedAt": "2026-09-23",
+      "note": "Two corrections: citations are not evidence; bad-faith remedies are first-party."
+    }
+  ],
+  "recommendedEdits": [
+    "Georgia threshold: change 'property damage exceeding $500' to 'apparent property damage of $500 or more' and name the recipients (local police / county sheriff / nearest state patrol office) per O.C.G.A. § 40-6-273.",
+    "Georgia report access: replace the § 50-18-70 sentence with GDOT as custodian (GEARS), BuyCrash or the GDOT Individual Crash Report Request form ($5; +$2 certified), and the § 50-18-72(a)(5) statement-of-need rule that entitles anyone named in the report to a copy.",
+    "Georgia admissibility: replace 'generally considered hearsay and not admissible' with the § 24-8-803(8) public-records rule — officer's own observations admissible (Maloof v. MARTA, 2015); driver/witness statements in the report remain hearsay.",
+    "Georgia officer testimony: keep 'can testify about what they observed'; drop 'statements made' and 'their professional opinion about causation'.",
+    "Georgia citations (body ×2, evidentiary list, attorney list, faq:1, faq:5): remove every statement that a traffic citation is admissible evidence of negligence; state that convictions and the citation itself are inadmissible in a civil action and only a guilty plea (or § 40-13-58 bond forfeiture) comes in as a rebuttable admission (Howard v. Lay; Gaddis v. Skelton).",
+    "South Carolina reporting: split into § 56-5-1260 (immediate notice to law enforcement for injury or death, no dollar threshold) and § 56-5-1270 (written report to SCDMV within 15 days when injury, death, or $1,000 or more in damage and no officer investigated); change 'exceeding $1,000' to '$1,000 or more'.",
+    "South Carolina custodian: change 'files a report with the Department of Public Safety' to 'forwards a written report to the Department of Motor Vehicles within 24 hours of completing the investigation (§ 56-5-1270)' in both places it appears; describe obtaining the report from SCDMV online or via Form FR-50 for $10.",
+    "South Carolina admissibility: replace 'similar hearsay limitations but may be admitted under certain exceptions' with § 56-5-1290 — the report may not be evidence of negligence or due care at trial; officers may use it to refresh recollection.",
+    "South Carolina citations: replace 'traffic citations issued at the scene are admissible evidence of negligence' with § 56-5-6160 (no evidence of a traffic conviction admissible in any civil action) and Samuel v. Mouzon (guilty plea admissible as an admission subject to rebuttal; bond forfeiture and nolo plea are not).",
+    "Evidentiary-value intro: split 'may not be directly admissible ... in Georgia or South Carolina' into the two state rules (SC statute bar; GA officer-observation exception).",
+    "Key takeaways: rewrite the admissibility sentence by state and hedge the 'request corrections' sentence as discretionary with the agency.",
+    "Corrections section: hedge the 'written request for factual corrections' bullet (agency discretion; no statutory procedure) and delete the 'supplemental statement attached to the report' bullet; remove the same clause from faq:2.",
+    "Bad faith (attorney list and faq:5): qualify as first-party only — O.C.G.A. § 33-4-6 (policyholder demand, 60 days, greater of 50% of the loss or $5,000 plus fees) and S.C. Code § 38-59-40 run to the policyholder against their own insurer; no bad-faith action lies against the other driver's carrier.",
+    "Add the Nelson v. Concrete Supply Co. citation to the South Carolina comparative-fault sentence (body and faq:3); never cite § 15-38-15.",
+    "Rename 'Cornell Law Institute' to 'Cornell Law School's Legal Information Institute' (link unchanged).",
+    "Fix the phone href from tel:+18442377858 to tel:+18447378587; the visible '1-844-RESULTS' is correct."
+  ],
+  "statuteCitations": [
+    { "section": "O.C.G.A. § 40-6-273", "name": "Duty to report accident resulting in injury, death, or property damage", "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-12/section-40-6-273/" },
+    { "section": "O.C.G.A. § 50-18-72", "name": "Open Records Act — exemptions; accident reports available on written statement of need, subsection (a)(5)", "url": "https://law.justia.com/codes/georgia/title-50/chapter-18/article-4/section-50-18-72/" },
+    { "section": "O.C.G.A. § 50-18-70", "name": "Open Records Act — legislative intent; definitions", "url": "https://law.justia.com/codes/georgia/title-50/chapter-18/article-4/section-50-18-70/" },
+    { "section": "O.C.G.A. § 24-8-803", "name": "Hearsay rule exceptions; availability of declarant immaterial — paragraph (8) public records and reports", "url": "https://law.justia.com/codes/georgia/title-24/chapter-8/article-1/section-24-8-803/" },
+    { "section": "O.C.G.A. § 51-12-33", "name": "Reduction and apportionment of award according to percentage of fault", "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/" },
+    { "section": "O.C.G.A. § 9-3-33", "name": "Injuries to the person — two-year limitation", "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/" },
+    { "section": "O.C.G.A. § 33-4-6", "name": "Liability of insurer for damages and attorney's fees (bad faith refusal to pay)", "url": "https://law.justia.com/codes/georgia/title-33/chapter-4/section-33-4-6/" },
+    { "section": "O.C.G.A. § 40-13-58", "name": "Failure to appear after giving cash bond as admission of guilt", "url": "https://law.justia.com/codes/georgia/title-40/chapter-13/article-3/section-40-13-58/" },
+    { "section": "S.C. Code § 56-5-1260", "name": "Immediate report of accidents resulting in personal injury or death", "url": "https://www.scstatehouse.gov/code/t56c005.php" },
+    { "section": "S.C. Code § 56-5-1270", "name": "Operators, owners, and law enforcement officers shall make written reports of certain accidents and investigations", "url": "https://www.scstatehouse.gov/code/t56c005.php" },
+    { "section": "S.C. Code § 56-5-1290", "name": "Evidentiary use of reports", "url": "https://www.scstatehouse.gov/code/t56c005.php" },
+    { "section": "S.C. Code § 56-5-1300", "name": "Accident report forms", "url": "https://www.scstatehouse.gov/code/t56c005.php" },
+    { "section": "S.C. Code § 56-5-6160", "name": "Evidence of conviction inadmissible in civil action", "url": "https://www.scstatehouse.gov/code/t56c005.php" },
+    { "section": "S.C. Code § 15-3-530", "name": "Three years — injury to the person", "url": "https://www.scstatehouse.gov/code/t15c003.php" },
+    { "section": "S.C. Code § 38-59-20", "name": "Improper claim practices", "url": "https://www.scstatehouse.gov/code/t38c059.php" },
+    { "section": "S.C. Code § 38-59-40", "name": "Attorney's fees for unreasonable refusal to pay claim", "url": "https://www.scstatehouse.gov/code/t38c059.php" }
+  ],
+  "authoritativeLinks": [
+    { "name": "GDOT — Crash Data & Reporting (custodian of Georgia crash reports; BuyCrash and mail request)", "url": "https://www.dot.ga.gov/GDOT/pages/CrashReporting.aspx" },
+    { "name": "GDOT — Individual Crash Report Request form (statement of need under § 50-18-72(a)(5); $5 fee)", "url": "https://www.dot.ga.gov/DriveSmart/CrashReporting/request_form.pdf" },
+    { "name": "BuyCrash (LexisNexis) — Georgia crash report purchase", "url": "https://buycrash.lexisnexisrisk.com/ui/home" },
+    { "name": "SCDMV — Collision Reports (online request or Form FR-50, $10)", "url": "https://www.dmv.sc.gov/vehicle-owners/collision-reports" },
+    { "name": "Maloof v. Metropolitan Atlanta Rapid Transit Authority (Ga. Ct. App. 2015) — police report admissible under § 24-8-803(8) as to officer's observations", "url": "https://www.courtlistener.com/opinion/2783658/maloof-v-metropolitan-atlanta-rapid-transit-authority/" },
+    { "name": "Howard v. Lay, 259 Ga. App. 391 (2003) — convictions inadmissible in civil action; guilty plea admissible as admission", "url": "https://www.courtlistener.com/opinion/1268783/howard-v-lay/" },
+    { "name": "Gaddis v. Skelton, 226 Ga. App. 325 (1997) — guilty plea to traffic charge is a rebuttable admission, not conclusive", "url": "https://law.justia.com/cases/georgia/court-of-appeals/1997/a97a0175-0.html" },
+    { "name": "Samuel v. Mouzon, 282 S.C. 616 (Ct. App. 1984) — § 56-5-6160; guilty plea admissible as admission, bond forfeiture and nolo plea are not", "url": "https://law.justia.com/cases/south-carolina/court-of-appeals/1984/282-s-c-616-2.html" },
+    { "name": "Legal Information Institute, Cornell Law School — Wex: negligence", "url": "https://www.law.cornell.edu/wex/negligence" }
+  ]
+}

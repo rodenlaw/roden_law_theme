@@ -1,0 +1,14 @@
+{
+ "postId": "1679",
+ "edits": 14,
+ "warnings": [
+  "body grew 20% (over the ~15% mandate, under the 20% stop)"
+ ],
+ "bySurface": {
+  "content": 9,
+  "meta": 1,
+  "faq": 4
+ },
+ "growthPct": 19.7,
+ "violations": []
+}

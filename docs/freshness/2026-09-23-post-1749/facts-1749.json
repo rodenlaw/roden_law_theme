@@ -1,0 +1,432 @@
+{
+  "postId": 1749,
+  "slug": "fault-vs-no-fault-car-insurance",
+  "verifiedAt": "2026-09-23",
+  "registryNote": "data/statistics.json holds only crash-count statistics (FARS/FMCSA); none apply to this post. The jurisdiction table in profiles/writer-profile.md and the law packs internal-ai-scripts/law/GA.json and SC.json agree with every statute verdict below.",
+  "verifiedClaims": [
+    {
+      "surface": "body",
+      "claim": "Both Georgia and South Carolina are fault states, meaning the driver who caused the accident is financially responsible for the damages they inflict.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Insurance Information Institute, Background on: No-fault auto insurance (neither state is among the 12 no-fault states); S.C. Code § 38-77-144 (no PIP mandated); Georgia OCI Auto page (tort system)",
+      "sourceUrl": "https://www.iii.org/article/background-on-no-fault-auto-insurance",
+      "retrievedAt": "2026-09-23",
+      "note": "III: 'Twelve states and Puerto Rico have no-fault auto insurance laws' — Florida, Hawaii, Kansas, Kentucky, Massachusetts, Michigan, Minnesota, New Jersey, New York, North Dakota, Pennsylvania, Utah. Georgia repealed no-fault in 1991 (law pack GA.json)."
+    },
+    {
+      "surface": "body",
+      "claim": "The Cornell Law Institute provides additional background on how no-fault insurance operates nationwide.",
+      "verdict": "update",
+      "currentValue": "Cornell Law School's Legal Information Institute (Wex: 'no-fault insurance')",
+      "sourceName": "Cornell Law School, Legal Information Institute — Wex, no-fault insurance",
+      "sourceUrl": "https://www.law.cornell.edu/wex/no-fault_insurance",
+      "retrievedAt": "2026-09-23",
+      "note": "Link resolves. The institution is named wrong: it is the Legal Information Institute at Cornell Law School, not 'Cornell Law Institute'. Anchor-text fix only."
+    },
+    {
+      "surface": "body",
+      "claim": "The majority of U.S. states — including Georgia and South Carolina — use this system.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Insurance Information Institute, Background on: No-fault auto insurance",
+      "sourceUrl": "https://www.iii.org/article/background-on-no-fault-auto-insurance",
+      "retrievedAt": "2026-09-23",
+      "note": "12 no-fault states leaves 38 tort-liability states; NAIC's 2023 Michigan paper counts '39 states with a tort liability system' by treating one choice state differently. 'Majority' is safe either way."
+    },
+    {
+      "surface": "body",
+      "claim": "No-fault systems use Personal Injury Protection (PIP) coverage to pay medical bills and lost wages up to policy limits. The right to sue the at-fault driver is restricted to cases involving serious injuries or damages exceeding a statutory threshold.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Insurance Information Institute, Background on: No-fault auto insurance",
+      "sourceUrl": "https://www.iii.org/article/background-on-no-fault-auto-insurance",
+      "retrievedAt": "2026-09-23",
+      "note": "III: 'These first-party benefits, known as personal injury protection (PIP), are a mandatory coverage in true no-fault states' and 'Victims in no-fault states may sue for severe injuries if the case meets certain conditions... the tort liability threshold... verbal... or... monetary threshold.'"
+    },
+    {
+      "surface": "body",
+      "claim": "Approximately 12 states and Puerto Rico use some form of no-fault insurance. In these states, drivers are required to carry Personal Injury Protection (PIP) insurance, which covers their own medical expenses and lost wages after an accident — regardless of who caused the crash.",
+      "verdict": "update",
+      "currentValue": "Twelve states — Florida, Hawaii, Kansas, Kentucky, Massachusetts, Michigan, Minnesota, New Jersey, New York, North Dakota, Pennsylvania and Utah — plus Puerto Rico have no-fault laws that require PIP. Three of them (Kentucky, New Jersey, Pennsylvania) are 'choice' states where motorists may reject the lawsuit threshold and keep the right to sue.",
+      "sourceName": "Insurance Information Institute, Background on: No-fault auto insurance",
+      "sourceUrl": "https://www.iii.org/article/background-on-no-fault-auto-insurance",
+      "retrievedAt": "2026-09-23",
+      "note": "The count is exact, not approximate: III says 'Twelve states and Puerto Rico have no-fault auto insurance laws.' III: 'In New Jersey, Pennsylvania and Kentucky, motorists may reject the lawsuit threshold and retain the right to sue for any auto-related injury.' Drop 'Approximately' and, if space allows, name the states and the three choice states."
+    },
+    {
+      "surface": "body",
+      "claim": "Your injuries exceed a defined severity threshold (such as permanent disfigurement, fractures, or loss of a body part)",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Insurance Information Institute, Background on: No-fault auto insurance",
+      "sourceUrl": "https://www.iii.org/article/background-on-no-fault-auto-insurance",
+      "retrievedAt": "2026-09-23",
+      "note": "This is the verbal threshold. III: 'Florida, Michigan, New Jersey, New York and Pennsylvania have verbal thresholds.' Optional improvement: name it 'verbal threshold' in the text so the two threshold types are labelled the way III and NAIC label them."
+    },
+    {
+      "surface": "body",
+      "claim": "Your medical expenses exceed a specified monetary threshold (varying by state, often $2,000 to $50,000)",
+      "verdict": "update",
+      "currentValue": "Monetary thresholds in the seven monetary-threshold states run from $1,000 (Kentucky) to $5,000 (Hawaii): Kentucky $1,000; Kansas $2,000; Massachusetts $2,000; North Dakota $2,500; Utah $3,000; Minnesota $4,000; Hawaii $5,000.",
+      "sourceName": "State statutes: HRS § 431:10C-306(b)(4) ($5,000); K.S.A. 40-3117 ($2,000); M.G.L. c. 231 § 6D ($2,000); N.D.C.C. § 26.1-41-01 ($2,500); Utah Code § 31A-22-309(1)(a)(vi) ($3,000); Minn. Stat. § 65B.51 subd. 3 ($4,000); Kentucky $1,000 per Cornell LII Wex. Threshold-type list from III.",
+      "sourceUrl": "https://www.iii.org/article/background-on-no-fault-auto-insurance",
+      "retrievedAt": "2026-09-23",
+      "note": "The '$50,000' upper bound is wrong — no state has a $50,000 monetary tort threshold ($50,000 is New York's PIP benefit limit, not a lawsuit threshold). III: 'The other seven states—Hawaii, Kansas, Kentucky, Massachusetts, Minnesota, North Dakota and Utah—use a monetary threshold.' Replace with 'often $1,000 to $5,000' or the exact range. Kentucky's $1,000 was verified only on Cornell LII (the Kentucky legislature serves the statute as a PDF WebFetch could not parse); the range holds without it ($2,000–$5,000) if the editor prefers statute-only figures."
+    },
+    {
+      "surface": "body",
+      "claim": "No-fault insurance generally does not cover property damage — if your vehicle is damaged, you still pursue the at-fault driver's liability policy or use your own collision coverage.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "NAIC, What you should know about auto insurance coverage (PIP 'pays for the treatment of injuries to you and your passengers'); HRS § 431:10C-306(f) (tort liability for property damage not abolished)",
+      "sourceUrl": "https://content.naic.org/article/what-you-should-know-about-auto-insurance-coverage",
+      "retrievedAt": "2026-09-23",
+      "note": "'Generally' is doing necessary work: Michigan runs a separate property-protection scheme. Keep the hedge."
+    },
+    {
+      "surface": "body",
+      "claim": "Right to sue | Unrestricted — you can always sue | Restricted to serious injuries or high damages",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Insurance Information Institute, Background on: No-fault auto insurance",
+      "sourceUrl": "https://www.iii.org/article/background-on-no-fault-auto-insurance",
+      "retrievedAt": "2026-09-23",
+      "note": "III: 'Tort liability: In traditional tort liability states, there are no restrictions on lawsuits.'"
+    },
+    {
+      "surface": "body",
+      "claim": "PIP required? | No (optional in some states) | Yes — mandatory",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 38-77-144 ('There is no personal injury protection (PIP) coverage mandated under the automobile insurance laws of this State'); Georgia OCI Auto page (medical payments listed as optional; no PIP); III (PIP mandatory in no-fault states)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Accurate for the GA & SC column. Georgia's optional first-party coverage is MedPay, not PIP — see the PIP-in-Georgia entries below."
+    },
+    {
+      "surface": "body",
+      "claim": "Pain and suffering claims | Available in all cases | Only if injury threshold is met",
+      "verdict": "update",
+      "currentValue": "Available — no injury threshold to clear, though recovery is reduced by (and barred above) the plaintiff's share of fault",
+      "sourceName": "Insurance Information Institute, Background on: No-fault auto insurance; O.C.G.A. § 51-12-33(g); Nelson v. Concrete Supply Co.",
+      "sourceUrl": "https://www.iii.org/article/background-on-no-fault-auto-insurance",
+      "retrievedAt": "2026-09-23",
+      "note": "III confirms tort states allow suit for pain and suffering without a threshold. 'In all cases' overstates it: the post's own comparative-fault table shows a 50%-at-fault Georgia plaintiff recovers nothing. Minor wording fix; a strict editor may leave it."
+    },
+    {
+      "surface": "body",
+      "claim": "Speed of initial payment | Can be slower — must prove fault first | Faster — file with your own insurer",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Insurance Information Institute, Background on: No-fault auto insurance",
+      "sourceUrl": "https://www.iii.org/article/background-on-no-fault-auto-insurance",
+      "retrievedAt": "2026-09-23",
+      "note": "III: 'Because high threshold no-fault systems restrict litigation, they tend to reduce costs and delays in paying claims.'"
+    },
+    {
+      "surface": "body",
+      "claim": "Premium cost | Generally lower | Generally higher due to PIP requirements",
+      "verdict": "drop",
+      "currentValue": "",
+      "sourceName": "Insurance Information Institute, Background on: No-fault auto insurance; III Insurance Fact Book 2020 (NAIC premium-driver note); NAIC CIPR, No-Fault Auto Insurance Reform in Michigan (2023)",
+      "sourceUrl": "https://www.iii.org/article/background-on-no-fault-auto-insurance",
+      "retrievedAt": "2026-09-23",
+      "note": "No primary source states that no-fault premiums are 'generally higher' or tort premiums 'generally lower'. III says the opposite is the design intent ('The no-fault system is intended to lower the cost of auto insurance by taking small claims out of the courts') and the Fact Book attributes state premium levels to urban population, miles driven per highway mile and disposable income, not to the liability system. Michigan's high PIP costs are documented but are one state, not a rule. Delete the row, or replace it with a verifiable row such as 'Coverage you must buy | Liability (GA); liability + UM (SC) | Liability + PIP'."
+    },
+    {
+      "surface": "body",
+      "claim": "Property damage claims | Against at-fault driver | Against at-fault driver (same as fault states)",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "HRS § 431:10C-306(f); NAIC, What you should know about auto insurance coverage",
+      "sourceUrl": "https://content.naic.org/article/what-you-should-know-about-auto-insurance-coverage",
+      "retrievedAt": "2026-09-23",
+      "note": "Consistent with the 'generally does not cover property damage' claim above; same Michigan caveat."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia requires all drivers to carry minimum liability insurance of: $25,000 per person for bodily injury; $50,000 per accident for bodily injury; $25,000 per accident for property damage",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 40-9-37(a) (incorporating § 33-7-11(a)(1)(A)); Georgia OCI, Auto",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-9/article-2/section-40-9-37/",
+      "retrievedAt": "2026-09-23",
+      "note": "§ 33-7-11(a)(1)(A): 'Not less than $25,000.00 because of bodily injury to or death of one person in any one accident, and, subject to such limit for one person, $50,000.00 because of bodily injury to or death of two or more persons in any one accident, and $25,000.00 because of injury to or destruction of property.' OCI: 'Bodily Injury Liability – $25,000 per person and $50,000 per incident; Property Damage Liability – $25,000 per incident.' Justia shows the 2025 Code. The post cites no section here; adding 'O.C.G.A. § 40-9-37 and § 33-7-11' is optional."
+    },
+    {
+      "surface": "body",
+      "claim": "When the at-fault driver's policy limits are too low to cover your damages, you may need to pursue your own uninsured/underinsured motorist (UM/UIM) coverage or file a personal injury lawsuit against the driver personally.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 33-7-11(a)(1), (a)(3)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-7/section-33-7-11/",
+      "retrievedAt": "2026-09-23",
+      "note": "Georgia UM/UIM must be included in every policy unless 'any insured named in the policy shall reject the coverage in writing' (§ 33-7-11(a)(3)). Optional Georgia coverage, so 'may need to pursue your own' is correct as written."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia's modified comparative fault rule under O.C.G.A. § 51-12-33 is critical to understand: your compensation is reduced by your percentage of fault, and you recover nothing if you are found 50% or more at fault. For example, if your damages total $100,000 and you are found 30% at fault, your recovery is reduced to $70,000. But if you are found 50% at fault, you receive zero.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(a), (g)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-23",
+      "note": "§ 51-12-33(g): 'the plaintiff shall not be entitled to receive any damages if the plaintiff is 50 percent or more responsible for the injury or damages claimed.' Subsection (a) requires reduction 'in proportion to his or her percentage of fault.' Matches writer-profile table."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia's statute of limitations for personal injury claims is two years from the date of the accident (O.C.G.A. § 9-3-33). Missing this deadline permanently bars your claim.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-33",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+      "retrievedAt": "2026-09-23",
+      "note": "'actions for injuries to the person shall be brought within two years after the right of action accrues.' Matches writer-profile table. (Loss-of-consortium claims get four years under the same section; property-damage claims get four years under § 9-3-32 — neither is claimed here.)"
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina's minimum liability insurance requirements are: $25,000 per person for bodily injury; $50,000 per accident for bodily injury; $25,000 per accident for property damage",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 38-77-140(A)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+      "retrievedAt": "2026-09-23",
+      "note": "'(1) twenty-five thousand dollars because of bodily injury to one person in any one accident... (2) fifty thousand dollars because of bodily injury to two or more persons in any one accident; and (3) twenty-five thousand dollars because of injury to or destruction of property of others in any one accident.' The post cites no section; adding 'S.C. Code § 38-77-140' is optional."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina additionally requires drivers to carry uninsured motorist (UM) coverage at the same minimum limits unless they specifically reject it in writing.",
+      "verdict": "update",
+      "currentValue": "South Carolina requires uninsured motorist (UM) coverage at the same minimum limits on every auto policy (S.C. Code § 38-77-150) — it cannot be rejected. Insurers must also offer, at the insured's option, additional UM above the minimums and underinsured motorist (UIM) coverage (S.C. Code § 38-77-160).",
+      "sourceName": "S.C. Code § 38-77-150(A); § 38-77-160",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+      "retrievedAt": "2026-09-23",
+      "note": "§ 38-77-150(A): 'No automobile insurance policy or contract may be issued or delivered unless it contains a provision... herein referred to as the uninsured motorist provision... within limits which may be no less than the requirements of Section 38-77-140.' There is no written-rejection clause anywhere in § 38-77-150. § 38-77-160 calls the § 38-77-150 coverage 'the mandatory coverage'. The 'unless rejected in writing' language is Georgia's rule (§ 33-7-11(a)(3)) misattributed to South Carolina. Writer-profile table: 'Uninsured motorist coverage — Mandatory — S.C. Code § 38-77-150.'"
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina's modified comparative fault rule allows recovery as long as the plaintiff is less than 51% at fault. This is slightly more favorable than Georgia's rule — a plaintiff who is exactly 50% at fault can still recover in South Carolina but cannot recover in Georgia.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+      "retrievedAt": "2026-09-23",
+      "note": "Nelson: 'a plaintiff in a negligence action may recover damages if his or her negligence is not greater than that of the defendant. The amount of the plaintiff's recovery shall be reduced in proportion to the amount of his or her negligence. If there is more than one defendant, the plaintiff's negligence shall be compared to the combined negligence of all defendants.' 50% = not greater than, so recovers. The sentence carries no citation; add 'Nelson v. Concrete Supply Co.' and never § 15-38-15 (writer-profile rule)."
+    },
+    {
+      "surface": "body",
+      "claim": "The statute of limitations for personal injury in South Carolina is three years from the date of the accident (S.C. Code § 15-3-530), providing one additional year compared to Georgia.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-3-530(5)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Three years for 'an action for assault, battery, or any injury to the person or rights of another, not arising on contract and not enumerated by law.' Matches writer-profile table."
+    },
+    {
+      "surface": "body",
+      "claim": "You are 50% at fault, $100,000 damages | $0 — barred | $50,000 (and the 20%, 49% and 51% rows)",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(a), (g); Nelson v. Concrete Supply Co.",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-23",
+      "note": "Arithmetic follows from the two rules: 20% → $80,000 both; 49% → $51,000 both; 50% → GA barred (§ 51-12-33(g)), SC $50,000 (Nelson 'not greater than'); 51% → barred in both."
+    },
+    {
+      "surface": "body",
+      "claim": "especially in Georgia, where being assigned just 50% fault eliminates your entire claim.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(g)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia does not require PIP coverage, but drivers can purchase it. PIP pays your medical expenses and lost wages up to your policy limit regardless of fault — similar to how no-fault coverage works. This can provide faster access to funds while the fault investigation proceeds.",
+      "verdict": "update",
+      "currentValue": "Georgia does not require PIP, and Georgia's insurance department lists no PIP product. The optional first-party coverage sold in Georgia is Medical Payments (MedPay) coverage, which pays medical expenses for you and your passengers regardless of fault, up to the limit you buy. Unlike PIP it does not replace lost wages.",
+      "sourceName": "Georgia OCI, Auto ('Other optional coverages include medical payments coverage...'); Georgia OCI, Consumer Guide for Automobile Insurance ('you can purchase Medical Payments coverage in varying amounts'); III, Background on: No-fault (Georgia's former no-fault law and PIP repealed)",
+      "sourceUrl": "https://oci.georgia.gov/insurance-resources/auto",
+      "retrievedAt": "2026-09-23",
+      "note": "The heading 'Personal Injury Protection (PIP) in Georgia' and this paragraph describe a product Georgia insurers do not sell under that name; Georgia repealed no-fault/PIP in 1991 (law pack GA.json: 'Georgia does not require PIP. Optional MedPay is the Georgia equivalent'). The lost-wages sentence is the substantive error — MedPay covers medical expenses only. Rename the H3 to 'Medical Payments (MedPay) Coverage in Georgia' and rewrite the paragraph around MedPay; the law pack carries a 'georgia-requires-pip' assertion that will keep flagging PIP-in-Georgia phrasing."
+    },
+    {
+      "surface": "body",
+      "claim": "Both states allow UM/UIM coverage, and South Carolina requires it unless rejected in writing.",
+      "verdict": "update",
+      "currentValue": "Georgia requires insurers to include UM/UIM coverage unless the insured rejects it in writing (O.C.G.A. § 33-7-11(a)(3)). South Carolina makes UM coverage mandatory on every policy at the minimum limits (S.C. Code § 38-77-150) and requires insurers to offer UIM at the insured's option (§ 38-77-160).",
+      "sourceName": "O.C.G.A. § 33-7-11(a)(3); S.C. Code § 38-77-150(A); § 38-77-160",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Same misattribution as the South Carolina UM sentence: the written-rejection rule is Georgia's. § 33-7-11(a)(3): 'The coverage required under paragraph (1) of this subsection shall not be applicable where any insured named in the policy shall reject the coverage in writing.'"
+    },
+    {
+      "surface": "body",
+      "claim": "In Georgia, accidents involving injury, death, or property damage over $500 must be reported.",
+      "verdict": "update",
+      "currentValue": "In Georgia, the driver must immediately report any accident involving injury, death, or apparent property damage of $500 or more to local police, the county sheriff, or the state patrol (O.C.G.A. § 40-6-273).",
+      "sourceName": "O.C.G.A. § 40-6-273",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-12/section-40-6-273/",
+      "retrievedAt": "2026-09-23",
+      "note": "Statute: 'property damage to an apparent extent of $500.00 or more shall immediately, by the quickest means of communication, give notice of such accident to the local police department if such accident occurs within a municipality... [otherwise] to the office of the county sheriff or to the nearest office of the state patrol.' 'Over $500' should be '$500 or more'; adding the citation is optional. Note the Justia path is article-12, not article-11."
+    },
+    {
+      "surface": "body",
+      "claim": "Filing suit within the applicable deadline — two years in Georgia (O.C.G.A. § 9-3-33) or three years in South Carolina (S.C. Code § 15-3-530)",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-33; S.C. Code § 15-3-530(5)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "Roden Law handles car accident claims across Georgia and South Carolina on a contingency fee basis — you pay no attorney fees unless we win compensation for you. ... call 1-844-RESULTS ... for a free consultation.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Firm facts: profiles/writer-profile.md line 26 (toll-free 1-844-RESULTS; contingency fee, no fees unless we win); wordpress/wp-content/themes/roden-law/inc/firm-data.php line 25 (8447378587)",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "Firm CTA, not an external fact; matches the repo's firm data. Left untouched."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Georgia and South Carolina are both fault states where the at-fault driver pays for damages, unlike no-fault states that use PIP coverage.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Insurance Information Institute, Background on: No-fault auto insurance; S.C. Code § 38-77-144; Georgia OCI, Auto",
+      "sourceUrl": "https://www.iii.org/article/background-on-no-fault-auto-insurance",
+      "retrievedAt": "2026-09-23",
+      "note": "The excerpt ('Georgia and South Carolina are both at-fault states, not no-fault') makes the same claim and also stands."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Georgia bars recovery at 50% fault (O.C.G.A. § 51-12-33); South Carolina bars at 51%.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(g); Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+      "retrievedAt": "2026-09-23",
+      "note": "Optional: append '(Nelson v. Concrete Supply Co.)' after 51% so the SC bar carries its authority the way the GA bar does."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Georgia's statute of limitations is two years (O.C.G.A. § 9-3-33); South Carolina allows three years (S.C. Code § 15-3-530).",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-33; S.C. Code § 15-3-530(5)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "faq:0",
+      "claim": "Georgia is a fault state. The driver who caused the accident is financially responsible for the injured party's damages, including medical expenses, lost wages, property damage, and pain and suffering. Injured parties can file a claim with the at-fault driver's insurer or sue directly in civil court.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Insurance Information Institute, Background on: No-fault auto insurance; Georgia OCI, Auto",
+      "sourceUrl": "https://oci.georgia.gov/insurance-resources/auto",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "faq:1",
+      "claim": "South Carolina is a fault state, similar to Georgia. The at-fault driver's liability insurance covers the injured party's damages. South Carolina additionally requires uninsured motorist (UM) coverage unless specifically rejected in writing, providing extra protection when at-fault drivers lack insurance.",
+      "verdict": "update",
+      "currentValue": "South Carolina is a fault state, similar to Georgia. The at-fault driver's liability insurance covers the injured party's damages. South Carolina also requires uninsured motorist (UM) coverage on every auto policy (S.C. Code § 38-77-150), which cannot be rejected, providing extra protection when at-fault drivers lack insurance.",
+      "sourceName": "S.C. Code § 38-77-144; § 38-77-150(A); § 38-77-160",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Remove 'unless specifically rejected in writing' — no such clause exists in § 38-77-150; it is Georgia's rule. This answer also renders into FAQPage structured data, so the error is published twice."
+    },
+    {
+      "surface": "faq:2",
+      "claim": "In a fault state, you file a claim against the at-fault driver's insurance. In a no-fault state, you file with your own insurer through Personal Injury Protection (PIP) coverage regardless of who caused the crash. No-fault states restrict your right to sue unless injuries meet a severity or monetary threshold.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Insurance Information Institute, Background on: No-fault auto insurance",
+      "sourceUrl": "https://www.iii.org/article/background-on-no-fault-auto-insurance",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "faq:3",
+      "claim": "Both states use modified comparative fault. In Georgia (O.C.G.A. § 51-12-33), you recover nothing if 50% or more at fault. In South Carolina, you recover nothing if 51% or more at fault. Your compensation is reduced by your percentage of fault — so 30% fault on a $100,000 claim yields $70,000.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(a), (g); Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+      "retrievedAt": "2026-09-23",
+      "note": "Optional: cite Nelson v. Concrete Supply Co. for the South Carolina sentence. Never § 15-38-15."
+    },
+    {
+      "surface": "faq:4",
+      "claim": "Georgia has a two-year statute of limitations for personal injury claims (O.C.G.A. § 9-3-33). South Carolina allows three years (S.C. Code § 15-3-530). Missing these deadlines permanently bars your ability to file a lawsuit, so it is critical to act promptly.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-33; S.C. Code § 15-3-530(5)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "faq:5",
+      "claim": "Yes. While Georgia does not require PIP coverage, drivers can purchase it voluntarily. PIP pays your medical expenses and lost wages up to your policy limit regardless of fault, providing faster access to funds while the liability investigation is ongoing.",
+      "verdict": "update",
+      "currentValue": "Not as PIP. Georgia does not require PIP and Georgia insurers sell Medical Payments (MedPay) coverage instead — an optional coverage that pays medical expenses for you and your passengers regardless of fault, up to the limit you choose. It does not replace lost wages; those are recovered from the at-fault driver's liability insurer.",
+      "sourceName": "Georgia OCI, Auto; Georgia OCI, Consumer Guide for Automobile Insurance",
+      "sourceUrl": "https://oci.georgia.gov/insurance-resources/auto",
+      "retrievedAt": "2026-09-23",
+      "note": "The question ('Can I buy PIP insurance in Georgia...') can stay; the answer should redirect to MedPay and drop the lost-wages claim. Renders into FAQPage structured data."
+    }
+  ],
+  "recommendedEdits": [
+    "Body, South Carolina section: replace 'requires drivers to carry uninsured motorist (UM) coverage at the same minimum limits unless they specifically reject it in writing' with 'requires uninsured motorist (UM) coverage at the same minimum limits on every auto policy (S.C. Code § 38-77-150); insurers must also offer underinsured motorist (UIM) coverage at your option (S.C. Code § 38-77-160)'.",
+    "Body, PIP and UM section: replace 'Both states allow UM/UIM coverage, and South Carolina requires it unless rejected in writing' with 'Georgia policies include UM/UIM unless you reject it in writing (O.C.G.A. § 33-7-11); South Carolina requires UM on every policy (S.C. Code § 38-77-150) and requires insurers to offer UIM (§ 38-77-160)'.",
+    "FAQ 1 (Is South Carolina a fault or no-fault state?): delete 'unless specifically rejected in writing'; say UM is required on every policy under S.C. Code § 38-77-150.",
+    "Body, H3 'Personal Injury Protection (PIP) in Georgia' → 'Medical Payments (MedPay) Coverage in Georgia'; rewrite the paragraph: Georgia does not require PIP and does not sell it; MedPay is the optional first-party coverage, pays medical expenses regardless of fault, does not cover lost wages.",
+    "FAQ 5 (Can I buy PIP insurance in Georgia?): answer 'Not as PIP' and describe MedPay; remove 'lost wages'.",
+    "Body, no-fault section: replace 'Approximately 12 states and Puerto Rico' with 'Twelve states — Florida, Hawaii, Kansas, Kentucky, Massachusetts, Michigan, Minnesota, New Jersey, New York, North Dakota, Pennsylvania and Utah — plus Puerto Rico'; add that Kentucky, New Jersey and Pennsylvania are 'choice' states where drivers may reject the lawsuit threshold (Insurance Information Institute).",
+    "Body, monetary-threshold bullet: replace 'often $2,000 to $50,000' with 'from $1,000 in Kentucky to $5,000 in Hawaii'.",
+    "Body, severity-threshold bullet: label it the 'verbal threshold' (Florida, Michigan, New Jersey, New York, Pennsylvania) to match the III/NAIC terminology — optional.",
+    "Body, comparison table: delete the 'Premium cost' row (unsupported) or replace it with 'Coverage you must buy | Liability (GA); liability + UM (SC) | Liability + PIP'.",
+    "Body, comparison table: 'Pain and suffering claims — Available in all cases' → 'Available — no injury threshold, but reduced by your share of fault' — optional.",
+    "Body, South Carolina comparative-fault sentence and Key Takeaways/FAQ 3: add the authority 'Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)' for the 51% bar; never cite § 15-38-15.",
+    "Body, filing steps: 'property damage over $500' → 'apparent property damage of $500 or more' and cite O.C.G.A. § 40-6-273.",
+    "Body, intro: 'Cornell Law Institute' → 'Cornell Law School's Legal Information Institute'.",
+    "Optional citations: add 'O.C.G.A. § 40-9-37 and § 33-7-11' after the Georgia minimums and 'S.C. Code § 38-77-140' after the South Carolina minimums."
+  ],
+  "statuteCitations": [
+    { "section": "O.C.G.A. § 51-12-33", "name": "Reduction and apportionment of award or bar of recovery according to percentage of fault of parties and nonparties (modified comparative negligence; 50% bar in subsection (g))", "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/" },
+    { "section": "O.C.G.A. § 9-3-33", "name": "Injuries to the person; two-year limitation", "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/" },
+    { "section": "O.C.G.A. § 40-9-37", "name": "Requirements for liability insurance policies (minimum limits by reference to § 33-7-11(a)(1)(A))", "url": "https://law.justia.com/codes/georgia/title-40/chapter-9/article-2/section-40-9-37/" },
+    { "section": "O.C.G.A. § 33-7-11", "name": "Uninsured motorist coverage under motor vehicle liability policies ($25,000/$50,000/$25,000 minimums; UM/UIM required unless rejected in writing)", "url": "https://law.justia.com/codes/georgia/title-33/chapter-7/section-33-7-11/" },
+    { "section": "O.C.G.A. § 40-6-273", "name": "Duty to report accident resulting in injury, death, or property damage ($500 or more)", "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-12/section-40-6-273/" },
+    { "section": "S.C. Code § 38-77-140", "name": "Bodily injury and property damage limits; general requirements ($25,000/$50,000/$25,000)", "url": "https://www.scstatehouse.gov/code/t38c077.php" },
+    { "section": "S.C. Code § 38-77-144", "name": "Personal injury protection (PIP) coverage not mandated", "url": "https://www.scstatehouse.gov/code/t38c077.php" },
+    { "section": "S.C. Code § 38-77-150", "name": "Uninsured motorist provision (mandatory on every policy at not less than § 38-77-140 limits)", "url": "https://www.scstatehouse.gov/code/t38c077.php" },
+    { "section": "S.C. Code § 38-77-160", "name": "Additional uninsured motorist coverage; underinsured motorist coverage (must be offered, at the insured's option)", "url": "https://www.scstatehouse.gov/code/t38c077.php" },
+    { "section": "S.C. Code § 15-3-530", "name": "Three years (subsection (5): injury to the person)", "url": "https://www.scstatehouse.gov/code/t15c003.php" },
+    { "section": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991)", "name": "South Carolina Supreme Court adoption of modified comparative negligence — plaintiff recovers if negligence is 'not greater than' the defendant's (the 51% bar)", "url": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html" }
+  ],
+  "authoritativeLinks": [
+    { "name": "Insurance Information Institute — Background on: No-fault auto insurance", "url": "https://www.iii.org/article/background-on-no-fault-auto-insurance" },
+    { "name": "Insurance Information Institute — Auto insurance basics: understanding your coverage", "url": "https://www.iii.org/article/auto-insurance-basics-understanding-your-coverage" },
+    { "name": "NAIC — What you should know about auto insurance coverage", "url": "https://content.naic.org/article/what-you-should-know-about-auto-insurance-coverage" },
+    { "name": "NAIC CIPR — No-Fault Auto Insurance Reform in Michigan (2023)", "url": "https://content.naic.org/sites/default/files/cipr-jir-2023-10.pdf" },
+    { "name": "Georgia Office of Commissioner of Insurance and Safety Fire — Auto", "url": "https://oci.georgia.gov/insurance-resources/auto" },
+    { "name": "Georgia OCI — Consumer Guide for Automobile Insurance (PDF)", "url": "https://oci.georgia.gov/document/document/guide-auto-insurance/download" },
+    { "name": "Cornell Law School Legal Information Institute — Wex: no-fault insurance", "url": "https://www.law.cornell.edu/wex/no-fault_insurance" },
+    { "name": "Hawaii Revised Statutes § 431:10C-306 — Abolition of tort liability ($5,000 threshold)", "url": "https://www.capitol.hawaii.gov/hrscurrent/Vol09_Ch0431-0435H/HRS0431/HRS_0431-0010C-0306.htm" },
+    { "name": "Utah Code § 31A-22-309 ($3,000 threshold)", "url": "https://le.utah.gov/xcode/Title31A/Chapter22/31A-22-S309.html" },
+    { "name": "Minnesota Statutes § 65B.51 ($4,000 threshold)", "url": "https://www.revisor.mn.gov/statutes/cite/65B.51" },
+    { "name": "Kansas Statutes § 40-3117 ($2,000 threshold)", "url": "https://www.ksrevisor.gov/statutes/chapters/ch40/040_031_0017.html" },
+    { "name": "Massachusetts General Laws c. 231 § 6D ($2,000 threshold)", "url": "https://malegislature.gov/Laws/GeneralLaws/PartIII/TitleII/Chapter231/Section6D" },
+    { "name": "North Dakota Century Code ch. 26.1-41 — 'serious injury' ($2,500 threshold)", "url": "https://ndlegis.gov/cencode/t26-1c41.pdf" }
+  ]
+}
