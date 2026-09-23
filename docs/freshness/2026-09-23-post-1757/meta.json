@@ -1,0 +1,31 @@
+{
+ "excerpt": "How uninsured and underinsured motorist coverage works in Georgia and South Carolina when the at-fault driver has no insurance or too little.",
+ "keyTakeaways": "Uninsured/underinsured motorist (UM/UIM) coverage protects you when the at-fault driver has no insurance or insufficient limits. Georgia requires UM/UIM on every auto policy unless rejected in writing (O.C.G.A. § 33-7-11) and, by default, adds UIM on top of the at-fault driver's limits unless you selected reduced-by coverage in writing. South Carolina mandates UM coverage at the state minimums under S.C. Code § 38-77-150 (it cannot be rejected), makes UIM optional under § 38-77-160, and pays UIM on top of the at-fault driver's limits up to your actual damages. Georgia allows stacking across separate policies but not across vehicles on a single policy; South Carolina lets a Class I insured stack coverage up to the amount on the vehicle involved. Georgia imposes a 2-year filing deadline (O.C.G.A. § 9-3-33); South Carolina allows 3 years (S.C. Code § 15-3-530).",
+ "faqs": [
+  {
+   "question": "Does Georgia require uninsured motorist coverage?",
+   "answer": "Yes. Under O.C.G.A. § 33-7-11, every auto liability policy in Georgia must include UM/UIM coverage unless the named insured affirmatively rejects it in writing. If you did not sign a written rejection, you likely have UM/UIM coverage on your policy."
+  },
+  {
+   "question": "What is the difference between UM and UIM coverage?",
+   "answer": "Uninsured motorist (UM) coverage applies when the at-fault driver has no insurance at all, including hit-and-run scenarios. Underinsured motorist (UIM) coverage applies when the at-fault driver has insurance but their limits are insufficient to cover your damages."
+  },
+  {
+   "question": "Can I stack UM/UIM coverage in South Carolina?",
+   "answer": "Yes, with limits. Under S.C. Code § 38-77-160 and the cases applying it, a Class I insured (a named insured or resident relative with a vehicle involved in the accident) may stack UM/UIM coverage from other vehicles and policies, but each stacked amount is capped at the coverage on the vehicle involved, and a policy exclusion that blocks that stacking is unenforceable (Carter v. Standard Fire, 2013). A Class II insured, none of whose vehicles was involved, is limited to the coverage on any one vehicle and cannot stack. There is no anti-stacking waiver under § 38-77-160."
+  },
+  {
+   "question": "Does my UIM coverage pay on top of the at-fault driver's insurance?",
+   "answer": "Yes, in both states, up to your actual damages. Georgia does so by default under O.C.G.A. § 33-7-11(b)(1)(D)(ii) but lets you select cheaper reduced-by coverage in writing, which pays only the difference between the at-fault driver's limits and your UIM limit. South Carolina UIM is excess coverage under S.C. Code § 38-77-160 and has no reduced-by option."
+  },
+  {
+   "question": "Do I need consent from my insurer before settling with the at-fault driver?",
+   "answer": "No, in neither state. Georgia law bars any UM/UIM policy from requiring the carrier's permission to settle with the liability carrier (O.C.G.A. § 33-24-41.1(c)); what preserves your claim is signing a limited release under § 33-24-41.1 rather than a general release. South Carolina law bars consent-to-settle clauses in UIM policies (S.C. Code § 38-77-160). In both states the UM/UIM carrier must be served with the lawsuit pleadings, and keeping it informed is good practice."
+  },
+  {
+   "question": "How long do I have to file a UM/UIM claim?",
+   "answer": "In Georgia, the statute of limitations is 2 years from the date of injury under O.C.G.A. § 9-3-33. In South Carolina, you have 3 years under S.C. Code § 15-3-530. These deadlines apply to UM/UIM claims just as they do to standard personal injury claims."
+  }
+ ],
+ "metaDescription": ""
+}

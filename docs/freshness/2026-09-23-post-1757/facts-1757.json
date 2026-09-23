@@ -1,0 +1,594 @@
+{
+  "postId": 1757,
+  "slug": "using-uninsured-underinsured-motorist-coverage-in-georgia",
+  "liveUrl": "https://rodenlaw.com/blog/using-uninsured-underinsured-motorist-coverage-in-georgia/",
+  "jurisdiction": "both",
+  "reviewerByRule": "Graeham C. Gillin (two-state post that states South Carolina law; never Eric Roden)",
+  "researchNotes": "law.justia.com returned 403 to plain fetches and was read through the Firecrawl CLI on 2026-09-23; www.scstatehouse.gov was read directly. The Insurance Research Council's 2017-2023 report (published 2025-02-20) is member/paid access; its state table is reproduced on the Insurance Information Institute page the post already links, which credits the IRC, and the IRC press release of 2025-02-17 confirms the national figure. Case law was read on CourtListener (Free Law Project) and law.justia.com/cases. internal-ai-scripts/law/GA.json and SC.json carry GA 33-7-11, SC 38-77-140/150/160/170, GA 9-3-33, GA 51-12-33, SC 15-3-530 and Nelson v. Concrete Supply Co.; the writer-profile jurisdiction table was followed for the fault thresholds.",
+  "verifiedClaims": [
+    {
+      "surface": "body",
+      "claim": "According to the Insurance Information Institute, roughly 1 in 8 drivers nationally carries no insurance at all, and the problem is even more pronounced in parts of the Southeast.",
+      "verdict": "update",
+      "currentValue": "Insurance Research Council, 2023 data (report published February 2025): 15.4 percent of U.S. motorists, more than one in seven, were uninsured. Georgia 19.0 percent (11th highest); South Carolina 10.3 percent (39th). 'One in eight' matches the IRC's old 2019 figure and is stale; 'more pronounced in parts of the Southeast' is true of Georgia and false of South Carolina, which is below the national rate.",
+      "sourceName": "Insurance Information Institute, Facts + Statistics: Uninsured motorists (reproducing the Insurance Research Council state table, 2023); Insurance Research Council press release 2025-02-17",
+      "sourceUrl": "https://www.iii.org/fact-statistic/facts-statistics-uninsured-motorists",
+      "retrievedAt": "2026-09-23",
+      "note": "Secondary URL for the national figure: https://insurance-research.org/news/one-three-drivers-are-either-uninsured-or-underinsured-us-exposing-themselves-and-other (IRC, 15.4 percent, 'more than one in seven'). Keep the existing iii.org link; it is already on the site's allowlist by virtue of being in the post. Name the Georgia figure and, if South Carolina is mentioned, its lower figure."
+    },
+    {
+      "surface": "body",
+      "claim": "These coverages are part of your own auto insurance policy — they protect you, your passengers, and often your household family members regardless of which vehicle you are in at the time of the crash.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 33-7-11(b)(1)(B) definition of 'insured' (named insured, resident spouse and relatives 'while in a motor vehicle or otherwise', permissive users, guests); S.C. Code § 38-77-30 definitions and Nationwide v. Erwood (S.C. 2007) (basic UM is personal and portable)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-7/section-33-7-11/",
+      "retrievedAt": "2026-09-23",
+      "note": "Accurate as a general statement for both states; 'often' is the right hedge because South Carolina lets policies limit portability of excess UIM (Burgess v. Nationwide, S.C. 2007)."
+    },
+    {
+      "surface": "body",
+      "claim": "Hit-and-run coverage | Yes — covers hit-and-run drivers who cannot be identified",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 33-7-11(b)(2) ('A motor vehicle shall be deemed to be uninsured if the owner or operator of the motor vehicle is unknown'); S.C. Code § 38-77-170",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-7/section-33-7-11/",
+      "retrievedAt": "2026-09-23",
+      "note": "Subject to the conditions in each statute; see the physical-contact claim below."
+    },
+    {
+      "surface": "body",
+      "claim": "T-boned by driver with $25,000 limit; your injuries exceed $100,000",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 33-7-11(a)(1)(A) and S.C. Code § 38-77-140(A)(1): $25,000 per person is the minimum bodily-injury limit in both states",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Illustrative example; the $25,000 minimum is verified in both states."
+    },
+    {
+      "surface": "body",
+      "claim": "Typical limit structure | Matches your liability limits unless reduced in writing | Same as UM limits in most policies",
+      "verdict": "update",
+      "currentValue": "Georgia: UM limits are, at the insured's option, either the $25,000/$50,000/$25,000 minimums or equal to the liability limits; the insured 'may affirmatively choose uninsured motorist limits in an amount less than the limits of liability' and may reject the coverage 'in writing' (O.C.G.A. § 33-7-11(a)(1), (a)(3)). South Carolina: basic UM is fixed at the § 38-77-140 minimums; additional UM and UIM up to the liability limits are optional and must be offered on the prescribed form; if the insured does not return the form within 30 days the insurer 'shall add on uninsured motorist and underinsured motorist coverages with the same policy limits as the insured's liability limits' (S.C. Code § 38-77-350(E)).",
+      "sourceName": "O.C.G.A. § 33-7-11(a); S.C. Code §§ 38-77-150, 38-77-160, 38-77-350(E)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-7/section-33-7-11/",
+      "retrievedAt": "2026-09-23",
+      "note": "The row is true of Georgia's default and of South Carolina only when the offer form is not returned. Soften to 'Often equal to your liability limits unless you choose lower limits or reject the coverage' or footnote the state difference."
+    },
+    {
+      "surface": "body",
+      "claim": "Under O.C.G.A. § 33-7-11, every automobile liability insurance policy issued in Georgia must include UM/UIM coverage unless the named insured affirmatively rejects the coverage in writing.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 33-7-11(a)(1) and (a)(3): 'The coverage required under paragraph (1) of this subsection shall not be applicable where any insured named in the policy shall reject the coverage in writing.'",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-7/section-33-7-11/",
+      "retrievedAt": "2026-09-23",
+      "note": "Statute says 'any insured named in the policy'; 'the named insured' is a fair paraphrase."
+    },
+    {
+      "surface": "body",
+      "claim": "Mandatory offer: Insurers must offer UM/UIM coverage equal to your liability limits. They must also offer reduced limits, but the rejection or reduction must be in writing signed by the named insured.",
+      "verdict": "update",
+      "currentValue": "Georgia: the policy must carry UM coverage, at the insured's option, of not less than $25,000/$50,000/$25,000 or equal to the liability limits; 'the insured may affirmatively choose uninsured motorist limits in an amount less than the limits of liability'; the coverage does not apply 'where any insured named in the policy shall reject the coverage in writing.' The statute requires a writing for rejection and an affirmative choice for a lower amount; it does not use the word 'signed'.",
+      "sourceName": "O.C.G.A. § 33-7-11(a)(1)(A)-(B), (a)(3)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-7/section-33-7-11/",
+      "retrievedAt": "2026-09-23",
+      "note": "Reword to: rejection must be in writing; a lower limit must be affirmatively chosen. Drop 'signed by the named insured' unless the editor keeps it as practice rather than statute."
+    },
+    {
+      "surface": "body",
+      "claim": "Add-on vs. reduced coverage: Georgia is an \"add-on\" state for UIM, meaning your UIM benefits are added on top of the at-fault driver's liability coverage. If the at-fault driver has $25,000 in coverage and you have $100,000 in UIM, your total available recovery is $125,000.",
+      "verdict": "update",
+      "currentValue": "Georgia's default since the 2008 amendment (effective for policies issued or renewed on or after January 1, 2009) is added-on coverage: the UM coverage 'shall apply to the insured's losses in addition to the amounts payable under any available bodily injury liability ... coverages', capped so the combined recovery 'shall not exceed the sum of all economic and noneconomic losses sustained by the insured' (O.C.G.A. § 33-7-11(b)(1)(D)(ii)(I)). The insured 'may reject the coverage referenced in subdivision (I) ... and select in writing' reduced-by coverage, which pays only 'the difference between the available coverages under the bodily injury liability insurance ... and the limits of the uninsured motorist coverages' (§ 33-7-11(b)(1)(D)(ii)(II)). The $125,000 example is correct for added-on coverage and for losses of at least that amount; under reduced-by coverage the same facts yield $75,000 of UM.",
+      "sourceName": "O.C.G.A. § 33-7-11(b)(1)(D)(ii)(I)-(III)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-7/section-33-7-11/",
+      "retrievedAt": "2026-09-23",
+      "note": "Say 'added-on by default unless you selected reduced-by coverage in writing' and add 'up to your actual losses' to the example. Check the declarations page: many Georgia policies carry the cheaper reduced-by option."
+    },
+    {
+      "surface": "body",
+      "claim": "Stacking permitted: Georgia allows stacking of UM/UIM coverage across multiple vehicles on the same policy unless the insured has signed a valid anti-stacking waiver (O.C.G.A. § 33-7-11(b)(1)(D)(ii)).",
+      "verdict": "update",
+      "currentValue": "Georgia law is the reverse of this sentence. Separate policies stack: 'Under Georgia law, uninsured motorist benefits are calculated by stacking the limits of all of the available uninsured motorist coverage and setting off the limits of the available liability coverage' (Crafter v. State Farm, 251 Ga. App. 642 (2001)); 'An insured has long been allowed to stack his multiple policies of uninsured motorist coverage ... Moreover, the courts further prohibited all attempts in insurance policies to prevent stacking' (State Farm v. Hancock, 164 Ga. App. 32 (1982)). Multiple vehicles on one policy do not stack: '[a]s a general rule, there can be no stacking or pyramiding of the uninsured motorists provisions as to single policy coverage of automobiles' (Crafter, quoting prior authority). § 33-7-11(b)(1)(D)(ii) is the added-on/reduced-by provision and says nothing about stacking; no Georgia statute creates an 'anti-stacking waiver'.",
+      "sourceName": "Crafter v. State Farm Ins. Co., 251 Ga. App. 642, 554 S.E.2d 571 (Ga. Ct. App. 2001); State Farm Mut. Auto. Ins. Co. v. Hancock, 164 Ga. App. 32, 295 S.E.2d 359 (Ga. Ct. App. 1982)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2001/a01a1549.html",
+      "retrievedAt": "2026-09-23",
+      "note": "Rewrite: Georgia lets an injured insured stack UM coverage from every policy under which they qualify as an insured (their own, a resident relative's, the host vehicle's), and policy clauses that try to prevent stacking across policies are unenforceable; UM limits on several vehicles under a single policy generally do not stack. Remove the subsection cite and the word 'waiver'. Secondary URL: https://law.justia.com/cases/georgia/court-of-appeals/1982/64456.html"
+    },
+    {
+      "surface": "body",
+      "claim": "Statute of limitations: UM/UIM claims in Georgia are subject to the same 2-year statute of limitations for personal injury under O.C.G.A. § 9-3-33.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-33: 'actions for injuries to the person shall be brought within two years after the right of action accrues'; O.C.G.A. § 33-7-11(d) (UM carrier is served with the tort action against the driver or 'John Doe')",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+      "retrievedAt": "2026-09-23",
+      "note": "Matches the writer-profile jurisdiction table. The UM claim rides on the underlying tort suit, so the two-year period governs the filing that preserves it."
+    },
+    {
+      "surface": "body",
+      "claim": "Consent to settle: Before accepting the at-fault driver's policy limits, you generally must notify your own UIM carrier and obtain consent, or risk forfeiting your UIM claim.",
+      "verdict": "update",
+      "currentValue": "Georgia statute forbids the consent requirement this sentence describes: 'No policy of uninsured or underinsured motorist coverage issued in this state shall prohibit any claimant from settling any claim with a liability carrier as provided in subsection (a) of this Code section or require the permission of the uninsured or underinsured motorist carrier to so settle any claim with the liability carrier' (O.C.G.A. § 33-24-41.1(c)). The protection is the form of release: accept the liability carrier's limits under a 'limited release' that releases the settling carrier and releases the tortfeasor 'except to the extent other insurance coverage is available' (§ 33-24-41.1(a)-(b), (d)(1)); the amount paid is then an offset against the UM carrier's liability (§ 33-24-41.1(d)(2)). The UM carrier must still be served with the suit pleadings 'as though the insurance company were actually named as a party defendant' (§ 33-7-11(d)).",
+      "sourceName": "O.C.G.A. § 33-24-41.1; O.C.G.A. § 33-7-11(d)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-24/article-1/section-33-24-41-1/",
+      "retrievedAt": "2026-09-23",
+      "note": "Replace with: in Georgia, settle with the at-fault carrier only through a limited liability release under O.C.G.A. § 33-24-41.1 so the UM/UIM claim survives; a general release of the driver can extinguish it. Your UM carrier cannot require its consent, but it must be served with the lawsuit."
+    },
+    {
+      "surface": "body",
+      "claim": "under O.C.G.A. § 51-12-33, you can recover UM/UIM benefits as long as you are less than 50% at fault for the accident. Your recovery is reduced by your percentage of fault.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(a) (damages 'reduce[d] ... in proportion to his or her percentage of fault') and (g) ('the plaintiff shall not be entitled to receive any damages if the plaintiff is 50 percent or more responsible')",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-23",
+      "note": "Matches the writer-profile jurisdiction table."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina's UM/UIM framework, governed by S.C. Code § 38-77-150 and related sections, also strongly favors coverage",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code §§ 38-77-150, 38-77-160, 38-77-170",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "Mandatory coverage: Under S.C. Code § 38-77-150, UM coverage is required on every auto liability policy unless the named insured rejects it in writing. Minimum UM limits must match the state's minimum liability limits ($25,000 per person / $50,000 per accident).",
+      "verdict": "update",
+      "currentValue": "South Carolina UM coverage cannot be rejected. 'No automobile insurance policy or contract may be issued or delivered unless it contains a provision ... undertaking to pay the insured all sums which he is legally entitled to recover as damages from the owner or operator of an uninsured motor vehicle, within limits which may be no less than the requirements of Section 38-77-140' (§ 38-77-150(A)); there is no rejection clause, and the Supreme Court describes it as 'mandatory' in contrast to 'voluntary UIM coverage' (Nationwide v. Erwood, 2007). Minimums under § 38-77-140: $25,000 per person, $50,000 per accident, $25,000 property damage; § 38-77-150 also requires at least $25,000 UM property-damage coverage (a $200 deductible is allowed). Only the additional UM above the minimums, and UIM, are optional (§ 38-77-160).",
+      "sourceName": "S.C. Code §§ 38-77-140, 38-77-150(A), 38-77-160; Nationwide Mut. Ins. Co. v. Erwood (S.C. 2007)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Delete 'unless the named insured rejects it in writing' and add the $25,000 property-damage figure. The law pack (SC 38-77-150) and the writer profile both say 'mandatory'. Erwood: https://www.sccourts.org/opinions/advSheets/no142007.pdf"
+    },
+    {
+      "surface": "body",
+      "claim": "Difference method (not add-on): Unlike Georgia, South Carolina uses the \"difference\" or \"offset\" method for UIM claims. Your UIM coverage pays only the difference between the at-fault driver's limits and your UIM limits. If the at-fault driver has $25,000 and your UIM limit is $100,000, your maximum UIM recovery is $75,000.",
+      "verdict": "update",
+      "currentValue": "This is backwards. South Carolina UIM is excess coverage stacked on top of the at-fault driver's limits. Statute: UIM is offered 'to provide coverage in the event that damages are sustained in excess of the liability limits carried by an at-fault insured or underinsured motorist' (§ 38-77-160), and an 'underinsured motor vehicle' is one whose liability insurance 'is less than the amount of the insureds' damages' (§ 38-77-30(15)). Supreme Court: UIM 'recovery therefrom being additional to any recovery from the at fault motorist, total recovery not to exceed the damages sustained' (Broome v. Watts, 319 S.C. 337 (1995), quoting Garris v. Cincinnati Ins. Co., 280 S.C. 149 (1984)); the UIM carrier owes 'the excess of the damages sustained over the liability limits payout'; the trigger is simply whether 'the damages sustained exceed the liability insurance limits of the at-fault motorist' (O'Neill v. Smith, S.C. 2010). On the post's facts, $25,000 from the at-fault carrier plus up to $100,000 of UIM, capped at actual damages: up to $125,000, not $75,000. The only 'offset' in South Carolina is that the liability payment is subtracted from total damages, not from the UIM limit.",
+      "sourceName": "S.C. Code §§ 38-77-160, 38-77-30(15); Broome v. Watts, 319 S.C. 337, 461 S.E.2d 46 (S.C. 1995); O'Neill v. Smith, 388 S.C. 246, 696 S.E.2d 605 (S.C. 2010)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1995/24291-2.html",
+      "retrievedAt": "2026-09-23",
+      "note": "Most consequential error in the post: it understates a South Carolina client's recovery by the full at-fault limit and is repeated in the key takeaways and FAQ 4. Rewrite the bullet as 'Excess coverage: like Georgia's default, South Carolina UIM pays on top of the at-fault driver's limits, up to your UIM limit and your actual damages.' The real Georgia/South Carolina difference is that Georgia lets the insured elect reduced-by coverage in writing and South Carolina does not have that option. O'Neill: https://law.justia.com/cases/south-carolina/supreme-court/2010/26826.html"
+    },
+    {
+      "surface": "body",
+      "claim": "Stacking available: South Carolina permits stacking of UM/UIM coverage across vehicles on the same policy unless a valid written rejection of stacking is obtained (S.C. Code § 38-77-160).",
+      "verdict": "update",
+      "currentValue": "Stacking in South Carolina is governed by § 38-77-160 and case law, not by a waiver. Only a Class I insured (a named insured or resident relative who has a vehicle involved in the accident) may stack, and 'an insured is entitled to stack underinsured or uninsured coverage in an amount no greater than the amount of coverage on the vehicle involved in the accident' (Ruppe v. Auto-Owners, 329 S.C. 402 (1998); S.C. Farm Bureau v. Mooneyham, 304 S.C. 442 (1991)); 'To this extent, stacking cannot be contractually prohibited' (Ruppe). A Class I insured who bought UIM on the involved vehicle may stack the UIM on the at-home vehicles under the same policy, and a policy exclusion to the contrary is invalid (Carter v. Standard Fire Ins. Co., 406 S.C. 609 (2013)). A Class II insured (none of their vehicles involved) gets 'only ... the coverage on any one of the vehicles with the excess or underinsured coverage' and cannot stack (§ 38-77-160; State Farm v. Wannamaker, 291 S.C. 518 (1987)). Nothing in § 38-77-160 provides for a 'written rejection of stacking'.",
+      "sourceName": "S.C. Code § 38-77-160; Carter v. Standard Fire Ins. Co., 406 S.C. 609, 753 S.E.2d 515 (S.C. 2013); Nakatsu v. Encompass Indem. Co., 390 S.C. 172, 700 S.E.2d 283 (S.C. Ct. App. 2010); State Farm v. Wannamaker, 291 S.C. 518, 354 S.E.2d 555 (S.C. 1987)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/2013/27340.html",
+      "retrievedAt": "2026-09-23",
+      "note": "Rewrite around the Class I / vehicle-involved cap and drop the waiver language. Nakatsu: https://www.courtlistener.com/opinion/2111804/nakatsu-v-encompass-indemnity-co/ ; Wannamaker: https://www.courtlistener.com/opinion/1206294/state-farm-mutual-automobile-insurance-v-wannamaker-ex-rel-estate-of/"
+    },
+    {
+      "surface": "body",
+      "claim": "Statute of limitations: UM/UIM claims fall under South Carolina's 3-year statute of limitations for personal injury (S.C. Code § 15-3-530).",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-3-530(5): 'Within three years: ... an action for assault, battery, or any injury to the person or rights of another, not arising on contract and not enumerated by law'",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Matches the writer-profile jurisdiction table. The UM/UIM carrier must be served with the pleadings in the liability action (§ 38-77-150(B), § 38-77-160)."
+    },
+    {
+      "surface": "body",
+      "claim": "Meaningful coverage requirement: South Carolina courts have consistently held that UM/UIM coverage must provide \"meaningful\" protection, and policy provisions that effectively eliminate UM/UIM benefits may be struck down as void against public policy.",
+      "verdict": "update",
+      "currentValue": "The 'meaningful' doctrine is about the insurer's offer of optional UIM, not about the coverage itself: 'the statute mandates the insured to be provided with adequate information, and in such a manner, as to allow the insured to make an intelligent decision of whether to accept or reject the coverage'; an offer that is 'far from being a meaningful offer' means the insured 'is entitled to under-insured coverage by operation of law' (State Farm v. Wannamaker, 291 S.C. 518 (1987)). The offer must now be made on the Department of Insurance form under § 38-77-350, and a signed form is 'conclusively presumed' to be a knowing selection. Separately, the Supreme Court does void policy provisions that conflict with the UM/UIM statutes (Nationwide v. Erwood, 2007, basic UM portability; Carter v. Standard Fire, 2013, stacking exclusion), while upholding limits the statute permits (Burgess v. Nationwide, 2007).",
+      "sourceName": "State Farm Mut. Auto. Ins. Co. v. Wannamaker, 291 S.C. 518, 354 S.E.2d 555 (S.C. 1987); S.C. Code § 38-77-350",
+      "sourceUrl": "https://www.courtlistener.com/opinion/1206294/state-farm-mutual-automobile-insurance-v-wannamaker-ex-rel-estate-of/",
+      "retrievedAt": "2026-09-23",
+      "note": "Rewrite as the 'meaningful offer' rule: if the insurer never made a meaningful, form-compliant offer of UIM, the insured may get UIM up to the liability limits by operation of law. Keep a shorter second sentence that policy terms conflicting with §§ 38-77-150 and -160 are unenforceable."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina's modified comparative fault rule allows recovery as long as you are less than 51% at fault. This slightly more favorable threshold compared to Georgia's 50% rule can make a significant difference in close-call liability situations",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (S.C. 1991): 'a plaintiff in a negligence action may recover damages if his or her negligence is not greater than that of the defendant. The amount of the plaintiff's recovery shall be reduced in proportion to the amount of his or her negligence.'",
+      "sourceUrl": "https://www.courtlistener.com/opinion/1265650/nelson-v-concrete-supply-company/",
+      "retrievedAt": "2026-09-23",
+      "note": "Matches the writer-profile table (recover if less than 51 percent; never cite § 15-38-15). The comparison to Georgia is right: at exactly 50 percent a Georgia plaintiff is barred (§ 51-12-33(g)) and a South Carolina plaintiff recovers half. The post does not cite a statute here; if a cite is added it must be Nelson, not § 15-38-15."
+    },
+    {
+      "surface": "body",
+      "claim": "Both Georgia and South Carolina require that hit-and-run claims involve actual physical contact between the vehicles, though some policies provide broader \"phantom vehicle\" coverage.",
+      "verdict": "update",
+      "currentValue": "Neither state makes physical contact an absolute requirement. Georgia: 'actual physical contact shall have occurred between the motor vehicle owned or operated by the unknown person and the person or property of the insured. Such physical contact shall not be required if the description by the claimant of how the occurrence occurred is corroborated by an eyewitness to the occurrence other than the claimant' (O.C.G.A. § 33-7-11(b)(2)); the accident must be reported as required by § 40-6-273 (§ 33-7-11(c)) and suit is brought against 'John Doe' with the UM carrier served (§ 33-7-11(d)). South Carolina (§ 38-77-170, rewritten by 2024 Act No. 180, effective May 20, 2024): the insured must report the accident to police 'within a reasonable time'; and one of (a) 'physical contact with the unknown vehicle', (b) a witness 'other than the owner or operator of the insured vehicle' who signs an affidavit (or a Rule 27 presuit deposition), or (c) 'a recording of the accident, obtained electronically or otherwise'; and the insured 'was not negligent in failing to determine the identity of the other vehicle'.",
+      "sourceName": "O.C.G.A. § 33-7-11(b)(2)-(d); S.C. Code § 38-77-170 (2024 amendment)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Rewrite: physical contact OR corroboration. The 2024 South Carolina amendment adding dash-cam and other recordings is new since the post was written and worth a sentence. Drop 'phantom vehicle coverage' as a policy add-on; the statutes themselves supply the no-contact route."
+    },
+    {
+      "surface": "body",
+      "claim": "Despite legal requirements, many drivers in Georgia and South Carolina operate without liability insurance.",
+      "verdict": "update",
+      "currentValue": "Insurance Research Council 2023 estimates: Georgia 19.0 percent uninsured (11th highest), South Carolina 10.3 percent (39th); national 15.4 percent.",
+      "sourceName": "Insurance Information Institute, reproducing the Insurance Research Council 2023 state estimates",
+      "sourceUrl": "https://www.iii.org/fact-statistic/facts-statistics-uninsured-motorists",
+      "retrievedAt": "2026-09-23",
+      "note": "True as written; the figures are available and make the sentence concrete. Do not describe South Carolina as above the national rate."
+    },
+    {
+      "surface": "body",
+      "claim": "A driver who carries only minimum coverage ($25,000 per person in both states) may be technically insured but practically underinsured when your injuries are severe.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 33-7-11(a)(1)(A) (incorporated by O.C.G.A. § 40-9-37(a)); S.C. Code § 38-77-140(A)(1)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-9/article-2/section-40-9-37/",
+      "retrievedAt": "2026-09-23",
+      "note": "Georgia's § 40-9-37(a) sets the liability minimum by reference to 'the amounts specified in subparagraph (a)(1)(A) of Code Section 33-7-11', i.e. $25,000/$50,000/$25,000."
+    },
+    {
+      "surface": "body",
+      "claim": "If the at-fault vehicle was stolen, the vehicle owner's insurance typically will not cover the accident. Your UM coverage fills this gap.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 33-7-11(b)(1)(D)(iii) (vehicle is 'uninsured' where liability insurance exists 'but the insurance company writing the insurance has legally denied coverage under its policy'); S.C. Code § 38-77-30(14) (uninsured motor vehicle includes one whose insurer has denied coverage)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-7/section-33-7-11/",
+      "retrievedAt": "2026-09-23",
+      "note": "General description of the non-permissive-use exclusion; the statutes verify that a legally denied claim makes the vehicle 'uninsured'. 'Typically' is the right hedge; leave as is."
+    },
+    {
+      "surface": "body",
+      "claim": "If you have $100,000 in UM coverage per vehicle and three vehicles on your policy, stacking could give you $300,000 in total UM coverage. Both Georgia and South Carolina allow stacking unless the policyholder has signed a valid anti-stacking waiver.",
+      "verdict": "update",
+      "currentValue": "Georgia: three vehicles on one policy generally do not stack ('no stacking or pyramiding of the uninsured motorists provisions as to single policy coverage of automobiles', Crafter, 2001); three separate policies do, and anti-stacking clauses across policies are unenforceable (Hancock, 1982). South Carolina: a Class I insured with $100,000 of UIM on the vehicle involved may stack the $100,000 on each at-home vehicle, including at-home vehicles on the same policy, for $300,000, and an exclusion preventing that is invalid (Carter v. Standard Fire, 2013); each stacked amount is capped at the coverage on the vehicle involved (Ruppe, Mooneyham); a Class II insured cannot stack at all (§ 38-77-160). Neither state has a statutory 'anti-stacking waiver'.",
+      "sourceName": "Crafter v. State Farm (Ga. Ct. App. 2001); State Farm v. Hancock (Ga. Ct. App. 1982); Carter v. Standard Fire Ins. Co. (S.C. 2013); S.C. Code § 38-77-160",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2001/a01a1549.html",
+      "retrievedAt": "2026-09-23",
+      "note": "Keep the $300,000 illustration only for South Carolina (Class I insured, UIM on the involved vehicle) or recast the Georgia version as three separate policies. Remove 'anti-stacking waiver'."
+    },
+    {
+      "surface": "body",
+      "claim": "However, courts in both states have invalidated anti-stacking waivers that were improperly obtained — for example, when the waiver was not a separate, standalone document, when it was buried in fine print, or when the insured did not meaningfully consent.",
+      "verdict": "drop",
+      "currentValue": "No statute or reported decision in either state addresses an 'anti-stacking waiver' signed by the insured. What the courts actually do: Georgia holds policy clauses attempting to prevent stacking across policies unenforceable outright (Hancock, 1982) and does not allow single-policy stacking regardless of consent (Crafter, 2001); South Carolina strikes policy exclusions that conflict with § 38-77-160 (Carter, 2013) and applies the 'meaningful offer' test to the insurer's offer of UIM coverage (Wannamaker, 1987), not to stacking.",
+      "sourceName": "State Farm v. Hancock (Ga. Ct. App. 1982); Crafter v. State Farm (Ga. Ct. App. 2001); Carter v. Standard Fire Ins. Co. (S.C. 2013); State Farm v. Wannamaker (S.C. 1987)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/2013/27340.html",
+      "retrievedAt": "2026-09-23",
+      "note": "The 'separate standalone document / buried in fine print' tests describe other states' waiver statutes and cannot be sourced for Georgia or South Carolina. Replace the paragraph with the two rules above (Georgia: anti-stacking clauses across policies are void; South Carolina: exclusions conflicting with § 38-77-160 are void, and a UIM offer that was not meaningful gives UIM by operation of law) and keep the closing sentence about attorney policy review."
+    },
+    {
+      "surface": "body",
+      "claim": "Report the accident to your own auto insurer promptly. Most policies require timely notification, and unreasonable delay can jeopardize your claim.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 33-7-11(c) (unknown-driver accidents must be reported as required by § 40-6-273) and (h) (notice to the UM carrier before an insolvency claim); S.C. Code § 38-77-170(A)(1) (police report within a reasonable time)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-7/section-33-7-11/",
+      "retrievedAt": "2026-09-23",
+      "note": "General policy-condition statement; the statutory reporting duties for unknown-driver claims support it."
+    },
+    {
+      "surface": "body",
+      "claim": "For underinsured motorist claims, you must typically exhaust the at-fault driver's liability limits before your UIM coverage activates. Before accepting the at-fault driver's policy limits, notify your UIM carrier in writing and obtain consent. Failing to do so — particularly in Georgia — can forfeit your UIM claim entirely.",
+      "verdict": "update",
+      "currentValue": "Both states forbid a consent requirement. Georgia: no UM/UIM policy may 'require the permission of the uninsured or underinsured motorist carrier to so settle any claim with the liability carrier' (O.C.G.A. § 33-24-41.1(c)); the settlement must be a limited release under § 33-24-41.1 so the claim against other coverage survives. South Carolina: 'No underinsured motorist policy may contain a clause requiring the insurer's consent to settlement with the at-fault party'; when the at-fault carrier pays its limits 'the underinsured motorist insurer may assume control of the defense of action for its own benefit' (S.C. Code § 38-77-160); UIM benefits 'are not subject to subrogation and assignment' (same). In both states the UM/UIM carrier must be served with copies of the pleadings in the action establishing liability (O.C.G.A. § 33-7-11(d); S.C. Code §§ 38-77-150(B), 38-77-160). Exhaustion: South Carolina's trigger is damages exceeding the at-fault limits, not payment (O'Neill v. Smith, 2010); Georgia's added-on coverage is 'in excess of any available bodily injury liability insurance' (§ 33-7-11(b)(1)(D)(ii)(I)).",
+      "sourceName": "O.C.G.A. § 33-24-41.1; S.C. Code § 38-77-160; O.C.G.A. § 33-7-11(d); S.C. Code § 38-77-150(B)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Rewrite Step 3: take the at-fault limits through a limited release (Georgia, § 33-24-41.1) or a settlement that preserves the UIM claim (South Carolina, where consent clauses are banned and the UIM carrier may take over the defense), keep the UIM carrier informed, and make sure it is served in any lawsuit. Remove 'obtain consent' and 'forfeit ... entirely'."
+    },
+    {
+      "surface": "body",
+      "claim": "If negotiations fail, Georgia and South Carolina policies often include mandatory arbitration clauses for UM/UIM disputes. Arbitration can be faster than litigation but requires the same level of preparation and evidence presentation.",
+      "verdict": "drop",
+      "currentValue": "Georgia prohibits the clause: 'No endorsement or provisions shall contain a provision requiring arbitration of any claim arising under any endorsement or provisions ... nor shall the insured be restricted or prevented, in any manner, from employing legal counsel or instituting legal proceedings' (O.C.G.A. § 33-7-11(g)). In both states the UM/UIM claim is resolved through the tort lawsuit against the at-fault driver (or 'John Doe'), with the UM/UIM carrier served and entitled to appear and defend in the driver's name (O.C.G.A. § 33-7-11(d); S.C. Code §§ 38-77-150(B), 38-77-160, which give the carrier thirty days after service to appear).",
+      "sourceName": "O.C.G.A. § 33-7-11(g), (d); S.C. Code §§ 38-77-150(B), 38-77-160",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-7/section-33-7-11/",
+      "retrievedAt": "2026-09-23",
+      "note": "Replace Step 5 with 'Negotiate or file suit': the UM/UIM carrier is served with the lawsuit against the driver, may defend in the driver's name, and is bound by the verdict up to its limits. Also revise the 'Arbitration advocacy' bullet in the attorney section to 'Litigation'."
+    },
+    {
+      "surface": "body",
+      "claim": "Consent-to-settle violations: In Georgia, insurers may argue you forfeited your UIM claim by settling with the at-fault driver's carrier without proper notice.",
+      "verdict": "update",
+      "currentValue": "The argument a Georgia UM carrier can make is that the claimant signed a general release of the at-fault driver rather than a limited release under O.C.G.A. § 33-24-41.1, or failed to serve the carrier under § 33-7-11(d). It cannot argue lack of consent: § 33-24-41.1(c) bars any policy from requiring its permission to settle.",
+      "sourceName": "O.C.G.A. § 33-24-41.1(c); O.C.G.A. § 33-7-11(d)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-24/article-1/section-33-24-41-1/",
+      "retrievedAt": "2026-09-23",
+      "note": "Reword to 'Release disputes: in Georgia, insurers may argue a general release of the at-fault driver extinguished your UM/UIM claim; a limited release under O.C.G.A. § 33-24-41.1 preserves it.'"
+    },
+    {
+      "surface": "body",
+      "claim": "Bad faith claims: When your insurer unreasonably denies or delays a valid UM/UIM claim, an attorney can pursue a bad faith action for additional damages",
+      "verdict": "keep",
+      "currentValue": "Georgia: if the UM insurer refuses to pay 'within 60 days after a demand has been made' and the refusal is found to be in bad faith, it is liable for 'not more than 25 percent of the recovery or $25,000.00, whichever is greater, and all reasonable attorney's fees', determined 'in a separate action ... after a judgment has been rendered against the uninsured motorist in the original tort action' (O.C.G.A. § 33-7-11(j)).",
+      "sourceName": "O.C.G.A. § 33-7-11(j)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-7/section-33-7-11/",
+      "retrievedAt": "2026-09-23",
+      "note": "Verified for Georgia by statute; South Carolina's remedy is the common-law bad-faith action and § 38-59-40 attorney's fees, which the post does not cite. Optional: add the Georgia figures."
+    },
+    {
+      "surface": "body",
+      "claim": "Arbitration advocacy: Representing you effectively in UM/UIM arbitration proceedings, which require the same evidentiary preparation as trial",
+      "verdict": "drop",
+      "currentValue": "Georgia bars arbitration clauses in UM endorsements (O.C.G.A. § 33-7-11(g)); the UM/UIM claim in both states is litigated in the tort action with the carrier served (O.C.G.A. § 33-7-11(d); S.C. Code §§ 38-77-150(B), 38-77-160).",
+      "sourceName": "O.C.G.A. § 33-7-11(g)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-7/section-33-7-11/",
+      "retrievedAt": "2026-09-23",
+      "note": "Replace with a 'Trial advocacy' bullet: the UM/UIM carrier can defend the lawsuit in the at-fault driver's name, so the case is prepared for a jury."
+    },
+    {
+      "surface": "body",
+      "claim": "We work on a contingency fee basis — you pay nothing unless we recover compensation for you",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Firm fact (firm-facts.md); not a legal claim",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "Outside the scope of statutory verification; unchanged."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Georgia requires UM/UIM on all auto policies unless rejected in writing (O.C.G.A. § 33-7-11) and uses the add-on method for UIM.",
+      "verdict": "update",
+      "currentValue": "Georgia requires UM/UIM on every auto policy unless rejected in writing (O.C.G.A. § 33-7-11) and, by default, adds UIM on top of the at-fault driver's limits unless the insured selected reduced-by coverage in writing (§ 33-7-11(b)(1)(D)(ii)).",
+      "sourceName": "O.C.G.A. § 33-7-11(a)(3), (b)(1)(D)(ii)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-7/section-33-7-11/",
+      "retrievedAt": "2026-09-23",
+      "note": "First half keep; second half needs the reduced-by election."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "South Carolina mandates UM coverage under S.C. Code § 38-77-150 but uses the offset method.",
+      "verdict": "update",
+      "currentValue": "South Carolina mandates UM coverage at the state minimums under S.C. Code § 38-77-150 (it cannot be rejected), makes UIM optional under § 38-77-160, and pays UIM on top of the at-fault driver's limits up to your actual damages. It does not use an offset-against-limits method.",
+      "sourceName": "S.C. Code §§ 38-77-150, 38-77-160; Broome v. Watts (S.C. 1995); O'Neill v. Smith (S.C. 2010)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1995/24291-2.html",
+      "retrievedAt": "2026-09-23",
+      "note": "The Key Takeaways box renders above the article, so this error is the first thing a South Carolina reader sees."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Both states allow stacking across multiple vehicles.",
+      "verdict": "update",
+      "currentValue": "Georgia allows stacking of UM coverage across separate policies but not across vehicles on a single policy; South Carolina lets a Class I insured stack coverage from other vehicles and policies up to the amount on the vehicle involved.",
+      "sourceName": "Crafter v. State Farm (Ga. Ct. App. 2001); Carter v. Standard Fire Ins. Co. (S.C. 2013); S.C. Code § 38-77-160",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2001/a01a1549.html",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Georgia imposes a 2-year filing deadline (O.C.G.A. § 9-3-33); South Carolina allows 3 years (S.C. Code § 15-3-530).",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-33; S.C. Code § 15-3-530(5)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Matches the writer-profile jurisdiction table."
+    },
+    {
+      "surface": "faq:0",
+      "claim": "Yes. Under O.C.G.A. § 33-7-11, every auto liability policy in Georgia must include UM/UIM coverage unless the named insured affirmatively rejects it in writing. If you did not sign a written rejection, you likely have UM/UIM coverage on your policy.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 33-7-11(a)(1), (a)(3)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-7/section-33-7-11/",
+      "retrievedAt": "2026-09-23",
+      "note": "Renewals: a rejection on a prior policy with the same insurer carries forward (§ 33-7-11(a)(3)), so 'likely' is the right hedge."
+    },
+    {
+      "surface": "faq:1",
+      "claim": "Uninsured motorist (UM) coverage applies when the at-fault driver has no insurance at all, including hit-and-run scenarios. Underinsured motorist (UIM) coverage applies when the at-fault driver has insurance but their limits are insufficient to cover your damages.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 33-7-11(b)(1)(D)(i)-(ii), (b)(2); S.C. Code § 38-77-30(14)-(15), § 38-77-170",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "faq:2",
+      "claim": "Yes. South Carolina allows stacking of UM/UIM coverage across multiple vehicles on the same policy unless you signed a valid anti-stacking waiver under S.C. Code § 38-77-160. If the waiver was improperly obtained, it may be challengeable in court.",
+      "verdict": "update",
+      "currentValue": "Yes, with limits. Under S.C. Code § 38-77-160 and the cases applying it, a Class I insured (a named insured or resident relative with a vehicle involved in the accident) may stack UM/UIM coverage from other vehicles and policies, but each stacked amount is capped at the coverage on the vehicle involved, and a policy exclusion that blocks that stacking is unenforceable (Carter v. Standard Fire, 2013). A Class II insured, none of whose vehicles was involved, is limited to the coverage on any one vehicle and cannot stack. There is no 'anti-stacking waiver' under § 38-77-160.",
+      "sourceName": "S.C. Code § 38-77-160; Carter v. Standard Fire Ins. Co., 406 S.C. 609 (S.C. 2013); Nakatsu v. Encompass Indem. Co., 390 S.C. 172 (S.C. Ct. App. 2010)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/2013/27340.html",
+      "retrievedAt": "2026-09-23",
+      "note": "This answer publishes as FAQPage structured data; the waiver language must come out of both the FAQ and the body."
+    },
+    {
+      "surface": "faq:3",
+      "claim": "Georgia uses the add-on method, meaning your UIM benefits are added on top of the at-fault driver's liability coverage. South Carolina uses the offset (difference) method, meaning your UIM coverage pays only the difference between the at-fault driver's limits and your UIM limits.",
+      "verdict": "update",
+      "currentValue": "Both states pay UIM on top of the at-fault driver's limits, up to your actual damages. Georgia does so by default under O.C.G.A. § 33-7-11(b)(1)(D)(ii)(I) but lets the insured select cheaper reduced-by coverage in writing, which pays only the difference between the at-fault limits and the UIM limit. South Carolina UIM is excess coverage by statute (§ 38-77-160: damages 'in excess of the liability limits carried by an at-fault insured') and by case law (Broome v. Watts, 1995: recovery 'additional to any recovery from the at fault motorist, total recovery not to exceed the damages sustained'); it has no reduced-by option.",
+      "sourceName": "O.C.G.A. § 33-7-11(b)(1)(D)(ii); S.C. Code § 38-77-160; Broome v. Watts (S.C. 1995)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1995/24291-2.html",
+      "retrievedAt": "2026-09-23",
+      "note": "Consider retitling the question to 'Does my UIM pay on top of the at-fault driver's insurance?' since the add-on/offset contrast between the two states does not exist as stated."
+    },
+    {
+      "surface": "faq:4",
+      "claim": "In Georgia, yes — you should notify your UIM carrier and obtain consent before accepting the at-fault driver's policy limits. Failing to do so can forfeit your UIM claim. South Carolina has similar notification requirements.",
+      "verdict": "update",
+      "currentValue": "No, in neither state. Georgia law says no UM/UIM policy may 'require the permission of the uninsured or underinsured motorist carrier' to settle with the liability carrier (O.C.G.A. § 33-24-41.1(c)); what preserves the claim is signing a limited release under § 33-24-41.1 rather than a general release. South Carolina law says 'No underinsured motorist policy may contain a clause requiring the insurer's consent to settlement with the at-fault party' (S.C. Code § 38-77-160). In both states the UM/UIM carrier must be served with the lawsuit pleadings (O.C.G.A. § 33-7-11(d); S.C. Code §§ 38-77-150(B), 38-77-160), and keeping it informed is good practice.",
+      "sourceName": "O.C.G.A. § 33-24-41.1(c); S.C. Code § 38-77-160",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-24/article-1/section-33-24-41-1/",
+      "retrievedAt": "2026-09-23",
+      "note": "The current answer tells clients to do something the statutes of both states say cannot be required of them and implies forfeiture that the statutes do not impose."
+    },
+    {
+      "surface": "faq:5",
+      "claim": "In Georgia, the statute of limitations is 2 years from the date of injury under O.C.G.A. § 9-3-33. In South Carolina, you have 3 years under S.C. Code § 15-3-530. These deadlines apply to UM/UIM claims just as they do to standard personal injury claims.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-33; S.C. Code § 15-3-530(5)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+      "retrievedAt": "2026-09-23",
+      "note": "Matches the writer-profile table. § 9-3-33 says 'after the right of action accrues'; 'from the date of injury' is the usual accrual for a crash."
+    },
+    {
+      "surface": "excerpt",
+      "claim": "How uninsured and underinsured motorist coverage works in Georgia and South Carolina when the at-fault driver has no insurance or too little.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "No factual claim beyond the topic."
+    }
+  ],
+  "recommendedEdits": [
+    "Intro: replace 'roughly 1 in 8 drivers nationally' with the IRC 2023 figure (15.4 percent, more than one in seven) and name Georgia's 19.0 percent; do not say the problem is worse across the Southeast, South Carolina is 10.3 percent.",
+    "Georgia bullets: 'Add-on vs. reduced coverage' becomes 'added-on by default unless you selected reduced-by coverage in writing (O.C.G.A. § 33-7-11(b)(1)(D)(ii))'; add 'up to your actual losses' to the $125,000 example.",
+    "Georgia bullets: rewrite 'Stacking permitted' as separate policies stack and anti-stacking clauses across policies are void, but vehicles on a single policy do not stack; delete the § 33-7-11(b)(1)(D)(ii) cite and the word 'waiver'.",
+    "Georgia bullets: replace 'Consent to settle' with a 'Limited release' bullet on O.C.G.A. § 33-24-41.1: settle with the at-fault carrier only through a limited release; the UM carrier cannot require consent but must be served with the suit (§ 33-7-11(d)).",
+    "Georgia bullets: 'rejection or reduction must be in writing signed by the named insured' becomes 'rejection must be in writing; a lower limit must be affirmatively chosen'.",
+    "South Carolina bullets: delete 'unless the named insured rejects it in writing' from the mandatory-coverage bullet; add the $25,000 property-damage minimum; note UIM is optional under § 38-77-160.",
+    "South Carolina bullets: replace the 'Difference method (not add-on)' bullet with 'Excess coverage': UIM pays on top of the at-fault limits up to your damages (§ 38-77-160; Broome v. Watts); change the $75,000 example to up to $125,000.",
+    "South Carolina bullets: rewrite 'Stacking available' around Class I insureds and the vehicle-involved cap; delete 'written rejection of stacking'.",
+    "South Carolina bullets: rewrite 'Meaningful coverage requirement' as the 'meaningful offer' rule from State Farm v. Wannamaker and the § 38-77-350 form; keep one sentence that policy terms conflicting with the UM/UIM statutes are unenforceable.",
+    "Hit-and-run section: replace 'Both Georgia and South Carolina require ... actual physical contact' with physical contact OR corroboration (Georgia: eyewitness other than the claimant, § 33-7-11(b)(2); South Carolina: independent witness affidavit or a recording plus a prompt police report, § 38-77-170 as amended 2024).",
+    "Stacking section: limit the three-vehicle $300,000 illustration to South Carolina Class I insureds or recast it as three separate Georgia policies; delete 'unless the policyholder has signed a valid anti-stacking waiver'.",
+    "Stacking section: drop the 'Challenging Anti-Stacking Waivers' paragraph's standalone-document/fine-print tests; replace with Georgia (anti-stacking clauses across policies void) and South Carolina (exclusions conflicting with § 38-77-160 void; no meaningful UIM offer means UIM by operation of law).",
+    "Step 3: remove 'obtain consent' and 'forfeit your UIM claim entirely'; describe the Georgia limited release and the South Carolina ban on consent clauses, plus service of the UM/UIM carrier in both states.",
+    "Step 5: retitle 'Negotiate or File Suit'; delete the mandatory-arbitration sentence (Georgia forbids arbitration clauses, § 33-7-11(g)); explain that the carrier is served and may defend in the driver's name.",
+    "Common disputes: rename 'Consent-to-settle violations' to a release dispute (general release versus limited release under § 33-24-41.1).",
+    "Attorney section: change 'Arbitration advocacy' to trial advocacy; optionally add the Georgia bad-faith figures from § 33-7-11(j) (60-day demand; penalty up to the greater of 25 percent or $25,000 plus fees).",
+    "Key takeaways: fix the Georgia add-on sentence (reduced-by election), the South Carolina 'offset method' sentence (excess coverage; UM cannot be rejected; UIM optional), and the 'both states allow stacking across multiple vehicles' sentence.",
+    "FAQ 3 (stacking in South Carolina): rewrite around Class I insureds and the vehicle-involved cap; delete the waiver.",
+    "FAQ 4 (add-on vs offset): both states pay UIM on top of the at-fault limits; Georgia alone offers a reduced-by election in writing.",
+    "FAQ 5 (consent): answer 'No' for both states and cite O.C.G.A. § 33-24-41.1(c) and S.C. Code § 38-77-160; keep the advice to keep the carrier informed and serve it in any suit.",
+    "Comparison table 'Typical limit structure' row: soften to 'Often equal to your liability limits unless you choose lower limits or reject the coverage'.",
+    "Reviewer meta: record Graeham C. Gillin as reviewer; the post states South Carolina law."
+  ],
+  "statuteCitations": [
+    {
+      "section": "O.C.G.A. § 33-7-11",
+      "name": "Uninsured motorist coverage under motor vehicle liability policies",
+      "url": "https://law.justia.com/codes/georgia/title-33/chapter-7/section-33-7-11/"
+    },
+    {
+      "section": "O.C.G.A. § 33-24-41.1",
+      "name": "Motor vehicle accident claim covered by two or more insurance carriers; limited release",
+      "url": "https://law.justia.com/codes/georgia/title-33/chapter-24/article-1/section-33-24-41-1/"
+    },
+    {
+      "section": "O.C.G.A. § 40-9-37",
+      "name": "Requirements for liability insurance policies (minimum limits by reference to § 33-7-11(a)(1)(A))",
+      "url": "https://law.justia.com/codes/georgia/title-40/chapter-9/article-2/section-40-9-37/"
+    },
+    {
+      "section": "O.C.G.A. § 9-3-33",
+      "name": "Injuries to the person; two-year limitation",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+    },
+    {
+      "section": "O.C.G.A. § 51-12-33",
+      "name": "Reduction and apportionment of award or bar of recovery according to percentage of fault",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+    },
+    {
+      "section": "S.C. Code § 38-77-140",
+      "name": "Bodily injury and property damage limits; general requirements",
+      "url": "https://www.scstatehouse.gov/code/t38c077.php"
+    },
+    {
+      "section": "S.C. Code § 38-77-150",
+      "name": "Uninsured motorist provision; defense of action by insurer",
+      "url": "https://www.scstatehouse.gov/code/t38c077.php"
+    },
+    {
+      "section": "S.C. Code § 38-77-160",
+      "name": "Additional uninsured motorist coverage; underinsured motorist coverage",
+      "url": "https://www.scstatehouse.gov/code/t38c077.php"
+    },
+    {
+      "section": "S.C. Code § 38-77-170",
+      "name": "Conditions to sue or recover under uninsured motorist provision when owner or operator is unknown",
+      "url": "https://www.scstatehouse.gov/code/t38c077.php"
+    },
+    {
+      "section": "S.C. Code § 38-77-350",
+      "name": "Form to be used when optional coverages are offered",
+      "url": "https://www.scstatehouse.gov/code/t38c077.php"
+    },
+    {
+      "section": "S.C. Code § 15-3-530",
+      "name": "Three years; injury to the person",
+      "url": "https://www.scstatehouse.gov/code/t15c003.php"
+    }
+  ],
+  "caseCitations": [
+    {
+      "name": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (S.C. 1991)",
+      "holding": "Modified comparative negligence: plaintiff recovers if their negligence is not greater than the defendant's, reduced in proportion.",
+      "url": "https://www.courtlistener.com/opinion/1265650/nelson-v-concrete-supply-company/"
+    },
+    {
+      "name": "State Farm Mut. Auto. Ins. Co. v. Wannamaker, 291 S.C. 518, 354 S.E.2d 555 (S.C. 1987)",
+      "holding": "Meaningful-offer rule for optional UIM; Class II insured cannot stack.",
+      "url": "https://www.courtlistener.com/opinion/1206294/state-farm-mutual-automobile-insurance-v-wannamaker-ex-rel-estate-of/"
+    },
+    {
+      "name": "Broome v. Watts, 319 S.C. 337, 461 S.E.2d 46 (S.C. 1995)",
+      "holding": "UIM is additional to the at-fault recovery; the UIM carrier owes the excess of damages over the liability payout, total not exceeding damages.",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/1995/24291-2.html"
+    },
+    {
+      "name": "O'Neill v. Smith, 388 S.C. 246, 696 S.E.2d 605 (S.C. 2010)",
+      "holding": "UIM is triggered when damages exceed the at-fault motorist's liability limits.",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/2010/26826.html"
+    },
+    {
+      "name": "Carter v. Standard Fire Ins. Co., 406 S.C. 609, 753 S.E.2d 515 (S.C. 2013)",
+      "holding": "Class I insured with UIM on the involved vehicle may stack UIM on at-home vehicles under the same policy; contrary exclusion invalid under § 38-77-160.",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/2013/27340.html"
+    },
+    {
+      "name": "Nakatsu v. Encompass Indem. Co., 390 S.C. 172, 700 S.E.2d 283 (S.C. Ct. App. 2010)",
+      "holding": "Only a Class I insured may stack; stacked amounts capped at the coverage on the vehicle involved (collecting Ruppe, Mooneyham, Hill).",
+      "url": "https://www.courtlistener.com/opinion/2111804/nakatsu-v-encompass-indemnity-co/"
+    },
+    {
+      "name": "Nationwide Mut. Ins. Co. v. Erwood (S.C. 2007)",
+      "holding": "Basic UM under § 38-77-150 is mandatory and portable; policy may not restrict it.",
+      "url": "https://www.sccourts.org/opinions/advSheets/no142007.pdf"
+    },
+    {
+      "name": "Crafter v. State Farm Ins. Co., 251 Ga. App. 642, 554 S.E.2d 571 (Ga. Ct. App. 2001)",
+      "holding": "Georgia UM benefits are calculated by stacking all available UM coverages and setting off liability limits; no stacking within a single policy's coverage of several automobiles.",
+      "url": "https://law.justia.com/cases/georgia/court-of-appeals/2001/a01a1549.html"
+    },
+    {
+      "name": "State Farm Mut. Auto. Ins. Co. v. Hancock, 164 Ga. App. 32, 295 S.E.2d 359 (Ga. Ct. App. 1982)",
+      "holding": "Insureds may stack multiple UM policies; policy attempts to prevent stacking are prohibited.",
+      "url": "https://law.justia.com/cases/georgia/court-of-appeals/1982/64456.html"
+    }
+  ],
+  "authoritativeLinks": [
+    {
+      "name": "Insurance Information Institute, Facts + Statistics: Uninsured motorists (IRC 2023 state table)",
+      "url": "https://www.iii.org/fact-statistic/facts-statistics-uninsured-motorists"
+    },
+    {
+      "name": "Insurance Research Council, press release, One in Three Drivers are Either Uninsured or Underinsured (2025-02-17)",
+      "url": "https://insurance-research.org/news/one-three-drivers-are-either-uninsured-or-underinsured-us-exposing-themselves-and-other"
+    },
+    {
+      "name": "Insurance Research Council, Uninsured and Underinsured Motorists: 2017-2023 (report landing page, 2025-02-20)",
+      "url": "https://insurance-research.org/uninsured-motorists/uninsured-and-underinsured-motorists-2017-2023"
+    },
+    {
+      "name": "South Carolina Code, Title 38 Chapter 77 (Automobile Insurance)",
+      "url": "https://www.scstatehouse.gov/code/t38c077.php"
+    },
+    {
+      "name": "Georgia Code § 33-7-11 (law.justia.com, current code)",
+      "url": "https://law.justia.com/codes/georgia/title-33/chapter-7/section-33-7-11/"
+    },
+    {
+      "name": "Georgia Code § 33-24-41.1 limited release (law.justia.com, current code)",
+      "url": "https://law.justia.com/codes/georgia/title-33/chapter-24/article-1/section-33-24-41-1/"
+    }
+  ]
+}
