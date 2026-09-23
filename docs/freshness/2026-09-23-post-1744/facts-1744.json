@@ -1,0 +1,274 @@
+{
+  "postId": 1744,
+  "slug": "insurance-company-ignoring-demand-letter",
+  "verifiedAt": "2026-09-23",
+  "reviewerForOperator": "Graeham C. Gillin — the refreshed post will state South Carolina law alongside Georgia law (owner's rule 2026-09-23: never Eric Roden on anything that states SC law).",
+  "verifiedClaims": [
+    {
+      "surface": "body",
+      "claim": "A demand letter is a letter usually created by the injury victim or his or her lawyer and sent to the insurance company when the injury victim is dissatisfied with the insurance company’s initial settlement offer.",
+      "verdict": "update",
+      "currentValue": "A demand letter opens the negotiation; it is not a reaction to an offer. In Georgia, a written offer to settle a motor-vehicle injury claim prepared by or with an attorney is governed by O.C.G.A. § 9-11-67.1 from the time the cause of action accrues until the defendant answers, and it must contain the statute's material terms (acceptance date not less than 30 days from receipt, amount, parties and claims released, full or limited release, payment date not less than 40 days from receipt, an insurance-disclosure oath unless waived) and enclose records sufficient to let the insurer evaluate the claim.",
+      "sourceName": "O.C.G.A. § 9-11-67.1 (2025 Code of Georgia, Justia)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-8/section-9-11-67-1/",
+      "retrievedAt": "2026-09-23",
+      "note": "The post contradicts itself: this sentence makes the demand a response to an offer, while the timeline section calls it 'the jumpstart of the negotiations process'. The second is right. Statute text verified verbatim; History line reads 'Ga. L. 2024, p. 178, § 1/SB 83, effective July 1, 2024.'"
+    },
+    {
+      "surface": "body",
+      "claim": "The other party’s insurance company could either deny or accept the terms of your demand letter. If denied, your lawyer could file a lawsuit against the other party.",
+      "verdict": "keep",
+      "currentValue": "Keep, but stamp the filing deadline the suit runs against: two years from the injury in Georgia (O.C.G.A. § 9-3-33), three years in South Carolina (S.C. Code § 15-3-530(5)). Silence from the insurer does not pause either clock.",
+      "sourceName": "O.C.G.A. § 9-3-33; S.C. Code § 15-3-530",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+      "retrievedAt": "2026-09-23",
+      "note": "§ 9-3-33 verified: 'actions for injuries to the person shall be brought within two years after the right of action accrues'. § 15-3-530(5) verified at https://www.scstatehouse.gov/code/t15c003.php: three years for 'any injury to the person or rights of another, not arising on contract'. Both match the writer-profile jurisdiction table. In Georgia the insurer can also seek written clarification of a § 9-11-67.1 offer without that counting as a counteroffer (subsection (f)), so a clarification request is not a denial."
+    },
+    {
+      "surface": "body",
+      "claim": "Although most insurance companies will usually try to settle claims quickly to avoid spending too much time and money, they will usually try to start off with a lowball offer.",
+      "verdict": "drop",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "A population claim about 'most insurance companies' with no primary source. Replace with what the statutes actually require: Georgia lists 'Not attempting in good faith to effectuate prompt, fair, and equitable settlement of claims submitted in which liability has become reasonably clear' as an unfair claims settlement practice (§ 33-6-34(4)); South Carolina lists the same conduct (§ 38-59-20(4)) and 'Compelling policyholders to institute suits... by offering substantially less than the amounts ultimately recovered' (§ 38-59-20(5))."
+    },
+    {
+      "surface": "body",
+      "claim": "If you are not receiving a prompt response from the insurance company, odds are because: The insurer thinks that your demand is much higher than what it is worth; The insurer does not have all the necessary documents needed to assess the value of your claim",
+      "verdict": "keep",
+      "currentValue": "Keep the two reasons; they track the statutes. Georgia requires the offer to 'include medical or other records in the offeror’s possession... sufficient to allow the recipient to evaluate the claim' (§ 9-11-67.1(b)(2)) and lets the insurer 'seek clarification regarding the terms, the terms of the release, liens, subrogation claims, standing to release claims, medical bills, medical records, and other relevant facts' in writing without making a counteroffer (§ 9-11-67.1(f)). Refusing to pay 'without conducting a reasonable investigation' is itself an unfair practice (§ 33-6-34(6)).",
+      "sourceName": "O.C.G.A. § 9-11-67.1; O.C.G.A. § 33-6-34",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-8/section-9-11-67-1/",
+      "retrievedAt": "2026-09-23",
+      "note": "Drop 'odds are' if the sentence is touched; it is an unsupported probability. The two reasons themselves are fine."
+    },
+    {
+      "surface": "body",
+      "claim": "If you have the assistance of a lawyer and your demands are reasonable, you could receive an immediate payment from the insurance company, however this is not common.",
+      "verdict": "update",
+      "currentValue": "In a Georgia motor-vehicle case a statutory pre-suit offer cannot even demand payment sooner than 40 days from receipt, and the insurer has at least 30 days to accept (§ 9-11-67.1(b)(1)(A) and (F)); 'immediate payment' is not how the statute works. Neither state sets a response deadline for a third-party bodily-injury demand; both require 'reasonable promptness' in acknowledging claim communications (§ 33-6-34(2); § 38-59-20(2)).",
+      "sourceName": "O.C.G.A. § 9-11-67.1",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-8/section-9-11-67-1/",
+      "retrievedAt": "2026-09-23",
+      "note": "'This is not common' is unsourced; the statutory floor makes the point without a frequency claim."
+    },
+    {
+      "surface": "body",
+      "claim": "Most negotiations between the injury victim and the insurers will take a few months before a settlement is reached.",
+      "verdict": "drop",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "No primary source for a typical negotiation length. Replace with the two hard dates the reader can actually use: the 30-day acceptance / 40-day payment floors in a Georgia § 9-11-67.1 offer, and the suit deadline (2 years GA, 3 years SC)."
+    },
+    {
+      "surface": "body",
+      "claim": "Insurance companies are legally obligated to act in good faith when it comes to handling personal injury claims. This includes thoroughly investigating the details of your claim, calculating a fair settlement and responding to the injury victim and/or his or her legal representative within a reasonable time frame.",
+      "verdict": "update",
+      "currentValue": "Both states define these duties as unfair or improper claim practices enforced by the insurance regulator, not as a duty the injured third party can sue on. Georgia § 33-6-34 lists 'Failing to acknowledge with reasonable promptness pertinent communications with respect to claims' (2), 'Failing to adopt and implement procedures for the prompt investigation and settlement of claims' (3), 'Not attempting in good faith to effectuate prompt, fair, and equitable settlement of claims submitted in which liability has become reasonably clear' (4) and 'Refusing to pay claims without conducting a reasonable investigation' (6). South Carolina § 38-59-20 lists the same conduct in items (2), (3), (4) and (8) ('unreasonable delay in paying or an unreasonable failure to pay'), and § 38-59-30 assigns enforcement to the Director of Insurance (cease-and-desist orders and penalties under § 38-2-10).",
+      "sourceName": "O.C.G.A. § 33-6-34; S.C. Code §§ 38-59-20, 38-59-30",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-6/article-2/section-33-6-34/",
+      "retrievedAt": "2026-09-23",
+      "note": "The sentence is true as a description of regulatory duties and misleading as a description of the reader's rights: the Georgia acts count only 'when committed as provided in Code Section 33-6-33' (frequency or flagrancy; § 33-6-33 not fetched this run, so do not characterize it further), and the South Carolina acts only 'without just cause' and 'with such frequency as to indicate a general business practice'. Neither statute gives a third-party claimant a cause of action; say 'the state insurance regulator can act', not 'you can sue for bad faith'."
+    },
+    {
+      "surface": "body",
+      "claim": "If you suspect that the insurance company is acting in bad faith, you may need to take legal action.",
+      "verdict": "update",
+      "currentValue": "The statutory bad-faith remedies in both states belong to the policyholder, not to the injured person claiming against the other driver's insurer. Georgia § 33-4-6: if the insurer refuses to pay a covered loss 'within 60 days after a demand has been made by the holder of the policy' and the refusal is found to be in bad faith, the insurer owes 'not more than 50 percent of the liability of the insurer for the loss or $5,000.00, whichever is greater, and all reasonable attorney’s fees'. South Carolina § 38-59-40: an insurer that refuses to pay for ninety days after demand 'without reasonable cause or in bad faith' owes the insured reasonable attorney's fees, capped at one-third of the judgment. Against the at-fault driver's insurer, the injured person's legal action is a lawsuit against the driver within the limitations period; a regulator complaint is the other formal route (Georgia OCI Consumer Services; S.C. Department of Insurance Office of Consumer Services).",
+      "sourceName": "O.C.G.A. § 33-4-6; S.C. Code § 38-59-40",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-4/section-33-4-6/",
+      "retrievedAt": "2026-09-23",
+      "note": "This is the most consequential correction in the post. § 33-4-6 and § 38-59-40 both run only against 'the holder of the policy' / the insured; they do not run against the other driver's insurer. The post implies the injured reader can sue the other side's insurer for bad faith. Where these remedies do apply for a Roden client is a first-party claim: UM/UIM, med-pay, collision. SC § 38-59-40 verified at https://www.scstatehouse.gov/code/t38c059.php."
+    },
+    {
+      "surface": "body",
+      "claim": "Our lawyers know how to negotiate with insurance adjusters and hold them liable for any bad faith tactics.",
+      "verdict": "update",
+      "currentValue": "'Hold them liable' is only accurate for a first-party claim (§ 33-4-6 in Georgia; § 38-59-40 in South Carolina). For a third-party claim the levers are the lawsuit against the at-fault driver, a properly framed § 9-11-67.1 offer in Georgia, and a complaint to the insurance regulator. Reword to 'know how to negotiate with adjusters, frame a demand the insurer cannot safely ignore, and file suit when they do'.",
+      "sourceName": "O.C.G.A. § 33-4-6; S.C. Code § 38-59-40",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-4/section-33-4-6/",
+      "retrievedAt": "2026-09-23",
+      "note": "Same class as the previous claim; the CTA repeats the overstatement."
+    },
+    {
+      "surface": "body",
+      "claim": "The Albany personal injury lawyers at Roden Law know how to properly negotiate and get insurance companies to respond to demand letters.",
+      "verdict": "drop",
+      "currentValue": "Roden Law has no Albany office. Offices per profiles/firm-facts.md: Savannah and Darien, GA; Charleston, North Charleston, Columbia and Myrtle Beach (Murrells Inlet), SC. Replace 'Albany' with 'Georgia and South Carolina' and keep the link to /practice-areas/personal-injury-lawyers/.",
+      "sourceName": "profiles/firm-facts.md (generated from client.json)",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "'Albany' also appears in the closing CTA ('schedule a free consultation with an Albany personal injury lawyer'). Both occurrences. A grep of firm-facts.md and client.json for 'albany' returns nothing."
+    },
+    {
+      "surface": "body",
+      "claim": "Give us a call any time, 24-7, there are no upfront fees and no hidden obligations.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "profiles/writer-profile.md, Firm stats",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "'No upfront fees' matches the firm's verbatim stats (contingency fee, no fees unless we win). '24-7' is an unchanged firm statement not in the profile; leave it. No tel: href in the body to check."
+    },
+    {
+      "surface": "excerpt",
+      "claim": "Why insurers ignore or delay a demand letter after a personal injury claim, what the silence usually means, and the steps that get a response.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "No factual claim; the excerpt is published as the Article description. Optionally append 'in Georgia and South Carolina' so the description matches the stamped body."
+    },
+    {
+      "surface": "faq:0",
+      "claim": "A letter created by the injury victim or their lawyer and sent to the insurance company when the victim is dissatisfied with how the claim is being handled. It sets out the losses and the compensation being sought.",
+      "verdict": "update",
+      "currentValue": "A written demand for a stated amount, sent to open settlement negotiations, that sets out liability, the injuries and losses, and the records supporting them. In Georgia motor-vehicle cases an attorney-prepared pre-suit offer must contain the material terms in O.C.G.A. § 9-11-67.1 (acceptance date at least 30 days out, amount, parties and claims released, type of release, payment date at least 40 days out) and enclose the records the insurer needs to evaluate the claim.",
+      "sourceName": "O.C.G.A. § 9-11-67.1",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-8/section-9-11-67-1/",
+      "retrievedAt": "2026-09-23",
+      "note": "Publishes as FAQPage structured data. 'When the victim is dissatisfied with how the claim is being handled' repeats the body's reversed sequence."
+    },
+    {
+      "surface": "faq:1",
+      "claim": "Delay is often deliberate. Insurers know that financial pressure builds while medical bills accumulate and income is lost, and a claimant under that pressure is more likely to accept less than the claim is worth.",
+      "verdict": "update",
+      "currentValue": "Drop 'Delay is often deliberate' (an assertion of intent with no source). Keep the pressure point and anchor it to the statute: both states treat failing to acknowledge claim communications with reasonable promptness, failing to investigate promptly, and offering substantially less than the claim is worth to force a lawsuit as unfair claim practices (Georgia § 33-6-34(2)-(5); South Carolina § 38-59-20(2)-(5)). Silence can also mean the insurer is waiting on records it is entitled to ask for (Georgia § 9-11-67.1(b)(2), (f)).",
+      "sourceName": "O.C.G.A. § 33-6-34; S.C. Code § 38-59-20",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t38c059.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Georgia § 33-6-34(5): 'Compelling insureds or beneficiaries to institute suits to recover amounts due under its policies by offering substantially less than the amounts ultimately recovered' — note this paragraph speaks of insureds and beneficiaries, so cite it for the pattern, not as a third-party right."
+    },
+    {
+      "surface": "faq:2",
+      "claim": "A response usually takes weeks rather than days, as the adjuster reviews records and obtains internal authority. Silence stretching well past that is a signal the claim needs escalating rather than more waiting.",
+      "verdict": "update",
+      "currentValue": "Neither state sets a statutory deadline for answering a third-party bodily-injury demand. The fixed numbers that do exist: a Georgia § 9-11-67.1 offer must give the insurer at least 30 days to accept and at least 40 days to pay, so no response is overdue before day 30; Georgia's 15-day acknowledgment and 30/60-day accept-or-deny rules in Ga. Comp. R. & Regs. 120-2-52 apply only to first-party property-damage claims under the reader's own auto policy, not to a liability claim against another driver; South Carolina requires only 'reasonable promptness' (§ 38-59-20(2)). The deadline that never moves is the suit deadline: 2 years in Georgia, 3 in South Carolina.",
+      "sourceName": "O.C.G.A. § 9-11-67.1; Ga. Comp. R. & Regs. 120-2-52 (Fair and Equitable Settlement of First Party Property Damage Claims); S.C. Code § 38-59-20",
+      "sourceUrl": "https://rules.sos.ga.gov/gac/120-2-52",
+      "retrievedAt": "2026-09-23",
+      "note": "Do not import the regulation's 15/30/60-day figures as a deadline for the other driver's insurer; the Secretary of State's rule text scopes Subject 120-2-52 to first-party property damage claims under private passenger motor vehicle policies. The only 15-day figure inside § 33-6-34 itself is paragraph (11), providing claim forms within 15 calendar days of a request. 'Weeks rather than days' is unsourced but harmless; the 30-day floor is the defensible replacement."
+    },
+    {
+      "surface": "faq:3",
+      "claim": "Escalate rather than repeat. An attorney who knows how insurers and adjusters operate can apply formal pressure and, where necessary, file suit, which changes the calculation for the insurer entirely.",
+      "verdict": "keep",
+      "currentValue": "Keep; add the two concrete escalations: a complaint to the state insurance regulator (Georgia OCI Consumer Services Division; S.C. Department of Insurance Office of Consumer Services), and filing suit against the at-fault driver before the limitations period ends (2 years GA, § 9-3-33; 3 years SC, § 15-3-530). In Georgia, an insurer that fails to accept a compliant § 9-11-67.1 offer within its window loses the statute's safe harbor for that offer (§ 9-11-67.1(i)(3)).",
+      "sourceName": "Georgia OCI, File a Consumer Insurance Complaint; O.C.G.A. § 9-11-67.1",
+      "sourceUrl": "https://oci.georgia.gov/file-consumer-insurance-complaint",
+      "retrievedAt": "2026-09-23",
+      "note": "OCI page verified: the Consumer Services Division investigates 'how a claim is being handled', asks the company for a written response, and requires the consumer to have contacted the insurer first and kept records — which is exactly the post's step 1."
+    },
+    {
+      "surface": "faq:4",
+      "claim": "You can, and many people do. The risk is undervaluing the claim or omitting losses that are hard to recover later, which is why having the letter prepared or reviewed by a lawyer is usually worthwhile.",
+      "verdict": "keep",
+      "currentValue": "Keep; two verified points sharpen it. (1) Georgia § 9-11-67.1(b) governs offers 'prepared by or with the assistance of an attorney', so a self-written demand is not a statutory offer and does not put the insurer on the § 9-11-67.1 clock. (2) Both states reduce recovery by the claimant's share of fault and bar it past a threshold — Georgia bars recovery at 50 percent or more (§ 51-12-33(g)); South Carolina allows recovery only if the plaintiff's negligence 'is not greater than that of the defendant' (Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991)) — so a demand that ignores the fault split is overvalued from the start.",
+      "sourceName": "O.C.G.A. § 51-12-33; Nelson v. Concrete Supply Co.",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-23",
+      "note": "§ 51-12-33(g) verified verbatim: 'the plaintiff shall not be entitled to receive any damages if the plaintiff is 50 percent or more responsible'. Nelson verified verbatim on Justia (decided January 7, 1991; applies to causes of action arising on or after July 1, 1991). Never cite S.C. Code § 15-38-15 for the plaintiff's bar (writer-profile rule; the SC law pack records 31 prior miscites)."
+    }
+  ],
+  "recommendedEdits": [
+    "Replace both 'Albany personal injury lawyer(s)' phrases with 'Georgia and South Carolina personal injury lawyers' (intro) and 'a Georgia or South Carolina personal injury lawyer' (closing CTA); keep the /practice-areas/personal-injury-lawyers/ link. The firm has no Albany office.",
+    "Rewrite the definition sentence so the demand letter opens negotiations rather than answers an offer: 'A demand letter is the written settlement demand your lawyer sends the insurer to open negotiations: it sets out fault, your injuries, the records behind them, and the amount that will resolve the claim.'",
+    "Add one short paragraph under 'What is a Demand Letter?' for Georgia: 'In a Georgia motor-vehicle case, a demand prepared with a lawyer is a pre-suit offer under O.C.G.A. § 9-11-67.1. It must give the insurer at least 30 days to accept and at least 40 days to pay, list exactly what is being released, and enclose the records the insurer needs to evaluate the claim.' Link § 9-11-67.1 to the Justia URL in statuteCitations.",
+    "Add one sentence for South Carolina in the same section: 'South Carolina has no equivalent statute; a demand there is an ordinary written offer, and the insurer's duty to answer it with reasonable promptness comes from S.C. Code § 38-59-20.'",
+    "Delete 'Although most insurance companies will usually try to settle claims quickly ... they will usually try to start off with a lowball offer.' and 'These companies are successful because ...'. Replace with: 'Both states treat a low offer meant to force you into court as an unfair claim practice — O.C.G.A. § 33-6-34 in Georgia, S.C. Code § 38-59-20 in South Carolina.'",
+    "In the timeline section, delete 'you could receive an immediate payment ... not common' and 'Most negotiations ... will take a few months'. Replace with the two fixed dates: 'In Georgia the insurer has at least 30 days to accept a § 9-11-67.1 offer and at least 40 days to pay. Neither state sets a deadline for the other driver's insurer to answer a demand — but your deadline to sue does not move: two years from the injury in Georgia (O.C.G.A. § 9-3-33), three years in South Carolina (S.C. Code § 15-3-530).'",
+    "In 'What Should I Do If the Insurer is Ignoring Me?', replace 'Insurance companies are legally obligated to act in good faith ... within a reasonable time frame.' with: 'Georgia (O.C.G.A. § 33-6-34) and South Carolina (S.C. Code § 38-59-20) both list failing to acknowledge claim communications promptly, failing to investigate, and refusing a fair settlement once liability is clear as unfair claim practices. Those rules are enforced by the state insurance regulator; they do not let you sue the other driver's insurer directly.'",
+    "Replace 'If you suspect that the insurance company is acting in bad faith, you may need to take legal action.' with: 'The bad-faith penalties — Georgia's § 33-4-6 (up to 50% of the loss or $5,000, whichever is greater, plus attorney's fees, after a 60-day demand) and South Carolina's § 38-59-40 (attorney's fees after a 90-day demand) — apply only to your own insurer, such as an uninsured-motorist or med-pay claim. Against the other driver's insurer, the pressure is a lawsuit against the driver and, where warranted, a complaint to the regulator.'",
+    "Add a third numbered step after 'Reach out to a licensed lawyer': 'File a complaint with the state insurance regulator if the silence continues — the Georgia Office of Commissioner of Insurance and Safety Fire or the South Carolina Department of Insurance. Both ask that you contact the insurer first and keep records, which step 1 already covers.' Link the two regulator pages from authoritativeLinks.",
+    "Closing CTA: change 'hold them liable for any bad faith tactics' to 'frame a demand the insurer cannot safely ignore, and file suit when they do'.",
+    "FAQ 0: rewrite per verifiedClaims faq:0 (demand opens negotiations; Georgia § 9-11-67.1 material terms).",
+    "FAQ 1: drop the first sentence 'Delay is often deliberate.'; keep the rest and add 'Both states treat unreasonable delay and lowball offers meant to force a lawsuit as unfair claim practices (O.C.G.A. § 33-6-34; S.C. Code § 38-59-20).'",
+    "FAQ 2: replace 'usually takes weeks rather than days' with the verified floors: 'In Georgia the insurer has at least 30 days to accept a § 9-11-67.1 demand and at least 40 days to pay; South Carolina sets no fixed deadline for the other driver's insurer. What does not move is your deadline to sue — two years in Georgia, three in South Carolina.'",
+    "FAQ 3: append 'The two formal escalations are a complaint to the state insurance regulator and a lawsuit against the at-fault driver filed before the deadline.'",
+    "FAQ 4: append 'Two cautions: in Georgia only a demand prepared with a lawyer is a § 9-11-67.1 offer, and both states cut recovery by your share of fault — Georgia bars it at 50% (O.C.G.A. § 51-12-33), South Carolina at more than 50% (Nelson v. Concrete Supply Co.).'",
+    "Excerpt: optionally append ' — in Georgia and South Carolina' so the Article description matches the stamped body.",
+    "Do not add an attorney attribution quote (owner's rule 2026-09-23); the post has none. Operator: record Graeham C. Gillin as reviewer because the refreshed post states South Carolina law.",
+    "Do not cite Ga. Comp. R. & Regs. 120-2-52's 15/30/60-day deadlines as applying to the other driver's insurer; the rule covers first-party property-damage claims only. If mentioned at all, say so in those words.",
+    "Keep the post short: every replacement above is one to two sentences; net length should stay near 750–850 words."
+  ],
+  "statuteCitations": [
+    {
+      "section": "O.C.G.A. § 9-11-67.1",
+      "name": "Settlement offers and agreements for personal injury, bodily injury, and death from motor vehicle; payment methods (material terms; 30-day acceptance and 40-day payment floors; amended by Ga. L. 2024, p. 178, § 1/SB 83, effective July 1, 2024)",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-8/section-9-11-67-1/"
+    },
+    {
+      "section": "O.C.G.A. § 33-6-34",
+      "name": "Unfair claims settlement practices (acknowledge communications with reasonable promptness; prompt investigation; good-faith settlement where liability is reasonably clear; no payment refusal without reasonable investigation)",
+      "url": "https://law.justia.com/codes/georgia/title-33/chapter-6/article-2/section-33-6-34/"
+    },
+    {
+      "section": "O.C.G.A. § 33-4-6",
+      "name": "Liability of insurer for damages and attorney's fees for bad-faith refusal to pay a covered loss (60-day demand by the policyholder; penalty up to the greater of 50% of the loss or $5,000, plus attorney's fees) — first-party only",
+      "url": "https://law.justia.com/codes/georgia/title-33/chapter-4/section-33-4-6/"
+    },
+    {
+      "section": "O.C.G.A. § 9-3-33",
+      "name": "Injuries to the person — two years",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+    },
+    {
+      "section": "O.C.G.A. § 51-12-33",
+      "name": "Reduction and apportionment of award or bar of recovery according to percentage of fault (subsection (g): no recovery at 50 percent or more)",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+    },
+    {
+      "section": "S.C. Code § 38-59-20",
+      "name": "Improper claim practices (acknowledge communications with reasonable promptness; prompt investigation; good-faith settlement; unreasonable delay or failure to pay) — enforced by the Director of Insurance under § 38-59-30",
+      "url": "https://www.scstatehouse.gov/code/t38c059.php"
+    },
+    {
+      "section": "S.C. Code § 38-59-40",
+      "name": "Attorney's fees where an insurer refuses to pay an insured's claim for ninety days after demand without reasonable cause or in bad faith (fee capped at one-third of the judgment) — first-party only",
+      "url": "https://www.scstatehouse.gov/code/t38c059.php"
+    },
+    {
+      "section": "S.C. Code § 15-3-530",
+      "name": "Three years — item (5), injury to the person not arising on contract",
+      "url": "https://www.scstatehouse.gov/code/t15c003.php"
+    },
+    {
+      "section": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991)",
+      "name": "South Carolina adopts modified comparative negligence: plaintiff recovers if his or her negligence is not greater than the defendant's (the 51% bar); never cite § 15-38-15 for this",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html"
+    },
+    {
+      "section": "Ga. Comp. R. & Regs. 120-2-52",
+      "name": "Fair and Equitable Settlement of First Party Property Damage Claims (15-day acknowledgment; 15/30-day accept-or-deny; 60-day outer limit) — first-party property claims only; not a deadline for a third-party bodily-injury demand",
+      "url": "https://rules.sos.ga.gov/gac/120-2-52"
+    }
+  ],
+  "authoritativeLinks": [
+    {
+      "name": "Georgia Office of the Commissioner of Insurance and Safety Fire — File a Consumer Insurance Complaint",
+      "url": "https://oci.georgia.gov/file-consumer-insurance-complaint"
+    },
+    {
+      "name": "South Carolina Department of Insurance — File a Complaint (302-redirects to the NAIC online complaint form for SC; verified 2026-09-23)",
+      "url": "https://doi.sc.gov/complaint"
+    },
+    {
+      "name": "South Carolina Department of Insurance — Consumer Services",
+      "url": "https://doi.sc.gov/8/Consumers"
+    },
+    {
+      "name": "Georgia Secretary of State — Rules and Regulations, Subject 120-2-52",
+      "url": "https://rules.sos.ga.gov/gac/120-2-52"
+    }
+  ],
+  "sourcesNotReached": [
+    "O.C.G.A. § 33-6-33 (the 'as provided in' predicate for § 33-6-34) — not fetched; the pack does not characterize it beyond the cross-reference.",
+    "The enrolled SB 83 (2024) bill text on legis.ga.gov — the document link returned a mis-filed local-bill notice; the 2024 amendment is taken from § 9-11-67.1's own History line on Justia ('Ga. L. 2024, p. 178, § 1/SB 83, effective July 1, 2024').",
+    "South Carolina case law on the absence of a private right of action under § 38-59-20 — not fetched; the pack relies on the statute's structure (§ 38-59-30 gives the remedy to the Director; § 38-59-40 gives a fee remedy to the insured only). Note that § 38-59-270's 'no private right of action' sentence belongs to Article 2 of the chapter, not to § 38-59-20; do not cite it for this point."
+  ]
+}

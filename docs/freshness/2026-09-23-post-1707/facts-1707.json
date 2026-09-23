@@ -1,0 +1,596 @@
+{
+  "postId": 1707,
+  "slug": "liability-for-sudden-emergency-accidents",
+  "liveUrl": "https://rodenlaw.com/blog/liability-for-sudden-emergency-accidents/",
+  "verifiedAt": "2026-09-23",
+  "reviewerByJurisdiction": "Two-state post stating South Carolina law: reviewer is Graeham C. Gillin, never Eric Roden.",
+  "sourcingNotes": [
+    "The post cites no statistics; data/statistics.json has no entry for medical-emergency crashes, seizure or diabetes prevalence, so no figure was added or changed.",
+    "Both states' controlling rule is the 'sudden, unforeseeable loss of consciousness / incapacity' line of cases (Georgia: Lewis v. Smith, Eatmon v. Weeks; South Carolina: Boyleston v. Baxley, Collins v. Frasier). That is a different doctrine from the classic 'sudden emergency doctrine' (how a driver reacts to a peril not of their own making, Ware v. Alston / Barlow v. Veber in Georgia), which the post's intro conflates. The prompt's suggested South Carolina case Lee v. Bunch, Op. No. 26334 (S.C. 2007), was read on sccourts.org and does not discuss sudden emergency at all (it is a Rule 403 / Rule 15(b) / consortium-verdict case); it is not cited here.",
+    "law.justia.com case pages and codes pages returned Cloudflare 403 to both fetchers; Georgia statutes were verified on codes.findlaw.com and Georgia opinions on caselaw.findlaw.com; South Carolina statutes on www.scstatehouse.gov and South Carolina opinions on www.sccourts.org. Justia URLs below are the site's established year-less forms (copied from content/meta.json usage counts), not verified live in this run.",
+    "The one tel: href in the body is tel:+18447378587, which matches firm-facts for 1-844-RESULTS. The one outbound link (law.cornell.edu wex) is on the allowlist."
+  ],
+  "verifiedClaims": [
+    {
+      "surface": "body",
+      "claim": "This is the sudden medical emergency defense, and it exists in both Georgia and South Carolina.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Eatmon v. Weeks, Nos. A13A0692/A13A0693 (Ga. App. July 16, 2013), quoting Lewis v. Smith, 238 Ga. App. 6 (1999); Collins v. Frasier, Op. No. 4385 (S.C. Ct. App. May 6, 2008), applying Boyleston v. Baxley, 243 S.C. 281, 133 S.E.2d 796 (1963)",
+      "sourceUrl": "https://www.sccourts.org/opinions/HTMLFiles/COA/4385.htm",
+      "retrievedAt": "2026-09-23",
+      "note": "Georgia: 'where the driver of an automobile suffers an unforeseeable illness which causes him to suddenly lose consciousness and control of the automobile, the driver's loss of control is not negligent.' South Carolina: 'a vehicle operator is not ordinarily chargeable with negligence when he suddenly loses consciousness due to an unforeseen cause.' Georgia opinion at https://caselaw.findlaw.com/court/ga-court-of-appeals/1638980.html."
+    },
+    {
+      "surface": "body",
+      "claim": "The sudden emergency doctrine is well-established across American tort law, but Georgia and South Carolina apply it differently.",
+      "verdict": "update",
+      "currentValue": "Both states state the sudden-incapacity rule the same way (an unforeseeable loss of consciousness is not negligence; the driver bears the burden of proving it). What differs between the states is the comparative-fault threshold and the filing deadline, not the doctrine itself.",
+      "sourceName": "Eatmon v. Weeks (Ga. App. 2013); Collins v. Frasier (S.C. Ct. App. 2008)",
+      "sourceUrl": "https://www.sccourts.org/opinions/HTMLFiles/COA/4385.htm",
+      "retrievedAt": "2026-09-23",
+      "note": "Replace 'apply it differently' with language saying the two states apply the same rule inside different comparative-fault and limitation frameworks. Also worth one clause distinguishing sudden incapacity from the reaction-to-peril 'sudden emergency doctrine' (Ware v. Alston, 112 Ga. App. 627 (1965); Barlow v. Veber, 169 Ga. App. 65 (1983)), which is what the post's Cornell wex link describes."
+    },
+    {
+      "surface": "body",
+      "claim": "The sudden medical emergency defense is an affirmative defense in personal injury cases.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Eatmon v. Weeks (Ga. App. 2013), quoting Lewis v. Smith, 238 Ga. App. 6, 7 (1999)",
+      "sourceUrl": "https://caselaw.findlaw.com/court/ga-court-of-appeals/1638980.html",
+      "retrievedAt": "2026-09-23",
+      "note": "Georgia: 'a defendant moving for summary judgment on this basis may not rely upon an absence of evidence in the record disproving the affirmative defense but must carry the burden of affirmatively proving the defense.' South Carolina: Boyleston 'assigned the burden of proving such incapacity to the defendant' (Collins v. Frasier)."
+    },
+    {
+      "surface": "body",
+      "claim": "For the defense to succeed, the driver must generally prove three things: They experienced a sudden and unexpected medical emergency while driving. The medical emergency caused them to lose control of their vehicle. They had no prior warning or reason to anticipate the emergency.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Eatmon v. Weeks (Ga. App. 2013); Collins v. Frasier (S.C. Ct. App. 2008)",
+      "sourceUrl": "https://caselaw.findlaw.com/court/ga-court-of-appeals/1638980.html",
+      "retrievedAt": "2026-09-23",
+      "note": "A fair lay restatement of 'sudden, unforeseeable incapacity' causing loss of control; foreseeability (prior warning) is the element both courts examine."
+    },
+    {
+      "surface": "body",
+      "claim": "Courts in both Georgia and South Carolina evaluate the specific condition, the driver's medical history, and whether the episode was genuinely unforeseeable.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Eatmon v. Weeks (no prior warning of stroke; summary judgment for driver's estate); Collins v. Frasier (hypoglycemia; treating physician testified no prior fainting history; jury verdict for driver affirmed)",
+      "sourceUrl": "https://www.sccourts.org/opinions/HTMLFiles/COA/4385.htm",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia recognizes the sudden emergency doctrine as a defense to negligence claims arising from motor vehicle accidents. The defense has deep roots in Georgia case law, and courts apply it through a specific framework that places the burden of proof squarely on the defendant.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Eatmon v. Weeks (Ga. App. 2013), quoting Lewis v. Smith, 238 Ga. App. 6 (1999)",
+      "sourceUrl": "https://caselaw.findlaw.com/court/ga-court-of-appeals/1638980.html",
+      "retrievedAt": "2026-09-23",
+      "note": "Freeman v. Martin, 116 Ga. App. 237 (1967) is the older root case but could not be fetched (Justia 403); the 1999 and 2013 opinions suffice."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia courts have consistently held that a driver who knows about a medical condition that could impair their ability to drive safely has a duty to refrain from driving or take reasonable precautions.",
+      "verdict": "update",
+      "currentValue": "Georgia limits the defense to an unforeseeable loss of consciousness; a driver who had prior warning of the condition cannot rely on it.",
+      "sourceName": "Eatmon v. Weeks (Ga. App. 2013)",
+      "sourceUrl": "https://caselaw.findlaw.com/court/ga-court-of-appeals/1638980.html",
+      "retrievedAt": "2026-09-23",
+      "note": "The verified holding is framed as foreseeability (the defense fails if the driver had warning), not as an affirmatively stated 'duty to refrain from driving.' Soften 'consistently held ... has a duty to refrain from driving' to the foreseeability framing; the practical meaning is the same."
+    },
+    {
+      "surface": "body",
+      "claim": "In cases where the driver had no prior history of the medical condition, courts have allowed the defense to go to the jury. But where evidence showed the driver had experienced prior episodes, had been warned by a doctor, or had failed to take prescribed medication, Georgia courts have rejected the defense or allowed the jury to weigh those facts against the claim of unforeseeability.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Eatmon v. Weeks (Ga. App. 2013)",
+      "sourceUrl": "https://caselaw.findlaw.com/court/ga-court-of-appeals/1638980.html",
+      "retrievedAt": "2026-09-23",
+      "note": "Slightly understated: with no prior warning Georgia courts have granted summary judgment to the driver outright (Eatmon), not only sent it to a jury. Optional tweak, not an error."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia's driver licensing statutes under O.C.G.A. § 40-5-1 et seq. also play a role. Drivers have an obligation to meet fitness standards for licensure.",
+      "verdict": "update",
+      "currentValue": "O.C.G.A. § 40-5-35: physicians may report to the Department of Driver Services any person whose disability would render them incapable of driving safely; the Driver's License Advisory Board defines 'disorders characterized by lapses of consciousness'; DDS may revoke or refuse a license on medical grounds after notice and a hearing; a Class C license may not be denied for epilepsy unless an episode occurred in the preceding six months. Ga. Comp. R. & Regs. 375-3-5-.02 sets the six-month seizure-free standard.",
+      "sourceName": "O.C.G.A. § 40-5-35 (FindLaw text); Ga. Comp. R. & Regs. 375-3-5 (Georgia Secretary of State)",
+      "sourceUrl": "https://rules.sos.ga.gov/gac/375-3-5",
+      "retrievedAt": "2026-09-23",
+      "note": "'§ 40-5-1 et seq.' is not wrong (Title 40, Chapter 5 is the driver's-license chapter) but is vague; cite § 40-5-35, the section that actually governs medical fitness. Statute text read at https://codes.findlaw.com/ga/title-40-motor-vehicles-and-traffic/ga-code-sect-40-5-35/."
+    },
+    {
+      "surface": "body",
+      "claim": "Even when the sudden medical emergency defense is raised, Georgia's modified comparative fault rule under O.C.G.A. § 51-12-33 still applies. Georgia follows a less than 50% bar — you can recover damages as long as your own fault is less than 50% of the total.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "profiles/writer-profile.md jurisdiction table; O.C.G.A. § 51-12-33(g)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-33/",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "If a jury finds that you were partially at fault for the accident (for example, you were speeding or not wearing a seatbelt), your damages are reduced by your percentage of fault.",
+      "verdict": "update",
+      "currentValue": "Use an example that does not turn on seat-belt evidence, e.g. '(for example, you were speeding or ran a light)'.",
+      "sourceName": "profiles/writer-profile.md: 'Georgia seat-belt and child-restraint evidence rules changed under SB 68; use only what the brief says.'",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "Whether seat-belt non-use can reduce a Georgia plaintiff's recovery is governed by the post-SB 68 version of § 40-8-76.1, which this run did not verify; the profile instructs not to state a seat-belt rule without the brief. Drop the seat-belt example; keep 'speeding'."
+    },
+    {
+      "surface": "body",
+      "claim": "Personal injury claims in Georgia must be filed within 2 years of the date of the accident under O.C.G.A. § 9-3-33. This deadline applies regardless of whether the sudden medical emergency defense is involved. If the crash resulted in a death, wrongful death claims also carry a 2-year filing deadline in Georgia.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "profiles/writer-profile.md jurisdiction table; O.C.G.A. § 9-3-33",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+      "retrievedAt": "2026-09-23",
+      "note": "§ 9-3-33 (two years for injuries to the person) is the section Georgia applies to wrongful death as well; standing to sue is § 51-4-2 (spouse, then children), not stated in the post."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina also recognizes the sudden emergency doctrine, though the state's courts have developed their own body of case law around when and how the defense applies.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Boyleston v. Baxley, 243 S.C. 281, 133 S.E.2d 796 (1963); Howle v. PYA/Monarch, Inc., 288 S.C. 586, 344 S.E.2d 157 (Ct. App. 1986); Collins v. Frasier, Op. No. 4385 (S.C. Ct. App. 2008)",
+      "sourceUrl": "https://www.sccourts.org/opinions/HTMLFiles/COA/4385.htm",
+      "retrievedAt": "2026-09-23",
+      "note": "South Carolina courts call it 'sudden, unforeseeable incapacity.'"
+    },
+    {
+      "surface": "body",
+      "claim": "Like Georgia, South Carolina places the burden on the defendant to establish the sudden medical emergency defense. The driver must show that they suffered an unforeseeable medical event that rendered them incapable of controlling their vehicle.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Collins v. Frasier (S.C. Ct. App. 2008): 'The court in Boyleston assigned the burden of proving such incapacity to the defendant. 243 S.C. at 285, 133 S.E.2d 797.'",
+      "sourceUrl": "https://www.sccourts.org/opinions/HTMLFiles/COA/4385.htm",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina courts evaluate foreseeability based on the totality of the circumstances, including the driver's medical history, any prior episodes, doctor's warnings, and medication compliance.",
+      "verdict": "update",
+      "currentValue": "South Carolina courts ask whether the incapacity was unforeseeable, looking at the driver's medical history, prior episodes, treating-physician testimony and medication effects (Collins v. Frasier: no prior fainting history; medication that could mask hypoglycemic symptoms).",
+      "sourceName": "Collins v. Frasier (S.C. Ct. App. 2008)",
+      "sourceUrl": "https://www.sccourts.org/opinions/HTMLFiles/COA/4385.htm",
+      "retrievedAt": "2026-09-23",
+      "note": "'Totality of the circumstances' is not the courts' formulation and the post uses it to manufacture a Georgia-vs-South-Carolina difference (see the table row 'Foreseeability Standard'). Both states apply the same unforeseeability test. Drop the label; keep the list of evidence."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina's vehicle fitness and licensing requirements under S.C. Code § 56-5-6110 et seq. further reinforce the expectation that drivers maintain physical fitness for safe vehicle operation. Violations of these provisions can serve as evidence of negligence independent of the sudden emergency analysis.",
+      "verdict": "update",
+      "currentValue": "S.C. Code § 56-1-221 creates the SCDMV Medical Advisory Board, whose members represent 'the disciplines of the medical and optometric community treating the mental or physical disabilities that may affect the safe operation of motor vehicles'; § 56-1-80(A)(6) lets an applicant disclose a permanent medical condition with a physician's certification. Chapter 1 of Title 56 is the driver's-license chapter.",
+      "sourceName": "S.C. Code § 56-1-221 and § 56-1-80 (scstatehouse.gov); S.C. Code § 56-5-6110 (scstatehouse.gov)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c001.php",
+      "retrievedAt": "2026-09-23",
+      "note": "WRONG CITATION. § 56-5-6110 is 'Parties to a crime' in Article 43 (Enforcement; Traffic Violations Procedure) of the Uniform Act Regulating Traffic; it has nothing to do with driver fitness (text: 'Every person who commits, attempts to commit, conspires to commit or aids or abets in the commission of any act declared herein to be a crime ... shall be guilty of such offense'). Replace with § 56-1-221 (Medical Advisory Board) in the body and in the comparison table. Also soften 'Violations of these provisions can serve as evidence of negligence': the licensing provisions are administrative; no South Carolina case was found treating a medical-licensing lapse as negligence per se."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina uses a modified comparative fault system with a 51% bar. You can recover damages as long as your fault does not equal or exceed 51% of the total. This is slightly more favorable to plaintiffs than Georgia's system because you can recover even if you are found to be 50% at fault, whereas in Georgia, 50% fault bars your claim entirely.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "profiles/writer-profile.md jurisdiction table: Nelson v. Concrete Supply Co., 303 S.C. 243 (1991) (recover if less than 51% at fault); O.C.G.A. § 51-12-33(g) (barred at 50% or more)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-33/",
+      "retrievedAt": "2026-09-23",
+      "note": "If a South Carolina authority is ever added for this row, it must be Nelson v. Concrete Supply Co., never § 15-38-15."
+    },
+    {
+      "surface": "body",
+      "claim": "If the jury finds the medically impaired driver was 55% at fault (perhaps because they should have known about the risk) and you were 45% at fault, you would recover 55% of your damages in South Carolina but would be completely barred in Georgia.",
+      "verdict": "update",
+      "currentValue": "At 45% plaintiff fault the plaintiff recovers 55% of damages in BOTH states; Georgia only bars recovery at 50% or more. The example as written is arithmetically wrong about Georgia.",
+      "sourceName": "O.C.G.A. § 51-12-33(g); Nelson v. Concrete Supply Co. (S.C. 1991)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-33/",
+      "retrievedAt": "2026-09-23",
+      "note": "A 45%-at-fault plaintiff is under Georgia's 50% bar and recovers. To illustrate the real difference, use a 50/50 split: recovers 50% in South Carolina, barred in Georgia."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina gives injured victims 3 years from the date of the accident to file a personal injury lawsuit under S.C. Code § 15-3-530.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-3-530(5) (scstatehouse.gov); profiles/writer-profile.md",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "Comparative Fault Standard | Modified — less than 50% (O.C.G.A. § 51-12-33) | Modified — less than 51%",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "profiles/writer-profile.md jurisdiction table",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-33/",
+      "retrievedAt": "2026-09-23",
+      "note": "Table row."
+    },
+    {
+      "surface": "body",
+      "claim": "Driver Fitness Statutes | O.C.G.A. § 40-5-1 et seq. | S.C. Code § 56-5-6110 et seq.",
+      "verdict": "update",
+      "currentValue": "O.C.G.A. § 40-5-35 | S.C. Code § 56-1-221",
+      "sourceName": "O.C.G.A. § 40-5-35; S.C. Code § 56-1-221",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c001.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Table row; same error as the body paragraph."
+    },
+    {
+      "surface": "body",
+      "claim": "Foreseeability Standard | Did the driver know or should they have known? | Totality of circumstances analysis",
+      "verdict": "update",
+      "currentValue": "Was the loss of consciousness unforeseeable? (same test in both states)",
+      "sourceName": "Eatmon v. Weeks (Ga. App. 2013); Collins v. Frasier (S.C. Ct. App. 2008)",
+      "sourceUrl": "https://www.sccourts.org/opinions/HTMLFiles/COA/4385.htm",
+      "retrievedAt": "2026-09-23",
+      "note": "Table row presents a difference the case law does not support."
+    },
+    {
+      "surface": "body",
+      "claim": "50% Fault Recovery | No — barred at exactly 50% | Yes — recovery allowed at 50%",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(g); Nelson v. Concrete Supply Co. (S.C. 1991)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-33/",
+      "retrievedAt": "2026-09-23",
+      "note": "Table row."
+    },
+    {
+      "surface": "body",
+      "claim": "A doctor who prescribed medication with known side effects that impair driving ability — and failed to warn the patient about those risks — may be liable for medical malpractice. Similarly, a physician who cleared a patient to drive despite knowing about a condition that made driving dangerous could face liability.",
+      "verdict": "update",
+      "currentValue": "Georgia: no. In Gilhuly v. Dockery, Nos. A05A0014/A05A0339 (Ga. App. May 24, 2005), a patient given IV Demerol and Phenergan in an emergency room without a driving warning crashed and injured two children; the Court of Appeals held the physician owed no duty to the non-patient third parties ('A doctor, like any actor, generally has no duty to exercise control over third persons to prevent them from harming others'; imposing one would create a 'divided loyalty'). South Carolina: yes, narrowly. In Hardee v. Bio Medical Applications of South Carolina, Inc., Op. No. 26217 (S.C. Oct. 23, 2006), a dialysis patient lost control minutes after treatment; the Supreme Court held 'a medical provider who provides treatment which it knows may have detrimental effects on a patient's capacities and abilities owes a duty to prevent harm to patients and to reasonably foreseeable third parties by warning the patient of the attendant risks and effects.'",
+      "sourceName": "Gilhuly v. Dockery (Ga. App. 2005); Hardee v. Bio Medical Applications of S.C., Inc. (S.C. 2006)",
+      "sourceUrl": "https://caselaw.findlaw.com/court/sc-supreme-court/1469133.html",
+      "retrievedAt": "2026-09-23",
+      "note": "CONSEQUENTIAL. The sentence as written is false for Georgia. Rewrite the 'Prescribing Physicians' paragraph as a South Carolina-only theory (duty to warn the patient about treatment the provider knows may impair driving) and state that Georgia courts have declined to extend a physician's duty to injured third parties. Georgia opinion at https://caselaw.findlaw.com/court/ga-court-of-appeals/1099853.html. Reporter citations for both were not confirmed from a primary page; cite by opinion/docket number and date."
+    },
+    {
+      "surface": "body",
+      "claim": "If the driver was operating a vehicle in the course of employment, the employer may be liable under the doctrine of respondeat superior.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "General vicarious-liability doctrine recognized in both states; hedged 'may be liable'",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "No state-specific fact asserted."
+    },
+    {
+      "surface": "body",
+      "claim": "The Federal Motor Carrier Safety Administration (FMCSA) requires commercial driver's license (CDL) holders to pass a physical examination every two years. Conditions like epilepsy, insulin-dependent diabetes (without an exemption), and certain cardiac conditions can disqualify a driver.",
+      "verdict": "update",
+      "currentValue": "49 CFR 391.45(b): a driver must be medically examined and certified if not certified 'during the preceding 24 months' (insulin-treated drivers every 12 months). The rule applies to drivers of commercial motor vehicles in interstate commerce, not only CDL holders (391.41(a)(1)(i)). 391.41(b)(8) disqualifies 'epilepsy or any other condition which is likely to cause loss of consciousness'; (b)(4) covers myocardial infarction, angina and other cardiovascular disease. Insulin-treated diabetes no longer requires an exemption: since 2018, 49 CFR 391.46 lets an insulin-treated driver qualify with an Insulin-Treated Diabetes Mellitus Assessment Form (MCSA-5870) completed by the treating clinician within 45 days of the medical exam, annual certification, and at least three months of electronic glucose records.",
+      "sourceName": "49 CFR 391.41, 391.45, 391.46 (Cornell LII)",
+      "sourceUrl": "https://www.law.cornell.edu/cfr/text/49/391.46",
+      "retrievedAt": "2026-09-23",
+      "note": "'Without an exemption' is eight years out of date. Change to 'insulin-treated diabetes that is not managed under FMCSA's assessment-form process' and 'commercial drivers' rather than 'CDL holders'. Primary pages: https://www.law.cornell.edu/cfr/text/49/391.41 and https://www.law.cornell.edu/cfr/text/49/391.45."
+    },
+    {
+      "surface": "body",
+      "claim": "If the driver was operating someone else's vehicle, the vehicle owner may be liable under negligent entrustment theories. A vehicle owner who knew the driver had a medical condition that made them unfit to drive — and let them drive anyway — could share responsibility for the resulting crash.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Gunn v. Booker, 259 Ga. 343 (1989) (Georgia requires the entrustor's actual knowledge of the driver's incompetence, including 'physical or mental condition'); Gadson v. ECO Services of S.C., Inc., Op. No. 26357 (S.C. 2007) (Restatement (Second) of Torts § 308)",
+      "sourceUrl": "https://www.sccourts.org/media/opinions/HTMLFiles/SC/26357.htm",
+      "retrievedAt": "2026-09-23",
+      "note": "The post's 'who knew' framing matches Georgia's actual-knowledge requirement; do not loosen it to 'should have known' in Georgia. Georgia opinion: https://law.justia.com/cases/georgia/supreme-court/1989/46481-1.html (not fetched; 403)."
+    },
+    {
+      "surface": "body",
+      "claim": "In rare cases, a medication itself may have caused the medical episode. If a drug caused an unexpected side effect that led to loss of consciousness, and the manufacturer failed to adequately warn about that risk, a product liability claim may exist.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "General failure-to-warn product-liability theory; hedged",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "No state-specific fact asserted."
+    },
+    {
+      "surface": "body",
+      "claim": "Both Georgia and South Carolina require insurers to offer uninsured and underinsured motorist coverage.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 33-7-11(a)(1), (a)(3) (UM coverage must be included unless the named insured rejects it in writing; (b)(1)(D)(ii) treats an underinsured vehicle as uninsured up to the insured's UM limits); S.C. Code § 38-77-150 (UM mandatory: 'No automobile insurance policy or contract may be issued or delivered unless it contains' UM) and § 38-77-160 ('Automobile insurance carriers shall offer, at the option of the insured, underinsured motorist coverage')",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Accurate. Optional precision: in South Carolina UM cannot be rejected at all; UIM must be offered. Georgia text read at https://codes.findlaw.com/ga/title-33-insurance/ga-code-sect-33-7-11/."
+    },
+    {
+      "surface": "body",
+      "claim": "UM/UIM coverage protects you when the at-fault driver has no insurance, insufficient insurance, or — in some interpretations — when the at-fault driver is found not liable and you cannot recover from their policy. Whether UM/UIM applies when the other driver is found not liable due to a sudden emergency defense depends on the specific policy language and the state's case law.",
+      "verdict": "update",
+      "currentValue": "UM/UIM coverage pays the sums the insured is 'legally entitled to recover as damages from the owner or operator of an uninsured motor vehicle' (S.C. Code § 38-77-150; Georgia's § 33-7-11 is likewise written as coverage for damages caused by an uninsured owner or operator). If the other driver is found not negligent because of a sudden, unforeseeable incapacity, there is nothing the victim is legally entitled to recover from that driver, so UM/UIM generally does not pay either. UM/UIM matters in these cases when the driver is liable but uninsured or underinsured.",
+      "sourceName": "S.C. Code § 38-77-150 (scstatehouse.gov); O.C.G.A. § 33-7-11 (FindLaw)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+      "retrievedAt": "2026-09-23",
+      "note": "CONSEQUENTIAL. The post's 'in some interpretations' fallback overstates UM/UIM as a remedy when the defense succeeds. Reframe: UM/UIM is the remedy when the defense FAILS and the driver is uninsured or underinsured; when the defense succeeds the first-party coverages that pay regardless of fault (MedPay, optional PIP, health insurance) are the fallback. Same correction applies to Key Takeaways, FAQ 2 and FAQ 6."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina requires PIP coverage as part of every auto insurance policy. PIP pays for your medical expenses and lost wages regardless of who was at fault.",
+      "verdict": "update",
+      "currentValue": "South Carolina does not require PIP. S.C. Code § 38-77-144: 'There is no personal injury protection (PIP) coverage mandated under the automobile insurance laws of this State.' PIP/no-fault medical coverage is an optional add-on in South Carolina.",
+      "sourceName": "S.C. Code § 38-77-144 (scstatehouse.gov)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+      "retrievedAt": "2026-09-23",
+      "note": "CONSEQUENTIAL. The sentence states the opposite of the statute. Rewrite the PIP paragraph: neither state mandates PIP; both states' insurers sell optional first-party medical coverage (PIP or MedPay) that pays regardless of fault."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia does not mandate PIP, but some Georgia drivers carry it as an optional add-on. PIP benefits are typically limited in amount but provide immediate coverage while you pursue other claims.",
+      "verdict": "update",
+      "currentValue": "Georgia does not mandate PIP (true). Georgia's optional first-party medical coverage is sold as medical payments (MedPay) coverage rather than PIP; keep the sentence but say 'optional medical payments coverage' instead of implying PIP is a standard Georgia add-on.",
+      "sourceName": "O.C.G.A. § 33-7-11 (mandatory-offer provisions cover UM only; no PIP mandate in Title 33 Chapter 7 Article 1)",
+      "sourceUrl": "https://codes.findlaw.com/ga/title-33-insurance/ga-code-sect-33-7-11/",
+      "retrievedAt": "2026-09-23",
+      "note": "Minor; fold into the PIP paragraph rewrite."
+    },
+    {
+      "surface": "body",
+      "claim": "MedPay is an optional coverage in both states that pays for medical expenses resulting from a car accident regardless of fault.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 38-77-144 (no first-party medical coverage mandated); no Georgia mandate",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "Be aware that your health insurer may assert a subrogation right — a claim to be repaid from any settlement or verdict you eventually receive from a liable party.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "General principle; hedged 'may'",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "Victims often suffer traumatic brain injuries because the at-fault driver makes no attempt to brake or swerve before impact. High-speed, unbraked collisions are among the most devastating types of accidents, and the medical costs can far exceed what basic insurance coverage provides.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "No figure asserted; descriptive",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "Not a statistic; nothing to verify. Do not add a number here without a registry entry."
+    },
+    {
+      "surface": "body",
+      "claim": "If the case goes to trial, the sudden medical emergency defense is a jury question. Jurors decide whether the medical event was truly sudden and unforeseeable.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Collins v. Frasier (defense properly submitted to the jury); Eatmon v. Weeks (may be resolved on summary judgment when the evidence of no prior warning is undisputed)",
+      "sourceUrl": "https://www.sccourts.org/opinions/HTMLFiles/COA/4385.htm",
+      "retrievedAt": "2026-09-23",
+      "note": "Accurate as to contested cases; Georgia courts can also decide it before trial when undisputed."
+    },
+    {
+      "surface": "body",
+      "claim": "Roden Law represents accident victims across Georgia and South Carolina from offices in Savannah, Darien, Charleston, Columbia, and Myrtle Beach.",
+      "verdict": "update",
+      "currentValue": "Six offices: Savannah, Darien, Charleston, North Charleston, Columbia, and Myrtle Beach (Murrells Inlet).",
+      "sourceName": "profiles/firm-facts.md, Offices and markets",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "North Charleston is a separate office and GBP per firm-facts; add it."
+    },
+    {
+      "surface": "body",
+      "claim": "Call 1-844-RESULTS or contact us online for a free, no-obligation consultation.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "profiles/writer-profile.md (tel:+18447378587); body href verified",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "The body's only tel: href is tel:+18447378587, correct."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "In both Georgia and South Carolina, the burden falls on the driver to prove the episode was genuinely unforeseeable. The defense fails when the driver had prior episodes, doctor's warnings, or untreated conditions.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Eatmon v. Weeks (Ga. App. 2013); Collins v. Frasier (S.C. Ct. App. 2008)",
+      "sourceUrl": "https://www.sccourts.org/opinions/HTMLFiles/COA/4385.htm",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Georgia's 2-year statute of limitations (O.C.G.A. § 9-3-33) and South Carolina's 3-year deadline (S.C. Code § 15-3-530) apply.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "profiles/writer-profile.md jurisdiction table; S.C. Code § 15-3-530(5)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Even if the defense succeeds, injured victims may recover through UM/UIM coverage, PIP, MedPay, or claims against prescribing physicians.",
+      "verdict": "update",
+      "currentValue": "Even if the defense succeeds, first-party coverages that pay regardless of fault (MedPay, optional PIP, health insurance) may still apply, and in South Carolina a medical provider who failed to warn the driver about treatment it knew could impair driving may be liable; Georgia does not recognize that claim. UM/UIM applies when the driver is liable but uninsured or underinsured.",
+      "sourceName": "S.C. Code § 38-77-144, § 38-77-150; Gilhuly v. Dockery (Ga. App. 2005); Hardee v. Bio Medical Applications (S.C. 2006)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+      "retrievedAt": "2026-09-23",
+      "note": "CONSEQUENTIAL. Three problems in one sentence: PIP is not mandated in either state, physician claims are barred in Georgia, and UM/UIM requires legal entitlement to recover from the driver. Rendered above the article, so fix with the body."
+    },
+    {
+      "surface": "faq:0",
+      "claim": "The sudden medical emergency defense is a legal doctrine that may shield a driver from liability if they caused an accident due to an unforeseeable loss of consciousness or physical incapacitation. Common examples include heart attacks, seizures, strokes, and diabetic emergencies. The driver invoking this defense bears the burden of proving the event was genuinely unforeseeable.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Eatmon v. Weeks (Ga. App. 2013) (stroke); Collins v. Frasier (S.C. Ct. App. 2008) (hypoglycemia)",
+      "sourceUrl": "https://www.sccourts.org/opinions/HTMLFiles/COA/4385.htm",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "faq:1",
+      "claim": "You may also have claims against the driver's doctor for negligently clearing them to drive, or against your own UM/UIM insurance coverage.",
+      "verdict": "update",
+      "currentValue": "In South Carolina you may also have a claim against a medical provider who failed to warn the driver that treatment it knew could impair driving (Hardee v. Bio Medical Applications, S.C. 2006); Georgia does not allow that claim against a non-patient's doctor (Gilhuly v. Dockery, Ga. App. 2005). Your own UM/UIM coverage applies if the driver is liable but uninsured or underinsured.",
+      "sourceName": "Gilhuly v. Dockery (Ga. App. 2005); Hardee v. Bio Medical Applications of S.C., Inc. (S.C. 2006); S.C. Code § 38-77-150",
+      "sourceUrl": "https://caselaw.findlaw.com/court/sc-supreme-court/1469133.html",
+      "retrievedAt": "2026-09-23",
+      "note": "CONSEQUENTIAL; publishes as FAQPage structured data. The first two sentences of this answer are fine."
+    },
+    {
+      "surface": "faq:2",
+      "claim": "The driver who caused the accident bears the burden of proving the medical emergency was unforeseeable and that they lost consciousness or physical control. This is different from typical personal injury cases where the injured person proves the other driver's negligence. Both Georgia and South Carolina place this burden on the defendant.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Eatmon v. Weeks / Lewis v. Smith (Ga.); Boyleston v. Baxley / Collins v. Frasier (S.C.)",
+      "sourceUrl": "https://caselaw.findlaw.com/court/ga-court-of-appeals/1638980.html",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "faq:3",
+      "claim": "Georgia's statute of limitations for personal injury claims is 2 years from the date of the accident under O.C.G.A. § 9-3-33. This applies regardless of whether the at-fault driver raises a sudden medical emergency defense. If you miss the deadline, you lose the right to file a claim.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "profiles/writer-profile.md jurisdiction table; O.C.G.A. § 9-3-33",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "faq:4",
+      "claim": "South Carolina allows 3 years from the date of injury to file a personal injury lawsuit under S.C. Code § 15-3-530. Medical malpractice claims against a prescribing doctor have a separate 3-year statute with a discovery rule.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-3-530(5); § 15-3-545(A): 'within three years from the date of the treatment, omission, or operation giving rise to the cause of action or three years from date of discovery or when it reasonably ought to have been discovered, not to exceed six years from date of occurrence'",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Accurate; may add the § 15-3-545 cite and the six-year repose. Note the provider claim itself is viable in South Carolina only (Hardee)."
+    },
+    {
+      "surface": "faq:5",
+      "claim": "If the at-fault driver successfully proves a sudden medical emergency, you may still recover through your own uninsured/underinsured motorist (UM/UIM) coverage, personal injury protection (PIP), MedPay, or health insurance.",
+      "verdict": "update",
+      "currentValue": "If the at-fault driver successfully proves a sudden medical emergency, coverage that pays regardless of fault may still apply: MedPay, PIP if you bought it (neither state requires it), and health insurance. UM/UIM pays only what you are legally entitled to recover from the other driver, so it applies when the driver is liable but uninsured or underinsured.",
+      "sourceName": "S.C. Code § 38-77-144 (no PIP mandate); § 38-77-150 ('legally entitled to recover')",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+      "retrievedAt": "2026-09-23",
+      "note": "CONSEQUENTIAL; publishes as FAQPage structured data."
+    },
+    {
+      "surface": "excerpt",
+      "claim": "When a driver has a heart attack or seizure at the wheel, the sudden medical emergency defence may block liability. When it applies, and when it fails.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "No factual error. British spelling 'defence' is inconsistent with the body's 'defense'; the excerpt publishes as the Article description, so normalizing it is a one-word edit."
+    }
+  ],
+  "recommendedEdits": [
+    "Body, 'South Carolina Case Law' paragraph and the comparison table 'Driver Fitness Statutes' row: replace 'S.C. Code § 56-5-6110 et seq.' with 'S.C. Code § 56-1-221' (SCDMV Medical Advisory Board; link https://www.scstatehouse.gov/code/t56c001.php). § 56-5-6110 is 'Parties to a crime' in the traffic-enforcement article. Soften 'Violations of these provisions can serve as evidence of negligence' to 'a driver's licensing history and any medical restrictions on the license are evidence of what the driver knew'.",
+    "Body, 'Personal Injury Protection (PIP)' paragraph: replace 'South Carolina requires PIP coverage as part of every auto insurance policy' with 'Neither state requires PIP. South Carolina law says so expressly (S.C. Code § 38-77-144), and Georgia has no PIP mandate; both states' insurers sell optional first-party medical coverage (PIP or MedPay) that pays regardless of fault.' Drop 'some Georgia drivers carry it as an optional add-on' in favor of 'optional medical payments coverage'.",
+    "Body, 'Prescribing Physicians' paragraph: rewrite as a South Carolina-only theory. State that in South Carolina a provider who gives treatment it knows may impair the patient's ability to drive owes a duty to warn the patient, and foreseeable third parties can sue when it does not (Hardee v. Bio Medical Applications of South Carolina, S.C. 2006), and that Georgia courts have refused to extend a physician's duty to third parties injured by a patient who drove after treatment (Gilhuly v. Dockery, Ga. App. 2005). Remove 'may be liable for medical malpractice' as a two-state statement.",
+    "Body, 'Uninsured/Underinsured Motorist Coverage (UM/UIM)' paragraph: delete the 'in some interpretations — when the at-fault driver is found not liable' clause and the 'depends on the specific policy language' sentence. Replace with: UM/UIM pays what you are legally entitled to recover from the other driver (S.C. Code § 38-77-150; O.C.G.A. § 33-7-11), so it is the remedy when the defense fails and the driver is uninsured or underinsured, not when the driver is found not liable.",
+    "Key Takeaways, last sentence: replace with 'Even if the defense succeeds, coverage that pays regardless of fault (MedPay, optional PIP, health insurance) may still apply, and in South Carolina a medical provider who failed to warn the driver about impairing treatment may be liable; UM/UIM applies when the driver is liable but uninsured or underinsured.'",
+    "FAQ 2 ('Can I still sue if the other driver had a heart attack while driving?'), last sentence: replace with 'In South Carolina you may also have a claim against a medical provider who failed to warn the driver that treatment could impair driving; Georgia does not allow that claim against a non-patient's doctor. Your own UM/UIM coverage applies if the driver is liable but uninsured or underinsured.'",
+    "FAQ 6 ('What insurance options do I have if the driver is not liable?'), first sentence: replace with 'If the at-fault driver successfully proves a sudden medical emergency, coverage that pays regardless of fault may still apply: MedPay, PIP if you purchased it (neither state requires it), and health insurance. UM/UIM pays only what you are legally entitled to recover from the other driver, so it applies when the driver is liable but uninsured or underinsured.'",
+    "Body, 'Comparative Fault Under South Carolina Law' example: change the 55/45 split to a 50/50 split ('If the jury finds you and the medically impaired driver each 50% at fault, you recover 50% of your damages in South Carolina but nothing in Georgia'). At 45% fault the plaintiff recovers in both states, so the current example is wrong about Georgia.",
+    "Body, 'Employers' paragraph: change 'requires commercial driver's license (CDL) holders to pass a physical examination every two years' to 'requires interstate commercial drivers to be medically examined and certified at least every 24 months (49 CFR 391.45)', and change 'insulin-dependent diabetes (without an exemption)' to 'insulin-treated diabetes that is not managed under FMCSA's assessment-form process (49 CFR 391.46, which replaced the old exemption program in 2018)'. Epilepsy (391.41(b)(8)) and cardiac conditions (391.41(b)(4)) stay.",
+    "Body, 'Georgia Case Law' paragraph and table 'Driver Fitness Statutes' row: replace 'O.C.G.A. § 40-5-1 et seq.' with 'O.C.G.A. § 40-5-35' (physician reporting to DDS, Driver's License Advisory Board, medical revocation; six-month epilepsy rule). Georgia URL form for the site: https://law.justia.com/codes/georgia/title-40/chapter-5/article-2/section-40-5-35/ (not yet used on the site; confirm it resolves before linking, or link the DDS Medical Review page instead).",
+    "Body, 'Burden of Proof' (Georgia) paragraph: soften 'Georgia courts have consistently held that a driver who knows about a medical condition ... has a duty to refrain from driving or take reasonable precautions' to 'Georgia courts limit the defense to an unforeseeable loss of consciousness; a driver who had warning of the condition cannot rely on it (Eatmon v. Weeks, Ga. App. 2013).'",
+    "Body, 'Burden of Proof' (South Carolina) paragraph and table 'Foreseeability Standard' row: remove 'totality of the circumstances' and make the row read the same for both states ('Was the loss of consciousness unforeseeable?'). The case law does not support a different foreseeability standard between the states.",
+    "Body, intro: change 'but Georgia and South Carolina apply it differently' to 'and Georgia and South Carolina apply the same rule within different comparative-fault and filing-deadline frameworks'. Optionally add one clause that courts in both states call it a sudden, unforeseeable loss of consciousness or incapacity, distinct from the 'sudden emergency doctrine' about reacting to a peril.",
+    "Body, 'Comparative Fault Under Georgia Law': change the example '(for example, you were speeding or not wearing a seatbelt)' to '(for example, you were speeding or ran a red light)' per the profile's SB 68 seat-belt rule.",
+    "Body, closing: change 'offices in Savannah, Darien, Charleston, Columbia, and Myrtle Beach' to 'offices in Savannah, Darien, Charleston, North Charleston, Columbia, and Myrtle Beach'.",
+    "Excerpt: 'defence' to 'defense' (publishes as the Article description).",
+    "Operator: set _roden_author_attorney / reviewer to Graeham C. Gillin (two-state post stating South Carolina law). No attribution quote exists in the body; per the 2026-09-23 rule do not add one. Mirror every changed figure to the Spanish twin if one exists in content/meta.json."
+  ],
+  "statuteCitations": [
+    {
+      "section": "O.C.G.A. § 51-12-33",
+      "name": "Apportionment of damages; plaintiff barred at 50% or more fault",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-33/"
+    },
+    {
+      "section": "O.C.G.A. § 9-3-33",
+      "name": "Two-year limitation for injuries to the person (also applied to wrongful death)",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+    },
+    {
+      "section": "O.C.G.A. § 40-5-35",
+      "name": "Physician reports to DDS; Driver's License Advisory Board; medical revocation; six-month epilepsy rule",
+      "url": "https://law.justia.com/codes/georgia/title-40/chapter-5/article-2/section-40-5-35/"
+    },
+    {
+      "section": "O.C.G.A. § 33-7-11",
+      "name": "Uninsured motorist coverage must be included unless rejected in writing; underinsured vehicles treated as uninsured up to UM limits",
+      "url": "https://law.justia.com/codes/georgia/title-33/chapter-7/section-33-7-11/"
+    },
+    {
+      "section": "O.C.G.A. § 51-4-2",
+      "name": "Wrongful death: who may sue (not cited in the post; for reference only)",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-4/section-51-4-2/"
+    },
+    {
+      "section": "S.C. Code § 15-3-530",
+      "name": "Three-year limitation, subsection (5) injury to the person",
+      "url": "https://www.scstatehouse.gov/code/t15c003.php"
+    },
+    {
+      "section": "S.C. Code § 15-3-545",
+      "name": "Medical malpractice: three years from treatment or discovery, six-year repose",
+      "url": "https://www.scstatehouse.gov/code/t15c003.php"
+    },
+    {
+      "section": "S.C. Code § 56-1-221",
+      "name": "SCDMV Medical Advisory Board",
+      "url": "https://www.scstatehouse.gov/code/t56c001.php"
+    },
+    {
+      "section": "S.C. Code § 56-1-80",
+      "name": "License application; voluntary disclosure of a permanent medical condition with physician certification",
+      "url": "https://www.scstatehouse.gov/code/t56c001.php"
+    },
+    {
+      "section": "S.C. Code § 38-77-144",
+      "name": "No personal injury protection (PIP) coverage mandated",
+      "url": "https://www.scstatehouse.gov/code/t38c077.php"
+    },
+    {
+      "section": "S.C. Code § 38-77-150",
+      "name": "Uninsured motorist coverage mandatory; pays sums the insured is legally entitled to recover from an uninsured owner or operator",
+      "url": "https://www.scstatehouse.gov/code/t38c077.php"
+    },
+    {
+      "section": "S.C. Code § 38-77-160",
+      "name": "Underinsured motorist coverage must be offered",
+      "url": "https://www.scstatehouse.gov/code/t38c077.php"
+    },
+    {
+      "section": "S.C. Code § 15-51-20",
+      "name": "Wrongful death brought by the personal representative (not cited in the post; for reference only)",
+      "url": "https://www.scstatehouse.gov/code/t15c051.php"
+    }
+  ],
+  "authoritativeLinks": [
+    { "name": "Eatmon v. Weeks, Nos. A13A0692/A13A0693 (Ga. App. July 16, 2013) — sudden loss of consciousness; defendant's burden; no prior warning", "url": "https://caselaw.findlaw.com/court/ga-court-of-appeals/1638980.html" },
+    { "name": "Gilhuly v. Dockery, Nos. A05A0014/A05A0339 (Ga. App. May 24, 2005) — physician owes no duty to third parties injured by a medicated patient's driving", "url": "https://caselaw.findlaw.com/court/ga-court-of-appeals/1099853.html" },
+    { "name": "Collins v. Frasier, Op. No. 4385 (S.C. Ct. App. May 6, 2008) — sudden, unforeseeable incapacity; Boyleston v. Baxley burden rule", "url": "https://www.sccourts.org/opinions/HTMLFiles/COA/4385.htm" },
+    { "name": "Hardee v. Bio Medical Applications of South Carolina, Inc., Op. No. 26217 (S.C. Oct. 23, 2006) — provider's duty to warn patient; foreseeable third parties", "url": "https://caselaw.findlaw.com/court/sc-supreme-court/1469133.html" },
+    { "name": "Gadson v. ECO Services of S.C., Inc., Op. No. 26357 (S.C. 2007) — negligent entrustment, Restatement § 308", "url": "https://www.sccourts.org/media/opinions/HTMLFiles/SC/26357.htm" },
+    { "name": "Ga. Comp. R. & Regs. 375-3-5 — Driver's License Advisory Board medical standards (six-month seizure-free rule, 375-3-5-.02)", "url": "https://rules.sos.ga.gov/gac/375-3-5" },
+    { "name": "Georgia DDS — Medical Review Process", "url": "https://dds.georgia.gov/medical-review-process" },
+    { "name": "Georgia DDS — Medical and Vision Information", "url": "https://dds.georgia.gov/medical-and-vision-information" },
+    { "name": "SCDMV — Application for Beginner's Permit, Driver's License or ID (Form 447-NC; medical-condition questions)", "url": "https://dmv.sc.gov/sites/scdmv/files/media/Forms/447-NC.pdf" },
+    { "name": "49 CFR 391.41 — Physical qualifications for drivers", "url": "https://www.law.cornell.edu/cfr/text/49/391.41" },
+    { "name": "49 CFR 391.45 — Persons who must be medically examined and certified (24 months)", "url": "https://www.law.cornell.edu/cfr/text/49/391.45" },
+    { "name": "49 CFR 391.46 — Physical qualification standards for an individual with insulin-treated diabetes mellitus", "url": "https://www.law.cornell.edu/cfr/text/49/391.46" },
+    { "name": "Cornell LII Wex — sudden emergency doctrine (already linked in the post; describes the reaction-to-peril doctrine, not sudden incapacity)", "url": "https://www.law.cornell.edu/wex/sudden_emergency_doctrine" }
+  ]
+}

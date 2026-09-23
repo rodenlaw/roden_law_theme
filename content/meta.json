@@ -3544,7 +3544,7 @@
             "title": "Compensatory Damages vs. Punitive Damages: What Injury Victims in Georgia and South Carolina Should Know",
             "excerpt": "Compensatory damages repay your losses; punitive damages punish extreme misconduct. How each works in Georgia and South Carolina injury claims.",
             "meta": {
-                "_roden_author_attorney": "Eric Roden",
+                "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "What is the difference between compensatory and punitive damages?",
@@ -3556,15 +3556,15 @@
                     },
                     {
                         "question": "Is there a cap on punitive damages in Georgia?",
-                        "answer": "Yes. Under O.C.G.A. § 51-12-5.1, Georgia caps punitive damages at $250,000 in most personal injury cases. However, the cap does not apply when the defendant acted with specific intent to cause harm, was driving under the influence, or in certain product liability cases."
+                        "answer": "Yes. Under O.C.G.A. § 51-12-5.1, Georgia caps punitive damages at $250,000 in most personal injury cases. However, the cap does not apply when the defendant acted with specific intent to cause harm, acted while substantially impaired by alcohol or drugs, or in product liability cases, where 75% of the punitive award goes to the state."
                     },
                     {
                         "question": "What is the punitive damages cap in South Carolina?",
-                        "answer": "Under S.C. Code § 15-32-530, South Carolina caps punitive damages at the greater of three times the compensatory damages or $500,000. The cap does not apply if the defendant was under the influence of alcohol or drugs or if the defendant's conduct resulted in a felony conviction."
+                        "answer": "Under S.C. Code § 15-32-530, South Carolina caps punitive damages at the greater of three times the compensatory damages or $500,000, a floor indexed for inflation each year ($739,245 in 2026). The cap does not apply if the defendant intended to harm the plaintiff, pled guilty to or was convicted of a felony arising from the same conduct, or acted while impaired by alcohol or drugs to the degree that their judgment was substantially impaired."
                     },
                     {
                         "question": "How does comparative fault affect my damage award in Georgia or South Carolina?",
-                        "answer": "Both states follow modified comparative fault rules. In Georgia, you can recover as long as you are less than 50% at fault (O.C.G.A. § 51-12-33). In South Carolina, you can recover as long as you are less than 51% at fault. Your total award is reduced by your percentage of responsibility."
+                        "answer": "Both states follow modified comparative fault rules. In Georgia, you can recover as long as you are less than 50% at fault (O.C.G.A. § 51-12-33). In South Carolina, you can recover as long as you are less than 51% at fault (Nelson v. Concrete Supply Co.). Your total award is reduced by your percentage of responsibility."
                     },
                     {
                         "question": "Do I have to pay anything upfront to hire a personal injury lawyer?",
@@ -3591,7 +3591,8 @@
                         "definition": "Losses that arrive with no invoice: physical pain, mental anguish, disfigurement, and loss of enjoyment of life. Proved through testimony and medical records rather than receipts. Also called non-economic damages."
                     }
                 ],
-                "_roden_key_takeaways": "Compensatory damages reimburse injury victims for medical bills, lost wages, and pain and suffering, while punitive damages punish extreme misconduct like drunk driving or fraud. Georgia caps punitive damages at $250,000 unless specific exceptions apply (O.C.G.A. § 51-12-5.1), and South Carolina caps them at the greater of three times compensatory damages or $500,000 (S.C. Code § 15-32-530) on clear and convincing evidence, a cap lifted where the defendant was intoxicated. Both damage types require thorough documentation and expert testimony to maximize recovery."
+                "_roden_key_takeaways": "Compensatory damages reimburse injury victims for medical bills, lost wages, and pain and suffering, while punitive damages punish extreme misconduct like drunk driving or fraud. Georgia caps punitive damages at $250,000 unless specific exceptions apply (O.C.G.A. § 51-12-5.1), and South Carolina caps them at the greater of three times compensatory damages or $500,000 (indexed each year; $739,245 in 2026) (S.C. Code § 15-32-530) on clear and convincing evidence, a cap lifted for intent to harm, a felony conviction, or substantial impairment by alcohol or drugs. Both damage types require thorough documentation and expert testimony to maximize recovery.",
+                "_roden_last_reviewed": "2026-09-23"
             }
         },
         "/blog/construction-worker-injuries-charleston-sc-rights/": {
@@ -7385,31 +7386,33 @@
             "type": "post",
             "status": "publish",
             "title": "Reasons Why Insurance Companies May Ignore Your Demand Letter",
-            "excerpt": "Why insurers ignore or delay a demand letter after a personal injury claim, what the silence usually means, and the steps that get a response.",
+            "excerpt": "Why insurers ignore or delay a demand letter after a personal injury claim, what the silence usually means, and the steps that get a response in Georgia and South Carolina.",
             "meta": {
-                "_roden_author_attorney": "Eric Roden",
+                "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "What is a demand letter?",
-                        "answer": "A letter created by the injury victim or their lawyer and sent to the insurance company when the victim is dissatisfied with how the claim is being handled. It sets out the losses and the compensation being sought."
+                        "answer": "A written demand for a stated amount, sent to open settlement negotiations, that sets out fault, the injuries and losses, and the records supporting them. In a Georgia motor-vehicle case, a pre-suit offer prepared with a lawyer must contain the material terms in O.C.G.A. § 9-11-67.1, including an acceptance date at least 30 days out and a payment date at least 40 days out, and enclose the records the insurer needs to evaluate the claim."
                     },
                     {
                         "question": "Why is the insurance company ignoring my demand letter?",
-                        "answer": "Delay is often deliberate. Insurers know that financial pressure builds while medical bills accumulate and income is lost, and a claimant under that pressure is more likely to accept less than the claim is worth."
+                        "answer": "Insurers know that financial pressure builds while medical bills accumulate and income is lost, and a claimant under that pressure is more likely to accept less than the claim is worth. Silence can also mean the insurer is waiting on records it needs to evaluate the claim. Both states treat failing to acknowledge claim communications with reasonable promptness, and failing to attempt a fair settlement once liability is reasonably clear, as unfair claim practices (O.C.G.A. § 33-6-34; S.C. Code § 38-59-20)."
                     },
                     {
                         "question": "What is the normal timeline after a demand letter is sent?",
-                        "answer": "A response usually takes weeks rather than days, as the adjuster reviews records and obtains internal authority. Silence stretching well past that is a signal the claim needs escalating rather than more waiting."
+                        "answer": "Neither Georgia nor South Carolina sets a statutory deadline for the other driver's insurer to answer a demand. In Georgia, a § 9-11-67.1 demand must give the insurer at least 30 days to accept and at least 40 days to pay, so no response to it is overdue before day 30. What does not move is your deadline to sue: two years in Georgia (O.C.G.A. § 9-3-33), three years in South Carolina (S.C. Code § 15-3-530). Silence that runs toward that deadline is a signal the claim needs escalating rather than more waiting."
                     },
                     {
                         "question": "What should I do if the insurer will not respond?",
-                        "answer": "Escalate rather than repeat. An attorney who knows how insurers and adjusters operate can apply formal pressure and, where necessary, file suit, which changes the calculation for the insurer entirely."
+                        "answer": "Escalate rather than repeat. An attorney who knows how insurers and adjusters operate can apply formal pressure and, where necessary, file suit, which changes the calculation for the insurer entirely. The two formal escalations are a complaint to the state insurance regulator and a lawsuit against the at-fault driver filed before the deadline to sue."
                     },
                     {
                         "question": "Can I write a demand letter myself?",
-                        "answer": "You can, and many people do. The risk is undervaluing the claim or omitting losses that are hard to recover later, which is why having the letter prepared or reviewed by a lawyer is usually worthwhile."
+                        "answer": "You can, and many people do. The risk is undervaluing the claim or omitting losses that are hard to recover later, which is why having the letter prepared or reviewed by a lawyer is usually worthwhile. Two cautions: in Georgia only a demand prepared with a lawyer is a § 9-11-67.1 offer, and both states cut recovery by your share of fault. Georgia bars recovery at 50% or more (O.C.G.A. § 51-12-33); South Carolina bars it when your fault is greater than the other driver's (Nelson v. Concrete Supply Co.)."
                     }
-                ]
+                ],
+                "_roden_key_takeaways": "Your deadline to sue does not pause while an insurer ignores your demand: two years from the injury in Georgia (O.C.G.A. § 9-3-33) and three years in South Carolina (S.C. Code § 15-3-530). In a Georgia motor-vehicle case, a demand prepared with a lawyer is a pre-suit offer under O.C.G.A. § 9-11-67.1 and must give the insurer at least 30 days to accept and at least 40 days to pay. Neither state sets a statutory deadline for the other driver's insurer to answer a demand. The bad-faith penalties in O.C.G.A. § 33-4-6 and S.C. Code § 38-59-40 apply only to your own insurer; against the other driver's insurer, the remedy is a lawsuit against the driver, not a bad-faith claim. Unfair claim practices, such as failing to acknowledge claim communications with reasonable promptness, can be reported to the state insurance regulator.",
+                "_roden_last_reviewed": "2026-09-23"
             }
         },
         "/blog/international-boulevard-airport-rideshare-uber-lyft-crash-north-charleston/": {
@@ -8237,9 +8240,9 @@
             "type": "post",
             "status": "publish",
             "title": "Can You Sue a Driver Who Had a Medical Emergency Behind the Wheel?",
-            "excerpt": "When a driver has a heart attack or seizure at the wheel, the sudden medical emergency defence may block liability. When it applies, and when it fails.",
+            "excerpt": "When a driver has a heart attack or seizure at the wheel, the sudden medical emergency defense may block liability. When it applies, and when it fails.",
             "meta": {
-                "_roden_author_attorney": "Eric Roden",
+                "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "What is the sudden medical emergency defense?",
@@ -8247,7 +8250,7 @@
                     },
                     {
                         "question": "Can I still sue if the other driver had a heart attack while driving?",
-                        "answer": "Possibly. The key question is whether the medical event was foreseeable. If the driver had a known heart condition, prior episodes, or doctor's warnings about driving, the sudden emergency defense may fail. You may also have claims against the driver's doctor for negligently clearing them to drive, or against your own UM/UIM insurance coverage."
+                        "answer": "Possibly. The key question is whether the medical event was foreseeable. If the driver had a known heart condition, prior episodes, or doctor's warnings about driving, the sudden emergency defense may fail. In South Carolina you may also have a claim against a medical provider who failed to warn the driver that treatment could impair driving; Georgia does not allow that claim against a non-patient's doctor. Your own UM/UIM coverage applies if the driver is liable but uninsured or underinsured."
                     },
                     {
                         "question": "Who has the burden of proof in a sudden medical emergency case?",
@@ -8263,10 +8266,11 @@
                     },
                     {
                         "question": "What insurance options do I have if the driver is not liable?",
-                        "answer": "If the at-fault driver successfully proves a sudden medical emergency, you may still recover through your own uninsured/underinsured motorist (UM/UIM) coverage, personal injury protection (PIP), MedPay, or health insurance. An attorney can review all available coverage to maximize your recovery even when the other driver escapes liability."
+                        "answer": "If the at-fault driver successfully proves a sudden medical emergency, coverage that pays regardless of fault may still apply: MedPay, personal injury protection (PIP) if you purchased it (neither state requires it), and health insurance. Uninsured/underinsured motorist (UM/UIM) coverage pays only what you are legally entitled to recover from the other driver, so it applies when the driver is liable but uninsured or underinsured. An attorney can review all available coverage to maximize your recovery even when the other driver escapes liability."
                     }
                 ],
-                "_roden_key_takeaways": "The sudden medical emergency defense allows drivers to avoid liability for accidents caused by unforeseeable medical events like heart attacks, seizures, and strokes. In both Georgia and South Carolina, the burden falls on the driver to prove the episode was genuinely unforeseeable. The defense fails when the driver had prior episodes, doctor's warnings, or untreated conditions. Georgia's 2-year statute of limitations (O.C.G.A. § 9-3-33) and South Carolina's 3-year deadline (S.C. Code § 15-3-530) apply. Even if the defense succeeds, injured victims may recover through UM/UIM coverage, PIP, MedPay, or claims against prescribing physicians."
+                "_roden_key_takeaways": "The sudden medical emergency defense allows drivers to avoid liability for accidents caused by unforeseeable medical events like heart attacks, seizures, and strokes. In both Georgia and South Carolina, the burden falls on the driver to prove the episode was genuinely unforeseeable. The defense fails when the driver had prior episodes, doctor's warnings, or untreated conditions. Georgia's 2-year statute of limitations (O.C.G.A. § 9-3-33) and South Carolina's 3-year deadline (S.C. Code § 15-3-530) apply. Even if the defense succeeds, coverage that pays regardless of fault (MedPay, optional PIP, health insurance) may still apply, and in South Carolina a medical provider who failed to warn the driver about impairing treatment may be liable; Georgia does not recognize that claim. UM/UIM applies when the driver is liable but uninsured or underinsured.",
+                "_roden_last_reviewed": "2026-09-23"
             }
         },
         "/blog/liability-in-a-driverless-car-crash/": {

@@ -1,0 +1,499 @@
+{
+  "postId": 1663,
+  "slug": "compensatory-damages-vs-punitive-damages",
+  "liveUrl": "https://rodenlaw.com/blog/compensatory-damages-vs-punitive-damages/",
+  "verifiedAt": "2026-09-23",
+  "reviewerByJurisdiction": "Two-state post that states South Carolina law: reviewer must be Graeham C. Gillin, never Eric Roden.",
+  "verifiedClaims": [
+    {
+      "surface": "body",
+      "claim": "Georgia caps punitive damages at $250,000 (O.C.G.A. § 51-12-5.1); South Carolina at the greater of three times compensatory damages or $500,000 (S.C. Code § 15-32-530).",
+      "verdict": "update",
+      "currentValue": "Georgia: $250,000 under § 51-12-5.1(g) (unchanged). South Carolina: the greater of three times compensatory damages or $500,000 under § 15-32-530(A), but subsection (D) indexes the dollar floor to CPI every year; the Revenue and Fiscal Affairs Office set it at $739,245 for 2026 (memo dated 2026-02-03; $719,971 for 2025).",
+      "sourceName": "O.C.G.A. § 51-12-5.1(g) (Justia, 2025 Code); S.C. Code § 15-32-530(A),(D) (scstatehouse.gov); S.C. RFA memo 'Punitive Damage Award Limitation – Inflation Component', 2026-02-03",
+      "sourceUrl": "https://rfa.sc.gov/media/11478",
+      "retrievedAt": "2026-09-23",
+      "note": "Definition block. Keep the statutory $500,000 wording (it matches the writer-profile jurisdiction table) and add that the floor is indexed for inflation, $739,245 in 2026. The RFA memo says the adjusted figure takes effect on publication in the State Register; I confirmed the memo, not the Register issue."
+    },
+    {
+      "surface": "body",
+      "claim": "Neither Georgia nor South Carolina places a cap on compensatory damages in most personal injury cases, which means a jury can award whatever amount it believes fairly compensates the plaintiff for their losses.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt, S09A1432 (Ga. Mar. 22, 2010) (striking the § 51-13-1 med-mal noneconomic cap as a violation of the right to jury trial); S.C. Code § 15-32-220 (med-mal noneconomic cap: $596,001 per provider / $1,788,002 aggregate for 2026 per RFA memo 2026-02-03); S.C. Code § 15-78-120 (Tort Claims Act: $300,000 per person / $600,000 per occurrence, $1.2 million for physicians and dentists, no punitive damages)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/2010/s09a1432.html",
+      "retrievedAt": "2026-09-23",
+      "note": "'In most' carries the sentence. Georgia has had no general noneconomic cap since Nestlehutt. South Carolina's two exceptions (medical-malpractice noneconomic damages and claims against government entities) are worth one clause; see recommendedEdits."
+    },
+    {
+      "surface": "body",
+      "claim": "Punitive damages — also called <strong>exemplary damages</strong>",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-5.1(a) ('punitive damages' is synonymous with 'vindictive damages,' 'exemplary damages'); S.C. Code § 15-78-120 ('punitive or exemplary damages')",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "punitive damages in both Georgia and South Carolina require proof by <strong>clear and convincing evidence</strong> — a significantly higher standard.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-5.1(b); S.C. Code § 15-32-520(D)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Georgia: 'willful misconduct, malice, fraud, wantonness, oppression, or that entire want of care which would raise the presumption of conscious indifference to consequences.' South Carolina: 'wilful, wanton, or reckless conduct.' The comparison-table row 'Burden of proof — Clear and convincing evidence' is the same claim and also keeps."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Wanton disregard</strong> — the defendant showed a conscious indifference to the consequences of their actions, such as driving under the influence",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-5.1(b); Craig v. Holsey, 264 Ga. App. 344 (2003) (as annotated on Justia: wanton conduct is 'so reckless or so charged with indifference to the consequences as to be the equivalent in spirit to actual intent')",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+      "retrievedAt": "2026-09-23",
+      "note": "The four-bullet list (willful misconduct, malice, fraud, wanton disregard) tracks the Georgia statute's own list."
+    },
+    {
+      "surface": "body",
+      "claim": "Punitive damages are not available in every case. They are most commonly sought in cases involving drunk driving accidents, intentional misconduct by a corporation, gross medical negligence, or cases where a manufacturer knowingly sold a dangerous product.",
+      "verdict": "update",
+      "currentValue": "Drop 'gross medical negligence'. In Georgia, negligence — even gross negligence — does not support punitive damages; a medical-malpractice punitive claim was properly directed out where the evidence showed 'mere professional negligence rather than clearly and convincingly evidencing an entire want of care' (Roseberry v. Brooks, 218 Ga. App. 202 (1995)). South Carolina requires wilful, wanton or reckless conduct (§ 15-32-520(D)).",
+      "sourceName": "Justia annotations to O.C.G.A. § 51-12-5.1 (Roseberry v. Brooks, 218 Ga. App. 202 (1995); Lewis v. Suttles Truck Leasing, 869 F. Supp. 947 (S.D. Ga. 1994): 'Negligence alone, even gross negligence, will not support an award of punitive damages'); S.C. Code § 15-32-520(D)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+      "retrievedAt": "2026-09-23",
+      "note": "Replace 'gross medical negligence' with 'medical providers who acted with wilful or reckless disregard for a patient' or similar."
+    },
+    {
+      "surface": "body",
+      "claim": "Awarded in a small percentage of cases",
+      "verdict": "drop",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "Comparison-table 'Frequency' cell. No primary source for a frequency statistic. Replace with a qualitative cell such as 'Only where aggravated conduct is proven by clear and convincing evidence'."
+    },
+    {
+      "surface": "body",
+      "claim": "Caps (GA) | No cap | $250,000 (with exceptions)",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-5.1(e)–(g); Nestlehutt (2010)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+      "retrievedAt": "2026-09-23",
+      "note": "Comparison table. Bagley v. Shortt, 261 Ga. 762 (1991) (annotated on Justia) reads (g) as $250,000 in toto per case, regardless of the number of defendants."
+    },
+    {
+      "surface": "body",
+      "claim": "Caps (SC) | No cap | Greater of 3x compensatory or $500,000",
+      "verdict": "update",
+      "currentValue": "Compensatory: no general cap, but S.C. Code § 15-32-220 caps noneconomic damages in medical malpractice ($596,001 per provider / $1,788,002 aggregate for 2026) and § 15-78-120 caps all damages against government entities. Punitive: greater of 3x compensatory or $500,000, indexed for inflation ($739,245 in 2026).",
+      "sourceName": "S.C. Code §§ 15-32-220, 15-32-530, 15-78-120; RFA memos 2026-02-03",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Minimal edit: 'No general cap*' and 'Greater of 3x compensatory or $500,000 (indexed; $739,245 in 2026)'. The site's SC pack rule 'sc-medmal-cap-denied' fires on any sentence saying SC does not cap medical-malpractice damages, so do not let the table read that way."
+    },
+    {
+      "surface": "body",
+      "claim": "Defendant personally (often not insurable)",
+      "verdict": "update",
+      "currentValue": "In Georgia, insurance coverage for punitive damages is not against public policy (Federal Ins. Co. v. National Distrib. Co., 203 Ga. App. 763 (1992)); whether a given policy covers them depends on its terms.",
+      "sourceName": "Justia annotations to O.C.G.A. § 51-12-5.1 ('Insurance coverage for punitive damages. — Insurance coverage for punitive damages is not against public policy.')",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+      "retrievedAt": "2026-09-23",
+      "note": "Comparison-table 'Who pays' cell. 'Often not insurable' is unsupported for Georgia and I found no primary South Carolina authority for it. Reword to 'Defendant (coverage depends on the policy)'."
+    },
+    {
+      "surface": "body",
+      "claim": "Under <strong>O.C.G.A. § 51-12-5.1</strong>, Georgia caps punitive damages at <strong>$250,000</strong> in most personal injury cases.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-5.1(g): 'the amount which may be awarded in the case shall be limited to a maximum of $250,000.00'",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+      "retrievedAt": "2026-09-23",
+      "note": "SB 68 (2025) did not amend § 51-12-5.1 or the cap; see recommendedEdits."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Specific intent to cause harm</strong> — if the defendant acted with the specific intent to cause the plaintiff harm, there is no cap",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-5.1(f)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+      "retrievedAt": "2026-09-23",
+      "note": "Under (f) the uncapped award lies only against the active tort-feasor, 'but such damages shall not be the liability of any defendant other than an active tort-feasor'."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Driving under the influence</strong> — punitive damages are uncapped in cases involving a defendant who was driving under the influence of alcohol or drugs",
+      "verdict": "update",
+      "currentValue": "Subsection (f) lifts the cap where the defendant 'acted or failed to act while under the influence of alcohol, drugs other than lawfully prescribed drugs administered in accordance with prescription, or any intentionally consumed glue, aerosol, or other toxic vapor to that degree that his or her judgment is substantially impaired.' It is not limited to driving (Reid v. Morris, 309 Ga. 230 (2020): an intoxicated car owner who handed over the keys can be an 'active tort-feasor'), it requires substantial impairment, and it applies only against the active tort-feasor.",
+      "sourceName": "O.C.G.A. § 51-12-5.1(f); Reid v. Morris, 309 Ga. 230, 845 S.E.2d 590 (2020) (Justia annotation)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+      "retrievedAt": "2026-09-23",
+      "note": "Reword the bullet heading to 'Impairment by alcohol or drugs' and the text to 'no cap where the defendant acted while impaired by alcohol or drugs to the degree that their judgment was substantially impaired — drunk driving is the common case'."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Product liability</strong> — when a manufacturer knowingly sold a dangerous product, the cap may not apply",
+      "verdict": "update",
+      "currentValue": "There is no cap in any product-liability tort case: 'In a tort case in which the cause of action arises from product liability, there shall be no limitation regarding the amount which may be awarded as punitive damages.' The statute imposes no 'knowingly' condition; the trade-off is that only one punitive award may be recovered from a defendant for any act or omission in product-liability cases, and 75% of the award goes to the state.",
+      "sourceName": "O.C.G.A. § 51-12-5.1(e)(1)–(2)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+      "retrievedAt": "2026-09-23",
+      "note": "Replace 'may not apply' with 'does not apply'. The clear-and-convincing showing under (b) is still required to get punitive damages at all, which is where 'knowingly' belongs."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia also requires that <strong>75% of any punitive damages award</strong> (after attorney fees) be paid to the state treasury, with the plaintiff retaining the remaining 25%. This unique provision does not apply in DUI-related cases, where the plaintiff keeps the full award.",
+      "verdict": "update",
+      "currentValue": "The 75% payment to the state applies only to punitive damages awarded in product-liability cases under subsection (e): 'Seventy-five percent of any amounts awarded under this subsection as punitive damages, less a proportionate part of the costs of litigation, including reasonable attorney's fees, all as determined by the trial judge, shall be paid into the treasury of the state.' In every other case — the $250,000-capped cases under (g) and the uncapped specific-intent and impairment cases under (f) — the plaintiff keeps the whole award.",
+      "sourceName": "O.C.G.A. § 51-12-5.1(e)(2); State v. Moseley, 263 Ga. 680 (1993) and Mack Trucks, Inc. v. Conkle, 263 Ga. 539 (1993) (upholding (e)(2), described in the Justia annotations as 'requiring that 75 percent of punitive damages awarded in a product liability action be paid into the state treasury')",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+      "retrievedAt": "2026-09-23",
+      "note": "Most consequential Georgia error on the page: 'any punitive damages award' is wrong, and framing DUI as the exception implies ordinary car-crash plaintiffs forfeit 75%. Rewrite: 'In product liability cases — the one category Georgia leaves uncapped for everyone — 75% of the punitive award, less a proportionate share of litigation costs and attorney's fees, is paid to the state treasury. In all other cases the plaintiff keeps the entire award.'"
+    },
+    {
+      "surface": "body",
+      "claim": "Under <strong>S.C. Code § 15-32-530</strong>, South Carolina caps punitive damages at the <strong>greater of three times the compensatory damages or $500,000</strong>.",
+      "verdict": "update",
+      "currentValue": "Correct as the statutory text, but subsection (D) requires the $500,000 figure to be adjusted each year by CPI and published in the State Register; the 2026 figure is $739,245 (2025: $719,971). The statute also has a middle tier under (B): where the conduct was motivated primarily by unreasonable financial gain and its dangerousness was known or approved by a managing agent, director, officer or policy-maker, or where the defendant's actions could subject the defendant to a felony conviction, the cap rises to the greater of four times compensatory damages or $2,000,000.",
+      "sourceName": "S.C. Code § 15-32-530(A),(B),(D); RFA memo 2026-02-03",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Add '(indexed for inflation each year; $739,245 in 2026)' and one sentence on the (B) tier. The 4x/$2 million tier and the $739,245 figure both come from primary sources; the internal SC law pack already carries the (B) tier."
+    },
+    {
+      "surface": "body",
+      "claim": "For example, if a jury awards $200,000 in compensatory damages, the punitive damages cap would be $600,000 (3 × $200,000).",
+      "verdict": "update",
+      "currentValue": "With the 2026 indexed floor of $739,245, three times $200,000 ($600,000) is below the floor, so the cap in that example would be $739,245, not $600,000. A working example: $300,000 in compensatory damages gives a cap of $900,000 (3 × $300,000), which exceeds the floor. The multiplier governs only once compensatory damages exceed roughly $246,400 in 2026.",
+      "sourceName": "S.C. Code § 15-32-530(A),(D); RFA memo 2026-02-03 ($739,245)",
+      "sourceUrl": "https://rfa.sc.gov/media/11478",
+      "retrievedAt": "2026-09-23",
+      "note": "The example is arithmetically right against the unindexed $500,000 and wrong against the figure actually in force. Change the example to $300,000 → $900,000."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Defendant under the influence</strong> — no cap if the defendant was under the influence of alcohol or drugs at the time of the incident",
+      "verdict": "update",
+      "currentValue": "§ 15-32-530(C)(3): no cap where 'the defendant acted or failed to act while under the influence of alcohol, drugs, other than lawfully prescribed drugs administered in accordance with a prescription, or any intentionally consumed glue, aerosol, or other toxic vapor to the degree that the defendant's judgment is substantially impaired.' The test is qualitative (substantial impairment of judgment); there is no BAC threshold, and lawfully prescribed drugs taken as prescribed do not count.",
+      "sourceName": "S.C. Code § 15-32-530(C)(3)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Add 'to the degree that their judgment was substantially impaired'. The site's SC pack rule 'sc-punitive-bac-threshold' bans importing a 0.15 BAC figure here; do not add one."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Felony conviction</strong> — if the defendant's conduct resulted in a felony conviction, the cap does not apply",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-32-530(C)(2): 'the defendant has pled guilty to or been convicted of a felony arising out of the same act or course of conduct complained of by the plaintiff and that act or course of conduct is a proximate cause of the plaintiff's damages'",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Optionally 'pled guilty to or was convicted of a felony arising from the same conduct'. Note the distinction from (B)(2), where conduct that merely could support a felony conviction raises the cap to 4x/$2 million rather than removing it."
+    },
+    {
+      "surface": "body",
+      "claim": "Exceptions to the South Carolina cap include:",
+      "verdict": "update",
+      "currentValue": "The list omits § 15-32-530(C)(1): no cap where 'at the time of injury the defendant had an intent to harm and determines that the defendant's conduct did in fact harm the claimant.' The three uncapped cases are intent to harm, a felony plea or conviction arising from the same conduct, and substantial impairment by alcohol or drugs.",
+      "sourceName": "S.C. Code § 15-32-530(C)(1)–(3)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Add a third bullet, 'Intent to harm'. The same omission appears in faq:3 and in the key takeaways."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Medical malpractice</strong> cases can involve both compensatory damages for the harm caused by a healthcare provider's negligence and punitive damages when the provider's conduct was grossly negligent or involved intentional misconduct.",
+      "verdict": "update",
+      "currentValue": "Georgia: gross negligence is not enough; punitive damages in a malpractice case require clear and convincing evidence of wilful misconduct, malice, fraud, wantonness, oppression or an entire want of care (§ 51-12-5.1(b); Roseberry v. Brooks, 218 Ga. App. 202 (1995), directing a verdict against punitive damages where the evidence showed only professional negligence). South Carolina: wilful, wanton or reckless conduct (§ 15-32-520(D)); § 15-32-220(D)(2) confirms the med-mal noneconomic cap does not limit punitive damages.",
+      "sourceName": "O.C.G.A. § 51-12-5.1(b) and Justia annotations (Roseberry v. Brooks; Lewis v. Suttles Truck Leasing); S.C. Code §§ 15-32-520(D), 15-32-220(D)(2)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+      "retrievedAt": "2026-09-23",
+      "note": "Replace 'grossly negligent' with 'wilful, wanton or reckless — ordinary negligence, even gross negligence, is not enough in Georgia'."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Wrongful death</strong> cases allow surviving family members to recover compensatory damages for funeral expenses, lost financial support, and loss of companionship.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-4-1(1) (Georgia measures wrongful death by 'the full value of the life of the decedent without deducting for any of the necessary or personal expenses of the decedent had he lived'); S.C. Code § 15-51-20 (action brought by the executor or administrator) and § 15-51-40",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-4/section-51-4-1/",
+      "retrievedAt": "2026-09-23",
+      "note": "Acceptable as a general description. If touched, say Georgia measures the claim by 'the full value of the life of the decedent' (§ 51-4-1), which includes both economic and intangible components per the annotated cases, and that in South Carolina the estate's personal representative files (§ 15-51-20)."
+    },
+    {
+      "surface": "body",
+      "claim": "Punitive damages are available when the death resulted from the defendant's willful or reckless conduct.",
+      "verdict": "update",
+      "currentValue": "South Carolina: yes — § 15-51-40 lets the jury award 'exemplary damages when the wrongful act, neglect, or default was the result of recklessness, wilfulness, or malice.' Georgia: punitive damages are not recoverable on the wrongful-death claim itself, because the 'full value of the life' measure under § 51-4-1 is already treated as punitive (Ford Motor Co. v. Stubblefield, 171 Ga. App. 331 (1984), as annotated on Justia: 'Punitive damages are not available in a wrongful death claim').",
+      "sourceName": "S.C. Code § 15-51-40; Justia annotations to O.C.G.A. § 51-4-1 (Ford Motor Co. v. Stubblefield, 171 Ga. App. 331, 319 S.E.2d 470 (1984))",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c051.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Two-state error: true as written for South Carolina, wrong for Georgia. Rewrite: 'In South Carolina, punitive (exemplary) damages are available in a wrongful death action when the conduct was reckless, wilful or malicious (S.C. Code § 15-51-40). Georgia handles it differently: the wrongful death claim recovers the full value of the decedent's life (O.C.G.A. § 51-4-1), and punitive damages are not added to that claim.' I did not verify Georgia's separate estate (survival) claim in this session; do not add a sentence about it."
+    },
+    {
+      "surface": "body",
+      "claim": "These cases are among the most likely to result in punitive damages, especially when a manufacturer knew about a defect but continued selling the product.",
+      "verdict": "drop",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-5.1(e)(1) (no cap in product-liability cases)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+      "retrievedAt": "2026-09-23",
+      "note": "Product-liability paragraph. 'Among the most likely' is a frequency claim with no source. Replace with the verified fact: 'Georgia removes the $250,000 cap entirely in product liability cases, and evidence that a manufacturer knew about a defect and kept selling is the kind of conscious indifference the statute requires' (Mack Trucks, Inc. v. Conkle, 263 Ga. 539 (1993), annotated on Justia: four years of ignored engineering warnings met the clear-and-convincing standard)."
+    },
+    {
+      "surface": "body",
+      "claim": "Workers' comp benefits are a form of compensatory damages paid through insurance, but punitive damages are generally not available in workers' comp. However, if a third party (such as a subcontractor or equipment manufacturer) contributed to your injury, you may pursue a separate personal injury claim that includes punitive damages.",
+      "verdict": "update",
+      "currentValue": "Workers' compensation pays scheduled statutory benefits, not 'damages'; both states make it the exclusive remedy against the employer (O.C.G.A. § 34-9-11(a): the rights and remedies under the chapter 'shall exclude and be in place of all other rights and remedies ... and all other civil liabilities whatsoever'; S.C. Code § 42-1-540: 'shall exclude all other rights and remedies of such employee ... as against his employer'), so no punitive damages are available against the employer. Both statutes preserve suits against third parties: Georgia — 'No employee shall be deprived of any right to bring an action against any third-party tort-feasor'; South Carolina — the exclusion does not bar actions arising from the acts of a subcontractor or its employees.",
+      "sourceName": "O.C.G.A. § 34-9-11(a); S.C. Code § 42-1-540",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-11/",
+      "retrievedAt": "2026-09-23",
+      "note": "Change 'are a form of compensatory damages paid through insurance' to 'are statutory benefits paid through the employer's insurance, not damages'. Georgia's third-party carve-out excludes co-employees of the same employer. Do not cite § 9-3-33 or § 15-3-530 anywhere in this paragraph (site banned pairing)."
+    },
+    {
+      "surface": "body",
+      "claim": "multiplies them by a factor — typically between <strong>1.5 and 5</strong> — based on the severity of the injuries",
+      "verdict": "drop",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "Industry rule of thumb with no primary source; neither state's law prescribes a multiplier. Keep the description of the method but remove the numeric range, or label it plainly as an informal adjuster convention rather than a 'typical' figure."
+    },
+    {
+      "surface": "body",
+      "claim": "For example, if a plaintiff is assigned $150 per day and is expected to experience pain for 500 days, the non-economic component would be $75,000.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Arithmetic (150 × 500 = 75,000); presented as a hypothetical",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "Explicit hypothetical, not a factual claim about the law."
+    },
+    {
+      "surface": "body",
+      "claim": "Both Georgia and South Carolina follow <strong>modified comparative fault</strong> rules",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(a),(g); Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Georgia</strong> (O.C.G.A. § 51-12-33): You can recover damages as long as you are <strong>less than 50% at fault</strong>. Your award is reduced by your percentage of fault. If you are 50% or more at fault, you recover nothing.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(g): 'the plaintiff shall not be entitled to receive any damages if the plaintiff is 50 percent or more responsible for the injury or damages claimed'; (a): damages reduced 'in proportion to his or her percentage of fault'",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-23",
+      "note": "Matches the writer-profile jurisdiction table and the GA law pack."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>South Carolina</strong>: You can recover damages as long as you are <strong>less than 51% at fault</strong>. Your award is reduced by your percentage of fault. If you are 51% or more at fault, you recover nothing.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991): 'a plaintiff in a negligence action may recover damages if his or her negligence is not greater than that of the defendant. The amount of the plaintiff's recovery shall be reduced in proportion to the amount of his or her negligence.'",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+      "retrievedAt": "2026-09-23",
+      "note": "Correct and correctly uncited to any statute. If a citation is added it must be Nelson v. Concrete Supply Co., never § 15-38-15 (writer-profile rule and SC pack rule 'nelson-bar-miscited-to-15-38-15'). A plaintiff exactly 50% at fault still recovers half."
+    },
+    {
+      "surface": "body",
+      "claim": "For example, if a jury in Georgia awards you $100,000 in compensatory damages but finds you 20% at fault, your award is reduced to $80,000.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(a); arithmetic",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "see Cornell Law Institute's <a href=\"https://www.law.cornell.edu/wex/damages\" target=\"_blank\" rel=\"noopener\">legal definition of damages</a>",
+      "verdict": "update",
+      "currentValue": "The page is the Wex entry 'damages' published by the Legal Information Institute (LII) at Cornell Law School. There is no 'Cornell Law Institute'.",
+      "sourceName": "Legal Information Institute, Cornell Law School — Wex: damages",
+      "sourceUrl": "https://www.law.cornell.edu/wex/damages",
+      "retrievedAt": "2026-09-23",
+      "note": "Link resolves. Change the anchor lead-in to 'Cornell Law School's Legal Information Institute'. law.cornell.edu is on the outbound allowlist."
+    },
+    {
+      "surface": "body",
+      "claim": "call <strong><a href=\"tel:+18447378587\">1-844-RESULTS</a></strong>",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "profiles/writer-profile.md ('the toll-free line 1-844-RESULTS is tel:+18447378587')",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "The href matches the profile's stated number; this post is not one of the 27 with a transposed href."
+    },
+    {
+      "surface": "body",
+      "claim": "we handle personal injury cases on a <strong>contingency fee basis</strong>, which means you pay nothing unless we recover compensation for you",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "profiles/writer-profile.md trust signals (firm fact, not a legal claim)",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Georgia caps punitive damages at $250,000 unless specific exceptions apply (O.C.G.A. § 51-12-5.1)",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-5.1(e)–(g)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "South Carolina caps them at the greater of three times compensatory damages or $500,000 (S.C. Code § 15-32-530) on clear and convincing evidence, a cap lifted where the defendant was intoxicated",
+      "verdict": "update",
+      "currentValue": "Greater of three times compensatory damages or $500,000, indexed for inflation ($739,245 in 2026), under § 15-32-530; the clear-and-convincing standard is § 15-32-520(D); the cap is lifted for intent to harm, a felony plea or conviction arising from the conduct, or substantial impairment by alcohol or drugs (§ 15-32-530(C)).",
+      "sourceName": "S.C. Code §§ 15-32-520(D), 15-32-530(A),(C),(D); RFA memo 2026-02-03",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Minimal edit: add '(indexed each year; $739,245 in 2026)' after $500,000 and change 'a cap lifted where the defendant was intoxicated' to 'a cap lifted for intent to harm, a felony conviction, or substantial impairment by alcohol or drugs'. Keep the plain-text, single-paragraph format."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "punitive damages punish extreme misconduct like drunk driving or fraud",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-5.1(b),(c),(f)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Both damage types require thorough documentation and expert testimony to maximize recovery.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Practice statement, not a legal or statistical claim",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "excerpt",
+      "claim": "Compensatory damages repay your losses; punitive damages punish extreme misconduct. How each works in Georgia and South Carolina injury claims.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-5.1(c) ('solely to punish, penalize, or deter a defendant')",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+      "retrievedAt": "2026-09-23",
+      "note": "No figures; nothing to change."
+    },
+    {
+      "surface": "faq:0",
+      "claim": "Compensatory damages reimburse the injured person for actual losses such as medical bills, lost wages, and pain and suffering. Punitive damages are a separate award meant to punish the defendant for especially reckless or intentional conduct and deter similar behavior in the future.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-5.1(c); S.C. Code § 15-32-520(D)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "faq:1",
+      "claim": "No. Punitive damages are only awarded when the defendant's conduct goes beyond ordinary negligence — such as drunk driving, intentional harm, or knowingly selling a dangerous product. They must be proven by clear and convincing evidence, a higher standard than what is required for compensatory damages.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-5.1(b); S.C. Code § 15-32-520(D)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    },
+    {
+      "surface": "faq:2",
+      "claim": "Yes. Under O.C.G.A. § 51-12-5.1, Georgia caps punitive damages at $250,000 in most personal injury cases. However, the cap does not apply when the defendant acted with specific intent to cause harm, was driving under the influence, or in certain product liability cases.",
+      "verdict": "update",
+      "currentValue": "The cap does not apply when the defendant acted with specific intent to cause harm, acted while impaired by alcohol or drugs to the degree that their judgment was substantially impaired (§ 51-12-5.1(f)), or in any product liability case (§ 51-12-5.1(e)(1)) — where 75% of the award goes to the state.",
+      "sourceName": "O.C.G.A. § 51-12-5.1(e)(1), (f), (g)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+      "retrievedAt": "2026-09-23",
+      "note": "Two fixes: 'was driving under the influence' → 'acted while substantially impaired by alcohol or drugs'; 'in certain product liability cases' → 'in product liability cases'. This answer also publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:3",
+      "claim": "Under S.C. Code § 15-32-530, South Carolina caps punitive damages at the greater of three times the compensatory damages or $500,000. The cap does not apply if the defendant was under the influence of alcohol or drugs or if the defendant's conduct resulted in a felony conviction.",
+      "verdict": "update",
+      "currentValue": "Greater of three times compensatory damages or $500,000, a floor indexed for inflation each year ($739,245 in 2026). The cap does not apply if the defendant intended to harm the plaintiff, pled guilty to or was convicted of a felony arising from the same conduct, or acted while impaired by alcohol or drugs to the degree that their judgment was substantially impaired (§ 15-32-530(C)).",
+      "sourceName": "S.C. Code § 15-32-530(A),(C),(D); RFA memo 2026-02-03",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Add the indexing parenthetical and the intent-to-harm exception. This answer also publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:4",
+      "claim": "Both states follow modified comparative fault rules. In Georgia, you can recover as long as you are less than 50% at fault (O.C.G.A. § 51-12-33). In South Carolina, you can recover as long as you are less than 51% at fault. Your total award is reduced by your percentage of responsibility.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(a),(g); Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+      "retrievedAt": "2026-09-23",
+      "note": "Optional: append '(Nelson v. Concrete Supply Co.)' after the South Carolina sentence. Never § 15-38-15."
+    },
+    {
+      "surface": "faq:5",
+      "claim": "No. Roden Law handles personal injury cases on a contingency fee basis, which means you pay no attorney fees unless we recover compensation for you. Your initial consultation is free.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "profiles/writer-profile.md trust signals (firm fact)",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": ""
+    }
+  ],
+  "recommendedEdits": [
+    "Body, Georgia cap section: rewrite the 75%-to-the-state paragraph so it applies only to product-liability punitive awards under § 51-12-5.1(e)(2) and states that in every other case the plaintiff keeps the entire award; delete the sentence saying the provision 'does not apply in DUI-related cases'.",
+    "Body, Georgia cap section: change the product-liability bullet to 'no cap in any product liability case' (drop 'knowingly' and 'may not apply'); retitle the DUI bullet 'Impairment by alcohol or drugs' and say the cap lifts where the defendant's judgment was substantially impaired, against the active tort-feasor only.",
+    "Body, definition block, SC cap section, comparison table, key takeaways and faq:3: after '$500,000' add '(indexed for inflation each year; $739,245 in 2026)' per § 15-32-530(D) and the RFA memo of 2026-02-03.",
+    "Body, SC cap section: replace the $200,000 → $600,000 example with $300,000 → $900,000 (3 × $200,000 falls below the 2026 floor of $739,245, so the floor would govern).",
+    "Body, SC cap section, key takeaways and faq:3: add the missing uncapped case 'intent to harm' (§ 15-32-530(C)(1)); qualify 'under the influence' as 'to the degree that their judgment was substantially impaired' (§ 15-32-530(C)(3)); optionally add one sentence on the 4x/$2,000,000 middle tier in § 15-32-530(B).",
+    "Body, common-cases section, wrongful death: split by state — South Carolina allows exemplary damages for reckless, wilful or malicious conduct (S.C. Code § 15-51-40); Georgia's wrongful-death claim recovers the full value of the decedent's life (O.C.G.A. § 51-4-1) and punitive damages are not added to it (Ford Motor Co. v. Stubblefield, 171 Ga. App. 331 (1984)).",
+    "Body, 'What Are Punitive Damages' and medical-malpractice paragraphs: remove 'gross medical negligence' / 'grossly negligent'; in Georgia negligence, even gross negligence, does not support punitive damages (Roseberry v. Brooks, 218 Ga. App. 202 (1995)); use 'wilful, wanton or reckless'.",
+    "Body, workers' compensation paragraph: describe benefits as statutory benefits rather than 'a form of compensatory damages'; cite the exclusive-remedy statutes O.C.G.A. § 34-9-11 and S.C. Code § 42-1-540 for 'no punitive damages against the employer' and the third-party carve-outs both statutes preserve.",
+    "Body, comparison table: change 'Awarded in a small percentage of cases' to a qualitative cell; change 'Defendant personally (often not insurable)' to 'Defendant (coverage depends on the policy)' (Federal Ins. Co. v. National Distrib. Co., 203 Ga. App. 763 (1992)); mark compensatory 'No cap' as 'No general cap' with a footnote that South Carolina caps noneconomic damages in medical malpractice (§ 15-32-220: $596,001 per provider / $1,788,002 aggregate in 2026) and all damages against government entities (§ 15-78-120: $300,000 per person / $600,000 per occurrence, no punitive damages).",
+    "Body, product-liability paragraph: replace 'among the most likely to result in punitive damages' with the verified fact that Georgia removes the cap entirely in product liability cases.",
+    "Body, multiplier method: remove the unsourced 'typically between 1.5 and 5' range or label it an informal adjuster convention; the per-diem hypothetical can stay.",
+    "Body: correct 'Cornell Law Institute' to 'Cornell Law School's Legal Information Institute' (link is fine).",
+    "faq:2: 'was driving under the influence' → 'acted while substantially impaired by alcohol or drugs'; 'in certain product liability cases' → 'in product liability cases'. faq:4: optionally cite Nelson v. Concrete Supply Co. for the South Carolina 51% bar; never § 15-38-15.",
+    "No SB 68 edit needed: the 2025 Tort Reform Act (Governor's signed text, effective on approval 2025-04-21) did not amend § 51-12-5.1, the $250,000 cap or § 51-12-33's 50% bar. It added § 51-12-15 (elective phased trial: fault, then compensatory damages, then the § 51-12-5.1(d) punitive phase) and § 51-12-1.1 (medical-expense evidence), amended § 40-8-76.1 (seat-belt evidence) and restricted argument on the dollar value of noneconomic damages; a one-line mention of the elective phased trial is optional.",
+    "Reviewer meta: record Graeham C. Gillin as reviewer (two-state post stating South Carolina law); do not add an attribution quote on this refresh."
+  ],
+  "statuteCitations": [
+    { "section": "O.C.G.A. § 51-12-5.1", "name": "Punitive damages (clear-and-convincing standard (b); bifurcated determination (d); product liability uncapped, one award per defendant, 75% to the state (e); specific-intent and impairment exceptions (f); $250,000 cap (g))", "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/" },
+    { "section": "O.C.G.A. § 51-12-33", "name": "Reduction and apportionment of award or bar of recovery according to percentage of fault (50% bar in (g))", "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/" },
+    { "section": "O.C.G.A. § 9-3-33", "name": "Injuries to the person — two-year limitation (not cited in the post; verified for reference)", "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/" },
+    { "section": "O.C.G.A. § 51-4-1", "name": "Wrongful death definitions — 'full value of the life of the decedent'", "url": "https://law.justia.com/codes/georgia/title-51/chapter-4/section-51-4-1/" },
+    { "section": "O.C.G.A. § 34-9-11", "name": "Workers' compensation exclusive remedy; third-party tort-feasor actions preserved", "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-11/" },
+    { "section": "S.C. Code § 15-32-530", "name": "Punitive damages cap — greater of 3x compensatory or $500,000 (A); 4x or $2,000,000 tier (B); uncapped for intent to harm, felony plea/conviction, substantial impairment (C); annual CPI adjustment (D)", "url": "https://www.scstatehouse.gov/code/t15c032.php" },
+    { "section": "S.C. Code § 15-32-520", "name": "Bifurcated trial on defendant's request (A); clear-and-convincing standard for wilful, wanton or reckless conduct (D); eleven amount factors (E); per-defendant awards (G)", "url": "https://www.scstatehouse.gov/code/t15c032.php" },
+    { "section": "S.C. Code § 15-32-220", "name": "Medical malpractice noneconomic damages cap — $350,000 per provider / $1,050,000 aggregate base, CPI-adjusted ($596,001 / $1,788,002 for 2026); exceptions in (E); does not limit punitive damages (D)(2)", "url": "https://www.scstatehouse.gov/code/t15c032.php" },
+    { "section": "S.C. Code § 15-3-530", "name": "Three-year limitation for injury to the person (not cited in the post; verified for reference)", "url": "https://www.scstatehouse.gov/code/t15c003.php" },
+    { "section": "S.C. Code § 15-78-120", "name": "Tort Claims Act limits — $300,000 per person, $600,000 per occurrence, $1.2 million for physicians and dentists; no punitive or exemplary damages or prejudgment interest", "url": "https://www.scstatehouse.gov/code/t15c078.php" },
+    { "section": "S.C. Code § 15-51-40", "name": "Wrongful death damages, including exemplary damages for recklessness, wilfulness or malice", "url": "https://www.scstatehouse.gov/code/t15c051.php" },
+    { "section": "S.C. Code § 42-1-540", "name": "Workers' compensation exclusive remedy against the employer; subcontractor actions preserved", "url": "https://www.scstatehouse.gov/code/t42c001.php" }
+  ],
+  "authoritativeLinks": [
+    { "name": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (S.C. Jan. 7, 1991) — adopts modified comparative negligence; plaintiff recovers if negligence 'not greater than' the defendant's", "url": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html" },
+    { "name": "Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt, S09A1432 (Ga. Mar. 22, 2010) — § 51-13-1 noneconomic damages cap violates the right to jury trial", "url": "https://law.justia.com/cases/georgia/supreme-court/2010/s09a1432.html" },
+    { "name": "Georgia SB 68 (2025), signed text from the Governor's office — 2025 Tort Reform Act; does not amend § 51-12-5.1", "url": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download" },
+    { "name": "S.C. Revenue and Fiscal Affairs Office — Inflation Adjustments for Legal Proceedings (§ 15-32-220 and § 15-32-530 annual memos)", "url": "https://rfa.sc.gov/page/data-research/inflation-adjustments-legal-proceedings" },
+    { "name": "S.C. RFA memo, Punitive Damage Award Limitation – Inflation Component, 2026-02-03 ($739,245 for 2026; $719,971 for 2025)", "url": "https://rfa.sc.gov/media/11478" },
+    { "name": "S.C. RFA memo, Non-Economic (Medical Malpractice) Damages Limitation – Inflation Component, 2026-02-03 ($596,001 per provider / $1,788,002 aggregate for 2026)", "url": "https://rfa.sc.gov/media/11477" },
+    { "name": "Legal Information Institute, Cornell Law School — Wex: damages (the post's existing outbound link)", "url": "https://www.law.cornell.edu/wex/damages" }
+  ]
+}
