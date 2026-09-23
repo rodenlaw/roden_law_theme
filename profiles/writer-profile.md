@@ -107,4 +107,26 @@ FAQs use the `**Q:** … / **A:** …` bold-prefix format; the theme maps them t
 
 ## Refresh specifics (`pi-content-refresher`)
 
-The Roden freshness path does not exist yet; it arrives with the content adapter in Phase 2. Until then, refreshes are done by the operator's `bin/` remediation scripts, not by this agent.
+Roden refreshes run through the WordPress content adapter, not a git worktree. The operator exports one post into a run directory, you edit the exported files in place, and the operator turns your diff into exact-match patches that the adapter verifies against the live text before anything is written (`patch-content.php`, `wp_slash` on every write). Nothing you do reaches production directly, and every refresh is held for the owner's approval before it is applied.
+
+**What you are handed.** A run directory containing:
+
+- `body.html` — the post body exactly as WordPress stores it (HTML, not Markdown). Edit it in place. Keep every `id="…"` on headings (the table of contents links to them), keep the `<h2>`/`<h3>` skeleton, keep every internal link.
+- `meta.json` — the other surfaces the theme renders: `excerpt`, `keyTakeaways` (one plain-text paragraph; the theme renders it in the Key Takeaways box above the article), `faqs` (an array of `{question, answer}`; answers are plain text and also publish as FAQPage structured data), `metaDescription`. Edit values in place; keep the JSON valid.
+- `facts-<id>.json` — the facts pack. The only source of new numbers, together with `data/statistics.json`.
+
+**There is no frontmatter.** The review fields are post meta the operator sets from your report: `_roden_last_reviewed` (the visible "Last reviewed" line is rendered by the theme from that meta; **never write a visible "Last reviewed" line into the body**) and `_roden_author_attorney`. State in your report which attorney should be recorded as the reviewer, per the jurisdiction rule below, and the operator sets both.
+
+**Reviewer by jurisdiction.** Georgia-only posts: Eric Roden. Anything that states South Carolina law, including two-state posts: Graeham C. Gillin (owner's rule, 2026-09-23). Never Eric Roden on anything that states South Carolina law.
+
+**Attribution quotes.** Do not add an attorney attribution quote on a refresh (owner's rule, 2026-09-23). If the post already has one, leave it. Report the absence; do not fill it.
+
+**Statute URLs.** Only two forms exist on this site: `law.justia.com` in year-less canonical form for Georgia, and `www.scstatehouse.gov/code/tNNcNNN.php` for South Carolina. Take each URL from the facts pack's `statuteCitations` or copy it from a live post; never build one from the section number. Citation text stays in the strict formats in the jurisdiction table above.
+
+**Outbound allowlist.** Hosts the site already cites: nhtsa.gov, iihs.org, fmcsa.dot.gov, cdc.gov, gahighwaysafety.org, scdps.sc.gov, law.cornell.edu, ecfr.gov, osha.gov, bls.gov, cpsc.gov, nsc.org, sbwc.georgia.gov, plus any host the post already links. Anything else must be in the facts pack.
+
+**Expert attribution.** One prose attribution from the reviewer named above, at least 80 characters, in the body, never as a section's first sentence and never a blockquote. Phone strings exactly as `firm-facts.md` lists them.
+
+**Twins.** Do not touch the Spanish twin. Report every changed figure so the operator can mirror it; the export does not carry the twin link, `content/meta.json` does.
+
+**Images.** Do not add or remove images.

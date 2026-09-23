@@ -1,0 +1,321 @@
+{
+  "postId": 2647,
+  "slug": "rollover-crashes-and-what-they-do-to-your-body",
+  "liveUrl": "https://rodenlaw.com/blog/rollover-crashes-and-what-they-do-to-your-body/",
+  "verifiedAt": "2026-09-23",
+  "verifiedClaims": [
+    {
+      "surface": "body",
+      "claim": "According to the National Highway Traffic Safety Administration (NHTSA), rollovers account for approximately 2% of all crashes but are responsible for nearly 30% of all passenger vehicle fatalities.",
+      "verdict": "update",
+      "currentValue": "NHTSA data show that only about 3 percent of passenger vehicles involved in crashes roll over, yet rollover crashes accounted for 28 percent of passenger vehicle occupant fatalities in 2023 (6,596 deaths).",
+      "sourceName": "NHTSA Traffic Safety Facts, Passenger Vehicles: 2023 Data (DOT HS 813 723); NHTSA Characteristics of Fatal Rollover Crashes (DOT HS 809 438)",
+      "sourceUrl": "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813723",
+      "retrievedAt": "2026-09-23",
+      "note": "The '2% of all crashes' figure is not in any NHTSA publication located; NHTSA's figure is 3 percent of passenger VEHICLES involved in crashes (DOT HS 809 438, p. 3: 'only 3 percent of all passenger vehicles involved in crashes were rollovers'). The fatality share is 28% in 2023 (813 723, p. 10) and 28% in 2024 (IIHS Fatality Facts 2024), down from 'approximately 30 percent' in the 2002 report. The inline hyperlink https://www.nhtsa.gov/road-safety/rollover-prevention is DEAD: nhtsa.gov returns 'The page you are looking for does not exist.' Replace the href with the 813 723 fact sheet."
+    },
+    {
+      "surface": "body",
+      "claim": "Tripped rollovers account for roughly 95% of all single-vehicle rollovers.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "NHTSA, Trends and Rollover-Reduction Effectiveness of Static Stability Factor in Passenger Vehicles (DOT HS 812 444, Aug. 2017)",
+      "sourceUrl": "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/812444",
+      "retrievedAt": "2026-09-23",
+      "note": "Report p. 5: 'NHTSA analysis indicated that approximately 95 percent of rollovers in single-vehicle crashes are tripped, and only 5 percent of rollover crashes are untripped.' Matches the post exactly."
+    },
+    {
+      "surface": "body",
+      "claim": "Untripped rollovers — the vehicle rolls over without striking an object, typically during high-speed maneuvers, sharp turns, or overcorrection. These are more common with top-heavy vehicles like SUVs, pickup trucks, and vans.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "NHTSA DOT HS 812 444",
+      "sourceUrl": "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/812444",
+      "retrievedAt": "2026-09-23",
+      "note": "812 444 p. 5: untripped rollover occurs 'when the tire/road interface friction is the only external force acting on a vehicle'; 'center of gravity height and the track width of a vehicle are highly correlated with rollovers'; p. 15: an untripped rollover 'is likely to occur when a driver tries to regain the lane position after dropping two wheels off the roadway onto the shoulder' (i.e., overcorrection). Consistent with the post."
+    },
+    {
+      "surface": "body",
+      "claim": "speed is a factor in nearly 40% of fatal rollovers",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "NHTSA, Characteristics of Fatal Rollover Crashes (DOT HS 809 438, Apr. 2002), sec. 4.3.3",
+      "sourceUrl": "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/809438",
+      "retrievedAt": "2026-09-23",
+      "note": "'In 2000, some 40 percent of fatal rollover crashes involved speeding, as noted on police accident reports (PARs). This compares with a rate of reported speeding in non-rollover crashes of 15 percent.' Figure is accurate but the data vintage is 2000; the post gives no attribution. Recommended: attribute to NHTSA and keep 'about 40%'."
+    },
+    {
+      "surface": "body",
+      "claim": "High center of gravity — SUVs, pickup trucks, vans, and top-heavy commercial vehicles are significantly more prone to rollovers than sedans",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "NHTSA Traffic Safety Facts, Passenger Vehicles: 2023 Data (DOT HS 813 723), p. 10",
+      "sourceUrl": "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813723",
+      "retrievedAt": "2026-09-23",
+      "note": "Share of 2023 occupant fatalities that occurred in vehicles that rolled over: pickups 38%, SUVs 33%, vans 25%, passenger cars 20%. Also 809 438 (FARS/GES 2000): 6% of SUVs involved in crashes rolled over vs 2% of passenger cars. Supports the claim."
+    },
+    {
+      "surface": "body",
+      "claim": "The NHTSA reports that occupants who are ejected from a vehicle during a rollover are roughly 8 times more likely to be killed than those who remain inside.",
+      "verdict": "update",
+      "currentValue": "NHTSA estimates that in 2022 the fatality rate for occupants ejected from the vehicle during a rollover was 95.5 percent, compared with 4.7 percent for occupants who were not ejected; across all crash types an ejected occupant is about three times as likely to be killed as one who stays inside. Belted occupants were 98 percent less likely to be ejected in a rollover.",
+      "sourceName": "NHTSA, Curtain Air Bags and Ejection Mitigation in Rollover Events (DOT HS 813 700, Apr. 2025), pp. vi, 2",
+      "sourceUrl": "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813700",
+      "retrievedAt": "2026-09-23",
+      "note": "No NHTSA publication states an 8x multiplier. 813 700 p. 2: 'In 2022 fatality rate for those ejected from the vehicle during a rollover has been estimated to be 95.5 percent, compared to 4.7 percent for those who were not ejected from the vehicle (NCSA, 2024).' p. vi: 'The likelihood of a fatal injury among ejected occupants in all types of crashes is about three times greater than for a non-ejected ... occupant.' p. 3: 'Occupants wearing a seat belt were 98 percent less likely to be ejected in rollover crashes.' The 8x figure is unsupported; replace with the NHTSA rate comparison and attribute to the 2025 report. Same fix applies to faq:0."
+    },
+    {
+      "surface": "body",
+      "claim": "Both Georgia and South Carolina apply modified comparative fault rules",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33; Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-23",
+      "note": "Both verified against the statute and the opinion; matches the writer-profile jurisdiction table."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia (O.C.G.A. § 51-12-33): You can recover as long as you are less than 50% at fault. Your award is reduced by your percentage of responsibility.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(a), (g) (2025 Code of Georgia via Justia)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-23",
+      "note": "(g): 'the plaintiff shall not be entitled to receive any damages if the plaintiff is 50 percent or more responsible for the injury or damages claimed.' (a): damages reduced 'in proportion to his or her percentage of fault.' Matches profile table."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina: You can recover as long as you are less than 51% at fault. Your award is reduced by your percentage of responsibility.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (S.C. Jan. 7, 1991)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+      "retrievedAt": "2026-09-23",
+      "note": "Opinion at 245: 'For all causes of action arising on or after July 1, 1991, a plaintiff in a negligence action may recover damages if his or her negligence is not greater than that of the defendant. The amount of the plaintiff's recovery shall be reduced in proportion to the amount of his or her negligence.' The rule is correct; the post cites no authority for it. Per the profile table, attribute to Nelson v. Concrete Supply Co. and never to § 15-38-15. Recommended edit adds the case name."
+    },
+    {
+      "surface": "body",
+      "claim": "In Georgia, Senate Bill 68 revised O.C.G.A. § 40-8-76.1(d) effective April 21, 2025, so evidence that you were not wearing a seatbelt may be admitted on negligence, comparative negligence, causation, assumption of risk, or apportionment of fault, and may diminish your recovery. Georgia sets no fixed percentage reduction — the finder of fact apportions fault, and the court still weighs admissibility under O.C.G.A. § 24-4-403.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "SB 68 (2025), Sec. 5 and Sec. 9(a), as signed (Governor's office); O.C.G.A. § 40-8-76.1(d)(1) (2025 Code); O.C.G.A. § 24-4-403; Gov. Kemp press release 2025-04-21",
+      "sourceUrl": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download",
+      "retrievedAt": "2026-09-23",
+      "note": "Signed bill Sec. 5 amends § 40-8-76.1(d)(1): failure to wear a belt 'may be considered in any civil action as evidence admissible on the issues of negligence, comparative negligence, causation, assumption of risk, or apportionment of fault or for any other purpose and may be evidence used to diminish any recovery ... provided, however, that this paragraph shall not prevent a court from determining the admissibility of such evidence pursuant to Code Section 24-4-403'. Sec. 9(a): 'This Act shall become effective upon its approval by the Governor'; Governor's press release dated April 21, 2025 confirms signing that day. Justia's 2025 Code text of § 40-8-76.1(d) matches. § 24-4-403 text verified (probative value vs unfair prejudice). No percentage cap on the reduction appears anywhere in the statute. Matches the GA law pack rule."
+    },
+    {
+      "surface": "body",
+      "claim": "In South Carolina the rule is the reverse: under S.C. Code § 56-5-6540(C), a seatbelt violation is not negligence per se or contributory negligence and is not admissible as evidence in a civil action. In neither state does going unbelted bar your claim.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 56-5-6540(C) (South Carolina Legislature)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Statute text: '(C) A violation of this article is not negligence per se or contributory negligence, and is not admissible as evidence in a civil action.' Verbatim match."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia caps punitive damages at $250,000 with exceptions for DUI and intentional conduct (O.C.G.A. § 51-12-5.1).",
+      "verdict": "update",
+      "currentValue": "Georgia caps punitive damages at $250,000 (O.C.G.A. § 51-12-5.1(g)), but the cap does not apply in product liability cases (§ 51-12-5.1(e), where 75 percent of the award is paid to the state), or where the defendant acted with specific intent to cause harm or while impaired by alcohol or drugs to the degree that judgment was substantially impaired (§ 51-12-5.1(f)).",
+      "sourceName": "O.C.G.A. § 51-12-5.1(e), (f), (g) (2025 Code of Georgia via Justia)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+      "retrievedAt": "2026-09-23",
+      "note": "(e)(1): 'In a tort case in which the cause of action arises from product liability, there shall be no limitation regarding the amount which may be awarded as punitive damages.' (e)(2): 75% of such award goes to the state treasury. (f): no limit for specific intent to harm or substantially impaired by alcohol/drugs (active tortfeasor only). (g): $250,000 otherwise. The post's own example in the same paragraph is 'a manufacturer knowingly selling a vehicle with a rollover-prone design' - a product liability claim, which is exactly the case the cap does NOT reach. Material omission on a rollover page."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina caps them at the greater of 3x compensatory damages or $500,000 (S.C. Code § 15-32-530).",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-32-530(A) (South Carolina Legislature)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-09-23",
+      "note": "(A): 'an award of punitive damages may not exceed the greater of three times the amount of compensatory damages awarded to each claimant entitled thereto or the sum of five hundred thousand dollars.' Matches the profile table. Optional precision: (B) raises the cap to the greater of 4x or $2,000,000 for conduct motivated by unreasonable financial gain with management knowledge or conduct that could be a felony; (C) removes the cap for intent to harm, a felony conviction from the same conduct, or judgment substantially impaired by alcohol or drugs."
+    },
+    {
+      "surface": "body",
+      "claim": "If a rollover crash kills a loved one, surviving family members may file a wrongful death claim to recover funeral expenses, lost financial support, and compensation for the loss of companionship and guidance.",
+      "verdict": "update",
+      "currentValue": "In Georgia the surviving spouse, or the children if there is no surviving spouse, brings the wrongful death claim (O.C.G.A. § 51-4-2). In South Carolina the claim must be brought by the executor or administrator of the estate for the benefit of the surviving spouse and children, or if none, the parents or heirs (S.C. Code § 15-51-20).",
+      "sourceName": "S.C. Code § 15-51-20 (South Carolina Legislature); O.C.G.A. § 51-4-2(a) (2024 Code of Georgia via Justia)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c051.php",
+      "retrievedAt": "2026-09-23",
+      "note": "§ 15-51-20: 'Every such action shall be brought by or in the name of the executor or administrator of such person.' § 51-4-2(a): 'The surviving spouse or, if there is no surviving spouse, a child or children, either minor or sui juris, may recover for the homicide of the spouse or parent the full value of the life of the decedent.' The profile table requires the SC personal-representative rule. 'Surviving family members may file' is wrong for SC. Same fix applies to faq:5."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia: 2 years from the date of injury (O.C.G.A. § 9-3-33)",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-33 (2025 Code of Georgia via Justia)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+      "retrievedAt": "2026-09-23",
+      "note": "'actions for injuries to the person shall be brought within two years after the right of action accrues'. Matches profile table."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina: 3 years from the date of injury (S.C. Code § 15-3-530)",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-3-530(5) (South Carolina Legislature)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-23",
+      "note": "'Within three years: ... (5) an action for assault, battery, or any injury to the person or rights of another, not arising on contract'. Matches profile table."
+    },
+    {
+      "surface": "body",
+      "claim": "If the rollover involved a government entity (e.g., a road defect claim), you may need to provide ante-litem notice much sooner — as early as 6 months to 1 year depending on the jurisdiction.",
+      "verdict": "update",
+      "currentValue": "In Georgia, a claim against a city requires written ante-litem notice within 6 months (O.C.G.A. § 36-33-5); claims against a county (§ 36-11-1) or the State (§ 50-21-26) must be presented within 12 months. South Carolina's Tort Claims Act requires no pre-suit notice, but suit against a governmental entity must be filed within 2 years (S.C. Code § 15-78-110); filing an optional verified claim within 1 year (§ 15-78-80) extends that to 3 years.",
+      "sourceName": "O.C.G.A. §§ 36-33-5, 36-11-1, 50-21-26 (Justia); S.C. Code §§ 15-78-80, 15-78-110 (South Carolina Legislature)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+      "retrievedAt": "2026-09-23",
+      "note": "The 6-month/1-year range is accurate for Georgia only (§ 36-33-5(b): 'Within six months'; § 36-11-1: 'within 12 months'; § 50-21-26(a)(1): 'within 12 months'). South Carolina has NO ante litem notice: § 15-78-80 says a verified claim 'may be filed' and the claimant may sue whether or not one is filed; § 15-78-110 bars suit 'unless an action is commenced within two years'. The profile table and the SC law pack (rules 4, 5, 13) treat any implication of an SC notice requirement as an error. The two-year SC deadline is the more important fact the post omits. Same fix applies to faq:3."
+    },
+    {
+      "surface": "body",
+      "claim": "Claims against government entities in Georgia and South Carolina have special notice requirements and shorter deadlines.",
+      "verdict": "update",
+      "currentValue": "Claims against government entities carry shorter deadlines: Georgia requires ante-litem notice within 6 months (city) or 12 months (county or State), and South Carolina requires suit within 2 years under its Tort Claims Act with no pre-suit notice.",
+      "sourceName": "O.C.G.A. §§ 36-33-5, 36-11-1, 50-21-26; S.C. Code §§ 15-78-80, 15-78-110",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+      "retrievedAt": "2026-09-23",
+      "note": "'Special notice requirements' is true of Georgia, false of South Carolina (see previous entry). 'Shorter deadlines' is true of both."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Georgia bars recovery at 50% or more fault (O.C.G.A. SS 51-12-33) and allows two years to file (O.C.G.A. SS 9-3-33), while South Carolina bars recovery at 51% fault and allows three years (S.C. Code SS 15-3-530).",
+      "verdict": "update",
+      "currentValue": "Georgia bars recovery at 50% or more fault (O.C.G.A. § 51-12-33) and allows two years to file (O.C.G.A. § 9-3-33), while South Carolina bars recovery at 51% or more fault (Nelson v. Concrete Supply Co.) and allows three years (S.C. Code § 15-3-530).",
+      "sourceName": "O.C.G.A. § 51-12-33(g); O.C.G.A. § 9-3-33; Nelson v. Concrete Supply Co. (1991); S.C. Code § 15-3-530(5)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-23",
+      "note": "Every rule in the sentence is correct and matches the profile table. The edit is (1) the section symbol renders as 'SS' three times - the takeaways box renders above the article and this is visible; the profile's strict citation format is 'O.C.G.A. § X-X-XX'; (2) '51% fault' should read '51% or more' for precision; (3) add the Nelson attribution."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Rollover crashes are among the most violent vehicle accidents, often caused by top-heavy SUVs, overcorrection, tire blowouts, or defective vehicle design.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "NHTSA DOT HS 813 723 (vehicle-type fatality shares); NHTSA DOT HS 812 444 (overcorrection / lane-regain mechanism)",
+      "sourceUrl": "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813723",
+      "retrievedAt": "2026-09-23",
+      "note": "Qualitative; the vehicle-type and overcorrection elements are supported by the NHTSA sources above. No figure to check."
+    },
+    {
+      "surface": "faq:0",
+      "claim": "Unbelted occupants face ejection, which increases the fatality risk by roughly 8 times according to NHTSA.",
+      "verdict": "update",
+      "currentValue": "Unbelted occupants face ejection; NHTSA estimates that in 2022 the fatality rate for occupants ejected during a rollover was 95.5 percent, compared with 4.7 percent for those who stayed inside the vehicle, and belted occupants were 98 percent less likely to be ejected.",
+      "sourceName": "NHTSA, Curtain Air Bags and Ejection Mitigation in Rollover Events (DOT HS 813 700, Apr. 2025)",
+      "sourceUrl": "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813700",
+      "retrievedAt": "2026-09-23",
+      "note": "Same unsupported 8x multiplier as the body. This answer also renders into FAQPage structured data, so the wrong figure is published twice."
+    },
+    {
+      "surface": "faq:1",
+      "claim": "Depending on the circumstances, liable parties may include another driver who caused the collision, the vehicle manufacturer if a design defect made the vehicle prone to rolling over or the roof collapsed, a tire manufacturer if a blowout triggered the rollover, a government entity if a road defect or missing guardrail contributed, or a trucking company if improper loading or driver fatigue was involved.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-23",
+      "note": "General liability theories; no statistic or statute asserted. Nothing to verify."
+    },
+    {
+      "surface": "faq:2",
+      "claim": "In Georgia, Senate Bill 68 revised O.C.G.A. § 40-8-76.1(d) effective April 21, 2025, so evidence that you were not wearing a seatbelt may be admitted on negligence, comparative negligence, causation, assumption of risk, or apportionment of fault, and may diminish your recovery. Georgia sets no fixed percentage reduction — the finder of fact apportions fault, and the court still weighs admissibility under O.C.G.A. § 24-4-403. In South Carolina the reverse applies: Under S.C. Code § 56-5-6540(C), a seatbelt violation is not negligence per se or contributory negligence and is not admissible as evidence in a civil action. In neither state does going unbelted bar your claim",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "SB 68 (2025) Sec. 5, Sec. 9(a); O.C.G.A. § 40-8-76.1(d)(1); O.C.G.A. § 24-4-403; S.C. Code § 56-5-6540(C)",
+      "sourceUrl": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download",
+      "retrievedAt": "2026-09-23",
+      "note": "Identical to the verified body passage; every element checked against the signed bill, the 2025 Code and the SC statute."
+    },
+    {
+      "surface": "faq:3",
+      "claim": "In Georgia, the statute of limitations for personal injury is 2 years from the date of injury (O.C.G.A. § 9-3-33). In South Carolina, it is 3 years (S.C. Code § 15-3-530).",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-33; S.C. Code § 15-3-530(5)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+      "retrievedAt": "2026-09-23",
+      "note": "Verified; matches profile table."
+    },
+    {
+      "surface": "faq:3",
+      "claim": "Claims involving government entities may require notice much sooner — as early as 6 months to 1 year depending on the jurisdiction.",
+      "verdict": "update",
+      "currentValue": "Claims against a government entity run on shorter clocks: in Georgia, ante-litem notice is due within 6 months for a city (O.C.G.A. § 36-33-5) or 12 months for a county or the State (§§ 36-11-1, 50-21-26); in South Carolina no notice is required, but suit must be filed within 2 years under the Tort Claims Act (S.C. Code § 15-78-110).",
+      "sourceName": "O.C.G.A. §§ 36-33-5, 36-11-1, 50-21-26; S.C. Code §§ 15-78-80, 15-78-110",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Same issue as the body: correct for Georgia, implies a notice requirement South Carolina does not have, and omits the 2-year SC deadline. This answer renders into FAQPage structured data."
+    },
+    {
+      "surface": "faq:4",
+      "claim": "Vehicles with a higher center of gravity — including SUVs, pickup trucks, and vans — are significantly more prone to rollovers than sedans. However, any vehicle can roll over under the right circumstances, especially at high speed, during sharp turns, or after striking a curb, guardrail, or soft shoulder.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "NHTSA DOT HS 813 723, p. 10; NHTSA DOT HS 812 444, p. 5",
+      "sourceUrl": "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813723",
+      "retrievedAt": "2026-09-23",
+      "note": "2023 rollover share of occupant deaths: pickups 38%, SUVs 33%, vans 25%, cars 20%. 812 444: center of gravity height and track width 'highly correlated with rollovers'; tripping mechanisms include 'a ditch, soft soil, a curb or other object'."
+    },
+    {
+      "surface": "faq:5",
+      "claim": "If a loved one was killed, surviving family members may file a wrongful death claim.",
+      "verdict": "update",
+      "currentValue": "If a loved one was killed, a wrongful death claim may be brought — in Georgia by the surviving spouse or children (O.C.G.A. § 51-4-2), and in South Carolina by the executor or administrator of the estate on behalf of the family (S.C. Code § 15-51-20).",
+      "sourceName": "S.C. Code § 15-51-20; O.C.G.A. § 51-4-2(a)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c051.php",
+      "retrievedAt": "2026-09-23",
+      "note": "Same correction as the body's Wrongful Death paragraph; the profile table requires the SC personal-representative rule. Renders into FAQPage structured data."
+    }
+  ],
+  "recommendedEdits": [
+    "Intro paragraph: replace 'approximately 2% of all crashes but are responsible for nearly 30% of all passenger vehicle fatalities' with 'only about 3% of passenger vehicles involved in crashes roll over, yet rollovers accounted for 28% of passenger vehicle occupant deaths in 2023' and attribute to NHTSA's Passenger Vehicles: 2023 Data fact sheet.",
+    "Intro paragraph: the NHTSA hyperlink https://www.nhtsa.gov/road-safety/rollover-prevention is a 404 on nhtsa.gov; point the anchor at https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813723 instead.",
+    "'What Happens to Your Body' closing sentence: replace the unsupported '8 times more likely to be killed' with NHTSA's 2022 estimate - a 95.5% fatality rate for occupants ejected during a rollover versus 4.7% for those not ejected (DOT HS 813 700, April 2025); optionally add that belted occupants were 98% less likely to be ejected.",
+    "faq:0 (What makes rollover crashes so dangerous?): make the same ejection correction - drop 'roughly 8 times' and state the 95.5% vs 4.7% NHTSA figures.",
+    "'Excessive speed' bullet: keep 'nearly 40%' but attribute it ('NHTSA reports that about 40% of fatal rollover crashes involve speeding') so the figure carries its source.",
+    "Punitive Damages paragraph: rewrite the Georgia sentence to 'Georgia caps punitive damages at $250,000 (O.C.G.A. § 51-12-5.1(g)), but there is no cap in product liability cases (§ 51-12-5.1(e); 75% of such an award goes to the state) or where the defendant acted with specific intent to harm or while substantially impaired by alcohol or drugs (§ 51-12-5.1(f))' - the paragraph's own example is a manufacturer selling a rollover-prone design, which is the uncapped case.",
+    "Comparative fault list, South Carolina bullet: add the authority - 'South Carolina (Nelson v. Concrete Supply Co., 303 S.C. 243 (1991))' - and do not cite § 15-38-15.",
+    "Wrongful Death paragraph: replace 'surviving family members may file' with the Georgia rule (surviving spouse, or children if no spouse - O.C.G.A. § 51-4-2) and the South Carolina rule (the estate's executor or administrator brings the claim for the family - S.C. Code § 15-51-20).",
+    "faq:5 (What damages can I recover?): make the same wrongful-death correction in the last sentence.",
+    "Statute of Limitations section, ante-litem paragraph: split by state - Georgia: written ante-litem notice within 6 months for a city (O.C.G.A. § 36-33-5) or 12 months for a county (§ 36-11-1) or the State (§ 50-21-26); South Carolina: no pre-suit notice, but suit within 2 years under the Tort Claims Act (S.C. Code § 15-78-110), or 3 years if an optional verified claim was filed within 1 year (§ 15-78-80).",
+    "faq:3 (How long do I have to file?): make the same ante-litem correction in the last sentence - Georgia notice deadlines, South Carolina 2-year deadline with no notice requirement.",
+    "'Who Is Liable' government-entity bullet: change 'special notice requirements and shorter deadlines' to 'shorter deadlines - Georgia requires ante-litem notice within 6 to 12 months, and South Carolina requires suit within 2 years'.",
+    "Key takeaways: replace the three 'SS' renderings with '§', change 'bars recovery at 51% fault' to 'bars recovery at 51% or more fault', and add '(Nelson v. Concrete Supply Co.)' after it."
+  ],
+  "statuteCitations": [
+    { "section": "O.C.G.A. § 9-3-33", "name": "Injuries to the person - two-year limitation", "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/" },
+    { "section": "O.C.G.A. § 51-12-33", "name": "Apportionment of damages; plaintiff barred at 50 percent or more", "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/" },
+    { "section": "O.C.G.A. § 51-12-5.1", "name": "Punitive damages; $250,000 cap; product liability and intent/impairment exceptions", "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/" },
+    { "section": "O.C.G.A. § 40-8-76.1", "name": "Use of safety belts in passenger vehicles; subsection (d) admissibility as revised by SB 68 (2025)", "url": "https://law.justia.com/codes/georgia/title-40/chapter-8/article-1/part-4/section-40-8-76-1/" },
+    { "section": "O.C.G.A. § 24-4-403", "name": "Exclusion of relevant evidence for unfair prejudice", "url": "https://law.justia.com/codes/georgia/title-24/chapter-4/section-24-4-403/" },
+    { "section": "O.C.G.A. § 36-33-5", "name": "Municipal ante litem notice - six months", "url": "https://law.justia.com/codes/georgia/title-36/chapter-33/section-36-33-5/" },
+    { "section": "O.C.G.A. § 36-11-1", "name": "Claims against counties - twelve months", "url": "https://law.justia.com/codes/georgia/title-36/chapter-11/section-36-11-1/" },
+    { "section": "O.C.G.A. § 50-21-26", "name": "Georgia Tort Claims Act notice of claim - twelve months", "url": "https://law.justia.com/codes/georgia/title-50/chapter-21/article-2/section-50-21-26/" },
+    { "section": "O.C.G.A. § 51-4-2", "name": "Wrongful death of spouse or parent - who may bring the action", "url": "https://law.justia.com/codes/georgia/title-51/chapter-4/section-51-4-2/" },
+    { "section": "S.C. Code § 15-3-530", "name": "Three-year limitation, incl. (5) injury to the person", "url": "https://www.scstatehouse.gov/code/t15c003.php" },
+    { "section": "S.C. Code § 15-32-530", "name": "Punitive damages cap - greater of 3x compensatory or $500,000", "url": "https://www.scstatehouse.gov/code/t15c032.php" },
+    { "section": "S.C. Code § 15-51-20", "name": "Wrongful death action brought by executor or administrator", "url": "https://www.scstatehouse.gov/code/t15c051.php" },
+    { "section": "S.C. Code § 56-5-6540", "name": "Seat belt violation not negligence per se; inadmissible in civil action (subsection C)", "url": "https://www.scstatehouse.gov/code/t56c005.php" },
+    { "section": "S.C. Code § 15-78-80", "name": "Tort Claims Act - optional verified claim within one year", "url": "https://www.scstatehouse.gov/code/t15c078.php" },
+    { "section": "S.C. Code § 15-78-110", "name": "Tort Claims Act - two-year limitation (three if verified claim filed)", "url": "https://www.scstatehouse.gov/code/t15c078.php" },
+    { "section": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991)", "name": "South Carolina modified comparative negligence - plaintiff recovers if negligence not greater than defendant's", "url": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html" }
+  ],
+  "authoritativeLinks": [
+    { "name": "NHTSA Traffic Safety Facts - Passenger Vehicles: 2023 Data (DOT HS 813 723)", "url": "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813723" },
+    { "name": "NHTSA - Curtain Air Bags and Ejection Mitigation in Rollover Events (DOT HS 813 700, April 2025)", "url": "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813700" },
+    { "name": "NHTSA - Trends and Rollover-Reduction Effectiveness of Static Stability Factor in Passenger Vehicles (DOT HS 812 444, August 2017)", "url": "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/812444" },
+    { "name": "NHTSA - Characteristics of Fatal Rollover Crashes (DOT HS 809 438, April 2002)", "url": "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/809438" },
+    { "name": "IIHS Fatality Facts 2024 - Passenger vehicle occupants (rollover share 28%, 6,250 deaths)", "url": "https://www.iihs.org/topics/fatality-statistics/detail/passenger-vehicle-occupants" },
+    { "name": "Georgia SB 68 (2025) as signed - Office of the Governor", "url": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download" },
+    { "name": "Gov. Kemp signs SB 68 - press release, April 21, 2025", "url": "https://gov.georgia.gov/press-releases/2025-04-21/gov-kemp-signs-historic-legislation-delivering-commonsense-meaningful" },
+    { "name": "Nelson v. Concrete Supply Co. (S.C. 1991) - opinion text", "url": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html" }
+  ]
+}
