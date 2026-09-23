@@ -125,7 +125,7 @@ Roden refreshes run through the WordPress content adapter, not a git worktree. T
 
 **Outbound allowlist.** Hosts the site already cites: nhtsa.gov, iihs.org, fmcsa.dot.gov, cdc.gov, gahighwaysafety.org, scdps.sc.gov, law.cornell.edu, ecfr.gov, osha.gov, bls.gov, cpsc.gov, nsc.org, sbwc.georgia.gov, plus any host the post already links. Anything else must be in the facts pack.
 
-**Expert attribution.** One prose attribution from the reviewer named above, at least 80 characters, in the body, never as a section's first sentence and never a blockquote. Phone strings exactly as `firm-facts.md` lists them.
+**Phone links.** Check every `tel:` href in the body against the numbers in `firm-facts.md` (the toll-free line 1-844-RESULTS is `tel:+18447378587`). On 2026-09-23, 27 posts carried a transposed toll-free number in the href behind correct visible text. Correct a wrong href in place and report it; never change the visible phone string.
 
 **Twins.** Do not touch the Spanish twin. Report every changed figure so the operator can mirror it; the export does not carry the twin link, `content/meta.json` does.
 
