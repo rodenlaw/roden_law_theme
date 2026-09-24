@@ -1,0 +1,606 @@
+{
+  "postId": 1740,
+  "slug": "traffic-tickets-and-car-accident-claims",
+  "liveUrl": "https://rodenlaw.com/blog/traffic-tickets-and-car-accident-claims/",
+  "jurisdiction": "both",
+  "verifiedAt": "2026-09-24",
+  "reviewerByJurisdiction": "Two-state post that states South Carolina law: reviewer must be Graeham C. Gillin, never Eric Roden.",
+  "sourcingNote": "law.justia.com returned 403 to curl, so every Georgia statute and every court opinion below was read in a Chrome tab (tab closed afterwards); each year-less Georgia code URL resolved and showed the 2025 Code of Georgia breadcrumb (O.C.G.A. § 17-7-95 lives under article-5, § 24-4-410 has no article segment, § 40-13-58 is article-3, § 40-6-241 is article-11). South Carolina statutes were read on www.scstatehouse.gov (t56c005.php, t56c001.php, t56c007.php, t15c003.php, downloaded 2026-09-24). Comparative-fault, limitation, DUI and punitive citations are reused from facts-1756.json and facts-1653.json (verified 2026-09-23/24). The firm figures were confirmed on the homepage copy saved by run-1653 (rodenlaw.com returned a 5 KB challenge page to this run's curl). No statistic or dollar figure other than the firm's own appears in the post; data/statistics.json holds only crash counts and none apply. The central finding: the post's admissibility statements are backwards for BOTH states. Georgia: 'consistently held inadmissible evidence of any traffic court initiation or disposition of a case against the parties to a collision unless the party has entered a guilty plea in traffic court' (Eubanks v. Waldron, 263 Ga. App. 75 (2003), quoting Waszczak v. City of Warner Robins, 221 Ga. App. 528 (1996)); a guilty plea, or a cash bond forfeited by not appearing (O.C.G.A. § 40-13-58), is an admission that makes a prima facie, rebuttable showing of negligence (Coleman v. Fortner, 260 Ga. App. 373 (2003)); merely paying a fine is not by itself an admission (Eubanks; Howard v. Lay, 259 Ga. App. 391 (2003)), though paying without appearing has been treated as a § 40-13-58 forfeiture (Agic v. MARTA, 334 Ga. App. 679 (2015), per the Justia annotation); a nolo plea can never be used (O.C.G.A. § 17-7-95(c); § 24-4-410(2)). South Carolina: 'No evidence of conviction of any person for any violation of this chapter shall be admissible in any court in any civil action' (S.C. Code § 56-5-6160); a guilty plea and a bond forfeiture 'have the same effect as a conviction after trial' for traffic-law purposes (§ 56-5-6220), but Samuel v. Mouzon, 282 S.C. 616 (Ct. App. 1984) holds that a guilty plea 'may be received into evidence as an admission, subject to explanation or rebuttal' (Green v. Boney, 233 S.C. 49 (1958)) while a bond forfeiture 'cannot be received into evidence either as an admission or for impeachment purposes' and a nolo plea 'cannot be used as an admission against a defendant in civil litigation' (Kibler v. State, 267 S.C. 250 (1976)); the investigating officer 'may not give his opinions as to the cause of an accident. He may only testify regarding his direct observations unless he is qualified as an expert' (State v. Kelly, 285 S.C. 373 (1985), quoted in Gulledge v. McLaughlin, 328 S.C. 504 (Ct. App. 1997)); the required accident reports are not 'evidence of the negligence or due care of either party' though officers may use them to refresh recollection (§ 56-5-1290). No Georgia primary source on the officer's opinion of fault was located, so no Georgia officer-opinion claim is asserted below. The SC prompt citation '§ 56-1-1360' is a provisional-licence revocation section and has nothing to do with this post; the correct SC sections are §§ 56-5-6160, 56-5-6220 and 56-5-1290.",
+  "verifiedClaims": [
+    {
+      "surface": "body",
+      "claim": "According to the <a href=\"https://www.law.cornell.edu/wex/negligence_per_se\" target=\"_blank\" rel=\"noopener\">Cornell Law Institute's overview of negligence per se</a>, violating a traffic statute can serve as evidence of negligence in a civil lawsuit",
+      "verdict": "update",
+      "currentValue": "the Legal Information Institute at Cornell Law School",
+      "sourceName": "Legal Information Institute, Cornell Law School — Wex: negligence per se (HTTP 200 on 2026-09-24)",
+      "sourceUrl": "https://www.law.cornell.edu/wex/negligence_per_se",
+      "retrievedAt": "2026-09-24",
+      "note": "Link resolves and law.cornell.edu is on the outbound allowlist; keep the link. The institution is misnamed, as the 1653 and 1749 packs found on their sibling posts: it is the Legal Information Institute at Cornell Law School, not 'Cornell Law Institute'. Anchor-text change only."
+    },
+    {
+      "surface": "body",
+      "claim": "A traffic ticket is <strong>strong evidence of fault but is not the final word</strong>.",
+      "verdict": "update",
+      "currentValue": "A traffic ticket carries real weight with insurance adjusters, but it is not the final word — and in both Georgia and South Carolina the ticket itself is generally not even admissible at trial; the jury decides fault from the evidence of what each driver did.",
+      "sourceName": "Eubanks v. Waldron, 263 Ga. App. 75, 587 S.E.2d 253 (Ga. Ct. App. 2003); S.C. Code § 56-5-6160",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2003/a03a0919-0.html",
+      "retrievedAt": "2026-09-24",
+      "note": "The framing 'strong evidence' is defensible for the claims-adjusting stage but wrong for the courtroom. Georgia: 'consistently held inadmissible evidence of any traffic court initiation or disposition of a case against the parties to a collision unless the party has entered a guilty plea in traffic court, thereby admitting liability.' South Carolina: § 56-5-6160 bars evidence of a traffic conviction in any civil action; Samuel v. Mouzon excluded the patrolman's proffered testimony that the driver 'was charged with driving left of center and forfeited bond'. Reword the direct answer so it no longer implies the ticket goes to the jury."
+    },
+    {
+      "surface": "body",
+      "claim": "In both Georgia and South Carolina, fault in a car accident is determined by the civil legal system — not by the police officer who issued the citation.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Gulledge v. McLaughlin, 328 S.C. 504, 492 S.E.2d 816 (S.C. Ct. App. 1997), quoting State v. Kelly, 285 S.C. 373 (1985); Eubanks v. Waldron (Ga. Ct. App. 2003)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/court-of-appeals/1997/2727-3.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Correct in both states. South Carolina: 'A police officer may not give his opinions as to the cause of an accident. He may only testify regarding his direct observations unless he is qualified as an expert.' Georgia: the citation and its disposition are inadmissible absent a guilty plea, so the officer's charging decision never reaches the jury as such."
+    },
+    {
+      "surface": "body",
+      "claim": "Traffic court and civil court have different standards of proof",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Samuel v. Mouzon, 282 S.C. 616, 320 S.E.2d 482 (S.C. Ct. App. 1984)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/court-of-appeals/1984/282-s-c-616-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "General proposition (criminal beyond-a-reasonable-doubt versus civil preponderance). Samuel: 'a criminal conviction is not a binding adjudication of a subsequent civil action based on the same facts'. Nothing to change."
+    },
+    {
+      "surface": "body",
+      "claim": "A ticket can be dismissed in traffic court but still be referenced in a civil claim",
+      "verdict": "update",
+      "currentValue": "A ticket can be dismissed in traffic court and the underlying conduct — running the light, following too closely — can still be proven in the civil case with witnesses, physical evidence and the driver's own testimony",
+      "sourceName": "Eubanks v. Waldron (Ga. Ct. App. 2003); S.C. Code § 56-5-6160",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2003/a03a0919-0.html",
+      "retrievedAt": "2026-09-24",
+      "note": "As written it says the ticket itself is 'referenced' in the civil claim after dismissal. In Georgia evidence of 'any traffic court initiation or disposition' is inadmissible; in South Carolina the disposition is barred by § 56-5-6160. What survives a dismissal is the conduct, not the citation. The bullet is true only for the insurance-claim stage; reword so it is true at trial too."
+    },
+    {
+      "surface": "body",
+      "claim": "That said, a traffic citation — especially for a serious violation like running a red light or DUI — carries significant weight in settlement negotiations and at trial. Insurance adjusters and juries both view traffic tickets as meaningful indicators of fault.",
+      "verdict": "update",
+      "currentValue": "That said, a traffic citation — especially for a serious violation like running a red light or DUI — carries significant weight in settlement negotiations, and a guilty plea to it can be used against the driver at trial. Insurance adjusters treat citations as meaningful indicators of fault.",
+      "sourceName": "Eubanks v. Waldron (Ga. Ct. App. 2003); Samuel v. Mouzon (S.C. Ct. App. 1984); S.C. Code § 56-5-6160",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/court-of-appeals/1984/282-s-c-616-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Juries generally never see the ticket in either state, so 'juries ... view traffic tickets' asserts something the rules of evidence prevent. Keep the adjuster half; move the trial half onto the guilty plea, which is the thing that is admissible (Georgia: admission against interest; South Carolina: 'a judgment on a plea of guilty may be received into evidence as an admission, subject to explanation or rebuttal')."
+    },
+    {
+      "surface": "body",
+      "claim": "Under this doctrine, violating a statute designed to protect public safety is automatically considered negligent — the injured party does not need to prove that the driver failed to act reasonably because the law has already defined what reasonable conduct requires.",
+      "verdict": "update",
+      "currentValue": "Under this doctrine, violating a statute designed to protect public safety establishes the driver's duty and the breach of it as a matter of law — the injured party does not need to prove that the driver failed to act reasonably, because the legislature has already defined what reasonable conduct requires. In Georgia the showing is prima facie and the driver may try to rebut it by showing the violation was unintentional and made while exercising ordinary care.",
+      "sourceName": "Central Anesthesia Associates, P.C. v. Worthy, 254 Ga. 728, 333 S.E.2d 829 (Ga. 1985); Whitlaw v. Kroger Co., 306 S.C. 51, 410 S.E.2d 251 (S.C. 1991); Coleman v. Fortner, 260 Ga. App. 373 (Ga. Ct. App. 2003)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/1985/41912-1.html",
+      "retrievedAt": "2026-09-24",
+      "note": "'Automatically' overstates. Georgia Supreme Court: 'negligence per se supplies only the duty and breach of duty elements of a tort, and the plaintiffs must still prove a causal connection (proximate cause) ... as well as their damages.' Coleman (quoting Roberts v. Ledbetter, 218 Ga. App. 860 (1995)): negligence per se 'is a prima facie showing of negligence. This means that the burden is on the defendants to show that the violation was unintentional and in the exercise of ordinary care.' South Carolina (Whitlaw): proving the violation 'has proven the second element of a negligence cause of action' and 'Violation of the statute, thus, is not conclusive of liability.'"
+    },
+    {
+      "surface": "body",
+      "claim": "For negligence per se to apply, two conditions must be met: The driver violated a traffic statute; The violation was the <strong>proximate cause</strong> of the accident and injuries",
+      "verdict": "update",
+      "currentValue": "For negligence per se to carry a claim, the injured person must be someone the statute was meant to protect and the harm must be the kind the statute was meant to prevent — which is nearly always true of a motorist hurt by another motorist's rule-of-the-road violation — and then two more things must be shown: (1) the driver violated the traffic statute, and (2) the violation was the proximate cause of the accident and injuries.",
+      "sourceName": "Whitlaw v. Kroger Co., 306 S.C. 51 (S.C. 1991); Central Anesthesia Associates v. Worthy, 254 Ga. 728 (Ga. 1985); O.C.G.A. § 51-1-6 (annotations)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23498-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Both states apply a two-part threshold before the violation counts. Whitlaw: 'the plaintiff must show two things: (1) that the essential purpose of the statute is to protect from the kind of harm the plaintiff has suffered; and (2) that he is a member of the class of persons the statute is intended to protect.' Georgia's § 51-1-6 annotations: the section 'provides a cause of action for violations of statutes that are intended to benefit the party bringing the suit', and R & R Insulation Servs. v. Royal Indem. Co., 307 Ga. App. 419 (2010) required proximate cause. The post's two conditions are necessary but not the whole test; add the protected-class/type-of-harm sentence in plain language."
+    },
+    {
+      "surface": "body",
+      "claim": "For example, if a driver was cited for running a red light and that caused a T-bone collision, negligence per se likely applies — the driver violated a safety statute and that violation directly caused the crash. However, if a driver was cited for having a broken taillight but the accident was a head-on collision caused by the other driver crossing the centerline, the broken taillight violation has no causal connection to the crash.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Central Anesthesia Associates v. Worthy, 254 Ga. 728 (Ga. 1985)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/1985/41912-1.html",
+      "retrievedAt": "2026-09-24",
+      "note": "The Georgia Supreme Court uses the same illustration: 'the requirement that a motorist stop at a stop sign or red light, may create a duty, the breach of which is inextricable from the proximate cause of the damage, such as an intersection collision.' The broken-taillight/head-on example tracks Fielding v. Driggers (absence of a licence 'irrelevant and inadmissible unless there is a proximate causal connection'). Illustrative; nothing to change."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia follows a <strong>modified comparative fault</strong> system under O.C.G.A. § 51-12-33, allowing injured parties to recover damages as long as they are less than 50% at fault.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(g)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "Reused from facts-1756 / facts-1653 (verified 2026-09-23/24); matches the writer-profile jurisdiction table and the GA law pack (GA 51-12-33)."
+    },
+    {
+      "surface": "body",
+      "claim": "In Georgia, a traffic citation issued at the scene of an accident is generally <strong>admissible as evidence</strong> in a civil lawsuit. The citation itself does not prove fault conclusively, but it can be presented to the jury as evidence supporting a negligence claim.",
+      "verdict": "update",
+      "currentValue": "In Georgia, the traffic citation itself is generally <strong>not admissible</strong> in a civil lawsuit. Georgia's appellate courts have consistently held that evidence of a traffic-court charge or its disposition is inadmissible unless the driver pleaded guilty — the jury hears about the driver's conduct, not the officer's ticket.",
+      "sourceName": "Eubanks v. Waldron, 263 Ga. App. 75, 587 S.E.2d 253 (Ga. Ct. App. 2003), quoting Waszczak v. City of Warner Robins, 221 Ga. App. 528, 471 S.E.2d 572 (1996)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2003/a03a0919-0.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Most consequential error on the page and the opposite of the law. Verbatim: 'We have consistently held inadmissible evidence of any traffic court initiation or disposition of a case against the parties to a collision unless the party has entered a guilty plea in traffic court, thereby admitting liability.' The trial court in Eubanks excluded 'any reference to a traffic ticket' and was affirmed. The H3 heading 'Admissibility of Traffic Tickets in Georgia Civil Cases' can stay; the answer under it must flip."
+    },
+    {
+      "surface": "body",
+      "claim": "If the at-fault driver pleaded guilty to or was convicted of the traffic violation, that outcome strengthens the negligence per se argument significantly.",
+      "verdict": "update",
+      "currentValue": "If the at-fault driver pleaded guilty to the traffic violation — or posted a cash bond and simply did not show up in traffic court, which O.C.G.A. § 40-13-58 treats as an admission of guilt — that admission comes in and makes a prima facie showing of negligence that the driver must then rebut. A conviction after a contested traffic trial, by contrast, is not admissible in the civil case, and a plea of nolo contendere can never be used (O.C.G.A. § 17-7-95(c)).",
+      "sourceName": "O.C.G.A. § 40-13-58 and annotations (Howard v. Lay, 259 Ga. App. 391 (2003); Coleman v. Fortner, 260 Ga. App. 373 (2003); Agic v. MARTA, 334 Ga. App. 679 (2015)); O.C.G.A. § 17-7-95(c)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-13/article-3/section-40-13-58/",
+      "retrievedAt": "2026-09-24",
+      "note": "'Or was convicted' is wrong in Georgia: Howard v. Lay annotation — 'while convictions for criminal offenses are inadmissible in a civil personal injury action, a plea of guilty may be shown as an admission against interest.' § 40-13-58 verbatim: failure to appear after posting a cash bond 'shall be construed as an admission of guilt and the cash bond may be forfeited'. Coleman: that admission 'is a prima facie showing of negligence ... conclusive if unrebutted, but the defendant can present evidence that he was not negligent despite the plea'. Eubanks: 'payment of a traffic fine is not, by itself, an admission of guilt' — the distinction is whether the driver posted bond and failed to appear (Agic v. MARTA: paying 'without entering a plea or appearing to contest the citation' acknowledged guilt under § 40-13-58). § 17-7-95(c): 'a plea of nolo contendere shall not be used against the defendant in any other court or proceedings as an admission of guilt or otherwise or for any purpose'; § 24-4-410(2) is the evidence-code twin."
+    },
+    {
+      "surface": "body",
+      "claim": "Your compensation would be reduced by your percentage of fault — say 15% — but you would still recover 85% of your damages.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(a)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "Arithmetic follows from proportional reduction. Illustrative, not a settlement figure."
+    },
+    {
+      "surface": "body",
+      "claim": "Under O.C.G.A. § 9-3-33, you have <strong>2 years</strong> from the date of the accident to file a personal injury lawsuit in Georgia.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-33",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "Reused from facts-1756 / facts-1653; matches the writer-profile jurisdiction table and GA law pack (GA 9-3-33)."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina also follows a <strong>modified comparative fault</strong> system that allows recovery as long as you are less than 51% at fault.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (S.C. 1991)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Reused from facts-1756 / facts-1653. Correct and correctly uncited to any statute; if a citation is added it must be Nelson v. Concrete Supply Co., never § 15-38-15 (profile rule; SC pack authority 'Nelson v. Concrete Supply Co.')."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina courts allow traffic citations to be admitted as evidence in personal injury cases.",
+      "verdict": "update",
+      "currentValue": "South Carolina goes further than most states: by statute, no evidence that a driver was convicted of a traffic violation is admissible in a civil case (S.C. Code § 56-5-6160), and the investigating officer may testify only to what he or she observed, not to an opinion about who caused the crash, unless qualified as an expert.",
+      "sourceName": "S.C. Code § 56-5-6160; Samuel v. Mouzon, 282 S.C. 616 (S.C. Ct. App. 1984); Gulledge v. McLaughlin, 328 S.C. 504 (S.C. Ct. App. 1997)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Second most consequential error. § 56-5-6160 verbatim: 'No evidence of conviction of any person for any violation of this chapter shall be admissible in any court in any civil action.' Samuel v. Mouzon affirmed exclusion of the patrolman's proffered testimony that the driver 'was charged with driving left of center and forfeited bond on that charge'. No primary source located supports the citation itself being admitted; only law-firm blogs make the claim."
+    },
+    {
+      "surface": "body",
+      "claim": "A conviction on the underlying traffic charge — especially for violations like DUI (S.C. Code § 56-5-2930), reckless driving, or failure to yield — provides strong support for a negligence per se claim.",
+      "verdict": "update",
+      "currentValue": "What can come in is a guilty plea: South Carolina courts treat a driver's guilty plea to the traffic charge as an admission, which the driver may explain or rebut. Proving the violation itself — DUI (S.C. Code § 56-5-2930), reckless driving (§ 56-5-2920), failure to yield — with evidence at the civil trial is what supports the negligence per se claim; the traffic-court conviction is not admissible (§ 56-5-6160), and neither a bond forfeiture nor a plea of nolo contendere can be used as an admission.",
+      "sourceName": "Samuel v. Mouzon, 282 S.C. 616 (S.C. Ct. App. 1984), citing Green v. Boney, 233 S.C. 49 (1958) and Kibler v. State, 267 S.C. 250 (1976); S.C. Code §§ 56-5-6160, 56-5-6220, 56-5-2930, 56-5-2920",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/court-of-appeals/1984/282-s-c-616-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Samuel: 'a judgment on a plea of guilty may be received into evidence as an admission, subject to explanation or rebuttal'; 'the fact that a person has forfeited bond cannot be received into evidence either as an admission or for impeachment purposes in a subsequent civil case'; 'a plea of nolo cannot be used as an admission against a defendant in civil litigation'. The court's own addendum chart: Guilty plea — admissible as an admission YES; Nolo — NO; Bond forfeiture — NO. Tension to be aware of: § 56-5-6220 gives a guilty plea 'the same effect as a conviction after trial' and § 56-5-6160 bars conviction evidence, yet Samuel (and its footnote citing Addyman v. Specialties of Greenville, 273 S.C. 342 (1979)) still treats the guilty plea as usable; write 'courts treat a guilty plea as an admission', not 'a conviction is admissible'. § 56-5-2930 is the impairment-standard DUI offence (SC pack rule duac-0.08-cited-to-2930: never attach a 0.08 figure to it; DUAC is § 56-5-2933). § 56-5-2920 defines reckless driving as 'wilful or wanton disregard for the safety of persons or property'."
+    },
+    {
+      "surface": "body",
+      "claim": "However, South Carolina courts have also held that the absence of a citation does not mean the absence of fault.",
+      "verdict": "update",
+      "currentValue": "And because the officer's charging decision and the accident report are not evidence of negligence at trial (S.C. Code § 56-5-1290), the absence of a citation does not mean the absence of fault — the jury decides that from the evidence.",
+      "sourceName": "S.C. Code § 56-5-1290; Gulledge v. McLaughlin (S.C. Ct. App. 1997)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-24",
+      "note": "The proposition is sound but no South Carolina opinion 'holding' it in those terms was located, and the SC pack bars unsourced 'courts have held' attributions. § 56-5-1290 verbatim: 'None of the reports required by Sections 56-5-1260 to 56-5-1280 may be evidence of the negligence or due care of either party at the trial of any action at law to recover damages. However, law enforcement officers may refer to these reports when testifying in order to refresh their recollection of events.' Rest the sentence on the statute instead of on an unnamed holding."
+    },
+    {
+      "surface": "body",
+      "claim": "If both drivers received citations, the jury determines each party's percentage of fault based on the severity of the violations and their causal connection to the accident.",
+      "verdict": "update",
+      "currentValue": "If both drivers were cited, the jury still decides each party's percentage of fault from the evidence of what each driver actually did and how much it contributed to the crash — not from the citations, which it will not see.",
+      "sourceName": "Nelson v. Concrete Supply Co. (S.C. 1991); S.C. Code § 56-5-6160",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Nelson: 'The amount of the plaintiff's recovery shall be reduced in proportion to the amount of his or her negligence.' The sentence as written implies the jury weighs the two citations; under § 56-5-6160 the dispositions are not before it. Minor reword."
+    },
+    {
+      "surface": "body",
+      "claim": "Under S.C. Code § 15-3-530, you have <strong>3 years</strong> from the date of the accident to file a personal injury lawsuit in South Carolina.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-3-530(5)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Read directly on scstatehouse.gov 2026-09-24: 'Within three years: ... (5) an action for assault, battery, or any injury to the person or rights of another'. Matches the writer-profile table."
+    },
+    {
+      "surface": "body",
+      "claim": "<td>DUI / DWI</td><td>Extremely high — may also support punitive damages</td><td>Yes</td>",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-5.1(b), (f); S.C. Code § 15-32-520(D); Samuel v. Mouzon (S.C. Ct. App. 1984)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Reused from facts-1756 / facts-1653: Georgia lifts the $250,000 cap where the defendant was impaired to the degree that judgment was substantially impaired (§ 51-12-5.1(f)); South Carolina requires clear and convincing evidence of wilful, wanton or reckless conduct (§ 15-32-520(D)) and lifts its cap for substantial impairment (§ 15-32-530(C)(3)). Samuel: 'Causative violation of an applicable statute by a motorist is evidence of recklessness, wilfulness and wantonness' supporting punitive damages. 'May' is the right hedge. Georgia DUI is § 40-6-391 (facts-1756); the table does not cite it and need not."
+    },
+    {
+      "surface": "body",
+      "claim": "<td>Texting while driving</td><td>Very high — shows distracted driving</td><td>Yes</td>",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 40-6-241(c)(2) (Hands-Free Georgia Act); S.C. Code § 56-5-3890(B)(2) as rewritten by 2025 Act No. 40 (South Carolina Hands-Free and Distracted Driving Act, eff. 2025-09-01)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-11/section-40-6-241/",
+      "retrievedAt": "2026-09-24",
+      "note": "Both statutes prohibit writing, sending or reading text-based communication while driving, and — unlike the seat-belt and child-restraint sections — neither contains a 'not negligence per se / not admissible in a civil action' clause, so the row's 'Yes' is consistent with the statutes. South Carolina's section was rewritten effective 2025-09-01 to a full hands-free rule (holding or supporting a device is now itself a violation); warnings only for the first 180 days. Optional: the refresher may mention that both states are now hands-free states."
+    },
+    {
+      "surface": "body",
+      "claim": "<td>Expired registration / inspection</td><td>Minimal — administrative issue</td><td>No</td>",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Central Anesthesia Associates v. Worthy (Ga. 1985), discussing Fielding v. Driggers, 126 Ga. App. 365",
+      "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/1985/41912-1.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Consistent with the licensing-statute line of cases (a paperwork violation with no causal connection is 'irrelevant and inadmissible'). Row label only; neither state runs a periodic safety inspection, so '/ inspection' is dead weight the refresher may trim, but that is a style call, not a factual error."
+    },
+    {
+      "surface": "body",
+      "claim": "Only reaching the state's threshold (50% in Georgia, 51% in South Carolina) bars recovery entirely.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(g); Nelson v. Concrete Supply Co. (S.C. 1991)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "Georgia: barred 'if the plaintiff is 50 percent or more responsible'. South Carolina: recovers if negligence is 'not greater than' the defendant's, so 51 percent is the bar. Matches the profile table; the 20%/80% example is arithmetic."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Police report</strong> — the accident report documents which citations were issued and typically includes the officer's narrative of how the accident occurred",
+      "verdict": "update",
+      "currentValue": "<strong>Police report</strong> — the crash report (Georgia's Uniform Motor Vehicle Accident Report; South Carolina's TR-310) records which citations were issued, the officer's narrative and, on the TR-310, the officer's judgment of the primary contributing factor. Adjusters lean on it heavily, but it is not itself proof of fault: in South Carolina the report may not be used as evidence of either party's negligence at trial (S.C. Code § 56-5-1290), and in both states the officer testifies to observations, not to who was at fault.",
+      "sourceName": "S.C. Code § 56-5-1290; SCDPS TR-310 Report Manual (rev. May 2019); GDOT Georgia Uniform Motor Vehicle Accident Report instructions",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-24",
+      "note": "The description of what the report contains is accurate. The FR-10 the officer hands drivers at a South Carolina scene is the insurance-verification form, not the collision report; the TR-310 is the officer's report (SCDPS manual, HTTP 200). Georgia's form is the GDOT Uniform Motor Vehicle Accident Report (HTTP 200). The post names no form and need not; the evidentiary limit is the part worth adding."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Trial evidence</strong> — the citation, the officer's testimony, and any conviction record can all be presented to a jury",
+      "verdict": "update",
+      "currentValue": "<strong>Trial evidence</strong> — the officer's testimony about what he or she observed at the scene, and the driver's guilty plea if there was one, can be presented to a jury; the citation itself and any traffic-court conviction generally cannot (Georgia case law; S.C. Code § 56-5-6160)",
+      "sourceName": "Eubanks v. Waldron (Ga. Ct. App. 2003); O.C.G.A. § 40-13-58 annotations (Howard v. Lay); S.C. Code § 56-5-6160; Gulledge v. McLaughlin (S.C. Ct. App. 1997)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2003/a03a0919-0.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Wrong in both states as written. Georgia: 'convictions for criminal offenses are inadmissible in a civil personal injury action'; South Carolina: conviction evidence barred by statute; officer opinion on cause excluded in South Carolina (Kelly/Gulledge)."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Guilty pleas</strong> — if the cited driver pleaded guilty to the traffic violation, that admission is powerful evidence of fault in a civil case",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 40-13-58 annotations (Howard v. Lay, 259 Ga. App. 391 (2003)); Samuel v. Mouzon (S.C. Ct. App. 1984), citing Green v. Boney, 233 S.C. 49 (1958)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-13/article-3/section-40-13-58/",
+      "retrievedAt": "2026-09-24",
+      "note": "Correct in both states: Georgia — 'a plea of guilty may be shown as an admission against interest' and makes a prima facie showing of negligence; South Carolina — 'a judgment on a plea of guilty may be received into evidence as an admission, subject to explanation or rebuttal'. 'Powerful' is fair given it is the one traffic-court fact that reaches the jury."
+    },
+    {
+      "surface": "body",
+      "claim": "This is why the decision to plead guilty to a traffic ticket after an accident should never be taken lightly. What seems like a simple way to pay a fine and move on can significantly impact your personal injury case — whether you are the one pursuing a claim or defending against one.",
+      "verdict": "update",
+      "currentValue": "This is why the decision to plead guilty to a traffic ticket after an accident should never be taken lightly. In Georgia, even paying the ticket by mail can hurt: a driver who posts a cash bond and does not appear in traffic court is treated as having admitted guilt (O.C.G.A. § 40-13-58). South Carolina treats a forfeited bond differently — it cannot be used against the driver in the civil case — but an actual guilty plea can. In both states a plea of nolo contendere, where the court allows it, cannot be used as an admission.",
+      "sourceName": "O.C.G.A. § 40-13-58 and annotations (Coleman v. Fortner; Agic v. MARTA, 334 Ga. App. 679 (2015)); O.C.G.A. § 17-7-95(c); Samuel v. Mouzon (S.C. Ct. App. 1984)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-13/article-3/section-40-13-58/",
+      "retrievedAt": "2026-09-24",
+      "note": "The warning is right for Georgia and the mechanism is worth naming: Agic v. MARTA (annotation) — the bus driver 'paid the citation without entering a plea or appearing to contest the citation, acknowledging guilt under O.C.G.A. § 40-13-58 and establishing negligence per se'. It is wrong for South Carolina bond forfeitures (Samuel: 'cannot be received into evidence either as an admission or for impeachment purposes'). The nolo option is the practical advice both states' law supports: Georgia § 17-7-95(c) (with the judge's consent, § 17-7-95(a)); South Carolina Kibler v. State via Samuel. Note for the refresher: nolo pleas to Georgia DUI carry licence consequences under § 40-5-63; keep the sentence generic."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>A guilty plea is an admission</strong> — pleading guilty to the traffic violation can be used as evidence of fault in your civil case",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 40-13-58 annotations (Howard v. Lay); Samuel v. Mouzon (S.C. Ct. App. 1984)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/court-of-appeals/1984/282-s-c-616-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Verified for both states; see the Guilty pleas bullet above."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>A dismissal removes evidence</strong> — if the ticket is dismissed, the other side loses a key piece of evidence",
+      "verdict": "update",
+      "currentValue": "<strong>A dismissal closes the door on a plea</strong> — if the ticket is dismissed, there is no guilty plea for the other side to use, and the dispute goes back to what the physical evidence and witnesses show",
+      "sourceName": "Eubanks v. Waldron (Ga. Ct. App. 2003); S.C. Code § 56-5-6160",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2003/a03a0919-0.html",
+      "retrievedAt": "2026-09-24",
+      "note": "The ticket is not 'a key piece of evidence' at trial in either state; what a dismissal actually prevents is the admission. Reword so the bullet does not contradict the corrected admissibility sections."
+    },
+    {
+      "surface": "body",
+      "claim": "The absence of a traffic ticket does not mean no one was at fault — it simply means the officer chose not to cite anyone at the scene.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 56-5-1290; Gulledge v. McLaughlin (S.C. Ct. App. 1997)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/court-of-appeals/1997/2727-3.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Consistent with both states' rule that fault is decided by the fact-finder on the evidence, not by the officer's charging decision. The evidence list that follows (witnesses, video, physical evidence, reconstruction, phone records, event-data recorders) asserts no statute or figure."
+    },
+    {
+      "surface": "body",
+      "claim": "We have recovered <strong>over $300 million</strong> for injury victims and work on a <strong>contingency fee basis</strong> — you pay nothing unless we win your case.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "rodenlaw.com homepage ('$300M+ Recovered for Clients'; JSON-LD 'over $300 million recovered for injured clients'; '100% contingency. You pay nothing unless we win.')",
+      "sourceUrl": "https://rodenlaw.com/",
+      "retrievedAt": "2026-09-24",
+      "note": "Confirmed on the homepage copy saved by run-1653 on 2026-09-24 (this run's curl received a 5 KB challenge page). The tel: href +18447378587 is 844-RESULTS and matches the profile; not one of the 27 transposed numbers."
+    },
+    {
+      "surface": "excerpt",
+      "claim": "A traffic ticket is strong evidence of fault but does not settle it. How citations are used, and when negligence per se applies.",
+      "verdict": "update",
+      "currentValue": "A traffic ticket carries weight with adjusters but rarely reaches a jury and never settles fault. How citations and guilty pleas are used in Georgia and South Carolina, and when negligence per se applies.",
+      "sourceName": "Eubanks v. Waldron (Ga. Ct. App. 2003); S.C. Code § 56-5-6160",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2003/a03a0919-0.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Published as the Article description by roden_schema_article(). 'Strong evidence' mirrors the body's H2 answer; if the body's direct answer is reworded (recommended), the excerpt should move with it so the description does not promise what the article now denies. Optional if the direct answer keeps 'strong evidence' with the adjuster qualifier."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Traffic tickets are strong evidence of fault in car accident claims but are not conclusive.",
+      "verdict": "update",
+      "currentValue": "Traffic tickets carry weight with insurance adjusters but are not conclusive — and the ticket itself is generally not admissible at trial in Georgia or South Carolina.",
+      "sourceName": "Eubanks v. Waldron (Ga. Ct. App. 2003); S.C. Code § 56-5-6160",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-24",
+      "note": "The takeaways box renders above the article; align it with the corrected admissibility sections."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "The doctrine of negligence per se may apply when a traffic violation directly causes an accident.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Central Anesthesia Associates v. Worthy (Ga. 1985); Whitlaw v. Kroger Co. (S.C. 1991)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23498-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "'May apply' with the causation condition is an accurate summary."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Both Georgia (O.C.G.A. § 51-12-33) and South Carolina use modified comparative fault, allowing recovery even with shared fault.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33; Nelson v. Concrete Supply Co. (S.C. 1991)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "Verified; optional '(Nelson v. Concrete Supply Co.)' after South Carolina, never § 15-38-15."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Pleading guilty to a traffic ticket can be used against you in a civil case.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 40-13-58 annotations (Howard v. Lay); Samuel v. Mouzon (S.C. Ct. App. 1984)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-13/article-3/section-40-13-58/",
+      "retrievedAt": "2026-09-24",
+      "note": "True in both states."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Georgia has a 2-year statute of limitations (O.C.G.A. § 9-3-33); South Carolina has 3 years (S.C. Code § 15-3-530).",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-33; S.C. Code § 15-3-530(5)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Verified; matches the profile table. Section symbols render correctly on this post (no 'SS' defect)."
+    },
+    {
+      "surface": "faq:0",
+      "claim": "No. A traffic ticket is strong evidence of fault but is not conclusive. Fault in a civil injury claim is determined by the legal system based on all available evidence, not solely by a police citation. The officer may not have witnessed the accident and could have incomplete information.",
+      "verdict": "update",
+      "currentValue": "No. A traffic ticket carries weight with insurance adjusters but is not conclusive, and in Georgia and South Carolina the ticket itself is generally not admissible at trial. Fault in a civil injury claim is determined by the legal system based on all available evidence, not by the police citation. The officer may not have witnessed the accident and could have incomplete information.",
+      "sourceName": "Eubanks v. Waldron (Ga. Ct. App. 2003); S.C. Code § 56-5-6160; Gulledge v. McLaughlin (S.C. Ct. App. 1997)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2003/a03a0919-0.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Renders into FAQPage structured data. The 'No' and the reasoning stand; only the 'strong evidence' phrase needs the same qualifier as the body's direct answer."
+    },
+    {
+      "surface": "faq:1",
+      "claim": "Yes. Under comparative fault rules in Georgia (O.C.G.A. § 51-12-33) and South Carolina, you can recover damages even if you share some fault. If you were 20% at fault due to a traffic violation, you can still recover 80% of your damages. Only reaching the state threshold (50% in GA, 51% in SC) bars recovery.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(a), (g); Nelson v. Concrete Supply Co. (S.C. 1991)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Verified; matches the profile table. Optional Nelson attribution; never § 15-38-15."
+    },
+    {
+      "surface": "faq:2",
+      "claim": "Negligence per se is a legal doctrine where violating a safety statute — such as a traffic law — is automatically considered negligent. For it to apply, the violation must have been the proximate cause of the accident. A citation for running a red light that caused a collision supports negligence per se; a broken taillight citation in a head-on collision does not.",
+      "verdict": "update",
+      "currentValue": "Negligence per se is a legal doctrine under which violating a safety statute — such as a traffic law — establishes that the driver breached a duty of care, so the injured person does not have to prove separately that the driver acted unreasonably. It applies only when the injured person is within the group the statute protects and the harm is the kind it was meant to prevent, and the violation must still be shown to be the proximate cause of the accident. Running a red light that caused a collision supports negligence per se; a broken taillight in a head-on collision does not.",
+      "sourceName": "Whitlaw v. Kroger Co., 306 S.C. 51 (S.C. 1991); Central Anesthesia Associates v. Worthy, 254 Ga. 728 (Ga. 1985)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23498-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Renders into FAQPage structured data. 'Automatically considered negligent' is the overstatement corrected in the body; the example sentence is fine. Also drop 'A citation for' / 'citation' from the examples so the FAQ does not imply the citation is the proof."
+    },
+    {
+      "surface": "faq:3",
+      "claim": "Often yes. Pleading guilty to a traffic violation can be used as evidence of fault in your civil injury case. A dismissal removes that evidence. Consult your personal injury attorney before making any decisions in traffic court, as the two cases are strategically linked.",
+      "verdict": "update",
+      "currentValue": "Often yes. Pleading guilty to a traffic violation can be used as an admission of fault in your civil injury case, and in Georgia simply paying the ticket and skipping court is treated the same way (O.C.G.A. § 40-13-58). A dismissal, or a plea of nolo contendere where the court allows one, keeps that admission out. Consult your personal injury attorney before making any decisions in traffic court, as the two cases are strategically linked.",
+      "sourceName": "O.C.G.A. § 40-13-58 and annotations; O.C.G.A. § 17-7-95(c); Samuel v. Mouzon (S.C. Ct. App. 1984)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-13/article-3/section-40-13-58/",
+      "retrievedAt": "2026-09-24",
+      "note": "Renders into FAQPage structured data. The existing answer is accurate as far as it goes; the Georgia pay-and-skip trap is the fact a reader most needs, and 'removes that evidence' should be tied to the admission rather than to the ticket. Optional edit if the refresher wants the FAQ minimal."
+    },
+    {
+      "surface": "faq:4",
+      "claim": "The absence of a traffic citation does not mean no one was at fault. Your claim can rely on other evidence including witness statements, surveillance footage, accident reconstruction analysis, cell phone records, and vehicle black box data to establish the other driver's negligence.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 56-5-1290; Gulledge v. McLaughlin (S.C. Ct. App. 1997)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-24",
+      "note": "No statute, statistic or dollar figure asserted; consistent with both states' evidence rules."
+    },
+    {
+      "surface": "faq:5",
+      "claim": "In Georgia, you have 2 years from the date of the accident to file a lawsuit (O.C.G.A. § 9-3-33). In South Carolina, you have 3 years (S.C. Code § 15-3-530). Do not delay filing because of uncertainty about traffic tickets — consult an attorney promptly.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-33; S.C. Code § 15-3-530(5)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "Verified; matches the profile table. Renders into FAQPage structured data."
+    }
+  ],
+  "recommendedEdits": [
+    "Body, 'Admissibility of Traffic Tickets in Georgia Civil Cases': flip the answer — the citation is generally NOT admissible in a Georgia civil suit; Georgia courts have 'consistently held inadmissible evidence of any traffic court initiation or disposition of a case against the parties to a collision unless the party has entered a guilty plea' (Eubanks v. Waldron, 263 Ga. App. 75 (2003)). Replace 'pleaded guilty to or was convicted of' with the guilty plea / cash-bond-forfeiture admission under O.C.G.A. § 40-13-58 (prima facie negligence, rebuttable — Coleman v. Fortner, 260 Ga. App. 373 (2003)); say a conviction after a contested trial is not admissible and a nolo plea can never be used (O.C.G.A. § 17-7-95(c)).",
+    "Body, 'Traffic Citations as Evidence in South Carolina': flip the answer — S.C. Code § 56-5-6160 bars evidence of a traffic conviction in any civil action; the guilty plea is what courts admit, as an admission subject to explanation or rebuttal (Samuel v. Mouzon, 282 S.C. 616 (Ct. App. 1984)); a bond forfeiture and a nolo plea cannot be used; the officer may testify to observations, not to an opinion on cause (State v. Kelly, quoted in Gulledge v. McLaughlin, 328 S.C. 504 (Ct. App. 1997)). Keep § 56-5-2930 for DUI (no 0.08 figure) and add § 56-5-2920 for reckless driving. Rest 'absence of a citation does not mean absence of fault' on § 56-5-1290 instead of an unnamed holding.",
+    "Body, direct answer under the H1 H2, the 'carries significant weight ... at trial. Insurance adjusters and juries' sentence, the 'dismissed ... still be referenced' bullet, the 'Trial evidence' bullet and the 'A dismissal removes evidence' bullet: remove every statement that the ticket, the citation or the conviction record is presented to a jury; keep the adjuster/settlement weight; put the trial weight on the guilty plea and the officer's observations. Mirror the same change in the key takeaways first sentence, faq:0 and (optionally) the excerpt.",
+    "Body, 'Traffic Violations and Negligence Per Se' and faq:2: replace 'automatically considered negligent' with 'establishes duty and breach as a matter of law' (Central Anesthesia Associates v. Worthy, 254 Ga. 728 (1985): 'negligence per se supplies only the duty and breach of duty elements'; Whitlaw v. Kroger Co., 306 S.C. 51 (1991): 'not conclusive of liability'); add the protected-class / type-of-harm threshold in plain words; note the Georgia showing is prima facie and rebuttable.",
+    "Body, 'How Traffic Tickets Are Used as Evidence', closing paragraph, and faq:3: state the two-state difference on paying the ticket — Georgia treats a cash bond posted and not appeared on as an admission of guilt (O.C.G.A. § 40-13-58; Agic v. MARTA, 334 Ga. App. 679 (2015)), while South Carolina will not admit a bond forfeiture (Samuel v. Mouzon); in both states a nolo contendere plea, where the court allows it, is not an admission.",
+    "Body, 'Police report' bullet: add that the report is not itself proof of fault — in South Carolina the required reports 'may not be evidence of the negligence or due care of either party' at trial (S.C. Code § 56-5-1290); optionally name the forms (Georgia Uniform Motor Vehicle Accident Report; South Carolina TR-310, with the FR-10 being the insurance-verification slip handed out at the scene).",
+    "Body, first paragraph: rename 'Cornell Law Institute' to 'the Legal Information Institute at Cornell Law School'; keep the link.",
+    "Body, South Carolina intro and 'What Happens When No Ticket Is Issued?': the anchors 'Charleston car accident lawyers', 'Columbia car accident lawyers', 'Savannah' and 'Myrtle Beach' all point at /practice-areas/car-accident-lawyers/ (the city URLs 301 to the pillar). Anchors promising a city page and delivering the pillar were the subject of the 2026-09 audit; reword the anchors to name the pillar (or point at the offices/contact page) — not a fact edit.",
+    "Body, comparison table 'Texting while driving' row: optional note that both states are now hands-free states (O.C.G.A. § 40-6-241; S.C. Code § 56-5-3890 as rewritten by 2025 Act No. 40, effective 2025-09-01). No change required to the row's 'Yes'.",
+    "Reviewer/byline: the post states South Carolina law, so the reviewing attorney must be Graeham C. Gillin, not Eric Roden."
+  ],
+  "statuteCitations": [
+    {
+      "section": "O.C.G.A. § 9-3-33",
+      "name": "Injuries to the person — two-year limitation",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+    },
+    {
+      "section": "O.C.G.A. § 51-12-33",
+      "name": "Apportionment of damages; plaintiff barred at 50 percent or more (g)",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+    },
+    {
+      "section": "O.C.G.A. § 51-1-6",
+      "name": "Recovery of damages upon breach of legal duty (statutory basis for negligence per se; annotations require the plaintiff to be within the class the statute protects and proximate cause)",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-6/"
+    },
+    {
+      "section": "O.C.G.A. § 40-13-58",
+      "name": "Failure to appear after posting a cash bond on a traffic citation 'shall be construed as an admission of guilt'; annotations: Coleman v. Fortner (prima facie negligence, rebuttable), Howard v. Lay (convictions inadmissible, guilty plea admissible as admission; payment of fine alone not an admission), Agic v. MARTA (paying without appearing = forfeiture), Burnette v. Brown",
+      "url": "https://law.justia.com/codes/georgia/title-40/chapter-13/article-3/section-40-13-58/"
+    },
+    {
+      "section": "O.C.G.A. § 17-7-95",
+      "name": "Plea of nolo contendere — subsection (c): 'shall not be used against the defendant in any other court or proceedings as an admission of guilt or otherwise or for any purpose'",
+      "url": "https://law.justia.com/codes/georgia/title-17/chapter-7/article-5/section-17-7-95/"
+    },
+    {
+      "section": "O.C.G.A. § 24-4-410",
+      "name": "Inadmissibility of pleas — a plea of nolo contendere (2) and a withdrawn guilty plea (1) are inadmissible against the defendant in any judicial or administrative proceeding",
+      "url": "https://law.justia.com/codes/georgia/title-24/chapter-4/section-24-4-410/"
+    },
+    {
+      "section": "O.C.G.A. § 40-6-241",
+      "name": "Distracted driving; Hands-Free Georgia Act — (c)(2) no writing, sending or reading text-based communication while driving",
+      "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-11/section-40-6-241/"
+    },
+    {
+      "section": "O.C.G.A. § 40-6-391",
+      "name": "Driving under the influence (reused from facts-1756; not cited in this post's body)",
+      "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-15/section-40-6-391/"
+    },
+    {
+      "section": "O.C.G.A. § 51-12-5.1",
+      "name": "Punitive damages — clear-and-convincing standard (b); $250,000 cap (g); no cap where judgment substantially impaired by alcohol or drugs (f) (reused from facts-1756)",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/"
+    },
+    {
+      "section": "S.C. Code § 15-3-530",
+      "name": "Three-year limitation, incl. (5) any injury to the person",
+      "url": "https://www.scstatehouse.gov/code/t15c003.php"
+    },
+    {
+      "section": "S.C. Code § 56-5-6160",
+      "name": "Evidence of conviction inadmissible in civil action — 'No evidence of conviction of any person for any violation of this chapter shall be admissible in any court in any civil action.'",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "section": "S.C. Code § 56-5-6220",
+      "name": "Entry of guilty plea, forfeiture of bail, or nolo contendere plea 'shall have the same effect as a conviction after trial' under the traffic laws (ten-day window before a posted bail forfeits)",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "section": "S.C. Code § 56-5-1290",
+      "name": "Evidentiary use of accident reports — the required reports 'may not be evidence of the negligence or due care of either party'; officers may use them to refresh recollection",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "section": "S.C. Code § 56-5-1340",
+      "name": "Accident reports made by persons involved are without prejudice and confidential; 'No such report shall be used as evidence in any trial, civil or criminal, arising out of an accident'",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "section": "S.C. Code § 56-5-2930",
+      "name": "Driving under the influence — impairment standard ('materially and appreciably impaired'); contains no 0.08 threshold (that is § 56-5-2933, DUAC)",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "section": "S.C. Code § 56-5-2920",
+      "name": "Reckless driving — 'wilful or wanton disregard for the safety of persons or property'",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "section": "S.C. Code § 56-5-3890",
+      "name": "Unlawful use of a mobile electronic device while driving — rewritten by 2025 Act No. 40 (South Carolina Hands-Free and Distracted Driving Act), effective 2025-09-01; no civil-inadmissibility clause",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "section": "S.C. Code § 15-32-520",
+      "name": "Punitive damages — clear and convincing evidence of wilful, wanton or reckless conduct (D) (reused from facts-1756)",
+      "url": "https://www.scstatehouse.gov/code/t15c032.php"
+    },
+    {
+      "section": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (S.C. 1991)",
+      "name": "South Carolina modified comparative negligence; plaintiff recovers if negligence is 'not greater than' the defendant's (51 percent bar). Never cite § 15-38-15 for the plaintiff's bar.",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html"
+    }
+  ],
+  "authoritativeLinks": [
+    {
+      "name": "Eubanks v. Waldron, 263 Ga. App. 75, 587 S.E.2d 253 (Ga. Ct. App. 2003) — traffic-court initiation or disposition inadmissible absent a guilty plea; payment of a fine is not by itself an admission",
+      "url": "https://law.justia.com/cases/georgia/court-of-appeals/2003/a03a0919-0.html"
+    },
+    {
+      "name": "Coleman v. Fortner, 260 Ga. App. 373, 579 S.E.2d 792 (Ga. Ct. App. 2003) — § 40-13-58 bond forfeiture is an admission establishing negligence per se, a prima facie showing the defendant may rebut",
+      "url": "https://law.justia.com/cases/georgia/court-of-appeals/2003/a02a2119.html"
+    },
+    {
+      "name": "Central Anesthesia Associates, P.C. v. Worthy, 254 Ga. 728, 333 S.E.2d 829 (Ga. 1985) — 'negligence per se supplies only the duty and breach of duty elements'; proximate cause must still be proved",
+      "url": "https://law.justia.com/cases/georgia/supreme-court/1985/41912-1.html"
+    },
+    {
+      "name": "Samuel v. Mouzon, 282 S.C. 616, 320 S.E.2d 482 (S.C. Ct. App. 1984) — guilty plea admissible as an admission subject to explanation; bond forfeiture and nolo plea not admissible; §§ 56-5-6160 and 56-5-6220 discussed; addendum chart",
+      "url": "https://law.justia.com/cases/south-carolina/court-of-appeals/1984/282-s-c-616-2.html"
+    },
+    {
+      "name": "Whitlaw v. Kroger Co., 306 S.C. 51, 410 S.E.2d 251 (S.C. 1991) — two-part test for a statutory duty (kind of harm; class of persons); violation proves breach but is 'not conclusive of liability'",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23498-2.html"
+    },
+    {
+      "name": "Gulledge v. McLaughlin, 328 S.C. 504, 492 S.E.2d 816 (S.C. Ct. App. 1997) — 'a long line of South Carolina decisions has excluded the opinions of investigating police officers in automobile accident cases'; quoting State v. Kelly, 285 S.C. 373 (1985)",
+      "url": "https://law.justia.com/cases/south-carolina/court-of-appeals/1997/2727-3.html"
+    },
+    {
+      "name": "Nelson v. Concrete Supply Co. (S.C. 1991) — Justia copy",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html"
+    },
+    {
+      "name": "SCDPS — South Carolina Traffic Collision Report Form (TR-310) Report Manual, revised May 2019 (officer's report; FR-10 is the insurance-verification form issued at the scene)",
+      "url": "https://scdps.sc.gov/sites/scdps/files/Documents/forms/TR-310%20Report%20Manual%20Revised%20May%202019.pdf"
+    },
+    {
+      "name": "GDOT — Georgia Uniform Motor Vehicle Accident Report: Instructions",
+      "url": "https://www.dot.ga.gov/DriveSmart/CrashReporting/GeorgiaUniformVehicleAccidentReport.pdf"
+    },
+    {
+      "name": "Legal Information Institute, Cornell Law School — Wex: negligence per se (the post's existing outbound link; resolves)",
+      "url": "https://www.law.cornell.edu/wex/negligence_per_se"
+    },
+    {
+      "name": "South Carolina Code, Title 56 Chapter 5 (Uniform Act Regulating Traffic on Highways) — scstatehouse.gov",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    }
+  ]
+}

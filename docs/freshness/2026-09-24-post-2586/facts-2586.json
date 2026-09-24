@@ -1,0 +1,431 @@
+{
+  "postId": 2586,
+  "slug": "are-red-light-runners-always-liable-if-they-crash",
+  "liveUrl": "https://rodenlaw.com/blog/are-red-light-runners-always-liable-if-they-crash/",
+  "jurisdiction": "both",
+  "verifiedAt": "2026-09-24",
+  "reviewerByRule": "Graeham C. Gillin (two-state post that states South Carolina law; never Eric Roden). Do not add an attorney attribution quote on this refresh.",
+  "researchNotes": "law.justia.com returned 403 to WebFetch on 2026-09-24 and was read through the firecrawl CLI, as the 1756 and 1653 packs did; every year-less Georgia URL below resolved and rendered the 2025 Code of Georgia heading, including the Chapter 14 Article 3 camera sections. South Carolina statutes were read directly on www.scstatehouse.gov (t56c005.php, t56c007.php, t56c001.php). Comparative fault, the punitive caps and exceptions, the 2026 indexed South Carolina floor, and the limitation periods are reused from facts-1756 and facts-1653 (verified 2026-09-24) and match the writer-profile jurisdiction table. The citation-admissibility rule (Howard v. Lay; S.C. Code § 56-5-6160; Samuel v. Mouzon) is reused from facts-1679 (verified 2026-09-23) and § 56-5-6160 was re-read verbatim today. IIHS was read live (page updated July 2026, 2024 data). GDOT's 2024 RLRPES annual report was downloaded and read with pdftotext. 511sc.org was read live. Whitlaw v. Kroger and Perkins v. Kranz were read in full. The live page was fetched with a browser UA and still carries every claim quoted below plus the FAQPage block; all twelve internal links return 200 when fetched sequentially with a browser UA (a bare curl UA gets 403 from the host). data/statistics.json holds no red-light or intersection fact; nothing there applies. The six dollar figures in the post are two hypothetical verdict examples ($150,000 -> $120,000 and $150,000 -> $105,000, arithmetic verified) and the two statutory caps ($250,000 and $500,000, verified); none is a settlement or verdict figure, so none is dropped.",
+  "verifiedClaims": [
+    {
+      "surface": "body",
+      "claim": "According to the <a href=\"https://www.iihs.org/topics/red-light-running\" target=\"_blank\" rel=\"noopener\">Insurance Institute for Highway Safety (IIHS)</a>, red light running causes hundreds of deaths and tens of thousands of injuries every year in the United States.",
+      "verdict": "update",
+      "currentValue": "In 2024, 1,119 people were killed in crashes that involved red light running, and more than 141,000 people were injured. Half of those killed were pedestrians, bicyclists and people in other vehicles who were hit by the red light runners. The href https://www.iihs.org/topics/red-light-running now 301-redirects to https://www.iihs.org/research-areas/red-light-running; update the href to the canonical.",
+      "sourceName": "IIHS, Red light running (page updated July 2026): 'In 2024, 1,119 people were killed in crashes that involved red light running.' 'In 2024, more than 141,000 people were injured in red light running crashes.'",
+      "sourceUrl": "https://www.iihs.org/research-areas/red-light-running",
+      "retrievedAt": "2026-09-24",
+      "note": "'Hundreds of deaths' understates a four-figure toll and 'tens of thousands of injuries' understates 141,000. Replace with the 2024 figures and the year; keep the IIHS attribution and link."
+    },
+    {
+      "surface": "body",
+      "claim": "To recover compensation, you must prove three things:",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Whitlaw v. Kroger Co., 306 S.C. 51, 410 S.E.2d 251 (S.C. 1991) (statute supplies duty and breach; plaintiff 'must then show the causal connection between defendant's negligence and plaintiff's injury before plaintiff is entitled to damages'); O.C.G.A. § 51-1-6",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23498-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "The post folds duty and breach into 'the other driver was negligent' and lists causation and damages separately; that matches how both states treat a statutory violation. No change."
+    },
+    {
+      "surface": "body",
+      "claim": "Under <strong>O.C.G.A. § 40-6-20</strong>, drivers facing a steady red signal must stop at the marked stop line or, if none, before entering the crosswalk or intersection.",
+      "verdict": "update",
+      "currentValue": "The steady-red rule is in O.C.G.A. § 40-6-21(a)(3)(A): traffic 'facing a steady CIRCULAR RED signal alone shall stop at a clearly marked stop line or, if there is no stop line, before entering the crosswalk on the near side of the intersection or, if there is no crosswalk, before entering the intersection, and shall remain standing until an indication to proceed is shown.' § 40-6-20(a) is the general duty: 'The driver of any vehicle shall obey the instructions of an official traffic-control device,' and a violation 'shall be a misdemeanor.' A steady yellow warns 'that a red indication will be exhibited immediately thereafter when vehicular traffic shall not enter the intersection' (§ 40-6-21(a)(2)(A)); a right turn on red is allowed after a full stop unless a sign prohibits it (§ 40-6-21(a)(3)(B)-(C)).",
+      "sourceName": "O.C.G.A. § 40-6-21(a)(2)(A), (a)(3)(A)-(C) and § 40-6-20(a) (2025 Code of Georgia, via Justia)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-2/section-40-6-21/",
+      "retrievedAt": "2026-09-24",
+      "note": "Cite both: 'Under O.C.G.A. § 40-6-21, drivers facing a steady red signal must stop ... and O.C.G.A. § 40-6-20 makes disobeying a traffic signal a misdemeanor.' The description of where to stop is otherwise accurate."
+    },
+    {
+      "surface": "body",
+      "claim": "Running a red light is a traffic offense that carries fines and points on your license.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 40-6-20(a) (misdemeanor); O.C.G.A. § 40-5-57(c)(1)(A)(ix): 'Disobedience of any traffic-control device or traffic officer — 3 points'; S.C. Code § 56-1-720: 'Disobedience of any official traffic control device — 4'",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-5/article-3/section-40-5-57/",
+      "retrievedAt": "2026-09-24",
+      "note": "Both states assess points for an officer-issued ticket (Georgia 3, South Carolina 4). A Georgia red-light-camera civil penalty carries no points and is not a conviction (§ 40-6-20(f)(4)). Optional to add the point counts; nothing to correct."
+    },
+    {
+      "surface": "body",
+      "claim": "In a civil case, the traffic violation serves as evidence of <strong>negligence per se</strong> — meaning the mere fact that the driver violated the statute can establish the duty and breach elements of a negligence claim, shifting the focus to causation and damages.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-1-6 ('When the law requires a person ... to refrain from doing an act which may injure another ... the injured party may recover for the breach of such legal duty if he suffers damage thereby'); Perkins v. Kranz, 316 Ga. App. 171 (2012), quoting Yasinsac v. Colonial Oil Properties, 246 Ga. App. 484, 486 (2000): 'negligence per se is not liability per se'",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-6/",
+      "retrievedAt": "2026-09-24",
+      "note": "Accurate and correctly hedged ('can establish'). If a citation is wanted, '(O.C.G.A. § 51-1-6)' after 'negligence per se'. Perkins v. Kranz: https://www.courtlistener.com/opinion/7927638/perkins-v-kranz/"
+    },
+    {
+      "surface": "body",
+      "claim": "Under <strong>S.C. Code § 56-5-970</strong>, drivers facing a steady red signal must stop before entering the crosswalk or intersection.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 56-5-970(C)(1): 'Vehicular traffic facing a steady circular red signal alone shall stop at a clearly marked stop line but, if none, before entering the crosswalk on the near side of the intersection or, if none, then before entering the intersection and shall remain standing until an indication to proceed is shown except as provided in item (3).' Item (3): right turn (or left from one-way onto one-way) on red permitted after stopping unless a sign prohibits it; (B)(1): steady yellow warns that 'a red indication will be exhibited immediately thereafter.'",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Section number and rule verified verbatim. Optional: add 'at the stop line or, if none,' to mirror the Georgia sentence."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina courts recognize the <strong>negligence per se</strong> doctrine, meaning a red light violation can establish that the driver breached their duty of care.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Whitlaw v. Kroger Co., 306 S.C. 51, 410 S.E.2d 251 (S.C. Oct. 14, 1991), adopting Rayfield v. S.C. Dept. of Corrections, 297 S.C. 95 (Ct. App. 1988): if the statute's 'essential purpose' is to protect from the kind of harm suffered and the plaintiff is 'a member of the class of persons the statute is intended to protect,' a violation 'constitutes proof of negligence per se'; 'Violation of the statute, thus, is not conclusive of liability' and proximate cause must still be proven.",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23498-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Accurate. Optional: '(Whitlaw v. Kroger Co., 306 S.C. 51 (1991))'."
+    },
+    {
+      "surface": "body",
+      "claim": "In both states, a traffic citation issued at the scene for running a red light is <strong>admissible evidence</strong> in a personal injury lawsuit and significantly strengthens your case.",
+      "verdict": "update",
+      "currentValue": "The ticket itself is not admissible in a civil case in either state. Georgia: 'while convictions for criminal offenses are inadmissible in a civil action of this kind, a plea of guilty may be shown as an admission against interest' (Howard v. Lay, 259 Ga. App. 391 (2003)); the plea 'does not conclusively establish negligence; it is only a circumstance to be considered along with the other evidence' (Gaddis v. Skelton, 226 Ga. App. 325 (1997)). South Carolina: 'No evidence of conviction of any person for any violation of this chapter shall be admissible in any court in any civil action' (S.C. Code § 56-5-6160); a guilty plea may be received as an admission, subject to explanation or rebuttal, but a bond forfeiture or nolo plea may not (Samuel v. Mouzon, 282 S.C. 616 (Ct. App. 1984)). The officer can testify to what they observed.",
+      "sourceName": "Howard v. Lay, 259 Ga. App. 391 (2003); Gaddis v. Skelton, 226 Ga. App. 325 (1997); S.C. Code § 56-5-6160 (re-read verbatim 2026-09-24); Samuel v. Mouzon, 282 S.C. 616, 320 S.E.2d 482 (Ct. App. 1984)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Legal error, and the same error the 1679 pack found five times on its post. Same fix in faq:2, which also renders into FAQPage structured data. Suggested: 'In both states the ticket itself is not admissible in a civil case, but if the other driver pleads guilty to running the red light, that plea can be shown to the jury as an admission (Georgia: Howard v. Lay; South Carolina: S.C. Code § 56-5-6160 and Samuel v. Mouzon), and the responding officer can testify to what they saw.' Howard v. Lay: https://www.courtlistener.com/opinion/1268783/howard-v-lay/ ; Gaddis: https://law.justia.com/cases/georgia/court-of-appeals/1997/a97a0175-0.html ; Samuel v. Mouzon: https://law.justia.com/cases/south-carolina/court-of-appeals/1984/282-s-c-616-2.html"
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Failure to keep a proper lookout</strong> — Georgia and South Carolina both require drivers to maintain a reasonable lookout for hazards, even when they have the right of way",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 40-6-241(b): 'A driver shall exercise due care in operating a motor vehicle on the highways of this state'; O.C.G.A. § 40-6-21(a)(1)(A) and S.C. Code § 56-5-970(A)(1): traffic on a green 'shall yield the right-of-way to other vehicles and to pedestrians lawfully within the intersection'",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-11/section-40-6-241/",
+      "retrievedAt": "2026-09-24",
+      "note": "The statutory due-care duty and the green-light yield clauses support the sentence; the proper-lookout duty itself is common law in both states. No change."
+    },
+    {
+      "surface": "body",
+      "claim": "When the victim shares some responsibility for the crash, both states apply <strong>modified comparative fault</strong> rules that reduce the victim's recovery by their percentage of fault:",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(a), (g); Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (S.C. 1991)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "Reused from facts-1756 / facts-1653; matches the writer-profile jurisdiction table."
+    },
+    {
+      "surface": "body",
+      "claim": "You can recover damages as long as you are <strong>less than 50% at fault</strong>. Your award is reduced by your percentage of responsibility. If you are found 50% or more at fault, you recover nothing.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(g): 'the plaintiff shall not be entitled to receive any damages if the plaintiff is 50 percent or more responsible for the injury or damages claimed'; (a): damages reduced 'in proportion to his or her percentage of fault'",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "Reused from facts-1756 (verified 2026-09-24)."
+    },
+    {
+      "surface": "body",
+      "claim": "A jury finds total damages of $150,000 and assigns you 20% fault. Your award is reduced to $120,000.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Arithmetic under O.C.G.A. § 51-12-33(a): $150,000 x (1 - 0.20) = $120,000",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "Hypothetical example, labelled 'Example'; not a settlement figure."
+    },
+    {
+      "surface": "body",
+      "claim": "You can recover damages as long as you are <strong>less than 51% at fault</strong>. Your award is reduced by your percentage of responsibility. If you are found 51% or more at fault, you recover nothing.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (S.C. 1991): 'a plaintiff in a negligence action may recover damages if his or her negligence is not greater than that of the defendant. The amount of the plaintiff's recovery shall be reduced in proportion to the amount of his or her negligence.'",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Correct. The South Carolina heading carries no authority while Georgia's cites its statute; add '(Nelson v. Concrete Supply Co.)' — never § 15-38-15 (profile rule)."
+    },
+    {
+      "surface": "body",
+      "claim": "Same scenario, but in South Carolina with 30% fault assigned to you. A $150,000 verdict is reduced to $105,000.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Arithmetic under Nelson v. Concrete Supply Co.: $150,000 x (1 - 0.30) = $105,000",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Hypothetical example; not a settlement figure."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia law permits the use of <strong>automated traffic enforcement cameras</strong> in certain jurisdictions (O.C.G.A. § 40-6-20(f)).",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 40-6-20(f)(2): subsection (a) 'may be enforced ... pursuant to the use of traffic-control signal monitoring devices in accordance with Article 3 of Chapter 14 of this title'; (f)(3)(A): civil monetary penalty 'of not more than $70.00'; O.C.G.A. § 40-14-21(a): 'A governing authority must obtain an operating permit from the Department of Transportation prior to using any traffic-control signal monitoring device'",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-2/section-40-6-20/",
+      "retrievedAt": "2026-09-24",
+      "note": "Pinpoint is real and correct. Optional: 'with a GDOT permit (O.C.G.A. § 40-14-21)'. § 40-14-22 also requires the yellow interval at a camera intersection to be at least the national standard plus one second."
+    },
+    {
+      "surface": "body",
+      "claim": "Cities like Atlanta, Savannah, and others may operate red light camera programs.",
+      "verdict": "update",
+      "currentValue": "GDOT's 2024 annual report on red light running photo enforcement lists four local governments operating cameras at twelve intersections: Marietta (5), Savannah (4 — all on Abercorn Street / DeRenne Avenue: Abercorn @ White Bluff, Abercorn @ Mall Blvd, DeRenne @ Abercorn, Abercorn @ Montgomery Cross Road), Smyrna (2) and Clayton County (1). Atlanta is not among them.",
+      "sourceName": "Georgia DOT, 2024 Annual RLRPES Report ('12 INTERSECTIONS TOTALS ... 4 LOCAL GOVERNMENTS'); GDOT Red Light Running Photo Enforcement page",
+      "sourceUrl": "https://www.dot.ga.gov/DriveSmart/SafetyOperation/SafetyOperation/Red/2024RLRPES_ANNUALREPORT.pdf",
+      "retrievedAt": "2026-09-24",
+      "note": "Replace with 'As of GDOT's 2024 report, only Marietta, Savannah, Smyrna and Clayton County operate them, at twelve intersections statewide — Savannah's are all along Abercorn Street and DeRenne Avenue.' Program page: https://www.dot.ga.gov/GDOT/Pages/RLRPES.aspx"
+    },
+    {
+      "surface": "body",
+      "claim": "The photos and video captured by these cameras can be obtained through discovery and used as evidence in a personal injury case to prove the other driver entered the intersection after the light turned red.",
+      "verdict": "update",
+      "currentValue": "No Georgia statute bars civil use of the images, but three limits apply: the devices record only when a vehicle proceeds against a circular red or red arrow (§ 40-6-20(f)(1)(B)-(C)), so they exist only for the twelve permitted intersections; the 'recorded images' are the rear of the vehicle and its license plate; and 'A traffic-control signal monitoring device shall not be used to produce any photograph, microphotograph, electronic image, or videotape showing the identity of any person in a motor vehicle' (§ 40-14-21(j)). The images can show that a particular vehicle ran the red, not who was driving.",
+      "sourceName": "O.C.G.A. § 40-6-20(f)(1)(B)-(C); O.C.G.A. § 40-14-21(j) (2025 Code of Georgia, via Justia)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-14/article-3/section-40-14-21/",
+      "retrievedAt": "2026-09-24",
+      "note": "Reword: 'If the crash happened at one of those intersections, the recorded images — the rear of the vehicle and its plate as it crosses on red — can be requested and used to show that the other driver's vehicle entered after the light turned red; by law the cameras do not capture the driver's identity (O.C.G.A. § 40-14-21(j)).'"
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina <strong>does not currently authorize red light cameras</strong> for automated traffic enforcement.",
+      "verdict": "update",
+      "currentValue": "Correct in substance; add the authority. S.C. Code § 56-7-35(B): a ticket for 'disregarding a traffic control device must' be issued 'incident to and contemporaneous with a traffic stop,' handed 'directly to the offender,' may not be mailed, and 'may not be issued based in whole upon photographic evidence, whether the camera or other electronic device capturing the photographic evidence was attended or unattended.' Photographic or video evidence may still be used 'to corroborate the testimony of a law enforcement officer who personally observed the offense.' Enacted by 2011 Act No. 65, effective June 17, 2011 (amended 2014).",
+      "sourceName": "S.C. Code § 56-7-35(B)(1)-(4), (C) (South Carolina Legislature)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c007.php",
+      "retrievedAt": "2026-09-24",
+      "note": "The statute's HISTORY line dates § 56-7-35 to 2011 Act No. 65, not 2010; do not describe it as a 2010 law. Suggested: 'South Carolina does not allow red light cameras: a ticket for disregarding a traffic signal must be issued in person during a traffic stop and cannot be based on photographic evidence (S.C. Code § 56-7-35).'"
+    },
+    {
+      "surface": "body",
+      "claim": "However, many intersections have <strong>traffic monitoring cameras</strong> operated by the South Carolina Department of Transportation (SCDOT) for traffic management purposes. While these cameras are not designed to capture violations, the footage may still be available and useful as evidence.",
+      "verdict": "update",
+      "currentValue": "SCDOT's cameras stream live and are not recorded. 511SC states: 'SCDOT DOES NOT RECORD VIDEO FROM ANY TRAFFIC CAMERAS.' 'FOOTAGE FROM THE PAST IS NOT AVAILABLE.' There is no SCDOT footage to request after a crash.",
+      "sourceName": "South Carolina DOT, 511SC traveler information site",
+      "sourceUrl": "https://www.511sc.org/",
+      "retrievedAt": "2026-09-24",
+      "note": "Factually wrong as published. Rewrite: 'SCDOT's traffic cameras stream live conditions to its 511 system but are not recorded, so no past footage exists to request. Video evidence in South Carolina comes from surveillance cameras at nearby businesses, dashcams, and doorbell cameras near the intersection.' Same correction in faq:4, which renders into FAQPage structured data."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Traffic camera or red light camera footage</strong> — the most direct proof available",
+      "verdict": "update",
+      "currentValue": "Red light camera images exist only at Georgia's twelve permitted intersections and show the vehicle and plate, not the driver; SCDOT and GDOT monitoring cameras are not a source of recorded footage in South Carolina (511SC: not recorded). Reword to 'Red light camera images, where a camera is in place (Georgia only)'.",
+      "sourceName": "O.C.G.A. § 40-14-21(j); GDOT 2024 RLRPES Annual Report; 511SC",
+      "sourceUrl": "https://www.511sc.org/",
+      "retrievedAt": "2026-09-24",
+      "note": "'The most direct proof available' overstates a source that rarely exists; keep the bullet but qualify it, and lead with dashcam and surveillance video, which are the sources that actually turn up."
+    },
+    {
+      "surface": "body",
+      "claim": "In cases involving particularly reckless behavior — such as a driver who ran a red light while intoxicated or while street racing — you may also recover <strong>punitive damages</strong> to punish the defendant.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-5.1(b) (clear and convincing evidence of 'willful misconduct, malice, fraud, wantonness, oppression, or that entire want of care which would raise the presumption of conscious indifference to consequences'); (c) ('solely to punish, penalize, or deter'); S.C. Code § 15-32-520(D) ('wilful, wanton, or reckless conduct'); S.C. Code § 15-33-135",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Reused from facts-1756. 'May' is the right hedge; ordinary red-light running alone does not meet either standard (Colonial Pipeline Co. v. Brown, 258 Ga. 115 (1988): 'Negligence, even gross negligence, is inadequate to support a punitive damage award')."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia caps punitive damages at $250,000 in most cases (O.C.G.A. § 51-12-5.1), with exceptions for DUI.",
+      "verdict": "update",
+      "currentValue": "$250,000 under § 51-12-5.1(g). The cap does not apply (e) in product liability cases, or (f) where the defendant 'acted, or failed to act, with the specific intent to cause harm, or ... acted or failed to act while under the influence of alcohol, drugs ... to that degree that his or her judgment is substantially impaired' — recoverable only from the active tort-feasor. The exception is substantial impairment, not a DUI charge.",
+      "sourceName": "O.C.G.A. § 51-12-5.1(e), (f), (g) (2025 Code of Georgia, via Justia)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Reused from facts-1756 (verified 2026-09-24). Suggested: 'Georgia caps punitive damages at $250,000 in most cases (O.C.G.A. § 51-12-5.1(g)); there is no cap where the defendant intended to cause harm or drove while substantially impaired by alcohol or drugs (§ 51-12-5.1(f)).' Same fix in faq:5."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina caps them at the greater of 3x compensatory damages or $500,000 (S.C. Code § 15-32-530).",
+      "verdict": "update",
+      "currentValue": "Section number is real. § 15-32-530(A): greater of three times compensatory damages or $500,000, and (D) indexes the dollar floor to CPI each year — $739,245 for 2026. (B): greater of four times compensatory or $2,000,000 where the wrongful conduct was motivated by unreasonable financial gain or could subject the defendant to a felony conviction. (C): no cap where the defendant intended to harm the claimant and did, pled guilty to or was convicted of a felony arising out of the same conduct, or acted 'while under the influence of alcohol, drugs ... to the degree that the defendant's judgment is substantially impaired.'",
+      "sourceName": "S.C. Code § 15-32-530(A), (B), (C), (D); S.C. Revenue and Fiscal Affairs Office memo, Punitive Damage Award Limitation – Inflation Component, 2026-02-03",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Reused from facts-1756 / facts-1663. Add '(indexed each year; $739,245 in 2026)' and, since the sentence follows a DUI example, 'with no cap where the driver's judgment was substantially impaired by alcohol or drugs (§ 15-32-530(C))'. Profile rule: never say SC has no cap; SC pack rule 'sc-punitive-bac-threshold' bans any BAC figure here. Same fix in faq:5."
+    },
+    {
+      "surface": "body",
+      "claim": "Red light crashes produce some of the most severe collisions because they typically involve side-impact or head-on forces.",
+      "verdict": "update",
+      "currentValue": "Soften 'typically' to 'often'. IIHS's finding that half of those killed in 2024 were pedestrians, bicyclists and people in other vehicles supports the severity point; no primary source was located that quantifies the share of red-light crashes that are side-impact.",
+      "sourceName": "IIHS, Red light running (2024 data)",
+      "sourceUrl": "https://www.iihs.org/research-areas/red-light-running",
+      "retrievedAt": "2026-09-24",
+      "note": "Wording change only; the T-bone description in the bullets that follow is illustrative."
+    },
+    {
+      "surface": "body",
+      "claim": "Side-impact crashes at intersections also commonly cause <a href=\"/practice-areas/burn-injury-lawyers/\">burn injuries</a> from fuel leaks and fires, as well as <a href=\"/practice-areas/construction-accident-lawyers/\">construction zone accidents</a> when temporary signals or flaggers are ignored.",
+      "verdict": "update",
+      "currentValue": "No source supports 'commonly' for burn injuries in intersection crashes; change to 'can also cause'. Keep both internal links (each returns 200).",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "Frequency word only. The sentence's second half is a link-carrier, not a claim."
+    },
+    {
+      "surface": "body",
+      "claim": "At Roden Law, we handle <a href=\"/practice-areas/car-accident-lawyers/\">car accident</a> and personal injury cases on a <strong>contingency fee basis</strong> — you pay nothing unless we recover compensation for you. If you were hit by a red light runner in Georgia or South Carolina, <strong><a href=\"/contact/\">contact us today</a></strong> for a free case evaluation or call <strong><a href=\"tel:+18447378587\">1-844-RESULTS</a></strong>.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "profiles/writer-profile.md trust signals and phone rule (1-844-RESULTS is tel:+18447378587); live page fetched 2026-09-24",
+      "sourceUrl": "https://rodenlaw.com/blog/are-red-light-runners-always-liable-if-they-crash/",
+      "retrievedAt": "2026-09-24",
+      "note": "Firm facts; href matches the profile. /contact/ and all eleven practice-area links return 200."
+    },
+    {
+      "surface": "excerpt",
+      "claim": "Not automatically. How fault is actually decided in Georgia and South Carolina red light crashes, and when the other driver shares the blame.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Descriptive; consistent with the verified comparative-fault rules",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "Published as the Article description by roden_schema_article(); no figure or statute asserted."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Red light runners are not automatically liable for intersection crashes in Georgia or South Carolina.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Perkins v. Kranz, 316 Ga. App. 171 (2012) ('negligence per se is not liability per se'); Whitlaw v. Kroger Co., 306 S.C. 51 (1991) ('Violation of the statute, thus, is not conclusive of liability')",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23498-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Both states apply modified comparative fault rules — Georgia bars recovery at 50% or more fault (O.C.G.A. SS 51-12-33), South Carolina at 51% or more.",
+      "verdict": "update",
+      "currentValue": "Both states apply modified comparative fault rules — Georgia bars recovery at 50% or more fault (O.C.G.A. § 51-12-33), South Carolina at 51% or more (Nelson v. Concrete Supply Co.).",
+      "sourceName": "O.C.G.A. § 51-12-33(g); Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "Rules correct. 'SS' renders in place of '§' in the takeaways box above the article (same defect the 1653 and 2647 packs found); the profile's strict format is 'O.C.G.A. § X-X-XX'. Add Nelson; never § 15-38-15."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Red light camera footage, traffic signal timing data, and witness testimony help establish fault.",
+      "verdict": "update",
+      "currentValue": "Dashcam and surveillance video, traffic signal timing data, and witness testimony help establish fault; red light camera images exist only at Georgia's twelve permitted intersections and South Carolina has none.",
+      "sourceName": "GDOT 2024 RLRPES Annual Report; S.C. Code § 56-7-35; 511SC",
+      "sourceUrl": "https://www.dot.ga.gov/DriveSmart/SafetyOperation/SafetyOperation/Red/2024RLRPES_ANNUALREPORT.pdf",
+      "retrievedAt": "2026-09-24",
+      "note": "Leading with red light camera footage in a two-state takeaway box misleads South Carolina readers; the box renders above the article."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Filing deadlines are two years in Georgia (O.C.G.A. SS 9-3-33) and three years in South Carolina (S.C. Code SS 15-3-530).",
+      "verdict": "update",
+      "currentValue": "Filing deadlines are two years in Georgia (O.C.G.A. § 9-3-33) and three years in South Carolina (S.C. Code § 15-3-530).",
+      "sourceName": "O.C.G.A. § 9-3-33 ('within two years after the right of action accrues'); S.C. Code § 15-3-530(5) ('Within three years: ... any injury to the person')",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Periods verified (reused from facts-1756 / facts-1653; match the profile table). 'SS' to '§' only. The body never states the deadlines; only the takeaways do."
+    },
+    {
+      "surface": "faq:0",
+      "claim": "Not automatically. Running a red light is strong evidence of negligence, but you must still prove that the violation caused the crash and that you suffered damages as a result. The other driver may also argue that you shared fault — for example, by speeding or driving while distracted.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Whitlaw v. Kroger Co. (S.C. 1991); Perkins v. Kranz (Ga. App. 2012); O.C.G.A. § 51-12-33; Nelson v. Concrete Supply Co.",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23498-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "faq:1",
+      "claim": "Yes, as long as your share of fault stays below the threshold. In Georgia, you can recover as long as you are less than 50% at fault (O.C.G.A. § 51-12-33). In South Carolina, you can recover as long as you are less than 51% at fault. Your award is reduced by your percentage of responsibility.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(a), (g); Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Optional: '(Nelson v. Concrete Supply Co.)' after the South Carolina sentence; never § 15-38-15."
+    },
+    {
+      "surface": "faq:2",
+      "claim": "Yes. In both Georgia and South Carolina, a traffic citation issued at the scene is admissible evidence in a personal injury lawsuit. A citation for running a red light is strong evidence that the other driver breached their duty of care.",
+      "verdict": "update",
+      "currentValue": "Not the ticket itself. In both states a traffic citation and any conviction on it are inadmissible in a civil case (Georgia: Howard v. Lay, 259 Ga. App. 391 (2003); South Carolina: S.C. Code § 56-5-6160). What can come in is the other driver's guilty plea to the ticket, which the jury may weigh as an admission — though it is not conclusive and the driver may explain it (Gaddis v. Skelton, 226 Ga. App. 325 (1997); Samuel v. Mouzon, 282 S.C. 616 (Ct. App. 1984)). The responding officer can also testify to what they observed.",
+      "sourceName": "Howard v. Lay; Gaddis v. Skelton; S.C. Code § 56-5-6160; Samuel v. Mouzon",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-24",
+      "note": "The question is 'Is a traffic citation for running a red light admissible in court?' and the published answer is 'Yes.' The answer is no in both states, and it renders into FAQPage structured data, so the error is published twice. Keep the question; open the answer 'Not the ticket itself.'"
+    },
+    {
+      "surface": "faq:3",
+      "claim": "This is a common dispute. Traffic signal timing data from the city or county traffic engineering department can show the exact signal cycle at the time of the crash. Dashcam footage, traffic camera video, surveillance footage from nearby businesses, and witness testimony can also help prove the light was red.",
+      "verdict": "update",
+      "currentValue": "Replace 'traffic camera video' with 'red light camera images (at the Georgia intersections that have them)'; SCDOT traffic cameras are not recorded and South Carolina has no red light cameras.",
+      "sourceName": "511SC; S.C. Code § 56-7-35; GDOT 2024 RLRPES Annual Report",
+      "sourceUrl": "https://www.511sc.org/",
+      "retrievedAt": "2026-09-24",
+      "note": "Small wording fix; the rest of the answer is sound practice guidance. Renders into FAQPage structured data."
+    },
+    {
+      "surface": "faq:4",
+      "claim": "South Carolina does not currently authorize red light cameras for automated traffic enforcement. However, SCDOT traffic monitoring cameras, surveillance cameras from nearby businesses, dashcams, and doorbell cameras near the intersection may still provide useful video evidence.",
+      "verdict": "update",
+      "currentValue": "No. A South Carolina ticket for disregarding a traffic signal must be issued in person during a traffic stop and cannot be based on photographic evidence (S.C. Code § 56-7-35). SCDOT's traffic cameras stream live but are not recorded, so no past footage is available from them; useful video comes from surveillance cameras at nearby businesses, dashcams, and doorbell cameras near the intersection.",
+      "sourceName": "S.C. Code § 56-7-35(B)(4); 511SC ('SCDOT DOES NOT RECORD VIDEO FROM ANY TRAFFIC CAMERAS. FOOTAGE FROM THE PAST IS NOT AVAILABLE.')",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c007.php",
+      "retrievedAt": "2026-09-24",
+      "note": "The first sentence is right; the second wrongly lists SCDOT cameras as a source of footage. Renders into FAQPage structured data."
+    },
+    {
+      "surface": "faq:5",
+      "claim": "You may recover economic damages (medical expenses, lost wages, property damage), non-economic damages (pain and suffering, emotional distress, loss of enjoyment of life), and in cases involving extreme recklessness like DUI, punitive damages. Georgia caps punitive damages at $250,000 with exceptions (O.C.G.A. § 51-12-5.1), and South Carolina caps them at the greater of 3x compensatory or $500,000 (S.C. Code § 15-32-530).",
+      "verdict": "update",
+      "currentValue": "Georgia caps punitive damages at $250,000 in most cases, with no cap where the defendant intended to cause harm or drove while substantially impaired by alcohol or drugs (O.C.G.A. § 51-12-5.1(f)-(g)). South Carolina caps them at the greater of three times compensatory damages or $500,000, a floor indexed each year ($739,245 in 2026), with no cap where the defendant intended harm, pled guilty to or was convicted of a felony arising from the same conduct, or was substantially impaired by alcohol or drugs (S.C. Code § 15-32-530).",
+      "sourceName": "O.C.G.A. § 51-12-5.1(f), (g); S.C. Code § 15-32-530(A), (C), (D); RFA memo 2026-02-03",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Both caps and section numbers are correct; the answer omits the indexing and states the exceptions only as 'with exceptions'. Since the answer names DUI, name the impairment exception in both states. Renders into FAQPage structured data."
+    }
+  ],
+  "recommendedEdits": [
+    "Body, intro: replace 'red light running causes hundreds of deaths and tens of thousands of injuries every year in the United States' with 'red light running killed 1,119 people and injured more than 141,000 in 2024, and half of those killed were pedestrians, cyclists and people in other vehicles'; change the IIHS href to https://www.iihs.org/research-areas/red-light-running (the old /topics/ path 301-redirects).",
+    "Body, 'Georgia' under Traffic Signal Laws: cite the steady-red rule to O.C.G.A. § 40-6-21 and keep § 40-6-20 for the duty to obey signals and the misdemeanor — 'Under O.C.G.A. § 40-6-21, drivers facing a steady red signal must stop ... Disobeying the signal is a misdemeanor under O.C.G.A. § 40-6-20.'",
+    "Body, 'In both states, a traffic citation issued at the scene is admissible evidence ...' and faq:2: state that the ticket itself is not admissible in a civil case in either state (Howard v. Lay, 259 Ga. App. 391 (2003); S.C. Code § 56-5-6160), that the other driver's guilty plea can be shown as an admission the jury may weigh but not as conclusive proof (Gaddis v. Skelton; Samuel v. Mouzon), and that the officer can testify to what they observed. faq:2 must stop answering 'Yes.' — open with 'Not the ticket itself.'",
+    "Body, Red Light Cameras / Georgia: replace 'Cities like Atlanta, Savannah, and others may operate red light camera programs' with 'As of GDOT's 2024 report, only Marietta, Savannah, Smyrna and Clayton County operate them, at twelve intersections statewide — Savannah's are all along Abercorn Street and DeRenne Avenue'; add that cameras require a GDOT permit (O.C.G.A. § 40-14-21).",
+    "Body, Red Light Cameras / Georgia: reword 'The photos and video captured by these cameras can be obtained through discovery ...' to say the recorded images (the rear of the vehicle and its plate as it crosses on red) can be requested to show that the other driver's vehicle entered after the light turned red, and that by law the cameras do not capture the driver's identity (O.C.G.A. § 40-14-21(j)).",
+    "Body, Red Light Cameras / South Carolina, and faq:4: add the authority for the no-camera rule — a ticket for disregarding a traffic signal must be issued in person during a traffic stop and cannot be based on photographic evidence (S.C. Code § 56-7-35); delete the claim that SCDOT traffic-monitoring footage 'may still be available' and state that SCDOT's cameras stream live to 511 but are not recorded, so no past footage exists; keep businesses, dashcams and doorbell cameras as the real sources.",
+    "Body, 'How to Prove ...' first bullet and faq:3: change 'Traffic camera or red light camera footage — the most direct proof available' to 'Red light camera images, where a camera is in place (Georgia only)'; in faq:3 replace 'traffic camera video' with 'red light camera images at the Georgia intersections that have them'. Key takeaways: lead the evidence sentence with dashcam and surveillance video rather than red light camera footage.",
+    "Body, Punitive Damages, and faq:5: Georgia — cite the cap to § 51-12-5.1(g) and replace 'with exceptions for DUI' with 'no cap where the defendant intended to cause harm or drove while substantially impaired by alcohol or drugs (§ 51-12-5.1(f))'; South Carolina — after '$500,000' add '(indexed each year; $739,245 in 2026)' and 'no cap where the driver's judgment was substantially impaired by alcohol or drugs (§ 15-32-530(C))'. No BAC figure anywhere (SC pack rule).",
+    "Body, South Carolina comparative-fault heading or first sentence, faq:1 and key takeaways: add '(Nelson v. Concrete Supply Co.)' after the 51% rule; never cite § 15-38-15.",
+    "Body, Common Types: 'typically involve side-impact or head-on forces' -> 'often involve side-impact or head-on forces'; 'also commonly cause burn injuries' -> 'can also cause burn injuries'.",
+    "Key takeaways: replace 'O.C.G.A. SS 51-12-33', 'O.C.G.A. SS 9-3-33' and 'S.C. Code SS 15-3-530' with the § symbol (rules themselves are correct).",
+    "Reviewer meta: record Graeham C. Gillin as reviewer (two-state post stating South Carolina law); do not add an attribution quote on this refresh.",
+    "After the edits, re-run bin/check-unslashed-post-writes.php and confirm the FAQPage block still parses, since faq:2, faq:3, faq:4 and faq:5 answers change."
+  ],
+  "statuteCitations": [
+    { "section": "O.C.G.A. § 40-6-20", "name": "Obedience to traffic-control devices required; presumptions; red light cameras — (a) duty to obey, misdemeanor; (f) traffic-control signal monitoring devices, $70 civil penalty, recorded images defined, no points and not a conviction", "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-2/section-40-6-20/" },
+    { "section": "O.C.G.A. § 40-6-21", "name": "Meaning of traffic signals — (a)(2)(A) steady yellow; (a)(3)(A) steady circular red: stop at stop line / crosswalk / intersection; (a)(3)(B)-(C) right turn on red after stopping unless signed; (a)(3)(D) left on red from one-way onto one-way", "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-2/section-40-6-21/" },
+    { "section": "O.C.G.A. § 40-5-57", "name": "Point system — (c)(1)(A)(ix) disobedience of any traffic-control device or traffic officer, 3 points", "url": "https://law.justia.com/codes/georgia/title-40/chapter-5/article-3/section-40-5-57/" },
+    { "section": "O.C.G.A. § 40-6-241", "name": "Distracted driving — (b) driver shall exercise due care and not engage in actions that distract from safe operation", "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-11/section-40-6-241/" },
+    { "section": "O.C.G.A. § 40-14-21", "name": "Traffic-control signal monitoring devices — GDOT operating permit required (a); documented safety need (d); (j) device shall not produce any image showing the identity of any person in a motor vehicle", "url": "https://law.justia.com/codes/georgia/title-40/chapter-14/article-3/section-40-14-21/" },
+    { "section": "O.C.G.A. § 40-14-22", "name": "Timing of monitored signals — yellow interval not less than the national standard plus one additional second", "url": "https://law.justia.com/codes/georgia/title-40/chapter-14/article-3/section-40-14-22/" },
+    { "section": "O.C.G.A. § 51-1-6", "name": "Recovery for breach of a legal duty (statutory basis of negligence per se)", "url": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-6/" },
+    { "section": "O.C.G.A. § 51-12-33", "name": "Apportionment of damages; plaintiff barred at 50 percent or more (g)", "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/" },
+    { "section": "O.C.G.A. § 51-12-5.1", "name": "Punitive damages — clear-and-convincing standard (b); product liability uncapped (e); specific intent and substantial impairment exceptions, active tort-feasor only (f); $250,000 cap (g)", "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/" },
+    { "section": "O.C.G.A. § 9-3-33", "name": "Injuries to the person — two-year limitation", "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/" },
+    { "section": "S.C. Code § 56-5-970", "name": "Traffic-control signal legend — (B)(1) steady yellow; (C)(1) steady circular red: stop at stop line / crosswalk / intersection; (C)(3) right turn on red (and left from one-way to one-way) after stopping unless signed", "url": "https://www.scstatehouse.gov/code/t56c005.php" },
+    { "section": "S.C. Code § 56-5-6160", "name": "Evidence of conviction inadmissible in civil action — 'No evidence of conviction of any person for any violation of this chapter shall be admissible in any court in any civil action'", "url": "https://www.scstatehouse.gov/code/t56c005.php" },
+    { "section": "S.C. Code § 56-7-35", "name": "Uniform traffic ticket for speeding or disregarding a traffic control device must be issued incident to and contemporaneous with a traffic stop; may not be mailed; may not be based on photographic evidence (2011 Act No. 65, eff. June 17, 2011; amended 2014)", "url": "https://www.scstatehouse.gov/code/t56c007.php" },
+    { "section": "S.C. Code § 56-1-720", "name": "Point system — disobedience of any official traffic control device, 4 points", "url": "https://www.scstatehouse.gov/code/t56c001.php" },
+    { "section": "S.C. Code § 15-32-520", "name": "Punitive damages — clear and convincing evidence of wilful, wanton or reckless conduct (D)", "url": "https://www.scstatehouse.gov/code/t15c032.php" },
+    { "section": "S.C. Code § 15-32-530", "name": "Punitive damages cap — greater of 3x compensatory or $500,000 (A); 4x or $2,000,000 tier (B); uncapped for intent to harm, felony plea or conviction, substantial impairment (C); annual CPI adjustment, $739,245 in 2026 (D)", "url": "https://www.scstatehouse.gov/code/t15c032.php" },
+    { "section": "S.C. Code § 15-33-135", "name": "Punitive damages: burden of proof — clear and convincing evidence", "url": "https://www.scstatehouse.gov/code/t15c033.php" },
+    { "section": "S.C. Code § 15-3-530", "name": "Three-year limitation, incl. (5) injury to the person", "url": "https://www.scstatehouse.gov/code/t15c003.php" },
+    { "section": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (S.C. 1991)", "name": "South Carolina modified comparative negligence — plaintiff recovers if negligence 'not greater than' the defendant's (the 51 percent bar). Never cite § 15-38-15 for the plaintiff's bar.", "url": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html" }
+  ],
+  "authoritativeLinks": [
+    { "name": "IIHS — Red light running (updated July 2026; 2024: 1,119 killed, more than 141,000 injured, half of the dead were pedestrians, bicyclists and people in other vehicles)", "url": "https://www.iihs.org/research-areas/red-light-running" },
+    { "name": "Georgia DOT — Red Light Running Photo Enforcement program page (annual reports 2016-2024)", "url": "https://www.dot.ga.gov/GDOT/Pages/RLRPES.aspx" },
+    { "name": "Georgia DOT — 2024 Annual RLRPES Report (12 intersections, 4 local governments: Marietta, Savannah, Smyrna, Clayton County)", "url": "https://www.dot.ga.gov/DriveSmart/SafetyOperation/SafetyOperation/Red/2024RLRPES_ANNUALREPORT.pdf" },
+    { "name": "South Carolina DOT — 511SC ('SCDOT DOES NOT RECORD VIDEO FROM ANY TRAFFIC CAMERAS. FOOTAGE FROM THE PAST IS NOT AVAILABLE.')", "url": "https://www.511sc.org/" },
+    { "name": "Whitlaw v. Kroger Co., 306 S.C. 51, 410 S.E.2d 251 (S.C. Oct. 14, 1991) — South Carolina negligence per se test (Rayfield) and the proximate-cause requirement", "url": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23498-2.html" },
+    { "name": "Perkins v. Kranz, 316 Ga. App. 171, 728 S.E.2d 804 (Ga. Ct. App. 2012) — 'negligence per se is not liability per se' (quoting Yasinsac v. Colonial Oil Properties, 246 Ga. App. 484, 486 (2000))", "url": "https://www.courtlistener.com/opinion/7927638/perkins-v-kranz/" },
+    { "name": "Howard v. Lay, 259 Ga. App. 391 (2003) — convictions inadmissible in civil action; guilty plea admissible as admission", "url": "https://www.courtlistener.com/opinion/1268783/howard-v-lay/" },
+    { "name": "Gaddis v. Skelton, 226 Ga. App. 325 (1997) — guilty plea to a traffic violation is an admission but not conclusive of negligence", "url": "https://law.justia.com/cases/georgia/court-of-appeals/1997/a97a0175-0.html" },
+    { "name": "Samuel v. Mouzon, 282 S.C. 616, 320 S.E.2d 482 (S.C. Ct. App. 1984) — § 56-5-6160; guilty plea admissible as admission, bond forfeiture and nolo plea are not", "url": "https://law.justia.com/cases/south-carolina/court-of-appeals/1984/282-s-c-616-2.html" },
+    { "name": "Colonial Pipeline Co. v. Brown, 258 Ga. 115 (1988) — 'Negligence, even gross negligence, is inadequate to support a punitive damage award'", "url": "https://law.justia.com/cases/georgia/supreme-court/1988/44925-1.html" },
+    { "name": "S.C. Revenue and Fiscal Affairs Office — Punitive Damage Award Limitation, Inflation Component memo, 2026-02-03 ($739,245 for 2026)", "url": "https://rfa.sc.gov/media/11478" },
+    { "name": "Nelson v. Concrete Supply Co. (S.C. 1991) — CourtListener copy", "url": "https://www.courtlistener.com/opinion/1265650/nelson-v-concrete-supply-company/" }
+  ]
+}

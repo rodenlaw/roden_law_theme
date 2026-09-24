@@ -1,0 +1,116 @@
+[
+ {
+  "id": "2586",
+  "surface": "content",
+  "before": "<p>Running a red light is one of the most dangerous driving behaviors on the road. According to the <a href=\"https://www.iihs.org/topics/red-light-running\" target=\"_blank\" rel=\"noopener\">Insurance Institute for Highway Safety (IIHS)</a>, red light running causes hundreds of deaths and tens of thousands of injuries every year in the United States. If a driver runs a red light and crashes into you, you would expect the fault question to be obvious — but the legal reality in <strong>Georgia</strong> and <strong>South Carolina</strong> is more nuanced than most people realize.</p>",
+  "after": "<p>Running a red light is one of the most dangerous driving behaviors on the road. According to the <a href=\"https://www.iihs.org/research-areas/red-light-running\" target=\"_blank\" rel=\"noopener\">Insurance Institute for Highway Safety (IIHS)</a>, red light running killed 1,119 people and injured more than 141,000 in 2024, and half of those killed were pedestrians, cyclists and people in other vehicles. If a driver runs a red light and crashes into you, you would expect the fault question to be obvious — but the legal reality in <strong>Georgia</strong> and <strong>South Carolina</strong> is more nuanced than most people realize.</p>"
+ },
+ {
+  "id": "2586",
+  "surface": "content",
+  "before": "<p>Under <strong>O.C.G.A. § 40-6-20</strong>, drivers facing a steady red signal must stop at the marked stop line or, if none, before entering the crosswalk or intersection. Running a red light is a traffic offense that carries fines and points on your license. In a civil case, the traffic violation serves as evidence of <strong>negligence per se</strong> — meaning the mere fact that the driver violated the statute can establish the duty and breach elements of a negligence claim, shifting the focus to causation and damages.</p>",
+  "after": "<p>Under <strong><a href=\"https://law.justia.com/codes/georgia/title-40/chapter-6/article-2/section-40-6-21/\">O.C.G.A. § 40-6-21</a></strong>, drivers facing a steady red signal must stop at the marked stop line or, if none, before entering the crosswalk or intersection. Running a red light is a misdemeanor under <a href=\"https://law.justia.com/codes/georgia/title-40/chapter-6/article-2/section-40-6-20/\">O.C.G.A. § 40-6-20</a> that carries fines and points on your license. In a civil case, the traffic violation serves as evidence of <strong>negligence per se</strong> — meaning the mere fact that the driver violated the statute can establish the duty and breach elements of a negligence claim, shifting the focus to causation and damages.</p>"
+ },
+ {
+  "id": "2586",
+  "surface": "content",
+  "before": "<p>Under <strong>S.C. Code § 56-5-970</strong>, drivers facing a steady red signal must stop before entering the crosswalk or intersection. As in Georgia, violating this statute constitutes evidence of negligence. South Carolina courts recognize the <strong>negligence per se</strong> doctrine, meaning a red light violation can establish that the driver breached their duty of care.</p>\n\n<p>In both states, a traffic citation issued at the scene for running a red light is <strong>admissible evidence</strong> in a personal injury lawsuit and significantly strengthens your case.</p>",
+  "after": "<p>Under <strong><a href=\"https://www.scstatehouse.gov/code/t56c005.php\">S.C. Code § 56-5-970</a></strong>, drivers facing a steady red signal must stop before entering the crosswalk or intersection. As in Georgia, violating this statute constitutes evidence of negligence. South Carolina courts recognize the <strong>negligence per se</strong> doctrine, meaning a red light violation can establish that the driver breached their duty of care.</p>\n\n<p>In both states, however, the traffic citation itself is <strong>not admissible</strong> in the injury lawsuit (Georgia: <em>Howard v. Lay</em>; South Carolina: S.C. Code § 56-5-6160). If the other driver pleads guilty to running the red light, the jury may weigh that plea as an admission, though it is not conclusive (<em>Gaddis v. Skelton</em>; <em>Samuel v. Mouzon</em>), and the responding officer can testify to what they saw.</p>"
+ },
+ {
+  "id": "2586",
+  "surface": "content",
+  "before": "<ul>\n<li><strong>Traffic signal timing</strong> — was the light red, yellow, or in transition? Signal timing records from the traffic engineering department can resolve \"it was still yellow\" disputes</li>\n<li><strong>Police report</strong> — the responding officer's narrative, diagram, and any citations issued at the scene</li>\n<li><strong>Witness statements</strong> — accounts from other drivers, passengers, and pedestrians who saw the collision</li>\n<li><strong>Video evidence</strong> — traffic cameras, dashcam footage, and surveillance cameras from nearby businesses</li>\n<li><strong>Physical evidence</strong> — skid marks, vehicle damage patterns, debris fields, and final resting positions of the vehicles</li>\n<li><strong>Accident reconstruction</strong> — in disputed cases, experts can analyze speed, impact angles, and reaction times to determine what happened</li>\n<li><strong>Both drivers' behavior</strong> — the investigation also examines whether the victim was speeding, distracted, or otherwise contributed to the crash</li>\n</ul>",
+  "after": "<ul>\n<li><strong>Traffic signal timing</strong> — was the light red, yellow, or in transition? Signal timing records from the traffic engineering department can resolve \"it was still yellow\" disputes</li>\n<li><strong>Police report</strong> — the responding officer's narrative, diagram, and any citations issued at the scene</li>\n<li><strong>Witness statements</strong> — accounts from other drivers, passengers, and pedestrians who saw the collision</li>\n<li><strong>Video evidence</strong> — dashcam footage, surveillance cameras from nearby businesses, and red light camera images where they exist</li>\n<li><strong>Physical evidence</strong> — skid marks, vehicle damage patterns, debris fields, and final resting positions of the vehicles</li>\n<li><strong>Accident reconstruction</strong> — in disputed cases, experts can analyze speed, impact angles, and reaction times to determine what happened</li>\n<li><strong>Both drivers' behavior</strong> — the investigation also examines whether the victim was speeding, distracted, or otherwise contributed to the crash</li>\n</ul>"
+ },
+ {
+  "id": "2586",
+  "surface": "content",
+  "before": "<p>You can recover damages as long as you are <strong>less than 51% at fault</strong>. Your award is reduced by your percentage of responsibility. If you are found 51% or more at fault, you recover nothing.</p>",
+  "after": "<p>Under <em>Nelson v. Concrete Supply Co.</em>, you can recover damages as long as you are <strong>less than 51% at fault</strong>. Your award is reduced by your percentage of responsibility. If you are found 51% or more at fault, you recover nothing.</p>"
+ },
+ {
+  "id": "2586",
+  "surface": "content",
+  "before": "<p>Red light cameras and traffic monitoring cameras can provide critical evidence in disputed-fault intersection crashes. However, their availability and legal status differ between Georgia and South Carolina.</p>",
+  "after": "<p>Red light cameras can provide critical evidence in disputed-fault intersection crashes. However, their availability and legal status differ between Georgia and South Carolina.</p>"
+ },
+ {
+  "id": "2586",
+  "surface": "content",
+  "before": "<p>Georgia law permits the use of <strong>automated traffic enforcement cameras</strong> in certain jurisdictions (O.C.G.A. § 40-6-20(f)). Cities like Atlanta, Savannah, and others may operate red light camera programs. The photos and video captured by these cameras can be obtained through discovery and used as evidence in a personal injury case to prove the other driver entered the intersection after the light turned red.</p>",
+  "after": "<p>Georgia law permits the use of <strong>automated traffic enforcement cameras</strong> in certain jurisdictions with a GDOT permit (O.C.G.A. § 40-6-20(f); <a href=\"https://law.justia.com/codes/georgia/title-40/chapter-14/article-3/section-40-14-21/\">O.C.G.A. § 40-14-21</a>). As of <a href=\"https://www.dot.ga.gov/DriveSmart/SafetyOperation/SafetyOperation/Red/2024RLRPES_ANNUALREPORT.pdf\">GDOT's 2024 report</a>, only Marietta, Savannah, Smyrna and Clayton County operate them, at twelve intersections statewide; Savannah's are all along Abercorn Street and DeRenne Avenue. If the crash happened at one of those intersections, the recorded images (the rear of the vehicle and its plate as it crosses on red) can be requested to show that the other driver's vehicle entered after the light turned red; by law the cameras do not capture the driver's identity (§ 40-14-21(j)).</p>"
+ },
+ {
+  "id": "2586",
+  "surface": "content",
+  "before": "<p>South Carolina <strong>does not currently authorize red light cameras</strong> for automated traffic enforcement. However, many intersections have <strong>traffic monitoring cameras</strong> operated by the South Carolina Department of Transportation (SCDOT) for traffic management purposes. While these cameras are not designed to capture violations, the footage may still be available and useful as evidence. Additionally, surveillance cameras from nearby businesses, dashcams, and doorbell cameras near the intersection are increasingly valuable sources of video evidence.</p>",
+  "after": "<p>South Carolina <strong>does not currently authorize red light cameras</strong> for automated traffic enforcement: a ticket for disregarding a traffic signal must be issued in person during a traffic stop and cannot be based on photographic evidence (<a href=\"https://www.scstatehouse.gov/code/t56c007.php\">S.C. Code § 56-7-35</a>, enacted in 2011). The South Carolina Department of Transportation's <strong>traffic monitoring cameras</strong> stream live to <a href=\"https://www.511sc.org/\">511SC</a> but are not recorded, so no past footage exists to request. Instead, surveillance cameras from nearby businesses, dashcams, and doorbell cameras near the intersection are increasingly valuable sources of video evidence.</p>"
+ },
+ {
+  "id": "2586",
+  "surface": "content",
+  "before": "<ul>\n<li><strong>Traffic camera or red light camera footage</strong> — the most direct proof available</li>\n<li><strong>Dashcam video</strong> — from your vehicle or other vehicles at the intersection</li>\n<li><strong>Surveillance cameras</strong> — footage from businesses, ATMs, or residential cameras near the intersection</li>\n<li><strong>Witness testimony</strong> — other drivers or pedestrians who saw the light color when each vehicle entered the intersection</li>\n<li><strong>Traffic signal timing data</strong> — records from the traffic engineering department showing the exact signal cycle at the time of the crash</li>\n<li><strong>The police report</strong> — the officer's narrative, witness statements, and any citation issued for running the red light</li>\n<li><strong>Physical evidence</strong> — the point of impact, vehicle damage patterns, and debris location can help accident reconstruction experts determine which vehicle entered the intersection first</li>\n<li><strong>Cell phone records</strong> — records showing the other driver was texting or on a call, which may explain why they failed to notice the red signal</li>\n</ul>",
+  "after": "<ul>\n<li><strong>Dashcam video</strong> — from your vehicle or other vehicles at the intersection</li>\n<li><strong>Surveillance cameras</strong> — footage from businesses, ATMs, or residential cameras near the intersection</li>\n<li><strong>Red light camera images</strong> — where a camera is in place (Georgia only)</li>\n<li><strong>Witness testimony</strong> — other drivers or pedestrians who saw the light color when each vehicle entered the intersection</li>\n<li><strong>Traffic signal timing data</strong> — records from the traffic engineering department showing the exact signal cycle at the time of the crash</li>\n<li><strong>The police report</strong> — the officer's narrative, witness statements, and any citation issued for running the red light</li>\n<li><strong>Physical evidence</strong> — the point of impact, vehicle damage patterns, and debris location can help accident reconstruction experts determine which vehicle entered the intersection first</li>\n<li><strong>Cell phone records</strong> — records showing the other driver was texting or on a call, which may explain why they failed to notice the red signal</li>\n</ul>"
+ },
+ {
+  "id": "2586",
+  "surface": "content",
+  "before": "<p>In cases involving particularly reckless behavior — such as a driver who ran a red light while intoxicated or while street racing — you may also recover <strong>punitive damages</strong> to punish the defendant. Georgia caps punitive damages at $250,000 in most cases (O.C.G.A. § 51-12-5.1), with exceptions for DUI. South Carolina caps them at the greater of 3x compensatory damages or $500,000 (S.C. Code § 15-32-530).</p>",
+  "after": "<p>In cases involving particularly reckless behavior — such as a driver who ran a red light while intoxicated or while street racing — you may also recover <strong>punitive damages</strong> to punish the defendant. Georgia caps punitive damages at $250,000 in most cases (<a href=\"https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/\">O.C.G.A. § 51-12-5.1</a>(g)), with no cap where the defendant intended harm or drove while substantially impaired by alcohol or drugs (§ 51-12-5.1(f)). South Carolina caps them at the greater of 3x compensatory damages or $500,000, a floor indexed each year ($739,245 in 2026), with no cap for intended harm, a related felony plea or conviction, or substantial impairment by alcohol or drugs (<a href=\"https://www.scstatehouse.gov/code/t15c032.php\">S.C. Code § 15-32-530</a>(C)).</p>"
+ },
+ {
+  "id": "2586",
+  "surface": "content",
+  "before": "<p>Red light crashes produce some of the most severe collisions because they typically involve side-impact or head-on forces. The types of accidents and injuries we see most often include:</p>",
+  "after": "<p>Red light crashes produce some of the most severe collisions because they often involve side-impact or head-on forces. The types of accidents and injuries we see most often include:</p>"
+ },
+ {
+  "id": "2586",
+  "surface": "content",
+  "before": "<p>Side-impact crashes at intersections also commonly cause <a href=\"/practice-areas/burn-injury-lawyers/\">burn injuries</a> from fuel leaks and fires, as well as <a href=\"/practice-areas/construction-accident-lawyers/\">construction zone accidents</a> when temporary signals or flaggers are ignored.</p>",
+  "after": "<p>Side-impact crashes at intersections can also cause <a href=\"/practice-areas/burn-injury-lawyers/\">burn injuries</a> from fuel leaks and fires, as well as <a href=\"/practice-areas/construction-accident-lawyers/\">construction zone accidents</a> when temporary signals or flaggers are ignored.</p>"
+ },
+ {
+  "id": "2586",
+  "surface": "content",
+  "before": "<ul>\n<li><strong>Preserving critical evidence</strong> — sending spoliation letters to preserve traffic camera footage, dashcam video, and surveillance recordings before they are overwritten</li>\n<li><strong>Obtaining signal timing records</strong> — requesting traffic signal data from the city or county to prove the light was red when the other driver entered the intersection</li>\n<li><strong>Defeating comparative fault arguments</strong> — building evidence that you were driving lawfully and had no opportunity to avoid the crash</li>\n<li><strong>Calculating full damages</strong> — working with medical and financial experts to document the complete cost of your injuries, including future treatment and lost earning capacity</li>\n<li><strong>Negotiating from strength</strong> — using the police report, citations, and independent evidence to pressure the insurer into a fair settlement</li>\n<li><strong>Taking the case to trial</strong> — when the insurance company refuses to offer fair compensation, presenting your case to a jury</li>\n</ul>",
+  "after": "<ul>\n<li><strong>Preserving critical evidence</strong> — sending spoliation letters to preserve red light camera images, dashcam video, and surveillance recordings before they are overwritten</li>\n<li><strong>Obtaining signal timing records</strong> — requesting traffic signal data from the city or county to prove the light was red when the other driver entered the intersection</li>\n<li><strong>Defeating comparative fault arguments</strong> — building evidence that you were driving lawfully and had no opportunity to avoid the crash</li>\n<li><strong>Calculating full damages</strong> — working with medical and financial experts to document the complete cost of your injuries, including future treatment and lost earning capacity</li>\n<li><strong>Negotiating from strength</strong> — using the police report, citations, and independent evidence to pressure the insurer into a fair settlement</li>\n<li><strong>Taking the case to trial</strong> — when the insurance company refuses to offer fair compensation, presenting your case to a jury</li>\n</ul>"
+ },
+ {
+  "id": "2586",
+  "surface": "meta:_roden_key_takeaways",
+  "before": "Red light runners are not automatically liable for intersection crashes in Georgia or South Carolina. Fault is determined by examining whether the other driver was speeding, made an illegal turn, or failed to exercise caution entering the intersection. Both states apply modified comparative fault rules — Georgia bars recovery at 50% or more fault (O.C.G.A. SS 51-12-33), South Carolina at 51% or more. Red light camera footage, traffic signal timing data, and witness testimony help establish fault. Filing deadlines are two years in Georgia (O.C.G.A. SS 9-3-33) and three years in South Carolina (S.C. Code SS 15-3-530).",
+  "after": "Red light runners are not automatically liable for intersection crashes in Georgia or South Carolina. Fault is determined by examining whether the other driver was speeding, made an illegal turn, or failed to exercise caution entering the intersection. Both states apply modified comparative fault rules — Georgia bars recovery at 50% or more fault (O.C.G.A. § 51-12-33), South Carolina at 51% or more (Nelson v. Concrete Supply Co.). Dashcam and surveillance video, traffic signal timing data, and witness testimony help establish fault; red light camera images exist only at Georgia's twelve permitted intersections and South Carolina has none. Filing deadlines are two years in Georgia (O.C.G.A. § 9-3-33) and three years in South Carolina (S.C. Code § 15-3-530)."
+ },
+ {
+  "id": "2586",
+  "surface": "faq:1:answer",
+  "before": "Yes, as long as your share of fault stays below the threshold. In Georgia, you can recover as long as you are less than 50% at fault (O.C.G.A. § 51-12-33). In South Carolina, you can recover as long as you are less than 51% at fault. Your award is reduced by your percentage of responsibility.",
+  "after": "Yes, as long as your share of fault stays below the threshold. In Georgia, you can recover as long as you are less than 50% at fault (O.C.G.A. § 51-12-33). In South Carolina, you can recover as long as you are less than 51% at fault (Nelson v. Concrete Supply Co.). Your award is reduced by your percentage of responsibility."
+ },
+ {
+  "id": "2586",
+  "surface": "faq:2:answer",
+  "before": "Yes. In both Georgia and South Carolina, a traffic citation issued at the scene is admissible evidence in a personal injury lawsuit. A citation for running a red light is strong evidence that the other driver breached their duty of care.",
+  "after": "Not the ticket itself. In both states a traffic citation and any conviction on it are inadmissible in a civil case (Georgia: Howard v. Lay, 259 Ga. App. 391 (2003); South Carolina: S.C. Code § 56-5-6160). What can come in is the other driver's guilty plea to the ticket, which the jury may weigh as an admission — though it is not conclusive and the driver may explain it (Gaddis v. Skelton, 226 Ga. App. 325 (1997); Samuel v. Mouzon, 282 S.C. 616 (Ct. App. 1984)). The responding officer can also testify to what they observed."
+ },
+ {
+  "id": "2586",
+  "surface": "faq:3:answer",
+  "before": "This is a common dispute. Traffic signal timing data from the city or county traffic engineering department can show the exact signal cycle at the time of the crash. Dashcam footage, traffic camera video, surveillance footage from nearby businesses, and witness testimony can also help prove the light was red.",
+  "after": "This is a common dispute. Traffic signal timing data from the city or county traffic engineering department can show the exact signal cycle at the time of the crash. Dashcam footage, red light camera images at the Georgia intersections that have them, surveillance footage from nearby businesses, and witness testimony can also help prove the light was red."
+ },
+ {
+  "id": "2586",
+  "surface": "faq:4:answer",
+  "before": "South Carolina does not currently authorize red light cameras for automated traffic enforcement. However, SCDOT traffic monitoring cameras, surveillance cameras from nearby businesses, dashcams, and doorbell cameras near the intersection may still provide useful video evidence.",
+  "after": "No. A South Carolina ticket for disregarding a traffic signal must be issued in person during a traffic stop and cannot be based on photographic evidence (S.C. Code § 56-7-35). SCDOT's traffic cameras stream live but are not recorded, so no past footage is available from them; useful video comes from surveillance cameras at nearby businesses, dashcams, and doorbell cameras near the intersection."
+ },
+ {
+  "id": "2586",
+  "surface": "faq:5:answer",
+  "before": "You may recover economic damages (medical expenses, lost wages, property damage), non-economic damages (pain and suffering, emotional distress, loss of enjoyment of life), and in cases involving extreme recklessness like DUI, punitive damages. Georgia caps punitive damages at $250,000 with exceptions (O.C.G.A. § 51-12-5.1), and South Carolina caps them at the greater of 3x compensatory or $500,000 (S.C. Code § 15-32-530).",
+  "after": "You may recover economic damages (medical expenses, lost wages, property damage), non-economic damages (pain and suffering, emotional distress, loss of enjoyment of life), and in cases involving extreme recklessness like DUI, punitive damages. Georgia caps punitive damages at $250,000 in most cases, with no cap where the defendant intended to cause harm or drove while substantially impaired by alcohol or drugs (O.C.G.A. § 51-12-5.1(f)-(g)). South Carolina caps them at the greater of three times compensatory damages or $500,000, a floor indexed each year ($739,245 in 2026), with no cap where the defendant intended harm, pled guilty to or was convicted of a felony arising from the same conduct, or was substantially impaired by alcohol or drugs (S.C. Code § 15-32-530)."
+ }
+]

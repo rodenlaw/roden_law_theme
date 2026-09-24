@@ -1246,7 +1246,7 @@
             "title": "Are Red Light Runners Always Liable if They Crash in Georgia or South Carolina?",
             "excerpt": "Not automatically. How fault is actually decided in Georgia and South Carolina red light crashes, and when the other driver shares the blame.",
             "meta": {
-                "_roden_author_attorney": "Eric Roden",
+                "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "Is a driver who runs a red light automatically at fault for a crash?",
@@ -1254,26 +1254,27 @@
                     },
                     {
                         "question": "Can I still recover compensation if I was partially at fault?",
-                        "answer": "Yes, as long as your share of fault stays below the threshold. In Georgia, you can recover as long as you are less than 50% at fault (O.C.G.A. § 51-12-33). In South Carolina, you can recover as long as you are less than 51% at fault. Your award is reduced by your percentage of responsibility."
+                        "answer": "Yes, as long as your share of fault stays below the threshold. In Georgia, you can recover as long as you are less than 50% at fault (O.C.G.A. § 51-12-33). In South Carolina, you can recover as long as you are less than 51% at fault (Nelson v. Concrete Supply Co.). Your award is reduced by your percentage of responsibility."
                     },
                     {
                         "question": "Is a traffic citation for running a red light admissible in court?",
-                        "answer": "Yes. In both Georgia and South Carolina, a traffic citation issued at the scene is admissible evidence in a personal injury lawsuit. A citation for running a red light is strong evidence that the other driver breached their duty of care."
+                        "answer": "Not the ticket itself. In both states a traffic citation and any conviction on it are inadmissible in a civil case (Georgia: Howard v. Lay, 259 Ga. App. 391 (2003); South Carolina: S.C. Code § 56-5-6160). What can come in is the other driver's guilty plea to the ticket, which the jury may weigh as an admission — though it is not conclusive and the driver may explain it (Gaddis v. Skelton, 226 Ga. App. 325 (1997); Samuel v. Mouzon, 282 S.C. 616 (Ct. App. 1984)). The responding officer can also testify to what they observed."
                     },
                     {
                         "question": "What if the other driver claims the light was yellow, not red?",
-                        "answer": "This is a common dispute. Traffic signal timing data from the city or county traffic engineering department can show the exact signal cycle at the time of the crash. Dashcam footage, traffic camera video, surveillance footage from nearby businesses, and witness testimony can also help prove the light was red."
+                        "answer": "This is a common dispute. Traffic signal timing data from the city or county traffic engineering department can show the exact signal cycle at the time of the crash. Dashcam footage, red light camera images at the Georgia intersections that have them, surveillance footage from nearby businesses, and witness testimony can also help prove the light was red."
                     },
                     {
                         "question": "Does South Carolina have red light cameras?",
-                        "answer": "South Carolina does not currently authorize red light cameras for automated traffic enforcement. However, SCDOT traffic monitoring cameras, surveillance cameras from nearby businesses, dashcams, and doorbell cameras near the intersection may still provide useful video evidence."
+                        "answer": "No. A South Carolina ticket for disregarding a traffic signal must be issued in person during a traffic stop and cannot be based on photographic evidence (S.C. Code § 56-7-35). SCDOT's traffic cameras stream live but are not recorded, so no past footage is available from them; useful video comes from surveillance cameras at nearby businesses, dashcams, and doorbell cameras near the intersection."
                     },
                     {
                         "question": "What damages can I recover after being hit by a red light runner?",
-                        "answer": "You may recover economic damages (medical expenses, lost wages, property damage), non-economic damages (pain and suffering, emotional distress, loss of enjoyment of life), and in cases involving extreme recklessness like DUI, punitive damages. Georgia caps punitive damages at $250,000 with exceptions (O.C.G.A. § 51-12-5.1), and South Carolina caps them at the greater of 3x compensatory or $500,000 (S.C. Code § 15-32-530)."
+                        "answer": "You may recover economic damages (medical expenses, lost wages, property damage), non-economic damages (pain and suffering, emotional distress, loss of enjoyment of life), and in cases involving extreme recklessness like DUI, punitive damages. Georgia caps punitive damages at $250,000 in most cases, with no cap where the defendant intended to cause harm or drove while substantially impaired by alcohol or drugs (O.C.G.A. § 51-12-5.1(f)-(g)). South Carolina caps them at the greater of three times compensatory damages or $500,000, a floor indexed each year ($739,245 in 2026), with no cap where the defendant intended harm, pled guilty to or was convicted of a felony arising from the same conduct, or was substantially impaired by alcohol or drugs (S.C. Code § 15-32-530)."
                     }
                 ],
-                "_roden_key_takeaways": "Red light runners are not automatically liable for intersection crashes in Georgia or South Carolina. Fault is determined by examining whether the other driver was speeding, made an illegal turn, or failed to exercise caution entering the intersection. Both states apply modified comparative fault rules — Georgia bars recovery at 50% or more fault (O.C.G.A. SS 51-12-33), South Carolina at 51% or more. Red light camera footage, traffic signal timing data, and witness testimony help establish fault. Filing deadlines are two years in Georgia (O.C.G.A. SS 9-3-33) and three years in South Carolina (S.C. Code SS 15-3-530)."
+                "_roden_key_takeaways": "Red light runners are not automatically liable for intersection crashes in Georgia or South Carolina. Fault is determined by examining whether the other driver was speeding, made an illegal turn, or failed to exercise caution entering the intersection. Both states apply modified comparative fault rules — Georgia bars recovery at 50% or more fault (O.C.G.A. § 51-12-33), South Carolina at 51% or more (Nelson v. Concrete Supply Co.). Dashcam and surveillance video, traffic signal timing data, and witness testimony help establish fault; red light camera images exist only at Georgia's twelve permitted intersections and South Carolina has none. Filing deadlines are two years in Georgia (O.C.G.A. § 9-3-33) and three years in South Carolina (S.C. Code § 15-3-530).",
+                "_roden_last_reviewed": "2026-09-24"
             }
         },
         "/blog/ashley-phosphate-i-26-south-carolinas-deadliest-intersection/": {
@@ -12223,7 +12224,7 @@
             "title": "Can You Switch Personal Injury Lawyers in the Middle of Your Case?",
             "excerpt": "You can change personal injury lawyers at almost any stage in Georgia or South Carolina. How the switch works, and what it costs you.",
             "meta": {
-                "_roden_author_attorney": "Eric Roden",
+                "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "Can I fire my personal injury lawyer in the middle of my case?",
@@ -12231,7 +12232,7 @@
                     },
                     {
                         "question": "Will I owe my first lawyer money if I switch?",
-                        "answer": "Possibly. If your first lawyer worked on a contingency fee basis, they may be entitled to a portion of the fee based on work already completed. In Georgia, attorneys can assert a lien under O.C.G.A. § 15-19-14. In South Carolina, fee disputes are governed by the reasonableness standard under S.C. Code § 37-5-108 and the Rules of Professional Conduct. Your new attorney can help negotiate or dispute any unreasonable lien."
+                        "answer": "Possibly. A lawyer you discharge before your case resolves cannot collect the contract percentage, but may claim the reasonable value of the work already done. In Georgia that claim is secured by a lien on the case under O.C.G.A. § 15-19-14 and measured in quantum meruit (Ellerin & Assocs. v. Brawley, 2003). South Carolina has no attorney's-lien statute; the claim is measured by the reasonableness factors in Rule 1.5(a) of the Rules of Professional Conduct, and a lien on your recovery exists only if your fee agreement creates one (Eleazer v. Hardaway Concrete Co., 1984). Your new attorney can negotiate or dispute any unreasonable claim."
                     },
                     {
                         "question": "When is it too late to switch personal injury lawyers?",
@@ -12243,14 +12244,15 @@
                     },
                     {
                         "question": "How do I transfer my case to a new lawyer?",
-                        "answer": "First, consult with a new attorney to confirm they will take your case. Then send written notice to your current attorney terminating the relationship. Request your complete case file in writing. Your former attorney must comply and transfer your file. Your new lawyer will handle the transition, review the file, and continue your case from where it left off."
+                        "answer": "First, consult with a new attorney to confirm they will take your case. Then send written notice to your current attorney terminating the relationship. Request your complete case file in writing. Your former attorney must comply and transfer your file. If a lawsuit is already pending, the change of counsel also goes through the court (Uniform Superior Court Rule 4.3 in Georgia; Rule 11(b), SCRCP in South Carolina). Your new lawyer will handle the transition, review the file, and continue your case from where it left off."
                     },
                     {
                         "question": "Will switching lawyers hurt my case?",
-                        "answer": "Not if done properly and promptly. A better attorney who is responsive, experienced, and aggressive will almost always improve your outcome compared to staying with one who is neglecting your case. The key is to switch early enough that your new lawyer has time to build the strongest possible case before any deadlines or trial dates."
+                        "answer": "Not if done properly and promptly. A responsive, experienced attorney can improve your outcome compared with staying with one who is neglecting your case. The key is to switch early enough that your new lawyer has time to build the strongest possible case before any deadlines or trial dates."
                     }
                 ],
-                "_roden_key_takeaways": "You have the legal right to switch personal injury lawyers at any time in both Georgia and South Carolina under Rule 1.16 of each state's Rules of Professional Conduct. Warning signs include unreturned calls, no case updates, pressure to settle low, and inexperience with your case type. Your first attorney may assert a fee lien — Georgia allows attorney liens under O.C.G.A. § 15-19-14, while South Carolina governs fee reasonableness under S.C. Code § 37-5-108. Switching is easiest during pre-litigation and becomes harder near trial. Georgia's 2-year (O.C.G.A. § 9-3-33) and South Carolina's 3-year (S.C. Code § 15-3-530) statutes of limitations make prompt action critical."
+                "_roden_key_takeaways": "You have the legal right to switch personal injury lawyers at any time in both Georgia and South Carolina under Rule 1.16 of each state's Rules of Professional Conduct. Warning signs include unreturned calls, no case updates, pressure to settle low, and inexperience with your case type. Your first attorney may claim a fee for work already done — in Georgia secured by a lien on the case under O.C.G.A. § 15-19-14; South Carolina has no attorney's-lien statute and measures the claim by the reasonable value of the work (Rule 1.5(a), Rule 407 SCACR). Switching is easiest during pre-litigation and becomes harder near trial. Georgia's 2-year (O.C.G.A. § 9-3-33) and South Carolina's 3-year (S.C. Code § 15-3-530) statutes of limitations make prompt action critical.",
+                "_roden_last_reviewed": "2026-09-24"
             }
         },
         "/blog/tactics-insurers-use-to-deny-crash-claims-charleston/": {
@@ -12561,13 +12563,13 @@
             "type": "post",
             "status": "publish",
             "title": "Do Traffic Tickets Determine Fault in a Car Accident?",
-            "excerpt": "A traffic ticket is strong evidence of fault but does not settle it. How citations are used, and when negligence per se applies.",
+            "excerpt": "A traffic ticket carries weight with adjusters but rarely reaches a jury and never settles fault. How citations and guilty pleas are used in Georgia and South Carolina, and when negligence per se applies.",
             "meta": {
-                "_roden_author_attorney": "Eric Roden",
+                "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "Does a traffic ticket automatically determine fault in a car accident?",
-                        "answer": "No. A traffic ticket is strong evidence of fault but is not conclusive. Fault in a civil injury claim is determined by the legal system based on all available evidence, not solely by a police citation. The officer may not have witnessed the accident and could have incomplete information."
+                        "answer": "No. A traffic ticket carries weight with insurance adjusters but is not conclusive, and in Georgia and South Carolina the ticket itself is generally not admissible at trial. Fault in a civil injury claim is determined by the legal system based on all available evidence, not by the police citation. The officer may not have witnessed the accident and could have incomplete information."
                     },
                     {
                         "question": "Can I still file a claim if I received a traffic ticket?",
@@ -12575,11 +12577,11 @@
                     },
                     {
                         "question": "What is negligence per se and how does it relate to traffic tickets?",
-                        "answer": "Negligence per se is a legal doctrine where violating a safety statute — such as a traffic law — is automatically considered negligent. For it to apply, the violation must have been the proximate cause of the accident. A citation for running a red light that caused a collision supports negligence per se; a broken taillight citation in a head-on collision does not."
+                        "answer": "Negligence per se is a legal doctrine under which violating a safety statute — such as a traffic law — establishes that the driver breached a duty of care, so the injured person does not have to prove separately that the driver acted unreasonably. It applies only when the injured person is within the group the statute protects and the harm is the kind it was meant to prevent, and the violation must still be shown to be the proximate cause of the accident. Running a red light that caused a collision supports negligence per se; a broken taillight in a head-on collision does not."
                     },
                     {
                         "question": "Should I fight a traffic ticket after a car accident?",
-                        "answer": "Often yes. Pleading guilty to a traffic violation can be used as evidence of fault in your civil injury case. A dismissal removes that evidence. Consult your personal injury attorney before making any decisions in traffic court, as the two cases are strategically linked."
+                        "answer": "Often yes. Pleading guilty to a traffic violation can be used as an admission of fault in your civil injury case, and in Georgia posting a cash bond and skipping court is treated the same way (O.C.G.A. § 40-13-58). A dismissal, or a plea of nolo contendere where the court allows one, keeps that admission out. Consult your personal injury attorney before making any decisions in traffic court, as the two cases are strategically linked."
                     },
                     {
                         "question": "What happens if no ticket was issued at the accident scene?",
@@ -12590,7 +12592,8 @@
                         "answer": "In Georgia, you have 2 years from the date of the accident to file a lawsuit (O.C.G.A. § 9-3-33). In South Carolina, you have 3 years (S.C. Code § 15-3-530). Do not delay filing because of uncertainty about traffic tickets — consult an attorney promptly."
                     }
                 ],
-                "_roden_key_takeaways": "Traffic tickets are strong evidence of fault in car accident claims but are not conclusive. The doctrine of negligence per se may apply when a traffic violation directly causes an accident. Both Georgia (O.C.G.A. § 51-12-33) and South Carolina use modified comparative fault, allowing recovery even with shared fault. Pleading guilty to a traffic ticket can be used against you in a civil case. Georgia has a 2-year statute of limitations (O.C.G.A. § 9-3-33); South Carolina has 3 years (S.C. Code § 15-3-530)."
+                "_roden_key_takeaways": "Traffic tickets carry weight with insurance adjusters but are not conclusive, and the ticket itself is generally not admissible at trial in Georgia or South Carolina. The doctrine of negligence per se may apply when a traffic violation directly causes an accident. Both Georgia (O.C.G.A. § 51-12-33) and South Carolina use modified comparative fault, allowing recovery even with shared fault. Pleading guilty to a traffic ticket can be used against you in a civil case. Georgia has a 2-year statute of limitations (O.C.G.A. § 9-3-33); South Carolina has 3 years (S.C. Code § 15-3-530).",
+                "_roden_last_reviewed": "2026-09-24"
             }
         },
         "/blog/truck-accident-injuries/": {
