@@ -1,0 +1,475 @@
+{
+  "postId": 1824,
+  "slug": "informed-consent",
+  "liveUrl": "https://rodenlaw.com/blog/informed-consent/",
+  "verifiedAt": "2026-09-24",
+  "reviewerByJurisdiction": "Two-state post that states South Carolina law: reviewer is Graeham C. Gillin (owner's rule 2026-09-23). Never Eric Roden.",
+  "verifiedClaims": [
+    {
+      "surface": "body",
+      "claim": "Before any medical procedure, surgery, or treatment in Georgia or South Carolina, your doctor has a legal and ethical obligation to obtain your informed consent.",
+      "verdict": "update",
+      "currentValue": "Georgia's informed-consent duty is statutory only and reaches a closed list of procedures: 'any surgical procedure under general anesthesia, spinal anesthesia, or major regional anesthesia', 'an amniocentesis diagnostic procedure', or 'a diagnostic procedure which involves the intravenous or intraductal injection of a contrast material' (O.C.G.A. § 31-9-6.1(a)). The Georgia Supreme Court has held that 'Georgia does not recognize a common law duty to inform patients of the material risks of a proposed treatment or procedure' and that the doctrine 'is defined in Georgia exclusively by statutes and regulations' (Blotner v. Doreika, 285 Ga. 481 (2009), overruling Ketchup v. Howard, 247 Ga. App. 54 (2000); Albany Urology Clinic v. Cleveland, 272 Ga. 296 (2000): the statute 'must be strictly construed and cannot be extended beyond its plain and explicit terms'). South Carolina's common-law duty is broader: it attaches to 'a physician who performs a diagnostic, therapeutic, or surgical procedure' (Hook v. Rothstein, 281 S.C. 541, 547 (Ct. App.), cert. denied, 283 S.C. 64 (1984)).",
+      "sourceName": "O.C.G.A. § 31-9-6.1(a) (Justia, 2025 Code); Blotner v. Doreika, 285 Ga. 481 (2009) (opinion PDF); Hook v. Rothstein, 281 S.C. 541 (Ct. App. 1984)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-31/chapter-9/section-31-9-6-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Change 'Before any medical procedure, surgery, or treatment' to 'Before surgery and other significant procedures'. The Georgia/South Carolina scope difference is the organizing fact of this page and must be stated in the intro."
+    },
+    {
+      "surface": "body",
+      "claim": "see the <a href=\"https://www.law.cornell.edu/wex/informed_consent\" target=\"_blank\" rel=\"noopener\">Cornell Law Institute's informed consent overview</a>",
+      "verdict": "update",
+      "currentValue": "The URL resolves (HTTP 200; page title 'informed consent | Wex | US Law | LII / Legal Information Institute', last reviewed December 2020). The publisher is the Legal Information Institute at Cornell Law School; there is no 'Cornell Law Institute'. The entry is a short general definition (legal ethics, medical treatment, waiver of constitutional rights) and notes courts hold physicians liable for battery when they 'clearly exceed the patient's consent'.",
+      "sourceName": "Legal Information Institute, Cornell Law School — Wex: informed consent (HTTP 200, curl 2026-09-24)",
+      "sourceUrl": "https://www.law.cornell.edu/wex/informed_consent",
+      "retrievedAt": "2026-09-24",
+      "note": "Keep the href; change the lead-in to 'Cornell Law School's Legal Information Institute's informed consent entry'. Same fix applied in facts-1676 for the malpractice entry."
+    },
+    {
+      "surface": "body",
+      "claim": "Courts in both Georgia and South Carolina have consistently held that a signed consent form does not automatically shield a physician from liability if the patient was not given meaningful information about the risks and alternatives.",
+      "verdict": "update",
+      "currentValue": "In Georgia this is a statutory rule, not case law: a written consent that 'discloses in general terms the information required in subsection (a)' and is signed 'shall be rebuttably presumed to be a valid consent' (§ 31-9-6.1(b)(2)); if consent is not obtained in writing 'no presumption shall arise as to the validity of such consent' ((b)(1)). Board Rule 360-14-.05(1)(b) repeats the rebuttable presumption. No South Carolina appellate decision on the evidentiary effect of a signed form was located; Hook v. Rothstein measures liability by whether the physician disclosed what 'a reasonable medical practitioner in the same branch of medicine would make under the same or similar circumstances', which a form alone does not answer.",
+      "sourceName": "O.C.G.A. § 31-9-6.1(b); Ga. Comp. R. & Regs. 360-14-.05; Hook v. Rothstein, 281 S.C. 541, 553",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-31/chapter-9/section-31-9-6-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Replace 'Courts in both Georgia and South Carolina have consistently held' with 'In Georgia a signed form that covers the six required disclosures is only a rebuttable presumption of valid consent (O.C.G.A. § 31-9-6.1); in South Carolina the question is what the physician actually disclosed measured against what a reasonable physician would have disclosed (Hook v. Rothstein)'. Do not attribute a holding to South Carolina courts on forms."
+    },
+    {
+      "surface": "body",
+      "claim": "The informed consent doctrine applies to virtually all medical interventions beyond the most routine and non-invasive procedures. It covers surgeries, diagnostic procedures, medication changes, radiation therapy, physical therapy protocols, and any treatment that carries material risks the patient should know about before agreeing.",
+      "verdict": "update",
+      "currentValue": "False for Georgia. The duty exists only for surgery under general, spinal or major regional anesthesia, amniocentesis, and contrast-injection diagnostic procedures (§ 31-9-6.1(a)); 'major regional anesthesia' means the entire arm, leg or torso (Rule 360-14-.02(7)–(8)). Georgia courts have refused informed-consent claims for cataract surgery not under one of the three anesthesia types (Murphy v. Berger, 273 Ga. App. 798 (2005)), a dental anesthetic injection (Pope v. Davis, 261 Ga. App. 308 (2003)), a nerve block (Butler v. South Fulton Medical Ctr., 215 Ga. App. 809 (1994)), dental work under mouth/jaw anesthesia (Roberts v. Connell, 312 Ga. App. 515 (2011)) and chiropractic adjustment (Blotner). Medication changes, radiation therapy and physical therapy are outside the Georgia statute. In South Carolina the common-law duty covers any 'diagnostic, therapeutic, or surgical procedure' (Hook, 281 S.C. at 547).",
+      "sourceName": "O.C.G.A. § 31-9-6.1(a) and Justia annotations; Ga. Comp. R. & Regs. 360-14-.02, -.03; Blotner v. Doreika; Hook v. Rothstein",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-31/chapter-9/section-31-9-6-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite as two sentences: Georgia's list (surgery under general, spinal or major regional anesthesia; amniocentesis; contrast-injection diagnostics) with the one-clause explanation that Georgia has no common-law informed-consent duty; South Carolina's broader 'diagnostic, therapeutic, or surgical procedure' rule. Delete 'medication changes, radiation therapy, physical therapy protocols' as a two-state claim."
+    },
+    {
+      "surface": "body",
+      "claim": "doctors in both Georgia and South Carolina are generally required to explain: The diagnosis ... The proposed treatment ... Material risks ... Benefits ... Alternative treatments ... Risks of declining treatment ... Recovery expectations",
+      "verdict": "update",
+      "currentValue": "Georgia's six statutory items (§ 31-9-6.1(a)(1)–(6)): (1) diagnosis of the condition requiring the procedure; (2) nature and purpose of the procedure; (3) the material risks (a defined list — see next claim); (4) likelihood of success; (5) practical alternatives 'generally recognized and accepted by reasonably prudent physicians'; (6) prognosis if the procedure is rejected. South Carolina's Hook list is the same six: diagnosis, general nature of the procedure, material risks, probability of success, prognosis if not carried out, and alternatives (281 S.C. at 547). 'Recovery expectations' is not a required disclosure in either state; 'Benefits' corresponds to 'likelihood of success'. Georgia law 'does not require physicians to inform patients of all alternatives to surgery' — only those 'generally recognized and accepted by reasonably prudent physicians' (Moore v. Baker, 989 F.2d 1129 (11th Cir. 1993)).",
+      "sourceName": "O.C.G.A. § 31-9-6.1(a); Ga. Comp. R. & Regs. 360-14-.04(1); Hook v. Rothstein, 281 S.C. at 547",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-31/chapter-9/section-31-9-6-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Reduce the list to the six items both states actually use (rename 'Benefits' to 'Likelihood of success', fold 'Risks of declining' into 'Prognosis if you decline', delete 'Recovery expectations'). Same list appears in faq:1."
+    },
+    {
+      "surface": "body",
+      "claim": "A material risk is one that a reasonable patient would consider significant when deciding whether to consent to treatment. Extremely rare complications that would not influence a reasonable person's decision generally do not need to be disclosed.",
+      "verdict": "update",
+      "currentValue": "Georgia defines 'material risk' as a hybrid: risks 'generally recognized and accepted by reasonably prudent physicians' of 'infection, allergic reaction, severe loss of blood, loss or loss of function of any limb or organ, paralysis or partial paralysis, paraplegia or quadriplegia, disfiguring scar, brain damage, cardiac arrest, or death' which, 'if disclosed to a reasonably prudent person in the patient's position, could reasonably be expected to cause such prudent person to decline' the procedure (§ 31-9-6.1(a)(3); Rule 360-14-.02(10)). South Carolina uses the professional standard — 'those risks which a reasonable medical practitioner of like training would disclose under the same or similar circumstances' — and a physician 'is not ordinarily required to disclose the risk to the patient where the statistical risk is remote and the severity not great' (Hook, 281 S.C. at 548, 561). The rare-risk sentence is correct in substance for both states.",
+      "sourceName": "O.C.G.A. § 31-9-6.1(a)(3); Ga. Comp. R. & Regs. 360-14-.02(10); Hook v. Rothstein",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-31/chapter-9/section-31-9-6-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'In Georgia a material risk is one of the statute's listed harms (infection, allergic reaction, severe blood loss, loss of a limb or organ, paralysis, disfiguring scar, brain damage, cardiac arrest, death) that reasonably prudent physicians recognize and that would lead a reasonably prudent patient to decline the procedure. In South Carolina the measure is what a reasonable physician in the same field would disclose.' Keep the rare-risk sentence."
+    },
+    {
+      "surface": "body",
+      "claim": "Legal Standard | Professional standard—what a reasonable physician would disclose (O.C.G.A. § 31-9-6.1) | Patient-centered standard—what a reasonable patient would need to know",
+      "verdict": "update",
+      "currentValue": "The South Carolina cell is the reverse of the law. Hook v. Rothstein expressly considered the 'lay standard, sometimes referred to as either the materiality of risk or prudent patient standard', and held: 'We therefore reject the lay standard and hold that the scope of a physician's duty to disclose is measured by those communications a reasonable medical practitioner in the same branch of medicine would make under the same or similar circumstances. We also hold that the plaintiff must ordinarily establish this standard by expert medical evidence' (281 S.C. at 553). The South Carolina Supreme Court denied certiorari (283 S.C. 64, 320 S.E.2d 35 (1984)) and has since treated Hook as the law: 'In Hook, the Court of Appeals first recognized that the doctrine of informed consent applies to physicians in South Carolina' and 'South Carolina recognizes a medical malpractice cause of action stemming from a lack of informed consent. Hook v. Rothstein' (Harvey v. Strickland, Op. No. 25491 (S.C. July 1, 2002)). South Carolina has no informed-consent statute (Hook: 'There is neither a statute nor a Supreme Court decision which prescribes the standard in this state'; none has been enacted since — Title 15, Chapters 3, 32, 36 and 79 checked 2026-09-24). Georgia's statute is a hybrid, not a pure professional standard: risks recognized by reasonably prudent physicians that would cause a reasonably prudent patient to decline (§ 31-9-6.1(a)(3)).",
+      "sourceName": "Hook v. Rothstein, 281 S.C. 541, 548–553 (Ct. App. 1984) (Justia); Harvey v. Strickland, Op. No. 25491 (S.C. 2002) (sccourts.org); O.C.G.A. § 31-9-6.1(a)(3)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/court-of-appeals/1984/281-s-c-541-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Most consequential error on the page. Georgia cell: 'Statutory hybrid — risks reasonably prudent physicians recognize that would lead a reasonably prudent patient to decline (O.C.G.A. § 31-9-6.1)'. South Carolina cell: 'Professional standard — what a reasonable physician in the same field would disclose (Hook v. Rothstein, 281 S.C. 541 (Ct. App. 1984)); no statute'. The same reversal appears in the SC section heading and body, the key takeaways, and the intro table framing."
+    },
+    {
+      "surface": "body",
+      "claim": "Expert Testimony | Required to establish the standard of disclosure (O.C.G.A. § 9-11-9.1) | Required to establish medical standard of care",
+      "verdict": "update",
+      "currentValue": "Georgia: the requirement comes from § 31-9-6.1(d) itself — 'the expert's affidavit required by Code Section 9-11-9.1 shall set forth that the patient suffered an injury which was proximately caused by the surgical or diagnostic procedure and that such injury was a material risk required to be disclosed under this Code section'; the Supreme Court called it 'incorrect' to contend no expert affidavit is needed for an informed-consent claim (Nathans v. Diamond, 282 Ga. 804, 805 n.2 (2007), as described in Blotner). South Carolina: 'the plaintiff must ordinarily establish this standard by expert medical evidence' (Hook, 281 S.C. at 553); expert evidence is 'just as necessary to establish negligence in failing adequately to disclose as it is to prove negligence in failing to treat or diagnose properly' (id. at 551).",
+      "sourceName": "O.C.G.A. § 31-9-6.1(d); Blotner v. Doreika, 285 Ga. 481 n.1; Hook v. Rothstein",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-31/chapter-9/section-31-9-6-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Georgia cell: 'Required — the § 9-11-9.1 affidavit must state that the injury was a material risk the statute required to be disclosed (O.C.G.A. § 31-9-6.1(d))'. South Carolina cell: 'Required to establish what a reasonable physician would have disclosed (Hook v. Rothstein)'."
+    },
+    {
+      "surface": "body",
+      "claim": "Affidavit Requirement | Must file expert affidavit with malpractice complaint (O.C.G.A. § 9-11-9.1) | Must file expert affidavit within specific timeframe (S.C. Code § 15-36-100)",
+      "verdict": "update",
+      "currentValue": "Georgia cell verified (§ 9-11-9.1(a); see facts-1676). South Carolina has two prerequisites the post never explains: (1) before filing suit the plaintiff 'shall contemporaneously file a Notice of Intent to File Suit and an affidavit of an expert witness, subject to the affidavit requirements established in Section 15-36-100' in a county of proper venue; filing the notice 'tolls all applicable statutes of limitations'; within 90–120 days of service the parties 'shall participate in a mediation conference'; if mediation fails the complaint must be filed within 60 days after the mediator declares impasse or before the limitation period expires, whichever is later (S.C. Code § 15-79-125(A),(C),(E)); (2) the complaint itself must include 'an affidavit of an expert witness which must specify at least one negligent act or omission claimed to exist and the factual basis for each claim' (§ 15-36-100(B)), with a 45-day grace period when the limitation period will expire within ten days ((C)(1)) and a 30-day cure for a defective affidavit ((E)).",
+      "sourceName": "S.C. Code § 15-79-125; S.C. Code § 15-36-100 (scstatehouse.gov, current Code); O.C.G.A. § 9-11-9.1",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c079.php",
+      "retrievedAt": "2026-09-24",
+      "note": "South Carolina cell: 'Pre-suit Notice of Intent with expert affidavit and mandatory mediation (S.C. Code § 15-79-125), then expert affidavit with the complaint (S.C. Code § 15-36-100)'. The post cites the right sections but omits § 15-79-125 entirely; add it to the table, the 'Proving' section and faq:4."
+    },
+    {
+      "surface": "body",
+      "claim": "Statute of Limitations | 2 years from injury or discovery (O.C.G.A. § 9-3-71) | 3 years from injury or discovery (S.C. Code § 15-3-545)",
+      "verdict": "update",
+      "currentValue": "Georgia: two years 'after the date on which an injury or death arising from a negligent or wrongful act or omission occurred' (§ 9-3-71(a)) and 'in no event' more than five years after the act ((b)). Georgia has no discovery rule for medical malpractice — the clock runs from the injury 'not on the date the patient discovers either the injury or the doctor's negligence' (Cleaveland v. Gannon, 284 Ga. 376 (2008); verified in facts-1676). Note that the five-year repose has been applied to a battery claim for lack of consent under § 31-9-6.1 (Blackwell v. Goodwin, 236 Ga. App. 861 (1999)). South Carolina: 'three years from the date of the treatment, omission, or operation giving rise to the cause of action or three years from date of discovery or when it reasonably ought to have been discovered, not to exceed six years from date of occurrence' (§ 15-3-545(A)); foreign objects: two years from discovery, never less than three years from placement ((B)); minors: tolling capped at seven years ((D)).",
+      "sourceName": "O.C.G.A. § 9-3-71(a),(b) (Justia; facts-1676); S.C. Code § 15-3-545(A),(B),(D) (scstatehouse.gov)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Georgia cell: '2 years from the injury (usually the date of the procedure); no discovery rule; absolute 5-year repose (O.C.G.A. § 9-3-71)'. South Carolina cell: '3 years from the procedure or from when the injury was or should have been discovered, never more than 6 years after the procedure (S.C. Code § 15-3-545)'. Same error in keyTakeaways and faq:4."
+    },
+    {
+      "surface": "body",
+      "claim": "Damage Caps | No caps on compensatory damages | No caps on actual damages; punitive damages capped in certain cases",
+      "verdict": "update",
+      "currentValue": "Georgia cell verified (Atlanta Oculoplastic Surgery v. Nestlehutt, 286 Ga. 731 (2010); facts-1676). South Carolina cell is wrong: South Carolina caps noneconomic damages in medical malpractice at $350,000 per health care provider or institution and $1,050,000 for all defendants combined, per claimant (S.C. Code § 15-32-220(A)–(C)), adjusted each year for CPI ((F)); the Revenue and Fiscal Affairs Office memo of 2026-02-03 sets the 2026 figures at $596,001 per defendant and $1,788,002 aggregate. Economic damages are not capped ((D)(1)). The cap does not apply where the defendant 'was grossly negligent, wilful, wanton, or reckless', committed fraud or misrepresentation related to the claim, or altered or destroyed medical records ((E)). Punitive damages are capped at the greater of three times compensatory damages or $500,000 (§ 15-32-530(A)), also CPI-adjusted, with exceptions in (B)–(C). House Bill 4544 (2025–26), which would have amended § 15-32-220, passed the House 116–0 on 2026-03-25 and was read a second time in the Senate on 2026-05-12; the bill history shows no ratification, so the section is unchanged.",
+      "sourceName": "S.C. Code § 15-32-220; § 15-32-530 (scstatehouse.gov); S.C. Revenue and Fiscal Affairs Office memo, 'Non-Economic (Medical Malpractice) Damages Limitation – Inflation Component', 2026-02-03; scstatehouse.gov bill history H.4544",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-09-24",
+      "note": "South Carolina cell: 'Noneconomic damages capped at $350,000 per defendant / $1.05 million total, inflation-adjusted ($596,001 / $1,788,002 in 2026) — S.C. Code § 15-32-220; no cap on economic damages; punitive damages capped at the greater of 3× compensatory or $500,000 (S.C. Code § 15-32-530)'. Writer profile rule: never say SC has no cap. RFA memo URL: https://rfa.sc.gov/media/11477."
+    },
+    {
+      "surface": "body",
+      "claim": "Consent Form Effect | Creates rebuttable presumption of informed consent (O.C.G.A. § 31-9-6.1) | Evidence of consent but not conclusive",
+      "verdict": "update",
+      "currentValue": "Georgia cell verified: a signed written consent disclosing the six items in general terms 'shall be rebuttably presumed to be a valid consent' (§ 31-9-6.1(b)(2)); without a writing 'no presumption shall arise' ((b)(1)). No South Carolina statute or appellate decision assigning an evidentiary weight to a signed form was located. What can be said: South Carolina has no statutory presumption; the claim turns on whether the physician disclosed what a reasonable physician in the same field would have disclosed (Hook).",
+      "sourceName": "O.C.G.A. § 31-9-6.1(b); Hook v. Rothstein",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-31/chapter-9/section-31-9-6-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "South Carolina cell: 'No statutory presumption; the case turns on what was actually disclosed, measured against what a reasonable physician would disclose (Hook v. Rothstein)'. Same phrase in faq:2."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia applies a physician-centered standard for informed consent cases. Under O.C.G.A. § 31-9-6.1, the question is whether the doctor disclosed what a reasonably prudent physician in the same specialty would disclose under similar circumstances. This means expert medical testimony is essential—you need a qualified physician to testify that the defendant doctor failed to make disclosures that other physicians in the same field routinely provide.",
+      "verdict": "update",
+      "currentValue": "The statute does not say 'in the same specialty' or 'under similar circumstances'. It requires disclosure of the six listed items, with material risks defined as those 'generally recognized and accepted by reasonably prudent physicians' that 'if disclosed to a reasonably prudent person in the patient's position, could reasonably be expected to cause such prudent person to decline' (§ 31-9-6.1(a)(3)), and alternatives 'generally recognized and accepted by reasonably prudent physicians' ((a)(5)). The expert affidavit must state that the injury 'was a material risk required to be disclosed' ((d)). Expert competency in Georgia is governed by § 24-7-702(c) (facts-1676).",
+      "sourceName": "O.C.G.A. § 31-9-6.1(a)(3),(a)(5),(d)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-31/chapter-9/section-31-9-6-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Retitle 'Georgia's Statutory Standard'. Rewrite the first two sentences: 'Georgia's rule is entirely statutory. Under O.C.G.A. § 31-9-6.1 the doctor must disclose, in general terms, the six items the statute lists, and a risk is material only if reasonably prudent physicians recognize it and a reasonably prudent patient would decline the procedure because of it.' Keep the expert-testimony sentence but tie it to § 31-9-6.1(d)."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia law also creates a presumption in favor of the physician when a written consent form has been signed. Under O.C.G.A. § 31-9-6.1, a signed consent form that identifies the procedure, risks, and alternatives creates a rebuttable presumption that informed consent was obtained. However, patients can overcome this presumption by showing that the form was inadequate, misleading, or that the doctor did not actually explain what the form described.",
+      "verdict": "keep",
+      "currentValue": "§ 31-9-6.1(b)(2): a written consent that 'discloses in general terms the information required in subsection (a)', is 'duly evidenced in writing', and is signed by the patient or an authorized person 'shall be rebuttably presumed to be a valid consent'. Rule 360-14-.05(1)(a) deems compliance where the Board's Exhibit A form or a substantially similar one is used. The disclosures may be made 'through the use of video tapes, audio tapes, pamphlets, booklets, or other means of communication or through conversations with nurses, physician assistants, trained counselors, patient educators' ((c)).",
+      "sourceName": "O.C.G.A. § 31-9-6.1(b),(c); Ga. Comp. R. & Regs. 360-14-.05",
+      "sourceUrl": "https://rules.sos.ga.gov/gac/360-14",
+      "retrievedAt": "2026-09-24",
+      "note": "Accurate. Optionally tighten 'identifies the procedure, risks, and alternatives' to 'covers the six required disclosures in general terms'. The rebuttal examples in the last sentence are the post's own gloss on 'rebuttable', not a holding; acceptable as written."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina takes a more patient-friendly approach. The standard focuses on what a reasonable patient would need to know to make an informed decision, rather than what physicians customarily disclose. This means a doctor cannot defend an informed consent claim simply by showing that other doctors in the area also fail to disclose a particular risk—if a reasonable patient would want to know about it, it should have been disclosed.",
+      "verdict": "update",
+      "currentValue": "Reversed. Hook v. Rothstein rejected exactly this 'lay standard' and adopted the professional standard: disclosure is 'measured by those communications a reasonable medical practitioner in the same branch of medicine would make under the same or similar circumstances', established 'ordinarily by expert medical testimony' (281 S.C. at 553, 562–63). Evidence of medical custom is 'of paramount importance with regard to the issue of liability' under this standard (id. at 549), and testimony about 'the standard disclosure practice of radiologists in the Columbia area' was 'clearly admissible on the issue of what a reasonable physician would have disclosed' (id. at 557). The court reasoned that 'the decision as to risk disclosure is a medical question' (id. at 551). Causation is objective: liability exists 'only if a reasonable person in the patient's position would have refused the treatment had he or she been told of the risk that resulted in injury' (id. at 565).",
+      "sourceName": "Hook v. Rothstein, 281 S.C. 541, 549–553, 557, 562–565 (Ct. App. 1984)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/court-of-appeals/1984/281-s-c-541-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Retitle 'South Carolina's Professional Standard' and rewrite the paragraph: South Carolina has no informed-consent statute; its rule comes from Hook v. Rothstein (1984), which requires a physician to disclose what a reasonable physician in the same field would disclose, proven through expert testimony; what other physicians customarily disclose is central evidence, not a defense the law rejects. The one respect in which South Carolina is broader than Georgia is scope (any diagnostic, therapeutic or surgical procedure), not the standard."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina courts have emphasized that the patient's right to self-determination is the foundation of informed consent law, and that doctors have a duty to respect patients' autonomy by providing complete and understandable information about their treatment options.",
+      "verdict": "keep",
+      "currentValue": "Hook: 'The basis of the doctrine is the patient's right to exercise control over his or her own body by deciding intelligently for himself or herself whether or not to submit to the particular procedure' (281 S.C. at 547–48). Harvey v. Strickland (S.C. 2002) grounded the right to refuse treatment in 'the right of every individual to the possession and control of his own person' and the Adult Health Care Consent Act, S.C. Code § 44-66-60. But Hook also holds 'the extent of disclosure is ordinarily a medical judgment' (id. at 561), so 'complete' information is an overstatement.",
+      "sourceName": "Hook v. Rothstein, 281 S.C. at 547–548, 561; Harvey v. Strickland, Op. No. 25491 (S.C. 2002)",
+      "sourceUrl": "https://www.sccourts.org/opinions/htmlfiles/SC/25491.htm",
+      "retrievedAt": "2026-09-24",
+      "note": "Change 'complete and understandable information' to 'the information a reasonable physician would give'. Keep the self-determination sentence."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Medical emergencies:</strong> When a patient is unconscious, incapacitated, or in immediate danger of death or serious harm, doctors can provide life-saving treatment without consent. The assumption is that a reasonable person would consent to emergency care",
+      "verdict": "keep",
+      "currentValue": "Georgia: disclosure and consent are not required if 'an emergency exists as defined in Code Section 31-9-3' (§ 31-9-6.1(e)(1)); § 31-9-3(a) defines an emergency as one where treatment is 'reasonably necessary', 'a person authorized to consent under Code Section 31-9-2 is not readily available', and 'any delay in treatment could reasonably be expected to jeopardize the life or health of the person affected or could reasonably result in disfigurement or impaired faculties'; consent 'will be implied where an emergency exists' ((b)). South Carolina: the Hook duty applies 'in the absence of an emergency that warrants immediate medical treatment' (281 S.C. at 547). Caveat from Harvey v. Strickland: an emergency does not override a competent patient's prior, documented refusal (a Jehovah's Witness's written refusal of blood), and whether a real emergency existed is a jury question.",
+      "sourceName": "O.C.G.A. § 31-9-6.1(e)(1); O.C.G.A. § 31-9-3; Hook v. Rothstein; Harvey v. Strickland",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-31/chapter-9/section-31-9-3/",
+      "retrievedAt": "2026-09-24",
+      "note": "Optionally add: 'An emergency does not override a refusal you documented in advance while competent (Harvey v. Strickland, S.C. 2002).' Georgia's definition also requires that no authorized decision-maker be readily available."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Therapeutic privilege:</strong> In rare cases, a doctor may withhold certain information if disclosure would be so harmful to the patient that it would interfere with the patient's ability to make a rational decision. Courts apply this exception very narrowly",
+      "verdict": "update",
+      "currentValue": "South Carolina recognizes it: 'One such circumstance is where the physician reasonably believes that a complete and candid disclosure of possible consequences might have a detrimental effect on the physical or psychological well-being of the patient' (Hook, 281 S.C. at 562), and the burden stays on the plaintiff to prove a reasonable physician would have disclosed. Georgia's statute contains no therapeutic-privilege exception; its five exceptions are emergency, no-material-risk procedures, written patient request not to be informed, prior consent within 30 days, and unforeseen procedures the patient authorized the physician to decide (§ 31-9-6.1(e)(1)–(5)). Because the Georgia doctrine is exclusively statutory and strictly construed, a therapeutic-privilege defense is not part of Georgia law. 'Courts apply this exception very narrowly' is unsupported by either source.",
+      "sourceName": "Hook v. Rothstein, 281 S.C. at 562–563; O.C.G.A. § 31-9-6.1(e); Ga. Comp. R. & Regs. 360-14-.06",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/court-of-appeals/1984/281-s-c-541-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Label it South Carolina only: 'Therapeutic privilege (South Carolina): ... (Hook v. Rothstein). Georgia's statute has no such exception.' Delete 'Courts apply this exception very narrowly'."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Patient waiver:</strong> A patient may explicitly waive their right to be informed, telling the doctor they do not want to know the details and prefer the doctor to decide. This waiver should be documented",
+      "verdict": "update",
+      "currentValue": "Georgia requires the waiver in writing: disclosure is excused if the patient or authorized person 'make a request in writing that the information provided for in this Code section not be disclosed' (§ 31-9-6.1(e)(3)); the Board publishes a waiver form as Exhibit B to Rule 360-14. No South Carolina authority on waiver was located (Hook does not address it).",
+      "sourceName": "O.C.G.A. § 31-9-6.1(e)(3); Ga. Comp. R. & Regs. 360-14-.06(c) and Exhibit B",
+      "sourceUrl": "https://rules.sos.ga.gov/gac/360-14",
+      "retrievedAt": "2026-09-24",
+      "note": "Change 'This waiver should be documented' to 'In Georgia the request must be in writing (O.C.G.A. § 31-9-6.1(e)(3))'. Drop the implication that an oral waiver suffices."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Commonly known risks:</strong> Risks that are commonly known to the general public—such as the possibility of pain or bruising from a blood draw—generally do not require specific disclosure",
+      "verdict": "drop",
+      "currentValue": "No such exception exists in § 31-9-6.1(e) or in Hook. A blood draw is outside Georgia's statute altogether (not surgery under the listed anesthesia, amniocentesis or a contrast injection). Georgia's nearest exception is a procedure 'generally recognized by reasonably prudent physicians to be a procedure which does not involve a material risk' ((e)(2)); Hook's nearest rule is that remote, low-severity risks need not be disclosed.",
+      "sourceName": "O.C.G.A. § 31-9-6.1(e)(2); Hook v. Rothstein, 281 S.C. at 561",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-31/chapter-9/section-31-9-6-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Replace this bullet and the next with two verifiable ones: 'Procedures with no material risk: Georgia excuses disclosure for procedures reasonably prudent physicians recognize as carrying no material risk (O.C.G.A. § 31-9-6.1(e)(2)); South Carolina does not require disclosure of remote, minor risks (Hook)' and 'Recent or advance consent (Georgia): a compliant consent given within the prior 30 days as part of a course of treatment, or the patient's advance authorization for the physician to decide on unforeseen procedures (O.C.G.A. § 31-9-6.1(e)(4)–(5))'. Same claim in faq:3."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Simple or routine procedures:</strong> Routine examinations, vital sign checks, and simple diagnostic procedures that carry minimal risk typically do not require formal informed consent",
+      "verdict": "update",
+      "currentValue": "True in effect for Georgia but for a different reason: the statute simply does not reach anything other than surgery under general, spinal or major regional anesthesia, amniocentesis and contrast-injection diagnostics (§ 31-9-6.1(a)), and separately excuses covered procedures with no material risk ((e)(2)). In South Carolina the duty covers any diagnostic or therapeutic procedure, but remote, low-severity risks need not be disclosed (Hook, 281 S.C. at 561).",
+      "sourceName": "O.C.G.A. § 31-9-6.1(a),(e)(2); Hook v. Rothstein",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-31/chapter-9/section-31-9-6-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Merge with the previous bullet per that note."
+    },
+    {
+      "surface": "body",
+      "claim": "To recover damages, you must prove four elements: Duty to disclose ... Breach of duty ... Causation: Had you been properly informed, you would not have consented to the treatment. This is often the most contested element—you must show that a reasonable person in your position would have chosen differently with full information ... Injury: You suffered actual harm as a result of the undisclosed risk materializing.",
+      "verdict": "keep",
+      "currentValue": "Georgia § 31-9-6.1(d): the action lies 'upon a showing: (1) That the patient suffered an injury which was proximately caused by the surgical or diagnostic procedure; (2) That information concerning the injury suffered was not disclosed as required by this Code section; and (3) That a reasonably prudent patient would have refused the surgical or diagnostic procedure or would have chosen a practical alternative to such proposed surgical or diagnostic procedure if such information had been disclosed'. The claim is 'based on an injury resulting from an undisclosed material risk of the procedure' (Callaway v. O'Connell, 44 F. Supp. 3d 1316 (M.D. Ga. 2014)). South Carolina: 'It is for the plaintiff to show that the undisclosed risk materialized and caused him or her injury and that had the plaintiff been informed he or she would not have submitted'; the court 'reject[ed] both the subjective test and the appellant's hybrid test for causation and adopt[ed] the objective test' — 'a reasonable person in the patient's position would have refused the treatment had he or she been told of the risk that resulted in injury' (Hook, 281 S.C. at 564–565). Both states are objective.",
+      "sourceName": "O.C.G.A. § 31-9-6.1(d); Hook v. Rothstein, 281 S.C. at 564–565",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-31/chapter-9/section-31-9-6-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Accurate. Tighten the causation bullet so the first sentence does not read as a subjective test: 'Had you been properly informed, a reasonable patient in your position would have declined the procedure or chosen an alternative — an objective test in both states (O.C.G.A. § 31-9-6.1(d); Hook v. Rothstein).' Optionally add that Georgia also lets the patient show they 'would have chosen a practical alternative'."
+    },
+    {
+      "surface": "body",
+      "claim": "you only have a claim if the undisclosed risk actually caused you harm AND you would have declined the procedure had you known about that risk.",
+      "verdict": "keep",
+      "currentValue": "Matches § 31-9-6.1(d)(1)–(3) and Hook's causation holding, subject to the objective framing above.",
+      "sourceName": "O.C.G.A. § 31-9-6.1(d); Hook v. Rothstein",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-31/chapter-9/section-31-9-6-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Change 'you would have declined' to 'a reasonable patient would have declined'."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Expert medical testimony:</strong> In both Georgia (O.C.G.A. § 9-11-9.1) and South Carolina (S.C. Code § 15-36-100), you must present expert testimony from a qualified physician who can explain what disclosures should have been made and how the failure to disclose fell below the applicable standard of care.",
+      "verdict": "update",
+      "currentValue": "Both cited sections are affidavit-at-filing statutes, not the source of the trial testimony requirement. Georgia: § 31-9-6.1(d) requires the § 9-11-9.1 affidavit to 'set forth that the patient suffered an injury which was proximately caused by the surgical or diagnostic procedure and that such injury was a material risk required to be disclosed'. South Carolina: the affidavit must accompany the pre-suit Notice of Intent (§ 15-79-125(A)) and the complaint (§ 15-36-100(B)); at trial 'the plaintiff must ordinarily establish this standard by expert medical evidence' (Hook). South Carolina's expert must meet § 15-36-100(A) (licensed; board-certified in the specialty, or in active practice or teaching in it for three of the last five years). Nurse testimony about nursing consent practice was properly excluded as irrelevant to the radiologists' standard (Hook, 281 S.C. at 556–557).",
+      "sourceName": "O.C.G.A. § 31-9-6.1(d); S.C. Code § 15-79-125(A); § 15-36-100(A)–(B); Hook v. Rothstein",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c036.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'In Georgia the expert affidavit filed with the complaint must state that your injury was a material risk the statute required to be disclosed (O.C.G.A. §§ 9-11-9.1, 31-9-6.1(d)). In South Carolina an expert affidavit accompanies both the pre-suit Notice of Intent (S.C. Code § 15-79-125) and the complaint (S.C. Code § 15-36-100), and at trial an expert in the same field must establish what a reasonable physician would have disclosed (Hook v. Rothstein).'"
+    },
+    {
+      "surface": "body",
+      "claim": "File the required expert affidavit within statutory deadlines—missing this requirement can result in automatic dismissal in both Georgia and South Carolina",
+      "verdict": "update",
+      "currentValue": "Georgia: no affidavit means 'the complaint shall be dismissed for failure to state a claim' (§ 9-11-9.1(b)); a defective one may be cured within 30 days of the motion ((e)) (facts-1676). South Carolina: if no affidavit is filed within the period and the defendant moves to dismiss with its first responsive pleading, 'the complaint is subject to dismissal for failure to state a claim' (§ 15-36-100(C)(1)); a defective affidavit may be cured 'by amendment within thirty days of service of the motion' ((E)). South Carolina also requires the pre-suit Notice of Intent and mediation before the complaint can be filed at all (§ 15-79-125). 'Automatic' overstates both.",
+      "sourceName": "O.C.G.A. § 9-11-9.1(b),(e); S.C. Code § 15-36-100(C),(E); § 15-79-125",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c036.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Change to 'Handle the pre-suit steps — Georgia's expert affidavit with the complaint, and South Carolina's Notice of Intent, expert affidavit and mandatory mediation — because a missing affidavit means dismissal in both states'."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Scope of procedure changes:</strong> Performing additional procedures beyond what was consented to during surgery, such as removing an organ or extending the surgical site without prior authorization",
+      "verdict": "keep",
+      "currentValue": "This is the battery scenario, not an informed-consent (negligence) claim. Hook: 'the battery theory is applicable either where the physician performs a procedure to which the patient has not consented or where the patient gives permission to perform one type of procedure and the physician performs another', while it 'has no application where the patient gives his or her consent to a particular procedure and an undisclosed inherent complication with a low probability occurs' (281 S.C. at 558); South Carolina recognizes medical battery for failing to obtain proper consent (Harvey v. Strickland, citing Banks v. MUSC, 314 S.C. 376 (1994)). Georgia: where there was basic consent to the procedure, allegations of inadequate disclosure 'reflected on an informed consent, not a battery, claim' (Doctors Hosp. of Augusta v. Alicea, 332 Ga. App. 529 (2015), aff'd 299 Ga. 315 (2016)). Georgia caveat: the statute lets a patient consent in advance to let the physician decide on unforeseen procedures (§ 31-9-6.1(e)(5)), and the Board's Exhibit A form contains that authorization.",
+      "sourceName": "Hook v. Rothstein, 281 S.C. at 558; Harvey v. Strickland (S.C. 2002); Justia annotations to O.C.G.A. § 31-9-6.1 (Alicea); § 31-9-6.1(e)(5)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/court-of-appeals/1984/281-s-c-541-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Optionally add one sentence: 'Treatment with no consent at all, or a different procedure than the one agreed to, is a medical battery in both states rather than an informed-consent claim; an undisclosed complication of a procedure you did agree to is informed consent, not battery.' If added, note that Georgia consent forms commonly authorize the surgeon to handle unforeseen conditions (O.C.G.A. § 31-9-6.1(e)(5))."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Medication side effects:</strong> Prescribing medications with serious side effects—such as blood thinners, chemotherapy drugs, or psychiatric medications—without adequately warning patients of the risks",
+      "verdict": "update",
+      "currentValue": "Not an informed-consent claim in Georgia: prescribing is none of the procedures in § 31-9-6.1(a), and there is no common-law disclosure duty (Blotner; Albany Urology Clinic: 'The Georgia informed consent statute does not impose a general requirement of disclosure upon physicians'). A physician does have 'a common law duty to answer truthfully a patient's questions regarding medical or procedural risks' (Albany Urology Clinic, quoted in Blotner). In South Carolina a 'therapeutic' procedure is within Hook's duty.",
+      "sourceName": "Blotner v. Doreika, 285 Ga. 481 (2009) quoting Albany Urology Clinic v. Cleveland, 272 Ga. 296, 298–299 (2000); Hook v. Rothstein",
+      "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/2009/s08g2016.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Append '(South Carolina; in Georgia a drug-warning failure is pursued as ordinary malpractice, not informed consent, though a doctor must answer a patient's direct questions truthfully)'."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Childbirth interventions:</strong> Performing cesarean sections, episiotomies, or forceps deliveries without adequate disclosure of risks and alternatives.",
+      "verdict": "update",
+      "currentValue": "In Georgia only a cesarean (surgery under spinal, epidural or general anesthesia — 'major regional anesthesia' includes 'spinal, epidural, intravenous regional, or brachial plexus anesthetic' for the torso, Rule 360-14-.02(8)) is within § 31-9-6.1(a); an episiotomy or forceps delivery without such anesthesia is not. All are within South Carolina's Hook duty.",
+      "sourceName": "O.C.G.A. § 31-9-6.1(a); Ga. Comp. R. & Regs. 360-14-.02(7)–(8)",
+      "sourceUrl": "https://rules.sos.ga.gov/gac/360-14",
+      "retrievedAt": "2026-09-24",
+      "note": "Add '(in Georgia, only when the delivery is performed under spinal, epidural or general anesthesia)'."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Diagnostic procedure risks:</strong> Complications from biopsies, catheterizations, endoscopies, and other invasive diagnostic procedures where risks were not disclosed",
+      "verdict": "update",
+      "currentValue": "Georgia covers diagnostic procedures only if they are amniocentesis, involve 'intravenous or intraductal injection of a contrast material' (e.g., an IVP, angiogram or CT with contrast), or are surgical procedures under the listed anesthesia (§ 31-9-6.1(a)). A biopsy or endoscopy under local anesthesia or sedation is outside the statute. Hook itself was a contrast-injection (IVP) death case and such procedures are within South Carolina's duty.",
+      "sourceName": "O.C.G.A. § 31-9-6.1(a); Ga. Comp. R. & Regs. 360-14-.02(1),(9); Hook v. Rothstein, 281 S.C. at 546–547",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-31/chapter-9/section-31-9-6-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'Diagnostic procedure risks: reactions to contrast dye in imaging studies, and complications of biopsies, catheterizations and endoscopies (in Georgia, only contrast-injection studies, amniocentesis and procedures under general, spinal or major regional anesthesia are covered)'."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Alternative treatment options:</strong> Recommending surgery without informing the patient that conservative treatment, physical therapy, or watchful waiting were viable alternatives",
+      "verdict": "keep",
+      "currentValue": "Georgia requires disclosure of 'the practical alternatives to such proposed surgical or diagnostic procedure which are generally recognized and accepted by reasonably prudent physicians' (§ 31-9-6.1(a)(5)), and a reasonably prudent patient's choice of 'a practical alternative' satisfies causation ((d)(3)); not every alternative — only generally accepted ones (Moore v. Baker, 11th Cir. 1993). South Carolina: 'the existence of any alternatives to the procedure' (Hook).",
+      "sourceName": "O.C.G.A. § 31-9-6.1(a)(5),(d)(3); Justia annotation (Moore v. Baker); Hook v. Rothstein",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-31/chapter-9/section-31-9-6-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Optionally add 'generally accepted' before 'alternatives'."
+    },
+    {
+      "surface": "body",
+      "claim": "Cases involving <a href=\"/practice-areas/nursing-home-abuse-lawyers/\">nursing home residents</a> and elderly patients raise additional informed consent issues, particularly regarding medication management, restraint use, and decisions made by healthcare proxies or powers of attorney.",
+      "verdict": "keep",
+      "currentValue": "General statement; Georgia's statute lets 'other person or persons authorized to consent pursuant to the terms of this chapter' sign (§ 31-9-6.1(b)(2), § 31-9-2), and South Carolina's Adult Health Care Consent Act (S.C. Code § 44-66-10 et seq.) governs surrogate consent (Harvey v. Strickland). Not a specific legal claim.",
+      "sourceName": "O.C.G.A. § 31-9-6.1(b)(2); Harvey v. Strickland (S.C. 2002) citing S.C. Code § 44-66-60",
+      "sourceUrl": "https://www.sccourts.org/opinions/htmlfiles/SC/25491.htm",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "Navigate Georgia's rebuttable presumption created by signed consent forms",
+      "verdict": "keep",
+      "currentValue": "§ 31-9-6.1(b)(2).",
+      "sourceName": "O.C.G.A. § 31-9-6.1(b)(2)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-31/chapter-9/section-31-9-6-1/",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "At Roden Law, we handle medical malpractice cases across Georgia and South Carolina, including claims based on lack of informed consent. We work on a contingency fee basis—you pay nothing unless we recover compensation for you. ... Call <a href=\"tel:+18447378587\">1-844-RESULTS</a>",
+      "verdict": "keep",
+      "currentValue": "Firm facts: six offices in GA and SC, medical malpractice in the practice list, contingency fee, and tel:+18447378587 for 1-844-RESULTS per profiles/writer-profile.md and client.json (as verified in facts-1676).",
+      "sourceName": "profiles/writer-profile.md; client.json",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "excerpt",
+      "claim": "Doctors must disclose risks and alternatives before treating you. How informed consent works in Georgia and South Carolina, and when a failure is malpractice.",
+      "verdict": "update",
+      "currentValue": "Georgia's duty attaches only before surgery under general, spinal or major regional anesthesia, amniocentesis and contrast-injection diagnostics, not 'before treating you' generally (§ 31-9-6.1(a); Blotner).",
+      "sourceName": "O.C.G.A. § 31-9-6.1(a); Blotner v. Doreika",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-31/chapter-9/section-31-9-6-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Minimal edit: 'before surgery and other major procedures'. This text publishes as the Article description."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Georgia applies a physician-centered standard with a rebuttable presumption for signed consent forms (O.C.G.A. § 31-9-6.1), while South Carolina uses a patient-centered standard.",
+      "verdict": "update",
+      "currentValue": "Georgia: statutory hybrid (risks reasonably prudent physicians recognize that would lead a reasonably prudent patient to decline) limited to listed procedures, with a rebuttable presumption from a compliant signed form (§ 31-9-6.1(a)(3),(b)(2)). South Carolina: professional (physician) standard by case law, expert testimony required, no statute (Hook v. Rothstein, 281 S.C. 541 (Ct. App. 1984)).",
+      "sourceName": "O.C.G.A. § 31-9-6.1; Hook v. Rothstein",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/court-of-appeals/1984/281-s-c-541-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'Georgia's duty is statutory, covers only surgery under general, spinal or major regional anesthesia and certain diagnostic procedures, and treats a compliant signed form as a rebuttable presumption of consent (O.C.G.A. § 31-9-6.1); South Carolina's duty is broader in scope but measured by what a reasonable physician would disclose, proven through expert testimony (Hook v. Rothstein).' Rendered above the article; keep plain text."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Claims must be filed within 2 years in Georgia (O.C.G.A. § 9-3-71) or 3 years in South Carolina (S.C. Code § 15-3-545), both requiring expert affidavits.",
+      "verdict": "update",
+      "currentValue": "Georgia: 2 years from the injury, 5-year repose (§ 9-3-71). South Carolina: 3 years from the procedure or discovery, never more than 6 years (§ 15-3-545(A)). Both require expert affidavits; South Carolina additionally requires a pre-suit Notice of Intent and mediation (§ 15-79-125).",
+      "sourceName": "O.C.G.A. § 9-3-71; S.C. Code § 15-3-545; § 15-79-125",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Minimal edit: 'within 2 years of the injury in Georgia (O.C.G.A. § 9-3-71) or 3 years in South Carolina, capped at 6 years (S.C. Code § 15-3-545); both require expert affidavits, and South Carolina also requires a pre-suit notice and mediation (S.C. Code § 15-79-125).'"
+    },
+    {
+      "surface": "faq:0",
+      "claim": "Informed consent is the legal requirement that doctors must explain a proposed treatment, its risks, benefits, and alternatives before performing it, so the patient can make a knowledgeable decision. It is a communication process, not just a signed form.",
+      "verdict": "keep",
+      "currentValue": "Consistent with § 31-9-6.1(a),(c) (disclosure 'in general terms' through conversation or media) and Hook's statement of the doctrine. Generic enough to hold for both states.",
+      "sourceName": "O.C.G.A. § 31-9-6.1(a),(c); Hook v. Rothstein, 281 S.C. at 547",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-31/chapter-9/section-31-9-6-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:1",
+      "claim": "Doctors must disclose the diagnosis, the proposed treatment, material risks and complications, expected benefits, alternative treatments and their risks, risks of declining treatment, and recovery expectations. They must disclose risks that a reasonable patient would consider significant.",
+      "verdict": "update",
+      "currentValue": "Six items in both states: diagnosis; nature and purpose of the procedure; material risks; likelihood of success; practical (generally accepted) alternatives; prognosis if the procedure is declined (§ 31-9-6.1(a); Hook). 'Recovery expectations' is not required. The second sentence states the lay standard South Carolina rejected; Georgia's test is the statutory hybrid.",
+      "sourceName": "O.C.G.A. § 31-9-6.1(a); Hook v. Rothstein, 281 S.C. at 547, 553",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-31/chapter-9/section-31-9-6-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'In both states the doctor must explain the diagnosis, the nature and purpose of the procedure, its material risks, the likelihood of success, the generally accepted alternatives, and what will happen if you decline. Georgia defines material risks by statute (O.C.G.A. § 31-9-6.1); South Carolina asks what a reasonable physician in the same field would disclose (Hook v. Rothstein).' Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:2",
+      "claim": "Not necessarily. In Georgia, a signed consent form creates a rebuttable presumption of informed consent (O.C.G.A. § 31-9-6.1), but patients can overcome it by showing the form was inadequate or the doctor did not actually explain the risks. In South Carolina, the form is evidence but not conclusive.",
+      "verdict": "update",
+      "currentValue": "Georgia sentence verified (§ 31-9-6.1(b)(2)); note the presumption arises only if the written consent discloses the six items in general terms. The South Carolina sentence has no located authority; replace with the Hook framing.",
+      "sourceName": "O.C.G.A. § 31-9-6.1(b); Hook v. Rothstein",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-31/chapter-9/section-31-9-6-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Last sentence → 'South Carolina has no statutory presumption; the question is whether the doctor actually disclosed what a reasonable physician would have (Hook v. Rothstein).' Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:3",
+      "claim": "Informed consent is not required in medical emergencies involving unconscious patients needing life-saving care, when a patient explicitly waives the right to information, for commonly known risks, and for routine non-invasive procedures like vital sign checks.",
+      "verdict": "update",
+      "currentValue": "Emergency: both states (§ 31-9-6.1(e)(1)/§ 31-9-3; Hook). Waiver: Georgia requires a written request ((e)(3)). 'Commonly known risks' is not an exception in either state. 'Routine non-invasive procedures' are simply outside Georgia's statute; Georgia also excuses covered procedures that carry no material risk ((e)(2)), a compliant consent within the prior 30 days ((e)(4)), and unforeseen procedures the patient authorized the physician to decide ((e)(5)). South Carolina: no disclosure of remote, minor risks (Hook) and therapeutic privilege (Hook).",
+      "sourceName": "O.C.G.A. § 31-9-6.1(e); O.C.G.A. § 31-9-3; Hook v. Rothstein, 281 S.C. at 547, 561–563",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-31/chapter-9/section-31-9-6-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'Both states excuse disclosure in a genuine emergency. Georgia also excuses it when the patient asks in writing not to be told, when the procedure carries no material risk, when a compliant consent was given within the prior 30 days, or for unforeseen procedures the patient authorized the surgeon to decide (O.C.G.A. § 31-9-6.1(e)); Georgia's duty never reaches routine, non-surgical care at all. South Carolina does not require disclosure of remote, minor risks and recognizes a narrow therapeutic privilege (Hook v. Rothstein).' Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:4",
+      "claim": "In Georgia, the statute of limitations is 2 years from the date of injury or discovery (O.C.G.A. § 9-3-71). In South Carolina, it is 3 years from the date of injury or discovery (S.C. Code § 15-3-545). Both states require filing an expert affidavit with the complaint.",
+      "verdict": "update",
+      "currentValue": "Georgia: 2 years from the injury, no discovery rule, 5-year repose (§ 9-3-71(a),(b)). South Carolina: 3 years from the procedure or from when the injury was or reasonably should have been discovered, 'not to exceed six years from date of occurrence' (§ 15-3-545(A)); foreign objects 2 years from discovery ((B)). Affidavits: Georgia with the complaint (§ 9-11-9.1); South Carolina with the pre-suit Notice of Intent (§ 15-79-125(A)) and with the complaint (§ 15-36-100(B)); filing the Notice tolls the limitation period.",
+      "sourceName": "O.C.G.A. § 9-3-71; S.C. Code § 15-3-545; § 15-79-125; § 15-36-100",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'In Georgia, 2 years from the injury — Georgia has no discovery rule — and never more than 5 years after the procedure (O.C.G.A. § 9-3-71). In South Carolina, 3 years from the procedure or from when you discovered or should have discovered the injury, and never more than 6 years after the procedure (S.C. Code § 15-3-545). Georgia requires an expert affidavit with the complaint (O.C.G.A. § 9-11-9.1); South Carolina requires one with a pre-suit Notice of Intent, followed by mediation, and again with the complaint (S.C. Code §§ 15-79-125, 15-36-100).' Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:5",
+      "claim": "You must prove the doctor had a duty to disclose specific information, failed to do so, you would not have consented with full information, and you suffered actual harm from an undisclosed risk. This requires medical records, expert testimony, and evidence of what was or was not communicated.",
+      "verdict": "update",
+      "currentValue": "Elements verified (§ 31-9-6.1(d); Hook at 564–565), but causation is objective in both states: 'a reasonably prudent patient would have refused ... or would have chosen a practical alternative' (Georgia) / 'a reasonable person in the patient's position would have refused' (South Carolina). Georgia additionally requires the injury to be one of the statute's listed material risks.",
+      "sourceName": "O.C.G.A. § 31-9-6.1(d); Hook v. Rothstein, 281 S.C. at 565",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-31/chapter-9/section-31-9-6-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Change 'you would not have consented with full information' to 'a reasonable patient in your position would have declined the procedure (or, in Georgia, chosen an accepted alternative) with full information'. Publishes as FAQPage structured data."
+    }
+  ],
+  "recommendedEdits": [
+    "Body, intro: 'Before any medical procedure, surgery, or treatment' → 'Before surgery and other significant procedures'; add one sentence that Georgia's duty is statutory and limited to surgery under general, spinal or major regional anesthesia, amniocentesis and contrast-injection diagnostics (O.C.G.A. § 31-9-6.1; Blotner v. Doreika, 285 Ga. 481 (2009)), while South Carolina's court-made duty covers any diagnostic, therapeutic or surgical procedure (Hook v. Rothstein, 281 S.C. 541 (Ct. App. 1984)). Fix the Cornell lead-in: 'Cornell Law Institute' → 'Cornell Law School's Legal Information Institute' (href stays).",
+    "Body, 'What Is Informed Consent': replace 'Courts in both Georgia and South Carolina have consistently held...' with the statutory rebuttable-presumption rule for Georgia and the Hook framing for South Carolina; rewrite the scope paragraph so 'medication changes, radiation therapy, physical therapy protocols' are not presented as covered in Georgia.",
+    "Body, disclosure list and faq:1: cut to the six items both states use (diagnosis; nature and purpose; material risks; likelihood of success; generally accepted alternatives; prognosis if declined) — delete 'Recovery expectations'; rewrite the 'material risk' paragraph with Georgia's statutory definition (listed harms, recognized by reasonably prudent physicians, that would lead a reasonably prudent patient to decline) and South Carolina's reasonable-physician measure; keep the rare-risk sentence.",
+    "Body, comparison table — Legal Standard row: Georgia 'Statutory hybrid — risks reasonably prudent physicians recognize that would lead a reasonably prudent patient to decline (O.C.G.A. § 31-9-6.1)'; South Carolina 'Professional standard — what a reasonable physician in the same field would disclose; no statute (Hook v. Rothstein, 281 S.C. 541 (Ct. App. 1984))'.",
+    "Body, comparison table — Expert Testimony row: Georgia 'Required; the § 9-11-9.1 affidavit must state the injury was a material risk the statute required to be disclosed (O.C.G.A. § 31-9-6.1(d))'; South Carolina 'Required to establish what a reasonable physician would have disclosed (Hook v. Rothstein)'.",
+    "Body, comparison table — Affidavit row, South Carolina: 'Pre-suit Notice of Intent with expert affidavit and mandatory mediation (S.C. Code § 15-79-125), then expert affidavit with the complaint (S.C. Code § 15-36-100)'.",
+    "Body, comparison table — Statute of Limitations row: Georgia '2 years from the injury (usually the procedure date); no discovery rule; absolute 5-year repose (O.C.G.A. § 9-3-71)'; South Carolina '3 years from the procedure or from discovery, never more than 6 years after the procedure (S.C. Code § 15-3-545)'.",
+    "Body, comparison table — Damage Caps row, South Carolina: 'Noneconomic damages capped at $350,000 per defendant / $1.05 million total, inflation-adjusted ($596,001 / $1,788,002 in 2026) — S.C. Code § 15-32-220; economic damages uncapped; punitive damages capped at the greater of 3× compensatory or $500,000 — S.C. Code § 15-32-530'. Never say South Carolina has no cap.",
+    "Body, comparison table — Consent Form Effect row, South Carolina, and faq:2 last sentence: 'No statutory presumption; the case turns on what was actually disclosed, measured against what a reasonable physician would disclose (Hook v. Rothstein)'.",
+    "Body, 'Georgia's Professional Standard' subsection: retitle 'Georgia's Statutory Standard'; replace 'what a reasonably prudent physician in the same specialty would disclose under similar circumstances' with the statute's own hybrid wording; tie the expert-testimony sentence to O.C.G.A. § 31-9-6.1(d). Keep the rebuttable-presumption paragraph.",
+    "Body, 'South Carolina's Patient Standard' subsection: retitle 'South Carolina's Professional Standard' and rewrite — South Carolina has no informed-consent statute; Hook v. Rothstein (1984) rejected the patient ('lay') standard, requires disclosure of what a reasonable physician in the same field would disclose, proven by expert testimony, with what other physicians customarily disclose as central evidence; causation is objective. Keep the self-determination sentence but change 'complete and understandable information' to 'the information a reasonable physician would give'. The one way South Carolina is broader than Georgia is scope (any diagnostic, therapeutic or surgical procedure).",
+    "Body, exceptions list and faq:3: keep 'Medical emergencies' (optionally add that an emergency does not override a refusal documented in advance — Harvey v. Strickland, S.C. 2002); mark 'Therapeutic privilege' South Carolina only (Hook) and delete 'Courts apply this exception very narrowly'; 'Patient waiver' → in Georgia the request must be in writing (O.C.G.A. § 31-9-6.1(e)(3)); delete 'Commonly known risks'; replace 'Simple or routine procedures' with Georgia's no-material-risk, prior-consent-within-30-days and unforeseen-procedure exceptions (O.C.G.A. § 31-9-6.1(e)(2),(4),(5)) plus South Carolina's remote-risk rule (Hook).",
+    "Body, four elements, causation bullet, the following paragraph, and faq:5: state the objective test — 'a reasonable patient in your position would have declined the procedure (or, in Georgia, chosen an accepted alternative)' (O.C.G.A. § 31-9-6.1(d)(3); Hook v. Rothstein).",
+    "Body, 'Proving' section, expert testimony paragraph: § 9-11-9.1 and § 15-36-100 are affidavit statutes; rewrite to cite O.C.G.A. § 31-9-6.1(d) for what Georgia's affidavit must say, S.C. Code §§ 15-79-125 and 15-36-100 for South Carolina's two affidavit filings, and Hook for the trial-testimony requirement.",
+    "Body, 'How a Lawyer Helps', affidavit bullet: replace 'automatic dismissal' with 'a missing affidavit means dismissal in both states' and add South Carolina's Notice of Intent and mandatory mediation (S.C. Code § 15-79-125).",
+    "Body, common-case bullets: 'Medication side effects' → append '(South Carolina; in Georgia a drug-warning failure is ordinary malpractice, not informed consent)'; 'Childbirth interventions' → add '(in Georgia, only when performed under spinal, epidural or general anesthesia)'; 'Diagnostic procedure risks' → lead with contrast-dye reactions and note Georgia's limits; optionally add one sentence distinguishing medical battery (no consent, or a different procedure) from informed consent (undisclosed complication of a consented procedure) — Hook; Doctors Hosp. of Augusta v. Alicea, 332 Ga. App. 529 (2015).",
+    "Excerpt: 'before treating you' → 'before surgery and other major procedures'.",
+    "Key takeaways: rewrite sentence 2 per the Legal Standard row (Georgia statutory, limited scope, rebuttable presumption; South Carolina broader scope but reasonable-physician standard with expert testimony); sentence 3 → '2 years of the injury in Georgia (O.C.G.A. § 9-3-71) or 3 years in South Carolina, capped at 6 years (S.C. Code § 15-3-545); both require expert affidavits, and South Carolina also requires a pre-suit notice and mediation (S.C. Code § 15-79-125)'.",
+    "faq:4: rewrite per the verified claim (Georgia 2 years from injury / no discovery rule / 5-year repose; South Carolina 3 years from procedure or discovery / 6-year cap; Georgia affidavit with complaint; South Carolina affidavit with Notice of Intent and with complaint). These answers publish as FAQPage structured data.",
+    "Do not cite Ketchup v. Howard as current law anywhere — it was overruled by Blotner v. Doreika (2009). Do not describe Georgia as having a 'discovery rule'. Reviewer/attribution: Graeham C. Gillin (two-state post)."
+  ],
+  "statuteCitations": [
+    { "section": "O.C.G.A. § 31-9-6.1", "name": "Required disclosures and consent for certain procedures; exceptions; rules and regulations — covered procedures (a), six disclosures (a)(1)–(6), hybrid material-risk definition (a)(3), rebuttable presumption from compliant written consent (b), elements and expert-affidavit content (d), five exceptions (e), Medical Board rulemaking (g); last amended Ga. L. 2025 (punctuation only)", "url": "https://law.justia.com/codes/georgia/title-31/chapter-9/section-31-9-6-1/" },
+    { "section": "O.C.G.A. § 31-9-3", "name": "Emergencies — definition of 'emergency' (a); consent implied where an emergency exists (b)", "url": "https://law.justia.com/codes/georgia/title-31/chapter-9/section-31-9-3/" },
+    { "section": "O.C.G.A. § 9-3-71", "name": "Medical malpractice — two-year limitation from injury or death (a); five-year statute of ultimate repose (b); no discovery rule (verified facts-1676)", "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/" },
+    { "section": "O.C.G.A. § 9-3-70", "name": "'Action for medical malpractice' defined — § 31-9-6.1(d) routes informed-consent claims into this definition", "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-70/" },
+    { "section": "O.C.G.A. § 9-11-9.1", "name": "Expert affidavit to accompany professional malpractice complaint — contents (a), 45-day window (b), cure of defective affidavit (e) (verified facts-1676)", "url": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-3/section-9-11-9-1/" },
+    { "section": "Ga. Comp. R. & Regs. 360-14", "name": "Georgia Composite Medical Board, Chapter 360-14 Informed Consent — definitions (major regional anesthesia, material risk, contrast materials), disclosure means, rebuttable presumption, exceptions, Exhibit A consent form and Exhibit B waiver form; effective January 1, 1989 (rules.sos.ga.gov returns 403 to curl; read in Chrome)", "url": "https://rules.sos.ga.gov/gac/360-14" },
+    { "section": "S.C. Code § 15-3-545", "name": "Actions for medical malpractice — three years from treatment or discovery, not to exceed six years (A); foreign objects two years from discovery (B); minors' tolling capped at seven years (D)", "url": "https://www.scstatehouse.gov/code/t15c003.php" },
+    { "section": "S.C. Code § 15-79-125", "name": "Notice of Intent to File Suit with expert affidavit as prerequisite; tolls limitations; mandatory pre-litigation mediation within 90–120 days; complaint within 60 days after impasse or before limitations expire, whichever is later", "url": "https://www.scstatehouse.gov/code/t15c079.php" },
+    { "section": "S.C. Code § 15-36-100", "name": "Expert witness qualifications (A); affidavit of expert specifying at least one negligent act filed with the complaint (B); 45-day exception (C)(1); common-knowledge exception (C)(2); 30-day cure of defective affidavit (E)", "url": "https://www.scstatehouse.gov/code/t15c036.php" },
+    { "section": "S.C. Code § 15-32-220", "name": "Noneconomic damages limit in medical malpractice — $350,000 per provider/institution, $1,050,000 aggregate, per claimant; economic damages not limited (D)(1); exceptions for gross negligence, wilful/wanton/reckless conduct, fraud, altered records (E); annual CPI adjustment (F) — $596,001 / $1,788,002 for 2026", "url": "https://www.scstatehouse.gov/code/t15c032.php" },
+    { "section": "S.C. Code § 15-32-530", "name": "Punitive damages cap — greater of three times compensatory damages or $500,000 (A); enhanced cap (B); no cap for intent to harm, felony conviction, or substantial impairment (C); CPI adjustment (D)", "url": "https://www.scstatehouse.gov/code/t15c032.php" }
+  ],
+  "authoritativeLinks": [
+    { "name": "Blotner v. Doreika, 285 Ga. 481, S08G2016 (Ga. June 8, 2009) — 'Georgia does not recognize a common law duty to inform patients of the material risks of a proposed treatment or procedure'; informed consent 'is defined in Georgia exclusively by statutes and regulations'; Ketchup v. Howard, 247 Ga. App. 54 (2000) 'was wrongly decided and is hereby overruled' (opinion PDF at https://cases.justia.com/georgia/supreme-court/s08g2016.pdf)", "url": "https://law.justia.com/cases/georgia/supreme-court/2009/s08g2016.html" },
+    { "name": "Albany Urology Clinic, P.C. v. Cleveland, 272 Ga. 296 (2000), as quoted in Blotner — before 1988 Georgia physicians had no duty to disclose risks; § 31-9-6.1 'does not impose a general requirement of disclosure upon physicians' and 'must be strictly construed'; physicians retain a common-law duty to answer patients' questions truthfully", "url": "https://law.justia.com/cases/georgia/supreme-court/2009/s08g2016.html" },
+    { "name": "Hook v. Rothstein, 281 S.C. 541, 316 S.E.2d 690 (S.C. Ct. App. Apr. 16, 1984), cert. denied, 283 S.C. 64, 320 S.E.2d 35 (1984) — recognizes the doctrine in South Carolina; rejects the lay/prudent-patient standard; adopts the professional standard proven by expert testimony; objective causation test; therapeutic privilege; battery-versus-negligence framing; remote risks need not be disclosed", "url": "https://law.justia.com/cases/south-carolina/court-of-appeals/1984/281-s-c-541-2.html" },
+    { "name": "Harvey v. Strickland, Op. No. 25491 (S.C. July 1, 2002) — Supreme Court of South Carolina: 'In Hook, the Court of Appeals first recognized that the doctrine of informed consent applies to physicians in South Carolina'; 'South Carolina recognizes a medical malpractice cause of action stemming from a lack of informed consent'; medical battery for failure to obtain proper consent (Banks v. MUSC); an emergency does not override a competent patient's documented refusal (S.C. Code § 44-66-60)", "url": "https://www.sccourts.org/opinions/htmlfiles/SC/25491.htm" },
+    { "name": "Justia annotations to O.C.G.A. § 31-9-6.1 — Murphy v. Berger, 273 Ga. App. 798 (2005); Pope v. Davis, 261 Ga. App. 308 (2003); Butler v. South Fulton Medical Ctr., 215 Ga. App. 809 (1994); Roberts v. Connell, 312 Ga. App. 515 (2011); Moore v. Baker, 989 F.2d 1129 (11th Cir. 1993); Doctors Hosp. of Augusta v. Alicea, 332 Ga. App. 529 (2015); Blackwell v. Goodwin, 236 Ga. App. 861 (1999); Cardio TVP Surgical Assocs. v. Gillis, 272 Ga. 404 (2000)", "url": "https://law.justia.com/codes/georgia/title-31/chapter-9/section-31-9-6-1/" },
+    { "name": "S.C. Revenue and Fiscal Affairs Office — memorandum to Legislative Council, 'Non-Economic (Medical Malpractice) Damages Limitation – Inflation Component', Feb. 3, 2026: 2026 limits $596,001 per provider/institution and $1,788,002 aggregate per claimant (CPI index 324.054, +70.3% from 2004 base)", "url": "https://rfa.sc.gov/media/11477" },
+    { "name": "S.C. Revenue and Fiscal Affairs Office — Inflation Adjustments for Legal Proceedings (index of annual § 15-32-220 and § 15-32-530 adjustment letters)", "url": "https://rfa.sc.gov/page/data-research/inflation-adjustments-legal-proceedings" },
+    { "name": "South Carolina Legislature — H.4544 (2025–2026), bill to amend § 15-32-220; passed House 116–0 on 2026-03-25, Senate second reading 2026-05-12, no ratification shown — § 15-32-220 unchanged", "url": "https://www.scstatehouse.gov/billsearch.php?billnumbers=4544&session=126&summary=B" },
+    { "name": "Legal Information Institute, Cornell Law School — Wex: informed consent (the post's existing outbound link; resolves)", "url": "https://www.law.cornell.edu/wex/informed_consent" }
+  ]
+}

@@ -1,0 +1,651 @@
+{
+  "postId": 1650,
+  "slug": "benefits-for-workplace-violence",
+  "verifiedClaims": [
+    {
+      "surface": "body",
+      "claim": "According to OSHA, nearly 2 million American workers report being victims of workplace violence each year — and many more incidents go unreported.",
+      "verdict": "update",
+      "currentValue": "OSHA's workplace-violence page no longer carries the '2 million' figure; it now says 'Many workers report having been victims of workplace violence each year. Unfortunately, many more cases go unreported,' and calls acts of violence 'the third-leading cause of fatal occupational injuries in the United States.' The current primary numbers are BLS Census of Fatal Occupational Injuries, 2024 (released February 19, 2026): 5,070 fatal work injuries; 733 fatalities due to violent acts (down from 740 in 2023); homicides 470 (64.1 percent of violent acts, up from 458 in 2023); women were 8.1 percent of all worker fatalities but 15.3 percent (72) of homicide victims.",
+      "sourceName": "BLS, Census of Fatal Occupational Injuries Summary, 2024 (USDL-26-0230, Feb. 19, 2026); OSHA, Workplace Violence — Overview",
+      "sourceUrl": "https://www.bls.gov/news.release/cfoi.nr0.htm",
+      "retrievedAt": "2026-09-24",
+      "note": "Replace the sentence with: 'According to the Bureau of Labor Statistics, 733 workers were killed by violent acts on the job in 2024, including 470 homicides — and OSHA says many more non-fatal incidents go unreported.' OSHA's own page still quotes the 2023 CFOI (740 / 458); use the 2024 BLS release. Not in data/statistics.json — add if the registry is extended."
+    },
+    {
+      "surface": "body",
+      "claim": "Workers' compensation covers injuries that arise out of and in the course of employment.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 34-9-1(4); S.C. Code § 42-1-160(A)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Verbatim statutory phrase in both states ('injury by accident arising out of and in the course of the employment'). Both prongs must be met; 'arising out of' is causal origin, 'in the course of' is time, place and circumstances (Nicholson v. S.C. DSS, 411 S.C. 381 (2015); Simmons v. Solo Cup (Ga. App. 2024))."
+    },
+    {
+      "surface": "body",
+      "claim": "regardless of fault. You do not need to prove your employer was negligent or that the attacker was at fault.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Nicholson v. S.C. DSS (2015) ('a no-fault system'); Georgia § 34-9-1 annotations ('without regard to whether the injury resulted from the fault of the employer'); statutory bars at O.C.G.A. § 34-9-17 and S.C. Code § 42-9-60",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/2015/27478.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Accurate. The only fault-based bars are the worker's own willful misconduct, attempt to injure another, intoxication or drugs (GA § 34-9-17) and intoxication or wilful intention to injure oneself or another (SC § 42-9-60)."
+    },
+    {
+      "surface": "body",
+      "claim": "Violence motivated by purely personal reasons — such as a domestic dispute that follows you to work — may not qualify.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 34-9-1(4) (verbatim: 'Injury' and 'personal injury' shall not include injury caused by the willful act of a third person directed against an employee for reasons personal to such employee); Doe v. S.C. State Hospital, 285 S.C. 183 (Ct. App. 1985) (assault by a third person arises out of employment 'if the risk of assault is increased because of the nature or setting of the work'); Kinsey v. Champion American Serv. Ctr., 268 S.C. 177 (1977)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "In Georgia the exclusion is statutory and can be cited by pinpoint: § 34-9-1(4). In South Carolina it is case law under § 42-1-160(A); do not attribute a 'reasons personal' clause to the SC statute, which has none. Optional Georgia example: Simmons v. Solo Cup Operating Corp. (Ga. App. 2024) (co-worker shooting for personal reasons was not a covered injury)."
+    },
+    {
+      "surface": "body",
+      "claim": "Courts in both Georgia and South Carolina use several tests to determine this: The \"Increased Risk\" Test",
+      "verdict": "update",
+      "currentValue": "Assign the tests to the right state. South Carolina's assault rule is the increased-risk formulation: an assault by a third person arises out of the employment 'if the risk of assault is increased because of the nature or setting of the work' (Doe v. S.C. State Hospital, citing Carter v. Penney Tire and Skipper v. Southern Bell), and a work-related quarrel supplies the causal connection (Kinsey). Georgia asks whether there is a 'nonpersonal, causal connection to the work' and has expressly adopted the positional-risk doctrine (National Fire Ins. Co. v. Edwards, 152 Ga. App. 566 (1979); Chaparral Boats, Inc. v. Heath, 269 Ga. App. 339 (2004)), which overruled the older 'peculiar to the work and not common to the neighborhood' rule.",
+      "sourceName": "Doe v. S.C. State Hospital, 285 S.C. 183, 328 S.E.2d 652 (Ct. App. 1985); Chaparral Boats, Inc. v. Heath, 269 Ga. App. 339, 606 S.E.2d 567 (2004)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/court-of-appeals/1985/285-s-c-183-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "The three-test framing (increased risk / work-related dispute / street risk) is Larson's treatise taxonomy, not language either state's courts use as a checklist. Keep the plain-English explanations; stop presenting them as tests 'courts in both states use'."
+    },
+    {
+      "surface": "body",
+      "claim": "The \"Street Risk\" Doctrine",
+      "verdict": "update",
+      "currentValue": "No Georgia or South Carolina opinion located this run uses the label 'street risk doctrine'. The Georgia principle is supported: an employee assaulted on a street at night 'in an area where the employee was placed on account of the employee's employment, which was particularly susceptible to crimes against the person' sustained an injury that arose out of the employment (General Fire & Cas. Co. v. Bellflower, 123 Ga. App. 864 (1971), Justia annotation to § 34-9-1), and Georgia's positional-risk doctrine covers an employee whose work 'brought him within range of the danger by requiring his presence in the locale when the peril struck'. For South Carolina the same result follows only if the risk of assault was increased by the nature or setting of the work (Doe).",
+      "sourceName": "Justia annotations to O.C.G.A. § 34-9-1 ('Assault while returning from meal', Bellflower); Chaparral Boats v. Heath (2004)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Rename the sub-heading (e.g., 'Random violence while working in public') and drop the phrase 'street risk doctrine'. Keep 'generally covered' only with the state-specific qualifiers above."
+    },
+    {
+      "surface": "body",
+      "claim": "Two coworkers fight over a work assignment — the injured party is generally covered because the dispute arose from employment",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Kinsey v. Champion American Serv. Ctr. (S.C. 1977) ('the precipitation of the incidents was a dispute over work instructions' satisfied 'arising out of'); Lewis v. Northside Hospital, 267 Ga. App. 266 (2004) ('injuries suffered by an employee in a work-related battery at the hands of a fellow employee are compensable under the Act')",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1977/20363-1.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Accurate in both states. Corollary worth stating: in Georgia the injured worker cannot then sue the co-worker in tort (§ 34-9-11(a) excepts 'an employee of the same employer' from third-party suits); in South Carolina the co-employee remains personally liable for an intentional tort (Dickert v. Metropolitan Life, 311 S.C. 218 (1993))."
+    },
+    {
+      "surface": "body",
+      "claim": "An employee is caught in an active shooter incident at work — covered because the employee was at the workplace during the event",
+      "verdict": "update",
+      "currentValue": "Presence at the workplace is not by itself the test in either state. Georgia: the positional-risk doctrine covers an employee whose work required their presence 'in the locale when the peril struck', but the Court of Appeals still requires 'a nonpersonal, causal connection to the work' and rejected a positional-risk argument where a co-worker shot the employee for personal reasons (Simmons v. Solo Cup Operating Corp., Ga. App. 2024). South Carolina: the claimant must show 'a causal connection between the conditions under which the work is required to be performed and the resulting injury' (Nicholson, 2015), and for assaults that the risk was increased by the nature or setting of the work (Doe).",
+      "sourceName": "Simmons v. Solo Cup Operating Corp. (Ga. Ct. App. 2024, A24A0623); Nicholson v. S.C. DSS, 411 S.C. 381 (2015)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2024/a24a0623.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Reword to: 'generally covered where the shooter had no personal motive against the worker — the employment put the worker in the line of fire.'"
+    },
+    {
+      "surface": "body",
+      "claim": "Domestic violence: An employee's ex-spouse comes to the workplace and assaults them — often not covered because the violence stems from a personal relationship, not employment. However, some courts have found coverage when the employer knew of the threat and failed to protect the employee.",
+      "verdict": "update",
+      "currentValue": "First sentence is right. The second is unsupported for Georgia or South Carolina and inverts the consequence. In Georgia an attack 'for reasons personal to such employee' is not a covered injury (§ 34-9-1(4)), so the exclusive-remedy bar does not apply and the worker may sue the employer in tort: in Clark v. Carla Gay Dress Co., 178 Ga. App. 157 (1986), an employee shot in the head at the factory by her estranged spouse proceeded against the employer under premises-liability law (O.C.G.A. § 51-3-1), the court holding the 'equal knowledge' defense did not dispose of the case. Employer knowledge of the threat therefore matters to a negligence claim, not to workers' compensation coverage.",
+      "sourceName": "O.C.G.A. § 34-9-1(4); Clark v. Carla Gay Dress Co., 178 Ga. App. 157, 342 S.E.2d 468 (1986) (Justia annotation to § 51-3-1); Potts v. UAP-Ga. Ag. Chem., 270 Ga. 14 (1998) ('If the willful act of a third person is directed against an employee for reasons personal to such employee, then there is not a covered injury and, consequently, no tort immunity')",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-3/article-1/section-51-3-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Delete 'some courts have found coverage when the employer knew of the threat and failed to protect the employee' and replace with the Georgia rule above. No South Carolina authority on employer-knowledge in domestic-violence cases was read this run; do not assert one."
+    },
+    {
+      "surface": "body",
+      "claim": "You were the aggressor: If you started the fight, your injuries may not be covered — the violence arose from your own voluntary conduct, not from employment",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 34-9-17(a) (no compensation for injury 'growing out of his or her attempt to injure another'); S.C. Code § 42-9-60 (no compensation where injury 'was occasioned ... by the wilful intention of the employee to injure or kill himself or another'); Zeigler v. SLED, 250 S.C. 326 (1967)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-17/",
+      "retrievedAt": "2026-09-24",
+      "note": "'May not be covered' is the right hedge. See the SC aggressor entries below for why 'likely barred' is too strong."
+    },
+    {
+      "surface": "body",
+      "claim": "Off-duty social events: Violence at an optional after-work gathering that is not employer-sponsored may lack the work connection",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Crowe v. Home Indem. Co., 145 Ga. App. 873 (1978) (Justia annotation to § 34-9-1): recreational or social activities are within the course of employment only when on the premises during a lunch or recreation period as a regular incident of employment, when the employer requires participation or makes the activity part of the job, or when the employer derives substantial direct benefit)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Verified for Georgia. No SC authority read this run; the hedge 'may lack' keeps it safe."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia's workers' compensation law (O.C.G.A. Title 34, Chapter 9) requires that the injury \"arise out of and in the course of employment.\"",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 34-9-1(4)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Add the pinpoint: 'O.C.G.A. § 34-9-1(4), which also excludes injury caused by the willful act of a third person directed against an employee for reasons personal to such employee.' This exclusion is the single most useful Georgia sentence for this topic and the post never quotes it."
+    },
+    {
+      "surface": "body",
+      "claim": "The aggressor defense. Georgia may deny benefits to the employee who initiated the fight. However, even if you participated in an altercation, if it began as a work-related dispute, coverage may still apply.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 34-9-17(a), (c) (burden 'upon the party who claims an exemption or forfeiture'); Justia annotations to § 34-9-17 ('When claimant is injured in an attack by another employee, claimant must not have been the aggressor', State v. Purmort, 143 Ga. App. 269 (1977); Liberty Mut. (aggressor's injury 'not an accident arising out of the employment'))",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-17/",
+      "retrievedAt": "2026-09-24",
+      "note": "Cite § 34-9-17(a). The employer carries the burden of proving the defense."
+    },
+    {
+      "surface": "body",
+      "claim": "Random criminal acts. Georgia covers injuries from random criminal violence when the employment placed the worker in a position of increased exposure — such as working alone at night, handling cash, or working in a dangerous location.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Chaparral Boats, Inc. v. Heath, 269 Ga. App. 339 (2004) (positional risk); General Fire & Cas. Co. v. Bellflower, 123 Ga. App. 864 (1971); Justia annotation to § 34-9-1 (employee murdered during armed robbery while making a night deposit: death arose out of and in the course of employment)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2004/a04a0981.html",
+      "retrievedAt": "2026-09-24",
+      "note": "This is the Georgia positional-risk rule the post wrongly assigns to South Carolina in the next section. Name it here: 'Georgia's positional-risk doctrine'."
+    },
+    {
+      "surface": "body",
+      "claim": "You must report the injury to your employer within 30 days (O.C.G.A. § 34-9-80) and file your claim within 1 year (O.C.G.A. § 34-9-82).",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 34-9-80 ('No compensation will be payable unless such notice, either oral or written, is given within 30 days after the occurrence of an accident'); O.C.G.A. § 34-9-82(a) ('barred unless a claim therefor is filed within one year after injury')",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-3/part-1/section-34-9-80/",
+      "retrievedAt": "2026-09-24",
+      "note": "Reused from facts-1652 (verified 2026-09-24). Claim is filed with the State Board (form WC-14)."
+    },
+    {
+      "surface": "body",
+      "claim": "The \"arising out of\" test is the same. South Carolina requires that workplace violence have a connection to the employment for the injury to be compensable.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 42-1-160(A); Nicholson v. S.C. DSS (2015) ('an employee need only prove a causal connection between the conditions under which the work is required to be performed and the resulting injury')",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "Positional risk doctrine. South Carolina has recognized that if the employment placed the worker in the position where the violence occurred — even if the violence was random — the claim may qualify. This is sometimes called the \"but for\" test: but for the employment, the worker would not have been at the location where the violence happened.",
+      "verdict": "update",
+      "currentValue": "The states are reversed. Georgia is the jurisdiction that expressly adopted the positional-risk doctrine (National Fire Ins. Co. v. Edwards, 152 Ga. App. 566 (1979), reaffirmed in Chaparral Boats, Inc. v. Heath, 269 Ga. App. 339 (2004): an injury arises out of the employment when the work 'brought him within range of the danger by requiring his presence in the locale when the peril struck, even though any other person present would have also been injured irrespective of his employment'). The South Carolina Supreme Court has not adopted the doctrine by name; in Nicholson v. S.C. DSS (2015) it held only that a claimant 'need only prove a causal connection between the conditions under which the work is required to be performed and the resulting injury' and that the court of appeals erred 'in requiring a claimant to prove the existence of a hazard or danger'. The Court of Appeals had described the positional-risk, increased-risk and actual-risk doctrines as three lines of interpretation and applied the older Douglas 'peculiar to the work' standard, which the Supreme Court rejected. For assaults, South Carolina's stated rule remains the increased-risk one: the assault arises out of the employment 'if the risk of assault is increased because of the nature or setting of the work' (Doe v. S.C. State Hospital).",
+      "sourceName": "Chaparral Boats, Inc. v. Heath, 269 Ga. App. 339, 606 S.E.2d 567 (2004); Nicholson v. S.C. Dep't of Soc. Servs., 411 S.C. 381, 769 S.E.2d 1 (2015) (opinion PDF, sccourts.org Op. No. 27478); Doe v. S.C. State Hospital, 285 S.C. 183 (Ct. App. 1985)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/2015/27478.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Most consequential legal error on the page; it repeats in the comparison table ('Same — plus positional risk doctrine' and 'Covered if employment placed worker at the location'). Rewrite the SC bullet as: 'Causal connection, not a hazard peculiar to the job. The South Carolina Supreme Court holds that a worker need only show a causal connection between the conditions of the work and the injury (Nicholson v. S.C. DSS, 2015). For assaults, South Carolina courts ask whether the nature or setting of the work increased the risk of being attacked.' Move the positional-risk / 'but for' language to the Georgia section."
+    },
+    {
+      "surface": "body",
+      "claim": "The aggressor bar applies. If you were the initial aggressor, your claim is likely barred.",
+      "verdict": "update",
+      "currentValue": "South Carolina has no 'aggressor defense' as such. The Supreme Court in Kinsey v. Champion American Service Center (1977): 'There is no statutory defense labeled aggressor defense. The only relevant statutory provision which, under certain well delineated circumstances, supports an aggressor defense' is the wilful-intent bar, now S.C. Code § 42-9-60 ('No compensation shall be payable if the injury or death was occasioned by ... the wilful intention of the employee to injure or kill himself or another'). Its application is limited to 'those cases where it is shown that the acts of the employee are so serious and aggravated as to evince a willful intent to injure'; 'If an altercation is spontaneous, impulsive, instinctive or otherwise lacking a deliberate or formed intention to do injury, the statutory defense is unavailable.' The burden of proof is on the party asserting it (§ 42-9-60). Zeigler v. SLED (1967) applied the bar where the employee 'voluntarily' pursued an armed altercation outside.",
+      "sourceName": "S.C. Code § 42-9-60; Kinsey v. Champion American Serv. Ctr., 268 S.C. 177, 232 S.E.2d 720 (1977); Zeigler v. S.C. Law Enforcement Div., 250 S.C. 326, 157 S.E.2d 598 (1967)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t42c009.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'Wilful intent to injure bars the claim. South Carolina denies compensation only where the worker acted with a deliberate intention to injure someone (S.C. Code § 42-9-60); a spontaneous scuffle does not trigger the bar, and the employer must prove it.' Same fix for the table row and faq:1."
+    },
+    {
+      "surface": "body",
+      "claim": "You must notify your employer within 90 days (S.C. Code § 42-15-20) and file your claim within 2 years (S.C. Code § 42-15-40).",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 42-15-20(B) ('no compensation shall be payable unless such notice is given within ninety days after the occurrence of the accident'); § 42-15-40 ('barred unless a claim is filed with the commission within two years after an accident')",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t42c015.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Re-read on scstatehouse.gov today; matches facts-1652. Form 50 with the Commission."
+    },
+    {
+      "surface": "body",
+      "claim": "<tr><td>Coverage test</td><td>Arising out of and in the course of employment</td><td>Same — plus positional risk doctrine</td></tr>",
+      "verdict": "update",
+      "currentValue": "Georgia: 'Arising out of and in the course of employment (O.C.G.A. § 34-9-1(4)); positional-risk doctrine applies; attacks for reasons personal to the worker are excluded.' South Carolina: 'Arising out of and in the course of employment (S.C. Code § 42-1-160(A)); causal connection required; assaults covered where the work increased the risk of attack.'",
+      "sourceName": "Chaparral Boats v. Heath (Ga. App. 2004); Nicholson v. S.C. DSS (S.C. 2015); Doe v. S.C. State Hospital (S.C. Ct. App. 1985)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2004/a04a0981.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Table rows publish the same reversed rule as the SC section."
+    },
+    {
+      "surface": "body",
+      "claim": "<tr><td>Aggressor barred?</td><td>Yes</td><td>Yes</td></tr>",
+      "verdict": "update",
+      "currentValue": "Georgia: 'Yes — injury growing out of the worker's attempt to injure another (O.C.G.A. § 34-9-17(a)); employer bears the burden.' South Carolina: 'Only on proof of wilful intent to injure (S.C. Code § 42-9-60); a spontaneous fight is not enough.'",
+      "sourceName": "O.C.G.A. § 34-9-17(a), (c); S.C. Code § 42-9-60; Kinsey (S.C. 1977)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t42c009.php",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "<tr><td>Random criminal acts</td><td>Covered if increased risk from employment</td><td>Covered if employment placed worker at the location</td></tr>",
+      "verdict": "update",
+      "currentValue": "Swap the cells. Georgia: 'Covered if the work placed the worker where the peril struck (positional risk), absent a personal motive.' South Carolina: 'Covered if the nature or setting of the work increased the risk of attack.'",
+      "sourceName": "Chaparral Boats v. Heath (Ga. App. 2004); Doe v. S.C. State Hospital (S.C. Ct. App. 1985)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/court-of-appeals/1985/285-s-c-183-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "Workers' compensation provides no-fault benefits but does not include compensation for pain and suffering.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Potts v. UAP-GA AG CHEM, Inc., 227 Ga. App. 841 (1997), quoting the Supreme Court of Georgia: 'Workers' compensation has never been intended to make the employee whole — it excludes benefits for pain and suffering, for loss of consortium, and it provides a cap on wage benefits'",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/1997/a97a0816.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Georgia authority verbatim; South Carolina benefits are likewise scheduled statutory benefits (Title 42, Chapter 9) with no pain-and-suffering line."
+    },
+    {
+      "surface": "body",
+      "claim": "When workplace violence involves a third party (someone other than your employer or coworker), you may have a separate personal injury lawsuit that provides full compensatory damages.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 34-9-11.1(a) (employee 'may pursue the remedy by proper action in a court of competent jurisdiction against such other persons'); O.C.G.A. § 34-9-11(a) (third-party actions preserved 'other than an employee of the same employer'); S.C. Code § 42-1-550 and § 42-1-560(a)-(b)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-11-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "The 'or coworker' parenthetical is correct for Georgia only. South Carolina permits suit against the co-employee who committed an intentional tort: 'The Worker's Compensation Act may not be used as a shield for a co-employee's intentional injurious conduct' (Dickert v. Metropolitan Life Ins. Co., 311 S.C. 218 (1993)). Consider: '(someone other than your employer — and, in Georgia, other than a coworker)'. Also add the subrogation point: the workers' comp insurer has a lien on the third-party recovery (GA § 34-9-11.1(b), recoverable only after the worker is 'fully and completely compensated'; SC § 42-1-560(b))."
+    },
+    {
+      "surface": "body",
+      "claim": "Assault and battery lawsuit against the attacker — you can sue the person who assaulted you for damages beyond what workers' comp provides",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 34-9-11.1(a); S.C. Code § 42-1-550; Dickert (S.C. 1993) for co-employee attackers; Lewis v. Northside Hospital (Ga. App. 2004) for the Georgia co-employee bar",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1993/23810-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Qualify for Georgia: if the attacker was a co-worker and the battery was work-related, Georgia bars the tort suit against the co-worker (§ 34-9-11(a); Lewis). If the attack was for personal reasons it is outside the Act and the suit proceeds (Potts; Simmons v. Solo Cup)."
+    },
+    {
+      "surface": "body",
+      "claim": "Premises liability claim against a negligent property owner — if inadequate security at the premises contributed to the attack",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-3-1 (owner or occupier 'liable in damages to such persons for injuries caused by his failure to exercise ordinary care in keeping the premises and approaches safe'); Justia annotations (Georgia Bowling Enters. v. Robbins, 103 Ga. App. 286 (1961): the section 'must be interpreted to include risks upon the premises in the nature of ... ill tempered individuals likely to inflict harm upon invitees'; Savannah College of Art & Design v. Roe, 261 Ga. 764 (1991) / Sturbridge Partners v. Walker, 267 Ga. 785 (1997): knowledge of an unreasonable risk of criminal attack, shown by prior substantially similar incidents)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-3/article-1/section-51-3-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Georgia verified; if a citation is added use § 51-3-1 and mention foreseeability via prior similar incidents. No South Carolina premises-liability primary source was read this run — keep the SC statement generic and uncited."
+    },
+    {
+      "surface": "body",
+      "claim": "Negligent security claim — if the employer or property owner failed to provide reasonable security measures (cameras, lighting, security personnel, access controls) in a location with known violence risks",
+      "verdict": "update",
+      "currentValue": "Against a non-employer property owner, yes (see § 51-3-1 entry). Against the employer, a negligent-security claim is barred by the exclusive-remedy rule whenever the injury is compensable: O.C.G.A. § 34-9-11(a) makes the Act's remedies 'in place of all other rights and remedies ... and all other civil liabilities whatsoever', and S.C. Code § 42-1-540 excludes 'all other rights and remedies of such employee ... as against his employer'; the South Carolina Supreme Court has held that a negligence claim against the employer for failure to use reasonable care in the selection, retention and supervision of a co-employee is within the Act (Dickert, 1993). The employer can be sued only where the attack falls outside the Act — in Georgia, an attack for reasons personal to the employee (§ 34-9-1(4); Clark v. Carla Gay Dress Co.).",
+      "sourceName": "O.C.G.A. § 34-9-11(a); S.C. Code § 42-1-540; Dickert v. Metropolitan Life Ins. Co., 311 S.C. 218, 428 S.E.2d 700 (1993)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Change 'if the employer or property owner' to 'if a property owner other than your employer'. The employer scenario belongs in the next section with the exclusivity caveat."
+    },
+    {
+      "surface": "body",
+      "claim": "Product liability claim — if a defective security system or safety device failed to prevent the attack",
+      "verdict": "drop",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "No Georgia or South Carolina authority located for a product-liability claim over a security system that 'failed to prevent' a criminal attack; the causation theory is speculative. Delete the bullet."
+    },
+    {
+      "surface": "body",
+      "claim": "In Georgia, the personal injury statute of limitations is 2 years (O.C.G.A. § 9-3-33). In South Carolina, it is 3 years (S.C. Code § 15-3-530).",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-33; S.C. Code § 15-3-530(5) ('an action for assault, battery, or any injury to the person or rights of another, not arising on contract'); O.C.G.A. § 34-9-11.1(c); S.C. Code § 42-1-560(b)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Reused from facts-1756 / facts-2647; matches the writer-profile jurisdiction table. Two workers'-comp-specific clocks sit on top of these and matter here: South Carolina requires the third-party action to be 'commenced not later than one year after the carrier accepts liability for the payment of compensation or makes payment pursuant to an award', after which the cause of action can pass to the carrier by assignment on 20 days' written notice (§ 42-1-560(b)-(c)); Georgia lets the employer or insurer assert the employee's tort claim if the employee has not sued within one year of the injury (§ 34-9-11.1(c)). Add one sentence on each. facts-1663 records a site rule against pairing § 9-3-33 / § 15-3-530 with workers'-comp benefit statements; here they appear in the third-party-lawsuit paragraph, which is the correct context, but flag for the legal sweep."
+    },
+    {
+      "surface": "body",
+      "claim": "While workers' comp generally provides the exclusive remedy against your employer, there are situations where the employer's failure to prevent workplace violence may create additional liability:",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 34-9-11(a); S.C. Code § 42-1-540; Potts v. UAP-Ga. Ag. Chem., 270 Ga. 14 (1998) ('Tort immunity is dependent upon the compensability of the injury under the Act'); Edens v. Bellini (S.C. Ct. App. 2004, Op. No. 3815): the only SC exceptions are a subcontractor's acts (§ 42-1-540), an intentional act of the employer or its alter ego with 'a deliberate or specific intent to injure' (Dickert), slander/injury to reputation, and excluded occupations",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/court-of-appeals/2004/3815.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Lead sentence is fine. The bullets under it need the exclusivity caveat: a failure-to-prevent claim against the employer survives only if the injury is not compensable (Georgia: personal-motive attack) or, in South Carolina, if the employer or its alter ego acted with deliberate intent to injure — ordinary negligence in preventing violence does not qualify (Edens declined the 'substantial certainty' standard). Georgia: 'when an employee's injuries are compensable under the Act, he is absolutely barred from pursuing a common law tort action ... even if they resulted from intentional misconduct on the part of the employer' (Potts, Ga. App. 1997, quoting 1987 precedent)."
+    },
+    {
+      "surface": "body",
+      "claim": "The employer knew about a specific threat — such as a restraining order against a former employee — and failed to take protective measures",
+      "verdict": "update",
+      "currentValue": "Accurate as a description of when a negligence claim against the employer can exist, but only because such an attack is usually for reasons personal to the worker and therefore outside workers' compensation. Georgia example: Clark v. Carla Gay Dress Co., 178 Ga. App. 157 (1986) (estranged spouse entered the factory and shot the employee; premises-liability claim against the employer proceeded; employer's and employee's knowledge of the spouse's propensities was litigated under § 51-3-1). If the attack is instead compensable, the claim is barred (§ 34-9-11(a); § 42-1-540).",
+      "sourceName": "Clark v. Carla Gay Dress Co. (Justia annotation to O.C.G.A. § 51-3-1); Potts (Ga. 1998)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-3/article-1/section-51-3-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Add: 'These claims are usually available precisely because a personally motivated attack is not a workers' compensation injury in Georgia (O.C.G.A. § 34-9-1(4)).'"
+    },
+    {
+      "surface": "body",
+      "claim": "The employer failed to comply with OSHA requirements — workplaces with known violence risks must implement violence prevention programs",
+      "verdict": "update",
+      "currentValue": "OSHA: 'There are currently no specific OSHA standards for workplace violence.' Employers are held to the General Duty Clause, OSH Act § 5(a)(1), 29 U.S.C. § 654(a)(1): each employer 'shall furnish to each of his employees employment and a place of employment which are free from recognized hazards that are causing or are likely to cause death or serious physical harm to his employees.' OSHA enforces workplace-violence hazards under that clause per Directive CPL 02-01-058 (Jan. 10, 2017) and publishes guidelines (e.g., Publication 3148 for healthcare and social service workers; 3153 for late-night retail). A prevention program is what OSHA recommends ('A well-written and implemented workplace violence prevention program ... can reduce the potential for workplace violence'), not a requirement of a standard.",
+      "sourceName": "OSHA, Workplace Violence — Overview and Enforcement; OSH Act § 5(a)(1), 29 U.S.C. § 654(a)(1)",
+      "sourceUrl": "https://www.osha.gov/laws-regs/oshact/section5-duties",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'The employer ignored OSHA's General Duty Clause (29 U.S.C. § 654(a)(1)), which requires a workplace free from recognized hazards likely to cause death or serious harm — OSHA has no specific workplace-violence standard, but it cites employers under this clause and recommends written violence-prevention programs for high-risk settings.' Do not present an OSHA citation as itself a civil claim; it is evidence, and enforcement is OSHA's. The existing outbound link to https://www.osha.gov/workplace-violence resolves and stays."
+    },
+    {
+      "surface": "body",
+      "claim": "Negligent hiring or retention — the employer hired or kept an employee with a known history of violence who then attacked a coworker",
+      "verdict": "update",
+      "currentValue": "Barred against the employer in both states when the co-worker attack is compensable. South Carolina: a claim for 'negligence based upon Employer's failure to exercise reasonable care in the selection, retention, and supervision of Co-Employee' is 'precluded by the exclusivity provision' (Dickert v. Metropolitan Life, 1993; reaffirmed in Sabb v. S.C. State Univ., 2002). Georgia: the bar 'also applies to intentional torts committed by one worker against a co-worker, unless the tortious act was committed for personal reasons unrelated to the conduct of the employer's business' (Potts, Ga. App. 1997, quoting Wall v. Phillips); where the attack was personal, the premises claim can proceed (Crapp v. Elberta Crate & Box Co., 223 Ga. App. 902: employer let a fired worker who had assaulted the plaintiff back onto the premises).",
+      "sourceName": "Dickert v. Metropolitan Life Ins. Co., 311 S.C. 218 (1993); Sabb v. S.C. State Univ., 350 S.C. 416 (2002); Potts v. UAP-GA AG CHEM, 227 Ga. App. 841 (1997); Crapp v. Elberta Crate & Box Co. (Justia annotation to § 51-3-1)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/2002/25496.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Keep the bullet but add 'where the attack was personal rather than work-related, so that workers' compensation does not apply' — otherwise it promises a claim the exclusive-remedy rule takes away."
+    },
+    {
+      "surface": "body",
+      "claim": "These circumstances may support claims beyond the workers' comp system, depending on the specific facts.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Potts (Ga. 1998); Edens (S.C. Ct. App. 2004)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/1998/s97g1889-1.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Adequate hedge once the bullets above carry the exclusivity caveat."
+    },
+    {
+      "surface": "body",
+      "claim": "Report the incident to your employer. Do this in writing as soon as possible. In Georgia, you have 30 days; in South Carolina, 90 days — but do not wait.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 34-9-80 ('immediately on the occurrence of any accident or as soon thereafter as practicable'; oral or written); S.C. Code § 42-15-20(A)-(B)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t42c015.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Both statutes say 'immediately ... or as soon thereafter as practicable', so 'do not wait' is the statutory posture. Georgia accepts oral notice; writing is advice, not a requirement."
+    },
+    {
+      "surface": "body",
+      "claim": "At Roden Law, our attorneys handle workplace violence claims from offices in Savannah, Darien, Charleston, Columbia, and Myrtle Beach.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "profiles/writer-profile.md (Local anchors per office)",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "All five offices exist. The profile also lists North Charleston as a separate office; omission is not an error. The tel: href behind 1-844-RESULTS is tel:+18447378587, which matches firm-facts."
+    },
+    {
+      "surface": "excerpt",
+      "claim": "When an assault at work is covered by workers' compensation in Georgia and South Carolina, and the connection to employment that decides it.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 34-9-1(4); S.C. Code § 42-1-160(A)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Publishes as the Article description; accurate."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Workplace violence injuries are covered by workers' comp when the violence is connected to employment — customer attacks, criminal acts during work, coworker disputes over work matters, and violence against high-risk workers all qualify. The aggressor is barred. Domestic violence at work is generally not covered. Beyond workers' comp, victims can file personal injury lawsuits against attackers and negligent security claims. Report within 30 days in Georgia (O.C.G.A. § 34-9-80) or 90 days in South Carolina (S.C. Code § 42-15-20).",
+      "verdict": "update",
+      "currentValue": "Change 'all qualify' to 'generally qualify'; change 'The aggressor is barred.' to 'A worker who deliberately set out to injure someone is barred (O.C.G.A. § 34-9-17; S.C. Code § 42-9-60).'; change 'negligent security claims' to 'negligent security claims against property owners other than the employer'. Deadlines are correct.",
+      "sourceName": "O.C.G.A. § 34-9-17(a); S.C. Code § 42-9-60; Kinsey (S.C. 1977); O.C.G.A. § 34-9-11(a); S.C. Code § 42-1-540",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-17/",
+      "retrievedAt": "2026-09-24",
+      "note": "Rendered above the article; carries the same over-broad aggressor rule as faq:1."
+    },
+    {
+      "surface": "faq:0",
+      "claim": "Yes — if the violence was connected to your employment. Workers' compensation covers injuries that arise out of and in the course of employment. Violence motivated by work disputes, criminal acts during work duties, and attacks on workers in high-risk occupations typically qualify. Violence from purely personal disputes may not.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 34-9-1(4); S.C. Code § 42-1-160(A); Doe v. S.C. State Hospital (1985); Kinsey (1977)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Accurate and properly hedged. Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:1",
+      "claim": "If you initiated the physical confrontation, your workers' comp claim will likely be denied in both Georgia and South Carolina. The aggressor defense bars coverage because the injury arose from your own voluntary conduct, not from employment. However, if a work-related argument escalated and you participated but did not start the physical altercation, coverage may still apply.",
+      "verdict": "update",
+      "currentValue": "Georgia denies compensation for an injury 'growing out of his or her attempt to injure another' (O.C.G.A. § 34-9-17(a)), and its courts treat the aggressor's injury as not arising out of the employment; the employer must prove it. South Carolina has no aggressor defense as such: compensation is denied only where the injury 'was occasioned by ... the wilful intention of the employee to injure or kill himself or another' (S.C. Code § 42-9-60), which requires 'a deliberate or formed intention' — 'If an altercation is spontaneous, impulsive, instinctive or otherwise lacking a deliberate or formed intention to do injury, the statutory defense is unavailable' (Kinsey v. Champion American Service Center, 1977). Burden on the party asserting the bar. Suggested answer: 'It depends on intent, not just who swung first. Georgia bars benefits when the injury grew out of your attempt to injure another (O.C.G.A. § 34-9-17). South Carolina bars them only if you acted with a deliberate intention to injure someone (S.C. Code § 42-9-60) — a spontaneous scuffle over a work matter is not enough, and the employer has to prove it. If a work-related argument escalated and you did not start the physical altercation, coverage may still apply.'",
+      "sourceName": "O.C.G.A. § 34-9-17(a), (c); S.C. Code § 42-9-60; Kinsey v. Champion American Serv. Ctr. (S.C. 1977); Zeigler v. SLED (S.C. 1967)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1977/20363-1.html",
+      "retrievedAt": "2026-09-24",
+      "note": "'Will likely be denied in both' overstates South Carolina. Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:2",
+      "claim": "Generally no — because the violence stems from a personal relationship, not employment. However, some courts have found coverage when the employer knew about a specific domestic violence threat and failed to take protective measures, or when the employment placed the worker at the location where the attack occurred.",
+      "verdict": "update",
+      "currentValue": "First sentence correct (O.C.G.A. § 34-9-1(4) excludes willful acts 'for reasons personal to such employee'; South Carolina requires the risk of assault to be increased by the nature or setting of the work). Second sentence unsupported: employer knowledge of a threat does not create workers' compensation coverage — it can support a negligence claim against the employer precisely because the attack is outside the Act (Clark v. Carla Gay Dress Co., 178 Ga. App. 157 (1986): employee shot at the factory by her estranged husband; premises-liability claim against the employer proceeded). 'Employment placed the worker at the location' is Georgia's positional-risk doctrine, which Georgia courts do not apply to attacks with a personal motive (Simmons v. Solo Cup, 2024). Suggested answer: 'Generally no — an attack by a partner or ex is for reasons personal to you, not your job, and Georgia's statute excludes it expressly (O.C.G.A. § 34-9-1(4)). That cuts the other way, too: because the injury is outside workers' comp, you may be able to sue your employer for negligence if it knew of the threat and failed to protect you, as a Georgia court allowed when an estranged husband shot an employee inside the plant.'",
+      "sourceName": "O.C.G.A. § 34-9-1(4); Clark v. Carla Gay Dress Co. (Justia annotation to § 51-3-1); Potts (Ga. 1998); Simmons v. Solo Cup (Ga. App. 2024)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-3/article-1/section-51-3-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Publishes as FAQPage structured data. No South Carolina domestic-violence workers' compensation opinion was read this run; keep the SC half to the general rule."
+    },
+    {
+      "surface": "faq:3",
+      "claim": "Yes. A workers' comp claim covers your medical bills and lost wages from your employer's insurer. A separate personal injury lawsuit against the attacker can recover pain and suffering, emotional distress, and punitive damages — compensation not available through workers' comp. You may also have a negligent security claim against the property owner.",
+      "verdict": "update",
+      "currentValue": "Correct in substance for a third-party attacker (O.C.G.A. § 34-9-11.1(a); S.C. Code §§ 42-1-550, 42-1-560), with two qualifications: (1) in Georgia you cannot sue a co-worker for a work-related battery (§ 34-9-11(a) preserves suits only against third parties 'other than an employee of the same employer'; Lewis v. Northside Hospital), while South Carolina allows suit against the co-employee for an intentional tort (Dickert); (2) the workers' comp insurer has a lien on what you recover (GA § 34-9-11.1(b), enforceable only once you are fully and completely compensated; SC § 42-1-560(b)), and in South Carolina the suit must be started within one year after the carrier accepts liability or pays, or the claim can be assigned to the carrier (§ 42-1-560(b)-(c)). 'Negligent security claim against the property owner' should read 'against a property owner other than your employer'. Punitive damages: Georgia requires clear and convincing evidence of willful misconduct, malice, fraud, wantonness, oppression or conscious indifference (O.C.G.A. § 51-12-5.1(b)) — an intentional assault typically meets it; South Carolina requires wilful, wanton or reckless conduct by clear and convincing evidence (S.C. Code § 15-32-520(D)).",
+      "sourceName": "O.C.G.A. § 34-9-11(a); § 34-9-11.1(a)-(c); S.C. Code § 42-1-550; § 42-1-560(b)-(c); Dickert (S.C. 1993); Lewis v. Northside Hospital (Ga. App. 2004); O.C.G.A. § 51-12-5.1(b); S.C. Code § 15-32-520(D) (punitive standards reused from facts-1756)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-11-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Publishes as FAQPage structured data. Minimal fix: insert 'other than your employer' after 'property owner' and add 'In Georgia this does not extend to a co-worker who attacked you over a work matter.'"
+    },
+    {
+      "surface": "faq:4",
+      "claim": "In Georgia, report to your employer within 30 days (O.C.G.A. § 34-9-80) and file your claim within 1 year (O.C.G.A. § 34-9-82). In South Carolina, report within 90 days (S.C. Code § 42-15-20) and file within 2 years (S.C. Code § 42-15-40). Also file a police report to create an official record of the criminal act.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 34-9-80; § 34-9-82(a); S.C. Code § 42-15-20(B); § 42-15-40",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-3/part-1/section-34-9-82/",
+      "retrievedAt": "2026-09-24",
+      "note": "All four figures verified against the statutes as they read today. Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:5",
+      "claim": "Both states provide limited coverage for psychological injuries from workplace violence, though the standards are more restrictive than for physical injuries. If the PTSD resulted from a traumatic workplace event — such as an assault, robbery, or active shooter incident — it may be covered. An attorney can evaluate whether your psychological injuries qualify.",
+      "verdict": "update",
+      "currentValue": "The two states differ and the answer blurs them. Georgia: a psychological injury is compensable only if it 'arose out of an accident in which a compensable physical injury was sustained, and that injury contributes to the continuation of the psychic trauma' (Southwire Co. v. George, 266 Ga. 739 (1996)); 'a psychic injury, without a preceding or accompanying physical injury, is [not] compensable' (Abernathy v. City of Albany, 269 Ga. 88 (1998)). So PTSD from a robbery or shooting in which the worker was not physically hurt is not a Georgia workers' compensation injury. (The 2024 Ashley Wilson Act, O.C.G.A. § 45-25-1 et seq., effective Jan. 1, 2025, requires public entities to carry separate insurance for first responders' occupational PTSD; it is not workers' compensation and covers only public-entity first responders.) South Carolina: mental injury 'unaccompanied by physical injury' is compensable only if the employee proves by a preponderance of the evidence that the employment conditions causing it 'were extraordinary and unusual in comparison to the normal conditions of the particular employment' and medical causation by medical evidence (S.C. Code § 42-1-160(B)); the comparison is to the particular job, so a deputy sheriff's involvement in a shooting was held not 'extraordinary and unusual' (Bentley v. Spartanburg County, 398 S.C. 418 (2012)), while mental injury accompanying a physical assault is within the Act (Doe v. S.C. State Hospital). A pending South Carolina bill (H. 3261, 2025-26, proposed § 42-9-50) would relax the standard for first responders' PTSD; § 42-9-50 does not appear in the Code on scstatehouse.gov today, so do not cite it as law. Suggested answer: 'It depends on the state. In Georgia, PTSD is covered only when it comes with a physical injury from the same incident — a worker physically hurt in an assault can claim the resulting PTSD, but a worker traumatised by a robbery without physical injury cannot (Southwire Co. v. George; Abernathy v. City of Albany). In South Carolina, PTSD without a physical injury can be covered if you prove with medical evidence that the event was extraordinary and unusual for your particular job (S.C. Code § 42-1-160(B)) — a bar that is hard for police officers and other workers whose jobs already involve violence. An attorney can evaluate whether your psychological injuries qualify.'",
+      "sourceName": "Southwire Co. v. George, 266 Ga. 739, 470 S.E.2d 865 (1996); Abernathy v. City of Albany, 269 Ga. 88, 495 S.E.2d 13 (1998); S.C. Code § 42-1-160(B)-(D); Bentley v. Spartanburg County, 398 S.C. 418, 730 S.E.2d 296 (2012); Doe v. S.C. State Hospital (1985); O.C.G.A. § 45-25-2 (Ashley Wilson Act); S.C. H. 3261 (2025-26)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/1998/s97a2019-1.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Publishes as FAQPage structured data. 'Both states provide limited coverage' is false for Georgia mental-only claims. The § 42-1-160 history line on scstatehouse.gov ends with 2007 Act No. 111; no first-responder carve-out has been added to that section."
+    }
+  ],
+  "recommendedEdits": [
+    "Replace the OSHA 'nearly 2 million' opener with the BLS CFOI 2024 figures (733 deaths from violent acts, 470 homicides; released Feb. 19, 2026) and OSHA's current 'many more cases go unreported' wording.",
+    "Add the § 34-9-1(4) pinpoint and quote its exclusion for injury 'caused by the willful act of a third person directed against an employee for reasons personal to such employee' in the Georgia section.",
+    "Move the positional-risk / 'but for' doctrine from the South Carolina section to the Georgia section (Edwards 1979; Chaparral Boats 2004); rewrite the SC bullet around Nicholson's causal-connection rule and the increased-risk assault rule (Doe v. S.C. State Hospital).",
+    "Fix the comparison table: Coverage test (SC: causal connection, no 'plus positional risk'); Aggressor barred? (SC: only on proof of wilful intent to injure, § 42-9-60); Random criminal acts (swap the GA and SC cells).",
+    "Rewrite the SC aggressor bullet, keyTakeaways 'The aggressor is barred' and faq:1 to the § 42-9-60 wilful-intent standard (Kinsey: no aggressor defense as such; spontaneous altercations not barred; employer bears the burden); cite § 34-9-17(a) for Georgia.",
+    "Delete 'some courts have found coverage when the employer knew of the threat' (body and faq:2); replace with the Georgia rule that a personally motivated attack is outside workers' comp, which is what lets the worker sue the employer in tort (Clark v. Carla Gay Dress Co.).",
+    "Under 'The Work-Connection Requirement', drop the 'street risk doctrine' label and stop presenting the three tests as ones 'courts in both states use'; keep the explanations with the state-specific rules.",
+    "Qualify the active-shooter scenario: covered where the shooter had no personal motive against the worker; presence at work alone is not the test (Simmons v. Solo Cup, Ga. App. 2024; Nicholson).",
+    "Change 'Negligent security claim — if the employer or property owner' to 'a property owner other than your employer' and add the exclusive-remedy caveat (O.C.G.A. § 34-9-11(a); S.C. Code § 42-1-540; Dickert) to the 'When the Employer Failed to Prevent the Violence' bullets, including negligent hiring/retention.",
+    "Rewrite the OSHA bullet: no specific OSHA workplace-violence standard; General Duty Clause 29 U.S.C. § 654(a)(1); prevention programs are recommended, enforced case-by-case under CPL 02-01-058.",
+    "Delete the 'Product liability claim' bullet (no authority).",
+    "Add the third-party-suit mechanics beside the tort SOLs: SC one-year-after-carrier-acceptance rule and carrier assignment (§ 42-1-560(b)-(c)); GA employer/insurer may sue after one year (§ 34-9-11.1(c)); insurer lien on the recovery in both states.",
+    "faq:3: add that Georgia bars suit against a co-worker for a work-related battery (§ 34-9-11(a)) while South Carolina allows it (Dickert); 'property owner' becomes 'property owner other than your employer'.",
+    "faq:5: split the PTSD answer by state — Georgia requires an accompanying physical injury (Southwire; Abernathy); South Carolina allows mental-only claims under the 'extraordinary and unusual' standard of § 42-1-160(B) with medical evidence (Bentley). Do not cite S.C. § 42-9-50 (H. 3261) as law.",
+    "keyTakeaways: 'all qualify' to 'generally qualify'; aggressor sentence per above; 'negligent security claims' to 'negligent security claims against property owners other than the employer'.",
+    "Reviewer for the operator: Graeham C. Gillin (two-state post stating South Carolina law). No attribution quote present; do not add one on refresh."
+  ],
+  "statuteCitations": [
+    {
+      "section": "O.C.G.A. § 34-9-1",
+      "name": "Definitions — paragraph (4): 'injury' means only injury by accident arising out of and in the course of the employment; excludes injury caused by the willful act of a third person directed against an employee for reasons personal to such employee; excludes disease except as it results naturally and unavoidably from the accident (read in full 2026-09-24)",
+      "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-1/"
+    },
+    {
+      "section": "O.C.G.A. § 34-9-11",
+      "name": "Exclusivity of rights and remedies — the Act's remedies exclude and are in place of all other civil liabilities against the employer; third-party tort-feasor actions preserved except against an employee of the same employer (verified in facts-1663, 2026-09-23)",
+      "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-11/"
+    },
+    {
+      "section": "O.C.G.A. § 34-9-11.1",
+      "name": "Employee's right of action against person other than employer; employer/insurer subrogation lien limited to benefits paid and enforceable only if the employee has been fully and completely compensated; employer/insurer may assert the claim if the employee has not sued within one year of injury (read in full 2026-09-24)",
+      "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-11-1/"
+    },
+    {
+      "section": "O.C.G.A. § 34-9-17",
+      "name": "Grounds for denial of compensation — willful misconduct including injury 'growing out of his or her attempt to injure another'; intoxication and drug presumptions; burden on the party claiming the exemption (verified in facts-1652/1697; text confirmed via Justia annotations 2026-09-24)",
+      "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-17/"
+    },
+    {
+      "section": "O.C.G.A. § 34-9-80",
+      "name": "Notice of accident to employer — immediately or as soon as practicable; no compensation payable unless notice within 30 days, with exceptions (verified in facts-1652, 2026-09-24)",
+      "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-3/part-1/section-34-9-80/"
+    },
+    {
+      "section": "O.C.G.A. § 34-9-82",
+      "name": "Time for filing claim — barred unless filed with the Board within one year after injury (verified in facts-1652, 2026-09-24)",
+      "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-3/part-1/section-34-9-82/"
+    },
+    {
+      "section": "O.C.G.A. § 51-3-1",
+      "name": "Duty of owner or occupier of land to invitee — ordinary care in keeping the premises and approaches safe; annotations extend it to risks from 'ill tempered individuals' and criminal attack where prior similar incidents give knowledge (read 2026-09-24)",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-3/article-1/section-51-3-1/"
+    },
+    {
+      "section": "O.C.G.A. § 9-3-33",
+      "name": "Two-year limitation for actions for injuries to the person (verified in facts-2647/1756)",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+    },
+    {
+      "section": "O.C.G.A. § 51-12-5.1",
+      "name": "Punitive damages — clear and convincing evidence of willful misconduct, malice, fraud, wantonness, oppression or conscious indifference (verified in facts-1756, 2026-09-24)",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/"
+    },
+    {
+      "section": "S.C. Code § 42-1-160",
+      "name": "'Injury' and 'personal injury' — (A) injury by accident arising out of and in the course of employment; (B) mental injury unaccompanied by physical injury compensable only on proof that employment conditions were extraordinary and unusual for the particular employment plus medical causation; (C) normal personnel actions excluded; (D) aggravation rules; history ends with 2007 Act No. 111 (read in full 2026-09-24)",
+      "url": "https://www.scstatehouse.gov/code/t42c001.php"
+    },
+    {
+      "section": "S.C. Code § 42-1-540",
+      "name": "Exclusive remedy — the Act's rights and remedies exclude all other rights and remedies against the employer; subcontractor exception (read 2026-09-24)",
+      "url": "https://www.scstatehouse.gov/code/t42c001.php"
+    },
+    {
+      "section": "S.C. Code § 42-1-550",
+      "name": "Rights against third persons prior to award — employee may sue a third person before an award and prosecute it to final determination (read 2026-09-24)",
+      "url": "https://www.scstatehouse.gov/code/t42c001.php"
+    },
+    {
+      "section": "S.C. Code § 42-1-560",
+      "name": "Third-party liability — compensation unaffected; action against the third party must be commenced within one year after the carrier accepts liability or pays; carrier lien on the recovery; assignment to the carrier after 20 days' written notice if the employee does not sue (read 2026-09-24)",
+      "url": "https://www.scstatehouse.gov/code/t42c001.php"
+    },
+    {
+      "section": "S.C. Code § 42-9-60",
+      "name": "No compensation where injury occasioned by intoxication or by the wilful intention of the employee to injure or kill himself or another; burden on the party asserting it (read 2026-09-24)",
+      "url": "https://www.scstatehouse.gov/code/t42c009.php"
+    },
+    {
+      "section": "S.C. Code § 42-15-20",
+      "name": "Notice of accident — immediately or as soon as practicable; no compensation unless notice within ninety days absent reasonable excuse and no prejudice (read 2026-09-24)",
+      "url": "https://www.scstatehouse.gov/code/t42c015.php"
+    },
+    {
+      "section": "S.C. Code § 42-15-40",
+      "name": "Time for filing claim — barred unless filed with the Commission within two years after the accident (read 2026-09-24)",
+      "url": "https://www.scstatehouse.gov/code/t42c015.php"
+    },
+    {
+      "section": "S.C. Code § 15-3-530",
+      "name": "Three-year limitation — assault, battery or any injury to the person (verified in facts-2647/1756)",
+      "url": "https://www.scstatehouse.gov/code/t15c003.php"
+    },
+    {
+      "section": "S.C. Code § 15-32-520",
+      "name": "Punitive damages — wilful, wanton or reckless conduct, clear and convincing evidence (verified in facts-1756)",
+      "url": "https://www.scstatehouse.gov/code/t15c032.php"
+    },
+    {
+      "section": "29 U.S.C. § 654(a)(1)",
+      "name": "OSH Act § 5(a)(1), the General Duty Clause — employer shall furnish a place of employment free from recognized hazards that are causing or are likely to cause death or serious physical harm (read 2026-09-24)",
+      "url": "https://www.osha.gov/laws-regs/oshact/section5-duties"
+    }
+  ],
+  "authoritativeLinks": [
+    {
+      "name": "BLS, Census of Fatal Occupational Injuries Summary, 2024 (USDL-26-0230, released Feb. 19, 2026) — 5,070 fatal work injuries; 733 from violent acts; 470 homicides",
+      "url": "https://www.bls.gov/news.release/cfoi.nr0.htm"
+    },
+    {
+      "name": "OSHA, Workplace Violence — Overview (no specific OSHA standard; risk factors; prevention-program guidance; CPL 02-01-058) — already linked in the post",
+      "url": "https://www.osha.gov/workplace-violence"
+    },
+    {
+      "name": "OSH Act of 1970, Section 5 — Duties (General Duty Clause)",
+      "url": "https://www.osha.gov/laws-regs/oshact/section5-duties"
+    },
+    {
+      "name": "Chaparral Boats, Inc. v. Heath, 269 Ga. App. 339, 606 S.E.2d 567 (Ga. Ct. App. 2004) — Georgia positional-risk doctrine reaffirmed",
+      "url": "https://law.justia.com/cases/georgia/court-of-appeals/2004/a04a0981.html"
+    },
+    {
+      "name": "Potts v. UAP-Ga. Ag. Chem., Inc., 270 Ga. 14, 506 S.E.2d 101 (Ga. 1998) — tort immunity depends on compensability; attacks for reasons personal are not covered injuries",
+      "url": "https://law.justia.com/cases/georgia/supreme-court/1998/s97g1889-1.html"
+    },
+    {
+      "name": "Potts v. UAP-GA AG CHEM, Inc., 227 Ga. App. 841 (Ga. Ct. App. 1997) — exclusivity bars tort suits for compensable injuries even for intentional employer misconduct; co-worker intentional torts barred unless for personal reasons; 'excludes benefits for pain and suffering'",
+      "url": "https://law.justia.com/cases/georgia/court-of-appeals/1997/a97a0816.html"
+    },
+    {
+      "name": "Simmons v. Solo Cup Operating Corp. (Ga. Ct. App. 2024, A24A0623) — co-worker shooting for personal reasons not a covered injury; positional-risk argument rejected",
+      "url": "https://law.justia.com/cases/georgia/court-of-appeals/2024/a24a0623.html"
+    },
+    {
+      "name": "Lewis v. Northside Hospital, Inc., 267 Ga. App. 266 (Ga. Ct. App. 2004) — work-related battery by a co-worker is compensable and tort claims are barred",
+      "url": "https://law.justia.com/cases/georgia/court-of-appeals/2004/a04a0472.html"
+    },
+    {
+      "name": "Southwire Co. v. George, 266 Ga. 739, 470 S.E.2d 865 (Ga. 1996) — mental disability compensable only when it arose from an accident with a compensable physical injury",
+      "url": "https://law.justia.com/cases/georgia/supreme-court/1996/s95g1507-1.html"
+    },
+    {
+      "name": "Abernathy v. City of Albany, 269 Ga. 88, 495 S.E.2d 13 (Ga. 1998) — psychic injury without a preceding or accompanying physical injury is not compensable",
+      "url": "https://law.justia.com/cases/georgia/supreme-court/1998/s97a2019-1.html"
+    },
+    {
+      "name": "Nicholson v. S.C. Dep't of Social Services, 411 S.C. 381, 769 S.E.2d 1 (S.C. 2015) — claimant need only prove a causal connection between work conditions and injury; court of appeals erred in requiring a hazard or danger (Justia summary; opinion PDF at sccourts.org Op. No. 27478)",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/2015/27478.html"
+    },
+    {
+      "name": "Doe v. South Carolina State Hospital, 285 S.C. 183, 328 S.E.2d 652 (S.C. Ct. App. 1985) — third-party assault is an 'accident'; arises out of employment if the risk of assault is increased by the nature or setting of the work; mental injury from a physical assault is within the Act",
+      "url": "https://law.justia.com/cases/south-carolina/court-of-appeals/1985/285-s-c-183-2.html"
+    },
+    {
+      "name": "Kinsey v. Champion American Service Center, 268 S.C. 177, 232 S.E.2d 720 (S.C. 1977) — no statutory 'aggressor defense'; wilful-intent bar requires a deliberate or formed intention to injure; dispute over work instructions satisfies 'arising out of'",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/1977/20363-1.html"
+    },
+    {
+      "name": "Zeigler v. S.C. Law Enforcement Division, 250 S.C. 326, 157 S.E.2d 598 (S.C. 1967) — wilful-intent bar applied to an employee who voluntarily pursued an armed altercation",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/1967/18722-1.html"
+    },
+    {
+      "name": "Dickert v. Metropolitan Life Ins. Co., 311 S.C. 218, 428 S.E.2d 700 (S.C. 1993) — negligent selection/retention/supervision claim against employer barred by exclusivity; alter-ego exception; co-employee personally liable for intentional torts",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/1993/23810-2.html"
+    },
+    {
+      "name": "Edens v. Bellini (Milliken & Co.), 359 S.C. 433, 597 S.E.2d 863 (S.C. Ct. App. 2004, Op. No. 3815) — the only exceptions to exclusivity; intentional-injury exception requires deliberate or specific intent to injure; substantial-certainty standard rejected",
+      "url": "https://law.justia.com/cases/south-carolina/court-of-appeals/2004/3815.html"
+    },
+    {
+      "name": "Sabb v. South Carolina State University, 350 S.C. 416 (S.C. 2002) — exclusivity applied to claims arising out of and in the course of employment, citing Dickert",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/2002/25496.html"
+    },
+    {
+      "name": "Bentley v. Spartanburg County, 398 S.C. 418, 730 S.E.2d 296 (S.C. 2012) — deputy's involvement in a shooting not 'extraordinary and unusual' for the particular employment; mental-injury claim denied",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/2012/27140.html"
+    },
+    {
+      "name": "Georgia General Assembly — Ashley Wilson Act (2024 Act 511; O.C.G.A. § 45-25-1 et seq., eff. Jan. 1, 2025): public-entity insurance for first responders' occupational PTSD, separate from workers' compensation",
+      "url": "https://law.justia.com/codes/georgia/title-45/chapter-25/section-45-25-2/"
+    },
+    {
+      "name": "South Carolina H. 3261 (2025-26) — proposed § 42-9-50 first-responder PTSD workers' compensation; not in the Code on scstatehouse.gov as of 2026-09-24",
+      "url": "https://www.scstatehouse.gov/sess126_2025-2026/bills/3261.htm"
+    },
+    {
+      "name": "Georgia State Board of Workers' Compensation — Workers' Compensation Law FAQs (30-day report, one-year claim)",
+      "url": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs"
+    },
+    {
+      "name": "South Carolina Workers' Compensation Commission — Injured Worker FAQs (90-day report; Form 50 within two years)",
+      "url": "https://wcc.sc.gov/injured-worker-faqs"
+    }
+  ]
+}

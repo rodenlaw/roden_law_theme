@@ -1,0 +1,31 @@
+{
+ "excerpt": "Doctors must disclose risks and alternatives before treating you. How informed consent works in Georgia and South Carolina, and when a failure is malpractice.",
+ "keyTakeaways": "Informed consent requires doctors to disclose risks, benefits, and alternatives before treatment. Georgia applies a physician-centered standard with a rebuttable presumption for signed consent forms (O.C.G.A. § 31-9-6.1), while South Carolina uses a patient-centered standard. Claims must be filed within 2 years in Georgia (O.C.G.A. § 9-3-71) or 3 years in South Carolina (S.C. Code § 15-3-545), both requiring expert affidavits.",
+ "faqs": [
+  {
+   "question": "What is informed consent in medical treatment?",
+   "answer": "Informed consent is the legal requirement that doctors must explain a proposed treatment, its risks, benefits, and alternatives before performing it, so the patient can make a knowledgeable decision. It is a communication process, not just a signed form."
+  },
+  {
+   "question": "What must a doctor disclose before treatment?",
+   "answer": "Doctors must disclose the diagnosis, the proposed treatment, material risks and complications, expected benefits, alternative treatments and their risks, risks of declining treatment, and recovery expectations. They must disclose risks that a reasonable patient would consider significant."
+  },
+  {
+   "question": "Does signing a consent form prevent a malpractice claim?",
+   "answer": "Not necessarily. In Georgia, a signed consent form creates a rebuttable presumption of informed consent (O.C.G.A. § 31-9-6.1), but patients can overcome it by showing the form was inadequate or the doctor did not actually explain the risks. In South Carolina, the form is evidence but not conclusive."
+  },
+  {
+   "question": "When is informed consent not required?",
+   "answer": "Informed consent is not required in medical emergencies involving unconscious patients needing life-saving care, when a patient explicitly waives the right to information, for commonly known risks, and for routine non-invasive procedures like vital sign checks."
+  },
+  {
+   "question": "What is the statute of limitations for an informed consent claim?",
+   "answer": "In Georgia, the statute of limitations is 2 years from the date of injury or discovery (O.C.G.A. § 9-3-71). In South Carolina, it is 3 years from the date of injury or discovery (S.C. Code § 15-3-545). Both states require filing an expert affidavit with the complaint."
+  },
+  {
+   "question": "How do I prove a lack of informed consent?",
+   "answer": "You must prove the doctor had a duty to disclose specific information, failed to do so, you would not have consented with full information, and you suffered actual harm from an undisclosed risk. This requires medical records, expert testimony, and evidence of what was or was not communicated."
+  }
+ ],
+ "metaDescription": ""
+}

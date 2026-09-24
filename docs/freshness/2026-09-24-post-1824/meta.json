@@ -1,0 +1,31 @@
+{
+ "excerpt": "Doctors must disclose risks and alternatives before surgery and other major procedures. How informed consent works in Georgia and South Carolina, and when a failure is malpractice.",
+ "keyTakeaways": "Informed consent requires doctors to disclose risks, benefits, and alternatives before treatment. Georgia's duty is statutory, covers only surgery under general, spinal or major regional anesthesia and certain diagnostic procedures, and treats a compliant signed form as a rebuttable presumption of consent (O.C.G.A. § 31-9-6.1); South Carolina's duty is broader in scope but measured by what a reasonable physician would disclose, proven through expert testimony (Hook v. Rothstein). Claims must be filed within 2 years of the injury in Georgia (O.C.G.A. § 9-3-71) or 3 years in South Carolina, capped at 6 years (S.C. Code § 15-3-545); both require expert affidavits, and South Carolina also requires a pre-suit notice and mediation (S.C. Code § 15-79-125).",
+ "faqs": [
+  {
+   "question": "What is informed consent in medical treatment?",
+   "answer": "Informed consent is the legal requirement that doctors must explain a proposed treatment, its risks, benefits, and alternatives before performing it, so the patient can make a knowledgeable decision. It is a communication process, not just a signed form."
+  },
+  {
+   "question": "What must a doctor disclose before treatment?",
+   "answer": "In both states the doctor must explain the diagnosis, the nature and purpose of the procedure, its material risks, the likelihood of success, the generally accepted alternatives, and what will happen if you decline. Georgia defines material risks by statute (O.C.G.A. § 31-9-6.1); South Carolina asks what a reasonable physician in the same field would disclose (Hook v. Rothstein)."
+  },
+  {
+   "question": "Does signing a consent form prevent a malpractice claim?",
+   "answer": "Not necessarily. In Georgia, a signed consent form creates a rebuttable presumption of informed consent (O.C.G.A. § 31-9-6.1), but patients can overcome it by showing the form was inadequate or the doctor did not actually explain the risks. South Carolina has no statutory presumption; the question is whether the doctor actually disclosed what a reasonable physician would have (Hook v. Rothstein)."
+  },
+  {
+   "question": "When is informed consent not required?",
+   "answer": "Both states excuse disclosure in a genuine emergency. Georgia also excuses it when the patient asks in writing not to be told, when the procedure carries no material risk, when a compliant consent was given within the prior 30 days, or for unforeseen procedures the patient authorized the surgeon to decide (O.C.G.A. § 31-9-6.1(e)); routine care falls outside Georgia's statute altogether. South Carolina does not require disclosure of remote, minor risks and recognizes a therapeutic privilege (Hook v. Rothstein)."
+  },
+  {
+   "question": "What is the statute of limitations for an informed consent claim?",
+   "answer": "In Georgia, 2 years from the injury — Georgia has no discovery rule — and never more than 5 years after the procedure (O.C.G.A. § 9-3-71). In South Carolina, 3 years from the procedure or from when you discovered or should have discovered the injury, and never more than 6 years after the procedure (S.C. Code § 15-3-545). Georgia requires an expert affidavit with the complaint (O.C.G.A. § 9-11-9.1); South Carolina requires one with a pre-suit Notice of Intent, followed by mediation, and again with the complaint (S.C. Code §§ 15-79-125, 15-36-100)."
+  },
+  {
+   "question": "How do I prove a lack of informed consent?",
+   "answer": "You must prove the doctor had a duty to disclose specific information, failed to do so, a reasonable patient in your position would have declined the procedure (or, in Georgia, chosen an accepted alternative) with full information, and you suffered actual harm from an undisclosed risk. This requires medical records, expert testimony, and evidence of what was or was not communicated."
+  }
+ ],
+ "metaDescription": ""
+}

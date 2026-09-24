@@ -1649,7 +1649,7 @@
             "title": "Are Workplace Violence Injuries Covered by Workers' Compensation in Georgia and South Carolina?",
             "excerpt": "When an assault at work is covered by workers' compensation in Georgia and South Carolina, and the connection to employment that decides it.",
             "meta": {
-                "_roden_author_attorney": "Eric Roden",
+                "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "Are injuries from workplace violence covered by workers' comp?",
@@ -1657,15 +1657,15 @@
                     },
                     {
                         "question": "What if I was the aggressor in a workplace fight?",
-                        "answer": "If you initiated the physical confrontation, your workers' comp claim will likely be denied in both Georgia and South Carolina. The aggressor defense bars coverage because the injury arose from your own voluntary conduct, not from employment. However, if a work-related argument escalated and you participated but did not start the physical altercation, coverage may still apply."
+                        "answer": "It depends on intent, not just who swung first. Georgia bars benefits when the injury grew out of your attempt to injure another (O.C.G.A. § 34-9-17). South Carolina bars them only if you acted with a deliberate intention to injure someone (S.C. Code § 42-9-60) — a spontaneous scuffle over a work matter is not enough, and the employer has to prove it. However, if a work-related argument escalated and you participated but did not start the physical altercation, coverage may still apply."
                     },
                     {
                         "question": "Is domestic violence at the workplace covered by workers' comp?",
-                        "answer": "Generally <strong>no</strong> — because the violence stems from a personal relationship, not employment. However, some courts have found coverage when the employer knew about a specific domestic violence threat and failed to take protective measures, or when the employment placed the worker at the location where the attack occurred."
+                        "answer": "Generally <strong>no</strong> — an attack by a partner or ex is for reasons personal to you, not your job, and Georgia's statute excludes it expressly (O.C.G.A. § 34-9-1(4)). South Carolina likewise covers an assault only if the nature or setting of the work increased the risk. In Georgia that cuts the other way: because the injury is outside workers' comp, you may be able to sue your employer for negligence if it knew of the threat and failed to protect you, as a Georgia court allowed when an estranged husband shot an employee inside the plant."
                     },
                     {
                         "question": "Can I sue the person who attacked me at work in addition to filing a workers' comp claim?",
-                        "answer": "Yes. A workers' comp claim covers your medical bills and lost wages from your employer's insurer. A separate <strong>personal injury lawsuit</strong> against the attacker can recover pain and suffering, emotional distress, and punitive damages — compensation not available through workers' comp. You may also have a negligent security claim against the property owner."
+                        "answer": "Yes. A workers' comp claim covers your medical bills and lost wages from your employer's insurer. A separate <strong>personal injury lawsuit</strong> against the attacker can recover pain and suffering, emotional distress, and punitive damages — compensation not available through workers' comp. In Georgia this does not extend to a co-worker who attacked you over a work matter (O.C.G.A. § 34-9-11(a)); South Carolina allows a suit against a co-worker for an intentional attack. You may also have a negligent security claim against a property owner other than your employer."
                     },
                     {
                         "question": "How do I report a workplace violence injury in Georgia vs. South Carolina?",
@@ -1673,10 +1673,11 @@
                     },
                     {
                         "question": "Does workers' comp cover PTSD from workplace violence?",
-                        "answer": "Both states provide limited coverage for psychological injuries from workplace violence, though the standards are more restrictive than for physical injuries. If the PTSD resulted from a traumatic workplace event — such as an assault, robbery, or active shooter incident — it may be covered. An attorney can evaluate whether your psychological injuries qualify."
+                        "answer": "It depends on the state. In Georgia, PTSD is covered only when it comes with a physical injury from the same incident — a worker physically hurt in an assault can claim the resulting PTSD, but a worker traumatized by a robbery without physical injury cannot (Southwire Co. v. George; Abernathy v. City of Albany). In South Carolina, PTSD without a physical injury can be covered if you prove with medical evidence that the event was extraordinary and unusual for your particular job (S.C. Code § 42-1-160(B)) — a bar that is hard for police officers and other workers whose jobs already involve violence (Bentley v. Spartanburg County). An attorney can evaluate whether your psychological injuries qualify."
                     }
                 ],
-                "_roden_key_takeaways": "Workplace violence injuries are covered by workers' comp when the violence is connected to employment — customer attacks, criminal acts during work, coworker disputes over work matters, and violence against high-risk workers all qualify. The aggressor is barred. Domestic violence at work is generally not covered. Beyond workers' comp, victims can file personal injury lawsuits against attackers and negligent security claims. Report within 30 days in Georgia (O.C.G.A. § 34-9-80) or 90 days in South Carolina (S.C. Code § 42-15-20)."
+                "_roden_key_takeaways": "Workplace violence injuries are covered by workers' comp when the violence is connected to employment — customer attacks, criminal acts during work, coworker disputes over work matters, and violence against high-risk workers generally qualify. A worker who deliberately set out to injure someone is barred (O.C.G.A. § 34-9-17; S.C. Code § 42-9-60). Domestic violence at work is generally not covered. Beyond workers' comp, victims can file personal injury lawsuits against attackers and negligent security claims against property owners other than the employer. Report within 30 days in Georgia (O.C.G.A. § 34-9-80) or 90 days in South Carolina (S.C. Code § 42-15-20).",
+                "_roden_last_reviewed": "2026-09-24"
             }
         },
         "/blog/benefits-of-an-accident-reconstruction-expert/": {
@@ -7355,9 +7356,9 @@
             "type": "post",
             "status": "publish",
             "title": "Informed Consent in Georgia and South Carolina: What Patients Need to Know",
-            "excerpt": "Doctors must disclose risks and alternatives before treating you. How informed consent works in Georgia and South Carolina, and when a failure is malpractice.",
+            "excerpt": "Doctors must disclose risks and alternatives before surgery and other major procedures. How informed consent works in Georgia and South Carolina, and when a failure is malpractice.",
             "meta": {
-                "_roden_author_attorney": "Eric Roden",
+                "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "What is informed consent in medical treatment?",
@@ -7365,26 +7366,27 @@
                     },
                     {
                         "question": "What must a doctor disclose before treatment?",
-                        "answer": "Doctors must disclose the diagnosis, the proposed treatment, material risks and complications, expected benefits, alternative treatments and their risks, risks of declining treatment, and recovery expectations. They must disclose risks that a reasonable patient would consider significant."
+                        "answer": "In both states the doctor must explain the diagnosis, the nature and purpose of the procedure, its material risks, the likelihood of success, the generally accepted alternatives, and what will happen if you decline. Georgia defines material risks by statute (O.C.G.A. § 31-9-6.1); South Carolina asks what a reasonable physician in the same field would disclose (Hook v. Rothstein)."
                     },
                     {
                         "question": "Does signing a consent form prevent a malpractice claim?",
-                        "answer": "Not necessarily. In Georgia, a signed consent form creates a rebuttable presumption of informed consent (O.C.G.A. § 31-9-6.1), but patients can overcome it by showing the form was inadequate or the doctor did not actually explain the risks. In South Carolina, the form is evidence but not conclusive."
+                        "answer": "Not necessarily. In Georgia, a signed consent form creates a rebuttable presumption of informed consent (O.C.G.A. § 31-9-6.1), but patients can overcome it by showing the form was inadequate or the doctor did not actually explain the risks. South Carolina has no statutory presumption; the question is whether the doctor actually disclosed what a reasonable physician would have (Hook v. Rothstein)."
                     },
                     {
                         "question": "When is informed consent not required?",
-                        "answer": "Informed consent is not required in medical emergencies involving unconscious patients needing life-saving care, when a patient explicitly waives the right to information, for commonly known risks, and for routine non-invasive procedures like vital sign checks."
+                        "answer": "Both states excuse disclosure in a genuine emergency. Georgia also excuses it when the patient asks in writing not to be told, when the procedure carries no material risk, when a compliant consent was given within the prior 30 days, or for unforeseen procedures the patient authorized the surgeon to decide (O.C.G.A. § 31-9-6.1(e)); routine care falls outside Georgia's statute altogether. South Carolina does not require disclosure of remote, minor risks and recognizes a therapeutic privilege (Hook v. Rothstein)."
                     },
                     {
                         "question": "What is the statute of limitations for an informed consent claim?",
-                        "answer": "In Georgia, the statute of limitations is 2 years from the date of injury or discovery (O.C.G.A. § 9-3-71). In South Carolina, it is 3 years from the date of injury or discovery (S.C. Code § 15-3-545). Both states require filing an expert affidavit with the complaint."
+                        "answer": "In Georgia, 2 years from the injury — Georgia has no discovery rule — and never more than 5 years after the procedure (O.C.G.A. § 9-3-71). In South Carolina, 3 years from the procedure or from when you discovered or should have discovered the injury, and never more than 6 years after the procedure (S.C. Code § 15-3-545). Georgia requires an expert affidavit with the complaint (O.C.G.A. § 9-11-9.1); South Carolina requires one with a pre-suit Notice of Intent, followed by mediation, and again with the complaint (S.C. Code §§ 15-79-125, 15-36-100)."
                     },
                     {
                         "question": "How do I prove a lack of informed consent?",
-                        "answer": "You must prove the doctor had a duty to disclose specific information, failed to do so, you would not have consented with full information, and you suffered actual harm from an undisclosed risk. This requires medical records, expert testimony, and evidence of what was or was not communicated."
+                        "answer": "You must prove the doctor had a duty to disclose specific information, failed to do so, a reasonable patient in your position would have declined the procedure (or, in Georgia, chosen an accepted alternative) with full information, and you suffered actual harm from an undisclosed risk. This requires medical records, expert testimony, and evidence of what was or was not communicated."
                     }
                 ],
-                "_roden_key_takeaways": "Informed consent requires doctors to disclose risks, benefits, and alternatives before treatment. Georgia applies a physician-centered standard with a rebuttable presumption for signed consent forms (O.C.G.A. § 31-9-6.1), while South Carolina uses a patient-centered standard. Claims must be filed within 2 years in Georgia (O.C.G.A. § 9-3-71) or 3 years in South Carolina (S.C. Code § 15-3-545), both requiring expert affidavits."
+                "_roden_key_takeaways": "Informed consent requires doctors to disclose risks, benefits, and alternatives before treatment. Georgia's duty is statutory, covers only surgery under general, spinal or major regional anesthesia and certain diagnostic procedures, and treats a compliant signed form as a rebuttable presumption of consent (O.C.G.A. § 31-9-6.1); South Carolina's duty is broader in scope but measured by what a reasonable physician would disclose, proven through expert testimony (Hook v. Rothstein). Claims must be filed within 2 years of the injury in Georgia (O.C.G.A. § 9-3-71) or 3 years in South Carolina, capped at 6 years (S.C. Code § 15-3-545); both require expert affidavits, and South Carolina also requires a pre-suit notice and mediation (S.C. Code § 15-79-125).",
+                "_roden_last_reviewed": "2026-09-24"
             }
         },
         "/blog/insurance-company-ignoring-demand-letter/": {
@@ -13063,36 +13065,37 @@
             "type": "post",
             "status": "publish",
             "title": "The Value of Pain and Suffering in Georgia and South Carolina Personal Injury Claims",
-            "excerpt": "How pain and suffering is valued in Georgia and South Carolina injury claims, including the multiplier and per diem methods insurers actually use.",
+            "excerpt": "How pain and suffering is valued in Georgia and South Carolina injury claims, including the multiplier and per diem conventions adjusters use in negotiation, and the limits that apply in each state.",
             "meta": {
-                "_roden_author_attorney": "Eric Roden",
+                "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "What is pain and suffering in a personal injury case?",
-                        "answer": "Pain and suffering refers to the physical pain and emotional distress you experience as a result of an injury caused by someone else's negligence. It is a category of non-economic damages that compensates for losses like chronic pain, anxiety, depression, loss of enjoyment of life, and loss of consortium — things that do not have a specific dollar amount attached to them."
+                        "answer": "Pain and suffering refers to the physical pain and emotional distress you experience as a result of an injury caused by someone else's negligence. It is a category of non-economic damages that compensates for losses like chronic pain, anxiety, depression, loss of enjoyment of life, and disfigurement — things that do not have a specific dollar amount attached to them."
                     },
                     {
                         "question": "How is the value of pain and suffering calculated?",
-                        "answer": "There is no set formula. The two most common methods are the multiplier method, which multiplies your economic damages by a factor of 1.5 to 5 based on severity, and the per diem method, which assigns a daily dollar amount multiplied by the number of days you are affected. If a case goes to trial, the jury has broad discretion to award what it considers fair."
+                        "answer": "There is no set formula in either state. In negotiation, adjusters and attorneys use the multiplier method, which multiplies your economic damages by a factor that rises with the severity of the injury, or the per diem method, which assigns a daily dollar amount for each day you are affected. Neither is a rule of law. If a case goes to trial, the jury decides the amount on the evidence — in Georgia by the \"enlightened conscience of an impartial jury\", and since 2025 lawyers there may suggest a dollar figure only in closing argument and only if it is tied to the evidence (O.C.G.A. § 9-10-184)."
                     },
                     {
                         "question": "Is there a cap on pain and suffering damages in Georgia?",
-                        "answer": "No. Georgia does not cap pain and suffering damages in any personal injury case. A previous cap on non-economic damages in medical malpractice cases was struck down as unconstitutional by the Georgia Supreme Court in Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt (2010)."
+                        "answer": "Not in ordinary negligence cases. Georgia has no cap on pain and suffering in car, truck, premises or medical malpractice claims; a previous cap on non-economic damages in medical malpractice cases was struck down as unconstitutional by the Georgia Supreme Court in Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt, 286 Ga. 731 (2010). The main exception is a claim against the State of Georgia, where the Tort Claims Act caps all damages at $1 million per person (O.C.G.A. § 50-21-29)."
                     },
                     {
                         "question": "Is there a cap on pain and suffering damages in South Carolina?",
-                        "answer": "In most personal injury cases, no. However, South Carolina does cap non-economic damages in medical malpractice cases at $350,000 per defendant and $1.05 million total regardless of the number of defendants (S.C. Code § 15-32-220)."
+                        "answer": "In most personal injury cases, no. However, South Carolina does cap non-economic damages in medical malpractice cases: the statute sets $350,000 per health care provider or facility and $1.05 million for all of them together, per injured person, indexed to inflation each year — $596,001 and $1,788,002 for 2026 (S.C. Code § 15-32-220). The cap does not apply if the provider was grossly negligent, wilful, wanton or reckless, or committed fraud or altered records, and it never limits economic damages. Claims against a government entity are capped at $300,000 per person under the Tort Claims Act (S.C. Code § 15-78-120)."
                     },
                     {
                         "question": "How does comparative fault affect my pain and suffering award?",
-                        "answer": "Both Georgia and South Carolina follow modified comparative fault rules. In Georgia, your award is reduced by your percentage of fault and you recover nothing if you are 50% or more at fault (O.C.G.A. § 51-12-33). In South Carolina, you recover nothing if you are 51% or more at fault. This reduction applies to all damages, including pain and suffering."
+                        "answer": "Both Georgia and South Carolina follow modified comparative fault rules. In Georgia, your award is reduced by your percentage of fault and you recover nothing if you are 50% or more at fault (O.C.G.A. § 51-12-33). In South Carolina, you recover nothing if you are 51% or more at fault (Nelson v. Concrete Supply Co.). This reduction applies to all damages, including pain and suffering."
                     },
                     {
                         "question": "What evidence do I need to prove pain and suffering?",
                         "answer": "Strong evidence includes medical records documenting your injuries and treatment, mental health records such as therapy notes or psychiatric evaluations, a pain journal tracking your daily symptoms and limitations, photographs of your injuries, testimony from family and friends about changes in your life, and expert testimony from medical professionals about the severity and expected duration of your suffering."
                     }
                 ],
-                "_roden_key_takeaways": "Pain and suffering damages compensate injury victims for physical discomfort, emotional distress, anxiety, and diminished quality of life beyond economic losses. Insurers use multiplier or per diem methods to calculate these non-economic damages. Georgia does not cap pain and suffering in most personal injury cases, and South Carolina likewise imposes no general cap. Comparative fault reduces awards proportionally in both states, barring recovery at 50% fault in Georgia (O.C.G.A. § 51-12-33) and 51% in South Carolina."
+                "_roden_key_takeaways": "Pain and suffering damages compensate injury victims for physical discomfort, emotional distress, anxiety, and diminished quality of life beyond economic losses. Adjusters and attorneys use informal multiplier or per diem conventions to negotiate these non-economic damages; neither is a rule of law, and a jury is not bound by them. Georgia does not cap pain and suffering in most personal injury cases, and South Carolina likewise imposes no general cap. Comparative fault reduces awards proportionally in both states, barring recovery at 50% fault in Georgia (O.C.G.A. § 51-12-33) and 51% in South Carolina (Nelson v. Concrete Supply Co.).",
+                "_roden_last_reviewed": "2026-09-24"
             }
         },
         "/blog/valuing-compensation-for-a-personal-injury/": {

@@ -1,0 +1,595 @@
+{
+  "postId": 1651,
+  "slug": "value-of-pain-and-suffering",
+  "liveUrl": "https://rodenlaw.com/blog/value-of-pain-and-suffering/",
+  "jurisdiction": "both",
+  "verifiedAt": "2026-09-24",
+  "reviewerByRule": "Graeham C. Gillin (two-state post that states South Carolina law; never Eric Roden). Do not add an attribution quote on this refresh; the post has none.",
+  "researchNotes": "law.justia.com returned HTTP 403 to curl and WebFetch on 2026-09-24 and was read through the Firecrawl CLI, as in the sibling packs (1653, 1676, 1756). Every year-less Georgia URL below was confirmed to resolve and to show the 2025 Code of Georgia breadcrumb; the § 9-10-184 page lives under title-9/chapter-10/article-8 (Argument and Conduct of Counsel), and the article-1, article-2 and article-7 guesses return 'Page not found'. South Carolina statutes were read directly on www.scstatehouse.gov (HTTP 200). The indexed medical-malpractice cap was read from the S.C. Revenue and Fiscal Affairs Office memo of 2026-02-03 (rfa.sc.gov/media/11477, PDF, via Firecrawl). Nine court opinions were opened on Justia and each quoted holding was found in the opinion text: Nestlehutt (Ga. 2010), AT Systems Southeast v. Carnes (Ga. App. 2005), OB-Gyn Associates of Albany v. Littleton (Ga. 1989), Brock v. Wedincamp (Ga. App. 2002), Stapleton v. Palmore (Ga. 1982), Nelson v. Concrete Supply Co. (S.C. 1991), Raino v. Goodyear (S.C. 1992), Ballard v. Ballard (S.C. 1994) and Smith v. Wells (S.C. 1972). rodenlaw.com returns 403 to curl's default user agent (the WP Engine bot classifier) but 200 with a browser user agent; all fifteen internal links and the Cornell Wex link resolve (checked sequentially with 0.4 s gaps). The tel: href +18447378587 matches the profile's toll-free number. data/statistics.json holds only crash-count facts; none apply. The post states no statute of limitations, no punitive-damages figure and no PIP/UM/seat-belt rule, so nothing from those sibling packs needs adding. Settled rules reused from the siblings: the multiplier and per-diem methods are informal conventions and not rules of law (1653); Nestlehutt struck § 51-13-1 and SB 68 (2025) rewrote § 9-10-184 (1676); Nelson is the only authority for the South Carolina 51 percent bar, never § 15-38-15 (1756).",
+  "verifiedClaims": [
+    {
+      "surface": "body",
+      "claim": "The sleepless nights, the anxiety about getting behind the wheel again, the hobbies you can no longer enjoy — these losses are just as real, and the law recognizes them as <strong>pain and suffering damages</strong>.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-10-184(a)(2) (2025 Code, as rewritten by SB 68): noneconomic damages include 'physical or emotional pain, discomfort, anxiety, hardship, distress, suffering, inconvenience, physical impairment, mental anguish, disfigurement, loss of enjoyment of life, loss of society and companionship, loss of consortium'; S.C. Code § 15-32-210(9): 'pain, suffering, inconvenience, physical impairment, disfigurement, mental anguish, emotional distress, loss of society and companionship, loss of consortium, injury to reputation, humiliation'",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-10/article-8/section-9-10-184/",
+      "retrievedAt": "2026-09-24",
+      "note": "Both states now define the category in statute. Georgia's definition is the 2025 rewrite; South Carolina's sits in the medical-malpractice article but is the only statutory definition in the Code."
+    },
+    {
+      "surface": "body",
+      "claim": "Pain and suffering is a legal term that refers to the <strong>physical pain and emotional distress</strong> a person endures as a result of an injury caused by someone else's negligence. Unlike economic damages such as medical bills and lost wages, pain and suffering falls into the category of <strong>non-economic damages</strong> — also called <strong>general damages</strong> — because there is no receipt or invoice that proves their exact dollar value.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-2(a): 'General damages are those which the law presumes to flow from any tortious act; they may be recovered without proof of any amount'; § 9-10-184(a)(1)-(2); S.C. Code § 15-32-210(3), (9)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-2/",
+      "retrievedAt": "2026-09-24",
+      "note": "Accurate. Georgia's general/special split is statutory (§ 51-12-2); the economic/noneconomic split is in § 9-10-184(a) and S.C. Code § 15-32-210."
+    },
+    {
+      "surface": "body",
+      "claim": "Despite being harder to quantify, pain and suffering damages are often the <strong>largest component</strong> of a personal injury settlement or verdict.",
+      "verdict": "drop",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "No verdict study, court record or statistical source supports 'often the largest component'. Delete the sentence; the Cornell link that follows can stand on its own ('For an overview of how non-economic damages fit ...')."
+    },
+    {
+      "surface": "body",
+      "claim": "see Cornell Law Institute's <a href=\"https://www.law.cornell.edu/wex/damages\" target=\"_blank\" rel=\"noopener\">legal definition of damages</a>",
+      "verdict": "update",
+      "currentValue": "The link resolves (HTTP 200). The publisher is the Legal Information Institute at Cornell Law School; there is no 'Cornell Law Institute'.",
+      "sourceName": "Cornell Law School, Legal Information Institute — Wex: damages",
+      "sourceUrl": "https://www.law.cornell.edu/wex/damages",
+      "retrievedAt": "2026-09-24",
+      "note": "Anchor-text fix only, same defect the 1653 and 1676 packs found: 'the Legal Information Institute at Cornell Law School's definition of damages'. law.cornell.edu is on the outbound allowlist."
+    },
+    {
+      "surface": "body",
+      "claim": "Courts in Georgia and South Carolina recognize two broad categories of pain and suffering: ... Physical Pain and Suffering ... Emotional and Mental Pain and Suffering",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "AT Systems Southeast, Inc. v. Carnes, 272 Ga. App. 148 (2005) (pain and suffering 'in the past, present, and future' measured by the enlightened conscience of the jury); Georgia pattern charge as given in Geary v. Estate of Tapley (Ga. App. 2024): 'Pain and suffering includes mental suffering' and the jury may consider interference with normal living, interference with enjoyment of life, loss of capacity to labor, impairment of bodily health and vigor, fear of extent of injury, actual physical pain and suffering, mental anguish such as anxiety, shock or worry, and the extent to which the plaintiff must limit activities; S.C. Code § 15-32-210(9)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2005/a04a1879.html",
+      "retrievedAt": "2026-09-24",
+      "note": "The physical and emotional bullets (acute and chronic pain, physical limitation, disfigurement, loss of function; anxiety, depression, PTSD, fear, loss of enjoyment of life, insomnia, humiliation) track the Georgia pattern-charge factors and the South Carolina statutory list and assert no figure. One Georgia caveat the post need not state: in a negligence case mental suffering is compensable when it accompanies physical injury (the impact rule, OB-Gyn Associates of Albany v. Littleton, 259 Ga. 663 (1989)); every case type the post lists involves physical injury, so the list is correct as written. The loss-of-consortium bullet is a separate finding below."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Loss of consortium</strong> — the strain on your relationship with your spouse, including loss of companionship, affection, and intimacy",
+      "verdict": "update",
+      "currentValue": "Loss of consortium is the uninjured spouse's own claim, not an element of the injured person's pain and suffering. Georgia: 'one spouse's suit for personal injuries and the other's suit for loss of consortium are \"separate\" and \"distinct\" claims for relief' (Stapleton v. Palmore, 250 Ga. 259 (1982)); O.C.G.A. § 9-3-33 gives the consortium claim its own four-year limitation. South Carolina: 'Any person may maintain an action for damages arising from an intentional or tortious violation of the right to the companionship, aid, society and services of his or her spouse. Provided, that such action shall not include any damages recovered prior thereto by the injured spouse' (S.C. Code § 15-75-20).",
+      "sourceName": "Stapleton v. Palmore, 250 Ga. 259, 297 S.E.2d 270 (Ga. 1982); O.C.G.A. § 9-3-33; S.C. Code § 15-75-20",
+      "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/1982/38899-1.html",
+      "retrievedAt": "2026-09-24",
+      "note": "The bullet sits under 'Emotional and Mental Pain and Suffering' as a loss the injured person recovers. Reword: '<strong>Loss of consortium</strong> — the harm to your spouse's companionship, affection and intimacy. In both states this is your spouse's own separate claim, brought alongside yours (O.C.G.A. § 9-3-33; S.C. Code § 15-75-20).' The same error is in faq:0."
+    },
+    {
+      "surface": "body",
+      "claim": "Neither Georgia nor South Carolina law sets a formula for calculating pain and suffering.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-10-184(b): 'the measure of such damages being the enlightened conscience of an impartial jury'; O.C.G.A. § 51-12-6: 'no measure of damages can be prescribed except the enlightened consciences of impartial jurors'; Carnes (Ga. App. 2005): pain and suffering 'is governed by no other standard than the enlightened conscience of impartial jurors'; Watson v. Wilkinson Trucking Co., 244 S.C. 217 (1964) (pain and suffering is among the elements the jury weighs; no formula prescribed); S.C. Code Title 15, Chapter 32 prescribes none",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-10/article-8/section-9-10-184/",
+      "retrievedAt": "2026-09-24",
+      "note": "Correct in both states. Georgia has the standard in two statutes and a century of case law; South Carolina leaves the amount to the jury without a statutory measure."
+    },
+    {
+      "surface": "body",
+      "claim": "Instead, insurance adjusters, attorneys, and juries use several accepted methods to arrive at a number that reflects the severity of what you have endured.",
+      "verdict": "update",
+      "currentValue": "Juries do not use the multiplier or per-diem methods. In Georgia the jury's measure is 'the enlightened conscience of an impartial jury' (§ 9-10-184(b)), and since SB 68 (effective 2025-04-21, applied to pending cases) counsel may not put 'any specific amount or range of amounts of noneconomic damages' before a jury or prospective juror except in closing argument, and then only if the figure is 'rationally related to the evidence of noneconomic damages' and makes no 'reference to objects or values having no rational connection to the facts proved by the evidence' (§ 9-10-184(b), (c)(1)). The multiplier and per-diem methods are informal conventions adjusters and attorneys use in negotiation (rule settled in facts-1653).",
+      "sourceName": "O.C.G.A. § 9-10-184(b), (c) (2025 Code); SB 68 (2025) §§ 1, 9",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-10/article-8/section-9-10-184/",
+      "retrievedAt": "2026-09-24",
+      "note": "Reword: 'Instead, insurance adjusters and attorneys use a few informal conventions to put a number on it in negotiation. Neither is a rule of law, and a jury is never bound by them.' Then add the SB 68 sentence in the 'Jury Discretion' subsection (see that finding)."
+    },
+    {
+      "surface": "body",
+      "claim": "The most widely used approach. Your total <strong>economic damages</strong> (medical bills, lost wages, property damage, and other out-of-pocket costs) are multiplied by a factor — typically between <strong>1.5 and 5</strong> — to estimate the value of your non-economic losses.",
+      "verdict": "update",
+      "currentValue": "The mechanic (economic damages times a factor) is a fair description of the convention; 'the most widely used approach' and the range '1.5 and 5' are traceable to no verdict record, opinion or study.",
+      "sourceName": "No primary source exists for the range; the framing was verified against O.C.G.A. § 9-10-184 and § 51-12-6 and S.C. Code Title 15, Chapter 32, none of which prescribe a multiplier",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-6/",
+      "retrievedAt": "2026-09-24",
+      "note": "Same finding and same fix as the 1653 pack on the whiplash post: delete 'The most widely used approach.' and 'typically between 1.5 and 5'; keep 'multiplied by a factor that rises with the severity and permanence of the injury'; add 'Neither Georgia nor South Carolina law prescribes this or any formula; it is a negotiating convention, and a jury is never bound by it.'"
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>1.5 – 2×</strong> — minor injuries with full recovery (soft tissue, minor whiplash) ... <strong>2 – 3×</strong> — moderate injuries requiring extended treatment (herniated discs, fractures) ... <strong>3 – 4×</strong> — serious injuries with lasting effects (multiple surgeries, partial disability) ... <strong>4 – 5× or higher</strong> — catastrophic or permanent injuries",
+      "verdict": "drop",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "Per-tier multipliers with no source, presented as a scale. Delete the four bullets and the lead-in 'The multiplier increases based on injury severity:'; keep the three internal links by moving them into the retained sentence (e.g. 'the factor rises with severity, from a minor soft-tissue injury to a <a>traumatic brain injury</a>, <a>spinal cord injury</a> or amputation'). Same class of drop as the whiplash post's Grade 1 / Grade 3 multipliers."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Example:</strong> If your economic damages total $80,000 and a multiplier of 3 is applied, your pain and suffering would be valued at $240,000, bringing the total claim to $320,000.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Arithmetic check: $80,000 x 3 = $240,000; $80,000 + $240,000 = $320,000",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "Correct arithmetic for a purely hypothetical illustration. Label it: 'Purely hypothetical example:' — the figures are not a typical claim value and must not read as one."
+    },
+    {
+      "surface": "body",
+      "claim": "This approach assigns a <strong>daily dollar amount</strong> to your pain and suffering and multiplies it by the number of days you are expected to be affected. The daily rate is often tied to your actual daily earnings, on the theory that your suffering each day is worth at least as much as your daily wage.",
+      "verdict": "update",
+      "currentValue": "The per-diem method is an informal convention, not a rule of law in either state; no source supports 'often tied to your actual daily earnings'. In a Georgia courtroom a per-diem figure is now an argument about 'the worth or monetary value of noneconomic damages' and can be made only within the limits of § 9-10-184(c)(1): after the close of evidence, at the party's first damages argument, rationally related to the evidence and without reference to 'objects or values having no rational connection to the facts proved'.",
+      "sourceName": "O.C.G.A. § 9-10-184(b), (c)(1) (2025 Code)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-10/article-8/section-9-10-184/",
+      "retrievedAt": "2026-09-24",
+      "note": "Change 'is often tied' to 'is sometimes tied'; add 'Like the multiplier, this is a negotiating convention, not a rule of law.' The SB 68 constraint belongs once, in the 'Jury Discretion' subsection, rather than repeated here."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Example:</strong> If you earn $200 per day and your recovery period is 365 days, the per diem calculation yields $73,000 in pain and suffering damages.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Arithmetic check: $200 x 365 = $73,000",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "Correct arithmetic for a hypothetical. Label it 'Purely hypothetical example:' as with the multiplier example. The $200 rate is not a verified market figure."
+    },
+    {
+      "surface": "body",
+      "claim": "The per diem method works best for injuries with a defined recovery timeline. For permanent injuries, the multiplier method is generally more appropriate because it accounts for lifelong impact without requiring a specific end date.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Practice commentary; no legal or numeric claim",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "Commentary on how the two conventions are used; it states no fact that a source could confirm or refute. Keep, provided the preceding sentence says both are conventions and not law."
+    },
+    {
+      "surface": "body",
+      "claim": "If your case goes to trial, the jury has broad discretion to award whatever amount it believes fairly compensates you for your pain and suffering. Jurors consider the evidence, the severity of injuries, the credibility of testimony, and their own sense of fairness.",
+      "verdict": "update",
+      "currentValue": "Georgia names the standard: 'the enlightened conscience of an impartial jury' (§ 9-10-184(b); § 51-12-6; Carnes, Ga. App. 2005). The discretion is wide but reviewable — Carnes describes the 'heavy burden under OCGA § 51-12-12(a)' a defendant carries to show a pain-and-suffering award excessive. And since SB 68 (2025) Georgia limits what the jury may hear about a dollar figure: no specific amount or range may be mentioned to jurors or prospective jurors except in closing, and only if rationally related to the evidence (§ 9-10-184(b)-(d)); any party may also elect, before the pretrial order, a phased trial in which fault is decided before any damages evidence is heard (§ 51-12-15, effective 2025-04-21). South Carolina leaves the amount to the jury with no statutory measure.",
+      "sourceName": "O.C.G.A. § 9-10-184(b)-(d) and § 51-12-15 (2025 Code; added by SB 68 §§ 1, 8, effective April 21, 2025); AT Systems Southeast, Inc. v. Carnes (Ga. App. 2005)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-15/",
+      "retrievedAt": "2026-09-24",
+      "note": "Add two sentences after 'their own sense of fairness.': 'In Georgia the legal measure is the \"enlightened conscience of an impartial jury\" (O.C.G.A. § 9-10-184). Since Georgia's 2025 tort-reform act (SB 68), lawyers may suggest a dollar figure for pain and suffering only in closing argument, and only if it is rationally tied to the evidence; either side may also ask for a phased trial in which the jury decides fault before hearing about damages (O.C.G.A. § 51-12-15).' Keep the South Carolina sentence general."
+    },
+    {
+      "surface": "body",
+      "claim": "Factors That Increase Value ... Severity of injuries ... Permanence ... Length of recovery ... Impact on daily life ... Clear liability — when fault is obvious (e.g., a drunk driver rear-ended you), insurers are more likely to offer fair compensation ... Documented mental health treatment ... Consistent medical treatment",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Georgia pattern charge factors (interference with normal living and enjoyment of life, impairment of bodily health and vigor, mental anguish, limitation on activities) as given in Geary v. Estate of Tapley (Ga. App. 2024) and approved in Food Lion v. Williams, 219 Ga. App. 352 (1995); balance is practice commentary",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2024/a24a0978.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Severity, permanence and impact on daily life are the factors the Georgia charge lists; the negotiation points (clear liability, documentation, consistent treatment) are commentary with no figure. Nothing to correct."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Pre-existing conditions</strong> — insurers will try to attribute your pain to a condition that existed before the accident, though Georgia and South Carolina both follow the <strong>eggshell plaintiff rule</strong> (you take the victim as you find them)",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Georgia: AT Systems Southeast, Inc. v. Carnes (Ga. App. 2005): 'it has long been the rule that a tortfeasor takes a plaintiff in whatever condition he finds him. A negligent actor must bear the risk that his liability will be increased by reason of the actual physical condition of the other toward whom his act [is] negligent.' South Carolina: Raino v. Goodyear Tire & Rubber Co., 309 S.C. 255 (1992): 'The defendant takes the plaintiff as he is found and the plaintiff is entitled to recover damages resulting from the aggravation of a pre-existing condition', citing Watson v. Wilkinson Trucking Co., 244 S.C. 217 (1964)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1992/23703-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Correct in both states. Optional precision: the recovery is for the aggravation the defendant caused, not for the pre-existing condition itself (Carnes; Raino; Mitchell v. Turner, 89 Ga. App. 14 (1953)). Georgia opinion: https://law.justia.com/cases/georgia/court-of-appeals/2005/a04a1879.html"
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Gaps in medical treatment</strong> ... <strong>Inconsistent statements</strong> ... <strong>Social media activity</strong> ... <strong>Shared fault</strong> — if you were partially responsible for the accident, your award will be reduced (see comparative fault below)",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Practice commentary; the shared-fault bullet is verified under O.C.G.A. § 51-12-33(a) and Nelson v. Concrete Supply Co. (S.C. 1991)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "No figure or legal rule beyond comparative fault, which is verified below."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>No cap on pain and suffering</strong> in most personal injury cases. Georgia does not limit non-economic damages in car accidents, truck accidents, premises liability, or other general negligence claims. However, Georgia previously had a cap on non-economic damages in <strong>medical malpractice</strong> cases, which was struck down as unconstitutional by the Georgia Supreme Court in <em>Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt</em> (2010). As a result, there is currently <strong>no cap on pain and suffering in any personal injury case in Georgia</strong>.",
+      "verdict": "update",
+      "currentValue": "Nestlehutt is right: Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt, 286 Ga. 731 (2010) held that 'the noneconomic damages caps in OCGA § 51-13-1 violate the constitutional right to trial by jury' and the statute is void from enactment (it is still printed in the 2025 Code). 'Any personal injury case' overstates it. Claims against the State of Georgia under the Georgia Tort Claims Act are capped at $1 million per person per occurrence and $3 million aggregate, and that ceiling covers every kind of damages including pain and suffering (O.C.G.A. § 50-21-29(b)(1); the cap may not be disclosed to the jury). SB 68 (2025) added no cap on noneconomic damages.",
+      "sourceName": "Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt, 286 Ga. 731, 691 S.E.2d 218 (Ga. Mar. 22, 2010); O.C.G.A. § 50-21-29(b)(1) (2025 Code); O.C.G.A. § 51-13-1 (void)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/2010/s09a1432.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Minimal edit: add '286 Ga. 731' after the case name; change the last sentence to 'As a result, Georgia has no cap on pain and suffering in ordinary negligence cases, including medical malpractice. The one common exception is a claim against the State of Georgia itself, where the Tort Claims Act caps all damages at $1 million per person (O.C.G.A. § 50-21-29).' Georgia's $250,000 punitive cap (§ 51-12-5.1) is not a cap on pain and suffering and need not be mentioned. Same fix applies to faq:2."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>No general cap on pain and suffering</strong> in most personal injury cases. South Carolina does not limit non-economic damages in car accident, truck accident, or premises liability cases. However, South Carolina does cap non-economic damages in <strong>medical malpractice</strong> cases at <strong>$350,000 per defendant</strong> and <strong>$1.05 million total</strong> regardless of the number of defendants (S.C. Code § 15-32-220).",
+      "verdict": "update",
+      "currentValue": "The statute sets the cap per claimant against each health care provider or health care institution at $350,000 and, when more than one is liable, at $1,050,000 for all of them together (§ 15-32-220(A)-(C)) — but subsection (F) indexes those figures to the CPI every year, and the S.C. Revenue and Fiscal Affairs Office memo of 2026-02-03 puts the 2026 limits at $596,001 per provider or institution and $1,788,002 for all providers and institutions, per claimant (effective on publication in the State Register). The cap does not apply where the jury or court finds the defendant 'grossly negligent, wilful, wanton, or reckless' and that conduct proximately caused the noneconomic damages, or where the defendant engaged in fraud or misrepresentation related to the claim or altered or destroyed medical records to avoid liability (§ 15-32-220(E)); it never limits economic or punitive damages (§ 15-32-220(D)). Separately, claims against a South Carolina government entity under the Tort Claims Act are capped at $300,000 per person and $600,000 per occurrence for all damages ($1.2 million where the tort is a government-employed physician's or dentist's) (§ 15-78-120(a)).",
+      "sourceName": "S.C. Code § 15-32-220(A)-(F); S.C. Revenue and Fiscal Affairs Office, 'Non-Economic (Medical Malpractice) Damages Limitation – Inflation Component', memo of 2026-02-03 (index 190.3 in Dec. 2004 to 324.054 in Dec. 2025, +70.3%); S.C. Code § 15-78-120(a)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite the cap sentence: 'However, South Carolina does cap non-economic damages in <strong>medical malpractice</strong> cases. The statute sets the limit at $350,000 per health care provider or facility and $1.05 million in total for each injured person, and indexes it to inflation each year — for 2026 the figures are <strong>$596,001</strong> and <strong>$1,788,002</strong> (S.C. Code § 15-32-220). The cap falls away if the provider was grossly negligent, wilful, wanton or reckless, or committed fraud or altered records, and it never limits economic damages.' Then add one sentence for the government exception: 'Claims against a South Carolina government entity are capped at $300,000 per person under the Tort Claims Act (S.C. Code § 15-78-120).' RFA memo: https://rfa.sc.gov/media/11477. Same fix applies to faq:3, which publishes as FAQPage structured data."
+    },
+    {
+      "surface": "body",
+      "claim": "Outside of medical malpractice, juries in both states have the freedom to award whatever amount they believe is fair based on the evidence presented.",
+      "verdict": "update",
+      "currentValue": "True for ordinary negligence claims against private defendants; not true for claims against a government entity in either state (O.C.G.A. § 50-21-29(b)(1): $1 million per person; S.C. Code § 15-78-120(a): $300,000 per person). In Georgia the measure is the enlightened conscience of an impartial jury (§ 9-10-184(b)).",
+      "sourceName": "O.C.G.A. § 50-21-29(b)(1); S.C. Code § 15-78-120(a); O.C.G.A. § 9-10-184(b)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-50/chapter-21/article-2/section-50-21-29/",
+      "retrievedAt": "2026-09-24",
+      "note": "Reword: 'Outside of medical malpractice and claims against a government entity, juries in both states decide the amount on the evidence, with no statutory ceiling.'"
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Georgia</strong> (O.C.G.A. § 51-12-33): You can recover as long as you are <strong>less than 50% at fault</strong>. Your award is reduced by your percentage of fault. At 50% or more, you recover nothing.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(a), (g) (2025 Code): damages reduced 'in proportion to his or her percentage of fault'; 'the plaintiff shall not be entitled to receive any damages if the plaintiff is 50 percent or more responsible for the injury or damages claimed'",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "Reused from facts-1653 / facts-1756; matches the writer-profile jurisdiction table. SB 68 did not change the 50 percent bar."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>South Carolina</strong>: You can recover as long as you are <strong>less than 51% at fault</strong>. Your award is reduced by your percentage of fault. At 51% or more, you recover nothing.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (S.C. 1991): 'a plaintiff in a negligence action may recover damages if his or her negligence is not greater than that of the defendant. The amount of the plaintiff's recovery shall be reduced in proportion to the amount of his or her negligence.'",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Correct. The Georgia bullet cites its statute and the South Carolina bullet carries no authority; add '(<em>Nelson v. Concrete Supply Co.</em>)' after 'South Carolina'. Never cite § 15-38-15 (profile rule; SC pack rule 'nelson-bar-miscited-to-15-38-15')."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Example:</strong> A jury awards you $200,000 in total damages (including pain and suffering) but finds you 25% at fault. Your award is reduced to $150,000.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Arithmetic check under O.C.G.A. § 51-12-33(a) and Nelson: $200,000 x (1 - 0.25) = $150,000",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "Correct in both states (25 percent is below both bars). Illustrative, not a verdict figure."
+    },
+    {
+      "surface": "body",
+      "claim": "Pain and suffering damages are available in virtually every personal injury case where negligence caused physical or emotional harm.",
+      "verdict": "update",
+      "currentValue": "In Georgia a negligence claim for emotional harm alone generally fails under the impact rule: the physical impact 'must result in a physical injury', and mental pain and suffering is recoverable in a negligence case where there is also 'an actual physical injury to the person' (OB-Gyn Associates of Albany v. Littleton, 259 Ga. 663 (1989)). Every case type the post lists involves physical injury, so the section is right in substance; 'physical or emotional harm' invites the wrong reading.",
+      "sourceName": "OB-Gyn Associates of Albany v. Littleton, 259 Ga. 663, 386 S.E.2d 146 (Ga. 1989)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/1989/s89g0538-1.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Minimal edit: 'where negligence caused a physical injury — and the mental suffering that comes with it.'"
+    },
+    {
+      "surface": "body",
+      "claim": "<strong><a href=\"/practice-areas/wrongful-death-lawyers/\">Wrongful death</a></strong> — surviving family members can recover for their own pain and suffering from the loss of a loved one",
+      "verdict": "update",
+      "currentValue": "True in South Carolina, false in Georgia. South Carolina: wrongful-death damages are 'the damages sustained by the beneficiaries from the death', including 'mental shock and suffering, wounded feelings, grief, sorrow, loss of companionship, and deprivation of the use and comfort of the intestate's society' (Smith v. Wells, 258 S.C. 316 (1972); Ballard v. Ballard, 314 S.C. 40 (1994); S.C. Code § 15-51-40). Georgia: the measure is 'the full value of the life of the decedent' (O.C.G.A. § 51-4-1(1)), which 'does not include recovery for mental anguish or emotional distress' of the survivors — 'recovery for emotional distress is not available in a wrongful death action' (OB-Gyn Associates of Albany v. Littleton, 259 Ga. 663 (1989)); damages 'are measured from the decedent's point of view', not the survivors' (Brock v. Wedincamp, 253 Ga. App. 275 (2002)). The decedent's own pre-death pain and suffering is recovered by the estate in a separate survival claim.",
+      "sourceName": "Smith v. Wells, 258 S.C. 316, 188 S.E.2d 470 (S.C. 1972); Ballard v. Ballard, 314 S.C. 40, 443 S.E.2d 802 (S.C. 1994); S.C. Code § 15-51-40; O.C.G.A. § 51-4-1; OB-Gyn Associates of Albany v. Littleton (Ga. 1989); Brock v. Wedincamp (Ga. App. 2002)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1972/19410-1.html",
+      "retrievedAt": "2026-09-24",
+      "note": "The most consequential legal error on the page: a Georgia reader is told the family recovers for its own grief, which Georgia has rejected since at least YMCA v. Bailey (1965) and Littleton (1989). Rewrite the bullet: 'Wrongful death — in South Carolina the family recovers for its own grief, mental shock and loss of companionship (S.C. Code § 15-51-40); in Georgia the claim is measured by the full value of the decedent's life, and the decedent's own pain and suffering before death is recovered by the estate (O.C.G.A. § 51-4-1).' Georgia opinions: https://law.justia.com/cases/georgia/supreme-court/1989/s89g0538-1.html and https://law.justia.com/cases/georgia/court-of-appeals/2002/a01a1730.html"
+    },
+    {
+      "surface": "body",
+      "claim": "Car accidents — the most common source of personal injury claims ... Truck accidents ... Motorcycle accidents — riders lack the protection of an enclosed vehicle, resulting in higher rates of serious injury ... Pedestrian accidents — pedestrians struck by vehicles suffer some of the most severe injuries ... Slip and fall ... Medical malpractice ... Dog bites ... Nursing home abuse ... Premises liability ... Product liability",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Descriptive practice-area list; no figure asserted; all ten internal links return HTTP 200 (checked 2026-09-24 with a browser user agent — rodenlaw.com returns 403 to curl's default agent)",
+      "sourceUrl": "https://rodenlaw.com/practice-areas/car-accident-lawyers/",
+      "retrievedAt": "2026-09-24",
+      "note": "'The most common source of personal injury claims' and 'some of the most severe injuries' are generic descriptors with no number; data/statistics.json has no claim-count or injury-severity fact to swap in, so leave as is. The wrongful-death bullet is handled separately above."
+    },
+    {
+      "surface": "body",
+      "claim": "The following types of evidence help establish and quantify your suffering: Medical records ... Mental health records ... A pain journal ... Photographs and video ... Testimony from family and friends ... Expert testimony",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Georgia pattern charge factors and Carnes (evidence of the plaintiff's condition, treatment and prognosis supported the pain-and-suffering award; lay and medical testimony both considered); no rule in either state limits the categories listed",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2005/a04a1879.html",
+      "retrievedAt": "2026-09-24",
+      "note": "General and correct. A pain journal is typically used to refresh the plaintiff's recollection rather than admitted as an exhibit; the bullet does not claim otherwise. Nothing to change."
+    },
+    {
+      "surface": "body",
+      "claim": "They use sophisticated software to generate lowball offers, and they know that unrepresented claimants are more likely to accept those offers.",
+      "verdict": "drop",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "No primary source for either half (claims-evaluation software; acceptance rates of unrepresented claimants). Delete the sentence; 'Insurance companies have one goal: pay as little as possible' and the bullets that follow are the firm's commentary and carry no figure."
+    },
+    {
+      "surface": "body",
+      "claim": "At Roden Law, we handle personal injury cases on a <strong>contingency fee basis</strong> — you pay nothing unless we recover compensation for you. ... <a href=\"tel:+18447378587\">1-844-RESULTS</a>",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "profiles/writer-profile.md (toll-free line 1-844-RESULTS is tel:+18447378587); /contact/ returns HTTP 200",
+      "sourceUrl": "https://rodenlaw.com/contact/",
+      "retrievedAt": "2026-09-24",
+      "note": "The tel: href is correct (not one of the 27 transposed hrefs found 2026-09-23). Do not change the visible phone string."
+    },
+    {
+      "surface": "excerpt",
+      "claim": "How pain and suffering is valued in Georgia and South Carolina injury claims, including the multiplier and per diem methods insurers actually use.",
+      "verdict": "update",
+      "currentValue": "The multiplier and per-diem methods are informal negotiating conventions; no source shows what insurers 'actually use'. The excerpt publishes as the Article description in roden_schema_article().",
+      "sourceName": "Rule settled in facts-1653; O.C.G.A. § 9-10-184(b)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-10/article-8/section-9-10-184/",
+      "retrievedAt": "2026-09-24",
+      "note": "Reword: '... including the multiplier and per diem conventions adjusters use in negotiation, and the limits that apply in each state.'"
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Pain and suffering damages compensate injury victims for physical discomfort, emotional distress, anxiety, and diminished quality of life beyond economic losses.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-10-184(a)(2); S.C. Code § 15-32-210(9)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-10/article-8/section-9-10-184/",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Insurers use multiplier or per diem methods to calculate these non-economic damages.",
+      "verdict": "update",
+      "currentValue": "Both are informal negotiating conventions, not rules of law in either state; a jury is never bound by them (O.C.G.A. § 9-10-184(b): the measure is the enlightened conscience of an impartial jury).",
+      "sourceName": "O.C.G.A. § 9-10-184(b); § 51-12-6; rule settled in facts-1653",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-6/",
+      "retrievedAt": "2026-09-24",
+      "note": "Reword: 'Adjusters and attorneys use informal multiplier or per diem conventions to negotiate these non-economic damages; neither is a rule of law, and a jury is not bound by them.' The takeaways box renders above the article."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Georgia does not cap pain and suffering in most personal injury cases, and South Carolina likewise imposes no general cap.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Nestlehutt, 286 Ga. 731 (2010); S.C. Code § 15-32-220 (medical malpractice only); O.C.G.A. § 50-21-29 and S.C. Code § 15-78-120 (government-claim caps)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/2010/s09a1432.html",
+      "retrievedAt": "2026-09-24",
+      "note": "'Most' and 'no general cap' are exactly right. Optionally append 'outside medical malpractice and claims against government entities'."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Comparative fault reduces awards proportionally in both states, barring recovery at 50% fault in Georgia (O.C.G.A. § 51-12-33) and 51% in South Carolina.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(a), (g); Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Correct; the section symbol renders properly here. Optional: '(Nelson v. Concrete Supply Co.)' after 'South Carolina'; never § 15-38-15."
+    },
+    {
+      "surface": "faq:0",
+      "claim": "Pain and suffering refers to the physical pain and emotional distress you experience as a result of an injury caused by someone else's negligence. It is a category of non-economic damages that compensates for losses like chronic pain, anxiety, depression, loss of enjoyment of life, and loss of consortium — things that do not have a specific dollar amount attached to them.",
+      "verdict": "update",
+      "currentValue": "Definition is correct (O.C.G.A. § 9-10-184(a)(2); S.C. Code § 15-32-210(9)), but loss of consortium is the spouse's own separate claim, not a loss the injured person recovers as pain and suffering (Stapleton v. Palmore, 250 Ga. 259 (1982); S.C. Code § 15-75-20).",
+      "sourceName": "O.C.G.A. § 9-10-184(a)(2); Stapleton v. Palmore (Ga. 1982); S.C. Code § 15-75-20",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c075.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Replace 'and loss of consortium' with 'and disfigurement' (both statutory lists include it). Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:1",
+      "claim": "There is no set formula. The two most common methods are the multiplier method, which multiplies your economic damages by a factor of 1.5 to 5 based on severity, and the per diem method, which assigns a daily dollar amount multiplied by the number of days you are affected. If a case goes to trial, the jury has broad discretion to award what it considers fair.",
+      "verdict": "update",
+      "currentValue": "'No set formula' is right (O.C.G.A. § 9-10-184(b); § 51-12-6). The '1.5 to 5' range has no source, and 'the two most common methods' is unsupported; both are negotiating conventions. In Georgia the jury applies its enlightened conscience, and since SB 68 (2025) counsel may argue a dollar figure only in closing and only if rationally related to the evidence (§ 9-10-184(c)(1)).",
+      "sourceName": "O.C.G.A. § 9-10-184(b), (c)(1); § 51-12-6",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-10/article-8/section-9-10-184/",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'There is no set formula in either state. In negotiation, adjusters and attorneys often use the multiplier method, which multiplies your economic damages by a factor that rises with the severity of the injury, or the per diem method, which assigns a daily dollar amount for each day you are affected. Neither is a rule of law. If a case goes to trial, the jury decides the amount on the evidence — in Georgia by the \"enlightened conscience of an impartial jury\", and since 2025 lawyers there may suggest a dollar figure only in closing argument and only if it is tied to the evidence (O.C.G.A. § 9-10-184).' Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:2",
+      "claim": "No. Georgia does not cap pain and suffering damages in any personal injury case. A previous cap on non-economic damages in medical malpractice cases was struck down as unconstitutional by the Georgia Supreme Court in Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt (2010).",
+      "verdict": "update",
+      "currentValue": "Nestlehutt, 286 Ga. 731 (2010), is correctly stated. 'Any personal injury case' overstates: claims against the State of Georgia under the Tort Claims Act are capped at $1 million per person and $3 million per occurrence for all damages (O.C.G.A. § 50-21-29(b)(1)).",
+      "sourceName": "Nestlehutt, 286 Ga. 731 (2010); O.C.G.A. § 50-21-29(b)(1)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-50/chapter-21/article-2/section-50-21-29/",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'Not in ordinary negligence cases. Georgia has no cap on pain and suffering in car, truck, premises or medical malpractice claims; a previous cap on non-economic damages in medical malpractice cases was struck down as unconstitutional in Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt, 286 Ga. 731 (2010). The main exception is a claim against the State of Georgia, where the Tort Claims Act caps all damages at $1 million per person (O.C.G.A. § 50-21-29).' Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:3",
+      "claim": "In most personal injury cases, no. However, South Carolina does cap non-economic damages in medical malpractice cases at $350,000 per defendant and $1.05 million total regardless of the number of defendants (S.C. Code § 15-32-220).",
+      "verdict": "update",
+      "currentValue": "$350,000 per health care provider or institution and $1,050,000 for all of them, per claimant, are the 2005 base figures; § 15-32-220(F) indexes them to the CPI each year and the RFA memo of 2026-02-03 sets the 2026 limits at $596,001 and $1,788,002. The cap does not apply to a defendant found grossly negligent, wilful, wanton or reckless, or who committed fraud or altered records (§ 15-32-220(E)), and never limits economic damages (§ 15-32-220(D)). Government defendants are separately capped at $300,000 per person (§ 15-78-120(a)).",
+      "sourceName": "S.C. Code § 15-32-220(A)-(F); S.C. RFA memo 2026-02-03 (rfa.sc.gov/media/11477); S.C. Code § 15-78-120(a)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'In most personal injury cases, no. South Carolina does cap non-economic damages in medical malpractice cases: the statute sets $350,000 per health care provider or facility and $1.05 million in total for each injured person, indexed to inflation each year — $596,001 and $1,788,002 for 2026 (S.C. Code § 15-32-220). The cap does not apply if the provider was grossly negligent, wilful, wanton or reckless, and it never limits economic damages. Claims against a government entity are capped at $300,000 per person under the Tort Claims Act (S.C. Code § 15-78-120).' Publishes as FAQPage structured data; the stale $350,000 figure is currently published twice."
+    },
+    {
+      "surface": "faq:4",
+      "claim": "Both Georgia and South Carolina follow modified comparative fault rules. In Georgia, your award is reduced by your percentage of fault and you recover nothing if you are 50% or more at fault (O.C.G.A. § 51-12-33). In South Carolina, you recover nothing if you are 51% or more at fault. This reduction applies to all damages, including pain and suffering.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(a), (g); Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "Correct. Optional: '(Nelson v. Concrete Supply Co.)' after the South Carolina sentence; never § 15-38-15."
+    },
+    {
+      "surface": "faq:5",
+      "claim": "Strong evidence includes medical records documenting your injuries and treatment, mental health records such as therapy notes or psychiatric evaluations, a pain journal tracking your daily symptoms and limitations, photographs of your injuries, testimony from family and friends about changes in your life, and expert testimony from medical professionals about the severity and expected duration of your suffering.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "General evidentiary practice; consistent with the Georgia pattern-charge factors and Carnes (Ga. App. 2005)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2005/a04a1879.html",
+      "retrievedAt": "2026-09-24",
+      "note": "No figure or state-specific rule asserted."
+    }
+  ],
+  "recommendedEdits": [
+    "Body, intro paragraph 2 ('What Is Pain and Suffering'): delete 'Despite being harder to quantify, pain and suffering damages are often the largest component of a personal injury settlement or verdict.' and change the anchor lead-in 'Cornell Law Institute's' to 'the Legal Information Institute at Cornell Law School's' (href unchanged).",
+    "Body, 'Emotional and Mental Pain and Suffering' list: reword the loss-of-consortium bullet to 'Loss of consortium — the harm to your spouse's companionship, affection and intimacy. In both states this is your spouse's own separate claim, brought alongside yours (O.C.G.A. § 9-3-33; S.C. Code § 15-75-20).'",
+    "Body, 'How Pain and Suffering Is Calculated' lead paragraph: replace 'insurance adjusters, attorneys, and juries use several accepted methods to arrive at a number' with 'insurance adjusters and attorneys use a few informal conventions to put a number on it in negotiation. Neither is a rule of law, and a jury is never bound by them.'",
+    "Body, 'The Multiplier Method': delete 'The most widely used approach.' and 'typically between <strong>1.5 and 5</strong>'; delete the lead-in 'The multiplier increases based on injury severity:' and all four tier bullets, moving the three internal links (brain injury, spinal cord injury) into one retained sentence such as 'The factor rises with the severity and permanence of the injury, from a minor soft-tissue strain to a traumatic brain injury, spinal cord injury or amputation.'; relabel the example 'Purely hypothetical example:' (arithmetic $80,000 x 3 = $240,000, total $320,000 is correct).",
+    "Body, 'The Per Diem Method': 'is often tied to your actual daily earnings' -> 'is sometimes tied to your daily earnings'; add 'Like the multiplier, this is a negotiating convention, not a rule of law.'; relabel the example 'Purely hypothetical example:' ($200 x 365 = $73,000 is correct).",
+    "Body, 'Jury Discretion': after 'their own sense of fairness.' add 'In Georgia the legal measure is the \"enlightened conscience of an impartial jury\" (O.C.G.A. § 9-10-184). Since Georgia's 2025 tort-reform act (SB 68), lawyers may suggest a dollar figure for pain and suffering only in closing argument, and only if it is rationally tied to the evidence; either side may also ask for a phased trial in which the jury decides fault before hearing about damages (O.C.G.A. § 51-12-15).'",
+    "Body, caps / Georgia: add '286 Ga. 731' after the Nestlehutt case name; replace the final sentence with 'As a result, Georgia has no cap on pain and suffering in ordinary negligence cases, including medical malpractice. The one common exception is a claim against the State of Georgia itself, where the Tort Claims Act caps all damages at $1 million per person (O.C.G.A. § 50-21-29).'",
+    "Body, caps / South Carolina: replace the '$350,000 per defendant and $1.05 million total' sentence with 'However, South Carolina does cap non-economic damages in medical malpractice cases. The statute sets the limit at $350,000 per health care provider or facility and $1.05 million in total for each injured person, and indexes it to inflation each year — for 2026 the figures are $596,001 and $1,788,002 (S.C. Code § 15-32-220). The cap falls away if the provider was grossly negligent, wilful, wanton or reckless, or committed fraud or altered records, and it never limits economic damages. Claims against a South Carolina government entity are capped at $300,000 per person under the Tort Claims Act (S.C. Code § 15-78-120).'",
+    "Body, caps closing sentence: 'Outside of medical malpractice, juries in both states have the freedom to award whatever amount they believe is fair based on the evidence presented.' -> 'Outside of medical malpractice and claims against a government entity, juries in both states decide the amount on the evidence, with no statutory ceiling.'",
+    "Body, comparative fault, South Carolina bullet: add '(<em>Nelson v. Concrete Supply Co.</em>)' after 'South Carolina'. Never cite § 15-38-15.",
+    "Body, 'Common Cases' lead sentence: 'where negligence caused physical or emotional harm' -> 'where negligence caused a physical injury — and the mental suffering that comes with it'.",
+    "Body, 'Common Cases' wrongful-death bullet: replace 'surviving family members can recover for their own pain and suffering from the loss of a loved one' with 'in South Carolina the family recovers for its own grief, mental shock and loss of companionship (S.C. Code § 15-51-40); in Georgia the claim is measured by the full value of the decedent's life, and the decedent's own pain and suffering before death is recovered by the estate (O.C.G.A. § 51-4-1)'. Keep the internal link.",
+    "Body, 'How a Personal Injury Lawyer Maximizes': delete 'They use sophisticated software to generate lowball offers, and they know that unrepresented claimants are more likely to accept those offers.'",
+    "Excerpt: 'including the multiplier and per diem methods insurers actually use.' -> 'including the multiplier and per diem conventions adjusters use in negotiation, and the limits that apply in each state.'",
+    "Key takeaways: 'Insurers use multiplier or per diem methods to calculate these non-economic damages.' -> 'Adjusters and attorneys use informal multiplier or per diem conventions to negotiate these non-economic damages; neither is a rule of law, and a jury is not bound by them.' Optionally append '(Nelson v. Concrete Supply Co.)' after '51% in South Carolina'.",
+    "faq:0: replace 'and loss of consortium' with 'and disfigurement'.",
+    "faq:1: rewrite per the verifiedClaims note — remove '1.5 to 5' and 'the two most common methods', state that neither convention is law, and add the Georgia enlightened-conscience standard and the SB 68 closing-argument limit (O.C.G.A. § 9-10-184).",
+    "faq:2: open 'Not in ordinary negligence cases.' instead of 'No.'; change 'in any personal injury case' to the ordinary-negligence wording; add '286 Ga. 731' to Nestlehutt; add the State of Georgia $1 million exception (O.C.G.A. § 50-21-29).",
+    "faq:3: replace '$350,000 per defendant and $1.05 million total regardless of the number of defendants' with the per-provider / per-claimant wording, the 2026 indexed figures $596,001 and $1,788,002, the § 15-32-220(E) exceptions, and the $300,000 Tort Claims Act cap (S.C. Code § 15-78-120).",
+    "Reviewer meta: record Graeham C. Gillin as reviewer (two-state post stating South Carolina law); do not add an attribution quote.",
+    "After the edits, re-run bin/check-unslashed-post-writes.php and confirm the FAQPage block still parses — faq:0 through faq:3 all change.",
+    "Report every changed figure ($350,000 / $1.05 million -> $596,001 / $1,788,002 for 2026; new $1 million and $300,000 government caps) so the operator can mirror them on any Spanish twin listed in content/meta.json."
+  ],
+  "statuteCitations": [
+    {
+      "section": "O.C.G.A. § 9-10-184",
+      "name": "Limitations on counsel on arguing damages — definitions of economic and noneconomic damages (a); no argument of the worth of noneconomic damages or reference to any amount or range before the jury, 'the measure of such damages being the enlightened conscience of an impartial jury' (b); argument allowed only after the close of evidence, rationally related to the evidence (c); remedial measures (d). As rewritten by SB 68 (2025) § 1, effective April 21, 2025",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-10/article-8/section-9-10-184/"
+    },
+    {
+      "section": "O.C.G.A. § 51-12-6",
+      "name": "Damages for injury to peace, happiness, or feelings — 'no measure of damages can be prescribed except the enlightened consciences of impartial jurors'",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-6/"
+    },
+    {
+      "section": "O.C.G.A. § 51-12-2",
+      "name": "General damages (presumed to flow from the tort; recoverable without proof of any amount) and special damages (must be proved)",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-2/"
+    },
+    {
+      "section": "O.C.G.A. § 51-12-33",
+      "name": "Apportionment of damages; award reduced by the plaintiff's percentage of fault (a); plaintiff barred at 50 percent or more (g)",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+    },
+    {
+      "section": "O.C.G.A. § 51-12-15",
+      "name": "Elective phased trial in bodily-injury and wrongful-death actions — fault first, then compensatory damages, then punitive damages; court may reject only for a sexual-offense victim or where the amount in controversy is under $150,000 (added by SB 68 § 8, effective April 21, 2025)",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-15/"
+    },
+    {
+      "section": "O.C.G.A. § 51-12-1.1",
+      "name": "Special damages for medical expenses limited to the reasonable value of medically necessary care (added by SB 68 § 7; causes of action arising on or after 2025-04-21). Not cited in the post; reused from facts-1676 for reference",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-1-1/"
+    },
+    {
+      "section": "O.C.G.A. § 51-13-1",
+      "name": "Medical malpractice noneconomic damages caps — held unconstitutional and void in Nestlehutt (2010); still printed in the 2025 Code",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-13/section-51-13-1/"
+    },
+    {
+      "section": "O.C.G.A. § 50-21-29",
+      "name": "Georgia Tort Claims Act — $1 million per person per occurrence and $3 million aggregate cap on claims against the state; cap not to be disclosed to the jury (b)(1)",
+      "url": "https://law.justia.com/codes/georgia/title-50/chapter-21/article-2/section-50-21-29/"
+    },
+    {
+      "section": "O.C.G.A. § 51-4-1",
+      "name": "Wrongful death definitions — 'full value of the life of the decedent' without deducting the decedent's necessary or personal expenses",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-4/section-51-4-1/"
+    },
+    {
+      "section": "O.C.G.A. § 9-3-33",
+      "name": "Injuries to the person — two-year limitation; four years for loss of consortium (verified in facts-1653)",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+    },
+    {
+      "section": "O.C.G.A. § 51-12-5.1",
+      "name": "Punitive damages — $250,000 cap (g) with exceptions (e), (f). Not a cap on pain and suffering; not cited in the post; reused from facts-1653 for reference",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/"
+    },
+    {
+      "section": "S.C. Code § 15-32-210",
+      "name": "Definitions for the medical-malpractice damages article — 'noneconomic damages' (9): pain, suffering, inconvenience, physical impairment, disfigurement, mental anguish, emotional distress, loss of society and companionship, loss of consortium, injury to reputation, humiliation; 'economic damages' (3)",
+      "url": "https://www.scstatehouse.gov/code/t15c032.php"
+    },
+    {
+      "section": "S.C. Code § 15-32-220",
+      "name": "Medical malpractice noneconomic damages limit — $350,000 per health care provider or institution for each claimant (A), (B); $1,050,000 for all providers and institutions for each claimant (C); economic and punitive damages not limited (D); no cap for gross negligence, wilful, wanton or reckless conduct, fraud or altered records (E); annual CPI adjustment by the Revenue and Fiscal Affairs Office, effective on State Register publication (F). 2026 indexed limits: $596,001 and $1,788,002",
+      "url": "https://www.scstatehouse.gov/code/t15c032.php"
+    },
+    {
+      "section": "S.C. Code § 15-78-120",
+      "name": "Tort Claims Act limitation on liability — $300,000 per person and $600,000 per occurrence (a)(1)-(2); $1,200,000 where the tort is a government-employed physician's or dentist's (a)(3)-(4); no punitive damages or prejudgment interest (b)",
+      "url": "https://www.scstatehouse.gov/code/t15c078.php"
+    },
+    {
+      "section": "S.C. Code § 15-75-20",
+      "name": "Loss of companionship of spouse — the spouse's own action for loss of companionship, aid, society and services, excluding damages already recovered by the injured spouse",
+      "url": "https://www.scstatehouse.gov/code/t15c075.php"
+    },
+    {
+      "section": "S.C. Code § 15-51-40",
+      "name": "Wrongful death damages — 'proportioned to the injury resulting from the death to the parties respectively for whom and for whose benefit such action shall be brought'; exemplary damages for recklessness, wilfulness or malice",
+      "url": "https://www.scstatehouse.gov/code/t15c051.php"
+    },
+    {
+      "section": "S.C. Code § 15-3-530",
+      "name": "Three-year limitation, incl. (5) injury to the person (not stated in the post; verified in facts-1653)",
+      "url": "https://www.scstatehouse.gov/code/t15c003.php"
+    },
+    {
+      "section": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (S.C. 1991)",
+      "name": "South Carolina modified comparative negligence — plaintiff recovers if his or her negligence is 'not greater than' the defendant's (the 51 percent bar). Never cite § 15-38-15 for the plaintiff's bar",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html"
+    }
+  ],
+  "authoritativeLinks": [
+    {
+      "name": "Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt, 286 Ga. 731, 691 S.E.2d 218 (Ga. Mar. 22, 2010) — § 51-13-1 noneconomic caps 'violate the constitutional right to trial by jury'; statute void from enactment",
+      "url": "https://law.justia.com/cases/georgia/supreme-court/2010/s09a1432.html"
+    },
+    {
+      "name": "AT Systems Southeast, Inc. v. Carnes, 272 Ga. App. 148 (Ga. Ct. App. Apr. 7, 2005) — pain and suffering 'governed by no other standard than the enlightened conscience of impartial jurors'; eggshell plaintiff: 'a tortfeasor takes a plaintiff in whatever condition he finds him'",
+      "url": "https://law.justia.com/cases/georgia/court-of-appeals/2005/a04a1879.html"
+    },
+    {
+      "name": "Geary v. Estate of Tapley (Ga. Ct. App. Oct. 25, 2024) — quotes the pattern charge on pain and suffering (Georgia Suggested Pattern Jury Instructions – Civil 66.501) and its eight factors; cites Food Lion v. Williams, 219 Ga. App. 352 (1995)",
+      "url": "https://law.justia.com/cases/georgia/court-of-appeals/2024/a24a0978.html"
+    },
+    {
+      "name": "OB-Gyn Associates of Albany v. Littleton, 259 Ga. 663, 386 S.E.2d 146 (Ga. 1989) — Georgia wrongful death 'does not include recovery for mental anguish or emotional distress'; impact rule requires physical injury",
+      "url": "https://law.justia.com/cases/georgia/supreme-court/1989/s89g0538-1.html"
+    },
+    {
+      "name": "Brock v. Wedincamp, 253 Ga. App. 275, 558 S.E.2d 836 (Ga. Ct. App. 2002) — wrongful death damages 'are measured from the decedent's point of view'",
+      "url": "https://law.justia.com/cases/georgia/court-of-appeals/2002/a01a1730.html"
+    },
+    {
+      "name": "Stapleton v. Palmore, 250 Ga. 259, 297 S.E.2d 270 (Ga. 1982) — personal-injury and loss-of-consortium claims are 'separate' and 'distinct' claims of different spouses",
+      "url": "https://law.justia.com/cases/georgia/supreme-court/1982/38899-1.html"
+    },
+    {
+      "name": "Raino v. Goodyear Tire & Rubber Co., 309 S.C. 255, 422 S.E.2d 98 (S.C. 1992) — 'The defendant takes the plaintiff as he is found and the plaintiff is entitled to recover damages resulting from the aggravation of a pre-existing condition'",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/1992/23703-2.html"
+    },
+    {
+      "name": "Watson v. Wilkinson Trucking Co., 244 S.C. 217, 136 S.E.2d 286 (S.C. 1964) — aggravation of a pre-existing condition recoverable; pain and suffering among the elements for the jury",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/1964/18209-1.html"
+    },
+    {
+      "name": "Smith v. Wells, 258 S.C. 316, 188 S.E.2d 470 (S.C. 1972) — South Carolina wrongful death damages are the beneficiaries' losses: pecuniary loss, mental shock and suffering, wounded feelings, grief and sorrow, loss of companionship, deprivation of society",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/1972/19410-1.html"
+    },
+    {
+      "name": "Ballard v. Ballard, 314 S.C. 40, 443 S.E.2d 802 (S.C. 1994) — same elements; total recovery equals the statutory beneficiaries' proven damages",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/1994/24057-2.html"
+    },
+    {
+      "name": "S.C. Revenue and Fiscal Affairs Office — memo of 2026-02-03, 'Non-Economic (Medical Malpractice) Damages Limitation – Inflation Component': 2026 limits $596,001 (single provider or institution, per claimant) and $1,788,002 (all providers and institutions, per claimant); historical table 2004-2025",
+      "url": "https://rfa.sc.gov/media/11477"
+    },
+    {
+      "name": "S.C. Revenue and Fiscal Affairs Office — Inflation Adjustments for Legal Proceedings (annual noneconomic and punitive damage limitation memos)",
+      "url": "https://rfa.sc.gov/resources/inflation-adjustments-legal-proceedings"
+    },
+    {
+      "name": "Georgia SB 68 (2025), signed text from the Governor's office — 2025 tort-reform act; § 1 rewrites O.C.G.A. § 9-10-184, § 8 adds § 51-12-15; effective on the Governor's approval (April 21, 2025) and applied to pending causes of action unless unconstitutional (§ 9)",
+      "url": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download"
+    },
+    {
+      "name": "Cornell Law School, Legal Information Institute — Wex: damages (the post's existing outbound link; resolves)",
+      "url": "https://www.law.cornell.edu/wex/damages"
+    }
+  ]
+}
