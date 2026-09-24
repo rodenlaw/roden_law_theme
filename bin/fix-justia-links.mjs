@@ -12,8 +12,13 @@ for (const d of docs) {
     for (const [bad, good] of Object.entries(MAP)) {
       const occ = text.split(bad).length - 1; if (!occ) continue;
       if (surface === 'content' || surface === 'excerpt') {
-        if (occ !== 1) { console.error(`SKIP ${d.id} ${surface}: "${bad}" occurs ${occ} times`); continue; }
-        edits.push({ id: d.id, surface, before: bad, after: good, url: d.url });
+        if (occ === 1) { edits.push({ id: d.id, surface, before: bad, after: good, url: d.url }); continue; }
+        // several links to the same dead URL in one body: anchor each edit on its full <a ...>text</a> tag,
+        // which differs by anchor text; skip only if two tags are byte-identical
+        const tags = [...text.matchAll(new RegExp('<a [^>]*href="' + bad.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '"[^>]*>[\\s\\S]*?</a>', 'g'))].map(m => m[0]);
+        const uniq = new Set(tags);
+        if (tags.length !== occ || uniq.size !== tags.length) { console.error(`SKIP ${d.id} ${surface}: "${bad}" occurs ${occ} times and the tags are not distinct`); continue; }
+        for (const tag of tags) edits.push({ id: d.id, surface, before: tag, after: tag.split(bad).join(good), url: d.url });
       } else {
         // meta surfaces are whole-value replacements
         edits.push({ id: d.id, surface, before: text, after: text.split(bad).join(good), url: d.url });

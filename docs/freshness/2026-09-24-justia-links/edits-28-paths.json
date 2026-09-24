@@ -1,0 +1,555 @@
+[
+ {
+  "id": "4048",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-51/chapter-1/article-4/",
+  "after": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-40/",
+  "url": "/car-accident-lawyers/drunk-driver-accident/"
+ },
+ {
+  "id": "4051",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/section-40-6-270/",
+  "after": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-12/section-40-6-270/",
+  "url": "/car-accident-lawyers/hit-and-run-accident/"
+ },
+ {
+  "id": "4067",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-51/chapter-1/article-1/section-51-1-11/",
+  "after": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11/",
+  "url": "/truck-accident-lawyers/underride-override-accident/"
+ },
+ {
+  "id": "4072",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-71/",
+  "after": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-4/section-40-6-71/",
+  "url": "/motorcycle-accident-lawyers/left-turn-accident/"
+ },
+ {
+  "id": "4073",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-12/section-40-6-312/",
+  "after": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/part-2/section-40-6-312/",
+  "url": "/motorcycle-accident-lawyers/lane-splitting-accident/"
+ },
+ {
+  "id": "4075",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/section-40-6-270/",
+  "after": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-12/section-40-6-270/",
+  "url": "/motorcycle-accident-lawyers/hit-and-run-motorcycle-accident/"
+ },
+ {
+  "id": "4076",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-51/chapter-1/article-4/",
+  "after": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-40/",
+  "url": "/motorcycle-accident-lawyers/drunk-driver-motorcycle-accident/"
+ },
+ {
+  "id": "4081",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/section-40-6-270/",
+  "after": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-12/section-40-6-270/",
+  "url": "/pedestrian-accident-lawyers/hit-and-run-pedestrian-accident/"
+ },
+ {
+  "id": "4083",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-51/chapter-1/article-4/",
+  "after": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-40/",
+  "url": "/pedestrian-accident-lawyers/drunk-driver-pedestrian-accident/"
+ },
+ {
+  "id": "4085",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-40/chapter-14/article-3/section-40-14-8/",
+  "after": "https://law.justia.com/codes/georgia/title-40/chapter-14/article-2/section-40-14-8/",
+  "url": "/pedestrian-accident-lawyers/school-zone-pedestrian-accident/"
+ },
+ {
+  "id": "4085",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-9/section-40-6-163/",
+  "after": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-8/section-40-6-163/",
+  "url": "/pedestrian-accident-lawyers/school-zone-pedestrian-accident/"
+ },
+ {
+  "id": "4087",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-12/section-40-6-294/",
+  "after": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/part-1/section-40-6-294/",
+  "url": "/practice-areas/bicycle-accident-lawyers/"
+ },
+ {
+  "id": "4087",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-12/section-40-6-56/",
+  "after": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-3/section-40-6-56/",
+  "url": "/practice-areas/bicycle-accident-lawyers/"
+ },
+ {
+  "id": "4088",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-12/section-40-6-320/",
+  "after": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/part-2a/section-40-6-320/",
+  "url": "/practice-areas/electric-scooter-accident-lawyers/"
+ },
+ {
+  "id": "4090",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-12/section-40-6-330/",
+  "after": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/part-3/section-40-6-330/",
+  "url": "/practice-areas/golf-cart-accident-lawyers/"
+ },
+ {
+  "id": "4101",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-2/section-9-11-9-1/",
+  "after": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-3/section-9-11-9-1/",
+  "url": "/wrongful-death-lawyers/medical-malpractice-death/"
+ },
+ {
+  "id": "4101",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-5/section-9-3-71/",
+  "after": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/",
+  "url": "/wrongful-death-lawyers/medical-malpractice-death/"
+ },
+ {
+  "id": "4103",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-51/chapter-1/article-2/",
+  "after": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11/",
+  "url": "/wrongful-death-lawyers/defective-product-death/"
+ },
+ {
+  "id": "4111",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-280/",
+  "after": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-8/part-1/section-34-9-280/",
+  "url": "/workers-compensation-lawyers/occupational-disease/"
+ },
+ {
+  "id": "4112",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-5/section-34-9-80/",
+  "after": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-3/part-1/section-34-9-80/",
+  "url": "/workers-compensation-lawyers/denied-workers-comp-claim/"
+ },
+ {
+  "id": "4114",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-6/section-34-9-265/",
+  "after": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-7/section-34-9-265/",
+  "url": "/workers-compensation-lawyers/fatal-workplace-accident/"
+ },
+ {
+  "id": "4115",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-51/chapter-2/article-1/section-51-2-7/",
+  "after": "https://law.justia.com/codes/georgia/title-51/chapter-2/section-51-2-7/",
+  "url": "/dog-bite-lawyers/severe-dog-bite-injury/"
+ },
+ {
+  "id": "4116",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-51/chapter-2/article-1/section-51-2-7/",
+  "after": "https://law.justia.com/codes/georgia/title-51/chapter-2/section-51-2-7/",
+  "url": "/dog-bite-lawyers/child-dog-bite/"
+ },
+ {
+  "id": "4120",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-51/chapter-2/article-1/section-51-2-7/",
+  "after": "https://law.justia.com/codes/georgia/title-51/chapter-2/section-51-2-7/",
+  "url": "/dog-bite-lawyers/dog-on-dog-attack/"
+ },
+ {
+  "id": "4121",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-51/chapter-2/article-1/section-51-2-7/",
+  "after": "https://law.justia.com/codes/georgia/title-51/chapter-2/section-51-2-7/",
+  "url": "/dog-bite-lawyers/postal-delivery-worker-bite/"
+ },
+ {
+  "id": "4122",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-51/chapter-2/article-1/section-51-2-7/",
+  "after": "https://law.justia.com/codes/georgia/title-51/chapter-2/section-51-2-7/",
+  "url": "/dog-bite-lawyers/landlord-liability-dog-attack/"
+ },
+ {
+  "id": "4131",
+  "surface": "content",
+  "before": "<a href=\"https://law.justia.com/codes/georgia/title-51/chapter-1/article-1/section-51-1-11/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. § 51-1-11</a>",
+  "after": "<a href=\"https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. § 51-1-11</a>",
+  "url": "/product-liability-lawyers/defective-auto-parts/"
+ },
+ {
+  "id": "4131",
+  "surface": "content",
+  "before": "<a href=\"https://law.justia.com/codes/georgia/title-51/chapter-1/article-1/section-51-1-11/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. § 51-1-11(c)</a>",
+  "after": "<a href=\"https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. § 51-1-11(c)</a>",
+  "url": "/product-liability-lawyers/defective-auto-parts/"
+ },
+ {
+  "id": "4132",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-51/chapter-1/article-1/section-51-1-11/",
+  "after": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11/",
+  "url": "/product-liability-lawyers/defective-medical-device/"
+ },
+ {
+  "id": "4133",
+  "surface": "content",
+  "before": "<a href=\"https://law.justia.com/codes/georgia/title-51/chapter-1/article-1/section-51-1-11/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. § 51-1-11</a>",
+  "after": "<a href=\"https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. § 51-1-11</a>",
+  "url": "/product-liability-lawyers/dangerous-pharmaceutical-drug/"
+ },
+ {
+  "id": "4133",
+  "surface": "content",
+  "before": "<a href=\"https://law.justia.com/codes/georgia/title-51/chapter-1/article-1/section-51-1-11/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. § 51-1-11(c)</a>",
+  "after": "<a href=\"https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. § 51-1-11(c)</a>",
+  "url": "/product-liability-lawyers/dangerous-pharmaceutical-drug/"
+ },
+ {
+  "id": "4134",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-51/chapter-1/article-1/section-51-1-11/",
+  "after": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11/",
+  "url": "/product-liability-lawyers/defective-consumer-product/"
+ },
+ {
+  "id": "4135",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-51/chapter-1/article-1/section-51-1-11/",
+  "after": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11/",
+  "url": "/product-liability-lawyers/defective-industrial-equipment/"
+ },
+ {
+  "id": "4136",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-51/chapter-1/article-1/section-51-1-11/",
+  "after": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11/",
+  "url": "/product-liability-lawyers/defective-childrens-product/"
+ },
+ {
+  "id": "4137",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-51/chapter-1/article-1/section-51-1-11/",
+  "after": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11/",
+  "url": "/product-liability-lawyers/food-contamination/"
+ },
+ {
+  "id": "4138",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-51/chapter-1/article-1/section-51-1-11/",
+  "after": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11/",
+  "url": "/product-liability-lawyers/defective-home-appliance/"
+ },
+ {
+  "id": "4154",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-51/chapter-1/article-3/",
+  "after": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11/",
+  "url": "/burn-injury-lawyers/defective-product-burn/"
+ },
+ {
+  "id": "4160",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-51/chapter-1/article-3/",
+  "after": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11/",
+  "url": "/construction-accident-lawyers/defective-construction-equipment/"
+ },
+ {
+  "id": "4169",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-3/section-9-3-33/",
+  "after": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+  "url": "/nursing-home-abuse-lawyers/wrongful-death-nursing-home/"
+ },
+ {
+  "id": "4171",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-10/section-40-6-294/",
+  "after": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/part-1/section-40-6-294/",
+  "url": "/bicycle-accident-lawyers/dooring-accident/"
+ },
+ {
+  "id": "4172",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-10/section-40-6-294/",
+  "after": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/part-1/section-40-6-294/",
+  "url": "/bicycle-accident-lawyers/right-hook-left-cross-collision/"
+ },
+ {
+  "id": "4173",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-10/section-40-6-294/",
+  "after": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/part-1/section-40-6-294/",
+  "url": "/bicycle-accident-lawyers/intersection-bicycle-accident/"
+ },
+ {
+  "id": "4174",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/section-40-6-270/",
+  "after": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-12/section-40-6-270/",
+  "url": "/bicycle-accident-lawyers/hit-and-run-bicycle-accident/"
+ },
+ {
+  "id": "4178",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-10/section-40-6-294/",
+  "after": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/part-1/section-40-6-294/",
+  "url": "/bicycle-accident-lawyers/bicycle-vs-truck-accident/"
+ },
+ {
+  "id": "4179",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-51/chapter-1/article-3/",
+  "after": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11/",
+  "url": "/atv-side-by-side-accident-lawyers/atv-rollover-accident/"
+ },
+ {
+  "id": "4181",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-51/chapter-1/article-3/",
+  "after": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11/",
+  "url": "/atv-side-by-side-accident-lawyers/atv-product-defect/"
+ },
+ {
+  "id": "4187",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-51/chapter-1/article-3/",
+  "after": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11/",
+  "url": "/golf-cart-accident-lawyers/golf-cart-passenger-ejection/"
+ },
+ {
+  "id": "4189",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-51/chapter-1/article-4/",
+  "after": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-40/",
+  "url": "/golf-cart-accident-lawyers/golf-cart-dui/"
+ },
+ {
+  "id": "4192",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-2/section-9-11-9-1/",
+  "after": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-3/section-9-11-9-1/",
+  "url": "/medical-malpractice-lawyers/surgical-error/"
+ },
+ {
+  "id": "4192",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-5/section-9-3-71/",
+  "after": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/",
+  "url": "/medical-malpractice-lawyers/surgical-error/"
+ },
+ {
+  "id": "4193",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-2/section-9-11-9-1/",
+  "after": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-3/section-9-11-9-1/",
+  "url": "/medical-malpractice-lawyers/misdiagnosis-delayed-diagnosis/"
+ },
+ {
+  "id": "4193",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-5/section-9-3-71/",
+  "after": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/",
+  "url": "/medical-malpractice-lawyers/misdiagnosis-delayed-diagnosis/"
+ },
+ {
+  "id": "4194",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-2/section-9-11-9-1/",
+  "after": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-3/section-9-11-9-1/",
+  "url": "/medical-malpractice-lawyers/medication-error/"
+ },
+ {
+  "id": "4194",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-5/section-9-3-71/",
+  "after": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/",
+  "url": "/medical-malpractice-lawyers/medication-error/"
+ },
+ {
+  "id": "4195",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-2/section-9-11-9-1/",
+  "after": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-3/section-9-11-9-1/",
+  "url": "/medical-malpractice-lawyers/birth-injury/"
+ },
+ {
+  "id": "4196",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-2/section-9-11-9-1/",
+  "after": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-3/section-9-11-9-1/",
+  "url": "/medical-malpractice-lawyers/anesthesia-error/"
+ },
+ {
+  "id": "4196",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-5/section-9-3-71/",
+  "after": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/",
+  "url": "/medical-malpractice-lawyers/anesthesia-error/"
+ },
+ {
+  "id": "4197",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-2/section-9-11-9-1/",
+  "after": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-3/section-9-11-9-1/",
+  "url": "/medical-malpractice-lawyers/emergency-room-negligence/"
+ },
+ {
+  "id": "4197",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-5/section-9-3-71/",
+  "after": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/",
+  "url": "/medical-malpractice-lawyers/emergency-room-negligence/"
+ },
+ {
+  "id": "4198",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-2/section-9-11-9-1/",
+  "after": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-3/section-9-11-9-1/",
+  "url": "/medical-malpractice-lawyers/hospital-acquired-infection/"
+ },
+ {
+  "id": "4198",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-5/section-9-3-71/",
+  "after": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/",
+  "url": "/medical-malpractice-lawyers/hospital-acquired-infection/"
+ },
+ {
+  "id": "4199",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-2/section-9-11-9-1/",
+  "after": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-3/section-9-11-9-1/",
+  "url": "/medical-malpractice-lawyers/informed-consent-failure/"
+ },
+ {
+  "id": "4199",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-5/section-9-3-71/",
+  "after": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/",
+  "url": "/medical-malpractice-lawyers/informed-consent-failure/"
+ },
+ {
+  "id": "4205",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-20/chapter-2/article-16/part-10/",
+  "after": "https://law.justia.com/codes/georgia/title-20/chapter-2/article-6/part-15/section-20-2-324-1/",
+  "url": "/brain-injury-lawyers/sports-related-brain-injury/"
+ },
+ {
+  "id": "4206",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-1/section-9-11-9.1/",
+  "after": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-3/section-9-11-9-1/",
+  "url": "/brain-injury-lawyers/birth-related-brain-injury/"
+ },
+ {
+  "id": "4207",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-20/chapter-2/article-16/part-10/",
+  "after": "https://law.justia.com/codes/georgia/title-20/chapter-2/article-6/part-15/section-20-2-324-1/",
+  "url": "/brain-injury-lawyers/second-impact-syndrome/"
+ },
+ {
+  "id": "4214",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-2/section-9-11-9.1/",
+  "after": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-3/section-9-11-9-1/",
+  "url": "/spinal-cord-injury-lawyers/cauda-equina-syndrome/"
+ },
+ {
+  "id": "4216",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-51/chapter-3/section-51-3-1/",
+  "after": "https://law.justia.com/codes/georgia/title-51/chapter-3/article-1/section-51-3-1/",
+  "url": "/premises-liability-lawyers/retail-store-shopping-center-injury/"
+ },
+ {
+  "id": "4217",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-51/chapter-3/section-51-3-1/",
+  "after": "https://law.justia.com/codes/georgia/title-51/chapter-3/article-1/section-51-3-1/",
+  "url": "/premises-liability-lawyers/restaurant-hotel-injury/"
+ },
+ {
+  "id": "4219",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-51/chapter-3/section-51-3-1/",
+  "after": "https://law.justia.com/codes/georgia/title-51/chapter-3/article-1/section-51-3-1/",
+  "url": "/premises-liability-lawyers/parking-lot-garage-accident/"
+ },
+ {
+  "id": "4220",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-51/chapter-3/section-51-3-1/",
+  "after": "https://law.justia.com/codes/georgia/title-51/chapter-3/article-1/section-51-3-1/",
+  "url": "/premises-liability-lawyers/swimming-pool-accident/"
+ },
+ {
+  "id": "4221",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-51/chapter-3/section-51-3-1/",
+  "after": "https://law.justia.com/codes/georgia/title-51/chapter-3/article-1/section-51-3-1/",
+  "url": "/premises-liability-lawyers/inadequate-security/"
+ },
+ {
+  "id": "4222",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-51/chapter-3/section-51-3-1/",
+  "after": "https://law.justia.com/codes/georgia/title-51/chapter-3/article-1/section-51-3-1/",
+  "url": "/premises-liability-lawyers/elevator-escalator-accident/"
+ },
+ {
+  "id": "4222",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-8/chapter-2/article-9/",
+  "after": "https://law.justia.com/codes/georgia/title-8/chapter-2/article-1/part-6/",
+  "url": "/premises-liability-lawyers/elevator-escalator-accident/"
+ },
+ {
+  "id": "4224",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-17/",
+  "after": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/part-2a/",
+  "url": "/electric-scooter-accident-lawyers/escooter-vehicle-collision/"
+ },
+ {
+  "id": "4225",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-51/chapter-1/article-3/",
+  "after": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11/",
+  "url": "/electric-scooter-accident-lawyers/scooter-malfunction-defect/"
+ },
+ {
+  "id": "4227",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-17/",
+  "after": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/part-2a/",
+  "url": "/electric-scooter-accident-lawyers/escooter-pedestrian-accident/"
+ },
+ {
+  "id": "4229",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-17/",
+  "after": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/part-2a/",
+  "url": "/electric-scooter-accident-lawyers/escooter-intersection-crash/"
+ },
+ {
+  "id": "4578",
+  "surface": "content",
+  "before": "https://law.justia.com/codes/georgia/title-51/chapter-12/section-51-12-33/",
+  "after": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+  "url": "/practice-areas/e-bike-accident-lawyers/"
+ }
+]
