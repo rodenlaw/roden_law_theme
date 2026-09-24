@@ -95,7 +95,9 @@ while (k < ops.length) {
 const sliceOf = (src, blocksArr) => {
   const s = src.indexOf(blocksArr[0]); if (s < 0) throw new Error('block not found: ' + blocksArr[0].slice(0, 80));
   const last = blocksArr[blocksArr.length - 1]; const e = src.indexOf(last, s); if (e < 0) throw new Error('last block not found');
-  return src.slice(s, e + last.length);
+  // trailing whitespace belongs to the gap between blocks, not to the edit: a bare-text run
+  // captured with its trailing newline would otherwise double the line break on insertion
+  return src.slice(s, e + last.length).replace(/\s+$/, '');
 };
 for (const e of edits) {
   if (e.surface !== 'content') continue;

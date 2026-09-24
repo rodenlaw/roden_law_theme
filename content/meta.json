@@ -8149,11 +8149,11 @@
             "title": "Epilepsy & Driving: Liability for Seizure-Related Crashes",
             "excerpt": "When a seizure causes a crash, who is liable? How fault is assessed in seizure-related accidents, and what it means for the people injured.",
             "meta": {
-                "_roden_author_attorney": "Eric Roden",
+                "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "How many people in the US have epilepsy?",
-                        "answer": "Epilepsy affects millions worldwide, including approximately three million individuals in the United States. Given the potential for seizures and blackouts, it raises real questions about driving and liability."
+                        "answer": "Epilepsy affects millions worldwide, including about 3.4 million Americans (roughly 2.9 million adults and 456,000 children), according to the CDC's 2021-2022 survey data. Given the potential for seizures and blackouts, it raises real questions about driving and liability."
                     },
                     {
                         "question": "Can someone with epilepsy legally drive?",
@@ -8171,7 +8171,9 @@
                         "question": "What should I do if a seizure-related crash injured me?",
                         "answer": "Seek medical care and preserve the scene evidence, then get the circumstances reviewed. These cases turn on medical history and foreseeability, so a free case evaluation is the practical way to assess them."
                     }
-                ]
+                ],
+                "_roden_key_takeaways": "A seizure does not automatically make a driver liable for a crash; in both Georgia and South Carolina the question is whether the seizure was foreseeable, such as when the driver knew the condition was uncontrolled or ignored a doctor's advice. Georgia bars recovery if you are 50 percent or more at fault, while South Carolina bars it only at 51 percent, so a driver found exactly half at fault recovers half in South Carolina and nothing in Georgia. In Georgia, a noncommercial license cannot be denied for epilepsy unless a seizure occurred within the previous six months (O.C.G.A. § 40-5-35). South Carolina sets no fixed seizure-free period, and the SCDMV decides medical fitness case by case with advice from its Medical Advisory Board. About 3.4 million Americans have active epilepsy, and CDC data show fewer than half of adults taking epilepsy medication were seizure-free in the previous year.",
+                "_roden_last_reviewed": "2026-09-24"
             }
         },
         "/blog/liability-for-roundabout-crashes-in-charleston/": {
@@ -13540,13 +13542,15 @@
                     },
                     {
                         "question": "Why does a fault error matter so much in Georgia?",
-                        "answer": "Because Georgia applies a modified comparative negligence rule, so how fault is apportioned directly reduces what you recover. An error that inflates your share costs you real money."
+                        "answer": "Because Georgia applies a modified comparative negligence rule (O.C.G.A. § 51-12-33): how fault is apportioned directly reduces what you recover, and at 50 percent or more you recover nothing. An error that inflates your share costs you real money."
                     },
                     {
                         "question": "Are police reports required in Georgia?",
-                        "answer": "Reporting is required in defined circumstances and is advisable in almost all others. Without a report you have no neutral record of the collision to support your claim when accounts later diverge."
+                        "answer": "Georgia law requires the driver to notify police immediately after any crash involving injury, death, or apparent property damage of $500 or more (O.C.G.A. § 40-6-273), and reporting is advisable in almost all others. Without a report you have no neutral record of the collision to support your claim when accounts later diverge."
                     }
-                ]
+                ],
+                "_roden_key_takeaways": "Request a copy of your crash report right away: GDOT, the statewide custodian, sells Georgia crash reports through BuyCrash or by mail for $5 ($2 more for a certified copy), and Savannah Police also fill requests directly. For a clerical error such as a wrong plate number or misspelled name, contact the investigating officer with a document that shows the correct detail. Only the investigating officer and agency can amend a Georgia crash report, and they will not rewrite a conclusion about fault simply because a driver disagrees with it. If the officer will not change it, write a concise, factual, signed and dated account and give it to your attorney. Fault errors cost money: under O.C.G.A. § 51-12-33 you recover nothing if you are 50 percent or more at fault, and your damages are reduced by any smaller share. Georgia law requires the driver to notify police immediately of a crash involving injury, death, or apparent property damage of $500 or more (O.C.G.A. § 40-6-273).",
+                "_roden_last_reviewed": "2026-09-24"
             }
         },
         "/blog/what-to-do-if-your-workers-compensation-claim-is-denied/": {
@@ -13687,31 +13691,33 @@
             "type": "post",
             "status": "publish",
             "title": "Seeking Workers’ Compensation for a Sprained Ankle at Work",
-            "excerpt": "When a sprained ankle at work qualifies for workers' compensation, how to document it, and why insurers treat soft-tissue injuries with suspicion.",
+            "excerpt": "When a sprained ankle at work qualifies for workers' compensation, how to document it, who chooses your doctor, and the Georgia and South Carolina deadlines to report the injury and file a claim.",
             "meta": {
-                "_roden_author_attorney": "Eric Roden",
+                "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "When does a sprained ankle count as a work injury?",
-                        "answer": "When it is work related. If the injury occurred on the job, or because of the job, it will generally be covered. Twisting your ankle on a walk at home is not covered; spraining it on an uneven factory floor at work generally is."
+                        "answer": "When it is an injury by accident arising out of and in the course of your employment (O.C.G.A. § 34-9-1(4); S.C. Code § 42-1-160(A)): the work has to be what caused it and it has to happen while you are doing your job. Twisting your ankle on a walk at home is not covered; spraining it on an uneven factory floor at work generally is."
                     },
                     {
                         "question": "What is the threshold requirement for a workers' compensation claim?",
-                        "answer": "Work-relatedness. Whether the injury arose on the job or because of the job is the general test, and it is the question that has to be answered before the rest of the claim matters."
+                        "answer": "Work-relatedness, which both Georgia and South Carolina define as an injury by accident 'arising out of and in the course of' employment (O.C.G.A. § 34-9-1(4); S.C. Code § 42-1-160(A)). Both parts have to be true, and it is the question that has to be answered before the rest of the claim matters."
                     },
                     {
                         "question": "Why should I get medical treatment for a minor work injury?",
-                        "answer": "Because medical records are vital evidence. Treatment protects your recovery and documents when, where and how the injury happened. Skipping care leaves you without the documentation a claim depends on."
+                        "answer": "Because medical records are vital evidence, and because the bill is only covered if the right doctor treats you. In Georgia you choose from the employer's posted panel of at least six physicians and may switch once within it without Board approval (O.C.G.A. § 34-9-201); in South Carolina the employer chooses the treating doctor and treatment you arrange on your own may not be paid (S.C. Code § 42-15-60(A)). Emergencies are the exception in both states. Treatment protects your recovery and documents when, where and how the injury happened."
                     },
                     {
                         "question": "Should I report a minor injury to my employer?",
-                        "answer": "Yes. If you believe the injury may be work related, report it as soon as possible after it happens. Minor injuries sometimes turn out to be more serious, and a late report gives the insurer room to dispute the connection to work."
+                        "answer": "Yes, and there is a deadline: in Georgia no compensation is payable unless the employer gets notice within 30 days of the accident (O.C.G.A. § 34-9-80); in South Carolina the limit is 90 days (S.C. Code § 42-15-20). Both statutes excuse a late report only in limited situations, such as the employer already knowing about the accident or not being prejudiced by the delay. Tell a supervisor or manager, not just a co-worker. Minor injuries sometimes turn out to be more serious, and a late report gives the insurer room to dispute the connection to work."
                     },
                     {
                         "question": "Does workers' compensation cover occupational illnesses too?",
-                        "answer": "Yes. The same work-relatedness test covers conditions that develop because of the job over time, not only single accidents. Those claims turn on connecting the condition to your work conditions rather than to one event."
+                        "answer": "Yes, but under a separate, stricter test. Both states exclude disease from the definition of 'injury' except where it results naturally and unavoidably from the accident, and compensate occupational disease under their own rules. Georgia requires proof of all five elements in O.C.G.A. § 34-9-280(2), including a direct causal connection between the work conditions and the disease and that it is not an ordinary disease of life to which the general public is exposed. South Carolina requires a disease 'due to hazards in excess of those ordinarily incident to employment' and peculiar to the occupation, and excludes ordinary diseases of life and chronic skeletal joint diseases (S.C. Code § 42-11-10). Those claims turn on connecting the condition to the hazards of the particular job rather than to one event."
                     }
-                ]
+                ],
+                "_roden_key_takeaways": "Report a work injury to a supervisor or manager right away: in Georgia no compensation is payable unless your employer gets notice within 30 days (O.C.G.A. § 34-9-80), and in South Carolina the limit is 90 days (S.C. Code § 42-15-20). File your claim within one year of the injury in Georgia (O.C.G.A. § 34-9-82) and within two years of the accident in South Carolina (S.C. Code § 42-15-40). In both states a sprained ankle is covered only if it is an injury by accident arising out of and in the course of your employment. In Georgia you choose a doctor from your employer's posted panel of physicians; in South Carolina your employer chooses the treating doctor, and care you arrange on your own may not be paid. Medical records documenting when, where and how the injury happened are vital evidence in your claim.",
+                "_roden_last_reviewed": "2026-09-24"
             }
         },
         "/blog/when-does-workers-compensation-stop-paying/": {

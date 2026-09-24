@@ -1,0 +1,314 @@
+{
+  "postId": 1654,
+  "slug": "liability-for-epilepsy-related-car-accidents",
+  "liveUrl": "https://rodenlaw.com/blog/liability-for-epilepsy-related-car-accidents/",
+  "verifiedAt": "2026-09-24",
+  "reviewerByJurisdiction": "Two-state post that will state South Carolina law after the refresh (and already anchors its CTA on Charleston): reviewer is Graeham C. Gillin, never Eric Roden. content/meta.json currently records _roden_author_attorney = Eric Roden; the operator should change it.",
+  "sourcingNotes": [
+    "Sibling pack run-1707/facts-1707.json (verified 2026-09-23) was read first; its case law (Eatmon v. Weeks for Georgia, Collins v. Frasier / Boyleston v. Baxley for South Carolina), its Georgia DDS / § 40-5-35 / Ga. Comp. R. & Regs. 375-3-5 findings and its SCDMV § 56-1-221 findings are reused here with the same canonical URLs. Nothing in this post touches physician liability (Gilhuly / Hardee) or insurance (§ 33-7-11, §§ 38-77-150/160), so those citations are not carried into this pack; the post makes no insurance claim at all.",
+    "Epilepsy statistics: data/statistics.json has no epilepsy or seizure entry, so both figures were verified directly against CDC pages. The CDC facts-stats page (2021-2022 NHIS) gives about 2.9 million adults and about 456,000 children with active epilepsy; the 'less than half seizure-free' figure is from CDC's MMWR of April 20, 2018 (Tian et al.), analysing 2013 and 2015 NHIS data: among adults with active epilepsy taking medication, 42.4% were seizure-free in 2015 (45.3% in 2013; 44% pooled). Neither figure is in the registry; the refresh may cite them in-text with the vintage but should not add them to statistics.json without owner review.",
+    "Georgia seizure rule is primary-sourced twice over: O.C.G.A. § 40-5-35 (a noncommercial Class C license 'shall not be' denied for epilepsy 'unless such an episode occurred within the immediately preceding six-month period'; physicians 'may report' and are immune) and Ga. Comp. R. & Regs. 375-3-5-.02 (Alterations of Consciousness; six months for epilepsy; Group A/B one-year framework; limited license for Group B only for 'Nocturnal epilepsy and stress hypoglycemia'). Rule text read on rules.sos.ga.gov and law.cornell.edu/regulations/georgia; the Georgia DDS Medical Review Process page supplies the reporting-sources sentence the post paraphrases.",
+    "South Carolina seizure rule: NO seizure-free period exists in statute or regulation. Title 56 Chapter 1 (scstatehouse.gov, downloaded in full) contains no occurrence of 'epilep', 'seizure' or 'lapse of consciousness'; the S.C. Code of Regulations chapter 63 index has no medical-fitness regulation. What South Carolina has is (1) S.C. Code § 56-1-40(4) (no license to a person 'who has a mental or physical condition which prevents him from safely operating a motor vehicle'), (2) § 56-1-130(A) (DMV 'may require a further physical and mental examination'), (3) § 56-1-270 (with 'good cause to believe' a licensee is unfit 'because of physical or mental disability', DMV may on ten days' written notice require an examination and suspend, revoke or restrict; refusal is itself grounds), (4) § 56-1-221 (Medical Advisory Board advises DMV on 'medical criteria'; the driver may submit a report from a physician of his choice), and (5) the license application itself, SCDMV Form 447-NC (Rev. 09/2025), question 5: 'In the past 12 months have you experienced a loss of consciousness, muscular control, or seizure?' and question 9 on any condition preventing safe operation. The 'six months' figure for South Carolina appears only in the Epilepsy Foundation's state chart (reproduced by the AAP, data as of November 2011: SC = 6 months, periodic updates 'annually for 3 years', doctors not required to report, appeal within 10 days). That is a secondary, 15-year-old source and the SCDMV publishes no such rule, so the refresh must NOT state a six-month period as South Carolina law; state the 12-month application question and the DMV's examination power instead.",
+    "Epilepsy Foundation pages (epilepsy.com) return Cloudflare 403 to every fetcher used; they are indexed by search engines and the AAP-hosted copy of the Foundation chart was read directly. law.justia.com and rules.sos.ga.gov return 403 to curl; the Georgia rule was read via WebFetch and Cornell LII, the Georgia statute on codes.findlaw.com. Justia URLs below are the site's canonical year-less form, not verified live in this run (same caveat as the sibling pack).",
+    "All five internal links in the body (car-accident-lawyers, georgia-comparative-negligence-law, what-to-do-when-you-are-in-a-car-accident, personal-injury-lawsuit-vs-insurance-claim, case-results) return 200 with a browser user agent. The body contains no tel: href and no phone number at all; the closing CTA is 'Call us today' with nothing to call. Not a factual error, but the refresh may add the toll-free line (tel:+18447378587, 1-844-RESULTS) per the profile.",
+    "The intro's CTA anchor is 'car accident lawyers in Charleston' while the only law stated is Georgia's comparative-fault rule. The post is neither a Georgia post nor a South Carolina post; the refresh should stamp both states in the licensing and fault sections and either broaden the anchor or leave it (Charleston is a real office)."
+  ],
+  "verifiedClaims": [
+    {
+      "surface": "body",
+      "claim": "Epilepsy affects millions worldwide, including approximately three million individuals in the U.S.",
+      "verdict": "update",
+      "currentValue": "About 3.4 million Americans have active epilepsy: 'about 2.9 million U.S. adults 18 and older reported having active epilepsy' (2021-2022) and 'About 456,000 U.S. children 17 and younger have active epilepsy' (CDC).",
+      "sourceName": "CDC, Epilepsy Facts and Stats (National Health Interview Survey 2021-2022)",
+      "sourceUrl": "https://www.cdc.gov/epilepsy/data-research/facts-stats/index.html",
+      "retrievedAt": "2026-09-24",
+      "note": "'Three million' undercounts by ignoring children and is now the adult-only figure. The existing href carries a '#:~:text=Almost%203%20million%20U.S.%20adults' text fragment that matches an older wording of the page; drop the fragment and link the plain CDC URL. Same figure in FAQ 0."
+    },
+    {
+      "surface": "body",
+      "claim": "At Roden Law, our dedicated car accident lawyers in Charleston specialize in handling complex cases involving medical conditions or medication.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "profiles/firm-facts.md (Charleston office, 127 King Street Suite 200); link https://rodenlaw.com/practice-areas/car-accident-lawyers/ returns 200",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "Firm claim, not a legal one. The post is two-state; naming Charleston alone is a choice, not an error."
+    },
+    {
+      "surface": "body",
+      "claim": "The U.S. Centers for Disease Control and Prevention (CDC) reported in 2015 that less than half of those on medication were seizure-free.",
+      "verdict": "update",
+      "currentValue": "CDC's April 2018 MMWR analysis of 2015 survey data: 93.0% of U.S. adults with active epilepsy took epilepsy medication, and only 42.4% of those taking medication were seizure-free in the past year (45.3% in 2013; 'Among respondents taking epilepsy medication, 44% reported that their seizures were controlled in the past year' for the two years pooled).",
+      "sourceName": "Tian N, Boring M, Kobau R, Zack MM, Croft JB. Active Epilepsy and Seizure Control in Adults — United States, 2013 and 2015. MMWR 2018;67(15):437-442 (April 20, 2018)",
+      "sourceUrl": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6715a1.htm",
+      "retrievedAt": "2026-09-24",
+      "note": "'Less than half' is correct; 'reported in 2015' is not. The data were collected in 2015 and the CDC published the finding in 2018. Rewrite as 'CDC data from 2015, published in 2018, found that ... fewer than half (about 42%) ... were seizure-free in the previous year' and link the word 'reported' (currently unlinked) to the MMWR URL. Denominator is adults taking medication, not all adults with epilepsy."
+    },
+    {
+      "surface": "body",
+      "claim": "An epileptic incident can occur at any time, and in the moments leading up to it and during a seizure, these are some of the symptoms that could impair your ability to drive safely: Seizure-induced confusion; Loss of consciousness; Uncontrollable body jerking; Cognitive impairment; Anxiety; Staring spells or feeling “spaced out”; Headaches; Temporary paralysis after a seizure; Memory lapses; Temporary loss of bowel control",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Descriptive list; no figure or state-specific fact asserted",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "Generic clinical description; nothing to verify against a registry or statute. No edit."
+    },
+    {
+      "surface": "body",
+      "claim": "In many states, individuals with epilepsy can obtain a driver's license if they haven't experienced a seizure within the last six months.",
+      "verdict": "update",
+      "currentValue": "GEORGIA: yes, by statute and rule. O.C.G.A. § 40-5-35: 'a person shall not be disqualified from obtaining a noncommercial Class C driver's license for having had an episode of lapsed or altered consciousness due to epilepsy unless such an episode occurred within the immediately preceding six-month period.' Ga. Comp. R. & Regs. 375-3-5-.02: 'An individual who had an episode of altered consciousness due to epilepsy may be issued a Class C license, if otherwise qualified, if the episode did not occur within the last six months.' SOUTH CAROLINA: no seizure-free period is written into statute or regulation. The license application (SCDMV Form 447-NC, Rev. 09/2025) asks 'In the past 12 months have you experienced a loss of consciousness, muscular control, or seizure?' and whether you have 'any mental or physical condition preventing you from safely operating a motor vehicle'; the DMV may not license a person with such a condition (S.C. Code § 56-1-40(4)), may require a further physical and mental examination (§ 56-1-130), and decides medical fitness case by case with advice from its Medical Advisory Board (§ 56-1-221).",
+      "sourceName": "O.C.G.A. § 40-5-35 (FindLaw text); Ga. Comp. R. & Regs. 375-3-5-.02 (rules.sos.ga.gov; Cornell LII); SCDMV Form 447-NC (Rev. 09/2025); S.C. Code §§ 56-1-40, 56-1-130, 56-1-221 (scstatehouse.gov)",
+      "sourceUrl": "https://codes.findlaw.com/ga/title-40-motor-vehicles-and-traffic/ga-code-sect-40-5-35/",
+      "retrievedAt": "2026-09-24",
+      "note": "CONSEQUENTIAL for a two-state post. 'In many states ... six months' is true of Georgia and must be stamped as Georgia (noncommercial Class C only). It must NOT be stated for South Carolina: the only source giving SC a six-month period is the Epilepsy Foundation's state chart (data as of November 2011, reproduced by the AAP), which is secondary and 15 years old, and the SCDMV publishes no such rule. SC form URL: https://dmv.sc.gov/sites/scdmv/files/2026-01/447-NC_0.pdf."
+    },
+    {
+      "surface": "body",
+      "claim": "Those who have seizures exclusively at night may be eligible for a limited license, permitting daytime driving, even if a seizure occurred within the previous six months.",
+      "verdict": "update",
+      "currentValue": "Georgia only: Rule 375-3-5-.02 places anyone with an episode of altered consciousness 'in the preceding year' in Group B, which is ineligible for a regular license, but its table allows a limited license for Group B for 'Nocturnal epilepsy and stress hypoglycemia'. The rule does not say 'daytime driving'; the limitation is set by DDS on the medical review. No comparable South Carolina provision exists.",
+      "sourceName": "Ga. Comp. R. & Regs. 375-3-5-.02 (Alterations of Consciousness), Group A/B table",
+      "sourceUrl": "https://www.law.cornell.edu/regulations/georgia/Ga-Comp-R-Regs-R-375-3-5-.02",
+      "retrievedAt": "2026-09-24",
+      "note": "Stamp as Georgia and soften 'permitting daytime driving' to 'a limited license' (the rule text does not specify daytime). Do not extend to South Carolina."
+    },
+    {
+      "surface": "body",
+      "claim": "To learn more about the Epilepsy related Driving Laws in your state, click here to learn more.",
+      "verdict": "update",
+      "currentValue": "Link target https://www.epilepsy.com/lifestyle/driving-and-transportation/laws is the Epilepsy Foundation's state-law directory; it is live (indexed, linked from the Foundation's own pages) but returns Cloudflare 403 to automated fetchers, so it could not be read in this run.",
+      "sourceName": "Epilepsy Foundation, Driving Laws by State",
+      "sourceUrl": "https://www.epilepsy.com/lifestyle/driving-and-transportation/laws",
+      "retrievedAt": "2026-09-24",
+      "note": "Not a factual claim; the edit is the anchor text. 'click here to learn more' fails the a11y link-name rule; use 'the Epilepsy Foundation's state-by-state driving law summaries'. Keep the URL. Since Georgia and South Carolina are now stated in the body, the sentence can shrink to one clause."
+    },
+    {
+      "surface": "body",
+      "claim": "Doctors may not be obligated to report patients with epilepsy, but they can report anyone with a known condition that impairs their ability to safely operate a vehicle.",
+      "verdict": "update",
+      "currentValue": "True in both states, and Georgia says so expressly. O.C.G.A. § 40-5-35: physicians 'may report to the department' any person with a disorder that would make them unable to drive safely; the report is confidential and 'No civil or criminal action may be brought against any person or agency for providing the information'. South Carolina has no statute requiring or addressing physician reporting of epilepsy (Title 56 Chapter 1 contains no epilepsy, seizure or lapse-of-consciousness provision); S.C. Code § 56-1-221(C) lets the driver, not the doctor, forward a physician's report to the Medical Advisory Board.",
+      "sourceName": "O.C.G.A. § 40-5-35 (FindLaw text); S.C. Code Title 56 Chapter 1 (scstatehouse.gov, full text searched)",
+      "sourceUrl": "https://codes.findlaw.com/ga/title-40-motor-vehicles-and-traffic/ga-code-sect-40-5-35/",
+      "retrievedAt": "2026-09-24",
+      "note": "Replace 'may not be obligated' with the definite statement: 'Neither Georgia nor South Carolina requires a doctor to report a patient with epilepsy. Georgia expressly permits it and shields the reporting physician from liability (O.C.G.A. § 40-5-35).'"
+    },
+    {
+      "surface": "body",
+      "claim": "Additionally, concerned individuals such as relatives, courts, judges, law enforcement officers, or citizens can submit non-anonymous letters to express their concerns. The DMV may then require the individual to undergo a medical evaluation and provide documented proof of their ability to drive safely.",
+      "verdict": "update",
+      "currentValue": "This is Georgia's process and the agency is DDS, not 'the DMV'. Georgia DDS Medical Review Process: requests 'may come from a non-anonymous relative, the court, law enforcement officer, judge, doctor, or concerned citizen'; DDS sends the Medical Form (DS-287) 'requesting a Medical Evaluation by a doctor', and a driver who does not comply within 30 days is notified that 'their driving privileges will be revoked in 30 days for medical reasons'. South Carolina's parallel is S.C. Code § 56-1-270: with 'good cause to believe that a person holding a South Carolina driver's license is incompetent or otherwise not qualified to be licensed because of physical or mental disability', the SCDMV 'may, upon written notice of at least ten days to the licensee, require him to submit to an examination', then 'may suspend or revoke the license ... or permit him to retain such license or may issue a license subject to restrictions'; refusal to submit is itself grounds for suspension or revocation.",
+      "sourceName": "Georgia DDS, Medical Review Process; S.C. Code § 56-1-270 (scstatehouse.gov); S.C. Code § 56-1-221(C)",
+      "sourceUrl": "https://dds.georgia.gov/medical-review-process",
+      "retrievedAt": "2026-09-24",
+      "note": "Stamp the first sentence as Georgia (DDS), and add one sentence for South Carolina under § 56-1-270 / § 56-1-221. 'Provide documented proof of their ability to drive safely' is a fair lay rendering of the DS-287 medical evaluation."
+    },
+    {
+      "surface": "body",
+      "claim": "If a person has a seizure and causes an accident, it doesn't automatically make them legally responsible for the collision.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Eatmon v. Weeks, Nos. A13A0692/A13A0693 (Ga. App. July 16, 2013), quoting Lewis v. Smith, 238 Ga. App. 6 (1999); Collins v. Frasier, Op. No. 4385 (S.C. Ct. App. May 6, 2008), applying Boyleston v. Baxley, 243 S.C. 281 (1963)",
+      "sourceUrl": "https://caselaw.findlaw.com/court/ga-court-of-appeals/1638980.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Both states: an unforeseeable loss of consciousness is not negligence, and the driver bears the burden of proving it was unforeseeable (reused from facts-1707). SC opinion: https://www.sccourts.org/opinions/HTMLFiles/COA/4385.htm."
+    },
+    {
+      "surface": "body",
+      "claim": "Various factors come into play when determining liability, including the individual's history of epileptic events or seizures, whether they were under the care of a doctor for epilepsy, and whether they had been seizure-free for at least six months.",
+      "verdict": "update",
+      "currentValue": "The legal test in both states is foreseeability: a driver who had prior warning of the condition cannot rely on the sudden-incapacity rule (Eatmon v. Weeks; Collins v. Frasier). Seizure history and medical care are exactly the evidence courts weigh. 'Seizure-free for at least six months' is not a liability element; it is Georgia's licensing standard (O.C.G.A. § 40-5-35), and driving inside that window, or against a doctor's advice, is evidence the seizure was foreseeable.",
+      "sourceName": "Eatmon v. Weeks (Ga. App. 2013); Collins v. Frasier (S.C. Ct. App. 2008); O.C.G.A. § 40-5-35",
+      "sourceUrl": "https://www.sccourts.org/opinions/HTMLFiles/COA/4385.htm",
+      "retrievedAt": "2026-09-24",
+      "note": "Keep the first two factors; reframe the third as 'whether they were driving inside Georgia's six-month no-seizure licensing window or against medical advice, which bears on whether the seizure was foreseeable'. Do not present the six-month figure as a South Carolina rule."
+    },
+    {
+      "surface": "body",
+      "claim": "While a seizure's involvement in the accident may attribute some fault to the person with the medical condition, the issue remains complex, particularly if they had no prior diagnosis or seizure history.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Eatmon v. Weeks (Ga. App. 2013) (no prior warning; summary judgment for the driver's estate); Collins v. Frasier (S.C. Ct. App. 2008) (no prior fainting history; verdict for driver affirmed)",
+      "sourceUrl": "https://caselaw.findlaw.com/court/ga-court-of-appeals/1638980.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Understated if anything: with no prior warning, Georgia courts have taken the case from the jury outright. Optional tweak only."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia uses a modified comparative negligence system to apportion fault between two or more parties whose negligence contributed to an accident. According to this system, if you were less than 50 percent at fault for the accident, you can still pursue compensation for the damages you sustained.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "profiles/writer-profile.md jurisdiction table; O.C.G.A. § 51-12-33(g)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "Correct for Georgia. The section is Georgia-only on a two-state post; add South Carolina (see recommendedEdits)."
+    },
+    {
+      "surface": "body",
+      "claim": "However, your level of recovery will be reduced by your fault percentage. For example, if you are found 10 percent liable for the accident, you can only receive 90 percent of the total value of your damages.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(a) (damages reduced in proportion to the plaintiff's percentage of fault); same rule in South Carolina under Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "Arithmetic holds in both states."
+    },
+    {
+      "surface": "body",
+      "claim": "If it is determined that you are more than 50 percent at-fault for the accident, you cannot recover any damages.",
+      "verdict": "update",
+      "currentValue": "Georgia bars recovery at 50 percent or more, not 'more than 50 percent'. O.C.G.A. § 51-12-33(g): the plaintiff 'shall not be entitled to receive any damages if the plaintiff is 50 percent or more responsible for the injury or damages claimed'. A plaintiff found exactly 50% at fault recovers nothing in Georgia. South Carolina: recovery is barred only when the plaintiff's fault reaches 51% (Nelson v. Concrete Supply Co.), so a 50/50 plaintiff recovers half in South Carolina and nothing in Georgia.",
+      "sourceName": "O.C.G.A. § 51-12-33(g); profiles/writer-profile.md jurisdiction table (Georgia: less than 50%; South Carolina: less than 51%, Nelson v. Concrete Supply Co.)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "CONSEQUENTIAL. 'More than 50 percent' misstates Georgia's bar by exactly the case that matters (50/50) and contradicts the previous paragraph's 'less than 50 percent'. Change to '50 percent or more' and add the South Carolina rule. Never cite § 15-38-15 for the South Carolina bar."
+    },
+    {
+      "surface": "body",
+      "claim": "We work on a contingency fee basis, so you are charged nothing unless we recover compensation for your accident. Call us today to schedule a confidential and complimentary consultation.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "profiles/writer-profile.md: contingency fee, no fees unless we win; free consultation",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "Firm claim, matches the profile. The body has no tel: href and no phone number anywhere; 'Call us today' names nothing to call. Optional: add 1-844-RESULTS (tel:+18447378587)."
+    },
+    {
+      "surface": "excerpt",
+      "claim": "When a seizure causes a crash, who is liable? How fault is assessed in seizure-related accidents, and what it means for the people injured.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "No factual claim. Publishes as the Article description; no change needed."
+    },
+    {
+      "surface": "faq:0",
+      "claim": "Epilepsy affects millions worldwide, including approximately three million individuals in the United States. Given the potential for seizures and blackouts, it raises real questions about driving and liability.",
+      "verdict": "update",
+      "currentValue": "About 3.4 million Americans have active epilepsy: about 2.9 million adults and about 456,000 children (CDC, 2021-2022).",
+      "sourceName": "CDC, Epilepsy Facts and Stats (NHIS 2021-2022)",
+      "sourceUrl": "https://www.cdc.gov/epilepsy/data-research/facts-stats/index.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Publishes as FAQPage structured data; mirror the body fix. Suggested answer: 'About 3.4 million Americans have active epilepsy, roughly 2.9 million adults and 456,000 children, according to the CDC's 2021-2022 survey data. Given the potential for seizures and blackouts, it raises real questions about driving and liability.'"
+    },
+    {
+      "surface": "faq:1",
+      "claim": "In many cases yes, subject to licensing requirements around seizure control. Driving with epilepsy can still pose significant risks even where medication is controlling the symptoms.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 40-5-35 (Georgia: Class C license unless an epilepsy episode in the preceding six months); SCDMV Form 447-NC Q5 (South Carolina: 12-month disclosure question; case-by-case medical review); MMWR 2018 (42% of medicated adults seizure-free, 2015)",
+      "sourceUrl": "https://codes.findlaw.com/ga/title-40-motor-vehicles-and-traffic/ga-code-sect-40-5-35/",
+      "retrievedAt": "2026-09-24",
+      "note": "Accurate as hedged. Optional stamp: 'In Georgia a noncommercial license is available if no seizure has occurred in the previous six months (O.C.G.A. § 40-5-35); South Carolina decides medical fitness case by case after the application's 12-month seizure question.'"
+    },
+    {
+      "surface": "faq:2",
+      "claim": "Reporting medical limitations is part of the licensing requirements, and failing to disclose a condition that affects driving safety can bear directly on liability if a crash follows.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "SCDMV Form 447-NC (Rev. 09/2025) Q5 and Q9, signed under certification; Ga. Comp. R. & Regs. 375-3-5-.10 (applicants with potential impairments submit a medical report form completed by a licensed physician); foreseeability rule in Eatmon v. Weeks (Ga.) and Collins v. Frasier (S.C.)",
+      "sourceUrl": "https://dmv.sc.gov/sites/scdmv/files/2026-01/447-NC_0.pdf",
+      "retrievedAt": "2026-09-24",
+      "note": "Both states' applications ask about seizures or lapses of consciousness, and a driver who knew of the condition has the prior warning that defeats the sudden-incapacity rule. Accurate; no change required."
+    },
+    {
+      "surface": "faq:3",
+      "claim": "It depends on whether the seizure was foreseeable. A driver who knew their condition was uncontrolled, or who ignored medical advice not to drive, is in a very different position from one experiencing a first unheralded seizure.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Eatmon v. Weeks (Ga. App. 2013); Collins v. Frasier (S.C. Ct. App. 2008)",
+      "sourceUrl": "https://www.sccourts.org/opinions/HTMLFiles/COA/4385.htm",
+      "retrievedAt": "2026-09-24",
+      "note": "This is the correct statement of both states' rule and is better than the body's 'various factors' paragraph; the body should be brought in line with it."
+    },
+    {
+      "surface": "faq:4",
+      "claim": "Seek medical care and preserve the scene evidence, then get the circumstances reviewed. These cases turn on medical history and foreseeability, so a free case evaluation is the practical way to assess them.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "No factual claim beyond the foreseeability rule (Eatmon; Collins); free consultation per profile",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "Optional: add the filing deadlines (Georgia two years, O.C.G.A. § 9-3-33; South Carolina three years, S.C. Code § 15-3-530), which the post never states."
+    }
+  ],
+  "recommendedEdits": [
+    "Intro and FAQ 0: change 'approximately three million individuals in the U.S.' to 'about 3.4 million Americans, roughly 2.9 million adults and 456,000 children, according to the CDC'; keep the CDC link but strip the '#:~:text=...' fragment from the href.",
+    "'Dangers' section: change 'The U.S. Centers for Disease Control and Prevention (CDC) reported in 2015 that less than half of those on medication were seizure-free' to 'CDC survey data from 2015, published in 2018, found that 93 percent of U.S. adults with active epilepsy took medication and only about 42 percent of those taking it had been seizure-free in the previous year'; link 'published in 2018' to https://www.cdc.gov/mmwr/volumes/67/wr/mm6715a1.htm.",
+    "'Driver's License Requirements' section: replace 'In many states, individuals with epilepsy can obtain a driver's license if they haven't experienced a seizure within the last six months' with two stamped sentences: 'In Georgia, a noncommercial license cannot be denied for epilepsy unless a seizure occurred within the previous six months (O.C.G.A. § 40-5-35). South Carolina sets no fixed seizure-free period; the license application asks whether you have had a loss of consciousness, loss of muscular control or seizure in the past 12 months, and the SCDMV decides fitness case by case with advice from its Medical Advisory Board (S.C. Code § 56-1-221).'",
+    "Same section: stamp the nocturnal-seizure sentence as Georgia and soften it: 'Georgia's rules also allow a limited license for a driver whose seizures occur only during sleep, even within that window (Ga. Comp. R. & Regs. 375-3-5-.02).' Drop 'permitting daytime driving'. Do not extend it to South Carolina.",
+    "Same section: change the anchor text 'click here to learn more' to 'the Epilepsy Foundation's state-by-state driving-law summaries' (keep the URL).",
+    "'Reporting Medical Limitations': replace 'Doctors may not be obligated to report patients with epilepsy, but they can report ...' with 'Neither Georgia nor South Carolina requires a doctor to report a patient with epilepsy. Georgia expressly allows a physician to report any patient whose condition makes safe driving impossible and shields the doctor from liability for doing so (O.C.G.A. § 40-5-35).'",
+    "'Reporting Medical Limitations': stamp the second and third sentences as Georgia and rename the agency: 'In Georgia, a non-anonymous relative, a court or judge, a law enforcement officer, a doctor or a concerned citizen can ask the Department of Driver Services to review a driver; DDS then requires a medical evaluation by a doctor and revokes the license if the driver does not comply.' Add one South Carolina sentence: 'In South Carolina, the SCDMV may require a driver it has good cause to believe is unfit to submit to an examination on ten days' written notice, and may suspend, revoke or restrict the license afterward (S.C. Code § 56-1-270).'",
+    "'Determining Liability': in the 'Various factors' sentence, keep 'history of epileptic events or seizures' and 'whether they were under the care of a doctor', and replace 'whether they had been seizure-free for at least six months' with 'whether they were driving inside Georgia's six-month no-seizure window or against a doctor's advice, which bears on whether the seizure was foreseeable'. Optionally add: 'In both states, a driver who had warning of the condition cannot rely on a sudden, unforeseeable loss of consciousness as a defense.'",
+    "'How Comparative Fault Comes into Play': change 'If it is determined that you are more than 50 percent at-fault for the accident, you cannot recover any damages' to 'If you are found 50 percent or more at fault, you cannot recover any damages (O.C.G.A. § 51-12-33)'. Then add one South Carolina sentence: 'South Carolina follows the same reduction but bars recovery only when your share of fault reaches 51 percent, so a driver found exactly half at fault recovers half in South Carolina and nothing in Georgia.' Cite no South Carolina statute for this; the authority is Nelson v. Concrete Supply Co.",
+    "Closing CTA: optionally add the toll-free number '1-844-RESULTS' with href tel:+18447378587; the body currently has no phone number or tel: link.",
+    "Optional, FAQ 4 or closing: add the filing deadlines, 'two years in Georgia (O.C.G.A. § 9-3-33) and three years in South Carolina (S.C. Code § 15-3-530)', since the post never states them.",
+    "Operator: set _roden_author_attorney / reviewer to Graeham C. Gillin (the post will state South Carolina law and already anchors on Charleston); content/meta.json currently records Eric Roden. No attribution quote exists in the body; per the 2026-09-23 rule do not add one. No Spanish twin was found for this slug in content/meta.json."
+  ],
+  "statuteCitations": [
+    {
+      "section": "O.C.G.A. § 51-12-33",
+      "name": "Apportionment of damages; plaintiff barred at 50 percent or more fault",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+    },
+    {
+      "section": "O.C.G.A. § 40-5-35",
+      "name": "Physician reports to DDS (voluntary, immune, confidential); Driver's License Advisory Board; medical denial with hearing; noncommercial Class C license not denied for epilepsy unless an episode in the preceding six months",
+      "url": "https://law.justia.com/codes/georgia/title-40/chapter-5/article-2/section-40-5-35/"
+    },
+    {
+      "section": "O.C.G.A. § 9-3-33",
+      "name": "Two-year limitation for injuries to the person (optional add; not in the post today)",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+    },
+    {
+      "section": "S.C. Code § 56-1-221",
+      "name": "SCDMV Medical Advisory Board; advises on medical criteria; DMV may seek its advice about a driver it believes unfit; driver may submit his own physician's report",
+      "url": "https://www.scstatehouse.gov/code/t56c001.php"
+    },
+    {
+      "section": "S.C. Code § 56-1-270",
+      "name": "Re-examination on ten days' notice of a licensee believed unfit because of physical or mental disability; suspension, revocation or restriction; refusal is grounds",
+      "url": "https://www.scstatehouse.gov/code/t56c001.php"
+    },
+    {
+      "section": "S.C. Code § 56-1-130",
+      "name": "License examinations; DMV may require a further physical and mental examination",
+      "url": "https://www.scstatehouse.gov/code/t56c001.php"
+    },
+    {
+      "section": "S.C. Code § 56-1-40",
+      "name": "Persons who may not be licensed, including (4) a person with a mental or physical condition which prevents him from safely operating a motor vehicle",
+      "url": "https://www.scstatehouse.gov/code/t56c001.php"
+    },
+    {
+      "section": "S.C. Code § 56-1-80",
+      "name": "License application; voluntary disclosure of a permanent medical condition with physician certification (Form 447-CAD)",
+      "url": "https://www.scstatehouse.gov/code/t56c001.php"
+    },
+    {
+      "section": "S.C. Code § 15-3-530",
+      "name": "Three-year limitation, subsection (5) injury to the person (optional add; not in the post today)",
+      "url": "https://www.scstatehouse.gov/code/t15c003.php"
+    }
+  ],
+  "authoritativeLinks": [
+    { "name": "CDC — Epilepsy Facts and Stats (2.9 million adults, 456,000 children with active epilepsy, 2021-2022)", "url": "https://www.cdc.gov/epilepsy/data-research/facts-stats/index.html" },
+    { "name": "CDC MMWR, April 20, 2018 — Active Epilepsy and Seizure Control in Adults, United States, 2013 and 2015 (Tian et al.): 93% on medication in 2015, 42.4% of them seizure-free", "url": "https://www.cdc.gov/mmwr/volumes/67/wr/mm6715a1.htm" },
+    { "name": "O.C.G.A. § 40-5-35 — statute text (FindLaw)", "url": "https://codes.findlaw.com/ga/title-40-motor-vehicles-and-traffic/ga-code-sect-40-5-35/" },
+    { "name": "Ga. Comp. R. & Regs. 375-3-5 — Driver's License Advisory Board medical standards (375-3-5-.02 Alterations of Consciousness; 375-3-5-.10 medical report form)", "url": "https://rules.sos.ga.gov/gac/375-3-5" },
+    { "name": "Ga. Comp. R. & Regs. r. 375-3-5-.02 — Alterations of Consciousness (Cornell LII mirror)", "url": "https://www.law.cornell.edu/regulations/georgia/Ga-Comp-R-Regs-R-375-3-5-.02" },
+    { "name": "Georgia DDS — Medical Review Process (who may request a review; Medical Form DS-287; 30-day revocation)", "url": "https://dds.georgia.gov/medical-review-process" },
+    { "name": "SCDMV Form 447-NC (Rev. 09/2025) — license application; Q5 loss of consciousness, muscular control or seizure in the past 12 months", "url": "https://dmv.sc.gov/sites/scdmv/files/2026-01/447-NC_0.pdf" },
+    { "name": "SCDMV Form 447-CAD (Rev. 11/2024) — Voluntary Disclosure of a Medical Condition (epilepsy and seizures listed; physician certification; not used to start a fitness review)", "url": "https://dmv.sc.gov/sites/scdmv/files/media/Forms/447-CAD-Voluntary-Disclosure-of-a-Medical-Condition.pdf" },
+    { "name": "S.C. Code Title 56, Chapter 1 — §§ 56-1-40, 56-1-80, 56-1-130, 56-1-221, 56-1-270", "url": "https://www.scstatehouse.gov/code/t56c001.php" },
+    { "name": "Eatmon v. Weeks, Nos. A13A0692/A13A0693 (Ga. App. July 16, 2013) — unforeseeable loss of consciousness is not negligence; driver's burden; no defense where the driver had warning", "url": "https://caselaw.findlaw.com/court/ga-court-of-appeals/1638980.html" },
+    { "name": "Collins v. Frasier, Op. No. 4385 (S.C. Ct. App. May 6, 2008) — sudden, unforeseeable incapacity; Boyleston v. Baxley burden rule", "url": "https://www.sccourts.org/opinions/HTMLFiles/COA/4385.htm" },
+    { "name": "Epilepsy Foundation — Driving Laws by State (already linked in the post; blocked to fetchers, not read this run)", "url": "https://www.epilepsy.com/lifestyle/driving-and-transportation/laws" },
+    { "name": "Epilepsy Foundation state chart as reproduced by the AAP (data as of November 2011; SECONDARY and dated — lists SC as 6 months, annual updates for 3 years, no physician reporting; do not cite as South Carolina law)", "url": "https://downloads.aap.org/DCMO/Driving_and_Epilepsy.pdf" }
+  ]
+}

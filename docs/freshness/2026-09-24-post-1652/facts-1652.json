@@ -1,0 +1,296 @@
+{
+  "postId": 1652,
+  "slug": "when-does-a-sprained-ankle-become-a-work-injury",
+  "liveUrl": "https://rodenlaw.com/blog/when-does-a-sprained-ankle-become-a-work-injury/",
+  "verifiedAt": "2026-09-24",
+  "jurisdictionNote": "Generic two-state post: it names neither state and cites no statute, so nothing in it is false on its face, but every rule it gestures at (compensability test, reporting, filing, doctor choice, benefit types) differs between Georgia and South Carolina in a way a reader would act on. Stamp both states side by side. Once South Carolina law is stated the reviewer must be an SC-barred attorney (default Graeham C. Gillin); Eric Roden may carry the Georgia commentary only. Georgia sections were read from the 2025 Code of Georgia on law.justia.com (fetched via firecrawl; Justia returns 403 to WebFetch and curl). South Carolina sections were read from www.scstatehouse.gov. Sibling pack facts-1697.json (2026-09-23) was reused for O.C.G.A. § 34-9-262 and S.C. Code §§ 42-9-20 and 42-9-30; those three were not re-read today.",
+  "verifiedClaims": [
+    {
+      "surface": "body",
+      "claim": "if your injury is work-related, you may be able to seek compensation to cover necessary medical treatment and lost wages among other benefits",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 34-9-200(a) (medical); § 34-9-261 (temporary total disability); S.C. Code § 42-15-60(A) (medical); § 42-9-10 (total disability)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-6/part-1/section-34-9-200/",
+      "retrievedAt": "2026-09-24",
+      "note": "True in both states. 'Lost wages' is a lay gloss: both states pay two-thirds of the average weekly wage, not full wages, and only after a seven-day waiting period (O.C.G.A. § 34-9-220; S.C. Code § 42-9-200). If the refresh names benefit types, use: medical care, temporary total disability, temporary partial disability, permanent partial disability."
+    },
+    {
+      "surface": "body",
+      "claim": "The general rule of thumb is that if an injury is “work-related” – that is, if it occurred on the job, or because of the job (as in the case of an occupational illness), the injury will be covered by workers’ compensation.",
+      "verdict": "update",
+      "currentValue": "Both states use the same statutory test and it is conjunctive, not either/or: a compensable injury is an 'injury by accident arising out of and in the course of the employment' (O.C.G.A. § 34-9-1(4); S.C. Code § 42-1-160(A)). 'Arising out of' is the causal link between the work and the injury; 'in the course of' is the time, place and circumstances of the work. Both must be met. Disease is excluded from 'injury' in both definitions 'except where it results naturally and unavoidably from the accident', and occupational disease is compensated under a separate article with its own elements (O.C.G.A. § 34-9-280; S.C. Code § 42-11-10).",
+      "sourceName": "O.C.G.A. § 34-9-1(4); S.C. Code § 42-1-160(A)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "'On the job, or because of the job' reads as a disjunction; the statute requires both prongs. Being at work when the ankle turns is not enough by itself. Replace the gloss with the statutory phrase and keep the plain-English explanation. Same wording problem recurs in FAQ 1 and FAQ 2. Also: 'as in the case of an occupational illness' should not be presented as an example of the accident test (see FAQ 5)."
+    },
+    {
+      "surface": "body",
+      "claim": "if you are out for a walk at home and you step on an uneven piece of pavement and twist your ankle, you likely won’t be able to claim a workers’ compensation injury – but if you are walking across the factory floor at work and you step on an uneven area of the floor and sprain your ankle, you may be able to, as it would be a work-related event.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 34-9-1(4); S.C. Code § 42-1-160(A)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Sound illustration in both states: an uneven floor at work is a hazard of the employment (arising out of) encountered while working (in the course of). Keep the hedge 'may be able to'. Both definitions also cover 'the aggravation of a preexisting condition by accident arising out of and in the course of employment' (O.C.G.A. § 34-9-1(4); S.C. Code § 42-1-160(A) via the disease/aggravation language), which is relevant to a previously sprained ankle re-injured at work, but only for so long as the aggravation continues to cause the disability in Georgia."
+    },
+    {
+      "surface": "body",
+      "claim": "work-relatedness is generally a threshold requirement for filing a claim",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 34-9-1(4); S.C. Code § 42-1-160(A)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Accurate. If the refresh adds the 'no-fault' point, the verified form is: neither state requires the worker to prove the employer was negligent; the statutory bars are the worker's own willful misconduct, intoxication or drug use (O.C.G.A. § 34-9-17(a)-(b)) and intoxication or wilful intent to injure oneself or another (S.C. Code § 42-9-60). The SBWC FAQ describes the system as 'an accident insurance program'."
+    },
+    {
+      "surface": "body",
+      "claim": "Medical records can be vital evidence in a workers’ compensation claim, so it’s important not to overlook seeking the care you need from a well-qualified provider.",
+      "verdict": "update",
+      "currentValue": "Who the provider is matters, and differently in each state. Georgia: the employer must post a Panel of Physicians of at least six doctors, at least one an orthopedic surgeon; the employee chooses from that panel and may make one change to another panel doctor without Board approval; if the employer has not posted a panel or explained it, the employee may see any physician at the employer's expense; the panel rule is suspended in an emergency (O.C.G.A. § 34-9-201(b)(1), (c), (d), (f)). South Carolina: 'your employer has the right to choose your treating doctor' and bills from a doctor you pick on your own 'may not be paid' (SCWCC Injured Worker FAQs); the statute lets the employer furnish 'an attending physician and any medical care or treatment that is considered necessary by the attending physician', which 'the employee shall accept', unless the Commission orders otherwise for good cause; emergency care from another physician is paid if the Commission orders it (S.C. Code § 42-15-60(A)). Refusing the employer-provided treatment suspends compensation in South Carolina for the period of refusal unless the Commission finds it justified (§ 42-15-60(A)).",
+      "sourceName": "O.C.G.A. § 34-9-201; S.C. Code § 42-15-60(A); SCWCC Injured Worker FAQs",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-6/part-1/section-34-9-201/",
+      "retrievedAt": "2026-09-24",
+      "note": "Most consequential finding. 'A well-qualified provider' of the worker's choosing is the wrong instruction in both states: in South Carolina the employer picks the doctor, and in Georgia the worker must pick from the posted panel. A sprained-ankle patient who goes to their own doctor can be left with an unpaid bill and an unauthorized-treatment dispute. Keep the medical-records point; add the authorized-provider rule for each state. SC FAQ: https://wcc.sc.gov/injured-worker-faqs"
+    },
+    {
+      "surface": "body",
+      "claim": "it is always wise to report your injury to your employer as soon as possible after it occurs. Sometimes, if there is a delay in filing a claim or reporting an injury, an insurer might attempt to deny the claim or argue that the claim isn’t legitimate.",
+      "verdict": "update",
+      "currentValue": "Reporting is not merely wise; it is a statutory condition with a deadline. Georgia: notice to the employer, supervisor or foreman 'immediately on the occurrence of any accident or as soon thereafter as practicable', and 'No compensation will be payable unless such notice, either oral or written, is given within 30 days after the occurrence of an accident', with exceptions for physical or mental incapacity, fraud or deceit, the employer's own knowledge of the accident, or a reasonable excuse where the employer was not prejudiced (O.C.G.A. § 34-9-80). South Carolina: notice 'immediately ... or as soon thereafter as practicable', and 'no compensation shall be payable unless such notice is given within ninety days after the occurrence of the accident', unless reasonable excuse is shown and the employer was not prejudiced (S.C. Code § 42-15-20(A)-(B)). The SCWCC adds that telling a co-worker may not count as notice; tell a manager, supervisor or on-site nurse.",
+      "sourceName": "O.C.G.A. § 34-9-80; S.C. Code § 42-15-20; SCWCC Injured Worker FAQs",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-3/part-1/section-34-9-80/",
+      "retrievedAt": "2026-09-24",
+      "note": "The body's reason (the insurer may 'argue the claim isn't legitimate') is true but understates it: past the deadline the statute itself bars compensation. Stamp 30 days (GA) / 90 days (SC). Same fix applies to FAQ 4. The 30-day and 90-day figures are state-specific and must never be presented as a single rule."
+    },
+    {
+      "surface": "body",
+      "claim": "There are deadlines to file claims, and you don’t want to miss the chance to assert any rights you may have.",
+      "verdict": "update",
+      "currentValue": "Georgia: 'The right to compensation shall be barred unless a claim therefor is filed within one year after injury', extended to one year after the last remedial treatment furnished by the employer or two years after the last weekly benefit payment (O.C.G.A. § 34-9-82(a)); the claim is filed with the State Board of Workers' Compensation (§ 34-9-82(c); form WC-14 per the SBWC FAQ). South Carolina: the right to compensation 'is barred unless a claim is filed with the commission within two years after an accident' (S.C. Code § 42-15-40); the SCWCC says the worker files a Form 50 with the Commission before the two-year mark even if the employer's carrier already reported the injury. For repetitive-trauma claims in South Carolina the two years run from when the employee knew or should have known the injury is compensable, capped at seven years from the last injurious exposure (§ 42-15-40).",
+      "sourceName": "O.C.G.A. § 34-9-82; S.C. Code § 42-15-40; SBWC Workers' Compensation Law FAQs; SCWCC Injured Worker FAQs",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t42c015.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Stamp one year (GA) / two years (SC). Do not write 'the deadline is one year' or 'two years' without the state. Note the reporting deadline and the filing deadline are different clocks in both states; the post's sentence 'delay in filing a claim or reporting an injury' blurs them."
+    },
+    {
+      "surface": "body",
+      "claim": "An attorney who is familiar with workers’ compensation law will be able to tell you whether or not your injury may qualify for benefits, and if so, what types of benefits may be available.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. §§ 34-9-200, 34-9-261, 34-9-262, 34-9-263; S.C. Code §§ 42-15-60, 42-9-10, 42-9-20, 42-9-30",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-7/section-34-9-261/",
+      "retrievedAt": "2026-09-24",
+      "note": "If the refresh lists benefit types, verified figures are: Georgia TTD two-thirds of the average weekly wage, max $800/week for injuries on or after July 1, 2023, up to 400 weeks (§ 34-9-261); Georgia TPD two-thirds of the wage difference, max $533/week, 350 weeks (§ 34-9-262, per facts-1697); Georgia medical up to 400 weeks for non-catastrophic injuries on or after July 1, 2013 (§ 34-9-200(a)(2)). South Carolina TTD 66 2/3% of the average weekly wage up to the state maximum ($1,189.94/week for injuries on or after January 1, 2026; $1,134.43 for 2025), max 500 weeks (§ 42-9-10; SCWCC rates); SC TPD 66 2/3% of the difference, max 340 weeks (§ 42-9-20, per facts-1697); SC medical ten weeks plus such additional time as the Commission judges will lessen disability, lifetime in permanent-total cases (§ 42-15-60(A), (C)). Waiting period: no compensation for the first seven days in either state; Georgia pays them back if incapacity lasts 21 consecutive days (§ 34-9-220), South Carolina if disability exceeds 14 days (§ 42-9-200). Any dollar figure added must carry its date-of-injury range. Do not quote week counts for the SC foot/leg schedule (§ 42-9-30) — not read this run."
+    },
+    {
+      "surface": "body",
+      "claim": "your claim may even get denied",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 34-9-17; § 34-9-80; § 34-9-82; S.C. Code § 42-9-60; § 42-15-20; § 42-15-40",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-17/",
+      "retrievedAt": "2026-09-24",
+      "note": "Statutory grounds in both states: injury not arising out of and in the course of employment; late notice; late claim; willful misconduct or intoxication/drugs (GA § 34-9-17; SC § 42-9-60). Georgia § 34-9-17(b) creates a rebuttable presumption of causation at 0.08 blood alcohol within three hours or any marijuana/controlled substance within eight hours; do not add this detail unless the post takes up denials."
+    },
+    {
+      "surface": "excerpt",
+      "claim": "why insurers treat soft-tissue injuries with suspicion",
+      "verdict": "drop",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "The body never says this and no primary source supports a rule that insurers treat soft-tissue injuries with suspicion. The excerpt publishes as the Article description in roden_schema_article(); it must describe what the post actually says. Replace with the reporting/filing deadlines or the doctor-choice point the refresh adds."
+    },
+    {
+      "surface": "faq:0",
+      "claim": "When it is work related. If the injury occurred on the job, or because of the job, it will generally be covered. Twisting your ankle on a walk at home is not covered; spraining it on an uneven factory floor at work generally is.",
+      "verdict": "update",
+      "currentValue": "When it is an injury by accident arising out of and in the course of your employment (O.C.G.A. § 34-9-1(4); S.C. Code § 42-1-160(A)): the work has to be what caused it and it has to happen while you are doing your job. Twisting your ankle on a walk at home is not covered; spraining it on an uneven factory floor at work generally is.",
+      "sourceName": "O.C.G.A. § 34-9-1(4); S.C. Code § 42-1-160(A)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "'On the job, or because of the job' is disjunctive; the test is conjunctive. Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:1",
+      "claim": "Work-relatedness. Whether the injury arose on the job or because of the job is the general test, and it is the question that has to be answered before the rest of the claim matters.",
+      "verdict": "update",
+      "currentValue": "Work-relatedness, which both Georgia and South Carolina define as an injury by accident 'arising out of and in the course of' employment (O.C.G.A. § 34-9-1(4); S.C. Code § 42-1-160(A)). Both parts have to be true, and it is the question that has to be answered before the rest of the claim matters.",
+      "sourceName": "O.C.G.A. § 34-9-1(4); S.C. Code § 42-1-160(A)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Same or/and problem as FAQ 1. Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:2",
+      "claim": "Because medical records are vital evidence. Treatment protects your recovery and documents when, where and how the injury happened. Skipping care leaves you without the documentation a claim depends on.",
+      "verdict": "update",
+      "currentValue": "Because medical records are vital evidence, and because the bill is only covered if the right doctor treats you. In Georgia you choose from the employer's posted panel of at least six physicians and may switch once within it without Board approval (O.C.G.A. § 34-9-201); in South Carolina the employer chooses the treating doctor and treatment you arrange on your own may not be paid (S.C. Code § 42-15-60(A); SCWCC). Emergencies are the exception in both states. Treatment protects your recovery and documents when, where and how the injury happened.",
+      "sourceName": "O.C.G.A. § 34-9-201; S.C. Code § 42-15-60(A); SCWCC Injured Worker FAQs",
+      "sourceUrl": "https://wcc.sc.gov/injured-worker-faqs",
+      "retrievedAt": "2026-09-24",
+      "note": "The existing answer is true but omits the rule a sprained-ankle worker most needs. Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:3",
+      "claim": "Yes. If you believe the injury may be work related, report it as soon as possible after it happens. Minor injuries sometimes turn out to be more serious, and a late report gives the insurer room to dispute the connection to work.",
+      "verdict": "update",
+      "currentValue": "Yes, and there is a deadline: in Georgia no compensation is payable unless the employer gets notice within 30 days of the accident (O.C.G.A. § 34-9-80); in South Carolina the limit is 90 days (S.C. Code § 42-15-20). Both statutes excuse a late report only in limited situations, such as the employer already knowing about the accident or not being prejudiced by the delay. Tell a supervisor or manager, not just a co-worker. Minor injuries sometimes turn out to be more serious, and a late report gives the insurer room to dispute the connection to work.",
+      "sourceName": "O.C.G.A. § 34-9-80; S.C. Code § 42-15-20(A)-(B); SCWCC Injured Worker FAQs",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t42c015.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Two different numbers; never collapse them into one. Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:4",
+      "claim": "Yes. The same work-relatedness test covers conditions that develop because of the job over time, not only single accidents. Those claims turn on connecting the condition to your work conditions rather than to one event.",
+      "verdict": "update",
+      "currentValue": "Yes, but under a stricter, separate test. Both states exclude disease from the definition of 'injury' except where it results naturally and unavoidably from the accident, and compensate occupational disease under their own articles. Georgia requires proof of all five elements in O.C.G.A. § 34-9-280(2): a direct causal connection between the work conditions and the disease; that it followed as a natural incident of exposure from the employment; that it is not one the employee had substantial exposure to outside work; that it is not an ordinary disease of life to which the general public is exposed; and that it originated in a risk connected with the employment. South Carolina requires a disease 'due to hazards in excess of those ordinarily incident to employment and ... peculiar to the occupation', proved by a preponderance of the evidence, and excludes ordinary diseases of life, contagious diseases, diseases from outside climatic conditions, and 'chronic skeletal joint diseases' (S.C. Code § 42-11-10). Those claims turn on connecting the condition to the hazards of the particular job rather than to one event.",
+      "sourceName": "O.C.G.A. § 34-9-1(4); § 34-9-280(2); S.C. Code § 42-1-160(A); § 42-11-10",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-8/part-1/section-34-9-280/",
+      "retrievedAt": "2026-09-24",
+      "note": "'The same work-relatedness test' is wrong in both states: occupational disease carries additional statutory elements, and South Carolina expressly excludes chronic skeletal joint diseases, which matters on a page about ankles. If the refresh wants to say gradual joint injuries can still be claimed as repetitive trauma in South Carolina, the only sections verified this run are the timing rules in §§ 42-15-20(C) and 42-15-40; the repetitive-trauma definition itself (§ 42-1-172) was not read and must not be cited. Publishes as FAQPage structured data."
+    }
+  ],
+  "recommendedEdits": [
+    "Stamp both states in the opening: workers' compensation covers an 'injury by accident arising out of and in the course of employment' in Georgia (O.C.G.A. § 34-9-1(4)) and South Carolina (S.C. Code § 42-1-160(A)); replace 'on the job, or because of the job' in the body, FAQ 1 and FAQ 2 with that conjunctive test plus a one-line plain-English gloss.",
+    "Medical-treatment section: add the authorized-provider rule per state — Georgia: choose from the employer's posted Panel of Physicians (at least six, one orthopedic surgeon), one change within the panel without Board approval, any doctor if no panel is posted, emergencies excepted (O.C.G.A. § 34-9-201); South Carolina: the employer chooses the treating doctor and self-arranged care may go unpaid (S.C. Code § 42-15-60(A); SCWCC). Replace 'a well-qualified provider' accordingly, and mirror the change in FAQ 3.",
+    "Reporting section: turn 'always wise' into the deadline — 30 days in Georgia (O.C.G.A. § 34-9-80), 90 days in South Carolina (S.C. Code § 42-15-20); note the limited excuses (employer already knew, no prejudice, incapacity) and that telling a co-worker may not count. Mirror in FAQ 4.",
+    "Filing section: replace 'There are deadlines to file claims' with one year from injury in Georgia, filed with the State Board (O.C.G.A. § 34-9-82; WC-14) and two years in South Carolina, filed with the Commission (S.C. Code § 42-15-40; Form 50). Keep the reporting clock and the filing clock as two separate sentences.",
+    "Attorney section (optional, one sentence): name the benefit types — medical care, temporary total disability at two-thirds of the average weekly wage after a seven-day waiting period, temporary partial disability, permanent partial disability — citing O.C.G.A. §§ 34-9-200, 34-9-220, 34-9-261 and S.C. Code §§ 42-15-60, 42-9-200, 42-9-10. If any dollar cap is added, attach its date-of-injury range ($800/week Georgia TTD for injuries on or after July 1, 2023; $1,189.94/week South Carolina for injuries on or after January 1, 2026).",
+    "Optional 'no-fault' sentence if wanted: the worker does not have to prove the employer did anything wrong; compensation is barred only for the worker's own willful misconduct or intoxication (O.C.G.A. § 34-9-17; S.C. Code § 42-9-60). Do not phrase it as 'always covered'.",
+    "FAQ 5 (occupational illness): replace 'The same work-relatedness test' with the separate occupational-disease standard — Georgia's five elements under O.C.G.A. § 34-9-280(2) and South Carolina's 'hazards in excess of those ordinarily incident to employment ... peculiar to the occupation' test with its exclusion of ordinary diseases of life and chronic skeletal joint diseases (S.C. Code § 42-11-10).",
+    "Excerpt: delete 'and why insurers treat soft-tissue injuries with suspicion' (unsupported, not in the body; it publishes as the Article schema description) and describe the deadlines/doctor-choice content instead.",
+    "Keep the home-walk versus factory-floor illustration and the 'threshold requirement' sentence as written.",
+    "Attribution: once South Carolina rules are stamped, the reviewer/byline for SC commentary must be an SC-barred attorney (Graeham C. Gillin by default); Eric Roden may carry the Georgia lines only.",
+    "Keep the post short: the four stamps above (test, doctor, report, file) fit in one sentence pair each; do not add the TPD/PPD mechanics or week counts."
+  ],
+  "statuteCitations": [
+    {
+      "section": "O.C.G.A. § 34-9-1",
+      "name": "Definitions — paragraph (4): 'injury' means only injury by accident arising out of and in the course of the employment; excludes disease except where it results naturally and unavoidably from the accident; includes aggravation of a preexisting condition while the aggravation causes the disability",
+      "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-1/"
+    },
+    {
+      "section": "O.C.G.A. § 34-9-17",
+      "name": "Grounds for denial of compensation — willful misconduct, intoxication (0.08 within three hours) or marijuana/controlled substance (within eight hours) with rebuttable presumptions",
+      "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-17/"
+    },
+    {
+      "section": "O.C.G.A. § 34-9-80",
+      "name": "Notice of accident to employer — immediately or as soon as practicable; no compensation payable unless notice within 30 days, with exceptions (incapacity, fraud, employer knowledge, reasonable excuse without prejudice)",
+      "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-3/part-1/section-34-9-80/"
+    },
+    {
+      "section": "O.C.G.A. § 34-9-82",
+      "name": "Time for filing claim — barred unless filed with the Board within one year after injury; one year after last remedial treatment or two years after last weekly payment where benefits were furnished",
+      "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-3/part-1/section-34-9-82/"
+    },
+    {
+      "section": "O.C.G.A. § 34-9-200",
+      "name": "Medical care — reasonably required treatment prescribed by a licensed physician; 400-week maximum for non-catastrophic injuries on or after July 1, 2013",
+      "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-6/part-1/section-34-9-200/"
+    },
+    {
+      "section": "O.C.G.A. § 34-9-201",
+      "name": "Selection of physician — Panel of Physicians of at least six (one orthopedic surgeon, not more than two industrial clinics), employee's choice from the panel, one change without Board authorization, any physician if the employer fails to post/explain the panel, emergency exception",
+      "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-6/part-1/section-34-9-201/"
+    },
+    {
+      "section": "O.C.G.A. § 34-9-220",
+      "name": "Waiting period — no compensation for the first seven calendar days of incapacity (medical excepted); paid if incapacity lasts 21 consecutive days",
+      "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-6/part-2/section-34-9-220/"
+    },
+    {
+      "section": "O.C.G.A. § 34-9-261",
+      "name": "Temporary total disability — two-thirds of the average weekly wage, max $800/week (injuries on or after July 1, 2023, HB 480), min $50, 400 weeks; open-ended for catastrophic injuries",
+      "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-7/section-34-9-261/"
+    },
+    {
+      "section": "O.C.G.A. § 34-9-262",
+      "name": "Temporary partial disability — two-thirds of the wage difference, max $533/week, 350 weeks (verified in facts-1697 on 2026-09-23; not re-read today)",
+      "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-7/section-34-9-262/"
+    },
+    {
+      "section": "O.C.G.A. § 34-9-280",
+      "name": "Occupational disease defined — arises out of and in the course of the particular trade; employee must prove all five elements (direct causal connection; natural incident of exposure; no substantial exposure outside employment; not an ordinary disease of life; origin in a risk connected with the employment)",
+      "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-8/part-1/section-34-9-280/"
+    },
+    {
+      "section": "S.C. Code § 42-1-160",
+      "name": "'Injury' and 'personal injury' — injury by accident arising out of and in the course of employment; disease excluded except as a natural and unavoidable result of the accident or under Chapter 11; mental-injury limits",
+      "url": "https://www.scstatehouse.gov/code/t42c001.php"
+    },
+    {
+      "section": "S.C. Code § 42-9-10",
+      "name": "Total disability — 66 2/3% of average weekly wages, maximum tied to the state average weekly wage, 500 weeks",
+      "url": "https://www.scstatehouse.gov/code/t42c009.php"
+    },
+    {
+      "section": "S.C. Code § 42-9-20",
+      "name": "Partial disability — 66 2/3% of the difference between pre- and post-injury wages, max 340 weeks (verified in facts-1697 on 2026-09-23; not re-read today)",
+      "url": "https://www.scstatehouse.gov/code/t42c009.php"
+    },
+    {
+      "section": "S.C. Code § 42-9-30",
+      "name": "Schedule of scheduled-member awards including foot and leg (cited in facts-1697; the week counts were not read this run and must not be quoted)",
+      "url": "https://www.scstatehouse.gov/code/t42c009.php"
+    },
+    {
+      "section": "S.C. Code § 42-9-60",
+      "name": "No compensation where the injury was occasioned by the employee's intoxication or wilful intention to injure or kill himself or another; burden on the party claiming it",
+      "url": "https://www.scstatehouse.gov/code/t42c009.php"
+    },
+    {
+      "section": "S.C. Code § 42-9-200",
+      "name": "Dates compensation commences — no compensation for the first seven calendar days of disability (medical excepted); paid from the date of disability if disability exceeds fourteen days",
+      "url": "https://www.scstatehouse.gov/code/t42c009.php"
+    },
+    {
+      "section": "S.C. Code § 42-11-10",
+      "name": "Occupational disease defined — arising out of and in the course of employment, due to hazards in excess of those ordinarily incident to employment and peculiar to the occupation; excludes climatic, contagious and ordinary diseases of life and chronic skeletal joint diseases",
+      "url": "https://www.scstatehouse.gov/code/t42c011.php"
+    },
+    {
+      "section": "S.C. Code § 42-15-20",
+      "name": "Notice of accident to employer — immediately or as soon as practicable; no compensation unless notice within ninety days, absent reasonable excuse and no prejudice; repetitive-trauma notice runs from discovery",
+      "url": "https://www.scstatehouse.gov/code/t42c015.php"
+    },
+    {
+      "section": "S.C. Code § 42-15-40",
+      "name": "Time for filing claim — barred unless filed with the Commission within two years after the accident; occupational disease from definitive diagnosis; repetitive trauma two years from knowledge, seven-year outer limit",
+      "url": "https://www.scstatehouse.gov/code/t42c015.php"
+    },
+    {
+      "section": "S.C. Code § 42-15-60",
+      "name": "Medical treatment — employer provides care for up to ten weeks plus such additional time as the Commission judges will lessen disability; employer may furnish an attending physician 'and the employee shall accept'; refusal suspends compensation unless justified; emergency care by another physician paid if ordered; lifetime care in permanent-total cases",
+      "url": "https://www.scstatehouse.gov/code/t42c015.php"
+    }
+  ],
+  "authoritativeLinks": [
+    {
+      "name": "Georgia State Board of Workers' Compensation — Workers' Compensation Law FAQs (30-day report, one-year claim, six-doctor panel, $800 TTD / $533 TPD for accidents on or after July 1, 2023, 7-day waiting period)",
+      "url": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs"
+    },
+    {
+      "name": "South Carolina Workers' Compensation Commission — Injured Worker FAQs ('your employer has the right to choose your treating doctor'; report within 90 days; Form 50 within two years; compensation begins the 8th calendar day)",
+      "url": "https://wcc.sc.gov/injured-worker-faqs"
+    },
+    {
+      "name": "South Carolina Workers' Compensation Commission — Compensation Rates (max $1,189.94/week effective 1/1/2026; $1,134.43 for 2025; $1,093.67 for 2024)",
+      "url": "https://wcc.sc.gov/claims/compensation-rates"
+    },
+    {
+      "name": "2025 Code of Georgia, Title 34 Chapter 9 (Justia) — index for the year-less section URLs above",
+      "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/"
+    },
+    {
+      "name": "South Carolina Code of Laws, Title 42 (Workers' Compensation) — scstatehouse.gov",
+      "url": "https://www.scstatehouse.gov/code/title42.php"
+    }
+  ]
+}

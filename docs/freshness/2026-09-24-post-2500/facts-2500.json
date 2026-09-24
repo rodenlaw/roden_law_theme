@@ -1,0 +1,281 @@
+{
+  "postId": 2500,
+  "slug": "what-to-do-if-your-georgia-police-report-is-wrong-or-has-mistakes",
+  "verifiedAt": "2026-09-24",
+  "jurisdiction": "georgia-only",
+  "siblingPack": "run-1679/facts-1679.json (verified 2026-09-23; Georgia sources reused here, South Carolina material deliberately excluded)",
+  "verifiedClaims": [
+    {
+      "surface": "body",
+      "claim": "Police reports are required in Georgia in the following circumstances:",
+      "verdict": "update",
+      "currentValue": "Georgia law requires the driver to notify law enforcement of a crash in the following circumstances (O.C.G.A. § 40-6-273):",
+      "sourceName": "O.C.G.A. § 40-6-273 (Justia, 2025 Code of Georgia)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-12/section-40-6-273/",
+      "retrievedAt": "2026-09-24",
+      "note": "The statute imposes a duty on the driver to give notice 'immediately, by the quickest means of communication' to the local police department (inside a municipality) or the county sheriff / nearest state patrol office (outside one). It does not say a 'police report is required'; the report is what the responding officer produces. Reframe as the driver's notice duty and cite the section — the post currently cites no statute."
+    },
+    {
+      "surface": "body",
+      "claim": "An injury or fatality resulted from the crash",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 40-6-273",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-12/section-40-6-273/",
+      "retrievedAt": "2026-09-24",
+      "note": "Statute: 'an accident resulting in injury to or death of any person'."
+    },
+    {
+      "surface": "body",
+      "claim": "There was property damage estimated at $500 or more",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 40-6-273",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-12/section-40-6-273/",
+      "retrievedAt": "2026-09-24",
+      "note": "Statute: 'property damage to an apparent extent of $500.00 or more'. The post's '$500 or more' is correct (the sibling post's 'exceeding $500' was the error). Optional tightening: 'apparent property damage of $500 or more'."
+    },
+    {
+      "surface": "body",
+      "claim": "Your insurance company requires a police report",
+      "verdict": "update",
+      "currentValue": "Your auto policy may separately require you to report the crash to your insurer, and many insurers ask for the police report when you make a claim — that is a policy condition, not a legal reporting duty.",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "Listed under 'Police reports are required in Georgia', which implies a legal requirement. No Georgia statute conditions reporting on an insurer's demand; this is a contractual matter. Keep as a practical point but move it out of the legal list or label it as a policy condition."
+    },
+    {
+      "surface": "body",
+      "claim": "There are generally three types of errors that you might find on your police report, including:",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "Editorial taxonomy (factual / statement / disputed); no legal rule or figure asserted."
+    },
+    {
+      "surface": "body",
+      "claim": "Disputed errors are subjective statements or information that was recorded in the police report. These types of errors are probably the hardest to get removed. However, even if you cannot get them removed, you may be able to get them amended.",
+      "verdict": "update",
+      "currentValue": "Disputed errors are the officer's conclusions — who was at fault, what a contributing factor was. These are the hardest to change, because only the investigating officer and agency can amend the report, and they will not rewrite a conclusion simply because a driver disagrees with it.",
+      "sourceName": "GDOT Crash Data & Reporting page (custodian only; no citizen amendment procedure); Savannah Police Department Records Unit page (no amendment procedure)",
+      "sourceUrl": "https://www.dot.ga.gov/GDOT/pages/CrashReporting.aspx",
+      "retrievedAt": "2026-09-24",
+      "note": "Neither GDOT (state custodian of the GEARS crash database) nor Savannah PD's records page describes any procedure by which a party can have a report amended. Sibling pack reached the same finding on 2026-09-23. 'You may be able to get them amended' is unsupported as a right; hedge as agency discretion."
+    },
+    {
+      "surface": "body",
+      "claim": "This is because Georgia follows a modified comparative fault system.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33 (Justia, 2025 Code of Georgia); writer-profile jurisdiction table",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "Add the citation inline: '(O.C.G.A. § 51-12-33)'."
+    },
+    {
+      "surface": "body",
+      "claim": "If you are deemed to be 50 percent or more at <a href=\"https://rodenlaw.com/blog/georgia-comparative-negligence-law/\" rel=\"\">fault for an accident in Georgia</a>, you cannot recover any of your damages. Even if you are assessed with less than 50 percent of the fault, any compensation you receive will be reduced.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(a), (g)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "§ 51-12-33(g): 'the plaintiff shall not be entitled to receive any damages if the plaintiff is 50 percent or more responsible for the injury or damages claimed'; (a): damages reduced 'in proportion to his or her percentage of fault'. Matches the profile table (recover if less than 50% at fault). Internal link resolves to the live comparative-negligence post."
+    },
+    {
+      "surface": "body",
+      "claim": "An example of this is if you are assessed with 20 percent of the fault when you were actually not at fault at all. If you were awarded $100,000 for your damages in that situation, you would only get $80,000. That is $20,000 lost on an error.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(a)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "Arithmetic is correct under proportional reduction: $100,000 × (1 − 0.20) = $80,000. Illustrative, not a statistic."
+    },
+    {
+      "surface": "body",
+      "claim": "Get a Copy of Your Savannah Police Report",
+      "verdict": "update",
+      "currentValue": "Get a Copy of Your Georgia Crash Report",
+      "sourceName": "GDOT Crash Data & Reporting page",
+      "sourceUrl": "https://www.dot.ga.gov/GDOT/pages/CrashReporting.aspx",
+      "retrievedAt": "2026-09-24",
+      "note": "The post's title and reach are statewide ('throughout Georgia'), but the how-to section covers only Savannah PD. Broaden the heading and add the statewide route (GDOT / BuyCrash) while keeping the Savannah specifics as the local example."
+    },
+    {
+      "surface": "body",
+      "claim": "The first step is to <a href=\"https://savannahpd.org/reports/\" target=\"_blank\" rel=\"noopener\">request a copy of your police report</a> right away. You can do this in person, by phone, by fax, snail mail or by email.",
+      "verdict": "update",
+      "currentValue": "The first step is to request a copy of your crash report right away. Statewide, GDOT is the custodian of Georgia crash reports; you can buy a copy through BuyCrash or by mailing GDOT's Individual Crash Report Request form ($5 per report, $2 more for a certified copy), and anyone named in the report — a driver, an injured person, a witness, an insurer or their attorney — is entitled to it under O.C.G.A. § 50-18-72(a)(5). If Savannah Police investigated, the department's Records Unit (602 East Lathrop Avenue) also fills requests in person, by phone (912-651-3617), by fax (912-525-1748), by email (SPDrecords@savannahga.gov) or by mail with a self-addressed stamped envelope, usually within three business days; fees follow the Georgia Open Records Act and emailed reports carry no added charge.",
+      "sourceName": "Savannah Police Department — Records / Reports page; GDOT Crash Data & Reporting page; GDOT Individual Crash Report Request form; O.C.G.A. § 50-18-72(a)(5)",
+      "sourceUrl": "https://savannahpd.org/reports/",
+      "retrievedAt": "2026-09-24",
+      "note": "Savannah PD page (retrieved today) confirms all five methods the post lists — in person (Records Unit, 602 East Lathrop Ave, Mon–Fri 8–5), phone 912-651-3617, fax 912-525-1748, email SPDrecords@savannahga.gov, mail to PO Box 8032, Savannah GA 31412 — plus 'Accident reports can also be obtained by going to www.buycrash.com' and 'It may take up to 3 business days'. The five-method sentence is accurate; the update adds the statewide GDOT route so the section is not Savannah-only. GDOT fees and § 50-18-72(a)(5) reused from the sibling pack (GDOT request form, verified 2026-09-23)."
+    },
+    {
+      "surface": "body",
+      "claim": "The longer you wait to fix a report with errors on it, the more likely it is the officer who documented your report may not remember details about it.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "Practical advice; no legal rule or figure asserted."
+    },
+    {
+      "surface": "body",
+      "claim": "Usually, providing documents with the correct details is enough to fix errors. If the license plate of your vehicle was documented incorrectly, for example, providing a copy of your current registration should be enough to get this changed.",
+      "verdict": "update",
+      "currentValue": "For clerical errors, contacting the investigating officer with a document that shows the correct detail — your registration for a wrong plate number, your license for a misspelled name — is usually all it takes; the officer can then issue a corrected or supplemental report.",
+      "sourceName": "GDOT Crash Data & Reporting page; Savannah PD Records page (neither publishes a correction procedure)",
+      "sourceUrl": "https://www.dot.ga.gov/GDOT/pages/CrashReporting.aspx",
+      "retrievedAt": "2026-09-24",
+      "note": "No official Georgia source describes a correction procedure, so 'should be enough to get this changed' cannot be stated as a rule. Keep the practical guidance but route it through the investigating officer/agency — the only party that can amend a report (sibling pack finding) — rather than implying a records desk will edit it."
+    },
+    {
+      "surface": "body",
+      "claim": "Contact the officer listed on the report and politely explain the error.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "Consistent with the sibling finding that only the investigating agency can change the report."
+    },
+    {
+      "surface": "body",
+      "claim": "If they will not change the statement, you can write your own account about the accident. Keep it concise and make sure it is clear and easy to read. Then sign, date it, and send it with a request to have your amendment attached to the original report.",
+      "verdict": "update",
+      "currentValue": "If they will not change the statement, write your own account of the crash — concise, factual, signed and dated — and give it to your attorney. Whether the agency will attach a driver's statement to the official report is entirely at its discretion; what your statement reliably does is put your version in front of the insurance adjuster and, if it comes to that, the court.",
+      "sourceName": "GDOT Crash Data & Reporting page; Savannah PD Records page; sibling pack facts-1679 (2026-09-23) 'supplemental statement attached to the report' — drop",
+      "sourceUrl": "https://www.dot.ga.gov/GDOT/pages/CrashReporting.aspx",
+      "retrievedAt": "2026-09-24",
+      "note": "The right to have a party's 'amendment attached to the original report' is not verifiable against any primary Georgia source; the sibling pack dropped the same claim yesterday. Not dropped outright here because the surrounding advice (write a factual account, give it to your lawyer) is sound and the post is built around it — hedge the attachment as discretionary and redirect the statement's purpose to the claim."
+    },
+    {
+      "surface": "body",
+      "claim": "When you write your statement, be sure that it is not just your opinion. Provide the facts without rambling – be clear, be brief and give details. If you have additional supporting evidence, like photos or dash cam footage, work with your attorney on the best way to send this amendment.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "Practical drafting advice. Replace the word 'amendment' with 'statement' for consistency with the hedge above."
+    },
+    {
+      "surface": "body",
+      "claim": "Our experienced <a href=\"https://rodenlaw.com/practice-areas/car-accident-lawyers/\" rel=\"\">car crash attorneys in Savannah</a> have answers",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "rodenlaw.com practice-area page (live)",
+      "sourceUrl": "https://rodenlaw.com/practice-areas/car-accident-lawyers/",
+      "retrievedAt": "2026-09-24",
+      "note": "Internal link is the canonical car-accident pillar slug from the writer profile."
+    },
+    {
+      "surface": "body",
+      "claim": "<a href=\"tel:18447378587\" rel=\"\">1 (844) RESULTS</a>",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Theme template tel:18447378587; keypad R-E-S-U-L-T-S = 737-8587; live page hrefs checked 2026-09-24",
+      "sourceUrl": "https://rodenlaw.com/blog/what-to-do-if-your-georgia-police-report-is-wrong-or-has-mistakes/",
+      "retrievedAt": "2026-09-24",
+      "note": "Both in-body tel: hrefs dial 844-737-8587, which matches 1-844-RESULTS. No transposed-number fix needed on this post (unlike the sibling)."
+    },
+    {
+      "surface": "body",
+      "claim": "there are <a href=\"https://rodenlaw.com/blog/contingency-fee-system/\" rel=\"\">no upfront costs or fees</a> to pay",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "rodenlaw.com contingency-fee post (live)",
+      "sourceUrl": "https://rodenlaw.com/blog/contingency-fee-system/",
+      "retrievedAt": "2026-09-24",
+      "note": "Link resolves; consistent with the firm's contingency-fee page."
+    },
+    {
+      "surface": "excerpt",
+      "claim": "A wrong police report can sink a claim. How to get a Georgia crash report corrected, and what to do when the officer will not amend it.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "Already hedged ('when the officer will not amend it'); no rule or figure asserted. Published as the Article description via roden_schema_article()."
+    },
+    {
+      "surface": "faq:0",
+      "claim": "Because insurers rely heavily on the report. If the details are wrong it could cause problems for any claim you pursue, particularly where the error touches on who caused the collision.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "Practical description; no legal rule asserted. Consistent with sibling finding that the report is persuasive but not binding on insurers."
+    },
+    {
+      "surface": "faq:1",
+      "claim": "Factual mistakes such as wrong vehicle or location details, facts from your statement recorded incorrectly or left out entirely, and disputed errors where the officer's conclusion is contested rather than simply mistaken.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "Mirrors the body taxonomy; no rule or figure."
+    },
+    {
+      "surface": "faq:2",
+      "claim": "Obtain a copy first, then contact the reporting agency with the specific correction and any supporting evidence. Factual errors are usually easier to amend than an officer's stated conclusion about fault.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "GDOT Crash Data & Reporting page; Savannah PD Records page",
+      "sourceUrl": "https://savannahpd.org/reports/",
+      "retrievedAt": "2026-09-24",
+      "note": "Already framed as contacting the investigating agency and as 'usually' — consistent with the agency-discretion finding. No change needed; also renders into FAQPage schema."
+    },
+    {
+      "surface": "faq:3",
+      "claim": "Because Georgia applies a modified comparative negligence rule, so how fault is apportioned directly reduces what you recover. An error that inflates your share costs you real money.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(a), (g)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "Optional: append '(O.C.G.A. § 51-12-33; no recovery at 50 percent or more)'. Renders into FAQPage schema."
+    },
+    {
+      "surface": "faq:4",
+      "claim": "Reporting is required in defined circumstances and is advisable in almost all others. Without a report you have no neutral record of the collision to support your claim when accounts later diverge.",
+      "verdict": "update",
+      "currentValue": "Georgia law requires the driver to notify police immediately after any crash involving injury, death, or apparent property damage of $500 or more (O.C.G.A. § 40-6-273), and reporting is advisable in almost all others. Without a report you have no neutral record of the collision to support your claim when accounts later diverge.",
+      "sourceName": "O.C.G.A. § 40-6-273",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-12/section-40-6-273/",
+      "retrievedAt": "2026-09-24",
+      "note": "'Defined circumstances' is accurate but empty; the FAQ answer is published as FAQPage structured data and should carry the threshold and citation. Nothing in the current text is wrong."
+    }
+  ],
+  "recommendedEdits": [
+    "Reporting section: retitle the list as the driver's notice duty under O.C.G.A. § 40-6-273 (injury, death, or apparent property damage of $500 or more; notify local police inside a municipality, otherwise the county sheriff or nearest state patrol office) and cite the section inline — the post currently cites no statute.",
+    "Move 'Your insurance company requires a police report' out of the legal-requirement list, or relabel it as a policy condition rather than a Georgia reporting requirement.",
+    "Add '(O.C.G.A. § 51-12-33)' after 'Georgia follows a modified comparative fault system'; the 50-percent bar and proportional reduction are already stated correctly.",
+    "Broaden 'Get a Copy of Your Savannah Police Report' to the statewide route: GDOT is the custodian (GEARS); buy through BuyCrash or GDOT's Individual Crash Report Request form ($5; +$2 certified); anyone named in the report is entitled to a copy under O.C.G.A. § 50-18-72(a)(5). Keep the Savannah PD Records Unit as the local example — its five request methods are confirmed (in person at 602 East Lathrop Ave, phone 912-651-3617, fax 912-525-1748, email SPDrecords@savannahga.gov, mail with SASE; up to three business days).",
+    "Hedge every statement that an error 'will' or 'should' be changed or amended: only the investigating officer and agency can amend a Georgia crash report, and no official source describes a citizen correction procedure. 'You may be able to get them amended' -> agency discretion; 'should be enough to get this changed' -> contact the investigating officer with the document.",
+    "Rewrite the 'send it with a request to have your amendment attached to the original report' bullet: attaching a driver's statement is at the agency's discretion; the statement's reliable use is with your attorney, the adjuster and, if needed, the court. Change 'send this amendment' to 'send this statement' in the following bullet.",
+    "faq:4: replace 'required in defined circumstances' with the § 40-6-273 threshold and citation so the FAQPage schema carries the actual rule.",
+    "Optional, faq:3: append the § 51-12-33 citation and the 50-percent bar.",
+    "Do not add South Carolina law, a statute of limitations, or any statistic — none is claimed in the post and none in data/statistics.json applies. Both tel: hrefs already dial 844-737-8587; leave them."
+  ],
+  "statuteCitations": [
+    { "section": "O.C.G.A. § 40-6-273", "name": "Duty to report accident resulting in injury, death, or property damage", "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-12/section-40-6-273/" },
+    { "section": "O.C.G.A. § 51-12-33", "name": "Reduction and apportionment of award or bar of recovery according to percentage of fault of parties and nonparties", "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/" },
+    { "section": "O.C.G.A. § 50-18-72", "name": "Open Records Act — exemptions; accident reports available on written statement of need, subsection (a)(5)", "url": "https://law.justia.com/codes/georgia/title-50/chapter-18/article-4/section-50-18-72/" }
+  ],
+  "authoritativeLinks": [
+    { "name": "Savannah Police Department — Records Unit / Reports (in person, phone, fax, email, mail; BuyCrash for accident reports; up to 3 business days)", "url": "https://savannahpd.org/reports/" },
+    { "name": "GDOT — Crash Data & Reporting (designated custodian of Georgia crash reports, GEARS; BuyCrash and mail request)", "url": "https://www.dot.ga.gov/GDOT/pages/CrashReporting.aspx" },
+    { "name": "GDOT — Individual Crash Report Request form (statement of need under § 50-18-72(a)(5); $5 per report, +$2 certified)", "url": "https://www.dot.ga.gov/DriveSmart/CrashReporting/request_form.pdf" },
+    { "name": "BuyCrash (LexisNexis) — Georgia crash report purchase", "url": "https://buycrash.lexisnexisrisk.com/ui/home" }
+  ]
+}
