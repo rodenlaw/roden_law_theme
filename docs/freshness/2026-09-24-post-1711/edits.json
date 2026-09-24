@@ -1,0 +1,188 @@
+[
+ {
+  "id": "1711",
+  "surface": "content",
+  "before": "<p>Both Georgia and South Carolina allow specific categories of lien holders to recover money from personal injury settlements. Understanding which liens apply, how they work under each state's laws, and how to negotiate them down is critical to protecting your compensation. For background on lien law generally, see the <a href=\"https://www.law.cornell.edu/wex/lien\" target=\"_blank\" rel=\"noopener noreferrer\">Cornell Law Institute's overview of liens</a>.</p>",
+  "after": "<p>Both Georgia and South Carolina allow specific categories of lien holders to recover money from personal injury settlements. Understanding which liens apply, how they work under each state's laws, and how to negotiate them down is critical to protecting your compensation. For background on lien law generally, see the <a href=\"https://www.law.cornell.edu/wex/lien\" target=\"_blank\" rel=\"noopener noreferrer\">Legal Information Institute's overview of liens</a>.</p>"
+ },
+ {
+  "id": "1711",
+  "surface": "content",
+  "before": "<p>Liens can come from hospitals, health insurers, Medicare, Medicaid, the VA, workers' compensation carriers, and even your own attorney. In both Georgia and South Carolina, lien holders can block the distribution of settlement funds until their claims are resolved.</p>",
+  "after": "<p>Liens can come from hospitals, health insurers, Medicare, Medicaid, the VA, workers' compensation carriers, and even your own attorney. In both states a valid lien follows the settlement money, and your attorney must hold disputed funds in trust until it is resolved.</p>"
+ },
+ {
+  "id": "1711",
+  "surface": "content",
+  "before": "<p>Medical provider liens are among the most common liens in personal injury cases. Hospitals, physicians, ambulance services, and other treatment providers can file liens against your settlement to recover the cost of care they provided for your injuries.</p>",
+  "after": "<p>Medical provider liens are among the most common liens in personal injury cases. Hospitals, physicians, and other treatment providers can claim part of your settlement to recover the cost of care they provided for your injuries.</p>"
+ },
+ {
+  "id": "1711",
+  "surface": "content",
+  "before": "<p>Under <strong>O.C.G.A. &sect; 44-14-470</strong> (Georgia's Hospital Lien Act), any hospital that treats an injured person has a lien on the proceeds of any claim or settlement arising from that injury. The lien attaches to the net recovery (after attorney fees) and covers reasonable charges for treatment, care, and maintenance.</p>\n\n<p>To perfect the lien, the hospital must file a verified statement with the superior court clerk in the county where the hospital is located within <strong>75 days</strong> of patient discharge. The lien must include the patient's name, admission date, the liable party's identity, and the amount claimed. Georgia hospital liens <strong>do not apply to workers' compensation claims</strong> — only to third-party liability recoveries. The lien also cannot include charges for pre-existing conditions treated during the same hospital stay.</p>",
+  "after": "<p>Under <a href=\"https://law.justia.com/codes/georgia/title-44/chapter-14/article-8/part-8/section-44-14-470/\"><strong>O.C.G.A. &sect; 44-14-470</strong></a>, a hospital, nursing home, or physician, chiropractic or burn-care practice that treats you has a lien on your claim for the reasonable charges for that care, subordinate to your attorney's lien.</p>\n\n<p>To perfect it, the provider must give written notice at least <strong>15 days</strong> before filing a verified statement with the superior court clerk — within <strong>75 days</strong> after discharge for hospitals, or <strong>90 days</strong> after first treatment for physician and chiropractic practices. Since July 1, 2023, the lien is unenforceable unless the provider first billed your health insurer. Georgia hospital liens <strong>do not apply to workers' compensation claims</strong> — only to third-party liability recoveries — and cannot include charges for unrelated conditions.</p>"
+ },
+ {
+  "id": "1711",
+  "surface": "content",
+  "before": "<p>South Carolina's hospital lien statute, <strong>S.C. Code &sect; 44-63-10</strong> through &sect; 44-63-80, grants hospitals a lien on any third-party recovery for the reasonable and necessary charges of hospital care. The hospital must file notice within <strong>90 days</strong> of discharge and notify the injured person's attorney and the liable party or insurer. Both states also allow ambulance services and emergency medical providers to file similar liens.</p>",
+  "after": "<p><strong>South Carolina has no hospital-lien statute.</strong> A hospital or doctor there cannot file a lien against your claim; its right to be paid rests on your contract with it, including any assignment of benefits or letter of protection you signed, and is enforced like any other bill. The claims that do reach a South Carolina settlement are health-insurer subrogation, Medicaid, Medicare and workers' compensation, each covered below.</p>"
+ },
+ {
+  "id": "1711",
+  "surface": "content",
+  "before": "<p>Individual physicians in both states can also assert liens, typically through contractual agreements where the doctor agrees to wait for payment until the case resolves. Because these are contractual rather than statutory liens, they tend to be more negotiable than hospital liens. The enforceability of a physician lien depends on the specific language of the signed agreement and whether the provider followed proper procedures.</p>",
+  "after": "<p>In Georgia, physician and chiropractic practices hold the same statutory lien as hospitals, under the 90-day rule above. In South Carolina, a doctor's claim is contractual — typically a letter of protection under which the doctor agrees to wait for payment until the case resolves — and contractual claims tend to be more negotiable than statutory liens. The enforceability of a physician lien depends on the specific language of the signed agreement and whether the provider followed proper procedures.</p>"
+ },
+ {
+  "id": "1711",
+  "surface": "content",
+  "before": "<p>If your health insurance company paid for treatment related to your injury, it almost certainly has a right to recover those payments from your settlement. This right is called <strong>subrogation</strong>, and it functions much like a lien.</p>",
+  "after": "<p>If your health insurer paid for injury-related treatment, it may have a right to be reimbursed from your settlement, within statutory limits in both states. This right is called <strong>subrogation</strong>, and it functions much like a lien.</p>"
+ },
+ {
+  "id": "1711",
+  "surface": "content",
+  "before": "<p>Georgia follows the <strong>\"made whole\" doctrine</strong>: a health insurer cannot exercise subrogation rights unless the injured person has been fully compensated for all losses. If your settlement does not fully cover your medical bills, lost wages, and pain and suffering, the insurer's subrogation claim may be reduced or eliminated.</p>\n\n<p>However, many health insurance policies include explicit language that overrides the made whole doctrine. ERISA-governed employer health plans can also preempt it under federal law, giving the insurer first-priority reimbursement regardless of whether you have been fully compensated.</p>",
+  "after": "<p>Georgia codifies the <strong>\"made whole\" doctrine</strong> in O.C.G.A. &sect; 33-24-56.1: a health or disability insurer may be reimbursed only if your recovery exceeds all of your economic and noneconomic losses, and even then its claim is reduced by a pro rata share of your attorney's fees and expenses. If your settlement does not fully cover your medical bills, lost wages, and pain and suffering, the insurer has no right of reimbursement.</p>\n\n<p>A Georgia-regulated policy cannot contract around this rule. The exceptions are plans state law cannot reach: self-funded employer (ERISA) plans, federal-employee plans, Medicare, Medicaid and TRICARE. A self-funded ERISA plan's own terms control, but it can reach only the settlement fund itself.</p>"
+ },
+ {
+  "id": "1711",
+  "surface": "content",
+  "before": "<p>South Carolina also recognizes the made whole doctrine, with the same limitation: contractual language and ERISA preemption can override it. The type of health insurance you carry — private, employer-sponsored, ERISA, or government — plays a major role in determining how much of your settlement a health insurer can claim.</p>",
+  "after": "<p>South Carolina's protection is statutory. Under <a href=\"https://www.scstatehouse.gov/code/t38c071.php\">S.C. Code &sect; 38-71-190</a>, a health insurer may subrogate only if the policy provides for it and only up to what it paid, must pay its share of fees and costs, and can be barred by the Director of Insurance from inequitable subrogation. The type of health insurance you carry — private, employer-sponsored, ERISA, or government — plays a major role in determining how much of your settlement a health insurer can claim.</p>"
+ },
+ {
+  "id": "1711",
+  "surface": "content",
+  "before": "<p>Government liens are the most powerful and least negotiable category of liens in personal injury cases. Federal law gives Medicare, Medicaid, and the Veterans Administration priority reimbursement rights that override most state protections.</p>",
+  "after": "<p>Government liens are the most powerful and least negotiable category of liens in personal injury cases. Federal law gives Medicare, Medicaid, and the Department of Veterans Affairs (VA) recovery rights that state law cannot cut off, although federal law also caps what Medicaid can take.</p>"
+ },
+ {
+  "id": "1711",
+  "surface": "content",
+  "before": "<p>Under the <strong>Medicare Secondary Payer Act (42 U.S.C. &sect; 1395y(b))</strong>, Medicare is entitled to reimbursement from any settlement that includes compensation for medical expenses Medicare paid. This is a federal statutory lien that takes priority over state lien laws and cannot be waived.</p>\n\n<p>Medicare's lien applies to <strong>conditional payments</strong> — bills Medicare paid on the assumption that no other party was liable. Once a settlement is reached, Medicare calculates its total conditional payments and demands reimbursement. Failing to satisfy the lien can expose both the injury victim and the attorney to double damages. The amounts are often inflated or inaccurate, and experienced attorneys routinely challenge them to achieve significant reductions.</p>",
+  "after": "<p>Under the <strong>Medicare Secondary Payer Act (<a href=\"https://www.law.cornell.edu/uscode/text/42/1395y\">42 U.S.C. &sect; 1395y(b)</a>)</strong>, Medicare must be repaid from any liability settlement, judgment or award, whether or not it mentions medical expenses. This federal right overrides state lien and made-whole rules and can be reduced, waived or compromised only through Medicare's own procedures; CMS does not pursue physical-trauma liability settlements of $750 or less.</p>\n\n<p>Medicare's lien applies to <strong>conditional payments</strong> — bills Medicare paid on the condition that it be repaid if a liable party later pays. According to <a href=\"https://www.cms.gov/medicare/coordination-benefits-recovery/beneficiary-services/recovery-process\">CMS</a>, its recovery center lists the payments it considers related, lets you dispute unrelated charges, and after settlement issues a formal demand; repayment is due within 60 days, interest runs from the demand date, and unpaid debts go to the Treasury for offset. If funds are paid out first, Medicare can collect from you or your attorney, and double damages are possible if the government must sue. The demand is reduced by Medicare's share of your attorney's fees and costs.</p>"
+ },
+ {
+  "id": "1711",
+  "surface": "content",
+  "before": "<p>Both Georgia and South Carolina Medicaid programs have statutory rights to recover payments from personal injury settlements. Georgia's Medicaid lien authority comes from <strong>O.C.G.A. &sect; 49-4-149</strong>, while South Carolina's derives from <strong>S.C. Code &sect; 43-7-430</strong>. Like Medicare, Medicaid liens are backed by federal law (42 U.S.C. &sect; 1396a(a)(25)) and cannot simply be ignored.</p>",
+  "after": "<p>Both Georgia and South Carolina Medicaid programs have statutory rights to recover payments from personal injury settlements. Georgia's Medicaid lien authority comes from <strong>O.C.G.A. &sect; 49-4-149</strong>, while South Carolina's derives from <strong>S.C. Code &sect;&sect; 43-7-430 and 43-7-440</strong>. Like Medicare, Medicaid liens are backed by federal law (42 U.S.C. &sect; 1396a(a)(25)) and cannot simply be ignored.</p>"
+ },
+ {
+  "id": "1711",
+  "surface": "content",
+  "before": "<p>Veterans treated through the VA for injuries caused by a third party may face a lien under <strong>38 U.S.C. &sect; 1729</strong>. The VA has a right of recovery against any third-party settlement for the reasonable cost of care it provided, with enforcement authority similar to Medicare.</p>",
+  "after": "<p>Veterans treated by the VA, and service members and families on TRICARE, may face a federal recovery claim under the Federal Medical Care Recovery Act (<strong>42 U.S.C. &sect; 2651</strong>) and <strong>38 U.S.C. &sect; 1729</strong>. The United States can recover the reasonable value of the care from the at-fault party or its insurer.</p>"
+ },
+ {
+  "id": "1711",
+  "surface": "content",
+  "before": "<p>Under <strong>O.C.G.A. &sect; 34-9-11.1</strong>, a Georgia <a href=\"/practice-areas/workers-compensation-lawyers/\">workers' compensation</a> insurer that has paid benefits to an injured worker is entitled to a lien on any recovery the worker obtains from a negligent third party. The lien covers all compensation paid, including medical expenses, temporary total disability benefits, and permanent partial disability benefits.</p>\n\n<p>The carrier must receive notice of the third-party claim and an opportunity to participate. The lien is typically reduced by a proportionate share of the attorney fees and litigation costs — a concept known as the <strong>\"one-third reduction\"</strong> under Georgia case law.</p>",
+  "after": "<p>Under <strong>O.C.G.A. &sect; 34-9-11.1</strong>, a Georgia <a href=\"/practice-areas/workers-compensation-lawyers/\">workers' compensation</a> insurer that has paid benefits to an injured worker is entitled to a lien on any recovery the worker obtains from a negligent third party. The lien covers the disability, death and medical benefits actually paid, but it is enforceable only if the carrier proves you have been fully and completely compensated for all economic and noneconomic losses, counting both the comp benefits and the third-party recovery.</p>\n\n<p>If the carrier does recover, the court may apportion a reasonable attorney's fee between your lawyer and the carrier's lawyer by the work each did.</p>"
+ },
+ {
+  "id": "1711",
+  "surface": "content",
+  "before": "<p><strong>S.C. Code &sect; 42-1-560</strong> governs workers' compensation liens in South Carolina. Like Georgia, the carrier has a lien on any third-party recovery and must be notified of the claim. South Carolina courts also apply a proportionate reduction for attorney fees and costs, which can meaningfully lower the lien amount and increase the worker's net recovery.</p>",
+  "after": "<p><a href=\"https://www.scstatehouse.gov/code/t42c001.php\"><strong>S.C. Code &sect; 42-1-560</strong></a> governs workers' compensation liens in South Carolina. The carrier's lien is on the recovery net of the fees and expenses of obtaining it. Notice of suit goes to the Commission, employer and carrier within 30 days, and the suit must be started within one year after the carrier accepts liability or pays under an award, or the claim can pass to the carrier. If a settlement is less than your total damages, the Commission can cut the lien proportionally.</p>"
+ },
+ {
+  "id": "1711",
+  "surface": "content",
+  "before": "<p>Your own attorney also holds a lien right — the <strong>attorney's lien</strong> — securing payment of legal fees and costs from the proceeds of your case.</p>",
+  "after": "<p>Your own attorney also has a claim on the proceeds for fees and costs — the <strong>attorney's lien</strong>, which differs by state.</p>"
+ },
+ {
+  "id": "1711",
+  "surface": "content",
+  "before": "<p>Georgia recognizes both <strong>charging liens</strong> and <strong>retaining liens</strong> under <strong>O.C.G.A. &sect; 15-19-14</strong>. A charging lien gives the attorney a claim against the settlement proceeds obtained through the attorney's efforts. In personal injury cases, it secures the contingency fee (typically one-third of the gross recovery) plus any case costs advanced by the attorney.</p>",
+  "after": "<p>Georgia recognizes both <strong>charging liens</strong> and <strong>retaining liens</strong> under <strong>O.C.G.A. &sect; 15-19-14</strong>. A charging lien gives the attorney a claim against the settlement proceeds obtained through the attorney's efforts. In personal injury cases, it secures the contingency fee set in your written fee agreement plus any case costs advanced by the attorney.</p>"
+ },
+ {
+  "id": "1711",
+  "surface": "content",
+  "before": "<p>South Carolina recognizes attorney liens under common law and the <strong>South Carolina Rules of Professional Conduct</strong>. The charging lien attaches to the case proceeds and generally has priority over other contractual liens because the attorney's efforts created the fund from which all lien holders seek payment.</p>\n\n<p>In both states, the attorney's fee and costs come off the top before other liens are satisfied — reflecting the principle that without the attorney's work, there would be no settlement fund for anyone to claim.</p>",
+  "after": "<p>South Carolina has no attorney's-lien statute. Its courts recognize a common-law lien for costs the attorney advanced; a lien for the fee itself exists only if your written fee agreement creates one (<em>Eleazer v. Hardaway Concrete Co.</em>).</p>\n\n<p>In Georgia the attorney's lien outranks every lien except tax liens, and hospital and Medicaid liens are expressly subordinate to it; Medicare is not subordinate but reduces its demand for fees and costs.</p>"
+ },
+ {
+  "id": "1711",
+  "surface": "content",
+  "before": "<table class=\"comparison-table\">\n<thead>\n<tr>\n<th>Lien Type</th>\n<th>Georgia</th>\n<th>South Carolina</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Hospital Lien Statute</strong></td>\n<td>O.C.G.A. &sect; 44-14-470</td>\n<td>S.C. Code &sect; 44-63-10</td>\n</tr>\n<tr>\n<td><strong>Hospital Lien Filing Deadline</strong></td>\n<td>75 days after discharge</td>\n<td>90 days after discharge</td>\n</tr>\n<tr>\n<td><strong>Made Whole Doctrine</strong></td>\n<td>Recognized; can be waived by contract</td>\n<td>Recognized; can be waived by contract</td>\n</tr>\n<tr>\n<td><strong>Workers' Comp Lien Statute</strong></td>\n<td>O.C.G.A. &sect; 34-9-11.1</td>\n<td>S.C. Code &sect; 42-1-560</td>\n</tr>\n<tr>\n<td><strong>Workers' Comp Fee Reduction</strong></td>\n<td>One-third reduction for attorney fees/costs</td>\n<td>Proportionate reduction for fees/costs</td>\n</tr>\n<tr>\n<td><strong>Attorney Lien Statute</strong></td>\n<td>O.C.G.A. &sect; 15-19-14</td>\n<td>Common law + Rules of Professional Conduct</td>\n</tr>\n<tr>\n<td><strong>Medicaid Lien Authority</strong></td>\n<td>O.C.G.A. &sect; 49-4-149</td>\n<td>S.C. Code &sect; 43-7-430</td>\n</tr>\n<tr>\n<td><strong>Statute of Limitations (PI)</strong></td>\n<td>2 years (O.C.G.A. &sect; 9-3-33)</td>\n<td>3 years (S.C. Code &sect; 15-3-530)</td>\n</tr>\n<tr>\n<td><strong>Comparative Fault Standard</strong></td>\n<td>Modified — barred if 50% or more at fault (O.C.G.A. &sect; 51-12-33)</td>\n<td>Modified — barred if 51% or more at fault</td>\n</tr>\n</tbody>\n</table>\n\n<p>These differences matter in practice. A hospital lien filed one day past the deadline may be unenforceable, and comparative fault findings reduce your total settlement — which also reduces what lien holders can collect. In Georgia, you are barred from recovery if you are 50% or more at fault under <strong>O.C.G.A. &sect; 51-12-33</strong>. In South Carolina, the threshold is slightly more favorable — you can recover as long as your fault stays below 51%.</p>",
+  "after": "<table class=\"comparison-table\">\n<thead>\n<tr>\n<th>Lien Type</th>\n<th>Georgia</th>\n<th>South Carolina</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Hospital Lien Statute</strong></td>\n<td>O.C.G.A. &sect;&sect; 44-14-470 to 44-14-477</td>\n<td>None; providers rely on contract</td>\n</tr>\n<tr>\n<td><strong>Hospital Lien Filing Deadline</strong></td>\n<td>75 days after discharge (hospitals); 90 days after first treatment (physician/chiropractic); 15 days' prior notice</td>\n<td>Not applicable</td>\n</tr>\n<tr>\n<td><strong>Made Whole Doctrine</strong></td>\n<td>Codified (O.C.G.A. &sect; 33-24-56.1); policy cannot override; self-funded ERISA and federal plans exempt</td>\n<td>No case law; S.C. Code &sect; 38-71-190 limits subrogation</td>\n</tr>\n<tr>\n<td><strong>Workers' Comp Lien Statute</strong></td>\n<td>O.C.G.A. &sect; 34-9-11.1</td>\n<td>S.C. Code &sect; 42-1-560</td>\n</tr>\n<tr>\n<td><strong>Workers' Comp Fee Reduction</strong></td>\n<td>Lien only if worker fully compensated; court apportions fee</td>\n<td>Lien net of fees and costs; Commission may reduce</td>\n</tr>\n<tr>\n<td><strong>Attorney Lien Statute</strong></td>\n<td>O.C.G.A. &sect; 15-19-14</td>\n<td>No statute; common-law lien for costs; fee lien by written agreement</td>\n</tr>\n<tr>\n<td><strong>Medicaid Lien Authority</strong></td>\n<td>O.C.G.A. &sect; 49-4-149</td>\n<td>S.C. Code &sect;&sect; 43-7-430, 43-7-440</td>\n</tr>\n<tr>\n<td><strong>Statute of Limitations (PI)</strong></td>\n<td>2 years (O.C.G.A. &sect; 9-3-33)</td>\n<td>3 years (S.C. Code &sect; 15-3-530)</td>\n</tr>\n<tr>\n<td><strong>Comparative Fault Standard</strong></td>\n<td>Modified — barred if 50% or more at fault (O.C.G.A. &sect; 51-12-33)</td>\n<td>Modified — barred if 51% or more at fault</td>\n</tr>\n</tbody>\n</table>\n\n<p>These differences matter in practice. A Georgia lien that misses the notice or filing rules is invalid, except against a liable party or insurer that had actual notice of it before settling, and comparative fault findings reduce your total settlement — which also reduces what lien holders can collect. In Georgia, you are barred from recovery if you are 50% or more at fault under <strong>O.C.G.A. &sect; 51-12-33</strong>. In South Carolina, the threshold is slightly more favorable — you can recover as long as your fault stays below 51%.</p>"
+ },
+ {
+  "id": "1711",
+  "surface": "content",
+  "before": "<p>Liens are negotiable. An experienced attorney can often negotiate them down to a fraction of the original claim. Here are the primary strategies:</p>",
+  "after": "<p>Most liens can be reduced. Some reductions are written into the statutes; others come from challenging the lien's validity or amount. Here are the primary strategies:</p>"
+ },
+ {
+  "id": "1711",
+  "surface": "content",
+  "before": "<p>If a hospital missed the filing deadline, included charges for unrelated treatment, or failed to serve the correct parties, the lien may be invalid. Your attorney should review every lien for procedural defects before agreeing to pay anything.</p>",
+  "after": "<p>If a Georgia provider missed the filing deadline, included charges for unrelated treatment, failed to serve the correct parties, or never billed your health insurer first, the lien may be invalid. Your attorney should review every lien for procedural defects before agreeing to pay anything.</p>"
+ },
+ {
+  "id": "1711",
+  "surface": "content",
+  "before": "<p>In both Georgia and South Carolina, the made whole doctrine can reduce or eliminate health insurance subrogation claims if your settlement does not fully compensate you for all of your losses. This argument is especially powerful in catastrophic injury cases — such as those involving <a href=\"/practice-areas/brain-injury-lawyers/\">traumatic brain injuries</a> or <a href=\"/practice-areas/spinal-cord-injury-lawyers/\">spinal cord damage</a> — where the total damages far exceed the available insurance coverage.</p>",
+  "after": "<p>In Georgia, the complete-compensation rule eliminates a health insurer's reimbursement claim if your settlement does not fully compensate you; in South Carolina, you can petition the Director of Insurance to disallow inequitable subrogation. This argument is especially powerful in catastrophic injury cases — such as those involving <a href=\"/practice-areas/brain-injury-lawyers/\">traumatic brain injuries</a> or <a href=\"/practice-areas/spinal-cord-injury-lawyers/\">spinal cord damage</a> — where the total damages far exceed the available insurance coverage.</p>"
+ },
+ {
+  "id": "1711",
+  "surface": "content",
+  "before": "<p>Medicare, Medicaid, and the VA all have formal processes for requesting lien reductions. Medicare allows compromise requests when the settlement is less than the total claim value, though these require detailed documentation of the case value and the reasons a full recovery was not possible.</p>",
+  "after": "<p>Medicare reduces its demand for your attorney's fees and costs, and you can request a waiver or compromise, with detailed documentation of the case value and the reasons a full recovery was not possible, or appeal the amount. South Carolina Medicaid must cut its claim by 25 percent when you hired a lawyer and may compromise the rest; Georgia Medicaid is limited to the medical-expense share of the recovery.</p>"
+ },
+ {
+  "id": "1711",
+  "surface": "content",
+  "before": "<p>This doctrine holds that a lien holder who benefits from the attorney's efforts should bear a proportionate share of fees and costs. In both states, it effectively reduces the lien by one-third (the typical contingency fee percentage) plus a share of litigation costs.</p>",
+  "after": "<p>This doctrine holds that a lien holder who benefits from the attorney's efforts should bear a proportionate share of fees and costs. For most liens the share is written into the statute: Georgia health insurers, Medicare, and South Carolina workers' compensation carriers, health insurers and Medicaid all recover net of fees and costs, and the reduction generally tracks your actual fee rather than a fixed one-third.</p>"
+ },
+ {
+  "id": "1711",
+  "surface": "content",
+  "before": "<ul>\n<li><strong>Identifies all liens early.</strong> Your attorney tracks every potential lien holder — hospitals, insurers, Medicare, Medicaid, workers' comp carriers — and obtains lien amounts before settlement negotiations begin.</li>\n<li><strong>Audits lien amounts for accuracy.</strong> Medical provider liens often include billing errors or charges for unrelated treatment. Your attorney reviews every line item and challenges anything that does not belong.</li>\n<li><strong>Negotiates reductions.</strong> Most lien holders accept less than the full amount when presented with a well-documented request.</li>\n<li><strong>Applies legal protections.</strong> The made whole doctrine, common fund doctrine, and statutory fee reductions work in your favor — but only if your attorney raises them.</li>\n<li><strong>Ensures proper distribution.</strong> Settlement funds are held in trust and distributed according to lien priority. Failing to properly satisfy liens can expose both you and your attorney to legal liability.</li>\n</ul>",
+  "after": "<ul>\n<li><strong>Identifies all liens early.</strong> Your attorney tracks every potential lien holder — hospitals, insurers, Medicare, Medicaid, workers' comp carriers — and obtains lien amounts before settlement negotiations begin.</li>\n<li><strong>Audits lien amounts for accuracy.</strong> Medical provider liens often include billing errors or charges for unrelated treatment. Your attorney reviews every line item and challenges anything that does not belong.</li>\n<li><strong>Negotiates reductions.</strong> Most lien holders accept less than the full amount when presented with a well-documented request.</li>\n<li><strong>Applies legal protections.</strong> Georgia's made whole rule, South Carolina's subrogation limits, and statutory fee reductions work in your favor — but only if your attorney raises them.</li>\n<li><strong>Ensures proper distribution.</strong> Settlement funds are held in trust and distributed according to lien priority. Failing to properly satisfy liens can expose both you and your attorney to legal liability.</li>\n</ul>"
+ },
+ {
+  "id": "1711",
+  "surface": "content",
+  "before": "<p>With offices in <strong>Savannah</strong>, <strong>Darien</strong>, <strong>Charleston</strong>, <strong>Columbia</strong>, and <strong>Myrtle Beach</strong>, we serve injury victims throughout both states. Call <strong><a href=\"tel:18447378587\">1-844-RESULTS</a></strong> or contact us online for a free consultation.</p>",
+  "after": "<p>With offices in <strong>Savannah</strong>, <strong>Darien</strong>, <strong>Charleston</strong>, <strong>North Charleston</strong>, <strong>Columbia</strong>, and <strong>Myrtle Beach</strong>, we serve injury victims throughout both states. Call <strong><a href=\"tel:+18447378587\">1-844-RESULTS</a></strong> or contact us online for a free consultation.</p>"
+ },
+ {
+  "id": "1711",
+  "surface": "meta:_roden_key_takeaways",
+  "before": "Liens from hospitals, health insurers, Medicare, Medicaid, workers' compensation carriers, and attorneys can significantly reduce your personal injury settlement. Georgia's hospital lien statute (O.C.G.A. § 44-14-470) and South Carolina's lien law (S.C. Code § 44-63-10) allow medical providers to claim settlement proceeds. Federal liens from Medicare (42 U.S.C. § 1395y) take priority over state law. Workers' comp liens are governed by O.C.G.A. § 34-9-11.1 in Georgia and S.C. Code § 42-1-560 in South Carolina. An experienced attorney can negotiate liens down by 30-50% or more to maximize your take-home recovery.",
+  "after": "Liens from hospitals, health insurers, Medicare, Medicaid, workers' compensation carriers, and attorneys can significantly reduce your personal injury settlement. Georgia's provider lien statute (O.C.G.A. § 44-14-470) lets hospitals and medical practices place a lien on your claim; South Carolina has no hospital-lien statute, so providers there rely on contract. Federal liens from Medicare (42 U.S.C. § 1395y) take priority over state law. Workers' comp liens are governed by O.C.G.A. § 34-9-11.1 in Georgia and S.C. Code § 42-1-560 in South Carolina. An experienced attorney audits every lien, challenges invalid or unrelated charges, and applies every statutory reduction the lien holder must accept."
+ },
+ {
+  "id": "1711",
+  "surface": "faq:2:answer",
+  "before": "South Carolina's hospital lien law (S.C. Code § 44-63-10) gives hospitals the right to assert liens against personal injury recoveries. The lien must be filed with the county clerk and served on the liable party. Like Georgia, these liens can often be negotiated down, especially when the settlement does not fully compensate the victim.",
+  "after": "South Carolina has no hospital-lien statute, so a hospital or doctor cannot file a lien against your claim. A provider's right to be paid rests on your contract with it — including any assignment of benefits or letter of protection you signed — and it is negotiated like any other bill. The claims that do reach a South Carolina settlement are health-insurer subrogation (allowed only if your policy contains a subrogation clause, S.C. Code § 38-71-190), Medicaid (§§ 43-7-430, 43-7-440), Medicare, and workers' compensation (§ 42-1-560)."
+ },
+ {
+  "id": "1711",
+  "surface": "faq:3:answer",
+  "before": "Yes. Under federal law (42 U.S.C. § 1395y), Medicare has an automatic right of recovery against any personal injury settlement that includes compensation for medical expenses Medicare paid. This federal lien takes priority over state law and cannot be discharged in bankruptcy. Your attorney must resolve the Medicare lien before distributing settlement funds.",
+  "after": "Yes. Under the Medicare Secondary Payer Act (42 U.S.C. § 1395y(b)), Medicare must be repaid the conditional payments it made out of any liability settlement, judgment or award, and its right overrides state law. Repayment is due within 60 days of Medicare's demand, with interest after that, and Medicare can collect from you or your attorney if the money is paid out first — so the Medicare claim must be resolved before funds are distributed."
+ },
+ {
+  "id": "1711",
+  "surface": "faq:4:answer",
+  "before": "Absolutely. Experienced personal injury attorneys routinely negotiate liens down, sometimes by 30-50% or more. Common strategies include invoking the made-whole doctrine, demonstrating that reducing the lien is in everyone's interest, and leveraging federal anti-lien protections where applicable.",
+  "after": "Yes. Experienced personal injury attorneys routinely reduce liens by challenging invalid or unrelated charges, invoking Georgia's complete-compensation rule or South Carolina's statutory limits on health-insurer subrogation, applying the federal rule that limits Medicaid to the medical-expense share of a recovery, and using Medicare's fee-reduction, waiver and compromise procedures."
+ },
+ {
+  "id": "1711",
+  "surface": "faq:5:answer",
+  "before": "Ignoring a valid lien can have serious consequences. The lien holder can sue you to recover the full amount, and your attorney may face ethical obligations to hold settlement funds until liens are resolved. In some cases, ignoring Medicare or Medicaid liens can result in penalties and loss of future benefits.",
+  "after": "Ignoring a valid lien has serious consequences. Insurers, workers' compensation carriers and Medicaid can sue to recover what they are owed (in Georgia, a hospital enforces its lien against the at-fault party or its insurer), and your attorney must hold disputed funds in trust until the claims are resolved. Medicare charges interest on unpaid demands, refers unpaid debts to the U.S. Treasury for offset, and can collect from your attorney; in South Carolina, continued Medicaid eligibility depends on cooperating with the agency's reimbursement claim."
+ }
+]
