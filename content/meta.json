@@ -3177,7 +3177,7 @@
             "title": "Filing a Claim Against a Deceased At-Fault Driver in Georgia or South Carolina",
             "excerpt": "Your claim survives the at-fault driver's death. How to pursue it in Georgia or South Carolina through insurance, the estate, or your own coverage.",
             "meta": {
-                "_roden_author_attorney": "Eric Roden",
+                "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "Can I still file a personal injury claim if the at-fault driver died in the accident?",
@@ -3185,15 +3185,15 @@
                     },
                     {
                         "question": "Do I sue the deceased driver's family members?",
-                        "answer": "No. You sue the deceased driver's <strong>estate</strong>, not the family members personally. The estate is a legal entity managed by a personal representative (executor) appointed by the probate court. The deceased driver's liability insurance typically defends the case and pays any judgment up to policy limits. Family members' personal assets are generally not at risk."
+                        "answer": "No. You sue the <strong>personal representative</strong> of the deceased driver's estate (the executor or administrator appointed by the probate court) in that capacity, not the family members personally. In Georgia an estate is not itself a legal entity that can be sued (Orange County Trust Co. v. Estate of Takowsky, 1969; O.C.G.A. § 9-2-41), and in South Carolina the proceeding is against the personal representative (S.C. Code § 62-3-804). The deceased driver's liability insurance typically defends the case and pays any judgment up to policy limits. Family members' personal assets are generally not at risk unless they owned or furnished the vehicle (the family purpose doctrine) or were independently negligent."
                     },
                     {
                         "question": "What if the deceased driver had no insurance or not enough coverage?",
-                        "answer": "If the deceased driver was uninsured or underinsured, you may file a claim through your own <strong>uninsured/underinsured motorist (UM/UIM) coverage</strong>. You may also pursue a claim against the estate's assets through probate court. An attorney can identify all available sources of recovery to maximize your compensation."
+                        "answer": "If the deceased driver was uninsured or underinsured, you may file a claim through your own <strong>uninsured/underinsured motorist (UM/UIM) coverage</strong>. To reach the estate's assets, you may also present a claim in the probate proceeding and sue the personal representative. An attorney can identify all available sources of recovery to maximize your compensation."
                     },
                     {
                         "question": "How long do I have to file a claim against a deceased at-fault driver?",
-                        "answer": "The standard statutes of limitations apply — <strong>two years</strong> in Georgia (O.C.G.A. § 9-3-33) and <strong>three years</strong> in South Carolina (S.C. Code § 15-3-530). However, probate creditor deadlines may impose additional requirements, particularly in South Carolina where claims against the estate must be filed within one year of death. Consult an attorney promptly to avoid missing any deadlines."
+                        "answer": "The standard statutes of limitations apply — <strong>two years</strong> in Georgia (O.C.G.A. § 9-3-33) and <strong>three years</strong> in South Carolina (S.C. Code § 15-3-530) — and the driver's death can pause them (Georgia: up to five years while the estate has no personal representative, O.C.G.A. § 9-3-93; South Carolina: eight months after death, S.C. Code § 62-3-802(b)). To reach the estate's own assets beyond the insurance, present a probate claim: in South Carolina within the earlier of one year after death or eight months after the first published notice to creditors (S.C. Code § 62-3-803(a)), a bar that does not apply to the insured part of the claim (S.C. Code § 62-3-803(d)(2)); in Georgia, notify the personal representative within three months of the last published notice (O.C.G.A. § 53-7-41). Consult an attorney promptly to avoid missing any deadlines."
                     },
                     {
                         "question": "Is it wrong to pursue a claim when the other driver has died?",
@@ -3204,7 +3204,8 @@
                         "answer": "The deceased driver cannot testify, which means the insurance company may try to shift blame onto you without contradiction. This makes objective evidence critical: police reports, witness statements, dashcam footage, accident reconstruction analysis, cell phone records, and toxicology reports from the autopsy can all help establish fault in the absence of the other driver's testimony."
                     }
                 ],
-                "_roden_key_takeaways": "Your right to compensation does not disappear when the at-fault driver dies. Georgia (O.C.G.A. § 9-2-41) and South Carolina (S.C. Code § 15-5-90) both allow personal injury claims to survive the tortfeasor's death. You can pursue the claim through the driver's liability insurance, a lawsuit against their estate, or your own UM/UIM coverage. Filing deadlines are two years in Georgia and three in South Carolina, but probate creditor deadlines may compress the timeline further."
+                "_roden_key_takeaways": "Your right to compensation does not disappear when the at-fault driver dies. Georgia (O.C.G.A. § 9-2-41) and South Carolina (S.C. Code § 15-5-90) both allow personal injury claims to survive the tortfeasor's death. You can pursue the claim through the driver's liability insurance, a lawsuit against their estate, or your own UM/UIM coverage. Filing deadlines are two years in Georgia (O.C.G.A. § 9-3-33) and three in South Carolina (S.C. Code § 15-3-530), and the driver's death can pause those clocks (O.C.G.A. § 9-3-93; S.C. Code § 62-3-802(b)), but any recovery beyond the driver's insurance must also be presented as a probate claim, in South Carolina within the earlier of one year after death or eight months after notice to creditors (S.C. Code § 62-3-803).",
+                "_roden_last_reviewed": "2026-09-24"
             }
         },
         "/blog/claims-for-lost-wages/": {
@@ -8769,26 +8770,27 @@
                     },
                     {
                         "question": "How long do I have to file a medical malpractice lawsuit in Georgia?",
-                        "answer": "Georgia imposes a <strong>two-year statute of limitations</strong> (O.C.G.A. § 9-3-71) that generally runs from the date of the negligent act. The discovery rule may extend this if the injury was not immediately apparent, but an absolute <strong>five-year statute of repose</strong> applies — no claim can be filed more than five years after the negligence occurred, regardless of when it was discovered."
+                        "answer": "Georgia imposes a <strong>two-year statute of limitations</strong> (O.C.G.A. § 9-3-71) that generally runs from the date of the injury, usually the date of the negligent act. If the injury itself appears later — as when a misdiagnosed condition turns into a new injury — the two years run from when that injury surfaces, never from when you learned it was malpractice, and fraud by the provider pauses them (O.C.G.A. § 9-3-96). But an absolute <strong>five-year statute of repose</strong> applies — no claim can be filed more than five years after the negligence occurred, regardless of when it was discovered."
                     },
                     {
                         "question": "What is the expert affidavit requirement in Georgia medical malpractice cases?",
-                        "answer": "Under O.C.G.A. § 9-11-9.1, you must file a sworn affidavit from a qualified medical expert simultaneously with your medical malpractice complaint. The expert must confirm that the healthcare provider deviated from the standard of care and that the deviation caused your injury. Filing without a proper affidavit results in dismissal."
+                        "answer": "Under O.C.G.A. § 9-11-9.1, you must file a sworn affidavit from a qualified medical expert simultaneously with your medical malpractice complaint. The expert must identify at least one specific negligent act or omission and the facts supporting it. Filing without an affidavit results in dismissal; a defective one can be cured only within 30 days of the defendant's motion."
                     },
                     {
                         "question": "What is the statute of repose for medical malpractice in Georgia?",
-                        "answer": "Georgia's five-year statute of repose (O.C.G.A. § 9-3-71(b)) is an absolute deadline — no medical malpractice lawsuit can be filed more than five years after the negligent act, regardless of when the injury was discovered. The only exception is for foreign objects left in the body, which allows one year from discovery (O.C.G.A. § 9-3-72)."
+                        "answer": "Georgia's five-year statute of repose (O.C.G.A. § 9-3-71(b)) is an absolute deadline — no medical malpractice lawsuit can be filed more than five years after the negligent act, regardless of when the injury was discovered. The main exception is for foreign objects left in the body, which allows one year from discovery (O.C.G.A. § 9-3-72). Children under five at the time of the malpractice have until their tenth birthday (O.C.G.A. § 9-3-73)."
                     },
                     {
                         "question": "What types of damages can I recover in a Georgia medical malpractice case?",
-                        "answer": "You can recover <strong>economic damages</strong> (medical expenses, lost wages, lost earning capacity) and <strong>non-economic damages</strong> (pain and suffering, emotional distress, loss of enjoyment of life) with no statutory cap. Punitive damages are available in cases of egregious conduct but are capped at $250,000 under O.C.G.A. § 51-12-5.1 unless intent to harm or substance impairment is shown."
+                        "answer": "You can recover <strong>economic damages</strong> (medical expenses, lost wages, lost earning capacity) and <strong>non-economic damages</strong> (pain and suffering, emotional distress, loss of enjoyment of life) with no statutory cap. Punitive damages are available in cases of egregious conduct but are capped at $250,000 under O.C.G.A. § 51-12-5.1 unless intent to harm or substance impairment is shown, or the claim is for product liability."
                     },
                     {
                         "question": "Can I sue a hospital for medical malpractice in Georgia, or only the doctor?",
                         "answer": "You can sue both. In Georgia, hospitals can be held liable for institutional negligence — such as inadequate staffing, equipment failures, or negligent credentialing of physicians. Individual doctors, surgeons, nurses, specialists, pharmacies, and medical device manufacturers can all be named as defendants in a medical malpractice lawsuit."
                     }
                 ],
-                "_roden_key_takeaways": "Georgia does not cap compensatory damages in medical malpractice cases after the Supreme Court struck down the cap in 2010. The statute of limitations is two years from the negligent act (O.C.G.A. § 9-3-71), with a five-year statute of repose as the absolute outer limit. Plaintiffs must file an expert affidavit with their complaint (O.C.G.A. § 9-11-9.1). Punitive damages are capped at $250,000 (O.C.G.A. § 51-12-5.1). These procedural requirements make experienced legal representation essential from the start."
+                "_roden_key_takeaways": "Georgia does not cap compensatory damages in medical malpractice cases after the Supreme Court struck down the cap in 2010. The statute of limitations is two years from the injury, usually the date of the negligent act (O.C.G.A. § 9-3-71), with a five-year statute of repose as the absolute outer limit. Plaintiffs must file an expert affidavit with their complaint (O.C.G.A. § 9-11-9.1). Punitive damages are capped at $250,000 (O.C.G.A. § 51-12-5.1). These procedural requirements make experienced legal representation essential from the start.",
+                "_roden_last_reviewed": "2026-09-24"
             }
         },
         "/blog/medical-malpractice-limits-south-carolina/": {
@@ -12866,7 +12868,7 @@
                 "_roden_faqs": [
                     {
                         "question": "How long do I have to file a truck accident lawsuit after a US-17 crash in Glynn County?",
-                        "answer": "Under O.C.G.A. § 9-3-33, you have 2 years from the date of injury to file a personal-injury lawsuit in Georgia. If a government vehicle was involved, ante-litem notice is required much sooner — 6 months for a city under O.C.G.A. § 36-33-5, 12 months for the state under O.C.G.A. § 50-21-26."
+                        "answer": "Under O.C.G.A. § 9-3-33, you have 2 years from the date of injury to file a personal-injury lawsuit in Georgia. If a government vehicle was involved, ante-litem notice is required much sooner — 6 months for a city under O.C.G.A. § 36-33-5, 12 months for a county under O.C.G.A. § 36-11-1, and 12 months for the state under O.C.G.A. § 50-21-26."
                     },
                     {
                         "question": "What if the trucking company says the crash was partly my fault?",
@@ -12874,7 +12876,7 @@
                     },
                     {
                         "question": "Where will my Glynn County truck-accident lawsuit actually be filed?",
-                        "answer": "Most Glynn County personal-injury suits are filed in Glynn County State Court in Brunswick, part of the Brunswick Judicial Circuit. Larger or felony-adjacent cases go to Glynn County Superior Court. Federal cases with diversity jurisdiction file in the U.S. District Court for the Southern District of Georgia, Brunswick Division."
+                        "answer": "Most Glynn County personal-injury suits are filed in Glynn County State Court in Brunswick, which hears civil cases of any amount (O.C.G.A. § 15-7-4); Glynn County Superior Court (Brunswick Judicial Circuit) can hear the same cases. Suits against an out-of-state carrier for more than $75,000 may be filed in or removed to the U.S. District Court for the Southern District of Georgia, Brunswick Division."
                     },
                     {
                         "question": "The truck driver had a Florida or out-of-state plate — does that change anything?",
@@ -12882,7 +12884,7 @@
                     },
                     {
                         "question": "What if the truck driver who hit me was drunk?",
-                        "answer": "A DUI conviction under O.C.G.A. § 40-6-391 is persuasive evidence in your civil case and frequently supports a punitive-damages claim. If a Glynn County bar or restaurant over-served the driver before the crash, Georgia's dram-shop statute at O.C.G.A. § 51-1-40 may open a separate claim against the establishment."
+                        "answer": "A DUI conviction under O.C.G.A. § 40-6-391 is persuasive evidence in your civil case and frequently supports a punitive-damages claim — and Georgia's $250,000 cap on punitive damages does not apply against a driver who was impaired (O.C.G.A. § 51-12-5.1(f)). If a Glynn County bar or restaurant knowingly served the driver while he was noticeably intoxicated, knowing he would soon be driving, Georgia's dram-shop statute at O.C.G.A. § 51-1-40 may open a separate claim against the establishment."
                     },
                     {
                         "question": "How much does it cost to hire a Darien truck accident lawyer?",
@@ -12890,7 +12892,7 @@
                     }
                 ],
                 "_roden_jurisdiction": "georgia-only",
-                "_roden_last_reviewed": "2026-05-15"
+                "_roden_last_reviewed": "2026-09-24"
             }
         },
         "/blog/using-dashcams-as-evidence-of-fault-in-a-car-accident/": {

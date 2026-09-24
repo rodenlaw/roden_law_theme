@@ -1,0 +1,86 @@
+[
+ {
+  "id": "1649",
+  "surface": "content",
+  "before": "<ul>\n<li><strong>Georgia:</strong> O.C.G.A. § 9-2-41 provides that causes of action for injuries to a person survive the death of either party. Your claim can be brought against the deceased driver's estate.</li>\n<li><strong>South Carolina:</strong> S.C. Code § 15-5-90 similarly allows personal injury claims to survive the death of the tortfeasor (the person who caused the harm).</li>\n</ul>\n\n<p>In practical terms, this means your claim proceeds in one of three ways: through the deceased driver's liability insurance, through a lawsuit against their estate, or through your own uninsured/underinsured motorist coverage.</p>",
+  "after": "<ul>\n<li><strong>Georgia:</strong> <a href=\"https://law.justia.com/codes/georgia/title-9/chapter-2/article-3/section-9-2-41/\">O.C.G.A. § 9-2-41</a> provides that causes of action for injuries to a person survive the death of either party. Your claim is brought against the driver's personal representative (executor or administrator), though no punitive damages are allowed against the personal representative.</li>\n<li><strong>South Carolina:</strong> <a href=\"https://www.scstatehouse.gov/code/t15c005.php\">S.C. Code § 15-5-90</a> similarly allows personal injury claims to survive the death of the tortfeasor (the person who caused the harm).</li>\n</ul>\n\n<p>In practical terms, this means your claim proceeds in one of three ways: through the deceased driver's liability insurance, through a lawsuit against their estate's personal representative, or through your own uninsured/underinsured motorist coverage.</p>"
+ },
+ {
+  "id": "1649",
+  "surface": "content",
+  "before": "<p>When you sue an estate, you are not suing the deceased person's family members personally. You are suing the legal entity that represents the deceased person's assets and liabilities. The estate is managed by a <strong>personal representative</strong> (also called an executor or administrator) who is appointed by the probate court.</p>",
+  "after": "<p>When you sue an estate, you are not suing the deceased person's family members personally. You are suing the estate's <strong>personal representative</strong> (also called an executor or administrator), appointed by the probate court, in that capacity.</p>"
+ },
+ {
+  "id": "1649",
+  "surface": "content",
+  "before": "<ul>\n<li>The lawsuit names the estate as the defendant — for example, \"Estate of John Smith, Deceased\"</li>\n<li>The personal representative defends the case on behalf of the estate</li>\n<li>The deceased driver's liability insurance typically still provides the defense and pays any judgment up to policy limits</li>\n<li>If the judgment exceeds policy limits, the estate's assets (bank accounts, property, investments) may be used to satisfy the remainder</li>\n<li>Family members' personal assets are generally <strong>not</strong> at risk unless they co-signed the driver's insurance policy or were otherwise independently liable</li>\n</ul>",
+  "after": "<ul>\n<li>The lawsuit names the personal representative, in that capacity, as the defendant — for example, \"Jane Smith, as Administrator of the Estate of John Smith\"; in Georgia an estate is not a legal entity that can be sued (Orange County Trust Co. v. Estate of Takowsky, 1969)</li>\n<li>The personal representative defends the case on behalf of the estate</li>\n<li>The deceased driver's liability insurance typically still provides the defense and pays any judgment up to policy limits</li>\n<li>If the judgment exceeds policy limits, the estate's assets (bank accounts, property, investments) may be used to satisfy the remainder</li>\n<li>Family members' personal assets are generally <strong>not</strong> at risk unless they owned or furnished the vehicle for family use (the family purpose doctrine) or were otherwise independently negligent</li>\n</ul>"
+ },
+ {
+  "id": "1649",
+  "surface": "content",
+  "before": "<p>Under Georgia law, creditors (including personal injury claimants) must file their claims with the estate within a specific timeframe. Georgia requires creditors to file within the later of: (1) three months after the personal representative publishes notice to creditors, or (2) the general statute of limitations for the underlying claim.</p>",
+  "after": "<p>Under Georgia law, the personal representative must publish a notice to creditors (including personal injury claimants) within 60 days of qualifying. Written notice of your claim within three months of the last published notice preserves your equal share in distributions, but missing it does not bar the claim (<a href=\"https://law.justia.com/codes/georgia/title-53/chapter-7/article-4/section-53-7-41/\">O.C.G.A. § 53-7-41</a>). No suit may be filed against the personal representative until six months after qualification (O.C.G.A. § 53-7-42), and the two-year limitation period is tolled, up to five years, while the estate has no personal representative (<a href=\"https://law.justia.com/codes/georgia/title-9/chapter-3/article-5/section-9-3-93/\">O.C.G.A. § 9-3-93</a>).</p>"
+ },
+ {
+  "id": "1649",
+  "surface": "content",
+  "before": "<p>South Carolina's probate process is similar. The probate court appoints a personal representative, and creditors must file claims against the estate. South Carolina requires that claims be filed within <strong>one year</strong> from the date of the decedent's death or within the applicable statute of limitations, whichever is earlier.</p>",
+  "after": "<p>South Carolina's probate process is similar. The probate court appoints a personal representative, and creditors must present claims against the estate. To reach the estate's own assets, a claim must be presented within the <strong>earlier of one year</strong> after the death or eight months after the first published notice to creditors (sixty days after any written notice) (<a href=\"https://www.scstatehouse.gov/code/t62c003.php\">S.C. Code §§ 62-3-801 and 62-3-803(a)</a>). That bar does not apply, up to the policy limits, to a claim covered by the driver's liability insurance (S.C. Code § 62-3-803(d)(2)), and the three-year limitation period is suspended for eight months after the death (S.C. Code § 62-3-802(b)).</p>"
+ },
+ {
+  "id": "1649",
+  "surface": "content",
+  "before": "<table class=\"comparison-table\">\n<thead>\n<tr>\n<th>Coverage Type</th>\n<th>Georgia</th>\n<th>South Carolina</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>UM/UIM required?</td>\n<td>Offered but can be rejected in writing (O.C.G.A. § 33-7-11)</td>\n<td>UM is mandatory in every policy and cannot be rejected (S.C. Code § 38-77-150); UIM must be offered but is optional (S.C. Code § 38-77-160)</td>\n</tr>\n<tr>\n<td>Stacking allowed?</td>\n<td>Yes, unless waived</td>\n<td>Yes, unless waived</td>\n</tr>\n<tr>\n<td>Covers deceased uninsured driver?</td>\n<td>Yes</td>\n<td>Yes</td>\n</tr>\n</tbody>\n</table>",
+  "after": "<table class=\"comparison-table\">\n<thead>\n<tr>\n<th>Coverage Type</th>\n<th>Georgia</th>\n<th>South Carolina</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>UM/UIM required?</td>\n<td>Offered but can be rejected in writing (O.C.G.A. § 33-7-11)</td>\n<td>UM is mandatory in every policy and cannot be rejected (S.C. Code § 38-77-150); UIM must be offered but is optional (S.C. Code § 38-77-160)</td>\n</tr>\n<tr>\n<td>Stacking allowed?</td>\n<td>Yes, with limits: separate policies stack; vehicles on one policy do not</td>\n<td>Yes, with limits: Class I insureds only, capped at the coverage on the vehicle involved</td>\n</tr>\n<tr>\n<td>Covers deceased uninsured driver?</td>\n<td>Yes</td>\n<td>Yes</td>\n</tr>\n</tbody>\n</table>"
+ },
+ {
+  "id": "1649",
+  "surface": "content",
+  "before": "<p>Review your own auto insurance policy to determine whether you carry UM/UIM coverage and what your limits are. An experienced attorney can help you identify all available sources of recovery.</p>",
+  "after": "<p>Review your own auto insurance policy to determine whether you carry UM/UIM coverage and what your limits are. When the at-fault driver died, the injury suit is brought against the personal representative and your UM/UIM carrier is served as a party (O.C.G.A. § 33-7-11(d); S.C. Code §§ 38-77-150(B), 38-77-160). An experienced attorney can help you identify all available sources of recovery.</p>"
+ },
+ {
+  "id": "1649",
+  "surface": "content",
+  "before": "<table class=\"comparison-table\">\n<thead>\n<tr>\n<th>Rule</th>\n<th>Georgia</th>\n<th>South Carolina</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Who can file</td>\n<td>Surviving spouse; if none, children; if none, parents (O.C.G.A. § 51-4-2)</td>\n<td>Personal representative of the estate (S.C. Code § 15-51-20)</td>\n</tr>\n<tr>\n<td>Statute of limitations</td>\n<td>2 years from date of death (O.C.G.A. § 9-3-33)</td>\n<td>3 years from date of death (S.C. Code § 15-3-530)</td>\n</tr>\n<tr>\n<td>Damages recovered for</td>\n<td>\"Full value of the life\" of the deceased</td>\n<td>Pecuniary loss to beneficiaries + punitive damages</td>\n</tr>\n</tbody>\n</table>",
+  "after": "<table class=\"comparison-table\">\n<thead>\n<tr>\n<th>Rule</th>\n<th>Georgia</th>\n<th>South Carolina</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Who can file</td>\n<td>Surviving spouse; if none, children (O.C.G.A. § 51-4-2); if none, parents (O.C.G.A. § 51-4-4); otherwise the administrator or executor (O.C.G.A. § 51-4-5)</td>\n<td>Personal representative of the estate (S.C. Code § 15-51-20)</td>\n</tr>\n<tr>\n<td>Statute of limitations</td>\n<td>2 years from date of death (O.C.G.A. § 9-3-33)</td>\n<td>3 years from date of death (S.C. Code § 15-3-530)</td>\n</tr>\n<tr>\n<td>Damages recovered for</td>\n<td>\"Full value of the life\" of the deceased</td>\n<td>Pecuniary loss plus the beneficiaries' mental shock, grief and loss of companionship; exemplary damages for reckless or wilful conduct (S.C. Code § 15-51-40)</td>\n</tr>\n</tbody>\n</table>"
+ },
+ {
+  "id": "1649",
+  "surface": "content",
+  "before": "<ul>\n<li><strong>Georgia personal injury:</strong> 2 years from the date of the accident (O.C.G.A. § 9-3-33)</li>\n<li><strong>South Carolina personal injury:</strong> 3 years from the date of the accident (S.C. Code § 15-3-530)</li>\n<li><strong>Probate creditor deadlines</strong> may impose additional requirements — particularly in South Carolina, where claims against the estate must be filed within one year of death</li>\n</ul>\n\n<p>The interaction between the personal injury statute of limitations and the probate creditor deadline can create a compressed timeline. If the at-fault driver died in the accident, you may need to act quickly to ensure your claim is filed properly in both the civil court and the probate proceeding. Do not assume you have the full two or three years — consult an attorney as soon as possible.</p>",
+  "after": "<ul>\n<li><strong>Georgia personal injury:</strong> 2 years from the date of the accident (O.C.G.A. § 9-3-33)</li>\n<li><strong>South Carolina personal injury:</strong> 3 years from the date of the accident (S.C. Code § 15-3-530)</li>\n<li><strong>Probate creditor deadlines</strong> govern any recovery beyond the driver's insurance — in South Carolina, the earlier of one year after death or eight months after the first published notice to creditors (S.C. Code § 62-3-803); in Georgia, written notice within three months of the last published notice protects your share (O.C.G.A. § 53-7-41)</li>\n</ul>\n\n<p>Any compressed timeline applies to the part of your claim that exceeds the driver's liability insurance and must reach estate assets. For the insured part, the death can pause the clock rather than shortening it: Georgia tolls the two-year period, up to five years, while the estate has no personal representative (O.C.G.A. § 9-3-93), and South Carolina suspends the three-year period for eight months after death (S.C. Code § 62-3-802(b)). Acting quickly still protects any claim beyond the policy limits, and the evidence — consult an attorney as soon as possible.</p>"
+ },
+ {
+  "id": "1649",
+  "surface": "content",
+  "before": "<ul>\n<li><strong>Georgia:</strong> You can recover if you are less than 50% at fault (O.C.G.A. § 51-12-33)</li>\n<li><strong>South Carolina:</strong> You can recover if you are less than 51% at fault</li>\n</ul>",
+  "after": "<ul>\n<li><strong>Georgia:</strong> You can recover if you are less than 50% at fault (O.C.G.A. § 51-12-33)</li>\n<li><strong>South Carolina:</strong> You can recover if you are less than 51% at fault (Nelson v. Concrete Supply Co., 1991)</li>\n</ul>"
+ },
+ {
+  "id": "1649",
+  "surface": "meta:_roden_key_takeaways",
+  "before": "Your right to compensation does not disappear when the at-fault driver dies. Georgia (O.C.G.A. § 9-2-41) and South Carolina (S.C. Code § 15-5-90) both allow personal injury claims to survive the tortfeasor's death. You can pursue the claim through the driver's liability insurance, a lawsuit against their estate, or your own UM/UIM coverage. Filing deadlines are two years in Georgia and three in South Carolina, but probate creditor deadlines may compress the timeline further.",
+  "after": "Your right to compensation does not disappear when the at-fault driver dies. Georgia (O.C.G.A. § 9-2-41) and South Carolina (S.C. Code § 15-5-90) both allow personal injury claims to survive the tortfeasor's death. You can pursue the claim through the driver's liability insurance, a lawsuit against their estate, or your own UM/UIM coverage. Filing deadlines are two years in Georgia (O.C.G.A. § 9-3-33) and three in South Carolina (S.C. Code § 15-3-530), and the driver's death can pause those clocks (O.C.G.A. § 9-3-93; S.C. Code § 62-3-802(b)), but any recovery beyond the driver's insurance must also be presented as a probate claim, in South Carolina within the earlier of one year after death or eight months after notice to creditors (S.C. Code § 62-3-803)."
+ },
+ {
+  "id": "1649",
+  "surface": "faq:1:answer",
+  "before": "No. You sue the deceased driver's <strong>estate</strong>, not the family members personally. The estate is a legal entity managed by a personal representative (executor) appointed by the probate court. The deceased driver's liability insurance typically defends the case and pays any judgment up to policy limits. Family members' personal assets are generally not at risk.",
+  "after": "No. You sue the <strong>personal representative</strong> of the deceased driver's estate (the executor or administrator appointed by the probate court) in that capacity, not the family members personally. In Georgia an estate is not itself a legal entity that can be sued (Orange County Trust Co. v. Estate of Takowsky, 1969; O.C.G.A. § 9-2-41), and in South Carolina the proceeding is against the personal representative (S.C. Code § 62-3-804). The deceased driver's liability insurance typically defends the case and pays any judgment up to policy limits. Family members' personal assets are generally not at risk unless they owned or furnished the vehicle (the family purpose doctrine) or were independently negligent."
+ },
+ {
+  "id": "1649",
+  "surface": "faq:2:answer",
+  "before": "If the deceased driver was uninsured or underinsured, you may file a claim through your own <strong>uninsured/underinsured motorist (UM/UIM) coverage</strong>. You may also pursue a claim against the estate's assets through probate court. An attorney can identify all available sources of recovery to maximize your compensation.",
+  "after": "If the deceased driver was uninsured or underinsured, you may file a claim through your own <strong>uninsured/underinsured motorist (UM/UIM) coverage</strong>. To reach the estate's assets, you may also present a claim in the probate proceeding and sue the personal representative. An attorney can identify all available sources of recovery to maximize your compensation."
+ },
+ {
+  "id": "1649",
+  "surface": "faq:3:answer",
+  "before": "The standard statutes of limitations apply — <strong>two years</strong> in Georgia (O.C.G.A. § 9-3-33) and <strong>three years</strong> in South Carolina (S.C. Code § 15-3-530). However, probate creditor deadlines may impose additional requirements, particularly in South Carolina where claims against the estate must be filed within one year of death. Consult an attorney promptly to avoid missing any deadlines.",
+  "after": "The standard statutes of limitations apply — <strong>two years</strong> in Georgia (O.C.G.A. § 9-3-33) and <strong>three years</strong> in South Carolina (S.C. Code § 15-3-530) — and the driver's death can pause them (Georgia: up to five years while the estate has no personal representative, O.C.G.A. § 9-3-93; South Carolina: eight months after death, S.C. Code § 62-3-802(b)). To reach the estate's own assets beyond the insurance, present a probate claim: in South Carolina within the earlier of one year after death or eight months after the first published notice to creditors (S.C. Code § 62-3-803(a)), a bar that does not apply to the insured part of the claim (S.C. Code § 62-3-803(d)(2)); in Georgia, notify the personal representative within three months of the last published notice (O.C.G.A. § 53-7-41). Consult an attorney promptly to avoid missing any deadlines."
+ }
+]

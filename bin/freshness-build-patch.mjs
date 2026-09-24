@@ -64,7 +64,7 @@ function align(a, b) {
   for (let i = n - 1; i >= 0; i--) for (let j = m - 1; j >= 0; j--) L[i][j] = a[i] === b[j] ? L[i + 1][j + 1] + 1 : Math.max(L[i + 1][j], L[i][j + 1]);
   const ops = []; let i = 0, j = 0;
   while (i < n && j < m) {
-    if (a[i] === b[j]) { i++; j++; }
+    if (a[i] === b[j]) { ops.push({ type: 'eq' }); i++; j++; }
     else if (L[i + 1][j] >= L[i][j + 1]) { ops.push({ type: 'del', i }); i++; }
     else { ops.push({ type: 'add', j }); j++; }
   }
@@ -73,10 +73,14 @@ function align(a, b) {
   return ops;
 }
 const ops = align(bB, bA);
-// pair adjacent del/add runs into replacements; lone adds attach to the previous unchanged block
+// pair adjacent del/add runs into replacements; lone adds attach to the previous unchanged block.
+// 'eq' ops mark unchanged blocks so two change runs separated by untouched text are never
+// merged into one edit (2026-09-24: a modified list and a paragraph inserted six blocks later
+// became one edit whose 'after' re-included the six blocks between them; the simulation caught it).
 const edits = [];
 let k = 0;
 while (k < ops.length) {
+  if (ops[k].type === 'eq') { k++; continue; }
   const dels = [], adds = [];
   while (k < ops.length && ops[k].type === 'del') dels.push(bB[ops[k++].i]);
   while (k < ops.length && ops[k].type === 'add') adds.push(bA[ops[k++].j]);

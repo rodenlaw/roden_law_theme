@@ -1,0 +1,31 @@
+{
+ "excerpt": "What limits apply to a Georgia medical malpractice claim, how damages are treated, and the deadlines that govern filing.",
+ "keyTakeaways": "Georgia does not cap compensatory damages in medical malpractice cases after the Supreme Court struck down the cap in 2010. The statute of limitations is two years from the injury, usually the date of the negligent act (O.C.G.A. § 9-3-71), with a five-year statute of repose as the absolute outer limit. Plaintiffs must file an expert affidavit with their complaint (O.C.G.A. § 9-11-9.1). Punitive damages are capped at $250,000 (O.C.G.A. § 51-12-5.1). These procedural requirements make experienced legal representation essential from the start.",
+ "faqs": [
+  {
+   "question": "Does Georgia cap damages in medical malpractice cases?",
+   "answer": "Georgia does <strong>not cap compensatory damages</strong> (economic or non-economic) in medical malpractice cases. A 2005 law capping non-economic damages at $350,000 was struck down as unconstitutional by the Georgia Supreme Court in <em>Atlanta Oculoplastic Surgery v. Nestlehutt</em> (2010). However, punitive damages are capped at $250,000 in most cases under O.C.G.A. § 51-12-5.1."
+  },
+  {
+   "question": "How long do I have to file a medical malpractice lawsuit in Georgia?",
+   "answer": "Georgia imposes a <strong>two-year statute of limitations</strong> (O.C.G.A. § 9-3-71) that generally runs from the date of the injury, usually the date of the negligent act. If the injury itself appears later — as when a misdiagnosed condition turns into a new injury — the two years run from when that injury surfaces, never from when you learned it was malpractice, and fraud by the provider pauses them (O.C.G.A. § 9-3-96). But an absolute <strong>five-year statute of repose</strong> applies — no claim can be filed more than five years after the negligence occurred, regardless of when it was discovered."
+  },
+  {
+   "question": "What is the expert affidavit requirement in Georgia medical malpractice cases?",
+   "answer": "Under O.C.G.A. § 9-11-9.1, you must file a sworn affidavit from a qualified medical expert simultaneously with your medical malpractice complaint. The expert must identify at least one specific negligent act or omission and the facts supporting it. Filing without an affidavit results in dismissal; a defective one can be cured only within 30 days of the defendant's motion."
+  },
+  {
+   "question": "What is the statute of repose for medical malpractice in Georgia?",
+   "answer": "Georgia's five-year statute of repose (O.C.G.A. § 9-3-71(b)) is an absolute deadline — no medical malpractice lawsuit can be filed more than five years after the negligent act, regardless of when the injury was discovered. The main exception is for foreign objects left in the body, which allows one year from discovery (O.C.G.A. § 9-3-72). Children under five at the time of the malpractice have until their tenth birthday (O.C.G.A. § 9-3-73)."
+  },
+  {
+   "question": "What types of damages can I recover in a Georgia medical malpractice case?",
+   "answer": "You can recover <strong>economic damages</strong> (medical expenses, lost wages, lost earning capacity) and <strong>non-economic damages</strong> (pain and suffering, emotional distress, loss of enjoyment of life) with no statutory cap. Punitive damages are available in cases of egregious conduct but are capped at $250,000 under O.C.G.A. § 51-12-5.1 unless intent to harm or substance impairment is shown, or the claim is for product liability."
+  },
+  {
+   "question": "Can I sue a hospital for medical malpractice in Georgia, or only the doctor?",
+   "answer": "You can sue both. In Georgia, hospitals can be held liable for institutional negligence — such as inadequate staffing, equipment failures, or negligent credentialing of physicians. Individual doctors, surgeons, nurses, specialists, pharmacies, and medical device manufacturers can all be named as defendants in a medical malpractice lawsuit."
+  }
+ ],
+ "metaDescription": ""
+}

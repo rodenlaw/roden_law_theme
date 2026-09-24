@@ -1,0 +1,514 @@
+{
+  "postId": 1676,
+  "slug": "medical-malpractice-limits-georgia",
+  "liveUrl": "https://rodenlaw.com/blog/medical-malpractice-limits-georgia/",
+  "verifiedAt": "2026-09-24",
+  "reviewerByJurisdiction": "Georgia-only post. Do not introduce South Carolina law anywhere on this page.",
+  "verifiedClaims": [
+    {
+      "surface": "body",
+      "claim": "the <a href=\"https://www.law.cornell.edu/wex/medical_malpractice\" target=\"_blank\" rel=\"noopener\">Cornell Law Institute's medical malpractice overview</a>",
+      "verdict": "update",
+      "currentValue": "The linked URL returns HTTP 404 ('Page not found | Legal Information Institute'). The live Wex entry is 'malpractice' at https://www.law.cornell.edu/wex/malpractice, published by the Legal Information Institute (LII) at Cornell Law School; it opens 'Malpractice, or professional negligence, is a tort committed when a professional breaches their duty to a client.' There is no 'Cornell Law Institute'.",
+      "sourceName": "Legal Information Institute, Cornell Law School — Wex: malpractice (HTTP 200); /wex/medical_malpractice (HTTP 404)",
+      "sourceUrl": "https://www.law.cornell.edu/wex/malpractice",
+      "retrievedAt": "2026-09-24",
+      "note": "Dead outbound link in the first paragraph. Change the href to /wex/malpractice and the lead-in to 'Cornell Law School's Legal Information Institute's malpractice overview'. law.cornell.edu is on the outbound allowlist (see facts-1663)."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia has some of the more complex medical malpractice rules in the Southeast.",
+      "verdict": "drop",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "Comparative regional claim with no primary source. Replace with a verifiable statement, e.g. 'Georgia layers a two-year limitation, a five-year repose, an expert-affidavit filing rule and a gross-negligence standard for emergency-room care on top of ordinary negligence law.'"
+    },
+    {
+      "surface": "body",
+      "claim": "In 2005, the Georgia legislature passed a law (O.C.G.A. § 51-13-1) capping non-economic damages at $350,000 per provider and $1.05 million total.",
+      "verdict": "update",
+      "currentValue": "§ 51-13-1(b) capped noneconomic damages at $350,000 against health care providers 'regardless of the number of defendant health care providers against whom the claim is asserted' — a single $350,000 ceiling, not $350,000 per provider. Subsections (c)–(e) added $350,000 per medical facility, $700,000 across all facilities, and an aggregate ceiling of $1,050,000. Enacted by Ga. L. 2005, p. 1, § 13/SB 3 (the Tort Reform Act of 2005). The section is still printed in the 2025 Code.",
+      "sourceName": "O.C.G.A. § 51-13-1(b)–(e) (Justia, 2025 Code); Nestlehutt, slip op. at 2–3 (describing the caps)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-13/section-51-13-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Minimal edit: '$350,000 against health care providers (no matter how many were sued), $350,000 per medical facility, and $1.05 million in total'. Same error appears in faq:0 in a milder form ('$350,000')."
+    },
+    {
+      "surface": "body",
+      "claim": "the Georgia Supreme Court struck down that cap as unconstitutional in <em>Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt</em> (2010), ruling that it violated the right to a jury trial under the Georgia Constitution.",
+      "verdict": "keep",
+      "currentValue": "Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt, 286 Ga. 731, 691 S.E.2d 218 (Ga. Mar. 22, 2010) (Hunstein, C.J.): 'the noneconomic damages caps in OCGA § 51-13-1 violate the constitutional right to trial by jury' under Ga. Const. of 1983, Art. I, Sec. I, Par. XI(a), and the statute is 'wholly void and of no force and effect from the date it was enacted' (applied retroactively). Jury verdict of $1,265,000 including $900,000 pain and suffering and $250,000 loss of consortium was reinstated in full.",
+      "sourceName": "Nestlehutt opinion PDF (Justia case host); Justia annotation to § 51-13-1 ('the statute was wholly void and of no force and effect from the date of the statute's enactment')",
+      "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/2010/s09a1432.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Optionally add the reporter citation '286 Ga. 731 (2010)' and one clause: 'The statute still appears in the Code but is void and unenforceable.' The opinion expressly reserved subsection (f) (periodic payment of future damages of $350,000 or more) — do not say the whole chapter was struck."
+    },
+    {
+      "surface": "body",
+      "claim": "This means that today, there is <strong>no statutory cap on compensatory damages</strong> — including pain and suffering — in Georgia medical malpractice cases. A jury can award whatever amount it determines is fair and supported by the evidence.",
+      "verdict": "update",
+      "currentValue": "Still no cap. But SB 68 (2025 Tort Reform Act, effective on the Governor's approval, 2025-04-21) rewrote O.C.G.A. § 9-10-184: counsel 'shall not argue the worth or monetary value of noneconomic damages' or reference 'any specific amount or range of amounts of noneconomic damages' except after the close of evidence, at the party's first opportunity to argue damages, and only where the argument is 'rationally related to the evidence of noneconomic damages' and does not 'make reference to objects or values having no rational connection to the facts proved.' Section 9(b) applies this to cases pending on the effective date. New § 51-12-1.1 (causes of action arising on/after 2025-04-21) limits medical special damages to 'the reasonable value of medically necessary care' and lets the jury see both billed amounts and amounts actually necessary to satisfy the charges under insurance.",
+      "sourceName": "Georgia SB 68 (2025), signed text, Sections 1, 7, 9 (Governor's office); O.C.G.A. §§ 9-10-184, 51-12-1.1 (Justia, 2025 Code)",
+      "sourceUrl": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download",
+      "retrievedAt": "2026-09-24",
+      "note": "Add one sentence after 'supported by the evidence': 'Since the 2025 tort-reform act (SB 68), lawyers may argue a dollar figure for pain and suffering only in closing, and only if it is rationally tied to the evidence (O.C.G.A. § 9-10-184).' SB 68 did not amend § 51-13-1, § 9-3-71, § 9-3-72, § 9-3-73, § 9-11-9.1, § 51-1-29.5, § 51-12-5.1 or § 51-12-33's 50% bar; it contains no medical-malpractice-specific provision."
+    },
+    {
+      "surface": "body",
+      "claim": "However, Georgia does cap <strong>punitive damages</strong> at $250,000 in most cases (O.C.G.A. § 51-12-5.1). Exceptions exist when the defendant acted with specific intent to cause harm or was under the influence of drugs or alcohol, in which case punitive damages are uncapped.",
+      "verdict": "update",
+      "currentValue": "$250,000 cap under § 51-12-5.1(g) (unchanged by SB 68). Subsection (f) lifts the cap for specific intent to cause harm, or where the defendant acted 'under the influence of alcohol, drugs other than lawfully prescribed drugs administered in accordance with prescription ... to that degree that his or her judgment is substantially impaired', against the active tort-feasor only; (e)(1) also removes the cap in product-liability cases. In a malpractice case punitive damages require clear and convincing evidence of wilful misconduct, malice, fraud, wantonness, oppression or an entire want of care (§ 51-12-5.1(b)); negligence, even gross negligence, is not enough (Roseberry v. Brooks, 218 Ga. App. 202 (1995), annotated on Justia).",
+      "sourceName": "O.C.G.A. § 51-12-5.1(b),(e)–(g) and Justia annotations (verified in facts-1663, 2026-09-23)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Minimal edit: 'was substantially impaired by alcohol or drugs' and add 'or in product liability cases'. Optionally add: 'Punitive damages are rare in malpractice cases — they require clear and convincing proof of wilful or wanton conduct, not just negligence.' Reused from the 1663 pack."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia imposes a <strong>two-year statute of limitations</strong> for medical malpractice claims under O.C.G.A. § 9-3-71. The clock generally starts on the date the negligent act or omission occurred — not the date you discovered the injury.",
+      "verdict": "update",
+      "currentValue": "§ 9-3-71(a): an action 'shall be brought within two years after the date on which an injury or death arising from a negligent or wrongful act or omission occurred.' The trigger is the injury (or death), which in most cases — including misdiagnosis, where 'the misdiagnosis itself is the injury' — coincides with the negligent act. It is never the date of discovery: the limitation 'commences the date the patient first experiences symptoms of a new injury ... not on the date the patient discovers either the injury or the doctor's negligence' (Cleaveland v. Gannon, 284 Ga. 376 (2008)).",
+      "sourceName": "O.C.G.A. § 9-3-71(a),(c) (Justia, 2025 Code) and annotations (Cleaveland v. Gannon; Surgery Assocs. v. Kearby, 199 Ga. App. 716 (1991); Jones v. Lamon, 206 Ga. App. 842 (1992))",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/",
+      "retrievedAt": "2026-09-24",
+      "note": "Change 'the date the negligent act or omission occurred' to 'the date the injury or death occurred — which is almost always the date of the negligent act'. The second half ('not the date you discovered the injury') is correct and should stay."
+    },
+    {
+      "surface": "body",
+      "claim": "If a surgeon left a sponge inside you during an operation, the two-year clock starts on the date of the surgery — even if you did not discover the sponge until months or years later. Georgia's discovery rule (discussed below) provides a limited exception, but the outer time boundary is absolute.",
+      "verdict": "update",
+      "currentValue": "The example contradicts the statute the post itself cites. A retained sponge is a foreign object, and § 9-3-72 says 'The limitations of Code Section 9-3-71 shall not apply where a foreign object has been left in a patient's body' — the action must be brought 'within one year after the negligent or wrongful act or omission is discovered.' Georgia also has no 'discovery rule' for medical malpractice (see the discovery-rule section below).",
+      "sourceName": "O.C.G.A. § 9-3-72; § 9-3-73(e) (foreign-object cases governed by § 9-3-72)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-72/",
+      "retrievedAt": "2026-09-24",
+      "note": "Replace the sponge with a non-foreign-object example: 'If a radiologist misreads a scan, the two-year clock starts when the misdiagnosis injures you — typically that day — even if you learn of the error much later.' Delete 'Georgia's discovery rule (discussed below) provides a limited exception'; say instead 'The only ways the clock moves are the new-injury rule in misdiagnosis cases and fraud by the provider, and the five-year outer boundary is absolute.'"
+    },
+    {
+      "surface": "body",
+      "claim": "Standard deadline | 2 years from the negligent act | O.C.G.A. § 9-3-71",
+      "verdict": "update",
+      "currentValue": "2 years from the date of injury or death (usually the date of the negligent act) — O.C.G.A. § 9-3-71(a).",
+      "sourceName": "O.C.G.A. § 9-3-71(a)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/",
+      "retrievedAt": "2026-09-24",
+      "note": "Comparison-table row 1."
+    },
+    {
+      "surface": "body",
+      "claim": "Discovery rule extension | 2 years from discovery of injury | O.C.G.A. § 9-3-71(b)",
+      "verdict": "update",
+      "currentValue": "No such rule exists. § 9-3-71(b) is the five-year statute of repose, not a discovery rule, and Georgia courts have rejected discovery-based accrual: 'the controlling factor is the date of the negligent or wrongful act and not the date on which the plaintiff should have, or did in fact, discover the negligence' (Jones v. Lamon, 206 Ga. App. 842 (1992)); the Supreme Court held the subsequent-injury exception 'did not simply create a discovery rule in violation of § 9-3-71(a)' (Amu v. Barnes, 283 Ga. 549 (2008)). What does exist: (1) in misdiagnosis cases, when the misdiagnosis later produces a new injury after a symptom-free period, the two years run from when the new injury's symptoms first appear (Amu v. Barnes; Cleaveland v. Gannon, 284 Ga. 376 (2008)); (2) fraud by the provider that deters suit tolls the limitation until the fraud is discovered (§ 9-3-96), but fraud does not toll the repose (Esener v. Kinsey, 240 Ga. App. 21).",
+      "sourceName": "O.C.G.A. § 9-3-71(b),(c) and Justia annotations; O.C.G.A. § 9-3-96",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/",
+      "retrievedAt": "2026-09-24",
+      "note": "Most consequential error on the page: it tells readers a discovery rule exists and cites the repose subsection for it. Replace the row with 'Misdiagnosis that causes a later new injury | 2 years from when the new injury's symptoms first appear | Amu v. Barnes, 283 Ga. 549 (2008)' and optionally a row 'Fraud by the provider | tolled until the fraud is discovered (limitation only, not repose) | O.C.G.A. § 9-3-96'."
+    },
+    {
+      "surface": "body",
+      "claim": "Absolute outer limit (statute of repose) | 5 years from the negligent act | O.C.G.A. § 9-3-71(b)",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-71(b): 'in no event may an action for medical malpractice be brought more than five years after the date on which the negligent or wrongful act or omission occurred'; (c): 'a five-year statute of ultimate repose and abrogation'",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "Minors | Tolled until age 5 (then 2 years) | O.C.G.A. § 9-3-73",
+      "verdict": "update",
+      "currentValue": "§ 9-3-73(b): a minor under age five when the cause of action arose 'shall have two years from the date of such minor's fifth birthday' to sue (i.e., until the seventh birthday); minors who have reached age five are subject to the ordinary two-year period. Repose under (c)(2): a minor under five at the time of the act must sue before the tenth birthday; a minor five or older gets five years from the act. Persons legally incompetent because of intellectual disability or mental illness get no tolling at all ((b), (c)(1); Williams v. Regency Hosp. Co., 322 Ga. 452 (2025)).",
+      "sourceName": "O.C.G.A. § 9-3-73(b),(c),(d)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-73/",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite the cell: 'Under age 5 when the malpractice occurred: 2 years from the fifth birthday, and never after the tenth birthday. Age 5 or older: the ordinary 2-year / 5-year periods — O.C.G.A. § 9-3-73(b),(c)'. 'Tolled until age 5' is the right idea but the repose cutoff at age 10 is missing and matters for birth-injury readers."
+    },
+    {
+      "surface": "body",
+      "claim": "Foreign object left in body | 1 year from discovery | O.C.G.A. § 9-3-72",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-72: 'an action shall be brought within one year after the negligent or wrongful act or omission is discovered'; 'foreign object' excludes 'a chemical compound, fixation device, or prosthetic aid or device'",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-72/",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "Even with the discovery rule, Georgia imposes an <strong>absolute five-year statute of repose</strong> under O.C.G.A. § 9-3-71(b). This means that no medical malpractice lawsuit can be filed more than five years after the date the negligent act occurred — regardless of when the injury was discovered.",
+      "verdict": "update",
+      "currentValue": "The repose is correct; delete 'Even with the discovery rule' (no such rule). The repose runs from the act, not from the injury or its discovery (Christian v. Atha, 267 Ga. App. 186 (2004); Zechmann v. Thigpen, 210 Ga. App. 726 (1993)); a defendant can be equitably estopped from raising it where the plaintiff relied on the defendant's fraud (Esener v. Kinsey), and the 2020 COVID judicial-emergency order tolled it (Golden v. Floyd Healthcare Mgmt., 319 Ga. 496 (2024)).",
+      "sourceName": "O.C.G.A. § 9-3-71(b) and Justia annotations",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/",
+      "retrievedAt": "2026-09-24",
+      "note": "Change the opening to 'Whatever moves the two-year clock, Georgia imposes...'."
+    },
+    {
+      "surface": "body",
+      "claim": "The only exception is for <strong>foreign objects left in the body</strong> (such as surgical sponges, instruments, or broken device components). In those cases, O.C.G.A. § 9-3-72 allows the patient to file within one year of discovering the foreign object, even if more than five years have passed since the surgery.",
+      "verdict": "update",
+      "currentValue": "Foreign-object cases are exempt from both § 9-3-71 limits, but § 9-3-72 excludes 'a chemical compound, fixation device, or prosthetic aid or device' — so a broken plate, screw, implant or prosthesis component is not a 'foreign object'. Nor is it the only exception: minors under five get a repose running to the tenth birthday (§ 9-3-73(c)(2)(A)).",
+      "sourceName": "O.C.G.A. § 9-3-72; § 9-3-73(c),(e)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-72/",
+      "retrievedAt": "2026-09-24",
+      "note": "Delete 'or broken device components'; add '(implants, fixation hardware and prosthetics do not count)'; change 'The only exception' to 'The main exception' and mention the under-five repose."
+    },
+    {
+      "surface": "body",
+      "claim": "It can bar claims for injuries that took years to manifest — such as delayed cancer diagnoses or slow-developing complications from a surgical error.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Justia annotations to § 9-3-71 (Braden v. Bell, 222 Ga. App. 144: 'if the injury occurs outside that period, it is not actionable'; Zechmann v. Thigpen: repose ran from the misdiagnosis, not from when the glaucoma developed)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia's discovery rule accounts for medical injuries that surface only later. Under O.C.G.A. § 9-3-71(b), the two-year statute of limitations begins running on the date the patient <strong>knew or should have known</strong> that they were injured by medical negligence — rather than the date the negligence occurred.",
+      "verdict": "update",
+      "currentValue": "Wrong on both counts. § 9-3-71(b) is the repose, and Georgia has no 'knew or should have known' rule for medical malpractice: the period runs from the injury, and 'the fact that the patient did not know the medical cause of the patient's suffering does not affect the applicability of the statute of limitations' (Ford v. Dove, 218 Ga. App. 828 (1995)). The narrow exception is the new-injury rule in misdiagnosis cases — when a misdiagnosed condition later produces a new injury after a symptom-free period, the two years run from when the symptoms of that new injury first appear, 'not on the date the patient discovers either the injury or the doctor's negligence' (Cleaveland v. Gannon, 284 Ga. 376 (2008); Amu v. Barnes, 283 Ga. 549 (2008)). Fraud by the provider tolls the limitation until the fraud is discovered (§ 9-3-96) but not the repose.",
+      "sourceName": "O.C.G.A. § 9-3-71 and Justia annotations (Amu v. Barnes; Cleaveland v. Gannon; Ford v. Dove; Kaminer v. Canas, 282 Ga. 830 (2007)); O.C.G.A. § 9-3-96",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/",
+      "retrievedAt": "2026-09-24",
+      "note": "Retitle the section 'When the Clock Starts Later: Misdiagnosis and Fraud'. Rewrite the paragraph around the new-injury rule and § 9-3-96. Do not use 'discovery rule' or 'knew or should have known' anywhere on the page."
+    },
+    {
+      "surface": "body",
+      "claim": "Common situations where the discovery rule applies: Misdiagnosis or failure to diagnose — a doctor missed cancer that was visible on imaging, but the patient did not learn of the error until symptoms worsened months later; Medication errors — a pharmacy dispensed the wrong medication, and the adverse effects developed gradually; Surgical complications — internal damage from a procedure that did not produce symptoms until well after the surgery",
+      "verdict": "update",
+      "currentValue": "Only the misdiagnosis bullet maps to a real rule, and even there the trigger is the onset of new-injury symptoms, not learning of the error (Amu v. Barnes: colon cancer following a misdiagnosed hemorrhoid was a new injury). For drug injuries and post-surgical complications the courts run the clock from when the injury first manifests as symptoms, not from diagnosis or discovery (Deen v. Pounds, 312 Ga. App. 207 (2011): drug-induced tardive dyskinesia — clock ran from first symptoms in 2004, not the 2005 diagnosis; Beamon v. Mahadevan, 329 Ga. App. 685 (2014): clock ran from when the surgical injury 'began manifesting itself').",
+      "sourceName": "Justia annotations to O.C.G.A. § 9-3-71 (Amu v. Barnes; Deen v. Pounds; Beamon v. Mahadevan; Smith v. Harris, 294 Ga. App. 333 (2008))",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/",
+      "retrievedAt": "2026-09-24",
+      "note": "Reframe the list as 'When the injury itself comes later than the mistake, the two years run from the injury — for example: a misdiagnosed condition that later turns into a new, worse injury (the clock starts when those new symptoms appear); a drug reaction whose symptoms surface weeks later (the clock starts at the first symptoms, not the later diagnosis).' Drop 'until symptoms worsened' framing; worsening of the same injury does not restart the clock (Kaminer v. Canas)."
+    },
+    {
+      "surface": "body",
+      "claim": "However, the discovery rule does not eliminate the five-year statute of repose. Even if you did not discover the injury until year four, you still only have until year five to file suit.",
+      "verdict": "update",
+      "currentValue": "Substance correct (the repose runs from the act regardless of the new-injury rule or fraud); only the phrase 'the discovery rule' needs to go.",
+      "sourceName": "O.C.G.A. § 9-3-71(b); Simmons v. United States, 421 F.3d 1199 (11th Cir. 2005) (repose is not tolled)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/",
+      "retrievedAt": "2026-09-24",
+      "note": "Change to 'None of this moves the five-year statute of repose. Even if the new injury surfaced in year four...'."
+    },
+    {
+      "surface": "body",
+      "claim": "When you file a medical malpractice lawsuit, you must simultaneously file an affidavit from a qualified medical expert who has reviewed the case and concluded that: The healthcare provider deviated from the applicable standard of care; That deviation was the proximate cause of the patient's injury",
+      "verdict": "update",
+      "currentValue": "§ 9-11-9.1(a) requires the plaintiff 'to file with the complaint an affidavit of an expert competent to testify, which affidavit shall set forth specifically at least one negligent act or omission claimed to exist and the factual basis for each such claim.' The statute does not require the affidavit to address causation. Under (b), if the limitation period will expire within ten days of filing and the firm was retained within 90 days of that expiration, the attorney may file an affidavit saying so and the plaintiff gets 45 days to supply the expert affidavit.",
+      "sourceName": "O.C.G.A. § 9-11-9.1(a),(b) (Justia, 2025 Code, as amended by Ga. L. 2026, p. 226/HB 185 eff. 2026-05-11 — only the dietitian wording changed)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-3/section-9-11-9-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Replace the two-item list with 'identifies at least one specific negligent act or omission and the factual basis for it'. Causation is proven at trial, not in the affidavit. Optionally add the 45-day emergency window. Same error in faq:2."
+    },
+    {
+      "surface": "body",
+      "claim": "The expert must be a licensed healthcare professional who is competent to testify about the standard of care in the defendant's specialty.",
+      "verdict": "keep",
+      "currentValue": "O.C.G.A. § 24-7-702(c): in a medical malpractice action the expert must have been licensed at the time of the act, must have 'actual professional knowledge and experience in the area of practice or specialty' from active practice or teaching in it for at least three of the last five years, and must generally be a member of the same profession (MD/DO cross-testimony allowed; physicians who supervised nurses, PAs, etc. for three of five years may testify to those providers' standard).",
+      "sourceName": "O.C.G.A. § 24-7-702(c)(1)–(2)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-24/chapter-7/section-24-7-702/",
+      "retrievedAt": "2026-09-24",
+      "note": "Optionally add '(O.C.G.A. § 24-7-702) — typically someone who has practiced or taught in that specialty for at least three of the last five years'."
+    },
+    {
+      "surface": "body",
+      "claim": "Filing a lawsuit without this affidavit — or with an affidavit from an unqualified expert — will result in dismissal.",
+      "verdict": "update",
+      "currentValue": "No affidavit: 'the complaint shall be dismissed for failure to state a claim' (§ 9-11-9.1(b)), and a missing affidavit cannot be cured by amendment (Upson County Hosp. v. Head, 246 Ga. App. 386 (2000)). A defective affidavit (including one from an incompetent expert) is different: under (e) the plaintiff 'may cure the alleged defect by amendment ... within 30 days of service of the motion alleging that the affidavit is defective', including by substituting a competent expert (Gala v. Fisher, 296 Ga. 870 (2015)).",
+      "sourceName": "O.C.G.A. § 9-11-9.1(b),(e) and Justia annotations",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-3/section-9-11-9-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Change to 'Filing without the affidavit means dismissal. A defective affidavit — including one from an unqualified expert — can be cured only by amending within 30 days of the defendant's motion (O.C.G.A. § 9-11-9.1(e)).'"
+    },
+    {
+      "surface": "body",
+      "claim": "This requirement exists to prevent frivolous medical malpractice claims",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Justia annotation to § 9-11-9.1 (Bowen v. Adams, 203 Ga. App. 123 (1992): purpose 'is to reduce the number of frivolous malpractice suits being filed')",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-3/section-9-11-9-1/",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "Economic Damages ... Past and future medical expenses ... Lost wages ... Lost earning capacity ... Out-of-pocket costs; Non-Economic Damages ... Pain and suffering ... Emotional distress ... Loss of enjoyment of life ... Loss of consortium ... Disfigurement or scarring",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-10-184(a)(1)–(2) as rewritten by SB 68 § 1 (economic damages include past and future medical expenses, rehabilitation, therapy, loss of wages, income, earning capacity, services; noneconomic damages include pain, distress, suffering, mental anguish, disfigurement, loss of enjoyment of life, loss of society and companionship, loss of consortium)",
+      "sourceUrl": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download",
+      "retrievedAt": "2026-09-24",
+      "note": "Matches the statutory definitions. Note § 51-12-1.1(b) now measures medical specials by 'the reasonable value of medically necessary care' for causes of action arising on or after 2025-04-21."
+    },
+    {
+      "surface": "body",
+      "claim": "As noted above, Georgia does <strong>not cap</strong> compensatory damages (economic or non-economic) in medical malpractice cases. Punitive damages are capped at $250,000 unless an exception applies (O.C.G.A. § 51-12-5.1).",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Nestlehutt, 286 Ga. 731 (2010); O.C.G.A. § 51-12-5.1(g)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "If medical malpractice caused a patient's death, Georgia law allows the surviving spouse or next of kin to file a <a href=\"/practice-areas/wrongful-death-lawyers/\">wrongful death claim</a>. The two-year statute of limitations runs from the date of death (O.C.G.A. § 9-3-71(a)).",
+      "verdict": "update",
+      "currentValue": "Who sues: 'The surviving spouse or, if there is no surviving spouse, a child or children, either minor or sui juris' (§ 51-4-2(a)) — not 'next of kin' generally; the measure is 'the full value of the life of the decedent, as shown by the evidence' (§ 51-4-1(1)). Two years from death is right: § 9-3-71(a) runs from 'the date on which an injury or death ... occurred', and the wrongful-death limitation 'begins to run from date of death, not from date of the negligent act' (Clark v. Singer, 250 Ga. 470 (1983)). But the five-year repose still runs from the negligent act, so a death more than five years after the malpractice cannot be sued on. Punitive damages are not added to a Georgia wrongful-death claim (Ford Motor Co. v. Stubblefield, 171 Ga. App. 331 (1984), per facts-1663).",
+      "sourceName": "O.C.G.A. § 51-4-2(a); § 51-4-1(1); § 9-3-71(a),(b) and annotations",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-4/section-51-4-2/",
+      "retrievedAt": "2026-09-24",
+      "note": "Change 'surviving spouse or next of kin' to 'surviving spouse — or, if there is none, the children — (O.C.G.A. § 51-4-2)' and add 'The claim recovers the full value of the decedent's life (O.C.G.A. § 51-4-1). The five-year statute of repose still runs from the negligent act.' I did not verify § 51-4-4 (parents) or § 51-4-5 (administrator); do not add them."
+    },
+    {
+      "surface": "body",
+      "claim": "Medical malpractice encompasses any situation where a healthcare provider's negligence causes patient harm.",
+      "verdict": "keep",
+      "currentValue": "O.C.G.A. § 9-3-70: an 'action for medical malpractice' is 'any claim for damages resulting from the death of or injury to any person arising out of' health, medical, dental or surgical service, diagnosis, prescription, treatment or care by an authorized person, or care or service by a hospital, nursing home, clinic or facility or its agents. § 51-1-27: a practitioner 'must bring to the exercise of his profession a reasonable degree of care and skill. Any injury resulting from a want of such care and skill shall be a tort for which a recovery may be had.'",
+      "sourceName": "O.C.G.A. § 9-3-70; § 51-1-27",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-70/",
+      "retrievedAt": "2026-09-24",
+      "note": "Optionally cite § 9-3-70 and § 51-1-27 here."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Emergency room errors</strong> — premature discharge, failure to order appropriate tests, or misreading diagnostic results",
+      "verdict": "update",
+      "currentValue": "Emergency-room claims carry a higher bar the post never mentions: for a claim 'arising out of the provision of emergency medical care in a hospital emergency department or obstetrical unit or in a surgical suite immediately following' ER treatment, 'no physician or health care provider shall be held liable unless it is proven by clear and convincing evidence that the physician or health care provider's actions showed gross negligence' (§ 51-1-29.5(c)). The standard stops applying once the patient 'is stabilized and is capable of receiving medical treatment as a nonemergency patient' ((a)(5)); whether that point was reached is a jury question (Nguyen v. Southwestern Emergency Physicians, 298 Ga. 75 (2015)). Upheld in Gliemmo v. Cousineau, 287 Ga. 7 (2010).",
+      "sourceName": "O.C.G.A. § 51-1-29.5(a)(5),(c),(d) and Justia annotations",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-29-5/",
+      "retrievedAt": "2026-09-24",
+      "note": "Append to the bullet: '— note that ER and obstetrical-emergency care is judged under a gross-negligence standard proven by clear and convincing evidence (O.C.G.A. § 51-1-29.5), a much higher bar than ordinary malpractice'. Also belongs in the burden-of-proof section."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong><a href=\"/practice-areas/nursing-home-abuse-lawyers/\">Nursing home neglect</a></strong> — inadequate staffing, failure to prevent falls, medication mismanagement, or bedsore development",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-70(2) (care by a nursing home is within 'action for medical malpractice'); Justia annotations to § 9-11-9.1 (Gaddis v. Chatsworth Health Care Ctr., 282 Ga. App. 615 (2006): fall-precaution decisions sounded in professional negligence; Emory Healthcare v. Pardue, 328 Ga. App. 664 (2014): some falls are ordinary negligence)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-70/",
+      "retrievedAt": "2026-09-24",
+      "note": "Some nursing-home claims are ordinary negligence and need no affidavit; not an error to leave as is."
+    },
+    {
+      "surface": "body",
+      "claim": "Multiple parties can be liable in a medical malpractice case: Individual physicians and surgeons ... Hospitals and medical facilities ... Nurses and other staff ... Specialists and consultants ... Pharmacies ... Medical device manufacturers",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-70(1)–(2); § 9-11-9.1(a)(1)–(3) and (g) (medical doctors, nurses, pharmacists, licensed health care facilities); § 51-1-29.5(a)(10)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-3/section-9-11-9-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "A device claim against a manufacturer is product liability, not malpractice; the post already says so."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia medical malpractice claims require the plaintiff to prove four elements by a <strong>preponderance of the evidence</strong> (more likely than not)",
+      "verdict": "update",
+      "currentValue": "Correct as the general rule, with one statutory exception the post omits: emergency medical care in an ER, obstetrical unit or post-ER surgical suite requires clear and convincing evidence of gross negligence (§ 51-1-29.5(c)). Punitive damages also require clear and convincing evidence (§ 51-12-5.1(b)).",
+      "sourceName": "O.C.G.A. § 51-1-29.5(c); § 51-12-5.1(b)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-29-5/",
+      "retrievedAt": "2026-09-24",
+      "note": "Add after the list: 'The one exception is emergency care: for treatment in a hospital emergency department, obstetrical unit, or a surgical suite immediately after ER evaluation, you must prove gross negligence by clear and convincing evidence (O.C.G.A. § 51-1-29.5).'"
+    },
+    {
+      "surface": "body",
+      "claim": "The \"standard of care\" is defined as what a <strong>reasonably competent healthcare provider in the same specialty</strong> would have done under similar circumstances. This is almost always established through expert testimony — you cannot simply argue that a bad outcome means malpractice occurred.",
+      "verdict": "keep",
+      "currentValue": "§ 51-1-27 requires 'a reasonable degree of care and skill'; § 24-7-702(c) ties expert competency to the specialty; the affidavit statute annotations confirm an affidavit is required only 'when the negligent doing of a thing must be proved by reliance upon a general standard of care' (Roebuck v. Smith, 204 Ga. App. 20 (1992)).",
+      "sourceName": "O.C.G.A. § 51-1-27; § 24-7-702(c); Justia annotations to § 9-11-9.1",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-27/",
+      "retrievedAt": "2026-09-24",
+      "note": "Optionally cite § 51-1-27."
+    },
+    {
+      "surface": "body",
+      "claim": "Expert affidavit required at filing ... High cost of litigation ... Aggressive defense ... Complex medical evidence ... Short deadlines — the two-year statute of limitations combined with the pre-filing expert requirement means time is compressed",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-11-9.1(a); § 9-3-71(a); the remaining bullets are practice statements, not legal or statistical claims",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-3/section-9-11-9-1/",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "our <a href=\"/attorneys/\">attorneys</a> handle medical malpractice cases from our <a href=\"/locations/georgia/savannah/\">Savannah</a> and <a href=\"/locations/georgia/darien/\">Darien</a> offices",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "client.json locations: Savannah, GA (333 Commercial Dr.) and Darien, GA (1108 North Way)",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "Firm fact; both Georgia offices exist in the identity record."
+    },
+    {
+      "surface": "body",
+      "claim": "Call Roden Law at <a href=\"tel:+18447378587\">1-844-RESULTS</a>",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "profiles/writer-profile.md ('the toll-free line 1-844-RESULTS is tel:+18447378587')",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "href matches; this post is not one of the transposed-number posts."
+    },
+    {
+      "surface": "body",
+      "claim": "We work on a <strong>contingency fee basis</strong> — you pay nothing unless we recover compensation for you.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "profiles/writer-profile.md trust signals (firm fact)",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "excerpt",
+      "claim": "What limits apply to a Georgia medical malpractice claim, how damages are treated, and the deadlines that govern filing.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "No figures or legal assertions",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Georgia does not cap compensatory damages in medical malpractice cases after the Supreme Court struck down the cap in 2010.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Nestlehutt, 286 Ga. 731 (Ga. Mar. 22, 2010)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/2010/s09a1432.html",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "The statute of limitations is two years from the negligent act (O.C.G.A. § 9-3-71), with a five-year statute of repose as the absolute outer limit.",
+      "verdict": "update",
+      "currentValue": "Two years from the date of injury or death, which is usually the date of the negligent act (§ 9-3-71(a)); five-year repose from the act (§ 9-3-71(b)).",
+      "sourceName": "O.C.G.A. § 9-3-71(a),(b)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/",
+      "retrievedAt": "2026-09-24",
+      "note": "Minimal edit: 'two years from the injury (usually the date of the negligent act)'. Keep the plain-text single-paragraph format."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Plaintiffs must file an expert affidavit with their complaint (O.C.G.A. § 9-11-9.1). Punitive damages are capped at $250,000 (O.C.G.A. § 51-12-5.1).",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-11-9.1(a); § 51-12-5.1(g)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-3/section-9-11-9-1/",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "faq:0",
+      "claim": "Georgia does <strong>not cap compensatory damages</strong> (economic or non-economic) in medical malpractice cases. A 2005 law capping non-economic damages at $350,000 was struck down as unconstitutional by the Georgia Supreme Court in <em>Atlanta Oculoplastic Surgery v. Nestlehutt</em> (2010). However, punitive damages are capped at $250,000 in most cases under O.C.G.A. § 51-12-5.1.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-13-1(b); Nestlehutt, 286 Ga. 731 (2010); § 51-12-5.1(g)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-13/section-51-13-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Accurate as written ($350,000 was the provider cap). Optionally add '(O.C.G.A. § 51-13-1)' and 'the statute remains on the books but is unenforceable'. Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:1",
+      "claim": "Georgia imposes a <strong>two-year statute of limitations</strong> (O.C.G.A. § 9-3-71) that generally runs from the date of the negligent act. The discovery rule may extend this if the injury was not immediately apparent, but an absolute <strong>five-year statute of repose</strong> applies — no claim can be filed more than five years after the negligence occurred, regardless of when it was discovered.",
+      "verdict": "update",
+      "currentValue": "Two years from the date of injury or death — usually the date of the negligent act (§ 9-3-71(a)). There is no discovery rule; if a misdiagnosis later causes a new injury, the two years run from when that new injury's symptoms first appear (Amu v. Barnes, 283 Ga. 549 (2008)), and fraud by the provider tolls the limitation (§ 9-3-96). The five-year repose is absolute.",
+      "sourceName": "O.C.G.A. § 9-3-71(a),(b) and annotations; § 9-3-96",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/",
+      "retrievedAt": "2026-09-24",
+      "note": "Replace 'The discovery rule may extend this if the injury was not immediately apparent' with 'If the injury itself appears later — as when a misdiagnosed condition turns into a new injury — the two years run from when that injury surfaces, never from when you learned it was malpractice'. Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:2",
+      "claim": "Under O.C.G.A. § 9-11-9.1, you must file a sworn affidavit from a qualified medical expert simultaneously with your medical malpractice complaint. The expert must confirm that the healthcare provider deviated from the standard of care and that the deviation caused your injury. Filing without a proper affidavit results in dismissal.",
+      "verdict": "update",
+      "currentValue": "The affidavit must 'set forth specifically at least one negligent act or omission claimed to exist and the factual basis for each such claim' (§ 9-11-9.1(a)); it need not address causation. Filing with no affidavit results in dismissal ((b)); a defective affidavit can be cured by amendment within 30 days of the motion to dismiss ((e)).",
+      "sourceName": "O.C.G.A. § 9-11-9.1(a),(b),(e)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-3/section-9-11-9-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Change the middle sentence to 'The expert must identify at least one specific negligent act or omission and the facts supporting it.' Change the last sentence to 'Filing without an affidavit results in dismissal; a defective one can be cured only within 30 days of the defendant's motion.' Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:3",
+      "claim": "Georgia's five-year statute of repose (O.C.G.A. § 9-3-71(b)) is an absolute deadline — no medical malpractice lawsuit can be filed more than five years after the negligent act, regardless of when the injury was discovered. The only exception is for foreign objects left in the body, which allows one year from discovery (O.C.G.A. § 9-3-72).",
+      "verdict": "update",
+      "currentValue": "Correct except 'The only exception': minors under five when the malpractice occurred have until their tenth birthday (§ 9-3-73(c)(2)(A)), and § 9-3-72's 'foreign object' excludes chemical compounds, fixation devices and prosthetics.",
+      "sourceName": "O.C.G.A. § 9-3-71(b); § 9-3-72; § 9-3-73(c)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-73/",
+      "retrievedAt": "2026-09-24",
+      "note": "Change 'The only exception is' to 'The main exception is' and append 'Children under five at the time of the malpractice have until their tenth birthday (O.C.G.A. § 9-3-73).' Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:4",
+      "claim": "You can recover <strong>economic damages</strong> (medical expenses, lost wages, lost earning capacity) and <strong>non-economic damages</strong> (pain and suffering, emotional distress, loss of enjoyment of life) with no statutory cap. Punitive damages are available in cases of egregious conduct but are capped at $250,000 under O.C.G.A. § 51-12-5.1 unless intent to harm or substance impairment is shown.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Nestlehutt (2010); O.C.G.A. § 9-10-184(a); § 51-12-5.1(b),(f),(g)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "'Substance impairment' already tracks (f). Optionally add 'or in product liability cases'. Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:5",
+      "claim": "You can sue both. In Georgia, hospitals can be held liable for institutional negligence — such as inadequate staffing, equipment failures, or negligent credentialing of physicians. Individual doctors, surgeons, nurses, specialists, pharmacies, and medical device manufacturers can all be named as defendants in a medical malpractice lawsuit.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-70(2); § 9-11-9.1(a)(3) (licensed health care facilities); § 51-1-29.5(a)(10)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-70/",
+      "retrievedAt": "2026-09-24",
+      "note": "A device manufacturer is sued in product liability rather than malpractice; the body already frames it that way. Publishes as FAQPage structured data."
+    }
+  ],
+  "recommendedEdits": [
+    "Body, intro: fix the dead outbound link — href https://www.law.cornell.edu/wex/medical_malpractice (404) → https://www.law.cornell.edu/wex/malpractice; lead-in 'Cornell Law Institute' → 'Cornell Law School's Legal Information Institute'.",
+    "Body, intro: drop 'Georgia has some of the more complex medical malpractice rules in the Southeast' (unsourced regional comparison) or replace with a concrete list of the four rules the post covers.",
+    "Body, damages-caps section: '$350,000 per provider and $1.05 million total' → '$350,000 against health care providers regardless of how many were sued, $350,000 per medical facility, and $1.05 million in total' (O.C.G.A. § 51-13-1(b)–(e)); optionally add '286 Ga. 731 (2010)' and 'the statute remains printed in the Code but is void'.",
+    "Body, damages-caps section: after 'supported by the evidence', add one sentence on SB 68: since the 2025 tort-reform act, counsel may argue a dollar figure for noneconomic damages only in closing and only if rationally tied to the evidence (O.C.G.A. § 9-10-184). No other SB 68 edit is needed — it did not touch § 51-13-1, § 9-3-71/72/73, § 9-11-9.1, § 51-1-29.5, § 51-12-5.1 or § 51-12-33.",
+    "Body, damages-caps section and faq:4 (optional): punitive exceptions — 'under the influence of drugs or alcohol' → 'substantially impaired by alcohol or drugs'; add 'or in product liability cases'; optionally note punitive damages in malpractice require clear and convincing proof of wilful or wanton conduct, never mere (even gross) negligence.",
+    "Body, statute-of-limitations section: 'starts on the date the negligent act or omission occurred' → 'starts on the date the injury or death occurred — almost always the date of the negligent act' (§ 9-3-71(a)); keep 'not the date you discovered the injury'.",
+    "Body, statute-of-limitations section: replace the retained-sponge example (a foreign object is governed by § 9-3-72's one-year-from-discovery rule, the opposite of what the paragraph says) with a misread-scan / misdiagnosis example; delete the reference to 'Georgia's discovery rule'.",
+    "Body, comparison table: row 1 → '2 years from the date of injury or death (usually the negligent act) | § 9-3-71(a)'; replace the 'Discovery rule extension | § 9-3-71(b)' row with 'Misdiagnosis that later causes a new injury | 2 years from when the new injury's symptoms first appear | Amu v. Barnes, 283 Ga. 549 (2008)' and optionally 'Fraud by the provider | tolled until discovered (limitation only) | § 9-3-96'; minors row → 'Under 5 at the time: 2 years from the fifth birthday, never after the tenth birthday; 5 or older: ordinary periods | § 9-3-73(b),(c)'.",
+    "Body, statute-of-repose section: delete 'Even with the discovery rule'; delete 'or broken device components' and add that fixation devices, implants and prosthetics are excluded from 'foreign object' (§ 9-3-72); 'The only exception' → 'The main exception', adding the under-five repose to the tenth birthday (§ 9-3-73(c)).",
+    "Body, discovery-rule section: retitle ('When the Clock Starts Later: Misdiagnosis and Fraud') and rewrite — Georgia has no discovery rule for medical malpractice and § 9-3-71(b) is the repose; state the new-injury rule (Amu v. Barnes; Cleaveland v. Gannon: the clock starts when the new injury's symptoms appear, not when the patient learns of the negligence) and fraud tolling under § 9-3-96 (limitation only, not repose); recast the three bullets as later-injury examples; remove 'knew or should have known' and every instance of 'discovery rule' on the page (body, table, faq:1).",
+    "Body, expert-affidavit section and faq:2: the affidavit must set out 'at least one negligent act or omission claimed to exist and the factual basis for each such claim' (§ 9-11-9.1(a)) — drop the causation element; 'will result in dismissal' → no affidavit means dismissal, a defective affidavit can be cured by amendment within 30 days of the motion (§ 9-11-9.1(e)); optionally add the 45-day emergency window in (b) and cite § 24-7-702 for expert qualifications.",
+    "Body, wrongful-death subsection: 'surviving spouse or next of kin' → 'surviving spouse — or, if there is none, the children — (O.C.G.A. § 51-4-2)'; add that the claim recovers the full value of the decedent's life (§ 51-4-1) and that the five-year repose still runs from the negligent act.",
+    "Body, common-claims (emergency room bullet) and burden-of-proof section: add the § 51-1-29.5(c) rule — emergency care in a hospital ER, obstetrical unit or immediately-following surgical suite must be proven grossly negligent by clear and convincing evidence; the standard ends once the patient is stabilized and capable of non-emergency treatment.",
+    "Key takeaways: 'two years from the negligent act' → 'two years from the injury (usually the date of the negligent act)'.",
+    "faq:1: remove 'The discovery rule may extend this if the injury was not immediately apparent'; substitute the new-injury wording. faq:3: 'The only exception' → 'The main exception' plus the under-five/tenth-birthday rule. These answers also publish as FAQPage structured data.",
+    "Do not introduce South Carolina law, S.C. Code citations, or the SC medical-malpractice cap anywhere on this Georgia-only page."
+  ],
+  "statuteCitations": [
+    { "section": "O.C.G.A. § 9-3-70", "name": "'Action for medical malpractice' defined", "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-70/" },
+    { "section": "O.C.G.A. § 9-3-71", "name": "Medical malpractice — two-year limitation from injury or death (a); five-year statute of ultimate repose from the act (b),(c)", "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/" },
+    { "section": "O.C.G.A. § 9-3-72", "name": "Foreign objects left in body — one year from discovery; excludes chemical compounds, fixation devices, prosthetics", "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-72/" },
+    { "section": "O.C.G.A. § 9-3-73", "name": "Minors and legally incompetent persons — under-five minors: two years from fifth birthday, repose at tenth birthday; no tolling for incompetents", "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-73/" },
+    { "section": "O.C.G.A. § 9-3-96", "name": "Tolling of limitations for fraud of defendant (limitation only; does not toll the § 9-3-71(b) repose)", "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-5/section-9-3-96/" },
+    { "section": "O.C.G.A. § 9-11-9.1", "name": "Expert affidavit to accompany professional malpractice complaint — contents (a), 45-day window (b), cure of defective affidavit (e), covered professions (g)", "url": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-3/section-9-11-9-1/" },
+    { "section": "O.C.G.A. § 9-10-184", "name": "Argument on the monetary value of noneconomic damages — as rewritten by SB 68 (2025)", "url": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download" },
+    { "section": "O.C.G.A. § 24-7-702", "name": "Expert opinion testimony; medical experts — competency requirements in (c)", "url": "https://law.justia.com/codes/georgia/title-24/chapter-7/section-24-7-702/" },
+    { "section": "O.C.G.A. § 51-1-27", "name": "Recovery for medical malpractice authorized — 'a reasonable degree of care and skill'", "url": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-27/" },
+    { "section": "O.C.G.A. § 51-1-29.5", "name": "Emergency medical care — liability only for gross negligence proven by clear and convincing evidence (c)", "url": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-29-5/" },
+    { "section": "O.C.G.A. § 51-4-1", "name": "Wrongful death definitions — 'full value of the life of the decedent'", "url": "https://law.justia.com/codes/georgia/title-51/chapter-4/section-51-4-1/" },
+    { "section": "O.C.G.A. § 51-4-2", "name": "Wrongful death of spouse or parent — surviving spouse, or if none, children", "url": "https://law.justia.com/codes/georgia/title-51/chapter-4/section-51-4-2/" },
+    { "section": "O.C.G.A. § 51-12-1.1", "name": "Special damages for medical and healthcare expenses — reasonable value of medically necessary care (added by SB 68 § 7; causes of action arising on/after 2025-04-21)", "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-1-1/" },
+    { "section": "O.C.G.A. § 51-12-5.1", "name": "Punitive damages — clear-and-convincing standard (b); product liability uncapped (e); specific-intent and impairment exceptions (f); $250,000 cap (g)", "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/" },
+    { "section": "O.C.G.A. § 51-12-15", "name": "Elective phased trial — fault, then compensatory damages, then punitive phase (added by SB 68 § 8)", "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-15/" },
+    { "section": "O.C.G.A. § 51-12-33", "name": "Apportionment of fault; 50% bar in (g) (not cited in the post; verified in facts-1663)", "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/" },
+    { "section": "O.C.G.A. § 51-13-1", "name": "Medical malpractice noneconomic damages caps ($350,000 providers; $350,000/$700,000 facilities; $1,050,000 aggregate) — held unconstitutional and void in Nestlehutt (2010); still printed in the 2025 Code", "url": "https://law.justia.com/codes/georgia/title-51/chapter-13/section-51-13-1/" }
+  ],
+  "authoritativeLinks": [
+    { "name": "Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt, 286 Ga. 731, 691 S.E.2d 218, S09A1432 (Ga. Mar. 22, 2010) — § 51-13-1 noneconomic caps violate Ga. Const. Art. I, Sec. I, Par. XI(a); statute void from enactment (Justia case page; opinion PDF at https://cases.justia.com/georgia/supreme-court/s09a1432.pdf)", "url": "https://law.justia.com/cases/georgia/supreme-court/2010/s09a1432.html" },
+    { "name": "Georgia SB 68 (2025), signed text from the Governor's office — 2025 Tort Reform Act; rewrites § 9-10-184, adds §§ 51-12-1.1 and 51-12-15; no medical-malpractice-specific provision; effective on approval", "url": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download" },
+    { "name": "Legal Information Institute, Cornell Law School — Wex: malpractice (replacement for the post's dead /wex/medical_malpractice link)", "url": "https://www.law.cornell.edu/wex/malpractice" },
+    { "name": "Justia annotations to O.C.G.A. § 9-3-71 — Amu v. Barnes, 283 Ga. 549 (2008); Cleaveland v. Gannon, 284 Ga. 376 (2008); Kaminer v. Canas, 282 Ga. 830 (2007); Golden v. Floyd Healthcare Mgmt., 319 Ga. 496 (2024)", "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/" },
+    { "name": "Justia annotations to O.C.G.A. § 51-1-29.5 — Gliemmo v. Cousineau, 287 Ga. 7 (2010); Nguyen v. Southwestern Emergency Physicians, 298 Ga. 75 (2015); Abdel-Samed v. Dailey, 294 Ga. 758 (2014)", "url": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-29-5/" },
+    { "name": "Justia annotations to O.C.G.A. § 9-11-9.1 — Gala v. Fisher, 296 Ga. 870 (2015) (cure by substituting a competent expert); Upson County Hosp. v. Head, 246 Ga. App. 386 (2000) (missing affidavit not curable)", "url": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-3/section-9-11-9-1/" }
+  ]
+}
