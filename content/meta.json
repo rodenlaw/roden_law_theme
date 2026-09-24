@@ -4702,11 +4702,11 @@
                 "_roden_faqs": [
                     {
                         "question": "How long do I have to file a lawsuit after a drunk-driver crash in Surfside Beach?",
-                        "answer": "In South Carolina, you have three years from the crash date to file a personal-injury lawsuit under S.C. Code Ann. § 15-3-530. Wrongful-death claims under S.C. Code Ann. § 15-51-10 also follow a three-year deadline from the date of death. Miss the date and the court will dismiss your case regardless of how clear the drunk driver's fault was. Narrow exceptions (minors, incapacitated plaintiffs, government defendants) can shift the timing."
+                        "answer": "In South Carolina, you have three years from the crash date to file a personal-injury lawsuit under S.C. Code Ann. § 15-3-530. Wrongful-death claims (S.C. Code Ann. § 15-51-10) carry the same three years, running from the date of death under § 15-3-530(6), and are brought by the estate's personal representative (§ 15-51-20). Miss the date and the court will dismiss your case regardless of how clear the drunk driver's fault was. Narrow exceptions (minors, incapacitated plaintiffs, government defendants) can shift the timing; a claim against a government defendant generally has only two years under § 15-78-110."
                     },
                     {
                         "question": "The drunk driver fled the scene of my crash on US-17 Business. Can I still recover?",
-                        "answer": "Yes. Leaving an injury crash is a felony under S.C. Code Ann. § 56-5-1210, and the hit-and-run police report is what triggers your own uninsured-motorist (UM) coverage under S.C. Code Ann. § 38-77-150. Report the crash, cooperate with the investigation, and your UM carrier steps in as if it were the at-fault driver's insurer — subject to your limits, which are often stackable across household vehicles."
+                        "answer": "Yes. Leaving an injury crash is a crime under S.C. Code Ann. § 56-5-1210 (a felony when it causes great bodily injury or death). Your own uninsured-motorist (UM) coverage under S.C. Code Ann. § 38-77-150 covers an unidentified driver if you reported the crash to police promptly and there was physical contact with the other vehicle, an independent witness who signs an affidavit, or a recording of the crash (§ 38-77-170). Cooperate with the investigation, and your UM carrier steps in as if it were the at-fault driver's insurer — subject to your limits, which a named insured or resident relative can sometimes stack from other household vehicles up to the coverage on the vehicle involved (§ 38-77-160; Carter v. Standard Fire Insurance Co., 406 S.C. 609 (2013))."
                     },
                     {
                         "question": "The drunk driver was a tourist from out of state in a rental car. Who pays?",
@@ -4718,7 +4718,7 @@
                     },
                     {
                         "question": "Can I sue the bar or restaurant that over-served the drunk driver?",
-                        "answer": "Sometimes. South Carolina has no separate dram-shop statute, but bars and restaurants can be held civilly liable under common-law negligence for knowingly serving alcohol to a visibly intoxicated patron who then injures someone. These cases live or die on evidence — receipts, POS time stamps, surveillance video, witnesses to visible intoxication — and that evidence disappears fast without preservation letters in the first weeks."
+                        "answer": "Sometimes. South Carolina has no dram-shop act, but a bar or restaurant that knowingly serves an intoxicated patron violates S.C. Code Ann. §§ 61-4-580 and 61-6-2220, and courts treat that as negligence per se (Tobias v. Sports Club, Inc., 332 S.C. 90 (1998); Hartfield v. Getaway Lounge & Grill, Inc., 388 S.C. 407 (2010)). For claims arising after January 1, 2026, § 61-2-147 makes the establishment jointly and severally liable for 50% of your actual damages when the verdict also runs against a driver charged with DUI. These cases live or die on evidence — receipts, POS time stamps, surveillance video, witnesses to visible intoxication — and that evidence disappears fast without preservation letters in the first weeks."
                     },
                     {
                         "question": "How much does it cost to hire Roden Law for a Surfside Beach drunk-driver case?",
@@ -4726,7 +4726,7 @@
                     }
                 ],
                 "_roden_jurisdiction": "south-carolina-only",
-                "_roden_last_reviewed": "2026-05-18"
+                "_roden_last_reviewed": "2026-09-24"
             }
         },
         "/blog/drunk-pedestrian-injury-claims/": {
@@ -5182,34 +5182,35 @@
             "title": "Filing a Personal Injury Claim on Behalf of an Injured Child",
             "excerpt": "How a parent or guardian files an injury claim for a child in Georgia or South Carolina, and how the deadline differs from an adult's.",
             "meta": {
-                "_roden_author_attorney": "Eric Roden",
+                "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "Who can file a personal injury claim on behalf of an injured child?",
-                        "answer": "In both Georgia and South Carolina, natural parents, legal guardians, and court-appointed next friends can file personal injury claims on behalf of a minor. Georgia follows O.C.G.A. § 29-3-3 for guardian authority, while South Carolina allows next friend actions under S.C. Code § 62-5-433. Non-custodial parents may also have standing, though custodial parents typically take the lead in filing."
+                        "answer": "In both Georgia and South Carolina a parent, a court-appointed guardian or conservator, or another adult acting as the child's next friend can file the claim — O.C.G.A. § 9-11-17(c) in Georgia and Rule 17(c) of the South Carolina Rules of Civil Procedure. Non-custodial parents may also have standing, though custodial parents typically take the lead in filing."
                     },
                     {
                         "question": "What is the statute of limitations for a child's injury claim in Georgia?",
-                        "answer": "In Georgia, the standard personal injury statute of limitations is 2 years (O.C.G.A. § 9-3-33). However, for minors, the clock is tolled (paused) under O.C.G.A. § 9-3-90 until the child turns 18. This means the child has until their 20th birthday to file. Parents may still file during the child's minority, and doing so promptly is generally advisable to preserve evidence."
+                        "answer": "In Georgia, the standard personal injury statute of limitations is 2 years (O.C.G.A. § 9-3-33). However, for minors, the clock is tolled (paused) under O.C.G.A. § 9-3-90 until the child turns 18. This means the child has until their 20th birthday to file. Medical malpractice claims, including birth injuries, run on a shorter clock under O.C.G.A. § 9-3-73. Parents may still file during the child's minority, and doing so promptly is generally advisable to preserve evidence."
                     },
                     {
                         "question": "What is the statute of limitations for a child's injury claim in South Carolina?",
-                        "answer": "South Carolina's personal injury statute of limitations is 3 years (S.C. Code § 15-3-530). For minors, S.C. Code § 15-3-40 tolls the limitations period until the child reaches 18, giving them until age 21 to file. As with Georgia, filing promptly is recommended because witness memories fade and evidence deteriorates over time."
+                        "answer": "South Carolina's personal injury statute of limitations is 3 years (S.C. Code § 15-3-530). For minors, S.C. Code § 15-3-40 pauses the clock during childhood but caps the extension at one year after the child turns 18 — so the deadline is the child's 19th birthday, or three years from the injury if that comes later. Medical malpractice claims are capped separately under S.C. Code § 15-3-545. As with Georgia, filing promptly is recommended because witness memories fade and evidence deteriorates over time."
                     },
                     {
                         "question": "Do minor injury settlements require court approval?",
-                        "answer": "Yes, in both states. Georgia requires Superior Court approval for any settlement on behalf of a minor under O.C.G.A. § 29-3-3. The court reviews the settlement to ensure it is in the child's best interest. South Carolina requires Family Court approval under similar provisions. Settlement funds are typically placed in a court-supervised trust or structured settlement until the child reaches 18."
+                        "answer": "Yes, above modest amounts. In Georgia any settlement worth more than $25,000 must be approved by the probate court, or by the court hearing the case once suit is filed (O.C.G.A. § 29-3-3). In South Carolina a settlement worth more than $2,500 after fees needs court approval — the circuit or probate court up to $25,000, and the circuit court alone above that (S.C. Code § 62-5-433). The court reviews the settlement to ensure it is in the child's best interest, and the funds are paid to a conservator, into a court-restricted account or into a structured settlement until the child reaches 18."
                     },
                     {
                         "question": "What types of damages can an injured child recover?",
-                        "answer": "An injured child can recover medical expenses (current and future), pain and suffering, lost future earning capacity, emotional and developmental impact damages, and costs of ongoing rehabilitation or therapy. Parents may separately recover their own damages for medical bills they paid and lost wages from caring for the child. The calculation of future damages often requires expert testimony from medical and economic specialists."
+                        "answer": "An injured child can recover medical expenses (current and future), pain and suffering, lost future earning capacity, emotional and developmental impact damages, and costs of ongoing rehabilitation or therapy. Parents may separately recover the medical bills they paid and the value of the child's lost services. The calculation of future damages often requires expert testimony from medical and economic specialists."
                     },
                     {
                         "question": "How much does it cost to hire a lawyer for a child's injury claim?",
                         "answer": "At Roden Law, we handle all personal injury cases — including claims for injured children — on a contingency fee basis. This means you pay nothing upfront and owe no attorney fees unless we recover compensation for your child. We advance all case costs and expenses. Call 1-844-RESULTS for a free, no-obligation consultation about your child's injury claim."
                     }
                 ],
-                "_roden_key_takeaways": "Parents and legal guardians can file personal injury claims on behalf of injured children in both Georgia and South Carolina. Georgia's statute of limitations for minors is tolled until age 18 under O.C.G.A. § 9-3-90, giving children until their 20th birthday to file. South Carolina's tolling provision (S.C. Code § 15-3-40) extends the deadline to age 21. Both states require court approval for minor settlements, with funds typically held in supervised trusts. Recoverable damages include medical costs, future earning capacity, pain and suffering, and emotional impact."
+                "_roden_key_takeaways": "Parents and legal guardians can file personal injury claims on behalf of injured children in both Georgia and South Carolina. Georgia's statute of limitations for minors is tolled until age 18 under O.C.G.A. § 9-3-90, giving children until their 20th birthday to file (medical malpractice claims run on a shorter clock, O.C.G.A. § 9-3-73). South Carolina's tolling provision (S.C. Code § 15-3-40) extends the deadline only to one year past the child's 18th birthday — age 19 — or three years from the injury if that is later. Both states require court approval for larger minor settlements — above $25,000 in Georgia and above $2,500 in South Carolina — with the money paid to a conservator, into a court-restricted account or into a structured settlement. Recoverable damages include medical costs, future earning capacity, pain and suffering, and emotional impact.",
+                "_roden_last_reviewed": "2026-09-24"
             }
         },
         "/blog/filing-an-emotional-distress-claim-after-a-ravenel-bridge-accident/": {
@@ -12295,21 +12296,21 @@
             "type": "post",
             "status": "publish",
             "title": "Are Personal Injury Settlements Tax-Free?",
-            "excerpt": "Which parts of a personal injury settlement are taxable and which are not, and where the line falls for lost wages and punitive damages.",
+            "excerpt": "Which parts of a personal injury settlement are taxable and which are not, why lost wages from an injury usually are not, and where the line falls for punitive damages and interest.",
             "meta": {
-                "_roden_author_attorney": "Eric Roden",
+                "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "Is my personal injury settlement taxable in Georgia?",
-                        "answer": "Most personal injury settlement proceeds are not taxable in Georgia. Compensation for medical expenses, pain and suffering, and property damage is excluded from federal and Georgia state income tax under IRC § 104(a)(2). However, lost wages, punitive damages, and interest on the award are typically taxable."
+                        "answer": "Most personal injury settlement proceeds are not taxable in Georgia. Compensation for medical expenses, pain and suffering, lost wages from the injury, and property damage is excluded from federal income tax under IRC § 104(a)(2), and Georgia follows the federal figure (O.C.G.A. § 48-7-27). Punitive damages and interest on the award are taxable."
                     },
                     {
                         "question": "Are personal injury settlements taxable in South Carolina?",
-                        "answer": "South Carolina follows federal tax treatment, so compensation for physical injuries is generally tax-free. Taxable components include lost wages, punitive damages (capped at three times compensatory damages or $500,000 under S.C. Code § 15-32-530), and pre-judgment interest."
+                        "answer": "South Carolina follows federal tax treatment (S.C. Code § 12-6-40), so compensation for physical injuries — including lost wages from the injury — is generally tax-free. Taxable components are punitive damages (capped at the greater of three times compensatory damages or an inflation-indexed $500,000, $739,245 in 2026, under S.C. Code § 15-32-530) and interest on a judgment."
                     },
                     {
                         "question": "Are punitive damages from a car accident taxable?",
-                        "answer": "Yes. Punitive damages are always taxable as ordinary income regardless of the underlying claim type. They must be reported as Other Income on your federal tax return. Georgia caps punitive damages at $250,000 in most cases (O.C.G.A. § 51-12-5.1), and South Carolina caps them at three times compensatory or $500,000."
+                        "answer": "Yes. Punitive damages are taxable as ordinary income even when they come from a physical-injury claim, and are reported as Other Income on your federal return. The one exception in the Code (IRC § 104(c), for states whose wrongful death law allows only punitive damages) does not apply in Georgia or South Carolina. Georgia caps punitive damages at $250,000 in most cases (O.C.G.A. § 51-12-5.1); South Carolina caps them at the greater of three times compensatory damages or an inflation-indexed $500,000 — $739,245 in 2026 (S.C. Code § 15-32-530)."
                     },
                     {
                         "question": "Do I pay taxes on pain and suffering from an accident?",
@@ -12317,14 +12318,15 @@
                     },
                     {
                         "question": "Are lost wages from a settlement taxable?",
-                        "answer": "Yes. Lost wages received as part of a personal injury settlement are generally taxable as ordinary income because the wages would have been taxed if you had earned them normally. Your attorney can help structure the settlement agreement to properly allocate and minimize the tax impact."
+                        "answer": "Usually no. Lost wages and lost earning capacity recovered on account of a personal physical injury are excluded from income under IRC § 104(a)(2); the IRS treats them as compensation for the injury, not as wages. Lost wages are taxable when the claim is not a physical injury, such as an employment lawsuit for unlawful discrimination or involuntary termination."
                     },
                     {
                         "question": "Can a structured settlement reduce my taxes?",
                         "answer": "Yes. A structured settlement pays compensation over time through an annuity, and the investment income earned within the annuity is tax-free — unlike a lump sum that you invest independently. This is particularly beneficial for large settlements involving lifetime care needs from brain injuries or spinal cord injuries."
                     }
                 ],
-                "_roden_key_takeaways": "Most personal injury settlements are tax-free under IRC § 104(a)(2), including compensation for medical expenses, pain and suffering, and property damage. Lost wages, punitive damages (capped at $250,000 in Georgia under O.C.G.A. § 51-12-5.1 and three times compensatory in South Carolina under S.C. Code § 15-32-530), and interest are taxable. Strategic settlement structuring and proper damage allocation can significantly reduce your tax burden."
+                "_roden_key_takeaways": "Most personal injury settlements are tax-free under IRC § 104(a)(2), including compensation for medical expenses, pain and suffering, lost wages from the injury, and property damage. Punitive damages (capped at $250,000 in most Georgia cases under O.C.G.A. § 51-12-5.1, and at the greater of three times compensatory damages or an inflation-indexed $500,000 — $739,245 in 2026 — under S.C. Code § 15-32-530), interest on a judgment, and emotional-distress damages with no physical injury are taxable. A settlement agreement that states what each payment is for makes the tax treatment clear.",
+                "_roden_last_reviewed": "2026-09-24"
             }
         },
         "/blog/teenagers-and-driving-distracted/": {

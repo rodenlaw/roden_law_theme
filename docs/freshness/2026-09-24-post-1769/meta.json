@@ -1,0 +1,31 @@
+{
+ "excerpt": "Which parts of a personal injury settlement are taxable and which are not, why lost wages from an injury usually are not, and where the line falls for punitive damages and interest.",
+ "keyTakeaways": "Most personal injury settlements are tax-free under IRC § 104(a)(2), including compensation for medical expenses, pain and suffering, lost wages from the injury, and property damage. Punitive damages (capped at $250,000 in most Georgia cases under O.C.G.A. § 51-12-5.1, and at the greater of three times compensatory damages or an inflation-indexed $500,000 — $739,245 in 2026 — under S.C. Code § 15-32-530), interest on a judgment, and emotional-distress damages with no physical injury are taxable. A settlement agreement that states what each payment is for makes the tax treatment clear.",
+ "faqs": [
+  {
+   "question": "Is my personal injury settlement taxable in Georgia?",
+   "answer": "Most personal injury settlement proceeds are not taxable in Georgia. Compensation for medical expenses, pain and suffering, lost wages from the injury, and property damage is excluded from federal income tax under IRC § 104(a)(2), and Georgia follows the federal figure (O.C.G.A. § 48-7-27). Punitive damages and interest on the award are taxable."
+  },
+  {
+   "question": "Are personal injury settlements taxable in South Carolina?",
+   "answer": "South Carolina follows federal tax treatment (S.C. Code § 12-6-40), so compensation for physical injuries — including lost wages from the injury — is generally tax-free. Taxable components are punitive damages (capped at the greater of three times compensatory damages or an inflation-indexed $500,000, $739,245 in 2026, under S.C. Code § 15-32-530) and interest on a judgment."
+  },
+  {
+   "question": "Are punitive damages from a car accident taxable?",
+   "answer": "Yes. Punitive damages are taxable as ordinary income even when they come from a physical-injury claim, and are reported as Other Income on your federal return. The one exception in the Code (IRC § 104(c), for states whose wrongful death law allows only punitive damages) does not apply in Georgia or South Carolina. Georgia caps punitive damages at $250,000 in most cases (O.C.G.A. § 51-12-5.1); South Carolina caps them at the greater of three times compensatory damages or an inflation-indexed $500,000 — $739,245 in 2026 (S.C. Code § 15-32-530)."
+  },
+  {
+   "question": "Do I pay taxes on pain and suffering from an accident?",
+   "answer": "No. Pain and suffering compensation arising from a physical injury is excluded from federal income tax under IRC § 104(a)(2). This applies in both Georgia and South Carolina and covers both economic and non-economic damages directly tied to your physical injuries."
+  },
+  {
+   "question": "Are lost wages from a settlement taxable?",
+   "answer": "Usually no. Lost wages and lost earning capacity recovered on account of a personal physical injury are excluded from income under IRC § 104(a)(2); the IRS treats them as compensation for the injury, not as wages. Lost wages are taxable when the claim is not a physical injury, such as an employment lawsuit for unlawful discrimination or involuntary termination."
+  },
+  {
+   "question": "Can a structured settlement reduce my taxes?",
+   "answer": "Yes. A structured settlement pays compensation over time through an annuity, and the investment income earned within the annuity is tax-free — unlike a lump sum that you invest independently. This is particularly beneficial for large settlements involving lifetime care needs from brain injuries or spinal cord injuries."
+  }
+ ],
+ "metaDescription": ""
+}

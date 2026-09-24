@@ -1,0 +1,938 @@
+{
+  "postId": 1704,
+  "slug": "filing-a-claim-for-an-injured-minor",
+  "liveUrl": "https://rodenlaw.com/blog/filing-a-claim-for-an-injured-minor/",
+  "jurisdiction": "both",
+  "verifiedAt": "2026-09-24",
+  "reviewerByJurisdiction": "Two-state post that states South Carolina law: reviewer must be Graeham C. Gillin (owner's rule 2026-09-23), never Eric Roden. The live page currently carries an Eric Roden byline and author box — fix the attribution in the same pass.",
+  "researchNotes": "law.justia.com returned HTTP 403 to curl on 2026-09-24; every Georgia statute was read through the firecrawl CLI at its year-less canonical URL and each page shows the 2025 Code of Georgia breadcrumb. Article/part segments were confirmed from the Justia chapter indexes: § 9-3-90 is Title 9 ch. 3 ARTICLE 5; § 9-11-17 is Title 9 ch. 11 ARTICLE 4; § 9-2-28 is Title 9 ch. 2 ARTICLE 2; § 29-3-3 is Title 29 ch. 3 ARTICLE 1; §§ 19-7-1/-2 are Title 19 ch. 7 ARTICLE 1; § 40-8-76 is Title 40 ch. 8 ARTICLE 1 PART 4; §§ 51-1-5 and 51-2-7 have no article segment; § 50-21-22 is Title 50 ch. 21 ARTICLE 2. There is no O.C.G.A. § 9-2-17 (Title 9 ch. 2 art. 1 is §§ 9-2-1 to 9-2-8; art. 2 is §§ 9-2-20 to 9-2-30). South Carolina statutes were read directly on www.scstatehouse.gov (tNNcNNN.php) with curl; Rule 17 SCRCP on sccourts.org; case law on Justia case pages (firecrawl) and sccourts.org advance sheets. rodenlaw.com returned 403 to curl and was read through firecrawl. §§ 9-3-33, 9-3-73, 9-11-9.1, 51-12-33, 15-3-530, 15-3-545, 15-36-100, 15-79-125 and 15-78-60 reuse facts-1676/1824/1649/1756 (all 2026-09-24); the Justia pages for §§ 9-3-33 and 9-3-73 were re-fetched today and still resolve. data/statistics.json contains nothing on child injuries, dog bites or child passenger deaths; the CDC figures cited here are not registered. internal-ai-scripts/law/SC.json rule sc-carseat-comparative-fault (severity error) is triggered by the post's child-restraint sentence.",
+  "verifiedClaims": [
+    {
+      "surface": "body",
+      "claim": "The <a href=\"https://www.law.cornell.edu/wex/next_friend\" target=\"_blank\" rel=\"noopener\">legal concept of \"next friend\"</a> allows a parent, guardian, or other qualified adult to bring a claim in the child's name and best interest.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Legal Information Institute, Cornell Law School — Wex: next friend (HTTP 200 on 2026-09-24); O.C.G.A. § 9-11-17(c); Rule 17(c), SCRCP",
+      "sourceUrl": "https://www.law.cornell.edu/wex/next_friend",
+      "retrievedAt": "2026-09-24",
+      "note": "Link resolves. law.cornell.edu is on the outbound allowlist (facts-1663)."
+    },
+    {
+      "surface": "body",
+      "claim": "In both Georgia and South Carolina, a minor (anyone under the age of 18) lacks the legal capacity to file a lawsuit independently. Instead, the claim must be brought by an adult representative.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-11-17(c) ('If an infant ... does not have a duly appointed representative, he or she may bring an action by his or her next friend or by a guardian ad litem'); § 9-2-28 (an action by an infant alone is 'defective in wanting a guardian or next friend' but amendable); Rule 17(c), SCRCP (same rule); In the Interest of W.L.H., 314 Ga. App. 185 (2012), quoted in Hall v. Hill (Ga. Ct. App. 2021): 'In civil actions, a minor may not prosecute an action except by way of a representative, such as a guardian ad litem or next friend.'",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-4/section-9-11-17/",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "A biological parent is the most common representative in a minor's injury claim. In most cases, either parent can bring the action. If the parents are divorced, the custodial parent typically files the claim, though the non-custodial parent may also have standing depending on the circumstances.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 19-7-1(a) (child under the control of 'his or her parents'; where a court has awarded custody to one parent, 'only the parent who has custody' is entitled to the child's services); S.C. Code § 63-5-30 (mother and father are 'joint natural guardians' with 'equal power, rights, and duties'); Rule 17(c), SCRCP; O.C.G.A. § 9-11-17(c)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-19/chapter-7/article-1/section-19-7-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Parents usually sue 'as next friend' or 'as natural guardian' of the child — the parent does not need a court appointment to do so (Scott v. Scott, 308 Ga. App. 787 (2011): the trial court 'need not formally appoint or select the next friend')."
+    },
+    {
+      "surface": "body",
+      "claim": "If the child's parents are deceased, incapacitated, or have had their parental rights terminated, a court-appointed legal guardian can file the claim. The guardian must have been formally appointed by the probate court or family court.",
+      "verdict": "update",
+      "currentValue": "A duly appointed representative — 'a general guardian, committee, conservator, or other like fiduciary' — may sue for the child (O.C.G.A. § 9-11-17(c); Rule 17(c), SCRCP). Which court appoints the guardian was not verified for South Carolina; drop the court names.",
+      "sourceName": "O.C.G.A. § 9-11-17(c); Rule 17(c), SCRCP",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-4/section-9-11-17/",
+      "retrievedAt": "2026-09-24",
+      "note": "Change the second sentence to 'The guardian or conservator must have been formally appointed by a court.'"
+    },
+    {
+      "surface": "body",
+      "claim": "In Georgia, under O.C.G.A. § 9-2-17, a \"next friend\" may bring a lawsuit on behalf of a minor when there is no parent or guardian available or willing to act. The next friend is typically a close relative — a grandparent, aunt, uncle, or adult sibling — who can demonstrate a genuine interest in the child's welfare.",
+      "verdict": "update",
+      "currentValue": "O.C.G.A. § 9-2-17 does not exist: Title 9, Chapter 2, Article 1 runs §§ 9-2-1 to 9-2-8 and Article 2 (Parties) runs §§ 9-2-20 to 9-2-30 (Justia chapter index, 2025 Code). The next-friend rule is O.C.G.A. § 9-11-17(c): a minor without 'a duly appointed representative ... may bring an action by his or her next friend or by a guardian ad litem.' Any adult may serve — 'The statute does not specify who should serve as next friend, and it appears that any person may act in this capacity' (Scott v. Scott, 308 Ga. App. 787 (2011)) — and in practice the parent is usually the next friend; it is not a fallback for when no parent is available. A next friend may not receive the settlement proceeds without posting a bond (§ 9-11-17(c)), which is why larger settlements go through a conservator (§ 29-3-3).",
+      "sourceName": "O.C.G.A. § 9-11-17(c) (2025 Code, last amended Ga. L. 2020, p. 377/HB 865); Justia index of Title 9 ch. 2; Scott v. Scott, 308 Ga. App. 787, 709 S.E.2d 269 (2011)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-4/section-9-11-17/",
+      "retrievedAt": "2026-09-24",
+      "note": "Replace '§ 9-2-17' with '§ 9-11-17(c)'. Rewrite: 'In Georgia, O.C.G.A. § 9-11-17(c) lets a minor sue through a parent or other adult acting as next friend, or through a court-appointed guardian ad litem. A parent is the usual next friend; if no parent can act, a grandparent, other relative or any adult who will protect the child's interests may serve, subject to the court's oversight.'"
+    },
+    {
+      "surface": "body",
+      "claim": "In South Carolina, the concept is similar. Under S.C. Code § 62-5-433 and the South Carolina Rules of Civil Procedure (Rule 17), a guardian ad litem may be appointed by the court to represent the minor's interests in the litigation. The guardian ad litem's role is to ensure that the legal proceedings serve the child's best interests, not the interests of the filing adult.",
+      "verdict": "update",
+      "currentValue": "Rule 17(c), SCRCP: a minor with a representative (guardian, conservator or like fiduciary) sues through that representative; a minor without one 'may sue by his next friend or by guardian ad litem', and 'the court shall appoint a guardian ad litem for a minor ... not otherwise represented in an action.' § 62-5-433 is the settlement statute; its only role here is (A)(4), which defines 'guardian ad litem' as a person appointed under Rule 17. Patton v. Miller, 420 S.C. 471 (2017), applied Rule 17(c) to a mother suing 'as next friend' of her newborn.",
+      "sourceName": "Rule 17(c), SCRCP (sccourts.org); S.C. Code § 62-5-433(A)(3)-(4); Patton v. Miller, 420 S.C. 471, 804 S.E.2d 252 (2017)",
+      "sourceUrl": "https://www.sccourts.org/courtreg/displayRule.cfm?ruleID=17.0&subRuleID=&ruleType=CIV",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'In South Carolina the rule is the same: under Rule 17(c) of the South Carolina Rules of Civil Procedure a minor sues through a parent or other adult as next friend, or through a guardian ad litem the court appoints when no one else is representing the child. The guardian ad litem's job is to make sure the case serves the child's interests, not the filing adult's (S.C. Code § 62-5-433 uses the same Rule 17 guardian ad litem when a settlement is approved).'"
+    },
+    {
+      "surface": "body",
+      "claim": "Under O.C.G.A. § 9-3-90, the statute of limitations is <strong>tolled</strong> (paused) during the period of a person's minority. This means the clock does not begin to run until the child reaches the <strong>age of majority, which is 18 in Georgia</strong>.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-90(b): 'individuals who are less than 18 years of age when a cause of action accrues shall be entitled to the same time after he or she reaches the age of 18 years to bring an action as is prescribed for other persons' (2025 Code)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-5/section-9-3-90/",
+      "retrievedAt": "2026-09-24",
+      "note": "Subsection (b) is the operative text (the post cites the section generally, which is fine)."
+    },
+    {
+      "surface": "body",
+      "claim": "For personal injury claims, the standard statute of limitations is <strong>two years</strong> (O.C.G.A. § 9-3-33).",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-33 (verified facts-1649/1756, 2026-09-24; Justia 2025 Code page confirmed again today)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "A child injured at any age has until their <strong>20th birthday</strong> to file a personal injury lawsuit in Georgia.",
+      "verdict": "update",
+      "currentValue": "True for ordinary negligence claims (§ 9-3-90(b) + § 9-3-33), but not for medical malpractice, including birth injuries: O.C.G.A. § 9-3-73(b) gives a child under five when the malpractice occurred two years from the fifth birthday (i.e. until the seventh birthday), children five and older get only the ordinary two years, and the repose in § 9-3-73(c)(2) bars any suit after the tenth birthday (under-five) or five years after the act. § 9-3-90 does not apply to malpractice claims.",
+      "sourceName": "O.C.G.A. § 9-3-73(b),(c) (verified facts-1676, 2026-09-24; Justia 2025 Code page re-confirmed today); § 9-3-90(b)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-73/",
+      "retrievedAt": "2026-09-24",
+      "note": "Add after the bullet list: 'The one big exception is medical malpractice, including birth injuries. O.C.G.A. § 9-3-73 does not toll the clock to age 18: a child under five when the malpractice occurred has until the seventh birthday (two years from the fifth), a child five or older has the ordinary two years, and no malpractice suit can be filed after the child's tenth birthday or five years after the act, whichever applies.' The post's birth-injury section makes this omission dangerous."
+    },
+    {
+      "surface": "body",
+      "claim": "If the child was injured at age 5, the family has until the child turns 20 — a full 15 years.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-90(b); § 9-3-33",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-5/section-9-3-90/",
+      "retrievedAt": "2026-09-24",
+      "note": "Arithmetic is right for a non-malpractice claim; add the malpractice caveat above."
+    },
+    {
+      "surface": "body",
+      "claim": "If the child was injured at age 16, the family has until the child turns 20 — a minimum of 4 years.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-90(b); § 9-3-33",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-5/section-9-3-90/",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "For <a href=\"/practice-areas/wrongful-death-lawyers/\">wrongful death claims</a> involving minors, the statute of limitations is also two years (O.C.G.A. § 9-3-33), but this is measured from the date of death and is typically not tolled because the claim belongs to the surviving family members, not the deceased child.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-33 (Justia annotation: 'Two-year limitation of action for wrongful death'); § 19-7-1(c)(2) (right of recovery for the homicide of a child is in the parent or parents); § 9-3-90 annotation ('Right of action must be in disabled party before this section will apply')",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-19/chapter-7/article-1/section-19-7-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Optionally cite § 19-7-1(c), which is the statute that gives parents the claim for a child's death."
+    },
+    {
+      "surface": "body",
+      "claim": "Under S.C. Code § 15-3-40, the statute of limitations does not begin to run until the minor reaches the <strong>age of majority, which is 18 in South Carolina</strong>.",
+      "verdict": "update",
+      "currentValue": "S.C. Code § 15-3-40 tolls the limitation period while the claimant is 'within the age of eighteen years', but adds that the period 'cannot be extended ... (b) in any case longer than one year after the disability ceases.' The five-year cap in (a) exempts infancy; the one-year cap in (b) does not. A child's ordinary personal-injury claim therefore must be filed by the child's 19th birthday, or within the ordinary three years of the injury (§ 15-3-530(5)) if that ends later (a child hurt at 16 or 17). Nobody gets until 21. Medical malpractice is tighter still: § 15-3-545(D) caps minority tolling at seven years 'and in any case ... one year after the disability ceases.'",
+      "sourceName": "S.C. Code § 15-3-40 (scstatehouse.gov, current text; last amended 1996 Act No. 234); § 15-3-545(D); Perrow v. S.C. Dep't of Corrections, Op. No. 25631 (S.C. Apr. 28, 2003) (reading the § 15-3-40 caps as limits on how far the deadline can be 'extended'); John Doe 3 v. DuCharme, 2006-UP-133 (S.C. Ct. App. 2006) (trial court set the minor's deadline at one year from the eighteenth birthday)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-24",
+      "note": "The sentence is only half the statute. Add: 'but the extension is capped — the suit must be filed no later than one year after the child turns 18.'"
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina's standard personal injury statute of limitations is <strong>three years</strong> (S.C. Code § 15-3-530).",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-3-530(5) (verified facts-1649/1756, 2026-09-24; re-read on scstatehouse.gov today)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "An injured child in South Carolina has until their <strong>21st birthday</strong> to file a personal injury lawsuit.",
+      "verdict": "update",
+      "currentValue": "Until the 19th birthday (one year after the disability of minority ceases, § 15-3-40(b)), or three years from the injury if that is later. See the § 15-3-40 entry above.",
+      "sourceName": "S.C. Code § 15-3-40(b)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Core error, repeated in the bullets, the comparison table, keyTakeaways and faq:2. A reader who waits until 20 is time-barred."
+    },
+    {
+      "surface": "body",
+      "claim": "A child injured at age 3 has until age 21 — a full 18 years.",
+      "verdict": "update",
+      "currentValue": "A child injured at 3 has until the 19th birthday — 16 years.",
+      "sourceName": "S.C. Code § 15-3-40(b)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "A child injured at age 17 has until age 21 — a minimum of 4 years.",
+      "verdict": "update",
+      "currentValue": "A child injured at 17 has three years from the injury (§ 15-3-530), i.e. until age 20 — the one-year-after-majority cap cannot shorten the ordinary period.",
+      "sourceName": "S.C. Code § 15-3-40; § 15-3-530(5)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina provides one additional year beyond Georgia's deadline, but the same practical advice applies: earlier filing preserves evidence and strengthens your case.",
+      "verdict": "update",
+      "currentValue": "Reversed. For most children South Carolina's deadline (19th birthday) falls a year before Georgia's (20th birthday).",
+      "sourceName": "S.C. Code § 15-3-40(b); O.C.G.A. § 9-3-90(b)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'South Carolina's deadline for most children actually falls a year earlier than Georgia's, and the same practical advice applies ...'"
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>settlements involving minors must be approved by a court</strong> in both Georgia and South Carolina.",
+      "verdict": "update",
+      "currentValue": "Only above a threshold. Georgia: if the gross settlement is $25,000 or less the natural guardian may settle 'without becoming the conservator of the minor and without any court approval' (O.C.G.A. § 29-3-3(c)(1)). South Carolina: a claim of $2,500 or less (net) may be settled by the parent or guardian 'without court approval of the settlement and without the appointment of a conservator' (S.C. Code § 62-5-433(D)).",
+      "sourceName": "O.C.G.A. § 29-3-3(c) (2025 Code, rewritten by Ga. L. 2022, p. 207/HB 620, eff. May 2, 2022); S.C. Code § 62-5-433(D) (last amended 2024 Act No. 200)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-29/chapter-3/article-1/section-29-3-3/",
+      "retrievedAt": "2026-09-24",
+      "note": "Change to 'larger settlements involving minors must be approved by a court in both Georgia and South Carolina' and state the thresholds in the state subsections."
+    },
+    {
+      "surface": "body",
+      "claim": "In Georgia, any settlement of a minor's claim must be approved by the superior court in the county where the minor resides or where the action is pending (O.C.G.A. § 29-3-3).",
+      "verdict": "update",
+      "currentValue": "§ 29-3-3 names no superior court. Approval goes to 'the probate court if no legal action has been initiated, or the court in which the legal action is pending if legal action has been initiated' (§ 29-3-3(c)(2)(A), (c)(3)(C)), and only when the gross settlement exceeds $25,000. If the net settlement (after fees, expenses, liens and amounts deferred past 18 or placed in trust) is also over $25,000, a conservator must be appointed to compromise the claim and receive the money (§ 29-3-3(c)(3)). The court may hold a hearing but need not if compliance 'is evident from the record' (§ 29-3-3(f)).",
+      "sourceName": "O.C.G.A. § 29-3-3(a)-(c),(f)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-29/chapter-3/article-1/section-29-3-3/",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'In Georgia, a settlement whose gross value exceeds $25,000 must be approved by the probate court — or, once a lawsuit is filed, by the court hearing the case (O.C.G.A. § 29-3-3).'"
+    },
+    {
+      "surface": "body",
+      "claim": "For settlements under $15,000 in Georgia, the process may be simplified, with the funds being paid to the natural guardian. For larger settlements, the court will typically require the establishment of a conservatorship or structured settlement.",
+      "verdict": "update",
+      "currentValue": "The threshold is $25,000, measured on the gross settlement (cash plus fees, expenses and the present value of any structured payments, § 29-3-3(a)(1)). Gross $25,000 or less: the natural guardian may settle and receive the money with no court approval and no conservator (§ 29-3-3(c)(1)). Gross over $25,000 but net $25,000 or less: court approval, no conservator (§ 29-3-3(c)(2)). Gross and net both over $25,000: a conservator is required to settle and receive the funds, and the court must approve (§ 29-3-3(c)(3)). With court approval the money may instead go into a structured settlement or a court-approved trust, or be deferred until the child turns 18 (§ 29-3-3(d)).",
+      "sourceName": "O.C.G.A. § 29-3-3(a),(c),(d) (rewritten 2022; Justia shows a further technical amendment by Ga. L. 2026, p. 1069/HB 1268 effective July 1, 2026 with the same thresholds)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-29/chapter-3/article-1/section-29-3-3/",
+      "retrievedAt": "2026-09-24",
+      "note": "Replace '$15,000' with '$25,000' and explain the gross/net distinction in one sentence. Stale since May 2, 2022."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina requires probate court approval for all minor settlements (S.C. Code § 62-5-433). The court conducts a hearing to determine:",
+      "verdict": "update",
+      "currentValue": "Not all, and not always the probate court. § 62-5-433: a 'claim' is the net amount accruing to the minor after fees and expenses ((A)(2)). Net $2,500 or less: the parent or guardian settles with no court approval ((D)). Net $2,500 to $25,000: the guardian or guardian ad litem petitions either the probate court or the circuit court ((A)(1), (C)). Net over $25,000: the circuit court alone has jurisdiction ((A)(1), (B)). The petitioner files a verified petition covering the facts, fees and expenses and (over $25,000) a statement that the settlement is in the minor's best interests; the court approves 'after hearing the testimony as it may require' ((B)(1)-(2)).",
+      "sourceName": "S.C. Code § 62-5-433(A)-(D) (scstatehouse.gov; amended 2024 Act No. 200 § 19, eff. May 21, 2024)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t62c005.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'South Carolina requires court approval for any minor's settlement worth more than $2,500 after fees and costs (S.C. Code § 62-5-433). Up to $25,000 the petition may go to the probate court or the circuit court; above $25,000 only the circuit court can approve it. The court reviews a verified petition and takes whatever testimony it needs on:' — then keep the four bullets."
+    },
+    {
+      "surface": "body",
+      "claim": "In South Carolina, settlement funds for minors are typically deposited into a restricted account that the child cannot access until they reach the age of 18. The court may also approve a structured settlement that provides periodic payments over time.",
+      "verdict": "update",
+      "currentValue": "The order must direct payment 'through the conservator or pursuant to a protective order issued by the probate court' (§ 62-5-433(B)(3)); for smaller amounts § 62-5-103 lets up to $15,000 a year (net) be paid to a custodian, a guardian, or 'a federally insured savings account in the sole name of the minor' with notice to the minor.",
+      "sourceName": "S.C. Code § 62-5-433(B)(3), (C)(2); § 62-5-103(A)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t62c005.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'In South Carolina the approved funds are paid to a court-appointed conservator or under a probate-court protective order — often into a restricted account the child cannot touch before 18 — and the court may instead approve a structured settlement that pays out over time.'"
+    },
+    {
+      "surface": "body",
+      "claim": "<li>Whether the settlement amount is fair and reasonable given the injuries</li>\n<li>The attorney's fees and whether they are appropriate</li>\n<li>How the settlement funds will be managed until the child turns 18</li>\n<li>Whether a structured settlement or trust is more appropriate than a lump sum</li>",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 29-3-3(a)(2)(A) (fees and expenses), (c)(3) (conservator), (d) (structured settlement or trust 'based upon the best interest of the minor'); S.C. Code § 62-5-433(B)(1) (petition must address 'attorney's fees, and expenses')",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-29/chapter-3/article-1/section-29-3-3/",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "Damages in a child's personal injury claim can be substantial because they must account for the child's entire future — decades of potential impact from injuries sustained at a young age.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "General statement; no figure asserted.",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "Expert economists and vocational specialists can estimate what the child would have earned over their lifetime had they not been injured.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "General statement. Georgia lets the jury value an infant's untried earning capacity from age, health, precocity and 'experience and knowledge of human affairs' without direct proof (Collins v. McPherson, 91 Ga. App. 347 (1954)).",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/1954/35427.html",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "Medical Expenses | Future medical costs after age 18 | Medical expenses incurred during minority",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Georgia: 'the right to recover damages for medical expenses incurred in such treatment is vested exclusively in a minor child's parents' under O.C.G.A. § 19-7-2 (Wilson v. Obstetrics & Gynecology of Atlanta, 304 Ga. App. 340 (2010); Rose v. Hamilton Med. Ctr., 184 Ga. App. 182 (1987)); after majority the claim is the child's. South Carolina: 'the parent has a cause of action for the recovery of the medical expenses which he has incurred for the care and treatment of such minor' (Hughey v. Ausborn, 249 S.C. 470 (1967), applied in Patton v. Miller, 420 S.C. 471 (2017))",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2010/a10a0169-0.html",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "Pain and Suffering | Child's own pain and emotional distress | Parent's emotional distress (loss of consortium in some cases)",
+      "verdict": "update",
+      "currentValue": "Neither state gives a parent a loss-of-consortium claim for an injured child. South Carolina: 'South Carolina law does not recognize claims for loss of filial consortium' (Doe v. Greenville County School District, 375 S.C. 63 (2007)); a parent's own emotional-distress claim exists only in the narrow bystander scenario of Kinard v. Augusta Sash & Door (parent close to the accident, contemporaneous perception, physical manifestation). Georgia: a parent 'cannot maintain action for wrong done to minor child unless parent has incurred some direct pecuniary injury therefrom, in consequence of loss of service, or necessary expenses' (Southern Ry. v. Neeley, 101 Ga. App. 488 (1960), Justia annotation to § 19-7-1), and recovery for a parent's distress from learning of or seeing the child's injuries 'is not allowed' (Cotton States Mut. Ins. Co. v. Crosby, 149 Ga. App. 450 (1979), annotation to § 51-1-9); the impact rule allows it only where the parent was physically injured in the same event (Lee v. State Farm, 272 Ga. 583 (2000), as described in Eley v. Fedee (Ga. Ct. App. 2022)).",
+      "sourceName": "Doe v. Greenville County Sch. Dist., 375 S.C. 63, 651 S.E.2d 305 (2007); Kinard v. Augusta Sash & Door Co., 286 S.C. 579 (1985); Justia annotations to O.C.G.A. §§ 19-7-1 and 51-1-9; Eley v. Fedee, 362 Ga. App. 618 (2022)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/2007/26372.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Parent's cell: 'Generally none — a parent's own emotional distress is recoverable only in narrow bystander situations, and neither state recognizes loss of a child's consortium'."
+    },
+    {
+      "surface": "body",
+      "claim": "Lost Wages | Lost future earning capacity | Parent's lost wages from caring for injured child",
+      "verdict": "update",
+      "currentValue": "The parent's recognised claim in both states is for medical expenses paid and the value of the child's lost services (Georgia: O.C.G.A. § 19-7-1(a), § 19-7-2, Rose v. Hamilton; South Carolina: Wright v. Colleton County School District, 301 S.C. 282 (1990); Doe v. Greenville: 'our common law only allowed a parent to maintain an action for the loss of a child's services and earning capacity'). No authority found for a separate 'lost wages from caring for the child' head of damages.",
+      "sourceName": "Wright v. Colleton County Sch. Dist., 301 S.C. 282, 391 S.E.2d 564 (1990); Doe v. Greenville County Sch. Dist. (2007); Rose v. Hamilton Med. Ctr., 184 Ga. App. 182 (1987)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1990/23198-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Parent's cell: 'Value of the child's lost services; the parent's own wages are not a separate head of damages'."
+    },
+    {
+      "surface": "body",
+      "claim": "Loss of Services | Not applicable | Loss of child's services and companionship",
+      "verdict": "update",
+      "currentValue": "'Companionship' is a consortium element that neither state allows a parent to recover; the parent's claim is for the child's services (O.C.G.A. § 19-7-1(a): parents 'are entitled to the child's services and the proceeds of the child's labor'; Wright v. Colleton; Doe v. Greenville).",
+      "sourceName": "O.C.G.A. § 19-7-1(a); Doe v. Greenville County Sch. Dist., 375 S.C. 63 (2007)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-19/chapter-7/article-1/section-19-7-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Delete 'and companionship'."
+    },
+    {
+      "surface": "body",
+      "claim": "Statute of Limitations | Tolled until age 18 (then 2 yrs GA / 3 yrs SC) | Standard adult SOL applies (2 yrs GA / 3 yrs SC from date of injury)",
+      "verdict": "update",
+      "currentValue": "Child's cell for South Carolina: one year after 18, or three years from the injury if later (§ 15-3-40(b)). Parent's cell is right: the parent's claim is not tolled — 'The parents must bring theirs within two years ... The child need not then join in but may wait and file years later, within two years after he reaches majority' (Rose v. Hamilton, Ga. Ct. App. 1987, applying § 9-3-71 to a malpractice claim); Patton v. Miller (S.C. 2017) held the mother's individual medical-expense claim was subject to the ordinary three-year malpractice period.",
+      "sourceName": "S.C. Code § 15-3-40; Rose v. Hamilton Med. Ctr., 184 Ga. App. 182 (1987); Patton v. Miller, 420 S.C. 471 (2017)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/1987/74180.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Child's cell: 'Tolled during minority — GA: until the 20th birthday; SC: until the 19th birthday or 3 years from injury, whichever is later (malpractice claims differ)'."
+    },
+    {
+      "surface": "body",
+      "claim": "Settlement Approval | Court approval required | No court approval needed",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 29-3-3 and S.C. Code § 62-5-433 govern settlements 'in favor of ... [a] minor'; the parent's own claim is an adult's claim.",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-29/chapter-3/article-1/section-29-3-3/",
+      "retrievedAt": "2026-09-24",
+      "note": "Add 'above $25,000 in Georgia / $2,500 in South Carolina' to the child's cell if space allows."
+    },
+    {
+      "surface": "body",
+      "claim": "In Georgia, parents can recover medical expenses they have paid for the child's care during the child's minority (O.C.G.A. § 19-7-1). In South Carolina, similar parental claims are recognized, and the parent's right to recover medical expenses continues until the child reaches 18.",
+      "verdict": "update",
+      "currentValue": "The Georgia medical-expense right rests on § 19-7-2 (each parent's 'joint and several duty ... to provide for the maintenance, protection, and education of his or her child until the child reaches the age of majority'); § 19-7-1(a) supplies the loss-of-services claim. Georgia courts: 'Under OCGA § 19-7-2, parents are responsible for medical expenses incurred in the treatment of their minor children. Because parents have this responsibility, the right to recover damages for medical expenses incurred in such treatment is vested exclusively in a minor child's parents' (Wilson v. Ob/Gyn of Atlanta, 304 Ga. App. 340 (2010)). South Carolina: Patton v. Miller (2017) — the parent's 'legal obligation to pay her child's medical expenses' (S.C. Code §§ 63-5-20 & -30) gives her the substantive right to recover them; Hughey v. Ausborn (1967).",
+      "sourceName": "O.C.G.A. §§ 19-7-1(a), 19-7-2; Wilson v. Obstetrics & Gynecology of Atlanta, 304 Ga. App. 340 (2010); Patton v. Miller, 420 S.C. 471 (2017); S.C. Code §§ 63-5-20, 63-5-30",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-19/chapter-7/article-1/section-19-7-2/",
+      "retrievedAt": "2026-09-24",
+      "note": "Cite '(O.C.G.A. §§ 19-7-1 and 19-7-2)' and, for South Carolina, '(Patton v. Miller, 420 S.C. 471 (2017))'."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Critical timing note:</strong> While the child's claim is tolled, the <strong>parent's claim is not</strong>. If a parent has their own damages — lost wages from caring for the child, medical bills they have paid, emotional distress — those claims are subject to the standard adult statute of limitations: <strong>2 years in Georgia</strong> (O.C.G.A. § 9-3-33) and <strong>3 years in South Carolina</strong> (S.C. Code § 15-3-530).",
+      "verdict": "update",
+      "currentValue": "The timing point is right (Rose v. Hamilton; Patton v. Miller; § 9-3-90 annotation: tolling applies only where the 'right of action [is] in [the] disabled party'). The list of parental damages is not: see the table entries above — 'lost wages from caring for the child' and 'emotional distress' are not recognised heads of a parent's claim in either state.",
+      "sourceName": "Rose v. Hamilton Med. Ctr., 184 Ga. App. 182 (1987); Patton v. Miller, 420 S.C. 471 (2017); O.C.G.A. § 9-3-33; S.C. Code § 15-3-530",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/1987/74180.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Replace the dash list with 'medical bills they have paid and the value of the child's lost services'."
+    },
+    {
+      "surface": "body",
+      "claim": "<a href=\"/practice-areas/car-accident-lawyers/\">Car accidents</a> are the leading cause of injury-related death among children in the United States.",
+      "verdict": "update",
+      "currentValue": "CDC now says 'Motor vehicle injuries are a leading cause of death among children in the U.S.' — and CDC's firearm fact sheet reports that in 2022 'firearm injuries were the leading cause of death among children and teens ages 1-19.' CDC's child passenger safety page (2023 data): 1,019 child passengers ages 14 and younger were killed in motor vehicle crashes and more than 142,000 were injured; 43% of those killed were not buckled up.",
+      "sourceName": "CDC, Child Passenger Safety: About (2023 FARS/NEISS data, retrieved 2026-09-24); CDC, Fast Facts: Firearm Injury and Death (2022 data)",
+      "sourceUrl": "https://www.cdc.gov/child-passenger-safety/about/index.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Change 'the leading cause of injury-related death' to 'a leading cause of death'. Optionally add 'In 2023, 1,019 child passengers ages 14 and younger were killed in crashes in the U.S., and 43% of them were not buckled up (CDC).' Not in data/statistics.json — if kept, register it there."
+    },
+    {
+      "surface": "body",
+      "claim": "Proper car seat and booster seat use is required by law in both Georgia (O.C.G.A. § 40-8-76) and South Carolina (S.C. Code § 56-5-6410), and failure to properly restrain a child may affect the comparative fault analysis.",
+      "verdict": "update",
+      "currentValue": "The citations are right (§ 40-8-76(b): children under eight, rear seat, restraint system appropriate to height and weight; § 56-5-6410(A): children under eight, rear-facing under two, forward-facing harness, booster from four, adult belt at eight or 57 inches). The evidence claim is wrong. South Carolina: 'A violation of this article shall not constitute negligence, per se, contributory negligence nor be admissible as evidence in any trial of any civil action' (§ 56-5-6460) — an insurer cannot raise it as comparative fault. Georgia: 'Violation of this Code section shall not constitute negligence per se nor contributory negligence per se' (§ 40-8-76(c)); § 40-8-76 was last amended in 2011 and SB 68 (2025) did not touch it — SB 68 rewrote the seat-belt evidence rule in § 40-8-76.1(d), which applies to occupants restrained by seat belts (including children over 4'9\", § 40-8-76(b)(1)(D)).",
+      "sourceName": "O.C.G.A. § 40-8-76(b),(c) (2025 Code; history ends Ga. L. 2011, p. 253/SB 88); S.C. Code §§ 56-5-6410, 56-5-6460; internal-ai-scripts/law/SC.json rule sc-carseat-comparative-fault (severity error); GA.json authority 'GA 40-8-76.1'",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-8/article-1/part-4/section-40-8-76/",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite the clause: 'In South Carolina a child-restraint violation cannot be used against the family at all in a civil case (S.C. Code § 56-5-6460), and in Georgia it is not negligence per se (O.C.G.A. § 40-8-76(c)) — so an insurer cannot simply blame the parents for the child's injuries.' Do not import the SB 68 seat-belt rule into a child-restraint sentence."
+    },
+    {
+      "surface": "body",
+      "claim": "Children are the most common victims of <a href=\"/practice-areas/dog-bite-lawyers/\">dog bite injuries</a>, and they tend to suffer more severe injuries because of their smaller size and the fact that bites often occur to the face and head.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "JAVMA (AVMA) 2023, Kisiel et al.: 'The average annual incidence of dog bites was highest in children aged < 10 years' (peak at ages 5-9); head/face/neck injury rate 'was highest for children aged < 5 years'; 'Younger children are more likely to sustain injuries to the head, face, and neck ... most commonly attributed to children's shorter stature.' AVMA 2009 review: 'children are typically bitten on the face, head, and neck.'",
+      "sourceUrl": "https://avmajournals.avma.org/downloadpdf/journals/javma/261/5/javma.22.11.0494.pdf",
+      "retrievedAt": "2026-09-24",
+      "note": "Supported; a tighter wording is 'Children under 10 are bitten at the highest rates of any age group'. Not in data/statistics.json."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia follows a modified \"one bite\" rule (O.C.G.A. § 51-2-7), while South Carolina imposes strict liability on dog owners under S.C. Code § 47-3-110.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-2-7: the owner or keeper of 'a vicious or dangerous animal' who 'by careless management or by allowing the animal to go at liberty, causes injury to another person who does not provoke the injury' is liable; 'In proving vicious propensity, it shall be sufficient to show that the animal was required to be at heel or on a leash by an ordinance ... and the said animal was at the time of the occurrence not at heel or on a leash.' S.C. Code § 47-3-110(A): owner or keeper 'is liable for the damages suffered by the person bitten or otherwise attacked' in a public place or lawfully on private property; (B) no liability where the victim 'provoked or harassed the dog' or for law-enforcement dogs.",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-2/section-51-2-7/",
+      "retrievedAt": "2026-09-24",
+      "note": "'Modified one-bite rule' is a fair gloss because a leash-ordinance violation substitutes for proof of the dog's history. Optionally add '(a leash-law violation counts as proof the dog was dangerous)' and 'unless the child provoked the dog'."
+    },
+    {
+      "surface": "body",
+      "claim": "Both Georgia and South Carolina recognize the <strong>attractive nuisance doctrine</strong>, which imposes a higher duty of care on property owners when children are likely to be attracted to a dangerous condition on the property.",
+      "verdict": "update",
+      "currentValue": "Both states have adopted Restatement (Second) of Torts § 339: Georgia in Gregory v. Johnson, 249 Ga. 151 (1982) (a two-year-old drowned in a neighbour's pool); South Carolina in Henson v. International Paper Co., 374 S.C. 375 (2007), which also dropped the requirement that the child be lured onto the land by the hazard. The doctrine is an exception to the limited duty owed to trespassers, not a 'higher duty': a possessor is liable for an artificial condition that injures a trespassing child when the possessor should know children are likely to trespass, should realise the condition poses an unreasonable risk of death or serious harm, the children because of their youth do not appreciate the risk, the burden of removing the danger is slight compared with the risk, and the possessor fails to use reasonable care to protect them.",
+      "sourceName": "Gregory v. Johnson, 249 Ga. 151, 289 S.E.2d 232 (1982); Henson v. International Paper Co., 374 S.C. 375, 650 S.E.2d 74 (2007)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/1982/37917-1.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'which makes a property owner liable for an artificial hazard — an unfenced pool, an open excavation — that injures a trespassing child when the owner should have expected children to come onto the land and could have removed the danger at little cost (Gregory v. Johnson, Ga. 1982; Henson v. International Paper, S.C. 2007).'"
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia has specific medical malpractice requirements including an expert affidavit (O.C.G.A. § 9-11-9.1), while South Carolina requires a Notice of Intent to File and expert mediation under S.C. Code § 15-79-125.",
+      "verdict": "update",
+      "currentValue": "Georgia: § 9-11-9.1(a) — the complaint must be filed with 'an affidavit of an expert competent to testify' setting out 'at least one negligent act or omission' (verified facts-1676). South Carolina: § 15-79-125(A) requires the plaintiff to 'contemporaneously file a Notice of Intent to File Suit and an affidavit of an expert witness, subject to the affidavit requirements established in Section 15-36-100'; filing the notice 'tolls all applicable statutes of limitations'; (C) the parties must attend a mediation conference within 90 to 120 days of service. There is no such thing as 'expert mediation'. The statute is correctly deployed here — it applies to any medical-malpractice action, including birth injury.",
+      "sourceName": "O.C.G.A. § 9-11-9.1 (facts-1676, 2026-09-24); S.C. Code § 15-79-125(A),(C); § 15-36-100 (facts-1824, 2026-09-24; re-read on scstatehouse.gov today)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c079.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Change 'expert mediation' to 'an expert affidavit and pre-suit mediation (S.C. Code §§ 15-79-125 and 15-36-100)'. Add one sentence on the minors' malpractice deadlines: GA § 9-3-73 (above) and SC § 15-3-545(D) (minority tolling capped at seven years and at one year after 18) — both differ from the general rules the post gives."
+    },
+    {
+      "surface": "body",
+      "claim": "Claims against public schools may involve sovereign immunity issues in both states, while private facility claims proceed under standard negligence principles.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Georgia: the Georgia Tort Claims Act's waiver does not reach 'counties, municipalities, school districts, other units of local government' (O.C.G.A. § 50-21-22(5)), so school districts keep their constitutional sovereign immunity. South Carolina: the Tort Claims Act, S.C. Code § 15-78-60(25), bars liability for supervision or control of a student 'except when the responsibility or duty is exercised in a grossly negligent manner' (verified facts-1756); the two-year TCA period in § 15-78-110 is tolled for minors by § 15-3-40.",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-50/chapter-21/article-2/section-50-21-22/",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "Age of Majority | 18 | 18",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-90(b) ('the age of 18 years'); S.C. Code § 15-3-40(1) ('within the age of eighteen years')",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-5/section-9-3-90/",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "Minor SOL Deadline | 20th birthday (O.C.G.A. § 9-3-90) | 21st birthday (S.C. Code § 15-3-40)",
+      "verdict": "update",
+      "currentValue": "South Carolina cell: '19th birthday, or 3 years from injury if later (S.C. Code § 15-3-40)'. Georgia cell: add '(malpractice: O.C.G.A. § 9-3-73)'.",
+      "sourceName": "S.C. Code § 15-3-40(b); O.C.G.A. §§ 9-3-90(b), 9-3-73",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "Standard PI SOL | 2 years (O.C.G.A. § 9-3-33) | 3 years (S.C. Code § 15-3-530)",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-33; S.C. Code § 15-3-530(5); profiles/writer-profile.md jurisdiction table",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "Comparative Fault | Less than 50% (O.C.G.A. § 51-12-33) | Less than 51%",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(g) (plaintiff barred at 50 percent or more; verified facts-1649/1756 and facts-1663); South Carolina: Nelson v. Concrete Supply Co., 303 S.C. 243 (1991) (barred if more than 50% at fault) — profile rule: never cite § 15-38-15 for the plaintiff's bar. For a child's own fault both states judge the child by a child's standard: Georgia's 'due care' for 'a child of tender years' is 'such care as the child's mental and physical capacities enable him to exercise' (O.C.G.A. § 51-1-5), with a child of four or younger 'conclusively presumed to be incapable of contributory negligence' (Crawford v. Southern Ry., 106 Ga. 870 (1899), Justia annotation) and capacity between seven and fourteen a jury question; South Carolina judges 'a child of like age, intelligence, and experience under like circumstances' with no age presumptions (Standard v. Shine, 278 S.C. 337 (1982)).",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "Add '(Nelson v. Concrete Supply Co.)' to the South Carolina cell. The post never states the child-negligence standard; if the refresher adds it, use § 51-1-5 and Standard v. Shine as above."
+    },
+    {
+      "surface": "body",
+      "claim": "Settlement Approval Court | Superior Court (O.C.G.A. § 29-3-3) | Probate Court (S.C. Code § 62-5-433)",
+      "verdict": "update",
+      "currentValue": "Georgia: 'Probate court, or the court hearing the lawsuit — above $25,000 (O.C.G.A. § 29-3-3)'. South Carolina: 'Circuit court above $25,000; circuit or probate court up to $25,000; none needed at $2,500 or less (S.C. Code § 62-5-433)'.",
+      "sourceName": "O.C.G.A. § 29-3-3(c); S.C. Code § 62-5-433(A)(1),(C),(D)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t62c005.php",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "Dog Bite Liability | Modified one-bite rule (O.C.G.A. § 51-2-7) | Strict liability (S.C. Code § 47-3-110)",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-2-7; S.C. Code § 47-3-110",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t47c003.php",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "Medical Malpractice Requirement | Expert affidavit (O.C.G.A. § 9-11-9.1) | Notice of Intent + mediation (S.C. Code § 15-79-125)",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-11-9.1(a); S.C. Code § 15-79-125(A),(C) (the Notice must be filed with a § 15-36-100 expert affidavit)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c079.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Optionally 'Notice of Intent + expert affidavit + mediation (S.C. Code §§ 15-79-125, 15-36-100)'."
+    },
+    {
+      "surface": "body",
+      "claim": "Child Restraint Law | O.C.G.A. § 40-8-76 | S.C. Code § 56-5-6410",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 40-8-76(b); S.C. Code § 56-5-6410",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Structured settlements:</strong> Periodic payments over time, often designed to provide funds at key milestones (college age, age 25, age 30). These offer tax advantages and protect the child from receiving a large lump sum at age 18.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "26 U.S.C. § 104(a)(2): gross income excludes 'the amount of any damages (other than punitive damages) received (whether by suit or agreement and whether as lump sums or as periodic payments) on account of personal physical injuries or physical sickness'; O.C.G.A. § 29-3-3(d)(2)(A) (court may approve 'a structured settlement or creation of a trust'); S.C. Code § 62-5-433(B)(2)",
+      "sourceUrl": "https://www.law.cornell.edu/uscode/text/26/104",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Blocked accounts:</strong> Settlement funds deposited in a bank account that cannot be accessed until the child turns 18. The court order prevents early withdrawal.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 29-3-3(d)(2)(B)(ii) (compromise may defer 'all of the consideration ... until after the minor reaches the age of majority'); S.C. Code § 62-5-103(A)(3) (deposit 'in a federally insured savings account in the sole name of the minor'); § 62-5-433(B)(3) (protective order of the probate court)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t62c005.php",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Conservatorships or guardianships:</strong> For larger settlements, the court may appoint a conservator to manage the funds and make investment decisions in the child's best interest.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 29-3-3(c)(3) (conservator required when gross and net settlement both exceed $25,000); S.C. Code § 62-5-433(B)(3); § 62-5-422 (conservator may 'invest and reinvest funds of the estate as would a trustee')",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-29/chapter-3/article-1/section-29-3-3/",
+      "retrievedAt": "2026-09-24",
+      "note": "'may appoint' understates Georgia: above $25,000 net a conservator is mandatory."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Special needs trusts:</strong> If the child has a disability resulting from the injury, a special needs trust can protect the settlement funds while preserving the child's eligibility for Medicaid and other government benefits.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "42 U.S.C. § 1396p(d)(4)(A): a trust 'containing the assets of an individual under age 65 who is disabled ... established for the benefit of such individual by the individual, a parent, grandparent, legal guardian of the individual, or a court' is disregarded for Medicaid eligibility if the State is repaid at death",
+      "sourceUrl": "https://www.law.cornell.edu/uscode/text/42/1396p",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "At Roden Law, our <a href=\"/attorneys/\">experienced attorneys</a> have handled hundreds of cases involving injured minors across Georgia and South Carolina.",
+      "verdict": "drop",
+      "currentValue": "",
+      "sourceName": "Not verifiable; the writer profile's firm facts give 5,000+ cases handled overall and nothing on minors.",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite to 'have handled thousands of injury cases across Georgia and South Carolina, including many involving injured children' or delete the count."
+    },
+    {
+      "surface": "body",
+      "claim": "We have recovered more than <strong>$300 million</strong> for our clients, and we work on a <strong>contingency fee basis</strong> — you pay nothing unless we win.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "profiles/writer-profile.md firm facts ('$300M+ recovered', 'contingency fee, no fees unless we win'); live page shows the same figure",
+      "sourceUrl": "https://rodenlaw.com/blog/filing-a-claim-for-an-injured-minor/",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "Call <a href=\"tel:+18447378587\"><strong>1-844-RESULTS</strong></a>",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "profiles/writer-profile.md: the toll-free line 1-844-RESULTS is tel:+18447378587",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "href is correct."
+    },
+    {
+      "surface": "excerpt",
+      "claim": "How a parent or guardian files an injury claim for a child in Georgia or South Carolina, and how the deadline differs from an adult's.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "No factual assertion beyond the post's subject.",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Georgia's statute of limitations for minors is tolled until age 18 under O.C.G.A. § 9-3-90, giving children until their 20th birthday to file.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-90(b); § 9-3-33",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-5/section-9-3-90/",
+      "retrievedAt": "2026-09-24",
+      "note": "Accurate for ordinary claims; consider '(medical malpractice claims run on a shorter clock, O.C.G.A. § 9-3-73)'."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "South Carolina's tolling provision (S.C. Code § 15-3-40) extends the deadline to age 21.",
+      "verdict": "update",
+      "currentValue": "'South Carolina's tolling provision (S.C. Code § 15-3-40) extends the deadline only to one year past the child's 18th birthday — age 19 — or three years from the injury if that is later.'",
+      "sourceName": "S.C. Code § 15-3-40(b)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Renders above the article."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Both states require court approval for minor settlements, with funds typically held in supervised trusts.",
+      "verdict": "update",
+      "currentValue": "'Both states require court approval for larger minor settlements — above $25,000 in Georgia and above $2,500 in South Carolina — with the money paid to a conservator, into a court-restricted account or into a structured settlement.'",
+      "sourceName": "O.C.G.A. § 29-3-3(c),(d); S.C. Code § 62-5-433(B)(3),(D)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-29/chapter-3/article-1/section-29-3-3/",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Recoverable damages include medical costs, future earning capacity, pain and suffering, and emotional impact.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "General; consistent with the verified body sections.",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "faq:0",
+      "claim": "In both Georgia and South Carolina, natural parents, legal guardians, and court-appointed next friends can file personal injury claims on behalf of a minor. Georgia follows O.C.G.A. § 29-3-3 for guardian authority, while South Carolina allows next friend actions under S.C. Code § 62-5-433.",
+      "verdict": "update",
+      "currentValue": "Both citations are wrong for this proposition. Georgia's authority for who may sue for a minor is O.C.G.A. § 9-11-17(c) (representative, next friend or guardian ad litem); § 29-3-3 governs settlement of the claim. South Carolina's is Rule 17(c), SCRCP; § 62-5-433 governs settlement. A next friend is not 'court-appointed' — any adult may act, subject to the court's oversight (Scott v. Scott, Ga. Ct. App. 2011; Rule 17(c)).",
+      "sourceName": "O.C.G.A. § 9-11-17(c); Rule 17(c), SCRCP; Scott v. Scott, 308 Ga. App. 787 (2011)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-4/section-9-11-17/",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'In both Georgia and South Carolina a parent, a court-appointed guardian or conservator, or another adult acting as the child's next friend can file the claim — O.C.G.A. § 9-11-17(c) in Georgia and Rule 17(c) of the South Carolina Rules of Civil Procedure. Non-custodial parents may also have standing, though custodial parents typically take the lead in filing.' Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:1",
+      "claim": "In Georgia, the standard personal injury statute of limitations is 2 years (O.C.G.A. § 9-3-33). However, for minors, the clock is tolled (paused) under O.C.G.A. § 9-3-90 until the child turns 18. This means the child has until their 20th birthday to file.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-90(b); § 9-3-33",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-5/section-9-3-90/",
+      "retrievedAt": "2026-09-24",
+      "note": "Add 'Medical malpractice claims, including birth injuries, run on a shorter clock under O.C.G.A. § 9-3-73.' Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:2",
+      "claim": "For minors, S.C. Code § 15-3-40 tolls the limitations period until the child reaches 18, giving them until age 21 to file.",
+      "verdict": "update",
+      "currentValue": "'For minors, S.C. Code § 15-3-40 pauses the clock during childhood but caps the extension at one year after the child turns 18 — so the deadline is the child's 19th birthday, or three years from the injury if that comes later. Medical malpractice claims are capped separately under § 15-3-545.'",
+      "sourceName": "S.C. Code § 15-3-40(b); § 15-3-545(D)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Publishes as FAQPage structured data — the wrong deadline is published twice."
+    },
+    {
+      "surface": "faq:3",
+      "claim": "Georgia requires Superior Court approval for any settlement on behalf of a minor under O.C.G.A. § 29-3-3. The court reviews the settlement to ensure it is in the child's best interest. South Carolina requires Family Court approval under similar provisions.",
+      "verdict": "update",
+      "currentValue": "Georgia: approval is required only when the gross settlement exceeds $25,000, and it comes from the probate court or the court where the suit is pending — the statute never mentions the superior court (§ 29-3-3(c)). South Carolina: approval comes from the circuit court (over $25,000 net) or the circuit or probate court ($25,000 or less), and none is needed at $2,500 or less (§ 62-5-433); the family court has no role in the statute.",
+      "sourceName": "O.C.G.A. § 29-3-3(c); S.C. Code § 62-5-433(A)(1),(B)-(D)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t62c005.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'Yes, above modest amounts. In Georgia any settlement worth more than $25,000 must be approved by the probate court, or by the court hearing the case once suit is filed (O.C.G.A. § 29-3-3). In South Carolina a settlement worth more than $2,500 after fees needs court approval — the circuit or probate court up to $25,000, and the circuit court alone above that (S.C. Code § 62-5-433). The court reviews the settlement to ensure it is in the child's best interest, and the funds are paid to a conservator, into a court-restricted account or into a structured settlement until the child reaches 18.' Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:4",
+      "claim": "Parents may separately recover their own damages for medical bills they paid and lost wages from caring for the child.",
+      "verdict": "update",
+      "currentValue": "'Parents may separately recover the medical bills they paid and the value of the child's lost services.' (See the parent's-claim entries above: a parent's own lost wages are not a recognised head of damages in either state.)",
+      "sourceName": "Wright v. Colleton County Sch. Dist., 301 S.C. 282 (1990); O.C.G.A. §§ 19-7-1(a), 19-7-2; Rose v. Hamilton Med. Ctr. (1987)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1990/23198-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:5",
+      "claim": "At Roden Law, we handle all personal injury cases — including claims for injured children — on a contingency fee basis. This means you pay nothing upfront and owe no attorney fees unless we recover compensation for your child. We advance all case costs and expenses. Call 1-844-RESULTS for a free, no-obligation consultation about your child's injury claim.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "profiles/writer-profile.md firm facts (contingency fee, 1-844-RESULTS)",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "'We advance all case costs' is a firm practice statement, not a legal claim."
+    }
+  ],
+  "recommendedEdits": [
+    "Replace every 'age 21' / '21st birthday' for South Carolina (body bullets ×3, sentence 'one additional year beyond Georgia's deadline', comparison table, keyTakeaways, faq:2) with 'the child's 19th birthday, or three years from the injury if that is later' (S.C. Code § 15-3-40(b)), and reverse the comparison sentence: South Carolina's deadline usually falls a year before Georgia's.",
+    "Add the medical-malpractice exception to the Georgia SOL section, faq:1 and the comparison table: O.C.G.A. § 9-3-73 — under-five children get two years from the fifth birthday and never past the tenth; older children the ordinary two years; § 9-3-90 does not apply. Add the South Carolina counterpart, § 15-3-545(D) (minority tolling capped at seven years and at one year after 18), to the birth-injury paragraph and faq:2.",
+    "Replace the non-existent 'O.C.G.A. § 9-2-17' with '§ 9-11-17(c)' and rewrite the Georgia next-friend paragraph so a parent is the usual next friend and any adult may serve (Scott v. Scott); for South Carolina cite Rule 17(c), SCRCP first and keep § 62-5-433 for settlements only.",
+    "faq:0: cite O.C.G.A. § 9-11-17(c) and Rule 17(c), SCRCP instead of §§ 29-3-3 / 62-5-433; drop 'court-appointed' before 'next friends'.",
+    "Georgia court-approval section: change 'superior court in the county where the minor resides' to 'the probate court, or the court hearing the lawsuit once one is filed'; change '$15,000' to '$25,000'; explain that approval is needed only above $25,000 gross, that a conservator is required only when the net settlement also exceeds $25,000, and that with court approval the money can go into a structured settlement, a trust, or be deferred to age 18 (O.C.G.A. § 29-3-3, as rewritten 2022).",
+    "South Carolina court-approval section, comparison table and faq:3: delete 'probate court approval for all minor settlements' and 'Family Court'; state the § 62-5-433 tiers — no approval at $2,500 or less (net), circuit or probate court up to $25,000, circuit court only above $25,000 — and that funds are paid through a conservator or under a probate-court protective order.",
+    "keyTakeaways: rewrite the South Carolina deadline sentence and the court-approval sentence as given in the pack (age 19; approval above $25,000 GA / $2,500 SC; conservator, restricted account or structured settlement rather than 'supervised trusts').",
+    "Child-restraint sentence: replace 'failure to properly restrain a child may affect the comparative fault analysis' with the § 56-5-6460 (inadmissible in any civil action) and § 40-8-76(c) (not negligence per se) statement; do not mention SB 68 here.",
+    "Car-accident statistic: change 'the leading cause of injury-related death among children' to 'a leading cause of death among children' (CDC); optionally add the CDC 2023 figure (1,019 child passengers 14 and under killed; 43% unbuckled) and register it in data/statistics.json.",
+    "Parent-vs-child table and faq:4: remove 'companionship', 'loss of consortium in some cases', 'parent's emotional distress' and 'lost wages from caring for injured child'; the parent's claim is medical expenses paid plus the child's lost services (Doe v. Greenville County Sch. Dist.; Wright v. Colleton; O.C.G.A. §§ 19-7-1(a), 19-7-2). Cite § 19-7-2 alongside § 19-7-1 for the Georgia medical-expense right and add Patton v. Miller for South Carolina.",
+    "Med-mal sentence and table: change 'expert mediation' to 'an expert affidavit and pre-suit mediation (S.C. Code §§ 15-79-125 and 15-36-100)'.",
+    "Attractive-nuisance sentence: replace 'imposes a higher duty of care' with the Restatement § 339 formulation and cite Gregory v. Johnson (Ga. 1982) and Henson v. International Paper (S.C. 2007).",
+    "Comparison table: add '(Nelson v. Concrete Supply Co.)' to the South Carolina comparative-fault cell; never cite § 15-38-15 there.",
+    "Delete or soften 'have handled hundreds of cases involving injured minors' (unverifiable).",
+    "Legal-guardian paragraph: drop 'by the probate court or family court'; say 'formally appointed by a court'.",
+    "Attribution: the live page shows Eric Roden as author of a post that states South Carolina law; switch the byline/reviewer to Graeham C. Gillin per the profile rule."
+  ],
+  "statuteCitations": [
+    {
+      "section": "O.C.G.A. § 9-3-90",
+      "name": "Individuals under disability when cause of action accrues — (b) persons under 18 get the same time after turning 18 as others (except § 9-3-33.1 childhood sexual abuse claims)",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-5/section-9-3-90/"
+    },
+    {
+      "section": "O.C.G.A. § 9-3-33",
+      "name": "Injuries to the person — two-year limitation; loss of consortium four years (verified facts-1649/1756)",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+    },
+    {
+      "section": "O.C.G.A. § 9-3-73",
+      "name": "Medical malpractice — minors under five: two years from the fifth birthday, repose at the tenth birthday; minors five and older: ordinary periods (verified facts-1676)",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-73/"
+    },
+    {
+      "section": "O.C.G.A. § 9-3-71",
+      "name": "Medical malpractice — two-year limitation, five-year repose (governs the parent's own medical-expense claim in malpractice cases, Rose v. Hamilton) (verified facts-1676)",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/"
+    },
+    {
+      "section": "O.C.G.A. § 9-11-17",
+      "name": "Real party in interest; capacity — (c) a minor sues through a representative, next friend or guardian ad litem; next friend must post bond before receiving proceeds",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-4/section-9-11-17/"
+    },
+    {
+      "section": "O.C.G.A. § 9-2-28",
+      "name": "Effect of action by minor alone — not void; want of guardian or next friend is an amendable defect",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-2/article-2/section-9-2-28/"
+    },
+    {
+      "section": "O.C.G.A. § 9-11-9.1",
+      "name": "Expert affidavit to accompany professional malpractice complaint (verified facts-1676)",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-3/section-9-11-9-1/"
+    },
+    {
+      "section": "O.C.G.A. § 29-3-3",
+      "name": "Compromise of a minor's claim — gross/net definitions (a); $25,000 tiers (c); approval by probate court or the court where the action is pending; structured settlements and trusts (d); as rewritten by HB 620 (2022), technical amendment eff. July 1, 2026",
+      "url": "https://law.justia.com/codes/georgia/title-29/chapter-3/article-1/section-29-3-3/"
+    },
+    {
+      "section": "O.C.G.A. § 19-7-1",
+      "name": "Parental power — (a) parents entitled to the child's services; (c) right of recovery for the homicide of a child",
+      "url": "https://law.justia.com/codes/georgia/title-19/chapter-7/article-1/section-19-7-1/"
+    },
+    {
+      "section": "O.C.G.A. § 19-7-2",
+      "name": "Parents' joint and several duty of support until majority — basis of the parent's exclusive claim for a minor's medical expenses",
+      "url": "https://law.justia.com/codes/georgia/title-19/chapter-7/article-1/section-19-7-2/"
+    },
+    {
+      "section": "O.C.G.A. § 51-2-7",
+      "name": "Liability of owner or keeper of a vicious or dangerous animal; leash-ordinance violation proves vicious propensity",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-2/section-51-2-7/"
+    },
+    {
+      "section": "O.C.G.A. § 51-1-5",
+      "name": "'Due care' for a child of tender years — measured by the child's mental and physical capacities",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-5/"
+    },
+    {
+      "section": "O.C.G.A. § 51-12-33",
+      "name": "Apportionment of fault; plaintiff barred at 50 percent or more (verified facts-1649/1756)",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+    },
+    {
+      "section": "O.C.G.A. § 40-8-76",
+      "name": "Child passenger restraints for children under eight (b); violation is not negligence per se nor contributory negligence per se (c); last amended 2011, untouched by SB 68",
+      "url": "https://law.justia.com/codes/georgia/title-40/chapter-8/article-1/part-4/section-40-8-76/"
+    },
+    {
+      "section": "O.C.G.A. § 50-21-22",
+      "name": "Georgia Tort Claims Act definitions — (5) 'State' excludes counties, municipalities and school districts",
+      "url": "https://law.justia.com/codes/georgia/title-50/chapter-21/article-2/section-50-21-22/"
+    },
+    {
+      "section": "S.C. Code § 15-3-40",
+      "name": "Exceptions as to persons under disability — tolling for persons under 18 (Article 5 actions and Tort Claims Act actions), capped at one year after the disability ceases",
+      "url": "https://www.scstatehouse.gov/code/t15c003.php"
+    },
+    {
+      "section": "S.C. Code § 15-3-530",
+      "name": "Three-year limitation; (5) injury to the person (verified facts-1649/1756)",
+      "url": "https://www.scstatehouse.gov/code/t15c003.php"
+    },
+    {
+      "section": "S.C. Code § 15-3-545",
+      "name": "Medical malpractice — three years / six-year repose (A); (D) minority tolling capped at seven years and at one year after majority (verified facts-1824)",
+      "url": "https://www.scstatehouse.gov/code/t15c003.php"
+    },
+    {
+      "section": "S.C. Code § 62-5-433",
+      "name": "Settlement of claims of minors — $25,000 circuit/probate split (A)(1); 'claim' is the net amount (A)(2); guardian ad litem per Rule 17 (A)(4); petition and order (B); $2,500 parental settlement without approval (D); amended 2024 Act No. 200",
+      "url": "https://www.scstatehouse.gov/code/t62c005.php"
+    },
+    {
+      "section": "S.C. Code § 62-5-103",
+      "name": "Facility of payment — up to $15,000 net per year may be paid to a custodian, guardian or an insured account in the minor's name",
+      "url": "https://www.scstatehouse.gov/code/t62c005.php"
+    },
+    {
+      "section": "S.C. Code § 63-5-30",
+      "name": "Mother and father are joint natural guardians with equal rights and duties",
+      "url": "https://www.scstatehouse.gov/code/t63c005.php"
+    },
+    {
+      "section": "S.C. Code § 47-3-110",
+      "name": "Dog-owner liability for bites and attacks; provocation and law-enforcement exceptions",
+      "url": "https://www.scstatehouse.gov/code/t47c003.php"
+    },
+    {
+      "section": "S.C. Code § 56-5-6410",
+      "name": "Child passenger restraint systems — requirements by age, height and weight (2017 rewrite)",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "section": "S.C. Code § 56-5-6460",
+      "name": "Violation of the child-restraint article is not negligence and is inadmissible in any civil action",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "section": "S.C. Code § 15-79-125",
+      "name": "Notice of Intent to File Suit with expert affidavit; tolls limitations; mandatory pre-litigation mediation within 90-120 days (verified facts-1824)",
+      "url": "https://www.scstatehouse.gov/code/t15c079.php"
+    },
+    {
+      "section": "S.C. Code § 15-36-100",
+      "name": "Expert affidavit requirements for professional negligence actions (verified facts-1824)",
+      "url": "https://www.scstatehouse.gov/code/t15c036.php"
+    },
+    {
+      "section": "S.C. Code § 15-78-60",
+      "name": "Tort Claims Act exceptions — (25) student supervision unless grossly negligent (verified facts-1756)",
+      "url": "https://www.scstatehouse.gov/code/t15c078.php"
+    },
+    {
+      "section": "Rule 17(c), SCRCP",
+      "name": "Minor or incompetent persons — representative, next friend or guardian ad litem; court shall appoint a GAL for an unrepresented minor",
+      "url": "https://www.sccourts.org/courtreg/displayRule.cfm?ruleID=17.0&subRuleID=&ruleType=CIV"
+    }
+  ],
+  "caseCitations": [
+    {
+      "name": "Patton v. Miller, 420 S.C. 471, 804 S.E.2d 252 (S.C. 2017)",
+      "holding": "A parent's obligation to pay a minor's medical expenses (S.C. Code §§ 63-5-20, -30) makes the parent the real party in interest for those expenses (Hughey v. Ausborn, 249 S.C. 470 (1967)); the parent's individual claim is subject to the ordinary three-year malpractice period; a mother may sue 'as next friend' under Rule 17(c).",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/2017/27730.html"
+    },
+    {
+      "name": "Doe v. Greenville County School District, 375 S.C. 63, 651 S.E.2d 305 (S.C. 2007)",
+      "holding": "South Carolina does not recognize a parent's claim for loss of filial consortium; the common-law parental claim is for the child's services and medical expenses; a parent's negligent-infliction claim is limited to the Kinard bystander scenario.",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/2007/26372.html"
+    },
+    {
+      "name": "Wright v. Colleton County School District, 301 S.C. 282, 391 S.E.2d 564 (S.C. 1990)",
+      "holding": "A parent's claims for medical expenses and loss of a minor child's services are separately cognizable from the child's claim (including under the Tort Claims Act).",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/1990/23198-2.html"
+    },
+    {
+      "name": "Standard v. Shine, 278 S.C. 337, 295 S.E.2d 786 (S.C. 1982)",
+      "holding": "A minor's conduct is judged by the standard of a child of like age, intelligence and experience under like circumstances; the old age-based presumptions of incapacity for contributory negligence were abandoned.",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/1982/21792-1.html"
+    },
+    {
+      "name": "Henson v. International Paper Co., 374 S.C. 375, 650 S.E.2d 74 (S.C. 2007)",
+      "holding": "South Carolina adopts Restatement (Second) of Torts § 339 for premises-liability claims by trespassing children and drops the requirement that the child be attracted onto the land by the hazard.",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/2007/26374.html"
+    },
+    {
+      "name": "Gregory v. Johnson, 249 Ga. 151, 289 S.E.2d 232 (Ga. 1982)",
+      "holding": "Georgia adopts Restatement (Second) of Torts § 339 (attractive nuisance) — an unfenced residential pool that drowned a two-year-old presented a jury question.",
+      "url": "https://law.justia.com/cases/georgia/supreme-court/1982/37917-1.html"
+    },
+    {
+      "name": "Rose v. Hamilton Medical Center, Inc., 184 Ga. App. 182, 361 S.E.2d 1 (Ga. Ct. App. 1987)",
+      "holding": "The claim for a minor's medical expenses during minority is vested exclusively in both parents under O.C.G.A. § 19-7-2 and is not tolled; the child's own claim may be filed within two years after majority under § 9-3-90.",
+      "url": "https://law.justia.com/cases/georgia/court-of-appeals/1987/74180.html"
+    },
+    {
+      "name": "Wilson v. Obstetrics & Gynecology of Atlanta, P.C., 304 Ga. App. 340 (Ga. Ct. App. 2010)",
+      "holding": "The right to recover medical expenses incurred for a child during minority is vested exclusively in the parents (O.C.G.A. § 19-7-2); the parents' claim is governed by § 9-3-71, not the minor's § 9-3-73 period.",
+      "url": "https://law.justia.com/cases/georgia/court-of-appeals/2010/a10a0169-0.html"
+    },
+    {
+      "name": "Scott v. Scott, 308 Ga. App. 787, 709 S.E.2d 269 (Ga. Ct. App. 2011)",
+      "holding": "Under O.C.G.A. § 9-11-17(c) any person may act as a minor's next friend; the court need not formally appoint one but retains oversight.",
+      "url": "https://law.justia.com/cases/georgia/court-of-appeals/2011/a10a2036.html"
+    },
+    {
+      "name": "Hall v. Hill (Ga. Ct. App. 2021), A21A0111",
+      "holding": "Quotes § 9-11-17(c) and In the Interest of W.L.H., 314 Ga. App. 185 (2012): 'In civil actions, a minor may not prosecute an action except by way of a representative, such as a guardian ad litem or next friend.'",
+      "url": "https://law.justia.com/cases/georgia/court-of-appeals/2021/a21a0111.html"
+    },
+    {
+      "name": "Perrow v. S.C. Department of Corrections, Op. No. 25631 (S.C. Apr. 28, 2003)",
+      "holding": "Reads § 15-3-40's caps as limits on how far the filing period may be 'extended' by a disability.",
+      "url": "https://www.sccourts.org/opinions/advsheets/no162003.pdf"
+    },
+    {
+      "name": "John Doe 3 v. DuCharme, 2006-UP-133 (S.C. Ct. App. 2006) (unpublished)",
+      "holding": "Describes the trial court's application of § 15-3-40: the minor's tolled claims had to be commenced within one year of the eighteenth birthday.",
+      "url": "https://law.justia.com/cases/south-carolina/court-of-appeals/2006/2006-up-133-1.html"
+    },
+    {
+      "name": "Atlanta Affordable Housing Fund v. Brown, 253 Ga. App. 286, 558 S.E.2d 827 (Ga. Ct. App. 2002)",
+      "holding": "Under O.C.G.A. § 51-1-5 there is no presumption that a child between seven and fourteen did or did not exercise due care; the child's capacity and negligence are jury questions.",
+      "url": "https://law.justia.com/cases/georgia/court-of-appeals/2002/a01a1768.html"
+    }
+  ],
+  "authoritativeLinks": [
+    {
+      "name": "Legal Information Institute (Cornell) — Wex: next friend",
+      "url": "https://www.law.cornell.edu/wex/next_friend"
+    },
+    {
+      "name": "CDC — Child Passenger Safety: About (2023 child passenger deaths and injuries)",
+      "url": "https://www.cdc.gov/child-passenger-safety/about/index.html"
+    },
+    {
+      "name": "CDC — Fast Facts: Firearm Injury and Death (firearms the leading cause of death, ages 1-19, 2022)",
+      "url": "https://www.cdc.gov/firearm-violence/data-research/facts-stats/index.html"
+    },
+    {
+      "name": "JAVMA (AVMA), Kisiel et al. 2023 — incidence of dog and cat bite injuries by age; head/face/neck injuries in young children",
+      "url": "https://avmajournals.avma.org/downloadpdf/journals/javma/261/5/javma.22.11.0494.pdf"
+    },
+    {
+      "name": "26 U.S.C. § 104(a)(2) — exclusion of personal physical injury damages, lump sum or periodic (Cornell LII)",
+      "url": "https://www.law.cornell.edu/uscode/text/26/104"
+    },
+    {
+      "name": "42 U.S.C. § 1396p(d)(4)(A) — special needs trust exception for Medicaid (Cornell LII)",
+      "url": "https://www.law.cornell.edu/uscode/text/42/1396p"
+    },
+    {
+      "name": "South Carolina Rules of Civil Procedure, Rule 17 (sccourts.org)",
+      "url": "https://www.sccourts.org/courtreg/displayRule.cfm?ruleID=17.0&subRuleID=&ruleType=CIV"
+    }
+  ]
+}

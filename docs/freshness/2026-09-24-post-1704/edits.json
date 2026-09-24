@@ -1,0 +1,134 @@
+[
+ {
+  "id": "1704",
+  "surface": "content",
+  "before": "<p>If the child's parents are deceased, incapacitated, or have had their parental rights terminated, a court-appointed legal guardian can file the claim. The guardian must have been formally appointed by the probate court or family court.</p>",
+  "after": "<p>If the child's parents are deceased, incapacitated, or have had their parental rights terminated, a court-appointed legal guardian can file the claim. The guardian or conservator must have been formally appointed by a court.</p>"
+ },
+ {
+  "id": "1704",
+  "surface": "content",
+  "before": "<p>In Georgia, under O.C.G.A. § 9-2-17, a \"next friend\" may bring a lawsuit on behalf of a minor when there is no parent or guardian available or willing to act. The next friend is typically a close relative — a grandparent, aunt, uncle, or adult sibling — who can demonstrate a genuine interest in the child's welfare.</p>\n\n<p>In South Carolina, the concept is similar. Under S.C. Code § 62-5-433 and the South Carolina Rules of Civil Procedure (Rule 17), a guardian ad litem may be appointed by the court to represent the minor's interests in the litigation. The guardian ad litem's role is to ensure that the legal proceedings serve the child's best interests, not the interests of the filing adult.</p>",
+  "after": "<p>In Georgia, <a href=\"https://law.justia.com/codes/georgia/title-9/chapter-11/article-4/section-9-11-17/\">O.C.G.A. § 9-11-17(c)</a> lets a minor sue through a \"next friend\" or a court-appointed guardian ad litem. A parent is the usual next friend; if no parent can act, a grandparent, other relative or any adult who will protect the child's interests may serve, subject to the court's oversight (<em>Scott v. Scott</em>, Ga. Ct. App. 2011).</p>\n\n<p>In South Carolina the rule is the same: under <a href=\"https://www.sccourts.org/resources/judicial-community/court-rules/civil/rule-17/\">Rule 17(c), SCRCP</a>, a minor sues through a next friend, or through a guardian ad litem the court appoints when no one else represents the child. The guardian ad litem's role is to ensure that the legal proceedings serve the child's best interests, not the interests of the filing adult.</p>"
+ },
+ {
+  "id": "1704",
+  "surface": "content",
+  "before": "<ul>\n<li>A child injured at any age has until their <strong>20th birthday</strong> to file a personal injury lawsuit in Georgia.</li>\n<li>If the child was injured at age 5, the family has until the child turns 20 — a full 15 years.</li>\n<li>If the child was injured at age 16, the family has until the child turns 20 — a minimum of 4 years.</li>\n</ul>",
+  "after": "<ul>\n<li>A child injured at any age has until their <strong>20th birthday</strong> to file a personal injury lawsuit in Georgia.</li>\n<li>If the child was injured at age 5, the family has until the child turns 20 — a full 15 years.</li>\n<li>If the child was injured at age 16, the family has until the child turns 20 — a minimum of 4 years.</li>\n</ul>\n\n<p>The big exception is medical malpractice, including birth injuries. Under <a href=\"https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-73/\">O.C.G.A. § 9-3-73</a>, a child hurt before age five has until the seventh birthday, an older child has the ordinary two years, and suits are cut off at the tenth birthday or five years after the act, whichever applies.</p>"
+ },
+ {
+  "id": "1704",
+  "surface": "content",
+  "before": "<p>South Carolina similarly tolls the statute of limitations for minors. Under S.C. Code § 15-3-40, the statute of limitations does not begin to run until the minor reaches the <strong>age of majority, which is 18 in South Carolina</strong>.</p>",
+  "after": "<p>South Carolina similarly tolls the statute of limitations for minors. Under <a href=\"https://www.scstatehouse.gov/code/t15c003.php\">S.C. Code § 15-3-40</a>, the statute of limitations does not begin to run until the minor reaches the <strong>age of majority, which is 18 in South Carolina</strong>, but the extension is capped at one year after the child turns 18.</p>"
+ },
+ {
+  "id": "1704",
+  "surface": "content",
+  "before": "<ul>\n<li>An injured child in South Carolina has until their <strong>21st birthday</strong> to file a personal injury lawsuit.</li>\n<li>A child injured at age 3 has until age 21 — a full 18 years.</li>\n<li>A child injured at age 17 has until age 21 — a minimum of 4 years.</li>\n</ul>\n\n<p>South Carolina provides one additional year beyond Georgia's deadline, but the same practical advice applies: earlier filing preserves evidence and strengthens your case.</p>",
+  "after": "<ul>\n<li>An injured child in South Carolina has until their <strong>19th birthday</strong> to file a personal injury lawsuit, or three years from the injury if that is later.</li>\n<li>A child injured at age 3 has until age 19 — 16 years.</li>\n<li>A child injured at age 17 has the ordinary three years — until age 20.</li>\n</ul>\n\n<p>South Carolina's deadline for most children falls a year earlier than Georgia's, and the same practical advice applies: earlier filing preserves evidence and strengthens your case.</p>"
+ },
+ {
+  "id": "1704",
+  "surface": "content",
+  "before": "<p>One of the most important differences between adult and minor injury claims is that <strong>settlements involving minors must be approved by a court</strong> in both Georgia and South Carolina. This requirement exists to protect the child from settlements that may not be in their best interest.</p>",
+  "after": "<p>One of the most important differences between adult and minor injury claims is that <strong>larger settlements involving minors must be approved by a court</strong> in both Georgia and South Carolina. This requirement exists to protect the child from settlements that may not be in their best interest.</p>"
+ },
+ {
+  "id": "1704",
+  "surface": "content",
+  "before": "<p>In Georgia, any settlement of a minor's claim must be approved by the superior court in the county where the minor resides or where the action is pending (O.C.G.A. § 29-3-3). The court will evaluate:</p>",
+  "after": "<p>In Georgia, a settlement whose gross value exceeds $25,000 must be approved by the probate court — or, once a lawsuit is filed, by the court hearing the case (<a href=\"https://law.justia.com/codes/georgia/title-29/chapter-3/article-1/section-29-3-3/\">O.C.G.A. § 29-3-3</a>). The court will evaluate:</p>"
+ },
+ {
+  "id": "1704",
+  "surface": "content",
+  "before": "<p>For settlements under $15,000 in Georgia, the process may be simplified, with the funds being paid to the natural guardian. For larger settlements, the court will typically require the establishment of a conservatorship or structured settlement.</p>",
+  "after": "<p>For settlements of $25,000 or less (gross) in Georgia, the natural guardian may settle and receive the funds without court approval. If the net amount after fees and expenses also exceeds $25,000, a conservator is required; with court approval the money can instead go into a structured settlement or trust, or be deferred until the child turns 18.</p>"
+ },
+ {
+  "id": "1704",
+  "surface": "content",
+  "before": "<p>South Carolina requires probate court approval for all minor settlements (S.C. Code § 62-5-433). The court conducts a hearing to determine:</p>",
+  "after": "<p>South Carolina requires court approval for any minor's settlement worth more than $2,500 after fees and costs (<a href=\"https://www.scstatehouse.gov/code/t62c005.php\">S.C. Code § 62-5-433</a>). Up to $25,000 the petition may go to the probate court or the circuit court; above $25,000 only the circuit court can approve it. The court reviews a verified petition and takes whatever testimony it needs on:</p>"
+ },
+ {
+  "id": "1704",
+  "surface": "content",
+  "before": "<p>In South Carolina, settlement funds for minors are typically deposited into a restricted account that the child cannot access until they reach the age of 18. The court may also approve a structured settlement that provides periodic payments over time.</p>",
+  "after": "<p>In South Carolina, the approved funds are paid to a court-appointed conservator or under a probate-court protective order — often into a restricted account the child cannot access until age 18. The court may also approve a structured settlement that provides periodic payments over time.</p>"
+ },
+ {
+  "id": "1704",
+  "surface": "content",
+  "before": "<table class=\"comparison-table\">\n<thead>\n<tr>\n<th>Claim Element</th>\n<th>Child's Claim</th>\n<th>Parent's Claim</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Medical Expenses</td>\n<td>Future medical costs after age 18</td>\n<td>Medical expenses incurred during minority</td>\n</tr>\n<tr>\n<td>Pain and Suffering</td>\n<td>Child's own pain and emotional distress</td>\n<td>Parent's emotional distress (loss of consortium in some cases)</td>\n</tr>\n<tr>\n<td>Lost Wages</td>\n<td>Lost future earning capacity</td>\n<td>Parent's lost wages from caring for injured child</td>\n</tr>\n<tr>\n<td>Loss of Services</td>\n<td>Not applicable</td>\n<td>Loss of child's services and companionship</td>\n</tr>\n<tr>\n<td>Statute of Limitations</td>\n<td>Tolled until age 18 (then 2 yrs GA / 3 yrs SC)</td>\n<td>Standard adult SOL applies (2 yrs GA / 3 yrs SC from date of injury)</td>\n</tr>\n<tr>\n<td>Settlement Approval</td>\n<td>Court approval required</td>\n<td>No court approval needed</td>\n</tr>\n</tbody>\n</table>\n\n<p>In Georgia, parents can recover medical expenses they have paid for the child's care during the child's minority (O.C.G.A. § 19-7-1). In South Carolina, similar parental claims are recognized, and the parent's right to recover medical expenses continues until the child reaches 18.</p>\n\n<p><strong>Critical timing note:</strong> While the child's claim is tolled, the <strong>parent's claim is not</strong>. If a parent has their own damages — lost wages from caring for the child, medical bills they have paid, emotional distress — those claims are subject to the standard adult statute of limitations: <strong>2 years in Georgia</strong> (O.C.G.A. § 9-3-33) and <strong>3 years in South Carolina</strong> (S.C. Code § 15-3-530).</p>",
+  "after": "<table class=\"comparison-table\">\n<thead>\n<tr>\n<th>Claim Element</th>\n<th>Child's Claim</th>\n<th>Parent's Claim</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Medical Expenses</td>\n<td>Future medical costs after age 18</td>\n<td>Medical expenses incurred during minority</td>\n</tr>\n<tr>\n<td>Pain and Suffering</td>\n<td>Child's own pain and emotional distress</td>\n<td>Generally none; a parent's own distress is recoverable only in narrow cases, and neither state recognizes loss of a child's consortium</td>\n</tr>\n<tr>\n<td>Lost Wages</td>\n<td>Lost future earning capacity</td>\n<td>Value of the child's lost services; the parent's own wages are not a separate head of damages</td>\n</tr>\n<tr>\n<td>Loss of Services</td>\n<td>Not applicable</td>\n<td>Loss of child's services</td>\n</tr>\n<tr>\n<td>Statute of Limitations</td>\n<td>Tolled during minority — GA: until the 20th birthday; SC: until the 19th birthday or 3 years from injury, whichever is later (malpractice claims differ)</td>\n<td>Standard adult SOL applies (2 yrs GA / 3 yrs SC from date of injury)</td>\n</tr>\n<tr>\n<td>Settlement Approval</td>\n<td>Court approval required above $25,000 (GA) / $2,500 (SC)</td>\n<td>No court approval needed</td>\n</tr>\n</tbody>\n</table>\n\n<p>In Georgia, parents can recover medical expenses they have paid for the child's care during the child's minority (O.C.G.A. §§ 19-7-1 and 19-7-2). In South Carolina, similar parental claims are recognized (<em>Patton v. Miller</em>, 420 S.C. 471 (2017)), and the parent's right to recover medical expenses continues until the child reaches 18.</p>\n\n<p><strong>Critical timing note:</strong> While the child's claim is tolled, the <strong>parent's claim is not</strong>. If a parent has their own damages — medical bills they have paid and the value of the child's lost services — those claims are subject to the standard adult statute of limitations: <strong>2 years in Georgia</strong> (O.C.G.A. § 9-3-33) and <strong>3 years in South Carolina</strong> (S.C. Code § 15-3-530).</p>"
+ },
+ {
+  "id": "1704",
+  "surface": "content",
+  "before": "<p><a href=\"/practice-areas/car-accident-lawyers/\">Car accidents</a> are the leading cause of injury-related death among children in the United States. Children may be injured as passengers, pedestrians, or cyclists. Proper car seat and booster seat use is required by law in both Georgia (O.C.G.A. § 40-8-76) and South Carolina (S.C. Code § 56-5-6410), and failure to properly restrain a child may affect the comparative fault analysis.</p>",
+  "after": "<p><a href=\"/practice-areas/car-accident-lawyers/\">Car accidents</a> are a leading cause of death among children in the United States, <a href=\"https://www.cdc.gov/child-passenger-safety/about/index.html\">according to the CDC</a>. Children may be injured as passengers, pedestrians, or cyclists. Proper car seat and booster seat use is required by law in both Georgia (<a href=\"https://law.justia.com/codes/georgia/title-40/chapter-8/article-1/part-4/section-40-8-76/\">O.C.G.A. § 40-8-76</a>) and South Carolina (S.C. Code § 56-5-6410), but a violation is not negligence per se in Georgia (O.C.G.A. § 40-8-76(c)) and is inadmissible in any civil case in South Carolina (<a href=\"https://www.scstatehouse.gov/code/t56c005.php\">S.C. Code § 56-5-6460</a>), so an insurer cannot simply blame the parents for the child's injuries.</p>"
+ },
+ {
+  "id": "1704",
+  "surface": "content",
+  "before": "<p><a href=\"/practice-areas/premises-liability-lawyers/\">Premises liability</a> cases involving children often arise from unsafe playground equipment, swimming pool accidents, unfenced construction sites, and hazardous conditions on another's property. Both Georgia and South Carolina recognize the <strong>attractive nuisance doctrine</strong>, which imposes a higher duty of care on property owners when children are likely to be attracted to a dangerous condition on the property.</p>",
+  "after": "<p><a href=\"/practice-areas/premises-liability-lawyers/\">Premises liability</a> cases involving children often arise from unsafe playground equipment, swimming pool accidents, unfenced construction sites, and hazardous conditions on another's property. Both Georgia and South Carolina recognize the <strong>attractive nuisance doctrine</strong>, which makes a property owner liable for an artificial hazard — an unfenced pool, an open excavation — that injures a trespassing child when the owner should have expected children on the land and could have removed the danger at little cost (Restatement (Second) of Torts § 339; <em>Gregory v. Johnson</em>, Ga. 1982; <em>Henson v. International Paper</em>, S.C. 2007).</p>"
+ },
+ {
+  "id": "1704",
+  "surface": "content",
+  "before": "<p><a href=\"/practice-areas/medical-malpractice-lawyers/\">Medical malpractice</a> during delivery can cause catastrophic birth injuries including cerebral palsy, Erb's palsy, and hypoxic brain injuries. These cases often involve the highest damage awards because the child may require lifetime care. Georgia has specific medical malpractice requirements including an expert affidavit (O.C.G.A. § 9-11-9.1), while South Carolina requires a Notice of Intent to File and expert mediation under S.C. Code § 15-79-125.</p>",
+  "after": "<p><a href=\"/practice-areas/medical-malpractice-lawyers/\">Medical malpractice</a> during delivery can cause catastrophic birth injuries including cerebral palsy, Erb's palsy, and hypoxic brain injuries. These cases often involve the highest damage awards because the child may require lifetime care. Georgia has specific medical malpractice requirements including an expert affidavit (O.C.G.A. § 9-11-9.1), while South Carolina requires a Notice of Intent to File with an expert affidavit and pre-suit mediation (<a href=\"https://www.scstatehouse.gov/code/t15c079.php\">S.C. Code § 15-79-125</a> and S.C. Code § 15-36-100). The minor's deadline is also shorter in malpractice cases: O.C.G.A. § 9-3-73 in Georgia, and in South Carolina S.C. Code § 15-3-545(D), which caps minority tolling at seven years and at one year after age 18.</p>"
+ },
+ {
+  "id": "1704",
+  "surface": "content",
+  "before": "<table class=\"comparison-table\">\n<thead>\n<tr>\n<th>Factor</th>\n<th>Georgia</th>\n<th>South Carolina</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Age of Majority</td>\n<td>18</td>\n<td>18</td>\n</tr>\n<tr>\n<td>Minor SOL Deadline</td>\n<td>20th birthday (O.C.G.A. § 9-3-90)</td>\n<td>21st birthday (S.C. Code § 15-3-40)</td>\n</tr>\n<tr>\n<td>Standard PI SOL</td>\n<td>2 years (O.C.G.A. § 9-3-33)</td>\n<td>3 years (S.C. Code § 15-3-530)</td>\n</tr>\n<tr>\n<td>Comparative Fault</td>\n<td>Less than 50% (O.C.G.A. § 51-12-33)</td>\n<td>Less than 51%</td>\n</tr>\n<tr>\n<td>Settlement Approval Court</td>\n<td>Superior Court (O.C.G.A. § 29-3-3)</td>\n<td>Probate Court (S.C. Code § 62-5-433)</td>\n</tr>\n<tr>\n<td>Dog Bite Liability</td>\n<td>Modified one-bite rule (O.C.G.A. § 51-2-7)</td>\n<td>Strict liability (S.C. Code § 47-3-110)</td>\n</tr>\n<tr>\n<td>Medical Malpractice Requirement</td>\n<td>Expert affidavit (O.C.G.A. § 9-11-9.1)</td>\n<td>Notice of Intent + mediation (S.C. Code § 15-79-125)</td>\n</tr>\n<tr>\n<td>Child Restraint Law</td>\n<td>O.C.G.A. § 40-8-76</td>\n<td>S.C. Code § 56-5-6410</td>\n</tr>\n</tbody>\n</table>",
+  "after": "<table class=\"comparison-table\">\n<thead>\n<tr>\n<th>Factor</th>\n<th>Georgia</th>\n<th>South Carolina</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Age of Majority</td>\n<td>18</td>\n<td>18</td>\n</tr>\n<tr>\n<td>Minor SOL Deadline</td>\n<td>20th birthday (O.C.G.A. § 9-3-90; malpractice: O.C.G.A. § 9-3-73)</td>\n<td>19th birthday, or 3 years from injury if later (S.C. Code § 15-3-40)</td>\n</tr>\n<tr>\n<td>Standard PI SOL</td>\n<td>2 years (O.C.G.A. § 9-3-33)</td>\n<td>3 years (S.C. Code § 15-3-530)</td>\n</tr>\n<tr>\n<td>Comparative Fault</td>\n<td>Less than 50% (O.C.G.A. § 51-12-33)</td>\n<td>Less than 51% (<em>Nelson v. Concrete Supply Co.</em>)</td>\n</tr>\n<tr>\n<td>Settlement Approval Court</td>\n<td>Probate court, or the court hearing the lawsuit — above $25,000 (O.C.G.A. § 29-3-3)</td>\n<td>Circuit court above $25,000; circuit or probate court up to $25,000; none needed at $2,500 or less (S.C. Code § 62-5-433)</td>\n</tr>\n<tr>\n<td>Dog Bite Liability</td>\n<td>Modified one-bite rule (O.C.G.A. § 51-2-7)</td>\n<td>Strict liability (S.C. Code § 47-3-110)</td>\n</tr>\n<tr>\n<td>Medical Malpractice Requirement</td>\n<td>Expert affidavit (O.C.G.A. § 9-11-9.1)</td>\n<td>Notice of Intent + expert affidavit + mediation (S.C. Code §§ 15-79-125, 15-36-100)</td>\n</tr>\n<tr>\n<td>Child Restraint Law</td>\n<td>O.C.G.A. § 40-8-76</td>\n<td>S.C. Code § 56-5-6410</td>\n</tr>\n</tbody>\n</table>"
+ },
+ {
+  "id": "1704",
+  "surface": "content",
+  "before": "<p>At Roden Law, our <a href=\"/attorneys/\">experienced attorneys</a> have handled hundreds of cases involving injured minors across Georgia and South Carolina. We understand the court approval process, the special statute of limitations rules, and how to calculate damages that fully account for your child's future needs. We have recovered more than <strong>$300 million</strong> for our clients, and we work on a <strong>contingency fee basis</strong> — you pay nothing unless we win.</p>",
+  "after": "<p>At Roden Law, our <a href=\"/attorneys/\">experienced attorneys</a> have handled thousands of injury cases across Georgia and South Carolina, including many involving injured children. We understand the court approval process, the special statute of limitations rules, and how to calculate damages that fully account for your child's future needs. We have recovered more than <strong>$300 million</strong> for our clients, and we work on a <strong>contingency fee basis</strong> — you pay nothing unless we win.</p>"
+ },
+ {
+  "id": "1704",
+  "surface": "meta:_roden_key_takeaways",
+  "before": "Parents and legal guardians can file personal injury claims on behalf of injured children in both Georgia and South Carolina. Georgia's statute of limitations for minors is tolled until age 18 under O.C.G.A. § 9-3-90, giving children until their 20th birthday to file. South Carolina's tolling provision (S.C. Code § 15-3-40) extends the deadline to age 21. Both states require court approval for minor settlements, with funds typically held in supervised trusts. Recoverable damages include medical costs, future earning capacity, pain and suffering, and emotional impact.",
+  "after": "Parents and legal guardians can file personal injury claims on behalf of injured children in both Georgia and South Carolina. Georgia's statute of limitations for minors is tolled until age 18 under O.C.G.A. § 9-3-90, giving children until their 20th birthday to file (medical malpractice claims run on a shorter clock, O.C.G.A. § 9-3-73). South Carolina's tolling provision (S.C. Code § 15-3-40) extends the deadline only to one year past the child's 18th birthday — age 19 — or three years from the injury if that is later. Both states require court approval for larger minor settlements — above $25,000 in Georgia and above $2,500 in South Carolina — with the money paid to a conservator, into a court-restricted account or into a structured settlement. Recoverable damages include medical costs, future earning capacity, pain and suffering, and emotional impact."
+ },
+ {
+  "id": "1704",
+  "surface": "faq:0:answer",
+  "before": "In both Georgia and South Carolina, natural parents, legal guardians, and court-appointed next friends can file personal injury claims on behalf of a minor. Georgia follows O.C.G.A. § 29-3-3 for guardian authority, while South Carolina allows next friend actions under S.C. Code § 62-5-433. Non-custodial parents may also have standing, though custodial parents typically take the lead in filing.",
+  "after": "In both Georgia and South Carolina a parent, a court-appointed guardian or conservator, or another adult acting as the child's next friend can file the claim — O.C.G.A. § 9-11-17(c) in Georgia and Rule 17(c) of the South Carolina Rules of Civil Procedure. Non-custodial parents may also have standing, though custodial parents typically take the lead in filing."
+ },
+ {
+  "id": "1704",
+  "surface": "faq:1:answer",
+  "before": "In Georgia, the standard personal injury statute of limitations is 2 years (O.C.G.A. § 9-3-33). However, for minors, the clock is tolled (paused) under O.C.G.A. § 9-3-90 until the child turns 18. This means the child has until their 20th birthday to file. Parents may still file during the child's minority, and doing so promptly is generally advisable to preserve evidence.",
+  "after": "In Georgia, the standard personal injury statute of limitations is 2 years (O.C.G.A. § 9-3-33). However, for minors, the clock is tolled (paused) under O.C.G.A. § 9-3-90 until the child turns 18. This means the child has until their 20th birthday to file. Medical malpractice claims, including birth injuries, run on a shorter clock under O.C.G.A. § 9-3-73. Parents may still file during the child's minority, and doing so promptly is generally advisable to preserve evidence."
+ },
+ {
+  "id": "1704",
+  "surface": "faq:2:answer",
+  "before": "South Carolina's personal injury statute of limitations is 3 years (S.C. Code § 15-3-530). For minors, S.C. Code § 15-3-40 tolls the limitations period until the child reaches 18, giving them until age 21 to file. As with Georgia, filing promptly is recommended because witness memories fade and evidence deteriorates over time.",
+  "after": "South Carolina's personal injury statute of limitations is 3 years (S.C. Code § 15-3-530). For minors, S.C. Code § 15-3-40 pauses the clock during childhood but caps the extension at one year after the child turns 18 — so the deadline is the child's 19th birthday, or three years from the injury if that comes later. Medical malpractice claims are capped separately under S.C. Code § 15-3-545. As with Georgia, filing promptly is recommended because witness memories fade and evidence deteriorates over time."
+ },
+ {
+  "id": "1704",
+  "surface": "faq:3:answer",
+  "before": "Yes, in both states. Georgia requires Superior Court approval for any settlement on behalf of a minor under O.C.G.A. § 29-3-3. The court reviews the settlement to ensure it is in the child's best interest. South Carolina requires Family Court approval under similar provisions. Settlement funds are typically placed in a court-supervised trust or structured settlement until the child reaches 18.",
+  "after": "Yes, above modest amounts. In Georgia any settlement worth more than $25,000 must be approved by the probate court, or by the court hearing the case once suit is filed (O.C.G.A. § 29-3-3). In South Carolina a settlement worth more than $2,500 after fees needs court approval — the circuit or probate court up to $25,000, and the circuit court alone above that (S.C. Code § 62-5-433). The court reviews the settlement to ensure it is in the child's best interest, and the funds are paid to a conservator, into a court-restricted account or into a structured settlement until the child reaches 18."
+ },
+ {
+  "id": "1704",
+  "surface": "faq:4:answer",
+  "before": "An injured child can recover medical expenses (current and future), pain and suffering, lost future earning capacity, emotional and developmental impact damages, and costs of ongoing rehabilitation or therapy. Parents may separately recover their own damages for medical bills they paid and lost wages from caring for the child. The calculation of future damages often requires expert testimony from medical and economic specialists.",
+  "after": "An injured child can recover medical expenses (current and future), pain and suffering, lost future earning capacity, emotional and developmental impact damages, and costs of ongoing rehabilitation or therapy. Parents may separately recover the medical bills they paid and the value of the child's lost services. The calculation of future damages often requires expert testimony from medical and economic specialists."
+ }
+]
