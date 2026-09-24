@@ -1,0 +1,347 @@
+{
+  "postId": 2658,
+  "slug": "liability-for-crashes-caused-by-not-using-turn-signal",
+  "liveUrl": "https://rodenlaw.com/blog/liability-for-crashes-caused-by-not-using-turn-signal/",
+  "jurisdiction": "GA",
+  "verifiedAt": "2026-09-24",
+  "reviewerByRule": "Georgia-only post with a Savannah CTA; Eric Roden (GA bar) is a valid reviewer. Do not introduce South Carolina law.",
+  "researchNotes": "law.justia.com returned 403 to curl on 2026-09-24 and was read through the firecrawl CLI, as the 2586 pack did; every year-less Georgia URL below resolved and rendered the 2025 Code of Georgia breadcrumb (§§ 40-6-120 through 40-6-126 live under article-6 of chapter 6; § 40-6-1 under article-1; § 40-5-122 under title-40/chapter-5/article-6; § 51-2-2 under title-51/chapter-2 with no article segment — the article-2 path returns Justia's 'Page not found'). Bowers v. State, State v. Goodman, Morgan v. State and Gunn v. Booker were read in full on Justia. §§ 9-3-33, 51-1-6 and 51-12-33 and the Central Anesthesia v. Worthy / Perkins v. Kranz negligence-per-se holdings are reused from facts-1740 and facts-2586 (verified 2026-09-24) and match the writer-profile jurisdiction table. The live page was fetched with a browser UA: it still carries every claim quoted below, a FAQPage block with the five questions, no key-takeaways box, dateModified 2026-09-01, and two body hrefs of tel:18447378587 against twelve theme links of tel:+18447378587. All three internal links return 200. The post cites no statute by section and states no statistic; the one quantified claim ('saves thousands of lives annually') has no primary source. The SAE 2012 study (Ponziani, 2012-01-0261) exists and its abstract says turn-signal neglect 'causes more crashes than distracted driving', but the abstract states no figure — the '2 million crashes a year' and '48% / 25%' numbers appear only in press coverage and the paywalled full text, so they must not be introduced. Two findings the prompt anticipated turned out the other way: (1) Georgia's § 40-6-123 contains NO 'not less than 100 feet' rule — that is Uniform Vehicle Code language used by Washington, Vermont and Texas; Georgia's (b) says 'continuously for a time sufficient to alert', so the post's paraphrase is correct and the 100-foot rule must not be added; (2) Georgia case law does answer the turn-only-lane question the post dodges — State v. Goodman, 220 Ga. App. 169 (1996) (unanimous panel) held a left-turn signal 'was not necessary' from a left-turn-only lane where the driver's 'sole legal option was a left turn' and no other traffic was affected, and Morgan v. State, 309 Ga. App. 923 (2011) restates the rule that a signal is required 'when traffic conditions require the use of such signal'. data/statistics.json holds no signal, lane-change or intersection fact; nothing there applies. No dollar figure appears in the post.",
+  "verifiedClaims": [
+    {
+      "surface": "body",
+      "claim": "In Georgia, like most states, drivers are required to use their turn signal to indicate maneuvers, like lane changes.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 40-6-123(a)-(b) (2025 Code of Georgia, via Justia)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-6/section-40-6-123/",
+      "retrievedAt": "2026-09-24",
+      "note": "§ 40-6-123(a): no person shall 'turn a vehicle from a direct course or change lanes or move right or left upon a roadway unless and until such movement can be made with reasonable safety. No person shall so turn any vehicle without giving an appropriate and timely signal'. Accurate as a general statement; the 'when required' qualifier is handled in the turn-only-lane claim below."
+    },
+    {
+      "surface": "body",
+      "claim": "this simple, easy-to-use switch saves thousands of lives annually. Used properly, it has the potential to save even more.",
+      "verdict": "drop",
+      "currentValue": "",
+      "sourceName": "SAE Technical Paper 2012-01-0261 (Ponziani, 'Turn Signal Usage Rate Results: A Comprehensive Field Study of 12,000 Observed Turning Vehicles', April 2012) — abstract read on sae.org 2026-09-24",
+      "sourceUrl": "https://www.sae.org/publications/technical-papers/content/2012-01-0261/",
+      "retrievedAt": "2026-09-24",
+      "note": "No primary source quantifies lives saved by turn signals. The only primary study on turn-signal neglect is the SAE 2012 field study, whose abstract says only that 'Crash rates resulting from neglected turn signals are discussed, revealing that this neglect causes more crashes than distracted driving' — no lives figure, no crash count. The widely repeated '2 million crashes a year' and '48% lane-change / 25% turn neglect' numbers are not in the abstract and the full paper is paywalled, so they cannot be introduced either. Replace the sentence with an unquantified statement, e.g. 'this simple switch prevents crashes; an SAE field study of 12,000 turning vehicles concluded that turn-signal neglect causes more crashes than distracted driving' (with the SAE link), or cut the sentence."
+    },
+    {
+      "surface": "body",
+      "claim": "Drivers who neglect to signal can be liable if they cause a crash that injures you.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-1-6; § 40-6-123 annotations (Harrison v. Jenkins, 235 Ga. App. 665 — stopping without signal lights in bad traffic was evidence of negligence per se)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-6/",
+      "retrievedAt": "2026-09-24",
+      "note": "'Can be liable' is the right hedge (negligence per se is not liability per se — Perkins v. Kranz, reused from facts-2586)."
+    },
+    {
+      "surface": "body",
+      "claim": "Our <a href=\"https://rodenlaw.com/practice-areas/car-accident-lawyers/\" rel=\"\">car crash attorneys in Savannah</a> help injured victims every day, something we have been doing for decades.",
+      "verdict": "update",
+      "currentValue": "Our car crash attorneys in Savannah help injured victims every day, bringing 62 years of combined experience to every case.",
+      "sourceName": "profiles/writer-profile.md trust signals ('62 years combined experience'); profiles/firm-facts.md (no founding date is recorded)",
+      "sourceUrl": "https://rodenlaw.com/",
+      "retrievedAt": "2026-09-24",
+      "note": "No firm fact supports 'for decades' as a statement about the firm's age; the only verified longevity figure is 62 years of combined attorney experience. The link resolves (200). Anchor 'car crash attorneys in Savannah' points at the state-neutral pillar, not a Savannah page — the same anchor-promise mismatch the 1740 pack flagged; reword the anchor or leave, style call."
+    },
+    {
+      "surface": "body",
+      "claim": "There is no charge for this meeting, and we can use this time to answer your legal questions as well.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "profiles/writer-profile.md trust signals ('Free Case Review — No Fees Unless We Win')",
+      "sourceUrl": "https://rodenlaw.com/",
+      "retrievedAt": "2026-09-24",
+      "note": "Firm fact; matches the profile."
+    },
+    {
+      "surface": "body",
+      "claim": "<p class=\"well text-center\">Request your FREE case review today. <a href=\"tel:18447378587\" rel=\"\">1-844-RESULTS</a></p>",
+      "verdict": "update",
+      "currentValue": "href=\"tel:+18447378587\" (visible text 1-844-RESULTS unchanged)",
+      "sourceName": "profiles/writer-profile.md phone rule (1-844-RESULTS is tel:+18447378587); live page fetched 2026-09-24",
+      "sourceUrl": "https://rodenlaw.com/blog/liability-for-crashes-caused-by-not-using-turn-signal/",
+      "retrievedAt": "2026-09-24",
+      "note": "The digits are correct (not one of the 27 transposed numbers); only the plus sign is missing. The live page carries this bare form twice (both body CTAs) against twelve theme links in the +1 form. Fix both hrefs; never change the visible string."
+    },
+    {
+      "surface": "body",
+      "claim": "Under Georgia state law, there are specific times when drivers are required to signal: Making a turn at an intersection; Turning out of a private or commercial driveway or entrance; When changing lanes or merging into traffic; When entering traffic from a parallel parking space; In preparation for passing other vehicles",
+      "verdict": "update",
+      "currentValue": "O.C.G.A. § 40-6-123(a) requires a signal before turning at an intersection, turning 'to enter a private road or driveway', or otherwise turning 'from a direct course', changing lanes or moving 'right or left upon a roadway' (which covers pulling out of a driveway onto the road, merging and moving over to pass); § 40-6-123(d) extends the signal lamps to an intention to 'start from a parked position'; and § 40-6-123(c) — which the list omits — requires a signal before stopping or suddenly decreasing speed 'when there is an opportunity to give such signal'. In every case the signal is required only when another driver could be affected: § 40-6-123(b) says 'when required' and Georgia courts read that to mean the signal is owed to the drivers behind you and those approaching from the opposite direction.",
+      "sourceName": "O.C.G.A. § 40-6-123(a)-(d); Bowers v. State, 221 Ga. App. 886 (1996); Morgan v. State, 309 Ga. App. 923 (2011)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-6/section-40-6-123/",
+      "retrievedAt": "2026-09-24",
+      "note": "The list is a fair paraphrase but three details are off: the statute names turning INTO a private road or driveway (pulling out is covered by the general 'move right or left upon a roadway' language, not by a driveway clause); 'passing' is not named — it is a lane change; and the stop/slow-down signal in subsection (c) is missing, which matters for the 'slamming on your brakes' bullet later. Suggested list: turning at an intersection; turning into (or out onto the road from) a private road or driveway; changing lanes or moving right or left, including to pass or merge; starting from a parked position; stopping or suddenly slowing when there is a chance to signal. Add '(O.C.G.A. § 40-6-123)'."
+    },
+    {
+      "surface": "body",
+      "claim": "Right turns must be made from the far-right lane, unless multiple lanes are appropriately marked as “right-turn only” lanes.",
+      "verdict": "update",
+      "currentValue": "O.C.G.A. § 40-6-120(1): 'Both the approach for a right turn and a right turn shall be made as close as practicable to the right-hand curb or edge of the roadway.' The section (rewritten by HB 1231, effective July 1, 2010) contains no marked-lane exception for right turns; where a second right-turn lane is marked, the duty to follow it comes from § 40-6-20(a) (drivers 'shall obey the instructions of an official traffic-control device').",
+      "sourceName": "O.C.G.A. § 40-6-120(1) (2025 Code of Georgia, via Justia); O.C.G.A. § 40-6-20(a) (reused from facts-2586)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-6/section-40-6-120/",
+      "retrievedAt": "2026-09-24",
+      "note": "Substance is right; the exception is real in practice but rests on the traffic-control-device statute, not on § 40-6-120. Add the pinpoint '(O.C.G.A. § 40-6-120)'."
+    },
+    {
+      "surface": "body",
+      "claim": "They cannot turn left from a center lane as it would cause them to cross in front of other traffic. They must turn from the far-left lane or from lanes that are specifically marked as left-turning lanes.",
+      "verdict": "update",
+      "currentValue": "O.C.G.A. § 40-6-120(2)(B): the driver 'shall approach the turn in the extreme left-hand lane lawfully available to traffic moving in the direction of travel of the turning vehicle'; (2)(C): with multiple left-turn lanes the driver 'shall exit the intersection in the same relative travel lane as the vehicle entered' and 'shall not be permitted to make a lane change once the intersection has been entered'. On a road with a two-way center turn lane the left turn is made FROM that center lane: § 40-6-126 allows a vehicle into the central lane only 'for the purpose of making a left turn' and for no more than 300 feet.",
+      "sourceName": "O.C.G.A. § 40-6-120(2)(A)-(C); O.C.G.A. § 40-6-126 (2025 Code of Georgia, via Justia)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-6/section-40-6-120/",
+      "retrievedAt": "2026-09-24",
+      "note": "'Cannot turn left from a center lane' is wrong for Abercorn-style roads with a center turn lane, where the center lane is the only lawful place to turn left from. Reword to 'from a middle through lane' and, optionally, add the § 40-6-126 center-turn-lane rule and the § 40-6-120(2)(C) no-lane-change-in-the-intersection rule for double left-turn lanes."
+    },
+    {
+      "surface": "body",
+      "claim": "Drivers behind you will know that you intend to turn left or turn right. However, it may not be a good idea to assume that traffic coming from in front of you or from other directions know that. Signaling is just a good habit to engage in and an easy way to help prevent a crash.",
+      "verdict": "update",
+      "currentValue": "Georgia law answers this directly. Because § 40-6-123(b) requires a signal only 'when required' — that is, when it is needed to alert a driver behind you or one approaching from the opposite direction — the Court of Appeals held in State v. Goodman, 220 Ga. App. 169 (1996) that a left-turn signal 'was not necessary' from a left-turn-only lane where the driver's 'sole legal option was a left turn' and no other traffic was affected. But the same courts hold that a driver 'may [be pulled] over for failing to signal when traffic conditions require the use of such signal' (Morgan v. State, 309 Ga. App. 923 (2011)), so if oncoming or following drivers could be affected, the signal is still required — and in a crash case the other driver will argue it was.",
+      "sourceName": "State v. Goodman, 220 Ga. App. 169, 469 S.E.2d 327 (Ga. Ct. App. 1996) (Beasley, C.J., and Pope, P.J., concurring — binding precedent); Morgan v. State, 309 Ga. App. 923 (Ga. Ct. App. 2011); Bowers v. State, 221 Ga. App. 886 (1996) (physical precedent only)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/1996/a95a1874.html",
+      "retrievedAt": "2026-09-24",
+      "note": "The H2 asks a legal question and the answer gives none. Goodman verbatim: 'the statute contemplates instances in which a turn on a roadway can be made with reasonable safety without the use of a turn signal, i.e., where a signal is not necessary to alert other drivers of a motorist's intention to turn ... Therefore, a left turn signal was not necessary, and there was no violation of OCGA § 40-6-123'. Morgan notes Bowers and Clark are 'not concurred in by all panel members' and so 'do not constitute binding precedent', but Goodman was unanimous and Morgan itself restates the rule. Keep the good-habit advice after the law. Do NOT cite the Washington, Vermont or Texas turn-only-lane cases — different statutes (their 100-foot rule is not Georgia's)."
+    },
+    {
+      "surface": "body",
+      "claim": "Under Georgia law, there is no specific time or distance stated. However, the law requires you to signal continuously for a sufficient amount of time. Paraphrased, you must signal long enough to give drivers behind you or around you sufficient notice.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 40-6-123(b) (2025 Code of Georgia, via Justia)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-6/section-40-6-123/",
+      "retrievedAt": "2026-09-24",
+      "note": "Correct. Verbatim: 'A signal of intention to turn right or left or change lanes when required shall be given continuously for a time sufficient to alert the driver of a vehicle proceeding from the rear in the same direction or a driver of a vehicle approaching from the opposite direction.' Georgia has no 100-foot rule — that language belongs to the Uniform Vehicle Code and to states such as Washington (RCW 46.61.305), Vermont and Texas; do not add it. Optional precision: the statute names drivers behind you and drivers coming toward you, not 'around you'. Add '(O.C.G.A. § 40-6-123)'."
+    },
+    {
+      "surface": "body",
+      "claim": "Turning on your signal at the same time you change lanes; Signaling seconds before you turn; Slamming on your brakes and then signaling, such as when almost missing an exit; Darting in and out of lanes while signaling",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 40-6-123(a) ('appropriate and timely signal'), (b) ('continuously for a time sufficient'), (c) (signal before stopping or 'suddenly decreas[ing] the speed')",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-6/section-40-6-123/",
+      "retrievedAt": "2026-09-24",
+      "note": "Illustrative and consistent with the statute; the brakes bullet maps to subsection (c), which is why the earlier list should mention stopping/slowing."
+    },
+    {
+      "surface": "body",
+      "claim": "While often, the liable party may be the driver who failed to signal, the law will never assume that. An investigation into the cause of every crash must occur, so that the appropriate party can be held liable for the damages.",
+      "verdict": "update",
+      "currentValue": "While the driver who failed to signal is often the liable party, the law does not assume it: fault has to be proven from the evidence of what each driver did, and a rule-of-the-road violation is negligence per se but not liability per se.",
+      "sourceName": "Perkins v. Kranz, 316 Ga. App. 171 (2012), quoting Yasinsac v. Colonial Oil Properties, 246 Ga. App. 484 (2000) ('negligence per se is not liability per se') — reused from facts-2586; Central Anesthesia Associates v. Worthy, 254 Ga. 728 (1985) — reused from facts-1740",
+      "sourceUrl": "https://www.courtlistener.com/opinion/7927638/perkins-v-kranz/",
+      "retrievedAt": "2026-09-24",
+      "note": "'An investigation ... must occur' states a legal requirement that does not exist; what is true is that the injured person carries the burden of proof. Wording change only."
+    },
+    {
+      "surface": "body",
+      "claim": "The driver who did not use a turn signal before turning or changing lanes is typically considered at fault. Georgia law requires drivers to signal their intentions before turning or changing lanes.",
+      "verdict": "update",
+      "currentValue": "The driver who did not signal before turning or changing lanes is typically considered at fault. O.C.G.A. § 40-6-123 requires drivers to signal before turning or changing lanes whenever another driver could be affected, and violating a rule of the road is negligence per se in Georgia — it establishes the driver's duty and the breach of it, leaving the injured person to prove that the failure caused the crash and what the damages are.",
+      "sourceName": "O.C.G.A. § 40-6-123(a)-(b); O.C.G.A. § 51-1-6; Central Anesthesia Associates, P.C. v. Worthy, 254 Ga. 728 (1985) ('negligence per se supplies only the duty and breach of duty elements'); § 40-6-123 annotations (Harrison v. Jenkins, 235 Ga. App. 665; Folds v. Auto Mut. Indem. Co., 55 Ga. App. 198 (1937))",
+      "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/1985/41912-1.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Nothing false; the section is the natural place to name the statute and the negligence-per-se doctrine, which faq:1 already relies on. Central Anesthesia is reused from facts-1740; the Justia annotations under § 40-6-123 record negligence per se for a stop without signal lights (Harrison) and, under the predecessor section, for failure to give the required signal (Folds)."
+    },
+    {
+      "surface": "body",
+      "claim": "Drivers have a legal duty of care to avoid causing harm to others. This includes properly signaling to help ensure the safety of all road users.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 40-6-241(b) ('A driver shall exercise due care in operating a motor vehicle on the highways of this state') — reused from facts-2586; O.C.G.A. § 40-6-123",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-11/section-40-6-241/",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "While the driver who failed to signal is usually at fault, other drivers involved in the accident might share liability. However, this is only if the other party’s negligence contributed to the crash in some way.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(b) (trier of fact apportions damages 'among the persons who are liable according to the percentage of fault of each person')",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "The speeding-through-an-intersection example that follows is illustrative. Reused from facts-1740 / facts-2586."
+    },
+    {
+      "surface": "body",
+      "claim": "In this situation, the driver's employer might be held liable under a legal doctrine called, “respondeat superior.” This doctrine holds employers responsible for things their employees did if those actions occurred within the scope of their employment.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-2-2 (2025 Code of Georgia, via Justia): 'Every person shall be liable for torts committed by his wife, his child, or his servant by his command or in the prosecution and within the scope of his business, whether the same are committed by negligence or voluntarily.'",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-2/section-51-2-2/",
+      "retrievedAt": "2026-09-24",
+      "note": "Accurate. Optional: add '(O.C.G.A. § 51-2-2)'. Note the section lives at title-51/chapter-2/ with no article segment on Justia."
+    },
+    {
+      "surface": "body",
+      "claim": "In some cases, the owner of the vehicle (if different from the driver) may be liable. This is especially true if they knowingly allowed an unsafe or unlicensed driver to use their vehicle.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Gunn v. Booker, 259 Ga. 343, 381 S.E.2d 286 (Ga. 1989) (negligent entrustment: liable if the owner entrusts the vehicle 'with actual knowledge that the person ... is incompetent by reason of his age or inexperience, or his physical or mental condition, or his known habit of recklessness'); O.C.G.A. § 40-5-122 ('No person shall knowingly authorize or permit a motor vehicle owned by him or under his control to be driven upon any highway by any person who is not authorized under this chapter or who is not licensed')",
+      "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/1989/46481-1.html",
+      "retrievedAt": "2026-09-24",
+      "note": "'Knowingly' is the load-bearing word and the post has it: Georgia requires the owner's ACTUAL knowledge of the driver's incompetence, and per Schofield v. Hertz Corp. (Ga. Ct. App. 1991) an owner's failure to check for a licence 'is of no consequence' unless the driver was also negligent. Optional: name the doctrine ('negligent entrustment') and, for a family car, the family purpose doctrine (Danforth v. Bulman, Ga. Ct. App. 2005)."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia follows a <a href=\"https://rodenlaw.com/blog/georgia-comparative-negligence-law/\" rel=\"\">modified comparative negligence</a> rule. What this means for drivers is that fault for any crash can be shared among multiple parties. The percentage of fault is based on each party’s assessed degree of responsibility.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(a), (b) — reused from facts-1740 / facts-2586; matches the writer-profile jurisdiction table",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "Internal link returns 200. Optional: add '(O.C.G.A. § 51-12-33)' in the body to match faq:3, which already cites it."
+    },
+    {
+      "surface": "body",
+      "claim": "The bottom line is this: as long as the injured victim is less than 50 percent at fault, a claim for compensation is still possible. That said, any compensation awarded to a partially liable victim will be reduced by his or her percentage of fault.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(g) ('the plaintiff shall not be entitled to receive any damages if the plaintiff is 50 percent or more responsible'); (a) (damages reduced 'in proportion to his or her percentage of fault')",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "Verified; reused from facts-1740 / facts-2586. The following-too-closely example above it is illustrative (O.C.G.A. § 40-6-49 is the following-too-closely section; the post does not cite it and need not)."
+    },
+    {
+      "surface": "body",
+      "claim": "We have a history of getting successful outcomes for our clients, and we are prepared to do the same for you.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "profiles/writer-profile.md trust signals ('$300M+ recovered', '5,000+ cases handled')",
+      "sourceUrl": "https://rodenlaw.com/",
+      "retrievedAt": "2026-09-24",
+      "note": "Unquantified and supported by the profile figures; optional to add '$300 million+ recovered' from the profile."
+    },
+    {
+      "surface": "body",
+      "claim": "If we find you have legal options, you can hire our services with <a href=\"https://rodenlaw.com/blog/contingency-fee-system/\" rel=\"\">no upfront costs</a>. What this means is there is no financial risk to you. We only get paid if we win your case.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "profiles/writer-profile.md trust signals ('contingency fee, no fees unless we win')",
+      "sourceUrl": "https://rodenlaw.com/blog/contingency-fee-system/",
+      "retrievedAt": "2026-09-24",
+      "note": "Firm fact; link returns 200."
+    },
+    {
+      "surface": "body",
+      "claim": "<p class=\"well text-center\">Roden Law. Savannah lawyers working for you. <a href=\"tel:18447378587\" rel=\"\">1-844-RESULTS</a></p>",
+      "verdict": "update",
+      "currentValue": "href=\"tel:+18447378587\" (visible text unchanged). Savannah office, if the refresher adds it: 333 Commercial Dr., Savannah, GA 31406, (912) 303-5850.",
+      "sourceName": "profiles/firm-facts.md (Savannah office); profiles/writer-profile.md phone rule",
+      "sourceUrl": "https://rodenlaw.com/blog/liability-for-crashes-caused-by-not-using-turn-signal/",
+      "retrievedAt": "2026-09-24",
+      "note": "Second bare tel: href; same fix. The post states no Savannah address or office number, so nothing else to verify."
+    },
+    {
+      "surface": "excerpt",
+      "claim": "Failing to signal is a traffic violation, but it does not settle fault by itself. How liability is decided in a lane-change or turning crash.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 40-6-1(a) (any act forbidden or required by Chapter 6 is a misdemeanor unless otherwise declared); Perkins v. Kranz (Ga. Ct. App. 2012) ('negligence per se is not liability per se')",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-1/section-40-6-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Published as the Article description by roden_schema_article(). Accurate; the 'when required' nuance does not belong in a 25-word excerpt."
+    },
+    {
+      "surface": "faq:0",
+      "claim": "Primarily the driver who failed to signal, but liability can extend further — to other negligent drivers who contributed, to an employer where a company or commercial vehicle was involved, and in some circumstances to the vehicle's owner.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(b); O.C.G.A. § 51-2-2; Gunn v. Booker, 259 Ga. 343 (1989)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-2/section-51-2-2/",
+      "retrievedAt": "2026-09-24",
+      "note": "Renders into FAQPage structured data. 'In some circumstances' correctly hedges the owner's liability (actual knowledge required)."
+    },
+    {
+      "surface": "faq:1",
+      "claim": "Failing to signal violates Georgia's rules of the road, and that violation supports a negligence argument. You still have to show the failure actually caused the collision and that you suffered damages as a result.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 40-6-123; O.C.G.A. § 51-1-6; Central Anesthesia Associates v. Worthy, 254 Ga. 728 (1985) ('the plaintiffs must still prove a causal connection (proximate cause) ... as well as their damages')",
+      "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/1985/41912-1.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Renders into FAQPage structured data. Correctly avoids 'automatically negligent'. The question is 'Is failing to use a turn signal automatically negligence in Georgia?'; the answer's implicit 'no, not automatically' is right on two counts — negligence per se supplies only duty and breach, and under § 40-6-123(b) the signal is required only when another driver could be affected (Goodman). Optional: open the answer with 'Not automatically.'"
+    },
+    {
+      "surface": "faq:2",
+      "claim": "Where the driver was acting within the scope of their employment at the time. That is why crashes involving company or commercial vehicles often reach an employer's insurance rather than only the driver's own policy.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-2-2 ('in the prosecution and within the scope of his business')",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-2/section-51-2-2/",
+      "retrievedAt": "2026-09-24",
+      "note": "Renders into FAQPage structured data. Accurate."
+    },
+    {
+      "surface": "faq:3",
+      "claim": "Under O.C.G.A. § 51-12-33 you can recover as long as you are less than 50% responsible for the accident, with your award reduced by your share of the fault. At 50% or more you recover nothing.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(a), (g) — reused from facts-1740 / facts-2586; matches the writer-profile jurisdiction table",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "Renders into FAQPage structured data. The section symbol renders correctly on the live page (no 'SS' defect)."
+    },
+    {
+      "surface": "faq:4",
+      "claim": "Independent witnesses, dashcam or nearby camera footage, and the police report are the usual routes, since a signal leaves no physical trace after the crash. Identifying witnesses at the scene is what makes this provable.",
+      "verdict": "update",
+      "currentValue": "Independent witnesses, dashcam or nearby camera footage, and the police report are the usual routes, since a signal rarely leaves physical evidence — though in a serious crash a reconstruction expert can sometimes examine the turn-signal bulb's filament, which deforms differently depending on whether the lamp was lit at impact. Identifying witnesses at the scene is what makes this provable.",
+      "sourceName": "SAE Technical Paper 2013-01-0752 (Przybyla, Rush, Melcher & Robinson, 'Light Bulb Filament Distortion Thresholds by Voltage and Delta-V', April 2013) — abstract: 'Through examination of bulb filaments for hot or cold shock, accident reconstruction professionals can gain information about which bulbs were and were not illuminated prior to the collision.'",
+      "sourceUrl": "https://www.sae.org/publications/technical-papers/content/2013-01-0752/",
+      "retrievedAt": "2026-09-24",
+      "note": "Renders into FAQPage structured data. 'Leaves no physical trace' is an absolute that crash reconstruction contradicts: lamp-filament (hot-shock / cold-shock) analysis is an established SAE-documented technique for determining whether a lamp was lit at impact. Soften rather than expand; the practical advice in the answer is sound. On the police report: no Georgia primary source was located on the admissibility of the officer's opinion of fault (facts-1740 reached the same result), so leave the report described as an investigative route, not as proof."
+    }
+  ],
+  "recommendedEdits": [
+    "Body, both CTA wells: change href=\"tel:18447378587\" to href=\"tel:+18447378587\" (two occurrences); leave the visible '1-844-RESULTS' untouched.",
+    "Body, intro paragraph 2: drop 'saves thousands of lives annually. Used properly, it has the potential to save even more' — no primary source. Either cut the sentence or replace with the unquantified SAE finding: 'an SAE field study of 12,000 turning vehicles concluded that turn-signal neglect causes more crashes than distracted driving' linked to https://www.sae.org/publications/technical-papers/content/2012-01-0261/. Do NOT introduce '2 million crashes', '48%' or '25%' — those numbers are not in the SAE abstract.",
+    "Body, intro paragraph 3: replace 'something we have been doing for decades' with the profile's verified figure ('62 years of combined experience') or cut the clause; the firm's founding date is not a recorded fact.",
+    "Body, 'When You Must Use a Turn Signal in Georgia': re-cut the list to track O.C.G.A. § 40-6-123 — turning at an intersection; turning into (or out onto the road from) a private road or driveway; changing lanes or moving right or left, including to pass or merge; starting from a parked position; and stopping or suddenly slowing when there is a chance to signal (§ 40-6-123(c), currently omitted). Add the section number and one sentence that the signal is owed whenever a driver behind you or one approaching from the opposite direction could be affected.",
+    "Body, 'Does It Matter Where Drivers Begin Turning From?': cite O.C.G.A. § 40-6-120 — right turns 'as close as practicable to the right-hand curb or edge of the roadway' (§ 40-6-120(1)); left turns from 'the extreme left-hand lane lawfully available' (§ 40-6-120(2)(B)); with double left-turn lanes, exit in the same relative lane and no lane change inside the intersection (§ 40-6-120(2)(C)). Change 'cannot turn left from a center lane' to 'from a middle through lane' — on roads with a two-way center turn lane the left turn is made FROM the center lane (O.C.G.A. § 40-6-126, which also limits use of that lane to 300 feet).",
+    "Body, 'Do I Still Need To Signal If I Am in a Right or Left-Turn Only Lane?': answer the legal question before the habit advice — Georgia requires a signal 'when required' to alert other drivers (§ 40-6-123(b)); State v. Goodman, 220 Ga. App. 169 (1996) held a left-turn signal 'was not necessary' from a left-turn-only lane where turning left was the driver's 'sole legal option' and no other traffic was affected; but a signal is still required whenever traffic conditions call for it (Morgan v. State, 309 Ga. App. 923 (2011)), and in a crash case the other side will say they did. Keep 'Signaling is just a good habit' as the close. Do not cite the Washington/Vermont/Texas turn-only-lane cases; their statutes carry a 100-foot rule Georgia's does not.",
+    "Body, 'What Does the \"Proper Use of a Turn Signal\" Mean?': keep as is (it is correct — Georgia has no time or distance rule); add '(O.C.G.A. § 40-6-123(b))' and optionally tighten 'drivers behind you or around you' to the statute's 'drivers behind you or approaching from the opposite direction'. Under no circumstances add a '100 feet' rule.",
+    "Body, 'Who May Be Liable ...' intro: replace 'the law will never assume that. An investigation into the cause of every crash must occur' with 'the law does not assume it: fault has to be proven from the evidence, and a rule-of-the-road violation is negligence per se but not liability per se.'",
+    "Body, 'Driver Who Failed To Use a Turn Signal': name the statute (O.C.G.A. § 40-6-123) and the doctrine — violating a rule of the road is negligence per se in Georgia, which establishes duty and breach and leaves causation and damages to be proven (Central Anesthesia Associates v. Worthy, 254 Ga. 728 (1985)); this aligns the body with faq:1.",
+    "Body, 'Employers' and 'Vehicle Owners': optional pinpoints — '(O.C.G.A. § 51-2-2)' after respondeat superior; name 'negligent entrustment' and keep 'knowingly' (Georgia requires actual knowledge of the driver's incompetence — Gunn v. Booker, 259 Ga. 343 (1989)); O.C.G.A. § 40-5-122 for knowingly permitting an unlicensed driver.",
+    "Body, comparative negligence section: optional '(O.C.G.A. § 51-12-33)' so the body matches faq:3; the rule as stated is correct.",
+    "faq:4: replace 'since a signal leaves no physical trace after the crash' with 'since a signal rarely leaves physical evidence — though in a serious crash a reconstruction expert can sometimes examine the turn-signal bulb's filament to tell whether it was lit at impact'. Renders into FAQPage structured data; re-run bin/check-unslashed-post-writes.php after the meta write.",
+    "Optional, low priority: the post never states the filing deadline; if the refresher adds one, it is two years from the crash under O.C.G.A. § 9-3-33 (Georgia only — do not add South Carolina's three years to this post).",
+    "Reviewer/byline: Georgia-only post — Eric Roden (GA bar) is a valid reviewer; no change required."
+  ],
+  "statuteCitations": [
+    { "section": "O.C.G.A. § 40-6-123", "name": "Turning movements; signals required on turning, changing lanes, slowing, or stopping — (a) no turn, lane change or move right/left without 'an appropriate and timely signal' when it can be made with reasonable safety; (b) signal 'when required' given 'continuously for a time sufficient to alert' the driver behind or one approaching from the opposite direction (no distance rule); (c) signal before stopping or suddenly slowing; (d) signal lamps also for starting from a parked position, and never as a 'do pass' courtesy", "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-6/section-40-6-123/" },
+    { "section": "O.C.G.A. § 40-6-120", "name": "Methods of turning at intersections (rewritten by HB 1231, eff. July 1, 2010) — (1) right turn as close as practicable to the right-hand curb or edge; (2)(B) left turn from the extreme left-hand lane lawfully available; (2)(C) multiple left-turn lanes: exit in the same relative lane, no lane change once in the intersection", "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-6/section-40-6-120/" },
+    { "section": "O.C.G.A. § 40-6-121", "name": "U-turns — prohibited on a curve, near the crest of a grade where the vehicle cannot be seen, where the turn cannot be made in safety without interfering with other traffic, or where posted", "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-6/section-40-6-121/" },
+    { "section": "O.C.G.A. § 40-6-122", "name": "Starting parked vehicle — 'No person shall start a vehicle which is stopped, standing, or parked unless and until such movement can be made with reasonable safety' (the signal requirement for starting from a parked position is in § 40-6-123(d), not here)", "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-6/section-40-6-122/" },
+    { "section": "O.C.G.A. § 40-6-124", "name": "Signals by hand and arm or signal lights — (a) either method; (b) signal lights mandatory where the steering post is more than 24 inches from the left body limit or more than 14 feet from the rear limit", "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-6/section-40-6-124/" },
+    { "section": "O.C.G.A. § 40-6-125", "name": "Method of giving hand and arm signals — from the left side: left turn horizontal, right turn upward, stop or decrease speed downward", "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-6/section-40-6-125/" },
+    { "section": "O.C.G.A. § 40-6-126", "name": "Central lane for turning — a two-way center lane may be entered only to make a left turn, not more than 300 feet before the turn, and not driven in for more than 300 feet", "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-6/section-40-6-126/" },
+    { "section": "O.C.G.A. § 40-6-1", "name": "Violations of Chapter 6 (Uniform Rules of the Road) are misdemeanors unless otherwise declared", "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-1/section-40-6-1/" },
+    { "section": "O.C.G.A. § 40-6-20", "name": "Obedience to traffic-control devices required (a) — basis for following a marked second turn lane (reused from facts-2586)", "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-2/section-40-6-20/" },
+    { "section": "O.C.G.A. § 40-6-241", "name": "Distracted driving — (b) 'A driver shall exercise due care in operating a motor vehicle' (reused from facts-2586)", "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-11/section-40-6-241/" },
+    { "section": "O.C.G.A. § 40-5-122", "name": "Permitting unlicensed person to drive — 'No person shall knowingly authorize or permit a motor vehicle owned by him or under his control to be driven upon any highway by any person who is not authorized under this chapter or who is not licensed'", "url": "https://law.justia.com/codes/georgia/title-40/chapter-5/article-6/section-40-5-122/" },
+    { "section": "O.C.G.A. § 51-2-2", "name": "Liability for torts of spouse, child, or servant — respondeat superior: 'Every person shall be liable for torts committed by ... his servant by his command or in the prosecution and within the scope of his business' (Justia path has no article segment)", "url": "https://law.justia.com/codes/georgia/title-51/chapter-2/section-51-2-2/" },
+    { "section": "O.C.G.A. § 51-1-6", "name": "Recovery for breach of a legal duty — statutory basis of negligence per se (reused from facts-1740 / facts-2586)", "url": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-6/" },
+    { "section": "O.C.G.A. § 51-12-33", "name": "Apportionment of damages — (a) reduction by plaintiff's percentage of fault; (b) apportionment among persons liable; (g) plaintiff barred at 50 percent or more (reused from facts-1740 / facts-2586)", "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/" },
+    { "section": "O.C.G.A. § 9-3-33", "name": "Injuries to the person — two-year limitation (reused from facts-1740; not stated in this post)", "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/" }
+  ],
+  "authoritativeLinks": [
+    { "name": "State v. Goodman, 220 Ga. App. 169, 469 S.E.2d 327 (Ga. Ct. App. Feb. 12, 1996) — left-turn signal 'was not necessary' from a left-turn-only lane where the only legal option was a left turn and no other traffic was affected; unanimous panel (Beasley, C.J., Pope, P.J., concurring)", "url": "https://law.justia.com/cases/georgia/court-of-appeals/1996/a95a1874.html" },
+    { "name": "Bowers v. State, 221 Ga. App. 886, 473 S.E.2d 201 (Ga. Ct. App. June 26, 1996) — 'no turn signal is required as long as a lane change can be made with reasonable safety'; nearest car 100 yards back; physical precedent only per Morgan v. State", "url": "https://law.justia.com/cases/georgia/court-of-appeals/1996/a96a0452.html" },
+    { "name": "Morgan v. State, 309 Ga. App. 923 (Ga. Ct. App. June 2, 2011) — 'a turn signal is not required if changing lanes [or making a turn] without a signal is reasonably safe' but 'an officer may pull over a motorist for failing to signal when traffic conditions require the use of such signal'; notes Bowers and Clark are not binding precedent", "url": "https://law.justia.com/cases/georgia/court-of-appeals/2011/a11a0178.html" },
+    { "name": "Clark v. State, 208 Ga. App. 896, 432 S.E.2d 220 (Ga. Ct. App. 1993) — 'when required' in § 40-6-123(b) anticipates times when a signal is not required for the safety of others (physical precedent only; cited via the Justia annotations and Bowers)", "url": "https://law.justia.com/cases/georgia/court-of-appeals/1993/a93a0937-0.html" },
+    { "name": "Gunn v. Booker, 259 Ga. 343, 381 S.E.2d 286 (Ga. July 13, 1989) — negligent entrustment requires the owner's actual knowledge that the driver is incompetent by age or inexperience, physical or mental condition, or known habit of recklessness", "url": "https://law.justia.com/cases/georgia/supreme-court/1989/46481-1.html" },
+    { "name": "Central Anesthesia Associates, P.C. v. Worthy, 254 Ga. 728, 333 S.E.2d 829 (Ga. 1985) — 'negligence per se supplies only the duty and breach of duty elements'; proximate cause and damages must still be proved (reused from facts-1740)", "url": "https://law.justia.com/cases/georgia/supreme-court/1985/41912-1.html" },
+    { "name": "Perkins v. Kranz, 316 Ga. App. 171, 728 S.E.2d 804 (Ga. Ct. App. 2012) — 'negligence per se is not liability per se' (reused from facts-2586)", "url": "https://www.courtlistener.com/opinion/7927638/perkins-v-kranz/" },
+    { "name": "Eubanks v. Waldron, 263 Ga. App. 75 (Ga. Ct. App. 2003) — traffic-court citation or disposition inadmissible in the civil case unless the driver pleaded guilty (reused from facts-1740; the post makes no citation-admissibility claim, so this is for the refresher's reference only)", "url": "https://law.justia.com/cases/georgia/court-of-appeals/2003/a03a0919-0.html" },
+    { "name": "SAE Technical Paper 2012-01-0261 — Ponziani, 'Turn Signal Usage Rate Results: A Comprehensive Field Study of 12,000 Observed Turning Vehicles' (SAE 2012 World Congress, April 24, 2012; doi 10.4271/2012-01-0261). Abstract: turn-signal neglect 'causes more crashes than distracted driving'; no crash count or lives figure in the abstract", "url": "https://www.sae.org/publications/technical-papers/content/2012-01-0261/" },
+    { "name": "SAE Technical Paper 2013-01-0752 — Przybyla, Rush, Melcher & Robinson, 'Light Bulb Filament Distortion Thresholds by Voltage and Delta-V' (April 16, 2013; doi 10.4271/2013-01-0752). Abstract: examining bulb filaments for hot or cold shock tells reconstruction professionals 'which bulbs were and were not illuminated prior to the collision'", "url": "https://www.sae.org/publications/technical-papers/content/2013-01-0752/" },
+    { "name": "Justia — 2025 Code of Georgia, Title 40, Chapter 6, Article 6 (Turning, Starting, Signaling, §§ 40-6-120 — 40-6-126)", "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-6/" }
+  ]
+}

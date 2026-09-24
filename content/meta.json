@@ -4122,7 +4122,7 @@
             "title": "What Is a Personal Injury Demand Letter and How Does It Work?",
             "excerpt": "What a personal injury demand letter contains, when your attorney sends one, and how insurers typically respond to it.",
             "meta": {
-                "_roden_author_attorney": "Eric Roden",
+                "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "What is a personal injury demand letter?",
@@ -4134,11 +4134,11 @@
                     },
                     {
                         "question": "What should be included in a demand letter?",
-                        "answer": "A factual narrative, liability argument, itemized economic damages, non-economic damages description, supporting evidence, a specific dollar demand, and a response deadline."
+                        "answer": "A factual narrative, liability argument, itemized economic damages, non-economic damages description, supporting evidence, a specific dollar demand, and a response deadline. In Georgia motor-vehicle cases it must also state the release terms and the 30-day acceptance and 40-day payment dates O.C.G.A. § 9-11-67.1 requires."
                     },
                     {
                         "question": "Does Georgia require a demand letter before filing a lawsuit?",
-                        "answer": "For standard PI claims, no. But Georgia's bad faith statute (O.C.G.A. § 33-4-6) requires a 60-day demand letter before seeking bad faith penalties. Government claims require ante litem notice — six months for a city under O.C.G.A. § 36-33-5, and 12 months for a county (§ 36-11-1) or the state (§ 50-21-26)."
+                        "answer": "For standard PI claims, no. When a lawyer sends a demand in a motor-vehicle case it must follow O.C.G.A. § 9-11-67.1. Georgia's bad-faith penalty statute (O.C.G.A. § 33-4-6) requires a 60-day demand and applies only to a claim on your own policy. Government claims require ante litem notice — six months for a city under O.C.G.A. § 36-33-5, and 12 months for a county (§ 36-11-1) or the state (§ 50-21-26)."
                     },
                     {
                         "question": "What happens after the insurance company receives the demand?",
@@ -4146,10 +4146,11 @@
                     },
                     {
                         "question": "Can I write my own demand letter?",
-                        "answer": "You can, but it is not recommended. A poorly drafted demand that undervalues your claim or admits fault can permanently damage your recovery. An experienced attorney maximizes the demand and anticipates insurer tactics."
+                        "answer": "You can, but it is not recommended. A poorly drafted demand that undervalues your claim or admits fault can permanently damage your recovery. An experienced attorney maximizes the demand and anticipates insurer tactics. In Georgia, only a demand prepared with a lawyer's help is an O.C.G.A. § 9-11-67.1 offer."
                     }
                 ],
-                "_roden_key_takeaways": "A personal injury demand letter is a formal document your attorney sends to the insurance company outlining liability, itemizing damages, and demanding compensation. Send after reaching MMI but before the statute of limitations expires (2 years GA, 3 years SC). Georgia's bad faith statute (O.C.G.A. § 33-4-6) requires a 60-day pre-suit demand. South Carolina has no mandatory pre-suit demand for bad faith."
+                "_roden_key_takeaways": "A personal injury demand letter is a formal document your attorney sends to the insurance company outlining liability, itemizing damages, and demanding compensation. Send after reaching MMI but before the statute of limitations expires (2 years GA, 3 years SC). In Georgia motor-vehicle cases an attorney's pre-suit demand must follow O.C.G.A. § 9-11-67.1 (at least 30 days to accept, 40 to pay). Bad-faith penalties in both states run against your own insurer only: Georgia's O.C.G.A. § 33-4-6 after a 60-day demand, South Carolina's S.C. Code § 38-59-40 after a 90-day demand. South Carolina has no demand statute for claims against the other driver's insurer.",
+                "_roden_last_reviewed": "2026-09-24"
             }
         },
         "/blog/deposition-in-a-personal-injury-claim/": {
@@ -8066,7 +8067,7 @@
                     },
                     {
                         "question": "Is failing to use a turn signal automatically negligence in Georgia?",
-                        "answer": "Failing to signal violates Georgia's rules of the road, and that violation supports a negligence argument. You still have to show the failure actually caused the collision and that you suffered damages as a result."
+                        "answer": "Not automatically. Failing to signal violates Georgia's rules of the road, and that violation supports a negligence argument. You still have to show the failure actually caused the collision and that you suffered damages as a result."
                     },
                     {
                         "question": "When can an employer be liable for a company driver's failure to signal?",
@@ -8078,9 +8079,10 @@
                     },
                     {
                         "question": "How do I prove another driver failed to signal?",
-                        "answer": "Independent witnesses, dashcam or nearby camera footage, and the police report are the usual routes, since a signal leaves no physical trace after the crash. Identifying witnesses at the scene is what makes this provable."
+                        "answer": "Independent witnesses, dashcam or nearby camera footage, and the police report are the usual routes, since a signal rarely leaves physical evidence — though in a serious crash a reconstruction expert can sometimes examine the turn-signal bulb's filament to tell whether it was lit at impact. Identifying witnesses at the scene is what makes this provable."
                     }
-                ]
+                ],
+                "_roden_last_reviewed": "2026-09-24"
             }
         },
         "/blog/liability-for-crashes-caused-by-teen-drivers/": {
@@ -8584,9 +8586,9 @@
             "type": "post",
             "status": "publish",
             "title": "How Maximum Medical Improvement (MMI) Affects Your Injury Claim in Georgia and South Carolina",
-            "excerpt": "Maximum medical improvement means your condition has stabilised, not that you are healed. Why MMI is the turning point in an injury claim.",
+            "excerpt": "Maximum medical improvement means your condition has stabilized, not that you are healed. Why MMI is the turning point in an injury claim.",
             "meta": {
-                "_roden_author_attorney": "Eric Roden",
+                "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "What is maximum medical improvement (MMI)?",
@@ -8598,11 +8600,11 @@
                     },
                     {
                         "question": "How does MMI affect my workers comp benefits in Georgia?",
-                        "answer": "In Georgia, reaching MMI typically ends <strong>temporary total disability (TTD)</strong> benefits and triggers a transition to <strong>permanent partial disability (PPD)</strong> benefits based on your impairment rating (O.C.G.A. § 34-9-263). For catastrophic injuries, lifetime benefits may continue under O.C.G.A. § 34-9-200.1. Medical benefits continue regardless of MMI."
+                        "answer": "In Georgia, MMI is when your impairment rating is assigned. It does not by itself end <strong>temporary total disability (TTD)</strong> — TTD generally continues until you return to work, are released to full duty, or hit the 400-week cap — and <strong>permanent partial disability (PPD)</strong> (O.C.G.A. § 34-9-263) is paid once TTD or TPD stops. For catastrophic injuries the 400-week caps do not apply (O.C.G.A. §§ 34-9-261, 34-9-200.1). Medical benefits continue after MMI, for up to 400 weeks in non-catastrophic cases."
                     },
                     {
                         "question": "How does MMI affect my workers comp benefits in South Carolina?",
-                        "answer": "In South Carolina, MMI similarly ends TTD and triggers PPD benefits based on impairment rating and loss of earning capacity (S.C. Code § 42-9-30). The 500-week overall benefit cap (S.C. Code § 42-9-10) continues to apply. Medical benefits for the work injury continue after MMI with no time limit."
+                        "answer": "In South Carolina, MMI lets the insurer ask the Commission to stop TTD (S.C. Code § 42-9-260) and starts the permanent-disability phase — scheduled PPD by impairment rating (§ 42-9-30) or wage-loss benefits (§ 42-9-20). The 500-week overall benefit cap (S.C. Code § 42-9-10) continues to apply. Medical benefits for the work injury can continue after MMI as long as the Commission finds treatment will lessen your disability — but they end one year after a Form 16 settlement is paid out or after a year without authorized treatment, so keep treating (S.C. Code § 42-15-60)."
                     },
                     {
                         "question": "Should I settle my personal injury case before reaching MMI?",
@@ -8610,10 +8612,11 @@
                     },
                     {
                         "question": "What can I do if the insurer declares MMI prematurely?",
-                        "answer": "You can (1) request a <strong>second opinion</strong> from an independent physician, (2) have your attorney challenge the determination through the workers' comp board or in court, (3) provide additional medical evidence showing you have not yet stabilized, or (4) request that the court appoint an independent medical examiner. Do not accept a premature MMI without legal advice."
+                        "answer": "You can (1) request a <strong>second opinion</strong> from an independent physician, (2) have your attorney request a hearing — Form WC-14 with Georgia's State Board or Form 50 with South Carolina's Commission, (3) provide additional medical evidence showing you have not yet stabilized, or (4) in Georgia, use your one-time independent examination at the insurer's expense within 120 days of your first income-benefit check (O.C.G.A. § 34-9-202(e)); in South Carolina, ask the Commission to order an examination (S.C. Code § 42-15-80). Do not accept a premature MMI without legal advice."
                     }
                 ],
-                "_roden_key_takeaways": "Maximum medical improvement (MMI) is when your condition stabilizes — not when you are fully healed. In Georgia, MMI ends TTD and triggers PPD based on impairment rating (O.C.G.A. § 34-9-263); catastrophic injuries get lifetime benefits (O.C.G.A. § 34-9-200.1). In South Carolina, MMI triggers PPD within the 500-week cap (S.C. Code § 42-9-10, § 42-9-30). Medical benefits continue after MMI in both states. Do not settle a PI case before reaching MMI — and challenge premature determinations."
+                "_roden_key_takeaways": "Maximum medical improvement (MMI) is when your condition stabilizes — not when you are fully healed. In Georgia, MMI is when your impairment rating is assigned; PPD (O.C.G.A. § 34-9-263) is paid once TTD or TPD ends, and MMI alone does not end TTD; catastrophic injuries are not subject to the 400-week caps (O.C.G.A. §§ 34-9-261, 34-9-200.1). In South Carolina, MMI triggers PPD within the 500-week cap (S.C. Code § 42-9-10, § 42-9-30). Medical benefits continue after MMI in both states, subject to Georgia's 400-week limit for non-catastrophic injuries. Do not settle a PI case before reaching MMI — and challenge premature determinations.",
+                "_roden_last_reviewed": "2026-09-24"
             }
         },
         "/blog/maybank-highway-car-accidents-johns-island/": {
