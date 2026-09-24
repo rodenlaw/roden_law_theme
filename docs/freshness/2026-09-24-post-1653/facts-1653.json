@@ -1,0 +1,505 @@
+{
+  "postId": 1653,
+  "slug": "calculating-compensation-for-whiplash-injuries",
+  "liveUrl": "https://rodenlaw.com/blog/calculating-compensation-for-whiplash-injuries/",
+  "jurisdiction": "both",
+  "verifiedAt": "2026-09-24",
+  "reviewerByRule": "Graeham C. Gillin (two-state post that states South Carolina law; never Eric Roden)",
+  "researchNotes": "law.justia.com returned 403 to curl and WebFetch and was read through the Firecrawl CLI, as in the sibling packs; every year-less Georgia URL below resolved and showed the 2025 Code of Georgia except § 36-33-5, whose year-less URL rendered the 2022 Code heading (it still resolves and the six-month text is current). www.scstatehouse.gov was read directly. NCBI Bookshelf and PMC returned reCAPTCHA/cookie walls to every fetch; PubMed abstracts were read through the NCBI E-utilities API and full texts through the Europe PMC REST API (open-access copies of the same PMC articles). Nelson v. Concrete Supply Co. was confirmed on Justia (303 S.C. 243, 399 S.E.2d 783) and is also on CourtListener. The live homepage (rodenlaw.com) confirms '$300M+ Recovered for Clients' and '5,000+ Cases Handled' and lists six offices including North Charleston. The post makes NO medical-payments, PIP, UM/UIM or seat-belt-evidence statements, so nothing from the 1749/1757 packs or the SB 68 / § 56-5-6540(C) rules needs to be added; the 2647 pack's Nelson, § 51-12-5.1 and ante litem citations were reused. data/statistics.json holds only crash-count facts; none apply here. The multiplier and per-diem methods have no primary source in either state's law and are reported below as informal adjuster conventions. The settlement-range dollar figures are traceable to no verdict, court record or study and are dropped from the body and FAQ 1.",
+  "verifiedClaims": [
+    {
+      "surface": "body",
+      "claim": "According to the Cornell Law Institute's overview of damages, injured parties may recover both economic and non-economic losses caused by another person's negligence.",
+      "verdict": "update",
+      "currentValue": "According to the Legal Information Institute at Cornell Law School's overview of damages, injured parties may recover compensatory damages for the losses caused by another person's negligence.",
+      "sourceName": "Cornell Law School, Legal Information Institute — Wex: damages",
+      "sourceUrl": "https://www.law.cornell.edu/wex/damages",
+      "retrievedAt": "2026-09-24",
+      "note": "Link resolves (HTTP 200). The institution is misnamed, as the 1749 pack found on its sibling post: it is the Legal Information Institute at Cornell Law School, not 'Cornell Law Institute'. Anchor-text fix only; the substance is fine."
+    },
+    {
+      "surface": "body",
+      "claim": "The personal injury attorneys at Roden Law have recovered over $300 million for injury victims across Georgia and South Carolina. With offices in Savannah, Darien, Charleston, Columbia, and Myrtle Beach, our legal team understands the state-specific laws that directly impact what your whiplash claim is worth.",
+      "verdict": "update",
+      "currentValue": "Over $300 million recovered is confirmed on the live homepage ('$300M+ Recovered for Clients'). The firm has six offices: Savannah, Darien, Charleston, North Charleston, Columbia and Myrtle Beach; the sentence omits North Charleston.",
+      "sourceName": "rodenlaw.com homepage (live, 2026-09-24); profiles/firm-facts.md and profiles/writer-profile.md ($300M+ recovered, 6 offices)",
+      "sourceUrl": "https://rodenlaw.com/",
+      "retrievedAt": "2026-09-24",
+      "note": "Homepage JSON-LD: 'serving Georgia and South Carolina with over $300 million recovered for injured clients'; the office block lists North Charleston (2703 Spruill Ave). Add 'North Charleston' to the office list."
+    },
+    {
+      "surface": "body",
+      "claim": "Whiplash occurs when the head and neck are forced into a rapid back-and-forth motion, stretching and sometimes tearing the soft tissues — muscles, tendons, and ligaments — in the cervical spine.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Lehman A, Margetis K. Cervical Sprain. StatPearls (updated 2026-04-12), PMID 31082060; Yadla S, Ratliff JK, Harrop JS. Whiplash: diagnosis, treatment, and associated injuries. Curr Rev Musculoskelet Med 2008;1:65-68 (PMC2684148)",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/31082060/",
+      "retrievedAt": "2026-09-24",
+      "note": "StatPearls: 'Cervical sprain is a soft tissue injury of the cervical spine. The most common type is whiplash-associated disorders (WAD), which result from acceleration-deceleration mechanisms, typically following a motor vehicle accident (MVA).' Open-access copy of PMC2684148: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2684148/fullTextXML"
+    },
+    {
+      "surface": "body",
+      "claim": "Whiplash is one of the most common injuries sustained in motor vehicle accidents",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Yadla S, Ratliff JK, Harrop JS. Whiplash: diagnosis, treatment, and associated injuries. Curr Rev Musculoskelet Med 2008;1:65-68 (PMC2684148)",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2684148/",
+      "retrievedAt": "2026-09-24",
+      "note": "'Whiplash is the most common injury associated with motor vehicle accidents, affecting up to 83% of patients involved in collisions, and is a common cause of chronic disability.' The post's softer 'one of the most common' is safely within the source."
+    },
+    {
+      "surface": "body",
+      "claim": "Common symptoms of whiplash include: Neck pain and stiffness; Reduced range of motion in the neck and shoulders; Headaches that originate at the base of the skull; Dizziness and fatigue; Numbness or tingling in the arms; Blurred vision; Tinnitus (ringing in the ears); Difficulty concentrating or remembering; Insomnia, irritability, or depression",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Tanaka N, Atesok K, Nakanishi K, et al. Pathology and Treatment of Traumatic Cervical Spine Syndrome: Whiplash Injury. Adv Orthop 2018 (PMC5851023), Table 1 and symptom sections",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5851023/",
+      "retrievedAt": "2026-09-24",
+      "note": "The review lists neck pain, limited range of motion, headaches (including cervicogenic/occipital), dizziness, paresthesias and weakness of the upper extremities, blurred vision (eye symptoms in 35%), tinnitus/ringing in the ears, memory/attention/concentration impairment, sleep disturbance, anxiety and depression. Every item on the post's list is present. Open-access copy: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5851023/fullTextXML"
+    },
+    {
+      "surface": "body",
+      "claim": "One of the most important things to understand about whiplash is that symptoms are frequently delayed. It is not uncommon for an accident victim to feel fine at the scene only to develop significant neck pain, headaches, or cognitive difficulties days or even weeks later.",
+      "verdict": "update",
+      "currentValue": "Symptoms are often delayed by hours rather than appearing at the scene: in a study of neck-sprain patients after car accidents, neck pain had begun in 65 percent within 6 hours, 93 percent within 24 hours and 100 percent within 72 hours of the injury (Deans et al., Injury 1987, as reported in Tanaka et al. 2018). The Quebec Task Force notes Grade I patients usually present to a doctor more than 24 hours after the trauma.",
+      "sourceName": "Tanaka N, et al. Pathology and Treatment of Traumatic Cervical Spine Syndrome: Whiplash Injury. Adv Orthop 2018 (PMC5851023), citing Deans GT, Magalliard JN, Kerr M, Rutherford WH. Neck sprain — a major cause of disability following car accidents. Injury 1987;18:10-12 (PMID 3440606); QTF Table 3 as reproduced in the same review",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5851023/",
+      "retrievedAt": "2026-09-24",
+      "note": "Review text: '[Deans et al.] reported that neck pain occurs in 65% of patients within 6 hours, 93% within 24 hours, and 100% within 72 hours after neck injury.' 'Days or even weeks later' overstates the delay; no source located supports onset weeks after the crash. Rewrite to 'hours to a few days' and, if a figure is wanted, use the Deans onset data with its attribution. The advice to get evaluated promptly stands."
+    },
+    {
+      "surface": "body",
+      "claim": "Medical professionals classify whiplash injuries using a standardized grading system developed by the Quebec Task Force in 1993.",
+      "verdict": "update",
+      "currentValue": "The Quebec Task Force on Whiplash-Associated Disorders published its classification in 1995 (Spitzer WO, et al., Spine 1995;20(8 Suppl):1S-73S).",
+      "sourceName": "Spitzer WO, Skovron ML, Salmi LR, Cassidy JD, Duranceau J, Suissa S, Zeiss E. Scientific monograph of the Quebec Task Force on Whiplash-Associated Disorders: redefining 'whiplash' and its management. Spine 1995;20(8 Suppl):1S-73S. PMID 7604354",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/7604354/",
+      "retrievedAt": "2026-09-24",
+      "note": "PubMed record: Spine (Phila Pa 1976). 1995 Apr 15;20(8 Suppl):1S-73S. Both open-access reviews read (PMC5851023, PMC4753964) date the classification to 1995. Change '1993' to '1995'."
+    },
+    {
+      "surface": "body",
+      "claim": "Grade 0: No neck complaints or physical signs / Grade 1: Neck pain, stiffness, or tenderness only — No physical signs at initial exam / Grade 2: Neck pain plus musculoskeletal signs — Decreased range of motion, point tenderness / Grade 3: Neck pain plus neurological signs — Decreased reflexes, weakness, sensory deficits",
+      "verdict": "update",
+      "currentValue": "The four definitions are correct, but the Quebec classification has five grades: Grade IV is 'neck complaint AND fracture or dislocation'. The table omits Grade IV while the key-takeaways box above the article says the scale runs 'from Grade 0 (no symptoms) to Grade IV (fractures or dislocations)'.",
+      "sourceName": "Pastakia K, Kumar S. Acute whiplash associated disorders (WAD). Open Access Emerg Med 2011;3:29-32 (PMC4753964); Yadla S, et al. Curr Rev Musculoskelet Med 2008 (PMC2684148), Table 1; Spitzer WO, et al. Spine 1995 (PMID 7604354)",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4753964/",
+      "retrievedAt": "2026-09-24",
+      "note": "PMC4753964: 'Grade 0: No complaints about the neck. Grade I: Neck complaint of pain, stiffness or tenderness only. Grade II: Neck complaint AND musculoskeletal sign(s). Grade III: Neck complaint AND neurological sign(s). Grade IV: Neck complaint AND fracture or dislocation.' PMC2684148 Table 1 gives the same with 'Decreased or absent deep tendon reflexes, weakness and sensory deficits' for Grade III. Add a Grade IV row so the body matches the takeaways; consider Roman numerals (0, I, II, III, IV) as the QTF and the takeaways use. Open-access copy: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4753964/fullTextXML"
+    },
+    {
+      "surface": "body",
+      "claim": "Typical Recovery — Grade 0: Monitoring recommended / Grade 1: Weeks to months / Grade 2: Months; may require physical therapy / Grade 3: Months to years; may require extensive treatment",
+      "verdict": "update",
+      "currentValue": "The Quebec classification does not assign recovery periods to grades and its guidelines do not address Grade 0. The verifiable prognosis facts are: approximately 50 percent of people with Grade I-III WAD still report neck pain one year after injury (Neck Pain Task Force best-evidence synthesis, Carroll et al. 2008); most studies find persistent symptoms in 25-40 percent after one year (Yadla et al. 2008); and greater initial pain, more symptoms, greater initial disability and neurological deficit predict slower recovery.",
+      "sourceName": "Carroll LJ, Holm LW, Hogg-Johnson S, et al. Course and prognostic factors for neck pain in whiplash-associated disorders (WAD): results of the Bone and Joint Decade 2000-2010 Task Force on Neck Pain and Its Associated Disorders. Spine 2008;33(4 Suppl):S83-92. PMID 18204405; Yadla S, et al. Curr Rev Musculoskelet Med 2008 (PMC2684148)",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/18204405/",
+      "retrievedAt": "2026-09-24",
+      "note": "Carroll 2008 abstract: 'The evidence suggests that approximately 50% of those with WAD will report neck pain symptoms 1 year after their injuries. Greater initial pain, more symptoms, and greater initial disability predicted slower recovery.' PMC2684148: 'Most studies suggest persistent symptoms in 25-40% of patients after 1 year' and 'factors ... consistently associated with delayed recovery including ... initial intensity of neck pain, neurologic deficit'. The per-grade 'weeks to months / months / months to years' cells and 'Monitoring recommended' are not traceable to the QTF or any study read. Either drop the column or replace it with a single sourced sentence under the table (recommended wording in recommendedEdits). The directional point that higher grades carry a slower recovery is supported."
+    },
+    {
+      "surface": "body",
+      "claim": "If someone else's negligence caused your whiplash injury, you may be entitled to recover several categories of damages under Georgia or South Carolina personal injury law. These damages fall into two main groups: Economic Damages (Special Damages) ... Non-Economic Damages (General Damages)",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Cornell Law School, Legal Information Institute — Wex: damages",
+      "sourceUrl": "https://www.law.cornell.edu/wex/damages",
+      "retrievedAt": "2026-09-24",
+      "note": "General description of compensatory damages (special/economic and general/non-economic); no state-specific figure is asserted. The individual bullets (medical expenses, future care, lost wages, earning capacity, mileage, property damage; pain and suffering, emotional distress, loss of enjoyment, loss of consortium) are standard categories and make no verifiable numeric claim."
+    },
+    {
+      "surface": "body",
+      "claim": "In cases involving extreme recklessness — such as a drunk driving accident — you may also be able to pursue punitive damages. These are designed to punish the at-fault party and deter similar behavior, not to compensate for specific losses.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-5.1(a), (b), (f), (g) (2025 Code of Georgia via Justia); S.C. Code § 15-32-520(D) and § 15-32-530(A), (C)(3)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Georgia § 51-12-5.1(b): punitive damages only on clear and convincing evidence of 'willful misconduct, malice, fraud, wantonness, oppression, or that entire want of care which would raise the presumption of conscious indifference to consequences'; (g) caps them at $250,000 except (f) where the defendant acted 'under the influence of alcohol, drugs ... to that degree that his or her judgment is substantially impaired' — no cap. South Carolina § 15-32-520(D): 'clear and convincing evidence that his harm was the result of the defendant's wilful, wanton, or reckless conduct'; § 15-32-530(A) caps at the greater of 3x compensatory or $500,000, and (C)(3) removes the cap where the defendant acted 'under the influence of alcohol, drugs ... to the degree that the defendant's judgment is substantially impaired'. The post states no cap figure, so nothing to correct; the drunk-driving example is the uncapped case in both states. SC text: https://www.scstatehouse.gov/code/t15c032.php"
+    },
+    {
+      "surface": "body",
+      "claim": "Insurance companies and attorneys typically use two methods to calculate the value of a whiplash injury claim. ... The Multiplier Method — This is the most common approach for calculating non-economic damages. Your total economic damages (medical bills, lost wages, etc.) are multiplied by a factor — typically between 1.5 and 5 — based on the severity and duration of your injury. A mild Grade 1 whiplash that resolves in weeks might warrant a multiplier of 1.5 to 2, while a Grade 3 injury with chronic symptoms and ongoing treatment could justify a multiplier of 4 or higher.",
+      "verdict": "update",
+      "currentValue": "The multiplier method is an informal negotiating convention used by adjusters and attorneys, not a rule of Georgia or South Carolina law; neither state's statutes prescribe a formula for pain and suffering, and a jury is not bound by any multiplier. The specific range '1.5 and 5' and the per-grade multipliers are traceable to no primary source and should be removed.",
+      "sourceName": "No primary source exists for the range; framing verified against O.C.G.A. § 51-12-33 and S.C. Code § 15-3-530 / Title 15 Chapter 32, none of which prescribe a damages formula",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "Per the pipeline rule, state the method as an informal convention, not law. Keep the description of the mechanic, delete 'the most common approach', the '1.5 and 5' range and the Grade 1 / Grade 3 multiplier examples, and add one sentence that no statute in either state sets a formula and a jury is never bound by one. Recommended wording in recommendedEdits."
+    },
+    {
+      "surface": "body",
+      "claim": "The Per Diem Method — Under this approach, a daily dollar amount is assigned for every day you experienced pain and limitations from your whiplash injury. For example, if a daily rate of $150 is applied over a 180-day recovery period, the non-economic damages would total $27,000. This method is sometimes used for injuries with a clear recovery timeline.",
+      "verdict": "update",
+      "currentValue": "The per-diem method is likewise an informal convention; $150 x 180 days = $27,000 is correct arithmetic for a purely hypothetical example and must be labeled as such, not as a typical or expected figure.",
+      "sourceName": "Arithmetic check; no statute in either state prescribes a per-diem formula",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Keep the example only with an explicit 'hypothetical, for illustration' label and the same 'not a rule of law' sentence that covers the multiplier method. The $150 rate is not a verified market figure."
+    },
+    {
+      "surface": "body",
+      "claim": "Mild whiplash (Grade 0–1) that resolves within weeks: $2,500 to $10,000",
+      "verdict": "drop",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "No published verdict, court record, insurer filing or official study supports this range. Under the pipeline rule any dollar figure not traceable to a primary source is dropped. Remove the bullet."
+    },
+    {
+      "surface": "body",
+      "claim": "Moderate whiplash (Grade 2) requiring physical therapy and months of treatment: $10,000 to $50,000",
+      "verdict": "drop",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "Same as above: untraceable settlement range. Remove the bullet."
+    },
+    {
+      "surface": "body",
+      "claim": "Severe whiplash (Grade 3) with chronic pain, neurological symptoms, or long-term disability: $50,000 to $150,000+",
+      "verdict": "drop",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "Same as above. Remove the bullet. With all three bullets gone, replace the 'What Settlement Ranges Look Like' subsection with the existing 'These ranges are general estimates...' paragraph rewritten as 'The value of a claim depends on...' (see recommendedEdits); the H3 can stay as 'What Determines the Settlement Value'."
+    },
+    {
+      "surface": "body",
+      "claim": "Both Georgia and South Carolina follow modified comparative fault rules, but with an important difference in the threshold.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(a), (g); Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (S.C. 1991)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "Matches the writer-profile jurisdiction table and the 1749/1757/2647 packs."
+    },
+    {
+      "surface": "body",
+      "claim": "You may recover if you are less than 50% at fault (O.C.G.A. § 51-12-33) ... 50% or more at fault = no recovery",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(a), (g) (2025 Code of Georgia via Justia)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "(g): 'the plaintiff shall not be entitled to receive any damages if the plaintiff is 50 percent or more responsible for the injury or damages claimed.' (a): damages reduced 'in proportion to his or her percentage of fault.' Verified on Justia 2026-09-24 (page shows 2025 Code)."
+    },
+    {
+      "surface": "body",
+      "claim": "You may recover if you are less than 51% at fault ... 51% or more at fault = no recovery",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (S.C. 1991)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Nelson: 'a plaintiff in a negligence action may recover damages if his or her negligence is not greater than that of the defendant. The amount of the plaintiff's recovery shall be reduced in proportion to the amount of his or her negligence.' The South Carolina cell carries no authority while the Georgia cell cites its statute; add '(Nelson v. Concrete Supply Co.)' and never § 15-38-15 (writer-profile rule). Also on CourtListener: https://www.courtlistener.com/opinion/1265650/nelson-v-concrete-supply-company/"
+    },
+    {
+      "surface": "body",
+      "claim": "If you are 20% at fault and damages total $50,000, you receive $40,000",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(a); Nelson v. Concrete Supply Co. (S.C. 1991)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "Arithmetic follows from proportional reduction in both states: $50,000 x (1 - 0.20) = $40,000. Illustrative, not a settlement figure."
+    },
+    {
+      "surface": "body",
+      "claim": "If a jury determines you were exactly 50% at fault for the accident, you would be barred from recovery in Georgia but could still recover in South Carolina.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(g); Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "50 percent is 'not greater than' the defendant's share under Nelson, so the South Carolina plaintiff recovers half; § 51-12-33(g) bars the Georgia plaintiff at 50 percent. Same conclusion as the 1749 and 1757 packs."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia — 2 years from the date of injury — O.C.G.A. § 9-3-33",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-33 (2025 Code of Georgia via Justia)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "'actions for injuries to the person shall be brought within two years after the right of action accrues'. Matches the writer-profile table. Loss-of-consortium claims get four years under the same section; not claimed here."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina — 3 years from the date of injury — S.C. Code § 15-3-530",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-3-530(5) (South Carolina Legislature)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-24",
+      "note": "'Within three years: ... (5) an action for assault, battery, or any injury to the person or rights of another, not arising on contract and not enumerated by law'. Read directly 2026-09-24. Matches the writer-profile table."
+    },
+    {
+      "surface": "body",
+      "claim": "If you were injured in an accident involving a government entity or vehicle, shorter notice requirements may apply.",
+      "verdict": "update",
+      "currentValue": "Georgia requires a written ante litem notice before suit: within six months for a claim against a city (O.C.G.A. § 36-33-5), and within 12 months for a claim against a county (O.C.G.A. § 36-11-1) or the state (O.C.G.A. § 50-21-26). South Carolina's Tort Claims Act imposes no pre-suit notice, but it shortens the filing deadline to two years (S.C. Code § 15-78-110), extended to three years only if a verified claim was filed under § 15-78-80 within one year.",
+      "sourceName": "O.C.G.A. § 36-33-5; O.C.G.A. § 36-11-1; O.C.G.A. § 50-21-26; S.C. Code § 15-78-110; S.C. Code § 15-78-80",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+      "retrievedAt": "2026-09-24",
+      "note": "The sentence is true for Georgia and misleading for South Carolina, where the change is a shorter limitation period, not a notice requirement (writer-profile table: 'the Tort Claims Act imposes no pre-suit notice'). § 15-78-110 read directly: 'forever barred unless an action is commenced within two years after the date the loss was or should have been discovered; provided, that if the claimant first filed a claim pursuant to this chapter then ... within three years'. § 36-33-5(b) ('Within six months') and § 50-21-26(a)(1) ('within 12 months') read on Justia 2026-09-24; § 36-11-1 (12 months) reused from the 2647 pack. A one-sentence rewrite per state is enough."
+    },
+    {
+      "surface": "body",
+      "claim": "One of the biggest challenges in whiplash cases is that standard imaging often fails to show the injury.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Yadla S, et al. Whiplash: diagnosis, treatment, and associated injuries. Curr Rev Musculoskelet Med 2008 (PMC2684148); Lehman A, Margetis K. Cervical Sprain. StatPearls 2026 (PMID 31082060); Sarrami P, et al. Factors predicting outcome in whiplash injury: a systematic meta-review of prognostic factors. J Orthop Traumatol 2017 (PMC5311004)",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2684148/",
+      "retrievedAt": "2026-09-24",
+      "note": "PMC2684148: 'Injury most often is not identified radiographically in the acute phase.' StatPearls: 'The challenge in describing these injuries lies in the absence of identifiable structural pathology on comprehensive diagnostic workups. Therefore, WAD remains a diagnosis of exclusion.' PMC5311004 adds that post-injury MRI or radiographic findings were not associated with continuing pain and disability, which supports the sentence's point that a clean scan does not disprove the injury."
+    },
+    {
+      "surface": "body",
+      "claim": "With over $300 million recovered for clients and more than 5,000 cases handled across Georgia and South Carolina, our attorneys have the experience and resources to pursue the full value of your claim.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "rodenlaw.com homepage (live): '$300M+ Recovered for Clients', '5,000+ Cases Handled'; profiles/writer-profile.md proof line",
+      "sourceUrl": "https://rodenlaw.com/",
+      "retrievedAt": "2026-09-24",
+      "note": "Both figures match the live homepage and the writer profile ($300M+ recovered, 5,000+ cases handled). Contingency-fee statement matches the profile's 'no fees unless we win'."
+    },
+    {
+      "surface": "body",
+      "claim": "Call 1-844-RESULTS (href tel:18447378587) or contact us online",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "profiles/writer-profile.md phone rule (1-844-RESULTS is tel:+18447378587); live page header/footer use tel:+18447378587",
+      "sourceUrl": "https://rodenlaw.com/blog/calculating-compensation-for-whiplash-injuries/",
+      "retrievedAt": "2026-09-24",
+      "note": "Digits are correct (844-737-8587 = 844-RESULTS); not one of the 27 transposed hrefs. The body href lacks the '+' the profile and the theme use (tel:+18447378587). Optional normalization; never change the visible text. /contact/ and every internal practice-area link in the post returned HTTP 200."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Whiplash injuries range from Grade 0 (no symptoms) to Grade IV (fractures or dislocations)",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Pastakia K, Kumar S. Acute whiplash associated disorders (WAD). Open Access Emerg Med 2011 (PMC4753964); Spitzer WO, et al. Spine 1995 (PMID 7604354)",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4753964/",
+      "retrievedAt": "2026-09-24",
+      "note": "Correct: 'Grade 0: No complaints about the neck ... Grade IV: Neck complaint AND fracture or dislocation.' The body table stops at Grade 3; add the Grade IV row there so the two surfaces agree."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Georgia's modified comparative fault rule (O.C.G.A. SS 51-12-33) bars recovery at 50% or more fault, while South Carolina bars recovery at 51% or more.",
+      "verdict": "update",
+      "currentValue": "Georgia's modified comparative fault rule (O.C.G.A. § 51-12-33) bars recovery at 50% or more fault, while South Carolina bars recovery at 51% or more (Nelson v. Concrete Supply Co.).",
+      "sourceName": "O.C.G.A. § 51-12-33(g); Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "The rules are correct. The section symbol renders as 'SS' in the takeaways box, which sits above the article; the profile's strict format is 'O.C.G.A. § X-X-XX'. Same defect the 2647 pack found on its post. Add the Nelson attribution so the SC bar carries authority the way the GA bar does."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Filing deadlines are two years in Georgia (O.C.G.A. SS 9-3-33) and three years in South Carolina (S.C. Code SS 15-3-530).",
+      "verdict": "update",
+      "currentValue": "Filing deadlines are two years in Georgia (O.C.G.A. § 9-3-33) and three years in South Carolina (S.C. Code § 15-3-530).",
+      "sourceName": "O.C.G.A. § 9-3-33; S.C. Code § 15-3-530(5)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Rules verified; 'SS' to '§' only."
+    },
+    {
+      "surface": "faq:0",
+      "claim": "Mild whiplash that resolves within weeks may result in settlements of $2,500 to $10,000, while severe whiplash with chronic symptoms can be worth $50,000 to $150,000 or more.",
+      "verdict": "drop",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "Same untraceable ranges as the body bullets, and this answer is republished as FAQPage structured data. Delete the sentence; the surrounding answer (value depends on severity, recovery duration, medical expenses, lost income; an attorney can evaluate the facts) stands on its own."
+    },
+    {
+      "surface": "faq:1",
+      "claim": "In Georgia, you have 2 years from the date of injury to file a personal injury lawsuit (O.C.G.A. § 9-3-33). In South Carolina, the deadline is 3 years from the date of injury (S.C. Code § 15-3-530).",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-33; S.C. Code § 15-3-530(5)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "Verified; matches the writer-profile table."
+    },
+    {
+      "surface": "faq:2",
+      "claim": "Georgia follows a modified comparative fault rule that allows you to recover damages as long as you are less than 50% at fault (O.C.G.A. § 51-12-33). South Carolina allows recovery if you are less than 51% at fault. In both states, your compensation is reduced by your percentage of fault. For example, if you are 20% at fault and your damages total $50,000, you would receive $40,000.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(a), (g); Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Verified. Optional: add '(Nelson v. Concrete Supply Co.)' after the South Carolina sentence; never § 15-38-15."
+    },
+    {
+      "surface": "faq:3",
+      "claim": "It is very common for whiplash symptoms to appear days or even weeks after an accident. The adrenaline and stress hormones released during a collision can mask pain signals, and inflammation in the soft tissues of the neck may take time to develop fully.",
+      "verdict": "update",
+      "currentValue": "Whiplash symptoms often appear hours after a collision rather than at the scene: in one study of car-accident neck sprains, neck pain had begun in 65 percent of patients within 6 hours, 93 percent within 24 hours and all of them within 72 hours (Deans et al., 1987). Soft-tissue swelling and muscle spasm develop over that window, which is why a person can feel fine at the scene and wake up in pain.",
+      "sourceName": "Tanaka N, et al. Adv Orthop 2018 (PMC5851023), citing Deans GT, et al. Injury 1987;18:10-12; Quebec Task Force Table 3 (Grade II: 'Neck sprain and bleeding around soft tissue ... Muscle spasm secondary to soft tissue injury') as reproduced in the same review",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5851023/",
+      "retrievedAt": "2026-09-24",
+      "note": "'Days or even weeks' is not supported by any source read; the adrenaline-masking mechanism has no peer-reviewed source located and should be dropped rather than defended. The soft-tissue inflammation/spasm explanation is consistent with the QTF's presumed pathology for Grade II. This answer is republished as FAQPage structured data."
+    },
+    {
+      "surface": "faq:4",
+      "claim": "Key evidence includes medical records documenting your diagnosis, treatment plan, and the progression of your symptoms; photographs of the accident scene and vehicle damage; the police report; a personal pain journal describing your daily symptoms and limitations; records of all medical expenses and lost wages; and witness statements.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Practice guidance; no factual or numeric claim to verify",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "No statute, statistic or dollar figure asserted."
+    },
+    {
+      "surface": "faq:5",
+      "claim": "Initial settlement offers from insurance companies are almost always lower than the true value of a whiplash claim.",
+      "verdict": "update",
+      "currentValue": "Initial settlement offers from insurance companies are often lower than the full value of a whiplash claim.",
+      "sourceName": "No study located quantifies first-offer adequacy; softened rather than sourced",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "'Almost always' is a frequency claim with no primary source. Soften to 'often'; the rest of the answer is advice and stands."
+    },
+    {
+      "surface": "excerpt",
+      "claim": "How whiplash compensation is calculated in Georgia and South Carolina — injury grades, medical bills, lost wages, and what shared fault does to a claim.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Descriptive; no verifiable claim",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "Published as the Article description by roden_schema_article(); nothing to change."
+    }
+  ],
+  "recommendedEdits": [
+    "Body, intro: change anchor text 'Cornell Law Institute's overview of damages' to 'Legal Information Institute at Cornell Law School's overview of damages' (href unchanged, resolves).",
+    "Body, intro: 'With offices in Savannah, Darien, Charleston, Columbia, and Myrtle Beach' -> 'With offices in Savannah, Darien, Charleston, North Charleston, Columbia, and Myrtle Beach'.",
+    "Body, 'What Is a Whiplash Injury?': replace 'days or even weeks later' with 'hours or even a day or two later'; optionally add 'In one study of neck sprains after car accidents, neck pain had begun in 65 percent of patients within 6 hours, 93 percent within 24 hours and all of them within 72 hours (Deans et al., Injury, 1987).'",
+    "Body, 'The Whiplash Grading System': 'developed by the Quebec Task Force in 1993' -> 'published by the Quebec Task Force on Whiplash-Associated Disorders in 1995'.",
+    "Body, grading table: add a final row 'Grade IV | Neck complaint plus fracture or dislocation | Fracture or dislocation on imaging | Specialist referral' (or use Roman numerals 0, I, II, III, IV throughout to match the key takeaways).",
+    "Body, grading table: remove the 'Typical Recovery' column (its per-grade cells and 'Monitoring recommended' have no source) and add one sentence below the table: 'The Quebec classification does not assign recovery times to each grade. The Neck Pain Task Force's review of the evidence found that about half of people with Grade I to III whiplash still report neck pain a year after the injury, and that greater initial pain, more symptoms and neurological signs predict a slower recovery (Carroll et al., Spine, 2008).'",
+    "Body, 'The Multiplier Method': delete 'This is the most common approach for calculating non-economic damages.' and the range 'typically between 1.5 and 5'; delete the sentence 'A mild Grade 1 whiplash ... multiplier of 4 or higher.'; add 'Neither Georgia nor South Carolina law prescribes this or any formula for pain and suffering; it is an informal convention adjusters and attorneys use in negotiation, and a jury is never bound by it.'",
+    "Body, 'The Per Diem Method': prefix the example with 'As a purely hypothetical illustration,' and keep the arithmetic ($150 x 180 days = $27,000); add 'like the multiplier, this is a negotiating convention, not a rule of law.'",
+    "Body, 'What Settlement Ranges Look Like': delete all three dollar-range bullets and the lead-in 'Whiplash settlement amounts vary widely depending on the facts of each case:'; retitle the H3 'What Determines the Settlement Value' and rewrite the following paragraph to begin 'The value of a whiplash claim depends on your specific medical evidence, the strength of the liability case against the at-fault party, and the insurance policy limits available.'",
+    "Body, comparative fault table, South Carolina threshold cell: append '(Nelson v. Concrete Supply Co.)' after 'less than 51% at fault'. Never cite § 15-38-15.",
+    "Body, statute of limitations paragraph: replace 'If you were injured in an accident involving a government entity or vehicle, shorter notice requirements may apply.' with 'Claims against a government entity run on different clocks. In Georgia a written ante litem notice must be presented within six months for a city (O.C.G.A. § 36-33-5) and within 12 months for a county (O.C.G.A. § 36-11-1) or the state (O.C.G.A. § 50-21-26). South Carolina requires no pre-suit notice, but the Tort Claims Act shortens the filing deadline to two years (S.C. Code § 15-78-110).'",
+    "Body, CTA: optionally normalize the href 'tel:18447378587' to 'tel:+18447378587' to match the theme and profile; do not change the visible '1-844-RESULTS'.",
+    "Key takeaways: replace 'O.C.G.A. SS 51-12-33', 'O.C.G.A. SS 9-3-33' and 'S.C. Code SS 15-3-530' with the § symbol; after 'South Carolina bars recovery at 51% or more' add '(Nelson v. Concrete Supply Co.)'.",
+    "FAQ 1 ('How much is a whiplash injury claim worth?'): delete the sentence 'Mild whiplash that resolves within weeks may result in settlements of $2,500 to $10,000, while severe whiplash with chronic symptoms can be worth $50,000 to $150,000 or more.'",
+    "FAQ 3 ('Can I still recover compensation if I was partially at fault'): optionally append '(Nelson v. Concrete Supply Co.)' after 'less than 51% at fault'.",
+    "FAQ 4 ('Why are my whiplash symptoms delayed'): replace the first two sentences with 'Whiplash symptoms often appear hours after a collision rather than at the scene. In one study of neck sprains after car accidents, neck pain had begun in 65 percent of patients within 6 hours, 93 percent within 24 hours and all of them within 72 hours (Deans et al., Injury, 1987). Swelling and muscle spasm in the soft tissues of the neck develop over that window, which is why you can feel fine at the scene and wake up in pain.' Keep the final sentence about seeking an evaluation.",
+    "FAQ 6 ('Should I accept the insurance company's first settlement offer'): 'are almost always lower' -> 'are often lower'.",
+    "After the edits, re-run bin/check-unslashed-post-writes.php and confirm the FAQPage block still parses, since FAQ 1 and FAQ 4 answers change."
+  ],
+  "statuteCitations": [
+    {
+      "section": "O.C.G.A. § 51-12-33",
+      "name": "Reduction and apportionment of award or bar of recovery according to percentage of fault of parties and nonparties (modified comparative negligence; 50 percent bar in subsection (g))",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+    },
+    {
+      "section": "O.C.G.A. § 9-3-33",
+      "name": "Injuries to the person; two-year limitation (four years for loss of consortium)",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+    },
+    {
+      "section": "O.C.G.A. § 51-12-5.1",
+      "name": "Punitive damages; clear-and-convincing standard (b); $250,000 cap (g); no cap for specific intent or alcohol/drug impairment (f)",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/"
+    },
+    {
+      "section": "O.C.G.A. § 36-33-5",
+      "name": "Written demand prerequisite to action against a municipal corporation; six months",
+      "url": "https://law.justia.com/codes/georgia/title-36/chapter-33/section-36-33-5/"
+    },
+    {
+      "section": "O.C.G.A. § 36-11-1",
+      "name": "Claims against counties; presented within 12 months",
+      "url": "https://law.justia.com/codes/georgia/title-36/chapter-11/section-36-11-1/"
+    },
+    {
+      "section": "O.C.G.A. § 50-21-26",
+      "name": "Georgia Tort Claims Act; notice of claim against the state within 12 months",
+      "url": "https://law.justia.com/codes/georgia/title-50/chapter-21/article-2/section-50-21-26/"
+    },
+    {
+      "section": "S.C. Code § 15-3-530",
+      "name": "Three years; subsection (5) any injury to the person",
+      "url": "https://www.scstatehouse.gov/code/t15c003.php"
+    },
+    {
+      "section": "S.C. Code § 15-32-520",
+      "name": "Punitive damages; clear and convincing evidence of wilful, wanton, or reckless conduct (subsection D)",
+      "url": "https://www.scstatehouse.gov/code/t15c032.php"
+    },
+    {
+      "section": "S.C. Code § 15-32-530",
+      "name": "Punitive damages cap; greater of 3x compensatory or $500,000 (A); no cap where the defendant was substantially impaired by alcohol or drugs (C)(3)",
+      "url": "https://www.scstatehouse.gov/code/t15c032.php"
+    },
+    {
+      "section": "S.C. Code § 15-78-110",
+      "name": "Tort Claims Act statute of limitations; two years (three if a verified claim was filed)",
+      "url": "https://www.scstatehouse.gov/code/t15c078.php"
+    },
+    {
+      "section": "S.C. Code § 15-78-80",
+      "name": "Tort Claims Act; optional verified claim, to be received within one year",
+      "url": "https://www.scstatehouse.gov/code/t15c078.php"
+    },
+    {
+      "section": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (S.C. 1991)",
+      "name": "South Carolina Supreme Court adoption of modified comparative negligence; plaintiff recovers if his or her negligence is 'not greater than' the defendant's (the 51 percent bar). Never cite § 15-38-15 for the plaintiff's bar.",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html"
+    }
+  ],
+  "authoritativeLinks": [
+    {
+      "name": "Spitzer WO, et al. Scientific monograph of the Quebec Task Force on Whiplash-Associated Disorders. Spine 1995;20(8 Suppl):1S-73S (PubMed)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7604354/"
+    },
+    {
+      "name": "Carroll LJ, et al. Course and prognostic factors for neck pain in whiplash-associated disorders (WAD): Neck Pain Task Force. Spine 2008;33(4 Suppl):S83-92 (PubMed; ~50% still report neck pain at 1 year)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18204405/"
+    },
+    {
+      "name": "Pastakia K, Kumar S. Acute whiplash associated disorders (WAD). Open Access Emerg Med 2011 (PMC4753964; QTF Grades 0-IV verbatim)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4753964/"
+    },
+    {
+      "name": "Yadla S, Ratliff JK, Harrop JS. Whiplash: diagnosis, treatment, and associated injuries. Curr Rev Musculoskelet Med 2008 (PMC2684148; most common MVA injury, imaging usually negative acutely, 25-40% persistent at 1 year)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2684148/"
+    },
+    {
+      "name": "Tanaka N, et al. Pathology and Treatment of Traumatic Cervical Spine Syndrome: Whiplash Injury. Adv Orthop 2018 (PMC5851023; symptom onset 65%/6h, 93%/24h, 100%/72h per Deans 1987; QTF Tables 2-3; symptom list)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5851023/"
+    },
+    {
+      "name": "Sarrami P, et al. Factors predicting outcome in whiplash injury: a systematic meta-review of prognostic factors. J Orthop Traumatol 2017 (PMC5311004; imaging findings not prognostic)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5311004/"
+    },
+    {
+      "name": "Lehman A, Margetis K. Cervical Sprain. StatPearls, updated 2026-04-12 (PubMed record; WAD a diagnosis of exclusion, chronic in about one quarter)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31082060/"
+    },
+    {
+      "name": "Cornell Law School, Legal Information Institute — Wex: damages",
+      "url": "https://www.law.cornell.edu/wex/damages"
+    },
+    {
+      "name": "Nelson v. Concrete Supply Co. (S.C. 1991) — CourtListener copy",
+      "url": "https://www.courtlistener.com/opinion/1265650/nelson-v-concrete-supply-company/"
+    },
+    {
+      "name": "South Carolina Code, Title 15 Chapter 78 (Tort Claims Act)",
+      "url": "https://www.scstatehouse.gov/code/t15c078.php"
+    }
+  ]
+}

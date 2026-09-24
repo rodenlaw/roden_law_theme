@@ -2026,11 +2026,11 @@
             "title": "Calculating Compensation for Whiplash Injuries in Georgia and South Carolina",
             "excerpt": "How whiplash compensation is calculated in Georgia and South Carolina — injury grades, medical bills, lost wages, and what shared fault does to a claim.",
             "meta": {
-                "_roden_author_attorney": "Eric Roden",
+                "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "How much is a whiplash injury claim worth?",
-                        "answer": "The value of a whiplash claim depends on the severity of your injury, the duration of your recovery, your medical expenses, and your lost income. Mild whiplash that resolves within weeks may result in settlements of $2,500 to $10,000, while severe whiplash with chronic symptoms can be worth $50,000 to $150,000 or more. An experienced attorney can evaluate the specific facts of your case and provide a realistic estimate."
+                        "answer": "The value of a whiplash claim depends on the severity of your injury, the duration of your recovery, your medical expenses, and your lost income. An experienced attorney can evaluate the specific facts of your case and provide a realistic estimate."
                     },
                     {
                         "question": "What is the statute of limitations for a whiplash injury claim in Georgia and South Carolina?",
@@ -2038,11 +2038,11 @@
                     },
                     {
                         "question": "Can I still recover compensation if I was partially at fault for the accident?",
-                        "answer": "Yes, in most cases. Georgia follows a modified comparative fault rule that allows you to recover damages as long as you are less than 50% at fault (O.C.G.A. § 51-12-33). South Carolina allows recovery if you are less than 51% at fault. In both states, your compensation is reduced by your percentage of fault. For example, if you are 20% at fault and your damages total $50,000, you would receive $40,000."
+                        "answer": "Yes, in most cases. Georgia follows a modified comparative fault rule that allows you to recover damages as long as you are less than 50% at fault (O.C.G.A. § 51-12-33). South Carolina allows recovery if you are less than 51% at fault (Nelson v. Concrete Supply Co.). In both states, your compensation is reduced by your percentage of fault. For example, if you are 20% at fault and your damages total $50,000, you would receive $40,000."
                     },
                     {
                         "question": "Why are my whiplash symptoms delayed after the accident?",
-                        "answer": "It is very common for whiplash symptoms to appear days or even weeks after an accident. The adrenaline and stress hormones released during a collision can mask pain signals, and inflammation in the soft tissues of the neck may take time to develop fully. This is why medical professionals recommend seeking an evaluation immediately after any accident, even if you feel fine at the scene."
+                        "answer": "Whiplash symptoms often appear hours after a collision rather than at the scene. In one study of neck sprains after car accidents, neck pain had begun in 65 percent of patients within 6 hours, 93 percent within 24 hours and all of them within 72 hours (Deans et al., Injury, 1987). Swelling and muscle spasm in the soft tissues of the neck develop over that window. This is why medical professionals recommend seeking an evaluation immediately after any accident, even if you feel fine at the scene."
                     },
                     {
                         "question": "What evidence do I need to prove a whiplash injury claim?",
@@ -2050,10 +2050,11 @@
                     },
                     {
                         "question": "Should I accept the insurance company's first settlement offer for my whiplash injury?",
-                        "answer": "In most cases, no. Initial settlement offers from insurance companies are almost always lower than the true value of a whiplash claim. Insurers make early offers hoping you will accept before you fully understand the extent of your injury and future treatment needs. An attorney can review any offer, calculate the full value of your damages including future medical costs, and negotiate for a fair settlement on your behalf."
+                        "answer": "In most cases, no. Initial settlement offers from insurance companies are often lower than the full value of a whiplash claim. Insurers make early offers hoping you will accept before you fully understand the extent of your injury and future treatment needs. An attorney can review any offer, calculate the full value of your damages including future medical costs, and negotiate for a fair settlement on your behalf."
                     }
                 ],
-                "_roden_key_takeaways": "Whiplash injuries range from Grade 0 (no symptoms) to Grade IV (fractures or dislocations), and compensation covers medical bills, lost wages, pain and suffering, and diminished quality of life. Georgia's modified comparative fault rule (O.C.G.A. SS 51-12-33) bars recovery at 50% or more fault, while South Carolina bars recovery at 51% or more. Filing deadlines are two years in Georgia (O.C.G.A. SS 9-3-33) and three years in South Carolina (S.C. Code SS 15-3-530). Thorough medical documentation and consistent treatment records are critical to maximizing a whiplash claim."
+                "_roden_key_takeaways": "Whiplash injuries range from Grade 0 (no symptoms) to Grade IV (fractures or dislocations), and compensation covers medical bills, lost wages, pain and suffering, and diminished quality of life. Georgia's modified comparative fault rule (O.C.G.A. § 51-12-33) bars recovery at 50% or more fault, while South Carolina bars recovery at 51% or more (Nelson v. Concrete Supply Co.). Filing deadlines are two years in Georgia (O.C.G.A. § 9-3-33) and three years in South Carolina (S.C. Code § 15-3-530). Thorough medical documentation and consistent treatment records are critical to maximizing a whiplash claim.",
+                "_roden_last_reviewed": "2026-09-24"
             }
         },
         "/blog/calculating-pain-and-suffering-after-a-charleston-pedestrian-accident/": {
@@ -3873,13 +3874,13 @@
             "type": "post",
             "status": "publish",
             "title": "How Dangerous Are the Tools in Your Garage?",
-            "excerpt": "The household and garage tools that send the most people to the emergency room, and when a defective tool becomes a product liability claim.",
+            "excerpt": "The household and garage tools that send tens of thousands of people to the emergency room each year, and when a defective tool becomes a product liability claim.",
             "meta": {
-                "_roden_author_attorney": "Eric Roden",
+                "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "Which garage tool causes the most serious injuries?",
-                        "answer": "The table saw is arguably the most dangerous tool a person can own. Its high-speed rotating blade presents a risk of laceration and amputation, and table saws account for thousands of injuries every year."
+                        "answer": "The table saw is arguably the most dangerous tool a person can own. Its high-speed rotating blade presents a risk of laceration and amputation, and CPSC estimates about 30,600 emergency-room blade-contact injuries a year (2010-2021 data); in 2017, about 2,800 of 26,500 were amputations."
                     },
                     {
                         "question": "What injuries do common power tools cause?",
@@ -3887,17 +3888,19 @@
                     },
                     {
                         "question": "Why do safety mechanisms not prevent these injuries?",
-                        "answer": "Because they do not address the most common failure. Many users skip protective eyewear, and material thrown into the eye blinds them at the moment they most need to see the rotating blade to keep clear of it."
+                        "answer": "Because most injuries are direct hand contact with the blade: in CPSC's 2017 study, 96.4 percent of table saw blade-contact injuries involved the finger, and CPSC found no downward trend from 2004 to 2021 despite blade guards and riving knives. That is why CPSC has proposed requiring blade-stopping technology."
                     },
                     {
                         "question": "Can I bring a claim if a defective tool injured me?",
-                        "answer": "You may be able to. Where a tool was defectively designed or manufactured, or lacked adequate warnings, a product liability claim can target the manufacturer. Preserve the tool exactly as it is after the injury."
+                        "answer": "You may be able to. Where a tool was defectively designed or manufactured, or lacked adequate warnings, a product liability claim can target the manufacturer: in Georgia the manufacturer is strictly liable (O.C.G.A. § 51-1-11); in South Carolina any seller of a defective, unreasonably dangerous product is (S.C. Code § 15-73-10). Preserve the tool exactly as it is after the injury."
                     },
                     {
-                        "question": "How long do I have to file a product liability claim in Georgia?",
-                        "answer": "Georgia generally allows two years from the date of injury to file a personal injury lawsuit (O.C.G.A. § 9-3-33). Keeping the tool, its packaging and any manual is what makes such a claim provable."
+                        "question": "How long do I have to file a product liability claim in Georgia or South Carolina?",
+                        "answer": "Georgia generally allows two years from the date of injury to file a personal injury lawsuit (O.C.G.A. § 9-3-33), but no strict liability action may be brought more than ten years after the product's first sale (O.C.G.A. § 51-1-11(b)(2)), and that bar also covers negligence claims against the manufacturer, with narrow exceptions (O.C.G.A. § 51-1-11(c)). South Carolina allows three years (S.C. Code § 15-3-530(5)), running from when you knew or reasonably should have known of the claim (S.C. Code § 15-3-535), and has no statute of repose for product claims. Keeping the tool, its packaging and any manual is what makes such a claim provable."
                     }
-                ]
+                ],
+                "_roden_key_takeaways": "Keep the tool that injured you, its packaging and any manual, and act quickly: Georgia generally allows two years to sue (O.C.G.A. § 9-3-33) and bars strict liability claims more than ten years after a product's first sale (O.C.G.A. § 51-1-11(b)(2)), while South Carolina allows three years (S.C. Code § 15-3-530(5)) with no repose period. Georgia holds the manufacturer strictly liable for a defective tool, but not a seller that did not make it (O.C.G.A. § 51-1-11.1). South Carolina holds any seller of a defective, unreasonably dangerous product strictly liable, retailers included (S.C. Code § 15-73-10). CPSC estimates about 30,600 emergency-room table saw blade-contact injuries a year (2010-2021 data), 96.4 percent of them to the finger in its 2017 study. The CDC reports about 36,000 emergency-room visits a year for chainsaw injuries.",
+                "_roden_last_reviewed": "2026-09-24"
             }
         },
         "/blog/dangers-of-emotional-driving-in-savannah-ga/": {
@@ -9252,7 +9255,7 @@
             "title": "Negligence vs. Gross Negligence in a Car Accident Case: Georgia and South Carolina Laws",
             "excerpt": "Ordinary negligence is carelessness; gross negligence is conscious disregard. How that difference changes a car accident claim in Georgia and South Carolina.",
             "meta": {
-                "_roden_author_attorney": "Eric Roden",
+                "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "What is the legal definition of negligence in a car accident?",
@@ -9264,22 +9267,23 @@
                     },
                     {
                         "question": "Can I get punitive damages for gross negligence in Georgia?",
-                        "answer": "Yes. Under O.C.G.A. § 51-12-5.1, Georgia allows punitive damages when the defendant's conduct shows willful misconduct, malice, or conscious indifference to consequences. Punitive damages are capped at $250,000 in most cases, but the cap is removed for DUI-related accidents."
+                        "answer": "Not for gross negligence by itself. Georgia allows punitive damages only on clear and convincing evidence of willful misconduct, malice, fraud, wantonness, oppression or an entire want of care showing conscious indifference to consequences (O.C.G.A. § 51-12-5.1(b)); the Supreme Court of Georgia has held that negligence, even gross negligence, is not enough (Colonial Pipeline Co. v. Brown, 258 Ga. 115 (1988)). Where punitive damages are awarded they are capped at $250,000 in most cases, with no cap where the defendant intended harm or acted while substantially impaired by alcohol or drugs (§ 51-12-5.1(f)), or in product liability cases (§ 51-12-5.1(e))."
                     },
                     {
                         "question": "What is the punitive damages cap in South Carolina?",
-                        "answer": "Under S.C. Code § 15-32-530, South Carolina caps punitive damages at the greater of three times compensatory damages or $500,000. The cap does not apply when the defendant was under the influence of alcohol or drugs, committed a felony, or acted with specific intent to harm."
+                        "answer": "Under S.C. Code § 15-32-530, South Carolina caps punitive damages at the greater of three times compensatory damages or $500,000, a floor indexed for inflation each year ($739,245 in 2026). The cap does not apply when the defendant intended to harm the plaintiff and did, pled guilty to or was convicted of a felony arising from the same conduct, or acted while impaired by alcohol or drugs to the degree that their judgment was substantially impaired (§ 15-32-530(C))."
                     },
                     {
                         "question": "Does Georgia or South Carolina have a more favorable comparative fault rule?",
-                        "answer": "South Carolina is slightly more favorable. Georgia bars recovery if you are 50% or more at fault (O.C.G.A. § 51-12-33), while South Carolina allows recovery as long as you are less than 51% at fault. A plaintiff who is exactly 50% at fault can recover in South Carolina but not in Georgia."
+                        "answer": "South Carolina is slightly more favorable. Georgia bars recovery if you are 50% or more at fault (O.C.G.A. § 51-12-33), while South Carolina allows recovery as long as you are less than 51% at fault (Nelson v. Concrete Supply Co.). A plaintiff who is exactly 50% at fault can recover in South Carolina but not in Georgia."
                     },
                     {
                         "question": "What is the statute of limitations for negligence claims?",
                         "answer": "In Georgia, the personal injury statute of limitations is 2 years from the date of injury under O.C.G.A. § 9-3-33. In South Carolina, you have 3 years under S.C. Code § 15-3-530. These deadlines apply to both ordinary negligence and gross negligence claims."
                     }
                 ],
-                "_roden_key_takeaways": "Ordinary negligence is the failure to exercise reasonable care, while gross negligence involves conscious disregard for others' safety. Georgia recognizes three degrees of negligence under O.C.G.A. § 51-1-4 and caps punitive damages at $250,000 under O.C.G.A. § 51-12-5.1, except for DUI cases. South Carolina caps punitive damages at three times compensatory damages or $500,000 under S.C. Code § 15-32-530. Georgia's comparative fault threshold is 50% (O.C.G.A. § 51-12-33); South Carolina's is 51%."
+                "_roden_key_takeaways": "Ordinary negligence is the failure to exercise reasonable care, while gross negligence involves conscious disregard for others' safety. Georgia recognizes three degrees of negligence under O.C.G.A. §§ 51-1-2 through 51-1-4 (§ 51-1-4 defines gross negligence). In Georgia, negligence, even gross negligence, does not support punitive damages; O.C.G.A. § 51-12-5.1(b) requires clear and convincing evidence of wilful misconduct, malice, fraud, wantonness, oppression or conscious indifference. Georgia caps punitive damages at $250,000 under O.C.G.A. § 51-12-5.1, with no cap where the defendant intended harm or was substantially impaired by alcohol or drugs, or in product liability cases. South Carolina requires wilful, wanton or reckless conduct (S.C. Code § 15-32-520(D)) and caps punitive damages at the greater of three times compensatory damages or $500,000 (indexed each year; $739,245 in 2026) under S.C. Code § 15-32-530. Georgia's comparative fault threshold is 50% (O.C.G.A. § 51-12-33); South Carolina's is 51% (Nelson v. Concrete Supply Co.).",
+                "_roden_last_reviewed": "2026-09-24"
             }
         },
         "/blog/nerve-damage-after-charleston-car-crash/": {

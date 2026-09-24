@@ -1,0 +1,490 @@
+{
+  "postId": 1756,
+  "slug": "negligence-vs-gross-negligence",
+  "liveUrl": "https://rodenlaw.com/blog/negligence-vs-gross-negligence/",
+  "verifiedAt": "2026-09-24",
+  "reviewerByJurisdiction": "Two-state post that states South Carolina law: reviewer must be Graeham C. Gillin, never Eric Roden.",
+  "sourcingNote": "law.justia.com returned HTTP 403 to curl and WebFetch on 2026-09-24; every Georgia statute and the Colonial Pipeline opinion were retrieved through the firecrawl CLI, which reached the pages. Each Justia URL below was confirmed to resolve at its year-less canonical path and to show the 2025 Code of Georgia breadcrumb. South Carolina statutes were read on www.scstatehouse.gov; Etheredge was read on sccourts.org. S.C. Code §§ 15-32-520 and 15-32-530 and the 2026 indexed floor are reused from facts-1663.json (verified 2026-09-23).",
+  "verifiedClaims": [
+    {
+      "surface": "body",
+      "claim": "The difference between <strong>ordinary negligence</strong> and <strong>gross negligence</strong> can dramatically affect the type and amount of compensation you recover — including whether you qualify for <a href=\"https://www.law.cornell.edu/wex/punitive_damages\" target=\"_blank\" rel=\"noopener\">punitive damages</a>.",
+      "verdict": "update",
+      "currentValue": "In Georgia, proving gross negligence does not by itself qualify a plaintiff for punitive damages: 'Negligence, even gross negligence, is inadequate to support a punitive damage award' (Colonial Pipeline Co. v. Brown, 258 Ga. 115, 118-119 (1988)). In South Carolina the punitive threshold is 'wilful, wanton, or reckless conduct' (S.C. Code § 15-32-520(D)). Reword to 'including whether punitive damages come into play' and let the state sections carry the nuance.",
+      "sourceName": "Colonial Pipeline Co. v. Brown, 258 Ga. 115, 365 S.E.2d 827 (Ga. Mar. 17, 1988); S.C. Code § 15-32-520(D)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/1988/44925-1.html",
+      "retrievedAt": "2026-09-24",
+      "note": "The Cornell Wex link resolves (HTTP 200) and law.cornell.edu is on the outbound allowlist; keep the link."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Negligence</strong> is the legal term for the failure to exercise reasonable care under the circumstances.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-1-2: 'ordinary diligence is that degree of care which is exercised by ordinarily prudent persons under the same or similar circumstances ... The absence of such diligence is termed ordinary negligence.'",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-2/",
+      "retrievedAt": "2026-09-24",
+      "note": "Matches the Georgia statutory definition; the reasonably-prudent-person formulation is the same common-law standard South Carolina applies."
+    },
+    {
+      "surface": "body",
+      "claim": "the plaintiff must establish four elements",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Black-letter negligence elements (duty, breach, causation, damages); consistent with O.C.G.A. § 51-1-2 and the reasonable-care standard applied in both states",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "No figure or statute asserted in the four-element section. Nothing to change."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Gross negligence</strong> goes beyond a simple failure to use reasonable care. It represents a <strong>conscious and voluntary disregard of the need to use reasonable care</strong>, which is likely to cause foreseeable grave injury or harm to persons, property, or both.",
+      "verdict": "update",
+      "currentValue": "Neither state defines gross negligence that way. Georgia: gross negligence is the absence of slight diligence, 'that degree of care which every man of common sense, however inattentive he may be, exercises under the same or similar circumstances' (O.C.G.A. § 51-1-4). South Carolina: 'Gross negligence is the intentional conscious failure to do something which it is incumbent upon one to do or the doing of a thing intentionally that one ought not to do. It is the failure to exercise slight care' (Etheredge v. Richland School District One, Op. No. 25159 (S.C. June 26, 2000), quoting Clyburn v. Sumter County School District Seventeen, 317 S.C. 50, 451 S.E.2d 885 (1994)).",
+      "sourceName": "O.C.G.A. § 51-1-4 (2025 Code); Etheredge v. Richland School District One, 341 S.C. 307, 534 S.E.2d 289 (S.C. 2000)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-4/",
+      "retrievedAt": "2026-09-24",
+      "note": "The 'conscious and voluntary disregard ... foreseeable grave injury' wording is the generic Black's Law / Wex definition, not Georgia's or South Carolina's. Replace with the two state definitions; the 'reckless disregard' sentence that follows can stay as a description of how the concept is commonly explained."
+    },
+    {
+      "surface": "body",
+      "claim": "The distinction matters because gross negligence can unlock additional legal remedies that are not available in ordinary negligence claims, most notably <strong>punitive damages</strong>.",
+      "verdict": "update",
+      "currentValue": "Georgia: gross negligence alone does not unlock punitive damages; § 51-12-5.1(b) requires clear and convincing evidence of 'willful misconduct, malice, fraud, wantonness, oppression, or that entire want of care which would raise the presumption of conscious indifference to consequences,' and the Supreme Court of Georgia holds that 'Negligence, even gross negligence, is inadequate to support a punitive damage award' (Colonial Pipeline). South Carolina: punitive damages require 'wilful, wanton, or reckless conduct' (§ 15-32-520(D)); gross negligence is not the statutory term.",
+      "sourceName": "O.C.G.A. § 51-12-5.1(b) and Justia annotations (Colonial Pipeline Co. v. Brown, 258 Ga. 115 (1988); Troutman v. B.C.B. Co., 209 Ga. App. 166 (1993); Poverty Destroyed Forever v. Visio Fin. Servs., 360 Ga. App. 691 (2021)); S.C. Code § 15-32-520(D)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Most consequential error on the page and it repeats in the comparison table, the Georgia punitive section, the 'Proving Punitive Damages' section and faq:2. Rewrite: 'The distinction matters because the aggravated conduct that makes negligence gross is often the same evidence that supports punitive damages — but in Georgia gross negligence by itself is not enough; the law requires wilful misconduct, wantonness or an entire want of care showing conscious indifference (O.C.G.A. § 51-12-5.1(b)). South Carolina requires wilful, wanton or reckless conduct (S.C. Code § 15-32-520(D)).'"
+    },
+    {
+      "surface": "body",
+      "claim": "It can also affect immunity protections, caps on damages, and the application of certain legal defenses.",
+      "verdict": "update",
+      "currentValue": "Immunity: yes in South Carolina — the Tort Claims Act keeps a governmental entity immune for losses from its 'responsibility or duty including but not limited to supervision, protection, control, confinement, or custody of any student, patient, prisoner, inmate, or client of any governmental entity, except when the responsibility or duty is exercised in a grossly negligent manner' (S.C. Code § 15-78-60(25)); items (30) and (31) also turn on gross negligence. Caps on damages: neither state's punitive cap turns on gross negligence (Georgia § 51-12-5.1(e)-(g): product liability, specific intent, substantial impairment; South Carolina § 15-32-530(B)-(C): financial-gain motive, felony, intent to harm, impairment). Drop 'caps on damages' or tie the sentence to immunity only.",
+      "sourceName": "S.C. Code § 15-78-60(25), (30), (31); O.C.G.A. § 51-12-5.1(e)-(g); S.C. Code § 15-32-530(B)-(C)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Suggested: 'In South Carolina it also decides whether a government entity can be sued at all for how it supervised a student, patient or prisoner (S.C. Code § 15-78-60(25)).'"
+    },
+    {
+      "surface": "body",
+      "claim": "<tr><td><strong>Examples</strong></td><td>Momentary distraction, misjudging a gap in traffic</td><td>Driving 40+ mph over the limit, street racing, DUI at extreme BAC</td></tr>",
+      "verdict": "update",
+      "currentValue": "No statute or opinion in either state sets a miles-over-the-limit threshold for gross negligence; whether conduct is grossly negligent is a fact question. Keep the qualitative examples (extreme speeding, street racing, driving while heavily intoxicated) and remove the '40+ mph' figure.",
+      "sourceName": "O.C.G.A. § 51-1-4; Etheredge (S.C. 2000) ('Gross negligence ordinarily is a mixed question of law and fact')",
+      "sourceUrl": "https://www.sccourts.org/opinions/htmlfiles/SC/25159.htm",
+      "retrievedAt": "2026-09-24",
+      "note": "Comparison-table Examples cell. Illustrative, but the number reads as a rule."
+    },
+    {
+      "surface": "body",
+      "claim": "<tr><td><strong>Punitive damages</strong></td><td>Generally no</td><td>Yes, if proven by clear and convincing evidence</td></tr>",
+      "verdict": "update",
+      "currentValue": "Ordinary negligence: no. Gross negligence: not by itself — Georgia requires wilful misconduct, malice, fraud, wantonness, oppression or an entire want of care showing conscious indifference (§ 51-12-5.1(b); Colonial Pipeline: 'Negligence, even gross negligence, is inadequate'); South Carolina requires wilful, wanton or reckless conduct (§ 15-32-520(D)). Both by clear and convincing evidence.",
+      "sourceName": "O.C.G.A. § 51-12-5.1(b); Colonial Pipeline Co. v. Brown, 258 Ga. 115 (1988); S.C. Code § 15-32-520(D)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/1988/44925-1.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Change the gross-negligence cell to 'Only if the conduct also rises to wilful, wanton or reckless (SC) or wanton / conscious indifference (GA), proven by clear and convincing evidence'."
+    },
+    {
+      "surface": "body",
+      "claim": "<tr><td><strong>Burden of proof</strong></td><td>Preponderance of the evidence</td><td>Clear and convincing evidence (for punitive damages)</td></tr>",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-5.1(b); S.C. Code § 15-33-135 ('the plaintiff has the burden of proving such damages by clear and convincing evidence'); S.C. Code § 15-32-520(D)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c033.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Accurate as parenthesised: liability for negligence, gross or ordinary, is still proven by a preponderance; only the punitive claim carries the clear-and-convincing burden."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia law explicitly recognizes three degrees of negligence under <strong>O.C.G.A. § 51-1-4</strong>: slight negligence (failure to exercise extraordinary care), ordinary negligence (failure to exercise ordinary care), and gross negligence (failure to exercise even slight care).",
+      "verdict": "update",
+      "currentValue": "The three degrees are spread across three sections, not one: § 51-1-2 (ordinary diligence / ordinary negligence), § 51-1-3 (extraordinary diligence / slight negligence: 'The absence of such extraordinary diligence is termed slight negligence'), and § 51-1-4 (slight diligence / gross negligence: 'The absence of such care is termed gross negligence'). The three definitions as the post states them are correct.",
+      "sourceName": "O.C.G.A. §§ 51-1-2, 51-1-3, 51-1-4 (2025 Code of Georgia, via Justia)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-4/",
+      "retrievedAt": "2026-09-24",
+      "note": "Cite as 'O.C.G.A. §§ 51-1-2 through 51-1-4' and keep § 51-1-4 as the gross-negligence citation. Same fix in the key takeaways."
+    },
+    {
+      "surface": "body",
+      "claim": "Under <strong>O.C.G.A. § 51-12-33</strong>, Georgia follows a <strong>modified comparative fault</strong> system. You can recover damages as long as you are less than 50% at fault for the accident. Your recovery is reduced by your percentage of fault.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(a), (g): 'the plaintiff shall not be entitled to receive any damages if the plaintiff is 50 percent or more responsible for the injury or damages claimed'",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "Reused from facts-1663 / facts-2647 (verified 2026-09-23); matches the writer-profile jurisdiction table. The follow-on sentence about the type of negligence influencing a jury's allocation is commentary, not a legal claim."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia allows punitive damages under <strong>O.C.G.A. § 51-12-5.1</strong> when the defendant's conduct shows \"willful misconduct, malice, fraud, wantonness, oppression, or that entire want of care which would raise the presumption of conscious indifference to consequences.\"",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-5.1(b) (verbatim match)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Quote is verbatim. Optionally add 'by clear and convincing evidence' and the pinpoint '(b)'."
+    },
+    {
+      "surface": "body",
+      "claim": "This standard effectively requires proof of gross negligence or worse.",
+      "verdict": "update",
+      "currentValue": "It requires more than gross negligence. 'Punitive damages cannot be imposed without a finding of some form of culpable conduct. Negligence, even gross negligence, is inadequate to support a punitive damage award.' (Colonial Pipeline Co. v. Brown, 258 Ga. 115, 118-119 (1988)); the Justia annotations to § 51-12-5.1 collect the same rule from Troutman v. B.C.B. Co., 209 Ga. App. 166 (1993), Tower Fin. Servs. v. Smith, 204 Ga. App. 910 (1992), and Poverty Destroyed Forever v. Visio Fin. Servs., 360 Ga. App. 691 (2021).",
+      "sourceName": "Colonial Pipeline Co. v. Brown, 258 Ga. 115, 365 S.E.2d 827 (1988); Justia annotations to O.C.G.A. § 51-12-5.1 ('Culpable conduct required')",
+      "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/1988/44925-1.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Replace with: 'This standard requires more than gross negligence — the Supreme Court of Georgia has held that negligence, even gross negligence, will not support punitive damages (Colonial Pipeline Co. v. Brown, 258 Ga. 115 (1988)). The conduct must show wantonness or a conscious indifference to consequences.'"
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia caps punitive damages at <strong>$250,000</strong> in most cases, though the cap does not apply when the defendant acted with the specific intent to cause harm or was under the influence of alcohol or drugs (O.C.G.A. § 51-12-5.1(f)(1)).",
+      "verdict": "update",
+      "currentValue": "$250,000 under § 51-12-5.1(g). Subsection (f) is a single paragraph — there is no '(f)(1)'. It lifts the cap, against the active tort-feasor only, where the defendant 'acted, or failed to act, with the specific intent to cause harm, or ... acted or failed to act while under the influence of alcohol, drugs other than lawfully prescribed drugs administered in accordance with prescription, or any intentionally consumed glue, aerosol, or other toxic vapor to that degree that his or her judgment is substantially impaired.' Subsection (e) separately removes the cap in every product-liability case.",
+      "sourceName": "O.C.G.A. § 51-12-5.1(e), (f), (g) (2025 Code of Georgia, via Justia)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Fix the pinpoint to '(f)', add 'to the degree that their judgment was substantially impaired', and mention the product-liability exception in (e). Same pinpoint error appears in the DUI section below."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia's personal injury statute of limitations is <strong>2 years</strong> from the date of injury under <strong>O.C.G.A. § 9-3-33</strong>.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-33: 'actions for injuries to the person shall be brought within two years after the right of action accrues'",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "Reused from facts-2647 (verified 2026-09-23); matches the writer-profile jurisdiction table."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina courts define gross negligence as the failure to exercise slight care — essentially the same concept as Georgia's framework.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Etheredge v. Richland School District One, Op. No. 25159 (S.C. June 26, 2000): 'It is the failure to exercise slight care' (quoting Clyburn v. Sumter County School District Seventeen, 317 S.C. 50, 451 S.E.2d 885 (1994)); O.C.G.A. § 51-1-4",
+      "sourceUrl": "https://www.sccourts.org/opinions/htmlfiles/SC/25159.htm",
+      "retrievedAt": "2026-09-24",
+      "note": "Correct. Both states anchor gross negligence to the absence of slight care."
+    },
+    {
+      "surface": "body",
+      "claim": "The South Carolina Supreme Court has described gross negligence as \"the failure to exercise the degree of care which even the most careless person would exercise.\"",
+      "verdict": "drop",
+      "currentValue": "",
+      "sourceName": "Etheredge v. Richland School District One (S.C. 2000); Clyburn v. Sumter County School District Seventeen, 317 S.C. 50 (1994)",
+      "sourceUrl": "https://www.sccourts.org/opinions/htmlfiles/SC/25159.htm",
+      "retrievedAt": "2026-09-24",
+      "note": "The quoted sentence does not appear in Etheredge or Clyburn, and the only hits for that phrasing are secondary sources paraphrasing a Louisiana formulation. Replace with the court's actual words: 'Gross negligence is the intentional conscious failure to do something which it is incumbent upon one to do or the doing of a thing intentionally that one ought not to do. It is the failure to exercise slight care' (Etheredge v. Richland School District One, 341 S.C. 307 (2000), quoting Clyburn v. Sumter County School District Seventeen, 317 S.C. 50 (1994)). The court also calls it 'a relative term' meaning 'the absence of care that is necessary under the circumstances' (Hollins v. Richland County School District One, 310 S.C. 486 (1993))."
+    },
+    {
+      "surface": "body",
+      "claim": "This standard applies across all personal injury claims, including <a href=\"/practice-areas/wrongful-death-lawyers/\">wrongful death cases</a> and <a href=\"/practice-areas/premises-liability-lawyers/\">premises liability claims</a>.",
+      "verdict": "update",
+      "currentValue": "The gross-negligence definition is the same wherever it is invoked, but it is not an element of an ordinary crash claim — ordinary negligence suffices. It becomes the operative threshold where a statute makes it one, most notably the Tort Claims Act, under which a governmental entity is not liable for its supervision, protection, control, confinement or custody of a student, patient, prisoner, inmate or client 'except when the responsibility or duty is exercised in a grossly negligent manner' (S.C. Code § 15-78-60(25)); Etheredge and Clyburn are both § 15-78-60(25) school cases.",
+      "sourceName": "S.C. Code § 15-78-60(25); Etheredge v. Richland School District One (S.C. 2000)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Keep the internal links; reword to 'The same definition applies whenever gross negligence is at issue — for example, a claim against a school district or other government entity for how it supervised someone in its care, where the Tort Claims Act allows recovery only for gross negligence (S.C. Code § 15-78-60(25)).'"
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina also uses a <strong>modified comparative fault</strong> system, but with a slightly different threshold: you can recover damages as long as you are less than <strong>51% at fault</strong>. This means a plaintiff who is 50% at fault can still recover in South Carolina but would be barred in Georgia.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991): 'a plaintiff in a negligence action may recover damages if his or her negligence is not greater than that of the defendant'; O.C.G.A. § 51-12-33(g)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Reused from facts-1663 / facts-2647. Correct and correctly uncited to any statute. If a citation is added it must be Nelson v. Concrete Supply Co., never § 15-38-15 (profile rule; SC pack rule 'nelson-bar-miscited-to-15-38-15')."
+    },
+    {
+      "surface": "body",
+      "claim": "Under <strong>S.C. Code § 15-32-520(D)</strong>, South Carolina allows punitive damages only where the plaintiff proves that the harm was the result of the defendant's \"wilful, wanton, or reckless conduct.\" The burden of proof is <strong>clear and convincing evidence</strong> (S.C. Code § 15-33-135).",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-32-520(D) ('wilful, wanton, or reckless conduct', clear and convincing evidence); S.C. Code § 15-33-135 ('In any civil action where punitive damages are claimed, the plaintiff has the burden of proving such damages by clear and convincing evidence.' HISTORY: 1988 Act No. 432, § 4)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c033.php",
+      "retrievedAt": "2026-09-24",
+      "note": "§ 15-33-135 verified verbatim on scstatehouse.gov (Title 15, Chapter 33, 'Punitive damages: burden of proof'). Both citations are correct; § 15-32-520(D) restates the same standard."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina caps punitive damages at the <strong>greater of three times compensatory damages or $500,000</strong> (S.C. Code § 15-32-530), though the cap does not apply in cases involving DUI, felony conduct, or when the defendant acted with specific intent to harm.",
+      "verdict": "update",
+      "currentValue": "Greater of three times compensatory damages or $500,000 under § 15-32-530(A), but (D) indexes the dollar floor to CPI every year — $739,245 for 2026 (RFA memo 2026-02-03). The cap is removed under (C) where (1) the defendant intended to harm the claimant and did, (2) the defendant 'has pled guilty to or been convicted of a felony arising out of the same act or course of conduct', or (3) the defendant acted 'while under the influence of alcohol, drugs ... to the degree that the defendant's judgment is substantially impaired.' Conduct that merely could support a felony conviction does not remove the cap; under (B)(2) it raises the cap to the greater of four times compensatory damages or $2,000,000.",
+      "sourceName": "S.C. Code § 15-32-530(A), (B), (C), (D); S.C. RFA memo 'Punitive Damage Award Limitation – Inflation Component', 2026-02-03",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Reused from facts-1663 (verified 2026-09-23). Add '(indexed each year; $739,245 in 2026)'; change 'DUI' to 'substantial impairment by alcohol or drugs' and 'felony conduct' to 'a felony plea or conviction arising from the same conduct'. The site's SC pack rule 'sc-punitive-bac-threshold' bans any BAC figure here."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina provides a <strong>3-year statute of limitations</strong> for personal injury claims under <strong>S.C. Code § 15-3-530</strong>.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-3-530(5): 'Within three years: ... an action for assault, battery, or any injury to the person or rights of another, not arising on contract'",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Reused from facts-2647 (verified 2026-09-23); matches the writer-profile jurisdiction table."
+    },
+    {
+      "surface": "body",
+      "claim": "A driver with a BAC of 0.15 or higher (nearly double the legal limit) causes a head-on collision",
+      "verdict": "update",
+      "currentValue": "The per se limit is 0.08 in both states: O.C.G.A. § 40-6-391(a)(5) ('alcohol concentration is 0.08 grams or more') and S.C. Code § 56-5-2933(A) ('eight one-hundredths of one percent or more'). 0.15 is 1.875 times that, so 'nearly double' is arithmetically fair, but neither state ties gross negligence or punitive damages to any BAC figure, and the South Carolina punitive-cap exception is qualitative (substantial impairment, § 15-32-530(C)(3)). Reword to 'A driver well over the 0.08 legal limit causes a head-on collision'.",
+      "sourceName": "O.C.G.A. § 40-6-391(a)(5) (2025 Code, via Justia); S.C. Code § 56-5-2933(A)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-24",
+      "note": "In South Carolina 0.15 is an administrative-suspension and ignition-interlock threshold (§§ 56-5-2950, -2951, -2941), not a civil standard. Removing the figure keeps the example clear of the SC pack rule 'sc-punitive-bac-threshold'."
+    },
+    {
+      "surface": "body",
+      "claim": "A <a href=\"/practice-areas/truck-accident-lawyers/\">commercial truck driver</a> continues driving after exceeding federal hours-of-service limits despite extreme fatigue",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "49 CFR Part 395 (FMCSA hours-of-service rules)",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "Illustrative; the federal limits exist. The eCFR page redirected curl to a bot-challenge page, so no URL is offered; the post does not link it and does not need to."
+    },
+    {
+      "surface": "body",
+      "claim": "A driver going 10 mph over the speed limit might be ordinarily negligent, while a driver going 50 mph over might be grossly negligent.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Etheredge (S.C. 2000) ('Gross negligence ordinarily is a mixed question of law and fact'); O.C.G.A. § 40-6-390(a) (reckless driving: 'reckless disregard for the safety of persons or property'); S.C. Code § 56-5-2920 ('wilful or wanton disregard for the safety of persons or property')",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-15/section-40-6-390/",
+      "retrievedAt": "2026-09-24",
+      "note": "Hedged with 'might' and followed by 'Context matters'; reads as illustration, not a rule. Acceptable."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>punitive damages are designed to punish the defendant and deter similar conduct</strong> in the future",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-5.1(c): 'solely to punish, penalize, or deter a defendant'",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "In both Georgia and South Carolina, punitive damages require proof by <strong>clear and convincing evidence</strong> — a higher standard than the \"preponderance of the evidence\" used for compensatory damages. This means you must show that it is highly probable that the defendant's conduct rose to the level of gross negligence, willful misconduct, or reckless disregard.",
+      "verdict": "update",
+      "currentValue": "The first sentence is correct (§ 51-12-5.1(b); § 15-32-520(D); § 15-33-135). The second is wrong on 'gross negligence': in Georgia the conduct must show wilful misconduct, malice, fraud, wantonness, oppression or an entire want of care raising a presumption of conscious indifference, and gross negligence is expressly inadequate (Colonial Pipeline); in South Carolina it must be wilful, wanton or reckless.",
+      "sourceName": "O.C.G.A. § 51-12-5.1(b); Colonial Pipeline Co. v. Brown, 258 Ga. 115 (1988); S.C. Code §§ 15-32-520(D), 15-33-135",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Delete 'gross negligence' from the list: '... rose to the level of willful misconduct, wantonness or reckless disregard.'"
+    },
+    {
+      "surface": "body",
+      "claim": "In Georgia, the $250,000 cap on punitive damages is removed entirely when the defendant was under the influence (O.C.G.A. § 51-12-5.1(f)(1)). This means DUI-related accident victims can seek unlimited punitive damages in Georgia.",
+      "verdict": "update",
+      "currentValue": "Subsection (f) (no paragraph (1) exists) removes the cap where the defendant acted 'while under the influence of alcohol, drugs other than lawfully prescribed drugs administered in accordance with prescription, or any intentionally consumed glue, aerosol, or other toxic vapor to that degree that his or her judgment is substantially impaired' — and only 'against an active tort-feasor'; 'such damages shall not be the liability of any defendant other than an active tort-feasor.' 'Unlimited' should read 'no statutory cap'.",
+      "sourceName": "O.C.G.A. § 51-12-5.1(f) (2025 Code of Georgia, via Justia)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "Rewrite: 'In Georgia, the $250,000 cap does not apply when the defendant acted while impaired by alcohol or drugs to the degree that their judgment was substantially impaired (O.C.G.A. § 51-12-5.1(f)) — drunk driving is the common case. There is no statutory cap on that award, though it can be recovered only from the impaired driver, not from other defendants.'"
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina similarly removes its punitive damages cap for DUI-related injuries",
+      "verdict": "update",
+      "currentValue": "§ 15-32-530(C)(3): no cap where 'the defendant acted or failed to act while under the influence of alcohol, drugs, other than lawfully prescribed drugs administered in accordance with a prescription, or any intentionally consumed glue, aerosol, or other toxic vapor to the degree that the defendant's judgment is substantially impaired.' The test is substantial impairment, not a DUI charge or conviction.",
+      "sourceName": "S.C. Code § 15-32-530(C)(3)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Reused from facts-1663. Reword to 'where the defendant's judgment was substantially impaired by alcohol or drugs (S.C. Code § 15-32-530(C)(3))'."
+    },
+    {
+      "surface": "body",
+      "claim": "making these cases among the highest-value personal injury claims in both states",
+      "verdict": "drop",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "Value-ranking claim with no primary source. End the sentence after the South Carolina cap exception."
+    },
+    {
+      "surface": "body",
+      "claim": "Building a separate, compelling case for punitive damages that meets the clear and convincing evidence standard in Georgia or South Carolina",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-5.1(b), (d)(1) (punitive damages 'must be specifically prayed for in a complaint' and are decided by the trier of fact first as a separate finding); S.C. Code §§ 15-32-520(D), 15-33-135",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "We handle all cases on a <strong>contingency fee basis — you pay nothing unless we recover money for you</strong>. <a href=\"/contact/\">Contact us today</a> for a free consultation, or call <a href=\"tel:+18447378587\">1-844-RESULTS</a>.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "profiles/writer-profile.md trust signals and phone rule ('1-844-RESULTS is tel:+18447378587')",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "Firm facts. The tel: href matches the profile; this post is not one of the 27 with a transposed number."
+    },
+    {
+      "surface": "excerpt",
+      "claim": "Ordinary negligence is carelessness; gross negligence is conscious disregard. How that difference changes a car accident claim in Georgia and South Carolina.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. §§ 51-1-2, 51-1-4; Etheredge (S.C. 2000) ('intentional conscious failure')",
+      "sourceUrl": "https://www.sccourts.org/opinions/htmlfiles/SC/25159.htm",
+      "retrievedAt": "2026-09-24",
+      "note": "'Conscious disregard' tracks the South Carolina formulation and is a fair shorthand for Georgia's absence of even slight care. No figures; nothing to change."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Ordinary negligence is the failure to exercise reasonable care, while gross negligence involves conscious disregard for others' safety.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. §§ 51-1-2, 51-1-4; Etheredge (S.C. 2000)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-4/",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Georgia recognizes three degrees of negligence under O.C.G.A. § 51-1-4",
+      "verdict": "update",
+      "currentValue": "Georgia recognizes three degrees of negligence under O.C.G.A. §§ 51-1-2 through 51-1-4 (§ 51-1-4 defines gross negligence).",
+      "sourceName": "O.C.G.A. §§ 51-1-2, 51-1-3, 51-1-4",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-4/",
+      "retrievedAt": "2026-09-24",
+      "note": "Same fix as the body. The takeaways box renders above the article."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "caps punitive damages at $250,000 under O.C.G.A. § 51-12-5.1, except for DUI cases",
+      "verdict": "update",
+      "currentValue": "caps punitive damages at $250,000 under O.C.G.A. § 51-12-5.1, with no cap where the defendant intended harm or was substantially impaired by alcohol or drugs, or in product liability cases",
+      "sourceName": "O.C.G.A. § 51-12-5.1(e), (f), (g)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+      "retrievedAt": "2026-09-24",
+      "note": "'Except for DUI cases' omits two of the three exceptions and misstates the third (substantial impairment, not a DUI charge)."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "South Carolina caps punitive damages at three times compensatory damages or $500,000 under S.C. Code § 15-32-530.",
+      "verdict": "update",
+      "currentValue": "South Carolina caps punitive damages at the greater of three times compensatory damages or $500,000 (indexed each year; $739,245 in 2026) under S.C. Code § 15-32-530.",
+      "sourceName": "S.C. Code § 15-32-530(A), (D); RFA memo 2026-02-03",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Add 'the greater of' and the indexing parenthetical; the profile table's wording is 'greater of 3x compensatory or $500,000'."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Georgia's comparative fault threshold is 50% (O.C.G.A. § 51-12-33); South Carolina's is 51%.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(g); Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "Optional: '(Nelson v. Concrete Supply Co.)' after the South Carolina figure; never § 15-38-15."
+    },
+    {
+      "surface": "faq:0",
+      "claim": "Negligence is the failure to exercise reasonable care under the circumstances. In a car accident case, it means a driver did not act as a reasonably prudent person would — such as by speeding, running a red light, or driving distracted — and that failure caused your injuries.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-1-2",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-2/",
+      "retrievedAt": "2026-09-24",
+      "note": ""
+    },
+    {
+      "surface": "faq:1",
+      "claim": "Gross negligence involves a conscious and voluntary disregard for the safety of others, while ordinary negligence is a simple failure to use reasonable care. Gross negligence reflects reckless behavior — such as extreme speeding, DUI at high BAC, or street racing — rather than mere carelessness or inattention.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. §§ 51-1-2, 51-1-4; Etheredge (S.C. 2000): 'intentional conscious failure ... the failure to exercise slight care'",
+      "sourceUrl": "https://www.sccourts.org/opinions/htmlfiles/SC/25159.htm",
+      "retrievedAt": "2026-09-24",
+      "note": "Acceptable as a plain-language answer; no figure asserted. If touched, 'the failure to use even slight care' is the phrase both states share."
+    },
+    {
+      "surface": "faq:2",
+      "claim": "Yes. Under O.C.G.A. § 51-12-5.1, Georgia allows punitive damages when the defendant's conduct shows willful misconduct, malice, or conscious indifference to consequences. Punitive damages are capped at $250,000 in most cases, but the cap is removed for DUI-related accidents.",
+      "verdict": "update",
+      "currentValue": "Not for gross negligence alone. Georgia allows punitive damages only on clear and convincing evidence of willful misconduct, malice, fraud, wantonness, oppression or an entire want of care showing conscious indifference to consequences (O.C.G.A. § 51-12-5.1(b)); the Supreme Court of Georgia has held that negligence, even gross negligence, is not enough (Colonial Pipeline Co. v. Brown, 258 Ga. 115 (1988)). Where punitive damages are awarded they are capped at $250,000 in most cases, with no cap where the defendant intended harm or acted while substantially impaired by alcohol or drugs (§ 51-12-5.1(f)), or in product liability cases (§ 51-12-5.1(e)).",
+      "sourceName": "O.C.G.A. § 51-12-5.1(b), (e), (f), (g); Colonial Pipeline Co. v. Brown, 258 Ga. 115 (1988)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/1988/44925-1.html",
+      "retrievedAt": "2026-09-24",
+      "note": "The question is 'Can I get punitive damages for gross negligence in Georgia?' and the published answer is 'Yes.' Under Colonial Pipeline the answer is no unless the conduct rises further. This answer also publishes as FAQPage structured data, so the wrong answer is published twice. Keep the question; change the answer to open 'Not for gross negligence by itself.'"
+    },
+    {
+      "surface": "faq:3",
+      "claim": "Under S.C. Code § 15-32-530, South Carolina caps punitive damages at the greater of three times compensatory damages or $500,000. The cap does not apply when the defendant was under the influence of alcohol or drugs, committed a felony, or acted with specific intent to harm.",
+      "verdict": "update",
+      "currentValue": "Greater of three times compensatory damages or $500,000, a floor indexed for inflation each year ($739,245 in 2026). The cap does not apply when the defendant intended to harm the plaintiff and did, pled guilty to or was convicted of a felony arising from the same conduct, or acted while impaired by alcohol or drugs to the degree that their judgment was substantially impaired (§ 15-32-530(C)).",
+      "sourceName": "S.C. Code § 15-32-530(A), (C), (D); RFA memo 2026-02-03",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Reused from facts-1663 faq:3. 'Committed a felony' overstates (C)(2), which requires a plea or conviction. Renders into FAQPage structured data."
+    },
+    {
+      "surface": "faq:4",
+      "claim": "South Carolina is slightly more favorable. Georgia bars recovery if you are 50% or more at fault (O.C.G.A. § 51-12-33), while South Carolina allows recovery as long as you are less than 51% at fault. A plaintiff who is exactly 50% at fault can recover in South Carolina but not in Georgia.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(g); Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Correct. Optional Nelson attribution; never § 15-38-15."
+    },
+    {
+      "surface": "faq:5",
+      "claim": "In Georgia, the personal injury statute of limitations is 2 years from the date of injury under O.C.G.A. § 9-3-33. In South Carolina, you have 3 years under S.C. Code § 15-3-530. These deadlines apply to both ordinary negligence and gross negligence claims.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-33; S.C. Code § 15-3-530(5)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Verified in facts-2647; matches the profile table. Neither limitation period distinguishes degrees of negligence."
+    }
+  ],
+  "recommendedEdits": [
+    "Body, 'What Is Gross Negligence?': replace the generic 'conscious and voluntary disregard ... foreseeable grave injury' definition with the two state definitions — Georgia: the absence of slight diligence, 'that degree of care which every man of common sense, however inattentive he may be, exercises' (O.C.G.A. § 51-1-4); South Carolina: 'the intentional conscious failure to do something which it is incumbent upon one to do or the doing of a thing intentionally that one ought not to do. It is the failure to exercise slight care' (Etheredge v. Richland School District One, 341 S.C. 307 (2000), quoting Clyburn v. Sumter County School District Seventeen, 317 S.C. 50 (1994)).",
+    "Body, 'What Is Gross Negligence?' second paragraph, the comparison-table Punitive damages row, the Georgia punitive section ('This standard effectively requires proof of gross negligence or worse'), 'Proving Punitive Damages', and faq:2: state that gross negligence by itself does not support punitive damages in Georgia — 'Negligence, even gross negligence, is inadequate to support a punitive damage award' (Colonial Pipeline Co. v. Brown, 258 Ga. 115 (1988)); the conduct must meet § 51-12-5.1(b). For South Carolina say the statutory threshold is wilful, wanton or reckless conduct (S.C. Code § 15-32-520(D)). faq:2 must stop answering 'Yes.' — open with 'Not for gross negligence by itself.'",
+    "Body, Georgia degrees paragraph and key takeaways: cite the three degrees to O.C.G.A. §§ 51-1-2 through 51-1-4 (ordinary negligence § 51-1-2; slight negligence § 51-1-3; gross negligence § 51-1-4) instead of § 51-1-4 alone.",
+    "Body, Georgia punitive section and DUI section: correct the pinpoint '§ 51-12-5.1(f)(1)' to '§ 51-12-5.1(f)' (subsection (f) has no numbered paragraphs); qualify 'under the influence' as 'to the degree that their judgment was substantially impaired'; note the uncapped award runs only against the active tort-feasor; replace 'unlimited punitive damages' with 'no statutory cap'; add that product liability cases are also uncapped under (e). Same three exceptions in the key takeaways in place of 'except for DUI cases'.",
+    "Body, South Carolina definition paragraph: delete the fabricated quotation 'the failure to exercise the degree of care which even the most careless person would exercise' and use the Etheredge/Clyburn wording; change 'This standard applies across all personal injury claims' to explain where gross negligence is actually the operative threshold — claims against a government entity for supervision, protection, control, confinement or custody under the Tort Claims Act (S.C. Code § 15-78-60(25)). Keep the wrongful-death and premises-liability internal links.",
+    "Body, South Carolina punitive section, key takeaways and faq:3: after '$500,000' add '(indexed each year; $739,245 in 2026)' per § 15-32-530(D) and the RFA memo of 2026-02-03; key takeaways also need 'the greater of'. State the three uncapped cases precisely — intent to harm, a felony plea or conviction arising from the same conduct, and substantial impairment by alcohol or drugs (§ 15-32-530(C)) — in place of 'DUI, felony conduct, or ... specific intent'.",
+    "Body, 'It can also affect immunity protections, caps on damages, and the application of certain legal defenses': drop 'caps on damages' (neither cap turns on gross negligence) and anchor 'immunity protections' to S.C. Code § 15-78-60(25).",
+    "Body, comparison-table Examples cell: remove '40+ mph' (no statute or case sets a speed threshold); keep 'extreme speeding, street racing, driving while heavily intoxicated'.",
+    "Body, gross negligence examples: replace 'BAC of 0.15 or higher (nearly double the legal limit)' with 'well over the 0.08 legal limit' — 0.08 is the per se limit in both states (O.C.G.A. § 40-6-391(a)(5); S.C. Code § 56-5-2933(A)), and no BAC figure belongs near the South Carolina punitive discussion (SC pack rule 'sc-punitive-bac-threshold').",
+    "Body, DUI section: change 'South Carolina similarly removes its punitive damages cap for DUI-related injuries' to 'where the defendant's judgment was substantially impaired by alcohol or drugs (S.C. Code § 15-32-530(C)(3))' and delete the unsourced 'making these cases among the highest-value personal injury claims in both states'.",
+    "Body, intro: soften 'including whether you qualify for punitive damages' to 'including whether punitive damages come into play'; keep the Cornell Wex link (resolves; allowlisted host).",
+    "faq:4 and key takeaways: optionally add '(Nelson v. Concrete Supply Co.)' after the South Carolina 51% figure; never cite § 15-38-15.",
+    "Reviewer meta: record Graeham C. Gillin as reviewer (two-state post stating South Carolina law); do not add an attribution quote on this refresh."
+  ],
+  "statuteCitations": [
+    { "section": "O.C.G.A. § 51-1-2", "name": "Ordinary diligence and ordinary negligence defined", "url": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-2/" },
+    { "section": "O.C.G.A. § 51-1-3", "name": "Extraordinary diligence and slight negligence defined", "url": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-3/" },
+    { "section": "O.C.G.A. § 51-1-4", "name": "Slight diligence and gross negligence defined ('The absence of such care is termed gross negligence')", "url": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-4/" },
+    { "section": "O.C.G.A. § 51-12-5.1", "name": "Punitive damages — clear-and-convincing standard for willful misconduct, malice, fraud, wantonness, oppression or entire want of care (b); product liability uncapped (e); specific-intent and substantial-impairment exceptions, active tort-feasor only (f, a single paragraph); $250,000 cap (g)", "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/" },
+    { "section": "O.C.G.A. § 51-12-33", "name": "Apportionment of damages; plaintiff barred at 50 percent or more (g)", "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/" },
+    { "section": "O.C.G.A. § 9-3-33", "name": "Injuries to the person — two-year limitation", "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/" },
+    { "section": "O.C.G.A. § 40-6-390", "name": "Reckless driving — 'reckless disregard for the safety of persons or property' (not cited in the post; verified for reference)", "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-15/section-40-6-390/" },
+    { "section": "O.C.G.A. § 40-6-391", "name": "Driving under the influence — 0.08 per se limit in (a)(5) (not cited in the post; verified for reference)", "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-15/section-40-6-391/" },
+    { "section": "S.C. Code § 15-32-520", "name": "Punitive damages — clear and convincing evidence of wilful, wanton or reckless conduct (D)", "url": "https://www.scstatehouse.gov/code/t15c032.php" },
+    { "section": "S.C. Code § 15-32-530", "name": "Punitive damages cap — greater of 3x compensatory or $500,000 (A); 4x or $2,000,000 tier (B); uncapped for intent to harm, felony plea or conviction, substantial impairment (C); annual CPI adjustment, $739,245 in 2026 (D)", "url": "https://www.scstatehouse.gov/code/t15c032.php" },
+    { "section": "S.C. Code § 15-33-135", "name": "Punitive damages: burden of proof — 'the plaintiff has the burden of proving such damages by clear and convincing evidence' (1988 Act No. 432, § 4)", "url": "https://www.scstatehouse.gov/code/t15c033.php" },
+    { "section": "S.C. Code § 15-78-60", "name": "Tort Claims Act exceptions — item (25): supervision, protection, control, confinement or custody of a student, patient, prisoner, inmate or client, 'except when the responsibility or duty is exercised in a grossly negligent manner'", "url": "https://www.scstatehouse.gov/code/t15c078.php" },
+    { "section": "S.C. Code § 15-3-530", "name": "Three-year limitation, incl. (5) injury to the person", "url": "https://www.scstatehouse.gov/code/t15c003.php" },
+    { "section": "S.C. Code § 56-5-2920", "name": "Reckless driving — 'wilful or wanton disregard for the safety of persons or property' (not cited in the post; verified for reference)", "url": "https://www.scstatehouse.gov/code/t56c005.php" },
+    { "section": "S.C. Code § 56-5-2933", "name": "Driving with an unlawful alcohol concentration — 'eight one-hundredths of one percent or more' (not cited in the post; verified for reference)", "url": "https://www.scstatehouse.gov/code/t56c005.php" }
+  ],
+  "authoritativeLinks": [
+    { "name": "Colonial Pipeline Co. v. Brown, 258 Ga. 115, 365 S.E.2d 827 (Ga. Mar. 17, 1988) — 'Negligence, even gross negligence, is inadequate to support a punitive damage award'", "url": "https://law.justia.com/cases/georgia/supreme-court/1988/44925-1.html" },
+    { "name": "Etheredge v. Richland School District One, Op. No. 25159, 341 S.C. 307, 534 S.E.2d 289 (S.C. June 26, 2000) — South Carolina gross-negligence definition, quoting Clyburn v. Sumter County School District Seventeen, 317 S.C. 50, 451 S.E.2d 885 (1994) and Hollins v. Richland County School District One, 310 S.C. 486 (1993)", "url": "https://www.sccourts.org/opinions/htmlfiles/SC/25159.htm" },
+    { "name": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (S.C. 1991) — modified comparative negligence; plaintiff recovers if negligence 'not greater than' the defendant's", "url": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html" },
+    { "name": "S.C. RFA memo, Punitive Damage Award Limitation – Inflation Component, 2026-02-03 ($739,245 for 2026)", "url": "https://rfa.sc.gov/media/11478" },
+    { "name": "S.C. Revenue and Fiscal Affairs Office — Inflation Adjustments for Legal Proceedings", "url": "https://rfa.sc.gov/page/data-research/inflation-adjustments-legal-proceedings" },
+    { "name": "Legal Information Institute, Cornell Law School — Wex: punitive damages (the post's existing outbound link; resolves)", "url": "https://www.law.cornell.edu/wex/punitive_damages" }
+  ]
+}

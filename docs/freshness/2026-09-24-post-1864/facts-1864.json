@@ -1,0 +1,277 @@
+{
+  "postId": 1864,
+  "slug": "dangerous-tools-garage",
+  "liveUrl": "https://rodenlaw.com/blog/dangerous-tools-garage/",
+  "verifiedAt": "2026-09-24",
+  "reviewerByJurisdiction": "Live byline is Eric Roden. If the refresh stamps South Carolina law (recommended below), the reviewer must be Graeham C. Gillin, never Eric Roden (same rule applied on run-1663).",
+  "sourceAccessNotes": "law.justia.com and cdc.gov/niosh returned 403 to WebFetch and curl; statute and NIOSH text was retrieved with the firecrawl CLI and saved under scratchpad/fresh/run-1864/src/. rodenlaw.com returned 403 to curl (WAF) but the live page rendered through WebFetch; the five internal practice-area links were NOT individually verified. data/statistics.json has no tool, ladder, saw, nail-gun or chainsaw facts; every figure below is new to the registry.",
+  "verifiedClaims": [
+    {
+      "surface": "body",
+      "claim": "Tool related accidents can result in amputation, puncture wounds, brain injury, broken bones, burn injury, and even death.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "CPSC, Safety Standard Addressing Blade-Contact Injuries on Table Saws, SNPR, 88 FR 74909 (Nov. 1, 2023) (lacerations, fractures, amputations); NIOSH Pub. 2011-202 (severe nail gun injuries have led to construction worker deaths); NIOSH Pub. 2009-113 (drill electrocution fatality)",
+      "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2023-11-01/html/2023-23898.htm",
+      "retrievedAt": "2026-09-24",
+      "note": "General injury-type list; each type is documented in a primary source. No change."
+    },
+    {
+      "surface": "body",
+      "claim": "The table saw is arguably the most dangerous tool a person can own.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "CPSC SNPR 2023 (Commission preliminarily determined table saws pose an unreasonable risk of blade-contact injury; ~30,600 ED-treated blade-contact injuries per year 2010-2021, no downward trend)",
+      "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2023-11-01/html/2023-23898.htm",
+      "retrievedAt": "2026-09-24",
+      "note": "Hedged opinion ('arguably'); no primary source ranks household tools by danger, so do not harden it. Acceptable as written; 'one of the most dangerous' is safer if touched."
+    },
+    {
+      "surface": "body",
+      "claim": "Despite safety mechanisms such as an automatic shut-off, <a href=\"https://nclnet.org/ncl_fact_sheet_on_saw_safety/\" target=\"_blank\" rel=\"noopener\">table saws account for thousands of injuries every year</a>.",
+      "verdict": "update",
+      "currentValue": "CPSC staff estimate an average of approximately 30,600 table saw blade-contact injuries treated in hospital emergency departments per year from 2010 to 2021 (NEISS), with no statistically significant downward trend. In the 2017 NEISS special study there were an estimated 26,500 ED-treated blade-contact injuries, 96.4 percent involving the finger; about 16,100 were lacerations, 5,500 fractures and 2,800 (10.7 percent) amputations. Including injuries treated outside emergency departments, CPSC estimates about 49,176 medically treated blade-contact injuries a year, with societal costs of about $3.97 billion in 2021.",
+      "sourceName": "CPSC, Safety Standard Addressing Blade-Contact Injuries on Table Saws, Supplemental Notice of Proposed Rulemaking, 88 FR 74909 (Nov. 1, 2023), sections I and IV.A",
+      "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2023-11-01/html/2023-23898.htm",
+      "retrievedAt": "2026-09-24",
+      "note": "Two problems. (1) The link goes to a 2011 National Consumers League advocacy fact sheet ('approximately 40,000 Americans... 4,000 amputations') that cites no data year; NCL is an advocacy group, not a primary source, and its figure is above every CPSC estimate. Repoint the link to the Federal Register SNPR. (2) 'Automatic shut-off' is not a standard table-saw safety mechanism; active injury mitigation (blade-stopping) is what the SNPR proposes to require and most saws on the market do not have it. Say 'blade guards and riving knives' instead. The most consequential statistic on the page."
+    },
+    {
+      "surface": "body",
+      "claim": "They present a high risk of kickback injury when users cut with the top part of the bar.",
+      "verdict": "update",
+      "currentValue": "OSHA: 'Be cautious of saw kickback. To avoid kickback, do not saw with the tip. Keep tip guard in place.' Gasoline-powered chain saws must be equipped with a protective device that minimizes kickback.",
+      "sourceName": "OSHA Quick Card, Chain Saw Safety, OSHA 3269-04R (2013)",
+      "sourceUrl": "https://www.osha.gov/sites/default/files/publications/chain_saw_safety.pdf",
+      "retrievedAt": "2026-09-24",
+      "note": "Minimal edit: 'the top part of the bar' -> 'the tip of the bar'. The 'high risk' qualifier has no quantified source; 'kickback, the sudden upward throw of the bar when its tip contacts an object' is descriptive and safe."
+    },
+    {
+      "surface": "body",
+      "claim": "Chainsaw accidents generally result in severe injury and death due to the violent nature of the injury.",
+      "verdict": "update",
+      "currentValue": "Each year approximately 36,000 people are treated in hospital emergency departments for injuries from using chain saws (CDC). CDC does not report what share are severe or fatal.",
+      "sourceName": "CDC, Chain Saw Safety (Natural Disasters and Severe Weather)",
+      "sourceUrl": "https://www.cdc.gov/natural-disasters/safety/chain-saw-safety.html",
+      "retrievedAt": "2026-09-24",
+      "note": "'Generally result in severe injury and death' is a severity-proportion claim with no primary source; replace it with the CDC 36,000 figure and 'the injuries are often deep lacerations'. The old URL https://www.cdc.gov/disasters/chainsaws.html redirects to the URL above; link the new one."
+    },
+    {
+      "surface": "body",
+      "claim": "Use safety precautions including as wearing special chaps, a helmet with face screen, and steel-toed boots.",
+      "verdict": "update",
+      "currentValue": "CDC: hard hat, safety glasses, hearing protection, heavy work gloves, cut-resistant legwear (chain saw chaps) extending from the waist to the top of the foot, and boots that cover the ankle. OSHA: hand, foot, leg, eye, face, hearing and head protection.",
+      "sourceName": "CDC, Chain Saw Safety; OSHA 3269-04R (2013)",
+      "sourceUrl": "https://www.cdc.gov/natural-disasters/safety/chain-saw-safety.html",
+      "retrievedAt": "2026-09-24",
+      "note": "Fix the typo 'including as wearing'. Neither source says 'steel-toed'; 'boots that cover the ankle' is the CDC wording. Add gloves, eye and hearing protection."
+    },
+    {
+      "surface": "body",
+      "claim": "Nail guns work using powerful compressed air, making them fire a nail into the piece of material at about 120 pounds per square inch.",
+      "verdict": "drop",
+      "currentValue": "",
+      "sourceName": "NIOSH/OSHA, Nail Gun Safety: A Guide for Construction Contractors, DHHS (NIOSH) Pub. No. 2011-202 (2011) (the only pressure figure is OSHA's 29 CFR 1926.302(b)(3) rule that automatic-feed pneumatic nailers operating above 100 p.s.i. at the tool must have a muzzle safety device)",
+      "sourceUrl": "https://www.cdc.gov/niosh/docs/2011-202/pdfs/2011-202.pdf",
+      "retrievedAt": "2026-09-24",
+      "note": "No primary source for '120 pounds per square inch' as an operating pressure. Delete the figure; keep 'powerful compressed air'. Replace the sentence's weight with the MMWR figure in the next entry."
+    },
+    {
+      "surface": "body",
+      "claim": "Failing to realize the immense power of a nail gun can lead to severe puncture wounds to the fingers and hands.",
+      "verdict": "update",
+      "currentValue": "During 2001-2005 an average of approximately 37,000 patients with nail-gun injuries were treated annually in U.S. emergency departments, 40 percent of them consumers; in 2005 about 96 percent of consumer nail-gun injuries were puncture wounds, and consumer injuries were roughly three times the 1991 level (4,200). Two-thirds of injuries in the NIOSH guide's construction data occur in framing and sheathing work.",
+      "sourceName": "CDC MMWR, Nail-Gun Injuries Treated in Emergency Departments — United States, 2001-2005, 56(14):329-332 (Apr. 13, 2007) (CPSC NEISS and NEISS-Work data); NIOSH Pub. 2011-202",
+      "sourceUrl": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5614a2.htm",
+      "retrievedAt": "2026-09-24",
+      "note": "The claim is true but unquantified; add the 37,000-per-year / 40-percent-consumer figure with its 2001-2005 vintage. It is the latest national surveillance CDC has published on nail guns; say so rather than presenting it as current."
+    },
+    {
+      "surface": "body",
+      "claim": "Extreme cases can result in nails going into the skull or body, when a user drops a nail gun and it fires into the air.",
+      "verdict": "update",
+      "currentValue": "NIOSH: 'Severe nail gun injuries have led to construction worker deaths.' The mechanisms the guide documents are unintended discharge from contact (bump-fire) triggers, double fires, and nails that blow through or ricochet off the work piece; NIOSH's first recommendation is to use full sequential trigger nail guns. The guide does not describe a dropped gun firing into the air.",
+      "sourceName": "NIOSH/OSHA, Nail Gun Safety: A Guide for Construction Contractors, DHHS (NIOSH) Pub. No. 2011-202 (2011)",
+      "sourceUrl": "https://www.cdc.gov/niosh/docs/2011-202/pdfs/2011-202.pdf",
+      "retrievedAt": "2026-09-24",
+      "note": "Replace the dropped-gun mechanism with the documented one: 'contact (bump-fire) triggers can double-fire or discharge when the tool bumps something other than the work piece; NIOSH recommends full sequential triggers.' Keep 'nails have penetrated the skull' only as 'severe injuries, including to the head, have caused deaths'."
+    },
+    {
+      "surface": "body",
+      "claim": "<a href=\"https://rodenlaw.com/practice-areas/slip-and-fall-lawyers/\">slip and falls</a> from ladders account for a large majority of personal injuries.",
+      "verdict": "update",
+      "currentValue": "False as stated. CDC (MMWR 2014, 2011 data): ladders were involved in about 20 percent of fall injuries among all U.S. workers and 81 percent of ED-treated fall injuries among construction workers; in 2011 ladder falls caused 113 worker deaths, 15,460 employer-reported nonfatal injuries and about 34,000 ED-treated nonfatal injuries; 43 percent of fatal falls in the preceding decade involved a ladder. NIOSH: each year in the U.S. more than 100 people die and thousands more are injured in ladder-related falls.",
+      "sourceName": "CDC MMWR, Occupational Ladder Fall Injuries — United States, 2011, 63(16):341-346 (Apr. 25, 2014); NIOSH newsroom feature 'Ladder Safety' (archived)",
+      "sourceUrl": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6316a2.htm",
+      "retrievedAt": "2026-09-24",
+      "note": "Ladder falls are not 'a large majority of personal injuries'. Rewrite: 'ladders are involved in about one in five fall injuries among U.S. workers and four in five emergency-treated fall injuries among construction workers (CDC, 2011 data), and more than 100 people die in ladder falls each year.' The 500,000-per-year consumer figure that circulates is attributed to NIOSH but I could not retrieve a NIOSH page that renders it; do not use it."
+    },
+    {
+      "surface": "body",
+      "claim": "Falls commonly involve broken bones, fractures, concussions, and <a href=\"https://rodenlaw.com/practice-areas/spinal-cord-injury-lawyers/\">spinal cord injuries</a>.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "CDC MMWR 63(16) (2014) (fractures the leading ladder-fall diagnosis in the surveillance data)",
+      "sourceUrl": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6316a2.htm",
+      "retrievedAt": "2026-09-24",
+      "note": "'Broken bones, fractures' is redundant; drop one."
+    },
+    {
+      "surface": "body",
+      "claim": "Power drills are one of the most dangerous tools, but not only for the reason you may expect.",
+      "verdict": "drop",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "No primary source ranks power drills among the most dangerous tools, and the NIOSH document the section links does not. Reword to 'Power drills carry a hazard you may not expect.'"
+    },
+    {
+      "surface": "body",
+      "claim": "Puncture wounds are common injuries related to power drills, especially when the user is not paying attention to other workers near the drill, but electrocution is more deadly.",
+      "verdict": "update",
+      "currentValue": "NIOSH: 'a small power drill uses 30 times as much current as what will kill.' The comparative 'more deadly' than puncture wounds is not sourced.",
+      "sourceName": "NIOSH, Electrical Safety: Safety and Health for Electrical Trades, Student Manual, DHHS (NIOSH) Pub. No. 2009-113 (Apr. 2009), p. 8",
+      "sourceUrl": "https://www.cdc.gov/niosh/docs/2009-113/pdfs/2009-113.pdf",
+      "retrievedAt": "2026-09-24",
+      "note": "Replace 'electrocution is more deadly' with 'electric shock is the deadlier hazard: NIOSH notes a small power drill draws 30 times the current that can kill.'"
+    },
+    {
+      "surface": "body",
+      "claim": "<a href=\"https://www.cdc.gov/niosh/docs/2009-113/pdfs/2009-113.pdf\" target=\"_blank\" rel=\"noopener\">A large number of power drill injuries happen when a user drills through a live wire</a>, and electricity travels through the drill and into the user’s body.",
+      "verdict": "update",
+      "currentValue": "The linked NIOSH manual does not say drilling through live wires causes a large number of drill injuries. What it documents: a power drill draws 30 times the current that can kill; and a fatality in which a worker handing up an electric drill was electrocuted because the extension cord's grounding prong was missing, its grounding wire touched the energized wire, and the drill's frame became energized ('The drill was not double-insulated'). It also teaches locating and de-energizing circuits before work.",
+      "sourceName": "NIOSH, Electrical Safety: Safety and Health for Electrical Trades, Student Manual, DHHS (NIOSH) Pub. No. 2009-113 (Apr. 2009), pp. 8, 12 and Section 8 case report",
+      "sourceUrl": "https://www.cdc.gov/niosh/docs/2009-113/pdfs/2009-113.pdf",
+      "retrievedAt": "2026-09-24",
+      "note": "The link resolves (1.5 MB PDF). The anchor text overstates the source. Rewrite: 'Drilling into a hidden live wire, or using a drill with a damaged or ungrounded cord, can send current through the tool into the user; NIOSH documents a fatal shock from a drill whose frame was energized by a faulty extension cord.' Keep the link."
+    },
+    {
+      "surface": "body",
+      "claim": "In this case, the victim can hold the manufacturer responsible for the accident and injury and file a product liability lawsuit claim.",
+      "verdict": "update",
+      "currentValue": "Georgia: the manufacturer of personal property sold as new is liable in tort, irrespective of privity, to any natural person who uses or is reasonably affected by it and is injured because it 'was not merchantable and reasonably suited to the use intended' (O.C.G.A. § 51-1-11(b)(1)); no such action may be commenced more than ten years after the first sale for use or consumption (§ 51-1-11(b)(2)), a repose that also bars negligence claims against the manufacturer except for disease/birth-defect products or wilful, reckless or wanton conduct (§ 51-1-11(c)); a product seller that is not the manufacturer 'is not liable as such' in strict liability (§ 51-1-11.1(b)) and is reached only in negligence or warranty. South Carolina: 'One who sells any product in a defective condition unreasonably dangerous to the user or consumer' is liable for physical harm even if 'the seller has exercised all possible care in the preparation and sale of his product' (S.C. Code § 15-73-10), which reaches retailers as well as manufacturers; Chapter 73 contains no statute of repose.",
+      "sourceName": "O.C.G.A. §§ 51-1-11, 51-1-11.1 (2025 Code, Justia); S.C. Code §§ 15-73-10, 15-73-20, 15-73-30 (scstatehouse.gov)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11/",
+      "retrievedAt": "2026-09-24",
+      "note": "True but unstamped. The post names neither state; add one sentence per state and the Georgia ten-year repose, which is the fact most likely to defeat a garage-tool claim (old tools). Reviewer becomes Graeham C. Gillin once South Carolina law is stated."
+    },
+    {
+      "surface": "body",
+      "claim": "Other tools may not come with proper safety warnings or instruction labels.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-1-11(c) ('Nothing contained in this subsection shall relieve a manufacturer from the duty to warn of a danger arising from use of a product once that danger becomes known to the manufacturer'); S.C. Code § 15-73-30 (Restatement (Second) of Torts § 402A comments, including comment j on warnings, incorporated as legislative intent)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c073.php",
+      "retrievedAt": "2026-09-24",
+      "note": "Failure to warn is a recognized defect theory in both states. No change required."
+    },
+    {
+      "surface": "body",
+      "claim": "We have years of experience handling personal injury cases relating to manufacturer error, and we can help you file a claim against the tool manufacturer.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Firm statement (profiles/writer-profile.md trust signals); not a legal or statistical claim",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-24",
+      "note": "'Manufacturer error' is loose; 'defective products' matches the statutes. Optional."
+    },
+    {
+      "surface": "excerpt",
+      "claim": "The household and garage tools that send the most people to the emergency room, and when a defective tool becomes a product liability claim.",
+      "verdict": "update",
+      "currentValue": "The post does not rank tools by emergency-room volume and its figures come from different years (table saws ~30,600/yr 2010-2021; chain saws ~36,000/yr; nail guns ~37,000/yr 2001-2005; ladders ~34,000 occupational ED visits in 2011). No primary source supports 'the most'.",
+      "sourceName": "CPSC SNPR 2023; CDC Chain Saw Safety; CDC MMWR 56(14) (2007); CDC MMWR 63(16) (2014)",
+      "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2023-11-01/html/2023-23898.htm",
+      "retrievedAt": "2026-09-24",
+      "note": "Change 'send the most people' to 'send tens of thousands of people'. The excerpt publishes as the Article description in schema."
+    },
+    {
+      "surface": "faq:0",
+      "claim": "The table saw is arguably the most dangerous tool a person can own. Its high-speed rotating blade presents a risk of laceration and amputation, and table saws account for thousands of injuries every year.",
+      "verdict": "update",
+      "currentValue": "CPSC estimates about 30,600 emergency-department-treated table saw blade-contact injuries a year (NEISS, 2010-2021); in 2017 about 2,800 of 26,500 were amputations.",
+      "sourceName": "CPSC SNPR, 88 FR 74909 (Nov. 1, 2023)",
+      "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2023-11-01/html/2023-23898.htm",
+      "retrievedAt": "2026-09-24",
+      "note": "Replace 'thousands of injuries every year' with 'about 30,600 emergency-room injuries a year, roughly one in ten of them amputations (CPSC, 2010-2021 data)'. Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:1",
+      "claim": "Tool-related accidents can result in amputation, puncture wounds, brain injury, broken bones, burn injuries and even death. The severity is often out of proportion to how routine the task felt.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "CPSC SNPR 2023; NIOSH Pub. 2011-202; NIOSH Pub. 2009-113",
+      "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2023-11-01/html/2023-23898.htm",
+      "retrievedAt": "2026-09-24",
+      "note": "Second sentence is editorial, not factual. No change."
+    },
+    {
+      "surface": "faq:2",
+      "claim": "Because they do not address the most common failure. Many users skip protective eyewear, and material thrown into the eye blinds them at the moment they most need to see the rotating blade to keep clear of it.",
+      "verdict": "drop",
+      "currentValue": "CPSC's data say the common failure is direct hand-to-blade contact: 96.4 percent of table saw blade-contact injuries involve the finger (2017 NEISS special study), and CPSC found no downward trend in blade-contact injuries from 2004 to 2021 despite existing guards and riving knives, which is why it proposes to require active injury mitigation.",
+      "sourceName": "CPSC SNPR, 88 FR 74909 (Nov. 1, 2023), section IV.A",
+      "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2023-11-01/html/2023-23898.htm",
+      "retrievedAt": "2026-09-24",
+      "note": "No primary source supports skipped eyewear as 'the most common failure'; the body's same claim ('materials going into the eye blind them') is equally unsourced. Rewrite the answer around the CPSC finding: blade guards are removable and often removed for certain cuts, injuries are overwhelmingly hand contact, and CPSC has proposed requiring blade-stopping technology. Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:3",
+      "claim": "You may be able to. Where a tool was defectively designed or manufactured, or lacked adequate warnings, a product liability claim can target the manufacturer. Preserve the tool exactly as it is after the injury.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-1-11(b)(1), (c); S.C. Code § 15-73-10",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11/",
+      "retrievedAt": "2026-09-24",
+      "note": "Correct. Optional stamp: 'In Georgia the manufacturer is strictly liable (O.C.G.A. § 51-1-11); in South Carolina any seller of a defective, unreasonably dangerous product is (S.C. Code § 15-73-10).' Preserving the tool is a practice statement, not a legal claim."
+    },
+    {
+      "surface": "faq:4",
+      "claim": "Georgia generally allows two years from the date of injury to file a personal injury lawsuit (O.C.G.A. § 9-3-33). Keeping the tool, its packaging and any manual is what makes such a claim provable.",
+      "verdict": "update",
+      "currentValue": "Two years is correct ('actions for injuries to the person shall be brought within two years after the right of action accrues', O.C.G.A. § 9-3-33), but a Georgia product liability claim is also subject to a ten-year statute of repose: no strict liability action may be commenced more than ten years after the first sale of the product for use or consumption (§ 51-1-11(b)(2)), and the same bar applies to negligence claims against the manufacturer except for products causing disease or birth defects or conduct showing wilful, reckless or wanton disregard for life or property (§ 51-1-11(c)). South Carolina twin: three years (S.C. Code § 15-3-530(5)), running from when the person knew or reasonably should have known of the claim (§ 15-3-535); no statute of repose applies to product claims.",
+      "sourceName": "O.C.G.A. §§ 9-3-33, 51-1-11(b)(2), (c) (2025 Code, Justia); S.C. Code §§ 15-3-530, 15-3-535 (scstatehouse.gov)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+      "retrievedAt": "2026-09-24",
+      "note": "The question is about product liability, and the answer omits the repose rule that most often ends a claim over an old garage tool. Add it. Publishes as FAQPage structured data."
+    }
+  ],
+  "recommendedEdits": [
+    "Table Saw: replace the NCL link and 'thousands of injuries every year' with 'about 30,600 emergency-room blade-contact injuries a year (CPSC, NEISS 2010-2021), roughly one in ten of them amputations', linked to the Federal Register SNPR of Nov. 1, 2023; change 'safety mechanisms such as an automatic shut-off' to 'blade guards and riving knives' and note CPSC has proposed requiring blade-stopping technology.",
+    "Table Saw and faq:2: delete the unsourced eyewear-as-the-cause reasoning; CPSC data show 96.4 percent of blade-contact injuries involve the finger, so frame the failure as direct hand contact with a blade whose guard is off.",
+    "Chainsaw: 'top part of the bar' -> 'tip of the bar' (OSHA 3269); replace 'generally result in severe injury and death' with CDC's 'about 36,000 people a year are treated in emergency departments for chain saw injuries', linked to https://www.cdc.gov/natural-disasters/safety/chain-saw-safety.html; fix 'including as wearing'; list CDC's PPE (hard hat, eye and hearing protection, gloves, chaps waist to top of foot, boots covering the ankle) and drop 'steel-toed'.",
+    "Nail Gun: delete '120 pounds per square inch'; add 'about 37,000 emergency-room visits a year, four in ten of them consumers (CDC, 2001-2005 NEISS data, the latest national surveillance)' linked to the MMWR; replace the dropped-gun mechanism with contact-trigger double fire and NIOSH's full-sequential-trigger recommendation.",
+    "Ladder: replace 'account for a large majority of personal injuries' with 'ladders are involved in about one in five fall injuries among U.S. workers and four in five emergency-treated fall injuries among construction workers, and more than 100 people die in ladder falls each year (CDC)'; drop the duplicate 'fractures'.",
+    "Power Drill: drop 'one of the most dangerous tools'; rewrite the NIOSH anchor to what the manual supports (a drill draws 30 times the current that can kill; a fatal shock from a drill energized by a faulty extension cord); keep the link.",
+    "Defective Tools: stamp both states in two sentences: Georgia manufacturers are strictly liable under O.C.G.A. § 51-1-11(b)(1), sellers only in negligence (§ 51-1-11.1(b)), and no claim lies more than ten years after the product's first sale (§ 51-1-11(b)(2)); in South Carolina any seller of a defective, unreasonably dangerous product is liable under S.C. Code § 15-73-10 with no repose period.",
+    "faq:4: keep the two-year § 9-3-33 sentence, add the § 51-1-11(b)(2) ten-year repose from first sale, and add a South Carolina clause (three years, § 15-3-530(5), discovery rule § 15-3-535, no repose). If the FAQ set is extended, a sixth question on comparative fault may say: Georgia bars recovery at 50 percent or more fault (O.C.G.A. § 51-12-33(g)); South Carolina at more than 50 percent (Nelson v. Concrete Supply Co., 1991), never citing § 15-38-15; in a Georgia strict-liability claim the plaintiff's ordinary carelessness is not a defense but knowingly using a tool with a known defect is (Deere & Co. v. Brooks, 250 Ga. 517 (1983)); South Carolina's statutory version is § 15-73-20.",
+    "Excerpt: 'send the most people to the emergency room' -> 'send tens of thousands of people to the emergency room each year'.",
+    "Reviewer meta: once South Carolina law is stated, record Graeham C. Gillin as reviewer; do not add an attribution quote.",
+    "Keep the post short: every figure above replaces an existing sentence; do not add a statistics section."
+  ],
+  "statuteCitations": [
+    { "section": "O.C.G.A. § 51-1-11", "name": "Product liability: manufacturer liable in tort irrespective of privity for new products not merchantable and reasonably suited to intended use (b)(1); ten-year statute of repose from first sale for use or consumption (b)(2), applied to negligence claims with disease/birth-defect and wilful-reckless-wanton exceptions and a continuing duty to warn (c); industry-wide liability theories rejected (d),(e)", "url": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11/" },
+    { "section": "O.C.G.A. § 51-1-11.1", "name": "Product seller defined (a); a product seller is not a manufacturer and is not liable as such in strict liability (b)", "url": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11-1/" },
+    { "section": "O.C.G.A. § 9-3-33", "name": "Injuries to the person: two years after the right of action accrues", "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/" },
+    { "section": "O.C.G.A. § 51-12-33", "name": "Reduction of damages by plaintiff's percentage of fault (a); no recovery if plaintiff is 50 percent or more responsible (g)", "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/" },
+    { "section": "S.C. Code § 15-73-10", "name": "Strict liability: one who sells any product in a defective condition unreasonably dangerous to the user or consumer is liable for physical harm, even if all possible care was exercised and without privity", "url": "https://www.scstatehouse.gov/code/t15c073.php" },
+    { "section": "S.C. Code § 15-73-20", "name": "Defense: user who discovers the defect, is aware of the danger and nevertheless proceeds unreasonably to use the product is barred (defendant must prove unreasonable use — Koester v. Carolina Rental Center, 313 S.C. 490 (1994))", "url": "https://www.scstatehouse.gov/code/t15c073.php" },
+    { "section": "S.C. Code § 15-73-30", "name": "Comments to Restatement (Second) of Torts § 402A incorporated as legislative intent", "url": "https://www.scstatehouse.gov/code/t15c073.php" },
+    { "section": "S.C. Code § 15-3-530", "name": "Three-year limitation, including (5) any injury to the person not arising on contract", "url": "https://www.scstatehouse.gov/code/t15c003.php" },
+    { "section": "S.C. Code § 15-3-535", "name": "Discovery rule for § 15-3-530(5) actions: three years from when the person knew or by reasonable diligence should have known of the cause of action", "url": "https://www.scstatehouse.gov/code/t15c003.php" }
+  ],
+  "authoritativeLinks": [
+    { "name": "CPSC, Safety Standard Addressing Blade-Contact Injuries on Table Saws, Supplemental Notice of Proposed Rulemaking, 88 FR 74909 (Nov. 1, 2023) — 26,500 ED-treated injuries and 2,800 amputations in 2017; ~30,600/yr 2010-2021; ~32,000/yr 2004-2020; 49,176 medically treated/yr; $3.97 billion (2021)", "url": "https://www.govinfo.gov/content/pkg/FR-2023-11-01/html/2023-23898.htm" },
+    { "name": "CDC, Chain Saw Safety — approximately 36,000 people treated in hospital emergency departments each year; PPE list", "url": "https://www.cdc.gov/natural-disasters/safety/chain-saw-safety.html" },
+    { "name": "OSHA Quick Card, Chain Saw Safety, OSHA 3269-04R (2013) — kickback, do not saw with the tip, PPE", "url": "https://www.osha.gov/sites/default/files/publications/chain_saw_safety.pdf" },
+    { "name": "CDC MMWR, Nail-Gun Injuries Treated in Emergency Departments — United States, 2001-2005, 56(14):329-332 (2007) — ~37,000/yr, 40 percent consumers, 96 percent punctures", "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5614a2.htm" },
+    { "name": "NIOSH/OSHA, Nail Gun Safety: A Guide for Construction Contractors, DHHS (NIOSH) Pub. No. 2011-202 (2011) — 37,000 ER visits/yr, deaths, trigger types, 29 CFR 1926.302(b) air-pressure rules", "url": "https://www.cdc.gov/niosh/docs/2011-202/pdfs/2011-202.pdf" },
+    { "name": "CDC MMWR, Occupational Ladder Fall Injuries — United States, 2011, 63(16):341-346 (2014) — 113 deaths, 34,000 ED-treated injuries, 20 percent of worker fall injuries, 81 percent of construction ED fall injuries", "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6316a2.htm" },
+    { "name": "NIOSH newsroom feature, Ladder Safety (archived) — more than 100 deaths and thousands of injuries from ladder falls each year", "url": "https://archive.cdc.gov/www_cdc_gov/niosh/newsroom/feature/ladder-safety.html" },
+    { "name": "NIOSH, Electrical Safety: Safety and Health for Electrical Trades, Student Manual, DHHS (NIOSH) Pub. No. 2009-113 (Apr. 2009) — the post's existing drill link; power drill draws 30 times lethal current; drill-frame electrocution case", "url": "https://www.cdc.gov/niosh/docs/2009-113/pdfs/2009-113.pdf" },
+    { "name": "Deere & Co. v. Brooks, 250 Ga. 517, 299 S.E.2d 704 (1983) — contributory negligence is not a defense to strict product liability; assumption of risk is", "url": "https://law.justia.com/cases/georgia/supreme-court/1983/39099-1.html" },
+    { "name": "Koester v. Carolina Rental Center, Inc., 313 S.C. 490, 443 S.E.2d 392 (1994) — § 15-73-20 requires the defendant to prove the plaintiff proceeded unreasonably", "url": "https://law.justia.com/cases/south-carolina/supreme-court/1994/24048-2.html" },
+    { "name": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991) — South Carolina modified comparative negligence; plaintiff recovers if fault is not greater than the defendant's", "url": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html" }
+  ]
+}
