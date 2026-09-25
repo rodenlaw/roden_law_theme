@@ -166,7 +166,9 @@ const growth = (strip(after).split(/\s+/).length / strip(before).split(/\s+/).le
 const warnings = [];
 if (growth > 20) violations.push(`body grew ${growth.toFixed(0)}% (>20%)`); else if (growth > 15) warnings.push(`body grew ${growth.toFixed(0)}% (over the ~15% mandate, under the 20% stop)`);
 const idsB = (before.match(/id="[^"]+"/g) || []), idsA = (after.match(/id="[^"]+"/g) || []);
-for (const id of idsB) if (!idsA.includes(id)) violations.push(`heading anchor removed: ${id}`);
+// Google Docs paste residue (id="docs-internal-guid-…") is not an anchor anyone links to;
+// removing those wrappers is a formatting cleanup, not a lost anchor (2026-09-25, post 1656).
+for (const id of idsB) if (!idsA.includes(id) && !/docs-internal-guid-/.test(id)) violations.push(`heading anchor removed: ${id}`);
 for (const l of (before.match(/href="\/[^"]*"/g) || [])) if (!after.includes(l)) violations.push(`internal link removed: ${l}`);
 if (/last reviewed/i.test(strip(after)) && !/last reviewed/i.test(strip(before))) violations.push('visible "Last reviewed" line added to the body (the theme renders it from meta)');
 

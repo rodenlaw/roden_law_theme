@@ -3216,7 +3216,7 @@
             "title": "How to Recover Lost Wages After a Personal Injury Accident",
             "excerpt": "Lost wages and lost earning capacity are different claims. How to prove each after an injury in Georgia or South Carolina, and what documentation you need.",
             "meta": {
-                "_roden_author_attorney": "Eric Roden",
+                "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "What is the difference between lost wages and lost earning capacity?",
@@ -3243,7 +3243,8 @@
                         "answer": "In Georgia, your lost wage award is reduced by your percentage of fault, and you recover nothing if you are 50% or more at fault (O.C.G.A. § 51-12-33). In South Carolina, the threshold is 51% — you can recover as long as your fault does not equal or exceed 51%. Both states reduce your total award proportionally to your share of blame."
                     }
                 ],
-                "_roden_key_takeaways": "Lost wages and lost earning capacity are two distinct categories of economic damages recoverable in Georgia and South Carolina personal injury cases. Lost wages cover income already missed during recovery, while lost earning capacity addresses permanent reductions in future income. Georgia's 2-year statute of limitations (O.C.G.A. § 9-3-33) and modified comparative fault rule (O.C.G.A. § 51-12-33) allow recovery if less than 50% at fault. South Carolina gives 3 years (S.C. Code § 15-3-530) with a 51% fault threshold. Self-employed and gig workers can recover using tax returns, contracts, and financial records."
+                "_roden_key_takeaways": "Lost wages and lost earning capacity are two distinct categories of economic damages recoverable in Georgia and South Carolina personal injury cases. Lost wages cover income already missed during recovery, while lost earning capacity addresses permanent reductions in future income. Georgia's 2-year statute of limitations (O.C.G.A. § 9-3-33) and modified comparative fault rule (O.C.G.A. § 51-12-33) allow recovery if less than 50% at fault. South Carolina gives 3 years (S.C. Code § 15-3-530) with a 51% fault threshold. Self-employed and gig workers can recover using tax returns, contracts, and financial records.",
+                "_roden_last_reviewed": "2026-09-25"
             }
         },
         "/blog/college-campus-safety-tips-every-student-should-know/": {
@@ -7053,7 +7054,7 @@
                 "_roden_faqs": [
                     {
                         "question": "How long do I have to file a truck accident lawsuit in Garden City, Georgia?",
-                        "answer": "In Georgia, you have 2 years from the date of the I-16 crash to file a personal-injury lawsuit under O.C.G.A. § 9-3-33. That clock does not pause while the motor carrier's insurer \"investigates,\" and it is shorter than South Carolina's 3-year window. If a Garden City municipal employee is a defendant, an ante-litem notice is due within 6 months under O.C.G.A. § 36-33-5 — independent of the 2-year suit deadline."
+                        "answer": "In Georgia, you have 2 years from the date of the I-16 crash to file a personal-injury lawsuit under O.C.G.A. § 9-3-33. That clock does not pause while the motor carrier's insurer \"investigates.\" If a Garden City municipal employee is a defendant, an ante-litem notice is due within 6 months under O.C.G.A. § 36-33-5, and within 12 months if a Chatham County vehicle is involved (O.C.G.A. § 36-11-1) — independent of the 2-year suit deadline."
                     },
                     {
                         "question": "What if the truck driver was only partly at fault and so was I?",
@@ -7065,7 +7066,7 @@
                     },
                     {
                         "question": "What evidence disappears fastest after a Garden City truck crash?",
-                        "answer": "Electronic logging device (ELD) data under 49 C.F.R. Part 395, dashcam and rear-view footage, dispatcher Slack/text logs, satellite/Qualcomm pings, post-trip inspection reports under Part 396, and driver drug-and-alcohol records can all be lawfully overwritten within 7 to 14 days unless a written preservation letter is sent. The motor carrier's rapid-response adjuster is on the scene within hours — your evidence has to be locked down on the same timeline."
+                        "answer": "Dashcam and rear-view footage, dispatcher Slack/text logs and satellite/Qualcomm pings have no federal retention rule and can be overwritten at any time; federal rules let a carrier destroy post-trip inspection reports after three months (49 C.F.R. § 396.11) and electronic logging device (ELD) hours-of-service records after six (49 C.F.R. § 395.8(k)), unless a written preservation letter is sent. Drug-and-alcohol test records are kept one to five years (49 C.F.R. § 382.401). The motor carrier's rapid-response adjuster is on the scene within hours — your evidence has to be locked down on the same timeline."
                     },
                     {
                         "question": "Will the trucking company's first settlement offer cover my medical bills?",
@@ -7073,11 +7074,11 @@
                     },
                     {
                         "question": "Where will my truck accident case be filed in Chatham County?",
-                        "answer": "Most port-truck tort cases out of Garden City are filed in Chatham County State Court at 133 Montgomery Street, Savannah — the Court that handles non-felony tort matters in the Eastern Judicial Circuit. Felony-related or higher-damages cases go to Chatham County Superior Court. If the motor carrier is out-of-state and the amount in controversy exceeds $75,000, the case may sit in or be removed to the U.S. District Court for the Southern District of Georgia, Savannah Division."
+                        "answer": "Most port-truck suits out of Garden City are filed in the State Court of Chatham County at 133 Montgomery Street, Savannah, which hears civil cases of any amount; the Superior Court of Chatham County (Eastern Judicial Circuit) can hear the same cases. If the motor carrier is out-of-state and the amount in controversy exceeds $75,000, the case may sit in or be removed to the U.S. District Court for the Southern District of Georgia, Savannah Division."
                     }
                 ],
                 "_roden_jurisdiction": "georgia-only",
-                "_roden_last_reviewed": "2026-05-15"
+                "_roden_last_reviewed": "2026-09-25"
             }
         },
         "/blog/i-26-i-526-truck-accidents-what-to-do-whos-liable/": {
@@ -7226,9 +7227,9 @@
             "type": "post",
             "status": "publish",
             "title": "How Surgery Impacts Your Personal Injury Claim: What You Need to Know",
-            "excerpt": "How a surgery recommendation changes a personal injury claim: what it does to case value, and why insurers scrutinise the decision so closely.",
+            "excerpt": "How a surgery recommendation changes a personal injury claim: what it does to case value, and why insurers scrutinize the decision so closely.",
             "meta": {
-                "_roden_author_attorney": "Eric Roden",
+                "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "Does needing surgery increase my settlement?",
@@ -7240,7 +7241,7 @@
                     },
                     {
                         "question": "When will I receive my settlement?",
-                        "answer": "Generally not before your treatment has reached a stable point, because that is when the full extent of the injury is known. Settling earlier risks accepting a figure that does not cover care you still need."
+                        "answer": "Generally not before your treatment has reached a stable point — what doctors call maximum medical improvement — because that is when the full extent of the injury is known. Settling earlier risks accepting a figure that does not cover care you still need. No rule sets a settlement date. The only hard deadlines are for filing suit: two years from the injury in Georgia (O.C.G.A. § 9-3-33) and three years in South Carolina (S.C. Code § 15-3-530). In Georgia motor-vehicle cases an attorney's pre-suit demand must also give the insurer at least 30 days to accept and 40 days to pay (O.C.G.A. § 9-11-67.1)."
                     },
                     {
                         "question": "What if the insurance company makes no offer at all?",
@@ -7250,7 +7251,8 @@
                         "question": "What should I do if surgery has been recommended after my accident?",
                         "answer": "Discuss the details of your case with an experienced attorney before making decisions about settlement. Documenting the recommendation and the reasoning behind it is what allows the claim to account for it."
                     }
-                ]
+                ],
+                "_roden_last_reviewed": "2026-09-25"
             }
         },
         "/blog/impaired-driving-caused-by-prescription-medications/": {

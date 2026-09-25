@@ -1,0 +1,660 @@
+{
+  "postId": 1706,
+  "slug": "claims-for-lost-wages",
+  "verifiedClaims": [
+    {
+      "surface": "body",
+      "claim": "According to the <a href=\"https://www.law.cornell.edu/wex/damages\" target=\"_blank\" rel=\"noopener\">Cornell Law Institute</a>, compensatory damages in personal injury cases include both economic losses like lost wages and non-economic losses like pain and suffering.",
+      "verdict": "update",
+      "currentValue": "The source is Cornell Law School's Legal Information Institute (Wex). Its damages entry: in a tort case the injured party can receive compensatory damages for 'direct costs (medical care, property damage, lost wages, etc.) and indirect costs (to atone for pain and suffering or inconvenience).'",
+      "sourceName": "Legal Information Institute, Cornell Law School — Wex: damages",
+      "sourceUrl": "https://www.law.cornell.edu/wex/damages",
+      "retrievedAt": "2026-09-25",
+      "note": "The link resolves (HTTP 200) and law.cornell.edu is on the outbound allowlist. Only the name is wrong: change 'Cornell Law Institute' to 'Cornell Law School's Legal Information Institute'. The substance matches the page."
+    },
+    {
+      "surface": "body",
+      "claim": "If someone else caused your injury, Georgia and South Carolina law both allow you to recover the wages you lost — and in many cases, the income you will lose in the future.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Dossie v. Sherwood, 308 Ga. App. 131 (2011); Matthews v. Porter, 239 S.C. 620 (1962)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2011/a10a1946.html",
+      "retrievedAt": "2026-09-25",
+      "note": "Georgia: 'the loss of one's earnings from the date of injury to the date of trial as a result of a personal injury is a separate and distinct pecuniary damage that is recoverable, so long as the amount can be determined with reasonable certainty' (Dossie). South Carolina: 'Loss or impairment of earning capacity, consequent to the injuries to the person, is a proper element of compensation' (Matthews v. Porter, https://law.justia.com/cases/south-carolina/supreme-court/1962/17881-1.html)."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Lost wages</strong> refer to the actual income you missed from the date of your accident through the date of settlement or trial. This is a backward-looking number. If you earn $1,000 per week and missed 12 weeks of work, your lost wages are $12,000.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Dossie v. Sherwood, 308 Ga. App. 131 (2011)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2011/a10a1946.html",
+      "retrievedAt": "2026-09-25",
+      "note": "Definition matches Dossie ('from the date of injury to the date of trial'). $1,000 x 12 = $12,000 checks; the figure is a hypothetical and reads as one. In Georgia this item is special damages (O.C.G.A. § 51-12-2(b): 'must be proved in order to be recovered') and the amount must be shown with reasonable certainty."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Lost earning capacity</strong> is forward-looking. It compensates you for the money you would have earned in the future but cannot because of your injuries.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Schriever v. Maddox, 259 Ga. App. 558 (2003); Haltiwanger v. Barr, 258 S.C. 27 (1972)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2003/a02a2052.html",
+      "retrievedAt": "2026-09-25",
+      "note": "Georgia draws the line the post draws, with one refinement worth a sentence: 'diminished capacity to labor is an element of pain and suffering' (general damages, measured by the jury's enlightened conscience), while 'recovery of lost earning capacity is a separate category of damages that focuses on the permanent or total physical disability of the plaintiff' and is special damages requiring 'some evidence upon which a jury can base with reasonable certainty a finding as to the amount' (Schriever, quoting Myrick v. Stephanos, 220 Ga. App. 520 (1996)). South Carolina: recovery for 'impaired earning capacity, to the extent that these injuries are reasonably certain to result in the future'; 'Future damages in personal injury cases need not be proved to a mathematical certainty' (Haltiwanger, https://law.justia.com/cases/south-carolina/supreme-court/1972/19370-1.html)."
+    },
+    {
+      "surface": "body",
+      "claim": "Lost earning capacity claims often involve vocational experts and economists who project what you would have earned over your remaining working life, adjusted for inflation, career advancement, and other variables.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Walkley v. Dukes, 175 Ga. App. 820 (1985)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/1985/70660-0.html",
+      "retrievedAt": "2026-09-25",
+      "note": "'Often' is the right hedge. Georgia juries may use mortality tables and must reduce future earnings to present cash value (Walkley), which is what the economist supplies; the cases do not make an expert mandatory (see the 'requires expert testimony' entry below)."
+    },
+    {
+      "surface": "body",
+      "claim": "You can claim both in the same lawsuit. In fact, most serious injury cases involve both past lost wages and future lost earning capacity.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Olariu v. Marrero, 248 Ga. App. 824 (2001)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2001/a00a2310-0.html",
+      "retrievedAt": "2026-09-25",
+      "note": "Olariu upheld a verdict of '$25,000 in lost past earnings and $100,000 in lost future earnings' in one action. 'Most serious injury cases' is commentary."
+    },
+    {
+      "surface": "body",
+      "claim": "Lost wages cover more than just your base salary or hourly pay. Georgia and South Carolina courts recognize several categories of lost income in personal injury claims:",
+      "verdict": "update",
+      "currentValue": "Neither state has a statute or case that itemizes overtime, bonuses, commissions, tips, PTO, benefits, promotions and self-employment income as recoverable categories. The rule in both states is general: any earnings the injury caused you to lose are recoverable if the amount is proved with reasonable certainty (Georgia: Dossie; Olariu — 'Lost wages and earnings are recoverable where the evidence shows the amount of loss with reasonable certainty'; South Carolina: Matthews v. Porter; Haltiwanger v. Barr), and the collateral-source rule keeps sick pay, salary continuation and disability benefits from reducing the award (Bennett v. Haley; Young v. Warr).",
+      "sourceName": "Olariu v. Marrero, 248 Ga. App. 824 (2001); Matthews v. Porter, 239 S.C. 620 (1962)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2001/a00a2310-0.html",
+      "retrievedAt": "2026-09-25",
+      "note": "Reword the lead-in: 'Georgia and South Carolina let you recover any earnings the injury cost you, as long as you can prove the amount with reasonable certainty. In practice that can include:'. Then soften the two bullets with no traced authority — 'Promotion opportunities missed' becomes 'may be recoverable if you can show the promotion or raise was reasonably certain, not just possible' and 'Benefits lost' becomes 'may be recoverable as part of your compensation package'. The list is otherwise consistent with the reasonable-certainty rule; overtime, bonuses, commissions and tips are simply earnings."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Vacation and sick days used</strong> — If you burned through your PTO or sick leave to cover your recovery period, those days have a cash value",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Bennett v. Haley, 132 Ga. App. 512 (1974); Covington v. George, 359 S.C. 100 (2004)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/1974/49072.html",
+      "retrievedAt": "2026-09-25",
+      "note": "Rests on the collateral-source rule in both states. Georgia (Bennett v. Haley): 'the fact that the plaintiff received gratuitous medical care, continued salary or wage payments, proceeds from insurance policies, or welfare and pension benefits, will not be taken into account in computing damages.' South Carolina (Covington, quoting Gregory and Pustaver): a tortfeasor cannot benefit from a source 'wholly independent of the wrongdoer ... an insurance company, an employer, a family member, or other source' (https://law.justia.com/cases/south-carolina/supreme-court/2004/25828.html). Optional add after the bullet: '(under both states' collateral-source rule, wages your employer paid you through sick leave do not reduce what the at-fault party owes)'."
+    },
+    {
+      "surface": "body",
+      "claim": "The key principle is that you should be made whole. Whatever income the accident took from you — directly or indirectly — is recoverable if you can prove it.",
+      "verdict": "update",
+      "currentValue": "Recoverable if you prove both that the injury caused the loss and its amount with reasonable certainty; 'A claim for lost earning capacity may not be based upon pure conjecture or speculation' (Jones v. O'Day, 303 Ga. App. 775 (2010)); 'Lost earnings cannot be recovered unless they are established with reasonable certainty' (Robert & Co. Assoc. v. Tigner, 180 Ga. App. 836 (1986), quoting Douglas v. Rinker).",
+      "sourceName": "Jones v. O'Day, 303 Ga. App. 775 (2010)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2010/a09a1679.html",
+      "retrievedAt": "2026-09-25",
+      "note": "'Directly or indirectly' invites speculative items. Change to: 'Whatever income the accident took from you is recoverable if you can prove the injury caused the loss and show the amount with reasonable certainty — not speculation.'"
+    },
+    {
+      "surface": "body",
+      "claim": "Both Georgia and South Carolina use similar approaches, but the details of how damages are presented at trial can differ based on each state's evidentiary standards.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "Commentary; no checkable rule stated. Georgia's 2025 tort-reform argument limits (O.C.G.A. § 9-10-184, facts-3493) apply to noneconomic damages and do not change how lost wages are proved."
+    },
+    {
+      "surface": "body",
+      "claim": "Divide your annual salary by 52 to get your weekly rate, then multiply by the number of weeks missed. Add the value of any benefits your employer provides. A salaried employee earning $65,000 per year who misses 16 weeks of work has $20,000 in base lost wages — before accounting for benefits, bonuses, or retirement contributions.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "Arithmetic checks: $65,000 / 52 = $1,250 per week; x 16 = $20,000. Presented as a hypothetical. No state rule prescribes the formula; it is the ordinary way to prove the amount with reasonable certainty."
+    },
+    {
+      "surface": "body",
+      "claim": "Use your average monthly or quarterly earnings over the previous one to two years. Commission income fluctuates, so a longer lookback period gives a more accurate picture. Tax returns become the primary evidence here.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Matthews v. Porter, 239 S.C. 620 (1962)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1962/17881-1.html",
+      "retrievedAt": "2026-09-25",
+      "note": "Consistent with the case law: past earnings are admitted 'to enable the jury to determine what the future earnings would have been but for the injury'; 'There seems to be no fixed rule as to time in such inquiry' (Matthews). The one-to-two-year window is practice guidance, not a legal requirement."
+    },
+    {
+      "surface": "body",
+      "claim": "<td>Statute of Limitations</td>\n<td>2 years from date of injury (O.C.G.A. &sect; 9-3-33)</td>\n<td>3 years from date of injury (S.C. Code &sect; 15-3-530)</td>",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-33; S.C. Code § 15-3-530",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+      "retrievedAt": "2026-09-25",
+      "note": "Reused from facts-1769 / facts-1756 / facts-1702; matches the writer-profile jurisdiction table. South Carolina URL: https://www.scstatehouse.gov/code/t15c003.php."
+    },
+    {
+      "surface": "body",
+      "claim": "<td>Comparative Fault Rule</td>\n<td>Modified — barred if 50% or more at fault (O.C.G.A. &sect; 51-12-33)</td>\n<td>Modified — barred if 51% or more at fault</td>",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(g); Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-25",
+      "note": "Reused from facts-1756 / facts-1651; matches the profile table. The South Carolina cell is correctly uncited to any statute; if a citation is added it must be Nelson v. Concrete Supply Co. (https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html), never § 15-38-15."
+    },
+    {
+      "surface": "body",
+      "claim": "<td>Effect of Fault on Lost Wages</td>\n<td>Lost wages reduced by your percentage of fault</td>\n<td>Lost wages reduced by your percentage of fault</td>",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(a); Nelson v. Concrete Supply Co.",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-25",
+      "note": "§ 51-12-33(a) reduces 'the total damages'; lost wages are part of that total. Reused from facts-1769."
+    },
+    {
+      "surface": "body",
+      "claim": "<td>Compensatory Damages Basis</td>\n<td>O.C.G.A. &sect; 51-12-12 (general damages statute)</td>\n<td>Common law + S.C. Code &sect; 15-38-15 (joint liability)</td>",
+      "verdict": "update",
+      "currentValue": "Georgia: O.C.G.A. § 51-12-12 is titled 'Court interference with jury verdict as to damages' and says only that 'the court should not interfere with the jury's verdict unless the damages awarded by the jury are clearly so inadequate or so excessive as to be inconsistent with the preponderance of the evidence.' The statute that defines the categories is O.C.G.A. § 51-12-2: '(a) General damages are those which the law presumes to flow from any tortious act; they may be recovered without proof of any amount. (b) Special damages are those which actually flow from a tortious act; they must be proved in order to be recovered.' South Carolina: the basis is common law (Matthews v. Porter; Haltiwanger v. Barr); S.C. Code § 15-38-15 governs apportionment among defendants, not the basis of compensatory damages.",
+      "sourceName": "O.C.G.A. § 51-12-2; O.C.G.A. § 51-12-12",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-2/",
+      "retrievedAt": "2026-09-25",
+      "note": "Both cells miscite. Georgia cell: 'O.C.G.A. § 51-12-2 (general vs. special damages; lost wages are special damages)'. South Carolina cell: 'Common law (Matthews v. Porter; Haltiwanger v. Barr)'. Move § 15-38-15 out of this row; it belongs only in the joint-and-several section. § 51-12-12 read at https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-12/ on 2026-09-25."
+    },
+    {
+      "surface": "body",
+      "claim": "<td>Tax Treatment of Award</td>\n<td>Lost wage awards generally taxable as income under federal law</td>\n<td>Lost wage awards generally taxable as income under federal law</td>",
+      "verdict": "update",
+      "currentValue": "Wrong for a physical-injury case. Lost wages and lost earning capacity recovered on account of a personal physical injury are excluded from gross income under 26 U.S.C. § 104(a)(2). IRS: 'The Service has consistently held that compensatory damages, including lost wages, received on account of a personal physical injury are excludable from gross income with the exception of punitive damages.' Lost wages are taxable only when the claim is not for a physical injury (an employment claim, for example).",
+      "sourceName": "IRS — Tax implications of settlements and judgments; 26 U.S.C. § 104(a)(2)",
+      "sourceUrl": "https://www.irs.gov/government-entities/tax-implications-of-settlements-and-judgments",
+      "retrievedAt": "2026-09-25",
+      "note": "Most consequential error on the page, and the same error facts-1769 corrected on post 1769 this week. Both cells: 'Not taxable when recovered for a physical injury (26 U.S.C. § 104(a)(2)); interest and punitive damages are taxable'. Statute text: https://www.law.cornell.edu/uscode/text/26/104. Reused from facts-1769."
+    },
+    {
+      "surface": "body",
+      "claim": "<td>Collateral Source Rule</td>\n<td>Evidence of insurance payments generally inadmissible</td>\n<td>Evidence of insurance payments generally inadmissible</td>",
+      "verdict": "update",
+      "currentValue": "Georgia: the common-law rule still bars evidence of 'payments of medical, hospital, disability income, or other expenses of a tortious injury paid for by a plaintiff, governmental entity, or third party' (Olariu v. Marrero); the 1987 statute that would have admitted 'wage loss replacement, income replacement, or disability benefits' (O.C.G.A. § 51-12-1(b)) was struck down in Denton v. Con-Way Southern Express, 261 Ga. 41 (1991). But since April 21, 2025, O.C.G.A. § 51-12-1.1 (SB 68) 'abrogates the common law collateral source rule to the extent necessary' to admit, for medical expenses, 'both the amounts charged ... and the amounts actually necessary to satisfy such charges pursuant to the insurance contract or the applicable governmental workers' compensation program'. Lost-wage evidence is untouched. South Carolina: 'compensation received by an injured party from a source wholly independent of the wrongdoer will not reduce the damages owed by the wrongdoer' (Covington v. George, quoting Citizens & Southern National Bank v. Gregory, 320 S.C. 90 (1995)).",
+      "sourceName": "O.C.G.A. § 51-12-1.1; Denton v. Con-Way Southern Express, 261 Ga. 41 (1991); Covington v. George, 359 S.C. 100 (2004)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-1-1/",
+      "retrievedAt": "2026-09-25",
+      "note": "The Georgia cell is right for lost wages but is now incomplete on medical bills. Georgia cell: 'Sick pay, disability and insurance payments stay out of evidence on lost wages; since 2025 medical-bill evidence may include amounts health insurance actually paid (O.C.G.A. § 51-12-1.1)'. South Carolina cell can stay as written; optional cite Covington v. George. Denton opinion: https://law.justia.com/cases/georgia/supreme-court/1991/s90a1101-1.html; Olariu: https://law.justia.com/cases/georgia/court-of-appeals/2001/a00a2310-0.html."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Employer verification letter</strong> — A letter from your employer on company letterhead confirming your position, pay rate, hours worked, and dates missed. This is the single most important document for a lost wage claim.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "Practice guidance, not a legal claim. 'Single most important' is commentary; acceptable."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Tax returns</strong> — Two to three years of federal and state tax returns, particularly W-2s or 1099s, to establish your income history",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Matthews v. Porter, 239 S.C. 620 (1962)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1962/17881-1.html",
+      "retrievedAt": "2026-09-25",
+      "note": "Past earnings are admissible to show probable future earnings; no fixed lookback is required (Matthews). Form names are correct (Form W-2, Form 1099)."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Medical records and doctor's notes</strong> — Documentation from your treating physician that you were unable to work, including the specific dates and any work restrictions",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Walkley v. Dukes, 175 Ga. App. 820 (1985)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/1985/70660-0.html",
+      "retrievedAt": "2026-09-25",
+      "note": "The treating physician's impairment testimony carried the future-earnings award in Walkley (ten percent permanent impairment of the left upper extremity). Causation and amount are what the note proves."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>FMLA or disability paperwork</strong> — If you filed for Family and Medical Leave or short-term disability, those records corroborate your time away from work",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Olariu v. Marrero, 248 Ga. App. 824 (2001)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2001/a00a2310-0.html",
+      "retrievedAt": "2026-09-25",
+      "note": "Using the records to prove time missed is fine. The disability payments themselves are a collateral source in both states (Olariu: 'disability income'; Young v. Warr) and do not reduce the lost-wage award; the post does not say otherwise."
+    },
+    {
+      "surface": "body",
+      "claim": "Proving future losses requires expert testimony. A vocational rehabilitation expert can assess what jobs you can and cannot perform given your permanent restrictions. An economist can calculate the present value of your future lost income.",
+      "verdict": "update",
+      "currentValue": "Neither state requires an expert. Georgia: 'proof of the plaintiff's actual earnings, either before or after the injury, is not required to establish the value of the plaintiff's decreased earning capacity,' but 'there must nevertheless appear some evidence, either direct or circumstantial, tending to show what the plaintiff was capable of earning both before and after the injury' (Schriever v. Maddox); 'all future earnings or diminished future earnings are uncertain and difficult of ascertainment ... but this does not mean that a plaintiff should be denied a recovery' (Michaels v. Kroger, quoted in Walkley). South Carolina: 'Future damages in personal injury cases need not be proved to a mathematical certainty. Oftentimes a verdict involving future damages must be approximated. A wide latitude is allowed the jury' (Haltiwanger v. Barr).",
+      "sourceName": "Schriever v. Maddox, 259 Ga. App. 558 (2003); Haltiwanger v. Barr, 258 S.C. 27 (1972)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2003/a02a2052.html",
+      "retrievedAt": "2026-09-25",
+      "note": "Change 'requires expert testimony' to 'usually calls for expert testimony'. The rest of the paragraph (what each expert does) is accurate practice description. Georgia juries must reduce future earnings to present cash value (Walkley), which is the economist's job."
+    },
+    {
+      "surface": "body",
+      "claim": "<strong>Tax returns (Schedule C or K-1)</strong> — Your federal tax returns showing business income and expenses over the past two to three years",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "IRS Schedule C (Form 1040)",
+      "sourceUrl": "https://www.irs.gov/pub/irs-pdf/f1040sc.pdf",
+      "retrievedAt": "2026-09-25",
+      "note": "Schedule C is the sole-proprietor profit-or-loss form; Schedule K-1 reports a partner's or S-corporation shareholder's share. Correct."
+    },
+    {
+      "surface": "body",
+      "claim": "One challenge unique to self-employed workers: the IRS encourages you to deduct every legitimate business expense, which reduces your reported net income. The insurer will point to your tax return and argue that your low reported income means your lost wages are minimal. Your attorney needs to reconstruct your actual earning capacity, not just the number on line 31 of your Schedule C.",
+      "verdict": "update",
+      "currentValue": "Schedule C line 31 is 'Net profit or (loss). Subtract line 30 from line 29.' — the line number is right. 'The IRS encourages you to deduct' is loose; the Code allows the deduction, the IRS does not encourage it. Georgia distinguishes lost profits from lost earnings: 'Lost profits are recoverable as damages if such are shown with reasonable certainty' (DeVane v. Smith, § 51-12-2 annotations), and the plaintiff must show 'provable estimated gross revenues less the provable estimated expenses' (Bennett v. Smith, 245 Ga. 725 (1980)).",
+      "sourceName": "IRS Schedule C (Form 1040), line 31",
+      "sourceUrl": "https://www.irs.gov/pub/irs-pdf/f1040sc.pdf",
+      "retrievedAt": "2026-09-25",
+      "note": "Minimal edit: 'the tax code lets you deduct every legitimate business expense'. Keep 'line 31'. Optional Georgia precision: self-employed lost income is proved as net lost profits (revenue less the expenses you would have incurred), so the reconstruction has to be of net earning capacity, not gross receipts."
+    },
+    {
+      "surface": "body",
+      "claim": "Gig workers who drive for rideshare companies, deliver food, or freelance through platforms should download their full earning history from those platforms immediately after an accident. This data can disappear or become difficult to access over time.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "Practical advice; no legal claim. Georgia: 'It is not essential to the recovery of lost income benefits to show as a necessity a pattern of prior earnings, if the claimant can show that he has accepted and is engaged upon income-generating employment' (Robert & Co. v. Tigner), so platform records serve that purpose."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia treats lost wages as a component of compensatory damages under O.C.G.A. &sect; 51-12-12, which allows injured plaintiffs to recover \"the full value of the life of the plaintiff\" as measured by their ability to earn money. The phrase is broader than it sounds — it covers both past lost wages and diminished future earning capacity.",
+      "verdict": "update",
+      "currentValue": "O.C.G.A. § 51-12-12 contains no such phrase; it governs when a court may set aside a jury's damages verdict as inadequate or excessive. 'The full value of the life' is the wrongful-death measure in O.C.G.A. § 51-4-1(1) (facts-1769) and belongs to a survivor's claim, not a living plaintiff's. Georgia's actual framework: O.C.G.A. § 51-12-2 divides damages into general (presumed, no proof of amount) and special (must be proved); lost wages to the date of trial are 'a separate and distinct pecuniary damage that is recoverable, so long as the amount can be determined with reasonable certainty' (Dossie v. Sherwood); lost earning capacity is 'a separate category of damages that focuses on the permanent or total physical disability of the plaintiff' and is special damages requiring reasonable certainty (Schriever v. Maddox; Myrick v. Stephanos); diminished capacity to labor is an element of pain and suffering (general damages).",
+      "sourceName": "O.C.G.A. § 51-12-2; Dossie v. Sherwood, 308 Ga. App. 131 (2011); Schriever v. Maddox, 259 Ga. App. 558 (2003)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-2/",
+      "retrievedAt": "2026-09-25",
+      "note": "Second most consequential finding: a quotation attributed to a statute that does not contain it. Rewrite the paragraph: 'Georgia treats lost wages as special damages — losses that \"actually flow from a tortious act\" and \"must be proved in order to be recovered\" (O.C.G.A. § 51-12-2). Wages lost from the date of injury to the date of trial are recoverable when the amount can be determined with reasonable certainty, and lost future earning capacity is a separate item that requires evidence of a permanent impairment and of what you could earn before and after the injury. The loss of your ability to work is also an element of pain and suffering, which the jury values without a fixed formula.' Do not cite § 51-12-12 anywhere in the post."
+    },
+    {
+      "surface": "body",
+      "claim": "Under O.C.G.A. &sect; 9-3-33, you have <strong>two years from the date of your injury</strong> to file a personal injury lawsuit in Georgia. If you miss this deadline, you lose the right to recover lost wages and all other damages.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-33",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+      "retrievedAt": "2026-09-25",
+      "note": "Reused from facts-1769 / facts-3493; matches the profile table. Optional caveat from facts-3493: claims against a city, county or the state carry ante-litem notice deadlines as short as six months."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia follows a modified comparative fault rule under O.C.G.A. &sect; 51-12-33. If you are partially at fault for the accident, your damages — including lost wages — are reduced by your percentage of fault. If a jury finds you 20% at fault and awards $50,000 in lost wages, you receive $40,000. The critical threshold: if you are 50% or more at fault, you recover nothing.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(a), (g)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-25",
+      "note": "$50,000 x 0.80 = $40,000 checks; hypothetical. Reused from facts-1756 / facts-3493; SB 68 did not change the 50 percent bar."
+    },
+    {
+      "surface": "body",
+      "claim": "This rule applies to all types of accident claims in Georgia, from <a href=\"/practice-areas/car-accident-lawyers/\">car crashes</a> to <a href=\"/practice-areas/medical-malpractice-lawyers/\">medical malpractice cases</a>.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(a)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-25",
+      "note": "§ 51-12-33 applies to any 'action brought against one or more persons for injury to person or property'. Internal links unchanged."
+    },
+    {
+      "surface": "body",
+      "claim": "If your injury happened on the job, Georgia's <a href=\"/practice-areas/workers-compensation-lawyers/\">workers' compensation</a> system provides wage replacement benefits — typically two-thirds of your average weekly wage, subject to a state-imposed cap.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 34-9-261",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-7/section-34-9-261/",
+      "retrievedAt": "2026-09-25",
+      "note": "Reused from facts-1702: two-thirds of the average weekly wage, 'not more than $800.00 per week nor less than $50.00 per week' for injuries on or after July 1, 2023, for a maximum of 400 weeks (catastrophic injuries excepted). Optional: replace 'a state-imposed cap' with 'a statutory cap of $800 per week'. If the South Carolina figure is ever added: two-thirds capped at $1,189.94 for 2026, 500 weeks, S.C. Code § 42-9-10 (facts-1702)."
+    },
+    {
+      "surface": "body",
+      "claim": "However, if a third party (not your employer) caused or contributed to your injury, you may have both a workers' comp claim and a personal injury claim. The lost wages you can recover through each channel are different, and your workers' comp carrier will likely assert a subrogation lien against any personal injury recovery.",
+      "verdict": "update",
+      "currentValue": "O.C.G.A. § 34-9-11.1(a) preserves the third-party action; (b) gives the employer or insurer 'a subrogation lien, not to exceed the actual amount of compensation paid', but the lien 'shall only be recoverable if the injured employee has been fully and completely compensated, taking into consideration both the benefits received under this chapter and the amount of the recovery in the third-party claim, for all economic and noneconomic losses incurred as a result of the injury.'",
+      "sourceName": "O.C.G.A. § 34-9-11.1",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-11-1/",
+      "retrievedAt": "2026-09-25",
+      "note": "The lien exists, but 'will likely assert' overstates what it collects. Append: '— though under O.C.G.A. § 34-9-11.1 the carrier can enforce that lien only if the settlement fully compensates you for all of your economic and noneconomic losses, which is why these liens are often negotiated down or defeated.' From facts-1650: the third-party suit cannot be against a co-worker (§ 34-9-11(a))."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina allows recovery of lost wages as part of actual or compensatory damages in personal injury actions. The state's common law framework, supplemented by statutes like S.C. Code &sect; 15-38-15 governing joint and several liability, shapes how lost wage claims are handled when multiple defendants share fault.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Matthews v. Porter, 239 S.C. 620 (1962); S.C. Code § 15-38-15",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c038.php",
+      "retrievedAt": "2026-09-25",
+      "note": "Accurate: lost earnings and impaired earning capacity are common-law elements of actual damages (Matthews; Haltiwanger), and § 15-38-15 does govern apportionment among defendants. This use of § 15-38-15 is allowed by the profile rule (it is cited for apportionment, not for the plaintiff's bar). § 15-38-15 was rewritten by 2025 Act No. 42 (H.3430), effective January 1, 2026 — see the joint-and-several entry."
+    },
+    {
+      "surface": "body",
+      "claim": "Under S.C. Code &sect; 15-3-530, you have <strong>three years from the date of injury</strong> to file suit.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-3-530",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-25",
+      "note": "Reused from facts-1769 / facts-1756; matches the profile table."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina uses a modified comparative negligence standard. Your damages are reduced by your percentage of fault, and you are barred from recovery if you are found <strong>51% or more at fault</strong>. This is slightly more favorable than Georgia's 50% threshold — a plaintiff who is exactly 50% at fault can still recover in South Carolina but would be barred in Georgia.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Nelson v. Concrete Supply Co., 303 S.C. 243 (1991); O.C.G.A. § 51-12-33(g)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+      "retrievedAt": "2026-09-25",
+      "note": "Correct in both halves: Nelson lets a plaintiff recover when their negligence is not greater than the defendant's (so exactly 50 percent recovers), and § 51-12-33(g) bars a Georgia plaintiff at '50 percent or more'. Optional: add '(<em>Nelson v. Concrete Supply Co.</em>)' after 'standard'. Never cite § 15-38-15 for this bar."
+    },
+    {
+      "surface": "body",
+      "claim": "Under S.C. Code &sect; 15-38-15, South Carolina modified the traditional joint and several liability rule. If a defendant is found less than 50% at fault, that defendant is only responsible for their proportionate share of the damages. This affects lost wage recovery when multiple parties contributed to your accident. If one defendant is judgment-proof or uninsured, you may not be able to collect their share of your lost wages from the other defendants.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-38-15 (as amended by 2025 Act No. 42, eff. January 1, 2026)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c038.php",
+      "retrievedAt": "2026-09-25",
+      "note": "Verbatim-consistent with § 15-38-15(A): 'joint and several liability does not apply to any defendant whose conduct is determined to be less than fifty percent of the total fault ... A defendant whose conduct is determined to be less than fifty percent of the total fault shall only be liable for that percentage of the indivisible damages.' Two additions worth one sentence each: (1) subsection (F) — a defendant whose conduct is 'wilful, wanton, reckless, or intentional or conduct involving the illegal or illicit use, sale, or possession of drugs' stays jointly and severally liable for everything; (2) the version effective January 1, 2026 (2025 Act No. 42, H.3430) lets a defendant put a non-party tortfeasor on the verdict form if disclosed within 180 days (subsection (G)), so fault — and your collectible share — can now be spread to someone you never sued. Suggested add: 'Since January 1, 2026, a defendant can also ask the jury to assign fault to a person who is not a party to the case, which can shrink the share you can collect; a defendant whose conduct was wilful, wanton or reckless remains liable for the whole award.'"
+    },
+    {
+      "surface": "body",
+      "claim": "If you earned $80,000 the year before the accident but only $55,000 two years before that, they will argue the lower figure better represents your earning capacity. Consistent documentation over multiple years helps counter this.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Matthews v. Porter, 239 S.C. 620 (1962)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1962/17881-1.html",
+      "retrievedAt": "2026-09-25",
+      "note": "Hypothetical figures; the legal point (past earnings admitted to show probable future earnings, with no fixed lookback) is Matthews."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia and South Carolina both follow the \"eggshell plaintiff\" rule — a defendant takes the plaintiff as they find them — but proving that the accident aggravated your condition still requires solid medical evidence.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "AT Systems Southeast v. Carnes, 272 Ga. App. 671 (2005); Watson v. Wilkinson Trucking Co., 244 S.C. 217 (1964)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2005/a04a1879.html",
+      "retrievedAt": "2026-09-25",
+      "note": "Reused from facts-1651 / facts-3493 for Georgia. South Carolina: 'The plaintiff was entitled to recover all damages proximately resulting from the negligent acts of the defendant, including the aggravation of his preexisting condition' (Watson, https://law.justia.com/cases/south-carolina/supreme-court/1964/18209-1.html). Recovery is for the aggravation, which the post's last clause correctly implies."
+    },
+    {
+      "surface": "body",
+      "claim": "Both Georgia and South Carolina require injured plaintiffs to take reasonable steps to minimize their losses. If you turned down light-duty work that your doctor approved, or refused treatment that could have shortened your recovery, the insurer will argue your lost wages should be reduced. This does not mean you must accept any job or any treatment — only that your choices must be reasonable under the circumstances.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-11; Nestler v. Fields, 425 S.C. 528 (Ct. App. 2019); Newman v. Brown, 228 S.C. 472 (1955)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-11/",
+      "retrievedAt": "2026-09-25",
+      "note": "Georgia is statutory: 'When a person is injured by the negligence of another, he must mitigate his damages as far as is practicable by the use of ordinary care and diligence' (§ 51-12-11). South Carolina is common law: 'A party injured by the acts of another is required to do those things a person of ordinary prudence would do under the circumstances to mitigate his damages, but the law does not require him to exert himself unreasonably or incur substantial expense' (McClary v. Massey Ferguson, quoted in Nestler v. Fields, https://law.justia.com/cases/south-carolina/court-of-appeals/2019/5621.html); the defendant bears the burden of proving the loss could have been avoided. The post's 'reasonable under the circumstances' matches both. Optional cite: '(O.C.G.A. § 51-12-11)' after 'minimize their losses'."
+    },
+    {
+      "surface": "body",
+      "claim": "Our attorneys have recovered <strong>over $300 million</strong> for injured clients",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "profiles/writer-profile.md (firm facts: $300M+ recovered)",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "Matches the profile's firm-facts line. Contingency-fee statement and 1-844-RESULTS href (tel:+18447378587) also match the profile; /contact/ resolved in facts-1769."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Lost wages and lost earning capacity are two distinct categories of economic damages recoverable in Georgia and South Carolina personal injury cases. Lost wages cover income already missed during recovery, while lost earning capacity addresses permanent reductions in future income. Georgia's 2-year statute of limitations (O.C.G.A. § 9-3-33) and modified comparative fault rule (O.C.G.A. § 51-12-33) allow recovery if less than 50% at fault. South Carolina gives 3 years (S.C. Code § 15-3-530) with a 51% fault threshold. Self-employed and gig workers can recover using tax returns, contracts, and financial records.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Schriever v. Maddox; O.C.G.A. § 9-3-33; O.C.G.A. § 51-12-33; S.C. Code § 15-3-530; Nelson v. Concrete Supply Co.",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2003/a02a2052.html",
+      "retrievedAt": "2026-09-25",
+      "note": "Every figure verified; section symbols render properly. 'Permanent reductions' matches Georgia's focus on 'permanent or total physical disability' for lost earning capacity (Schriever), though Olariu allows loss of definite future earnings 'even though the injury is not permanent'. Renders in the Key Takeaways box above the article; no change needed."
+    },
+    {
+      "surface": "excerpt",
+      "claim": "Lost wages and lost earning capacity are different claims. How to prove each after an injury in Georgia or South Carolina, and what documentation you need.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "No factual claim beyond the distinction, which is verified. Publishes as the Article schema description."
+    },
+    {
+      "surface": "faq:0",
+      "claim": "Lost wages are income you already missed while recovering from your injuries. Lost earning capacity is a forward-looking claim for future income you will never earn because your injuries permanently reduced your ability to work. Both are recoverable in Georgia and South Carolina personal injury cases, but they require different types of proof and expert analysis.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Schriever v. Maddox, 259 Ga. App. 558 (2003); Haltiwanger v. Barr, 258 S.C. 27 (1972)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2003/a02a2052.html",
+      "retrievedAt": "2026-09-25",
+      "note": "Correct. Publishes as FAQPage structured data. 'Expert analysis' is fine as a description of practice; the legal standard does not require an expert (see the body entry)."
+    },
+    {
+      "surface": "faq:1",
+      "claim": "You will need documentation from your employer confirming your pay rate, hours missed, and reason for absence. Key evidence includes pay stubs, W-2s, tax returns, a verification letter from your employer, and a doctor's note connecting your absence to accident injuries. Self-employed workers can use tax returns, profit-and-loss statements, contracts, and client communications.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Dossie v. Sherwood, 308 Ga. App. 131 (2011)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2011/a10a1946.html",
+      "retrievedAt": "2026-09-25",
+      "note": "Evidence list is consistent with the reasonable-certainty standard; the doctor's note goes to causation ('if it has been sufficiently established that the loss of earnings was caused by the tortious conduct of the defendant'). Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:2",
+      "claim": "Yes. In both Georgia and South Carolina, you can recover compensation for paid time off you were forced to use because of your accident injuries. Those sick days and vacation days have monetary value, and you should not have to deplete your benefits because of someone else's negligence.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Bennett v. Haley, 132 Ga. App. 512 (1974); Covington v. George, 359 S.C. 100 (2004)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/1974/49072.html",
+      "retrievedAt": "2026-09-25",
+      "note": "Rests on the collateral-source rule: Georgia will not count 'continued salary or wage payments' against the plaintiff (Bennett v. Haley), and South Carolina bars a tortfeasor from benefiting from 'an insurance company, an employer, a family member, or other source' (Covington). Publishes as FAQPage structured data; no change needed."
+    },
+    {
+      "surface": "faq:3",
+      "claim": "Georgia's statute of limitations for personal injury claims, including lost wages, is 2 years from the date of injury under O.C.G.A. § 9-3-33. If you miss this deadline, you lose the right to recover any compensation. Lost earning capacity claims follow the same 2-year deadline.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-33",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+      "retrievedAt": "2026-09-25",
+      "note": "Correct; lost earning capacity is an element of the same injury action, so the same two-year period applies. Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:4",
+      "claim": "South Carolina gives you 3 years from the date of injury to file a personal injury claim under S.C. Code § 15-3-530. This applies to all damages including lost wages and lost earning capacity. Filing promptly is still advisable because evidence fades and witnesses become harder to locate over time.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-3-530",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-25",
+      "note": "Correct. Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:5",
+      "claim": "In Georgia, your lost wage award is reduced by your percentage of fault, and you recover nothing if you are 50% or more at fault (O.C.G.A. § 51-12-33). In South Carolina, the threshold is 51% — you can recover as long as your fault does not equal or exceed 51%. Both states reduce your total award proportionally to your share of blame.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(a), (g); Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-25",
+      "note": "Correct. Optional: '(Nelson v. Concrete Supply Co.)' after the South Carolina sentence; never § 15-38-15. Publishes as FAQPage structured data."
+    }
+  ],
+  "recommendedEdits": [
+    "Comparison table, 'Tax Treatment of Award' row, both cells: replace 'Lost wage awards generally taxable as income under federal law' with 'Not taxable when recovered for a physical injury (26 U.S.C. § 104(a)(2)); interest and punitive damages are taxable'.",
+    "Georgia Lost Wage Laws, first paragraph: delete the O.C.G.A. § 51-12-12 citation and the quoted phrase 'the full value of the life of the plaintiff' (that phrase is the wrongful-death measure in § 51-4-1); rewrite around O.C.G.A. § 51-12-2 (lost wages are special damages that 'must be proved in order to be recovered'), past lost wages recoverable when shown with reasonable certainty, lost earning capacity as a separate item requiring evidence of permanent impairment and of pre- and post-injury earning ability, and diminished capacity to labor as an element of pain and suffering.",
+    "Comparison table, 'Compensatory Damages Basis' row: Georgia cell to 'O.C.G.A. § 51-12-2 (general vs. special damages; lost wages are special damages)'; South Carolina cell to 'Common law (Matthews v. Porter; Haltiwanger v. Barr)' and remove § 15-38-15 from this row.",
+    "Comparison table, 'Collateral Source Rule' row, Georgia cell: 'Sick pay, disability and insurance payments stay out of evidence on lost wages; since 2025 medical-bill evidence may include amounts health insurance actually paid (O.C.G.A. § 51-12-1.1)'. South Carolina cell unchanged.",
+    "Intro: change 'Cornell Law Institute' to 'Cornell Law School's Legal Information Institute' (link unchanged).",
+    "Types of Lost Income: reword the lead-in to 'Georgia and South Carolina let you recover any earnings the injury cost you, as long as you can prove the amount with reasonable certainty. In practice that can include:'; soften the 'Promotion opportunities missed' and 'Benefits lost' bullets with 'may be recoverable'; optionally note after the PTO bullet that sick pay your employer paid does not reduce the award under the collateral-source rule.",
+    "Types of Lost Income closing paragraph: change 'Whatever income the accident took from you — directly or indirectly — is recoverable if you can prove it' to 'Whatever income the accident took from you is recoverable if you can prove the injury caused the loss and show the amount with reasonable certainty — not speculation.'",
+    "For Future Lost Earning Capacity: change 'Proving future losses requires expert testimony' to 'Proving future losses usually calls for expert testimony'.",
+    "Self-employed section: change 'the IRS encourages you to deduct' to 'the tax code lets you deduct'; keep 'line 31 of your Schedule C' (verified).",
+    "Workers' Compensation Interaction: after 'subrogation lien against any personal injury recovery' add ' — though under O.C.G.A. § 34-9-11.1 the carrier can enforce that lien only if the settlement fully compensates you for all of your economic and noneconomic losses, which is why these liens are often negotiated down or defeated'; optionally replace 'a state-imposed cap' with 'a statutory cap of $800 per week'.",
+    "South Carolina Joint and Several Liability: add 'Since January 1, 2026, a defendant can also ask the jury to assign fault to a person who is not a party to the case, which can shrink the share you can collect; a defendant whose conduct was wilful, wanton or reckless remains liable for the whole award.' (S.C. Code § 15-38-15(F), (G), as amended by 2025 Act No. 42).",
+    "Optional citations: '(O.C.G.A. § 51-12-11)' after 'minimize their losses' in the mitigation paragraph; '(Nelson v. Concrete Supply Co.)' after 'modified comparative negligence standard' in the South Carolina section — never § 15-38-15 for the plaintiff's bar.",
+    "No change to the excerpt, Key Takeaways, or any of the six FAQ answers; all verified.",
+    "Reviewer of record: Graeham C. Gillin (two-state post that states South Carolina law). No attorney attribution quote is present; per the 2026-09-23 rule, do not add one. No Spanish-twin figures change except the tax-treatment table cells and the Georgia statute paragraph, which the operator should mirror if a twin exists."
+  ],
+  "statuteCitations": [
+    {
+      "section": "O.C.G.A. § 51-12-2",
+      "name": "General and special damages distinguished; when recovered — special damages 'must be proved in order to be recovered'",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-2/"
+    },
+    {
+      "section": "O.C.G.A. § 51-12-1",
+      "name": "Types of damages; evidence admissible in actions involving special damages — subsection (b) (wage-loss and disability benefits admissible) held unconstitutional in Denton v. Con-Way Southern Express (1991)",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-1/"
+    },
+    {
+      "section": "O.C.G.A. § 51-12-1.1",
+      "name": "Special damages for medical and healthcare expenses; abrogation of common law collateral source rule to the extent necessary to admit amounts charged and amounts actually necessary to satisfy charges (SB 68, effective April 21, 2025)",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-1-1/"
+    },
+    {
+      "section": "O.C.G.A. § 51-12-11",
+      "name": "Mitigation of damages required; exception for positive and continuous torts",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-11/"
+    },
+    {
+      "section": "O.C.G.A. § 51-12-33",
+      "name": "Apportionment of damages; plaintiff barred at 50 percent or more (g)",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+    },
+    {
+      "section": "O.C.G.A. § 9-3-33",
+      "name": "Injuries to the person — two-year limitation",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+    },
+    {
+      "section": "O.C.G.A. § 34-9-261",
+      "name": "Temporary total disability — two-thirds of average weekly wage, $800 weekly maximum (injuries on or after July 1, 2023), 400 weeks",
+      "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-7/section-34-9-261/"
+    },
+    {
+      "section": "O.C.G.A. § 34-9-11.1",
+      "name": "Employee's right of action against third party; employer/insurer subrogation lien recoverable only if the employee has been fully and completely compensated",
+      "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-11-1/"
+    },
+    {
+      "section": "S.C. Code § 15-3-530",
+      "name": "Three-year limitation for personal injury actions",
+      "url": "https://www.scstatehouse.gov/code/t15c003.php"
+    },
+    {
+      "section": "S.C. Code § 15-38-15",
+      "name": "Liability of tortfeasor responsible for less than fifty percent of total fault; apportionment; wilful, wanton, reckless, intentional and drug exceptions (F); allocation to non-party tortfeasors (G) — version effective January 1, 2026 (2025 Act No. 42, H.3430). Cite only for apportionment among defendants, never for the plaintiff's comparative-fault bar",
+      "url": "https://www.scstatehouse.gov/code/t15c038.php"
+    },
+    {
+      "section": "S.C. Code § 42-9-10",
+      "name": "Workers' compensation total disability — 66 2/3 percent of average weekly wage, capped at the state average weekly wage ($1,189.94 for 2026), 500 weeks",
+      "url": "https://www.scstatehouse.gov/code/t42c009.php"
+    },
+    {
+      "section": "26 U.S.C. § 104(a)(2)",
+      "name": "Compensation for injuries or sickness — exclusion of damages (other than punitive damages) received on account of personal physical injuries or physical sickness",
+      "url": "https://www.law.cornell.edu/uscode/text/26/104"
+    },
+    {
+      "section": "Denton v. Con-Way Southern Express, Inc., 261 Ga. 41, 402 S.E.2d 269 (1991)",
+      "name": "O.C.G.A. § 51-12-1(b) held unconstitutional; Georgia's common-law collateral source rule restored",
+      "url": "https://law.justia.com/cases/georgia/supreme-court/1991/s90a1101-1.html"
+    },
+    {
+      "section": "Bennett v. Haley, 132 Ga. App. 512, 208 S.E.2d 302 (1974)",
+      "name": "Collateral source rule — 'continued salary or wage payments' not taken into account in computing damages",
+      "url": "https://law.justia.com/cases/georgia/court-of-appeals/1974/49072.html"
+    },
+    {
+      "section": "Olariu v. Marrero, 248 Ga. App. 824, 549 S.E.2d 121 (2001)",
+      "name": "Georgia collateral source rule covers 'disability income'; lost wages recoverable where shown with reasonable certainty; past and future lost earnings awarded in one action",
+      "url": "https://law.justia.com/cases/georgia/court-of-appeals/2001/a00a2310-0.html"
+    },
+    {
+      "section": "Dossie v. Sherwood, 308 Ga. App. 131 (2011)",
+      "name": "Lost earnings from date of injury to date of trial are 'a separate and distinct pecuniary damage that is recoverable, so long as the amount can be determined with reasonable certainty'",
+      "url": "https://law.justia.com/cases/georgia/court-of-appeals/2011/a10a1946.html"
+    },
+    {
+      "section": "Schriever v. Maddox, 259 Ga. App. 558 (2003)",
+      "name": "Diminished capacity to labor is an element of pain and suffering; lost earning capacity is a separate category of special damages requiring reasonable certainty (quoting Myrick v. Stephanos, 220 Ga. App. 520 (1996))",
+      "url": "https://law.justia.com/cases/georgia/court-of-appeals/2003/a02a2052.html"
+    },
+    {
+      "section": "Walkley v. Dukes, 175 Ga. App. 820 (1985)",
+      "name": "Future earnings reduced to present cash value; jury may infer loss of earning capacity from impairment evidence (quoting Jones v. Hutchins and Michaels v. Kroger)",
+      "url": "https://law.justia.com/cases/georgia/court-of-appeals/1985/70660-0.html"
+    },
+    {
+      "section": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991)",
+      "name": "South Carolina modified comparative negligence — plaintiff recovers if fault not greater than defendant's (51 percent bar)",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html"
+    },
+    {
+      "section": "Matthews v. Porter, 239 S.C. 620, 124 S.E.2d 321 (1962)",
+      "name": "Loss or impairment of earning capacity is a proper element of compensation; past earnings admissible to show probable future earnings, no fixed lookback",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/1962/17881-1.html"
+    },
+    {
+      "section": "Haltiwanger v. Barr, 258 S.C. 27 (1972)",
+      "name": "Future damages, including impaired earning capacity, recoverable to the extent reasonably certain; need not be proved to a mathematical certainty",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/1972/19370-1.html"
+    },
+    {
+      "section": "Covington v. George, 359 S.C. 100, 597 S.E.2d 142 (2004)",
+      "name": "South Carolina collateral source rule — compensation from a source wholly independent of the wrongdoer (insurer, employer, family member) does not reduce damages",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/2004/25828.html"
+    },
+    {
+      "section": "Young v. Warr, 252 S.C. 179 (1969)",
+      "name": "South Carolina collateral source rule — tortfeasor gets no credit for payments from an independent source",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/1969/18862-1.html"
+    },
+    {
+      "section": "Nestler v. Fields, 425 S.C. 528 (Ct. App. 2019)",
+      "name": "South Carolina duty to mitigate — ordinary prudence, no unreasonable exertion or substantial expense required; reasonableness is a jury question (quoting McClary v. Massey Ferguson)",
+      "url": "https://law.justia.com/cases/south-carolina/court-of-appeals/2019/5621.html"
+    },
+    {
+      "section": "Newman v. Brown, 228 S.C. 472 (1955)",
+      "name": "South Carolina — 'undoubted general rule' that the injured party must use reasonable means to minimize damages",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/1955/17096-1.html"
+    },
+    {
+      "section": "Watson v. Wilkinson Trucking Co., 244 S.C. 217 (1964)",
+      "name": "South Carolina — recovery for aggravation of a pre-existing condition; loss of earning power as an element of damages",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/1964/18209-1.html"
+    }
+  ],
+  "authoritativeLinks": [
+    {
+      "name": "IRS — Tax implications of settlements and judgments (lost wages from a physical injury are excludable)",
+      "url": "https://www.irs.gov/government-entities/tax-implications-of-settlements-and-judgments"
+    },
+    {
+      "name": "IRS Publication 4345 — Settlements: Taxability",
+      "url": "https://www.irs.gov/pub/irs-pdf/p4345.pdf"
+    },
+    {
+      "name": "IRS Schedule C (Form 1040) — line 31 'Net profit or (loss)'",
+      "url": "https://www.irs.gov/pub/irs-pdf/f1040sc.pdf"
+    },
+    {
+      "name": "Legal Information Institute, Cornell Law School — Wex: damages",
+      "url": "https://www.law.cornell.edu/wex/damages"
+    },
+    {
+      "name": "26 U.S.C. § 104 — Compensation for injuries or sickness (LII)",
+      "url": "https://www.law.cornell.edu/uscode/text/26/104"
+    },
+    {
+      "name": "S.C. Code Title 15, Chapter 38 — Contribution Among Tortfeasors (§ 15-38-15, both the pre-2026 and effective-January-1-2026 versions)",
+      "url": "https://www.scstatehouse.gov/code/t15c038.php"
+    }
+  ]
+}

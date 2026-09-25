@@ -1,0 +1,352 @@
+{
+  "postId": 1656,
+  "slug": "impact-of-surgery-recommendation",
+  "liveUrl": "https://rodenlaw.com/blog/impact-of-surgery-recommendation/",
+  "verifiedAt": "2026-09-25",
+  "jurisdiction": "both",
+  "jurisdictionRecommendation": "Stamp both states, lightly (three insertions, no new section). Reasons: (1) The post's central question — whether surgery raises the value of a claim — turns on how medical expenses are measured, and that rule now differs materially by state. Georgia's SB 68 (O.C.G.A. § 51-12-1.1, effective April 21, 2025, applying to causes of action arising on or after that date) limits medical specials to 'the reasonable value of medically necessary care' and lets the jury see both the amounts billed and the amounts health insurance actually has to pay; South Carolina keeps the common-law collateral source rule, so the reasonable value is the measure, the billed amount is evidence of it, and the defendant cannot use insurer payments or write-offs to argue it down (Covington v. George, S.C. 2004; Haselden v. Davis, S.C. 2003). Stated generically, the post is now wrong for one state or the other. (2) The post promises to 'work with your medical provider to delay payment for the procedure until after you have received your settlement' — a letter of protection. In Georgia that arrangement is now discoverable by the insurer in full (§ 51-12-1.1(d): the letter, itemized charges, any sale of the receivable and who referred the patient). A Georgia reader must be told that; a South Carolina reader must not be. (3) The 'When Will I Receive My Settlement?' section and faq:2 give no dates at all; the only hard dates are the two statutes of limitations (2 years O.C.G.A. § 9-3-33; 3 years S.C. Code § 15-3-530(5)) and, in Georgia motor-vehicle cases, the 30-day acceptance / 40-day payment floors of § 9-11-67.1. Same approach as facts-1864 (generic post stamped with both states). Reviewer by rule: once South Carolina law is stated, Graeham C. Gillin, never Eric Roden. Do not add an attribution quote; the post has none.",
+  "reviewerByRule": "Graeham C. Gillin (two-state post that will state South Carolina law; never Eric Roden). No attribution quote on this refresh.",
+  "researchNotes": "law.justia.com returns 403 to curl and WebFetch, so every Georgia page was opened in a Chrome tab (closed at the end). Read in full on 2026-09-25: § 51-12-1.1 (full text, History line 'Ga. L. 2025, p. 19, § 7/SB 68, effective April 21, 2025', Editor's note that sections 6 and 7 of SB 68 'shall apply only with respect to causes of action arising on or after the effective date'), § 51-12-2 (full text), § 51-12-11 (opening sentence located on the page). Confirmed to resolve by page title on the same day: § 9-11-67.1, § 9-3-33, § 33-4-6; their substance is reused from sibling packs verified this week (1722 for § 9-11-67.1 and § 33-4-6; 1653/1702 for § 9-3-33). South Carolina statutes read directly from www.scstatehouse.gov (HTTP 200): § 15-3-530(5), § 15-3-535, § 38-59-40. Court opinions: Covington v. George (S.C. 2004) and Haltiwanger v. Barr (S.C. 1972) opened on Justia and the quoted holdings located in the opinion text; Haselden v. Davis (S.C. 2003), Barnes v. Cornett (Ga. App. 1975) and Hughes v. Oconee County (S.C. Ct. App. 2007, unpublished) were read through a Justia-restricted search extract of the opinion pages and were not opened in a tab — treat their quotes as verified against Justia's text but do not cite Hughes (unpublished) in copy. The Chrome tab identifiers answered inconsistently when four Justia tabs were navigated in parallel (page text came back from the wrong tab twice); work one tab at a time on this host. rodenlaw.com returns 200 with a browser user agent for the live URL, all five internal links and the image (checked with 0.4 s gaps). The post carries no tel: link, no attorney name, no office address and no statistic; data/statistics.json was not needed. The post names no state and cites no statute today.",
+  "verifiedClaims": [
+    {
+      "surface": "body",
+      "claim": "It's important to remember that more severe injuries that require more extensive treatment may result in higher compensation.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-2 (special damages 'must be proved in order to be recovered'); Haselden v. Davis (S.C. 2003) ('entitled to recover the reasonable value of those medical services')",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-2/",
+      "retrievedAt": "2026-09-25",
+      "note": "Hedged ('may') and stated as practice, with no figure or ratio. Keep. The mechanism is that medical expenses are special damages measured by the reasonable value of the care, so more care that is medically necessary means a larger provable figure — not a multiplier and not a rule that surgery raises value."
+    },
+    {
+      "surface": "body",
+      "claim": "If a doctor recommends surgery, you may be able to receive compensation for the costs associated with the procedure.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-1.1(b) ('limited to the reasonable value of medically necessary care, treatment, or services'); Haselden v. Davis (S.C. 2003)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-1-1/",
+      "retrievedAt": "2026-09-25",
+      "note": "Correct in both states. If the refresh stamps this section: 'In Georgia the recoverable amount is the reasonable value of medically necessary care (O.C.G.A. § 51-12-1.1); in South Carolina it is the reasonable value of the services, and the amount billed is evidence of that value (Haselden v. Davis).' Future surgery that has been recommended but not yet performed is recoverable in both states when it is reasonably certain to be needed: Georgia's statute expressly covers 'past, present, or future' expenses and 'projected future expenses' (§ 51-12-1.1(c), (f)); South Carolina allows 'the reasonable value of medical services ... to the extent that these injuries are reasonably certain to result in the future' (Haltiwanger v. Barr, S.C. 1972)."
+    },
+    {
+      "surface": "body",
+      "claim": "However, the severity and complexity of your injuries and treatment will affect the amount of compensation you may receive.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-2; § 51-12-1.1(b)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-2/",
+      "retrievedAt": "2026-09-25",
+      "note": "Practice statement, no figure. Keep."
+    },
+    {
+      "surface": "body",
+      "claim": "If your doctor has not recommended surgery, but you choose to have the operation anyway, you may not be able to recover compensation for the cost of the procedure.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-1.1(b), (f) ('medically necessary care'; either side may challenge 'the medical necessity of any treatment'); Barnes v. Cornett, 134 Ga. App. 120 (1975) (medical expenses must be 'reasonable and necessary before they are recoverable'); Covington v. George (S.C. 2004) ('a defendant is permitted to attack the necessity and reasonableness of medical care and costs')",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-1-1/",
+      "retrievedAt": "2026-09-25",
+      "note": "Accurate and hedged. The legal hook in both states is that only reasonable and medically necessary treatment is recoverable; an elective procedure no treating physician recommended is the textbook challenge. Optional stamp: 'Georgia's statute limits recovery to medically necessary care (O.C.G.A. § 51-12-1.1), and in South Carolina the insurer may challenge the necessity of any treatment.'"
+    },
+    {
+      "surface": "body",
+      "claim": "Your doctor may also recommend less expensive alternatives to surgery that could effectively treat your injury.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "General medical statement with no legal or numerical content. Keep."
+    },
+    {
+      "surface": "body",
+      "claim": "If your doctor recommends surgery, the insurance company may be hesitant to offer a larger settlement, and could even accuse your doctor of recommending surgery solely for financial gain.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-1.1(d) (letter of protection, itemized charges, sale of receivables and the identity of the referrer are 'relevant and discoverable')",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-1-1/",
+      "retrievedAt": "2026-09-25",
+      "note": "Framed as practice ('may', 'could'). Keep. Since April 21, 2025 the accusation has a statutory footing in Georgia: an insurer can discover whether the surgeon treated under a letter of protection and who referred the patient, which is exactly the 'financial gain' argument. Worth one sentence in the Georgia stamp; not a rule in South Carolina."
+    },
+    {
+      "surface": "body",
+      "claim": "Insurance adjusters typically resist offering generous settlements.",
+      "verdict": "update",
+      "currentValue": "Expect the adjuster to push back on the value of surgical care rather than to volunteer a generous figure.",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "A population claim ('typically') about adjuster behaviour with no source. Keep the practical warning, drop the generalisation — reword to a practice statement addressed to the reader. No figure to remove."
+    },
+    {
+      "surface": "body",
+      "claim": "Such offers are often less than what you truly deserve and may leave you having to pay for medical costs yourself.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "Firm-experience warning, hedged ('often', 'may'), no figure. Keep."
+    },
+    {
+      "surface": "body",
+      "claim": "Remember, accepting an early settlement offer will forfeit your ability to pursue additional compensation should you need it, so it's essential to make a strong case for the compensation you deserve.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-11-67.1 (a settlement offer must state 'the type of release, if any, the claimant or claimants will provide to each releasee'; full or limited)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-8/section-9-11-67-1/",
+      "retrievedAt": "2026-09-25",
+      "note": "A settlement is paid against a release, which ends the claim against the released party. Correct in both states as a matter of contract; the Georgia statute shows the release is a defined term of any motor-vehicle settlement offer. Keep."
+    },
+    {
+      "surface": "body",
+      "claim": "When it comes to major surgeries and expensive treatments, insurance companies are often hesitant to provide coverage before the procedure takes place.",
+      "verdict": "update",
+      "currentValue": "The at-fault driver's liability insurer does not pay your medical bills as they come due. It pays once, at settlement or judgment, so the cost of a major surgery usually has to be carried until then.",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "As written the sentence conflates a liability insurer (which never 'provides coverage' for the claimant's treatment) with the reader's own health insurer. No statute in either state obliges a third-party liability carrier to advance medical costs before settlement. Reword as practice, no figure, no statute."
+    },
+    {
+      "surface": "body",
+      "claim": "If you have been in a car accident, your health or auto insurance coverage may be able to provide some relief.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "Hedged and generic; first-party health, med-pay and PIP-type coverage do pay as bills come due where the policy carries them. Keep. Do not add South Carolina's mandatory-UM rule here; it concerns liability, not medical payments."
+    },
+    {
+      "surface": "body",
+      "claim": "Additionally, we can work with your medical provider to delay payment for the procedure until after you have received your settlement.",
+      "verdict": "update",
+      "currentValue": "Additionally, we can work with your medical provider to delay payment for the procedure until after you have received your settlement. In Georgia, for injuries on or after April 21, 2025, that arrangement — a letter of protection — is discoverable by the insurer in full: the letter itself, the itemized charges, any sale of the bill to a third party and the price paid for it, and who referred you for the treatment (O.C.G.A. § 51-12-1.1). We prepare every arrangement on the assumption that the insurer will read it. South Carolina has no such disclosure rule.",
+      "sourceName": "O.C.G.A. § 51-12-1.1(d)(1)-(4); Editor's note to § 51-12-1.1 (applies to causes of action arising on or after April 21, 2025)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-1-1/",
+      "retrievedAt": "2026-09-25",
+      "note": "Most consequential finding. The practice is lawful and common, but a Georgia reader who takes this sentence at face value does not know the insurer will see the letter of protection, the referral chain and any factoring discount and will use them to attack the reasonableness of the bill. Stating the practice without the disclosure rule is now misleading in Georgia."
+    },
+    {
+      "surface": "body",
+      "claim": "When a physician recommends surgery, insurance companies may offer a settlement to avoid a legal dispute.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "Hedged practice statement. Keep."
+    },
+    {
+      "surface": "body",
+      "claim": "The majority of personal injury claims settle before reaching the trial stage, as the legal process can be lengthy and costly.",
+      "verdict": "drop",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "Unsourced settlement-rate claim; no primary source and data/statistics.json carries none. facts-1722 dropped the identical claim (its ABA link was dead). Delete the sentence; the paragraph reads cleanly without it."
+    },
+    {
+      "surface": "body",
+      "claim": "For example, if you were in a car accident and the other driver's insurance company does not accept liability, your case may go to court. When liability is unclear, insurance companies may choose to litigate.",
+      "verdict": "update",
+      "currentValue": "Keep both sentences and add the deadline that governs them: a lawsuit must be filed within two years of the injury in Georgia (O.C.G.A. § 9-3-33) and within three years in South Carolina (S.C. Code § 15-3-530); negotiation does not pause either clock.",
+      "sourceName": "O.C.G.A. § 9-3-33; S.C. Code § 15-3-530(5)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-25",
+      "note": "§ 15-3-530(5) read on scstatehouse.gov: 'an action for assault, battery, or any injury to the person or rights of another' within three years; § 15-3-535 runs it from when the person 'knew or by the exercise of reasonable diligence should have known' of the cause of action. § 9-3-33 (two years) reused from facts-1653/1702 and confirmed to resolve today. Matches the writer-profile jurisdiction table."
+    },
+    {
+      "surface": "body",
+      "claim": "Hiring an experienced personal injury attorney is the best way to avoid costly litigation.",
+      "verdict": "update",
+      "currentValue": "An attorney-prepared demand carries weight the insurer has to answer. In Georgia motor-vehicle cases a pre-suit offer prepared by or with an attorney is governed by O.C.G.A. § 9-11-67.1: it must give the insurer at least 30 days to accept and at least 40 days to pay, and an insurer that lets a compliant offer lapse loses the statute's protection for that offer. South Carolina has no demand statute; the demand is a negotiation tool, and the lawsuit is the pressure.",
+      "sourceName": "O.C.G.A. § 9-11-67.1 (reused from facts-1722, verified this week; URL confirmed to resolve 2026-09-25)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-8/section-9-11-67-1/",
+      "retrievedAt": "2026-09-25",
+      "note": "'The best way' is an unsourced superlative. Replace it with the concrete, verifiable reason an attorney changes the insurer's calculus in Georgia. Do not promise bad-faith penalties: O.C.G.A. § 33-4-6 (50 percent or $5,000 plus fees, 60-day demand) and S.C. Code § 38-59-40 (attorney's fees after a 90-day refusal, capped at one-third of the judgment) both run only in favour of 'the holder of the policy' — first-party claims such as UM/UIM or med-pay — never against the other driver's insurer. § 38-59-40 read on scstatehouse.gov today; § 33-4-6 reused from facts-1722 and confirmed to resolve."
+    },
+    {
+      "surface": "body",
+      "claim": "An attorney can gather and preserve all necessary evidence to prove your claim and make a strong case for compensation to the insurance company, increasing the likelihood of a settlement.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "Firm-positioning statement, no figure, no rule of law. Keep."
+    },
+    {
+      "surface": "body",
+      "claim": "Contact us right away to set up a free, initial consultation.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "profiles/writer-profile.md ('Free Case Review — No Fees Unless We Win'; 'contingency fee, no fees unless we win'); profiles/firm-facts.md",
+      "sourceUrl": "https://rodenlaw.com/practice-areas/personal-injury-lawyers/",
+      "retrievedAt": "2026-09-25",
+      "note": "Free consultation and contingency fee are both in the profile. The closing names the firm only — no attorney, office, address or phone — so there is nothing to check against firm-facts.md and nothing wrong. Optional: add the toll-free line as 'Call 1-844-RESULTS' with href tel:+18447378587 (the profile's verified number); if a phone is added it must be that string and that href."
+    },
+    {
+      "surface": "body",
+      "claim": "<img class=\"right\" src=\"https://rodenlaw.com/wp-content/uploads/assets/media/images/blog/surgical-recommendation-blog.png\" alt=\"Doctor's gloved hand reaching for operating tools \" width=\"303\" height=\"202\" />",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "rodenlaw.com (HTTP 200 with browser user agent)",
+      "sourceUrl": "https://rodenlaw.com/wp-content/uploads/assets/media/images/blog/surgical-recommendation-blog.png",
+      "retrievedAt": "2026-09-25",
+      "note": "Image resolves. The alt text ends in a trailing space; trim it. Formatting only."
+    },
+    {
+      "surface": "body",
+      "claim": "<h2><span id=\"docs-internal-guid-a5f3ac8b-7fff-eaa5-742b-852dad42fb35\"><span>Does a More Serious Injury Mean Higher Compensation?</span></span></h2>",
+      "verdict": "update",
+      "currentValue": "<h2>Does a More Serious Injury Mean Higher Compensation?</h2>",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "Formatting cleanup the refresher may do without changing heading text: all five H2s and two body paragraphs are wrapped in Google Docs 'docs-internal-guid-…' span pairs (ids a5f3ac8b, 00ba0a37, 82df5605, 7b99a851, a459d6cd on the headings; e753506a and f9e61c5f on the two un-wrapped paragraphs after 'When Will I Receive My Settlement?' and in the closing). Unwrap the spans and put the two bare paragraphs inside <p> tags. Keep every heading's words exactly as they are, including the mixed capitalisation of 'If I have Surgery will I get a Bigger Settlement?' and 'What to do if I don't get an offer from the Insurance Company?'."
+    },
+    {
+      "surface": "excerpt",
+      "claim": "How a surgery recommendation changes a personal injury claim: what it does to case value, and why insurers scrutinise the decision so closely.",
+      "verdict": "update",
+      "currentValue": "How a surgery recommendation changes a personal injury claim: what it does to case value, and why insurers scrutinize the decision so closely.",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "Substance is accurate and unchanged. 'scrutinise' is a British spelling on a U.S. firm's site; the body and every sibling use American spelling. One-letter fix. The excerpt is published as the Article schema description, so the change is visible twice."
+    },
+    {
+      "surface": "faq:0",
+      "claim": "More severe injuries requiring more extensive treatment may result in higher compensation, but there is no fixed uplift. What matters is the documented treatment, the prognosis and the effect on your life, not the procedure alone.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-2; § 51-12-1.1(b); Haselden v. Davis (S.C. 2003)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-1-1/",
+      "retrievedAt": "2026-09-25",
+      "note": "Correct: no statute in either state attaches a value to a procedure. Keep as is. Do not introduce a multiplier or per-diem figure (facts-1651/1653/3493 settled that those are informal conventions, not rules)."
+    },
+    {
+      "surface": "faq:1",
+      "claim": "Follow your physician's medical advice. Declining recommended treatment can harm your recovery, and it also gives the insurer grounds to argue that you failed to mitigate your own losses.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-11 ('When a person is injured by the negligence of another, he must mitigate his damages as far as is practicable by the use of ordinary care and diligence'); South Carolina common law (an injured party 'is required to do those things a person of ordinary prudence would do under the circumstances to mitigate damages; however, the law does not require unreasonable exertion or substantial expense', and the defendant bears the burden of proving the damages could have been avoided)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-11/",
+      "retrievedAt": "2026-09-25",
+      "note": "Accurate and correctly hedged ('grounds to argue'). Both states impose a duty to mitigate; neither makes declining a risky or expensive surgery an automatic failure to mitigate, and in South Carolina the insurer carries the burden of proving mitigation was possible and reasonable. If a Georgia citation is added, use § 51-12-11. Do not cite a South Carolina case here — the quotation above comes from an unpublished Court of Appeals opinion (Hughes v. Oconee County, 2007-UP-461) restating Newman v. Brown, 228 S.C. 472 (1955), and unpublished opinions are not cited in copy."
+    },
+    {
+      "surface": "faq:2",
+      "claim": "Generally not before your treatment has reached a stable point, because that is when the full extent of the injury is known. Settling earlier risks accepting a figure that does not cover care you still need.",
+      "verdict": "update",
+      "currentValue": "Generally not before your treatment has reached a stable point — what doctors call maximum medical improvement — because that is when the full extent of the injury is known. Settling earlier risks accepting a figure that does not cover care you still need. No rule sets a settlement date. The only hard deadlines are for filing suit: two years from the injury in Georgia (O.C.G.A. § 9-3-33) and three years in South Carolina (S.C. Code § 15-3-530). In Georgia motor-vehicle cases an attorney's pre-suit demand must also give the insurer at least 30 days to accept and 40 days to pay (O.C.G.A. § 9-11-67.1).",
+      "sourceName": "O.C.G.A. § 9-3-33; S.C. Code § 15-3-530(5); O.C.G.A. § 9-11-67.1 (30/40-day floors reused from facts-1722); MMI framing reused from facts-1702",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-25",
+      "note": "The existing answer is right but dateless. Neither state defines MMI for injury claims (facts-1702), so keep it as a medical term, not a legal one. Neither state imposes a deadline on the at-fault driver's insurer to answer a bodily-injury demand (facts-1722). Do not add any 'most cases settle within N months' figure."
+    },
+    {
+      "surface": "faq:3",
+      "claim": "That is not the end of the process. A claim can proceed to formal negotiation or litigation, and an attorney's involvement often changes an insurer's posture where an unrepresented claimant was being ignored.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-11-67.1 (applies to offers 'prepared by or with the assistance of an attorney')",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-8/section-9-11-67-1/",
+      "retrievedAt": "2026-09-25",
+      "note": "Practice statement, hedged ('often'). Keep. Optional Georgia clause: 'In Georgia an attorney-prepared demand in a motor-vehicle case triggers O.C.G.A. § 9-11-67.1.' Guardrail: the answer must not promise bad-faith penalties against the other driver's insurer — § 33-4-6 and § 38-59-40 are first-party remedies for the policyholder only."
+    },
+    {
+      "surface": "faq:4",
+      "claim": "Discuss the details of your case with an experienced attorney before making decisions about settlement. Documenting the recommendation and the reasoning behind it is what allows the claim to account for it.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-1.1(b), (f) (reasonableness and medical necessity are contestable; the trier of fact sets the amount)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-1-1/",
+      "retrievedAt": "2026-09-25",
+      "note": "Accurate. Documentation of medical necessity is exactly what § 51-12-1.1(f) puts in issue in Georgia and what Covington lets a South Carolina defendant attack. Keep."
+    }
+  ],
+  "recommendedEdits": [
+    "Body, 'If I have Surgery…' section: after the first paragraph add the medical-expense measure side by side — Georgia: recoverable medical expenses are 'the reasonable value of medically necessary care' and, for injuries on or after April 21, 2025, the jury sees both what was billed and what your health insurance actually has to pay (O.C.G.A. § 51-12-1.1); South Carolina: the measure is the reasonable value of the care, the amount billed is evidence of it, and the insurer cannot use what a collateral source paid or wrote off to argue it down (Covington v. George, S.C. 2004). One sentence each, no dollar figures.",
+    "Body, same section: add that a recommended surgery not yet performed is recoverable when it is reasonably certain to be needed — Georgia's statute covers 'past, present, or future' expenses (§ 51-12-1.1(c)); South Carolina allows future medical expenses 'to the extent that these injuries are reasonably certain to result in the future' (Haltiwanger v. Barr, S.C. 1972).",
+    "Body: reword 'Insurance adjusters typically resist offering generous settlements.' to a practice statement without 'typically' (see verifiedClaims).",
+    "Body, 'When Will I Receive My Settlement?': reword the 'hesitant to provide coverage' sentence so it says the at-fault driver's liability insurer pays once, at settlement or judgment, not as bills come due.",
+    "Body, same section: after 'delay payment for the procedure until after you have received your settlement', add the Georgia letter-of-protection disclosure sentence from verifiedClaims (§ 51-12-1.1(d)) and state that South Carolina has no such rule. This is the most consequential edit.",
+    "Body, 'What to do if I don't get an offer…': delete 'The majority of personal injury claims settle before reaching the trial stage, as the legal process can be lengthy and costly.' (unsourced).",
+    "Body, same section: after 'insurance companies may choose to litigate', add the filing deadlines — two years in Georgia (O.C.G.A. § 9-3-33), three years in South Carolina (S.C. Code § 15-3-530) — and that negotiation does not pause either clock.",
+    "Body, same section: replace 'Hiring an experienced personal injury attorney is the best way to avoid costly litigation.' with the § 9-11-67.1 sentence from verifiedClaims (30 days to accept, 40 to pay, insurer loses the statute's protection if it lets a compliant offer lapse); say South Carolina has no demand statute. Do not mention bad-faith penalties anywhere in the post.",
+    "faq:2: replace with the dated answer in verifiedClaims (MMI as a medical term; no rule sets a settlement date; § 9-3-33 / § 15-3-530; § 9-11-67.1 floors).",
+    "Excerpt: 'scrutinise' -> 'scrutinize'.",
+    "Formatting (no text change): unwrap every 'docs-internal-guid-…' span pair on the five H2s and the two bare paragraphs, wrap those two paragraphs in <p>, and trim the trailing space in the image alt text. Keep heading wording and capitalisation exactly as published.",
+    "Reviewer meta: once South Carolina law is stated, record Graeham C. Gillin as reviewer; do not add an attribution quote; do not attribute anything to Eric Roden.",
+    "Keep the post short: every addition above is one or two sentences inside an existing paragraph; add no new H2, no statistics, no settlement-timeline figure, no multiplier."
+  ],
+  "statuteCitations": [
+    {
+      "section": "O.C.G.A. § 51-12-1.1",
+      "name": "Special damages for medical and healthcare expenses; medical and healthcare payment evidence; abrogation of common law collateral source rule (SB 68, effective April 21, 2025; applies to causes of action arising on or after that date)",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-1-1/"
+    },
+    {
+      "section": "O.C.G.A. § 51-12-2",
+      "name": "General and special damages distinguished; when recovered",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-2/"
+    },
+    {
+      "section": "O.C.G.A. § 51-12-11",
+      "name": "Mitigation of damages required; exception",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-11/"
+    },
+    {
+      "section": "O.C.G.A. § 9-11-67.1",
+      "name": "Settlement offers and agreements for personal injury, bodily injury, and death from motor vehicle; payment methods",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-8/section-9-11-67-1/"
+    },
+    {
+      "section": "O.C.G.A. § 9-3-33",
+      "name": "Injuries to the person; injuries to reputation; loss of consortium; exception (two-year limitation)",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+    },
+    {
+      "section": "O.C.G.A. § 33-4-6",
+      "name": "Liability of insurer for damages and attorney's fees (first-party bad-faith remedy; guardrail only — do not cite in this post)",
+      "url": "https://law.justia.com/codes/georgia/title-33/chapter-4/section-33-4-6/"
+    },
+    {
+      "section": "S.C. Code § 15-3-530",
+      "name": "Three years — subsection (5), injury to the person",
+      "url": "https://www.scstatehouse.gov/code/t15c003.php"
+    },
+    {
+      "section": "S.C. Code § 15-3-535",
+      "name": "Limitation on actions commenced under Section 15-3-530(5) (discovery rule)",
+      "url": "https://www.scstatehouse.gov/code/t15c003.php"
+    },
+    {
+      "section": "S.C. Code § 38-59-40",
+      "name": "Liability for attorneys' fees where insurer has refused to pay claim (first-party, 90-day demand; guardrail only — do not cite in this post)",
+      "url": "https://www.scstatehouse.gov/code/t38c059.php"
+    }
+  ],
+  "authoritativeLinks": [
+    {
+      "name": "Covington v. George, 359 S.C. 100, 597 S.E.2d 142 (S.C. 2004) — collateral source rule bars evidence of the amount a provider accepted from an insurer; 'While a defendant is permitted to attack the necessity and reasonableness of medical care and costs, he cannot do so using evidence of payments made by a collateral source.' Opened on Justia 2026-09-25.",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/2004/25828.html"
+    },
+    {
+      "name": "Haselden v. Davis, 353 S.C. 481, 579 S.E.2d 293 (S.C. 2003) — plaintiff 'is entitled to recover the reasonable value of those medical services, not necessarily the amount paid'; amount billed is relevant to reasonable value. Read via Justia search extract 2026-09-25; not opened in a tab.",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/2003/25613.html"
+    },
+    {
+      "name": "Haltiwanger v. Barr, 258 S.C. 27, 186 S.E.2d 819 (S.C. 1972) — recovery for 'the reasonable value of medical services ... to the extent that these injuries are reasonably certain to result in the future'; future damages need not be proved to a mathematical certainty. Opened on Justia 2026-09-25.",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/1972/19370-1.html"
+    },
+    {
+      "name": "Barnes v. Cornett, 134 Ga. App. 120 (Ga. Ct. App. 1975) — medical expenses must be shown to arise from the injury and to be 'reasonable and necessary before they are recoverable'. Read via Justia search extract 2026-09-25; not opened in a tab.",
+      "url": "https://law.justia.com/cases/georgia/court-of-appeals/1975/49924.html"
+    }
+  ]
+}

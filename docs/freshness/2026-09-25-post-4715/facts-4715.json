@@ -1,0 +1,820 @@
+{
+ "postId": 4715,
+ "slug": "i-16-port-freight-truck-accident-garden-city-savannah",
+ "liveUrl": "https://rodenlaw.com/blog/i-16-port-freight-truck-accident-garden-city-savannah/",
+ "jurisdiction": "GA",
+ "researchedAt": "2026-09-25",
+ "verifiedClaims": [
+  {
+   "surface": "body",
+   "claim": "on the Jim Gillis Historic Savannah Parkway",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia General Assembly, House Resolution 88 / Act 42 (effective May 27, 2003), on GDOT myDOCS",
+   "sourceUrl": "https://mydocs.dot.ga.gov/info/honorariums/Resolutions/2003_JimGillisHistoricSavannahParkway.pdf",
+   "retrievedAt": "2026-09-25",
+   "note": "The resolution designates 'the portion of Interstate 16 in Chatham County, from Interstate 95, to the end of Interstate 16 in the city of Savannah' as the Jim Gillis-Historic Savannah Parkway. The Garden City stretch is inside that designation."
+  },
+  {
+   "surface": "body",
+   "claim": "the 65-mph motorway that carries Georgia Ports Authority freight out of the Garden City Terminal toward I-95 and downtown Savannah",
+   "verdict": "update",
+   "currentValue": "65 mph is the posted limit on I-16 (SR 404) from 0.21 mi west of SR 307/Dean Forest Road (MP 160.14) to 0.20 mi west of SR 21/I-516 (MP 163.22); it drops to 55 mph from there to SR 204 (MP 165.75), 45 mph to Gwinnett Street, and 35 mph for the last 0.24 mi to the Montgomery Street terminus. GPA's designated port truck routes are the Jimmy DeLoach Parkway (a $129M limited-access truck route linking Garden City Terminal with I-16 and I-95; the 2016 connector carries 5,000 trucks a day to I-95) and the Brampton Road Connector (a $126M four-lane highway linking Gate 3 to the interstate system, opened July 2026). Port trucks reach I-16 via SR 307/Dean Forest Road (exit 160) or I-516 (exit 164), not from a terminal gate on I-16 itself.",
+   "sourceName": "City of Savannah Code Sec. 207, speed limits for on-system highways (S.R. 404/I-16 rows); Georgia Ports Authority — Road; GPA press release 2026-07-07 (Brampton Road Connector)",
+   "sourceUrl": "https://agenda.savannahga.gov/content/files/sec_207-on-system-roads.pdf",
+   "retrievedAt": "2026-09-25",
+   "note": "The 65-mph figure is verified for the Dean Forest–I-516 stretch only; say '65-mph' for that segment and note it steps down toward downtown. 'Carries GPA freight ... toward I-95' overstates I-16's role: GPA routes I-95-bound trucks over the Jimmy DeLoach Parkway (I-95 exit 106). GPA Road page: https://gaports.com/road/ ; Brampton release: https://gaports.com/press-releases/savannahs-brampton-road-connector-opens-july-16/"
+  },
+  {
+   "surface": "body",
+   "claim": "These crashes are governed by Georgia's 2-year personal-injury deadline under O.C.G.A. § 9-3-33 and the Federal Motor Carrier Safety Regulations at 49 C.F.R. Parts 391, 393, 395, and 396.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia Code § 9-3-33 (Justia); 49 CFR Parts 391, 393, 395, 396 (Cornell LII); run-4709 and run-4721 facts packs",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-09-25",
+   "note": "Two-year limitation and the four FMCSR parts (driver qualification, parts and accessories, hours of service, inspection/maintenance) verified."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Georgia gives you 2 years. Under O.C.G.A. § 9-3-33, a personal-injury lawsuit must be filed within two years of the date of the I-16 crash — and that clock runs while the trucking company's insurer is \"investigating.\"",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia Code § 9-3-33 (Justia); profiles/writer-profile.md jurisdiction table",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-09-25",
+   "note": "Verified in run-4721 and run-4709. An insurer's investigation does not toll § 9-3-33."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "The Port of Savannah Garden City Terminal is the busiest single container terminal in North America. According to the Georgia Ports Authority, the terminal handled approximately 5.3 million TEUs in fiscal year 2024 — every container leaves by truck or rail, and most by truck onto I-16.",
+   "verdict": "update",
+   "currentValue": "GPA describes Garden City Terminal as 'the single largest and fastest growing container terminal in North America' (1,345 acres) — 'largest', not 'busiest'. Latest fiscal year: the Port of Savannah moved 5.67 million TEUs in FY2026 (July 1, 2025–June 30, 2026), 'just shy of the 5.7 million reached in the previous year' (FY2025, which was up 8.6% on FY2024). Calendar 2025: nearly 5.7 million TEUs, the second-busiest year on record behind 2022 (~5.9 million). GPA: '80 percent of Savannah's cargo moves inland by truck and 20 percent by rail'; the port handles 14,000–16,000 truck moves a day, Monday through Friday; 545,214 containers moved by rail in 2025.",
+   "sourceName": "Georgia Ports Authority — Garden City Terminal facility page; GPA press release 2026-07-28 ('Port of Savannah volumes up 18% in June', FY2026 total); GPA press release 2026-01-27 ('Port of Savannah achieves second busiest year ever'); GPA press release 2026-04-30 (trade conference; 80/20 truck-rail split)",
+   "sourceUrl": "https://gaports.com/press-releases/port-of-savannah-volumes-up-18-in-june/",
+   "retrievedAt": "2026-09-25",
+   "note": "Three fixes: (1) 'busiest' → GPA's own 'largest'; (2) the FY2024 figure is two fiscal years stale — use FY2026's 5.67 million TEUs; (3) 'most by truck onto I-16' is unsupported — GPA says 80% leaves by truck but routes it over the Jimmy DeLoach Parkway and Brampton Road Connector to I-95/I-516/I-16; say 'most by truck' without naming I-16 as the route. GCT page: https://gaports.com/facilities/port-of-savannah/garden-city-terminal/ ; CY2025 release: https://gaports.com/press-releases/port-of-savannah-achieves-second-busiest-year-ever/ ; 80/20 split: https://gaports.com/press-releases/supply-chain-predictability-and-cost-saving-strategies-highlight-georgia-ports-trade-conference/"
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Tractor-trailers are roughly 20–30 times heavier than a passenger car.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "IIHS — Fatality Facts: Large trucks",
+   "sourceUrl": "https://www.iihs.org/topics/fatality-statistics/detail/large-trucks",
+   "retrievedAt": "2026-09-25",
+   "note": "IIHS: large trucks 'on the heavier end of the spectrum can weigh 20 to 30 times as much as passenger cars.' iihs.org is on the outbound allowlist. Attribute to IIHS if a citation is added."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "According to NHTSA's Traffic Safety Facts: Large Trucks report, large trucks were involved in 5,837 fatal crashes in 2022, and occupants of the other vehicle account for the majority of those killed.",
+   "verdict": "update",
+   "currentValue": "NHTSA, Traffic Safety Facts 2024 Data: Large Trucks (DOT HS 813 816, June 2026): 5,340 people were killed in crashes involving large trucks in 2024, a 2.5% decrease from 5,478 in 2023; 70% of those killed were occupants of other vehicles; 25% of fatal large-truck crashes occurred on interstates; 80% of large trucks in fatal crashes were in multivehicle crashes; 76% of fatal large-truck crashes occurred on weekdays. (2023 data, DOT HS 813 717: 5,375 large trucks involved in fatal crashes, down from 5,873 in 2022.)",
+   "sourceName": "NHTSA, Traffic Safety Facts 2024 Data: Large Trucks (DOT HS 813 816); NHTSA 2023 data (DOT HS 813 717, via run-4709)",
+   "sourceUrl": "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813816.pdf",
+   "retrievedAt": "2026-09-25",
+   "note": "Same transposition found in run-4709: the 2022 figure is 5,873, not 5,837, and it is two data years stale. Replace with the 2024 people-killed figure and the 70% other-vehicle-occupant share, which is the exact statistic behind 'majority'. The 25%-on-interstates figure is a sourced substitute for any corridor-risk framing."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Electronic logging device (ELD) data under 49 C.F.R. Part 395, post-crash drug-and-alcohol records, dashcam footage, and dispatcher communications can be lawfully overwritten in 7 to 14 days unless a preservation (spoliation) letter is sent.",
+   "verdict": "update",
+   "currentValue": "No federal rule sets a 7–14-day window. Retention floors: records of duty status (ELD data) and supporting documents — 6 months (49 CFR 395.8(k)); driver vehicle inspection reports — 3 months (49 CFR 396.11); maintenance/inspection records — 1 year and 6 months after the vehicle leaves the carrier (49 CFR 396.3(c)); drug-and-alcohol testing records — 1 to 5 years, with positive results and refusals kept 5 years (49 CFR 382.401). Dashcam video, dispatcher messages and ECM/EDR data have no federal retention rule and may be overwritten at any time.",
+   "sourceName": "49 CFR §§ 395.8(k), 396.11, 396.3(c), 382.401 (Cornell LII); run-4709 facts pack",
+   "sourceUrl": "https://www.law.cornell.edu/cfr/text/49/382.401",
+   "retrievedAt": "2026-09-25",
+   "note": "'7 to 14 days' is invented and, for drug-and-alcohol records, backwards — § 382.401 requires positives and refusals to be kept five years. Keep the preservation-letter advice (litigation practice); tie the urgency to dashcam/dispatcher data, which genuinely has no floor. Published twice (Key Takeaways and FAQ 4)."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Chatham County is the venue. A non-felony port-truck tort case is typically filed in Chatham County State Court; felony-related or higher-damages cases go to Chatham County Superior Court (Eastern Judicial Circuit) at 133 Montgomery Street, Savannah.",
+   "verdict": "update",
+   "currentValue": "State Court of Chatham County hears civil actions 'without regard to the amount in controversy', concurrently with the Superior Court (O.C.G.A. § 15-7-4(a)); the Superior Court of Chatham County is the court of general jurisdiction and the whole of the Eastern Judicial Circuit, which 'is comprised solely of Chatham County' and expressly includes Garden City. There is no felony or damages threshold between the two for a civil suit. Both sit in the Chatham County Courthouse complex: the Tom Coleman Courthouse at 133 Montgomery Street (State Court Clerk; Superior Court judges, Suite 304) and the Judge Eugene H. Gadsden Courthouse at 400 W. Oglethorpe Avenue (Clerk of Superior Court filings, Suite 178).",
+   "sourceName": "Chatham County Courts — Superior Court Judges (Eastern Judicial Circuit); Chatham County Courts — Map & Directions; Chatham County Department Contacts; Georgia Code § 15-7-4 (Justia, verified run-4709)",
+   "sourceUrl": "https://courts.chathamcountyga.gov/Superior/JudgeWelcome",
+   "retrievedAt": "2026-09-25",
+   "note": "'Non-felony' and 'felony-related' are criminal categories that do not apply to civil damages suits (same finding as run-4709 for Glynn). 133 Montgomery Street is correct for both courts' courtrooms. Map & Directions: https://courts.chathamcountyga.gov/resources/mapdirections ; contacts: https://www.chathamcountyga.gov/OurCounty/DepartmentContacts"
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Georgia's 50% bar matters. Under O.C.G.A. § 51-12-33, you can still recover if you were partly at fault — but only if you were less than 50% to blame.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia Code § 51-12-33(a), (g) (Justia); profiles/writer-profile.md jurisdiction table",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-09-25",
+   "note": "§ 51-12-33(g): no recovery if the plaintiff is 50 percent or more responsible. Verified in run-4709/4721."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "South Carolina's 51% bar does not apply on a Garden City crash.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md — Jurisdiction rules (single-state pages show only that state's law)",
+   "sourceUrl": "",
+   "retrievedAt": "2026-09-25",
+   "note": "This is a Georgia-only post; introducing South Carolina's rule is a cross-jurisdiction error under the profile and would also make Graeham C. Gillin, not Eric Roden, the required reviewer. Delete the sentence. (The SC rule is also stated loosely — the SC bar is 'less than 51%', i.e. recover at 50% or less.)"
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "If the at-fault driver is a Garden City municipal employee, you have 6 months. Ante-litem notice to a Georgia municipality is due in 6 months under O.C.G.A. § 36-33-5; a State of Georgia claim is 12 months under O.C.G.A. § 50-21-26.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia Code § 36-33-5; § 50-21-26(a)(1); § 36-11-1 (Justia); run-4709 facts pack",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-50/chapter-21/article-2/section-50-21-26/",
+   "retrievedAt": "2026-09-25",
+   "note": "Both periods verified (§ 36-33-5: written claim within six months of the event; § 50-21-26(a)(1): notice within 12 months of discovery). Gap: a Chatham County vehicle (county police, public works) is governed by O.C.G.A. § 36-11-1 — claims against counties presented within 12 months — and the post never mentions counties; recommend adding. The year-less Justia URL for § 36-33-5 redirects to the 2022 edition and resolves."
+  },
+  {
+   "surface": "body",
+   "claim": "Why the I-16 Garden City stretch is the most concentrated truck-crash corridor in Chatham County",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "GDOT Crash Data Dashboard (no corridor ranking published); GOHS; NHTSA FARS",
+   "sourceUrl": "https://www.dot.ga.gov/GDOT/Pages/CrashReporting.aspx",
+   "retrievedAt": "2026-09-25",
+   "note": "No GDOT, GOHS, FARS, Chatham County or local-news source ranks I-16 through Garden City as the county's most concentrated truck-crash corridor; GDOT publishes crash data on request and via a dashboard but no such ranking. Reword the H2 without the superlative, e.g. 'Why the I-16 Garden City stretch is unforgiving for passenger vehicles'. Sourced substitutes if a number is wanted: GDOT calls I-16/I-95 'one of Georgia's busiest freight corridors' (16@95 fact sheet); I-16 carried 59,600 vehicles per day between Chatham Parkway and Dean Forest Road in 2019 (GDOT counts via AARoads); NHTSA: 25% of fatal large-truck crashes occur on interstates (2024); data/statistics.json: Chatham County recorded 40 traffic deaths in 2022 (FARS), eighth among Georgia's 152 counties."
+  },
+  {
+   "surface": "body",
+   "claim": "felt your car shoved sideways by the wake of an 80,000-pound box truck",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "23 U.S.C. § 127(a) (Cornell LII); run-4709 facts pack",
+   "sourceUrl": "https://www.law.cornell.edu/uscode/text/23/127",
+   "retrievedAt": "2026-09-25",
+   "note": "80,000 pounds is the federal Interstate gross-weight maximum. Cosmetic: a container chassis is not a 'box truck' (a straight truck with a cargo box); 'tractor-trailer' is the accurate term."
+  },
+  {
+   "surface": "body",
+   "claim": "The Port of Savannah Garden City Terminal sits immediately north of the I-16 / Jim Gillis Historic Savannah Parkway right-of-way.",
+   "verdict": "update",
+   "currentValue": "Garden City Terminal (GPA headquarters, 2 Main Street, Garden City 31408) geocodes to 32.121 N, 81.150 W; the I-16 mainline through Garden City runs at about 32.063–32.067 N — roughly four miles south of the terminal, on the far side of Garden City. Gate 4 (100 Holt Drive) is reached from SR 25 at the end of SR 307/Dean Forest Road, 0.7 mi north of the Jimmy DeLoach Parkway.",
+   "sourceName": "U.S. Census Bureau Geocoder (2 Main St, Garden City); GPA — Garden City Terminal Address & Driving Directions; OSRM road network",
+   "sourceUrl": "https://gaports.com/facilities/port-of-savannah/garden-city-terminal/garden-city-terminal-address-driving-directions/",
+   "retrievedAt": "2026-09-25",
+   "note": "'Immediately north of the I-16 right-of-way' is wrong by about four miles. Say 'a few miles north of I-16, on the Savannah River side of Garden City'."
+  },
+  {
+   "surface": "body",
+   "claim": "Its truck gate pushes container chassis onto the parkway in concentrated weekday peaks — most heavily on Monday and Friday",
+   "verdict": "update",
+   "currentValue": "GPA: the Port of Savannah handles 14,000–16,000 truck moves daily, Monday through Friday, with gates open 4 a.m. to 6 p.m. GPA publishes no Monday/Friday peak.",
+   "sourceName": "GPA press release 2026-01-27 (second busiest year ever); GPA press release 2026-09-16 ('Georgia Ports celebrates truck drivers': 15,000 truck moves daily, 4 a.m.–6 p.m. Monday through Friday)",
+   "sourceUrl": "https://gaports.com/press-releases/georgia-ports-celebrates-truck-drivers-2/",
+   "retrievedAt": "2026-09-25",
+   "note": "Replace the Monday/Friday clause with the sourced weekday figure: 'roughly 15,000 truck moves a day, Monday through Friday, between 4 a.m. and 6 p.m.' Also 'onto the parkway' repeats the geography error — trucks leave the gates onto SR 25/SR 307/Jimmy DeLoach Parkway, not directly onto I-16."
+  },
+  {
+   "surface": "body",
+   "claim": "those trucks mix with passenger commuters on a 2-lanes-per-direction, 65-mph motorway with limited shoulder.",
+   "verdict": "update",
+   "currentValue": "GDOT's 16@95 Improvement Projects (P.I. 0012757 and 0012758, $289.9M, construction from Q1 2020) are 'widening I-16 mainline corridor toward the inside median from two to three lanes in each direction from I-95 to I-516', reconstructing the I-16/I-95 interchange with partial-turbine flyover ramps, adding ramp meters at the SR 307/Dean Forest Road and Chatham Parkway on-ramps, an emergency median crossover between I-95 and SR 307, and 11 bridges. GDOT's Sept. 18, 2025 fact sheet: 'The third lane was open to traffic along I-16 eastbound and westbound between I-95 and Chatham Parkway'; substantial completion 'anticipated for late Q4 2025'. Lane closures for 'widening activities for I-16' and bridge work at the I-16/I-516 interchange continued through at least April 2026, and GDOT's GeoPI still listed P.I. 0012757 as 'Under Construction' in September 2026.",
+   "sourceName": "GDOT — 16@95 Improvement Projects Fact Sheet (09/18/2025); GDOT GeoPI P.I. 0012757; GDOT weekly traffic advisory via AllOnGeorgia 2026-04-26",
+   "sourceUrl": "https://www.dot.ga.gov/systems/ProjectDocuments/1695Improvements/16@95%20Improvement%20Projects-Fact%20Sheet.pdf",
+   "retrievedAt": "2026-09-25",
+   "note": "'2-lanes-per-direction' is stale: the corridor is three lanes each direction from I-95 to Chatham Parkway and finishing to I-516. 'Limited shoulder' has no GDOT source — drop. Say 'a 65-mph interstate that GDOT has just widened to three lanes each direction between I-95 and I-516, with ramp meters going in at Dean Forest Road and Chatham Parkway'. Do not conflate with the separate $468.35M design-build contract GDOT awarded in July 2026 to widen I-16 WEST of I-95 (I-95 to MM 139.65 in Bryan County; construction expected 2027). GeoPI: https://www.dot.ga.gov/applications/geopi/Pages/Dashboard.aspx?ProjectId=0012757 ; project page: https://majormobilityga.com/projects/i1695improvements/"
+  },
+  {
+   "surface": "body",
+   "claim": "A loaded port chassis accelerates slowly out of the terminal gate and then runs at 60–65 mph. Passenger drivers on I-16, especially near the I-95 interchange and the Chatham Parkway merges, frequently misjudge the closing rate and end up rear-ended, sideswiped, or pinched in a lane-change.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "City of Savannah Code Sec. 207 (65 mph, SR 307 to SR 21); GDOT 16@95 fact sheet (Chatham Parkway and Dean Forest Road on-ramp meters); AARoads I-16 guide (exit 157 I-95, exit 162 Chatham Parkway)",
+   "sourceUrl": "https://www.aaroads.com/guides/i-016-west-savannah-ga",
+   "retrievedAt": "2026-09-25",
+   "note": "Speed and interchange geography verified; 'frequently misjudge' is characterization, not a statistic, and can stand. The terminal gate is not on I-16 (see the geography claim) — 'out of the terminal gate and then' should become 'off the port routes onto I-16 and then'."
+  },
+  {
+   "surface": "body",
+   "claim": "I-16 has frequent weave sections at I-95, US-17, and the downtown Savannah ramps that funnel onto Montgomery Street.",
+   "verdict": "update",
+   "currentValue": "I-16's Chatham County interchanges, east to west: Montgomery Street/MLK Jr. Boulevard (terminus), Gwinnett Street (half diamond), I-516/US 80/SR 21-25-26 (exits 164A/B), Chatham Parkway (exit 162), SR 307/Dean Forest Road (exit 160, being rebuilt as a diverging-diamond), I-95 (exits 157A/B), Pooler Parkway (exit 155). US 17 has no interchange of its own on I-16; it is reached through I-516 (Ogeechee Road exit).",
+   "sourceName": "AARoads — Interstate 16 West, Savannah to Blitchton (route guide); GDOT 16@95 detour notices (I-516 exit 164; US 17/US 80/Ogeechee Road via I-516)",
+   "sourceUrl": "https://www.aaroads.com/guides/i-016-west-savannah-ga",
+   "retrievedAt": "2026-09-25",
+   "note": "Change 'US-17' to 'I-516'. The Montgomery Street terminus is correct (the 2003 resolution and Sec. 207 both end SR 404 at Montgomery Street)."
+  },
+  {
+   "surface": "body",
+   "claim": "Federal hours-of-service rules under 49 C.F.R. Part 395 cap on-duty and driving time, but post-crash investigations on the I-16 corridor routinely uncover ELD edits, log-book inconsistencies, and dispatcher pressure to push past the 11-hour driving limit.",
+   "verdict": "update",
+   "currentValue": "49 CFR 395.3(a)(3): a property-carrying driver 'may drive a total of 11 hours' within a 14-consecutive-hour window after 10 hours off duty; 60 hours in 7 days or 70 hours in 8 days on duty. No source documents what I-16 post-crash investigations 'routinely uncover'.",
+   "sourceName": "49 CFR § 395.3 (Cornell LII)",
+   "sourceUrl": "https://www.law.cornell.edu/cfr/text/49/395.3",
+   "retrievedAt": "2026-09-25",
+   "note": "Keep the 11-hour limit and the HOS framing; drop 'on the I-16 corridor routinely' — say 'post-crash investigations can uncover'."
+  },
+  {
+   "surface": "body",
+   "claim": "Garden City is a separately incorporated Chatham County municipality, with its own municipal police department and ordinances — it is not the same jurisdiction as the City of Savannah, even though Chatham County remains the county for venue purposes.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "City of Garden City, GA — Government; City of Garden City — Police Department",
+   "sourceUrl": "https://www.gardencity-ga.gov/Government",
+   "retrievedAt": "2026-09-25",
+   "note": "'The City of Garden City is a Georgia municipal corporation with an elected Mayor and six elected Council members', founded 1939, 'a full-service municipality' providing police and fire; the Garden City Police Department was established in 1951 (100 Central Avenue). City Hall is 'on Dean Forest Road just south of I-16'. Police page: https://www.gardencity-ga.gov/Departments/Police"
+  },
+  {
+   "surface": "body",
+   "claim": "49 C.F.R. Part 391 driver qualification file, medical card, PSP report, prior carrier checks",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "49 CFR Part 391 (Cornell LII); FMCSA Pre-Employment Screening Program",
+   "sourceUrl": "https://www.law.cornell.edu/cfr/text/49/391.11",
+   "retrievedAt": "2026-09-25",
+   "note": "Part 391 covers qualification files (391.51), medical examiner's certificate (391.43) and investigations of prior employers (391.23); PSP is FMCSA's Pre-Employment Screening Program."
+  },
+  {
+   "surface": "body",
+   "claim": "Bill of lading, shipper load instructions, securement under Part 393 Subpart I, terminal gate records",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "49 CFR Part 393 Subpart I — Protection Against Shifting and Falling Cargo (§§ 393.100–393.136) (Cornell LII)",
+   "sourceUrl": "https://www.law.cornell.edu/cfr/text/49/part-393/subpart-I",
+   "retrievedAt": "2026-09-25",
+   "note": "Subpart I is the cargo-securement subpart; § 393.126 specifically covers intermodal containers, which is the port-freight case."
+  },
+  {
+   "surface": "body",
+   "claim": "Personal auto policy, GA UM/UIM under O.C.G.A. § 33-7-11 (Georgia generally does not permit stacking)",
+   "verdict": "update",
+   "currentValue": "Georgia permits stacking of UM/UIM coverage across multiple policies (State Farm v. Hancock, 164 Ga. App. 32 (1982); Dairyland Ins. Co. v. State Farm, Ga. Ct. App. 2008); what is barred is pyramiding limits within a single policy. What decides the value of the claim is the written election under § 33-7-11(b)(1)(D)(ii) between 'added-on' coverage (the default) and 'reduced-by' coverage, plus the limits chosen under § 33-7-11(a)(1) (at least $25,000/$50,000/$25,000, or equal to liability limits unless the insured chose less).",
+   "sourceName": "Georgia Code § 33-7-11 (Justia) and annotations; Dairyland Ins. Co. v. State Farm (Ga. Ct. App. 2008); run-4709 facts pack",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-7/section-33-7-11/",
+   "retrievedAt": "2026-09-25",
+   "note": "Same reversed stacking claim found and corrected in run-4709; it appears here in the table and again in the UM paragraph. Dairyland: https://law.justia.com/cases/georgia/court-of-appeals/2008/a07a1919-0.html"
+  },
+  {
+   "surface": "body",
+   "claim": "Federally mandated motor-carrier liability ($750k minimum, often $1M+), excess layers, MCS-90 endorsement",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "49 CFR § 387.9 (schedule of limits); 49 CFR § 387.7 (Form MCS-90 endorsement) (Cornell LII); run-4721 facts pack",
+   "sourceUrl": "https://www.law.cornell.edu/cfr/text/49/387.9",
+   "retrievedAt": "2026-09-25",
+   "note": "$750,000 for for-hire carriers of non-hazardous property (10,001+ lbs GVWR); $1,000,000 and $5,000,000 tiers for hazardous cargo. The MCS-90 is the 'Endorsement for Motor Carrier Policies of Insurance for Public Liability' required by § 387.7. 'Often $1M+' is a market observation with no regulatory source; acceptable as hedged. § 387.7: https://www.law.cornell.edu/cfr/text/49/387.7"
+  },
+  {
+   "surface": "body",
+   "claim": "Most of the federal-side evidence — the ELD data, the dashcam clip, the dispatcher Slack thread — is on a short retention cycle. If a preservation letter is not in the motor carrier's hands within days, that evidence can be lawfully overwritten.",
+   "verdict": "update",
+   "currentValue": "ELD/records of duty status: 6-month floor (49 CFR 395.8(k)). Dashcam video and dispatcher messages: no federal retention rule, so they can be overwritten at any time. Inspection reports: 3 months (396.11).",
+   "sourceName": "49 CFR §§ 395.8(k), 396.11 (Cornell LII); run-4709 facts pack",
+   "sourceUrl": "https://www.law.cornell.edu/cfr/text/49/395.8",
+   "retrievedAt": "2026-09-25",
+   "note": "Separate the two categories: ELD data has a six-month floor; dashcam and dispatcher data have none. The 'within days' urgency is defensible only for the second category."
+  },
+  {
+   "surface": "body",
+   "claim": "the regulations apply identically on I-16.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "49 CFR § 390.3 (applicability of the FMCSRs to motor carriers in interstate commerce) (Cornell LII)",
+   "sourceUrl": "https://www.law.cornell.edu/cfr/text/49/390.3",
+   "retrievedAt": "2026-09-25",
+   "note": "Federal rules are the same on any highway; the sentence is correct."
+  },
+  {
+   "surface": "body",
+   "claim": "The 65-mph speed limit, the lack of a usable shoulder, and the slow-acceleration profile of a loaded chassis combine to produce closing-rate failures",
+   "verdict": "update",
+   "currentValue": "65 mph verified for I-16 between SR 307 and I-516 (City of Savannah Sec. 207). No GDOT source describes a missing or unusable shoulder on this interstate segment.",
+   "sourceName": "City of Savannah Code Sec. 207 (S.R. 404/I-16 rows)",
+   "sourceUrl": "https://agenda.savannahga.gov/content/files/sec_207-on-system-roads.pdf",
+   "retrievedAt": "2026-09-25",
+   "note": "Keep the 65-mph and closing-rate framing; delete 'the lack of a usable shoulder'."
+  },
+  {
+   "surface": "body",
+   "claim": "Aggressive deceleration on a wet roadway or a brake imbalance under 49 C.F.R. § 393.52 can fold the trailer sideways across multiple lanes.",
+   "verdict": "update",
+   "currentValue": "49 CFR § 393.52 is titled 'Brake performance' and sets required braking force as a percentage of gross weight, deceleration rates, and stopping distances from 20 mph; it does not address brake imbalance. Brake adjustment is § 393.47; automatic brake adjusters are § 393.53.",
+   "sourceName": "49 CFR § 393.52 (Cornell LII)",
+   "sourceUrl": "https://www.law.cornell.edu/cfr/text/49/393.52",
+   "retrievedAt": "2026-09-25",
+   "note": "Change 'a brake imbalance under 49 C.F.R. § 393.52' to 'a brake-performance failure under 49 C.F.R. § 393.52' (or cite § 393.47 for adjustment). The jackknife mechanism itself is uncontroversial."
+  },
+  {
+   "surface": "body",
+   "claim": "Savannah Christian Preparatory School sits roughly 0.14 miles from the I-16 corridor here, and Garden City Elementary sits about a mile north.",
+   "verdict": "update",
+   "currentValue": "Savannah Christian Preparatory School (1599 Chatham Parkway) is inside Garden City at the I-16/Chatham Parkway interchange; its campus point (32.075 N, 81.165 W) is under a mile north of the I-16 mainline, and Chatham County's code designates a Chatham Parkway school zone beginning '150 ft. N. of W.B. I-16 on ramp'. Garden City Elementary (4037 Kessler Avenue) geocodes to 32.091 N, 81.167 W — about 1.8 miles north of I-16.",
+   "sourceName": "Chatham County Code, Chapter 12 (speed zones and school zones — Chatham Pkwy school zone); OpenStreetMap Nominatim (Savannah Christian Preparatory School, Raider Way, Garden City); U.S. Census Bureau Geocoder (4037 Kessler Ave, Garden City)",
+   "sourceUrl": "https://cdn.chathamcountyga.gov/Files/ChathamCounty/Code%20Book/Chapter12.PDF",
+   "retrievedAt": "2026-09-25",
+   "note": "'0.14 miles' is false precision with no source and '(about) a mile' understates Garden City Elementary by roughly half. Say 'sits at the I-16/Chatham Parkway interchange, where the county's school zone begins 150 feet north of the westbound on-ramp' and 'about two miles north'."
+  },
+  {
+   "surface": "body",
+   "claim": "During the 7:00–8:30 AM arrival and 2:30–4:00 PM dismissal windows, pedestrian and bicycle volume jumps on the local arterials feeding Chatham Parkway.",
+   "verdict": "update",
+   "currentValue": "Chatham County's code sets the Chatham Parkway school zone hours 'FROM: 7:45 AM to 8:45 AM' plus an afternoon window (the county code table). No agency publishes pedestrian or bicycle volumes for these arterials.",
+   "sourceName": "Chatham County Code, Chapter 12 — school zone, Chatham Pkwy",
+   "sourceUrl": "https://cdn.chathamcountyga.gov/Files/ChathamCounty/Code%20Book/Chapter12.PDF",
+   "retrievedAt": "2026-09-25",
+   "note": "The stated windows do not match the county's posted school-zone hours. Replace with 'during the posted school-zone hours (7:45–8:45 a.m. on Chatham Parkway)' and drop the 'volume jumps' assertion, or keep it as an unquantified observation."
+  },
+  {
+   "surface": "body",
+   "claim": "A port-bound truck that exits I-16 onto a local cross-route at 45 mph",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "City of Savannah Code Sec. 207 (SR 307/Dean Forest Road: 45 mph); Chatham County Code Chapter 12 (Chatham Pkwy: 45 mph)",
+   "sourceUrl": "https://agenda.savannahga.gov/content/files/sec_207-on-system-roads.pdf",
+   "retrievedAt": "2026-09-25",
+   "note": "45 mph is the posted limit on both cross-routes; consistent."
+  },
+  {
+   "surface": "body",
+   "claim": "Eric Roden, founding partner of Roden Law, has tried port-freight tractor-trailer cases out of Savannah for more than two decades.",
+   "verdict": "update",
+   "currentValue": "Eric Roden — Founding Partner, CEO; bar admission GA; J.D., University of Georgia School of Law, 2012 (UGA Law 'Spotlight: Eric Roden (J.D.'12)'). That is about 14 years of practice, not 'more than two decades'.",
+   "sourceName": "University of Georgia School of Law — Spotlight: Eric Roden (J.D.'12); client.json / profiles/firm-facts.md (eric-roden, Founding Partner, CEO, barStates GA, expertVoice); run-4709 facts pack",
+   "sourceUrl": "https://www.law.uga.edu/spotlight-eric-roden-jd12",
+   "retrievedAt": "2026-09-25",
+   "note": "Same false credential found in the Broadfield post (run-4709), published twice here (attribution section and About the Author). The attribution itself (founding partner, expert voice on Georgia content) matches the identity record. Delete the tenure figure or say 'for more than a decade'. 'Has tried port-freight tractor-trailer cases' is the firm's own practice description; leave attributed. The refresher does not rewrite the attribution section wholesale — this is the only factual correction in it."
+  },
+  {
+   "surface": "body",
+   "claim": "The motor carrier's rapid-response team is already on the scene; their adjuster is already pulling the ELD data, photographing the trailer, and locking down driver statements. If a corresponding preservation letter is not in the carrier's hands within days, the dashcam clip can be overwritten, the post-trip inspection report can be \"lost,\" and the dispatcher's contemporaneous text messages can vanish behind a retention policy.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "49 CFR § 396.11 (DVIR retained three months); no federal retention rule for dashcam or dispatcher data",
+   "sourceUrl": "https://www.law.cornell.edu/cfr/text/49/396.11",
+   "retrievedAt": "2026-09-25",
+   "note": "Attorney characterization consistent with the verified retention picture (dashcam/dispatcher data has no floor; DVIRs have a three-month floor). No numeric claim; leave as attributed prose."
+  },
+  {
+   "surface": "body",
+   "claim": "Severe port-truck crashes on I-16 usually end at Memorial Health University Medical Center on Waters Avenue — the regional Level I trauma center for southeast Georgia.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia DPH — Designated Trauma & Specialty Care Centers (updated 9/1/2026); WTOC 2023-09-15 (ACS re-verification); run-4721 facts pack",
+   "sourceUrl": "https://dph.georgia.gov/EMS/specialty-care-centers-cardiac-trauma-stroke-pediatric",
+   "retrievedAt": "2026-09-25",
+   "note": "Memorial Health University Medical Center, 4700 Waters Avenue, Savannah, is a state-designated, ACS-verified Level I trauma center and the only Level I in Southeast Georgia (verified 2026-09-23/24). 'Usually end at' is a reasonable inference for Chatham County trauma, not a documented routing statistic; acceptable."
+  },
+  {
+   "surface": "body",
+   "claim": "handles wrongful-death claims under O.C.G.A. § 51-4-1 et seq.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia Code §§ 51-4-1, 51-4-2(a), 19-7-1(c)(2) (Justia); run-4709 facts pack",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-4/section-51-4-1/",
+   "retrievedAt": "2026-09-25",
+   "note": "Correct citation. Optional enrichment: § 51-4-2(a) gives the claim to the surviving spouse, or if none the children, for the 'full value of the life'; § 19-7-1(c)(2) to parents when no spouse or child survives. The two-year § 9-3-33 period applies (run-4721)."
+  },
+  {
+   "surface": "body",
+   "claim": "Venue almost always lands in Chatham County. A non-felony tort case is filed in Chatham County State Court at 133 Montgomery Street. Felony-related or large-damages cases go to Chatham County Superior Court in the Eastern Judicial Circuit, also at 133 Montgomery Street.",
+   "verdict": "update",
+   "currentValue": "State Court of Chatham County and the Superior Court of Chatham County (Eastern Judicial Circuit, Chatham County only) have concurrent jurisdiction over civil damages suits of any amount (O.C.G.A. § 15-7-4(a)); the Superior Court also has exclusive jurisdiction over felonies, divorce, equity and title to land. Both sit at the Chatham County Courthouse complex, 133 Montgomery Street (Tom Coleman Courthouse) and 400 W. Oglethorpe Avenue (Gadsden Courthouse, where the Clerk of Superior Court accepts filings).",
+   "sourceName": "Georgia Code § 15-7-4 (Justia); Chatham County Courts — Superior Court Judges; Map & Directions; Superior Court Self-Help (filing at 400 W. Oglethorpe Ave, Suite 178)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-15/chapter-7/article-1/section-15-7-4/",
+   "retrievedAt": "2026-09-25",
+   "note": "Rewrite: 'Most Chatham County truck-crash suits are filed in the State Court of Chatham County, which hears civil cases of any amount; the Superior Court of Chatham County (the Eastern Judicial Circuit, which is Chatham County alone and includes Garden City) can hear the same suits. Both sit at the courthouse complex at 133 Montgomery Street.' Drop 'non-felony' and 'felony-related'."
+  },
+  {
+   "surface": "body",
+   "claim": "it can be filed or removed to the U.S. District Court for the Southern District of Georgia, Savannah Division.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "28 U.S.C. § 90(c) (Savannah Division: Bryan, Chatham, Effingham, Liberty); 28 U.S.C. § 1332(a); U.S. District Court S.D. Ga. — Savannah",
+   "sourceUrl": "https://www.law.cornell.edu/uscode/text/28/90",
+   "retrievedAt": "2026-09-25",
+   "note": "Savannah Division comprises Bryan, Chatham, Effingham and Liberty counties; court is held at Savannah. The court's Savannah page currently lists 8 Southern Oaks Ct., Savannah 31405 (mailing 124 Barnard Street) — the post states no address, so nothing to change. https://www.gasd.uscourts.gov/content/savannah"
+  },
+  {
+   "surface": "body",
+   "claim": "The 2-year limit under O.C.G.A. § 9-3-33 is hard. If the City of Garden City is a defendant (because, for example, a municipal vehicle is involved), the 6-month ante-litem notice under O.C.G.A. § 36-33-5 is harder still. A State-of-Georgia claim under O.C.G.A. § 50-21-26 has a 12-month notice window.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia Code §§ 9-3-33, 36-33-5, 50-21-26 (Justia); run-4709 facts pack",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-36/chapter-33/section-36-33-5/",
+   "retrievedAt": "2026-09-25",
+   "note": "All three periods verified. Recommend adding the county rule: 'If a Chatham County vehicle is involved, the claim must be presented to the county within 12 months under O.C.G.A. § 36-11-1.' Cosmetic: the second § 50-21-26 citation in the source HTML carries a trailing period inside the citation ('§ 50-21-26.') — harmless as sentence punctuation, but make sure any statute link wraps the citation without the period."
+  },
+  {
+   "surface": "body",
+   "claim": "O.C.G.A. § 33-7-11 governs UM/UIM in Georgia, and unlike South Carolina, Georgia generally does not allow you to stack UM coverage across multiple policies — the offer-of-reduction form on each policy decides what coverage is \"add-on\" vs. \"reduced by\" the at-fault liability limit.",
+   "verdict": "update",
+   "currentValue": "Georgia lets an insured stack UM/UIM coverage from more than one policy (Hancock 1982; Dairyland 2008); the decisive document is the written election under § 33-7-11(b)(1)(D)(ii) between 'added-on' coverage (the default, paid on top of the trucker's liability limits) and 'reduced-by' coverage (paid only above those limits). 'Offer-of-reduction form' is not a Georgia term.",
+   "sourceName": "Georgia Code § 33-7-11(b)(1)(D)(ii) and annotations (Justia); Dairyland Ins. Co. v. State Farm (Ga. Ct. App. 2008); run-4709 facts pack",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-7/section-33-7-11/",
+   "retrievedAt": "2026-09-25",
+   "note": "Three fixes in one sentence: the stacking rule is reversed; 'unlike South Carolina' is cross-jurisdiction law on a Georgia-only post (delete); 'offer-of-reduction form' should be the added-on/reduced-by election. The added-on vs reduced-by point itself is correct and worth keeping."
+  },
+  {
+   "surface": "body",
+   "claim": "For a fatal port-truck crash where the motor carrier is at the $750,000 federal minimum and damages are far higher, the UM/UIM analysis on the family's own policies can be decisive.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "49 CFR § 387.9 (Cornell LII)",
+   "sourceUrl": "https://www.law.cornell.edu/cfr/text/49/387.9",
+   "retrievedAt": "2026-09-25",
+   "note": "$750,000 minimum verified; the rest is legal reasoning."
+  },
+  {
+   "surface": "body",
+   "claim": "Eric is admitted to practice in Georgia and has tried port-freight tractor-trailer cases on the I-16 / Port of Savannah corridor for more than two decades.",
+   "verdict": "update",
+   "currentValue": "Admitted in Georgia (correct: client.json barStates GA). J.D. University of Georgia School of Law, 2012 — about 14 years in practice.",
+   "sourceName": "client.json / profiles/firm-facts.md; UGA School of Law — Spotlight: Eric Roden (J.D.'12)",
+   "sourceUrl": "https://www.law.uga.edu/spotlight-eric-roden-jd12",
+   "retrievedAt": "2026-09-25",
+   "note": "Second instance of the 'two decades' claim. Keep 'admitted to practice in Georgia'; remove the tenure figure or change to 'more than a decade'."
+  },
+  {
+   "surface": "body",
+   "claim": "Roden Law's Savannah office is at 333 Commercial Drive, Savannah, GA 31406 — approximately 5–7 miles east of the Garden City cluster along I-16 and Chatham Parkway.",
+   "verdict": "update",
+   "currentValue": "Address matches the identity record (333 Commercial Dr., Savannah, GA 31406, Chatham County). The office geocodes to 32.005 N, 81.108 W, about 5 miles straight-line and 8.4 driving miles southeast of the I-16/Chatham Parkway interchange (32.063 N, 81.155 W) — south-east, not east, and not along I-16 (the office is off Abercorn/Eisenhower on the south side).",
+   "sourceName": "client.json (locations: Savannah); U.S. Census Bureau Geocoder (333 Commercial Dr); OSRM routing",
+   "sourceUrl": "https://geocoding.geo.census.gov/geocoder/geographies/address?street=333+Commercial+Dr&city=Savannah&state=GA&zip=31406&benchmark=Public_AR_Current&vintage=Current_Current&format=json",
+   "retrievedAt": "2026-09-25",
+   "note": "Replace with 'about eight miles southeast of the I-16/Chatham Parkway interchange' or simply 'on the south side of Savannah, a short drive from Garden City'. Office count context: the firm has six offices (Savannah, Darien, Charleston, North Charleston, Columbia, Myrtle Beach/Murrells Inlet); the post states no office count, so nothing to change. Phone: the post uses the toll-free line only; no tel: hrefs appear in the body."
+  },
+  {
+   "surface": "body",
+   "claim": "Free Case Review. No fees unless we win. Call 1-844-RESULTS.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Firm's own fee representation; theme firm data (vanity_phone 844-RESULTS; run-4721)",
+   "sourceUrl": "",
+   "retrievedAt": "2026-09-25",
+   "note": "Matches the theme's canonical vanity number. profiles/writer-profile.md asks for the office line as well — (912) 303-5850 for Savannah — as an optional addition."
+  },
+  {
+   "surface": "excerpt",
+   "claim": "Hit by a port-freight tractor-trailer on I-16 through Garden City? A Savannah truck accident lawyer's guide to Chatham County liability, FMCSR evidence, and Georgia's 2-year deadline.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia Code § 9-3-33 (Justia)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-09-25",
+   "note": "Two-year deadline verified; no other factual claim. The excerpt publishes as the Article schema description."
+  },
+  {
+   "surface": "faq:0",
+   "claim": "In Georgia, you have 2 years from the date of the I-16 crash to file a personal-injury lawsuit under O.C.G.A. § 9-3-33. That clock does not pause while the motor carrier's insurer \"investigates,\" and it is shorter than South Carolina's 3-year window. If a Garden City municipal employee is a defendant, an ante-litem notice is due within 6 months under O.C.G.A. § 36-33-5 — independent of the 2-year suit deadline.",
+   "verdict": "update",
+   "currentValue": "Two-year § 9-3-33 period and six-month § 36-33-5 municipal ante-litem verified. The South Carolina comparison is cross-jurisdiction law on a Georgia-only post.",
+   "sourceName": "Georgia Code §§ 9-3-33, 36-33-5, 36-11-1 (Justia); profiles/writer-profile.md jurisdiction rules",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-36/chapter-33/section-36-33-5/",
+   "retrievedAt": "2026-09-25",
+   "note": "Delete 'and it is shorter than South Carolina's 3-year window'. Optionally append 'and 12 months if a Chatham County vehicle is involved (O.C.G.A. § 36-11-1)'. FAQ answers publish as FAQPage structured data, so the SC reference is currently published twice."
+  },
+  {
+   "surface": "faq:1",
+   "claim": "Under Georgia's modified comparative-negligence rule at O.C.G.A. § 51-12-33, you can still recover damages as long as you were less than 50% at fault for the I-16 crash. Your recovery is reduced by your percentage of fault. If you are found 50% or more responsible, you are barred from recovery.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia Code § 51-12-33(a), (g) (Justia)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-09-25",
+   "note": "Rule stated exactly."
+  },
+  {
+   "surface": "faq:2",
+   "claim": "A fatal Garden City truck crash typically opens claims against the driver, the motor carrier (the company whose USDOT number is on the truck), the broker that arranged the load, the shipper, and sometimes the chassis pool operator and trailer owner. Federal motor-carrier insurance under FMCSA rules carries a $750,000 minimum, often $1M or more. A wrongful-death action is brought under O.C.G.A. § 51-4-1 et seq.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "49 CFR § 387.9; 49 CFR § 390.21 (USDOT number marking) (Cornell LII); Georgia Code § 51-4-1 (Justia)",
+   "sourceUrl": "https://www.law.cornell.edu/cfr/text/49/387.9",
+   "retrievedAt": "2026-09-25",
+   "note": "$750,000 minimum verified; 'often $1M or more' is hedged market observation. Optional: name the § 51-4-2 claimants (spouse, then children; parents under § 19-7-1 when neither survives)."
+  },
+  {
+   "surface": "faq:3",
+   "claim": "Electronic logging device (ELD) data under 49 C.F.R. Part 395, dashcam and rear-view footage, dispatcher Slack/text logs, satellite/Qualcomm pings, post-trip inspection reports under Part 396, and driver drug-and-alcohol records can all be lawfully overwritten within 7 to 14 days unless a written preservation letter is sent. The motor carrier's rapid-response adjuster is on the scene within hours — your evidence has to be locked down on the same timeline.",
+   "verdict": "update",
+   "currentValue": "ELD records of duty status: 6 months (49 CFR 395.8(k)); post-trip inspection reports (DVIRs): 3 months (49 CFR 396.11); drug-and-alcohol testing records: 1–5 years, positives and refusals 5 years (49 CFR 382.401); dashcam footage, dispatcher messages and telematics pings: no federal retention rule.",
+   "sourceName": "49 CFR §§ 395.8(k), 396.11, 382.401 (Cornell LII)",
+   "sourceUrl": "https://www.law.cornell.edu/cfr/text/49/382.401",
+   "retrievedAt": "2026-09-25",
+   "note": "Rewrite the first sentence: 'Dashcam footage, dispatcher messages and telematics pings have no federal retention rule and can be overwritten at any time; federal rules let a carrier destroy post-trip inspection reports after three months (49 C.F.R. § 396.11) and ELD hours-of-service records after six (§ 395.8(k)); drug-and-alcohol test results are kept one to five years (§ 382.401).' Keep the preservation-letter and rapid-response sentences. Publishes as FAQPage schema."
+  },
+  {
+   "surface": "faq:4",
+   "claim": "A 2-year statute of limitations gives you time to value the case properly under O.C.G.A. § 9-3-33; the first offer rarely reflects that value.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia Code § 9-3-33 (Justia)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-09-25",
+   "note": "Only the two-year period is a factual claim; the rest is the firm's settlement-practice view."
+  },
+  {
+   "surface": "faq:5",
+   "claim": "Most port-truck tort cases out of Garden City are filed in Chatham County State Court at 133 Montgomery Street, Savannah — the Court that handles non-felony tort matters in the Eastern Judicial Circuit. Felony-related or higher-damages cases go to Chatham County Superior Court. If the motor carrier is out-of-state and the amount in controversy exceeds $75,000, the case may sit in or be removed to the U.S. District Court for the Southern District of Georgia, Savannah Division.",
+   "verdict": "update",
+   "currentValue": "State Court of Chatham County hears civil suits of any amount concurrently with the Superior Court (O.C.G.A. § 15-7-4(a)); 'Eastern Judicial Circuit' is the Superior Court's circuit (Chatham County alone), not a State Court label; there is no felony or damages split for civil cases. Federal: diversity plus more than $75,000 in controversy (28 U.S.C. § 1332(a)); Savannah Division covers Chatham (28 U.S.C. § 90(c)).",
+   "sourceName": "Georgia Code § 15-7-4 (Justia); Chatham County Courts — Superior Court Judges; 28 U.S.C. §§ 90, 1332 (Cornell LII)",
+   "sourceUrl": "https://courts.chathamcountyga.gov/Superior/JudgeWelcome",
+   "retrievedAt": "2026-09-25",
+   "note": "Replace the first two sentences with: 'Most port-truck suits out of Garden City are filed in the State Court of Chatham County at 133 Montgomery Street, Savannah, which hears civil cases of any amount; the Superior Court of Chatham County (Eastern Judicial Circuit) can hear the same cases.' The federal sentence is correct. Publishes as FAQPage schema."
+  }
+ ],
+ "recommendedEdits": [
+  "Intro: keep 'Jim Gillis Historic Savannah Parkway' and '65-mph'; change 'carries Georgia Ports Authority freight out of the Garden City Terminal toward I-95 and downtown Savannah' to 'carries Port of Savannah container traffic between Garden City and downtown Savannah' (I-95-bound port trucks use the Jimmy DeLoach Parkway).",
+  "Key Takeaways, port bullet: replace with 'The Port of Savannah's Garden City Terminal is the largest single container terminal in North America. According to the Georgia Ports Authority, the port moved 5.67 million TEUs in fiscal year 2026 (July 2025–June 2026), just shy of the prior year's 5.7 million, and about 80 percent of that cargo leaves by truck — roughly 15,000 truck moves a day, Monday through Friday.' Delete 'onto I-16'.",
+  "Key Takeaways, NHTSA bullet: replace 'large trucks were involved in 5,837 fatal crashes in 2022, and occupants of the other vehicle account for the majority of those killed' with '5,340 people were killed in large-truck crashes in 2024, and 70 percent of them were occupants of other vehicles, not the truck (NHTSA, Traffic Safety Facts 2024 Data: Large Trucks)'. Optionally attribute '20–30 times heavier' to IIHS.",
+  "Key Takeaways, evidence bullet: replace 'can be lawfully overwritten in 7 to 14 days' with 'have no federal retention rule (dashcam footage, dispatcher messages) or can be lawfully destroyed after three months (inspection reports, 49 C.F.R. § 396.11) or six months (ELD hours-of-service records, § 395.8(k))'; drop 'post-crash drug-and-alcohol records' from the short-shelf-life list (§ 382.401 keeps positives and refusals five years).",
+  "Key Takeaways, venue bullet: replace with 'Chatham County is the venue. Most port-truck suits are filed in the State Court of Chatham County, which hears civil cases of any amount; the Superior Court of Chatham County (Eastern Judicial Circuit) can hear the same cases. Both sit at the courthouse complex at 133 Montgomery Street, Savannah.' Delete 'non-felony' and 'felony-related or higher-damages'.",
+  "Key Takeaways, comparative-fault bullet: delete 'South Carolina's 51% bar does not apply on a Garden City crash.'",
+  "Key Takeaways, ante-litem bullet: append '— and 12 months for a claim against Chatham County under O.C.G.A. § 36-11-1'.",
+  "H2 'Why the I-16 Garden City stretch is the most concentrated truck-crash corridor in Chatham County': remove the unsourced superlative, e.g. 'Why the I-16 Garden City stretch is so unforgiving for passenger vehicles'. Keep the heading id.",
+  "Same section, paragraph 1: change 'sits immediately north of the I-16 / Jim Gillis Historic Savannah Parkway right-of-way' to 'sits a few miles north of I-16, on the Savannah River side of Garden City'; change 'Its truck gate pushes container chassis onto the parkway in concentrated weekday peaks — most heavily on Monday and Friday' to 'Its gates generate roughly 15,000 truck moves a day, Monday through Friday, between 4 a.m. and 6 p.m. (Georgia Ports Authority), and much of that traffic reaches I-16 at Dean Forest Road and I-516'; change 'a 2-lanes-per-direction, 65-mph motorway with limited shoulder' to 'a 65-mph interstate that GDOT has just widened from two to three lanes in each direction between I-95 and I-516, with ramp meters going in at the Dean Forest Road and Chatham Parkway on-ramps'.",
+  "Same section, list item 1: change 'accelerates slowly out of the terminal gate and then runs at 60–65 mph' to 'accelerates slowly up the on-ramp and then runs at 60–65 mph'.",
+  "Same section, list item 2: change 'weave sections at I-95, US-17, and the downtown Savannah ramps' to 'weave sections at I-95, I-516, and the downtown Savannah ramps'.",
+  "Same section, list item 3: change 'post-crash investigations on the I-16 corridor routinely uncover' to 'post-crash investigations can uncover'.",
+  "Evidence table, Insurance row: replace '(Georgia generally does not permit stacking)' with '(Georgia lets you stack UM coverage across policies; the added-on vs. reduced-by election decides how much survives the trucker's limits)'.",
+  "Paragraph after the table: change 'is on a short retention cycle. If a preservation letter is not in the motor carrier's hands within days, that evidence can be lawfully overwritten' to 'is either unregulated (dashcam footage, dispatcher messages have no federal retention rule) or on a short federal floor (inspection reports three months, ELD records six months). If a preservation letter is not in the motor carrier's hands quickly, that evidence can be lawfully overwritten.'",
+  "Crash-patterns list, item 1: delete 'the lack of a usable shoulder,'.",
+  "Crash-patterns list, item 2: change 'a brake imbalance under 49 C.F.R. § 393.52' to 'a brake-performance failure under 49 C.F.R. § 393.52'.",
+  "School-zone paragraph: replace 'sits roughly 0.14 miles from the I-16 corridor here, and Garden City Elementary sits about a mile north' with 'sits at the I-16/Chatham Parkway interchange — Chatham County's school zone on Chatham Parkway begins 150 feet north of the westbound I-16 on-ramp — and Garden City Elementary sits about two miles north'; replace 'During the 7:00–8:30 AM arrival and 2:30–4:00 PM dismissal windows, pedestrian and bicycle volume jumps' with 'During posted school-zone hours (7:45–8:45 a.m. on Chatham Parkway), pedestrian and bicycle traffic picks up'.",
+  "'Eric Roden on the first 72 hours' section, first sentence: change 'has tried port-freight tractor-trailer cases out of Savannah for more than two decades' to 'has tried port-freight tractor-trailer cases out of Savannah for more than a decade' (J.D. UGA 2012). Leave the rest of the attribution prose as is.",
+  "Venue paragraph: rewrite the second and third sentences as 'Most cases are filed in the State Court of Chatham County, which hears civil suits of any amount. The Superior Court of Chatham County — the Eastern Judicial Circuit, which is Chatham County alone and includes Garden City — can hear the same suits. Both sit at the Chatham County Courthouse complex at 133 Montgomery Street.' Add after the § 50-21-26 sentence: 'If a Chatham County vehicle is involved, the claim must be presented to the county within 12 months under O.C.G.A. § 36-11-1.'",
+  "UM/UIM paragraph: replace 'and unlike South Carolina, Georgia generally does not allow you to stack UM coverage across multiple policies — the offer-of-reduction form on each policy decides what coverage is \"add-on\" vs. \"reduced by\" the at-fault liability limit' with 'and Georgia lets you stack UM coverage from more than one policy — the written election you made between \"added-on\" and \"reduced-by\" coverage under § 33-7-11 decides whether your UM limits sit on top of the trucker's policy or are reduced by it'.",
+  "About the Author: change 'for more than two decades' to 'for more than a decade'; change 'approximately 5–7 miles east of the Garden City cluster along I-16 and Chatham Parkway' to 'about eight miles southeast of the I-16/Chatham Parkway interchange'.",
+  "FAQ 1 (index 0): delete 'and it is shorter than South Carolina's 3-year window'; optionally append 'and within 12 months if a Chatham County vehicle is involved (O.C.G.A. § 36-11-1)'.",
+  "FAQ 4 (index 3): replace 'can all be lawfully overwritten within 7 to 14 days unless a written preservation letter is sent' with 'are at risk fast: dashcam footage, dispatcher messages and telematics pings have no federal retention rule, post-trip inspection reports can be destroyed after three months (49 C.F.R. § 396.11) and ELD hours-of-service records after six (§ 395.8(k)) — unless a written preservation letter is sent'; remove 'driver drug-and-alcohol records' from that list (kept one to five years under § 382.401).",
+  "FAQ 6 (index 5): replace the first two sentences with 'Most port-truck suits out of Garden City are filed in the State Court of Chatham County at 133 Montgomery Street, Savannah, which hears civil cases of any amount; the Superior Court of Chatham County (Eastern Judicial Circuit) can hear the same cases.'",
+  "Reviewer: Eric Roden (Georgia-only post) — but only once the three South Carolina references (Key Takeaways, UM paragraph, FAQ 1) are removed; while any SC law remains on the page the owner's 2026-09-23 rule makes Graeham C. Gillin the reviewer."
+ ],
+ "statuteCitations": [
+  {
+   "section": "O.C.G.A. § 9-3-33",
+   "name": "Injuries to the person — two-year limitation",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-33",
+   "name": "Apportionment of damages; no recovery at 50 percent or more fault",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+  },
+  {
+   "section": "O.C.G.A. § 51-4-1",
+   "name": "Wrongful death — definitions ('full value of the life of the decedent')",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-4/section-51-4-1/"
+  },
+  {
+   "section": "O.C.G.A. § 51-4-2",
+   "name": "Wrongful death of spouse or parent — surviving spouse, then children, recover",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-4/section-51-4-2/"
+  },
+  {
+   "section": "O.C.G.A. § 19-7-1",
+   "name": "Recovery for homicide of child — parents recover when no spouse or child survives",
+   "url": "https://law.justia.com/codes/georgia/title-19/chapter-7/article-1/section-19-7-1/"
+  },
+  {
+   "section": "O.C.G.A. § 33-7-11",
+   "name": "Uninsured motorist coverage — $25,000/$50,000/$25,000 minimum; added-on vs reduced-by election; stacking across policies permitted by case law",
+   "url": "https://law.justia.com/codes/georgia/title-33/chapter-7/section-33-7-11/"
+  },
+  {
+   "section": "O.C.G.A. § 36-33-5",
+   "name": "Ante-litem notice to a municipal corporation — six months (year-less URL redirects to the 2022 edition; resolves)",
+   "url": "https://law.justia.com/codes/georgia/title-36/chapter-33/section-36-33-5/"
+  },
+  {
+   "section": "O.C.G.A. § 36-11-1",
+   "name": "Claims against counties — presented within 12 months (year-less URL redirects to the 2022 edition; resolves)",
+   "url": "https://law.justia.com/codes/georgia/title-36/chapter-11/section-36-11-1/"
+  },
+  {
+   "section": "O.C.G.A. § 50-21-26",
+   "name": "Georgia Tort Claims Act — notice of claim against the state within 12 months",
+   "url": "https://law.justia.com/codes/georgia/title-50/chapter-21/article-2/section-50-21-26/"
+  },
+  {
+   "section": "O.C.G.A. § 15-7-4",
+   "name": "State court jurisdiction — civil actions without regard to amount, concurrent with superior court",
+   "url": "https://law.justia.com/codes/georgia/title-15/chapter-7/article-1/section-15-7-4/"
+  },
+  {
+   "section": "O.C.G.A. § 40-6-181",
+   "name": "Maximum speed limits (70 mph interstate where posted; 65 mph urban interstate; 55 mph other)",
+   "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-9/section-40-6-181/"
+  },
+  {
+   "section": "49 CFR § 395.3",
+   "name": "Hours of service — 11-hour driving limit, 14-hour window, 60/70-hour limits",
+   "url": "https://www.law.cornell.edu/cfr/text/49/395.3"
+  },
+  {
+   "section": "49 CFR § 395.8(k)",
+   "name": "Records of duty status and supporting documents — retained not less than 6 months",
+   "url": "https://www.law.cornell.edu/cfr/text/49/395.8"
+  },
+  {
+   "section": "49 CFR § 396.11",
+   "name": "Driver vehicle inspection reports — retained three months",
+   "url": "https://www.law.cornell.edu/cfr/text/49/396.11"
+  },
+  {
+   "section": "49 CFR § 396.3(c)",
+   "name": "Inspection, repair and maintenance records — 1 year, and 6 months after the vehicle leaves the carrier",
+   "url": "https://www.law.cornell.edu/cfr/text/49/396.3"
+  },
+  {
+   "section": "49 CFR § 382.401",
+   "name": "Drug and alcohol testing records — 5-year (positives, refusals), 2-year and 1-year retention tiers",
+   "url": "https://www.law.cornell.edu/cfr/text/49/382.401"
+  },
+  {
+   "section": "49 CFR § 393.52",
+   "name": "Brake performance — braking force, deceleration and stopping distance (not brake imbalance)",
+   "url": "https://www.law.cornell.edu/cfr/text/49/393.52"
+  },
+  {
+   "section": "49 CFR Part 393 Subpart I",
+   "name": "Protection Against Shifting and Falling Cargo (§§ 393.100–393.136; § 393.126 intermodal containers)",
+   "url": "https://www.law.cornell.edu/cfr/text/49/part-393/subpart-I"
+  },
+  {
+   "section": "49 CFR § 391.11",
+   "name": "Driver qualification — general qualifications of drivers",
+   "url": "https://www.law.cornell.edu/cfr/text/49/391.11"
+  },
+  {
+   "section": "49 CFR § 390.3",
+   "name": "Applicability of the Federal Motor Carrier Safety Regulations",
+   "url": "https://www.law.cornell.edu/cfr/text/49/390.3"
+  },
+  {
+   "section": "49 CFR § 387.7",
+   "name": "Financial responsibility required — Form MCS-90 endorsement",
+   "url": "https://www.law.cornell.edu/cfr/text/49/387.7"
+  },
+  {
+   "section": "49 CFR § 387.9",
+   "name": "Financial responsibility, minimum levels — $750,000 / $1,000,000 / $5,000,000",
+   "url": "https://www.law.cornell.edu/cfr/text/49/387.9"
+  },
+  {
+   "section": "23 U.S.C. § 127",
+   "name": "Vehicle weight limitations — 80,000-pound gross vehicle weight maximum on the Interstate System",
+   "url": "https://www.law.cornell.edu/uscode/text/23/127"
+  },
+  {
+   "section": "28 U.S.C. § 90",
+   "name": "Georgia judicial districts — Savannah Division: Bryan, Chatham, Effingham, Liberty",
+   "url": "https://www.law.cornell.edu/uscode/text/28/90"
+  },
+  {
+   "section": "28 U.S.C. § 1332",
+   "name": "Diversity of citizenship; amount in controversy exceeds $75,000",
+   "url": "https://www.law.cornell.edu/uscode/text/28/1332"
+  },
+  {
+   "section": "O.C.G.A. § 36-33-5",
+   "name": "Presentation of claims against municipal corporations (ante litem, 6 months)",
+   "url": "https://law.justia.com/codes/georgia/title-36/provisions-applicable-to-municipal-corporations-only/chapter-33/section-36-33-5/",
+   "note": "2025 canonical path verified in the run-1722 pack on 2026-09-24; the plain year-less path redirects to the 2022 edition"
+  },
+  {
+   "section": "O.C.G.A. § 36-11-1",
+   "name": "Time for presentation of claims against counties (ante litem, 12 months)",
+   "url": "https://law.justia.com/codes/georgia/title-36/provisions-applicable-to-counties-only/chapter-11/section-36-11-1/",
+   "note": "2025 canonical path verified in the run-1722 pack on 2026-09-24; the plain year-less path redirects to the 2022 edition"
+  }
+ ],
+ "authoritativeLinks": [
+  {
+   "name": "Georgia Ports Authority — Port of Savannah volumes up 18% in June (2026-07-28; FY2026 total 5.67 million TEUs)",
+   "url": "https://gaports.com/press-releases/port-of-savannah-volumes-up-18-in-june/"
+  },
+  {
+   "name": "Georgia Ports Authority — Port of Savannah achieves second busiest year ever (2026-01-27; CY2025 nearly 5.7 million TEUs; 14,000–16,000 truck moves daily)",
+   "url": "https://gaports.com/press-releases/port-of-savannah-achieves-second-busiest-year-ever/"
+  },
+  {
+   "name": "Georgia Ports Authority — Garden City Terminal ('single largest and fastest growing container terminal in North America', 1,345 acres)",
+   "url": "https://gaports.com/facilities/port-of-savannah/garden-city-terminal/"
+  },
+  {
+   "name": "Georgia Ports Authority — Road (Jimmy DeLoach Connector: 5,000 trucks/day to I-95; Brampton Road Connector to I-516)",
+   "url": "https://gaports.com/road/"
+  },
+  {
+   "name": "Georgia Ports Authority — Savannah's Brampton Road Connector opens (2026-07-07; $126M; GDOT's $295M I-16/I-95 interchange and I-16 widening; $129M Jimmy DeLoach Parkway)",
+   "url": "https://gaports.com/press-releases/savannahs-brampton-road-connector-opens-july-16/"
+  },
+  {
+   "name": "Georgia Ports Authority — Garden City Terminal address and driving directions (Gate 4 via I-95 exit 106 / Jimmy DeLoach Parkway / SR 307)",
+   "url": "https://gaports.com/facilities/port-of-savannah/garden-city-terminal/garden-city-terminal-address-driving-directions/"
+  },
+  {
+   "name": "Georgia Ports Authority — trade conference release (2026-04-30; 80% truck / 20% rail)",
+   "url": "https://gaports.com/press-releases/supply-chain-predictability-and-cost-saving-strategies-highlight-georgia-ports-trade-conference/"
+  },
+  {
+   "name": "Georgia Ports Authority — Georgia Ports celebrates truck drivers (2026-09-16; 15,000 truck moves daily, 4 a.m.–6 p.m. Mon–Fri)",
+   "url": "https://gaports.com/press-releases/georgia-ports-celebrates-truck-drivers-2/"
+  },
+  {
+   "name": "GDOT — 16@95 Improvement Projects Fact Sheet (09/18/2025; two to three lanes each direction I-95 to I-516; ramp meters at SR 307 and Chatham Parkway; substantial completion late Q4 2025; $289.9M)",
+   "url": "https://www.dot.ga.gov/systems/ProjectDocuments/1695Improvements/16@95%20Improvement%20Projects-Fact%20Sheet.pdf"
+  },
+  {
+   "name": "GDOT GeoPI — P.I. 0012757, I-16 from I-95 to I-516 (status 'Under Construction', Sept 2026)",
+   "url": "https://www.dot.ga.gov/applications/geopi/Pages/Dashboard.aspx?ProjectId=0012757"
+  },
+  {
+   "name": "GDOT Major Mobility — 16@95 Improvement Projects page",
+   "url": "https://majormobilityga.com/projects/i1695improvements/"
+  },
+  {
+   "name": "GDOT weekly advisory via AllOnGeorgia (2026-04-26; lane closures for I-16 widening activities and I-16/I-516 bridge work)",
+   "url": "https://allongeorgia.com/bulloch-public-safety/gdot-traffic-impacts-for-the-i-16-at-i-95-improvement-projects-through-may-2/"
+  },
+  {
+   "name": "WTOC — Georgia awards record $468 million contract for I-16 widening (2026-07-02; I-95 west to MM 139.65, construction 2027 — separate from the Garden City stretch)",
+   "url": "https://www.wtoc.com/2026/07/02/georgia-awards-record-468-million-contract-i-16-widening-project/"
+  },
+  {
+   "name": "Georgia General Assembly HR 88 / Act 42 (2003) — Jim Gillis-Historic Savannah Parkway designation, I-95 to the end of I-16 in Savannah",
+   "url": "https://mydocs.dot.ga.gov/info/honorariums/Resolutions/2003_JimGillisHistoricSavannahParkway.pdf"
+  },
+  {
+   "name": "City of Savannah Code Sec. 207 — speed limits for on-system highways (S.R. 404/I-16: 65 mph MP 160.14–163.22; 55; 45; 35 to Montgomery St)",
+   "url": "https://agenda.savannahga.gov/content/files/sec_207-on-system-roads.pdf"
+  },
+  {
+   "name": "Chatham County Code, Chapter 12 — Motor Vehicles, Roads, Streets and Highways (I-16 speed zones; Chatham Pkwy school zone from 150 ft north of the westbound I-16 on-ramp, 7:45–8:45 a.m.)",
+   "url": "https://cdn.chathamcountyga.gov/Files/ChathamCounty/Code%20Book/Chapter12.PDF"
+  },
+  {
+   "name": "AARoads — Interstate 16 West, Savannah to Blitchton (Chatham County exits 155–164; 59,600 vpd in 2019 between Chatham Parkway and Dean Forest Road)",
+   "url": "https://www.aaroads.com/guides/i-016-west-savannah-ga"
+  },
+  {
+   "name": "Chatham County Courts — Superior Court Judges (Eastern Judicial Circuit 'comprised solely of Chatham County', including Garden City)",
+   "url": "https://courts.chathamcountyga.gov/Superior/JudgeWelcome"
+  },
+  {
+   "name": "Chatham County Courts — Map & Directions (Coleman Courthouse, 133 Montgomery St; Gadsden Courthouse, 400 W. Oglethorpe Ave)",
+   "url": "https://courts.chathamcountyga.gov/resources/mapdirections"
+  },
+  {
+   "name": "Chatham County — Department Contacts (State Court Clerk and Superior Court at 133 Montgomery Street)",
+   "url": "https://www.chathamcountyga.gov/OurCounty/DepartmentContacts"
+  },
+  {
+   "name": "U.S. District Court, Southern District of Georgia — Savannah",
+   "url": "https://www.gasd.uscourts.gov/content/savannah"
+  },
+  {
+   "name": "City of Garden City, GA — Government (Georgia municipal corporation, founded 1939; City Hall on Dean Forest Road just south of I-16)",
+   "url": "https://www.gardencity-ga.gov/Government"
+  },
+  {
+   "name": "City of Garden City, GA — Police Department (established 1951)",
+   "url": "https://www.gardencity-ga.gov/Departments/Police"
+  },
+  {
+   "name": "Georgia DPH — Designated Trauma & Specialty Care Centers (Memorial Health University Medical Center, Level I)",
+   "url": "https://dph.georgia.gov/EMS/specialty-care-centers-cardiac-trauma-stroke-pediatric"
+  },
+  {
+   "name": "WTOC — Memorial Health recertified as Level 1 trauma center (2023-09-15)",
+   "url": "https://www.wtoc.com/2023/09/15/memorial-health-recertified-level-1-trauma-center/"
+  },
+  {
+   "name": "NHTSA — Traffic Safety Facts 2024 Data: Large Trucks (DOT HS 813 816, June 2026)",
+   "url": "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813816.pdf"
+  },
+  {
+   "name": "NHTSA — Traffic Safety Facts 2023 Data: Large Trucks (DOT HS 813 717)",
+   "url": "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813717.pdf"
+  },
+  {
+   "name": "IIHS — Fatality Facts: Large trucks (20 to 30 times as much as passenger cars)",
+   "url": "https://www.iihs.org/topics/fatality-statistics/detail/large-trucks"
+  },
+  {
+   "name": "GOHS — Georgia Traffic Safety Facts: 2023 Overview of Motor Vehicle Crashes (1,615 fatalities; 12% involved a large truck)",
+   "url": "https://www.gahighwaysafety.org/wp-content/uploads/2025/10/2023-Overview-of-Motor-Vehicle-Crashes.pdf"
+  },
+  {
+   "name": "GDOT — Crash Data & Reporting (no corridor ranking published)",
+   "url": "https://www.dot.ga.gov/GDOT/Pages/CrashReporting.aspx"
+  },
+  {
+   "name": "University of Georgia School of Law — Spotlight: Eric Roden (J.D.'12)",
+   "url": "https://www.law.uga.edu/spotlight-eric-roden-jd12"
+  },
+  {
+   "name": "Dairyland Ins. Co. v. State Farm (Ga. Ct. App. 2008) — UM policies may be stacked",
+   "url": "https://law.justia.com/cases/georgia/court-of-appeals/2008/a07a1919-0.html"
+  },
+  {
+   "name": "U.S. Census Bureau Geocoder — 333 Commercial Dr resolves to Savannah city, Chatham County (32.005 N, 81.108 W)",
+   "url": "https://geocoding.geo.census.gov/geocoder/geographies/address?street=333+Commercial+Dr&city=Savannah&state=GA&zip=31406&benchmark=Public_AR_Current&vintage=Current_Current&format=json"
+  }
+ ],
+ "quoteNote": "Claims are quoted from the rendered text; eight quotes span inline <strong>/<em> tags in body.html (Key Takeaways lead-ins, the venue paragraph's court names, the NHTSA report title) and match exactly once tags are stripped."
+}
