@@ -1,0 +1,31 @@
+{
+ "excerpt": "This guide explains how to value and prove non-economic damages for a personal injury settlement under Georgia law.",
+ "keyTakeaways": "Georgia law allows personal injury victims to recover pain and suffering damages for physical discomfort, emotional distress, loss of enjoyment of life, and disfigurement. Adjusters and attorneys use informal multiplier or per diem conventions to negotiate these non-economic damages; neither is a rule of law, and a Georgia jury is not bound by them. Georgia does not cap pain and suffering in most cases, but the modified comparative fault rule (O.C.G.A. § 51-12-33) bars recovery if the victim is 50% or more at fault. The two-year statute of limitations under O.C.G.A. § 9-3-33 applies to most injury claims; a spouse's loss-of-consortium claim has four years, and claims against a government entity carry notice deadlines as short as six months.",
+ "faqs": [
+  {
+   "question": "Does Georgia cap pain and suffering damages?",
+   "answer": "Georgia does not impose a statutory cap on pain and suffering damages in ordinary negligence cases (the main exception is a claim against the State of Georgia, capped at $1 million per person under O.C.G.A. § 50-21-29). Punitive damages are a different matter: they are generally capped at $250,000 under O.C.G.A. § 51-12-5.1 unless the defendant intended to cause harm, acted while substantially impaired by alcohol or drugs, or the case is a product-liability claim."
+  },
+  {
+   "question": "What is the multiplier method for calculating pain and suffering in Georgia?",
+   "answer": "The multiplier method takes your total economic damages — medical bills, lost wages, and other out-of-pocket costs — and multiplies them by a factor that rises with the severity and duration of your injuries. It is a negotiating convention adjusters and attorneys use, not a rule of Georgia law; if a case goes to trial, the jury decides the amount on the evidence under the \"enlightened conscience\" standard in O.C.G.A. § 9-10-184."
+  },
+  {
+   "question": "How does comparative fault affect my pain and suffering award in Georgia?",
+   "answer": "Under Georgia's modified comparative fault rule (O.C.G.A. § 51-12-33), your pain and suffering award is reduced by your percentage of fault. If you are found 50% or more at fault for the accident, you are barred from recovering any compensation."
+  },
+  {
+   "question": "What evidence do I need to prove pain and suffering in Georgia?",
+   "answer": "Key evidence includes medical records documenting your injuries and treatment, a personal pain journal recording daily symptoms, testimony from medical experts and mental health professionals, before-and-after statements from family members, and photographs or video showing how your injuries affect your daily life."
+  },
+  {
+   "question": "How long do I have to file a pain and suffering claim in Georgia?",
+   "answer": "Georgia's statute of limitations gives you two years from the date of injury to file a personal injury lawsuit under O.C.G.A. § 9-3-33. Missing this deadline typically means losing your right to recover compensation, including pain and suffering damages. Claims against a city, county or state agency require written notice much sooner — as little as six months (O.C.G.A. § 36-33-5)."
+  },
+  {
+   "question": "Can I recover pain and suffering damages if I had a pre-existing condition?",
+   "answer": "Yes. Under Georgia's eggshell plaintiff doctrine, the defendant must compensate you for the full extent of your injuries even if a pre-existing condition made your injuries worse than they would have been for a healthy person. However, you must prove the accident aggravated the pre-existing condition beyond its prior state."
+  }
+ ],
+ "metaDescription": ""
+}

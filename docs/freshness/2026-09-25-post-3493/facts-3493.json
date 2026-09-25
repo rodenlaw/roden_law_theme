@@ -1,0 +1,746 @@
+{
+ "postId": 3493,
+ "slug": "how-pain-and-suffering-is-calculated-after-an-accident-in-georgia",
+ "jurisdiction": "GA-only",
+ "verifiedAt": "2026-09-25",
+ "reused": [
+  "run-1651/facts-1651.json (pain-and-suffering conventions, enlightened-conscience measure, SB 68 § 9-10-184, Nestlehutt, § 50-21-29, § 51-4-1 wrongful-death measure, Stapleton, Carnes, Littleton, Geary)",
+  "run-1756/facts-1756.json (§ 51-12-5.1 cap and exceptions, Colonial Pipeline, § 51-12-33)",
+  "run-1676/facts-1676.json (SB 68 §§ 1, 7, 8, 9; § 51-12-1.1; § 51-4-2)"
+ ],
+ "verifiedClaims": [
+  {
+   "surface": "body",
+   "claim": "Georgia law also allows accident victims to recover pain and suffering damages — compensation for the physical pain, emotional anguish, and diminished quality of life that follow a serious injury.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-10-184(a)(2) (2025 Code, as rewritten by SB 68 § 1): noneconomic damages include 'physical or emotional pain, discomfort, anxiety, hardship, distress, suffering, inconvenience, physical impairment, mental anguish, disfigurement, loss of enjoyment of life, loss of society and companionship, loss of consortium'",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-10/article-8/section-9-10-184/",
+   "retrievedAt": "2026-09-25",
+   "note": "Matches the statutory definition. Read in a Chrome tab; the Justia page text matches the signed SB 68 § 1 text (gov.georgia.gov PDF, read 2026-09-25)."
+  },
+  {
+   "surface": "body",
+   "claim": "For a broader overview of personal injury tort law, the <a href=\"https://www.law.cornell.edu/wex/tort\" target=\"_blank\" rel=\"noopener\">Cornell Law Institute's tort law overview</a> provides helpful foundational context.",
+   "verdict": "update",
+   "currentValue": "The link resolves (HTTP 200, checked 2026-09-25). The publisher is the Legal Information Institute at Cornell Law School; there is no 'Cornell Law Institute'.",
+   "sourceName": "Cornell Law School, Legal Information Institute — Wex: tort",
+   "sourceUrl": "https://www.law.cornell.edu/wex/tort",
+   "retrievedAt": "2026-09-25",
+   "note": "Anchor-text fix only, same defect the 1651, 1653 and 1676 packs found: 'the Legal Information Institute at Cornell Law School's tort law overview'. Keep the href."
+  },
+  {
+   "surface": "body",
+   "claim": "In Georgia personal injury law, damages fall into two broad categories: economic damages (also called special damages) and non-economic damages (also called general damages).",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-2(a)-(b) (general damages presumed to flow from the tort, recoverable without proof of any amount; special damages must be proved); O.C.G.A. § 9-10-184(a)(1)-(2) (economic / noneconomic definitions)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-2/",
+   "retrievedAt": "2026-09-25",
+   "note": "The general/special and economic/noneconomic splits are not identical in theory, but the equation is the conventional shorthand and the post asserts no figure. Reused from facts-1651."
+  },
+  {
+   "surface": "body",
+   "claim": "Under Georgia case law, juries have wide discretion to award pain and suffering damages based on the totality of the evidence presented, and there is no statutory cap on non-economic damages in standard personal injury cases.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-10-184(b): 'the measure of such damages being the enlightened conscience of an impartial jury'; O.C.G.A. § 51-12-6: 'no measure of damages can be prescribed except the enlightened consciences of impartial jurors'; AT Systems Southeast, Inc. v. Carnes, 272 Ga. App. 148 (2005); Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt, 286 Ga. 731 (2010)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/2010/s09a1432.html",
+   "retrievedAt": "2026-09-25",
+   "note": "Correct. Optional precision: name the measure — 'the legal measure is the \"enlightened conscience of an impartial jury\" (O.C.G.A. § 9-10-184)'. Note that § 51-12-6 is the section for injuries entirely to 'peace, happiness, or feelings'; for a bodily-injury case the enlightened-conscience measure is stated in § 9-10-184(b) and in the case law (Carnes). Cite § 9-10-184 for this post."
+  },
+  {
+   "surface": "body",
+   "claim": "This is critically important: unlike some states that impose caps on non-economic damages, Georgia places no limit on pain and suffering awards in most personal injury claims.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt, 286 Ga. 731, 691 S.E.2d 218 (Ga. 2010) (noneconomic caps in § 51-13-1 'violate the constitutional right to trial by jury'); O.C.G.A. § 50-21-29(b)(1) (Tort Claims Act: $1 million per person, $3 million per occurrence against the state)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-50/chapter-21/article-2/section-50-21-29/",
+   "retrievedAt": "2026-09-25",
+   "note": "'Most' is exactly right. Optional: append the one common exception — 'The main exception is a claim against the State of Georgia itself, where the Tort Claims Act caps all damages at $1 million per person (O.C.G.A. § 50-21-29).' Reused from facts-1651."
+  },
+  {
+   "surface": "body",
+   "claim": "Emotional and psychological distress encompasses the mental health consequences of an injury. Anxiety, depression, insomnia, mood changes, fear of driving or returning to the location of an accident, and a pervasive sense of vulnerability are all compensable under Georgia law.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-10-184(a)(2) ('anxiety', 'distress', 'mental anguish'); Georgia pattern charge on pain and suffering as quoted in Geary v. Estate of Tapley (Ga. App. 2024) ('mental anguish such as anxiety, shock or worry'); OB-Gyn Associates of Albany v. Littleton, 259 Ga. 663 (1989) (impact rule: in negligence, mental suffering is recoverable when it accompanies a physical injury)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2024/a24a0978.html",
+   "retrievedAt": "2026-09-25",
+   "note": "Correct for an accident victim with a physical injury, which is the post's premise. Georgia's impact rule means a negligence claim for emotional harm alone generally fails (Littleton); the post need not state this, but do not broaden the sentence to injury-free claimants."
+  },
+  {
+   "surface": "body",
+   "claim": "Post-traumatic stress disorder (PTSD) deserves special mention because it frequently follows serious accidents ... A formal PTSD diagnosis supported by treatment records can add substantial value to a pain and suffering claim.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Practice commentary; no figure or legal rule asserted",
+   "sourceUrl": "",
+   "retrievedAt": "2026-09-25",
+   "note": "'Frequently' and 'substantial value' are unquantified descriptors; no statistic is claimed and data/statistics.json has nothing to swap in. Leave as is."
+  },
+  {
+   "surface": "body",
+   "claim": "Loss of enjoyment of life compensates victims who can no longer participate in activities that previously gave their lives meaning ... all of these represent compensable losses under Georgia law.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-10-184(a)(2) ('loss of enjoyment of life'); pattern charge factors ('interference with enjoyment of life') in Geary v. Estate of Tapley (Ga. App. 2024)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-10/article-8/section-9-10-184/",
+   "retrievedAt": "2026-09-25",
+   "note": "Statutory list includes it. Note that in Georgia loss of enjoyment is an element of pain and suffering, not a separate 'hedonic' award; the post's framing as a 'category' under the pain-and-suffering umbrella is consistent with that."
+  },
+  {
+   "surface": "body",
+   "claim": "Disfigurement and scarring is recognized as a separate component of pain and suffering because visible scars and physical disfigurement carry psychological consequences that extend far beyond the physical wound itself.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-10-184(a)(2) ('disfigurement')",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-10/article-8/section-9-10-184/",
+   "retrievedAt": "2026-09-25",
+   "note": ""
+  },
+  {
+   "surface": "body",
+   "claim": "Loss of consortium is a claim brought by the spouse of an injured person for the loss of companionship, affection, sexual relations, and the mutual support that the injury has disrupted. While technically a separate claim filed by the spouse rather than the injured party, loss of consortium is closely related to pain and suffering and is frequently included alongside it in Georgia personal injury lawsuits.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Stapleton v. Palmore, 250 Ga. 259, 297 S.E.2d 270 (Ga. 1982) (personal-injury and loss-of-consortium claims are separate and distinct claims of different spouses); O.C.G.A. § 9-3-33 (loss-of-consortium actions: four years)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/1982/38899-1.html",
+   "retrievedAt": "2026-09-25",
+   "note": "This post gets the point right that the 1651 post got wrong: consortium is the spouse's own claim. Optional add: '(it also carries its own four-year filing deadline under O.C.G.A. § 9-3-33)'."
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia statute sets no fixed formula for calculating pain and suffering. Instead, insurance adjusters, attorneys, and juries rely on two widely used methods to arrive at a reasonable figure.",
+   "verdict": "update",
+   "currentValue": "First sentence is right (§ 9-10-184(b); § 51-12-6; Carnes). Juries do not use the multiplier or per-diem methods: the jury's legal measure is 'the enlightened conscience of an impartial jury' (§ 9-10-184(b)), and since SB 68 (effective April 21, 2025, applied to pending cases) counsel may argue a dollar value for noneconomic damages only after the close of evidence, only if 'rationally related to the evidence', and may not 'make reference to objects or values having no rational connection to the facts proved' (§ 9-10-184(c)(1)).",
+   "sourceName": "O.C.G.A. § 9-10-184(b), (c)(1) (2025 Code); SB 68 (2025) §§ 1, 9 (signed text)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-10/article-8/section-9-10-184/",
+   "retrievedAt": "2026-09-25",
+   "note": "Reword: 'Georgia statute sets no fixed formula for calculating pain and suffering — the legal measure is the \"enlightened conscience of an impartial jury\" (O.C.G.A. § 9-10-184). In negotiation, insurance adjusters and attorneys rely on two informal conventions to put a number on it. Neither is a rule of law, and a jury is never bound by them.' Same rule settled in facts-1651 and facts-1653."
+  },
+  {
+   "surface": "body",
+   "claim": "The multiplier method is the most commonly used approach in Georgia personal injury claims.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-09-25",
+   "note": "No verdict record, opinion, study or statute supports 'the most commonly used approach'. Delete the sentence; open the paragraph with 'The multiplier method works by taking...'. Same drop as facts-1651 ('The most widely used approach.')."
+  },
+  {
+   "surface": "body",
+   "claim": "It works by taking the total amount of your economic damages — medical bills, lost wages, future medical costs, and other documented financial losses — and multiplying that figure by a number typically ranging from 1.5 to 5.",
+   "verdict": "update",
+   "currentValue": "The mechanic (economic damages times a factor) is a fair description of the convention; the range '1.5 to 5' is traceable to no primary source. Note also that since SB 68 the medical-bill input is measured by 'the reasonable value of medically necessary care' for causes of action arising on or after April 21, 2025 (O.C.G.A. § 51-12-1.1(b)).",
+   "sourceName": "O.C.G.A. § 9-10-184; § 51-12-6 (neither prescribes a multiplier); O.C.G.A. § 51-12-1.1(b) (added by SB 68 § 7; SB 68 § 9(b) limits §§ 6-7 to causes of action arising on or after the effective date)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-1-1/",
+   "retrievedAt": "2026-09-25",
+   "note": "Delete 'typically ranging from 1.5 to 5'; keep 'multiplying that figure by a factor that rises with the severity and permanence of the injury'. Optional one-line add: 'Since Georgia's 2025 tort-reform act, the medical-expense figure that feeds this calculation is limited to the reasonable value of medically necessary care, not the amount billed (O.C.G.A. § 51-12-1.1).' Same fix as facts-1651 and facts-1653."
+  },
+  {
+   "surface": "body",
+   "claim": "For example, if your economic damages total $100,000 and a multiplier of 3 is applied, your pain and suffering would be valued at $300,000, bringing your total claim to $400,000.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Arithmetic check: $100,000 x 3 = $300,000; $100,000 + $300,000 = $400,000",
+   "sourceUrl": "",
+   "retrievedAt": "2026-09-25",
+   "note": "Correct arithmetic for a purely hypothetical illustration. Label it 'Purely hypothetical example:' — the figures are not a typical claim value and must not read as one."
+  },
+  {
+   "surface": "body",
+   "claim": "More severe injuries — such as <a href=\"/practice-areas/brain-injury-lawyers/\">traumatic brain injuries</a> that result in permanent cognitive impairment — may warrant multipliers of 4 or 5, while relatively minor injuries with full recovery might use a multiplier of 1.5 to 2.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-09-25",
+   "note": "Tiered multipliers with no source, presented as a scale. Replace with a sentence that keeps the internal link and no figures: 'The factor rises with the severity and permanence of the injury — a <a href=\"/practice-areas/brain-injury-lawyers/\">traumatic brain injury</a> with permanent cognitive impairment sits at the top of the range; a minor injury with full recovery at the bottom.' Same class of drop as facts-1651's tier bullets."
+  },
+  {
+   "surface": "body",
+   "claim": "The multiplier method is favored by many insurance companies during initial settlement evaluations because it provides a structured starting point for negotiation. However, it is important to understand that multipliers are not fixed rules — they are negotiating tools.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Practice commentary; consistent with O.C.G.A. § 9-10-184(b) (no formula; jury measure is the enlightened conscience)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-10/article-8/section-9-10-184/",
+   "retrievedAt": "2026-09-25",
+   "note": "'Not fixed rules — negotiating tools' is the correct framing and carries the section. 'Favored by many insurance companies' is unquantified commentary; leave as is."
+  },
+  {
+   "surface": "body",
+   "claim": "The daily rate is often pegged to your daily earnings, the logic being that enduring a day of pain is at least as burdensome as performing a day of work.",
+   "verdict": "update",
+   "currentValue": "No source supports 'often'. And in a Georgia courtroom, a per-diem figure pegged to wages is now exposed to § 9-10-184(c)(1): argument may not 'make reference to objects or values having no rational connection to the facts proved by the evidence.'",
+   "sourceName": "O.C.G.A. § 9-10-184(c)(1) (2025 Code)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-10/article-8/section-9-10-184/",
+   "retrievedAt": "2026-09-25",
+   "note": "Change 'is often pegged' to 'is sometimes pegged'; add after the sentence: 'Like the multiplier, this is a negotiating convention, not a rule of law.' Same fix as facts-1651."
+  },
+  {
+   "surface": "body",
+   "claim": "For example, if you earn $250 per day and your doctor estimates a 300-day recovery period, the per diem calculation would value your pain and suffering at $75,000.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Arithmetic check: $250 x 300 = $75,000",
+   "sourceUrl": "",
+   "retrievedAt": "2026-09-25",
+   "note": "Correct arithmetic for a hypothetical. Label it 'Purely hypothetical example:'. The $250 rate is not a verified market figure."
+  },
+  {
+   "surface": "body",
+   "claim": "For injuries with permanent consequences, the per diem period may extend over many years or even the remainder of the victim's expected lifespan, which can result in very large figures for catastrophic injuries.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Practice commentary; Georgia pattern charge allows the jury to consider future pain and suffering (Carnes, Ga. App. 2005: pain and suffering 'in the past, present, and future')",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2005/a04a1879.html",
+   "retrievedAt": "2026-09-25",
+   "note": "No figure asserted. Keep, provided the preceding paragraph says the convention is not law."
+  },
+  {
+   "surface": "body",
+   "claim": "The per diem method is particularly effective when presenting a case to a jury because it gives jurors a concrete, day-by-day framework to understand what the victim endures. It transforms an abstract concept into something tangible and relatable.",
+   "verdict": "update",
+   "currentValue": "Under the 2025 rewrite of § 9-10-184, any dollar figure or range for noneconomic damages may be argued only after the close of evidence, at the party's first opportunity to argue damages, rationally related to the evidence, and without reference to 'objects or values having no rational connection to the facts proved' (§ 9-10-184(b)-(c)). Counsel who has opening and concluding arguments must present the figure in opening and may not change it in closing (§ 9-10-184(c)(2)). No witness may testify to an amount in the jury's hearing (§ 9-10-184(b)). Effective April 21, 2025; the legislature applied it to pending cases (SB 68 § 9(b)).",
+   "sourceName": "O.C.G.A. § 9-10-184(b), (c)(1)-(2) (2025 Code); SB 68 (2025) §§ 1, 9 (signed text, gov.georgia.gov)",
+   "sourceUrl": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download",
+   "retrievedAt": "2026-09-25",
+   "note": "Reword: 'The per diem method can give jurors a concrete, day-by-day framework — but since Georgia's 2025 tort-reform act (SB 68), a lawyer may put a dollar figure for pain and suffering before a jury only in closing argument, only if it is rationally tied to the evidence, and not by reference to values with no rational connection to the facts proved (O.C.G.A. § 9-10-184). Either side may also demand a phased trial in which the jury decides fault before hearing about damages (O.C.G.A. § 51-12-15).'"
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia courts do not mandate one method over the other. Both the multiplier and per diem approaches are used in settlement negotiations, and attorneys may present either framework — or both — during trial.",
+   "verdict": "update",
+   "currentValue": "Correct that no method is mandated (§ 9-10-184(b); § 51-12-6). 'Present either framework — or both — during trial' overstates: at trial the only permitted vehicle is closing argument under § 9-10-184(c), and counsel with opening and concluding arguments may not argue a different value in concluding than in opening (§ 9-10-184(c)(2)).",
+   "sourceName": "O.C.G.A. § 9-10-184(b)-(c) (2025 Code)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-10/article-8/section-9-10-184/",
+   "retrievedAt": "2026-09-25",
+   "note": "Reword the second sentence: 'Both conventions are used in settlement negotiations; at trial, any dollar figure for pain and suffering can be suggested only in closing argument and within the limits of O.C.G.A. § 9-10-184.'"
+  },
+  {
+   "surface": "body",
+   "claim": "It is also worth noting that Georgia courts allow per diem arguments during closing statements, which some states restrict. This gives Georgia personal injury attorneys an additional tool for persuading juries to award fair compensation.",
+   "verdict": "update",
+   "currentValue": "Historically accurate: former § 9-10-184 (struck by SB 68 § 1) read 'In the trial of a civil action for personal injuries, counsel shall be allowed to argue the worth or monetary value of pain and suffering to the jury; provided, however, that any such argument shall conform to the evidence or reasonable deductions from the evidence in the case.' Since April 21, 2025 the rewritten § 9-10-184 permits such argument only in closing, rationally related to the evidence, with no reference to objects or values having no rational connection to the facts proved, and with the opening/concluding consistency rule in (c)(2). The comparative clause 'which some states restrict' has no source.",
+   "sourceName": "SB 68 (2025) § 1 (signed text showing the struck former § 9-10-184 and the new text); O.C.G.A. § 9-10-184 (2025 Code)",
+   "sourceUrl": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download",
+   "retrievedAt": "2026-09-25",
+   "note": "Rewrite: 'Georgia has long let lawyers argue a dollar value for pain and suffering in closing, and it still does — but since the 2025 tort-reform act (SB 68) that argument must be rationally tied to the evidence and may not invoke values with no rational connection to the facts proved (O.C.G.A. § 9-10-184). It remains a useful tool when the daily figure is anchored to what the evidence actually shows.' Delete 'which some states restrict'."
+  },
+  {
+   "surface": "body",
+   "claim": "<td>Economic damages × a factor (1.5 to 5)</td>",
+   "verdict": "update",
+   "currentValue": "Range has no primary source (see the multiplier finding above).",
+   "sourceName": "O.C.G.A. § 9-10-184; § 51-12-6 (no formula prescribed)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-6/",
+   "retrievedAt": "2026-09-25",
+   "note": "Change the cell to 'Economic damages × a factor that rises with severity'."
+  },
+  {
+   "surface": "body",
+   "claim": "<td>Georgia courts</td><td>Accepted in negotiations and at trial</td><td>Accepted; per diem arguments permitted in closing statements</td>",
+   "verdict": "update",
+   "currentValue": "Neither convention is 'accepted' by Georgia courts as a measure; the jury measure is the enlightened conscience (§ 9-10-184(b)). Any dollar figure is argued only in closing, rationally related to the evidence, since SB 68 (§ 9-10-184(c)).",
+   "sourceName": "O.C.G.A. § 9-10-184(b)-(c) (2025 Code)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-10/article-8/section-9-10-184/",
+   "retrievedAt": "2026-09-25",
+   "note": "Change the row to: 'Georgia courts | A negotiating convention, not law; a dollar figure may be argued only in closing and only if rationally tied to the evidence (O.C.G.A. § 9-10-184) | Same rule; a daily figure must be anchored to the evidence, not to unrelated values'."
+  },
+  {
+   "surface": "body",
+   "claim": "Severity of the injury. This is the single most influential factor. ... Duration of recovery. ... Impact on daily life and work. ... The more dramatically your daily routine has been disrupted, the more compelling your pain and suffering claim becomes.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia pattern charge factors (interference with normal living and enjoyment of life, impairment of bodily health and vigor, actual physical pain, mental anguish, extent to which the plaintiff must limit activities) as quoted in Geary v. Estate of Tapley (Ga. App. 2024) and approved in Food Lion v. Williams, 219 Ga. App. 352 (1995)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2024/a24a0978.html",
+   "retrievedAt": "2026-09-25",
+   "note": "Severity, duration and impact on daily life track the charge factors; 'the single most influential factor' is commentary with no figure. Nothing to correct. Reused from facts-1651."
+  },
+  {
+   "surface": "body",
+   "claim": "Pre-existing conditions. Georgia follows the \"eggshell plaintiff\" doctrine, which means a defendant must take the victim as they find them. If you had a pre-existing back condition that was aggravated by the accident, the defendant is liable for the full extent of the aggravation — not just what a perfectly healthy person would have experienced.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "AT Systems Southeast, Inc. v. Carnes, 272 Ga. App. 148 (Ga. Ct. App. 2005): 'it has long been the rule that a tortfeasor takes a plaintiff in whatever condition he finds him'; recovery is for the aggravation the defendant caused (Carnes; Mitchell v. Turner, 89 Ga. App. 14 (1953))",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2005/a04a1879.html",
+   "retrievedAt": "2026-09-25",
+   "note": "Correct, and correctly limited to 'the full extent of the aggravation'. Reused from facts-1651."
+  },
+  {
+   "surface": "body",
+   "claim": "Credibility and consistency. ... If you tell your doctor you cannot walk more than 50 feet but are photographed hiking the following weekend, the insurance company will use that discrepancy to challenge your entire claim. ... Quality of medical treatment. Gaps in medical treatment are one of the most common ways insurance companies reduce pain and suffering awards.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Practice commentary; no legal rule or statistic asserted",
+   "sourceUrl": "",
+   "retrievedAt": "2026-09-25",
+   "note": "'50 feet' is an illustrative hypothetical, not a figure to verify. 'One of the most common ways' is unquantified. Leave as is."
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia applies a modified comparative fault system under O.C.G.A. § 51-12-33 that can significantly affect your pain and suffering recovery. Under this rule, your total damages — including pain and suffering — are reduced by your percentage of fault in causing the accident. More critically, if you are found to be 50 percent or more at fault, you are completely barred from recovering any compensation.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-33(a) (damages reduced 'in proportion to his or her percentage of fault'); (g) ('the plaintiff shall not be entitled to receive any damages if the plaintiff is 50 percent or more responsible for the injury or damages claimed')",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-09-25",
+   "note": "Verbatim-consistent with (a) and (g), read 2026-09-25. Matches the writer-profile jurisdiction table. SB 68 did not change the 50 percent bar. Optional add (SB 68 § 5, effective April 21, 2025, applied to pending cases): 'Since the 2025 tort-reform act, a jury may also consider whether you were wearing a seat belt when it allocates fault and sets damages in a car-crash case (O.C.G.A. § 40-8-76.1(d)).'"
+  },
+  {
+   "surface": "body",
+   "claim": "Suppose a jury determines that your total damages, including pain and suffering, are worth $500,000, but that you were 20 percent at fault for the accident ... your recovery would be reduced by 20 percent, leaving you with $400,000.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Arithmetic check under O.C.G.A. § 51-12-33(a): $500,000 x (1 - 0.20) = $400,000",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-09-25",
+   "note": "Correct and illustrative; 20 percent is below the bar. Not a verdict figure."
+  },
+  {
+   "surface": "body",
+   "claim": "Now consider the same scenario, but the jury finds you were 50 percent at fault. Under O.C.G.A. § 51-12-33, you would recover nothing. The 50 percent threshold is an absolute bar — there is no partial recovery once your fault reaches that level.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-33(g)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-09-25",
+   "note": ""
+  },
+  {
+   "surface": "body",
+   "claim": "The comparative fault rule applies to all types of personal injury claims in Georgia, including car accidents, commercial truck collisions, premises liability cases, and medical malpractice claims.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-33(a): 'Where an action is brought against one or more persons for injury to person or property'",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-09-25",
+   "note": "The statute is not limited by claim type. All four internal links return HTTP 200 (checked 2026-09-25 with a browser user agent)."
+  },
+  {
+   "surface": "body",
+   "claim": "Under O.C.G.A. § 51-12-5.1, punitive damages are designed to punish the defendant for willful misconduct, malice, fraud, wantonness, oppression, or conduct showing an entire want of care that raises a presumption of conscious indifference to the consequences.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-5.1(b): 'proven by clear and convincing evidence that the defendant's actions showed willful misconduct, malice, fraud, wantonness, oppression, or that entire want of care which would raise the presumption of conscious indifference to consequences'; (c): 'solely to punish, penalize, or deter a defendant'",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+   "retrievedAt": "2026-09-25",
+   "note": "Close paraphrase of (b). Add the burden: '... and are available only on clear and convincing evidence of' that conduct. Negligence, even gross negligence, is not enough (Colonial Pipeline Co. v. Brown, 258 Ga. 115 (1988)) — optional add."
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia law caps punitive damages at $250,000 in most cases, with important exceptions. The cap does not apply when the defendant acted with the specific intent to cause harm, or when the defendant was under the influence of alcohol or drugs at the time of the incident.",
+   "verdict": "update",
+   "currentValue": "$250,000 under § 51-12-5.1(g). Subsection (f) lifts the cap, against the active tort-feasor only, where the defendant acted 'with the specific intent to cause harm' or 'while under the influence of alcohol, drugs other than lawfully prescribed drugs administered in accordance with prescription, or any intentionally consumed glue, aerosol, or other toxic vapor to that degree that his or her judgment is substantially impaired'. Subsection (e)(1) separately removes the cap in every product-liability case, with 75 percent of the award (less a proportionate share of litigation costs and fees) paid to the state treasury under (e)(2) — upheld in State v. Moseley, 263 Ga. 680 (1993).",
+   "sourceName": "O.C.G.A. § 51-12-5.1(e), (f), (g) (2025 Code) and Justia annotations (State v. Moseley, 263 Ga. 680 (1993); Mack Trucks, Inc. v. Conkle, 263 Ga. 539 (1993); Reid v. Morris, 309 Ga. 230 (2020))",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+   "retrievedAt": "2026-09-25",
+   "note": "Rewrite: 'Georgia law caps punitive damages at $250,000 in most cases (O.C.G.A. § 51-12-5.1(g)), with important exceptions. The cap does not apply when the defendant acted with the specific intent to cause harm, or acted while impaired by alcohol or drugs to the degree that their judgment was substantially impaired — and then only against the impaired or intentional wrongdoer, not other defendants (§ 51-12-5.1(f)). Product-liability cases are also uncapped, but 75 percent of the punitive award goes to the State of Georgia (§ 51-12-5.1(e)).'"
+  },
+  {
+   "surface": "body",
+   "claim": "In drunk driving cases, for example, punitive damages can be unlimited — and Georgia juries have returned multi-million-dollar punitive awards in impaired driving cases.",
+   "verdict": "drop",
+   "currentValue": "First clause is right in substance ('no statutory cap' against the active tort-feasor, § 51-12-5.1(f); Craig v. Holsey, 264 Ga. App. 344 (2003); Reid v. Morris, 309 Ga. 230 (2020)). The second clause names no verdict and cannot be traced.",
+   "sourceName": "O.C.G.A. § 51-12-5.1(f); Justia annotations (Craig v. Holsey; Reid v. Morris)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+   "retrievedAt": "2026-09-25",
+   "note": "Delete 'and Georgia juries have returned multi-million-dollar punitive awards in impaired driving cases'. Replace 'can be unlimited' with 'carry no statutory cap against the impaired driver'. The impaired-driving example is the common (f) case and may stay."
+  },
+  {
+   "surface": "body",
+   "claim": "It is important to understand that punitive damages are awarded in addition to compensatory damages (which include pain and suffering), not as a substitute.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-5.1(a) ('additional damages awarded because of aggravating circumstances'); (c) (not compensation); Justia annotations: punitive damages may not be recovered without entitlement to compensatory damages (Flynn v. Allstate Ins. Co., 268 Ga. App. 222 (2004))",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+   "retrievedAt": "2026-09-25",
+   "note": ""
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia law also imposes a procedural requirement: punitive damages may not be specifically requested in the initial complaint. Under O.C.G.A. § 51-12-5.1(d), the plaintiff must amend the complaint to add a punitive damages claim after the case has progressed, typically once sufficient evidence of egregious conduct has been established through discovery.",
+   "verdict": "update",
+   "currentValue": "The statute says the opposite. § 51-12-5.1(d)(1): 'An award of punitive damages must be specifically prayed for in a complaint. In any case in which punitive damages are claimed, the trier of fact shall first resolve from the evidence produced at trial whether an award of punitive damages shall be made. This finding shall be made specially through an appropriate form of verdict'. (d)(2): if punitive damages are to be awarded, 'the trial shall immediately be recommenced' to receive evidence on the amount. There is no rule barring the request from the initial complaint or requiring a later amendment.",
+   "sourceName": "O.C.G.A. § 51-12-5.1(d)(1)-(2) (2025 Code, verbatim); Justia annotation Conseco Fin. Servicing Corp. v. Hill, 252 Ga. App. 774 (2001) (special finding required)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+   "retrievedAt": "2026-09-25",
+   "note": "Most consequential legal error on the page — it inverts the statute it cites. Rewrite: 'Georgia law also imposes a procedural requirement: punitive damages must be specifically requested in the complaint (O.C.G.A. § 51-12-5.1(d)). At trial the jury first decides, by a special verdict, whether punitive damages should be awarded at all; only then is the trial reopened to hear evidence on the amount.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia courts accept multiple forms of evidence to establish pain and suffering, and the most successful claims use all of them in combination.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "AT Systems Southeast, Inc. v. Carnes (Ga. App. 2005) (lay and medical testimony on the plaintiff's condition, treatment and prognosis supported the award); no rule limits the categories listed",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2005/a04a1879.html",
+   "retrievedAt": "2026-09-25",
+   "note": "The medical-records, pain-journal, mental-health-records, before-and-after and photo/video paragraphs are general evidentiary practice with no figure. A pain journal is typically used to refresh recollection rather than admitted as an exhibit; the paragraph does not claim otherwise. Nothing to change in those five paragraphs."
+  },
+  {
+   "surface": "body",
+   "claim": "Economists can calculate the long-term cost of diminished life quality.",
+   "verdict": "update",
+   "currentValue": "In Georgia the value of pain and suffering (including loss of enjoyment of life) is fixed by the jury's enlightened conscience (§ 9-10-184(b)), and since SB 68 no witness may testify to a specific amount or range of noneconomic damages in the jury's hearing (§ 9-10-184(b): counsel 'shall not, in the hearing of the jury ... elicit any testimony regarding ... any specific amount or range of amounts of noneconomic damages'). Economists quantify economic losses — earning capacity and life-care costs — not 'diminished life quality'.",
+   "sourceName": "O.C.G.A. § 9-10-184(a)(1), (b) (2025 Code)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-10/article-8/section-9-10-184/",
+   "retrievedAt": "2026-09-25",
+   "note": "Minimal edit: 'Economists and life care planners can calculate the long-term cost of future care and lost earning capacity.' Leave the medical-expert and vocational-expert sentences as they are."
+  },
+  {
+   "surface": "body",
+   "claim": "Car accidents are the most common source of pain and suffering claims in Georgia.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Generic descriptor; no figure asserted; data/statistics.json (v1, 2026-09-10) holds no Georgia claim-count fact to swap in",
+   "sourceUrl": "",
+   "retrievedAt": "2026-09-25",
+   "note": "Same treatment as facts-1651 ('the most common source of personal injury claims'). Leave as is."
+  },
+  {
+   "surface": "body",
+   "claim": "High-speed crashes and rollover accidents frequently result in catastrophic injuries with pain and suffering awards well into six or seven figures.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-09-25",
+   "note": "'Awards well into six or seven figures' is a verdict-value claim with no traceable source. Delete the clause: 'High-speed crashes and rollover accidents frequently result in catastrophic injuries.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Truck accidents ... Motorcycle accidents and bicycle accidents ... Medical malpractice cases ... Premises liability claims — including slip and fall cases, inadequate security claims, and dog bite injuries — frequently involve pain and suffering damages",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Descriptive practice-area list; no figure asserted; all internal links return HTTP 200 (checked 2026-09-25 with a browser user agent; rodenlaw.com returns 403 to curl's default agent)",
+   "sourceUrl": "https://rodenlaw.com/practice-areas/truck-accident-lawyers/",
+   "retrievedAt": "2026-09-25",
+   "note": "Nothing to verify beyond the links."
+  },
+  {
+   "surface": "body",
+   "claim": "Under O.C.G.A. § 51-4-2, certain surviving family members can recover for the \"full value of the life of the decedent,\" which encompasses the pain and suffering the decedent experienced before death as well as the survivors' own loss of companionship and emotional anguish.",
+   "verdict": "update",
+   "currentValue": "Who sues is right in substance (§ 51-4-2(a): 'The surviving spouse or, if there is no surviving spouse, a child or children ... may recover for the homicide of the spouse or parent the full value of the life of the decedent, as shown by the evidence'). What the claim covers is wrong twice over. (1) The 'full value of the life' is measured from the decedent's standpoint (§ 51-4-1(1): 'the full value of the life of the decedent without deducting for any of the necessary or personal expenses of the decedent had he lived'; Brock v. Wedincamp, 253 Ga. App. 275 (2002): 'measured from the decedent's point of view') and does NOT include the survivors' own grief or mental anguish (OB-Gyn Associates of Albany v. Littleton, 259 Ga. 663 (1989): Georgia wrongful death 'does not include recovery for mental anguish or emotional distress'). (2) The decedent's own pre-death pain and suffering is not part of the wrongful-death claim; it survives to the estate under § 9-2-41 ('nor shall any action or cause of action for the recovery of damages for homicide, injury to the person, or injury to property abate by the death of either party ... shall survive to the personal representative'), and the estate also recovers funeral, medical and other necessary expenses under § 51-4-5(b).",
+   "sourceName": "O.C.G.A. § 51-4-2(a); § 51-4-1(1); § 9-2-41; § 51-4-5(b) (2025 Code, read 2026-09-25); OB-Gyn Associates of Albany v. Littleton, 259 Ga. 663 (1989); Brock v. Wedincamp, 253 Ga. App. 275 (2002)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-4/section-51-4-2/",
+   "retrievedAt": "2026-09-25",
+   "note": "Second most consequential error. Rewrite: 'Under O.C.G.A. § 51-4-2, the surviving spouse — or, if there is none, the children — can recover the \"full value of the life of the decedent\" (O.C.G.A. § 51-4-1). Georgia measures that value from the decedent's own standpoint: what the life was worth to the person who lost it, not the family's grief. The pain and suffering the decedent endured before death is a separate claim that belongs to the estate (O.C.G.A. § 9-2-41), which also recovers funeral and medical expenses (O.C.G.A. § 51-4-5).' Keep the internal link. Same class of error found on the 1651 post on 2026-09-24. Do not add § 51-4-4 (parents) — not verified here."
+  },
+  {
+   "surface": "body",
+   "claim": "Studies consistently show that represented claimants recover substantially more than unrepresented ones, and that gap is widest in the pain and suffering category, where the value is most subject to interpretation and negotiation.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-09-25",
+   "note": "No primary source for either half; the only commonly cited study is an insurance-industry (IRC) auto-injury survey from 1999 that does not break out pain and suffering, and it is not a permitted source class. Delete the sentence. The paragraph's first sentence ('having an attorney signals ... prepared to go to trial') is the firm's commentary and can stand alone."
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia's two-year statute of limitations under O.C.G.A. § 9-3-33 means the clock is ticking from the date of your injury. Waiting too long to consult an attorney can result in lost evidence, faded witness memories, and — if the deadline passes — the permanent loss of your right to file a claim.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-3-33: 'actions for injuries to the person shall be brought within two years after the right of action accrues ... except for actions for injuries to the person involving loss of consortium, which shall be brought within four years'",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-09-25",
+   "note": "Correct; matches the profile table. Optional add for the government-defendant case, which is common in car crashes: 'Claims against a city, county or the State of Georgia carry much shorter written-notice deadlines — six months for a city (O.C.G.A. § 36-33-5) and twelve months for a county (O.C.G.A. § 36-11-1) or the state (O.C.G.A. § 50-21-26).' All three sections were read 2026-09-25; the year-less Justia URLs for §§ 36-33-5 and 36-11-1 currently redirect to the 2022 Code edition."
+  },
+  {
+   "surface": "body",
+   "claim": "We work on a contingency fee basis — you pay nothing unless we recover compensation for you. Call <a href=\"tel:+18447378587\">1-844-RESULTS</a> or <a href=\"/contact/\">contact us online</a> for a free consultation.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md (toll-free line 1-844-RESULTS is tel:+18447378587); /contact/ returns HTTP 200",
+   "sourceUrl": "https://rodenlaw.com/contact/",
+   "retrievedAt": "2026-09-25",
+   "note": "The tel: href is correct. Do not change the visible phone string."
+  },
+  {
+   "surface": "excerpt",
+   "claim": "This guide explains how to value and prove non-economic damages for a personal injury settlement.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "No factual claim asserted; publishes as the Article description in roden_schema_article()",
+   "sourceUrl": "",
+   "retrievedAt": "2026-09-25",
+   "note": "Optional: add 'under Georgia law' so the description carries the jurisdiction."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Georgia law allows personal injury victims to recover pain and suffering damages for physical discomfort, emotional distress, loss of enjoyment of life, and disfigurement.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-10-184(a)(2)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-10/article-8/section-9-10-184/",
+   "retrievedAt": "2026-09-25",
+   "note": "Every listed element is in the statutory definition."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Insurers typically calculate these non-economic damages using the multiplier method or per diem method.",
+   "verdict": "update",
+   "currentValue": "Both are informal negotiating conventions, not rules of law; a jury is never bound by them (O.C.G.A. § 9-10-184(b): the measure is the enlightened conscience of an impartial jury).",
+   "sourceName": "O.C.G.A. § 9-10-184(b); § 51-12-6",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-10/article-8/section-9-10-184/",
+   "retrievedAt": "2026-09-25",
+   "note": "Reword: 'Adjusters and attorneys use informal multiplier or per diem conventions to negotiate these non-economic damages; neither is a rule of law, and a Georgia jury is not bound by them.' The takeaways box renders above the article. Same fix as facts-1651."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Georgia does not cap pain and suffering in most cases, but the modified comparative fault rule (O.C.G.A. § 51-12-33) bars recovery if the victim is 50% or more at fault.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Nestlehutt, 286 Ga. 731 (2010); O.C.G.A. § 51-12-33(g)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-09-25",
+   "note": "Correct; the section symbol renders properly here."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "The two-year statute of limitations under O.C.G.A. § 9-3-33 applies to all claims.",
+   "verdict": "update",
+   "currentValue": "Overbroad. § 9-3-33 itself gives four years for loss-of-consortium actions; claims against a city, county or the state require written ante-litem notice within six months (§ 36-33-5) or twelve months (§ 36-11-1; § 50-21-26); medical-malpractice claims run under § 9-3-71 (two years from injury or death, five-year repose).",
+   "sourceName": "O.C.G.A. § 9-3-33; § 36-33-5; § 36-11-1; § 50-21-26 (read 2026-09-25); § 9-3-71 (verified in facts-1676)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-09-25",
+   "note": "Reword: 'The two-year statute of limitations under O.C.G.A. § 9-3-33 applies to most injury claims; a spouse's loss-of-consortium claim has four years, and claims against a government entity carry notice deadlines as short as six months.'"
+  },
+  {
+   "surface": "faq:0",
+   "claim": "Georgia does not impose a statutory cap on pain and suffering damages in most personal injury cases. However, punitive damages are generally capped at $250,000 under O.C.G.A. § 51-12-5.1 unless the defendant acted with specific intent to harm or was under the influence of drugs or alcohol.",
+   "verdict": "update",
+   "currentValue": "First sentence correct (Nestlehutt; Tort Claims Act exception § 50-21-29). Punitive cap $250,000 under § 51-12-5.1(g); the (f) exception is impairment 'to that degree that his or her judgment is substantially impaired', against the active tort-feasor only; (e) also removes the cap in product-liability cases (75 percent to the state).",
+   "sourceName": "O.C.G.A. § 51-12-5.1(e), (f), (g); Nestlehutt, 286 Ga. 731 (2010); O.C.G.A. § 50-21-29(b)(1)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+   "retrievedAt": "2026-09-25",
+   "note": "Rewrite: 'Georgia does not impose a statutory cap on pain and suffering damages in ordinary negligence cases (the main exception is a claim against the State of Georgia, capped at $1 million per person under O.C.G.A. § 50-21-29). Punitive damages are a different matter: they are generally capped at $250,000 under O.C.G.A. § 51-12-5.1 unless the defendant intended to cause harm, acted while substantially impaired by alcohol or drugs, or the case is a product-liability claim.' Publishes as FAQPage structured data."
+  },
+  {
+   "surface": "faq:1",
+   "claim": "The multiplier method takes your total economic damages — medical bills, lost wages, and other out-of-pocket costs — and multiplies them by a factor between 1.5 and 5 depending on the severity and duration of your injuries. More serious injuries with longer recovery periods receive higher multipliers.",
+   "verdict": "update",
+   "currentValue": "The '1.5 and 5' range has no primary source; the method is a negotiating convention, not law; a Georgia jury's measure is the enlightened conscience (§ 9-10-184(b)).",
+   "sourceName": "O.C.G.A. § 9-10-184(b); § 51-12-6",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-10/article-8/section-9-10-184/",
+   "retrievedAt": "2026-09-25",
+   "note": "Rewrite: 'The multiplier method takes your total economic damages — medical bills, lost wages, and other out-of-pocket costs — and multiplies them by a factor that rises with the severity and duration of your injuries. It is a negotiating convention adjusters and attorneys use, not a rule of Georgia law; if a case goes to trial, the jury decides the amount on the evidence under the \"enlightened conscience\" standard in O.C.G.A. § 9-10-184.' Publishes as FAQPage structured data."
+  },
+  {
+   "surface": "faq:2",
+   "claim": "Under Georgia's modified comparative fault rule (O.C.G.A. § 51-12-33), your pain and suffering award is reduced by your percentage of fault. If you are found 50% or more at fault for the accident, you are barred from recovering any compensation.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-33(a), (g)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-09-25",
+   "note": "Correct."
+  },
+  {
+   "surface": "faq:3",
+   "claim": "Key evidence includes medical records documenting your injuries and treatment, a personal pain journal recording daily symptoms, testimony from medical experts and mental health professionals, before-and-after statements from family members, and photographs or video showing how your injuries affect your daily life.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "General evidentiary practice; consistent with the Georgia pattern-charge factors and Carnes (Ga. App. 2005)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2005/a04a1879.html",
+   "retrievedAt": "2026-09-25",
+   "note": "No figure or state-specific rule asserted."
+  },
+  {
+   "surface": "faq:4",
+   "claim": "Georgia's statute of limitations gives you two years from the date of injury to file a personal injury lawsuit under O.C.G.A. § 9-3-33. Missing this deadline typically means losing your right to recover compensation, including pain and suffering damages.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-3-33 (two years 'after the right of action accrues')",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-09-25",
+   "note": "Correct for the ordinary accident case. Optional: append 'Claims against a city, county or state agency require written notice much sooner — as little as six months (O.C.G.A. § 36-33-5).' Publishes as FAQPage structured data."
+  },
+  {
+   "surface": "faq:5",
+   "claim": "Yes. Under Georgia's eggshell plaintiff doctrine, the defendant must compensate you for the full extent of your injuries even if a pre-existing condition made your injuries worse than they would have been for a healthy person. However, you must prove the accident aggravated the pre-existing condition beyond its prior state.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "AT Systems Southeast, Inc. v. Carnes, 272 Ga. App. 148 (2005) ('a tortfeasor takes a plaintiff in whatever condition he finds him'; recovery is for the aggravation caused)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2005/a04a1879.html",
+   "retrievedAt": "2026-09-25",
+   "note": "Correct, and the second sentence correctly limits recovery to the aggravation."
+  }
+ ],
+ "recommendedEdits": [
+  "Body, intro paragraph 2: change the anchor lead-in 'Cornell Law Institute's tort law overview' to 'the Legal Information Institute at Cornell Law School's tort law overview' (href https://www.law.cornell.edu/wex/tort unchanged; resolves 200).",
+  "Body, 'What Is Pain and Suffering', paragraph 2: optionally add after 'totality of the evidence presented' — 'the legal measure is the \"enlightened conscience of an impartial jury\" (O.C.G.A. § 9-10-184)'. Cite § 9-10-184 for this, not § 51-12-6 (which governs injuries entirely to peace, happiness or feelings).",
+  "Body, 'What Is Pain and Suffering', paragraph 3: optionally append 'The main exception is a claim against the State of Georgia itself, where the Tort Claims Act caps all damages at $1 million per person (O.C.G.A. § 50-21-29).'",
+  "Body, 'How Pain and Suffering Is Calculated' lead: replace 'Instead, insurance adjusters, attorneys, and juries rely on two widely used methods to arrive at a reasonable figure.' with 'The legal measure is the \"enlightened conscience of an impartial jury\" (O.C.G.A. § 9-10-184). In negotiation, insurance adjusters and attorneys rely on two informal conventions to put a number on it. Neither is a rule of law, and a jury is never bound by them.'",
+  "Body, 'The Multiplier Method': delete 'The multiplier method is the most commonly used approach in Georgia personal injury claims.'; delete 'typically ranging from 1.5 to 5' (keep 'by a factor that rises with the severity and permanence of the injury'); replace the '4 or 5 ... 1.5 to 2' sentence with 'The factor rises with the severity and permanence of the injury — a <a href=\"/practice-areas/brain-injury-lawyers/\">traumatic brain injury</a> with permanent cognitive impairment sits at the top of the range; a minor injury with full recovery at the bottom.'; relabel the example 'Purely hypothetical example:' ($100,000 x 3 = $300,000; total $400,000 is correct). Optional: add 'Since Georgia's 2025 tort-reform act, the medical-expense figure that feeds this calculation is limited to the reasonable value of medically necessary care, not the amount billed (O.C.G.A. § 51-12-1.1).'",
+  "Body, 'The Per Diem Method': 'is often pegged to your daily earnings' -> 'is sometimes pegged to your daily earnings'; add 'Like the multiplier, this is a negotiating convention, not a rule of law.'; relabel the example 'Purely hypothetical example:' ($250 x 300 = $75,000 is correct); replace the 'particularly effective when presenting a case to a jury' paragraph with 'The per diem method can give jurors a concrete, day-by-day framework — but since Georgia's 2025 tort-reform act (SB 68), a lawyer may put a dollar figure for pain and suffering before a jury only in closing argument, only if it is rationally tied to the evidence, and not by reference to values with no rational connection to the facts proved (O.C.G.A. § 9-10-184). Either side may also demand a phased trial in which the jury decides fault before hearing about damages (O.C.G.A. § 51-12-15).'",
+  "Body, 'Which Method Georgia Courts Prefer': second sentence -> 'Both conventions are used in settlement negotiations; at trial, any dollar figure for pain and suffering can be suggested only in closing argument and within the limits of O.C.G.A. § 9-10-184.'; replace the 'Georgia courts allow per diem arguments during closing statements, which some states restrict' paragraph with 'Georgia has long let lawyers argue a dollar value for pain and suffering in closing, and it still does — but since the 2025 tort-reform act (SB 68) that argument must be rationally tied to the evidence and may not invoke values with no rational connection to the facts proved (O.C.G.A. § 9-10-184). It remains a useful tool when the daily figure is anchored to what the evidence actually shows.' Delete 'which some states restrict'.",
+  "Body, comparison table: 'Economic damages × a factor (1.5 to 5)' -> 'Economic damages × a factor that rises with severity'; 'Georgia courts' row -> 'A negotiating convention, not law; a dollar figure may be argued only in closing and only if rationally tied to the evidence (O.C.G.A. § 9-10-184)' | 'Same rule; a daily figure must be anchored to the evidence, not to unrelated values'.",
+  "Body, 'Comparative Fault': keep as is. Optional add after the first paragraph: 'Since the 2025 tort-reform act, a jury may also consider whether you were wearing a seat belt when it allocates fault and sets damages in a car-crash case (O.C.G.A. § 40-8-76.1(d)).'",
+  "Body, 'Punitive Damages', paragraph 1: add 'on clear and convincing evidence of' before 'willful misconduct' (§ 51-12-5.1(b)). Optional: 'Negligence, even gross negligence, is not enough (Colonial Pipeline Co. v. Brown, 258 Ga. 115 (1988)).'",
+  "Body, 'Punitive Damages', paragraph 2: replace with 'Georgia law caps punitive damages at $250,000 in most cases (O.C.G.A. § 51-12-5.1(g)), with important exceptions. The cap does not apply when the defendant acted with the specific intent to cause harm, or acted while impaired by alcohol or drugs to the degree that their judgment was substantially impaired — and then only against the impaired or intentional wrongdoer, not other defendants (§ 51-12-5.1(f)). Product-liability cases are also uncapped, but 75 percent of the punitive award goes to the State of Georgia (§ 51-12-5.1(e)). In drunk driving cases, for example, punitive damages carry no statutory cap against the impaired driver.' Delete 'and Georgia juries have returned multi-million-dollar punitive awards in impaired driving cases'.",
+  "Body, 'Punitive Damages', paragraph 4 (the § 51-12-5.1(d) claim): replace the whole paragraph with 'Georgia law also imposes a procedural requirement: punitive damages must be specifically requested in the complaint (O.C.G.A. § 51-12-5.1(d)). At trial the jury first decides, by a special verdict, whether punitive damages should be awarded at all; only then is the trial reopened to hear evidence on the amount.' The published text inverts the statute.",
+  "Body, 'Expert testimony' paragraph: 'Economists can calculate the long-term cost of diminished life quality.' -> 'Economists and life care planners can calculate the long-term cost of future care and lost earning capacity.'",
+  "Body, 'Common Cases', car-accident paragraph: delete 'with pain and suffering awards well into six or seven figures' (end the sentence at 'catastrophic injuries').",
+  "Body, 'Common Cases', wrongful-death paragraph: replace the sentence after the link with 'Under O.C.G.A. § 51-4-2, the surviving spouse — or, if there is none, the children — can recover the \"full value of the life of the decedent\" (O.C.G.A. § 51-4-1). Georgia measures that value from the decedent's own standpoint: what the life was worth to the person who lost it, not the family's grief. The pain and suffering the decedent endured before death is a separate claim that belongs to the estate (O.C.G.A. § 9-2-41), which also recovers funeral and medical expenses (O.C.G.A. § 51-4-5).' Keep the internal link.",
+  "Body, 'How a Georgia Personal Injury Lawyer Maximizes', paragraph 4: delete 'Studies consistently show that represented claimants recover substantially more than unrepresented ones, and that gap is widest in the pain and suffering category, where the value is most subject to interpretation and negotiation.'",
+  "Body, statute-of-limitations paragraph: keep. Optional add: 'Claims against a city, county or the State of Georgia carry much shorter written-notice deadlines — six months for a city (O.C.G.A. § 36-33-5) and twelve months for a county (O.C.G.A. § 36-11-1) or the state (O.C.G.A. § 50-21-26).'",
+  "Excerpt: optionally 'This guide explains how to value and prove non-economic damages for a personal injury settlement under Georgia law.'",
+  "Key takeaways: 'Insurers typically calculate these non-economic damages using the multiplier method or per diem method.' -> 'Adjusters and attorneys use informal multiplier or per diem conventions to negotiate these non-economic damages; neither is a rule of law, and a Georgia jury is not bound by them.'; 'applies to all claims' -> 'applies to most injury claims; a spouse's loss-of-consortium claim has four years, and claims against a government entity carry notice deadlines as short as six months.'",
+  "faq:0: rewrite per the verifiedClaims note — 'ordinary negligence cases', the § 50-21-29 state exception, 'substantially impaired by alcohol or drugs', and the product-liability exception.",
+  "faq:1: rewrite per the verifiedClaims note — remove '1.5 and 5', state that it is a convention not law, and name the § 9-10-184 enlightened-conscience standard.",
+  "faq:4: optional one-sentence add on government-entity notice deadlines (O.C.G.A. § 36-33-5).",
+  "Do not introduce South Carolina law anywhere on this page; it is Georgia-only.",
+  "After the edits, re-run bin/check-unslashed-post-writes.php and confirm the FAQPage block still parses — faq:0 and faq:1 change (faq:4 if the optional add is taken).",
+  "Reviewer meta: Georgia-only post; record the Georgia-licensed reviewing attorney per profiles/writer-profile.md; do not add an attribution quote."
+ ],
+ "statuteCitations": [
+  {
+   "section": "O.C.G.A. § 9-10-184",
+   "name": "Limitations on counsel on arguing damages — definitions of economic and noneconomic damages (a); no argument of the worth of noneconomic damages and no testimony or reference to any specific amount or range before the jury, 'the measure of such damages being the enlightened conscience of an impartial jury' (b); argument allowed only after the close of evidence at the party's first opportunity to argue damages, rationally related to the evidence, with no reference to objects or values having no rational connection to the facts proved (c)(1); opening/concluding consistency rule (c)(2). As rewritten by SB 68 (2025) § 1, effective April 21, 2025, applied to pending causes of action (SB 68 § 9(b)). The struck former text expressly allowed counsel 'to argue the worth or monetary value of pain and suffering to the jury'.",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-10/article-8/section-9-10-184/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-6",
+   "name": "Damages for injury to peace, happiness, or feelings — 'no measure of damages can be prescribed except the enlightened consciences of impartial jurors'; applies where the entire injury is to peace, happiness or feelings, and bars punitive damages in such an action. For a bodily-injury case cite § 9-10-184(b) for the enlightened-conscience measure.",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-6/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-2",
+   "name": "General damages (presumed to flow from the tort; recoverable without proof of any amount) and special damages (must be proved). Verified in facts-1651.",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-2/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-33",
+   "name": "Apportionment of damages — award reduced 'in proportion to his or her percentage of fault' (a); 'the plaintiff shall not be entitled to receive any damages if the plaintiff is 50 percent or more responsible for the injury or damages claimed' (g). Unchanged by SB 68.",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-5.1",
+   "name": "Punitive damages — 'additional damages' to penalize, punish or deter (a); clear and convincing evidence of willful misconduct, malice, fraud, wantonness, oppression or entire want of care raising a presumption of conscious indifference (b); not compensation (c); 'must be specifically prayed for in a complaint', special verdict on entitlement first, then the trial is recommenced on amount (d)(1)-(2); product liability uncapped with 75 percent of the award, less a proportionate share of costs and fees, paid to the state treasury (e)(1)-(2); specific-intent and substantial-impairment exceptions, active tort-feasor only (f); $250,000 cap (g).",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-15",
+   "name": "Elective phased trial in bodily-injury and wrongful-death actions — any party may demand in writing before the pretrial order; fault and § 51-12-33 percentages first, then compensatory damages, then punitive-damages and fee proceedings; court may reject only for a sexual-offense victim or where the amount in controversy is under $150,000. Added by SB 68 § 8, effective April 21, 2025, applied to pending cases.",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-15/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-1.1",
+   "name": "Special damages for medical and healthcare expenses limited to 'the reasonable value of medically necessary care, treatment, or services', amount set by the trier of fact (b); both billed amounts and amounts needed to satisfy the charges under insurance are relevant (c). Added by SB 68 § 7; applies only to causes of action arising on or after April 21, 2025 (SB 68 § 9(b)).",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-1-1/"
+  },
+  {
+   "section": "O.C.G.A. § 40-8-76.1",
+   "name": "Use of safety belts in passenger vehicles — subsection (d)(1) as revised by SB 68 § 5: failure to wear a seat belt 'may be considered in any civil action as evidence admissible on the issues of negligence, comparative negligence, causation, assumption of risk, or apportionment of fault or for any other purpose and may be evidence used to diminish any recovery for damages', subject to § 24-4-403; (d)(2) still bars use for insurance cancellation or rate increases. Effective April 21, 2025; not within the § 9(b) carve-out, so the legislature applied it to pending causes of action.",
+   "url": "https://law.justia.com/codes/georgia/title-40/chapter-8/article-1/part-4/section-40-8-76-1/"
+  },
+  {
+   "section": "O.C.G.A. § 51-4-1",
+   "name": "Wrongful death definitions — 'Full value of the life of the decedent, as shown by the evidence' means the full value 'without deducting for any of the necessary or personal expenses of the decedent had he lived' (1); 'homicide' includes death from criminal or other negligence (2).",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-4/section-51-4-1/"
+  },
+  {
+   "section": "O.C.G.A. § 51-4-2",
+   "name": "Wrongful death of spouse or parent — 'The surviving spouse or, if there is no surviving spouse, a child or children, either minor or sui juris, may recover for the homicide of the spouse or parent the full value of the life of the decedent, as shown by the evidence' (a).",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-4/section-51-4-2/"
+  },
+  {
+   "section": "O.C.G.A. § 51-4-5",
+   "name": "Recovery by personal representative — administrator or executor sues for the full value of the life when no one is entitled under § 51-4-2 or § 51-4-4 (a); the personal representative recovers 'the funeral, medical, and other necessary expenses resulting from the injury and death' (b).",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-4/section-51-4-5/"
+  },
+  {
+   "section": "O.C.G.A. § 9-2-41",
+   "name": "Nonabatement of tort actions; survival — 'nor shall any action or cause of action for the recovery of damages for homicide, injury to the person, or injury to property abate by the death of either party'; the decedent's cause of action survives to the personal representative (the estate's claim for the decedent's pre-death pain and suffering).",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-2/article-3/section-9-2-41/"
+  },
+  {
+   "section": "O.C.G.A. § 9-3-33",
+   "name": "Injuries to the person — two years after the right of action accrues; one year for injuries to reputation; four years for actions involving loss of consortium.",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+  },
+  {
+   "section": "O.C.G.A. § 50-21-29",
+   "name": "Georgia Tort Claims Act — $1 million per person per occurrence and $3 million aggregate cap on claims against the state; cap not disclosed to the jury (b)(1). Verified in facts-1651.",
+   "url": "https://law.justia.com/codes/georgia/title-50/chapter-21/article-2/section-50-21-29/"
+  },
+  {
+   "section": "O.C.G.A. § 50-21-26",
+   "name": "Tort Claims Act notice of claim against the state — written notice within 12 months of when the loss was or should have been discovered (a)(1), by certified mail, statutory overnight delivery or personal delivery (a)(2).",
+   "url": "https://law.justia.com/codes/georgia/title-50/chapter-21/article-2/section-50-21-26/"
+  },
+  {
+   "section": "O.C.G.A. § 36-33-5",
+   "name": "Municipal ante-litem notice — written claim to the governing authority 'within six months of the happening of the event' (b); must state the specific amount of damages sought (e). The year-less Justia URL currently redirects to the 2022 Code edition (read 2026-09-25).",
+   "url": "https://law.justia.com/codes/georgia/title-36/chapter-33/section-36-33-5/"
+  },
+  {
+   "section": "O.C.G.A. § 36-11-1",
+   "name": "Claims against counties — 'must be presented within 12 months after they accrue or become payable or the same are barred'. The year-less Justia URL currently redirects to the 2022 Code edition (read 2026-09-25).",
+   "url": "https://law.justia.com/codes/georgia/title-36/chapter-11/section-36-11-1/"
+  },
+  {
+   "section": "O.C.G.A. § 51-13-1",
+   "name": "Medical malpractice noneconomic damages caps — held unconstitutional and void in Nestlehutt (2010); still printed in the 2025 Code. Not cited in the post; reused from facts-1651 for reference.",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-13/section-51-13-1/"
+  },
+  {
+   "section": "O.C.G.A. § 36-33-5",
+   "name": "Presentation of claims against municipal corporations (ante litem, 6 months)",
+   "url": "https://law.justia.com/codes/georgia/title-36/provisions-applicable-to-municipal-corporations-only/chapter-33/section-36-33-5/",
+   "note": "2025 canonical path verified in the run-1722 pack on 2026-09-24; the plain year-less path redirects to the 2022 edition"
+  },
+  {
+   "section": "O.C.G.A. § 36-11-1",
+   "name": "Time for presentation of claims against counties (ante litem, 12 months)",
+   "url": "https://law.justia.com/codes/georgia/title-36/provisions-applicable-to-counties-only/chapter-11/section-36-11-1/",
+   "note": "2025 canonical path verified in the run-1722 pack on 2026-09-24; the plain year-less path redirects to the 2022 edition"
+  }
+ ],
+ "authoritativeLinks": [
+  {
+   "name": "Georgia SB 68 (2025), signed text from the Governor's office — 2025 tort-reform act; § 1 rewrites O.C.G.A. § 9-10-184 (and strikes the former text allowing counsel to argue the worth of pain and suffering); § 5 revises § 40-8-76.1(d) (seat-belt evidence); § 7 adds § 51-12-1.1; § 8 adds § 51-12-15; § 9(a) effective on the Governor's approval (April 21, 2025), § 9(b) limits §§ 6-7 to causes of action arising on or after that date and applies all other sections to pending cases unless unconstitutional. PDF read via pdftotext 2026-09-25.",
+   "url": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download"
+  },
+  {
+   "name": "Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt, 286 Ga. 731, 691 S.E.2d 218 (Ga. Mar. 22, 2010) — § 51-13-1 noneconomic caps 'violate the constitutional right to trial by jury'; statute void from enactment. Reused from facts-1651.",
+   "url": "https://law.justia.com/cases/georgia/supreme-court/2010/s09a1432.html"
+  },
+  {
+   "name": "AT Systems Southeast, Inc. v. Carnes, 272 Ga. App. 148 (Ga. Ct. App. Apr. 7, 2005) — pain and suffering 'governed by no other standard than the enlightened conscience of impartial jurors'; eggshell plaintiff: 'a tortfeasor takes a plaintiff in whatever condition he finds him'. Reused from facts-1651.",
+   "url": "https://law.justia.com/cases/georgia/court-of-appeals/2005/a04a1879.html"
+  },
+  {
+   "name": "Geary v. Estate of Tapley (Ga. Ct. App. Oct. 25, 2024) — quotes the pattern charge on pain and suffering (Georgia Suggested Pattern Jury Instructions – Civil 66.501) and its factors; cites Food Lion v. Williams, 219 Ga. App. 352 (1995). Reused from facts-1651.",
+   "url": "https://law.justia.com/cases/georgia/court-of-appeals/2024/a24a0978.html"
+  },
+  {
+   "name": "OB-Gyn Associates of Albany v. Littleton, 259 Ga. 663, 386 S.E.2d 146 (Ga. 1989) — Georgia wrongful death 'does not include recovery for mental anguish or emotional distress'; impact rule requires physical injury. Reused from facts-1651.",
+   "url": "https://law.justia.com/cases/georgia/supreme-court/1989/s89g0538-1.html"
+  },
+  {
+   "name": "Brock v. Wedincamp, 253 Ga. App. 275, 558 S.E.2d 836 (Ga. Ct. App. 2002) — wrongful death damages 'are measured from the decedent's point of view'. Reused from facts-1651.",
+   "url": "https://law.justia.com/cases/georgia/court-of-appeals/2002/a01a1730.html"
+  },
+  {
+   "name": "Stapleton v. Palmore, 250 Ga. 259, 297 S.E.2d 270 (Ga. 1982) — personal-injury and loss-of-consortium claims are 'separate' and 'distinct' claims of different spouses. Reused from facts-1651.",
+   "url": "https://law.justia.com/cases/georgia/supreme-court/1982/38899-1.html"
+  },
+  {
+   "name": "Colonial Pipeline Co. v. Brown, 258 Ga. 115, 365 S.E.2d 827 (Ga. 1988) — 'Negligence, even gross negligence, is inadequate to support a punitive damage award'. Reused from facts-1756.",
+   "url": "https://law.justia.com/cases/georgia/supreme-court/1988/44925-1.html"
+  },
+  {
+   "name": "Justia annotations to O.C.G.A. § 51-12-5.1 (read 2026-09-25) — State v. Moseley, 263 Ga. 680 (1993) and Mack Trucks, Inc. v. Conkle, 263 Ga. 539 (1993) (75-percent-to-treasury rule in (e)(2) upheld); Craig v. Holsey, 264 Ga. App. 344 (2003) and Reid v. Morris, 309 Ga. 230 (2020) (uncapped punitive damages against an impaired active tort-feasor under (f)); Bagley v. Shortt, 261 Ga. 762 (1991) ($250,000 is the total per case); Conseco Fin. Servicing Corp. v. Hill, 252 Ga. App. 774 (2001) (special finding on entitlement first).",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/"
+  },
+  {
+   "name": "Cornell Law School, Legal Information Institute — Wex: tort (the post's existing outbound link; resolves HTTP 200 on 2026-09-25)",
+   "url": "https://www.law.cornell.edu/wex/tort"
+  }
+ ]
+}

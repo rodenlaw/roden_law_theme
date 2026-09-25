@@ -5455,7 +5455,7 @@
                 "_roden_faqs": [
                     {
                         "question": "Why is Folly Road so dangerous for drivers?",
-                        "answer": "Folly Road is the only route between James Island, downtown Charleston, and Folly Beach, concentrating all traffic onto a single corridor. It combines high-volume commuter traffic with tourist beach traffic, dense commercial driveways, frequent speed limit changes, limited shoulders for cyclists and pedestrians, and regular flooding. During summer months the traffic volume surges dramatically, making rear-end collisions and left-turn crashes especially common."
+                        "answer": "Folly Road is the only road on and off Folly Beach and James Island's main commercial spine, so beach traffic and local traffic share one five-lane corridor. It combines high-volume commuter traffic with tourist beach traffic, dense commercial driveways, a 45 mph limit that drops sharply at Folly Beach, limited shoulders for cyclists and pedestrians, and flooding in heavy rain. SCDOT counted 2,103 vehicle crashes on five miles of it between 2018 and 2022, and its safety audit singled out left-turn angle crashes as the ones that end in injuries and fatalities."
                     },
                     {
                         "question": "What should I do after a car accident on Folly Road?",
@@ -5463,7 +5463,7 @@
                     },
                     {
                         "question": "How long do I have to file a car accident claim after a Folly Road crash?",
-                        "answer": "South Carolina allows three years from the date of the accident for personal injury claims (S.C. Code section 15-3-530) and three years from the date of death for wrongful death claims. However, critical evidence like traffic camera footage and business surveillance video is typically overwritten within 30-72 hours, so contacting a lawyer within the first few days is essential."
+                        "answer": "South Carolina allows three years from the date of the accident for personal injury claims (S.C. Code section 15-3-530) and three years from the date of death for wrongful death claims. A claim against SCDOT, the City of Charleston or Charleston County must be filed within two years (S.C. Code section 15-78-110). However, critical evidence like traffic camera footage and business surveillance video is often overwritten within days, so contacting a lawyer within the first few days is essential."
                     },
                     {
                         "question": "Can I recover damages if I was partially at fault for the accident?",
@@ -5471,15 +5471,15 @@
                     },
                     {
                         "question": "Can I sue a bar on Folly Beach if a drunk driver caused my accident?",
-                        "answer": "Potentially, yes. Under South Carolina's dram shop law (S.C. Code section 61-2-145), bars and restaurants can be held liable if they serve alcohol to a visibly intoxicated person who then causes a DUI crash. Folly Road is the primary route home from Folly Beach's bars, making dram shop liability a relevant factor in many DUI crashes on this corridor."
+                        "answer": "Potentially, yes. South Carolina has no dram-shop act, but a bar or restaurant that knowingly serves a visibly intoxicated patron violates S.C. Code sections 61-4-580 and 61-6-2220, and the courts treat that as negligence per se (Tobias v. Sports Club; Hartfield v. Getaway Lounge & Grill). For crashes after January 1, 2026, section 61-2-147 can make the establishment jointly liable for half of your actual damages when a verdict is returned against both it and the DUI driver. Folly Road is the only road home from Folly Beach's bars, which makes over-service a live question in DUI crashes on this corridor."
                     },
                     {
                         "question": "What types of injuries are common in Folly Road car accidents?",
-                        "answer": "Common injuries include traumatic brain injuries, spinal cord injuries, broken bones, internal organ damage, whiplash and soft tissue injuries, and in the most severe cases, wrongful death. T-bone collisions at intersections and high-speed rear-end crashes tend to produce the most severe injuries. Pedestrian and bicycle crashes on Folly Road are also disproportionately severe due to the lack of protected infrastructure."
+                        "answer": "Common injuries include traumatic brain injuries, spinal cord injuries, broken bones, internal organ damage, whiplash and soft tissue injuries, and in the most severe cases, wrongful death. T-bone (angle) collisions at intersections tend to produce the most severe injuries. Pedestrian and bicycle crashes on Folly Road are also disproportionately severe: SCDOT's road safety audit counted 15 pedestrian and 21 bicycle crashes on the corridor between 2018 and 2022, and three of its six fatal crashes killed pedestrians."
                     }
                 ],
-                "_roden_key_takeaways": "Folly Road is James Island's primary corridor and one of Charleston's most crash-prone roads due to heavy traffic, limited turn lanes, and dense commercial development. Common accidents include rear-end collisions, T-bone crashes at intersections, and pedestrian strikes. Liable parties may include other drivers, the City of Charleston, or SCDOT for road design deficiencies. South Carolina's 3-year statute of limitations applies (S.C. Code 15-3-530), and comparative fault bars recovery at 51% or more.",
-                "_roden_last_reviewed": "2026-08-31"
+                "_roden_key_takeaways": "Folly Road is James Island's primary corridor and one of Charleston's most crash-prone roads — SCDOT counted 2,103 vehicle crashes on five miles of it from 2018 to 2022 — because of heavy traffic, uncontrolled left turns across its center turn lane, and dense commercial driveways. Common accidents include rear-end collisions, T-bone crashes at intersections, and pedestrian strikes. Liable parties may include other drivers, the City of Charleston, or SCDOT for road design deficiencies; claims against the City or SCDOT fall under the Tort Claims Act, which allows two years to sue. South Carolina's 3-year statute of limitations applies (S.C. Code § 15-3-530), and comparative fault bars recovery at 51% or more.",
+                "_roden_last_reviewed": "2026-09-25"
             }
         },
         "/blog/four-common-construction-accidents/": {
@@ -6716,17 +6716,17 @@
             "type": "post",
             "status": "publish",
             "title": "How Pain and Suffering Is Calculated After an Accident in Georgia",
-            "excerpt": "This guide explains how to value and prove non-economic damages for a personal injury settlement.",
+            "excerpt": "This guide explains how to value and prove non-economic damages for a personal injury settlement under Georgia law.",
             "meta": {
                 "_roden_author_attorney": "Eric Roden",
                 "_roden_faqs": [
                     {
                         "question": "Does Georgia cap pain and suffering damages?",
-                        "answer": "Georgia does not impose a statutory cap on pain and suffering damages in most personal injury cases. However, punitive damages are generally capped at $250,000 under O.C.G.A. § 51-12-5.1 unless the defendant acted with specific intent to harm or was under the influence of drugs or alcohol."
+                        "answer": "Georgia does not impose a statutory cap on pain and suffering damages in ordinary negligence cases (the main exception is a claim against the State of Georgia, capped at $1 million per person under O.C.G.A. § 50-21-29). Punitive damages are a different matter: they are generally capped at $250,000 under O.C.G.A. § 51-12-5.1 unless the defendant intended to cause harm, acted while substantially impaired by alcohol or drugs, or the case is a product-liability claim."
                     },
                     {
                         "question": "What is the multiplier method for calculating pain and suffering in Georgia?",
-                        "answer": "The multiplier method takes your total economic damages — medical bills, lost wages, and other out-of-pocket costs — and multiplies them by a factor between 1.5 and 5 depending on the severity and duration of your injuries. More serious injuries with longer recovery periods receive higher multipliers."
+                        "answer": "The multiplier method takes your total economic damages — medical bills, lost wages, and other out-of-pocket costs — and multiplies them by a factor that rises with the severity and duration of your injuries. It is a negotiating convention adjusters and attorneys use, not a rule of Georgia law; if a case goes to trial, the jury decides the amount on the evidence under the \"enlightened conscience\" standard in O.C.G.A. § 9-10-184."
                     },
                     {
                         "question": "How does comparative fault affect my pain and suffering award in Georgia?",
@@ -6738,14 +6738,15 @@
                     },
                     {
                         "question": "How long do I have to file a pain and suffering claim in Georgia?",
-                        "answer": "Georgia's statute of limitations gives you two years from the date of injury to file a personal injury lawsuit under O.C.G.A. § 9-3-33. Missing this deadline typically means losing your right to recover compensation, including pain and suffering damages."
+                        "answer": "Georgia's statute of limitations gives you two years from the date of injury to file a personal injury lawsuit under O.C.G.A. § 9-3-33. Missing this deadline typically means losing your right to recover compensation, including pain and suffering damages. Claims against a city, county or state agency require written notice much sooner — as little as six months (O.C.G.A. § 36-33-5)."
                     },
                     {
                         "question": "Can I recover pain and suffering damages if I had a pre-existing condition?",
                         "answer": "Yes. Under Georgia's eggshell plaintiff doctrine, the defendant must compensate you for the full extent of your injuries even if a pre-existing condition made your injuries worse than they would have been for a healthy person. However, you must prove the accident aggravated the pre-existing condition beyond its prior state."
                     }
                 ],
-                "_roden_key_takeaways": "Georgia law allows personal injury victims to recover pain and suffering damages for physical discomfort, emotional distress, loss of enjoyment of life, and disfigurement. Insurers typically calculate these non-economic damages using the multiplier method or per diem method. Georgia does not cap pain and suffering in most cases, but the modified comparative fault rule (O.C.G.A. § 51-12-33) bars recovery if the victim is 50% or more at fault. The two-year statute of limitations under O.C.G.A. § 9-3-33 applies to all claims."
+                "_roden_key_takeaways": "Georgia law allows personal injury victims to recover pain and suffering damages for physical discomfort, emotional distress, loss of enjoyment of life, and disfigurement. Adjusters and attorneys use informal multiplier or per diem conventions to negotiate these non-economic damages; neither is a rule of law, and a Georgia jury is not bound by them. Georgia does not cap pain and suffering in most cases, but the modified comparative fault rule (O.C.G.A. § 51-12-33) bars recovery if the victim is 50% or more at fault. The two-year statute of limitations under O.C.G.A. § 9-3-33 applies to most injury claims; a spouse's loss-of-consortium claim has four years, and claims against a government entity carry notice deadlines as short as six months.",
+                "_roden_last_reviewed": "2026-09-25"
             }
         },
         "/blog/how-pain-and-suffering-is-calculated-after-an-accident-in-south-carolina/": {
@@ -12132,7 +12133,7 @@
                 "_roden_faqs": [
                     {
                         "question": "Does my Sunset Boulevard crash file in Lexington County or Richland County?",
-                        "answer": "Almost certainly Lexington County. The Sunset Boulevard / Lexington Medical Center corridor sits inside Lexington County, so most personal-injury cases proceed in the Lexington County Court of Common Pleas (11th Judicial Circuit) rather than the Richland County 5th Circuit in downtown Columbia. Federal cases under diversity jurisdiction file in the U.S. District Court, Columbia Division."
+                        "answer": "Almost certainly Lexington County. The Sunset Boulevard / Lexington Medical Center corridor sits inside Lexington County, so most personal-injury cases proceed in the Lexington County Court of Common Pleas (11th Judicial Circuit) rather than the Richland County 5th Circuit in downtown Columbia, unless your lawyer files where the at-fault driver lives, which S.C. Code § 15-7-30 also allows. Federal cases under diversity jurisdiction file in the U.S. District Court, Columbia Division."
                     },
                     {
                         "question": "How long do I have to file a lawsuit after a Sunset Boulevard car accident?",
@@ -12140,15 +12141,15 @@
                     },
                     {
                         "question": "What if I was partly at fault for the Sunset Boulevard crash?",
-                        "answer": "You can still recover damages in South Carolina if you were 50% or less at fault, under Nelson v. Concrete Supply Co.. Your recovery is reduced by your fault percentage. If a jury finds you 51% or more at fault, however, you recover nothing — which is why aggressive fault-shifting is the defense playbook in nearly every contested claim."
+                        "answer": "You can still recover damages in South Carolina if you were 50% or less at fault, under Nelson v. Concrete Supply Co. Your recovery is reduced by your fault percentage. If a jury finds you 51% or more at fault, however, you recover nothing — which is why aggressive fault-shifting is the defense playbook in nearly every contested claim."
                     },
                     {
                         "question": "The other driver had only state-minimum insurance and my Lexington Medical Center bills are huge. What now?",
-                        "answer": "Look hard at uninsured / underinsured motorist coverage. S.C. Code § 38-77-160 allows stacking of UIM coverage across multiple eligible policies, which can multiply the coverage available to you. Many crash victims have stackable coverage they don't realize they have until a lawyer reviews every household policy."
+                        "answer": "Look hard at uninsured / underinsured motorist coverage. Under S.C. Code § 38-77-160, a named insured or resident relative can stack UIM coverage from other household vehicles, up to the coverage on the vehicle involved (Carter v. Standard Fire, 2013). Many crash victims have stackable coverage they don't realize they have until a lawyer reviews every household policy."
                     },
                     {
                         "question": "An ambulance from Lexington Medical Center caused my crash. Can I sue?",
-                        "answer": "Possibly, but it gets technical fast. S.C. Code § 56-5-760 governs emergency-vehicle operations, and if the ambulance driver works for a government entity, the South Carolina Tort Claims Act (S.C. Code § 15-78-110) applies — meaning a two-year filing deadline instead of three, and potential damage caps. Get a lawyer involved before that 2-year window starts running."
+                        "answer": "Possibly, but it gets technical fast. S.C. Code § 56-5-760 governs emergency-vehicle operations, and if the ambulance driver works for a government entity, the South Carolina Tort Claims Act (S.C. Code § 15-78-110) applies — meaning a two-year filing deadline instead of three, and potential damage caps. Get a lawyer involved early — that two-year clock is already running from the day of the crash."
                     },
                     {
                         "question": "Do I need a lawyer for a Sunset Boulevard car accident, or can I handle it myself?",
@@ -12156,7 +12157,7 @@
                     }
                 ],
                 "_roden_jurisdiction": "south-carolina-only",
-                "_roden_last_reviewed": "2026-08-31"
+                "_roden_last_reviewed": "2026-09-25"
             }
         },
         "/blog/supporting-a-whiplash-claim/": {

@@ -96,16 +96,20 @@ while (k < ops.length) {
 // the joined 'before' must match the live text exactly once; the blocks are
 // separated in the source by whatever whitespace WordPress stored, so re-derive
 // each 'before' from the source slice instead of joining with '\n'.
-const sliceOf = (src, blocksArr) => {
+const sliceOf = (src, blocksArr, keepGap = false) => {
   const s = src.indexOf(blocksArr[0]); if (s < 0) throw new Error('block not found: ' + blocksArr[0].slice(0, 80));
   const last = blocksArr[blocksArr.length - 1]; const e = src.indexOf(last, s); if (e < 0) throw new Error('last block not found');
   // trailing whitespace belongs to the gap between blocks, not to the edit: a bare-text run
-  // captured with its trailing newline would otherwise double the line break on insertion
-  return src.slice(s, e + last.length).replace(/\s+$/, '');
+  // captured with its trailing newline would otherwise double the line break on insertion.
+  // A pure deletion is the exception: removing a block must also remove one separator, so the
+  // gap that follows it is part of the edit (2026-09-25: a dropped paragraph left "\n\n\n\n").
+  const end = e + last.length;
+  if (keepGap) { const m = /^\s*/.exec(src.slice(end)); return src.slice(s, end + m[0].length); }
+  return src.slice(s, end).replace(/\s+$/, '');
 };
 for (const e of edits) {
   if (e.surface !== 'content') continue;
-  e.before = sliceOf(before, e.delBlocks);
+  e.before = sliceOf(before, e.delBlocks, e.addBlocks.length === 0);
   e.after = e.addBlocks.length ? sliceOf(after, e.addBlocks) : '';
   delete e.delBlocks; delete e.addBlocks;
   const occ = before.split(e.before).length - 1;
