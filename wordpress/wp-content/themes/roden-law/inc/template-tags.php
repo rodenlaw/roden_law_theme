@@ -3026,7 +3026,7 @@ function roden_ai_stats_block( $practice_area_title = '' ) {
                 </tr>
             </tbody>
         </table>
-        <p class="ai-stats-source"><?php printf( /* translators: %s: month and year, e.g. "July 2026". */ esc_html__( 'Source: Roden Law firm records and verified Google Business Profile reviews, updated %s.', 'roden-law' ), esc_html( date_i18n( 'F Y' ) ) ); ?></p>
+        <p class="ai-stats-source"><?php printf( /* translators: %s: month and year, e.g. "July 2026". */ esc_html__( 'Source: Roden Law firm records and verified Google Business Profile reviews, updated %s.', 'roden-law' ), esc_html( date_i18n( 'F Y', strtotime( $firm['trust_stats']['stats_as_of'] . '-01' ) ) ) ); ?></p>
     </div>
     <?php
 }
@@ -3492,7 +3492,7 @@ function roden_jurisdiction_comparison_table( $practice_area_title, $sol_ga = ''
                 <tr>
                     <td><strong><?php esc_html_e( 'Damage Cap', 'roden-law' ); ?></strong></td>
                     <td><?php esc_html_e( 'No cap on compensatory damages; punitive capped at $250,000 in most cases (O.C.G.A. § 51-12-5.1)', 'roden-law' ); ?></td>
-                    <td><?php esc_html_e( 'No cap on compensatory damages; no statutory punitive cap (jury discretion)', 'roden-law' ); ?></td>
+                    <td><?php esc_html_e( 'No cap on compensatory damages; punitive damages capped at the greater of 3x compensatory damages or $500,000, with exceptions (S.C. Code § 15-32-530)', 'roden-law' ); ?></td>
                 </tr>
                 <tr>
                     <td><strong><?php esc_html_e( 'Minimum Auto Insurance', 'roden-law' ); ?></strong></td>
@@ -3506,7 +3506,13 @@ function roden_jurisdiction_comparison_table( $practice_area_title, $sol_ga = ''
                 </tr>
             </tbody>
         </table>
-        <p class="comparison-source"><em><?php printf( /* translators: %s: month and year, e.g. "July 2026". */ esc_html__( 'Source: Georgia Code (O.C.G.A.) and South Carolina Code of Laws. Verified %s.', 'roden-law' ), esc_html( date_i18n( 'F Y' ) ) ); ?></em></p>
+        <?php
+        // This line used to end "Verified <current month>", which printed
+        // whatever month it was on every render: a claim about legal authority
+        // that nobody had made. The table has no single verification date, so
+        // it states its sources and no date. (Removed 2026-09-25.)
+        ?>
+        <p class="comparison-source"><em><?php esc_html_e( 'Source: Georgia Code (O.C.G.A.) and South Carolina Code of Laws.', 'roden-law' ); ?></em></p>
     </div>
     <?php
 }

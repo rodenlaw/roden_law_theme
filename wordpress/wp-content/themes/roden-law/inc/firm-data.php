@@ -855,6 +855,13 @@ EOT
             'cases'         => '5,000+',
             'experience'    => '62',
             'offices'       => '6',
+            // When the figures above were last verified, as YYYY-MM. The stats
+            // block prints it as its "updated" date, so bump it only when you
+            // actually re-check them, never on a schedule. 2026-08: GBP review
+            // counts and rating checked live 2026-08-19 (2787ffa); $300M+
+            // confirmed by the firm 2026-08-26. 'cases' and 'experience' are
+            // firm-reported and carry no separate verification date.
+            'stats_as_of'   => '2026-08',
         ),
 
         /* ==================================================================

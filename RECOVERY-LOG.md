@@ -1446,6 +1446,37 @@ identification, and changing it without confirming the registered entity name
 could make the notice inaccurate. Both left for the firm to decide. *(Also noted:
 the privacy policy exists twice, at `privacy-policy` and `privacy-policy-2`.)*
 
+### Two "updated this month" stamps, and a false SC punitive-damages claim — 2026-09-25
+
+**Owner, 2026-09-25: "yes"** to replacing the stats block's always-current date. The same
+class had a second instance, and that one surfaced a false legal claim:
+- **Stats block ("Results at a Glance", every pillar).** "Source: … updated <month>" printed the
+  current month on every render. It now prints `trust_stats['stats_as_of']` = **2026-08**: GBP
+  review counts and rating checked live 2026-08-19, $300M+ confirmed by the firm 2026-08-26.
+  `cases` and `experience` are firm-reported with no separate date, and the firm-data comment
+  says so. Bump it only on a real re-check.
+- **GA/SC comparison table (every pillar).** "Source: Georgia Code (O.C.G.A.) and South
+  Carolina Code of Laws. Verified <current month>." No record shows the table as a whole was
+  ever verified, so the line now names its sources and no date.
+- **The table's SC "Damage Cap" cell said "no statutory punitive cap (jury discretion)". That
+  is false.** S.C. Code § 15-32-530 caps punitive damages at the greater of 3x compensatory or
+  $500,000, with the (C) exceptions (fact base: `docs/briefs/2026-09-03-sc-punitive-damages-cap.md`).
+  The 09-03 remediation fixed content and never reached this theme string, which was live on
+  every English and Spanish pillar with a "Verified <this month>" stamp under it. Now: "No cap
+  on compensatory damages; punitive damages capped at the greater of 3x compensatory damages or
+  $500,000, with exceptions (S.C. Code § 15-32-530)". Spanish re-added and `es_ES.mo`
+  recompiled: 576 entries, only these two changed.
+- Claim-class sweep of every published post body, meta value and excerpt found five other
+  punitive-cap statements. All are accurate: the GA $250,000 cap with its intent and impairment
+  exceptions (FAQs 1790 and 2586, post 3493), GA product liability uncapped with the 75% state
+  share (pillar 3615), and SC "the punitive cap can disappear entirely" (4858, per (C)).
+
+**For the legal-accuracy lead, not fixed here:** the same table's "Filing Court" row says
+"Superior Court (claims over $15,000)" and "Circuit Court (claims over $7,500)". Georgia's
+superior courts have no dollar floor ($15,000 is the magistrate-court ceiling). The "No cap on
+compensatory damages" cells render on the medical-malpractice pillar too, where SC's
+non-economic cap (§ 15-32-220) applies. Both need a pack check before they are reworded.
+
 ### Office count corrected to six — 2026-09-25
 
 **Owner, 2026-09-25: "there are 6 offices"** (Savannah, Darien, Charleston, North Charleston,

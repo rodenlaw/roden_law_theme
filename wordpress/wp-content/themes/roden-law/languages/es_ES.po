@@ -2431,8 +2431,8 @@ msgid "No cap on compensatory damages; punitive capped at $250,000 in most cases
 msgstr "Sin límite en daños compensatorios; daños punitivos limitados a $250,000 en la mayoría de los casos (O.C.G.A. § 51-12-5.1)"
 
 #: inc/template-tags.php:1699
-msgid "No cap on compensatory damages; no statutory punitive cap (jury discretion)"
-msgstr "Sin límite en daños compensatorios; sin límite legal para daños punitivos (a discreción del jurado)"
+msgid "No cap on compensatory damages; punitive damages capped at the greater of 3x compensatory damages or $500,000, with exceptions (S.C. Code § 15-32-530)"
+msgstr "Sin límite en daños compensatorios; los daños punitivos están limitados al mayor de 3 veces los daños compensatorios o $500,000, con excepciones (S.C. Code § 15-32-530)"
 
 #: inc/template-tags.php:1702
 msgid "Minimum Auto Insurance"
@@ -2457,9 +2457,8 @@ msgstr "Circuit Court (reclamos de más de $7,500)"
 
 #. translators: %s: month and year, e.g. "July 2026".
 #: inc/template-tags.php:1713
-#, php-format
-msgid "Source: Georgia Code (O.C.G.A.) and South Carolina Code of Laws. Verified %s."
-msgstr "Fuente: Código de Georgia (O.C.G.A.) y Código de Leyes de Carolina del Sur. Verificado en %s."
+msgid "Source: Georgia Code (O.C.G.A.) and South Carolina Code of Laws."
+msgstr "Fuente: Código de Georgia (O.C.G.A.) y Código de Leyes de Carolina del Sur."
 
 #. translators: %s: city/market name, e.g. "Savannah".
 #: inc/template-tags.php:1837
