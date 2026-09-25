@@ -657,6 +657,7 @@ into 8 city-tier towns and 109 nested municipalities; see the recommendation in
 | 2026-09-19 | **Six root city pages** (Greenville, Spartanburg, Florence) | 981 | 975 | 6 | **COMPLETE.** Redirects deployed (#144), relink a confirmed no-op (0 links), 6 pages trashed, caches flushed. Verified after deletion: 6/6 single-hop 301 → 200; page sitemap 46 → 40. Google Ads clear across all four accounts. Backup: `root-city-pages-2026-09-19.json`. |
 | 2026-09-25 | **Case results** folded into one filterable page | 980 | 824 | 156 | **COMPLETE.** Singles 301 to `/case-results/#{slug}` (#146); posts kept as the page's data, none trashed. Verified: 423/427 old URLs (singles, legacy, old-site) single-hop to a live anchor, 4 malformed legacy slugs to the page, 0 failures; `case_result` sitemap removed. Counts are sitemap URLs, not the 08-21 inventory. |
 | 2026-09-25 | **Stale place pages**: 29 sub-municipal locations + 46 pipeline posts (Brunswick kept) | 824 | 749 | 75 | **COMPLETE.** Redirects deployed (#147), relink applied (52 links, 22 posts, `post_modified` preserved), 75 pages set to **draft** (not trashed) and marked `_roden_retired`, caches flushed. Verified: 75/75 single-hop 301 → 200 (19 targets); 0 links on 27 swept pages; live JSON-LD guard PASS. Doorway **29.49% → 22.83% PASS**. Backups: `stale-place-relink-2026-09-25.json`, `stale-place-pages-2026-09-25.json`. |
+| 2026-09-25 | **Zero-click scenario pages** (64 of 182; step 1 template fix shipped first in #148) | 749 | 685 | 64 | **COMPLETE.** Redirects deployed (#149), 2 legacy redirects repointed off the set, relink applied (85 links, 55 posts, flat + nested), 64 pages drafted and marked `_roden_retired`, 1 meta link unwrapped (truck pillar `_roden_why_hire`), caches flushed. Verified: 128/128 flat + nested single-hop 301 → 200; 0 links left on the 18 pillars; JSON-LD guard PASS. Doorway **22.83% → 24.96% PASS**, with no non-place headroom left. |
 
 ### Batch (c) — two things the plan did not predict
 
@@ -1462,6 +1463,27 @@ rewritten. Two existing legacy redirects pointed INTO the set
 `/workers-compensation-lawyers/warehouse-logistics-injury/` →
 warehouse-distribution-injury). Both are repointed straight to the pillar, so neither becomes a
 chain. Map in `roden_zero_click_scenario_urls()`. Pages go to draft with `_roden_retired`.
+
+**Applied 2026-09-25.** Step 1 (#148, `51fbb40`) verified first: 182/182 scenario pages
+render the rules box, none renders the old sections, HowTo is still present on all 182, and
+the JSON-LD guard passes. Then step 2 (#149, `6c6a435`):
+- Relink: 85 links across 55 posts, flat and nested, `post_modified` untouched. Backup:
+  `docs/backups/zero-click-scenario-relink-2026-09-25.json`.
+- Removal drafted all 64 and marked them `_roden_retired`; the database shows 64 draft and 64
+  marked. The script reported four as FAILED (4107, 4108, 4109, 4114): its read-back used
+  `get_post_status()`, and WP Engine's object cache still returned `publish`. It now reads
+  the table, here and in `remove-stale-place-pages.php`. Backup:
+  `docs/backups/zero-click-scenarios-2026-09-25.json`.
+- Verified live: **128/128** (64 flat + 64 nested) single-hop 301 to the pillar; all 18 pillars
+  return 200; both repointed legacy URLs 301 in one hop.
+- The pillar sweep found one link the relink cannot reach: truck pillar 3605 links the
+  18-wheeler page from `_roden_why_hire`, meta rather than body. A sweep of every published
+  meta value for all 139 URLs retired today found only that one. It is unwrapped with the
+  anchor text kept, written through `wp_slash()` and read back. Backup:
+  `docs/backups/zero-click-scenarios-meta-unwrap-2026-09-25.json`. **Relink scripts only see
+  `post_content`; sweep meta too.**
+- **Doorway 171 / 685 = 24.96%, PASS.** JSON-LD guard PASS. `content/meta.json` 742 → 678: the
+  64 removed, plus the one changed truck-pillar entry.
 
 ### Stale place pages — decided 2026-09-25
 

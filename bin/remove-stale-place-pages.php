@@ -260,7 +260,11 @@ foreach ( $found as $p ) {
     // Keeps the retired draft out of content/meta.json (bin/export-content-meta.php).
     update_post_meta( $p->ID, '_roden_retired', '2026-09-25 stale-place-pages' );
     clean_post_cache( $p->ID );
-    if ( false !== $ok && 'draft' === get_post_status( $p->ID ) ) {
+    // Read back from the table, not get_post_status(): on WP Engine the persistent
+    // object cache can still hand back 'publish' straight after the write, which
+    // reported four successful drafts as FAILED on 2026-09-25.
+    $now = $wpdb->get_var( $wpdb->prepare( "SELECT post_status FROM {$wpdb->posts} WHERE ID = %d", $p->ID ) );
+    if ( false !== $ok && 'draft' === $now ) {
         $done++;
         fprintf( $err, "  drafted      %-5d %-14s %s\n", $p->ID, $p->post_type, $path );
     } else {
