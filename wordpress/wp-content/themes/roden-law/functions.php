@@ -247,6 +247,7 @@ function roden_block_es_sitemap() {
 add_filter( 'wp_sitemaps_post_types', 'roden_remove_legacy_cpt_sitemaps' );
 function roden_remove_legacy_cpt_sitemaps( $post_types ) {
     unset( $post_types['case-result'] );   // Legacy hyphen-slug duplicate.
+    unset( $post_types['case_result'] );   // No singles since 2026-09-25; all on /case-results/.
     unset( $post_types['class-action'] );  // Old CPT, not in theme.
     unset( $post_types['staff'] );         // Old CPT, not in theme.
     unset( $post_types['testimonial'] );   // 21 thin pages — just a quote + CTA.
@@ -848,67 +849,6 @@ function roden_sidebar_form_js() {
 }
 
 /* ==========================================================================
-   9. LOAD MORE CASE RESULTS — AJAX handler
-   ========================================================================== */
-
-add_action( 'wp_ajax_roden_load_more_results', 'roden_load_more_results_handler' );
-add_action( 'wp_ajax_nopriv_roden_load_more_results', 'roden_load_more_results_handler' );
-function roden_load_more_results_handler() {
-    check_ajax_referer( 'roden_load_more_results', 'nonce' );
-    $offset   = absint( $_POST['offset'] ?? 0 );
-    $exclude  = absint( $_POST['exclude'] ?? 0 );
-    $category = sanitize_text_field( $_POST['category'] ?? '' );
-    $per_page = 20;
-
-    $query_args = array(
-        'post_type'      => 'case_result',
-        'posts_per_page' => $per_page,
-        'offset'         => $offset,
-        'orderby'        => 'meta_value_num',
-        'meta_key'       => '_roden_case_amount_raw',
-        'order'          => 'DESC',
-    );
-
-    if ( $exclude ) {
-        $query_args['post__not_in'] = array( $exclude );
-    }
-
-    if ( $category ) {
-        $query_args['tax_query'] = array(
-            array(
-                'taxonomy' => 'practice_category',
-                'field'    => 'slug',
-                'terms'    => $category,
-            ),
-        );
-    }
-
-    $results = new WP_Query( $query_args );
-
-    if ( ! $results->have_posts() ) {
-        wp_send_json_success( array( 'html' => '', 'count' => 0 ) );
-    }
-
-    ob_start();
-    while ( $results->have_posts() ) :
-        $results->the_post();
-        // Same renderer the server-rendered grid uses, so appended cards are
-        // linked too and the two copies cannot drift apart again.
-        roden_case_result_card( get_the_ID() );
-    endwhile;
-    $html = ob_get_clean();
-    wp_reset_postdata();
-
-    wp_send_json_success( array(
-        'html'  => $html,
-        'count' => $results->post_count,
-    ) );
-}
-
-/**
- * Load More case results JS.
- */
-/* ==========================================================================
    10. DISABLE COMMENTS — Sitewide
    ========================================================================== */
 
@@ -933,111 +873,56 @@ add_action( 'wp_before_admin_bar_render', function () {
 
 /* ========================================================================== */
 
-add_action( 'wp_footer', 'roden_load_more_js', 998 );
-function roden_load_more_js() {
+/**
+ * Case results filter (the /case-results/ page).
+ *
+ * Every result is already in the page; this only hides and shows <li>s. Groups
+ * combine with AND, values within a group are single-select. The bar is
+ * rendered `hidden` and revealed here, so without JS the full list shows and
+ * no dead controls do. Arriving on a #slug anchor (every old single URL 301s
+ * to one) leaves all filters at All, so the target is always visible.
+ */
+add_action( 'wp_footer', 'roden_case_results_filter_js', 998 );
+function roden_case_results_filter_js() {
     if ( ! is_page( 'case-results' ) ) return;
     ?>
     <script>
     (function(){
-        var btn = document.getElementById('load-more-results');
-        var grid = document.querySelector('.case-results-grid');
-        var shownEl = document.getElementById('shown-count');
-        var loadMoreWrap = btn ? btn.parentNode : null;
-        var total = btn ? parseInt(btn.getAttribute('data-total'), 10) : 0;
-        var ajaxUrl = '<?php echo esc_url( admin_url( 'admin-ajax.php' ) ); ?>';
-        var ajaxNonce = '<?php echo wp_create_nonce( 'roden_load_more_results' ); ?>';
-        var activeCategory = '';
+        var bar = document.getElementById('results-filter-bar');
+        var list = document.getElementById('case-results-list');
+        if (!bar || !list) return;
+        var items = list.querySelectorAll('li[data-type]');
+        var shown = document.getElementById('results-shown');
+        var empty = document.getElementById('no-results-msg');
+        var active = { category: '', type: '', band: '' };
 
-        // Filter buttons
-        var filterBtns = document.querySelectorAll('.filter-btn');
-        filterBtns.forEach(function(filterBtn) {
-            filterBtn.addEventListener('click', function() {
-                var category = this.getAttribute('data-category');
-                activeCategory = category;
-
-                // Update active state
-                filterBtns.forEach(function(b){ b.classList.remove('active'); });
-                this.classList.add('active');
-
-                // Reload grid with filter
-                if (grid) grid.innerHTML = '';
-                if (loadMoreWrap) {
-                    loadMoreWrap.style.display = '';
-                }
-
-                var fd = new FormData();
-                fd.append('action', 'roden_load_more_results');
-                fd.append('nonce', ajaxNonce);
-                fd.append('offset', 0);
-                fd.append('exclude', btn ? btn.getAttribute('data-exclude') : '');
-                if (category) fd.append('category', category);
-
-                fetch(ajaxUrl, { method: 'POST', body: fd })
-                .then(function(r){ return r.json(); })
-                .then(function(data){
-                    if (data.success && data.data.html) {
-                        grid.innerHTML = data.data.html;
-                        if (btn) {
-                            btn.setAttribute('data-offset', data.data.count);
-                            btn.disabled = false;
-                            btn.textContent = 'Load More Results';
-                        }
-                        if (shownEl) shownEl.textContent = data.data.count + 1;
-                        if (data.data.count < 20 && loadMoreWrap) {
-                            loadMoreWrap.style.display = 'none';
-                        }
-                    } else {
-                        grid.innerHTML = '<p class="no-results-msg">No case results found in this category.</p>';
-                        if (loadMoreWrap) loadMoreWrap.style.display = 'none';
-                    }
+        function apply() {
+            var n = 0;
+            items.forEach(function(li){
+                var ok = Object.keys(active).every(function(k){
+                    return !active[k] || li.getAttribute('data-' + k) === active[k];
                 });
+                li.hidden = !ok;
+                if (ok) n++;
             });
+            shown.textContent = 'Showing ' + n + ' of ' + items.length + ' results';
+            empty.hidden = n !== 0;
+        }
+
+        bar.addEventListener('click', function(e){
+            var btn = e.target.closest('.filter-btn');
+            if (!btn) return;
+            var group = btn.getAttribute('data-filter');
+            active[group] = btn.getAttribute('data-value');
+            bar.querySelectorAll('.filter-btn[data-filter="' + group + '"]').forEach(function(b){
+                var on = b === btn;
+                b.classList.toggle('active', on);
+                b.setAttribute('aria-pressed', on ? 'true' : 'false');
+            });
+            apply();
         });
 
-        // Load More button
-        if (!btn) return;
-
-        btn.addEventListener('click', function() {
-            var offset = parseInt(btn.getAttribute('data-offset'), 10);
-            var exclude = btn.getAttribute('data-exclude');
-            btn.disabled = true;
-            btn.textContent = 'Loading…';
-
-            var fd = new FormData();
-            fd.append('action', 'roden_load_more_results');
-            fd.append('nonce', ajaxNonce);
-            fd.append('offset', offset);
-            fd.append('exclude', exclude);
-            if (activeCategory) fd.append('category', activeCategory);
-
-            fetch(ajaxUrl, {
-                method: 'POST',
-                body: fd
-            })
-            .then(function(r){ return r.json(); })
-            .then(function(data){
-                if (data.success && data.data.html) {
-                    grid.insertAdjacentHTML('beforeend', data.data.html);
-                    var newOffset = offset + data.data.count;
-                    btn.setAttribute('data-offset', newOffset);
-                    var nowShown = parseInt(shownEl.textContent, 10) + data.data.count;
-                    shownEl.textContent = nowShown;
-
-                    if (nowShown >= total || data.data.count < 20) {
-                        btn.parentNode.style.display = 'none';
-                    } else {
-                        btn.disabled = false;
-                        btn.textContent = 'Load More Results';
-                    }
-                } else {
-                    btn.parentNode.style.display = 'none';
-                }
-            })
-            .catch(function(){
-                btn.disabled = false;
-                btn.textContent = 'Load More Results';
-            });
-        });
+        bar.hidden = false;
     })();
     </script>
     <?php

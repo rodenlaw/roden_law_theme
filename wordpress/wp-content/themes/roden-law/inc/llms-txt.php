@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) || exit;
  * dynamic /llms route but leaves the static files stale until the next
  * save_post.
  */
-define( 'RODEN_LLMS_TXT_VERSION', '2026-08-19.3' );
+define( 'RODEN_LLMS_TXT_VERSION', '2026-09-25.1' );
 
 /* ==========================================================================
    1. REWRITE RULES + QUERY VARS
@@ -337,7 +337,7 @@ function roden_generate_llms_txt( $full = false ) {
         if ( $results ) {
             $output .= "### Case Results\n\n";
             foreach ( $results as $cr ) {
-                $cr_url    = get_permalink( $cr );
+                $cr_url    = roden_case_result_url( $cr->ID );
                 $cr_title  = roden_llms_decode( get_the_title( $cr ) );
                 $cr_amount = get_post_meta( $cr->ID, '_roden_amount', true );
                 $output   .= "- [{$cr_title}]({$cr_url})";
