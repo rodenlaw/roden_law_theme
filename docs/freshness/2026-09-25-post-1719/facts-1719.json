@@ -1,0 +1,765 @@
+{
+  "postId": 1719,
+  "slug": "car-insurance-claim-denial-tactics",
+  "verifiedAt": "2026-09-25",
+  "reusedFrom": [
+    "run-1720/facts-1720.json",
+    "run-1722/facts-1722.json",
+    "run-1724/facts-1724.json",
+    "run-1709/facts-1709.json",
+    "run-1744/facts-1744.json"
+  ],
+  "verifiedClaims": [
+    {
+      "surface": "body",
+      "claim": "insurers are publicly traded corporations with a financial incentive to pay you as little as possible — or nothing at all",
+      "verdict": "update",
+      "currentValue": "insurers are businesses with a financial incentive to pay as little as possible",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "'Publicly traded corporations' is false as a generalisation: several of the largest auto insurers are mutual or reciprocal companies owned by their policyholders, not shareholders. The incentive point survives without the corporate-form claim; no source is needed to remove an overstatement."
+    },
+    {
+      "surface": "body",
+      "claim": "The Cornell Law Institute's overview of insurance law provides useful background on how insurers' legal obligations differ from their actual practices.",
+      "verdict": "update",
+      "currentValue": "The linked page is the Wex entry 'insurance' from the Legal Information Institute (LII) at Cornell Law School, last reviewed June 2023. It defines insurance, explains risk pooling, and summarises the McCarran-Ferguson Act's allocation of insurance regulation to the states. It says nothing about how insurers' legal obligations differ from their practices.",
+      "sourceName": "Cornell Law School Legal Information Institute — Wex: insurance",
+      "sourceUrl": "https://www.law.cornell.edu/wex/insurance",
+      "retrievedAt": "2026-09-25",
+      "note": "Two errors, same class as pack 1720's Cornell sentence: the organisation is the 'Legal Information Institute at Cornell Law School', not the 'Cornell Law Institute', and the page is attributed a proposition it does not contain. Keep the link (host is on the outbound allowlist) and describe it honestly: 'The Legal Information Institute at Cornell Law School has a plain-language overview of how insurance works and why states regulate it.' URL resolves 200."
+    },
+    {
+      "surface": "body",
+      "claim": "You have no legal obligation to provide a recorded statement to the at-fault party's insurer in Georgia or South Carolina.",
+      "verdict": "keep",
+      "currentValue": "No statute in either state's insurance code imposes a duty on a third-party claimant to give the at-fault driver's insurer a statement; the claimant is not a party to that policy. The claims-handling statutes (O.C.G.A. § 33-6-34; S.C. Code § 38-59-20) impose duties on the insurer, none on the claimant.",
+      "sourceName": "O.C.G.A. § 33-6-34; S.C. Code § 38-59-20 (verified by absence — neither lists any claimant duty)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t38c059.php",
+      "retrievedAt": "2026-09-25",
+      "note": "Correct for the other driver's insurer. Recommended one-sentence caveat, because the post's readers also carry UM/UIM and med-pay claims: a claim on your OWN policy is governed by that policy, and auto policies contain a cooperation clause that can require you to answer your own insurer's questions — so 'decline' applies to the other side's adjuster, and your own insurer's requests should go through your lawyer rather than be refused. No specific policy form was read this run; state the caveat generally ('usually contains')."
+    },
+    {
+      "surface": "body",
+      "claim": "In Georgia, where the modified comparative fault rule under O.C.G.A. § 51-12-33 bars recovery if you are 50% or more at fault",
+      "verdict": "keep",
+      "currentValue": "O.C.G.A. § 51-12-33(g): 'the plaintiff shall not be entitled to receive any damages if the plaintiff is 50 percent or more responsible for the injury or damages claimed.'",
+      "sourceName": "O.C.G.A. § 51-12-33 (verified verbatim in sibling packs 1709, 1722, 1724, 1720)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-25",
+      "note": "Matches the writer-profile table."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina applies a similar threshold — you cannot recover if you are found 51% or more at fault.",
+      "verdict": "keep",
+      "currentValue": "'a plaintiff may only recover damages if his or her own negligence is not greater than that of the defendant' — Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991), restated in Burnett v. Family Kingdom (S.C. Ct. App. 2010).",
+      "sourceName": "Nelson v. Concrete Supply Co. (S.C. 1991) (verified in sibling packs 1709, 1722, 1744, 1720)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+      "retrievedAt": "2026-09-25",
+      "note": "Matches the writer-profile table. Optional parenthetical '(Nelson v. Concrete Supply Co.)'; never § 15-38-15."
+    },
+    {
+      "surface": "body",
+      "claim": "These exams are conducted by doctors selected and paid by the insurance company, and the results almost always favor the insurer.",
+      "verdict": "update",
+      "currentValue": "These exams are conducted by doctors selected and paid by the insurance company.",
+      "sourceName": "Rule 35(a), SCRCP (examinee may object to the designated physician; court may designate one; the examinee's own physician may be present)",
+      "sourceUrl": "https://www.sccourts.org/resources/judicial-community/court-rules/civil/rule-35/",
+      "retrievedAt": "2026-09-25",
+      "note": "'Almost always favor the insurer' is a frequency claim with no primary source; cut it. Who selects and pays is accurate as to a pre-suit request. Once in litigation, South Carolina's Rule 35(a) lets the examinee object to the designated physician and lets the court name one, and Georgia's § 9-11-35(a) order specifies 'the person or persons by whom it is to be made' — the insurer does not have a free hand."
+    },
+    {
+      "surface": "body",
+      "claim": "IME doctors are repeat vendors for insurance carriers. They make substantial income from conducting these exams, and doctors who consistently produce findings unfavorable to the insurer stop getting referrals.",
+      "verdict": "drop",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "Assertions about IME physicians' income and referral incentives with no primary source. Delete; the paragraph's usable point (the examiner is chosen and paid by the insurer, so ask for the report and have your treating physician's records in front of the examiner) stands without it."
+    },
+    {
+      "surface": "body",
+      "claim": "The examination itself is often brief — sometimes only 10 to 15 minutes — and the resulting report frequently concludes that the claimant's injuries are less severe than their treating physician documented.",
+      "verdict": "drop",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "Two unsourced frequency claims ('often brief', '10 to 15 minutes', 'frequently concludes'). If a replacement is wanted, both states entitle the examined party to the examiner's detailed written report on request (O.C.G.A. § 9-11-35(b)(1); Rule 35(b)(1), SCRCP) — a fact the reader can use."
+    },
+    {
+      "surface": "body",
+      "claim": "In Georgia, the defendant can compel an IME under O.C.G.A. § 9-11-35 once a case is in litigation.",
+      "verdict": "update",
+      "currentValue": "Once a case is in litigation, a Georgia court 'may order the party to submit to a physical examination by a physician' when the party's condition is in controversy; the order 'may be made only on motion for good cause shown' and 'shall specify the time, place, manner, conditions, and scope of the examination and the person or persons by whom it is to be made' (O.C.G.A. § 9-11-35(a)). The order is discretionary, not a right: a plaintiff who claims injury puts it in controversy (Crider v. Sneider, 243 Ga. 642 (1979)), but the court may refuse where the information is available from existing records (Courtesy Ford v. Campbell, 359 Ga. App. 472 (2021), denying IMEs where the plaintiff had two years of treatment records). The examined party gets the examiner's detailed written report on request (§ 9-11-35(b)(1)).",
+      "sourceName": "O.C.G.A. § 9-11-35 (2025 Code of Georgia, Justia, with annotations)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-5/section-9-11-35/",
+      "retrievedAt": "2026-09-25",
+      "note": "Read in full on Justia via Chrome 2026-09-25. 'The defendant can compel' overstates: the defendant moves, the court decides, and only for good cause. Suggested: 'In Georgia, once a lawsuit is filed, the defense can ask the court to order an exam under O.C.G.A. § 9-11-35 — the judge decides whether there is good cause, sets the time, place, scope and examiner, and can refuse when your treatment records already answer the question.' Also worth saying: the reader is entitled to the examiner's written report."
+    },
+    {
+      "surface": "body",
+      "claim": "In South Carolina, S.C. Rule of Civil Procedure 35 governs compulsory medical exams.",
+      "verdict": "update",
+      "currentValue": "Rule 35(a), SCRCP: 'In any case in which the amount in controversy exceeds $100,000 actual damages, and the mental or physical condition ... of a party ... is in controversy, the court in which the action is pending may order the party to submit to a physical or mental examination by a physician.' Order only 'on motion for good cause shown'; it 'shall specify the time, place, manner, conditions and scope of the examination and the person or persons by whom it is to be made'; 'The physician of the party to be examined may be present at the examination'; unless the parties agree or the court finds good cause, the exam is 'in the county where the person to be examined, or his physician, resides'; on reasonable objection to the designated physician the court may designate one.",
+      "sourceName": "South Carolina Judicial Branch — Rule 35, SCRCP (Physical and Mental Examinations)",
+      "sourceUrl": "https://www.sccourts.org/resources/judicial-community/court-rules/civil/rule-35/",
+      "retrievedAt": "2026-09-25",
+      "note": "Read verbatim on sccourts.org 2026-09-25. The citation is right but the rule has a threshold the post omits: a court-ordered exam is available only where more than $100,000 in actual damages is in controversy — the rule's own note calls this a deliberate departure from the federal rule. Suggested: 'In South Carolina, Rule 35 of the Rules of Civil Procedure lets a court order an exam only in cases with more than $100,000 in actual damages at stake, only for good cause, and on terms the court sets — including your right to have your own physician present.' Cite as 'Rule 35, SCRCP'."
+    },
+    {
+      "surface": "body",
+      "claim": "Before litigation, you generally have the right to refuse.",
+      "verdict": "keep",
+      "currentValue": "No pre-suit mechanism compels a third-party claimant to submit to the liability insurer's examination in either state; § 9-11-35 and Rule 35 operate only in 'the court in which the action is pending'.",
+      "sourceName": "O.C.G.A. § 9-11-35(a); Rule 35(a), SCRCP",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-5/section-9-11-35/",
+      "retrievedAt": "2026-09-25",
+      "note": "Correct for the other driver's insurer. Same caveat as the recorded-statement section: a claim on your own policy (UM/UIM, med-pay) is governed by the policy, which may require you to submit to an exam the insurer requests — route that through your lawyer rather than refuse outright. No policy form was read; say 'may'."
+    },
+    {
+      "surface": "body",
+      "claim": "If you do attend an IME, bring a witness or request to record the examination.",
+      "verdict": "keep",
+      "currentValue": "South Carolina's Rule 35(a) expressly provides that 'The physician of the party to be examined may be present at the examination'; Georgia's § 9-11-35(a) order must specify the 'conditions' of the examination, which is where a witness or recording condition is sought.",
+      "sourceName": "Rule 35(a), SCRCP; O.C.G.A. § 9-11-35(a)",
+      "sourceUrl": "https://www.sccourts.org/resources/judicial-community/court-rules/civil/rule-35/",
+      "retrievedAt": "2026-09-25",
+      "note": "Practice advice, consistent with both rules. Optional precision: 'in South Carolina the rule itself lets your own physician attend; in Georgia your lawyer asks the court to write a witness or recording condition into the order.'"
+    },
+    {
+      "surface": "body",
+      "claim": "Many of these forms are written to give the insurer access to your entire lifetime medical history — every doctor visit, prescription, therapy session, and unrelated condition going back decades.",
+      "verdict": "update",
+      "currentValue": "A HIPAA-valid authorization must describe the information to be released 'in a specific and meaningful fashion', name who may release it and who receives it, state each purpose, and carry 'an expiration date or an expiration event' (45 CFR 164.508(c)(1)); it is revocable in writing (164.508(b)(5)). Nothing in the rule stops a claimant from signing a broad one — the scope is whatever the form says, so the limit has to come from the reader.",
+      "sourceName": "45 CFR 164.508 — Uses and disclosures for which an authorization is required (Cornell LII); HHS Summary of the HIPAA Privacy Rule",
+      "sourceUrl": "https://www.law.cornell.edu/cfr/text/45/164.508",
+      "retrievedAt": "2026-09-25",
+      "note": "'Many of these forms' is an unsourced generalisation; the correct frame is that the form's scope is whatever it says, and HIPAA will honour a broad one. Suggested: 'The form the adjuster sends can be written as broadly as the insurer likes — HIPAA requires an authorization to say what records, from whom, to whom and until when (45 CFR 164.508), but it does not stop you from signing one that covers your whole history. Read the description of the records and the expiration date before you sign anything.' HHS summary: authorizations 'must be written in specific terms' and state 'the information to be disclosed or used, the person(s) disclosing and receiving the information, expiration, right to revoke in writing' (https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html)."
+    },
+    {
+      "surface": "body",
+      "claim": "You should never sign a blanket medical authorization. In Georgia and South Carolina, you are only obligated to provide records relevant to the injuries you are claiming.",
+      "verdict": "update",
+      "currentValue": "Before suit, a claimant owes the other driver's insurer no records at all — no statute in either state requires it. The one statutory duty runs the other way in Georgia: an attorney-prepared pre-suit offer in a motor-vehicle case must 'include medical or other records in the offeror's possession incurred as a result of the subject claim that are sufficient to allow the recipient to evaluate the claim' (O.C.G.A. § 9-11-67.1(b)(2)), and the insurer may ask in writing for medical bills and records without that counting as a counteroffer ((f)). Once suit is filed, what must be produced is set by the discovery rules and the court, not by the insurer's form, and a HIPAA-covered provider may release records under a subpoena or discovery request only with the notice or protective-order assurances in 45 CFR 164.512(e)(1).",
+      "sourceName": "O.C.G.A. § 9-11-67.1(b)(2), (f) (verified in sibling packs 1722, 1744, 1720); 45 CFR 164.512(e)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-8/section-9-11-67-1/",
+      "retrievedAt": "2026-09-25",
+      "note": "'Only obligated to provide records relevant to the injuries' invents a pre-suit obligation that does not exist and understates the litigation stage. Suggested: 'Before a lawsuit is filed you are not obligated to give the other driver's insurer any records — you choose what to send to support the claim, and in a Georgia motor-vehicle case a lawyer's pre-suit demand encloses the records the insurer needs to evaluate it (O.C.G.A. § 9-11-67.1). Once suit is filed, the discovery rules and the judge, not the adjuster's form, decide what is relevant.' The scope of medical-records discovery in litigation was not researched beyond this; do not state a rule for it."
+    },
+    {
+      "surface": "body",
+      "claim": "The law in both Georgia and South Carolina protects injured victims through the eggshell plaintiff doctrine. Under Georgia law, a defendant takes the plaintiff as they find them — if a person with a pre-existing spinal condition suffers an aggravation of that condition in a wreck, the defendant is liable for the full extent of the aggravation. South Carolina follows the same principle.",
+      "verdict": "keep",
+      "currentValue": "South Carolina: 'a defendant takes the plaintiff as he or she is found, and the plaintiff is entitled to recover damages resulting from the aggravation of a pre-existing condition' (Burnett v. Family Kingdom, Inc., 387 S.C. 183, 691 S.E.2d 170 (Ct. App. 2010)). Georgia: the eggshell-plaintiff / aggravation charge is a recognised jury instruction (Tucker Nursing Center, Inc. v. Mosby, Ga. Ct. App. 2010).",
+      "sourceName": "Burnett v. Family Kingdom, Inc. (S.C. Ct. App. 2010); Tucker Nursing Center, Inc. v. Mosby (Ga. Ct. App. 2010) — both verified in sibling pack 1720",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/court-of-appeals/2010/4656.html",
+      "retrievedAt": "2026-09-25",
+      "note": "Optional citations: '(Burnett v. Family Kingdom, S.C. Ct. App. 2010)' for South Carolina; Tucker Nursing (https://law.justia.com/cases/georgia/court-of-appeals/2010/a09a1756.html) for Georgia. Justia case pages return 403 to curl; they were read in a browser for pack 1720."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia also recognizes aggravation of a pre-existing condition as a compensable injury. If a collision turned a manageable back problem into a condition requiring surgery, the at-fault party owes damages for the worsening. The same rule applies in South Carolina.",
+      "verdict": "keep",
+      "currentValue": "Same authorities as the eggshell-plaintiff sentence; Burnett states the aggravation rule expressly for South Carolina.",
+      "sourceName": "Burnett v. Family Kingdom, Inc. (S.C. Ct. App. 2010); Tucker Nursing Center, Inc. v. Mosby (Ga. Ct. App. 2010)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/court-of-appeals/2010/4656.html",
+      "retrievedAt": "2026-09-25",
+      "note": "Consistent with the verified rule in both states."
+    },
+    {
+      "surface": "body",
+      "claim": "Insurers will still try to attribute your entire condition to pre-existing issues, particularly in workers' compensation cases where claimants often have years of documented physical wear on their bodies.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "Practice observation, not a legal or statistical claim; the internal link is fine. The workers' compensation aggravation rule (statutory in both states) was not researched this run — do not add a citation."
+    },
+    {
+      "surface": "body",
+      "claim": "In Georgia, the statute of limitations for personal injury is two years from the date of injury under O.C.G.A. § 9-3-33. In South Carolina, the deadline is three years under S.C. Code § 15-3-530.",
+      "verdict": "keep",
+      "currentValue": "O.C.G.A. § 9-3-33: actions for injuries to the person within two years after the right of action accrues. S.C. Code § 15-3-530(5): three years for 'any injury to the person or rights of another, not arising on contract'.",
+      "sourceName": "O.C.G.A. § 9-3-33; S.C. Code § 15-3-530 (verified in every sibling pack; § 15-3-530 re-read on scstatehouse.gov 2026-09-25 in pack 1720)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-25",
+      "note": "Matches the writer-profile table."
+    },
+    {
+      "surface": "body",
+      "claim": "Delay is one of the most effective weapons in the insurance company's arsenal.",
+      "verdict": "keep",
+      "currentValue": "Both states name delay as a regulated practice: Georgia lists 'Failing to acknowledge with reasonable promptness pertinent communications with respect to claims' and 'Failing to adopt and implement procedures for the prompt investigation and settlement of claims' (O.C.G.A. § 33-6-34(2), (3)); South Carolina lists failing to acknowledge communications 'with reasonable promptness ... including third-party claims arising under liability insurance policies' (2), failing to adopt 'reasonable standards for the prompt investigation and settlement of claims, including third-party liability claims' (3), and 'Any other practice which constitutes an unreasonable delay in paying or an unreasonable failure to pay or settle in full claims, including third-party liability claims' (8) (S.C. Code § 38-59-20).",
+      "sourceName": "O.C.G.A. § 33-6-34; S.C. Code § 38-59-20 (re-read on scstatehouse.gov 2026-09-25)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t38c059.php",
+      "retrievedAt": "2026-09-25",
+      "note": "Opinion, not a fact claim. Recommended addition to the delay section, since it currently cites no law: one sentence that both states treat unreasonable delay as a regulated claims practice the insurance regulator can act on (O.C.G.A. § 33-6-34; S.C. Code § 38-59-20 — which expressly covers third-party liability claims). Do NOT import Georgia Reg. 120-2-52's 15/30/60-day figures: that rule is scoped to first-party property-damage claims (verified in packs 1722 and 1744). Neither state sets a fixed deadline for the other driver's insurer to decide a bodily-injury claim."
+    },
+    {
+      "surface": "body",
+      "claim": "Once a lawyer is involved, the insurer must communicate through your attorney, and strategic delays become far more difficult to sustain.",
+      "verdict": "update",
+      "currentValue": "The no-contact rule binds lawyers, not adjusters: 'In representing a client, a lawyer shall not communicate about the subject of the representation with a person the lawyer knows to be represented by another lawyer in the matter unless the lawyer has the consent of the other lawyer or is authorized to do so by law or a court order' (Rule 4.2, South Carolina Rules of Professional Conduct, Rule 407 SCACR; Georgia Rule 4.2 is the same model rule). No statute or regulation read this run requires an insurance adjuster to route communications through a represented claimant's lawyer.",
+      "sourceName": "South Carolina Judicial Branch — Rule 407, SCACR, Rule 4.2; State Bar of Georgia — Georgia Rules of Professional Conduct",
+      "sourceUrl": "https://www.sccourts.org/resources/judicial-community/court-rules/appellate/rule-407/rule-42/",
+      "retrievedAt": "2026-09-25",
+      "note": "'Must' overstates. Suggested: 'Once a lawyer is involved, the insurer's own lawyers are barred from contacting you directly (Rule 4.2 of each state's Rules of Professional Conduct), and adjusters in practice deal with your attorney once they are notified — so the calls, the statement requests and the pressure stop.' Georgia rules page: https://www.gabar.org/general-counsel/georgia-rules-of-professional-conduct (resolves; the specific Rule 4.2 text was read from the South Carolina page)."
+    },
+    {
+      "surface": "body",
+      "claim": "In both Georgia and South Carolina, a signed settlement release is a binding contract. Courts will not set it aside because you did not understand the full scope of your injuries.",
+      "verdict": "update",
+      "currentValue": "A signed release is a contract and is enforced as one; courts rarely set one aside, and not merely because the injured person later learned the injuries were worse.",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "The first sentence is general contract law and stands. The absolute 'will not set it aside' was not verified against a Georgia or South Carolina opinion this run and releases are occasionally set aside on fraud or mutual-mistake grounds; hedge to 'rarely' rather than state a categorical rule. No citation needed for the hedged form."
+    },
+    {
+      "surface": "body",
+      "claim": "Insurers hire biomechanical engineers to testify that a vehicle at a certain speed could not have produced enough force to cause the claimed injuries.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "Description of a litigation practice, not a fact or statistic; stands as written. The following sentence's medical claim ('occupants can suffer significant injuries in low-speed collisions') is stated generally and was not sourced; it is not asserted with a number and can stay."
+    },
+    {
+      "surface": "body",
+      "claim": "Under O.C.G.A. § 33-4-6, if an insurer refuses to pay a claim without reasonable cause, the policyholder can recover the claim amount plus up to 50% of the liability in penalties, plus reasonable attorney's fees. This statute applies to first-party claims — meaning claims you file against your own insurer.",
+      "verdict": "update",
+      "currentValue": "§ 33-4-6(a): where the insurer refuses to pay a covered loss 'within 60 days after a demand has been made by the holder of the policy' and the refusal is found to be in bad faith, it owes the holder the loss plus 'not more than 50 percent of the liability of the insurer for the loss or $5,000.00, whichever is greater, and all reasonable attorney's fees'. Georgia's standard is bad faith — 'a frivolous and unfounded refusal to pay the claim' (Taylor v. Government Employees Ins. Co., 350 Ga. App. 734 (2019)) — not 'without reasonable cause', which is South Carolina's § 38-59-40 wording. On uninsured-motorist claims the parallel penalty is § 33-7-11(j): 60-day demand, up to 25% of the recovery (or $25,000) plus fees.",
+      "sourceName": "O.C.G.A. § 33-4-6 (verified verbatim in sibling packs 1722, 1724, 1709, 1744, 1720); Taylor v. GEICO (Ga. Ct. App. 2019); O.C.G.A. § 33-7-11(j)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-4/section-33-4-6/",
+      "retrievedAt": "2026-09-25",
+      "note": "The first-party sentence is correct and is the one thing this post gets right that its siblings did not — keep it verbatim. Fix the rest: add the 60-day written demand by the policyholder, the '$5,000, whichever is greater' floor, and the Georgia standard; swap 'without reasonable cause' for 'in bad faith — a frivolous and unfounded refusal to pay'. Add the § 33-7-11(j) UM figures since UM/UIM is the first-party claim a car-accident reader most often has."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia also recognizes a common law bad faith cause of action for third-party claims. If a liability insurer unreasonably refuses to settle within policy limits and the claimant obtains a judgment exceeding those limits, the insurer may be liable for the excess. This creates powerful leverage when the at-fault driver's insurer is stonewalling a legitimate claim.",
+      "verdict": "update",
+      "currentValue": "The failure-to-settle claim is the insured's, not the injured claimant's: 'where a person injured by the insured offers to settle for a sum within the policy limits, and the insurer refuses the offer of settlement, the insurer may be liable to the insured to pay the verdict rendered against the insured even though the verdict exceeds the policy limit', because the insurer 'may not gamble' with its insured's funds (McCall v. Allstate Ins. Co., 251 Ga. 869 (1984), Division 1; Southern General Ins. Co. v. Holt, 262 Ga. 267 (1992)). The injured person has no bad-faith action against the at-fault driver's insurer: § 33-4-6 runs 'in favor of the insurer's policy holder' and § 33-4-7 is limited to property damage (Mills v. Allstate Ins. Co., 288 Ga. App. 257 (2007)). In practice the insured assigns the claim to the injured person (Holt, sibling pack 1724).",
+      "sourceName": "McCall v. Allstate Ins. Co., 251 Ga. 869, 310 S.E.2d 513 (1984) (read on CourtListener 2026-09-25); Southern General v. Holt (Ga. 1992) and Mills v. Allstate (Ga. Ct. App. 2007) (verified in sibling packs 1724, 1720)",
+      "sourceUrl": "https://www.courtlistener.com/opinion/1207272/mccall-v-allstate-insurance/",
+      "retrievedAt": "2026-09-25",
+      "note": "'Cause of action for third-party claims' reads as the claimant's remedy. Suggested: 'Georgia also holds a liability insurer answerable to its own policyholder when it unreasonably refuses to settle within the policy limits and a verdict then exceeds them — the insurer may owe the whole excess (Southern General v. Holt, 1992). That claim belongs to the at-fault driver, who can assign it to you, and it is real leverage when the driver's insurer stonewalls a claim it should settle. You cannot sue the other driver's insurer for bad faith directly (Mills v. Allstate, 2007).' Holt on Justia: https://law.justia.com/cases/georgia/supreme-court/1992/s91g1556-1.html ; Mills: https://law.justia.com/cases/georgia/court-of-appeals/2007/a07a1922.html"
+    },
+    {
+      "surface": "body",
+      "claim": "Common examples of bad faith conduct in Georgia include failing to conduct a reasonable investigation, denying a claim without providing a valid reason, refusing to negotiate in good faith, and misrepresenting policy language to avoid coverage.",
+      "verdict": "update",
+      "currentValue": "Those four are unfair claims settlement practices under O.C.G.A. § 33-6-34 — (6) 'Refusing to pay claims without conducting a reasonable investigation', (10) failing to give a written denial with a reasonable and accurate explanation on the insured's written request, (4) 'Not attempting in good faith to effectuate prompt, fair, and equitable settlement of claims submitted in which liability has become reasonably clear', (1) misrepresenting pertinent facts or policy provisions — enforced by the Commissioner of Insurance, with no private right of action. Bad faith under § 33-4-6 is a different, narrower thing: 'a frivolous and unfounded refusal to pay the claim' (Taylor v. GEICO, 2019).",
+      "sourceName": "O.C.G.A. § 33-6-34 (verified in sibling packs 1722, 1744, 1720); Taylor v. Gov't Emps. Ins. Co., 350 Ga. App. 734 (2019)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-6/article-2/section-33-6-34/",
+      "retrievedAt": "2026-09-25",
+      "note": "The list is accurate as a list of regulated practices and mislabelled as 'bad faith conduct'. Suggested: 'Georgia separately lists the conduct the insurance regulator polices as unfair claims settlement practices (O.C.G.A. § 33-6-34): refusing to pay without a reasonable investigation, denying without a written explanation, not attempting a fair settlement once liability is reasonably clear, and misrepresenting policy terms. Those rules are enforced by the Office of the Commissioner of Insurance and Safety Fire, not through a lawsuit — the § 33-4-6 penalty requires a frivolous and unfounded refusal to pay.' Taylor text: https://www.courtlistener.com/opinion/7479882/taylor-v-govt-emps-ins-co/"
+    },
+    {
+      "surface": "body",
+      "claim": "If you suspect your insurer is acting in bad faith after a truck accident or wrongful death claim, document every communication and consult an attorney immediately.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "'Your insurer' is the right party for a bad-faith claim. Practice advice; internal links fine."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina addresses insurer misconduct through the Unfair Claims Settlement Practices Act under S.C. Code § 38-59-20.",
+      "verdict": "update",
+      "currentValue": "S.C. Code § 38-59-20 is titled 'Improper claim practices' and sits in Title 38, Chapter 59, 'Claims Practices'. It lists eight acts that, 'if committed without just cause and performed with such frequency as to indicate a general business practice', are improper claim practices, several of them expressly 'including third-party claims arising under liability insurance policies'. It is enforced by the Director of Insurance through notice, hearing and a cease-and-desist order with a penalty under § 38-2-10 (§ 38-59-30). It creates no private claim: South Carolina 'does not recognize a third party action for the bad faith refusal to pay insurance benefits' (Kleckley v. Northwestern Nat'l Cas. Co., 338 S.C. 131 (2000)).",
+      "sourceName": "S.C. Code §§ 38-59-20, 38-59-30 (re-read on scstatehouse.gov 2026-09-25); Kleckley (S.C. 2000) (verified in sibling packs 1724, 1720)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t38c059.php",
+      "retrievedAt": "2026-09-25",
+      "note": "There is no South Carolina statute called the 'Unfair Claims Settlement Practices Act' — that is Georgia's article heading (§ 33-6-30 et seq.). Suggested: 'South Carolina's improper-claim-practices statute, S.C. Code § 38-59-20, is enforced by the Department of Insurance and, unlike Georgia's, expressly covers claims by injured third parties against a liability insurer. It lists what the regulator polices; it does not let you sue the other driver's insurer (Kleckley v. Northwestern National, 2000).' Kleckley on Justia: https://law.justia.com/cases/south-carolina/supreme-court/2000/25046.html"
+    },
+    {
+      "surface": "body",
+      "claim": "Violations include making misleading statements about coverage, failing to act promptly on communications, and not attempting in good faith to effectuate fair settlements when liability is reasonably clear.",
+      "verdict": "keep",
+      "currentValue": "§ 38-59-20(1) 'Knowingly misrepresenting to insureds or third-party claimants pertinent facts or policy provisions relating to coverages at issue or providing deceptive or misleading information with respect to coverages'; (2) 'Failing to acknowledge with reasonable promptness pertinent communications with respect to claims'; (4) 'Not attempting in good faith to effect prompt, fair, and equitable settlement of claims, including third-party liability claims, submitted to it in which liability has become reasonably clear'.",
+      "sourceName": "S.C. Code § 38-59-20",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t38c059.php",
+      "retrievedAt": "2026-09-25",
+      "note": "All three examples are in the statute. Optional: call them 'improper claim practices' rather than 'violations', and note the 'general business practice' threshold."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina also recognizes a private cause of action for bad faith refusal to pay benefits. In Nichols v. State Farm, the South Carolina Supreme Court established that an insured can bring a tort action against their insurer for bad faith denial of coverage, potentially recovering actual damages, consequential damages, and punitive damages.",
+      "verdict": "keep",
+      "currentValue": "Nichols v. State Farm Mut. Auto. Ins. Co., 279 S.C. 336, 306 S.E.2d 616 (1983): tort action by an insured for bad-faith refusal to pay first-party benefits; consequential damages not limited by the contract; punitive damages for wilful or reckless conduct. Statutory companion: § 38-59-40 — attorney's fees (capped at one-third of the judgment) when an insurer refuses to pay the policyholder's claim for ninety days after demand without reasonable cause or in bad faith. No third-party action (Kleckley).",
+      "sourceName": "Nichols v. State Farm (S.C. 1983) (verified in sibling packs 1722, 1724, 1720); S.C. Code § 38-59-40 (re-read 2026-09-25)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1983/21979-1.html",
+      "retrievedAt": "2026-09-25",
+      "note": "Accurate and correctly says 'an insured'. Two optional additions: 'against their own insurer — not the other driver's (Kleckley, 2000)' and the § 38-59-40 fee remedy after a 90-day demand, which the table needs."
+    },
+    {
+      "surface": "body",
+      "claim": "Unlike Georgia's statutory penalty cap, South Carolina punitive damages in bad faith cases can be substantial, limited only by constitutional due process constraints.",
+      "verdict": "update",
+      "currentValue": "South Carolina caps punitive damages by statute: 'an award of punitive damages may not exceed the greater of three times the amount of compensatory damages awarded to each claimant entitled thereto or the sum of five hundred thousand dollars' (S.C. Code § 15-32-530(A)), the dollar figure indexed to CPI annually under (D) — $739,245 for 2026 per the Revenue and Fiscal Affairs Office memo of February 3, 2026; four times or $2,000,000 where the conduct was motivated by unreasonable financial gain known to management or would be a felony (B); no cap for intent to harm, felony conviction for the conduct, or impairment by alcohol or drugs (C).",
+      "sourceName": "S.C. Code § 15-32-530 (scstatehouse.gov, re-verified 200 on 2026-09-25); S.C. Revenue and Fiscal Affairs Office — 2026 Punitive Damage Award Limitation memo",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-09-25",
+      "note": "Direct error and contradicts the post's own table row two sections later; writer-profile rule: 'never say SC has no cap'. Suggested: 'Because the South Carolina remedy is a tort claim, a policyholder's recovery is measured by the harm the denial caused rather than by a percentage of the claim, and punitive damages are available for wilful or reckless conduct — capped at the greater of three times compensatory damages or an inflation-adjusted floor ($739,245 for 2026) under S.C. Code § 15-32-530, with higher tiers for conduct driven by financial gain.' RFA memo (image PDF, 200): https://rfa.sc.gov/sites/rfa/files/2026-03/2026%20Punitive%20Damages%20Awards%20Limitation%20Inflation%20Memo%20signed.pdf"
+    },
+    {
+      "surface": "body",
+      "claim": "The South Carolina Department of Insurance also accepts complaints against insurers engaging in unfair claims practices, creating an official record of the insurer's conduct that can support subsequent litigation.",
+      "verdict": "update",
+      "currentValue": "The Department's complaint page (doi.sc.gov/complaint) routes to the NAIC online complaint form for South Carolina. The regulator acts on patterns — § 38-59-20 reaches practices 'performed with such frequency as to indicate a general business practice' — through § 38-59-30 enforcement. A complaint does not create a bad-faith claim for an injured person against the other driver's insurer (Kleckley).",
+      "sourceName": "South Carolina Department of Insurance — File a Complaint; S.C. Code §§ 38-59-20, 38-59-30",
+      "sourceUrl": "https://doi.sc.gov/complaint",
+      "retrievedAt": "2026-09-25",
+      "note": "Same finding as pack 1720. 'Can support subsequent litigation' implies the reader's own bad-faith case; re-point: 'A complaint puts the insurer's conduct on the regulator's record; the Department acts on patterns, so a complaint that joins others can bring enforcement your own case never would. It does not give you a bad-faith claim against the other driver's insurer.' doi.sc.gov refused direct connections from this network on 2026-09-25 but the redirect to the NAIC form was observed (302 to sbs.naic.org ... state=SC); it was verified 2026-09-23 in pack 1744. Link both regulators: Georgia https://oci.georgia.gov/file-consumer-insurance-complaint (200)."
+    },
+    {
+      "surface": "body",
+      "claim": "Primary Bad Faith Statute | O.C.G.A. § 33-4-6 | S.C. Code § 38-59-20 (Unfair Claims Practices Act)",
+      "verdict": "update",
+      "currentValue": "Split into two rows. 'Bad-faith remedy against your own insurer': Georgia O.C.G.A. § 33-4-6 (UM claims: § 33-7-11(j)) | South Carolina S.C. Code § 38-59-40 and the Nichols v. State Farm tort. 'Claims-handling law (regulator-enforced, no private suit)': Georgia O.C.G.A. § 33-6-34 | South Carolina S.C. Code § 38-59-20 (expressly covers third-party liability claims).",
+      "sourceName": "O.C.G.A. §§ 33-4-6, 33-6-34; S.C. Code §§ 38-59-20, 38-59-40",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t38c059.php",
+      "retrievedAt": "2026-09-25",
+      "note": "Comparison table. Pairs a private penalty statute with a regulatory list and names a South Carolina act that does not exist; same correction as pack 1720."
+    },
+    {
+      "surface": "body",
+      "claim": "Statutory Penalty | Up to 50% of claim amount + attorney's fees | No fixed statutory penalty; actual + consequential damages",
+      "verdict": "update",
+      "currentValue": "Georgia: the greater of 50% of the loss or $5,000, plus attorney's fees, after a 60-day demand by the policyholder (§ 33-4-6); on UM claims up to 25% or $25,000 (§ 33-7-11(j)). South Carolina: attorney's fees up to one-third of the judgment after a 90-day demand by the policyholder (§ 38-59-40); actual and consequential damages under the Nichols tort. Both: policyholder against their own insurer only.",
+      "sourceName": "O.C.G.A. §§ 33-4-6, 33-7-11(j); S.C. Code § 38-59-40 (re-read 2026-09-25); Nichols v. State Farm",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t38c059.php",
+      "retrievedAt": "2026-09-25",
+      "note": "Comparison table. Georgia cell omits the $5,000 floor and the demand; South Carolina cell misses the § 38-59-40 fee remedy — 'no fixed statutory penalty' is the same direct error found in packs 1722 and 1720."
+    },
+    {
+      "surface": "body",
+      "claim": "Punitive Damages | Available under common law bad faith | Available; capped at the greater of 3x compensatory damages or $500,000 (S.C. Code § 15-32-530)",
+      "verdict": "update",
+      "currentValue": "Georgia: not on top of the statutory penalty — 'where the General Assembly has provided a specific procedure and a limited penalty for noncompliance with a specific enactment ... the specific procedure and limited penalty were intended by the General Assembly to be the exclusive procedure and penalty, and recovery under general penalty provisions will not be allowed. This conclusion is equally applicable to OCGA § 33-4-6' (McCall v. Allstate Ins. Co., 251 Ga. 869 (1984), rejecting punitive damages under § 51-12-5 for a UM bad-faith refusal). Georgia's general punitive-damages cap is $250,000 (§ 51-12-5.1(g)), with no cap for specific intent to harm or impairment by alcohol or drugs ((f)). South Carolina: correct as written; the $500,000 floor is inflation-adjusted each year — $739,245 for 2026.",
+      "sourceName": "McCall v. Allstate Ins. Co., 251 Ga. 869, 310 S.E.2d 513 (1984) (read on CourtListener 2026-09-25); O.C.G.A. § 51-12-5.1 (verified in sibling pack 1722); S.C. Code § 15-32-530; RFA 2026 memo",
+      "sourceUrl": "https://www.courtlistener.com/opinion/1207272/mccall-v-allstate-insurance/",
+      "retrievedAt": "2026-09-25",
+      "note": "Comparison table. The Georgia cell is wrong: McCall holds the § 33-4-6 / § 33-7-11(j) penalty is the exclusive penalty for a first-party bad-faith refusal, so punitive damages are not 'available under common law bad faith'. Suggested Georgia cell: 'Not available on a bad-faith refusal to pay — the § 33-4-6 penalty is exclusive (McCall v. Allstate, 1984); general tort cap $250,000 (O.C.G.A. § 51-12-5.1)'. Suggested South Carolina cell: 'Available for wilful or reckless denials; capped at the greater of 3x compensatory damages or $500,000, indexed — $739,245 for 2026 (S.C. Code § 15-32-530)'. § 51-12-5.1: https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/"
+    },
+    {
+      "surface": "body",
+      "claim": "First-Party Bad Faith | Yes — statutory cause of action | Yes — tort cause of action (Nichols v. State Farm)",
+      "verdict": "keep",
+      "currentValue": "Georgia § 33-4-6 (policyholder); South Carolina Nichols tort plus the § 38-59-40 statutory fee remedy.",
+      "sourceName": "O.C.G.A. § 33-4-6; Nichols v. State Farm (S.C. 1983); S.C. Code § 38-59-40",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-4/section-33-4-6/",
+      "retrievedAt": "2026-09-25",
+      "note": "Comparison table; both cells correct. Optional: South Carolina cell 'Yes — tort (Nichols v. State Farm) plus attorney's fees under § 38-59-40'."
+    },
+    {
+      "surface": "body",
+      "claim": "Third-Party Bad Faith | Yes — excess judgment liability | Yes — excess judgment liability",
+      "verdict": "update",
+      "currentValue": "In both states the excess-judgment claim belongs to the insured, not the injured claimant. Georgia: the insurer 'may be liable to the insured to pay the verdict rendered against the insured even though the verdict exceeds the policy limit' (McCall, 1984; Holt, 1992); no direct action by the injured person (Mills v. Allstate, 2007; § 33-4-7 property damage only); the insured may assign the claim (Holt). South Carolina: Tyger River Pine Co. v. Maryland Casualty Co. (1933), preserved by § 38-59-40(3); 'South Carolina does not recognize a third party action for the bad faith refusal to pay insurance benefits' (Kleckley, 2000).",
+      "sourceName": "McCall v. Allstate (Ga. 1984); Southern General v. Holt (Ga. 1992); Mills v. Allstate (Ga. Ct. App. 2007); Tyger River (S.C. 1933); S.C. Code § 38-59-40(3); Kleckley (S.C. 2000)",
+      "sourceUrl": "https://www.courtlistener.com/opinion/1207272/mccall-v-allstate-insurance/",
+      "retrievedAt": "2026-09-25",
+      "note": "Comparison table. As written both cells tell the injured reader they have a bad-faith claim against the other driver's insurer. Suggested cells: Georgia 'The at-fault driver's claim for the excess (Holt, 1992), assignable to the injured person; no direct suit by the injured person (Mills v. Allstate, 2007)'; South Carolina 'The at-fault driver's claim for the excess (Tyger River doctrine); no direct suit by the injured person (Kleckley, 2000)'. Or relabel the row 'Can you sue the other driver's insurer for bad faith? | No | No'. Tyger River on Justia: https://law.justia.com/cases/south-carolina/supreme-court/1933/170-sc-286.html"
+    },
+    {
+      "surface": "body",
+      "claim": "Statute of Limitations (PI) | 2 years (O.C.G.A. § 9-3-33) | 3 years (S.C. Code § 15-3-530)",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-33; S.C. Code § 15-3-530",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-25",
+      "note": "Comparison table; matches the writer-profile table."
+    },
+    {
+      "surface": "body",
+      "claim": "Comparative Fault Standard | Modified — barred at 50% fault (O.C.G.A. § 51-12-33) | Modified — barred at 51% fault",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(g); Nelson v. Concrete Supply Co. (S.C. 1991)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-09-25",
+      "note": "Comparison table; both cells correct. Optional '(Nelson v. Concrete Supply Co.)' in the South Carolina cell; never § 15-38-15."
+    },
+    {
+      "surface": "body",
+      "claim": "Regulatory Oversight | Georgia Office of Insurance and Safety Fire Commissioner | South Carolina Department of Insurance",
+      "verdict": "update",
+      "currentValue": "Office of the Commissioner of Insurance and Safety Fire (Consumer Services Division) | South Carolina Department of Insurance",
+      "sourceName": "Georgia Office of the Commissioner of Insurance and Safety Fire — File a Consumer Insurance Complaint",
+      "sourceUrl": "https://oci.georgia.gov/file-consumer-insurance-complaint",
+      "retrievedAt": "2026-09-25",
+      "note": "Comparison table. The office's own pages and footer read 'Office of the Commissioner of Insurance and Safety Fire' (verified in packs 1722, 1744, 1720; URL 200 on 2026-09-25). Link both agencies' complaint pages."
+    },
+    {
+      "surface": "body",
+      "claim": "Once you retain a lawyer, the insurer must direct all communication through your attorney.",
+      "verdict": "update",
+      "currentValue": "Once you retain a lawyer, the insurer's lawyers may not contact you directly (Rule 4.2, Rules of Professional Conduct), and adjusters deal with your attorney once notified.",
+      "sourceName": "South Carolina Judicial Branch — Rule 407, SCACR, Rule 4.2",
+      "sourceUrl": "https://www.sccourts.org/resources/judicial-community/court-rules/appellate/rule-407/rule-42/",
+      "retrievedAt": "2026-09-25",
+      "note": "Second occurrence of the 'must' overstatement (the first is in the delay section); the two must move together. The next sentences ('No more recorded statements...') describe the practical effect and can stay."
+    },
+    {
+      "surface": "body",
+      "claim": "This is particularly important in catastrophic cases involving traumatic brain injuries or spinal cord damage, where lifetime costs can reach millions of dollars.",
+      "verdict": "keep",
+      "currentValue": "National Spinal Cord Injury Statistical Center, Facts and Figures at a Glance 2026 (2025 dollars): estimated lifetime costs for a person injured at age 25 run into the millions — $3.1 million for paraplegia and higher for tetraplegia.",
+      "sourceName": "National Spinal Cord Injury Statistical Center (UAB) — Traumatic Spinal Cord Injury Facts and Figures at a Glance, 2026 (verified in sibling pack 1724)",
+      "sourceUrl": "https://sites.uab.edu/nscisc/files/2026/03/Facts-and-Figures-English-03.25.2026-Accessible.pdf",
+      "retrievedAt": "2026-09-25",
+      "note": "'Can reach millions' is supported for spinal cord injury; no separate TBI lifetime-cost figure was verified, and the sentence does not assert one. Optional attribution: '(National Spinal Cord Injury Statistical Center)'."
+    },
+    {
+      "surface": "body",
+      "claim": "In both Georgia and South Carolina, the potential for bad faith penalties and punitive damages creates pressure on insurers to act reasonably.",
+      "verdict": "update",
+      "currentValue": "The bad-faith penalties (§ 33-4-6; § 38-59-40; Nichols) and any punitive damages apply to the reader's own insurer. The pressure on the at-fault driver's insurer is different: its exposure to its own policyholder for an excess verdict if it refuses a reasonable within-limits demand (Holt; Tyger River), the regulator's claims-handling rules (§ 33-6-34; § 38-59-20), and the lawsuit against the driver.",
+      "sourceName": "McCall v. Allstate (Ga. 1984); S.C. Code §§ 38-59-20, 38-59-40; Nichols; Tyger River",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t38c059.php",
+      "retrievedAt": "2026-09-25",
+      "note": "'Leveraging bad faith claims' paragraph. Suggested: 'In both states, an insurer that refuses a reasonable settlement within its limits risks owing its own policyholder the entire excess verdict, and a policyholder whose own insurer stonewalls a UM/UIM or med-pay claim has bad-faith penalties to invoke. An attorney who understands which lever applies to which insurer can use them to force fair treatment of your claim.'"
+    },
+    {
+      "surface": "body",
+      "claim": "Roden Law represents injured clients across Georgia and South Carolina on a contingency fee basis — you pay nothing unless we recover compensation for you",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Firm's own representation (site-wide CTA)",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "Firm policy statement, not an external fact."
+    },
+    {
+      "surface": "body",
+      "claim": "With more than $300 million recovered for our clients and offices in Savannah, Darien, Charleston, Columbia, and Myrtle Beach",
+      "verdict": "keep",
+      "currentValue": "The theme's firm-data record carries '$300 million recovered for injured clients' (wordpress/wp-content/themes/roden-law/inc/firm-data.php, seo-meta.php, page-about.php) and the figure appears in three other posts in content/meta.json. Offices per client.json: Savannah, Darien, Charleston, North Charleston, Columbia, Myrtle Beach.",
+      "sourceName": "Theme firm-data.php; client.json",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "Firm figure consistent with the site's own identity record; not externally verifiable and not presented as one. North Charleston is omitted from the office list, which is not presented as exhaustive (same as pack 1720)."
+    },
+    {
+      "surface": "body",
+      "claim": "Call <a href=\"tel:18447378587\">1-844-RESULTS</a>",
+      "verdict": "update",
+      "currentValue": "href=\"tel:+18447378587\"",
+      "sourceName": "profiles/writer-profile.md — Phone links (toll-free 1-844-RESULTS is tel:+18447378587)",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "The tel: href lacks the + country-code prefix; the digits are correct (7378587 = RESULTS). Change the href only; the visible text is unchanged."
+    },
+    {
+      "surface": "excerpt",
+      "claim": "The tactics insurers use to deny or devalue an injury claim — recorded statements, biased exams, delay — and how to answer them.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "Published as the Article description by roden_schema_article(). No legal or numeric claim; nothing to correct."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Insurance companies use tactics including recorded statements, biased IMEs, unlimited medical record requests, pre-existing condition blame, delays, and lowball offers. Georgia's bad faith statute (O.C.G.A. § 33-4-6) imposes penalties up to 50% plus attorney fees. South Carolina's Act (S.C. Code § 38-59-20) provides similar protections. Never give a recorded statement or sign a blanket medical release without consulting an attorney.",
+      "verdict": "update",
+      "currentValue": "Insurance companies use tactics including recorded statements, insurer-selected medical exams, over-broad medical record requests, pre-existing condition blame, delays, and lowball offers. Bad-faith remedies run against your own insurer, not the other driver's: Georgia's O.C.G.A. § 33-4-6 gives a policyholder up to 50% of the loss or $5,000, whichever is greater, plus attorney's fees after a 60-day demand; South Carolina gives attorney's fees after a 90-day demand (S.C. Code § 38-59-40) and a bad-faith tort claim (Nichols v. State Farm). Both states' claims-handling rules (O.C.G.A. § 33-6-34; S.C. Code § 38-59-20) are enforced by the insurance regulator. Never give a recorded statement to the other driver's insurer or sign a blanket medical release without consulting an attorney.",
+      "sourceName": "O.C.G.A. §§ 33-4-6, 33-6-34; S.C. Code §§ 38-59-20, 38-59-40; Nichols v. State Farm",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t38c059.php",
+      "retrievedAt": "2026-09-25",
+      "note": "Renders in the summary box above the article. Same three errors as pack 1720's takeaways: § 33-4-6 framed as the reader's remedy and missing the $5,000 floor and demand; § 38-59-20 called an 'Act' that 'provides similar protections' (it is a regulatory list with no private remedy); no mention of whose remedy these are."
+    },
+    {
+      "surface": "faq:0",
+      "claim": "Yes. You are not legally required to give a recorded statement to the at-fault driver's insurer. Politely decline and direct them to your attorney.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 33-6-34; S.C. Code § 38-59-20 (no claimant duty in either)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t38c059.php",
+      "retrievedAt": "2026-09-25",
+      "note": "Publishes as FAQPage structured data. Correctly limited to 'the at-fault driver's insurer'. Optional addition: 'Your own insurer is different — your policy usually requires you to cooperate with it, so let your lawyer handle its requests.'"
+    },
+    {
+      "surface": "faq:1",
+      "claim": "For pre-litigation claims, generally no. If a lawsuit is filed, a judge can order one under Georgia's O.C.G.A. § 9-11-35 or South Carolina's Rule 35. Your attorney can set conditions on the exam.",
+      "verdict": "update",
+      "currentValue": "For pre-litigation claims against the other driver's insurer, no. If a lawsuit is filed, a judge can order one for good cause under Georgia's O.C.G.A. § 9-11-35 or, in cases with more than $100,000 in actual damages at stake, South Carolina's Rule 35 — and the order sets the time, place, scope and examiner. In South Carolina your own physician may attend; in Georgia your attorney asks the court to write conditions into the order. You are entitled to the examiner's written report on request.",
+      "sourceName": "O.C.G.A. § 9-11-35; Rule 35, SCRCP",
+      "sourceUrl": "https://www.sccourts.org/resources/judicial-community/court-rules/civil/rule-35/",
+      "retrievedAt": "2026-09-25",
+      "note": "Publishes as FAQPage structured data. The citations are right; add the $100,000 threshold in Rule 35(a) SCRCP and correct 'your attorney can set conditions' to 'the court sets the conditions, on your attorney's motion' (§ 9-11-35(a): the order 'shall specify the time, place, manner, conditions, and scope')."
+    },
+    {
+      "surface": "faq:2",
+      "claim": "Not without your consent. HIPAA protects your privacy. Never sign a blanket authorization. Your attorney provides only records relevant to your accident injuries.",
+      "verdict": "update",
+      "currentValue": "HIPAA binds your health-care providers, not the auto insurer — 'entities providing only workers' compensation, automobile insurance, and property and casualty insurance' are not covered entities (HHS Summary of the Privacy Rule). A provider may release your records to an insurer only with a valid written authorization that says which records, to whom, for what purpose and until when (45 CFR 164.508(c)), or under legal process once a case is in court — a court order, or a subpoena or discovery request with the notice or protective-order assurances in 45 CFR 164.512(e)(1). So before suit the insurer gets only what you authorize; never sign a blanket authorization, and have your attorney send only the records relevant to your accident injuries.",
+      "sourceName": "HHS — Summary of the HIPAA Privacy Rule; 45 CFR 164.508 and 164.512(e) (Cornell LII)",
+      "sourceUrl": "https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html",
+      "retrievedAt": "2026-09-25",
+      "note": "Publishes as FAQPage structured data. 'Not without your consent' is right before suit and omits the litigation path (subpoena/court order), which is how insurers in litigation actually obtain records (same finding as pack 1709). HHS page read via Chrome 2026-09-25; the older /guidance/authorizations/ URL is a 404 — do not link it. 45 CFR 164.512: https://www.law.cornell.edu/cfr/text/45/164.512"
+    },
+    {
+      "surface": "faq:3",
+      "claim": "Bad faith occurs when an insurer unreasonably denies, delays, or undervalues a claim. Georgia's statute (O.C.G.A. § 33-4-6) allows penalties up to 50% plus attorney fees. South Carolina's Act (S.C. Code § 38-59-20) provides similar protections.",
+      "verdict": "update",
+      "currentValue": "Bad faith is a claim against your own insurer, not the other driver's. In Georgia it means a frivolous and unfounded refusal to pay a covered claim (Taylor v. GEICO, 2019); if your insurer refuses within 60 days of your written demand, O.C.G.A. § 33-4-6 adds a penalty of up to 50% of the loss or $5,000, whichever is greater, plus attorney's fees (up to 25% or $25,000 on uninsured-motorist claims under § 33-7-11(j)). In South Carolina a policyholder whose insurer refuses to pay for 90 days after demand without reasonable cause or in bad faith recovers attorney's fees (S.C. Code § 38-59-40) and can sue in tort for consequential and, for wilful or reckless conduct, punitive damages (Nichols v. State Farm). South Carolina's § 38-59-20 lists the claims practices the Department of Insurance polices; it does not give you a lawsuit.",
+      "sourceName": "O.C.G.A. §§ 33-4-6, 33-7-11(j); Taylor v. GEICO (Ga. Ct. App. 2019); S.C. Code §§ 38-59-20, 38-59-40; Nichols v. State Farm (S.C. 1983); Mills v. Allstate; Kleckley",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-4/section-33-4-6/",
+      "retrievedAt": "2026-09-25",
+      "note": "Publishes as FAQPage structured data — the misattributed remedy and the fictional South Carolina 'Act' are published twice over. 'Unreasonably denies, delays, or undervalues' is the regulatory standard (§ 33-6-34; § 38-59-20), not the bad-faith standard. Same correction as packs 1720 (faq:2, faq:3) and 1724 (faq:4)."
+    },
+    {
+      "surface": "faq:4",
+      "claim": "Almost never. First offers are typically far below true value. Wait until you reach MMI and consult an attorney before accepting any offer.",
+      "verdict": "update",
+      "currentValue": "Almost never. A first offer is made before the full extent of your injuries is known, and a signed release ends the claim. Wait until you reach maximum medical improvement (MMI) and consult an attorney before accepting any offer.",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "Publishes as FAQPage structured data. 'Typically far below true value' is a frequency claim with no primary source; the timing point makes the same argument without a statistic. Both states list offering 'substantially less than the amounts ultimately recovered' to force suit as a regulated claim practice (O.C.G.A. § 33-6-34(5) for insureds; S.C. Code § 38-59-20(5) expressly for third-party claimants) if a citation is wanted."
+    },
+    {
+      "surface": "faq:5",
+      "claim": "Claimants with attorneys recover substantially more.",
+      "verdict": "drop",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "Publishes as FAQPage structured data. Behavioural/statistical claim with no primary source (the usual citation is an Insurance Research Council study, which is not a primary source and was not verified — same disposition as pack 1720). Cut the sentence; the rest of the answer ('Insurance companies know a lawyer will hold them accountable and take the case to trial if necessary. We handle cases on contingency — you pay nothing unless we win.') stands as the firm's own position."
+    }
+  ],
+  "recommendedEdits": [
+    "Intro: change 'insurers are publicly traded corporations with a financial incentive' to 'insurers are businesses with a financial incentive'; rewrite the Cornell sentence — the linked page is the Wex 'insurance' entry from the Legal Information Institute at Cornell Law School (a general overview of how insurance works and why states regulate it) and says nothing about obligations versus practices; keep the link.",
+    "Recorded statements: keep the 'no legal obligation to the at-fault party's insurer' sentence; add one caveat sentence that a claim on your own policy (UM/UIM, med-pay) is governed by that policy, which usually contains a cooperation clause — so route your own insurer's requests through your lawyer rather than refuse them.",
+    "IME section: cut 'and the results almost always favor the insurer', the 'repeat vendors ... stop getting referrals' sentence, and the '10 to 15 minutes ... frequently concludes' sentence; rewrite the Georgia sentence so the court, not the defendant, orders the exam — on motion for good cause, with the order setting time, place, scope and examiner, and the court free to refuse when treatment records already answer the question (O.C.G.A. § 9-11-35; Courtesy Ford v. Campbell, 2021); rewrite the South Carolina sentence to state Rule 35(a) SCRCP's $100,000 actual-damages threshold, the good-cause requirement, and the examinee's right to have their own physician present; add that the examined party is entitled to the examiner's written report on request in both states (§ 9-11-35(b)(1); Rule 35(b)(1)).",
+    "Medical records: replace 'Many of these forms are written to give the insurer access to your entire lifetime medical history' with what HIPAA requires of an authorization (specific description of the records, recipient, purpose, expiration date — 45 CFR 164.508) and the point that HIPAA will honour a broad form if you sign it; replace 'you are only obligated to provide records relevant to the injuries you are claiming' with: before suit you owe the other driver's insurer no records at all (in a Georgia motor-vehicle case a lawyer's § 9-11-67.1 demand encloses the records the insurer needs), and once suit is filed the discovery rules and the judge — not the adjuster's form — decide what is relevant.",
+    "Pre-existing conditions: no change required; optional citations '(Burnett v. Family Kingdom, S.C. Ct. App. 2010)' and '(Tucker Nursing Center v. Mosby, Ga. Ct. App. 2010)'.",
+    "Delay section: add one sentence that both states treat unreasonable delay — failing to acknowledge claim communications promptly, failing to investigate promptly, unreasonable delay in paying — as a regulated claims practice the insurance regulator can act on (O.C.G.A. § 33-6-34; S.C. Code § 38-59-20, which expressly covers third-party liability claims); do not import Reg. 120-2-52's 15/30/60-day figures (first-party property claims only); change 'the insurer must communicate through your attorney' to 'the insurer's lawyers may not contact you directly (Rule 4.2 of each state's Rules of Professional Conduct), and adjusters deal with your attorney once notified'.",
+    "Lowball section: change 'Courts will not set it aside because you did not understand the full scope of your injuries' to 'Courts rarely set one aside, and not merely because your injuries turned out to be worse than you knew'.",
+    "Georgia bad-faith section: keep 'This statute applies to first-party claims — meaning claims you file against your own insurer' verbatim; add the 60-day written demand by the policyholder and the penalty as 'up to 50% of the loss or $5,000, whichever is greater, plus attorney's fees'; replace 'without reasonable cause' with the Georgia standard — 'in bad faith, which Georgia courts define as a frivolous and unfounded refusal to pay (Taylor v. GEICO, 2019)'; add § 33-7-11(j) for UM/UIM claims (60-day demand; up to 25% or $25,000 plus fees); rewrite the third-party paragraph so the excess-verdict claim belongs to the at-fault driver (Southern General v. Holt, 1992), assignable to the injured person, with no direct bad-faith suit by the injured person against the other driver's insurer (Mills v. Allstate, 2007); relabel the 'Common examples of bad faith conduct' list as the unfair claims settlement practices the Office of the Commissioner of Insurance and Safety Fire enforces under O.C.G.A. § 33-6-34 (no private lawsuit).",
+    "South Carolina bad-faith section: replace 'the Unfair Claims Settlement Practices Act under S.C. Code § 38-59-20' with 'its improper-claim-practices statute, S.C. Code § 38-59-20, enforced by the Department of Insurance and — unlike Georgia's — expressly covering claims by injured third parties against a liability insurer; it lists what the regulator polices and does not let you sue the other driver's insurer (Kleckley v. Northwestern National, 2000)'; keep the three examples; keep the Nichols paragraph and add 'against their own insurer' plus § 38-59-40 (attorney's fees, capped at one-third of the judgment, after a 90-day demand); replace the 'limited only by constitutional due process constraints' sentence with the § 15-32-530 cap (greater of 3x compensatory damages or an inflation-adjusted floor — $739,245 for 2026 — with higher tiers for conduct driven by financial gain) and drop the 'Unlike Georgia's statutory penalty cap' comparison; re-point the Department of Insurance sentence: a complaint puts the insurer's conduct on the regulator's record and regulators act on patterns, but it does not create a bad-faith claim for you against the other driver's insurer; link https://doi.sc.gov/complaint.",
+    "Comparison table: split 'Primary Bad Faith Statute' into 'Bad-faith remedy against your own insurer' (O.C.G.A. § 33-4-6; § 33-7-11(j) for UM | S.C. Code § 38-59-40 and Nichols v. State Farm) and 'Claims-handling law (regulator-enforced, no private suit)' (O.C.G.A. § 33-6-34 | S.C. Code § 38-59-20); 'Statutory Penalty' Georgia cell → 'Greater of 50% of the loss or $5,000, plus attorney's fees, after a 60-day demand (policyholder only)'; South Carolina cell → 'Attorney's fees up to one-third of the judgment after a 90-day demand (§ 38-59-40); actual and consequential damages under the Nichols tort (policyholder only)'; 'Punitive Damages' Georgia cell → 'Not on a bad-faith refusal to pay — the § 33-4-6 penalty is exclusive (McCall v. Allstate, 1984); general tort cap $250,000 (O.C.G.A. § 51-12-5.1)'; South Carolina cell → add 'indexed — $739,245 for 2026'; 'Third-Party Bad Faith' both cells → the at-fault driver's claim for the excess verdict (Holt / Tyger River), no direct suit by the injured person (Mills; Kleckley), assignable in Georgia; 'Regulatory Oversight' Georgia cell → 'Office of the Commissioner of Insurance and Safety Fire' with the complaint link.",
+    "'How a Lawyer Fights Back': change 'the insurer must direct all communication through your attorney' as in the delay section; rewrite 'Leveraging bad faith claims' so the excess-verdict exposure to its own policyholder is the pressure on the at-fault driver's insurer and the bad-faith penalties are the pressure on the reader's own insurer; optional NSCISC attribution on 'lifetime costs can reach millions of dollars'.",
+    "Contact section: change the phone href from tel:18447378587 to tel:+18447378587 (visible text unchanged).",
+    "keyTakeaways: rewrite per verifiedClaims keyTakeaways — remove 'South Carolina's Act ... provides similar protections', state whose remedy § 33-4-6 is, add the $5,000 floor and 60-day demand, add § 38-59-40 (90 days) and Nichols, and name § 33-6-34 / § 38-59-20 as regulator-enforced claims-handling rules.",
+    "FAQ 1: add Rule 35 SCRCP's $100,000 threshold and change 'Your attorney can set conditions' to 'the court sets the conditions on your attorney's motion'; add the right to the examiner's written report.",
+    "FAQ 2: rewrite per verifiedClaims faq:2 — HIPAA binds providers, not auto insurers; release only with a specific written authorization (45 CFR 164.508) or, once in court, a court order or subpoena with the 45 CFR 164.512(e) assurances.",
+    "FAQ 3: rewrite per verifiedClaims faq:3 — bad faith is a claim against your own insurer; Georgia standard, 60-day demand, 50%/$5,000 floor, § 33-7-11(j) for UM; South Carolina § 38-59-40 fees after 90 days plus the Nichols tort with punitive damages capped by § 15-32-530; § 38-59-20 is the regulator's list, not a lawsuit.",
+    "FAQ 4: replace 'First offers are typically far below true value' with 'A first offer is made before the full extent of your injuries is known, and a signed release ends the claim'.",
+    "FAQ 5: delete 'Claimants with attorneys recover substantially more.'",
+    "Reviewer: this post states South Carolina law, so record Graeham C. Gillin as the reviewing attorney (never Eric Roden). Do not add an attribution quote on a refresh."
+  ],
+  "statuteCitations": [
+    {
+      "section": "O.C.G.A. § 33-4-6",
+      "name": "Liability of insurer for damages and attorney's fees for bad-faith refusal to pay a covered loss — 60-day demand by the holder of the policy; penalty not more than 50% of the loss or $5,000, whichever is greater, plus attorney's fees; first-party only",
+      "url": "https://law.justia.com/codes/georgia/title-33/chapter-4/section-33-4-6/"
+    },
+    {
+      "section": "O.C.G.A. § 33-4-7",
+      "name": "Third-party bad faith — motor vehicle liability policies, property damage only",
+      "url": "https://law.justia.com/codes/georgia/title-33/chapter-4/section-33-4-7/"
+    },
+    {
+      "section": "O.C.G.A. § 33-7-11",
+      "name": "Uninsured motorist coverage; subsection (j): bad-faith penalty on UM claims (60-day demand; up to the greater of 25% or $25,000 plus fees)",
+      "url": "https://law.justia.com/codes/georgia/title-33/chapter-7/section-33-7-11/"
+    },
+    {
+      "section": "O.C.G.A. § 33-6-34",
+      "name": "Unfair claims settlement practices — (1) misrepresenting facts or policy provisions; (2) failing to acknowledge communications with reasonable promptness; (3) failing to adopt prompt-investigation procedures; (4) not attempting good-faith settlement where liability is reasonably clear; (6) refusing to pay without a reasonable investigation; (10) written denial with explanation on the insured's written request — regulator-enforced, no private right of action",
+      "url": "https://law.justia.com/codes/georgia/title-33/chapter-6/article-2/section-33-6-34/"
+    },
+    {
+      "section": "O.C.G.A. § 9-11-35",
+      "name": "Physical and mental examination of persons — court may order on motion for good cause when a party's condition is in controversy; order specifies time, place, manner, conditions, scope and examiner; examined party entitled to the examiner's detailed written report on request",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-5/section-9-11-35/"
+    },
+    {
+      "section": "O.C.G.A. § 9-11-67.1",
+      "name": "Settlement offers and agreements for personal injury, bodily injury, and death from motor vehicle — attorney-prepared pre-suit offers; 30-day acceptance and 40-day payment floors; (b)(2) records sufficient to evaluate the claim must be enclosed; (f) insurer may request records without making a counteroffer",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-8/section-9-11-67-1/"
+    },
+    {
+      "section": "O.C.G.A. § 9-3-33",
+      "name": "Injuries to the person — two years",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+    },
+    {
+      "section": "O.C.G.A. § 51-12-33",
+      "name": "Apportionment of fault; subsection (g): no recovery at 50 percent or more",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+    },
+    {
+      "section": "O.C.G.A. § 51-12-5.1",
+      "name": "Punitive damages; subsection (g): $250,000 cap; no cap for product liability (e) or specific intent / impairment by alcohol or drugs (f)",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/"
+    },
+    {
+      "section": "Ga. Comp. R. & Regs. 120-2-52",
+      "name": "Fair and Equitable Settlement of First Party Property Damage Claims (15-day acknowledgment; 30/60-day accept-or-deny) — first-party property claims only; never a deadline for a third-party bodily-injury claim",
+      "url": "https://rules.sos.ga.gov/gac/120-2-52"
+    },
+    {
+      "section": "S.C. Code § 38-59-20",
+      "name": "Improper claim practices — eight listed practices, 'if committed without just cause and performed with such frequency as to indicate a general business practice'; expressly includes third-party liability claims; regulatory, no private remedy (Title 38, Chapter 59, 'Claims Practices')",
+      "url": "https://www.scstatehouse.gov/code/t38c059.php"
+    },
+    {
+      "section": "S.C. Code § 38-59-30",
+      "name": "Notice and hearing by director; cease-and-desist order and penalty under § 38-2-10 for improper claim practices",
+      "url": "https://www.scstatehouse.gov/code/t38c059.php"
+    },
+    {
+      "section": "S.C. Code § 38-59-40",
+      "name": "Attorney's fees where an insurer refuses to pay the policyholder's claim for ninety days after demand without reasonable cause or in bad faith (fee capped at one-third of the judgment); Tyger River doctrine preserved (3); first-party only",
+      "url": "https://www.scstatehouse.gov/code/t38c059.php"
+    },
+    {
+      "section": "S.C. Code § 15-32-530",
+      "name": "Punitive damages cap — greater of 3x compensatory or $500,000 (A), indexed to CPI annually (D) ($739,245 for 2026 per RFA); 4x / $2,000,000 under (B); no cap under (C)",
+      "url": "https://www.scstatehouse.gov/code/t15c032.php"
+    },
+    {
+      "section": "S.C. Code § 15-3-530",
+      "name": "Three years — (5) injury to the person not arising on contract",
+      "url": "https://www.scstatehouse.gov/code/t15c003.php"
+    },
+    {
+      "section": "Rule 35, SCRCP",
+      "name": "Physical and mental examinations — court order available only where the amount in controversy exceeds $100,000 actual damages; on motion for good cause; order sets time, place, manner, conditions, scope and examiner; examinee's physician may be present; exam in the county where the examinee or their physician resides unless agreed or ordered otherwise; report on request",
+      "url": "https://www.sccourts.org/resources/judicial-community/court-rules/civil/rule-35/"
+    },
+    {
+      "section": "45 CFR 164.508",
+      "name": "HIPAA Privacy Rule — uses and disclosures for which an authorization is required; (c)(1) core elements: specific and meaningful description of the information, who discloses, who receives, purpose, expiration date or event; (b)(5) revocable in writing",
+      "url": "https://www.law.cornell.edu/cfr/text/45/164.508"
+    },
+    {
+      "section": "45 CFR 164.512(e)",
+      "name": "HIPAA Privacy Rule — disclosures for judicial and administrative proceedings (court order; subpoena or discovery request with satisfactory assurances of notice or a qualified protective order)",
+      "url": "https://www.law.cornell.edu/cfr/text/45/164.512"
+    },
+    {
+      "section": "McCall v. Allstate Ins. Co., 251 Ga. 869, 310 S.E.2d 513 (1984)",
+      "name": "The § 33-7-11(j) / § 33-4-6 penalty is the exclusive procedure and penalty for a first-party bad-faith refusal to pay — no punitive damages under general tort provisions; Division 1 restates the failure-to-settle rule as the insurer's liability to its insured",
+      "url": "https://www.courtlistener.com/opinion/1207272/mccall-v-allstate-insurance/"
+    },
+    {
+      "section": "Mills v. Allstate Ins. Co., 288 Ga. App. 257, 653 S.E.2d 850 (2007)",
+      "name": "§ 33-4-6 runs to the policyholder; § 33-4-7 third-party claim limited to property damage — no third-party bad-faith action for personal injury",
+      "url": "https://law.justia.com/cases/georgia/court-of-appeals/2007/a07a1922.html"
+    },
+    {
+      "section": "Southern General Ins. Co. v. Holt, 262 Ga. 267, 416 S.E.2d 274 (1992)",
+      "name": "Liability insurer's bad-faith or negligent failure to settle within limits; the insured's claim for the excess, assignable to the injured person; an unreasonably short demand deadline does not create exposure",
+      "url": "https://law.justia.com/cases/georgia/supreme-court/1992/s91g1556-1.html"
+    },
+    {
+      "section": "Taylor v. Government Employees Ins. Co., 350 Ga. App. 734, 830 S.E.2d 235 (2019)",
+      "name": "Georgia bad-faith standard under § 33-4-6: 'a frivolous and unfounded refusal to pay the claim'",
+      "url": "https://www.courtlistener.com/opinion/7479882/taylor-v-govt-emps-ins-co/"
+    },
+    {
+      "section": "Nichols v. State Farm Mut. Auto. Ins. Co., 279 S.C. 336, 306 S.E.2d 616 (1983)",
+      "name": "Tort action by an insured for bad-faith refusal to pay first-party benefits; consequential damages beyond the contract; punitive damages for wilful or reckless conduct",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/1983/21979-1.html"
+    },
+    {
+      "section": "Kleckley v. Northwestern National Casualty Co., 338 S.C. 131, 526 S.E.2d 218 (2000)",
+      "name": "South Carolina does not recognize a third-party action for bad-faith refusal to pay insurance benefits",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/2000/25046.html"
+    },
+    {
+      "section": "Tyger River Pine Co. v. Maryland Casualty Co., 170 S.C. 286, 170 S.E. 346 (1933)",
+      "name": "Liability insurer answerable to its insured for bad-faith or negligent failure to settle within policy limits (the insured's claim)",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/1933/170-sc-286.html"
+    },
+    {
+      "section": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991)",
+      "name": "South Carolina modified comparative negligence: plaintiff recovers if his or her negligence is not greater than the defendant's; never cite § 15-38-15 for this",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html"
+    },
+    {
+      "section": "Burnett v. Family Kingdom, Inc., 387 S.C. 183, 691 S.E.2d 170 (Ct. App. 2010)",
+      "name": "South Carolina eggshell-plaintiff and aggravation rule: a defendant takes the plaintiff as found; damages for aggravation of a pre-existing condition",
+      "url": "https://law.justia.com/cases/south-carolina/court-of-appeals/2010/4656.html"
+    },
+    {
+      "section": "Tucker Nursing Center, Inc. v. Mosby (Ga. Ct. App. 2010)",
+      "name": "Georgia eggshell-plaintiff / aggravation jury instruction",
+      "url": "https://law.justia.com/cases/georgia/court-of-appeals/2010/a09a1756.html"
+    }
+  ],
+  "authoritativeLinks": [
+    {
+      "name": "Georgia Office of the Commissioner of Insurance and Safety Fire — File a Consumer Insurance Complaint (Consumer Services Division)",
+      "url": "https://oci.georgia.gov/file-consumer-insurance-complaint"
+    },
+    {
+      "name": "South Carolina Department of Insurance — File a Complaint (302-redirects to the NAIC online complaint form for South Carolina; host refuses direct connections from this network, redirect observed 2026-09-25)",
+      "url": "https://doi.sc.gov/complaint"
+    },
+    {
+      "name": "S.C. Legislature — Code of Laws Title 38, Chapter 59 (Claims Practices)",
+      "url": "https://www.scstatehouse.gov/code/t38c059.php"
+    },
+    {
+      "name": "S.C. Revenue and Fiscal Affairs Office — Inflation Adjustments for Legal Proceedings (punitive damage limitation memos by year)",
+      "url": "https://rfa.sc.gov/resources/inflation-adjustments-legal-proceedings"
+    },
+    {
+      "name": "S.C. Revenue and Fiscal Affairs Office — 2026 Punitive Damage Award Limitation memo (February 3, 2026; $739,245; image PDF)",
+      "url": "https://rfa.sc.gov/sites/rfa/files/2026-03/2026%20Punitive%20Damages%20Awards%20Limitation%20Inflation%20Memo%20signed.pdf"
+    },
+    {
+      "name": "South Carolina Judicial Branch — Rule 35, SCRCP (Physical and Mental Examinations)",
+      "url": "https://www.sccourts.org/resources/judicial-community/court-rules/civil/rule-35/"
+    },
+    {
+      "name": "South Carolina Judicial Branch — Rule 407, SCACR, Rule 4.2 (Communication with Person Represented by Counsel)",
+      "url": "https://www.sccourts.org/resources/judicial-community/court-rules/appellate/rule-407/rule-42/"
+    },
+    {
+      "name": "State Bar of Georgia — Georgia Rules of Professional Conduct (Rule 4.2)",
+      "url": "https://www.gabar.org/general-counsel/georgia-rules-of-professional-conduct"
+    },
+    {
+      "name": "U.S. Department of Health and Human Services — Summary of the HIPAA Privacy Rule (authorization requirements; auto and property-casualty insurers are not covered entities; judicial-proceedings disclosures)",
+      "url": "https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html"
+    },
+    {
+      "name": "Cornell LII — 45 CFR § 164.508 Uses and disclosures for which an authorization is required",
+      "url": "https://www.law.cornell.edu/cfr/text/45/164.508"
+    },
+    {
+      "name": "Cornell Law School Legal Information Institute — Wex: insurance (the post's existing outbound link; general overview only)",
+      "url": "https://www.law.cornell.edu/wex/insurance"
+    },
+    {
+      "name": "CourtListener — McCall v. Allstate Insurance Co., 251 Ga. 869 (1984) (full text)",
+      "url": "https://www.courtlistener.com/opinion/1207272/mccall-v-allstate-insurance/"
+    },
+    {
+      "name": "CourtListener — Taylor v. Gov't Emps. Ins. Co. (text of the opinion; Justia serves it as a PDF)",
+      "url": "https://www.courtlistener.com/opinion/7479882/taylor-v-govt-emps-ins-co/"
+    },
+    {
+      "name": "National Spinal Cord Injury Statistical Center (UAB) — Traumatic Spinal Cord Injury Facts and Figures at a Glance, 2026 (lifetime costs in 2025 dollars)",
+      "url": "https://sites.uab.edu/nscisc/files/2026/03/Facts-and-Figures-English-03.25.2026-Accessible.pdf"
+    }
+  ]
+}

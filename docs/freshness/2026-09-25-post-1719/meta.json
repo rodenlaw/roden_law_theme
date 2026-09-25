@@ -1,0 +1,31 @@
+{
+ "excerpt": "The tactics insurers use to deny or devalue an injury claim — recorded statements, biased exams, delay — and how to answer them.",
+ "keyTakeaways": "Insurance companies use tactics including recorded statements, insurer-selected medical exams, over-broad medical record requests, pre-existing condition blame, delays, and lowball offers. Bad-faith remedies run against your own insurer, not the other driver's: Georgia's O.C.G.A. § 33-4-6 gives a policyholder up to 50% of the loss or $5,000, whichever is greater, plus attorney's fees after a 60-day demand; South Carolina gives attorney's fees after a 90-day demand (S.C. Code § 38-59-40) and a bad-faith tort claim (Nichols v. State Farm). Both states' claims-handling rules (O.C.G.A. § 33-6-34; S.C. Code § 38-59-20) are enforced by the insurance regulator. Never give a recorded statement to the other driver's insurer or sign a blanket medical release without consulting an attorney.",
+ "faqs": [
+  {
+   "question": "Can I refuse to give a recorded statement?",
+   "answer": "Yes. You are not legally required to give a recorded statement to the at-fault driver's insurer. Politely decline and direct them to your attorney. Your own insurer is different — your policy usually requires you to cooperate with it, so let your lawyer handle its requests."
+  },
+  {
+   "question": "Do I have to attend an independent medical exam?",
+   "answer": "For pre-litigation claims against the other driver's insurer, no. If a lawsuit is filed, a judge can order one for good cause under Georgia's O.C.G.A. § 9-11-35 or, in cases with more than $100,000 in actual damages at stake, South Carolina's Rule 35 — and the order sets the time, place, scope and examiner. In South Carolina your own physician may attend; in Georgia your attorney asks the court to write conditions into the order. You are entitled to the examiner's written report on request."
+  },
+  {
+   "question": "Can the insurer access all my medical records?",
+   "answer": "HIPAA binds your health-care providers, not the auto insurer — auto insurers are not covered entities under the HIPAA Privacy Rule. A provider may release your records to an insurer only with a valid written authorization that says which records, to whom, for what purpose and until when (45 CFR 164.508), or under legal process once a case is in court — a court order, or a subpoena or discovery request with the notice or protective-order assurances in 45 CFR 164.512(e). So before suit the insurer gets only what you authorize; never sign a blanket authorization, and have your attorney send only the records relevant to your accident injuries."
+  },
+  {
+   "question": "What is a bad faith insurance denial?",
+   "answer": "Bad faith is a claim against your own insurer, not the other driver's. In Georgia it means a frivolous and unfounded refusal to pay a covered claim (Taylor v. GEICO, 2019); if your insurer refuses within 60 days of your written demand, O.C.G.A. § 33-4-6 adds a penalty of up to 50% of the loss or $5,000, whichever is greater, plus attorney's fees (up to 25% or $25,000 on uninsured-motorist claims under § 33-7-11(j)). In South Carolina a policyholder whose insurer refuses to pay for 90 days after demand without reasonable cause or in bad faith recovers attorney's fees (S.C. Code § 38-59-40) and can sue in tort for consequential and, for wilful or reckless conduct, punitive damages (Nichols v. State Farm), capped under S.C. Code § 15-32-530. South Carolina's § 38-59-20 lists the claims practices the Department of Insurance polices; it does not give you a lawsuit."
+  },
+  {
+   "question": "Should I accept the first settlement offer?",
+   "answer": "Almost never. A first offer is made before the full extent of your injuries is known, and a signed release ends the claim. Wait until you reach maximum medical improvement (MMI) and consult an attorney before accepting any offer."
+  },
+  {
+   "question": "How does hiring a lawyer change things?",
+   "answer": "Significantly. Insurance companies know a lawyer will hold them accountable and take the case to trial if necessary. We handle cases on contingency — you pay nothing unless we win."
+  }
+ ],
+ "metaDescription": ""
+}
