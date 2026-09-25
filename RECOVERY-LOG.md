@@ -1444,6 +1444,27 @@ identification, and changing it without confirming the registered entity name
 could make the notice inaccurate. Both left for the firm to decide. *(Also noted:
 the privacy policy exists twice, at `privacy-policy` and `privacy-policy-2`.)*
 
+### Stale place pages — decided 2026-09-25
+
+**Owner's approval, 2026-09-25:** retire the whole round in `docs/cull-evidence-2026-09-25.md`,
+keeping Brunswick. That is 75 URLs: 29 sub-municipal location pages and 46 local-SEO pipeline
+street/place posts (41 EN, 5 ES).
+
+It reverses two earlier calls, both made on 16-month totals: "the blog protection stands"
+(09-18, which kept every place post that had earned a click) and "the location hubs are
+legitimate" (09-19). The totals hid the collapse. The pipeline posts earned 82% of their 340
+clicks in May–June and 5 in the four weeks to 09-21; the town pages 81 in 16 months and 9
+recently. The CTR-at-position test is inconclusive (samples of 21 and 13 clicks), so the case is
+volume, trend and ratio, not refusal. Doorway ratio **29.49% → 22.83%**.
+
+Shape, as 09-18: a post goes to the practice pillar its slug names (`/es/` twin to the `/es/`
+pillar); a town page goes to its parent office page. Map in `roden_stale_place_urls()`; both
+scripts read it. **Pages are set to draft, not trashed** (see the trash-to-draft entry below).
+Pre-flight 2026-09-25: no published children; all 5 live Spanish twins in the batch; 52 links
+across 22 outside posts to relink; 0 meta references; no existing redirect points into the set;
+every target published. Pre-deploy dry run of both scripts, with the map function prepended:
+75/75 IDs, types, paths and statuses match.
+
 ### Retired pages moved from trash to draft — 2026-09-25
 
 **Owner's instruction, 2026-09-25.** Every batch so far *trashed* its pages, on the

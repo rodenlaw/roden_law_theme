@@ -1315,7 +1315,8 @@ function roden_phase1_removed_urls() {
         roden_zero_click_intersection_urls(),
         roden_zero_click_blog_urls(),
         roden_earning_intersection_urls(),
-        roden_root_city_page_urls()
+        roden_root_city_page_urls(),
+        roden_stale_place_urls()
     );
 }
 
@@ -1999,6 +2000,101 @@ function roden_root_city_page_urls() {
         '/greenville-sc-workers-compensation-lawyer/'  => '/practice-areas/workers-compensation-lawyers/',
         '/spartanburg-sc-car-accident-lawyer/'         => '/practice-areas/car-accident-lawyers/',
         '/spartanburg-sc-workers-compensation-lawyer/' => '/practice-areas/workers-compensation-lawyers/',
+    );
+}
+
+/**
+ * The last scaled place layer: 29 sub-municipal location pages and 46 posts from
+ * the local-SEO pipeline's street-and-neighbourhood output. Owner-approved
+ * 2026-09-25. Evidence: docs/cull-evidence-2026-09-25.md.
+ *
+ * The 09-18 cull kept every place page that had earned a click in 16 months.
+ * These all had, and the totals hid the collapse: the pipeline posts earned 82%
+ * of their 340 clicks in May-June and 5 in the four weeks to 2026-09-21; the
+ * town pages 9. Retiring them takes the doorway ratio from 29.49% to 22.83%.
+ * Brunswick is kept: it is the only page in either group earning now.
+ *
+ * A post goes to the practice pillar its slug names (/es/ twin to the /es/
+ * pillar), as on 09-18; a town page to its parent office page. The pages are
+ * set to DRAFT, not trashed, so they survive the 30-day purge.
+ */
+function roden_stale_place_urls() {
+    return array(
+        '/locations/georgia/darien/alma/'                                                                    => '/locations/georgia/darien/',
+        '/locations/georgia/darien/blackshear/'                                                              => '/locations/georgia/darien/',
+        '/locations/georgia/darien/folkston/'                                                                => '/locations/georgia/darien/',
+        '/locations/georgia/darien/hoboken/'                                                                 => '/locations/georgia/darien/',
+        '/locations/georgia/darien/jesup/'                                                                   => '/locations/georgia/darien/',
+        '/locations/georgia/darien/kingsland/'                                                               => '/locations/georgia/darien/',
+        '/locations/georgia/darien/nahunta/'                                                                 => '/locations/georgia/darien/',
+        '/locations/georgia/darien/waycross/'                                                                => '/locations/georgia/darien/',
+        '/locations/georgia/darien/woodbine/'                                                                => '/locations/georgia/darien/',
+        '/locations/georgia/savannah/bryan-county/'                                                          => '/locations/georgia/savannah/',
+        '/locations/georgia/savannah/hinesville/'                                                            => '/locations/georgia/savannah/',
+        '/locations/georgia/savannah/pooler/'                                                                => '/locations/georgia/savannah/',
+        '/locations/georgia/savannah/port-wentworth/'                                                        => '/locations/georgia/savannah/',
+        '/locations/georgia/savannah/statesboro/'                                                            => '/locations/georgia/savannah/',
+        '/locations/south-carolina/charleston/isle-of-palms/'                                                => '/locations/south-carolina/charleston/',
+        '/locations/south-carolina/charleston/james-island/'                                                 => '/locations/south-carolina/charleston/',
+        '/locations/south-carolina/charleston/mount-pleasant/'                                               => '/locations/south-carolina/charleston/',
+        '/locations/south-carolina/columbia/batesburg-leesville/'                                            => '/locations/south-carolina/columbia/',
+        '/locations/south-carolina/columbia/cayce/'                                                          => '/locations/south-carolina/columbia/',
+        '/locations/south-carolina/columbia/chapin/'                                                         => '/locations/south-carolina/columbia/',
+        '/locations/south-carolina/columbia/elgin/'                                                          => '/locations/south-carolina/columbia/',
+        '/locations/south-carolina/columbia/forest-acres/'                                                   => '/locations/south-carolina/columbia/',
+        '/locations/south-carolina/columbia/west-columbia/'                                                  => '/locations/south-carolina/columbia/',
+        '/locations/south-carolina/myrtle-beach/andrews/'                                                    => '/locations/south-carolina/myrtle-beach/',
+        '/locations/south-carolina/myrtle-beach/conway/'                                                     => '/locations/south-carolina/myrtle-beach/',
+        '/locations/south-carolina/myrtle-beach/georgetown/'                                                 => '/locations/south-carolina/myrtle-beach/',
+        '/locations/south-carolina/myrtle-beach/surfside-beach/'                                             => '/locations/south-carolina/myrtle-beach/',
+        '/locations/south-carolina/north-charleston/goose-creek/'                                            => '/locations/south-carolina/north-charleston/',
+        '/locations/south-carolina/north-charleston/summerville/'                                            => '/locations/south-carolina/north-charleston/',
+        '/blog/atlantic-coastal-highway-us-17-rideshare-uber-lyft-crash-savannah-intermodal-transit-center/' => '/practice-areas/car-accident-lawyers/',
+        '/blog/boys-estate-glynn-county-best-car-accident-lawyer/'                                           => '/practice-areas/car-accident-lawyers/',
+        '/blog/cayce-12th-street-uninsured-motorist-lawyer/'                                                 => '/practice-areas/car-accident-lawyers/',
+        '/blog/columbia-airport-expressway-us-378-truck-accident-springdale-lexington-county/'               => '/practice-areas/truck-accident-lawyers/',
+        '/blog/credit-one-stadium-event-day-crashes-daniel-island-beekman-street/'                           => '/practice-areas/car-accident-lawyers/',
+        '/blog/daniel-island-i-526-wando-bridge-truck-accident-berkeley-county/'                             => '/practice-areas/truck-accident-lawyers/',
+        '/blog/darien-river-boating-accident-lawyer/'                                                        => '/practice-areas/boating-accident-lawyers/',
+        '/blog/dog-bite-surfside-beach-29575/'                                                               => '/practice-areas/dog-bite-lawyers/',
+        '/blog/drunk-driver-crash-south-kings-highway-us-17-business-surfside-beach-29575/'                  => '/practice-areas/car-accident-lawyers/',
+        '/blog/eastern-wharf-harbor-street-electric-scooter-accident-lawyer/'                                => '/practice-areas/electric-scooter-accident-lawyers/',
+        '/blog/eastern-wharf-savannah-pedestrian-bike-accidents/'                                            => '/practice-areas/pedestrian-accident-lawyers/',
+        '/blog/eulonia-us-17-ocean-highway-rideshare-uber-accident-lawyer-mcintosh-county/'                  => '/practice-areas/car-accident-lawyers/',
+        '/blog/garden-city-eden-loop-truck-accident-lawyer/'                                                 => '/practice-areas/truck-accident-lawyers/',
+        '/blog/garden-city-ga-21-augusta-road-car-accident-lawyer/'                                          => '/practice-areas/car-accident-lawyers/',
+        '/blog/hanahan-murray-avenue-highland-park-bicycle-accident-lawyer/'                                 => '/practice-areas/bicycle-accident-lawyers/',
+        '/blog/hit-and-run-drunk-driver-crashes-ashley-river-road-sc-61-west-ashley-greenwood-park/'         => '/practice-areas/car-accident-lawyers/',
+        '/blog/i-16-port-freight-truck-accident-garden-city-savannah/'                                       => '/practice-areas/truck-accident-lawyers/',
+        '/blog/i-526-mount-pleasant-wando-bridge-accident/'                                                  => '/practice-areas/car-accident-lawyers/',
+        '/blog/i-77-truck-accident-northeast-columbia-richland-county/'                                      => '/practice-areas/truck-accident-lawyers/',
+        '/blog/international-boulevard-airport-rideshare-uber-lyft-crash-north-charleston/'                  => '/practice-areas/car-accident-lawyers/',
+        '/blog/litchfield-beach-pawleys-island-us-17-car-accident-georgetown-county/'                        => '/practice-areas/car-accident-lawyers/',
+        '/blog/litchfield-pawleys-island-golf-cart-accident-lawyer-georgetown-county/'                       => '/practice-areas/golf-cart-accident-lawyers/',
+        '/blog/mcintosh-county-drunk-driver-accident-lawyer/'                                                => '/practice-areas/car-accident-lawyers/',
+        '/blog/motorcycle-accident-i-95-glynn-county-brunswick-darien/'                                      => '/practice-areas/motorcycle-accident-lawyers/',
+        '/blog/mount-pleasant-johnnie-dodds-us-17-uninsured-motorist-lawyer/'                                => '/practice-areas/car-accident-lawyers/',
+        '/blog/mount-pleasant-johnnie-dodds-us-17-wrongful-death-car-accident-lawyer/'                       => '/practice-areas/wrongful-death-lawyers/',
+        '/blog/mount-pleasant-mark-clark-expressway-i-526-motorcycle-accident-lawyer/'                       => '/practice-areas/motorcycle-accident-lawyers/',
+        '/blog/n-lake-drive-us-17-business-best-car-accident-lawyer/'                                        => '/practice-areas/car-accident-lawyers/',
+        '/blog/north-rhett-avenue-truck-accident-hanahan-berkeley-county/'                                   => '/practice-areas/truck-accident-lawyers/',
+        '/blog/old-fort-jackson-savannah-fatal-truck-accident-lawyer/'                                       => '/practice-areas/truck-accident-lawyers/',
+        '/blog/pedestrian-accident-dorchester-road-school-zone-29418-north-charleston/'                      => '/practice-areas/pedestrian-accident-lawyers/',
+        '/blog/rideshare-accident-i-26-tenmile-north-charleston/'                                            => '/practice-areas/car-accident-lawyers/',
+        '/blog/rifle-range-road-mount-pleasant-car-accident-heritage-park-west/'                             => '/practice-areas/car-accident-lawyers/',
+        '/blog/savannah-veterans-parkway-car-accident-lawyer/'                                               => '/practice-areas/car-accident-lawyers/',
+        '/blog/south-kings-highway-us-17-business-underinsured-motorist-lawyer/'                             => '/practice-areas/car-accident-lawyers/',
+        '/blog/st-andrews-road-widewater-18-wheeler-accident-lawyer-richland-county/'                        => '/practice-areas/truck-accident-lawyers/',
+        '/blog/sunset-boulevard-us-378-lexington-medical-center-accident/'                                   => '/practice-areas/car-accident-lawyers/',
+        '/blog/surfside-beach-golf-colony-golf-cart-accident-lawyer/'                                        => '/practice-areas/golf-cart-accident-lawyers/',
+        '/blog/us-17-i-95-darien-wrongful-death-mcintosh-county/'                                            => '/practice-areas/wrongful-death-lawyers/',
+        '/blog/us-17-truck-accident-broadfield-glynn-county/'                                                => '/practice-areas/truck-accident-lawyers/',
+        '/blog/yamacraw-village-pedestrian-accident-lawyer/'                                                 => '/practice-areas/pedestrian-accident-lawyers/',
+        '/es/blog/boys-estate-glynn-county-best-car-accident-lawyer/'                                        => '/es/practice-areas/car-accident-lawyers/',
+        '/es/blog/eastern-wharf-harbor-street-electric-scooter-accident-lawyer/'                             => '/es/practice-areas/electric-scooter-accident-lawyers/',
+        '/es/blog/eulonia-us-17-ocean-highway-rideshare-uber-accident-lawyer-mcintosh-county/'               => '/es/practice-areas/car-accident-lawyers/',
+        '/es/blog/n-lake-drive-us-17-business-best-car-accident-lawyer/'                                     => '/es/practice-areas/car-accident-lawyers/',
+        '/es/blog/old-fort-jackson-savannah-fatal-truck-accident-lawyer/'                                    => '/es/practice-areas/truck-accident-lawyers/',
     );
 }
 
