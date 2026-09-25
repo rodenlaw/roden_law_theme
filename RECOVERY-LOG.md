@@ -655,6 +655,7 @@ into 8 city-tier towns and 109 nested municipalities; see the recommendation in
 | 2026-09-18 | **Zero-click** intersections (129) + sub-municipal posts (60) | 1,217 | 1,028 | 189 | **COMPLETE.** Redirects deployed (#142), relink applied (263 links, 120 posts, `post_modified` preserved), 189 posts trashed, caches flushed. Verified after deletion: 189/189 flat single-hop 301 → 200, 93/93 EN nested forms likewise; the ES nested form never existed (404 on a surviving ES intersection too, zero GSC rows). practice_area sitemap 405 → 276, post 486 → 426. Live JSON-LD guard PASS. Backups: `zero-click-relink-2026-09-18.json`, `zero-click-pages-2026-09-18.json`. |
 | 2026-09-19 | **The last 47** intersections (rule 6 closed) | 1,028 | 981 | 47 | **COMPLETE.** Redirects deployed (#143), relink applied (317 links, 231 posts, `post_modified` preserved), 47 posts trashed, caches flushed. Verified after deletion: 47/47 flat and 44/44 EN nested single-hop 301 → 200; the two Spanish twins #142 had broken now redirect in one hop. practice_area sitemap 276 → 229. Live JSON-LD guard PASS. No published page shares a slug with the 47; none misroutes. Backups: `earning-intersections-relink-2026-09-19.json`, `earning-intersections-2026-09-19.json`. |
 | 2026-09-19 | **Six root city pages** (Greenville, Spartanburg, Florence) | 981 | 975 | 6 | **COMPLETE.** Redirects deployed (#144), relink a confirmed no-op (0 links), 6 pages trashed, caches flushed. Verified after deletion: 6/6 single-hop 301 → 200; page sitemap 46 → 40. Google Ads clear across all four accounts. Backup: `root-city-pages-2026-09-19.json`. |
+| 2026-09-25 | **Case results** folded into one filterable page | 980 | 824 | 156 | **COMPLETE.** Singles 301 to `/case-results/#{slug}` (#146); posts kept as the page's data, none trashed. Verified: 423/427 old URLs (singles, legacy, old-site) single-hop to a live anchor, 4 malformed legacy slugs to the page, 0 failures; `case_result` sitemap removed. Counts are sitemap URLs, not the 08-21 inventory. |
 
 ### Batch (c) — two things the plan did not predict
 
@@ -1480,6 +1481,19 @@ Shape:
 - The posts are **not** trashed: they are the page's data and feed the homepage, about,
   attorney and location strips. Nothing to relink: 0 posts link a single result in
   content or meta.
+
+**Applied 2026-09-25.** PR #146 merged (`9113cc7`), deploy run 36181718900 succeeded,
+both caches flushed. Verified live, sequentially with cache-busting query strings:
+- 156/156 `/case-results/{slug}/`, 152/156 `/blog/case-result/{slug}/` and 115/115 old-site
+  `/case-result/{slug}/` 301 in one hop to an anchor that exists on the page. The 4 malformed
+  legacy slugs land on `/case-results/`. Zero failures.
+- `/case-results/` returns 200 with 156 `<li id>` anchors. The sitemap index no longer lists
+  `case_result`; that sub-sitemap is 404; **sitemap 980 → 824 URLs**.
+- About, attorney and location result strips link anchors, with 0 links left to singles.
+  `llms.txt` regenerated with anchor links.
+- Browser: an old single URL lands on its anchor, highlighted. Truck Accident shows 25;
+  adding $1M+ shows 1 ($27M); adding Verdict shows 0 with the empty message; reset shows 156.
+- Live JSON-LD guard PASS. `content/meta.json` regenerated with no diff; no post data changed.
 
 ### Batch (f) — the duplicated case-result URLs
 
