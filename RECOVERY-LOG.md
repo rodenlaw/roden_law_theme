@@ -1446,6 +1446,25 @@ identification, and changing it without confirming the registered entity name
 could make the notice inaccurate. Both left for the firm to decide. *(Also noted:
 the privacy policy exists twice, at `privacy-policy` and `privacy-policy-2`.)*
 
+### Office count corrected to six — 2026-09-25
+
+**Owner, 2026-09-25: "there are 6 offices"** (Savannah, Darien, Charleston, North Charleston,
+Columbia, Myrtle Beach; `inc/firm-data.php` already held 6). The site said 5 in seven places:
+- **Theme:** the "Results at a Glance" stats block, "Combined attorney experience across 5
+  office locations", on every pillar; the practice-area archive, "We serve clients from 5
+  locations"; the theme description. Both front-end strings now take the count from
+  `trust_stats['offices']`, and the Spanish is updated with the same placeholder. `es_ES.mo`
+  was recompiled locally; the catalog is still 576 entries, with only those two swapped.
+- **Content:** four post bodies said "five offices" (1816, 1703, 1712, 1715). Post 1712 also
+  listed the five by name and left out North Charleston; it now lists all six. Applied by
+  `bin/fix-office-count.php` with exact-match fragments, direct column write and read-back.
+  Backup: `docs/backups/office-count-2026-09-25.json`.
+- A sweep of every published post body, meta value, excerpt and option found no other
+  instance, in English or Spanish.
+
+Still open on the same block: its "Source: … updated <month>" line prints the current month
+on every render, so it always claims to be fresh.
+
 ### Zero-click scenario pages — decided 2026-09-25
 
 **Owner's instruction, 2026-09-25:** "run step 2 and retire the 64 pages". That is step 2 of
