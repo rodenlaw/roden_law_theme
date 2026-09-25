@@ -1445,6 +1445,24 @@ identification, and changing it without confirming the registered entity name
 could make the notice inaccurate. Both left for the firm to decide. *(Also noted:
 the privacy policy exists twice, at `privacy-policy` and `privacy-policy-2`.)*
 
+### Zero-click scenario pages — decided 2026-09-25
+
+**Owner's instruction, 2026-09-25:** "run step 2 and retire the 64 pages". That is step 2 of
+`docs/scenario-pages-plan-2026-09-25.md`. 64 of the 182 practice-area scenario pages have 0
+clicks in 16 months on 40,587 impressions, all published in the March 2026 rebuild. The two
+zero-click pages near page one stay (`jogger-runner-accident`, `medical-malpractice-death`).
+Each retired page goes to its pillar. Doorway ratio after: **171 / 685 = 24.96%**, which leaves
+no headroom for retiring any further non-place page.
+
+Pre-flight 2026-09-25: all 64 published, no children, no Spanish twins; 35 linked from 78
+posts, rewritten flat and nested (85 links across 55 posts, dry run); 54 `_roden_see_also`
+references, which resolve through the map at render (`roden_resolve_see_also_url()`), so none is
+rewritten. Two existing legacy redirects pointed INTO the set
+(`/blog/amazon-fedex-delivery-crashes/` → delivery-vehicle-accident,
+`/workers-compensation-lawyers/warehouse-logistics-injury/` →
+warehouse-distribution-injury). Both are repointed straight to the pillar, so neither becomes a
+chain. Map in `roden_zero_click_scenario_urls()`. Pages go to draft with `_roden_retired`.
+
 ### Stale place pages — decided 2026-09-25
 
 **Owner's approval, 2026-09-25:** retire the whole round in `docs/cull-evidence-2026-09-25.md`,

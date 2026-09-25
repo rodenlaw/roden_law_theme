@@ -591,7 +591,7 @@ function roden_get_legacy_redirect_map() {
         '/blog/charlestons-crash-hotspots-to-avoid-in-2025-2/'                        => '/resources/dangerous-roads-north-charleston/',  // 53 impr
         '/blog/legal-options-after-rideshare-crash-in-charleston/'                    => '/blog/dealing-with-uber-lyft-accident/',  // 1,648 impr
         '/blog/stomach-pain-after-a-car-accident-in-charleston/'                      => '/blog/how-delayed-injuries-could-impact-your-charleston-car-crash-claim/',  // 1,558 impr
-        '/blog/amazon-fedex-delivery-crashes/'                                        => '/car-accident-lawyers/delivery-vehicle-accident/',  // 1,209 impr
+        '/blog/amazon-fedex-delivery-crashes/'                                        => '/practice-areas/car-accident-lawyers/', // was delivery-vehicle-accident, retired 2026-09-25  // 1,209 impr
         '/blog/overloaded-semi-trucks-accidents-on-charleston-highways/'              => '/truck-accident-lawyers/overloaded-improperly-loaded-cargo/',  // 190 impr
         '/blog/why-federal-rules-matter-in-your-port-of-charleston-truck-accident/'   => '/blog/fmcsa-violations-truck-accident-claims/',  // 138 impr
         '/blog/why-federal-rules-matter-in-your-port-of-charleston-truck-accident-2/' => '/blog/fmcsa-violations-truck-accident-claims/',  // 33 impr
@@ -669,7 +669,7 @@ function roden_get_legacy_redirect_map() {
         // not drop content.
         // ══════════════════════════════════════════════════════════════
 
-        '/workers-compensation-lawyers/warehouse-logistics-injury/' => '/workers-compensation-lawyers/warehouse-distribution-injury/',
+        '/workers-compensation-lawyers/warehouse-logistics-injury/' => '/practice-areas/workers-compensation-lawyers/', // was warehouse-distribution-injury, retired 2026-09-25
 
         // ══════════════════════════════════════════════════════════════
         // CATEGORY 17b: duplicate Savannah neighborhoods — 2026-07-31
@@ -1316,7 +1316,8 @@ function roden_phase1_removed_urls() {
         roden_zero_click_blog_urls(),
         roden_earning_intersection_urls(),
         roden_root_city_page_urls(),
-        roden_stale_place_urls()
+        roden_stale_place_urls(),
+        roden_zero_click_scenario_urls()
     );
 }
 
@@ -2095,6 +2096,88 @@ function roden_stale_place_urls() {
         '/es/blog/eulonia-us-17-ocean-highway-rideshare-uber-accident-lawyer-mcintosh-county/'               => '/es/practice-areas/car-accident-lawyers/',
         '/es/blog/n-lake-drive-us-17-business-best-car-accident-lawyer/'                                     => '/es/practice-areas/car-accident-lawyers/',
         '/es/blog/old-fort-jackson-savannah-fatal-truck-accident-lawyer/'                                    => '/es/practice-areas/truck-accident-lawyers/',
+    );
+}
+
+/**
+ * Practice-area scenario pages that never earned a click. Owner-approved
+ * 2026-09-25, step 2 of docs/scenario-pages-plan-2026-09-25.md.
+ *
+ * 64 of the 182 /<practice>-lawyers/<scenario>/ pages: 0 clicks in 16 months on
+ * 40,587 impressions, every one published in the March 2026 rebuild. Two
+ * zero-click pages near page one are kept (jogger-runner-accident at 13.9,
+ * medical-malpractice-death at 13.0). Each goes to its pillar. Doorway ratio
+ * after: 171 / 685 = 24.96%, which leaves no room to retire any other non-place
+ * page without retiring place pages first.
+ *
+ * Set to DRAFT and marked _roden_retired, not trashed.
+ */
+function roden_zero_click_scenario_urls() {
+    return array(
+        '/bicycle-accident-lawyers/distracted-driver-bicycle-accident/'       => '/practice-areas/bicycle-accident-lawyers/',
+        '/bicycle-accident-lawyers/hit-and-run-bicycle-accident/'             => '/practice-areas/bicycle-accident-lawyers/',
+        '/bicycle-accident-lawyers/road-hazard-bicycle-crash/'                => '/practice-areas/bicycle-accident-lawyers/',
+        '/boating-accident-lawyers/commercial-vessel-accident/'               => '/practice-areas/boating-accident-lawyers/',
+        '/boating-accident-lawyers/jet-ski-personal-watercraft/'              => '/practice-areas/boating-accident-lawyers/',
+        '/boating-accident-lawyers/kayak-canoe-accident/'                     => '/practice-areas/boating-accident-lawyers/',
+        '/boating-accident-lawyers/sailboat-accident/'                        => '/practice-areas/boating-accident-lawyers/',
+        '/boating-accident-lawyers/speedboat-powerboat-collision/'            => '/practice-areas/boating-accident-lawyers/',
+        '/brain-injury-lawyers/anoxic-hypoxic-brain-injury/'                  => '/practice-areas/brain-injury-lawyers/',
+        '/brain-injury-lawyers/birth-related-brain-injury/'                   => '/practice-areas/brain-injury-lawyers/',
+        '/brain-injury-lawyers/penetrating-brain-injury/'                     => '/practice-areas/brain-injury-lawyers/',
+        '/brain-injury-lawyers/severe-traumatic-brain-injury/'                => '/practice-areas/brain-injury-lawyers/',
+        '/burn-injury-lawyers/defective-product-burn/'                        => '/practice-areas/burn-injury-lawyers/',
+        '/burn-injury-lawyers/workplace-burn-injury/'                         => '/practice-areas/burn-injury-lawyers/',
+        '/car-accident-lawyers/construction-vehicle-accident/'                => '/practice-areas/car-accident-lawyers/',
+        '/car-accident-lawyers/delivery-vehicle-accident/'                    => '/practice-areas/car-accident-lawyers/',
+        '/car-accident-lawyers/distracted-driving-accident/'                  => '/practice-areas/car-accident-lawyers/',
+        '/car-accident-lawyers/drunk-driver-accident/'                        => '/practice-areas/car-accident-lawyers/',
+        '/car-accident-lawyers/hit-and-run-accident/'                         => '/practice-areas/car-accident-lawyers/',
+        '/car-accident-lawyers/multi-vehicle-pileup/'                         => '/practice-areas/car-accident-lawyers/',
+        '/car-accident-lawyers/service-vehicle-accident/'                     => '/practice-areas/car-accident-lawyers/',
+        '/car-accident-lawyers/t-bone-accident/'                              => '/practice-areas/car-accident-lawyers/',
+        '/car-accident-lawyers/uber-lyft-accident/'                           => '/practice-areas/car-accident-lawyers/',
+        '/construction-accident-lawyers/crane-heavy-equipment-accident/'      => '/practice-areas/construction-accident-lawyers/',
+        '/construction-accident-lawyers/falling-object-injury/'               => '/practice-areas/construction-accident-lawyers/',
+        '/construction-accident-lawyers/roofing-accident/'                    => '/practice-areas/construction-accident-lawyers/',
+        '/electric-scooter-accident-lawyers/road-hazard-escooter-crash/'      => '/practice-areas/electric-scooter-accident-lawyers/',
+        '/golf-cart-accident-lawyers/golf-cart-rollover/'                     => '/practice-areas/golf-cart-accident-lawyers/',
+        '/maritime-injury-lawyers/commercial-fishing-injury/'                 => '/practice-areas/maritime-injury-lawyers/',
+        '/maritime-injury-lawyers/jones-act-seaman-claim/'                    => '/practice-areas/maritime-injury-lawyers/',
+        '/motorcycle-accident-lawyers/drunk-driver-motorcycle-accident/'      => '/practice-areas/motorcycle-accident-lawyers/',
+        '/motorcycle-accident-lawyers/head-on-motorcycle-collision/'          => '/practice-areas/motorcycle-accident-lawyers/',
+        '/motorcycle-accident-lawyers/intersection-motorcycle-accident/'      => '/practice-areas/motorcycle-accident-lawyers/',
+        '/motorcycle-accident-lawyers/left-turn-accident/'                    => '/practice-areas/motorcycle-accident-lawyers/',
+        '/motorcycle-accident-lawyers/rear-end-motorcycle-accident/'          => '/practice-areas/motorcycle-accident-lawyers/',
+        '/pedestrian-accident-lawyers/crosswalk-accident/'                    => '/practice-areas/pedestrian-accident-lawyers/',
+        '/pedestrian-accident-lawyers/distracted-driver-pedestrian-accident/' => '/practice-areas/pedestrian-accident-lawyers/',
+        '/pedestrian-accident-lawyers/drunk-driver-pedestrian-accident/'      => '/practice-areas/pedestrian-accident-lawyers/',
+        '/pedestrian-accident-lawyers/intersection-pedestrian-accident/'      => '/practice-areas/pedestrian-accident-lawyers/',
+        '/premises-liability-lawyers/apartment-complex-injury/'               => '/practice-areas/premises-liability-lawyers/',
+        '/premises-liability-lawyers/restaurant-hotel-injury/'                => '/practice-areas/premises-liability-lawyers/',
+        '/product-liability-lawyers/defective-auto-parts/'                    => '/practice-areas/product-liability-lawyers/',
+        '/product-liability-lawyers/defective-childrens-product/'             => '/practice-areas/product-liability-lawyers/',
+        '/slip-and-fall-lawyers/parking-lot-fall/'                            => '/practice-areas/slip-and-fall-lawyers/',
+        '/slip-and-fall-lawyers/wet-floor-accident/'                          => '/practice-areas/slip-and-fall-lawyers/',
+        '/slip-and-fall-lawyers/workplace-slip-and-fall/'                     => '/practice-areas/slip-and-fall-lawyers/',
+        '/spinal-cord-injury-lawyers/complete-spinal-cord-injury/'            => '/practice-areas/spinal-cord-injury-lawyers/',
+        '/spinal-cord-injury-lawyers/herniated-ruptured-disc/'                => '/practice-areas/spinal-cord-injury-lawyers/',
+        '/spinal-cord-injury-lawyers/incomplete-spinal-cord-injury/'          => '/practice-areas/spinal-cord-injury-lawyers/',
+        '/spinal-cord-injury-lawyers/tetraplegia-quadriplegia/'               => '/practice-areas/spinal-cord-injury-lawyers/',
+        '/truck-accident-lawyers/18-wheeler-semi-truck-accident/'             => '/practice-areas/truck-accident-lawyers/',
+        '/truck-accident-lawyers/brake-failure-accident/'                     => '/practice-areas/truck-accident-lawyers/',
+        '/truck-accident-lawyers/cement-truck-accident/'                      => '/practice-areas/truck-accident-lawyers/',
+        '/truck-accident-lawyers/commercial-van-delivery-truck-accident/'     => '/practice-areas/truck-accident-lawyers/',
+        '/truck-accident-lawyers/fatigued-trucker-accident/'                  => '/practice-areas/truck-accident-lawyers/',
+        '/truck-accident-lawyers/hazardous-materials-accident/'               => '/practice-areas/truck-accident-lawyers/',
+        '/truck-accident-lawyers/underride-override-accident/'                => '/practice-areas/truck-accident-lawyers/',
+        '/workers-compensation-lawyers/construction-worker-injury/'           => '/practice-areas/workers-compensation-lawyers/',
+        '/workers-compensation-lawyers/factory-manufacturing-injury/'         => '/practice-areas/workers-compensation-lawyers/',
+        '/workers-compensation-lawyers/fatal-workplace-accident/'             => '/practice-areas/workers-compensation-lawyers/',
+        '/workers-compensation-lawyers/port-worker-injury/'                   => '/practice-areas/workers-compensation-lawyers/',
+        '/workers-compensation-lawyers/warehouse-distribution-injury/'        => '/practice-areas/workers-compensation-lawyers/',
+        '/wrongful-death-lawyers/defective-product-death/'                    => '/practice-areas/wrongful-death-lawyers/',
+        '/wrongful-death-lawyers/fatal-truck-accident/'                       => '/practice-areas/wrongful-death-lawyers/',
     );
 }
 
