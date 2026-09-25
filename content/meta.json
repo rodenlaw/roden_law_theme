@@ -5766,11 +5766,11 @@
             "title": "Statute of Limitations for Personal Injury Claims in Georgia and South Carolina",
             "excerpt": "How long you have to file a personal injury lawsuit in Georgia and South Carolina, plus the exceptions that shorten or extend the deadline.",
             "meta": {
-                "_roden_author_attorney": "Eric Roden",
+                "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "What is the statute of limitations for personal injury in Georgia?",
-                        "answer": "Georgia has a two-year statute of limitations for most personal injury claims under O.C.G.A. § 9-3-33. The clock generally starts on the date of the injury, though exceptions like the discovery rule may apply in certain cases."
+                        "answer": "Georgia has a two-year statute of limitations for most personal injury claims under O.C.G.A. § 9-3-33. The clock generally starts on the date of the injury; Georgia has no general discovery rule, but the deadline is paused for minors and people who are legally incompetent (O.C.G.A. § 9-3-90) and when the defendant's fraud hid the claim (O.C.G.A. § 9-3-96)."
                     },
                     {
                         "question": "What is the statute of limitations for personal injury in South Carolina?",
@@ -5782,7 +5782,7 @@
                     },
                     {
                         "question": "Are there exceptions that can extend the filing deadline?",
-                        "answer": "Yes. Both Georgia and South Carolina recognize tolling exceptions for minors, mentally incapacitated individuals, defendants who leave the state, and cases involving fraud or concealment. The discovery rule may also extend the deadline when injuries are not immediately apparent."
+                        "answer": "Yes. Both states pause the clock for minors and people who are legally incompetent, and when the defendant's fraud concealed the claim. South Carolina also has a discovery rule that starts the three years when you knew or should have known of the injury (S.C. Code § 15-3-535); Georgia does not. Georgia's tolling for a defendant who leaves the state rarely applies, because an out-of-state driver can still be served, and South Carolina's applies only when the defendant resides out of state or stays away a year or more (S.C. Code § 15-3-30)."
                     },
                     {
                         "question": "What is the deadline for filing a wrongful death claim?",
@@ -5790,11 +5790,11 @@
                     },
                     {
                         "question": "Do I need to file a special notice for claims against the government?",
-                        "answer": "Yes. Georgia requires an ante-litem notice within six months for municipal claims under O.C.G.A. § 36-33-5 and within 12 months for state claims. South Carolina requires no pre-suit notice, but the Tort Claims Act shortens the filing deadline to two years (S.C. Code § 15-78-110); filing a verified claim within one year is optional and extends it to three."
+                        "answer": "Yes. Georgia requires an ante-litem notice within six months for municipal claims under O.C.G.A. § 36-33-5 and within 12 months for county claims (O.C.G.A. § 36-11-1) and state claims. South Carolina requires no pre-suit notice, but the Tort Claims Act shortens the filing deadline to two years (S.C. Code § 15-78-110); filing a verified claim within one year is optional and extends it to three."
                     }
                 ],
-                "_roden_key_takeaways": "Georgia allows two years to file personal injury lawsuits under O.C.G.A. § 9-3-33, while South Carolina allows three years under S.C. Code § 15-3-530. Exceptions include tolling for minors, mental incapacity, and the discovery rule. Government claims run on shorter clocks — ante litem notice within six months for a Georgia city, and a two-year filing deadline under South Carolina's Tort Claims Act. Missing the deadline permanently bars recovery.",
-                "_roden_last_reviewed": "2026-08-31"
+                "_roden_key_takeaways": "Georgia allows two years to file personal injury lawsuits under O.C.G.A. § 9-3-33, while South Carolina allows three years under S.C. Code § 15-3-530. Exceptions include tolling for minors and mental incapacity in both states, and South Carolina's discovery rule; Georgia has no general discovery rule. Government claims run on shorter clocks — ante litem notice within six months for a Georgia city, and a two-year filing deadline under South Carolina's Tort Claims Act. Missing the deadline permanently bars recovery.",
+                "_roden_last_reviewed": "2026-09-25"
             }
         },
         "/blog/georgia-super-speeder-law/": {
@@ -9542,9 +9542,9 @@
             "type": "post",
             "status": "publish",
             "title": "What to Do If Your Personal Injury Claim Is Denied",
-            "excerpt": "A denied injury claim is not the end. How to read the denial letter, what to gather, and the appeal and bad faith routes available.",
+            "excerpt": "A denied injury claim is not the end. How to read the denial letter, what to gather, how to press for reconsideration, and when a regulatory complaint or a lawsuit is the next step.",
             "meta": {
-                "_roden_author_attorney": "Eric Roden",
+                "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "Why was my claim denied?",
@@ -9552,15 +9552,15 @@
                     },
                     {
                         "question": "Can I appeal a denied claim?",
-                        "answer": "Yes. Most insurers have an internal appeals process. Your attorney can submit additional evidence and challenge the reasoning. If the appeal fails, you can file a complaint with the state insurance commissioner or sue."
+                        "answer": "You can ask the insurer to reconsider — there is no formal appeal of a liability insurer's denial in Georgia or South Carolina, but a written request with new evidence that answers each stated reason can change the outcome. If it does not, you can complain to the state insurance regulator (the Office of the Commissioner of Insurance and Safety Fire in Georgia; the Department of Insurance in South Carolina) and, before the deadline runs, file suit against the at-fault party."
                     },
                     {
                         "question": "What is bad faith denial in Georgia?",
-                        "answer": "Under O.C.G.A. § 33-4-6, unreasonable denial allows recovery of the claim plus up to 50% in penalties and attorney fees. Georgia requires a 60-day demand letter before filing."
+                        "answer": "Georgia's bad-faith statute protects policyholders against their own insurer. Under O.C.G.A. § 33-4-6, if your insurer refuses in bad faith to pay a covered claim within 60 days of your written demand, it owes the claim plus a penalty of up to 50% of the loss or $5,000, whichever is greater, and your attorney's fees (on uninsured-motorist claims, up to 25% or $25,000 under § 33-7-11(j)). It does not let you sue the other driver's insurer for denying your claim."
                     },
                     {
                         "question": "What is bad faith denial in South Carolina?",
-                        "answer": "S.C. Code § 38-59-20 prohibits unreasonable denial, delay, or undervaluation. Remedies include claim value, consequential damages, and potentially punitive damages. No pre-suit demand is required."
+                        "answer": "South Carolina's improper-claim-practices statute, S.C. Code § 38-59-20, is enforced by the Department of Insurance and gives no private claim. A policyholder whose own insurer refuses to pay for 90 days after a demand, without reasonable cause or in bad faith, recovers attorney's fees under § 38-59-40, and under Nichols v. State Farm can sue for the bad-faith denial itself — consequential damages and, for willful or reckless conduct, punitive damages capped by § 15-32-530. South Carolina does not allow a bad-faith suit against the other driver's insurer."
                     },
                     {
                         "question": "How long do I have to file a lawsuit?",
@@ -9568,10 +9568,11 @@
                     },
                     {
                         "question": "Should I hire a lawyer after a denial?",
-                        "answer": "Absolutely. A denied claim is not the end. An attorney can identify the issue, gather evidence, file appeals, pursue bad faith claims, and take the case to trial. We handle denied claims on contingency — you pay nothing unless we recover."
+                        "answer": "Absolutely. A denied claim is not the end. An attorney can identify the issue, gather evidence, press the insurer to reconsider, bring a bad-faith claim against your own insurer where the facts support one, and take the case against the at-fault party to trial. We handle denied claims on contingency — you pay nothing unless we recover."
                     }
                 ],
-                "_roden_key_takeaways": "A denied claim is not the end. Steps include reviewing the denial letter, gathering evidence, filing appeals, bad faith complaints, or lawsuits. Georgia's bad faith statute (O.C.G.A. § 33-4-6) imposes penalties up to 50% plus attorney fees with a 60-day demand letter requirement. South Carolina's Act (S.C. Code § 38-59-20) requires no pre-suit demand. Georgia's 2-year SOL and South Carolina's 3-year SOL are not extended by a denial."
+                "_roden_key_takeaways": "A denied claim is not the end. Steps include reviewing the denial letter, gathering evidence, asking for reconsideration in writing, complaining to the state insurance regulator, and filing suit before the deadline. Bad-faith remedies run against your own insurer, not the other driver's: Georgia's O.C.G.A. § 33-4-6 gives a policyholder up to 50% of the loss or $5,000, whichever is greater, plus attorney's fees after a 60-day demand; South Carolina awards attorney's fees after a 90-day demand (S.C. Code § 38-59-40) and recognizes a bad-faith tort (Nichols v. State Farm). Georgia's 2-year and South Carolina's 3-year filing deadlines are not extended by a denial.",
+                "_roden_last_reviewed": "2026-09-25"
             }
         },
         "/blog/options-for-recovering-more-than-policy-limits/": {
@@ -13150,7 +13151,7 @@
                 "_roden_faqs": [
                     {
                         "question": "Is it illegal to wear headphones while driving in South Carolina?",
-                        "answer": "The rules around headphone and earbud use while driving are worth confirming before you rely on them, and enforcement differs from the position for hands-free systems built into a vehicle."
+                        "answer": "No. South Carolina has no statute that bans headphones or earbuds while driving. The state's hands-free law, S.C. Code § 56-5-3890 (effective September 1, 2025), prohibits holding a phone, texting and watching video, but expressly allows an earpiece for voice calls and listening to audio on a device you are not holding. Inside Charleston, police can still cite careless operation under City of Charleston Code § 19-178 if headphone use leads to unsafe driving, and headphone use can count against you in a comparative-fault claim."
                     },
                     {
                         "question": "What is the difference between headphones and my car's Bluetooth?",
@@ -13162,13 +13163,14 @@
                     },
                     {
                         "question": "Do the rules differ for truckers or delivery drivers?",
-                        "answer": "Commercial drivers are subject to their own federal regulations in addition to state rules, so a practice that goes unremarked for a private driver can put a commercial licence at real risk."
+                        "answer": "Commercial drivers are subject to federal rules in addition to state law: 49 C.F.R. § 392.80 bans texting and 49 C.F.R. § 392.82 bans hand-held phone use while driving a commercial motor vehicle, and a second conviction within three years brings a CDL disqualification of at least 60 days (49 C.F.R. § 383.51). Those rules do not name headphones, but many carriers prohibit them by policy, so a practice that goes unremarked for a private driver can put a commercial license at real risk."
                     },
                     {
                         "question": "What if a driver wearing headphones caused my crash?",
-                        "answer": "It supports the argument that they were not driving attentively. Witness observations and any admission at the scene are worth recording, since headphone use is not visible in a police report by default."
+                        "answer": "It supports the argument that they were not driving attentively, and because no statute bans headphones the claim is proven as ordinary negligence under South Carolina's comparative-fault rule. Photos, witness observations and any admission at the scene matter: the officer's TR-310 collision report can record 'distracted/inattention' as a contributing factor, but only if the officer observes it or is told, and the report itself is not admissible to prove negligence at trial."
                     }
-                ]
+                ],
+                "_roden_last_reviewed": "2026-09-25"
             }
         },
         "/blog/west-ashley-vs-downtown-charleston-driving-risks/": {

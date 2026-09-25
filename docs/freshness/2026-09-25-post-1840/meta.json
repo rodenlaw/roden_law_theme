@@ -1,0 +1,31 @@
+{
+ "excerpt": "How long you have to file a personal injury lawsuit in Georgia and South Carolina, plus the exceptions that shorten or extend the deadline.",
+ "keyTakeaways": "Georgia allows two years to file personal injury lawsuits under O.C.G.A. § 9-3-33, while South Carolina allows three years under S.C. Code § 15-3-530. Exceptions include tolling for minors and mental incapacity in both states, and South Carolina's discovery rule; Georgia has no general discovery rule. Government claims run on shorter clocks — ante litem notice within six months for a Georgia city, and a two-year filing deadline under South Carolina's Tort Claims Act. Missing the deadline permanently bars recovery.",
+ "faqs": [
+  {
+   "question": "What is the statute of limitations for personal injury in Georgia?",
+   "answer": "Georgia has a two-year statute of limitations for most personal injury claims under O.C.G.A. § 9-3-33. The clock generally starts on the date of the injury; Georgia has no general discovery rule, but the deadline is paused for minors and people who are legally incompetent (O.C.G.A. § 9-3-90) and when the defendant's fraud hid the claim (O.C.G.A. § 9-3-96)."
+  },
+  {
+   "question": "What is the statute of limitations for personal injury in South Carolina?",
+   "answer": "South Carolina allows three years from the date of injury to file a personal injury lawsuit under S.C. Code § 15-3-530. This applies to car accidents, slip and falls, and most other accident-related claims."
+  },
+  {
+   "question": "What happens if I miss the statute of limitations deadline?",
+   "answer": "If you miss the filing deadline, the court will almost certainly dismiss your case. You lose the right to pursue compensation through litigation, and insurance companies will refuse to negotiate because they know you cannot sue."
+  },
+  {
+   "question": "Are there exceptions that can extend the filing deadline?",
+   "answer": "Yes. Both states pause the clock for minors and people who are legally incompetent, and when the defendant's fraud concealed the claim. South Carolina also has a discovery rule that starts the three years when you knew or should have known of the injury (S.C. Code § 15-3-535); Georgia does not. Georgia's tolling for a defendant who leaves the state rarely applies, because an out-of-state driver can still be served, and South Carolina's applies only when the defendant resides out of state or stays away a year or more (S.C. Code § 15-3-30)."
+  },
+  {
+   "question": "What is the deadline for filing a wrongful death claim?",
+   "answer": "Wrongful death claims follow the same general deadlines: two years in Georgia and three years in South Carolina. The clock starts on the date of the person's death, not necessarily the date of the initial injury."
+  },
+  {
+   "question": "Do I need to file a special notice for claims against the government?",
+   "answer": "Yes. Georgia requires an ante-litem notice within six months for municipal claims under O.C.G.A. § 36-33-5 and within 12 months for county claims (O.C.G.A. § 36-11-1) and state claims. South Carolina requires no pre-suit notice, but the Tort Claims Act shortens the filing deadline to two years (S.C. Code § 15-78-110); filing a verified claim within one year is optional and extends it to three."
+  }
+ ],
+ "metaDescription": ""
+}

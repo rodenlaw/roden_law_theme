@@ -1,0 +1,498 @@
+{
+  "postId": 3386,
+  "slug": "wearing-headphones-while-driving-in-charleston",
+  "liveUrl": "https://rodenlaw.com/blog/wearing-headphones-while-driving-in-charleston/",
+  "jurisdiction": "SC",
+  "verifiedAt": "2026-09-25",
+  "reviewerByJurisdiction": "South Carolina-only post: reviewer must be Graeham C. Gillin (SC bar), never Eric Roden (GA only). Do not introduce Georgia law.",
+  "sourcingNote": "S.C. Code §§ 56-5-3890, 56-5-6160, 56-5-2920 and 56-1-720 were read verbatim on www.scstatehouse.gov (t56c005.php and t56c001.php downloaded 2026-09-25, HTTP 200); 2025 Act No. 40 (H.3276) was read at scstatehouse.gov/sess126_2025-2026/bills/3276.htm (ratified 2025-05-08, signed 2025-05-12, effective 2025-09-01). The City of Charleston Code of Ordinances (Municode, 'online content updated on September 3, 2026') was read in a Chrome tab: Chapter 19 Article VII carries Sec. 19-178 'Careless operation of a vehicle' and Sec. 19-182 'Unlawful use of a handheld electronic communication device' (Ord. 2013-107); an accessibility-tree search of the whole Chapter 19 table of contents found no section on headphones, earphones, headsets or earbuds. charleston-sc.gov answered HTTP 200 today and its Quick Links point to Municode for the code. NHTSA 'Distracted Driving in 2023' (DOT HS 813 703, April 2025) was downloaded from crashstats.nhtsa.dot.gov and read with pdftotext; the SCDPS Traffic Collision Fact Book 2024 Edition likewise. 49 CFR 392.80, 392.82 and 383.51 were read through the eCFR renderer API. Nelson v. Concrete Supply Co. and § 56-5-6160 / Samuel v. Mouzon are reused from facts-2586 and facts-4729 (verified 2026-09-23/24; CourtListener URL returns 202 today). Firm facts were checked against profiles/firm-facts.md and client.json. The post cites no statistic and one dollar figure ($100). The central finding: the post describes § 56-5-3890 in its pre-2025 form ('wireless electronic communications devices', 'primarily focuses on texting') — the section was rewritten by 2025 Act No. 40 into a hands-free law effective 2025-09-01 that expressly permits 'an earpiece or device worn on a wrist to conduct voice-based communication' and listening to audio content on a device that is not held, and that penalizes a first offense with a flat $100 fine and assesses two points only on a second or subsequent offense within three years. The 180-day warnings-only period (Act § 5) ran from 2025-09-01 and has ended, so citations now issue. The post's headline conclusion (no South Carolina statute bans headphones) remains correct. The Chrome tab used for Municode (tabId 2146875225) was found to be shared with a sibling run reading Justia and was left open rather than closed.",
+  "verifiedClaims": [
+    {
+      "surface": "body",
+      "claim": "While driving on South Carolina's busy Highway 17, many drivers wonder if wearing headphones or AirPods is legal.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "profiles/firm-facts.md (Charleston office major corridors: I-26, I-526, US-17)",
+      "sourceUrl": "/Users/brianhaas/Code/blue-sky-studio/client-rodenlaw-website/profiles/firm-facts.md",
+      "retrievedAt": "2026-09-25",
+      "note": "US-17 is a listed Charleston corridor. Optional: 'U.S. Highway 17' for precision."
+    },
+    {
+      "surface": "body",
+      "claim": "At Roden Law, our <a href=\"https://rodenlaw.com/practice-areas/car-accident-lawyers/\">Charleston car accident attorneys</a> can go over the specific details of your incident and determine what legal options you may have available. Schedule a free consultation to identify the validity of your potential case.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "profiles/firm-facts.md (Charleston, SC office, 127 King Street Suite 200); writer-profile.md (free consultation)",
+      "sourceUrl": "/Users/brianhaas/Code/blue-sky-studio/client-rodenlaw-website/profiles/firm-facts.md",
+      "retrievedAt": "2026-09-25",
+      "note": "Charleston office exists; free consultation is a profile fact."
+    },
+    {
+      "surface": "body",
+      "claim": "Request your FREE Consultation: <a href=\"tel:18447378587\">1-844-RESULTS</a> today.",
+      "verdict": "update",
+      "currentValue": "<a href=\"tel:+18447378587\">1-844-RESULTS</a>",
+      "sourceName": "profiles/writer-profile.md ('the toll-free line 1-844-RESULTS is tel:+18447378587'); live page carries tel:+18447378587 in its 12 template links and tel:18447378587 only in the two body links",
+      "sourceUrl": "/Users/brianhaas/Code/blue-sky-studio/client-rodenlaw-website/profiles/writer-profile.md",
+      "retrievedAt": "2026-09-25",
+      "note": "Visible text is correct and must not change; the href lacks the plus sign. Same defect in the closing CTA. 8447378587 spells RESULTS."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina does not have a specific law that directly prohibits wearing headphones or AirPods while driving in Charleston. However, this does not mean the practice is completely legal or without consequences.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code Title 56 Chapter 5 (Uniform Act Regulating Traffic on Highways), read in full for 'headphone', 'earphone', 'earbud', 'headset', 'earpiece' — the only hit is § 56-5-3890(B)(1), which permits an earpiece; City of Charleston Code Ch. 19 has no headphone section",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-25",
+      "note": "Correct. No state statute or Charleston ordinance bans headphones or earbuds. The second sentence is supported by Charleston City Code § 19-178 (careless operation) and by comparative fault."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina operates under broader distracted driving laws that could apply to headphone use. The law (SC Code Section 56-5-3890) prohibits drivers from using wireless electronic communications devices while driving a vehicle. Although this law primarily focuses on drivers texting, it also applies to any activity that can impair a driver’s ability to drive safely.",
+      "verdict": "update",
+      "currentValue": "South Carolina's distracted driving statute, S.C. Code § 56-5-3890, was rewritten by the South Carolina Hands-Free and Distracted Driving Act (2025 Act No. 40) effective September 1, 2025. It now prohibits a driver from holding or supporting a mobile electronic device with any part of the body, from reading, composing or transmitting text, and from watching video on the device. It expressly allows 'an earpiece or device worn on a wrist to conduct voice-based communication' and listening to audio-based content or using navigation so long as the device is not held. The statute says nothing about headphones or earbuds as such, and it does not reach 'any activity that can impair' driving — it lists specific prohibited acts.",
+      "sourceName": "S.C. Code § 56-5-3890(A)-(C), as amended by 2025 Act No. 40 (H.3276) § 2, eff. 2025-09-01",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-25",
+      "note": "Most consequential finding. The post's description ('wireless electronic communications devices', 'primarily focuses on drivers texting') is the 2014 version of the section. Verbatim today: '(B) While operating a motor vehicle on any public highway of this State, a person shall not: (1) hold or support, with any part of the body, a mobile electronic device. This provision does not prohibit the use of an earpiece or device worn on a wrist to conduct voice-based communication; (2) read, compose, or transmit any text ...; (3) watch motion including ... a video, movie, game, or video call'. (C)(6)(a) exempts 'navigation, listening to audio-based content, or obtaining traffic and road condition information in a manner that does not require the operator to type, provided that the device is not held'. The last sentence of the claim ('any activity that can impair') has no basis in the statute and must go. Use the strict citation form 'S.C. Code § 56-5-3890', not 'SC Code Section 56-5-3890'."
+    },
+    {
+      "surface": "body",
+      "claim": "Charleston police officers can cite drivers for \"careless operation\" if they determine headphone use is preventing safe vehicle operation. This falls under South Carolina's broader statutes regarding negligent or reckless driving.",
+      "verdict": "update",
+      "currentValue": "Within the city limits, Charleston police can cite a driver under City of Charleston Code § 19-178, 'Careless operation of a vehicle', which makes it unlawful 'to operate any vehicle without care and caution and full regard for the safety of persons and property'. That is a city ordinance, not a state statute. South Carolina's state-level offense is reckless driving, S.C. Code § 56-5-2920, which requires 'a wilful or wanton disregard for the safety of persons or property' — a higher bar than carelessness.",
+      "sourceName": "City of Charleston Code of Ordinances § 19-178 (Code 1975, § 33-32), Municode, online content updated 2026-09-03; S.C. Code § 56-5-2920",
+      "sourceUrl": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH19MOVETR_ARTVIIOPVEGE",
+      "retrievedAt": "2026-09-25",
+      "note": "'Careless operation' is real but it is the city ordinance § 19-178, not a state statute; the word 'careless' does not appear anywhere in S.C. Code Title 56 Chapter 5. The second sentence mis-attributes it to 'South Carolina's broader statutes'. Reckless driving § 56-5-2920 verbatim: 'Any person who drives any vehicle in such a manner as to indicate either a wilful or wanton disregard for the safety of persons or property is guilty of reckless driving' (fine $25-$200 or up to 30 days; 6 points under § 56-1-720)."
+    },
+    {
+      "surface": "body",
+      "claim": "While South Carolina does not explicitly ban <a href=\"https://rodenlaw.com/blog/trucking-regulations-and-accident-cases/\">truck drivers</a> from using headphones, they are subject to stricter regulations regarding their use. Federal Motor Carrier Safety Administration rules, company policies, and heightened professional standards restrict the use of headphones for truckers and delivery drivers.",
+      "verdict": "update",
+      "currentValue": "Federal Motor Carrier Safety Administration rules do not mention headphones; they prohibit texting while driving a commercial motor vehicle (49 CFR 392.80) and using a hand-held mobile telephone while driving a CMV (49 CFR 392.82), and they bar motor carriers from allowing or requiring either. Hands-free use, including an earpiece, is not prohibited by those sections. Company policies commonly go further.",
+      "sourceName": "49 CFR 392.80 (Prohibition against texting); 49 CFR 392.82 (Using a hand-held mobile telephone)",
+      "sourceUrl": "https://www.ecfr.gov/current/title-49/section-392.82",
+      "retrievedAt": "2026-09-25",
+      "note": "Verbatim § 392.82(a)(1): 'No driver shall use a hand-held mobile telephone while driving a CMV.' (a)(2): 'No motor carrier shall allow or require its drivers to use a hand-held mobile telephone while driving a CMV.' Neither section restricts headphones. 'Heightened professional standards' is rhetoric; harmless if kept. The internal link target was not re-checked today."
+    },
+    {
+      "surface": "body",
+      "claim": "DOT inspectors, who are common in Charleston’s port areas, may flag headphone use as a safety concern.",
+      "verdict": "drop",
+      "currentValue": "",
+      "sourceName": "No FMCSA or SC State Transport Police source located that treats headphone use as an inspection item",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "Roadside inspections (49 CFR Part 396 / CVSA criteria) examine the vehicle and driver credentials, hours of service and impairment; headphone use is not an inspection item in any primary source found. Unverifiable — drop the sentence."
+    },
+    {
+      "surface": "body",
+      "claim": "Some commercial drivers may use single-ear Bluetooth devices exclusively for work-related communication, but not for entertainment. This \"one-ear exception\" requires maintaining awareness of surrounding traffic sounds.",
+      "verdict": "update",
+      "currentValue": "Federal rules allow a commercial driver to use a hands-free earpiece for calls (49 CFR 392.82 bars only hand-held phone use), and South Carolina's § 56-5-3890(B)(1) likewise permits 'an earpiece ... to conduct voice-based communication'. Neither rule uses the phrase 'one-ear exception' or limits the earpiece to work calls.",
+      "sourceName": "49 CFR 392.82; S.C. Code § 56-5-3890(B)(1)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-25",
+      "note": "'One-ear exception' is not a term in the FMCSRs or the S.C. Code. Reword as a description of what hands-free rules allow rather than a named exception; drop the quotation marks and the 'exclusively for work-related communication' limit, which no rule imposes."
+    },
+    {
+      "surface": "body",
+      "claim": "Commercial insurance policies may deny claims involving driver distraction, and companies could face liability.",
+      "verdict": "update",
+      "currentValue": "A trucking company can be liable for its driver's negligence, and commercial policies vary in what they cover.",
+      "sourceName": "General law of employer liability; no primary source supports a general 'may deny claims involving driver distraction' statement",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "The employer-liability half is standard (respondeat superior); the insurance-denial half is unverifiable as a general statement and should be softened or removed."
+    },
+    {
+      "surface": "body",
+      "claim": "Additionally, drivers might face CDL suspension if cited for distracted driving while using headphones.",
+      "verdict": "update",
+      "currentValue": "A commercial driver convicted of texting or of using a hand-held mobile telephone while driving a CMV commits a 'serious traffic violation'; a second such conviction within three years brings a CDL disqualification of at least 60 days and a third at least 120 days (49 CFR 383.51, Table 2). Headphone use by itself is not a listed violation.",
+      "sourceName": "49 CFR 383.51(c), Table 2, items (9) and (10)",
+      "sourceUrl": "https://www.ecfr.gov/current/title-49/section-383.51",
+      "retrievedAt": "2026-09-25",
+      "note": "Table 2 to § 383.51: '(9) Violating a State or local law or ordinance on motor vehicle traffic control prohibiting texting while driving a CMV — 60 days [second conviction within 3 years] / 120 days [third]'; '(10) ... restricting or prohibiting the use of a hand-held mobile telephone while driving a CMV — 60 days / 120 days'. The disqualification attaches to a conviction under a state hands-free/texting law such as § 56-5-3890, not to wearing headphones. 'Suspension' should read 'disqualification'."
+    },
+    {
+      "surface": "body",
+      "claim": "Charleston’s busy port facilities, tourist areas, and narrow streets make navigating these roads for truck drivers complex.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Descriptive, non-legal, non-statistical",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "Local color; no factual claim to verify."
+    },
+    {
+      "surface": "body",
+      "claim": "Headphones and earbuds physically block your ear canals, significantly reducing your ability to hear ambient sounds.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Descriptive; consistent with the statutory distinction in § 56-5-3890(B)(1) between an earpiece for voice calls and a held device",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-25",
+      "note": "The Bluetooth-vs-headphones section is a safety description, not a legal claim. Note for the refresher: the statute does not distinguish car Bluetooth from headphones by name — it distinguishes a device that is held or supported by the body (prohibited) from one that is not (permitted), and it separately allows an earpiece for voice calls and 'equipment or services installed by the original manufacturer of the vehicle' ((C)(7)). The section may say so in one sentence but must not claim the statute bans headphones."
+    },
+    {
+      "surface": "body",
+      "claim": "Car Bluetooth systems utilize your vehicle’s speakers to distribute sound throughout the cabin, eliminating the need to block your ears.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Descriptive; § 56-5-3890(C)(7) exempts 'using equipment or services installed by the original manufacturer of the vehicle'",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-25",
+      "note": "Correct as a description. Optional: cite (C)(7) for the legal side of the distinction."
+    },
+    {
+      "surface": "body",
+      "claim": "Your ears provide vital environmental information that warns you when a vehicle is in your blind spot through engine and tire sounds.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Safety reasoning, no figure or law asserted",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "The 'Why headphones create dangerous conditions' section (auditory awareness, cognitive load, physical interference) makes no statistical or legal claim. NHTSA's distraction note does not measure headphone use specifically; do not attach a headphone-specific number to it."
+    },
+    {
+      "surface": "body",
+      "claim": "If you wear headphones while driving, it can lead to an increased attentional load. This is the amount of mental effort or focus your brain uses to process information at any given moment.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Definitional; consistent with NHTSA's description of distraction as diverting attention from the driving task",
+      "sourceUrl": "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813703",
+      "retrievedAt": "2026-09-25",
+      "note": "NHTSA DOT HS 813 703: 'Driver distraction is a specific type of driver inattention that occurs when drivers divert attention from the driving task to focus on some other activity.' Optional statistic if the refresher wants one: 'In 2023 there were 3,275 people killed and an estimated additional 324,819 people injured in motor vehicle traffic crashes involving distracted drivers' (8% of fatal crashes). Cosmetic: the body runs 'moment.Your' without a space."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina does not have laws that prevent drivers from wearing headphones. However, that does not mean that there are no legal consequences. Drivers may face repercussions if wearing headphones causes them to miss a stop sign, run a red light, or commit any other traffic violations.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code Title 56 Chapter 5 (no headphone provision); § 56-1-720 (disobedience of any official traffic control device: 4 points)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c001.php",
+      "retrievedAt": "2026-09-25",
+      "note": "Correct. The underlying violation (stop sign, red light) carries its own penalty and 4 points under § 56-1-720."
+    },
+    {
+      "surface": "body",
+      "claim": "A fine of up to $100 for a first offense",
+      "verdict": "update",
+      "currentValue": "Under the hands-free law, a first distracted-driving offense is a flat $100 fine, 'no part of which may be suspended'; a second or subsequent offense within three years is $200 plus two points. A separate moving violation caused by inattention — running a red light or stop sign — carries its own fine (up to $100 under the chapter's general penalty, § 56-5-6190, unless another penalty applies) and four points.",
+      "sourceName": "S.C. Code § 56-5-3890(D)(1)-(2); § 56-5-6190; § 56-1-720",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-25",
+      "note": "The post's only dollar figure. As a hands-free penalty it is wrong ('up to' — the statute fixes it at $100, none suspendable); as a general-penalty figure it happens to match § 56-5-6190 ('not more than one hundred dollars or by imprisonment for not more than thirty days'). Verbatim § 56-5-3890(D)(1): '(a) for a first offense, must be fined one hundred dollars, no part of which may be suspended; (b) for a second or subsequent offense, must be fined two hundred dollars, no part of which may be suspended, and must have two points assessed'. (D)(2): only offenses within three years count as priors. The penalties list should say which offense it is describing."
+    },
+    {
+      "surface": "body",
+      "claim": "Two points added to your driving record",
+      "verdict": "update",
+      "currentValue": "Two points are assessed only for a second or subsequent distracted-driving offense within three years under § 56-5-3890(D)(1)(b); a first offense carries no points. Running a red light or stop sign is four points (disobedience of any official traffic control device).",
+      "sourceName": "S.C. Code § 56-5-3890(D)(1)(b); § 56-1-720 schedule ('Distracted driving (second or subsequent offense) — 2'; 'Disobedience of any official traffic control device — 4')",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c001.php",
+      "retrievedAt": "2026-09-25",
+      "note": "The § 56-1-720 schedule was amended by 2025 Act No. 40 § 3 (eff. 2025-09-01) to add 'Distracted driving (second or subsequent offense) 2'. The post's flat 'two points' is wrong for a first offense and wrong for the red-light/stop-sign example it gives."
+    },
+    {
+      "surface": "body",
+      "claim": "Increased insurance premiums resulting from the citation",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Hedged consequence ('may face'); no figure asserted",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "Generic and hedged; no primary source needed for a 'may' statement. Do not add a percentage."
+    },
+    {
+      "surface": "body",
+      "claim": "In cases where you and the other party contributed to the crash, you may be found partially responsible. Under comparative negligence rules, the claim amounts would then be reduced based on your level of fault.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (S.C. 1991)",
+      "sourceUrl": "https://www.courtlistener.com/opinion/1265650/nelson-v-concrete-supply-company/",
+      "retrievedAt": "2026-09-25",
+      "note": "Reused from facts-2586/facts-4729. Nelson: a plaintiff 'may recover damages if his or her negligence is not greater than that of the defendant. The amount of the plaintiff's recovery shall be reduced in proportion to the amount of his or her negligence.' Optional: add the 51% bar and attribute to Nelson; never cite § 15-38-15 (profile rule)."
+    },
+    {
+      "surface": "body",
+      "claim": "While it is not illegal to wear headphones or AirPods in South Carolina, if it is determined that wearing them contributed to a crash in some way, it could make you more liable for any resulting damages.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code Title 56 Chapter 5 (no headphone ban); Nelson v. Concrete Supply Co. (comparative fault); § 56-5-6160",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-25",
+      "note": "Correct. Because no statute is violated by wearing headphones, negligence per se is not available on that fact alone; headphone use is ordinary-negligence evidence weighed under comparative fault. If the driver was also holding a phone, texting or watching video, a § 56-5-3890 violation can support negligence per se — but under § 56-5-6160 ('No evidence of conviction of any person for any violation of this chapter shall be admissible in any court in any civil action') the ticket or conviction itself does not come in; the conduct must be proven with witnesses and other evidence. Cosmetic: this heading is the only one wrapped in <strong> and lacks an id/TOC entry; the body also carries a stray data-teams span."
+    },
+    {
+      "surface": "body",
+      "claim": "Many newer vehicles automatically adjust the volume based on speed, allowing you to hear important sounds, such as sirens and horns.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Consumer-product description (speed-sensitive volume), non-legal, non-statistical",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "Hedged ('many'); no figure. Acceptable."
+    },
+    {
+      "surface": "body",
+      "claim": "Take photos/video that clearly show the other driver wearing headphones",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Practical advice; consistent with proving the conduct by evidence other than a citation (§ 56-5-6160)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-25",
+      "note": "Advice, not a factual claim. Keep the 'do not accuse' line."
+    },
+    {
+      "surface": "body",
+      "claim": "Inform an officer about the headphone use in the official police report. A police report is key evidence and could include the officer's observation if they notice the other driver wearing headphones.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "SCDPS TR-310 Traffic Collision Report Manual (contributing-factor codes 02 Distracted/Inattention, 19 Cell Phone, 20 Texting); S.C. Code § 56-5-1290",
+      "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/forms/TR-310%20Report%20Manual%20Revised%20May%202019.pdf",
+      "retrievedAt": "2026-09-25",
+      "note": "The officer records a primary contributing factor on the TR-310; 'Distracted/Inattention' is code 02, so headphone use can be reflected as distraction if the officer is told or observes it. Caution for the refresher: § 56-5-1290 provides that the collision report itself 'may [not] be evidence of the negligence or due care of either party at the trial', though officers may use it to refresh recollection — so 'key evidence' is true for the claim stage, not as a trial exhibit. Do not overstate."
+    },
+    {
+      "surface": "body",
+      "claim": "When you leave the car accident scene, seek medical attention even if you believe that you have minor injuries. You should also protect your legal rights by consulting with a licensed and trusted attorney.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Standard advice; S.C. Code § 15-3-530(5) (three-year limitation) if a deadline is added",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-09-25",
+      "note": "No deadline is stated in the post. If one is added it is three years from the crash, S.C. Code § 15-3-530 (verified in facts-1740 on 2026-09-24)."
+    },
+    {
+      "surface": "body",
+      "claim": "Although South Carolina does not ban headphone usage while driving, wearing wireless headsets or earbuds can become a distraction for drivers.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code Title 56 Chapter 5; § 56-5-3890(B)(1) (earpiece permitted)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-25",
+      "note": "Correct."
+    },
+    {
+      "surface": "body",
+      "claim": "At Roden, we have represented numerous Charleston drivers who faced challenging legal situations after a car accident.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "profiles/writer-profile.md (5,000+ cases handled; Charleston office)",
+      "sourceUrl": "/Users/brianhaas/Code/blue-sky-studio/client-rodenlaw-website/profiles/writer-profile.md",
+      "retrievedAt": "2026-09-25",
+      "note": "Non-numeric firm statement; consistent with the profile."
+    },
+    {
+      "surface": "body",
+      "claim": "<a href=\"https://rodenlaw.com/blog/contingency-fee-system/\" rel=\"\">We do not charge upfront fees</a> for our legal services. Our firm only receives payment if you do.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "profiles/writer-profile.md ('contingency fee, no fees unless we win')",
+      "sourceUrl": "/Users/brianhaas/Code/blue-sky-studio/client-rodenlaw-website/profiles/writer-profile.md",
+      "retrievedAt": "2026-09-25",
+      "note": "Matches the profile. The empty rel=\"\" attribute can be removed."
+    },
+    {
+      "surface": "body",
+      "claim": "Call our office to learn more about your legal options. <a href=\"tel:18447378587\">1-844-RESULTS</a>.",
+      "verdict": "update",
+      "currentValue": "<a href=\"tel:+18447378587\">1-844-RESULTS</a>. Optional: add the Charleston office line (843) 790-8999.",
+      "sourceName": "profiles/writer-profile.md; profiles/firm-facts.md (Charleston, SC phone '(843) 790-8999')",
+      "sourceUrl": "/Users/brianhaas/Code/blue-sky-studio/client-rodenlaw-website/profiles/firm-facts.md",
+      "retrievedAt": "2026-09-25",
+      "note": "Second occurrence of the missing plus sign. Keep the visible string."
+    },
+    {
+      "surface": "excerpt",
+      "claim": "Is it legal to drive wearing headphones or AirPods in Charleston? What South Carolina law says, and how it affects fault after a crash.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Consistent with the verified position (no ban; comparative fault)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-25",
+      "note": "Accurate framing. roden_schema_article() publishes this as the Article description."
+    },
+    {
+      "surface": "faq:0",
+      "claim": "The rules around headphone and earbud use while driving are worth confirming before you rely on them, and enforcement differs from the position for hands-free systems built into a vehicle.",
+      "verdict": "update",
+      "currentValue": "No. South Carolina has no statute that bans headphones or earbuds while driving. The state's hands-free law, S.C. Code § 56-5-3890 (effective September 1, 2025), prohibits holding a phone, texting and watching video, but expressly allows an earpiece for voice calls and listening to audio on a device you are not holding. Inside Charleston, police can still cite careless operation under City Code § 19-178 if headphone use leads to unsafe driving, and headphone use can count against you in a comparative-fault claim.",
+      "sourceName": "S.C. Code § 56-5-3890(B)(1), (C)(6)(a); City of Charleston Code § 19-178",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-25",
+      "note": "The current answer does not answer the question and renders into FAQPage structured data. Replace with a direct answer."
+    },
+    {
+      "surface": "faq:1",
+      "claim": "A vehicle's Bluetooth system plays through the car's speakers, leaving both ears open to traffic sounds. Headphones and AirPods block or mask those sounds, which is the safety distinction that matters.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Descriptive; legally, § 56-5-3890(C)(7) exempts manufacturer-installed equipment and (B)(1) permits an earpiece",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-09-25",
+      "note": "Accurate as a safety distinction. Optional one clause: 'and the hands-free law treats manufacturer-installed systems as exempt'."
+    },
+    {
+      "surface": "faq:2",
+      "claim": "They compromise auditory awareness, cutting you off from sirens, horns and the sounds of an approaching hazard, and they increase cognitive load by adding another stream of information to process.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Safety reasoning; no figure asserted",
+      "sourceUrl": "",
+      "retrievedAt": "2026-09-25",
+      "note": "Keep. Do not add a headphone-specific statistic; none exists in NHTSA or SCDPS data."
+    },
+    {
+      "surface": "faq:3",
+      "claim": "Commercial drivers are subject to their own federal regulations in addition to state rules, so a practice that goes unremarked for a private driver can put a commercial licence at real risk.",
+      "verdict": "update",
+      "currentValue": "Commercial drivers are subject to federal rules in addition to state law: 49 CFR 392.80 bans texting and 49 CFR 392.82 bans hand-held phone use while driving a commercial motor vehicle, and a second conviction within three years brings a CDL disqualification of at least 60 days (49 CFR 383.51). Those rules do not name headphones, but many carriers prohibit them by policy.",
+      "sourceName": "49 CFR 392.80, 392.82, 383.51 Table 2",
+      "sourceUrl": "https://www.ecfr.gov/current/title-49/section-383.51",
+      "retrievedAt": "2026-09-25",
+      "note": "The answer is directionally right but says nothing concrete, and 'licence' is British spelling — use 'license'. The CDL consequence attaches to texting/hand-held convictions, not to headphones as such."
+    },
+    {
+      "surface": "faq:4",
+      "claim": "It supports the argument that they were not driving attentively. Witness observations and any admission at the scene are worth recording, since headphone use is not visible in a police report by default.",
+      "verdict": "update",
+      "currentValue": "It supports the argument that they were not driving attentively, and because no statute bans headphones the claim is proven as ordinary negligence under South Carolina's comparative-fault rule. Photos, witness observations and any admission at the scene matter: the officer's TR-310 collision report can record 'distracted/inattention' as a contributing factor, but only if the officer observes it or is told, and the report itself is not admissible to prove negligence at trial.",
+      "sourceName": "SCDPS TR-310 Report Manual (code 02 Distracted/Inattention); S.C. Code § 56-5-1290; Nelson v. Concrete Supply Co.",
+      "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/forms/TR-310%20Report%20Manual%20Revised%20May%202019.pdf",
+      "retrievedAt": "2026-09-25",
+      "note": "'Not visible in a police report by default' is roughly right — there is no headphone code — but the report has a distraction code, so the fix is to tell the officer. Minor reword."
+    }
+  ],
+  "recommendedEdits": [
+    "Rewrite the 'What South Carolina Law Says' paragraph on § 56-5-3890: it is now the South Carolina Hands-Free and Distracted Driving Act (2025 Act No. 40, effective September 1, 2025) — prohibits holding or supporting a mobile electronic device, texting, and watching video; expressly allows an earpiece for voice calls, listening to audio and navigation on a device that is not held, and manufacturer-installed systems; drop 'wireless electronic communications devices', 'primarily focuses on drivers texting' and 'applies to any activity that can impair'.",
+    "Cite it as 'S.C. Code § 56-5-3890' (strict profile format), not 'SC Code Section 56-5-3890', and link https://www.scstatehouse.gov/code/t56c005.php.",
+    "Correct the 'careless operation' sentence: it is City of Charleston Code § 19-178 ('Careless operation of a vehicle'), a city ordinance, not a South Carolina statute; the state offense is reckless driving, S.C. Code § 56-5-2920, which requires wilful or wanton disregard.",
+    "Fix the penalties list: first distracted-driving offense is a flat $100 fine (none suspendable), second or subsequent within three years $200 plus two points (§ 56-5-3890(D)); a first offense carries no points; the 180-day warnings-only period that began 2025-09-01 has ended. If the list is meant to describe a red-light or stop-sign violation instead, that is four points under § 56-1-720 — say which offense the list describes.",
+    "Change 'A fine of up to $100 for a first offense' to 'A $100 fine for a first distracted-driving offense ($200 for a second or later offense within three years)'.",
+    "Change 'Two points added to your driving record' to 'Two points on a second or subsequent distracted-driving offense (none on a first)'.",
+    "Trucker section: replace 'Federal Motor Carrier Safety Administration rules ... restrict the use of headphones' with the actual rules — 49 CFR 392.80 (no texting) and 49 CFR 392.82 (no hand-held phone) — which do not mention headphones; drop the quoted 'one-ear exception' label and the 'exclusively for work-related communication' limit; drop the DOT-inspectors sentence; change 'CDL suspension if cited for distracted driving while using headphones' to a CDL disqualification (60 days on a second texting/hand-held conviction within three years, 49 CFR 383.51 Table 2).",
+    "Soften 'Commercial insurance policies may deny claims involving driver distraction' or remove it; keep 'companies could face liability'.",
+    "In the crash-claim heading section, add one sentence that headphone use is ordinary-negligence evidence (no statute violated, so no negligence per se), that any ticket or conviction is inadmissible in the civil case under S.C. Code § 56-5-6160, and that under Nelson v. Concrete Supply Co. recovery is reduced by the claimant's share of fault and barred at 51% or more; never cite § 15-38-15.",
+    "Fix both phone hrefs: tel:18447378587 -> tel:+18447378587 (visible text '1-844-RESULTS' unchanged). Optional: add the Charleston office line (843) 790-8999 in the closing CTA.",
+    "Replace faq:0 with a direct answer (no ban; hands-free law allows an earpiece and unheld audio; Charleston careless-operation ordinance; comparative fault) — it renders into FAQPage structured data.",
+    "faq:3: 'licence' -> 'license'; name 49 CFR 392.80/392.82 and the 383.51 disqualification instead of 'their own federal regulations'.",
+    "faq:4: note the officer can record 'distracted/inattention' on the TR-310 collision report if told, and that the report is not admissible to prove negligence at trial (§ 56-5-1290).",
+    "Optional statistic, only if the refresher wants one for the 'dangerous conditions' section: NHTSA reports 3,275 people killed and an estimated 324,819 injured in distraction-affected crashes in 2023 (8% of fatal crashes), DOT HS 813 703, April 2025. SCDPS's 2024 Fact Book attributes 9,293 South Carolina collisions (8 fatal) to 'Distracted/Inattention' as the primary contributing factor. Neither source isolates headphone use.",
+    "Cosmetic: add an id and TOC entry for the 'Could Wearing Headphones/AirPods Impact My Claim' heading and remove its <strong> wrapper and the data-teams span; insert the missing space in 'moment.Your'; remove the empty rel=\"\" on the contingency-fee link.",
+    "Attribution: this is a South Carolina-only post — reviewer Graeham C. Gillin, not Eric Roden; do not add Georgia law."
+  ],
+  "statuteCitations": [
+    {
+      "section": "S.C. Code § 56-5-3890",
+      "name": "Unlawful use of a mobile electronic device while operating a motor vehicle — South Carolina Hands-Free and Distracted Driving Act (2025 Act No. 40, H.3276), effective 2025-09-01; permits an earpiece for voice communication and unheld audio/navigation; $100 first offense, $200 plus two points for a second or subsequent offense within three years; preempts local ordinances on mobile-device use",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "section": "2025 Act No. 40 (H.3276)",
+      "name": "South Carolina Hands-Free and Distracted Driving Act — § 5: warnings only for the first 180 days after 2025-09-01; § 8: takes effect September 1, 2025",
+      "url": "https://www.scstatehouse.gov/sess126_2025-2026/bills/3276.htm"
+    },
+    {
+      "section": "S.C. Code § 56-1-720",
+      "name": "Point system schedule — 'Distracted driving (second or subsequent offense)' 2 points; 'Disobedience of any official traffic control device' 4 points; reckless driving 6 points (amended by 2025 Act No. 40 § 3)",
+      "url": "https://www.scstatehouse.gov/code/t56c001.php"
+    },
+    {
+      "section": "S.C. Code § 56-5-2920",
+      "name": "Reckless driving — wilful or wanton disregard for the safety of persons or property; $25-$200 or up to 30 days",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "section": "S.C. Code § 56-5-6160",
+      "name": "Evidence of conviction inadmissible in civil action — 'No evidence of conviction of any person for any violation of this chapter shall be admissible in any court in any civil action'",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "section": "S.C. Code § 56-5-6190",
+      "name": "General penalty for violations of chapter — fine of not more than $100 or imprisonment not more than 30 days where no other penalty is provided",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "section": "S.C. Code § 56-5-1290",
+      "name": "Evidentiary use of collision reports — reports may not be evidence of negligence or due care at trial; officers may use them to refresh recollection",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "section": "S.C. Code § 15-3-530",
+      "name": "Three-year limitation for injury to the person (subsection (5)) — only if a filing deadline is added",
+      "url": "https://www.scstatehouse.gov/code/t15c003.php"
+    },
+    {
+      "section": "City of Charleston Code § 19-178",
+      "name": "Careless operation of a vehicle — 'unlawful for any person to operate any vehicle without care and caution and full regard for the safety of persons and property' (Code 1975, § 33-32); Municode content updated 2026-09-03",
+      "url": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH19MOVETR_ARTVIIOPVEGE"
+    },
+    {
+      "section": "City of Charleston Code § 19-182",
+      "name": "Unlawful use of a handheld electronic communication device (Ord. 2013-107) — $100, no points; note S.C. Code § 56-5-3890(G) preempts local ordinances on mobile-device use, so cite the state statute, not this ordinance, for phone use",
+      "url": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH19MOVETR_ARTVIIOPVEGE"
+    },
+    {
+      "section": "49 CFR 392.82",
+      "name": "Using a hand-held mobile telephone — no CMV driver may use a hand-held mobile telephone while driving; carriers may not allow or require it",
+      "url": "https://www.ecfr.gov/current/title-49/section-392.82"
+    },
+    {
+      "section": "49 CFR 392.80",
+      "name": "Prohibition against texting while driving a CMV",
+      "url": "https://www.ecfr.gov/current/title-49/section-392.80"
+    },
+    {
+      "section": "49 CFR 383.51",
+      "name": "CDL disqualification — Table 2 serious traffic violations include texting and hand-held phone use while driving a CMV; second conviction within 3 years 60 days, third 120 days",
+      "url": "https://www.ecfr.gov/current/title-49/section-383.51"
+    }
+  ],
+  "authoritativeLinks": [
+    {
+      "name": "S.C. Code Title 56, Chapter 5 (Uniform Act Regulating Traffic on Highways) — §§ 56-5-3890, 56-5-2920, 56-5-6160, 56-5-6190, 56-5-1290",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "name": "S.C. Code Title 56, Chapter 1 — § 56-1-720 point schedule",
+      "url": "https://www.scstatehouse.gov/code/t56c001.php"
+    },
+    {
+      "name": "2025 Act No. 40 (H.3276), South Carolina Hands-Free and Distracted Driving Act — bill text and status",
+      "url": "https://www.scstatehouse.gov/sess126_2025-2026/bills/3276.htm"
+    },
+    {
+      "name": "City of Charleston Code of Ordinances, Chapter 19 Article VII (Operation of Vehicles Generally) — §§ 19-178, 19-182",
+      "url": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH19MOVETR_ARTVIIOPVEGE"
+    },
+    {
+      "name": "NHTSA Traffic Safety Facts Research Note, Distracted Driving in 2023 (DOT HS 813 703, April 2025)",
+      "url": "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813703"
+    },
+    {
+      "name": "SCDPS South Carolina Traffic Collision Fact Book 2024 Edition — primary contributing factors (Distracted/Inattention: 9,293 collisions, 8 fatal)",
+      "url": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf"
+    },
+    {
+      "name": "SCDPS TR-310 Traffic Collision Report Manual (contributing-factor codes)",
+      "url": "https://scdps.sc.gov/sites/scdps/files/Documents/forms/TR-310%20Report%20Manual%20Revised%20May%202019.pdf"
+    },
+    {
+      "name": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (S.C. 1991) — modified comparative negligence, 51% bar",
+      "url": "https://www.courtlistener.com/opinion/1265650/nelson-v-concrete-supply-company/"
+    },
+    {
+      "name": "49 CFR 392.82 — hand-held mobile telephone ban for CMV drivers (eCFR)",
+      "url": "https://www.ecfr.gov/current/title-49/section-392.82"
+    },
+    {
+      "name": "49 CFR 383.51 — CDL disqualification tables (eCFR)",
+      "url": "https://www.ecfr.gov/current/title-49/section-383.51"
+    }
+  ]
+}
