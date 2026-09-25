@@ -1444,6 +1444,36 @@ identification, and changing it without confirming the registered entity name
 could make the notice inaccurate. Both left for the firm to decide. *(Also noted:
 the privacy policy exists twice, at `privacy-policy` and `privacy-policy-2`.)*
 
+### Retired pages moved from trash to draft — 2026-09-25
+
+**Owner's instruction, 2026-09-25.** Every batch so far *trashed* its pages, on the
+assumption they stayed "recoverable by ID". They do not: WordPress empties the trash after
+`EMPTY_TRASH_DAYS` (30 on this host). **The 08-21 and 08-25 batches were already purged from
+the database** and survive only as the JSON in `docs/backups/`, which holds content, excerpt,
+meta, permalink and redirect target. There is no restore script yet, and a rebuilt page gets
+a new ID.
+
+The 255 still in the trash (09-18: 202; 09-19: 53) were due to purge around Oct 18–19. They
+are now **drafts**, applied with `bin/restore-trash-to-draft.php`:
+
+- 60 posts, 176 practice_area, 13 location, 6 page. All were published before being trashed.
+  Original slugs restored from `_wp_desired_post_slug`, with 0 collisions. Trash markers cleared.
+- Written straight to `post_status`/`post_name`, not through `wp_untrash_post()`, whose
+  `wp_insert_post` path runs the `wp_insert_post_data` guardrails and could rewrite content.
+- Four older trashed items with no trash timestamp were left alone: media-plugin folder 677,
+  "Who We Are" page 1985 (slug `attorneys`), duplicate post 3491, Park Circle location 3779.
+  The purge never touches them.
+- Backup: `docs/backups/trash-to-draft-2026-09-25.json`.
+
+Verified after apply: 0 timestamped posts left in trash. **255/255 retired URLs still 301 to
+the same target** (the redirects match the request path, not post status). Sitemap
+unchanged at 824 and doorway ratio unchanged at 29.49%, so no draft leaked into anything
+public.
+
+**From here, retirement batches set pages to draft, not trash.** To bring one back: remove
+its redirect-map line, check the doorway ratio, publish. The location freeze
+(`inc/content-guardrails.php`) still blocks publishing a location without the switch.
+
 ### Case results folded into one page — decided 2026-09-25
 
 **Owner's instruction, 2026-09-25:** fold every case result into a single, filterable page.
