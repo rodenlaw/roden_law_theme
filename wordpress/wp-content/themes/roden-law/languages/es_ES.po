@@ -30,7 +30,7 @@ msgstr ""
 
 #. Description of the theme
 #: style.css
-msgid "Custom AI-SEO optimized WordPress theme for Roden Law personal injury firm serving Georgia and South Carolina across 5 office locations. Built with structured data, E-E-A-T compliance, and local SEO as core architecture principles."
+msgid "Custom AI-SEO optimized WordPress theme for Roden Law personal injury firm serving Georgia and South Carolina across 6 office locations. Built with structured data, E-E-A-T compliance, and local SEO as core architecture principles."
 msgstr ""
 
 #: 404.php:12
@@ -166,8 +166,9 @@ msgid "Our Offices"
 msgstr "Nuestras Oficinas"
 
 #: archive-practice_area.php:109
-msgid "We serve clients from 5 locations across Georgia and South Carolina."
-msgstr "Atendemos a clientes desde 5 oficinas en Georgia y Carolina del Sur."
+#, php-format
+msgid "We serve clients from %s offices across Georgia and South Carolina."
+msgstr "Atendemos a clientes desde %s oficinas en Georgia y Carolina del Sur."
 
 #: archive-practice_area.php:117
 msgid "Injured? Get Your Free Case Review."
@@ -2310,8 +2311,9 @@ msgid "Cases successfully handled since %s"
 msgstr "Casos manejados con éxito desde %s"
 
 #: inc/template-tags.php:1358
-msgid "Combined attorney experience across 5 office locations"
-msgstr "Experiencia combinada de abogados en 5 oficinas"
+#, php-format
+msgid "Combined attorney experience across %s office locations"
+msgstr "Experiencia combinada de abogados en %s oficinas"
 
 #. translators: %s: month and year, e.g. "July 2026".
 #: inc/template-tags.php:1362

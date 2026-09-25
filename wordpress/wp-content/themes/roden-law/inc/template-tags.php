@@ -3022,7 +3022,7 @@ function roden_ai_stats_block( $practice_area_title = '' ) {
                 </tr>
                 <tr>
                     <th scope="row"><strong><?php echo esc_html( $firm['experience'] ); ?></strong></th>
-                    <td><?php esc_html_e( 'Combined attorney experience across 5 office locations', 'roden-law' ); ?></td>
+                    <td><?php printf( /* translators: %s: number of offices, e.g. "6". */ esc_html__( 'Combined attorney experience across %s office locations', 'roden-law' ), esc_html( $firm['trust_stats']['offices'] ) ); ?></td>
                 </tr>
             </tbody>
         </table>

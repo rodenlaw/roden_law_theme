@@ -106,7 +106,7 @@ $firm = roden_firm_data();
     <div class="container">
         <div class="section-header">
             <h2><?php esc_html_e( 'Our Offices', 'roden-law' ); ?></h2>
-            <p><?php esc_html_e( 'We serve clients from 5 locations across Georgia and South Carolina.', 'roden-law' ); ?></p>
+            <p><?php printf( /* translators: %s: number of offices, e.g. "6". */ esc_html__( 'We serve clients from %s offices across Georgia and South Carolina.', 'roden-law' ), esc_html( $firm['trust_stats']['offices'] ) ); ?></p>
         </div>
         <?php roden_location_cards(); ?>
     </div>
