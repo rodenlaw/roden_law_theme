@@ -124,7 +124,11 @@ function roden_register_post_types() {
             'all_items'          => __( 'All Case Results', 'roden-law' ),
             'menu_name'          => __( 'Case Results', 'roden-law' ),
         ),
+        // Still public so the single URL resolves and 301s to its anchor on
+        // /case-results/ (roden_case_result_single_redirect()); kept out of
+        // search so results never link to a redirect.
         'public'             => true,
+        'exclude_from_search' => true,
         'has_archive'        => false,
         'hierarchical'       => false,
         'rewrite'            => array( 'slug' => 'case-results', 'with_front' => false ),

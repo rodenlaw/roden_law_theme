@@ -3,7 +3,17 @@
  * Template: Case Results Page (page-case-results.php)
  *
  * Automatically loaded for the /case-results/ page (slug match).
- * Hero, featured result, results grid, stats bar, disclaimer, bottom CTA.
+ *
+ * This is the only place case results are published. Until 2026-09-25 each of
+ * the 156 also had its own URL, /case-results/{slug}/ -- a page that was 84%
+ * template around an amount, a result type and a one-phrase category, which
+ * earned 2 clicks in 16 months while this page earned 21. They were folded in
+ * here. Every result is rendered server-side under id="{slug}", and every old
+ * single URL 301s to that anchor (roden_case_result_single_redirect()).
+ *
+ * The filters are progressive enhancement: the bar stays hidden and the full
+ * list shows until the script in roden_case_results_filter_js() runs, so a
+ * crawler or a no-JS visitor sees all 156.
  *
  * @package Roden_Law
  */
@@ -13,41 +23,68 @@ get_header();
 $firm  = roden_firm_data();
 $stats = $firm['trust_stats'];
 
-/* ------------------------------------------------------------------
-   Featured Result — highest _roden_case_amount_raw
-   ------------------------------------------------------------------ */
-
-$featured_query = new WP_Query( array(
+$results = new WP_Query( array(
     'post_type'      => 'case_result',
-    'posts_per_page' => 1,
+    'posts_per_page' => -1,
+    'post_status'    => 'publish',
     'orderby'        => 'meta_value_num',
     'meta_key'       => '_roden_case_amount_raw',
     'order'          => 'DESC',
+    'no_found_rows'  => true,
 ) );
 
-$featured_id     = 0;
-$featured_amount = '';
-$featured_type   = '';
-$featured_title  = '';
-$featured_desc   = '';
+/*
+ * Amount bands, highest first. Bounds are inclusive lower, exclusive upper, in
+ * whole dollars against _roden_case_amount_raw.
+ */
+$bands = array(
+    '1m'   => array( 'label' => '$1M+',           'min' => 1000000, 'max' => PHP_INT_MAX ),
+    '500k' => array( 'label' => '$500K – $999K',  'min' => 500000,  'max' => 1000000 ),
+    '250k' => array( 'label' => '$250K – $499K',  'min' => 250000,  'max' => 500000 ),
+    'u250' => array( 'label' => 'Under $250K',    'min' => 0,       'max' => 250000 ),
+);
 
-if ( $featured_query->have_posts() ) {
-    $featured_query->the_post();
-    $featured_id     = get_the_ID();
-    $featured_amount = get_post_meta( $featured_id, '_roden_case_amount', true );
-    $featured_type   = get_post_meta( $featured_id, '_roden_case_type', true );
-    $featured_title  = get_the_title();
-    $featured_desc   = get_post_meta( $featured_id, '_roden_description', true );
-    wp_reset_postdata();
-}
+$items      = array();
+$categories = array();
+$types      = array();
+$band_count = array_fill_keys( array_keys( $bands ), 0 );
 
-// Fallback if no CPT posts exist yet
-if ( ! $featured_id ) {
-    $featured_amount = '$27,000,000';
-    $featured_type   = 'Settlement';
-    $featured_title  = 'Truck Accident';
-    $featured_desc   = 'Client paralyzed in collision with commercial semi-truck.';
+foreach ( $results->posts as $cr ) {
+    $raw      = (int) get_post_meta( $cr->ID, '_roden_case_amount_raw', true );
+    $type     = trim( (string) get_post_meta( $cr->ID, '_roden_case_type', true ) );
+    $category = roden_case_result_category( $cr->ID );
+    $band     = '';
+    foreach ( $bands as $key => $b ) {
+        if ( $raw >= $b['min'] && $raw < $b['max'] ) {
+            $band = $key;
+            break;
+        }
+    }
+
+    $items[] = array(
+        'id'       => $cr->ID,
+        'slug'     => $cr->post_name,
+        'amount'   => get_post_meta( $cr->ID, '_roden_case_amount', true ),
+        'type'     => $type,
+        'category' => $category,
+        'band'     => $band,
+        'desc'     => get_post_meta( $cr->ID, '_roden_description', true ),
+    );
+
+    if ( $category ) {
+        $categories[ $category ] = ( $categories[ $category ] ?? 0 ) + 1;
+    }
+    if ( $type ) {
+        $types[ $type ] = ( $types[ $type ] ?? 0 ) + 1;
+    }
+    if ( $band ) {
+        $band_count[ $band ]++;
+    }
 }
+arsort( $categories );
+arsort( $types );
+
+$total = count( $items );
 ?>
 
     <!-- ============================================================
@@ -66,115 +103,79 @@ if ( ! $featured_id ) {
     </section>
 
     <!-- ============================================================
-         FEATURED RESULT
-         ============================================================ -->
-    <section class="section featured-result-section">
-        <div class="site-container">
-            <div class="featured-result-card">
-                <span class="featured-result-label">Featured Result</span>
-                <span class="featured-result-amount"><?php echo esc_html( $featured_amount ); ?></span>
-                <div class="featured-result-meta">
-                    <?php if ( $featured_type ) : ?>
-                        <span class="featured-result-type"><?php echo esc_html( ucfirst( $featured_type ) ); ?></span>
-                    <?php endif; ?>
-                    <span class="featured-result-title"><?php echo esc_html( $featured_title ); ?></span>
-                </div>
-                <?php if ( $featured_desc ) : ?>
-                    <p class="featured-result-desc"><?php echo esc_html( $featured_desc ); ?></p>
-                <?php endif; ?>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================================
-         RESULTS GRID
+         ALL RESULTS — filterable
          ============================================================ -->
     <section class="section section-alt" id="all-results">
         <div class="site-container">
             <div class="section-header">
                 <h2>Case Results</h2>
-                <p>Settlements, verdicts, and recoveries our attorneys have secured.</p>
+                <p>Settlements, verdicts, and recoveries our attorneys have secured, largest first.</p>
             </div>
 
-            <?php
-            roden_case_results_grid( array(
-                'count'   => 20,
-                'columns' => 3,
-                'exclude' => $featured_id ? array( $featured_id ) : array(),
-            ) );
+            <?php if ( $items ) : ?>
 
-            // Count total remaining results for Load More
-            $total_results = wp_count_posts( 'case_result' );
-            $total_published = $total_results->publish;
-            $shown = $featured_id ? 21 : 20; // 1 featured + 20 grid
-            if ( $total_published > $shown ) :
-            ?>
-            <div class="load-more-wrap" style="text-align:center; margin-top: var(--space-xl);">
-                <button class="btn btn-primary btn-lg" id="load-more-results"
-                    data-offset="20"
-                    data-exclude="<?php echo esc_attr( $featured_id ); ?>"
-                    data-total="<?php echo esc_attr( $total_published ); ?>">
-                    Load More Results
-                </button>
-                <p class="load-more-count">
-                    Showing <span id="shown-count"><?php echo $shown; ?></span> of <?php echo esc_html( $total_published ); ?> results
+            <div class="results-filter-bar" id="results-filter-bar" hidden>
+                <div class="filter-group" role="group" aria-label="Filter by case type">
+                    <span class="filter-label">Case type</span>
+                    <button type="button" class="filter-btn active" data-filter="category" data-value="" aria-pressed="true">All</button>
+                    <?php foreach ( $categories as $label => $n ) : ?>
+                        <button type="button" class="filter-btn" data-filter="category" data-value="<?php echo esc_attr( $label ); ?>" aria-pressed="false">
+                            <?php echo esc_html( $label ); ?> <span class="filter-count">(<?php echo (int) $n; ?>)</span>
+                        </button>
+                    <?php endforeach; ?>
+                </div>
+
+                <div class="filter-group" role="group" aria-label="Filter by result">
+                    <span class="filter-label">Result</span>
+                    <button type="button" class="filter-btn active" data-filter="type" data-value="" aria-pressed="true">All</button>
+                    <?php foreach ( $types as $label => $n ) : ?>
+                        <button type="button" class="filter-btn" data-filter="type" data-value="<?php echo esc_attr( $label ); ?>" aria-pressed="false">
+                            <?php echo esc_html( $label ); ?> <span class="filter-count">(<?php echo (int) $n; ?>)</span>
+                        </button>
+                    <?php endforeach; ?>
+                </div>
+
+                <div class="filter-group" role="group" aria-label="Filter by amount">
+                    <span class="filter-label">Amount</span>
+                    <button type="button" class="filter-btn active" data-filter="band" data-value="" aria-pressed="true">All</button>
+                    <?php foreach ( $bands as $key => $b ) :
+                        if ( ! $band_count[ $key ] ) {
+                            continue;
+                        } ?>
+                        <button type="button" class="filter-btn" data-filter="band" data-value="<?php echo esc_attr( $key ); ?>" aria-pressed="false">
+                            <?php echo esc_html( $b['label'] ); ?> <span class="filter-count">(<?php echo (int) $band_count[ $key ]; ?>)</span>
+                        </button>
+                    <?php endforeach; ?>
+                </div>
+
+                <p class="results-shown" id="results-shown" aria-live="polite">
+                    Showing <?php echo (int) $total; ?> of <?php echo (int) $total; ?> results
                 </p>
             </div>
+
+            <ul class="case-results-grid cols-3 case-results-list" id="case-results-list">
+                <?php foreach ( $items as $it ) : ?>
+                    <li class="result-card" id="<?php echo esc_attr( $it['slug'] ); ?>"
+                        data-category="<?php echo esc_attr( $it['category'] ); ?>"
+                        data-type="<?php echo esc_attr( $it['type'] ); ?>"
+                        data-band="<?php echo esc_attr( $it['band'] ); ?>">
+                        <?php if ( $it['type'] ) : ?>
+                            <span class="result-type"><?php echo esc_html( ucfirst( $it['type'] ) ); ?></span>
+                        <?php endif; ?>
+                        <span class="result-amount"><?php echo esc_html( $it['amount'] ); ?></span>
+                        <?php if ( $it['category'] ) : ?>
+                            <span class="result-title"><?php echo esc_html( $it['category'] ); ?></span>
+                        <?php endif; ?>
+                        <?php if ( $it['desc'] ) : ?>
+                            <p class="result-desc"><?php echo esc_html( $it['desc'] ); ?></p>
+                        <?php endif; ?>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+
+            <p class="no-results-msg" id="no-results-msg" hidden>No case results match these filters.</p>
+
             <?php endif; ?>
-        </div>
-    </section>
-
-    <!-- ============================================================
-         COMPLETE INDEX
-         ============================================================
-         The grid above shows 20 and reveals the rest with a JS "Load More"
-         button, which a crawler cannot press -- so every case result except
-         the featured one had no click path and all 156 were reported as
-         orphans. This renders the full list server-side so each result is one
-         click from this page, and this page is one click from / via the
-         "Results" nav item. The grid keeps its existing behaviour.
-         ============================================================ -->
-    <section class="section all-results-section">
-        <div class="site-container">
-            <div class="section-header">
-                <h2>All Case Results</h2>
-                <p>Every settlement, verdict and recovery listed above, in full.</p>
-            </div>
-            <?php
-            $all_results = new WP_Query( array(
-                'post_type'      => 'case_result',
-                'posts_per_page' => -1,
-                'post_status'    => 'publish',
-                'orderby'        => 'meta_value_num',
-                'meta_key'       => '_roden_case_amount_raw',
-                'order'          => 'DESC',
-                'no_found_rows'  => true,
-            ) );
-
-            if ( $all_results->have_posts() ) :
-                ?>
-                <ul class="all-results-index">
-                    <?php
-                    while ( $all_results->have_posts() ) :
-                        $all_results->the_post();
-                        $idx_amount = get_post_meta( get_the_ID(), '_roden_case_amount', true );
-                        ?>
-                        <li>
-                            <a href="<?php the_permalink(); ?>">
-                                <?php if ( $idx_amount ) : ?>
-                                    <span class="ari-amount"><?php echo esc_html( $idx_amount ); ?></span>
-                                <?php endif; ?>
-                                <span class="ari-title"><?php the_title(); ?></span>
-                            </a>
-                        </li>
-                        <?php
-                    endwhile;
-                    ?>
-                </ul>
-                <?php
-                wp_reset_postdata();
-            endif;
-            ?>
         </div>
     </section>
 

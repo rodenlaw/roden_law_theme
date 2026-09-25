@@ -489,17 +489,42 @@ function roden_breadcrumb_html() {
    ========================================================================== */
 
 /**
- * One case-result card, linked to its own page.
+ * Where a case result lives: its anchor on the /case-results/ page.
  *
- * The card markup used to be inlined twice -- here and in
- * roden_load_more_results_handler() -- and neither copy wrapped the card in a
- * link. Every case result is in the sitemap and served, but with nothing
- * linking to any of them all 156 were orphans. A single renderer means the
- * server-rendered cards and the ones the Load More button appends can no
- * longer disagree.
+ * Case results have no page of their own since 2026-09-25. Each was an amount,
+ * a result type and a category carried only in the title -- about 20 unique
+ * words on a page that was 84% template -- and the 156 singles earned 2 clicks
+ * in 16 months. They are listed, filterable, on /case-results/, each under an
+ * id equal to its slug, and every single URL 301s to that anchor. See
+ * roden_case_result_single_redirect() in inc/legacy-redirects.php.
+ *
+ * @param int $post_id Case result post ID.
+ * @return string
+ */
+function roden_case_result_url( $post_id ) {
+    return home_url( '/case-results/' ) . '#' . get_post_field( 'post_name', $post_id );
+}
+
+/**
+ * A case result's category ("Truck Accident"), which the data carries only in
+ * the title: "$27,000,000 Settlement | Truck Accident". No case result has a
+ * practice_category term, so the title is the only source.
+ *
+ * @param int $post_id Case result post ID.
+ * @return string Empty when the title has no "|" segment.
+ */
+function roden_case_result_category( $post_id ) {
+    $title = wp_strip_all_tags( get_the_title( $post_id ) );
+    $pos   = strpos( $title, '|' );
+    return false === $pos ? '' : trim( substr( $title, $pos + 1 ) );
+}
+
+/**
+ * One case-result card, linked to its entry on the /case-results/ page.
  *
  * The <a> carries color: inherit and text-decoration: none, so the card renders
- * exactly as it did before -- all four inner elements set their own colour.
+ * exactly as an unlinked card would -- all four inner elements set their own
+ * colour.
  *
  * @param int $post_id Case result post ID.
  */
@@ -509,7 +534,7 @@ function roden_case_result_card( $post_id ) {
     $desc   = get_post_meta( $post_id, '_roden_description', true );
     ?>
     <div class="result-card">
-        <a href="<?php echo esc_url( get_permalink( $post_id ) ); ?>" class="result-card-link">
+        <a href="<?php echo esc_url( roden_case_result_url( $post_id ) ); ?>" class="result-card-link">
             <?php if ( $type ) : ?>
                 <span class="result-type"><?php echo esc_html( ucfirst( $type ) ); ?></span>
             <?php endif; ?>

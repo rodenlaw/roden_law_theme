@@ -1443,6 +1443,44 @@ identification, and changing it without confirming the registered entity name
 could make the notice inaccurate. Both left for the firm to decide. *(Also noted:
 the privacy policy exists twice, at `privacy-policy` and `privacy-policy-2`.)*
 
+### Case results folded into one page — decided 2026-09-25
+
+**Owner's instruction, 2026-09-25:** fold every case result into a single, filterable page.
+It overrides the plan §2 guardrail as far as single URLs go (plan amended the same day). The
+results themselves all stay on the site.
+
+Evidence (`docs/gsc-audit-90d-2026-09-23.md` 09-25 addendum; search data pulled 2026-09-25):
+
+| | URLs | 16-month clicks | Impressions |
+|---|---:|---:|---:|
+| `/case-results/{slug}/` singles | 156 (104 ever shown) | **2** | 716 |
+| `/case-results/` page | 1 | 21 | 9,840 |
+| old-site `/case-result/{slug}/` (already 301ing) | 115 seen | 21 | 3,881 |
+| legacy `/blog/case-result/{slug}/` | 156 | 0 | 0 |
+
+A rendered sample of 20 singles: median 129 words, **84% template**, about 20 unique words each.
+The data behind them is amount + result type + a category held only in the title; 0 of 156
+have a description, body, practice or location term, or Spanish twin, and 1 names an
+attorney. 86 posts sit in 24 groups identical on amount and type.
+
+Shape:
+- `page-case-results.php` renders all 156 server-side, largest first, each as
+  `<li id="{slug}">`, with case-type / result / amount filters. The filter bar is `hidden`
+  until JS runs, so without JS every result shows. The featured card, the 20-card grid with
+  AJAX Load More, and the separate text index are gone; one list replaces all three.
+- Every single URL 301s to its anchor in one hop: `/case-results/{slug}/`,
+  `/blog/case-result/{slug}/` (all 156 now, including the 27 batch (f) left serving) and
+  old-site `/case-result/{slug}/`. The legacy slug drifts (`-truck-accidents`, `mva-`,
+  `workers-comp-`) are resolved. Dry run against prod: 152/156 legacy and 115/115 old-site
+  slugs land on an anchor; the other 4 (`2969`, `100000-recovery-animal-attack` titled
+  $130,000, `200000-policy-limit-auto-accident`, `75000-recovery-truck-accident`) land on the
+  page.
+- `case_result` dropped from the sitemap and from site search. Result strips elsewhere link
+  to the anchors, and `llms.txt` lists them the same way.
+- The posts are **not** trashed: they are the page's data and feed the homepage, about,
+  attorney and location strips. Nothing to relink: 0 posts link a single result in
+  content or meta.
+
 ### Batch (f) — the duplicated case-result URLs
 
 156 case results are published twice: as `case_result` at `/case-results/{slug}/`

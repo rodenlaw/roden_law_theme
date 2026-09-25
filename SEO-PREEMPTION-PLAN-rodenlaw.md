@@ -41,6 +41,14 @@ Pattern: Google re-rates this domain at every update, each verdict harsher (top-
 
 - **Never remove or degrade:** homepage; the 6 office-city hub pages and their state parents; statewide/primary practice pages; attorney profiles; case results; the blog comparison cluster; `/es/` counterparts of all of the above; contact/about.
 
+> **Amended 2026-09-25 — "case results" means the results, not one URL each.** The owner
+> approved folding every case result into one filterable `/case-results/` page (2026-09-25,
+> owner's instruction in session). The 156 `case_result` posts stay published as the page's
+> data and every result is still shown; only their single URLs go (301 to `/case-results/#{slug}`),
+> along with the 27 legacy-only `/blog/case-result/` duplicates batch (f) left open. The singles
+> were 84% template around ~20 unique words and earned 2 clicks in 16 months. See RECOVERY-LOG
+> "Case results folded into one page".
+
 > **Amended 2026-08-24 — the `resource` post type is not a guardrail category.**
 > `url-triage.csv` classified all 78 resources KEEP with the reason "guardrail
 > keep-list: resource page", which protected a type this section never named. The

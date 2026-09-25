@@ -313,16 +313,12 @@ function roden_legacy_content_redirects() {
     // locale layer in inc/i18n.php). The old blanket /es/* → / 301 dated from
     // the 2026-05-05 Polylang removal and was killing every Spanish page.
 
-    // /case-result/[slug]/ → /case-results/[slug]/ (old singular → new plural CPT slug)
-    // Only redirect to the specific result if it still exists; otherwise the
-    // pluralized path 404s (many old case-result posts were removed). Fall
-    // back to the live /case-results/ archive.
+    // /case-result/[slug]/ (old site's singular slug) → the result's anchor on
+    // /case-results/ in one hop, or the page itself when no current result
+    // matches. Single case-result pages no longer exist (2026-09-25), so
+    // routing through /case-results/[slug]/ would be a two-hop chain.
     if ( preg_match( '#^/case-result/([^/]+)/?$#', $clean_path, $m ) ) {
-        $cr   = get_page_by_path( $m[1], OBJECT, 'case_result' );
-        $dest = ( $cr && 'publish' === $cr->post_status )
-            ? get_permalink( $cr->ID )
-            : home_url( '/case-results/' );
-        wp_redirect( $dest, 301 );
+        wp_redirect( roden_case_result_legacy_dest( $m[1] ), 301 );
         exit;
     }
 
@@ -2066,31 +2062,81 @@ function roden_phase1_removal_redirects() {
 }
 
 /* ------------------------------------------------------------------
-   301: legacy case-result CPT → the canonical /case-results/ URL.
+   Case results: one page, no singles (2026-09-25).
 
-   Phase 1 batch (f). 156 case results are published twice: once as the
-   `case_result` CPT at /case-results/{slug}/ (sitemap-listed, canonical)
-   and once as the legacy hyphen-slug `case-result` CPT at
-   /blog/case-result/{slug}/. 129 of them share a slug, both return 200,
-   and the legacy URL SELF-canonicalises — so Google sees 129 independent
-   duplicate pairs rather than one canonical page each.
+   Every case result is listed on /case-results/ under id="{slug}". Three
+   URL forms used to serve one individually, and all three now 301 in a
+   single hop to that anchor:
 
-   Matched by pattern rather than a hardcoded list of 129 paths, and the
-   redirect only fires when a published `case_result` with that slug
-   actually exists. That matters: 27 legacy slugs have NO counterpart, and
-   those are left serving their own content rather than being swept into
-   the archive. Case results are guardrail-protected (plan §2) and those 27
-   are unique posts, not leftovers — retiring them is a separate decision,
-   not a side effect of de-duplication.
+   - /case-results/{slug}/  the `case_result` CPT's own page. 156 of them,
+     84% template around an amount, a type and a category, 2 clicks in 16
+     months. roden_case_result_single_redirect().
+   - /blog/case-result/{slug}/  the legacy hyphen-slug `case-result` CPT.
+     Batch (f) on 2026-08-21 redirected the 129 whose slug matched and left
+     27 serving their own content, pending a decision. They are malformed
+     near-duplicates of current results (`-truck-accidents` against
+     `-truck-accident`, `<br>` in every title, slug `2969`); the owner
+     approved folding all case results into one page on 2026-09-25, so they
+     go too. roden_legacy_case_result_redirect().
+   - /case-result/{slug}/  the old site's singular form, in
+     roden_legacy_redirects() above.
 
-   The legacy CPT is therefore NOT neutralised here. Doing so would remove
-   the front-end URL for those 27 as well. Once they are dealt with, add
-   'case-result' to roden_neutralize_old_practice_area_cpt() above and this
-   handler becomes the sole route.
-
+   The `case_result` posts stay published: they are the page's data and feed
+   the result strips on the homepage, about, attorney and location pages.
    `case_result` is non-hierarchical, so a slug lookup is reliable against
    it — unlike `location` and `practice_area`.
    ------------------------------------------------------------------ */
+
+/**
+ * Resolve an old case-result slug to its current result's anchor, or to the
+ * /case-results/ page when none matches.
+ *
+ * Tries the slug as given, then the legacy CPT's two known drifts from the
+ * current slugs: a plural category ("-truck-accidents") and an "mva-" or
+ * "workers-comp-" infix. A result that matches none of them lands on the
+ * page, where every result is listed.
+ *
+ * @param string $slug Old slug, unsanitised.
+ * @return string Absolute URL.
+ */
+function roden_case_result_legacy_dest( $slug ) {
+    $slug       = sanitize_title( $slug );
+    $candidates = array_unique( array(
+        $slug,
+        preg_replace( '/-accidents(-\d+)?$/', '-accident$1', $slug ),
+        preg_replace( '/-(mva|workers-comp)-/', '-', preg_replace( '/-accidents(-\d+)?$/', '-accident$1', $slug ) ),
+    ) );
+
+    foreach ( $candidates as $c ) {
+        if ( '' === $c ) {
+            continue;
+        }
+        $twin = get_posts( array(
+            'post_type'        => 'case_result',
+            'post_status'      => 'publish',
+            'name'             => $c,
+            'posts_per_page'   => 1,
+            'fields'           => 'ids',
+            'no_found_rows'    => true,
+            'suppress_filters' => false,
+        ) );
+        if ( $twin ) {
+            return roden_case_result_url( $twin[0] );
+        }
+    }
+
+    return home_url( '/case-results/' );
+}
+
+add_action( 'template_redirect', 'roden_case_result_single_redirect', 0 );
+
+function roden_case_result_single_redirect() {
+    if ( is_admin() || is_preview() || ! is_singular( 'case_result' ) ) {
+        return;
+    }
+    wp_redirect( roden_case_result_url( get_queried_object_id() ), 301 );
+    exit;
+}
 
 add_action( 'template_redirect', 'roden_legacy_case_result_redirect', 0 );
 
@@ -2114,31 +2160,6 @@ function roden_legacy_case_result_redirect() {
         return;
     }
 
-    $slug = sanitize_title( $m[1] );
-    if ( '' === $slug ) {
-        return;
-    }
-
-    $twin = get_posts( array(
-        'post_type'        => 'case_result',
-        'post_status'      => 'publish',
-        'name'             => $slug,
-        'posts_per_page'   => 1,
-        'fields'           => 'ids',
-        'no_found_rows'    => true,
-        'suppress_filters' => false,
-    ) );
-
-    // No canonical twin: leave the legacy page serving its own content.
-    if ( empty( $twin ) ) {
-        return;
-    }
-
-    $dest = get_permalink( $twin[0] );
-    if ( ! $dest ) {
-        return;
-    }
-
-    wp_redirect( $dest, 301 );
+    wp_redirect( roden_case_result_legacy_dest( $m[1] ), 301 );
     exit;
 }
