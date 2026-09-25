@@ -4,7 +4,7 @@ Theme URI: https://rodenlaw.com
 Author: Roden Law
 Author URI: https://rodenlaw.com
 Description: Custom AI-SEO optimized WordPress theme for Roden Law personal injury firm serving Georgia and South Carolina across 5 office locations. Built with structured data, E-E-A-T compliance, and local SEO as core architecture principles.
-Version: 1.4.22
+Version: 1.4.23
 Requires at least: 6.0
 Tested up to: 6.7
 Requires PHP: 8.0
@@ -3100,6 +3100,24 @@ a.lang-switcher-item:focus {
     font-size: 13px;
     color: var(--color-gray, #666);
 }
+
+/* ── Scenario pages: the rules that apply (template-subtype.php) ────────── */
+
+.pa-rules {
+    padding: 24px;
+    border-radius: var(--border-radius, 6px);
+    border-left: 4px solid var(--color-navy, #013046);
+    background: rgba(1, 48, 70, 0.04);
+}
+
+.pa-rules__list {
+    margin: 0 0 12px;
+    padding-left: 20px;
+}
+
+.pa-rules__list li + li { margin-top: 8px; }
+
+.pa-rules__more { margin: 0; font-weight: 600; }
 
 /* ── Section 10: Comparative Fault ─────────────────────────────────────── */
 
