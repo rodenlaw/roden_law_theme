@@ -656,6 +656,7 @@ into 8 city-tier towns and 109 nested municipalities; see the recommendation in
 | 2026-09-19 | **The last 47** intersections (rule 6 closed) | 1,028 | 981 | 47 | **COMPLETE.** Redirects deployed (#143), relink applied (317 links, 231 posts, `post_modified` preserved), 47 posts trashed, caches flushed. Verified after deletion: 47/47 flat and 44/44 EN nested single-hop 301 → 200; the two Spanish twins #142 had broken now redirect in one hop. practice_area sitemap 276 → 229. Live JSON-LD guard PASS. No published page shares a slug with the 47; none misroutes. Backups: `earning-intersections-relink-2026-09-19.json`, `earning-intersections-2026-09-19.json`. |
 | 2026-09-19 | **Six root city pages** (Greenville, Spartanburg, Florence) | 981 | 975 | 6 | **COMPLETE.** Redirects deployed (#144), relink a confirmed no-op (0 links), 6 pages trashed, caches flushed. Verified after deletion: 6/6 single-hop 301 → 200; page sitemap 46 → 40. Google Ads clear across all four accounts. Backup: `root-city-pages-2026-09-19.json`. |
 | 2026-09-25 | **Case results** folded into one filterable page | 980 | 824 | 156 | **COMPLETE.** Singles 301 to `/case-results/#{slug}` (#146); posts kept as the page's data, none trashed. Verified: 423/427 old URLs (singles, legacy, old-site) single-hop to a live anchor, 4 malformed legacy slugs to the page, 0 failures; `case_result` sitemap removed. Counts are sitemap URLs, not the 08-21 inventory. |
+| 2026-09-25 | **Stale place pages**: 29 sub-municipal locations + 46 pipeline posts (Brunswick kept) | 824 | 749 | 75 | **COMPLETE.** Redirects deployed (#147), relink applied (52 links, 22 posts, `post_modified` preserved), 75 pages set to **draft** (not trashed) and marked `_roden_retired`, caches flushed. Verified: 75/75 single-hop 301 → 200 (19 targets); 0 links on 27 swept pages; live JSON-LD guard PASS. Doorway **29.49% → 22.83% PASS**. Backups: `stale-place-relink-2026-09-25.json`, `stale-place-pages-2026-09-25.json`. |
 
 ### Batch (c) — two things the plan did not predict
 
@@ -1464,6 +1465,22 @@ Pre-flight 2026-09-25: no published children; all 5 live Spanish twins in the ba
 across 22 outside posts to relink; 0 meta references; no existing redirect points into the set;
 every target published. Pre-deploy dry run of both scripts, with the map function prepended:
 75/75 IDs, types, paths and statuses match.
+
+**Applied 2026-09-25.** PR #147 merged (`630100e`), deploy run 36191064328 succeeded.
+- Relink applied: 52 links across 22 posts, href only, direct column write, `post_modified`
+  untouched. Backup: `docs/backups/stale-place-relink-2026-09-25.json`.
+- Removal dry run reported no link debt. Apply **drafted 75/75**, with full content and meta
+  backed up to `docs/backups/stale-place-pages-2026-09-25.json`. Caches flushed.
+- Verified live: **75/75 single-hop 301 to the mapped target, all 19 targets 200.** No links to
+  the retired URLs on 27 swept pages: the 19 targets, home, blog index, locations hubs,
+  Brunswick, `/es/`, resources. Live JSON-LD guard PASS.
+- **Doorway ratio 171 / 749 = 22.83%, PASS.**
+- `content/meta.json`: the export includes drafts on purpose (content about to publish), so
+  the first regeneration pulled in all 330 retired drafts (817 → 1,072). Retired drafts now
+  carry `_roden_retired`: the 255 restored earlier, these 75, and anything future removal
+  scripts draft. `bin/export-content-meta.php` skips them. Regenerated: **817 → 742**, exactly
+  the 75 removed, nothing else changed. To republish a retired page, delete its
+  `_roden_retired` along with its redirect-map line.
 
 ### Retired pages moved from trash to draft — 2026-09-25
 

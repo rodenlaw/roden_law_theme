@@ -257,6 +257,8 @@ foreach ( $found as $p ) {
         continue;
     }
     $ok = $wpdb->update( $wpdb->posts, array( 'post_status' => 'draft' ), array( 'ID' => $p->ID ), array( '%s' ), array( '%d' ) );
+    // Keeps the retired draft out of content/meta.json (bin/export-content-meta.php).
+    update_post_meta( $p->ID, '_roden_retired', '2026-09-25 stale-place-pages' );
     clean_post_cache( $p->ID );
     if ( false !== $ok && 'draft' === get_post_status( $p->ID ) ) {
         $done++;

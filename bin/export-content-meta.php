@@ -127,6 +127,16 @@ $posts = get_posts( array(
 	'suppress_filters' => true,
 ) );
 
+// Drafts are here because a draft is content about to be published. A RETIRED
+// page is not: since 2026-09-25 the doorway culls set pages to draft instead of
+// trashing them (the trash purges after 30 days), and mark each with
+// _roden_retired. Without this skip the record gained 330 retired pages, and
+// every legal sweep over it would read them as pending content. Republishing
+// one means deleting the marker, which returns it to this record.
+$posts = array_values( array_filter( $posts, function ( $p ) {
+	return '' === (string) get_post_meta( $p->ID, '_roden_retired', true );
+} ) );
+
 $out = array();
 
 foreach ( $posts as $p ) {
