@@ -3003,6 +3003,17 @@ function roden_author_attribution( $post_id = null ) {
 function roden_ai_stats_block( $practice_area_title = '' ) {
     $firm  = roden_firm_data();
     $label = $practice_area_title ? $practice_area_title : __( 'Personal Injury', 'roden-law' );
+
+    // Month and year the figures were last verified. The bespoke locale layer
+    // does not switch WordPress's locale, so date_i18n() prints the English
+    // month on /es/ pages; spell it in Spanish there, as roden_last_refreshed_html() does.
+    $stats_ts = strtotime( $firm['trust_stats']['stats_as_of'] . '-01' );
+    if ( ( function_exists( 'roden_current_lang' ) && 'es' === roden_current_lang() ) || 'es_ES' === get_locale() ) {
+        $months_es   = array( 1 => 'enero', 2 => 'febrero', 3 => 'marzo', 4 => 'abril', 5 => 'mayo', 6 => 'junio', 7 => 'julio', 8 => 'agosto', 9 => 'septiembre', 10 => 'octubre', 11 => 'noviembre', 12 => 'diciembre' );
+        $stats_as_of = $months_es[ (int) gmdate( 'n', $stats_ts ) ] . ' de ' . gmdate( 'Y', $stats_ts );
+    } else {
+        $stats_as_of = date_i18n( 'F Y', $stats_ts );
+    }
     ?>
     <div class="ai-stats-block" data-ai-extractable="true">
         <h3><?php printf( /* translators: %s: practice area title, e.g. "Car Accident Lawyers" or "Personal Injury". */ esc_html__( 'Roden Law %s Results at a Glance', 'roden-law' ), esc_html( $label ) ); ?></h3>
@@ -3026,7 +3037,7 @@ function roden_ai_stats_block( $practice_area_title = '' ) {
                 </tr>
             </tbody>
         </table>
-        <p class="ai-stats-source"><?php printf( /* translators: %s: month and year, e.g. "July 2026". */ esc_html__( 'Source: Roden Law firm records and verified Google Business Profile reviews, updated %s.', 'roden-law' ), esc_html( date_i18n( 'F Y', strtotime( $firm['trust_stats']['stats_as_of'] . '-01' ) ) ) ); ?></p>
+        <p class="ai-stats-source"><?php printf( /* translators: %s: month and year, e.g. "July 2026". */ esc_html__( 'Source: Roden Law firm records and verified Google Business Profile reviews, updated %s.', 'roden-law' ), esc_html( $stats_as_of ) ); ?></p>
     </div>
     <?php
 }
