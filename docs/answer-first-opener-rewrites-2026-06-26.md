@@ -13,7 +13,7 @@ Audit trail for a two-pass rewrite of blog **section-opening sentences** on rode
 
 **Safety:** exact-match replacement with a uniqueness guard (skip unless the old text appears exactly once), a fabrication guard (no statute/number/$ in a rewrite that was not in the original), and three coherence-aware edit modes in Pass 2 — `insert` (replace the fluff sentence), `delete` (drop it; the existing 2nd sentence already answered), `replace2` (replace both when the 2nd sentence back-referenced the 1st).
 
-This same answer-first rule is now enforced in the local-SEO publish gate (`internal-ai-scripts` `lib/qa.mjs`, check `answer_first_openers`) and in the roden-content-writer / gal-content-writer agents, so future posts ship answer-first.
+This same answer-first rule is now enforced in the local-SEO publish gate (`internal-ai-scripts` `lib/qa.mjs`, check `answer_first_openers`) and in the content-writer agents, so future posts ship answer-first.
 
 ---
 

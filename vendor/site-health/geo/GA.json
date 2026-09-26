@@ -1,5 +1,5 @@
 {
-  "_comment": "Georgia place vocabulary for the site-health geo classifier (scripts/site-health/lib/geo-classify.mjs). municipalities = incorporated cities and towns a firm may NAME in a slug (naming is not a licence to add a city page). counties match bare or as <name>-county; any <name>-county token pair is county-level geo even when unlisted. subMunicipal = neighbourhoods, CDPs, districts, landmarks and transit stops BELOW the granularity floor; every metro-Atlanta entry was a live doorway URL on georgiaautolaw.com before the 2026 cull, and the coastal entries are rodenlaw.com's nested location pages. A token that is a municipality in any of the client's states wins over a subMunicipal entry with the same name (Georgetown is a city in SC and a CDP in Chatham County).",
+  "_comment": "Georgia place vocabulary for the site-health geo classifier (scripts/site-health/lib/geo-classify.mjs). municipalities = incorporated cities and towns a firm may NAME in a slug (naming is not a licence to add a city page). counties match bare or as <name>-county; any <name>-county token pair is county-level geo even when unlisted. subMunicipal = neighbourhoods, CDPs, districts, landmarks and transit stops BELOW the granularity floor; the metro-Atlanta and coastal entries were collected from client sites' location pages before their 2026 culls. A token that is a municipality in any of the client's states wins over a subMunicipal entry with the same name (Georgetown is a city in SC and a CDP in Chatham County).",
   "state": "GA",
   "municipalities": [
     "atlanta",
@@ -281,5 +281,5 @@
     "plant-riverside",
     "city-market"
   ],
-  "_generated": "Vendored copy of internal-ai-scripts/geo/GA.json (source sha256 df3390720a88). The toolkit copy is the source of truth; re-run scripts/site-health/vendor.mjs roden."
+  "_generated": "Vendored copy of internal-ai-scripts/geo/GA.json (source sha256 e9b2eb9cb511). The toolkit copy is the source of truth; re-run scripts/site-health/vendor.mjs roden."
 }

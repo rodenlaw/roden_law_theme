@@ -3,13 +3,13 @@
 **Handoff document for Claude Code.** Drop this file in the repo root (or reference it from the WordPress project) and work through the phases in order. Self-contained: all diagnosis, evidence, decision rules, and acceptance criteria are here — no prior conversation context needed.
 
 **Prepared:** 2026-08-21 · from a forensic SEO audit (Semrush data, live-site inspection, Google update timeline)
-**Companion:** georgiaautolaw.com has a parallel plan (`SEO-RECOVERY-PLAN.md` in its repo). Same owner, same playbook, same attacking link networks. That site is deep in suppression; this one is early-stage. The mission here is **pre-emption, not rescue** — ship before the next core update re-rates the domain.
+**Mission:** this site is early-stage in the decline, not deep in suppression, so the mission here is **pre-emption, not rescue** — ship before the next core update re-rates the domain.
 
 ---
 
 ## 1. Situation (read before touching anything)
 
-rodenlaw.com is in the **early stage of an algorithmic quality decline** — the same trajectory that destroyed georgiaautolaw.com twelve months ahead of it. Not yet confirmed whether a manual action exists (owner must check GSC — see Phase 0). Technicals are healthy (WordPress, proper per-type sitemaps, correct canonicals, indexable robots); do not hunt for a technical bug.
+rodenlaw.com is in the **early stage of an algorithmic quality decline** — the trajectory that has collapsed comparable personal-injury sites. Not yet confirmed whether a manual action exists (owner must check GSC — see Phase 0). Technicals are healthy (WordPress, proper per-type sitemaps, correct canonicals, indexable robots); do not hunt for a technical bug.
 
 **The trajectory (Semrush, US db):**
 
@@ -22,12 +22,12 @@ rodenlaw.com is in the **early stage of an algorithmic quality decline** — the
 | Jun 2026 | 5,993 | 98 | 2,309 | May 2026 core verdict · Jun spam update |
 | Jul 2026 | 5,720 | 68 | 1,701 | Current — decline in progress |
 
-Pattern: Google re-rates this domain at every update, each verdict harsher (top-3: 144 → 71 → recovered to 145 → cut to 68 by the May 2026 core, −53% in two months). Traffic −77% from peak even while keyword totals grew — long-tail accumulating, head terms dying. georgiaautolaw.com showed this exact oscillation for a year before the December 2025 core collapsed it. Assume the next core update delivers that verdict here **unless the site changes first**.
+Pattern: Google re-rates this domain at every update, each verdict harsher (top-3: 144 → 71 → recovered to 145 → cut to 68 by the May 2026 core, −53% in two months). Traffic −77% from peak even while keyword totals grew — long-tail accumulating, head terms dying. Comparable sites showed this exact oscillation for a year before the December 2025 core collapsed them. Assume the next core update delivers that verdict here **unless the site changes first**.
 
 **Root causes, ranked:**
 
-1. **Doorway architecture (primary risk).** ~1,500 total URLs: ~470 location pages FIVE levels deep (state → metro → suburb → neighborhood → subdivision: `/locations/south-carolina/charleston/mount-pleasant/old-village/`, `/locations/south-carolina/north-charleston/goose-creek/liberty-hall-plantation/`, `/locations/georgia/savannah/pooler/godley-station/`) + ~650–700 practice URLs including micro-permutations (`/workers-compensation-lawyers/gulfstream-aerospace-injury/`, `/car-accident-lawyers/i-26-accident/`) + `/es/` mirror. Templated place-name-swap content, verified by sampling. *(Counts corrected 2026-08-21: **219** location and **449** practice-area URLs, per the site's own sitemaps and a post-type enumeration. The pattern described here is real and confirmed — only the magnitudes were overstated. See the amendment in §4.)* **Key difference from the sister site: 6 real offices** — Savannah GA, Darien GA, Charleston SC, North Charleston SC, Columbia SC, Myrtle Beach SC — so city-level pages for real markets are legitimate. The liability is everything below city level.
-2. **Spam link networks — identical to the sister site.** "darksidelinks" injection network (26 domains, first seen 2026-02-24, same timestamp as on georgiaautolaw.com — one operation hit both), same PBN vendor (5 domains, Jun 2026), "quarterlinks25" Telegram network (5 domains). Plus three unexplained domain-name anchor blasts (see Phase 0 blockers).
+1. **Doorway architecture (primary risk).** ~1,500 total URLs: ~470 location pages FIVE levels deep (state → metro → suburb → neighborhood → subdivision: `/locations/south-carolina/charleston/mount-pleasant/old-village/`, `/locations/south-carolina/north-charleston/goose-creek/liberty-hall-plantation/`, `/locations/georgia/savannah/pooler/godley-station/`) + ~650–700 practice URLs including micro-permutations (`/workers-compensation-lawyers/gulfstream-aerospace-injury/`, `/car-accident-lawyers/i-26-accident/`) + `/es/` mirror. Templated place-name-swap content, verified by sampling. *(Counts corrected 2026-08-21: **219** location and **449** practice-area URLs, per the site's own sitemaps and a post-type enumeration. The pattern described here is real and confirmed — only the magnitudes were overstated. See the amendment in §4.)* **Key fact: 6 real offices** — Savannah GA, Darien GA, Charleston SC, North Charleston SC, Columbia SC, Myrtle Beach SC — so city-level pages for real markets are legitimate. The liability is everything below city level.
+2. **Spam link networks.** "darksidelinks" injection network (26 domains, first seen 2026-02-24), a PBN cluster (5 domains, Jun 2026), "quarterlinks25" Telegram network (5 domains). Plus three unexplained domain-name anchor blasts (see Phase 0 blockers).
 3. **GBP tracking URLs indexed.** `/locations/south-carolina/myrtle-beach/?utm_campaign=gmb_mb` ranks in place of the clean URL; with 6 offices, expect ~6 variants.
 4. **Brand-identity split.** Site says "Roden Law"; registered name and citations say "Roden + Love, LLC"; a rebrand domain (rodenlovelaw.com, currently not resolving) is being seeded into anchor text at scale.
 
@@ -94,9 +94,9 @@ Pattern: Google re-rates this domain at every update, each verdict harsher (top-
 
 Items marked **[OWNER]** cannot be done in code — surface them as a checklist to the site owner and track completion.
 
-1. **[OWNER] Check GSC → Manual Actions** for this property. (georgiaautolaw.com was clean; confirm here. If an action exists, this plan becomes the reconsideration evidence package.)
-2. **[OWNER — BLOCKER for disavow completeness] Answer the domain-ownership question:** who owns/commissioned `rodenlovelaw.com`, `policylimitscharters.com`, and `iluvgus.com`? Each got ~95–119 referring domains linking to rodenlaw.com with the bare domain as anchor text, all appearing Nov 2025–Jan 2026 — not organic velocity. If a citation/link vendor is doing this, identify and **stop them**; the darksidelinks timestamps prove one operation targets both firm properties.
-3. **Build and upload the disavow file** (partial now, don't wait on #2): the clusters below are disavowable today. Reuse the georgiaautolaw disavow domain list for the shared networks — the darksidelinks and PBN clusters are the same networks; verify each domain actually links to rodenlaw.com via the GSC link export or Semrush before including. Add the quarterlinks25 sources. Hold the three domain-name anchor networks out until #2 is answered, then extend the file.
+1. **[OWNER] Check GSC → Manual Actions** for this property. (If an action exists, this plan becomes the reconsideration evidence package.)
+2. **[OWNER — BLOCKER for disavow completeness] Answer the domain-ownership question:** who owns/commissioned `rodenlovelaw.com`, `policylimitscharters.com`, and `iluvgus.com`? Each got ~95–119 referring domains linking to rodenlaw.com with the bare domain as anchor text, all appearing Nov 2025–Jan 2026 — not organic velocity. If a citation/link vendor is doing this, identify and **stop them**; the darksidelinks timestamps point to a single coordinated operation.
+3. **Build and upload the disavow file** (partial now, don't wait on #2): the clusters below are disavowable today. For the darksidelinks and PBN clusters, verify each domain actually links to rodenlaw.com via the GSC link export or Semrush before including. Add the quarterlinks25 sources. Hold the three domain-name anchor networks out until #2 is answered, then extend the file.
 4. **Fix GBP tracking variants:** 301 the tagged URL to the clean path. **[OWNER — now the primary fix, not a follow-up]** retag the website links in all six Google Business Profiles as `?ref=gmb_<market>`.
 
 > **Amended 2026-08-21 — this item originally prescribed a PHP 301 on `utm_*`. That is unimplementable on this host.** WP Engine strips `utm_*` and `gclid` from the request before it reaches PHP, then reattaches them to the URL returned to the visitor ([wpengine.com/support/utm-gclid-variables-caching/](https://wpengine.com/support/utm-gclid-variables-caching/)). A handler keyed on `utm_*` deploys cleanly, passes its tests, and silently never fires — as one did, shipped and verified inert the same day.
@@ -179,7 +179,6 @@ Produce `url-triage.csv` first (columns: `url, post_type, level, classification,
 ## 7. Already done / open items
 
 - ✅ Full audit published (2026-08-21): https://claude.ai/code/artifact/87212b51-04b3-4712-bdbd-97bb1cb2cc7d
-- ✅ Sister-site (georgiaautolaw.com) disavow uploaded 2026-08-21; its recovery plan exists separately — do not mix the two repos' work.
 - ⬜ GSC Manual Actions check for rodenlaw.com — **not yet confirmed**.
 - ⬜ rodenlaw.com disavow file — **not yet built/uploaded** (Phase 0 item 3).
 - ⬜ Ownership answer on rodenlovelaw.com / policylimitscharters.com / iluvgus.com — **blocker** for disavow completeness and vendor shutdown.
@@ -188,6 +187,6 @@ Produce `url-triage.csv` first (columns: `url, post_type, level, classification,
 
 - Doorway examples: `/locations/south-carolina/charleston/mount-pleasant/old-village/` (sampled: ~1,300 words, place-name-swap template, no nearby office), `/locations/south-carolina/north-charleston/goose-creek/liberty-hall-plantation/`, `/locations/georgia/savannah/pooler/godley-station/`, `/locations/south-carolina/myrtle-beach/little-river/waterfront/`.
 - Micro-permutation examples: `/workers-compensation-lawyers/gulfstream-aerospace-injury/`, `/workers-compensation-lawyers/savannah-port-worker-injury/`, `/car-accident-lawyers/i-26-accident/`, `/resources/two-notch-road-truck-accidents-columbia/`.
-- Spam anchor evidence: "join our telegram https://t.me/s/darksidelinks" (26 domains, first seen 2026-02-24 — identical to sister site); PBN vendor sales-copy anchor (5 domains, Jun 2026); "our telegram chanel https://t.me/s/quarterlinks25" (5 domains); domain-name anchor blasts: rodenlovelaw.com ×119 domains, policylimitscharters.com ×95, iluvgus.com ×22 (Nov 2025–Jan 2026).
+- Spam anchor evidence: "join our telegram https://t.me/s/darksidelinks" (26 domains, first seen 2026-02-24); PBN vendor sales-copy anchor (5 domains, Jun 2026); "our telegram chanel https://t.me/s/quarterlinks25" (5 domains); domain-name anchor blasts: rodenlovelaw.com ×119 domains, policylimitscharters.com ×95, iluvgus.com ×22 (Nov 2025–Jan 2026).
 - Traffic concentration: homepage 35%, compensatory-vs-punitive post 14%, fault-vs-no-fault post 8%, `/truck-accident-lawyers/charleston-sc/` 3%, Myrtle Beach GBP-utm URL 3%.
 - Google updates through audit date: Jun 2025 core (6/30–7/17), Aug 2025 spam (8/26–9/22), Dec 2025 core (12/11–12/29), Mar 2026 spam (3/24–3/25), Mar 2026 core (3/27–4/8), May 2026 core (5/21–6/2), Jun 2026 spam (6/24–6/26), Aug 2026 spam (began 8/18, rolling at audit time).

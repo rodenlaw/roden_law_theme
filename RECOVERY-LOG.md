@@ -1446,6 +1446,21 @@ identification, and changing it without confirming the registered entity name
 could make the notice inaccurate. Both left for the firm to decide. *(Also noted:
 the privacy policy exists twice, at `privacy-policy` and `privacy-policy-2`.)*
 
+### Who signs law for Roden content; a competitor link removed — 2026-09-26
+
+**Owner, 2026-09-26:** Georgia claims on rodenlaw.com are signed off by **Graeham Gillin or
+Eric Roden**, the same as South Carolina (Gillin's rule, 2026-09-23). A shared law pack's
+signature is not approval for Roden content. The Georgia items in
+`data/facts/remediation-2026-09-26.md` go to Gillin or Eric Roden before they publish.
+
+**A live post linked to a competing firm.** `/blog/how-poor-truck-maintenance-causes-charleston-accidents/`
+(3531) sent readers to a competitor's contact page ("broader resources like the team at …")
+before offering Roden's. Retired draft 3528 linked "contacting a personal injury attorney" to
+the same page. Both are removed with `bin/remove-competitor-links.php`: 3531 keeps only
+Roden's contact link; 3528's link is unwrapped. Backup:
+`docs/backups/competitor-links-2026-09-26.json`. A sweep of every post body, meta value,
+excerpt and option for competitor and other outside firm names found no other instance.
+
 ### Comparison table: false rows removed pending sign-off — 2026-09-26
 
 **Owner, 2026-09-26: "apply the fixes when it's done".** The legal-accuracy lead verified every

@@ -1,5 +1,5 @@
 {
-  "_comment": "South Carolina place vocabulary for the site-health geo classifier; same shape and rules as GA.json. Seeded 2026-09-10 from Roden Law's offices (Charleston, North Charleston, Columbia, Myrtle Beach/Murrells Inlet), its service counties, and its nested location pages; extended with the incorporated municipalities of the Lowcountry, Midlands, Grand Strand, Pee Dee and Upstate. Places that are census-designated or unincorporated (Ladson, Carolina Forest, Murrells Inlet, Little River, Red Bank, Lugoff, James Island's West Ashley...) sit below the floor.",
+  "_comment": "South Carolina place vocabulary for the site-health geo classifier; same shape and rules as GA.json. Seeded 2026-09-10 from a client's SC offices (Charleston, North Charleston, Columbia, Myrtle Beach/Murrells Inlet), their service counties, and nested location pages; extended with the incorporated municipalities of the Lowcountry, Midlands, Grand Strand, Pee Dee and Upstate. Places that are census-designated or unincorporated (Ladson, Carolina Forest, Murrells Inlet, Little River, Red Bank, Lugoff, James Island's West Ashley...) sit below the floor.",
   "state": "SC",
   "municipalities": [
     "charleston",
@@ -229,5 +229,5 @@
     "downtown-columbia",
     "downtown-greenville"
   ],
-  "_generated": "Vendored copy of internal-ai-scripts/geo/SC.json (source sha256 88df03c4d5fc). The toolkit copy is the source of truth; re-run scripts/site-health/vendor.mjs roden."
+  "_generated": "Vendored copy of internal-ai-scripts/geo/SC.json (source sha256 04bb1036f3a8). The toolkit copy is the source of truth; re-run scripts/site-health/vendor.mjs roden."
 }

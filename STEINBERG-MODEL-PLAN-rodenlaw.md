@@ -78,7 +78,7 @@ Cadence: 2–3 posts/month, every legal claim carrying a "reviewed by [attorney]
 
 ## 5. Links: earn, never buy — portfolio-wide
 
-- **Hard rule across ALL firm properties** (rodenlaw, georgiaautolaw, and whatever policylimitscharters/iluvgus are): no paid links, PBNs, or citation blasts. The disavowed networks were bought by someone still active as of Aug 2026 — identifying and terminating that vendor is a prerequisite for everything in this section.
+- **Hard rule across ALL Roden Law properties** (rodenlaw.com and any other domain the firm controls): no paid links, PBNs, or citation blasts. The disavowed networks were bought by someone still active as of Aug 2026 — identifying and terminating that vendor is a prerequisite for everything in this section.
 - Channels: research PR (§3) → GA + SC bar associations, trial lawyer associations (two states = double the ecosystem) → maritime/logistics trade press via the port study → community sponsorships with real pages → named-attorney expert commentary (HARO-style, local TV legal segments).
 - Brand prerequisite: resolve Roden Law vs Roden + Love naming (one name, everywhere) so earned mentions consolidate on one entity. Domain migration stays frozen until two stable quarters.
 - KPI: +10–15 editorial referring domains/quarter. Steinberg's moat is 1,215 referring domains vs this site's 491 — the gap closes through §3, nothing else closes it.
