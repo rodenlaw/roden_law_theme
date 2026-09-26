@@ -7,6 +7,9 @@ whose `_roden_jurisdiction` is `both`. That is all **24 English pillars** under
 `/practice-areas/` and all **23 Spanish pillars** under `/es/practice-areas/` (translated
 through `languages/es_ES.po`). Subtype and intersection pages do not render it.
 
+**Sign-off for Roden content (owner, 2026-09-26):** Georgia and South Carolina claims are
+approved by **Graeham Gillin or Eric Roden**. Pack signatures do not substitute for that.
+
 **Sign-off state.** GA pack: **signed** (2026-09-24). Every GA authority this
 plan adds is in `pendingAuthorities[]` and needs an attorney's signature before it can back a *new*
 claim. SC pack: **UNSIGNED**, so it is advisory. **Every South Carolina cell below goes to

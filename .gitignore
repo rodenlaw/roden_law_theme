@@ -38,8 +38,8 @@ content/meta.*.json
 # GSC exports are evidence, not build input — keep the data, ignore the unzip folder
 /https___rodenlaw.com_-Performance-on-Search-*/
 
-# Local-SEO pipeline (moved here from Drive on 2026-09-10, Phase 0). Same
-# policy as client-georgiaautolaw: commit the keyword universe and other
+# Local-SEO pipeline (moved here from Drive on 2026-09-10, Phase 0). Standard
+# toolkit policy: commit the keyword universe and other
 # committed inputs; ignore per-run artifacts, state files, and rank history.
 /data/local-seo/runs/
 /data/local-seo/keyword-universe.proposal.*

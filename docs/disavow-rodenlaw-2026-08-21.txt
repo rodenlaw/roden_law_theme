@@ -2,7 +2,7 @@
 # Generated 2026-08-21 for SEO-PREEMPTION-PLAN-rodenlaw.md, Phase 0 item 3.
 #
 # Every domain below was verified against Semrush Backlink Analytics for
-# rodenlaw.com specifically — not inherited from the georgiaautolaw.com list.
+# rodenlaw.com specifically.
 # Each entry actually links to this domain.
 #
 # PARTIAL BY DESIGN. Two things are deliberately NOT here:
@@ -20,8 +20,7 @@
 # Upload at https://search.google.com/search-console/disavow-links [OWNER]
 
 # Cluster 1 — 'darksidelinks' injection network
-# Anchor: 'JOIN OUR TELEGRAM https://t.me/s/darksidelinks'. First seen 2026-02-24, the same
-# timestamp this network hit georgiaautolaw.com — one operation targeting both firm properties.
+# Anchor: 'JOIN OUR TELEGRAM https://t.me/s/darksidelinks'. First seen 2026-02-24.
 # All links nofollow, all from one footprint page repeated across hosts.
 domain:agroinsursas.com
 domain:ateliereleaurorei.ro

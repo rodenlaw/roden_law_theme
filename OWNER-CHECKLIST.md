@@ -19,8 +19,8 @@ otherwise ready to ship. From `SEO-PREEMPTION-PLAN-rodenlaw.md` Phase 0 and §7.
 
 ## Do this week
 
-- [ ] **Check GSC → Manual Actions** for rodenlaw.com. The sister site was clean;
-      this one is unconfirmed. If an action exists, the plan becomes the
+- [ ] **Check GSC → Manual Actions** for rodenlaw.com. It is still
+      unconfirmed. If an action exists, the plan becomes the
       reconsideration evidence package rather than a pre-emption exercise.
 
 - [ ] **Upload the disavow file** — `docs/disavow-rodenlaw-2026-08-21.txt`,
