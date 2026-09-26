@@ -1,6 +1,6 @@
 # Site architecture plan — rodenlaw.com (2026-09-26)
 
-**Status: approved in part on 2026-09-26. Rule 6 is reopened for a capped, allowlisted office practice layer, and the first retirement batch is in a PR. Wave 1 is not built yet.**
+**Status: approved in part on 2026-09-26. Rule 6 is reopened for a capped, allowlisted office practice layer, and the first retirement batch shipped (157 / 671 = 23.40%). Wave 1 is not built yet.**
 
 This folder is the living plan. Its files:
 
@@ -99,7 +99,7 @@ Today: 171 / 685 = **24.96%**, against a 25% ceiling.
 
 | Step | Geo / total | Ratio |
 |---|---|---|
-| Retire the 14 DEAD geo blog posts (PR open) | 157 / 671 | 23.40% |
+| Retire the 14 DEAD geo blog posts (done 2026-09-26) | 157 / 671 | 23.40% |
 | Wave 1: 11 office practice pages (includes the Charleston car trade) | 168 / 682 | 24.63% |
 | Georgia statewide practice pages (6, not geo) | 168 / 688 | 24.42% |
 | Planned reference pages (≥8, not geo) | 168 / 696 | 24.14% |
@@ -109,14 +109,14 @@ That leaves roughly 6 slots for wave 2. Each further geo page needs 3 non-geo pa
 ## Phases
 
 **P0 — Hygiene and Business Profile landings (weeks 1–2)**
-- Point every office profile at its hub. The Brunswick profile URL now 301s to the Darien hub (PR open). Fix the `/contact-us/` appointment links.
+- Point every office profile at its hub. The Brunswick profile URL now 301s to the Darien hub (live 2026-09-26). Fix the `/contact-us/` appointment links.
 - noindex `/test/`.
 - Resolve the 53 non-sitemap URLs that return 200 and the 9 that 404.
 - Fix the typo redirect for Columbia premises (`premisesliability`).
 - Replace the blanket `RODEN_LOCATION_FREEZE` block with an allowlist (`inc/content-guardrails.php` L253–281). Without this, publishing the Charleston car page gets reverted to draft.
 
 **P1 — Office practice pages, wave 1 (weeks 2–8)**
-- Retire the 14 DEAD geo blog posts first (PR open).
+- Retire the 14 DEAD geo blog posts first — done 2026-09-26.
 - Restore 11 pages at their old URLs, in batches of 3–4. The post drafts survive from 09-25. Order: Charleston car → Charleston truck → Savannah car → Savannah WC → Charleston WC → Charleston motorcycle → Columbia car → North Charleston car → Savannah truck → Charleston wrongful death → Charleston med mal.
 - Each page follows the Charleston car template:
   - one state only

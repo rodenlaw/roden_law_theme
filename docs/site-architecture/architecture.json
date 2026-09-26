@@ -23,7 +23,7 @@
     "rule": "Each geo page needs 3 non-geo pages beside it (geo ≤ total/4). Retiring a non-geo page makes the ratio worse.",
     "ledger": [
       {
-        "step": "Retire the 14 DEAD geo blog posts (0 clicks in 16 mo, <100 impressions in 90 d) — PR open 2026-09-26",
+        "step": "Retire the 14 DEAD geo blog posts (0 clicks in 16 mo, <100 impressions in 90 d) — done 2026-09-26",
         "geo": -14,
         "total": -14
       },
@@ -597,7 +597,7 @@
       "name": "Hygiene and Business Profile landings",
       "weeks": "1–2",
       "items": [
-        "Point every office Business Profile at its /locations/ hub; the Brunswick profile URL now 301s to the Darien hub (PR 2026-09-26); fix the /contact-us/ appointment links",
+        "Point every office Business Profile at its /locations/ hub; the Brunswick profile URL now 301s to the Darien hub (live 2026-09-26); fix the /contact-us/ appointment links",
         "noindex /test/; resolve the 53 non-sitemap URLs that return 200 (testimonial singles, /blog/category/*, /blog/page/N/, /privacy-policy-2/) and the 9 that 404 with impressions",
         "Fix the /practice-areas/premisesliability-lawyers/columbia-sc/ redirect target (404)",
         "Replace RODEN_LOCATION_FREEZE's blanket block with an allowlist of approved office practice pages (content-guardrails.php L253–281)",
@@ -609,7 +609,7 @@
       "name": "Office practice layer, wave 1",
       "weeks": "2–8",
       "items": [
-        "Retire the 14 DEAD geo blog posts first (draft + _roden_retired, single-hop 301) — PR open 2026-09-26",
+        "Retire the 14 DEAD geo blog posts first (draft + _roden_retired, single-hop 301) — done 2026-09-26",
         "Restore 11 pages at their old URLs in batches of 3–4, each SC-only or GA-only, with the office map, NAP, local roads, statutes from the law pack, attorney byline",
         "Order: Charleston car → Charleston truck → Savannah car → Savannah WC → Charleston WC → Charleston motorcycle → Columbia car → North Charleston car → Savannah truck → Charleston wrongful death → Charleston med mal",
         "Legal sweep + Gillin (SC) / Eric Roden (GA) sign-off per page; 301 each nested /practice-areas/{x}/{city}/ duplicate to the flat URL"

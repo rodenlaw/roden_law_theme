@@ -658,6 +658,7 @@ into 8 city-tier towns and 109 nested municipalities; see the recommendation in
 | 2026-09-25 | **Case results** folded into one filterable page | 980 | 824 | 156 | **COMPLETE.** Singles 301 to `/case-results/#{slug}` (#146); posts kept as the page's data, none trashed. Verified: 423/427 old URLs (singles, legacy, old-site) single-hop to a live anchor, 4 malformed legacy slugs to the page, 0 failures; `case_result` sitemap removed. Counts are sitemap URLs, not the 08-21 inventory. |
 | 2026-09-25 | **Stale place pages**: 29 sub-municipal locations + 46 pipeline posts (Brunswick kept) | 824 | 749 | 75 | **COMPLETE.** Redirects deployed (#147), relink applied (52 links, 22 posts, `post_modified` preserved), 75 pages set to **draft** (not trashed) and marked `_roden_retired`, caches flushed. Verified: 75/75 single-hop 301 → 200 (19 targets); 0 links on 27 swept pages; live JSON-LD guard PASS. Doorway **29.49% → 22.83% PASS**. Backups: `stale-place-relink-2026-09-25.json`, `stale-place-pages-2026-09-25.json`. |
 | 2026-09-25 | **Zero-click scenario pages** (64 of 182; step 1 template fix shipped first in #148) | 749 | 685 | 64 | **COMPLETE.** Redirects deployed (#149), 2 legacy redirects repointed off the set, relink applied (85 links, 55 posts, flat + nested), 64 pages drafted and marked `_roden_retired`, 1 meta link unwrapped (truck pillar `_roden_why_hire`), caches flushed. Verified: 128/128 flat + nested single-hop 301 → 200; 0 links left on the 18 pillars; JSON-LD guard PASS. Doorway **22.83% → 24.96% PASS**, with no non-place headroom left. |
+| 2026-09-26 | **Dead geo posts** (14; site-architecture step 1, Rule 6 reopened) | 685 | 671 | 14 | **COMPLETE.** Redirects deployed (#159), 12 legacy redirects repointed off the set, Brunswick profile URL → Darien hub, relink applied (1 link, 1 post), 14 posts drafted and marked `_roden_retired`, caches flushed. Verified: 27/27 single-hop 301 → 200; 0 references left in bodies or meta; JSON-LD guard PASS. Doorway **24.96% → 23.40% PASS**, 10 geo slots freed for wave 1. |
 
 ### Batch (c) — two things the plan did not predict
 
@@ -1482,6 +1483,21 @@ and `/es/locations/`. The owner can retire them separately. Doorway ratio after:
   handler to the retired `darien-ga` PI page and on to the national pillar. It now 301s to
   `/locations/georgia/darien/` via `roden_gbp_landing_urls()`, which is merged into the
   priority-0 removal map.
+
+**Applied 2026-09-26.** Redirects deployed in #159 (`87c0ac9`); prod `legacy-redirects.php`
+md5 matches the repo.
+- **Relink:** 1 link in 1 post (2944 → `/blog/supporting-a-whiplash-claim/`), with
+  `post_modified` untouched. Backup: `docs/backups/dead-geo-relink-2026-09-26.json`.
+- **Removal:** 14/14 drafted and marked `_roden_retired`. Read back from the table: 14 draft.
+  Backup: `docs/backups/dead-geo-posts-2026-09-26.json`.
+- **Sweep:** published post bodies and every post-meta value checked for all 14 paths — 0
+  references left.
+- **Caches:** object cache and page cache both flushed.
+- **Verified live, sequentially with cache-busting:** **27/27** single-hop 301 → 200. That is
+  the 14 retired posts, the 12 repointed legacy redirects, and the Brunswick profile URL →
+  `/locations/georgia/darien/`.
+- **Doorway: 171 / 685 = 24.96% → 157 / 671 = 23.40%, PASS**, which frees 10 geo slots for
+  wave 1. JSON-LD guard PASS. `content/meta.json` `_count` 678 → 664: exactly the 14.
 
 ### SC punitive floor corrected across content — 2026-09-26
 
