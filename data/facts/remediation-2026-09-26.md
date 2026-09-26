@@ -7,6 +7,8 @@ whose `_roden_jurisdiction` is `both`. That is all **24 English pillars** under
 `/practice-areas/` and all **23 Spanish pillars** under `/es/practice-areas/` (translated
 through `languages/es_ES.po`). Subtype and intersection pages do not render it.
 
+**Georgia items: APPROVED for Roden, 2026-09-26** (owner's word; the approver is Gillin or Eric Roden). South Carolina items are still with Gillin.
+
 **Sign-off for Roden content (owner, 2026-09-26):** Georgia and South Carolina claims are
 approved by **Graeham Gillin or Eric Roden**. Pack signatures do not substitute for that.
 

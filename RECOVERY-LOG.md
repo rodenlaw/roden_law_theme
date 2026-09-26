@@ -1446,6 +1446,23 @@ identification, and changing it without confirming the registered entity name
 could make the notice inaccurate. Both left for the firm to decide. *(Also noted:
 the privacy policy exists twice, at `privacy-policy` and `privacy-policy-2`.)*
 
+### Georgia comparison-table items approved; the SC-independent ones shipped — 2026-09-26
+
+**Owner, 2026-09-26: "The georgia items have been approved in the remediation plan."** This is
+Roden's sign-off for every Georgia cell in `data/facts/remediation-2026-09-26.md`. Shipped
+because they stand without an SC cell:
+- **Medical-malpractice pillar, GA deadline:** "2 years; 5-year repose (O.C.G.A. § 9-3-71)", in
+  place of the bare citation. Spanish: "2 años; plazo máximo de 5 años (O.C.G.A. § 9-3-71)".
+- **Minimum Auto Insurance:** the GA cell cites O.C.G.A. § 33-34-4, and the row renders only on
+  the motor-vehicle pillars (car, truck, motorcycle, bicycle, pedestrian, e-scooter, e-bike).
+  Hiding it elsewhere removes the SC cell there, so it states nothing new about SC.
+- **Spanish heading:** "Leyes de Abogados de Negligencia Médica" → "Leyes de Negligencia Médica".
+
+**Staged until Gillin approves the SC side:** the Compensatory and Punitive Damages Cap rows,
+Filing Court, and the workers' comp table. Each pairs an approved GA cell with a pending SC
+one, and the table cannot show one without the other. The source-line change goes with them,
+since the new rows are the ones that cite cases.
+
 ### Who signs law for Roden content; a competitor link removed — 2026-09-26
 
 **Owner, 2026-09-26:** Georgia claims on rodenlaw.com are signed off by **Graeham Gillin or
