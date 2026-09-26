@@ -1319,6 +1319,7 @@ function roden_phase1_removed_urls() {
         roden_stale_place_urls(),
         roden_zero_click_scenario_urls(),
         roden_dead_geo_post_urls(),
+        roden_dead_es_hub_urls(),
         roden_gbp_landing_urls()
     );
 }
@@ -2135,6 +2136,24 @@ function roden_dead_geo_post_urls() {
         '/blog/recovering-lost-wages-after-a-truck-accident-on-i-526/'            => '/blog/claims-for-lost-wages/',
         '/blog/seeking-justice-after-a-fatigued-trucker-accident-on-i-26/'        => '/practice-areas/truck-accident-lawyers/',
         '/blog/port-of-charleston-injury-claims-longshoremen-dock-workers/'       => '/blog/longshoreman-injury-claims/',
+    );
+}
+
+/**
+ * The two Spanish office hubs that never earned a click (0 in 16 months, under
+ * 100 impressions in 90 days), held out of the 14-post batch because they are
+ * office hubs. Owner, 2026-09-26: "retire (but don't delete) those two spanish
+ * pages". Each goes to its English office hub — the office still exists, and
+ * the Darien hub is the owner's chosen Darien-area landing. hreflang heals on its
+ * own: roden_get_translation_id() only pairs a PUBLISHED translation. Doorway
+ * after: 155 / 669 = 23.17%.
+ *
+ * Set to DRAFT and marked _roden_retired, not trashed.
+ */
+function roden_dead_es_hub_urls() {
+    return array(
+        '/es/locations/georgia/darien/'           => '/locations/georgia/darien/',
+        '/es/locations/south-carolina/north-charleston/' => '/locations/south-carolina/north-charleston/',
     );
 }
 
