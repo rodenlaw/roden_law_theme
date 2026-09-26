@@ -3476,6 +3476,37 @@ function roden_jurisdiction_comparison_table( $practice_area_title, $sol_ga = ''
         return;
     }
 
+    /*
+     * Pillars where the table's tort rows are wrong outright (legal-accuracy
+     * review, data/facts/remediation-2026-09-26.md). Workers' comp is a no-fault
+     * statutory scheme with its own deadlines, forum and benefits. On the
+     * maritime pillar the deadline cells showed the federal Jones Act and
+     * Longshore Act periods under "Georgia" and "South Carolina", when both
+     * apply in both states. Nothing renders here until the per-practice
+     * variants in the plan are signed off.
+     */
+    $table_slug = preg_replace( '/^es-/', '', (string) get_post_field( 'post_name', get_the_ID() ) );
+    if ( in_array( $table_slug, array( 'workers-compensation-lawyers', 'maritime-injury-lawyers' ), true ) ) {
+        return;
+    }
+
+    // Deadline cells. The per-pillar _roden_sol_* meta holds a bare citation,
+    // so 39 pillars showed "O.C.G.A. § 9-3-33" with no period. Where the meta
+    // IS the resolver's general citation, print period + citation as the hero
+    // and the scenario-page rules box do. Where it differs (med-mal § 9-3-71 /
+    // § 15-3-545, boating's admiralty note) it is practice-specific and is left
+    // exactly as it rendered before: the resolver only knows the general tort
+    // deadline and would print the wrong statute there.
+    $cmp_cell = function ( $state_key, $meta, $fallback ) {
+        $st = roden_resolve_statute( $state_key );
+        if ( $st && ! empty( $st['statute_years'] ) && ! empty( $st['statute_cite'] ) && ( '' === (string) $meta || trim( $meta ) === $st['statute_cite'] ) ) {
+            return sprintf( _n( '%s year', '%s years', (int) $st['statute_years'], 'roden-law' ), $st['statute_years'] ) . ' (' . $st['statute_cite'] . ')';
+        }
+        return '' !== (string) $meta ? $meta : $fallback;
+    };
+    $sol_ga_cell = $cmp_cell( 'GA', $sol_ga, __( '2 years (O.C.G.A. § 9-3-33)', 'roden-law' ) );
+    $sol_sc_cell = $cmp_cell( 'SC', $sol_sc, __( '3 years (S.C. Code § 15-3-530)', 'roden-law' ) );
+
     $label = preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', $practice_area_title );
     ?>
     <div class="jurisdiction-comparison" data-ai-extractable="true">
@@ -3492,28 +3523,32 @@ function roden_jurisdiction_comparison_table( $practice_area_title, $sol_ga = ''
             <tbody>
                 <tr>
                     <td><strong><?php esc_html_e( 'Statute of Limitations', 'roden-law' ); ?></strong></td>
-                    <td><?php echo esc_html( $sol_ga ?: __( '2 years (O.C.G.A. § 9-3-33)', 'roden-law' ) ); ?></td>
-                    <td><?php echo esc_html( $sol_sc ?: __( '3 years (S.C. Code § 15-3-530)', 'roden-law' ) ); ?></td>
+                    <td><?php echo esc_html( $sol_ga_cell ); ?></td>
+                    <td><?php echo esc_html( $sol_sc_cell ); ?></td>
                 </tr>
                 <tr>
                     <td><strong><?php esc_html_e( 'Comparative Fault Rule', 'roden-law' ); ?></strong></td>
                     <td><?php esc_html_e( 'Modified — recover if less than 50% at fault (O.C.G.A. § 51-12-33)', 'roden-law' ); ?></td>
                     <td><?php esc_html_e( 'Modified — recover if less than 51% at fault', 'roden-law' ); ?></td>
                 </tr>
-                <tr>
-                    <td><strong><?php esc_html_e( 'Damage Cap', 'roden-law' ); ?></strong></td>
-                    <td><?php esc_html_e( 'No cap on compensatory damages; punitive capped at $250,000 in most cases (O.C.G.A. § 51-12-5.1)', 'roden-law' ); ?></td>
-                    <td><?php esc_html_e( 'No cap on compensatory damages; punitive damages capped at the greater of 3x compensatory damages or $500,000, with exceptions (S.C. Code § 15-32-530)', 'roden-law' ); ?></td>
-                </tr>
+                <?php
+                /*
+                 * "Damage Cap" and "Filing Court" rows removed 2026-09-26. The
+                 * legal-accuracy review (data/facts/remediation-2026-09-26.md)
+                 * found false cells in both: both court cells state dollar floors
+                 * that do not exist; "No cap on compensatory damages" is false
+                 * against government and, in SC, in medical malpractice and
+                 * nursing-home claims; the SC punitive floor is indexed
+                 * ($739,245 for 2026), not $500,000. The corrected rows need
+                 * Gillin's review (SC) and Wade's signature on the new GA
+                 * authorities, so the rows are out rather than replaced with
+                 * wording nobody has signed.
+                 */
+                ?>
                 <tr>
                     <td><strong><?php esc_html_e( 'Minimum Auto Insurance', 'roden-law' ); ?></strong></td>
                     <td><?php esc_html_e( '25/50/25 liability coverage required', 'roden-law' ); ?></td>
                     <td><?php esc_html_e( '25/50/25 liability coverage required', 'roden-law' ); ?></td>
-                </tr>
-                <tr>
-                    <td><strong><?php esc_html_e( 'Filing Court', 'roden-law' ); ?></strong></td>
-                    <td><?php esc_html_e( 'Superior Court (claims over $15,000)', 'roden-law' ); ?></td>
-                    <td><?php esc_html_e( 'Circuit Court (claims over $7,500)', 'roden-law' ); ?></td>
                 </tr>
             </tbody>
         </table>
