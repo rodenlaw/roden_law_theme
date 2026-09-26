@@ -3477,45 +3477,77 @@ function roden_jurisdiction_comparison_table( $practice_area_title, $sol_ga = ''
     }
 
     /*
-     * Pillars where the table's tort rows are wrong outright (legal-accuracy
-     * review, data/facts/remediation-2026-09-26.md). Workers' comp is a no-fault
-     * statutory scheme with its own deadlines, forum and benefits. On the
-     * maritime pillar the deadline cells showed the federal Jones Act and
-     * Longshore Act periods under "Georgia" and "South Carolina", when both
-     * apply in both states. Nothing renders here until the per-practice
-     * variants in the plan are signed off.
+     * Every cell below was verified against primary law by the legal-accuracy
+     * review (data/facts/remediation-2026-09-26.md) and approved for Roden on
+     * 2026-09-26: Georgia cells by Gillin or Eric Roden, South Carolina cells by
+     * Gillin. Cells are practice-aware, keyed by pillar slug (EN and ES slugs
+     * match once the es- prefix is stripped). Change a cell only through that
+     * review; the sweep cannot see theme strings, so the fixture
+     * law/fixtures/roden-comparison-table-2026-09-26.json is the automated check.
+     *
+     * Maritime renders nothing: Jones Act and Longshore claims are federal and
+     * identical in both states, so a "differs by state" table misstates them.
      */
     $table_slug = preg_replace( '/^es-/', '', (string) get_post_field( 'post_name', get_the_ID() ) );
-    if ( in_array( $table_slug, array( 'workers-compensation-lawyers', 'maritime-injury-lawyers' ), true ) ) {
+    if ( 'maritime-injury-lawyers' === $table_slug ) {
         return;
     }
 
-    // Deadline cells. The per-pillar _roden_sol_* meta holds a bare citation,
-    // so 39 pillars showed "O.C.G.A. § 9-3-33" with no period. Where the meta
-    // IS the resolver's general citation, print period + citation as the hero
-    // and the scenario-page rules box do. Where it differs (med-mal § 9-3-71 /
-    // § 15-3-545, boating's admiralty note) it is practice-specific and is left
-    // exactly as it rendered before: the resolver only knows the general tort
-    // deadline and would print the wrong statute there.
-    $cmp_cell = function ( $state_key, $meta, $fallback ) {
-        $st = roden_resolve_statute( $state_key );
-        if ( $st && ! empty( $st['statute_years'] ) && ! empty( $st['statute_cite'] ) && ( '' === (string) $meta || trim( $meta ) === $st['statute_cite'] ) ) {
-            return sprintf( _n( '%s year', '%s years', (int) $st['statute_years'], 'roden-law' ), $st['statute_years'] ) . ' (' . $st['statute_cite'] . ')';
+    if ( 'workers-compensation-lawyers' === $table_slug ) {
+        // Workers' comp is a no-fault statutory scheme: its own deadlines, forum
+        // and benefits. None of the tort rows apply.
+        $rows = array(
+            array( __( 'Claim Deadline', 'roden-law' ), __( '1 year from injury, extended by employer-paid treatment or benefits (O.C.G.A. § 34-9-82)', 'roden-law' ), __( '2 years from the accident (S.C. Code § 42-15-40)', 'roden-law' ) ),
+            array( __( 'Notice to Employer', 'roden-law' ), __( 'Within 30 days (O.C.G.A. § 34-9-80)', 'roden-law' ), __( 'Within 90 days (S.C. Code § 42-15-20)', 'roden-law' ) ),
+            array( __( 'Fault', 'roden-law' ), __( 'Not a factor, except willful misconduct or intoxication (O.C.G.A. § 34-9-17)', 'roden-law' ), __( 'Not a factor, except intoxication or intent to injure (S.C. Code § 42-9-60)', 'roden-law' ) ),
+            array( __( 'Damages', 'roden-law' ), __( 'No pain-and-suffering damages; weekly benefits capped by statute (O.C.G.A. §§ 34-9-11, 34-9-261)', 'roden-law' ), __( 'No pain-and-suffering damages; weekly benefits capped at the state average weekly wage (S.C. Code §§ 42-1-540, 42-9-10)', 'roden-law' ) ),
+            array( __( 'Punitive Damages', 'roden-law' ), __( 'Not available against the employer (O.C.G.A. § 34-9-11)', 'roden-law' ), __( 'Not available against the employer (S.C. Code § 42-1-540)', 'roden-law' ) ),
+            array( __( 'Where to File', 'roden-law' ), __( "State Board of Workers' Compensation (O.C.G.A. § 34-9-82(c))", 'roden-law' ), __( "S.C. Workers' Compensation Commission (S.C. Code § 42-15-40)", 'roden-law' ) ),
+        );
+    } else {
+        // Deadline cells. The per-pillar _roden_sol_* meta holds a bare citation.
+        // Where it IS the resolver's general citation, print period + citation;
+        // where it differs (boating's admiralty note) leave it as written, because
+        // the resolver only knows the general tort deadline.
+        $cmp_cell = function ( $state_key, $meta, $fallback ) {
+            $st = roden_resolve_statute( $state_key );
+            if ( $st && ! empty( $st['statute_years'] ) && ! empty( $st['statute_cite'] ) && ( '' === (string) $meta || trim( $meta ) === $st['statute_cite'] ) ) {
+                return sprintf( _n( '%s year', '%s years', (int) $st['statute_years'], 'roden-law' ), $st['statute_years'] ) . ' (' . $st['statute_cite'] . ')';
+            }
+            return '' !== (string) $meta ? $meta : $fallback;
+        };
+        $sol_ga_cell = $cmp_cell( 'GA', $sol_ga, __( '2 years (O.C.G.A. § 9-3-33)', 'roden-law' ) );
+        $sol_sc_cell = $cmp_cell( 'SC', $sol_sc, __( '3 years (S.C. Code § 15-3-530)', 'roden-law' ) );
+
+        $comp_ga = __( 'No cap, except some claims against government (e.g., O.C.G.A. § 50-21-29)', 'roden-law' );
+        $comp_sc = __( 'No general cap; capped in medical malpractice and against government or charities (S.C. Code §§ 15-32-220, 15-78-120, 33-56-180)', 'roden-law' );
+
+        if ( 'medical-malpractice-lawyers' === $table_slug ) {
+            $sol_ga_cell = __( '2 years; 5-year repose (O.C.G.A. § 9-3-71)', 'roden-law' );
+            $sol_sc_cell = __( '3 years from treatment or discovery; 6-year repose (S.C. Code § 15-3-545)', 'roden-law' );
+            $comp_ga     = __( "No cap; Georgia's med-mal cap was struck down (Atlanta Oculoplastic Surgery v. Nestlehutt, 2010)", 'roden-law' );
+            $comp_sc     = __( 'Non-economic damages capped at $596,001 per provider, $1,788,002 total (2026; adjusted yearly), with exceptions (S.C. Code § 15-32-220)', 'roden-law' );
+        } elseif ( 'nursing-home-abuse-lawyers' === $table_slug ) {
+            $comp_sc = __( 'Non-economic damages capped in malpractice claims ($596,001 per facility, 2026) and against nonprofit facilities (S.C. Code §§ 15-32-220, 33-56-180)', 'roden-law' );
+        } elseif ( 'wrongful-death-lawyers' === $table_slug ) {
+            $sol_sc_cell = __( '3 years from the date of death (S.C. Code § 15-3-530)', 'roden-law' );
         }
-        return '' !== (string) $meta ? $meta : $fallback;
-    };
-    $sol_ga_cell = $cmp_cell( 'GA', $sol_ga, __( '2 years (O.C.G.A. § 9-3-33)', 'roden-law' ) );
 
-    // Per-practice cells approved for Roden 2026-09-26 (data/facts/remediation-2026-09-26.md).
-    // Georgia's med-mal deadline carries a five-year repose the general cell cannot state.
-    if ( 'medical-malpractice-lawyers' === $table_slug ) {
-        $sol_ga_cell = __( '2 years; 5-year repose (O.C.G.A. § 9-3-71)', 'roden-law' );
+        $rows = array(
+            array( __( 'Statute of Limitations', 'roden-law' ), $sol_ga_cell, $sol_sc_cell ),
+            array( __( 'Comparative Fault Rule', 'roden-law' ), __( 'Modified — recover if less than 50% at fault (O.C.G.A. § 51-12-33)', 'roden-law' ), __( 'Modified — recover if 50% or less at fault (Nelson v. Concrete Supply Co., 1991)', 'roden-law' ) ),
+            array( __( 'Compensatory Damages Cap', 'roden-law' ), $comp_ga, $comp_sc ),
+            // The SC figure is indexed each February (S.C. Code § 15-32-530(D)); update it and the med-mal caps above when the RFA publishes.
+            array( __( 'Punitive Damages Cap', 'roden-law' ), __( '$250,000 in most cases; no cap for product liability, intent to harm, or impairment (O.C.G.A. § 51-12-5.1)', 'roden-law' ), __( 'Greater of 3x compensatory or $739,245 (2026; adjusted yearly), with exceptions (S.C. Code § 15-32-530)', 'roden-law' ) ),
+        );
+
+        // "Minimum Auto Insurance" only means something on a motor-vehicle pillar.
+        if ( in_array( $table_slug, array( 'car-accident-lawyers', 'truck-accident-lawyers', 'motorcycle-accident-lawyers', 'bicycle-accident-lawyers', 'pedestrian-accident-lawyers', 'electric-scooter-accident-lawyers', 'e-bike-accident-lawyers' ), true ) ) {
+            $rows[] = array( __( 'Minimum Auto Insurance', 'roden-law' ), __( '25/50/25 liability coverage required (O.C.G.A. § 33-34-4)', 'roden-law' ), __( '25/50/25 liability coverage required (S.C. Code § 38-77-140)', 'roden-law' ) );
+        }
+
+        $rows[] = array( __( 'Filing Court', 'roden-law' ), __( 'Superior or State Court, any amount; Magistrate Court up to $15,000 (O.C.G.A. § 15-10-2)', 'roden-law' ), __( 'Circuit Court (Common Pleas), any amount; Magistrate Court up to $7,500 (S.C. Code § 22-3-10)', 'roden-law' ) );
     }
-
-    // "Minimum Auto Insurance" is true everywhere but only means something on a
-    // motor-vehicle pillar; on med-mal, workers' comp or dog-bite it tells the reader nothing.
-    $cmp_motor = in_array( $table_slug, array( 'car-accident-lawyers', 'truck-accident-lawyers', 'motorcycle-accident-lawyers', 'bicycle-accident-lawyers', 'pedestrian-accident-lawyers', 'electric-scooter-accident-lawyers', 'e-bike-accident-lawyers' ), true );
-    $sol_sc_cell = $cmp_cell( 'SC', $sol_sc, __( '3 years (S.C. Code § 15-3-530)', 'roden-law' ) );
 
     $label = preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', $practice_area_title );
     // Spanish pillar titles lead with "Abogados de …", which the English strip
@@ -3534,46 +3566,16 @@ function roden_jurisdiction_comparison_table( $practice_area_title, $sol_ga = ''
                 </tr>
             </thead>
             <tbody>
+                <?php foreach ( $rows as $row ) : ?>
                 <tr>
-                    <td><strong><?php esc_html_e( 'Statute of Limitations', 'roden-law' ); ?></strong></td>
-                    <td><?php echo esc_html( $sol_ga_cell ); ?></td>
-                    <td><?php echo esc_html( $sol_sc_cell ); ?></td>
+                    <td><strong><?php echo esc_html( $row[0] ); ?></strong></td>
+                    <td><?php echo esc_html( $row[1] ); ?></td>
+                    <td><?php echo esc_html( $row[2] ); ?></td>
                 </tr>
-                <tr>
-                    <td><strong><?php esc_html_e( 'Comparative Fault Rule', 'roden-law' ); ?></strong></td>
-                    <td><?php esc_html_e( 'Modified — recover if less than 50% at fault (O.C.G.A. § 51-12-33)', 'roden-law' ); ?></td>
-                    <td><?php esc_html_e( 'Modified — recover if less than 51% at fault', 'roden-law' ); ?></td>
-                </tr>
-                <?php
-                /*
-                 * "Damage Cap" and "Filing Court" rows removed 2026-09-26. The
-                 * legal-accuracy review (data/facts/remediation-2026-09-26.md)
-                 * found false cells in both: both court cells state dollar floors
-                 * that do not exist; "No cap on compensatory damages" is false
-                 * against government and, in SC, in medical malpractice and
-                 * nursing-home claims; the SC punitive floor is indexed
-                 * ($739,245 for 2026), not $500,000. The corrected rows need
-                 * Gillin's review (SC) and attorney signature on the new GA
-                 * authorities, so the rows are out rather than replaced with
-                 * wording nobody has signed.
-                 */
-                ?>
-                <?php if ( $cmp_motor ) : ?>
-                <tr>
-                    <td><strong><?php esc_html_e( 'Minimum Auto Insurance', 'roden-law' ); ?></strong></td>
-                    <td><?php esc_html_e( '25/50/25 liability coverage required (O.C.G.A. § 33-34-4)', 'roden-law' ); ?></td>
-                    <td><?php esc_html_e( '25/50/25 liability coverage required', 'roden-law' ); ?></td>
-                </tr>
-                <?php endif; ?>
+                <?php endforeach; ?>
             </tbody>
         </table>
-        <?php
-        // This line used to end "Verified <current month>", which printed
-        // whatever month it was on every render: a claim about legal authority
-        // that nobody had made. The table has no single verification date, so
-        // it states its sources and no date. (Removed 2026-09-25.)
-        ?>
-        <p class="comparison-source"><em><?php esc_html_e( 'Source: Georgia Code (O.C.G.A.) and South Carolina Code of Laws.', 'roden-law' ); ?></em></p>
+        <p class="comparison-source"><em><?php esc_html_e( 'Sources: Georgia and South Carolina statutes and court decisions, as cited in each row.', 'roden-law' ); ?></em></p>
     </div>
     <?php
 }

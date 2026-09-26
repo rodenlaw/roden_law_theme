@@ -1446,6 +1446,33 @@ identification, and changing it without confirming the registered entity name
 could make the notice inaccurate. Both left for the firm to decide. *(Also noted:
 the privacy policy exists twice, at `privacy-policy` and `privacy-policy-2`.)*
 
+### SC items approved by Gillin; the full comparison table ships — 2026-09-26
+
+**Owner, 2026-09-26: "Gillin approves these."** That is the SC wording in the review email
+(items 1 and 3–9), as proposed: keep the $739,245 figure and update it each February. Items 10
+(does § 15-3-545 reach nursing-home claims) and 11 (maritime fault on the boating pillar) were
+questions, not proposals, so those cells are unchanged. Item 12: the rule stays at error; it
+is moot once the 26 pages are fixed.
+
+`roden_jurisdiction_comparison_table()` rebuilt as a list of rows, every cell as approved:
+- **General pillars:** deadline; comparative fault (SC now "50% or less", citing *Nelson*);
+  Compensatory Damages Cap; Punitive Damages Cap (SC $739,245, 2026, indexed); Minimum Auto
+  Insurance (motor-vehicle pillars, both cited); Filing Court (no dollar floors).
+- **Medical malpractice:** repose in both deadline cells; GA compensatory cites *Nestlehutt*;
+  SC non-economic caps $596,001 / $1,788,002.
+- **Nursing home:** SC compensatory cell with the malpractice and charitable caps.
+- **Wrongful death:** SC deadline runs from the date of death.
+- **Workers' comp:** its own six rows (claim deadline, notice, fault, damages, punitive, where
+  to file). **Maritime:** still no table.
+- **Source line:** "Sources: Georgia and South Carolina statutes and court decisions, as cited
+  in each row."
+- **Spanish:** 33 new strings, `es_ES.mo` 611 entries. Rendered in memory on prod for eight
+  pillars before merge.
+
+**Annual maintenance:** each February, when the RFA publishes, the SC punitive floor
+($739,245) and the med-mal caps ($596,001 / $1,788,002) change. Update the cells and the
+Spanish.
+
 ### Georgia comparison-table items approved; the SC-independent ones shipped — 2026-09-26
 
 **Owner, 2026-09-26: "The georgia items have been approved in the remediation plan."** This is
