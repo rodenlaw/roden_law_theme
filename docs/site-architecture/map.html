@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Roden Site Map Plan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{
+  --bg:#F3F5F4; --surface:#FFFFFF; --ink:#18242E; --muted:#5A6A73; --line:#D6DEDD; --soft:#EAEFEE;
+  --accent:#0E6E6B;
+  --keep:#5A6A73;   --keep-bg:#F1F4F3;
+  --up:#1F5FA8;     --up-bg:#E4EDF8;
+  --restore:#1F7A4A;--restore-bg:#E1F2E8;
+  --cand:#7A5AA8;   --cand-bg:#F0EAF8;
+  --build:#0E6E6B;  --build-bg:#DFF0EE;
+  --fix:#A0620F;    --fix-bg:#FBEFD9;
+  --prune:#8A4A48;  --prune-bg:#F6E5E4;
+  --serif:"Source Serif 4", Georgia, serif;
+  --sans:"Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, Menlo, monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#10161A; --surface:#172027; --ink:#E2E9EC; --muted:#98A8B0; --line:#2A363E; --soft:#1D2830;
+    --accent:#5BBDB7;
+    --keep:#A3B1B8; --keep-bg:#1D2830;
+    --up:#7FB0EA; --up-bg:#16273A;
+    --restore:#6CCB95; --restore-bg:#14291E;
+    --cand:#B89AE6; --cand-bg:#251D33;
+    --build:#5BBDB7; --build-bg:#12302E;
+    --fix:#E3AE57; --fix-bg:#2E2414;
+    --prune:#E39A96; --prune-bg:#321B1A;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#10161A; --surface:#172027; --ink:#E2E9EC; --muted:#98A8B0; --line:#2A363E; --soft:#1D2830;
+  --accent:#5BBDB7;
+  --keep:#A3B1B8; --keep-bg:#1D2830;
+  --up:#7FB0EA; --up-bg:#16273A;
+  --restore:#6CCB95; --restore-bg:#14291E;
+  --cand:#B89AE6; --cand-bg:#251D33;
+  --build:#5BBDB7; --build-bg:#12302E;
+  --fix:#E3AE57; --fix-bg:#2E2414;
+  --prune:#E39A96; --prune-bg:#321B1A;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:15px/1.55 var(--sans);padding-inline:20px;padding-block:0 60px}
+.wrap{max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+header{padding-top:36px;display:flex;flex-direction:column;gap:10px;border-bottom:1px solid var(--line);padding-bottom:24px}
+.eyebrow{font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);font-weight:700}
+h1{font-family:var(--serif);font-size:clamp(28px,4vw,40px);line-height:1.15;margin:0;text-wrap:balance}
+h2{font-family:var(--serif);font-size:24px;margin:0;text-wrap:balance}
+h3{font-size:14px;margin:0;letter-spacing:.01em}
+p{margin:0;max-width:72ch}
+.meta{color:var(--muted);font-size:13px;display:flex;flex-wrap:wrap;gap:4px 16px}
+.pill{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:4px;background:var(--fix-bg);color:var(--fix)}
+section{display:flex;flex-direction:column;gap:16px}
+.thesis{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;list-style:none;padding:0;margin:0}
+.thesis li{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px 16px;font-size:14px}
+
+/* budget */
+.budget{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px 20px;display:flex;flex-direction:column;gap:14px}
+.bars{display:flex;flex-direction:column;gap:10px}
+.bar-row{display:grid;grid-template-columns:minmax(150px,280px) 1fr 76px;gap:12px;align-items:center;font-size:13px}
+.bar{position:relative;height:14px;background:var(--soft);border-radius:7px;overflow:hidden}
+.bar i{position:absolute;inset:0 auto 0 0;background:var(--accent);border-radius:7px}
+.bar i.over{background:var(--prune)}
+.bar b{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--ink);left:calc(25/30*100%)}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right}
+.note{font-size:13px;color:var(--muted)}
+
+/* legend */
+.legend{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:13px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{width:14px;height:14px;border-radius:3px;border:2px solid}
+
+/* tree */
+.map-scroll{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px}
+.tree,.tree ul{list-style:none;margin:0;padding:0}
+.tree ul{padding-left:28px;position:relative}
+.tree li{position:relative;padding:5px 0 5px 18px}
+.tree ul>li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--line)}
+.tree ul>li:last-child::before{bottom:auto;height:24px}
+.tree ul>li::after{content:"";position:absolute;left:0;top:24px;width:16px;border-top:2px solid var(--line)}
+.tree>li{padding-left:0}
+.node{display:inline-flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;border:2px solid var(--keep);background:var(--keep-bg);border-radius:8px;padding:7px 11px;cursor:pointer;min-width:230px;max-width:560px;text-align:left;font:inherit;color:inherit}
+.node:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.node .t{font-weight:700;font-size:14px}
+.node .u{font-family:var(--mono);font-size:11.5px;color:var(--muted);word-break:break-all}
+.node .m{font-family:var(--mono);font-size:11.5px;color:var(--muted);width:100%}
+.node .k{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:1px 6px;border-radius:3px;background:var(--surface)}
+.k-keep{border-color:var(--keep);background:var(--keep-bg)} .k-keep .k{color:var(--keep)}
+.k-upgrade{border-color:var(--up);background:var(--up-bg)} .k-upgrade .k{color:var(--up)}
+.k-restore{border-color:var(--restore);background:var(--restore-bg)} .k-restore .k{color:var(--restore)}
+.k-candidate{border-color:var(--cand);background:var(--cand-bg);border-style:dashed} .k-candidate .k{color:var(--cand)}
+.k-build,.k-grow{border-color:var(--build);background:var(--build-bg);border-style:dashed} .k-build .k,.k-grow .k{color:var(--build)}
+.k-fix{border-color:var(--fix);background:var(--fix-bg)} .k-fix .k{color:var(--fix)}
+.k-consolidate,.k-prune{border-color:var(--prune);background:var(--prune-bg)} .k-consolidate .k,.k-prune .k{color:var(--prune)}
+.geo{font-size:10.5px;font-weight:700;color:var(--muted);border:1px solid var(--line);border-radius:3px;padding:0 5px;background:var(--surface)}
+.node.sel{box-shadow:0 0 0 3px var(--accent)}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:16px;align-items:start}
+.detail{position:sticky;top:12px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;flex-direction:column;gap:10px;font-size:14px}
+.detail dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:0;font-size:13px}
+.detail dt{color:var(--muted)} .detail dd{margin:0;font-family:var(--mono);font-size:12.5px;word-break:break-word}
+
+/* links */
+.flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.flow .card{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px 14px;display:flex;flex-direction:column;gap:6px;font-size:13.5px}
+.flow .path{font-weight:700;font-size:13.5px}
+.flow .path span{color:var(--accent);padding:0 4px}
+
+/* phases */
+.phases{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.phase{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px 16px;display:flex;flex-direction:column;gap:8px}
+.phase .id{font-family:var(--mono);font-weight:600;color:var(--accent);font-size:13px}
+.phase ul{margin:0;padding-left:18px;font-size:13px;display:flex;flex-direction:column;gap:5px}
+.decisions{background:var(--fix-bg);border:1px solid var(--fix);border-radius:10px;padding:16px 20px}
+.decisions ol{margin:8px 0 0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+.err{background:var(--prune-bg);color:var(--prune);padding:12px 16px;border-radius:8px}
+@media (max-width:900px){.layout{grid-template-columns:1fr}.detail{position:static}}
+@media (max-width:480px){body{padding-inline:16px}.bar-row{grid-template-columns:1fr 60px}.bar-row .bar{grid-column:1/-1;order:3}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">rodenlaw.com · site architecture</div>
+    <h1>Where every page sits, and what earns its place</h1>
+    <div class="meta" id="meta"></div>
+  </header>
+
+  <section><h2>The thesis</h2><ul class="thesis" id="thesis"></ul></section>
+
+  <section>
+    <h2>Geo budget</h2>
+    <div class="budget">
+      <p class="note" id="budget-rule"></p>
+      <div class="bars" id="bars"></div>
+      <p class="note">The black tick is the 25% ceiling the site-health doorway check enforces. Scale runs to 30%.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>The map</h2>
+    <div class="legend" id="legend"></div>
+    <div class="layout">
+      <div class="map-scroll"><ul class="tree" id="tree"></ul></div>
+      <aside class="detail" id="detail"><h3>Select a page or section</h3><p class="note">Each box shows its URL, its last-90-day clicks and impressions from Search Console, and the proposed action. Dashed boxes do not exist yet.</p></aside>
+    </div>
+  </section>
+
+  <section><h2>How pages link</h2><div class="flow" id="flow"></div></section>
+  <section><h2>Phases</h2><div class="phases" id="phases"></div></section>
+  <section class="decisions"><h3>Decisions needed from the owner</h3><ol id="decisions"></ol></section>
+</div>
+
+<script>
+const KIND={keep:"Keep",upgrade:"Upgrade",restore:"Restore · wave 1",candidate:"Candidate · wave 2",build:"Build",grow:"Grow",fix:"Fix",consolidate:"Consolidate",prune:"Prune"};
+const fmt=n=>n==null?"–":Number(n).toLocaleString("en-US");
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+fetch("architecture.json",{cache:"no-store"}).then(r=>r.json()).then(render).catch(e=>{
+  document.querySelector(".wrap").insertAdjacentHTML("beforeend",`<p class="err">Could not load architecture.json (${esc(e.message)}). Serve this folder over HTTP, e.g. python3 -m http.server.</p>`);
+});
+
+function render(A){
+  document.getElementById("meta").innerHTML=`<span class="pill">${esc(A.status)}</span><span>Updated ${esc(A.updated)}</span><span>${esc(A.sources.gsc.split(";")[0])}</span>`;
+  document.getElementById("thesis").innerHTML=A.thesis.map(t=>`<li>${esc(t)}</li>`).join("");
+
+  // budget
+  const g=A.geoBudget; document.getElementById("budget-rule").textContent=g.rule;
+  let geo=g.now.geo,tot=g.now.total; const rows=[{label:"Today",geo,tot}];
+  g.ledger.forEach(s=>{geo+=s.geo;tot+=s.total;rows.push({label:s.step,geo,tot})});
+  document.getElementById("bars").innerHTML=rows.map(r=>{const p=r.geo/r.tot*100;return `<div class="bar-row"><span>${esc(r.label)} <span class="note">(${r.geo}/${r.tot})</span></span><div class="bar"><i class="${p>g.ceilingPct?'over':''}" style="width:${Math.min(p/30*100,100)}%"></i><b></b></div><span class="num">${p.toFixed(2)}%</span></div>`}).join("");
+
+  // legend
+  document.getElementById("legend").innerHTML=Object.entries({keep:1,upgrade:1,restore:1,candidate:1,build:1,fix:1,consolidate:1}).map(([k])=>`<span><i class="sw k-${k}" style="border-style:${k==='candidate'||k==='build'?'dashed':'solid'}"></i>${KIND[k]}</span>`).join("")+`<span><i class="geo">GEO</i> counts toward the doorway ratio</span>`;
+
+  // tree
+  const byId={};
+  const li=n=>{byId[n.id]=n;const m=n.metrics||{},e=n.evidence||{};
+    const bits=[];
+    if(m.pages!=null)bits.push(`${fmt(m.pages)} pages`);
+    if(m.clicks90!=null)bits.push(`${fmt(m.clicks90)} clicks/90d`);
+    if(m.impr90!=null)bits.push(`${fmt(m.impr90)} impr/90d`);
+    if(m.pos90!=null)bits.push(`pos ${m.pos90}`);
+    if(e.impr16!=null)bits.push(`${fmt(e.impr16)} impr/16mo`);
+    if(e.pos90!=null)bits.push(`pos ${e.pos90} (90d)`);
+    if(e.semrushVol!=null)bits.push(`${fmt(e.semrushVol)}/mo`);
+    const kids=(n.children||[]).map(li).join("");
+    return `<li><button class="node k-${n.kind}" data-id="${esc(n.id)}" type="button"><span class="t">${esc(n.label)}</span>${n.geo?'<span class="geo">GEO</span>':''}<span class="k">${esc(KIND[n.kind]||n.kind)}</span><span class="u">${esc(n.url)}</span>${bits.length?`<span class="m">${bits.join(" · ")}</span>`:""}</button>${kids?`<ul>${kids}</ul>`:""}</li>`;
+  };
+  const tree=document.getElementById("tree"); tree.innerHTML=li(A.tree);
+  tree.addEventListener("click",ev=>{const b=ev.target.closest(".node");if(!b)return;
+    tree.querySelectorAll(".sel").forEach(x=>x.classList.remove("sel"));b.classList.add("sel");
+    const n=byId[b.dataset.id];const d=document.getElementById("detail");
+    const kv=Object.assign({},n.metrics||{},n.evidence||{});
+    d.innerHTML=`<h3>${esc(n.label)}</h3><span class="node k-${n.kind}" style="min-width:0;cursor:default"><span class="k">${esc(KIND[n.kind]||n.kind)}</span>${n.wave?`<span class="k">wave ${n.wave}</span>`:""}${n.approved?`<span class="k">approved ${esc(n.approved)}</span>`:""}</span><dl><dt>URL</dt><dd>${esc(n.url)}</dd>${Object.entries(kv).map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(typeof v==='number'?fmt(v):v)}</dd>`).join("")}</dl>${n.role?`<p>${esc(n.role)}</p>`:""}${n.note?`<p class="note">${esc(n.note)}</p>`:""}`;
+  });
+
+  document.getElementById("flow").innerHTML=A.links.map(l=>`<div class="card"><div class="path">${esc(l.from)}<span>→</span>${esc(l.to)}</div><div>${esc(l.rule)}</div></div>`).join("");
+  document.getElementById("phases").innerHTML=A.phases.map(p=>`<div class="phase"><div class="id">${esc(p.id)} · weeks ${esc(p.weeks)}</div><h3>${esc(p.name)}</h3><ul>${p.items.map(i=>`<li>${esc(i)}</li>`).join("")}</ul></div>`).join("");
+  document.getElementById("decisions").innerHTML=A.decisionsNeeded.map(d=>`<li>${esc(d)}</li>`).join("");
+}
+</script>
+</body>
+</html>

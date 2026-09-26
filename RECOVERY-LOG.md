@@ -1446,6 +1446,43 @@ identification, and changing it without confirming the registered entity name
 could make the notice inaccurate. Both left for the firm to decide. *(Also noted:
 the privacy policy exists twice, at `privacy-policy` and `privacy-policy-2`.)*
 
+### Site architecture: Rule 6 reopened, 14 dead geo posts retired — decided 2026-09-26
+
+**Owner's decisions, 2026-09-26**, on `docs/site-architecture/README.md` (the plan and its
+evidence: per-URL GSC inventory, market × practice demand, competitor SERP page types):
+
+1. **"reopen rule 6".** Rule 6 was closed on 2026-09-19. It now reopens for a **capped,
+   allowlisted** set of office practice pages, restored at their old URLs and single-state.
+   Wave 1 is 11 pages, with Charleston car accident first. Wave 2 is gated on wave-1 results.
+   Each page still needs the legal sweep and the attorney's sign-off.
+2. **"retire those pages".** The inventory's DEAD geo pages (0 clicks in 16 months, under 100
+   impressions in 90 days) fund wave 1 under the 25% ceiling.
+3. **"use the Darien area, not Brunswick".** The Darien office page is the Business Profile
+   landing page for the Darien area.
+4. **"those offices are closed. don't include those".** The listings tagged atlanta and
+   jacksonville that show up in GSC are closed offices. They are out of the plan.
+
+**This batch: 14 posts, not 16.** The inventory flagged 16 DEAD geo pages. Two of them are
+held: `/es/locations/georgia/darien/` (4869) and `/es/locations/south-carolina/north-charleston/`
+(4883). Both are Spanish office hubs on the guardrail keep-list, and both are linked from `/es/`
+and `/es/locations/`. The owner can retire them separately. Doorway ratio after:
+**157 / 671 = 23.40%**.
+
+**Pre-flight on prod, 2026-09-26 (read-only):**
+- All 14 are published posts, with no Spanish twin, no child pages and no `_roden_see_also`
+  reference.
+- One inbound body link: post 2944 → soft-tissue post. No inbound links in meta.
+- 12 existing legacy redirects pointed into the set: `-2`/`-3` slug duplicates, root-level
+  slugs, and two merged posts (`can-witnesses-be-forced…` with 2,233 impressions and
+  `stomach-pain-after-a-car-accident-in-charleston` with 1,558). All 12 are repointed straight
+  to the final target, so none becomes a chain.
+- Every target returns 200.
+- The map is `roden_dead_geo_post_urls()`.
+- The Brunswick profile URL `/brunswick/personal-injury-lawyer/` went through the city-first
+  handler to the retired `darien-ga` PI page and on to the national pillar. It now 301s to
+  `/locations/georgia/darien/` via `roden_gbp_landing_urls()`, which is merged into the
+  priority-0 removal map.
+
 ### SC punitive floor corrected across content — 2026-09-26
 
 Gillin's approved pattern (review item 1): keep each page's wording and pair the figure with

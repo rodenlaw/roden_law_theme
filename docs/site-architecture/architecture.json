@@ -1,0 +1,664 @@
+{
+  "version": 1,
+  "updated": "2026-09-26",
+  "status": "approved in part 2026-09-26 — Rule 6 reopened (capped, allowlisted); wave 1 not yet built",
+  "sources": {
+    "gsc": "sc-domain:rodenlaw.com, 2025-05-12..2026-09-24 (16 mo) and 2026-06-27..09-24 (90 d); per-URL inventory of the 685 sitemap URLs",
+    "doorway": "node bin/doorway-ratio-now.mjs, 2026-09-26: 171 geo / 685 = 24.96%, ceiling 25%",
+    "competitors": "Semrush US organic + competitor sitemaps, 2026-09-26; Local Falcon grids",
+    "rules": "SEO-PREEMPTION-PLAN, STEINBERG-MODEL-PLAN, KNOWLEDGE-BASE-PLAN, strategy/2026-Q4.md, RECOVERY-LOG.md"
+  },
+  "thesis": [
+    "Rank the answer, not the offer, still holds for informational demand: SC reference pages, explainer posts and attorney bios earn the site's clicks (blog 1,393, resources 575, attorneys 330 in 90 days).",
+    "The offer layer is broken. The 25 two-state pillars earned 10 clicks in 90 days at positions 40–86. The office × practice pages that ranked 9–30 on the largest demand were retired on 09-18/19 and 301 to those pillars.",
+    "Competitors win '[city] car/truck accident lawyer' with a dedicated page for that practice in that city (Savannah, Columbia, Myrtle Beach) and '[city] personal injury lawyer' with a homepage or a strong city page; Maps traffic lands on whatever URL the Google Business Profile links to.",
+    "So: a small, capped, hand-built office practice layer, funded one-for-one out of the geo budget, with the office hub as the Business Profile landing page and the reference layer feeding both."
+  ],
+  "geoBudget": {
+    "ceilingPct": 25,
+    "now": {
+      "geo": 171,
+      "total": 685
+    },
+    "rule": "Each geo page needs 3 non-geo pages beside it (geo ≤ total/4). Retiring a non-geo page makes the ratio worse.",
+    "ledger": [
+      {
+        "step": "Retire the 14 DEAD geo blog posts (0 clicks in 16 mo, <100 impressions in 90 d) — PR open 2026-09-26",
+        "geo": -14,
+        "total": -14
+      },
+      {
+        "step": "Wave 1: 11 office practice pages (incl. Charleston car)",
+        "geo": 11,
+        "total": 11
+      },
+      {
+        "step": "Georgia statewide practice pages (6, mirror of the SC set; state names are not geo)",
+        "geo": 0,
+        "total": 6
+      },
+      {
+        "step": "Reference layer: studies and legal guides already planned (≥8)",
+        "geo": 0,
+        "total": 8
+      }
+    ]
+  },
+  "tree": {
+    "id": "home",
+    "label": "Home",
+    "url": "/",
+    "kind": "keep",
+    "metrics": {
+      "pages": 1,
+      "clicks90": 490,
+      "impr90": 128080,
+      "pos90": 5.3
+    },
+    "role": "Brand and two-state firm page. Stop competing with the office hubs for '[city] personal injury lawyer'.",
+    "children": [
+      {
+        "id": "locations",
+        "label": "Locations",
+        "url": "/locations/",
+        "kind": "upgrade",
+        "geo": true,
+        "metrics": {
+          "pages": 9,
+          "clicks90": 44,
+          "impr90": 53865
+        },
+        "role": "Office hubs are the Business Profile landing pages and the '[city] personal injury lawyer' page for each office.",
+        "children": [
+          {
+            "id": "ga",
+            "label": "Georgia",
+            "url": "/locations/georgia/",
+            "kind": "keep",
+            "geo": true,
+            "children": [
+              {
+                "id": "sav",
+                "label": "Savannah office",
+                "url": "/locations/georgia/savannah/",
+                "kind": "upgrade",
+                "geo": true,
+                "office": "Savannah GA",
+                "metrics": {
+                  "clicks90": 6,
+                  "impr90": 10846,
+                  "pos90": 33.8
+                },
+                "children": [
+                  {
+                    "id": "sav-car",
+                    "label": "Savannah car accident",
+                    "url": "/car-accident-lawyers/savannah-ga/",
+                    "kind": "restore",
+                    "wave": 1,
+                    "geo": true,
+                    "evidence": {
+                      "impr16": 183352,
+                      "pos90": 23.1,
+                      "serpWinner": "practice × city page (Farah & Farah #1)"
+                    }
+                  },
+                  {
+                    "id": "sav-truck",
+                    "label": "Savannah truck accident",
+                    "url": "/truck-accident-lawyers/savannah-ga/",
+                    "kind": "restore",
+                    "wave": 1,
+                    "geo": true,
+                    "evidence": {
+                      "impr16": 56048,
+                      "pos90": 24.8,
+                      "semrushPos": 18
+                    }
+                  },
+                  {
+                    "id": "sav-wc",
+                    "label": "Savannah workers' comp",
+                    "url": "/workers-compensation-lawyers/savannah-ga/",
+                    "kind": "restore",
+                    "wave": 1,
+                    "geo": true,
+                    "evidence": {
+                      "impr16": 57624,
+                      "pos90": 8.6
+                    }
+                  },
+                  {
+                    "id": "sav-medmal",
+                    "label": "Savannah medical malpractice",
+                    "url": "/medical-malpractice-lawyers/savannah-ga/",
+                    "kind": "candidate",
+                    "wave": 2,
+                    "geo": true,
+                    "evidence": {
+                      "impr16": 38459,
+                      "pos90": 12.4
+                    }
+                  },
+                  {
+                    "id": "sav-prem",
+                    "label": "Savannah premises liability",
+                    "url": "/premises-liability-lawyers/savannah-ga/",
+                    "kind": "candidate",
+                    "wave": 2,
+                    "geo": true,
+                    "evidence": {
+                      "impr16": 43725,
+                      "pos90": 24.8
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "dar",
+                "label": "Darien office",
+                "url": "/locations/georgia/darien/",
+                "kind": "upgrade",
+                "geo": true,
+                "office": "Darien GA",
+                "metrics": {
+                  "clicks90": 3,
+                  "impr90": 3175,
+                  "pos90": 16.2
+                },
+                "note": "Business Profile landing for the Darien area (owner, 2026-09-26). The Brunswick profile URL 301s here. The Brunswick hub below still splits Darien clusters (65/32).",
+                "children": [
+                  {
+                    "id": "bru",
+                    "label": "Brunswick",
+                    "url": "/locations/georgia/darien/brunswick/",
+                    "kind": "fix",
+                    "geo": true,
+                    "metrics": {
+                      "clicks90": 8,
+                      "impr90": 1815,
+                      "pos90": 16.1
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "sc",
+            "label": "South Carolina",
+            "url": "/locations/south-carolina/",
+            "kind": "keep",
+            "geo": true,
+            "children": [
+              {
+                "id": "chs",
+                "label": "Charleston office",
+                "url": "/locations/south-carolina/charleston/",
+                "kind": "upgrade",
+                "geo": true,
+                "office": "Charleston SC",
+                "metrics": {
+                  "clicks90": 6,
+                  "impr90": 3550,
+                  "pos90": 37.1
+                },
+                "children": [
+                  {
+                    "id": "chs-car",
+                    "label": "Charleston car accident",
+                    "url": "/car-accident-lawyers/charleston-sc/",
+                    "kind": "restore",
+                    "wave": 1,
+                    "geo": true,
+                    "approved": "2026-09-26",
+                    "evidence": {
+                      "impr16": 202710,
+                      "pos90": 22.0,
+                      "serpWinner": "practice page (Trey Harrell #8–10)"
+                    }
+                  },
+                  {
+                    "id": "chs-truck",
+                    "label": "Charleston truck accident",
+                    "url": "/truck-accident-lawyers/charleston-sc/",
+                    "kind": "restore",
+                    "wave": 1,
+                    "geo": true,
+                    "evidence": {
+                      "impr16": 81984,
+                      "pos90": 10.5
+                    }
+                  },
+                  {
+                    "id": "chs-wc",
+                    "label": "Charleston workers' comp",
+                    "url": "/workers-compensation-lawyers/charleston-sc/",
+                    "kind": "restore",
+                    "wave": 1,
+                    "geo": true,
+                    "evidence": {
+                      "impr16": 68046,
+                      "pos90": 15.3,
+                      "serpWinner": "WC-specialist homepages + directories"
+                    }
+                  },
+                  {
+                    "id": "chs-moto",
+                    "label": "Charleston motorcycle accident",
+                    "url": "/motorcycle-accident-lawyers/charleston-sc/",
+                    "kind": "restore",
+                    "wave": 1,
+                    "geo": true,
+                    "evidence": {
+                      "impr16": 63069,
+                      "pos90": 13.1
+                    }
+                  },
+                  {
+                    "id": "chs-wd",
+                    "label": "Charleston wrongful death",
+                    "url": "/wrongful-death-lawyers/charleston-sc/",
+                    "kind": "restore",
+                    "wave": 1,
+                    "geo": true,
+                    "evidence": {
+                      "impr16": 60291,
+                      "pos90": 16.8
+                    }
+                  },
+                  {
+                    "id": "chs-medmal",
+                    "label": "Charleston medical malpractice",
+                    "url": "/medical-malpractice-lawyers/charleston-sc/",
+                    "kind": "restore",
+                    "wave": 1,
+                    "geo": true,
+                    "evidence": {
+                      "impr16": 66031,
+                      "pos90": 17.1
+                    }
+                  },
+                  {
+                    "id": "chs-prem",
+                    "label": "Charleston premises liability",
+                    "url": "/premises-liability-lawyers/charleston-sc/",
+                    "kind": "candidate",
+                    "wave": 2,
+                    "geo": true,
+                    "evidence": {
+                      "impr16": 71557,
+                      "pos90": 32.5
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "nchs",
+                "label": "North Charleston office",
+                "url": "/locations/south-carolina/north-charleston/",
+                "kind": "upgrade",
+                "geo": true,
+                "office": "North Charleston SC",
+                "metrics": {
+                  "clicks90": 5,
+                  "impr90": 4023,
+                  "pos90": 14.2
+                },
+                "note": "0% share of local voice in Local Falcon: the Business Profile is not in the Maps pack. Spanish twins outrank English pages on English queries here.",
+                "children": [
+                  {
+                    "id": "nchs-car",
+                    "label": "North Charleston car accident",
+                    "url": "/car-accident-lawyers/north-charleston-sc/",
+                    "kind": "restore",
+                    "wave": 1,
+                    "geo": true,
+                    "evidence": {
+                      "impr16": 54264,
+                      "pos90": 17.9
+                    }
+                  },
+                  {
+                    "id": "nchs-truck",
+                    "label": "North Charleston truck accident",
+                    "url": "/truck-accident-lawyers/north-charleston-sc/",
+                    "kind": "candidate",
+                    "wave": 2,
+                    "geo": true,
+                    "evidence": {
+                      "impr16": 22001,
+                      "pos90": 11.6
+                    }
+                  },
+                  {
+                    "id": "nchs-moto",
+                    "label": "North Charleston motorcycle accident",
+                    "url": "/motorcycle-accident-lawyers/north-charleston-sc/",
+                    "kind": "candidate",
+                    "wave": 2,
+                    "geo": true,
+                    "evidence": {
+                      "impr16": 22602,
+                      "pos90": 14.0
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "col",
+                "label": "Columbia office",
+                "url": "/locations/south-carolina/columbia/",
+                "kind": "upgrade",
+                "geo": true,
+                "office": "Columbia SC",
+                "metrics": {
+                  "clicks90": 7,
+                  "impr90": 18566,
+                  "pos90": 28.9
+                },
+                "note": "0% share of local voice in Local Falcon. No Columbia Business Profile landing URL appears in GSC.",
+                "children": [
+                  {
+                    "id": "col-car",
+                    "label": "Columbia car accident",
+                    "url": "/car-accident-lawyers/columbia-sc/",
+                    "kind": "restore",
+                    "wave": 1,
+                    "geo": true,
+                    "evidence": {
+                      "impr16": 51334,
+                      "pos90": 21.5,
+                      "semrushVol": 2900
+                    }
+                  },
+                  {
+                    "id": "col-truck",
+                    "label": "Columbia truck accident",
+                    "url": "/truck-accident-lawyers/columbia-sc/",
+                    "kind": "candidate",
+                    "wave": 2,
+                    "geo": true,
+                    "evidence": {
+                      "semrushVol": 880,
+                      "kd": 4,
+                      "note": "weakest SERP in the set; never had a page"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "myr",
+                "label": "Myrtle Beach office",
+                "url": "/locations/south-carolina/myrtle-beach/",
+                "kind": "upgrade",
+                "geo": true,
+                "office": "Myrtle Beach SC",
+                "metrics": {
+                  "clicks90": 1,
+                  "impr90": 9432,
+                  "pos90": 47.8
+                },
+                "children": [
+                  {
+                    "id": "myr-car",
+                    "label": "Myrtle Beach car accident",
+                    "url": "/car-accident-lawyers/myrtle-beach-sc/",
+                    "kind": "candidate",
+                    "wave": 2,
+                    "geo": true,
+                    "evidence": {
+                      "impr16": 16212,
+                      "pos90": 19.9,
+                      "semrushVol": 1000,
+                      "kd": 17
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "state-practice",
+        "label": "Statewide practice pages",
+        "url": "/south-carolina-…-lawyer(s)/  ·  /georgia-…-lawyers/",
+        "kind": "build",
+        "metrics": {
+          "pages": 6,
+          "clicks90": 2,
+          "impr90": 10448
+        },
+        "role": "The state layer between the two-state pillar and the office pages. SC set exists (6); build the Georgia mirror (6). Not geo.",
+        "children": [
+          {
+            "id": "sc-state",
+            "label": "South Carolina (6)",
+            "url": "/south-carolina-car-accident-lawyers/ …",
+            "kind": "keep"
+          },
+          {
+            "id": "ga-state",
+            "label": "Georgia (6, new)",
+            "url": "/georgia-car-accident-lawyers/ …",
+            "kind": "build"
+          }
+        ]
+      },
+      {
+        "id": "pillars",
+        "label": "Practice pillars",
+        "url": "/practice-areas/",
+        "kind": "consolidate",
+        "metrics": {
+          "pages": 25,
+          "clicks90": 10,
+          "impr90": 117046
+        },
+        "role": "Two-state explainers and the hub for sub-types. Stop treating them as ranking targets for local terms; cut the ~76% overlap with one canonical explainer.",
+        "children": [
+          {
+            "id": "subtypes",
+            "label": "Scenario sub-types",
+            "url": "/{practice}-lawyers/{scenario}/",
+            "kind": "keep",
+            "metrics": {
+              "pages": 132,
+              "clicks90": 138,
+              "impr90": 59230
+            },
+            "note": "25 DEAD; re-measure 90 days after #148 (early Dec)."
+          }
+        ]
+      },
+      {
+        "id": "resources",
+        "label": "Resources (reference layer)",
+        "url": "/resources/",
+        "kind": "grow",
+        "metrics": {
+          "pages": 67,
+          "clicks90": 575,
+          "impr90": 74117
+        },
+        "role": "The site's best earner per page. Statewide law, settlement values, studies. Every new page here is non-geo and buys geo headroom.",
+        "children": [
+          {
+            "id": "res-law",
+            "label": "SC & GA law reference",
+            "url": "/resources/south-carolina-…/",
+            "kind": "grow"
+          },
+          {
+            "id": "res-studies",
+            "label": "Studies (#2–#5 planned)",
+            "url": "/resources/…-report/",
+            "kind": "build"
+          }
+        ]
+      },
+      {
+        "id": "blog",
+        "label": "Blog",
+        "url": "/blog/",
+        "kind": "keep",
+        "metrics": {
+          "pages": 375,
+          "clicks90": 1393,
+          "impr90": 369479
+        },
+        "role": "Informational spokes. Local road and scenario posts link up to one office practice page each.",
+        "children": [
+          {
+            "id": "blog-geo",
+            "label": "Local posts (118 geo)",
+            "url": "/blog/…charleston…/",
+            "kind": "prune",
+            "note": "14 DEAD retired 2026-09-26; 55 below the municipality floor stay while they earn."
+          },
+          {
+            "id": "blog-general",
+            "label": "Explainers (257)",
+            "url": "/blog/…/",
+            "kind": "keep"
+          }
+        ]
+      },
+      {
+        "id": "attorneys",
+        "label": "Attorneys",
+        "url": "/attorneys/",
+        "kind": "keep",
+        "metrics": {
+          "pages": 6,
+          "clicks90": 330
+        },
+        "role": "All six are WINNERs. Link each attorney to the office pages they author."
+      },
+      {
+        "id": "results",
+        "label": "Case results",
+        "url": "/case-results/",
+        "kind": "keep",
+        "metrics": {
+          "pages": 1,
+          "clicks90": 1
+        }
+      },
+      {
+        "id": "es",
+        "label": "Español",
+        "url": "/es/",
+        "kind": "fix",
+        "metrics": {
+          "pages": 58,
+          "clicks90": 34
+        },
+        "role": "31 of 58 DEAD, yet Spanish pages outrank English on English North Charleston queries: check hreflang and canonicals first."
+      }
+    ]
+  },
+  "links": [
+    {
+      "from": "Business Profile (each office)",
+      "to": "Office hub",
+      "rule": "Every office profile links to its own /locations/ hub. Darien area → the Darien hub (Brunswick URL 301s there). Fix the /contact-us/ appointment links."
+    },
+    {
+      "from": "Office hub",
+      "to": "Office practice pages",
+      "rule": "Card grid of that office's practice pages, plus attorneys at the office and 5–8 local guides."
+    },
+    {
+      "from": "Office practice page",
+      "to": "Office hub · statewide practice page · pillar",
+      "rule": "Up-links in body and breadcrumb; one state only on the page."
+    },
+    {
+      "from": "Local blog post",
+      "to": "One office practice page",
+      "rule": "Anchor names the destination, e.g. 'Charleston car accident lawyers'."
+    },
+    {
+      "from": "Resource (state law)",
+      "to": "Statewide practice page + pillar",
+      "rule": "Reference pages feed the offer layer."
+    },
+    {
+      "from": "Home",
+      "to": "State hubs · 6 office hubs · top pillars",
+      "rule": "Home stays brand/two-state; it does not target city terms."
+    }
+  ],
+  "phases": [
+    {
+      "id": "P0",
+      "name": "Hygiene and Business Profile landings",
+      "weeks": "1–2",
+      "items": [
+        "Point every office Business Profile at its /locations/ hub; the Brunswick profile URL now 301s to the Darien hub (PR 2026-09-26); fix the /contact-us/ appointment links",
+        "noindex /test/; resolve the 53 non-sitemap URLs that return 200 (testimonial singles, /blog/category/*, /blog/page/N/, /privacy-policy-2/) and the 9 that 404 with impressions",
+        "Fix the /practice-areas/premisesliability-lawyers/columbia-sc/ redirect target (404)",
+        "Replace RODEN_LOCATION_FREEZE's blanket block with an allowlist of approved office practice pages (content-guardrails.php L253–281)",
+        "Expect an October impression drop as Google processes the 568 retired URLs (38% of last-30-day impressions); it is not a penalty"
+      ]
+    },
+    {
+      "id": "P1",
+      "name": "Office practice layer, wave 1",
+      "weeks": "2–8",
+      "items": [
+        "Retire the 14 DEAD geo blog posts first (draft + _roden_retired, single-hop 301) — PR open 2026-09-26",
+        "Restore 11 pages at their old URLs in batches of 3–4, each SC-only or GA-only, with the office map, NAP, local roads, statutes from the law pack, attorney byline",
+        "Order: Charleston car → Charleston truck → Savannah car → Savannah WC → Charleston WC → Charleston motorcycle → Columbia car → North Charleston car → Savannah truck → Charleston wrongful death → Charleston med mal",
+        "Legal sweep + Gillin (SC) / Eric Roden (GA) sign-off per page; 301 each nested /practice-areas/{x}/{city}/ duplicate to the flat URL"
+      ]
+    },
+    {
+      "id": "P2",
+      "name": "Office hubs and the state layer",
+      "weeks": "4–10",
+      "items": [
+        "Retitle each hub to '[City] Personal Injury Lawyer', de-duplicate against the homepage, add the practice-page grid",
+        "Build the six Georgia statewide practice pages (non-geo)",
+        "Pick one Darien-area landing; fix English/Spanish hreflang where Spanish outranks English"
+      ]
+    },
+    {
+      "id": "P3",
+      "name": "Reference layer and pillar consolidation",
+      "weeks": "ongoing",
+      "items": [
+        "Studies #2–#5 and the planned legal guides under /resources/ (each 3 non-geo pages fund 1 geo slot)",
+        "One canonical explainer to cut the ~76% pillar overlap"
+      ]
+    },
+    {
+      "id": "P4",
+      "name": "Measure and gate wave 2",
+      "weeks": "12–16",
+      "items": [
+        "Keep a wave-1 page if by day 120 it ranks ≤20 on its head term or earns clicks; otherwise retire it again",
+        "Open wave 2 (7 candidates) only if the wave-1 median position is ≤15 and the geo ledger has room"
+      ]
+    }
+  ],
+  "decisionsNeeded": [
+    "Retire the two DEAD Spanish office hubs (/es/locations/georgia/darien/, /es/locations/south-carolina/north-charleston/)? Held from the 2026-09-26 batch."
+  ],
+  "decisions": [
+    {
+      "date": "2026-09-26",
+      "decision": "Reopen Rule 6 for a capped, allowlisted set of office practice pages (wave 1: 11; wave 2 gated)"
+    },
+    {
+      "date": "2026-09-26",
+      "decision": "Retire the DEAD geo pages to fund wave 1 — 14 blog posts in this batch; the two Spanish office hubs (Darien, North Charleston) held because they are office hubs on the keep-list"
+    },
+    {
+      "date": "2026-09-26",
+      "decision": "The Darien office page, not Brunswick, is the Business Profile landing for the Darien area"
+    }
+  ]
+}

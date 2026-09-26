@@ -566,21 +566,21 @@ function roden_get_legacy_redirect_map() {
         // ── Duplicate-slug artifacts whose original is still live ─────
         // WordPress appended -2/-3 when a post was saved twice. The original is
         // published; the suffixed twin 404s. Purely mechanical.
-        '/blog/a-pedestrians-guide-to-claiming-lost-wages-in-charleston-2/'           => '/blog/a-pedestrians-guide-to-claiming-lost-wages-in-charleston/',  // 6 impr
-        '/blog/how-poor-truck-maintenance-causes-charleston-accidents-2/'             => '/blog/how-poor-truck-maintenance-causes-charleston-accidents/',  // 26 impr
-        '/blog/protecting-your-rights-after-a-myrtle-beach-car-accident-2/'           => '/blog/protecting-your-rights-after-a-myrtle-beach-car-accident/',  // 17 impr
-        '/blog/protecting-your-rights-after-a-myrtle-beach-car-accident-3/'           => '/blog/protecting-your-rights-after-a-myrtle-beach-car-accident/',  // 21 impr
+        '/blog/a-pedestrians-guide-to-claiming-lost-wages-in-charleston-2/'           => '/blog/claims-for-lost-wages/',  // 6 impr
+        '/blog/how-poor-truck-maintenance-causes-charleston-accidents-2/'             => '/practice-areas/truck-accident-lawyers/',  // 26 impr
+        '/blog/protecting-your-rights-after-a-myrtle-beach-car-accident-2/'           => '/locations/south-carolina/myrtle-beach/',  // 17 impr
+        '/blog/protecting-your-rights-after-a-myrtle-beach-car-accident-3/'           => '/locations/south-carolina/myrtle-beach/',  // 21 impr
         '/blog/your-guide-to-justice-after-a-charleston-truck-accident-2/'            => '/blog/your-guide-to-justice-after-a-charleston-truck-accident/',  // 36 impr
 
         // ── Near-exact topical twins ──────────────────────────────────
         // The dead URL and its destination answer the same question. These are the
         // safest non-mechanical redirects in the set.
-        '/blog/can-witnesses-be-forced-to-testify-in-car-crash-case/'                 => '/blog/can-a-witness-be-forced-to-testify-for-a-savannah-car-crash-case/',  // 2,233 impr
+        '/blog/can-witnesses-be-forced-to-testify-in-car-crash-case/'                 => '/blog/qualifications-for-car-accident-witnesses/',  // 2,233 impr
         '/blog/witness-testimony/'                                                    => '/blog/importance-of-eyewitness-testimony/',  // 23 impr
         '/blog/benefits-of-an-accident-reconstructionist/'                            => '/blog/benefits-of-an-accident-reconstruction-expert/',  // 821 impr
         '/blog/charleston-car-crash-doctor-talk/'                                     => '/blog/how-to-talk-to-your-doctor-about-your-charleston-car-accident-injuries/',  // 438 impr
-        '/blog/a-charleston-residents-guide-to-tourist-car-accidents-2/'              => '/blog/proving-a-tourist-was-at-fault-in-your-charleston-accident/',  // 6 impr
-        '/blog/a-charleston-residents-guide-to-tourist-car-accidents-4/'              => '/blog/proving-a-tourist-was-at-fault-in-your-charleston-accident/',  // 3 impr
+        '/blog/a-charleston-residents-guide-to-tourist-car-accidents-2/'              => '/practice-areas/car-accident-lawyers/',  // 6 impr
+        '/blog/a-charleston-residents-guide-to-tourist-car-accidents-4/'              => '/practice-areas/car-accident-lawyers/',  // 3 impr
 
         // ── Same subject, nearest surviving page ──────────────────────
         // No twin survives, so each goes to the closest page that actually answers
@@ -590,7 +590,7 @@ function roden_get_legacy_redirect_map() {
         '/blog/charlestons-crash-hotspots-to-avoid-in-2025/'                          => '/resources/dangerous-roads-north-charleston/',  // 2,142 impr
         '/blog/charlestons-crash-hotspots-to-avoid-in-2025-2/'                        => '/resources/dangerous-roads-north-charleston/',  // 53 impr
         '/blog/legal-options-after-rideshare-crash-in-charleston/'                    => '/blog/dealing-with-uber-lyft-accident/',  // 1,648 impr
-        '/blog/stomach-pain-after-a-car-accident-in-charleston/'                      => '/blog/how-delayed-injuries-could-impact-your-charleston-car-crash-claim/',  // 1,558 impr
+        '/blog/stomach-pain-after-a-car-accident-in-charleston/'                      => '/practice-areas/car-accident-lawyers/',  // 1,558 impr
         '/blog/amazon-fedex-delivery-crashes/'                                        => '/practice-areas/car-accident-lawyers/', // was delivery-vehicle-accident, retired 2026-09-25  // 1,209 impr
         '/blog/overloaded-semi-trucks-accidents-on-charleston-highways/'              => '/truck-accident-lawyers/overloaded-improperly-loaded-cargo/',  // 190 impr
         '/blog/why-federal-rules-matter-in-your-port-of-charleston-truck-accident/'   => '/blog/fmcsa-violations-truck-accident-claims/',  // 138 impr
@@ -998,12 +998,12 @@ function roden_get_legacy_redirect_map() {
         // Permalink Manager Pro removed. These redirects catch old root URLs.
         // ══════════════════════════════════════════════════════════════
 
-        '/a-pedestrians-guide-to-claiming-lost-wages-in-charleston/'          => '/blog/a-pedestrians-guide-to-claiming-lost-wages-in-charleston/',
-        '/filing-a-claim-after-a-hazmat-truck-crash-in-charleston/'           => '/blog/filing-a-claim-after-a-hazmat-truck-crash-in-charleston/',
-        '/how-poor-truck-maintenance-causes-charleston-accidents/'            => '/blog/how-poor-truck-maintenance-causes-charleston-accidents/',
+        '/a-pedestrians-guide-to-claiming-lost-wages-in-charleston/'          => '/blog/claims-for-lost-wages/',
+        '/filing-a-claim-after-a-hazmat-truck-crash-in-charleston/'           => '/practice-areas/truck-accident-lawyers/',
+        '/how-poor-truck-maintenance-causes-charleston-accidents/'            => '/practice-areas/truck-accident-lawyers/',
         '/your-guide-to-justice-after-a-charleston-truck-accident/'           => '/blog/your-guide-to-justice-after-a-charleston-truck-accident/',
         '/a-guide-to-car-accident-claims-at-columbias-toughest-intersections/' => '/blog/a-guide-to-car-accident-claims-at-columbias-toughest-intersections/',
-        '/protecting-your-rights-after-a-myrtle-beach-car-accident/'         => '/blog/protecting-your-rights-after-a-myrtle-beach-car-accident/',
+        '/protecting-your-rights-after-a-myrtle-beach-car-accident/'         => '/locations/south-carolina/myrtle-beach/',
 
         // ══════════════════════════════════════════════════════════════
         // CATEGORY 8: Old staff / attorney URLs (26+ pages)
@@ -1317,7 +1317,9 @@ function roden_phase1_removed_urls() {
         roden_earning_intersection_urls(),
         roden_root_city_page_urls(),
         roden_stale_place_urls(),
-        roden_zero_click_scenario_urls()
+        roden_zero_click_scenario_urls(),
+        roden_dead_geo_post_urls(),
+        roden_gbp_landing_urls()
     );
 }
 
@@ -2096,6 +2098,59 @@ function roden_stale_place_urls() {
         '/es/blog/eulonia-us-17-ocean-highway-rideshare-uber-accident-lawyer-mcintosh-county/'               => '/es/practice-areas/car-accident-lawyers/',
         '/es/blog/n-lake-drive-us-17-business-best-car-accident-lawyer/'                                     => '/es/practice-areas/car-accident-lawyers/',
         '/es/blog/old-fort-jackson-savannah-fatal-truck-accident-lawyer/'                                    => '/es/practice-areas/truck-accident-lawyers/',
+    );
+}
+
+/**
+ * The 14 geo blog posts that never earned a click. Owner-approved 2026-09-26 as
+ * the first step of docs/site-architecture/README.md: they fund the office
+ * practice pages (wave 1) under the 25% doorway ceiling.
+ *
+ * Every one had 0 clicks in 16 months (2025-05-12..2026-09-24) and under 100
+ * impressions in the last 90 days (evidence/inventory.csv, status DEAD). None
+ * has a Spanish twin, a child or a see-also reference. Each goes to the
+ * closest live topical page; the Charleston ones can be repointed at the
+ * rebuilt office practice pages when those publish. Doorway ratio after:
+ * 157 / 671 = 23.40%.
+ *
+ * The inventory's other two DEAD geo pages (/es/locations/georgia/darien/,
+ * /es/locations/south-carolina/north-charleston/) are held: they are office
+ * hubs on the guardrail keep-list and are linked from /es/ and /es/locations/.
+ *
+ * Set to DRAFT and marked _roden_retired, not trashed.
+ */
+function roden_dead_geo_post_urls() {
+    return array(
+        '/blog/can-a-witness-be-forced-to-testify-for-a-savannah-car-crash-case/' => '/blog/qualifications-for-car-accident-witnesses/',
+        '/blog/what-are-my-legal-options-after-a-rideshare-crash-in-charleston/'  => '/car-accident-lawyers/rideshare-uber-accident/',
+        '/blog/filing-soft-tissue-injury-claims-in-charleston/'                   => '/blog/supporting-a-whiplash-claim/',
+        '/blog/how-delayed-injuries-could-impact-your-charleston-car-crash-claim/' => '/practice-areas/car-accident-lawyers/',
+        '/blog/compensation-for-car-crash-facial-injuries-charleston/'            => '/practice-areas/car-accident-lawyers/',
+        '/blog/liability-for-charleston-underride-truck-crashes/'                 => '/practice-areas/truck-accident-lawyers/',
+        '/blog/a-pedestrians-guide-to-claiming-lost-wages-in-charleston/'         => '/blog/claims-for-lost-wages/',
+        '/blog/filing-a-claim-after-a-hazmat-truck-crash-in-charleston/'          => '/practice-areas/truck-accident-lawyers/',
+        '/blog/how-poor-truck-maintenance-causes-charleston-accidents/'           => '/practice-areas/truck-accident-lawyers/',
+        '/blog/protecting-your-rights-after-a-myrtle-beach-car-accident/'         => '/locations/south-carolina/myrtle-beach/',
+        '/blog/proving-a-tourist-was-at-fault-in-your-charleston-accident/'       => '/practice-areas/car-accident-lawyers/',
+        '/blog/recovering-lost-wages-after-a-truck-accident-on-i-526/'            => '/blog/claims-for-lost-wages/',
+        '/blog/seeking-justice-after-a-fatigued-trucker-accident-on-i-26/'        => '/practice-areas/truck-accident-lawyers/',
+        '/blog/port-of-charleston-injury-claims-longshoremen-dock-workers/'       => '/blog/longshoreman-injury-claims/',
+    );
+}
+
+/**
+ * Business Profile website links that must land on an office hub. These are not
+ * retirements; they sit in the removal map because it runs at priority 0, ahead
+ * of the city-first handler in roden_legacy_content_redirects().
+ *
+ * The Brunswick profile links to /brunswick/personal-injury-lawyer/, which the
+ * city-first handler sent to /personal-injury-lawyers/darien-ga/ and, since
+ * #143 retired that page, on to the national PI pillar. Owner, 2026-09-26: the
+ * Darien office page is the landing for the Darien area, not Brunswick.
+ */
+function roden_gbp_landing_urls() {
+    return array(
+        '/brunswick/personal-injury-lawyer/' => '/locations/georgia/darien/',
     );
 }
 

@@ -1,0 +1,26 @@
+# Top-5 organic (Semrush US phrase_organic, pulled 2026-09-26). Types: HP=homepage, CITY=city/office hub, PxC=practice x city page, PRAC=unlocalized/statewide practice page (HQ firm => implicitly local), DIR=directory, BLOG=blog.
+market;keyword;volume;KD;#1;#2;#3;#4;#5;winning_type;roden_semrush_pos(url, status now)
+Savannah;savannah car accident lawyer;1600;23;PxC farahandfarah;PRAC franklinlawllc(HQ);PxC thewilsonpc;HP jamiecasino;PxC chattahoocheeinjurylaw;PxC;21-28 (/car-accident-lawyers/savannah-ga/, 301 since 09-19)
+Savannah;personal injury lawyer savannah ga;1300;46;DIR justia;HP jamiecasino;HP cornwelllaw;CITY farahandfarah /savannah/;HP tatelawgroup;HP;29 (/locations/georgia/savannah/, live)
+Savannah;savannah personal injury lawyer;1600;51;HP cornwelllaw;DIR justia;CITY hlmlawfirm /savannah/;HP owensmulherin;HP jamiecasino;HP (+CITY for multi-office);31 (/locations/georgia/savannah/, live)
+Savannah;savannah truck accident lawyer;590;10;PxC thewilsonpc;PxC chattahoochee;PxC harrybrownlaw;DIR superlawyers;PxC bowenpainter;PxC;18 (/truck-accident-lawyers/savannah-ga/, 301)
+Darien/Brunswick;brunswick personal injury lawyer;170;31;HP babcocklegal;HP mayfieldinjury;DIR superlawyers;CITY farahandfarah /brunswick/;(NJ noise);HP;not ranking
+Darien/Brunswick;brunswick car accident lawyer;170;7;PxC johnfoy;(NJ);PRAC hstlaw;PxC farahandfarah;HP mayfieldinjury;PxC;not ranking (blog ranks #8 for brunswick truck)
+Darien/Brunswick;darien car accident lawyer;40;0;(IL);(CT DIR);PxC thegeorgiainjuryattorney;(CT);PxC rodenlaw;n/a (tiny);5 (/car-accident-lawyers/darien-ga/, 301)
+Charleston;charleston car accident lawyer;1900;43;DIR superlawyers;PRAC steinberg(HQ);PRAC johnpricelawfirm(HQ);PxC tktlawyers;PRAC kahnlawfirm(HQ);HQ-firm PRAC + DIR;55 (/car-accident-lawyers/charleston-sc/, 301; rebuild planned)
+Charleston;charleston personal injury lawyer;1900;72;DIR superlawyers;HP steinberg;CITY derricklawfirm office;HP joyelawfirm;HP mickelsendalton;HP;32 (/personal-injury-lawyers/charleston-sc/, 301)
+Charleston;charleston truck accident lawyer;1000;13;PRAC steinberg(HQ);PxC schillerhamilton;PRAC johnprice(HQ);PxC mickelsendalton;PxC bringardner;PxC/PRAC;9 in SERP report, 34-36 in positions report (/truck-accident-lawyers/charleston-sc/, 301) - conflicting, UNVERIFIED
+Charleston;charleston workers compensation lawyer;480;19;DIR superlawyers;PxC williamslawsc;PRAC deatonlaw;HP walterhundley(WC specialist);HP mickleandbass(WC specialist);WC-specialist HP + DIR;18 (/workers-compensation-lawyers/charleston-sc/, 301)
+Charleston;charleston motorcycle accident lawyer;1000;20;PRAC johnprice(HQ);PxC schillerhamilton;PxC farmerclinecampbell;PxC treyhelps;PxC salangolaw;PxC;32 (/motorcycle-accident-lawyers/charleston-sc/, 301)
+North Charleston;north charleston car accident lawyer;260;29;DIR superlawyers(Charleston);PRAC wiggerlawfirm(HQ);PRAC steinberg;CITY sinklaw /charleston/;PRAC johnprice;PRAC (no N.Chas-specific winner) - weak;not in top 100
+North Charleston;north charleston personal injury lawyer;210;49;CITY leekelaw;HP steinberg;DIR superlawyers;HP wiggerlawfirm;HP johnprice;HP/CITY;not in top 100
+Columbia;columbia car accident lawyer;1600;29;PxC stewartlawoffices;HP scinjurylawfirm;PxC marcbrownlawfirm;DIR superlawyers;PRAC joshgolsonlaw(HQ);PxC;21 (/car-accident-lawyers/columbia-sc/, 301)
+Columbia;car accident lawyer columbia sc;1300;46;HP thestanleylawgroup;DIR superlawyers;HP scinjurylawfirm;CITY sinklaw /columbia/;PxC marcbrownlawfirm;HP/CITY;20 (same, 301)
+Columbia;columbia personal injury lawyer;1600;62;HP scinjurylawfirm;HP thestanleylawgroup;DIR superlawyers;HP attorneyssc;HP leeinjury;HP;33 (/locations/south-carolina/columbia/, live)
+Columbia;columbia truck accident lawyer;880;4;PxC stewartlawoffices;PxC chappell.law;PRAC joshgolsonlaw(HQ);PxC crlegalteam;PxC sbltv.law;PxC;not ranking (no page)
+Columbia;columbia workers compensation lawyer;880;21;HP williamsandroche(WC);DIR justia;PRAC mcwhirterlaw(HQ);PxC sbltv.law;HP leeinjury;WC-specialist HP;not ranking
+Columbia;workers comp lawyer columbia sc;880;42;HP leeinjury;HP hollyatkinslaw;DIR superlawyers;PRAC mcwhirterlaw;HP mickleandbass;WC-specialist HP;not ranking
+Myrtle Beach;myrtle beach car accident lawyer;1000;17;HP maguirelawfirm;PxC justiceislovely;PxC joyelawfirm;PxC gotaxelrod;PRAC jeffchandlerlaw(HQ);PxC;56-61 (/locations/south-carolina/myrtle-beach/, live)
+Myrtle Beach;myrtle beach personal injury lawyer;1300;50;DIR superlawyers;HP maguirelawfirm;CITY joyelawfirm /myrtle-beach/;HP justiceislovely;HP jeffchandlerlaw;HP;58 (/locations/…/myrtle-beach/)
+Myrtle Beach;personal injury attorney myrtle beach;1300;50;DIR superlawyers;HP maguire;HP derricklawfirm;HP jeffchandler;CITY schillerhamilton;HP;60
+Myrtle Beach;myrtle beach truck accident lawyer;260;11;PxC hammacklawfirm;PxC maguire;PxC kinonlaw;PxC lawyersatthebeach;PxC crlegalteam;PxC;not ranking
