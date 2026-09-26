@@ -1,0 +1,139 @@
+{
+    "generated": "2026-09-26T22:49:03+00:00",
+    "batch": "sc-punitive-floor-meta",
+    "mode": "apply",
+    "items": [
+        {
+            "post_id": 3608,
+            "meta_key": "_roden_faqs",
+            "before": [
+                {
+                    "question": "How do I know if I have a medical malpractice case?",
+                    "answer": "Medical malpractice occurs when a healthcare provider deviates from the accepted standard of care and that deviation directly causes injury. A bad outcome alone does not constitute malpractice — medicine involves inherent risks. However, if your provider made an error that a competent professional in the same specialty would not have made under similar circumstances, you may have a valid claim. Our attorneys consult with medical experts to evaluate your case."
+                },
+                {
+                    "question": "What is the statute of limitations for medical malpractice?",
+                    "answer": "Georgia has a 2-year statute of limitations for medical malpractice (O.C.G.A. § 9-3-71), with an absolute 5-year statute of repose from the date of the negligent act. South Carolina allows 3 years from the date of the act or 3 years from discovery, with a 6-year statute of repose (S.C. Code § 15-3-545). Exceptions exist for foreign objects left in the body and for minors. These deadlines are strict — contact an attorney promptly."
+                },
+                {
+                    "question": "What is an expert affidavit and why is it required?",
+                    "answer": "Georgia law (O.C.G.A. § 9-11-9.1) requires every medical malpractice complaint to include a sworn affidavit from a qualified medical expert stating that the standard of care was breached and that the breach caused the plaintiff's injuries. South Carolina has a similar requirement under S.C. Code § 15-79-125, requiring an expert opinion before filing. Without this affidavit, the court will dismiss the case. Our attorneys retain board-certified experts in every relevant specialty."
+                },
+                {
+                    "question": "Can I sue a hospital for medical malpractice?",
+                    "answer": "Yes. Hospitals can be held liable for malpractice under multiple theories: direct liability for inadequate staffing, poor training, or unsafe policies; vicarious liability for the negligence of employed physicians and nurses; and corporate negligence for failing to credential or supervise medical staff. However, many physicians are independent contractors rather than hospital employees, which affects liability. Our attorneys identify every potentially liable party."
+                },
+                {
+                    "question": "How much does a medical malpractice case cost to pursue?",
+                    "answer": "Medical malpractice cases are expensive to litigate due to the need for expert witnesses, medical record review, life care planning, and extensive discovery. Cases typically cost $50,000 to $200,000+ in expenses before trial. At Roden Law, we advance all costs on a contingency basis — you pay nothing upfront, and we only recover fees and expenses if we win your case. This allows victims to pursue justice regardless of their financial situation."
+                },
+                {
+                    "question": "Is there a cap on medical malpractice damages in Georgia or South Carolina?",
+                    "answer": "Georgia does not currently impose a cap on medical malpractice damages. The Georgia Supreme Court struck down the state's $350,000 cap on non-economic damages in Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt (2010). South Carolina does cap non-economic damages in medical malpractice cases: S.C. Code § 15-32-220 sets a base of $350,000 against a single provider and $1.05 million where more than one is liable, adjusted annually for inflation. Punitive damages are separately limited to the greater of $500,000 or three times compensatory damages (S.C. Code § 15-32-530)."
+                },
+                {
+                    "question": "What is the difference between medical malpractice and negligence?",
+                    "answer": "Medical malpractice is a specific type of professional negligence. While general negligence requires proving duty, breach, causation, and damages, medical malpractice requires the additional element of proving deviation from the accepted medical standard of care — which must be established through expert testimony. The procedural requirements are also stricter, including mandatory expert affidavits, pre-suit notice requirements, and in some jurisdictions, medical review panels."
+                },
+                {
+                    "question": "Can I file a claim for a birth injury?",
+                    "answer": "Yes. Birth injuries caused by medical negligence — such as failure to perform a timely C-section, improper use of forceps or vacuum extractors, failure to monitor fetal distress, or medication errors during labor — are valid malpractice claims. These cases often involve catastrophic injuries like cerebral palsy that require lifelong care costing millions of dollars. The statute of limitations for minors is extended in both Georgia and South Carolina."
+                },
+                {
+                    "question": "What if I signed a consent form before the procedure?",
+                    "answer": "Signing a consent form does not waive your right to file a malpractice claim. Consent forms acknowledge the known risks of a procedure — they do not authorize negligent performance. If your provider deviated from the standard of care during the procedure, failed to disclose material risks (informed consent violation), or performed a procedure you did not authorize, you may still have a valid claim despite having signed a consent form."
+                },
+                {
+                    "question": "How long do medical malpractice cases take?",
+                    "answer": "Medical malpractice cases are among the longest to resolve, typically taking 2 to 4 years from filing to resolution. The extensive medical record review, expert consultations, depositions, and pre-trial motions require significant time. Some cases resolve through mediation or settlement, while others proceed to trial. We keep our clients informed at every stage and never rush a case at the expense of its value."
+                }
+            ],
+            "after": [
+                {
+                    "question": "How do I know if I have a medical malpractice case?",
+                    "answer": "Medical malpractice occurs when a healthcare provider deviates from the accepted standard of care and that deviation directly causes injury. A bad outcome alone does not constitute malpractice — medicine involves inherent risks. However, if your provider made an error that a competent professional in the same specialty would not have made under similar circumstances, you may have a valid claim. Our attorneys consult with medical experts to evaluate your case."
+                },
+                {
+                    "question": "What is the statute of limitations for medical malpractice?",
+                    "answer": "Georgia has a 2-year statute of limitations for medical malpractice (O.C.G.A. § 9-3-71), with an absolute 5-year statute of repose from the date of the negligent act. South Carolina allows 3 years from the date of the act or 3 years from discovery, with a 6-year statute of repose (S.C. Code § 15-3-545). Exceptions exist for foreign objects left in the body and for minors. These deadlines are strict — contact an attorney promptly."
+                },
+                {
+                    "question": "What is an expert affidavit and why is it required?",
+                    "answer": "Georgia law (O.C.G.A. § 9-11-9.1) requires every medical malpractice complaint to include a sworn affidavit from a qualified medical expert stating that the standard of care was breached and that the breach caused the plaintiff's injuries. South Carolina has a similar requirement under S.C. Code § 15-79-125, requiring an expert opinion before filing. Without this affidavit, the court will dismiss the case. Our attorneys retain board-certified experts in every relevant specialty."
+                },
+                {
+                    "question": "Can I sue a hospital for medical malpractice?",
+                    "answer": "Yes. Hospitals can be held liable for malpractice under multiple theories: direct liability for inadequate staffing, poor training, or unsafe policies; vicarious liability for the negligence of employed physicians and nurses; and corporate negligence for failing to credential or supervise medical staff. However, many physicians are independent contractors rather than hospital employees, which affects liability. Our attorneys identify every potentially liable party."
+                },
+                {
+                    "question": "How much does a medical malpractice case cost to pursue?",
+                    "answer": "Medical malpractice cases are expensive to litigate due to the need for expert witnesses, medical record review, life care planning, and extensive discovery. Cases typically cost $50,000 to $200,000+ in expenses before trial. At Roden Law, we advance all costs on a contingency basis — you pay nothing upfront, and we only recover fees and expenses if we win your case. This allows victims to pursue justice regardless of their financial situation."
+                },
+                {
+                    "question": "Is there a cap on medical malpractice damages in Georgia or South Carolina?",
+                    "answer": "Georgia does not currently impose a cap on medical malpractice damages. The Georgia Supreme Court struck down the state's $350,000 cap on non-economic damages in Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt (2010). South Carolina does cap non-economic damages in medical malpractice cases: S.C. Code § 15-32-220 sets a base of $350,000 against a single provider and $1.05 million where more than one is liable, adjusted annually for inflation. Punitive damages are separately limited to the greater of $739,245, the 2026 inflation-indexed figure, or three times compensatory damages (S.C. Code § 15-32-530)."
+                },
+                {
+                    "question": "What is the difference between medical malpractice and negligence?",
+                    "answer": "Medical malpractice is a specific type of professional negligence. While general negligence requires proving duty, breach, causation, and damages, medical malpractice requires the additional element of proving deviation from the accepted medical standard of care — which must be established through expert testimony. The procedural requirements are also stricter, including mandatory expert affidavits, pre-suit notice requirements, and in some jurisdictions, medical review panels."
+                },
+                {
+                    "question": "Can I file a claim for a birth injury?",
+                    "answer": "Yes. Birth injuries caused by medical negligence — such as failure to perform a timely C-section, improper use of forceps or vacuum extractors, failure to monitor fetal distress, or medication errors during labor — are valid malpractice claims. These cases often involve catastrophic injuries like cerebral palsy that require lifelong care costing millions of dollars. The statute of limitations for minors is extended in both Georgia and South Carolina."
+                },
+                {
+                    "question": "What if I signed a consent form before the procedure?",
+                    "answer": "Signing a consent form does not waive your right to file a malpractice claim. Consent forms acknowledge the known risks of a procedure — they do not authorize negligent performance. If your provider deviated from the standard of care during the procedure, failed to disclose material risks (informed consent violation), or performed a procedure you did not authorize, you may still have a valid claim despite having signed a consent form."
+                },
+                {
+                    "question": "How long do medical malpractice cases take?",
+                    "answer": "Medical malpractice cases are among the longest to resolve, typically taking 2 to 4 years from filing to resolution. The extensive medical record review, expert consultations, depositions, and pre-trial motions require significant time. Some cases resolve through mediation or settlement, while others proceed to trial. We keep our clients informed at every stage and never rush a case at the expense of its value."
+                }
+            ]
+        },
+        {
+            "post_id": 1663,
+            "meta_key": "_roden_glossary_terms",
+            "before": [
+                {
+                    "term": "Compensatory damages",
+                    "anchor": "what-are-compensatory-damages",
+                    "definition": "Money that repays what an injury actually cost — medical bills, lost wages, and non-economic harm such as pain and suffering. Neither Georgia nor South Carolina caps compensatory damages in ordinary injury cases."
+                },
+                {
+                    "term": "Punitive damages",
+                    "anchor": "what-are-punitive-damages",
+                    "definition": "Money awarded on top of compensatory damages to punish extreme misconduct and deter it. Georgia caps punitive damages at $250,000 (O.C.G.A. § 51-12-5.1); South Carolina at the greater of three times compensatory damages or $500,000 (S.C. Code § 15-32-530)."
+                },
+                {
+                    "term": "Special damages",
+                    "definition": "The measurable financial losses an injury causes — medical expenses, lost income, lost earning capacity, and property damage — proved with bills, records, and expert projections. Also called economic damages."
+                },
+                {
+                    "term": "General damages",
+                    "definition": "Losses that arrive with no invoice: physical pain, mental anguish, disfigurement, and loss of enjoyment of life. Proved through testimony and medical records rather than receipts. Also called non-economic damages."
+                }
+            ],
+            "after": [
+                {
+                    "term": "Compensatory damages",
+                    "anchor": "what-are-compensatory-damages",
+                    "definition": "Money that repays what an injury actually cost — medical bills, lost wages, and non-economic harm such as pain and suffering. Neither Georgia nor South Carolina caps compensatory damages in ordinary injury cases."
+                },
+                {
+                    "term": "Punitive damages",
+                    "anchor": "what-are-punitive-damages",
+                    "definition": "Money awarded on top of compensatory damages to punish extreme misconduct and deter it. Georgia caps punitive damages at $250,000 in most cases (O.C.G.A. § 51-12-5.1); South Carolina at the greater of three times compensatory damages or $739,245, the 2026 inflation-indexed figure (S.C. Code § 15-32-530)."
+                },
+                {
+                    "term": "Special damages",
+                    "definition": "The measurable financial losses an injury causes — medical expenses, lost income, lost earning capacity, and property damage — proved with bills, records, and expert projections. Also called economic damages."
+                },
+                {
+                    "term": "General damages",
+                    "definition": "Losses that arrive with no invoice: physical pain, mental anguish, disfigurement, and loss of enjoyment of life. Proved through testimony and medical records rather than receipts. Also called non-economic damages."
+                }
+            ]
+        }
+    ]
+}
