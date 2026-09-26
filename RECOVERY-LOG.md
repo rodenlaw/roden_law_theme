@@ -1446,6 +1446,40 @@ identification, and changing it without confirming the registered entity name
 could make the notice inaccurate. Both left for the firm to decide. *(Also noted:
 the privacy policy exists twice, at `privacy-policy` and `privacy-policy-2`.)*
 
+### SC punitive floor corrected across content — 2026-09-26
+
+Gillin's approved pattern (review item 1): keep each page's wording and pair the figure with
+the index and the current amount. Each unindexed "$500,000" became **"$739,245, the 2026
+inflation-indexed figure"**, which reads correctly before a citation, a comma or more prose.
+- `bin/fix-sc-punitive-floor.php`: **32 replacements on 21 posts** (23 bodies, 9 FAQ answers).
+  That is the sweep's 29 plus 3 the dry run found in the same claim class: a second table
+  cell on 1669, a 4349 FAQ that writes "section 15-32-530", and a reversed "greater of
+  $500,000 or three times" sentence on 4360. Bodies written straight to the column, FAQs via
+  `update_post_meta( wp_slash() )`, all read back. Backup:
+  `docs/backups/sc-punitive-floor-2026-09-26.json`.
+- `bin/fix-sc-punitive-floor-meta.php`: two statements the sweep never reported, in the
+  **med-mal pillar's FAQ 5** (3608) and the **"Punitive damages" glossary term** on 1663 (also
+  published as DefinedTerm). The Georgia half of that term gained "in most cases". Backup:
+  `docs/backups/sc-punitive-floor-meta-2026-09-26.json`.
+- **Verified:** a fresh sweep shows 0 `sc-punitive-floor-unindexed` findings. A regex pass over
+  every published body, excerpt and meta value finds no unindexed statement left; its three
+  hits (1663, 1756, 1790) already name the index later in the sentence. The live med-mal pillar
+  and 1663 carry $739,245 in their FAQPage/DefinedTerm JSON-LD. JSON-LD guard PASS.
+  `content/meta.json` regenerated.
+
+**Rule gap, for the legal-accuracy lead:** the rule's `unless` is evaluated over the whole
+field, so the med-mal pillar FAQ escaped because another sentence in the same answer says
+"adjusted annually for inflation" (about the § 15-32-220 cap). It should be scoped to the
+sentence that asserts the claim. The sweep also missed the reversed "greater of $500,000 or
+three times" order in one sentence on 4360.
+
+**Every February:** $739,245 becomes stale when the RFA publishes. The rule's `unless` accepts
+"739,245", so it will not catch that. The annual update has to be deliberate: this table
+cell, the med-mal caps, and these 34 content statements.
+
+**Still open, older findings, not this work:** the sweep reports 4 findings under other rules:
+`county-ante-litem-6-months` (2), `municipal-ante-litem-12-months`, `sctca-mandatory-notice`.
+
 ### SC items approved by Gillin; the full comparison table ships — 2026-09-26
 
 **Owner, 2026-09-26: "Gillin approves these."** That is the SC wording in the review email
