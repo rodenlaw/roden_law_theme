@@ -1446,6 +1446,49 @@ identification, and changing it without confirming the registered entity name
 could make the notice inaccurate. Both left for the firm to decide. *(Also noted:
 the privacy policy exists twice, at `privacy-policy` and `privacy-policy-2`.)*
 
+### Comparison table: false rows removed pending sign-off — 2026-09-26
+
+**Owner, 2026-09-26: "apply the fixes when it's done".** The legal-accuracy lead verified every
+cell of `roden_jurisdiction_comparison_table()` against primary text
+(`data/facts/remediation-2026-09-26.md`; pack PR internal-ai-scripts #62). Findings:
+- Both **Filing Court** cells are false. GA: $15,000 is the magistrate ceiling (§ 15-10-2);
+  superior and state courts have no floor. SC: magistrate jurisdiction is concurrent up to
+  $7,500 (§ 22-3-10); circuit court is general.
+- **Damage Cap, compensatory**, false unqualified in both states (government caps). The SC cell
+  is false outright on the medical-malpractice and nursing-home pillars (§ 15-32-220).
+- **Damage Cap, SC punitive.** The #151 wording is still wrong: § 15-32-530(D) indexes the
+  $500,000 floor, which is **$739,245 for 2026**.
+- **Workers' comp and maritime pillars.** The tort rows are wrong there; maritime showed the
+  federal Jones Act and Longshore periods under "Georgia" and "South Carolina".
+- **Deadlines, comparative fault, 25/50/25 minimums:** correct. The deadline cells rendered a bare
+  citation with no period.
+
+**What shipped**, which removes every false claim and adds none that needs sign-off:
+- the Damage Cap and Filing Court rows are removed;
+- the table is suppressed on the workers' comp and maritime pillars (and their `es-` twins);
+- deadline cells print "N years (cite)" from the statute resolver when the pillar meta is the
+  general citation (39 pillars). Practice-specific meta (med-mal § 9-3-71 / § 15-3-545,
+  boating's admiralty note) renders exactly as before, because the resolver would print the
+  wrong statute there.
+
+Rendered in memory on prod for car, med-mal, boating, ES med-mal, WC and ES maritime before
+merge.
+
+**Held for sign-off, per the owner's 2026-09-23 rule** (anything stating SC law is reviewed by
+Gillin; the new GA authorities sit in the pack's `pendingAuthorities` until Wade signs):
+- the corrected Damage Cap and Filing Court rows;
+- the per-practice variants (med-mal repose and caps, nursing home, SC wrongful-death SOL, a
+  full workers' comp table);
+- the SC comparative-fault wording "50% or less (Nelson)";
+- auto-insurance citations, and limiting that row to motor-vehicle pillars.
+
+All exact wording is in the plan.
+
+**Also open:** 26 content pages (34 hits, 12 in FAQs that also publish as structured data)
+still state the unindexed SC $500,000 punitive floor. The new pack rule
+`sc-punitive-floor-unindexed` blocks publishes touching them at error level; Gillin should rule
+error vs. warn. Georgia Auto Law needs `vendor.mjs gal --write` after #62 merges.
+
 ### Two "updated this month" stamps, and a false SC punitive-damages claim — 2026-09-25
 
 **Owner, 2026-09-25: "yes"** to replacing the stats block's always-current date. The same
