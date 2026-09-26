@@ -7,8 +7,8 @@ whose `_roden_jurisdiction` is `both`. That is all **24 English pillars** under
 `/practice-areas/` and all **23 Spanish pillars** under `/es/practice-areas/` (translated
 through `languages/es_ES.po`). Subtype and intersection pages do not render it.
 
-**Sign-off state.** GA pack: **signed** (Mark Wade, 2026-09-24). Every GA authority this
-plan adds is in `pendingAuthorities[]` and needs Wade's signature before it can back a *new*
+**Sign-off state.** GA pack: **signed** (2026-09-24). Every GA authority this
+plan adds is in `pendingAuthorities[]` and needs an attorney's signature before it can back a *new*
 claim. SC pack: **UNSIGNED**, so it is advisory. **Every South Carolina cell below goes to
 attorney Gillin before publish**, and each is marked **[Gillin]**.
 
@@ -137,7 +137,7 @@ Authorities:
 - **maritime-injury: false.** Suppress the table (1d).
 - **boating-accident: [VERIFY — attorney].** On navigable waters, federal maritime law (pure
   comparative fault) may displace both state rules. That is case law I have not verified.
-  I propose no change until Wade and Gillin rule on it.
+  I propose no change until the reviewing attorneys rule on it.
 
 ---
 
@@ -154,7 +154,7 @@ Authorities:
   but *Atlanta Oculoplastic Surgery v. Nestlehutt*, 286 Ga. 731 (2010), affirmed the
   judgment declaring it unconstitutional (right to jury trial).
 - **Authorities:** `GA 50-21-29`, `GA 36-92-2`, `Atlanta Oculoplastic Surgery v. Nestlehutt`
-  (all in GA `pendingAuthorities`, awaiting Wade).
+  (all in GA `pendingAuthorities`, awaiting attorney signature).
 - **Replacement, "Compensatory Damages Cap" row:**
   - generic: `No cap, except some claims against government (e.g., O.C.G.A. § 50-21-29)`
   - medical-malpractice: `No cap; Georgia's med-mal cap was struck down (Atlanta Oculoplastic Surgery v. Nestlehutt, 2010)`
@@ -165,7 +165,7 @@ Authorities:
   liability (75% of the award goes to the state), and (f) removes it for specific intent to
   harm or impairment. On the product-liability pillar, "capped at $250,000 in most cases"
   states the exception as the rule.
-- **Authority:** `GA 51-12-5.1` (GA `pendingAuthorities`, awaiting Wade).
+- **Authority:** `GA 51-12-5.1` (GA `pendingAuthorities`, awaiting attorney signature).
 - **Replacement, "Punitive Damages Cap" row, one generic cell that is also correct on
   product-liability, so no variant is needed:**
   `$250,000 in most cases; no cap for product liability, intent to harm, or impairment (O.C.G.A. § 51-12-5.1)`
@@ -373,7 +373,7 @@ fixture's premise. It does not loosen a rule.
 - **GA primary text came from Wayback snapshots.** FindLaw and Justia returned a bot challenge
   on 2026-09-26. The FindLaw snapshots are "current as of March 28, 2024"; the Justia ones
   are the 2022–2024 editions. Every pack evidence string names its snapshot. Confirm against
-  the current Code before Wade signs.
+  the current Code before the GA authorities are signed.
 - *Nestlehutt* was read through CourtListener search highlights (holding language and
   "Judgment affirmed"), not a full-text read.
 - [VERIFY — attorney] Boating on navigable waters: does maritime law's pure comparative fault
@@ -385,5 +385,3 @@ fixture's premise. It does not loosen a rule.
 - [Gillin] Every SC cell, the SC nursing-home "malpractice" line, and whether
   `sc-punitive-floor-unindexed` should stay at error (it blocks 26 pages) or go to warn until
   the batch lands.
-- Follow-up: after PR #62 merges, run `node scripts/facts/vendor.mjs gal --write` on
-  Georgia Auto Law `main` and commit. Its vendored GA.json drifts until then.

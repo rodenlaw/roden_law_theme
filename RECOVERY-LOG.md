@@ -1475,7 +1475,7 @@ Rendered in memory on prod for car, med-mal, boating, ES med-mal, WC and ES mari
 merge.
 
 **Held for sign-off, per the owner's 2026-09-23 rule** (anything stating SC law is reviewed by
-Gillin; the new GA authorities sit in the pack's `pendingAuthorities` until Wade signs):
+Gillin; the new GA authorities sit in the pack's `pendingAuthorities` until an attorney signs them):
 - the corrected Damage Cap and Filing Court rows;
 - the per-practice variants (med-mal repose and caps, nursing home, SC wrongful-death SOL, a
   full workers' comp table);
@@ -1487,7 +1487,7 @@ All exact wording is in the plan.
 **Also open:** 26 content pages (34 hits, 12 in FAQs that also publish as structured data)
 still state the unindexed SC $500,000 punitive floor. The new pack rule
 `sc-punitive-floor-unindexed` blocks publishes touching them at error level; Gillin should rule
-error vs. warn. Georgia Auto Law needs `vendor.mjs gal --write` after #62 merges.
+error vs. warn.
 
 ### Two "updated this month" stamps, and a false SC punitive-damages claim — 2026-09-25
 

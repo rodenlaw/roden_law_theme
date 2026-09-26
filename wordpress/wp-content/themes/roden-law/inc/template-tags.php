@@ -3540,7 +3540,7 @@ function roden_jurisdiction_comparison_table( $practice_area_title, $sol_ga = ''
                  * against government and, in SC, in medical malpractice and
                  * nursing-home claims; the SC punitive floor is indexed
                  * ($739,245 for 2026), not $500,000. The corrected rows need
-                 * Gillin's review (SC) and Wade's signature on the new GA
+                 * Gillin's review (SC) and attorney signature on the new GA
                  * authorities, so the rows are out rather than replaced with
                  * wording nobody has signed.
                  */
