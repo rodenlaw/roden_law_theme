@@ -3505,9 +3505,22 @@ function roden_jurisdiction_comparison_table( $practice_area_title, $sol_ga = ''
         return '' !== (string) $meta ? $meta : $fallback;
     };
     $sol_ga_cell = $cmp_cell( 'GA', $sol_ga, __( '2 years (O.C.G.A. § 9-3-33)', 'roden-law' ) );
+
+    // Per-practice cells approved for Roden 2026-09-26 (data/facts/remediation-2026-09-26.md).
+    // Georgia's med-mal deadline carries a five-year repose the general cell cannot state.
+    if ( 'medical-malpractice-lawyers' === $table_slug ) {
+        $sol_ga_cell = __( '2 years; 5-year repose (O.C.G.A. § 9-3-71)', 'roden-law' );
+    }
+
+    // "Minimum Auto Insurance" is true everywhere but only means something on a
+    // motor-vehicle pillar; on med-mal, workers' comp or dog-bite it tells the reader nothing.
+    $cmp_motor = in_array( $table_slug, array( 'car-accident-lawyers', 'truck-accident-lawyers', 'motorcycle-accident-lawyers', 'bicycle-accident-lawyers', 'pedestrian-accident-lawyers', 'electric-scooter-accident-lawyers', 'e-bike-accident-lawyers' ), true );
     $sol_sc_cell = $cmp_cell( 'SC', $sol_sc, __( '3 years (S.C. Code § 15-3-530)', 'roden-law' ) );
 
     $label = preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', $practice_area_title );
+    // Spanish pillar titles lead with "Abogados de …", which the English strip
+    // above cannot see, so the heading read "Leyes de Abogados de Negligencia Médica".
+    $label = preg_replace( '/^Abogados?\s+(?:de|para)\s+/iu', '', $label );
     ?>
     <div class="jurisdiction-comparison" data-ai-extractable="true">
         <h2><?php printf( /* translators: %s: practice area label with "Lawyers/Attorneys" stripped, e.g. "Car Accident". */ esc_html__( 'Georgia vs. South Carolina %s Laws', 'roden-law' ), esc_html( $label ) ); ?></h2>
@@ -3545,11 +3558,13 @@ function roden_jurisdiction_comparison_table( $practice_area_title, $sol_ga = ''
                  * wording nobody has signed.
                  */
                 ?>
+                <?php if ( $cmp_motor ) : ?>
                 <tr>
                     <td><strong><?php esc_html_e( 'Minimum Auto Insurance', 'roden-law' ); ?></strong></td>
-                    <td><?php esc_html_e( '25/50/25 liability coverage required', 'roden-law' ); ?></td>
+                    <td><?php esc_html_e( '25/50/25 liability coverage required (O.C.G.A. § 33-34-4)', 'roden-law' ); ?></td>
                     <td><?php esc_html_e( '25/50/25 liability coverage required', 'roden-law' ); ?></td>
                 </tr>
+                <?php endif; ?>
             </tbody>
         </table>
         <?php

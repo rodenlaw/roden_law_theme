@@ -2443,6 +2443,12 @@ msgstr "Seguro de Auto Mínimo"
 msgid "25/50/25 liability coverage required"
 msgstr "Se requiere cobertura de responsabilidad de 25/50/25"
 
+msgid "25/50/25 liability coverage required (O.C.G.A. § 33-34-4)"
+msgstr "Se requiere cobertura de responsabilidad de 25/50/25 (O.C.G.A. § 33-34-4)"
+
+msgid "2 years; 5-year repose (O.C.G.A. § 9-3-71)"
+msgstr "2 años; plazo máximo de 5 años (O.C.G.A. § 9-3-71)"
+
 #: inc/template-tags.php:1707
 msgid "Filing Court"
 msgstr "Tribunal de Presentación"
