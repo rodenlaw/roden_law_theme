@@ -3919,3 +3919,103 @@ msgstr " y "
 #. translators: %s: date the content was last updated.
 msgid "Content updated: %s"
 msgstr "Contenido actualizado: %s"
+
+# Comparison table, approved for Roden 2026-09-26 (data/facts/remediation-2026-09-26.md).
+msgid "Claim Deadline"
+msgstr "Plazo para Presentar el Reclamo"
+
+msgid "1 year from injury, extended by employer-paid treatment or benefits (O.C.G.A. § 34-9-82)"
+msgstr "1 año desde la lesión, extendido si el empleador pagó tratamiento o beneficios (O.C.G.A. § 34-9-82)"
+
+msgid "2 years from the accident (S.C. Code § 42-15-40)"
+msgstr "2 años desde el accidente (S.C. Code § 42-15-40)"
+
+msgid "Notice to Employer"
+msgstr "Aviso al Empleador"
+
+msgid "Within 30 days (O.C.G.A. § 34-9-80)"
+msgstr "Dentro de 30 días (O.C.G.A. § 34-9-80)"
+
+msgid "Within 90 days (S.C. Code § 42-15-20)"
+msgstr "Dentro de 90 días (S.C. Code § 42-15-20)"
+
+msgid "Fault"
+msgstr "Culpa"
+
+msgid "Not a factor, except willful misconduct or intoxication (O.C.G.A. § 34-9-17)"
+msgstr "No es un factor, salvo mala conducta intencional o intoxicación (O.C.G.A. § 34-9-17)"
+
+msgid "Not a factor, except intoxication or intent to injure (S.C. Code § 42-9-60)"
+msgstr "No es un factor, salvo intoxicación o intención de causar daño (S.C. Code § 42-9-60)"
+
+msgid "No pain-and-suffering damages; weekly benefits capped by statute (O.C.G.A. §§ 34-9-11, 34-9-261)"
+msgstr "Sin daños por dolor y sufrimiento; beneficios semanales limitados por ley (O.C.G.A. §§ 34-9-11, 34-9-261)"
+
+msgid "No pain-and-suffering damages; weekly benefits capped at the state average weekly wage (S.C. Code §§ 42-1-540, 42-9-10)"
+msgstr "Sin daños por dolor y sufrimiento; beneficios semanales limitados al salario semanal promedio del estado (S.C. Code §§ 42-1-540, 42-9-10)"
+
+msgid "Punitive Damages"
+msgstr "Daños Punitivos"
+
+msgid "Not available against the employer (O.C.G.A. § 34-9-11)"
+msgstr "No disponibles contra el empleador (O.C.G.A. § 34-9-11)"
+
+msgid "Not available against the employer (S.C. Code § 42-1-540)"
+msgstr "No disponibles contra el empleador (S.C. Code § 42-1-540)"
+
+msgid "Where to File"
+msgstr "Dónde Presentar"
+
+msgid "State Board of Workers' Compensation (O.C.G.A. § 34-9-82(c))"
+msgstr "Junta Estatal de Compensación Laboral de Georgia (O.C.G.A. § 34-9-82(c))"
+
+msgid "S.C. Workers' Compensation Commission (S.C. Code § 42-15-40)"
+msgstr "Comisión de Compensación Laboral de Carolina del Sur (S.C. Code § 42-15-40)"
+
+msgid "No cap, except some claims against government (e.g., O.C.G.A. § 50-21-29)"
+msgstr "Sin límite, salvo algunos reclamos contra el gobierno (p. ej., O.C.G.A. § 50-21-29)"
+
+msgid "No general cap; capped in medical malpractice and against government or charities (S.C. Code §§ 15-32-220, 15-78-120, 33-56-180)"
+msgstr "Sin límite general; limitados en negligencia médica y contra el gobierno u organizaciones benéficas (S.C. Code §§ 15-32-220, 15-78-120, 33-56-180)"
+
+msgid "3 years from treatment or discovery; 6-year repose (S.C. Code § 15-3-545)"
+msgstr "3 años desde el tratamiento o el descubrimiento; plazo máximo de 6 años (S.C. Code § 15-3-545)"
+
+msgid "No cap; Georgia's med-mal cap was struck down (Atlanta Oculoplastic Surgery v. Nestlehutt, 2010)"
+msgstr "Sin límite; el límite de Georgia para negligencia médica fue anulado (Atlanta Oculoplastic Surgery v. Nestlehutt, 2010)"
+
+msgid "Non-economic damages capped at $596,001 per provider, $1,788,002 total (2026; adjusted yearly), with exceptions (S.C. Code § 15-32-220)"
+msgstr "Daños no económicos limitados a $596,001 por proveedor, $1,788,002 en total (2026; ajustados cada año), con excepciones (S.C. Code § 15-32-220)"
+
+msgid "Non-economic damages capped in malpractice claims ($596,001 per facility, 2026) and against nonprofit facilities (S.C. Code §§ 15-32-220, 33-56-180)"
+msgstr "Daños no económicos limitados en reclamos por negligencia médica ($596,001 por centro, 2026) y contra centros sin fines de lucro (S.C. Code §§ 15-32-220, 33-56-180)"
+
+msgid "3 years from the date of death (S.C. Code § 15-3-530)"
+msgstr "3 años desde la fecha del fallecimiento (S.C. Code § 15-3-530)"
+
+msgid "Modified — recover if 50% or less at fault (Nelson v. Concrete Supply Co., 1991)"
+msgstr "Modificada — puede recuperar si tiene el 50% de culpa o menos (Nelson v. Concrete Supply Co., 1991)"
+
+msgid "Compensatory Damages Cap"
+msgstr "Límite de Daños Compensatorios"
+
+msgid "Punitive Damages Cap"
+msgstr "Límite de Daños Punitivos"
+
+msgid "$250,000 in most cases; no cap for product liability, intent to harm, or impairment (O.C.G.A. § 51-12-5.1)"
+msgstr "$250,000 en la mayoría de los casos; sin límite en responsabilidad por productos, intención de causar daño o actuar bajo los efectos del alcohol o drogas (O.C.G.A. § 51-12-5.1)"
+
+msgid "Greater of 3x compensatory or $739,245 (2026; adjusted yearly), with exceptions (S.C. Code § 15-32-530)"
+msgstr "El mayor entre 3 veces los daños compensatorios o $739,245 (2026; ajustado cada año), con excepciones (S.C. Code § 15-32-530)"
+
+msgid "25/50/25 liability coverage required (S.C. Code § 38-77-140)"
+msgstr "Se requiere cobertura de responsabilidad de 25/50/25 (S.C. Code § 38-77-140)"
+
+msgid "Superior or State Court, any amount; Magistrate Court up to $15,000 (O.C.G.A. § 15-10-2)"
+msgstr "Tribunal Superior o Tribunal Estatal, cualquier monto; Tribunal de Magistrados hasta $15,000 (O.C.G.A. § 15-10-2)"
+
+msgid "Circuit Court (Common Pleas), any amount; Magistrate Court up to $7,500 (S.C. Code § 22-3-10)"
+msgstr "Tribunal de Circuito (Common Pleas), cualquier monto; Tribunal de Magistrados hasta $7,500 (S.C. Code § 22-3-10)"
+
+msgid "Sources: Georgia and South Carolina statutes and court decisions, as cited in each row."
+msgstr "Fuentes: leyes y decisiones judiciales de Georgia y Carolina del Sur, citadas en cada fila."
