@@ -1975,7 +1975,8 @@ function roden_earning_intersection_urls() {
         '/truck-accident-lawyers/columbia-sc/'                => '/practice-areas/truck-accident-lawyers/',
         // '/truck-accident-lawyers/savannah-ga/' restored 2026-09-26: wave 1, #4
         // (docs/site-architecture/README.md).
-        '/workers-compensation-lawyers/charleston-sc/'        => '/practice-areas/workers-compensation-lawyers/',
+        // '/workers-compensation-lawyers/charleston-sc/' restored 2026-09-26: wave 1, #5
+        // (docs/site-architecture/README.md).
         '/workers-compensation-lawyers/myrtle-beach-sc/'      => '/practice-areas/workers-compensation-lawyers/',
         '/workers-compensation-lawyers/savannah-ga/'          => '/practice-areas/workers-compensation-lawyers/',
         '/wrongful-death-lawyers/columbia-sc/'                => '/practice-areas/wrongful-death-lawyers/',
