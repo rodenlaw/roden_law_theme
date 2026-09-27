@@ -239,6 +239,7 @@ function roden_practice_city_slug( $slug ) {
 function roden_office_practice_allowlist() {
     return array(
         'car-accident-lawyers/charleston-sc', // wave 1, approved 2026-09-26
+        'truck-accident-lawyers/charleston-sc', // wave 1, #2 (owner: "start Charleston truck", 2026-09-26)
     );
 }
 
