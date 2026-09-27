@@ -1933,7 +1933,9 @@ function roden_earning_intersection_urls() {
         '/boating-accident-lawyers/columbia-sc/'              => '/practice-areas/boating-accident-lawyers/',
         '/burn-injury-lawyers/charleston-sc/'                 => '/practice-areas/burn-injury-lawyers/',
         '/burn-injury-lawyers/columbia-sc/'                   => '/practice-areas/burn-injury-lawyers/',
-        '/car-accident-lawyers/charleston-sc/'                => '/practice-areas/car-accident-lawyers/',
+        // '/car-accident-lawyers/charleston-sc/' restored 2026-09-26: rebuilt as the first
+        // allowlisted office practice page (Rule 6 reopened, owner). See
+        // docs/charleston-car-accident-rebuild-plan-2026-09-26.md.
         '/car-accident-lawyers/columbia-sc/'                  => '/practice-areas/car-accident-lawyers/',
         '/car-accident-lawyers/darien-ga/'                    => '/practice-areas/car-accident-lawyers/',
         '/car-accident-lawyers/savannah-ga/'                  => '/practice-areas/car-accident-lawyers/',
