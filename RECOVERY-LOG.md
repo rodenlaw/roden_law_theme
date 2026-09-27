@@ -1505,6 +1505,33 @@ md5 matches the repo.
 - **Doorway: 171 / 685 = 24.96% → 157 / 671 = 23.40%, PASS**, which frees 10 geo slots for
   wave 1. JSON-LD guard PASS. `content/meta.json` `_count` 678 → 664: exactly the 14.
 
+### The five sweep findings fixed; toolkit checkout back on main — 2026-09-26
+
+**Owner, 2026-09-26:** "fix that internal-ai-scripts checkout issue, then fix those five posts
+which have been reviewed". Georgia items were reviewed by Eric Roden; South Carolina items by
+Graeham C. Gillin.
+
+- **Toolkit checkout:** it was clean, with no stashes and nothing unique on the branch. It
+  switched from the superseded `law/comparison-table-2026-09-26` to `main` at `894c315`. The
+  validator shows both packs signed.
+- **`bin/fix-five-sweep-findings.php`** corrects four bodies (direct column write,
+  `post_modified` untouched) and one FAQ (`update_post_meta( wp_slash() )`). Every write was read
+  back.
+  - **1671:** the $1,000 threshold moved from § 56-5-1260 to § 56-5-1270, split into one sentence
+    per statute.
+  - **1820:** a county gets twelve months, not six. City six months (§ 36-33-5); county or State
+    twelve (§§ 36-11-1, 50-21-26).
+  - **2647:** Georgia notice now says which period applies: six months for a city, twelve for a
+    county or the State.
+  - **3493** (FAQ 4, also FAQPage structured data): the same city/county split.
+  - **4624:** the SCTCA "requires strict notice compliance" became the actual deadline: two
+    years, or three with a verified claim (§§ 15-78-110, 15-78-80).
+  - Backups: `docs/backups/five-sweep-findings-2026-09-26.json` and `-1671-pass2`.
+- **Verified:**
+  - Roden claims sweep against a **fresh** export: **0 findings**. The first re-run read the
+    17:51 cached export; the sweep needs `--fresh` after any content write.
+  - JSON-LD guard PASS; `content/meta.json` regenerated.
+
 ### Law pack: #62 superseded by #67, rebuilt on the signed SC pack — 2026-09-26
 
 **Owner, 2026-09-26:** "what do we need to do with #62? Those are signed", then "yes".
