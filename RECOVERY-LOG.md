@@ -1501,6 +1501,22 @@ md5 matches the repo.
 - **Doorway: 171 / 685 = 24.96% → 157 / 671 = 23.40%, PASS**, which frees 10 geo slots for
   wave 1. JSON-LD guard PASS. `content/meta.json` `_count` 678 → 664: exactly the 14.
 
+### SC law pack signed by Graeham C. Gillin — 2026-09-26
+
+**Owner, 2026-09-26:** "consider the SC pack signed by Gillin", then "Gillin's sign off confirmed".
+Recorded in internal-ai-scripts **#65** (`cf4a43b`): `signOff` is set to signed, attorney Graeham
+C. Gillin, 2026-09-26, and `verifiedBy` is set on all 27 authorities.
+
+- **Two authorities added first (#64):** § 56-5-1260 (immediate police notice for injury or death
+  crashes) and § 56-5-1270 (DMV report within 15 days when no officer investigated). Both were
+  read against scstatehouse.gov the same day.
+- **`SC 22-3-10` had never been verified.** It was read against the statute before the signature
+  (concurrent magistrate jurisdiction up to $7,500), and the owner confirmed the sign-off covers it.
+- **What the signature changes:** the FAQ gate can now accept SC authorities as the source for new
+  claims, and the SC pack is no longer advisory.
+- **Open:** internal-ai-scripts #62 adds SC authorities with `verifiedBy: null`. It needs to move
+  them to `pendingAuthorities[]` (or have them re-signed) before it merges.
+
 ### Charleston car accident page rebuilt and live — the first office practice page, 2026-09-26
 
 **Owner's decisions, 2026-09-26:** rebuild `/car-accident-lawyers/charleston-sc/` as a South
