@@ -662,6 +662,7 @@ into 8 city-tier towns and 109 nested municipalities; see the recommendation in
 | 2026-09-26 | **Spanish office hubs** (Darien, North Charleston) | 671 | 669 | 2 | **COMPLETE.** Redirects deployed (#160) to the English office hubs, relink applied (4 links, 2 posts), 2 hubs drafted and marked `_roden_retired`, template office links fixed (#161), caches flushed. Verified: 2/2 single-hop 301 → 200; 0 references on rendered /es/ pages; JSON-LD guard PASS. Doorway **23.40% → 23.17% PASS**. |
 | 2026-09-26 | **Charleston car accident page restored** (first allowlisted office practice page) | 669 | 670 | −1 | **LIVE.** #162 template + allowlist, #163 template claim fixes after a FAILED sweep, pillar intros corrected, published behind the redirect, #164 redirect removed. Verified: 200, self canonical, map, nested + 10 legacy URLs single-hop to it, in sitemap, 72 internal links restored, JSON-LD guard PASS. Doorway **23.17% → 23.28% PASS**. Reviewed by Gillin (owner, 2026-09-26). |
 | 2026-09-26 | **Charleston truck accident page restored** (office practice page #2) | 670 | 671 | −1 | **LIVE.** #167 allowlist, truck pillar intros corrected, legal sweep PASS (signed SC pack), warnings fixed (#168 directions), published behind the redirect, #169 redirect removed. Verified: 200, self canonical, map, nested + 2 legacy URLs single-hop, 22 links restored, JSON-LD guard PASS. Doorway **23.28% → 23.40% PASS**. Reviewed by Gillin (owner, 2026-09-26). |
+| 2026-09-26 | **Savannah car accident page restored** (office practice page #3, first GA) | 671 | 672 | −1 | **LIVE.** #170 essay + map + allowlist, #171 GA step 5, sweep PASS, warnings fixed (#172), published behind the redirect, #173 redirect removed. Verified: 200, self canonical, map, nested + 7 legacy URLs single-hop, 60 links restored, JSON-LD guard PASS. Doorway **23.40% → 23.51% PASS**. Reviewed by Eric Roden (owner, 2026-09-26). |
 
 ### Batch (c) — two things the plan did not predict
 
@@ -1501,6 +1502,50 @@ md5 matches the repo.
   `/locations/georgia/darien/`.
 - **Doorway: 171 / 685 = 24.96% → 157 / 671 = 23.40%, PASS**, which frees 10 geo slots for
   wave 1. JSON-LD guard PASS. `content/meta.json` `_count` 678 → 664: exactly the 14.
+
+### Savannah car accident page live (office practice page #3, the first in Georgia) — 2026-09-26
+
+**Owner, 2026-09-26:**
+- "then start Savannah car"
+- "The Georgia claims have been signed off on by Roden", then "this has been reviewed": Eric Roden
+  reviewed the page. His review is dated 2026-09-26.
+- "publish it when the sweep clears"
+
+**Shipped:**
+- **#170** — the Savannah office essay (EN and ES):
+  - "only Level I" dropped, along with an unsourced e-filing vendor.
+  - The § 33-7-11 "stacking" and § 40-1-112 direct-action sentence (neither is in the GA pack)
+    replaced with the pack's § 33-7-11 claim.
+  - Map embed added for the Savannah Business Profile. There was none, so the location page had
+    used an address map.
+  - Allowlist entry.
+- **#171** — GA what-to-do step 5 now states only the § 40-6-270 duty the GA pack holds; the
+  police report is framed as advice.
+- **Content** (`bin/rebuild-savannah-car-accident.php`, post 3622): Georgia only. It cites
+  §§ 9-3-33, 9-3-32, 51-12-33, 36-33-5, 36-11-1, 50-21-26 and 33-7-11, uses the Chatham FARS
+  figure, and names Eric Roden as author.
+- **Legal sweep: PASS** (`data/facts/remediation-2026-09-26-savannah-car.md`). Its four low
+  warnings were fixed in **#172**:
+  - LifeStar line cut;
+  - SR 204 wording;
+  - trial line softened;
+  - office-page resources now filtered by the resource's own `_roden_jurisdiction`. An SC crash
+    report had appeared on the GA page.
+- **Publish:** behind the #143 redirect first, then **#173** removed the redirect.
+- **Verified live:**
+  - The page returns 200, has a self canonical and the map.
+  - The nested URL and 7 legacy URLs each 301 to it in one hop, including
+    `/practice-areas/savannah/car-accident-lawyers/` (238k impressions in 16 months).
+  - 60 internal links restored across 56 posts.
+  - JSON-LD guard PASS; `content/meta.json` regenerated.
+  - **Doorway 158 / 672 = 23.51% PASS.**
+- **Truck pillar intros pass 3:** the GA-branch § 40-1-112 drafting note and the $250,000 /
+  § 51-12-5.1 figure removed. Neither is in the GA pack.
+
+**Open GA-pack questions for Eric Roden (from the sweep):**
+- § 40-6-270's scope (injury/death/attended-vehicle crashes) is narrower than the pack's claim.
+- § 40-6-273 (police-report duty) is not in the pack.
+- § 33-7-11: UM is included unless rejected in writing, which is stronger than "must offer".
 
 ### Charleston truck accident page live (office practice page #2); SC police-report step fixed — 2026-09-26
 
