@@ -756,7 +756,12 @@ if ( count( $sibling_urls ) >= 2 ) :
 
                 <!-- Filing Deadline (single state) -->
                 <?php
-                $sb_statute = roden_resolve_statute( $state_key );
+                // Reuse the statute resolved at the top of the template. Resolving
+                // again here ran after the resources/results loops had moved the
+                // current post, so the practice-area override was missed and a
+                // workers' comp page showed the 3-year tort deadline instead of
+                // the 2-year claim deadline (Charleston WC rebuild, 2026-09-26).
+                $sb_statute = $int_statute;
                 if ( $jurisdiction && $sb_statute ) : ?>
                 <div class="sidebar-widget sidebar-deadlines">
                     <h3 class="widget-title"><?php printf( /* translators: %s: state name. */ esc_html__( '%s Filing Deadline', 'roden-law' ), esc_html( $jurisdiction['state_full'] ) ); ?></h3>
