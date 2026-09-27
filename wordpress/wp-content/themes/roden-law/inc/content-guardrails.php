@@ -243,6 +243,7 @@ function roden_office_practice_allowlist() {
         'car-accident-lawyers/savannah-ga', // wave 1, #3 (owner: "then start Savannah car", 2026-09-26)
         'truck-accident-lawyers/savannah-ga', // wave 1, #4 (owner: "then start Savannah truck", 2026-09-26)
         'workers-compensation-lawyers/charleston-sc', // wave 1, #5 (owner: "start Charleston workers' comp", 2026-09-26)
+        'workers-compensation-lawyers/savannah-ga', // wave 1, #6 (owner: "do the Savannah's WC page", 2026-09-26)
     );
 }
 
