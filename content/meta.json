@@ -7,7 +7,7 @@
         "post",
         "page"
     ],
-    "_count": 665,
+    "_count": 666,
     "posts": {
         "/": {
             "type": "page",
@@ -21683,7 +21683,7 @@
                     }
                 ],
                 "_roden_jurisdiction": "both",
-                "_roden_pillar_compensation_intro": "Catastrophic medical costs, future care, and lost earning capacity often dominate commercial-truck cases, and more than one insurance policy can apply. {{SC}}Noneconomic damages such as pain and suffering are recoverable, and any award is reduced by your share of fault. Claims against a government entity are capped at $300,000 per person and $600,000 per occurrence (S.C. Code § 15-78-120). Where falsified logs, hours-of-service violations or gross safety-management failures show reckless disregard for safety, they can support a claim for punitive damages, which must be proven by clear and convincing evidence (S.C. Code § 15-33-135).{{/SC}}{{GA}}Falsified logs, hours-of-service violations, and gross safety-management failures can support a claim for punitive damages.{{/GA}}",
+                "_roden_pillar_compensation_intro": "Catastrophic medical costs, future care, and lost earning capacity often dominate commercial-truck cases, and more than one insurance policy can apply. {{SC}}Noneconomic damages such as pain and suffering are recoverable, and any award is reduced by your share of fault. Claims against a government entity are capped at $300,000 per person and $600,000 per occurrence (S.C. Code § 15-78-120). Where falsified logs, hours-of-service violations or gross safety-management failures show reckless disregard for safety, they can support a claim for punitive damages, which must be proven by clear and convincing evidence (S.C. Code § 15-33-135).{{/SC}}",
                 "_roden_pillar_negligence_intro": "Commercial-trucking cases layer federal safety rules onto ordinary negligence: the **Federal Motor Carrier Safety Regulations** govern hours of service, driver qualification, vehicle maintenance, and drug and alcohol testing, and a violation can be strong evidence that the driver or the carrier was careless. Defendants can include the driver, the motor carrier, a broker, a shipper, and the companies that loaded or maintained the truck. You generally have {sol_years} years to file ({sol_cite}).",
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33",
                 "_roden_sol_sc": "S.C. Code § 15-3-530",
@@ -25626,6 +25626,49 @@
                 "_roden_jurisdiction": "sc",
                 "_roden_sol_ga": "2 years (O.C.G.A. § 9-3-33)",
                 "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)"
+            }
+        },
+        "/truck-accident-lawyers/savannah-ga/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Savannah Truck Accident Lawyers",
+            "excerpt": "Hurt in a Savannah truck accident? Roden Law's Savannah lawyers handle Georgia truck accident claims against drivers, carriers and brokers. Free consultation, no fee unless we win.",
+            "meta": {
+                "_roden_author_attorney": "Eric Roden",
+                "_roden_faqs": [
+                    {
+                        "question": "How much does a Savannah truck accident lawyer cost?",
+                        "answer": "Nothing up front. Roden Law handles truck accident cases on a contingency fee. The consultation is free, and there is no fee unless we win your case."
+                    },
+                    {
+                        "question": "How long do I have to file a truck accident lawsuit in Georgia?",
+                        "answer": "Two years from the date of the crash for an injury claim under O.C.G.A. § 9-3-33. A claim for damage to your vehicle has four years under O.C.G.A. § 9-3-32."
+                    },
+                    {
+                        "question": "Who can be held responsible for a truck crash?",
+                        "answer": "Often more than the driver. Depending on the facts, the motor carrier, a freight broker, the shipper or loader, and the company that maintained the truck can all share responsibility."
+                    },
+                    {
+                        "question": "Can I still recover if I was partly at fault?",
+                        "answer": "Yes, if you were less than 50% at fault. Georgia bars recovery at 50% or more; below that, your award is reduced by your share of fault (O.C.G.A. § 51-12-33)."
+                    },
+                    {
+                        "question": "What if the truck belonged to a city or county?",
+                        "answer": "Georgia requires written notice before a lawsuit against a government. A claim against a city must be presented within six months of the injury (O.C.G.A. § 36-33-5); against a county, within twelve months (O.C.G.A. § 36-11-1)."
+                    },
+                    {
+                        "question": "What evidence matters most after a truck crash?",
+                        "answer": "The truck's electronic logging data, dashcam and other video, maintenance and inspection records, and the carrier's driver files. Some of it can be overwritten or discarded, so it should be requested in writing as early as possible."
+                    }
+                ],
+                "_roden_jurisdiction": "GA",
+                "_roden_key_takeaways": "If you were injured in a truck accident in Savannah, Georgia law gives you two years from the date of the crash to file an injury lawsuit (O.C.G.A. § 9-3-33). A claim against a city must be presented within six months (O.C.G.A. § 36-33-5), and against a county or the State within twelve months. Georgia bars recovery if you are 50% or more at fault; below that, your award is reduced by your share (O.C.G.A. § 51-12-33). A truck claim often has several defendants, including the driver, the motor carrier and sometimes a broker or shipper, and the evidence needs to be preserved early. Roden Law's Savannah office at 333 Commercial Drive handles truck accident cases on contingency: the consultation is free and there is no fee unless we win.",
+                "_roden_last_reviewed": "2026-09-26",
+                "_roden_meta_description": "Hurt in a Savannah truck accident? Roden Law's Savannah lawyers handle Georgia truck claims against drivers, carriers and brokers. Free consultation, no fee unless we win. (912) 303-5850.",
+                "_roden_meta_title": "Savannah Truck Accident Lawyer | Roden Law",
+                "_roden_pa_office_key": "savannah",
+                "_roden_sol_ga": "2 years (O.C.G.A. § 9-3-33)",
+                "_roden_translation_es": "/es/truck-accident-lawyers/savannah-ga/"
             }
         },
         "/workers-compensation-lawyers/denied-workers-comp-claim/": {

@@ -663,6 +663,7 @@ into 8 city-tier towns and 109 nested municipalities; see the recommendation in
 | 2026-09-26 | **Charleston car accident page restored** (first allowlisted office practice page) | 669 | 670 | −1 | **LIVE.** #162 template + allowlist, #163 template claim fixes after a FAILED sweep, pillar intros corrected, published behind the redirect, #164 redirect removed. Verified: 200, self canonical, map, nested + 10 legacy URLs single-hop to it, in sitemap, 72 internal links restored, JSON-LD guard PASS. Doorway **23.17% → 23.28% PASS**. Reviewed by Gillin (owner, 2026-09-26). |
 | 2026-09-26 | **Charleston truck accident page restored** (office practice page #2) | 670 | 671 | −1 | **LIVE.** #167 allowlist, truck pillar intros corrected, legal sweep PASS (signed SC pack), warnings fixed (#168 directions), published behind the redirect, #169 redirect removed. Verified: 200, self canonical, map, nested + 2 legacy URLs single-hop, 22 links restored, JSON-LD guard PASS. Doorway **23.28% → 23.40% PASS**. Reviewed by Gillin (owner, 2026-09-26). |
 | 2026-09-26 | **Savannah car accident page restored** (office practice page #3, first GA) | 671 | 672 | −1 | **LIVE.** #170 essay + map + allowlist, #171 GA step 5, sweep PASS, warnings fixed (#172), published behind the redirect, #173 redirect removed. Verified: 200, self canonical, map, nested + 7 legacy URLs single-hop, 60 links restored, JSON-LD guard PASS. Doorway **23.40% → 23.51% PASS**. Reviewed by Eric Roden (owner, 2026-09-26). |
+| 2026-09-26 | **Savannah truck accident page restored** (office practice page #4) | 672 | 673 | −1 | **LIVE.** Allowlist (#172), truck pillar GA branch corrected (passes 3–4), sweep PASS, W1/W2 fixed, published behind the redirect, #174 redirect removed. Verified: 200, self canonical, map, nested + legacy URL single-hop, 9 links restored, JSON-LD guard PASS. Doorway **23.51% → 23.63% PASS**. Reviewed by Eric Roden (owner, 2026-09-26). |
 
 ### Batch (c) — two things the plan did not predict
 
@@ -1502,6 +1503,38 @@ md5 matches the repo.
   `/locations/georgia/darien/`.
 - **Doorway: 171 / 685 = 24.96% → 157 / 671 = 23.40%, PASS**, which frees 10 geo slots for
   wave 1. JSON-LD guard PASS. `content/meta.json` `_count` 678 → 664: exactly the 14.
+
+### Savannah truck accident page live (office practice page #4) — 2026-09-26
+
+**Owner, 2026-09-26:**
+- "publish it when the sweep clears, then start Savannah truck"
+- "yes, it has all been reviewed": Eric Roden reviewed the page. His review is dated 2026-09-26.
+
+**Shipped:**
+- **Allowlist** entry in #172.
+- **Truck pillar intros, passes 3 and 4 (DB):**
+  - Pass 3 removed the GA-branch § 40-1-112 drafting note and the $250,000 / § 51-12-5.1 figure.
+  - Pass 4 dropped the GA-branch punitive sentence. "Gross … failures" names the standard Georgia
+    excludes (it requires willful misconduct or conscious indifference), and § 51-12-5.1 is not
+    in the GA pack.
+- **Content** (`bin/rebuild-savannah-truck-accident.php`, post 3627): Georgia only. It covers
+  Garden City Terminal and the freight corridors, who can be responsible, the ante litem
+  deadlines, § 33-7-11 and the court, with Eric Roden as author.
+- **Legal sweep: PASS** (`data/facts/remediation-2026-09-26-savannah-truck.md`). W1 (the punitive
+  sentence) and W2 (the I-16/I-95 line no longer asserts current work zones) were fixed before
+  publish.
+- **Publish:** behind the #143 redirect first, then **#174** removed the redirect.
+- **Verified live:**
+  - The page returns 200, has a self canonical and the map.
+  - The nested URL and the legacy `/practice-areas/savannah/truck-accident-lawyers/` each 301 to it
+    in one hop.
+  - The Charleston truck page is unaffected (SC branch only).
+  - 9 internal links restored across 8 posts.
+  - JSON-LD guard PASS; `content/meta.json` regenerated.
+  - **Doorway 159 / 673 = 23.63% PASS.**
+
+**Open:** `GA 51-12-5.1` is proposed as a pending GA authority. Its primary text could not be
+fetched, so it must be read before Eric Roden signs it.
 
 ### Savannah car accident page live (office practice page #3, the first in Georgia) — 2026-09-26
 
