@@ -1584,6 +1584,38 @@ Graeham C. Gillin.
     17:51 cached export; the sweep needs `--fresh` after any content write.
   - JSON-LD guard PASS; `content/meta.json` regenerated.
 
+### Savannah WC sweep L1/L2 and the flat § 34-9-82 templates fixed — 2026-09-26
+
+**Owner, 2026-09-26:** "those have been reviewed. fix them now" (Georgia, reviewed by Eric Roden).
+
+- **#182** (`64d8e56`), the template fixes:
+  - Single-state statutory takeaways use `deadline_detail`.
+  - The two-state WC takeaways no longer print "1 years"; Georgia gets the full § 34-9-82
+    phrase.
+  - The Darien WC essay now reads "generally one year … extended by employer-furnished
+    treatment or weekly benefit payments". It renders only on the Darien WC office page, which
+    is not live, so this fix is latent.
+- **`bin/fix-ga-wc-posts.php`**: one body (direct column write) and three FAQ answers
+  (`update_post_meta( wp_slash() )`), exact-match, each read back.
+  Backup: `docs/backups/ga-wc-posts-2026-09-26.json`.
+  - **1809**, body and FAQ 0 (the log above called it FAQ 1): "usually have 10 days to make a
+    report" became "notice within 30 days of the accident (O.C.G.A. § 34-9-80)".
+  - **1809 FAQ 4** and **1808 FAQ 2** (both also in FAQPage schema): the flat one-year claim
+    deadline now carries all three § 34-9-82 prongs (one year from injury, one year from the
+    last employer-paid treatment, two years from the last weekly benefit).
+- **Verified live** (cache-busted):
+  - Both posts show the new text in the page and in the JSON-LD; the old sentences are gone.
+  - The WC pillar and all four WC subtypes render the #182 takeaways, with no "1 years" and no
+    tort deadline.
+  - Fresh claims sweep: **0 findings**. JSON-LD guard PASS. `content/meta.json` regenerated;
+    the diff is exactly the three FAQ answers.
+
+**Still open, not in this review:**
+- 1809 still says the Employer's First Report "must be filed within 10 days" (body and FAQ 1).
+  That is an employer duty, not the employee notice, and no pack authority verifies it.
+- W4: co-worker immunity (§ 34-9-11(a)).
+- The two proposed GA pack rules.
+
 ### Law pack: #62 superseded by #67, rebuilt on the signed SC pack — 2026-09-26
 
 **Owner, 2026-09-26:** "what do we need to do with #62? Those are signed", then "yes".
