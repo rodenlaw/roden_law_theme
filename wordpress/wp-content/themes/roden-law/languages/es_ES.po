@@ -2977,8 +2977,8 @@ msgstr "Plazo para Presentar su Demanda en %s"
 #: templates/template-intersection.php:576
 #: templates/template-practice-area.php:642
 #: templates/template-subtype.php:369
-msgid "Missing the deadline forfeits your right to recover."
-msgstr "No cumplir con el plazo le hace perder su derecho a recuperar compensación."
+msgid "Missing the deadline usually ends your right to recover."
+msgstr "No cumplir con el plazo normalmente pone fin a su derecho a recuperar compensación."
 
 #. translators: %s: amount recovered, e.g. "$300M+".
 #: templates/template-intersection.php:584

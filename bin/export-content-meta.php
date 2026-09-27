@@ -106,6 +106,7 @@ $keys = array(
 	'_roden_common_causes',
 	'_roden_why_hire',
 	'_roden_pillar_negligence_intro',
+	'_roden_pillar_compensation_intro', // added 2026-09-26: renders on every car-accident office page and carried claims no sweep could see
 
 	// Glossary definitions, added 2026-09-03 with the Track C bounded test.
 	// They are short, they are prose, and they make STATUTORY claims — the

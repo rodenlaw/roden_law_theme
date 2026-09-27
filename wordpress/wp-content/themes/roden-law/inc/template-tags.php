@@ -1415,7 +1415,7 @@ function roden_deadline_badges_sidebar( $state_keys ) {
                 </p>
             <?php endif; ?>
         <?php endforeach; ?>
-        <p class="deadline-warning"><?php esc_html_e( 'Missing the deadline forfeits your right to recover.', 'roden-law' ); ?></p>
+        <p class="deadline-warning"><?php esc_html_e( 'Missing the deadline usually ends your right to recover.', 'roden-law' ); ?></p>
     </div>
     <?php
 }

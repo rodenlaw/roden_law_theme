@@ -1,0 +1,9 @@
+{
+    "generated": "2026-09-27T00:37:25+00:00",
+    "post": 3604,
+    "mode": "apply",
+    "before": {
+        "_roden_pillar_negligence_intro": "Most {state_full} car-accident cases are governed by ordinary negligence: you must prove the other driver owed a duty of care, breached it, caused your injuries, and that you suffered actual damages. Violating a Rule of the Road ({state_short}-specific traffic statutes) supports a *negligence per se* theory and can be powerful evidence at trial. {state_full}'s comparative-fault rule bars recovery if you are {comp_fault_threshold} or more at fault, so insurers in {market_name} routinely contest fault percentages. You have **{sol_years} years from the crash date** to file ({sol_cite}) — missing the deadline forfeits your right to recover regardless of how strong the case is.",
+        "_roden_pillar_compensation_intro": "Neither {state_full} nor any neighboring state operates a no-fault auto system — recovery flows through the at-fault driver's liability policy, with **uninsured/underinsured motorist (UM/UIM) stacking** as a critical secondary source when injuries exceed the at-fault driver's minimum 25/50/25 limits. There is **no statutory cap on noneconomic damages** in ordinary auto cases in {state_full}, so pain-and-suffering, loss of enjoyment, and disfigurement recoveries are limited only by the evidence and the comparative-fault bar. Economic damages typically include past and future medicals, lost wages, loss of earning capacity, and property damage."
+    }
+}

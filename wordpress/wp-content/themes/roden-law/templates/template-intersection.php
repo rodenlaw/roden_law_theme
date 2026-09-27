@@ -781,7 +781,7 @@ if ( count( $sibling_urls ) >= 2 ) :
                             <?php echo esc_html( $sb_statute['notice_detail'] ); ?>
                         </p>
                     <?php endif; ?>
-                    <p class="deadline-warning"><?php esc_html_e( 'Missing the deadline forfeits your right to recover.', 'roden-law' ); ?></p>
+                    <p class="deadline-warning"><?php esc_html_e( 'Missing the deadline usually ends your right to recover.', 'roden-law' ); ?></p>
                 </div>
                 <?php endif; ?>
 
