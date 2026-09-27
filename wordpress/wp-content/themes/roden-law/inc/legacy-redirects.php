@@ -1939,7 +1939,8 @@ function roden_earning_intersection_urls() {
         // docs/charleston-car-accident-rebuild-plan-2026-09-26.md.
         '/car-accident-lawyers/columbia-sc/'                  => '/practice-areas/car-accident-lawyers/',
         '/car-accident-lawyers/darien-ga/'                    => '/practice-areas/car-accident-lawyers/',
-        '/car-accident-lawyers/savannah-ga/'                  => '/practice-areas/car-accident-lawyers/',
+        // '/car-accident-lawyers/savannah-ga/' restored 2026-09-26: wave 1, #3, the first Georgia
+        // office practice page (docs/site-architecture/README.md).
         '/dog-bite-lawyers/charleston-sc/'                    => '/practice-areas/dog-bite-lawyers/',
         '/dog-bite-lawyers/columbia-sc/'                      => '/practice-areas/dog-bite-lawyers/',
         '/dog-bite-lawyers/myrtle-beach-sc/'                  => '/practice-areas/dog-bite-lawyers/',
