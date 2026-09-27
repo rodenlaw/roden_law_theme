@@ -1973,7 +1973,8 @@ function roden_earning_intersection_urls() {
         '/slip-and-fall-lawyers/savannah-ga/'                 => '/practice-areas/slip-and-fall-lawyers/',
         '/spinal-cord-injury-lawyers/myrtle-beach-sc/'        => '/practice-areas/spinal-cord-injury-lawyers/',
         '/truck-accident-lawyers/columbia-sc/'                => '/practice-areas/truck-accident-lawyers/',
-        '/truck-accident-lawyers/savannah-ga/'                => '/practice-areas/truck-accident-lawyers/',
+        // '/truck-accident-lawyers/savannah-ga/' restored 2026-09-26: wave 1, #4
+        // (docs/site-architecture/README.md).
         '/workers-compensation-lawyers/charleston-sc/'        => '/practice-areas/workers-compensation-lawyers/',
         '/workers-compensation-lawyers/myrtle-beach-sc/'      => '/practice-areas/workers-compensation-lawyers/',
         '/workers-compensation-lawyers/savannah-ga/'          => '/practice-areas/workers-compensation-lawyers/',
