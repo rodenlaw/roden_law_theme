@@ -4027,3 +4027,7 @@ msgstr "Visite Nuestra Oficina de %s"
 
 msgid "Getting here:"
 msgstr "Cómo llegar:"
+
+#: inc/template-tags.php (what-to-do step 5, SC, 2026-09-26)
+msgid "South Carolina law requires you to notify police immediately after a crash that injures or kills anyone (S.C. Code § 56-5-1260). If no officer investigated a crash involving injury or $1,000 or more in property damage, the driver or owner must file a written report with the DMV within 15 days (S.C. Code § 56-5-1270). Request a copy of the police report."
+msgstr "La ley de Carolina del Sur exige avisar a la policía de inmediato después de un choque en el que alguien resulte lesionado o muera (S.C. Code § 56-5-1260). Si ningún oficial investigó un choque con lesiones o con daños materiales de $1,000 o más, el conductor o el propietario debe presentar un reporte escrito ante el DMV dentro de 15 días (S.C. Code § 56-5-1270). Solicite una copia del reporte policial."
