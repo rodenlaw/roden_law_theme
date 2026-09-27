@@ -141,7 +141,7 @@ EOT
 ,
                 // Workers' compensation variant — see the Savannah office note.
                 'local_context_wc' => <<<'EOT'
-A Georgia workers' compensation claim is not filed in court. It goes on **form WC-14 to the State Board of Workers' Compensation** rather than to McIntosh County Superior Court, and the deadline is **one year from the date of injury** under O.C.G.A. § 34-9-82 — half the two-year window that applies to a personal injury lawsuit.
+A Georgia workers' compensation claim is not filed in court. It goes on **form WC-14 to the State Board of Workers' Compensation** rather than to McIntosh County Superior Court, and the deadline is generally **one year from the date of injury** under O.C.G.A. § 34-9-82, extended by employer-furnished treatment or weekly benefit payments. That is shorter than the two-year window for a personal injury lawsuit.
 
 Coastal Georgia's work is hard on bodies. Commercial fishing and seafood processing produce machinery, deck, and repetitive-motion injuries — and a crew member hurt aboard a vessel may fall under **federal maritime law rather than state workers' compensation**, a distinction that changes the claim entirely. Timber and pulp operations across McIntosh, Wayne, and Long counties remain among the most dangerous work in the state, and the **I-95 corridor** adds warehouse, trucking, and loading-dock injuries. Serious trauma is generally routed to **Memorial Health University Medical Center in Savannah**, the region's only Level I trauma center.
 

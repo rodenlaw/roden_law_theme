@@ -2521,7 +2521,9 @@ function roden_pa_key_takeaways_text( $post_id = null, $office = null ) {
 			: '';
 
 		if ( $statutory ) {
-			$deadline = sprintf(
+			// The full rule where one exists (Georgia § 34-9-82 also runs from the
+			// last employer-furnished treatment and benefit payment).
+			$deadline = ! empty( $r['deadline_detail'] ) ? $r['deadline_detail'] : sprintf(
 				/* translators: 1: number of years; 2: statute citation. */
 				_n( '%1$s year from the date of injury (%2$s)', '%1$s years from the date of injury (%2$s)', (int) $r['statute_years'], 'roden-law' ),
 				$r['statute_years'],
@@ -2557,9 +2559,12 @@ function roden_pa_key_takeaways_text( $post_id = null, $office = null ) {
 
 	if ( $statutory ) {
 		return sprintf(
-			/* translators: 1: GA years; 2: GA citation; 3: SC years; 4: SC citation. */
-			__( 'If you were hurt on the job, workers\' compensation runs on its own filing deadlines, separate from the personal injury statute of limitations: %1$s years from the date of injury in Georgia (%2$s) and %3$s years in South Carolina (%4$s). You must also report the injury to your employer well before those dates, and that notice deadline is much shorter. Workers\' compensation is a no-fault system: you do not have to prove your employer was negligent, and being partly at fault does not bar benefits. It does not, however, pay for pain and suffering. If someone other than your employer contributed to the injury, a separate third-party claim may recover damages workers\' compensation cannot. Roden Law represents injured workers in Georgia and South Carolina on a contingency fee: the consultation is free and there is no fee unless we win.', 'roden-law' ),
-			$ga['statute_years'], $ga['statute_cite'], $sc['statute_years'], $sc['statute_cite']
+			/* translators: 1: Georgia deadline phrase with citation; 2: SC years; 3: SC citation. */
+			__( 'If you were hurt on the job, workers\' compensation runs on its own filing deadlines, separate from the personal injury statute of limitations: in Georgia, %1$s; in South Carolina, %2$s years from the accident (%3$s). You must also report the injury to your employer well before those dates, and that notice deadline is much shorter. Workers\' compensation is a no-fault system: you do not have to prove your employer was negligent, and being partly at fault does not bar benefits. It does not, however, pay for pain and suffering. If someone other than your employer contributed to the injury, a separate third-party claim may recover damages workers\' compensation cannot. Roden Law represents injured workers in Georgia and South Carolina on a contingency fee: the consultation is free and there is no fee unless we win.', 'roden-law' ),
+			// Was "%1$s years … in Georgia", which printed "1 years" and dropped
+			// § 34-9-82's extensions (Savannah WC sweep, 2026-09-26).
+			! empty( $ga['deadline_detail'] ) ? $ga['deadline_detail'] : sprintf( _n( '%1$s year from the date of injury (%2$s)', '%1$s years from the date of injury (%2$s)', (int) $ga['statute_years'], 'roden-law' ), $ga['statute_years'], $ga['statute_cite'] ),
+			$sc['statute_years'], $sc['statute_cite']
 		);
 	}
 
