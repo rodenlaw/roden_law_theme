@@ -55,7 +55,7 @@ $body = <<<'HTML'
 <h3>I-16 and I-516</h3>
 <p>I-16 and I-516 carry port freight between Garden City, downtown and the southside. See <a href="/resources/i-16-truck-accidents-savannah/">I-16 truck accidents</a> and <a href="/resources/i-516-truck-accidents-port-savannah/">I-516 and the Port of Savannah</a>.</p>
 <h3>I-95 and the I-16 / I-95 interchange</h3>
-<p>I-95 carries interstate freight past Pooler and Richmond Hill, and work zones at the I-16 interchange change lane patterns for heavy trucks. See <a href="/resources/i-95-truck-accidents-savannah-brunswick/">I-95 truck accidents</a> and <a href="/resources/i-16-i-95-construction-zone-truck-accidents/">I-16 and I-95 construction zone truck accidents</a>.</p>
+<p>I-95 carries interstate freight past Pooler and Richmond Hill, and its interchange with I-16 moves heavy trucks between the two interstates. See <a href="/resources/i-95-truck-accidents-savannah-brunswick/">I-95 truck accidents</a> and <a href="/resources/i-16-i-95-construction-zone-truck-accidents/">I-16 and I-95 construction zone truck accidents</a>.</p>
 <h3>Pooler and the warehouse district</h3>
 <p>Distribution centers around Pooler put tractor-trailers on Dean Forest Road and the Jimmy DeLoach Connector. See <a href="/resources/pooler-warehouse-district-truck-accidents/">the Pooler warehouse district</a>, <a href="/resources/dean-forest-road-truck-accidents-pooler/">Dean Forest Road truck accidents</a> and <a href="/resources/jimmy-deloach-connector-truck-accidents-savannah/">the Jimmy DeLoach Connector</a>.</p>
 <h3>Abercorn Street and downtown</h3>
