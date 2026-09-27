@@ -18,7 +18,7 @@
 $apply = isset( $args[0] ) && 'apply' === $args[0];
 $err   = fopen( 'php://stderr', 'w' );
 $id    = 3652;
-$reviewed = ''; // set when the owner confirms Eric Roden reviewed THIS page's content
+$reviewed = '2026-09-26'; // owner: "this has been reviewed - those 2 statutes have been reviewed as well" — Eric Roden reviewed the page and O.C.G.A. §§ 34-9-11, 34-9-17 (2026-09-26)
 global $wpdb;
 
 if ( ! function_exists( 'roden_office_practice_allowlist' ) || ! in_array( 'workers-compensation-lawyers/savannah-ga', roden_office_practice_allowlist(), true ) ) {

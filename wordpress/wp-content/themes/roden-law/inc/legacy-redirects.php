@@ -1978,7 +1978,8 @@ function roden_earning_intersection_urls() {
         // '/workers-compensation-lawyers/charleston-sc/' restored 2026-09-26: wave 1, #5
         // (docs/site-architecture/README.md).
         '/workers-compensation-lawyers/myrtle-beach-sc/'      => '/practice-areas/workers-compensation-lawyers/',
-        '/workers-compensation-lawyers/savannah-ga/'          => '/practice-areas/workers-compensation-lawyers/',
+        // '/workers-compensation-lawyers/savannah-ga/' restored 2026-09-26: wave 1, #6
+        // (docs/site-architecture/README.md).
         '/wrongful-death-lawyers/columbia-sc/'                => '/practice-areas/wrongful-death-lawyers/',
         '/wrongful-death-lawyers/darien-ga/'                  => '/practice-areas/wrongful-death-lawyers/',
         '/wrongful-death-lawyers/myrtle-beach-sc/'            => '/practice-areas/wrongful-death-lawyers/',
