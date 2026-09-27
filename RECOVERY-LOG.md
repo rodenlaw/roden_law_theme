@@ -1505,6 +1505,36 @@ md5 matches the repo.
 - **Doorway: 171 / 685 = 24.96% → 157 / 671 = 23.40%, PASS**, which frees 10 geo slots for
   wave 1. JSON-LD guard PASS. `content/meta.json` `_count` 678 → 664: exactly the 14.
 
+### Law pack: #62 superseded by #67, rebuilt on the signed SC pack — 2026-09-26
+
+**Owner, 2026-09-26:** "what do we need to do with #62? Those are signed", then "yes".
+
+internal-ai-scripts #62 (the comparison-table pack changes) was branched before the SC sign-off
+(#65) and before #64/#66. Merged as-is, it would have done three things:
+- reset SC to unsigned and blanked every `verifiedBy`;
+- dropped §§ 56-5-1260 and 56-5-1270;
+- overwritten the three signed workers' comp authorities.
+
+**#67** (`894c315`) carries its substance onto current main instead, and #62 is closed as
+superseded. These SC items were approved by Gillin on 2026-09-26 and are signed in the pack:
+- § 15-32-530: the indexed punitive floor, $739,245 for 2026;
+- § 15-32-220: the 2026 med-mal caps, $596,001 / $1,788,002;
+- § 22-3-10: concurrent magistrate jurisdiction;
+- two new authorities: S.C. Const. art. V, § 11, and § 33-56-180 (the charitable cap);
+- two rules: `sc-circuit-court-dollar-floor` and `sc-punitive-floor-unindexed`.
+
+The GA side adds 10 pending authorities (inert until signed) and one rule. Validator: SC signed
+with 32 authorities; GA signed with 22 authorities plus 10 pending. Fixtures 22/22, 22/22 and
+36/36.
+
+**The Roden content sweep with the merged packs found 5 pre-existing live-content findings.**
+None comes from the new rules. They are to fix:
+- `/blog/what-to-do-when-you-are-in-a-car-accident/` — `SC 56-5-1260`: "……"
+- `/blog/roadway-hazard-auto-accident/` — `county-ante-litem-6-months`: "……"
+- `/blog/rollover-crashes-and-what-they-do-to-your-body/` — `municipal-ante-litem-12-months`: "……"
+- `/blog/how-pain-and-suffering-is-calculated-after-an-accident-in-georgia/` — `county-ante-litem-6-months`: "……"
+- `/blog/ashley-phosphate-i-26-south-carolinas-deadliest-intersection/` — `sctca-mandatory-notice`: "……"
+
 ### Charleston workers' comp page live (office practice page #5, the first WC page) — 2026-09-26
 
 **Owner, 2026-09-26:**
