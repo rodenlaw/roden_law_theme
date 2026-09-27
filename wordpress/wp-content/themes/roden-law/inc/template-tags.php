@@ -3429,8 +3429,19 @@ function roden_related_resources( $args = array() ) {
         $resources->the_post();
         $slug = get_post_field( 'post_name', get_the_ID() );
 
-        if ( $other_state && false !== strpos( roden_strip_es_slug( $slug ), $other_state ) ) {
-            continue;
+        if ( $other_state ) {
+            // The resource's own jurisdiction first (sc / ga / both, and the
+            // *-only forms); the slug is the fallback for untagged ones. The
+            // Savannah car page listed an SC crash report whose slug names only
+            // Myrtle Beach (legal sweep 2026-09-26, Savannah W3).
+            $res_jur = strtolower( (string) get_post_meta( get_the_ID(), '_roden_jurisdiction', true ) );
+            $own     = ( 'georgia' === $other_state ) ? array( 'sc', 'south-carolina', 'south-carolina-only' ) : array( 'ga', 'georgia', 'georgia-only' );
+            if ( '' !== $res_jur && ! in_array( $res_jur, $own, true ) ) {
+                continue;
+            }
+            if ( '' === $res_jur && false !== strpos( roden_strip_es_slug( $slug ), $other_state ) ) {
+                continue;
+            }
         }
 
         $is_local = false;

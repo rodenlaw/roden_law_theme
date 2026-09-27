@@ -46,14 +46,14 @@ $body = <<<'HTML'
 <ul>
 <li><strong>No fee unless we win.</strong> The consultation is free, and you pay nothing up front.</li>
 <li><strong>A Georgia lawyer on your case.</strong> Your case is handled under Georgia law by attorneys licensed here.</li>
-<li><strong>Built for trial.</strong> We prepare every case as if it will be tried at the Chatham County Courthouse.</li>
+<li><strong>Built for trial.</strong> We prepare cases to be tried at the Chatham County Courthouse if the insurer will not pay fairly.</li>
 <li><strong>Every policy found.</strong> The at-fault driver's liability coverage, your own uninsured motorist coverage, and rideshare or commercial policies where they apply.</li>
 </ul>
 
 <h2>Where Car Accidents Happen in Savannah</h2>
 <p>According to NHTSA's Fatality Analysis Reporting System, Chatham County recorded 40 traffic deaths in 2022. Most of the Savannah crashes we see happen on a handful of roads. See our guides to <a href="/blog/dangerous-savannah-intersections/">Savannah's most dangerous intersections</a> and <a href="/blog/savannah-dangerous-highways-i16-i95-abercorn/">I-16, I-95 and Abercorn Street</a>.</p>
 <h3>Abercorn Street</h3>
-<p>Abercorn Street (SR 204) runs from downtown past the Oglethorpe Mall area to the southside, with heavy retail traffic, frequent signals and turning vehicles. Our office sits just off it. See <a href="/resources/abercorn-street-truck-accidents-savannah/">Abercorn Street truck accidents</a>.</p>
+<p>Abercorn Street runs from downtown past the Oglethorpe Mall area to the southside, where it carries SR 204, with heavy retail traffic, frequent signals and turning vehicles. Our office sits just off it. See <a href="/resources/abercorn-street-truck-accidents-savannah/">Abercorn Street truck accidents</a>.</p>
 <h3>I-16, I-516 and I-95</h3>
 <p>I-16 brings traffic into downtown, I-516 connects it to the port and the southside, and I-95 carries interstate traffic past Pooler and Richmond Hill. Port trucks share all three. See <a href="/resources/i-16-truck-accidents-savannah/">I-16 truck accidents</a> and <a href="/resources/i-516-truck-accidents-port-savannah/">I-516 and the Port of Savannah</a>.</p>
 <h3>Pooler and the Jimmy DeLoach corridor</h3>
