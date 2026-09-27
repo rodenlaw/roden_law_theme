@@ -240,6 +240,7 @@ function roden_office_practice_allowlist() {
     return array(
         'car-accident-lawyers/charleston-sc', // wave 1, approved 2026-09-26
         'truck-accident-lawyers/charleston-sc', // wave 1, #2 (owner: "start Charleston truck", 2026-09-26)
+        'car-accident-lawyers/savannah-ga', // wave 1, #3 (owner: "then start Savannah car", 2026-09-26)
     );
 }
 
