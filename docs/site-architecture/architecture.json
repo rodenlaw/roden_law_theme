@@ -38,9 +38,14 @@
         "total": 1
       },
       {
-        "step": "Wave 1: the remaining 10 office practice pages",
-        "geo": 10,
-        "total": 10
+        "step": "Charleston truck accident page live (wave 1, #2 of 11) — 2026-09-26",
+        "geo": 1,
+        "total": 1
+      },
+      {
+        "step": "Wave 1: the remaining 9 office practice pages",
+        "geo": 9,
+        "total": 9
       },
       {
         "step": "Georgia statewide practice pages (6, mirror of the SC set; state names are not geo)",
@@ -234,13 +239,15 @@
                     "id": "chs-truck",
                     "label": "Charleston truck accident",
                     "url": "/truck-accident-lawyers/charleston-sc/",
-                    "kind": "restore",
+                    "kind": "keep",
                     "wave": 1,
                     "geo": true,
                     "evidence": {
                       "impr16": 81984,
                       "pos90": 10.5
-                    }
+                    },
+                    "live": "2026-09-26",
+                    "note": "LIVE 2026-09-26 (#169). Office practice page #2."
                   },
                   {
                     "id": "chs-wc",

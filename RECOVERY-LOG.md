@@ -661,6 +661,7 @@ into 8 city-tier towns and 109 nested municipalities; see the recommendation in
 | 2026-09-26 | **Dead geo posts** (14; site-architecture step 1, Rule 6 reopened) | 685 | 671 | 14 | **COMPLETE.** Redirects deployed (#159), 12 legacy redirects repointed off the set, Brunswick profile URL → Darien hub, relink applied (1 link, 1 post), 14 posts drafted and marked `_roden_retired`, caches flushed. Verified: 27/27 single-hop 301 → 200; 0 references left in bodies or meta; JSON-LD guard PASS. Doorway **24.96% → 23.40% PASS**, 10 geo slots freed for wave 1. |
 | 2026-09-26 | **Spanish office hubs** (Darien, North Charleston) | 671 | 669 | 2 | **COMPLETE.** Redirects deployed (#160) to the English office hubs, relink applied (4 links, 2 posts), 2 hubs drafted and marked `_roden_retired`, template office links fixed (#161), caches flushed. Verified: 2/2 single-hop 301 → 200; 0 references on rendered /es/ pages; JSON-LD guard PASS. Doorway **23.40% → 23.17% PASS**. |
 | 2026-09-26 | **Charleston car accident page restored** (first allowlisted office practice page) | 669 | 670 | −1 | **LIVE.** #162 template + allowlist, #163 template claim fixes after a FAILED sweep, pillar intros corrected, published behind the redirect, #164 redirect removed. Verified: 200, self canonical, map, nested + 10 legacy URLs single-hop to it, in sitemap, 72 internal links restored, JSON-LD guard PASS. Doorway **23.17% → 23.28% PASS**. Reviewed by Gillin (owner, 2026-09-26). |
+| 2026-09-26 | **Charleston truck accident page restored** (office practice page #2) | 670 | 671 | −1 | **LIVE.** #167 allowlist, truck pillar intros corrected, legal sweep PASS (signed SC pack), warnings fixed (#168 directions), published behind the redirect, #169 redirect removed. Verified: 200, self canonical, map, nested + 2 legacy URLs single-hop, 22 links restored, JSON-LD guard PASS. Doorway **23.28% → 23.40% PASS**. Reviewed by Gillin (owner, 2026-09-26). |
 
 ### Batch (c) — two things the plan did not predict
 
@@ -1500,6 +1501,50 @@ md5 matches the repo.
   `/locations/georgia/darien/`.
 - **Doorway: 171 / 685 = 24.96% → 157 / 671 = 23.40%, PASS**, which frees 10 geo slots for
   wave 1. JSON-LD guard PASS. `content/meta.json` `_count` 678 → 664: exactly the 14.
+
+### Charleston truck accident page live (office practice page #2); SC police-report step fixed — 2026-09-26
+
+**Owner, 2026-09-26:**
+- "fix the police report step, then start Charleston truck"
+- "Set Gillin's review date as today. He has reviewed all this content."
+- "publish it when the sweep clears"
+
+**Shipped:**
+- **#166 — police-report step.** On SC pages, what-to-do step 5 and its HowTo schema now state
+  both duties from the signed pack: § 56-5-1260 (immediate police notice for an injury or death
+  crash) and § 56-5-1270 (DMV report within 15 days when no officer investigated). Georgia and
+  two-state pages keep the general sentence until O.C.G.A. § 40-6-273 is in the GA pack.
+- **#167 — allowlist.** `truck-accident-lawyers/charleston-sc` added.
+- **Truck pillar intros (DB)** (`bin/fix-truck-pillar-intros.php`):
+  - removed "neighboring states … no cap", § 58-23-10 and MCS-90, which are not in the pack, and
+    the literal asterisks;
+  - moved the punitive sentence into the SC branch, with § 15-33-135;
+  - left the GA branches as they were.
+- **Content** (`bin/rebuild-charleston-truck-accident.php`, post 3629): SC only. It covers the
+  port terminals and freight corridors (terminal names checked on scspa.com), one FARS figure
+  from `data/statistics.json`, who can be responsible, the SCTCA, UM/UIM, the court, and six FAQs.
+- **Legal sweep: PASS** against the signed SC pack (`data/facts/remediation-2026-09-26-charleston-truck.md`).
+  Its warnings were fixed before publish:
+  - FAQ 5 now carries the verified-claim extension;
+  - the punitive sentence has its authority;
+  - **#168** corrected the office directions. 127 King is between Broad and Queen, not near
+    Calhoun. This was also live on the car and location pages.
+- **Publish:** behind the #142 redirect first, then **#169** removed the redirect. Gillin's
+  review is dated 2026-09-26 on the owner's word.
+- **Verified live:**
+  - The page returns 200, has a self canonical and the map.
+  - The nested URL and 2 legacy URLs each 301 to it in one hop.
+  - 22 internal links restored across 14 posts (11 skipped: retired posts).
+  - JSON-LD guard PASS; `content/meta.json` regenerated.
+  - **Doorway 157 / 671 = 23.40% PASS.**
+
+**Open:**
+- "Cases successfully handled" in the stats block (carried over from the car sweep).
+- FMCSA, and the broker liability authority from *Montgomery v. Caribe Transport II* (U.S.
+  2026), are proposed as pending authorities for Gillin's next packet. Which pack holds federal
+  law is undecided.
+- The GA truck-pillar branch still carries the drafting note "verify current posture before
+  filing"; it is for the GA reviewer.
 
 ### SC law pack signed by Graeham C. Gillin — 2026-09-26
 
