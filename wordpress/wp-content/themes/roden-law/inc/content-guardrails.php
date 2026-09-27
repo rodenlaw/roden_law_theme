@@ -228,6 +228,21 @@ function roden_practice_city_slug( $slug ) {
 }
 
 /**
+ * The office practice pages that may publish while the freeze is on:
+ * '{pillar-slug}/{city-slug}'. Rule 6 reopened 2026-09-26 (owner) for a capped
+ * set, each funded by a line in docs/site-architecture/architecture.json's geo
+ * ledger and restored at its old URL. Add a page here only with that approval
+ * and that ledger line; the doorway check (25% ceiling) still gates the deploy.
+ *
+ * @return string[]
+ */
+function roden_office_practice_allowlist() {
+    return array(
+        'car-accident-lawyers/charleston-sc', // wave 1, approved 2026-09-26
+    );
+}
+
+/**
  * Refuse to publish a city x practice permutation the plan forbids.
  *
  * Sibling of roden_guard_location_publish() rather than a branch inside it: the
@@ -249,9 +264,8 @@ function roden_guard_practice_permutation_publish( $data, $postarr ) {
     $id = isset( $postarr['ID'] ) ? (int) $postarr['ID'] : 0;
 
     /*
-     * Already published: this is an edit to one of the 175 survivors, not a new
-     * permutation. Track A rewrites every one of them in place, so this branch
-     * is load-bearing rather than defensive.
+     * Already published: an edit to a live office practice page, not a new
+     * permutation.
      */
     if ( $id && 'publish' === get_post_status( $id ) ) {
         return $data;
@@ -264,6 +278,16 @@ function roden_guard_practice_permutation_publish( $data, $postarr ) {
         return $data;
     }
 
+    /*
+     * Rule 6 reopened 2026-09-26 (owner) for a capped, allowlisted set of office
+     * practice pages. An allowlisted page publishes even while the freeze is on;
+     * everything else is still refused below.
+     */
+    $parent = ! empty( $data['post_parent'] ) ? get_post( (int) $data['post_parent'] ) : null;
+    if ( $parent && in_array( $parent->post_name . '/' . $city, roden_office_practice_allowlist(), true ) ) {
+        return $data;
+    }
+
     if ( ! in_array( $city, roden_office_city_slugs(), true ) ) {
         $reason = sprintf(
             /* translators: %s: city slug, e.g. beaufort-sc. */
@@ -273,7 +297,7 @@ function roden_guard_practice_permutation_publish( $data, $postarr ) {
     } elseif ( roden_location_freeze_active() ) {
         $reason = sprintf(
             /* translators: %s: city slug, e.g. charleston-sc. */
-            __( 'New city-and-practice permutations are frozen for the duration of the SEO recovery, including in office markets like "%s". The 175 that survived the cull stay editable; new ones do not get created. To publish anyway, define RODEN_LOCATION_FREEZE false in wp-config.php, publish, and set it back. Kept as a draft.', 'roden-law' ),
+            __( 'New city-and-practice permutations are frozen for the duration of the SEO recovery, including in office markets like "%s". Only the office practice pages in roden_office_practice_allowlist() may publish; add this one there, with the owner\'s approval and a doorway-ledger line, if it belongs in the capped set. Kept as a draft.', 'roden-law' ),
             $city
         );
     } else {

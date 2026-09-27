@@ -178,33 +178,37 @@ $int_is_statutory = ( $int_statute && $int_statute['is_override'] );
 <!-- ================================================================
      LOCATION MATRIX — All 6 offices for this practice area
      ================================================================ -->
+<?php
+    // Pre-fetch all sibling intersections in one query (avoid N+1).
+    $all_siblings_args = array(
+        'post_type'      => 'practice_area',
+        'post_parent'    => $post->post_parent,
+        // Was 10, which silently truncated once markets outgrew the six
+        // offices — leaving office cards unlinked at random.
+        'posts_per_page' => -1,
+        'meta_key'       => '_roden_pa_office_key',
+        'meta_compare'   => 'EXISTS',
+    );
+    if ( function_exists( 'roden_locale_meta_query' ) ) {
+        $all_siblings_args['meta_query'] = roden_locale_meta_query();
+    }
+    $all_siblings = get_posts( $all_siblings_args );
+    $sibling_urls = array();
+    foreach ( $all_siblings as $sib ) {
+        $sib_key = get_post_meta( $sib->ID, '_roden_pa_office_key', true );
+        if ( $sib_key ) {
+            $sibling_urls[ $sib_key ] = get_permalink( $sib );
+        }
+    }
+    // Every other office practice page was retired (#142/#143); only the
+    // allowlisted ones come back. A grid with one card is noise, so it renders
+    // only once a second office in this practice is live.
+if ( count( $sibling_urls ) >= 2 ) :
+?>
 <section class="section-location-matrix">
     <div class="container">
         <h3 class="matrix-title"><?php printf( /* translators: %s: practice area title. */ esc_html__( '%s — All Locations', 'roden-law' ), esc_html( $parent_title ) ); ?></h3>
         <div class="location-matrix-grid">
-            <?php
-            // Pre-fetch all sibling intersections in one query (avoid N+1).
-            $all_siblings_args = array(
-                'post_type'      => 'practice_area',
-                'post_parent'    => $post->post_parent,
-                // Was 10, which silently truncated once markets outgrew the six
-                // offices — leaving office cards unlinked at random.
-                'posts_per_page' => -1,
-                'meta_key'       => '_roden_pa_office_key',
-                'meta_compare'   => 'EXISTS',
-            );
-            if ( function_exists( 'roden_locale_meta_query' ) ) {
-                $all_siblings_args['meta_query'] = roden_locale_meta_query();
-            }
-            $all_siblings = get_posts( $all_siblings_args );
-            $sibling_urls = array();
-            foreach ( $all_siblings as $sib ) {
-                $sib_key = get_post_meta( $sib->ID, '_roden_pa_office_key', true );
-                if ( $sib_key ) {
-                    $sibling_urls[ $sib_key ] = get_permalink( $sib );
-                }
-            }
-            ?>
             <?php foreach ( $firm['offices'] as $key => $o ) :
                 $is_current = ( $key === $pa_office_key );
                 // No sibling for this office → render the city unlinked rather
@@ -232,6 +236,7 @@ $int_is_statutory = ( $int_statute && $int_statute['is_override'] );
         </div>
     </div>
 </section>
+<?php endif; ?>
 
 <!-- ================================================================
      MAIN CONTENT + SIDEBAR
@@ -262,6 +267,48 @@ $int_is_statutory = ( $int_statute && $int_statute['is_override'] );
                  these four templates and not the others "has bitten twice".
                  ═══════════════════════════════════════════════════════════ -->
             <?php roden_pa_key_takeaways_box( $post_id, $office ); ?>
+
+            <!-- ═══════════════════════════════════════════════════════════
+                 OFFICE + EMBEDDED MAP. The ranking page carries the office's
+                 NAP and a map of its Business Profile, the way competitors'
+                 winning city pages do (docs/site-architecture/README.md).
+                 Only rendered for a real office — never a service-area town.
+                 ═══════════════════════════════════════════════════════════ -->
+            <?php
+            $int_map = get_post_meta( $post_id, '_roden_map_embed', true );
+            if ( ! $int_map && ! empty( $office['map_embed'] ) ) {
+                $int_map = $office['map_embed'];
+            }
+            if ( $int_map && empty( $office['is_service_area'] ) ) : ?>
+                <div class="content-section intersection-office" id="office">
+                    <h2><?php printf( /* translators: %s: city/market name. */ esc_html__( 'Visit Our %s Office', 'roden-law' ), esc_html( $office['market_name'] ) ); ?></h2>
+                    <div class="map-embed">
+                        <iframe
+                            title="<?php printf( esc_attr__( 'Location map for Roden Law — %s', 'roden-law' ), esc_attr( $office['market_name'] ) ); ?>"
+                            src="<?php echo esc_url( $int_map ); ?>"
+                            width="100%" height="380"
+                            style="border:0;"
+                            allowfullscreen loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <div class="map-nap-bar">
+                        <div class="map-nap-inner">
+                            <div class="map-nap-address">
+                                <strong><?php echo esc_html( $office['name'] ); ?></strong>
+                                <span><?php echo esc_html( $office['street'] . ', ' . $office['city'] . ', ' . $office['state'] . ' ' . $office['zip'] ); ?></span>
+                            </div>
+                            <div class="map-nap-actions">
+                                <a href="tel:<?php echo esc_attr( $office['phone_raw'] ); ?>" class="btn btn-primary"><?php echo esc_html( $office['phone'] ); ?></a>
+                                <a href="<?php echo esc_url( $office['map_url'] ); ?>" class="btn btn-outline-light" target="_blank" rel="noopener noreferrer nofollow"><?php esc_html_e( 'Get Directions', 'roden-law' ); ?></a>
+                            </div>
+                        </div>
+                    </div>
+                    <?php if ( ! empty( $office['directions'] ) && 'es' !== ( function_exists( 'roden_current_lang' ) ? roden_current_lang() : 'en' ) ) : ?>
+                        <p><strong><?php esc_html_e( 'Getting here:', 'roden-law' ); ?></strong> <?php echo esc_html( $office['directions'] ); ?></p>
+                    <?php endif; ?>
+                </div>
+            <?php endif; ?>
 
             <!-- ═══════════════════════════════════════════════════════════
                  WHY HIRE SECTION (uses own content, then parent fallback)
