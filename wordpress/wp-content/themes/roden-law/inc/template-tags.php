@@ -1659,7 +1659,7 @@ function roden_what_to_do_steps_data( $pa_slug = '', $state_full = '', $state_ke
                 'title' => __( 'Report the injury to your employer.', 'roden-law' ),
                 'body'  => sprintf(
                     /* translators: %s: notice deadline, e.g. "within 30 days of the injury (O.C.G.A. § 34-9-80)". */
-                    __( 'Notify a supervisor or HR in writing %s. This is the deadline injured workers miss most often, and missing it can bar your claim entirely.', 'roden-law' ),
+                    __( 'Notify a supervisor or HR in writing %s. Missing it can bar your claim entirely.', 'roden-law' ),
                     $notice_detail
                 ),
             ),
@@ -2725,7 +2725,11 @@ function roden_sc_statewide_uplink( $office, $parent_slug, $parent_title = '' ) 
         <p><?php
         printf(
             /* translators: %s: link to the South Carolina statewide pillar page (anchor text is the page title). */
-            esc_html__( 'Serving all of South Carolina: see our statewide %s page for South Carolina’s filing deadline, comparative-fault rule, and how these cases work across the state.', 'roden-law' ),
+            // Workers' comp is no-fault: "comparative-fault rule" is tort language
+            // (Charleston WC sweep 2026-09-26, E1).
+            'workers-compensation-lawyers' === $parent_slug
+                ? esc_html__( 'Serving all of South Carolina: see our statewide %s page for South Carolina’s notice and filing deadlines and how these claims work across the state.', 'roden-law' )
+                : esc_html__( 'Serving all of South Carolina: see our statewide %s page for South Carolina’s filing deadline, comparative-fault rule, and how these cases work across the state.', 'roden-law' ),
             '<a href="' . esc_url( $url ) . '">' . esc_html( $label ) . '</a>'
         );
         ?></p>
