@@ -28,6 +28,11 @@
         "total": -14
       },
       {
+        "step": "Retire the 2 DEAD Spanish office hubs (Darien, North Charleston) — done 2026-09-26",
+        "geo": -2,
+        "total": -2
+      },
+      {
         "step": "Wave 1: 11 office practice pages (incl. Charleston car)",
         "geo": 11,
         "total": 11
@@ -644,9 +649,7 @@
       ]
     }
   ],
-  "decisionsNeeded": [
-    "Retire the two DEAD Spanish office hubs (/es/locations/georgia/darien/, /es/locations/south-carolina/north-charleston/)? Held from the 2026-09-26 batch."
-  ],
+  "decisionsNeeded": [],
   "decisions": [
     {
       "date": "2026-09-26",
@@ -654,7 +657,7 @@
     },
     {
       "date": "2026-09-26",
-      "decision": "Retire the DEAD geo pages to fund wave 1 — 14 blog posts in this batch; the two Spanish office hubs (Darien, North Charleston) held because they are office hubs on the keep-list"
+      "decision": "Retire the DEAD geo pages to fund wave 1 — the 14 blog posts and, by a second instruction the same day, the 2 Spanish office hubs (drafted, not deleted)"
     },
     {
       "date": "2026-09-26",

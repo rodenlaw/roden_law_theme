@@ -1,0 +1,106 @@
+{
+    "generated": "2026-09-27T00:00:35+00:00",
+    "batch": "dead-es-hubs",
+    "mode": "apply",
+    "note": "Set to draft, not trashed. Restore: remove the path from roden_dead_es_hub_urls(), check the doorway ratio, publish.",
+    "evidence": "docs/site-architecture/evidence/inventory.csv — 2 Spanish office hubs: 0 clicks in 16 months, <100 impressions in 90 days each",
+    "link_debt": [],
+    "posts": [
+        {
+            "ID": 4869,
+            "post_title": "Abogados de Lesiones Personales en Darien, GA",
+            "post_name": "es-darien",
+            "post_type": "location",
+            "post_status": "publish",
+            "post_parent": 0,
+            "post_date_gmt": "2026-07-06 18:47:31",
+            "permalink": "https://rodenlaw.com/es/locations/georgia/darien/",
+            "redirects_to": "/locations/georgia/darien/",
+            "post_content": "<p>Después de un accidente en la costa de Georgia, usted necesita un abogado que conozca la región y que hable su idioma. La oficina de Roden Law en Darien, ubicada en <strong>1108 North Way, Darien, GA 31305</strong>, atiende a familias trabajadoras de toda la costa. Llámenos al <a href=\"tel:+19123035850\">(912) 303-5850</a> — la consulta es gratuita y en español.</p>\n<p>Representamos a víctimas de accidentes de auto y camiones en la I-95, lesiones en el trabajo, caídas y otros casos de lesiones personales en Darien, Brunswick, St. Simons Island, Jekyll Island, Waycross y las comunidades costeras del sureste de Georgia.</p>\n<h2>Ayuda legal en español en la costa de Georgia</h2>\n<p>Muchos de nuestros vecinos trabajan en la pesca, el turismo, la construcción y el transporte — trabajos duros donde los accidentes ocurren. En Roden Law no cobramos honorarios a menos que ganemos su caso, y su estatus migratorio no le impide reclamar una compensación: su consulta es siempre confidencial. Con más de $300 millones recuperados para nuestros clientes, sabemos cómo hacer que las aseguradoras respondan.</p>\n<p>No espere: en Georgia, por lo general usted tiene <strong>2 años</strong> desde la fecha del accidente para presentar su demanda (O.C.G.A. § 9-3-33). <a href=\"/es/contact/\">Contáctenos hoy</a> para proteger sus derechos.</p>",
+            "post_excerpt": "Abogados de lesiones personales en Darien, Georgia que hablan español. Oficina en 1108 North Way. Consulta gratuita: (912) 303-5850.",
+            "meta": {
+                "_roden_locale": [
+                    "es"
+                ],
+                "_roden_translation_of": [
+                    "3598"
+                ],
+                "_roden_office_key": [
+                    "darien"
+                ],
+                "_roden_meta_description": [
+                    "Abogados de lesiones personales en Darien, GA. Hablamos español. Consulta gratuita: (912) 303-5850. No paga honorarios a menos que ganemos."
+                ],
+                "_roden_service_area": [
+                    "Darien, Brunswick, St. Simons Island, Jekyll Island, Waycross y las comunidades costeras del sureste de Georgia."
+                ],
+                "_roden_local_content": [
+                    "<p>Los casos de nuestros clientes de Darien se presentan generalmente ante el McIntosh County Superior Court. Nuestros abogados conocen los tribunales locales de la costa de Georgia y manejan casos en los condados de McIntosh, Glynn y sus alrededores.</p><p>La oficina de 1108 North Way está a pasos del centro de Darien y cerca de la I-95, con fácil acceso desde Brunswick y las islas. Si no puede visitarnos, atendemos su consulta gratuita por teléfono o videollamada, en español.</p>"
+                ],
+                "_roden_faqs": [
+                    "a:8:{i:0;a:2:{s:8:\"question\";s:73:\"¿Cuánto cuesta contratar a un abogado de lesiones personales en Darien?\";s:6:\"answer\";s:152:\"No paga nada por adelantado. Trabajamos con honorarios de contingencia: solo cobramos un porcentaje si ganamos su caso. La consulta inicial es gratuita.\";}i:1;a:2:{s:8:\"question\";s:51:\"¿Puedo reclamar compensación si no tengo papeles?\";s:6:\"answer\";s:157:\"Sí. Su estatus migratorio no le impide reclamar una compensación por lesiones en Georgia. Su información se mantiene confidencial durante todo el proceso.\";}i:2;a:2:{s:8:\"question\";s:57:\"¿Cuánto tiempo tengo para presentar mi caso en Georgia?\";s:6:\"answer\";s:169:\"En general, 2 años desde la fecha del accidente (O.C.G.A. § 9-3-33). Mientras más pronto llame, más fácil será preservar la evidencia y los testimonios de su caso.\";}i:3;a:2:{s:8:\"question\";s:42:\"¿Hablan español en su oficina de Darien?\";s:6:\"answer\";s:122:\"Sí. Nuestro equipo atiende consultas en español y le explica cada paso de su caso en su idioma. Llame al (912) 303-5850.\";}i:4;a:2:{s:8:\"question\";s:72:\"¿Qué tipos de casos de lesiones personales maneja Roden Law en Darien?\";s:6:\"answer\";s:771:\"Nuestra oficina de Darien maneja todo tipo de casos de lesiones personales: accidentes de auto, accidentes de camión, accidentes de motocicleta, resbalones y caídas, negligencia médica, muerte por negligencia, compensación laboral, mordeduras de perro, lesiones cerebrales, lesiones de la médula espinal, lesiones marítimas, productos defectuosos, accidentes de bote, quemaduras, accidentes de construcción, abuso en hogares de ancianos, responsabilidad del dueño de la propiedad y atropellos de peatones. Por su ubicación en la costa de Georgia, sobre el corredor de la I-95, la oficina de Darien está especialmente preparada para atender lesiones marítimas y accidentes de bote en el área de las Golden Isles. La consulta es gratis: llame al (912) 303-5850.\";}i:5;a:2:{s:8:\"question\";s:56:\"¿Qué áreas atiende la oficina de Roden Law en Darien?\";s:6:\"answer\";s:654:\"Nuestra oficina de Darien atiende a clientes en toda la región costera de Georgia, incluyendo Darien, Brunswick, St. Simons Island, Jekyll Island, Kingsland, St. Marys, Waycross, Jesup, Folkston, Woodbine, Nahunta, Ludowici, Blackshear, Alma, Hoboken y las comunidades vecinas del sureste de Georgia. No importa si su lesión ocurrió en la I-95, en un resort de las Golden Isles, a bordo de una embarcación comercial o en cualquier otro punto de la región: nuestros abogados están listos para ayudarle. La oficina queda en 1108 North Way, Darien, GA 31305, cerca del cruce de la I-95 con la US-17, en el condado de McIntosh. Llame al (912) 303-5850.\";}i:6;a:2:{s:8:\"question\";s:86:\"¿Cómo afecta la ley de culpa comparativa de Georgia a mi caso de lesiones en Darien?\";s:6:\"answer\";s:637:\"Georgia usa un sistema de culpa comparativa modificada bajo O.C.G.A. § 51-12-33. Usted puede recuperar una compensación siempre que su responsabilidad en el accidente sea menor al 50%, pero el dinero que reciba se reduce según su porcentaje de culpa. Por ejemplo, si lo encuentran 25% culpable y sus daños totales son de $200,000, usted recibiría $150,000. Si su culpa llega al 50% o más, no recupera nada. Los ajustadores de seguros con frecuencia intentan echarle parte de la culpa a la víctima para pagar menos; nuestros abogados en Darien saben cómo responder a esas tácticas y proteger su derecho a una compensación justa.\";}i:7;a:2:{s:8:\"question\";s:56:\"¿Cuánto vale mi caso de lesiones personales en Darien?\";s:6:\"answer\";s:665:\"Cada caso es distinto, y el valor depende de factores como la gravedad de sus lesiones, sus gastos médicos, los ingresos que dejó de percibir, el dolor y sufrimiento, y el impacto a largo plazo en su calidad de vida. Los casos que se presentan en la Corte Superior del Condado de McIntosh también pueden verse influidos por las tendencias de los jurados locales y por factores propios de ese tribunal. En Roden Law hemos recuperado más de $300 millones para nuestros clientes y le daremos una evaluación honesta y detallada de lo que su caso podría valer. Comuníquese con nuestra oficina de Darien al (912) 303-5850 para una consulta gratis y sin compromiso.\";}}"
+                ],
+                "_roden_last_reviewed": [
+                    "2026-08-03"
+                ],
+                "_roden_jurisdiction": [
+                    "GA"
+                ],
+                "_roden_author_attorney": [
+                    "3729"
+                ],
+                "_roden_sol_ga": [
+                    "O.C.G.A. § 9-3-33"
+                ]
+            }
+        },
+        {
+            "ID": 4883,
+            "post_title": "Abogados de Lesiones Personales en North Charleston, SC",
+            "post_name": "es-north-charleston",
+            "post_type": "location",
+            "post_status": "publish",
+            "post_parent": 0,
+            "post_date_gmt": "2026-07-06 18:47:36",
+            "permalink": "https://rodenlaw.com/es/locations/south-carolina/north-charleston/",
+            "redirects_to": "/locations/south-carolina/north-charleston/",
+            "post_content": "<p>North Charleston es una ciudad de gente trabajadora — y también una de las zonas con más tráfico industrial y de camiones de todo el estado. Si un accidente en la I-26, en Rivers Avenue o en su lugar de trabajo cambió su vida, la oficina de Roden Law en <strong>2703 Spruill Ave, North Charleston, SC 29405</strong> está lista para ayudarle. Llámenos al <a href=\"tel:+18436126561\">(843) 612-6561</a> — la consulta es gratuita y en español.</p>\n<p>Representamos a víctimas de accidentes de auto y de camiones, lesiones en la construcción y en el trabajo, caídas y otros casos de lesiones personales en North Charleston, Goose Creek, Summerville, Hanahan, Ladson, Moncks Corner y las comunidades de los tres condados.</p>\n<h2>Abogados que hablan español en North Charleston</h2>\n<p>Entendemos las preocupaciones de la comunidad hispana después de un accidente: el costo, el idioma y el miedo a represalias. En Roden Law no cobramos honorarios a menos que ganemos su caso, y su estatus migratorio no le impide reclamar una compensación por sus lesiones — su consulta es siempre confidencial. Nuestro bufete ha recuperado más de $300 millones para sus clientes.</p>\n<p>En Carolina del Sur, por lo general usted tiene <strong>3 años</strong> desde la fecha del accidente para presentar una demanda por lesiones personales (S.C. Code § 15-3-530). La evidencia desaparece rápido en los casos de camiones y accidentes industriales — <a href=\"/es/contact/\">contáctenos hoy</a>.</p>",
+            "post_excerpt": "Abogados de lesiones personales en North Charleston, Carolina del Sur que hablan español. Oficina en 2703 Spruill Ave. Consulta gratuita: (843) 612-6561.",
+            "meta": {
+                "_roden_locale": [
+                    "es"
+                ],
+                "_roden_translation_of": [
+                    "3763"
+                ],
+                "_roden_office_key": [
+                    "north-charleston"
+                ],
+                "_roden_meta_description": [
+                    "Abogados de lesiones personales en North Charleston, SC. Hablamos español. Consulta gratuita: (843) 612-6561. Sin honorarios a menos que ganemos."
+                ],
+                "_roden_service_area": [
+                    "North Charleston, Goose Creek, Summerville, Hanahan, Ladson, Moncks Corner y las comunidades de los tres condados del Lowcountry."
+                ],
+                "_roden_local_content": [
+                    "<p>Los casos de lesiones personales de North Charleston se presentan generalmente ante el Charleston County Circuit Court, en el centro de Charleston. Nuestros abogados manejan con regularidad casos de accidentes de camiones y lesiones industriales vinculados al corredor de la I-26, la I-526 y Rivers Avenue.</p><p>Nuestra oficina está en Spruill Avenue, en la zona de Park Circle, con estacionamiento gratuito para clientes. Si no puede visitarnos, atendemos su consulta gratuita por teléfono o videollamada, en español.</p>"
+                ],
+                "_roden_faqs": [
+                    "a:6:{i:0;a:2:{s:8:\"question\";s:83:\"¿Cuánto cuesta contratar a un abogado de lesiones personales en North Charleston?\";s:6:\"answer\";s:152:\"No paga nada por adelantado. Trabajamos con honorarios de contingencia: solo cobramos un porcentaje si ganamos su caso. La consulta inicial es gratuita.\";}i:1;a:2:{s:8:\"question\";s:51:\"¿Puedo reclamar compensación si no tengo papeles?\";s:6:\"answer\";s:174:\"Sí. Su estatus migratorio no le impide reclamar una compensación por un accidente o una lesión en el trabajo en Carolina del Sur. Su información se mantiene confidencial.\";}i:2;a:2:{s:8:\"question\";s:66:\"¿Cuánto tiempo tengo para presentar mi caso en Carolina del Sur?\";s:6:\"answer\";s:189:\"En general, 3 años desde la fecha del accidente (S.C. Code § 15-3-530). En casos contra entidades del gobierno los plazos de notificación son más cortos, así que no espere para llamar.\";}i:3;a:2:{s:8:\"question\";s:52:\"¿Hablan español en su oficina de North Charleston?\";s:6:\"answer\";s:122:\"Sí. Nuestro equipo atiende consultas en español y le explica cada paso de su caso en su idioma. Llame al (843) 612-6561.\";}i:4;a:2:{s:8:\"question\";s:83:\"¿Qué tipos de casos de lesiones personales maneja la oficina de North Charleston?\";s:6:\"answer\";s:850:\"Nuestros abogados de North Charleston manejan toda la gama de casos de lesiones personales: accidentes de autos y camionetas, choques con camiones comerciales y tráileres de 18 ruedas, accidentes de motocicleta y de bicicleta, atropellos de peatones, resbalones y caídas y otros casos de responsabilidad del dueño de la propiedad, mordeduras de perro, negligencia médica, abuso en hogares de ancianos, reclamos de compensación laboral, muerte por negligencia y casos de lesiones catastróficas que involucran daño cerebral, lesiones de la médula espinal o quemaduras graves. Atendemos a víctimas en North Charleston, Goose Creek, Summerville, Hanahan, Ladson, Moncks Corner y las comunidades vecinas de los tres condados. Si usted se lesionó por la negligencia de otra persona, llame al (843) 612-6561 para una revisión gratuita de su caso.\";}i:5;a:2:{s:8:\"question\";s:75:\"¿Cómo afecta la regla de culpa comparativa de Carolina del Sur a mi caso?\";s:6:\"answer\";s:666:\"Carolina del Sur aplica una regla de culpa comparativa modificada (Nelson v. Concrete Supply Co.). Si usted tiene menos del 51% de la culpa del accidente, todavía puede recibir una compensación, pero el monto se reduce según su porcentaje de culpa: por ejemplo, una indemnización de $100,000 reducida en un 20% por culpa parcial paga $80,000. Si su culpa es del 51% o más, no recupera nada. Las aseguradoras rutinariamente tratan de inflar el porcentaje de culpa de la persona lesionada para reducir o eliminar el pago, y por eso importa tanto tener a un abogado de lesiones personales en North Charleston que cuestione esos argumentos. Llame al (843) 612-6561.\";}}"
+                ],
+                "_roden_last_reviewed": [
+                    "2026-08-03"
+                ],
+                "_roden_jurisdiction": [
+                    "SC"
+                ],
+                "_roden_author_attorney": [
+                    "3732"
+                ],
+                "_roden_sol_sc": [
+                    "S.C. Code § 15-3-530"
+                ]
+            }
+        }
+    ]
+}

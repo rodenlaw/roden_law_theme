@@ -659,6 +659,7 @@ into 8 city-tier towns and 109 nested municipalities; see the recommendation in
 | 2026-09-25 | **Stale place pages**: 29 sub-municipal locations + 46 pipeline posts (Brunswick kept) | 824 | 749 | 75 | **COMPLETE.** Redirects deployed (#147), relink applied (52 links, 22 posts, `post_modified` preserved), 75 pages set to **draft** (not trashed) and marked `_roden_retired`, caches flushed. Verified: 75/75 single-hop 301 → 200 (19 targets); 0 links on 27 swept pages; live JSON-LD guard PASS. Doorway **29.49% → 22.83% PASS**. Backups: `stale-place-relink-2026-09-25.json`, `stale-place-pages-2026-09-25.json`. |
 | 2026-09-25 | **Zero-click scenario pages** (64 of 182; step 1 template fix shipped first in #148) | 749 | 685 | 64 | **COMPLETE.** Redirects deployed (#149), 2 legacy redirects repointed off the set, relink applied (85 links, 55 posts, flat + nested), 64 pages drafted and marked `_roden_retired`, 1 meta link unwrapped (truck pillar `_roden_why_hire`), caches flushed. Verified: 128/128 flat + nested single-hop 301 → 200; 0 links left on the 18 pillars; JSON-LD guard PASS. Doorway **22.83% → 24.96% PASS**, with no non-place headroom left. |
 | 2026-09-26 | **Dead geo posts** (14; site-architecture step 1, Rule 6 reopened) | 685 | 671 | 14 | **COMPLETE.** Redirects deployed (#159), 12 legacy redirects repointed off the set, Brunswick profile URL → Darien hub, relink applied (1 link, 1 post), 14 posts drafted and marked `_roden_retired`, caches flushed. Verified: 27/27 single-hop 301 → 200; 0 references left in bodies or meta; JSON-LD guard PASS. Doorway **24.96% → 23.40% PASS**, 10 geo slots freed for wave 1. |
+| 2026-09-26 | **Spanish office hubs** (Darien, North Charleston) | 671 | 669 | 2 | **COMPLETE.** Redirects deployed (#160) to the English office hubs, relink applied (4 links, 2 posts), 2 hubs drafted and marked `_roden_retired`, template office links fixed (#161), caches flushed. Verified: 2/2 single-hop 301 → 200; 0 references on rendered /es/ pages; JSON-LD guard PASS. Doorway **23.40% → 23.17% PASS**. |
 
 ### Batch (c) — two things the plan did not predict
 
@@ -1498,6 +1499,33 @@ md5 matches the repo.
   `/locations/georgia/darien/`.
 - **Doorway: 171 / 685 = 24.96% → 157 / 671 = 23.40%, PASS**, which frees 10 geo slots for
   wave 1. JSON-LD guard PASS. `content/meta.json` `_count` 678 → 664: exactly the 14.
+
+### The two Spanish office hubs retired — 2026-09-26
+
+**Owner's instruction, 2026-09-26:** "retire (but don't delete) those two spanish pages".
+The pages are `/es/locations/georgia/darien/` (4869) and `/es/locations/south-carolina/north-charleston/`
+(4883). Both had 0 clicks in 16 months and under 100 impressions in 90 days. They were held out
+of #159 because they are office hubs. Each now 301s to its English office hub, via
+`roden_dead_es_hub_urls()` (#160, `a3e2928`).
+
+**Applied 2026-09-26:**
+- **Relink:** 4 links across `/es/` (4862) and `/es/locations/` (4864). Backup:
+  `docs/backups/dead-es-hub-relink-2026-09-26.json`.
+- **Removal:** 2/2 drafted and marked `_roden_retired`; the table read-back shows draft.
+  Backup: `docs/backups/dead-es-hubs-2026-09-26.json`.
+- **Verified live:** 2/2 single-hop 301 → 200.
+- **hreflang:** the English hubs no longer point at the Spanish URLs.
+  `roden_get_translation_id()` only pairs published posts.
+- **Doorway: 157 / 671 → 155 / 669 = 23.17%, PASS.** JSON-LD guard PASS.
+  `content/meta.json` `_count` 664 → 662.
+
+**Defect found and fixed (#161, `f65c059`).** The body relink could not reach the Spanish
+menu, footer, contact page or homepage. Those build `/es/locations/…` from firm data, so every
+`/es/` page still carried four sitewide links to the 301s. `roden_office_url()` now links a
+Spanish hub only while its `es-{city}` post is published, and otherwise the English hub. After
+the deploy and flush: 0 references on `/es/`, `/es/locations/`, `/es/contact/`, a Spanish office
+page and `/es/practice-areas/`, and the four live Spanish hubs are still linked. **A body
+relink does not cover template-built links. Grep the rendered pages as well.**
 
 ### SC punitive floor corrected across content — 2026-09-26
 

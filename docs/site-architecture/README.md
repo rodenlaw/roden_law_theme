@@ -100,11 +100,12 @@ Today: 171 / 685 = **24.96%**, against a 25% ceiling.
 | Step | Geo / total | Ratio |
 |---|---|---|
 | Retire the 14 DEAD geo blog posts (done 2026-09-26) | 157 / 671 | 23.40% |
-| Wave 1: 11 office practice pages (includes the Charleston car trade) | 168 / 682 | 24.63% |
-| Georgia statewide practice pages (6, not geo) | 168 / 688 | 24.42% |
-| Planned reference pages (≥8, not geo) | 168 / 696 | 24.14% |
+| Retire the 2 DEAD Spanish office hubs (done 2026-09-26) | 155 / 669 | 23.17% |
+| Wave 1: 11 office practice pages (includes the Charleston car trade) | 166 / 680 | 24.41% |
+| Georgia statewide practice pages (6, not geo) | 166 / 686 | 24.20% |
+| Planned reference pages (≥8, not geo) | 166 / 694 | 23.92% |
 
-That leaves roughly 6 slots for wave 2. Each further geo page needs 3 non-geo pages or 1 geo retirement.
+That leaves roughly 7 slots for wave 2. Each further geo page needs 3 non-geo pages or 1 geo retirement.
 
 ## Phases
 
@@ -145,7 +146,7 @@ That leaves roughly 6 slots for wave 2. Each further geo page needs 3 non-geo pa
 Recorded 2026-09-26, owner:
 
 1. **Rule 6 is reopened** for a capped, allowlisted set of office practice pages. The Charleston car exception becomes the first entry.
-2. **The DEAD geo pages are retired** to fund wave 1. This batch covers the 14 blog posts (`roden_dead_geo_post_urls()`). The two Spanish office hubs (Darien, North Charleston) are held: they are office hubs on the keep-list and are linked from `/es/`. They still need the owner's call.
+2. **The DEAD geo pages are retired** to fund wave 1. This batch covers the 14 blog posts (`roden_dead_geo_post_urls()`). The two Spanish office hubs (Darien, North Charleston) were retired the same day on a second instruction: drafted, not deleted, each 301 to its English hub.
 3. **The Darien office page is the Business Profile landing** for the Darien area, not Brunswick.
 
 ## Constraints still in force
