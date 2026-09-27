@@ -1529,11 +1529,11 @@ with 32 authorities; GA signed with 22 authorities plus 10 pending. Fixtures 22/
 
 **The Roden content sweep with the merged packs found 5 pre-existing live-content findings.**
 None comes from the new rules. They are to fix:
-- `/blog/what-to-do-when-you-are-in-a-car-accident/` — `SC 56-5-1260`: "……"
-- `/blog/roadway-hazard-auto-accident/` — `county-ante-litem-6-months`: "……"
-- `/blog/rollover-crashes-and-what-they-do-to-your-body/` — `municipal-ante-litem-12-months`: "……"
-- `/blog/how-pain-and-suffering-is-calculated-after-an-accident-in-georgia/` — `county-ante-litem-6-months`: "……"
-- `/blog/ashley-phosphate-i-26-south-carolinas-deadliest-intersection/` — `sctca-mandatory-notice`: "……"
+- `/blog/what-to-do-when-you-are-in-a-car-accident/` — `SC 56-5-1260`: "arolina law requires you to report any accident involving injury, death, or property damage exceeding $1,000 (S.C. Code § 56-5-1260).. At-fault insurance system: Like Georgia, South Carolina is a fault-based state. The a"
+- `/blog/roadway-hazard-auto-accident/` — `county-ante-litem-6-months`: "iling a personal injury claim against the government. If you are filing a claim against a city or municipal county, you have six months to provide notice about your claim. Likewise, if you are filing a claim against the "
+- `/blog/rollover-crashes-and-what-they-do-to-your-body/` — `municipal-ante-litem-12-months`: "oad maintenance may be liable. Claims against government entities carry shorter deadlines: Georgia requires ante-litem notice within 6 to 12 months, and South Carolina requires suit within 2 years, with no pre-suit notic"
+- `/blog/how-pain-and-suffering-is-calculated-after-an-accident-in-georgia/` — `county-ante-litem-6-months`: "ans losing your right to recover compensation, including pain and suffering damages. Claims against a city, county or state agency require written notice much sooner — as little as six months (O.C.G.A. § 36-33-5)."
+- `/blog/ashley-phosphate-i-26-south-carolinas-deadliest-intersection/` — `sctca-mandatory-notice`: "esponsibility. Government liability: If road design or signal timing contributed to your crash, the city or SCDOT may be partially liable under the South Carolina Tort Claims Act — but these claims require strict notice "
 
 ### Charleston workers' comp page live (office practice page #5, the first WC page) — 2026-09-26
 
