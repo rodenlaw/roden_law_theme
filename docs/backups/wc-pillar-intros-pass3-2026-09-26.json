@@ -1,0 +1,9 @@
+{
+    "generated": "2026-09-27T04:21:39+00:00",
+    "post": 3610,
+    "mode": "apply",
+    "before": {
+        "_roden_pillar_negligence_intro": "Workers' compensation is a **no-fault statutory scheme** that replaces common-law negligence: the injured worker need not prove fault, but in exchange gives up the right to sue the employer for tort damages (the \"exclusive remedy\" bar). To qualify, the injury must \"arise out of and in the course of\" employment. {{GA}}In Georgia, workers' compensation is governed by O.C.G.A. § 34-9-1 et seq. {{/GA}}{{SC}}In South Carolina, where employer and employee are under the Act, workers' compensation is the worker's exclusive remedy against the employer (S.C. Code § 42-1-540). {{/SC}}**Third-party tort claims against someone other than your employer remain available** (e.g., a defective machine manufacturer, a negligent driver who hits you at work, a property owner where you were injured) and can be pursued in parallel with the workers' comp claim.",
+        "_roden_pillar_compensation_intro": "**There is no recovery for pain and suffering in workers' compensation** — only statutory benefits: medical care, temporary total disability (TTD) at 2/3 of average weekly wage subject to a state maximum, permanent partial disability per the body-part schedule, and (for fatalities) death benefits to surviving dependents. {{GA}}**Georgia's TTD maximum is set by statute and adjusted periodically** (O.C.G.A. § 34-9-261, § 34-9-265). {{/GA}}{{SC}}In South Carolina, total disability pays 66 2/3% of the average weekly wage, no more than the state average weekly wage, for up to 500 weeks, or for life for a worker left paraplegic, quadriplegic or with physical brain damage (S.C. Code § 42-9-10). {{/SC}}Third-party tort recoveries fund the noneconomic damages workers' comp does not cover."
+    }
+}
