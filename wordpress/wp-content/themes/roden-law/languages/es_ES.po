@@ -4035,3 +4035,16 @@ msgstr "La ley de Carolina del Sur exige avisar a la policía de inmediato despu
 #: inc/template-tags.php (what-to-do step 5, GA, 2026-09-26)
 msgid "Georgia law requires every driver involved in a crash to stop, give identifying information and render reasonable assistance (O.C.G.A. § 40-6-270). Call the police so an officer documents the crash, and request a copy of the police report."
 msgstr "La ley de Georgia exige que todo conductor involucrado en un choque se detenga, proporcione sus datos de identificación y preste asistencia razonable (O.C.G.A. § 40-6-270). Llame a la policía para que un oficial documente el choque y solicite una copia del reporte policial."
+
+#: inc/template-tags.php (workers' comp steps, SC, 2026-09-26)
+msgid "Get medical care right away."
+msgstr "Reciba atención médica de inmediato."
+
+msgid "Get emergency care if you need it. Then ask your employer or its insurer, in writing, which doctor is authorized to treat you, and keep a copy of the request."
+msgstr "Reciba atención de emergencia si la necesita. Luego pregunte por escrito a su empleador o a su aseguradora qué médico está autorizado para atenderle, y guarde una copia de la solicitud."
+
+msgid "Keep every medical record."
+msgstr "Guarde todos sus registros médicos."
+
+msgid "Keep copies of every visit summary, work restriction and bill, and tell each doctor that the injury happened at work."
+msgstr "Guarde copias de cada resumen de consulta, restricción laboral y factura, e informe a cada médico que la lesión ocurrió en el trabajo."

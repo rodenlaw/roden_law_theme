@@ -1663,11 +1663,27 @@ function roden_what_to_do_steps_data( $pa_slug = '', $state_full = '', $state_ke
                     $notice_detail
                 ),
             ),
-            array(
+            /*
+             * The posted panel of physicians is Georgia's system. South Carolina
+             * has no posted panel, so on SC pages the two medical steps say only
+             * what holds there, without a legal claim the SC pack does not carry
+             * (Charleston workers' comp rebuild, 2026-09-26).
+             */
+            ( 'SC' === $state_key )
+            ? array(
+                'title' => __( 'Get medical care right away.', 'roden-law' ),
+                'body'  => __( 'Get emergency care if you need it. Then ask your employer or its insurer, in writing, which doctor is authorized to treat you, and keep a copy of the request.', 'roden-law' ),
+            )
+            : array(
                 'title' => __( 'Get medical care from an authorized physician.', 'roden-law' ),
                 'body'  => __( 'Your employer should post a panel of physicians. Treating outside that panel without approval can leave you responsible for the bills and give the insurer a reason to dispute your claim — ask for the panel before you choose a doctor, except in an emergency.', 'roden-law' ),
             ),
-            array(
+            ( 'SC' === $state_key )
+            ? array(
+                'title' => __( 'Keep every medical record.', 'roden-law' ),
+                'body'  => __( 'Keep copies of every visit summary, work restriction and bill, and tell each doctor that the injury happened at work.', 'roden-law' ),
+            )
+            : array(
                 'title' => __( 'Ask for the posted panel of physicians in writing.', 'roden-law' ),
                 'body'  => __( 'If your employer has no valid posted panel, or refuses to provide it, you may be entitled to choose your own treating doctor. Keep a copy of the request.', 'roden-law' ),
             ),
