@@ -4019,3 +4019,11 @@ msgstr "Tribunal de Circuito (Common Pleas), cualquier monto; Tribunal de Magist
 
 msgid "Sources: Georgia and South Carolina statutes and court decisions, as cited in each row."
 msgstr "Fuentes: leyes y decisiones judiciales de Georgia y Carolina del Sur, citadas en cada fila."
+
+#: templates/template-intersection.php (office block, 2026-09-26)
+#. translators: %s: city/market name.
+msgid "Visit Our %s Office"
+msgstr "Visite Nuestra Oficina de %s"
+
+msgid "Getting here:"
+msgstr "Cómo llegar:"

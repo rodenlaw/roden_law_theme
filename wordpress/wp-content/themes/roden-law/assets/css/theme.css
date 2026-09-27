@@ -1562,6 +1562,19 @@ h2.key-takeaways-title {
 .map-nap-address span { color: var(--text-light); font-size: 14px; }
 .map-nap-actions { display: flex; gap: 10px; }
 
+/* ─── OFFICE PRACTICE PAGE — office block with embedded map ─────────────
+   template-intersection.php. The map sits in the light content column, so it
+   takes a light frame and joins the navy NAP bar below it into one card. */
+.intersection-office .map-embed {
+    margin: 16px 0 0; border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    border: 1px solid #dde3ea; box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+}
+.intersection-office .map-embed iframe { aspect-ratio: 16 / 9; height: auto; min-height: 260px; max-height: 420px; }
+.intersection-office .map-nap-bar { border-radius: 0 0 var(--radius-lg) var(--radius-lg); margin-bottom: 16px; }
+@media (max-width: 600px) {
+    .intersection-office .map-nap-actions { width: 100%; }
+}
+
 /* ─── LOCATION PAGE — Why Choose Grid ─────────────────────────────────── */
 
 .why-choose-grid {
