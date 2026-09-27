@@ -18,7 +18,7 @@
 $apply = isset( $args[0] ) && 'apply' === $args[0];
 $err   = fopen( 'php://stderr', 'w' );
 $id    = 3629;
-$reviewed = ''; // set to the owner-confirmed review date before applying
+$reviewed = '2026-09-26'; // owner: "Set Gillin's review date as today. He has reviewed all this content." (2026-09-26)
 global $wpdb;
 
 if ( ! function_exists( 'roden_office_practice_allowlist' ) || ! in_array( 'truck-accident-lawyers/charleston-sc', roden_office_practice_allowlist(), true ) ) {

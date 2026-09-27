@@ -1809,7 +1809,8 @@ function roden_zero_click_intersection_urls() {
         '/spinal-cord-injury-lawyers/darien-ga/'                  => '/practice-areas/spinal-cord-injury-lawyers/',
         '/spinal-cord-injury-lawyers/north-charleston-sc/'        => '/practice-areas/spinal-cord-injury-lawyers/',
         '/spinal-cord-injury-lawyers/savannah-ga/'                => '/practice-areas/spinal-cord-injury-lawyers/',
-        '/truck-accident-lawyers/charleston-sc/'                  => '/practice-areas/truck-accident-lawyers/',
+        // '/truck-accident-lawyers/charleston-sc/' restored 2026-09-26: wave 1, #2 of the office
+        // practice layer (docs/site-architecture/README.md).
         '/truck-accident-lawyers/darien-ga/'                      => '/practice-areas/truck-accident-lawyers/',
         '/truck-accident-lawyers/myrtle-beach-sc/'                => '/practice-areas/truck-accident-lawyers/',
         '/truck-accident-lawyers/north-charleston-sc/'            => '/practice-areas/truck-accident-lawyers/',
