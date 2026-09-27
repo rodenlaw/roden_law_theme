@@ -660,6 +660,7 @@ into 8 city-tier towns and 109 nested municipalities; see the recommendation in
 | 2026-09-25 | **Zero-click scenario pages** (64 of 182; step 1 template fix shipped first in #148) | 749 | 685 | 64 | **COMPLETE.** Redirects deployed (#149), 2 legacy redirects repointed off the set, relink applied (85 links, 55 posts, flat + nested), 64 pages drafted and marked `_roden_retired`, 1 meta link unwrapped (truck pillar `_roden_why_hire`), caches flushed. Verified: 128/128 flat + nested single-hop 301 → 200; 0 links left on the 18 pillars; JSON-LD guard PASS. Doorway **22.83% → 24.96% PASS**, with no non-place headroom left. |
 | 2026-09-26 | **Dead geo posts** (14; site-architecture step 1, Rule 6 reopened) | 685 | 671 | 14 | **COMPLETE.** Redirects deployed (#159), 12 legacy redirects repointed off the set, Brunswick profile URL → Darien hub, relink applied (1 link, 1 post), 14 posts drafted and marked `_roden_retired`, caches flushed. Verified: 27/27 single-hop 301 → 200; 0 references left in bodies or meta; JSON-LD guard PASS. Doorway **24.96% → 23.40% PASS**, 10 geo slots freed for wave 1. |
 | 2026-09-26 | **Spanish office hubs** (Darien, North Charleston) | 671 | 669 | 2 | **COMPLETE.** Redirects deployed (#160) to the English office hubs, relink applied (4 links, 2 posts), 2 hubs drafted and marked `_roden_retired`, template office links fixed (#161), caches flushed. Verified: 2/2 single-hop 301 → 200; 0 references on rendered /es/ pages; JSON-LD guard PASS. Doorway **23.40% → 23.17% PASS**. |
+| 2026-09-26 | **Charleston car accident page restored** (first allowlisted office practice page) | 669 | 670 | −1 | **LIVE.** #162 template + allowlist, #163 template claim fixes after a FAILED sweep, pillar intros corrected, published behind the redirect, #164 redirect removed. Verified: 200, self canonical, map, nested + 10 legacy URLs single-hop to it, in sitemap, 72 internal links restored, JSON-LD guard PASS. Doorway **23.17% → 23.28% PASS**. Reviewed by Gillin (owner, 2026-09-26). |
 
 ### Batch (c) — two things the plan did not predict
 
@@ -1499,6 +1500,55 @@ md5 matches the repo.
   `/locations/georgia/darien/`.
 - **Doorway: 171 / 685 = 24.96% → 157 / 671 = 23.40%, PASS**, which frees 10 geo slots for
   wave 1. JSON-LD guard PASS. `content/meta.json` `_count` 678 → 664: exactly the 14.
+
+### Charleston car accident page rebuilt and live — the first office practice page, 2026-09-26
+
+**Owner's decisions, 2026-09-26:** rebuild `/car-accident-lawyers/charleston-sc/` as a South
+Carolina–only page with the King St map, and reopen Rule 6 for an allowlist. **"Gillin has
+reviewed all of this"** is recorded as his review, with today's date in `_roden_last_reviewed`.
+
+**Shipped:**
+- **#162** — allowlist `roden_office_practice_allowlist()`, the office/map block on
+  `template-intersection.php`, and the "All Locations" grid hidden below two siblings. Theme
+  version 1.4.30; es_ES +2 strings.
+- **Content** — `bin/rebuild-charleston-car-accident.php` wrote post 3624 while it was still a
+  draft. Statutes come only from `law/SC.json`; there is no punitive figure and no crash
+  statistic.
+- **Legal sweep** (`data/facts/remediation-2026-09-26-charleston-car.md`): **FAIL**. The one
+  error and the blocking warnings were all in *shared* template text, not the page's copy.
+- **#163 fixed the shared template text:**
+  - The Charleston and North Charleston office essays (EN and ES) told readers the SC Tort Claims
+    Act has "shorter notice deadlines". It has none; the sentence is removed.
+  - The 2,500 / 354 crash statistics, which were removed from post bodies on 08-25, are removed
+    here too.
+  - "only Level I" is dropped.
+  - The unsourced court-procedure claims are cut.
+  - The deadline widget now reads "usually ends".
+  - `_roden_pillar_compensation_intro` is added to the meta export; no sweep could see it before.
+- **Car pillar intros, DB** (`bin/fix-car-pillar-intros.php`, two passes). The first pass
+  applied the sweep's corrections. The second narrowed them to statements already on the page
+  Gillin reviewed, so nothing unreviewed was published. The SC text is inside `{{SC}}`.
+- **Two unsupported marketing lines** removed from the page copy.
+- **Publish** (`bin/publish-charleston-car-accident.php`): published behind the #143 redirect
+  first, then **#164** removed the redirect.
+- **Verified live:**
+  - The page returns 200, has a self canonical and the map.
+  - The nested URL and 10 legacy URLs each 301 to it in one hop.
+  - It is in the sitemap.
+  - JSON-LD guard PASS; `content/meta.json` regenerated.
+  - **Doorway 156 / 670 = 23.28% PASS.**
+- **Links in:** `bin/restore-charleston-car-links.php` restored **72** of the 82 anchors that #143
+  repointed to the pillar, across 66 posts. The other 10 were in retired posts or in one post
+  edited since. Backup: `docs/backups/charleston-car-links-restore-2026-09-26.json`.
+
+**Open from the sweep (not blocking; the owner decides):**
+- W7: the what-to-do step 5 police-report wording (both states, HowTo).
+- W8: "170+ verified Google reviews" and "successfully handled" vs the writer profile.
+- W9: Nolan Alexander (Of Counsel, Charleston) is on the page but not in `client.json`.
+- W10: a Georgia moped link in the resources block.
+- W12: the case-results grid shows non-car results.
+- The Savannah, Darien and Columbia office essays carry the same "only Level I" and court-procedure
+  patterns. Fix them before those offices' wave-1 pages.
 
 ### The two Spanish office hubs retired — 2026-09-26
 

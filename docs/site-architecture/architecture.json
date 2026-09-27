@@ -33,9 +33,14 @@
         "total": -2
       },
       {
-        "step": "Wave 1: 11 office practice pages (incl. Charleston car)",
-        "geo": 11,
-        "total": 11
+        "step": "Charleston car accident page live (wave 1, #1 of 11) — 2026-09-26",
+        "geo": 1,
+        "total": 1
+      },
+      {
+        "step": "Wave 1: the remaining 10 office practice pages",
+        "geo": 10,
+        "total": 10
       },
       {
         "step": "Georgia statewide practice pages (6, mirror of the SC set; state names are not geo)",
@@ -213,7 +218,7 @@
                     "id": "chs-car",
                     "label": "Charleston car accident",
                     "url": "/car-accident-lawyers/charleston-sc/",
-                    "kind": "restore",
+                    "kind": "keep",
                     "wave": 1,
                     "geo": true,
                     "approved": "2026-09-26",
@@ -221,7 +226,9 @@
                       "impr16": 202710,
                       "pos90": 22.0,
                       "serpWinner": "practice page (Trey Harrell #8–10)"
-                    }
+                    },
+                    "live": "2026-09-26",
+                    "note": "LIVE 2026-09-26 (#164). First allowlisted office practice page. Baseline: Local Falcon report 0a1e77847644635; re-scan at 4 and 8 weeks."
                   },
                   {
                     "id": "chs-truck",
