@@ -664,6 +664,7 @@ into 8 city-tier towns and 109 nested municipalities; see the recommendation in
 | 2026-09-26 | **Charleston truck accident page restored** (office practice page #2) | 670 | 671 | −1 | **LIVE.** #167 allowlist, truck pillar intros corrected, legal sweep PASS (signed SC pack), warnings fixed (#168 directions), published behind the redirect, #169 redirect removed. Verified: 200, self canonical, map, nested + 2 legacy URLs single-hop, 22 links restored, JSON-LD guard PASS. Doorway **23.28% → 23.40% PASS**. Reviewed by Gillin (owner, 2026-09-26). |
 | 2026-09-26 | **Savannah car accident page restored** (office practice page #3, first GA) | 671 | 672 | −1 | **LIVE.** #170 essay + map + allowlist, #171 GA step 5, sweep PASS, warnings fixed (#172), published behind the redirect, #173 redirect removed. Verified: 200, self canonical, map, nested + 7 legacy URLs single-hop, 60 links restored, JSON-LD guard PASS. Doorway **23.40% → 23.51% PASS**. Reviewed by Eric Roden (owner, 2026-09-26). |
 | 2026-09-26 | **Savannah truck accident page restored** (office practice page #4) | 672 | 673 | −1 | **LIVE.** Allowlist (#172), truck pillar GA branch corrected (passes 3–4), sweep PASS, W1/W2 fixed, published behind the redirect, #174 redirect removed. Verified: 200, self canonical, map, nested + legacy URL single-hop, 9 links restored, JSON-LD guard PASS. Doorway **23.51% → 23.63% PASS**. Reviewed by Eric Roden (owner, 2026-09-26). |
+| 2026-09-26 | **Charleston workers' comp page restored** (office practice page #5, first WC) | 673 | 674 | −1 | **LIVE.** #175 SC WC steps + allowlist, #176 sidebar deadline, WC pillar intros corrected, sweep FAIL fixed (#177 template; internal-ai-scripts #66 three WC authorities signed), published behind the redirect, #178 redirect removed. Verified: 200, self canonical, map, 2-yr sidebar, nested + legacy URL single-hop, 2 links restored, JSON-LD guard PASS. Doorway **23.63% → 23.74% PASS**. Reviewed by Gillin (owner, 2026-09-26). |
 
 ### Batch (c) — two things the plan did not predict
 
@@ -1503,6 +1504,45 @@ md5 matches the repo.
   `/locations/georgia/darien/`.
 - **Doorway: 171 / 685 = 24.96% → 157 / 671 = 23.40%, PASS**, which frees 10 geo slots for
   wave 1. JSON-LD guard PASS. `content/meta.json` `_count` 678 → 664: exactly the 14.
+
+### Charleston workers' comp page live (office practice page #5, the first WC page) — 2026-09-26
+
+**Owner, 2026-09-26:**
+- "start Charleston workers' comp"
+- "yes, publish": Gillin reviewed the page.
+- "add those three sections in the WC page as reviewed by Gillin"
+
+**Shipped:**
+- **#175** — SC workers' comp steps 2–3 (and HowTo) no longer describe Georgia's posted panel of
+  physicians; South Carolina has none. Allowlist entry.
+- **#176** — the office-page sidebar deadline reuses the practice-area statute. It had shown the
+  3-year tort deadline on a WC page.
+- **WC pillar intros (DB, `bin/fix-wc-pillar-intros.php`, two passes).**
+  - SC branch: § 42-1-540 replaces the § 42-1-10 cite, and § 42-9-10 (with the lifetime benefit)
+    replaces the § 42-9-30 cite.
+  - "Uncapped" medical is removed, along with the two-state 400/500-week sentence.
+  - "Non-employer tortfeasors" becomes "someone other than your employer".
+- **Content** (`bin/rebuild-charleston-workers-comp.php`, post 3654): SC only, Gillin as author.
+- **Legal sweep: FAIL** (`data/facts/remediation-2026-09-26-charleston-wc.md`). The page copy was
+  correct; the failures were:
+  - **E1:** the SC statewide up-link promised a "comparative-fault rule" on a no-fault page. Fixed
+    in **#177**, along with the fault-framed bottom CTA and an unsourced line in step 1.
+  - **B1:** §§ 42-1-540, 42-9-60 and 42-9-10 were not in the signed SC pack. Added as signed by
+    Gillin in internal-ai-scripts **#66**; SC now holds 30 authorities.
+  - The page warnings were fixed in the copy: the lifetime benefit under § 42-9-10(C), the "under
+    the Act" hedge, and notice due "right away, no later than 90 days".
+- **Publish:** behind the #143 redirect first, then **#178** removed the redirect.
+- **Verified live:**
+  - The page returns 200, has a self canonical and the map.
+  - The sidebar shows 2 yr / § 42-15-40.
+  - The nested URL and the legacy URL each 301 to it in one hop.
+  - 2 of 2 internal links restored.
+  - JSON-LD guard PASS; `content/meta.json` regenerated.
+  - **Doorway 160 / 674 = 23.74% PASS.**
+
+**Open:** internal-ai-scripts #62 carries §§ 42-1-540, 42-9-60 and 42-9-10 unsigned; it must drop
+them when rebased. The two-state WC pillar still shows the Georgia panel steps. Those steps are
+correct for Georgia but are presented as universal there.
 
 ### Savannah truck accident page live (office practice page #4) — 2026-09-26
 

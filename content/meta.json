@@ -7,7 +7,7 @@
         "post",
         "page"
     ],
-    "_count": 666,
+    "_count": 667,
     "posts": {
         "/": {
             "type": "page",
@@ -21791,8 +21791,8 @@
                 "_roden_jurisdiction": "both",
                 "_roden_last_reviewed": "2026-07-31",
                 "_roden_meta_description": "Workers' comp lawyers for Georgia and South Carolina. Georgia allows 1 year to file, South Carolina 2. Over $300 million recovered for clients.",
-                "_roden_pillar_compensation_intro": "**There is no recovery for pain and suffering in workers' compensation** — only statutory benefits: medical (uncapped, related), temporary total disability (TTD) at 2/3 of average weekly wage subject to a state maximum, permanent partial disability per the body-part schedule, and (for fatalities) death benefits to surviving dependents. {{GA}}**Georgia's TTD maximum is set by statute and adjusted periodically** (O.C.G.A. § 34-9-261, § 34-9-265). {{/GA}}{{SC}}**South Carolina TTD tracks the statewide average weekly wage**, with permanent partial disability scheduled by body part under S.C. Code § 42-9-30. {{/SC}}Third-party tort recoveries fund the noneconomic damages workers' comp does not cover. The two states cap those benefits differently — 400 weeks in Georgia, 500 in South Carolina — and the routes past the cap work in opposite ways: <a href=\"/resources/georgia-vs-south-carolina-workers-compensation/\">the two systems compared side by side</a>.",
-                "_roden_pillar_negligence_intro": "Workers' compensation is a **no-fault statutory scheme** that *replaces* common-law negligence: the injured worker need not prove fault, but in exchange gives up the right to sue the employer for tort damages (the \"exclusive remedy\" bar). To qualify, the injury must \"arise out of and in the course of\" employment. {{GA}}In Georgia, workers' compensation is governed by O.C.G.A. § 34-9-1 et seq. {{/GA}}{{SC}}In South Carolina, workers' compensation is governed by S.C. Code § 42-1-10 et seq. {{/SC}}**Third-party tort claims against non-employer tortfeasors remain available** (e.g., a defective machine manufacturer, a negligent driver who hits you at work, a property owner where you were injured) and can be pursued in parallel with the workers' comp claim.",
+                "_roden_pillar_compensation_intro": "**There is no recovery for pain and suffering in workers' compensation** — only statutory benefits: medical care, temporary total disability (TTD) at 2/3 of average weekly wage subject to a state maximum, permanent partial disability per the body-part schedule, and (for fatalities) death benefits to surviving dependents. {{GA}}**Georgia's TTD maximum is set by statute and adjusted periodically** (O.C.G.A. § 34-9-261, § 34-9-265). {{/GA}}{{SC}}In South Carolina, total disability pays 66 2/3% of the average weekly wage, no more than the state average weekly wage, for up to 500 weeks, or for life for a worker left paraplegic, quadriplegic or with physical brain damage (S.C. Code § 42-9-10). {{/SC}}Third-party tort recoveries fund the noneconomic damages workers' comp does not cover.",
+                "_roden_pillar_negligence_intro": "Workers' compensation is a **no-fault statutory scheme** that replaces common-law negligence: the injured worker need not prove fault, but in exchange gives up the right to sue the employer for tort damages (the \"exclusive remedy\" bar). To qualify, the injury must \"arise out of and in the course of\" employment. {{GA}}In Georgia, workers' compensation is governed by O.C.G.A. § 34-9-1 et seq. {{/GA}}{{SC}}In South Carolina, where employer and employee are under the Act, workers' compensation is the worker's exclusive remedy against the employer (S.C. Code § 42-1-540). {{/SC}}**Third-party tort claims against someone other than your employer remain available** (e.g., a defective machine manufacturer, a negligent driver who hits you at work, a property owner where you were injured) and can be pursued in parallel with the workers' comp claim.",
                 "_roden_sol_ga": "O.C.G.A. § 34-9-82",
                 "_roden_sol_sc": "S.C. Code § 42-15-40",
                 "_roden_translation_es": "/es/practice-areas/workers-compensation-lawyers/",
@@ -25669,6 +25669,49 @@
                 "_roden_pa_office_key": "savannah",
                 "_roden_sol_ga": "2 years (O.C.G.A. § 9-3-33)",
                 "_roden_translation_es": "/es/truck-accident-lawyers/savannah-ga/"
+            }
+        },
+        "/workers-compensation-lawyers/charleston-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Charleston Workers' Compensation Lawyers",
+            "excerpt": "Hurt on the job in Charleston? Roden Law's King Street lawyers handle South Carolina workers' compensation claims and third-party injury claims. Free consultation, no fee unless we win.",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "How much does a Charleston workers' comp lawyer cost?",
+                        "answer": "Nothing up front. The consultation is free, and there is no fee unless we win your case."
+                    },
+                    {
+                        "question": "How long do I have to report a work injury in South Carolina?",
+                        "answer": "You must notify your employer right away, and no later than 90 days after the injury (S.C. Code § 42-15-20), and file your claim with the South Carolina Workers' Compensation Commission within two years of the accident (S.C. Code § 42-15-40)."
+                    },
+                    {
+                        "question": "Can I sue my employer for a workplace injury?",
+                        "answer": "Usually not. Where you and your employer are under the Workers' Compensation Act, workers' comp is your exclusive remedy against the employer (S.C. Code § 42-1-540). You may still have a claim against a third party who caused the injury."
+                    },
+                    {
+                        "question": "Does it matter if the accident was my fault?",
+                        "answer": "Generally no. Workers' comp does not depend on fault. Benefits can be denied if the injury was caused by your intoxication or wilful intention to injure yourself or another, and the party raising that defense must prove it (S.C. Code § 42-9-60)."
+                    },
+                    {
+                        "question": "How much does workers' comp pay in South Carolina?",
+                        "answer": "Total disability pays 66 2/3% of your average weekly wage, no more than the state average weekly wage, for up to 500 weeks, or for life for a worker left paraplegic, quadriplegic or with physical brain damage (S.C. Code § 42-9-10)."
+                    },
+                    {
+                        "question": "Can I get pain and suffering damages?",
+                        "answer": "Not from workers' compensation. Where you and your employer are under the Workers' Compensation Act, there are no pain-and-suffering or punitive damages from the employer (S.C. Code § 42-1-540). A separate claim against a third party who caused the injury can include them."
+                    }
+                ],
+                "_roden_jurisdiction": "south-carolina",
+                "_roden_key_takeaways": "If you were hurt at work in Charleston, South Carolina law requires you to notify your employer right away, and no later than 90 days (S.C. Code § 42-15-20) and to file a claim with the South Carolina Workers' Compensation Commission within two years of the accident (S.C. Code § 42-15-40). You do not have to prove fault, but workers' compensation is generally your exclusive remedy against your employer, with no pain-and-suffering damages (S.C. Code § 42-1-540). Total disability pays 66 2/3% of your average weekly wage, up to the state average weekly wage, generally for up to 500 weeks (S.C. Code § 42-9-10). Roden Law's Charleston office at 127 King Street handles workers' comp claims: the consultation is free and there is no fee unless we win.",
+                "_roden_last_reviewed": "2026-09-26",
+                "_roden_meta_description": "Hurt on the job in Charleston? Notify your employer right away (no later than 90 days) and file within two years. Roden Law's King Street lawyers handle South Carolina workers' comp claims. (843) 790-8999.",
+                "_roden_meta_title": "Charleston Workers' Comp Lawyer | Roden Law",
+                "_roden_pa_office_key": "charleston",
+                "_roden_sol_sc": "S.C. Code § 42-15-40",
+                "_roden_translation_es": "/es/workers-compensation-lawyers/charleston-sc/"
             }
         },
         "/workers-compensation-lawyers/denied-workers-comp-claim/": {
