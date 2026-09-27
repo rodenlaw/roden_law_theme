@@ -97,6 +97,34 @@ function roden_lang_home_url( $lang = null, $path = '/' ) {
 }
 
 /**
+ * An office hub's URL in a language. The Spanish hub is linked only while its
+ * post (location 'es-{city}') is published; otherwise the English hub, never a
+ * redirect. The nav, footer, contact page and homepage built '/es/locations/…'
+ * from firm data alone, so retiring a Spanish hub (Darien and North Charleston,
+ * 2026-09-26) left four sitewide links pointing at a 301.
+ *
+ * @param array       $office Office entry from roden_firm_data()['offices'].
+ * @param string|null $lang   'en' or 'es'; defaults to the current language.
+ * @return string
+ */
+function roden_office_url( $office, $lang = null ) {
+    if ( null === $lang ) {
+        $lang = roden_current_lang();
+    }
+    $city = sanitize_title( $office['market_name'] );
+    $path = '/locations/' . $office['state_slug'] . '/' . $city . '/';
+    if ( 'es' !== $lang ) {
+        return home_url( $path );
+    }
+    static $live = array();
+    if ( ! isset( $live[ $city ] ) ) {
+        $es           = get_page_by_path( 'es-' . $city, OBJECT, 'location' );
+        $live[ $city ] = $es && 'publish' === $es->post_status;
+    }
+    return $live[ $city ] ? roden_lang_home_url( 'es', $path ) : home_url( $path );
+}
+
+/**
  * Blog index URL for a language.
  *
  * The Spanish blog hub (/es/blog/) is a rewrite-driven virtual URL — there is

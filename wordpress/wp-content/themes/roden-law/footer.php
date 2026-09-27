@@ -159,8 +159,7 @@ $footer_sc_pillars = array(
                                 if ( $office['state'] !== $bucket['state_abbr'] ) {
                                     continue;
                                 }
-                                $city_slug = sanitize_title( $office['market_name'] );
-                                $office_url = roden_lang_home_url( $footer_lang, '/locations/' . $office['state_slug'] . '/' . $city_slug . '/' );
+                                $office_url = roden_office_url( $office, $footer_lang );
                             ?>
                                 <div class="footer-office">
                                     <h4>

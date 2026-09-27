@@ -127,8 +127,7 @@ function roden_fallback_menu() {
                 <a href="<?php echo esc_url( roden_lang_home_url( 'es', '/locations/' ) ); ?>"><?php esc_html_e( 'Locations', 'roden-law' ); ?></a>
                 <ul class="sub-menu">
                     <?php foreach ( $firm['offices'] as $office ) :
-                        $city_slug = sanitize_title( $office['market_name'] );
-                        $url = roden_lang_home_url( 'es', '/locations/' . $office['state_slug'] . '/' . $city_slug . '/' );
+                        $url = roden_office_url( $office, 'es' );
                     ?>
                         <li class="menu-item"><a href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( $office['market_name'] . ', ' . $office['state'] ); ?></a></li>
                     <?php endforeach; ?>
