@@ -4060,3 +4060,10 @@ msgstr "Notifique por escrito a un supervisor o a Recursos Humanos %s. No cumpli
 #: templates/template-intersection.php (bottom CTA, workers' comp, 2026-09-26)
 msgid "If you were hurt on the job in %1$s, contact us for a free, no-obligation review of your workers’ compensation claim and any third-party claim. Call %2$s — no upfront cost."
 msgstr "Si se lesionó en el trabajo en %1$s, contáctenos para una revisión gratuita y sin compromiso de su reclamo de compensación laboral y de cualquier reclamo contra terceros. Llame al %2$s — sin costo inicial."
+
+#: inc/firm-data.php (WC notice, GA and SC, 2026-09-26)
+msgid "right away, and no later than 30 days after the injury (O.C.G.A. § 34-9-80)"
+msgstr "de inmediato, y a más tardar 30 días después de la lesión (O.C.G.A. § 34-9-80)"
+
+msgid "right away, and no later than 90 days after the injury (S.C. Code § 42-15-20)"
+msgstr "de inmediato, y a más tardar 90 días después de la lesión (S.C. Code § 42-15-20)"

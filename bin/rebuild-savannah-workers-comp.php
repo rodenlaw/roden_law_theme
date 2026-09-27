@@ -7,7 +7,7 @@
  * results and FAQ render from template-intersection.php. Georgia claims for
  * Roden are reviewed by Eric Roden.
  *
- * Publishing is a separate step, after the legal sweep and Graeham C. Gillin's
+ * Publishing is a separate step, after the legal sweep and Eric Roden's
  * sign-off. This script never publishes, never removes _roden_retired, and never
  * sets _roden_last_reviewed (a review date is stamped only by the reviewer's word).
  *
@@ -62,7 +62,7 @@ $body = <<<'HTML'
 
 <h2>Georgia Workers' Compensation Rules</h2>
 <h3>Two deadlines, not one</h3>
-<p>You must give your employer notice of the injury within 30 days (O.C.G.A. § 34-9-80). The claim itself must be filed with the State Board of Workers' Compensation within one year of the injury, or within one year of the last employer-furnished medical treatment, or two years from the last payment of weekly benefits (O.C.G.A. § 34-9-82). Telling your supervisor is not the same as filing a claim. See <a href="/blog/workers-compensation-claim-process-georgia/">how the Georgia claim process works</a>.</p>
+<p>Give your employer notice of the injury right away, and no later than 30 days after it happens (O.C.G.A. § 34-9-80). The claim itself must be filed with the State Board of Workers' Compensation within one year of the injury, or within one year of the last employer-furnished medical treatment, or two years from the last payment of weekly benefits (O.C.G.A. § 34-9-82). Telling your supervisor is not the same as filing a claim. See <a href="/blog/workers-compensation-claim-process-georgia/">how the Georgia claim process works</a>.</p>
 <h3>Choosing your doctor</h3>
 <p>Georgia employers generally must post a panel of physicians, and treating outside it without approval can cost you coverage. Ask for the panel in writing. See <a href="/blog/changing-workers-comp-doctors-in-georgia/">changing workers' comp doctors in Georgia</a>.</p>
 <h3>Fault usually does not matter</h3>
@@ -74,11 +74,11 @@ $body = <<<'HTML'
 <p>If your claim has been denied, see <a href="/workers-compensation-lawyers/denied-workers-comp-claim/">denied workers' comp claims</a> and <a href="/blog/appealing-a-denied-workers-compensation-claim/">appealing a denial</a>.</p>
 HTML;
 
-$key_takeaways = 'If you were hurt at work in Savannah, Georgia law requires you to notify your employer within 30 days (O.C.G.A. § 34-9-80) and to file a claim with the State Board of Workers\' Compensation, generally within one year of the injury (O.C.G.A. § 34-9-82). You do not have to prove fault, but workers\' compensation is generally your exclusive remedy against your employer, with no pain-and-suffering damages (O.C.G.A. § 34-9-11). Georgia employers generally must post a panel of physicians, so ask for it before you choose a doctor. Roden Law\'s Savannah office at 333 Commercial Drive handles workers\' comp claims: the consultation is free and there is no fee unless we win.';
+$key_takeaways = 'If you were hurt at work in Savannah, Georgia law requires you to notify your employer right away, and no later than 30 days (O.C.G.A. § 34-9-80) and to file a claim with the State Board of Workers\' Compensation, generally within one year of the injury (O.C.G.A. § 34-9-82). You do not have to prove fault, but workers\' compensation is generally your exclusive remedy against your employer, with no pain-and-suffering damages (O.C.G.A. § 34-9-11). Georgia employers generally must post a panel of physicians, so ask for it before you choose a doctor. Roden Law\'s Savannah office at 333 Commercial Drive handles workers\' comp claims: the consultation is free and there is no fee unless we win.';
 
 $faqs = array(
     array( 'question' => 'How much does a Savannah workers\' comp lawyer cost?', 'answer' => 'Nothing up front. The consultation is free, and there is no fee unless we win your case.' ),
-    array( 'question' => 'How long do I have to report a work injury in Georgia?', 'answer' => 'You must notify your employer within 30 days (O.C.G.A. § 34-9-80). The claim must be filed with the State Board of Workers\' Compensation within one year of the injury, or one year from the last employer-furnished medical treatment, or two years from the last payment of weekly benefits (O.C.G.A. § 34-9-82).' ),
+    array( 'question' => 'How long do I have to report a work injury in Georgia?', 'answer' => 'Notify your employer right away, and no later than 30 days after the injury (O.C.G.A. § 34-9-80). The claim must be filed with the State Board of Workers\' Compensation within one year of the injury, or one year from the last employer-furnished medical treatment, or two years from the last payment of weekly benefits (O.C.G.A. § 34-9-82).' ),
     array( 'question' => 'Can I choose my own doctor?', 'answer' => 'Usually not at first. Georgia employers generally must post a panel of physicians, and treating outside it without approval can cost you coverage. Ask your employer for the panel in writing.' ),
     array( 'question' => 'Can I sue my employer for a workplace injury?', 'answer' => 'Usually not. Workers\' compensation is generally your exclusive remedy against your employer (O.C.G.A. § 34-9-11). You may still have a claim against a third party who caused the injury.' ),
     array( 'question' => 'Does it matter if the accident was my fault?', 'answer' => 'Generally no. Workers\' comp does not depend on fault. Benefits can be barred for willful misconduct or intoxication (O.C.G.A. § 34-9-17).' ),
