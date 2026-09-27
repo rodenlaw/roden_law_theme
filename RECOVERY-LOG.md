@@ -665,6 +665,7 @@ into 8 city-tier towns and 109 nested municipalities; see the recommendation in
 | 2026-09-26 | **Savannah car accident page restored** (office practice page #3, first GA) | 671 | 672 | −1 | **LIVE.** #170 essay + map + allowlist, #171 GA step 5, sweep PASS, warnings fixed (#172), published behind the redirect, #173 redirect removed. Verified: 200, self canonical, map, nested + 7 legacy URLs single-hop, 60 links restored, JSON-LD guard PASS. Doorway **23.40% → 23.51% PASS**. Reviewed by Eric Roden (owner, 2026-09-26). |
 | 2026-09-26 | **Savannah truck accident page restored** (office practice page #4) | 672 | 673 | −1 | **LIVE.** Allowlist (#172), truck pillar GA branch corrected (passes 3–4), sweep PASS, W1/W2 fixed, published behind the redirect, #174 redirect removed. Verified: 200, self canonical, map, nested + legacy URL single-hop, 9 links restored, JSON-LD guard PASS. Doorway **23.51% → 23.63% PASS**. Reviewed by Eric Roden (owner, 2026-09-26). |
 | 2026-09-26 | **Charleston workers' comp page restored** (office practice page #5, first WC) | 673 | 674 | −1 | **LIVE.** #175 SC WC steps + allowlist, #176 sidebar deadline, WC pillar intros corrected, sweep FAIL fixed (#177 template; internal-ai-scripts #66 three WC authorities signed), published behind the redirect, #178 redirect removed. Verified: 200, self canonical, map, 2-yr sidebar, nested + legacy URL single-hop, 2 links restored, JSON-LD guard PASS. Doorway **23.63% → 23.74% PASS**. Reviewed by Gillin (owner, 2026-09-26). |
+| 2026-09-26 | **Savannah workers' comp page restored** (office practice page #6) | 674 | 675 | −1 | **LIVE.** #179 essay + allowlist, WC pillar GA branch, sweep FAIL fixed (#180: full § 34-9-82 deadline on step 5/law box/sidebar; notice 'right away, no later than'), published behind the redirect, #181 redirect removed. Verified: 200, self canonical, map, nested + legacy URL single-hop, 18 links restored, JSON-LD guard PASS. Doorway **23.74% → 23.85% PASS**. Reviewed by Eric Roden incl. §§ 34-9-11, 34-9-17 (owner, 2026-09-26). |
 
 ### Batch (c) — two things the plan did not predict
 
@@ -1504,6 +1505,57 @@ md5 matches the repo.
   `/locations/georgia/darien/`.
 - **Doorway: 171 / 685 = 24.96% → 157 / 671 = 23.40%, PASS**, which frees 10 geo slots for
   wave 1. JSON-LD guard PASS. `content/meta.json` `_count` 678 → 664: exactly the 14.
+
+### Savannah workers' comp page live (office practice page #6) — 2026-09-26
+
+**Owner, 2026-09-26:**
+- "do the Savannah's WC page"
+- "this has been reviewed - those 2 statutes have been reviewed as well": Eric Roden reviewed the
+  page and O.C.G.A. §§ 34-9-11 (exclusive remedy) and 34-9-17 (willful misconduct /
+  intoxication). His review is dated 2026-09-26.
+- "publish it when the sweep clears"
+
+Both statutes remain *pending* in the shared GA pack; for Roden, Eric Roden's review is the
+approval. The panel of physicians (§ 34-9-201) is stated uncited in the page copy and cited in the
+essay; it rests on the same review.
+
+**Shipped:**
+- **#179** — Savannah WC essay:
+  - "only Level I" dropped;
+  - the unverified "35 Barnard Street field office" cut;
+  - the deadline no longer reads as a flat "one year … not two".
+  - Also the allowlist entry.
+- **WC pillar pass 3 (DB):** the GA branch cites § 34-9-11 instead of "§ 34-9-1 et seq.", and
+  § 34-9-265 is dropped.
+- **Content** (`bin/rebuild-savannah-workers-comp.php`, post 3652): GA only, Eric Roden as author.
+  - All three prongs of § 34-9-82;
+  - 30-day notice (§ 34-9-80);
+  - the weekly maximum with no figure (§ 34-9-261);
+  - the panel, § 34-9-11 and § 34-9-17.
+- **Legal sweep: FAIL on template text** (`data/facts/remediation-2026-09-26-savannah-wc.md`).
+  **#180** fixed it:
+  - WC step 5 / HowTo, the law box and the sidebar showed "1 year from the date of injury
+    (§ 34-9-82)", dropping the treatment and benefit-payment extensions. The GA override now
+    carries `deadline_detail` (the comparison table's approved, translated string).
+  - Notice now reads "right away, and no later than 30 / 90 days" for GA and SC. This also
+    reaches the live Charleston WC page.
+- **Publish:** behind the #143 redirect first, then **#181** removed the redirect.
+- **Verified live:**
+  - The page returns 200, has a self canonical and the map.
+  - The nested URL and the legacy URL each 301 to it in one hop.
+  - 18 internal links restored across 18 posts.
+  - JSON-LD guard PASS; `content/meta.json` regenerated.
+  - **Doorway 161 / 675 = 23.85% PASS.**
+
+**Open from the sweep (not blocking):**
+- **L1 — live error.** `/blog/workers-compensation-claim-process-georgia/` FAQ 1, also in FAQPage
+  schema, says employees "usually have 10 days to make a report"; § 34-9-80 gives 30.
+- **L2.** Two posts' FAQs give a flat one-year deadline: that post and
+  `/blog/appealing-a-denied-workers-compensation-claim/`.
+- **Flat one-year wording in other templates:** the Darien WC essay, the generated key
+  takeaways, and two-state takeaways that render "1 years".
+- **W4.** The third-party examples don't mention that co-workers can't be sued (§ 34-9-11(a)).
+- **Proposed GA pack rules:** `ga-wc-two-years-from-injury` and `ga-wc-notice-wrong-days`.
 
 ### The five sweep findings fixed; toolkit checkout back on main — 2026-09-26
 
