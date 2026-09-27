@@ -18,7 +18,7 @@
 $apply = isset( $args[0] ) && 'apply' === $args[0];
 $err   = fopen( 'php://stderr', 'w' );
 $id    = 3622;
-$reviewed = ''; // set when the owner confirms Eric Roden reviewed THIS page's content
+$reviewed = '2026-09-26'; // owner: "this has been reviewed" — Eric Roden reviewed the Savannah page (2026-09-26)
 global $wpdb;
 
 if ( ! function_exists( 'roden_office_practice_allowlist' ) || ! in_array( 'car-accident-lawyers/savannah-ga', roden_office_practice_allowlist(), true ) ) {
