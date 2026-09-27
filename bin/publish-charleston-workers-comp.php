@@ -18,7 +18,7 @@
 $apply = isset( $args[0] ) && 'apply' === $args[0];
 $err   = fopen( 'php://stderr', 'w' );
 $id    = 3654;
-$reviewed = ''; // set when the owner confirms Gillin reviewed THIS page's content
+$reviewed = '2026-09-26'; // owner: "yes, publish" — Gillin reviewed the Charleston workers' comp page (2026-09-26)
 global $wpdb;
 
 if ( ! function_exists( 'roden_office_practice_allowlist' ) || ! in_array( 'workers-compensation-lawyers/charleston-sc', roden_office_practice_allowlist(), true ) ) {

@@ -4048,3 +4048,15 @@ msgstr "Guarde todos sus registros médicos."
 
 msgid "Keep copies of every visit summary, work restriction and bill, and tell each doctor that the injury happened at work."
 msgstr "Guarde copias de cada resumen de consulta, restricción laboral y factura, e informe a cada médico que la lesión ocurrió en el trabajo."
+
+#: inc/template-tags.php (SC uplink, workers' comp, 2026-09-26)
+msgid "Serving all of South Carolina: see our statewide %s page for South Carolina’s notice and filing deadlines and how these claims work across the state."
+msgstr "Atendemos a todo Carolina del Sur: consulte nuestra página estatal %s para conocer los plazos de notificación y de presentación de Carolina del Sur y cómo funcionan estos reclamos en todo el estado."
+
+#: inc/template-tags.php (workers' comp step 1, 2026-09-26)
+msgid "Notify a supervisor or HR in writing %s. Missing it can bar your claim entirely."
+msgstr "Notifique por escrito a un supervisor o a Recursos Humanos %s. No cumplir con este plazo puede impedir por completo su reclamo."
+
+#: templates/template-intersection.php (bottom CTA, workers' comp, 2026-09-26)
+msgid "If you were hurt on the job in %1$s, contact us for a free, no-obligation review of your workers’ compensation claim and any third-party claim. Call %2$s — no upfront cost."
+msgstr "Si se lesionó en el trabajo en %1$s, contáctenos para una revisión gratuita y sin compromiso de su reclamo de compensación laboral y de cualquier reclamo contra terceros. Llame al %2$s — sin costo inicial."

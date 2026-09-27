@@ -690,7 +690,10 @@ if ( count( $sibling_urls ) >= 2 ) :
                     <?php
                     printf(
                         /* translators: 1: city/market name; 2: phone number link. */
-                        esc_html__( 'If you were injured in %1$s and believe another party is at fault, contact us for a free, no-obligation review. Call %2$s — no upfront cost.', 'roden-law' ),
+                        // No-fault claims get their own line (Charleston WC sweep, W5).
+                        $int_is_statutory
+                            ? esc_html__( 'If you were hurt on the job in %1$s, contact us for a free, no-obligation review of your workers’ compensation claim and any third-party claim. Call %2$s — no upfront cost.', 'roden-law' )
+                            : esc_html__( 'If you were injured in %1$s and believe another party is at fault, contact us for a free, no-obligation review. Call %2$s — no upfront cost.', 'roden-law' ),
                         esc_html( $office['market_name'] ),
                         '<a href="tel:' . esc_attr( $office['phone_raw'] ) . '">' . esc_html( $office['phone'] ) . '</a>'
                     );
