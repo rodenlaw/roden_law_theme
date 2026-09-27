@@ -31,7 +31,7 @@ if ( ! $p instanceof WP_Post || 'practice_area' !== $p->post_type || 'charleston
     fprintf( $err, "ABORT: post %d is not the charleston-sc practice_area.\n", $id );
     exit( 1 );
 }
-if ( 'draft' !== $p->post_status ) {
+if ( 'draft' !== $p->post_status ) { // re-run 2026-09-26 for sweep finding W11
     fprintf( $err, "ABORT: post %d is '%s'; this script only writes to the draft.\n", $id, $p->post_status );
     exit( 1 );
 }
@@ -42,11 +42,11 @@ if ( 'car-accident-lawyers' !== get_post_field( 'post_name', $p->post_parent ) )
 
 $body = <<<'HTML'
 <h2>Why Hire Roden Law After a Charleston Car Accident</h2>
-<p>Charleston crashes rarely involve just two local drivers and one policy. Visitors in rental cars, rideshare drivers, delivery vans and port traffic all share the peninsula and the bridges, and each brings a different insurer with its own rules. We sort out who is responsible and which coverage pays before the insurers sort it out for themselves.</p>
+<p>A Charleston crash can involve more than one driver and more than one insurer: visitors in rental cars, rideshare drivers, delivery vans and port traffic all share the peninsula and the bridges. We work out who is responsible and which coverage pays.</p>
 <ul>
 <li><strong>No fee unless we win.</strong> The consultation is free, and you pay nothing up front.</li>
 <li><strong>A South Carolina lawyer on your case.</strong> Your case is handled under South Carolina law by attorneys licensed here, from our office at 127 King Street.</li>
-<li><strong>Built for trial.</strong> We prepare every case as if it will be tried in the Charleston County Court of Common Pleas. Insurers pay more when they know that.</li>
+<li><strong>Built for trial.</strong> We prepare every case as if it will be tried in the Charleston County Court of Common Pleas.</li>
 <li><strong>Every policy found.</strong> At-fault liability, your own uninsured and underinsured motorist coverage, rideshare and commercial policies.</li>
 </ul>
 
