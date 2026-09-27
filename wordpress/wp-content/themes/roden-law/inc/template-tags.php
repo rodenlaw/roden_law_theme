@@ -2125,11 +2125,19 @@ function roden_what_to_do_steps_data( $pa_slug = '', $state_full = '', $state_ke
         ),
         array(
             'title' => __( 'Report the accident to police.', 'roden-law' ),
-            'body'  => sprintf(
-                /* translators: %s: state name, e.g. "Georgia". */
-                __( '%s law requires accident reports when there are injuries or significant property damage. Request a copy of the police report.', 'roden-law' ),
-                $state_label
-            ),
+            /*
+             * South Carolina states the two actual duties, from the signed SC
+             * pack (S.C. Code §§ 56-5-1260, 56-5-1270; legal sweep 2026-09-26,
+             * W7). Georgia and two-state pages keep the general sentence until
+             * O.C.G.A. § 40-6-273 is in the GA pack.
+             */
+            'body'  => ( 'SC' === $state_key || 'South Carolina' === $state_full )
+                ? __( 'South Carolina law requires you to notify police immediately after a crash that injures or kills anyone (S.C. Code § 56-5-1260). If no officer investigated a crash involving injury or $1,000 or more in property damage, the driver or owner must file a written report with the DMV within 15 days (S.C. Code § 56-5-1270). Request a copy of the police report.', 'roden-law' )
+                : sprintf(
+                    /* translators: %s: state name, e.g. "Georgia". */
+                    __( '%s law requires accident reports when there are injuries or significant property damage. Request a copy of the police report.', 'roden-law' ),
+                    $state_label
+                ),
         ),
         array(
             'title' => __( 'Notify your insurance company.', 'roden-law' ),
