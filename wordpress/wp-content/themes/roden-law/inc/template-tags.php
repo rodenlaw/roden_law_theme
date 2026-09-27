@@ -3354,7 +3354,9 @@ function roden_related_resources( $args = array() ) {
     // Build query: filter by practice_category if provided.
     $query_args = array(
         'post_type'      => 'resource',
-        'posts_per_page' => $args['count'] + 4, // over-fetch to allow dedup/filtering
+        // Over-fetch to allow dedup/filtering; more on an office page, which also
+        // drops the other state's resources below.
+        'posts_per_page' => $args['count'] + ( $args['office_key'] ? 16 : 4 ),
         'post_status'    => 'publish',
         'orderby'        => 'date',
         'order'          => 'DESC',
@@ -3399,9 +3401,24 @@ function roden_related_resources( $args = array() ) {
         $office_slugs[] = strtolower( $o['state'] );
     }
 
+    /*
+     * An office page states one state's law only (writer profile, jurisdiction
+     * rules). Drop resources about the other state, including two-state
+     * comparisons: the Charleston car accident page linked "Georgia Moped Laws"
+     * (legal sweep 2026-09-26, W10).
+     */
+    $other_state = '';
+    if ( $args['office_key'] && isset( $firm['offices'][ $args['office_key'] ] ) ) {
+        $other_state = ( 'SC' === $firm['offices'][ $args['office_key'] ]['state'] ) ? 'georgia' : 'south-carolina';
+    }
+
     while ( $resources->have_posts() ) {
         $resources->the_post();
         $slug = get_post_field( 'post_name', get_the_ID() );
+
+        if ( $other_state && false !== strpos( roden_strip_es_slug( $slug ), $other_state ) ) {
+            continue;
+        }
 
         $is_local = false;
         foreach ( $office_slugs as $fragment ) {
