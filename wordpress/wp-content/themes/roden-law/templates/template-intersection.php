@@ -393,7 +393,11 @@ if ( count( $sibling_urls ) >= 2 ) :
                         <div class="law-detail">
                             <span class="law-label"><?php echo esc_html( $int_statute['is_override'] ? __( 'Deadline to File a Claim', 'roden-law' ) : __( 'Statute of Limitations', 'roden-law' ) ); ?></span>
                             <span class="law-value">
+                                <?php if ( ! empty( $int_statute['deadline_detail'] ) ) : ?>
+                                    <?php echo esc_html( $int_statute['deadline_detail'] ); ?>
+                                <?php else : ?>
                                 <?php printf( /* translators: 1: number of years; 2: statute citation. */ esc_html( _n( '%1$s year (%2$s)', '%1$s years (%2$s)', (int) $int_statute['statute_years'], 'roden-law' ) ), esc_html( $int_statute['statute_years'] ), esc_html( $int_statute['statute_cite'] ) ); ?>
+                                <?php endif; ?>
                             </span>
                         </div>
                         <?php if ( $int_statute['notice_label'] && $int_statute['notice_detail'] ) : ?>
@@ -782,7 +786,7 @@ if ( count( $sibling_urls ) >= 2 ) :
                             <span class="deadline-state"><?php echo esc_html( $jurisdiction['state_full'] ); ?></span>
                         </div>
                     </div>
-                    <p class="deadline-cite"><?php echo esc_html( $sb_statute['statute_cite'] ); ?></p>
+                    <p class="deadline-cite"><?php echo esc_html( ! empty( $sb_statute['deadline_detail'] ) ? $sb_statute['deadline_detail'] : $sb_statute['statute_cite'] ); ?></p>
                     <?php if ( $sb_statute['notice_detail'] ) : ?>
                         <p class="deadline-notice">
                             <strong><?php echo esc_html( $sb_statute['notice_label'] ); ?>:</strong>

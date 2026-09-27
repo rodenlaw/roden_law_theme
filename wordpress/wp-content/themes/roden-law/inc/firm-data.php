@@ -958,14 +958,18 @@ EOT
                     'statute_years'  => 1,
                     'statute_cite'   => 'O.C.G.A. § 34-9-82',
                     'notice_label'   => __( 'Notify your employer', 'roden-law' ),
-                    'notice_detail'  => __( 'within 30 days of the injury (O.C.G.A. § 34-9-80)', 'roden-law' ),
+                    'notice_detail'  => __( 'right away, and no later than 30 days after the injury (O.C.G.A. § 34-9-80)', 'roden-law' ),
                     'filing_venue'   => __( 'State Board of Workers\' Compensation (form WC-14)', 'roden-law' ),
+                    // The full § 34-9-82 rule, where a bare "1 year" would drop the
+                    // treatment and benefit-payment extensions (Savannah WC sweep,
+                    // 2026-09-26, E1). Same approved string as the comparison table.
+                    'deadline_detail' => __( '1 year from injury, extended by employer-paid treatment or benefits (O.C.G.A. § 34-9-82)', 'roden-law' ),
                 ),
                 'SC' => array(
                     'statute_years'  => 2,
                     'statute_cite'   => 'S.C. Code § 42-15-40',
                     'notice_label'   => __( 'Notify your employer', 'roden-law' ),
-                    'notice_detail'  => __( 'within 90 days of the injury (S.C. Code § 42-15-20)', 'roden-law' ),
+                    'notice_detail'  => __( 'right away, and no later than 90 days after the injury (S.C. Code § 42-15-20)', 'roden-law' ),
                     'filing_venue'   => __( 'S.C. Workers\' Compensation Commission (Form 50)', 'roden-law' ),
                 ),
             ),

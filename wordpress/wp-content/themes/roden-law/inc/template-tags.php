@@ -144,6 +144,7 @@ function roden_resolve_statute( $state_key, $pa_slug = null ) {
         'notice_label'    => '',
         'notice_detail'   => '',
         'filing_venue'    => '',
+        'deadline_detail' => '',
         'is_override'     => false,
     );
 
@@ -1645,14 +1646,16 @@ function roden_what_to_do_steps_data( $pa_slug = '', $state_full = '', $state_ke
             ? $statute['filing_venue']
             : __( 'your state workers\' compensation board', 'roden-law' );
 
-        $filing_deadline = ( $statute && $statute['statute_years'] )
+        $filing_deadline = ( $statute && ! empty( $statute['deadline_detail'] ) )
+            ? $statute['deadline_detail']
+            : ( ( $statute && $statute['statute_years'] )
             ? sprintf(
                 /* translators: 1: number of years; 2: statute citation. */
                 _n( '%1$s year from the date of injury (%2$s)', '%1$s years from the date of injury (%2$s)', (int) $statute['statute_years'], 'roden-law' ),
                 $statute['statute_years'],
                 $statute['statute_cite']
             )
-            : __( 'before your state deadline expires', 'roden-law' );
+            : __( 'before your state deadline expires', 'roden-law' ) );
 
         $steps = array(
             array(
