@@ -947,6 +947,16 @@ EOT
            ================================================================== */
 
         'statute_overrides' => array(
+            // Tort, not a statutory scheme: only the deadline changes (see
+            // roden_resolve_statute()). Charleston med mal sweep, 2026-09-28.
+            'medical-malpractice-lawyers' => array(
+                'SC' => array(
+                    'tort'            => true,
+                    'statute_years'   => 3,
+                    'statute_cite'    => 'S.C. Code § 15-3-545',
+                    'deadline_detail' => __( '3 years from the treatment or from discovery, no more than 6 years after the treatment (S.C. Code § 15-3-545)', 'roden-law' ),
+                ),
+            ),
             'workers-compensation-lawyers' => array(
                 /*
                  * The prose fields are translatable: they render inside
