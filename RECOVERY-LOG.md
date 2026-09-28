@@ -1661,6 +1661,22 @@ reviewed by Gillin today" (the page, and §§ 56-5-3640 and 56-5-3660).
 - Proposed rule `sc-helmet-adult-threshold`.
 - The Spanish twin (post 5184) stays retired; it was never rebuilt.
 
+**Follow-up the same day.** Owner: "Go ahead on 1 and 2".
+
+`bin/fix-helmet-age-and-lane-splitting-faqs.php` changed 5 FAQ answers, each also FAQPage schema.
+Backup: `docs/backups/helmet-lane-faqs-2026-09-28.json`.
+- **4814 FAQ 49/50** and the Spanish twin **4937 FAQ 57/58**: "adult rider(s)" became "21 or
+  older", and FAQ 50/58 now cite § 56-5-3660.
+- **4073 FAQ 0** (lane splitting): "South Carolina has similar prohibitions. Only California
+  explicitly permits…" became the § 56-5-3640 rule. The Georgia sentence is unchanged.
+- Verified live and in the schema. Fresh sweep: 0 findings. JSON-LD guard PASS. meta.json
+  regenerated.
+
+**Still for Gillin:**
+- 4814 FAQ 49/50 (and 57/58) say helmet use "runs through ordinary comparative fault" and is
+  "not an automatic bar". That is uncited helmet-defense law, the class removed from the pillar.
+- 4073 FAQ 2 says "some states have legalized lane filtering", an other-states claim.
+
 ### Law pack: #62 superseded by #67, rebuilt on the signed SC pack — 2026-09-26
 
 **Owner, 2026-09-26:** "what do we need to do with #62? Those are signed", then "yes".
