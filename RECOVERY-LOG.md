@@ -1616,6 +1616,51 @@ Graeham C. Gillin.
 - W4: co-worker immunity (§ 34-9-11(a)).
 - The two proposed GA pack rules.
 
+### Charleston motorcycle page live — wave 1, office practice page #7 — 2026-09-28
+
+**Owner, 2026-09-28:** "move on to the next batch", "merge #183 now", then "these have been
+reviewed by Gillin today" (the page, and §§ 56-5-3640 and 56-5-3660).
+
+- **Pillar intros (post 3607, live):** removals only.
+  - The unsourced "helmet defense … most courts" case-law survey is gone.
+  - So is "lane-splitting is illegal in both states".
+  - "Both states allow UM/UIM stacking" and the household-coverage layering claim became the
+    signed SC UM/UIM wording (§§ 38-77-150, 38-77-160).
+  - Script: `bin/fix-motorcycle-pillar-intros.php`.
+- **Law pack (internal-ai-scripts #68):** §§ 56-5-3640 (lane use; no lane splitting) and
+  56-5-3660 (helmets under 21 only), read against scstatehouse.gov and signed by Gillin
+  2026-09-28. The SC pack now holds 34 authorities.
+- **Content** (`bin/rebuild-charleston-motorcycle-accident.php`, post 3639): SC only, Gillin
+  byline, no statistic.
+- **Legal sweep: FAIL** (`data/facts/remediation-2026-09-28-charleston-motorcycle.md`).
+  Fixed on the draft before publish:
+  - **E1:** FAQ 3 said an "adult rider" without a helmet broke no law; § 56-5-3660 runs to 21.
+    It now says "21 or older".
+  - **W1 (option B):** "which of your policies applies depends on its terms" cut.
+  - **W2:** the two-abreast exception to the lane rule added.
+  - **W3:** "about a block" to the courthouse.
+  - **W5:** the link to the stacking resource removed.
+- **#183** added the allowlist entry. The page was published behind the redirect, then **#184**
+  removed the redirect.
+- **Verified live:**
+  - The page returns 200 with a self canonical, the map and 7 JSON-LD blocks.
+  - The nested and legacy URLs each 301 to it in one hop; the Spanish URL keeps its redirect.
+  - Fresh claims sweep: **0 findings**. JSON-LD guard PASS. `content/meta.json` regenerated.
+  - **Doorway 162 / 676 = 23.96% PASS.**
+- **Links:** nothing to restore. #142's only English link came from post 5052, which is retired
+  now. The pillar and the Charleston hub link to the page from their templates.
+
+**Open, for Gillin's packet (not blocking):**
+- W1 option A: § 38-77-30 (a motorcycle policy must carry UM) and the § 38-77-160
+  vehicle-involved limit.
+- W4: `/motorcycle-accident-lawyers/lane-splitting-accident/` FAQ 0 says "only California", and
+  its SC sentence is uncited.
+- W5: `/resources/south-carolina-um-uim-stacking/` still makes the stacking claim.
+- `/resources/south-carolina-personal-injury-faq/` says "adult riders" (FAQ 50, and FAQ 58 in
+  Spanish). It is conditioned on 21, so it is imprecise rather than false.
+- Proposed rule `sc-helmet-adult-threshold`.
+- The Spanish twin (post 5184) stays retired; it was never rebuilt.
+
 ### Law pack: #62 superseded by #67, rebuilt on the signed SC pack — 2026-09-26
 
 **Owner, 2026-09-26:** "what do we need to do with #62? Those are signed", then "yes".

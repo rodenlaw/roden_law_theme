@@ -7,7 +7,7 @@
         "post",
         "page"
     ],
-    "_count": 668,
+    "_count": 669,
     "posts": {
         "/": {
             "type": "page",
@@ -18945,6 +18945,49 @@
                 "_roden_sol_sc": "S.C. Code § 15-3-530"
             }
         },
+        "/motorcycle-accident-lawyers/charleston-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Charleston Motorcycle Accident Lawyers",
+            "excerpt": "Hurt in a Charleston motorcycle accident? Roden Law's King Street lawyers handle South Carolina motorcycle accident claims. Free consultation, no fee unless we win.",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "How much does a Charleston motorcycle accident lawyer cost?",
+                        "answer": "Nothing up front. Roden Law handles motorcycle accident cases on a contingency fee. The consultation is free, and there is no fee unless we win your case."
+                    },
+                    {
+                        "question": "How long do I have to file a motorcycle accident lawsuit in South Carolina?",
+                        "answer": "Three years from the date of the crash under S.C. Code § 15-3-530. If a government entity is responsible, the deadline is two years under S.C. Code § 15-78-110, or three years if a verified claim was filed with the agency within one year."
+                    },
+                    {
+                        "question": "Can I still recover if I was not wearing a helmet?",
+                        "answer": "Yes, you can still bring a claim. South Carolina requires a helmet only for operators and passengers under 21 (S.C. Code § 56-5-3660), so a rider 21 or older without one broke no law. An insurer may still raise it, which is one reason to preserve the evidence of how the crash happened."
+                    },
+                    {
+                        "question": "Can I still recover if I was partly at fault?",
+                        "answer": "Yes, if you were 50% or less at fault. South Carolina's modified comparative negligence rule (Nelson v. Concrete Supply Co.) reduces your award by your share of fault and bars recovery only above 50%."
+                    },
+                    {
+                        "question": "Is lane splitting legal in South Carolina?",
+                        "answer": "No. S.C. Code § 56-5-3640 prohibits riding between lanes of traffic or rows of vehicles. The same section entitles every motorcycle to the full use of a lane (except when motorcycles ride two abreast in it), and a driver who crowds a rider out of the lane violates it."
+                    },
+                    {
+                        "question": "What if the driver who hit me was uninsured or underinsured?",
+                        "answer": "Your own coverage may pay. Every South Carolina auto policy must include uninsured motorist coverage (S.C. Code § 38-77-150), and insurers must offer underinsured motorist coverage (S.C. Code § 38-77-160)."
+                    }
+                ],
+                "_roden_jurisdiction": "south-carolina",
+                "_roden_key_takeaways": "If you were injured in a motorcycle accident in Charleston, South Carolina law gives you three years from the date of the crash to file a lawsuit (S.C. Code § 15-3-530), or generally two years if the vehicle that hit you belonged to a government entity such as the City of Charleston or SCDOT (S.C. Code § 15-78-110). South Carolina uses modified comparative negligence: you can recover if you are 50% or less at fault, with your award reduced by your share (Nelson v. Concrete Supply Co.). Riders 21 and older are not required to wear a helmet (S.C. Code § 56-5-3660), and every motorcycle is entitled to the full use of its lane (S.C. Code § 56-5-3640). Roden Law's Charleston office at 127 King Street handles motorcycle accident cases on contingency: the consultation is free and there is no fee unless we win.",
+                "_roden_last_reviewed": "2026-09-28",
+                "_roden_meta_description": "Hurt in a Charleston motorcycle accident? Roden Law's King Street lawyers handle South Carolina motorcycle claims. Free consultation, no fee unless we win. (843) 790-8999.",
+                "_roden_meta_title": "Charleston Motorcycle Accident Lawyer | Roden Law",
+                "_roden_pa_office_key": "charleston",
+                "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)",
+                "_roden_translation_es": "/es/motorcycle-accident-lawyers/charleston-sc/"
+            }
+        },
         "/motorcycle-accident-lawyers/hit-and-run-motorcycle-accident/": {
             "type": "practice_area",
             "status": "publish",
@@ -20843,8 +20886,8 @@
                 ],
                 "_roden_jurisdiction": "both",
                 "_roden_meta_description": "Injured in a motorcycle crash? Roden Law's motorcycle accident, crash, and wreck lawyers fight insurer bias and recover maximum compensation across Georgia and South Carolina. Free case review — no fee unless we win.",
-                "_roden_pillar_compensation_intro": "Damages in motorcycle cases skew catastrophic — traumatic brain injury, road rash, orthopedic trauma, and limb loss are common — so noneconomic damages and future-care life-care plans carry the case. Both {state_full} and neighboring states allow **UM/UIM stacking**, which becomes critical because at-fault drivers in motorcycle cases are frequently underinsured relative to injury severity. Motorcycle-specific damages can also include the value of the bike, riding gear, and aftermarket modifications. Recovery in {market_name} cases often requires layering the at-fault policy, the rider's UM/UIM, and any household resident-relative coverage.",
-                "_roden_pillar_negligence_intro": "Motorcycle cases follow the same four-element negligence framework as auto cases, but defenses are heavily flavored by jury bias against riders. {{GA}}Georgia requires **universal helmet use** under O.C.G.A. § 40-6-315. {{/GA}}{{SC}}South Carolina requires helmets only for riders under 21 under S.C. Code § 56-5-3660. {{/SC}}Whether a non-helmeted rider's injuries can be reduced under comparative-fault analysis is hotly litigated — most courts disallow the so-called \"helmet defense\" as to the *cause* of the crash, but injury-enhancement arguments persist. Lane-splitting is illegal in both states. {state_full}'s {comp_fault_threshold} comparative-fault bar applies, with {sol_years} years to file under {sol_cite}.",
+                "_roden_pillar_compensation_intro": "Injuries in motorcycle crashes are often severe — traumatic brain injury, road rash, fractures, and limb loss — so pain and suffering and the cost of future care often carry the case. An at-fault driver's policy may not cover injuries this serious, which makes your own coverage matter.{{SC}} Every South Carolina auto policy must include uninsured motorist coverage (S.C. Code § 38-77-150), and insurers must offer underinsured motorist coverage (S.C. Code § 38-77-160).{{/SC}} Motorcycle-specific damages can also include the value of the bike, riding gear, and aftermarket modifications.",
+                "_roden_pillar_negligence_intro": "Motorcycle cases follow the same negligence rules as car cases, but riders often have to overcome an insurer's assumption that the rider was to blame. {{GA}}Georgia requires **universal helmet use** under O.C.G.A. § 40-6-315. {{/GA}}{{SC}}South Carolina requires helmets only for riders under 21 under S.C. Code § 56-5-3660. {{/SC}}{state_full}'s {comp_fault_threshold} comparative-fault bar applies, with {sol_years} years to file under {sol_cite}.",
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33",
                 "_roden_sol_sc": "S.C. Code § 15-3-530",
                 "_roden_translation_es": "/es/practice-areas/motorcycle-accident-lawyers/",
