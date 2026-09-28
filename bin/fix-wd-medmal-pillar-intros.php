@@ -29,6 +29,9 @@
  * - "Survival claims … recover pre-death pain, suffering, and funeral and medical
  *   expenses" under § 15-5-90: the section lists no damages; now what it says.
  *
+ * Pass 2 (same day, med mal sweep W1): the cap exceptions now list all four
+ * that SC 15-32-220 holds (the pass-1 text is accepted as 'prior').
+ *
  * Georgia branches are left as they were (for the GA reviewer), except that
  * two-state sentences outside the branches are made state-neutral.
  *
@@ -46,7 +49,8 @@ $fix = array(
 		),
 		'_roden_pillar_compensation_intro' => array(
 			'old' => "{{GA}}**Georgia has no statutory cap on noneconomic damages** in medical malpractice cases since *Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt*, 286 Ga. 731 (2010), which struck down O.C.G.A. § 51-13-1 as a violation of the right to jury trial. {{/GA}}{{SC}}**South Carolina caps noneconomic damages at $350,000 per defendant / $1.05 million aggregate** under S.C. Code § 15-32-220, adjusted annually for inflation. {{/SC}}Economic damages — past and future medicals, lost wages, lost earning capacity, attendant care — are uncapped in both states. Punitive damages are available for gross negligence with separate statutory caps.",
-			'new' => "{{GA}}**Georgia has no statutory cap on noneconomic damages** in medical malpractice cases since *Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt*, 286 Ga. 731 (2010), which struck down O.C.G.A. § 51-13-1 as a violation of the right to jury trial. {{/GA}}{{SC}}**South Carolina caps noneconomic damages** in medical malpractice cases. The caps are adjusted each year; for 2026 they are $596,001 per health care provider or institution and $1,788,002 in total per claimant, and they do not apply in cases of gross negligence or reckless conduct (S.C. Code § 15-32-220). Economic damages — past and future medical costs, lost wages, lost earning capacity, attendant care — are not limited by the cap. Punitive damages must be proved by clear and convincing evidence (S.C. Code § 15-33-135).{{/SC}}",
+			'new' => "{{GA}}**Georgia has no statutory cap on noneconomic damages** in medical malpractice cases since *Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt*, 286 Ga. 731 (2010), which struck down O.C.G.A. § 51-13-1 as a violation of the right to jury trial. {{/GA}}{{SC}}**South Carolina caps noneconomic damages** in medical malpractice cases. The caps are adjusted each year; for 2026 they are $596,001 per health care provider or institution and $1,788,002 in total per claimant, and they do not apply to grossly negligent, wilful, wanton or reckless conduct that caused the harm, to fraud or misrepresentation related to the claim, or to medical records altered or destroyed to avoid the claim (S.C. Code § 15-32-220). Economic damages — past and future medical costs, lost wages, lost earning capacity, attendant care — are not limited by the cap. Punitive damages must be proved by clear and convincing evidence (S.C. Code § 15-33-135).{{/SC}}",
+			'prior' => array( "{{GA}}**Georgia has no statutory cap on noneconomic damages** in medical malpractice cases since *Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt*, 286 Ga. 731 (2010), which struck down O.C.G.A. § 51-13-1 as a violation of the right to jury trial. {{/GA}}{{SC}}**South Carolina caps noneconomic damages** in medical malpractice cases. The caps are adjusted each year; for 2026 they are $596,001 per health care provider or institution and $1,788,002 in total per claimant, and they do not apply in cases of gross negligence or reckless conduct (S.C. Code § 15-32-220). Economic damages — past and future medical costs, lost wages, lost earning capacity, attendant care — are not limited by the cap. Punitive damages must be proved by clear and convincing evidence (S.C. Code § 15-33-135).{{/SC}}" ),
 		),
 	),
 	3609 => array(
@@ -67,7 +71,7 @@ foreach ( $fix as $id => $fields ) {
 		$cur = (string) get_post_meta( $id, $k, true );
 		$backup['before'][ $id ][ $k ] = $cur;
 		if ( $cur === $f['new'] ) { fprintf( $err, "  %d %s already corrected\n", $id, $k ); continue; }
-		if ( $cur !== $f['old'] ) { fprintf( $err, "ABORT: %d %s is not the text read on 2026-09-28.\n", $id, $k ); exit( 1 ); }
+		if ( $cur !== $f['old'] && ! in_array( $cur, $f['prior'] ?? array(), true ) ) { fprintf( $err, "ABORT: %d %s is not the text read on 2026-09-28.\n", $id, $k ); exit( 1 ); }
 		fprintf( $err, "  %d %s: would replace (%d -> %d chars)\n", $id, $k, strlen( $cur ), strlen( $f['new'] ) );
 	}
 }
