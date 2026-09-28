@@ -1737,6 +1737,53 @@ corrections.
   - new `sctca-cap-multiple-entities`;
   - new `sctca-caps-cited-to-15-78-80`.
 
+**Follow-up the same day.** Owner: "let's fix these last 4 items before moving on".
+
+The follow-up legal sweep of both scripts FAILED on three items, R1–R3; all were fixed before
+apply. Its verdict is appended to the Columbia remediation file.
+
+- **Columbia resources** (`bin/fix-columbia-resources-claims.php`: 25 edits, 7 posts).
+  Backup: `docs/backups/columbia-resources-claims-2026-09-28.json`.
+  - **Damage caps:** the four liability tables and Crossroads now cite §§ 15-78-110 and
+    15-78-120 for the caps (previously § 15-78-80).
+  - **Crossroads cost:** $2.08B → **$2.69B**, the project homepage's figure; its /about page is
+    stale. Also on the homepage: 14 miles, 134,000+ vehicles a day, mid-2030s.
+  - Cut "busiest interchange system in South Carolina".
+  - The corridor is no longer called Malfunction Junction; that is the I-20/I-26 interchange
+    inside it.
+  - **4655:** the I-20/I-77 interchange is northeast of downtown, not "south of Columbia"
+    (R1, 5 places).
+  - The "I-26/I-20/I-77 interchange" anchors were reworded.
+  - **3518 (punitive damages):** "extreme negligence or recklessness" now reads "only in rare
+    cases, proved by clear and convincing evidence (§ 15-33-135)". The conduct standard has no
+    pack authority, so it is left out.
+- **4656 rewritten in place** (`bin/rewrite-columbia-interchange-resource.php`). Same URL: 5,852
+  impressions at position 7 on "i-26 and i-77 interchange columbia".
+  - Now: three separate interchanges. I-77 begins at I-26 Exit 116 in Cayce; I-20/I-26
+    (Malfunction Junction) is west of downtown; I-20/I-77 is northeast.
+  - The false I-26 → I-20 → I-77 "weaving" route is gone.
+  - "Joint and several … full amount" became: a defendant under 50% "generally" pays only its
+    share (§ 15-38-15, R2). Nelson governs your own share of fault.
+  - Cut: the unsourced 584-deaths figure, "only city", "most dangerous" and "legally
+    requires".
+  - Backup: `docs/backups/columbia-interchange-resource-2026-09-28.json`.
+- **#187 (template):** the resources box on office pages drops resources whose slug names
+  another office's market. It is titled "Local" only when something local remains; otherwise it
+  reads "{State} {practice} Resources". Spanish msgid added; .mo recompiled (625). Verified on 6
+  office pages.
+- **Columbia directions:** nothing left to verify. #185 cut them to the checked routes (SC 277 /
+  Bull St, I-126), with no final turns.
+- Fresh sweep: 0 findings. JSON-LD guard PASS. meta.json regenerated.
+
+**For Gillin:**
+- `SC 15-38-15` was verified 2026-09-08, but the section was amended 2026-01-01.
+  - Proposed pack amendment: the (F) exception for wilful, reckless or drug-involved conduct;
+    non-party fault under (G)–(H); and (C)(a), which treats a carrier and its driver as one
+    party.
+  - Pages can state the exception only after he signs.
+- Still open from L5: Broad River's "Most Dangerous Truck Corridors" heading and the conflicting
+  Richland crash figures.
+
 ### Law pack: #62 superseded by #67, rebuilt on the signed SC pack — 2026-09-26
 
 **Owner, 2026-09-26:** "what do we need to do with #62? Those are signed", then "yes".

@@ -285,3 +285,100 @@ After any pack change: `node scripts/facts/vendor.mjs rodenlaw --write` if the c
    - L2–L6 go to a Columbia resources batch.
    - The Georgia-side sentences on the government-vehicle page and the Columbia intersections blog go to the Georgia reviewer.
    - The punitive-standard wording in L6 (Columbia guide blog) goes to Gillin's packet.
+
+---
+
+## Follow-up fixes (2026-09-28)
+
+**Scripts swept (not applied, read-only review):**
+- `bin/rewrite-columbia-interchange-resource.php`: post 4656, a full rewrite (L4).
+- `bin/fix-columbia-resources-claims.php`: 17 exact-match edits on 4687, 4680, 4679, 4678, 4654, 4655 and 3518 (L2, L3, and the L6 punitive line).
+
+**Method:**
+- The new text was extracted from the PHP: the 4656 title, body blocks, excerpt, key takeaways and 5 FAQs, plus all 17 `to` strings.
+- Replayed through `sweep-claims.mjs --fixtures scratchpad/followup-fixture.json --states SC,GA` with a § 15-38-15 positive control: 64/64, **0 findings**.
+- Each replacement was then read in its surrounding paragraph from `data/content-cache/wp-export.json` (exported 2026-09-28 16:21 UTC).
+- § 15-38-15 was re-read at scstatehouse.gov/code/t15c038.php. The Carolina Crossroads figures were re-read on scdotcarolinacrossroads.com.
+
+**Verdict: FAIL, and it clears with the three required changes below.**
+- Every SCTCA, Nelson, SOL and punitive sentence is correct against the signed pack.
+- The fix script leaves 4655's own "south of Columbia" geography in place around the reworded anchor, and that geography contradicts the 4656 rewrite it links to (R1).
+- The 4656 § 15-38-15 sentence is stated without "generally" (R2).
+- One routing sentence in 4656 is overbroad (R3).
+
+### Required
+
+**R1. Post 4655 (`/resources/i-77-truck-accidents-columbia-rock-hill/`): the I-20/I-77 interchange is not south of Columbia.**
+- The script rewords the anchor sentence but leaves the sentences around it.
+- I-77 leaves I-26 in Cayce, heads east along the western edge of Fort Jackson, and meets I-20 at Woodfield, **northeast** of downtown (Wikipedia *Interstate 77 in South Carolina*; I-20 Exit 76).
+- The rewritten 4656 says "east of downtown", so as scripted 4655 contradicts the page it links to. Add these five edits to the script (content, each found exactly once in the export):
+  1. `is adjacent to I-77 south of Columbia, generating` → `is adjacent to I-77 on the east side of Columbia, generating`
+  2. `<li>The I-77/I-20 interchange south of Columbia is one of the <strong>most congested truck junctions</strong> in the Midlands</li>` → `<li>The I-77/I-20 interchange northeast of downtown Columbia carries truck traffic between Charlotte and I-20</li>`. This also drops an unsourced superlative.
+  3. `<h3>I-77/I-20 Interchange (South Columbia)</h3>` → `<h3>I-77/I-20 Interchange (Northeast Columbia)</h3>`
+  4. `The interchange where I-77 meets I-20 south of Columbia is a critical convergence point` → `The interchange where I-77 meets I-20 northeast of downtown Columbia is a critical convergence point`
+  5. `from the I-20 interchange south of Columbia to Rock Hill` → `from the I-20 interchange northeast of downtown Columbia to Rock Hill`
+- 4655's excerpt, key takeaways and FAQs carry no "south" claim.
+
+**R2. Post 4656: § 15-38-15 needs "generally".**
+- The current statute (the version effective 2026-01-01) keeps several-only liability for a defendant under 50% of total fault. Subsection (F) excludes a defendant whose conduct is "wilful, wanton, reckless, or intentional" or involves illegal drugs, and such a defendant "shall be jointly and severally liable". Under (C)(a), a carrier vicariously liable for its driver is treated as a single party with the driver.
+- The signed claim ("a defendant less than 50% at fault is only severally liable") backs the general rule, not a flat one.
+- Body: `a defendant found less than 50% at fault pays only its own share of the damages (S.C. Code § 15-38-15), which is one reason` → `a defendant found less than 50% at fault generally pays only its own share of the damages (S.C. Code § 15-38-15), which is one reason`
+- FAQ 3: `a defendant found less than 50% at fault pays only its own share of the damages, so identifying` → `a defendant found less than 50% at fault generally pays only its own share of the damages, so identifying`
+- Naming the reckless/intentional exception on the page needs the pack amendment below, signed first.
+- The Nelson bullet is in its own sentence and cites Nelson, not § 15-38-15. The engine's `nelson-bar-miscited-to-15-38-15` did not fire, and the control did.
+
+**R3. Post 4656 body: not every Charleston truck takes I-77.**
+- `A truck coming from Charleston on I-26 takes this interchange straight onto I-77.` → `A truck coming from Charleston on I-26 and bound for Charlotte takes this interchange straight onto I-77.`
+
+### Recommended (not blocking)
+
+- **4656 compass points.** I-20/I-77 is northeast of downtown and I-20/I-26 is northwest; "east" and "west" are loose, not false.
+  - Body `<strong>I-20 and I-77, east of downtown.</strong>` → `<strong>I-20 and I-77, northeast of downtown.</strong>`
+  - Key takeaways `<strong>I-20 and I-77</strong> east of downtown` → `<strong>I-20 and I-77</strong> northeast of downtown`
+  - FAQ 0 `and meets I-77 east of downtown.` → `and meets I-77 northeast of downtown.`
+  - Body and FAQ 0 `runs north toward Rock Hill and Charlotte` → `curves east around Columbia and then runs north toward Rock Hill and Charlotte` (I-77 "heads east" from Cayce before turning north).
+- **4687: the 14-mile corridor is not Malfunction Junction.** Malfunction Junction is the I-20/I-26 interchange inside the corridor.
+  - Body `in Columbia &mdash; the interchange complex long known as <strong>&ldquo;Malfunction Junction.&rdquo;</strong>` → `in Columbia, which includes the I-20/I-26 interchange long known as <strong>&ldquo;Malfunction Junction.&rdquo;</strong>`
+  - Key takeaways `in Columbia &mdash; known as <strong>&ldquo;Malfunction Junction&rdquo;</strong> &mdash; carrying` → `in Columbia, including the I-20/I-26 interchange known as <strong>&ldquo;Malfunction Junction&rdquo;</strong>, and carrying`
+  - FAQ 0 `corridor in Columbia, long known as Malfunction Junction.` → `corridor in Columbia, including the I-20/I-26 interchange long known as Malfunction Junction.`
+  - These can go in the same run as the `$2.08` → `$2.69` edits. Order them so that each `from` string still matches.
+
+### Confirmed
+
+- **Carolina Crossroads.** The project homepage (scdotcarolinacrossroads.com, read 2026-09-28) gives:
+  - "2.69 billion dollar investment" and "reconfiguring 14 miles of the I-20/I-26/I-126 corridor";
+  - "More than 134,000 vehicles travel through the I-20/I-26/I-126 corridor on a daily basis";
+  - "began in November 2021 and is expected to be substantially complete in the mid-2030s".
+  - Its `/about` page still shows the old "$2.08 billion" and "9 Years of Construction". Cite the homepage, not `/about`.
+- **Interchanges and exits.**
+  - I-77 begins at I-26 in Cayce (Wikipedia *Interstate 77 in SC*).
+  - I-20 meets I-77 at I-20 Exit 76.
+  - Malfunction Junction is I-20/I-26 (Exit 107). I-126 leaves I-26 at Exit 108 and runs downtown.
+- **4656 legal section** (apart from R2):
+  - SOL § 15-3-530; Nelson 50% or less;
+  - SCTCA two years, or three with an optional verified claim filed within one year, and $300,000 / $600,000 (§§ 15-78-110, 15-78-80, 15-78-120);
+  - punitive damages only with clear and convincing proof (§ 15-33-135);
+  - no conduct standard stated, which is correct given the pack.
+  - The FMCSA and broker lines are hedged ("where the facts support it").
+- **Fix script (L2, L3, L6).**
+  - The four table cites now read "§§ 15-78-110, 15-78-120".
+  - The 4687 SCTCA paragraph and FAQ 4 now state the deadline and the caps with the right sections, and the surrounding sentences read correctly ("…subject to the SC Tort Claims Act. Suit must be filed…").
+  - Cutting "busiest interchange system" leaves "More than 134,000 vehicles daily pass through this corridor." intact.
+  - The 4654 replacement reads correctly after "…not originally designed for current traffic volumes."
+  - The 3518 table cell ("Awarded only in rare cases, and must be proved by clear and convincing evidence (S.C. Code § 15-33-135).") matches `SC 15-33-135`, and its "Examples" cell (drunk driving, street racing) still fits.
+  - After both scripts, no "I-26/I-20/I-77" wording remains in the export apart from 4656's slug.
+- **Mechanics.**
+  - Replacements use `str_replace`, `substr_count` guards and single-quoted or nowdoc literals. The `$` in `$2.69` and `$300,000` is literal and safe in this form. Do not convert to `preg_replace` or double-quoted strings.
+  - Meta is written with `wp_slash`, and columns with `$wpdb->update`, which does no unslash.
+  - None of the 8 posts has `_roden_last_reviewed` set, so no stale review stamp certifies the new copy.
+
+### Pack change (proposed; not made)
+
+- Amend the `SC 15-38-15` claim for the version effective 2026-01-01, with `verifiedBy: null`, for Gillin's packet:
+  - (F): several-only liability does not apply to a defendant whose conduct is wilful, wanton, reckless or intentional, or involves illegal drugs. Such a defendant is jointly and severally liable. The pre-2026 alcohol and gross-negligence exceptions were dropped.
+  - (G)–(H): fault may be allocated to a disclosed nondefendant tortfeasor.
+  - (C)(a): vicariously liable defendants are treated as a single party.
+  - Evidence: scstatehouse.gov/code/t15c038.php, read 2026-09-28.
+- The pack entry was verified 2026-09-08 against a section that has since changed. Its general claim is still true, but any page that states the exception needs the amended entry signed first.
+
+After R1–R3: re-run both dry runs (the new 4655 `from` strings must each match exactly once), re-run `scratchpad/followup-fixture.json`, apply, then run `bin/check-unslashed-post-writes.php` and regenerate `content/meta.json`.
