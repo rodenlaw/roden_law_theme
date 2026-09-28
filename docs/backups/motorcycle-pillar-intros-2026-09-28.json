@@ -1,0 +1,9 @@
+{
+    "generated": "2026-09-28T15:36:58+00:00",
+    "post": 3607,
+    "mode": "apply",
+    "before": {
+        "_roden_pillar_negligence_intro": "Motorcycle cases follow the same four-element negligence framework as auto cases, but defenses are heavily flavored by jury bias against riders. {{GA}}Georgia requires **universal helmet use** under O.C.G.A. § 40-6-315. {{/GA}}{{SC}}South Carolina requires helmets only for riders under 21 under S.C. Code § 56-5-3660. {{/SC}}Whether a non-helmeted rider's injuries can be reduced under comparative-fault analysis is hotly litigated — most courts disallow the so-called \"helmet defense\" as to the *cause* of the crash, but injury-enhancement arguments persist. Lane-splitting is illegal in both states. {state_full}'s {comp_fault_threshold} comparative-fault bar applies, with {sol_years} years to file under {sol_cite}.",
+        "_roden_pillar_compensation_intro": "Damages in motorcycle cases skew catastrophic — traumatic brain injury, road rash, orthopedic trauma, and limb loss are common — so noneconomic damages and future-care life-care plans carry the case. Both {state_full} and neighboring states allow **UM/UIM stacking**, which becomes critical because at-fault drivers in motorcycle cases are frequently underinsured relative to injury severity. Motorcycle-specific damages can also include the value of the bike, riding gear, and aftermarket modifications. Recovery in {market_name} cases often requires layering the at-fault policy, the rider's UM/UIM, and any household resident-relative coverage."
+    }
+}
