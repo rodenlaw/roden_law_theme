@@ -18,7 +18,7 @@
 $apply = isset( $args[0] ) && 'apply' === $args[0];
 $err   = fopen( 'php://stderr', 'w' );
 $id    = 3625;
-$reviewed = ''; // set only when the owner confirms Gillin's review
+$reviewed = '2026-09-28'; // owner: "those have been reviewed. publish them" (2026-09-28), Gillin's review incl. the Columbia essay (#185)
 global $wpdb;
 
 if ( ! function_exists( 'roden_office_practice_allowlist' ) || ! in_array( 'car-accident-lawyers/columbia-sc', roden_office_practice_allowlist(), true ) ) {

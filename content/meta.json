@@ -7,7 +7,7 @@
         "post",
         "page"
     ],
-    "_count": 669,
+    "_count": 670,
     "posts": {
         "/": {
             "type": "page",
@@ -13000,6 +13000,49 @@
                 "_roden_translation_es": "/es/car-accident-lawyers/charleston-sc/"
             }
         },
+        "/car-accident-lawyers/columbia-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Columbia Car Accident Lawyers",
+            "excerpt": "Hurt in a Columbia car accident? Roden Law's Sumter Street lawyers handle South Carolina car accident claims. Free consultation, no fee unless we win.",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "How much does a Columbia car accident lawyer cost?",
+                        "answer": "Nothing up front. Roden Law handles car accident cases on a contingency fee. The consultation is free, and there is no fee unless we win your case."
+                    },
+                    {
+                        "question": "How long do I have to file a car accident lawsuit in South Carolina?",
+                        "answer": "Three years from the date of the crash under S.C. Code § 15-3-530. If a government entity is responsible, the deadline is two years under S.C. Code § 15-78-110, or three years if a verified claim was filed with the agency within one year."
+                    },
+                    {
+                        "question": "Can I still recover if I was partly at fault?",
+                        "answer": "Yes, if you were 50% or less at fault. South Carolina's modified comparative negligence rule (Nelson v. Concrete Supply Co.) reduces your award by your share of fault and bars recovery only above 50%."
+                    },
+                    {
+                        "question": "What if the driver who hit me was uninsured or drove off?",
+                        "answer": "Your own uninsured motorist coverage, which every South Carolina auto policy must include (S.C. Code § 38-77-150), can pay. For a hit-and-run by an unknown driver, report the crash to police promptly: the claim requires a police report and corroboration that the other vehicle existed (S.C. Code § 38-77-170)."
+                    },
+                    {
+                        "question": "Where would my Columbia car accident case be filed?",
+                        "answer": "Most Richland County car accident lawsuits are filed in the Court of Common Pleas at the Richland County Judicial Center, 1701 Main Street, near our Sumter Street office. A crash in Lexington County, such as in West Columbia, Cayce or Lexington, may be filed there instead."
+                    },
+                    {
+                        "question": "Do I need a lawyer if the other insurer already made an offer?",
+                        "answer": "Talk to a lawyer before you accept. A settlement ends your claim, and early offers are often made before the full cost of your injuries is known. A free review costs you nothing."
+                    }
+                ],
+                "_roden_jurisdiction": "south-carolina",
+                "_roden_key_takeaways": "If you were injured in a car accident in Columbia, South Carolina law gives you three years from the date of the crash to file a lawsuit (S.C. Code § 15-3-530), or generally two years if the at-fault party is a government entity such as the City of Columbia, Richland County or SCDOT (S.C. Code § 15-78-110). South Carolina uses modified comparative negligence: you can recover if you are 50% or less at fault, with your award reduced by your share (Nelson v. Concrete Supply Co.). Every South Carolina auto policy must include uninsured motorist coverage (S.C. Code § 38-77-150). Roden Law's Columbia office at 1545 Sumter Street handles car accident cases on contingency: the consultation is free and there is no fee unless we win.",
+                "_roden_last_reviewed": "2026-09-28",
+                "_roden_meta_description": "Hurt in a Columbia car accident? Roden Law's Sumter Street lawyers handle South Carolina car accident claims. Free consultation, no fee unless we win. (803) 219-2816.",
+                "_roden_meta_title": "Columbia Car Accident Lawyer | Roden Law",
+                "_roden_pa_office_key": "columbia",
+                "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)",
+                "_roden_translation_es": "/es/car-accident-lawyers/columbia-sc/"
+            }
+        },
         "/car-accident-lawyers/commercial-vehicle-accident/": {
             "type": "practice_area",
             "status": "publish",
@@ -13080,13 +13123,13 @@
             "type": "practice_area",
             "status": "publish",
             "title": "Government Vehicle Accident Lawyers",
-            "excerpt": "Injured in an accident caused by a government vehicle in Georgia or South Carolina? Our lawyers navigate sovereign immunity rules and strict notice deadlines to pursue your claim.",
+            "excerpt": "Injured in an accident caused by a government vehicle in Georgia or South Carolina? Our lawyers handle the sovereign immunity rules, filing deadlines and, where they apply, notice requirements for your claim.",
             "meta": {
                 "_roden_author_attorney": "Eric Roden",
                 "_roden_faqs": [
                     {
                         "question": "Can I sue the government if a government vehicle hit me?",
-                        "answer": "Yes, in most cases. Georgia's Tort Claims Act and South Carolina's Tort Claims Act waive sovereign immunity for negligent vehicle operation by government employees. Federal vehicle claims proceed under the Federal Tort Claims Act. Strict notice and filing requirements apply."
+                        "answer": "Yes, in most cases. Georgia's Tort Claims Act and South Carolina's Tort Claims Act waive sovereign immunity for negligent vehicle operation by government employees. Federal vehicle claims proceed under the Federal Tort Claims Act. Georgia and federal claims have strict notice and filing requirements; South Carolina has a shorter filing deadline but no notice requirement."
                     },
                     {
                         "question": "What is the ante litem notice requirement in Georgia?",
@@ -13106,7 +13149,7 @@
                     },
                     {
                         "question": "How long do I have to file a government vehicle accident claim?",
-                        "answer": "Deadlines vary by entity: Georgia municipal claims require ante litem notice within 6 months; state claims must be filed within 12 months with DOAS; federal claims must be filed within 2 years under the FTCA. The standard personal injury statute of limitations also applies."
+                        "answer": "Deadlines vary by entity: Georgia municipal claims require ante litem notice within 6 months; state claims must be filed within 12 months with DOAS; federal claims must be filed within 2 years under the FTCA. In South Carolina, suit must be filed within two years, or three years if a verified claim is filed with the agency within one year (S.C. Code §§ 15-78-110, 15-78-80)."
                     },
                     {
                         "question": "What if a military vehicle caused my accident?",

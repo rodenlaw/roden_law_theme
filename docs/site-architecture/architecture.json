@@ -68,9 +68,14 @@
         "total": 1
       },
       {
-        "step": "Wave 1: the remaining 4 office practice pages",
-        "geo": 4,
-        "total": 4
+        "step": "Columbia car accident page live (wave 1, #8 of 11) — 2026-09-28",
+        "geo": 1,
+        "total": 1
+      },
+      {
+        "step": "Wave 1: the remaining 3 office practice pages",
+        "geo": 3,
+        "total": 3
       },
       {
         "step": "Georgia statewide practice pages (6, mirror of the SC set; state names are not geo)",
@@ -417,14 +422,16 @@
                     "id": "col-car",
                     "label": "Columbia car accident",
                     "url": "/car-accident-lawyers/columbia-sc/",
-                    "kind": "restore",
+                    "kind": "keep",
                     "wave": 1,
                     "geo": true,
                     "evidence": {
                       "impr16": 51334,
                       "pos90": 21.5,
                       "semrushVol": 2900
-                    }
+                    },
+                    "live": "2026-09-28",
+                    "note": "LIVE 2026-09-28 (#186). Office practice page #8; Columbia essay corrected and map added in #185; Gillin reviewed."
                   },
                   {
                     "id": "col-truck",

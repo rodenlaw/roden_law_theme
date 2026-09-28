@@ -1677,6 +1677,66 @@ Backup: `docs/backups/helmet-lane-faqs-2026-09-28.json`.
   "not an automatic bar". That is uncited helmet-defense law, the class removed from the pillar.
 - 4073 FAQ 2 says "some states have legalized lane filtering", an other-states claim.
 
+### Columbia car page live — wave 1, office practice page #8; government-vehicle SCTCA fixed — 2026-09-28
+
+**Owner, 2026-09-28:** "then move to the next page", then "those have been reviewed. publish
+them". That covers Gillin's review of the page, the Columbia essay and the government-vehicle
+corrections.
+
+- **#185** — the Columbia office essay, English and Spanish. It renders on Columbia office
+  practice pages; the hub shows only the directions. Removed:
+  - the Tyler Odyssey / 365-day Rule 40 / "mandatory" mediation procedure;
+  - "disproportionately from one place";
+  - "$2.08B", "largest in agency history" and "through 2029" (SCDOT now says 2034);
+  - I-77 as part of Malfunction Junction (it is I-20/I-26);
+  - "only Level I";
+  - the stacking claim.
+
+  Also:
+  - Directions rewritten. There is no I-277 in Columbia; SC 277 becomes Bull Street.
+  - Map embed added: place ChIJQZdkRQCl-IgRVi202Pu6b1I, verified to resolve to 1545 Sumter St
+    Suite B.
+  - Allowlist entry.
+- **Content** (`bin/rebuild-columbia-car-accident.php`, post 3625): SC only, Gillin byline. It
+  reuses the Charleston car page's reviewed SC rules wording and does not link the stacking
+  resource.
+- **Legal sweep: PASS** (`data/facts/remediation-2026-09-28-columbia-car.md`). Fixed on the
+  draft:
+  - W1: Lexington County venue line.
+  - W3: truck link to the pillar.
+  - W2 (the template resources box shows a Myrtle Beach card) is open.
+- **L1 fixed live** (`bin/fix-government-vehicle-sctca.php`, post 4059). Backup:
+  `docs/backups/government-vehicle-sctca-2026-09-28.json`.
+  - "Claims must be filed … 180 days to investigate" → the claim is optional
+    (§§ 15-78-80, 15-78-110).
+  - "$1.2 million per occurrence for multiple entities" → $300,000 / $600,000 however many
+    entities (§ 15-78-120); the $1.2M limits apply only to government physicians and dentists.
+  - Added the SC two-year deadline to "Critical Deadlines" and FAQ 5, and dropped FAQ 5's "the
+    standard statute of limitations also applies".
+  - Excerpt and FAQ 0 no longer claim SC notice requirements.
+  - Georgia and federal sentences unchanged.
+- **Publish:** behind the redirect first, then **#186** removed it.
+- **Verified live:**
+  - The page returns 200 with a self canonical, the map and 7 JSON-LD blocks. The nested and
+    legacy URLs each 301 to it in one hop; the Spanish URL keeps its redirect.
+  - 3 anchors restored in 2 posts (1714, 3553). Four source posts are retired, and 1740 no
+    longer mentions Columbia.
+  - Fresh sweep: 0 findings. JSON-LD guard PASS. meta.json regenerated.
+  - **Doorway 163 / 677 = 24.08% PASS.**
+
+**Open (sweep L2–L6, not blocking):**
+- Four Columbia resources cite § 15-78-80 for the caps (should be § 15-78-120).
+- The Carolina Crossroads and I-20 resources still carry "$2.08B" and "I-26/I-20/I-77".
+- `/resources/columbia-i-26-i-20-i-77-interchange-truck-accidents/`: wrong title and
+  superlatives.
+- Richland 2023 crash figures conflict across pages.
+- US-1 / Augusta Road is in Lexington County.
+- The Columbia guide says "extreme negligence" as the punitive standard; this needs Gillin.
+- Proposed sweep rules:
+  - extend `sctca-mandatory-notice`;
+  - new `sctca-cap-multiple-entities`;
+  - new `sctca-caps-cited-to-15-78-80`.
+
 ### Law pack: #62 superseded by #67, rebuilt on the signed SC pack — 2026-09-26
 
 **Owner, 2026-09-26:** "what do we need to do with #62? Those are signed", then "yes".
