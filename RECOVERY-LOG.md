@@ -1831,6 +1831,20 @@ review).
   entity"; the commercial-vehicle and bus FAQs carry notice wording.
 - **L9:** the statewide car page's stacking line.
 
+**Follow-up the same day.** Owner: "fix those FAQs and then do the last wave 1 pages".
+
+`bin/fix-hit-and-run-and-sctca-faqs.php` made 7 edits across 4 posts. Backup:
+`docs/backups/hit-and-run-sctca-faqs-2026-09-28.json`.
+- **4645 (L1):** leaving the scene of an injury crash is a misdemeanor; great bodily injury is a
+  felony carrying up to 10 years, and a death a felony carrying up to 25 (§ 56-5-1210). UM is
+  required (§ 38-77-150) and UIM offered (§ 38-77-160), in the body and the key takeaways. The
+  unsourced crime-rate and uninsured-rate figures are still there.
+- **4059 FAQ 2:** the caps apply "however many government entities are involved"
+  (§ 15-78-120). The body intro's "notice" is scoped to Georgia and federal claims.
+- **4054 FAQ 4 / 4061 FAQ 5:** South Carolina requires no notice; the SCTCA two-year deadline
+  applies (three years with a verified claim). Georgia wording is unchanged.
+- Verified live. Fresh sweep: 0 findings. JSON-LD guard PASS. meta.json regenerated.
+
 ### Law pack: #62 superseded by #67, rebuilt on the signed SC pack — 2026-09-26
 
 **Owner, 2026-09-26:** "what do we need to do with #62? Those are signed", then "yes".
