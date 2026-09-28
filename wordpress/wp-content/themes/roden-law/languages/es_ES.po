@@ -4082,5 +4082,12 @@ msgstr "No es simplemente quien estaba más cerca. En Carolina del Sur, el repre
 msgid "In South Carolina the deadline is generally three years (S.C. Code § 15-3-530), and separate claims may belong to the estate and to the family. Roden Law offers free, no-obligation consultations."
 msgstr "En Carolina del Sur el plazo es generalmente de tres años (S.C. Code § 15-3-530), y puede haber reclamos separados que correspondan al patrimonio y a la familia. Roden Law ofrece consultas gratuitas y sin compromiso."
 
-msgid "3 years from the treatment or from discovery, no more than 6 years after the treatment (S.C. Code § 15-3-545)"
-msgstr "3 años desde el tratamiento o desde que se descubrió la lesión, sin exceder 6 años después del tratamiento (S.C. Code § 15-3-545)"
+msgid "Generally 3 years from the treatment or from discovery, and no more than 6 years after the treatment (S.C. Code § 15-3-545)"
+msgstr "Por lo general, 3 años desde el tratamiento o desde que se descubrió la lesión, y a más tardar 6 años después del tratamiento (S.C. Code § 15-3-545)"
+
+msgid "Modified — no recovery if the person who died was more than 50% at fault"
+msgstr "Modificada — no hay indemnización si la persona fallecida tenía más del 50% de culpa"
+
+#, php-format
+msgid "If you lost a loved one in %1$s because of someone else’s negligence, contact us for a free, confidential review. Call %2$s — no upfront cost."
+msgstr "Si perdió a un ser querido en %1$s por la negligencia de otra persona, contáctenos para una revisión gratuita y confidencial. Llame al %2$s — sin costo inicial."

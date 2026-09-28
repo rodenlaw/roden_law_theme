@@ -1790,7 +1790,7 @@ function roden_what_to_do_steps_data( $pa_slug = '', $state_full = '', $state_ke
             ),
             array(
                 'title' => __( 'Do not accept waived bills or a free corrective procedure in exchange for signing.', 'roden-law' ),
-                'body'  => __( 'It is a common and entirely lawful offer. It is also sometimes paired with paperwork that ends your claim. Read what is attached, and have it reviewed before you sign it.', 'roden-law' ),
+                'body'  => __( 'It is a common offer. It is also sometimes paired with paperwork that ends your claim. Read what is attached, and have it reviewed before you sign it.', 'roden-law' ),
             ),
             array(
                 'title' => __( 'Be careful with risk management and insurance adjusters.', 'roden-law' ),
@@ -1798,7 +1798,7 @@ function roden_what_to_do_steps_data( $pa_slug = '', $state_full = '', $state_ke
             ),
             array(
                 'title' => __( 'Do not assume a bad outcome is — or is not — malpractice.', 'roden-law' ),
-                'body'  => __( 'Medicine carries known risks, and a poor result on its own proves nothing. The question is whether the care fell below the accepted standard, and only a qualified expert in the same field can answer it.', 'roden-law' ),
+                'body'  => __( 'Medicine carries known risks, and a poor result on its own proves nothing. The question is whether the care fell below the accepted standard, and usually only a qualified medical expert can answer it.', 'roden-law' ),
             ),
             array(
                 'title' => __( 'Contact an attorney early — the pre-suit requirements are slow.', 'roden-law' ),
