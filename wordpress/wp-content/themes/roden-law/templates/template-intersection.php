@@ -100,6 +100,9 @@ $related_subtypes = roden_filter_subtypes_for_state(
 // several sections below are wrong for those and must branch or be skipped.
 $int_statute      = roden_resolve_statute( $state_key );
 $int_is_statutory = ( $int_statute && $int_statute['is_override'] );
+// Wrongful death is derivative: the fault that counts is the person who died,
+// not the reader's (Charleston wrongful death sweep, 2026-09-28, W1/W5).
+$int_is_wd = ( $parent_post && 'wrongful-death-lawyers' === preg_replace( '/^es-/', '', $parent_post->post_name ) );
 ?>
 
 <!-- ================================================================
@@ -419,7 +422,11 @@ if ( count( $sibling_urls ) >= 2 ) :
                                 // Runtime lookup: firm-data rule strings have
                                 // hand-added msgids in es_ES.po (make-pot can't
                                 // extract variable msgids).
-                                echo esc_html( __( $jurisdiction['comp_fault_rule'], 'roden-law' ) ); // phpcs:ignore WordPress.WP.I18n.NonSingularStringLiteralText
+                                if ( $int_is_wd && 'South Carolina' === $jurisdiction['state_full'] ) {
+                                    esc_html_e( 'Modified — no recovery if the person who died was more than 50% at fault', 'roden-law' );
+                                } else {
+                                    echo esc_html( __( $jurisdiction['comp_fault_rule'], 'roden-law' ) ); // phpcs:ignore WordPress.WP.I18n.NonSingularStringLiteralText
+                                }
                                 ?>
                                 <?php if ( $jurisdiction['comp_fault_cite'] ) : ?>
                                     (<?php echo esc_html( $jurisdiction['comp_fault_cite'] ); ?>)
@@ -471,7 +478,13 @@ if ( count( $sibling_urls ) >= 2 ) :
              * statutory pages request their own variant. Offices without one
              * render nothing rather than the misleading default.
              */
-            roden_office_local_context_block( $office, $jurisdiction, $int_is_statutory ? 'wc' : '' );
+            // Wrongful death uses the office's 'wd' essay where one exists (its
+            // fault sentence is about the person who died); otherwise the default.
+            // Medical malpractice likewise uses a 'mm' essay: the default names
+            // § 15-3-530, but med mal runs on § 15-3-545 (med mal sweep, E1).
+            $int_is_mm = ( $parent_post && 'medical-malpractice-lawyers' === preg_replace( '/^es-/', '', $parent_post->post_name ) );
+            $int_essay = $int_is_statutory ? 'wc' : ( ( $int_is_wd && ! empty( $office['local_context_wd'] ) ) ? 'wd' : ( ( $int_is_mm && ! empty( $office['local_context_mm'] ) ) ? 'mm' : '' ) );
+            roden_office_local_context_block( $office, $jurisdiction, $int_essay );
             ?>
 
             <!-- ═══════════════════════════════════════════════════════════
@@ -698,7 +711,9 @@ if ( count( $sibling_urls ) >= 2 ) :
                         // No-fault claims get their own line (Charleston WC sweep, W5).
                         $int_is_statutory
                             ? esc_html__( 'If you were hurt on the job in %1$s, contact us for a free, no-obligation review of your workers’ compensation claim and any third-party claim. Call %2$s — no upfront cost.', 'roden-law' )
-                            : esc_html__( 'If you were injured in %1$s and believe another party is at fault, contact us for a free, no-obligation review. Call %2$s — no upfront cost.', 'roden-law' ),
+                            : ( $int_is_wd
+                            ? esc_html__( 'If you lost a loved one in %1$s because of someone else’s negligence, contact us for a free, confidential review. Call %2$s — no upfront cost.', 'roden-law' )
+                            : esc_html__( 'If you were injured in %1$s and believe another party is at fault, contact us for a free, no-obligation review. Call %2$s — no upfront cost.', 'roden-law' ) ),
                         esc_html( $office['market_name'] ),
                         '<a href="tel:' . esc_attr( $office['phone_raw'] ) . '">' . esc_html( $office['phone'] ) . '</a>'
                     );

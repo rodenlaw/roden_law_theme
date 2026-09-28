@@ -200,6 +200,42 @@ La geografía peninsular de Charleston concentra el riesgo en unos pocos corredo
 Conforme a la ley de Carolina del Sur, usted tiene **3 años para presentar la demanda conforme a S.C. Code § 15-3-530**, y solo puede recuperar una indemnización si tiene **menos del 51% de culpa**.
 EOT
 ,
+                // Wrongful death variant: the fault that counts is the person who
+                // died (Charleston wrongful death sweep, 2026-09-28, W1).
+                'local_context_wd' => <<<'EOT'
+A personal injury case from downtown Charleston is usually filed in the **Charleston County Court of Common Pleas at 100 Broad Street**, through the South Carolina Judicial Branch's e-filing system. Most contested cases go to mediation under the South Carolina ADR Rules before trial.
+
+Charleston's peninsula geography concentrates risk on a few well-known corridors: the **Crosstown (US-17 / Septima P. Clark Parkway)**, the **Arthur Ravenel Jr. Bridge** to Mount Pleasant, and the dense tourist grid around **King and Market Streets**, where rideshare drop-offs and carriage tours mix with out-of-state drivers. Serious-injury patients from peninsula crashes are typically taken to **MUSC Health University Medical Center (171 Ashley Ave)**, an adult and pediatric Level I trauma center.
+
+Under South Carolina law, a wrongful death suit **generally must be filed within 3 years (S.C. Code § 15-3-530)**, and the family can recover only if the person who died was **less than 51% at fault**.
+EOT
+,
+                'local_context_wd_es' => <<<'EOT'
+Un caso de lesiones personales del centro de Charleston normalmente se presenta ante el **Charleston County Court of Common Pleas, ubicado en 100 Broad Street**, a través del sistema de presentación electrónica del Poder Judicial de Carolina del Sur. La mayoría de los casos disputados pasan por mediación conforme a las South Carolina ADR Rules antes del juicio.
+
+La geografía peninsular de Charleston concentra el riesgo en unos pocos corredores bien conocidos: el **Crosstown (US-17 / Septima P. Clark Parkway)**, el puente **Arthur Ravenel Jr. Bridge** hacia Mount Pleasant y la densa zona turística alrededor de **King Street y Market Street**, donde los descensos de pasajeros de rideshare y los paseos en carruaje se mezclan con conductores de otros estados. Los pacientes con lesiones graves por choques en la península normalmente son trasladados a **MUSC Health University Medical Center (171 Ashley Ave)**, un centro de trauma de Nivel I para adultos y niños.
+
+Conforme a la ley de Carolina del Sur, una demanda por muerte injusta **generalmente debe presentarse dentro de 3 años (S.C. Code § 15-3-530)**, y la familia solo puede recuperar una indemnización si la persona fallecida tenía **menos del 51% de culpa**.
+EOT
+,
+                // Medical malpractice variant: § 15-3-545, not § 15-3-530 (med mal
+                // sweep, 2026-09-28, E1).
+                'local_context_mm' => <<<'EOT'
+A personal injury case from downtown Charleston is usually filed in the **Charleston County Court of Common Pleas at 100 Broad Street**, through the South Carolina Judicial Branch's e-filing system. Most contested cases go to mediation under the South Carolina ADR Rules before trial.
+
+Charleston's peninsula geography concentrates risk on a few well-known corridors: the **Crosstown (US-17 / Septima P. Clark Parkway)**, the **Arthur Ravenel Jr. Bridge** to Mount Pleasant, and the dense tourist grid around **King and Market Streets**, where rideshare drop-offs and carriage tours mix with out-of-state drivers. Serious-injury patients from peninsula crashes are typically taken to **MUSC Health University Medical Center (171 Ashley Ave)**, an adult and pediatric Level I trauma center.
+
+Under South Carolina law, a medical malpractice claim **generally must be brought within 3 years of the treatment or of when the injury was or should have been discovered, and no more than 6 years after the treatment (S.C. Code § 15-3-545)**, and you can recover only if you are **less than 51% at fault**.
+EOT
+,
+                'local_context_mm_es' => <<<'EOT'
+Un caso de lesiones personales del centro de Charleston normalmente se presenta ante el **Charleston County Court of Common Pleas, ubicado en 100 Broad Street**, a través del sistema de presentación electrónica del Poder Judicial de Carolina del Sur. La mayoría de los casos disputados pasan por mediación conforme a las South Carolina ADR Rules antes del juicio.
+
+La geografía peninsular de Charleston concentra el riesgo en unos pocos corredores bien conocidos: el **Crosstown (US-17 / Septima P. Clark Parkway)**, el puente **Arthur Ravenel Jr. Bridge** hacia Mount Pleasant y la densa zona turística alrededor de **King Street y Market Street**, donde los descensos de pasajeros de rideshare y los paseos en carruaje se mezclan con conductores de otros estados. Los pacientes con lesiones graves por choques en la península normalmente son trasladados a **MUSC Health University Medical Center (171 Ashley Ave)**, un centro de trauma de Nivel I para adultos y niños.
+
+Conforme a la ley de Carolina del Sur, un reclamo por negligencia médica **generalmente debe presentarse dentro de 3 años desde el tratamiento o desde que la lesión se descubrió o debió descubrirse, y a más tardar 6 años después del tratamiento (S.C. Code § 15-3-545)**, y solo puede recuperar una indemnización si tiene **menos del 51% de culpa**.
+EOT
+,
                 // GBP review count — powers per-office AggregateRating schema.
                 // VERIFY: live Google Business Profile, Aug 2026. Update quarterly from GBP dashboard.
                 'review_count' => 105,
@@ -954,7 +990,7 @@ EOT
                     'tort'            => true,
                     'statute_years'   => 3,
                     'statute_cite'    => 'S.C. Code § 15-3-545',
-                    'deadline_detail' => __( '3 years from the treatment or from discovery, no more than 6 years after the treatment (S.C. Code § 15-3-545)', 'roden-law' ),
+                    'deadline_detail' => __( 'Generally 3 years from the treatment or from discovery, and no more than 6 years after the treatment (S.C. Code § 15-3-545)', 'roden-law' ),
                 ),
             ),
             'workers-compensation-lawyers' => array(
