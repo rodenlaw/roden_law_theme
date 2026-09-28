@@ -1938,7 +1938,8 @@ function roden_earning_intersection_urls() {
         // '/car-accident-lawyers/charleston-sc/' restored 2026-09-26: rebuilt as the first
         // allowlisted office practice page (Rule 6 reopened, owner). See
         // docs/charleston-car-accident-rebuild-plan-2026-09-26.md.
-        '/car-accident-lawyers/columbia-sc/'                  => '/practice-areas/car-accident-lawyers/',
+        // '/car-accident-lawyers/columbia-sc/' restored 2026-09-28: wave 1, #8
+        // (docs/site-architecture/README.md).
         '/car-accident-lawyers/darien-ga/'                    => '/practice-areas/car-accident-lawyers/',
         // '/car-accident-lawyers/savannah-ga/' restored 2026-09-26: wave 1, #3, the first Georgia
         // office practice page (docs/site-architecture/README.md).
