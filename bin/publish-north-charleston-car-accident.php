@@ -18,7 +18,7 @@
 $apply = isset( $args[0] ) && 'apply' === $args[0];
 $err   = fopen( 'php://stderr', 'w' );
 $id    = 4540;
-$reviewed = ''; // set only when the owner confirms Gillin's review
+$reviewed = '2026-09-28'; // owner: "reviewed - publish it" (2026-09-28), Gillin's review incl. the North Charleston essay (#188, #189)
 global $wpdb;
 
 if ( ! function_exists( 'roden_office_practice_allowlist' ) || ! in_array( 'car-accident-lawyers/north-charleston-sc', roden_office_practice_allowlist(), true ) ) {

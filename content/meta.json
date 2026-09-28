@@ -7,7 +7,7 @@
         "post",
         "page"
     ],
-    "_count": 670,
+    "_count": 671,
     "posts": {
         "/": {
             "type": "page",
@@ -13159,6 +13159,49 @@
                 "_roden_jurisdiction": "both",
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33",
                 "_roden_sol_sc": "S.C. Code § 15-3-530"
+            }
+        },
+        "/car-accident-lawyers/north-charleston-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "North Charleston Car Accident Lawyers",
+            "excerpt": "Hurt in a North Charleston car accident? Roden Law's Spruill Avenue lawyers handle South Carolina car accident claims. Free consultation, no fee unless we win.",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "How much does a North Charleston car accident lawyer cost?",
+                        "answer": "Nothing up front. Roden Law handles car accident cases on a contingency fee. The consultation is free, and there is no fee unless we win your case."
+                    },
+                    {
+                        "question": "How long do I have to file a car accident lawsuit in South Carolina?",
+                        "answer": "Three years from the date of the crash under S.C. Code § 15-3-530. If a government entity is responsible, the deadline is two years under S.C. Code § 15-78-110, or three years if a verified claim was filed with the agency within one year."
+                    },
+                    {
+                        "question": "Can I still recover if I was partly at fault?",
+                        "answer": "Yes, if you were 50% or less at fault. South Carolina's modified comparative negligence rule (Nelson v. Concrete Supply Co.) reduces your award by your share of fault and bars recovery only above 50%."
+                    },
+                    {
+                        "question": "What if the driver who hit me was uninsured or drove off?",
+                        "answer": "Your own uninsured motorist coverage, which every South Carolina auto policy must include (S.C. Code § 38-77-150), can pay. For a hit-and-run by an unknown driver, report the crash to police promptly: the claim requires a police report and corroboration that the other vehicle existed (S.C. Code § 38-77-170)."
+                    },
+                    {
+                        "question": "Where would my North Charleston car accident case be filed?",
+                        "answer": "Most North Charleston car accident lawsuits are filed in the Charleston County Court of Common Pleas at the Charleston County Judicial Center, 100 Broad Street. North Charleston also reaches into Berkeley and Dorchester counties, and a crash in one of those parts of the city may be filed in that county instead."
+                    },
+                    {
+                        "question": "Do I need a lawyer if the other insurer already made an offer?",
+                        "answer": "Talk to a lawyer before you accept. A settlement ends your claim, and early offers are often made before the full cost of your injuries is known. A free review costs you nothing."
+                    }
+                ],
+                "_roden_jurisdiction": "south-carolina",
+                "_roden_key_takeaways": "If you were injured in a car accident in North Charleston, South Carolina law gives you three years from the date of the crash to file a lawsuit (S.C. Code § 15-3-530), or generally two years if the at-fault party is a government entity such as the City of North Charleston or SCDOT (S.C. Code § 15-78-110). South Carolina uses modified comparative negligence: you can recover if you are 50% or less at fault, with your award reduced by your share (Nelson v. Concrete Supply Co.). Every South Carolina auto policy must include uninsured motorist coverage (S.C. Code § 38-77-150). Roden Law's North Charleston office at 2703 Spruill Avenue handles car accident cases on contingency: the consultation is free and there is no fee unless we win.",
+                "_roden_last_reviewed": "2026-09-28",
+                "_roden_meta_description": "Hurt in a North Charleston car accident? Roden Law's Spruill Avenue lawyers handle South Carolina car accident claims. Free consultation, no fee unless we win. (843) 612-6561.",
+                "_roden_meta_title": "North Charleston Car Accident Lawyer | Roden Law",
+                "_roden_pa_office_key": "north-charleston",
+                "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)",
+                "_roden_translation_es": "/es/car-accident-lawyers/north-charleston-sc/"
             }
         },
         "/car-accident-lawyers/rear-end-collision/": {

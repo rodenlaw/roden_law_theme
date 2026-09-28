@@ -1784,6 +1784,53 @@ apply. Its verdict is appended to the Columbia remediation file.
 - Still open from L5: Broad River's "Most Dangerous Truck Corridors" heading and the conflicting
   Richland crash figures.
 
+### North Charleston car page live — wave 1, office practice page #9 — 2026-09-28
+
+**Owner, 2026-09-28:** "go to the next page in wave 1", then "reviewed - publish it" (Gillin's
+review).
+
+- **#188** — North Charleston office.
+  - Essay (EN and ES): cut the unsourced "hazard profile is dominated by", "recurring crash
+    corridors" and "flown to MUSC".
+  - Hospitals confirmed: Trident (Level II, 9330 Medical Plaza Dr) and MUSC University Medical
+    Center (Level I).
+  - Directions cut to the address; the Exit 213 / Montague / Spruill turns were unverifiable.
+  - Map embed added: place ChIJS2CVHEh7_ogRIEA4SfdJ3A8, verified to resolve to 2703 Spruill Ave.
+  - Allowlist entry.
+- **Content** (`bin/rebuild-north-charleston-car-accident.php`, post 4540): SC only, Gillin
+  byline, the reviewed SC rules wording. Venue is hedged for the Berkeley and Dorchester parts
+  of the city.
+- **Legal sweep: PASS** (`data/facts/remediation-2026-09-28-north-charleston-car.md`).
+  - W1: "near Park Circle", which #188 introduced, is wrong; the office is in Union Heights,
+    about 2.5 mi south. **#189** dropped the neighborhood from the directions, and the draft now
+    says "in North Charleston".
+  - W2: the essay's venue line gained the Berkeley/Dorchester hedge (EN and ES).
+  - W3 is open: the "Our North Charleston Attorneys" heading renders empty, because no attorney
+    is assigned to the office.
+- **Publish:** behind the redirect first, then **#190** removed it.
+- **Verified live:**
+  - The page returns 200 with a self canonical, the map and 7 JSON-LD blocks. The nested URL
+    301s to it; the Spanish URL keeps its redirect.
+  - `/practice-areas/north-charleston/…` never existed (0 rows in 16 months of GSC); only
+    Charleston had that old URL form.
+  - 1 anchor restored (3435); the other 4 source posts are retired.
+  - Fresh sweep: 0 findings. JSON-LD guard PASS. meta.json regenerated.
+  - **Doorway 164 / 678 = 24.19% PASS.**
+
+**Open, linked pages (sweep L1–L9, not blocking):**
+- **L1, live error:** `/blog/north-charleston-crime-rate-hit-and-run/` says leaving the scene
+  of any injury crash is a felony carrying up to 25 years. Under § 56-5-1210 that is only for
+  a death; a non-great-bodily-injury crash is a misdemeanor. It also says UIM is "required".
+- **L2:** the dangerous-roads resource cites § 15-78-80 for the SCTCA deadline.
+- **L3:** the Rivers Avenue post gets § 56-5-3130 backwards.
+- **L4:** the wrongful-death deadline is cited to § 15-51-20 in 5 places.
+- **L5:** the Ladson post has a notice implication, "Town of Ladson", and the wrong Exit 199.
+- **L6:** the settlement-value resource says UM is merely "offered".
+- **L7:** Ashley Phosphate: "applies to all claims", and a garbled "SS".
+- **L8:** the government-vehicle FAQ still says the caps are "against a single government
+  entity"; the commercial-vehicle and bus FAQs carry notice wording.
+- **L9:** the statewide car page's stacking line.
+
 ### Law pack: #62 superseded by #67, rebuilt on the signed SC pack — 2026-09-26
 
 **Owner, 2026-09-26:** "what do we need to do with #62? Those are signed", then "yes".

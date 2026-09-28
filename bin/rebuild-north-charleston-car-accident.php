@@ -48,7 +48,7 @@ $body = <<<'HTML'
 <p>After a crash, the other driver's insurer starts building its case right away. You should have someone building yours: gathering the crash report, video and medical records, and dealing with the adjusters so you can focus on getting better.</p>
 <ul>
 <li><strong>No fee unless we win.</strong> The consultation is free, and you pay nothing up front.</li>
-<li><strong>A South Carolina lawyer on your case.</strong> Your case is handled under South Carolina law by attorneys licensed here, from our office at 2703 Spruill Avenue, near Park Circle.</li>
+<li><strong>A South Carolina lawyer on your case.</strong> Your case is handled under South Carolina law by attorneys licensed here, from our office at 2703 Spruill Avenue in North Charleston.</li>
 <li><strong>Evidence preserved early.</strong> We work to secure video, the crash report and witness accounts before they are lost.</li>
 <li><strong>The full value of the claim.</strong> Medical care, lost income, pain and suffering, and damage to your vehicle.</li>
 </ul>
