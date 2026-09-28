@@ -247,6 +247,8 @@ function roden_office_practice_allowlist() {
         'motorcycle-accident-lawyers/charleston-sc', // wave 1, #7 (owner: "move on to the next batch", 2026-09-28)
         'car-accident-lawyers/columbia-sc', // wave 1, #8 (owner: "then move to the next page", 2026-09-28)
         'car-accident-lawyers/north-charleston-sc', // wave 1, #9 (owner: "go to the next page in wave 1", 2026-09-28)
+        'wrongful-death-lawyers/charleston-sc', // wave 1, #10 (owner: "then do the last wave 1 pages", 2026-09-28)
+        'medical-malpractice-lawyers/charleston-sc', // wave 1, #11 (same)
     );
 }
 
