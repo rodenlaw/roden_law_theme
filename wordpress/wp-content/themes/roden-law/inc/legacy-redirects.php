@@ -1717,7 +1717,8 @@ function roden_zero_click_intersection_urls() {
         '/burn-injury-lawyers/north-charleston-sc/'               => '/practice-areas/burn-injury-lawyers/',
         '/burn-injury-lawyers/savannah-ga/'                       => '/practice-areas/burn-injury-lawyers/',
         '/car-accident-lawyers/myrtle-beach-sc/'                  => '/practice-areas/car-accident-lawyers/',
-        '/car-accident-lawyers/north-charleston-sc/'              => '/practice-areas/car-accident-lawyers/',
+        // '/car-accident-lawyers/north-charleston-sc/' restored 2026-09-28: wave 1, #9
+        // (docs/site-architecture/README.md).
         '/construction-accident-lawyers/charleston-sc/'           => '/practice-areas/construction-accident-lawyers/',
         '/construction-accident-lawyers/columbia-sc/'             => '/practice-areas/construction-accident-lawyers/',
         '/construction-accident-lawyers/darien-ga/'               => '/practice-areas/construction-accident-lawyers/',
