@@ -1776,7 +1776,8 @@ function roden_zero_click_intersection_urls() {
         '/maritime-injury-lawyers/columbia-sc/'                   => '/practice-areas/maritime-injury-lawyers/',
         '/maritime-injury-lawyers/north-charleston-sc/'           => '/practice-areas/maritime-injury-lawyers/',
         '/medical-malpractice-lawyers/north-charleston-sc/'       => '/practice-areas/medical-malpractice-lawyers/',
-        '/motorcycle-accident-lawyers/charleston-sc/'             => '/practice-areas/motorcycle-accident-lawyers/',
+        // '/motorcycle-accident-lawyers/charleston-sc/' restored 2026-09-28: wave 1, #7
+        // (docs/site-architecture/README.md).
         '/motorcycle-accident-lawyers/darien-ga/'                 => '/practice-areas/motorcycle-accident-lawyers/',
         '/motorcycle-accident-lawyers/myrtle-beach-sc/'           => '/practice-areas/motorcycle-accident-lawyers/',
         '/motorcycle-accident-lawyers/north-charleston-sc/'       => '/practice-areas/motorcycle-accident-lawyers/',
