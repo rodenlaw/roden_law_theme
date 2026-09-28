@@ -1845,6 +1845,65 @@ review).
   applies (three years with a verified claim). Georgia wording is unchanged.
 - Verified live. Fresh sweep: 0 findings. JSON-LD guard PASS. meta.json regenerated.
 
+### Charleston wrongful death and medical malpractice live — wave 1 complete (11 of 11) — 2026-09-28
+
+**Owner, 2026-09-28:** "fix those FAQs and then do the last wave 1 pages", then "Gillin has
+reviewd".
+
+- **Pillar intros** (`bin/fix-wd-medmal-pillar-intros.php`, two passes, live).
+  - Med mal:
+    - The caps were given as the $350,000 / $1.05M base. They are now the 2026 $596,001 /
+      $1,788,002, with all four exceptions.
+    - "Punitive for gross negligence" became the clear-and-convincing burden (§ 15-33-135).
+    - The affidavit is now cited to § 15-36-100, filed with the § 15-79-125 notice.
+  - Wrongful death: two-state text, "within 3 years of death", and damage elements that
+    §§ 15-51-40 and 15-5-90 do not list, all replaced with what the statutes say.
+- **Law pack (internal-ai-scripts #69):** §§ 15-51-10, 15-51-40, 15-5-90, 15-79-125 and
+  15-36-100 signed by Gillin 2026-09-28. The SC pack now holds 39 authorities.
+- **#192:** a new `tort` statute override. SC med mal's law box, sidebar and HowTo now show
+  § 15-3-545, without the no-fault treatment. The wrongful-death and med-mal steps on SC pages
+  state SC law only.
+- **Legal sweeps:** both FAILED on one item each, and both were fixed before publish.
+  - **Wrongful death E1:** the "no cap" FAQ now names the punitive cap (§ 15-32-530) and the
+    charity cap (§ 33-56-180).
+  - **Med mal E1:** the essay named § 15-3-530.
+  - **#193:**
+    - Law box: "no recovery if the person who died was more than 50% at fault".
+    - Wrongful-death CTA added.
+    - `local_context_wd` / `local_context_mm` essays for Charleston (EN + ES).
+    - "Generally" added to the med-mal deadline.
+    - Two step phrasings changed.
+  - **Med mal page:**
+    - Cap exceptions: all four are now listed.
+    - Tort Claims Act: the $1.2M government-physician limit and "no punitive damages" added.
+    - The link to 4562 was dropped: stale caps, an invented 90-day wait and minors' rules, and
+      an unverifiable case.
+- **Publish:** both went live behind their redirects, then **#194** removed them.
+- **Verified live:**
+  - Both pages return 200 with self canonicals, the map and 7 JSON-LD blocks. The nested and
+    legacy `/practice-areas/charleston/…` URLs each 301 to them in one hop.
+  - Links restored: med mal 3 (4349, 4363); wrongful death 0, because all three source posts
+    are retired.
+  - Fresh sweep: 0 findings. JSON-LD guard PASS. meta.json regenerated.
+  - **Doorway 166 / 680 = 24.41% PASS.**
+
+**Open (for Gillin, not blocking):**
+- When the wrongful-death clock starts: § 15-3-530(6) says "upon the death", but the signed
+  entry doesn't hold it. Also: whether § 15-3-545 governs a malpractice death, and the "date
+  of loss" for a government defendant.
+- Confirm the decedent-fault reading.
+- Pack amendments to § 15-3-545 ((B) foreign object, (D) minors), § 15-32-230 (emergency
+  gross-negligence standard), and *Hook v. Rothstein* if he confirms it.
+
+**Open (linked pages, live):**
+- 4562: caps, the 90-day wait, minors' rules and the case.
+- 4349 / 4363: the 90-day wait, the expert rule, § 15-32-230.
+- 4195 (birth injury): minors' tolling.
+- Georgia's "full value of life" measure on SC wrongful-death subtypes (4101, 4104–4106).
+- 4099: distribution "by dependency".
+- 4102: statutory-employer immunity.
+- 4861: "notice" wording.
+
 ### Law pack: #62 superseded by #67, rebuilt on the signed SC pack — 2026-09-26
 
 **Owner, 2026-09-26:** "what do we need to do with #62? Those are signed", then "yes".

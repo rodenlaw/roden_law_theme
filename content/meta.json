@@ -7,7 +7,7 @@
         "post",
         "page"
     ],
-    "_count": 671,
+    "_count": 673,
     "posts": {
         "/": {
             "type": "page",
@@ -18827,6 +18827,48 @@
                 "_roden_sol_sc": "S.C. Code § 15-3-530"
             }
         },
+        "/medical-malpractice-lawyers/charleston-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Charleston Medical Malpractice Lawyers",
+            "excerpt": "Harmed by medical negligence in Charleston? Roden Law's King Street lawyers handle South Carolina medical malpractice claims. Free consultation, no fee unless we win.",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "How long do I have to file a medical malpractice claim in South Carolina?",
+                        "answer": "Generally three years from the treatment, or three years from when the injury was or reasonably should have been discovered, but no more than six years after the treatment (S.C. Code § 15-3-545). Filing a Notice of Intent to File Suit pauses the deadline (S.C. Code § 15-79-125)."
+                    },
+                    {
+                        "question": "What has to happen before a malpractice lawsuit can be filed?",
+                        "answer": "The patient must file a Notice of Intent to File Suit together with a qualified expert's affidavit identifying the negligent act or omission, and serve it on each provider named (S.C. Code §§ 15-79-125, 15-36-100). The parties then mediate, generally within 90 to 120 days. If that does not resolve the claim, the lawsuit can be filed."
+                    },
+                    {
+                        "question": "Is there a cap on medical malpractice damages in South Carolina?",
+                        "answer": "Yes, on noneconomic damages. For 2026 the caps are $596,001 per health care provider or institution and $1,788,002 in total per claimant. They do not apply if the provider was grossly negligent, wilful, wanton or reckless and that conduct caused the harm, engaged in fraud or misrepresentation related to the claim, or altered or destroyed medical records to avoid the claim, and they do not limit economic damages such as medical costs and lost wages (S.C. Code § 15-32-220)."
+                    },
+                    {
+                        "question": "What if the hospital or doctor is part of the government?",
+                        "answer": "The South Carolina Tort Claims Act also applies. Suit generally must be filed within two years (S.C. Code § 15-78-110). Recovery is capped at $1,200,000 per occurrence when a government-employed physician or dentist caused the harm, and otherwise at $300,000 per person and $600,000 per occurrence, and punitive damages are not available (S.C. Code § 15-78-120). That is why it matters to identify early who employed the provider."
+                    },
+                    {
+                        "question": "Can I still recover if I was partly at fault?",
+                        "answer": "Yes, if you were 50% or less at fault. South Carolina's modified comparative negligence rule (Nelson v. Concrete Supply Co.) reduces your award by your share of fault."
+                    },
+                    {
+                        "question": "How much does a Charleston medical malpractice lawyer cost?",
+                        "answer": "Nothing up front. Roden Law handles medical malpractice cases on a contingency fee. The consultation is free, and there is no fee unless we win."
+                    }
+                ],
+                "_roden_jurisdiction": "south-carolina",
+                "_roden_key_takeaways": "Before a medical malpractice lawsuit can be filed in South Carolina, the patient must file a Notice of Intent to File Suit with a qualified expert's affidavit (S.C. Code §§ 15-79-125, 15-36-100), and the parties must mediate. The claim generally must be brought within three years of the treatment or of when the injury was or should have been discovered, but no more than six years after the treatment (S.C. Code § 15-3-545). Noneconomic damages are capped; for 2026 the caps are $596,001 per provider or institution and $1,788,002 in total per claimant, with exceptions for grossly negligent, wilful, wanton or reckless conduct, fraud, and altered or destroyed records (S.C. Code § 15-32-220). Roden Law's Charleston office at 127 King Street handles medical malpractice cases on contingency: the consultation is free and there is no fee unless we win.",
+                "_roden_last_reviewed": "2026-09-28",
+                "_roden_meta_description": "Harmed by medical negligence in Charleston? Roden Law's King Street lawyers handle South Carolina medical malpractice claims. Free consultation, no fee unless we win. (843) 790-8999.",
+                "_roden_meta_title": "Charleston Medical Malpractice Lawyer | Roden Law",
+                "_roden_pa_office_key": "charleston",
+                "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)"
+            }
+        },
         "/medical-malpractice-lawyers/emergency-room-negligence/": {
             "type": "practice_area",
             "status": "publish",
@@ -20865,8 +20907,8 @@
                     }
                 ],
                 "_roden_jurisdiction": "both",
-                "_roden_pillar_compensation_intro": "{{GA}}**Georgia has no statutory cap on noneconomic damages** in medical malpractice cases since *Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt*, 286 Ga. 731 (2010), which struck down O.C.G.A. § 51-13-1 as a violation of the right to jury trial. {{/GA}}{{SC}}**South Carolina caps noneconomic damages at $350,000 per defendant / $1.05 million aggregate** under S.C. Code § 15-32-220, adjusted annually for inflation. {{/SC}}Economic damages — past and future medicals, lost wages, lost earning capacity, attendant care — are uncapped in both states. Punitive damages are available for gross negligence with separate statutory caps.",
-                "_roden_pillar_negligence_intro": "Medical malpractice replaces \"ordinary care\" with the **standard of care** of a reasonably prudent practitioner in the same specialty. {{GA}}**Georgia requires a contemporaneous expert affidavit** with the complaint setting forth at least one negligent act under O.C.G.A. § 9-11-9.1 — failure is grounds for dismissal. The statute of limitations is 2 years from injury with a 5-year statute of repose (O.C.G.A. § 9-3-71). {{/GA}}{{SC}}**South Carolina requires a Notice of Intent to File Suit and an expert affidavit** under S.C. Code § 15-79-125, plus a mandatory pre-suit mediation period before suit can proceed. The statute of limitations is 3 years from discovery with a 6-year repose (S.C. Code § 15-3-545). {{/SC}}In {market_name}, claims commonly arise out of {office_court}'s jurisdictional area.",
+                "_roden_pillar_compensation_intro": "{{GA}}**Georgia has no statutory cap on noneconomic damages** in medical malpractice cases since *Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt*, 286 Ga. 731 (2010), which struck down O.C.G.A. § 51-13-1 as a violation of the right to jury trial. {{/GA}}{{SC}}**South Carolina caps noneconomic damages** in medical malpractice cases. The caps are adjusted each year; for 2026 they are $596,001 per health care provider or institution and $1,788,002 in total per claimant, and they do not apply to grossly negligent, wilful, wanton or reckless conduct that caused the harm, to fraud or misrepresentation related to the claim, or to medical records altered or destroyed to avoid the claim (S.C. Code § 15-32-220). Economic damages — past and future medical costs, lost wages, lost earning capacity, attendant care — are not limited by the cap. Punitive damages must be proved by clear and convincing evidence (S.C. Code § 15-33-135).{{/SC}}",
+                "_roden_pillar_negligence_intro": "Medical malpractice replaces \"ordinary care\" with the **standard of care** of a reasonably prudent practitioner in the same specialty. {{GA}}**Georgia requires a contemporaneous expert affidavit** with the complaint setting forth at least one negligent act under O.C.G.A. § 9-11-9.1 — failure is grounds for dismissal. The statute of limitations is 2 years from injury with a 5-year statute of repose (O.C.G.A. § 9-3-71). {{/GA}}{{SC}}**South Carolina requires a Notice of Intent to File Suit**, filed together with a qualified expert's affidavit, before a malpractice suit can be filed (S.C. Code §§ 15-79-125, 15-36-100). The parties must then mediate, generally within 90 to 120 days. The deadline is generally three years from the treatment or from when the injury was or should have been discovered, but no more than six years from the treatment (S.C. Code § 15-3-545). {{/SC}}",
                 "_roden_sol_ga": "O.C.G.A. § 9-3-71",
                 "_roden_sol_sc": "S.C. Code § 15-3-545",
                 "_roden_translation_es": "/es/practice-areas/medical-malpractice-lawyers/",
@@ -22026,8 +22068,8 @@
                     }
                 ],
                 "_roden_jurisdiction": "both",
-                "_roden_pillar_compensation_intro": "{{GA}}**Georgia's \"full value of the life of the decedent\" measure (O.C.G.A. § 51-4-1(1)) is among the broadest wrongful-death recoveries in the United States** — it captures both the economic *and* intangible value of the life as the decedent would have lived it, with **no offset for the decedent's living expenses**. Survival claims under O.C.G.A. § 9-2-41 recover pre-death pain, suffering, and funeral and medical expenses.{{/GA}}{{SC}}South Carolina's measure is more conventional: pecuniary loss to beneficiaries plus mental anguish and loss of companionship, society, and consortium under S.C. Code § 15-51-40. Survival claims under S.C. Code § 15-5-90 recover pre-death pain, suffering, and funeral and medical expenses.{{/SC}}",
-                "_roden_pillar_negligence_intro": "Both Georgia and South Carolina permit a **wrongful-death action** plus a separate **survival action** for the decedent's pre-death pain, suffering, and medical expenses. {{GA}}In **Georgia**, the surviving spouse holds the wrongful-death claim, with children sharing under O.C.G.A. § 51-4-2, and the action must be filed within 2 years of death (O.C.G.A. § 9-3-33). {{/GA}}{{SC}}In **South Carolina**, the **personal representative** brings the action for the benefit of statutory beneficiaries (S.C. Code § 15-51-10 to -60), and it must be filed within 3 years of death (S.C. Code § 15-3-530). {{/SC}}The underlying tort — auto crash, medical negligence, defective product — must be independently provable.",
+                "_roden_pillar_compensation_intro": "{{GA}}**Georgia's \"full value of the life of the decedent\" measure (O.C.G.A. § 51-4-1(1)) is among the broadest wrongful-death recoveries in the United States** — it captures both the economic *and* intangible value of the life as the decedent would have lived it, with **no offset for the decedent's living expenses**. Survival claims under O.C.G.A. § 9-2-41 recover pre-death pain, suffering, and funeral and medical expenses.{{/GA}}{{SC}}In South Carolina, the jury awards damages in proportion to the loss the death caused each family member, and may add punitive damages when the conduct was reckless, wilful or malicious. The recovery is divided as it would be under the intestacy rules (S.C. Code § 15-51-40). Separately, the person's own claim for their injuries survives their death and can be brought by the estate (S.C. Code § 15-5-90).{{/SC}}",
+                "_roden_pillar_negligence_intro": "A death caused by someone else's negligence can support a **wrongful-death action** for the family and a separate **survival action** for the claim the person had before death. {{GA}}In **Georgia**, the surviving spouse holds the wrongful-death claim, with children sharing under O.C.G.A. § 51-4-2, and the action must be filed within 2 years of death (O.C.G.A. § 9-3-33). {{/GA}}{{SC}}In **South Carolina**, the estate's **personal representative** (executor or administrator) brings the wrongful-death action for the spouse and children, or if there are none, the parents, or if none, the heirs (S.C. Code §§ 15-51-10, 15-51-20). It generally must be filed within three years (S.C. Code § 15-3-530). {{/SC}}The underlying negligence — a crash, medical negligence, a defective product — must still be proved.",
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33",
                 "_roden_sol_sc": "S.C. Code § 15-3-530",
                 "_roden_translation_es": "/es/practice-areas/wrongful-death-lawyers/",
@@ -26056,6 +26098,48 @@
                 "_roden_sol_ga": "O.C.G.A. § 34-9-82",
                 "_roden_sol_sc": "S.C. Code § 42-15-40",
                 "_roden_state_scope": "SC"
+            }
+        },
+        "/wrongful-death-lawyers/charleston-sc/": {
+            "type": "practice_area",
+            "status": "publish",
+            "title": "Charleston Wrongful Death Lawyers",
+            "excerpt": "Lost a loved one to someone else's negligence in Charleston? Roden Law's King Street lawyers handle South Carolina wrongful death claims. Free consultation, no fee unless we win.",
+            "meta": {
+                "_roden_author_attorney": "Graeham C. Gillin",
+                "_roden_faqs": [
+                    {
+                        "question": "Who can file a wrongful death claim in South Carolina?",
+                        "answer": "The estate's personal representative, the executor or administrator, files it. The claim is for the benefit of the spouse and children; if there are none, the parents; and if there are none, the heirs (S.C. Code § 15-51-20)."
+                    },
+                    {
+                        "question": "How long do we have to file a wrongful death claim in South Carolina?",
+                        "answer": "Generally three years (S.C. Code § 15-3-530). If a government entity is responsible, suit must be filed within two years, or three years if a verified claim is filed with the agency within one year (S.C. Code §§ 15-78-110, 15-78-80). Talk to a lawyer early, because the estate may need to be opened first."
+                    },
+                    {
+                        "question": "What is the difference between a wrongful death and a survival action?",
+                        "answer": "The wrongful death action compensates the family for the loss the death caused them (S.C. Code §§ 15-51-10, 15-51-40). The survival action is the person's own claim for their injuries, which survives their death and is brought by the estate (S.C. Code § 15-5-90)."
+                    },
+                    {
+                        "question": "Is there a cap on wrongful death damages in South Carolina?",
+                        "answer": "There is no cap on the family's compensatory damages in an ordinary case, but there are important exceptions. Claims against a government entity are capped at $300,000 per person and $600,000 per occurrence (S.C. Code § 15-78-120), and claims against a charitable organization, which can include a nonprofit hospital or nursing home, are limited to the same amounts (S.C. Code § 33-56-180). Noneconomic damages in a death caused by medical malpractice are generally capped (S.C. Code § 15-32-220). Punitive damages are generally capped at the greater of three times the compensatory damages or $739,245 in 2026, a figure adjusted each year (S.C. Code § 15-32-530)."
+                    },
+                    {
+                        "question": "Are punitive damages available in a wrongful death case?",
+                        "answer": "They can be, when the death was the result of recklessness, wilfulness or malice (S.C. Code § 15-51-40). They must be proved by clear and convincing evidence (S.C. Code § 15-33-135), are generally capped (S.C. Code § 15-32-530), and are not available against a government entity (S.C. Code § 15-78-120)."
+                    },
+                    {
+                        "question": "How much does a Charleston wrongful death lawyer cost?",
+                        "answer": "Nothing up front. Roden Law handles wrongful death cases on a contingency fee. The consultation is free, and there is no fee unless we win."
+                    }
+                ],
+                "_roden_jurisdiction": "south-carolina",
+                "_roden_key_takeaways": "In South Carolina, a wrongful death claim is brought by the estate's personal representative for the benefit of the spouse and children, or if there are none, the parents, or if none, the heirs (S.C. Code § 15-51-20). It generally must be filed within three years (S.C. Code § 15-3-530), or within two years if a government entity is responsible, three if a verified claim is filed with the agency within one year (S.C. Code §§ 15-78-110, 15-78-80). A separate survival action lets the estate pursue the person's own claim (S.C. Code § 15-5-90), and punitive damages are possible when the conduct was reckless, wilful or malicious (S.C. Code § 15-51-40). Roden Law's Charleston office at 127 King Street handles wrongful death cases on contingency: the consultation is free and there is no fee unless we win.",
+                "_roden_last_reviewed": "2026-09-28",
+                "_roden_meta_description": "Lost a loved one to negligence in Charleston? Roden Law's King Street lawyers handle South Carolina wrongful death claims. Free consultation, no fee unless we win. (843) 790-8999.",
+                "_roden_meta_title": "Charleston Wrongful Death Lawyer | Roden Law",
+                "_roden_pa_office_key": "charleston",
+                "_roden_sol_sc": "3 years (S.C. Code § 15-3-530)"
             }
         },
         "/wrongful-death-lawyers/drowning-swimming-pool-death/": {

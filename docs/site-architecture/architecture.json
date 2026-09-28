@@ -78,9 +78,14 @@
         "total": 1
       },
       {
-        "step": "Wave 1: the remaining 2 office practice pages",
-        "geo": 2,
-        "total": 2
+        "step": "Charleston wrongful death page live (wave 1, #10 of 11) — 2026-09-28",
+        "geo": 1,
+        "total": 1
+      },
+      {
+        "step": "Charleston medical malpractice page live (wave 1, #11 of 11) — 2026-09-28. Wave 1 complete.",
+        "geo": 1,
+        "total": 1
       },
       {
         "step": "Georgia statewide practice pages (6, mirror of the SC set; state names are not geo)",
@@ -323,25 +328,29 @@
                     "id": "chs-wd",
                     "label": "Charleston wrongful death",
                     "url": "/wrongful-death-lawyers/charleston-sc/",
-                    "kind": "restore",
+                    "kind": "keep",
                     "wave": 1,
                     "geo": true,
                     "evidence": {
                       "impr16": 60291,
                       "pos90": 16.8
-                    }
+                    },
+                    "live": "2026-09-28",
+                    "note": "LIVE 2026-09-28 (#194). Office practice page #10; decedent-fault law box and wd essay variant (#193); Gillin reviewed, incl. §§ 15-51-10/40, 15-5-90 (#69)."
                   },
                   {
                     "id": "chs-medmal",
                     "label": "Charleston medical malpractice",
                     "url": "/medical-malpractice-lawyers/charleston-sc/",
-                    "kind": "restore",
+                    "kind": "keep",
                     "wave": 1,
                     "geo": true,
                     "evidence": {
                       "impr16": 66031,
                       "pos90": 17.1
-                    }
+                    },
+                    "live": "2026-09-28",
+                    "note": "LIVE 2026-09-28 (#194). Office practice page #11; § 15-3-545 tort override (#192) and mm essay variant (#193); Gillin reviewed, incl. §§ 15-79-125, 15-36-100 (#69)."
                   },
                   {
                     "id": "chs-prem",

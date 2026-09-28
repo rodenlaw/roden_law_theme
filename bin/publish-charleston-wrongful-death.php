@@ -18,7 +18,7 @@
 $apply = isset( $args[0] ) && 'apply' === $args[0];
 $err   = fopen( 'php://stderr', 'w' );
 $id    = 3649;
-$reviewed = ''; // set only when the owner confirms Gillin's review, incl. the pending authorities in internal-ai-scripts #69
+$reviewed = '2026-09-28'; // owner: "Gillin has reviewd" (2026-09-28), incl. the authorities signed in internal-ai-scripts #69
 global $wpdb;
 
 if ( ! function_exists( 'roden_office_practice_allowlist' ) || ! in_array( 'wrongful-death-lawyers/charleston-sc', roden_office_practice_allowlist(), true ) ) {
