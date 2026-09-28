@@ -1,0 +1,1697 @@
+[
+  {
+    "id": "MM-L1a",
+    "post_id": 4562,
+    "url": "/blog/medical-malpractice-limits-south-carolina/",
+    "field": "takeaways",
+    "from": "South Carolina caps non-economic damages in medical malpractice cases at $350,000 per defendant and $1.05 million total (S.C. Code § 15-32-220).",
+    "to": "South Carolina caps non-economic damages in medical malpractice cases at $596,001 per provider or institution and $1,788,002 in total for 2026, figures adjusted each year for inflation (S.C. Code § 15-32-220).",
+    "authority": [
+      "SC 15-32-220"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L1. Unindexed 2005 base figures replaced with the signed 2026 figures."
+  },
+  {
+    "id": "MM-L1b",
+    "post_id": 4562,
+    "url": "/blog/medical-malpractice-limits-south-carolina/",
+    "field": "takeaways",
+    "from": "Plaintiffs must serve a 90-day Notice of Intent before filing suit, and mandatory mediation is required before trial.",
+    "to": "Before filing suit, plaintiffs must file a Notice of Intent together with an expert affidavit, serve it on each defendant, and mediate; only if mediation fails can the lawsuit be filed (S.C. Code § 15-79-125).",
+    "authority": [
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L1. There is no 90-day wait; mediation is pre-suit."
+  },
+  {
+    "id": "MM-L1c",
+    "post_id": 4562,
+    "url": "/blog/medical-malpractice-limits-south-carolina/",
+    "field": "faq0",
+    "from": "at $350,000 per defendant and $1.05 million total (S.C. Code § 15-32-220).",
+    "to": "at a base of $350,000 per provider or institution and $1,050,000 in total per claimant, adjusted each year for inflation: for 2026, $596,001 and $1,788,002 (S.C. Code § 15-32-220).",
+    "authority": [
+      "SC 15-32-220"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L1 (FAQ 1 in the plan, 1-based). Also FAQPage schema."
+  },
+  {
+    "id": "MM-L1d",
+    "post_id": 4562,
+    "url": "/blog/medical-malpractice-limits-south-carolina/",
+    "field": "faq1",
+    "from": "An absolute <strong>six-year statute of repose</strong> applies — no claim can be filed more than six years after the negligence occurred.",
+    "to": "A <strong>six-year statute of repose</strong> generally applies — in most cases no claim can be filed more than six years after the negligence occurred.",
+    "authority": [
+      "SC 15-3-545"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L1. \"Absolute\" is false for foreign objects (§ 15-3-545(B), unsigned); hedged, no exception stated."
+  },
+  {
+    "id": "MM-L1e",
+    "post_id": 4562,
+    "url": "/blog/medical-malpractice-limits-south-carolina/",
+    "field": "faq2",
+    "from": "Under S.C. Code § 15-79-125, you must serve a Notice of Intent to File Suit on each defendant at least <strong>90 days before filing</strong> your complaint. This notice must include a medical records authorization and a description of the alleged negligence. The statute of limitations is tolled during the 90-day period.",
+    "to": "Under S.C. Code § 15-79-125, before filing a malpractice lawsuit you must file a <strong>Notice of Intent to File Suit</strong> together with a qualified expert's affidavit (S.C. Code § 15-36-100), and serve it on each defendant. Filing the notice tolls the statute of limitations. The parties must then mediate, generally within 90 to 120 days of service, before the lawsuit can be filed.",
+    "authority": [
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L1 FAQ 3. No 90-day wait, no records-authorization requirement."
+  },
+  {
+    "id": "MM-L1f",
+    "post_id": 4562,
+    "url": "/blog/medical-malpractice-limits-south-carolina/",
+    "field": "faq3",
+    "from": "in medical malpractice cases before they can proceed to trial (S.C. Code § 15-79-125). A neutral mediator attempts to facilitate a settlement. If mediation is unsuccessful, the case proceeds to trial.",
+    "to": "in medical malpractice cases before the lawsuit is filed (S.C. Code § 15-79-125). A neutral mediator attempts to facilitate a settlement. If mediation is unsuccessful, the lawsuit can then be filed.",
+    "authority": [
+      "SC 15-79-125"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L1 FAQ 4. Mediation is pre-suit."
+  },
+  {
+    "id": "MM-L1g",
+    "post_id": 4562,
+    "url": "/blog/medical-malpractice-limits-south-carolina/",
+    "field": "faq4",
+    "from": "South Carolina's six-year statute of repose (S.C. Code § 15-3-545(B)) is an absolute deadline. No medical malpractice lawsuit can be filed more than six years after the negligent act, even if the injury was not discovered until later.",
+    "to": "South Carolina's six-year statute of repose (S.C. Code § 15-3-545) generally bars a medical malpractice lawsuit filed more than six years after the negligent act, even if the injury was not discovered until later.",
+    "authority": [
+      "SC 15-3-545"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L1 FAQ 5. (B) is the foreign-object rule, which has no six-year limit; subsection dropped rather than asserted. Georgia comparison sentence after it unchanged."
+  },
+  {
+    "id": "MM-L1h",
+    "post_id": 4562,
+    "url": "/blog/medical-malpractice-limits-south-carolina/",
+    "field": "faq5",
+    "from": "Each defendant is subject to the $350,000 per-defendant non-economic damage cap, which is why",
+    "to": "Each provider or institution is subject to its own non-economic damage cap ($596,001 for 2026), up to $1,788,002 in total for all defendants combined (S.C. Code § 15-32-220), which is why",
+    "authority": [
+      "SC 15-32-220"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L1 FAQ 6."
+  },
+  {
+    "id": "MM-L1i",
+    "post_id": 4562,
+    "url": "/blog/medical-malpractice-limits-south-carolina/",
+    "field": "content",
+    "from": "the <strong>South Carolina Medical Malpractice Act</strong> (S.C. Code § 15-79-10 et seq.), which sets rules for damage caps, filing procedures, expert requirements, and mandatory mediation.",
+    "to": "statutes that set rules for <strong>damage caps</strong> (S.C. Code § 15-32-220), <strong>pre-suit filing and mandatory mediation</strong> (S.C. Code § 15-79-125), and <strong>expert affidavits</strong> (S.C. Code § 15-36-100).",
+    "authority": [
+      "SC 15-32-220",
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L1. Chapter 79 begins at § 15-79-110; \"§ 15-79-10 et seq.\" does not exist. Replaced with the signed sections."
+  },
+  {
+    "id": "MM-L1j",
+    "post_id": 4562,
+    "url": "/blog/medical-malpractice-limits-south-carolina/",
+    "field": "content",
+    "from": "<td>Single healthcare provider</td>\n<td>$350,000</td>\n<td>S.C. Code § 15-32-220(A)</td>",
+    "to": "<td>Single healthcare provider</td>\n<td>$596,001 in 2026 (base $350,000, adjusted yearly)</td>\n<td>S.C. Code § 15-32-220</td>",
+    "authority": [
+      "SC 15-32-220"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L1 table. Subsection letters dropped (the institution cap is (B), the total (C))."
+  },
+  {
+    "id": "MM-L1k",
+    "post_id": 4562,
+    "url": "/blog/medical-malpractice-limits-south-carolina/",
+    "field": "content",
+    "from": "<td>Single institution (hospital, clinic)</td>\n<td>$350,000</td>\n<td>S.C. Code § 15-32-220(A)</td>",
+    "to": "<td>Single institution (hospital, clinic)</td>\n<td>$596,001 in 2026 (base $350,000, adjusted yearly)</td>\n<td>S.C. Code § 15-32-220</td>",
+    "authority": [
+      "SC 15-32-220"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L1 table."
+  },
+  {
+    "id": "MM-L1l",
+    "post_id": 4562,
+    "url": "/blog/medical-malpractice-limits-south-carolina/",
+    "field": "content",
+    "from": "<td>Total cap (all defendants combined)</td>\n<td>$1.05 million</td>\n<td>S.C. Code § 15-32-220(B)</td>",
+    "to": "<td>Total cap (all defendants combined)</td>\n<td>$1,788,002 in 2026 (base $1,050,000, adjusted yearly)</td>\n<td>S.C. Code § 15-32-220</td>",
+    "authority": [
+      "SC 15-32-220"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L1 table."
+  },
+  {
+    "id": "MM-L1m",
+    "post_id": 4562,
+    "url": "/blog/medical-malpractice-limits-south-carolina/",
+    "field": "content",
+    "from": "<p>It is worth noting that the South Carolina Supreme Court upheld these caps in <em>Platt v. CSX Transportation</em>, unlike Georgia where a similar cap was struck down as unconstitutional. The caps remain in effect and apply to all medical malpractice cases filed in South Carolina courts.</p>\n\n",
+    "to": "",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L1. Pure deletion: no such SC Supreme Court decision could be found (unverifiable case), and \"all … cases filed\" is wrong (the caps apply to causes of action arising after 2005-07-01). Surrounding paragraphs read on without it."
+  },
+  {
+    "id": "MM-L1n",
+    "post_id": 4562,
+    "url": "/blog/medical-malpractice-limits-south-carolina/",
+    "field": "content",
+    "from": "<td>Absolute outer limit (statute of repose)</td>\n<td>6 years from the negligent act</td>\n<td>S.C. Code § 15-3-545(B)</td>",
+    "to": "<td>Outer limit (statute of repose)</td>\n<td>Generally 6 years from the negligent act</td>\n<td>S.C. Code § 15-3-545</td>",
+    "authority": [
+      "SC 15-3-545"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L1 table. Repose is (A); (B) is the foreign-object rule."
+  },
+  {
+    "id": "MM-L1o",
+    "post_id": 4562,
+    "url": "/blog/medical-malpractice-limits-south-carolina/",
+    "field": "content",
+    "from": "<tr>\n<td>Minors under 6 years old</td>\n<td>Extended to their 8th birthday</td>\n<td>S.C. Code § 15-3-545(C)</td>\n</tr>\n",
+    "to": "",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L1. Pure deletion of an invented rule ((C) is the 1977 effective-date clause). The correct (D) row is in the Gillin packet (MM-G1)."
+  },
+  {
+    "id": "MM-L1p",
+    "post_id": 4562,
+    "url": "/blog/medical-malpractice-limits-south-carolina/",
+    "field": "content",
+    "from": "South Carolina's <strong>six-year statute of repose</strong> (S.C. Code § 15-3-545(B)) sets an absolute outer boundary on when a medical malpractice lawsuit can be filed. No claim can be brought more than six years after the date of the negligent act or omission, regardless of when the injury was discovered.",
+    "to": "South Carolina's <strong>six-year statute of repose</strong> (S.C. Code § 15-3-545) sets an outer boundary on when most medical malpractice lawsuits can be filed. Generally, no claim can be brought more than six years after the date of the negligent act or omission, regardless of when the injury was discovered.",
+    "authority": [
+      "SC 15-3-545"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L1. Wrong subsection; \"absolute\" is false for foreign objects."
+  },
+  {
+    "id": "MM-L1q",
+    "post_id": 4562,
+    "url": "/blog/medical-malpractice-limits-south-carolina/",
+    "field": "content",
+    "from": "Even under the discovery rule, the six-year statute of repose remains the absolute outer limit.",
+    "to": "Even under the discovery rule, the six-year statute of repose generally remains the outer limit.",
+    "authority": [
+      "SC 15-3-545"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L1 (same class as MM-L1p)."
+  },
+  {
+    "id": "MM-L1r",
+    "post_id": 4562,
+    "url": "/blog/medical-malpractice-limits-south-carolina/",
+    "field": "content",
+    "from": "the plaintiff must serve a <strong>Notice of Intent to File Suit</strong> on each defendant at least <strong>90 days before filing</strong> the complaint (S.C. Code § 15-79-125). This notice must include:</p>\n\n<ul>\n<li>An authorization for release of the patient's medical records</li>\n<li>A description of the alleged negligent acts</li>\n<li>The factual basis for the claim</li>\n</ul>\n\n<p>The 90-day notice period serves as a pre-litigation window for potential resolution. During this time, the statute of limitations is <strong>tolled</strong> (paused), so filing the notice does not consume your time to sue. However, failing to provide proper notice can result in dismissal of your lawsuit.</p>\n\n<p>This requirement means that practical preparation must begin even earlier than the deadline suggests. Your attorney needs time to obtain medical records, consult with experts, prepare the notice, and allow the full 90-day period to run before filing the complaint.</p>",
+    "to": "the plaintiff must file a <strong>Notice of Intent to File Suit</strong> together with a qualified expert's affidavit, and serve it on each defendant (S.C. Code §§ 15-79-125, 15-36-100). The expert's affidavit must specify at least one negligent act or omission.</p>\n\n<p>Filing the notice <strong>tolls</strong> (pauses) the statute of limitations, so it does not consume your time to sue. The parties must then mediate, generally within 90 to 120 days of service, and the lawsuit can be filed only if mediation fails.</p>\n\n<p>This requirement means that practical preparation must begin even earlier than the deadline suggests. Your attorney needs time to obtain medical records and to find a qualified expert who will sign the affidavit before the notice can be filed.</p>",
+    "authority": [
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L1. Whole Notice of Intent section: no 90-day wait, no records authorization; NOI is filed with the affidavit, tolls, then pre-suit mediation."
+  },
+  {
+    "id": "MM-L1s",
+    "post_id": 4562,
+    "url": "/blog/medical-malpractice-limits-south-carolina/",
+    "field": "content",
+    "from": "<a href=\"#mediation-requirement\">Mandatory Mediation Before Trial</a>",
+    "to": "<a href=\"#mediation-requirement\">Mandatory Mediation Before Filing Suit</a>",
+    "authority": [
+      "SC 15-79-125"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L1. TOC entry; matches MM-L1t."
+  },
+  {
+    "id": "MM-L1t",
+    "post_id": 4562,
+    "url": "/blog/medical-malpractice-limits-south-carolina/",
+    "field": "content",
+    "from": "<h2 id=\"mediation-requirement\">Mandatory Mediation Before Trial</h2>",
+    "to": "<h2 id=\"mediation-requirement\">Mandatory Mediation Before Filing Suit</h2>",
+    "authority": [
+      "SC 15-79-125"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L1. Heading."
+  },
+  {
+    "id": "MM-L1u",
+    "post_id": 4562,
+    "url": "/blog/medical-malpractice-limits-south-carolina/",
+    "field": "content",
+    "from": "in medical malpractice cases before they can proceed to trial (S.C. Code § 15-79-125). After the lawsuit is filed, the case must go through a mediation process where a neutral third party attempts to facilitate a settlement between the parties.",
+    "to": "in medical malpractice cases before the lawsuit is filed (S.C. Code § 15-79-125). After the Notice of Intent is served, the parties must go through a mediation process, generally within 90 to 120 days, where a neutral third party attempts to facilitate a settlement between them.",
+    "authority": [
+      "SC 15-79-125"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L1. \"After the lawsuit is filed\" is backwards."
+  },
+  {
+    "id": "MM-L1v",
+    "post_id": 4562,
+    "url": "/blog/medical-malpractice-limits-south-carolina/",
+    "field": "content",
+    "from": "If mediation is unsuccessful, the case proceeds to trial in the normal course.",
+    "to": "If mediation is unsuccessful, the lawsuit can then be filed.",
+    "authority": [
+      "SC 15-79-125"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L1."
+  },
+  {
+    "id": "MM-L1w",
+    "post_id": 4562,
+    "url": "/blog/medical-malpractice-limits-south-carolina/",
+    "field": "content",
+    "from": "<h3>Non-Economic Damages (Capped at $350,000 per defendant / $1.05M total)</h3>",
+    "to": "<h3>Non-Economic Damages (Capped at $596,001 per provider / $1,788,002 total in 2026)</h3>",
+    "authority": [
+      "SC 15-32-220"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L1 \"Capped at\" heading."
+  },
+  {
+    "id": "MM-L1x",
+    "post_id": 4562,
+    "url": "/blog/medical-malpractice-limits-south-carolina/",
+    "field": "content",
+    "from": " The three-year statute of limitations runs from the date of death (S.C. Code § 15-3-545(A)).",
+    "to": "",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L1. Pure deletion: med-mal wrongful-death accrual is not in the signed pack and is on Gillin's open list (WD-G1). The paragraph still reads \"…file a wrongful death claim.\""
+  },
+  {
+    "id": "MM-L1y",
+    "post_id": 4562,
+    "url": "/blog/medical-malpractice-limits-south-carolina/",
+    "field": "content",
+    "from": "Each defendant is subject to the <strong>$350,000 per-defendant non-economic damage cap</strong>, which is why",
+    "to": "Each provider or institution is subject to its own <strong>non-economic damage cap ($596,001 in 2026)</strong>, up to <strong>$1,788,002</strong> for all defendants combined (S.C. Code § 15-32-220), which is why",
+    "authority": [
+      "SC 15-32-220"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L1 \"Who can be sued\"."
+  },
+  {
+    "id": "MM-L1z",
+    "post_id": 4562,
+    "url": "/blog/medical-malpractice-limits-south-carolina/",
+    "field": "content",
+    "from": "<li><strong>90-day pre-suit notice requirement</strong> — you must notify defendants before filing, compressing your effective timeline</li>",
+    "to": "<li><strong>Pre-suit notice and expert affidavit</strong> — you must file a Notice of Intent with an expert's affidavit and mediate before you can file suit</li>",
+    "authority": [
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L1."
+  },
+  {
+    "id": "MM-L1aa",
+    "post_id": 4562,
+    "url": "/blog/medical-malpractice-limits-south-carolina/",
+    "field": "content",
+    "from": "<li><strong>Mandatory mediation</strong> — an additional procedural step before trial</li>",
+    "to": "<li><strong>Mandatory mediation</strong> — an additional procedural step before filing suit</li>",
+    "authority": [
+      "SC 15-79-125"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L1."
+  },
+  {
+    "id": "MM-L1ab",
+    "post_id": 4562,
+    "url": "/blog/medical-malpractice-limits-south-carolina/",
+    "field": "content",
+    "from": "but the 90-day pre-suit notice requirement and the need for expert review mean that preparation must begin months before the deadline.",
+    "to": "but the pre-suit notice, expert affidavit and mediation requirements mean that preparation must begin months before the deadline.",
+    "authority": [
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L1."
+  },
+  {
+    "id": "MM-L2a",
+    "post_id": 4349,
+    "url": "/blog/charleston-medical-malpractice-hospital-claim-south-carolina/",
+    "field": "takeaways",
+    "from": "Damages caps may apply in SC.",
+    "to": "South Carolina caps non-economic damages at $596,001 per provider or institution and $1,788,002 in total for 2026 (S.C. Code § 15-32-220).",
+    "authority": [
+      "SC 15-32-220"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L2 (low). Understated: the caps do apply."
+  },
+  {
+    "id": "MM-L2b",
+    "post_id": 4349,
+    "url": "/blog/charleston-medical-malpractice-hospital-claim-south-carolina/",
+    "field": "faq1",
+    "from": "as part of the mandatory 90-day Notice of Intent to File Suit (S.C. Code section 15-79-125). The expert must be licensed, must practice or have recently practiced in the same specialty as the defendant, and must have practiced within the past five years.",
+    "to": "filed together with the Notice of Intent to File Suit (S.C. Code section 15-79-125). The expert must be licensed and either board certified in the relevant specialty or have recently practiced or taught in it (S.C. Code section 15-36-100).",
+    "authority": [
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L2 FAQ 2. Uses the signed § 15-36-100 wording (\"recent active practice or teaching\"); the statute's \"three of the last five years\" is in the Gillin packet (MM-G3) if he wants it stated."
+  },
+  {
+    "id": "MM-L2c",
+    "post_id": 4349,
+    "url": "/blog/charleston-medical-malpractice-hospital-claim-south-carolina/",
+    "field": "faq2",
+    "from": "However, you must serve a 90-day pre-suit notice before filing, so the effective deadline is earlier. South Carolina also has a six-year statute of repose that bars claims",
+    "to": "Filing the required Notice of Intent to File Suit tolls that deadline (S.C. Code section 15-79-125), but the notice must be filed with an expert's affidavit, so preparation has to start well before it. South Carolina also has a six-year statute of repose that generally bars claims",
+    "authority": [
+      "SC 15-79-125",
+      "SC 15-36-100",
+      "SC 15-3-545"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L2 FAQ 3. The notice tolls; it does not shorten the deadline."
+  },
+  {
+    "id": "MM-L2d",
+    "post_id": 4349,
+    "url": "/blog/charleston-medical-malpractice-hospital-claim-south-carolina/",
+    "field": "faq3",
+    "from": "so the limit that applies today is higher than the base.",
+    "to": "so for 2026 the limits are $596,001 and $1,788,002.",
+    "authority": [
+      "SC 15-32-220"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L2 (low). States the signed 2026 figures."
+  },
+  {
+    "id": "MM-L2e",
+    "post_id": 4349,
+    "url": "/blog/charleston-medical-malpractice-hospital-claim-south-carolina/",
+    "field": "faq5",
+    "from": "you must serve a Notice of Intent to File Suit on each defendant at least 90 days before filing the complaint. The notice must include an expert affidavit from a qualified medical professional",
+    "to": "you must file a Notice of Intent to File Suit together with an expert affidavit, serve it on each defendant, and mediate, generally within 90 to 120 days of service, before filing the complaint (S.C. Code section 15-79-125). The affidavit must come from a qualified medical professional",
+    "authority": [
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L2 FAQ 6."
+  },
+  {
+    "id": "MM-L2f",
+    "post_id": 4349,
+    "url": "/blog/charleston-medical-malpractice-hospital-claim-south-carolina/",
+    "field": "content",
+    "from": "<li><strong>File a Notice of Intent to File Suit</strong> with each prospective defendant at least <strong>90 days before filing</strong> the complaint (S.C. Code § 15-79-125)</li>",
+    "to": "<li><strong>File a Notice of Intent to File Suit</strong> and serve it on each prospective defendant (S.C. Code § 15-79-125)</li>",
+    "authority": [
+      "SC 15-79-125"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L2 body."
+  },
+  {
+    "id": "MM-L2g",
+    "post_id": 4349,
+    "url": "/blog/charleston-medical-malpractice-hospital-claim-south-carolina/",
+    "field": "content",
+    "from": "<p>This pre-suit notice requirement serves as a screening mechanism",
+    "to": "<p>Filing the notice tolls the statute of limitations, and the parties must then mediate, generally within 90 to 120 days of service, before the lawsuit can be filed. This pre-suit notice requirement serves as a screening mechanism",
+    "authority": [
+      "SC 15-79-125"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L2 body (adds the tolling and pre-suit mediation the 90-day wording replaced)."
+  },
+  {
+    "id": "MM-L2h",
+    "post_id": 4349,
+    "url": "/blog/charleston-medical-malpractice-hospital-claim-south-carolina/",
+    "field": "content",
+    "from": "<li>The expert must specialize or have specialized in the same field as the defendant (or a related field)</li>\n<li>The expert must have practiced medicine within the past five years</li>",
+    "to": "<li>The expert must be board certified in the relevant specialty, or have recently practiced or taught in it</li>",
+    "authority": [
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L2 body expert list. \"Within the past five years\" misstates § 15-36-100(A)(2)."
+  },
+  {
+    "id": "MM-L2i",
+    "post_id": 4349,
+    "url": "/blog/charleston-medical-malpractice-hospital-claim-south-carolina/",
+    "field": "content",
+    "from": "so the limit that applies to your case is higher than the base — ask your lawyer for the current figure.",
+    "to": "so the limit that applies to your case is higher than the base: for 2026, $596,001 per provider or institution and $1,788,002 in total.",
+    "authority": [
+      "SC 15-32-220"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L2 (low)."
+  },
+  {
+    "id": "MM-L2j",
+    "post_id": 4349,
+    "url": "/blog/charleston-medical-malpractice-hospital-claim-south-carolina/",
+    "field": "content",
+    "from": "<li><strong>Punitive damages</strong> — available in cases of gross negligence, willful misconduct, or reckless disregard for patient safety;",
+    "to": "<li><strong>Punitive damages</strong> — awarded only in rare cases and must be proved by clear and convincing evidence (S.C. Code § 15-33-135);",
+    "authority": [
+      "SC 15-33-135"
+    ],
+    "class": "apply",
+    "note": "New on re-read (same class as 3518, fixed 2026-09-28): gross negligence is not the SC punitive standard. Uses the wording already approved on 3518; no conduct standard stated."
+  },
+  {
+    "id": "MM-L2k",
+    "post_id": 4349,
+    "url": "/blog/charleston-medical-malpractice-hospital-claim-south-carolina/",
+    "field": "content",
+    "from": "<td>90-day Notice of Intent with expert affidavit</td>",
+    "to": "<td>Notice of Intent filed with expert affidavit, then pre-suit mediation (S.C. Code § 15-79-125)</td>",
+    "authority": [
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L2 table."
+  },
+  {
+    "id": "MM-L2l",
+    "post_id": 4349,
+    "url": "/blog/charleston-medical-malpractice-hospital-claim-south-carolina/",
+    "field": "content",
+    "from": "; however, the 90-day notice requirement means you must begin the process at least 90 days before the three-year deadline</li>",
+    "to": "; filing the Notice of Intent tolls the deadline, but the notice must be filed with an expert's affidavit, so begin well before the deadline</li>",
+    "authority": [
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L2 filing-deadlines list."
+  },
+  {
+    "id": "MM-L2m",
+    "post_id": 4349,
+    "url": "/blog/charleston-medical-malpractice-hospital-claim-south-carolina/",
+    "field": "content",
+    "from": "regardless of when the injury is discovered; after six years, the claim is barred</li>",
+    "to": "regardless of when the injury is discovered; after six years, the claim is generally barred</li>",
+    "authority": [
+      "SC 15-3-545"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L2 (foreign-object exception, same class as MM-L1p)."
+  },
+  {
+    "id": "MM-L2n",
+    "post_id": 4349,
+    "url": "/blog/charleston-medical-malpractice-hospital-claim-south-carolina/",
+    "field": "content",
+    "from": "\n<li><strong>Minors</strong> — in South Carolina, minors generally have until their <strong>eighth birthday</strong> for birth injury claims, subject to certain conditions</li>",
+    "to": "",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L2. Pure deletion of an invented rule; the (D) sentence is MM-G1 (Gillin)."
+  },
+  {
+    "id": "MM-L2o",
+    "post_id": 4349,
+    "url": "/blog/charleston-medical-malpractice-hospital-claim-south-carolina/",
+    "field": "content",
+    "from": "prepare and serve the 90-day pre-suit notice with the required expert affidavit",
+    "to": "prepare, file and serve the pre-suit notice with the required expert affidavit",
+    "authority": [
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L2."
+  },
+  {
+    "id": "MM-L3a",
+    "post_id": 4363,
+    "url": "/blog/emergency-room-errors-charleston-misdiagnosis-malpractice/",
+    "field": "takeaways",
+    "from": "with an absolute six-year repose period.",
+    "to": "with a six-year repose period.",
+    "authority": [
+      "SC 15-3-545"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L3 (\"absolute\" is false for foreign objects). The Georgia sentence after it (O.C.G.A. § 9-3-73) is GA-3."
+  },
+  {
+    "id": "MM-L3b",
+    "post_id": 4363,
+    "url": "/blog/emergency-room-errors-charleston-misdiagnosis-malpractice/",
+    "field": "faq1",
+    "from": "as part of the 90-day pre-suit notice (S.C. Code section 15-79-125).",
+    "to": "filed together with the pre-suit Notice of Intent to File Suit (S.C. Code sections 15-79-125 and 15-36-100).",
+    "authority": [
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L3 FAQ 2."
+  },
+  {
+    "id": "MM-L3c",
+    "post_id": 4363,
+    "url": "/blog/emergency-room-errors-charleston-misdiagnosis-malpractice/",
+    "field": "faq2",
+    "from": "The 90-day pre-suit notice means you must start earlier.",
+    "to": "Filing the pre-suit notice tolls the deadline, but it must be filed with an expert's affidavit, so you must start early.",
+    "authority": [
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L3 FAQ 3."
+  },
+  {
+    "id": "MM-L3d",
+    "post_id": 4363,
+    "url": "/blog/emergency-room-errors-charleston-misdiagnosis-malpractice/",
+    "field": "faq4",
+    "from": "a $350,000 base per provider, adjusted annually for inflation.",
+    "to": "a $350,000 base per provider, adjusted annually for inflation ($596,001 for 2026).",
+    "authority": [
+      "SC 15-32-220"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md (low): gives the signed 2026 figure."
+  },
+  {
+    "id": "MM-L3e",
+    "post_id": 4363,
+    "url": "/blog/emergency-room-errors-charleston-misdiagnosis-malpractice/",
+    "field": "content",
+    "from": "This statute requires that the plaintiff provide written notice of intent to file a medical malpractice claim to each prospective defendant at least ninety days before filing the lawsuit. The notice must include the factual basis for the claim and must be accompanied by an affidavit from a qualified expert witness.",
+    "to": "This statute requires that the plaintiff file a notice of intent to file a medical malpractice claim, together with an affidavit from a qualified expert witness, and serve it on each prospective defendant. Filing the notice tolls the statute of limitations, and the parties must then mediate, generally within 90 to 120 days of service, before the lawsuit can be filed.",
+    "authority": [
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L3."
+  },
+  {
+    "id": "MM-L3f",
+    "post_id": 4363,
+    "url": "/blog/emergency-room-errors-charleston-misdiagnosis-malpractice/",
+    "field": "content",
+    "from": "all before the ninety-day notice clock even starts.",
+    "to": "all before the notice can be filed.",
+    "authority": [
+      "SC 15-79-125"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L3."
+  },
+  {
+    "id": "MM-L3g",
+    "post_id": 4363,
+    "url": "/blog/emergency-room-errors-charleston-misdiagnosis-malpractice/",
+    "field": "content",
+    "from": "must have practiced or taught in the same or a similar medical specialty as the defendant within the three years preceding the alleged act of malpractice,",
+    "to": "must be board certified in the relevant specialty or have recently practiced or taught in it,",
+    "authority": [
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L3. The statute measures the window before the opinion, not before the act; signed wording used."
+  },
+  {
+    "id": "MM-L3h",
+    "post_id": 4363,
+    "url": "/blog/emergency-room-errors-charleston-misdiagnosis-malpractice/",
+    "field": "content",
+    "from": "This absolute deadline applies even if the patient had no way of knowing about the error within that period. The only exceptions are for cases involving foreign objects left in the body and for claims involving minors under the age of six.",
+    "to": "This outer deadline generally applies even if the patient had no way of knowing about the error within that period. Different rules apply to foreign objects left in the body and to claims of minors.",
+    "authority": [
+      "SC 15-3-545"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L3. \"Under the age of six\" is invented; the page's existing statement that exceptions exist is kept (as on pillar 3608, Gillin-reviewed) without asserting their terms."
+  },
+  {
+    "id": "MM-L3i",
+    "post_id": 4363,
+    "url": "/blog/emergency-room-errors-charleston-misdiagnosis-malpractice/",
+    "field": "content",
+    "from": "Because the pre-suit notice requirement adds at least ninety days to the timeline, the effective deadline is even shorter than three years.",
+    "to": "Because the pre-suit notice must be filed with an expert's affidavit, preparation has to begin well before the three-year deadline.",
+    "authority": [
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L3."
+  },
+  {
+    "id": "MM-L3j",
+    "post_id": 4363,
+    "url": "/blog/emergency-room-errors-charleston-misdiagnosis-malpractice/",
+    "field": "content",
+    "from": "<td>90-day notice with expert affidavit (S.C. Code Section 15-79-125)</td>",
+    "to": "<td>Notice of intent filed with expert affidavit, then pre-suit mediation (S.C. Code Section 15-79-125)</td>",
+    "authority": [
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L3 table."
+  },
+  {
+    "id": "MM-L3k",
+    "post_id": 4363,
+    "url": "/blog/emergency-room-errors-charleston-misdiagnosis-malpractice/",
+    "field": "content",
+    "from": "<td>Same or similar specialty, practiced within 3 years (S.C. Code Section 15-36-100)</td>",
+    "to": "<td>Board certified in the specialty, or recent practice or teaching in it (S.C. Code Section 15-36-100)</td>",
+    "authority": [
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L3 table."
+  },
+  {
+    "id": "MM-L3l",
+    "post_id": 4363,
+    "url": "/blog/emergency-room-errors-charleston-misdiagnosis-malpractice/",
+    "field": "excerpt",
+    "from": "Emergency room misdiagnosis is the most common malpractice claim.",
+    "to": "Emergency room misdiagnosis is one of the most common malpractice claims.",
+    "authority": [],
+    "class": "source-or-cut",
+    "note": "Unsourced superlative (excerpt = Article description). The body itself says \"one of the leading causes\". Same wording in the takeaways and the H2. Hedge offered; or source it."
+  },
+  {
+    "id": "MM-L4a",
+    "post_id": 4195,
+    "url": "/medical-malpractice-lawyers/birth-injury/",
+    "field": "faq0",
+    "from": " South Carolina allows claims to be filed within the standard limitations period after the child reaches the age of majority.",
+    "to": "",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L4. Pure deletion of the false SC sentence (§ 15-3-545(D) caps minority tolling). Georgia sentence unchanged. The correct SC sentence is MM-G1. Also FAQPage schema."
+  },
+  {
+    "id": "MM-L4b",
+    "post_id": 4195,
+    "url": "/medical-malpractice-lawyers/birth-injury/",
+    "field": "content",
+    "from": " South Carolina allows minors to file suit within the normal limitations period after reaching the age of majority. These extended deadlines give",
+    "to": " This extended deadline gives",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L4 body. Deletes the false SC sentence; the following sentence now refers to the Georgia rule only. SC sentence to add is MM-G1."
+  },
+  {
+    "id": "WD-L1a",
+    "post_id": 4861,
+    "url": "/resources/south-carolina-wrongful-death-settlement-value/",
+    "field": "content",
+    "from": "Government-defendant claims can carry much shorter notice deadlines.",
+    "to": "Claims against a government defendant generally must be filed within two years instead (S.C. Code § 15-78-110), or three if a verified claim is filed with the agency within one year (S.C. Code § 15-78-80).",
+    "authority": [
+      "SC 15-78-110",
+      "SC 15-78-80"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-wrongful-death.md L1. The SCTCA has no notice requirement."
+  },
+  {
+    "id": "WD-L1b",
+    "post_id": 4861,
+    "url": "/resources/south-carolina-wrongful-death-settlement-value/",
+    "field": "faq4",
+    "from": "If a government entity is a defendant, notice deadlines can be much shorter.",
+    "to": "Claims against a government defendant generally must be filed within two years instead (S.C. Code § 15-78-110), or three if a verified claim is filed with the agency within one year (S.C. Code § 15-78-80).",
+    "authority": [
+      "SC 15-78-110",
+      "SC 15-78-80"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-wrongful-death.md L1 (FAQ[4] + FAQPage)."
+  },
+  {
+    "id": "WD-L1c",
+    "post_id": 4861,
+    "url": "/resources/south-carolina-wrongful-death-settlement-value/",
+    "field": "faq3",
+    "from": "but that cap is removed for DUI, felony, or intent-to-harm conduct.",
+    "to": "but that cap is removed when the defendant intended to harm, was convicted of a felony for the conduct, or had judgment substantially impaired by alcohol or drugs.",
+    "authority": [
+      "SC 15-32-530"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-wrongful-death.md L1 (low). \"Felony conduct\" is the 4x/$2M tier, not uncapped; uncapped needs a felony conviction. Wording follows the signed § 15-32-530 claim."
+  },
+  {
+    "id": "WD-L1d",
+    "post_id": 4861,
+    "url": "/resources/south-carolina-wrongful-death-settlement-value/",
+    "field": "faq3",
+    "from": "$600,000 per occurrence.",
+    "to": "$600,000 per occurrence, and the same limits apply to a claim against a charitable organization, which can include a nonprofit hospital or nursing home (S.C. Code § 33-56-180).",
+    "authority": [
+      "SC 33-56-180",
+      "SC 15-78-120"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-wrongful-death.md L1. Charity cap missing from the \"no cap\" answer (the office page's E1 fix names it)."
+  },
+  {
+    "id": "WD-L1e",
+    "post_id": 4861,
+    "url": "/resources/south-carolina-wrongful-death-settlement-value/",
+    "field": "faq5",
+    "from": "and that cap is removed entirely for DUI, felony conduct, or intent to harm.",
+    "to": "and that cap is removed entirely for intent to harm, a felony conviction arising from the conduct, or judgment substantially impaired by alcohol or drugs.",
+    "authority": [
+      "SC 15-32-530"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-wrongful-death.md L1 (low)."
+  },
+  {
+    "id": "WD-L1f",
+    "post_id": 4861,
+    "url": "/resources/south-carolina-wrongful-death-settlement-value/",
+    "field": "content",
+    "from": "removed entirely when the defendant was driving under the influence, convicted of a felony from the conduct, or acted with intent to harm.",
+    "to": "removed entirely when the defendant's judgment was substantially impaired by alcohol or drugs, when the defendant was convicted of a felony arising from the conduct, or when the defendant acted with intent to harm.",
+    "authority": [
+      "SC 15-32-530"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-wrongful-death.md L1 (low). § 15-32-530(C)(3) is substantial impairment, not \"driving under the influence\"."
+  },
+  {
+    "id": "WD-L1g",
+    "post_id": 4861,
+    "url": "/resources/south-carolina-wrongful-death-settlement-value/",
+    "field": "content",
+    "from": "and bars punitive damages against the government.</p>",
+    "to": "and bars punitive damages against the government. Claims against a charitable organization, which can include a nonprofit hospital or nursing home, are limited to the same $300,000 and $600,000 amounts (S.C. Code § 33-56-180).</p>",
+    "authority": [
+      "SC 33-56-180",
+      "SC 15-78-120"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-wrongful-death.md L1 (low). Appended in \"Government defendant caps\"."
+  },
+  {
+    "id": "WD-L1h",
+    "post_id": 4861,
+    "url": "/resources/south-carolina-wrongful-death-settlement-value/",
+    "field": "takeaways",
+    "from": "(S.C. Code § 15-51)",
+    "to": "(S.C. Code § 15-51-10 et seq.)",
+    "authority": [
+      "SC 15-51-10"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-wrongful-death.md L1 (low). Chapter cite."
+  },
+  {
+    "id": "WD-L1i",
+    "post_id": 4861,
+    "url": "/resources/south-carolina-wrongful-death-settlement-value/",
+    "field": "faq1",
+    "from": "(S.C. Code § 15-51)",
+    "to": "(S.C. Code § 15-51-10 et seq.)",
+    "authority": [
+      "SC 15-51-10"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-wrongful-death.md L1 (low)."
+  },
+  {
+    "id": "WD-L1j",
+    "post_id": 4861,
+    "url": "/resources/south-carolina-wrongful-death-settlement-value/",
+    "field": "content",
+    "from": "<h3>The wrongful-death claim (S.C. Code § 15-51)</h3>",
+    "to": "<h3>The wrongful-death claim (S.C. Code § 15-51-10 et seq.)</h3>",
+    "authority": [
+      "SC 15-51-10"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-wrongful-death.md L1 (low)."
+  },
+  {
+    "id": "WD-L2",
+    "post_id": 4099,
+    "url": "/wrongful-death-lawyers/fatal-car-accident/",
+    "field": "content",
+    "from": "Damages are distributed among the surviving spouse, children, and in some cases parents, based on their dependency on the deceased.",
+    "to": "The recovery is divided among them as it would be if the deceased had died without a will (S.C. Code § 15-51-40).",
+    "authority": [
+      "SC 15-51-40"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-wrongful-death.md L2. SC distribution follows intestacy shares; dependency plays no part. SC-only sentence. (The beneficiary order is not in the signed § 15-51-20 claim, so it is not stated.)"
+  },
+  {
+    "id": "WD-L3a",
+    "post_id": 4099,
+    "url": "/wrongful-death-lawyers/fatal-car-accident/",
+    "field": "faq1",
+    "from": "funeral and burial costs, and loss of companionship and support.",
+    "to": "funeral and burial costs, and loss of companionship and support. In South Carolina, the wrongful death award is proportioned to the loss the death caused each beneficiary (S.C. Code § 15-51-40), and the deceased's own pre-death claim is pursued by the estate in a separate survival action (S.C. Code § 15-5-90).",
+    "authority": [
+      "SC 15-51-40",
+      "SC 15-5-90"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-wrongful-death.md L3 class, new surface on re-read (FAQ[1] + FAQPage). SC-only append; the unscoped \"full value of the deceased's life\" sentence is left for the Georgia reviewer (GA-5)."
+  },
+  {
+    "id": "WD-L3b",
+    "post_id": 4101,
+    "url": "/wrongful-death-lawyers/medical-malpractice-death/",
+    "field": "content",
+    "from": "The survival action covers the deceased's pre-death pain and suffering, medical expenses incurred before death, and funeral and burial costs.</p>",
+    "to": "The survival action covers the deceased's pre-death pain and suffering, medical expenses incurred before death, and funeral and burial costs. In South Carolina, the wrongful death award is proportioned to the loss the death caused each beneficiary (S.C. Code § 15-51-40), and the survival action is brought by the estate (S.C. Code § 15-5-90).</p>",
+    "authority": [
+      "SC 15-51-40",
+      "SC 15-5-90"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-wrongful-death.md L3. SC-only append; GA \"full value\" sentence left for GA-5."
+  },
+  {
+    "id": "WD-L3c",
+    "post_id": 4101,
+    "url": "/wrongful-death-lawyers/medical-malpractice-death/",
+    "field": "faq4",
+    "from": "Georgia and South Carolina allow both wrongful death and survival actions to maximize the family's total recovery.",
+    "to": "Georgia and South Carolina allow both wrongful death and survival actions to maximize the family's total recovery. In South Carolina, the wrongful death award is proportioned to the loss the death caused each beneficiary (S.C. Code § 15-51-40).",
+    "authority": [
+      "SC 15-51-40",
+      "SC 15-5-90"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-wrongful-death.md L3 (FAQ[4] + FAQPage). SC-only append."
+  },
+  {
+    "id": "WD-L3d",
+    "post_id": 4104,
+    "url": "/wrongful-death-lawyers/nursing-home-wrongful-death/",
+    "field": "content",
+    "from": "funeral costs, and loss of companionship. In cases involving willful neglect or abuse,",
+    "to": "funeral costs, and loss of companionship. In South Carolina, the wrongful death award is proportioned to the loss the death caused each beneficiary (S.C. Code § 15-51-40), and the deceased's own pre-death claim is pursued by the estate in a separate survival action (S.C. Code § 15-5-90). In cases involving willful neglect or abuse,",
+    "authority": [
+      "SC 15-51-40",
+      "SC 15-5-90"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-wrongful-death.md L3. SC-only insert."
+  },
+  {
+    "id": "WD-L3e",
+    "post_id": 4105,
+    "url": "/wrongful-death-lawyers/drowning-swimming-pool-death/",
+    "field": "content",
+    "from": "S.C. Code § 15-51-10 et seq.</a>) provides similar remedies.</p>",
+    "to": "S.C. Code § 15-51-10 et seq.</a>) instead lets the jury award damages proportioned to the loss the death caused each beneficiary (S.C. Code § 15-51-40).</p>",
+    "authority": [
+      "SC 15-51-40"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-wrongful-death.md L3. The SC sentence claimed Georgia's full-value measure by reference."
+  },
+  {
+    "id": "WD-L3f",
+    "post_id": 4106,
+    "url": "/wrongful-death-lawyers/pedestrian-cyclist-fatality/",
+    "field": "content",
+    "from": " and South Carolina's (<a href=\"https://www.scstatehouse.gov/code/t15c051.php\" target=\"_blank\" rel=\"noopener\">S.C. Code § 15-51-10 et seq.</a>), families may recover the full value of the deceased's life, including future earnings and contributions, pre-death pain and suffering, medical expenses, funeral costs, and loss of companionship.",
+    "to": ", families may recover the full value of the deceased's life, including future earnings and contributions, pre-death pain and suffering, medical expenses, funeral costs, and loss of companionship. Under South Carolina's (<a href=\"https://www.scstatehouse.gov/code/t15c051.php\" target=\"_blank\" rel=\"noopener\">S.C. Code § 15-51-10 et seq.</a>), the jury awards damages proportioned to the loss the death caused each beneficiary (S.C. Code § 15-51-40), and the deceased's own pre-death claim is pursued by the estate in a separate survival action (S.C. Code § 15-5-90).",
+    "authority": [
+      "SC 15-51-10",
+      "SC 15-51-40",
+      "SC 15-5-90"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-wrongful-death.md L3. Removes South Carolina from the Georgia full-value sentence and states the SC measure; Georgia wording unchanged."
+  },
+  {
+    "id": "WD-L4",
+    "post_id": 4104,
+    "url": "/wrongful-death-lawyers/nursing-home-wrongful-death/",
+    "field": "faq2",
+    "from": "while South Carolina requires clear and convincing evidence of willful conduct.",
+    "to": "while in South Carolina punitive damages require recklessness, wilfulness or malice (S.C. Code § 15-51-40), must be proved by clear and convincing evidence (S.C. Code § 15-33-135), and are generally capped at the greater of three times compensatory damages or $739,245 for 2026, a figure adjusted each year (S.C. Code § 15-32-530).",
+    "authority": [
+      "SC 15-51-40",
+      "SC 15-33-135",
+      "SC 15-32-530"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-wrongful-death.md L4 (FAQ[2] + FAQPage). The answer implied SC has no punitive cap. Georgia half unchanged."
+  },
+  {
+    "id": "WD-L5a",
+    "post_id": 4101,
+    "url": "/wrongful-death-lawyers/medical-malpractice-death/",
+    "field": "content",
+    "from": "which requires a Notice of Intent to File Suit accompanied by an expert opinion before a medical malpractice wrongful death lawsuit can proceed.",
+    "to": "which requires a Notice of Intent to File Suit, filed together with a qualified expert's affidavit (S.C. Code § 15-36-100), and pre-suit mediation before a medical malpractice wrongful death lawsuit can be filed.",
+    "authority": [
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-wrongful-death.md L5."
+  },
+  {
+    "id": "WD-L5b",
+    "post_id": 4101,
+    "url": "/wrongful-death-lawyers/medical-malpractice-death/",
+    "field": "content",
+    "from": "According to research published by <a href=\"https://pubmed.ncbi.nlm.nih.gov/\" target=\"_blank\" rel=\"noopener\">Johns Hopkins University</a>, medical errors are the third leading cause of death in the United States, claiming an estimated 250,000 lives annually. These preventable deaths include",
+    "to": "Preventable medical deaths include",
+    "authority": [],
+    "class": "apply",
+    "note": "source-or-cut, clean cut. data/facts/remediation-2026-09-28-charleston-wrongful-death.md L5: unsourced and contested statistic (the link is the PubMed home page)."
+  },
+  {
+    "id": "WD-L6a",
+    "post_id": 4102,
+    "url": "/wrongful-death-lawyers/workplace-fatality/",
+    "field": "faq3",
+    "from": "OSHA investigates all workplace fatalities and may issue citations",
+    "to": "OSHA investigates many workplace fatalities and may issue citations",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-wrongful-death.md L6 (low). Overstatement: OSHA does not investigate every workplace death (e.g. self-employed workers, many public employees). Non-legal hedge."
+  },
+  {
+    "id": "WD-L6b",
+    "post_id": 4102,
+    "url": "/wrongful-death-lawyers/workplace-fatality/",
+    "field": "content",
+    "from": "OSHA investigates all workplace fatalities, and their findings",
+    "to": "OSHA investigates many workplace fatalities, and their findings",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-charleston-wrongful-death.md L6 (low). Same as WD-L6a."
+  },
+  {
+    "id": "WD-L8",
+    "post_id": 4106,
+    "url": "/wrongful-death-lawyers/pedestrian-cyclist-fatality/",
+    "field": "faq4",
+    "from": "Claims against government entities for unsafe road design may have shorter notice requirements.",
+    "to": "Claims against government entities for unsafe road design may have shorter notice requirements in Georgia; South Carolina has no notice requirement, but suit generally must be filed within two years (S.C. Code § 15-78-110), or three if a verified claim is filed with the agency within one year (S.C. Code § 15-78-80).",
+    "authority": [
+      "SC 15-78-80",
+      "SC 15-78-110"
+    ],
+    "class": "apply",
+    "note": "New on re-read: same sctca-shorter-notice-hedge class fixed on 4061 FAQ5 and 4054 FAQ4 today. FAQ[4] + FAQPage. Georgia notice wording kept, scoped to Georgia (the page body already states Georgia ante litem)."
+  },
+  {
+    "id": "NC-L2a",
+    "post_id": 4617,
+    "url": "/resources/dangerous-roads-north-charleston/",
+    "field": "faq1",
+    "from": "Under the South Carolina Tort Claims Act (S.C. Code § 15-78-80), government entities",
+    "to": "Under the South Carolina Tort Claims Act, government entities",
+    "authority": [
+      "SC 15-78-80"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-north-charleston-car.md L2. § 15-78-80 is the optional verified claim, not the liability provision; cite dropped (the answer cites §§ 15-78-110 and 15-78-80 correctly later)."
+  },
+  {
+    "id": "NC-L2b",
+    "post_id": 4617,
+    "url": "/resources/dangerous-roads-north-charleston/",
+    "field": "content",
+    "from": "under the South Carolina Tort Claims Act (<a href=\"https://www.scstatehouse.gov/code/t15c078.php\" target=\"_blank\" rel=\"noopener\">S.C. Code § 15-78-80</a>).",
+    "to": "under the South Carolina Tort Claims Act (<a href=\"https://www.scstatehouse.gov/code/t15c078.php\" target=\"_blank\" rel=\"noopener\">S.C. Code § 15-78-110</a>), extended to three years only if a verified claim is filed with the agency within one year (S.C. Code § 15-78-80).",
+    "authority": [
+      "SC 15-78-110",
+      "SC 15-78-80"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-north-charleston-car.md L2."
+  },
+  {
+    "id": "NC-L2c",
+    "post_id": 4617,
+    "url": "/resources/dangerous-roads-north-charleston/",
+    "field": "takeaways",
+    "from": "applies to all injury claims on these roads, and government entities may share liability for known design deficiencies.",
+    "to": "applies to most injury claims on these roads; claims against government entities, which may share liability for known design deficiencies, generally must be filed within two years (<strong>S.C. Code § 15-78-110</strong>).",
+    "authority": [
+      "SC 15-3-530",
+      "SC 15-78-110"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-north-charleston-car.md L2. \"All\" contradicts the SCTCA deadline."
+  },
+  {
+    "id": "NC-L2d",
+    "post_id": 4617,
+    "url": "/resources/dangerous-roads-north-charleston/",
+    "field": "content",
+    "from": "North Charleston consistently ranks among the most dangerous areas in South Carolina for traffic collisions. With a population exceeding 131,000 and major freight corridors bisecting residential neighborhoods, the city sees a disproportionate share of serious and fatal crashes.",
+    "to": "North Charleston's major freight corridors bisect residential neighborhoods, and the city sees serious and fatal crashes on them every year.",
+    "authority": [],
+    "class": "apply",
+    "note": "source-or-cut, clean cut. data/facts/remediation-2026-09-28-north-charleston-car.md L2 \"not law\": population 131,000 (2020 census 114,852) and two unsourced rankings removed."
+  },
+  {
+    "id": "NC-L4a",
+    "post_id": 4337,
+    "url": "/blog/ashley-phosphate-road-i-26-dangerous-intersection-charleston/",
+    "field": "faq2",
+    "from": "For wrongful death claims, the deadline is three years from the date of death (S.C. Code § 15-51-20). However, evidence disappears quickly — traffic camera footage is typically overwritten within 30-72 hours — so contacting",
+    "to": "Wrongful death claims generally must also be filed within three years (S.C. Code § 15-3-530) and are brought by the personal representative of the estate (S.C. Code § 15-51-20). However, evidence disappears quickly, so contacting",
+    "authority": [
+      "SC 15-3-530",
+      "SC 15-51-20"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-north-charleston-car.md L4 + L7 (FAQ + FAQPage). Deadline was cited to § 15-51-20; accrual \"from the date of death\" is not signed (WD-G1). Also cuts the unsourced \"30-72 hours\"."
+  },
+  {
+    "id": "NC-L4b",
+    "post_id": 4337,
+    "url": "/blog/ashley-phosphate-road-i-26-dangerous-intersection-charleston/",
+    "field": "content",
+    "from": "For <a href=\"/practice-areas/wrongful-death-lawyers/\">wrongful death</a> claims, the deadline is three years from the date of death (S.C. Code § 15-51-20).",
+    "to": "<a href=\"/practice-areas/wrongful-death-lawyers/\">Wrongful death</a> claims generally must also be filed within three years (S.C. Code § 15-3-530) and are brought by the personal representative of the estate (S.C. Code § 15-51-20).",
+    "authority": [
+      "SC 15-3-530",
+      "SC 15-51-20"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-north-charleston-car.md L4."
+  },
+  {
+    "id": "NC-L4c",
+    "post_id": 4339,
+    "url": "/blog/rivers-avenue-pedestrian-deaths-north-charleston/",
+    "field": "faq5",
+    "from": "Wrongful death claims must be filed within three years of the date of death (S.C. Code § 15-51-20).",
+    "to": "Wrongful death claims generally must also be filed within three years (S.C. Code § 15-3-530) and are brought by the personal representative of the estate (S.C. Code § 15-51-20).",
+    "authority": [
+      "SC 15-3-530",
+      "SC 15-51-20"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-north-charleston-car.md L4 (FAQ + FAQPage)."
+  },
+  {
+    "id": "NC-L4d",
+    "post_id": 4339,
+    "url": "/blog/rivers-avenue-pedestrian-deaths-north-charleston/",
+    "field": "content",
+    "from": "and <strong>three years</strong> from the date of death for wrongful death claims (S.C. Code § 15-51-20).",
+    "to": "and generally <strong>three years</strong> for wrongful death claims (S.C. Code § 15-3-530), which are brought by the personal representative of the estate (S.C. Code § 15-51-20).",
+    "authority": [
+      "SC 15-3-530",
+      "SC 15-51-20"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-north-charleston-car.md L4."
+  },
+  {
+    "id": "NC-L4e",
+    "post_id": 4346,
+    "url": "/blog/car-accidents-ladson-i-26-exit-203-danger-zone/",
+    "field": "content",
+    "from": "<li><strong>South Carolina wrongful death</strong> — <strong>three years</strong> from date of death (S.C. Code § 15-51-20)</li>",
+    "to": "<li><strong>South Carolina wrongful death</strong> — generally <strong>three years</strong> (S.C. Code § 15-3-530), brought by the personal representative of the estate (S.C. Code § 15-51-20)</li>",
+    "authority": [
+      "SC 15-3-530",
+      "SC 15-51-20"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-north-charleston-car.md L4."
+  },
+  {
+    "id": "NC-L5a",
+    "post_id": 4346,
+    "url": "/blog/car-accidents-ladson-i-26-exit-203-danger-zone/",
+    "field": "content",
+    "from": "An attorney familiar with all three counties can ensure your case is filed in the most favorable jurisdiction and that all necessary governmental entities are properly notified.",
+    "to": "An attorney familiar with all three counties can make sure your case is filed in the right county and on time, including the shorter two-year deadline that applies to claims against government entities (S.C. Code § 15-78-110).",
+    "authority": [
+      "SC 15-78-80",
+      "SC 15-78-110"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-north-charleston-car.md L5. The SCTCA has no notice requirement."
+  },
+  {
+    "id": "NC-L5b",
+    "post_id": 4346,
+    "url": "/blog/car-accidents-ladson-i-26-exit-203-danger-zone/",
+    "field": "content",
+    "from": "SCDOT, Berkeley County, Dorchester County, or the Town of Ladson may bear responsibility",
+    "to": "SCDOT, Berkeley County, Dorchester County, or Charleston County may bear responsibility",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-north-charleston-car.md L5. Ladson is an unincorporated census-designated place in Berkeley, Charleston and Dorchester counties (Wikipedia \"Ladson, South Carolina\", read 2026-09-28); there is no Town of Ladson."
+  },
+  {
+    "id": "NC-L5c",
+    "post_id": 4346,
+    "url": "/blog/car-accidents-ladson-i-26-exit-203-danger-zone/",
+    "field": "content",
+    "from": "<li><strong>US-17A (Old Orangeburg Road) and I-26 Exit 199</strong> — the southern gateway to Ladson with heavy commuter and commercial traffic</li>",
+    "to": "<li><strong>US 17 Alternate and I-26 Exit 199</strong> — the Summerville interchange just north-west of Ladson, with heavy commuter and commercial traffic</li>",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-north-charleston-car.md L5. Exit 199 (milepost 199.0) is US 17 Alt, Summerville/Moncks Corner; Exit 203 (203.2) is College Park Rd, Ladson; mileposts rise toward Charleston, so 199 is north-west of Ladson, not south (Wikipedia \"Interstate 26 in South Carolina\" exit list, read 2026-09-28)."
+  },
+  {
+    "id": "NC-L6a",
+    "post_id": 4809,
+    "url": "/resources/south-carolina-car-accident-settlement-value/",
+    "field": "content",
+    "from": "South Carolina requires insurers to <strong>offer</strong> uninsured motorist coverage, and UM/UIM steps in",
+    "to": "South Carolina requires uninsured motorist coverage on every auto policy (S.C. Code § 38-77-150) and requires insurers to <strong>offer</strong> underinsured motorist coverage (S.C. Code § 38-77-160); UM/UIM steps in",
+    "authority": [
+      "SC 38-77-150",
+      "SC 38-77-160"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-north-charleston-car.md L6. UM is mandatory, not merely offered."
+  },
+  {
+    "id": "NC-L6b",
+    "post_id": 4809,
+    "url": "/resources/south-carolina-car-accident-settlement-value/",
+    "field": "content",
+    "from": "the statutory non-economic cap applies only to medical malpractice claims, not to car crashes.",
+    "to": "the statutory non-economic cap applies only to medical malpractice claims, not to car crashes. Claims against a government entity are the exception: the Tort Claims Act caps them at $300,000 per person and $600,000 per occurrence (S.C. Code § 15-78-120).",
+    "authority": [
+      "SC 15-78-120"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-north-charleston-car.md L6 (low)."
+  },
+  {
+    "id": "NC-L6c",
+    "post_id": 4809,
+    "url": "/resources/south-carolina-car-accident-settlement-value/",
+    "field": "takeaways",
+    "from": "with no general cap on damages in ordinary auto cases.",
+    "to": "with no general cap on damages in ordinary auto cases (claims against a government entity are capped at $300,000 per person and $600,000 per occurrence, S.C. Code § 15-78-120).",
+    "authority": [
+      "SC 15-78-120"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-north-charleston-car.md L6 (low)."
+  },
+  {
+    "id": "NC-L7a",
+    "post_id": 4337,
+    "url": "/blog/ashley-phosphate-road-i-26-dangerous-intersection-charleston/",
+    "field": "takeaways",
+    "from": "the three-year statute of limitations (S.C. Code SS 15-3-530) applies to all claims.",
+    "to": "the three-year statute of limitations (S.C. Code § 15-3-530) applies to most claims, and claims against a government entity generally have two years (S.C. Code § 15-78-110).",
+    "authority": [
+      "SC 15-3-530",
+      "SC 15-78-110"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-north-charleston-car.md L7. \"All\" contradicts the post's SCTCA sentence; \"SS\" is a mangled section sign."
+  },
+  {
+    "id": "NC-L7b",
+    "post_id": 4339,
+    "url": "/blog/rivers-avenue-pedestrian-deaths-north-charleston/",
+    "field": "takeaways",
+    "from": "(S.C. Code SS 15-3-530)",
+    "to": "(S.C. Code § 15-3-530)",
+    "authority": [
+      "SC 15-3-530"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-north-charleston-car.md L7."
+  },
+  {
+    "id": "NC-L7c",
+    "post_id": 4337,
+    "url": "/blog/ashley-phosphate-road-i-26-dangerous-intersection-charleston/",
+    "field": "content",
+    "from": "<li><strong>Traffic camera footage</strong> is typically overwritten within 30-72 hours unless a preservation request is made</li>",
+    "to": "<li><strong>Traffic camera footage</strong> can be overwritten quickly unless a preservation request is made</li>",
+    "authority": [],
+    "class": "apply",
+    "note": "source-or-cut, clean. data/facts/remediation-2026-09-28-north-charleston-car.md L7: \"30-72 hours\" unsourced."
+  },
+  {
+    "id": "NC-L7d",
+    "post_id": 4337,
+    "url": "/blog/ashley-phosphate-road-i-26-dangerous-intersection-charleston/",
+    "field": "content",
+    "from": "A fully loaded tractor-trailer needs roughly 40% more distance to stop than a passenger car — distance",
+    "to": "A fully loaded tractor-trailer needs far more distance to stop than a passenger car — distance",
+    "authority": [],
+    "class": "apply",
+    "note": "source-or-cut, clean. data/facts/remediation-2026-09-28-north-charleston-car.md L7: \"roughly 40%\" unsourced."
+  },
+  {
+    "id": "NC-L3x",
+    "post_id": 4339,
+    "url": "/blog/rivers-avenue-pedestrian-deaths-north-charleston/",
+    "field": "content",
+    "from": " North Charleston has one of the highest per-capita pedestrian fatality rates of any city in South Carolina, and Rivers Avenue is the epicenter of that crisis.",
+    "to": "",
+    "authority": [],
+    "class": "apply",
+    "note": "source-or-cut, clean cut. data/facts/remediation-2026-09-28-north-charleston-car.md L3 \"not law\": unsourced ranking. The paragraph reads \"The scale … is staggering. The corridor sees a concentration of pedestrian crashes that includes:\"."
+  },
+  {
+    "id": "NC-L3y",
+    "post_id": 4339,
+    "url": "/blog/rivers-avenue-pedestrian-deaths-north-charleston/",
+    "field": "faq0",
+    "from": "makes it one of the deadliest pedestrian corridors in South Carolina.",
+    "to": "makes it one of the most dangerous pedestrian corridors in the Charleston area.",
+    "authority": [],
+    "class": "source-or-cut",
+    "note": "data/facts/remediation-2026-09-28-north-charleston-car.md L3 \"not law\": unsourced statewide ranking; the same claim is in the excerpt, takeaways, body intro and the title's framing. Source it (SCDPS/SCDOT corridor data) or apply this hedge and the same to the other surfaces."
+  },
+  {
+    "id": "NC-L1a",
+    "post_id": 4645,
+    "url": "/blog/north-charleston-crime-rate-hit-and-run/",
+    "field": "content",
+    "from": "<li><strong>No insurance:</strong> South Carolina has an approximately 9% uninsured driver rate. Drivers without insurance flee to avoid financial liability.</li>",
+    "to": "<li><strong>No insurance:</strong> Drivers without insurance flee to avoid financial liability.</li>",
+    "authority": [],
+    "class": "apply",
+    "note": "source-or-cut, clean cut. data/facts/remediation-2026-09-28-north-charleston-car.md L1 \"not law\": the 9% uninsured rate is unsourced."
+  },
+  {
+    "id": "NC-L1b",
+    "post_id": 4645,
+    "url": "/blog/north-charleston-crime-rate-hit-and-run/",
+    "field": "faq1",
+    "from": "South Carolina has an uninsured driver rate of approximately 9%.",
+    "to": null,
+    "authority": [],
+    "class": "source-or-cut",
+    "note": "data/facts/remediation-2026-09-28-north-charleston-car.md L1. The whole FAQ (\"How many South Carolina drivers are uninsured?\") rests on the figure. Source it (Insurance Research Council estimate, with year) or delete FAQ[1] entirely through bin/apply-faq-remediation.php; the cut is not clean as an in-place edit."
+  },
+  {
+    "id": "NC-L1c",
+    "post_id": 4645,
+    "url": "/blog/north-charleston-crime-rate-hit-and-run/",
+    "field": "content",
+    "from": "North Charleston has a crime rate of 47 per 1,000 residents — one of the highest in America.",
+    "to": null,
+    "authority": [],
+    "class": "source-or-cut",
+    "note": "data/facts/remediation-2026-09-28-north-charleston-car.md L1. The post's premise (title and URL) rests on it, as does the takeaways' \"research links elevated crime rates to drivers' willingness to flee\". Source both or rewrite the intro; no clean in-place cut."
+  },
+  {
+    "id": "COL-L5a",
+    "post_id": 4678,
+    "url": "/resources/broad-river-road-truck-accidents-columbia/",
+    "field": "takeaways",
+    "from": "Richland County recorded <strong>12,731 total collisions and 65 fatal crashes</strong> in 2023.",
+    "to": "Richland County recorded <strong>12,450 traffic collisions and 58 fatal collisions</strong> in 2023 (SCDPS).",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-columbia-car.md L5. Verified: SCDPS South Carolina Traffic Collision Fact Book 2023, Part VI, Richland County (p. 164): 12,450 total, 58 fatal collisions, 60 killed. Matches /blog/columbia-dangerous-intersections-roads/."
+  },
+  {
+    "id": "COL-L5b",
+    "post_id": 4678,
+    "url": "/resources/broad-river-road-truck-accidents-columbia/",
+    "field": "content",
+    "from": "Richland County recorded <strong>12,731 total collisions and 65 fatal crashes in 2023</strong>.",
+    "to": "Richland County recorded <strong>12,450 traffic collisions and 58 fatal collisions in 2023</strong>, according to the SCDPS Traffic Collision Fact Book.",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-columbia-car.md L5 (source as COL-L5a)."
+  },
+  {
+    "id": "COL-L5c",
+    "post_id": 4679,
+    "url": "/resources/two-notch-road-truck-accidents-columbia/",
+    "field": "takeaways",
+    "from": "Richland County recorded <strong>12,731 collisions and 65 fatal crashes</strong> in 2023.",
+    "to": "Richland County recorded <strong>12,450 traffic collisions and 58 fatal collisions</strong> in 2023 (SCDPS).",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-columbia-car.md L5 (source as COL-L5a)."
+  },
+  {
+    "id": "COL-L5d",
+    "post_id": 4679,
+    "url": "/resources/two-notch-road-truck-accidents-columbia/",
+    "field": "content",
+    "from": "Richland County recorded <strong>12,731 total collisions and 65 fatal crashes in 2023</strong>.",
+    "to": "Richland County recorded <strong>12,450 traffic collisions and 58 fatal collisions in 2023</strong>, according to the SCDPS Traffic Collision Fact Book.",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-columbia-car.md L5 (source as COL-L5a)."
+  },
+  {
+    "id": "COL-L5e",
+    "post_id": 4678,
+    "url": "/resources/broad-river-road-truck-accidents-columbia/",
+    "field": "faq4",
+    "from": "US-1 (Augusta Road) is the most dangerous road in Richland County with 939 collisions and 5 fatalities in 2023.",
+    "to": "US-1 recorded more collisions than any other road in Richland County in 2023: 939, including 5 fatal collisions (SCDPS Traffic Collision Fact Book).",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-columbia-car.md L5. The 939 / 5 figures are right (Fact Book 2023, Richland \"Top 5 Roadways\": US-1 939 total, 5 fatal, 5 killed), but Augusta Road is US-1 in Lexington County; in Richland, US-1 is Two Notch Road. Label dropped; \"most dangerous\" restated as what the table measures (count)."
+  },
+  {
+    "id": "COL-L5f",
+    "post_id": 4678,
+    "url": "/resources/broad-river-road-truck-accidents-columbia/",
+    "field": "content",
+    "from": "<strong>US-1 (Augusta Road) is the most dangerous road in Richland County overall</strong>, with <strong>939 collisions and 5 fatalities in 2023 alone</strong>. Broad River Road feeds into the same transportation network, and trucks frequently travel between Augusta Road and Broad River Road",
+    "to": "<strong>US-1 recorded more collisions than any other road in Richland County</strong>, with <strong>939 collisions and 5 deaths in 2023</strong> (SCDPS Traffic Collision Fact Book). Broad River Road feeds into the same transportation network, and trucks frequently travel between US-1 and Broad River Road",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-columbia-car.md L5 (source as COL-L5e)."
+  },
+  {
+    "id": "COL-L5g",
+    "post_id": 4678,
+    "url": "/resources/broad-river-road-truck-accidents-columbia/",
+    "field": "content",
+    "from": "<h2>Broad River Road: One of Columbia's Most Dangerous Truck Corridors</h2>",
+    "to": "<h2>Broad River Road: A Major Columbia Truck Corridor</h2>",
+    "authority": [],
+    "class": "apply",
+    "note": "source-or-cut, clean. RECOVERY-LOG 2026-09-28 \"still open from L5\": unsourced ranking heading. The takeaways' \"one of Columbia's most dangerous truck corridors\" and the \"35 accidents including 7 pedestrian deaths\" figure are also unsourced (not edited here)."
+  },
+  {
+    "id": "COL-L6a",
+    "post_id": 3553,
+    "url": "/blog/columbia-dangerous-intersections-roads/",
+    "field": "faq4",
+    "from": "South Carolina law requires reporting any accident causing injury or more than $1,000 in property damage.",
+    "to": "South Carolina law requires you to notify police immediately after a crash that injures or kills anyone (S.C. Code § 56-5-1260). If no officer investigated a crash involving injury or $1,000 or more in property damage, the driver or owner must file a written report with the DMV within 15 days (S.C. Code § 56-5-1270).",
+    "authority": [
+      "SC 56-5-1260",
+      "SC 56-5-1270"
+    ],
+    "class": "apply",
+    "note": "data/facts/remediation-2026-09-28-columbia-car.md L6 (FAQ + FAQPage). Wrong threshold (\"more than\") and conflates the two duties. Replacement is the theme's approved step-5 wording (template-tags.php, Gillin-signed pack), one sentence per statute: a single sentence trips the SC 56-5-1260 forbidden-context guard."
+  },
+  {
+    "id": "COL-L6b",
+    "post_id": 3553,
+    "url": "/blog/columbia-dangerous-intersections-roads/",
+    "field": "content",
+    "from": "South Carolina law requires reporting any accident that causes injury, death, or property damage exceeding $1,000.",
+    "to": "South Carolina law requires you to notify police immediately after a crash that injures or kills anyone (S.C. Code § 56-5-1260). If no officer investigated a crash involving injury or $1,000 or more in property damage, the driver or owner must file a written report with the DMV within 15 days (S.C. Code § 56-5-1270).",
+    "authority": [
+      "SC 56-5-1260",
+      "SC 56-5-1270"
+    ],
+    "class": "apply",
+    "note": "New on re-read: the body step 1 carries the same claim as COL-L6a."
+  },
+  {
+    "id": "MM-G1",
+    "post_id": 4562,
+    "url": "/blog/medical-malpractice-limits-south-carolina/",
+    "field": "content",
+    "from": "<td>Generally 6 years from the negligent act</td>\n<td>S.C. Code § 15-3-545</td>\n</tr>\n",
+    "to": "<td>Generally 6 years from the negligent act</td>\n<td>S.C. Code § 15-3-545</td>\n</tr>\n<tr>\n<td>Minors</td>\n<td>Tolled during minority, but by no more than seven years, and no more than one year after the minor turns 18</td>\n<td>S.C. Code § 15-3-545(D)</td>\n</tr>\n",
+    "authority": [
+      "SC 15-3-545 (amendment: (B) foreign object, (D) minors — not in the signed claim)"
+    ],
+    "class": "gillin",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L1/L2/L4 + Pack item 1. Runs AFTER MM-L1n/L1o. Same (D) sentence for 4349 (filing-deadlines list), 4195 FAQ[0] and body (\"In South Carolina, the deadline is extended while the child is a minor, but by no more than seven years and no more than one year after the child turns 18 (S.C. Code § 15-3-545(D)).\"). Question: sign the § 15-3-545 (B)/(D) amendment?"
+  },
+  {
+    "id": "MM-G2",
+    "post_id": 4363,
+    "url": "/blog/emergency-room-errors-charleston-misdiagnosis-malpractice/",
+    "field": "content",
+    "from": "<h2 id=\"sc-vs-ga-comparison\">",
+    "to": "<p>South Carolina also raises the bar for some emergency care: when a patient who is not medically stable faces an immediate threat of death or serious bodily injury, an emergency-department physician is liable only if grossly negligent (S.C. Code § 15-32-230). The rule does not cover care after the patient is stabilized or discharged.</p>\n\n<h2 id=\"sc-vs-ga-comparison\">",
+    "authority": [
+      "SC 15-32-230 (pending, not in pack)"
+    ],
+    "class": "gillin",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L3 + L5. Same sentence for 4197 FAQ[0] (append) and its \"The 'Emergency' Standard of Care\" section. Question: sign SC 15-32-230, and does it reach the hospital or only the physician (the section says \"physician\")?"
+  },
+  {
+    "id": "MM-G3",
+    "post_id": 4349,
+    "url": "/blog/charleston-medical-malpractice-hospital-claim-south-carolina/",
+    "field": "faq1",
+    "from": null,
+    "to": null,
+    "authority": [
+      "SC 15-36-100"
+    ],
+    "class": "gillin",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L2/L3. MM-L2b/L3g use the signed \"recent active practice or teaching\" wording. Question: amend the § 15-36-100 claim to the statute's \"at least three of the last five years immediately preceding the opinion\" ((A)(2)(b)) so pages may state it?"
+  },
+  {
+    "id": "MM-G4",
+    "post_id": 4199,
+    "url": "/medical-malpractice-lawyers/informed-consent-failure/",
+    "field": "content",
+    "from": "South Carolina courts evaluate whether the doctor provided sufficient information for a reasonable patient to make an informed decision about their treatment.",
+    "to": "South Carolina courts generally measure the disclosure a doctor owed by what a reasonable physician in the same field would have disclosed.",
+    "authority": [
+      "Hook v. Rothstein, 281 S.C. 541, 316 S.E.2d 690 (Ct. App. 1984) (pending, not in pack)"
+    ],
+    "class": "gillin",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L6. Also FAQ[2] (\"Courts typically apply a 'reasonable patient' standard\") and the causation paragraph. Question: is SC disclosure measured by the professional standard (Hook v. Rothstein)?"
+  },
+  {
+    "id": "WD-G1",
+    "post_id": 4101,
+    "url": "/wrongful-death-lawyers/medical-malpractice-death/",
+    "field": "content",
+    "from": null,
+    "to": "In South Carolina, a malpractice claim generally must be filed within three years of the treatment or of when the injury was or should have been discovered, and no more than six years after the treatment (S.C. Code § 15-3-545).",
+    "authority": [
+      "SC 15-3-545",
+      "SC 15-3-530 (amendment: (6) wrongful death runs \"upon the death\")"
+    ],
+    "class": "gillin",
+    "note": "data/facts/remediation-2026-09-28-charleston-wrongful-death.md L5 + open list. 4101 gives no SC deadline at all. Question: for a malpractice death, does § 15-3-545 or § 15-3-530(6) (\"upon the death\") govern? The answer also decides whether \"from the date of death\" can return to 4337/4339/4346 (NC-L4) and 4562 (MM-L1x)."
+  },
+  {
+    "id": "WD-G2",
+    "post_id": 4102,
+    "url": "/wrongful-death-lawyers/workplace-fatality/",
+    "field": "content",
+    "from": "third parties whose negligence caused or contributed to the death can be held fully liable:",
+    "to": "third parties whose negligence caused or contributed to the death can be held liable — for example, equipment manufacturers, or a property owner or contractor that was not the worker's employer or, in South Carolina, statutory employer (S.C. Code §§ 42-1-400, 42-1-410, 42-1-540):",
+    "authority": [
+      "SC 42-1-540",
+      "SC 42-1-400 (pending, not in pack)",
+      "SC 42-1-410 (pending, not in pack)"
+    ],
+    "class": "gillin",
+    "note": "data/facts/remediation-2026-09-28-charleston-wrongful-death.md L6. The list below it names property owners, general contractors and subcontractors, who are often statutory employers (immune) in SC; FAQ[0] says the same. Question: sign §§ 42-1-400/-410 and approve this framing."
+  },
+  {
+    "id": "WD-G3",
+    "post_id": 4816,
+    "url": "/south-carolina-wrongful-death-lawyer/",
+    "field": "faq2",
+    "from": null,
+    "to": null,
+    "authority": [],
+    "class": "gillin",
+    "note": "data/facts/remediation-2026-09-28-charleston-wrongful-death.md L7 (low). 4816 FAQ[2] and body list \"funeral and burial expenses\" as a wrongful death (not survival) element, and say the recovery is \"not used to pay the deceased person's creditors\" — case law, no pack authority. Same on 4861. Question: confirm both."
+  },
+  {
+    "id": "WD-G4",
+    "post_id": 4104,
+    "url": "/wrongful-death-lawyers/nursing-home-wrongful-death/",
+    "field": "content",
+    "from": null,
+    "to": null,
+    "authority": [
+      "SC 15-32-220",
+      "SC 33-56-180"
+    ],
+    "class": "gillin",
+    "note": "data/facts/remediation-2026-09-28-charleston-wrongful-death.md L4 (low). Should the nursing-home WD page say the med-mal non-economic cap (§ 15-32-220; nursing homes are health care institutions) and the charity cap (§ 33-56-180) can apply? Tied to the open nursing-home \"malpractice\" scope question."
+  },
+  {
+    "id": "NC-G1",
+    "post_id": 4339,
+    "url": "/blog/rivers-avenue-pedestrian-deaths-north-charleston/",
+    "field": "content",
+    "from": "<li><strong>Crosswalk rights (S.C. Code § 56-5-3130)</strong> — drivers must yield the right-of-way to pedestrians in marked crosswalks and at intersections with traffic signals</li>",
+    "to": "<li><strong>Crosswalk rights (S.C. Code § 56-5-3130)</strong> — where traffic signals are not in place or not working, drivers must yield to a pedestrian crossing within a crosswalk, marked or unmarked; at signalized crossings, drivers and pedestrians follow the signals</li>",
+    "authority": [
+      "SC 56-5-3130 (pending, not in pack)"
+    ],
+    "class": "gillin",
+    "note": "data/facts/remediation-2026-09-28-north-charleston-car.md L3. The published line states the statute backwards ((a) applies where signals are NOT in place). If Gillin cannot sign SC 56-5-3130 before the batch runs, deleting the bullet is a clean interim fix."
+  },
+  {
+    "id": "NC-G2",
+    "post_id": 4346,
+    "url": "/blog/car-accidents-ladson-i-26-exit-203-danger-zone/",
+    "field": "faq1",
+    "from": "Your claim must be filed in the county where the accident occurred or where the defendant resides.",
+    "to": "Your claim generally may be filed in the county where the accident occurred or where the defendant lives or is based.",
+    "authority": [
+      "SC 15-7-30 (pending, not in pack)"
+    ],
+    "class": "gillin",
+    "note": "data/facts/remediation-2026-09-28-north-charleston-car.md L5 (low). Same in the body li \"Court jurisdiction\". No venue authority in the pack."
+  },
+  {
+    "id": "NC-G3",
+    "post_id": 4846,
+    "url": "/south-carolina-car-accident-lawyers/",
+    "field": "faq3",
+    "from": null,
+    "to": null,
+    "authority": [
+      "SC 38-77-160"
+    ],
+    "class": "gillin",
+    "note": "data/facts/remediation-2026-09-28-north-charleston-car.md L9 + data/facts/remediation-2026-09-28-charleston-motorcycle.md W5. 4846 (takeaways, FAQ[3], body) and 4812 (excerpt, meta description, takeaways, FAQ[0], FAQ[2]) say SC \"allows stacking\" of UM/UIM without the § 38-77-160 limit (excess coverage limited to the vehicle involved; Class I vs Class II insureds). Question: approve a stacking statement, or should these be cut to the signed UM-mandatory / UIM-offered wording?"
+  },
+  {
+    "id": "MC-G1",
+    "post_id": 4814,
+    "url": "/resources/south-carolina-personal-injury-faq/",
+    "field": "faq49",
+    "from": null,
+    "to": null,
+    "authority": [],
+    "class": "gillin",
+    "note": "RECOVERY-LOG 2026-09-28. 4814 FAQ[49]/[50] (ES twin 4937 FAQ[57]/[58]): helmet non-use \"would run through ordinary comparative fault\" / \"not an automatic bar\" — uncited helmet-defense law, the class removed from the motorcycle pillar. Question: keep, or cut to \"South Carolina requires a helmet only under 21 (§ 56-5-3660)\"."
+  },
+  {
+    "id": "MC-G2",
+    "post_id": 4073,
+    "url": "/motorcycle-accident-lawyers/lane-splitting-accident/",
+    "field": "faq2",
+    "from": "Some states have legalized lane filtering at low speeds, but neither Georgia nor South Carolina currently permits either practice.",
+    "to": "Neither Georgia nor South Carolina currently permits either practice.",
+    "authority": [
+      "SC 56-5-3640"
+    ],
+    "class": "gillin",
+    "note": "RECOVERY-LOG 2026-09-28 \"still for Gillin\". I believe the other-states claim is true (Utah, Montana, Arizona and Colorado have legalized filtering), so no change is needed if he accepts it; the cut is offered if he prefers no other-state law. The Georgia half is for the Georgia reviewer."
+  },
+  {
+    "id": "GA-1",
+    "post_id": 1809,
+    "url": "/blog/workers-compensation-claim-process-georgia/",
+    "field": "faq1",
+    "from": null,
+    "to": null,
+    "authority": [],
+    "class": "ga",
+    "note": "data/facts/remediation-2026-09-26-savannah-wc.md L1 VERIFY + RECOVERY-LOG 2026-09-26. FAQ[1] and body: the Employer's First Report \"must be filed within 10 days\" once the worker misses three or more days, and \"Once the report is filed, the statute of limitations … begins\" (the § 34-9-82 period runs from the injury). No GA pack authority for the report deadline."
+  },
+  {
+    "id": "GA-2",
+    "post_id": 1809,
+    "url": "/blog/workers-compensation-claim-process-georgia/",
+    "field": "content",
+    "from": null,
+    "to": null,
+    "authority": [],
+    "class": "ga",
+    "note": "data/facts/remediation-2026-09-26-savannah-wc.md W4. Third-party examples omit co-employee immunity (O.C.G.A. § 34-9-11(a)); same on the Savannah WC page family."
+  },
+  {
+    "id": "GA-3",
+    "post_id": 4363,
+    "url": "/blog/emergency-room-errors-charleston-misdiagnosis-malpractice/",
+    "field": "takeaways",
+    "from": null,
+    "to": null,
+    "authority": [],
+    "class": "ga",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L3. \"Georgia applies a two-year deadline (O.C.G.A. § 9-3-73) with a five-year repose\" — the med-mal deadline is § 9-3-71; § 9-3-73 is the minors/exceptions section. Same class on 4349 takeaways (\"Georgia allows 2 years to file (O.C.G.A. 9-3-33)\")."
+  },
+  {
+    "id": "GA-4",
+    "post_id": 4197,
+    "url": "/medical-malpractice-lawyers/emergency-room-negligence/",
+    "field": "content",
+    "from": null,
+    "to": null,
+    "authority": [],
+    "class": "ga",
+    "note": "data/facts/remediation-2026-09-28-charleston-medical-malpractice.md L5. \"The 'Emergency' Standard of Care\" closes with \"Georgia law considers the emergency circumstances but does not lower the fundamental duty of competent care\" — Georgia has its own ER gross-negligence statute (O.C.G.A. § 51-1-29.5). For the Georgia reviewer."
+  },
+  {
+    "id": "GA-5",
+    "post_id": 4101,
+    "url": "/wrongful-death-lawyers/medical-malpractice-death/",
+    "field": "content",
+    "from": null,
+    "to": null,
+    "authority": [],
+    "class": "ga",
+    "note": "data/facts/remediation-2026-09-28-charleston-wrongful-death.md L3. Unscoped two-state \"full value of the deceased's life\" sentences remain after the SC-only appends (WD-L3a–d): 4099 FAQ[1], 4101 body + FAQ[4], 4104 body, 4105 body (second para), 4102 FAQ[1]/body. Proposed: prefix each with \"In Georgia,\" once the reviewer confirms the Georgia element list."
+  },
+  {
+    "id": "GA-6",
+    "post_id": 3553,
+    "url": "/blog/columbia-dangerous-intersections-roads/",
+    "field": "content",
+    "from": null,
+    "to": null,
+    "authority": [],
+    "class": "ga",
+    "note": "data/facts/remediation-2026-09-28-columbia-car.md L6. Georgia deadline and fault threshold on a Columbia post (FAQ[1], \"South Carolina and Georgia Laws\" section). They are correct Georgia law; whether they belong on an SC city post is presentation, for the Georgia reviewer/owner."
+  }
+]

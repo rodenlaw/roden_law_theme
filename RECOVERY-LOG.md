@@ -1904,6 +1904,69 @@ reviewd".
 - 4102: statutory-employer immunity.
 - 4861: "notice" wording.
 
+### Linked-page batch: 109 fixes across 20 pages — 2026-09-28
+
+**Owner, 2026-09-28:** "let's work through all the linked pages now".
+
+The open linked-page findings from the 2026-09-26..28 sweeps were consolidated and each checked
+against live text: `data/facts/linked-pages-batch-2026-09-28.json` (132 entries) and `.md` (the
+review packets). The 109 `apply` edits rest only on the signed SC pack (39 authorities) or on a
+checked non-legal fact. Each was exact-match once, applied in array order, and read back:
+`bin/apply-linked-pages-batch.php`, embedded by `bin/build-linked-pages-batch.py`. Backup:
+`docs/backups/linked-pages-batch-2026-09-28.json`.
+
+- **Med mal posts 4562, 4349, 4363 and 4195 (56 edits):**
+  - Caps updated to the 2026 $596,001 / $1,788,002 (§ 15-32-220).
+  - Removed:
+    - the invented 90-day pre-filing wait (§ 15-79-125: the notice is filed with the
+      affidavit, pauses the deadline, and mediation follows within 90–120 days);
+    - "mediation after filing";
+    - the "eighth birthday" and "under six" minors' rules;
+    - the untraceable "Platt v. CSX".
+  - The repose is now cited to § 15-3-545, not (B).
+  - 4349's "gross negligence" as the punitive standard became the § 15-33-135 burden.
+- **Wrongful-death subtypes 4099, 4101, 4102, 4104, 4105 and 4106, and resource 4861:**
+  - SC damages and distribution now follow § 15-51-40 ("by dependency" removed).
+  - SCTCA "notice" wording is now the two-year deadline; 4106 FAQ 4's notice line is scoped to
+    Georgia.
+  - The SC deadline and the § 15-51-20 personal-representative rule were added.
+  - Georgia's "full value of the life" sentences are unchanged, for the GA reviewer.
+- **North Charleston posts 4617, 4337, 4339, 4346 and 4645, plus 4809:**
+  - § 15-78-110 cited for the SCTCA deadline.
+  - Wrongful-death deadline moved from § 15-51-20 to § 15-3-530.
+  - UM is required (§ 38-77-150) and UIM only offered (§ 38-77-160).
+  - Ladson / Exit 199 facts fixed; the garbled "SS" fixed.
+- **Columbia posts 4678, 4679 and 3553:**
+  - Richland 2023 figures now match the SCDPS Fact Book (12,450 collisions, 58 fatal); the
+    unsourced 12,731 / 65 were wrong.
+  - US-1 no longer called "Augusta Road".
+  - The report-threshold wording now uses § 56-5-1260 / 1270.
+- **Verified:**
+  - Every `from` string matched once on prod.
+  - All replacements replayed clean (115/115, positive controls fired).
+  - Live FAQPage JSON-LD parses on 7 spot-checked pages.
+  - JSON-LD guard PASS. Fresh sweep: 0 findings. meta.json regenerated.
+
+**Open:**
+- **For Gillin: 13 items**, 7 with ready wording. They need authorities not yet in the pack:
+  - § 15-32-230 (emergency gross negligence);
+  - §§ 42-1-400/-410 (statutory employer);
+  - § 56-5-3130;
+  - § 15-7-30;
+  - *Hook v. Rothstein*;
+  - amendments to § 15-3-545 (B)/(D), § 15-3-530(6) and § 15-36-100.
+- **For the GA reviewer: 6 items**, including "full value of the life" on 4099, 4101, 4102,
+  4104 and 4105.
+- **Source-or-cut: 4 items** that cannot be cut cleanly in place.
+- 4106, 4337, 4339 and 4346 carry `_roden_last_reviewed` 2026-09-02, which now dates copy
+  changed today.
+- **The same error classes survive on 10 unlinked posts** (next batch):
+  - 1646, 1696, 1813, 1668, 4350: 90-day wait, caps, minors;
+  - 4075: hit-and-run felony;
+  - 4859, 4860: SCTCA notice;
+  - 4635: § 15-78-80;
+  - 4644: "adult riders".
+
 ### Law pack: #62 superseded by #67, rebuilt on the signed SC pack — 2026-09-26
 
 **Owner, 2026-09-26:** "what do we need to do with #62? Those are signed", then "yes".

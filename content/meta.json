@@ -1191,7 +1191,7 @@
                     },
                     {
                         "question": "How long do I have to file a car accident claim in South Carolina?",
-                        "answer": "South Carolina's statute of limitations for personal injury claims is three years from the date of the accident (S.C. Code § 15-3-530). For wrongful death claims, the deadline is three years from the date of death (S.C. Code § 15-51-20). However, evidence disappears quickly — traffic camera footage is typically overwritten within 30-72 hours — so contacting a lawyer promptly is critical."
+                        "answer": "South Carolina's statute of limitations for personal injury claims is three years from the date of the accident (S.C. Code § 15-3-530). Wrongful death claims generally must also be filed within three years (S.C. Code § 15-3-530) and are brought by the personal representative of the estate (S.C. Code § 15-51-20). However, evidence disappears quickly, so contacting a lawyer promptly is critical."
                     },
                     {
                         "question": "Can I still recover damages if I was partially at fault for the accident?",
@@ -1206,7 +1206,7 @@
                         "answer": "Due to the speed differential between interstate and surface-street traffic, injuries at this interchange tend to be severe. Common injuries include traumatic brain injuries, spinal cord injuries, multiple fractures (femur, pelvis, ribs), internal organ damage, burn injuries from post-collision fires, and in the most severe cases, wrongful death. Commercial truck involvement dramatically increases injury severity."
                     }
                 ],
-                "_roden_key_takeaways": "The Ashley Phosphate Road and I-26 interchange is one of the most dangerous intersections in the Charleston area, with high-speed collisions caused by merging conflicts, red-light running, and heavy traffic volume. Injuries from these crashes are often severe due to highway speeds. Liability may involve multiple drivers, government entities responsible for road design, or commercial vehicle operators. South Carolina's modified comparative fault rule bars recovery if you are 51% or more at fault, and the three-year statute of limitations (S.C. Code SS 15-3-530) applies to all claims.",
+                "_roden_key_takeaways": "The Ashley Phosphate Road and I-26 interchange is one of the most dangerous intersections in the Charleston area, with high-speed collisions caused by merging conflicts, red-light running, and heavy traffic volume. Injuries from these crashes are often severe due to highway speeds. Liability may involve multiple drivers, government entities responsible for road design, or commercial vehicle operators. South Carolina's modified comparative fault rule bars recovery if you are 51% or more at fault, and the three-year statute of limitations (S.C. Code § 15-3-530) applies to most claims, and claims against a government entity generally have two years (S.C. Code § 15-78-110).",
                 "_roden_last_reviewed": "2026-09-02"
             }
         },
@@ -2585,15 +2585,15 @@
                     },
                     {
                         "question": "Do I need an expert witness for a medical malpractice case in South Carolina?",
-                        "answer": "Yes. South Carolina requires an expert affidavit from a qualified medical professional as part of the mandatory 90-day Notice of Intent to File Suit (S.C. Code section 15-79-125). The expert must be licensed, must practice or have recently practiced in the same specialty as the defendant, and must have practiced within the past five years."
+                        "answer": "Yes. South Carolina requires an expert affidavit from a qualified medical professional filed together with the Notice of Intent to File Suit (S.C. Code section 15-79-125). The expert must be licensed and either board certified in the relevant specialty or have recently practiced or taught in it (S.C. Code section 15-36-100)."
                     },
                     {
                         "question": "How long do I have to file a medical malpractice claim in South Carolina?",
-                        "answer": "The statute of limitations is three years from the date of injury or discovery (S.C. Code section 15-3-545). However, you must serve a 90-day pre-suit notice before filing, so the effective deadline is earlier. South Carolina also has a six-year statute of repose that bars claims more than six years after the alleged malpractice regardless of when the injury is discovered."
+                        "answer": "The statute of limitations is three years from the date of injury or discovery (S.C. Code section 15-3-545). Filing the required Notice of Intent to File Suit tolls that deadline (S.C. Code section 15-79-125), but the notice must be filed with an expert's affidavit, so preparation has to start well before it. South Carolina also has a six-year statute of repose that generally bars claims more than six years after the alleged malpractice regardless of when the injury is discovered."
                     },
                     {
                         "question": "Is there a cap on damages in South Carolina medical malpractice cases?",
-                        "answer": "South Carolina does not cap economic damages in medical malpractice cases, but non-economic damages are capped by S.C. Code § 15-32-220 — a base of $350,000 against a single provider and $1.05 million where more than one is liable, adjusted annually for inflation, so the limit that applies today is higher than the base. Punitive damages are capped at the greater of three times compensatory damages or $739,245, the 2026 inflation-indexed figure (S.C. Code section 15-32-530), with exceptions for certain egregious conduct."
+                        "answer": "South Carolina does not cap economic damages in medical malpractice cases, but non-economic damages are capped by S.C. Code § 15-32-220 — a base of $350,000 against a single provider and $1.05 million where more than one is liable, adjusted annually for inflation, so for 2026 the limits are $596,001 and $1,788,002. Punitive damages are capped at the greater of three times compensatory damages or $739,245, the 2026 inflation-indexed figure (S.C. Code section 15-32-530), with exceptions for certain egregious conduct."
                     },
                     {
                         "question": "Can I sue both the hospital and the doctor in Charleston?",
@@ -2601,10 +2601,10 @@
                     },
                     {
                         "question": "What is the Notice of Intent requirement in South Carolina medical malpractice cases?",
-                        "answer": "Before filing a medical malpractice lawsuit in South Carolina, you must serve a Notice of Intent to File Suit on each defendant at least 90 days before filing the complaint. The notice must include an expert affidavit from a qualified medical professional who has reviewed the records and identified at least one negligent act and the resulting damages. Failure to comply can result in dismissal."
+                        "answer": "Before filing a medical malpractice lawsuit in South Carolina, you must file a Notice of Intent to File Suit together with an expert affidavit, serve it on each defendant, and mediate, generally within 90 to 120 days of service, before filing the complaint (S.C. Code section 15-79-125). The affidavit must come from a qualified medical professional who has reviewed the records and identified at least one negligent act and the resulting damages. Failure to comply can result in dismissal."
                     }
                 ],
-                "_roden_key_takeaways": "South Carolina medical malpractice claims require a pre-suit Notice of Intent to File and an expert witness affidavit establishing the standard of care was breached. The statute of limitations is 3 years with a 6-year statute of repose. Hospitals may be liable for employee physician negligence but may argue independent contractor status for affiliated doctors. Georgia allows 2 years to file (O.C.G.A. 9-3-33) and requires an expert affidavit. Damages caps may apply in SC."
+                "_roden_key_takeaways": "South Carolina medical malpractice claims require a pre-suit Notice of Intent to File and an expert witness affidavit establishing the standard of care was breached. The statute of limitations is 3 years with a 6-year statute of repose. Hospitals may be liable for employee physician negligence but may argue independent contractor status for affiliated doctors. Georgia allows 2 years to file (O.C.G.A. 9-3-33) and requires an expert affidavit. South Carolina caps non-economic damages at $596,001 per provider or institution and $1,788,002 in total for 2026 (S.C. Code § 15-32-220)."
             }
         },
         "/blog/charleston-parking-lot-car-accident-liability/": {
@@ -3028,7 +3028,7 @@
                     },
                     {
                         "question": "What should I do immediately after a car accident in Columbia?",
-                        "answer": "Call 911, seek medical treatment even if you feel fine, photograph the scene and all vehicle damage, collect witness contact information, do not admit fault, and contact a Columbia car accident lawyer before giving any recorded statements to insurance companies. South Carolina law requires reporting any accident causing injury or more than $1,000 in property damage."
+                        "answer": "Call 911, seek medical treatment even if you feel fine, photograph the scene and all vehicle damage, collect witness contact information, do not admit fault, and contact a Columbia car accident lawyer before giving any recorded statements to insurance companies. South Carolina law requires you to notify police immediately after a crash that injures or kills anyone (S.C. Code § 56-5-1260). If no officer investigated a crash involving injury or $1,000 or more in property damage, the driver or owner must file a written report with the DMV within 15 days (S.C. Code § 56-5-1270)."
                     },
                     {
                         "question": "Can I sue if dangerous road design caused my Columbia accident?",
@@ -4348,11 +4348,11 @@
                     },
                     {
                         "question": "Do I need an expert witness for an ER malpractice case?",
-                        "answer": "Yes. SC requires an expert affidavit from a qualified emergency medicine physician as part of the 90-day pre-suit notice (S.C. Code section 15-79-125)."
+                        "answer": "Yes. SC requires an expert affidavit from a qualified emergency medicine physician filed together with the pre-suit Notice of Intent to File Suit (S.C. Code sections 15-79-125 and 15-36-100)."
                     },
                     {
                         "question": "How long do I have to file an ER malpractice claim?",
-                        "answer": "Three years from injury or discovery in SC (S.C. Code section 15-3-545), with a six-year statute of repose. The 90-day pre-suit notice means you must start earlier."
+                        "answer": "Three years from injury or discovery in SC (S.C. Code section 15-3-545), with a six-year statute of repose. Filing the pre-suit notice tolls the deadline, but it must be filed with an expert's affidavit, so you must start early."
                     },
                     {
                         "question": "Can I sue both the ER doctor and the hospital?",
@@ -4360,14 +4360,14 @@
                     },
                     {
                         "question": "What damages can I recover?",
-                        "answer": "Medical expenses, lost wages, pain and suffering, and potentially punitive damages. South Carolina does not cap economic damages, but non-economic damages are capped under S.C. Code Section 15-32-220 — a $350,000 base per provider, adjusted annually for inflation."
+                        "answer": "Medical expenses, lost wages, pain and suffering, and potentially punitive damages. South Carolina does not cap economic damages, but non-economic damages are capped under S.C. Code Section 15-32-220 — a $350,000 base per provider, adjusted annually for inflation ($596,001 for 2026)."
                     },
                     {
                         "question": "What is the difference between a bad outcome and malpractice?",
                         "answer": "Malpractice requires proving the doctor deviated from the accepted standard of care AND that deviation caused your injury. A bad outcome alone does not prove malpractice."
                     }
                 ],
-                "_roden_key_takeaways": "Emergency room misdiagnosis is the most common medical malpractice claim, with heart attacks, strokes, and appendicitis frequently missed. South Carolina requires a pre-suit notice to the defendant and an expert witness affidavit before filing. The statute of limitations is three years from discovery with an absolute six-year repose period. Hospital liability depends on whether the treating physician was an employee or independent contractor. Georgia applies a two-year deadline (O.C.G.A. § 9-3-73) with a five-year repose."
+                "_roden_key_takeaways": "Emergency room misdiagnosis is the most common medical malpractice claim, with heart attacks, strokes, and appendicitis frequently missed. South Carolina requires a pre-suit notice to the defendant and an expert witness affidavit before filing. The statute of limitations is three years from discovery with a six-year repose period. Hospital liability depends on whether the treating physician was an employee or independent contractor. Georgia applies a two-year deadline (O.C.G.A. § 9-3-73) with a five-year repose."
             }
         },
         "/blog/expert-witness-testimony/": {
@@ -7600,30 +7600,30 @@
                 "_roden_faqs": [
                     {
                         "question": "Does South Carolina cap damages in medical malpractice cases?",
-                        "answer": "Yes. South Carolina caps <strong>non-economic damages</strong> at $350,000 per defendant and $1.05 million total (S.C. Code § 15-32-220). There is no cap on economic damages like medical bills and lost wages. Punitive damages are capped at three times compensatory damages or $739,245, the 2026 inflation-indexed figure, whichever is greater (S.C. Code § 15-32-530)."
+                        "answer": "Yes. South Carolina caps <strong>non-economic damages</strong> at a base of $350,000 per provider or institution and $1,050,000 in total per claimant, adjusted each year for inflation: for 2026, $596,001 and $1,788,002 (S.C. Code § 15-32-220). There is no cap on economic damages like medical bills and lost wages. Punitive damages are capped at three times compensatory damages or $739,245, the 2026 inflation-indexed figure, whichever is greater (S.C. Code § 15-32-530)."
                     },
                     {
                         "question": "How long do I have to file a medical malpractice lawsuit in South Carolina?",
-                        "answer": "South Carolina imposes a <strong>three-year statute of limitations</strong> (S.C. Code § 15-3-545) from the date of the negligent act or from when the injury was or should have been discovered. An absolute <strong>six-year statute of repose</strong> applies — no claim can be filed more than six years after the negligence occurred."
+                        "answer": "South Carolina imposes a <strong>three-year statute of limitations</strong> (S.C. Code § 15-3-545) from the date of the negligent act or from when the injury was or should have been discovered. A <strong>six-year statute of repose</strong> generally applies — in most cases no claim can be filed more than six years after the negligence occurred."
                     },
                     {
                         "question": "What is the Notice of Intent to File Suit requirement in South Carolina?",
-                        "answer": "Under S.C. Code § 15-79-125, you must serve a Notice of Intent to File Suit on each defendant at least <strong>90 days before filing</strong> your complaint. This notice must include a medical records authorization and a description of the alleged negligence. The statute of limitations is tolled during the 90-day period."
+                        "answer": "Under S.C. Code § 15-79-125, before filing a malpractice lawsuit you must file a <strong>Notice of Intent to File Suit</strong> together with a qualified expert's affidavit (S.C. Code § 15-36-100), and serve it on each defendant. Filing the notice tolls the statute of limitations. The parties must then mediate, generally within 90 to 120 days of service, before the lawsuit can be filed."
                     },
                     {
                         "question": "Is mediation required in South Carolina medical malpractice cases?",
-                        "answer": "Yes. South Carolina requires <strong>mandatory mediation</strong> in medical malpractice cases before they can proceed to trial (S.C. Code § 15-79-125). A neutral mediator attempts to facilitate a settlement. If mediation is unsuccessful, the case proceeds to trial."
+                        "answer": "Yes. South Carolina requires <strong>mandatory mediation</strong> in medical malpractice cases before the lawsuit is filed (S.C. Code § 15-79-125). A neutral mediator attempts to facilitate a settlement. If mediation is unsuccessful, the lawsuit can then be filed."
                     },
                     {
                         "question": "What is the statute of repose for medical malpractice in South Carolina?",
-                        "answer": "South Carolina's six-year statute of repose (S.C. Code § 15-3-545(B)) is an absolute deadline. No medical malpractice lawsuit can be filed more than six years after the negligent act, even if the injury was not discovered until later. This is more generous than Georgia's five-year repose period but still bars some legitimate claims."
+                        "answer": "South Carolina's six-year statute of repose (S.C. Code § 15-3-545) generally bars a medical malpractice lawsuit filed more than six years after the negligent act, even if the injury was not discovered until later. This is more generous than Georgia's five-year repose period but still bars some legitimate claims."
                     },
                     {
                         "question": "Can I sue a hospital for medical malpractice in South Carolina?",
-                        "answer": "Yes. Hospitals, medical centers, individual physicians, nurses, specialists, pharmacies, and nursing homes can all be sued for medical malpractice in South Carolina. Each defendant is subject to the $350,000 per-defendant non-economic damage cap, which is why identifying all liable parties is critical to maximizing your total recovery."
+                        "answer": "Yes. Hospitals, medical centers, individual physicians, nurses, specialists, pharmacies, and nursing homes can all be sued for medical malpractice in South Carolina. Each provider or institution is subject to its own non-economic damage cap ($596,001 for 2026), up to $1,788,002 in total for all defendants combined (S.C. Code § 15-32-220), which is why identifying all liable parties is critical to maximizing your total recovery."
                     }
                 ],
-                "_roden_key_takeaways": "South Carolina caps non-economic damages in medical malpractice cases at $350,000 per defendant and $1.05 million total (S.C. Code § 15-32-220). The statute of limitations is three years (S.C. Code § 15-3-545) with a six-year statute of repose. Plaintiffs must serve a 90-day Notice of Intent before filing suit, and mandatory mediation is required before trial. Economic damages (medical bills, lost wages) are uncapped. These procedural requirements make early legal involvement essential."
+                "_roden_key_takeaways": "South Carolina caps non-economic damages in medical malpractice cases at $596,001 per provider or institution and $1,788,002 in total for 2026, figures adjusted each year for inflation (S.C. Code § 15-32-220). The statute of limitations is three years (S.C. Code § 15-3-545) with a six-year statute of repose. Before filing suit, plaintiffs must file a Notice of Intent together with an expert affidavit, serve it on each defendant, and mediate; only if mediation fails can the lawsuit be filed (S.C. Code § 15-79-125). Economic damages (medical bills, lost wages) are uncapped. These procedural requirements make early legal involvement essential."
             }
         },
         "/blog/medical-treatment-after-accident/": {
@@ -9196,10 +9196,10 @@
                     },
                     {
                         "question": "How long do I have to file a pedestrian accident claim in South Carolina?",
-                        "answer": "The statute of limitations for personal injury claims in South Carolina is three years from the date of the accident (S.C. Code § 15-3-530). Wrongful death claims must be filed within three years of the date of death (S.C. Code § 15-51-20). Claims against government entities run on a shorter clock — two years under the Tort Claims Act (S.C. Code § 15-78-110), or three if a verified claim is filed with the agency within one year. In Georgia, the deadline is only two years (O.C.G.A. § 9-3-33)."
+                        "answer": "The statute of limitations for personal injury claims in South Carolina is three years from the date of the accident (S.C. Code § 15-3-530). Wrongful death claims generally must also be filed within three years (S.C. Code § 15-3-530) and are brought by the personal representative of the estate (S.C. Code § 15-51-20). Claims against government entities run on a shorter clock — two years under the Tort Claims Act (S.C. Code § 15-78-110), or three if a verified claim is filed with the agency within one year. In Georgia, the deadline is only two years (O.C.G.A. § 9-3-33)."
                     }
                 ],
-                "_roden_key_takeaways": "Rivers Avenue in North Charleston is one of South Carolina's deadliest corridors for pedestrians due to high speeds, inadequate crosswalks, poor lighting, and heavy commercial traffic on a road designed for cars rather than walkers. South Carolina law gives pedestrians rights in crosswalks but also requires them to yield outside marked crossings. Under South Carolina's modified comparative fault rule, injured pedestrians can recover damages if they are less than 51% at fault. The three-year statute of limitations (S.C. Code SS 15-3-530) applies.",
+                "_roden_key_takeaways": "Rivers Avenue in North Charleston is one of South Carolina's deadliest corridors for pedestrians due to high speeds, inadequate crosswalks, poor lighting, and heavy commercial traffic on a road designed for cars rather than walkers. South Carolina law gives pedestrians rights in crosswalks but also requires them to yield outside marked crossings. Under South Carolina's modified comparative fault rule, injured pedestrians can recover damages if they are less than 51% at fault. The three-year statute of limitations (S.C. Code § 15-3-530) applies.",
                 "_roden_last_reviewed": "2026-09-02"
             }
         },
@@ -18803,7 +18803,7 @@
                 "_roden_faqs": [
                     {
                         "question": "What is the statute of limitations for a birth injury claim?",
-                        "answer": "In Georgia, minors generally have until their seventh birthday to file a medical malpractice claim (O.C.G.A. § 9-3-73), subject to the 5-year statute of repose. South Carolina allows claims to be filed within the standard limitations period after the child reaches the age of majority. Early investigation is strongly recommended."
+                        "answer": "In Georgia, minors generally have until their seventh birthday to file a medical malpractice claim (O.C.G.A. § 9-3-73), subject to the 5-year statute of repose. Early investigation is strongly recommended."
                     },
                     {
                         "question": "How do I know if my child's birth injury was caused by medical negligence?",
@@ -22675,11 +22675,11 @@
                     },
                     {
                         "question": "What is the most dangerous road in Richland County?",
-                        "answer": "US-1 (Augusta Road) is the most dangerous road in Richland County with 939 collisions and 5 fatalities in 2023. Broad River Road is part of the same transportation network and ranks among the most hazardous corridors for truck-specific crashes, particularly at its interchanges with I-20 and I-26."
+                        "answer": "US-1 recorded more collisions than any other road in Richland County in 2023: 939, including 5 fatal collisions (SCDPS Traffic Collision Fact Book). Broad River Road is part of the same transportation network and ranks among the most hazardous corridors for truck-specific crashes, particularly at its interchanges with I-20 and I-26."
                     }
                 ],
                 "_roden_jurisdiction": "sc",
-                "_roden_key_takeaways": "Broad River Road is one of Columbia's most dangerous truck corridors, with <strong>35 accidents including 7 pedestrian deaths</strong> along the corridor. The Broad River Rd &amp; I-20 interchange ranks among <strong>Richland County's most dangerous intersections</strong>. An SUV went partially under a semi-truck trailer near the I-26 exit in Irmo, illustrating the severity of underride crashes on this road. Richland County recorded <strong>12,731 total collisions and 65 fatal crashes</strong> in 2023. South Carolina gives victims <strong>3 years to file</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) with recovery if less than <strong>51% at fault</strong>."
+                "_roden_key_takeaways": "Broad River Road is one of Columbia's most dangerous truck corridors, with <strong>35 accidents including 7 pedestrian deaths</strong> along the corridor. The Broad River Rd &amp; I-20 interchange ranks among <strong>Richland County's most dangerous intersections</strong>. An SUV went partially under a semi-truck trailer near the I-26 exit in Irmo, illustrating the severity of underride crashes on this road. Richland County recorded <strong>12,450 traffic collisions and 58 fatal collisions</strong> in 2023 (SCDPS). South Carolina gives victims <strong>3 years to file</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) with recovery if less than <strong>51% at fault</strong>."
             }
         },
         "/resources/bush-river-road-i-26-truck-accidents-columbia/": {
@@ -22795,7 +22795,7 @@
                     },
                     {
                         "question": "Can I sue the city for a crash caused by a dangerous road?",
-                        "answer": "Potentially, yes. Under the South Carolina Tort Claims Act (S.C. Code § 15-78-80), government entities can be held liable for dangerous road conditions they knew or should have known about. However, the deadline is shorter: the action must be brought within two years of discovery (S.C. Code § 15-78-110) rather than the usual three, and only an optional verified claim filed within one year (S.C. Code § 15-78-80) restores the third year."
+                        "answer": "Potentially, yes. Under the South Carolina Tort Claims Act, government entities can be held liable for dangerous road conditions they knew or should have known about. However, the deadline is shorter: the action must be brought within two years of discovery (S.C. Code § 15-78-110) rather than the usual three, and only an optional verified claim filed within one year (S.C. Code § 15-78-80) restores the third year."
                     },
                     {
                         "question": "How many car accidents happen in North Charleston each year?",
@@ -22811,7 +22811,7 @@
                     }
                 ],
                 "_roden_jurisdiction": "sc",
-                "_roden_key_takeaways": "North Charleston's most dangerous roads include the <strong>Ashley Phosphate/I-26 interchange</strong> (one crash every 3 days), the <strong>I-26/I-526 interchange</strong>, <strong>Rivers Avenue from Remount to I-526</strong>, and <strong>Dorchester Road</strong>. Contributing factors include high-speed merges, commercial truck volume, and inadequate pedestrian infrastructure. South Carolina's <strong>3-year statute of limitations</strong> (<strong>S.C. Code § 15-3-530</strong>) applies to all injury claims on these roads, and government entities may share liability for known design deficiencies."
+                "_roden_key_takeaways": "North Charleston's most dangerous roads include the <strong>Ashley Phosphate/I-26 interchange</strong> (one crash every 3 days), the <strong>I-26/I-526 interchange</strong>, <strong>Rivers Avenue from Remount to I-526</strong>, and <strong>Dorchester Road</strong>. Contributing factors include high-speed merges, commercial truck volume, and inadequate pedestrian infrastructure. South Carolina's <strong>3-year statute of limitations</strong> (<strong>S.C. Code § 15-3-530</strong>) applies to most injury claims on these roads; claims against government entities, which may share liability for known design deficiencies, generally must be filed within two years (<strong>S.C. Code § 15-78-110</strong>)."
             }
         },
         "/resources/dean-forest-road-truck-accidents-pooler/": {
@@ -23903,7 +23903,7 @@
                     }
                 ],
                 "_roden_jurisdiction": "sc",
-                "_roden_key_takeaways": "Most South Carolina car accident settlements range from roughly $3,000 for minor injuries to several hundred thousand dollars or more for severe and catastrophic ones, with no general cap on damages in ordinary auto cases. Value depends on your medical bills, lost income, pain, fault share, and the available insurance — including UM/UIM coverage when the at-fault driver carries only the $25,000 state minimum. South Carolina gives you 3 years to file (S.C. Code § 15-3-530). Every case is unique and no result is guaranteed.",
+                "_roden_key_takeaways": "Most South Carolina car accident settlements range from roughly $3,000 for minor injuries to several hundred thousand dollars or more for severe and catastrophic ones, with no general cap on damages in ordinary auto cases (claims against a government entity are capped at $300,000 per person and $600,000 per occurrence, S.C. Code § 15-78-120). Value depends on your medical bills, lost income, pain, fault share, and the available insurance — including UM/UIM coverage when the at-fault driver carries only the $25,000 state minimum. South Carolina gives you 3 years to file (S.C. Code § 15-3-530). Every case is unique and no result is guaranteed.",
                 "_roden_meta_description": "Most South Carolina car accident settlements range from a few thousand dollars to several hundred thousand or more, depending on injuries, fault, and coverage.",
                 "_roden_translation_es": "/es/resources/south-carolina-car-accident-settlement-value/"
             }
@@ -24869,7 +24869,7 @@
                     },
                     {
                         "question": "What is the difference between a wrongful death claim and a survival action in South Carolina?",
-                        "answer": "A wrongful-death claim (S.C. Code § 15-51) compensates the surviving beneficiaries for their losses — financial support, companionship, grief, and guidance. A survival action (S.C. Code § 15-5-90) compensates the estate for what the deceased personally endured before death, especially conscious pain and suffering. A thorough South Carolina case pursues both because they cover different losses."
+                        "answer": "A wrongful-death claim (S.C. Code § 15-51-10 et seq.) compensates the surviving beneficiaries for their losses — financial support, companionship, grief, and guidance. A survival action (S.C. Code § 15-5-90) compensates the estate for what the deceased personally endured before death, especially conscious pain and suffering. A thorough South Carolina case pursues both because they cover different losses."
                     },
                     {
                         "question": "Who can file and recover in a South Carolina wrongful death case?",
@@ -24877,19 +24877,19 @@
                     },
                     {
                         "question": "Is there a cap on wrongful death damages in South Carolina?",
-                        "answer": "No, not in an ordinary case — South Carolina places no cap on compensatory damages in wrongful death. Punitive damages are generally capped under S.C. Code § 15-32-530, but that cap is removed for DUI, felony, or intent-to-harm conduct. If a government entity caused the death, the Tort Claims Act caps recovery at $300,000 per person and $600,000 per occurrence."
+                        "answer": "No, not in an ordinary case — South Carolina places no cap on compensatory damages in wrongful death. Punitive damages are generally capped under S.C. Code § 15-32-530, but that cap is removed when the defendant intended to harm, was convicted of a felony for the conduct, or had judgment substantially impaired by alcohol or drugs. If a government entity caused the death, the Tort Claims Act caps recovery at $300,000 per person and $600,000 per occurrence, and the same limits apply to a claim against a charitable organization, which can include a nonprofit hospital or nursing home (S.C. Code § 33-56-180)."
                     },
                     {
                         "question": "How long do I have to file a wrongful death claim in South Carolina?",
-                        "answer": "In South Carolina, you generally have 3 years from the date of death to file a wrongful death lawsuit under S.C. Code § 15-3-530. If a government entity is a defendant, notice deadlines can be much shorter. Acting early helps preserve evidence and protects the family's right to recover."
+                        "answer": "In South Carolina, you generally have 3 years from the date of death to file a wrongful death lawsuit under S.C. Code § 15-3-530. Claims against a government defendant generally must be filed within two years instead (S.C. Code § 15-78-110), or three if a verified claim is filed with the agency within one year (S.C. Code § 15-78-80). Acting early helps preserve evidence and protects the family's right to recover."
                     },
                     {
                         "question": "Are punitive damages available in South Carolina wrongful death cases?",
-                        "answer": "Yes, when the death resulted from reckless or willful conduct such as drunk driving. Under S.C. Code § 15-32-530, punitive damages are generally capped at the greater of three times compensatory damages or an inflation-adjusted minimum (about $739,000 as of 2026, adjusted annually), and that cap is removed entirely for DUI, felony conduct, or intent to harm. They are not available against a government defendant."
+                        "answer": "Yes, when the death resulted from reckless or willful conduct such as drunk driving. Under S.C. Code § 15-32-530, punitive damages are generally capped at the greater of three times compensatory damages or an inflation-adjusted minimum (about $739,000 as of 2026, adjusted annually), and that cap is removed entirely for intent to harm, a felony conviction arising from the conduct, or judgment substantially impaired by alcohol or drugs. They are not available against a government defendant."
                     }
                 ],
                 "_roden_jurisdiction": "sc",
-                "_roden_key_takeaways": "South Carolina wrongful death settlements range from six figures to several million dollars, and there is no cap on compensatory damages in an ordinary case. A South Carolina death case can involve two separate claims: the wrongful-death claim (S.C. Code § 15-51) for the beneficiaries' losses — financial support, companionship, grief, and guidance — and a survival action (S.C. Code § 15-5-90) for the decedent's own pre-death pain and suffering. Punitive damages are available for reckless conduct. Your award is reduced by any fault of the decedent, and Tort Claims Act caps apply against a government defendant. You generally have 3 years to file.",
+                "_roden_key_takeaways": "South Carolina wrongful death settlements range from six figures to several million dollars, and there is no cap on compensatory damages in an ordinary case. A South Carolina death case can involve two separate claims: the wrongful-death claim (S.C. Code § 15-51-10 et seq.) for the beneficiaries' losses — financial support, companionship, grief, and guidance — and a survival action (S.C. Code § 15-5-90) for the decedent's own pre-death pain and suffering. Punitive damages are available for reckless conduct. Your award is reduced by any fault of the decedent, and Tort Claims Act caps apply against a government defendant. You generally have 3 years to file.",
                 "_roden_meta_description": "South Carolina wrongful death cases carry no cap on compensatory damages and can include two claims — the wrongful-death claim and a survival action. Value depends on the loss and the facts."
             }
         },
@@ -25038,7 +25038,7 @@
                     }
                 ],
                 "_roden_jurisdiction": "sc",
-                "_roden_key_takeaways": "Two Notch Road is one of Columbia's most accident-prone truck corridors, with local business owners describing it as <strong>\"accident-prone just because of how the infrastructure is set up.\"</strong> Dangerous segments include I-20 East to Parklane Rd and Atrium Way to Greengage Park Rd. A <strong>firetruck struck and killed Carolyn Collins, 64</strong>, at Two Notch &amp; Decker Blvd in July 2025, illustrating the lethal risk of heavy-vehicle collisions at these intersections. Richland County recorded <strong>12,731 collisions and 65 fatal crashes</strong> in 2023. South Carolina gives victims <strong>3 years to file</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) with recovery if less than <strong>51% at fault</strong>."
+                "_roden_key_takeaways": "Two Notch Road is one of Columbia's most accident-prone truck corridors, with local business owners describing it as <strong>\"accident-prone just because of how the infrastructure is set up.\"</strong> Dangerous segments include I-20 East to Parklane Rd and Atrium Way to Greengage Park Rd. A <strong>firetruck struck and killed Carolyn Collins, 64</strong>, at Two Notch &amp; Decker Blvd in July 2025, illustrating the lethal risk of heavy-vehicle collisions at these intersections. Richland County recorded <strong>12,450 traffic collisions and 58 fatal collisions</strong> in 2023 (SCDPS). South Carolina gives victims <strong>3 years to file</strong> (<strong>S.C. Code &sect; 15-3-530</strong>) with recovery if less than <strong>51% at fault</strong>."
             }
         },
         "/resources/us-17-sc-544-truck-accidents-surfside-beach/": {
@@ -26190,7 +26190,7 @@
                     },
                     {
                         "question": "What damages are available in a fatal car accident wrongful death claim?",
-                        "answer": "Damages include the full value of the deceased's life (future earnings and contributions), pre-death pain and suffering, medical expenses incurred before death, funeral and burial costs, and loss of companionship and support."
+                        "answer": "Damages include the full value of the deceased's life (future earnings and contributions), pre-death pain and suffering, medical expenses incurred before death, funeral and burial costs, and loss of companionship and support. In South Carolina, the wrongful death award is proportioned to the loss the death caused each beneficiary (S.C. Code § 15-51-40), and the deceased's own pre-death claim is pursued by the estate in a separate survival action (S.C. Code § 15-5-90)."
                     },
                     {
                         "question": "Can I file a wrongful death claim if the at-fault driver was uninsured?",
@@ -26236,7 +26236,7 @@
                     },
                     {
                         "question": "What damages are available in a medical malpractice death case?",
-                        "answer": "Damages include the full value of the deceased's life, loss of companionship, pre-death pain and suffering, medical expenses, and funeral costs. Georgia and South Carolina allow both wrongful death and survival actions to maximize the family's total recovery."
+                        "answer": "Damages include the full value of the deceased's life, loss of companionship, pre-death pain and suffering, medical expenses, and funeral costs. Georgia and South Carolina allow both wrongful death and survival actions to maximize the family's total recovery. In South Carolina, the wrongful death award is proportioned to the loss the death caused each beneficiary (S.C. Code § 15-51-40)."
                     }
                 ],
                 "_roden_jurisdiction": "both",
@@ -26262,7 +26262,7 @@
                     },
                     {
                         "question": "Are punitive damages available in nursing home wrongful death cases?",
-                        "answer": "Yes, in cases involving willful neglect, abuse, or reckless disregard for resident safety. Georgia generally caps punitive damages at $250,000 (O.C.G.A. § 51-12-5.1) with exceptions, while South Carolina requires clear and convincing evidence of willful conduct."
+                        "answer": "Yes, in cases involving willful neglect, abuse, or reckless disregard for resident safety. Georgia generally caps punitive damages at $250,000 (O.C.G.A. § 51-12-5.1) with exceptions, while in South Carolina punitive damages require recklessness, wilfulness or malice (S.C. Code § 15-51-40), must be proved by clear and convincing evidence (S.C. Code § 15-33-135), and are generally capped at the greater of three times compensatory damages or $739,245 for 2026, a figure adjusted each year (S.C. Code § 15-32-530)."
                     },
                     {
                         "question": "Can I hold the nursing home's corporate owner liable?",
@@ -26304,7 +26304,7 @@
                     },
                     {
                         "question": "What is the statute of limitations for a pedestrian or cyclist fatality claim?",
-                        "answer": "In Georgia, the wrongful death statute of limitations is 2 years from the date of death (O.C.G.A. § 9-3-33). In South Carolina, it is 3 years (S.C. Code § 15-3-530). Claims against government entities for unsafe road design may have shorter notice requirements."
+                        "answer": "In Georgia, the wrongful death statute of limitations is 2 years from the date of death (O.C.G.A. § 9-3-33). In South Carolina, it is 3 years (S.C. Code § 15-3-530). Claims against government entities for unsafe road design may have shorter notice requirements in Georgia; South Carolina has no notice requirement, but suit generally must be filed within two years (S.C. Code § 15-78-110), or three if a verified claim is filed with the agency within one year (S.C. Code § 15-78-80)."
                     }
                 ],
                 "_roden_jurisdiction": "both",
@@ -26335,7 +26335,7 @@
                     },
                     {
                         "question": "What role does OSHA play in a workplace fatality case?",
-                        "answer": "OSHA investigates all workplace fatalities and may issue citations for safety violations. OSHA findings, while not binding in civil cases, provide valuable evidence of negligence that can strengthen a wrongful death claim."
+                        "answer": "OSHA investigates many workplace fatalities and may issue citations for safety violations. OSHA findings, while not binding in civil cases, provide valuable evidence of negligence that can strengthen a wrongful death claim."
                     },
                     {
                         "question": "What is the statute of limitations for a workplace fatality wrongful death claim?",
