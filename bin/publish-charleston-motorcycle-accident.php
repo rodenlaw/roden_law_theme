@@ -18,7 +18,7 @@
 $apply = isset( $args[0] ) && 'apply' === $args[0];
 $err   = fopen( 'php://stderr', 'w' );
 $id    = 3639;
-$reviewed = ''; // set only when the owner confirms Gillin's review, incl. §§ 56-5-3640 and 56-5-3660
+$reviewed = '2026-09-28'; // owner: "these have been reviewed by Gillin today" (2026-09-28), incl. §§ 56-5-3640 and 56-5-3660 (internal-ai-scripts #68)
 global $wpdb;
 
 if ( ! function_exists( 'roden_office_practice_allowlist' ) || ! in_array( 'motorcycle-accident-lawyers/charleston-sc', roden_office_practice_allowlist(), true ) ) {
