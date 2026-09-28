@@ -1,0 +1,990 @@
+[
+  {
+    "id": "B3-1646a",
+    "post_id": 1646,
+    "url": "/blog/first-steps-in-a-medical-malpractice-case/",
+    "field": "takeaways",
+    "from": "and requires 90-day pre-suit notice.",
+    "to": "and requires a Notice of Intent to File Suit, filed together with a qualified expert's affidavit, before suit (S.C. Code § 15-79-125).",
+    "authority": [
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "90-day NOI class (4562). SC sentence only."
+  },
+  {
+    "id": "B3-1646b",
+    "post_id": 1646,
+    "url": "/blog/first-steps-in-a-medical-malpractice-case/",
+    "field": "takeaways",
+    "from": "South Carolina caps non-economic damages at $350K per defendant (S.C. Code § 15-32-220).",
+    "to": "South Carolina caps non-economic damages at $596,001 per provider or institution and $1,788,002 in total for 2026 (S.C. Code § 15-32-220).",
+    "authority": [
+      "SC 15-32-220"
+    ],
+    "class": "apply",
+    "note": "Stale-cap class."
+  },
+  {
+    "id": "B3-1646c",
+    "post_id": 1646,
+    "url": "/blog/first-steps-in-a-medical-malpractice-case/",
+    "field": "faq1",
+    "from": "but the statute of repose sets an absolute outer limit.",
+    "to": "but the statute of repose sets an outer limit.",
+    "authority": [
+      "SC 15-3-545"
+    ],
+    "class": "apply",
+    "note": "\"Absolute\" is false for South Carolina foreign-object claims (§ 15-3-545(B)); dropping the adjective changes no Georgia statement."
+  },
+  {
+    "id": "B3-1646d",
+    "post_id": 1646,
+    "url": "/blog/first-steps-in-a-medical-malpractice-case/",
+    "field": "faq2",
+    "from": "South Carolina <strong>does cap</strong> non-economic damages at $350,000 per defendant and $1.05 million total (S.C. Code § 15-32-220).",
+    "to": "South Carolina <strong>does cap</strong> non-economic damages at a base of $350,000 per provider or institution and $1,050,000 in total per claimant, adjusted each year for inflation: for 2026, $596,001 and $1,788,002 (S.C. Code § 15-32-220).",
+    "authority": [
+      "SC 15-32-220"
+    ],
+    "class": "apply",
+    "note": "Stale-cap class (FAQ + FAQPage)."
+  },
+  {
+    "id": "B3-1646e",
+    "post_id": 1646,
+    "url": "/blog/first-steps-in-a-medical-malpractice-case/",
+    "field": "faq3",
+    "from": "In South Carolina, expert testimony is required to establish the standard of care and the breach at trial.",
+    "to": "In South Carolina, a qualified expert's affidavit must be filed with the pre-suit Notice of Intent to File Suit (S.C. Code §§ 15-79-125, 15-36-100), and expert testimony is required at trial.",
+    "authority": [
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "Implied no SC pre-suit affidavit (contrast with Georgia); false."
+  },
+  {
+    "id": "B3-1646f",
+    "post_id": 1646,
+    "url": "/blog/first-steps-in-a-medical-malpractice-case/",
+    "field": "faq4",
+    "from": "especially important in South Carolina, where non-economic damage caps apply per defendant.",
+    "to": "especially important in South Carolina, where the non-economic damage cap applies per provider or institution, up to a total per claimant (S.C. Code § 15-32-220).",
+    "authority": [
+      "SC 15-32-220"
+    ],
+    "class": "apply",
+    "note": "\"Per defendant\" misstates the § 15-32-220 structure."
+  },
+  {
+    "id": "B3-1646g",
+    "post_id": 1646,
+    "url": "/blog/first-steps-in-a-medical-malpractice-case/",
+    "field": "content",
+    "from": "particularly in South Carolina, where non-economic damage caps apply <strong>per defendant</strong>.",
+    "to": "particularly in South Carolina, where the non-economic damage cap applies <strong>per provider or institution</strong>, up to a total per claimant (S.C. Code § 15-32-220).",
+    "authority": [
+      "SC 15-32-220"
+    ],
+    "class": "apply",
+    "note": "As B3-1646f (body)."
+  },
+  {
+    "id": "B3-1646h",
+    "post_id": 1646,
+    "url": "/blog/first-steps-in-a-medical-malpractice-case/",
+    "field": "content",
+    "from": "<td>$350K per defendant / $1.05M total</td>",
+    "to": "<td>$596,001 per provider / $1,788,002 total (2026; adjusted yearly)</td>",
+    "authority": [
+      "SC 15-32-220"
+    ],
+    "class": "apply",
+    "note": "Stale-cap class (table)."
+  },
+  {
+    "id": "B3-1646i",
+    "post_id": 1646,
+    "url": "/blog/first-steps-in-a-medical-malpractice-case/",
+    "field": "content",
+    "from": "<td>3x compensatory or $500K</td>",
+    "to": "<td>3x compensatory or $739,245 (2026; adjusted yearly)</td>",
+    "authority": [
+      "SC 15-32-530"
+    ],
+    "class": "apply",
+    "note": "Unindexed punitive floor (the sc-punitive-floor-unindexed class, in a \"$500K\" form the rule does not match)."
+  },
+  {
+    "id": "B3-1646j",
+    "post_id": 1646,
+    "url": "/blog/first-steps-in-a-medical-malpractice-case/",
+    "field": "content",
+    "from": "<td>90-day Notice of Intent (S.C. Code § 15-79-125)</td>",
+    "to": "<td>Notice of Intent filed with expert affidavit (S.C. Code §§ 15-79-125, 15-36-100)</td>",
+    "authority": [
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "90-day NOI class (table)."
+  },
+  {
+    "id": "B3-1646k",
+    "post_id": 1646,
+    "url": "/blog/first-steps-in-a-medical-malpractice-case/",
+    "field": "content",
+    "from": "subject to the $350,000 per-defendant / $1.05 million total cap in South Carolina.",
+    "to": "subject to South Carolina's cap of $596,001 per provider or institution and $1,788,002 in total for 2026 (S.C. Code § 15-32-220).",
+    "authority": [
+      "SC 15-32-220"
+    ],
+    "class": "apply",
+    "note": "Stale-cap class."
+  },
+  {
+    "id": "B3-1646l",
+    "post_id": 1646,
+    "url": "/blog/first-steps-in-a-medical-malpractice-case/",
+    "field": "content",
+    "from": "In South Carolina, your attorney serves the 90-day Notice of Intent on all defendants (S.C. Code § 15-79-125).",
+    "to": "In South Carolina, your attorney files a Notice of Intent to File Suit together with a qualified expert's affidavit, and serves it on all defendants; filing it tolls the statute of limitations (S.C. Code §§ 15-79-125, 15-36-100).",
+    "authority": [
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "90-day NOI class (step 3)."
+  },
+  {
+    "id": "B3-1646m",
+    "post_id": 1646,
+    "url": "/blog/first-steps-in-a-medical-malpractice-case/",
+    "field": "content",
+    "from": "In South Carolina, mediation is mandatory.",
+    "to": "In South Carolina, mediation is mandatory before the lawsuit is filed (S.C. Code § 15-79-125).",
+    "authority": [
+      "SC 15-79-125"
+    ],
+    "class": "apply",
+    "note": "Step 6 placed after filing; SC mediation is pre-suit."
+  },
+  {
+    "id": "B3-1668a",
+    "post_id": 1668,
+    "url": "/blog/5-most-common-types-of-medical-malpractice-in-2023/",
+    "field": "takeaways",
+    "from": "and caps non-economic damages at $350,000 per defendant.",
+    "to": "and caps non-economic damages at $596,001 per provider or institution and $1,788,002 in total for 2026 (S.C. Code § 15-32-220).",
+    "authority": [
+      "SC 15-32-220"
+    ],
+    "class": "apply",
+    "note": "Stale-cap class."
+  },
+  {
+    "id": "B3-1668b",
+    "post_id": 1668,
+    "url": "/blog/5-most-common-types-of-medical-malpractice-in-2023/",
+    "field": "faq3",
+    "from": "South Carolina requires expert testimony at trial to establish the standard of care and how it was breached.",
+    "to": "South Carolina requires a qualified expert's affidavit to be filed with the pre-suit Notice of Intent to File Suit (S.C. Code §§ 15-79-125, 15-36-100), and expert testimony at trial to establish the standard of care and how it was breached.",
+    "authority": [
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "Implied no SC pre-suit affidavit; false."
+  },
+  {
+    "id": "B3-1668c",
+    "post_id": 1668,
+    "url": "/blog/5-most-common-types-of-medical-malpractice-in-2023/",
+    "field": "faq4",
+    "from": "at $350,000 per defendant and $1.05 million total for all defendants (S.C. Code § 15-32-220), adjusted for inflation.",
+    "to": "at a base of $350,000 per provider or institution and $1,050,000 in total per claimant, adjusted each year for inflation: for 2026, $596,001 and $1,788,002 (S.C. Code § 15-32-220).",
+    "authority": [
+      "SC 15-32-220"
+    ],
+    "class": "apply",
+    "note": "Stale-cap class (FAQ + FAQPage)."
+  },
+  {
+    "id": "B3-1668d",
+    "post_id": 1668,
+    "url": "/blog/5-most-common-types-of-medical-malpractice-in-2023/",
+    "field": "content",
+    "from": "<li><strong>Expert testimony:</strong> Plaintiffs must present expert testimony from a qualified healthcare provider to establish the standard of care and how it was breached.</li>",
+    "to": "<li><strong>Expert affidavit:</strong> Before suing, plaintiffs must file a Notice of Intent to File Suit together with a qualified expert's affidavit (S.C. Code §§ 15-79-125, 15-36-100), and must present expert testimony to establish the standard of care and how it was breached.</li>",
+    "authority": [
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "As B3-1668b (body)."
+  },
+  {
+    "id": "B3-1668e",
+    "post_id": 1668,
+    "url": "/blog/5-most-common-types-of-medical-malpractice-in-2023/",
+    "field": "content",
+    "from": "at $350,000 per defendant and $1.05 million total for all defendants (S.C. Code § 15-32-220), adjusted for inflation.</li>",
+    "to": "at a base of $350,000 per provider or institution and $1,050,000 in total per claimant, adjusted each year for inflation: for 2026, $596,001 and $1,788,002 (S.C. Code § 15-32-220).</li>",
+    "authority": [
+      "SC 15-32-220"
+    ],
+    "class": "apply",
+    "note": "Stale-cap class (body)."
+  },
+  {
+    "id": "B3-1668f",
+    "post_id": 1668,
+    "url": "/blog/5-most-common-types-of-medical-malpractice-in-2023/",
+    "field": "content",
+    "from": "<td>Expert testimony at trial</td>",
+    "to": "<td>Expert affidavit with the pre-suit Notice of Intent</td>",
+    "authority": [
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "As B3-1668b (table)."
+  },
+  {
+    "id": "B3-1668g",
+    "post_id": 1668,
+    "url": "/blog/5-most-common-types-of-medical-malpractice-in-2023/",
+    "field": "content",
+    "from": "<td>Mandatory mediation</td>",
+    "to": "<td>Notice of Intent, then mandatory mediation</td>",
+    "authority": [
+      "SC 15-79-125"
+    ],
+    "class": "apply",
+    "note": "Pre-suit requirement cell omitted the NOI."
+  },
+  {
+    "id": "B3-1668h",
+    "post_id": 1668,
+    "url": "/blog/5-most-common-types-of-medical-malpractice-in-2023/",
+    "field": "content",
+    "from": "<td>$350K per defendant / $1.05M total</td>",
+    "to": "<td>$596,001 per provider / $1,788,002 total (2026; adjusted yearly)</td>",
+    "authority": [
+      "SC 15-32-220"
+    ],
+    "class": "apply",
+    "note": "Stale-cap class (table)."
+  },
+  {
+    "id": "B3-1668i",
+    "post_id": 1668,
+    "url": "/blog/5-most-common-types-of-medical-malpractice-in-2023/",
+    "field": "content",
+    "from": "South Carolina (mandatory mediation)",
+    "to": "South Carolina (Notice of Intent, expert affidavit and mandatory mediation)",
+    "authority": [
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "Completes the SC pre-suit list."
+  },
+  {
+    "id": "B3-1696a",
+    "post_id": 1696,
+    "url": "/blog/what-if-i-suspect-medical-malpractice/",
+    "field": "takeaways",
+    "from": "South Carolina allows three years but requires 90-day pre-suit notice and mandatory mediation (S.C. Code § 15-3-545, § 15-79-125).",
+    "to": "South Carolina allows three years but requires a Notice of Intent to File Suit, filed together with a qualified expert's affidavit, and then mandatory mediation, before suit (S.C. Code § 15-3-545, § 15-79-125).",
+    "authority": [
+      "SC 15-3-545",
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "90-day NOI class."
+  },
+  {
+    "id": "B3-1696b",
+    "post_id": 1696,
+    "url": "/blog/what-if-i-suspect-medical-malpractice/",
+    "field": "faq3",
+    "from": "You must also serve a Notice of Intent to File Suit at least 90 days before filing the complaint (S.C. Code § 15-79-125), and mandatory mediation is required before trial.",
+    "to": "Before suing, you must also file a Notice of Intent to File Suit together with a qualified expert's affidavit, and serve it on each defendant, which tolls the deadline; the parties must then mediate before the lawsuit can be filed (S.C. Code §§ 15-79-125, 15-36-100).",
+    "authority": [
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "90-day NOI + post-suit mediation class (FAQ + FAQPage)."
+  },
+  {
+    "id": "B3-1696c",
+    "post_id": 1696,
+    "url": "/blog/what-if-i-suspect-medical-malpractice/",
+    "field": "content",
+    "from": "<td>5 years from negligent act</td>\n<td>6 years from negligent act</td>",
+    "to": "<td>5 years from negligent act</td>\n<td>6 years from negligent act (not for foreign objects)</td>",
+    "authority": [
+      "SC 15-3-545"
+    ],
+    "class": "apply",
+    "note": "SC cell only; the row label calls repose \"absolute\", which (B) contradicts for SC."
+  },
+  {
+    "id": "B3-1696d",
+    "post_id": 1696,
+    "url": "/blog/what-if-i-suspect-medical-malpractice/",
+    "field": "content",
+    "from": "<td>Extended to child's 8th birthday</td>",
+    "to": "<td>Extended during minority, but by no more than 7 years and no more than 1 year after age 18 (S.C. Code § 15-3-545(D))</td>",
+    "authority": [
+      "SC 15-3-545"
+    ],
+    "class": "apply",
+    "note": "Invented minors rule (SC cell only; the Georgia cell is for the Georgia reviewer, GA-B3-2)."
+  },
+  {
+    "id": "B3-1696e",
+    "post_id": 1696,
+    "url": "/blog/what-if-i-suspect-medical-malpractice/",
+    "field": "content",
+    "from": "<td>Foreign object in body (GA only)</td>\n<td>1 year from discovery (O.C.G.A. § 9-3-72)</td>\n<td>Standard rules apply</td>",
+    "to": "<td>Foreign object in body</td>\n<td>1 year from discovery (O.C.G.A. § 9-3-72)</td>\n<td>2 years from discovery, but not less than 3 years after placement (S.C. Code § 15-3-545(B))</td>",
+    "authority": [
+      "SC 15-3-545"
+    ],
+    "class": "apply",
+    "note": "\"GA only\" / \"Standard rules apply\" is false: SC has its own foreign-object rule. Georgia cell unchanged."
+  },
+  {
+    "id": "B3-1696f",
+    "post_id": 1696,
+    "url": "/blog/what-if-i-suspect-medical-malpractice/",
+    "field": "content",
+    "from": "<h3>South Carolina: 90-Day Notice of Intent (S.C. Code § 15-79-125)</h3>",
+    "to": "<h3>South Carolina: Notice of Intent and Expert Affidavit (S.C. Code § 15-79-125)</h3>",
+    "authority": [
+      "SC 15-79-125"
+    ],
+    "class": "apply",
+    "note": "90-day NOI class (heading)."
+  },
+  {
+    "id": "B3-1696g",
+    "post_id": 1696,
+    "url": "/blog/what-if-i-suspect-medical-malpractice/",
+    "field": "content",
+    "from": "you must serve a <strong>Notice of Intent to File Suit</strong> on each defendant at least 90 days before filing the complaint. The notice must include a medical records authorization and a description of the alleged negligence. The statute of limitations is tolled during the notice period, but the requirement still demands early preparation. South Carolina also requires <strong>mandatory mediation</strong> before the case can proceed to trial.",
+    "to": "you must file a <strong>Notice of Intent to File Suit</strong> together with a qualified expert's affidavit specifying at least one negligent act or omission, and serve it on each defendant (S.C. Code § 15-36-100). Filing the notice tolls the statute of limitations, but the requirement still demands early preparation. The parties must then complete <strong>mandatory mediation</strong>, generally within 90 to 120 days of service, before the lawsuit can be filed.",
+    "authority": [
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "90-day NOI class: no 90-day wait, no records-authorization requirement, mediation is pre-suit."
+  },
+  {
+    "id": "B3-1813a",
+    "post_id": 1813,
+    "url": "/blog/how-do-i-know-if-i-have-a-medical-malpractice-case/",
+    "field": "takeaways",
+    "from": "but requires a 90-day pre-suit Notice of Intent.",
+    "to": "but requires a pre-suit Notice of Intent filed with an expert affidavit (S.C. Code § 15-79-125).",
+    "authority": [
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "90-day NOI class."
+  },
+  {
+    "id": "B3-1813b",
+    "post_id": 1813,
+    "url": "/blog/how-do-i-know-if-i-have-a-medical-malpractice-case/",
+    "field": "takeaways",
+    "from": "South Carolina caps noneconomic damages at $350,000 per defendant.",
+    "to": "South Carolina caps noneconomic damages at $596,001 per provider or institution and $1,788,002 in total for 2026 (S.C. Code § 15-32-220).",
+    "authority": [
+      "SC 15-32-220"
+    ],
+    "class": "apply",
+    "note": "Stale-cap class."
+  },
+  {
+    "id": "B3-1813c",
+    "post_id": 1813,
+    "url": "/blog/how-do-i-know-if-i-have-a-medical-malpractice-case/",
+    "field": "faq2",
+    "from": "South Carolina requires an expert affidavit with the mandatory 90-day Notice of Intent to File Suit.",
+    "to": "South Carolina requires an expert affidavit filed with the pre-suit Notice of Intent to File Suit (S.C. Code §§ 15-79-125, 15-36-100).",
+    "authority": [
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "90-day NOI class (FAQ + FAQPage)."
+  },
+  {
+    "id": "B3-1813d",
+    "post_id": 1813,
+    "url": "/blog/how-do-i-know-if-i-have-a-medical-malpractice-case/",
+    "field": "faq3",
+    "from": "at $350,000 per defendant and $1.05 million total for all defendants under S.C. Code § 15-32-220, though",
+    "to": "at a base of $350,000 per provider or institution and $1,050,000 in total per claimant, adjusted each year for inflation ($596,001 and $1,788,002 for 2026), under S.C. Code § 15-32-220, though",
+    "authority": [
+      "SC 15-32-220"
+    ],
+    "class": "apply",
+    "note": "Stale-cap class (FAQ + FAQPage)."
+  },
+  {
+    "id": "B3-1813e",
+    "post_id": 1813,
+    "url": "/blog/how-do-i-know-if-i-have-a-medical-malpractice-case/",
+    "field": "content",
+    "from": "For minors, the deadline runs until one year after the child turns eighteen.",
+    "to": "For minors, the deadline is extended during minority, but by no more than seven years and no more than one year after the child turns eighteen (S.C. Code § 15-3-545(D)).",
+    "authority": [
+      "SC 15-3-545"
+    ],
+    "class": "apply",
+    "note": "Minors rule stated without the seven-year cap (§ 15-3-545(D))."
+  },
+  {
+    "id": "B3-1813f",
+    "post_id": 1813,
+    "url": "/blog/how-do-i-know-if-i-have-a-medical-malpractice-case/",
+    "field": "content",
+    "from": "that you file a <strong>Notice of Intent to File Suit</strong> at least 90 days before filing the actual lawsuit. During this period, the statute of limitations is tolled (paused). This notice must be accompanied by an expert affidavit confirming at least one negligent act.",
+    "to": "that you file a <strong>Notice of Intent to File Suit</strong>, together with an expert affidavit specifying at least one negligent act or omission, and serve it on each defendant before filing the lawsuit (S.C. Code §§ 15-79-125, 15-36-100). Filing the notice tolls (pauses) the statute of limitations, and the parties must then mediate, generally within 90 to 120 days of service, before the lawsuit can be filed.",
+    "authority": [
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "90-day NOI class."
+  },
+  {
+    "id": "B3-1813g",
+    "post_id": 1813,
+    "url": "/blog/how-do-i-know-if-i-have-a-medical-malpractice-case/",
+    "field": "content",
+    "from": "at $350,000 per defendant and $1.05 million total for all defendants (adjusted periodically for inflation).",
+    "to": "at a base of $350,000 per provider or institution and $1,050,000 in total per claimant, adjusted each year for inflation ($596,001 and $1,788,002 for 2026).",
+    "authority": [
+      "SC 15-32-220"
+    ],
+    "class": "apply",
+    "note": "Stale-cap class (body)."
+  },
+  {
+    "id": "B3-1813h",
+    "post_id": 1813,
+    "url": "/blog/how-do-i-know-if-i-have-a-medical-malpractice-case/",
+    "field": "content",
+    "from": "<td>90-day Notice of Intent required</td>",
+    "to": "<td>Notice of Intent with expert affidavit, then mediation</td>",
+    "authority": [
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "90-day NOI class (table)."
+  },
+  {
+    "id": "B3-1813i",
+    "post_id": 1813,
+    "url": "/blog/how-do-i-know-if-i-have-a-medical-malpractice-case/",
+    "field": "content",
+    "from": "<td>$350K per defendant / $1.05M total</td>",
+    "to": "<td>$596,001 per provider / $1,788,002 total (2026; adjusted yearly)</td>",
+    "authority": [
+      "SC 15-32-220"
+    ],
+    "class": "apply",
+    "note": "Stale-cap class (table)."
+  },
+  {
+    "id": "B3-1813j",
+    "post_id": 1813,
+    "url": "/blog/how-do-i-know-if-i-have-a-medical-malpractice-case/",
+    "field": "content",
+    "from": "In South Carolina, the expert must be licensed and board-certified in the relevant specialty.",
+    "to": "In South Carolina, the expert must be licensed and either board certified in the relevant specialty or have practiced or taught in it for at least three of the last five years immediately preceding the opinion (S.C. Code § 15-36-100).",
+    "authority": [
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "Board certification is one of two routes, not a requirement."
+  },
+  {
+    "id": "B3-4350a",
+    "post_id": 4350,
+    "url": "/blog/how-long-personal-injury-case-charleston-sc/",
+    "field": "faq4",
+    "from": "Medical malpractice cases require a 90-day pre-suit notice, effectively shortening the deadline.",
+    "to": "Medical malpractice cases have their own deadline (S.C. Code § 15-3-545) and require a Notice of Intent to File Suit, filed together with a qualified expert's affidavit, which takes time to prepare (S.C. Code § 15-79-125).",
+    "authority": [
+      "SC 15-3-545",
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "90-day NOI class (FAQ + FAQPage). The notice tolls the deadline; it does not shorten it."
+  },
+  {
+    "id": "B3-4350b",
+    "post_id": 4350,
+    "url": "/blog/how-long-personal-injury-case-charleston-sc/",
+    "field": "faq5",
+    "from": "and the 90-day pre-suit notice.",
+    "to": "and the pre-suit Notice of Intent and mediation (S.C. Code § 15-79-125).",
+    "authority": [
+      "SC 15-79-125"
+    ],
+    "class": "apply",
+    "note": "90-day NOI class."
+  },
+  {
+    "id": "B3-4350c",
+    "post_id": 4350,
+    "url": "/blog/how-long-personal-injury-case-charleston-sc/",
+    "field": "content",
+    "from": "the 90-day pre-suit notice requirement (S.C. Code § 15-79-125)",
+    "to": "the pre-suit Notice of Intent, expert affidavit and mediation requirements (S.C. Code §§ 15-79-125, 15-36-100)",
+    "authority": [
+      "SC 15-79-125",
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "90-day NOI class (body)."
+  },
+  {
+    "id": "B3-4350d",
+    "post_id": 4350,
+    "url": "/blog/how-long-personal-injury-case-charleston-sc/",
+    "field": "takeaways",
+    "from": "(S.C. Code 15-3-530)",
+    "to": "(S.C. Code § 15-3-530)",
+    "authority": [
+      "SC 15-3-530"
+    ],
+    "class": "apply",
+    "note": "Missing section sign."
+  },
+  {
+    "id": "B3-4350e",
+    "post_id": 4350,
+    "url": "/blog/how-long-personal-injury-case-charleston-sc/",
+    "field": "takeaways",
+    "from": "(O.C.G.A. 9-3-33)",
+    "to": "(O.C.G.A. § 9-3-33)",
+    "authority": [
+      "GA 9-3-33"
+    ],
+    "class": "apply",
+    "note": "Georgia cite format only; the statement matches the signed GA 9-3-33 claim."
+  },
+  {
+    "id": "B3-4075a",
+    "post_id": 4075,
+    "url": "/motorcycle-accident-lawyers/hit-and-run-motorcycle-accident/",
+    "field": "faq0",
+    "from": "South Carolina requires UM coverage in all policies unless specifically rejected in writing.",
+    "to": "South Carolina requires UM coverage on every auto policy (S.C. Code § 38-77-150); when the driver is unidentified, the crash must be reported to police promptly and the other vehicle's involvement corroborated (S.C. Code § 38-77-170).",
+    "authority": [
+      "SC 38-77-150",
+      "SC 38-77-170"
+    ],
+    "class": "apply",
+    "note": "SC UM is mandatory and cannot be rejected. FAQ + FAQPage. Georgia sentence unchanged."
+  },
+  {
+    "id": "B3-4075b",
+    "post_id": 4075,
+    "url": "/motorcycle-accident-lawyers/hit-and-run-motorcycle-accident/",
+    "field": "faq2",
+    "from": "Yes. In Georgia,",
+    "to": "It depends on the harm caused. In Georgia,",
+    "authority": [],
+    "class": "apply",
+    "note": "Lead-in only: \"Yes\" is false for SC (an injury that is not great bodily injury is a misdemeanor). The Georgia sentence itself is not changed; see GA-B3-1."
+  },
+  {
+    "id": "B3-4075c",
+    "post_id": 4075,
+    "url": "/motorcycle-accident-lawyers/hit-and-run-motorcycle-accident/",
+    "field": "faq2",
+    "from": "In South Carolina, it carries up to 10 years for injury and up to 25 years for fatality (S.C. Code § 56-5-1210).",
+    "to": "In South Carolina, it is a misdemeanor when someone is injured, a felony carrying up to 10 years when the injury is great bodily injury, and a felony carrying up to 25 years when someone dies (S.C. Code § 56-5-1210).",
+    "authority": [
+      "SC 56-5-1210"
+    ],
+    "class": "apply",
+    "note": "Hit-and-run \"felony for any injury\" class (FAQ + FAQPage)."
+  },
+  {
+    "id": "B3-4075d",
+    "post_id": 4075,
+    "url": "/motorcycle-accident-lawyers/hit-and-run-motorcycle-accident/",
+    "field": "content",
+    "from": "leaving the scene of an accident involving injury is a felony carrying up to 10 years in prison and fines up to $10,000. Fatality hit-and-runs carry up to 25 years.",
+    "to": "leaving the scene of an accident is a misdemeanor when someone is injured, a felony carrying up to 10 years in prison and fines up to $10,000 when the injury is great bodily injury, and a felony carrying up to 25 years when someone dies.",
+    "authority": [
+      "SC 56-5-1210"
+    ],
+    "class": "apply",
+    "note": "Hit-and-run \"felony for any injury\" class (body)."
+  },
+  {
+    "id": "B3-4075e",
+    "post_id": 4075,
+    "url": "/motorcycle-accident-lawyers/hit-and-run-motorcycle-accident/",
+    "field": "content",
+    "from": "and South Carolina requires it to be included in all auto policies unless rejected in writing.",
+    "to": "and South Carolina requires it on every auto policy (S.C. Code § 38-77-150).",
+    "authority": [
+      "SC 38-77-150"
+    ],
+    "class": "apply",
+    "note": "SC UM cannot be rejected."
+  },
+  {
+    "id": "B3-4859a",
+    "post_id": 4859,
+    "url": "/resources/south-carolina-slip-and-fall-settlement-value/",
+    "field": "faq3",
+    "from": "If a government entity owns the property, notice deadlines can be much shorter.",
+    "to": "If a government entity owns the property, the deadline is generally two years instead (S.C. Code § 15-78-110), or three if a verified claim is filed with the agency within one year (S.C. Code § 15-78-80).",
+    "authority": [
+      "SC 15-78-110",
+      "SC 15-78-80"
+    ],
+    "class": "apply",
+    "note": "SCTCA \"notice\" class (FAQ + FAQPage)."
+  },
+  {
+    "id": "B3-4859b",
+    "post_id": 4859,
+    "url": "/resources/south-carolina-slip-and-fall-settlement-value/",
+    "field": "content",
+    "from": "Notice deadlines can be much shorter when a government entity is involved.",
+    "to": "When a government entity is involved, the deadline is generally two years instead (S.C. Code § 15-78-110), or three if a verified claim is filed with the agency within one year (S.C. Code § 15-78-80).",
+    "authority": [
+      "SC 15-78-110",
+      "SC 15-78-80"
+    ],
+    "class": "apply",
+    "note": "SCTCA \"notice\" class (body)."
+  },
+  {
+    "id": "B3-4859c",
+    "post_id": 4859,
+    "url": "/resources/south-carolina-slip-and-fall-settlement-value/",
+    "field": "faq2",
+    "from": "$600,000 per occurrence and bars punitive damages.",
+    "to": "$600,000 per occurrence and bars punitive damages. Claims against a charitable organization, such as a nonprofit hospital or church, are limited to the same $300,000 and $600,000 amounts (S.C. Code § 33-56-180).",
+    "authority": [
+      "SC 33-56-180",
+      "SC 15-78-120"
+    ],
+    "class": "apply",
+    "note": "\"No cap\" answer omits the charity cap (as fixed on 4861)."
+  },
+  {
+    "id": "B3-4859d",
+    "post_id": 4859,
+    "url": "/resources/south-carolina-slip-and-fall-settlement-value/",
+    "field": "content",
+    "from": "bars punitive damages against the government. These caps are fixed",
+    "to": "bars punitive damages against the government. Claims against a charitable organization, such as a nonprofit hospital or church, are limited to the same $300,000 and $600,000 amounts (S.C. Code § 33-56-180). These caps are fixed",
+    "authority": [
+      "SC 33-56-180",
+      "SC 15-78-120"
+    ],
+    "class": "apply",
+    "note": "As B3-4859c (body)."
+  },
+  {
+    "id": "B3-4860a",
+    "post_id": 4860,
+    "url": "/resources/south-carolina-premises-liability-settlement-value/",
+    "field": "faq4",
+    "from": "If a government entity owns the property, notice deadlines can be much shorter.",
+    "to": "If a government entity owns the property, the deadline is generally two years instead (S.C. Code § 15-78-110), or three if a verified claim is filed with the agency within one year (S.C. Code § 15-78-80).",
+    "authority": [
+      "SC 15-78-110",
+      "SC 15-78-80"
+    ],
+    "class": "apply",
+    "note": "SCTCA \"notice\" class (FAQ + FAQPage)."
+  },
+  {
+    "id": "B3-4860b",
+    "post_id": 4860,
+    "url": "/resources/south-carolina-premises-liability-settlement-value/",
+    "field": "content",
+    "from": "Government-property claims can carry much shorter notice deadlines.",
+    "to": "For government property, the deadline is generally two years instead (S.C. Code § 15-78-110), or three if a verified claim is filed with the agency within one year (S.C. Code § 15-78-80).",
+    "authority": [
+      "SC 15-78-110",
+      "SC 15-78-80"
+    ],
+    "class": "apply",
+    "note": "SCTCA \"notice\" class (body)."
+  },
+  {
+    "id": "B3-4860c",
+    "post_id": 4860,
+    "url": "/resources/south-carolina-premises-liability-settlement-value/",
+    "field": "faq3",
+    "from": "and bars punitive damages against the government.",
+    "to": "and bars punitive damages against the government. Claims against a charitable organization, such as a nonprofit hospital or church, are limited to the same $300,000 and $600,000 amounts (S.C. Code § 33-56-180).",
+    "authority": [
+      "SC 33-56-180",
+      "SC 15-78-120"
+    ],
+    "class": "apply",
+    "note": "Charity cap omitted."
+  },
+  {
+    "id": "B3-4860d",
+    "post_id": 4860,
+    "url": "/resources/south-carolina-premises-liability-settlement-value/",
+    "field": "content",
+    "from": "bars punitive damages against the government. These fixed caps",
+    "to": "bars punitive damages against the government. Claims against a charitable organization, such as a nonprofit hospital or church, are limited to the same $300,000 and $600,000 amounts (S.C. Code § 33-56-180). These fixed caps",
+    "authority": [
+      "SC 33-56-180",
+      "SC 15-78-120"
+    ],
+    "class": "apply",
+    "note": "As B3-4860c (body)."
+  },
+  {
+    "id": "B3-4635a",
+    "post_id": 4635,
+    "url": "/construction-accident-lawyers/highway-construction-zone/",
+    "field": "content",
+    "from": "South Carolina Tort Claims Act (S.C. Code § 15-78-80)</a>",
+    "to": "South Carolina Tort Claims Act</a>",
+    "authority": [
+      "SC 15-78-80"
+    ],
+    "class": "apply",
+    "note": "§ 15-78-80 cited as the Act; the link already points to the chapter, and the next bullets cite §§ 15-78-110 and 15-78-80 correctly."
+  },
+  {
+    "id": "B3-4635b",
+    "post_id": 4635,
+    "url": "/construction-accident-lawyers/highway-construction-zone/",
+    "field": "content",
+    "from": "<li>Damages caps apply in some circumstances</li>",
+    "to": "<li>Damages are capped at $300,000 per person and $600,000 per occurrence, with no punitive damages (S.C. Code § 15-78-120)</li>",
+    "authority": [
+      "SC 15-78-120"
+    ],
+    "class": "apply",
+    "note": "The caps apply to every SCTCA claim, not \"in some circumstances\"."
+  },
+  {
+    "id": "B3-4635c",
+    "post_id": 4635,
+    "url": "/construction-accident-lawyers/highway-construction-zone/",
+    "field": "content",
+    "from": "For claims involving government entities, notice requirements may be shorter.",
+    "to": "Claims against government entities generally must be filed within two years instead (S.C. Code § 15-78-110).",
+    "authority": [
+      "SC 15-78-110",
+      "SC 15-78-80"
+    ],
+    "class": "apply",
+    "note": "SCTCA \"notice\" class."
+  },
+  {
+    "id": "B3-4635d",
+    "post_id": 4635,
+    "url": "/construction-accident-lawyers/highway-construction-zone/",
+    "field": "content",
+    "from": " Crash rates increase 20-40% in highway work zones according to the <a href=\"https://www.fhwa.dot.gov/\" target=\"_blank\" rel=\"noopener\">Federal Highway Administration (FHWA)</a>.",
+    "to": "",
+    "authority": [],
+    "class": "apply",
+    "note": "source-or-cut, clean cut: the figure is attributed to the FHWA home page, not a source that states it."
+  },
+  {
+    "id": "B3-4644a",
+    "post_id": 4644,
+    "url": "/blog/motorcycle-accidents-dorchester-road-data/",
+    "field": "content",
+    "from": "South Carolina does not require adult riders to wear helmets.",
+    "to": "South Carolina requires helmets only for riders and passengers under 21 (S.C. Code § 56-5-3660).",
+    "authority": [
+      "SC 56-5-3660"
+    ],
+    "class": "apply",
+    "note": "\"Adult riders\" class (riders 18 to 20 must wear one)."
+  },
+  {
+    "id": "B3-4644b",
+    "post_id": 4644,
+    "url": "/blog/motorcycle-accidents-dorchester-road-data/",
+    "field": "content",
+    "from": "(it's legal)",
+    "to": "(it's legal for riders 21 and older)",
+    "authority": [
+      "SC 56-5-3660"
+    ],
+    "class": "apply",
+    "note": "Same class."
+  },
+  {
+    "id": "B3-4644c",
+    "post_id": 4644,
+    "url": "/blog/motorcycle-accidents-dorchester-road-data/",
+    "field": "takeaways",
+    "from": "governs all injury claims.",
+    "to": "governs most injury claims.",
+    "authority": [
+      "SC 15-3-530",
+      "SC 15-78-110"
+    ],
+    "class": "apply",
+    "note": "\"All\" is false for claims against government entities (two years)."
+  },
+  {
+    "id": "B3-4644d",
+    "post_id": 4644,
+    "url": "/blog/motorcycle-accidents-dorchester-road-data/",
+    "field": "takeaways",
+    "from": "Dorchester Road in North Charleston is one of South Carolina's most hazardous corridors for motorcyclists.",
+    "to": "Dorchester Road in North Charleston is a hazardous corridor for motorcyclists.",
+    "authority": [],
+    "class": "apply",
+    "note": "source-or-cut: unsourced statewide ranking hedged."
+  },
+  {
+    "id": "B3-4644e",
+    "post_id": 4644,
+    "url": "/blog/motorcycle-accidents-dorchester-road-data/",
+    "field": "takeaways",
+    "from": "account for approximately 42% of fatal motorcycle crashes statewide.",
+    "to": "are behind roughly 42% of fatal two-vehicle motorcycle crashes nationally (NHTSA).",
+    "authority": [],
+    "class": "apply",
+    "note": "The page's own body and FAQ attribute the 42% to national NHTSA data; \"statewide\" contradicts them. NHTSA reports the figure for two-vehicle crashes."
+  },
+  {
+    "id": "B3-4644f",
+    "post_id": 4644,
+    "url": "/blog/motorcycle-accidents-dorchester-road-data/",
+    "field": "content",
+    "from": "Every additional mph reduces a rider's survival odds dramatically:</p>\n<ul>\n<li>At 30 mph impact: ~60% survival rate for a motorcycle crash</li>\n<li>At 40 mph: ~40% survival rate</li>\n<li>At 50 mph: ~20% survival rate</li>\n</ul>",
+    "to": "Higher speeds make crashes far deadlier for riders.</p>",
+    "authority": [],
+    "class": "apply",
+    "note": "source-or-cut, clean cut: unsourced survival-rate figures."
+  },
+  {
+    "id": "B3-4644g",
+    "post_id": 4644,
+    "url": "/blog/motorcycle-accidents-dorchester-road-data/",
+    "field": "content",
+    "from": "wrongful death law</a> allows surviving family members to recover:",
+    "to": "wrongful death law</a> lets the personal representative of the estate recover, for the family (S.C. Code §§ 15-51-20, 15-51-40):",
+    "authority": [
+      "SC 15-51-20",
+      "SC 15-51-40"
+    ],
+    "class": "apply",
+    "note": "The action is brought by the personal representative, not the family."
+  },
+  {
+    "id": "B3-4644h",
+    "post_id": 4644,
+    "url": "/blog/motorcycle-accidents-dorchester-road-data/",
+    "field": "content",
+    "from": "<li>Pain and suffering the victim experienced before death</li>",
+    "to": "<li>Pain and suffering the victim experienced before death, through a separate survival action brought by the estate (S.C. Code § 15-5-90)</li>",
+    "authority": [
+      "SC 15-5-90"
+    ],
+    "class": "apply",
+    "note": "Pre-death pain is a survival claim, not a wrongful-death element."
+  },
+  {
+    "id": "B3-G1",
+    "post_id": 4635,
+    "url": "/construction-accident-lawyers/highway-construction-zone/",
+    "field": "content",
+    "from": null,
+    "to": null,
+    "authority": [
+      "SC 56-5-1535 (not in pack)"
+    ],
+    "class": "gillin",
+    "note": "4635 \"Speeding fines are doubled in construction zones when workers are present\" and \"Reckless driving charges may be enhanced\". Primary text (t56c005, read 2026-09-28): 2017 Act No. 81 rewrote § 56-5-1535, \"deleting the provision relating to speeding in work zones\" and creating \"endangerment of a highway worker\" ($500–$5,000 fines). Question: is there any current doubled-fine rule? If not, cut both bullets."
+  },
+  {
+    "id": "B3-G2",
+    "post_id": 4635,
+    "url": "/construction-accident-lawyers/highway-construction-zone/",
+    "field": "content",
+    "from": null,
+    "to": null,
+    "authority": [],
+    "class": "gillin",
+    "note": "4635 \"If SCDOT or a government contractor's negligent work zone design caused your crash, claims are governed by the South Carolina Tort Claims Act\". The same page then says private contractors are not immune. Question: does the SCTCA reach a private contractor working under an SCDOT contract? If not, change it to \"SCDOT or another government entity\"."
+  },
+  {
+    "id": "B3-G3",
+    "post_id": 1646,
+    "url": "/blog/first-steps-in-a-medical-malpractice-case/",
+    "field": "content",
+    "from": null,
+    "to": null,
+    "authority": [],
+    "class": "gillin",
+    "note": "WD-G1 again: 1646 \"The statute of limitations runs from the date of death in both states\" (malpractice wrongful death) and 4350 FAQ[4] \"three years from the date of death for wrongful death claims\". Held until WD-G1 is decided."
+  },
+  {
+    "id": "B3-G4",
+    "post_id": 4644,
+    "url": "/blog/motorcycle-accidents-dorchester-road-data/",
+    "field": "faq3",
+    "from": null,
+    "to": null,
+    "authority": [],
+    "class": "gillin",
+    "note": "MC-G1 again: 4644 FAQ[3] (\"an argument the defence raises about your damages\") and the helmet list (\"Comparative fault may reduce your recovery for head injuries — but does NOT bar your claim\") state uncited helmet-defense law. Held until MC-G1 is decided."
+  },
+  {
+    "id": "GA-B3-1",
+    "post_id": 4075,
+    "url": "/motorcycle-accident-lawyers/hit-and-run-motorcycle-accident/",
+    "field": "faq2",
+    "from": null,
+    "to": null,
+    "authority": [
+      "GA 40-6-270"
+    ],
+    "class": "ga",
+    "note": "4075 FAQ[2] and body: \"In Georgia, leaving the scene of an accident involving injury or death is a felony … up to 5 years\". The signed GA 40-6-270 claim says the felony is for serious injury or death. Georgia wording needs correcting."
+  },
+  {
+    "id": "GA-B3-2",
+    "post_id": 1696,
+    "url": "/blog/what-if-i-suspect-medical-malpractice/",
+    "field": "content",
+    "from": null,
+    "to": null,
+    "authority": [],
+    "class": "ga",
+    "note": "1696 table, Georgia minors cell \"Tolled until age 5, then 2 years\", and \"Foreign object … 1 year from discovery (O.C.G.A. § 9-3-72)\". GA 9-3-72/9-3-73 are not in the pack; confirm the wording."
+  }
+]

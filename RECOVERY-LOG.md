@@ -2015,6 +2015,50 @@ Gillin's signature on those".
 **Still open:** the same error classes on 10 unlinked posts (1646, 1696, 1813, 1668, 4350,
 4075, 4859, 4860, 4635, 4644).
 
+### Linked-page batch 3: the 10 unlinked posts, 69 fixes — 2026-09-28
+
+**Owner, 2026-09-28:** "Move on to the next batch".
+
+`data/facts/linked-pages-batch-3-2026-09-28.json` (75 entries) was built from a read-only dump
+and applied through `bin/apply-linked-pages-batch.php`: 69 edits on 10 posts, each matched once
+on prod and read back. Backup: `docs/backups/linked-pages-batch-3-2026-09-28.json`.
+
+- **Med-mal posts 1646, 1668, 1696, 1813 and 4350:**
+  - 2026 caps.
+  - The 90-day wait and invented minors' rules removed; § 15-3-545 (B) and (D) as signed.
+  - The three-of-five-years expert rule; the affidavit is filed with the Notice of Intent, not
+    at trial.
+  - 1646's punitive floor updated to $739,245 for 2026.
+  - "Absolute" dropped from the repose sentence.
+- **4075, hit-and-run motorcycle page:**
+  - § 56-5-1210's three tiers (the "felony for any injury" wording removed).
+  - UM is required, not "unless rejected in writing" (§ 38-77-150), with the § 38-77-170
+    unknown-driver conditions.
+- **4859 and 4860, slip-and-fall / premises settlement resources:** the SCTCA "notice" wording
+  became the two-year deadline; the charity cap (§ 33-56-180) added.
+- **4635, highway construction zone:**
+  - The SCTCA is no longer cited as § 15-78-80, and its caps are stated as always applying
+    (§ 15-78-120).
+  - Two-year deadline.
+  - An unsourced FHWA "20–40%" figure cut.
+- **4644, Dorchester Road motorcycle post:**
+  - "Adult riders" became the under-21 rule.
+  - Wrongful death is brought by the personal representative; pre-death pain moved to the
+    survival claim.
+  - Unsourced statistics cut.
+- **Verified:** all replacements replayed clean (70/70, controls fired). FAQPage JSON-LD parses
+  on 6 spot-checked pages. JSON-LD guard PASS. Fresh sweep: 0 findings. meta.json regenerated.
+
+**For Gillin:**
+- **B3-G1:** 4635 says speeding fines are doubled in construction zones. 2017 Act No. 81
+  appears to have deleted the work-zone provision of § 56-5-1535. Is any doubled-fine rule
+  current?
+- **B3-G2:** does the SCTCA reach a private contractor working for SCDOT?
+
+**For the GA reviewer:**
+- 4075: Georgia hit-and-run "injury" should be "serious injury" (GA 40-6-270).
+- 1696: Georgia minors and § 9-3-72 cells.
+
 ### Law pack: #62 superseded by #67, rebuilt on the signed SC pack — 2026-09-26
 
 **Owner, 2026-09-26:** "what do we need to do with #62? Those are signed", then "yes".

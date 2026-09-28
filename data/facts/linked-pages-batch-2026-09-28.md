@@ -232,3 +232,70 @@ Each of these was read against primary text on 2026-09-28. The GA-3 edits rest o
 - **GA-2:** add co-employee immunity (O.C.G.A. § 34-9-11(a)) to 1809's third-party examples?
 - **GA-4:** should 4197's Georgia ER sentence reflect O.C.G.A. § 51-1-29.5 (gross negligence for emergency care)?
 - **GA-6:** keep Georgia law on the Columbia post 3553, or remove it as off-market?
+
+## Batch 3 (built 2026-09-28): same-class errors on 10 unlinked posts
+
+**Why these posts.** The user asked to "Move on to the next batch". These 10 posts carry the error classes batches 1 and 2 fixed, but no swept page links to them.
+
+**File:** `data/facts/linked-pages-batch-3-2026-09-28.json`. It has 75 entries:
+
+| Class | Entries |
+|---|---:|
+| apply | 69 |
+| gillin | 4 |
+| ga | 2 |
+| source-or-cut | 0 (the clean cuts are `apply` and say "source-or-cut" in the note) |
+
+**Apply posts:** 1646, 1668, 1696, 1813, 4075, 4350, 4635, 4644, 4859, 4860. By field: 40 content, 18 FAQ answers, 11 key takeaways, no titles or excerpts. None of the ten carries a `_roden_last_reviewed` stamp.
+
+**Authority.** Every `apply` edit rests on the signed SC pack (#70, df1c4ca, 45 authorities), on the signed `GA 9-3-33` (a cite-format fix only), or is a clean cut. On blank-jurisdiction and two-state posts, only South Carolina sentences change. There are two exceptions, both stated in the notes:
+- 1646 FAQ[1]: "absolute" is dropped from a shared sentence about repose.
+- 4075 FAQ[2]: the shared lead-in "Yes." becomes "It depends on the harm caused." The Georgia sentence itself is untouched.
+
+**Verification.**
+- **Exact match:** built from the read-only dump `scratchpad/prod3.json`; applied in array order, every `from` matches exactly once.
+- **Engine replay:** 68 replacements plus two positive controls, **70/70**; both controls fired.
+- **Whole-document sweep:** the 10 posts swept before and after show no new findings or warnings (5 suppressed warnings before, 2 after).
+
+**What it fixes, by class:**
+- **90-day NOI wait and post-suit mediation:** 1646, 1668, 1696, 1813, 4350.
+- **Stale med-mal caps ("$350,000 per defendant / $1.05M"):** 1646, 1668, 1813. Now the base plus the 2026 figures, per provider or institution.
+- **Unindexed punitive floor:** 1646's table ("3x compensatory or $500K") becomes $739,245 (2026). The engine rule does not match the "$500K" form.
+- **Invented or incomplete minors rules:**
+  - 1696: "8th birthday";
+  - 1813: "one year after eighteen", with no seven-year cap;
+  - 1696 also gets the SC foreign-object row, which said "GA only / standard rules apply".
+- **Missing SC pre-suit affidavit:** the SC expert requirement was stated as trial-only on 1646 and 1668 (FAQ, body and table). 1813's expert rule said "board-certified" only; it now has the three-of-five-years alternative.
+- **Hit-and-run "felony for any injury":** 4075 FAQ[2] and body. 4075 also said SC UM can be "rejected in writing"; it is mandatory (§ 38-77-150), and the § 38-77-170 unknown-driver conditions are added.
+- **SCTCA "notice deadlines":** 4859, 4860, 4635. Both value guides also gain the charity cap (§ 33-56-180).
+- **§ 15-78-80 cited as the Act:** 4635. Its "caps apply in some circumstances" now states the § 15-78-120 caps.
+- **"Adult riders":** 4644. Also on 4644:
+  - "governs all injury claims" becomes "most";
+  - the wrongful-death list now says the personal representative brings the claim, and that pre-death pain is a survival claim;
+  - the takeaways said "statewide" for the national NHTSA 42% figure; now "nationally", matching the page's own body and FAQ.
+- **Clean cuts of unsourced figures:**
+  - 4635: "crash rates increase 20-40%", attributed to the FHWA home page;
+  - 4644: speed and survival percentages;
+  - 4644: the "one of South Carolina's most hazardous corridors" ranking, which is hedged.
+
+**Ordering notes.** Several fields take more than one edit, all checked in sequence:
+- 1646 takeaways (a, b) and content (g through m);
+- 1668 content (d through i);
+- 1696 content (c through g);
+- 1813 takeaways (a, b) and content (e through j);
+- 4075 FAQ[2] (b, c) and content (d, e);
+- 4350 takeaways (d, e);
+- 4644 content and takeaways;
+- 4859 and 4860 content.
+
+B3-1668e matches 1668's body cap line only because it includes the closing `</li>`. That keeps it distinct from FAQ[4], which is a separate field in any case.
+
+**Gillin (4, question only):**
+- **B3-G1 (4635):** the page says "speeding fines are doubled in construction zones" and "reckless driving charges may be enhanced". Primary text says 2017 Act No. 81 deleted the work-zone speeding provision of § 56-5-1535 and created "endangerment of a highway worker" ($500–$5,000). Is any doubled-fine rule current? If not, cut both bullets.
+- **B3-G2 (4635):** does the SCTCA reach a private contractor working under an SCDOT contract? The page says so, then says private contractors are not immune.
+- **B3-G3 (1646, 4350):** "the statute of limitations runs from the date of death": held for WD-G1.
+- **B3-G4 (4644):** the helmet-defense lines in FAQ[3] and the helmet list: held for MC-G1.
+
+**Georgia (2):**
+- **GA-B3-1 (4075):** Georgia hit-and-run "injury or death is a felony". The signed GA 40-6-270 claim says serious injury or death.
+- **GA-B3-2 (1696):** the Georgia minors cell and the § 9-3-72 foreign-object cell. Neither section is in the GA pack.
