@@ -245,6 +245,7 @@ function roden_office_practice_allowlist() {
         'workers-compensation-lawyers/charleston-sc', // wave 1, #5 (owner: "start Charleston workers' comp", 2026-09-26)
         'workers-compensation-lawyers/savannah-ga', // wave 1, #6 (owner: "do the Savannah's WC page", 2026-09-26)
         'motorcycle-accident-lawyers/charleston-sc', // wave 1, #7 (owner: "move on to the next batch", 2026-09-28)
+        'car-accident-lawyers/columbia-sc', // wave 1, #8 (owner: "then move to the next page", 2026-09-28)
     );
 }
 
