@@ -1819,7 +1819,8 @@ function roden_zero_click_intersection_urls() {
         '/workers-compensation-lawyers/columbia-sc/'              => '/practice-areas/workers-compensation-lawyers/',
         '/workers-compensation-lawyers/darien-ga/'                => '/practice-areas/workers-compensation-lawyers/',
         '/workers-compensation-lawyers/north-charleston-sc/'      => '/practice-areas/workers-compensation-lawyers/',
-        '/wrongful-death-lawyers/charleston-sc/'                  => '/practice-areas/wrongful-death-lawyers/',
+        // '/wrongful-death-lawyers/charleston-sc/' restored 2026-09-28: wave 1, #10
+        // (docs/site-architecture/README.md).
         '/wrongful-death-lawyers/north-charleston-sc/'            => '/practice-areas/wrongful-death-lawyers/',
         '/wrongful-death-lawyers/savannah-ga/'                    => '/practice-areas/wrongful-death-lawyers/',
     );
@@ -1956,7 +1957,8 @@ function roden_earning_intersection_urls() {
         '/maritime-injury-lawyers/darien-ga/'                 => '/practice-areas/maritime-injury-lawyers/',
         '/maritime-injury-lawyers/myrtle-beach-sc/'           => '/practice-areas/maritime-injury-lawyers/',
         '/maritime-injury-lawyers/savannah-ga/'               => '/practice-areas/maritime-injury-lawyers/',
-        '/medical-malpractice-lawyers/charleston-sc/'         => '/practice-areas/medical-malpractice-lawyers/',
+        // '/medical-malpractice-lawyers/charleston-sc/' restored 2026-09-28: wave 1, #11
+        // (docs/site-architecture/README.md).
         '/medical-malpractice-lawyers/columbia-sc/'           => '/practice-areas/medical-malpractice-lawyers/',
         '/medical-malpractice-lawyers/darien-ga/'             => '/practice-areas/medical-malpractice-lawyers/',
         '/medical-malpractice-lawyers/myrtle-beach-sc/'       => '/practice-areas/medical-malpractice-lawyers/',
