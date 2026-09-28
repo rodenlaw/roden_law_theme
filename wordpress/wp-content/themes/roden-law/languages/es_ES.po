@@ -4072,3 +4072,15 @@ msgstr "de inmediato, y a más tardar 30 días después de la lesión (O.C.G.A. 
 
 msgid "right away, and no later than 90 days after the injury (S.C. Code § 42-15-20)"
 msgstr "de inmediato, y a más tardar 90 días después de la lesión (S.C. Code § 42-15-20)"
+
+msgid "South Carolina requires a Notice of Intent to File Suit, filed together with a qualified expert's affidavit, and then mediation before a malpractice suit can be filed (S.C. Code §§ 15-79-125, 15-36-100). Locating the right expert and obtaining that opinion routinely takes months. Roden Law offers free consultations."
+msgstr "Carolina del Sur exige presentar un Aviso de Intención de Demandar (Notice of Intent to File Suit), junto con la declaración jurada de un perito calificado, y luego una mediación antes de poder presentar una demanda por negligencia médica (S.C. Code §§ 15-79-125, 15-36-100). Encontrar al perito adecuado y obtener su opinión suele tomar meses. Roden Law ofrece consultas gratuitas."
+
+msgid "It is not simply whoever was closest. In South Carolina the personal representative of the estate brings the claim, for the spouse and children, then the parents, then the heirs (S.C. Code § 15-51-20) — which means opening an estate first. Getting this wrong wastes months."
+msgstr "No es simplemente quien estaba más cerca. En Carolina del Sur, el representante personal del patrimonio presenta el reclamo en beneficio del cónyuge y los hijos, luego de los padres y luego de los herederos (S.C. Code § 15-51-20), lo que significa abrir primero la sucesión. Equivocarse en esto hace perder meses."
+
+msgid "In South Carolina the deadline is generally three years (S.C. Code § 15-3-530), and separate claims may belong to the estate and to the family. Roden Law offers free, no-obligation consultations."
+msgstr "En Carolina del Sur el plazo es generalmente de tres años (S.C. Code § 15-3-530), y puede haber reclamos separados que correspondan al patrimonio y a la familia. Roden Law ofrece consultas gratuitas y sin compromiso."
+
+msgid "3 years from the treatment or from discovery, no more than 6 years after the treatment (S.C. Code § 15-3-545)"
+msgstr "3 años desde el tratamiento o desde que se descubrió la lesión, sin exceder 6 años después del tratamiento (S.C. Code § 15-3-545)"

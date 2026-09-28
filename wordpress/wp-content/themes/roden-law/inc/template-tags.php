@@ -162,7 +162,8 @@ function roden_resolve_statute( $state_key, $pa_slug = null ) {
     $lookup_slug = $pa_slug ? preg_replace( '/^es-/', '', (string) $pa_slug ) : '';
 
     if ( $lookup_slug && isset( $overrides[ $lookup_slug ][ $state_key ] ) ) {
-        $resolved = array_merge( $resolved, $overrides[ $lookup_slug ][ $state_key ] );
+        $override = $overrides[ $lookup_slug ][ $state_key ];
+        $resolved = array_merge( $resolved, $override );
 
         /*
          * Both locales now get the full statutory treatment.
@@ -180,6 +181,16 @@ function roden_resolve_statute( $state_key, $pa_slug = null ) {
          * the suppression is gone.
          */
         $resolved['is_override'] = true;
+
+        /*
+         * A 'tort' override changes only the deadline: medical malpractice runs
+         * on § 15-3-545, not § 15-3-530, but it is still a negligence claim, so
+         * none of the no-fault (workers' comp) treatment keyed to is_override
+         * may apply (Charleston med mal sweep, 2026-09-28).
+         */
+        if ( ! empty( $override['tort'] ) ) {
+            $resolved['is_override'] = false;
+        }
     }
 
     return $resolved;
@@ -1791,7 +1802,11 @@ function roden_what_to_do_steps_data( $pa_slug = '', $state_full = '', $state_ke
             ),
             array(
                 'title' => __( 'Contact an attorney early — the pre-suit requirements are slow.', 'roden-law' ),
-                'body'  => __( 'Georgia requires an expert affidavit filed with the complaint (O.C.G.A. § 9-11-9.1), and South Carolina requires a Notice of Intent to File Suit with an expert affidavit followed by mandatory mediation (S.C. Code § 15-79-125). Locating the right expert and obtaining that opinion routinely takes months, and Georgia\'s deadline is two years. Roden Law offers free consultations.', 'roden-law' ),
+                // A South Carolina page states South Carolina's steps only; the
+                // affidavit is § 15-36-100, filed with the § 15-79-125 notice.
+                'body'  => ( 'SC' === $state_key || 'South Carolina' === $state_full )
+                    ? __( 'South Carolina requires a Notice of Intent to File Suit, filed together with a qualified expert\'s affidavit, and then mediation before a malpractice suit can be filed (S.C. Code §§ 15-79-125, 15-36-100). Locating the right expert and obtaining that opinion routinely takes months. Roden Law offers free consultations.', 'roden-law' )
+                    : __( 'Georgia requires an expert affidavit filed with the complaint (O.C.G.A. § 9-11-9.1), and South Carolina requires a Notice of Intent to File Suit with an expert affidavit followed by mandatory mediation (S.C. Code § 15-79-125). Locating the right expert and obtaining that opinion routinely takes months, and Georgia\'s deadline is two years. Roden Law offers free consultations.', 'roden-law' ),
             ),
         );
 
@@ -1918,7 +1933,9 @@ function roden_what_to_do_steps_data( $pa_slug = '', $state_full = '', $state_ke
         ),
         array(
             'title' => __( 'Find out who is legally entitled to bring the claim.', 'roden-law' ),
-            'body'  => __( 'It is not simply whoever was closest. Georgia gives the claim first to the surviving spouse, then children, then parents, then the estate (O.C.G.A. § 51-4-2). South Carolina requires the personal representative of the estate to bring it — which means opening an estate first. Getting this wrong wastes months.', 'roden-law' ),
+            'body'  => ( 'SC' === $state_key || 'South Carolina' === $state_full )
+                ? __( 'It is not simply whoever was closest. In South Carolina the personal representative of the estate brings the claim, for the spouse and children, then the parents, then the heirs (S.C. Code § 15-51-20) — which means opening an estate first. Getting this wrong wastes months.', 'roden-law' )
+                : __( 'It is not simply whoever was closest. Georgia gives the claim first to the surviving spouse, then children, then parents, then the estate (O.C.G.A. § 51-4-2). South Carolina requires the personal representative of the estate to bring it — which means opening an estate first. Getting this wrong wastes months.', 'roden-law' ),
         ),
         array(
             'title' => __( 'Keep the financial records.', 'roden-law' ),
@@ -1926,7 +1943,11 @@ function roden_what_to_do_steps_data( $pa_slug = '', $state_full = '', $state_ke
         ),
         array(
             'title' => __( 'Speak with an attorney before the deadline runs.', 'roden-law' ),
-            'body'  => __( 'The clock generally runs from the date of death, and separate claims may belong to the estate and to the family. Roden Law offers free, no-obligation consultations.', 'roden-law' ),
+            // When South Carolina's three years start is for the SC reviewer, so
+            // the SC page does not say "from the date of death".
+            'body'  => ( 'SC' === $state_key || 'South Carolina' === $state_full )
+                ? __( 'In South Carolina the deadline is generally three years (S.C. Code § 15-3-530), and separate claims may belong to the estate and to the family. Roden Law offers free, no-obligation consultations.', 'roden-law' )
+                : __( 'The clock generally runs from the date of death, and separate claims may belong to the estate and to the family. Roden Law offers free, no-obligation consultations.', 'roden-law' ),
         ),
     );
 
