@@ -231,11 +231,11 @@ EOT
                     'Lincolnville', 'Jedburg', 'Sangaree',
                     'St. Stephen', 'Walterboro',
                 ),
-                'directions'   => 'Our North Charleston office is at 2703 Spruill Avenue, near Park Circle. Free client parking is available on site.',
+                'directions'   => 'Our North Charleston office is at 2703 Spruill Avenue. Free client parking is available on site.',
                 // North Charleston map: place ChIJS2CVHEh7_ogRIEA4SfdJ3A8 (FID 0x88fe7b481c95604b:0xfdc49f749384020).
                 'map_embed'    => 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354.570788089184!2d-79.961197!3d32.847324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88fe7b481c95604b%3A0xfdc49f749384020!2sRoden%20Law!5e0!3m2!1sen!2sus!4v1790548800000!5m2!1sen!2sus',
                 'local_context' => <<<'EOT'
-North Charleston personal injury cases are usually filed in the **Charleston County Court of Common Pleas at 100 Broad Street downtown**, through the South Carolina Judicial Branch's e-filing system. Most contested cases go to mediation under the South Carolina ADR Rules before trial.
+North Charleston personal injury cases are usually filed in the **Charleston County Court of Common Pleas at 100 Broad Street downtown**, through the South Carolina Judicial Branch's e-filing system; a crash in the Berkeley or Dorchester County part of the city may be filed in that county instead. Most contested cases go to mediation under the South Carolina ADR Rules before trial.
 
 North Charleston carries heavy **port and industrial truck traffic** between the **Hugh Leatherman Terminal** and the **I-26 / I-526 / Rivers Avenue** corridor, alongside commuters on Spruill Avenue, North Rhett Avenue, Aviation Avenue and the **Ashley Phosphate Road / I-26 interchange**. **Trident Medical Center** at 9330 Medical Plaza Drive is a Level II trauma center, and **MUSC Health University Medical Center** downtown is the region's Level I trauma center.
 
@@ -243,7 +243,7 @@ South Carolina's **3-year statute of limitations (S.C. Code § 15-3-530)** and *
 EOT
 ,
                 'local_context_es' => <<<'EOT'
-Los casos de lesiones personales de North Charleston normalmente se presentan ante el **Charleston County Court of Common Pleas, ubicado en 100 Broad Street en el centro de Charleston**, a través del sistema de presentación electrónica del Poder Judicial de Carolina del Sur. La mayoría de los casos disputados pasan por mediación conforme a las South Carolina ADR Rules antes del juicio.
+Los casos de lesiones personales de North Charleston normalmente se presentan ante el **Charleston County Court of Common Pleas, ubicado en 100 Broad Street en el centro de Charleston**, a través del sistema de presentación electrónica del Poder Judicial de Carolina del Sur; un choque en la parte de la ciudad situada en el condado de Berkeley o de Dorchester puede presentarse en ese condado. La mayoría de los casos disputados pasan por mediación conforme a las South Carolina ADR Rules antes del juicio.
 
 Por North Charleston circula mucho **tráfico de camiones portuarios e industriales** entre la **Hugh Leatherman Terminal** y el corredor de la **I-26 / I-526 / Rivers Avenue**, junto con el tráfico diario de Spruill Avenue, North Rhett Avenue, Aviation Avenue y el **intercambiador de Ashley Phosphate Road / I-26**. El **Trident Medical Center**, en 9330 Medical Plaza Drive, es un centro de trauma de Nivel II, y el **MUSC Health University Medical Center**, en el centro de Charleston, es el centro de trauma de Nivel I de la región.
 
