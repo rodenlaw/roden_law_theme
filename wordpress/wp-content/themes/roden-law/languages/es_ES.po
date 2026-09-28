@@ -2934,6 +2934,11 @@ msgstr "Resultados de Casos Recientes"
 msgid "Local %s Resources"
 msgstr "Recursos Locales de %s"
 
+#. translators: 1: state name; 2: practice area noun.
+#, php-format
+msgid "%1$s %2$s Resources"
+msgstr "Recursos de %2$s en %1$s"
+
 #. translators: 1: attorney name; 2: attorney title.
 #: templates/template-intersection.php:470
 #: templates/template-practice-area.php:441

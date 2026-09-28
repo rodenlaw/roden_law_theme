@@ -647,6 +647,7 @@ if ( count( $sibling_urls ) >= 2 ) :
                 'cat_slug'   => $cat_slug,
                 'office_key' => $pa_office_key,
                 'heading'    => sprintf( /* translators: %s: practice area noun. */ __( 'Local %s Resources', 'roden-law' ), roden_pa_noun( $parent_title ) ),
+                'fallback_heading' => sprintf( /* translators: 1: state name; 2: practice area noun. */ __( '%1$s %2$s Resources', 'roden-law' ), $office['state_full'], roden_pa_noun( $parent_title ) ),
                 'display'    => 'section',
             ) );
             ?>

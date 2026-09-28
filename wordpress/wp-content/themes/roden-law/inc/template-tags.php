@@ -3387,6 +3387,9 @@ function roden_related_resources( $args = array() ) {
         'heading'    => __( 'Related Guides', 'roden-law' ),
         'display'    => 'sidebar',
         'exclude'    => 0,
+        // Heading used instead when nothing in the list is about this office's
+        // own city or market (so the box is not called "Local" for nothing).
+        'fallback_heading' => '',
     );
     $args = wp_parse_args( $args, $defaults );
 
@@ -3443,6 +3446,32 @@ function roden_related_resources( $args = array() ) {
     }
 
     /*
+     * Another office's city or market in the slug means the resource is about
+     * that market, not this one: the Columbia car page listed Horry County's
+     * myrtle-beach-fatal-crashes under "Local" (legal sweep 2026-09-28, Columbia
+     * W2). Resources carry no office meta, so the slug is the only signal.
+     */
+    $own_places   = array();
+    $other_places = array();
+    if ( $args['office_key'] && isset( $firm['offices'][ $args['office_key'] ] ) ) {
+        foreach ( $firm['offices'] as $key => $o ) {
+            foreach ( array( $o['city'] ?? '', $o['market_name'] ?? '' ) as $place ) {
+                $place = sanitize_title( $place );
+                if ( '' === $place ) {
+                    continue;
+                }
+                if ( $key === $args['office_key'] ) {
+                    $own_places[] = $place;
+                } else {
+                    $other_places[] = $place;
+                }
+            }
+        }
+        $other_places = array_diff( $other_places, $own_places );
+    }
+    $has_local = false;
+
+    /*
      * An office page states one state's law only (writer profile, jurisdiction
      * rules). Drop resources about the other state, including two-state
      * comparisons: the Charleston car accident page linked "Georgia Moped Laws"
@@ -3472,6 +3501,23 @@ function roden_related_resources( $args = array() ) {
             }
         }
 
+        $bare = roden_strip_es_slug( $slug );
+        $mine = false;
+        foreach ( $own_places as $place ) {
+            if ( false !== strpos( $bare, $place ) ) {
+                $mine = true;
+                break;
+            }
+        }
+        if ( ! $mine ) {
+            foreach ( $other_places as $place ) {
+                if ( false !== strpos( $bare, $place ) ) {
+                    continue 2;
+                }
+            }
+        }
+        $has_local = $has_local || $mine;
+
         $is_local = false;
         foreach ( $office_slugs as $fragment ) {
             if ( strpos( $slug, $fragment ) !== false ) {
@@ -3499,6 +3545,9 @@ function roden_related_resources( $args = array() ) {
 
     if ( empty( $items ) ) {
         return;
+    }
+    if ( $args['office_key'] && ! $has_local && $args['fallback_heading'] ) {
+        $args['heading'] = $args['fallback_heading'];
     }
 
     if ( 'section' === $args['display'] ) :
