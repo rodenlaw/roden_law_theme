@@ -1967,6 +1967,54 @@ checked non-legal fact. Each was exact-match once, applied in array order, and r
   - 4635: § 15-78-80;
   - 4644: "adult riders".
 
+### Linked-page batch 2: Gillin's new authorities signed, 42 more fixes — 2026-09-28
+
+**Owner, 2026-09-28:** "consider all to have been reviewed this afternoon", then "record
+Gillin's signature on those".
+
+- **internal-ai-scripts #70** (`df1c4ca`): each authority read against primary text first. The
+  SC pack now holds **45 signed authorities**.
+  - Added as signed by Gillin:
+    - § 15-32-230 (emergency / obstetric gross-negligence standard, physicians only);
+    - §§ 42-1-400 and 42-1-410 (statutory employer);
+    - § 56-5-3130 (crosswalk yield where signals are absent or out);
+    - § 15-7-30 (venue by type of defendant);
+    - *Hook v. Rothstein*, 281 S.C. 541 (Ct. App. 1984) (professional disclosure standard).
+  - Amended: § 15-3-545 now covers (B) foreign object and (D) minors; § 15-36-100 states the
+    three-of-five-years rule.
+- **`data/facts/linked-pages-batch-2-2026-09-28.json`**: 42 edits on 15 posts, applied through
+  `bin/apply-linked-pages-batch.php` (builder now takes the batch path). Backup:
+  `docs/backups/linked-pages-batch-2-2026-09-28.json`.
+  - Minors' and foreign-object rules on 4562, 4349 and 4195.
+  - The ER gross-negligence standard on 4363 and 4197.
+  - The expert rule on 4349 and 4363.
+  - *Hook* disclosure standard on 4199 (causation left as it was).
+  - Statutory-employer framing on 4102.
+  - Crosswalk rule on 4339.
+  - Venue on 4346.
+  - Other-states lane-filtering line cut on 4073.
+  - Unsourced superlatives hedged on 4363 and 4339.
+  - 4645's crime-rate and uninsured-rate figures removed.
+  - Georgia, page wording only (GA pack untouched): med-mal cite corrected to § 9-3-71 on 4363
+    and 4349; "In Georgia," prefixed to the "full value of the life" sentences on 4099, 4101,
+    4102, 4104 and 4105.
+- **Review stamps:** the four posts already stamped 2026-09-02 (4106, 4337, 4339, 4346) were
+  refreshed to 2026-09-28 (`bin/restamp-linked-pages-reviewed.php`). Posts with no stamp were
+  left alone.
+- **Verified:** every edit matched once on prod. FAQPage JSON-LD parses on 6 spot-checked pages.
+  JSON-LD guard PASS. Fresh sweep: 0 findings. meta.json regenerated.
+
+**Decision needed (in the batch .md):**
+- WD-G1: malpractice-death deadline, § 15-3-545 vs § 15-3-530(6).
+- WD-G3: funeral expenses and the creditors line.
+- WD-G4: caps on the nursing-home wrongful-death page.
+- NC-G3: the stacking statement.
+- MC-G1: keep or cut the helmet comparative-fault lines.
+- GA-1, GA-2, GA-4, GA-6 (Georgia).
+
+**Still open:** the same error classes on 10 unlinked posts (1646, 1696, 1813, 1668, 4350,
+4075, 4859, 4860, 4635, 4644).
+
 ### Law pack: #62 superseded by #67, rebuilt on the signed SC pack — 2026-09-26
 
 **Owner, 2026-09-26:** "what do we need to do with #62? Those are signed", then "yes".

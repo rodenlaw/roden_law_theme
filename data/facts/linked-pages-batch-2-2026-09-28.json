@@ -1,0 +1,514 @@
+[
+  {
+    "id": "MM-G1a",
+    "post_id": 4562,
+    "url": "/blog/medical-malpractice-limits-south-carolina/",
+    "field": "content",
+    "from": "<td>Generally 6 years from the negligent act</td>\n<td>S.C. Code § 15-3-545</td>\n</tr>\n",
+    "to": "<td>Generally 6 years from the negligent act</td>\n<td>S.C. Code § 15-3-545</td>\n</tr>\n<tr>\n<td>Foreign object left in the body</td>\n<td>2 years from discovery, but never less than 3 years after it was left; the 6-year limit does not apply</td>\n<td>S.C. Code § 15-3-545(B)</td>\n</tr>\n<tr>\n<td>Minors</td>\n<td>Extended during minority, but by no more than seven years, and no more than one year after the minor turns 18</td>\n<td>S.C. Code § 15-3-545(D)</td>\n</tr>\n",
+    "authority": [
+      "SC 15-3-545"
+    ],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md MM-G1. Restores the minors row batch 1 deleted, now correct, plus the (B) foreign-object row the \"Generally\" hedge points to. Signed in law/SC.json (internal-ai-scripts #70, df1c4ca)."
+  },
+  {
+    "id": "MM-G1b",
+    "post_id": 4349,
+    "url": "/blog/charleston-medical-malpractice-hospital-claim-south-carolina/",
+    "field": "content",
+    "from": "regardless of when the injury is discovered; after six years, the claim is generally barred</li>",
+    "to": "regardless of when the injury is discovered; after six years, the claim is generally barred</li>\n<li><strong>Minors</strong> — in South Carolina, the deadline is extended while the patient is a minor, but by no more than seven years and no more than one year after the patient turns 18 (S.C. Code § 15-3-545(D))</li>",
+    "authority": [
+      "SC 15-3-545"
+    ],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md MM-G1 (filing-deadlines list). Signed in law/SC.json (internal-ai-scripts #70, df1c4ca)."
+  },
+  {
+    "id": "MM-G1c",
+    "post_id": 4195,
+    "url": "/medical-malpractice-lawyers/birth-injury/",
+    "field": "faq0",
+    "from": " Early investigation is strongly recommended.",
+    "to": " In South Carolina, the deadline is extended while the child is a minor, but by no more than seven years and no more than one year after the child turns 18 (S.C. Code § 15-3-545(D)). Early investigation is strongly recommended.",
+    "authority": [
+      "SC 15-3-545"
+    ],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md MM-G1 (FAQ[0] + FAQPage). Signed in law/SC.json (internal-ai-scripts #70, df1c4ca)."
+  },
+  {
+    "id": "MM-G1d",
+    "post_id": 4195,
+    "url": "/medical-malpractice-lawyers/birth-injury/",
+    "field": "content",
+    "from": " This extended deadline gives",
+    "to": " In South Carolina, the deadline is extended while the child is a minor, but by no more than seven years and no more than one year after the child turns 18 (S.C. Code § 15-3-545(D)). These extended deadlines give",
+    "authority": [
+      "SC 15-3-545"
+    ],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md MM-G1 (body). Signed in law/SC.json (internal-ai-scripts #70, df1c4ca)."
+  },
+  {
+    "id": "MM-G2a",
+    "post_id": 4363,
+    "url": "/blog/emergency-room-errors-charleston-misdiagnosis-malpractice/",
+    "field": "content",
+    "from": "<h2 id=\"sc-vs-ga-comparison\">",
+    "to": "<p>South Carolina also raises the bar for some emergency care: when a patient who is not medically stable faces an immediate threat of death or serious bodily injury, a physician treating that patient in an emergency department or an obstetrical or surgical suite is liable only if grossly negligent (S.C. Code § 15-32-230). The rule applies only to physicians, and only to care given before the patient is discharged from that unit.</p>\n\n<h2 id=\"sc-vs-ga-comparison\">",
+    "authority": [
+      "SC 15-32-230"
+    ],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md MM-G2. Inserted before the SC-vs-GA comparison. Signed in law/SC.json (internal-ai-scripts #70, df1c4ca)."
+  },
+  {
+    "id": "MM-G2b",
+    "post_id": 4197,
+    "url": "/medical-malpractice-lawyers/emergency-room-negligence/",
+    "field": "faq0",
+    "from": "failing to order obvious tests, or premature discharge.",
+    "to": "failing to order obvious tests, or premature discharge. In South Carolina, when a patient who is not medically stable faces an immediate threat of death or serious bodily injury, a physician treating that patient in an emergency department or an obstetrical or surgical suite is liable only if grossly negligent (S.C. Code § 15-32-230).",
+    "authority": [
+      "SC 15-32-230"
+    ],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md MM-G2 (FAQ[0] + FAQPage), SC sentence appended. Signed in law/SC.json (internal-ai-scripts #70, df1c4ca)."
+  },
+  {
+    "id": "MM-G2c",
+    "post_id": 4197,
+    "url": "/medical-malpractice-lawyers/emergency-room-negligence/",
+    "field": "content",
+    "from": " Georgia law considers the emergency circumstances",
+    "to": " In South Carolina, when a patient who is not medically stable faces an immediate threat of death or serious bodily injury, a physician treating that patient in an emergency department or an obstetrical or surgical suite is liable only if grossly negligent (S.C. Code § 15-32-230), and only for care given before the patient is discharged from that unit. Georgia law considers the emergency circumstances",
+    "authority": [
+      "SC 15-32-230"
+    ],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md MM-G2 (\"The 'Emergency' Standard of Care\"), SC sentence only; the Georgia sentence is untouched. Signed in law/SC.json (internal-ai-scripts #70, df1c4ca)."
+  },
+  {
+    "id": "MM-G3a",
+    "post_id": 4349,
+    "url": "/blog/charleston-medical-malpractice-hospital-claim-south-carolina/",
+    "field": "faq1",
+    "from": "or have recently practiced or taught in it (S.C. Code section 15-36-100).",
+    "to": "or have practiced or taught in it for at least three of the last five years immediately preceding the opinion (S.C. Code section 15-36-100).",
+    "authority": [
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md MM-G3. Signed in law/SC.json (internal-ai-scripts #70, df1c4ca)."
+  },
+  {
+    "id": "MM-G3b",
+    "post_id": 4349,
+    "url": "/blog/charleston-medical-malpractice-hospital-claim-south-carolina/",
+    "field": "content",
+    "from": "<li>The expert must be board certified in the relevant specialty, or have recently practiced or taught in it</li>",
+    "to": "<li>The expert must be board certified in the relevant specialty, or have practiced or taught in it for at least three of the last five years immediately preceding the opinion</li>",
+    "authority": [
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md MM-G3. Signed in law/SC.json (internal-ai-scripts #70, df1c4ca)."
+  },
+  {
+    "id": "MM-G3c",
+    "post_id": 4363,
+    "url": "/blog/emergency-room-errors-charleston-misdiagnosis-malpractice/",
+    "field": "content",
+    "from": "must be board certified in the relevant specialty or have recently practiced or taught in it,",
+    "to": "must be board certified in the relevant specialty or have practiced or taught in it for at least three of the last five years immediately preceding the opinion,",
+    "authority": [
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md MM-G3. Signed in law/SC.json (internal-ai-scripts #70, df1c4ca)."
+  },
+  {
+    "id": "MM-G3d",
+    "post_id": 4363,
+    "url": "/blog/emergency-room-errors-charleston-misdiagnosis-malpractice/",
+    "field": "content",
+    "from": "<td>Board certified in the specialty, or recent practice or teaching in it (S.C. Code Section 15-36-100)</td>",
+    "to": "<td>Board certified in the specialty, or practice or teaching in it for 3 of the last 5 years (S.C. Code Section 15-36-100)</td>",
+    "authority": [
+      "SC 15-36-100"
+    ],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md MM-G3 (comparison table). Signed in law/SC.json (internal-ai-scripts #70, df1c4ca)."
+  },
+  {
+    "id": "MM-G4a",
+    "post_id": 4199,
+    "url": "/medical-malpractice-lawyers/informed-consent-failure/",
+    "field": "content",
+    "from": "South Carolina courts evaluate whether the doctor provided sufficient information for a reasonable patient to make an informed decision about their treatment.",
+    "to": "South Carolina courts measure the disclosure a doctor owed by what a reasonable medical practitioner of like training would have disclosed under the same or similar circumstances (Hook v. Rothstein, 281 S.C. 541, 316 S.E.2d 690 (Ct. App. 1984)).",
+    "authority": [
+      "Hook v. Rothstein"
+    ],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md MM-G4. SC uses the professional, not the reasonable-patient, disclosure standard. Signed in law/SC.json (internal-ai-scripts #70, df1c4ca)."
+  },
+  {
+    "id": "MM-G4b",
+    "post_id": 4199,
+    "url": "/medical-malpractice-lawyers/informed-consent-failure/",
+    "field": "faq2",
+    "from": "Courts typically apply a \"reasonable patient\" standard — would a reasonable person in your position",
+    "to": "In South Carolina, the risks a doctor had to disclose are measured by what a reasonable medical practitioner of like training would have disclosed (Hook v. Rothstein, 281 S.C. 541, 316 S.E.2d 690 (Ct. App. 1984)). On whether you would have refused, courts may ask: would a reasonable person in your position",
+    "authority": [
+      "Hook v. Rothstein"
+    ],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md MM-G4 (FAQ[2] + FAQPage). Only the disclosure-standard label changes; the causation question that follows is kept word for word, and the causation paragraph in the body is not edited. Signed in law/SC.json (internal-ai-scripts #70, df1c4ca)."
+  },
+  {
+    "id": "WD-G2a",
+    "post_id": 4102,
+    "url": "/wrongful-death-lawyers/workplace-fatality/",
+    "field": "content",
+    "from": "third parties whose negligence caused or contributed to the death can be held fully liable:",
+    "to": "third parties whose negligence caused or contributed to the death can be held liable — for example, equipment manufacturers, or a property owner or contractor that was not the worker's employer or, in South Carolina, statutory employer (S.C. Code §§ 42-1-400, 42-1-410, 42-1-540):",
+    "authority": [
+      "SC 42-1-400",
+      "SC 42-1-410",
+      "SC 42-1-540"
+    ],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md WD-G2. In SC an owner or contractor that subcontracted the work is a statutory employer, and workers' compensation is the exclusive remedy against it. The list items below are left as published. Signed in law/SC.json (internal-ai-scripts #70, df1c4ca)."
+  },
+  {
+    "id": "WD-G2b",
+    "post_id": 4102,
+    "url": "/wrongful-death-lawyers/workplace-fatality/",
+    "field": "faq0",
+    "from": "against negligent third parties such as property owners, contractors, or equipment manufacturers.",
+    "to": "against negligent third parties such as equipment manufacturers, or a property owner or contractor that was not the worker's employer or, in South Carolina, statutory employer (S.C. Code §§ 42-1-400, 42-1-410, 42-1-540).",
+    "authority": [
+      "SC 42-1-400",
+      "SC 42-1-410",
+      "SC 42-1-540"
+    ],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md WD-G2 (FAQ[0] + FAQPage). Signed in law/SC.json (internal-ai-scripts #70, df1c4ca)."
+  },
+  {
+    "id": "NC-G1",
+    "post_id": 4339,
+    "url": "/blog/rivers-avenue-pedestrian-deaths-north-charleston/",
+    "field": "content",
+    "from": "<li><strong>Crosswalk rights (S.C. Code § 56-5-3130)</strong> — drivers must yield the right-of-way to pedestrians in marked crosswalks and at intersections with traffic signals</li>",
+    "to": "<li><strong>Crosswalk rights (S.C. Code § 56-5-3130)</strong> — where traffic signals are not in place or not working, drivers must yield to a pedestrian crossing within a crosswalk, marked or unmarked</li>",
+    "authority": [
+      "SC 56-5-3130"
+    ],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md NC-G1. The published line stated the section backwards. \"Signalized crossings\" clause dropped (the section does not govern them). Signed in law/SC.json (internal-ai-scripts #70, df1c4ca)."
+  },
+  {
+    "id": "NC-G2a",
+    "post_id": 4346,
+    "url": "/blog/car-accidents-ladson-i-26-exit-203-danger-zone/",
+    "field": "faq1",
+    "from": "Your claim must be filed in the county where the accident occurred or where the defendant resides.",
+    "to": "Your claim generally may be filed in the county where the crash happened, or in the county where a South Carolina defendant lives or a business has its principal place of business; against an out-of-state driver, it may also be filed in the county where you live (S.C. Code § 15-7-30).",
+    "authority": [
+      "SC 15-7-30"
+    ],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md NC-G2 (FAQ[1] + FAQPage). Per-defendant venue; \"generally\" covers Tort Claims Act suits (§ 15-78-100). Signed in law/SC.json (internal-ai-scripts #70, df1c4ca)."
+  },
+  {
+    "id": "NC-G2b",
+    "post_id": 4346,
+    "url": "/blog/car-accidents-ladson-i-26-exit-203-danger-zone/",
+    "field": "content",
+    "from": "<li><strong>Court jurisdiction</strong> — any lawsuit must be filed in the county where the accident occurred or where the defendant resides</li>",
+    "to": "<li><strong>Court jurisdiction</strong> — a lawsuit generally may be filed in the county where the crash happened, or where a South Carolina defendant lives or a business has its principal place of business; against an out-of-state driver, also in the county where you live (S.C. Code § 15-7-30)</li>",
+    "authority": [
+      "SC 15-7-30"
+    ],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md NC-G2 (body). Signed in law/SC.json (internal-ai-scripts #70, df1c4ca)."
+  },
+  {
+    "id": "MC-G2a",
+    "post_id": 4073,
+    "url": "/motorcycle-accident-lawyers/lane-splitting-accident/",
+    "field": "faq2",
+    "from": "Some states have legalized lane filtering at low speeds, but neither Georgia nor South Carolina currently permits either practice.",
+    "to": "Neither Georgia nor South Carolina currently permits either practice.",
+    "authority": [
+      "SC 56-5-3640"
+    ],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md MC-G2 (FAQ[2] + FAQPage). Pure cut of other-state law."
+  },
+  {
+    "id": "MC-G2b",
+    "post_id": 4073,
+    "url": "/motorcycle-accident-lawyers/lane-splitting-accident/",
+    "field": "content",
+    "from": " — moving between stopped vehicles at a red light — which some states have legalized. Neither",
+    "to": " — moving between stopped vehicles at a red light. Neither",
+    "authority": [
+      "SC 56-5-3640"
+    ],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md MC-G2 body twin (the same other-state claim)."
+  },
+  {
+    "id": "MM-L3l-a",
+    "post_id": 4363,
+    "url": "/blog/emergency-room-errors-charleston-misdiagnosis-malpractice/",
+    "field": "excerpt",
+    "from": "Emergency room misdiagnosis is the most common malpractice claim.",
+    "to": "Emergency room misdiagnosis is one of the most common malpractice claims.",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md MM-L3l. Unsourced superlative hedged (excerpt = Article description). The body already says \"one of the leading causes\"."
+  },
+  {
+    "id": "MM-L3l-b",
+    "post_id": 4363,
+    "url": "/blog/emergency-room-errors-charleston-misdiagnosis-malpractice/",
+    "field": "takeaways",
+    "from": "Emergency room misdiagnosis is the most common medical malpractice claim,",
+    "to": "Emergency room misdiagnosis is one of the most common medical malpractice claims,",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md MM-L3l twin."
+  },
+  {
+    "id": "MM-L3l-c",
+    "post_id": 4363,
+    "url": "/blog/emergency-room-errors-charleston-misdiagnosis-malpractice/",
+    "field": "content",
+    "from": "<a href=\"#er-misdiagnosis-overview\">ER Misdiagnosis: The Most Common Medical Malpractice Claim</a>",
+    "to": "<a href=\"#er-misdiagnosis-overview\">ER Misdiagnosis: One of the Most Common Medical Malpractice Claims</a>",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md MM-L3l twin (table of contents)."
+  },
+  {
+    "id": "MM-L3l-d",
+    "post_id": 4363,
+    "url": "/blog/emergency-room-errors-charleston-misdiagnosis-malpractice/",
+    "field": "content",
+    "from": "<h2 id=\"er-misdiagnosis-overview\">ER Misdiagnosis: The Most Common Medical Malpractice Claim</h2>",
+    "to": "<h2 id=\"er-misdiagnosis-overview\">ER Misdiagnosis: One of the Most Common Medical Malpractice Claims</h2>",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md MM-L3l twin (H2)."
+  },
+  {
+    "id": "NC-L3y-a",
+    "post_id": 4339,
+    "url": "/blog/rivers-avenue-pedestrian-deaths-north-charleston/",
+    "field": "faq0",
+    "from": "makes it one of the deadliest pedestrian corridors in South Carolina.",
+    "to": "makes it one of the most dangerous pedestrian corridors in the Charleston area.",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md NC-L3y. Unsourced statewide ranking hedged."
+  },
+  {
+    "id": "NC-L3y-b",
+    "post_id": 4339,
+    "url": "/blog/rivers-avenue-pedestrian-deaths-north-charleston/",
+    "field": "excerpt",
+    "from": "Why Rivers Avenue is one of South Carolina's deadliest corridors for pedestrians,",
+    "to": "Why Rivers Avenue is one of the Charleston area's most dangerous corridors for pedestrians,",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md NC-L3y twin (excerpt)."
+  },
+  {
+    "id": "NC-L3y-c",
+    "post_id": 4339,
+    "url": "/blog/rivers-avenue-pedestrian-deaths-north-charleston/",
+    "field": "takeaways",
+    "from": "Rivers Avenue in North Charleston is one of South Carolina's deadliest corridors for pedestrians due to",
+    "to": "Rivers Avenue in North Charleston is one of the Charleston area's most dangerous corridors for pedestrians due to",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md NC-L3y twin (takeaways)."
+  },
+  {
+    "id": "NC-L3y-d",
+    "post_id": 4339,
+    "url": "/blog/rivers-avenue-pedestrian-deaths-north-charleston/",
+    "field": "content",
+    "from": " is one of the deadliest roads for pedestrians in all of South Carolina.",
+    "to": " is one of the most dangerous roads for pedestrians in the Charleston area.",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md NC-L3y twin (intro)."
+  },
+  {
+    "id": "NC-L3y-e",
+    "post_id": 4339,
+    "url": "/blog/rivers-avenue-pedestrian-deaths-north-charleston/",
+    "field": "content",
+    "from": "produces pedestrian fatalities and life-altering injuries at rates that far exceed state and national averages.</p>",
+    "to": "produces pedestrian fatalities and life-altering injuries.</p>",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md NC-L3y twin: unsourced comparison to state and national rates cut from the same intro paragraph. The title and the H2 \"North Charleston's Deadliest Corridor\" are city-level framing and are not edited."
+  },
+  {
+    "id": "NC-L1b",
+    "post_id": 4645,
+    "url": "/blog/north-charleston-crime-rate-hit-and-run/",
+    "field": "faq1",
+    "from": "South Carolina has an uninsured driver rate of approximately 9%. Drivers without insurance flee to avoid financial liability, which is a large part of why hit-and-run crashes cluster where they do.",
+    "to": "Estimates vary by source and year. What matters for your claim is that drivers without insurance may flee to avoid financial liability, and South Carolina requires uninsured motorist coverage on every auto policy (S.C. Code § 38-77-150), which is often what pays when the driver is never identified.",
+    "authority": [
+      "SC 38-77-150"
+    ],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md NC-L1b. Unsourced 9% removed; FAQ kept (same voice as 4617 FAQ[2])."
+  },
+  {
+    "id": "NC-L1c",
+    "post_id": 4645,
+    "url": "/blog/north-charleston-crime-rate-hit-and-run/",
+    "field": "content",
+    "from": "<p>North Charleston has a crime rate of 47 per 1,000 residents — one of the highest in America. While violent crime gets the headlines, there's a less-discussed connection: cities with elevated crime rates also tend to have higher rates of <strong>hit-and-run accidents</strong>. When drivers flee",
+    "to": "<p><strong>Hit-and-run accidents</strong> are a real risk on North Charleston's busy roads. When drivers flee",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md NC-L1c. Unsourced \"47 per 1,000 / one of the highest in America\" and the unsourced crime-rate link removed. The title is a question and makes no claim; it is not edited."
+  },
+  {
+    "id": "NC-L1d",
+    "post_id": 4645,
+    "url": "/blog/north-charleston-crime-rate-hit-and-run/",
+    "field": "takeaways",
+    "from": "North Charleston has a disproportionately high rate of <strong>hit-and-run accidents</strong>, and research links elevated crime rates to drivers' willingness to flee crash scenes.",
+    "to": "<strong>Hit-and-run accidents</strong> leave North Charleston victims with no identified driver to claim against.",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md NC-L1c twin (takeaways): \"disproportionately high\" and \"research links …\" are unsourced."
+  },
+  {
+    "id": "NC-L1e",
+    "post_id": 4645,
+    "url": "/blog/north-charleston-crime-rate-hit-and-run/",
+    "field": "excerpt",
+    "from": "Why North Charleston sees a disproportionate share of hit-and-run crashes, and what coverage pays when the driver is never found.",
+    "to": "Why drivers flee crashes in North Charleston, and what coverage pays when the driver is never found.",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md NC-L1c twin (excerpt = Article description): \"disproportionate share\" is unsourced."
+  },
+  {
+    "id": "GA-3a",
+    "post_id": 4363,
+    "url": "/blog/emergency-room-errors-charleston-misdiagnosis-malpractice/",
+    "field": "takeaways",
+    "from": "Georgia applies a two-year deadline (O.C.G.A. § 9-3-73) with a five-year repose.",
+    "to": "Georgia applies a two-year deadline (O.C.G.A. § 9-3-71) with a five-year repose.",
+    "authority": [
+      "GA 9-3-71"
+    ],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md GA-3. Cite correction only; the statement matches the signed GA 9-3-71 claim (two years, five-year repose)."
+  },
+  {
+    "id": "GA-3b",
+    "post_id": 4349,
+    "url": "/blog/charleston-medical-malpractice-hospital-claim-south-carolina/",
+    "field": "takeaways",
+    "from": "Georgia allows 2 years to file (O.C.G.A. 9-3-33)",
+    "to": "Georgia allows 2 years to file (O.C.G.A. § 9-3-71)",
+    "authority": [
+      "GA 9-3-71"
+    ],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md GA-3. Cite correction only (§ 9-3-33 is the general personal-injury section)."
+  },
+  {
+    "id": "GA-5a",
+    "post_id": 4099,
+    "url": "/wrongful-death-lawyers/fatal-car-accident/",
+    "field": "faq1",
+    "from": "Damages include the full value of the deceased's life (future earnings and contributions),",
+    "to": "In Georgia, damages include the full value of the deceased's life (future earnings and contributions),",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md GA-5. Scope only; the SC sentence batch 1 appended follows it."
+  },
+  {
+    "id": "GA-5b",
+    "post_id": 4101,
+    "url": "/wrongful-death-lawyers/medical-malpractice-death/",
+    "field": "content",
+    "from": "Wrongful death damages include the full value of the deceased's life",
+    "to": "In Georgia, wrongful death damages include the full value of the deceased's life",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md GA-5."
+  },
+  {
+    "id": "GA-5c",
+    "post_id": 4101,
+    "url": "/wrongful-death-lawyers/medical-malpractice-death/",
+    "field": "faq4",
+    "from": "Damages include the full value of the deceased's life, loss of companionship",
+    "to": "In Georgia, damages include the full value of the deceased's life, loss of companionship",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md GA-5."
+  },
+  {
+    "id": "GA-5d",
+    "post_id": 4104,
+    "url": "/wrongful-death-lawyers/nursing-home-wrongful-death/",
+    "field": "content",
+    "from": "Families may recover compensation for the full value of the deceased's life",
+    "to": "In Georgia, families may recover compensation for the full value of the deceased's life",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md GA-5."
+  },
+  {
+    "id": "GA-5e",
+    "post_id": 4105,
+    "url": "/wrongful-death-lawyers/drowning-swimming-pool-death/",
+    "field": "content",
+    "from": "Families who lose a loved one to drowning may recover compensation for the full value",
+    "to": "In Georgia, families who lose a loved one to drowning may recover compensation for the full value",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md GA-5."
+  },
+  {
+    "id": "GA-5f",
+    "post_id": 4102,
+    "url": "/wrongful-death-lawyers/workplace-fatality/",
+    "field": "content",
+    "from": "or the full value of the worker's life.",
+    "to": "or, in Georgia, the full value of the worker's life.",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md GA-5."
+  },
+  {
+    "id": "GA-5g",
+    "post_id": 4102,
+    "url": "/wrongful-death-lawyers/workplace-fatality/",
+    "field": "faq1",
+    "from": "or the full value of life available through a wrongful death claim.",
+    "to": "or, in Georgia, the full value of life available through a wrongful death claim.",
+    "authority": [],
+    "class": "apply",
+    "note": "data/facts/linked-pages-batch-2026-09-28.md GA-5."
+  }
+]

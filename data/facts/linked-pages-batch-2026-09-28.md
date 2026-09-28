@@ -170,3 +170,65 @@ These are theme items from the 09-26/09-28 plans and need a theme PR:
 - the Columbia essay's § 15-3-530 line;
 - the empty attorneys heading;
 - the owner-deferred results grid.
+
+## Batch 2 (built 2026-09-28, after batch 1 went live in 899162d)
+
+**Authority.** The owner said "consider all to have been reviewed this afternoon". Batch 2 rests on `law/SC.json` as merged in internal-ai-scripts #70 (df1c4ca), which now holds 45 signed authorities:
+- SC 15-32-230, SC 42-1-400, SC 42-1-410, SC 56-5-3130, SC 15-7-30 and *Hook v. Rothstein*, 281 S.C. 541, 316 S.E.2d 690 (Ct. App. 1984) (cert. denied, 283 S.C. 64 (1984));
+- SC 15-3-545 amended for (B) and (D);
+- SC 15-36-100 amended to "at least three of the last five years immediately preceding the opinion".
+
+Each of these was read against primary text on 2026-09-28. The GA-3 edits rest on the signed `GA 9-3-71`, and the GA-5 edits only scope existing Georgia wording.
+
+**File:** `data/facts/linked-pages-batch-2-2026-09-28.json`. It holds 42 edits, all `apply`, on 15 posts: 4073, 4099, 4101, 4102, 4104, 4105, 4195, 4197, 4199, 4339, 4346, 4349, 4363, 4562, 4645. By field: 22 content, 12 FAQ answers, 5 key takeaways, 3 excerpts, no titles.
+
+**Verification.**
+- **Built from a read-only prod dump taken after batch 1.** Applied in array order, every `from` matches exactly once.
+- **Engine replay:** 42 replacements plus two positive controls, **44/44**; both controls fired.
+- **Whole-document sweep:** the 15 posts swept before and after with the updated pack show no new findings or warnings.
+
+| id | Post / surface | Change |
+|---|---|---|
+| MM-G1a–d | 4562 table; 4349 deadlines list; 4195 FAQ[0] + body | § 15-3-545(D) minors rule. 4562 also gets the (B) foreign-object row that its "Generally 6 years" repose cell relies on. |
+| MM-G2a–c | 4363 body (before the SC-vs-GA table); 4197 FAQ[0] + "Emergency Standard" section | § 15-32-230: applies to a physician in an emergency department or an obstetrical or surgical suite, only while the patient is not medically stable, and only before discharge from that unit. Physicians only. The Georgia sentence is untouched. |
+| MM-G3a–d | 4349 FAQ[1] + expert list; 4363 body + table | Three of the last five years (§ 15-36-100). |
+| MM-G4a–b | 4199 body + FAQ[2] | Professional disclosure standard (*Hook*). The causation question in FAQ[2] is kept with "courts may ask", and the causation paragraph is not edited: *Hook*'s causation test was not confirmed. |
+| WD-G2a–b | 4102 lead-in + FAQ[0] | Statutory employer (§§ 42-1-400, 42-1-410, 42-1-540). The list items under the lead-in are left as published. |
+| NC-G1 | 4339 body | § 56-5-3130 corrected; the "signalized crossings" clause is dropped. |
+| NC-G2a–b | 4346 FAQ[1] + "Court jurisdiction" li | Per-defendant venue (§ 15-7-30), including the plaintiff's county for out-of-state drivers. |
+| MC-G2a–b | 4073 FAQ[2] + body twin | Other-state lane-filtering claim cut. |
+| MM-L3l-a–d | 4363 excerpt, takeaways, TOC, H2 | "the most common" becomes "one of the most common". |
+| NC-L3y-a–e | 4339 FAQ[0], excerpt, takeaways, intro | "deadliest … in South Carolina" becomes "most dangerous … in the Charleston area"; the unsourced "rates that far exceed state and national averages" is cut. The title and the city-level H2 are not edited. |
+| NC-L1b–e | 4645 FAQ[1], intro, takeaways, excerpt | The 9% figure, "47 per 1,000 / one of the highest in America", "research links…" and "disproportionate share" are removed, with the sentences rewritten to stay grammatical. The title is a question and is not edited. |
+| GA-3a–b | 4363, 4349 takeaways | Georgia med-mal cite changed to O.C.G.A. § 9-3-71. |
+| GA-5a–g | 4099 FAQ[1]; 4101 body + FAQ[4]; 4104 body; 4105 body; 4102 body + FAQ[1] | "In Georgia," prefix. |
+
+**Ordering notes.**
+- MM-G1a anchors on the repose row as batch 1 rewrote it, so it fails if batch 1 is ever rolled back.
+- Fields that take more than one edit, all ordered and checked in sequence:
+  - 4363 content (MM-G2a, MM-G3c, MM-G3d, MM-L3l-c, MM-L3l-d);
+  - 4349 content (MM-G1b, MM-G3b);
+  - 4339 content (NC-G1, NC-L3y-d, NC-L3y-e);
+  - 4102 content (WD-G2a, GA-5f);
+  - 4195 FAQ[0] and body.
+- No two edits overlap.
+
+**After apply:**
+- `wp cache flush` and `wp page-cache flush`;
+- regenerate `content/meta.json`;
+- `bin/check-unslashed-post-writes.php`;
+- a `--fresh` sweep;
+- spot-check the FAQPage JSON-LD on 4195, 4197, 4199, 4102, 4346, 4073 and 4645;
+- 4339 and 4346 still carry `_roden_last_reviewed` 2026-09-02.
+
+### Decision needed (not in batch 2)
+
+- **WD-G1:** does a malpractice death run under § 15-3-545 or § 15-3-530(6) ("upon the death")? This decides 4101's SC deadline and whether "from the date of death" returns to 4337, 4339, 4346 and 4562.
+- **WD-G3:** keep funeral and burial as a wrongful death (not survival) element, and "not used to pay creditors", on 4816 and 4861 (case law, no pack authority)?
+- **WD-G4:** should the nursing-home WD page (4104) say the med-mal cap (§ 15-32-220) and the charity cap (§ 33-56-180) can apply?
+- **NC-G3:** approve a UM/UIM stacking statement on 4846 and 4812, or cut to UM-mandatory / UIM-offered because of the § 38-77-160 limit?
+- **MC-G1:** keep "helmet non-use runs through ordinary comparative fault" on 4814 FAQ[49]/[50] (ES 4937), or cut it to the § 56-5-3660 rule?
+- **GA-1:** 1809's Employer's First Report "within 10 days", and "the limitations period begins when the report is filed": confirm or cut?
+- **GA-2:** add co-employee immunity (O.C.G.A. § 34-9-11(a)) to 1809's third-party examples?
+- **GA-4:** should 4197's Georgia ER sentence reflect O.C.G.A. § 51-1-29.5 (gross negligence for emergency care)?
+- **GA-6:** keep Georgia law on the Columbia post 3553, or remove it as off-market?

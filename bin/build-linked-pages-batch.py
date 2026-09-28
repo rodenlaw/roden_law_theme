@@ -3,7 +3,9 @@
 into bin/apply-linked-pages-batch.php (which is piped to `wp eval-file -` and
 cannot read the repo). Writes the runnable script to stdout's target path.
 
-    python3 bin/build-linked-pages-batch.py > /tmp/apply-linked-pages-batch.run.php
+    python3 bin/build-linked-pages-batch.py [data/facts/<batch>.json] > run.php
+
+Defaults to the batch-1 file.
 """
 import base64
 import json
@@ -11,7 +13,8 @@ import pathlib
 import sys
 
 root = pathlib.Path(__file__).resolve().parent.parent
-edits = json.loads((root / 'data/facts/linked-pages-batch-2026-09-28.json').read_text())
+src = sys.argv[1] if len(sys.argv) > 1 else 'data/facts/linked-pages-batch-2026-09-28.json'
+edits = json.loads((root / src).read_text())
 keep = [
     {k: e[k] for k in ('id', 'post_id', 'field', 'from', 'to')}
     for e in edits
