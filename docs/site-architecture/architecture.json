@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-09-28",
+  "updated": "2026-09-29",
   "status": "approved in part 2026-09-26 — Rule 6 reopened (capped, allowlisted); wave 1 not yet built",
   "sources": {
     "gsc": "sc-domain:rodenlaw.com, 2025-05-12..2026-09-24 (16 mo) and 2026-06-27..09-24 (90 d); per-URL inventory of the 685 sitemap URLs",
@@ -88,7 +88,7 @@
         "total": 1
       },
       {
-        "step": "Georgia statewide practice pages (6, mirror of the SC set; state names are not geo)",
+        "step": "Georgia statewide practice pages (6, mirror of the SC set; state names are not geo) — done 2026-09-29 (6317–6322, #196/#197; cleared by Eric Roden)",
         "geo": 0,
         "total": 6
       },
@@ -698,7 +698,7 @@
       "weeks": "4–10",
       "items": [
         "Retitle each hub to '[City] Personal Injury Lawyer', de-duplicate against the homepage, add the practice-page grid — titles done 2026-09-29 (bin/retitle-office-hubs.php, 6 EN hubs to '[City] Personal Injury Lawyer | Roden Law'); the practice-page grids were already live (Charleston 6, Savannah 3, Columbia 1, North Charleston 1). Homepage is two-state in title/H1/description, so no de-dup edit: the Charleston split (home 44% / hub 40%) is Google's choice; watch it after the retitle.",
-        "Build the six Georgia statewide practice pages (non-geo)",
+        "Build the six Georgia statewide practice pages (non-geo) — done 2026-09-29: /georgia-{personal-injury-lawyer,car-accident-lawyers,truck-accident-lawyers,motorcycle-accident-lawyer,wrongful-death-lawyer,workers-compensation-lawyer}/ live on template-pillar-ga-statewide.php; doorway 166/690 = 24.06%",
         "Pick one Darien-area landing; fix English/Spanish hreflang where Spanish outranks English — hreflang checked 2026-09-29: EN/ES Charleston hubs are reciprocal with x-default=EN and self-canonical, and the ES page is fully Spanish; the North Charleston ES hub was retired 2026-09-26. No defect; monitor. The Darien-area landing still needs the owner's pick (Brunswick sub-page takes 65% of the Darien cluster)."
       ]
     },

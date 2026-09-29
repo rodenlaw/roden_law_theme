@@ -2142,6 +2142,54 @@ unfinished P0 items (`docs/site-architecture`, from `evidence/retired-with-impre
 
 **Measure:** re-pull the Charleston and Savannah PI clusters in 4–6 weeks.
 
+### P2: six Georgia statewide pages live; GBP handoff; statewide callouts fixed — 2026-09-29
+
+**Owner, 2026-09-29:**
+- "send the GBP office page url changes to Clickup Roden Law SEO, assign to Emma, due tomorrow…
+  Then… start the Georgia statewide pages. Those are cleared by Eric Roden."
+- "Leave the Brunswick page for now, but Darien is the actual office page."
+
+- **GBP (ClickUp 86bc9bckb, Emma McIntyre, due 2026-09-30):** per-office website and
+  appointment URL changes, and LocalDominator directions.
+  - Live profiles (Local Falcon): Charleston, Savannah and Columbia link to the homepage.
+    Darien, North Charleston and Myrtle Beach link to their hubs with `?ref=gmb_…`, which the
+    site 301s off. UTM parameters survive (200, clean canonical), so the new links use UTM.
+  - Appointment links move from /contact-us/ (a 301) to /contact/. Columbia's could not be read
+    through the API.
+- **#196:**
+  - `template-pillar-ga-statewide.php` (Savannah and Darien offices, GA law from firm data).
+  - GA LegalService schema.
+  - Shared `roden_statewide_law_callout()`. This fixed a live error: the SC workers' comp
+    statewide page showed "3 years … personal injury lawsuit" and the 51% bar. It now shows
+    the § 42-15-40 claim deadline, 90-day notice (§ 42-15-20) and no-fault; verified EN and ES.
+- **#197:** wrongful-death callout "gives families N years to file a wrongful death lawsuit"
+  (GA and the live SC page; Spanish added, .mo 632); the fault card prints its citation;
+  LegalService description "personal injury injury victims" fixed; the workers' comp callout
+  drops the SOL / comparative-negligence links.
+- **Pages 6317–6322** (`bin/create-ga-statewide-pages.php`, `bin/publish-ga-statewide-pages.php`):
+  written from the signed GA pack only, Eric Roden author, stamped reviewed 2026-09-29.
+  - Legal sweep (`data/facts/remediation-2026-09-29-ga-statewide.md`): 5 PASS, 1 FAIL.
+    - E1 on the personal injury page: med mal "from injury or discovery"; § 9-3-71(a) has no
+      discovery rule. Fixed on 3 surfaces before publish.
+    - W1 on workers' comp: the co-worker carve-out added (§ 34-9-11(a)).
+  - Left out, because the Georgia statute text could not be fetched here: the helmet law
+    (§ 40-6-315) and wrongful-death standing (§§ 51-4-2, 51-4-5).
+- **Verified live:** all 6 return 200, self-canonical, indexable, in the page sitemap, with
+  LegalService + FAQPage + BreadcrumbList; no SC text in the article body. JSON-LD guard PASS.
+  Fresh sweep: 0 findings. meta.json regenerated. **Doorway 166 / 690 = 24.06% PASS.**
+
+**Open:**
+- **Shared GA pack:** the signed `GA 9-3-71` claim says "from the date of injury or
+  discovery". § 9-3-71(a) has no discovery rule. The pack is shared, so it is not edited
+  here; raise it with the pack owner.
+- **The same med-mal "discovery" wording is live on 8 pages:**
+  - FAQs on anesthesia-error, emergency-room-negligence, informed-consent-failure,
+    hospital-acquired-infection and medication-error;
+  - "from discovery" under § 9-3-33 on nursing-home-neglect, dangerous-pharmaceutical-drug
+    and defective-medical-device.
+- The "at-fault state" sentence on the car page has no signed authority.
+- The § 33-7-11 citation vs the pending § 33-34-4.
+
 ### Law pack: #62 superseded by #67, rebuilt on the signed SC pack — 2026-09-26
 
 **Owner, 2026-09-26:** "what do we need to do with #62? Those are signed", then "yes".
