@@ -2086,6 +2086,37 @@ them and apply". This resolves B3-G1 and B3-G2.
     own negligence.
 - **Verified live.** JSON-LD guard PASS. Fresh sweep: 0 findings.
 
+### P0 hygiene: thin pages noindexed, hubs in the sitemap, 404s redirected — 2026-09-29
+
+**Owner, 2026-09-29:** "let's save those remaining questions and move on to the next step".
+The questions are saved in `data/facts/open-legal-questions.md`. Next step: the plan's
+unfinished P0 items (`docs/site-architecture`, from `evidence/retired-with-impressions.csv`:
+53 live non-sitemap URLs, 9 404s with impressions).
+
+- **#195 `noindex,follow`** via `wp_robots`:
+  - category archives;
+  - paged blog and archive pages;
+  - the 21 testimonial singles;
+  - `/test/` and the two PPC landers already excluded from the sitemap.
+
+  Tags, taxonomies, search, author and date archives were already noindexed by
+  `roden_output_noindex_pages()`. Verified live on 6 URLs, and absent on /blog/, office pages
+  and hubs.
+- **#195 `hubs` sitemap** (`wp-sitemap-hubs-1.xml`, listed in the index): /attorneys/ (259
+  clicks in 16 months), /practice-areas/, /locations/ and /resources/, which were in no
+  sitemap.
+- **#195 redirects** (`roden_p0_hygiene_urls()`, all single-hop 301s):
+  - /privacy-policy-2/ → /privacy-policy/;
+  - five 404s to the live pages that replaced them;
+  - the "premisesliability" typo URL, which fell through to the Columbia car page, → the
+    premises pillar.
+  - Blog pagination past the last page (/blog/page/42/ and up) is left to 404.
+- **Not done here:**
+  - Pointing each Business Profile at its /locations/ hub and the /contact-us/ appointment
+    links: GBP dashboard work, for the owner.
+  - `/wp-sitemap.xml` 301s to a trailing-slash version, a pre-existing quirk that crawlers
+    follow.
+
 ### Law pack: #62 superseded by #67, rebuilt on the signed SC pack — 2026-09-26
 
 **Owner, 2026-09-26:** "what do we need to do with #62? Those are signed", then "yes".

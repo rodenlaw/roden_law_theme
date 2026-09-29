@@ -675,9 +675,9 @@
       "weeks": "1–2",
       "items": [
         "Point every office Business Profile at its /locations/ hub; the Brunswick profile URL now 301s to the Darien hub (live 2026-09-26); fix the /contact-us/ appointment links",
-        "noindex /test/; resolve the 53 non-sitemap URLs that return 200 (testimonial singles, /blog/category/*, /blog/page/N/, /privacy-policy-2/) and the 9 that 404 with impressions",
-        "Fix the /practice-areas/premisesliability-lawyers/columbia-sc/ redirect target (404)",
-        "Replace RODEN_LOCATION_FREEZE's blanket block with an allowlist of approved office practice pages (content-guardrails.php L253–281)",
+        "noindex /test/; resolve the 53 non-sitemap URLs that return 200 (testimonial singles, /blog/category/*, /blog/page/N/, /privacy-policy-2/) and the 9 that 404 with impressions — done 2026-09-29 (#195): noindex,follow on category/paged archives, 21 testimonial singles, /test/ and PPC landers; hubs sitemap for /attorneys/, /practice-areas/, /locations/, /resources/; 404s redirected (blog pagination past the end left to 404)",
+        "Fix the /practice-areas/premisesliability-lawyers/columbia-sc/ redirect target (404) — done 2026-09-29 (#195): the typo URL fell through to the Columbia car page; now 301s to the premises liability pillar",
+        "Replace RODEN_LOCATION_FREEZE's blanket block with an allowlist of approved office practice pages (content-guardrails.php L253–281) — done 2026-09-26 (roden_office_practice_allowlist)",
         "Expect an October impression drop as Google processes the 568 retired URLs (38% of last-30-day impressions); it is not a penalty"
       ]
     },
@@ -687,7 +687,7 @@
       "weeks": "2–8",
       "items": [
         "Retire the 14 DEAD geo blog posts first (draft + _roden_retired, single-hop 301) — done 2026-09-26",
-        "Restore 11 pages at their old URLs in batches of 3–4, each SC-only or GA-only, with the office map, NAP, local roads, statutes from the law pack, attorney byline",
+        "Restore 11 pages at their old URLs in batches of 3–4, each SC-only or GA-only, with the office map, NAP, local roads, statutes from the law pack, attorney byline — done 2026-09-28: all 11 live",
         "Order: Charleston car → Charleston truck → Savannah car → Savannah WC → Charleston WC → Charleston motorcycle → Columbia car → North Charleston car → Savannah truck → Charleston wrongful death → Charleston med mal",
         "Legal sweep + Gillin (SC) / Eric Roden (GA) sign-off per page; 301 each nested /practice-areas/{x}/{city}/ duplicate to the flat URL"
       ]
