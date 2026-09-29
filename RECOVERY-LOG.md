@@ -2059,6 +2059,33 @@ on prod and read back. Backup: `docs/backups/linked-pages-batch-3-2026-09-28.jso
 - 4075: Georgia hit-and-run "injury" should be "serious injury" (GA 40-6-270).
 - 1696: Georgia minors and § 9-3-72 cells.
 
+### Construction-zone page: no doubled work-zone fines; SCTCA excludes contractors — 2026-09-29
+
+**Owner, 2026-09-29:** "Research the actual current statute…", then "Gillin signed off — record
+them and apply". This resolves B3-G1 and B3-G2.
+
+**Research (scstatehouse.gov, 2026-09-29):**
+- 2017 Act No. 81 rewrote § 56-5-1535, "deleting the provision relating to speeding in work
+  zones", and repealed § 56-5-1536. South Carolina has no doubled work-zone speeding fine.
+- In force now:
+  - endangerment of a highway worker (§ 56-5-1535): $500–$1,000; $1,000–$2,000 with an injury;
+    $2,000–$5,000 for great bodily injury; 2 or 4 points; the fines cannot be waived;
+  - no passing in work zones (§ 56-5-1895).
+- § 15-78-30(c): a Tort Claims Act "employee" "does not include an independent contractor doing
+  business with the State".
+
+**Changes:**
+- **internal-ai-scripts #71:** §§ 56-5-1535, 56-5-1895 and 15-78-30 signed by Gillin. The SC
+  pack now holds 48 authorities.
+- **Post 4635** (`data/facts/work-zone-batch-2026-09-29.json`, 3 edits, through the batch
+  applier; backup `docs/backups/work-zone-batch-2026-09-29.json`):
+  - The "Enhanced Penalties" section (doubled fines, enhanced reckless driving) became "Work
+    Zone Laws in South Carolina", stating §§ 56-5-1535 and 1895.
+  - The SCTCA paragraph now covers SCDOT's claim only.
+  - The contractor paragraph cites § 15-78-30(c): no SCTCA deadline or caps on the contractor's
+    own negligence.
+- **Verified live.** JSON-LD guard PASS. Fresh sweep: 0 findings.
+
 ### Law pack: #62 superseded by #67, rebuilt on the signed SC pack — 2026-09-26
 
 **Owner, 2026-09-26:** "what do we need to do with #62? Those are signed", then "yes".

@@ -1,0 +1,41 @@
+[
+  {
+    "id": "WZ-1",
+    "post_id": 4635,
+    "field": "content",
+    "class": "apply",
+    "authority": [
+      "SC 56-5-1535",
+      "SC 56-5-1895"
+    ],
+    "from": "<h2>Enhanced Penalties in South Carolina Work Zones</h2>\n<p>South Carolina law imposes enhanced penalties for traffic violations in active work zones:</p>\n<ul>\n<li>Speeding fines are <strong>doubled</strong> in construction zones when workers are present</li>\n<li>Reckless driving charges may be enhanced</li>\n<li>These enhanced penalties also serve as evidence of the driver's heightened duty of care — violating work zone rules strengthens your negligence case</li>\n</ul",
+    "to": "<h2>Work Zone Laws in South Carolina</h2>\n<p>South Carolina protects highway workers with specific work zone offenses:</p>\n<ul>\n<li><strong>Endangerment of a highway worker</strong> — while workers are present, driving in a lane not designated for traffic through the work zone, or ignoring the work zone's traffic control devices, is an offense carrying mandatory fines of $500 to $1,000, rising to $1,000 to $2,000 if a worker is injured and $2,000 to $5,000 for great bodily injury, plus license points (S.C. Code § 56-5-1535)</li>\n<li><strong>No passing</strong> — drivers may not pass another vehicle in a work zone where work is underway and passing would endanger the workers (S.C. Code § 56-5-1895)</li>\n<li>A driver who broke work zone rules may have been careless, and that evidence can strengthen your negligence case</li>\n</ul>",
+    "note": "Doubled work-zone speeding fines were deleted by 2017 Act No. 81 (§ 56-5-1535 rewritten; § 56-5-1536 repealed). Signed #71."
+  },
+  {
+    "id": "WZ-2",
+    "post_id": 4635,
+    "field": "content",
+    "class": "apply",
+    "authority": [
+      "SC 15-78-30",
+      "SC 15-78-110",
+      "SC 15-78-120"
+    ],
+    "from": "<p>If SCDOT or a government contractor's negligent work zone design caused your crash, claims are governed by the <a href=\"https://www.scstatehouse.gov/code/t15c078.php\" target=\"_blank\" rel=\"noopener\">South Carolina Tort Claims Act</a>. Key requirements:</p",
+    "to": "<p>If SCDOT's negligent work zone design or management caused your crash, the claim against SCDOT is governed by the <a href=\"https://www.scstatehouse.gov/code/t15c078.php\" target=\"_blank\" rel=\"noopener\">South Carolina Tort Claims Act</a>. Key requirements:</p",
+    "note": "The SCTCA does not cover independent contractors (§ 15-78-30(c))."
+  },
+  {
+    "id": "WZ-3",
+    "post_id": 4635,
+    "field": "content",
+    "class": "apply",
+    "authority": [
+      "SC 15-78-30"
+    ],
+    "from": "<p>Private contractors are <strong>not</strong> protected by government immunity — they can be sued directly for negligence.</p",
+    "to": "<p>A private contractor working for SCDOT is <strong>not</strong> covered by the Tort Claims Act (S.C. Code § 15-78-30(c)): it can be sued directly for its own negligence, and the Act's deadline and caps do not apply to that claim.</p>",
+    "note": "Signed #71."
+  }
+]
