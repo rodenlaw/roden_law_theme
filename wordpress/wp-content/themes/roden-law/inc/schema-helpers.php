@@ -383,6 +383,11 @@ function roden_output_schema() {
         roden_schema_sc_pillar( $firm );
         roden_schema_faq_page();
     }
+    // Georgia mirror (template-pillar-ga-statewide.php, P2 2026-09-29).
+    if ( is_page_template( 'templates/template-pillar-ga-statewide.php' ) ) {
+        roden_schema_sc_pillar( $firm, 'GA' );
+        roden_schema_faq_page();
+    }
 
     // BreadcrumbList on all pages except front page and noindex landing pages.
     if ( ! is_front_page() && ! roden_is_noindex_landing() ) {
@@ -2948,11 +2953,15 @@ function roden_schema_sc_statewide( $firm ) {
    BreadcrumbList comes from the standard dispatcher because this template is
    NOT in roden_noindex_page_templates(). */
 
-function roden_schema_sc_pillar( $firm ) {
+function roden_schema_sc_pillar( $firm, $state = 'SC' ) {
     $page_url       = roden_get_canonical_url();
     $practice_label = (string) get_post_meta( get_the_ID(), '_roden_pillar_practice', true );
     $service_type   = $practice_label ? $practice_label . ' Law' : 'Personal Injury Law';
-    $sc_keys        = array( 'charleston', 'north-charleston', 'columbia', 'myrtle-beach' );
+    // $state 'GA' serves the Georgia statewide pillars (same shape, GA offices).
+    $is_ga          = ( 'GA' === $state );
+    $sc_keys        = $is_ga ? array( 'savannah', 'darien' ) : array( 'charleston', 'north-charleston', 'columbia', 'myrtle-beach' );
+    $state_name     = $is_ga ? 'Georgia' : 'South Carolina';
+    $state_path     = $is_ga ? 'georgia' : 'south-carolina';
 
     $service_locations = array();
     foreach ( $sc_keys as $key ) {
@@ -2962,7 +2971,7 @@ function roden_schema_sc_pillar( $firm ) {
         $office              = $firm['offices'][ $key ];
         $service_locations[] = array(
             '@type'     => array( 'LegalService', 'LocalBusiness' ),
-            '@id'       => $firm['url'] . '/locations/south-carolina/' . $key . '/#localbusiness',
+            '@id'       => $firm['url'] . '/locations/' . $state_path . '/' . $key . '/#localbusiness',
             'name'      => $office['name'],
             'address'   => roden_schema_postal_address( $office ),
             'telephone' => $office['phone'],
@@ -2976,12 +2985,12 @@ function roden_schema_sc_pillar( $firm ) {
         '@id'             => $page_url . '#legalservice',
         'name'            => get_the_title() . ' — Roden Law',
         'url'             => $page_url,
-        'description'     => 'Roden Law represents ' . ( $practice_label ? strtolower( $practice_label ) . ' ' : '' ) . 'injury victims throughout South Carolina on a contingency fee — no fees unless we win.',
+        'description'     => 'Roden Law represents ' . ( $practice_label ? strtolower( $practice_label ) . ' ' : '' ) . 'injury victims throughout ' . $state_name . ' on a contingency fee — no fees unless we win.',
         'telephone'       => $firm['vanity_phone'],
         'priceRange'      => '$$',
         'areaServed'      => array(
             '@type' => 'State',
-            'name'  => 'South Carolina',
+            'name'  => $state_name,
         ),
         'serviceType'     => $service_type,
         'serviceLocation' => $service_locations,

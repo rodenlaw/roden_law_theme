@@ -1,9 +1,10 @@
 <?php
 /**
- * Template Name: SC Statewide Pillar (Indexable)
+ * Template Name: GA Statewide Pillar (Indexable)
  *
- * INDEXABLE organic statewide "South Carolina [practice] lawyer" pillar pages
- * (SC competitor gap analysis 2026-06-29, P0-4). Distinct from the noindex PPC
+ * INDEXABLE organic statewide "Georgia [practice] lawyer" pillar pages: the
+ * Georgia mirror of template-pillar-sc-statewide.php (docs/site-architecture
+ * P2, 2026-09-29). Everything below applies as in the SC template. Distinct from the noindex PPC
  * template-landing-sc-statewide.php — this one uses the normal site chrome
  * (get_header/get_footer) so it automatically inherits:
  *   - the real site canonical (<link rel="canonical">, seo-meta.php)
@@ -21,8 +22,8 @@
  *   post_content              html    The pillar body (answer-first H2 sections)
  *   _roden_faqs               array   [ ['question'=>, 'answer'=>], ... ]
  *
- * SC law is pulled from roden_firm_data()['jurisdiction']['SC'] so the SOL cite
- * and 51% comparative-fault rule stay correct and never bleed GA O.C.G.A. law.
+ * GA law is pulled from roden_firm_data()['jurisdiction']['GA'] (2-year SOL, 50%
+ * bar) via roden_statewide_law_callout( 'GA' ); no SC law appears.
  *
  * @package Roden_Law
  */
@@ -34,10 +35,8 @@ if ( ! function_exists( 'roden_breadcrumb_html' ) ) {
 }
 
 $firm   = roden_firm_data();
-$sc_law = $firm['jurisdiction']['SC'];
-
-// SC offices for the statewide coverage strip.
-$sc_office_keys = array( 'charleston', 'north-charleston', 'columbia', 'myrtle-beach' );
+// GA offices for the statewide coverage strip.
+$sc_office_keys = array( 'savannah', 'darien' );
 
 $practice_label = get_post_meta( get_the_ID(), '_roden_pillar_practice', true );
 $key_takeaways  = get_post_meta( get_the_ID(), '_roden_key_takeaways', true );
@@ -85,12 +84,12 @@ get_header();
             endwhile;
             ?>
 
-            <!-- ===== SOUTH CAROLINA LAW CALLOUT (SC-only; practice-aware, see roden_statewide_law_callout()) ===== -->
-            <?php roden_statewide_law_callout( 'SC' ); ?>
+            <!-- ===== GEORGIA LAW CALLOUT (GA-only; practice-aware) ===== -->
+            <?php roden_statewide_law_callout( 'GA' ); ?>
 
-            <!-- ===== 4 OFFICES ACROSS SOUTH CAROLINA ===== -->
+            <!-- ===== GEORGIA OFFICES ===== -->
             <div class="sc-offices-strip">
-                <h2><?php esc_html_e( 'Roden Law Offices Serving All of South Carolina', 'roden-law' ); ?></h2>
+                <h2><?php esc_html_e( 'Roden Law Offices Serving Georgia', 'roden-law' ); ?></h2>
                 <div class="sc-offices-grid">
                     <?php
                     foreach ( $sc_office_keys as $key ) :
@@ -124,11 +123,11 @@ get_header();
                 if ( $practice_label_l ) {
                     printf(
                         /* translators: %s: lowercase practice phrase, e.g. "truck accident". */
-                        esc_html__( 'If you were injured in a South Carolina %s, a Roden Law attorney will review your case at no cost and explain your options. We work on a contingency fee basis — you pay nothing unless we recover for you.', 'roden-law' ),
+                        esc_html__( 'If you were injured in a Georgia %s, a Roden Law attorney will review your case at no cost and explain your options. We work on a contingency fee basis — you pay nothing unless we recover for you.', 'roden-law' ),
                         esc_html( $practice_label_l )
                     );
                 } else {
-                    esc_html_e( 'If you were injured in South Carolina, a Roden Law attorney will review your case at no cost and explain your options. We work on a contingency fee basis — you pay nothing unless we recover for you.', 'roden-law' );
+                    esc_html_e( 'If you were injured in Georgia, a Roden Law attorney will review your case at no cost and explain your options. We work on a contingency fee basis — you pay nothing unless we recover for you.', 'roden-law' );
                 }
                 ?></p>
                 <p><a class="btn btn-primary" href="tel:18447378587"><?php printf( esc_html__( 'Call %s', 'roden-law' ), '1-844-RESULTS' ); ?></a>
