@@ -2223,6 +2223,37 @@ on".
 - **Verified:** live FAQPage JSON-LD parses; no old strings remain. JSON-LD guard PASS. Fresh
   sweep with the new rule: **0 findings**. meta.json regenerated.
 
+### P3 step 1: pillar consolidation — generic sections onto the personal injury pillar — 2026-09-29
+
+**Owner, 2026-09-29:** "Let's go to P3 - consolidate before expanding new resource pages".
+
+- **Measured first** on the 25 live pillars (8-word shingles, as in the scenario-pages plan):
+  - Median template share 37%; closest-sibling overlap 43% (the plan's "~76%" was an
+    estimate); 5 pillars ≥50% shared.
+  - The four generic sections were 84–100% identical: Statute of Limitations, Do I Have a
+    Case (four elements), Types of Compensation and Comparative Fault. With the GA-vs-SC
+    table and the related-guides block, they are about 60% of all shared text.
+- **#200** (`template-practice-area.php`, same treatment as `template-subtype.php` on
+  2026-09-25):
+  - The **personal injury pillar is the canonical explainer** and keeps all four sections.
+  - The other pillars keep the GA/SC comparison table plus one link to it; the Spanish
+    pillars link to the Spanish PI pillar.
+  - Workers' comp keeps its statutory deadline and no-fault sections, and drops the
+    four-elements and pain-and-suffering sections, which never applied to it.
+  - No URL changes; reversible.
+- **Legal (same PR):** "There is no cap on compensatory damages" on the PI pillar and the
+  office-page compensation section was wrong for med mal (§ 15-32-220), government and charity
+  claims. It now reads "generally not capped in an ordinary injury case, although …".
+  4 msgids added; .mo 636.
+- **Measured after, live:** template share **28%**, closest sibling **35%**, pillars ≥50%
+  shared **1**, median words 3,256 → 2,780. Matches the simulation (27% / 33% / 1).
+- **Housekeeping:** the push first failed with 403 because gh was left on the Blue Sky account
+  after an internal-ai-scripts merge. Switch back to rodenlaw after every toolkit PR.
+
+**Next (P3 step 2):** the remaining shared text is the generated Key Takeaways (90% identical)
+and the chrome blocks. Writing real takeaways per pillar would cut it further before new
+resource pages.
+
 ### Law pack: #62 superseded by #67, rebuilt on the signed SC pack — 2026-09-26
 
 **Owner, 2026-09-26:** "what do we need to do with #62? Those are signed", then "yes".
