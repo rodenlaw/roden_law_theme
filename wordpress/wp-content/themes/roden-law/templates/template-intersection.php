@@ -604,7 +604,7 @@ if ( count( $sibling_urls ) >= 2 ) :
             <?php else : ?>
             <div class="content-section pa-compensation" data-ai-extractable="true">
                 <h2><?php printf( /* translators: 1: state name; 2: practice area noun, e.g. "Car Accident". */ esc_html__( 'Types of Compensation in %1$s %2$s Cases', 'roden-law' ), esc_html( $office['state_full'] ), esc_html( $accident_label_display ) ); ?></h2>
-                <p class="section-lead"><?php printf( /* translators: 1: lowercase accident type; 2: state name. */ esc_html__( 'Victims of %1$s injuries in %2$s can pursue two categories of damages: economic damages (quantifiable financial losses) and non-economic damages (quality-of-life impacts). There is no cap on compensatory damages in %2$s.', 'roden-law' ), esc_html( $accident_label_clean ), esc_html( $office['state_full'] ) ); ?></p>
+                <p class="section-lead"><?php printf( /* translators: 1: lowercase accident type; 2: state name. */ esc_html__( 'Victims of %1$s injuries in %2$s can pursue two categories of damages: economic damages (quantifiable financial losses) and non-economic damages (quality-of-life impacts). Compensatory damages are generally not capped in an ordinary %2$s injury case, although claims against government entities, charitable organizations and medical providers carry statutory limits.', 'roden-law' ), esc_html( $accident_label_clean ), esc_html( $office['state_full'] ) ); ?></p>
                 <div class="pa-compensation__grid">
                     <div class="pa-compensation__col">
                         <h3><?php esc_html_e( 'Economic Damages', 'roden-law' ); ?></h3>

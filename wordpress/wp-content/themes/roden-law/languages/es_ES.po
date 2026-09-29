@@ -4096,3 +4096,20 @@ msgstr "Si perdió a un ser querido en %1$s por la negligencia de otra persona, 
 #, php-format
 msgid "%1$s generally gives families %2$s years to file a wrongful death lawsuit."
 msgstr "%1$s generalmente les da a las familias %2$s años para presentar una demanda por muerte injusta."
+
+#, php-format
+msgid "Victims of %s injuries in Georgia and South Carolina can pursue two categories of damages: economic damages (quantifiable financial losses) and non-economic damages (quality-of-life impacts). Compensatory damages are generally not capped in an ordinary injury case in either state, although claims against government entities, charitable organizations and medical providers carry statutory limits."
+msgstr "Las víctimas de lesiones por %s en Georgia y Carolina del Sur pueden buscar dos categorías de daños: daños económicos (pérdidas financieras cuantificables) y daños no económicos (impactos en la calidad de vida). En un caso ordinario de lesiones, los daños compensatorios generalmente no tienen límite en ninguno de los dos estados, aunque los reclamos contra entidades del gobierno, organizaciones benéficas y proveedores médicos tienen límites establecidos por ley."
+
+#. translators: 1: lowercase accident type; 2: state name.
+#, php-format
+msgid "Victims of %1$s injuries in %2$s can pursue two categories of damages: economic damages (quantifiable financial losses) and non-economic damages (quality-of-life impacts). Compensatory damages are generally not capped in an ordinary %2$s injury case, although claims against government entities, charitable organizations and medical providers carry statutory limits."
+msgstr "Las víctimas de lesiones por %1$s en %2$s pueden buscar dos categorías de daños: daños económicos (pérdidas financieras cuantificables) y daños no económicos (impactos en la calidad de vida). En un caso ordinario de lesiones en %2$s, los daños compensatorios generalmente no tienen límite, aunque los reclamos contra entidades del gobierno, organizaciones benéficas y proveedores médicos tienen límites establecidos por ley."
+
+#. translators: %s: link to the personal injury pillar.
+#, php-format
+msgid "How an injury claim works in Georgia and South Carolina — the four elements of negligence, the damages you can recover, filing deadlines and comparative fault — is explained in full on our %s page."
+msgstr "Cómo funciona un reclamo por lesiones en Georgia y Carolina del Sur —los cuatro elementos de la negligencia, los daños que puede recuperar, los plazos para presentar la demanda y la culpa comparativa— se explica en detalle en nuestra página de %s."
+
+msgid "personal injury lawyers"
+msgstr "abogados de lesiones personales"
