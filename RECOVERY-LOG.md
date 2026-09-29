@@ -2117,6 +2117,31 @@ unfinished P0 items (`docs/site-architecture`, from `evidence/retired-with-impre
   - `/wp-sitemap.xml` 301s to a trailing-slash version, a pre-existing quirk that crawlers
     follow.
 
+### P2 step 1: office hubs retitled to the head term — 2026-09-29
+
+**Owner, 2026-09-29:** "start P2".
+
+- **Evidence** (`evidence/query-clusters.csv`, generic PI, 16 months):
+  - Charleston: 264,949 impressions and 31 clicks. The last 30 days split between the homepage
+    (44%) and the hub (40%), at position 17.2.
+  - Savannah: 199,570 impressions and 8 clicks, at 24.5.
+  - Columbia: 23,376 at 25.1. North Charleston: 46,584 at 16.1. Darien: 23,445 (65% to the
+    Brunswick sub-page). Myrtle Beach: 21,038 at 31.4.
+- **`bin/retitle-office-hubs.php`:** `_roden_meta_title` on the 6 English hubs, now "[City]
+  Personal Injury Lawyer | Roden Law" ("Columbia, SC", "Darien, GA"). The old auto-titles led
+  with the place ("Charleston, SC – South Carolina Personal Injury Lawyers – Roden Law"). The
+  H1 and post_title are unchanged. Verified live. Backup:
+  `docs/backups/office-hub-titles-2026-09-29.json`.
+- **Grids:** already live (Charleston 6, Savannah 3, Columbia 1, North Charleston 1), fed by
+  the allowlist.
+- **Homepage:** two-state title, H1 and description, and no Charleston targeting beyond the
+  office list. No de-dup edit.
+- **hreflang:** the EN/ES Charleston hubs are reciprocal, x-default is EN, both are
+  self-canonical, and the ES page is fully Spanish. No defect. The 42% ES share on North
+  Charleston queries predates the ES hub retirement.
+
+**Measure:** re-pull the Charleston and Savannah PI clusters in 4–6 weeks.
+
 ### Law pack: #62 superseded by #67, rebuilt on the signed SC pack — 2026-09-26
 
 **Owner, 2026-09-26:** "what do we need to do with #62? Those are signed", then "yes".
