@@ -47,8 +47,8 @@ function roden_add_meta_boxes() {
         'side'
     );
 
-    // 'page' is included so the indexable SC statewide pillar pages
-    // (template-pillar-sc-statewide.php) keep editable Key Takeaways + FAQs.
+    // 'page' is included so the indexable SC and GA statewide pillar pages
+    // (template-pillar-{sc,ga}-statewide.php) keep editable Key Takeaways + FAQs.
     add_meta_box(
         'roden_key_takeaways',
         __( 'Key Takeaways (AI Summary)', 'roden-law' ),
