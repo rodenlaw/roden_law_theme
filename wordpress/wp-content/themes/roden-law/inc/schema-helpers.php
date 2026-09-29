@@ -2985,7 +2985,8 @@ function roden_schema_sc_pillar( $firm, $state = 'SC' ) {
         '@id'             => $page_url . '#legalservice',
         'name'            => get_the_title() . ' — Roden Law',
         'url'             => $page_url,
-        'description'     => 'Roden Law represents ' . ( $practice_label ? strtolower( $practice_label ) . ' ' : '' ) . 'injury victims throughout ' . $state_name . ' on a contingency fee — no fees unless we win.',
+        // "personal injury injury victims" / "car accident injury victims" (GA sweep, 2026-09-29).
+        'description'     => 'Roden Law represents ' . ( false !== stripos( $practice_label, 'workers' ) ? 'injured workers' : ( ( ! $practice_label || false !== stripos( $practice_label, 'personal injury' ) ) ? 'injury victims' : ( false !== stripos( $practice_label, 'wrongful death' ) ? 'families who lost a loved one' : strtolower( $practice_label ) . ' victims' ) ) ) . ' throughout ' . $state_name . ' on a contingency fee — no fees unless we win.',
         'telephone'       => $firm['vanity_phone'],
         'priceRange'      => '$$',
         'areaServed'      => array(

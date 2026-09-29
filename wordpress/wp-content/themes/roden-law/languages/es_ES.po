@@ -4091,3 +4091,8 @@ msgstr "Modificada — no hay indemnización si la persona fallecida tenía más
 #, php-format
 msgid "If you lost a loved one in %1$s because of someone else’s negligence, contact us for a free, confidential review. Call %2$s — no upfront cost."
 msgstr "Si perdió a un ser querido en %1$s por la negligencia de otra persona, contáctenos para una revisión gratuita y confidencial. Llame al %2$s — sin costo inicial."
+
+#. translators: 1: state name; 2: number of years.
+#, php-format
+msgid "%1$s generally gives families %2$s years to file a wrongful death lawsuit."
+msgstr "%1$s generalmente les da a las familias %2$s años para presentar una demanda por muerte injusta."
