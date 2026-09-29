@@ -266,6 +266,22 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
             $pa_sol_sc = roden_resolve_statute( 'SC' );
             $pa_is_statutory = ( $pa_sol_ga && $pa_sol_ga['is_override'] ) || ( $pa_sol_sc && $pa_sol_sc['is_override'] );
 
+            /*
+             * P3 consolidation (docs/site-architecture, 2026-09-29). The deadline,
+             * four-elements, compensation and comparative-fault sections were the
+             * same text on every pillar (84–100% identical across the 24; median
+             * closest-sibling overlap 43%). The personal injury pillar is their
+             * canonical home and keeps them; the other pillars keep the GA/SC
+             * comparison table plus a link. Workers' comp keeps its own statutory
+             * deadline and no-fault sections, and loses the tort ones (negligence,
+             * pain-and-suffering damages), which never applied to it. Simulated on
+             * the rendered pillars: template share 38% -> 27%, closest sibling
+             * 43% -> 33%. Same treatment as template-subtype.php (2026-09-25).
+             */
+            $pa_slug_bare   = preg_replace( '/^es-/', '', (string) get_post_field( 'post_name', get_the_ID() ) );
+            $pa_is_canonical = ( 'personal-injury-lawyers' === $pa_slug_bare );
+            $pa_full_generic = $pa_is_canonical;
+
             $pa_sol_years = function ( $s ) {
                 return sprintf(
                     /* translators: %s: number of years. */
@@ -274,7 +290,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                 );
             };
             ?>
-            <?php if ( $sol_ga || $sol_sc ) : ?>
+            <?php if ( ( $sol_ga || $sol_sc ) && ( $pa_full_generic || $pa_is_statutory ) ) : ?>
                 <div class="content-section" id="pa-deadlines" data-ai-extractable="true">
                     <h2><?php
                     printf(
@@ -337,9 +353,22 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                  ═══════════════════════════════════════════════════════════ -->
             <?php roden_jurisdiction_comparison_table( get_the_title(), $sol_ga, $sol_sc, $jurisdiction ); ?>
 
+            <?php if ( ! $pa_full_generic && ! $pa_is_statutory ) :
+                $pa_pi = get_page_by_path( ( 0 === strpos( (string) get_post_field( 'post_name', get_the_ID() ), 'es-' ) ? 'es-' : '' ) . 'personal-injury-lawyers', OBJECT, 'practice_area' );
+                if ( $pa_pi && 'publish' === $pa_pi->post_status ) : ?>
+                <p class="pa-canonical-link"><?php
+                printf(
+                    /* translators: %s: link to the personal injury pillar. */
+                    wp_kses_post( __( 'How an injury claim works in Georgia and South Carolina — the four elements of negligence, the damages you can recover, filing deadlines and comparative fault — is explained in full on our %s page.', 'roden-law' ) ),
+                    '<a href="' . esc_url( get_permalink( $pa_pi ) ) . '#pa-your-case">' . esc_html__( 'personal injury lawyers', 'roden-law' ) . '</a>'
+                );
+                ?></p>
+            <?php endif; endif; ?>
+
             <!-- ═══════════════════════════════════════════════════════════
                  SECTION 8: DO I HAVE A CASE? (4 Elements of Negligence)
                  ═══════════════════════════════════════════════════════════ -->
+            <?php if ( $pa_full_generic ) : ?>
             <div class="content-section pa-elements-section" id="pa-your-case" data-ai-extractable="true">
                 <h2><?php printf( /* translators: %s: practice area title. */ esc_html__( 'Do I Have a %s Case?', 'roden-law' ), esc_html( roden_pa_noun() ) ); ?></h2>
                 <p><?php esc_html_e( 'To win a personal injury case in Georgia or South Carolina, your attorney must prove the four elements of negligence. Each element must be established by a preponderance of the evidence for you to recover compensation.', 'roden-law' ); ?></p>
@@ -379,12 +408,15 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                 </div>
             </div>
 
+            <?php endif; // $pa_full_generic: four elements ?>
+
             <!-- ═══════════════════════════════════════════════════════════
                  SECTION 9: COMPENSATION TYPES
                  ═══════════════════════════════════════════════════════════ -->
+            <?php if ( $pa_full_generic ) : ?>
             <div class="content-section pa-compensation" id="pa-compensation" data-ai-extractable="true">
                 <h2><?php printf( /* translators: %s: practice area title. */ esc_html__( 'Types of Compensation in %s Cases', 'roden-law' ), esc_html( roden_pa_noun() ) ); ?></h2>
-                <p class="section-lead"><?php printf( /* translators: %s: lowercase accident type, e.g. "car accident". */ esc_html__( 'Victims of %s injuries in Georgia and South Carolina can pursue two categories of damages: economic damages (quantifiable financial losses) and non-economic damages (quality-of-life impacts). There is no cap on compensatory damages in either state.', 'roden-law' ), esc_html( strtolower( preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', get_the_title() ) ) ) ); ?></p>
+                <p class="section-lead"><?php printf( /* translators: %s: lowercase accident type, e.g. "car accident". */ esc_html__( 'Victims of %s injuries in Georgia and South Carolina can pursue two categories of damages: economic damages (quantifiable financial losses) and non-economic damages (quality-of-life impacts). Compensatory damages are generally not capped in an ordinary injury case in either state, although claims against government entities, charitable organizations and medical providers carry statutory limits.', 'roden-law' ), esc_html( strtolower( preg_replace( '/\s+(Lawyers?|Attorneys?)$/i', '', get_the_title() ) ) ) ); ?></p>
                 <div class="pa-compensation__grid">
                     <div class="pa-compensation__col">
                         <h3><?php esc_html_e( 'Economic Damages', 'roden-law' ); ?></h3>
@@ -413,6 +445,8 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                 </div>
             </div>
 
+            <?php endif; // $pa_full_generic: compensation ?>
+
             <!-- ═══════════════════════════════════════════════════════════
                  SECTION 10: COMPARATIVE FAULT (GA vs SC)
                  Comparative fault has no application in a no-fault statutory
@@ -432,7 +466,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                 <p><?php esc_html_e( 'Workers\' compensation is a no-fault system. Carelessness on your part does not reduce your benefits and does not bar the claim — you do not have to prove anyone was negligent, and your employer does not get to argue you were. Benefits can be denied in narrow circumstances, such as an injury caused by intoxication or by a wilful attempt to injure yourself or someone else, but ordinary mistakes on the job are not among them.', 'roden-law' ); ?></p>
                 <p><?php esc_html_e( 'Fault does matter in one place: a third-party claim against someone other than your employer. There, the ordinary comparative-fault rules apply and your share of responsibility can reduce what you recover — another reason to have those claims evaluated early.', 'roden-law' ); ?></p>
             </div>
-            <?php else : ?>
+            <?php elseif ( $pa_full_generic ) : ?>
             <div class="content-section pa-fault" data-ai-extractable="true">
                 <h2><?php printf( /* translators: %s: practice area title. */ esc_html__( 'Comparative Fault in %s Cases — What If I\'m Partially At Fault?', 'roden-law' ), esc_html( roden_pa_noun() ) ); ?></h2>
                 <div class="pa-fault__grid">
