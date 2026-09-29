@@ -3935,18 +3935,23 @@ function roden_statewide_law_callout( $state_key ) {
                 <h3><?php esc_html_e( 'Filing Deadline (Statute of Limitations)', 'roden-law' ); ?></h3>
                 <p class="law-value"><?php printf( /* translators: %s: number of years. */ esc_html__( '%s years', 'roden-law' ), esc_html( $law['statute_years'] ) ); ?></p>
                 <p><?php
-                if ( $is_sc ) {
+                if ( $is_wd ) {
+                    // A wrongful-death page speaks to a family, not an injured person
+                    // (GA statewide sweep 2026-09-29, W2; same on the SC page).
+                    printf( /* translators: 1: state name; 2: number of years. */ esc_html__( '%1$s generally gives families %2$s years to file a wrongful death lawsuit.', 'roden-law' ), esc_html( $is_sc ? __( 'South Carolina', 'roden-law' ) : __( 'Georgia', 'roden-law' ) ), esc_html( $law['statute_years'] ) );
+                } elseif ( $is_sc ) {
                     printf( /* translators: %s: number of years. */ esc_html__( 'South Carolina generally gives injured people %s years from the date of injury to file a personal injury lawsuit. Some claims — especially those against a government entity under the South Carolina Tort Claims Act — have shorter deadlines.', 'roden-law' ), esc_html( $law['statute_years'] ) );
                 } else {
                     printf( /* translators: %s: number of years. */ esc_html__( 'Georgia generally gives injured people %s years from the date of injury to file a personal injury lawsuit. A claim against a city requires written notice within six months, and against a county or the State within twelve months.', 'roden-law' ), esc_html( $law['statute_years'] ) );
                 }
                 ?></p>
-                <p class="cite"><?php echo esc_html( $is_sc ? $law['statute_cite'] : $law['statute_cite'] . '; O.C.G.A. §§ 36-33-5, 36-11-1, 50-21-26' ); ?></p>
+                <p class="cite"><?php echo esc_html( ( $is_sc || $is_wd ) ? $law['statute_cite'] : $law['statute_cite'] . '; O.C.G.A. §§ 36-33-5, 36-11-1, 50-21-26' ); ?></p>
             </div>
             <div class="sc-law-card">
                 <h3><?php esc_html_e( 'Modified Comparative Negligence', 'roden-law' ); ?></h3>
                 <?php if ( $is_wd ) : ?>
                     <p><?php echo esc_html( $is_sc ? __( 'Modified — no recovery if the person who died was more than 50% at fault', 'roden-law' ) : __( 'Modified — no recovery if the person who died was 50% or more at fault', 'roden-law' ) ); ?></p>
+                    <?php if ( ! empty( $law['comp_fault_cite'] ) ) : ?><p class="cite"><?php echo esc_html( $law['comp_fault_cite'] ); ?></p><?php endif; ?>
                 <?php elseif ( $is_sc ) : ?>
                     <p class="law-value"><?php esc_html_e( '51% bar', 'roden-law' ); ?></p>
                     <p><?php esc_html_e( "Under South Carolina's modified comparative negligence rule, you can still recover compensation as long as you were less than 51% at fault. Your award is reduced by your share of fault — insurers often try to inflate it, and our attorneys push back.", 'roden-law' ); ?></p>
@@ -3958,6 +3963,7 @@ function roden_statewide_law_callout( $state_key ) {
             </div>
         <?php endif; ?>
         </div>
+        <?php if ( ! $is_wc ) : // The SOL / comparative-fault resources don't apply to a no-fault claim. ?>
         <p class="sc-law-links">
             <?php esc_html_e( 'Learn more:', 'roden-law' ); ?>
             <?php if ( $is_sc ) : ?>
@@ -3967,6 +3973,7 @@ function roden_statewide_law_callout( $state_key ) {
             <a href="<?php echo esc_url( roden_lang_home_url( null, '/resources/georgia-statute-of-limitations/' ) ); ?>"><?php esc_html_e( 'Georgia statute of limitations', 'roden-law' ); ?></a>
             <?php endif; ?>
         </p>
+        <?php endif; ?>
     </div>
     <?php
 }
