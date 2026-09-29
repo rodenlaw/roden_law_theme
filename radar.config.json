@@ -23,6 +23,8 @@
       "city": "Savannah",
       "state": "GA",
       "placeId": "ChIJITbCLWSe-4gRMCR5SgvdFxk",
+      "lat": 32.0045652,
+      "lng": -81.106827,
       "highways": [
         "I-95",
         "I-16",
@@ -54,6 +56,8 @@
       "city": "Darien",
       "state": "GA",
       "placeId": "ChIJXQbDRmsr-4gRjV1Mk7Zh4-k",
+      "lat": 31.379062,
+      "lng": -81.4331056,
       "highways": [
         "I-95",
         "US-17"
@@ -78,6 +82,8 @@
       "city": "Charleston",
       "state": "SC",
       "placeId": "ChIJkx4ENNF7_ogRd1O08AhaJSw",
+      "lat": 32.7771216,
+      "lng": -79.9329881,
       "highways": [
         "I-26",
         "I-526",
@@ -105,6 +111,8 @@
       "city": "North Charleston",
       "state": "SC",
       "placeId": "ChIJS2CVHEh7_ogRIEA4SfdJ3A8",
+      "lat": 32.8472886,
+      "lng": -79.961344,
       "highways": [
         "I-26",
         "I-526",
@@ -132,6 +140,8 @@
       "city": "Columbia",
       "state": "SC",
       "placeId": "ChIJQZdkRQCl-IgRVi202Pu6b1I",
+      "lat": 34.0067784,
+      "lng": -81.0344974,
       "highways": [
         "I-20",
         "I-26",
@@ -159,6 +169,8 @@
       "city": "Myrtle Beach",
       "state": "SC",
       "placeId": "ChIJXV6kZKE5AIkRS6GJSoJ0xAA",
+      "lat": 33.5550351,
+      "lng": -79.0424645,
       "highways": [
         "US-17",
         "SC-31",
