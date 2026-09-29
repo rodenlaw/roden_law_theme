@@ -1320,7 +1320,8 @@ function roden_phase1_removed_urls() {
         roden_zero_click_scenario_urls(),
         roden_dead_geo_post_urls(),
         roden_dead_es_hub_urls(),
-        roden_gbp_landing_urls()
+        roden_gbp_landing_urls(),
+        roden_p0_hygiene_urls()
     );
 }
 
@@ -2182,6 +2183,26 @@ function roden_dead_es_hub_urls() {
 function roden_gbp_landing_urls() {
     return array(
         '/brunswick/personal-injury-lawyer/' => '/locations/georgia/darien/',
+    );
+}
+
+/**
+ * P0 hygiene (docs/site-architecture, phase P0), 2026-09-29. Owner: "move on to
+ * the next step". URLs that 404 with GSC impressions go to the live page that
+ * replaced them; the duplicate privacy page goes to the real one. Blog
+ * pagination past the last page (/blog/page/42/ and up) is left to 404.
+ */
+function roden_p0_hygiene_urls() {
+    return array(
+        '/privacy-policy-2/'                                => '/privacy-policy/',
+        '/blog/independent-medical-examination/'            => '/blog/independent-medical-exams/',
+        '/blog/rollover-crashes-and-what-they-do-to-body/'  => '/blog/rollover-crashes-and-what-they-do-to-your-body/',
+        '/resources/south-carolina-laws/'                   => '/resources/south-carolina-personal-injury-faq/',
+        '/columbia-sc/columbia-sc/'                         => '/locations/south-carolina/columbia/',
+        '/darien-ga/'                                       => '/locations/georgia/darien/',
+        // A typo slug that fell through to the Columbia car page.
+        '/practice-areas/premisesliability-lawyers/columbia-sc/' => '/practice-areas/premises-liability-lawyers/',
+        '/practice-areas/premisesliability-lawyers/'        => '/practice-areas/premises-liability-lawyers/',
     );
 }
 

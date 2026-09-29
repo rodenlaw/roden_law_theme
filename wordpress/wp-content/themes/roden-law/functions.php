@@ -541,6 +541,61 @@ function roden_thankyou_noindex( $robots ) {
     return $robots;
 }
 
+/*
+ * P0 hygiene, 2026-09-29: pages that were already kept out of the sitemap but
+ * stayed indexable, so GSC kept showing them (53 live non-sitemap URLs in
+ * docs/site-architecture/evidence/retired-with-impressions.csv). noindex,follow
+ * keeps their links crawlable. Archive hubs are listed in the 'hubs' sitemap
+ * below instead.
+ */
+add_filter( 'wp_robots', 'roden_p0_hygiene_noindex' );
+function roden_p0_hygiene_noindex( $robots ) {
+    // Tags, taxonomies, search, author and date archives already get noindex
+    // from roden_output_noindex_pages() (inc/seo-meta.php).
+    $thin = is_category()
+        || ( ( is_home() || is_post_type_archive() || is_archive() ) && is_paged() )
+        || is_singular( 'testimonial' )
+        || is_page( array( 'test', 'free-consultation-with-charleston-personal-injury-lawyer', 'savannah-ppi-attorney' ) );
+    if ( $thin ) {
+        $robots['noindex'] = true;
+        $robots['follow']  = true;
+        unset( $robots['index'] );
+    }
+    return $robots;
+}
+
+/*
+ * Archive hubs that earn clicks but were in no sitemap (/attorneys/ 259 clicks
+ * in 16 months, /locations/, /practice-areas/, /resources/). Provider name
+ * must be plain [a-z]+ (see roden_register_es_sitemap_provider()).
+ */
+add_action( 'wp_sitemaps_init', 'roden_register_hubs_sitemap_provider' );
+function roden_register_hubs_sitemap_provider( $sitemaps ) {
+    if ( ! class_exists( 'WP_Sitemaps_Provider' ) ) {
+        return;
+    }
+    $provider = new class() extends WP_Sitemaps_Provider {
+        public function __construct() {
+            $this->name        = 'hubs';
+            $this->object_type = 'hubs';
+        }
+        public function get_url_list( $page_num, $object_subtype = '' ) {
+            if ( $page_num > 1 ) {
+                return array();
+            }
+            $out = array();
+            foreach ( array( '/attorneys/', '/practice-areas/', '/locations/', '/resources/' ) as $path ) {
+                $out[] = array( 'loc' => home_url( $path ) );
+            }
+            return $out;
+        }
+        public function get_max_num_pages( $object_subtype = '' ) {
+            return 1;
+        }
+    };
+    $sitemaps->registry->add_provider( 'hubs', $provider );
+}
+
 /* ==========================================================================
    7b. ROBOTS.TXT — Remove Crawl-delay + welcome AI crawlers
    ========================================================================== */
