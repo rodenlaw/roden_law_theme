@@ -1,0 +1,206 @@
+[
+  {
+    "id": "GA-D1a",
+    "post_id": 1668,
+    "field": "content",
+    "from": "within <strong>2 years</strong> of the date the injury occurred or was discovered (O.C.G.A. § 9-3-71)",
+    "to": "within <strong>2 years</strong> of the date the injury occurred (O.C.G.A. § 9-3-71)",
+    "class": "apply",
+    "authority": [
+      "GA 9-3-71"
+    ],
+    "note": "§ 9-3-71(a) runs from the date the injury occurred; no general discovery rule (GA pack corrected in internal-ai-scripts #73). § 9-3-33 per the signed pack claim."
+  },
+  {
+    "id": "GA-D1b",
+    "post_id": 1668,
+    "field": "faq1",
+    "from": "within 2 years of the date the injury occurred or was discovered (O.C.G.A. § 9-3-71)",
+    "to": "within 2 years of the date the injury occurred (O.C.G.A. § 9-3-71)",
+    "class": "apply",
+    "authority": [
+      "GA 9-3-71"
+    ],
+    "note": "§ 9-3-71(a) runs from the date the injury occurred; no general discovery rule (GA pack corrected in internal-ai-scripts #73). § 9-3-33 per the signed pack claim."
+  },
+  {
+    "id": "GA-D2a",
+    "post_id": 1696,
+    "field": "content",
+    "from": "<td>Discovery rule</td>\n<td>2 years from discovery of injury</td>",
+    "to": "<td>Discovery rule</td>\n<td>None for most claims (only a foreign object left in the body; see below)</td>",
+    "class": "apply",
+    "authority": [
+      "GA 9-3-71"
+    ],
+    "note": "§ 9-3-71(a) runs from the date the injury occurred; no general discovery rule (GA pack corrected in internal-ai-scripts #73). § 9-3-33 per the signed pack claim."
+  },
+  {
+    "id": "GA-D2b",
+    "post_id": 1696,
+    "field": "faq2",
+    "from": "(O.C.G.A. § 9-3-71) from the date of the negligent act, with a discovery rule that can extend this to two years from when the injury was or should have been discovered.",
+    "to": "(O.C.G.A. § 9-3-71) from the date the injury occurred. There is no general discovery rule: only a foreign object left in the body gets one year from discovery (O.C.G.A. § 9-3-72).",
+    "class": "apply",
+    "authority": [
+      "GA 9-3-71"
+    ],
+    "note": "§ 9-3-71(a) runs from the date the injury occurred; no general discovery rule (GA pack corrected in internal-ai-scripts #73). § 9-3-33 per the signed pack claim."
+  },
+  {
+    "id": "GA-D3",
+    "post_id": 1798,
+    "field": "faq4",
+    "from": "the date the injury occurred or was discovered (O.C.G.A. § 9-3-71). A statute",
+    "to": "the date the injury occurred (O.C.G.A. § 9-3-71). A statute",
+    "class": "apply",
+    "authority": [
+      "GA 9-3-71"
+    ],
+    "note": "§ 9-3-71(a) runs from the date the injury occurred; no general discovery rule (GA pack corrected in internal-ai-scripts #73). § 9-3-33 per the signed pack claim."
+  },
+  {
+    "id": "GA-D4",
+    "post_id": 1857,
+    "field": "faq4",
+    "from": "the date the injury occurred or was discovered (O.C.G.A. § 9-3-71), with",
+    "to": "the date the injury occurred (O.C.G.A. § 9-3-71), with",
+    "class": "apply",
+    "authority": [
+      "GA 9-3-71"
+    ],
+    "note": "§ 9-3-71(a) runs from the date the injury occurred; no general discovery rule (GA pack corrected in internal-ai-scripts #73). § 9-3-33 per the signed pack claim."
+  },
+  {
+    "id": "GA-D5",
+    "post_id": 3595,
+    "field": "faq0",
+    "from": "medical malpractice claims follow a discovery rule with a 5-year statute of repose under O.C.G.A. § 9-3-71.",
+    "to": "medical malpractice claims generally must be filed within 2 years of the date the injury occurred, with a 5-year statute of repose, under O.C.G.A. § 9-3-71.",
+    "class": "apply",
+    "authority": [
+      "GA 9-3-71"
+    ],
+    "note": "§ 9-3-71(a) runs from the date the injury occurred; no general discovery rule (GA pack corrected in internal-ai-scripts #73). § 9-3-33 per the signed pack claim."
+  },
+  {
+    "id": "GA-D6",
+    "post_id": 4193,
+    "field": "faq4",
+    "from": "This is in addition to the 2-year statute of limitations that begins when the injury is or should have been discovered.",
+    "to": "This is in addition to the 2-year statute of limitations, which runs from the date the injury occurred.",
+    "class": "apply",
+    "authority": [
+      "GA 9-3-71"
+    ],
+    "note": "§ 9-3-71(a) runs from the date the injury occurred; no general discovery rule (GA pack corrected in internal-ai-scripts #73). § 9-3-33 per the signed pack claim."
+  },
+  {
+    "id": "GA-D7",
+    "post_id": 4196,
+    "field": "faq4",
+    "from": "In Georgia, the statute of limitations is 2 years from the date of injury or discovery, with",
+    "to": "In Georgia, the statute of limitations is generally 2 years from the date of injury, with",
+    "class": "apply",
+    "authority": [
+      "GA 9-3-71"
+    ],
+    "note": "§ 9-3-71(a) runs from the date the injury occurred; no general discovery rule (GA pack corrected in internal-ai-scripts #73). § 9-3-33 per the signed pack claim."
+  },
+  {
+    "id": "GA-D8",
+    "post_id": 4197,
+    "field": "faq4",
+    "from": "In Georgia, the statute of limitations is 2 years from injury or discovery, with",
+    "to": "In Georgia, the statute of limitations is generally 2 years from the date of injury, with",
+    "class": "apply",
+    "authority": [
+      "GA 9-3-71"
+    ],
+    "note": "§ 9-3-71(a) runs from the date the injury occurred; no general discovery rule (GA pack corrected in internal-ai-scripts #73). § 9-3-33 per the signed pack claim."
+  },
+  {
+    "id": "GA-D9",
+    "post_id": 4199,
+    "field": "faq4",
+    "from": "In Georgia, the statute of limitations is 2 years from the date of injury or discovery, with",
+    "to": "In Georgia, the statute of limitations is generally 2 years from the date of injury, with",
+    "class": "apply",
+    "authority": [
+      "GA 9-3-71"
+    ],
+    "note": "§ 9-3-71(a) runs from the date the injury occurred; no general discovery rule (GA pack corrected in internal-ai-scripts #73). § 9-3-33 per the signed pack claim."
+  },
+  {
+    "id": "GA-D10",
+    "post_id": 4198,
+    "field": "faq4",
+    "from": "In Georgia, the statute of limitations is 2 years from discovery, with",
+    "to": "In Georgia, the statute of limitations is generally 2 years from the date of injury, with",
+    "class": "apply",
+    "authority": [
+      "GA 9-3-71"
+    ],
+    "note": "§ 9-3-71(a) runs from the date the injury occurred; no general discovery rule (GA pack corrected in internal-ai-scripts #73). § 9-3-33 per the signed pack claim."
+  },
+  {
+    "id": "GA-D11",
+    "post_id": 4194,
+    "field": "faq4",
+    "from": "In Georgia, the statute of limitations is 2 years from discovery, with",
+    "to": "In Georgia, the statute of limitations is generally 2 years from the date of injury, with",
+    "class": "apply",
+    "authority": [
+      "GA 9-3-71"
+    ],
+    "note": "§ 9-3-71(a) runs from the date the injury occurred; no general discovery rule (GA pack corrected in internal-ai-scripts #73). § 9-3-33 per the signed pack claim."
+  },
+  {
+    "id": "GA-D12",
+    "post_id": 4164,
+    "field": "faq4",
+    "from": "Georgia allows 2 years from the date of injury or discovery (O.C.G.A. § 9-3-33)",
+    "to": "Georgia generally allows 2 years from the date of injury (O.C.G.A. § 9-3-33)",
+    "class": "apply",
+    "authority": [
+      "GA 9-3-33"
+    ],
+    "note": "§ 9-3-71(a) runs from the date the injury occurred; no general discovery rule (GA pack corrected in internal-ai-scripts #73). § 9-3-33 per the signed pack claim."
+  },
+  {
+    "id": "GA-D13a",
+    "post_id": 4133,
+    "field": "content",
+    "from": "Georgia's statute of limitations is <strong>2 years</strong> from discovery of the injury (",
+    "to": "Georgia's statute of limitations is generally <strong>2 years</strong> from the date of injury (",
+    "class": "apply",
+    "authority": [
+      "GA 9-3-33"
+    ],
+    "note": "§ 9-3-71(a) runs from the date the injury occurred; no general discovery rule (GA pack corrected in internal-ai-scripts #73). § 9-3-33 per the signed pack claim."
+  },
+  {
+    "id": "GA-D13b",
+    "post_id": 4133,
+    "field": "faq4",
+    "from": "Georgia allows 2 years from discovery of the injury (O.C.G.A. § 9-3-33)",
+    "to": "Georgia generally allows 2 years from the date of injury (O.C.G.A. § 9-3-33)",
+    "class": "apply",
+    "authority": [
+      "GA 9-3-33"
+    ],
+    "note": "§ 9-3-71(a) runs from the date the injury occurred; no general discovery rule (GA pack corrected in internal-ai-scripts #73). § 9-3-33 per the signed pack claim."
+  },
+  {
+    "id": "GA-D14b",
+    "post_id": 4132,
+    "field": "faq4",
+    "from": "Georgia allows 2 years from discovery of the injury (O.C.G.A. § 9-3-33)",
+    "to": "Georgia generally allows 2 years from the date of injury (O.C.G.A. § 9-3-33)",
+    "class": "apply",
+    "authority": [
+      "GA 9-3-33"
+    ],
+    "note": "§ 9-3-71(a) runs from the date the injury occurred; no general discovery rule (GA pack corrected in internal-ai-scripts #73). § 9-3-33 per the signed pack claim."
+  }
+]

@@ -527,7 +527,7 @@
                     },
                     {
                         "question": "What is the statute of limitations for medical malpractice in Georgia?",
-                        "answer": "In Georgia, you must file a medical malpractice lawsuit within 2 years of the date the injury occurred or was discovered (O.C.G.A. § 9-3-71). There is also a 5-year statute of repose, meaning no claim can be filed more than 5 years after the negligent act regardless of when the injury was discovered."
+                        "answer": "In Georgia, you must file a medical malpractice lawsuit within 2 years of the date the injury occurred (O.C.G.A. § 9-3-71). There is also a 5-year statute of repose, meaning no claim can be filed more than 5 years after the negligent act regardless of when the injury was discovered."
                     },
                     {
                         "question": "What is the statute of limitations for medical malpractice in South Carolina?",
@@ -864,7 +864,7 @@
                     },
                     {
                         "question": "How long do I have to file a medical malpractice claim in Georgia?",
-                        "answer": "Georgia generally allows two years from the date the injury occurred or was discovered (O.C.G.A. § 9-3-71). A statute of repose of five years also applies, and it can cut off a claim even where the injury was discovered late."
+                        "answer": "Georgia generally allows two years from the date the injury occurred (O.C.G.A. § 9-3-71). A statute of repose of five years also applies, and it can cut off a claim even where the injury was discovered late."
                     }
                 ]
             }
@@ -9390,7 +9390,7 @@
                     },
                     {
                         "question": "How long do I have to file a medical malpractice claim in Georgia?",
-                        "answer": "Georgia generally allows two years from the date the injury occurred or was discovered (O.C.G.A. § 9-3-71), with a statute of repose of five years beyond which no claim can be brought at all."
+                        "answer": "Georgia generally allows two years from the date the injury occurred (O.C.G.A. § 9-3-71), with a statute of repose of five years beyond which no claim can be brought at all."
                     }
                 ]
             }
@@ -11282,7 +11282,7 @@
                     },
                     {
                         "question": "How long do I have to file a medical malpractice lawsuit in Georgia?",
-                        "answer": "Georgia imposes a <strong>two-year statute of limitations</strong> (O.C.G.A. § 9-3-71) from the date of the negligent act, with a discovery rule that can extend this to two years from when the injury was or should have been discovered. An absolute <strong>five-year statute of repose</strong> applies. Georgia also requires an expert affidavit at the time of filing (O.C.G.A. § 9-11-9.1)."
+                        "answer": "Georgia imposes a <strong>two-year statute of limitations</strong> (O.C.G.A. § 9-3-71) from the date the injury occurred. There is no general discovery rule: only a foreign object left in the body gets one year from discovery (O.C.G.A. § 9-3-72). An absolute <strong>five-year statute of repose</strong> applies. Georgia also requires an expert affidavit at the time of filing (O.C.G.A. § 9-11-9.1)."
                     },
                     {
                         "question": "How long do I have to file a medical malpractice lawsuit in South Carolina?",
@@ -18417,7 +18417,7 @@
                 "_roden_faqs": [
                     {
                         "question": "What is the statute of limitations for personal injury claims in Georgia?",
-                        "answer": "In Georgia, you generally have 2 years from the date of your injury to file a personal injury lawsuit under O.C.G.A. § 9-3-33. This applies to most negligence-based claims including car accidents, truck accidents, slip and falls, and premises liability. Some claims have different deadlines — workers' compensation injuries must be reported within 30 days and filed within 1 year under O.C.G.A. § 34-9-82, and medical malpractice claims follow a discovery rule with a 5-year statute of repose under O.C.G.A. § 9-3-71. Missing any applicable deadline means losing your right to compensation entirely."
+                        "answer": "In Georgia, you generally have 2 years from the date of your injury to file a personal injury lawsuit under O.C.G.A. § 9-3-33. This applies to most negligence-based claims including car accidents, truck accidents, slip and falls, and premises liability. Some claims have different deadlines — workers' compensation injuries must be reported within 30 days and filed within 1 year under O.C.G.A. § 34-9-82, and medical malpractice claims generally must be filed within 2 years of the date the injury occurred, with a 5-year statute of repose, under O.C.G.A. § 9-3-71. Missing any applicable deadline means losing your right to compensation entirely."
                     },
                     {
                         "question": "How does Georgia's comparative fault law work?",
@@ -19031,7 +19031,7 @@
                     },
                     {
                         "question": "How long do I have to file an anesthesia error claim?",
-                        "answer": "In Georgia, the statute of limitations is 2 years from the date of injury or discovery, with a 5-year statute of repose (O.C.G.A. § 9-3-71). In South Carolina, you have 3 years from the date of injury or discovery (S.C. Code § 15-3-545)."
+                        "answer": "In Georgia, the statute of limitations is generally 2 years from the date of injury, with a 5-year statute of repose (O.C.G.A. § 9-3-71). In South Carolina, you have 3 years from the date of injury or discovery (S.C. Code § 15-3-545)."
                     }
                 ],
                 "_roden_jurisdiction": "both",
@@ -19141,7 +19141,7 @@
                     },
                     {
                         "question": "How long do I have to file an ER negligence claim?",
-                        "answer": "In Georgia, the statute of limitations is 2 years from injury or discovery, with a 5-year statute of repose (O.C.G.A. § 9-3-71). In South Carolina, you have 3 years from the date of injury or discovery (S.C. Code § 15-3-545)."
+                        "answer": "In Georgia, the statute of limitations is generally 2 years from the date of injury, with a 5-year statute of repose (O.C.G.A. § 9-3-71). In South Carolina, you have 3 years from the date of injury or discovery (S.C. Code § 15-3-545)."
                     }
                 ],
                 "_roden_jurisdiction": "both",
@@ -19175,7 +19175,7 @@
                     },
                     {
                         "question": "What is the statute of limitations for a hospital infection claim?",
-                        "answer": "In Georgia, the statute of limitations is 2 years from discovery, with a 5-year statute of repose (O.C.G.A. § 9-3-71). In South Carolina, the deadline is 3 years from the date of injury or discovery (S.C. Code § 15-3-545)."
+                        "answer": "In Georgia, the statute of limitations is generally 2 years from the date of injury, with a 5-year statute of repose (O.C.G.A. § 9-3-71). In South Carolina, the deadline is 3 years from the date of injury or discovery (S.C. Code § 15-3-545)."
                     }
                 ],
                 "_roden_jurisdiction": "both",
@@ -19209,7 +19209,7 @@
                     },
                     {
                         "question": "What is the statute of limitations for an informed consent claim?",
-                        "answer": "In Georgia, the statute of limitations is 2 years from the date of injury or discovery, with a 5-year statute of repose (O.C.G.A. § 9-3-71). In South Carolina, the deadline is 3 years from the date of injury or discovery (S.C. Code § 15-3-545)."
+                        "answer": "In Georgia, the statute of limitations is generally 2 years from the date of injury, with a 5-year statute of repose (O.C.G.A. § 9-3-71). In South Carolina, the deadline is 3 years from the date of injury or discovery (S.C. Code § 15-3-545)."
                     }
                 ],
                 "_roden_jurisdiction": "both",
@@ -19243,7 +19243,7 @@
                     },
                     {
                         "question": "What is the statute of limitations for a medication error claim?",
-                        "answer": "In Georgia, the statute of limitations is 2 years from discovery, with a 5-year statute of repose (O.C.G.A. § 9-3-71). In South Carolina, the deadline is 3 years from the date of injury or discovery (S.C. Code § 15-3-545)."
+                        "answer": "In Georgia, the statute of limitations is generally 2 years from the date of injury, with a 5-year statute of repose (O.C.G.A. § 9-3-71). In South Carolina, the deadline is 3 years from the date of injury or discovery (S.C. Code § 15-3-545)."
                     }
                 ],
                 "_roden_jurisdiction": "both",
@@ -19277,7 +19277,7 @@
                     },
                     {
                         "question": "What is the statute of repose for medical malpractice in Georgia?",
-                        "answer": "Under O.C.G.A. § 9-3-71, medical malpractice claims must generally be filed within 5 years of the negligent act, regardless of when the injury was discovered. This is in addition to the 2-year statute of limitations that begins when the injury is or should have been discovered."
+                        "answer": "Under O.C.G.A. § 9-3-71, medical malpractice claims must generally be filed within 5 years of the negligent act, regardless of when the injury was discovered. This is in addition to the 2-year statute of limitations, which runs from the date the injury occurred."
                     }
                 ],
                 "_roden_jurisdiction": "both",
@@ -19626,7 +19626,7 @@
                     },
                     {
                         "question": "What is the statute of limitations for nursing home neglect claims?",
-                        "answer": "Georgia allows 2 years from the date of injury or discovery (O.C.G.A. § 9-3-33) and South Carolina allows 3 years (S.C. Code § 15-3-530). If the victim has diminished capacity, the statute may be tolled. Wrongful death claims have separate deadlines. Contact an attorney as soon as you suspect neglect."
+                        "answer": "Georgia generally allows 2 years from the date of injury (O.C.G.A. § 9-3-33) and South Carolina allows 3 years (S.C. Code § 15-3-530). If the victim has diminished capacity, the statute may be tolled. Wrongful death claims have separate deadlines. Contact an attorney as soon as you suspect neglect."
                     }
                 ],
                 "_roden_jurisdiction": "both",
@@ -22552,7 +22552,7 @@
                     },
                     {
                         "question": "How long do I have to file a dangerous drug claim?",
-                        "answer": "Georgia allows 2 years from discovery of the injury (O.C.G.A. § 9-3-33), with a 10-year statute of repose. South Carolina allows 3 years (S.C. Code § 15-3-530). The discovery rule may extend the deadline because drug side effects often develop years after the patient begins taking the medication."
+                        "answer": "Georgia generally allows 2 years from the date of injury (O.C.G.A. § 9-3-33), with a 10-year statute of repose. South Carolina allows 3 years (S.C. Code § 15-3-530). The discovery rule may extend the deadline because drug side effects often develop years after the patient begins taking the medication."
                     }
                 ],
                 "_roden_jurisdiction": "both",
@@ -22688,7 +22688,7 @@
                     },
                     {
                         "question": "How long do I have to file a defective medical device claim?",
-                        "answer": "Georgia allows 2 years from discovery of the injury (O.C.G.A. § 9-3-33) with a 10-year statute of repose. South Carolina allows 3 years (S.C. Code § 15-3-530). The \"discovery rule\" may extend the deadline if the defect was not immediately apparent — but do not delay consulting an attorney."
+                        "answer": "Georgia generally allows 2 years from the date of injury (O.C.G.A. § 9-3-33) with a 10-year statute of repose. South Carolina allows 3 years (S.C. Code § 15-3-530). The \"discovery rule\" may extend the deadline if the defect was not immediately apparent — but do not delay consulting an attorney."
                     }
                 ],
                 "_roden_jurisdiction": "both",

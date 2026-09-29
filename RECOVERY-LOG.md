@@ -2190,6 +2190,39 @@ unfinished P0 items (`docs/site-architecture`, from `evidence/retired-with-impre
 - The "at-fault state" sentence on the car page has no signed authority.
 - The § 33-7-11 citation vs the pending § 33-34-4.
 
+### Georgia pack § 9-3-71 corrected; "discovery" fixed on 14 pages — 2026-09-29
+
+**Owner, 2026-09-29:** "Let's fix the Georgia Law pack and the discovery error before moving
+on".
+
+- **Statute** (Justia, 2020 Code, read 2026-09-29):
+  - § 9-3-71(a): "within two years after the date on which an injury or death … occurred".
+    There is no discovery rule.
+  - (b): five-year repose.
+  - § 9-3-72: foreign object, one year from discovery.
+  - § 9-3-73: minors under five, until two years after the fifth birthday.
+- **internal-ai-scripts #73:**
+  - The shared GA pack's `GA 9-3-71` claim ("injury or discovery") was corrected. A
+    `correction` record (was / why / source) notes that the pack signer's re-verification is
+    pending, since the signature covered the old wording.
+  - New error rule `ga-medmal-discovery-rule`.
+  - **#75** stops the rule flagging correct repose sentences ("regardless of when …
+    discovered"). Fixtures 8/8.
+- **`data/facts/ga-discovery-batch-2026-09-29.json`:** 17 edits on 14 posts, through the batch
+  applier. Backup: `docs/backups/ga-discovery-batch-2026-09-29.json`.
+  - Med-mal blog posts 1668, 1696 (FAQ and the Georgia "Discovery rule" table cell), 1798
+    and 1857.
+  - The /locations/georgia/ FAQ.
+  - Misdiagnosis 4193.
+  - The FAQs on 4194, 4196, 4197, 4198 and 4199.
+  - Nursing-home neglect 4164.
+  - Drug 4133 and device 4132: "from discovery" under § 9-3-33 became "from the date of
+    injury", per the signed pack. Their hedged "discovery rule *may* extend" lines (case law
+    on latent injuries) are kept. 4132's body was already correct.
+  - South Carolina sentences are untouched; SC has a discovery rule (§ 15-3-545).
+- **Verified:** live FAQPage JSON-LD parses; no old strings remain. JSON-LD guard PASS. Fresh
+  sweep with the new rule: **0 findings**. meta.json regenerated.
+
 ### Law pack: #62 superseded by #67, rebuilt on the signed SC pack — 2026-09-26
 
 **Owner, 2026-09-26:** "what do we need to do with #62? Those are signed", then "yes".
