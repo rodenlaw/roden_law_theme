@@ -1418,7 +1418,10 @@ function roden_deadline_badges_sidebar( $state_keys ) {
             <p class="deadline-cite"><?php
                 // Two-state widgets need the citation labelled, or it is unclear
                 // which state each belongs to.
-                echo esc_html( $multi ? $statute['state_full'] . ': ' . $statute['statute_cite'] : $statute['statute_cite'] );
+                // deadline_detail carries the full rule where one exists (GA § 34-9-82
+                // extensions); template-intersection.php already prints it (T-WC3).
+                $cite_line = ! empty( $statute['deadline_detail'] ) ? $statute['deadline_detail'] : $statute['statute_cite'];
+                echo esc_html( $multi ? $statute['state_full'] . ': ' . $cite_line : $cite_line );
             ?></p>
             <?php if ( $statute['notice_label'] && $statute['notice_detail'] ) : ?>
                 <p class="deadline-notice">
@@ -1655,7 +1658,7 @@ function roden_what_to_do_steps_data( $pa_slug = '', $state_full = '', $state_ke
 
         $filing_venue = ( $statute && $statute['filing_venue'] )
             ? $statute['filing_venue']
-            : __( 'your state workers\' compensation board', 'roden-law' );
+            : __( 'workers\' compensation board in your state', 'roden-law' );
 
         $filing_deadline = ( $statute && ! empty( $statute['deadline_detail'] ) )
             ? $statute['deadline_detail']
@@ -1806,7 +1809,7 @@ function roden_what_to_do_steps_data( $pa_slug = '', $state_full = '', $state_ke
                 // affidavit is § 15-36-100, filed with the § 15-79-125 notice.
                 'body'  => ( 'SC' === $state_key || 'South Carolina' === $state_full )
                     ? __( 'South Carolina requires a Notice of Intent to File Suit, filed together with a qualified expert\'s affidavit, and then mediation before a malpractice suit can be filed (S.C. Code §§ 15-79-125, 15-36-100). Locating the right expert and obtaining that opinion routinely takes months. Roden Law offers free consultations.', 'roden-law' )
-                    : __( 'Georgia requires an expert affidavit filed with the complaint (O.C.G.A. § 9-11-9.1), and South Carolina requires a Notice of Intent to File Suit with an expert affidavit followed by mandatory mediation (S.C. Code § 15-79-125). Locating the right expert and obtaining that opinion routinely takes months, and Georgia\'s deadline is two years. Roden Law offers free consultations.', 'roden-law' ),
+                    : __( 'Georgia requires an expert affidavit filed with the complaint (O.C.G.A. § 9-11-9.1), and South Carolina requires a Notice of Intent to File Suit with an expert affidavit followed by mandatory mediation (S.C. Code §§ 15-79-125, 15-36-100). Locating the right expert and obtaining that opinion routinely takes months, and Georgia\'s deadline is two years. Roden Law offers free consultations.', 'roden-law' ),
             ),
         );
 
@@ -3695,7 +3698,11 @@ function roden_jurisdiction_comparison_table( $practice_area_title, $sol_ga = ''
     ?>
     <div class="jurisdiction-comparison" data-ai-extractable="true">
         <h2><?php printf( /* translators: %s: practice area label with "Lawyers/Attorneys" stripped, e.g. "Car Accident". */ esc_html__( 'Georgia vs. South Carolina %s Laws', 'roden-law' ), esc_html( $label ) ); ?></h2>
+        <?php if ( preg_match( '/wrongful death|muerte/i', $label ) ) : // T-WD3: a family, not an injured person. ?>
+        <p class="comparison-intro"><?php esc_html_e( 'If you lost a family member in Georgia or South Carolina, the laws governing a wrongful death claim differ by state. Below is a side-by-side comparison of the key legal rules that affect the claim.', 'roden-law' ); ?></p>
+        <?php else : ?>
         <p class="comparison-intro"><?php printf( /* translators: %s: lowercase practice area label, e.g. "car accident". */ esc_html__( 'If you were injured in Georgia or South Carolina, the laws governing your %s claim differ by state. Below is a side-by-side comparison of the key legal rules that affect your case.', 'roden-law' ), esc_html( strtolower( $label ) ) ); ?></p>
+        <?php endif; ?>
         <table class="comparison-table">
             <thead>
                 <tr>

@@ -300,7 +300,17 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                     );
                     ?></h2>
                     <p class="section-lead"><?php
-                    if ( $pa_is_statutory ) {
+                    if ( $pa_is_statutory && ! empty( $pa_sol_ga['deadline_detail'] ) ) {
+                        // GA's § 34-9-82 rule has extensions a bare "1 Year" hides
+                        // (pillar takeaways sweep 2026-09-29, T-WC1).
+                        printf(
+                            /* translators: 1: GA deadline phrase with citation; 2: SC deadline in <strong>; 3: SC citation. */
+                            wp_kses_post( __( 'Workers\' compensation runs on its own deadlines, separate from the personal injury statute of limitations. In Georgia the claim is due %1$s. In South Carolina you have %2$s (%3$s). You must also report the injury to your employer well before those dates — that notice deadline is much shorter, and missing it can end the claim on its own.', 'roden-law' ) ),
+                            esc_html( $pa_sol_ga['deadline_detail'] ),
+                            '<strong>' . esc_html( $pa_sol_years( $pa_sol_sc ) ) . '</strong>',
+                            esc_html( $pa_sol_sc['statute_cite'] )
+                        );
+                    } elseif ( $pa_is_statutory ) {
                         printf(
                             /* translators: 1: GA deadline in <strong>; 2: GA citation; 3: SC deadline in <strong>; 4: SC citation. */
                             wp_kses_post( __( 'Workers\' compensation runs on its own deadlines, separate from the personal injury statute of limitations. In Georgia you have %1$s from the date of injury to file your claim (%2$s). In South Carolina you have %3$s (%4$s). You must also report the injury to your employer well before those dates — that notice deadline is much shorter, and missing it can end the claim on its own.', 'roden-law' ) ),
@@ -325,7 +335,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                             <div class="sol-card sol-ga">
                                 <span class="sol-state">&#127825; <?php esc_html_e( 'Georgia Filing Deadline', 'roden-law' ); ?></span>
                                 <span class="sol-years"><?php echo esc_html( $pa_sol_years( $pa_sol_ga ) ); ?></span>
-                                <span class="sol-cite"><?php echo esc_html( $pa_sol_ga['is_override'] ? $pa_sol_ga['statute_cite'] : $sol_ga ); ?></span>
+                                <span class="sol-cite"><?php echo esc_html( $pa_sol_ga['is_override'] ? ( $pa_sol_ga['deadline_detail'] ?: $pa_sol_ga['statute_cite'] ) : $sol_ga ); ?></span>
                                 <?php if ( $pa_sol_ga['notice_detail'] ) : ?>
                                     <span class="sol-notice"><?php echo esc_html( $pa_sol_ga['notice_label'] . ' ' . $pa_sol_ga['notice_detail'] ); ?></span>
                                 <?php endif; ?>
@@ -335,7 +345,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                             <div class="sol-card sol-sc">
                                 <span class="sol-state">&#127769; <?php esc_html_e( 'South Carolina Filing Deadline', 'roden-law' ); ?></span>
                                 <span class="sol-years"><?php echo esc_html( $pa_sol_years( $pa_sol_sc ) ); ?></span>
-                                <span class="sol-cite"><?php echo esc_html( $pa_sol_sc['is_override'] ? $pa_sol_sc['statute_cite'] : $sol_sc ); ?></span>
+                                <span class="sol-cite"><?php echo esc_html( $pa_sol_sc['is_override'] ? ( $pa_sol_sc['deadline_detail'] ?: $pa_sol_sc['statute_cite'] ) : $sol_sc ); ?></span>
                                 <?php if ( $pa_sol_sc['notice_detail'] ) : ?>
                                     <span class="sol-notice"><?php echo esc_html( $pa_sol_sc['notice_label'] . ' ' . $pa_sol_sc['notice_detail'] ); ?></span>
                                 <?php endif; ?>
