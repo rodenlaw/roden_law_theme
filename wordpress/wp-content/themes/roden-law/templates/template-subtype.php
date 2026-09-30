@@ -261,7 +261,18 @@
             <!-- Bottom CTA -->
             <div class="bottom-cta-box">
                 <h2><?php printf( /* translators: %s: practice area title. */ esc_html__( 'Contact Our %s Today', 'roden-law' ), esc_html( get_the_title() ) ); ?></h2>
-                <p><?php esc_html_e( 'If you were injured and believe another party is at fault, contact us for a free, no-obligation review. We dedicate our skills and resources to recovering the maximum compensation you deserve — at no upfront cost.', 'roden-law' ); ?></p>
+                <p><?php
+                // Same branches as the pillar and intersection CTAs (T-ES7):
+                // no tort-fault framing on workers' comp or wrongful death.
+                $cta_bare = $parent_post ? preg_replace( '/^es-/', '', (string) $parent_post->post_name ) : '';
+                if ( $st_statutory || 'workers-compensation-lawyers' === $cta_bare ) {
+                    esc_html_e( 'If you were hurt on the job, contact us for a free, no-obligation review of your workers’ compensation claim and any third-party claim — at no upfront cost.', 'roden-law' );
+                } elseif ( 'wrongful-death-lawyers' === $cta_bare ) {
+                    esc_html_e( 'If you lost a loved one because of someone else’s negligence, contact us for a free, confidential review — at no upfront cost.', 'roden-law' );
+                } else {
+                    esc_html_e( 'If you were injured and believe another party is at fault, contact us for a free, no-obligation review. We dedicate our skills and resources to recovering the maximum compensation you deserve — at no upfront cost.', 'roden-law' );
+                }
+                ?></p>
                 <div class="cta-actions">
                     <a href="tel:<?php echo esc_attr($firm['phone_e164']); ?>" class="btn btn-primary">&#128222; <?php printf( /* translators: %s: phone number. */ esc_html__( 'Call %s', 'roden-law' ), esc_html( $firm['phone'] ) ); ?></a>
                     <a href="#contact" class="btn btn-outline-light"><?php esc_html_e( 'Free Case Review', 'roden-law' ); ?></a>

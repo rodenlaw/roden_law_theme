@@ -158,7 +158,17 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                             <?php echo esc_html( $office['market_name'] ); ?>
                         <?php endif; ?>
                     </h3>
-                    <span class="matrix-url">/<?php echo esc_html( $post->post_name ); ?>/<?php echo esc_html( $office['slug'] ); ?>/</span>
+                    <?php
+                    // Print the real path when a page exists. The synthesized
+                    // "/<pillar slug>/<office>/" form printed
+                    // "/es-workers-compensation-lawyers/savannah-ga/" on Spanish
+                    // pillars — a path that does not exist (T-ES12) — so Spanish
+                    // pages drop it; English keeps its existing label.
+                    if ( $matrix_url ) : ?>
+                        <span class="matrix-url"><?php echo esc_html( wp_make_link_relative( $matrix_url ) ); ?></span>
+                    <?php elseif ( 0 !== strpos( (string) $post->post_name, 'es-' ) ) : ?>
+                        <span class="matrix-url">/<?php echo esc_html( $post->post_name ); ?>/<?php echo esc_html( $office['slug'] ); ?>/</span>
+                    <?php endif; ?>
                 </div>
             <?php endforeach; ?>
         </div>
@@ -333,7 +343,11 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                     <div class="sol-grid">
                         <?php if ( $sol_ga && in_array( $jurisdiction, array( 'both', 'ga', 'GA' ) ) ) : ?>
                             <div class="sol-card sol-ga">
-                                <span class="sol-state">&#127825; <?php esc_html_e( 'Georgia Filing Deadline', 'roden-law' ); ?></span>
+                                <?php
+                                // Same English; the context lets Spanish say "Reclamo"
+                                // (a comp claim) rather than "Demanda" (a lawsuit) (T-ES6).
+                                ?>
+                                <span class="sol-state">&#127825; <?php echo esc_html( $pa_is_statutory ? _x( 'Georgia Filing Deadline', 'workers compensation claim', 'roden-law' ) : __( 'Georgia Filing Deadline', 'roden-law' ) ); ?></span>
                                 <span class="sol-years"><?php echo esc_html( $pa_sol_years( $pa_sol_ga ) ); ?></span>
                                 <span class="sol-cite"><?php echo esc_html( $pa_sol_ga['is_override'] ? ( $pa_sol_ga['deadline_detail'] ?: $pa_sol_ga['statute_cite'] ) : $sol_ga ); ?></span>
                                 <?php if ( $pa_sol_ga['notice_detail'] ) : ?>
@@ -343,7 +357,7 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                         <?php endif; ?>
                         <?php if ( $sol_sc && in_array( $jurisdiction, array( 'both', 'sc', 'SC' ) ) ) : ?>
                             <div class="sol-card sol-sc">
-                                <span class="sol-state">&#127769; <?php esc_html_e( 'South Carolina Filing Deadline', 'roden-law' ); ?></span>
+                                <span class="sol-state">&#127769; <?php echo esc_html( $pa_is_statutory ? _x( 'South Carolina Filing Deadline', 'workers compensation claim', 'roden-law' ) : __( 'South Carolina Filing Deadline', 'roden-law' ) ); ?></span>
                                 <span class="sol-years"><?php echo esc_html( $pa_sol_years( $pa_sol_sc ) ); ?></span>
                                 <span class="sol-cite"><?php echo esc_html( $pa_sol_sc['is_override'] ? ( $pa_sol_sc['deadline_detail'] ?: $pa_sol_sc['statute_cite'] ) : $sol_sc ); ?></span>
                                 <?php if ( $pa_sol_sc['notice_detail'] ) : ?>
@@ -764,7 +778,19 @@ $cat_slug = ! empty( $pa_terms ) ? $pa_terms[0] : '';
                  ═══════════════════════════════════════════════════════════ -->
             <div class="bottom-cta-box" id="pa-contact">
                 <h2><?php printf( /* translators: %s: practice area title, e.g. "Car Accident Lawyers". */ esc_html__( 'Contact Our %s Today', 'roden-law' ), esc_html( get_the_title() ) ); ?></h2>
-                <p><?php esc_html_e( 'If you were injured and believe another party is at fault, contact us for a free, no-obligation review. We dedicate our skills and resources to recovering the maximum compensation you deserve — at no upfront cost.', 'roden-law' ); ?></p>
+                <p><?php
+                // Workers' comp is no-fault and wrongful death is brought by the
+                // family, so neither gets the tort "injured … another party is at
+                // fault" line — mirrors the intersection CTA (2026-09-26) (T-ES7).
+                $cta_bare = preg_replace( '/^es-/', '', (string) $post->post_name );
+                if ( $pa_is_statutory || 'workers-compensation-lawyers' === $cta_bare ) {
+                    esc_html_e( 'If you were hurt on the job, contact us for a free, no-obligation review of your workers’ compensation claim and any third-party claim — at no upfront cost.', 'roden-law' );
+                } elseif ( 'wrongful-death-lawyers' === $cta_bare ) {
+                    esc_html_e( 'If you lost a loved one because of someone else’s negligence, contact us for a free, confidential review — at no upfront cost.', 'roden-law' );
+                } else {
+                    esc_html_e( 'If you were injured and believe another party is at fault, contact us for a free, no-obligation review. We dedicate our skills and resources to recovering the maximum compensation you deserve — at no upfront cost.', 'roden-law' );
+                }
+                ?></p>
                 <div class="cta-actions">
                     <a href="tel:<?php echo esc_attr( $firm['phone_e164'] ); ?>" class="btn btn-primary">&#128222; <?php printf( /* translators: %s: phone number. */ esc_html__( 'Call %s', 'roden-law' ), esc_html( $firm['phone'] ) ); ?></a>
                     <a href="#contact" class="btn btn-outline-light"><?php esc_html_e( 'Free Case Review', 'roden-law' ); ?></a>

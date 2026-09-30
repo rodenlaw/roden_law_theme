@@ -277,6 +277,11 @@ function roden_pa_accident_phrase( $pa_slug = '', $fallback = '' ) {
             'es-workers-compensation-lawyers' => 'una Lesión en el Trabajo',
             'es-premises-liability-lawyers'   => 'una Lesión en Propiedad Ajena',
             'es-product-liability-lawyers'    => 'una Lesión por un Producto Defectuoso',
+            // Mirror the English event phrases now that these pillars render
+            // their own step sets: "Qué Hacer Después de Muerte por Negligencia"
+            // named the claim, not the event.
+            'es-wrongful-death-lawyers'       => 'un Accidente Fatal',
+            'es-medical-malpractice-lawyers'  => 'una Posible Negligencia Médica',
         )
     );
 
@@ -540,6 +545,30 @@ function roden_case_result_category( $post_id ) {
  *
  * @param int $post_id Case result post ID.
  */
+/**
+ * Display label for a case result's `_roden_case_type`.
+ *
+ * The meta stores the English option value from the meta box ("Settlement",
+ * "Verdict", …) and the card printed it raw, so Spanish pages read
+ * "$27,000,000 Settlement" (T-ES4). Known values go through the catalog;
+ * anything else is shown as stored.
+ *
+ * @param string $type Stored case type.
+ * @return string Label in the current language.
+ */
+function roden_case_type_label( $type ) {
+    $type   = trim( (string) $type );
+    $labels = array(
+        'settlement'    => __( 'Settlement', 'roden-law' ),
+        'verdict'       => __( 'Verdict', 'roden-law' ),
+        'recovery'      => __( 'Recovery', 'roden-law' ),
+        'resolution'    => __( 'Resolution', 'roden-law' ),
+        'policy limits' => __( 'Policy Limits', 'roden-law' ),
+    );
+    $key = strtolower( $type );
+    return isset( $labels[ $key ] ) ? $labels[ $key ] : ucfirst( $type );
+}
+
 function roden_case_result_card( $post_id ) {
     $amount = get_post_meta( $post_id, '_roden_case_amount', true );
     $type   = get_post_meta( $post_id, '_roden_case_type', true );
@@ -548,7 +577,7 @@ function roden_case_result_card( $post_id ) {
     <div class="result-card">
         <a href="<?php echo esc_url( roden_case_result_url( $post_id ) ); ?>" class="result-card-link">
             <?php if ( $type ) : ?>
-                <span class="result-type"><?php echo esc_html( ucfirst( $type ) ); ?></span>
+                <span class="result-type"><?php echo esc_html( roden_case_type_label( $type ) ); ?></span>
             <?php endif; ?>
             <span class="result-amount"><?php echo esc_html( $amount ); ?></span>
             <span class="result-title"><?php echo esc_html( get_the_title( $post_id ) ); ?></span>
@@ -607,14 +636,14 @@ function roden_case_results_grid( $args = array() ) {
         echo '<div class="case-results-grid cols-' . intval( $args['columns'] ) . '">';
         foreach ( $show as $r ) {
             echo '<div class="result-card">';
-            echo '<span class="result-type">' . esc_html( $r['type'] ) . '</span>';
+            echo '<span class="result-type">' . esc_html( roden_case_type_label( $r['type'] ) ) . '</span>';
             echo '<span class="result-amount">' . esc_html( $r['amount'] ) . '</span>';
             echo '<span class="result-title">' . esc_html( $r['title'] ) . '</span>';
             echo '<p class="result-desc">' . esc_html( $r['desc'] ) . '</p>';
             echo '</div>';
         }
         echo '</div>';
-        echo '<p class="results-disclaimer">Results shown are gross settlement/verdict amounts before fees and costs. Past results do not guarantee similar outcomes.</p>';
+        echo '<p class="results-disclaimer">' . esc_html__( 'Results shown are gross settlement/verdict amounts before fees and costs. Past results do not guarantee similar outcomes.', 'roden-law' ) . '</p>';
         return;
     }
 
@@ -624,7 +653,7 @@ function roden_case_results_grid( $args = array() ) {
         roden_case_result_card( get_the_ID() );
     endwhile;
     echo '</div>';
-    echo '<p class="results-disclaimer">Results shown are gross settlement/verdict amounts before fees and costs. Past results do not guarantee similar outcomes.</p>';
+    echo '<p class="results-disclaimer">' . esc_html__( 'Results shown are gross settlement/verdict amounts before fees and costs. Past results do not guarantee similar outcomes.', 'roden-law' ) . '</p>';
     wp_reset_postdata();
 }
 
@@ -1248,15 +1277,71 @@ function roden_last_updated_date( $post_id = null ) {
     if ( ! $post_id ) {
         $post_id = get_the_ID();
     }
-    $modified = get_the_modified_date( 'F j, Y', $post_id );
-    if ( ! $modified ) {
+
+    /*
+     * One date source (T-ES11). This line used post_modified while the byline's
+     * "Last reviewed" used _roden_last_reviewed, so one page showed two dates —
+     * and, on /es/, an English month ("Última actualización: July 6, 2026").
+     * post_modified moves on bulk re-saves and misses template changes (see
+     * roden_last_reviewed_html()), so the recorded editorial dates win: the
+     * later of _roden_last_reviewed and _roden_last_refreshed when either is
+     * set, post_modified only when neither is.
+     */
+    $ts = 0;
+    foreach ( array( '_roden_last_reviewed', '_roden_last_refreshed' ) as $meta_key ) {
+        $raw = trim( (string) get_post_meta( $post_id, $meta_key, true ) );
+        $t   = '' !== $raw ? strtotime( $raw ) : false;
+        if ( $t && $t > $ts ) {
+            $ts = $t;
+        }
+    }
+    if ( ! $ts ) {
+        $ts = (int) get_post_modified_time( 'U', true, $post_id );
+    }
+    if ( ! $ts ) {
         return;
     }
+
     echo '<p class="last-updated">';
-    echo '<time datetime="' . esc_attr( get_the_modified_date( 'c', $post_id ) ) . '">';
-    echo esc_html__( 'Last updated:', 'roden-law' ) . ' ' . esc_html( $modified );
+    echo '<time datetime="' . esc_attr( gmdate( 'Y-m-d', $ts ) ) . '">';
+    echo esc_html__( 'Last updated:', 'roden-law' ) . ' ' . esc_html( roden_format_long_date( $ts ) );
     echo '</time>';
     echo '</p>';
+}
+
+/**
+ * Long-form date in the page's language: "August 3, 2026" / "3 de agosto de 2026".
+ *
+ * date_i18n() cannot do the Spanish: it reads $wp_locale, which core builds
+ * with English months before the theme's locale filter applies, and
+ * switch_to_locale() no-ops because the locale already reads es_ES (see
+ * roden_last_reviewed_html()). So Spanish is formatted explicitly; English
+ * keeps the "F j, Y" this line has always printed.
+ *
+ * @param int $ts Unix timestamp.
+ * @return string Formatted date (unescaped).
+ */
+function roden_format_long_date( $ts ) {
+    $ts    = (int) $ts;
+    $is_es = ( function_exists( 'roden_current_lang' ) && 'es' === roden_current_lang() )
+        || 'es_ES' === get_locale();
+
+    if ( ! $is_es ) {
+        return date_i18n( 'F j, Y', $ts );
+    }
+
+    $months_es = array(
+        1 => 'enero', 2 => 'febrero', 3 => 'marzo', 4 => 'abril',
+        5 => 'mayo', 6 => 'junio', 7 => 'julio', 8 => 'agosto',
+        9 => 'septiembre', 10 => 'octubre', 11 => 'noviembre', 12 => 'diciembre',
+    );
+    return sprintf(
+        /* translators: 1: day of month, 2: month name in Spanish, 3: four-digit year. */
+        _x( '%1$d de %2$s de %3$d', 'Spanish long date', 'roden-law' ),
+        (int) gmdate( 'j', $ts ),
+        $months_es[ (int) gmdate( 'n', $ts ) ],
+        (int) gmdate( 'Y', $ts )
+    );
 }
 
 /* ==========================================================================
@@ -1395,6 +1480,18 @@ function roden_deadline_badges_sidebar( $state_keys ) {
     }
 
     $multi = count( $resolved ) > 1;
+
+    // firm-data.php's state_full is English; label through the catalog so
+    // Spanish pages read "Carolina del Sur", not "South Carolina" (T-ES5).
+    foreach ( $resolved as $key => $statute ) {
+        if ( 'GA' === $key ) {
+            $resolved[ $key ]['state_label'] = __( 'Georgia', 'roden-law' );
+        } elseif ( 'SC' === $key ) {
+            $resolved[ $key ]['state_label'] = __( 'South Carolina', 'roden-law' );
+        } else {
+            $resolved[ $key ]['state_label'] = $statute['state_full'];
+        }
+    }
     ?>
     <div class="sidebar-widget sidebar-deadlines">
         <h3 class="widget-title">&#9201; <?php esc_html_e( 'Filing Deadlines', 'roden-law' ); ?></h3>
@@ -1410,7 +1507,7 @@ function roden_deadline_badges_sidebar( $state_keys ) {
                             esc_html( $statute['statute_years'] )
                         );
                     ?></span>
-                    <span class="deadline-state"><?php echo esc_html( $statute['state_full'] ); ?></span>
+                    <span class="deadline-state"><?php echo esc_html( $statute['state_label'] ); ?></span>
                 </div>
             <?php endforeach; ?>
         </div>
@@ -1421,7 +1518,7 @@ function roden_deadline_badges_sidebar( $state_keys ) {
                 // deadline_detail carries the full rule where one exists (GA § 34-9-82
                 // extensions); template-intersection.php already prints it (T-WC3).
                 $cite_line = ! empty( $statute['deadline_detail'] ) ? $statute['deadline_detail'] : $statute['statute_cite'];
-                echo esc_html( $multi ? $statute['state_full'] . ': ' . $cite_line : $cite_line );
+                echo esc_html( $multi ? $statute['state_label'] . ': ' . $cite_line : $cite_line );
             ?></p>
             <?php if ( $statute['notice_label'] && $statute['notice_detail'] ) : ?>
                 <p class="deadline-notice">
@@ -1624,18 +1721,56 @@ function roden_what_to_do_steps_data( $pa_slug = '', $state_full = '', $state_ke
      * workers to exchange insurance details with the other driver.
      *
      * The prefix is stripped ONLY for practice areas whose step set is actually
-     * translated. The default sequence IS in es_ES.po; the other twelve curated
-     * sets are not, so stripping globally would trade a translated-but-generic
-     * checklist for an untranslated-but-specific one — the wrong trade on a law
-     * firm's Spanish pages. Add a slug here when its set lands in the catalog.
+     * translated — stripping for an untranslated set would trade a translated-
+     * but-generic checklist for an untranslated-but-specific one. Add a slug
+     * here when its set lands in es_ES.po.
+     *
+     * Until 2026-09-30 this held workers' comp alone, so 22 of 23 Spanish
+     * pillars — wrongful death included — rendered the car-crash checklist
+     * ("exchange plates with the other driver"), in HowTo schema as well.
+     * Every curated set below is now in the catalog.
      */
     $es_translated = apply_filters( 'roden_what_to_do_steps_es_ready', array(
         'workers-compensation-lawyers',
+        'wrongful-death-lawyers',
+        'medical-malpractice-lawyers',
+        'nursing-home-abuse-lawyers',
+        'slip-and-fall-lawyers',
+        'premises-liability-lawyers',
+        'dog-bite-lawyers',
+        'brain-injury-lawyers',
+        'spinal-cord-injury-lawyers',
+        'maritime-injury-lawyers',
+        'product-liability-lawyers',
+        'burn-injury-lawyers',
+        'construction-accident-lawyers',
+    ) );
+
+    /*
+     * A Spanish pillar with no curated set gets the motor-vehicle default ONLY
+     * when it is a road-vehicle practice. Anything else — boating, the personal
+     * injury umbrella, or a pillar added later — gets no steps block (and so no
+     * HowTo): a crash checklist on a non-vehicle page is a legal-framing error,
+     * and silence is the safe failure. English pages are unchanged.
+     */
+    $es_vehicle_default = apply_filters( 'roden_what_to_do_steps_es_vehicle', array(
+        'car-accident-lawyers',
+        'truck-accident-lawyers',
+        'motorcycle-accident-lawyers',
+        'bicycle-accident-lawyers',
+        'pedestrian-accident-lawyers',
+        'electric-scooter-accident-lawyers',
+        'golf-cart-accident-lawyers',
+        'atv-side-by-side-accident-lawyers',
     ) );
 
     $bare_slug = preg_replace( '/^es-/', '', (string) $pa_slug );
-    if ( $bare_slug !== $pa_slug && in_array( $bare_slug, $es_translated, true ) ) {
-        $pa_slug = $bare_slug;
+    if ( $bare_slug !== $pa_slug ) {
+        if ( in_array( $bare_slug, $es_translated, true ) ) {
+            $pa_slug = $bare_slug;
+        } elseif ( ! in_array( $bare_slug, $es_vehicle_default, true ) ) {
+            return array();
+        }
     }
 
     // Derive the state key when only the full name was supplied.
@@ -1938,6 +2073,9 @@ function roden_what_to_do_steps_data( $pa_slug = '', $state_full = '', $state_ke
             'title' => __( 'Find out who is legally entitled to bring the claim.', 'roden-law' ),
             'body'  => ( 'SC' === $state_key || 'South Carolina' === $state_full )
                 ? __( 'It is not simply whoever was closest. In South Carolina the personal representative of the estate brings the claim, for the spouse and children, then the parents, then the heirs (S.C. Code § 15-51-20) — which means opening an estate first. Getting this wrong wastes months.', 'roden-law' )
+                // The Spanish msgstr deliberately omits the § 51-4-2 cite: it is
+                // not in the signed GA pack (T-WD2). The English keeps it until
+                // the GA reviewer rules.
                 : __( 'It is not simply whoever was closest. Georgia gives the claim first to the surviving spouse, then children, then parents, then the estate (O.C.G.A. § 51-4-2). South Carolina requires the personal representative of the estate to bring it — which means opening an estate first. Getting this wrong wastes months.', 'roden-law' ),
         ),
         array(
@@ -2147,8 +2285,6 @@ function roden_what_to_do_steps_data( $pa_slug = '', $state_full = '', $state_ke
        DEFAULT — motor-vehicle / general negligence sequence.
        ---------------------------------------------------------------------- */
 
-    $state_label = $state_full ? $state_full : __( 'State', 'roden-law' );
-
     $steps = array(
         array(
             'title' => __( 'Ensure safety and call 911.', 'roden-law' ),
@@ -2181,11 +2317,16 @@ function roden_what_to_do_steps_data( $pa_slug = '', $state_full = '', $state_ke
                 // § 40-6-270); the reporting statute (§ 40-6-273) is not in it,
                 // so the police report is framed as advice, not as law.
                 ? __( 'Georgia law requires every driver involved in a crash to stop, give identifying information and render reasonable assistance (O.C.G.A. § 40-6-270). Call the police so an officer documents the crash, and request a copy of the police report.', 'roden-law' )
-                : sprintf(
-                    /* translators: %s: state name, e.g. "Georgia". */
-                    __( '%s law requires accident reports when there are injuries or significant property damage. Request a copy of the police report.', 'roden-law' ),
-                    $state_label
-                ) ),
+                // Stateless (two-state pillar) pages get their own sentence.
+                // sprintf-ing __( 'State' ) into "%s law…" rendered "La ley de
+                // La ley estatal exige…" in Spanish (T-ES2).
+                : ( $state_full
+                    ? sprintf(
+                        /* translators: %s: state name, e.g. "Georgia". */
+                        __( '%s law requires accident reports when there are injuries or significant property damage. Request a copy of the police report.', 'roden-law' ),
+                        $state_full
+                    )
+                    : __( 'State law requires accident reports when there are injuries or significant property damage. Request a copy of the police report.', 'roden-law' ) ) ),
         ),
         array(
             'title' => __( 'Notify your insurance company.', 'roden-law' ),
@@ -2208,6 +2349,11 @@ function roden_what_to_do_steps_data( $pa_slug = '', $state_full = '', $state_ke
 
 function roden_what_to_do_steps( $accident_type, $city = '', $state_full = '', $state_key = '' ) {
     $steps = roden_what_to_do_steps_data( '', $state_full, $state_key );
+    // No curated set and no safe default (e.g. Spanish boating): render
+    // nothing rather than a heading over an empty list.
+    if ( ! $steps ) {
+        return;
+    }
     ?>
     <div class="content-section what-to-do-steps" data-ai-extractable="true">
         <h2><?php
