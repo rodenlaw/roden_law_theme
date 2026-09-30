@@ -194,7 +194,7 @@ $post_id = (int) $res;
 echo "wrote post #$post_id\n";
 
 foreach ( $meta as $k => $v ) {
-	update_post_meta( $post_id, $k, $v );
+	update_post_meta( $post_id, $k, wp_slash( $v ) ); // unslashes on write (CLAUDE.md)
 }
 echo 'wrote ' . count( $meta ) . " meta fields\n";
 
