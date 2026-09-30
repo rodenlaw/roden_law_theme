@@ -787,7 +787,19 @@ if ( count( $sibling_urls ) >= 2 ) :
                 $sb_statute = $int_statute;
                 if ( $jurisdiction && $sb_statute ) : ?>
                 <div class="sidebar-widget sidebar-deadlines">
-                    <h3 class="widget-title"><?php printf( /* translators: %s: state name. */ esc_html__( '%s Filing Deadline', 'roden-law' ), esc_html( $jurisdiction['state_full'] ) ); ?></h3>
+                    <?php
+                    // Workers' comp: same English, but Spanish says "Reclamo" (a comp
+                    // claim), not "Demanda" (a lawsuit); state name via the catalog
+                    // (T-ES5/T-ES6, matching the pillar).
+                    $sb_state_label = ( 'GA' === $state_key ) ? __( 'Georgia', 'roden-law' ) : ( ( 'SC' === $state_key ) ? __( 'South Carolina', 'roden-law' ) : $jurisdiction['state_full'] );
+                    ?>
+                    <h3 class="widget-title"><?php
+                    printf(
+                        /* translators: %s: state name. */
+                        esc_html( $int_is_statutory ? _x( '%s Filing Deadline', 'workers compensation claim', 'roden-law' ) : __( '%s Filing Deadline', 'roden-law' ) ),
+                        esc_html( $sb_state_label )
+                    );
+                    ?></h3>
                     <div class="deadline-badges">
                         <div class="deadline-badge <?php echo $state_key === 'GA' ? 'deadline-ga' : 'deadline-sc'; ?>" style="flex:1;">
                             <span class="deadline-years"><?php

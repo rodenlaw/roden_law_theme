@@ -1728,12 +1728,12 @@ msgstr "Recuperación"
 #: inc/meta-boxes.php:922
 #: inc/meta-boxes 2.php:863
 msgid "Resolution"
-msgstr ""
+msgstr "Resolución"
 
 #: inc/meta-boxes.php:923
 #: inc/meta-boxes 2.php:864
 msgid "Policy Limits"
-msgstr ""
+msgstr "Límites de la póliza"
 
 #: inc/meta-boxes.php:928
 #: inc/meta-boxes 2.php:869
@@ -4124,3 +4124,563 @@ msgstr "la junta de compensación laboral de su estado"
 
 msgid "If you lost a family member in Georgia or South Carolina, the laws governing a wrongful death claim differ by state. Below is a side-by-side comparison of the key legal rules that affect the claim."
 msgstr "Si perdió a un familiar en Georgia o Carolina del Sur, las leyes que rigen un reclamo por muerte injusta varían según el estado. A continuación encontrará una comparación de las principales reglas legales que afectan el reclamo."
+
+# ── Spanish pillar template strings — added 2026-09-30 ──
+# data/facts/remediation-2026-09-30-es-pillars.md, rows T-ES1..T-ES7.
+# T-ES1: the curated "what to do" step sets, so Spanish pillars stop
+# rendering the car-crash checklist (and HowTo) on non-vehicle practices.
+
+# Nursing home abuse
+
+msgid "Make sure the resident is safe, then get an independent medical evaluation."
+msgstr "Asegúrese de que el residente esté a salvo y luego obtenga una evaluación médica independiente."
+
+msgid "Call 911 if anyone is in immediate danger. Where you can, have the resident examined by a provider who is not employed by the facility — an outside record of the injury is far harder to dispute later."
+msgstr "Llame al 911 si alguien está en peligro inmediato. Cuando sea posible, haga que examine al residente un proveedor médico que no trabaje para el centro: un registro externo de la lesión es mucho más difícil de disputar después."
+
+msgid "Photograph everything today, and keep photographing."
+msgstr "Fotografíe todo hoy, y siga fotografiando."
+
+msgid "Injuries, bruising, pressure sores, bedding, the room, and where the call button actually sits. Date every photo. Wounds heal or worsen and conditions get quietly corrected long before anyone investigates."
+msgstr "Las lesiones, los moretones, las úlceras por presión, la ropa de cama, la habitación y dónde está realmente el botón de llamada. Ponga fecha a cada foto. Las heridas sanan o empeoran, y las condiciones se corrigen discretamente mucho antes de que alguien investigue."
+
+msgid "Report it to the facility in writing and ask for the incident report."
+msgstr "Repórtelo al centro por escrito y pida el reporte del incidente."
+
+msgid "A verbal complaint to a nurse or aide leaves no trace. Put it in writing, keep a copy, note who you gave it to and when, and request the facility's own incident report."
+msgstr "Una queja verbal a una enfermera o a un asistente no deja rastro. Hágala por escrito, conserve una copia, anote a quién se la entregó y cuándo, y solicite el reporte de incidente del propio centro."
+
+msgid "Report it to the state as well."
+msgstr "Repórtelo también al estado."
+
+msgid "In Georgia, the Healthcare Facility Regulation Division of the Department of Community Health licenses and investigates long-term care facilities; in South Carolina, the state agency that licenses the facility does. Either state can also be reached through the Long-Term Care Ombudsman and Adult Protective Services. Reports may be made anonymously, and a state investigation creates a record independent of the facility."
+msgstr "En Georgia, la Healthcare Facility Regulation Division del Department of Community Health otorga las licencias a los centros de cuidado a largo plazo y los investiga; en Carolina del Sur, lo hace la agencia estatal que otorga la licencia al centro. En ambos estados también puede acudir al Long-Term Care Ombudsman (defensor de los residentes de cuidado a largo plazo) y a Adult Protective Services (Servicios de Protección para Adultos). Los reportes pueden hacerse de forma anónima, y una investigación estatal crea un registro independiente del centro."
+
+msgid "Request the complete records in writing."
+msgstr "Solicite por escrito los expedientes completos."
+
+msgid "Not just the chart — medication administration records, care plans, fall and wound assessments, and staffing schedules. Staffing levels are frequently where these cases are won, and those records are retained the shortest."
+msgstr "No solo el expediente médico: también los registros de administración de medicamentos, los planes de cuidado, las evaluaciones de caídas y de heridas, y los horarios del personal. Estos casos se ganan con frecuencia por los niveles de personal, y esos registros son los que se conservan por menos tiempo."
+
+msgid "Do not sign anything the facility puts in front of you."
+msgstr "No firme nada que el centro le ponga delante."
+
+msgid "Admission packets routinely contain arbitration agreements that give up the right to a jury trial, and paperwork offered after an incident can release the claim entirely. Have anything you are asked to sign reviewed first."
+msgstr "Los paquetes de admisión suelen incluir acuerdos de arbitraje que renuncian al derecho a un juicio con jurado, y los documentos que se ofrecen después de un incidente pueden liberar por completo el reclamo. Haga revisar primero cualquier documento que le pidan firmar."
+
+msgid "Talk to an attorney before the trail goes cold."
+msgstr "Hable con un abogado antes de que se pierda el rastro."
+
+msgid "Georgia requires an expert affidavit filed with the complaint in a professional negligence case (O.C.G.A. § 9-11-9.1), and South Carolina requires a Notice of Intent to File Suit with an expert affidavit before suit (S.C. Code § 15-79-125). Both take time to prepare, and both run against a deadline. Roden Law offers free consultations."
+msgstr "Georgia exige una declaración jurada de un perito presentada junto con la demanda en un caso de negligencia profesional (O.C.G.A. § 9-11-9.1), y Carolina del Sur exige un Aviso de Intención de Demandar (Notice of Intent to File Suit) con la declaración jurada de un perito antes de la demanda (S.C. Code § 15-79-125). Ambos toman tiempo en prepararse, y ambos corren contra un plazo. Roden Law ofrece consultas gratuitas."
+
+# Medical malpractice
+
+msgid "Request your complete medical records in writing."
+msgstr "Solicite por escrito su expediente médico completo."
+
+msgid "From every provider and facility involved, not just the one you suspect. Ask for the full file including imaging, nursing notes, and orders. In a malpractice case the records largely are the case."
+msgstr "A cada proveedor y centro médico que haya intervenido, no solo al que usted sospecha. Pida el expediente completo, incluidas las imágenes diagnósticas, las notas de enfermería y las órdenes médicas. En un caso de negligencia médica, los expedientes son en gran medida el caso."
+
+msgid "Keep getting treatment — ideally from someone new."
+msgstr "Siga recibiendo tratamiento, idealmente con otro médico."
+
+msgid "Your health comes first, and a second opinion may catch something correctable. A gap in treatment is also one of the first things a defense expert points to when arguing an injury was not serious."
+msgstr "Su salud es lo primero, y una segunda opinión puede detectar algo que todavía se puede corregir. Una interrupción en el tratamiento es, además, una de las primeras cosas que señala un perito de la defensa para argumentar que una lesión no era grave."
+
+msgid "Write down what happened while you still remember it."
+msgstr "Escriba lo que pasó mientras todavía lo recuerda."
+
+msgid "Dates, who you saw, what you were told before and after, and who else was in the room. The written record is authored entirely by the other side; your account is not."
+msgstr "Las fechas, a quién vio, qué le dijeron antes y después, y quién más estaba en la sala. El expediente escrito lo redacta por completo la otra parte; su relato, no."
+
+msgid "Do not accept waived bills or a free corrective procedure in exchange for signing."
+msgstr "No acepte que le perdonen facturas ni un procedimiento correctivo gratuito a cambio de firmar."
+
+msgid "It is a common offer. It is also sometimes paired with paperwork that ends your claim. Read what is attached, and have it reviewed before you sign it."
+msgstr "Es una oferta común. A veces también viene acompañada de documentos que ponen fin a su reclamo. Lea lo que viene adjunto y hágalo revisar antes de firmarlo."
+
+msgid "Be careful with risk management and insurance adjusters."
+msgstr "Tenga cuidado con el departamento de gestión de riesgos y con los ajustadores de seguros."
+
+msgid "Those calls are documented and they are not made for your benefit. You are not required to give a recorded statement before speaking with an attorney."
+msgstr "Esas llamadas quedan documentadas y no se hacen para su beneficio. Usted no está obligado a dar una declaración grabada antes de hablar con un abogado."
+
+msgid "Do not assume a bad outcome is — or is not — malpractice."
+msgstr "No dé por hecho que un mal resultado es, o no es, negligencia médica."
+
+msgid "Medicine carries known risks, and a poor result on its own proves nothing. The question is whether the care fell below the accepted standard, and usually only a qualified medical expert can answer it."
+msgstr "La medicina conlleva riesgos conocidos, y un mal resultado por sí solo no prueba nada. La pregunta es si la atención estuvo por debajo del estándar aceptado, y por lo general solo un perito médico calificado puede responderla."
+
+msgid "Contact an attorney early — the pre-suit requirements are slow."
+msgstr "Contacte a un abogado pronto: los requisitos previos a la demanda toman tiempo."
+
+msgid "Georgia requires an expert affidavit filed with the complaint (O.C.G.A. § 9-11-9.1), and South Carolina requires a Notice of Intent to File Suit with an expert affidavit followed by mandatory mediation (S.C. Code §§ 15-79-125, 15-36-100). Locating the right expert and obtaining that opinion routinely takes months, and Georgia's deadline is two years. Roden Law offers free consultations."
+msgstr "Georgia exige una declaración jurada de un perito presentada junto con la demanda (O.C.G.A. § 9-11-9.1), y Carolina del Sur exige un Aviso de Intención de Demandar (Notice of Intent to File Suit) con la declaración jurada de un perito, seguido de una mediación obligatoria (S.C. Code §§ 15-79-125, 15-36-100). Encontrar al perito adecuado y obtener su opinión suele tomar meses, y el plazo en Georgia es de dos años. Roden Law ofrece consultas gratuitas."
+
+# Slip and fall
+
+msgid "Report it before you leave, and get a written incident report."
+msgstr "Repórtelo antes de irse y consiga un reporte escrito del incidente."
+
+msgid "Tell a manager or owner while you are still there and ask for a copy of the report they fill out. A fall nobody recorded is the single most common reason these claims fail."
+msgstr "Avísele a un gerente o al dueño mientras todavía está en el lugar y pida una copia del reporte que llenen. Una caída que nadie registró es la razón más común por la que fracasan estos reclamos."
+
+msgid "Photograph the hazard immediately — before it is cleaned up."
+msgstr "Fotografíe el peligro de inmediato, antes de que lo limpien."
+
+msgid "The spill, ice, torn mat, broken step, or missing handrail will be gone within the hour. Capture it from several angles, and include something for scale."
+msgstr "El derrame, el hielo, el tapete roto, el escalón dañado o el pasamanos que falta desaparecerán en menos de una hora. Fotografíelo desde varios ángulos e incluya algo que sirva de referencia de tamaño."
+
+msgid "Photograph what was not there, too."
+msgstr "Fotografíe también lo que no estaba."
+
+msgid "Absent warning cones, burnt-out lighting, and missing handrails matter as much as the hazard itself. Photograph your footwear as well — the defense will raise it."
+msgstr "La falta de conos de advertencia, las luces fundidas y los pasamanos ausentes importan tanto como el peligro mismo. Fotografíe también su calzado: la defensa lo va a mencionar."
+
+msgid "Get names — witnesses and the employees who responded."
+msgstr "Consiga nombres: de los testigos y de los empleados que atendieron."
+
+msgid "Staff turnover is high in retail and hospitality. The employee who told you \"that happens all the time\" may be unreachable in six months."
+msgstr "La rotación de personal es alta en el comercio y la hotelería. El empleado que le dijo \"eso pasa todo el tiempo\" puede ser imposible de localizar en seis meses."
+
+msgid "Ask that surveillance footage be preserved, in writing."
+msgstr "Pida por escrito que se conserven las grabaciones de las cámaras de vigilancia."
+
+msgid "Most systems overwrite in days or weeks. A written preservation request creates an obligation and a paper trail if the footage later goes missing."
+msgstr "La mayoría de los sistemas graban encima en días o semanas. Una solicitud escrita de conservación crea una obligación y deja constancia por escrito si las grabaciones desaparecen después."
+
+msgid "See a doctor the same day."
+msgstr "Vea a un médico el mismo día."
+
+msgid "Adrenaline masks injuries and a delay of even a few days becomes an argument that something else caused them."
+msgstr "La adrenalina oculta las lesiones, y un retraso de apenas unos días se convierte en un argumento de que algo más las causó."
+
+msgid "Do not give a recorded statement or accept a goodwill gesture."
+msgstr "No dé una declaración grabada ni acepte un gesto de buena voluntad."
+
+msgid "A covered ER visit or a gift card is sometimes offered alongside paperwork that ends the claim. Roden Law offers free consultations — ask before you sign."
+msgstr "A veces se ofrece pagar la visita a la sala de emergencias o una tarjeta de regalo junto con documentos que ponen fin al reclamo. Roden Law ofrece consultas gratuitas: pregunte antes de firmar."
+
+# Premises liability
+
+msgid "Report it to the property owner or manager in writing."
+msgstr "Repórtelo por escrito al dueño o al administrador de la propiedad."
+
+msgid "Ask for a copy of any incident report. Verbal notice to whoever was on shift tends to disappear."
+msgstr "Pida una copia de cualquier reporte del incidente. Un aviso verbal a quien estaba de turno tiende a desaparecer."
+
+msgid "Photograph the condition before it is repaired."
+msgstr "Fotografíe la condición antes de que la reparen."
+
+msgid "Dangerous conditions get fixed quickly once someone is hurt — which is good for everyone except your ability to prove what it looked like."
+msgstr "Las condiciones peligrosas se arreglan rápido cuando alguien se lesiona, lo cual es bueno para todos menos para su capacidad de probar cómo estaban."
+
+msgid "Work out who actually controlled the property."
+msgstr "Averigüe quién controlaba realmente la propiedad."
+
+msgid "Owner, tenant, management company, security contractor, and maintenance vendor are often five different businesses with five different insurers. Note every name and logo you see."
+msgstr "El dueño, el inquilino, la compañía administradora, el contratista de seguridad y el proveedor de mantenimiento suelen ser cinco empresas distintas con cinco aseguradoras distintas. Anote cada nombre y logotipo que vea."
+
+msgid "If you were the victim of a crime on the property, get the police report."
+msgstr "Si fue víctima de un delito en la propiedad, consiga el reporte policial."
+
+msgid "Negligent security claims turn on whether the owner knew the area was dangerous. Prior incidents at the same address are usually the proof, and they are on record."
+msgstr "Los reclamos por seguridad negligente dependen de si el dueño sabía que la zona era peligrosa. Los incidentes anteriores en la misma dirección suelen ser la prueba, y constan en los registros."
+
+msgid "Request preservation of surveillance footage in writing."
+msgstr "Solicite por escrito que se conserven las grabaciones de vigilancia."
+
+msgid "Retention is often measured in days. Ask in writing and keep a copy of the request."
+msgstr "A menudo solo se conservan por unos días. Pídalo por escrito y guarde una copia de la solicitud."
+
+msgid "Get medical care and keep every record."
+msgstr "Reciba atención médica y conserve todos los registros."
+
+msgid "Follow through on referrals. Gaps in treatment are the most common way a serious injury gets valued as a minor one."
+msgstr "Acuda a todas las citas con especialistas a las que lo remitan. Las interrupciones en el tratamiento son la forma más común en que una lesión grave termina valorándose como una leve."
+
+msgid "Do not sign a release or give a recorded statement."
+msgstr "No firme una liberación de responsabilidad ni dé una declaración grabada."
+
+msgid "The adjuster calling within days works for the property owner. Roden Law offers free consultations."
+msgstr "El ajustador que lo llama a los pocos días trabaja para el dueño de la propiedad. Roden Law ofrece consultas gratuitas."
+
+# Dog bite
+
+msgid "Get medical attention — bite wounds infect."
+msgstr "Reciba atención médica: las mordeduras se infectan."
+
+msgid "Puncture wounds close over bacteria and often need irrigation and antibiotics. Facial bites and any bite to a child warrant immediate care."
+msgstr "Las heridas punzantes se cierran sobre las bacterias y a menudo necesitan lavado y antibióticos. Las mordeduras en la cara y cualquier mordedura a un niño requieren atención inmediata."
+
+msgid "Identify the owner and get the dog's vaccination records."
+msgstr "Identifique al dueño y consiga los registros de vacunación del perro."
+
+msgid "Name, address, and insurance if they will give it. Rabies vaccination status determines whether you face a post-exposure treatment decision, and it needs answering today."
+msgstr "El nombre, la dirección y el seguro, si se los da. El estado de la vacuna contra la rabia determina si usted tendrá que decidir sobre un tratamiento posterior a la exposición, y eso hay que resolverlo hoy."
+
+msgid "Report the bite to animal control."
+msgstr "Reporte la mordedura a control de animales."
+
+msgid "This is the step people skip because they do not want the dog harmed. It also creates the official record — and the history of prior complaints that often decides the case."
+msgstr "Este es el paso que la gente omite porque no quiere que le hagan daño al perro. También es el que crea el registro oficial, y el historial de quejas anteriores que a menudo decide el caso."
+
+msgid "Note whether the dog was loose, and photograph where it happened."
+msgstr "Anote si el perro estaba suelto y fotografíe el lugar donde ocurrió."
+
+msgid "In Georgia, showing the dog was off-leash in violation of a local leash or restraint ordinance can establish liability without proving the dog had ever bitten before (O.C.G.A. § 51-2-7). South Carolina imposes liability on the owner regardless of the dog's history (S.C. Code § 47-3-110)."
+msgstr "En Georgia, demostrar que el perro andaba sin correa en violación de una ordenanza local de correa o de sujeción puede establecer la responsabilidad sin probar que el perro hubiera mordido antes (O.C.G.A. § 51-2-7). Carolina del Sur impone la responsabilidad al dueño sin importar los antecedentes del perro (S.C. Code § 47-3-110)."
+
+msgid "Photograph the wounds as they heal, not just today."
+msgstr "Fotografíe las heridas mientras sanan, no solo hoy."
+
+msgid "Bite injuries scar, and scarring is a large part of the claim — particularly for children. Photograph on a consistent background at regular intervals."
+msgstr "Las mordeduras dejan cicatrices, y las cicatrices son una parte importante del reclamo, sobre todo en los niños. Tome las fotos sobre el mismo fondo y a intervalos regulares."
+
+msgid "Ask around about the dog's history."
+msgstr "Pregunte por los antecedentes del perro."
+
+msgid "Neighbors frequently know about earlier snaps, lunges, or complaints that never reached animal control. That knowledge is evidence."
+msgstr "Los vecinos a menudo saben de mordiscos, embestidas o quejas anteriores que nunca llegaron a control de animales. Lo que saben es evidencia."
+
+msgid "Do not let the owner talk you out of a claim as a favor."
+msgstr "No deje que el dueño lo convenza de no presentar un reclamo como favor."
+
+msgid "These claims are usually paid by homeowner's or renter's insurance, not out of the owner's pocket — which is exactly what that coverage exists for. Roden Law offers free consultations."
+msgstr "Estos reclamos normalmente los paga el seguro de vivienda o de inquilino, no el dueño de su bolsillo, y para eso existe precisamente esa cobertura. Roden Law ofrece consultas gratuitas."
+
+# Wrongful death
+
+msgid "Take care of your family first."
+msgstr "Primero, cuide de su familia."
+
+msgid "Nothing below is more urgent than that. The steps that follow exist so that decisions made in the first weeks do not quietly cost you later."
+msgstr "Nada de lo que sigue es más urgente que eso. Los pasos a continuación existen para que las decisiones tomadas en las primeras semanas no le cuesten, sin que se dé cuenta, más adelante."
+
+msgid "Do not let anything be repaired, scrapped, or thrown away."
+msgstr "No permita que nada se repare, se deseche como chatarra ni se tire."
+
+msgid "The vehicle, the equipment, the product, clothing, and personal effects are evidence. Insurers move quickly to total and dispose of vehicles — say no in writing until it has been examined."
+msgstr "El vehículo, el equipo, el producto, la ropa y los objetos personales son evidencia. Las aseguradoras actúan rápido para declarar los vehículos pérdida total y deshacerse de ellos: diga que no, por escrito, hasta que se haya examinado."
+
+msgid "Request the official reports."
+msgstr "Solicite los reportes oficiales."
+
+msgid "The police or incident report, and the autopsy or medical examiner's report. Ask for the complete file, including photographs, rather than the summary page."
+msgstr "El reporte policial o del incidente, y el reporte de la autopsia o del médico forense. Pida el expediente completo, incluidas las fotografías, y no solo la página de resumen."
+
+msgid "Be careful with early insurance contact."
+msgstr "Tenga cuidado con los primeros contactos de las aseguradoras."
+
+msgid "An offer that arrives before anyone knows the full picture is not generosity. Do not give a recorded statement, sign a release, or cash a settlement check without advice."
+msgstr "Una oferta que llega antes de que alguien conozca el panorama completo no es generosidad. No dé una declaración grabada, no firme una liberación de responsabilidad ni cobre un cheque de acuerdo sin asesoría legal."
+
+msgid "Find out who is legally entitled to bring the claim."
+msgstr "Averigüe quién tiene derecho legal a presentar el reclamo."
+
+# The O.C.G.A. § 51-4-2 cite is deliberately omitted: it is not in the signed GA pack (T-WD2).
+msgid "It is not simply whoever was closest. Georgia gives the claim first to the surviving spouse, then children, then parents, then the estate (O.C.G.A. § 51-4-2). South Carolina requires the personal representative of the estate to bring it — which means opening an estate first. Getting this wrong wastes months."
+msgstr "No es simplemente quien estaba más cerca. Georgia otorga el reclamo primero al cónyuge sobreviviente, luego a los hijos, luego a los padres y luego al patrimonio. Carolina del Sur exige que lo presente el representante personal del patrimonio, lo que significa abrir primero la sucesión. Equivocarse en esto hace perder meses."
+
+msgid "Keep the financial records."
+msgstr "Conserve los registros financieros."
+
+msgid "Pay records, benefits statements, and tax returns establish what the family lost. Funeral and medical bills belong in the file too."
+msgstr "Los comprobantes de pago, los estados de cuenta de beneficios y las declaraciones de impuestos establecen lo que perdió la familia. Las facturas del funeral y las médicas también deben ir en el expediente."
+
+msgid "Speak with an attorney before the deadline runs."
+msgstr "Hable con un abogado antes de que venza el plazo."
+
+msgid "The clock generally runs from the date of death, and separate claims may belong to the estate and to the family. Roden Law offers free, no-obligation consultations."
+msgstr "Por lo general, el plazo corre desde la fecha del fallecimiento, y puede haber reclamos separados que correspondan al patrimonio y a la familia. Roden Law ofrece consultas gratuitas y sin compromiso."
+
+# Brain injury
+
+msgid "Get evaluated even if you never lost consciousness."
+msgstr "Hágase evaluar aunque nunca haya perdido el conocimiento."
+
+msgid "Most traumatic brain injuries do not involve blacking out. \"Walked away from it\" is how serious injuries go undocumented on day one."
+msgstr "La mayoría de las lesiones cerebrales traumáticas no implican desmayarse. \"Salió caminando\" es la forma en que lesiones graves quedan sin documentar el primer día."
+
+msgid "Make sure every symptom is written into the record."
+msgstr "Asegúrese de que cada síntoma quede anotado en el expediente."
+
+msgid "Headaches, memory lapses, word-finding trouble, sleep disruption, irritability, and light or noise sensitivity. If it is not in the chart, it effectively did not happen."
+msgstr "Dolores de cabeza, lapsos de memoria, dificultad para encontrar palabras, alteraciones del sueño, irritabilidad y sensibilidad a la luz o al ruido. Si no está en el expediente, en la práctica no ocurrió."
+
+msgid "Keep a daily symptom journal."
+msgstr "Lleve un diario de síntomas."
+
+msgid "Brain injury symptoms fluctuate, and a contemporaneous log is far more persuasive than trying to reconstruct a bad month a year later."
+msgstr "Los síntomas de una lesión cerebral fluctúan, y un registro hecho al momento es mucho más convincente que tratar de reconstruir un mal mes un año después."
+
+msgid "Ask someone close to you to write down what they notice."
+msgstr "Pídale a alguien cercano que anote lo que nota."
+
+msgid "Families routinely see changes in temperament, patience, and follow-through that the injured person genuinely cannot perceive. That account carries real weight."
+msgstr "Las familias suelen notar cambios de carácter, de paciencia y de constancia que la persona lesionada realmente no puede percibir. Ese testimonio tiene mucho peso."
+
+msgid "Follow through on every referral."
+msgstr "Acuda a todas las citas a las que lo remitan."
+
+msgid "Neurology, imaging, vestibular therapy, and neuropsychological testing. Missed appointments become the argument that you had recovered."
+msgstr "Neurología, estudios de imagen, terapia vestibular y pruebas neuropsicológicas. Las citas perdidas se convierten en el argumento de que usted ya se había recuperado."
+
+msgid "Do not give a recorded statement while you are symptomatic."
+msgstr "No dé una declaración grabada mientras tenga síntomas."
+
+msgid "Difficulty recalling detail is a symptom of the injury. On a transcript it reads as inconsistency, and it will be used that way."
+msgstr "La dificultad para recordar detalles es un síntoma de la lesión. En una transcripción se lee como inconsistencia, y se usará de esa manera."
+
+msgid "Do not settle before the prognosis is known."
+msgstr "No llegue a un acuerdo antes de conocer el pronóstico."
+
+msgid "Cognitive and behavioral effects can take a year or more to declare themselves, and the lifetime cost of a brain injury dwarfs the early offer. Roden Law offers free consultations."
+msgstr "Los efectos cognitivos y de conducta pueden tardar un año o más en manifestarse, y el costo de por vida de una lesión cerebral supera por mucho la primera oferta. Roden Law ofrece consultas gratuitas."
+
+# Spinal cord injury
+
+msgid "Follow the acute care and rehabilitation plan."
+msgstr "Siga el plan de atención aguda y de rehabilitación."
+
+msgid "Early rehabilitation drives long-term function. It is also the record that establishes what was lost and what was recovered."
+msgstr "La rehabilitación temprana determina la función a largo plazo. También es el registro que establece qué se perdió y qué se recuperó."
+
+msgid "Document function, not just diagnosis."
+msgstr "Documente la capacidad funcional, no solo el diagnóstico."
+
+msgid "What you could do before and what you can do now — dressing, transfers, driving, working, caring for children. That comparison, not the imaging, is what a jury understands."
+msgstr "Lo que usted podía hacer antes y lo que puede hacer ahora: vestirse, trasladarse, manejar, trabajar, cuidar a sus hijos. Esa comparación, y no los estudios de imagen, es lo que un jurado entiende."
+
+msgid "Start a running record of costs from day one."
+msgstr "Lleve un registro continuo de los gastos desde el primer día."
+
+msgid "Wheelchairs and replacements, home and vehicle modification, catheters and supplies, transport, and paid or unpaid attendant care. These are the numbers that dominate the claim."
+msgstr "Sillas de ruedas y sus reemplazos, adaptaciones de la vivienda y del vehículo, catéteres y suministros, transporte, y la asistencia personal, pagada o no. Estas son las cifras que dominan el reclamo."
+
+msgid "Preserve the evidence of how it happened."
+msgstr "Conserve la evidencia de cómo ocurrió."
+
+msgid "The vehicle, the equipment, the scene. Do not authorize repair or disposal until it has been examined."
+msgstr "El vehículo, el equipo, el lugar. No autorice reparaciones ni que se deshagan de nada hasta que se haya examinado."
+
+msgid "Ask whether a third-party claim exists."
+msgstr "Pregunte si existe un reclamo contra terceros."
+
+msgid "If the injury happened at work, workers' compensation will not pay for pain and suffering or full lifetime care. A claim against someone other than your employer can."
+msgstr "Si la lesión ocurrió en el trabajo, la compensación laboral no pagará el dolor y sufrimiento ni todo el cuidado de por vida. Un reclamo contra alguien distinto de su empleador sí puede hacerlo."
+
+msgid "Do not accept an early offer."
+msgstr "No acepte una oferta temprana."
+
+msgid "These cases are valued on decades of future care, and that valuation needs a life-care plan and an economist — not an adjuster's estimate in month three. Roden Law offers free consultations."
+msgstr "Estos casos se valoran según décadas de cuidado futuro, y esa valoración requiere un plan de cuidado de por vida y un economista, no el cálculo de un ajustador en el tercer mes. Roden Law ofrece consultas gratuitas."
+
+# Maritime injury
+
+msgid "Report the injury and make sure it is entered in the log."
+msgstr "Reporte la lesión y asegúrese de que se anote en la bitácora."
+
+msgid "Tell the captain or your supervisor, confirm it was logged, and ask for a copy. An unlogged injury becomes an injury that allegedly happened ashore."
+msgstr "Avísele al capitán o a su supervisor, confirme que quedó anotada y pida una copia. Una lesión que no se anotó se convierte en una lesión que supuestamente ocurrió en tierra."
+
+msgid "Get medical care, and know your employer may owe it regardless of fault."
+msgstr "Reciba atención médica, y sepa que su empleador podría deberla sin importar quién tuvo la culpa."
+
+msgid "A seaman injured in the service of a vessel is generally entitled to maintenance and cure — medical treatment and basic living costs — without proving anyone did anything wrong."
+msgstr "Un marino que se lesiona al servicio de una embarcación generalmente tiene derecho a \"maintenance and cure\" (manutención y atención médica: tratamiento médico y gastos básicos de subsistencia) sin tener que probar que alguien hizo algo mal."
+
+msgid "Read the company accident form before you sign it."
+msgstr "Lea el formulario de accidente de la compañía antes de firmarlo."
+
+msgid "You will often be handed a statement written by someone else describing an incident you were present for. Correct it or decline to sign until you have advice."
+msgstr "A menudo le entregarán una declaración escrita por otra persona que describe un incidente que usted presenció. Corríjala o no la firme hasta recibir asesoría legal."
+
+msgid "Photograph the conditions and note who saw it."
+msgstr "Fotografíe las condiciones y anote quién lo vio."
+
+msgid "Deck condition, gear, lighting, weather, and staffing. Crews rotate off and become very hard to find."
+msgstr "El estado de la cubierta, el equipo, la iluminación, el clima y la dotación de personal. Las tripulaciones rotan y luego es muy difícil encontrarlas."
+
+msgid "Find out which law covers you — it changes everything."
+msgstr "Averigüe qué ley lo protege: eso lo cambia todo."
+
+msgid "Crew members generally fall under the Jones Act, with the right to sue the employer directly. Longshore, dock, and terminal workers generally fall under the federal LHWCA. Shoreside workers fall under state workers' compensation. The three pay very differently."
+msgstr "Los miembros de la tripulación generalmente están cubiertos por la Jones Act, con derecho a demandar directamente al empleador. Los estibadores y los trabajadores de muelles y terminales generalmente están cubiertos por la ley federal LHWCA. Los trabajadores en tierra están cubiertos por la compensación laboral del estado. Los tres pagan de maneras muy distintas."
+
+msgid "Do not give a recorded statement to a company representative or insurer."
+msgstr "No dé una declaración grabada a un representante de la compañía ni a una aseguradora."
+
+msgid "They are gathering a defense, not helping you. You are generally not required to provide one before speaking with an attorney."
+msgstr "Están preparando una defensa, no ayudándolo. Por lo general, usted no está obligado a darla antes de hablar con un abogado."
+
+msgid "Move quickly — maritime deadlines are short and vary by system."
+msgstr "Actúe rápido: los plazos marítimos son cortos y varían según el sistema."
+
+msgid "An LHWCA claim generally requires notice within 30 days and filing within one year (33 U.S.C. § 913). Roden Law offers free consultations."
+msgstr "Un reclamo bajo la LHWCA generalmente requiere dar aviso dentro de 30 días y presentarlo dentro de un año (33 U.S.C. § 913). Roden Law ofrece consultas gratuitas."
+
+# Product liability
+
+msgid "Keep the product. Do not return it, repair it, or send it back."
+msgstr "Conserve el producto. No lo devuelva, no lo repare ni lo envíe de regreso."
+
+msgid "This is the whole case. Manufacturers and retailers commonly offer to \"inspect and replace\" the item — once it leaves your hands the evidence is gone and it is generally not coming back."
+msgstr "Este es todo el caso. Los fabricantes y vendedores suelen ofrecer \"inspeccionar y reemplazar\" el artículo: una vez que sale de sus manos, la evidencia desaparece y por lo general no regresa."
+
+msgid "Keep everything that came with it."
+msgstr "Conserve todo lo que venía con él."
+
+msgid "Box, packaging, manual, warning labels, receipt, and any recall or safety notice. Warnings — and their absence — are frequently the heart of the claim."
+msgstr "La caja, el empaque, el manual, las etiquetas de advertencia, el recibo y cualquier aviso de retiro del mercado o de seguridad. Las advertencias, y su ausencia, suelen ser el centro del reclamo."
+
+msgid "Photograph the product and the scene before anything is moved."
+msgstr "Fotografíe el producto y el lugar antes de que se mueva algo."
+
+msgid "The failure itself, the surrounding area, and how it was set up or installed. Do not disassemble it to work out what went wrong."
+msgstr "La falla en sí, el área alrededor y cómo estaba armado o instalado. No lo desarme para averiguar qué salió mal."
+
+msgid "Write down the identifying details."
+msgstr "Anote los datos de identificación."
+
+msgid "Make, model, serial or lot number, where and when you bought it, and exactly how you were using it. Model-specific recalls and prior complaints can often be traced from these alone."
+msgstr "La marca, el modelo, el número de serie o de lote, dónde y cuándo lo compró, y exactamente cómo lo estaba usando. Con solo estos datos a menudo se pueden rastrear retiros del mercado y quejas anteriores de ese modelo."
+
+msgid "Get medical attention and connect the injury to the product in the record."
+msgstr "Reciba atención médica y relacione la lesión con el producto en el expediente."
+
+msgid "Tell the provider what caused it, specifically. \"Burn\" and \"burn from a lithium battery in a scooter that ignited while charging\" are very different chart entries."
+msgstr "Dígale al proveedor médico qué la causó, con precisión. \"Quemadura\" y \"quemadura por una batería de litio de un scooter que se incendió mientras se cargaba\" son anotaciones muy distintas en el expediente."
+
+msgid "Be cautious about contacting the manufacturer yourself."
+msgstr "Tenga cuidado al contactar usted mismo al fabricante."
+
+msgid "Their first response is usually a request to ship the item back for analysis. Report a safety hazard if you wish, but get advice before surrendering the product."
+msgstr "Su primera respuesta suele ser pedirle que envíe el artículo para analizarlo. Reporte el peligro de seguridad si lo desea, pero busque asesoría legal antes de entregar el producto."
+
+msgid "Do not accept a refund or replacement in exchange for signing."
+msgstr "No acepte un reembolso ni un reemplazo a cambio de firmar."
+
+msgid "A check for the purchase price is sometimes paired with a release of every claim arising from the injury. Roden Law offers free consultations."
+msgstr "A veces un cheque por el precio de compra viene acompañado de una liberación de todo reclamo derivado de la lesión. Roden Law ofrece consultas gratuitas."
+
+# Burn injury
+
+msgid "Get to a burn center if one is reachable."
+msgstr "Vaya a un centro de quemados si puede llegar a uno."
+
+msgid "Burn depth is routinely underestimated in a general emergency room, and early specialist treatment changes both outcome and scarring."
+msgstr "En una sala de emergencias general se suele subestimar la profundidad de una quemadura, y el tratamiento temprano con especialistas cambia tanto el resultado como las cicatrices."
+
+msgid "Preserve whatever caused it."
+msgstr "Conserve lo que la causó."
+
+msgid "The heater, appliance, battery, chemical container, lighter, or vehicle part. Do not discard it, return it, or allow it to be replaced under warranty."
+msgstr "El calentador, el electrodoméstico, la batería, el envase del químico, el encendedor o la pieza del vehículo. No lo tire, no lo devuelva ni permita que lo reemplacen por garantía."
+
+msgid "Photograph the injury through every stage of healing."
+msgstr "Fotografíe la lesión en cada etapa de la cicatrización."
+
+msgid "Burns look dramatically different at one week, three months, and a year. A consistent photographic record is one of the most valuable things you can build."
+msgstr "Las quemaduras se ven muy distintas a la semana, a los tres meses y al año. Un registro fotográfico constante es una de las cosas más valiosas que puede reunir."
+
+msgid "Identify the cause precisely."
+msgstr "Identifique la causa con precisión."
+
+msgid "Defective product, gas or propane leak, chemical exposure, electrical fault, building code violation, or a workplace process. Who is responsible follows entirely from this."
+msgstr "Un producto defectuoso, una fuga de gas o de propano, una exposición química, una falla eléctrica, una violación del código de construcción o un proceso de trabajo. De esto depende por completo quién es responsable."
+
+msgid "Document what the injury costs beyond the hospital bill."
+msgstr "Documente lo que le cuesta la lesión más allá de la factura del hospital."
+
+msgid "Compression garments, scar treatment, reconstructive procedures, time away from work, and psychological care. Burn injuries carry a large non-medical burden that goes unclaimed when it is not recorded."
+msgstr "Prendas de compresión, tratamiento de cicatrices, procedimientos reconstructivos, tiempo sin trabajar y atención psicológica. Las quemaduras conllevan una gran carga no médica que queda sin reclamar cuando no se registra."
+
+msgid "Do not settle before the scarring has stabilized."
+msgstr "No llegue a un acuerdo antes de que las cicatrices se estabilicen."
+
+msgid "Final appearance and the need for revision surgery are often not clear for a year or more. An early settlement closes the door on all of it. Roden Law offers free consultations."
+msgstr "La apariencia final y la necesidad de una cirugía de revisión a menudo no se conocen hasta un año o más después. Un acuerdo temprano cierra la puerta a todo eso. Roden Law ofrece consultas gratuitas."
+
+# Construction accident
+
+msgid "Get medical attention and report the injury to your employer."
+msgstr "Reciba atención médica y reporte la lesión a su empleador."
+
+msgid "Report it in writing and keep a copy. Workers' compensation notice deadlines are short and separate from anything else here."
+msgstr "Repórtela por escrito y conserve una copia. Los plazos de notificación de la compensación laboral son cortos e independientes de todo lo demás en esta lista."
+
+msgid "Know that serious incidents must be reported to OSHA."
+msgstr "Sepa que los incidentes graves deben reportarse a OSHA."
+
+msgid "An employer must report a work-related fatality within 8 hours, and an in-patient hospitalization, amputation, or loss of an eye within 24 hours (29 CFR 1904.39). If that does not happen, the report can be made directly."
+msgstr "El empleador debe reportar una muerte relacionada con el trabajo dentro de las 8 horas, y una hospitalización, una amputación o la pérdida de un ojo dentro de las 24 horas (29 CFR 1904.39). Si eso no ocurre, el reporte puede hacerse directamente."
+
+msgid "Photograph the site before it changes."
+msgstr "Fotografíe la obra antes de que cambie."
+
+msgid "Scaffolding, ladders, guardrails, trench shoring, fall protection, and the equipment involved. Sites are corrected and rebuilt within hours of an injury."
+msgstr "Los andamios, las escaleras, las barandas, el apuntalamiento de zanjas, la protección contra caídas y el equipo involucrado. Las obras se corrigen y se reconstruyen a las pocas horas de una lesión."
+
+msgid "Write down every company on that site."
+msgstr "Anote todas las compañías que trabajan en esa obra."
+
+msgid "General contractor, subcontractors, equipment owners, and delivery firms. This is the most valuable ten minutes you will spend — a claim against a company other than your employer can recover damages workers' compensation never pays."
+msgstr "El contratista general, los subcontratistas, los dueños del equipo y las empresas de entrega. Son los diez minutos más valiosos que va a dedicar: un reclamo contra una compañía distinta de su empleador puede recuperar daños que la compensación laboral nunca paga."
+
+msgid "Get witness names and phone numbers, not just first names."
+msgstr "Consiga el nombre completo y el teléfono de los testigos, no solo su nombre de pila."
+
+msgid "Crews move between sites and subcontractors finish and leave. A first name and \"he worked for the framing crew\" is not enough to find someone later."
+msgstr "Las cuadrillas se mueven de una obra a otra y los subcontratistas terminan y se van. Un nombre de pila y \"trabajaba con la cuadrilla de estructura\" no bastan para encontrar a alguien después."
+
+msgid "Preserve the equipment involved."
+msgstr "Conserve el equipo involucrado."
+
+msgid "Ask in writing that the ladder, lift, saw, or harness be kept and not returned to service or to the rental company."
+msgstr "Pida por escrito que se guarde la escalera, el elevador, la sierra o el arnés, y que no se vuelva a usar ni se devuelva a la compañía de alquiler."
+
+msgid "Do not give a recorded statement to any insurer."
+msgstr "No dé una declaración grabada a ninguna aseguradora."
+
+msgid "Several carriers may contact you, and none of them work for you. Workers' compensation and a third-party claim can run in parallel — Roden Law offers free consultations."
+msgstr "Varias aseguradoras pueden contactarlo, y ninguna trabaja para usted. La compensación laboral y un reclamo contra terceros pueden tramitarse al mismo tiempo. Roden Law ofrece consultas gratuitas."
+
+# Template strings, 2026-09-30 Spanish pillar sweep (T-ES2..T-ES7)
+
+# T-ES2: stateless branch, replaces sprintf( '%s law…', __( 'State' ) ).
+msgid "State law requires accident reports when there are injuries or significant property damage. Request a copy of the police report."
+msgstr "La ley estatal exige reportes de accidente cuando hay lesiones o daños materiales significativos. Solicite una copia del reporte policial."
+
+# T-ES3
+msgid "If you miss the filing deadline, your claim will be barred and you will permanently lose the right to pursue benefits. Because the employer-notice deadline comes first and is far shorter, it is worth speaking with an attorney as soon as you are hurt."
+msgstr "Si no presenta su reclamo dentro del plazo, el reclamo quedará prohibido y perderá para siempre el derecho a recibir beneficios. Como el plazo para avisar a su empleador llega primero y es mucho más corto, conviene hablar con un abogado en cuanto se lesione."
+
+# T-ES4
+msgid "Results shown are gross settlement/verdict amounts before fees and costs. Past results do not guarantee similar outcomes."
+msgstr "Los resultados mostrados son montos brutos de acuerdos o veredictos, antes de honorarios y costos. Los resultados anteriores no garantizan resultados similares."
+
+# T-ES6
+msgctxt "workers compensation claim"
+msgid "Georgia Filing Deadline"
+msgstr "Plazo para Presentar su Reclamo en Georgia"
+
+# T-ES6
+msgctxt "workers compensation claim"
+msgid "South Carolina Filing Deadline"
+msgstr "Plazo para Presentar su Reclamo en Carolina del Sur"
+
+# T-ES6
+#, php-format
+msgctxt "workers compensation claim"
+msgid "%s Filing Deadline"
+msgstr "Plazo para Presentar su Reclamo en %s"
+
+# T-ES7
+msgid "If you were hurt on the job, contact us for a free, no-obligation review of your workers’ compensation claim and any third-party claim — at no upfront cost."
+msgstr "Si se lesionó en el trabajo, contáctenos para una revisión gratuita y sin compromiso de su reclamo de compensación laboral y de cualquier reclamo contra terceros, sin costo inicial."
+
+# T-ES7
+msgid "If you lost a loved one because of someone else’s negligence, contact us for a free, confidential review — at no upfront cost."
+msgstr "Si perdió a un ser querido por la negligencia de otra persona, contáctenos para una revisión gratuita y confidencial, sin costo inicial."
