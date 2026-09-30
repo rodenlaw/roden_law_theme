@@ -1,0 +1,100 @@
+{
+    "generated": "2026-09-30T18:42:02+00:00",
+    "mode": "apply",
+    "fields": [
+        {
+            "post": 4882,
+            "key": "_roden_why_hire",
+            "before": "<p>Mientras su familia atraviesa el duelo, la aseguradora del responsable ya está trabajando para pagar lo menos posible. En Roden Law cargamos con todo el peso legal: investigamos la causa de la muerte con expertos, identificamos a todos los responsables y todas las pólizas de seguro, calculamos el valor completo de la vida de su ser querido — ingresos futuros, cuidado de los hijos, compañía — y peleamos el caso en negociación o en juicio. Usted se concentra en su familia; nosotros nos encargamos del resto.</p><p>Tratamos cada caso con la discreción y el respeto que su familia merece, con consultas en español las 24 horas. Con 62 años de experiencia combinada, más de 5,000 casos y 6 oficinas en Georgia y Carolina del Sur, no cobramos honorarios a menos que ganemos. Llame al 1-844-RESULTS.</p>",
+            "after": "<p>Mientras su familia atraviesa el duelo, la aseguradora del responsable ya está trabajando para pagar lo menos posible. En Roden Law cargamos con todo el peso legal: investigamos la causa de la muerte con expertos, identificamos a todos los responsables y todas las pólizas de seguro, calculamos todo lo que la ley permite reclamar por la pérdida de su ser querido — ingresos futuros, cuidado de los hijos, compañía y, en Georgia, el valor completo de su vida — y peleamos el caso en negociación o en juicio. Usted se concentra en su familia; nosotros nos encargamos del resto.</p><p>Tratamos cada caso con la discreción y el respeto que su familia merece, con consultas en español las 24 horas. Con 62 años de experiencia combinada, más de 5,000 casos y 6 oficinas en Georgia y Carolina del Sur, no cobramos honorarios a menos que ganemos. Llame al 1-844-RESULTS.</p>",
+            "ids": [
+                "M-ES-WD1"
+            ]
+        },
+        {
+            "post": 5200,
+            "key": "_roden_pillar_negligence_intro",
+            "before": "En {state_full}, un caso de lesiones personales se gana probando los cuatro elementos de la negligencia: el deber de cuidado, el incumplimiento de ese deber, la causalidad y los daños. Cada tipo de caso añade sus propias reglas — los productos defectuosos permiten teorías de responsabilidad estricta, la responsabilidad de propietarios depende de si usted era invitado, licenciatario o intruso, y la negligencia médica exige una declaración jurada de un experto presentada junto con la demanda. La culpa compartida también pesa: en {state_full} la aseguradora peleará cada punto porcentual, porque en Georgia usted no recupera nada si tuvo 50% o más de la culpa y en Carolina del Sur si tuvo 51% o más. El plazo para demandar es de **2 años en Georgia (O.C.G.A. § 9-3-33) y 3 años en Carolina del Sur (S.C. Code § 15-3-530)** contados desde la fecha de la lesión; si se vence, pierde el derecho a reclamar.",
+            "after": "En {state_full}, un caso de lesiones personales se gana probando los cuatro elementos de la negligencia: el deber de cuidado, el incumplimiento de ese deber, la causalidad y los daños. Cada tipo de caso añade sus propias reglas — los productos defectuosos permiten teorías de responsabilidad estricta, la responsabilidad de propietarios depende de si usted era invitado, licenciatario o intruso, y la negligencia médica exige desde el inicio la declaración jurada de un experto calificado. La culpa compartida también pesa: en {state_full} la aseguradora peleará cada punto porcentual, porque en Georgia usted no recupera nada si tuvo 50% o más de la culpa y en Carolina del Sur si tuvo más del 50%. El plazo para demandar es de **2 años en Georgia (O.C.G.A. § 9-3-33) y 3 años en Carolina del Sur (S.C. Code § 15-3-530)** contados desde la fecha de la lesión; si se vence, pierde el derecho a reclamar.",
+            "ids": [
+                "M-ES-PI1",
+                "M-ES-PI2"
+            ]
+        },
+        {
+            "post": 3609,
+            "key": "_roden_common_injuries",
+            "before": [
+                {
+                    "name": "Full Value of the Life of the Deceased",
+                    "description": "In Georgia, wrongful death damages are measured by the \"full value of the life\" of the decedent (O.C.G.A. § 51-4-2), encompassing both the economic and intangible value of the person's life — not merely their earning capacity."
+                },
+                {
+                    "name": "Lost Financial Support and Benefits",
+                    "description": "Families may recover the income, wages, salary, benefits, and financial contributions the deceased would have provided over their expected lifetime, including retirement benefits and health insurance."
+                },
+                {
+                    "name": "Loss of Companionship and Consortium",
+                    "description": "Surviving spouses, children, and parents may recover damages for the loss of love, companionship, guidance, emotional support, and the comfort the deceased provided."
+                },
+                {
+                    "name": "Medical and Funeral Expenses",
+                    "description": "All medical bills incurred before death, as well as funeral, burial, and cremation costs, are recoverable as part of a wrongful death or survival action."
+                },
+                {
+                    "name": "Pain and Suffering Before Death",
+                    "description": "Through a survival action, the estate can recover compensation for the conscious pain, suffering, and emotional distress the deceased experienced between the injury and death."
+                },
+                {
+                    "name": "Loss of Parental Guidance",
+                    "description": "Minor children who lose a parent may recover damages for the loss of parental care, training, guidance, education, and moral upbringing they would have received."
+                },
+                {
+                    "name": "Punitive Damages",
+                    "description": "In cases involving gross negligence, willful misconduct, or intentional acts, courts may award punitive damages to punish the defendant and deter similar behavior in the future."
+                },
+                {
+                    "name": "Estate and Inheritance Losses",
+                    "description": "The estate may recover the value of assets, savings, and inheritance that the deceased would have accumulated and passed on to beneficiaries had they lived a full life."
+                }
+            ],
+            "after": [
+                {
+                    "name": "Full Value of the Life of the Deceased",
+                    "description": "In Georgia, wrongful death damages are measured by the \"full value of the life\" of the decedent (O.C.G.A. § 51-4-1), encompassing both the economic and intangible value of the person's life — not merely their earning capacity."
+                },
+                {
+                    "name": "Lost Financial Support and Benefits",
+                    "description": "Families may recover the income, wages, salary, benefits, and financial contributions the deceased would have provided over their expected lifetime, including retirement benefits and health insurance."
+                },
+                {
+                    "name": "Loss of Companionship and Consortium",
+                    "description": "Surviving spouses, children, and parents may recover damages for the loss of love, companionship, guidance, emotional support, and the comfort the deceased provided."
+                },
+                {
+                    "name": "Medical and Funeral Expenses",
+                    "description": "All medical bills incurred before death, as well as funeral, burial, and cremation costs, are recoverable as part of a wrongful death or survival action."
+                },
+                {
+                    "name": "Pain and Suffering Before Death",
+                    "description": "Through a survival action, the estate can recover compensation for the conscious pain, suffering, and emotional distress the deceased experienced between the injury and death."
+                },
+                {
+                    "name": "Loss of Parental Guidance",
+                    "description": "Minor children who lose a parent may recover damages for the loss of parental care, training, guidance, education, and moral upbringing they would have received."
+                },
+                {
+                    "name": "Punitive Damages",
+                    "description": "In cases involving gross negligence, willful misconduct, or intentional acts, courts may award punitive damages to punish the defendant and deter similar behavior in the future."
+                },
+                {
+                    "name": "Estate and Inheritance Losses",
+                    "description": "The estate may recover the value of assets, savings, and inheritance that the deceased would have accumulated and passed on to beneficiaries had they lived a full life."
+                }
+            ],
+            "ids": [
+                "M-EN-WD1"
+            ]
+        }
+    ]
+}

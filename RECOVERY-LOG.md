@@ -3143,3 +3143,5 @@ punitive exceptions, WC deadline/notice cites. Batch data/facts/en-pillars-resid
 dry run clean, owner ran the apply. Backup docs/backups/en-pillars-residuals-batch-2026-09-30.json.
 Caches flushed; JSON-LD guard PASS; content/meta.json regenerated. Staged, not applied:
 bin/fix-pillar-meta-2026-09-30.php (4 apply-class meta fixes, dry run clean).
+
+Meta patcher applied the same day (owner ran it): 4 edits in 3 fields; backup docs/backups/pillar-meta-2026-09-30.json; caches flushed; content/meta.json regenerated.
