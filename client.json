@@ -23,7 +23,7 @@
   },
   "attorneys": [
     { "slug": "eric-roden", "name": "Eric Roden", "title": "Founding Partner, CEO", "barStates": ["GA"], "roles": ["expertVoice", "reviewer"] },
-    { "slug": "tyler-love", "name": "Tyler Love", "title": "Founding Partner, CTO", "barStates": ["GA"], "roles": [] },
+    { "slug": "tyler-love", "name": "Tyler Love", "title": "Founding Partner, CTO", "barStates": ["GA"], "roles": ["reviewer"] },
     { "slug": "joshua-dorminy", "name": "Joshua Dorminy", "title": "Partner", "barStates": ["GA", "SC"], "roles": [] },
     { "slug": "graeham-gillin", "name": "Graeham C. Gillin", "title": "Partner, COO", "barStates": ["SC"], "roles": ["reviewer"] },
     { "slug": "ivy-montano", "name": "Ivy S. Montano", "title": "Associate", "barStates": ["SC"], "roles": [] }

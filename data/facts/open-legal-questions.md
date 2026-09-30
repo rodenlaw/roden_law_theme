@@ -10,6 +10,9 @@ Full context, exact sentences and proposed wording:
 
 ## For Graeham C. Gillin (South Carolina)
 
+> **2026-09-30:** WD-G1 / B3-G3, WD-G3, WD-G4, NC-G3 and MC-G1 / B3-G4 are **answered**. See
+> attorney-approvals-2026-09-30.md. T-WD1 stands: ordinary WD runs from the death under § 15-3-530(6).
+
 | Id | Question | Where it matters | Current state |
 |---|---|---|---|
 | WD-G1 / B3-G3 | For a death caused by medical malpractice, does § 15-3-545 (three years from treatment or discovery, six-year repose) govern, or § 15-3-530(6) ("upon the death")? Also: is the SCTCA "date of loss" the date of death? | 4101; Charleston wrongful death (3649); 4337/4339/4346; 4562 | Pages say "generally within three years" and don't give a start date. The signed `SC 15-3-530` entry does not include (6). |
@@ -19,6 +22,9 @@ Full context, exact sentences and proposed wording:
 | MC-G1 / B3-G4 | Keep or cut the helmet lines: non-use "runs through ordinary comparative fault" / "not an automatic bar"? These are uncited helmet-defense law, the class removed from the motorcycle pillar. | 4814 FAQ[49]/[50]; ES 4937 FAQ[57]/[58] | Unchanged (the "adult riders" wording was fixed 2026-09-28). |
 
 ## For Eric Roden (Georgia)
+
+> **2026-09-30:** Tyler Love (GA) is now a Georgia reviewer (owner). He answered the 12 resource-guide
+> and seat-belt questions; see attorney-approvals-2026-09-30.md. The items below were not in that email.
 
 Page wording only. Never add authorities to the shared GA pack on his behalf.
 
