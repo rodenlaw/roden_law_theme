@@ -1,0 +1,572 @@
+{
+ "_note": "Replay for remediation-2026-09-30-ga-resources.md. corrected: 57 entries (9 corrected sentences, 31 whole corrected surfaces, 17 positive controls). gaps: the original erroneous sentences, expect [] because the engine is silent on them; they document blind spots and are not controls.",
+ "states": [
+  "GA"
+ ],
+ "entries": [
+  {
+   "id": "fix-CS-1a",
+   "page": "/resources/georgia-car-seat-laws/",
+   "surface": "keyTakeaways",
+   "jurisdiction": "georgia-only",
+   "text": "A child under eight may ride in front only if the vehicle has no appropriate rear seat, or every appropriate rear seat is taken by other children; a physician's written statement about a medical condition is a separate exception.",
+   "expect": []
+  },
+  {
+   "id": "fix-CS-1b",
+   "page": "/resources/georgia-car-seat-laws/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "The statute has four exits and exceptions that parents ask about most:",
+   "expect": []
+  },
+  {
+   "id": "fix-CS-1c",
+   "page": "/resources/georgia-car-seat-laws/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Front seat: a child under eight may ride in front only if the vehicle has no appropriate rear seating position, or every appropriate rear position is occupied by other children.",
+   "expect": []
+  },
+  {
+   "id": "fix-CS-1d",
+   "page": "/resources/georgia-car-seat-laws/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Lap belt: a child who weighs at least 40 pounds may be secured by a lap belt only if the vehicle has no lap-and-shoulder belts, or all of them except the driver's are being used by other children. Medical: these requirements do not apply when the child's parent or guardian obtains a physician's written statement that a physical or medical condition of the child prevents restraining the child in the way the law requires.",
+   "expect": []
+  },
+  {
+   "id": "fix-CS-1e",
+   "page": "/resources/georgia-car-seat-laws/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "A child under eight may sit in the front seat in Georgia only if the vehicle has no appropriate rear seating position for the child, or every appropriate rear position is already occupied by other children (O.C.G.A. § 40-8-76). A physician's written statement about the child's medical condition is a separate exception.",
+   "expect": []
+  },
+  {
+   "id": "fix-CS-1f",
+   "page": "/resources/georgia-car-seat-laws/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "Can a child sit in the front seat in Georgia? A child under eight may sit in front only if the vehicle has no appropriate rear seating position, or every appropriate rear position is occupied by other children (O.C.G.A. § 40-8-76). A physician's written statement about the child's medical condition is a separate exception. The front-seat exception carries no weight condition; the 40-pound provision belongs to the lap-belt rule.",
+   "expect": []
+  },
+  {
+   "id": "fix-UM-1a",
+   "page": "/resources/georgia-uninsured-motorist-coverage/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Whether your policy includes it, and at what limits, is printed on your declarations page, the summary sheet that lists each coverage and its limits.",
+   "expect": []
+  },
+  {
+   "id": "fix-UM-1b",
+   "page": "/resources/georgia-uninsured-motorist-coverage/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "Is uninsured motorist coverage required in Georgia? Georgia requires insurers to offer uninsured motorist coverage, under O.C.G.A. § 33-7-11. Whether your policy includes it, and at what limits, is shown on your declarations page, the summary sheet listing each coverage and its limits. If you cannot find it, ask your agent for a complete copy of your policy.",
+   "expect": []
+  },
+  {
+   "id": "fix-WD-1",
+   "page": "/resources/georgia-wrongful-death-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "A Georgia wrongful death claim is measured by what the evidence can prove about the full value of the life lost, reduced by any fault of the person who died and limited in practice by the insurance and assets available to pay it.",
+   "expect": []
+  },
+  {
+   "id": "whole-car-body",
+   "page": "/resources/georgia-car-seat-laws/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "<p>In Georgia, a child under eight must ride in a rear seat, properly restrained in an appropriate, federally approved child passenger restraint such as a car seat or booster seat, under <strong>O.C.G.A. § 40-8-76</strong>. A child over 4 feet 9 inches tall must use a safety belt instead. This guide explains that rule, when a child may ride up front, the fine for a violation, and what a car seat question can mean for an injury claim after a crash. If another driver hurt your child, Roden Law offers a free case review and charges no fees unless we win.</p>\n\n<h2>What is the car seat law in Georgia?</h2>\n\n<p>Georgia's car seat law requires a driver to properly restrain any child under eight in an appropriate, federally approved child passenger restraining system, in a rear seat of the vehicle (O.C.G.A. § 40-8-76). The rule applies in passenger cars, vans and pickup trucks. Taxis and public transit vehicles are excluded.</p>\n\n<p>The statute has four exits and exceptions that parents ask about most:</p>\n\n<ul>\n<li><strong>Height:</strong> a child over 4 feet 9 inches tall must be restrained by a safety belt instead of a child restraint.</li>\n<li><strong>Front seat:</strong> a child under eight may ride in front only if the vehicle has no appropriate rear seating position, or every appropriate rear position is occupied by other children.</li>\n<li><strong>Lap belt:</strong> a child who weighs at least 40 pounds may be secured by a lap belt only if the vehicle has no lap-and-shoulder belts, or all of them except the driver's are being used by other children.</li>\n<li><strong>Medical:</strong> these requirements do not apply when the child's parent or guardian obtains a physician's written statement that a physical or medical condition of the child prevents restraining the child in the way the law requires.</li>\n</ul>\n\n<h2>At what age can a child stop using a car seat in Georgia?</h2>\n\n<p>Georgia law allows a child to move from a car seat or booster to a safety belt at age eight, or earlier once the child is over 4 feet 9 inches tall (O.C.G.A. § 40-8-76). The law sets the minimum. Whether your child is actually ready depends on how the adult belt fits.</p>\n\n<p><strong>Safety guidance, not law:</strong> the table below separates what Georgia requires from the stage-by-stage practice many parents follow. The guidance column is practical advice, keyed to the height and weight limits printed on each seat's label; it is not a legal requirement.</p>\n\n<table>\n<thead>\n<tr><th>Stage</th><th>Safety guidance (not law)</th><th>What Georgia law requires</th></tr>\n</thead>\n<tbody>\n<tr><td>Rear-facing car seat</td><td>Use until your child passes the seat's rear-facing height or weight limit</td><td rowspan=\"3\">Under eight: an appropriate, federally approved restraint, in a rear seat (O.C.G.A. § 40-8-76)</td></tr>\n<tr><td>Forward-facing seat with a harness</td><td>Use until your child passes the harness height or weight limit</td></tr>\n<tr><td>Belt-positioning booster seat</td><td>Use until the adult lap-and-shoulder belt fits without it</td></tr>\n<tr><td>Safety belt alone</td><td>Use once the belt fits the way it fits an adult</td><td>Allowed at age eight, or earlier if over 4 feet 9 inches tall</td></tr>\n</tbody>\n</table>\n\n<p>Run this fit check before your child rides with the belt alone, in every vehicle: back flat against the seat, knees bent at the seat's edge, the lap belt low across the upper thighs and hips, and the shoulder belt across the middle of the chest and shoulder, away from the neck. If any answer is no, keep using the booster. That check is safety guidance, not a legal test.</p>\n\n<h2>Can a child sit in the front seat in Georgia?</h2>\n\n<p>A child under eight may sit in the front seat in Georgia only if the vehicle has no appropriate rear seating position for the child, or every appropriate rear position is already occupied by other children (O.C.G.A. § 40-8-76). A physician's written statement about the child's medical condition is a separate exception. The front-seat exception turns on rear-seat availability and carries no weight condition.</p>\n\n<p>Many websites say a child must weigh 40 pounds to ride up front. That confuses two provisions: the 40-pound figure belongs to the lap-belt rule covered below. If your child must ride in front, move the vehicle seat as far back as it goes and follow the airbag warnings in your vehicle and car seat manuals.</p>\n\n<h2>When can a child be secured by a lap belt in Georgia?</h2>\n\n<p>A child who weighs at least 40 pounds may be secured by a lap belt only when the vehicle has no lap-and-shoulder belts, or when all of them except the driver's are being used by other children (O.C.G.A. § 40-8-76). The 40-pound provision governs lap-belt use and nothing else.</p>\n\n<p>For everyday driving, remember that a belt-positioning booster is designed to work with a lap-and-shoulder belt. The booster raises your child so the shoulder portion crosses the chest and shoulder, which a lap belt alone cannot do.</p>\n\n<h2>What is the fine for a car seat violation in Georgia?</h2>\n\n<p>A car seat violation in Georgia carries a fine of up to $50 for a first conviction and up to $100 for a later one, with no additional fees or surcharges (O.C.G.A. § 40-8-76). The larger cost of an unrestrained or poorly restrained child is measured in injuries, which is why the stage guidance above matters more than the fine.</p>\n\n<h2>Does a car seat violation affect an injury claim in Georgia?</h2>\n\n<p>Georgia limits what a car seat violation can do to an injury claim, under O.C.G.A. § 40-8-76(c). A violation is not negligence per se or contributory negligence per se, and the same subsection provides that it cannot be the basis for cancelling insurance coverage or raising insurance rates. If an adjuster raises a car seat question about your child's crash, talk to a lawyer before you answer it.</p>\n\n<p>Seat belts follow a separate section. Following SB 68, approved in April 2025, O.C.G.A. § 40-8-76.1(d) permits seat belt non-use to be admitted on negligence, comparative negligence, causation, assumption of risk and apportionment, and it may diminish recovery. There is no percentage cap on that reduction.</p>\n\n<h2>What should I do if my child was hurt in a Georgia car accident?</h2>\n\n<p>Get your child medical care first, even if the injuries look minor, and keep every record from that visit. Then protect the evidence:</p>\n\n<ul>\n<li>Keep the car seat or booster rather than throwing it away. It is evidence, and its manual tells you whether it must be replaced after a crash.</li>\n<li>Photograph the seat, how it was installed, the vehicles and the scene.</li>\n<li>Get the crash report number and the names of any witnesses.</li>\n<li>Let a lawyer handle calls from the other driver's insurer.</li>\n</ul>\n\n<p>Georgia's general deadline to file a personal injury lawsuit is <strong>two years from the date of injury</strong> under O.C.G.A. § 9-3-33. Special rules can change how a child's deadline is counted, so confirm the date with a lawyer early rather than assuming you have more time. Our guide to the <a href=\"/resources/georgia-statute-of-limitations/\">Georgia statute of limitations for injury claims</a> explains the deadlines, and our <a href=\"/resources/georgia-car-accident-settlement-value/\">Georgia car accident settlement value guide</a> covers what a claim may be worth.</p>\n\n<h2>Talk to a Georgia car accident lawyer for free</h2>\n\n<p>A crash that injures your child is every parent's worst moment, and you should not have to face the insurance companies alone. Roden Law's <a href=\"/georgia-car-accident-lawyers/\">Georgia car accident lawyers</a> investigate the crash, deal with the insurers and pursue full compensation for your child's injuries. If the crash happened in Chatham County, see our <a href=\"/car-accident-lawyers/savannah-ga/\">Savannah car accident lawyers</a> page, or visit our <a href=\"/locations/georgia/savannah/\">Savannah office</a> or <a href=\"/locations/georgia/darien/\">Darien office</a>. For injuries beyond vehicle crashes, see our <a href=\"/georgia-personal-injury-lawyer/\">Georgia personal injury lawyers</a>. Call 1-844-RESULTS or (912) 303-5850 for a free case review. You pay nothing upfront and no legal fees unless we win your case.</p>",
+   "expect": []
+  },
+  {
+   "id": "whole-car-kt",
+   "page": "/resources/georgia-car-seat-laws/",
+   "surface": "keyTakeaways",
+   "jurisdiction": "georgia-only",
+   "text": "In Georgia, a child under eight must be properly restrained in an appropriate, federally approved child passenger restraint, such as a car seat or booster seat, in a rear seat (O.C.G.A. § 40-8-76). A child over 4 feet 9 inches tall must use a safety belt instead. A child under eight may ride in front only if the vehicle has no appropriate rear seat, or every appropriate rear seat is taken by other children; a physician's written statement about a medical condition is a separate exception. The 40-pound provision governs lap-belt use; it is not a front-seat rule. A violation carries a fine of up to $50 for a first conviction and up to $100 after that. Under § 40-8-76(c), a violation is not negligence per se. If another driver injured your child, Roden Law offers a free case review, with no fees unless we win.",
+   "expect": []
+  },
+  {
+   "id": "whole-car-meta",
+   "page": "/resources/georgia-car-seat-laws/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Georgia Car Seat Laws: Age, Booster & Front Seat Rules. Georgia car seat law: children under 8 ride in a rear seat in an approved car seat or booster unless over 4'9\". Front seat rules and fines explained.",
+   "expect": []
+  },
+  {
+   "id": "whole-car-faq0",
+   "page": "/resources/georgia-car-seat-laws/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "What is the car seat law in Georgia? Under O.C.G.A. § 40-8-76, a child under eight must be properly restrained in an appropriate, federally approved child passenger restraint, in a rear seat. A child over 4 feet 9 inches tall must use a safety belt instead. The rule covers passenger cars, vans and pickup trucks, but not taxis or public transit.",
+   "expect": []
+  },
+  {
+   "id": "whole-car-faq1",
+   "page": "/resources/georgia-car-seat-laws/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "At what age can a child stop using a car seat in Georgia? Georgia law allows a child to move to a safety belt at age eight, or earlier once the child is over 4 feet 9 inches tall (O.C.G.A. § 40-8-76). As a matter of safety guidance, not law, keep using the booster until the adult belt fits: lap belt low on the hips and upper thighs, shoulder belt across the chest, away from the neck.",
+   "expect": []
+  },
+  {
+   "id": "whole-car-faq2",
+   "page": "/resources/georgia-car-seat-laws/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "Can a child sit in the front seat in Georgia? A child under eight may sit in front only if the vehicle has no appropriate rear seating position, or every appropriate rear position is occupied by other children (O.C.G.A. § 40-8-76). A physician's written statement about the child's medical condition is a separate exception. The front-seat exception carries no weight condition; the 40-pound provision belongs to the lap-belt rule.",
+   "expect": []
+  },
+  {
+   "id": "whole-car-faq3",
+   "page": "/resources/georgia-car-seat-laws/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "Is Georgia's 40-pound car seat rule about riding in the front seat? The 40-pound provision in O.C.G.A. § 40-8-76 governs when a child may be secured by a lap belt: only when the vehicle has no lap-and-shoulder belts, or all of them except the driver's are used by other children. The front-seat exception turns on rear-seat availability and carries no weight condition.",
+   "expect": []
+  },
+  {
+   "id": "whole-car-faq4",
+   "page": "/resources/georgia-car-seat-laws/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "What is the fine for a car seat violation in Georgia? A car seat violation in Georgia carries a fine of up to $50 for a first conviction and up to $100 for a later conviction, with no additional fees or surcharges, under O.C.G.A. § 40-8-76. Following the law matters far more for your child's safety than for the fine.",
+   "expect": []
+  },
+  {
+   "id": "whole-car-faq5",
+   "page": "/resources/georgia-car-seat-laws/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "Does a car seat violation affect an injury claim in Georgia? Under O.C.G.A. § 40-8-76(c), a car seat violation is not negligence per se or contributory negligence per se. The same subsection bars using a violation as the basis for cancelling insurance coverage or raising rates. If an adjuster raises a car seat question, talk to a lawyer before you answer it.",
+   "expect": []
+  },
+  {
+   "id": "whole-car-faq6",
+   "page": "/resources/georgia-car-seat-laws/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "Can not wearing a seat belt hurt my injury claim in Georgia? It can. Following SB 68, O.C.G.A. § 40-8-76.1(d) permits seat belt non-use to be admitted on negligence, comparative negligence, causation, assumption of risk and apportionment, and it may diminish recovery. There is no percentage cap on that reduction. Talk to a lawyer before answering an adjuster's questions about restraints.",
+   "expect": []
+  },
+  {
+   "id": "whole-car-faq7",
+   "page": "/resources/georgia-car-seat-laws/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "How much does it cost to hire Roden Law for my child's injury claim? Nothing upfront. Roden Law handles car accident injury claims on a contingency fee, so you pay no legal fees unless we win your child's case. The first consultation is free. Call 1-844-RESULTS or our Savannah office at (912) 303-5850 to talk through what happened and the deadline that applies.",
+   "expect": []
+  },
+  {
+   "id": "whole-uninsured-body",
+   "page": "/resources/georgia-uninsured-motorist-coverage/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "<p>Being hit by a driver with no insurance can feel like being injured twice: once in the crash, and again when you learn there may be no policy to pay for it. Georgia law requires insurers to offer <strong>uninsured motorist (UM) coverage</strong> under O.C.G.A. § 33-7-11, which means your own auto policy may hold protection for exactly this moment. This guide explains what Georgia requires, what UM coverage does, and how to find out what your policy actually contains. Roden Law will review your coverage for free, and you pay no fees unless we win.</p>\n\n<h2>Is uninsured motorist coverage required in Georgia?</h2>\n\n<p>Georgia requires insurers to offer uninsured motorist coverage, under O.C.G.A. § 33-7-11. Whether your policy includes it, and at what limits, is printed on your declarations page, the summary sheet that lists each coverage and its limits.</p>\n\n<p>That same section sets the floor for the liability side of a Georgia auto policy. Personal auto policies must carry at least $25,000 per person and $50,000 per accident for bodily injury, and $25,000 for property damage, under O.C.G.A. § 33-7-11. Liability coverage pays for injuries you cause to others. UM coverage protects you.</p>\n\n<h2>How does Georgia auto insurance coverage compare?</h2>\n\n<p>Each part of a Georgia auto policy answers a different question about who pays. The table sets out what the law says about each one and what it does for you after a crash.</p>\n\n<table>\n<thead>\n<tr><th>Coverage</th><th>What Georgia law says</th><th>What it does for you</th></tr>\n</thead>\n<tbody>\n<tr><td>Bodily injury liability</td><td>At least $25,000 per person and $50,000 per accident (O.C.G.A. § 33-7-11)</td><td>Pays people the policyholder injures; this is the policy you claim against when another driver is at fault</td></tr>\n<tr><td>Property damage liability</td><td>At least $25,000 (O.C.G.A. § 33-7-11)</td><td>Pays for other people's vehicles and property</td></tr>\n<tr><td>Uninsured motorist (UM)</td><td>Insurers must offer it (O.C.G.A. § 33-7-11)</td><td>Part of your own policy; can pay for your injuries when the at-fault driver cannot</td></tr>\n<tr><td>Medical payments (MedPay)</td><td>Optional</td><td>Helps with your own medical bills</td></tr>\n<tr><td>Personal injury protection (PIP)</td><td>Not required in Georgia</td><td>Georgia is an at-fault state, so injury claims run against the driver who caused the crash</td></tr>\n</tbody>\n</table>\n\n<h2>What does uninsured motorist coverage pay for?</h2>\n\n<p>Uninsured motorist coverage is the part of your own auto policy that can pay for your injuries when the driver who caused the crash has no insurance to cover them. Because Georgia is an at-fault state, an injured person normally recovers from the at-fault driver's liability insurer. UM coverage steps in when that source is missing.</p>\n\n<p>Depending on your policy's terms, UM coverage can help with the losses a crash leaves behind: medical bills, lost wages, and pain and suffering. Your policy's limits cap what it will pay, which is why the number on your declarations page matters as much as whether the coverage is there at all.</p>\n\n<h2>What if the at-fault driver's insurance is too small?</h2>\n\n<p>Your own UM coverage may still help when the at-fault driver's policy is too small to cover your injuries, and how much it adds depends on the terms of your policy. A driver carrying only Georgia's minimum of $25,000 per person in bodily injury coverage (O.C.G.A. § 33-7-11) may have far less insurance than a serious injury requires. Hospital stays, surgery and months away from work can outrun a minimum policy quickly.</p>\n\n<p>Before you accept any payment from the at-fault driver's insurer, have a lawyer read your own policy. A signed release can affect your other claims, and that is hard to undo.</p>\n\n<h2>How do I find out if I have uninsured motorist coverage?</h2>\n\n<p>Your declarations page tells you whether you have UM coverage and its limits. Look for a line labeled \"uninsured motorist\" or \"UM\" with a dollar amount beside it. Then take these steps:</p>\n\n<ul>\n<li>If you cannot find the page, ask your agent or insurer for a complete copy of your policy, including the declarations and any endorsements.</li>\n<li>Note the limits and any other coverage listed, such as MedPay.</li>\n<li>Report the crash to your own insurer promptly; policies commonly set notice requirements.</li>\n<li>Keep copies of everything you receive and send.</li>\n</ul>\n\n<p>A lawyer can request the policy for you and read its terms before you give your insurer a recorded statement. When you make a UM claim, the adjuster works for the insurance company, even though it is your own policy.</p>\n\n<h2>What if a hit-and-run driver caused the crash?</h2>\n\n<p>Your UM coverage may be the main source of compensation after a hit-and-run in Georgia, because a driver who flees cannot be identified to make a claim against. Whether and how it pays depends on your policy and the facts of the crash, so evidence gathered in the first hours matters.</p>\n\n<p>Call the police from the scene and get the report number. Photograph the damage, your injuries and the area, and write down the names and numbers of anyone who saw the crash. Report the hit-and-run to your insurer promptly. The driver who left the scene also broke the law: a driver involved in an accident must stop, give identifying information and render reasonable assistance under O.C.G.A. § 40-6-270.</p>\n\n<h2>Do fault and filing deadlines apply to a UM claim?</h2>\n\n<p>Fault and deadlines still matter when you make a UM claim in Georgia. Georgia bars recovery at 50% or more fault; below that, the award is reduced by your share (O.C.G.A. § 51-12-33). An insurer, including your own, may argue that you share the blame, so preserve the evidence that shows how the crash happened.</p>\n\n<p>The general deadline to file a personal injury lawsuit in Georgia is two years from the date of injury, under O.C.G.A. § 9-3-33. A UM claim has its own procedural steps that should be handled well before that date. Our guide to the <a href=\"/resources/georgia-statute-of-limitations/\">Georgia statute of limitations for injury claims</a> explains the deadline, and our <a href=\"/resources/georgia-car-accident-settlement-value/\">Georgia car accident settlement value guide</a> covers what drives the value of a claim.</p>\n\n<h2>Talk to a Georgia car accident lawyer for free</h2>\n\n<p>Roden Law's <a href=\"/georgia-car-accident-lawyers/\">Georgia car accident lawyers</a> will look for every policy that may apply to your crash, read your UM coverage and deal with the insurers for you. If the crash happened in or around Savannah, see our <a href=\"/car-accident-lawyers/savannah-ga/\">Savannah car accident lawyers</a> page, or reach our <a href=\"/locations/georgia/savannah/\">Savannah office</a> or <a href=\"/locations/georgia/darien/\">Darien office</a>. Our <a href=\"/georgia-personal-injury-lawyer/\">Georgia personal injury lawyers</a> handle injury claims beyond car crashes as well. Call 1-844-RESULTS or (912) 303-5850 for a free case review. You pay nothing upfront and no legal fees unless we win your case.</p>",
+   "expect": []
+  },
+  {
+   "id": "whole-uninsured-kt",
+   "page": "/resources/georgia-uninsured-motorist-coverage/",
+   "surface": "keyTakeaways",
+   "jurisdiction": "georgia-only",
+   "text": "Georgia requires insurers to offer uninsured motorist (UM) coverage under O.C.G.A. § 33-7-11, so whether you have it depends on what your policy includes; your declarations page is the place to check. The same section sets Georgia's minimum personal auto liability limits: $25,000 per person and $50,000 per accident for bodily injury, and $25,000 for property damage. UM coverage is part of your own policy and can pay for your injuries when the at-fault driver has no insurance to cover them. Georgia does not require PIP, and MedPay is optional. Fault still matters: recovery is barred at 50% or more fault and reduced by your share below that (O.C.G.A. § 51-12-33). The general deadline to file a personal injury lawsuit is two years (O.C.G.A. § 9-3-33). Roden Law reviews your coverage for free.",
+   "expect": []
+  },
+  {
+   "id": "whole-uninsured-meta",
+   "page": "/resources/georgia-uninsured-motorist-coverage/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Is Uninsured Motorist Coverage Required in Georgia?. Georgia requires insurers to offer uninsured motorist coverage (O.C.G.A. § 33-7-11). What UM pays, Georgia's minimum limits and how to check your policy.",
+   "expect": []
+  },
+  {
+   "id": "whole-uninsured-faq0",
+   "page": "/resources/georgia-uninsured-motorist-coverage/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "Is uninsured motorist coverage required in Georgia? Georgia requires insurers to offer uninsured motorist coverage, under O.C.G.A. § 33-7-11. Whether your policy includes it, and at what limits, is shown on your declarations page, the summary sheet listing each coverage and its limits. If you cannot find it, ask your agent for a complete copy of your policy.",
+   "expect": []
+  },
+  {
+   "id": "whole-uninsured-faq1",
+   "page": "/resources/georgia-uninsured-motorist-coverage/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "What are the minimum car insurance limits in Georgia? Georgia personal auto policies must carry at least $25,000 per person and $50,000 per accident for bodily injury, and $25,000 for property damage, under O.C.G.A. § 33-7-11. Those are liability limits: they pay for injuries and damage the policyholder causes to others, and a serious injury can exceed them.",
+   "expect": []
+  },
+  {
+   "id": "whole-uninsured-faq2",
+   "page": "/resources/georgia-uninsured-motorist-coverage/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "What does uninsured motorist coverage pay for in Georgia? Uninsured motorist coverage is part of your own auto policy and can pay for your injuries when the at-fault driver has no insurance to cover them. Depending on your policy's terms, it can help with medical bills, lost wages and pain and suffering, up to the limits on your declarations page.",
+   "expect": []
+  },
+  {
+   "id": "whole-uninsured-faq3",
+   "page": "/resources/georgia-uninsured-motorist-coverage/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "What if the other driver's insurance is not enough to cover my injuries? Your own UM coverage may still help, and how much it adds depends on the terms of your policy. A driver carrying only the $25,000 per person minimum under O.C.G.A. § 33-7-11 may have far less coverage than a serious injury requires. Have a lawyer read your policy before you sign any settlement paperwork.",
+   "expect": []
+  },
+  {
+   "id": "whole-uninsured-faq4",
+   "page": "/resources/georgia-uninsured-motorist-coverage/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "Does uninsured motorist coverage apply to a hit-and-run in Georgia? It may. Your UM coverage can be the main source of compensation when a driver who flees cannot be identified, but whether and how it pays depends on your policy and the facts. Call the police from the scene, get the report number, gather witness names and report the crash to your insurer promptly.",
+   "expect": []
+  },
+  {
+   "id": "whole-uninsured-faq5",
+   "page": "/resources/georgia-uninsured-motorist-coverage/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "Do I need a lawyer to make an uninsured motorist claim against my own insurer? You are not required to hire one, but it helps. When you make a UM claim, the adjuster works for the insurance company, even though it is your own policy, and may argue about fault or the value of your injuries. A lawyer can read your policy, handle the insurer and protect the deadline, at no upfront cost.",
+   "expect": []
+  },
+  {
+   "id": "whole-uninsured-faq6",
+   "page": "/resources/georgia-uninsured-motorist-coverage/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "How long do I have to file after a crash with an uninsured driver in Georgia? The general deadline to file a personal injury lawsuit in Georgia is two years from the date of injury, under O.C.G.A. § 9-3-33. A UM claim has its own procedural steps that should be handled well before then, and your policy may require prompt notice of the crash, so talk to a lawyer early.",
+   "expect": []
+  },
+  {
+   "id": "whole-wrongful-body",
+   "page": "/resources/georgia-wrongful-death-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "<p>No amount of money makes up for losing someone you love, and asking what a case is worth can feel wrong. It is a fair question, though, because the answer shapes how your family plans for the years ahead. In Georgia, a wrongful death recovery is measured by the <strong>\"full value of the life of the decedent,\"</strong> a term defined in O.C.G.A. § 51-4-1. What a case is worth depends on the evidence of that life, who was at fault and the insurance available to pay. This guide explains those factors rather than quoting averages, because an average says nothing reliable about one family's case. Roden Law works on a contingency fee: no fees unless we win.</p>\n\n<h2>How much is a wrongful death settlement worth in Georgia?</h2>\n\n<p>A Georgia wrongful death claim is measured by what the evidence can prove about the full value of the life lost, reduced by any fault of the person who died and limited in practice by the insurance and assets available to pay it. Those three things vary so widely from one family to the next that any figure quoted before the facts are gathered is a guess.</p>\n\n<p>Be wary of online calculators and \"average settlement\" numbers. They cannot see the evidence in your case, the insurance behind the responsible party, or the arguments an insurer will make. A careful valuation starts with the investigation, not with a number.</p>\n\n<h2>What does \"full value of the life\" mean in Georgia?</h2>\n\n<p>\"Full value of the life of the decedent\" is the legal measure of a Georgia wrongful death recovery, and it is defined in O.C.G.A. § 51-4-1. The same section also defines \"homicide.\" It contains no limitation period; that comes from a different section, covered below.</p>\n\n<p>Proving the full value of a life is a matter of evidence about who the person was. That evidence usually includes their work and earnings, the care and support they gave their family, their health, their interests and routines, and the relationships they kept. Records tell part of the story. The people who knew them best tell the rest, which is why statements from family, friends and co-workers carry so much weight.</p>\n\n<h2>What factors affect the value of a Georgia wrongful death case?</h2>\n\n<p>The value of a Georgia wrongful death case turns on three questions: what the evidence shows about the life lost, how clearly fault can be proven, and how much insurance and other assets stand behind the responsible parties. The table breaks those questions into the factors we examine in every case.</p>\n\n<table>\n<thead>\n<tr><th>Factor</th><th>Why it matters</th><th>Evidence that helps</th></tr>\n</thead>\n<tbody>\n<tr><td>Work and earnings</td><td>Part of the evidence of the life lost</td><td>Tax returns, pay records, employer accounts</td></tr>\n<tr><td>Family and personal relationships</td><td>Show the life beyond a paycheck</td><td>Accounts from family, friends and co-workers; photos and letters</td></tr>\n<tr><td>Age and health</td><td>Can bear on the years of life that were lost</td><td>Medical records, accounts of daily activity</td></tr>\n<tr><td>Proof of the other party's fault</td><td>Fault must be proven before any recovery</td><td>Crash report, vehicle data, video, witnesses</td></tr>\n<tr><td>Fault of the person who died</td><td>Reduces or bars the recovery (O.C.G.A. § 51-12-33)</td><td>Physical evidence and crash reconstruction</td></tr>\n<tr><td>Number of responsible parties</td><td>Each defendant pays only its own share (O.C.G.A. § 51-12-33)</td><td>An investigation that identifies every party</td></tr>\n<tr><td>Insurance and assets</td><td>Set the practical limit on what can be collected</td><td>Policy disclosures and an asset review</td></tr>\n</tbody>\n</table>\n\n<h2>How does the decedent's own fault affect a Georgia wrongful death case?</h2>\n\n<p>If the person who died was partly at fault, the recovery is reduced by that share, and it is barred if their share reaches 50% or more (O.C.G.A. § 51-12-33). In a wrongful death case, the fault that counts on the family's side is the fault of the person who died.</p>\n\n<p>Insurers know this and may argue that the person who died caused or contributed to the crash. The answer is evidence gathered early: the physical damage, vehicle data, video, the crash report and witness accounts. Each responsible defendant also pays only its own share, because Georgia abolished joint and several liability in 2005 (O.C.G.A. § 51-12-33). That makes it important to identify every party whose conduct played a part, such as a driver, an employer or a trucking company.</p>\n\n<h2>How long does a family have to file a wrongful death claim in Georgia?</h2>\n\n<p>Families generally have <strong>two years</strong> to file a wrongful death lawsuit in Georgia, under O.C.G.A. § 9-3-33. If a government vehicle or a public road played a part, written notice comes due much sooner. A claim against a Georgia city requires ante litem notice within six months (O.C.G.A. § 36-33-5). A county gets twelve months (O.C.G.A. § 36-11-1), and so does the State (O.C.G.A. § 50-21-26).</p>\n\n<p>Waiting also costs evidence. Vehicles are repaired or scrapped, video is recorded over and memories fade. Our guide to the <a href=\"/resources/georgia-statute-of-limitations/\">Georgia statute of limitations for injury and death claims</a> explains the deadlines in more detail.</p>\n\n<h2>How long does a Georgia wrongful death settlement take?</h2>\n\n<p>A Georgia wrongful death settlement takes as long as it takes to prove fault and the full value of the life, and to reach an agreement with the insurers or a verdict in court. Cases with clear fault and cooperative insurers resolve sooner than cases where fault is disputed or several parties point at each other. Most cases move through the same stages:</p>\n\n<ul>\n<li>Investigation and preservation of the evidence of fault.</li>\n<li>Gathering the records and accounts that show the life that was lost.</li>\n<li>Identifying every insurance policy and responsible party.</li>\n<li>A settlement demand and negotiation with the insurers.</li>\n<li>A lawsuit, if the insurers will not pay what the evidence supports.</li>\n</ul>\n\n<p>Settling quickly can be tempting when bills are arriving, but an early offer usually comes before the full picture is known. A lawyer can tell you whether an offer reflects the evidence.</p>\n\n<h2>Talk to a Georgia wrongful death lawyer for free</h2>\n\n<p>Roden Law's <a href=\"/georgia-wrongful-death-lawyer/\">Georgia wrongful death lawyers</a> meet with families at no cost, explain the deadline that applies and begin preserving the evidence. Learn more about our <a href=\"/practice-areas/wrongful-death-lawyers/\">wrongful death practice</a>, or visit our <a href=\"/locations/georgia/savannah/\">Savannah office</a> or <a href=\"/locations/georgia/darien/\">Darien office</a>. Many Georgia death claims arise from vehicle crashes, which our <a href=\"/georgia-car-accident-lawyers/\">Georgia car accident lawyers</a> handle every day; our <a href=\"/resources/georgia-car-accident-settlement-value/\">Georgia car accident settlement value guide</a> explains how injury claims from those crashes are valued, and our <a href=\"/georgia-personal-injury-lawyer/\">Georgia personal injury lawyers</a> page covers the wider practice. Call 1-844-RESULTS or (912) 303-5850 for a free, confidential case review. Your family pays nothing upfront and no legal fees unless we win.</p>",
+   "expect": []
+  },
+  {
+   "id": "whole-wrongful-kt",
+   "page": "/resources/georgia-wrongful-death-settlement-value/",
+   "surface": "keyTakeaways",
+   "jurisdiction": "georgia-only",
+   "text": "There is no reliable average for a Georgia wrongful death settlement, because each case is valued on its own evidence. Georgia measures the recovery by the \"full value of the life of the decedent,\" a term defined in O.C.G.A. § 51-4-1. Value turns on the evidence of that life, including work, earnings, family relationships, age and health, along with how strongly fault can be proven and the insurance available to pay. If the person who died was partly at fault, the award is reduced by that share and barred at 50% or more (O.C.G.A. § 51-12-33). Each defendant pays only its own share of the damages. Families generally have two years to file a wrongful death lawsuit under O.C.G.A. § 9-3-33. Roden Law represents Georgia families on a contingency fee, with no fees unless we win.",
+   "expect": []
+  },
+  {
+   "id": "whole-wrongful-meta",
+   "page": "/resources/georgia-wrongful-death-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Georgia Wrongful Death Settlement Value | Roden Law. How Georgia wrongful death cases are valued: the \"full value of the life\" (O.C.G.A. § 51-4-1), the decedent's fault, insurance and the two-year deadline.",
+   "expect": []
+  },
+  {
+   "id": "whole-wrongful-faq0",
+   "page": "/resources/georgia-wrongful-death-settlement-value/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "What is the average wrongful death settlement in Georgia? There is no reliable average for a Georgia wrongful death settlement, because each case is valued on its own evidence. Georgia measures the recovery by the \"full value of the life of the decedent,\" defined in O.C.G.A. § 51-4-1. What a case is worth depends on the evidence of that life, the proof of fault and the insurance available.",
+   "expect": []
+  },
+  {
+   "id": "whole-wrongful-faq1",
+   "page": "/resources/georgia-wrongful-death-settlement-value/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "How is a wrongful death case valued in Georgia? Georgia values a wrongful death case by the \"full value of the life of the decedent,\" a term defined in O.C.G.A. § 51-4-1. Proving it depends on evidence about the person's life, from employment and earnings records to the accounts of family, friends and co-workers about the relationships they kept.",
+   "expect": []
+  },
+  {
+   "id": "whole-wrongful-faq2",
+   "page": "/resources/georgia-wrongful-death-settlement-value/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "Does the fault of the person who died reduce a Georgia wrongful death settlement? Yes, if the person who died was partly at fault. The recovery is reduced by that share of fault, and it is barred if the share reaches 50% or more (O.C.G.A. § 51-12-33). Insurers often argue the person who died caused the crash, so evidence gathered early matters.",
+   "expect": []
+  },
+  {
+   "id": "whole-wrongful-faq3",
+   "page": "/resources/georgia-wrongful-death-settlement-value/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "How long do we have to file a wrongful death claim in Georgia? Families generally have two years to file a wrongful death lawsuit in Georgia, under O.C.G.A. § 9-3-33. If a government vehicle or road was involved, written notice is due much sooner. A claim against a Georgia city needs notice within six months (O.C.G.A. § 36-33-5).",
+   "expect": []
+  },
+  {
+   "id": "whole-wrongful-faq4",
+   "page": "/resources/georgia-wrongful-death-settlement-value/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "How long does a wrongful death settlement take in Georgia? It takes as long as it takes to prove fault and the full value of the life, and then to reach an agreement or a verdict. Cases with clear fault and cooperative insurers resolve sooner than cases where fault is disputed or several parties blame each other. An early offer usually comes before the full picture is known.",
+   "expect": []
+  },
+  {
+   "id": "whole-wrongful-faq5",
+   "page": "/resources/georgia-wrongful-death-settlement-value/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "What if more than one party caused the death? Each responsible defendant pays only its own share of the damages in Georgia, because joint and several liability was abolished in 2005 (O.C.G.A. § 51-12-33). That makes it important to identify every party whose conduct played a part, such as a driver, an employer or a trucking company.",
+   "expect": []
+  },
+  {
+   "id": "whole-wrongful-faq6",
+   "page": "/resources/georgia-wrongful-death-settlement-value/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "How much does a Georgia wrongful death lawyer cost? Roden Law handles Georgia wrongful death cases on a contingency fee. Your family pays nothing upfront and no legal fees unless we win. The first consultation is free and confidential, so it costs nothing to understand your options. Call 1-844-RESULTS or (912) 303-5850.",
+   "expect": []
+  },
+  {
+   "id": "ctl-ctl0",
+   "page": "/x/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "In Georgia, a child must weigh 40 pounds to ride in the front seat under O.C.G.A. § 40-8-76.",
+   "expect": [
+    "carseat-40lb-front-seat"
+   ]
+  },
+  {
+   "id": "ctl-ctl1",
+   "page": "/x/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "Can my child ride up front? Only once the child reaches 40 pounds can a child sit in the front seat in Georgia.",
+   "expect": [
+    "carseat-40lb-front-seat"
+   ]
+  },
+  {
+   "id": "ctl-ctl2",
+   "page": "/x/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "A child under eight may ride in the front seat once the child weighs 40 pounds (O.C.G.A. § 40-8-76).",
+   "expect": [
+    "carseat-40lb-front-seat"
+   ]
+  },
+  {
+   "id": "ctl-ctl3",
+   "page": "/x/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "Can my child ride in front? Yes, if the child weighs at least forty pounds, a child under eight may sit in the front seat.",
+   "expect": [
+    "carseat-40lb-front-seat"
+   ]
+  },
+  {
+   "id": "ctl-ctl4",
+   "page": "/x/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Under Georgia law, seat belt non-use can reduce a child's recovery by up to 5 percent at most.",
+   "expect": [
+    "seat-belt-percentage-cap"
+   ]
+  },
+  {
+   "id": "ctl-ctl5",
+   "page": "/x/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Georgia's child restraint rules are set out in S.C. Code § 56-5-6410.",
+   "expect": [
+    "foreign-SC"
+   ]
+  },
+  {
+   "id": "ctl-ctl6",
+   "page": "/x/",
+   "surface": "keyTakeaways",
+   "jurisdiction": "georgia-only",
+   "text": "Not wearing a seat belt can reduce your recovery by up to 5% in Georgia.",
+   "expect": [
+    "seat-belt-percentage-cap"
+   ]
+  },
+  {
+   "id": "ctl-ctl7",
+   "page": "/x/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Families have two years to file under O.C.G.A. § 51-4-1.",
+   "expect": [
+    "wrongful-death-deadline-cited-to-definitions"
+   ]
+  },
+  {
+   "id": "ctl-ctl8",
+   "page": "/x/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Georgia requires every driver to carry personal injury protection (PIP) coverage.",
+   "expect": [
+    "georgia-requires-pip"
+   ]
+  },
+  {
+   "id": "ctl-ctl9",
+   "page": "/x/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Georgia is a no-fault state, so your own insurer pays first.",
+   "expect": [
+    "georgia-is-no-fault"
+   ]
+  },
+  {
+   "id": "ctl-ctl10",
+   "page": "/x/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Georgia's comparative negligence rule is found in O.C.G.A. § 51-11-7.",
+   "expect": [
+    "comparative-negligence-wrong-statute"
+   ]
+  },
+  {
+   "id": "ctl-ctl11",
+   "page": "/x/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Georgia follows joint and several liability, so any defendant can be made to pay the whole award.",
+   "expect": [
+    "joint-and-several-liability"
+   ]
+  },
+  {
+   "id": "ctl-ctl12",
+   "page": "/x/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "A wrongful death claim against a Georgia city requires ante litem notice within twelve months (O.C.G.A. § 36-33-5).",
+   "expect": [
+    "municipal-ante-litem-12-months"
+   ]
+  },
+  {
+   "id": "ctl-ctl13",
+   "page": "/x/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Uninsured motorist coverage is mandatory under S.C. Code § 38-77-150.",
+   "expect": [
+    "foreign-SC"
+   ]
+  },
+  {
+   "id": "ctl-new1",
+   "page": "/resources/georgia-car-seat-laws/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "Can a child sit in the front seat in Georgia? A child under eight may sit in front once the child weighs 40 pounds (O.C.G.A. § 40-8-76). A physician's written statement about the child's medical condition is a separate exception.",
+   "expect": [
+    "carseat-40lb-front-seat"
+   ]
+  },
+  {
+   "id": "ctl-new2",
+   "page": "/resources/georgia-uninsured-motorist-coverage/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "Is uninsured motorist coverage required in Georgia? Georgia requires insurers to offer uninsured motorist coverage, under O.C.G.A. § 33-7-11. Georgia also requires every driver to carry personal injury protection (PIP) coverage.",
+   "expect": [
+    "georgia-requires-pip"
+   ]
+  },
+  {
+   "id": "ctl-new3",
+   "page": "/resources/georgia-wrongful-death-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "A Georgia wrongful death claim is measured by the full value of the life lost. Families have two years to file under O.C.G.A. § 51-4-1.",
+   "expect": [
+    "wrongful-death-deadline-cited-to-definitions"
+   ]
+  }
+ ],
+ "gaps": [
+  {
+   "id": "gap-CS-1a",
+   "page": "georgia-car-seat-laws.json",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "A child under eight may ride in front only if the vehicle has no appropriate rear seat, or every appropriate rear seat is taken by other children under eight.",
+   "expect": []
+  },
+  {
+   "id": "gap-CS-1c",
+   "page": "georgia-car-seat-laws.json",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Front seat: a child under eight may ride in front only if the vehicle has no appropriate rear seating position, or every appropriate rear position is occupied by other children under eight.",
+   "expect": []
+  },
+  {
+   "id": "gap-CS-1e",
+   "page": "georgia-car-seat-laws.json",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "A child under eight may sit in the front seat in Georgia only if the vehicle has no appropriate rear seating position for the child, or every appropriate rear position is already occupied by other children under eight (O.C.G.A. § 40-8-76).",
+   "expect": []
+  },
+  {
+   "id": "gap-CS-1f",
+   "page": "georgia-car-seat-laws.json",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "A child under eight may sit in front only if the vehicle has no appropriate rear seating position, or every appropriate rear position is occupied by other children under eight (O.C.G.A. § 40-8-76). The front-seat exception carries no weight condition. The 40-pound provision belongs to the lap-belt rule.",
+   "expect": []
+  },
+  {
+   "id": "gap-UM-1a",
+   "page": "georgia-uninsured-motorist-coverage.json",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Whether you carry it depends on what was purchased on your policy, so the reliable answer for your situation is printed on your declarations page, the summary sheet that lists each coverage and its limits.",
+   "expect": []
+  },
+  {
+   "id": "gap-UM-1b",
+   "page": "georgia-uninsured-motorist-coverage.json",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Georgia requires insurers to offer uninsured motorist coverage, under O.C.G.A. § 33-7-11. Whether you carry it depends on what was purchased on your policy. Check the declarations page, the summary sheet listing each coverage and its limits, or ask your agent for a complete copy of your policy.",
+   "expect": []
+  },
+  {
+   "id": "gap-WD-1",
+   "page": "georgia-wrongful-death-settlement-value.json",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "A Georgia wrongful death settlement is worth what the evidence can prove about the full value of the life lost, reduced by any fault of the person who died and limited in practice by the insurance and assets available to pay it.",
+   "expect": []
+  },
+  {
+   "id": "gap-pip-noverb",
+   "page": "um",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "Is uninsured motorist coverage required in Georgia? Georgia requires insurers to offer uninsured motorist coverage, under O.C.G.A. § 33-7-11, and every driver must carry personal injury protection (PIP) coverage.",
+   "expect": []
+  },
+  {
+   "id": "gap-cs-medical-denied",
+   "page": "cs",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "There is no medical exception to Georgia car seat law; a child under eight must always ride in a rear seat.",
+   "expect": []
+  }
+ ]
+}
