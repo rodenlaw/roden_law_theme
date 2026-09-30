@@ -3124,3 +3124,13 @@ average position is not the same measurement and the two must not be conflated.
 |---|---|
 | Aug 2026 spam | began 8/18 — rolling at audit time |
 | *(next core)* | *the verdict this plan exists to change* |
+
+## 2026-09-30 — Spanish pillar twins + post 1874: 59 legal fixes applied
+
+Owner: "apply them". First legal sweep of the 23 Spanish practice-area pillar twins (never swept) and
+the live GA car-seat post 1874 (data/facts/remediation-2026-09-30-es-pillars.md). 59 apply-class edits
+on 23 posts via bin/apply-linked-pages-batch.php (data/facts/es-pillars-batch-2026-09-30.json); dry
+run clean first, owner ran the apply. Backup: docs/backups/es-pillars-batch-2026-09-30.json. Worst
+fixed: 4881 FAQ said SC has no med-mal noneconomic cap. Caches flushed; JSON-LD guard PASS;
+content/meta.json regenerated. Held: 12 attorney items (Eric / Gillin), 12 Spanish template/.mo
+issues (theme PR), 16-edit EN residuals batch staged (en-pillars-residuals-batch-2026-09-30.json).

@@ -3016,7 +3016,7 @@
                     },
                     {
                         "question": "How long do I have to file a car accident lawsuit in South Carolina?",
-                        "answer": "Under S.C. Code § 15-3-530, you have three years from the date of your accident to file a personal injury lawsuit in South Carolina. Georgia has a shorter deadline of two years under O.C.G.A. § 9-3-33. Missing the applicable statute of limitations typically means losing your right to compensation entirely."
+                        "answer": "Under S.C. Code § 15-3-530, you have three years from the date of your accident to file a personal injury lawsuit in South Carolina. Missing the statute of limitations typically means losing your right to compensation entirely."
                     },
                     {
                         "question": "Can I still recover compensation if I was partially at fault for a Columbia intersection crash?",
@@ -15058,7 +15058,7 @@
                     },
                     {
                         "question": "La aseguradora dice que yo tuve la culpa por ir en la calle. ¿Es cierto?",
-                        "answer": "No. Las bicicletas tienen derecho a circular por la calle en ambos estados, y los conductores deben rebasar con distancia segura. Aun si usted tuviera parte de la culpa, puede recuperar compensación si es menor al 50% en Georgia (O.C.G.A. § 51-12-33) y menor al 51% en Carolina del Sur."
+                        "answer": "No. Las bicicletas tienen derecho a circular por la calle en ambos estados, y los conductores deben rebasar con distancia segura. Aun si usted tuviera parte de la culpa, puede recuperar compensación si es menor al 50% en Georgia (O.C.G.A. § 51-12-33) y del 50% o menos en Carolina del Sur (Nelson v. Concrete Supply Co.)."
                     },
                     {
                         "question": "¿Cuánto tiempo tengo para reclamar?",
@@ -15066,7 +15066,7 @@
                     },
                     {
                         "question": "¿Qué distancia debe dejar un conductor al rebasar a un ciclista?",
-                        "answer": "Georgia exige que los conductores rebasen a un ciclista dejando una distancia segura, que generalmente se interpreta como al menos 3 pies. Carolina del Sur exige igualmente una distancia de rebase segura (S.C. Code § 56-5-3435). Cuando un conductor viola esta regla y provoca un choque, esa infracción es evidencia contundente de negligencia y fortalece mucho su reclamo. Por eso conviene guardar el informe policial, las fotos del lugar y los datos de cualquier testigo que haya visto qué tan cerca pasó el vehículo."
+                        "answer": "Georgia exige que los conductores dejen al menos 3 pies de distancia al rebasar a un ciclista (O.C.G.A. § 40-6-56). Carolina del Sur exige una distancia de rebase segura, pero no fija ninguna distancia en pies (S.C. Code § 56-5-3435). Cuando un conductor viola esta regla y provoca un choque, esa infracción es evidencia contundente de negligencia y fortalece mucho su reclamo. Por eso conviene guardar el informe policial, las fotos del lugar y los datos de cualquier testigo que haya visto qué tan cerca pasó el vehículo."
                     },
                     {
                         "question": "¿Qué es un accidente por apertura de puerta (“dooring”)?",
@@ -15163,7 +15163,7 @@
                     },
                     {
                         "question": "¿Qué compensación puedo recuperar después de un accidente de navegación?",
-                        "answer": "Las víctimas de accidentes de navegación pueden recuperar gastos médicos (atención de emergencia, cirugía y rehabilitación), salarios perdidos y la pérdida de capacidad de ingresos a futuro, dolor y sufrimiento, angustia emocional, cicatrices y desfiguración, pérdida del disfrute de la vida, y los daños a su embarcación y a sus pertenencias personales. En casos de negligencia extrema o de navegar bajo los efectos del alcohol (BUI), también pueden otorgarse daños punitivos. En casos de muerte injusta, los familiares sobrevivientes pueden recuperar el valor total de la vida de la persona fallecida."
+                        "answer": "Las víctimas de accidentes de navegación pueden recuperar gastos médicos (atención de emergencia, cirugía y rehabilitación), salarios perdidos y la pérdida de capacidad de ingresos a futuro, dolor y sufrimiento, angustia emocional, cicatrices y desfiguración, pérdida del disfrute de la vida, y los daños a su embarcación y a sus pertenencias personales. En casos de negligencia extrema o de navegar bajo los efectos del alcohol (BUI), también pueden otorgarse daños punitivos. En casos de muerte, la familia puede presentar un reclamo por muerte injusta; cuando se aplica la ley de Georgia, la pérdida se mide por el valor total de la vida de la persona fallecida (O.C.G.A. § 51-4-1)."
                     },
                     {
                         "question": "¿Cuánto cuesta contratar a un abogado de accidentes de navegación?",
@@ -15248,7 +15248,7 @@
                     },
                     {
                         "question": "¿Cuánto tiempo tengo para presentar una demanda por lesión cerebral?",
-                        "answer": "En Georgia, el plazo para demandar por lesiones personales, incluidas las lesiones cerebrales, es de 2 años a partir de la fecha de la lesión (O.C.G.A. § 9-3-33). En Carolina del Sur el plazo es de 3 años (S.C. Code § 15-3-530). Son plazos distintos y cada estado aplica el suyo. Cuando el alcance completo de una lesión cerebral no es evidente de inmediato, puede aplicarse la regla del descubrimiento (discovery rule): el reloj empieza a correr cuando usted supo o debió haber sabido de la lesión. Comuníquese con un abogado cuanto antes para proteger sus derechos."
+                        "answer": "En Georgia, el plazo para demandar por lesiones personales, incluidas las lesiones cerebrales, es de 2 años a partir de la fecha de la lesión (O.C.G.A. § 9-3-33). En Carolina del Sur el plazo es de 3 años (S.C. Code § 15-3-530). Son plazos distintos y cada estado aplica el suyo. En Georgia, el plazo corre desde la fecha de la lesión aunque el alcance completo de una lesión cerebral todavía no sea evidente. Comuníquese con un abogado cuanto antes para proteger sus derechos."
                     },
                     {
                         "question": "¿Qué pruebas se necesitan para comprobar una lesión cerebral?",
@@ -15430,7 +15430,7 @@
                     },
                     {
                         "question": "¿Qué pasa si yo tuve parte de la culpa del accidente?",
-                        "answer": "Todavía puede recuperar dinero. Georgia usa una regla de negligencia comparativa modificada: usted puede recuperar daños siempre que su responsabilidad sea menor al 50% (O.C.G.A. § 51-12-33). En Carolina del Sur el umbral es de 51%. En los dos estados su compensación se reduce en proporción a su porcentaje de culpa; por ejemplo, si le asignan 30% de la culpa en un reclamo de $100,000, usted recuperaría $70,000. Las aseguradoras casi siempre intentan exagerar la responsabilidad de la víctima, y nuestros abogados trabajan para reducir al mínimo el porcentaje que le atribuyan a usted."
+                        "answer": "Todavía puede recuperar dinero. Georgia usa una regla de negligencia comparativa modificada: usted puede recuperar daños siempre que su responsabilidad sea menor al 50% (O.C.G.A. § 51-12-33). En Carolina del Sur puede recuperar si su culpa es del 50% o menos (Nelson v. Concrete Supply Co.). En los dos estados su compensación se reduce en proporción a su porcentaje de culpa; por ejemplo, si le asignan 30% de la culpa en un reclamo de $100,000, usted recuperaría $70,000. Las aseguradoras casi siempre intentan exagerar la responsabilidad de la víctima, y nuestros abogados trabajan para reducir al mínimo el porcentaje que le atribuyan a usted."
                     },
                     {
                         "question": "¿Debo hablar con la aseguradora del otro conductor?",
@@ -15527,7 +15527,7 @@
                     },
                     {
                         "question": "¿Cuánto tiempo tengo para presentar un reclamo por un accidente de construcción?",
-                        "answer": "En Georgia, el plazo para demandar por lesiones personales es de 2 años desde la fecha de la lesión (O.C.G.A. § 9-3-33). En Carolina del Sur el plazo es de 3 años (S.C. Code § 15-3-530). Los plazos de la compensación laboral (workers' compensation) corren aparte: en Georgia usted debe reportar la lesión dentro de 30 días y presentar el reclamo dentro de 1 año (O.C.G.A. § 34-9-82); en Carolina del Sur debe dar aviso dentro de 90 días y presentar el reclamo dentro de 2 años (S.C. Code § 42-15-40). Dejar pasar cualquiera de estos plazos puede acabar con su derecho a recuperar dinero."
+                        "answer": "En Georgia, el plazo para demandar por lesiones personales es de 2 años desde la fecha de la lesión (O.C.G.A. § 9-3-33). En Carolina del Sur el plazo es de 3 años (S.C. Code § 15-3-530). Los plazos de la compensación laboral (workers' compensation) corren aparte: en Georgia usted debe reportar la lesión dentro de 30 días (O.C.G.A. § 34-9-80) y presentar el reclamo, por lo general, dentro de 1 año desde la lesión, plazo que se extiende si el empleador pagó tratamiento o beneficios (O.C.G.A. § 34-9-82); en Carolina del Sur debe dar aviso dentro de 90 días y presentar el reclamo dentro de 2 años (S.C. Code § 42-15-40). Dejar pasar cualquiera de estos plazos puede acabar con su derecho a recuperar dinero."
                     },
                     {
                         "question": "¿Qué pasa si yo era contratista independiente y no empleado?",
@@ -15628,7 +15628,7 @@
                     },
                     {
                         "question": "A mi hijo lo mordió un perro. ¿Puedo presentar el reclamo en su nombre?",
-                        "answer": "Sí. Los padres o tutores legales pueden presentar un reclamo por mordedura de perro en nombre de un hijo menor de edad. Los niños son las víctimas más frecuentes de estos ataques y suelen sufrir las lesiones más graves, en particular en la cara y la cabeza. Georgia y Carolina del Sur permiten suspender el plazo de prescripción mientras el niño es menor de edad, lo que da tiempo adicional para presentar la demanda. Los tribunales toman estos casos muy en serio por la gravedad de las lesiones que dejan."
+                        "answer": "Sí. Los padres o tutores legales pueden presentar un reclamo por mordedura de perro en nombre de un hijo menor de edad. Los niños son las víctimas más frecuentes de estos ataques y suelen sufrir las lesiones más graves, en particular en la cara y la cabeza. En Georgia y Carolina del Sur pueden aplicarse reglas especiales de plazo a los reclamos de menores, pero conviene actuar pronto. Los tribunales toman estos casos muy en serio por la gravedad de las lesiones que dejan."
                     },
                     {
                         "question": "¿Puede ser responsable el arrendador por el perro de su inquilino?",
@@ -15697,15 +15697,15 @@
                     },
                     {
                         "question": "¿Qué pasa si me caí por un bache o pavimento en mal estado?",
-                        "answer": "Puede haber un reclamo contra el gobierno local o el propietario responsable de esa vía. Ojo: los reclamos contra entidades de gobierno tienen requisitos de aviso previo con plazos mucho más cortos que los normales — a veces de pocos meses — así que consúltenos de inmediato."
+                        "answer": "Puede haber un reclamo contra el gobierno local o el propietario responsable de esa vía. Ojo: en Georgia, un reclamo contra una ciudad exige un aviso previo por escrito (ante litem) dentro de 6 meses (O.C.G.A. § 36-33-5), y contra un condado, dentro de 12 meses (O.C.G.A. § 36-11-1). En Carolina del Sur no se exige aviso previo, pero la demanda contra el gobierno debe presentarse dentro de 2 años (S.C. Code § 15-78-110), o de 3 si primero se presentó un reclamo verificado (S.C. Code § 15-78-80). Consúltenos de inmediato."
                     },
                     {
                         "question": "No llevaba casco. ¿Puedo reclamar de todos modos?",
-                        "answer": "Sí. La falta de casco no le quita su derecho a reclamar por la negligencia de otro. Bajo la culpa comparativa, usted recupera si su culpa es menor al 50% en Georgia (O.C.G.A. § 51-12-33) y menor al 51% en Carolina del Sur, con reducción proporcional."
+                        "answer": "Sí. La falta de casco no le quita su derecho a reclamar por la negligencia de otro. Bajo la culpa comparativa, usted recupera si su culpa es menor al 50% en Georgia (O.C.G.A. § 51-12-33) y del 50% o menos en Carolina del Sur (Nelson v. Concrete Supply Co.), con reducción proporcional."
                     },
                     {
                         "question": "¿Cuánto tiempo tengo para presentar mi reclamo?",
-                        "answer": "En Georgia, 2 años desde la lesión (O.C.G.A. § 9-3-33); en Carolina del Sur, 3 años (S.C. Code § 15-3-530). Pero los videos urbanos y los datos de la aplicación se pierden rápido, y los reclamos contra el gobierno exigen aviso mucho antes. Llámenos ya."
+                        "answer": "En Georgia, 2 años desde la lesión (O.C.G.A. § 9-3-33); en Carolina del Sur, 3 años (S.C. Code § 15-3-530). Pero los videos urbanos y los datos de la aplicación se pierden rápido, y en Georgia los reclamos contra una ciudad o un condado exigen un aviso previo mucho antes. Llámenos ya."
                     },
                     {
                         "question": "¿Mi seguro de auto cubre un accidente en scooter eléctrico?",
@@ -15940,11 +15940,11 @@
                     },
                     {
                         "question": "¿Cuánto tiempo tengo para demandar?",
-                        "answer": "En Georgia, generalmente 2 años (O.C.G.A. § 9-3-71) desde el acto negligente, con un límite absoluto de 5 años en la mayoría de los casos. En Carolina del Sur, generalmente 3 años (S.C. Code § 15-3-545). Existen excepciones limitadas, como objetos olvidados en el cuerpo. Consulte pronto: preparar estos casos toma meses."
+                        "answer": "En Georgia, generalmente 2 años desde la fecha de la lesión o de la muerte, con un plazo máximo (statute of repose) de 5 años desde el acto negligente (O.C.G.A. § 9-3-71). En Carolina del Sur, 3 años desde el tratamiento, la omisión o la operación, o desde que la lesión se descubrió o debió descubrirse, con un plazo máximo de 6 años (S.C. Code § 15-3-545). Existen excepciones, como los objetos olvidados en el cuerpo y los casos de menores. Consulte pronto: preparar estos casos toma meses."
                     },
                     {
                         "question": "¿Qué se necesita para presentar la demanda?",
-                        "answer": "Además de la evidencia, Georgia exige presentar una declaración jurada de un experto médico calificado junto con la demanda (O.C.G.A. § 9-11-9.1), y Carolina del Sur exige un proceso previo similar con declaración de experto. Sin ese respaldo experto, el caso se desestima. Nosotros nos encargamos de todo el proceso."
+                        "answer": "Además de la evidencia, Georgia exige presentar una declaración jurada de un experto médico calificado junto con la demanda (O.C.G.A. § 9-11-9.1), y Carolina del Sur exige presentar, antes de la demanda, un Aviso de Intención de Demandar junto con la declaración jurada de un experto calificado (S.C. Code §§ 15-36-100, 15-79-125). Sin ese respaldo experto, el caso se desestima. Nosotros nos encargamos de todo el proceso."
                     },
                     {
                         "question": "¿Puedo demandar al hospital o solo al médico?",
@@ -15956,7 +15956,7 @@
                     },
                     {
                         "question": "¿Existe un límite máximo a la indemnización por negligencia médica en Georgia o en Carolina del Sur?",
-                        "answer": "Georgia no impone actualmente ningún límite a los daños por negligencia médica. La Corte Suprema de Georgia anuló el tope estatal de $350,000 sobre daños no económicos en el caso Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt (2010). Carolina del Sur tampoco limita los daños no económicos en casos de negligencia médica, aunque sí limita los daños punitivos a la cantidad mayor entre $500,000 o tres veces los daños compensatorios (S.C. Code § 15-32-530). Por eso el valor de su caso depende de sus pérdidas reales y no de una cifra fijada de antemano."
+                        "answer": "Georgia no impone actualmente ningún límite a los daños por negligencia médica. La Corte Suprema de Georgia anuló el tope estatal de $350,000 sobre daños no económicos en el caso Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt (2010). Carolina del Sur sí limita los daños no económicos en casos de negligencia médica: S.C. Code § 15-32-220 fija una base de $350,000 por proveedor o institución y de $1,050,000 en total, ajustada cada año por inflación ($596,001 y $1,788,002 en 2026). Los daños punitivos tienen un límite aparte: la cantidad mayor entre tres veces los daños compensatorios o $739,245, la cifra ajustada por inflación para 2026 (S.C. Code § 15-32-530)."
                     },
                     {
                         "question": "¿Cuál es la diferencia entre negligencia médica y negligencia común?",
@@ -16029,7 +16029,7 @@
                 "_roden_faqs": [
                     {
                         "question": "La aseguradora dice que el accidente fue mi culpa. ¿Qué hago?",
-                        "answer": "No acepte esa versión ni dé declaraciones grabadas. Las aseguradoras culpan a los motociclistas por rutina para pagar menos. La culpa se determina con evidencia — informe policial, testigos, reconstrucción del accidente — y en Georgia usted puede recuperar compensación si fue menos del 50% culpable; en Carolina del Sur, menos del 51%."
+                        "answer": "No acepte esa versión ni dé declaraciones grabadas. Las aseguradoras culpan a los motociclistas por rutina para pagar menos. La culpa se determina con evidencia — informe policial, testigos, reconstrucción del accidente — y en Georgia usted puede recuperar compensación si fue menos del 50% culpable; en Carolina del Sur, si fue el 50% culpable o menos (Nelson v. Concrete Supply Co.)."
                     },
                     {
                         "question": "¿Puedo reclamar si no llevaba casco?",
@@ -16134,7 +16134,7 @@
                     },
                     {
                         "question": "Mi familiar falleció en el hogar de ancianos. ¿Qué derechos tiene la familia?",
-                        "answer": "Si la negligencia o el abuso causaron o aceleraron el fallecimiento, la familia puede presentar una demanda por muerte por negligencia. Estos casos exigen revisar los expedientes médicos con expertos, y los plazos corren desde el fallecimiento — consúltenos pronto."
+                        "answer": "Si la negligencia o el abuso causaron o aceleraron el fallecimiento, la familia puede presentar una demanda por muerte por negligencia. Estos casos exigen revisar los expedientes médicos con expertos, y los plazos son estrictos — consúltenos pronto."
                     },
                     {
                         "question": "¿Cuánto cuesta contratar a un abogado para este caso?",
@@ -16150,7 +16150,7 @@
                     },
                     {
                         "question": "¿Qué compensación se puede obtener en un caso de abuso en un hogar de ancianos?",
-                        "answer": "Las víctimas y sus familias pueden recuperar compensación por los gastos médicos del tratamiento de las lesiones causadas por el abuso o la negligencia, el dolor y el sufrimiento que soportó el residente, la angustia emocional, el costo de mudarlo a una instalación segura y la pérdida del disfrute de la vida. En los casos de muerte injusta también se pueden reclamar los gastos funerarios y el valor total de la vida de la persona fallecida. Cuando la conducta de la instalación fue intencional, temeraria o gravemente negligente, pueden otorgarse daños punitivos."
+                        "answer": "Las víctimas y sus familias pueden recuperar compensación por los gastos médicos del tratamiento de las lesiones causadas por el abuso o la negligencia, el dolor y el sufrimiento que soportó el residente, la angustia emocional, el costo de mudarlo a una instalación segura y la pérdida del disfrute de la vida. En los casos de muerte injusta también se pueden reclamar los gastos funerarios y, en Georgia, el valor total de la vida de la persona fallecida (O.C.G.A. § 51-4-1). Cuando la conducta de la instalación fue intencional, temeraria o gravemente negligente, pueden otorgarse daños punitivos."
                     },
                     {
                         "question": "¿Puede un hogar de ancianos obligar a firmar un acuerdo de arbitraje?",
@@ -16215,7 +16215,7 @@
                 "_roden_faqs": [
                     {
                         "question": "El conductor dice que yo tuve la culpa. ¿Todavía tengo caso?",
-                        "answer": "Es posible. La culpa se determina con evidencia, no con la palabra del conductor. En Georgia usted puede recuperar compensación si fue menos del 50% culpable (O.C.G.A. § 51-12-33); en Carolina del Sur, menos del 51% — su compensación solo se reduce según su porcentaje de culpa."
+                        "answer": "Es posible. La culpa se determina con evidencia, no con la palabra del conductor. En Georgia usted puede recuperar compensación si fue menos del 50% culpable (O.C.G.A. § 51-12-33); en Carolina del Sur, si fue el 50% culpable o menos (Nelson v. Concrete Supply Co.) — su compensación solo se reduce según su porcentaje de culpa."
                     },
                     {
                         "question": "¿Qué pasa si fue un atropello y fuga?",
@@ -16239,7 +16239,7 @@
                     },
                     {
                         "question": "¿Quién responde si el mal diseño de la vía contribuyó al atropello?",
-                        "answer": "Si la iluminación deficiente, la falta de marcas en el cruce peatonal, un semáforo descompuesto, la ausencia de aceras o un diseño peligroso de la vía contribuyeron a su accidente, la entidad gubernamental encargada del mantenimiento de esa vía puede ser responsable. En Georgia, los reclamos contra agencias gubernamentales deben presentarse bajo la Ley de Reclamos Extracontractuales de Georgia (O.C.G.A. § 50-21-20), con requisitos de notificación específicos y plazos más cortos que los de un caso común. En Carolina del Sur, los reclamos contra entidades gubernamentales se rigen por la ley estatal de reclamos (South Carolina Tort Claims Act), que también impone su propio aviso previo y plazos más cortos. Nuestros abogados identifican a todas las partes responsables."
+                        "answer": "Si la iluminación deficiente, la falta de marcas en el cruce peatonal, un semáforo descompuesto, la ausencia de aceras o un diseño peligroso de la vía contribuyeron a su accidente, la entidad gubernamental encargada del mantenimiento de esa vía puede ser responsable. En Georgia, un reclamo contra el gobierno exige un aviso previo por escrito (ante litem): dentro de 6 meses contra una ciudad (O.C.G.A. § 36-33-5) y dentro de 12 meses contra un condado (O.C.G.A. § 36-11-1) o contra el Estado (O.C.G.A. § 50-21-26). En Carolina del Sur, la Ley de Reclamos contra el Gobierno (South Carolina Tort Claims Act) no exige un aviso previo, pero la demanda debe presentarse dentro de 2 años (S.C. Code § 15-78-110), o de 3 años si primero se presentó un reclamo verificado ante la entidad (S.C. Code § 15-78-80). Nuestros abogados identifican a todas las partes responsables."
                     },
                     {
                         "question": "¿El seguro del conductor paga mis cuentas médicas?",
@@ -16247,7 +16247,7 @@
                     },
                     {
                         "question": "¿Pueden los niños presentar un reclamo por atropello?",
-                        "answer": "Sí. Si un niño resulta lesionado como peatón, uno de sus padres o su tutor legal puede presentar el reclamo en su nombre. Tanto Georgia como Carolina del Sur exigen a los conductores un deber de cuidado más alto en los lugares donde se espera la presencia de niños, como zonas escolares, parques y vecindarios residenciales. El plazo para demandar se suspende (se pausa) hasta que el menor cumple 18 años, pero recomendamos actuar pronto, mientras la evidencia todavía existe y los testigos recuerdan lo que pasó."
+                        "answer": "Sí. Si un niño resulta lesionado como peatón, uno de sus padres o su tutor legal puede presentar el reclamo en su nombre. Tanto Georgia como Carolina del Sur exigen a los conductores un deber de cuidado más alto en los lugares donde se espera la presencia de niños, como zonas escolares, parques y vecindarios residenciales. Existen reglas especiales de plazo para los menores, pero recomendamos actuar pronto, mientras la evidencia todavía existe y los testigos recuerdan lo que pasó."
                     },
                     {
                         "question": "¿Necesito un abogado si la aseguradora ya aceptó la culpa del conductor?",
@@ -16312,11 +16312,11 @@
                     },
                     {
                         "question": "¿Cuánto tiempo tengo para presentar un reclamo en Georgia o Carolina del Sur?",
-                        "answer": "En Georgia, el plazo general es de 2 años desde la fecha de la lesión (O.C.G.A. § 9-3-33). En Carolina del Sur es de 3 años (S.C. Code § 15-3-530). Los casos de negligencia médica siguen reglas parecidas pero distintas, con plazos máximos de 5 años en Georgia (O.C.G.A. § 9-3-71) y 6 años en Carolina del Sur (S.C. Code § 15-3-545). Los reclamos contra entidades del gobierno exigen un aviso previo mucho más corto. Si deja vencer el plazo que le aplica, pierde el derecho a reclamar para siempre."
+                        "answer": "En Georgia, el plazo general es de 2 años desde la fecha de la lesión (O.C.G.A. § 9-3-33). En Carolina del Sur es de 3 años (S.C. Code § 15-3-530). Los casos de negligencia médica siguen reglas parecidas pero distintas, con plazos máximos de 5 años en Georgia (O.C.G.A. § 9-3-71) y 6 años en Carolina del Sur (S.C. Code § 15-3-545). Los reclamos contra el gobierno avanzan más rápido: Georgia exige un aviso previo (ante litem) dentro de 6 meses contra una ciudad (O.C.G.A. § 36-33-5) y de 12 meses contra un condado (O.C.G.A. § 36-11-1) o el Estado (O.C.G.A. § 50-21-26); en Carolina del Sur, la demanda contra el gobierno debe presentarse dentro de 2 años (S.C. Code § 15-78-110), o de 3 si primero se presentó un reclamo verificado (S.C. Code § 15-78-80). Si deja vencer el plazo que le aplica, pierde el derecho a reclamar para siempre."
                     },
                     {
                         "question": "¿Qué pasa si yo tuve parte de la culpa?",
-                        "answer": "Todavía puede reclamar. Los dos estados usan negligencia comparativa modificada: en Georgia recupera si tuvo menos del 50% de la culpa (O.C.G.A. § 51-12-33) y en Carolina del Sur si tuvo menos del 51%, con la compensación reducida según su porcentaje. Por ejemplo, en un reclamo de $100,000 con un 30% de culpa suya, la recuperación sería de $70,000. Al llegar al 50% en Georgia o al 51% en Carolina del Sur, la ley cierra la puerta por completo. Por eso nunca acepte sin pelear la versión de culpa que le da la aseguradora."
+                        "answer": "Todavía puede reclamar. Los dos estados usan negligencia comparativa modificada: en Georgia recupera si tuvo menos del 50% de la culpa (O.C.G.A. § 51-12-33) y en Carolina del Sur si tuvo el 50% o menos (Nelson v. Concrete Supply Co.), con la compensación reducida según su porcentaje. Por ejemplo, en un reclamo de $100,000 con un 30% de culpa suya, la recuperación sería de $70,000. Con el 50% o más de la culpa en Georgia, o con más del 50% en Carolina del Sur, la ley cierra la puerta por completo. Por eso nunca acepte sin pelear la versión de culpa que le da la aseguradora."
                     },
                     {
                         "question": "¿Cuánto vale mi caso de lesiones personales?",
@@ -16328,7 +16328,7 @@
                     },
                     {
                         "question": "¿Qué tipo de compensación puedo recuperar?",
-                        "answer": "Puede reclamar tres categorías de daños. Los económicos: gastos médicos pasados y futuros, salarios perdidos, pérdida de capacidad de trabajo y daños a su propiedad, sin límite legal en ninguno de los dos estados. Los no económicos: dolor y sufrimiento, angustia mental, discapacidad, desfiguración y pérdida del disfrute de la vida, tampoco limitados en los casos comunes de lesiones personales (Carolina del Sur solo los limita en casos de negligencia médica). Y los daños punitivos por conducta gravemente negligente o intencional, limitados por O.C.G.A. § 51-12-5.1 en Georgia y S.C. Code § 15-32-530 en Carolina del Sur, con excepciones importantes para productos defectuosos y casos de intoxicación."
+                        "answer": "Puede reclamar tres categorías de daños. Los económicos: gastos médicos pasados y futuros, salarios perdidos, pérdida de capacidad de trabajo y daños a su propiedad, sin límite legal en ninguno de los dos estados. Los no económicos: dolor y sufrimiento, angustia mental, discapacidad, desfiguración y pérdida del disfrute de la vida, tampoco limitados en los casos comunes de lesiones personales (Carolina del Sur solo los limita en casos de negligencia médica). Y los daños punitivos por conducta gravemente negligente o intencional, limitados en Georgia por O.C.G.A. § 51-12-5.1, con excepciones importantes para productos defectuosos y casos de intoxicación, y en Carolina del Sur por S.C. Code § 15-32-530, con excepciones cuando hubo intención de causar daño, una condena por delito grave derivada de la conducta o alteración por alcohol o drogas."
                     },
                     {
                         "question": "¿Debo hablar con la aseguradora de la otra parte?",
@@ -16403,7 +16403,7 @@
                     },
                     {
                         "question": "El negocio dice que la culpa fue mía por no fijarme. ¿Pierdo el caso?",
-                        "answer": "No necesariamente. Georgia y Carolina del Sur aplican culpa comparativa: usted puede recuperar compensación si su culpa es menor al 50% en Georgia y menor al 51% en Carolina del Sur, con una reducción proporcional. Culpar a la víctima es la defensa estándar de las aseguradoras — no la acepte sin pelear."
+                        "answer": "No necesariamente. Georgia y Carolina del Sur aplican culpa comparativa: usted puede recuperar compensación si su culpa es menor al 50% en Georgia (O.C.G.A. § 51-12-33) y del 50% o menos en Carolina del Sur (Nelson v. Concrete Supply Co.), con una reducción proporcional. Culpar a la víctima es la defensa estándar de las aseguradoras — no la acepte sin pelear."
                     },
                     {
                         "question": "¿Puedo reclamar si me lesioné en un apartamento que rento?",
@@ -16496,7 +16496,7 @@
                     },
                     {
                         "question": "¿Tengo caso si usé el producto de forma un poco distinta a las instrucciones?",
-                        "answer": "Es posible. Los fabricantes deben prever los usos razonablemente previsibles de sus productos, no solo el uso perfecto. Y bajo la culpa comparativa de Georgia y Carolina del Sur, usted puede recuperar aunque tenga parte de la culpa, siempre que no sea la mayor parte."
+                        "answer": "Es posible. Los fabricantes deben prever los usos razonablemente previsibles de sus productos, no solo el uso perfecto. Y en un reclamo por negligencia, usted puede recuperar aunque tenga parte de la culpa: en Georgia, si su culpa es menor al 50% (O.C.G.A. § 51-12-33); en Carolina del Sur, si es del 50% o menos (Nelson v. Concrete Supply Co.)."
                     },
                     {
                         "question": "¿Cuánto tiempo tengo para presentar mi demanda?",
@@ -16589,7 +16589,7 @@
                     },
                     {
                         "question": "El propietario dice que la culpa fue mía. ¿Tengo caso?",
-                        "answer": "Posiblemente sí. Que le echen la culpa es la defensa estándar. En Georgia usted puede recuperar compensación si fue menos del 50% culpable (O.C.G.A. § 51-12-33); en Carolina del Sur, menos del 51%. La evidencia decide, no la versión del negocio."
+                        "answer": "Posiblemente sí. Que le echen la culpa es la defensa estándar. En Georgia usted puede recuperar compensación si fue menos del 50% culpable (O.C.G.A. § 51-12-33); en Carolina del Sur, si fue el 50% culpable o menos (Nelson v. Concrete Supply Co.). La evidencia decide, no la versión del negocio."
                     },
                     {
                         "question": "¿Qué compensación puedo recibir?",
@@ -16609,7 +16609,7 @@
                     },
                     {
                         "question": "¿Qué pasa si me caí en propiedad del gobierno, como una acera o un edificio público?",
-                        "answer": "Los reclamos contra entidades gubernamentales siguen reglas distintas y plazos mucho más cortos. En Georgia se rigen por la Ley de Reclamos Extracontractuales de Georgia (O.C.G.A. § 50-21-20), que exige dar un aviso previo (ante litem) dentro de los 12 meses del incidente. Carolina del Sur tiene su propia ley de reclamos contra el Estado (S.C. Code § 15-78-110), con un plazo de presentación de 2 años. La inmunidad gubernamental también puede limitar la cantidad recuperable. Nuestros abogados tienen experiencia manejando estos requisitos adicionales, así que no espere para consultarnos."
+                        "answer": "Los reclamos contra entidades gubernamentales siguen reglas distintas y plazos mucho más cortos. En Georgia exigen un aviso previo por escrito (ante litem): dentro de 6 meses contra una ciudad (O.C.G.A. § 36-33-5) y dentro de 12 meses contra un condado (O.C.G.A. § 36-11-1) o contra el Estado (O.C.G.A. § 50-21-26). Carolina del Sur tiene su propia ley de reclamos contra el gobierno, que no exige aviso previo: la demanda debe presentarse dentro de 2 años (S.C. Code § 15-78-110), o de 3 si primero se presentó un reclamo verificado ante la entidad (S.C. Code § 15-78-80). La inmunidad gubernamental también puede limitar la cantidad recuperable. Nuestros abogados tienen experiencia manejando estos requisitos adicionales, así que no espere para consultarnos."
                     },
                     {
                         "question": "¿Cuánto tarda en resolverse un caso de caída?",
@@ -16682,7 +16682,7 @@
                     },
                     {
                         "question": "¿Qué pasa si yo tuve parte de la culpa en el accidente?",
-                        "answer": "Todavía puede recuperar compensación. Georgia permite recuperar si su culpa es menor al 50% (O.C.G.A. § 51-12-33) y Carolina del Sur si es menor al 51%; su compensación se reduce según su porcentaje de culpa. No acepte la versión de la aseguradora sobre quién tuvo la culpa — investigamos nosotros mismos."
+                        "answer": "Todavía puede recuperar compensación. Georgia permite recuperar si su culpa es menor al 50% (O.C.G.A. § 51-12-33) y Carolina del Sur si es del 50% o menos (Nelson v. Concrete Supply Co.); su compensación se reduce según su porcentaje de culpa. No acepte la versión de la aseguradora sobre quién tuvo la culpa — investigamos nosotros mismos."
                     },
                     {
                         "question": "¿Cuánto tiempo tengo para demandar?",
@@ -16702,7 +16702,7 @@
                     },
                     {
                         "question": "¿Puedo demandar si mi lesión de la médula espinal fue por un accidente de carro?",
-                        "answer": "Sí. Los accidentes de vehículos son la causa principal de las lesiones de la médula espinal. Usted puede presentar un reclamo por lesiones personales contra el conductor culpable y, según el caso, contra otras partes responsables, como una compañía de camiones, el fabricante del vehículo o la entidad gubernamental encargada del estado de la carretera. La regla de negligencia comparativa modificada de Georgia (O.C.G.A. § 51-12-33) permite recuperar si su culpa fue menor al 50%; en Carolina del Sur el umbral es del 51%."
+                        "answer": "Sí. Los accidentes de vehículos son la causa principal de las lesiones de la médula espinal. Usted puede presentar un reclamo por lesiones personales contra el conductor culpable y, según el caso, contra otras partes responsables, como una compañía de camiones, el fabricante del vehículo o la entidad gubernamental encargada del estado de la carretera. La regla de negligencia comparativa modificada de Georgia (O.C.G.A. § 51-12-33) permite recuperar si su culpa fue menor al 50%; en Carolina del Sur, si fue del 50% o menos (Nelson v. Concrete Supply Co.)."
                     },
                     {
                         "question": "¿Qué pasa si mi lesión de la médula espinal ocurrió por una caída en el trabajo?",
@@ -16880,7 +16880,7 @@
                     },
                     {
                         "question": "¿Cuánto tiempo tengo para reportar una lesión de trabajo y presentar mi reclamo?",
-                        "answer": "Los plazos son diferentes en cada estado y se aplican de forma estricta. En Georgia usted debe reportar la lesión a su empleador dentro de los 30 días del accidente (O.C.G.A. § 34-9-80) y después tiene un año desde la fecha de la lesión para presentar un reclamo formal ante la Junta Estatal de Compensación Laboral (O.C.G.A. § 34-9-82). En Carolina del Sur debe avisar a su empleador dentro de 90 días (S.C. Code § 42-15-20) y presentar el reclamo formal ante la Comisión de Compensación Laboral dentro de dos años del accidente (S.C. Code § 42-15-40). En enfermedades ocupacionales, en Georgia el año empieza a correr cuando usted supo o debió saber que la condición era de trabajo, y en Carolina del Sur los dos años corren desde la fecha de la incapacidad o desde el día en que un médico le informó de la condición. No cumplir con estos plazos puede costarle sus beneficios."
+                        "answer": "Los plazos son diferentes en cada estado y se aplican de forma estricta. En Georgia usted debe reportar la lesión a su empleador dentro de los 30 días del accidente (O.C.G.A. § 34-9-80) y después tiene un año desde la fecha de la lesión, un año desde el último tratamiento médico que le haya dado su empleador o dos años desde el último pago semanal de beneficios para presentar un reclamo formal ante la Junta Estatal de Compensación Laboral (O.C.G.A. § 34-9-82). En Carolina del Sur debe avisar a su empleador dentro de 90 días (S.C. Code § 42-15-20) y presentar el reclamo formal ante la Comisión de Compensación Laboral dentro de dos años del accidente (S.C. Code § 42-15-40). En enfermedades ocupacionales, en Georgia el año empieza a correr cuando usted supo o debió saber que la condición era de trabajo, y en Carolina del Sur los dos años corren desde la fecha de la incapacidad o desde el día en que un médico le informó de la condición. No cumplir con estos plazos puede costarle sus beneficios."
                     },
                     {
                         "question": "¿Puedo escoger a mi propio médico en un caso de compensación laboral?",
@@ -16961,7 +16961,7 @@
                     },
                     {
                         "question": "¿Cuánto tiempo tenemos para demandar?",
-                        "answer": "En Georgia, generalmente 2 años (O.C.G.A. § 9-3-33) desde el fallecimiento; en Carolina del Sur, 3 años (S.C. Code § 15-3-530). Ciertos hechos pueden modificar el plazo, como un proceso penal pendiente contra el responsable. Consulte lo antes posible."
+                        "answer": "En Georgia, la demanda debe presentarse dentro de 2 años (O.C.G.A. § 9-3-33); en Carolina del Sur, el plazo es generalmente de 3 años (S.C. Code § 15-3-530). Estos plazos se aplican de forma estricta. Consulte lo antes posible."
                     },
                     {
                         "question": "¿Qué pasa si también hay un caso penal contra el responsable?",
@@ -16973,11 +16973,11 @@
                     },
                     {
                         "question": "¿Cuál es la diferencia entre una demanda por muerte por negligencia y una acción de sobrevivencia?",
-                        "answer": "La demanda por muerte por negligencia (wrongful death) compensa a los familiares sobrevivientes por sus propias pérdidas: el sostén económico que dejaron de recibir, la compañía y el valor total de la vida de la persona fallecida. La acción de sobrevivencia (survival action) la presenta el patrimonio del fallecido para recuperar los daños que la persona sufrió antes de morir, incluidos los gastos médicos, el dolor y sufrimiento y los salarios perdidos entre el momento de la lesión y la muerte. En muchos casos se presentan las dos al mismo tiempo."
+                        "answer": "La demanda por muerte por negligencia (wrongful death) compensa a los familiares sobrevivientes por sus propias pérdidas: el sostén económico que dejaron de recibir, la compañía y, en Georgia, el valor total de la vida de la persona fallecida (O.C.G.A. § 51-4-1). La acción de sobrevivencia (survival action) la presenta el patrimonio del fallecido para recuperar los daños que la persona sufrió antes de morir, incluidos los gastos médicos, el dolor y sufrimiento y los salarios perdidos entre el momento de la lesión y la muerte. En muchos casos se presentan las dos al mismo tiempo."
                     },
                     {
                         "question": "¿Cómo se calcula la indemnización por muerte por negligencia en Georgia?",
-                        "answer": "Georgia aplica el estándar del \"valor total de la vida\" (full value of the life, O.C.G.A. § 51-4-2), que toma en cuenta no solo la capacidad de la persona fallecida para generar ingresos, sino también el valor intangible de su vida: la compañía, el consejo y lo que esa persona valía en su conjunto. Es una de las medidas de daños por muerte más amplias del país y con frecuencia da lugar a recuperaciones sustanciales. En Carolina del Sur el esquema es distinto: la acción la presenta el representante personal del patrimonio (S.C. Code § 15-51-20) y lo recuperado se reparte entre los beneficiarios que fija la ley, es decir, el cónyuge sobreviviente, los hijos y, en ciertos casos, los padres u otros herederos."
+                        "answer": "Georgia aplica el estándar del \"valor total de la vida\" (full value of the life, O.C.G.A. § 51-4-1), que toma en cuenta no solo la capacidad de la persona fallecida para generar ingresos, sino también el valor intangible de su vida: la compañía, el consejo y lo que esa persona valía en su conjunto. Es una de las medidas de daños por muerte más amplias del país y con frecuencia da lugar a recuperaciones sustanciales. En Carolina del Sur el esquema es distinto: la acción la presenta el representante personal del patrimonio (S.C. Code § 15-51-20) y lo recuperado se reparte entre los beneficiarios que fija la ley, es decir, el cónyuge sobreviviente, los hijos y, en ciertos casos, los padres u otros herederos."
                     },
                     {
                         "question": "¿Podemos demandar si la muerte fue causada por negligencia médica?",
@@ -16985,7 +16985,7 @@
                     },
                     {
                         "question": "¿Podemos demandar si nuestro ser querido tuvo parte de la culpa?",
-                        "answer": "Sí, en la mayoría de los casos. La regla de negligencia comparativa modificada de Georgia (O.C.G.A. § 51-12-33) permite recuperar siempre que la persona fallecida haya tenido menos del 50% de la culpa, aunque la compensación se reduce según ese porcentaje. En Carolina del Sur el umbral es del 51%. Nuestros abogados trabajan para reducir al mínimo la culpa que la otra parte le quiera atribuir a su ser querido y para maximizar lo que recupere su familia."
+                        "answer": "Sí, en la mayoría de los casos. La regla de negligencia comparativa modificada de Georgia (O.C.G.A. § 51-12-33) permite recuperar siempre que la persona fallecida haya tenido menos del 50% de la culpa, aunque la compensación se reduce según ese porcentaje. Carolina del Sur permite recuperar siempre que la persona fallecida haya tenido el 50% o menos de la culpa (Nelson v. Concrete Supply Co.). Nuestros abogados trabajan para reducir al mínimo la culpa que la otra parte le quiera atribuir a su ser querido y para maximizar lo que recupere su familia."
                     },
                     {
                         "question": "¿Cuánto tarda normalmente un caso de muerte por negligencia?",

@@ -1309,3 +1309,292 @@ Each item was confirmed on the rendered ES pages on 2026-09-30.
 - § 51-4-2 order of plaintiffs (4882 FAQ[0] and body; EN T-WD2)
 - T-ES9 / T-ES10 (§§ 34-9-201, 34-9-17, 34-9-11 in the WC template)
 - 1874 CS1874-2…7: the physician's-statement exception and the SB 69 limit. These are the same pending wording as draft CS-1 and the GA 40-8-76.1 pack amendment.
+
+---
+
+# PART C: English-pillar residuals batch (`data/facts/en-pillars-residuals-batch-2026-09-30.json`), prepared and dry-run only
+
+- **Source:** the 10-row "EN residuals found in passing" table (Part A), plus a class re-sweep of all 23 EN pillars on all four surfaces.
+  - The classes swept: SCTCA notice, GA municipal 12 months, minors tolled to majority, unscoped "full value", SC punitive exceptions, and SC "51%". The WC deadline class was added once it surfaced.
+  - The surfaces: `post_content`, `post_excerpt`, `_roden_key_takeaways` and `_roden_faqs`, plus the other `_roden*` meta.
+  - The data is the read-only dump of 2026-09-30. The dry run re-verified every `from` against live.
+- **The re-sweep found 3 siblings the table missed:**
+  - 3611 FAQ[7], minors tolled (EN-DOG2).
+  - 3618 FAQ[4], a flat § 34-9-82 (EN-CON1).
+  - 3618 FAQ[4], the 90-day SC notice bound to § 42-15-40 instead of § 42-15-20 (EN-CON2).
+- **Key takeaways and excerpts are clean** for every class. The 4088 and 4692 key takeaways are the model wording the corrections reuse.
+- **Left alone:** 3620 FAQ[2] "threshold in South Carolina is 51% … meaning you can recover damages if you are 50% or less at fault". It explains itself, per the 2026-09-29 decision.
+- **Batch: 18 edits on 11 posts, 16 apply and 2 attorney.** All are FAQ answers, so each is also a FAQPage JSON-LD fix.
+- **Engine replay (FAQs of the 11 posts):**
+  - Before: 0 findings and 2 warnings. The engine missed all 14 substantive EN errors as well, including the 12-month municipal notice on 3606, which `municipal-ante-litem-12-months` does not reach in that phrasing.
+  - After: **0 findings, 0 warnings.**
+  - The 6 English controls fire, 8/8.
+- **Dry run** (`bin/build-linked-pages-batch.py` embedded 16 apply edits; `wp eval-file -` with no `apply` argument): **"Would fix: 16 edits across 11 posts"**, with no ABORT. Nothing was written.
+
+#### EN-PED1 · apply
+
+- **Post / URL / surface:** 3621 · `/practice-areas/pedestrian-accident-lawyers/` · FAQ[4] (`_roden_faqs[4]`), also FAQPage JSON-LD
+- **Authority:** `GA 36-33-5`, `GA 36-11-1`, `GA 50-21-26`, `SC 15-78-110`, `SC 15-78-80`
+- **Rule:** none. Found by reading
+- **Why:** ES-PED3 counterpart. City/county road claims are not under the State Tort Claims Act (§ 50-21-20, not in pack); a city claim has six months. The SC sentence fills the gap the FAQ left for a two-state page.
+- **Live:**
+
+  > Claims against government agencies in Georgia must be filed under the Georgia Tort Claims Act (O.C.G.A. § 50-21-20) with specific notice requirements and shorter deadlines.
+
+- **Corrected:**
+
+  > In Georgia, a claim against a government entity requires written ante litem notice: within six months for a city (O.C.G.A. § 36-33-5) and within twelve months for a county (O.C.G.A. § 36-11-1) or the State (O.C.G.A. § 50-21-26). South Carolina's Tort Claims Act requires no pre-suit notice, but suit must be filed within two years (S.C. Code § 15-78-110), or three if a verified claim was filed with the entity first (S.C. Code § 15-78-80).
+
+#### EN-SF1 · apply
+
+- **Post / URL / surface:** 3606 · `/practice-areas/slip-and-fall-lawyers/` · FAQ[1] (`_roden_faqs[1]`), also FAQPage JSON-LD
+- **Authority:** `GA 36-33-5`, `GA 36-11-1`, `GA 50-21-26`
+- **Rule:** none. Found by reading
+- **Why:** municipal-ante-litem-12-months class: a city sidewalk claim has six months. ES-SF3 counterpart.
+- **Live:**
+
+  > If the fall occurred on government property, shorter notice requirements may apply — in Georgia, you must provide ante litem notice within 12 months under the Georgia Tort Claims Act (O.C.G.A. § 50-21-26).
+
+- **Corrected:**
+
+  > If the fall occurred on government property, shorter deadlines apply — in Georgia, ante litem notice is due within six months for a city (O.C.G.A. § 36-33-5) and within twelve months for a county (O.C.G.A. § 36-11-1) or the State (O.C.G.A. § 50-21-26).
+
+#### EN-SF2 · apply
+
+- **Post / URL / surface:** 3606 · `/practice-areas/slip-and-fall-lawyers/` · FAQ[7] (`_roden_faqs[7]`), also FAQPage JSON-LD
+- **Authority:** `GA 36-33-5`, `GA 36-11-1`, `GA 50-21-26`
+- **Rule:** none. Found by reading
+- **Why:** ES-SF3 counterpart.
+- **Live:**
+
+  > Claims against government entities in Georgia are governed by the Georgia Tort Claims Act (O.C.G.A. § 50-21-20), which requires ante litem notice within 12 months of the incident.
+
+- **Corrected:**
+
+  > In Georgia, claims against government entities require written ante litem notice: within six months for a city (O.C.G.A. § 36-33-5) and within twelve months for a county (O.C.G.A. § 36-11-1) or the State (O.C.G.A. § 50-21-26).
+
+#### EN-SF3 · apply
+
+- **Post / URL / surface:** 3606 · `/practice-areas/slip-and-fall-lawyers/` · FAQ[7] (`_roden_faqs[7]`), also FAQPage JSON-LD
+- **Authority:** `SC 15-78-110`, `SC 15-78-80`
+- **Rule:** none. Found by reading
+- **Why:** ES-SF4 counterpart (narrow, not false).
+- **Live:**
+
+  > South Carolina has the South Carolina Tort Claims Act (S.C. Code § 15-78-110) with a 2-year filing deadline.
+
+- **Corrected:**
+
+  > South Carolina's Tort Claims Act requires no pre-suit notice; suit must be filed within 2 years (S.C. Code § 15-78-110), or 3 years if a verified claim was filed with the entity first (S.C. Code § 15-78-80).
+
+#### EN-BK1 · apply
+
+- **Post / URL / surface:** 4087 · `/practice-areas/bicycle-accident-lawyers/` · FAQ[4] (`_roden_faqs[4]`), also FAQPage JSON-LD
+- **Authority:** `GA 36-33-5`, `GA 36-11-1`, `SC 15-78-110`, `SC 15-78-80`
+- **Rule:** none. Found by reading
+- **Why:** SCTCA-notice class; wording from the 4088 KT. ES-ES3 counterpart.
+- **Live:**
+
+  > Claims must follow Georgia's or South Carolina's Tort Claims Act procedures with specific notice deadlines.
+
+- **Corrected:**
+
+  > In Georgia, a city must receive ante litem notice within six months (O.C.G.A. § 36-33-5) and a county within twelve (O.C.G.A. § 36-11-1). South Carolina requires no pre-suit notice, but a government entity must be sued within two years, or three if a verified claim was filed first (S.C. Code § 15-78-110; S.C. Code § 15-78-80).
+
+#### EN-EB1 · apply
+
+- **Post / URL / surface:** 4088 · `/practice-areas/electric-scooter-accident-lawyers/` · FAQ[5] (`_roden_faqs[5]`), also FAQPage JSON-LD
+- **Authority:** `GA 36-33-5`, `GA 36-11-1`, `SC 15-78-110`, `SC 15-78-80`
+- **Rule:** none. Found by reading
+- **Why:** SCTCA-notice class (hedged "may apply … state tort claims acts" implies an SC notice). Matches the page's own KT.
+- **Live:**
+
+  > If a government entity is involved, shorter notice deadlines may apply under the state tort claims acts.
+
+- **Corrected:**
+
+  > If a government entity is involved, a Georgia city must receive ante litem notice within six months (O.C.G.A. § 36-33-5) and a county within twelve (O.C.G.A. § 36-11-1); in South Carolina, a government entity must be sued within two years, or three if a verified claim was filed first (S.C. Code § 15-78-110; S.C. Code § 15-78-80).
+
+#### EN-GC1 · apply
+
+- **Post / URL / surface:** 4090 · `/practice-areas/golf-cart-accident-lawyers/` · FAQ[5] (`_roden_faqs[5]`), also FAQPage JSON-LD
+- **Authority:** `GA 36-33-5`, `GA 36-11-1`, `SC 15-78-110`
+- **Rule:** none. Found by reading
+- **Why:** SCTCA-notice class (two-state page).
+- **Live:**
+
+  > If a government entity or public property is involved, shorter notice deadlines may apply.
+
+- **Corrected:**
+
+  > If a government entity or public property is involved, Georgia requires ante litem notice within six months for a city (O.C.G.A. § 36-33-5) or twelve months for a county (O.C.G.A. § 36-11-1); South Carolina requires no notice, but suit must be filed within two years (S.C. Code § 15-78-110).
+
+#### EN-PI1 · apply
+
+- **Post / URL / surface:** 4692 · `/practice-areas/personal-injury-lawyers/` · FAQ[1] (`_roden_faqs[1]`), also FAQPage JSON-LD
+- **Authority:** `GA 36-33-5`, `GA 36-11-1`, `GA 50-21-26`, `SC 15-78-110`, `SC 15-78-80`
+- **Rule:** none. Found by reading
+- **Why:** ES-PI1 counterpart; wording is this page's own KT, cited per clause.
+- **Live:**
+
+  > Claims against government entities require shorter pre-suit notice.
+
+- **Corrected:**
+
+  > Claims against government move faster: Georgia requires ante litem notice within six months for a city (O.C.G.A. § 36-33-5) and twelve months for a county or the State (O.C.G.A. § 36-11-1; O.C.G.A. § 50-21-26); in South Carolina, suit must be filed within two years, or three after a verified claim (S.C. Code § 15-78-110; S.C. Code § 15-78-80).
+
+#### EN-PI2 · apply
+
+- **Post / URL / surface:** 4692 · `/practice-areas/personal-injury-lawyers/` · FAQ[5] (`_roden_faqs[5]`), also FAQPage JSON-LD
+- **Authority:** `SC 15-32-530`
+- **Rule:** none. Found by reading
+- **Why:** ES-PI4 counterpart. The product exception is Georgia's (pending GA 51-12-5.1, already published and left as is); signed SC 15-32-530 has none.
+- **Live:**
+
+  > (capped under O.C.G.A. § 51-12-5.1 in GA and S.C. Code § 15-32-530 in SC, with significant exceptions for product liability and intoxication-related conduct)
+
+- **Corrected:**
+
+  > (capped in GA under O.C.G.A. § 51-12-5.1, with significant exceptions for product liability and intoxication-related conduct, and in SC under S.C. Code § 15-32-530, with exceptions for intent to harm, a felony conviction arising from the conduct, or impairment by alcohol or drugs)
+
+#### EN-PI3 · attorney
+
+- **Post / URL / surface:** 4692 · `/practice-areas/personal-injury-lawyers/` · FAQ[5] (`_roden_faqs[5]`), also FAQPage JSON-LD
+- **Authority:** none in a signed pack (see note)
+- **Rule:** none. Found by reading
+- **Why:** ES-PI5 counterpart. GA § 51-12-5.1(b) (pending) requires more than gross negligence; SC standard unsigned. Eric Roden + Gillin.
+- **Live:**
+
+  > (3) punitive damages for grossly negligent or intentional conduct
+
+- **Corrected:**
+
+  > (3) punitive damages for intentional or reckless conduct
+
+#### EN-DOG1 · apply
+
+- **Post / URL / surface:** 3611 · `/practice-areas/dog-bite-lawyers/` · FAQ[2] (`_roden_faqs[2]`), also FAQPage JSON-LD
+- **Authority:** none in a signed pack (see note)
+- **Rule:** none. Found by reading
+- **Why:** PB-PED4 wording (applied on 3621 2026-09-29). Tolling to majority overstates SC (§ 15-3-40: one year after the disability ends). Neither § 15-3-40 nor § 9-3-90 is in a pack; clean cut. ES-DOG1 counterpart.
+- **Live:**
+
+  > For claims involving minors, the statute may be tolled until the child reaches the age of majority.
+
+- **Corrected:**
+
+  > Special deadline rules can apply to claims involving minors.
+
+#### EN-DOG2 · apply
+
+- **Post / URL / surface:** 3611 · `/practice-areas/dog-bite-lawyers/` · FAQ[7] (`_roden_faqs[7]`), also FAQPage JSON-LD
+- **Authority:** none in a signed pack (see note)
+- **Rule:** none. Found by reading
+- **Why:** Sibling found by this sweep (not in the table). Same class as EN-DOG1; the ES twin FAQ[8] carried it too (ES-DOG1).
+- **Live:**
+
+  > Georgia and South Carolina both allow the statute of limitations to be tolled for minors, giving additional time to file.
+
+- **Corrected:**
+
+  > Special deadline rules can apply to a minor's claim in both Georgia and South Carolina, but it is best to act promptly.
+
+#### EN-WD1 · apply
+
+- **Post / URL / surface:** 3609 · `/practice-areas/wrongful-death-lawyers/` · FAQ[3] (`_roden_faqs[3]`), also FAQPage JSON-LD
+- **Authority:** `GA 51-4-1`, `SC 15-51-40`
+- **Rule:** none. Found by reading
+- **Why:** Full value stated for both states on a two-state page; SC measures by injury to each beneficiary (§ 15-51-40). ES-WD5 counterpart.
+- **Live:**
+
+  > companionship, and the full value of the deceased's life.
+
+- **Corrected:**
+
+  > companionship, and, in Georgia, the full value of the deceased's life (O.C.G.A. § 51-4-1).
+
+#### EN-BT1 · apply
+
+- **Post / URL / surface:** 3616 · `/practice-areas/boating-accident-lawyers/` · FAQ[8] (`_roden_faqs[8]`), also FAQPage JSON-LD
+- **Authority:** `GA 51-4-1`, `SC 15-51-40`
+- **Rule:** none. Found by reading
+- **Why:** ES-BT2 counterpart; matches this page's own GA-branch compensation intro.
+- **Live:**
+
+  > In wrongful death cases, surviving family members may recover the full value of the decedent's life.
+
+- **Corrected:**
+
+  > In a death case, the family may bring a wrongful death claim; where Georgia law applies, damages are measured by the full value of the decedent's life (O.C.G.A. § 51-4-1).
+
+#### EN-NH1 · apply
+
+- **Post / URL / surface:** 3619 · `/practice-areas/nursing-home-abuse-lawyers/` · FAQ[5] (`_roden_faqs[5]`), also FAQPage JSON-LD
+- **Authority:** `GA 51-4-1`, `SC 15-51-40`
+- **Rule:** none. Found by reading
+- **Why:** ES-NH1 counterpart.
+- **Live:**
+
+  > funeral expenses and the full value of the deceased's life.
+
+- **Corrected:**
+
+  > funeral expenses and, in Georgia, the full value of the deceased's life (O.C.G.A. § 51-4-1).
+
+#### EN-NH2 · attorney
+
+- **Post / URL / surface:** 3619 · `/practice-areas/nursing-home-abuse-lawyers/` · FAQ[5] (`_roden_faqs[5]`), also FAQPage JSON-LD
+- **Authority:** none in a signed pack (see note)
+- **Rule:** none. Found by reading
+- **Why:** ES-NH2 counterpart: gross negligence is not enough in GA (§ 51-12-5.1(b), pending); SC standard unsigned. Eric Roden + Gillin.
+- **Live:**
+
+  > when the facility's conduct was willful, reckless, or grossly negligent.
+
+- **Corrected:**
+
+  > when the facility's conduct was willful or reckless.
+
+#### EN-CON1 · apply
+
+- **Post / URL / surface:** 3618 · `/practice-areas/construction-accident-lawyers/` · FAQ[4] (`_roden_faqs[4]`), also FAQPage JSON-LD
+- **Authority:** `GA 34-9-80`, `GA 34-9-82`
+- **Rule:** engine `authority-quantity` warn
+- **Why:** Sibling found by this sweep: flat § 34-9-82 (Savannah WC E1 class), the EN side of ES-CON2. Wording is the approved deadline_detail string.
+- **Live:**
+
+  > in Georgia, you must report the injury within 30 days and file a claim within 1 year (O.C.G.A. § 34-9-82).
+
+- **Corrected:**
+
+  > in Georgia, you must report the injury within 30 days (O.C.G.A. § 34-9-80) and generally file a claim within 1 year of the injury, a deadline extended if the employer paid for treatment or benefits (O.C.G.A. § 34-9-82).
+
+#### EN-CON2 · apply
+
+- **Post / URL / surface:** 3618 · `/practice-areas/construction-accident-lawyers/` · FAQ[4] (`_roden_faqs[4]`), also FAQPage JSON-LD
+- **Authority:** `SC 42-15-20`, `SC 42-15-40`
+- **Rule:** engine `authority-quantity` warn
+- **Why:** Sibling found by this sweep: the 90-day notice was bound to § 42-15-40 (the filing section); notice is § 42-15-20. Engine authority-quantity warn.
+- **Live:**
+
+  > In South Carolina, notice must be given within 90 days and a claim filed within 2 years (S.C. Code § 42-15-40).
+
+- **Corrected:**
+
+  > In South Carolina, notice must be given within 90 days (S.C. Code § 42-15-20) and a claim filed within 2 years (S.C. Code § 42-15-40).
+
+## Not batchable (the applier cannot write these keys)
+
+| # | Post / key | Live | Corrected | Authority | Class |
+|---|---|---|---|---|---|
+| M-EN-WD1 | 3609 `_roden_common_injuries[0].description` | In Georgia, wrongful death damages are measured by the "full value of the life" of the decedent (O.C.G.A. § 51-4-2), encompassing both the economic and intangible value of the person's life — not merely their earning capacity. | In Georgia, wrongful death damages are measured by the "full value of the life" of the decedent (O.C.G.A. § 51-4-1), encompassing both the economic and intangible value of the person's life — not merely their earning capacity. | GA 51-4-1 | apply |
+| M-EN-PI1 | 4692 `_roden_pillar_compensation_intro` | Punitive damages in {state_full} are capped by statute with significant exceptions for product liability and conduct involving intoxication. | Same fix as M-ES-PI3: split by `{{GA}}`/`{{SC}}`. The SC branch reads "exceptions for intent to harm, a felony conviction arising from the conduct, or impairment by alcohol or drugs (S.C. Code § 15-32-530)". | SC 15-32-530 | apply for SC; the GA branch is attorney (Eric Roden) |
+
+- **M-EN-WD1** is an exact-once, whole-string replacement inside the array element. It needs a small `bin/` patcher that edits `_roden_common_injuries[0]['description']` with `str_replace`, writes with `update_post_meta( wp_slash() )` and reads back. The same patcher should carry M-ES-WD1 and M-ES-PI1…4.
+
+## Attorney items (EN batch)
+
+- **EN-PI3** (4692 FAQ[5]) and **EN-NH2** (3619 FAQ[5]): is "grossly negligent" conduct enough for punitive damages?
+  - GA § 51-12-5.1(b) is pending in the pack, and on its text it requires more than gross negligence.
+  - The SC conduct standard is not signed.
+  - Needs Eric Roden and Gillin. These are the same question as ES-NH2, ES-PI5 and M-ES-PI4.

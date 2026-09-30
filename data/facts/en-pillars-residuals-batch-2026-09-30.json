@@ -1,0 +1,236 @@
+[
+ {
+  "id": "EN-PED1",
+  "post_id": 3621,
+  "field": "faq4",
+  "from": "Claims against government agencies in Georgia must be filed under the Georgia Tort Claims Act (O.C.G.A. § 50-21-20) with specific notice requirements and shorter deadlines.",
+  "to": "In Georgia, a claim against a government entity requires written ante litem notice: within six months for a city (O.C.G.A. § 36-33-5) and within twelve months for a county (O.C.G.A. § 36-11-1) or the State (O.C.G.A. § 50-21-26). South Carolina's Tort Claims Act requires no pre-suit notice, but suit must be filed within two years (S.C. Code § 15-78-110), or three if a verified claim was filed with the entity first (S.C. Code § 15-78-80).",
+  "class": "apply",
+  "authority": [
+   "GA 36-33-5",
+   "GA 36-11-1",
+   "GA 50-21-26",
+   "SC 15-78-110",
+   "SC 15-78-80"
+  ],
+  "note": "ES-PED3 counterpart. City/county road claims are not under the State Tort Claims Act (§ 50-21-20, not in pack); a city claim has six months. The SC sentence fills the gap the FAQ left for a two-state page."
+ },
+ {
+  "id": "EN-SF1",
+  "post_id": 3606,
+  "field": "faq1",
+  "from": "If the fall occurred on government property, shorter notice requirements may apply — in Georgia, you must provide ante litem notice within 12 months under the Georgia Tort Claims Act (O.C.G.A. § 50-21-26).",
+  "to": "If the fall occurred on government property, shorter deadlines apply — in Georgia, ante litem notice is due within six months for a city (O.C.G.A. § 36-33-5) and within twelve months for a county (O.C.G.A. § 36-11-1) or the State (O.C.G.A. § 50-21-26).",
+  "class": "apply",
+  "authority": [
+   "GA 36-33-5",
+   "GA 36-11-1",
+   "GA 50-21-26"
+  ],
+  "note": "municipal-ante-litem-12-months class: a city sidewalk claim has six months. ES-SF3 counterpart."
+ },
+ {
+  "id": "EN-SF2",
+  "post_id": 3606,
+  "field": "faq7",
+  "from": "Claims against government entities in Georgia are governed by the Georgia Tort Claims Act (O.C.G.A. § 50-21-20), which requires ante litem notice within 12 months of the incident.",
+  "to": "In Georgia, claims against government entities require written ante litem notice: within six months for a city (O.C.G.A. § 36-33-5) and within twelve months for a county (O.C.G.A. § 36-11-1) or the State (O.C.G.A. § 50-21-26).",
+  "class": "apply",
+  "authority": [
+   "GA 36-33-5",
+   "GA 36-11-1",
+   "GA 50-21-26"
+  ],
+  "note": "ES-SF3 counterpart."
+ },
+ {
+  "id": "EN-SF3",
+  "post_id": 3606,
+  "field": "faq7",
+  "from": "South Carolina has the South Carolina Tort Claims Act (S.C. Code § 15-78-110) with a 2-year filing deadline.",
+  "to": "South Carolina's Tort Claims Act requires no pre-suit notice; suit must be filed within 2 years (S.C. Code § 15-78-110), or 3 years if a verified claim was filed with the entity first (S.C. Code § 15-78-80).",
+  "class": "apply",
+  "authority": [
+   "SC 15-78-110",
+   "SC 15-78-80"
+  ],
+  "note": "ES-SF4 counterpart (narrow, not false)."
+ },
+ {
+  "id": "EN-BK1",
+  "post_id": 4087,
+  "field": "faq4",
+  "from": "Claims must follow Georgia's or South Carolina's Tort Claims Act procedures with specific notice deadlines.",
+  "to": "In Georgia, a city must receive ante litem notice within six months (O.C.G.A. § 36-33-5) and a county within twelve (O.C.G.A. § 36-11-1). South Carolina requires no pre-suit notice, but a government entity must be sued within two years, or three if a verified claim was filed first (S.C. Code § 15-78-110; S.C. Code § 15-78-80).",
+  "class": "apply",
+  "authority": [
+   "GA 36-33-5",
+   "GA 36-11-1",
+   "SC 15-78-110",
+   "SC 15-78-80"
+  ],
+  "note": "SCTCA-notice class; wording from the 4088 KT. ES-ES3 counterpart."
+ },
+ {
+  "id": "EN-EB1",
+  "post_id": 4088,
+  "field": "faq5",
+  "from": "If a government entity is involved, shorter notice deadlines may apply under the state tort claims acts.",
+  "to": "If a government entity is involved, a Georgia city must receive ante litem notice within six months (O.C.G.A. § 36-33-5) and a county within twelve (O.C.G.A. § 36-11-1); in South Carolina, a government entity must be sued within two years, or three if a verified claim was filed first (S.C. Code § 15-78-110; S.C. Code § 15-78-80).",
+  "class": "apply",
+  "authority": [
+   "GA 36-33-5",
+   "GA 36-11-1",
+   "SC 15-78-110",
+   "SC 15-78-80"
+  ],
+  "note": "SCTCA-notice class (hedged \"may apply … state tort claims acts\" implies an SC notice). Matches the page's own KT."
+ },
+ {
+  "id": "EN-GC1",
+  "post_id": 4090,
+  "field": "faq5",
+  "from": "If a government entity or public property is involved, shorter notice deadlines may apply.",
+  "to": "If a government entity or public property is involved, Georgia requires ante litem notice within six months for a city (O.C.G.A. § 36-33-5) or twelve months for a county (O.C.G.A. § 36-11-1); South Carolina requires no notice, but suit must be filed within two years (S.C. Code § 15-78-110).",
+  "class": "apply",
+  "authority": [
+   "GA 36-33-5",
+   "GA 36-11-1",
+   "SC 15-78-110"
+  ],
+  "note": "SCTCA-notice class (two-state page)."
+ },
+ {
+  "id": "EN-PI1",
+  "post_id": 4692,
+  "field": "faq1",
+  "from": "Claims against government entities require shorter pre-suit notice.",
+  "to": "Claims against government move faster: Georgia requires ante litem notice within six months for a city (O.C.G.A. § 36-33-5) and twelve months for a county or the State (O.C.G.A. § 36-11-1; O.C.G.A. § 50-21-26); in South Carolina, suit must be filed within two years, or three after a verified claim (S.C. Code § 15-78-110; S.C. Code § 15-78-80).",
+  "class": "apply",
+  "authority": [
+   "GA 36-33-5",
+   "GA 36-11-1",
+   "GA 50-21-26",
+   "SC 15-78-110",
+   "SC 15-78-80"
+  ],
+  "note": "ES-PI1 counterpart; wording is this page's own KT, cited per clause."
+ },
+ {
+  "id": "EN-PI2",
+  "post_id": 4692,
+  "field": "faq5",
+  "from": "(capped under O.C.G.A. § 51-12-5.1 in GA and S.C. Code § 15-32-530 in SC, with significant exceptions for product liability and intoxication-related conduct)",
+  "to": "(capped in GA under O.C.G.A. § 51-12-5.1, with significant exceptions for product liability and intoxication-related conduct, and in SC under S.C. Code § 15-32-530, with exceptions for intent to harm, a felony conviction arising from the conduct, or impairment by alcohol or drugs)",
+  "class": "apply",
+  "authority": [
+   "SC 15-32-530"
+  ],
+  "note": "ES-PI4 counterpart. The product exception is Georgia's (pending GA 51-12-5.1, already published and left as is); signed SC 15-32-530 has none."
+ },
+ {
+  "id": "EN-PI3",
+  "post_id": 4692,
+  "field": "faq5",
+  "from": "(3) punitive damages for grossly negligent or intentional conduct",
+  "to": "(3) punitive damages for intentional or reckless conduct",
+  "class": "attorney",
+  "authority": [],
+  "note": "ES-PI5 counterpart. GA § 51-12-5.1(b) (pending) requires more than gross negligence; SC standard unsigned. Eric Roden + Gillin."
+ },
+ {
+  "id": "EN-DOG1",
+  "post_id": 3611,
+  "field": "faq2",
+  "from": "For claims involving minors, the statute may be tolled until the child reaches the age of majority.",
+  "to": "Special deadline rules can apply to claims involving minors.",
+  "class": "apply",
+  "authority": [],
+  "note": "PB-PED4 wording (applied on 3621 2026-09-29). Tolling to majority overstates SC (§ 15-3-40: one year after the disability ends). Neither § 15-3-40 nor § 9-3-90 is in a pack; clean cut. ES-DOG1 counterpart."
+ },
+ {
+  "id": "EN-DOG2",
+  "post_id": 3611,
+  "field": "faq7",
+  "from": "Georgia and South Carolina both allow the statute of limitations to be tolled for minors, giving additional time to file.",
+  "to": "Special deadline rules can apply to a minor's claim in both Georgia and South Carolina, but it is best to act promptly.",
+  "class": "apply",
+  "authority": [],
+  "note": "Sibling found by this sweep (not in the table). Same class as EN-DOG1; the ES twin FAQ[8] carried it too (ES-DOG1)."
+ },
+ {
+  "id": "EN-WD1",
+  "post_id": 3609,
+  "field": "faq3",
+  "from": "companionship, and the full value of the deceased's life.",
+  "to": "companionship, and, in Georgia, the full value of the deceased's life (O.C.G.A. § 51-4-1).",
+  "class": "apply",
+  "authority": [
+   "GA 51-4-1",
+   "SC 15-51-40"
+  ],
+  "note": "Full value stated for both states on a two-state page; SC measures by injury to each beneficiary (§ 15-51-40). ES-WD5 counterpart."
+ },
+ {
+  "id": "EN-BT1",
+  "post_id": 3616,
+  "field": "faq8",
+  "from": "In wrongful death cases, surviving family members may recover the full value of the decedent's life.",
+  "to": "In a death case, the family may bring a wrongful death claim; where Georgia law applies, damages are measured by the full value of the decedent's life (O.C.G.A. § 51-4-1).",
+  "class": "apply",
+  "authority": [
+   "GA 51-4-1",
+   "SC 15-51-40"
+  ],
+  "note": "ES-BT2 counterpart; matches this page's own GA-branch compensation intro."
+ },
+ {
+  "id": "EN-NH1",
+  "post_id": 3619,
+  "field": "faq5",
+  "from": "funeral expenses and the full value of the deceased's life.",
+  "to": "funeral expenses and, in Georgia, the full value of the deceased's life (O.C.G.A. § 51-4-1).",
+  "class": "apply",
+  "authority": [
+   "GA 51-4-1",
+   "SC 15-51-40"
+  ],
+  "note": "ES-NH1 counterpart."
+ },
+ {
+  "id": "EN-NH2",
+  "post_id": 3619,
+  "field": "faq5",
+  "from": "when the facility's conduct was willful, reckless, or grossly negligent.",
+  "to": "when the facility's conduct was willful or reckless.",
+  "class": "attorney",
+  "authority": [],
+  "note": "ES-NH2 counterpart: gross negligence is not enough in GA (§ 51-12-5.1(b), pending); SC standard unsigned. Eric Roden + Gillin."
+ },
+ {
+  "id": "EN-CON1",
+  "post_id": 3618,
+  "field": "faq4",
+  "from": "in Georgia, you must report the injury within 30 days and file a claim within 1 year (O.C.G.A. § 34-9-82).",
+  "to": "in Georgia, you must report the injury within 30 days (O.C.G.A. § 34-9-80) and generally file a claim within 1 year of the injury, a deadline extended if the employer paid for treatment or benefits (O.C.G.A. § 34-9-82).",
+  "class": "apply",
+  "authority": [
+   "GA 34-9-80",
+   "GA 34-9-82"
+  ],
+  "note": "Sibling found by this sweep: flat § 34-9-82 (Savannah WC E1 class), the EN side of ES-CON2. Wording is the approved deadline_detail string."
+ },
+ {
+  "id": "EN-CON2",
+  "post_id": 3618,
+  "field": "faq4",
+  "from": "In South Carolina, notice must be given within 90 days and a claim filed within 2 years (S.C. Code § 42-15-40).",
+  "to": "In South Carolina, notice must be given within 90 days (S.C. Code § 42-15-20) and a claim filed within 2 years (S.C. Code § 42-15-40).",
+  "class": "apply",
+  "authority": [
+   "SC 42-15-20",
+   "SC 42-15-40"
+  ],
+  "note": "Sibling found by this sweep: the 90-day notice was bound to § 42-15-40 (the filing section); notice is § 42-15-20. Engine authority-quantity warn."
+ }
+]
