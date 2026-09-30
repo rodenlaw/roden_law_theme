@@ -672,3 +672,8 @@ flagged or omitted.**
    admissibility and negligent-security statements is the remaining exposure, and Section 5 is
    the change most likely to have made an old sentence wrong.
 4. **Regenerate `content/meta.json`** after this page is seeded, per `CLAUDE.md`.
+
+
+## Correction, 2026-09-30
+
+§4 lists Section 5 (seat belts) among provisions reaching pending cases. SB 69 (Act 10, 2025) § 5(c)(2) enacted the identical § 40-8-76.1(d) text and limits it to causes of action commenced on or after 2025-04-21; the Code editor's note says SB 69 governs. See data/facts/ga-statute-currency-2026-09-30.md.

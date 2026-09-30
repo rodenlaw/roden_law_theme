@@ -135,6 +135,8 @@ CS-1d is written as a whole-`<li>` replacement, so `str_replace` stays exact-mat
 
 ### UM-2 (Recommended; a pack question for the GA pack's signer and Eric). The liability minimums are cited to § 33-7-11.
 
+> **Downgraded 2026-09-30 (currency check):** a citation preference, not an error. § 40-9-37(a) takes the amounts from § 33-7-11(a)(1)(A), and § 33-7-16(d) (2025) calls it the minimum "required under Code Section 33-7-11". See ga-statute-currency-2026-09-30.md.
+
 - **Surfaces (six):**
   - `key_takeaways`: "The same section sets Georgia's minimum personal auto liability limits…"
   - `body_html`: the second paragraph under the first H2, and the "too small" paragraph

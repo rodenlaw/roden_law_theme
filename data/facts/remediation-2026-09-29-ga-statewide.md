@@ -201,3 +201,8 @@ None. The engine raised no findings.
    - § 40-6-315 (helmets)
    - WD accrual at death, if the attorney wants the start date stated.
    - Each needs primary text read first.
+
+
+## Correction, 2026-09-30
+
+Item (b)'s conclusion that no start-date caveat is needed on page 6318 is **wrong**. SB 69 (Act 10, 2025) § 5(c)(2) revised § 40-8-76.1(d) in the same words as SB 68 § 5 and limits it to causes of action commenced on or after 2025-04-21; the Code editor's note says SB 69's applicability governs. The live text is true for suits filed today but omits the limit. Wording and approval are with Eric Roden; see ga-statute-currency-2026-09-30.md §§ 2, 9.
