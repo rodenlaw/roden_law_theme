@@ -1,0 +1,42 @@
+[
+ {
+  "id": "M1",
+  "post": 4812,
+  "key": "_roden_meta_description",
+  "sub": null,
+  "from": "South Carolina lets drivers stack uninsured (UM) and underinsured (UIM) coverage across multiple vehicles or policies — potentially multiplying what you can recover.",
+  "to": "South Carolina lets certain insureds stack uninsured (UM) and underinsured (UIM) coverage in some situations, subject to the limits in S.C. Code § 38-77-160 — potentially increasing what you can recover.",
+  "rule": "C",
+  "note": "Mirrors C1 (excerpt). NC-G3 resolved, approved 2026-09-30 (Gillin): stacking only for certain insureds, subject to § 38-77-160 incl. the vehicle-involved limit; no stacking when none of the insured's vehicles is involved."
+ },
+ {
+  "id": "M2",
+  "post": 4931,
+  "key": "_roden_meta_description",
+  "sub": null,
+  "from": "Carolina del Sur permite acumular (\"stack\") cobertura UM y UIM de varios vehículos o pólizas para aumentar su recuperación.",
+  "to": "En algunas situaciones, Carolina del Sur permite a ciertos asegurados acumular (\"stack\") cobertura UM y UIM, sujeto al S.C. Code § 38-77-160.",
+  "rule": "C",
+  "note": "ES meta description; the \"Consulta gratis en español.\" tail stays. NC-G3 resolved, approved 2026-09-30 (Gillin): stacking only for certain insureds, subject to § 38-77-160 incl. the vehicle-involved limit; no stacking when none of the insured's vehicles is involved."
+ },
+ {
+  "id": "M3",
+  "post": 4101,
+  "key": "_roden_sol_sc",
+  "sub": null,
+  "from": "S.C. Code § 15-3-530",
+  "to": "Medical malpractice deadlines apply (S.C. Code § 15-3-545)",
+  "rule": "D",
+  "note": "Renders verbatim in the sidebar \"Filing Deadlines\" box (template-tags.php roden sidebar, per-page override). WD-G1 / B3-G3 resolved, approved 2026-09-30 (Gillin): a malpractice death follows § 15-3-545 (treatment / discovery, six-year repose; no revival of a barred claim), not \"from the date of death\". Ordinary WD (§ 15-3-530(6)) untouched."
+ },
+ {
+  "id": "M4",
+  "post": 3619,
+  "key": "_roden_pillar_compensation_intro",
+  "sub": null,
+  "from": "South Carolina's $350,000 / $1.05M noneconomic cap (S.C. Code § 15-32-220) applies if the claim is characterized as medical malpractice; **ordinary-negligence and intentional-tort theories escape the cap**, which is a key strategic decision in pleading. ",
+  "to": "Damage limitations may apply in some nursing home cases. South Carolina's medical malpractice noneconomic damages limits can apply to qualifying malpractice claims against nursing homes and health care providers, and separate statutory limits may apply to entities that qualify as charitable organizations. Whether a cap applies depends on the defendant, the nature of the claim, and any statutory exception. ",
+  "rule": "F",
+  "note": "WD-G4, approved 2026-09-30 (Gillin): approved paragraph verbatim inside the {{SC}} branch. Also removes the unindexed $350,000 / $1.05M figures (2026: $596,001 / $1,788,002)."
+ }
+]
