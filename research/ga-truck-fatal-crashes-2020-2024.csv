@@ -1,0 +1,1043 @@
+year,state,st_case,county,fatalities,truck_tractor_involved,large_trucks,truck_body_types,deaths_truck_occupants,deaths_other_vehicle_occupants,deaths_pedestrians,deaths_cyclists,deaths_other_nonoccupants,route_class,route_code,interstate,named_route,roadway,land_use,hour,time_band,day_of_week,work_zone,vehicles,latitude,longitude
+2020,GA,130006,CHATHAM (51),1,False,1,62,0,1,0,0,0,us_state,2,,,US-SR26,Urban,9,morning (6-11:59 a.m.),Thursday,False,2,32.04124722,-81.022591670
+2020,GA,130009,COLUMBIA (73),1,True,1,66,0,1,0,0,0,us_state,3,,SR-10,SR-10,Rural,12,afternoon (noon-5:59 p.m.),Friday,False,2,33.40641667,-82.247191670
+2020,GA,130045,FULTON (121),1,True,1,66,0,1,0,0,0,us_state,3,,SR-14,SR-14 S FULTON PKWY,Urban,22,evening (6-11:59 p.m.),Thursday,False,2,33.61930278,-84.532738890
+2020,GA,130050,MACON (193),1,True,1,66,1,0,0,0,0,us_state,3,,SR-49,SR-49,Rural,7,morning (6-11:59 a.m.),Saturday,False,1,32.41638056,-84.019616670
+2020,GA,130052,GRADY (131),1,True,1,66,0,1,0,0,0,us_state,3,,SR-112,SR-112,Rural,14,afternoon (noon-5:59 p.m.),Monday,False,2,31.07888889,-84.261233330
+2020,GA,130054,COBB (67),1,False,1,61,0,1,0,0,0,interstate,1,I-75,I-75,I-75 NORTH,Urban,20,evening (6-11:59 p.m.),Tuesday,True,3,33.91745278,-84.481925000
+2020,GA,130065,GWINNETT (135),2,True,2,66 66,2,0,0,0,0,interstate,1,I-85,I-85,I-85,Urban,1,overnight (midnight-5:59 a.m.),Friday,False,3,34.01320278,-84.067086110
+2020,GA,130070,STEWART (259),1,True,1,66,1,0,0,0,0,us_state,3,,SR-39,SR-39,Rural,9,morning (6-11:59 a.m.),Friday,False,1,32.13767500,-84.950830560
+2020,GA,130075,TIFT (277),1,True,1,66,0,1,0,0,0,interstate,1,I-75,I-75,I-75 N,Urban,6,morning (6-11:59 a.m.),Wednesday,False,2,31.40403056,-83.501608330
+2020,GA,130085,WARE (299),1,True,1,66,0,1,0,0,0,other,4,,CR-147,CR-147/AUGUSTA AVE,Urban,18,evening (6-11:59 p.m.),Wednesday,False,2,31.22720278,-82.386491670
+2020,GA,130094,BUTTS (35),1,True,1,66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Urban,22,evening (6-11:59 p.m.),Sunday,False,4,33.23139444,-84.079133330
+2020,GA,130097,RABUN (241),1,True,1,66,0,1,0,0,0,us_state,3,,SR-15,SR-15,Rural,11,morning (6-11:59 a.m.),Saturday,False,3,34.92493611,-83.386947220
+2020,GA,130099,GWINNETT (135),2,True,1,66,1,1,0,0,0,interstate,1,I-85,I-85,I-85,Urban,7,morning (6-11:59 a.m.),Saturday,False,2,33.91085000,-84.217661110
+2020,GA,130104,HENRY (151),1,True,1,66,1,0,0,0,0,interstate,1,I-75,I-75,I-75,Urban,20,evening (6-11:59 p.m.),Thursday,False,2,33.51065833,-84.236002780
+2020,GA,130117,COBB (67),1,False,1,62,1,0,0,0,0,other,4,,CR-262300,CR-262300 RIVERSIDE PKWY,Urban,12,afternoon (noon-5:59 p.m.),Wednesday,False,2,33.77849722,-84.575163890
+2020,GA,130135,DOUGHERTY (95),1,False,1,61,0,1,0,0,0,other,6,,,CS-121001,Urban,16,afternoon (noon-5:59 p.m.),Monday,False,2,31.61749722,-84.183597220
+2020,GA,130154,CLAYTON (63),1,False,1,63,0,0,1,0,0,us_state,3,,SR-3,SR-3/TARA BLVD,Urban,4,overnight (midnight-5:59 a.m.),Tuesday,False,1,33.52504167,-84.363183330
+2020,GA,130157,LIBERTY (179),1,False,1,62,0,1,0,0,0,us_state,2,,US-84,US-84 SR38,Urban,20,evening (6-11:59 p.m.),Sunday,False,2,31.82327778,-81.521175000
+2020,GA,130162,BAKER (7),1,True,1,66,0,1,0,0,0,us_state,3,,SR-37,SR-37,Rural,8,morning (6-11:59 a.m.),Sunday,False,2,31.32301111,-84.374391670
+2020,GA,130175,CLARKE (59),1,False,1,62,0,0,1,0,0,us_state,3,,SR-10,SR-10,Urban,3,overnight (midnight-5:59 a.m.),Friday,False,1,33.94092222,-83.469691670
+2020,GA,130184,CHEROKEE (57),1,False,1,63,0,0,1,0,0,us_state,3,,SR-92,SR-92,Urban,4,overnight (midnight-5:59 a.m.),Thursday,False,2,34.08797778,-84.592055560
+2020,GA,130186,COBB (67),1,False,1,61,0,1,0,0,0,interstate,1,I-285,I-285,I-285,Unknown,13,afternoon (noon-5:59 p.m.),Wednesday,False,2,33.89772500,-84.449463890
+2020,GA,130205,MACON (193),2,False,1,61,0,2,0,0,0,us_state,3,,SR-49,SR-49,Rural,13,afternoon (noon-5:59 p.m.),Thursday,False,2,32.35200278,-84.018105560
+2020,GA,130208,PEACH (225),1,False,1,62,1,0,0,0,0,us_state,3,,SR-49,SR-49/540,Urban,7,morning (6-11:59 a.m.),Wednesday,False,1,32.57291944,-83.911841670
+2020,GA,130217,LOWNDES (185),1,True,1,66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Rural,23,evening (6-11:59 p.m.),Thursday,False,2,30.92609444,-83.367877780
+2020,GA,130231,BARROW (13),1,False,1,63,0,1,0,0,0,us_state,3,,SR-82,SR-82,Rural,9,morning (6-11:59 a.m.),Monday,False,2,33.99739722,-83.642700000
+2020,GA,130234,POLK (233),1,True,2,66 66,0,1,0,0,0,us_state,2,,US-27,US-27 SR1,Rural,4,overnight (midnight-5:59 a.m.),Wednesday,False,3,34.07469722,-85.233666670
+2020,GA,130245,HALL (139),1,True,1,66,0,1,0,0,0,us_state,3,,SR-60,SR-60 THOMPSON BRIDGE RD,Urban,11,morning (6-11:59 a.m.),Wednesday,False,2,34.39793611,-83.887219440
+2020,GA,130247,LIBERTY (179),1,True,1,66,0,1,0,0,0,interstate,1,I-95,I-95,I-95,Rural,6,morning (6-11:59 a.m.),Thursday,False,2,31.76735556,-81.381002780
+2020,GA,130257,HOUSTON (153),2,True,1,66,0,2,0,0,0,interstate,1,I-75,I-75,I-75,Rural,3,overnight (midnight-5:59 a.m.),Sunday,False,2,32.29308333,-83.759719440
+2020,GA,130265,CRAWFORD (79),1,True,1,66,0,1,0,0,0,us_state,3,,SR-22,SR-22,Rural,6,morning (6-11:59 a.m.),Tuesday,False,2,32.75600556,-84.140502780
+2020,GA,130274,POLK (233),1,True,2,63 66,0,1,0,0,0,us_state,3,,SR-1,SR-1,Urban,7,morning (6-11:59 a.m.),Wednesday,False,3,34.01674444,-85.220169440
+2020,GA,130289,GWINNETT (135),1,False,1,63,0,1,0,0,0,interstate,1,I-985,I-985,I-985 ATLANTA GAINESVILLE HWY,Urban,7,morning (6-11:59 a.m.),Wednesday,False,2,34.06145000,-84.017569440
+2020,GA,130294,MERIWETHER (199),1,False,2,61 63,1,0,0,0,0,us_state,3,,SR-41,SR-41/ROOSEVELT HWY,Rural,15,afternoon (noon-5:59 p.m.),Wednesday,False,2,33.11514444,-84.726297220
+2020,GA,130295,CHATHAM (51),1,True,1,66,0,1,0,0,0,interstate,1,I-95,I-95,I-95,Urban,22,evening (6-11:59 p.m.),Wednesday,False,3,32.17345556,-81.209761110
+2020,GA,130303,EMANUEL (107),1,True,1,66,0,1,0,0,0,us_state,2,,US-221,US-221 SR-171,Rural,15,afternoon (noon-5:59 p.m.),Saturday,False,2,32.61501667,-82.515819440
+2020,GA,130307,GLYNN (127),1,True,1,66,1,0,0,0,0,us_state,2,,US-341,US-341/25 SR27 NEW JESUP HWY,Rural,14,afternoon (noon-5:59 p.m.),Monday,False,1,31.37525278,-81.629347220
+2020,GA,130309,FULTON (121),1,True,1,66,0,1,0,0,0,interstate,1,I-285,I-285,I-285,Urban,2,overnight (midnight-5:59 a.m.),Thursday,False,2,33.61952500,-84.463847220
+2020,GA,130312,HOUSTON (153),1,True,1,66,1,0,0,0,0,us_state,3,,SR-124,SR-124,Rural,6,morning (6-11:59 a.m.),Friday,False,1,32.42504722,-83.712302780
+2020,GA,130324,CHEROKEE (57),1,True,1,66,0,1,0,0,0,us_state,3,,SR-20,SR-20/KNOX BRIDGE HWY,Rural,8,morning (6-11:59 a.m.),Friday,False,2,34.22286667,-84.618027780
+2020,GA,130337,COBB (67),1,False,1,63,0,1,0,0,0,interstate,1,I-75,I-75,I-75 S,Urban,17,afternoon (noon-5:59 p.m.),Tuesday,False,2,33.95623333,-84.516625000
+2020,GA,130340,TELFAIR (271),1,True,1,66,0,1,0,0,0,us_state,3,,SR-31,SR-31,Rural,6,morning (6-11:59 a.m.),Wednesday,False,2,31.93256111,-82.940950000
+2020,GA,130342,GWINNETT (135),1,False,1,63,0,1,0,0,0,other,4,,,CR-KILLIAN HILL RD,Urban,8,morning (6-11:59 a.m.),Thursday,False,2,33.88121944,-84.114208330
+2020,GA,130347,CAMDEN (39),1,True,1,66,0,1,0,0,0,interstate,1,I-95,I-95,I-95,Rural,6,morning (6-11:59 a.m.),Saturday,False,2,30.92771389,-81.686544440
+2020,GA,130355,EFFINGHAM (103),1,True,1,66,0,0,1,0,0,us_state,3,,SR-119,SR-119,Rural,5,overnight (midnight-5:59 a.m.),Monday,False,1,32.33408889,-81.383138890
+2020,GA,130357,WILKES (317),1,False,1,61,0,1,0,0,0,us_state,3,,SR-10,SR-10,Rural,13,afternoon (noon-5:59 p.m.),Tuesday,False,2,33.78857500,-82.880897220
+2020,GA,130358,DOUGLAS (97),1,False,1,67,0,0,1,0,0,interstate,1,I-20,I-20,I-20 E,Urban,5,overnight (midnight-5:59 a.m.),Friday,False,1,33.72433889,-84.898541670
+2020,GA,130361,HARALSON (143),1,True,1,66,0,1,0,0,0,us_state,3,,SR-1,SR-1,Rural,13,afternoon (noon-5:59 p.m.),Tuesday,False,2,33.78757222,-85.174950000
+2020,GA,130362,BARTOW (15),1,True,1,66,0,1,0,0,0,other,6,,,CS-87603/OLD MILL RD,Urban,7,morning (6-11:59 a.m.),Thursday,False,2,34.15119722,-84.820247220
+2020,GA,130371,HART (147),1,True,1,66,0,1,0,0,0,us_state,3,,SR-77,SR-77 SP,Rural,11,morning (6-11:59 a.m.),Tuesday,False,2,34.29178889,-82.842394440
+2020,GA,130386,FULTON (121),1,False,1,61,0,0,0,1,0,other,6,,,GLENRIDGE DR,Urban,17,afternoon (noon-5:59 p.m.),Friday,False,1,33.91701667,-84.362744440
+2020,GA,130392,CAMDEN (39),1,True,1,66,0,1,0,0,0,interstate,1,I-95,I-95,I-95 HOWARD GILMAN HWY,Rural,17,afternoon (noon-5:59 p.m.),Wednesday,False,2,30.88503611,-81.685766670
+2020,GA,130393,HARALSON (143),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20 SR402,Rural,7,morning (6-11:59 a.m.),Thursday,False,2,33.67982500,-85.307166670
+2020,GA,130404,FLOYD (115),2,False,1,61,0,2,0,0,0,us_state,3,,SR-1,SR-1 REDMOND CIR,Urban,18,evening (6-11:59 p.m.),Tuesday,False,2,34.27893611,-85.226011110
+2020,GA,130409,CARROLL (45),1,False,1,61,0,1,0,0,0,us_state,3,,SR-101,SR-101 ROCKMART RD,Urban,10,morning (6-11:59 a.m.),Tuesday,False,2,33.76850556,-84.956461110
+2020,GA,130421,DOUGLAS (97),1,True,1,66,0,0,1,0,0,interstate,1,I-20,I-20,I-20 W,Urban,0,overnight (midnight-5:59 a.m.),Monday,False,1,33.72538611,-84.908813890
+2020,GA,130423,GWINNETT (135),1,False,1,63,0,1,0,0,0,other,4,,CR-690,CR-690/OAKBROOK PKWY NW,Urban,17,afternoon (noon-5:59 p.m.),Wednesday,False,3,33.92265556,-84.172122220
+2020,GA,130426,MACON (193),1,True,1,66,0,1,0,0,0,us_state,3,,SR-90,SR-90 VIENNA RD,Urban,17,afternoon (noon-5:59 p.m.),Monday,False,2,32.28777778,-84.012716670
+2020,GA,130436,LIBERTY (179),1,True,1,66,1,0,0,0,0,interstate,1,I-95,I-95,I-95 SB,Rural,23,evening (6-11:59 p.m.),Friday,False,1,31.82168889,-81.359280560
+2020,GA,130444,HENRY (151),1,False,1,61,0,1,0,0,0,other,4,,,CR-ROCK QUARRY RD,Rural,7,morning (6-11:59 a.m.),Thursday,False,2,33.52778889,-84.227902780
+2020,GA,130465,CLAYTON (63),1,False,1,63,0,1,0,0,0,interstate,1,I-285,I-285,I-285 E,Urban,6,morning (6-11:59 a.m.),Wednesday,False,4,33.61618056,-84.441027780
+2020,GA,130467,PICKENS (227),1,True,1,66,0,1,0,0,0,us_state,3,,SR-108,SR-108 WALESKA HWY,Rural,8,morning (6-11:59 a.m.),Tuesday,False,2,34.39054444,-84.434277780
+2020,GA,130477,DOUGLAS (97),1,True,1,66,0,1,0,0,0,us_state,3,,SR-6,SR-6 THORNTON RD,Urban,12,afternoon (noon-5:59 p.m.),Friday,False,4,33.79776111,-84.644483330
+2020,GA,130495,EVANS (109),2,True,1,66,0,2,0,0,0,us_state,3,,SR-73,SR-73,Rural,21,evening (6-11:59 p.m.),Thursday,False,2,32.18254167,-81.890355560
+2020,GA,130500,RANDOLPH (243),1,True,1,66,1,0,0,0,0,us_state,3,,SR-1,SR-1,Rural,12,afternoon (noon-5:59 p.m.),Tuesday,False,1,31.68482778,-84.821702780
+2020,GA,130502,UNION (291),1,False,1,67,0,1,0,0,0,us_state,3,,SR-11,SR-11,Rural,13,afternoon (noon-5:59 p.m.),Friday,False,3,34.92914444,-84.027611110
+2020,GA,130505,NEWTON (217),2,False,1,65,0,2,0,0,0,us_state,3,,SR-36,SR-36,Rural,10,morning (6-11:59 a.m.),Sunday,False,3,33.43635833,-83.846544440
+2020,GA,130507,BALDWIN (9),1,False,1,63,1,0,0,0,0,us_state,3,,SR-49,SR-49,Rural,13,afternoon (noon-5:59 p.m.),Monday,False,1,33.01787222,-83.337216670
+2020,GA,130519,COLQUITT (71),1,False,1,61,1,0,0,0,0,us_state,3,,SR-37,SR-37,Rural,10,morning (6-11:59 a.m.),Monday,False,2,31.20342222,-83.961786110
+2020,GA,130520,TROUP (285),1,False,1,63,0,1,0,0,0,us_state,3,,SR-109,SR-109,Rural,12,afternoon (noon-5:59 p.m.),Monday,False,2,33.03768333,-84.864402780
+2020,GA,130523,FULTON (121),5,False,1,62,0,5,0,0,0,us_state,2,,US-29,US-29,Urban,15,afternoon (noon-5:59 p.m.),Tuesday,False,4,33.61508889,-84.515297220
+2020,GA,130534,SEMINOLE (253),1,False,1,63,0,1,0,0,0,us_state,3,,SR-285,SR-285,Rural,11,morning (6-11:59 a.m.),Friday,False,2,30.97835556,-84.817955560
+2020,GA,130546,JACKSON (157),1,True,1,66,0,1,0,0,0,interstate,1,I-85,I-85,I-85 N,Urban,23,evening (6-11:59 p.m.),Tuesday,False,2,34.18226111,-83.599894440
+2020,GA,130548,LINCOLN (181),1,True,1,66,0,1,0,0,0,us_state,3,,SR-47,SR-47,Rural,5,overnight (midnight-5:59 a.m.),Thursday,False,2,33.71628056,-82.361497220
+2020,GA,130566,FULTON (121),1,False,1,60,0,0,0,1,0,other,6,,,CS-FOX ROAD,Urban,10,morning (6-11:59 a.m.),Wednesday,False,1,34.07045000,-84.215200000
+2020,GA,130568,FLOYD (115),1,True,1,66,0,1,0,0,0,us_state,3,,SR-1,SR-1 LOOP,Urban,15,afternoon (noon-5:59 p.m.),Thursday,False,2,34.27934444,-85.126341670
+2020,GA,130569,MUSCOGEE (215),1,False,1,61,1,0,0,0,0,us_state,3,,SR-219,SR-219,Rural,21,evening (6-11:59 p.m.),Tuesday,False,2,32.58196389,-85.018755560
+2020,GA,130574,BRYAN (29),1,True,1,66,0,0,1,0,0,interstate,1,I-95,I-95,I-95 N,Urban,4,overnight (midnight-5:59 a.m.),Monday,False,1,31.95795278,-81.331050000
+2020,GA,130580,DADE (83),1,True,1,66,0,1,0,0,0,interstate,1,I-24,I-24,I-24,Rural,14,afternoon (noon-5:59 p.m.),Saturday,False,2,34.97154167,-85.442602780
+2020,GA,130596,COOK (75),1,False,1,63,0,1,0,0,0,other,4,,,CR-ANTIOCH RD,Rural,10,morning (6-11:59 a.m.),Wednesday,False,2,31.09878056,-83.482713890
+2020,GA,130601,CARROLL (45),2,True,1,66,0,2,0,0,0,us_state,2,,US-27,US-27 SR1,Rural,11,morning (6-11:59 a.m.),Thursday,False,2,33.66711944,-85.150419440
+2020,GA,130616,BARTOW (15),1,True,1,66,0,0,1,0,0,us_state,3,,SR-293,SR-293,Urban,9,morning (6-11:59 a.m.),Wednesday,False,1,34.12711667,-84.756305560
+2020,GA,130618,JEFF DAVIS (161),1,False,1,61,0,1,0,0,0,us_state,2,,US-221,US-221 N TALLAHASSEE ST,Rural,12,afternoon (noon-5:59 p.m.),Saturday,False,2,31.87295278,-82.594250000
+2020,GA,130623,CHATHAM (51),1,True,1,66,0,0,1,0,0,interstate,1,I-95,I-95,I-95 N,Urban,23,evening (6-11:59 p.m.),Wednesday,False,1,32.13529167,-81.240016670
+2020,GA,130626,WAYNE (305),1,True,1,66,0,1,0,0,0,us_state,2,,US-84,US-84 SR-38,Urban,7,morning (6-11:59 a.m.),Tuesday,False,2,31.58993611,-81.952097220
+2020,GA,130629,MCDUFFIE (189),1,False,1,63,0,1,0,0,0,us_state,2,,US-78,US-78 SR-10,Rural,12,afternoon (noon-5:59 p.m.),Wednesday,False,2,33.56012778,-82.514600000
+2020,GA,130630,WILCOX (315),1,False,1,62,0,1,0,0,0,us_state,2,,US-280,US-280 SR-30,Rural,9,morning (6-11:59 a.m.),Friday,False,2,31.96087500,-83.422886110
+2020,GA,130635,HENRY (151),1,True,1,66,0,1,0,0,0,us_state,3,,SR-42,SR-42,Rural,13,afternoon (noon-5:59 p.m.),Tuesday,False,3,33.38482778,-84.130225000
+2020,GA,130642,CHATHAM (51),1,False,1,61,0,1,0,0,0,interstate,1,I-16,I-16,I-16,Urban,13,afternoon (noon-5:59 p.m.),Wednesday,False,2,32.07492500,-81.251975000
+2020,GA,130674,WAYNE (305),1,True,1,66,1,0,0,0,0,us_state,3,,SR-169,SR-169,Rural,6,morning (6-11:59 a.m.),Thursday,False,1,31.67144722,-81.919333330
+2020,GA,130676,NEWTON (217),1,True,2,66 67,1,0,0,0,0,interstate,1,I-20,I-20,I-20 E,Urban,9,morning (6-11:59 a.m.),Saturday,False,3,33.61108611,-83.810294440
+2020,GA,130686,BLECKLEY (23),2,True,1,66,0,2,0,0,0,us_state,3,,SR-112,SR-112,Rural,14,afternoon (noon-5:59 p.m.),Monday,False,2,32.57689444,-83.235508330
+2020,GA,130707,TREUTLEN (283),1,True,1,66,1,0,0,0,0,interstate,1,I-16,I-16,I-16,Rural,19,evening (6-11:59 p.m.),Sunday,False,1,32.43375000,-82.646105560
+2020,GA,130716,TOOMBS (279),1,True,1,66,0,1,0,0,0,other,4,,CR-0333,CR-0333,Rural,9,morning (6-11:59 a.m.),Tuesday,False,2,32.13108611,-82.303844440
+2020,GA,130723,CHATHAM (51),1,True,1,66,1,0,0,0,0,interstate,1,I-95,I-95,I-95,Urban,8,morning (6-11:59 a.m.),Wednesday,False,1,32.00656667,-81.281327780
+2020,GA,130725,GWINNETT (135),1,False,1,67,0,1,0,0,0,us_state,3,,SR-8,SR-8,Urban,18,evening (6-11:59 p.m.),Sunday,False,2,33.92563056,-84.064711110
+2020,GA,130731,DEKALB (89),1,True,2,62 66,0,1,0,0,0,interstate,1,I-85,I-85,I-85,Urban,9,morning (6-11:59 a.m.),Monday,False,4,33.88438056,-84.268605560
+2020,GA,130734,GWINNETT (135),1,False,1,63,0,1,0,0,0,us_state,2,,US-78,US-78 SR-10 STONE MOUNTAIN HWY,Urban,10,morning (6-11:59 a.m.),Thursday,False,3,33.82273333,-84.119944440
+2020,GA,130747,WORTH (321),2,True,1,66,0,2,0,0,0,us_state,3,,SR-133,SR-133,Rural,19,evening (6-11:59 p.m.),Saturday,False,2,31.40118333,-83.939891670
+2020,GA,130758,FRANKLIN (119),1,True,3,66 66 66,1,0,0,0,0,interstate,1,I-85,I-85,I-85 N,Rural,19,evening (6-11:59 p.m.),Monday,True,3,34.35603611,-83.301222220
+2020,GA,130763,CLAYTON (63),1,True,1,66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Urban,6,morning (6-11:59 a.m.),Tuesday,False,4,33.62491111,-84.401836110
+2020,GA,130765,CARROLL (45),1,True,1,66,0,0,1,0,0,interstate,1,I-20,I-20,I-20/TOM MURPHY FWY,Urban,1,overnight (midnight-5:59 a.m.),Wednesday,True,1,33.68818889,-85.111127780
+2020,GA,130775,CHATHAM (51),1,True,2,63 66,0,1,0,0,0,interstate,1,I-16,I-16,I-16,Urban,10,morning (6-11:59 a.m.),Friday,True,4,32.07848056,-81.264708330
+2020,GA,130798,GLYNN (127),1,True,1,66,0,1,0,0,0,us_state,2,,US-25,US-25/341 SR-27,Urban,10,morning (6-11:59 a.m.),Monday,False,3,31.23839444,-81.539647220
+2020,GA,130812,DEKALB (89),1,True,1,66,0,0,1,0,0,interstate,1,I-20,I-20,I-20,Urban,23,evening (6-11:59 p.m.),Sunday,False,4,33.70342778,-84.165216670
+2020,GA,130819,BARTOW (15),1,True,1,66,1,0,0,0,0,interstate,1,I-75,I-75,I-75 S,Urban,16,afternoon (noon-5:59 p.m.),Friday,False,2,34.24727222,-84.778700000
+2020,GA,130823,MONROE (207),1,True,1,66,0,0,1,0,0,interstate,1,I-75,I-75,I-75 SR-401,Urban,23,evening (6-11:59 p.m.),Sunday,False,1,33.02036944,-83.895555560
+2020,GA,130828,FULTON (121),1,True,1,66,0,1,0,0,0,other,5,,,CS-150509,Urban,16,afternoon (noon-5:59 p.m.),Tuesday,False,2,33.55273889,-84.541658330
+2020,GA,130833,DOOLY (93),1,False,1,61,0,1,0,0,0,us_state,3,,SR-0007,SR-0007,Rural,12,afternoon (noon-5:59 p.m.),Wednesday,False,2,32.15458889,-83.796219440
+2020,GA,130840,BRANTLEY (25),1,False,1,62,0,1,0,0,0,us_state,3,,SR-23,SR-23,Rural,13,afternoon (noon-5:59 p.m.),Thursday,False,2,31.25107778,-81.968688890
+2020,GA,130842,MCINTOSH (191),1,False,1,62,0,1,0,0,0,us_state,3,,SR-25,SR-25,Rural,14,afternoon (noon-5:59 p.m.),Thursday,False,3,31.36612778,-81.437133330
+2020,GA,130858,BIBB (21),1,False,1,63,0,1,0,0,0,other,4,,CR-0740,CR-0740,Urban,8,morning (6-11:59 a.m.),Tuesday,False,2,32.79219722,-83.758652780
+2020,GA,130864,JACKSON (157),1,True,1,66,0,1,0,0,0,us_state,3,,SR-0011,SR-0011,Urban,4,overnight (midnight-5:59 a.m.),Wednesday,False,2,34.09199444,-83.584377780
+2020,GA,130867,MACON (193),1,True,1,66,0,1,0,0,0,us_state,3,,SR-49,SR-49 ANDERSONVILLE TRL,Rural,12,afternoon (noon-5:59 p.m.),Tuesday,False,2,32.23776944,-84.094366670
+2020,GA,130873,BACON (5),1,False,1,62,1,0,0,0,0,us_state,2,,US-1,US-1 SR-4,Rural,15,afternoon (noon-5:59 p.m.),Wednesday,False,2,31.47609444,-82.449291670
+2020,GA,130894,DEKALB (89),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20 PURPLE HEART HWY,Urban,2,overnight (midnight-5:59 a.m.),Friday,False,2,33.70351944,-84.169791670
+2020,GA,130910,FLOYD (115),1,True,1,66,0,1,0,0,0,us_state,2,,US-27,US-27 MARTHA BERRY HWY,Urban,1,overnight (midnight-5:59 a.m.),Wednesday,False,2,34.30229444,-85.175941670
+2020,GA,130914,COWETA (77),1,True,1,66,1,0,0,0,0,interstate,1,I-85,I-85,I-85 N ALAN JACKSON HWY,Urban,6,morning (6-11:59 a.m.),Thursday,False,2,33.51068333,-84.632144440
+2020,GA,130935,LANIER (173),1,False,1,67,1,0,0,0,0,other,4,,CR-0075,CR-0075 Boyette Rd,Urban,4,overnight (midnight-5:59 a.m.),Thursday,False,1,31.04490556,-83.134908330
+2020,GA,130958,DEKALB (89),1,False,1,67,0,0,1,0,0,interstate,1,I-85,I-85,I-85,Urban,3,overnight (midnight-5:59 a.m.),Tuesday,False,1,33.84045833,-84.311936110
+2020,GA,130970,EFFINGHAM (103),2,True,1,66,0,2,0,0,0,us_state,3,,SR-17,SR-17,Rural,18,evening (6-11:59 p.m.),Thursday,False,3,32.18184722,-81.355000000
+2020,GA,130974,HARALSON (143),1,False,1,63,0,0,0,1,0,us_state,3,,SR-0008,SR-0008,Rural,23,evening (6-11:59 p.m.),Thursday,False,1,33.74075000,-85.274161110
+2020,GA,130975,ELBERT (105),1,False,1,63,0,1,0,0,0,us_state,3,,SR-172,SR-172,Rural,12,afternoon (noon-5:59 p.m.),Thursday,False,2,34.22625000,-83.007830560
+2020,GA,130989,FULTON (121),1,False,1,61,0,1,0,0,0,us_state,3,,SR-70,SR-70 FULTON INDUSTRIAL BLVD,Urban,8,morning (6-11:59 a.m.),Friday,False,2,33.71634444,-84.586305560
+2020,GA,130993,HARALSON (143),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20 E,Rural,19,evening (6-11:59 p.m.),Saturday,False,2,33.68711667,-85.240075000
+2020,GA,130995,DOUGLAS (97),1,True,1,66,0,1,0,0,0,us_state,3,,SR-6,SR-6 THORNTON RD,Urban,12,afternoon (noon-5:59 p.m.),Friday,False,4,33.79720833,-84.642869440
+2020,GA,131001,COWETA (77),1,True,1,66,0,1,0,0,0,us_state,2,,US-29,US-29 SR-14,Rural,20,evening (6-11:59 p.m.),Saturday,False,2,33.31800000,-84.776877780
+2020,GA,131003,FULTON (121),1,True,1,66,0,1,0,0,0,us_state,3,,SR-6,SR-6 CAMP CREEK PKWY,Urban,9,morning (6-11:59 a.m.),Monday,False,2,33.68438611,-84.565827780
+2020,GA,131005,DOUGHERTY (95),1,False,1,61,0,1,0,0,0,us_state,3,,SR-91,SR-91,Rural,9,morning (6-11:59 a.m.),Tuesday,False,2,31.49358333,-84.220458330
+2020,GA,131006,TREUTLEN (283),1,True,1,66,0,1,0,0,0,interstate,1,I-16,I-16,I-16 W,Rural,11,morning (6-11:59 a.m.),Tuesday,False,2,32.43480556,-82.639097220
+2020,GA,131036,COWETA (77),1,False,1,61,0,1,0,0,0,us_state,2,,US-29,US-29 SR-14,Urban,4,overnight (midnight-5:59 a.m.),Wednesday,False,2,33.50073889,-84.672500000
+2020,GA,131040,EMANUEL (107),2,False,1,61,1,1,0,0,0,other,5,,,LAMBS BRIDGE RD,Rural,6,morning (6-11:59 a.m.),Friday,False,2,32.55330556,-82.233175000
+2020,GA,131041,PAULDING (223),1,False,1,63,0,1,0,0,0,other,4,,CR-47200,CR-47200 RIDGE RD,Urban,13,afternoon (noon-5:59 p.m.),Friday,False,2,33.80774444,-84.879455560
+2020,GA,131051,FRANKLIN (119),1,True,1,66,0,1,0,0,0,interstate,1,I-85,I-85,I-85,Rural,22,evening (6-11:59 p.m.),Sunday,False,2,34.39888889,-83.212208330
+2020,GA,131056,COLUMBIA (73),2,True,1,66,0,2,0,0,0,interstate,1,I-20,I-20,I-20 E,Urban,11,morning (6-11:59 a.m.),Tuesday,True,2,33.48403056,-82.203502780
+2020,GA,131057,COLUMBIA (73),1,True,4,63 66 66 66,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Rural,12,afternoon (noon-5:59 p.m.),Tuesday,False,10,33.50032778,-82.348180560
+2020,GA,131058,FULTON (121),1,False,1,61,0,1,0,0,0,us_state,2,,US-70,US-70 S FULTON PKWY,Rural,14,afternoon (noon-5:59 p.m.),Tuesday,True,2,33.56221111,-84.767327780
+2020,GA,131072,WASHINGTON (303),1,False,1,63,0,1,0,0,0,us_state,3,,SR-68,SR-68,Urban,19,evening (6-11:59 p.m.),Thursday,False,2,32.95345556,-82.851297220
+2020,GA,131084,DEKALB (89),1,True,1,66,0,1,0,0,0,interstate,1,I-285,I-285,I-285,Urban,9,morning (6-11:59 a.m.),Friday,False,4,33.69890000,-84.275458330
+2020,GA,131091,COWETA (77),1,True,1,66,0,1,0,0,0,interstate,1,I-85,I-85,I-85,Urban,22,evening (6-11:59 p.m.),Tuesday,False,3,33.40556111,-84.740083330
+2020,GA,131095,LAURENS (175),1,False,1,63,0,1,0,0,0,us_state,3,,SR-257,SR-257,Urban,6,morning (6-11:59 a.m.),Wednesday,False,2,32.51567500,-82.956447220
+2020,GA,131097,BARTOW (15),1,False,1,63,0,1,0,0,0,us_state,3,,SR-140,SR-140,Rural,7,morning (6-11:59 a.m.),Thursday,False,2,34.38854167,-84.863908330
+2020,GA,131115,OGLETHORPE (221),1,True,1,66,0,1,0,0,0,us_state,3,,SR-22,SR-22,Rural,11,morning (6-11:59 a.m.),Friday,False,2,34.01988056,-83.125816670
+2020,GA,131116,LOWNDES (185),1,False,1,67,0,1,0,0,0,us_state,2,,US-84,US-84 SR-38,Urban,14,afternoon (noon-5:59 p.m.),Saturday,False,2,30.80680000,-83.341641670
+2020,GA,131124,COFFEE (69),1,True,1,66,1,0,0,0,0,us_state,3,,SR-32,SR-32,Rural,7,morning (6-11:59 a.m.),Tuesday,False,1,31.51252500,-82.711036110
+2020,GA,131129,PICKENS (227),1,True,1,66,0,1,0,0,0,us_state,3,,SR-5,SR-5/515,Urban,10,morning (6-11:59 a.m.),Wednesday,False,2,34.44643333,-84.445444440
+2020,GA,131131,DODGE (91),1,True,1,66,0,1,0,0,0,us_state,3,,SR-126,SR-126,Rural,6,morning (6-11:59 a.m.),Thursday,False,2,32.36975278,-83.113422220
+2020,GA,131135,TROUP (285),1,False,1,67,1,0,0,0,0,interstate,1,I-85,I-85,I-85,Urban,7,morning (6-11:59 a.m.),Friday,False,1,32.97385278,-85.064208330
+2020,GA,131136,HALL (139),1,False,1,63,0,0,1,0,0,us_state,2,,US-60,US-60 THOMPSON BRIDGE RD,Urban,15,afternoon (noon-5:59 p.m.),Friday,False,1,34.34690556,-83.852000000
+2020,GA,131138,TREUTLEN (283),1,True,1,66,0,0,1,0,0,interstate,1,I-16,I-16,I-16,Rural,21,evening (6-11:59 p.m.),Friday,False,1,32.42248333,-82.426072220
+2020,GA,131143,BIBB (21),1,True,1,66,0,1,0,0,0,interstate,1,I-475,I-475,I-475,Urban,0,overnight (midnight-5:59 a.m.),Sunday,False,2,32.82405833,-83.730697220
+2020,GA,131151,COBB (67),1,False,1,61,0,1,0,0,0,us_state,3,,SR-360,SR-360 MACLAND RD,Urban,17,afternoon (noon-5:59 p.m.),Monday,False,2,33.90246667,-84.672641670
+2020,GA,131167,DEKALB (89),1,True,1,66,0,1,0,0,0,interstate,1,I-285,I-285,I-285,Urban,21,evening (6-11:59 p.m.),Thursday,False,2,33.72315556,-84.235525000
+2020,GA,131172,BALDWIN (9),1,True,1,66,0,1,0,0,0,us_state,3,,SR-24,SR-24/N COLUMBIA ST,Urban,14,afternoon (noon-5:59 p.m.),Thursday,False,2,33.13451944,-83.270630560
+2020,GA,131173,BALDWIN (9),2,True,1,66,0,2,0,0,0,us_state,3,,SR-22,SR-22,Rural,23,evening (6-11:59 p.m.),Monday,False,2,33.09176944,-83.184663890
+2020,GA,131176,GRADY (131),1,True,1,66,0,1,0,0,0,us_state,3,,SR-38,SR-38,Urban,0,overnight (midnight-5:59 a.m.),Thursday,False,2,30.87556389,-84.164877780
+2020,GA,131177,DOUGHERTY (95),1,True,1,66,0,0,1,0,0,us_state,3,,SR-520,SR-520,Urban,6,morning (6-11:59 a.m.),Wednesday,False,1,31.57264444,-84.048727780
+2020,GA,131210,CHATHAM (51),1,True,1,66,1,0,0,0,0,interstate,1,I-95,I-95,I-95,Urban,17,afternoon (noon-5:59 p.m.),Friday,False,2,32.21511389,-81.174975000
+2020,GA,131216,CHEROKEE (57),1,True,2,66 66,0,1,0,0,0,us_state,3,,SR-0020,SR-0020,Rural,14,afternoon (noon-5:59 p.m.),Wednesday,False,3,34.23586111,-84.262516670
+2020,GA,131221,BARTOW (15),1,False,1,61,0,1,0,0,0,us_state,3,,SR-0020,SR-0020,Urban,17,afternoon (noon-5:59 p.m.),Sunday,False,2,34.20616389,-84.781002780
+2020,GA,131232,BALDWIN (9),1,True,1,66,0,0,1,0,0,us_state,3,,SR-243,SR-243,Urban,5,overnight (midnight-5:59 a.m.),Friday,False,1,33.03899722,-83.234961110
+2020,GA,131236,CAMDEN (39),1,False,1,62,0,1,0,0,0,us_state,3,,SR-40,SR-40,Urban,9,morning (6-11:59 a.m.),Thursday,False,2,30.81064444,-81.748391670
+2020,GA,131243,TIFT (277),1,False,1,63,0,1,0,0,0,us_state,2,,US-41,US-41 SR-7,Rural,10,morning (6-11:59 a.m.),Friday,False,2,31.35912778,-83.486000000
+2020,GA,131245,COBB (67),1,False,1,63,0,1,0,0,0,other,4,,CR-440300,CR-440300 SHALLOWFORD RD,Urban,10,morning (6-11:59 a.m.),Tuesday,False,2,34.02735278,-84.423916670
+2020,GA,131256,CLAYTON (63),1,False,1,67,0,1,0,0,0,us_state,3,,SR-3,SR-3,Urban,19,evening (6-11:59 p.m.),Tuesday,False,2,33.62152222,-84.383455560
+2020,GA,131261,JACKSON (157),1,True,1,66,0,1,0,0,0,interstate,1,I-85,I-85,I-85,Urban,7,morning (6-11:59 a.m.),Sunday,False,2,34.22093056,-83.518730560
+2020,GA,131265,TALIAFERRO (265),2,True,1,66,0,2,0,0,0,interstate,1,I-20,I-20,I-20 W,Rural,18,evening (6-11:59 p.m.),Thursday,True,2,33.50936667,-82.841283330
+2020,GA,131273,DADE (83),1,False,1,67,0,0,1,0,0,interstate,1,I-24,I-24,I-24 W,Rural,0,overnight (midnight-5:59 a.m.),Tuesday,False,1,34.97183333,-85.443911110
+2020,GA,131282,GWINNETT (135),1,True,1,66,0,1,0,0,0,interstate,1,I-85,I-85,I-85 S,Urban,0,overnight (midnight-5:59 a.m.),Wednesday,False,3,33.91015556,-84.222850000
+2020,GA,131283,DOUGLAS (97),2,True,1,66,0,2,0,0,0,interstate,1,I-20,I-20,I-20 E,Urban,,unknown,Saturday,False,2,33.71918333,-84.835391670
+2020,GA,131292,SEMINOLE (253),1,True,1,66,0,0,1,0,0,us_state,2,,US-84,US-84 SR-38 DUNHAM ST,Rural,7,morning (6-11:59 a.m.),Sunday,False,1,31.02049722,-84.829494440
+2020,GA,131297,COBB (67),3,True,1,66,0,3,0,0,0,interstate,1,I-75,I-75,I-75 N,Urban,5,overnight (midnight-5:59 a.m.),Tuesday,False,2,33.96419167,-84.522136110
+2020,GA,131305,MORGAN (211),1,False,1,67,1,0,0,0,0,other,4,,,CR-HIGH SHOALS RD,Rural,15,afternoon (noon-5:59 p.m.),Monday,False,2,33.79348056,-83.506805560
+2020,GA,131316,LAURENS (175),1,True,1,66,1,0,0,0,0,other,4,,CR-0651,CR-0651 Pete Thomas Rd,Rural,12,afternoon (noon-5:59 p.m.),Tuesday,False,1,32.21705000,-83.025463890
+2020,GA,131317,HALL (139),1,False,1,63,0,1,0,0,0,us_state,3,,SR-332,SR-332 POPULAR SPRINGS RD,Urban,14,afternoon (noon-5:59 p.m.),Tuesday,False,2,34.20218889,-83.816661110
+2020,GA,131326,CARROLL (45),1,True,1,66,0,1,0,0,0,us_state,2,,US-27,US-27 SR-16,Rural,20,evening (6-11:59 p.m.),Friday,False,2,33.52165000,-84.957761110
+2020,GA,131335,BLECKLEY (23),1,True,3,61 66 66,0,1,0,0,0,interstate,1,I-16,I-16,I-16,Urban,0,overnight (midnight-5:59 a.m.),Saturday,False,4,32.56971111,-83.224041670
+2020,GA,131339,HARALSON (143),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Rural,8,morning (6-11:59 a.m.),Sunday,False,2,33.67950556,-85.307044440
+2020,GA,131353,JEFF DAVIS (161),1,False,1,67,0,1,0,0,0,us_state,3,,SR-0135,SR-0135,Rural,12,afternoon (noon-5:59 p.m.),Friday,False,2,31.81338333,-82.656722220
+2020,GA,131357,LUMPKIN (187),1,False,1,67,0,1,0,0,0,us_state,3,,SR-0115,SR-0115,Rural,19,evening (6-11:59 p.m.),Saturday,False,2,34.50673889,-83.929561110
+2020,GA,131368,BARTOW (15),1,True,1,66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Urban,19,evening (6-11:59 p.m.),Wednesday,False,2,34.21524722,-84.754688890
+2020,GA,131369,JACKSON (157),1,True,1,66,0,1,0,0,0,us_state,3,,SR-11,SR-11,Urban,8,morning (6-11:59 a.m.),Tuesday,True,2,34.20555556,-83.719005560
+2020,GA,131375,COBB (67),1,True,1,66,0,1,0,0,0,us_state,3,,SR-280,SR-280,Urban,21,evening (6-11:59 p.m.),Wednesday,False,2,33.82483333,-84.489061110
+2020,GA,131378,BUTTS (35),2,True,4,66 66 66 67,2,0,0,0,0,interstate,1,I-75,I-75,I-75 N,Rural,0,overnight (midnight-5:59 a.m.),Wednesday,False,4,33.21726389,-84.068341670
+2020,GA,131380,BRYAN (29),1,True,1,66,1,0,0,0,0,us_state,3,,SR-0404,SR-0404,Rural,5,overnight (midnight-5:59 a.m.),Thursday,False,1,32.15598889,-81.429616670
+2020,GA,131381,WARREN (301),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20 E,Rural,6,morning (6-11:59 a.m.),Friday,False,2,33.49342778,-82.630897220
+2020,GA,131382,CLAYTON (63),1,True,1,66,0,1,0,0,0,other,4,,CR-0228,CR-0228,Urban,13,afternoon (noon-5:59 p.m.),Thursday,False,2,33.61938889,-84.420600000
+2020,GA,131383,GLASCOCK (125),1,True,1,66,0,1,0,0,0,us_state,3,,SR-80,SR-80,Rural,14,afternoon (noon-5:59 p.m.),Friday,False,2,33.32725556,-82.559780560
+2020,GA,131392,DOUGHERTY (95),1,True,1,66,1,0,0,0,0,us_state,3,,SR-3,SR-3,Urban,9,morning (6-11:59 a.m.),Sunday,False,2,31.55441944,-84.114977780
+2020,GA,131399,BEN HILL (17),1,True,2,66 66,0,1,0,0,0,us_state,3,,SR-107,SR-107,Urban,14,afternoon (noon-5:59 p.m.),Wednesday,False,4,31.71323056,-83.204994440
+2020,GA,131409,LAURENS (175),1,True,1,66,0,1,0,0,0,us_state,3,,SR-29,SR-29,Rural,6,morning (6-11:59 a.m.),Friday,False,2,32.63520833,-83.017616670
+2020,GA,131411,WORTH (321),1,False,1,61,1,0,0,0,0,other,4,,CR-409,CR-409,Rural,21,evening (6-11:59 p.m.),Friday,False,1,31.57793333,-83.891108330
+2020,GA,131413,DOOLY (93),1,True,1,66,0,0,1,0,0,interstate,1,I-75,I-75,I-75 S,Rural,18,evening (6-11:59 p.m.),Monday,False,1,32.13762500,-83.758586110
+2020,GA,131415,MILLER (201),1,True,1,66,0,1,0,0,0,us_state,3,,SR-310,SR-310,Rural,15,afternoon (noon-5:59 p.m.),Friday,False,2,31.07809722,-84.708458330
+2020,GA,131417,EFFINGHAM (103),1,True,1,66,0,1,0,0,0,interstate,1,I-16,I-16,I-16,Rural,22,evening (6-11:59 p.m.),Friday,True,2,32.12484722,-81.386847220
+2020,GA,131419,MURRAY (213),1,True,1,66,0,1,0,0,0,other,5,,,CS-069503,Urban,15,afternoon (noon-5:59 p.m.),Saturday,False,2,34.79026667,-84.783941670
+2020,GA,131426,CHEROKEE (57),2,False,1,63,0,2,0,0,0,us_state,3,,SR-0005,SR-0005,Rural,16,afternoon (noon-5:59 p.m.),Monday,False,2,34.33528889,-84.384452780
+2020,GA,131430,BULLOCH (31),1,False,1,67,1,0,0,0,0,us_state,3,,SR-26,SR-26,Rural,12,afternoon (noon-5:59 p.m.),Tuesday,False,1,32.24480278,-81.522897220
+2020,GA,131446,FRANKLIN (119),1,True,1,66,0,1,0,0,0,interstate,1,I-85,I-85,I-85,Rural,23,evening (6-11:59 p.m.),Thursday,False,2,34.44743333,-83.120530560
+2020,GA,131448,DOUGHERTY (95),1,True,1,66,0,1,0,0,0,us_state,3,,SR-0062,SR-0062,Rural,8,morning (6-11:59 a.m.),Friday,False,2,31.50395278,-84.282694440
+2020,GA,131451,GWINNETT (135),2,False,1,63,0,2,0,0,0,interstate,1,I-85,I-85,I-85,Urban,7,morning (6-11:59 a.m.),Friday,False,5,34.02493889,-84.054577780
+2020,GA,131458,BARTOW (15),1,True,1,66,1,0,0,0,0,other,5,,,CS-096103,Urban,14,afternoon (noon-5:59 p.m.),Thursday,False,1,34.16078611,-84.802408330
+2020,GA,131462,CLAYTON (63),1,True,1,66,0,1,0,0,0,interstate,1,I-285,I-285,I-285,Urban,0,overnight (midnight-5:59 a.m.),Wednesday,False,2,33.61765556,-84.452002780
+2020,GA,131512,LOWNDES (185),1,True,2,61 66,1,0,0,0,0,us_state,3,,SR-31,SR-31,Urban,11,morning (6-11:59 a.m.),Tuesday,False,2,30.75468056,-83.271947220
+2020,GA,131520,FAYETTE (113),1,False,1,63,0,1,0,0,0,us_state,3,,SR-54,SR-54,Urban,18,evening (6-11:59 p.m.),Friday,True,2,33.45958333,-84.421277780
+2020,GA,131522,MORGAN (211),1,True,1,66,0,1,0,0,0,us_state,3,,SR-24,SR-24,Rural,11,morning (6-11:59 a.m.),Tuesday,False,2,33.61683056,-83.450647220
+2020,GA,131529,FULTON (121),1,True,1,66,0,1,0,0,0,us_state,3,,SR-166,SR-166,Urban,9,morning (6-11:59 a.m.),Saturday,False,2,33.69769444,-84.416241670
+2020,GA,131541,CHEROKEE (57),1,False,1,61,0,0,1,0,0,other,4,,CR-1360,CR-1360,Urban,16,afternoon (noon-5:59 p.m.),Tuesday,False,2,34.13535278,-84.565147220
+2020,GA,131569,FULTON (121),1,False,1,64,0,0,1,0,0,interstate,1,I-20,I-20,I-20,Urban,1,overnight (midnight-5:59 a.m.),Tuesday,False,2,33.76598611,-84.526052780
+2020,GA,131573,GWINNETT (135),1,False,1,61,0,1,0,0,0,other,4,,CR-49400,CR-49400/ROCKBRIDGE RD,Urban,22,evening (6-11:59 p.m.),Saturday,False,2,33.82732222,-84.125483330
+2020,GA,131586,CHATTOOGA (55),1,False,1,61,1,0,0,0,0,us_state,3,,SR-157,SR-157,Rural,17,afternoon (noon-5:59 p.m.),Tuesday,False,1,34.52267500,-85.481733330
+2021,GA,130008,FLOYD (115),1,True,1,66,0,1,0,0,0,us_state,3,,SR-156,SR-156,Rural,8,morning (6-11:59 a.m.),Monday,False,2,34.41230278,-85.157016670
+2021,GA,130031,DECATUR (87),1,False,1,61,0,1,0,0,0,us_state,3,,SR-38,SR-38,Urban,16,afternoon (noon-5:59 p.m.),Monday,False,2,30.97074722,-84.733336110
+2021,GA,130040,DEKALB (89),1,False,1,61,0,1,0,0,0,us_state,3,,SR-12,SR-12,Urban,21,evening (6-11:59 p.m.),Thursday,False,2,33.71630278,-84.129372220
+2021,GA,130047,BRYAN (29),1,True,1,66,0,1,0,0,0,interstate,1,I-95,I-95,I-95 N,Urban,10,morning (6-11:59 a.m.),Sunday,True,2,31.90902500,-81.324858330
+2021,GA,130051,UNION (291),1,False,1,67,0,1,0,0,0,us_state,3,,SR-515,SR-515,Rural,17,afternoon (noon-5:59 p.m.),Tuesday,False,3,34.87343611,-84.079833330
+2021,GA,130060,POLK (233),2,True,1,66,0,2,0,0,0,us_state,3,,SR-1,SR-1,Urban,15,afternoon (noon-5:59 p.m.),Thursday,False,2,33.94032500,-85.244777780
+2021,GA,130071,TAYLOR (269),1,True,1,66,0,1,0,0,0,other,4,,CR-96,CR-96,Rural,12,afternoon (noon-5:59 p.m.),Wednesday,False,2,32.55736111,-84.180505560
+2021,GA,130092,CHATHAM (51),1,True,2,66 66,1,0,0,0,0,interstate,1,I-16,I-16,I-16,Urban,12,afternoon (noon-5:59 p.m.),Thursday,False,2,32.10655556,-81.342725000
+2021,GA,130094,FULTON (121),1,False,1,67,0,1,0,0,0,us_state,3,,SR-92,SR-92,Urban,4,overnight (midnight-5:59 a.m.),Saturday,False,2,33.59649722,-84.604466670
+2021,GA,130102,DOUGLAS (97),1,False,1,62,0,1,0,0,0,us_state,3,,SR-92,SR-92,Urban,15,afternoon (noon-5:59 p.m.),Wednesday,False,2,33.74700833,-84.698930560
+2021,GA,130145,BARROW (13),1,True,1,66,0,1,0,0,0,us_state,3,,SR-316,SR-316,Urban,2,overnight (midnight-5:59 a.m.),Monday,False,2,33.96831667,-83.822725000
+2021,GA,130148,GILMER (123),1,False,1,63,0,1,0,0,0,us_state,3,,SR-52,SR-52,Rural,12,afternoon (noon-5:59 p.m.),Wednesday,False,2,34.65891944,-84.444197220
+2021,GA,130152,WORTH (321),1,True,1,66,0,1,0,0,0,other,4,,CR-256,CR-256,Rural,17,afternoon (noon-5:59 p.m.),Thursday,False,2,31.43357778,-83.751008330
+2021,GA,130165,BIBB (21),1,True,1,66,0,1,0,0,0,interstate,1,I-475,I-475,I-475,Urban,22,evening (6-11:59 p.m.),Monday,False,2,32.76370833,-83.710413890
+2021,GA,130166,MERIWETHER (199),1,True,1,66,0,1,0,0,0,interstate,1,I-85,I-85,I-85,Rural,21,evening (6-11:59 p.m.),Thursday,False,2,33.21166111,-84.824869440
+2021,GA,130170,RICHMOND (245),1,False,1,67,1,0,0,0,0,us_state,3,,SR-4,SR-4,Urban,1,overnight (midnight-5:59 a.m.),Wednesday,False,1,33.37516389,-82.136661110
+2021,GA,130173,COBB (67),1,True,5,66 66 67 67 67,1,0,0,0,0,interstate,1,I-75,I-75,I-75,Urban,11,morning (6-11:59 a.m.),Thursday,False,12,34.02521111,-84.572477780
+2021,GA,130182,LIBERTY (179),1,True,1,66,0,0,1,0,0,us_state,3,,SR-119,SR-119,Urban,19,evening (6-11:59 p.m.),Thursday,False,2,31.82610000,-81.622544440
+2021,GA,130184,COWETA (77),1,False,1,63,0,1,0,0,0,interstate,1,I-85,I-85,I-85,Urban,20,evening (6-11:59 p.m.),Thursday,False,2,33.34553056,-84.761730560
+2021,GA,130191,HALL (139),1,False,1,61,0,1,0,0,0,us_state,3,,SR-52,SR-52,Rural,6,morning (6-11:59 a.m.),Wednesday,False,3,34.42729722,-83.712744440
+2021,GA,130193,PIERCE (229),1,True,1,66,0,0,1,0,0,us_state,3,,SR-38,SR-38,Rural,20,evening (6-11:59 p.m.),Monday,False,1,31.41914722,-82.101447220
+2021,GA,130201,RABUN (241),1,False,1,62,0,1,0,0,0,us_state,3,,SR-15,SR-15,Rural,11,morning (6-11:59 a.m.),Friday,False,2,34.85851389,-83.406783330
+2021,GA,130202,BARROW (13),1,True,1,66,0,1,0,0,0,us_state,3,,SR-11,SR-11,Urban,18,evening (6-11:59 p.m.),Friday,False,3,34.00552778,-83.706697220
+2021,GA,130211,DADE (83),1,False,1,65,1,0,0,0,0,interstate,1,I-59,I-59,I-59,Rural,14,afternoon (noon-5:59 p.m.),Thursday,False,1,34.77018056,-85.539227780
+2021,GA,130214,THOMAS (275),1,True,1,66,0,1,0,0,0,us_state,3,,SR-300,SR-300,Rural,7,morning (6-11:59 a.m.),Thursday,False,2,31.01362778,-84.054352780
+2021,GA,130226,COLQUITT (71),1,True,1,66,1,0,0,0,0,us_state,3,,SR-37,SR-37,Rural,15,afternoon (noon-5:59 p.m.),Wednesday,False,1,31.16189722,-83.569772220
+2021,GA,130231,COFFEE (69),1,True,1,66,1,0,0,0,0,us_state,3,,SR-268,SR-268,Rural,14,afternoon (noon-5:59 p.m.),Wednesday,False,1,31.60668889,-82.987666670
+2021,GA,130233,HART (147),1,True,1,66,0,1,0,0,0,us_state,3,,SR-8,SR-8,Rural,5,overnight (midnight-5:59 a.m.),Thursday,False,2,34.29501944,-83.007819440
+2021,GA,130244,FULTON (121),1,False,1,63,0,1,0,0,0,interstate,1,I-285,I-285,I-285,Urban,11,morning (6-11:59 a.m.),Wednesday,False,2,33.72509444,-84.502594440
+2021,GA,130246,FULTON (121),1,False,1,63,0,1,0,0,0,other,5,,,CS-COCHRAN MILL RD,Urban,7,morning (6-11:59 a.m.),Tuesday,False,2,33.56709167,-84.708844440
+2021,GA,130255,WHITE (311),1,False,1,63,0,1,0,0,0,us_state,3,,SR-11,SR-11,Rural,14,afternoon (noon-5:59 p.m.),Monday,False,3,34.55784444,-83.761833330
+2021,GA,130257,GWINNETT (135),1,True,1,66,0,1,0,0,0,us_state,3,,SR-316,SR-316  W UNIVERSITY PKWY,Urban,22,evening (6-11:59 p.m.),Wednesday,False,2,33.97373333,-83.891486110
+2021,GA,130259,PUTNAM (237),1,True,1,66,0,1,0,0,0,us_state,3,,SR-16,SR-16,Rural,12,afternoon (noon-5:59 p.m.),Thursday,False,2,33.31673333,-83.426002780
+2021,GA,130276,DOUGLAS (97),1,True,1,66,0,1,0,0,0,us_state,3,,SR-8,SR-8,Urban,19,evening (6-11:59 p.m.),Thursday,False,2,33.74378056,-84.771555560
+2021,GA,130286,TROUP (285),1,False,1,61,0,1,0,0,0,us_state,3,,SR-109,SR-109,Urban,12,afternoon (noon-5:59 p.m.),Tuesday,False,2,33.04232778,-84.980241670
+2021,GA,130289,BULLOCH (31),3,True,2,66 66,0,3,0,0,0,interstate,1,I-16,I-16,I-16,Rural,14,afternoon (noon-5:59 p.m.),Sunday,False,4,32.22459167,-81.562991670
+2021,GA,130291,EMANUEL (107),1,False,1,67,0,1,0,0,0,us_state,3,,SR-171,SR-171,Rural,6,morning (6-11:59 a.m.),Thursday,False,2,32.56463889,-82.491944440
+2021,GA,130293,EFFINGHAM (103),1,True,1,66,1,0,0,0,0,us_state,3,,SR-26,SR-26,Rural,21,evening (6-11:59 p.m.),Thursday,False,1,32.16890000,-81.386258330
+2021,GA,130297,OGLETHORPE (221),1,True,1,66,1,0,0,0,0,us_state,3,,SR-10,SR-10,Rural,10,morning (6-11:59 a.m.),Tuesday,False,1,33.79692778,-82.989002780
+2021,GA,130301,WILKINSON (319),1,True,1,66,0,1,0,0,0,us_state,3,,SR-57,SR-57,Rural,7,morning (6-11:59 a.m.),Friday,False,2,32.85916111,-83.379430560
+2021,GA,130303,CLAYTON (63),1,False,1,61,0,1,0,0,0,us_state,3,,SR-138,SR-138,Urban,19,evening (6-11:59 p.m.),Friday,False,2,33.62920000,-84.356069440
+2021,GA,130311,FULTON (121),1,False,1,63,0,0,1,0,0,other,5,,,CS-165103   JOSEPH E LOWRY BLV,Urban,15,afternoon (noon-5:59 p.m.),Saturday,False,1,33.77218333,-84.417380560
+2021,GA,130315,COBB (67),1,False,1,61,0,1,0,0,0,us_state,3,,SR-8,SR-8,Urban,8,morning (6-11:59 a.m.),Friday,False,2,33.80161944,-84.518336110
+2021,GA,130322,LOWNDES (185),1,True,1,66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Rural,1,overnight (midnight-5:59 a.m.),Thursday,False,2,30.74710833,-83.271155560
+2021,GA,130325,BANKS (11),1,False,1,63,0,1,0,0,0,us_state,3,,SR-51,SR-51,Rural,7,morning (6-11:59 a.m.),Thursday,False,2,34.36977222,-83.423319440
+2021,GA,130333,WAYNE (305),1,True,1,66,0,1,0,0,0,us_state,3,,SR-27,SR-27,Rural,6,morning (6-11:59 a.m.),Thursday,False,2,31.56371667,-81.836625000
+2021,GA,130334,LOWNDES (185),3,True,3,66 66 66,3,0,0,0,0,interstate,1,I-75,I-75,I-75,Rural,7,morning (6-11:59 a.m.),Thursday,False,3,30.66990833,-83.213480560
+2021,GA,130335,GORDON (129),1,True,1,66,1,0,0,0,0,interstate,1,I-75,I-75,I-75,Urban,9,morning (6-11:59 a.m.),Thursday,False,1,34.46710000,-84.919038890
+2021,GA,130342,FAYETTE (113),1,True,1,66,0,1,0,0,0,us_state,3,,SR-54,SR-54,Urban,0,overnight (midnight-5:59 a.m.),Sunday,True,2,33.48520000,-84.398000000
+2021,GA,130354,WHITFIELD (313),1,False,1,67,0,1,0,0,0,us_state,3,,SR-3,SR-3,Urban,9,morning (6-11:59 a.m.),Wednesday,False,2,34.71703889,-84.940011110
+2021,GA,130378,COLQUITT (71),1,True,1,66,0,1,0,0,0,us_state,3,,SR-122,SR-122,Rural,20,evening (6-11:59 p.m.),Monday,False,2,31.11327778,-83.992227780
+2021,GA,130380,CHATTAHOOCHEE (53),1,True,1,66,0,1,0,0,0,us_state,3,,SR-520,SR-520,Rural,20,evening (6-11:59 p.m.),Tuesday,False,2,32.30895278,-84.793088890
+2021,GA,130382,COOK (75),1,True,1,66,1,0,0,0,0,interstate,1,I-75,I-75,I-75,Urban,0,overnight (midnight-5:59 a.m.),Monday,False,1,31.12625000,-83.434819440
+2021,GA,130384,GWINNETT (135),2,True,1,66,0,2,0,0,0,us_state,3,,SR-124,SR-124,Urban,2,overnight (midnight-5:59 a.m.),Wednesday,False,2,33.82003611,-84.035358330
+2021,GA,130407,CLAYTON (63),1,True,2,61 66,0,1,0,0,0,us_state,3,,SR-3,SR-3,Urban,4,overnight (midnight-5:59 a.m.),Saturday,True,4,33.54669722,-84.369225000
+2021,GA,130413,PAULDING (223),1,True,1,66,0,1,0,0,0,us_state,3,,SR-6,SR-6,Urban,8,morning (6-11:59 a.m.),Tuesday,False,2,33.91875556,-84.868594440
+2021,GA,130418,WHITFIELD (313),1,False,1,63,0,1,0,0,0,other,4,,CR-100,CR-100 DUG GAP RD,Urban,12,afternoon (noon-5:59 p.m.),Wednesday,False,3,34.73391111,-84.998569440
+2021,GA,130428,JEFFERSON (163),1,True,2,66 66,1,0,0,0,0,us_state,3,,SR-296,SR-296,Rural,5,overnight (midnight-5:59 a.m.),Monday,False,2,33.06845278,-82.406266670
+2021,GA,130433,FULTON (121),1,True,1,66,0,1,0,0,0,interstate,1,I-285,I-285,I-285,Urban,22,evening (6-11:59 p.m.),Friday,False,2,33.78363611,-84.495316670
+2021,GA,130436,BIBB (21),1,True,1,66,0,0,1,0,0,interstate,1,I-75,I-75,I-75,Urban,11,morning (6-11:59 a.m.),Tuesday,False,1,32.75345278,-83.712672220
+2021,GA,130444,CRISP (81),1,True,1,66,0,1,0,0,0,us_state,3,,SR-300,SR-300,Rural,22,evening (6-11:59 p.m.),Thursday,False,2,31.87342778,-83.901641670
+2021,GA,130453,WHITE (311),1,False,1,67,1,0,0,0,0,us_state,3,,SR-75,SR-75,Rural,20,evening (6-11:59 p.m.),Wednesday,False,1,34.64568333,-83.736744440
+2021,GA,130462,FULTON (121),1,True,1,66,0,0,1,0,0,interstate,1,I-285,I-285,I-285,Urban,2,overnight (midnight-5:59 a.m.),Friday,False,1,33.76248056,-84.492622220
+2021,GA,130491,HENRY (151),1,True,1,66,0,1,0,0,0,us_state,3,,SR-3,SR-3,Urban,18,evening (6-11:59 p.m.),Tuesday,False,3,33.36831111,-84.296163890
+2021,GA,130493,FAYETTE (113),1,False,1,67,0,1,0,0,0,us_state,3,,SR-74,SR-74,Urban,16,afternoon (noon-5:59 p.m.),Wednesday,False,2,33.48270556,-84.585666670
+2021,GA,130499,DOUGLAS (97),1,True,1,66,0,1,0,0,0,other,5,,,CS-97505  LIBERTY RD,Urban,20,evening (6-11:59 p.m.),Thursday,False,2,33.72375833,-84.901111110
+2021,GA,130516,GWINNETT (135),1,False,1,61,0,1,0,0,0,us_state,3,,SR-316,SR-316,Urban,9,morning (6-11:59 a.m.),Friday,True,6,33.97374167,-83.889386110
+2021,GA,130520,BANKS (11),1,False,1,63,0,1,0,0,0,other,4,,CR-030000,CR-030000/YONAH HOMER RD,Rural,16,afternoon (noon-5:59 p.m.),Monday,False,2,34.34160000,-83.508638890
+2021,GA,130533,CAMDEN (39),1,False,1,61,0,1,0,0,0,interstate,1,I-95,I-95,I-95,Rural,3,overnight (midnight-5:59 a.m.),Monday,False,2,30.91779167,-81.685863890
+2021,GA,130540,COFFEE (69),1,False,1,61,0,1,0,0,0,us_state,3,,SR-32,SR-32,Rural,6,morning (6-11:59 a.m.),Thursday,False,2,31.54728889,-82.936905560
+2021,GA,130542,CHATTAHOOCHEE (53),1,True,1,66,0,1,0,0,0,us_state,3,,SR-26,SR-26,Rural,8,morning (6-11:59 a.m.),Tuesday,False,3,32.31092778,-84.721075000
+2021,GA,130543,HARALSON (143),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Rural,0,overnight (midnight-5:59 a.m.),Thursday,False,2,33.68872500,-85.212291670
+2021,GA,130559,CHATHAM (51),1,True,1,66,0,1,0,0,0,interstate,1,I-95,I-95,I-95,Urban,12,afternoon (noon-5:59 p.m.),Monday,False,2,32.07803611,-81.244169440
+2021,GA,130578,TALIAFERRO (265),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Rural,18,evening (6-11:59 p.m.),Friday,True,2,33.51579167,-82.856952780
+2021,GA,130581,FRANKLIN (119),2,True,1,66,0,2,0,0,0,interstate,1,I-85,I-85,I-85,Rural,17,afternoon (noon-5:59 p.m.),Sunday,False,2,34.34653889,-83.318050000
+2021,GA,130586,DECATUR (87),1,True,2,66 66,1,0,0,0,0,us_state,3,,SR-38,SR-38,Urban,19,evening (6-11:59 p.m.),Wednesday,False,2,30.92673611,-84.619286110
+2021,GA,130589,FULTON (121),1,True,1,66,0,1,0,0,0,interstate,1,I-285,I-285,I-285,Urban,0,overnight (midnight-5:59 a.m.),Tuesday,False,2,33.76978056,-84.495097220
+2021,GA,130594,GWINNETT (135),1,True,1,66,0,1,0,0,0,us_state,3,,SR-141,SR-141,Urban,8,morning (6-11:59 a.m.),Friday,False,2,33.93870556,-84.248091670
+2021,GA,130612,JACKSON (157),1,False,1,63,0,1,0,0,0,us_state,3,,SR-53,SR-53,Urban,2,overnight (midnight-5:59 a.m.),Monday,False,2,34.12277222,-83.763841670
+2021,GA,130616,FRANKLIN (119),1,True,1,66,0,1,0,0,0,interstate,1,I-85,I-85,I-85,Rural,0,overnight (midnight-5:59 a.m.),Monday,False,2,34.34727778,-83.315830560
+2021,GA,130618,BULLOCH (31),1,False,1,63,0,1,0,0,0,us_state,3,,SR-73,SR-73,Rural,7,morning (6-11:59 a.m.),Wednesday,False,2,32.29021667,-81.875141670
+2021,GA,130619,COWETA (77),1,True,1,66,0,0,1,0,0,interstate,1,I-85,I-85,I-85,Rural,1,overnight (midnight-5:59 a.m.),Thursday,False,1,33.25340000,-84.805730560
+2021,GA,130620,DOOLY (93),1,True,1,66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Rural,2,overnight (midnight-5:59 a.m.),Tuesday,False,3,32.23040556,-83.741588890
+2021,GA,130623,CATOOSA (47),1,False,1,62,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Urban,10,morning (6-11:59 a.m.),Wednesday,False,3,34.95446111,-85.178675000
+2021,GA,130637,NEWTON (217),1,True,1,66,0,1,0,0,0,us_state,3,,SR-11,SR-11,Rural,6,morning (6-11:59 a.m.),Friday,False,2,33.63303056,-83.727688890
+2021,GA,130658,FLOYD (115),1,False,1,67,1,0,0,0,0,us_state,3,,SR-53,SR-53,Rural,15,afternoon (noon-5:59 p.m.),Saturday,False,1,34.14882778,-85.283405560
+2021,GA,130667,TIFT (277),1,True,1,66,0,1,0,0,0,us_state,3,,SR-520,SR-520,Urban,11,morning (6-11:59 a.m.),Saturday,False,2,31.44441944,-83.546872220
+2021,GA,130688,RICHMOND (245),2,False,1,62,0,2,0,0,0,us_state,3,,SR-88,SR-88,Urban,11,morning (6-11:59 a.m.),Friday,False,2,33.31726944,-82.163280560
+2021,GA,130699,OGLETHORPE (221),1,False,1,61,1,0,0,0,0,other,4,,CR-1640,CR-1640  FAIRGROUND RD,Rural,21,evening (6-11:59 p.m.),Tuesday,False,1,33.88557778,-83.088616670
+2021,GA,130700,GRADY (131),2,True,1,66,1,1,0,0,0,us_state,3,,SR-111,SR-111,Rural,16,afternoon (noon-5:59 p.m.),Friday,False,2,30.70035556,-84.367252780
+2021,GA,130722,RICHMOND (245),1,True,1,66,0,1,0,0,0,us_state,3,,SR-28,SR-28,Urban,13,afternoon (noon-5:59 p.m.),Monday,False,2,33.45047778,-81.923158330
+2021,GA,130740,CHEROKEE (57),1,False,1,67,0,1,0,0,0,us_state,3,,SR-92,SR-92,Urban,18,evening (6-11:59 p.m.),Thursday,False,2,34.08795833,-84.592080560
+2021,GA,130759,DEKALB (89),1,False,1,63,0,0,1,0,0,us_state,3,,SR-13,SR-13,Urban,3,overnight (midnight-5:59 a.m.),Friday,False,2,33.89794444,-84.280041670
+2021,GA,130761,BIBB (21),1,True,1,66,0,0,1,0,0,other,5,,,CS-FOREST AVE,Urban,16,afternoon (noon-5:59 p.m.),Monday,False,1,32.84339444,-83.651980560
+2021,GA,130776,HENRY (151),1,False,1,63,0,1,0,0,0,us_state,3,,SR-155,SR-155,Urban,9,morning (6-11:59 a.m.),Saturday,False,2,33.64605833,-84.187458330
+2021,GA,130777,FULTON (121),1,True,1,66,0,1,0,0,0,interstate,1,I-285,I-285,I-285,Urban,1,overnight (midnight-5:59 a.m.),Tuesday,False,2,33.76755278,-84.494791670
+2021,GA,130778,HANCOCK (141),1,False,1,63,0,1,0,0,0,us_state,3,,SR-22,SR-22,Rural,20,evening (6-11:59 p.m.),Thursday,False,2,33.16961944,-83.075805560
+2021,GA,130779,NEWTON (217),1,False,1,61,0,1,0,0,0,us_state,3,,SR-12,SR-12,Rural,9,morning (6-11:59 a.m.),Friday,False,2,33.59394167,-83.787336110
+2021,GA,130783,MADISON (195),1,True,1,66,0,1,0,0,0,us_state,3,,SR-172,SR-172,Rural,4,overnight (midnight-5:59 a.m.),Saturday,False,2,34.12595833,-83.124308330
+2021,GA,130787,CLAYTON (63),1,False,1,63,0,1,0,0,0,us_state,3,,SR-138,SR-138,Urban,7,morning (6-11:59 a.m.),Tuesday,False,2,33.55055000,-84.432269440
+2021,GA,130789,GWINNETT (135),1,True,1,66,0,1,0,0,0,interstate,1,I-85,I-85,I-85,Urban,13,afternoon (noon-5:59 p.m.),Saturday,False,7,34.02762778,-84.051247220
+2021,GA,130805,TURNER (287),1,True,2,66 66,1,0,0,0,0,us_state,3,,SR-107,SR-107,Rural,15,afternoon (noon-5:59 p.m.),Tuesday,False,2,31.72126944,-83.505080560
+2021,GA,130812,LAURENS (175),1,True,1,66,0,1,0,0,0,us_state,3,,SR-31,SR-31,Rural,8,morning (6-11:59 a.m.),Tuesday,False,2,32.44707778,-82.944908330
+2021,GA,130818,HENRY (151),1,False,1,67,0,1,0,0,0,us_state,3,,SR-3,SR-3,Urban,23,evening (6-11:59 p.m.),Saturday,False,2,33.41366944,-84.314397220
+2021,GA,130824,COBB (67),1,True,1,66,0,0,1,0,0,interstate,1,I-75,I-75,I-75,Urban,1,overnight (midnight-5:59 a.m.),Wednesday,False,1,33.97348056,-84.531183330
+2021,GA,130845,FORSYTH (117),1,False,1,62,0,0,1,0,0,other,4,,CR-3311,CR-3311  CRESTFIELD LN,Urban,11,morning (6-11:59 a.m.),Saturday,False,1,34.20616111,-84.067783330
+2021,GA,130849,HOUSTON (153),1,False,1,67,1,0,0,0,0,us_state,3,,SR-247,SR-247,Urban,0,overnight (midnight-5:59 a.m.),Friday,False,1,32.64320000,-83.607369440
+2021,GA,130852,WARE (299),1,True,1,66,0,1,0,0,0,us_state,3,,SR-4,SR-4,Urban,12,afternoon (noon-5:59 p.m.),Wednesday,False,2,31.27773611,-82.420333330
+2021,GA,130866,FULTON (121),1,False,1,63,0,1,0,0,0,us_state,3,,SR-14,SR-14,Urban,16,afternoon (noon-5:59 p.m.),Thursday,False,2,33.53569167,-84.642730560
+2021,GA,130872,HABERSHAM (137),1,False,1,61,0,1,0,0,0,us_state,3,,SR-17,SR-17,Rural,10,morning (6-11:59 a.m.),Saturday,False,2,34.62846944,-83.611500000
+2021,GA,130881,THOMAS (275),1,False,1,61,0,1,0,0,0,us_state,3,,SR-3,SR-3,Rural,18,evening (6-11:59 p.m.),Saturday,False,2,30.97723333,-84.036977780
+2021,GA,130882,WARE (299),1,False,1,61,0,1,0,0,0,us_state,3,,SR-4,SR-4,Rural,6,morning (6-11:59 a.m.),Friday,False,2,31.39888889,-82.447450000
+2021,GA,130895,MONROE (207),1,True,1,66,1,0,0,0,0,interstate,1,I-475,I-475,I-475,Urban,5,overnight (midnight-5:59 a.m.),Friday,False,2,32.95265556,-83.812541670
+2021,GA,130898,CAMDEN (39),1,True,1,66,0,1,0,0,0,interstate,1,I-95,I-95,I-95,Rural,14,afternoon (noon-5:59 p.m.),Saturday,False,6,30.97017500,-81.675444440
+2021,GA,130902,CHATHAM (51),1,False,1,63,0,1,0,0,0,interstate,1,I-16,I-16,I-16,Urban,1,overnight (midnight-5:59 a.m.),Friday,False,2,32.06738889,-81.118272220
+2021,GA,130917,WHITFIELD (313),2,True,1,66,0,2,0,0,0,us_state,3,,SR-3,SR-3,Urban,15,afternoon (noon-5:59 p.m.),Monday,False,5,34.79447500,-84.997638890
+2021,GA,130920,DEKALB (89),1,True,1,66,0,0,1,0,0,us_state,3,,SR-141,SR-141 PEACHTREE INDUST BLVD,Urban,13,afternoon (noon-5:59 p.m.),Tuesday,False,1,33.92660833,-84.275336110
+2021,GA,130921,FRANKLIN (119),1,False,1,62,1,0,0,0,0,interstate,1,I-85,I-85,I-85,Rural,5,overnight (midnight-5:59 a.m.),Wednesday,False,2,34.43702500,-83.141125000
+2021,GA,130922,WALKER (295),1,True,2,66 66,1,0,0,0,0,us_state,3,,SR-1,SR-1,Urban,12,afternoon (noon-5:59 p.m.),Wednesday,False,3,34.87432778,-85.269988890
+2021,GA,130936,TOOMBS (279),1,True,1,66,0,1,0,0,0,us_state,3,,SR-30,SR-30,Rural,17,afternoon (noon-5:59 p.m.),Friday,False,2,32.16427500,-82.271388890
+2021,GA,130952,WARE (299),1,False,1,61,1,0,0,0,0,us_state,3,,SR-4,SR-4,Urban,15,afternoon (noon-5:59 p.m.),Tuesday,False,2,31.28596667,-82.436669440
+2021,GA,130955,DOUGLAS (97),1,False,1,61,0,1,0,0,0,us_state,3,,SR-92,SR-92,Urban,13,afternoon (noon-5:59 p.m.),Wednesday,True,2,33.77497500,-84.747433330
+2021,GA,130963,MUSCOGEE (215),1,True,1,66,0,1,0,0,0,us_state,3,,SR-22,SR-22,Urban,9,morning (6-11:59 a.m.),Tuesday,False,2,32.55285278,-84.742808330
+2021,GA,130964,FAYETTE (113),1,True,1,66,0,1,0,0,0,us_state,3,,SR-92,SR-92,Urban,16,afternoon (noon-5:59 p.m.),Friday,False,2,33.43188056,-84.457369440
+2021,GA,130965,COWETA (77),1,True,1,66,0,1,0,0,0,us_state,3,,SR-70,SR-70,Urban,20,evening (6-11:59 p.m.),Tuesday,False,2,33.39974444,-84.807538890
+2021,GA,130967,HENRY (151),1,True,1,66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Urban,6,morning (6-11:59 a.m.),Saturday,False,2,33.43996111,-84.193472220
+2021,GA,130973,EMANUEL (107),1,True,1,66,0,1,0,0,0,us_state,3,,SR-4,SR-4,Urban,14,afternoon (noon-5:59 p.m.),Monday,False,2,32.62103611,-82.377055560
+2021,GA,130977,MURRAY (213),1,True,1,66,1,0,0,0,0,us_state,3,,SR-52,SR-52,Urban,5,overnight (midnight-5:59 a.m.),Wednesday,False,1,34.78110278,-84.863066670
+2021,GA,130983,GILMER (123),1,False,1,67,0,1,0,0,0,us_state,3,,SR-5,SR-5,Rural,14,afternoon (noon-5:59 p.m.),Friday,False,2,34.82268056,-84.360322220
+2021,GA,131004,LEE (177),2,False,1,67,0,2,0,0,0,us_state,3,,SR-91,SR-91,Urban,8,morning (6-11:59 a.m.),Thursday,False,2,31.62400833,-84.127794440
+2021,GA,131010,BRYAN (29),1,True,1,66,0,1,0,0,0,interstate,1,I-95,I-95,I-95,Urban,12,afternoon (noon-5:59 p.m.),Wednesday,False,6,31.93558333,-81.333455560
+2021,GA,131023,FRANKLIN (119),1,False,1,63,0,1,0,0,0,other,4,,CR-35,CR-35  GRADY SCHOOL RD,Rural,10,morning (6-11:59 a.m.),Thursday,False,2,34.39094722,-83.118808330
+2021,GA,131028,FAYETTE (113),1,False,1,61,1,0,0,0,0,us_state,3,,SR-92,SR-92,Urban,4,overnight (midnight-5:59 a.m.),Thursday,False,2,33.52373056,-84.503511110
+2021,GA,131032,HALL (139),1,False,2,63 67,1,0,0,0,0,interstate,1,I-985,I-985,I-985,Urban,19,evening (6-11:59 p.m.),Wednesday,False,2,34.28170556,-83.807675000
+2021,GA,131034,MERIWETHER (199),1,False,1,67,0,1,0,0,0,us_state,3,,SR-54,SR-54,Urban,17,afternoon (noon-5:59 p.m.),Thursday,False,2,33.17517222,-84.809766670
+2021,GA,131036,FULTON (121),1,True,1,66,0,1,0,0,0,us_state,3,,SR-154,SR-154  CASCADEPALMETTO HWY,Urban,0,overnight (midnight-5:59 a.m.),Tuesday,False,3,33.64936389,-84.671272220
+2021,GA,131037,PICKENS (227),1,False,1,63,1,0,0,0,0,us_state,3,,SR-5,SR-5,Urban,6,morning (6-11:59 a.m.),Thursday,False,2,34.38130556,-84.393583330
+2021,GA,131064,BALDWIN (9),1,False,1,61,1,0,0,0,0,us_state,3,,SR-22,SR-22,Rural,10,morning (6-11:59 a.m.),Monday,False,2,33.08364444,-83.170422220
+2021,GA,131071,WASHINGTON (303),1,True,1,66,0,1,0,0,0,us_state,3,,SR-24,SR-24,Rural,16,afternoon (noon-5:59 p.m.),Wednesday,False,2,32.96340000,-82.955825000
+2021,GA,131084,BARTOW (15),1,True,1,66,0,1,0,0,0,us_state,2,,US-411,US-411/SR-20,Rural,22,evening (6-11:59 p.m.),Monday,False,2,34.21105278,-84.961205560
+2021,GA,131087,BIBB (21),2,True,1,66,0,2,0,0,0,other,4,,CR-581200,CR-581200/HOUSTON RD,Urban,0,overnight (midnight-5:59 a.m.),Thursday,True,3,32.77238333,-83.659155560
+2021,GA,131088,RICHMOND (245),2,True,1,66,0,2,0,0,0,us_state,3,,SR-4,SR-4,Urban,6,morning (6-11:59 a.m.),Friday,False,2,33.32977778,-82.170938890
+2021,GA,131093,BIBB (21),1,True,1,66,0,1,0,0,0,us_state,2,,,US-SR-11 RAINES AVE,Urban,9,morning (6-11:59 a.m.),Friday,False,2,32.80768333,-83.640330560
+2021,GA,131107,MUSCOGEE (215),1,False,1,61,0,1,0,0,0,other,4,,CR-2109,CR-2109  FOREST RD,Urban,15,afternoon (noon-5:59 p.m.),Sunday,False,3,32.48784444,-84.891344440
+2021,GA,131113,LIBERTY (179),1,True,1,66,0,1,0,0,0,interstate,1,I-95,I-95,I-95,Rural,6,morning (6-11:59 a.m.),Wednesday,False,2,31.79131389,-81.374938890
+2021,GA,131115,DEKALB (89),1,False,1,67,0,1,0,0,0,other,4,,CR-6954,CR-6954,Urban,17,afternoon (noon-5:59 p.m.),Wednesday,False,2,33.69646111,-84.101227780
+2021,GA,131136,POLK (233),1,True,2,66 67,0,1,0,0,0,us_state,2,,US-27,US-27/SR-1,Urban,15,afternoon (noon-5:59 p.m.),Friday,False,3,34.01435556,-85.220550000
+2021,GA,131140,MITCHELL (205),1,True,1,66,0,1,0,0,0,us_state,3,,SR-300,SR-300,Rural,10,morning (6-11:59 a.m.),Wednesday,False,2,31.31668889,-84.174363890
+2021,GA,131141,EARLY (99),1,True,1,66,0,1,0,0,0,us_state,3,,SR-38,SR-38,Rural,17,afternoon (noon-5:59 p.m.),Friday,False,2,31.09181944,-84.996286110
+2021,GA,131145,TAYLOR (269),1,True,1,66,1,0,0,0,0,us_state,2,,US-540,US-540/SR-96,Rural,5,overnight (midnight-5:59 a.m.),Thursday,False,1,32.54252222,-84.030180560
+2021,GA,131147,WORTH (321),1,False,1,62,1,0,0,0,0,other,4,,CR-037400,CR-037400,Urban,21,evening (6-11:59 p.m.),Saturday,False,1,31.53278056,-83.869533330
+2021,GA,131167,BUTTS (35),1,True,1,66,0,0,1,0,0,interstate,1,I-75,I-75,I-75,Urban,1,overnight (midnight-5:59 a.m.),Sunday,False,1,33.23259444,-84.079608330
+2021,GA,131169,FORSYTH (117),1,False,1,63,0,1,0,0,0,us_state,3,,SR-369,SR-369  MATT HWY,Urban,8,morning (6-11:59 a.m.),Wednesday,False,2,34.30628611,-84.215219440
+2021,GA,131170,BARTOW (15),1,True,1,66,0,1,0,0,0,us_state,3,,SR-20,SR-20,Rural,6,morning (6-11:59 a.m.),Thursday,False,2,34.21329722,-84.946013890
+2021,GA,131177,LEE (177),3,True,2,61 66,3,0,0,0,0,us_state,3,,SR-91,SR-91,Rural,8,morning (6-11:59 a.m.),Monday,False,2,31.72661111,-84.047130560
+2021,GA,131178,FULTON (121),1,True,1,66,0,1,0,0,0,us_state,3,,SR-8,SR-8/DONALD LEE HOLLOWELL PKWY,Urban,14,afternoon (noon-5:59 p.m.),Monday,False,2,33.77166389,-84.439102780
+2021,GA,131187,WHITFIELD (313),1,False,1,63,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Urban,14,afternoon (noon-5:59 p.m.),Monday,False,2,34.68935556,-85.002311110
+2021,GA,131189,FULTON (121),1,True,1,66,0,1,0,0,0,us_state,3,,SR-70,SR-70 CASCADE PALMETTO HWY,Urban,16,afternoon (noon-5:59 p.m.),Wednesday,False,2,33.66147778,-84.642722220
+2021,GA,131193,FLOYD (115),1,True,1,66,0,1,0,0,0,us_state,3,,SR-140,SR-140,Rural,12,afternoon (noon-5:59 p.m.),Wednesday,False,2,34.38073611,-85.130711110
+2021,GA,131199,FULTON (121),1,True,1,66,0,1,0,0,0,us_state,3,,SR-14,SR-14,Urban,8,morning (6-11:59 a.m.),Friday,False,2,33.61941389,-84.532725000
+2021,GA,131204,CHATHAM (51),1,True,1,66,0,1,0,0,0,us_state,2,,US-80,US-80,Urban,0,overnight (midnight-5:59 a.m.),Monday,False,2,32.11942778,-81.258586110
+2021,GA,131210,ELBERT (105),1,True,1,66,0,1,0,0,0,us_state,3,,SR-72,SR-72,Urban,18,evening (6-11:59 p.m.),Tuesday,False,2,34.12040000,-82.886344440
+2021,GA,131218,CHATTOOGA (55),1,False,1,61,0,0,1,0,0,us_state,3,,SR-1,SR-1,Urban,16,afternoon (noon-5:59 p.m.),Tuesday,True,1,34.41746667,-85.238005560
+2021,GA,131220,DEKALB (89),1,False,1,61,0,1,0,0,0,us_state,3,,SR-403,SR-403 ACCESS RD,Urban,15,afternoon (noon-5:59 p.m.),Wednesday,False,3,33.89983611,-84.245558330
+2021,GA,131226,FULTON (121),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Urban,4,overnight (midnight-5:59 a.m.),Sunday,False,2,33.76534444,-84.522911110
+2021,GA,131227,DEKALB (89),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Urban,8,morning (6-11:59 a.m.),Monday,False,2,33.71648611,-84.257927780
+2021,GA,131235,EARLY (99),1,True,2,66 67,1,0,0,0,0,us_state,3,,SR-62,SR-62,Rural,20,evening (6-11:59 p.m.),Saturday,False,2,31.28005833,-85.089619440
+2021,GA,131261,FULTON (121),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Urban,0,overnight (midnight-5:59 a.m.),Wednesday,False,2,33.74346389,-84.360222220
+2021,GA,131290,JACKSON (157),1,True,2,62 66,0,1,0,0,0,interstate,1,I-85,I-85,I-85,Rural,11,morning (6-11:59 a.m.),Wednesday,True,3,34.19579722,-83.575783330
+2021,GA,131292,BUTTS (35),1,True,2,66 66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Urban,3,overnight (midnight-5:59 a.m.),Monday,False,4,33.26838611,-84.100197220
+2021,GA,131294,CLAYTON (63),1,False,1,79,0,0,1,0,0,other,4,,CR-38,CR-38  MADDOX RD,Urban,6,morning (6-11:59 a.m.),Monday,False,1,33.57650000,-84.312636110
+2021,GA,131311,BARROW (13),1,True,1,66,0,1,0,0,0,us_state,3,,SR-8,SR-8,Urban,3,overnight (midnight-5:59 a.m.),Monday,False,2,33.99466389,-83.733538890
+2021,GA,131313,BARTOW (15),1,False,1,67,0,1,0,0,0,us_state,3,,SR-113,SR-113,Rural,14,afternoon (noon-5:59 p.m.),Saturday,False,2,34.10150833,-84.926677780
+2021,GA,131320,TWIGGS (289),1,False,1,62,0,1,0,0,0,us_state,3,,SR-96,SR-96,Rural,12,afternoon (noon-5:59 p.m.),Monday,False,2,32.63771667,-83.369111110
+2021,GA,131321,STEPHENS (257),1,False,1,67,0,1,0,0,0,us_state,3,,SR-17,SR-17,Urban,13,afternoon (noon-5:59 p.m.),Monday,True,3,34.54412778,-83.284969440
+2021,GA,131329,FULTON (121),1,False,1,63,0,1,0,0,0,other,4,,CR-902800,CR-902800,Urban,13,afternoon (noon-5:59 p.m.),Monday,False,2,33.65133333,-84.666900000
+2021,GA,131331,EFFINGHAM (103),1,True,1,66,0,1,0,0,0,us_state,3,,SR-21,SR-21,Urban,7,morning (6-11:59 a.m.),Thursday,False,2,32.24848611,-81.210250000
+2021,GA,131337,APPLING (1),1,True,1,66,0,1,0,0,0,us_state,3,,SR-144,SR-144,Rural,20,evening (6-11:59 p.m.),Wednesday,False,3,31.78840278,-82.311963890
+2021,GA,131347,DEKALB (89),1,False,1,63,0,1,0,0,0,other,4,,CR-085100,CR-085100/NORTHERN AVE,Urban,15,afternoon (noon-5:59 p.m.),Monday,False,3,33.78083611,-84.245416670
+2021,GA,131357,HALL (139),1,True,1,66,0,1,0,0,0,us_state,3,,SR-53,SR-53,Urban,0,overnight (midnight-5:59 a.m.),Thursday,False,2,34.27555278,-83.822386110
+2021,GA,131359,SPALDING (255),1,False,1,63,0,1,0,0,0,us_state,3,,SR-7,SR-7,Urban,7,morning (6-11:59 a.m.),Thursday,False,2,33.18964722,-84.278072220
+2021,GA,131368,GLYNN (127),1,False,1,63,0,1,0,0,0,interstate,1,I-95,I-95,I-95,Urban,5,overnight (midnight-5:59 a.m.),Thursday,False,3,31.26885833,-81.492158330
+2021,GA,131400,COLUMBIA (73),2,True,1,66,0,2,0,0,0,interstate,1,I-20,I-20,I-20,Rural,15,afternoon (noon-5:59 p.m.),Tuesday,True,2,33.50602500,-82.394391670
+2021,GA,131401,OGLETHORPE (221),1,False,1,62,1,0,0,0,0,us_state,3,,SR-10,SR-10,Rural,7,morning (6-11:59 a.m.),Thursday,False,1,33.84340000,-83.068694440
+2021,GA,131423,ROCKDALE (247),1,True,1,66,0,1,0,0,0,other,4,,CR-007300,CR-007300/INDUSTRIAL BLVD NW,Urban,6,morning (6-11:59 a.m.),Wednesday,False,4,33.67549444,-84.047025000
+2021,GA,131429,WARE (299),1,True,1,66,0,1,0,0,0,us_state,3,,SR-122,SR-122 CARSWELL AVE,Rural,15,afternoon (noon-5:59 p.m.),Friday,False,2,31.18529167,-82.595491670
+2021,GA,131438,CHATTOOGA (55),1,True,1,66,0,1,0,0,0,us_state,3,,SR-1,SR-1,Rural,15,afternoon (noon-5:59 p.m.),Monday,False,2,34.44173611,-85.247991670
+2021,GA,131447,DECATUR (87),1,True,2,61 66,0,1,0,0,0,us_state,3,,SR-97,SR-97,Rural,9,morning (6-11:59 a.m.),Wednesday,False,3,30.81558611,-84.615783330
+2021,GA,131448,DOUGLAS (97),1,False,1,67,0,1,0,0,0,us_state,3,,SR-166,SR-166,Rural,16,afternoon (noon-5:59 p.m.),Wednesday,False,2,33.61988889,-84.870583330
+2021,GA,131468,MADISON (195),1,False,1,67,0,1,0,0,0,us_state,3,,SR-8,SR-8,Urban,13,afternoon (noon-5:59 p.m.),Tuesday,False,2,34.03189444,-83.315605560
+2021,GA,131474,CHATHAM (51),4,True,1,66,0,4,0,0,0,us_state,3,,SR-204,SR-204 FORT ARGYLE RD,Rural,17,afternoon (noon-5:59 p.m.),Wednesday,False,2,32.08054444,-81.371222220
+2021,GA,131477,BARROW (13),1,True,1,66,0,1,0,0,0,us_state,3,,SR-316,SR-316,Urban,7,morning (6-11:59 a.m.),Thursday,False,2,33.95068889,-83.590341670
+2021,GA,131489,RICHMOND (245),1,True,1,66,0,1,0,0,0,us_state,2,,US-25,US-25 GA121 PEACH ORCHARD RD,Rural,12,afternoon (noon-5:59 p.m.),Friday,False,2,33.35425833,-82.047458330
+2021,GA,131491,GWINNETT (135),1,False,1,61,0,0,1,0,0,us_state,3,,SR-316,SR-316 EAST,Urban,10,morning (6-11:59 a.m.),Saturday,False,3,33.96306667,-84.084702780
+2021,GA,131500,DEKALB (89),1,True,1,66,0,0,1,0,0,interstate,1,I-285,I-285,I-285,Urban,6,morning (6-11:59 a.m.),Sunday,False,1,33.84599444,-84.247138890
+2021,GA,131531,DEKALB (89),1,False,1,62,0,1,0,0,0,us_state,2,,US-29,US-29 LAWRENCEVILLE HWY,Urban,22,evening (6-11:59 p.m.),Sunday,False,2,33.84952222,-84.223155560
+2021,GA,131533,COLQUITT (71),2,False,1,63,0,2,0,0,0,other,4,,CR-049100,CR-049100/PERRY RD,Rural,9,morning (6-11:59 a.m.),Wednesday,False,2,31.06382500,-83.660413890
+2021,GA,131550,OGLETHORPE (221),1,True,1,66,0,1,0,0,0,us_state,2,,US-78,US-78 GA10,Rural,10,morning (6-11:59 a.m.),Friday,False,2,33.89430833,-83.232900000
+2021,GA,131562,LAURENS (175),1,True,3,66 66 66,1,0,0,0,0,interstate,1,I-16,I-16,I-16,Urban,12,afternoon (noon-5:59 p.m.),Tuesday,True,3,32.52900833,-83.110233330
+2021,GA,131567,CARROLL (45),1,False,1,67,1,0,0,0,0,us_state,3,,SR-5,SR-5,Rural,13,afternoon (noon-5:59 p.m.),Friday,False,1,33.46586389,-85.142133330
+2021,GA,131569,CLAYTON (63),1,False,1,67,0,1,0,0,0,us_state,3,,SR-3,SR-3,Urban,18,evening (6-11:59 p.m.),Thursday,False,3,33.50561667,-84.353247220
+2021,GA,131576,GWINNETT (135),1,True,1,66,0,0,1,0,0,interstate,1,I-85,I-85,I-85 SR403,Rural,23,evening (6-11:59 p.m.),Thursday,False,1,33.91172778,-84.208811110
+2021,GA,131605,CHATTAHOOCHEE (53),1,True,1,66,0,1,0,0,0,us_state,2,,US-27,US-27,Rural,18,evening (6-11:59 p.m.),Thursday,False,2,32.30022500,-84.780361110
+2021,GA,131606,DEKALB (89),1,False,1,62,1,0,0,0,0,interstate,1,I-85,I-85,I-85 S,Urban,2,overnight (midnight-5:59 a.m.),Thursday,False,1,33.82960000,-84.342077780
+2021,GA,131609,JENKINS (165),2,True,1,66,0,2,0,0,0,us_state,3,,SR-17,SR-17,Urban,12,afternoon (noon-5:59 p.m.),Wednesday,False,2,32.82642500,-82.128763890
+2021,GA,131610,ROCKDALE (247),2,True,2,62 66,2,0,0,0,0,other,4,,CR-007500,CR-007500/OLD COVINGTON HWY SW,Rural,10,morning (6-11:59 a.m.),Wednesday,False,2,33.67431111,-84.048208330
+2021,GA,131611,DEKALB (89),1,True,1,66,0,1,0,0,0,interstate,1,I-285,I-285,I-285 RAMP,Rural,17,afternoon (noon-5:59 p.m.),Tuesday,False,4,33.89532500,-84.263027780
+2021,GA,131621,BURKE (33),1,True,1,66,0,1,0,0,0,us_state,2,,US-25,US-25 SR-121,Rural,14,afternoon (noon-5:59 p.m.),Monday,False,2,33.03591944,-81.987972220
+2021,GA,131642,FULTON (121),1,True,1,66,0,1,0,0,0,interstate,1,I-85,I-85,I-85,Rural,15,afternoon (noon-5:59 p.m.),Thursday,False,5,33.55259444,-84.562261110
+2021,GA,131644,FRANKLIN (119),1,True,2,66 67,0,0,1,0,0,interstate,1,I-85,I-85,I-85,Rural,5,overnight (midnight-5:59 a.m.),Wednesday,False,2,34.42465278,-83.160180560
+2021,GA,131646,JASPER (159),1,True,1,66,1,0,0,0,0,us_state,3,,SR-83,SR-83,Rural,10,morning (6-11:59 a.m.),Tuesday,True,1,33.17139167,-83.810697220
+2021,GA,131665,COBB (67),1,False,1,63,0,1,0,0,0,us_state,3,,SR-210,SR-210 DALLAS HWY,Rural,7,morning (6-11:59 a.m.),Friday,False,2,33.94480556,-84.686780560
+2021,GA,131668,CHATHAM (51),1,True,1,66,0,1,0,0,0,interstate,1,I-16,I-16,I-16,Urban,3,overnight (midnight-5:59 a.m.),Thursday,True,3,32.06884722,-81.167272220
+2021,GA,131670,COLQUITT (71),1,False,1,67,0,1,0,0,0,us_state,3,,SR-111,SR-111,Urban,14,afternoon (noon-5:59 p.m.),Wednesday,False,2,31.18238056,-83.818116670
+2021,GA,131672,ATKINSON (3),1,True,1,66,0,1,0,0,0,us_state,3,,SR-520,SR-520,Rural,18,evening (6-11:59 p.m.),Tuesday,False,2,31.27660556,-82.734197220
+2021,GA,131675,LOWNDES (185),1,True,1,66,0,1,0,0,0,us_state,2,,US-84,US-84,Urban,10,morning (6-11:59 a.m.),Tuesday,False,2,30.84969167,-83.229013890
+2021,GA,131683,JACKSON (157),1,True,1,66,0,1,0,0,0,interstate,1,I-85,I-85,I-85,Rural,13,afternoon (noon-5:59 p.m.),Saturday,True,2,34.20775278,-83.547166670
+2021,GA,131696,GWINNETT (135),1,True,1,66,0,0,1,0,0,us_state,3,,SR-20,SR-20 GRAYSON HWY,Urban,4,overnight (midnight-5:59 a.m.),Friday,False,1,33.91022222,-83.968652780
+2021,GA,131698,MADISON (195),1,False,1,63,0,1,0,0,0,us_state,3,,SR-98,SR-98,Rural,6,morning (6-11:59 a.m.),Thursday,False,2,34.15845000,-83.260238890
+2021,GA,131715,BALDWIN (9),1,False,1,78,0,1,0,0,0,us_state,3,,SR-441,SR-441 N COLUMBIA ST,Urban,22,evening (6-11:59 p.m.),Sunday,False,2,33.17868333,-83.286927780
+2021,GA,131719,MITCHELL (205),1,True,1,66,0,1,0,0,0,us_state,2,,US-19,US-19 SR-300,Urban,5,overnight (midnight-5:59 a.m.),Tuesday,False,2,31.28104444,-84.187941670
+2021,GA,131737,GWINNETT (135),1,False,1,62,0,1,0,0,0,interstate,1,I-86,I-86,I-86,Urban,14,afternoon (noon-5:59 p.m.),Wednesday,False,2,34.08506111,-83.858769440
+2021,GA,131746,CLAY (61),2,False,1,62,0,2,0,0,0,us_state,3,,SR-1,SR-1,Rural,18,evening (6-11:59 p.m.),Wednesday,False,2,31.60045000,-84.844313890
+2021,GA,131748,BIBB (21),1,True,1,66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Urban,17,afternoon (noon-5:59 p.m.),Saturday,False,2,32.72214167,-83.727586110
+2022,GA,130002,LIBERTY (179),1,True,1,66,1,0,0,0,0,interstate,1,I-95,I-95,I-95,Rural,14,afternoon (noon-5:59 p.m.),Tuesday,False,2,31.70648611,-81.390269440
+2022,GA,130013,CLAY (61),1,True,1,66,0,1,0,0,0,us_state,3,,SR-37,SR-37,Rural,17,afternoon (noon-5:59 p.m.),Friday,False,2,31.60046667,-84.844305560
+2022,GA,130018,JACKSON (157),2,True,1,66,0,2,0,0,0,us_state,3,,SR-82,SR-82,Urban,20,evening (6-11:59 p.m.),Friday,False,2,34.18499722,-83.589858330
+2022,GA,130021,EFFINGHAM (103),1,True,1,66,0,0,1,0,0,us_state,3,,SR-21,SR-21,Rural,11,morning (6-11:59 a.m.),Thursday,False,2,32.35052778,-81.289780560
+2022,GA,130027,WHITFIELD (313),1,True,1,66,0,1,0,0,0,us_state,3,,SR-71,SR-71,Urban,13,afternoon (noon-5:59 p.m.),Wednesday,False,2,34.82347222,-84.945186110
+2022,GA,130030,TROUP (285),1,False,1,62,0,1,0,0,0,other,4,,CR-096900,CR-096900/PEGASUS PKWY W,Urban,16,afternoon (noon-5:59 p.m.),Tuesday,False,2,33.02741944,-85.085730560
+2022,GA,130037,FULTON (121),1,False,1,62,0,0,1,0,0,interstate,1,I-75,I-75,I-75,Urban,5,overnight (midnight-5:59 a.m.),Friday,False,2,33.77472500,-84.390136110
+2022,GA,130053,BALDWIN (9),1,False,1,62,0,1,0,0,0,us_state,3,,SR-24,SR-24,Urban,6,morning (6-11:59 a.m.),Thursday,False,2,33.14908333,-83.273447220
+2022,GA,130055,FRANKLIN (119),1,True,1,66,0,1,0,0,0,us_state,3,,SR-51,SR-51,Rural,7,morning (6-11:59 a.m.),Tuesday,False,2,34.36681667,-83.356133330
+2022,GA,130059,SPALDING (255),1,True,2,61 66,0,1,0,0,0,us_state,3,,SR-362,SR-362,Rural,6,morning (6-11:59 a.m.),Friday,False,3,33.19726111,-84.343675000
+2022,GA,130061,COWETA (77),1,False,2,63 67,1,0,0,0,0,us_state,3,,SR-16,SR-16,Rural,13,afternoon (noon-5:59 p.m.),Wednesday,False,2,33.27368889,-84.530372220
+2022,GA,130063,RICHMOND (245),1,True,1,66,0,1,0,0,0,interstate,1,I-520,I-520,I-520,Urban,17,afternoon (noon-5:59 p.m.),Tuesday,False,2,33.40470556,-81.990780560
+2022,GA,130069,GORDON (129),1,False,1,63,0,0,0,1,0,us_state,3,,SR-53,SR-53,Rural,19,evening (6-11:59 p.m.),Saturday,False,1,34.40798056,-85.012180560
+2022,GA,130074,HARALSON (143),1,False,1,61,1,0,0,0,0,other,4,,CR-034200,CR-034200/ROCKMART RD,Rural,10,morning (6-11:59 a.m.),Friday,False,1,33.89036389,-85.090380560
+2022,GA,130075,TWIGGS (289),1,True,1,66,0,1,0,0,0,other,4,,CR-019800,CR-019800/FOUNTAIN RD,Rural,9,morning (6-11:59 a.m.),Friday,False,2,32.78228333,-83.346494440
+2022,GA,130077,BUTTS (35),1,False,1,61,0,1,0,0,0,us_state,3,,SR-42,SR-42,Rural,16,afternoon (noon-5:59 p.m.),Thursday,False,2,33.32540278,-84.001936110
+2022,GA,130092,TATTNALL (267),1,True,1,66,0,1,0,0,0,us_state,3,,SR-152,SR-152,Rural,14,afternoon (noon-5:59 p.m.),Tuesday,False,2,32.28016111,-82.178325000
+2022,GA,130093,LOWNDES (185),1,True,1,66,0,1,0,0,0,us_state,3,,SR-38,SR-38,Rural,11,morning (6-11:59 a.m.),Tuesday,False,2,30.87788056,-83.156069440
+2022,GA,130094,WILKES (317),1,True,1,66,1,0,0,0,0,us_state,3,,SR-17,SR-17,Rural,5,overnight (midnight-5:59 a.m.),Tuesday,False,1,33.78783333,-82.756094440
+2022,GA,130114,FULTON (121),1,True,1,66,0,1,0,0,0,us_state,3,,SR-70,SR-70,Rural,10,morning (6-11:59 a.m.),Saturday,False,2,33.69675556,-84.607033330
+2022,GA,130118,PICKENS (227),1,False,1,61,0,0,1,0,0,us_state,3,,SR-5,SR-5,Urban,0,overnight (midnight-5:59 a.m.),Monday,False,1,34.44511111,-84.444147220
+2022,GA,130124,CLAYTON (63),1,False,1,62,0,0,1,0,0,us_state,3,,SR-85,SR-85,Urban,5,overnight (midnight-5:59 a.m.),Friday,False,1,33.59278333,-84.408319440
+2022,GA,130126,WARREN (301),1,False,1,62,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Rural,7,morning (6-11:59 a.m.),Thursday,False,2,33.50390556,-82.758588890
+2022,GA,130128,FULTON (121),1,True,1,66,0,1,0,0,0,us_state,3,,SR-14,SR-14,Urban,9,morning (6-11:59 a.m.),Wednesday,False,2,33.61904722,-84.528952780
+2022,GA,130130,BARTOW (15),1,True,2,66 66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Urban,4,overnight (midnight-5:59 a.m.),Wednesday,False,3,34.17947778,-84.760727780
+2022,GA,130133,DOUGHERTY (95),1,False,1,61,0,1,0,0,0,us_state,3,,SR-3,SR-3,Urban,20,evening (6-11:59 p.m.),Monday,False,2,31.50780278,-84.115647220
+2022,GA,130148,DOUGLAS (97),2,True,1,66,0,2,0,0,0,interstate,1,I-20,I-20,I-20 WB,Urban,22,evening (6-11:59 p.m.),Friday,False,2,33.75385833,-84.707294440
+2022,GA,130149,CHEROKEE (57),1,False,2,61 62,1,0,0,0,0,us_state,3,,SR-20,SR-20,Rural,11,morning (6-11:59 a.m.),Wednesday,False,2,34.23518056,-84.264133330
+2022,GA,130155,FULTON (121),1,False,1,63,0,0,1,0,0,other,6,,,CS-139403/CAMPBELLTON RD,Urban,10,morning (6-11:59 a.m.),Monday,False,1,33.70481389,-84.462350000
+2022,GA,130175,BIBB (21),1,True,1,66,1,0,0,0,0,interstate,1,I-16,I-16,I-16,Urban,7,morning (6-11:59 a.m.),Monday,False,1,32.81568333,-83.582141670
+2022,GA,130178,DECATUR (87),1,False,1,61,0,1,0,0,0,us_state,3,,SR-262,SR-262,Rural,9,morning (6-11:59 a.m.),Tuesday,False,2,30.95165000,-84.414869440
+2022,GA,130187,COBB (67),1,True,2,61 66,0,0,1,0,0,interstate,1,I-285,I-285,I-285,Urban,21,evening (6-11:59 p.m.),Monday,False,4,33.83293889,-84.486200000
+2022,GA,130191,BARROW (13),1,False,1,61,0,1,0,0,0,us_state,3,,SR-316,SR-316,Urban,8,morning (6-11:59 a.m.),Friday,False,3,33.95050278,-83.590405560
+2022,GA,130194,FULTON (121),1,True,1,66,0,0,1,0,0,interstate,1,I-285,I-285,I-285,Urban,2,overnight (midnight-5:59 a.m.),Sunday,False,1,33.63655278,-84.492388890
+2022,GA,130201,TELFAIR (271),1,False,1,60,0,1,0,0,0,us_state,3,,SR-27,SR-27,Urban,11,morning (6-11:59 a.m.),Thursday,False,2,32.07915278,-82.921458330
+2022,GA,130203,COBB (67),1,True,1,66,0,0,1,0,0,interstate,1,I-75,I-75,I-75,Urban,2,overnight (midnight-5:59 a.m.),Thursday,False,1,33.92016944,-84.484230560
+2022,GA,130206,DEKALB (89),1,True,1,66,0,0,1,0,0,other,6,,,MORELAND AVE,Urban,19,evening (6-11:59 p.m.),Wednesday,False,1,33.70939722,-84.348933330
+2022,GA,130213,CHARLTON (49),1,True,1,66,0,1,0,0,0,us_state,2,,US-23,US-23/ GA-4,Urban,11,morning (6-11:59 a.m.),Tuesday,False,2,30.81082778,-81.997561110
+2022,GA,130227,WORTH (321),1,True,2,66 66,1,0,0,0,0,us_state,3,,SR-32,SR-32,Rural,10,morning (6-11:59 a.m.),Wednesday,False,2,31.68373333,-83.807986110
+2022,GA,130228,COBB (67),2,True,1,66,0,1,1,0,0,interstate,1,I-75,I-75,I-75,Urban,20,evening (6-11:59 p.m.),Sunday,False,2,33.91040833,-84.478475000
+2022,GA,130246,WHEELER (309),3,True,1,66,1,2,0,0,0,us_state,3,,SR-31,SR-31,Rural,12,afternoon (noon-5:59 p.m.),Friday,False,2,32.10017500,-82.886213890
+2022,GA,130248,DEKALB (89),1,True,1,66,0,0,1,0,0,interstate,1,I-285,I-285,I-285 RAMP,Urban,10,morning (6-11:59 a.m.),Thursday,False,1,33.82855278,-84.251825000
+2022,GA,130265,FULTON (121),1,True,1,66,0,1,0,0,0,other,4,,CR-150521,CR-150521,Urban,17,afternoon (noon-5:59 p.m.),Thursday,False,2,33.56403889,-84.526352780
+2022,GA,130266,HENRY (151),1,False,1,62,1,0,0,0,0,other,4,,CR-065900,CR-065900 HUDSON BRIDGE RD,Urban,21,evening (6-11:59 p.m.),Wednesday,False,1,33.50476111,-84.233386110
+2022,GA,130282,PAULDING (223),1,False,1,63,0,1,0,0,0,us_state,3,,SR-120,SR-120,Rural,18,evening (6-11:59 p.m.),Friday,False,2,33.84836389,-84.961452780
+2022,GA,130283,FULTON (121),3,True,1,66,0,3,0,0,0,interstate,1,I-85,I-85,I-85,Urban,3,overnight (midnight-5:59 a.m.),Friday,False,2,33.80617222,-84.381241670
+2022,GA,130286,WILKINSON (319),2,True,1,66,0,2,0,0,0,us_state,3,,SR-540,SR-540,Rural,13,afternoon (noon-5:59 p.m.),Thursday,False,2,32.94840000,-83.256191670
+2022,GA,130294,BALDWIN (9),1,False,1,61,0,1,0,0,0,us_state,3,,SR-49,SR-49,Rural,15,afternoon (noon-5:59 p.m.),Saturday,False,2,33.02635556,-83.328488890
+2022,GA,130302,BROOKS (27),1,True,1,66,0,0,1,0,0,us_state,3,,SR-76,SR-76,Rural,4,overnight (midnight-5:59 a.m.),Wednesday,False,1,30.68321667,-83.620444440
+2022,GA,130303,TOOMBS (279),2,True,1,66,0,2,0,0,0,us_state,3,,SR-4,SR-4,Rural,16,afternoon (noon-5:59 p.m.),Tuesday,False,2,32.28048333,-82.304119440
+2022,GA,130306,GWINNETT (135),1,False,1,67,0,0,1,0,0,us_state,3,,SR-10,SR-10,Urban,19,evening (6-11:59 p.m.),Monday,False,1,33.83177778,-84.089430560
+2022,GA,130307,GWINNETT (135),1,False,1,61,0,0,1,0,0,interstate,1,I-85,,I-85NB,Urban,20,evening (6-11:59 p.m.),Sunday,False,2,33.90964722,-84.223611110
+2022,GA,130314,IRWIN (155),1,True,1,66,0,1,0,0,0,other,6,,,OLD WHITLEY RD,Rural,7,morning (6-11:59 a.m.),Friday,False,2,31.64326111,-83.270061110
+2022,GA,130325,HENRY (151),1,False,1,61,0,0,1,0,0,other,4,,CR-065900,CR-065900,Urban,10,morning (6-11:59 a.m.),Friday,False,1,33.50466389,-84.236275000
+2022,GA,130331,TATTNALL (267),2,True,1,66,0,2,0,0,0,us_state,3,,SR-005700,SR-005700,Rural,16,afternoon (noon-5:59 p.m.),Monday,False,3,31.89725833,-81.938766670
+2022,GA,130333,MURRAY (213),1,True,1,66,1,0,0,0,0,us_state,3,,SR-225,SR-225,Rural,11,morning (6-11:59 a.m.),Tuesday,False,1,34.96677500,-84.773488890
+2022,GA,130335,HALL (139),1,False,1,63,0,1,0,0,0,us_state,3,,SR-60,SR-60/ THOMPSON BRIDGE RD,Urban,16,afternoon (noon-5:59 p.m.),Tuesday,False,2,34.31473333,-83.829241670
+2022,GA,130341,COOK (75),3,True,1,66,2,1,0,0,0,interstate,1,I-75,I-75,I-75,Rural,22,evening (6-11:59 p.m.),Saturday,False,2,31.32183611,-83.480827780
+2022,GA,130355,LAURENS (175),1,True,1,66,0,1,0,0,0,us_state,3,,SR-46,SR-46,Rural,12,afternoon (noon-5:59 p.m.),Friday,False,2,32.23253889,-82.972169440
+2022,GA,130357,COWETA (77),1,True,1,66,0,1,0,0,0,us_state,3,,SR-14,SR-14,Urban,19,evening (6-11:59 p.m.),Thursday,False,2,33.32626111,-84.779163890
+2022,GA,130360,CHATHAM (51),1,True,1,66,0,0,1,0,0,interstate,1,I-95,I-95,I-95,Urban,7,morning (6-11:59 a.m.),Thursday,False,1,32.18625833,-81.199205560
+2022,GA,130362,GLYNN (127),1,True,1,66,0,0,1,0,0,interstate,1,I-95,I-95,I-95,Urban,4,overnight (midnight-5:59 a.m.),Wednesday,False,1,31.23239722,-81.511775000
+2022,GA,130363,BARROW (13),1,True,1,66,0,1,0,0,0,us_state,2,,US-29 BUS,US-29 BUS  HOG MOUNTAIN RD,Urban,9,morning (6-11:59 a.m.),Monday,False,2,33.95943333,-83.663905560
+2022,GA,130375,LAURENS (175),1,True,1,66,0,1,0,0,0,interstate,1,I-16,I-16,I-16,Rural,11,morning (6-11:59 a.m.),Friday,False,2,32.56821944,-83.217077780
+2022,GA,130393,COOK (75),1,True,2,61 66,1,0,0,0,0,interstate,1,I-75,I-75,I-75 NB,Rural,13,afternoon (noon-5:59 p.m.),Saturday,False,2,31.03900000,-83.397800000
+2022,GA,130399,COBB (67),1,True,1,66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Urban,6,morning (6-11:59 a.m.),Thursday,False,2,33.92201111,-84.484825000
+2022,GA,130400,DEKALB (89),1,True,1,66,0,1,0,0,0,interstate,1,I-85,I-85,I-85,Urban,21,evening (6-11:59 p.m.),Thursday,False,2,33.83559722,-84.328144440
+2022,GA,130414,WHITFIELD (313),1,True,1,66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Rural,23,evening (6-11:59 p.m.),Friday,False,2,34.76444444,-85.001955560
+2022,GA,130415,HANCOCK (141),2,True,1,66,0,2,0,0,0,us_state,3,,SR-15,SR-15,Rural,20,evening (6-11:59 p.m.),Sunday,False,2,33.28673056,-82.975133330
+2022,GA,130416,OCONEE (219),1,False,1,62,1,0,0,0,0,us_state,3,,SR-53,SR-53,Rural,5,overnight (midnight-5:59 a.m.),Saturday,False,1,33.86796667,-83.489505560
+2022,GA,130422,BLECKLEY (23),1,False,1,78,0,1,0,0,0,us_state,3,,SR-26,SR-26,Rural,11,morning (6-11:59 a.m.),Wednesday,False,2,32.42146944,-83.313686110
+2022,GA,130423,OCONEE (219),1,False,1,61,0,1,0,0,0,us_state,3,,SR-53,SR-53,Rural,7,morning (6-11:59 a.m.),Wednesday,False,2,33.87066111,-83.505350000
+2022,GA,130425,WARE (299),1,True,1,66,1,0,0,0,0,us_state,3,,SR-000400,SR-000400,Urban,5,overnight (midnight-5:59 a.m.),Wednesday,False,1,31.20938333,-82.401719440
+2022,GA,130461,TROUP (285),1,True,2,66 66,1,0,0,0,0,interstate,1,I-85,I-85,I-85,Rural,1,overnight (midnight-5:59 a.m.),Monday,False,3,32.94158333,-85.101613890
+2022,GA,130494,BIBB (21),1,True,1,66,1,0,0,0,0,interstate,1,I-16,I-16,I-16,Rural,5,overnight (midnight-5:59 a.m.),Friday,False,1,32.76675833,-83.556716670
+2022,GA,130498,DEKALB (89),1,True,1,66,1,0,0,0,0,interstate,1,I-285,I-285,I-285,Urban,2,overnight (midnight-5:59 a.m.),Saturday,False,2,33.81222778,-84.250927780
+2022,GA,130513,HALL (139),1,False,1,61,0,1,0,0,0,us_state,3,,SR-369,SR-369 BROWNS BRIDGE RD,Urban,17,afternoon (noon-5:59 p.m.),Wednesday,False,2,34.28091111,-83.884850000
+2022,GA,130522,CRISP (81),1,True,1,66,0,1,0,0,0,us_state,3,,SR-300,SR-300,Rural,13,afternoon (noon-5:59 p.m.),Thursday,False,2,31.84971389,-83.915705560
+2022,GA,130523,MITCHELL (205),1,False,1,62,0,1,0,0,0,us_state,3,,SR-93,SR-93,Rural,6,morning (6-11:59 a.m.),Thursday,False,2,31.37302778,-84.039608330
+2022,GA,130531,WARREN (301),1,True,1,66,1,0,0,0,0,us_state,3,,SR-12,SR-12,Rural,8,morning (6-11:59 a.m.),Friday,False,1,33.49340278,-82.800211110
+2022,GA,130534,FULTON (121),2,False,1,62,0,2,0,0,0,interstate,1,I-75,I-75,I-75,Urban,19,evening (6-11:59 p.m.),Friday,False,2,33.81256389,-84.420055560
+2022,GA,130552,DEKALB (89),1,True,2,66 67,0,1,0,0,0,interstate,1,I-285,I-285,I-285 EB,Urban,20,evening (6-11:59 p.m.),Wednesday,False,6,33.67685000,-84.319477780
+2022,GA,130554,CATOOSA (47),1,True,2,66 67,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Urban,11,morning (6-11:59 a.m.),Tuesday,False,3,34.93898889,-85.162219440
+2022,GA,130559,CHATHAM (51),1,False,1,61,0,0,1,0,0,other,4,,CR-081400,CR-081400,Urban,10,morning (6-11:59 a.m.),Wednesday,False,2,31.99089722,-81.232155560
+2022,GA,130572,CLAYTON (63),1,True,1,66,0,1,0,0,0,us_state,3,,SR-54,SR-54,Urban,12,afternoon (noon-5:59 p.m.),Monday,False,2,33.64070278,-84.354400000
+2022,GA,130575,MUSCOGEE (215),1,False,1,63,0,1,0,0,0,us_state,2,,US-80,US-80 MACON RD,Unknown,14,afternoon (noon-5:59 p.m.),Friday,False,2,32.55441944,-84.747161110
+2022,GA,130576,EFFINGHAM (103),1,True,1,66,0,1,0,0,0,us_state,3,,SR-26,SR-26,Rural,11,morning (6-11:59 a.m.),Monday,False,2,32.16821944,-81.385286110
+2022,GA,130578,CATOOSA (47),1,False,1,64,0,1,0,0,0,us_state,3,,SR-3,SR-3,Rural,8,morning (6-11:59 a.m.),Tuesday,False,3,34.89511667,-85.075558330
+2022,GA,130589,DEKALB (89),1,True,1,66,0,1,0,0,0,interstate,1,I-285,I-285,I-285,Urban,7,morning (6-11:59 a.m.),Sunday,False,2,33.80170000,-84.249766670
+2022,GA,130602,FULTON (121),1,False,1,63,0,1,0,0,0,us_state,3,,SR-14,SR-14,Urban,2,overnight (midnight-5:59 a.m.),Monday,False,2,33.54363889,-84.613413890
+2022,GA,130606,CHATHAM (51),1,False,1,63,1,0,0,0,0,interstate,1,I-95,I-95,I-95,Urban,0,overnight (midnight-5:59 a.m.),Sunday,False,1,32.04270833,-81.262008330
+2022,GA,130609,COWETA (77),1,False,2,62 62,0,1,0,0,0,other,4,,CR-559,CR-559,Rural,15,afternoon (noon-5:59 p.m.),Wednesday,False,3,33.22860278,-84.876794440
+2022,GA,130642,GREENE (133),1,False,1,61,0,0,1,0,0,us_state,3,,SR-15,SR-15,Rural,19,evening (6-11:59 p.m.),Friday,False,6,33.56577222,-83.150247220
+2022,GA,130661,BALDWIN (9),1,True,1,66,0,1,0,0,0,us_state,3,,SR-29,SR-29,Urban,14,afternoon (noon-5:59 p.m.),Saturday,False,2,33.07262778,-83.250855560
+2022,GA,130669,SPALDING (255),1,False,1,63,0,1,0,0,0,us_state,3,,SR-16,SR-16,Urban,7,morning (6-11:59 a.m.),Thursday,False,2,33.24091389,-84.357013890
+2022,GA,130671,CARROLL (45),1,True,1,66,0,0,1,0,0,us_state,3,,SR-113,SR-113,Rural,14,afternoon (noon-5:59 p.m.),Friday,False,1,33.70818333,-85.021625000
+2022,GA,130684,LOWNDES (185),1,False,1,62,0,1,0,0,0,us_state,3,,SR-7,SR-7,Rural,12,afternoon (noon-5:59 p.m.),Friday,False,2,30.73388611,-83.220533330
+2022,GA,130700,MERIWETHER (199),1,False,1,67,0,1,0,0,0,us_state,3,,SR-41,SR-41,Rural,6,morning (6-11:59 a.m.),Saturday,False,2,33.12147500,-84.728086110
+2022,GA,130703,DOUGLAS (97),1,True,1,66,0,1,0,0,0,us_state,3,,SR-6,SR-6,Urban,6,morning (6-11:59 a.m.),Tuesday,False,2,33.80297222,-84.651333330
+2022,GA,130706,TERRELL (273),2,True,1,66,0,2,0,0,0,us_state,3,,SR-50,SR-50,Rural,10,morning (6-11:59 a.m.),Thursday,False,2,31.77051667,-84.556144440
+2022,GA,130717,HART (147),1,True,1,66,1,0,0,0,0,interstate,1,I-85,I-85,I-85,Rural,16,afternoon (noon-5:59 p.m.),Wednesday,False,1,34.47255556,-83.062652780
+2022,GA,130727,CHATHAM (51),1,True,1,66,0,1,0,0,0,other,6,,,MU-7 WHITE BLUFF RD,Urban,14,afternoon (noon-5:59 p.m.),Friday,False,2,32.02011111,-81.113758330
+2022,GA,130729,HENRY (151),1,False,1,67,0,0,1,0,0,interstate,1,I-75,I-75,I-75,Urban,1,overnight (midnight-5:59 a.m.),Saturday,False,2,33.36178056,-84.129150000
+2022,GA,130734,WORTH (321),1,True,1,66,0,1,0,0,0,other,4,,CR-041200,CR-041200,Rural,9,morning (6-11:59 a.m.),Wednesday,False,2,31.44779444,-83.744802780
+2022,GA,130749,CANDLER (43),1,False,1,61,0,1,0,0,0,us_state,3,,SR-46,SR-46,Rural,18,evening (6-11:59 p.m.),Saturday,False,2,32.39702222,-82.076497220
+2022,GA,130758,COBB (67),1,True,1,66,0,1,0,0,0,us_state,3,,SR-6,SR-6,Urban,19,evening (6-11:59 p.m.),Friday,False,2,33.81728333,-84.655769440
+2022,GA,130760,POLK (233),1,True,1,66,0,1,0,0,0,us_state,3,,SR-113,SR-113,Rural,1,overnight (midnight-5:59 a.m.),Sunday,False,2,33.97516944,-85.005447220
+2022,GA,130763,BARTOW (15),1,False,1,63,0,1,0,0,0,us_state,3,,SR-61,SR-61,Rural,15,afternoon (noon-5:59 p.m.),Tuesday,False,2,34.32735556,-84.717483330
+2022,GA,130772,TERRELL (273),1,False,1,63,1,0,0,0,0,other,6,,,CALLIS RD,Rural,10,morning (6-11:59 a.m.),Wednesday,False,1,31.74313333,-84.350475000
+2022,GA,130775,HENRY (151),1,True,2,61 66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Urban,4,overnight (midnight-5:59 a.m.),Thursday,False,3,33.50133611,-84.226158330
+2022,GA,130785,COLUMBIA (73),1,False,1,67,0,0,1,0,0,us_state,3,,SR-383,SR-383 JIMMY DYESS PKWY,Urban,9,morning (6-11:59 a.m.),Sunday,False,1,33.48114722,-82.130841670
+2022,GA,130791,DODGE (91),1,True,1,66,0,1,0,0,0,us_state,3,,SR-27,SR-27,Urban,17,afternoon (noon-5:59 p.m.),Thursday,False,2,32.18570000,-83.199638890
+2022,GA,130803,BARTOW (15),2,True,4,62 66 66 66,2,0,0,0,0,interstate,1,I-75,I-75,I-75,Urban,12,afternoon (noon-5:59 p.m.),Thursday,False,5,34.24059167,-84.765488890
+2022,GA,130805,DOUGHERTY (95),1,True,2,66 66,0,1,0,0,0,us_state,2,,US-82,US-82 LIBERTY EXPY,Urban,18,evening (6-11:59 p.m.),Thursday,False,3,31.61371667,-84.169052780
+2022,GA,130821,UPSON (293),1,False,1,63,0,1,0,0,0,us_state,3,,SR-3,SR-3,Urban,8,morning (6-11:59 a.m.),Tuesday,False,2,32.88299722,-84.326127780
+2022,GA,130822,STEWART (259),1,True,1,66,1,0,0,0,0,us_state,3,,SR-520,SR-520,Rural,16,afternoon (noon-5:59 p.m.),Tuesday,False,1,32.02776944,-84.672891670
+2022,GA,130827,BARTOW (15),1,True,1,66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Urban,6,morning (6-11:59 a.m.),Wednesday,False,3,34.27669444,-84.814291670
+2022,GA,130829,CLAYTON (63),1,True,1,66,0,0,1,0,0,interstate,1,I-675,I-675,I-675,Urban,22,evening (6-11:59 p.m.),Thursday,False,2,33.63120556,-84.301475000
+2022,GA,130833,CAMDEN (39),4,True,2,66 66,2,2,0,0,0,interstate,1,I-95,I-95,I-95,Urban,14,afternoon (noon-5:59 p.m.),Friday,False,6,30.75549444,-81.651669440
+2022,GA,130843,DEKALB (89),1,False,1,61,1,0,0,0,0,us_state,3,,SR-10,SR-10 MEMORIAL DR,Urban,17,afternoon (noon-5:59 p.m.),Sunday,False,4,33.80064722,-84.212786110
+2022,GA,130859,COBB (67),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Urban,9,morning (6-11:59 a.m.),Sunday,False,2,33.77662500,-84.599700000
+2022,GA,130865,DECATUR (87),1,True,2,66 66,1,0,0,0,0,us_state,3,,SR-1,SR-1,Rural,5,overnight (midnight-5:59 a.m.),Monday,False,2,30.81981667,-84.523316670
+2022,GA,130868,COLUMBIA (73),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Rural,19,evening (6-11:59 p.m.),Tuesday,False,2,33.49241111,-82.279502780
+2022,GA,130871,WILCOX (315),1,True,1,66,0,1,0,0,0,us_state,3,,SR-215,SR-215,Rural,13,afternoon (noon-5:59 p.m.),Wednesday,False,2,31.91130000,-83.393166670
+2022,GA,130874,DOUGHERTY (95),1,True,2,61 66,1,0,0,0,0,us_state,3,,SR-19,SR-19,Urban,15,afternoon (noon-5:59 p.m.),Thursday,False,2,31.60512500,-84.152600000
+2022,GA,130882,CATOOSA (47),2,True,1,66,0,2,0,0,0,us_state,3,,SR-2,SR-2,Urban,15,afternoon (noon-5:59 p.m.),Friday,False,2,34.93003333,-85.171883330
+2022,GA,130898,CHEROKEE (57),1,False,1,61,0,1,0,0,0,interstate,1,I-575,I-575,I-575,Urban,16,afternoon (noon-5:59 p.m.),Thursday,False,5,34.14643056,-84.516391670
+2022,GA,130912,WILKINSON (319),1,True,1,66,1,0,0,0,0,us_state,3,,SR-18,SR-18,Rural,6,morning (6-11:59 a.m.),Friday,False,1,32.84400000,-83.336641670
+2022,GA,130913,COLUMBIA (73),1,False,1,61,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Rural,18,evening (6-11:59 p.m.),Friday,False,2,33.50665556,-82.400241670
+2022,GA,130918,NEWTON (217),1,True,1,66,0,1,0,0,0,us_state,3,,SR-11,SR-11,Rural,15,afternoon (noon-5:59 p.m.),Thursday,False,2,33.57529722,-83.742605560
+2022,GA,130926,STEWART (259),1,True,1,66,0,1,0,0,0,us_state,3,,SR-520,SR-520,Rural,6,morning (6-11:59 a.m.),Friday,False,2,32.21428611,-84.708330560
+2022,GA,130928,JACKSON (157),1,False,1,67,1,0,0,0,0,us_state,3,,SR-334,SR-334,Rural,8,morning (6-11:59 a.m.),Tuesday,False,1,34.13479167,-83.385647220
+2022,GA,130929,TREUTLEN (283),1,False,1,67,1,0,0,0,0,interstate,1,I-16,I-16,I-16,Urban,15,afternoon (noon-5:59 p.m.),Tuesday,False,3,32.43349167,-82.698308330
+2022,GA,130933,BARTOW (15),1,True,1,66,0,0,1,0,0,us_state,3,,SR-140,SR-140,Rural,2,overnight (midnight-5:59 a.m.),Friday,False,1,34.33834167,-84.729805560
+2022,GA,130939,GREENE (133),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Urban,23,evening (6-11:59 p.m.),Saturday,False,2,33.54883889,-83.151905560
+2022,GA,130941,BIBB (21),1,True,1,66,0,0,0,1,0,us_state,3,,SR-11,SR-11 BROADWAY,Urban,17,afternoon (noon-5:59 p.m.),Wednesday,False,1,32.79545833,-83.642622220
+2022,GA,130945,BEN HILL (17),1,True,1,66,0,1,0,0,0,us_state,3,,SR-90,SR-90,Urban,9,morning (6-11:59 a.m.),Friday,False,3,31.74364722,-83.261016670
+2022,GA,130952,FULTON (121),1,False,1,62,0,0,1,0,0,interstate,1,I-85,I-85,I-85,Urban,23,evening (6-11:59 p.m.),Saturday,False,1,33.58666389,-84.510488890
+2022,GA,130953,PUTNAM (237),1,True,1,66,0,1,0,0,0,us_state,3,,SR-16,SR-16,Rural,15,afternoon (noon-5:59 p.m.),Monday,False,2,33.33464167,-83.370641670
+2022,GA,130956,TIFT (277),1,True,1,66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Urban,21,evening (6-11:59 p.m.),Friday,False,2,31.42104722,-83.506988890
+2022,GA,130959,FULTON (121),1,True,1,66,0,1,0,0,0,us_state,3,,SR-70,SR-70,Urban,3,overnight (midnight-5:59 a.m.),Saturday,False,2,33.74021667,-84.564552780
+2022,GA,130964,DOOLY (93),1,True,1,66,0,1,0,0,0,us_state,3,,SR-90,SR-90,Rural,6,morning (6-11:59 a.m.),Monday,False,2,32.20200278,-83.909150000
+2022,GA,130965,HEARD (149),1,False,1,61,0,1,0,0,0,us_state,3,,SR-1,SR-1,Rural,17,afternoon (noon-5:59 p.m.),Monday,False,3,33.24729167,-85.038430560
+2022,GA,130973,GWINNETT (135),1,False,1,61,0,0,1,0,0,other,6,,,ARDEN WAY,Urban,14,afternoon (noon-5:59 p.m.),Friday,False,1,34.12078056,-83.977094440
+2022,GA,130992,UPSON (293),1,False,1,63,0,1,0,0,0,other,4,,CR-421,CR-421 LOGTOWN RD,Rural,6,morning (6-11:59 a.m.),Friday,False,2,32.84058056,-84.194150000
+2022,GA,131008,DEKALB (89),1,False,1,61,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Urban,3,overnight (midnight-5:59 a.m.),Sunday,False,2,33.71134722,-84.215752780
+2022,GA,131010,CARROLL (45),1,True,1,66,0,1,0,0,0,us_state,3,,SR-166,SR-166 BANKHEAD HWY,Urban,9,morning (6-11:59 a.m.),Tuesday,False,2,33.59944722,-85.030875000
+2022,GA,131019,BIBB (21),1,False,1,61,0,1,0,0,0,us_state,3,,SR-247,SR-247,Urban,17,afternoon (noon-5:59 p.m.),Friday,False,2,32.70567778,-83.642388890
+2022,GA,131033,EMANUEL (107),3,True,1,66,0,3,0,0,0,us_state,3,,SR-57,SR-57,Rural,6,morning (6-11:59 a.m.),Wednesday,False,2,32.43310833,-82.214897220
+2022,GA,131036,EFFINGHAM (103),1,False,1,63,0,1,0,0,0,us_state,3,,SR-21,SR-21,Urban,6,morning (6-11:59 a.m.),Monday,False,2,32.30615556,-81.244450000
+2022,GA,131045,MONROE (207),1,True,3,66 66 66,1,0,0,0,0,us_state,3,,SR-401,SR-401,Rural,3,overnight (midnight-5:59 a.m.),Friday,False,3,33.07478611,-83.980330560
+2022,GA,131051,HENRY (151),1,True,1,66,1,0,0,0,0,interstate,1,I-75,I-75,I-75,Urban,9,morning (6-11:59 a.m.),Tuesday,False,1,33.45261667,-84.204541670
+2022,GA,131060,UPSON (293),1,False,1,61,0,1,0,0,0,other,6,,,E LEE ST,Urban,23,evening (6-11:59 p.m.),Tuesday,False,2,32.88628056,-84.323538890
+2022,GA,131065,TATTNALL (267),1,False,1,63,0,1,0,0,0,us_state,3,,SR-73,SR-73,Rural,14,afternoon (noon-5:59 p.m.),Thursday,True,2,31.97493056,-81.918219440
+2022,GA,131075,CHATHAM (51),1,True,1,66,0,1,0,0,0,us_state,3,,SR-21,SR-21,Urban,0,overnight (midnight-5:59 a.m.),Monday,False,2,32.10232222,-81.147386110
+2022,GA,131078,FULTON (121),1,False,1,63,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Urban,5,overnight (midnight-5:59 a.m.),Friday,False,2,33.66047778,-84.395127780
+2022,GA,131088,COFFEE (69),1,True,1,66,0,1,0,0,0,us_state,3,,SR-31,SR-31,Urban,12,afternoon (noon-5:59 p.m.),Wednesday,False,2,31.45813333,-82.850658330
+2022,GA,131095,GWINNETT (135),1,False,1,62,1,0,0,0,0,other,6,,,ROCKDALE CIR,Urban,20,evening (6-11:59 p.m.),Sunday,False,1,33.85506111,-83.993905560
+2022,GA,131096,FULTON (121),2,False,1,67,0,2,0,0,0,us_state,3,,SR-279,SR-279 OLD NATIONAL HWY,Urban,17,afternoon (noon-5:59 p.m.),Tuesday,False,2,33.62314167,-84.474361110
+2022,GA,131101,DOOLY (93),1,True,1,66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Rural,23,evening (6-11:59 p.m.),Sunday,False,2,32.07333889,-83.763225000
+2022,GA,131109,FULTON (121),1,True,1,66,0,1,0,0,0,other,6,,,MARIETTA BLVD NW,Urban,4,overnight (midnight-5:59 a.m.),Sunday,False,2,33.81896667,-84.450850000
+2022,GA,131124,TROUP (285),1,False,1,67,0,1,0,0,0,us_state,3,,SR-219,SR-219 MOOTY BRIDGE RD,Urban,6,morning (6-11:59 a.m.),Wednesday,False,2,33.06436111,-85.038311110
+2022,GA,131143,COFFEE (69),1,False,1,63,0,1,0,0,0,us_state,3,,SR-32,SR-32,Rural,10,morning (6-11:59 a.m.),Tuesday,False,2,31.55033611,-82.952572220
+2022,GA,131145,MCDUFFIE (189),1,True,2,66 67,1,0,0,0,0,interstate,1,I-20,I-20,I-20,Urban,9,morning (6-11:59 a.m.),Monday,True,2,33.51179167,-82.450525000
+2022,GA,131147,BLECKLEY (23),1,True,1,66,1,0,0,0,0,interstate,1,I-16,I-16,I-16,Rural,5,overnight (midnight-5:59 a.m.),Wednesday,False,2,32.57221667,-83.232863890
+2022,GA,131153,GWINNETT (135),1,False,1,63,0,1,0,0,0,us_state,3,,SR-124,SR-124,Urban,13,afternoon (noon-5:59 p.m.),Thursday,False,2,34.07254444,-83.843697220
+2022,GA,131158,GLYNN (127),1,False,1,63,0,1,0,0,0,us_state,3,,SR-25,SR-25,Urban,15,afternoon (noon-5:59 p.m.),Wednesday,False,4,31.23594167,-81.451925000
+2022,GA,131168,GLYNN (127),1,True,3,66 66 66,1,0,0,0,0,interstate,1,I-95,I-95,I-95,Urban,21,evening (6-11:59 p.m.),Friday,False,3,31.24933333,-81.499255560
+2022,GA,131169,CHATTOOGA (55),1,False,1,62,0,1,0,0,0,us_state,3,,SR-1,SR-1,Rural,14,afternoon (noon-5:59 p.m.),Friday,False,2,34.47454722,-85.291761110
+2022,GA,131175,RICHMOND (245),1,True,1,66,1,0,0,0,0,us_state,2,,US-25,US-25,Urban,21,evening (6-11:59 p.m.),Monday,False,2,33.27222222,-82.048611110
+2022,GA,131183,LAURENS (175),1,False,1,61,0,1,0,0,0,us_state,3,,SR-29,SR-29,Rural,17,afternoon (noon-5:59 p.m.),Tuesday,False,2,32.48594722,-82.760825000
+2022,GA,131187,FULTON (121),1,True,2,66 66,1,0,0,0,0,interstate,1,I-285,I-285,I-285,Urban,17,afternoon (noon-5:59 p.m.),Monday,False,2,33.90874167,-84.429608330
+2022,GA,131190,CARROLL (45),2,True,1,66,2,0,0,0,0,interstate,1,I-20,I-20,I-20,Urban,1,overnight (midnight-5:59 a.m.),Monday,False,2,33.72244444,-84.945019440
+2022,GA,131191,FORSYTH (117),1,True,1,66,0,1,0,0,0,us_state,2,,US-19,US-19 SR-400,Urban,20,evening (6-11:59 p.m.),Friday,True,6,34.26268056,-84.087466670
+2022,GA,131194,TOOMBS (279),1,True,1,66,0,0,1,0,0,us_state,3,,SR-292,SR-292,Urban,7,morning (6-11:59 a.m.),Monday,False,1,32.21244167,-82.386391670
+2022,GA,131196,SPALDING (255),1,False,1,62,0,1,0,0,0,us_state,3,,SR-362,SR-362,Urban,15,afternoon (noon-5:59 p.m.),Monday,False,2,33.20990833,-84.329255560
+2022,GA,131202,FULTON (121),1,True,1,66,0,1,0,0,0,interstate,1,I-285,I-285,I-285,Urban,12,afternoon (noon-5:59 p.m.),Saturday,True,3,33.90987778,-84.364619440
+2022,GA,131230,BUTTS (35),1,True,1,66,0,1,0,0,0,us_state,3,,SR-36,SR-36,Rural,13,afternoon (noon-5:59 p.m.),Monday,False,2,33.34668333,-83.959330560
+2022,GA,131258,NEWTON (217),3,False,2,61 63,3,0,0,0,0,other,5,,,CS-ACCESS RD,Urban,8,morning (6-11:59 a.m.),Wednesday,False,2,33.61189167,-83.892130560
+2022,GA,131262,DEKALB (89),1,False,1,61,0,0,1,0,0,other,5,,,CS-GRESHAM RD,Urban,19,evening (6-11:59 p.m.),Saturday,False,1,33.71643889,-84.310436110
+2022,GA,131267,FULTON (121),1,True,1,66,0,0,1,0,0,interstate,1,I-285,I-285,I-285,Urban,22,evening (6-11:59 p.m.),Sunday,False,1,33.91420556,-84.422683330
+2022,GA,131268,TWIGGS (289),1,True,1,66,0,1,0,0,0,us_state,3,,SR-96,SR-96,Rural,0,overnight (midnight-5:59 a.m.),Tuesday,False,2,32.68219722,-83.353208330
+2022,GA,131270,MUSCOGEE (215),1,False,1,61,0,0,1,0,0,us_state,2,,US-27,US-27 VICTORY DR,Rural,6,morning (6-11:59 a.m.),Wednesday,False,1,32.40868611,-84.940041670
+2022,GA,131272,CHEROKEE (57),1,True,1,66,0,1,0,0,0,us_state,3,,SR-20,SR-20,Rural,17,afternoon (noon-5:59 p.m.),Thursday,False,2,34.24741111,-84.304861110
+2022,GA,131277,WALKER (295),1,True,1,66,0,1,0,0,0,us_state,3,,SR-1,SR-1,Rural,14,afternoon (noon-5:59 p.m.),Friday,False,3,34.68161944,-85.270872220
+2022,GA,131286,TIFT (277),1,True,1,66,0,1,0,0,0,us_state,3,,SR-520,SR-520,Urban,23,evening (6-11:59 p.m.),Sunday,False,2,31.43509722,-83.448016670
+2022,GA,131287,FORSYTH (117),1,True,1,66,0,1,0,0,0,us_state,3,,SR-20,SR-20,Urban,21,evening (6-11:59 p.m.),Tuesday,False,2,34.18579722,-84.140980560
+2022,GA,131296,RABUN (241),1,False,1,63,1,0,0,0,0,us_state,3,,SR-2,SR-2,Rural,11,morning (6-11:59 a.m.),Tuesday,False,1,34.87691111,-83.445366670
+2022,GA,131303,LOWNDES (185),1,True,1,66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Urban,16,afternoon (noon-5:59 p.m.),Monday,False,2,30.64331111,-83.189105560
+2022,GA,131316,COBB (67),1,True,1,66,0,1,0,0,0,interstate,1,I-285,I-285,I-285 RAMP,Urban,2,overnight (midnight-5:59 a.m.),Friday,False,2,33.89329722,-84.462394440
+2022,GA,131343,BUTTS (35),1,False,1,62,0,1,0,0,0,us_state,3,,SR-16,SR-16,Rural,12,afternoon (noon-5:59 p.m.),Friday,False,3,33.28131111,-84.043238890
+2022,GA,131353,TROUP (285),1,False,1,67,1,0,0,0,0,us_state,3,,SR-219,SR-219,Rural,22,evening (6-11:59 p.m.),Wednesday,False,1,33.11678611,-85.088013890
+2022,GA,131357,CANDLER (43),1,False,1,67,0,1,0,0,0,other,5,,,PORTAL HWY,Rural,20,evening (6-11:59 p.m.),Sunday,False,2,32.41927778,-82.039625000
+2022,GA,131366,CLAYTON (63),1,True,1,66,0,0,1,0,0,other,6,,,4644 SOUTH PARK BLVD,Urban,22,evening (6-11:59 p.m.),Monday,False,1,33.62728611,-84.294105560
+2022,GA,131368,DECATUR (87),1,False,1,63,0,1,0,0,0,us_state,3,,SR-1,SR-1,Rural,16,afternoon (noon-5:59 p.m.),Tuesday,False,2,30.84341667,-84.537786110
+2022,GA,131374,PICKENS (227),1,True,1,66,1,0,0,0,0,other,4,,CR-029600,CR-029600,Rural,18,evening (6-11:59 p.m.),Thursday,False,1,34.52706944,-84.509005560
+2022,GA,131376,WHITFIELD (313),1,False,1,63,0,1,0,0,0,other,4,,CR-034900,CR-034900,Rural,10,morning (6-11:59 a.m.),Friday,False,2,34.73078333,-85.042238890
+2022,GA,131377,GWINNETT (135),1,False,1,67,0,1,0,0,0,us_state,2,,US-23,US-23 BUFORD HWY,Urban,5,overnight (midnight-5:59 a.m.),Monday,False,2,33.93230278,-84.222380560
+2022,GA,131382,COBB (67),1,False,1,62,0,1,0,0,0,us_state,3,,SR-41,SR-41,Urban,12,afternoon (noon-5:59 p.m.),Friday,False,2,33.97991111,-84.555108330
+2022,GA,131388,WARREN (301),1,False,1,61,0,1,0,0,0,us_state,3,,SR-171,SR-171,Rural,11,morning (6-11:59 a.m.),Friday,False,2,33.31138333,-82.603363890
+2022,GA,131396,SPALDING (255),1,True,1,66,0,1,0,0,0,us_state,3,,SR-16,SR-16,Rural,12,afternoon (noon-5:59 p.m.),Friday,False,2,33.25005278,-84.470222220
+2022,GA,131414,COBB (67),1,False,1,67,1,0,0,0,0,us_state,3,,SR-5,SR-5 COBB PKWY,Urban,13,afternoon (noon-5:59 p.m.),Monday,False,2,33.97691389,-84.548761110
+2022,GA,131421,CAMDEN (39),1,True,1,66,0,1,0,0,0,us_state,3,,SR-40,SR-40,Urban,5,overnight (midnight-5:59 a.m.),Wednesday,False,2,30.79166944,-81.661736110
+2022,GA,131422,TOWNS (281),2,True,1,66,0,2,0,0,0,us_state,3,,SR-2,SR-2,Rural,8,morning (6-11:59 a.m.),Friday,False,2,34.96230556,-83.846219440
+2022,GA,131424,TROUP (285),1,True,1,66,0,1,0,0,0,interstate,1,I-85,I-85,I-85,Urban,22,evening (6-11:59 p.m.),Friday,True,3,33.06637778,-84.937627780
+2022,GA,131439,BULLOCH (31),1,False,1,63,0,1,0,0,0,us_state,3,,SR-26,SR-26,Rural,14,afternoon (noon-5:59 p.m.),Sunday,False,2,32.38756389,-81.663900000
+2022,GA,131465,BARTOW (15),1,True,1,66,1,0,0,0,0,interstate,1,I-75,I-75,I-75,Urban,6,morning (6-11:59 a.m.),Saturday,False,1,34.34788056,-84.878536110
+2022,GA,131466,CLAYTON (63),1,True,1,66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Urban,3,overnight (midnight-5:59 a.m.),Friday,False,2,33.59785278,-84.389455560
+2022,GA,131468,FULTON (121),1,False,1,63,0,0,1,0,0,other,6,,,CS-200003/HARRIS ST,Urban,6,morning (6-11:59 a.m.),Friday,False,1,33.76101389,-84.388933330
+2022,GA,131473,FLOYD (115),1,True,1,66,0,1,0,0,0,us_state,3,,SR-1,SR-1 TURNER MCCALL MARTHA BERR,Urban,9,morning (6-11:59 a.m.),Monday,False,2,34.24602500,-85.161205560
+2022,GA,131491,HALL (139),1,True,1,66,0,1,0,0,0,us_state,3,,SR-52,SR-52,Rural,16,afternoon (noon-5:59 p.m.),Friday,False,2,34.40470556,-83.698902780
+2022,GA,131494,BARTOW (15),1,True,2,66 66,1,0,0,0,0,interstate,1,I-75,I-75,I-75,Urban,10,morning (6-11:59 a.m.),Saturday,False,2,34.34788056,-84.878538890
+2022,GA,131499,THOMAS (275),1,True,1,66,0,1,0,0,0,other,4,,CR-038400,CR-038400/METCALFE RD,Rural,8,morning (6-11:59 a.m.),Thursday,False,2,30.69698056,-83.990025000
+2022,GA,131520,FORSYTH (117),1,False,1,61,1,0,0,0,0,us_state,3,,SR-20,SR-20,Urban,6,morning (6-11:59 a.m.),Thursday,False,3,34.23823889,-84.199600000
+2022,GA,131521,JONES (169),1,True,1,66,0,1,0,0,0,other,5,,,CS-GRAY BYP,Rural,15,afternoon (noon-5:59 p.m.),Friday,False,2,33.01771944,-83.564650000
+2022,GA,131525,TROUP (285),1,False,1,62,0,0,1,0,0,interstate,1,I-85,I-85,I-85,Rural,23,evening (6-11:59 p.m.),Sunday,False,1,33.12943056,-84.892927780
+2022,GA,131544,TWIGGS (289),1,True,1,66,0,1,0,0,0,us_state,3,,SR-358,SR-358,Rural,6,morning (6-11:59 a.m.),Monday,False,2,32.59743333,-83.315305560
+2022,GA,131545,HARALSON (143),1,False,1,61,1,0,0,0,0,other,5,,,J DAVIS RD,Rural,10,morning (6-11:59 a.m.),Monday,False,1,33.73590278,-85.325841670
+2022,GA,131552,CRISP (81),1,True,1,66,1,0,0,0,0,interstate,1,I-75,I-75,I-75 N,Urban,5,overnight (midnight-5:59 a.m.),Wednesday,False,1,31.99058056,-83.756369440
+2022,GA,131554,FLOYD (115),1,False,1,67,0,1,0,0,0,us_state,3,,SR-1,SR-1,Urban,17,afternoon (noon-5:59 p.m.),Friday,False,3,34.26619722,-85.179897220
+2022,GA,131559,GORDON (129),1,False,1,63,1,0,0,0,0,other,6,,,HALL MEMORIAL ROAD NW,Urban,12,afternoon (noon-5:59 p.m.),Friday,False,1,34.54117778,-84.974125000
+2022,GA,131575,MUSCOGEE (215),1,False,1,67,0,0,1,0,0,us_state,3,,SR-22,SR-22,Urban,22,evening (6-11:59 p.m.),Friday,False,2,32.55206111,-84.934986110
+2022,GA,131583,FULTON (121),1,True,1,66,0,1,0,0,0,us_state,3,,SR-279,SR-279 OLD NATIONAL HWY,Urban,23,evening (6-11:59 p.m.),Sunday,False,3,33.60485278,-84.471902780
+2022,GA,131589,COBB (67),1,False,1,67,0,0,1,0,0,us_state,3,,SR-5,SR-5 AUSTELL RD,Urban,18,evening (6-11:59 p.m.),Monday,False,1,33.90321944,-84.566983330
+2022,GA,131593,HENRY (151),1,True,1,66,0,1,0,0,0,other,6,,,WESTRIDGE PKWY,Urban,22,evening (6-11:59 p.m.),Wednesday,False,2,33.40505833,-84.183941670
+2022,GA,131610,COLQUITT (71),1,True,1,66,0,1,0,0,0,us_state,3,,SR-133,SR-133,Rural,1,overnight (midnight-5:59 a.m.),Thursday,True,2,31.28019167,-83.884100000
+2022,GA,131613,BARROW (13),1,True,2,63 66,1,0,0,0,0,us_state,3,,SR-211,SR-211,Rural,12,afternoon (noon-5:59 p.m.),Tuesday,False,2,34.06567500,-83.783713890
+2022,GA,131614,BUTTS (35),1,True,1,66,0,0,1,0,0,us_state,3,,SR-16,SR-16,Urban,11,morning (6-11:59 a.m.),Tuesday,False,1,33.29253333,-83.984758330
+2022,GA,131617,MCINTOSH (191),2,True,2,66 66,2,0,0,0,0,interstate,1,I-95,I-95,I-95,Rural,16,afternoon (noon-5:59 p.m.),Friday,False,2,31.34256111,-81.463725000
+2022,GA,131623,BUTTS (35),1,False,1,67,0,1,0,0,0,us_state,3,,SR-36,SR-36,Rural,18,evening (6-11:59 p.m.),Wednesday,False,3,33.23805000,-84.025319440
+2022,GA,131626,GORDON (129),1,False,1,67,1,0,0,0,0,other,5,,,S HOLCOMB RD SW,Urban,15,afternoon (noon-5:59 p.m.),Sunday,False,1,34.42058056,-84.938838890
+2022,GA,131631,MCDUFFIE (189),1,False,1,62,1,0,0,0,0,interstate,1,I-20,I-20,I-20,Rural,18,evening (6-11:59 p.m.),Saturday,False,1,33.50718611,-82.537483330
+2022,GA,131644,CRISP (81),1,False,1,62,0,1,0,0,0,other,4,,CR-035800,CR-035800,Rural,18,evening (6-11:59 p.m.),Thursday,False,2,31.91020556,-83.893455560
+2022,GA,131647,LEE (177),1,False,1,61,0,1,0,0,0,us_state,3,,SR-520,SR-520,Urban,20,evening (6-11:59 p.m.),Monday,False,2,31.63581389,-84.246436110
+2022,GA,131648,JACKSON (157),1,False,1,61,0,1,0,0,0,us_state,3,,,SR-15AL,Urban,13,afternoon (noon-5:59 p.m.),Wednesday,False,3,34.21850278,-83.459322220
+2022,GA,131652,CHATHAM (51),1,False,1,61,0,1,0,0,0,interstate,1,I-95,I-95,I-95,Urban,19,evening (6-11:59 p.m.),Wednesday,False,2,32.19927778,-81.187941670
+2022,GA,131656,MCINTOSH (191),1,True,1,66,1,0,0,0,0,interstate,1,I-95,I-95,I-95,Urban,2,overnight (midnight-5:59 a.m.),Wednesday,False,1,31.63441111,-81.404869440
+2022,GA,131678,WILKINSON (319),1,True,1,66,0,1,0,0,0,us_state,3,,SR-243,SR-243 FALL LINE FWY,Rural,5,overnight (midnight-5:59 a.m.),Wednesday,False,2,32.90037222,-83.341386110
+2022,GA,131756,GWINNETT (135),1,True,1,66,0,1,0,0,0,interstate,1,I-85,I-85,I-85,Urban,3,overnight (midnight-5:59 a.m.),Thursday,False,2,33.90663333,-84.235066670
+2022,GA,131758,DEKALB (89),1,True,1,66,1,0,0,0,0,other,6,,,MARBUT RD,Urban,4,overnight (midnight-5:59 a.m.),Monday,False,1,33.72656667,-84.123705560
+2022,GA,131764,GLYNN (127),1,False,1,61,0,0,1,0,0,other,6,,,NORWICH ST,Urban,8,morning (6-11:59 a.m.),Wednesday,False,1,31.16379167,-81.496475000
+2022,GA,131769,DOUGLAS (97),1,True,1,66,1,0,0,0,0,interstate,1,I-20,I-20,I-20,Urban,9,morning (6-11:59 a.m.),Saturday,False,1,33.74468889,-84.722338890
+2022,GA,131777,CATOOSA (47),1,True,1,66,1,0,0,0,0,interstate,1,I-75,I-75,I-75,Urban,2,overnight (midnight-5:59 a.m.),Wednesday,False,1,34.90879722,-85.109516670
+2023,GA,130022,FORSYTH (117),1,True,1,66,0,1,0,0,0,us_state,3,,SR-9,SR-9,Urban,7,morning (6-11:59 a.m.),Wednesday,False,4,34.33210556,-84.106502780
+2023,GA,130027,THOMAS (275),1,False,1,63,0,1,0,0,0,us_state,2,,US-19,US-19 SR-3,Rural,13,afternoon (noon-5:59 p.m.),Friday,False,2,30.93241111,-84.002613890
+2023,GA,130030,FORSYTH (117),1,False,1,63,0,1,0,0,0,us_state,2,,US-19,US-19 SR-400,Rural,8,morning (6-11:59 a.m.),Monday,False,2,34.16873611,-84.160597220
+2023,GA,130038,POLK (233),1,False,1,62,0,1,0,0,0,us_state,3,,SR-101,SR-101,Rural,7,morning (6-11:59 a.m.),Wednesday,False,2,34.06043611,-85.073347220
+2023,GA,130064,BRANTLEY (25),1,False,1,63,0,0,1,0,0,us_state,2,,US-82,US-82 SR-520,Rural,13,afternoon (noon-5:59 p.m.),Wednesday,False,1,31.22255278,-81.847705560
+2023,GA,130068,PAULDING (223),1,True,1,66,0,1,0,0,0,us_state,2,,US-278,US-278 SR-6,Rural,23,evening (6-11:59 p.m.),Thursday,False,2,33.91908333,-84.929366670
+2023,GA,130079,EMANUEL (107),1,False,1,67,0,1,0,0,0,us_state,2,,US-80,US-80 SR-26,Rural,15,afternoon (noon-5:59 p.m.),Monday,False,2,32.60371667,-82.227030560
+2023,GA,130080,JACKSON (157),1,False,1,63,0,1,0,0,0,interstate,1,I-85,I-85,I-85,Rural,10,morning (6-11:59 a.m.),Tuesday,False,2,34.20281111,-83.560108330
+2023,GA,130089,FULTON (121),1,True,1,66,0,1,0,0,0,us_state,3,,SR-54,SR-54,Urban,3,overnight (midnight-5:59 a.m.),Monday,False,2,33.65310833,-84.367516670
+2023,GA,130092,DEKALB (89),1,False,1,67,0,0,1,0,0,us_state,2,,US-23,US-23 SR-13 BUFORD HWY,Urban,19,evening (6-11:59 p.m.),Sunday,False,2,33.90008333,-84.277494440
+2023,GA,130093,DECATUR (87),1,True,1,66,0,1,0,0,0,us_state,3,,SR-309,SR-309,Rural,10,morning (6-11:59 a.m.),Tuesday,False,2,30.98803611,-84.419094440
+2023,GA,130106,IRWIN (155),1,True,2,61 66,1,0,0,0,0,us_state,3,,SR-32,SR-32,Rural,9,morning (6-11:59 a.m.),Sunday,False,3,31.64795833,-83.384819440
+2023,GA,130125,COWETA (77),1,True,1,66,0,0,1,0,0,interstate,1,I-85,I-85,I-85,Rural,4,overnight (midnight-5:59 a.m.),Monday,False,1,33.30894444,-84.788991670
+2023,GA,130153,LIBERTY (179),1,True,1,66,0,0,1,0,0,interstate,1,I-95,I-95,I-95,Rural,11,morning (6-11:59 a.m.),Saturday,False,1,31.67929722,-81.391616670
+2023,GA,130164,DEKALB (89),1,True,1,66,0,0,1,0,0,other,95,,,CS-DAWSON BLVD,Urban,4,overnight (midnight-5:59 a.m.),Monday,False,1,33.90221111,-84.241605560
+2023,GA,130180,TROUP (285),1,True,1,66,0,1,0,0,0,us_state,2,,US-27,US-27 SR-1 NEW FRANKLIN RD,Rural,0,overnight (midnight-5:59 a.m.),Wednesday,False,2,33.16693611,-85.038833330
+2023,GA,130182,CHATHAM (51),1,False,1,62,0,1,0,0,0,us_state,2,,US-17,US-17 SR-25,Urban,18,evening (6-11:59 p.m.),Wednesday,False,2,31.98058889,-81.286908330
+2023,GA,130189,FULTON (121),1,False,1,61,0,0,1,0,0,interstate,1,I-75,I-75,I-75/85,Urban,23,evening (6-11:59 p.m.),Thursday,False,1,33.75838889,-84.378969440
+2023,GA,130194,WARREN (301),1,True,1,66,0,0,1,0,0,interstate,1,I-20,I-20,I-20,Urban,7,morning (6-11:59 a.m.),Wednesday,False,1,33.50098611,-82.707300000
+2023,GA,130209,WHITFIELD (313),1,True,1,66,1,0,0,0,0,us_state,3,,SR-040100,SR-040100,Urban,22,evening (6-11:59 p.m.),Saturday,False,1,34.77992500,-85.000933330
+2023,GA,130236,CHEROKEE (57),1,False,1,62,0,1,0,0,0,interstate,1,I-575,I-575,I-575,Urban,13,afternoon (noon-5:59 p.m.),Monday,False,2,34.17720000,-84.510250000
+2023,GA,130238,POLK (233),1,False,1,67,0,1,0,0,0,us_state,3,,SR-1,SR-1,Urban,16,afternoon (noon-5:59 p.m.),Tuesday,False,3,34.02673333,-85.220216670
+2023,GA,130241,MCINTOSH (191),1,True,2,62 66,1,0,0,0,0,interstate,1,I-95,I-95,I-95,Rural,2,overnight (midnight-5:59 a.m.),Wednesday,False,2,31.58391111,-81.429500000
+2023,GA,130248,ELBERT (105),1,False,1,61,0,1,0,0,0,us_state,3,,SR-17,SR-17,Rural,7,morning (6-11:59 a.m.),Friday,False,2,34.22558056,-83.052436110
+2023,GA,130258,CAMDEN (39),1,False,1,62,0,0,1,0,0,us_state,3,,SR-40,SR-40,Urban,18,evening (6-11:59 p.m.),Tuesday,False,1,30.80058611,-81.703591670
+2023,GA,130259,HEARD (149),1,True,1,66,0,1,0,0,0,us_state,3,,SR-100,SR-100,Rural,20,evening (6-11:59 p.m.),Friday,False,2,33.31506389,-85.149905560
+2023,GA,130276,GORDON (129),1,True,1,66,0,1,0,0,0,us_state,3,,SR-3,SR-3,Urban,14,afternoon (noon-5:59 p.m.),Tuesday,False,2,34.44360278,-84.935697220
+2023,GA,130293,JACKSON (157),1,True,1,66,1,0,0,0,0,us_state,3,,,SR-15ALT COMMERCE RD,Rural,8,morning (6-11:59 a.m.),Monday,False,1,34.14467222,-83.525647220
+2023,GA,130302,TWIGGS (289),1,True,1,66,0,0,1,0,0,interstate,1,I-16,I-16,I-16,Rural,3,overnight (midnight-5:59 a.m.),Thursday,False,1,32.67468889,-83.477405560
+2023,GA,130305,WILKES (317),1,True,1,66,0,1,0,0,0,us_state,2,,US-378,US-378 SR-47,Rural,10,morning (6-11:59 a.m.),Friday,False,2,33.71507222,-82.653841670
+2023,GA,130309,HENRY (151),1,True,1,66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Urban,3,overnight (midnight-5:59 a.m.),Friday,False,2,33.46418611,-84.211141670
+2023,GA,130326,HALL (139),1,False,1,63,0,1,0,0,0,us_state,3,,SR-332,SR-332,Urban,14,afternoon (noon-5:59 p.m.),Thursday,False,4,34.21131389,-83.788188890
+2023,GA,130330,NEWTON (217),1,False,1,61,0,1,0,0,0,us_state,3,,SR-142,SR-142,Urban,5,overnight (midnight-5:59 a.m.),Monday,False,2,33.61176667,-83.825369440
+2023,GA,130336,JENKINS (165),1,True,1,66,0,1,0,0,0,us_state,3,,SR-21,SR-21,Rural,7,morning (6-11:59 a.m.),Friday,False,2,32.82661667,-81.940580560
+2023,GA,130348,TROUP (285),1,False,1,63,0,1,0,0,0,us_state,2,,US-27,US-27 HAMILTON RD,Urban,4,overnight (midnight-5:59 a.m.),Thursday,False,2,33.00221944,-85.014469440
+2023,GA,130353,MURRAY (213),1,False,1,61,0,1,0,0,0,us_state,3,,SR-286,SR-286,Rural,4,overnight (midnight-5:59 a.m.),Monday,False,2,34.82611667,-84.837188890
+2023,GA,130356,LAURENS (175),1,True,1,66,0,1,0,0,0,interstate,1,I-16,I-16,I-16,Rural,5,overnight (midnight-5:59 a.m.),Wednesday,False,2,32.43589444,-82.705891670
+2023,GA,130361,RICHMOND (245),1,True,1,66,1,0,0,0,0,interstate,1,I-520,I-520,I-520 BOBBY JONES EXPY WEST,Urban,11,morning (6-11:59 a.m.),Friday,False,1,33.41336389,-81.973127780
+2023,GA,130374,DEKALB (89),1,False,1,67,0,1,0,0,0,other,4,,CR-5200,CR-5200/SHALLOWFORD RD NE,Urban,17,afternoon (noon-5:59 p.m.),Tuesday,False,3,33.87290278,-84.290313890
+2023,GA,130376,PEACH (225),1,False,1,61,0,1,0,0,0,other,6,,,MU-076703 HOUSERS MILL ROAD,Rural,17,afternoon (noon-5:59 p.m.),Tuesday,False,2,32.60375833,-83.748091670
+2023,GA,130383,MUSCOGEE (215),1,True,1,66,0,1,0,0,0,us_state,2,,US-80,US-80 SR-22/540 MACON RD,Urban,21,evening (6-11:59 p.m.),Thursday,False,2,32.55017500,-84.784191670
+2023,GA,130393,COBB (67),1,False,1,63,1,0,0,0,0,other,4,,CR-451900,CR-451900 ATLANTA RD,Urban,4,overnight (midnight-5:59 a.m.),Wednesday,False,1,33.82766944,-84.459288890
+2023,GA,130395,WHEELER (309),1,True,1,66,0,1,0,0,0,us_state,2,,US-280,US-280 SR-30,Rural,6,morning (6-11:59 a.m.),Monday,False,2,32.12243611,-82.791958330
+2023,GA,130405,HABERSHAM (137),2,False,1,63,0,2,0,0,0,us_state,3,,SR-115,SR-115,Rural,14,afternoon (noon-5:59 p.m.),Tuesday,True,5,34.59206944,-83.602658330
+2023,GA,130424,CANDLER (43),1,True,2,66 66,1,0,0,0,0,interstate,1,I-16,I-16,I-16,Rural,4,overnight (midnight-5:59 a.m.),Thursday,False,2,32.37581667,-82.108400000
+2023,GA,130428,RICHMOND (245),1,True,1,66,0,1,0,0,0,us_state,3,,SR-4,SR-4,Urban,9,morning (6-11:59 a.m.),Wednesday,False,3,33.37976111,-82.130530560
+2023,GA,130432,THOMAS (275),1,True,2,62 66,1,0,0,0,0,us_state,3,,SR-3,SR-3,Rural,12,afternoon (noon-5:59 p.m.),Thursday,False,2,31.07629444,-84.079916670
+2023,GA,130449,PEACH (225),1,True,1,66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Urban,0,overnight (midnight-5:59 a.m.),Friday,False,2,32.62250000,-83.743197220
+2023,GA,130459,MUSCOGEE (215),1,True,1,66,0,1,0,0,0,other,4,,CR-263500,CR-263500,Urban,9,morning (6-11:59 a.m.),Monday,False,2,32.50003611,-84.893638890
+2023,GA,130464,WILCOX (315),1,False,1,62,0,1,0,0,0,us_state,3,,SR-112,SR-112,Rural,6,morning (6-11:59 a.m.),Thursday,False,2,31.87591944,-83.488802780
+2023,GA,130474,MURRAY (213),1,False,1,61,0,0,1,0,0,us_state,2,,US-411,US-411 SR-61,Rural,0,overnight (midnight-5:59 a.m.),Friday,False,1,34.60388611,-84.712188890
+2023,GA,130478,FLOYD (115),1,True,1,66,0,1,0,0,0,us_state,3,,SR-20,SR-20,Urban,5,overnight (midnight-5:59 a.m.),Saturday,False,2,34.26809167,-85.275450000
+2023,GA,130514,DOOLY (93),1,False,1,61,0,1,0,0,0,us_state,2,,US-41,US-41 SR-7,Rural,0,overnight (midnight-5:59 a.m.),Wednesday,False,2,32.22311389,-83.757833330
+2023,GA,130517,MITCHELL (205),3,True,1,66,0,3,0,0,0,us_state,3,,SR-37,SR-37,Rural,21,evening (6-11:59 p.m.),Wednesday,False,2,31.28951111,-84.306083330
+2023,GA,130521,DEKALB (89),1,False,1,63,0,1,0,0,0,interstate,1,I-285,I-285,I-285,Urban,22,evening (6-11:59 p.m.),Thursday,True,2,33.68343333,-84.310450000
+2023,GA,130532,BIBB (21),1,False,1,61,0,1,0,0,0,other,4,,CR-182800,CR-182800 MILLERFIELD RD,Urban,16,afternoon (noon-5:59 p.m.),Wednesday,False,2,32.86232778,-83.572002780
+2023,GA,130537,CLAYTON (63),1,True,1,66,0,0,1,0,0,interstate,1,I-285,I-285,I-285,Urban,5,overnight (midnight-5:59 a.m.),Friday,False,4,33.61738333,-84.450330560
+2023,GA,130538,TOOMBS (279),1,False,1,63,0,1,0,0,0,us_state,2,,US-1,US-1 SR-4,Urban,15,afternoon (noon-5:59 p.m.),Wednesday,False,2,32.24736111,-82.325633330
+2023,GA,130541,HALL (139),1,True,2,62 66,1,0,0,0,0,us_state,3,,SR-365,SR-365,Rural,2,overnight (midnight-5:59 a.m.),Wednesday,False,2,34.34946111,-83.759116670
+2023,GA,130552,THOMAS (275),1,False,1,63,1,0,0,0,0,other,95,,,CS-MITCHELL RD,Rural,16,afternoon (noon-5:59 p.m.),Tuesday,False,1,30.67731111,-83.791616670
+2023,GA,130568,DEKALB (89),1,True,1,66,1,0,0,0,0,interstate,1,I-285,I-285,I-285,Urban,6,morning (6-11:59 a.m.),Saturday,False,1,33.81837778,-84.251427780
+2023,GA,130569,GORDON (129),1,True,1,66,0,0,1,0,0,interstate,1,I-75,I-75,I-75,Urban,12,afternoon (noon-5:59 p.m.),Saturday,False,1,34.42974444,-84.920194440
+2023,GA,130581,MARION (197),1,False,1,67,0,0,1,0,0,us_state,3,,SR-41,SR-41,Rural,12,afternoon (noon-5:59 p.m.),Wednesday,False,1,32.50810833,-84.561402780
+2023,GA,130601,EFFINGHAM (103),1,True,1,66,0,1,0,0,0,us_state,3,,SR-26,SR-26,Rural,20,evening (6-11:59 p.m.),Thursday,False,4,32.15790278,-81.364080560
+2023,GA,130602,FULTON (121),1,False,1,67,0,1,0,0,0,other,6,,,MU-479829,Rural,19,evening (6-11:59 p.m.),Monday,False,2,33.57046667,-84.788983330
+2023,GA,130611,BRYAN (29),1,True,1,66,0,1,0,0,0,interstate,1,I-16,I-16,I-16,Rural,18,evening (6-11:59 p.m.),Monday,False,2,32.19483889,-81.478386110
+2023,GA,130614,FLOYD (115),1,True,1,66,0,1,0,0,0,us_state,3,,SR-100,SR-100,Rural,16,afternoon (noon-5:59 p.m.),Saturday,False,2,34.20422500,-85.351038890
+2023,GA,130615,FULTON (121),1,False,1,67,0,1,0,0,0,other,6,,,MU-309603 CLEVELAND AVE SW,Urban,19,evening (6-11:59 p.m.),Sunday,False,2,33.68106389,-84.396322220
+2023,GA,130628,LOWNDES (185),1,True,1,66,0,1,0,0,0,us_state,2,,US-84,US-84/221 SR-38 E HILL AVE,Urban,6,morning (6-11:59 a.m.),Thursday,False,4,30.83627222,-83.264461110
+2023,GA,130632,LAURENS (175),1,False,1,62,0,1,0,0,0,us_state,3,,SR-117,SR-117,Rural,13,afternoon (noon-5:59 p.m.),Sunday,False,2,32.38354722,-82.991175000
+2023,GA,130643,PEACH (225),1,True,1,66,0,0,1,0,0,interstate,1,I-75,I-75,I-75,Urban,9,morning (6-11:59 a.m.),Saturday,False,1,32.61122778,-83.742908330
+2023,GA,130650,OCONEE (219),1,False,1,62,0,1,0,0,0,us_state,3,,SR-15,SR-15,Rural,4,overnight (midnight-5:59 a.m.),Sunday,False,2,33.75208889,-83.302283330
+2023,GA,130652,BRANTLEY (25),2,False,1,61,0,2,0,0,0,us_state,2,,US-301,US-301 SR-23,Rural,19,evening (6-11:59 p.m.),Sunday,False,3,31.29287222,-81.957591670
+2023,GA,130656,HABERSHAM (137),1,False,1,62,1,0,0,0,0,us_state,3,,SR-105,SR-105 CANNON BRIDGE ROAD,Urban,15,afternoon (noon-5:59 p.m.),Tuesday,False,1,34.55973889,-83.575863890
+2023,GA,130657,MORGAN (211),1,True,1,66,0,0,1,0,0,interstate,1,I-20,I-20,I-20,Urban,22,evening (6-11:59 p.m.),Wednesday,False,1,33.60221111,-83.658391670
+2023,GA,130658,WARE (299),1,False,1,63,1,0,0,0,0,other,95,,,CS-MANOR MILLWOOD RD,Rural,12,afternoon (noon-5:59 p.m.),Thursday,False,1,31.14790278,-82.591113890
+2023,GA,130666,GWINNETT (135),1,True,1,66,0,1,0,0,0,interstate,1,I-85,I-85,I-85,Urban,6,morning (6-11:59 a.m.),Thursday,False,2,34.05687222,-83.992794440
+2023,GA,130674,HART (147),1,True,2,66 66,0,1,0,0,0,interstate,1,I-85,I-85,I-85,Rural,4,overnight (midnight-5:59 a.m.),Monday,False,3,34.47699722,-83.046694440
+2023,GA,130684,BARTOW (15),1,True,1,66,1,0,0,0,0,interstate,1,I-75,I-75,I-75,Urban,12,afternoon (noon-5:59 p.m.),Wednesday,False,1,34.39481111,-84.918830560
+2023,GA,130713,TOWNS (281),1,False,1,63,0,1,0,0,0,us_state,3,,SR-17,SR-17,Rural,12,afternoon (noon-5:59 p.m.),Friday,False,3,34.87604722,-83.718802780
+2023,GA,130723,MITCHELL (205),1,True,1,66,0,1,0,0,0,us_state,3,,SR-112,SR-112,Rural,10,morning (6-11:59 a.m.),Monday,False,2,31.35544167,-84.068311110
+2023,GA,130724,BRANTLEY (25),2,True,1,66,0,2,0,0,0,us_state,2,,US-301,US-301 SR-23,Rural,12,afternoon (noon-5:59 p.m.),Monday,False,2,31.14918333,-81.991527780
+2023,GA,130725,EFFINGHAM (103),1,True,1,66,1,0,0,0,0,other,4,,CR-030700,CR-030700,Rural,12,afternoon (noon-5:59 p.m.),Monday,False,1,32.34581111,-81.213950000
+2023,GA,130736,CLAYTON (63),1,True,1,66,0,0,1,0,0,interstate,1,I-75,I-75,I-75,Urban,1,overnight (midnight-5:59 a.m.),Monday,False,2,33.56896111,-84.326083330
+2023,GA,130754,GORDON (129),1,True,1,66,0,1,0,0,0,us_state,3,,SR-139,SR-139,Rural,12,afternoon (noon-5:59 p.m.),Monday,False,2,34.59963056,-84.926919440
+2023,GA,130777,BARTOW (15),1,True,1,66,0,1,0,0,0,us_state,3,,SR-61,SR-61,Urban,21,evening (6-11:59 p.m.),Monday,False,2,34.24384722,-84.774330560
+2023,GA,130795,MCINTOSH (191),1,True,1,66,0,1,0,0,0,interstate,1,I-95,I-95,I-95,Rural,4,overnight (midnight-5:59 a.m.),Tuesday,False,2,31.59967500,-81.422050000
+2023,GA,130807,TERRELL (273),1,True,1,66,0,1,0,0,0,us_state,2,,US-82,US-82 SR-520,Rural,15,afternoon (noon-5:59 p.m.),Thursday,False,2,31.73549444,-84.402894440
+2023,GA,130820,RABUN (241),1,True,1,66,0,1,0,0,0,us_state,2,,US-441,US-441/23 SR-15,Rural,9,morning (6-11:59 a.m.),Monday,False,2,34.90046944,-83.391925000
+2023,GA,130824,SPALDING (255),1,True,1,66,0,0,1,0,0,us_state,2,,US-19,US-19 SR-3,Urban,4,overnight (midnight-5:59 a.m.),Tuesday,False,1,33.27069444,-84.290363890
+2023,GA,130826,BARROW (13),1,True,1,66,0,1,0,0,0,us_state,2,,US-29,US-29 SR-8/316 UNIVERSITY PKWY,Urban,9,morning (6-11:59 a.m.),Tuesday,False,2,33.95631667,-83.606922220
+2023,GA,130832,DEKALB (89),1,False,1,63,0,1,0,0,0,us_state,2,,US-278,US-278 SR-10 COVINGTON HWY,Urban,13,afternoon (noon-5:59 p.m.),Monday,False,2,33.73978056,-84.217997220
+2023,GA,130853,DEKALB (89),1,False,1,67,1,0,0,0,0,interstate,1,I-20,I-20,I-20,Urban,9,morning (6-11:59 a.m.),Monday,False,2,33.71551944,-84.252816670
+2023,GA,130854,PIKE (231),1,False,1,67,0,0,1,0,0,us_state,2,,US-19,US-19 SR-3,Rural,9,morning (6-11:59 a.m.),Monday,False,2,33.12114444,-84.332038890
+2023,GA,130856,TAYLOR (269),1,True,1,66,1,0,0,0,0,us_state,3,,SR-208,SR-208,Rural,19,evening (6-11:59 p.m.),Sunday,False,2,32.65366389,-84.254752780
+2023,GA,130870,ROCKDALE (247),1,False,1,63,0,1,0,0,0,other,95,,,CS-SIGMAN RD,Urban,10,morning (6-11:59 a.m.),Wednesday,False,2,33.66793333,-83.985741670
+2023,GA,130876,JEFFERSON (163),1,False,1,67,0,1,0,0,0,us_state,3,,SR-580,SR-580,Rural,18,evening (6-11:59 p.m.),Thursday,False,2,33.15743333,-82.456294440
+2023,GA,130885,GREENE (133),1,True,2,62 66,1,0,0,0,0,interstate,1,I-20,I-20,I-20,Urban,15,afternoon (noon-5:59 p.m.),Tuesday,False,2,33.54785278,-83.168708330
+2023,GA,130887,GORDON (129),2,True,2,66 66,0,2,0,0,0,interstate,1,I-75,I-75,I-75,Urban,7,morning (6-11:59 a.m.),Thursday,False,3,34.40412778,-84.919313890
+2023,GA,130888,FLOYD (115),1,True,1,66,0,1,0,0,0,us_state,2,,US-411,US-411 SR-53,Rural,15,afternoon (noon-5:59 p.m.),Thursday,False,2,34.10515833,-85.361222220
+2023,GA,130908,WHITFIELD (313),1,False,1,61,0,0,1,0,0,us_state,3,,SR-286,SR-286,Rural,12,afternoon (noon-5:59 p.m.),Sunday,False,1,34.79278056,-84.889069440
+2023,GA,130910,MCDUFFIE (189),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Urban,4,overnight (midnight-5:59 a.m.),Friday,False,2,33.51258333,-82.490697220
+2023,GA,130917,PEACH (225),1,True,1,66,0,1,0,0,0,interstate,1,I-75,I-75N,I-75N,Urban,22,evening (6-11:59 p.m.),Saturday,True,7,32.65449167,-83.743986110
+2023,GA,130955,TROUP (285),1,True,1,66,0,1,0,0,0,interstate,1,I-85,I-85,I-85,Urban,23,evening (6-11:59 p.m.),Tuesday,False,2,33.07871389,-84.922302780
+2023,GA,130958,DOUGLAS (97),1,True,1,66,1,0,0,0,0,interstate,1,I-20,I-20,I-20,Urban,3,overnight (midnight-5:59 a.m.),Thursday,False,2,33.77338333,-84.629894440
+2023,GA,130961,HARRIS (145),1,False,1,61,0,1,0,0,0,us_state,3,,SR-315,SR-315,Rural,8,morning (6-11:59 a.m.),Friday,False,2,32.67258056,-84.935833330
+2023,GA,130973,FAYETTE (113),1,False,1,63,0,1,0,0,0,other,4,,CR-86,CR-86,Urban,10,morning (6-11:59 a.m.),Tuesday,False,2,33.45420833,-84.568447220
+2023,GA,130975,LOWNDES (185),1,True,2,66 66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Urban,15,afternoon (noon-5:59 p.m.),Tuesday,False,3,30.68299167,-83.226000000
+2023,GA,130982,TROUP (285),1,True,1,66,1,0,0,0,0,interstate,1,I-85,I-85,I-85,Urban,15,afternoon (noon-5:59 p.m.),Thursday,False,1,32.89702778,-85.132080560
+2023,GA,130994,DEKALB (89),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Urban,3,overnight (midnight-5:59 a.m.),Sunday,False,2,33.70331111,-84.167227780
+2023,GA,131017,WILKINSON (319),1,False,1,67,0,1,0,0,0,other,95,,,CS-085609,Rural,11,morning (6-11:59 a.m.),Saturday,False,2,32.90706389,-83.293472220
+2023,GA,131030,GWINNETT (135),1,False,1,63,0,1,0,0,0,us_state,3,,SR-316,SR-316,Urban,8,morning (6-11:59 a.m.),Monday,False,2,33.97319444,-83.853069440
+2023,GA,131037,TWIGGS (289),1,False,1,62,1,0,0,0,0,interstate,1,I-16,I-16,I-16,Rural,6,morning (6-11:59 a.m.),Tuesday,False,2,32.67560833,-83.479094440
+2023,GA,131044,DEKALB (89),1,False,1,61,0,0,1,0,0,us_state,2,,US-23,US-23/SR-42/MORELAND AVE,Urban,5,overnight (midnight-5:59 a.m.),Thursday,False,1,33.66776389,-84.340197220
+2023,GA,131047,FULTON (121),2,True,2,66 66,1,0,1,0,0,interstate,1,I-285,I-285,I-285,Urban,8,morning (6-11:59 a.m.),Saturday,False,2,33.72189167,-84.502611110
+2023,GA,131050,MCINTOSH (191),1,True,1,66,0,1,0,0,0,interstate,1,I-95,I-95,I-95,Rural,20,evening (6-11:59 p.m.),Saturday,False,2,31.53670000,-81.444694440
+2023,GA,131069,BARROW (13),3,True,1,66,0,3,0,0,0,us_state,2,,US-29,US-29/SR-316/UNIV PKWY,Urban,4,overnight (midnight-5:59 a.m.),Thursday,False,3,33.94200000,-83.716025000
+2023,GA,131070,EFFINGHAM (103),1,False,1,65,0,0,1,0,0,us_state,3,,SR-30,SR-30,Urban,21,evening (6-11:59 p.m.),Friday,False,1,32.18871389,-81.332211110
+2023,GA,131071,WALTON (297),1,False,2,61 61,0,1,0,0,0,us_state,2,,US-78,US-78/SR-10,Urban,6,morning (6-11:59 a.m.),Saturday,False,6,33.80960000,-83.797311110
+2023,GA,131088,FLOYD (115),1,True,1,66,0,1,0,0,0,us_state,2,,US-27,US-27/SR-1/MARTHA BERRY HWY,Urban,6,morning (6-11:59 a.m.),Monday,False,2,34.34129722,-85.172375000
+2023,GA,131094,DEKALB (89),2,True,1,66,0,2,0,0,0,interstate,1,I-285,I-285,I-285,Urban,3,overnight (midnight-5:59 a.m.),Saturday,False,5,33.67999722,-84.315505560
+2023,GA,131095,CLAYTON (63),1,False,1,61,0,1,0,0,0,interstate,1,I-285,I-285,I-285,Urban,16,afternoon (noon-5:59 p.m.),Saturday,False,4,33.62969167,-84.415791670
+2023,GA,131104,BURKE (33),1,True,1,66,0,1,0,0,0,us_state,2,,US-25,US-25/SR-121,Rural,6,morning (6-11:59 a.m.),Wednesday,False,2,33.14156389,-82.036369440
+2023,GA,131111,SEMINOLE (253),2,False,1,61,1,1,0,0,0,us_state,3,,SR-39,SR-39,Rural,12,afternoon (noon-5:59 p.m.),Monday,False,2,30.88885556,-84.884033330
+2023,GA,131118,FULTON (121),1,True,1,66,0,1,0,0,0,us_state,3,,SR-70,SR-70,Urban,6,morning (6-11:59 a.m.),Friday,False,2,33.69646667,-84.607094440
+2023,GA,131124,BIBB (21),1,True,1,66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Urban,23,evening (6-11:59 p.m.),Sunday,False,3,32.79390000,-83.665400000
+2023,GA,131131,PEACH (225),1,False,1,62,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Urban,6,morning (6-11:59 a.m.),Wednesday,True,2,32.63833611,-83.743700000
+2023,GA,131152,HENRY (151),1,True,2,66 66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Urban,5,overnight (midnight-5:59 a.m.),Sunday,False,5,33.51899167,-84.246616670
+2023,GA,131156,TURNER (287),1,True,1,66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Urban,7,morning (6-11:59 a.m.),Monday,False,2,31.76368333,-83.673238890
+2023,GA,131163,LOWNDES (185),1,True,1,66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Urban,13,afternoon (noon-5:59 p.m.),Tuesday,False,4,30.75979167,-83.280797220
+2023,GA,131164,BRYAN (29),1,True,1,66,0,1,0,0,0,interstate,1,I-16,I-16,I-16,Urban,8,morning (6-11:59 a.m.),Wednesday,False,2,32.14478611,-81.417400000
+2023,GA,131195,HENRY (151),1,False,1,63,0,1,0,0,0,us_state,3,,SR-155,SR-155,Urban,13,afternoon (noon-5:59 p.m.),Monday,False,2,33.54763333,-84.137652780
+2023,GA,131196,CHEROKEE (57),1,True,1,66,0,1,0,0,0,us_state,3,,SR-372,SR-372,Rural,3,overnight (midnight-5:59 a.m.),Tuesday,False,2,34.32393889,-84.352797220
+2023,GA,131214,FORSYTH (117),1,False,1,61,0,1,0,0,0,us_state,3,,SR-9,SR-9,Urban,19,evening (6-11:59 p.m.),Friday,False,2,34.17923056,-84.156186110
+2023,GA,131231,BROOKS (27),2,True,1,66,0,2,0,0,0,us_state,2,,US-84,US-84/SR-38/THOMASVILLE RD,Rural,10,morning (6-11:59 a.m.),Saturday,False,2,30.79159444,-83.660563890
+2023,GA,131235,JASPER (159),1,False,1,63,0,1,0,0,0,other,4,,CR-028300,CR-028300,Urban,17,afternoon (noon-5:59 p.m.),Saturday,False,3,33.40646667,-83.641266670
+2023,GA,131237,GWINNETT (135),1,False,1,61,0,0,1,0,0,other,4,,CR-194500,CR-194500,Urban,19,evening (6-11:59 p.m.),Monday,False,1,33.93770278,-84.089919440
+2023,GA,131240,DEKALB (89),4,True,1,66,0,4,0,0,0,interstate,1,I-20,I-20,I-20,Urban,23,evening (6-11:59 p.m.),Tuesday,False,2,33.71165000,-84.217647220
+2023,GA,131241,TWIGGS (289),1,False,1,61,0,1,0,0,0,us_state,3,,SR-96,SR-96,Rural,16,afternoon (noon-5:59 p.m.),Wednesday,False,3,32.55310556,-83.426527780
+2023,GA,131242,DEKALB (89),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20 EB,Urban,0,overnight (midnight-5:59 a.m.),Thursday,False,2,33.71393056,-84.235863890
+2023,GA,131243,BARTOW (15),1,False,1,61,0,1,0,0,0,us_state,2,,US-411,US-411/SR-61,Rural,7,morning (6-11:59 a.m.),Thursday,False,2,34.32623333,-84.717822220
+2023,GA,131246,CAMDEN (39),1,True,2,62 66,1,0,0,0,0,interstate,1,I-95,I-95,I-95,Rural,3,overnight (midnight-5:59 a.m.),Friday,False,2,31.06753611,-81.628513890
+2023,GA,131258,CARROLL (45),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20 EB,Urban,19,evening (6-11:59 p.m.),Saturday,True,2,33.68757500,-85.113808330
+2023,GA,131267,LANIER (173),1,True,1,66,0,1,0,0,0,us_state,3,,SR-64,SR-64,Rural,18,evening (6-11:59 p.m.),Tuesday,False,2,31.11288889,-83.144188890
+2023,GA,131269,FULTON (121),1,False,1,78,0,1,0,0,0,interstate,1,I-285,I-285,I-285,Urban,2,overnight (midnight-5:59 a.m.),Wednesday,False,2,33.68740000,-84.500127780
+2023,GA,131281,GWINNETT (135),1,True,1,66,0,1,0,0,0,interstate,1,I-985,I-985,I-985,Urban,19,evening (6-11:59 p.m.),Sunday,False,3,34.08549167,-83.994180560
+2023,GA,131282,COBB (67),2,False,2,61 63,2,0,0,0,0,us_state,3,,SR-280,SR-280,Urban,12,afternoon (noon-5:59 p.m.),Thursday,False,2,33.82336111,-84.487297220
+2023,GA,131289,DECATUR (87),1,True,1,66,0,1,0,0,0,us_state,2,,,US-HWY 84,Urban,19,evening (6-11:59 p.m.),Tuesday,False,2,30.93301667,-84.644150000
+2023,GA,131293,CHATHAM (51),1,True,1,66,0,1,0,0,0,us_state,2,,US-80,US-80,Urban,16,afternoon (noon-5:59 p.m.),Wednesday,False,2,32.08687778,-81.159372220
+2023,GA,131310,THOMAS (275),1,True,1,66,0,1,0,0,0,us_state,2,,US-319,US-319/SR-35,Rural,10,morning (6-11:59 a.m.),Thursday,False,2,30.78120000,-84.054569440
+2023,GA,131312,RICHMOND (245),1,False,1,62,1,0,0,0,0,us_state,3,,SR-540,SR-540 DEANS BRIDGE RD,Urban,0,overnight (midnight-5:59 a.m.),Friday,False,1,33.38233611,-82.126522220
+2023,GA,131325,LOWNDES (185),1,True,1,66,0,0,1,0,0,interstate,1,I-75,I-75,I-75,Urban,1,overnight (midnight-5:59 a.m.),Monday,False,2,30.85693333,-83.335102780
+2023,GA,131326,EFFINGHAM (103),1,True,1,66,0,1,0,0,0,us_state,3,,SR-30,SR-30,Rural,12,afternoon (noon-5:59 p.m.),Monday,False,2,32.19549444,-81.300636110
+2023,GA,131331,CHEROKEE (57),1,True,1,66,1,0,0,0,0,interstate,1,I-575,I-575,I-575,Urban,9,morning (6-11:59 a.m.),Wednesday,False,1,34.22559167,-84.481344440
+2023,GA,131332,DOUGLAS (97),1,False,1,67,0,0,0,0,1,other,4,,CR-003900,CR-003900,Urban,13,afternoon (noon-5:59 p.m.),Wednesday,False,1,33.79987778,-84.626738890
+2023,GA,131334,HENRY (151),1,True,2,66 66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Urban,5,overnight (midnight-5:59 a.m.),Thursday,False,4,33.40786111,-84.156755560
+2023,GA,131349,COLQUITT (71),1,False,1,63,0,1,0,0,0,us_state,3,,SR-111,SR-111,Rural,9,morning (6-11:59 a.m.),Saturday,False,2,31.12621389,-83.951697220
+2023,GA,131356,BIBB (21),1,False,1,63,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Urban,13,afternoon (noon-5:59 p.m.),Monday,False,5,32.87458889,-83.662991670
+2023,GA,131357,BLECKLEY (23),1,True,1,66,0,1,0,0,0,us_state,3,,SR-257,SR-257,Rural,14,afternoon (noon-5:59 p.m.),Monday,False,2,32.32394444,-83.328333330
+2023,GA,131358,WHITE (311),1,True,1,66,0,1,0,0,0,us_state,3,,SR-115,SR-115,Rural,16,afternoon (noon-5:59 p.m.),Monday,False,3,34.54191944,-83.832222220
+2023,GA,131363,PICKENS (227),1,True,1,66,0,1,0,0,0,us_state,3,,SR-5,SR-5,Urban,6,morning (6-11:59 a.m.),Thursday,False,2,34.46538889,-84.458366670
+2023,GA,131368,APPLING (1),1,True,1,66,0,1,0,0,0,us_state,3,,SR-121,SR-121,Rural,17,afternoon (noon-5:59 p.m.),Friday,False,2,31.66411389,-82.206450000
+2023,GA,131382,JONES (169),2,True,1,66,0,2,0,0,0,us_state,3,,SR-11,SR-11,Rural,17,afternoon (noon-5:59 p.m.),Tuesday,False,2,32.96231667,-83.580888890
+2023,GA,131392,CHATHAM (51),1,True,1,66,0,1,0,0,0,us_state,2,,US-17,US-17/SR-25/OGEECHEE RD,Urban,18,evening (6-11:59 p.m.),Thursday,False,2,32.04218333,-81.190413890
+2023,GA,131394,LOWNDES (185),1,True,1,66,0,0,1,0,0,interstate,1,I-75,I-75,I-75,Rural,21,evening (6-11:59 p.m.),Thursday,False,3,30.63794444,-83.183825000
+2023,GA,131410,BURKE (33),1,True,1,66,0,1,0,0,0,us_state,3,,SR-56,SR-56,Rural,16,afternoon (noon-5:59 p.m.),Monday,False,4,33.11283056,-81.972552780
+2023,GA,131439,COBB (67),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20 EAST,Urban,2,overnight (midnight-5:59 a.m.),Sunday,False,2,33.76993056,-84.540088890
+2023,GA,131447,RICHMOND (245),1,True,1,66,0,1,0,0,0,us_state,2,,US-278,US-278 GORDON HWY,Urban,18,evening (6-11:59 p.m.),Wednesday,False,2,33.43896111,-82.013205560
+2023,GA,131458,CLAYTON (63),1,False,1,62,0,0,1,0,0,us_state,2,,US-19,US-19 SR-2 TARA BLVD,Urban,22,evening (6-11:59 p.m.),Sunday,False,2,33.52869444,-84.363422220
+2023,GA,131469,BARTOW (15),1,True,1,66,1,0,0,0,0,interstate,1,I-75,I-75,I-75,Urban,11,morning (6-11:59 a.m.),Thursday,False,1,34.22536111,-84.751969440
+2023,GA,131473,FULTON (121),1,True,1,66,0,1,0,0,0,us_state,2,,US-29,US-29,Urban,4,overnight (midnight-5:59 a.m.),Saturday,False,2,33.59446667,-84.549647220
+2023,GA,131478,CHEROKEE (57),1,False,1,67,0,1,0,0,0,us_state,3,,SR-92,SR-92,Urban,15,afternoon (noon-5:59 p.m.),Saturday,False,3,34.08772778,-84.590175000
+2023,GA,131491,TROUP (285),1,False,1,63,0,1,0,0,0,us_state,3,,SR-109,SR-109,Rural,15,afternoon (noon-5:59 p.m.),Tuesday,False,2,33.04229167,-84.947097220
+2023,GA,131493,MONROE (207),1,False,1,63,0,1,0,0,0,us_state,2,,US-41,US-41/SR-18/OLD ATLANTA HWY,Rural,9,morning (6-11:59 a.m.),Thursday,False,2,33.03654167,-83.999283330
+2023,GA,131513,HABERSHAM (137),1,False,1,61,0,1,0,0,0,us_state,2,,US-441,US-441/US 23/SR 15,Rural,13,afternoon (noon-5:59 p.m.),Thursday,False,3,34.64665833,-83.449477780
+2023,GA,131534,HENRY (151),1,False,1,62,1,0,0,0,0,us_state,3,,SR-42,SR-42,Urban,17,afternoon (noon-5:59 p.m.),Sunday,False,1,33.48111667,-84.167075000
+2023,GA,131537,CHATTOOGA (55),1,True,1,66,0,1,0,0,0,us_state,2,,US-27,US-27/SR-1/MARTH BERRY HWY,Rural,11,morning (6-11:59 a.m.),Saturday,False,3,34.46545278,-85.268497220
+2024,GA,130001,RICHMOND (245),1,False,1,61,0,1,0,0,0,interstate,1,I-520,I-520,I-520 WB,Urban,21,evening (6-11:59 p.m.),Monday,False,2,33.40852222,-81.982419440
+2024,GA,130011,UPSON (293),1,False,1,67,0,0,1,0,0,us_state,2,,US-19,US-19 SR-3,Urban,17,afternoon (noon-5:59 p.m.),Friday,False,1,32.89073333,-84.326205560
+2024,GA,130017,RICHMOND (245),1,False,1,62,0,1,0,0,0,other,4,,CR-221500,CR-221500,Urban,10,morning (6-11:59 a.m.),Monday,False,2,33.45678611,-82.030230560
+2024,GA,130021,HOUSTON (153),1,False,1,61,1,0,0,0,0,interstate,1,I-75,I-75,I-75,Urban,19,evening (6-11:59 p.m.),Monday,True,3,32.46506389,-83.747144440
+2024,GA,130028,FORSYTH (117),1,True,1,66,0,0,1,0,0,us_state,3,,SR-306,SR-306,Urban,20,evening (6-11:59 p.m.),Monday,False,2,34.25320278,-84.087477780
+2024,GA,130050,DEKALB (89),1,False,1,63,0,1,0,0,0,other,6,,,MU-241500 PANOLA INDUSTRIAL BL,Urban,13,afternoon (noon-5:59 p.m.),Friday,False,2,33.70649722,-84.174902780
+2024,GA,130070,FLOYD (115),1,False,1,61,0,1,0,0,0,us_state,3,,SR-0001,SR-0001,Urban,18,evening (6-11:59 p.m.),Saturday,False,2,34.19440833,-85.200802780
+2024,GA,130076,DOUGLAS (97),1,False,1,61,1,0,0,0,0,other,95,,,CS-KINGS HWY,Urban,10,morning (6-11:59 a.m.),Friday,False,1,33.66890000,-84.777094440
+2024,GA,130080,FORSYTH (117),1,False,1,63,0,1,0,0,0,other,4,,CR-002700,CR-002700,Urban,11,morning (6-11:59 a.m.),Monday,False,2,34.17149167,-84.243825000
+2024,GA,130087,MUSCOGEE (215),1,True,1,66,1,0,0,0,0,us_state,2,,US-80,US-80 SR-22,Urban,7,morning (6-11:59 a.m.),Thursday,False,1,32.52487222,-84.980938890
+2024,GA,130104,DECATUR (87),1,True,1,66,0,1,0,0,0,us_state,3,,SR-38,SR-38,Urban,17,afternoon (noon-5:59 p.m.),Thursday,False,2,30.88761944,-84.477841670
+2024,GA,130112,TIFT (277),1,True,1,66,0,0,1,0,0,interstate,1,I-75,I-75,I-75,Urban,4,overnight (midnight-5:59 a.m.),Wednesday,False,1,31.34800833,-83.487247220
+2024,GA,130117,CHATHAM (51),1,True,1,66,0,1,0,0,0,interstate,1,I-95,I-95,I-95,Urban,1,overnight (midnight-5:59 a.m.),Thursday,False,2,32.10489722,-81.237394440
+2024,GA,130129,WHITFIELD (313),1,False,1,67,0,1,0,0,0,us_state,3,,SR-3,SR-3,Urban,7,morning (6-11:59 a.m.),Wednesday,False,2,34.78806389,-84.924294440
+2024,GA,130144,MONROE (207),1,True,1,66,0,1,0,0,0,us_state,2,,US-41,US-41 SR-19,Rural,23,evening (6-11:59 p.m.),Monday,False,2,32.98096111,-83.876902780
+2024,GA,130156,RICHMOND (245),1,False,1,62,0,0,1,0,0,interstate,1,I-520,I-520,I-520 W,Urban,16,afternoon (noon-5:59 p.m.),Wednesday,False,1,33.44188611,-81.939925000
+2024,GA,130160,CHATHAM (51),2,True,1,66,1,1,0,0,0,other,96,,,GA VISITOR CENTER RD I-95,Unknown,19,evening (6-11:59 p.m.),Wednesday,False,6,32.21794444,-81.175622220
+2024,GA,130174,WALKER (295),1,False,1,62,0,1,0,0,0,other,4,,CR-070400,CR-070400,Urban,9,morning (6-11:59 a.m.),Friday,False,3,34.96222222,-85.297466670
+2024,GA,130178,CLAYTON (63),1,False,1,62,0,0,1,0,0,interstate,1,I-75,I-75,I-75,Urban,0,overnight (midnight-5:59 a.m.),Tuesday,False,1,33.56729167,-84.323316670
+2024,GA,130180,CARROLL (45),1,True,1,66,0,1,0,0,0,us_state,3,,SR-166,SR-166,Rural,17,afternoon (noon-5:59 p.m.),Thursday,False,2,33.55908056,-85.186811110
+2024,GA,130200,DOUGHERTY (95),1,True,1,66,0,1,0,0,0,us_state,3,,SR-023400,SR-023400,Urban,18,evening (6-11:59 p.m.),Wednesday,False,2,31.54905833,-84.171786110
+2024,GA,130206,ROCKDALE (247),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20 WB,Urban,1,overnight (midnight-5:59 a.m.),Wednesday,False,2,33.66170000,-84.024611110
+2024,GA,130209,CLAYTON (63),1,True,1,66,0,0,1,0,0,interstate,1,I-75,I-75,I-75 SB,Urban,21,evening (6-11:59 p.m.),Wednesday,False,2,33.61096389,-84.396705560
+2024,GA,130216,DEKALB (89),1,False,1,62,0,1,0,0,0,other,6,,,MU-634200 STONE MTN LITHONIA R,Urban,15,afternoon (noon-5:59 p.m.),Friday,False,3,33.73829722,-84.119041670
+2024,GA,130217,COOK (75),1,False,1,67,0,1,0,0,0,other,4,,CR-25,CR-25,Rural,17,afternoon (noon-5:59 p.m.),Friday,False,2,31.08741389,-83.556619440
+2024,GA,130226,GRADY (131),1,False,1,63,0,0,0,1,0,other,4,,CR-312,CR-312 JOWERS RD,Rural,16,afternoon (noon-5:59 p.m.),Monday,False,1,30.90166667,-84.367280560
+2024,GA,130228,COBB (67),2,True,1,66,0,2,0,0,0,interstate,1,I-75,I-75,I-75,Urban,2,overnight (midnight-5:59 a.m.),Saturday,False,3,33.93826389,-84.499800000
+2024,GA,130234,WARREN (301),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Rural,15,afternoon (noon-5:59 p.m.),Friday,False,2,33.50117500,-82.822330560
+2024,GA,130241,COBB (67),1,True,1,66,0,0,1,0,0,interstate,1,I-75,I-75,I-75,Urban,3,overnight (midnight-5:59 a.m.),Wednesday,False,2,33.96989444,-84.528105560
+2024,GA,130252,PIERCE (229),1,True,1,66,0,1,0,0,0,us_state,3,,SR-15,SR-15,Rural,5,overnight (midnight-5:59 a.m.),Thursday,False,2,31.46167222,-82.211322220
+2024,GA,130265,LAURENS (175),1,True,1,66,1,0,0,0,0,us_state,3,,SR-29,SR-29,Rural,12,afternoon (noon-5:59 p.m.),Thursday,False,1,32.66571667,-83.051177780
+2024,GA,130278,JEFFERSON (163),1,True,1,66,0,1,0,0,0,us_state,3,,SR-540,SR-540,Rural,13,afternoon (noon-5:59 p.m.),Monday,False,2,33.15743889,-82.456313890
+2024,GA,130286,COOK (75),1,True,1,66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Urban,22,evening (6-11:59 p.m.),Wednesday,False,2,31.18410556,-83.453675000
+2024,GA,130289,DEKALB (89),1,False,1,61,0,0,1,0,0,interstate,1,I-20,I-20,I-20,Urban,1,overnight (midnight-5:59 a.m.),Thursday,True,1,33.70318889,-84.158225000
+2024,GA,130297,GWINNETT (135),1,False,1,63,0,1,0,0,0,us_state,3,,SR-378,SR-378,Urban,11,morning (6-11:59 a.m.),Friday,False,2,33.93118333,-84.148058330
+2024,GA,130309,SPALDING (255),1,True,1,66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Rural,19,evening (6-11:59 p.m.),Monday,False,3,33.27478611,-84.104511110
+2024,GA,130310,MONROE (207),1,True,1,66,0,1,0,0,0,us_state,3,,SR-83,SR-83,Rural,18,evening (6-11:59 p.m.),Sunday,False,2,33.13101944,-83.871266670
+2024,GA,130315,RICHMOND (245),1,True,2,66 67,1,0,0,0,0,us_state,3,,SR-4,SR-4,Urban,9,morning (6-11:59 a.m.),Thursday,False,4,33.35195556,-82.144600000
+2024,GA,130322,FULTON (121),1,False,1,65,0,0,0,0,1,us_state,3,,SR-9,SR-9,Urban,17,afternoon (noon-5:59 p.m.),Saturday,False,1,33.78993056,-84.389405560
+2024,GA,130328,DEKALB (89),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Urban,1,overnight (midnight-5:59 a.m.),Saturday,False,4,33.71159722,-84.218500000
+2024,GA,130334,BAKER (7),1,True,1,66,0,1,0,0,0,us_state,3,,SR-37,SR-37,Rural,13,afternoon (noon-5:59 p.m.),Friday,False,2,31.31070278,-84.347786110
+2024,GA,130340,GWINNETT (135),1,False,1,63,0,1,0,0,0,interstate,1,I-85,I-85,I-85,Urban,5,overnight (midnight-5:59 a.m.),Saturday,False,2,33.94809167,-84.138250000
+2024,GA,130347,HENRY (151),1,True,3,61 66 66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Urban,4,overnight (midnight-5:59 a.m.),Tuesday,False,4,33.46504444,-84.211069440
+2024,GA,130348,GWINNETT (135),1,False,1,62,0,1,0,0,0,other,4,,CR-185000,CR-185000 DAWSON BLVD,Urban,17,afternoon (noon-5:59 p.m.),Tuesday,False,2,33.90871111,-84.227669440
+2024,GA,130349,APPLING (1),1,True,1,66,0,1,0,0,0,us_state,3,,SR-27,SR-27,Urban,16,afternoon (noon-5:59 p.m.),Wednesday,False,2,31.76600000,-82.312308330
+2024,GA,130353,HENRY (151),1,False,1,61,0,1,0,0,0,us_state,3,,SR-155,SR-155,Urban,8,morning (6-11:59 a.m.),Thursday,False,3,33.56721111,-84.142600000
+2024,GA,130357,BIBB (21),1,False,1,63,1,0,0,0,0,interstate,1,I-475,I-475,I-475,Urban,12,afternoon (noon-5:59 p.m.),Friday,False,1,32.87984722,-83.768694440
+2024,GA,130371,PEACH (225),1,False,1,61,0,1,0,0,0,us_state,3,,SR-49,SR-49,Urban,15,afternoon (noon-5:59 p.m.),Thursday,False,2,32.64120278,-83.765227780
+2024,GA,130372,MCINTOSH (191),1,True,1,66,0,1,0,0,0,us_state,3,,SR-25,SR-25,Rural,16,afternoon (noon-5:59 p.m.),Thursday,False,2,31.56836944,-81.421361110
+2024,GA,130387,EARLY (99),1,False,1,61,0,1,0,0,0,us_state,3,,SR-39,SR-39,Rural,19,evening (6-11:59 p.m.),Monday,False,2,31.27532778,-84.921500000
+2024,GA,130392,DEKALB (89),1,True,1,66,0,0,1,0,0,interstate,1,I-285,I-285,I-285 EB,Urban,3,overnight (midnight-5:59 a.m.),Monday,False,1,33.69868611,-84.277494440
+2024,GA,130394,CHATTOOGA (55),1,False,1,67,0,1,0,0,0,us_state,3,,SR-1,SR-1,Rural,13,afternoon (noon-5:59 p.m.),Monday,False,4,34.47130278,-85.304686110
+2024,GA,130403,FLOYD (115),1,True,1,66,0,1,0,0,0,us_state,3,,SR-53,SR-53,Urban,22,evening (6-11:59 p.m.),Thursday,False,2,34.35804722,-85.058913890
+2024,GA,130404,DEKALB (89),1,False,1,67,0,1,0,0,0,other,4,,CR-044200,CR-044200,Urban,8,morning (6-11:59 a.m.),Friday,False,2,33.71104167,-84.252536110
+2024,GA,130410,HOUSTON (153),1,False,1,65,1,0,0,0,0,interstate,1,I-75,I-75,I-75 NB AT MM 125,Rural,17,afternoon (noon-5:59 p.m.),Wednesday,False,2,32.30880278,-83.762763890
+2024,GA,130415,BARTOW (15),1,True,1,66,1,0,0,0,0,other,4,,CR-045200,CR-045200,Rural,14,afternoon (noon-5:59 p.m.),Thursday,False,1,34.33753056,-84.851991670
+2024,GA,130429,WHEELER (309),1,True,1,66,1,0,0,0,0,us_state,3,,SR-19,SR-19,Rural,6,morning (6-11:59 a.m.),Thursday,False,1,32.02331667,-82.658786110
+2024,GA,130430,GWINNETT (135),1,True,1,66,0,1,0,0,0,interstate,1,I-85,I-85,I-85,Urban,7,morning (6-11:59 a.m.),Thursday,False,2,34.05580278,-84.001994440
+2024,GA,130431,MCDUFFIE (189),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20 WB,Urban,12,afternoon (noon-5:59 p.m.),Thursday,False,2,33.51348333,-82.484963890
+2024,GA,130441,DEKALB (89),1,True,1,66,0,0,1,0,0,interstate,1,I-285,I-285,I-285,Urban,23,evening (6-11:59 p.m.),Saturday,False,2,33.70130833,-84.252991670
+2024,GA,130453,LOWNDES (185),1,False,1,67,0,1,0,0,0,us_state,2,,US-221,US-221 SR-31,Urban,7,morning (6-11:59 a.m.),Thursday,False,2,30.92342778,-83.165958330
+2024,GA,130464,TROUP (285),1,False,1,61,0,1,0,0,0,us_state,3,,SR-14,SR-14,Urban,12,afternoon (noon-5:59 p.m.),Thursday,False,2,33.07695833,-84.948813890
+2024,GA,130469,LEE (177),1,False,1,67,0,0,1,0,0,us_state,3,,SR-3,SR-3,Urban,5,overnight (midnight-5:59 a.m.),Friday,False,2,31.64528056,-84.174616670
+2024,GA,130483,COBB (67),1,False,1,61,0,0,1,0,0,us_state,3,,SR-5,SR-5 AUSTELL RD,Urban,5,overnight (midnight-5:59 a.m.),Saturday,False,2,33.89033056,-84.580069440
+2024,GA,130490,BARTOW (15),5,True,1,66,0,5,0,0,0,interstate,1,I-75,I-75,I-75,Urban,17,afternoon (noon-5:59 p.m.),Sunday,False,5,34.15269722,-84.747769440
+2024,GA,130496,WILKINSON (319),1,True,2,66 66,1,0,0,0,0,us_state,3,,SR-29,SR-29,Rural,15,afternoon (noon-5:59 p.m.),Tuesday,False,2,32.68600278,-83.085819440
+2024,GA,130497,GREENE (133),2,True,1,66,0,2,0,0,0,interstate,1,I-20,I-20,I-20 WB,Rural,18,evening (6-11:59 p.m.),Tuesday,True,2,33.54542500,-83.212416670
+2024,GA,130498,BARTOW (15),1,True,1,66,0,1,0,0,0,us_state,3,,SR-61,SR-61,Rural,6,morning (6-11:59 a.m.),Wednesday,False,2,34.38669167,-84.706680560
+2024,GA,130500,ATKINSON (3),1,False,1,61,0,1,0,0,0,us_state,3,,SR-520,SR-520,Rural,1,overnight (midnight-5:59 a.m.),Friday,False,2,31.33741111,-83.034833330
+2024,GA,130504,MURRAY (213),1,False,1,67,1,0,0,0,0,us_state,3,,SR-61,SR-61,Rural,23,evening (6-11:59 p.m.),Saturday,False,1,34.93607778,-84.747016670
+2024,GA,130506,UPSON (293),1,False,1,67,1,0,0,0,0,other,4,,CR-042800,CR-042800,Rural,9,morning (6-11:59 a.m.),Sunday,False,1,32.99006389,-84.297355560
+2024,GA,130514,CHATHAM (51),1,False,1,61,0,0,1,0,0,other,95,,,CS-E VICTORY DR,Urban,14,afternoon (noon-5:59 p.m.),Thursday,False,1,32.04304722,-81.067430560
+2024,GA,130523,PEACH (225),1,False,1,62,0,1,0,0,0,us_state,3,,SR-49,SR-49,Urban,12,afternoon (noon-5:59 p.m.),Tuesday,False,2,32.56851667,-83.931997220
+2024,GA,130530,LUMPKIN (187),1,False,1,61,0,1,0,0,0,us_state,3,,SR-52,SR-52,Rural,9,morning (6-11:59 a.m.),Thursday,False,2,34.54676944,-84.134419440
+2024,GA,130539,CRISP (81),1,False,1,64,1,0,0,0,0,interstate,1,I-75,I-75,I-75,Urban,0,overnight (midnight-5:59 a.m.),Tuesday,False,1,31.93021111,-83.746916670
+2024,GA,130541,TIFT (277),5,True,1,66,0,5,0,0,0,interstate,1,I-75,I-75,I-75,Rural,18,evening (6-11:59 p.m.),Tuesday,False,2,31.54894444,-83.533533330
+2024,GA,130552,FLOYD (115),2,True,1,66,0,2,0,0,0,us_state,3,,SR-20,SR-20,Rural,8,morning (6-11:59 a.m.),Saturday,False,4,34.25581944,-85.439800000
+2024,GA,130567,PEACH (225),1,True,1,66,0,1,0,0,0,us_state,3,,SR-7,SR-7,Urban,17,afternoon (noon-5:59 p.m.),Thursday,False,2,32.52623889,-83.866905560
+2024,GA,130568,DEKALB (89),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Urban,1,overnight (midnight-5:59 a.m.),Friday,False,2,33.70828889,-84.205397220
+2024,GA,130578,DOUGLAS (97),1,False,1,63,0,1,0,0,0,other,4,,CR-813,CR-813,Urban,6,morning (6-11:59 a.m.),Tuesday,False,2,33.77430278,-84.787880560
+2024,GA,130581,FULTON (121),1,False,1,62,0,1,0,0,0,us_state,3,,SR-14,SR-14,Urban,1,overnight (midnight-5:59 a.m.),Friday,False,2,33.62352500,-84.579252780
+2024,GA,130588,TALBOT (263),1,True,1,66,0,1,0,0,0,other,4,,CR-017400,CR-017400,Rural,8,morning (6-11:59 a.m.),Monday,False,2,32.82465278,-84.524511110
+2024,GA,130590,WORTH (321),1,False,1,61,0,1,0,0,0,us_state,3,,SR-33,SR-33,Rural,7,morning (6-11:59 a.m.),Tuesday,False,2,31.68374444,-83.807988890
+2024,GA,130607,GWINNETT (135),1,True,1,66,0,1,0,0,0,interstate,1,I-85,I-85,I-85 NB,Urban,23,evening (6-11:59 p.m.),Sunday,True,2,33.90729444,-84.232708330
+2024,GA,130618,TOOMBS (279),1,True,1,66,0,0,1,0,0,us_state,3,,SR-4,SR-4,Rural,13,afternoon (noon-5:59 p.m.),Friday,False,1,32.08939722,-82.362700000
+2024,GA,130620,GWINNETT (135),1,False,1,61,0,1,0,0,0,us_state,3,,SR-8,SR-8,Urban,23,evening (6-11:59 p.m.),Monday,False,2,33.90011111,-84.130611110
+2024,GA,130622,RANDOLPH (243),1,True,1,66,0,1,0,0,0,us_state,2,,US-82,US-82,Rural,13,afternoon (noon-5:59 p.m.),Tuesday,False,2,31.79543889,-84.851483330
+2024,GA,130630,LOWNDES (185),1,False,1,67,1,0,0,0,0,interstate,1,I-75,I-75,I-75,Rural,20,evening (6-11:59 p.m.),Sunday,False,1,30.73072778,-83.261838890
+2024,GA,130631,FAYETTE (113),1,True,1,66,0,1,0,0,0,us_state,3,,SR-009200,SR-009200,Rural,9,morning (6-11:59 a.m.),Monday,False,2,33.30937778,-84.394111110
+2024,GA,130641,LOWNDES (185),1,True,1,66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Rural,23,evening (6-11:59 p.m.),Thursday,False,2,30.95422778,-83.376283330
+2024,GA,130651,EFFINGHAM (103),1,True,1,66,0,1,0,0,0,us_state,3,,SR-21,SR-21,Rural,15,afternoon (noon-5:59 p.m.),Tuesday,False,2,32.47560833,-81.412316670
+2024,GA,130659,MONROE (207),1,True,1,66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Rural,14,afternoon (noon-5:59 p.m.),Monday,False,2,32.98836389,-83.839836110
+2024,GA,130665,BAKER (7),1,True,1,66,0,1,0,0,0,us_state,3,,SR-216,SR-216,Rural,13,afternoon (noon-5:59 p.m.),Monday,False,2,31.37611944,-84.565425000
+2024,GA,130670,DEKALB (89),1,True,1,66,0,0,1,0,0,interstate,1,I-20,I-20,I-20,Urban,22,evening (6-11:59 p.m.),Saturday,False,1,33.70184167,-84.107391670
+2024,GA,130676,FAYETTE (113),1,False,1,67,0,1,0,0,0,us_state,3,,SR-54,SR-54 FLOY FARR PKWY,Urban,11,morning (6-11:59 a.m.),Friday,False,6,33.44871667,-84.486302780
+2024,GA,130679,CHATTAHOOCHEE (53),1,True,1,66,0,1,0,0,0,us_state,3,,SR-520,SR-520,Rural,12,afternoon (noon-5:59 p.m.),Sunday,False,2,32.30022500,-84.780250000
+2024,GA,130699,BARTOW (15),1,True,1,66,1,0,0,0,0,interstate,1,I-75,I-75,I-75,Urban,20,evening (6-11:59 p.m.),Monday,False,1,34.08026944,-84.671991670
+2024,GA,130700,EFFINGHAM (103),1,True,1,66,0,1,0,0,0,us_state,3,,SR-17,SR-17,Rural,10,morning (6-11:59 a.m.),Tuesday,False,2,32.26773056,-81.389183330
+2024,GA,130702,WASHINGTON (303),1,False,1,67,0,0,1,0,0,us_state,3,,SR-68,SR-68,Rural,5,overnight (midnight-5:59 a.m.),Thursday,False,1,32.87643333,-82.844936110
+2024,GA,130703,MONROE (207),1,False,1,62,1,0,0,0,0,us_state,3,,SR-401,SR-401 MM 195 S,Rural,9,morning (6-11:59 a.m.),Thursday,False,1,33.13681667,-84.019936110
+2024,GA,130710,NEWTON (217),1,False,1,61,0,1,0,0,0,other,4,,CR-051800,CR-051800,Urban,9,morning (6-11:59 a.m.),Sunday,True,2,33.61145556,-83.919686110
+2024,GA,130711,BRYAN (29),1,True,1,66,0,1,0,0,0,interstate,1,I-16,I-16,I-16,Rural,4,overnight (midnight-5:59 a.m.),Tuesday,False,4,32.19538889,-81.479069440
+2024,GA,130712,CARROLL (45),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Urban,16,afternoon (noon-5:59 p.m.),Wednesday,False,2,33.71731111,-85.022730560
+2024,GA,130732,BARTOW (15),1,False,1,61,1,0,0,0,0,other,4,,CR-62700,CR-62700,Urban,10,morning (6-11:59 a.m.),Friday,False,1,34.34372222,-84.938013890
+2024,GA,130738,CLAYTON (63),1,True,1,66,0,0,1,0,0,interstate,1,I-285,I-285E,I-285E/I-75S RAMP,Urban,4,overnight (midnight-5:59 a.m.),Saturday,False,2,33.63198333,-84.404813890
+2024,GA,130740,BARROW (13),1,False,1,63,1,0,0,0,0,us_state,3,,SR-11,SR-11,Urban,10,morning (6-11:59 a.m.),Wednesday,False,1,33.95469722,-83.721383330
+2024,GA,130766,DEKALB (89),1,True,1,66,0,1,0,0,0,interstate,1,I-85,I-85,I-85 RAMP,Urban,4,overnight (midnight-5:59 a.m.),Sunday,False,2,33.89381111,-84.255313890
+2024,GA,130776,FANNIN (111),1,False,1,63,0,1,0,0,0,us_state,3,,SR-2,SR-2,Rural,13,afternoon (noon-5:59 p.m.),Friday,False,2,34.88906389,-84.223250000
+2024,GA,130780,HOUSTON (153),1,True,1,66,1,0,0,0,0,interstate,1,I-75,I-75,I-75,Urban,14,afternoon (noon-5:59 p.m.),Saturday,False,1,32.43233611,-83.756952780
+2024,GA,130785,RICHMOND (245),3,False,1,61,0,3,0,0,0,us_state,3,,SR-4,SR-4,Urban,20,evening (6-11:59 p.m.),Friday,False,2,33.33907222,-82.155441670
+2024,GA,130790,RICHMOND (245),1,True,1,66,0,1,0,0,0,us_state,3,,SR-012100,SR-012100,Urban,6,morning (6-11:59 a.m.),Saturday,False,3,33.37310833,-82.031780560
+2024,GA,130791,CARROLL (45),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Urban,11,morning (6-11:59 a.m.),Friday,False,3,33.71731389,-85.022600000
+2024,GA,130797,COWETA (77),1,False,1,67,0,1,0,0,0,us_state,3,,SR-14,SR-14,Urban,20,evening (6-11:59 p.m.),Saturday,False,2,33.50839167,-84.671030560
+2024,GA,130813,APPLING (1),1,True,1,66,0,1,0,0,0,us_state,2,,US-341,US-341 SR-27 W PARKER ST,Urban,10,morning (6-11:59 a.m.),Tuesday,False,2,31.78170833,-82.358441670
+2024,GA,130816,COFFEE (69),1,True,1,66,0,1,0,0,0,us_state,3,,SR-32,SR-32,Rural,2,overnight (midnight-5:59 a.m.),Sunday,False,2,31.56458333,-82.999125000
+2024,GA,130822,COBB (67),1,True,1,66,0,1,0,0,0,interstate,1,I-75,I-75,I-75 SB EXPY,Urban,2,overnight (midnight-5:59 a.m.),Saturday,False,2,33.92330556,-84.485919440
+2024,GA,130833,OGLETHORPE (221),1,True,1,66,0,0,1,0,0,us_state,3,,SR-22,SR-22,Rural,2,overnight (midnight-5:59 a.m.),Friday,False,1,33.74698333,-83.018402780
+2024,GA,130853,CRISP (81),1,True,1,66,0,1,0,0,0,us_state,3,,SR-30,SR-30,Rural,7,morning (6-11:59 a.m.),Wednesday,False,2,31.96792778,-83.913277780
+2024,GA,130855,MCDUFFIE (189),1,False,1,78,0,1,0,0,0,us_state,3,,SR-001000,SR-001000,Rural,16,afternoon (noon-5:59 p.m.),Thursday,False,2,33.41846944,-82.357422220
+2024,GA,130860,FLOYD (115),1,False,1,63,0,1,0,0,0,other,95,,,CS-N BROAD ST,Urban,16,afternoon (noon-5:59 p.m.),Wednesday,False,2,34.26326944,-85.157969440
+2024,GA,130861,GWINNETT (135),1,True,2,66 66,0,1,0,0,0,interstate,1,I-85,I-85,I-85 SR-403,Urban,0,overnight (midnight-5:59 a.m.),Thursday,False,3,33.92338333,-84.186277780
+2024,GA,130864,PICKENS (227),1,False,1,63,0,1,0,0,0,us_state,3,,SR-5,SR-5,Rural,13,afternoon (noon-5:59 p.m.),Friday,False,2,34.39116667,-84.406030560
+2024,GA,130883,BIBB (21),1,True,1,66,0,1,0,0,0,interstate,1,I-16,I-16,I-16 EB,Urban,13,afternoon (noon-5:59 p.m.),Thursday,False,2,32.81600000,-83.582672220
+2024,GA,130887,TREUTLEN (283),1,True,1,66,0,1,0,0,0,us_state,3,,SR-29,SR-29,Rural,10,morning (6-11:59 a.m.),Saturday,False,2,32.38944444,-82.610608330
+2024,GA,130891,HALL (139),1,False,1,67,0,0,0,1,0,other,4,,CR-030900,CR-030900 GREEN HILL CIR,Urban,18,evening (6-11:59 p.m.),Tuesday,False,1,34.29024444,-83.859791670
+2024,GA,130892,COOK (75),1,False,1,78,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Rural,12,afternoon (noon-5:59 p.m.),Wednesday,False,2,31.21878611,-83.460502780
+2024,GA,130918,FLOYD (115),1,False,1,63,0,1,0,0,0,us_state,2,,US-27,US-27 SR-1 MARTHA BERRY HWY,Urban,6,morning (6-11:59 a.m.),Wednesday,False,2,34.29056111,-85.180266670
+2024,GA,130919,PUTNAM (237),1,False,1,62,0,1,0,0,0,us_state,3,,SR-16,SR-16,Rural,15,afternoon (noon-5:59 p.m.),Friday,False,2,33.34117778,-83.315805560
+2024,GA,130931,CARROLL (45),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Urban,14,afternoon (noon-5:59 p.m.),Monday,False,2,33.68518889,-85.133600000
+2024,GA,130932,FULTON (121),1,True,1,66,0,1,0,0,0,other,6,,,MU-639607,Urban,17,afternoon (noon-5:59 p.m.),Tuesday,False,2,33.64152222,-84.500163890
+2024,GA,130933,BUTTS (35),1,True,1,66,0,1,0,0,0,us_state,3,,SR-36,SR-36,Rural,19,evening (6-11:59 p.m.),Monday,False,2,33.23803889,-84.025338890
+2024,GA,130948,FULTON (121),1,False,1,63,0,1,0,0,0,interstate,1,I-75,I-75,I-75 SR-401 HORACE E TATE FWY,Urban,13,afternoon (noon-5:59 p.m.),Friday,False,3,33.80451667,-84.412147220
+2024,GA,130951,FULTON (121),1,True,1,66,0,1,0,0,0,other,6,,,MU-902800 CASCADE PALMETTO HWY,Urban,4,overnight (midnight-5:59 a.m.),Sunday,False,2,33.65358056,-84.660530560
+2024,GA,130953,DOUGLAS (97),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Urban,3,overnight (midnight-5:59 a.m.),Wednesday,False,2,33.73340000,-84.736094440
+2024,GA,130957,BURKE (33),1,True,1,66,0,1,0,0,0,us_state,2,,US-25,US-25,Urban,19,evening (6-11:59 p.m.),Saturday,False,2,33.10057778,-81.997961110
+2024,GA,130967,THOMAS (275),1,False,1,67,0,0,1,0,0,us_state,3,,SR-300,SR-300,Rural,18,evening (6-11:59 p.m.),Friday,False,2,31.02219167,-84.058441670
+2024,GA,130977,WALTON (297),1,False,1,67,0,1,0,0,0,other,4,,CR-042800,CR-042800,Rural,13,afternoon (noon-5:59 p.m.),Monday,False,2,33.88981667,-83.693550000
+2024,GA,130978,MCINTOSH (191),1,True,1,66,0,1,0,0,0,interstate,1,I-95,I-95,I-95 SR-405,Rural,0,overnight (midnight-5:59 a.m.),Saturday,False,3,31.43071667,-81.443525000
+2024,GA,130981,MERIWETHER (199),1,False,1,78,0,1,0,0,0,us_state,2,,US-27,US-27 ALSR18/41 S TALBOTTON ST,Rural,3,overnight (midnight-5:59 a.m.),Thursday,False,2,33.00779444,-84.709072220
+2024,GA,130987,TROUP (285),1,True,1,66,0,0,0,1,0,us_state,3,,SR-1,SR-1,Urban,8,morning (6-11:59 a.m.),Tuesday,False,1,33.05248333,-85.028663890
+2024,GA,130990,WARREN (301),1,False,1,62,1,0,0,0,0,interstate,1,I-20,I-20,I-20 EAST,Rural,13,afternoon (noon-5:59 p.m.),Wednesday,False,1,33.50189444,-82.824580560
+2024,GA,130998,LUMPKIN (187),1,True,1,66,0,1,0,0,0,us_state,3,,SR-11,SR-11,Rural,12,afternoon (noon-5:59 p.m.),Monday,False,2,34.68389167,-83.895094440
+2024,GA,131005,MORGAN (211),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20 SR-402,Rural,22,evening (6-11:59 p.m.),Wednesday,False,2,33.58226389,-83.593419440
+2024,GA,131009,TURNER (287),1,True,1,66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Rural,0,overnight (midnight-5:59 a.m.),Monday,False,2,31.71502778,-83.638672220
+2024,GA,131010,PICKENS (227),1,True,1,66,0,0,1,0,0,us_state,3,,SR-515,SR-515,Rural,4,overnight (midnight-5:59 a.m.),Friday,False,1,34.40626667,-84.421850000
+2024,GA,131013,TELFAIR (271),1,False,1,67,0,1,0,0,0,other,4,,CR-026700,CR-026700 TOM HALEY RD,Rural,13,afternoon (noon-5:59 p.m.),Monday,False,2,31.93876944,-82.810088890
+2024,GA,131023,DEKALB (89),1,True,1,66,0,1,0,0,0,us_state,2,,US-23,US-23/SR-42 MORELAND AVE,Urban,6,morning (6-11:59 a.m.),Friday,False,2,33.64855278,-84.330500000
+2024,GA,131037,MONROE (207),1,True,1,66,1,0,0,0,0,us_state,3,,SR-74,SR-74,Rural,9,morning (6-11:59 a.m.),Friday,False,1,32.87599444,-84.030683330
+2024,GA,131046,JONES (169),1,True,1,66,0,1,0,0,0,us_state,3,,SR-001100,SR-001100,Urban,13,afternoon (noon-5:59 p.m.),Wednesday,False,2,32.90046667,-83.591391670
+2024,GA,131047,RICHMOND (245),1,True,1,66,0,0,1,0,0,us_state,3,,SR-121,SR-121 PEACH ORCHARD RD,Urban,21,evening (6-11:59 p.m.),Wednesday,False,1,33.29575556,-82.050616670
+2024,GA,131050,DODGE (91),2,False,1,61,0,2,0,0,0,us_state,2,,US-23,US-23/341/SR-27 GOLDEN ISLES,Rural,11,morning (6-11:59 a.m.),Thursday,False,3,32.10301944,-83.023208330
+2024,GA,131057,HARALSON (143),1,True,1,66,0,1,0,0,0,us_state,3,,SR-78,SR-78,Rural,10,morning (6-11:59 a.m.),Friday,False,2,33.73031111,-85.066986110
+2024,GA,131059,MILLER (201),1,False,1,72,0,1,0,0,0,us_state,3,,SR-45,SR-45,Rural,14,afternoon (noon-5:59 p.m.),Friday,False,2,31.07901667,-84.785450000
+2024,GA,131082,MERIWETHER (199),1,True,3,61 66 66,1,0,0,0,0,interstate,1,I-85,I-85,I-85,Rural,21,evening (6-11:59 p.m.),Wednesday,False,3,33.19923611,-84.840450000
+2024,GA,131087,LOWNDES (185),1,True,1,66,0,1,0,0,0,us_state,3,,SR-41,SR-41,Rural,7,morning (6-11:59 a.m.),Friday,False,2,30.96638056,-83.358341670
+2024,GA,131091,TOOMBS (279),1,False,1,63,0,1,0,0,0,us_state,3,,SR-15,SR-15,Rural,13,afternoon (noon-5:59 p.m.),Saturday,False,2,32.12824167,-82.396958330
+2024,GA,131102,PICKENS (227),1,True,1,66,0,1,0,0,0,us_state,3,,SR-5,SR-5,Urban,13,afternoon (noon-5:59 p.m.),Wednesday,False,2,34.46534722,-84.458372220
+2024,GA,131111,PAULDING (223),1,True,1,66,0,1,0,0,0,us_state,3,,SR-6,SR-6,Urban,19,evening (6-11:59 p.m.),Saturday,False,2,33.90937500,-84.813619440
+2024,GA,131115,DEKALB (89),1,False,1,63,0,1,0,0,0,interstate,1,I-285,I-285,I-285,Urban,2,overnight (midnight-5:59 a.m.),Tuesday,False,2,33.92017778,-84.311583330
+2024,GA,131126,PIKE (231),1,True,1,66,0,1,0,0,0,us_state,2,,US-41,US-41 SR-7,Rural,16,afternoon (noon-5:59 p.m.),Tuesday,False,2,33.16155833,-84.256611110
+2024,GA,131136,COBB (67),1,True,1,66,0,0,1,0,0,interstate,1,I-75,I-75,I-75,Urban,5,overnight (midnight-5:59 a.m.),Friday,False,3,33.91998056,-84.483647220
+2024,GA,131140,BALDWIN (9),1,True,1,66,0,1,0,0,0,us_state,3,,SR-49,SR-49,Urban,7,morning (6-11:59 a.m.),Friday,False,2,33.07254722,-83.251102780
+2024,GA,131145,HARRIS (145),1,True,1,66,0,1,0,0,0,us_state,3,,SR-103,SR-103,Rural,12,afternoon (noon-5:59 p.m.),Monday,False,3,32.83137222,-85.111169440
+2024,GA,131160,CATOOSA (47),1,True,1,66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Urban,8,morning (6-11:59 a.m.),Wednesday,False,2,34.96740000,-85.190888890
+2024,GA,131168,FAYETTE (113),1,False,1,67,0,1,0,0,0,other,4,,CR-126,CR-126,Rural,14,afternoon (noon-5:59 p.m.),Tuesday,False,2,33.36658889,-84.484800000
+2024,GA,131183,LUMPKIN (187),1,False,1,61,0,0,1,0,0,us_state,3,,SR-9,SR-9,Rural,18,evening (6-11:59 p.m.),Friday,False,1,34.52703611,-83.979250000
+2024,GA,131201,PICKENS (227),1,False,1,63,0,1,0,0,0,us_state,3,,SR-5,SR-5,Urban,20,evening (6-11:59 p.m.),Sunday,False,2,34.43114444,-84.434325000
+2024,GA,131203,GREENE (133),1,True,1,66,0,1,0,0,0,us_state,3,,SR-44,SR-44,Rural,13,afternoon (noon-5:59 p.m.),Monday,True,3,33.63249722,-83.036500000
+2024,GA,131215,CHATHAM (51),1,False,1,67,0,1,0,0,0,us_state,3,,SR-204,SR-204,Urban,18,evening (6-11:59 p.m.),Tuesday,False,2,32.00439167,-81.282269440
+2024,GA,131216,BIBB (21),1,True,1,66,0,1,0,0,0,us_state,3,,SR-001900,SR-001900 JEFFERSONVILLE RD,Urban,10,morning (6-11:59 a.m.),Wednesday,False,2,32.84178333,-83.561425000
+2024,GA,131222,MUSCOGEE (215),1,False,1,79,1,0,0,0,0,other,95,,,CS-MANCHESTER PKWY,Urban,8,morning (6-11:59 a.m.),Saturday,False,1,32.53370000,-84.878300000
+2024,GA,131227,DEKALB (89),1,False,1,62,0,1,0,0,0,other,95,,,CS-PANOLA RD,Urban,5,overnight (midnight-5:59 a.m.),Wednesday,False,2,33.69493611,-84.173791670
+2024,GA,131230,DEKALB (89),1,True,1,66,0,1,0,0,0,interstate,1,I-285,I-285,I-285,Urban,0,overnight (midnight-5:59 a.m.),Monday,False,3,33.71930000,-84.238002780
+2024,GA,131239,OCONEE (219),1,False,1,67,0,1,0,0,0,us_state,3,,SR-316,SR-316,Urban,15,afternoon (noon-5:59 p.m.),Wednesday,False,2,33.93551944,-83.540413890
+2024,GA,131241,COBB (67),1,False,1,63,0,0,1,0,0,us_state,2,,US-41,US-41 SR-3 COBB PKWY,Urban,6,morning (6-11:59 a.m.),Thursday,False,1,34.05593889,-84.709811110
+2024,GA,131287,CHEROKEE (57),1,True,1,66,0,1,0,0,0,us_state,3,,SR-20,SR-20,Rural,17,afternoon (noon-5:59 p.m.),Monday,False,2,34.25593611,-84.331625000
+2024,GA,131288,TIFT (277),1,True,1,66,0,0,1,0,0,us_state,3,,SR-520,SR-520,Rural,18,evening (6-11:59 p.m.),Monday,False,1,31.41889167,-83.391094440
+2024,GA,131289,CRAWFORD (79),1,False,1,61,0,0,1,0,0,us_state,3,,SR-42,SR-42,Rural,19,evening (6-11:59 p.m.),Monday,False,1,32.82366944,-84.020775000
+2024,GA,131290,BERRIEN (19),1,True,1,66,0,1,0,0,0,other,95,,,CS-CHASERVILLE RD,Rural,7,morning (6-11:59 a.m.),Tuesday,False,2,31.21574444,-83.308175000
+2024,GA,131319,CANDLER (43),1,True,1,66,1,0,0,0,0,interstate,1,I-16,I-16,I-16 WB,Rural,6,morning (6-11:59 a.m.),Friday,False,1,32.37816111,-82.184616670
+2024,GA,131331,WILKINSON (319),2,True,1,66,0,2,0,0,0,us_state,3,,SR-29,SR-29,Rural,5,overnight (midnight-5:59 a.m.),Monday,False,2,32.68583333,-83.085911110
+2024,GA,131332,FULTON (121),1,True,1,66,0,1,0,0,0,interstate,1,I-85,I-85,I-85,Urban,7,morning (6-11:59 a.m.),Sunday,False,3,33.59417500,-84.498033330
+2024,GA,131334,THOMAS (275),1,True,1,66,0,0,1,0,0,us_state,3,,SR-300,SR-300,Rural,19,evening (6-11:59 p.m.),Monday,False,1,30.93212778,-84.002477780
+2024,GA,131337,CLAYTON (63),1,True,1,66,0,1,0,0,0,interstate,1,I-75,I-75,I-75,Urban,10,morning (6-11:59 a.m.),Tuesday,False,2,33.56616111,-84.322025000
+2024,GA,131341,GWINNETT (135),1,True,1,66,0,1,0,0,0,us_state,3,,SR-316,SR-316,Urban,2,overnight (midnight-5:59 a.m.),Saturday,False,2,33.97146111,-84.009433330
+2024,GA,131351,CRISP (81),1,True,2,62 66,1,0,0,0,0,interstate,1,I-75,I-75,I-75 SR-401,Rural,5,overnight (midnight-5:59 a.m.),Wednesday,False,2,31.90967222,-83.738919440
+2024,GA,131355,TALBOT (263),1,True,1,66,0,1,0,0,0,us_state,3,,SR-22,SR-22,Rural,17,afternoon (noon-5:59 p.m.),Tuesday,False,2,32.55370278,-84.663502780

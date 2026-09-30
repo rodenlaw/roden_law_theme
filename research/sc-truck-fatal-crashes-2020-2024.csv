@@ -1,0 +1,602 @@
+year,state,st_case,county,fatalities,truck_tractor_involved,large_trucks,truck_body_types,deaths_truck_occupants,deaths_other_vehicle_occupants,deaths_pedestrians,deaths_cyclists,deaths_other_nonoccupants,route_class,route_code,interstate,named_route,roadway,land_use,hour,time_band,day_of_week,work_zone,vehicles,latitude,longitude
+2020,SC,450010,GREENVILLE (45),1,True,1,66,0,1,0,0,0,us_state,3,,SR-70,SR-70,Urban,9,morning (6-11:59 a.m.),Monday,False,2,34.73198611,-82.384797220
+2020,SC,450019,CHARLESTON (19),1,False,1,63,0,0,1,0,0,us_state,3,,SR-75,sr-75,Urban,10,morning (6-11:59 a.m.),Monday,False,1,32.93443889,-80.049380560
+2020,SC,450029,HORRY (51),1,False,1,63,0,1,0,0,0,us_state,3,,SR-90,SR-90,Rural,6,morning (6-11:59 a.m.),Saturday,False,3,33.84903611,-78.840150000
+2020,SC,450032,DARLINGTON (31),1,True,1,66,0,1,0,0,0,us_state,2,,US-15,US-15,Rural,16,afternoon (noon-5:59 p.m.),Monday,False,2,34.41290278,-79.990852780
+2020,SC,450035,BERKELEY (15),1,False,1,63,0,1,0,0,0,us_state,2,,US-176,us-176,Rural,11,morning (6-11:59 a.m.),Wednesday,False,2,33.18130833,-80.217975000
+2020,SC,450051,AIKEN (3),1,False,1,63,1,0,0,0,0,us_state,2,,US-278,US-278,Urban,5,overnight (midnight-5:59 a.m.),Wednesday,False,1,33.42858056,-81.886983330
+2020,SC,450056,RICHLAND (79),1,True,1,66,0,1,0,0,0,interstate,1,I-26,I-26,I-26,Urban,20,evening (6-11:59 p.m.),Friday,False,3,34.14544167,-81.236733330
+2020,SC,450057,DORCHESTER (35),2,True,1,66,0,2,0,0,0,interstate,1,I-95,I-95,i-95,Rural,23,evening (6-11:59 p.m.),Friday,False,2,33.22845000,-80.590780560
+2020,SC,450075,MARLBORO (69),1,True,1,66,0,1,0,0,0,us_state,3,,SR-381,sr-381,Rural,13,afternoon (noon-5:59 p.m.),Saturday,False,2,34.67912222,-79.561097220
+2020,SC,450081,LEXINGTON (63),2,False,1,63,0,2,0,0,0,interstate,1,I-26,I-26,i-26,Urban,14,afternoon (noon-5:59 p.m.),Thursday,False,2,33.87822222,-81.036644440
+2020,SC,450082,FLORENCE (41),2,True,1,66,0,2,0,0,0,us_state,2,,US-378,US-378,Rural,6,morning (6-11:59 a.m.),Friday,False,2,33.88480000,-79.512800000
+2020,SC,450085,KERSHAW (55),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Rural,1,overnight (midnight-5:59 a.m.),Sunday,False,2,34.21379444,-80.642222220
+2020,SC,450086,LEXINGTON (63),1,True,1,66,0,1,0,0,0,interstate,1,I-26,I-26,I-26,Urban,2,overnight (midnight-5:59 a.m.),Sunday,False,2,33.96294722,-81.096669440
+2020,SC,450092,RICHLAND (79),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,i-20,Urban,12,afternoon (noon-5:59 p.m.),Wednesday,False,3,34.07321111,-80.984583330
+2020,SC,450093,DILLON (33),1,True,1,66,0,1,0,0,0,us_state,3,,SR-38,SR-38,Rural,16,afternoon (noon-5:59 p.m.),Wednesday,False,2,34.38024722,-79.578477780
+2020,SC,450094,GREENVILLE (45),2,False,1,63,0,2,0,0,0,us_state,2,,US-276,US-276,Rural,20,evening (6-11:59 p.m.),Thursday,False,3,35.07839167,-82.551902780
+2020,SC,450102,RICHLAND (79),2,False,1,61,0,2,0,0,0,us_state,3,,SR-48,SR-48,Urban,8,morning (6-11:59 a.m.),Monday,False,3,33.96778056,-81.012508330
+2020,SC,450104,WILLIAMSBURG (89),1,True,1,66,0,1,0,0,0,us_state,2,,US-521,US-521,Rural,10,morning (6-11:59 a.m.),Thursday,False,2,33.53848611,-79.698394440
+2020,SC,450108,CLARENDON (27),1,True,1,66,0,1,0,0,0,us_state,2,,US-521,us-521,Rural,2,overnight (midnight-5:59 a.m.),Friday,False,2,33.68345000,-80.173083330
+2020,SC,450121,LANCASTER (57),1,True,1,66,0,1,0,0,0,us_state,3,,SR-522,SR-522,Rural,14,afternoon (noon-5:59 p.m.),Thursday,False,2,34.75752222,-80.629755560
+2020,SC,450135,DARLINGTON (31),1,False,1,61,0,1,0,0,0,us_state,3,,SR-255,SR-255,Rural,16,afternoon (noon-5:59 p.m.),Wednesday,False,2,34.24981667,-79.915294440
+2020,SC,450162,BERKELEY (15),1,True,1,66,0,1,0,0,0,us_state,2,,US-17,US-17,Urban,6,morning (6-11:59 a.m.),Wednesday,False,2,33.11582222,-80.070850000
+2020,SC,450169,GREENVILLE (45),1,True,1,66,0,1,0,0,0,us_state,2,,US-25,US-25,Urban,9,morning (6-11:59 a.m.),Friday,False,2,34.77973611,-82.395311110
+2020,SC,450176,NEWBERRY (71),1,True,1,66,0,0,1,0,0,interstate,1,I-26,I-26,I-26,Rural,7,morning (6-11:59 a.m.),Friday,False,2,34.32990833,-81.607405560
+2020,SC,450185,SALUDA (81),1,True,1,66,1,0,0,0,0,us_state,3,,SR-178,SR-178,Rural,21,evening (6-11:59 p.m.),Tuesday,False,1,33.93386111,-81.602794440
+2020,SC,450196,SPARTANBURG (83),1,True,1,66,0,1,0,0,0,interstate,1,I-26,I-26,I-26,Rural,8,morning (6-11:59 a.m.),Saturday,False,2,34.72580833,-81.948886110
+2020,SC,450216,FAIRFIELD (39),1,True,1,66,0,1,0,0,0,interstate,1,I-77,I-77,I-77,Rural,21,evening (6-11:59 p.m.),Saturday,False,3,34.34932778,-81.000391670
+2020,SC,450217,CHESTERFIELD (25),2,False,2,63 63,1,1,0,0,0,us_state,3,,SR-9,SR-9,Rural,6,morning (6-11:59 a.m.),Tuesday,False,3,34.74796111,-80.451900000
+2020,SC,450220,FLORENCE (41),1,True,1,66,0,1,0,0,0,us_state,3,,SR-1743,SR-1743,Rural,6,morning (6-11:59 a.m.),Wednesday,False,2,34.26425833,-79.730566670
+2020,SC,450247,ORANGEBURG (75),1,True,1,66,0,0,0,1,0,us_state,3,,SR-4,SR-4 STONEWALL JACKSON BLVD,Urban,18,evening (6-11:59 p.m.),Tuesday,False,1,33.46983889,-80.857430560
+2020,SC,450253,ABBEVILLE (1),1,False,1,61,0,1,0,0,0,us_state,3,,SR-20,SR-20,Rural,17,afternoon (noon-5:59 p.m.),Thursday,False,2,34.20213889,-82.389188890
+2020,SC,450254,BERKELEY (15),1,False,1,63,0,1,0,0,0,us_state,2,,US-176,US-176,Rural,11,morning (6-11:59 a.m.),Friday,False,2,33.17920556,-80.214819440
+2020,SC,450268,LEE (61),1,False,1,67,0,1,0,0,0,us_state,3,,SR-441,SR-441,Rural,14,afternoon (noon-5:59 p.m.),Tuesday,False,2,34.13666667,-80.335208330
+2020,SC,450269,BERKELEY (15),1,True,1,66,0,1,0,0,0,us_state,3,,SR-33,SR-33,Urban,15,afternoon (noon-5:59 p.m.),Wednesday,False,3,32.89523056,-79.922716670
+2020,SC,450272,MARLBORO (69),1,True,1,66,0,1,0,0,0,us_state,2,,US-15,US-15,Rural,17,afternoon (noon-5:59 p.m.),Thursday,False,3,34.62351944,-79.623375000
+2020,SC,450277,HORRY (51),1,False,1,62,0,1,0,0,0,us_state,2,,US-501,US-501,Urban,7,morning (6-11:59 a.m.),Friday,False,2,33.75251111,-78.962708330
+2020,SC,450282,OCONEE (73),1,False,1,62,1,0,0,0,0,us_state,3,,SR-13,SR-13 RICHLAND RD,Urban,8,morning (6-11:59 a.m.),Saturday,False,1,34.68063611,-83.018183330
+2020,SC,450293,DORCHESTER (35),1,True,1,66,0,1,0,0,0,us_state,2,,US-17,US-17,Rural,10,morning (6-11:59 a.m.),Wednesday,False,2,32.92737778,-80.391416670
+2020,SC,450307,AIKEN (3),1,True,1,66,0,0,1,0,0,interstate,1,I-20,I-20,I-20,Rural,11,morning (6-11:59 a.m.),Friday,False,1,33.58316667,-81.890330560
+2020,SC,450309,MCCORMICK (65),1,True,2,66 66,0,1,0,0,0,us_state,2,,US-221,US-221,Rural,8,morning (6-11:59 a.m.),Monday,False,4,33.75045278,-82.203405560
+2020,SC,450313,HORRY (51),1,False,1,63,0,1,0,0,0,us_state,2,,US-378,US-378,Urban,7,morning (6-11:59 a.m.),Tuesday,False,2,33.84054167,-79.110805560
+2020,SC,450315,LEE (61),1,False,1,62,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Rural,10,morning (6-11:59 a.m.),Tuesday,True,2,34.20954167,-80.402019440
+2020,SC,450346,SUMTER (85),1,True,1,66,0,0,1,0,0,us_state,2,,US-378,US-378,Urban,23,evening (6-11:59 p.m.),Wednesday,False,1,33.94703056,-80.353677780
+2020,SC,450347,YORK (91),1,False,1,63,0,1,0,0,0,us_state,3,,SR-5,SR-5 YORK HWY,Urban,12,afternoon (noon-5:59 p.m.),Wednesday,False,3,34.95577778,-81.127869440
+2020,SC,450349,FAIRFIELD (39),1,True,1,66,0,1,0,0,0,interstate,1,I-77,I-77,I-77,Rural,21,evening (6-11:59 p.m.),Thursday,False,3,34.51217778,-80.998294440
+2020,SC,450357,GREENVILLE (45),1,False,1,67,0,1,0,0,0,us_state,2,,US-29,US-29,Urban,18,evening (6-11:59 p.m.),Friday,False,3,34.94313056,-82.255708330
+2020,SC,450373,KERSHAW (55),1,False,1,63,0,1,0,0,0,us_state,2,,US-521,US-521,Urban,7,morning (6-11:59 a.m.),Thursday,False,2,34.30574167,-80.609241670
+2020,SC,450377,DORCHESTER (35),2,True,1,66,0,2,0,0,0,us_state,2,,US-15,US-15,Rural,12,afternoon (noon-5:59 p.m.),Friday,False,3,33.27498056,-80.519616670
+2020,SC,450381,KERSHAW (55),1,True,1,66,0,1,0,0,0,us_state,2,,US-601,US-601,Rural,3,overnight (midnight-5:59 a.m.),Saturday,False,2,34.09495278,-80.691811110
+2020,SC,450387,CHESTER (23),1,True,1,66,0,1,0,0,0,interstate,1,I-77,I-77,I-77,Rural,10,morning (6-11:59 a.m.),Tuesday,False,3,34.59331667,-81.015808330
+2020,SC,450389,COLLETON (29),3,False,1,63,0,3,0,0,0,us_state,3,,SR-24,SR-24,Rural,16,afternoon (noon-5:59 p.m.),Tuesday,False,2,33.04520000,-80.789427780
+2020,SC,450398,ORANGEBURG (75),1,True,1,66,1,0,0,0,0,interstate,1,I-26,I-26,I-26,Rural,7,morning (6-11:59 a.m.),Friday,False,1,33.35443611,-80.586297220
+2020,SC,450401,RICHLAND (79),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Urban,16,afternoon (noon-5:59 p.m.),Friday,False,2,34.09205556,-80.864027780
+2020,SC,450409,BARNWELL (11),1,True,1,66,1,0,0,0,0,us_state,2,,US-278,US-278,Rural,3,overnight (midnight-5:59 a.m.),Monday,False,1,33.27342778,-81.385055560
+2020,SC,450416,CHESTERFIELD (25),1,True,1,66,0,1,0,0,0,us_state,3,,SR-71,SR-71,Rural,20,evening (6-11:59 p.m.),Monday,False,3,34.70319167,-80.281808330
+2020,SC,450464,NEWBERRY (71),1,False,1,62,1,0,0,0,0,interstate,1,I-26,I-26,I-26,Rural,16,afternoon (noon-5:59 p.m.),Tuesday,False,2,34.25587500,-81.492755560
+2020,SC,450465,HORRY (51),1,False,1,63,0,1,0,0,0,us_state,3,,SR-347,SR-347,Rural,0,overnight (midnight-5:59 a.m.),Wednesday,False,2,33.92953611,-78.766266670
+2020,SC,450471,BAMBERG (9),1,True,1,66,0,1,0,0,0,us_state,2,,US-601,US-601,Rural,18,evening (6-11:59 p.m.),Thursday,False,2,33.19441944,-81.019869440
+2020,SC,450484,FLORENCE (41),2,True,1,66,0,2,0,0,0,us_state,2,,US-378,US-378,Rural,4,overnight (midnight-5:59 a.m.),Friday,False,2,33.89611944,-79.445125000
+2020,SC,450491,MARION (67),1,False,1,61,0,1,0,0,0,us_state,3,,SR-41,SR-41,Rural,19,evening (6-11:59 p.m.),Sunday,False,2,34.07619722,-79.302897220
+2020,SC,450493,FLORENCE (41),1,True,1,66,0,1,0,0,0,us_state,2,,US-378,US-378,Rural,16,afternoon (noon-5:59 p.m.),Tuesday,False,2,33.91203056,-79.637369440
+2020,SC,450504,EDGEFIELD (37),1,False,1,61,0,0,1,0,0,us_state,3,,SR-34,SR-34,Rural,19,evening (6-11:59 p.m.),Wednesday,False,1,33.62841667,-81.973116670
+2020,SC,450505,BERKELEY (15),1,False,1,67,0,0,1,0,0,interstate,1,I-526,I-526,I-526,Urban,9,morning (6-11:59 a.m.),Wednesday,False,4,32.89099444,-79.961572220
+2020,SC,450518,ORANGEBURG (75),5,True,2,66 66,0,5,0,0,0,interstate,1,I-26,I-26,I-26,Rural,12,afternoon (noon-5:59 p.m.),Thursday,False,3,33.54888056,-80.815466670
+2020,SC,450524,HORRY (51),1,False,1,63,0,1,0,0,0,us_state,3,,SR-905,SR-905,Rural,8,morning (6-11:59 a.m.),Friday,False,2,33.90286944,-78.900866670
+2020,SC,450560,SUMTER (85),1,True,1,66,0,1,0,0,0,us_state,3,,SR-403,SR-403,Rural,5,overnight (midnight-5:59 a.m.),Friday,False,2,33.98958056,-79.920011110
+2020,SC,450578,DORCHESTER (35),1,False,1,61,0,0,1,0,0,interstate,1,I-95,I-95,I-95,Rural,5,overnight (midnight-5:59 a.m.),Thursday,False,1,33.28331111,-80.563119440
+2020,SC,450595,UNION (87),1,False,1,62,0,1,0,0,0,us_state,3,,SR-9,SR-9,Rural,18,evening (6-11:59 p.m.),Wednesday,False,2,34.81855278,-81.635630560
+2020,SC,450610,CHARLESTON (19),1,False,1,61,0,1,0,0,0,interstate,1,I-26,I-26,I-26,Urban,3,overnight (midnight-5:59 a.m.),Sunday,False,3,32.84414722,-79.982216670
+2020,SC,450627,CHARLESTON (19),1,False,1,63,0,0,1,0,0,us_state,3,,SR-703,SR-703,Urban,10,morning (6-11:59 a.m.),Friday,False,1,32.79163889,-79.879616670
+2020,SC,450635,AIKEN (3),2,False,1,63,0,2,0,0,0,us_state,3,,SR-19,SR-19,Rural,5,overnight (midnight-5:59 a.m.),Monday,False,2,33.65954444,-81.755216670
+2020,SC,450640,SPARTANBURG (83),1,True,1,66,0,1,0,0,0,interstate,1,I-85,I-85,I-85,Urban,13,afternoon (noon-5:59 p.m.),Thursday,False,2,34.91105278,-82.112138890
+2020,SC,450643,FLORENCE (41),1,True,1,66,0,1,0,0,0,us_state,2,,US-52,US-52,Urban,7,morning (6-11:59 a.m.),Friday,False,2,34.21083056,-79.776108330
+2020,SC,450651,LEXINGTON (63),1,True,1,66,1,0,0,0,0,interstate,1,I-20,I-20,I-20,Rural,17,afternoon (noon-5:59 p.m.),Sunday,True,3,33.96711389,-81.205655560
+2020,SC,450652,SALUDA (81),1,False,1,61,0,1,0,0,0,us_state,3,,SR-98,SR-98,Rural,5,overnight (midnight-5:59 a.m.),Monday,False,2,34.05147500,-81.907791670
+2020,SC,450664,PICKENS (77),1,False,1,67,0,1,0,0,0,us_state,3,,SR-183,SR-183,Rural,12,afternoon (noon-5:59 p.m.),Friday,False,2,34.88711667,-82.518522220
+2020,SC,450673,CHEROKEE (21),1,True,1,66,0,1,0,0,0,interstate,1,I-85,I-85,I-85,Rural,3,overnight (midnight-5:59 a.m.),Monday,True,2,35.07451667,-81.744180560
+2020,SC,450676,PICKENS (77),1,False,1,63,0,1,0,0,0,us_state,2,,US-123,US-123,Rural,16,afternoon (noon-5:59 p.m.),Wednesday,False,2,34.77531389,-82.670869440
+2020,SC,450696,FLORENCE (41),1,False,1,63,0,1,0,0,0,us_state,2,,US-52,US-52,Rural,14,afternoon (noon-5:59 p.m.),Wednesday,False,3,34.10427778,-79.781830560
+2020,SC,450698,CHARLESTON (19),1,True,1,66,0,1,0,0,0,us_state,2,,US-17,US-17,Rural,10,morning (6-11:59 a.m.),Thursday,False,2,32.99053056,-79.645902780
+2020,SC,450703,COLLETON (29),1,True,1,66,1,0,0,0,0,interstate,1,I-95,I-95,I-95,Rural,3,overnight (midnight-5:59 a.m.),Sunday,False,1,32.96674722,-80.676847220
+2020,SC,450706,BERKELEY (15),1,True,1,66,0,1,0,0,0,us_state,2,,US-17,US-17,Urban,5,overnight (midnight-5:59 a.m.),Monday,False,2,33.10663056,-80.074219440
+2020,SC,450709,GREENVILLE (45),1,False,1,63,0,1,0,0,0,us_state,2,,US-25,US-25,Urban,9,morning (6-11:59 a.m.),Tuesday,False,2,34.83881667,-82.444766670
+2020,SC,450712,LANCASTER (57),1,False,1,63,0,0,1,0,0,us_state,3,,SR-522,SR-522,Rural,16,afternoon (noon-5:59 p.m.),Tuesday,False,1,34.69785000,-80.628797220
+2020,SC,450718,YORK (91),1,False,1,61,0,1,0,0,0,us_state,2,,US-21,US-21,Urban,13,afternoon (noon-5:59 p.m.),Friday,False,2,34.85899167,-80.933355560
+2020,SC,450741,JASPER (53),1,True,1,66,0,1,0,0,0,interstate,1,I-95,I-95,I-95,Rural,3,overnight (midnight-5:59 a.m.),Monday,False,2,32.38950833,-81.024566670
+2020,SC,450746,CALHOUN (17),1,True,1,66,0,1,0,0,0,us_state,3,,SR-43,SR-43,Rural,10,morning (6-11:59 a.m.),Thursday,False,2,33.65877222,-80.755563890
+2020,SC,450747,CHESTER (23),1,True,2,63 66,1,0,0,0,0,interstate,1,I-77,I-77,I-77,Rural,20,evening (6-11:59 p.m.),Thursday,False,2,34.61614444,-81.020836110
+2020,SC,450751,RICHLAND (79),1,False,1,62,0,0,1,0,0,interstate,1,I-77,I-77,I-77,Urban,6,morning (6-11:59 a.m.),Saturday,False,2,33.99180833,-80.954830560
+2020,SC,450759,BERKELEY (15),3,True,1,66,0,3,0,0,0,us_state,3,,SR-503,SR-503,Rural,7,morning (6-11:59 a.m.),Monday,False,2,32.99228056,-79.934480560
+2020,SC,450767,ALLENDALE (5),1,True,1,66,0,1,0,0,0,us_state,2,,US-278,US-278,Rural,7,morning (6-11:59 a.m.),Wednesday,False,2,33.04436944,-81.314469440
+2020,SC,450770,COLLETON (29),1,True,2,62 66,1,0,0,0,0,interstate,1,I-95,I-95,I-95,Rural,6,morning (6-11:59 a.m.),Friday,False,2,32.78861944,-80.780488890
+2020,SC,450778,CHARLESTON (19),2,False,1,62,0,2,0,0,0,us_state,3,,SR-41,SR-41,Urban,13,afternoon (noon-5:59 p.m.),Friday,False,4,32.88413611,-79.811486110
+2020,SC,450791,GREENVILLE (45),1,False,1,62,0,1,0,0,0,us_state,2,,US-25,US-25,Rural,13,afternoon (noon-5:59 p.m.),Saturday,False,2,34.99769167,-82.419413890
+2020,SC,450819,AIKEN (3),1,True,1,66,0,1,0,0,0,us_state,3,,SR-125,SR-125,Urban,13,afternoon (noon-5:59 p.m.),Wednesday,False,2,33.42129167,-81.882288890
+2020,SC,450824,OCONEE (73),2,True,1,66,0,2,0,0,0,us_state,3,,SR-24,SR-24,Rural,19,evening (6-11:59 p.m.),Friday,False,2,34.58147222,-82.916127780
+2020,SC,450837,JASPER (53),1,True,1,66,0,1,0,0,0,us_state,2,,US-17,US-17,Urban,15,afternoon (noon-5:59 p.m.),Tuesday,False,2,32.26761944,-81.079866670
+2020,SC,450846,DORCHESTER (35),1,False,1,63,1,0,0,0,0,us_state,2,,US-78,US-78,Rural,5,overnight (midnight-5:59 a.m.),Monday,False,1,33.11656944,-80.305744440
+2020,SC,450848,AIKEN (3),1,True,1,66,1,0,0,0,0,interstate,1,I-20,I-20,I-20,Rural,15,afternoon (noon-5:59 p.m.),Tuesday,False,1,33.60493056,-81.846838890
+2020,SC,450864,AIKEN (3),1,False,1,63,0,1,0,0,0,us_state,3,,SR-45,SR-45,Urban,9,morning (6-11:59 a.m.),Tuesday,False,2,33.52480833,-81.959558330
+2020,SC,450869,YORK (91),1,True,1,66,0,1,0,0,0,us_state,3,,SR-49,SR-49,Rural,19,evening (6-11:59 p.m.),Friday,False,2,35.02991667,-81.170777780
+2020,SC,450879,KERSHAW (55),1,True,1,66,1,0,0,0,0,us_state,2,,US-1,US-1,Rural,14,afternoon (noon-5:59 p.m.),Tuesday,False,2,34.32231944,-80.537244440
+2020,SC,450883,CHARLESTON (19),1,False,1,61,0,1,0,0,0,us_state,3,,SR-20,SR-20,Rural,14,afternoon (noon-5:59 p.m.),Friday,False,3,32.62290833,-80.152258330
+2020,SC,450893,GREENVILLE (45),1,False,1,63,0,1,0,0,0,us_state,2,,US-25,US-25,Rural,13,afternoon (noon-5:59 p.m.),Wednesday,False,2,34.60815833,-82.369088890
+2020,SC,450895,YORK (91),1,True,1,66,1,0,0,0,0,us_state,3,,SR-49,SR-49,Rural,7,morning (6-11:59 a.m.),Wednesday,False,1,34.93878333,-81.342908330
+2020,SC,450898,DARLINGTON (31),1,True,1,66,0,0,1,0,0,us_state,2,,US-52,US-52,Urban,20,evening (6-11:59 p.m.),Friday,False,1,34.28679722,-79.880536110
+2020,SC,450906,FLORENCE (41),1,True,1,66,0,1,0,0,0,us_state,2,,US-52,US-52,Urban,11,morning (6-11:59 a.m.),Wednesday,False,2,34.15623611,-79.767894440
+2020,SC,450910,ORANGEBURG (75),1,False,1,63,0,1,0,0,0,us_state,2,,US-301,US-301,Urban,19,evening (6-11:59 p.m.),Thursday,False,2,33.47931667,-80.906441670
+2020,SC,450915,DORCHESTER (35),1,False,1,63,0,1,0,0,0,us_state,2,,US-17,US-17,Rural,8,morning (6-11:59 a.m.),Tuesday,False,2,32.93545556,-80.353305560
+2020,SC,450919,RICHLAND (79),1,False,1,63,1,0,0,0,0,interstate,1,I-95,I-95,I-95,Urban,16,afternoon (noon-5:59 p.m.),Wednesday,False,5,34.04435833,-81.081966670
+2020,SC,450932,COLLETON (29),1,True,2,66 66,0,1,0,0,0,interstate,1,I-95,I-95,I-95,Rural,4,overnight (midnight-5:59 a.m.),Thursday,False,4,33.07328889,-80.657727780
+2020,SC,450958,LEXINGTON (63),1,False,1,61,0,0,1,0,0,us_state,3,,SR-1842,SR-1842,Urban,3,overnight (midnight-5:59 a.m.),Friday,False,1,34.05333056,-81.126777780
+2020,SC,450962,BERKELEY (15),1,False,1,67,0,1,0,0,0,us_state,2,,US-176,US-176,Rural,15,afternoon (noon-5:59 p.m.),Tuesday,True,2,33.27078056,-80.344019440
+2021,SC,450009,CHARLESTON (19),1,True,1,66,1,0,0,0,0,interstate,1,I-526,I-526,I-526,Urban,12,afternoon (noon-5:59 p.m.),Monday,False,1,32.88530000,-80.017036110
+2021,SC,450012,GREENVILLE (45),1,False,1,63,0,1,0,0,0,us_state,3,,SR-68,SR-68,Rural,8,morning (6-11:59 a.m.),Wednesday,False,2,34.57953611,-82.290983330
+2021,SC,450013,ORANGEBURG (75),1,False,1,61,0,1,0,0,0,us_state,3,,SR-73,SR-73,Rural,6,morning (6-11:59 a.m.),Wednesday,False,2,33.60675556,-81.057222220
+2021,SC,450016,GREENVILLE (45),1,False,1,63,0,1,0,0,0,us_state,3,,SR-107,SR-107,Urban,16,afternoon (noon-5:59 p.m.),Friday,False,2,34.78561111,-82.351825000
+2021,SC,450030,OCONEE (73),1,False,1,63,0,1,0,0,0,us_state,3,,SR-130,SR-130,Rural,15,afternoon (noon-5:59 p.m.),Wednesday,False,3,34.99353333,-83.026705560
+2021,SC,450034,COLLETON (29),1,True,1,66,0,1,0,0,0,us_state,2,,US-15,US-15,Rural,16,afternoon (noon-5:59 p.m.),Friday,False,2,32.96020278,-80.644969440
+2021,SC,450035,SPARTANBURG (83),1,False,1,63,0,1,0,0,0,interstate,1,I-26,I-26,I-26,Rural,8,morning (6-11:59 a.m.),Thursday,False,2,34.63564167,-81.910666670
+2021,SC,450041,YORK (91),1,True,1,66,0,1,0,0,0,interstate,1,I-77,I-77,I-77,Rural,2,overnight (midnight-5:59 a.m.),Saturday,False,2,34.84130556,-81.023169440
+2021,SC,450042,CLARENDON (27),1,False,1,65,0,1,0,0,0,interstate,1,I-95,I-95,I-95,Rural,12,afternoon (noon-5:59 p.m.),Saturday,False,2,33.68520833,-80.259258330
+2021,SC,450046,CLARENDON (27),1,True,1,66,0,1,0,0,0,interstate,1,I-95,I-95,I-95,Rural,12,afternoon (noon-5:59 p.m.),Thursday,False,2,33.74033056,-80.208130560
+2021,SC,450051,RICHLAND (79),2,False,1,63,0,2,0,0,0,us_state,3,,SR-268,SR-268,Rural,13,afternoon (noon-5:59 p.m.),Monday,False,2,34.10296667,-80.802355560
+2021,SC,450094,SUMTER (85),1,False,1,67,0,1,0,0,0,us_state,2,,US-76,US-76,Urban,21,evening (6-11:59 p.m.),Thursday,False,4,33.93366667,-80.314591670
+2021,SC,450105,BEAUFORT (13),1,False,1,62,0,1,0,0,0,us_state,2,,US-17,US-17,Rural,21,evening (6-11:59 p.m.),Monday,False,2,32.61158056,-80.812208330
+2021,SC,450107,ANDERSON (7),1,True,1,66,0,0,1,0,0,us_state,3,,SR-20,SR-20,Urban,3,overnight (midnight-5:59 a.m.),Tuesday,False,1,34.64365833,-82.465838890
+2021,SC,450154,AIKEN (3),1,False,1,62,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Rural,4,overnight (midnight-5:59 a.m.),Sunday,False,2,33.62373889,-81.820358330
+2021,SC,450159,YORK (91),1,True,1,66,0,1,0,0,0,us_state,3,,SR-5,SR-5 ROCK HILL HWY,Rural,14,afternoon (noon-5:59 p.m.),Monday,False,2,34.85486944,-80.876925000
+2021,SC,450160,BERKELEY (15),1,True,2,66 66,0,1,0,0,0,interstate,1,I-26,I-26,I-26,Rural,11,morning (6-11:59 a.m.),Monday,False,6,33.12753333,-80.290002780
+2021,SC,450164,GREENVILLE (45),1,True,1,66,0,1,0,0,0,us_state,2,,US-29,US-29,Urban,16,afternoon (noon-5:59 p.m.),Wednesday,False,3,34.93093889,-82.290566670
+2021,SC,450181,RICHLAND (79),1,True,1,66,0,1,0,0,0,us_state,3,,SR-54,SR-54,Rural,6,morning (6-11:59 a.m.),Thursday,False,2,34.20824444,-80.907930560
+2021,SC,450183,CHEROKEE (21),2,True,4,66 66 66 66,1,1,0,0,0,interstate,1,I-85,I-85,I-85,Rural,22,evening (6-11:59 p.m.),Thursday,True,6,35.07491944,-81.741455560
+2021,SC,450196,LEXINGTON (63),1,True,1,66,0,1,0,0,0,us_state,3,,SR-72,SR-72,Urban,7,morning (6-11:59 a.m.),Monday,False,3,33.93856667,-81.086436110
+2021,SC,450201,JASPER (53),3,False,1,67,0,3,0,0,0,us_state,2,,US-17,US-17,Urban,7,morning (6-11:59 a.m.),Thursday,False,3,32.46775000,-80.988736110
+2021,SC,450206,ORANGEBURG (75),1,True,1,66,0,1,0,0,0,us_state,2,,US-176,US-176,Rural,15,afternoon (noon-5:59 p.m.),Tuesday,False,3,33.39272778,-80.542030560
+2021,SC,450218,CALHOUN (17),1,True,1,66,1,0,0,0,0,interstate,1,I-26,I-26,I-26,Rural,11,morning (6-11:59 a.m.),Friday,False,5,33.70053056,-80.915186110
+2021,SC,450235,UNION (87),1,False,1,63,0,1,0,0,0,us_state,2,,US-176,US-176,Rural,5,overnight (midnight-5:59 a.m.),Wednesday,False,2,34.86389167,-81.746672220
+2021,SC,450237,MARION (67),1,False,1,63,0,1,0,0,0,us_state,2,,US-501,US-501,Rural,23,evening (6-11:59 p.m.),Wednesday,False,2,34.07754167,-79.307555560
+2021,SC,450242,DORCHESTER (35),1,False,1,65,1,0,0,0,0,interstate,1,I-95,I-95,I-95 RAMP,Rural,11,morning (6-11:59 a.m.),Friday,False,1,33.19588889,-80.604519440
+2021,SC,450254,CHARLESTON (19),1,False,1,63,0,0,0,1,0,us_state,3,,SR-7,SR-7,Urban,11,morning (6-11:59 a.m.),Tuesday,False,1,32.84061111,-79.982388890
+2021,SC,450257,KERSHAW (55),1,True,2,66 67,0,1,0,0,0,us_state,2,,US-521,US-521,Rural,6,morning (6-11:59 a.m.),Wednesday,False,3,34.37470556,-80.595777780
+2021,SC,450269,WILLIAMSBURG (89),1,False,1,61,0,1,0,0,0,us_state,3,,SR-28,SR-28,Rural,14,afternoon (noon-5:59 p.m.),Monday,False,2,33.81120278,-79.864805560
+2021,SC,450290,NEWBERRY (71),1,False,1,61,0,1,0,0,0,interstate,1,I-26,I-26,I-26,Rural,18,evening (6-11:59 p.m.),Monday,False,4,34.23318611,-81.444313890
+2021,SC,450306,ANDERSON (7),1,False,1,62,0,1,0,0,0,us_state,2,,US-76,US-76,Rural,2,overnight (midnight-5:59 a.m.),Tuesday,False,2,34.58476111,-82.739266670
+2021,SC,450310,DORCHESTER (35),2,True,1,66,0,2,0,0,0,us_state,2,,US-178,US-178,Rural,19,evening (6-11:59 p.m.),Tuesday,False,2,33.15880000,-80.383152780
+2021,SC,450325,JASPER (53),1,False,1,67,0,1,0,0,0,interstate,1,I-95,I-95,I-95,Rural,11,morning (6-11:59 a.m.),Monday,False,2,32.27366111,-81.079869440
+2021,SC,450357,BERKELEY (15),1,False,1,63,0,1,0,0,0,us_state,3,,SR-402,SR-402,Rural,5,overnight (midnight-5:59 a.m.),Wednesday,False,2,33.14393056,-79.893761110
+2021,SC,450382,YORK (91),1,True,1,66,0,0,1,0,0,interstate,1,I-77,I-77,I-77,Urban,20,evening (6-11:59 p.m.),Tuesday,False,2,34.93434722,-80.971483330
+2021,SC,450386,JASPER (53),1,False,1,63,0,1,0,0,0,us_state,2,,US-17,US-17,Rural,6,morning (6-11:59 a.m.),Thursday,False,2,32.15998889,-81.060330560
+2021,SC,450395,ORANGEBURG (75),1,True,1,66,0,1,0,0,0,us_state,2,,US-321,US-321,Rural,5,overnight (midnight-5:59 a.m.),Monday,False,2,33.53338056,-81.123758330
+2021,SC,450399,LEXINGTON (63),1,False,1,62,0,1,0,0,0,us_state,3,,SR-71,SR-71,Urban,11,morning (6-11:59 a.m.),Friday,False,2,33.97063889,-81.125069440
+2021,SC,450404,OCONEE (73),1,False,1,63,0,1,0,0,0,us_state,2,,US-123,US-123,Rural,8,morning (6-11:59 a.m.),Saturday,False,2,34.61263056,-83.195186110
+2021,SC,450407,FAIRFIELD (39),1,False,1,62,0,1,0,0,0,interstate,1,I-77,I-77,I-77,Rural,4,overnight (midnight-5:59 a.m.),Sunday,False,2,34.51485833,-80.998552780
+2021,SC,450409,CLARENDON (27),1,False,1,62,1,0,0,0,0,interstate,1,I-95,I-95,I-95,Rural,8,morning (6-11:59 a.m.),Monday,False,1,33.67735556,-80.264766670
+2021,SC,450423,DORCHESTER (35),1,False,1,63,0,1,0,0,0,interstate,1,I-26,I-26,I-26,Rural,0,overnight (midnight-5:59 a.m.),Tuesday,False,2,33.20619444,-80.406447220
+2021,SC,450426,JASPER (53),1,False,2,62 63,1,0,0,0,0,us_state,3,,SR-170,SR-170,Rural,8,morning (6-11:59 a.m.),Wednesday,False,2,32.35835278,-80.876150000
+2021,SC,450437,GREENVILLE (45),1,True,1,66,0,1,0,0,0,interstate,1,I-385,I-385,I-385,Urban,1,overnight (midnight-5:59 a.m.),Monday,False,2,34.77421389,-82.273144440
+2021,SC,450446,GEORGETOWN (43),1,False,1,63,0,0,1,0,0,us_state,2,,US-17,US-17,Rural,3,overnight (midnight-5:59 a.m.),Friday,False,1,33.38368056,-79.416930560
+2021,SC,450465,JASPER (53),1,True,1,66,0,1,0,0,0,interstate,1,I-95,I-95,I-95,Rural,21,evening (6-11:59 p.m.),Monday,False,2,32.25287500,-81.125552780
+2021,SC,450515,MARION (67),1,False,1,67,0,0,1,0,0,us_state,2,,US-501,US-501,Rural,16,afternoon (noon-5:59 p.m.),Friday,False,1,34.07489722,-79.301197220
+2021,SC,450516,YORK (91),1,True,1,66,0,1,0,0,0,us_state,2,,US-21,US-21,Urban,17,afternoon (noon-5:59 p.m.),Friday,False,2,34.85441944,-80.932477780
+2021,SC,450525,CHESTERFIELD (25),1,False,1,63,0,1,0,0,0,us_state,3,,,SR-AIRPORT RD,Rural,15,afternoon (noon-5:59 p.m.),Saturday,False,2,34.75025556,-80.343430560
+2021,SC,450532,DILLON (33),2,True,1,66,0,2,0,0,0,interstate,1,I-95,I-95,I-95,Rural,11,morning (6-11:59 a.m.),Wednesday,False,2,34.32973333,-79.567813890
+2021,SC,450537,GREENVILLE (45),1,False,1,63,0,1,0,0,0,us_state,3,,SR-146,SR-146 RAMP,Urban,15,afternoon (noon-5:59 p.m.),Tuesday,False,2,34.83336111,-82.301250000
+2021,SC,450547,RICHLAND (79),1,True,1,66,0,1,0,0,0,interstate,1,I-77,I-77,I-77,Urban,6,morning (6-11:59 a.m.),Tuesday,False,3,34.08231111,-80.941216670
+2021,SC,450554,WILLIAMSBURG (89),1,True,1,66,0,1,0,0,0,us_state,3,,SR-41,SR-41 COUNTY LINE RD,Rural,13,afternoon (noon-5:59 p.m.),Friday,False,3,33.48218056,-79.553644440
+2021,SC,450573,CHESTER (23),1,False,1,65,1,0,0,0,0,interstate,1,I-95,I-95,I-95,Rural,5,overnight (midnight-5:59 a.m.),Wednesday,False,1,34.76482778,-81.037291670
+2021,SC,450578,PICKENS (77),1,False,1,63,0,1,0,0,0,us_state,2,,US-178,US-178,Rural,14,afternoon (noon-5:59 p.m.),Saturday,False,2,34.76669444,-82.657269440
+2021,SC,450588,ANDERSON (7),1,True,1,66,0,1,0,0,0,us_state,3,,SR-187,SR-187,Rural,0,overnight (midnight-5:59 a.m.),Wednesday,False,2,34.45765000,-82.788169440
+2021,SC,450589,HORRY (51),1,True,1,66,0,1,0,0,0,us_state,2,,US-501,US-501,Urban,11,morning (6-11:59 a.m.),Wednesday,False,2,33.87346944,-79.104769440
+2021,SC,450590,LANCASTER (57),3,True,1,66,0,3,0,0,0,us_state,3,,SR-200,SR-200 MONROE HWY,Rural,13,afternoon (noon-5:59 p.m.),Sunday,False,4,34.77233889,-80.757472220
+2021,SC,450598,LANCASTER (57),1,False,1,63,0,0,0,1,0,us_state,3,,SR-157,SR-157 E MARION ST,Rural,12,afternoon (noon-5:59 p.m.),Thursday,False,1,34.55106111,-80.571700000
+2021,SC,450609,SPARTANBURG (83),1,False,1,62,1,0,0,0,0,us_state,3,,SR-186,SR-186 COOLEY SPRINGS SCHOOL R,Rural,5,overnight (midnight-5:59 a.m.),Sunday,False,1,35.17754167,-81.970911110
+2021,SC,450618,ANDERSON (7),1,True,1,66,1,0,0,0,0,interstate,1,I-85,I-85,I-85,Rural,9,morning (6-11:59 a.m.),Tuesday,False,1,34.64549167,-82.577344440
+2021,SC,450625,GREENVILLE (45),1,True,1,66,0,1,0,0,0,us_state,3,,SR-11,SR-11 CHEROKEE SCENIC HILLS,Rural,2,overnight (midnight-5:59 a.m.),Friday,False,2,35.12680278,-82.298163890
+2021,SC,450626,FLORENCE (41),1,True,1,66,0,1,0,0,0,us_state,3,,SR-327,SR-327 WILLISTON RD,Rural,8,morning (6-11:59 a.m.),Friday,False,2,34.23815000,-79.689125000
+2021,SC,450627,CHEROKEE (21),1,True,1,66,0,1,0,0,0,us_state,2,,US-29,US-29,Urban,16,afternoon (noon-5:59 p.m.),Saturday,False,2,35.06580000,-81.661700000
+2021,SC,450638,SPARTANBURG (83),1,True,1,66,0,1,0,0,0,interstate,1,I-26,I-26,I-26,Urban,16,afternoon (noon-5:59 p.m.),Tuesday,False,2,34.90348056,-81.991147220
+2021,SC,450657,LEXINGTON (63),1,True,1,66,0,1,0,0,0,us_state,2,,US-321,US-321,Rural,3,overnight (midnight-5:59 a.m.),Saturday,False,2,33.84583611,-81.087344440
+2021,SC,450663,AIKEN (3),1,True,1,66,0,0,1,0,0,us_state,3,,SR-28,SR-28 SAND BAR FERRY RD,Urban,23,evening (6-11:59 p.m.),Monday,False,1,33.43296944,-81.896700000
+2021,SC,450664,FLORENCE (41),1,False,1,67,1,0,0,0,0,us_state,3,,SR-51,SR-51,Rural,10,morning (6-11:59 a.m.),Tuesday,False,1,34.01304722,-79.613822220
+2021,SC,450665,ANDERSON (7),1,True,1,66,1,0,0,0,0,interstate,1,I-85,I-85,I-85,Rural,16,afternoon (noon-5:59 p.m.),Wednesday,False,1,34.66660833,-82.550913890
+2021,SC,450666,WILLIAMSBURG (89),1,True,1,66,0,1,0,0,0,us_state,3,,SR-261,SR-261 MANNING HWY,Rural,14,afternoon (noon-5:59 p.m.),Thursday,False,2,33.69980833,-79.958083330
+2021,SC,450679,HORRY (51),1,True,1,66,0,0,1,0,0,us_state,2,,US-501,US-501,Rural,2,overnight (midnight-5:59 a.m.),Monday,False,1,33.89653889,-79.128811110
+2021,SC,450693,GREENVILLE (45),1,False,1,61,0,1,0,0,0,us_state,3,,SR-291,SR-291 N PLEASANTBURG DRIVE,Urban,16,afternoon (noon-5:59 p.m.),Thursday,False,2,34.88982222,-82.381786110
+2021,SC,450698,MARLBORO (69),2,True,1,66,0,2,0,0,0,other,8,,,SALEM RD,Rural,14,afternoon (noon-5:59 p.m.),Friday,False,2,34.52234444,-79.698366670
+2021,SC,450699,DARLINGTON (31),1,False,1,67,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Rural,6,morning (6-11:59 a.m.),Saturday,False,3,34.20515278,-80.016858330
+2021,SC,450708,ALLENDALE (5),1,True,1,66,0,1,0,0,0,us_state,2,,US-278,US-278 BARNWELL HWY,Rural,4,overnight (midnight-5:59 a.m.),Thursday,False,2,33.09536389,-81.335505560
+2021,SC,450728,AIKEN (3),1,True,1,66,0,1,0,0,0,us_state,3,,SR-19,SR-19 EDGEFIELD HWY,Rural,12,afternoon (noon-5:59 p.m.),Thursday,False,3,33.69796944,-81.794361110
+2021,SC,450729,LEXINGTON (63),1,True,1,66,0,1,0,0,0,interstate,1,I-26,I-26,I-26,Rural,13,afternoon (noon-5:59 p.m.),Thursday,False,3,33.77786389,-80.982547220
+2021,SC,450730,RICHLAND (79),1,True,1,66,0,1,0,0,0,us_state,3,,SR-48,SR-48 BLUFF RD,Urban,6,morning (6-11:59 a.m.),Friday,False,2,33.92453333,-80.959455560
+2021,SC,450755,SPARTANBURG (83),1,False,1,67,0,1,0,0,0,us_state,3,,SR-14,SR-14 HWY 14,Rural,13,afternoon (noon-5:59 p.m.),Monday,False,2,35.14821111,-82.214008330
+2021,SC,450757,BERKELEY (15),1,True,1,66,0,1,0,0,0,us_state,2,,US-176,US-176,Rural,13,afternoon (noon-5:59 p.m.),Tuesday,False,2,33.16428611,-80.193819440
+2021,SC,450766,YORK (91),1,False,1,62,0,0,1,0,0,interstate,1,I-77,I-77,I-77,Urban,1,overnight (midnight-5:59 a.m.),Wednesday,False,2,35.08392222,-80.939077780
+2021,SC,450767,CHEROKEE (21),3,True,2,66 66,0,3,0,0,0,interstate,1,I-85,I-85,I-85,Urban,14,afternoon (noon-5:59 p.m.),Thursday,True,8,35.08240278,-81.706088890
+2021,SC,450774,FAIRFIELD (39),1,True,1,66,0,1,0,0,0,interstate,1,I-77,I-77,I-77,Rural,4,overnight (midnight-5:59 a.m.),Friday,False,2,34.42994444,-80.995602780
+2021,SC,450787,COLLETON (29),2,False,1,61,1,1,0,0,0,us_state,3,,SR-64,SR-64 CHARLESTON HWY,Rural,8,morning (6-11:59 a.m.),Wednesday,False,2,32.82746944,-80.562805560
+2021,SC,450791,ORANGEBURG (75),1,True,2,66 66,0,1,0,0,0,interstate,1,I-26,I-26,I-26,Rural,5,overnight (midnight-5:59 a.m.),Friday,False,3,33.31701389,-80.546166670
+2021,SC,450792,SPARTANBURG (83),1,True,1,66,0,1,0,0,0,us_state,2,,US-176,US-176 N PINE ST,Urban,20,evening (6-11:59 p.m.),Friday,False,2,34.99746389,-81.988588890
+2021,SC,450802,DILLON (33),1,False,1,63,0,1,0,0,0,us_state,3,,SR-34,SR-34 HWY 34,Rural,9,morning (6-11:59 a.m.),Wednesday,False,2,34.43360556,-79.486758330
+2021,SC,450812,DARLINGTON (31),1,False,1,67,1,0,0,0,0,us_state,3,,SR-403,SR-403 OATES HWY,Rural,5,overnight (midnight-5:59 a.m.),Sunday,False,1,34.21508889,-80.051825000
+2021,SC,450816,HAMPTON (49),1,False,1,62,1,0,0,0,0,us_state,3,,SR-3,SR-3 NIXVILLE RD,Rural,5,overnight (midnight-5:59 a.m.),Wednesday,False,1,32.75476944,-81.270552780
+2021,SC,450833,CHESTER (23),1,False,1,61,0,1,0,0,0,us_state,2,,US-21,US-21,Rural,17,afternoon (noon-5:59 p.m.),Wednesday,False,2,34.76247222,-80.924783330
+2021,SC,450842,BERKELEY (15),2,False,1,63,0,2,0,0,0,interstate,1,I-26,I-26,I-26,Rural,12,afternoon (noon-5:59 p.m.),Tuesday,True,2,33.08413056,-80.210650000
+2021,SC,450860,HAMPTON (49),1,True,1,66,1,0,0,0,0,interstate,1,I-95,I-95,I-95,Rural,1,overnight (midnight-5:59 a.m.),Wednesday,False,1,32.72495000,-80.854119440
+2021,SC,450869,EDGEFIELD (37),1,True,1,66,0,1,0,0,0,us_state,3,,SR-121,SR-121 HWY 121,Rural,3,overnight (midnight-5:59 a.m.),Sunday,False,2,33.78748333,-81.830925000
+2021,SC,450875,WILLIAMSBURG (89),1,True,1,66,0,1,0,0,0,us_state,3,,SR-39,SR-39,Rural,7,morning (6-11:59 a.m.),Tuesday,False,2,33.77296389,-79.589088890
+2021,SC,450881,SPARTANBURG (83),1,True,1,66,0,1,0,0,0,interstate,1,I-26,I-26,I-26,Rural,16,afternoon (noon-5:59 p.m.),Thursday,False,3,34.78313889,-81.954719440
+2021,SC,450891,BARNWELL (11),1,False,1,67,0,1,0,0,0,us_state,3,,SR-3,SR-3 HWY 3,Rural,18,evening (6-11:59 p.m.),Friday,False,2,33.44972778,-81.283180560
+2021,SC,450897,GREENVILLE (45),1,False,1,61,0,1,0,0,0,us_state,2,,US-29,US-29 WADE HAMPTON BLVD,Urban,10,morning (6-11:59 a.m.),Saturday,False,2,34.93491111,-82.279500000
+2021,SC,450912,NEWBERRY (71),1,True,1,66,0,1,0,0,0,us_state,3,,SR-34,SR-34,Rural,16,afternoon (noon-5:59 p.m.),Saturday,False,2,34.38479722,-81.414708330
+2021,SC,450916,LANCASTER (57),1,False,1,61,0,1,0,0,0,us_state,3,,SR-200,SR-200 GREAT FALLS HWY,Urban,9,morning (6-11:59 a.m.),Monday,False,2,34.67396944,-80.802422220
+2021,SC,450939,MCCORMICK (65),1,True,1,66,0,1,0,0,0,us_state,3,,SR-28,SR-28 HWY 28,Rural,16,afternoon (noon-5:59 p.m.),Tuesday,False,2,33.67364167,-82.176941670
+2021,SC,450942,LEXINGTON (63),1,False,1,63,0,1,0,0,0,us_state,3,,SR-6,SR-6 SAINT MATTHEWS RD,Rural,18,evening (6-11:59 p.m.),Wednesday,False,2,33.74341389,-81.068713890
+2021,SC,450945,AIKEN (3),2,True,1,66,2,0,0,0,0,interstate,1,I-20,I-20,I-20,Rural,5,overnight (midnight-5:59 a.m.),Friday,False,1,33.73770833,-81.546500000
+2021,SC,450959,BEAUFORT (13),1,True,1,66,0,0,1,0,0,us_state,2,,US-21,US-21 PARRIS ISLAND GTWY,Urban,4,overnight (midnight-5:59 a.m.),Tuesday,False,1,32.43366944,-80.723830560
+2021,SC,450960,FLORENCE (41),2,True,2,66 66,0,2,0,0,0,interstate,1,I-95,I-95,I-95,Rural,18,evening (6-11:59 p.m.),Tuesday,False,4,34.27308611,-79.695991670
+2021,SC,450961,GREENWOOD (47),1,False,1,63,1,0,0,0,0,us_state,2,,US-221,US-221,Rural,0,overnight (midnight-5:59 a.m.),Thursday,False,1,34.24304444,-82.100822220
+2021,SC,450981,KERSHAW (55),1,False,1,63,0,1,0,0,0,us_state,2,,US-521,US-521,Rural,8,morning (6-11:59 a.m.),Friday,False,2,34.39551944,-80.594444440
+2021,SC,450991,FLORENCE (41),1,True,2,66 66,0,1,0,0,0,interstate,1,I-95,I-95,I-95,Urban,4,overnight (midnight-5:59 a.m.),Wednesday,False,4,34.24452222,-79.770344440
+2021,SC,451002,YORK (91),1,True,1,66,0,1,0,0,0,us_state,3,,SR-5,SR-5 HWY 5,Rural,17,afternoon (noon-5:59 p.m.),Monday,False,2,34.86410278,-80.908644440
+2021,SC,451008,SPARTANBURG (83),1,True,1,66,0,1,0,0,0,us_state,3,,SR-101,SR-101 HWY 101,Rural,6,morning (6-11:59 a.m.),Wednesday,False,2,34.77719167,-82.085280560
+2021,SC,451017,CHESTERFIELD (25),1,True,1,66,0,1,0,0,0,us_state,2,,US-601,US-601 HWY 601,Rural,11,morning (6-11:59 a.m.),Thursday,False,4,34.79750278,-80.406711110
+2021,SC,451026,SUMTER (85),1,False,1,62,0,1,0,0,0,us_state,3,,SR-763,SR-763 WEDGEFIELD RD,Urban,7,morning (6-11:59 a.m.),Tuesday,False,2,33.91323889,-80.394669440
+2021,SC,451030,DORCHESTER (35),2,True,1,66,0,2,0,0,0,interstate,1,I-95,I-95,I-95,Rural,11,morning (6-11:59 a.m.),Thursday,False,4,33.30673333,-80.554438890
+2021,SC,451033,RICHLAND (79),1,True,1,66,0,0,1,0,0,interstate,1,I-20,I-20,I-20,Urban,3,overnight (midnight-5:59 a.m.),Thursday,False,1,34.07857778,-80.935369440
+2021,SC,451052,BEAUFORT (13),1,False,1,62,0,1,0,0,0,us_state,2,,US-278,US-278 FORDING ISLAND RD,Urban,22,evening (6-11:59 p.m.),Friday,False,2,32.27813889,-80.872111110
+2021,SC,451054,GEORGETOWN (43),1,False,1,63,0,1,0,0,0,us_state,2,,US-17,US-17 HIGHMARKET STREET,Urban,13,afternoon (noon-5:59 p.m.),Thursday,False,2,33.38676389,-79.313386110
+2021,SC,451057,RICHLAND (79),1,False,1,61,0,1,0,0,0,us_state,3,,SR-768,SR-768 SHOP RD,Urban,7,morning (6-11:59 a.m.),Wednesday,False,2,33.93958611,-80.953883330
+2021,SC,451058,DARLINGTON (31),1,True,1,66,1,0,0,0,0,us_state,3,,SR-340,SR-340 TIMMONSVILLE HWY,Rural,22,evening (6-11:59 p.m.),Sunday,False,1,34.27849444,-79.880830560
+2021,SC,451069,DORCHESTER (35),2,False,1,62,0,2,0,0,0,us_state,2,,US-17,US-17,Rural,6,morning (6-11:59 a.m.),Friday,False,4,32.95906944,-80.293861110
+2021,SC,451075,BEAUFORT (13),1,False,1,62,0,0,0,1,0,other,6,,,BUCKWALTER PKWY,Urban,8,morning (6-11:59 a.m.),Wednesday,False,1,32.26326111,-80.907761110
+2021,SC,451084,HORRY (51),1,False,1,63,0,1,0,0,0,us_state,2,,US-17 BUS,US-17 S HWY 17 BUS,Rural,9,morning (6-11:59 a.m.),Friday,False,2,33.57881111,-79.022250000
+2021,SC,451085,GEORGETOWN (43),1,True,1,66,0,1,0,0,0,us_state,2,,US-17 BYPASS,US-17 BYPASS,Urban,13,afternoon (noon-5:59 p.m.),Wednesday,False,2,33.52858611,-79.062161110
+2021,SC,451086,FLORENCE (41),1,True,1,66,1,0,0,0,0,us_state,3,,SR-461,SR-461 N OLD GEORGETOWN RD,Rural,13,afternoon (noon-5:59 p.m.),Wednesday,False,1,33.84136944,-79.649800000
+2021,SC,451088,SPARTANBURG (83),1,False,1,67,1,0,0,0,0,us_state,2,,US-221,US-221 WHITNEY RD,Urban,0,overnight (midnight-5:59 a.m.),Wednesday,False,1,34.97233889,-81.939488890
+2021,SC,451092,HORRY (51),1,False,1,67,0,1,0,0,0,us_state,3,,SR-548,SR-548 HWY 548,Urban,7,morning (6-11:59 a.m.),Friday,False,2,33.87106944,-79.139313890
+2021,SC,451095,RICHLAND (79),1,True,1,66,0,1,0,0,0,us_state,3,,SR-48,SR-48 BLUFF RD,Urban,22,evening (6-11:59 p.m.),Friday,False,2,33.95509722,-80.993400000
+2021,SC,451096,SPARTANBURG (83),1,False,1,61,0,1,0,0,0,us_state,3,,SR-44,SR-44 DRAYTON RD,Urban,14,afternoon (noon-5:59 p.m.),Wednesday,False,2,34.96801944,-81.920269440
+2021,SC,451099,SPARTANBURG (83),1,True,1,66,0,1,0,0,0,us_state,2,,US-29,US-29 E MAIN STREET,Urban,15,afternoon (noon-5:59 p.m.),Tuesday,False,2,34.99798611,-81.821566670
+2021,SC,451101,SPARTANBURG (83),1,True,1,66,0,1,0,0,0,us_state,3,,SR-290,SR-290 E MAIN STREET,Urban,17,afternoon (noon-5:59 p.m.),Tuesday,False,2,34.93500000,-82.133611110
+2021,SC,451103,RICHLAND (79),1,False,1,61,0,1,0,0,0,interstate,1,I-77,I-77,I-77,Urban,12,afternoon (noon-5:59 p.m.),Tuesday,False,3,34.07787222,-80.934608330
+2021,SC,451104,COLLETON (29),1,True,1,66,0,1,0,0,0,us_state,3,,SR-63,SR-63 SNIDERS HWY,Urban,6,morning (6-11:59 a.m.),Wednesday,False,2,32.88033889,-80.709161110
+2022,SC,450006,CHEROKEE (21),1,True,3,66 66 66,0,1,0,0,0,interstate,1,I-85,I-85,I-85,Rural,16,afternoon (noon-5:59 p.m.),Tuesday,True,5,35.11749167,-81.576708330
+2022,SC,450008,BERKELEY (15),1,False,1,67,0,1,0,0,0,interstate,1,I-26,I-26,I-26,Rural,20,evening (6-11:59 p.m.),Thursday,False,2,33.12393889,-80.282619440
+2022,SC,450015,EDGEFIELD (37),1,True,1,66,0,1,0,0,0,us_state,3,,SR-19,SR-19 HWY 19,Rural,13,afternoon (noon-5:59 p.m.),Monday,False,2,33.72619167,-81.843197220
+2022,SC,450025,FAIRFIELD (39),1,True,1,66,0,0,1,0,0,interstate,1,I-77,I-77,I-77,Rural,5,overnight (midnight-5:59 a.m.),Tuesday,False,1,34.31056944,-81.001844440
+2022,SC,450026,SPARTANBURG (83),1,True,1,66,0,1,0,0,0,interstate,1,I-26,I-26,I-26,Urban,15,afternoon (noon-5:59 p.m.),Thursday,False,2,35.02683056,-82.035313890
+2022,SC,450027,YORK (91),1,False,1,61,0,1,0,0,0,interstate,1,I-77,I-77,I-77,Urban,16,afternoon (noon-5:59 p.m.),Friday,False,4,35.07955556,-80.942805560
+2022,SC,450038,OCONEE (73),1,False,1,62,0,1,0,0,0,us_state,3,,SR-13,SR-13 RICHLAND RD,Rural,16,afternoon (noon-5:59 p.m.),Thursday,False,2,34.68161111,-83.016311110
+2022,SC,450066,GREENVILLE (45),1,False,1,67,0,1,0,0,0,us_state,3,,SR-81,SR-81 ANDERSON RD,Urban,7,morning (6-11:59 a.m.),Wednesday,False,3,34.80255556,-82.461152780
+2022,SC,450072,GEORGETOWN (43),1,True,2,66 66,0,1,0,0,0,us_state,2,,US-701,US-701 N FRASER ST,Rural,11,morning (6-11:59 a.m.),Friday,False,3,33.52074167,-79.245827780
+2022,SC,450079,RICHLAND (79),1,False,1,62,0,1,0,0,0,us_state,2,,US-321,US-321 WINNSBORO RD,Rural,11,morning (6-11:59 a.m.),Monday,False,2,34.18663333,-81.044816670
+2022,SC,450094,JASPER (53),1,True,1,66,0,1,0,0,0,us_state,2,,US-17,US-17 JACOB SMART BLVD,Urban,17,afternoon (noon-5:59 p.m.),Monday,False,2,32.46841944,-80.988280560
+2022,SC,450110,GREENVILLE (45),1,False,1,67,0,1,0,0,0,us_state,3,,SR-166,SR-166 W LEE RD,Urban,17,afternoon (noon-5:59 p.m.),Saturday,False,2,34.89451389,-82.356061110
+2022,SC,450113,GREENVILLE (45),2,True,1,66,0,2,0,0,0,us_state,2,,US-25,US-25 WHITE HORSE RD,Urban,9,morning (6-11:59 a.m.),Sunday,False,2,34.78546944,-82.411822220
+2022,SC,450119,HORRY (51),1,False,1,60,0,0,1,0,0,us_state,3,,SR-616,SR-616 DICK POND RD,Urban,19,evening (6-11:59 p.m.),Wednesday,False,1,33.68236111,-79.000777780
+2022,SC,450120,HORRY (51),1,True,1,66,0,0,1,0,0,us_state,2,,US-501,US-501,Urban,2,overnight (midnight-5:59 a.m.),Thursday,False,1,33.72036111,-78.929916670
+2022,SC,450130,JASPER (53),1,True,1,66,0,1,0,0,0,us_state,2,,US-601,US-601 CYPRESS BRANCH RD,Rural,14,afternoon (noon-5:59 p.m.),Monday,False,2,32.60526667,-81.162902780
+2022,SC,450160,UNION (87),1,True,1,66,0,1,0,0,0,us_state,3,,SR-9,SR-9 JONESVILLE LOCKHART HWY,Rural,6,morning (6-11:59 a.m.),Wednesday,False,2,34.81223333,-81.596863890
+2022,SC,450174,OCONEE (73),1,False,1,67,0,1,0,0,0,us_state,3,,SR-59,SR-59 TOKEENA RD,Rural,7,morning (6-11:59 a.m.),Wednesday,False,3,34.64423333,-82.966027780
+2022,SC,450179,JASPER (53),1,True,1,66,1,0,0,0,0,us_state,3,,SR-462,SR-462 GILLISON BRANCH RD,Rural,3,overnight (midnight-5:59 a.m.),Friday,False,1,32.61028889,-81.027100000
+2022,SC,450193,CHESTER (23),1,True,1,66,0,1,0,0,0,interstate,1,I-77,I-77,I-77,Rural,7,morning (6-11:59 a.m.),Monday,False,2,34.67518889,-81.029069440
+2022,SC,450199,FLORENCE (41),1,True,1,66,0,1,0,0,0,interstate,1,I-95,I-95,I-95 EXIT RAMP,Rural,23,evening (6-11:59 p.m.),Tuesday,False,2,34.26430278,-79.732300000
+2022,SC,450200,BEAUFORT (13),1,True,1,66,0,1,0,0,0,us_state,2,,US-17,US-17 CHARLESTON HWY,Rural,11,morning (6-11:59 a.m.),Friday,False,3,32.62021944,-80.736377780
+2022,SC,450202,RICHLAND (79),1,True,1,66,0,1,0,0,0,interstate,1,I-26,I-26,I-26,Rural,0,overnight (midnight-5:59 a.m.),Saturday,True,2,34.17027778,-81.301230560
+2022,SC,450215,GREENVILLE (45),1,True,1,66,1,0,0,0,0,us_state,3,,SR-418,SR-418 HWY418,Rural,8,morning (6-11:59 a.m.),Wednesday,False,3,34.64389444,-82.320775000
+2022,SC,450216,GREENVILLE (45),1,False,1,62,0,1,0,0,0,us_state,2,,US-25,US-25,Rural,17,afternoon (noon-5:59 p.m.),Wednesday,False,4,35.04161944,-82.429988890
+2022,SC,450225,FLORENCE (41),1,True,1,66,0,1,0,0,0,us_state,3,,SR-147,SR-147,Rural,14,afternoon (noon-5:59 p.m.),Wednesday,False,2,34.02427222,-79.784736110
+2022,SC,450227,GREENVILLE (45),1,False,1,62,0,1,0,0,0,us_state,3,,SR-263,SR-263 STAUNTON BRIDGE RD,Urban,12,afternoon (noon-5:59 p.m.),Monday,False,2,34.78760000,-82.447038890
+2022,SC,450231,GEORGETOWN (43),1,True,1,66,0,0,0,1,0,us_state,3,,SR-707,SR-707 E ASHLAND STREET,Urban,17,afternoon (noon-5:59 p.m.),Wednesday,False,1,33.44912500,-79.550838890
+2022,SC,450240,CHARLESTON (19),2,False,1,60,2,0,0,0,0,us_state,3,,SR-165,SR-165 HWY 165,Rural,1,overnight (midnight-5:59 a.m.),Sunday,False,2,32.79548056,-80.266030560
+2022,SC,450254,DARLINGTON (31),1,False,1,63,0,1,0,0,0,us_state,3,,SR-20,SR-20 RUBY RD,Rural,0,overnight (midnight-5:59 a.m.),Monday,False,2,34.43267500,-80.096519440
+2022,SC,450262,UNION (87),1,False,1,63,0,1,0,0,0,us_state,2,,US-176,US-176 WHITMIRE HWY,Rural,7,morning (6-11:59 a.m.),Friday,False,2,34.69109167,-81.609397220
+2022,SC,450279,EDGEFIELD (37),1,False,1,63,0,1,0,0,0,us_state,3,,SR-19,SR-19 EDGEFIELD HWY,Rural,16,afternoon (noon-5:59 p.m.),Thursday,False,2,33.72217500,-81.837427780
+2022,SC,450281,GREENVILLE (45),1,True,1,66,0,1,0,0,0,interstate,1,I-385,I-385,I-385,Urban,18,evening (6-11:59 p.m.),Friday,False,2,34.79591389,-82.280269440
+2022,SC,450299,GREENWOOD (47),1,False,1,67,1,0,0,0,0,us_state,3,,SR-285,SR-285 AIRPORT RD,Urban,1,overnight (midnight-5:59 a.m.),Monday,False,1,34.23540278,-82.146313890
+2022,SC,450306,RICHLAND (79),1,True,1,66,0,1,0,0,0,interstate,1,I-77,I-77,I-77,Urban,5,overnight (midnight-5:59 a.m.),Saturday,False,3,34.10747222,-80.961797220
+2022,SC,450314,GEORGETOWN (43),1,True,1,66,0,1,0,0,0,us_state,2,,US-17,US-17 CHURCH STREET,Rural,10,morning (6-11:59 a.m.),Sunday,False,2,33.37008889,-79.277938890
+2022,SC,450315,LEXINGTON (63),1,False,1,67,0,1,0,0,0,other,4,,,CR- JIM SPENCE RD,Rural,18,evening (6-11:59 p.m.),Monday,False,2,33.81902778,-81.207611110
+2022,SC,450328,CHARLESTON (19),1,False,1,67,0,0,1,0,0,interstate,1,I-26,I-26,I-26 RAMP,Urban,1,overnight (midnight-5:59 a.m.),Monday,False,1,32.93973889,-80.050702780
+2022,SC,450335,DILLON (33),1,True,1,66,1,0,0,0,0,interstate,1,I-95,I-95,I-95,Rural,6,morning (6-11:59 a.m.),Thursday,False,1,34.34029722,-79.537930560
+2022,SC,450336,HAMPTON (49),1,False,1,63,0,1,0,0,0,us_state,2,,US-321,US-321 COLUMBIA HWY,Rural,8,morning (6-11:59 a.m.),Thursday,False,2,32.80608611,-81.240319440
+2022,SC,450337,YORK (91),1,True,1,66,0,0,1,0,0,interstate,1,I-77,I-77,I-77,Urban,10,morning (6-11:59 a.m.),Thursday,False,1,35.09836389,-80.932138890
+2022,SC,450352,ORANGEBURG (75),1,False,1,67,0,1,0,0,0,us_state,2,,US-178,US-178 NORTH RD,Rural,21,evening (6-11:59 p.m.),Wednesday,False,2,33.55871389,-80.945563890
+2022,SC,450365,HORRY (51),1,False,1,63,0,1,0,0,0,us_state,2,,US-17 BUSINESS,US-17 HWY 17 BUSINESS,Urban,3,overnight (midnight-5:59 a.m.),Saturday,False,2,33.74280000,-78.823800000
+2022,SC,450378,PICKENS (77),1,False,1,63,0,1,0,0,0,us_state,3,,SR-11,SR-11 HWY 11,Rural,15,afternoon (noon-5:59 p.m.),Friday,False,2,34.96069722,-82.832438890
+2022,SC,450382,KERSHAW (55),1,True,1,66,0,1,0,0,0,us_state,2,,US-521,US-521 SUMTER HWY,Rural,15,afternoon (noon-5:59 p.m.),Saturday,False,5,34.18938889,-80.580036110
+2022,SC,450393,BERKELEY (15),1,True,1,66,0,1,0,0,0,us_state,3,,SR-27,SR-27 OLD GILLIARD RD,Rural,9,morning (6-11:59 a.m.),Tuesday,False,2,33.15119722,-80.306238890
+2022,SC,450402,CHARLESTON (19),1,False,1,62,0,0,1,0,0,us_state,3,,SR-642,SR-642,Urban,14,afternoon (noon-5:59 p.m.),Thursday,False,1,32.85430000,-80.017100000
+2022,SC,450405,LEXINGTON (63),1,True,1,66,0,1,0,0,0,us_state,2,,US-378,US-378,Rural,11,morning (6-11:59 a.m.),Friday,False,2,34.02220556,-81.453794440
+2022,SC,450408,CHESTERFIELD (25),1,True,1,66,0,1,0,0,0,us_state,2,,US-1,US-1 HWY 1,Rural,22,evening (6-11:59 p.m.),Friday,False,2,34.43298611,-80.304297220
+2022,SC,450414,SPARTANBURG (83),1,True,1,66,0,1,0,0,0,us_state,2,,US-29,US-29 N MAIN STREET,Urban,16,afternoon (noon-5:59 p.m.),Sunday,False,2,35.02270000,-81.796330560
+2022,SC,450416,ORANGEBURG (75),1,True,1,66,0,1,0,0,0,interstate,1,I-26,I-26,I-26,Rural,2,overnight (midnight-5:59 a.m.),Monday,False,2,33.53379722,-80.803438890
+2022,SC,450419,SPARTANBURG (83),1,False,1,61,0,1,0,0,0,other,4,,,CR- FARLEY AVE,Urban,12,afternoon (noon-5:59 p.m.),Monday,False,2,34.95178889,-81.944766670
+2022,SC,450428,FLORENCE (41),1,False,1,61,0,1,0,0,0,us_state,2,,US-378,US-378 W TURBEVILLE HWY,Urban,15,afternoon (noon-5:59 p.m.),Thursday,False,3,33.88712222,-79.945413890
+2022,SC,450431,CHARLESTON (19),1,False,1,63,0,1,0,0,0,us_state,3,,SR-54,SR-54 RIVER RD,Rural,12,afternoon (noon-5:59 p.m.),Friday,False,2,32.76580556,-80.066327780
+2022,SC,450441,ORANGEBURG (75),1,True,1,66,0,0,1,0,0,interstate,1,I-95,I-95,I-95,Rural,18,evening (6-11:59 p.m.),Wednesday,False,1,33.48499722,-80.471341670
+2022,SC,450443,CHESTER (23),1,True,1,66,0,1,0,0,0,us_state,2,,US-21,US-21 CATAWBA RIVER RD,Rural,6,morning (6-11:59 a.m.),Thursday,False,2,34.73865556,-80.906080560
+2022,SC,450444,SPARTANBURG (83),1,False,1,63,0,1,0,0,0,us_state,3,,SR-292,SR-292,Urban,11,morning (6-11:59 a.m.),Friday,False,3,34.98743056,-82.110950000
+2022,SC,450452,LEXINGTON (63),1,False,1,63,0,1,0,0,0,us_state,3,,SR-72,SR-72 OLD DUNBAR RD,Urban,6,morning (6-11:59 a.m.),Sunday,False,2,33.93611111,-81.099044440
+2022,SC,450453,ABBEVILLE (1),1,False,1,62,0,1,0,0,0,us_state,3,,SR-28,SR-28,Rural,11,morning (6-11:59 a.m.),Monday,False,2,34.15576667,-82.402569440
+2022,SC,450469,RICHLAND (79),1,False,1,67,0,1,0,0,0,us_state,2,,US-76,US-76,Urban,18,evening (6-11:59 p.m.),Sunday,False,2,34.12931111,-81.248491670
+2022,SC,450484,KERSHAW (55),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Rural,18,evening (6-11:59 p.m.),Wednesday,False,2,34.20876389,-80.468419440
+2022,SC,450485,AIKEN (3),1,False,1,67,1,0,0,0,0,us_state,3,,SR-19,SR-19 WHISKEY RD,Urban,16,afternoon (noon-5:59 p.m.),Thursday,False,1,33.45102778,-81.687025000
+2022,SC,450487,FAIRFIELD (39),1,True,2,66 66,0,1,0,0,0,interstate,1,I-77,I-77,I-77,Rural,3,overnight (midnight-5:59 a.m.),Thursday,False,3,34.27094722,-80.997952780
+2022,SC,450493,ORANGEBURG (75),1,True,1,66,0,1,0,0,0,interstate,1,I-95,I-95,I-95,Rural,17,afternoon (noon-5:59 p.m.),Monday,False,2,33.48939444,-80.469922220
+2022,SC,450525,LEXINGTON (63),1,True,2,61 66,0,1,0,0,0,interstate,1,I-26,I-26,I-26,Rural,2,overnight (midnight-5:59 a.m.),Thursday,False,3,33.77312222,-80.977577780
+2022,SC,450528,GREENVILLE (45),1,False,1,63,0,1,0,0,0,us_state,3,,SR-55,SR-55 FAIRVIEW RD,Rural,8,morning (6-11:59 a.m.),Monday,False,2,34.63813889,-82.258161110
+2022,SC,450533,BERKELEY (15),1,False,1,62,0,1,0,0,0,us_state,3,,SR-413,SR-413 BLACK TOM RD,Rural,4,overnight (midnight-5:59 a.m.),Saturday,False,2,33.15810000,-80.068263890
+2022,SC,450548,HORRY (51),1,False,1,61,1,0,0,0,0,us_state,3,,SR-707,SR-707 HWY 707,Urban,14,afternoon (noon-5:59 p.m.),Tuesday,False,1,33.63813611,-79.032719440
+2022,SC,450550,CHESTERFIELD (25),1,False,1,63,0,1,0,0,0,us_state,3,,SR-9,SR-9,Rural,11,morning (6-11:59 a.m.),Tuesday,True,5,34.74648056,-80.492555560
+2022,SC,450553,MARLBORO (69),1,True,1,66,0,1,0,0,0,us_state,3,,SR-79,SR-79 HWY 79 E,Rural,18,evening (6-11:59 p.m.),Wednesday,False,2,34.73151389,-79.665427780
+2022,SC,450561,BERKELEY (15),1,True,2,66 66,1,0,0,0,0,us_state,2,,US-52,US-52 HWY 52,Rural,13,afternoon (noon-5:59 p.m.),Friday,False,3,33.43852222,-79.984563890
+2022,SC,450567,DILLON (33),1,True,2,66 66,1,0,0,0,0,interstate,1,I-95,I-95,I-95,Rural,23,evening (6-11:59 p.m.),Monday,False,3,34.32892500,-79.569600000
+2022,SC,450569,JASPER (53),1,False,2,61 61,0,1,0,0,0,us_state,2,,US-17,US-17 WHYTE HARDEE BLVD,Rural,7,morning (6-11:59 a.m.),Wednesday,False,3,32.29303056,-81.076461110
+2022,SC,450575,GREENVILLE (45),1,False,1,61,0,1,0,0,0,us_state,3,,SR-291,SR-291 S PLEASANTBURG DRIVE,Urban,12,afternoon (noon-5:59 p.m.),Thursday,False,2,34.80398056,-82.375461110
+2022,SC,450577,ORANGEBURG (75),1,True,1,66,0,1,0,0,0,us_state,2,,US-301,US-301 FIVE CHOP RD,Rural,1,overnight (midnight-5:59 a.m.),Sunday,False,2,33.45705000,-80.582150000
+2022,SC,450589,DORCHESTER (35),1,False,1,63,0,1,0,0,0,us_state,3,,SR-25,SR-25 ZION RD,Rural,11,morning (6-11:59 a.m.),Wednesday,False,2,33.09568611,-80.403786110
+2022,SC,450590,DILLON (33),1,True,1,66,1,0,0,0,0,interstate,1,I-95,I-95,I-95,Rural,15,afternoon (noon-5:59 p.m.),Wednesday,False,1,34.30961944,-79.614752780
+2022,SC,450658,FLORENCE (41),1,True,1,66,0,1,0,0,0,us_state,2,,US-52,US-52 HWY 52,Rural,7,morning (6-11:59 a.m.),Tuesday,False,2,33.94302222,-79.747488890
+2022,SC,450671,GREENVILLE (45),1,False,1,62,0,1,0,0,0,us_state,3,,SR-8,SR-8 HWY 8,Rural,20,evening (6-11:59 p.m.),Sunday,False,2,34.63895556,-82.428363890
+2022,SC,450672,OCONEE (73),1,True,1,66,0,1,0,0,0,us_state,3,,SR-11,SR-11,Rural,9,morning (6-11:59 a.m.),Monday,False,2,34.55255556,-83.050238890
+2022,SC,450696,LEXINGTON (63),2,True,1,66,1,1,0,0,0,us_state,2,,US-1,US-1 AUGUSTA RD,Urban,23,evening (6-11:59 p.m.),Sunday,False,2,33.98783889,-81.072986110
+2022,SC,450701,NEWBERRY (71),1,True,1,66,0,1,0,0,0,us_state,3,,SR-121,SR-121,Rural,4,overnight (midnight-5:59 a.m.),Wednesday,False,2,34.33641389,-81.606263890
+2022,SC,450717,CHESTERFIELD (25),1,True,1,66,1,0,0,0,0,us_state,3,,SR-43,SR-43 PEACH ORCHARD RD,Rural,13,afternoon (noon-5:59 p.m.),Tuesday,False,1,34.67391667,-80.367086110
+2022,SC,450723,ORANGEBURG (75),1,True,1,66,0,1,0,0,0,us_state,2,,US-321,US-321 SAVANNAH HWY,Rural,5,overnight (midnight-5:59 a.m.),Wednesday,False,2,33.65394444,-81.103580560
+2022,SC,450724,LANCASTER (57),1,True,1,66,0,0,1,0,0,us_state,3,,SR-9,SR-9 PAGELAND HWY,Rural,16,afternoon (noon-5:59 p.m.),Wednesday,False,1,34.73255556,-80.692752780
+2022,SC,450734,ORANGEBURG (75),1,True,1,66,0,1,0,0,0,us_state,3,,SR-389,SR-389 NINETY SIX RD,Rural,5,overnight (midnight-5:59 a.m.),Saturday,False,2,33.58169722,-81.210025000
+2022,SC,450738,OCONEE (73),1,False,1,78,1,0,0,0,0,us_state,2,,US-76,US-76 LONG CREEK HWY,Rural,18,evening (6-11:59 p.m.),Sunday,False,1,34.75671111,-83.239419440
+2022,SC,450741,NEWBERRY (71),1,True,1,66,0,1,0,0,0,interstate,1,I-26,I-26,I-26,Rural,9,morning (6-11:59 a.m.),Tuesday,False,2,34.32610833,-81.600263890
+2022,SC,450742,ORANGEBURG (75),1,True,1,66,0,1,0,0,0,us_state,2,,US-301,US-301 FIVE CHOP RD,Rural,5,overnight (midnight-5:59 a.m.),Wednesday,False,2,33.46975000,-80.798650000
+2022,SC,450751,CHESTERFIELD (25),1,True,2,66 66,0,1,0,0,0,us_state,2,,US-601,US-601 HWY 601,Rural,7,morning (6-11:59 a.m.),Friday,False,3,34.75253056,-80.433669440
+2022,SC,450756,CHARLESTON (19),1,False,1,62,1,0,0,0,0,us_state,3,,SR-92,SR-92 SALTERS HILL RD,Rural,16,afternoon (noon-5:59 p.m.),Tuesday,False,1,32.76693056,-80.218038890
+2022,SC,450767,ORANGEBURG (75),1,False,1,62,0,1,0,0,0,us_state,2,,US-321,US-321 SAVANNAH HWY,Rural,7,morning (6-11:59 a.m.),Monday,False,3,33.49028333,-81.118425000
+2022,SC,450818,DORCHESTER (35),1,True,1,66,0,1,0,0,0,us_state,2,,US-76,US-76 HWY 76,Rural,10,morning (6-11:59 a.m.),Tuesday,False,2,33.13677778,-80.390869440
+2022,SC,450821,HORRY (51),1,True,1,66,0,1,0,0,0,us_state,3,,SR-9,SR-9 HWY 9,Rural,5,overnight (midnight-5:59 a.m.),Wednesday,False,2,34.21458333,-79.107577780
+2022,SC,450822,SPARTANBURG (83),1,True,2,66 66,0,1,0,0,0,interstate,1,I-85,I-85,I-85,Rural,10,morning (6-11:59 a.m.),Wednesday,False,4,35.04229444,-81.820777780
+2022,SC,450826,GEORGETOWN (43),1,True,1,66,1,0,0,0,0,us_state,3,,SR-41,SR-41 COUNTY LINE RD,Rural,11,morning (6-11:59 a.m.),Thursday,False,1,33.61707222,-79.435030560
+2022,SC,450839,HORRY (51),1,False,1,61,0,1,0,0,0,us_state,3,,SR-57,SR-57-HWY 57,Rural,2,overnight (midnight-5:59 a.m.),Monday,True,2,33.90615556,-78.658836110
+2022,SC,450848,CHEROKEE (21),1,False,1,61,0,0,0,1,0,us_state,3,,SR-150,SR-150 BOILING SPRING HWY,Rural,15,afternoon (noon-5:59 p.m.),Thursday,False,1,35.12016944,-81.655538890
+2022,SC,450855,GREENVILLE (45),1,False,1,67,0,1,0,0,0,us_state,3,,SR-453,SR-453 ROCKY CREEK RD,Urban,11,morning (6-11:59 a.m.),Saturday,False,2,34.70295833,-82.300463890
+2022,SC,450870,MARLBORO (69),1,True,1,66,0,1,0,0,0,us_state,3,,SR-23,SR-23 HEBRON DUNBAR RD,Rural,14,afternoon (noon-5:59 p.m.),Wednesday,False,2,34.53734722,-79.558872220
+2022,SC,450885,BERKELEY (15),1,False,1,67,0,1,0,0,0,us_state,2,,US-17,US-17 N HWY 52,Urban,18,evening (6-11:59 p.m.),Sunday,False,2,33.20950000,-79.981911110
+2022,SC,450890,ORANGEBURG (75),1,False,1,61,0,1,0,0,0,us_state,3,,SR-389,SR-389 NINETY SIX RD,Rural,5,overnight (midnight-5:59 a.m.),Wednesday,False,2,33.53426667,-81.130505560
+2022,SC,450894,HORRY (51),1,False,1,61,0,0,1,0,0,other,4,,,CR-FARROW PARKWAY,Urban,17,afternoon (noon-5:59 p.m.),Friday,False,1,33.68193056,-78.956650000
+2022,SC,450903,HORRY (51),2,False,1,63,0,2,0,0,0,us_state,3,,SR-66,SR-66 HWY 66,Rural,10,morning (6-11:59 a.m.),Monday,False,2,33.90513611,-78.908847220
+2022,SC,450904,SPARTANBURG (83),1,False,1,61,0,1,0,0,0,us_state,2,,US-221,US-221 HWY 221,Rural,8,morning (6-11:59 a.m.),Monday,False,2,34.84024444,-81.969080560
+2022,SC,450906,DARLINGTON (31),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Rural,20,evening (6-11:59 p.m.),Tuesday,False,2,34.20467500,-79.931975000
+2022,SC,450907,COLLETON (29),1,True,1,66,0,1,0,0,0,us_state,2,,US-17,US-17,Rural,5,overnight (midnight-5:59 a.m.),Wednesday,False,2,32.77027222,-80.454538890
+2022,SC,450931,YORK (91),1,False,1,61,1,0,0,0,0,us_state,3,,SR-460,SR-460 GOLD HILL RD,Urban,6,morning (6-11:59 a.m.),Tuesday,False,2,35.06350278,-80.976627780
+2022,SC,450940,NEWBERRY (71),1,True,1,66,0,1,0,0,0,us_state,3,,SR-39,SR-39,Rural,20,evening (6-11:59 p.m.),Friday,False,2,34.21041389,-81.894558330
+2022,SC,450941,FLORENCE (41),1,True,2,66 66,0,1,0,0,0,interstate,1,I-95,I-95,I-95,Urban,2,overnight (midnight-5:59 a.m.),Friday,False,3,34.22893889,-79.799969440
+2022,SC,450961,WILLIAMSBURG (89),1,True,1,66,0,1,0,0,0,us_state,3,,SR-41,SR-41 HWY 41,Rural,11,morning (6-11:59 a.m.),Friday,False,2,33.62926389,-79.430605560
+2022,SC,450970,GREENWOOD (47),1,True,1,66,0,1,0,0,0,us_state,3,,SR-702,SR-702 HWY 702,Rural,8,morning (6-11:59 a.m.),Monday,False,3,34.20976667,-81.998605560
+2022,SC,450974,DORCHESTER (35),1,False,1,63,0,1,0,0,0,us_state,3,,SR-65,SR-65 W RICHARDSON AVE,Urban,14,afternoon (noon-5:59 p.m.),Monday,False,2,33.02378056,-80.185830560
+2022,SC,450975,YORK (91),1,True,1,66,0,1,0,0,0,us_state,3,,SR-49,SR-49 LOCKHART RD,Rural,6,morning (6-11:59 a.m.),Friday,False,2,34.83826389,-81.419244440
+2022,SC,450980,LEE (61),1,True,1,66,0,1,0,0,0,us_state,3,,SR-37,SR-37 REMBERT CHURCH RD,Rural,15,afternoon (noon-5:59 p.m.),Monday,False,2,34.09631389,-80.367661110
+2022,SC,450981,CHEROKEE (21),1,False,1,61,0,1,0,0,0,us_state,3,,SR-18,SR-18 N LIMESTONE STREET,Urban,11,morning (6-11:59 a.m.),Tuesday,False,2,35.10003889,-81.627613890
+2022,SC,450988,ANDERSON (7),1,False,1,62,1,0,0,0,0,us_state,3,,SR-238,SR-238 ROBERTS CHURCH RD,Rural,13,afternoon (noon-5:59 p.m.),Thursday,False,1,34.44806944,-82.776200000
+2022,SC,451000,COLLETON (29),3,False,1,61,0,3,0,0,0,interstate,1,I-95,I-95,I-95,Rural,16,afternoon (noon-5:59 p.m.),Sunday,False,6,32.86684444,-80.724022220
+2022,SC,451001,CHARLESTON (19),1,True,1,66,0,1,0,0,0,interstate,1,I-26,I-26,I-26,Urban,7,morning (6-11:59 a.m.),Thursday,False,2,32.98456389,-80.079500000
+2022,SC,451022,SUMTER (85),1,True,1,66,0,1,0,0,0,us_state,3,,SR-77,SR-77 BETHEL CHURCH RD,Rural,17,afternoon (noon-5:59 p.m.),Sunday,False,2,33.82707222,-80.394252780
+2023,SC,450019,ANDERSON (7),1,True,1,66,0,1,0,0,0,us_state,2,,US-29 BUSINESS,US-29 BUSINESS,Urban,10,morning (6-11:59 a.m.),Saturday,False,2,34.47601667,-82.668602780
+2023,SC,450022,JASPER (53),1,False,1,61,0,1,0,0,0,us_state,3,,SR-259,SR-259 SCHOOL CUT RD,Rural,14,afternoon (noon-5:59 p.m.),Sunday,False,2,32.29713889,-81.087830560
+2023,SC,450027,GREENWOOD (47),1,False,1,61,1,0,0,0,0,us_state,3,,SR-72,SR-72 HWY 72,Urban,12,afternoon (noon-5:59 p.m.),Tuesday,False,1,34.19033889,-82.236763890
+2023,SC,450032,DARLINGTON (31),1,True,1,66,1,0,0,0,0,interstate,1,I-20,I-20,I-20,Rural,6,morning (6-11:59 a.m.),Saturday,False,2,34.20576944,-79.997444440
+2023,SC,450052,PICKENS (77),1,False,1,63,0,1,0,0,0,us_state,2,,US-123,US-123 CALHOUN MEMORIAL HWY,Urban,7,morning (6-11:59 a.m.),Wednesday,False,2,34.74938056,-82.710286110
+2023,SC,450054,CHEROKEE (21),1,True,1,66,0,1,0,0,0,us_state,2,,US-221,US-221 RUTHERFORDTON HWY,Rural,15,afternoon (noon-5:59 p.m.),Thursday,False,2,35.16698056,-81.843344440
+2023,SC,450087,AIKEN (3),1,True,1,66,0,1,0,0,0,us_state,2,,US-1,US-1 COLUMBIA HWY,Urban,11,morning (6-11:59 a.m.),Thursday,False,2,33.59456667,-81.691247220
+2023,SC,450107,CHEROKEE (21),1,False,1,67,0,1,0,0,0,interstate,1,I-85,I-85,I-85,Rural,22,evening (6-11:59 p.m.),Thursday,True,4,35.15012222,-81.492080560
+2023,SC,450110,BERKELEY (15),1,False,1,67,0,1,0,0,0,us_state,3,,SR-33,SR-33 CLEMENTS FERRY RD,Urban,15,afternoon (noon-5:59 p.m.),Thursday,False,2,32.91629722,-79.884055560
+2023,SC,450123,SUMTER (85),1,False,1,63,0,1,0,0,0,us_state,3,,SR-81,SR-81 E BREWINGTON RD,Rural,14,afternoon (noon-5:59 p.m.),Tuesday,False,2,33.90498889,-80.213663890
+2023,SC,450148,SALUDA (81),1,False,1,67,0,1,0,0,0,us_state,2,,US-378,US-378 COLUMBIA HWY,Rural,12,afternoon (noon-5:59 p.m.),Thursday,False,2,34.03013056,-81.650594440
+2023,SC,450169,FAIRFIELD (39),1,True,1,66,0,1,0,0,0,us_state,3,,SR-213,SR-213 HWY 213,Rural,6,morning (6-11:59 a.m.),Monday,False,2,34.25629167,-81.312300000
+2023,SC,450170,ORANGEBURG (75),1,False,1,63,0,1,0,0,0,us_state,3,,SR-6,SR-6 OLD NUMBER SIX HWY,Rural,9,morning (6-11:59 a.m.),Tuesday,False,2,33.46065000,-80.444755560
+2023,SC,450172,LEXINGTON (63),1,False,1,63,0,1,0,0,0,us_state,3,,SR-51,SR-51 AMICKS FERRY RD,Rural,11,morning (6-11:59 a.m.),Tuesday,False,2,34.08766944,-81.374555560
+2023,SC,450176,MARLBORO (69),1,False,1,78,0,1,0,0,0,us_state,3,,SR-38,SR-38 HWY 38 S,Rural,3,overnight (midnight-5:59 a.m.),Wednesday,False,2,34.55798611,-79.661283330
+2023,SC,450180,HORRY (51),1,True,1,66,0,1,0,0,0,us_state,3,,SR-707,SR-707 SOCASTEE BLVD,Urban,6,morning (6-11:59 a.m.),Wednesday,False,2,33.68520278,-78.970391670
+2023,SC,450181,CHARLESTON (19),1,True,1,66,0,0,1,0,0,us_state,3,,SR-1342,SR-1342 W AVIATION AVE,Urban,16,afternoon (noon-5:59 p.m.),Thursday,False,5,32.90463889,-80.020861110
+2023,SC,450182,SALUDA (81),1,True,1,66,0,1,0,0,0,us_state,3,,SR-39,SR-39 RIDGE SPRING HWY,Rural,15,afternoon (noon-5:59 p.m.),Thursday,False,2,33.92169722,-81.707719440
+2023,SC,450193,JASPER (53),1,True,1,66,0,1,0,0,0,us_state,2,,US-17,US-17 KATO BAY RD,Rural,16,afternoon (noon-5:59 p.m.),Monday,False,2,32.43450556,-81.005163890
+2023,SC,450194,SPARTANBURG (83),1,True,1,66,1,0,0,0,0,interstate,1,I-26,I-26,I-26,Rural,7,morning (6-11:59 a.m.),Tuesday,False,1,34.61638056,-81.900533330
+2023,SC,450195,SUMTER (85),1,False,1,63,0,1,0,0,0,us_state,3,,SR-441,SR-441 PATRIOT PKWY,Urban,7,morning (6-11:59 a.m.),Wednesday,False,2,33.93703889,-80.462588890
+2023,SC,450201,CHESTERFIELD (25),1,True,1,66,0,1,0,0,0,us_state,2,,US-601,US-601 HWY 601,Rural,0,overnight (midnight-5:59 a.m.),Saturday,False,2,34.81550833,-80.417147220
+2023,SC,450219,AIKEN (3),1,False,1,63,0,1,0,0,0,us_state,3,,SR-230,SR-230 W MARTINTOWN RD,Urban,11,morning (6-11:59 a.m.),Saturday,False,3,33.52205000,-81.979480560
+2023,SC,450227,JASPER (53),2,True,1,66,0,2,0,0,0,us_state,3,,SR-104,SR-104 STINEY RD,Urban,8,morning (6-11:59 a.m.),Monday,False,2,32.31083056,-81.084438890
+2023,SC,450231,PICKENS (77),1,False,1,63,0,1,0,0,0,us_state,2,,US-123,US-123,Rural,7,morning (6-11:59 a.m.),Wednesday,False,2,34.73591944,-82.720861110
+2023,SC,450234,DILLON (33),1,True,1,66,0,0,1,0,0,interstate,1,I-95,I-95,I-95,Urban,5,overnight (midnight-5:59 a.m.),Thursday,False,1,34.44055278,-79.376508330
+2023,SC,450235,CHESTER (23),1,True,2,63 66,1,0,0,0,0,interstate,1,I-77,I-77,I-77,Rural,10,morning (6-11:59 a.m.),Friday,False,2,34.68163611,-81.029163890
+2023,SC,450243,GREENVILLE (45),1,True,1,66,0,1,0,0,0,us_state,2,,US-25,US-25 AUGUSTA RD,Rural,12,afternoon (noon-5:59 p.m.),Monday,False,2,34.66175000,-82.392938890
+2023,SC,450250,DARLINGTON (31),1,False,1,62,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Rural,22,evening (6-11:59 p.m.),Friday,False,2,34.20549444,-79.985850000
+2023,SC,450283,RICHLAND (79),1,False,1,61,0,1,0,0,0,us_state,2,,US-176,US-176 BROAD RIVER RD,Urban,10,morning (6-11:59 a.m.),Friday,False,2,34.05066667,-81.106375000
+2023,SC,450298,CHEROKEE (21),2,True,1,66,0,2,0,0,0,interstate,1,I-85,I-85,I-85,Rural,16,afternoon (noon-5:59 p.m.),Thursday,False,2,35.16693056,-81.446880560
+2023,SC,450299,CHEROKEE (21),1,True,2,62 66,1,0,0,0,0,interstate,1,I-85,I-85,I-85,Rural,16,afternoon (noon-5:59 p.m.),Thursday,True,3,35.16741944,-81.445527780
+2023,SC,450316,YORK (91),1,True,1,66,0,1,0,0,0,interstate,1,I-77,I-77,I-77,Urban,12,afternoon (noon-5:59 p.m.),Thursday,False,4,35.03381389,-80.961480560
+2023,SC,450321,CHEROKEE (21),1,False,1,62,0,1,0,0,0,us_state,3,,SR-5,SR-5 YORK RD,Rural,12,afternoon (noon-5:59 p.m.),Wednesday,False,2,35.09765278,-81.463125000
+2023,SC,450323,CLARENDON (27),2,True,1,66,1,1,0,0,0,interstate,1,I-95,I-95,I-95,Rural,3,overnight (midnight-5:59 a.m.),Wednesday,False,2,33.57913333,-80.371550000
+2023,SC,450334,ORANGEBURG (75),1,True,1,66,0,1,0,0,0,us_state,3,,SR-389,SR-389 NINETY SIX RD,Rural,23,evening (6-11:59 p.m.),Saturday,False,2,33.54135833,-81.141144440
+2023,SC,450341,DARLINGTON (31),2,True,1,66,0,2,0,0,0,us_state,2,,US-52,US-52 S GOVERNOR WILLIAMS,Urban,13,afternoon (noon-5:59 p.m.),Thursday,False,2,34.28528056,-79.874719440
+2023,SC,450344,DARLINGTON (31),1,False,1,63,0,1,0,0,0,us_state,3,,SR-177,SR-177 MINERAL SPRINGS RD,Urban,6,morning (6-11:59 a.m.),Friday,False,2,34.32682778,-79.883905560
+2023,SC,450357,RICHLAND (79),1,False,1,61,0,1,0,0,0,us_state,3,,SR-16,SR-16 N BELTLINE BLVD,Urban,16,afternoon (noon-5:59 p.m.),Tuesday,False,3,34.00833056,-80.979761110
+2023,SC,450373,FLORENCE (41),1,True,1,66,0,1,0,0,0,interstate,1,I-95,I-95,I-95,Rural,2,overnight (midnight-5:59 a.m.),Wednesday,False,3,34.14651944,-79.876363890
+2023,SC,450381,GREENVILLE (45),1,False,1,63,0,1,0,0,0,us_state,3,,SR-266,SR-266 TOLEDO STREET,Urban,12,afternoon (noon-5:59 p.m.),Tuesday,False,2,34.88024444,-82.405450000
+2023,SC,450399,CLARENDON (27),1,True,2,61 66,1,0,0,0,0,us_state,2,,US-301,US-301 HWY 301,Rural,11,morning (6-11:59 a.m.),Wednesday,False,2,33.74138611,-80.186005560
+2023,SC,450402,KERSHAW (55),1,True,1,66,0,1,0,0,0,us_state,3,,SR-12,SR-12 FORT JACKSON RD,Rural,9,morning (6-11:59 a.m.),Thursday,False,2,34.15886389,-80.716744440
+2023,SC,450421,HORRY (51),1,False,1,61,1,0,0,0,0,other,4,,,CR-ROUND SWAMP RD,Rural,14,afternoon (noon-5:59 p.m.),Thursday,False,1,34.01925556,-78.808569440
+2023,SC,450425,LAURENS (59),1,False,1,60,0,1,0,0,0,us_state,3,,SR-956,SR-956 S FRONTAGE RD,Rural,16,afternoon (noon-5:59 p.m.),Saturday,False,2,34.66411111,-82.175022220
+2023,SC,450429,SUMTER (85),1,True,1,66,0,1,0,0,0,us_state,2,,US-521,US-521 CAMDEN HWY,Urban,15,afternoon (noon-5:59 p.m.),Saturday,False,3,33.95703056,-80.379800000
+2023,SC,450436,RICHLAND (79),1,False,1,61,1,0,0,0,0,other,4,,,CR-THIRD STREET,Rural,15,afternoon (noon-5:59 p.m.),Monday,False,1,33.89963056,-80.868100000
+2023,SC,450444,LAURENS (59),1,True,1,66,0,1,0,0,0,us_state,3,,SR-72,SR-72 HWY 72,Urban,12,afternoon (noon-5:59 p.m.),Thursday,False,2,34.43654167,-81.894466670
+2023,SC,450463,LEXINGTON (63),1,True,2,66 67,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Rural,3,overnight (midnight-5:59 a.m.),Thursday,False,4,33.84648611,-81.411100000
+2023,SC,450468,BEAUFORT (13),1,True,1,66,0,1,0,0,0,us_state,2,,US-17,US-17 TRASK PKWY,Rural,14,afternoon (noon-5:59 p.m.),Saturday,False,3,32.64079167,-80.853013890
+2023,SC,450470,CHARLESTON (19),1,True,1,66,0,1,0,0,0,us_state,3,,SR-642,SR-642 DORCHESTER RD,Urban,7,morning (6-11:59 a.m.),Saturday,False,2,32.88656944,-80.067400000
+2023,SC,450475,LANCASTER (57),1,False,1,61,0,1,0,0,0,us_state,3,,SR-26,SR-26 FORK HILL RD,Rural,11,morning (6-11:59 a.m.),Monday,False,2,34.61313611,-80.607861110
+2023,SC,450476,ANDERSON (7),1,True,1,66,0,1,0,0,0,us_state,3,,SR-96,SR-96 WELCOME RD,Rural,18,evening (6-11:59 p.m.),Monday,False,2,34.63537778,-82.578761110
+2023,SC,450479,LEXINGTON (63),1,True,2,61 66,1,0,0,0,0,us_state,2,,US-178,US-178 FAIRVIEW RD,Rural,15,afternoon (noon-5:59 p.m.),Tuesday,False,2,33.76825833,-81.285608330
+2023,SC,450481,CHARLESTON (19),1,False,1,63,0,0,0,1,0,us_state,3,,SR-7,SR-7 COSGROVE AVE,Urban,8,morning (6-11:59 a.m.),Thursday,False,1,32.85548056,-79.976938890
+2023,SC,450491,FLORENCE (41),1,False,1,67,0,1,0,0,0,us_state,3,,SR-24,SR-24 OLD MARION HWY,Rural,7,morning (6-11:59 a.m.),Saturday,False,2,34.22059167,-79.622194440
+2023,SC,450494,LEXINGTON (63),1,False,1,63,0,1,0,0,0,us_state,3,,SR-625,SR-625 OLD CHARLESTON HWY,Rural,12,afternoon (noon-5:59 p.m.),Monday,False,3,33.79911111,-81.264044440
+2023,SC,450502,LEXINGTON (63),1,False,1,67,0,1,0,0,0,us_state,3,,SR-602,SR-602 PLATT SPRINGS RD,Urban,16,afternoon (noon-5:59 p.m.),Wednesday,False,2,33.95883889,-81.109538890
+2023,SC,450503,GREENVILLE (45),1,True,1,66,0,0,1,0,0,us_state,2,,US-25,US-25 HWY 25,Rural,21,evening (6-11:59 p.m.),Wednesday,False,2,35.08779722,-82.447047220
+2023,SC,450505,HORRY (51),1,True,1,66,0,1,0,0,0,us_state,3,,SR-19,SR-19 ADRIAN HWY,Rural,13,afternoon (noon-5:59 p.m.),Friday,False,2,33.95060833,-78.947775000
+2023,SC,450506,FAIRFIELD (39),2,False,1,63,2,0,0,0,0,us_state,3,,SR-215,SR-215 HWY 215,Rural,16,afternoon (noon-5:59 p.m.),Friday,False,1,34.35130278,-81.297997220
+2023,SC,450543,SPARTANBURG (83),1,False,1,67,0,1,0,0,0,us_state,3,,SR-76,SR-76 GOODJOIN RD,Rural,18,evening (6-11:59 p.m.),Monday,False,2,35.07888056,-82.205302780
+2023,SC,450546,KERSHAW (55),1,True,1,66,0,1,0,0,0,us_state,3,,SR-20,SR-20 LOCKHART RD,Rural,12,afternoon (noon-5:59 p.m.),Wednesday,False,2,34.47117500,-80.509108330
+2023,SC,450547,NEWBERRY (71),1,True,1,66,0,1,0,0,0,us_state,3,,SR-34,SR-34 DIXIE DRIVE,Urban,17,afternoon (noon-5:59 p.m.),Wednesday,False,2,34.26181111,-81.610705560
+2023,SC,450549,AIKEN (3),1,True,1,66,1,0,0,0,0,us_state,3,,SR-19,SR-19 EDGEFIELD HWY,Rural,19,evening (6-11:59 p.m.),Thursday,False,1,33.64070000,-81.736788890
+2023,SC,450553,DORCHESTER (35),1,True,1,66,0,1,0,0,0,us_state,2,,US-17,US-17 HWY 17,Rural,20,evening (6-11:59 p.m.),Friday,False,2,32.92705278,-80.396600000
+2023,SC,450561,SPARTANBURG (83),1,False,1,63,1,0,0,0,0,interstate,1,I-26,I-26,I-26,Urban,16,afternoon (noon-5:59 p.m.),Monday,False,1,34.89900000,-81.992088890
+2023,SC,450563,PICKENS (77),1,False,1,63,0,1,0,0,0,us_state,3,,SR-93,SR-93 GREENVILLE HWY,Urban,7,morning (6-11:59 a.m.),Monday,False,2,34.80700278,-82.661900000
+2023,SC,450567,BERKELEY (15),1,True,2,66 66,0,1,0,0,0,us_state,2,,US-17 17A,US-17 N HWY 17A,Rural,7,morning (6-11:59 a.m.),Tuesday,False,3,33.23159444,-79.952072220
+2023,SC,450573,ANDERSON (7),2,True,2,66 66,2,0,0,0,0,interstate,1,I-85,I-85,I-85,Rural,1,overnight (midnight-5:59 a.m.),Sunday,False,2,34.59016111,-82.671969440
+2023,SC,450582,SPARTANBURG (83),1,False,1,67,0,1,0,0,0,us_state,3,,SR-101,SR-101 HWY 101,Urban,19,evening (6-11:59 p.m.),Friday,False,2,34.89643889,-82.164150000
+2023,SC,450591,DORCHESTER (35),1,True,1,66,1,0,0,0,0,interstate,1,I-26,I-26,I-26,Rural,0,overnight (midnight-5:59 a.m.),Saturday,False,2,33.19308056,-80.391980560
+2023,SC,450598,MARLBORO (69),1,False,1,62,1,0,0,0,0,us_state,3,,SR-34,SR-34 PEA BRIDGE RD,Rural,17,afternoon (noon-5:59 p.m.),Monday,False,1,34.66576389,-79.509736110
+2023,SC,450606,MARION (67),1,False,1,61,1,0,0,0,0,us_state,2,,US-501,US-501 HWY 501,Rural,14,afternoon (noon-5:59 p.m.),Friday,False,1,34.07201111,-79.284863890
+2023,SC,450621,AIKEN (3),1,True,1,66,0,0,1,0,0,us_state,3,,SR-113,SR-113 MAIN STREET,Rural,12,afternoon (noon-5:59 p.m.),Wednesday,False,5,33.65148056,-81.361930560
+2023,SC,450623,BAMBERG (9),1,False,1,61,0,1,0,0,0,us_state,3,,SR-61,SR-61 EDISTO RIVER RD,Rural,9,morning (6-11:59 a.m.),Thursday,False,2,33.19390833,-80.834200000
+2023,SC,450636,JASPER (53),1,False,1,63,0,1,0,0,0,us_state,3,,SR-54,SR-54 SNAKE RD,Rural,16,afternoon (noon-5:59 p.m.),Tuesday,False,2,32.36898333,-80.884294440
+2023,SC,450640,SPARTANBURG (83),1,True,1,66,0,1,0,0,0,us_state,3,,SR-14,SR-14 HWY 14,Urban,20,evening (6-11:59 p.m.),Tuesday,False,2,34.87230000,-82.224647220
+2023,SC,450653,DILLON (33),1,True,1,66,0,1,0,0,0,interstate,1,I-95,I-95,I-95,Rural,17,afternoon (noon-5:59 p.m.),Wednesday,False,2,34.38914167,-79.463288890
+2023,SC,450657,GREENVILLE (45),1,True,1,66,0,1,0,0,0,us_state,3,,SR-80,SR-80 J VERNE SMITH PKWY,Urban,11,morning (6-11:59 a.m.),Friday,False,2,34.89399444,-82.227286110
+2023,SC,450670,LAURENS (59),2,True,1,66,0,2,0,0,0,interstate,1,I-385,I-385,I-385,Rural,10,morning (6-11:59 a.m.),Sunday,False,2,34.62121389,-82.090122220
+2023,SC,450674,DARLINGTON (31),1,True,1,66,0,0,1,0,0,interstate,1,I-95,I-95,I-95,Urban,3,overnight (midnight-5:59 a.m.),Wednesday,False,2,34.26141389,-79.747555560
+2023,SC,450675,SPARTANBURG (83),1,False,2,60 63,1,0,0,0,0,us_state,2,,US-176,US-176 S PINE STREET,Urban,12,afternoon (noon-5:59 p.m.),Wednesday,False,2,34.92558889,-81.838102780
+2023,SC,450677,FAIRFIELD (39),1,True,1,66,0,1,0,0,0,us_state,2,,US-21,US-21 HWY 21,Rural,18,evening (6-11:59 p.m.),Wednesday,False,2,34.35850833,-80.956063890
+2023,SC,450679,ANDERSON (7),1,True,1,66,0,0,1,0,0,interstate,1,I-85,I-85,I-85,Rural,2,overnight (midnight-5:59 a.m.),Friday,False,2,34.55428889,-82.785650000
+2023,SC,450723,ORANGEBURG (75),1,True,1,66,0,1,0,0,0,interstate,1,I-26,I-26,I-26,Rural,4,overnight (midnight-5:59 a.m.),Friday,False,2,33.33536389,-80.565188890
+2023,SC,450731,FAIRFIELD (39),1,True,1,66,0,1,0,0,0,interstate,1,I-77,I-77,I-77,Rural,2,overnight (midnight-5:59 a.m.),Monday,False,2,34.26436111,-80.997730560
+2023,SC,450748,BERKELEY (15),1,True,1,66,0,1,0,0,0,us_state,3,,SR-41,SR-41 HWY 41,Rural,5,overnight (midnight-5:59 a.m.),Thursday,False,2,33.01249722,-79.811786110
+2023,SC,450768,MARION (67),1,True,1,66,0,1,0,0,0,us_state,2,,US-501,US-501 N HWY 501,Rural,10,morning (6-11:59 a.m.),Friday,False,2,34.27009722,-79.426202780
+2023,SC,450773,LEXINGTON (63),1,False,1,63,0,0,1,0,0,us_state,3,,SR-174,SR-174 WESCOTT TD,Urban,16,afternoon (noon-5:59 p.m.),Monday,False,2,34.05556667,-81.184302780
+2023,SC,450774,CHESTERFIELD (25),1,True,1,66,0,1,0,0,0,us_state,3,,SR-43,SR-43 AIRPORT RD,Rural,14,afternoon (noon-5:59 p.m.),Tuesday,False,2,34.75224167,-80.346294440
+2023,SC,450778,LEE (61),1,True,1,66,0,1,0,0,0,us_state,2,,US-15,US-15 SUMTER HWY,Rural,14,afternoon (noon-5:59 p.m.),Friday,False,2,34.19567500,-80.279358330
+2023,SC,450788,OCONEE (73),1,False,1,63,0,0,1,0,0,us_state,3,,SR-11,SR-11,Rural,9,morning (6-11:59 a.m.),Wednesday,True,1,34.54938889,-83.049088890
+2023,SC,450797,GREENWOOD (47),2,False,1,62,0,2,0,0,0,us_state,3,,SR-100,SR-100 EMERALD RD,Urban,16,afternoon (noon-5:59 p.m.),Monday,False,2,34.20953611,-82.117102780
+2023,SC,450798,SPARTANBURG (83),1,True,1,66,0,1,0,0,0,interstate,1,I-85,I-85,I-85,Urban,21,evening (6-11:59 p.m.),Tuesday,False,2,34.87410556,-82.219791670
+2023,SC,450810,BERKELEY (15),1,True,1,66,0,0,1,0,0,us_state,3,,SR-467,SR-467 BLACK TOM RD,Rural,22,evening (6-11:59 p.m.),Monday,False,1,33.15406389,-80.104141670
+2023,SC,450845,CHEROKEE (21),1,True,1,66,0,0,1,0,0,interstate,1,I-85,I-85,I-85 ENTRANCE RAMP,Rural,3,overnight (midnight-5:59 a.m.),Wednesday,False,1,35.11118056,-81.635169440
+2023,SC,450863,SPARTANBURG (83),1,True,1,66,0,1,0,0,0,us_state,2,,US-176,US-176 S PINE STREET,Rural,14,afternoon (noon-5:59 p.m.),Monday,False,2,34.92548611,-81.836813890
+2023,SC,450865,ORANGEBURG (75),3,True,1,66,0,3,0,0,0,us_state,2,,US-301,US-301 FIVE CHOP RD,Rural,18,evening (6-11:59 p.m.),Tuesday,False,2,33.46995278,-80.800072220
+2023,SC,450873,HORRY (51),1,False,1,61,0,1,0,0,0,us_state,2,,US-701,US-701 US HWY 701,Rural,12,afternoon (noon-5:59 p.m.),Thursday,False,3,34.11987778,-78.875861110
+2023,SC,450887,HORRY (51),1,True,1,66,0,0,1,0,0,us_state,2,,US-501,US-501 HWY 501,Urban,1,overnight (midnight-5:59 a.m.),Thursday,False,1,33.78266111,-78.989902780
+2023,SC,450888,DILLON (33),1,True,1,66,0,1,0,0,0,us_state,3,,SR-38,SR-38,Rural,18,evening (6-11:59 p.m.),Thursday,False,2,34.31606944,-79.485730560
+2023,SC,450901,HORRY (51),1,False,1,67,0,1,0,0,0,us_state,3,,SR-9,SR-9 HWY 9,Rural,12,afternoon (noon-5:59 p.m.),Wednesday,False,2,33.98824444,-78.747563890
+2023,SC,450908,RICHLAND (79),1,True,1,66,0,0,1,0,0,us_state,3,,SR-48,SR-48 ASSEMBLEY STREET,Urban,22,evening (6-11:59 p.m.),Thursday,False,1,33.98728889,-81.029280560
+2023,SC,450937,GREENVILLE (45),1,False,1,62,0,1,0,0,0,interstate,1,I-385,I-385,I-385,Urban,1,overnight (midnight-5:59 a.m.),Wednesday,False,2,34.77411944,-82.272838890
+2023,SC,450953,SPARTANBURG (83),2,True,1,66,0,2,0,0,0,interstate,1,I-85,I-85,I-85,Urban,22,evening (6-11:59 p.m.),Wednesday,False,4,34.98958056,-82.000544440
+2023,SC,450956,RICHLAND (79),1,True,1,66,0,1,0,0,0,us_state,3,,SR-48,SR-48 BLUFF RD,Urban,20,evening (6-11:59 p.m.),Friday,False,2,33.93293611,-80.969983330
+2023,SC,450972,FLORENCE (41),1,False,1,63,0,1,0,0,0,us_state,2,,US-52,US-52 S IRBY STREET,Rural,5,overnight (midnight-5:59 a.m.),Tuesday,False,2,34.10135556,-79.780244440
+2023,SC,450973,FLORENCE (41),1,True,1,66,0,1,0,0,0,us_state,3,,SR-51,SR-51 N PAMPLICO HWY,Rural,11,morning (6-11:59 a.m.),Tuesday,False,2,34.01690278,-79.617769440
+2023,SC,450974,LEXINGTON (63),1,False,1,62,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Rural,14,afternoon (noon-5:59 p.m.),Wednesday,False,4,33.87757222,-81.379997220
+2023,SC,450975,JASPER (53),1,True,1,66,0,1,0,0,0,us_state,2,,US-17,US-17 SPEEDWAY BLVD,Urban,18,evening (6-11:59 p.m.),Thursday,False,2,32.25466111,-81.078100000
+2024,SC,450007,ANDERSON (7),1,True,1,66,0,1,0,0,0,interstate,1,I-85,I-85,I-85,Urban,21,evening (6-11:59 p.m.),Wednesday,False,2,34.53109722,-82.834397220
+2024,SC,450011,FAIRFIELD (39),1,False,1,67,0,1,0,0,0,us_state,3,,SR-34,SR-34 NEWBERRY RD,Rural,5,overnight (midnight-5:59 a.m.),Saturday,False,3,34.40848889,-81.142327780
+2024,SC,450018,OCONEE (73),1,True,1,66,0,1,0,0,0,us_state,3,,SR-11,SR-11,Rural,13,afternoon (noon-5:59 p.m.),Wednesday,False,2,34.63543889,-83.048061110
+2024,SC,450026,ANDERSON (7),1,False,1,61,0,1,0,0,0,us_state,3,,SR-28,SR-28 ABBEVILLE HWY,Rural,5,overnight (midnight-5:59 a.m.),Friday,False,2,34.35312778,-82.576125000
+2024,SC,450032,HORRY (51),1,False,1,61,0,1,0,0,0,us_state,3,,SR-19,SR-19,Rural,10,morning (6-11:59 a.m.),Monday,False,2,33.95059444,-78.947511110
+2024,SC,450038,AIKEN (3),1,False,1,63,0,1,0,0,0,us_state,3,,SR-39,SR-39 OLD 96 INDIAN TRAIL,Rural,14,afternoon (noon-5:59 p.m.),Thursday,False,2,33.70095278,-81.480427780
+2024,SC,450047,BERKELEY (15),1,False,1,63,0,1,0,0,0,us_state,3,,SR-16,SR-16 JEDBURG RD,Urban,8,morning (6-11:59 a.m.),Friday,False,2,33.09500833,-80.195963890
+2024,SC,450049,GREENVILLE (45),1,False,1,67,0,0,1,0,0,interstate,1,I-385,I-385,I-385,Urban,22,evening (6-11:59 p.m.),Friday,False,3,34.74258056,-82.276561110
+2024,SC,450056,NEWBERRY (71),2,False,1,62,0,2,0,0,0,interstate,1,I-26,I-26,I-26,Rural,2,overnight (midnight-5:59 a.m.),Tuesday,True,2,34.24778056,-81.479525000
+2024,SC,450057,GREENVILLE (45),1,True,2,61 66,1,0,0,0,0,us_state,2,,US-25,US-25 HWY 25,Urban,6,morning (6-11:59 a.m.),Tuesday,False,2,34.95230000,-82.419188890
+2024,SC,450083,CHARLESTON (19),1,False,1,62,0,0,1,0,0,interstate,1,I-526,I-526,I-526,Urban,17,afternoon (noon-5:59 p.m.),Sunday,False,1,32.84413889,-80.018011110
+2024,SC,450086,DORCHESTER (35),1,False,1,67,0,0,1,0,0,us_state,3,,SR-165,SR-165 BACONS BRIDGE RD,Urban,7,morning (6-11:59 a.m.),Monday,False,1,32.97087778,-80.198888890
+2024,SC,450097,CLARENDON (27),1,True,1,66,1,0,0,0,0,us_state,2,,US-15,US-15 SAINT PAUL RD,Rural,17,afternoon (noon-5:59 p.m.),Thursday,False,1,33.57753889,-80.394650000
+2024,SC,450101,YORK (91),1,False,1,67,1,0,0,0,0,us_state,3,,SR-163,SR-163 W RAMBO RD,Rural,20,evening (6-11:59 p.m.),Saturday,False,1,34.87696944,-81.092647220
+2024,SC,450105,BARNWELL (11),1,False,1,62,0,1,0,0,0,us_state,3,,SR-3,SR-3 HWY 3,Rural,11,morning (6-11:59 a.m.),Tuesday,False,2,33.15669444,-81.400966670
+2024,SC,450131,AIKEN (3),1,False,1,61,0,1,0,0,0,us_state,3,,SR-118,SR-118 HITCHCOCK PKWY,Urban,10,morning (6-11:59 a.m.),Friday,False,3,33.52797500,-81.742038890
+2024,SC,450139,SPARTANBURG (83),1,True,1,66,0,1,0,0,0,us_state,3,,SR-101,SR-101 HWY 101,Urban,16,afternoon (noon-5:59 p.m.),Tuesday,False,2,34.87311111,-82.144247220
+2024,SC,450152,HORRY (51),1,False,1,63,0,1,0,0,0,us_state,2,,US-501,US-501,Urban,8,morning (6-11:59 a.m.),Monday,False,2,33.86440000,-79.095727780
+2024,SC,450156,DARLINGTON (31),1,False,1,61,0,0,1,0,0,us_state,3,,SR-34,SR-34 HARRY BYRD HWY,Urban,20,evening (6-11:59 p.m.),Thursday,False,1,34.29923611,-79.917172220
+2024,SC,450158,LEXINGTON (63),1,True,1,66,0,1,0,0,0,us_state,3,,SR-602,SR-602 PLATT SPRINGS RD,Urban,4,overnight (midnight-5:59 a.m.),Thursday,False,2,33.91320833,-81.184413890
+2024,SC,450182,HORRY (51),1,False,1,67,0,1,0,0,0,other,4,,,CR-MILL POND RD,Urban,7,morning (6-11:59 a.m.),Thursday,False,2,33.85341944,-79.065980560
+2024,SC,450195,AIKEN (3),1,False,1,61,0,1,0,0,0,us_state,2,,US-1,US-1 RICHLAND AVE,Urban,22,evening (6-11:59 p.m.),Saturday,False,3,33.56377500,-81.764733330
+2024,SC,450196,LAURENS (59),1,False,1,63,1,0,0,0,0,us_state,3,,SR-72,SR-72 HWY 72,Urban,11,morning (6-11:59 a.m.),Sunday,False,2,34.48475000,-81.858083330
+2024,SC,450201,SUMTER (85),1,False,1,62,0,0,1,0,0,interstate,1,I-95,I-95,I-95,Rural,0,overnight (midnight-5:59 a.m.),Monday,False,1,33.95605278,-80.049411110
+2024,SC,450212,ANDERSON (7),1,False,1,63,0,1,0,0,0,us_state,2,,US-29,US-29 HWY 29,Urban,13,afternoon (noon-5:59 p.m.),Thursday,False,10,34.62074167,-82.534986110
+2024,SC,450215,GREENWOOD (47),1,False,1,62,0,1,0,0,0,us_state,3,,SR-72,SR-72 CAMBRIDGE AVE,Urban,12,afternoon (noon-5:59 p.m.),Friday,False,2,34.19470278,-82.186463890
+2024,SC,450224,ANDERSON (7),1,False,1,67,0,1,0,0,0,us_state,3,,SR-20,SR-20 HWY 20,Urban,18,evening (6-11:59 p.m.),Monday,False,2,34.64236389,-82.466263890
+2024,SC,450225,SPARTANBURG (83),5,False,1,63,0,5,0,0,0,interstate,1,I-26,I-26,I-26,Urban,21,evening (6-11:59 p.m.),Saturday,False,3,35.05043611,-82.046216670
+2024,SC,450226,SUMTER (85),1,False,1,61,0,1,0,0,0,us_state,2,,US-521,US-521 CAMDEN HWY,Rural,15,afternoon (noon-5:59 p.m.),Tuesday,False,3,34.05322222,-80.485747220
+2024,SC,450227,LEXINGTON (63),1,False,1,67,0,0,1,0,0,interstate,1,I-20,I-20,I-20,Urban,9,morning (6-11:59 a.m.),Wednesday,False,3,34.00315278,-81.168497220
+2024,SC,450235,MARION (67),1,True,2,62 66,0,1,0,0,0,us_state,2,,US-76,US-76 W HWY 76,Rural,8,morning (6-11:59 a.m.),Wednesday,False,3,34.19527222,-79.504702780
+2024,SC,450236,NEWBERRY (71),1,False,1,63,0,1,0,0,0,us_state,3,,SR-34,SR-34,Rural,8,morning (6-11:59 a.m.),Thursday,False,2,34.33587500,-81.523969440
+2024,SC,450238,OCONEE (73),1,False,1,61,0,0,1,0,0,us_state,3,,SR-395,SR-395 CARSON RD,Urban,21,evening (6-11:59 p.m.),Friday,False,1,34.69360833,-82.923427780
+2024,SC,450241,RICHLAND (79),3,True,1,66,0,3,0,0,0,interstate,1,I-20,I-20,I-20,Urban,2,overnight (midnight-5:59 a.m.),Saturday,False,2,34.06906944,-80.916838890
+2024,SC,450248,CHESTER (23),1,True,1,66,0,1,0,0,0,interstate,1,I-77,I-77,I-77,Rural,12,afternoon (noon-5:59 p.m.),Tuesday,False,2,34.56942222,-81.010880560
+2024,SC,450254,DORCHESTER (35),1,False,1,61,0,1,0,0,0,us_state,2,,US-178,US-178 E MAIN STREET,Rural,12,afternoon (noon-5:59 p.m.),Thursday,False,2,33.17516111,-80.393641670
+2024,SC,450260,FAIRFIELD (39),1,True,1,66,0,0,0,1,0,us_state,3,,SR-34,SR-34 STATE HWY 34,Rural,19,evening (6-11:59 p.m.),Monday,False,1,34.29012222,-80.925552780
+2024,SC,450261,HORRY (51),1,True,1,66,0,1,0,0,0,us_state,2,,US-701,US-701,Rural,3,overnight (midnight-5:59 a.m.),Tuesday,False,2,33.94443056,-79.028333330
+2024,SC,450264,CHESTERFIELD (25),1,True,1,66,0,1,0,0,0,us_state,3,,SR-151,SR-151 HWY 151,Rural,18,evening (6-11:59 p.m.),Thursday,False,2,34.46206389,-80.237880560
+2024,SC,450281,DILLON (33),1,True,1,66,0,1,0,0,0,us_state,2,,US-301,US-301 HWY 301,Rural,12,afternoon (noon-5:59 p.m.),Thursday,False,2,34.31263611,-79.450247220
+2024,SC,450292,CHARLESTON (19),1,True,1,66,0,0,1,0,0,us_state,2,,US-17,US-17 HWY 17,Rural,20,evening (6-11:59 p.m.),Tuesday,False,1,33.03768889,-79.615330560
+2024,SC,450293,PICKENS (77),1,False,1,63,0,1,0,0,0,us_state,12,,SSR-56,SSR-56 POPE FIELD RD,Urban,9,morning (6-11:59 a.m.),Monday,False,2,34.81211944,-82.597200000
+2024,SC,450300,ORANGEBURG (75),1,False,1,61,0,0,1,0,0,us_state,2,,US-321,US-321 SAVANNAH HWY,Rural,4,overnight (midnight-5:59 a.m.),Friday,False,1,33.58308611,-81.106036110
+2024,SC,450316,ORANGEBURG (75),1,False,1,63,0,1,0,0,0,us_state,2,,US-21,US-21 COLUMBIA RD,Rural,10,morning (6-11:59 a.m.),Thursday,False,2,33.58752778,-80.866827780
+2024,SC,450317,LAURENS (59),1,True,1,66,1,0,0,0,0,us_state,3,,SR-355,SR-355 LEESVILLE CHURCH RD,Rural,2,overnight (midnight-5:59 a.m.),Thursday,False,1,34.50907778,-81.916325000
+2024,SC,450329,RICHLAND (79),1,True,1,66,0,1,0,0,0,interstate,1,I-77,I-77,I-77,Urban,3,overnight (midnight-5:59 a.m.),Saturday,False,2,34.17723611,-80.977513890
+2024,SC,450330,RICHLAND (79),1,True,2,66 66,0,0,1,0,0,interstate,1,I-77,I-77,I-77,Urban,1,overnight (midnight-5:59 a.m.),Saturday,False,4,34.15985556,-80.964602780
+2024,SC,450331,SPARTANBURG (83),1,False,1,62,0,1,0,0,0,interstate,1,I-85,I-85,I-85,Urban,20,evening (6-11:59 p.m.),Saturday,False,3,35.03181111,-81.854511110
+2024,SC,450337,DORCHESTER (35),1,False,1,63,0,1,0,0,0,us_state,2,,US-17 17ALT,US-17 US HWY 17ALT,Urban,7,morning (6-11:59 a.m.),Monday,False,2,32.96426111,-80.284100000
+2024,SC,450343,DILLON (33),1,True,1,66,0,1,0,0,0,interstate,1,I-95,I-95,I-95,Rural,7,morning (6-11:59 a.m.),Wednesday,False,2,34.47930000,-79.339594440
+2024,SC,450344,BERKELEY (15),1,False,1,78,0,1,0,0,0,us_state,2,,US-17 ALT,US-17 ALT,Rural,11,morning (6-11:59 a.m.),Wednesday,False,2,33.28858889,-79.819919440
+2024,SC,450364,DORCHESTER (35),1,False,1,61,1,0,0,0,0,us_state,12,,SSR-30,SSR-30 GIVHANS FERRY RD,Rural,6,morning (6-11:59 a.m.),Wednesday,False,1,33.03028333,-80.382894440
+2024,SC,450366,EDGEFIELD (37),2,True,1,66,0,2,0,0,0,us_state,2,,US-25,US-25 AUGUSTA RD,Rural,13,afternoon (noon-5:59 p.m.),Monday,False,2,33.76613889,-81.901261110
+2024,SC,450368,LEXINGTON (63),1,True,1,66,0,0,0,1,0,us_state,3,,SR-602,SR-602 PLATT SPRINGS RD,Urban,6,morning (6-11:59 a.m.),Tuesday,False,1,33.94910278,-81.135836110
+2024,SC,450370,JASPER (53),1,True,1,66,0,0,0,1,0,us_state,2,,US-17,US-17 WHYTE HARDEE BLVD,Urban,11,morning (6-11:59 a.m.),Tuesday,False,1,32.28121944,-81.081638890
+2024,SC,450372,COLLETON (29),1,False,1,63,1,0,0,0,0,interstate,1,I-95,I-95,I-95,Rural,5,overnight (midnight-5:59 a.m.),Wednesday,False,1,33.00389444,-80.669372220
+2024,SC,450377,CHARLESTON (19),1,False,1,61,0,0,1,0,0,us_state,2,,US-17,US-17,Urban,22,evening (6-11:59 p.m.),Sunday,False,1,32.79110000,-80.038000000
+2024,SC,450394,RICHLAND (79),1,True,1,66,0,0,1,0,0,interstate,1,I-20,I-20,I-20,Urban,5,overnight (midnight-5:59 a.m.),Saturday,False,2,34.08873056,-80.870086110
+2024,SC,450402,BERKELEY (15),1,False,1,63,0,1,0,0,0,us_state,3,,SR-6,SR-6 RANGER DRIVE,Rural,16,afternoon (noon-5:59 p.m.),Wednesday,False,2,33.32924722,-80.155655560
+2024,SC,450405,RICHLAND (79),1,True,1,66,0,1,0,0,0,interstate,1,I-77,I-77,I-77,Urban,2,overnight (midnight-5:59 a.m.),Thursday,False,2,34.01597778,-80.949597220
+2024,SC,450419,HORRY (51),2,False,1,67,0,2,0,0,0,us_state,2,,US-501,US-501 HWY 501,Urban,2,overnight (midnight-5:59 a.m.),Sunday,False,2,33.70656111,-78.910430560
+2024,SC,450420,KERSHAW (55),1,True,1,66,0,1,0,0,0,us_state,2,,US-1,US-1,Urban,9,morning (6-11:59 a.m.),Tuesday,False,2,34.23742778,-80.662419440
+2024,SC,450436,KERSHAW (55),1,True,2,66 66,1,0,0,0,0,interstate,1,I-20,I-20,I-20,Urban,18,evening (6-11:59 p.m.),Monday,True,2,34.20693889,-80.650788890
+2024,SC,450439,LEXINGTON (63),1,True,2,62 66,1,0,0,0,0,interstate,1,I-26,I-26,I-26,Rural,19,evening (6-11:59 p.m.),Tuesday,True,2,33.75965278,-80.953277780
+2024,SC,450440,AIKEN (3),1,True,1,66,1,0,0,0,0,interstate,1,I-20,I-20,I-20,Rural,2,overnight (midnight-5:59 a.m.),Tuesday,False,1,33.77429722,-81.497683330
+2024,SC,450448,GREENVILLE (45),1,False,2,61 65,1,0,0,0,0,us_state,3,,SR-418,SR-418 HWY 418,Rural,11,morning (6-11:59 a.m.),Sunday,False,5,34.64041944,-82.336602780
+2024,SC,450482,CHEROKEE (21),1,False,1,67,0,0,1,0,0,us_state,3,,SR-18,SR-18 N LOGAN STREET,Urban,23,evening (6-11:59 p.m.),Tuesday,False,1,35.08638889,-81.641111110
+2024,SC,450484,CHEROKEE (21),1,True,2,66 66,0,1,0,0,0,interstate,1,I-85,I-85,I-85,Urban,18,evening (6-11:59 p.m.),Wednesday,True,4,35.10533889,-81.616683330
+2024,SC,450494,ORANGEBURG (75),1,True,1,66,1,0,0,0,0,interstate,1,I-26,I-26,I-26,Rural,18,evening (6-11:59 p.m.),Monday,False,1,33.52405278,-80.795111110
+2024,SC,450497,FLORENCE (41),1,True,1,66,0,1,0,0,0,interstate,1,I-95,I-95,I-95,Urban,22,evening (6-11:59 p.m.),Wednesday,False,2,34.20288056,-79.834613890
+2024,SC,450503,OCONEE (73),1,True,1,66,1,0,0,0,0,us_state,3,,SR-130,SR-130 WHITEWATER FALLS,Rural,13,afternoon (noon-5:59 p.m.),Friday,False,1,34.98865556,-83.028297220
+2024,SC,450514,LANCASTER (57),1,True,1,66,0,1,0,0,0,us_state,3,,SR-5,SR-5 ROCK HILL HWY,Rural,6,morning (6-11:59 a.m.),Monday,False,2,34.83491111,-80.808355560
+2024,SC,450520,CHEROKEE (21),1,True,1,66,0,1,0,0,0,us_state,2,,US-29,US-29 OLD GEORGIA HWY,Rural,8,morning (6-11:59 a.m.),Thursday,False,2,35.01655278,-81.729669440
+2024,SC,450522,GREENVILLE (45),1,True,1,66,0,1,0,0,0,us_state,12,,SSR-50,SSR-50 REEDY FORK RD,Rural,13,afternoon (noon-5:59 p.m.),Friday,False,2,34.64489167,-82.354280560
+2024,SC,450531,GREENVILLE (45),1,True,1,66,0,0,1,0,0,interstate,1,I-85,I-85,I-85,Urban,4,overnight (midnight-5:59 a.m.),Monday,False,2,34.80010000,-82.369500000
+2024,SC,450534,LAURENS (59),1,True,1,66,1,0,0,0,0,interstate,1,I-26,I-26,I-26,Rural,14,afternoon (noon-5:59 p.m.),Wednesday,False,2,34.48023889,-81.822000000
+2024,SC,450560,AIKEN (3),1,False,1,78,1,0,0,0,0,us_state,3,,SR-19,SR-19 EDGEFIELD HWY,Rural,7,morning (6-11:59 a.m.),Saturday,False,1,33.67438611,-81.759952780
+2024,SC,450561,KERSHAW (55),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Urban,11,morning (6-11:59 a.m.),Saturday,True,3,34.19779444,-80.667325000
+2024,SC,450566,FLORENCE (41),1,False,1,67,0,1,0,0,0,interstate,1,I-95,I-95,I-95,Urban,15,afternoon (noon-5:59 p.m.),Wednesday,False,4,34.26499444,-79.721088890
+2024,SC,450568,CHESTER (23),1,True,1,66,1,0,0,0,0,us_state,2,,US-21,US-21 CATAWBA RIVER RD,Rural,11,morning (6-11:59 a.m.),Wednesday,False,1,34.80165556,-80.925375000
+2024,SC,450570,GREENVILLE (45),1,True,1,66,0,1,0,0,0,us_state,2,,US-25,US-25,Urban,4,overnight (midnight-5:59 a.m.),Wednesday,False,2,34.97985000,-82.426580560
+2024,SC,450573,GEORGETOWN (43),2,True,1,66,0,2,0,0,0,us_state,2,,US-521 BYPASS,US-521 HWY 521 BYPASS,Rural,9,morning (6-11:59 a.m.),Friday,False,2,33.42919722,-79.562619440
+2024,SC,450574,AIKEN (3),1,False,1,61,1,0,0,0,0,us_state,12,,SSR-1372,SSR-1372 NORTHSIDE DRIVE,Urban,16,afternoon (noon-5:59 p.m.),Friday,True,1,33.51056389,-81.907100000
+2024,SC,450575,BERKELEY (15),1,True,1,66,0,1,0,0,0,us_state,2,,US-52,US-52,Urban,6,morning (6-11:59 a.m.),Friday,False,2,33.10216111,-80.029780560
+2024,SC,450583,DORCHESTER (35),1,False,1,67,0,1,0,0,0,us_state,2,,US-78,US-78,Urban,10,morning (6-11:59 a.m.),Wednesday,False,2,33.09174444,-80.267027780
+2024,SC,450585,ANDERSON (7),1,False,1,67,0,1,0,0,0,us_state,3,,SR-88,SR-88 OLD GREENVILLE HWY,Rural,12,afternoon (noon-5:59 p.m.),Thursday,False,3,34.71239722,-82.610580560
+2024,SC,450591,ORANGEBURG (75),2,True,1,66,0,2,0,0,0,us_state,2,,US-601,US-601,Rural,16,afternoon (noon-5:59 p.m.),Saturday,False,2,33.59956389,-80.801619440
+2024,SC,450610,RICHLAND (79),1,False,2,62 63,1,0,0,0,0,us_state,3,,SR-555,SR-555 FARROW RD,Urban,14,afternoon (noon-5:59 p.m.),Friday,False,2,34.04277500,-81.019752780
+2024,SC,450611,HORRY (51),1,False,1,67,0,1,0,0,0,us_state,2,,US-17,US-17 S KINGS HWY,Urban,5,overnight (midnight-5:59 a.m.),Saturday,False,2,33.67621667,-78.903286110
+2024,SC,450620,SPARTANBURG (83),1,False,1,61,0,1,0,0,0,us_state,12,,SSR-2,SSR-2 HOWARD ST,Urban,19,evening (6-11:59 p.m.),Thursday,False,2,34.96043056,-81.948338890
+2024,SC,450639,MARLBORO (69),1,True,1,66,0,1,0,0,0,us_state,3,,SR-177,SR-177,Rural,12,afternoon (noon-5:59 p.m.),Thursday,False,2,34.72586389,-79.830427780
+2024,SC,450644,SPARTANBURG (83),1,False,1,67,0,1,0,0,0,us_state,3,,SR-292,SR-292 LYMAN RD,Urban,21,evening (6-11:59 p.m.),Friday,False,3,35.03274167,-82.097836110
+2024,SC,450646,SALUDA (81),2,False,1,63,2,0,0,0,0,us_state,12,,SSR-189,SSR-189 BELULAH RD,Rural,6,morning (6-11:59 a.m.),Friday,False,1,33.97210000,-81.568888890
+2024,SC,450653,SPARTANBURG (83),1,False,1,61,0,0,1,0,0,us_state,3,,SR-9,SR-9 BOILING SPRINGS RD,Urban,21,evening (6-11:59 p.m.),Sunday,False,2,35.00038889,-81.948588890
+2024,SC,450654,HORRY (51),1,False,1,67,0,1,0,0,0,us_state,2,,US-501,US-501,Urban,16,afternoon (noon-5:59 p.m.),Monday,False,2,33.75483611,-78.964816670
+2024,SC,450679,CHARLESTON (19),2,False,1,63,0,2,0,0,0,us_state,12,,SSR-75,SSR-75 ASLEY PHOSPHATE RD,Urban,3,overnight (midnight-5:59 a.m.),Saturday,False,2,32.92778056,-80.076911110
+2024,SC,450687,FLORENCE (41),1,False,1,65,0,1,0,0,0,us_state,2,,US-52,US-52 N RON MCNAIR BLVD,Urban,12,afternoon (noon-5:59 p.m.),Wednesday,False,2,33.88056944,-79.758919440
+2024,SC,450692,GREENVILLE (45),1,False,1,63,0,1,0,0,0,interstate,1,I-85,I-85,I-85,Urban,23,evening (6-11:59 p.m.),Wednesday,False,6,34.84436389,-82.281530560
+2024,SC,450701,BAMBERG (9),1,True,1,66,0,1,0,0,0,us_state,2,,US-21,US-21 FREEDOM RD,Rural,13,afternoon (noon-5:59 p.m.),Tuesday,False,4,33.17552222,-80.803122220
+2024,SC,450704,SPARTANBURG (83),1,True,1,66,0,0,1,0,0,us_state,3,,SR-146,SR-146 CROSS ANCHOR RD,Rural,4,overnight (midnight-5:59 a.m.),Wednesday,False,1,34.69924167,-81.944891670
+2024,SC,450708,CHESTER (23),1,True,1,66,0,1,0,0,0,interstate,1,I-77,I-77,I-77,Rural,13,afternoon (noon-5:59 p.m.),Thursday,False,2,34.68672222,-81.029761110
+2024,SC,450709,GREENVILLE (45),1,False,1,61,1,0,0,0,0,us_state,3,,SR-14,SR-14 HWY 14,Urban,19,evening (6-11:59 p.m.),Friday,False,2,34.89321667,-82.233619440
+2024,SC,450711,DORCHESTER (35),1,False,1,63,0,1,0,0,0,us_state,2,,US-15,US-15,Rural,16,afternoon (noon-5:59 p.m.),Friday,False,3,33.07677500,-80.607050000
+2024,SC,450724,BEAUFORT (13),1,True,1,66,0,1,0,0,0,us_state,2,,US-17,US-17 CHARLESTON HWY,Rural,11,morning (6-11:59 a.m.),Tuesday,False,3,32.61464722,-80.743305560
+2024,SC,450739,CHARLESTON (19),1,False,1,61,0,1,0,0,0,us_state,2,,US-17,US-17 HWY 17,Urban,3,overnight (midnight-5:59 a.m.),Wednesday,False,2,32.78488056,-80.002080560
+2024,SC,450752,AIKEN (3),1,False,1,67,0,1,0,0,0,us_state,3,,SR-118,SR-118 RUDY MASON PKWY,Urban,21,evening (6-11:59 p.m.),Saturday,False,2,33.57127778,-81.691861110
+2024,SC,450757,DARLINGTON (31),1,True,1,66,0,1,0,0,0,interstate,1,I-20,I-20,I-20,Rural,2,overnight (midnight-5:59 a.m.),Monday,False,2,34.20597778,-80.049266670
+2024,SC,450759,LANCASTER (57),1,True,2,61 66,0,1,0,0,0,us_state,3,,SR-9,SR-9 PAGELAND HWY,Rural,21,evening (6-11:59 p.m.),Tuesday,False,3,34.73788889,-80.682233330
+2024,SC,450762,ORANGEBURG (75),1,False,1,78,0,1,0,0,0,interstate,1,I-26,I-26,I-26,Rural,14,afternoon (noon-5:59 p.m.),Wednesday,False,2,33.38803333,-80.634858330
+2024,SC,450771,SUMTER (85),1,False,1,63,0,1,0,0,0,us_state,2,,US-378,US-378 MYRTLE BEACH HWY,Rural,12,afternoon (noon-5:59 p.m.),Friday,False,2,33.89683333,-80.204638890
+2024,SC,450780,FLORENCE (41),1,False,1,63,0,1,0,0,0,us_state,2,,US-95,US-95,Rural,18,evening (6-11:59 p.m.),Sunday,False,2,34.27400000,-79.695111110
+2024,SC,450797,LEXINGTON (63),2,True,2,66 67,0,2,0,0,0,interstate,1,I-26,I-26,I-26,Rural,2,overnight (midnight-5:59 a.m.),Thursday,True,3,34.19253889,-81.349219440
+2024,SC,450805,CHEROKEE (21),1,False,1,62,0,1,0,0,0,us_state,12,,SSR-68,SSR-68 HOPEWELL RD,Rural,13,afternoon (noon-5:59 p.m.),Wednesday,False,2,35.09491389,-81.465019440
+2024,SC,450822,CHARLESTON (19),1,True,1,66,0,1,0,0,0,us_state,2,,US-78,US-78 E 5TH NORTH STREET,Urban,5,overnight (midnight-5:59 a.m.),Tuesday,False,2,33.01812500,-80.144683330
+2024,SC,450823,RICHLAND (79),1,False,1,63,1,0,0,0,0,us_state,2,,US-76,US-76 GARNERS FERRY RD,Rural,13,afternoon (noon-5:59 p.m.),Tuesday,False,1,33.94311944,-80.776638890
+2024,SC,450857,GEORGETOWN (43),1,False,1,61,0,1,0,0,0,us_state,12,,SSR-183,SSR-183 WASHINGTON STREET,Urban,14,afternoon (noon-5:59 p.m.),Tuesday,False,2,33.38235000,-79.298700000
+2024,SC,450860,DILLON (33),2,True,2,66 67,0,2,0,0,0,interstate,1,I-95,I-95,I-95,Urban,6,morning (6-11:59 a.m.),Wednesday,True,6,34.44258889,-79.373200000
+2024,SC,450872,OCONEE (73),1,True,1,66,0,1,0,0,0,interstate,1,I-85,I-85,I-85,Rural,8,morning (6-11:59 a.m.),Tuesday,False,2,34.50156944,-82.986825000
+2024,SC,450874,SPARTANBURG (83),1,True,1,66,0,1,0,0,0,other,4,,,CR-GATEWAY DRIVE,Urban,15,afternoon (noon-5:59 p.m.),Wednesday,False,2,34.90307222,-82.199102780
+2024,SC,450894,LAURENS (59),1,True,2,66 66,0,1,0,0,0,interstate,1,I-26,I-26,I-26,Rural,19,evening (6-11:59 p.m.),Wednesday,False,5,34.44077222,-81.763425000
+2024,SC,450895,GREENVILLE (45),1,False,1,62,0,1,0,0,0,us_state,2,,US-276,US-276 GEER HWY,Urban,7,morning (6-11:59 a.m.),Friday,False,3,34.98948056,-82.467288890
+2024,SC,450904,YORK (91),1,False,1,67,0,1,0,0,0,us_state,3,,SR-49,SR-49 LOCKHART HWY,Rural,8,morning (6-11:59 a.m.),Monday,False,2,34.88301944,-81.380800000
+2024,SC,450907,LANCASTER (57),1,True,1,66,0,1,0,0,0,us_state,2,,US-521,US-521 KERSHAW CAMDEN HWY,Rural,12,afternoon (noon-5:59 p.m.),Tuesday,False,2,34.66127500,-80.711036110
+2024,SC,450911,LEXINGTON (63),1,False,1,61,0,0,1,0,0,us_state,2,,US-21,US-21 CHARLESTON HWY,Urban,18,evening (6-11:59 p.m.),Wednesday,False,3,33.94568056,-81.078761110
+2024,SC,450937,ANDERSON (7),1,False,1,61,0,1,0,0,0,us_state,2,,US-29,US-29,Urban,6,morning (6-11:59 a.m.),Tuesday,False,2,34.44628889,-82.706500000
+2024,SC,450942,WILLIAMSBURG (89),1,False,1,78,0,1,0,0,0,us_state,12,,SSR-159,SSR-159 DEWEY COX RD,Rural,15,afternoon (noon-5:59 p.m.),Thursday,False,2,33.80935000,-79.635511110

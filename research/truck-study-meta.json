@@ -1,0 +1,25 @@
+{
+  "_note": "Proposed only. Nothing here has been written to WordPress. Every number in these fields is checked by bin/truck-study-verify.py.",
+  "ga": {
+    "slug": "/resources/georgia-truck-crash-deaths-2020-2024/",
+    "post_type": "resource",
+    "title": "Truck-Crash Deaths in Georgia, 2020–2024: What the Federal Crash Data Shows",
+    "meta_title": "Georgia Truck-Crash Deaths, 2020–2024: A Data Study",
+    "meta_description": "1,151 people died in 1,042 truck-involved fatal crashes in Georgia from 2020 to 2024, and 82% were outside the truck. NHTSA data, with the dataset.",
+    "excerpt": "Between 2020 and 2024, 1,151 people died in 1,042 fatal crashes in Georgia that involved a large truck, 13.6% of the state's fatal crashes. 82% of those killed were outside the truck. Analysis of NHTSA FARS data, with the dataset and code published.",
+    "dataset": "ga-truck-fatal-crashes-2020-2024.csv",
+    "charts": ["ga-truck-by-year", "ga-truck-who-died", "ga-truck-when"],
+    "links_to": ["/georgia-truck-accident-lawyers/", "/truck-accident-lawyers/savannah-ga/"]
+  },
+  "sc": {
+    "slug": "/resources/south-carolina-truck-crash-deaths-2020-2024/",
+    "post_type": "resource",
+    "title": "Truck-Crash Deaths in South Carolina, 2020–2024: What the Federal Crash Data Shows",
+    "meta_title": "South Carolina Truck-Crash Deaths, 2020–2024: Data Study",
+    "meta_description": "669 people died in 601 truck-involved fatal crashes in South Carolina from 2020 to 2024; 64% of the crashes were rural. NHTSA data, with the dataset.",
+    "excerpt": "Between 2020 and 2024, 669 people died in 601 fatal crashes in South Carolina that involved a large truck, 12.0% of the state's fatal crashes. 86% of those killed were outside the truck, and 64% of the crashes were on rural roads. Analysis of NHTSA FARS data, with the dataset and code published.",
+    "dataset": "sc-truck-fatal-crashes-2020-2024.csv",
+    "charts": ["sc-truck-by-year", "sc-truck-who-died", "sc-truck-when"],
+    "links_to": ["/south-carolina-truck-accident-lawyers/", "/truck-accident-lawyers/charleston-sc/"]
+  }
+}

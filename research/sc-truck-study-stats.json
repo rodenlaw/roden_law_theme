@@ -1,0 +1,490 @@
+{
+  "state": "SC",
+  "state_name": "South Carolina",
+  "source": "NHTSA FARS national annual files 2020-2024, downloaded 2026-09-30",
+  "scope": "Fatal crashes only, South Carolina, 2020-2024. Truck-involved = at least one vehicle BODY_TYP 60-79; not fault.",
+  "all_crashes": 5019,
+  "all_deaths": 5443,
+  "truck_crashes": 601,
+  "truck_deaths": 669,
+  "truck_share_crashes_pct": 12.0,
+  "truck_share_deaths_pct": 12.3,
+  "tractor_crashes": 319,
+  "tractor_deaths": 359,
+  "tractor_share_of_truck_crashes_pct": 53.1,
+  "tractor_share_crashes_pct": 6.4,
+  "deaths_per_crash": {
+    "truck_involved": 1.11,
+    "no_large_truck": 1.08
+  },
+  "multi_death_truck_crashes": 54,
+  "by_year": {
+    "2020": {
+      "all_crashes": 964,
+      "all_deaths": 1066,
+      "truck_crashes": 113,
+      "truck_deaths": 132,
+      "truck_share_crashes_pct": 11.7,
+      "tractor_crashes": 63,
+      "tractor_deaths": 74,
+      "non_tractor_truck_crashes": 50
+    },
+    "2021": {
+      "all_crashes": 1112,
+      "all_deaths": 1198,
+      "truck_crashes": 131,
+      "truck_deaths": 148,
+      "truck_share_crashes_pct": 11.8,
+      "tractor_crashes": 68,
+      "tractor_deaths": 79,
+      "non_tractor_truck_crashes": 63
+    },
+    "2022": {
+      "all_crashes": 1019,
+      "all_deaths": 1094,
+      "truck_crashes": 120,
+      "truck_deaths": 126,
+      "truck_share_crashes_pct": 11.8,
+      "tractor_crashes": 66,
+      "tractor_deaths": 68,
+      "non_tractor_truck_crashes": 54
+    },
+    "2023": {
+      "all_crashes": 976,
+      "all_deaths": 1047,
+      "truck_crashes": 111,
+      "truck_deaths": 122,
+      "truck_share_crashes_pct": 11.4,
+      "tractor_crashes": 66,
+      "tractor_deaths": 75,
+      "non_tractor_truck_crashes": 45
+    },
+    "2024": {
+      "all_crashes": 948,
+      "all_deaths": 1038,
+      "truck_crashes": 126,
+      "truck_deaths": 141,
+      "truck_share_crashes_pct": 13.3,
+      "tractor_crashes": 56,
+      "tractor_deaths": 63,
+      "non_tractor_truck_crashes": 70
+    }
+  },
+  "peak_year_truck_deaths": "2021",
+  "low_year_truck_deaths": "2023",
+  "truck_share_range_pct": [
+    11.4,
+    13.3
+  ],
+  "deaths_by_person_type": {
+    "truck_occupants": {
+      "deaths": 97,
+      "pct": 14.5
+    },
+    "other_vehicle_occupants": {
+      "deaths": 503,
+      "pct": 75.2
+    },
+    "pedestrians": {
+      "deaths": 59,
+      "pct": 8.8
+    },
+    "cyclists": {
+      "deaths": 10,
+      "pct": 1.5
+    },
+    "other_nonoccupants": {
+      "deaths": 0,
+      "pct": 0.0
+    },
+    "pedestrians_and_cyclists": {
+      "deaths": 69,
+      "pct": 10.3
+    },
+    "outside_truck": {
+      "deaths": 572,
+      "pct": 85.5
+    }
+  },
+  "tractor_deaths_by_person_type": {
+    "truck_occupants": {
+      "deaths": 50,
+      "pct": 13.9
+    },
+    "other_vehicle_occupants": {
+      "deaths": 274,
+      "pct": 76.3
+    },
+    "pedestrians": {
+      "deaths": 30,
+      "pct": 8.4
+    },
+    "cyclists": {
+      "deaths": 5,
+      "pct": 1.4
+    },
+    "other_nonoccupants": {
+      "deaths": 0,
+      "pct": 0.0
+    },
+    "outside_truck": {
+      "deaths": 309,
+      "pct": 86.1
+    }
+  },
+  "counties_with_truck_crash": 46,
+  "counties_with_any_fatal_crash": 46,
+  "route_code_12_years": [
+    "2023",
+    "2024"
+  ],
+  "by_county_top10": [
+    {
+      "county": "Greenville",
+      "county_raw": "GREENVILLE (45)",
+      "truck_crashes": 40,
+      "truck_deaths": 42,
+      "all_crashes": 413,
+      "truck_share_pct": 9.7
+    },
+    {
+      "county": "Spartanburg",
+      "county_raw": "SPARTANBURG (83)",
+      "truck_crashes": 36,
+      "truck_deaths": 41,
+      "all_crashes": 317,
+      "truck_share_pct": 11.4
+    },
+    {
+      "county": "Richland",
+      "county_raw": "RICHLAND (79)",
+      "truck_crashes": 30,
+      "truck_deaths": 34,
+      "all_crashes": 301,
+      "truck_share_pct": 10.0
+    },
+    {
+      "county": "Horry",
+      "county_raw": "HORRY (51)",
+      "truck_crashes": 30,
+      "truck_deaths": 32,
+      "all_crashes": 328,
+      "truck_share_pct": 9.1
+    },
+    {
+      "county": "Orangeburg",
+      "county_raw": "ORANGEBURG (75)",
+      "truck_crashes": 27,
+      "truck_deaths": 34,
+      "all_crashes": 190,
+      "truck_share_pct": 14.2
+    },
+    {
+      "county": "Lexington",
+      "county_raw": "LEXINGTON (63)",
+      "truck_crashes": 27,
+      "truck_deaths": 30,
+      "all_crashes": 233,
+      "truck_share_pct": 11.6
+    },
+    {
+      "county": "Berkeley",
+      "county_raw": "BERKELEY (15)",
+      "truck_crashes": 25,
+      "truck_deaths": 28,
+      "all_crashes": 222,
+      "truck_share_pct": 11.3
+    },
+    {
+      "county": "Florence",
+      "county_raw": "FLORENCE (41)",
+      "truck_crashes": 25,
+      "truck_deaths": 28,
+      "all_crashes": 157,
+      "truck_share_pct": 15.9
+    },
+    {
+      "county": "Charleston",
+      "county_raw": "CHARLESTON (19)",
+      "truck_crashes": 23,
+      "truck_deaths": 26,
+      "all_crashes": 322,
+      "truck_share_pct": 7.1
+    },
+    {
+      "county": "Dorchester",
+      "county_raw": "DORCHESTER (35)",
+      "truck_crashes": 22,
+      "truck_deaths": 27,
+      "all_crashes": 111,
+      "truck_share_pct": 19.8
+    }
+  ],
+  "top10_county_share_of_truck_crashes_pct": 47.4,
+  "top10_county_truck_crashes": 285,
+  "by_route_class": {
+    "interstate": {
+      "truck_crashes": 157,
+      "truck_deaths": 187,
+      "pct_of_truck_crashes": 26.1,
+      "all_crashes": 522,
+      "truck_share_pct": 30.1,
+      "pct_of_all_crashes": 10.4
+    },
+    "us_state": {
+      "truck_crashes": 435,
+      "truck_deaths": 472,
+      "pct_of_truck_crashes": 72.4,
+      "all_crashes": 4274,
+      "truck_share_pct": 10.2,
+      "pct_of_all_crashes": 85.2
+    },
+    "other": {
+      "truck_crashes": 9,
+      "truck_deaths": 10,
+      "pct_of_truck_crashes": 1.5,
+      "all_crashes": 223,
+      "truck_share_pct": 4.0,
+      "pct_of_all_crashes": 4.4
+    }
+  },
+  "by_interstate": [
+    {
+      "route": "I-26",
+      "truck_crashes": 39,
+      "truck_deaths": 51,
+      "all_crashes": 146,
+      "truck_share_pct": 26.7
+    },
+    {
+      "route": "I-95",
+      "truck_crashes": 38,
+      "truck_deaths": 46,
+      "all_crashes": 107,
+      "truck_share_pct": 35.5
+    },
+    {
+      "route": "I-77",
+      "truck_crashes": 26,
+      "truck_deaths": 26,
+      "all_crashes": 79,
+      "truck_share_pct": 32.9
+    },
+    {
+      "route": "I-20",
+      "truck_crashes": 24,
+      "truck_deaths": 27,
+      "all_crashes": 80,
+      "truck_share_pct": 30.0
+    },
+    {
+      "route": "I-85",
+      "truck_crashes": 22,
+      "truck_deaths": 28,
+      "all_crashes": 65,
+      "truck_share_pct": 33.8
+    },
+    {
+      "route": "I-385",
+      "truck_crashes": 5,
+      "truck_deaths": 6,
+      "all_crashes": 27,
+      "truck_share_pct": 18.5
+    },
+    {
+      "route": "I-526",
+      "truck_crashes": 3,
+      "truck_deaths": 3,
+      "all_crashes": 11,
+      "truck_share_pct": 27.3
+    }
+  ],
+  "by_named_route_top10": [
+    {
+      "route": "US-17",
+      "truck_crashes": 28
+    },
+    {
+      "route": "US-501",
+      "truck_crashes": 12
+    },
+    {
+      "route": "US-176",
+      "truck_crashes": 11
+    },
+    {
+      "route": "US-25",
+      "truck_crashes": 11
+    },
+    {
+      "route": "US-21",
+      "truck_crashes": 10
+    },
+    {
+      "route": "US-52",
+      "truck_crashes": 10
+    },
+    {
+      "route": "SR-19",
+      "truck_crashes": 9
+    },
+    {
+      "route": "SR-34",
+      "truck_crashes": 9
+    },
+    {
+      "route": "SR-9",
+      "truck_crashes": 9
+    },
+    {
+      "route": "US-29",
+      "truck_crashes": 9
+    }
+  ],
+  "county_groups": {
+    "charleston_tri_county": {
+      "counties": [
+        "Berkeley",
+        "Charleston",
+        "Dorchester"
+      ],
+      "truck_crashes": 70,
+      "truck_deaths": 81,
+      "all_crashes": 655,
+      "truck_share_pct": 10.7
+    }
+  },
+  "land_use": {
+    "rural": {
+      "truck_crashes": 384,
+      "truck_deaths": 430,
+      "pct_of_truck_crashes": 63.9,
+      "all_crashes": 2682,
+      "truck_share_pct": 14.3,
+      "pct_of_all_crashes": 53.4
+    },
+    "urban": {
+      "truck_crashes": 217,
+      "truck_deaths": 239,
+      "pct_of_truck_crashes": 36.1,
+      "all_crashes": 2337,
+      "truck_share_pct": 9.3,
+      "pct_of_all_crashes": 46.6
+    },
+    "unknown": {
+      "truck_crashes": 0,
+      "truck_deaths": 0,
+      "pct_of_truck_crashes": 0.0,
+      "all_crashes": 0,
+      "truck_share_pct": 0.0,
+      "pct_of_all_crashes": 0.0
+    }
+  },
+  "time_of_day": {
+    "truck_involved": {
+      "bands": {
+        "overnight (midnight-5:59 a.m.)": {
+          "crashes": 117,
+          "pct": 19.5
+        },
+        "morning (6-11:59 a.m.)": {
+          "crashes": 188,
+          "pct": 31.3
+        },
+        "afternoon (noon-5:59 p.m.)": {
+          "crashes": 195,
+          "pct": 32.4
+        },
+        "evening (6-11:59 p.m.)": {
+          "crashes": 101,
+          "pct": 16.8
+        }
+      },
+      "known_hour": 601,
+      "unknown_hour": 0,
+      "daytime_6am_6pm": 383,
+      "daytime_pct": 63.7
+    },
+    "no_large_truck": {
+      "bands": {
+        "overnight (midnight-5:59 a.m.)": {
+          "crashes": 916,
+          "pct": 20.7
+        },
+        "morning (6-11:59 a.m.)": {
+          "crashes": 634,
+          "pct": 14.4
+        },
+        "afternoon (noon-5:59 p.m.)": {
+          "crashes": 1105,
+          "pct": 25.0
+        },
+        "evening (6-11:59 p.m.)": {
+          "crashes": 1763,
+          "pct": 39.9
+        }
+      },
+      "known_hour": 4418,
+      "unknown_hour": 0,
+      "daytime_6am_6pm": 1739,
+      "daytime_pct": 39.4
+    }
+  },
+  "day_of_week": {
+    "truck_involved": {
+      "by_day": {
+        "Sunday": 36,
+        "Monday": 89,
+        "Tuesday": 93,
+        "Wednesday": 127,
+        "Thursday": 101,
+        "Friday": 103,
+        "Saturday": 52
+      },
+      "known": 601,
+      "weekday": 513,
+      "weekday_pct": 85.4,
+      "weekend": 88,
+      "weekend_pct": 14.6
+    },
+    "no_large_truck": {
+      "by_day": {
+        "Sunday": 733,
+        "Monday": 547,
+        "Tuesday": 491,
+        "Wednesday": 569,
+        "Thursday": 524,
+        "Friday": 663,
+        "Saturday": 891
+      },
+      "known": 4418,
+      "weekday": 2794,
+      "weekday_pct": 63.2,
+      "weekend": 1624,
+      "weekend_pct": 36.8
+    }
+  },
+  "work_zone": {
+    "truck_crashes": 22,
+    "truck_deaths": 29,
+    "pct_of_truck_crashes": 3.7,
+    "all_crashes": 47,
+    "truck_share_pct": 46.8,
+    "no_truck_pct_in_work_zone": 0.6
+  },
+  "single_vehicle_truck_crashes": 109,
+  "truck_vehicles_by_body_type": {
+    "60": 4,
+    "61": 72,
+    "62": 52,
+    "63": 107,
+    "65": 5,
+    "66": 345,
+    "67": 57,
+    "78": 6
+  },
+  "truck_vehicles": 648,
+  "single_unit_truck_vehicles": 235,
+  "medium_heavy_pickup_vehicles": 57,
+  "tractor_vehicles": 345
+}
