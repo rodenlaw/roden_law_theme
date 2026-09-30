@@ -1,0 +1,872 @@
+[
+ {
+  "id": "ES-CAR1",
+  "post_id": 4873,
+  "field": "faq5",
+  "from": "En Carolina del Sur el umbral es de 51%.",
+  "to": "En Carolina del Sur puede recuperar si su culpa es del 50% o menos (Nelson v. Concrete Supply Co.).",
+  "class": "apply",
+  "authority": [
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "SC comparative-fault wording aligned to the house Nelson wording ('50% or less'), as on the EN pillars 2026-09-29 (PB-F class). 'menos del 51%' is not false for whole percentages but reads as a floor; engine authority-quantity warn. EN twin 3604 faq1 = PB-F6."
+ },
+ {
+  "id": "ES-CAR2",
+  "post_id": 4873,
+  "field": "content",
+  "from": "en Carolina del Sur, si fue menos del 51% culpable.",
+  "to": "en Carolina del Sur, si fue el 50% culpable o menos (Nelson v. Concrete Supply Co.).",
+  "class": "apply",
+  "authority": [
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "SC comparative-fault wording aligned to the house Nelson wording ('50% or less'), as on the EN pillars 2026-09-29 (PB-F class). 'menos del 51%' is not false for whole percentages but reads as a floor; engine authority-quantity warn."
+ },
+ {
+  "id": "ES-TRK1",
+  "post_id": 4874,
+  "field": "content",
+  "from": "en Carolina del Sur, si fue menos del 51%.",
+  "to": "en Carolina del Sur, si fue el 50% culpable o menos (Nelson v. Concrete Supply Co.).",
+  "class": "apply",
+  "authority": [
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "SC comparative-fault wording aligned to the house Nelson wording ('50% or less'), as on the EN pillars 2026-09-29 (PB-F class). 'menos del 51%' is not false for whole percentages but reads as a floor; engine authority-quantity warn."
+ },
+ {
+  "id": "ES-WC1",
+  "post_id": 4875,
+  "field": "faq5",
+  "from": "y después tiene un año desde la fecha de la lesión para presentar un reclamo formal ante la Junta Estatal de Compensación Laboral (O.C.G.A. § 34-9-82)",
+  "to": "y después tiene un año desde la fecha de la lesión, un año desde el último tratamiento médico que le haya dado su empleador o dos años desde el último pago semanal de beneficios para presentar un reclamo formal ante la Junta Estatal de Compensación Laboral (O.C.G.A. § 34-9-82)",
+  "class": "apply",
+  "authority": [
+   "GA 34-9-82"
+  ],
+  "note": "Flat one-year § 34-9-82 (Savannah WC E1 class). Restores the signed three-prong wording that EN 3610 faq0 carries since PB-WC1. Also FAQPage JSON-LD."
+ },
+ {
+  "id": "ES-WC2",
+  "post_id": 4875,
+  "field": "faq5",
+  "from": " En enfermedades ocupacionales, en Georgia el año empieza a correr cuando usted supo o debió saber que la condición era de trabajo, y en Carolina del Sur los dos años corren desde la fecha de la incapacidad o desde el día en que un médico le informó de la condición.",
+  "to": "",
+  "class": "attorney",
+  "authority": [],
+  "note": "Occupational-disease triggers: GA § 34-9-281 not in pack (and has an outer limit after last exposure); SC 42-15-40 signed only as two years from the accident. Same open items as EN PB-WC2 (Eric Roden) and PB-WC3 (Gillin), which are still live on EN 3610. Clean cut unless both sign."
+ },
+ {
+  "id": "ES-WC3",
+  "post_id": 4875,
+  "field": "content",
+  "from": "En Georgia, debe reportar su lesión a su empleador dentro de 30 días y presentar su reclamo dentro de 1 año (O.C.G.A. § 34-9-82). En Carolina del Sur, debe reportar dentro de 90 días y presentar su reclamo dentro de 2 años (S.C. Code § 42-15-20).",
+  "to": "En Georgia, debe reportar su lesión a su empleador dentro de 30 días (O.C.G.A. § 34-9-80) y presentar su reclamo, por lo general, dentro de 1 año desde la lesión, plazo que se extiende si el empleador pagó tratamiento o beneficios (O.C.G.A. § 34-9-82). En Carolina del Sur, debe reportar dentro de 90 días (S.C. Code § 42-15-20) y presentar su reclamo dentro de 2 años desde el accidente (S.C. Code § 42-15-40).",
+  "class": "apply",
+  "authority": [
+   "GA 34-9-80",
+   "GA 34-9-82",
+   "SC 42-15-20",
+   "SC 42-15-40"
+  ],
+  "note": "Two errors: the SC two-year filing deadline is cited to the 90-day NOTICE section § 42-15-20 (it is § 42-15-40), and the GA one year is flat. GA wording is the theme es_ES msgstr already live on this page (\"1 año desde la lesión, extendido si el empleador pagó tratamiento o beneficios\")."
+ },
+ {
+  "id": "ES-WC4",
+  "post_id": 4875,
+  "field": "faq4",
+  "from": "(un subcontratista, un conductor negligente o el fabricante de un equipo defectuoso)",
+  "to": "(por ejemplo, un conductor negligente o el fabricante de un equipo defectuoso)",
+  "class": "attorney",
+  "authority": [],
+  "note": "In SC a contractor can be the statutory employer (SC 42-1-400/-410 signed); whether that makes it immune from suit is not signed. GA § 34-9-11 (pending) also excludes co-employees. Same open item as EN 3610 faq5 (not changed on EN). Gillin + Eric Roden."
+ },
+ {
+  "id": "ES-WC5",
+  "post_id": 4875,
+  "field": "content",
+  "from": "— por ejemplo, un subcontratista o el fabricante de una máquina defectuosa —",
+  "to": "— por ejemplo, un conductor negligente o el fabricante de una máquina defectuosa —",
+  "class": "attorney",
+  "authority": [],
+  "note": "Same statutory-employer item as ES-WC4."
+ },
+ {
+  "id": "ES-CON1",
+  "post_id": 4876,
+  "field": "content",
+  "from": "en Georgia debe reportar la lesión en 30 días y presentar el reclamo en 1 año (O.C.G.A. § 34-9-82); en Carolina del Sur, reportar en 90 días y presentar en 2 años (S.C. Code § 42-15-20).",
+  "to": "en Georgia debe reportar la lesión en 30 días (O.C.G.A. § 34-9-80) y presentar el reclamo, por lo general, en 1 año desde la lesión, plazo que se extiende si el empleador pagó tratamiento o beneficios (O.C.G.A. § 34-9-82); en Carolina del Sur, reportar en 90 días (S.C. Code § 42-15-20) y presentar el reclamo en 2 años desde el accidente (S.C. Code § 42-15-40).",
+  "class": "apply",
+  "authority": [
+   "GA 34-9-80",
+   "GA 34-9-82",
+   "SC 42-15-20",
+   "SC 42-15-40"
+  ],
+  "note": "Same two errors as ES-WC3: SC filing deadline cited to the notice section, GA flat one year."
+ },
+ {
+  "id": "ES-CON2",
+  "post_id": 4876,
+  "field": "faq6",
+  "from": "en Georgia usted debe reportar la lesión dentro de 30 días y presentar el reclamo dentro de 1 año (O.C.G.A. § 34-9-82)",
+  "to": "en Georgia usted debe reportar la lesión dentro de 30 días (O.C.G.A. § 34-9-80) y presentar el reclamo, por lo general, dentro de 1 año desde la lesión, plazo que se extiende si el empleador pagó tratamiento o beneficios (O.C.G.A. § 34-9-82)",
+  "class": "apply",
+  "authority": [
+   "GA 34-9-80",
+   "GA 34-9-82"
+  ],
+  "note": "Flat § 34-9-82. The EN construction KT says \"generally due within one year\"."
+ },
+ {
+  "id": "ES-MC1",
+  "post_id": 4877,
+  "field": "faq0",
+  "from": "en Carolina del Sur, menos del 51%.",
+  "to": "en Carolina del Sur, si fue el 50% culpable o menos (Nelson v. Concrete Supply Co.).",
+  "class": "apply",
+  "authority": [
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "SC comparative-fault wording aligned to the house Nelson wording ('50% or less'), as on the EN pillars 2026-09-29 (PB-F class). 'menos del 51%' is not false for whole percentages but reads as a floor; engine authority-quantity warn. EN 3607 faq3 = PB-F5."
+ },
+ {
+  "id": "ES-MC2",
+  "post_id": 4877,
+  "field": "content",
+  "from": "y en Carolina del Sur si fue menos del 51% —",
+  "to": "y en Carolina del Sur si fue el 50% culpable o menos (Nelson v. Concrete Supply Co.) —",
+  "class": "apply",
+  "authority": [
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "SC comparative-fault wording aligned to the house Nelson wording ('50% or less'), as on the EN pillars 2026-09-29 (PB-F class). 'menos del 51%' is not false for whole percentages but reads as a floor; engine authority-quantity warn."
+ },
+ {
+  "id": "ES-PED1",
+  "post_id": 4878,
+  "field": "faq0",
+  "from": "en Carolina del Sur, menos del 51% —",
+  "to": "en Carolina del Sur, si fue el 50% culpable o menos (Nelson v. Concrete Supply Co.) —",
+  "class": "apply",
+  "authority": [
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "SC comparative-fault wording aligned to the house Nelson wording ('50% or less'), as on the EN pillars 2026-09-29 (PB-F class). 'menos del 51%' is not false for whole percentages but reads as a floor; engine authority-quantity warn. EN 3621 faq1 = PB-PED1."
+ },
+ {
+  "id": "ES-PED2",
+  "post_id": 4878,
+  "field": "content",
+  "from": "y en Carolina del Sur si fue menos del 51%.",
+  "to": "y en Carolina del Sur si fue el 50% culpable o menos (Nelson v. Concrete Supply Co.).",
+  "class": "apply",
+  "authority": [
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "SC comparative-fault wording aligned to the house Nelson wording ('50% or less'), as on the EN pillars 2026-09-29 (PB-F class). 'menos del 51%' is not false for whole percentages but reads as a floor; engine authority-quantity warn."
+ },
+ {
+  "id": "ES-PED3",
+  "post_id": 4878,
+  "field": "faq6",
+  "from": "En Georgia, los reclamos contra agencias gubernamentales deben presentarse bajo la Ley de Reclamos Extracontractuales de Georgia (O.C.G.A. § 50-21-20), con requisitos de notificación específicos y plazos más cortos que los de un caso común. En Carolina del Sur, los reclamos contra entidades gubernamentales se rigen por la ley estatal de reclamos (South Carolina Tort Claims Act), que también impone su propio aviso previo y plazos más cortos.",
+  "to": "En Georgia, un reclamo contra el gobierno exige un aviso previo por escrito (ante litem): dentro de 6 meses contra una ciudad (O.C.G.A. § 36-33-5) y dentro de 12 meses contra un condado (O.C.G.A. § 36-11-1) o contra el Estado (O.C.G.A. § 50-21-26). En Carolina del Sur, la Ley de Reclamos contra el Gobierno (South Carolina Tort Claims Act) no exige un aviso previo, pero la demanda debe presentarse dentro de 2 años (S.C. Code § 15-78-110), o de 3 años si primero se presentó un reclamo verificado ante la entidad (S.C. Code § 15-78-80).",
+  "class": "apply",
+  "authority": [
+   "GA 36-33-5",
+   "GA 36-11-1",
+   "GA 50-21-26",
+   "SC 15-78-110",
+   "SC 15-78-80"
+  ],
+  "note": "ERROR: \"the SC Tort Claims Act also imposes its own prior notice\" is false (SC 15-78-80: filing a verified claim is optional; § 15-78-90(b)). GA half sends city/county road claims to the State Tort Claims Act (§ 50-21-20, not in pack); a city road claim has a 6-month ante litem. Wording follows the EN 4088/4692 key takeaways. EN twin 3621 faq4 carries the same GA error (EN residual)."
+ },
+ {
+  "id": "ES-PED4",
+  "post_id": 4878,
+  "field": "faq8",
+  "from": "El plazo para demandar se suspende (se pausa) hasta que el menor cumple 18 años, pero recomendamos actuar pronto",
+  "to": "Existen reglas especiales de plazo para los menores, pero recomendamos actuar pronto",
+  "class": "apply",
+  "authority": [],
+  "note": "Restores the EN wording applied as PB-PED4 on 3621 faq8. \"Tolled until 18\" overstates SC (§ 15-3-40 limits the extension to one year after the disability ends). Neither § 15-3-40 nor § 9-3-90 is in a pack; clean cut."
+ },
+ {
+  "id": "ES-SF1",
+  "post_id": 4879,
+  "field": "faq2",
+  "from": "en Carolina del Sur, menos del 51%.",
+  "to": "en Carolina del Sur, si fue el 50% culpable o menos (Nelson v. Concrete Supply Co.).",
+  "class": "apply",
+  "authority": [
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "SC comparative-fault wording aligned to the house Nelson wording ('50% or less'), as on the EN pillars 2026-09-29 (PB-F class). 'menos del 51%' is not false for whole percentages but reads as a floor; engine authority-quantity warn."
+ },
+ {
+  "id": "ES-SF2",
+  "post_id": 4879,
+  "field": "content",
+  "from": "y en Carolina del Sur si fue menos del 51%.",
+  "to": "y en Carolina del Sur si fue el 50% culpable o menos (Nelson v. Concrete Supply Co.).",
+  "class": "apply",
+  "authority": [
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "SC comparative-fault wording aligned to the house Nelson wording ('50% or less'), as on the EN pillars 2026-09-29 (PB-F class). 'menos del 51%' is not false for whole percentages but reads as a floor; engine authority-quantity warn."
+ },
+ {
+  "id": "ES-SF3",
+  "post_id": 4879,
+  "field": "faq7",
+  "from": "En Georgia se rigen por la Ley de Reclamos Extracontractuales de Georgia (O.C.G.A. § 50-21-20), que exige dar un aviso previo (ante litem) dentro de los 12 meses del incidente.",
+  "to": "En Georgia exigen un aviso previo por escrito (ante litem): dentro de 6 meses contra una ciudad (O.C.G.A. § 36-33-5) y dentro de 12 meses contra un condado (O.C.G.A. § 36-11-1) o contra el Estado (O.C.G.A. § 50-21-26).",
+  "class": "apply",
+  "authority": [
+   "GA 36-33-5",
+   "GA 36-11-1",
+   "GA 50-21-26"
+  ],
+  "note": "ERROR (municipal-ante-litem-12-months class): the question is about sidewalks, usually a city claim, which has a 6-month notice. EN twin 3606 faq7 and faq1 carry the same error (EN residual)."
+ },
+ {
+  "id": "ES-SF4",
+  "post_id": 4879,
+  "field": "faq7",
+  "from": "Carolina del Sur tiene su propia ley de reclamos contra el Estado (S.C. Code § 15-78-110), con un plazo de presentación de 2 años.",
+  "to": "Carolina del Sur tiene su propia ley de reclamos contra el gobierno, que no exige aviso previo: la demanda debe presentarse dentro de 2 años (S.C. Code § 15-78-110), o de 3 si primero se presentó un reclamo verificado ante la entidad (S.C. Code § 15-78-80).",
+  "class": "apply",
+  "authority": [
+   "SC 15-78-110",
+   "SC 15-78-80"
+  ],
+  "note": "Not false, but narrow: the SCTCA covers political subdivisions, not only the State, and omits the three-year verified-claim path. Aligns to the EN PI key takeaway."
+ },
+ {
+  "id": "ES-DOG1",
+  "post_id": 4880,
+  "field": "faq8",
+  "from": "Georgia y Carolina del Sur permiten suspender el plazo de prescripción mientras el niño es menor de edad, lo que da tiempo adicional para presentar la demanda.",
+  "to": "En Georgia y Carolina del Sur pueden aplicarse reglas especiales de plazo a los reclamos de menores, pero conviene actuar pronto.",
+  "class": "apply",
+  "authority": [],
+  "note": "PB-PED4 class: \"suspended while the child is a minor\" overstates SC § 15-3-40 (one year after majority). Neither tolling statute is in a pack. EN 3611 faq2 (\"tolled until the age of majority\") carries the same error (EN residual)."
+ },
+ {
+  "id": "ES-MM1",
+  "post_id": 4881,
+  "field": "faq1",
+  "from": "En Georgia, generalmente 2 años (O.C.G.A. § 9-3-71) desde el acto negligente, con un límite absoluto de 5 años en la mayoría de los casos. En Carolina del Sur, generalmente 3 años (S.C. Code § 15-3-545). Existen excepciones limitadas, como objetos olvidados en el cuerpo.",
+  "to": "En Georgia, generalmente 2 años desde la fecha de la lesión o de la muerte, con un plazo máximo (statute of repose) de 5 años desde el acto negligente (O.C.G.A. § 9-3-71). En Carolina del Sur, 3 años desde el tratamiento, la omisión o la operación, o desde que la lesión se descubrió o debió descubrirse, con un plazo máximo de 6 años (S.C. Code § 15-3-545). Existen excepciones, como los objetos olvidados en el cuerpo y los casos de menores.",
+  "class": "apply",
+  "authority": [
+   "GA 9-3-71",
+   "SC 15-3-545"
+  ],
+  "note": "ERROR: GA § 9-3-71(a) runs from the date of injury or death, not from the negligent act (the act starts only the 5-year repose). \"Límite absoluto\" is the medmal-repose-absolute class (§§ 9-3-72/-73, § 15-3-545(B)/(D)). SC start rule restored from the signed claim, as EN 3608 faq1 (PB-MM1)."
+ },
+ {
+  "id": "ES-MM2",
+  "post_id": 4881,
+  "field": "content",
+  "from": "En Georgia, usted generalmente tiene 2 años (O.C.G.A. § 9-3-71) desde la fecha del acto negligente para presentar una demanda por negligencia médica, con un límite absoluto de 5 años en la mayoría de los casos. En Carolina del Sur, el plazo general es de 3 años (S.C. Code § 15-3-545).",
+  "to": "En Georgia, usted generalmente tiene 2 años desde la fecha de la lesión o de la muerte para presentar una demanda por negligencia médica, con un plazo máximo de 5 años desde el acto negligente (O.C.G.A. § 9-3-71). En Carolina del Sur, el plazo general es de 3 años desde el tratamiento o desde que la lesión se descubrió o debió descubrirse, con un plazo máximo de 6 años (S.C. Code § 15-3-545).",
+  "class": "apply",
+  "authority": [
+   "GA 9-3-71",
+   "SC 15-3-545"
+  ],
+  "note": "Same error as ES-MM1, in the body."
+ },
+ {
+  "id": "ES-MM3",
+  "post_id": 4881,
+  "field": "faq5",
+  "from": "Carolina del Sur tampoco limita los daños no económicos en casos de negligencia médica, aunque sí limita los daños punitivos a la cantidad mayor entre $500,000 o tres veces los daños compensatorios (S.C. Code § 15-32-530). Por eso el valor de su caso depende de sus pérdidas reales y no de una cifra fijada de antemano.",
+  "to": "Carolina del Sur sí limita los daños no económicos en casos de negligencia médica: S.C. Code § 15-32-220 fija una base de $350,000 por proveedor o institución y de $1,050,000 en total, ajustada cada año por inflación ($596,001 y $1,788,002 en 2026). Los daños punitivos tienen un límite aparte: la cantidad mayor entre tres veces los daños compensatorios o $739,245, la cifra ajustada por inflación para 2026 (S.C. Code § 15-32-530).",
+  "class": "apply",
+  "authority": [
+   "SC 15-32-220",
+   "SC 15-32-530"
+  ],
+  "note": "TOP ERROR: says SC does NOT cap non-economic med-mal damages; § 15-32-220 does. Also the unindexed $500,000 punitive floor (sc-punitive-floor-unindexed class). The last sentence is cut because it rests on the no-cap premise. EN 3608 faq5 was corrected 2026-09-29 (PB-MM3); this restores the same claims in Spanish. The comparison table on the same page already shows the caps, so the page contradicts itself today."
+ },
+ {
+  "id": "ES-MM4",
+  "post_id": 4881,
+  "field": "faq2",
+  "from": "y Carolina del Sur exige un proceso previo similar con declaración de experto.",
+  "to": "y Carolina del Sur exige presentar, antes de la demanda, un Aviso de Intención de Demandar junto con la declaración jurada de un experto calificado (S.C. Code §§ 15-36-100, 15-79-125).",
+  "class": "apply",
+  "authority": [
+   "SC 15-36-100",
+   "SC 15-79-125"
+  ],
+  "note": "Not false; aligned to the EN 3608 faq2 wording (PB-MM2)."
+ },
+ {
+  "id": "ES-MM5",
+  "post_id": 4881,
+  "field": "faq2",
+  "from": "Sin ese respaldo experto, el caso se desestima.",
+  "to": "Sin ese respaldo experto, el caso puede ser desestimado.",
+  "class": "attorney",
+  "authority": [],
+  "note": "EN M-MM2 open item: § 9-11-9.1 is not in the GA pack and dismissal is curable in some cases. Eric Roden."
+ },
+ {
+  "id": "ES-MM6",
+  "post_id": 4881,
+  "field": "content",
+  "from": "Carolina del Sur exige un proceso similar de presentación previa con declaración de experto.",
+  "to": "Carolina del Sur exige presentar, antes de la demanda, un Aviso de Intención de Demandar con la declaración jurada de un experto calificado (S.C. Code §§ 15-36-100, 15-79-125).",
+  "class": "apply",
+  "authority": [
+   "SC 15-36-100",
+   "SC 15-79-125"
+  ],
+  "note": "Alignment with ES-MM4 and EN M-MM1."
+ },
+ {
+  "id": "ES-WD1",
+  "post_id": 4882,
+  "field": "faq2",
+  "from": "En Georgia, generalmente 2 años (O.C.G.A. § 9-3-33) desde el fallecimiento; en Carolina del Sur, 3 años (S.C. Code § 15-3-530). Ciertos hechos pueden modificar el plazo, como un proceso penal pendiente contra el responsable.",
+  "to": "En Georgia, la demanda debe presentarse dentro de 2 años (O.C.G.A. § 9-3-33); en Carolina del Sur, el plazo es generalmente de 3 años (S.C. Code § 15-3-530). Estos plazos se aplican de forma estricta.",
+  "class": "apply",
+  "authority": [
+   "GA 51-4-1",
+   "GA 9-3-33",
+   "SC 15-3-530"
+  ],
+  "note": "EN PB-WD1 wording (no death-based start in either signed claim). The criminal-case tolling example is Georgia-only (§ 9-3-99, not in the pack) and false for SC as written; EN 3609 faq2 no longer carries it. Eric Roden may restore it scoped to Georgia once § 9-3-99 is signed."
+ },
+ {
+  "id": "ES-WD2",
+  "post_id": 4882,
+  "field": "content",
+  "from": "En Georgia, la familia generalmente tiene 2 años (O.C.G.A. § 9-3-33) desde la fecha del fallecimiento para presentar la demanda; en Carolina del Sur, el plazo general es de 3 años (S.C. Code § 15-3-530). Algunos hechos pueden acortar o pausar estos plazos — por ejemplo, si hay un proceso penal relacionado — así que es importante consultar pronto.",
+  "to": "En Georgia, la familia generalmente tiene 2 años (O.C.G.A. § 9-3-33) para presentar la demanda; en Carolina del Sur, el plazo general es de 3 años (S.C. Code § 15-3-530). Algunos hechos pueden cambiar estos plazos, así que es importante consultar pronto.",
+  "class": "apply",
+  "authority": [
+   "GA 51-4-1",
+   "GA 9-3-33",
+   "SC 15-3-530"
+  ],
+  "note": "Same as ES-WD1, in the body."
+ },
+ {
+  "id": "ES-WD3",
+  "post_id": 4882,
+  "field": "faq6",
+  "from": "(full value of the life, O.C.G.A. § 51-4-2)",
+  "to": "(full value of the life, O.C.G.A. § 51-4-1)",
+  "class": "apply",
+  "authority": [
+   "GA 51-4-1"
+  ],
+  "note": "EN PB-WD2: § 51-4-1 defines the measure; § 51-4-2 is not in the pack."
+ },
+ {
+  "id": "ES-WD4",
+  "post_id": 4882,
+  "field": "faq8",
+  "from": "En Carolina del Sur el umbral es del 51%.",
+  "to": "Carolina del Sur permite recuperar siempre que la persona fallecida haya tenido el 50% o menos de la culpa (Nelson v. Concrete Supply Co.).",
+  "class": "apply",
+  "authority": [
+   "Nelson v. Concrete Supply Co.",
+   "SC 15-51-10"
+  ],
+  "note": "EN PB-WD4. The fault is the decedent's."
+ },
+ {
+  "id": "ES-WD5",
+  "post_id": 4882,
+  "field": "faq5",
+  "from": "la compañía y el valor total de la vida de la persona fallecida.",
+  "to": "la compañía y, en Georgia, el valor total de la vida de la persona fallecida (O.C.G.A. § 51-4-1).",
+  "class": "apply",
+  "authority": [
+   "GA 51-4-1",
+   "SC 15-51-40"
+  ],
+  "note": "\"Full value of life\" stated for both states. SC measures damages by the injury to each beneficiary (§ 15-51-40). EN 3609 faq3 carries the same unscoped phrase (EN residual)."
+ },
+ {
+  "id": "ES-BI1",
+  "post_id": 4890,
+  "field": "faq6",
+  "from": "Cuando el alcance completo de una lesión cerebral no es evidente de inmediato, puede aplicarse la regla del descubrimiento (discovery rule): el reloj empieza a correr cuando usted supo o debió haber sabido de la lesión.",
+  "to": "En Georgia, el plazo corre desde la fecha de la lesión aunque el alcance completo de una lesión cerebral todavía no sea evidente.",
+  "class": "apply",
+  "authority": [
+   "GA 9-3-33"
+  ],
+  "note": "ERROR (ga-pi-discovery-rule class): a discovery rule for a Georgia traumatic injury is wrong. EN 3612 faq1 fixed as PB-BI1. SC § 15-3-535 is not in the pack, so nothing is said about the SC start (Gillin)."
+ },
+ {
+  "id": "ES-BI2",
+  "post_id": 4890,
+  "field": "content",
+  "from": "en Carolina del Sur, si es menor al 51%.",
+  "to": "en Carolina del Sur, si es del 50% o menos (Nelson v. Concrete Supply Co.).",
+  "class": "apply",
+  "authority": [
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "SC comparative-fault wording aligned to the house Nelson wording ('50% or less'), as on the EN pillars 2026-09-29 (PB-F class). 'menos del 51%' is not false for whole percentages but reads as a floor; engine authority-quantity warn."
+ },
+ {
+  "id": "ES-SCI1",
+  "post_id": 4891,
+  "field": "faq2",
+  "from": "y Carolina del Sur si es menor al 51%;",
+  "to": "y Carolina del Sur si es del 50% o menos (Nelson v. Concrete Supply Co.);",
+  "class": "apply",
+  "authority": [
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "SC comparative-fault wording aligned to the house Nelson wording ('50% or less'), as on the EN pillars 2026-09-29 (PB-F class). 'menos del 51%' is not false for whole percentages but reads as a floor; engine authority-quantity warn. EN 3613 faq5 = PB-F4."
+ },
+ {
+  "id": "ES-SCI2",
+  "post_id": 4891,
+  "field": "faq7",
+  "from": "en Carolina del Sur el umbral es del 51%.",
+  "to": "en Carolina del Sur, si fue del 50% o menos (Nelson v. Concrete Supply Co.).",
+  "class": "apply",
+  "authority": [
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "SC comparative-fault wording aligned to the house Nelson wording ('50% or less'), as on the EN pillars 2026-09-29 (PB-F class). 'menos del 51%' is not false for whole percentages but reads as a floor; engine authority-quantity warn."
+ },
+ {
+  "id": "ES-SCI3",
+  "post_id": 4891,
+  "field": "content",
+  "from": "en Carolina del Sur, si es menor al 51%.",
+  "to": "en Carolina del Sur, si es del 50% o menos (Nelson v. Concrete Supply Co.).",
+  "class": "apply",
+  "authority": [
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "SC comparative-fault wording aligned to the house Nelson wording ('50% or less'), as on the EN pillars 2026-09-29 (PB-F class). 'menos del 51%' is not false for whole percentages but reads as a floor; engine authority-quantity warn."
+ },
+ {
+  "id": "ES-PL1",
+  "post_id": 4892,
+  "field": "faq2",
+  "from": "Y bajo la culpa comparativa de Georgia y Carolina del Sur, usted puede recuperar aunque tenga parte de la culpa, siempre que no sea la mayor parte.",
+  "to": "Y en un reclamo por negligencia, usted puede recuperar aunque tenga parte de la culpa: en Georgia, si su culpa es menor al 50% (O.C.G.A. § 51-12-33); en Carolina del Sur, si es del 50% o menos (Nelson v. Concrete Supply Co.).",
+  "class": "apply",
+  "authority": [
+   "GA 51-12-33",
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "ERROR for GA: \"as long as it is not the greater part\" lets a 50% plaintiff recover; § 51-12-33 bars at 50%. Scoped to negligence claims per the EN A2 decision (SC strict-liability fault is a Gillin question)."
+ },
+ {
+  "id": "ES-PL2",
+  "post_id": 4892,
+  "field": "content",
+  "from": "Ambos estados aplican culpa comparativa: en Georgia usted puede recuperar si su culpa es menor al 50% (O.C.G.A. § 51-12-33); en Carolina del Sur, si es menor al 51%.",
+  "to": "En un reclamo por negligencia, ambos estados aplican culpa comparativa: en Georgia usted puede recuperar si su culpa es menor al 50% (O.C.G.A. § 51-12-33); en Carolina del Sur, si es del 50% o menos (Nelson v. Concrete Supply Co.).",
+  "class": "apply",
+  "authority": [
+   "GA 51-12-33",
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "SC comparative-fault wording aligned to the house Nelson wording ('50% or less'), as on the EN pillars 2026-09-29 (PB-F class). 'menos del 51%' is not false for whole percentages but reads as a floor; engine authority-quantity warn. Scoped to negligence per EN A2."
+ },
+ {
+  "id": "ES-PR1",
+  "post_id": 4893,
+  "field": "faq2",
+  "from": "si su culpa es menor al 50% en Georgia y menor al 51% en Carolina del Sur",
+  "to": "si su culpa es menor al 50% en Georgia (O.C.G.A. § 51-12-33) y del 50% o menos en Carolina del Sur (Nelson v. Concrete Supply Co.)",
+  "class": "apply",
+  "authority": [
+   "GA 51-12-33",
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "SC comparative-fault wording aligned to the house Nelson wording ('50% or less'), as on the EN pillars 2026-09-29 (PB-F class). 'menos del 51%' is not false for whole percentages but reads as a floor; engine authority-quantity warn."
+ },
+ {
+  "id": "ES-PR2",
+  "post_id": 4893,
+  "field": "content",
+  "from": "y menor al 51% en Carolina del Sur",
+  "to": "y del 50% o menos en Carolina del Sur (Nelson v. Concrete Supply Co.)",
+  "class": "apply",
+  "authority": [
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "SC comparative-fault wording aligned to the house Nelson wording ('50% or less'), as on the EN pillars 2026-09-29 (PB-F class). 'menos del 51%' is not false for whole percentages but reads as a floor; engine authority-quantity warn."
+ },
+ {
+  "id": "ES-BT1",
+  "post_id": 4895,
+  "field": "content",
+  "from": "Ambos estados aplican culpa comparativa — recuperación con culpa menor al 50% en Georgia (O.C.G.A. § 51-12-33) y menor al 51% en Carolina del Sur.",
+  "to": "Bajo la ley estatal, ambos estados aplican culpa comparativa: recuperación con culpa menor al 50% en Georgia (O.C.G.A. § 51-12-33) y del 50% o menos en Carolina del Sur (Nelson v. Concrete Supply Co.).",
+  "class": "apply",
+  "authority": [
+   "GA 51-12-33",
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "EN A1 decision: condition the state fault bar where federal maritime law may govern. Plus SC comparative-fault wording aligned to the house Nelson wording ('50% or less'), as on the EN pillars 2026-09-29 (PB-F class). 'menos del 51%' is not false for whole percentages but reads as a floor; engine authority-quantity warn."
+ },
+ {
+  "id": "ES-BT2",
+  "post_id": 4895,
+  "field": "faq8",
+  "from": "En casos de muerte injusta, los familiares sobrevivientes pueden recuperar el valor total de la vida de la persona fallecida.",
+  "to": "En casos de muerte, la familia puede presentar un reclamo por muerte injusta; cuando se aplica la ley de Georgia, la pérdida se mide por el valor total de la vida de la persona fallecida (O.C.G.A. § 51-4-1).",
+  "class": "apply",
+  "authority": [
+   "GA 51-4-1",
+   "SC 15-51-40"
+  ],
+  "note": "\"Full value of life\" stated for both states and for admiralty. EN 3616 faq8 carries the same (EN residual). EN compensation intro already scopes it to \"a Georgia state-water boating death\"."
+ },
+ {
+  "id": "ES-BN1",
+  "post_id": 4896,
+  "field": "content",
+  "from": "y menor al 51% en Carolina del Sur.",
+  "to": "y del 50% o menos en Carolina del Sur (Nelson v. Concrete Supply Co.).",
+  "class": "apply",
+  "authority": [
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "SC comparative-fault wording aligned to the house Nelson wording ('50% or less'), as on the EN pillars 2026-09-29 (PB-F class). 'menos del 51%' is not false for whole percentages but reads as a floor; engine authority-quantity warn."
+ },
+ {
+  "id": "ES-NH1",
+  "post_id": 4897,
+  "field": "faq7",
+  "from": "En los casos de muerte injusta también se pueden reclamar los gastos funerarios y el valor total de la vida de la persona fallecida.",
+  "to": "En los casos de muerte injusta también se pueden reclamar los gastos funerarios y, en Georgia, el valor total de la vida de la persona fallecida (O.C.G.A. § 51-4-1).",
+  "class": "apply",
+  "authority": [
+   "GA 51-4-1",
+   "SC 15-51-40"
+  ],
+  "note": "Same \"full value of life\" class; EN 3619 faq5 carries it too (EN residual)."
+ },
+ {
+  "id": "ES-NH2",
+  "post_id": 4897,
+  "field": "faq7",
+  "from": "Cuando la conducta de la instalación fue intencional, temeraria o gravemente negligente, pueden otorgarse daños punitivos.",
+  "to": "Cuando la conducta de la instalación fue intencional o temeraria, pueden otorgarse daños punitivos.",
+  "class": "attorney",
+  "authority": [],
+  "note": "Gross negligence is not enough for GA punitive damages (§ 51-12-5.1(b), pending) and SC's standard is recklessness, wilfulness or malice (only the WD form, § 15-51-40, is signed). EN 3619 faq5 carries the same. Eric Roden + Gillin."
+ },
+ {
+  "id": "ES-NH3",
+  "post_id": 4897,
+  "field": "faq3",
+  "from": "y los plazos corren desde el fallecimiento — consúltenos pronto.",
+  "to": "y los plazos son estrictos — consúltenos pronto.",
+  "class": "apply",
+  "authority": [
+   "GA 51-4-1",
+   "SC 15-3-530"
+  ],
+  "note": "PB-WD1/PB-PED3 class: neither signed claim carries a death-based start."
+ },
+ {
+  "id": "ES-BK1",
+  "post_id": 4898,
+  "field": "faq5",
+  "from": "Georgia exige que los conductores rebasen a un ciclista dejando una distancia segura, que generalmente se interpreta como al menos 3 pies. Carolina del Sur exige igualmente una distancia de rebase segura (S.C. Code § 56-5-3435).",
+  "to": "Georgia exige que los conductores dejen al menos 3 pies de distancia al rebasar a un ciclista (O.C.G.A. § 40-6-56). Carolina del Sur exige una distancia de rebase segura, pero no fija ninguna distancia en pies (S.C. Code § 56-5-3435).",
+  "class": "apply",
+  "authority": [
+   "GA 40-6-56",
+   "SC 56-5-3435"
+  ],
+  "note": "EN PB-BK1: the 3-foot rule is statutory, not an interpretation, and \"igualmente\" implies a matching SC distance."
+ },
+ {
+  "id": "ES-BK2",
+  "post_id": 4898,
+  "field": "faq3",
+  "from": "y menor al 51% en Carolina del Sur.",
+  "to": "y del 50% o menos en Carolina del Sur (Nelson v. Concrete Supply Co.).",
+  "class": "apply",
+  "authority": [
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "SC comparative-fault wording aligned to the house Nelson wording ('50% or less'), as on the EN pillars 2026-09-29 (PB-F class). 'menos del 51%' is not false for whole percentages but reads as a floor; engine authority-quantity warn."
+ },
+ {
+  "id": "ES-BK3",
+  "post_id": 4898,
+  "field": "content",
+  "from": "menos del 51% en Carolina del Sur)",
+  "to": "50% o menos en Carolina del Sur, Nelson v. Concrete Supply Co.)",
+  "class": "apply",
+  "authority": [
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "SC comparative-fault wording aligned to the house Nelson wording ('50% or less'), as on the EN pillars 2026-09-29 (PB-F class). 'menos del 51%' is not false for whole percentages but reads as a floor; engine authority-quantity warn."
+ },
+ {
+  "id": "ES-ES1",
+  "post_id": 4899,
+  "field": "faq3",
+  "from": "y menor al 51% en Carolina del Sur,",
+  "to": "y del 50% o menos en Carolina del Sur (Nelson v. Concrete Supply Co.),",
+  "class": "apply",
+  "authority": [
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "SC comparative-fault wording aligned to the house Nelson wording ('50% or less'), as on the EN pillars 2026-09-29 (PB-F class). 'menos del 51%' is not false for whole percentages but reads as a floor; engine authority-quantity warn."
+ },
+ {
+  "id": "ES-ES2",
+  "post_id": 4899,
+  "field": "content",
+  "from": "menos del 51% en Carolina del Sur)",
+  "to": "50% o menos en Carolina del Sur, Nelson v. Concrete Supply Co.)",
+  "class": "apply",
+  "authority": [
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "SC comparative-fault wording aligned to the house Nelson wording ('50% or less'), as on the EN pillars 2026-09-29 (PB-F class). 'menos del 51%' is not false for whole percentages but reads as a floor; engine authority-quantity warn."
+ },
+ {
+  "id": "ES-ES3",
+  "post_id": 4899,
+  "field": "faq2",
+  "from": "Ojo: los reclamos contra entidades de gobierno tienen requisitos de aviso previo con plazos mucho más cortos que los normales — a veces de pocos meses — así que consúltenos de inmediato.",
+  "to": "Ojo: en Georgia, un reclamo contra una ciudad exige un aviso previo por escrito (ante litem) dentro de 6 meses (O.C.G.A. § 36-33-5), y contra un condado, dentro de 12 meses (O.C.G.A. § 36-11-1). En Carolina del Sur no se exige aviso previo, pero la demanda contra el gobierno debe presentarse dentro de 2 años (S.C. Code § 15-78-110), o de 3 si primero se presentó un reclamo verificado (S.C. Code § 15-78-80). Consúltenos de inmediato.",
+  "class": "apply",
+  "authority": [
+   "GA 36-33-5",
+   "GA 36-11-1",
+   "SC 15-78-110",
+   "SC 15-78-80"
+  ],
+  "note": "SCTCA-notice class: a notice requirement stated for both states. Wording from the EN e-bike key takeaway (4088). EN 4088 faq5 carries the same class (EN residual)."
+ },
+ {
+  "id": "ES-ES4",
+  "post_id": 4899,
+  "field": "faq4",
+  "from": "y los reclamos contra el gobierno exigen aviso mucho antes.",
+  "to": "y en Georgia los reclamos contra una ciudad o un condado exigen un aviso previo mucho antes.",
+  "class": "apply",
+  "authority": [
+   "GA 36-33-5",
+   "GA 36-11-1"
+  ],
+  "note": "Same class."
+ },
+ {
+  "id": "ES-ES5",
+  "post_id": 4899,
+  "field": "content",
+  "from": "— estos últimos con requisitos de aviso especiales y plazos más cortos.",
+  "to": "— estos últimos con reglas y plazos propios, como el aviso previo que exige Georgia.",
+  "class": "apply",
+  "authority": [
+   "GA 36-33-5",
+   "GA 36-11-1",
+   "SC 15-78-80"
+  ],
+  "note": "Same class, in the body."
+ },
+ {
+  "id": "ES-ATV1",
+  "post_id": 4900,
+  "field": "content",
+  "from": "y menor al 51% en Carolina del Sur.",
+  "to": "y del 50% o menos en Carolina del Sur (Nelson v. Concrete Supply Co.).",
+  "class": "apply",
+  "authority": [
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "SC comparative-fault wording aligned to the house Nelson wording ('50% or less'), as on the EN pillars 2026-09-29 (PB-F class). 'menos del 51%' is not false for whole percentages but reads as a floor; engine authority-quantity warn."
+ },
+ {
+  "id": "ES-GC1",
+  "post_id": 4901,
+  "field": "content",
+  "from": "y menor al 51% en Carolina del Sur.",
+  "to": "y del 50% o menos en Carolina del Sur (Nelson v. Concrete Supply Co.).",
+  "class": "apply",
+  "authority": [
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "SC comparative-fault wording aligned to the house Nelson wording ('50% or less'), as on the EN pillars 2026-09-29 (PB-F class). 'menos del 51%' is not false for whole percentages but reads as a floor; engine authority-quantity warn."
+ },
+ {
+  "id": "ES-PI1",
+  "post_id": 5200,
+  "field": "faq1",
+  "from": "Los reclamos contra entidades del gobierno exigen un aviso previo mucho más corto.",
+  "to": "Los reclamos contra el gobierno avanzan más rápido: Georgia exige un aviso previo (ante litem) dentro de 6 meses contra una ciudad (O.C.G.A. § 36-33-5) y de 12 meses contra un condado (O.C.G.A. § 36-11-1) o el Estado (O.C.G.A. § 50-21-26); en Carolina del Sur, la demanda contra el gobierno debe presentarse dentro de 2 años (S.C. Code § 15-78-110), o de 3 si primero se presentó un reclamo verificado (S.C. Code § 15-78-80).",
+  "class": "apply",
+  "authority": [
+   "GA 36-33-5",
+   "GA 36-11-1",
+   "GA 50-21-26",
+   "SC 15-78-110",
+   "SC 15-78-80"
+  ],
+  "note": "SCTCA-notice class. Wording is the EN 4692 key takeaway, cited per clause (engine gotcha). EN 4692 faq1 carries the same class (EN residual)."
+ },
+ {
+  "id": "ES-PI2",
+  "post_id": 5200,
+  "field": "faq2",
+  "from": "y en Carolina del Sur si tuvo menos del 51%, con la compensación reducida",
+  "to": "y en Carolina del Sur si tuvo el 50% o menos (Nelson v. Concrete Supply Co.), con la compensación reducida",
+  "class": "apply",
+  "authority": [
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "SC comparative-fault wording aligned to the house Nelson wording ('50% or less'), as on the EN pillars 2026-09-29 (PB-F class). 'menos del 51%' is not false for whole percentages but reads as a floor; engine authority-quantity warn. EN 4692 faq2 = PB-F1."
+ },
+ {
+  "id": "ES-PI3",
+  "post_id": 5200,
+  "field": "faq2",
+  "from": "Al llegar al 50% en Georgia o al 51% en Carolina del Sur, la ley cierra la puerta por completo.",
+  "to": "Con el 50% o más de la culpa en Georgia, o con más del 50% en Carolina del Sur, la ley cierra la puerta por completo.",
+  "class": "apply",
+  "authority": [
+   "GA 51-12-33",
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "EN PB-F1 wording."
+ },
+ {
+  "id": "ES-PI4",
+  "post_id": 5200,
+  "field": "faq5",
+  "from": "limitados por O.C.G.A. § 51-12-5.1 en Georgia y S.C. Code § 15-32-530 en Carolina del Sur, con excepciones importantes para productos defectuosos y casos de intoxicación.",
+  "to": "limitados en Georgia por O.C.G.A. § 51-12-5.1, con excepciones importantes para productos defectuosos y casos de intoxicación, y en Carolina del Sur por S.C. Code § 15-32-530, con excepciones cuando hubo intención de causar daño, una condena por delito grave derivada de la conducta o alteración por alcohol o drogas.",
+  "class": "apply",
+  "authority": [
+   "SC 15-32-530"
+  ],
+  "note": "The product-liability exception is Georgia's (§ 51-12-5.1(e), pending, already published); the signed SC § 15-32-530 has no product exception. The GA half is unchanged. EN 4692 faq5 carries the same run-on (EN residual)."
+ },
+ {
+  "id": "ES-PI5",
+  "post_id": 5200,
+  "field": "faq5",
+  "from": "Y los daños punitivos por conducta gravemente negligente o intencional,",
+  "to": "Y los daños punitivos por conducta intencional o temeraria,",
+  "class": "attorney",
+  "authority": [],
+  "note": "Same punitive-standard item as ES-NH2 (GA § 51-12-5.1(b) pending; SC standard not signed). EN 4692 faq5 and the compensation intros carry it."
+ },
+ {
+  "id": "ES-PI6",
+  "post_id": 5200,
+  "field": "content",
+  "from": "y en Carolina del Sur si tuvo menos del 51%, aunque",
+  "to": "y en Carolina del Sur si tuvo el 50% o menos (Nelson v. Concrete Supply Co.), aunque",
+  "class": "apply",
+  "authority": [
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "SC comparative-fault wording aligned to the house Nelson wording ('50% or less'), as on the EN pillars 2026-09-29 (PB-F class). 'menos del 51%' is not false for whole percentages but reads as a floor; engine authority-quantity warn."
+ },
+ {
+  "id": "ES-PI7",
+  "post_id": 5200,
+  "field": "content",
+  "from": "Los reclamos contra entidades del gobierno exigen avisos previos mucho más cortos.",
+  "to": "Los reclamos contra el gobierno tienen reglas propias: en Georgia exigen un aviso previo (ante litem) dentro de 6 meses contra una ciudad (O.C.G.A. § 36-33-5) o de 12 meses contra un condado (O.C.G.A. § 36-11-1), y en Carolina del Sur la demanda debe presentarse, por lo general, dentro de 2 años (S.C. Code § 15-78-110).",
+  "class": "apply",
+  "authority": [
+   "GA 36-33-5",
+   "GA 36-11-1",
+   "SC 15-78-110"
+  ],
+  "note": "SCTCA-notice class, in the body."
+ },
+ {
+  "id": "CS1874-1",
+  "post_id": 1874,
+  "field": "content",
+  "from": "There are exactly two exceptions, and both are about seating availability:",
+  "to": "The statute allows a front seat in two situations, both about seating availability:",
+  "class": "apply",
+  "authority": [
+   "GA 40-8-76"
+  ],
+  "note": "\"Exactly two exceptions\" is false: § 40-8-76(b)(1)(D) exempts a child whose parent or guardian holds a physician's written statement. The rewording drops \"exactly\" and asserts nothing beyond the signed claim (the front-seat exception turns on rear-seat availability)."
+ },
+ {
+  "id": "CS1874-2",
+  "post_id": 1874,
+  "field": "content",
+  "from": "</ul>\n<p><strong>There is no weight threshold",
+  "to": "</ul>\n<p>Separately, the requirement does not apply when a parent or guardian obtains a physician&rsquo;s written statement that a physical or medical condition of the child prevents restraining the child in the way the statute requires.</p>\n<p><strong>There is no weight threshold",
+  "class": "attorney",
+  "authority": [],
+  "note": "CS-1 class. § 40-8-76(b)(1)(D), statute-text verified (Justia 2025, history ends Ga. L. 2011); not in the signed GA pack claim, so Eric Roden approves the wording (same pending item as draft CS-1d)."
+ },
+ {
+  "id": "CS1874-3",
+  "post_id": 1874,
+  "field": "content",
+  "from": "Georgia gives two paths out of the child-restraint requirement:",
+  "to": "Georgia gives three paths out of the child-restraint requirement:",
+  "class": "attorney",
+  "authority": [],
+  "note": "Pairs with CS1874-4 (the medical path)."
+ },
+ {
+  "id": "CS1874-4",
+  "post_id": 1874,
+  "field": "content",
+  "from": "rather than a child restraint.</li>\n</ul>",
+  "to": "rather than a child restraint.</li>\n<li><strong>Medical</strong> &mdash; the requirement does not apply when a parent or guardian obtains a physician&rsquo;s written statement that a physical or medical condition of the child prevents restraining the child as the statute requires.</li>\n</ul>",
+  "class": "attorney",
+  "authority": [],
+  "note": "§ 40-8-76(b)(1)(D); same as CS1874-2."
+ },
+ {
+  "id": "CS1874-5",
+  "post_id": 1874,
+  "field": "content",
+  "from": "Senate Bill 68 changed its evidentiary rule in 2025.",
+  "to": "Senate Bills 68 and 69 changed its evidentiary rule in 2025, for lawsuits commenced on or after April 21, 2025.",
+  "class": "attorney",
+  "authority": [],
+  "note": "SB 69 § 5(c)(2) limits the revised § 40-8-76.1(d) to causes of action commenced on or after 2025-04-21, and the Code editor's note says SB 69 governs (ga-statute-currency-2026-09-30.md § 2). The signed GA 40-8-76.1 claim lacks the qualifier; a pack PR is pending. Warn-level: the page states no rule, only that one changed."
+ },
+ {
+  "id": "CS1874-6",
+  "post_id": 1874,
+  "field": "takeaways",
+  "from": "there is no weight condition for riding in front.",
+  "to": "there is no weight condition for riding in front. A physician&rsquo;s written statement that a physical or medical condition of the child prevents the required restraint is a separate exception.",
+  "class": "attorney",
+  "authority": [],
+  "note": "KT \"only if\" is false where a physician's statement applies. § 40-8-76(b)(1)(D); Eric Roden."
+ },
+ {
+  "id": "CS1874-7",
+  "post_id": 1874,
+  "field": "faq1",
+  "from": "are occupied by other children. There is no weight threshold",
+  "to": "are occupied by other children. A physician's written statement that a medical condition of the child prevents the required restraint is a separate exception. There is no weight threshold",
+  "class": "attorney",
+  "authority": [],
+  "note": "Same, in FAQ[1] and FAQPage JSON-LD."
+ }
+]
