@@ -1,0 +1,62 @@
+[
+  {
+    "id": "COL-GA1",
+    "post_id": 3553,
+    "field": "content",
+    "from": "<a href=\"#south-carolina-laws\">South Carolina and Georgia Laws That Protect Accident Victims</a>",
+    "to": "<a href=\"#south-carolina-laws\">South Carolina Laws That Protect Accident Victims</a>",
+    "class": "apply",
+    "authority": [],
+    "note": "Owner, 2026-09-30: 'The georgia law does not belong in the Columbia post' (GA-6). Removal only; SC sentences unchanged."
+  },
+  {
+    "id": "COL-GA2",
+    "post_id": 3553,
+    "field": "content",
+    "from": "<h2 id=\"south-carolina-laws\">South Carolina and Georgia Laws That Protect Accident Victims</h2>",
+    "to": "<h2 id=\"south-carolina-laws\">South Carolina Laws That Protect Accident Victims</h2>",
+    "class": "apply",
+    "authority": [],
+    "note": "Owner, 2026-09-30: 'The georgia law does not belong in the Columbia post' (GA-6). Removal only; SC sentences unchanged."
+  },
+  {
+    "id": "COL-GA3",
+    "post_id": 3553,
+    "field": "content",
+    "from": "<p>Understanding the legal framework in both South Carolina and Georgia is important for accident victims in the Columbia area, especially those who also travel through Georgia for work or personal reasons.</p>",
+    "to": "<p>These South Carolina rules shape an accident claim in the Columbia area.</p>",
+    "class": "apply",
+    "authority": [],
+    "note": "Owner, 2026-09-30: 'The georgia law does not belong in the Columbia post' (GA-6). Removal only; SC sentences unchanged."
+  },
+  {
+    "id": "COL-GA4",
+    "post_id": 3553,
+    "field": "content",
+    "from": " Georgia's deadline is shorter — just <strong>two years</strong> under O.C.G.A. § 9-3-33. Missing either deadline typically bars your claim entirely.",
+    "to": " Missing this deadline typically bars your claim entirely.",
+    "class": "apply",
+    "authority": [],
+    "note": "Owner, 2026-09-30: 'The georgia law does not belong in the Columbia post' (GA-6). Removal only; SC sentences unchanged."
+  },
+  {
+    "id": "COL-GA5",
+    "post_id": 3553,
+    "field": "content",
+    "from": " Georgia's threshold is slightly stricter — recovery is allowed only if you are less than <strong>50% at fault</strong> under O.C.G.A. § 51-12-33. In both states, insurance companies aggressively argue comparative fault",
+    "to": " Insurance companies aggressively argue comparative fault",
+    "class": "apply",
+    "authority": [],
+    "note": "Owner, 2026-09-30: 'The georgia law does not belong in the Columbia post' (GA-6). Removal only; SC sentences unchanged."
+  },
+  {
+    "id": "COL-GA6",
+    "post_id": 3553,
+    "field": "faq1",
+    "from": " Georgia has a shorter deadline of two years under O.C.G.A. § 9-3-33. Missing the applicable statute of limitations",
+    "to": " Missing the statute of limitations",
+    "class": "apply",
+    "authority": [],
+    "note": "Owner, 2026-09-30: 'The georgia law does not belong in the Columbia post' (GA-6). Removal only; SC sentences unchanged."
+  }
+]

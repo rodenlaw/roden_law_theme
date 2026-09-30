@@ -27,7 +27,7 @@ Page wording only. Never add authorities to the shared GA pack on his behalf.
 | GA-1 | Employer's First Report "must be filed within 10 days", and "once the report is filed, the statute of limitations begins". No GA pack authority, and the § 34-9-82 period runs from the injury. | 1809 FAQ[1] and body |
 | GA-2 | Third-party examples omit co-employee immunity (O.C.G.A. § 34-9-11(a)). | 1809; the Savannah WC page family |
 | GA-4 | Georgia's ER gross-negligence statute (O.C.G.A. § 51-1-29.5) vs the page's "does not lower the fundamental duty". | 4197 |
-| GA-6 | Georgia deadline and fault threshold on a Columbia (SC) post. Correct Georgia law; the question is whether it belongs there. | 3553 |
+| ~~GA-6~~ | **Resolved 2026-09-30.** Owner: "The georgia law does not belong in the Columbia post". Georgia law was removed from 3553 (TOC, H2, intro, deadline and fault paragraphs, FAQ 1). | 3553 |
 | GA-B3-1 | Georgia hit-and-run "injury or death is a felony"; the signed GA 40-6-270 says serious injury or death. | 4075 |
 | GA-B3-2 | Georgia minors and § 9-3-72 cells, which the GA pack doesn't cover. | 1696 |
 | (open since 07) | Proposed GA pack rules `ga-wc-two-years-from-injury`, `ga-wc-notice-wrong-days`; § 51-12-5.1 pending. | GA pack |

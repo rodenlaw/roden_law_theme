@@ -2305,6 +2305,27 @@ resource pages.
 - **Spanish pillar twins** were not swept.
 - **Engine gap:** it caught none of the 23 wrong strings; the .md proposes 5 rules.
 
+### Columbia post: Georgia law removed; Study #2 built — 2026-09-30
+
+- **GA-6, resolved.** Owner: "The georgia law does not belong in the Columbia post".
+  - `data/facts/columbia-post-ga-removal-2026-09-30.json`, 6 removal-only edits on 3553
+    (`/blog/columbia-dangerous-intersections-roads/`), through the batch applier. Backup:
+    `docs/backups/columbia-post-ga-removal-2026-09-30.json`.
+  - Removed: the TOC entry and H2 ("South Carolina and Georgia Laws" became "South Carolina
+    Laws"), the Georgia travel intro, the Georgia deadline (§ 9-3-33) and fault (§ 51-12-33)
+    sentences, and FAQ 1's Georgia sentence (also FAQPage).
+  - Verified live: no O.C.G.A. in the article; the only "Georgia" left is site chrome. JSON-LD
+    parses.
+- **Study #2 committed, not published** (`b2c40ee`): Georgia and South Carolina truck-crash
+  deaths 2020–2024, two state-specific FARS reports.
+  - GA: 1,151 deaths in 1,042 truck-involved fatal crashes (13.6%).
+  - SC: 669 deaths in 601 (12.0%).
+  - `bin/truck-study-verify.py`: 321/321 numbers verified. Chart SVGs go in the theme with the
+    publishing PR.
+  - Needs an attorney read before `_roden_last_reviewed` is set.
+- **Georgia statute research** (`data/facts/ga-statute-research-2026-09-30.md`): primary-text
+  findings for Eric Roden's packet.
+
 ### Law pack: #62 superseded by #67, rebuilt on the signed SC pack — 2026-09-26
 
 **Owner, 2026-09-26:** "what do we need to do with #62? Those are signed", then "yes".
