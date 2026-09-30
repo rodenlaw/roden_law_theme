@@ -3134,3 +3134,12 @@ run clean first, owner ran the apply. Backup: docs/backups/es-pillars-batch-2026
 fixed: 4881 FAQ said SC has no med-mal noneconomic cap. Caches flushed; JSON-LD guard PASS;
 content/meta.json regenerated. Held: 12 attorney items (Eric / Gillin), 12 Spanish template/.mo
 issues (theme PR), 16-edit EN residuals batch staged (en-pillars-residuals-batch-2026-09-30.json).
+
+## 2026-09-30 — English pillar residuals: 16 legal fixes applied
+
+Same error classes as the Spanish batch, still live on 11 English pillars (FAQ answers only):
+government-claim notice, GA city notice at 12 months, minors "tolled", unscoped "full value", SC
+punitive exceptions, WC deadline/notice cites. Batch data/facts/en-pillars-residuals-batch-2026-09-30.json;
+dry run clean, owner ran the apply. Backup docs/backups/en-pillars-residuals-batch-2026-09-30.json.
+Caches flushed; JSON-LD guard PASS; content/meta.json regenerated. Staged, not applied:
+bin/fix-pillar-meta-2026-09-30.php (4 apply-class meta fixes, dry run clean).
