@@ -4113,3 +4113,14 @@ msgstr "Cómo funciona un reclamo por lesiones en Georgia y Carolina del Sur —
 
 msgid "personal injury lawyers"
 msgstr "abogados de lesiones personales"
+
+#. translators: 1: GA deadline phrase with citation; 2: SC deadline in <strong>; 3: SC citation.
+#, php-format
+msgid "Workers' compensation runs on its own deadlines, separate from the personal injury statute of limitations. In Georgia the claim is due %1$s. In South Carolina you have %2$s (%3$s). You must also report the injury to your employer well before those dates — that notice deadline is much shorter, and missing it can end the claim on its own."
+msgstr "La compensación laboral tiene sus propios plazos, separados del plazo de prescripción para lesiones personales. En Georgia, el reclamo vence %1$s. En Carolina del Sur usted tiene %2$s (%3$s). También debe reportar la lesión a su empleador mucho antes de esas fechas; ese plazo de aviso es mucho más corto, y no cumplirlo puede terminar el reclamo por sí solo."
+
+msgid "workers' compensation board in your state"
+msgstr "la junta de compensación laboral de su estado"
+
+msgid "If you lost a family member in Georgia or South Carolina, the laws governing a wrongful death claim differ by state. Below is a side-by-side comparison of the key legal rules that affect the claim."
+msgstr "Si perdió a un familiar en Georgia o Carolina del Sur, las leyes que rigen un reclamo por muerte injusta varían según el estado. A continuación encontrará una comparación de las principales reglas legales que afectan el reclamo."
