@@ -1,0 +1,42 @@
+{
+    "generated": "2026-09-30T20:10:07+00:00",
+    "mode": "apply",
+    "fields": [
+        {
+            "post": 4812,
+            "key": "_roden_meta_description",
+            "before": "South Carolina lets drivers stack uninsured (UM) and underinsured (UIM) coverage across multiple vehicles or policies — potentially multiplying what you can recover.",
+            "after": "South Carolina lets certain insureds stack uninsured (UM) and underinsured (UIM) coverage in some situations, subject to the limits in S.C. Code § 38-77-160 — potentially increasing what you can recover.",
+            "ids": [
+                "M1"
+            ]
+        },
+        {
+            "post": 4931,
+            "key": "_roden_meta_description",
+            "before": "Carolina del Sur permite acumular (\"stack\") cobertura UM y UIM de varios vehículos o pólizas para aumentar su recuperación. Consulta gratis en español.",
+            "after": "En algunas situaciones, Carolina del Sur permite a ciertos asegurados acumular (\"stack\") cobertura UM y UIM, sujeto al S.C. Code § 38-77-160. Consulta gratis en español.",
+            "ids": [
+                "M2"
+            ]
+        },
+        {
+            "post": 4101,
+            "key": "_roden_sol_sc",
+            "before": "S.C. Code § 15-3-530",
+            "after": "Medical malpractice deadlines apply (S.C. Code § 15-3-545)",
+            "ids": [
+                "M3"
+            ]
+        },
+        {
+            "post": 3619,
+            "key": "_roden_pillar_compensation_intro",
+            "before": "Damages include past and future medical care, pain and suffering, and — critically — **elder-abuse statutory damages and punitives**. {{SC}}South Carolina's **Omnibus Adult Protection Act (S.C. Code § 43-35-5 et seq.)** informs the standard of care. South Carolina's $350,000 / $1.05M noneconomic cap (S.C. Code § 15-32-220) applies if the claim is characterized as medical malpractice; **ordinary-negligence and intentional-tort theories escape the cap**, which is a key strategic decision in pleading. {{/SC}}{{GA}}Georgia's **Disabled Adults and Elder Persons Protection Act (O.C.G.A. § 30-5-1 et seq.)** informs the standard of care. {{/GA}} Wrongful-death claims under {state_full} law often substantially exceed the underlying nursing-home claim value.",
+            "after": "Damages include past and future medical care, pain and suffering, and — critically — **elder-abuse statutory damages and punitives**. {{SC}}South Carolina's **Omnibus Adult Protection Act (S.C. Code § 43-35-5 et seq.)** informs the standard of care. Damage limitations may apply in some nursing home cases. South Carolina's medical malpractice noneconomic damages limits can apply to qualifying malpractice claims against nursing homes and health care providers, and separate statutory limits may apply to entities that qualify as charitable organizations. Whether a cap applies depends on the defendant, the nature of the claim, and any statutory exception. {{/SC}}{{GA}}Georgia's **Disabled Adults and Elder Persons Protection Act (O.C.G.A. § 30-5-1 et seq.)** informs the standard of care. {{/GA}} Wrongful-death claims under {state_full} law often substantially exceed the underlying nursing-home claim value.",
+            "ids": [
+                "M4"
+            ]
+        }
+    ]
+}

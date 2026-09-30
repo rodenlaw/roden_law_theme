@@ -7,7 +7,7 @@
         "post",
         "page"
     ],
-    "_count": 679,
+    "_count": 682,
     "posts": {
         "/": {
             "type": "page",
@@ -26,6 +26,142 @@
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_jurisdiction": "south-carolina-only"
+            }
+        },
+        "/?post_type=resource&p=6329": {
+            "type": "resource",
+            "status": "draft",
+            "title": "Georgia Car Seat Laws: Age, Booster Seat and Front Seat Rules",
+            "excerpt": "Georgia car seat law: children under 8 ride in a rear seat in an approved car seat or booster unless over 4'9\". Front seat rules and fines explained.",
+            "meta": {
+                "_roden_author_attorney": "Tyler Love",
+                "_roden_faqs": [
+                    {
+                        "question": "What is the car seat law in Georgia?",
+                        "answer": "Under O.C.G.A. § 40-8-76, a child under eight must be properly restrained in an appropriate, federally approved child passenger restraint, in a rear seat. A child over 4 feet 9 inches tall must use a safety belt instead. The rule covers passenger cars, vans and pickup trucks, but not taxis or public transit."
+                    },
+                    {
+                        "question": "At what age can a child stop using a car seat in Georgia?",
+                        "answer": "Georgia law allows a child to move to a safety belt at age eight, or earlier once the child is over 4 feet 9 inches tall (O.C.G.A. § 40-8-76). As a matter of safety guidance, not law, keep using the booster until the adult belt fits: lap belt low on the hips and upper thighs, shoulder belt across the chest, away from the neck."
+                    },
+                    {
+                        "question": "Can a child sit in the front seat in Georgia?",
+                        "answer": "A child under eight may sit in front only if the vehicle has no appropriate rear seating position, or every appropriate rear position is occupied by other children (O.C.G.A. § 40-8-76). A physician's written statement about the child's medical condition is a separate exception. The front-seat exception carries no weight condition; the 40-pound provision belongs to the lap-belt rule."
+                    },
+                    {
+                        "question": "Is Georgia's 40-pound car seat rule about riding in the front seat?",
+                        "answer": "The 40-pound provision in O.C.G.A. § 40-8-76 governs when a child may be secured by a lap belt: only when the vehicle has no lap-and-shoulder belts, or all of them except the driver's are used by other children. The front-seat exception turns on rear-seat availability and carries no weight condition."
+                    },
+                    {
+                        "question": "What is the fine for a car seat violation in Georgia?",
+                        "answer": "A car seat violation in Georgia carries a fine of up to $50 for a first conviction and up to $100 for a later conviction, with no additional fees or surcharges, under O.C.G.A. § 40-8-76. Following the law matters far more for your child's safety than for the fine."
+                    },
+                    {
+                        "question": "Does a car seat violation affect an injury claim in Georgia?",
+                        "answer": "Under O.C.G.A. § 40-8-76(c), a car seat violation is not negligence per se or contributory negligence per se. The same subsection bars using a violation as the basis for cancelling insurance coverage or raising rates. If an adjuster raises a car seat question, talk to a lawyer before you answer it."
+                    },
+                    {
+                        "question": "Can not wearing a seat belt hurt my injury claim in Georgia?",
+                        "answer": "It can. For lawsuits commenced on or after April 21, 2025, O.C.G.A. § 40-8-76.1(d) allows seat belt non-use to be admitted on negligence, comparative negligence, causation, assumption of risk and apportionment, and it may diminish recovery. There is no percentage cap on that reduction. Talk to a lawyer before answering an adjuster's questions about restraints."
+                    },
+                    {
+                        "question": "How much does it cost to hire Roden Law for my child's injury claim?",
+                        "answer": "Nothing upfront. Roden Law handles car accident injury claims on a contingency fee, so you pay no legal fees unless we win your child's case. The first consultation is free. Call 1-844-RESULTS or our Savannah office at (912) 303-5850 to talk through what happened and the deadline that applies."
+                    }
+                ],
+                "_roden_jurisdiction": "georgia-only",
+                "_roden_key_takeaways": "In Georgia, a child under eight must be properly restrained in an appropriate, federally approved child passenger restraint, such as a car seat or booster seat, in a rear seat (O.C.G.A. § 40-8-76). A child over 4 feet 9 inches tall must use a safety belt instead. A child under eight may ride in front only if the vehicle has no appropriate rear seat, or every appropriate rear seat is taken by other children; a physician's written statement about a medical condition is a separate exception. The 40-pound provision governs lap-belt use; it is not a front-seat rule. A violation carries a fine of up to $50 for a first conviction and up to $100 after that. Under § 40-8-76(c), a violation is not negligence per se. If another driver injured your child, Roden Law offers a free case review, with no fees unless we win.",
+                "_roden_last_reviewed": "2026-09-30",
+                "_roden_meta_description": "Georgia car seat law: children under 8 ride in a rear seat in an approved car seat or booster unless over 4'9\". Front seat rules and fines explained.",
+                "_roden_meta_title": "Georgia Car Seat Laws: Age, Booster & Front Seat Rules"
+            }
+        },
+        "/?post_type=resource&p=6330": {
+            "type": "resource",
+            "status": "draft",
+            "title": "Is Uninsured Motorist Coverage Required in Georgia?",
+            "excerpt": "Georgia requires insurers to offer uninsured motorist coverage (O.C.G.A. § 33-7-11). What UM pays, Georgia's minimum limits and how to check your policy.",
+            "meta": {
+                "_roden_author_attorney": "Tyler Love",
+                "_roden_faqs": [
+                    {
+                        "question": "Is uninsured motorist coverage required in Georgia?",
+                        "answer": "Georgia requires insurers to offer uninsured motorist coverage, under O.C.G.A. § 33-7-11. A Georgia auto policy must include UM coverage unless a named insured rejects it in writing (O.C.G.A. § 33-7-11). Whether your policy includes it, and at what limits, is shown on your declarations page, the summary sheet listing each coverage and its limits. If you cannot find it, ask your agent for a complete copy of your policy."
+                    },
+                    {
+                        "question": "What are the minimum car insurance limits in Georgia?",
+                        "answer": "Georgia personal auto policies must carry at least $25,000 per person and $50,000 per accident for bodily injury, and $25,000 for property damage, under O.C.G.A. § 33-7-11. Those are liability limits: they pay for injuries and damage the policyholder causes to others, and a serious injury can exceed them."
+                    },
+                    {
+                        "question": "What does uninsured motorist coverage pay for in Georgia?",
+                        "answer": "Uninsured motorist coverage is part of your own auto policy and can pay for your injuries when the at-fault driver has no insurance to cover them. Depending on your policy's terms, it can help with medical bills, lost wages and pain and suffering, up to the limits on your declarations page."
+                    },
+                    {
+                        "question": "What if the other driver's insurance is not enough to cover my injuries?",
+                        "answer": "Your own UM coverage may still help, and how much it adds depends on the terms of your policy. A driver carrying only the $25,000 per person minimum under O.C.G.A. § 33-7-11 may have far less coverage than a serious injury requires. Have a lawyer read your policy before you sign any settlement paperwork."
+                    },
+                    {
+                        "question": "Does uninsured motorist coverage apply to a hit-and-run in Georgia?",
+                        "answer": "It may. Your UM coverage can be the main source of compensation when a driver who flees cannot be identified. Whether it pays depends on your policy, the facts of the crash and a Georgia condition: actual physical contact with the unknown driver's vehicle, unless an eyewitness other than you corroborates how the crash happened (O.C.G.A. § 33-7-11(b)(2)). Call the police, get the report number, gather witness names and notify your insurer promptly."
+                    },
+                    {
+                        "question": "Do I need a lawyer to make an uninsured motorist claim against my own insurer?",
+                        "answer": "You are not required to hire one, but it helps. When you make a UM claim, the adjuster works for the insurance company, even though it is your own policy, and may argue about fault or the value of your injuries. A lawyer can read your policy, handle the insurer and protect the deadline, at no upfront cost."
+                    },
+                    {
+                        "question": "How long do I have to file after a crash with an uninsured driver in Georgia?",
+                        "answer": "The general deadline to file a personal injury lawsuit in Georgia is two years from the date of injury, under O.C.G.A. § 9-3-33. A UM claim has its own procedural steps that should be handled well before then, and your policy may require prompt notice of the crash, so talk to a lawyer early."
+                    }
+                ],
+                "_roden_jurisdiction": "georgia-only",
+                "_roden_key_takeaways": "Georgia requires insurers to offer uninsured motorist (UM) coverage under O.C.G.A. § 33-7-11. A Georgia auto policy must include UM coverage unless a named insured rejects it in writing (O.C.G.A. § 33-7-11); your declarations page shows whether you have it. The same section sets Georgia's minimum personal auto liability limits: $25,000 per person and $50,000 per accident for bodily injury, and $25,000 for property damage. UM coverage is part of your own policy and can pay for your injuries when the at-fault driver has no insurance to cover them. Georgia does not require PIP, and MedPay is optional. Fault still matters: recovery is barred at 50% or more fault and reduced by your share below that (O.C.G.A. § 51-12-33). The general deadline to file a personal injury lawsuit is two years (O.C.G.A. § 9-3-33). Roden Law reviews your coverage for free.",
+                "_roden_last_reviewed": "2026-09-30",
+                "_roden_meta_description": "Georgia requires insurers to offer uninsured motorist coverage (O.C.G.A. § 33-7-11). What UM pays, Georgia's minimum limits and how to check your policy.",
+                "_roden_meta_title": "Is Uninsured Motorist Coverage Required in Georgia?"
+            }
+        },
+        "/?post_type=resource&p=6331": {
+            "type": "resource",
+            "status": "draft",
+            "title": "Georgia Wrongful Death Settlement Value: How Cases Are Valued",
+            "excerpt": "How Georgia wrongful death cases are valued: the \"full value of the life\" (O.C.G.A. § 51-4-1), the decedent's fault, insurance and the two-year deadline.",
+            "meta": {
+                "_roden_author_attorney": "Tyler Love",
+                "_roden_faqs": [
+                    {
+                        "question": "What is the average wrongful death settlement in Georgia?",
+                        "answer": "There is no reliable average for a Georgia wrongful death settlement, because each case is valued on its own evidence. Georgia measures the recovery by the \"full value of the life of the decedent,\" defined in O.C.G.A. § 51-4-1. What a case is worth depends on the evidence of that life, the proof of fault and the insurance available."
+                    },
+                    {
+                        "question": "How is a wrongful death case valued in Georgia?",
+                        "answer": "Georgia values a wrongful death case by the \"full value of the life of the decedent,\" a term defined in O.C.G.A. § 51-4-1. Proving it depends on evidence of the life the person would have lived: their future earnings, their relationships and the milestones with family they will miss, such as weddings and graduations. Records and the accounts of family, friends and co-workers carry that evidence."
+                    },
+                    {
+                        "question": "Does the fault of the person who died reduce a Georgia wrongful death settlement?",
+                        "answer": "Yes, if the person who died was partly at fault. The recovery is reduced by that share of fault, and it is barred if the share reaches 50% or more (O.C.G.A. § 51-12-33). Insurers often argue the person who died caused the crash, so evidence gathered early matters."
+                    },
+                    {
+                        "question": "How long do we have to file a wrongful death claim in Georgia?",
+                        "answer": "A Georgia wrongful death lawsuit generally must be filed within two years (O.C.G.A. § 9-3-33). If a government vehicle or road was involved, written notice is due much sooner. A claim against a Georgia city needs notice within six months (O.C.G.A. § 36-33-5)."
+                    },
+                    {
+                        "question": "How long does a wrongful death settlement take in Georgia?",
+                        "answer": "It takes as long as it takes to prove fault and the full value of the life, and then to reach an agreement or a verdict. Cases with clear fault and cooperative insurers resolve sooner than cases where fault is disputed or several parties blame each other. An early offer usually comes before the full picture is known."
+                    },
+                    {
+                        "question": "What if more than one party caused the death?",
+                        "answer": "Each responsible defendant pays only its own share of the damages in Georgia, because joint and several liability was abolished in 2005 (O.C.G.A. § 51-12-33). That makes it important to identify every party whose conduct played a part, such as a driver, an employer or a trucking company."
+                    },
+                    {
+                        "question": "How much does a Georgia wrongful death lawyer cost?",
+                        "answer": "Roden Law handles Georgia wrongful death cases on a contingency fee. Your family pays nothing upfront and no legal fees unless we win. The first consultation is free and confidential, so it costs nothing to understand your options. Call 1-844-RESULTS or (912) 303-5850."
+                    }
+                ],
+                "_roden_jurisdiction": "georgia-only",
+                "_roden_key_takeaways": "There is no reliable average for a Georgia wrongful death settlement, because each case is valued on its own evidence. Georgia measures the recovery by the \"full value of the life of the decedent,\" a term defined in O.C.G.A. § 51-4-1. Value turns on the evidence of the life the person would have lived, including their future earnings, their relationships and the time with family they will miss, and their age and health, along with how strongly fault can be proven and the insurance available to pay. If the person who died was partly at fault, the award is reduced by that share and barred at 50% or more (O.C.G.A. § 51-12-33). Each defendant pays only its own share of the damages. A Georgia wrongful death lawsuit generally must be filed within two years (O.C.G.A. § 9-3-33). Roden Law represents Georgia families on a contingency fee, with no fees unless we win.",
+                "_roden_last_reviewed": "2026-09-30",
+                "_roden_meta_description": "How Georgia wrongful death cases are valued: the \"full value of the life\" (O.C.G.A. § 51-4-1), the decedent's fault, insurance and the two-year deadline.",
+                "_roden_meta_title": "Georgia Wrongful Death Settlement Value | Roden Law"
             }
         },
         "/about/": {
@@ -3185,7 +3321,7 @@
                     },
                     {
                         "question": "Can seat belt non-use be used against me in Georgia?",
-                        "answer": "It can. Following SB 68, approved on 21 April 2025, O.C.G.A. § 40-8-76.1 permits non-use to be admitted on negligence, comparative negligence, causation, assumption of risk and apportionment, and it may diminish recovery."
+                        "answer": "It can, in lawsuits commenced on or after 21 April 2025. Following SB 68, O.C.G.A. § 40-8-76.1(d) permits non-use to be admitted on negligence, comparative negligence, causation, assumption of risk and apportionment, and it may diminish recovery."
                     },
                     {
                         "question": "Is there a limit on how much seat belt non-use can reduce a Georgia award?",
@@ -4820,7 +4956,7 @@
                     },
                     {
                         "question": "Does my child have to ride in the back seat in Georgia?",
-                        "answer": "Generally yes. O.C.G.A. § 40-8-76 requires a child under eight to be properly restrained in a rear seat. The statute allows a child to be restrained in a front seat only if the vehicle has no rear seating position appropriate for correctly restraining a child, or all appropriate rear seating positions are occupied by other children. There is no weight threshold that permits front-seat riding."
+                        "answer": "Generally yes. O.C.G.A. § 40-8-76 requires a child under eight to be properly restrained in a rear seat. The statute allows a child to be restrained in a front seat only if the vehicle has no rear seating position appropriate for correctly restraining a child, or all appropriate rear seating positions are occupied by other children. A physician's written statement about the child's medical condition is a separate exception. There is no weight threshold that permits front-seat riding."
                     },
                     {
                         "question": "What is the 40-pound rule in Georgia's car seat law?",
@@ -4836,7 +4972,7 @@
                     }
                 ],
                 "_roden_jurisdiction": "ga",
-                "_roden_key_takeaways": "Georgia law (O.C.G.A. &sect; 40-8-76) requires every child under eight years old to be restrained in a child passenger restraining system appropriate for the child&rsquo;s height and weight, in a rear seat. A child may ride in front only if the vehicle has no rear seating position appropriate for restraining a child, or all appropriate rear positions are already occupied by other children &mdash; there is no weight condition for riding in front. A child taller than 4 feet 9 inches is restrained by a safety belt instead, under O.C.G.A. &sect; 40-8-76.1. A violation carries a fine of up to $50 for a first conviction and up to $100 for a second or subsequent conviction. Under &sect; 40-8-76(c) a violation is not negligence per se nor contributory negligence per se.",
+                "_roden_key_takeaways": "Georgia law (O.C.G.A. &sect; 40-8-76) requires every child under eight years old to be restrained in a child passenger restraining system appropriate for the child&rsquo;s height and weight, in a rear seat. A child may ride in front only if the vehicle has no rear seating position appropriate for restraining a child, or all appropriate rear positions are already occupied by other children &mdash; there is no weight condition for riding in front. A physician&rsquo;s written statement about the child&rsquo;s medical condition is a separate exception. A child taller than 4 feet 9 inches is restrained by a safety belt instead, under O.C.G.A. &sect; 40-8-76.1. A violation carries a fine of up to $50 for a first conviction and up to $100 for a second or subsequent conviction. Under &sect; 40-8-76(c) a violation is not negligence per se nor contributory negligence per se.",
                 "_roden_last_reviewed": "2026-08-31",
                 "_roden_meta_description": "Georgia requires a child restraint for every child under 8 (O.C.G.A. § 40-8-76), in a rear seat, with narrow exceptions. Reviewed by a Georgia attorney."
             }
@@ -5746,7 +5882,7 @@
                     },
                     {
                         "question": "What is the statute of limitations for personal injury in South Carolina?",
-                        "answer": "The statute of limitations is three years from the date of the accident for personal injury claims (S.C. Code section 15-3-530) and three years from the date of death for wrongful death claims. In Georgia, the deadline is only two years. Medical malpractice cases have their own deadline (S.C. Code § 15-3-545) and require a Notice of Intent to File Suit, filed together with a qualified expert's affidavit, which takes time to prepare (S.C. Code § 15-79-125). Missing the statute of limitations permanently bars your claim."
+                        "answer": "The statute of limitations is three years from the date of the accident for personal injury claims (S.C. Code section 15-3-530) and three years from the date of death for wrongful death claims. In Georgia, the deadline is only two years. Medical malpractice cases, including deaths caused by malpractice, have their own deadline (S.C. Code § 15-3-545) and require a Notice of Intent to File Suit, filed together with a qualified expert's affidavit, which takes time to prepare (S.C. Code § 15-79-125). Missing the statute of limitations permanently bars your claim."
                     },
                     {
                         "question": "What factors make a personal injury case take longer?",
@@ -7747,7 +7883,7 @@
                     },
                     {
                         "question": "Does not wearing a helmet affect my claim in South Carolina?",
-                        "answer": "It can become an argument the defence raises about your damages, but it does not decide fault for the collision. A left-turning driver who fails to yield is responsible for that failure regardless of what the rider was wearing."
+                        "answer": "South Carolina law requires motorcycle operators and passengers under age 21 to wear an approved helmet (S.C. Code § 56-5-3660). State law does not impose that helmet requirement on riders age 21 or older. Talk with an attorney about how the facts of your crash apply to your claim."
                     },
                     {
                         "question": "What should a family do after a fatal motorcycle crash on Dorchester Road?",
@@ -7755,7 +7891,7 @@
                     }
                 ],
                 "_roden_jurisdiction": "sc",
-                "_roden_key_takeaways": "Dorchester Road in North Charleston is a hazardous corridor for motorcyclists. <strong>Left-turn collisions</strong> are behind roughly 42% of fatal two-vehicle motorcycle crashes nationally (NHTSA). Heavy truck traffic, limited sight lines, and speeds above 45 mph drastically reduce survival odds. South Carolina does not require helmets for riders 21 and older but comparative fault applies — riders can recover damages if less than <strong>51% at fault</strong>. The <strong>3-year statute of limitations</strong> (<strong>S.C. Code § 15-3-530</strong>) governs most injury claims."
+                "_roden_key_takeaways": "Dorchester Road in North Charleston is a hazardous corridor for motorcyclists. <strong>Left-turn collisions</strong> are behind roughly 42% of fatal two-vehicle motorcycle crashes nationally (NHTSA). Heavy truck traffic, limited sight lines, and speeds above 45 mph drastically reduce survival odds. South Carolina does not require helmets for riders 21 and older (S.C. Code § 56-5-3660). Riders can recover damages if less than <strong>51% at fault</strong>. The <strong>3-year statute of limitations</strong> (<strong>S.C. Code § 15-3-530</strong>) governs most injury claims."
             }
         },
         "/blog/much-worth-ga-worker-compared-states/": {
@@ -9283,7 +9419,7 @@
                     },
                     {
                         "question": "Can I still recover compensation if I was not wearing a seatbelt?",
-                        "answer": "Yes, in both states — but the rules now differ sharply. In Georgia, Senate Bill 68 revised O.C.G.A. § 40-8-76.1(d) effective April 21, 2025, so evidence that you were not wearing a seatbelt may be admitted on negligence, comparative negligence, causation, assumption of risk, or apportionment of fault, and may diminish your recovery. Georgia sets no fixed percentage reduction — the finder of fact apportions fault, and the court still weighs admissibility under O.C.G.A. § 24-4-403. In South Carolina the reverse applies: Under S.C. Code § 56-5-6540(C), a seatbelt violation is not negligence per se or contributory negligence and is not admissible as evidence in a civil action. In neither state does going unbelted bar your claim, and you remain entitled to compensation for injuries caused by another party's negligence."
+                        "answer": "Yes, in both states — but the rules now differ sharply. In Georgia, Senate Bill 68 revised O.C.G.A. § 40-8-76.1(d) so that, in lawsuits commenced on or after April 21, 2025, evidence that you were not wearing a seatbelt may be admitted on negligence, comparative negligence, causation, assumption of risk, or apportionment of fault, and may diminish your recovery. Georgia sets no fixed percentage reduction — the finder of fact apportions fault, and the court still weighs admissibility under O.C.G.A. § 24-4-403. In South Carolina the reverse applies: Under S.C. Code § 56-5-6540(C), a seatbelt violation is not negligence per se or contributory negligence and is not admissible as evidence in a civil action. In neither state does going unbelted bar your claim, and you remain entitled to compensation for injuries caused by another party's negligence."
                     },
                     {
                         "question": "How long do I have to file a lawsuit after a rollover crash?",
@@ -10446,7 +10582,7 @@
                     },
                     {
                         "question": "Can not wearing a helmet affect my motorcycle accident claim?",
-                        "answer": "Georgia requires all motorcycle riders to wear helmets under O.C.G.A. § 40-6-315, while South Carolina only requires helmets for riders under 21. In either state, the defense may argue that not wearing a helmet contributed to your injuries, which could reduce your compensation under comparative fault rules."
+                        "answer": "Georgia requires all motorcycle riders to wear helmets under O.C.G.A. § 40-6-315, while South Carolina only requires helmets for riders under 21. In Georgia, the defense may argue that not wearing a helmet contributed to your injuries, which could reduce your compensation under comparative fault rules. South Carolina law does not impose a helmet requirement on riders age 21 or older (S.C. Code § 56-5-3660)."
                     },
                     {
                         "question": "What if the other driver's insurance company says the motorcycle accident was my fault?",
@@ -16033,7 +16169,7 @@
                     },
                     {
                         "question": "¿Puedo reclamar si no llevaba casco?",
-                        "answer": "Posiblemente sí. No llevar casco no le quita el derecho a reclamar por la negligencia del otro conductor, aunque la defensa puede argumentar que agravó ciertas lesiones de cabeza. En Georgia el casco es obligatorio; en Carolina del Sur solo para menores de 21 años. Cada caso depende de sus hechos — consúltenos."
+                        "answer": "Posiblemente sí. No llevar casco no le quita el derecho a reclamar por la negligencia del otro conductor, aunque, en Georgia, la defensa puede argumentar que agravó ciertas lesiones de cabeza. En Georgia el casco es obligatorio; en Carolina del Sur solo para menores de 21 años. Cada caso depende de sus hechos — consúltenos."
                     },
                     {
                         "question": "¿Qué compensación puedo recibir?",
@@ -17247,7 +17383,7 @@
                     },
                     {
                         "question": "¿Qué pasa si me lesionó un conductor sin seguro en Carolina del Sur?",
-                        "answer": "Todavía puede recuperar a través de su propia cobertura de motorista sin seguro (UM), que Carolina del Sur exige en toda póliza de auto. La cobertura UM paga por sus lesiones cuando el conductor culpable no tiene seguro. Además, Carolina del Sur permite acumular (\"stack\") cobertura UM/UIM de varios vehículos o pólizas — haga que un abogado revise cada póliza aplicable."
+                        "answer": "Todavía puede recuperar a través de su propia cobertura de motorista sin seguro (UM), que Carolina del Sur exige en toda póliza de auto. La cobertura UM paga por sus lesiones cuando el conductor culpable no tiene seguro. Además, en algunas situaciones Carolina del Sur permite acumular (\"stack\") cobertura UM/UIM, sujeto a los límites del S.C. Code § 38-77-160 — haga que un abogado revise cada póliza aplicable."
                     },
                     {
                         "question": "¿Cuáles son los límites mínimos de seguro de auto en Carolina del Sur?",
@@ -17371,7 +17507,7 @@
                     },
                     {
                         "question": "¿Puedo acumular (stacking) mis coberturas UM y UIM en Carolina del Sur?",
-                        "answer": "Con frecuencia, sí. Carolina del Sur permite que los asegurados de clase uno, es decir el asegurado nombrado, su cónyuge y los familiares que viven en el hogar, acumulen los límites de UM y UIM de varios vehículos o pólizas en muchas situaciones. Que la acumulación aplique depende de cuáles vehículos y pólizas estuvieron involucrados (S.C. Code §§ 38-77-150 y 38-77-160). Los pasajeros y quienes manejan con permiso son asegurados de clase dos y por lo general no pueden acumular, así que la revisión de todas las pólizas por parte de un abogado sí marca la diferencia."
+                        "answer": "En algunas situaciones. Carolina del Sur permite que ciertos asegurados acumulen (\"stack\") la cobertura UM/UIM. Por lo general, un asegurado de clase uno (como el asegurado nombrado, su cónyuge o un familiar que vive en el hogar) puede acumular la cobertura disponible cuando uno de los vehículos asegurados está involucrado, sujeto al S.C. Code § 38-77-160, incluido el límite basado en la cobertura del vehículo involucrado en el accidente. Si ninguno de los vehículos del asegurado está involucrado, la cobertura por lo general se limita a la disponible en un solo vehículo y no se permite acumular. Los pasajeros y quienes manejan con permiso son asegurados de clase dos y por lo general no pueden acumular, así que la revisión de todas las pólizas por parte de un abogado sí marca la diferencia."
                     },
                     {
                         "question": "El conductor culpable no tenía suficiente seguro. ¿Qué puedo hacer en Carolina del Sur?",
@@ -17439,11 +17575,11 @@
                     },
                     {
                         "question": "¿Es obligatorio usar casco de motocicleta en Carolina del Sur?",
-                        "answer": "Carolina del Sur exige casco únicamente para conductores y pasajeros menores de 21 años (S.C. Code § 56-5-3660). Ninguna ley del estado elimina ni reduce automáticamente su reclamo por el simple hecho de que un motociclista de 21 años o más no llevara casco. Si la aseguradora saca el tema, se maneja bajo las reglas ordinarias de negligencia comparativa, así que no traer casco por sí solo no acaba con su derecho a una indemnización."
+                        "answer": "La ley de Carolina del Sur exige que los conductores y pasajeros de motocicleta menores de 21 años usen un casco aprobado (S.C. Code § 56-5-3660). La ley estatal no impone ese requisito a quienes tienen 21 años o más."
                     },
                     {
                         "question": "¿Puedo recuperar compensación si no llevaba casco cuando me accidenté en la motocicleta?",
-                        "answer": "Sí, si usted tenía 21 años o más, porque Carolina del Sur exige casco únicamente a los menores de 21 años (S.C. Code § 56-5-3660). La defensa puede argumentar que la falta de casco contribuyó a sus lesiones en la cabeza, pero ese es un argumento de negligencia comparativa, no una prohibición automática. Si eso llega a reducir o no su indemnización depende de los hechos del caso y del tipo de lesión que usted sufrió."
+                        "answer": "La ley de Carolina del Sur exige que los conductores y pasajeros de motocicleta menores de 21 años usen un casco aprobado (S.C. Code § 56-5-3660). La ley estatal no impone ese requisito a quienes tienen 21 años o más. Hable con un abogado sobre cómo se aplican los hechos de su choque a su reclamo."
                     },
                     {
                         "question": "¿Se tratan diferente las lesiones de motocicleta en los reclamos de Carolina del Sur?",
@@ -17515,7 +17651,7 @@
                     },
                     {
                         "question": "¿Qué daños se pueden recuperar en un caso de muerte por negligencia en Carolina del Sur?",
-                        "answer": "Un reclamo por muerte por negligencia puede recuperar las pérdidas de los beneficiarios: el apoyo económico que ya no van a recibir, la pérdida de la compañía y la guía del ser querido, y su propio duelo y angustia mental, además de los gastos de funeral y entierro. Por separado, una acción de supervivencia puede recuperar lo que la persona fallecida sufrió personalmente antes de morir, como su dolor y sufrimiento. Juntas, las dos cubren tanto las pérdidas de la familia como las del fallecido."
+                        "answer": "Un reclamo por muerte por negligencia puede recuperar las pérdidas de los beneficiarios: el apoyo económico que ya no van a recibir, la pérdida de la compañía y la guía del ser querido, y su propio duelo y angustia mental, además de los gastos de funeral razonables, siempre que no se recuperen también en la acción de supervivencia (S.C. Code § 15-5-100). Por separado, una acción de supervivencia puede recuperar lo que la persona fallecida sufrió personalmente antes de morir, como su dolor y sufrimiento. Juntas, las dos cubren tanto las pérdidas de la familia como las del fallecido."
                     },
                     {
                         "question": "¿Cuál es la diferencia entre una acción por muerte por negligencia y una acción de supervivencia en Carolina del Sur?",
@@ -17523,7 +17659,7 @@
                     },
                     {
                         "question": "¿Cómo se reparte un acuerdo por muerte por negligencia en Carolina del Sur?",
-                        "answer": "El dinero de un caso por muerte por negligencia pasa a los beneficiarios que fija la ley, en el orden que ella establece: primero el cónyuge y los hijos, después los padres y luego otros herederos. El representante personal es quien lleva el caso, pero lo que se recupera les pertenece a los beneficiarios y no a los acreedores generales del patrimonio. Como la repartición y la aprobación del tribunal que a veces se requiere pueden ser complicadas, a las familias les conviene tener orientación legal."
+                        "answer": "El dinero de un caso por muerte por negligencia pasa a los beneficiarios que fija la ley, en el orden que ella establece: primero el cónyuge y los hijos, después los padres y luego otros herederos. El representante personal es quien lleva el caso, pero, por lo general, lo que se recupera no forma parte del patrimonio de la persona fallecida disponible para pagar a sus acreedores generales (S.C. Code §§ 15-51-20, 15-51-40). Como la repartición y la aprobación del tribunal que a veces se requiere pueden ser complicadas, a las familias les conviene tener orientación legal."
                     },
                     {
                         "question": "¿Podemos recuperar compensación si nuestro ser querido tuvo parte de la culpa en Carolina del Sur?",
@@ -17635,13 +17771,13 @@
             "type": "resource",
             "status": "publish",
             "title": "Cobertura UM y UIM en Carolina del Sur: Cómo Acumular (\"Stacking\") Pólizas",
-            "excerpt": "Carolina del Sur permite acumular (\"stack\") cobertura de motorista sin seguro (UM) y con seguro insuficiente (UIM) de varios vehículos o pólizas — multiplicando lo que puede recuperar.",
+            "excerpt": "En algunas situaciones, Carolina del Sur permite a ciertos asegurados acumular (\"stack\") cobertura de motorista sin seguro (UM) y con seguro insuficiente (UIM), sujeto a los límites del S.C. Code § 38-77-160 — y así aumentar lo que puede recuperar.",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "¿Se puede acumular la cobertura UM y UIM en Carolina del Sur?",
-                        "answer": "Sí. Carolina del Sur permite acumular (\"stack\") la cobertura de motorista sin seguro (UM) y con seguro insuficiente (UIM) en muchas situaciones, lo que significa que puede combinar límites de cobertura de más de un vehículo o póliza para aumentar lo que puede recuperar. Que pueda acumular depende de sus pólizas específicas, así que cada póliza debe revisarse con cuidado."
+                        "answer": "En algunas situaciones. Carolina del Sur permite que ciertos asegurados acumulen (\"stack\") la cobertura UM/UIM. Por lo general, un asegurado de clase uno (como el asegurado nombrado, su cónyuge o un familiar que vive en el hogar) puede acumular la cobertura disponible cuando uno de los vehículos asegurados está involucrado, sujeto al S.C. Code § 38-77-160, incluido el límite basado en la cobertura del vehículo involucrado en el accidente. Si ninguno de los vehículos del asegurado está involucrado, la cobertura por lo general se limita a la disponible en un solo vehículo y no se permite acumular. Que pueda acumular depende de sus pólizas específicas, así que cada póliza debe revisarse con cuidado."
                     },
                     {
                         "question": "¿Cuál es la diferencia entre la cobertura UM y la UIM?",
@@ -17649,7 +17785,7 @@
                     },
                     {
                         "question": "¿Cómo aumenta la acumulación mi recuperación en Carolina del Sur?",
-                        "answer": "La acumulación combina límites de cobertura de varios vehículos o pólizas en un fondo más grande. Por ejemplo, si tiene $100,000 de cobertura UM en cada uno de dos vehículos del hogar, la acumulación puede permitirle combinarlos hacia sus pérdidas en lugar de quedar limitado a un solo límite. Esto puede multiplicar el dinero disponible cuando el culpable tiene poco o ningún seguro."
+                        "answer": "La acumulación combina límites de cobertura de varios vehículos o pólizas en un fondo más grande. Por ejemplo, si tiene $100,000 de cobertura UM en cada uno de dos vehículos del hogar y se lesiona en uno de ellos, la acumulación puede permitirle sumar la cobertura del otro vehículo hacia sus pérdidas en lugar de quedar limitado a un solo límite, sujeto al límite del S.C. Code § 38-77-160 basado en la cobertura del vehículo involucrado. Si ninguno de sus vehículos está involucrado, por lo general no se permite acumular. Esto puede aumentar el dinero disponible cuando el culpable tiene poco o ningún seguro."
                     },
                     {
                         "question": "¿Cómo sé si puedo acumular mi cobertura?",
@@ -17657,9 +17793,9 @@
                     }
                 ],
                 "_roden_jurisdiction": "sc",
-                "_roden_key_takeaways": "Carolina del Sur permite a los conductores lesionados acumular (\"stack\") la cobertura de motorista sin seguro (UM) y con seguro insuficiente (UIM), lo que significa que puede combinar los límites de cobertura de más de un vehículo o póliza para aumentar lo que puede recuperar tras un choque con un conductor sin seguro o con seguro insuficiente. La acumulación puede elevar dramáticamente el dinero disponible cuando el conductor culpable tiene poco o ningún seguro. Que pueda acumular, y cómo, depende de sus pólizas específicas y de cómo se compró la cobertura, por lo que las pólizas deben revisarse con cuidado. Como las aseguradoras no ofrecen la acumulación por iniciativa propia, que un abogado examine cada póliza disponible suele ser la diferencia entre un pago limitado y una compensación completa.",
+                "_roden_key_takeaways": "Carolina del Sur permite que ciertos asegurados acumulen (\"stack\") la cobertura UM/UIM. Por lo general, un asegurado de clase uno (como el asegurado nombrado, su cónyuge o un familiar que vive en el hogar) puede acumular la cobertura disponible cuando uno de los vehículos asegurados está involucrado, sujeto al S.C. Code § 38-77-160, incluido el límite basado en la cobertura del vehículo involucrado en el accidente. Si ninguno de los vehículos del asegurado está involucrado, la cobertura por lo general se limita a la disponible en un solo vehículo y no se permite acumular. Cuando aplica, la acumulación puede elevar el dinero disponible cuando el conductor culpable tiene poco o ningún seguro. Que pueda acumular, y cómo, depende de sus pólizas específicas y de cómo se compró la cobertura, por lo que las pólizas deben revisarse con cuidado. Como las aseguradoras no ofrecen la acumulación por iniciativa propia, que un abogado examine cada póliza disponible suele ser la diferencia entre un pago limitado y una compensación completa.",
                 "_roden_locale": "es",
-                "_roden_meta_description": "Carolina del Sur permite acumular (\"stack\") cobertura UM y UIM de varios vehículos o pólizas para aumentar su recuperación. Consulta gratis en español.",
+                "_roden_meta_description": "En algunas situaciones, Carolina del Sur permite a ciertos asegurados acumular (\"stack\") cobertura UM y UIM, sujeto al S.C. Code § 38-77-160. Consulta gratis en español.",
                 "_roden_translation_of": "/resources/south-carolina-um-uim-stacking/"
             }
         },
@@ -17807,7 +17943,7 @@
                     },
                     {
                         "question": "¿Qué pasa si el conductor que me chocó no tenía seguro o no tenía suficiente?",
-                        "answer": "Carolina del Sur exige cobertura de motorista sin seguro (UM) y permite acumular coberturas UM y UIM en muchas situaciones. Esa acumulación puede aumentar significativamente la cobertura disponible cuando el conductor culpable no tiene seguro o solo lleva una póliza mínima."
+                        "answer": "Carolina del Sur exige cobertura de motorista sin seguro (UM) y permite a ciertos asegurados acumular coberturas UM y UIM en algunas situaciones, sujeto a los límites del S.C. Code § 38-77-160. Cuando aplica, esa acumulación puede aumentar significativamente la cobertura disponible cuando el conductor culpable no tiene seguro o solo lleva una póliza mínima."
                     },
                     {
                         "question": "¿Cuánto cuesta un abogado de accidentes de auto en Carolina del Sur?",
@@ -17815,7 +17951,7 @@
                     }
                 ],
                 "_roden_jurisdiction": "SC",
-                "_roden_key_takeaways": "Carolina del Sur es un estado de culpa (tort): el conductor que causó el choque — y su aseguradora — responde por las lesiones. Usted generalmente tiene 3 años desde la fecha del choque para presentar una demanda bajo S.C. Code § 15-3-530, y puede recuperar compensación siempre que haya tenido menos del 51% de la culpa, con su indemnización reducida según su porcentaje. Carolina del Sur exige cobertura mínima de responsabilidad de 25/50/25 y cobertura obligatoria de motorista sin seguro (UM) (S.C. Code § 38-77-140 y siguientes), y permite acumular coberturas UM/UIM cuando el conductor culpable no tiene seguro suficiente. Roden Law tiene 4 oficinas en Carolina del Sur — Charleston, North Charleston, Columbia y Myrtle Beach — y maneja accidentes de auto en todo el estado con honorarios de contingencia: no paga nada a menos que ganemos.",
+                "_roden_key_takeaways": "Carolina del Sur es un estado de culpa (tort): el conductor que causó el choque — y su aseguradora — responde por las lesiones. Usted generalmente tiene 3 años desde la fecha del choque para presentar una demanda bajo S.C. Code § 15-3-530, y puede recuperar compensación siempre que haya tenido menos del 51% de la culpa, con su indemnización reducida según su porcentaje. Carolina del Sur exige cobertura mínima de responsabilidad de 25/50/25 y cobertura obligatoria de motorista sin seguro (UM) (S.C. Code § 38-77-140 y siguientes), y, en algunas situaciones y sujeto a los límites del S.C. Code § 38-77-160, permite acumular coberturas UM/UIM cuando el conductor culpable no tiene seguro suficiente. Roden Law tiene 4 oficinas en Carolina del Sur — Charleston, North Charleston, Columbia y Myrtle Beach — y maneja accidentes de auto en todo el estado con honorarios de contingencia: no paga nada a menos que ganemos.",
                 "_roden_locale": "es",
                 "_roden_meta_description": "¿Lesionado en un accidente de auto en Carolina del Sur? Roden Law lucha por su compensación en todo el estado. Consulta gratis, sin honorarios si no ganamos.",
                 "_roden_translation_of": "/south-carolina-car-accident-lawyers/"
@@ -17834,7 +17970,7 @@
                     },
                     {
                         "question": "¿No haber usado casco perjudica mi reclamo por accidente de motocicleta?",
-                        "answer": "Carolina del Sur solo exige el casco a motociclistas y pasajeros menores de 21 años, así que los mayores de 21 no infringen la ley al no usarlo. El uso del casco no decide automáticamente su caso, pero las aseguradoras pueden argumentar que las decisiones del motociclista agravaron las lesiones bajo la regla de negligencia comparativa, así que conviene que un abogado evalúe cómo aplica a su situación."
+                        "answer": "La ley de Carolina del Sur exige que los conductores y pasajeros de motocicleta menores de 21 años usen un casco aprobado (S.C. Code § 56-5-3660). La ley estatal no impone ese requisito a quienes tienen 21 años o más. Hable con un abogado sobre cómo se aplican los hechos de su choque a su reclamo."
                     },
                     {
                         "question": "¿Por qué las aseguradoras tratan diferente los reclamos de motocicleta?",
@@ -17850,7 +17986,7 @@
                     }
                 ],
                 "_roden_jurisdiction": "SC",
-                "_roden_key_takeaways": "Si usted resultó lesionado en un accidente de motocicleta en cualquier parte de Carolina del Sur, generalmente tiene 3 años desde el choque para presentar su demanda bajo S.C. Code § 15-3-530, y todavía puede recuperar compensación siempre que haya tenido menos del 51% de la culpa. Los motociclistas enfrentan una desventaja incorporada: las aseguradoras y los jurados suelen asumir que el motociclista fue imprudente, incluso cuando el otro conductor causó el choque. Carolina del Sur solo exige el casco a motociclistas y pasajeros menores de 21 años, y las aseguradoras pueden intentar usar las decisiones del motociclista en su contra. Roden Law tiene 4 oficinas en Carolina del Sur — Charleston, North Charleston, Columbia y Myrtle Beach — y representa a víctimas de choques de motocicleta en todo el estado con honorarios de contingencia: no paga nada a menos que ganemos.",
+                "_roden_key_takeaways": "Si usted resultó lesionado en un accidente de motocicleta en cualquier parte de Carolina del Sur, generalmente tiene 3 años desde el choque para presentar su demanda bajo S.C. Code § 15-3-530, y todavía puede recuperar compensación siempre que haya tenido menos del 51% de la culpa. Los motociclistas enfrentan una desventaja incorporada: las aseguradoras y los jurados suelen asumir que el motociclista fue imprudente, incluso cuando el otro conductor causó el choque. Carolina del Sur solo exige el casco a los conductores y pasajeros de motocicleta menores de 21 años (S.C. Code § 56-5-3660). Roden Law tiene 4 oficinas en Carolina del Sur — Charleston, North Charleston, Columbia y Myrtle Beach — y representa a víctimas de choques de motocicleta en todo el estado con honorarios de contingencia: no paga nada a menos que ganemos.",
                 "_roden_locale": "es",
                 "_roden_meta_description": "¿Lesionado en un accidente de motocicleta en Carolina del Sur? Combatimos el prejuicio de las aseguradoras contra motociclistas. Consulta gratuita en español.",
                 "_roden_translation_of": "/south-carolina-motorcycle-accident-lawyer/"
@@ -17873,7 +18009,7 @@
                     },
                     {
                         "question": "¿Qué compensación puedo recuperar en un caso de lesiones en Carolina del Sur?",
-                        "answer": "Puede recuperar daños económicos (facturas médicas, atención futura, salarios perdidos y capacidad de ingreso perdida), daños no económicos (dolor y sufrimiento, angustia emocional y pérdida del disfrute de la vida) y, en casos de negligencia grave, daños punitivos. Cuando la parte culpable no tiene seguro suficiente, también puede ser posible acumular coberturas UM/UIM."
+                        "answer": "Puede recuperar daños económicos (facturas médicas, atención futura, salarios perdidos y capacidad de ingreso perdida), daños no económicos (dolor y sufrimiento, angustia emocional y pérdida del disfrute de la vida) y, en casos de negligencia grave, daños punitivos. Cuando la parte culpable no tiene seguro suficiente, también puede ser posible acumular coberturas UM/UIM en algunas situaciones, sujeto a los límites del S.C. Code § 38-77-160."
                     },
                     {
                         "question": "¿Qué tipos de casos maneja Roden Law en Carolina del Sur?",
@@ -17978,7 +18114,7 @@
                     },
                     {
                         "question": "¿Qué compensación está disponible en un caso de muerte por negligencia en Carolina del Sur?",
-                        "answer": "Según los hechos, la recuperación puede incluir la pérdida del sostén económico del ser querido, de su compañía y de su guía, el dolor y la angustia mental de la familia, y los gastos funerarios y de entierro. Una acción de supervivencia separada, presentada por el patrimonio, puede recuperar por el dolor y los gastos médicos de la persona fallecida antes de morir."
+                        "answer": "Según los hechos, la recuperación puede incluir la pérdida del sostén económico del ser querido, de su compañía y de su guía, el dolor y la angustia mental de la familia, y los gastos funerarios razonables, siempre que no se recuperen también en la acción de supervivencia (S.C. Code § 15-5-100). Una acción de supervivencia separada, presentada por el patrimonio, puede recuperar por el dolor y los gastos médicos de la persona fallecida antes de morir."
                     },
                     {
                         "question": "¿Cuál es la diferencia entre un reclamo por muerte por negligencia y una acción de supervivencia?",
@@ -17990,7 +18126,7 @@
                     }
                 ],
                 "_roden_jurisdiction": "SC",
-                "_roden_key_takeaways": "Un reclamo por muerte por negligencia en Carolina del Sur debe presentarlo el representante personal del patrimonio de la persona fallecida — no los familiares directamente — bajo S.C. Code § 15-51-10 y siguientes, y generalmente debe presentarse dentro de 3 años desde la fecha del fallecimiento conforme a S.C. Code § 15-3-530. La recuperación beneficia primero al cónyuge y los hijos sobrevivientes (y, en algunos casos, a los padres), e incluye la pérdida del sostén, la compañía y la guía del ser querido, además de los gastos funerarios; una acción de supervivencia separada puede recuperar por el dolor que la persona fallecida sufrió antes de morir. Roden Law tiene 4 oficinas en Carolina del Sur — Charleston, North Charleston, Columbia y Myrtle Beach — y maneja estos casos delicados en todo el estado con honorarios de contingencia: no paga nada a menos que ganemos.",
+                "_roden_key_takeaways": "Un reclamo por muerte por negligencia en Carolina del Sur debe presentarlo el representante personal del patrimonio de la persona fallecida — no los familiares directamente — bajo S.C. Code § 15-51-10 y siguientes, y generalmente debe presentarse dentro de 3 años desde la fecha del fallecimiento conforme a S.C. Code § 15-3-530. La recuperación beneficia primero al cónyuge y los hijos sobrevivientes (y, en algunos casos, a los padres), e incluye la pérdida del sostén, la compañía y la guía del ser querido, además de los gastos funerarios razonables, siempre que no se recuperen también en la acción de supervivencia (S.C. Code § 15-5-100); una acción de supervivencia separada puede recuperar por el dolor que la persona fallecida sufrió antes de morir. Roden Law tiene 4 oficinas en Carolina del Sur — Charleston, North Charleston, Columbia y Myrtle Beach — y maneja estos casos delicados en todo el estado con honorarios de contingencia: no paga nada a menos que ganemos.",
                 "_roden_locale": "es",
                 "_roden_meta_description": "¿Perdió a un ser querido por negligencia en Carolina del Sur? Ayudamos a las familias a buscar justicia y compensación en todo el estado. Consulta gratuita.",
                 "_roden_translation_of": "/south-carolina-wrongful-death-lawyer/"
@@ -18018,7 +18154,7 @@
                     },
                     {
                         "question": "Can not wearing a seat belt hurt my Georgia car accident claim?",
-                        "answer": "It can. After SB 68, O.C.G.A. § 40-8-76.1(d) allows seat belt non-use to be admitted on negligence, comparative negligence, causation, assumption of risk and apportionment, and it may diminish your recovery. The statute sets no fixed limit on that reduction, so medical proof of what caused each injury matters."
+                        "answer": "It can. For lawsuits commenced on or after April 21, 2025, O.C.G.A. § 40-8-76.1(d), as revised by SB 68, allows seat belt non-use to be admitted on negligence, comparative negligence, causation, assumption of risk and apportionment, and it may diminish your recovery. The statute sets no fixed limit on that reduction, so medical proof of what caused each injury matters."
                     },
                     {
                         "question": "How much does a Georgia car accident lawyer cost?",
@@ -20263,7 +20399,7 @@
                     }
                 ],
                 "_roden_jurisdiction": "both",
-                "_roden_key_takeaways": "The deadline to sue for a traumatic brain injury is two years in Georgia (O.C.G.A. § 9-3-33) and three years in South Carolina (S.C. Code § 15-3-530), so start before symptoms like memory loss have fully emerged. When a head injury comes from a crash, the states treat seat belts differently. Georgia admits evidence that you were unbelted, and it may reduce your recovery (O.C.G.A. § 40-8-76.1). South Carolina bars that evidence in civil cases (S.C. Code § 56-5-6540). You can still recover with partial fault: under 50% in Georgia (O.C.G.A. § 51-12-33), and 50% or less in South Carolina (Nelson v. Concrete Supply Co.). Roden Law takes brain injury cases on contingency, with a free consultation at its Georgia and South Carolina offices.",
+                "_roden_key_takeaways": "The deadline to sue for a traumatic brain injury is two years in Georgia (O.C.G.A. § 9-3-33) and three years in South Carolina (S.C. Code § 15-3-530), so start before symptoms like memory loss have fully emerged. When a head injury comes from a crash, the states treat seat belts differently. In lawsuits commenced on or after April 21, 2025, Georgia admits evidence that you were unbelted, and it may reduce your recovery (O.C.G.A. § 40-8-76.1(d)). South Carolina bars that evidence in civil cases (S.C. Code § 56-5-6540). You can still recover with partial fault: under 50% in Georgia (O.C.G.A. § 51-12-33), and 50% or less in South Carolina (Nelson v. Concrete Supply Co.). Roden Law takes brain injury cases on contingency, with a free consultation at its Georgia and South Carolina offices.",
                 "_roden_pillar_compensation_intro": "**Future medical care, lost earning capacity, and noneconomic damages dominate** TBI recoveries. Lifetime cognitive rehab, attendant care, vocational retraining, and assistive technology routinely push economic damages into seven figures even in moderate-injury cases. {state_full} imposes no statutory cap on noneconomic damages outside the medical-malpractice context — so most TBI cases (auto, premises, products) are uncapped on pain and suffering. Defense vocational experts and life-care planners frequently spar with plaintiff experts over future-care assumptions, present-value reductions, and earning-capacity baselines.",
                 "_roden_pillar_negligence_intro": "Traumatic brain injury (TBI) is not its own cause of action — it rides on the underlying tort: a vehicle crash, a fall, an assault, a defective product, or a medical procedure. The negligence framing follows whichever underlying claim applies, and standard {state_full} negligence elements (duty, breach, causation, damages) must be proven. TBI cases are distinct in **proof of injury**: mild TBI / concussion plaintiffs face heavy defense pushback because conventional CT and MRI imaging is often normal. Building proof requires neuropsychological testing, diffusion tensor imaging (DTI), and life-care planning expert testimony. Filing deadline: {sol_years} years under {sol_cite}.",
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33",
@@ -21381,7 +21517,7 @@
                 ],
                 "_roden_jurisdiction": "both",
                 "_roden_key_takeaways": "Families who suspect nursing home abuse or neglect should act early, because harm can go unnoticed for months. The general injury deadline is two years in Georgia (O.C.G.A. § 9-3-33) and three years in South Carolina (S.C. Code § 15-3-530). Where the harm arises from medical care, South Carolina counts a nursing home as a health care institution, so its malpractice cap on non-economic damages can apply (S.C. Code § 15-32-220). A nonprofit facility's liability for its employees may also be limited (S.C. Code § 33-56-180). Blaming the resident works only at 50% fault in Georgia (O.C.G.A. § 51-12-33) or above 50% in South Carolina (Nelson v. Concrete Supply Co.). Roden Law brings these cases for a contingency fee, and families consult free at its Georgia and South Carolina offices.",
-                "_roden_pillar_compensation_intro": "Damages include past and future medical care, pain and suffering, and — critically — **elder-abuse statutory damages and punitives**. {{SC}}South Carolina's **Omnibus Adult Protection Act (S.C. Code § 43-35-5 et seq.)** informs the standard of care. South Carolina's $350,000 / $1.05M noneconomic cap (S.C. Code § 15-32-220) applies if the claim is characterized as medical malpractice; **ordinary-negligence and intentional-tort theories escape the cap**, which is a key strategic decision in pleading. {{/SC}}{{GA}}Georgia's **Disabled Adults and Elder Persons Protection Act (O.C.G.A. § 30-5-1 et seq.)** informs the standard of care. {{/GA}} Wrongful-death claims under {state_full} law often substantially exceed the underlying nursing-home claim value.",
+                "_roden_pillar_compensation_intro": "Damages include past and future medical care, pain and suffering, and — critically — **elder-abuse statutory damages and punitives**. {{SC}}South Carolina's **Omnibus Adult Protection Act (S.C. Code § 43-35-5 et seq.)** informs the standard of care. Damage limitations may apply in some nursing home cases. South Carolina's medical malpractice noneconomic damages limits can apply to qualifying malpractice claims against nursing homes and health care providers, and separate statutory limits may apply to entities that qualify as charitable organizations. Whether a cap applies depends on the defendant, the nature of the claim, and any statutory exception. {{/SC}}{{GA}}Georgia's **Disabled Adults and Elder Persons Protection Act (O.C.G.A. § 30-5-1 et seq.)** informs the standard of care. {{/GA}} Wrongful-death claims under {state_full} law often substantially exceed the underlying nursing-home claim value.",
                 "_roden_pillar_negligence_intro": "Nursing home claims sound in **professional negligence** (sometimes med-mal-adjacent), ordinary negligence, statutory violations, and — for intentional misconduct — battery and elder-abuse torts. The federal **Nursing Home Reform Act, 42 U.S.C. § 1395i-3 / § 1396r**, and CMS regulations at **42 C.F.R. Part 483** establish baseline standards of care that support negligence-per-se theories. **Pre-dispute arbitration agreements** are routine and heavily contested under *Marmet Health Care Center v. Brown*, 565 U.S. 530 (2012). {{GA}}Georgia treats most nursing-home claims as professional negligence requiring an expert affidavit under O.C.G.A. § 9-11-9.1; {{/GA}}{{SC}}South Carolina treats most nursing-home claims as professional negligence requiring a Notice of Intent to File Suit and an expert affidavit under S.C. Code § 15-79-125; {{/SC}}ordinary-negligence theories (e.g., understaffing, falls without medical judgment) sometimes escape that requirement.",
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33",
                 "_roden_sol_sc": "S.C. Code § 15-3-530",
@@ -23391,11 +23527,11 @@
                     },
                     {
                         "question": "Can the other side tell the jury I was not wearing a seat belt?",
-                        "answer": "In Georgia, yes — since 21 April 2025, when SB 68 revised O.C.G.A. § 40-8-76.1(d) to make that evidence admissible on negligence, comparative negligence, causation and assumption of risk. The court still weighs admissibility under O.C.G.A. § 24-4-403. In South Carolina, no: S.C. Code § 56-5-6540(C) makes it inadmissible in a civil action."
+                        "answer": "In Georgia, yes, in lawsuits commenced on or after 21 April 2025: SB 68 revised O.C.G.A. § 40-8-76.1(d) to make that evidence admissible on negligence, comparative negligence, causation and assumption of risk. The court still weighs admissibility under O.C.G.A. § 24-4-403. In South Carolina, no: S.C. Code § 56-5-6540(C) makes it inadmissible in a civil action."
                     }
                 ],
                 "_roden_jurisdiction": "both",
-                "_roden_key_takeaways": "Georgia and South Carolina both use modified comparative negligence, but the cut-off differs by one point. Georgia bars recovery when you are 50% or more at fault (O.C.G.A. § 51-12-33(g)); South Carolina bars it at 51% or more (Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)). A driver assessed at exactly 50% fault recovers nothing in Georgia and half their damages in South Carolina. The states also now diverge on evidence: since Senate Bill 68 took effect on 21 April 2025, Georgia allows a jury to hear that you were not wearing a seat belt (O.C.G.A. § 40-8-76.1(d)), while South Carolina excludes it (S.C. Code § 56-5-6540(C)). SB 68 did not change Georgia’s 50% bar, despite widespread reporting to the contrary. Which rule applies generally turns on the state where the crash happened, not where you live.",
+                "_roden_key_takeaways": "Georgia and South Carolina both use modified comparative negligence, but the cut-off differs by one point. Georgia bars recovery when you are 50% or more at fault (O.C.G.A. § 51-12-33(g)); South Carolina bars it at 51% or more (Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)). A driver assessed at exactly 50% fault recovers nothing in Georgia and half their damages in South Carolina. The states also now diverge on evidence: in lawsuits commenced on or after 21 April 2025, Georgia allows a jury to hear that you were not wearing a seat belt (O.C.G.A. § 40-8-76.1(d), as revised by Senate Bill 68), while South Carolina excludes it (S.C. Code § 56-5-6540(C)). SB 68 did not change Georgia’s 50% bar, despite widespread reporting to the contrary. Which rule applies generally turns on the state where the crash happened, not where you live.",
                 "_roden_last_reviewed": "2026-09-19"
             }
         },
@@ -24425,7 +24561,7 @@
                     },
                     {
                         "question": "Will not wearing a helmet reduce my South Carolina motorcycle settlement?",
-                        "answer": "It can. South Carolina uses modified comparative negligence, so insurers may argue that not wearing a helmet increased your injuries and try to shift fault to you. Your award is reduced by your fault percentage and barred at 51% or more. Whether a helmet affects value depends on the injuries and the facts, and an attorney can push back on inflated fault claims."
+                        "answer": "South Carolina law requires motorcycle operators and passengers under age 21 to wear an approved helmet (S.C. Code § 56-5-3660). State law does not impose that helmet requirement on riders age 21 or older. Whether a helmet question affects the value of a particular claim depends on the injuries and the facts, so have an attorney review yours."
                     },
                     {
                         "question": "Are punitive damages available in South Carolina motorcycle accident cases?",
@@ -24555,7 +24691,7 @@
                     },
                     {
                         "question": "Can I stack UM/UIM coverage in South Carolina?",
-                        "answer": "Often, yes. South Carolina allows class-one insureds, meaning the named insured, their spouse, and resident relatives, to stack UM and UIM limits across multiple vehicles or policies in many situations. Whether stacking applies depends on which vehicles and policies were involved (S.C. Code §§ 38-77-150 and 38-77-160). Passengers and permissive users are class-two insureds and generally cannot stack, so an attorney's review of every policy matters. See /resources/south-carolina-um-uim-stacking/."
+                        "answer": "In some situations. South Carolina permits certain insureds to stack UM/UIM coverage. Generally, a Class I insured (such as the named insured, spouse, or resident relative) may stack available coverage when an insured vehicle is involved, subject to S.C. Code § 38-77-160, including the limit based on the coverage carried on the vehicle involved in the accident. If none of the insured's vehicles is involved, coverage is generally limited to the coverage available on one vehicle and stacking is not permitted. Passengers and permissive users are class-two insureds and generally cannot stack, so an attorney's review of every policy matters. See /resources/south-carolina-um-uim-stacking/."
                     },
                     {
                         "question": "What are the minimum car insurance limits in South Carolina?",
@@ -24643,11 +24779,11 @@
                     },
                     {
                         "question": "Do I have to wear a helmet to recover after a motorcycle accident in South Carolina?",
-                        "answer": "South Carolina requires helmets only for riders and passengers under 21 (S.C. Code § 56-5-3660). There is no statute that automatically bars or reduces a claim simply because a rider 21 or older was not wearing a helmet. Any argument about helmet use would run through ordinary comparative fault, so not wearing one does not by itself defeat your claim."
+                        "answer": "South Carolina law requires motorcycle operators and passengers under age 21 to wear an approved helmet (S.C. Code § 56-5-3660). State law does not impose that helmet requirement on riders age 21 or older. Talk with an attorney about how the facts of your crash apply to your claim."
                     },
                     {
                         "question": "Can I still recover if I wasn't wearing a helmet in South Carolina?",
-                        "answer": "Yes, if you were 21 or older, since South Carolina requires a helmet only for riders under 21 (S.C. Code § 56-5-3660). A defendant might try to argue that not wearing a helmet contributed to head injuries, but that is a comparative-fault argument, not an automatic bar. Whether it reduces your recovery at all depends on the facts and the type of injury involved."
+                        "answer": "South Carolina law requires motorcycle operators and passengers under age 21 to wear an approved helmet (S.C. Code § 56-5-3660). State law does not impose that helmet requirement on riders age 21 or older. Talk with an attorney about how the facts of your crash apply to your claim."
                     },
                     {
                         "question": "Are motorcycle accident injuries treated differently in South Carolina claims?",
@@ -24739,7 +24875,7 @@
                     },
                     {
                         "question": "What damages can be recovered in a South Carolina wrongful death case?",
-                        "answer": "A South Carolina wrongful death claim can recover for the beneficiaries' losses, including lost financial support, lost companionship and guidance, and their grief and mental anguish, along with funeral and burial expenses. A separate survival action may recover for the losses the deceased personally suffered before death, such as their own pain and suffering. Together these address both the family's and the deceased's losses."
+                        "answer": "A South Carolina wrongful death claim can recover for the beneficiaries' losses, including lost financial support, lost companionship and guidance, and their grief and mental anguish, along with reasonable funeral expenses, provided they are not also recovered in the survival action (S.C. Code § 15-5-100). A separate survival action may recover for the losses the deceased personally suffered before death, such as their own pain and suffering. Together these address both the family's and the deceased's losses."
                     },
                     {
                         "question": "What is the difference between a wrongful death and a survival action in South Carolina?",
@@ -24747,7 +24883,7 @@
                     },
                     {
                         "question": "How is a wrongful death settlement distributed in South Carolina?",
-                        "answer": "Wrongful death proceeds pass to statutory beneficiaries in order set by law: first the spouse and children, then the parents, then other heirs. The personal representative brings the case, but the recovery belongs to the beneficiaries rather than the estate's general creditors. Because distribution and any required court approval can be complex, families benefit from legal guidance."
+                        "answer": "Wrongful death proceeds pass to statutory beneficiaries in order set by law: first the spouse and children, then the parents, then other heirs. The personal representative brings the case, but wrongful death proceeds generally are not assets of the deceased person's estate available to satisfy the deceased person's general creditors (S.C. Code §§ 15-51-20, 15-51-40). Because distribution and any required court approval can be complex, families benefit from legal guidance."
                     },
                     {
                         "question": "How long do we have to file a wrongful death claim in South Carolina?",
@@ -24981,13 +25117,13 @@
             "type": "resource",
             "status": "publish",
             "title": "Stacking UM and UIM Coverage in South Carolina",
-            "excerpt": "South Carolina lets drivers stack uninsured (UM) and underinsured (UIM) coverage across multiple vehicles or policies — potentially multiplying what you can recover.",
+            "excerpt": "South Carolina lets certain insureds stack uninsured (UM) and underinsured (UIM) coverage in some situations, subject to the limits in S.C. Code § 38-77-160 — potentially increasing what you can recover.",
             "meta": {
                 "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "Can you stack UM and UIM coverage in South Carolina?",
-                        "answer": "Yes. South Carolina allows drivers to stack uninsured (UM) and underinsured (UIM) motorist coverage in many situations, meaning you may combine coverage limits from more than one vehicle or policy to increase what you can recover. Whether and how you can stack depends on your specific policies, so each policy must be reviewed carefully."
+                        "answer": "In some situations. South Carolina permits certain insureds to stack UM/UIM coverage. Generally, a Class I insured (such as the named insured, spouse, or resident relative) may stack available coverage when an insured vehicle is involved, subject to S.C. Code § 38-77-160, including the limit based on the coverage carried on the vehicle involved in the accident. If none of the insured's vehicles is involved, coverage is generally limited to the coverage available on one vehicle and stacking is not permitted. Whether and how you can stack depends on your specific policies, so each policy must be reviewed carefully."
                     },
                     {
                         "question": "What is the difference between UM and UIM coverage?",
@@ -24995,7 +25131,7 @@
                     },
                     {
                         "question": "How does stacking increase my recovery in South Carolina?",
-                        "answer": "Stacking combines coverage limits from multiple vehicles or policies into a larger pool. For example, if you have $100,000 in UM coverage on each of two household vehicles, stacking may let you combine them toward your losses rather than being capped at a single limit. This can multiply the money available when the at-fault driver has little or no insurance."
+                        "answer": "Stacking combines coverage limits from multiple vehicles or policies into a larger pool. For example, if you have $100,000 in UM coverage on each of two household vehicles and are hurt in one of them, stacking may let you add the other vehicle's coverage toward your losses rather than being capped at a single limit, subject to the limit in S.C. Code § 38-77-160 based on the coverage on the vehicle involved. If none of your vehicles is involved, stacking generally is not permitted. This can increase the money available when the at-fault driver has little or no insurance."
                     },
                     {
                         "question": "How do I know if I can stack my coverage?",
@@ -25003,8 +25139,8 @@
                     }
                 ],
                 "_roden_jurisdiction": "sc",
-                "_roden_key_takeaways": "South Carolina allows injured drivers to stack uninsured motorist (UM) and underinsured motorist (UIM) coverage, meaning you may combine the coverage limits from more than one vehicle or policy to increase what you can recover after a crash with an uninsured or underinsured driver. Stacking can dramatically raise the money available when the at-fault driver carries little or no insurance. Whether and how you can stack depends on your specific policies and how the coverage was purchased, so the policies must be reviewed carefully. Because insurers do not volunteer stacking, having an attorney examine every available policy is often the difference between a capped payout and full compensation.",
-                "_roden_meta_description": "South Carolina lets drivers stack uninsured (UM) and underinsured (UIM) coverage across multiple vehicles or policies — potentially multiplying what you can recover.",
+                "_roden_key_takeaways": "South Carolina permits certain insureds to stack UM/UIM coverage. Generally, a Class I insured (such as the named insured, spouse, or resident relative) may stack available coverage when an insured vehicle is involved, subject to S.C. Code § 38-77-160, including the limit based on the coverage carried on the vehicle involved in the accident. If none of the insured's vehicles is involved, coverage is generally limited to the coverage available on one vehicle and stacking is not permitted. Where it applies, stacking can raise the money available when the at-fault driver carries little or no insurance. Whether and how you can stack depends on your specific policies and how the coverage was purchased, so the policies must be reviewed carefully. Because insurers do not volunteer stacking, having an attorney examine every available policy is often the difference between a capped payout and full compensation.",
+                "_roden_meta_description": "South Carolina lets certain insureds stack uninsured (UM) and underinsured (UIM) coverage in some situations, subject to the limits in S.C. Code § 38-77-160 — potentially increasing what you can recover.",
                 "_roden_translation_es": "/es/resources/south-carolina-um-uim-stacking/"
             }
         },
@@ -25580,7 +25716,7 @@
                     },
                     {
                         "question": "What if the driver who hit me had no insurance or not enough?",
-                        "answer": "South Carolina requires uninsured motorist (UM) coverage and allows stacking of UM and underinsured (UIM) coverage in many situations. Stacking can significantly increase the coverage available when the at-fault driver is uninsured or carries only a minimum policy."
+                        "answer": "South Carolina requires uninsured motorist (UM) coverage and allows certain insureds to stack UM and underinsured (UIM) coverage in some situations, subject to the limits in S.C. Code § 38-77-160. Where it applies, stacking can significantly increase the coverage available when the at-fault driver is uninsured or carries only a minimum policy."
                     },
                     {
                         "question": "How much does a South Carolina car accident lawyer cost?",
@@ -25592,7 +25728,7 @@
                     }
                 ],
                 "_roden_jurisdiction": "SC",
-                "_roden_key_takeaways": "South Carolina is an at-fault (tort) state: the driver who caused the crash — and their insurer — pays for the injuries. An injured driver generally has 3 years from the date of the crash to file a lawsuit under S.C. Code § 15-3-530. South Carolina follows a modified comparative negligence rule, so you can recover as long as you were less than 51% at fault, with your award reduced by your share of blame. South Carolina requires at least 25/50/25 in liability coverage and mandatory uninsured motorist (UM) coverage (S.C. Code § 38-77-140 and following), and it allows stacking of UM/UIM coverage when the at-fault driver is uninsured or underinsured. Roden Law has offices in Charleston, North Charleston, Columbia, and Myrtle Beach and handles car accident claims statewide on a contingency fee — no fees unless we win.",
+                "_roden_key_takeaways": "South Carolina is an at-fault (tort) state: the driver who caused the crash — and their insurer — pays for the injuries. An injured driver generally has 3 years from the date of the crash to file a lawsuit under S.C. Code § 15-3-530. South Carolina follows a modified comparative negligence rule, so you can recover as long as you were less than 51% at fault, with your award reduced by your share of blame. South Carolina requires at least 25/50/25 in liability coverage and mandatory uninsured motorist (UM) coverage (S.C. Code § 38-77-140 and following), and in some situations, subject to the limits in S.C. Code § 38-77-160, it allows stacking of UM/UIM coverage when the at-fault driver is uninsured or underinsured. Roden Law has offices in Charleston, North Charleston, Columbia, and Myrtle Beach and handles car accident claims statewide on a contingency fee — no fees unless we win.",
                 "_roden_meta_description": "Injured in a car accident in South Carolina? Roden Law's South Carolina car accident lawyers help crash victims recover compensation statewide, from Charleston to Columbia to Myrtle Beach. Free case review, no fees unless we win.",
                 "_roden_translation_es": "/es/south-carolina-car-accident-lawyers/"
             }
@@ -25610,7 +25746,7 @@
                     },
                     {
                         "question": "Will not wearing a helmet hurt my South Carolina motorcycle accident claim?",
-                        "answer": "South Carolina only requires riders and passengers under 21 to wear a helmet, so riders 21 and older are not breaking the law by going without one. Helmet use does not automatically decide your case, but insurers may still argue that a rider's choices added to the severity of the injuries under the comparative negligence rule, so it is important to have an attorney evaluate how it applies to your situation."
+                        "answer": "South Carolina law requires motorcycle operators and passengers under age 21 to wear an approved helmet (S.C. Code § 56-5-3660). State law does not impose that helmet requirement on riders age 21 or older. Talk with an attorney about how the facts of your crash apply to your claim."
                     },
                     {
                         "question": "Why do insurers treat motorcycle claims differently?",
@@ -25630,7 +25766,7 @@
                     }
                 ],
                 "_roden_jurisdiction": "SC",
-                "_roden_key_takeaways": "If you were injured in a motorcycle accident anywhere in South Carolina, you generally have 3 years from the crash to file under S.C. Code § 15-3-530, and you can still recover as long as you were less than 51% at fault. Motorcyclists face a built-in disadvantage: insurers and juries often assume the rider was reckless, even when the other driver caused the crash. South Carolina requires only riders and passengers under 21 to wear a helmet, and insurers may try to use a rider's choices against them. Roden Law has offices in Charleston, North Charleston, Columbia, and Myrtle Beach and represents motorcycle crash victims across the state on a contingency fee — no fees unless we win.",
+                "_roden_key_takeaways": "If you were injured in a motorcycle accident anywhere in South Carolina, you generally have 3 years from the crash to file under S.C. Code § 15-3-530, and you can still recover as long as you were less than 51% at fault. Motorcyclists face a built-in disadvantage: insurers and juries often assume the rider was reckless, even when the other driver caused the crash. South Carolina requires only motorcycle operators and passengers under 21 to wear a helmet (S.C. Code § 56-5-3660). Roden Law has offices in Charleston, North Charleston, Columbia, and Myrtle Beach and represents motorcycle crash victims across the state on a contingency fee — no fees unless we win.",
                 "_roden_meta_description": "Injured in a motorcycle accident in South Carolina? Roden Law's South Carolina motorcycle accident lawyers fight insurer bias and recover maximum compensation statewide. Free review — no fee unless we win.",
                 "_roden_translation_es": "/es/south-carolina-motorcycle-accident-lawyer/"
             }
@@ -25652,7 +25788,7 @@
                     },
                     {
                         "question": "What compensation can I recover in a South Carolina injury case?",
-                        "answer": "You may recover economic damages (medical bills, future care, lost wages, and lost earning capacity), non-economic damages (pain and suffering, emotional distress, and loss of enjoyment of life), and, in cases of gross negligence, punitive damages. When the at-fault party is underinsured, you may also be able to stack UM/UIM coverage."
+                        "answer": "You may recover economic damages (medical bills, future care, lost wages, and lost earning capacity), non-economic damages (pain and suffering, emotional distress, and loss of enjoyment of life), and, in cases of gross negligence, punitive damages. When the at-fault party is underinsured, you may also be able to stack UM/UIM coverage in some situations, subject to the limits in S.C. Code § 38-77-160."
                     },
                     {
                         "question": "What types of cases does Roden Law handle in South Carolina?",
@@ -25668,7 +25804,7 @@
                     }
                 ],
                 "_roden_jurisdiction": "SC",
-                "_roden_key_takeaways": "If you were injured by someone else's negligence anywhere in South Carolina, you generally have 3 years from the date of injury to file a claim under S.C. Code § 15-3-530, and you can recover as long as you were less than 51% at fault. South Carolina personal injury law covers car, truck, and motorcycle crashes, workplace injuries, unsafe premises, defective products, and wrongful death. You may be able to recover medical bills, lost wages, pain and suffering, and — in serious cases — punitive damages, and you can often stack uninsured/underinsured motorist coverage when the at-fault party is underinsured. Roden Law has offices in Charleston, North Charleston, Columbia, and Myrtle Beach and represents injured people across the entire state on a contingency fee — no fees unless we win.",
+                "_roden_key_takeaways": "If you were injured by someone else's negligence anywhere in South Carolina, you generally have 3 years from the date of injury to file a claim under S.C. Code § 15-3-530, and you can recover as long as you were less than 51% at fault. South Carolina personal injury law covers car, truck, and motorcycle crashes, workplace injuries, unsafe premises, defective products, and wrongful death. You may be able to recover medical bills, lost wages, pain and suffering, and — in serious cases — punitive damages, and in some situations, subject to the limits in S.C. Code § 38-77-160, you may be able to stack uninsured/underinsured motorist coverage when the at-fault party is underinsured. Roden Law has offices in Charleston, North Charleston, Columbia, and Myrtle Beach and represents injured people across the entire state on a contingency fee — no fees unless we win.",
                 "_roden_meta_description": "Injured by someone else's negligence in South Carolina? Roden Law's South Carolina personal injury lawyers recover maximum compensation statewide — car, truck, motorcycle, workplace, and more. Free review, no fee unless we win.",
                 "_roden_translation_es": "/es/south-carolina-personal-injury-lawyer/"
             }
@@ -25766,7 +25902,7 @@
                     },
                     {
                         "question": "What compensation is available in a South Carolina wrongful death case?",
-                        "answer": "Depending on the facts, recovery can include the loss of the loved one's financial support, companionship, guidance, and society, the family's grief and mental anguish, and funeral and burial expenses. A separate survival action, brought by the estate, can recover for the deceased person's own pain and medical expenses before death."
+                        "answer": "Depending on the facts, recovery can include the loss of the loved one's financial support, companionship, guidance, and society, the family's grief and mental anguish, and reasonable funeral expenses, provided they are not also recovered in the survival action (S.C. Code § 15-5-100). A separate survival action, brought by the estate, can recover for the deceased person's own pain and medical expenses before death."
                     },
                     {
                         "question": "What is the difference between a wrongful death claim and a survival action?",
@@ -25782,7 +25918,7 @@
                     }
                 ],
                 "_roden_jurisdiction": "SC",
-                "_roden_key_takeaways": "A South Carolina wrongful death claim must be brought by the personal representative of the deceased person's estate, not by family members directly, under S.C. Code § 15-51-10 and following. The claim must generally be filed within 3 years of the date of death. South Carolina law allows the estate to recover for the surviving spouse and children (and, in some cases, parents), including for the loss of the loved one's support, companionship, and guidance, as well as funeral expenses. A separate survival action can recover for the deceased person's own pain before death. Roden Law has offices in Charleston, North Charleston, Columbia, and Myrtle Beach and handles these sensitive cases statewide on a contingency fee — no fees unless we win.",
+                "_roden_key_takeaways": "A South Carolina wrongful death claim must be brought by the personal representative of the deceased person's estate, not by family members directly, under S.C. Code § 15-51-10 and following. The claim must generally be filed within 3 years of the date of death. South Carolina law allows the estate to recover for the surviving spouse and children (and, in some cases, parents), including for the loss of the loved one's support, companionship, and guidance, as well as reasonable funeral expenses, provided they are not also recovered in the survival action (S.C. Code § 15-5-100). A separate survival action can recover for the deceased person's own pain before death. Roden Law has offices in Charleston, North Charleston, Columbia, and Myrtle Beach and handles these sensitive cases statewide on a contingency fee — no fees unless we win.",
                 "_roden_meta_description": "Lost a loved one to someone else's negligence in South Carolina? Roden Law's South Carolina wrongful death lawyers help families pursue accountability and compensation statewide. Free, compassionate case review.",
                 "_roden_translation_es": "/es/south-carolina-wrongful-death-lawyer/"
             }
@@ -26511,7 +26647,7 @@
                 ],
                 "_roden_jurisdiction": "both",
                 "_roden_sol_ga": "O.C.G.A. § 9-3-33",
-                "_roden_sol_sc": "S.C. Code § 15-3-530"
+                "_roden_sol_sc": "Medical malpractice deadlines apply (S.C. Code § 15-3-545)"
             }
         },
         "/wrongful-death-lawyers/nursing-home-wrongful-death/": {

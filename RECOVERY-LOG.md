@@ -3154,3 +3154,14 @@ resource drafts under /resources/, reviewed by Tyler Love (3730) on 2026-09-30
 DUI date ("on or after May 14, 2025", SB 121). Built by bin/build-ga-resource-seeds.py; read back OK.
 Not published. Post 1874 (/blog/georgia-car-seat-law-overview/) 301 decision waits on publish plus a
 short SC paragraph.
+
+## 2026-09-30 — Gillin (SC) and Tyler Love (GA) approvals applied to live pages
+
+94 content edits on 34 posts + 4 meta edits (data/facts/approvals-batch-2026-09-30.json,
+approvals-meta-2026-09-30.json; plan remediation-2026-09-30-approvals.md). Classes: GA seat-belt rule
+limited to suits commenced on/after 2025-04-21 (1759 had stated the opposite); 1874 physician exception;
+SC stacking to Gillin's § 38-77-160 wording; SC malpractice-death deadline to § 15-3-545; funeral and
+creditor wording; nursing-home caps; motorcycle helmet lines cut to § 56-5-3660. Owner ran both applies.
+Backups docs/backups/approvals-*-2026-09-30.json. Caches flushed; JSON-LD guard PASS; content/meta.json
+regenerated. Review stamps left unchanged (targeted corrections). Tools: bin/apply-meta-batch.php +
+bin/build-meta-batch.py (generic meta edits).
