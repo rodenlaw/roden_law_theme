@@ -1,0 +1,279 @@
+[
+ {
+  "id": "PB-WC1",
+  "post_id": 3610,
+  "field": "faq0",
+  "from": "You then have one year from the date of injury to file a formal claim with the State Board of Workers' Compensation (O.C.G.A. § 34-9-82).",
+  "to": "You then have one year from the date of injury, one year from the last remedial treatment your employer furnished, or two years from the last weekly benefit payment to file a formal claim with the State Board of Workers' Compensation (O.C.G.A. § 34-9-82).",
+  "class": "apply",
+  "authority": [
+   "GA 34-9-82"
+  ],
+  "note": "Signed claim: one year from injury, or one year from last employer-furnished remedial treatment, or two years from last weekly benefit payment. The bare 'one year from the date of injury' drops two prongs (Savannah WC E1 class). Also in FAQPage JSON-LD."
+ },
+ {
+  "id": "PB-WC2",
+  "post_id": 3610,
+  "field": "faq0",
+  "from": " For occupational diseases, the one-year period begins when you knew or should have known the condition was work-related.",
+  "to": "",
+  "class": "ga",
+  "authority": [],
+  "note": "Occupational-disease accrual (O.C.G.A. § 34-9-281, which also has an outer limit after last exposure) is not in the GA pack. Clean cut unless the GA reviewer signs § 34-9-281 and the sentence gains its outer limit."
+ },
+ {
+  "id": "PB-WC3",
+  "post_id": 3610,
+  "field": "faq1",
+  "from": " For occupational diseases, the two-year period begins from the date of disability or the date you were informed of the condition by a physician.",
+  "to": "",
+  "class": "gillin",
+  "authority": [],
+  "note": "Signed SC 42-15-40 says only 'two years from the date of the accident'. The occupational-disease trigger is not in the pack. Clean cut unless Gillin confirms the § 42-15-40 occupational-disease wording and the pack is amended."
+ },
+ {
+  "id": "PB-WD1",
+  "post_id": 3609,
+  "field": "faq2",
+  "from": "In Georgia, the statute of limitations for wrongful death is 2 years from the date of death (O.C.G.A. § 9-3-33). In South Carolina, you have 3 years from the date of death (S.C. Code § 15-3-530).",
+  "to": "In Georgia, a wrongful death suit must be filed within 2 years (O.C.G.A. § 9-3-33). In South Carolina, the deadline is generally 3 years (S.C. Code § 15-3-530).",
+  "class": "apply",
+  "authority": [
+   "GA 9-3-33",
+   "GA 51-4-1",
+   "SC 15-3-530"
+  ],
+  "note": "Signed GA 51-4-1: the two-year wrongful death deadline is § 9-3-33. Signed SC 15-3-530 carries no death-based start date; house wording 'generally 3 years' until the § 15-3-530(6) amendment is signed (Charleston WD sweep 2026-09-28). Also in FAQPage JSON-LD."
+ },
+ {
+  "id": "PB-WD2",
+  "post_id": 3609,
+  "field": "faq4",
+  "from": "Georgia uses the \"full value of the life\" standard (O.C.G.A. § 51-4-2)",
+  "to": "Georgia uses the \"full value of the life\" standard (O.C.G.A. § 51-4-1)",
+  "class": "apply",
+  "authority": [
+   "GA 51-4-1"
+  ],
+  "note": "Signed GA 51-4-1 defines 'full value of the life of the decedent'. § 51-4-2 is not in the pack."
+ },
+ {
+  "id": "PB-WD3",
+  "post_id": 3609,
+  "field": "faq0",
+  "from": "When a surviving spouse files and there are children, the spouse must share at least one-third of the recovery equally among the children.",
+  "to": "When a surviving spouse files and there are children, the spouse shares the recovery equally with them, but the spouse's share is never less than one-third.",
+  "class": "ga",
+  "authority": [],
+  "note": "As published the sentence inverts § 51-4-2(d)(1): the one-third is the spouse's minimum share, not an amount the spouse must hand to the children. § 51-4-2 is not in the GA pack (FAQ[0] cites it twice for standing too). GA reviewer: sign § 51-4-2 and apply this, or cut the sentence (to: \"\")."
+ },
+ {
+  "id": "PB-WD4",
+  "post_id": 3609,
+  "field": "faq8",
+  "from": "South Carolina's threshold is 51%.",
+  "to": "South Carolina allows recovery as long as the deceased was 50% or less at fault (Nelson v. Concrete Supply Co.).",
+  "class": "apply",
+  "authority": [
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "'Threshold is 51%' is ambiguous (bar or floor). Nelson: recovery at 50% or less; site's house wording. In WD the fault is the decedent's (§ 15-51-10 derivative claim)."
+ },
+ {
+  "id": "PB-MM1",
+  "post_id": 3608,
+  "field": "faq1",
+  "from": "with an absolute 5-year statute of repose from the date of the negligent act. South Carolina allows 3 years from the date of the act or 3 years from discovery, with a 6-year statute of repose (S.C. Code § 15-3-545).",
+  "to": "with a 5-year statute of repose from the date of the negligent act. South Carolina allows 3 years from the treatment, omission or operation, or from when the injury was or should have been discovered, with a 6-year statute of repose (S.C. Code § 15-3-545).",
+  "class": "apply",
+  "authority": [
+   "GA 9-3-71",
+   "SC 15-3-545"
+  ],
+  "note": "'Absolute' contradicts the FAQ's own next sentence and the signed GA 9-3-71 claim (foreign objects § 9-3-72, minors § 9-3-73 fall outside it). SC: signed claim runs from 'the treatment, omission or operation', not 'the date of the act'. Also in FAQPage JSON-LD."
+ },
+ {
+  "id": "PB-MM2",
+  "post_id": 3608,
+  "field": "faq2",
+  "from": "South Carolina has a similar requirement under S.C. Code § 15-79-125, requiring an expert opinion before filing.",
+  "to": "South Carolina requires a qualified expert's affidavit, filed with a Notice of Intent to File Suit before the lawsuit (S.C. Code §§ 15-36-100, 15-79-125).",
+  "class": "apply",
+  "authority": [
+   "SC 15-36-100",
+   "SC 15-79-125"
+  ],
+  "note": "The affidavit requirement is § 15-36-100; § 15-79-125 is the Notice of Intent it is filed with. The GA half cites O.C.G.A. § 9-11-9.1, which is not in the GA pack (ga, unchanged)."
+ },
+ {
+  "id": "PB-MM3",
+  "post_id": 3608,
+  "field": "faq5",
+  "from": "sets a base of $350,000 against a single provider and $1.05 million where more than one is liable, adjusted annually for inflation.",
+  "to": "sets a base of $350,000 per provider or institution and $1.05 million in total, adjusted annually for inflation ($596,001 and $1,788,002 in 2026).",
+  "class": "apply",
+  "authority": [
+   "SC 15-32-220"
+  ],
+  "note": "Signed claim: $350,000 per provider or institution and $1,050,000 aggregate per claimant, CPI-indexed; 2026: $596,001 / $1,788,002. The aggregate is per claimant, not 'where more than one is liable'. The punitive sentence in the same answer already carries the 2026 figure. Georgia sentence rests on pending Nestlehutt (ga, unchanged)."
+ },
+ {
+  "id": "PB-BI1",
+  "post_id": 3612,
+  "field": "faq1",
+  "from": " However, in cases where the full extent of a brain injury is not immediately apparent, the discovery rule may apply — meaning the clock starts when you knew or should have known about the injury.",
+  "to": " In Georgia, the clock runs from the date of injury even when the full extent of a brain injury is not yet apparent.",
+  "class": "apply",
+  "authority": [
+   "GA 9-3-33"
+  ],
+  "note": "Signed GA 9-3-33 runs from the date of injury; there is no discovery rule for a traumatic injury in the pack. The state-neutral 'discovery rule may apply' is wrong for Georgia. South Carolina's § 15-3-535 discovery provision is not in the SC pack (gillin) — the replacement says nothing about South Carolina's start date. Also in FAQPage JSON-LD."
+ },
+ {
+  "id": "PB-PED1",
+  "post_id": 3621,
+  "field": "faq1",
+  "from": "As long as you are less than 50% at fault in Georgia or less than 51% in South Carolina, you can still recover damages, reduced by your percentage of fault.",
+  "to": "As long as you are less than 50% at fault in Georgia (O.C.G.A. § 51-12-33) or 50% or less at fault in South Carolina (Nelson v. Concrete Supply Co.), you can still recover damages, reduced by your percentage of fault.",
+  "class": "apply",
+  "authority": [
+   "GA 51-12-33",
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "House wording for the SC bar (Nelson: recovery at 50% or less). The O.C.G.A. § 40-6-93 cite earlier in this answer is not in the GA pack (ga, unchanged). Also in FAQPage JSON-LD."
+ },
+ {
+  "id": "PB-PED2",
+  "post_id": 3621,
+  "field": "faq3",
+  "from": "Georgia and South Carolina both require UM coverage as part of auto insurance policies unless explicitly rejected in writing.",
+  "to": "South Carolina requires uninsured motorist coverage on every auto policy (S.C. Code § 38-77-150), and Georgia insurers must offer it (O.C.G.A. § 33-7-11).",
+  "class": "apply",
+  "authority": [
+   "SC 38-77-150",
+   "GA 33-7-11"
+  ],
+  "note": "False for South Carolina: UM is mandatory there and cannot be rejected. Georgia: must be offered (the written-rejection mechanics are not in the pack). Also in FAQPage JSON-LD."
+ },
+ {
+  "id": "PB-PED3",
+  "post_id": 3621,
+  "field": "faq0",
+  "from": "For wrongful death claims, the same deadlines apply from the date of death.",
+  "to": "For wrongful death claims, the same deadlines generally apply.",
+  "class": "apply",
+  "authority": [
+   "GA 51-4-1",
+   "SC 15-3-530"
+  ],
+  "note": "Signed GA 51-4-1 puts the WD deadline at § 9-3-33; neither signed claim carries a death-based start date (SC house wording 'generally'; § 15-3-530(6) amendment is a Gillin item)."
+ },
+ {
+  "id": "PB-PED4",
+  "post_id": 3621,
+  "field": "faq8",
+  "from": "The statute of limitations for minors is tolled (paused) until the child turns 18, but we recommend",
+  "to": "Special deadline rules can apply to minors, but we recommend",
+  "class": "apply",
+  "authority": [],
+  "note": "Clean cut. 'Tolled until 18' overstates South Carolina (S.C. Code § 15-3-40 limits the extension to one year after the disability ends) and neither minor-tolling statute (§ 15-3-40, O.C.G.A. § 9-3-90) is in a pack. Restating the rule is a gillin / ga-reviewer item. Also in FAQPage JSON-LD."
+ },
+ {
+  "id": "PB-F1",
+  "post_id": 4692,
+  "field": "faq2",
+  "from": "At 50% (GA) or 51% (SC) plaintiff fault, recovery is barred entirely.",
+  "to": "At 50% or more fault in Georgia, or more than 50% in South Carolina, recovery is barred entirely.",
+  "class": "apply",
+  "authority": [
+   "GA 51-12-33",
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "House wording for both bars; '51% (SC)' leaves 50.5% unaddressed. Same answer already says '50% or less' for SC."
+ },
+ {
+  "id": "PB-F2",
+  "post_id": 4578,
+  "field": "content",
+  "from": "South Carolina allows recovery if you are less than 51% at fault.",
+  "to": "South Carolina allows recovery if you are 50% or less at fault (Nelson v. Concrete Supply Co.).",
+  "class": "apply",
+  "authority": [
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "House wording for the SC bar."
+ },
+ {
+  "id": "PB-F3",
+  "post_id": 3620,
+  "field": "faq7",
+  "from": "In South Carolina, the threshold is 51%.",
+  "to": "In South Carolina, you can recover if you are 50% or less at fault (Nelson v. Concrete Supply Co.).",
+  "class": "apply",
+  "authority": [
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "'Threshold is 51%' reads as either a bar or a floor. FAQ[2] on the same page ('threshold … 51% … meaning you can recover damages if you are 50% or less at fault') explains itself and is left alone."
+ },
+ {
+  "id": "PB-F4",
+  "post_id": 3613,
+  "field": "faq5",
+  "from": "South Carolina's threshold is 51%.",
+  "to": "South Carolina allows recovery at 50% or less fault (Nelson v. Concrete Supply Co.).",
+  "class": "apply",
+  "authority": [
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "House wording for the SC bar."
+ },
+ {
+  "id": "PB-F5",
+  "post_id": 3607,
+  "field": "faq3",
+  "from": "South Carolina allows recovery if you are less than 51% at fault.",
+  "to": "South Carolina allows recovery if you are 50% or less at fault (Nelson v. Concrete Supply Co.).",
+  "class": "apply",
+  "authority": [
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "House wording for the SC bar."
+ },
+ {
+  "id": "PB-F6",
+  "post_id": 3604,
+  "field": "faq1",
+  "from": "South Carolina's threshold is 51%.",
+  "to": "South Carolina allows recovery at 50% or less fault (Nelson v. Concrete Supply Co.).",
+  "class": "apply",
+  "authority": [
+   "Nelson v. Concrete Supply Co."
+  ],
+  "note": "House wording for the SC bar."
+ },
+ {
+  "id": "PB-BK1",
+  "post_id": 4087,
+  "field": "faq1",
+  "from": "Georgia requires drivers to pass bicycles at a safe distance, generally interpreted as at least 3 feet. South Carolina (S.C. Code § 56-5-3435) similarly requires a safe passing distance.",
+  "to": "Georgia requires drivers to leave at least 3 feet when passing a bicycle (O.C.G.A. § 40-6-56). South Carolina requires a safe operating distance but names no distance (S.C. Code § 56-5-3435).",
+  "class": "apply",
+  "authority": [
+   "GA 40-6-56",
+   "SC 56-5-3435"
+  ],
+  "note": "Three feet is the statute's express rule, not an interpretation. 'Similarly' implied SC matches it; SC names no distance. Also in FAQPage JSON-LD."
+ },
+ {
+  "id": "PB-BK2",
+  "post_id": 4087,
+  "field": "content",
+  "from": "requires drivers to maintain a safe distance when passing a bicycle — generally interpreted as at least 3 feet of clearance",
+  "to": "requires drivers to leave at least 3 feet of clearance when passing a bicycle",
+  "class": "apply",
+  "authority": [
+   "GA 40-6-56"
+  ],
+  "note": "Same class in the body list item. _roden_why_hire already states it correctly ('at least 3 feet')."
+ }
+]

@@ -2254,6 +2254,57 @@ on".
 and the chrome blocks. Writing real takeaways per pillar would cut it further before new
 resource pages.
 
+### P3 step 2: hand-written pillar Key Takeaways; 29 live pillar errors fixed — 2026-09-29
+
+**Owner, 2026-09-29:** "do the key takeaways now".
+
+- **Takeaways:** all 24 English pillars had the generated paragraph (`roden_pa_key_takeaways_text`).
+  - It was ~86% identical on average and wrong in places: "injured in a wrongful death"; the
+    med-mal pillar given the tort deadline.
+  - Hand-written, practice-specific replacements use signed SC/GA authorities only. Max
+    pairwise overlap 19.8%.
+  - Legal sweep (`data/facts/remediation-2026-09-29-pillar-takeaways.md`): 18 PASS, 6 changed.
+    One was an error: the med-mal outer limits were written as absolute, but foreign objects
+    and minors are exceptions.
+  - Installed with `bin/set-pillar-takeaways.php` (writes only where empty; read back).
+    Backup: `docs/backups/pillar-takeaways-2026-09-29.json`.
+- **Live pillar errors the writer found, confirmed by the sweep:**
+  - **20 data fixes on 12 pillars** (`data/facts/pillar-conflicts-batch-2026-09-29.json`,
+    batch applier), 17 of them FAQ answers, so the FAQPage schema changed too:
+    - pedestrian: "both states require UM unless rejected in writing" (SC UM is mandatory,
+      § 38-77-150);
+    - wrongful death: "3 years from the date of death" (SC) and "full value" cited to
+      § 51-4-2 (it is § 51-4-1);
+    - med mal: cap figures;
+    - "SC threshold 51%" wording on several pillars;
+    - the brain-injury discovery claim.
+  - **3 meta fixes** (`bin/fix-pillar-meta-2026-09-29.php`):
+    - M-WC1: the WC "comparative-fault rules" line became "benefit rules";
+    - M-WC2: WC meta description "generally allows 1 year";
+    - M-MM1: med-mal expert affidavit cites §§ 15-36-100, 15-79-125.
+  - **#201 template:**
+    - T-WC1/2/3: the WC pillar lead, GA card and sidebar now print the full § 34-9-82 rule.
+    - T-WC4: filing-venue grammar.
+    - T-MM1: § 15-36-100 added to the two-state med-mal step.
+    - T-WD3: wrongful-death comparison intro. Spanish added; .mo 639.
+- **Measured live:**
+
+  | | Template share | Closest sibling | Pillars ≥50% shared |
+  |---|---|---|---|
+  | Original | 37% | 43% | 5 |
+  | After #200 | 28% | 35% | 1 |
+  | Now | **23%** | **31%** | **0** |
+
+- **Verified:** JSON-LD guard PASS, all pillar JSON-LD parses. Fresh sweep: 0 findings.
+  meta.json regenerated.
+
+**Open** (in the remediation .md):
+- **Gillin:** T-WD1, the WD comparison "3 years from the date of death".
+- **GA reviewer:** T-WD2 and M-WD1 (§ 51-4-2), PB-WD3 (the one-third rule is inverted),
+  M-MM2 (§ 9-11-9.1 "immediate dismissal"), M-PED1 (§ 40-6-91).
+- **Spanish pillar twins** were not swept.
+- **Engine gap:** it caught none of the 23 wrong strings; the .md proposes 5 rules.
+
 ### Law pack: #62 superseded by #67, rebuilt on the signed SC pack — 2026-09-26
 
 **Owner, 2026-09-26:** "what do we need to do with #62? Those are signed", then "yes".
