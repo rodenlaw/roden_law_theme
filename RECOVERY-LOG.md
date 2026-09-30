@@ -3145,3 +3145,12 @@ Caches flushed; JSON-LD guard PASS; content/meta.json regenerated. Staged, not a
 bin/fix-pillar-meta-2026-09-30.php (4 apply-class meta fixes, dry run clean).
 
 Meta patcher applied the same day (owner ran it): 4 edits in 3 fields; backup docs/backups/pillar-meta-2026-09-30.json; caches flushed; content/meta.json regenerated.
+
+## 2026-09-30 — Three Georgia resource guides created as drafts
+
+Car seat laws (6329), uninsured motorist coverage (6330), wrongful death settlement value (6331), all
+resource drafts under /resources/, reviewed by Tyler Love (3730) on 2026-09-30
+(data/facts/attorney-approvals-2026-09-30.md). Owner approved the "full value" wording as written and the
+DUI date ("on or after May 14, 2025", SB 121). Built by bin/build-ga-resource-seeds.py; read back OK.
+Not published. Post 1874 (/blog/georgia-car-seat-law-overview/) 301 decision waits on publish plus a
+short SC paragraph.
