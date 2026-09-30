@@ -372,7 +372,7 @@ Filing a personal injury case in the Myrtle Beach market means filing in **Horry
 
 The Grand Strand draws roughly 17–20 million visitors a year, and that seasonal surge reshapes the local crash picture: **US-17 Business and Ocean Boulevard** see heavy pedestrian and golf-cart traffic, while drivers choose between the slower, congested **US-501** and the faster but higher-severity **SC-22 Conway Bypass** to reach the beach. Golf carts add a wrinkle unique to coastal SC — under **S.C. Code § 56-2-100**, a permitted cart may only operate in daylight, within four miles of the owner's address, on roads posted 35 mph or less, by a licensed driver. Crashes outside those limits open the door to negligence-per-se and rental-property claims. Severe-injury victims are routed to **Grand Strand Medical Center** in Myrtle Beach or stabilized at **Tidelands Waccamaw** in Murrells Inlet.
 
-South Carolina applies a **three-year statute of limitations under S.C. Code § 15-3-530**, a **51% modified-comparative-fault bar**, and allows stacking of UM/UIM coverage — often the largest recovery source when an out-of-state tourist is hit by a minimum-limits driver.
+South Carolina applies a **three-year statute of limitations under S.C. Code § 15-3-530**, a **51% modified-comparative-fault bar**, and lets certain insureds stack UM/UIM coverage, subject to the limits in S.C. Code § 38-77-160 — which can matter when a minimum-limits driver causes the crash.
 EOT
 ,
                 'local_context_es' => <<<'EOT'
@@ -380,7 +380,7 @@ Presentar un caso de lesiones personales en el mercado de Myrtle Beach significa
 
 El Grand Strand atrae aproximadamente de 17 a 20 millones de visitantes al año, y ese aumento estacional transforma el panorama local de accidentes: **US-17 Business y Ocean Boulevard** registran un intenso tráfico de peatones y carritos de golf, mientras que los conductores eligen entre la **US-501**, más lenta y congestionada, y la **SC-22 Conway Bypass**, más rápida pero con choques de mayor gravedad, para llegar a la playa. Los carritos de golf añaden una particularidad propia de la costa de Carolina del Sur: conforme a **S.C. Code § 56-2-100**, un carrito con permiso solo puede circular durante el día, dentro de un radio de cuatro millas del domicilio del propietario, en vías con límite de velocidad de 35 mph o menos y conducido por una persona con licencia. Los choques que ocurren fuera de esos límites abren la puerta a reclamos por negligencia per se y contra propiedades de alquiler. Las víctimas con lesiones graves son trasladadas al **Grand Strand Medical Center** en Myrtle Beach o estabilizadas en **Tidelands Waccamaw** en Murrells Inlet.
 
-Carolina del Sur aplica un **plazo de prescripción de tres años conforme a S.C. Code § 15-3-530**, una **barrera de culpa comparativa modificada del 51%** y permite la acumulación ("stacking") de cobertura UM/UIM — a menudo la mayor fuente de recuperación cuando un turista de otro estado es atropellado por un conductor con límites mínimos de póliza.
+Carolina del Sur aplica un **plazo de prescripción de tres años conforme a S.C. Code § 15-3-530**, una **barrera de culpa comparativa modificada del 51%** y permite a ciertos asegurados acumular ("stacking") cobertura UM/UIM, sujeto a los límites de S.C. Code § 38-77-160, lo que puede ser importante cuando el accidente lo causa un conductor con límites mínimos de póliza.
 EOT
 ,
                 // GBP review count — powers per-office AggregateRating schema.
@@ -446,7 +446,7 @@ Filing a personal injury case in Summerville means filing in the **{office_court
 
 Summerville's crash pattern is driven by one thing: **I-26**, the freight artery carrying container traffic between the Port of Charleston and Columbia, Charlotte and the Upstate. Trucks leaving the Hugh Leatherman and Columbus Street terminals for inland destinations pass through here, and that through-traffic meets one of the fastest-growing residential areas in South Carolina on roads never built for the combination. **US-17A (Main Street/Boone Hill Road)**, **Berlin G. Myers Parkway**, **Old Trolley Road**, **Dorchester Road** and **Central Avenue** carry most of the area's serious-injury crashes. Severe injuries are routed to **Trident Medical Center** in North Charleston, the Lowcountry's **Adult Level II** trauma centre, or to **MUSC** in Charleston for Level I and paediatric trauma.
 
-South Carolina applies a **{sol_years}-year statute of limitations under {sol_cite}**. Recovery is barred once a plaintiff's own negligence is *greater than* the combined negligence of the defendants — the modified comparative-fault rule adopted in *Nelson v. Concrete Supply Co.* Stacking of UM/UIM coverage is permitted and is often the largest recovery source when a minimum-limits driver causes a catastrophic crash.
+South Carolina applies a **{sol_years}-year statute of limitations under {sol_cite}**. Recovery is barred once a plaintiff's own negligence is *greater than* the combined negligence of the defendants — the modified comparative-fault rule adopted in *Nelson v. Concrete Supply Co.* Certain insureds may stack UM/UIM coverage in some situations, subject to the limits in S.C. Code § 38-77-160, which can matter when a minimum-limits driver causes a catastrophic crash.
 EOT
 ,
             ),
@@ -492,7 +492,7 @@ Moncks Corner is the Berkeley County seat, which means the **{office_court}** �
 
 The town sits where three kinds of traffic meet. **US-52** carries commercial and logging trucks south toward Goose Creek and the Port of Charleston across active rail crossings. **US-17A** and **SC-6** carry commuter traffic from the fast-growing Cane Bay and Carnes Crossroads developments toward Summerville and North Charleston. And **Lake Moultrie** draws seasonal recreational traffic — boat trailers, out-of-town drivers unfamiliar with two-lane rural roads, and the alcohol-involved crashes that follow a summer weekend on the water. There is no trauma centre in Moncks Corner: severe injuries are transported to **Trident Medical Center** in North Charleston (**Adult Level II**) or to **MUSC** in Charleston for Level I and paediatric trauma.
 
-South Carolina applies a **{sol_years}-year statute of limitations under {sol_cite}**. Recovery is barred once a plaintiff's own negligence is *greater than* the combined negligence of the defendants — *Nelson v. Concrete Supply Co.* Stacking of UM/UIM coverage is permitted, and on rural Berkeley County roads where minimum-limits policies are common it is frequently the largest available source of recovery.
+South Carolina applies a **{sol_years}-year statute of limitations under {sol_cite}**. Recovery is barred once a plaintiff's own negligence is *greater than* the combined negligence of the defendants — *Nelson v. Concrete Supply Co.* Certain insureds may stack UM/UIM coverage in some situations, subject to the limits in S.C. Code § 38-77-160, which can matter on rural Berkeley County roads where minimum-limits policies are common.
 EOT
 ,
             ),
@@ -515,7 +515,7 @@ Filing a personal injury case in Mount Pleasant means filing in the **{office_co
 
 **US-17** is the county's single worst roadway, accounting for 1,942 of those collisions on its own. Through Mount Pleasant it runs as **Johnnie Dodds Boulevard** and **Coleman Boulevard**, carrying commuter volume, tourist traffic and port freight through signalised intersections and constant turning movements. The **Arthur Ravenel Jr. Bridge** concentrates every east-bound Charleston commuter into a fixed corridor with no shoulder escape, and the **Isle of Palms Connector** adds seasonal beach traffic. Container trucks serving the **Wando Welch Terminal** — one of the busiest container terminals on the East Coast — move through Mount Pleasant streets to reach I-526. Severe injuries are routed to **MUSC** in Charleston, the state's only **Adult and Paediatric Level I** trauma centre.
 
-South Carolina applies a **{sol_years}-year statute of limitations under {sol_cite}**. Recovery is barred once a plaintiff's own negligence is *greater than* the combined negligence of the defendants — *Nelson v. Concrete Supply Co.* Stacking of UM/UIM coverage is permitted and often matters most when an out-of-state visitor is struck by a minimum-limits driver.
+South Carolina applies a **{sol_years}-year statute of limitations under {sol_cite}**. Recovery is barred once a plaintiff's own negligence is *greater than* the combined negligence of the defendants — *Nelson v. Concrete Supply Co.* Certain insureds may stack UM/UIM coverage in some situations, subject to the limits in S.C. Code § 38-77-160, so every policy that might apply is worth reviewing when a minimum-limits driver causes the crash.
 EOT
 ,
             ),
@@ -538,7 +538,7 @@ Filing a personal injury case arising on Hilton Head Island means filing in the 
 
 Hilton Head's crash profile is unlike anywhere else Roden Law practises, because the island has exactly one road on and off it. **US-278** carries every resident, worker, delivery vehicle and visitor across the bridges at Mackay Creek and Skull Creek, and a single crash on that corridor has no alternate route to absorb it. On-island, **William Hilton Parkway**, **Pope Avenue** and the **Sea Pines Circle** rotary mix unfamiliar seasonal drivers with more than sixty miles of public pathways used by cyclists and pedestrians — a combination that produces a disproportionate share of vulnerable-road-user injuries. There is **no DPH-designated trauma centre on the island**: seriously injured patients are stabilised locally and transported off-island, which lengthens the treatment record and makes early preservation of EMS and transfer documentation important.
 
-South Carolina applies a **{sol_years}-year statute of limitations under {sol_cite}**. Recovery is barred once a plaintiff's own negligence is *greater than* the combined negligence of the defendants — *Nelson v. Concrete Supply Co.* Visitors injured on the island should not assume their home-state policy governs: South Carolina permits stacking of UM/UIM coverage, and that often decides the real value of a claim against a minimum-limits local driver.
+South Carolina applies a **{sol_years}-year statute of limitations under {sol_cite}**. Recovery is barred once a plaintiff's own negligence is *greater than* the combined negligence of the defendants — *Nelson v. Concrete Supply Co.* Visitors injured on the island should have every policy that might apply reviewed, including their own: certain insureds may stack UM/UIM coverage in some situations, subject to the limits in S.C. Code § 38-77-160, and available coverage often decides the real value of a claim against a minimum-limits local driver.
 EOT
 ,
             ),
@@ -564,7 +564,7 @@ Conway is where Grand Strand personal injury cases are actually filed. The **{of
 
 Two corridors dominate the local crash picture, and they fail in opposite ways. **SC-22, the Conway Bypass**, is a high-speed limited-access route carrying freight from I-95 to the coast across elevated bridge sections over the Waccamaw River — where a truck striking stopped traffic has nowhere to go, and neither does anyone in front of it. **US-501** between Conway and Myrtle Beach is the reverse: a congested commercial corridor absorbing tourist volume through signalised intersections and constant turning movements. **Conway Medical Center** is the local **Adult Level III** trauma centre; the most severe injuries are transferred to **Grand Strand Medical Center** in Myrtle Beach, an **Adult Level I** centre.
 
-South Carolina applies a **{sol_years}-year statute of limitations under {sol_cite}**. Recovery is barred once a plaintiff's own negligence is *greater than* the combined negligence of the defendants — *Nelson v. Concrete Supply Co.* For visitors injured on the Grand Strand, stacked UM/UIM coverage from an out-of-state policy is frequently the difference between a minimum-limits recovery and a full one.
+South Carolina applies a **{sol_years}-year statute of limitations under {sol_cite}**. Recovery is barred once a plaintiff's own negligence is *greater than* the combined negligence of the defendants — *Nelson v. Concrete Supply Co.* For visitors injured on the Grand Strand, the UM/UIM coverage on their own policy can be the difference between a minimum-limits recovery and a full one, and whether it can be stacked depends on the policy and whose vehicle was involved.
 EOT
 ,
             ),
@@ -587,7 +587,7 @@ Filing a personal injury case in North Myrtle Beach means filing in the **{offic
 
 North Myrtle Beach's crash pattern is seasonal and vehicular-mix driven. **US-17 (Kings Highway)** and **Main Street** carry beach traffic through signalised commercial strips, while **SC-31 (Carolina Bays Parkway)** moves it at highway speed a few miles inland — so the same trip can involve two entirely different risk profiles. Golf carts are a genuine feature of local traffic rather than a novelty: under **S.C. Code § 56-2-100** a permitted cart may operate only in daylight, within four miles of the owner's address, on roads posted 35 mph or less, and only with a licensed driver. Crashes outside those limits open the door to negligence-per-se arguments and to claims against rental operators. Severe injuries are routed to **Grand Strand Medical Center** in Myrtle Beach, the region's **Adult Level I** trauma centre.
 
-South Carolina applies a **{sol_years}-year statute of limitations under {sol_cite}**. Recovery is barred once a plaintiff's own negligence is *greater than* the combined negligence of the defendants — *Nelson v. Concrete Supply Co.* Stacking of UM/UIM coverage is permitted and often decides the outcome when a visitor is hit by a minimum-limits driver.
+South Carolina applies a **{sol_years}-year statute of limitations under {sol_cite}**. Recovery is barred once a plaintiff's own negligence is *greater than* the combined negligence of the defendants — *Nelson v. Concrete Supply Co.* Certain insureds may stack UM/UIM coverage in some situations, subject to the limits in S.C. Code § 38-77-160, which can decide the outcome when a minimum-limits driver causes the crash.
 EOT
 ,
             ),
@@ -610,7 +610,7 @@ Filing a personal injury case in Pawleys Island means filing in the **{office_co
 
 **US-17 (Ocean Highway)** is effectively the only through route, and along the Waccamaw Neck it narrows from the multi-lane divided highway drivers experience further north into sections with at-grade beach access turns, cyclists, and vehicles slowing for causeways to the island itself. Crashes here often involve a driver travelling at highway speed meeting a turning or stopped vehicle with no dedicated turn lane. The nearest designated trauma centre is **Tidelands Waccamaw Community Hospital** in Murrells Inlet, which carries an **Adult Level IV** designation — the lowest tier, meaning it stabilises and transfers rather than providing definitive trauma care. Severely injured patients are moved on to **Grand Strand Medical Center** in Myrtle Beach (**Adult Level I**), and that transfer chain is a routine feature of serious Pawleys Island cases.
 
-South Carolina applies a **{sol_years}-year statute of limitations under {sol_cite}**. Recovery is barred once a plaintiff's own negligence is *greater than* the combined negligence of the defendants — *Nelson v. Concrete Supply Co.* Stacking of UM/UIM coverage is permitted and is frequently the largest available recovery source in a serious Waccamaw Neck crash.
+South Carolina applies a **{sol_years}-year statute of limitations under {sol_cite}**. Recovery is barred once a plaintiff's own negligence is *greater than* the combined negligence of the defendants — *Nelson v. Concrete Supply Co.* Certain insureds may stack UM/UIM coverage in some situations, subject to the limits in S.C. Code § 38-77-160, which can matter in a serious Waccamaw Neck crash.
 EOT
 ,
             ),
