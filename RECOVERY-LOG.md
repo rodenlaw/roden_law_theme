@@ -3165,3 +3165,12 @@ creditor wording; nursing-home caps; motorcycle helmet lines cut to § 56-5-3660
 Backups docs/backups/approvals-*-2026-09-30.json. Caches flushed; JSON-LD guard PASS; content/meta.json
 regenerated. Review stamps left unchanged (targeted corrections). Tools: bin/apply-meta-batch.php +
 bin/build-meta-batch.py (generic meta edits).
+
+## 2026-09-30 — Georgia resource guides published; car-seat post folded in
+
+Published /resources/georgia-car-seat-laws/ (6329), /resources/georgia-uninsured-motorist-coverage/ (6330)
+and /resources/georgia-wrongful-death-settlement-value/ (6331), reviewed by Tyler Love. The car-seat guide now
+links the SC car-seat guide in place of the old post's two-state comparison. Rendered-page sweep 326/326 clean.
+Links added (data/facts/ga-guides-links-2026-09-30.json; backup docs/backups/ga-guides-links-2026-09-30.json):
+6318 and 1757 -> UM guide, 6321 -> WD value guide. #204 redirects /blog/georgia-car-seat-law-overview/ to
+the car-seat guide (deploy clean, drift guard passed); 1874 retired to draft (bin/retire-ga-car-seat-post.php).
