@@ -3174,3 +3174,13 @@ links the SC car-seat guide in place of the old post's two-state comparison. Ren
 Links added (data/facts/ga-guides-links-2026-09-30.json; backup docs/backups/ga-guides-links-2026-09-30.json):
 6318 and 1757 -> UM guide, 6321 -> WD value guide. #204 redirects /blog/georgia-car-seat-law-overview/ to
 the car-seat guide (deploy clean, drift guard passed); 1874 retired to draft (bin/retire-ga-car-seat-post.php).
+
+## 2026-10-01 — Featured images on every resource page
+
+Owner: "use the resource title to set the image prompt and alt text". 79 of 81 published resources had
+no featured image. 68 generated with gpt-image-2 (1536x1024, high; bin/gen-resource-images.mjs, prompt from
+the title, alt = title); 11 Spanish twins reuse the English file as a second attachment with the Spanish
+title as alt. All 68 reviewed on contact sheets; two regenerated calmer (SC wrongful death value showed a
+submerged car; Grand Strand fatal crash report showed heavy wreckage). Attached via
+bin/attach-resource-images.php (17 runs, dry-run first, read-back). Now 81/81. Prompts and alts:
+docs/backups/resource-images-manifest-2026-10-01.json. Cost about $12.

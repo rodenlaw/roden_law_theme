@@ -17,6 +17,8 @@ import { convertToJpg } from '../../internal-ai-scripts/scripts/local-seo/lib/im
 const [list, out, ...rest] = process.argv.slice(2);
 const only = rest.includes('--only') ? rest[rest.indexOf('--only') + 1].split(',') : null;
 const jobs = rest.includes('--jobs') ? Number(rest[rest.indexOf('--jobs') + 1]) : 4;
+// --extra appends direction to every prompt in this run (e.g. a regeneration that must be calmer).
+const extra = rest.includes('--extra') ? rest[rest.indexOf('--extra') + 1] : '';
 mkdirSync(out, { recursive: true });
 
 const decode = s => s.replace(/&amp;/g, '&').replace(/&#8217;/g, '’').replace(/&#8211;/g, '–');
@@ -39,7 +41,7 @@ export function promptFor(r) {
     'Natural daylight, documentary style, realistic muted colors, wide 16:9 landscape composition.',
     'No readable text, words, numbers, road signs with legible lettering, logos, brand names or license plates.',
     'No identifiable faces, no injuries, blood or close-up wreckage, no police badges, no gavels or scales of justice, no courtroom clichés.',
-  ].join(' ');
+  ].concat(extra ? [extra] : []).join(' ');
 }
 
 const manifestPath = join(out, 'manifest.json');
