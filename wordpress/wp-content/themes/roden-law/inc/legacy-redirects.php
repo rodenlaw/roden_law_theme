@@ -1321,7 +1321,8 @@ function roden_phase1_removed_urls() {
         roden_dead_geo_post_urls(),
         roden_dead_es_hub_urls(),
         roden_gbp_landing_urls(),
-        roden_p0_hygiene_urls()
+        roden_p0_hygiene_urls(),
+        roden_resource_consolidation_urls()
     );
 }
 
@@ -2203,6 +2204,21 @@ function roden_p0_hygiene_urls() {
         // A typo slug that fell through to the Columbia car page.
         '/practice-areas/premisesliability-lawyers/columbia-sc/' => '/practice-areas/premises-liability-lawyers/',
         '/practice-areas/premisesliability-lawyers/'        => '/practice-areas/premises-liability-lawyers/',
+    );
+}
+
+/**
+ * Blog posts folded into the resource guide that replaced them (P3, resource
+ * consolidation). Owner, 2026-09-30: "do 1-2 now". The Georgia car seat guide
+ * (/resources/georgia-car-seat-laws/, reviewed by Tyler Love 2026-09-30) covers
+ * everything the 2023 blog overview did, plus the physician exception, the 2025
+ * seat-belt limit and the child's filing deadline; it links the South Carolina
+ * guide for the one topic the old post had that a Georgia-only page should not
+ * state. The old post (1874) is retired to draft after this deploys.
+ */
+function roden_resource_consolidation_urls() {
+    return array(
+        '/blog/georgia-car-seat-law-overview/' => '/resources/georgia-car-seat-laws/',
     );
 }
 
