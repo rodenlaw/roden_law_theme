@@ -1,0 +1,784 @@
+{
+ "_note": "Replay for remediation-2026-10-01-ga-slip-and-fall.md. Draft: fix-* (5 required corrected strings), rec-* (6 recommended strings), whole-* (every corrected surface: KT, meta, title, 7 FAQ Q+A, every body paragraph and table row), gap-* (the 5 original erroneous strings; expect [] because the engine is silent: blind spots, not controls), ctl-* (6 positive controls planted in corrected wording). Live: live-* (17 proposed replacements for blog 1844, practice areas 3606 and 3620), livegap-* (the 17 current live strings; engine silent), ctl-live-* (2 positive controls).",
+ "states": [
+  "GA"
+ ],
+ "entries": [
+  {
+   "id": "fix-R1",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "keyTakeaways",
+   "jurisdiction": "georgia-only",
+   "text": "To recover for a fall on a business's property, Georgia courts generally require proof that the owner knew or should have known about the hazard, and that you did not know about it despite using ordinary care, because of something the owner did or controlled.",
+   "expect": []
+  },
+  {
+   "id": "fix-R2",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "An owner or occupier who invites people onto the property for a lawful purpose, as a business invites its customers, must exercise ordinary care to keep the premises and approaches safe (O.C.G.A. § 51-3-1). Someone who is not a customer or employee, has no contractual relationship with the owner, and is permitted on the property merely for their own interests is a licensee, and can recover only for willful or wanton injury (O.C.G.A. § 51-3-2).",
+   "expect": []
+  },
+  {
+   "id": "fix-R3",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Georgia law lists medical expenses, lost wages and lost earning capacity among economic damages, and pain, suffering, mental anguish and loss of enjoyment of life among noneconomic damages (O.C.G.A. § 9-10-184).",
+   "expect": []
+  },
+  {
+   "id": "fix-R4",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "meta",
+   "jurisdiction": "georgia-only",
+   "text": "What drives a Georgia slip and fall case's value: proof the owner knew or should have known of the hazard, your damages, your fault and the two-year deadline.",
+   "expect": []
+  },
+  {
+   "id": "fix-R5",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "If you fell on Georgia city, county or State property, a notice deadline comes due much sooner.",
+   "expect": []
+  },
+  {
+   "id": "rec-RC1",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "If a fixed condition was readily visible, and you could plainly see it or had safely walked over it before, Georgia courts may presume you knew about it.",
+   "expect": []
+  },
+  {
+   "id": "rec-RC2",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "For falls on or after April 21, 2025, medical expenses are limited to the reasonable value of medically necessary care (O.C.G.A. § 51-12-1.1).",
+   "expect": []
+  },
+  {
+   "id": "rec-RC3a",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Each party pays only its own share; insurance often sets the practical limit",
+   "expect": []
+  },
+  {
+   "id": "rec-RC3b",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "and often limited in practice by the insurance behind the responsible parties",
+   "expect": []
+  },
+  {
+   "id": "rec-RC4a",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "A claim against a Georgia city, county or the State carries a notice deadline that comes due much sooner than the lawsuit deadline.",
+   "expect": []
+  },
+  {
+   "id": "rec-RC4b",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "A notice deadline comes due much sooner than the lawsuit deadline.",
+   "expect": []
+  },
+  {
+   "id": "whole-kt",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "keyTakeaways",
+   "jurisdiction": "georgia-only",
+   "text": "There is no reliable average for a Georgia slip and fall settlement, because each case is valued on its own evidence. To recover for a fall on a business's property, Georgia courts generally require proof that the owner knew or should have known about the hazard, and that you did not know about it despite using ordinary care, because of something the owner did or controlled. Value then turns on your medical expenses, your lost wages, and your pain and suffering, for which Georgia law sets no formula. Your recovery is reduced by your share of fault and barred at 50% or more (O.C.G.A. § 51-12-33). Most Georgia slip-and-fall lawsuits must be filed within two years (O.C.G.A. § 9-3-33). A fall on city property needs written notice within six months (O.C.G.A. § 36-33-5). Roden Law represents Georgians hurt in falls on a contingency fee, with no fees unless we win.",
+   "expect": []
+  },
+  {
+   "id": "whole-meta",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "meta",
+   "jurisdiction": "georgia-only",
+   "text": "What drives a Georgia slip and fall case's value: proof the owner knew or should have known of the hazard, your damages, your fault and the two-year deadline.",
+   "expect": []
+  },
+  {
+   "id": "whole-title",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "meta",
+   "jurisdiction": "georgia-only",
+   "text": "How Much Is a Georgia Slip and Fall Case Worth? | Roden Law",
+   "expect": []
+  },
+  {
+   "id": "whole-faq1",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "What is the average slip and fall settlement in Georgia? There is no reliable average for a Georgia slip and fall settlement, because each case is valued on its own evidence. Value depends on proof that the owner knew or should have known about the hazard, how badly you were hurt, your share of fault and the insurance available. An average cannot see any of those things in your case.",
+   "expect": []
+  },
+  {
+   "id": "whole-faq2",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "What do I have to prove in a Georgia slip and fall case? Georgia courts generally require you to show two things: that the owner knew or should have known about the hazard, and that you did not know about it despite using ordinary care, because of something the owner did or controlled. Evidence such as the incident report, inspection logs, video and witness accounts often decides the first point.",
+   "expect": []
+  },
+  {
+   "id": "whole-faq3",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "Does it matter that I didn't see the spill before I fell? You may still have a claim if you didn't see the spill. Georgia courts generally hold that not looking down at the moment you fell does not, by itself, mean you were careless. A distraction the owner created or should have anticipated can also matter. Fixed conditions, such as a curb or a step, are treated differently from spills.",
+   "expect": []
+  },
+  {
+   "id": "whole-faq4",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "Can my settlement be reduced if I was partly at fault? Yes. Your recovery is reduced by your percentage of fault, and you recover nothing if you are 50% or more at fault (O.C.G.A. § 51-12-33). In fall cases, owners usually argue that you saw, or should have seen, the hazard, so photos and witness accounts gathered early matter.",
+   "expect": []
+  },
+  {
+   "id": "whole-faq5",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "How long do I have to file a slip and fall lawsuit in Georgia? Most Georgia personal injury lawsuits, including slip-and-fall claims, must be filed within two years of the injury (O.C.G.A. § 9-3-33). If you fell on Georgia city, county or State property, a notice deadline comes due much sooner. Evidence such as video can disappear long before the deadline, so it helps to act early.",
+   "expect": []
+  },
+  {
+   "id": "whole-faq6",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "What if I fell on city or county property in Georgia? A notice deadline comes due much sooner than the lawsuit deadline. A claim against a Georgia city requires ante litem notice within six months (O.C.G.A. § 36-33-5). A claim against a county must be presented within twelve months (O.C.G.A. § 36-11-1). Notice of a claim against the State is due within twelve months (O.C.G.A. § 50-21-26).",
+   "expect": []
+  },
+  {
+   "id": "whole-faq7",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "How much does a Georgia slip and fall lawyer cost? Roden Law handles Georgia slip and fall cases on a contingency fee. You pay nothing upfront and no legal fees unless we win. The first consultation is free and confidential, so it costs nothing to understand your options. Call 1-844-RESULTS or (912) 303-5850.",
+   "expect": []
+  },
+  {
+   "id": "whole-body01",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "A fall in a store, a parking lot or an apartment stairwell can leave you with injuries, medical bills and time off work you never planned for. In Georgia, the answer depends on what the evidence can prove: whether the property owner knew or should have known about the hazard, how badly you were hurt, your own share of fault and the insurance available to pay. This guide explains those factors rather than quoting averages, because an average says nothing reliable about one person's fall. Roden Law works on a contingency fee: no fees unless we win.",
+   "expect": []
+  },
+  {
+   "id": "whole-body02",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "A Georgia slip and fall case is worth what the evidence can prove about the owner's responsibility and your injuries, reduced by any share of fault assigned to you and often limited in practice by the insurance behind the responsible parties. Those factors vary so widely from one fall to the next that any figure quoted before the facts are gathered is a guess.",
+   "expect": []
+  },
+  {
+   "id": "whole-body03",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Liability comes first. Without proof that the owner knew or should have known about the hazard, there is generally no recovery, however serious the injury. The table shows the factors we examine in every case.",
+   "expect": []
+  },
+  {
+   "id": "whole-body04",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Factor |  | Why it matters |  | Evidence that helps",
+   "expect": []
+  },
+  {
+   "id": "whole-body05",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Proof the owner knew or should have known |  | Generally required before any recovery |  | Incident report, inspection and sweep logs, video, employee accounts",
+   "expect": []
+  },
+  {
+   "id": "whole-body06",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Medical treatment |  | Medical expenses are economic damages |  | Medical records and bills, treatment plans",
+   "expect": []
+  },
+  {
+   "id": "whole-body07",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Time away from work |  | Lost wages and lost earning capacity are economic damages |  | Pay records, employer accounts",
+   "expect": []
+  },
+  {
+   "id": "whole-body08",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Pain and limits on daily life |  | Noneconomic damages, valued with no formula |  | Treatment notes, accounts from family and friends",
+   "expect": []
+  },
+  {
+   "id": "whole-body09",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Your share of fault |  | Reduces or bars the recovery (O.C.G.A. § 51-12-33) |  | Scene photos, video, witness accounts",
+   "expect": []
+  },
+  {
+   "id": "whole-body10",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Responsible parties and insurance |  | Each party pays only its own share; insurance often sets the practical limit |  | Lease and contractor records, policy disclosures",
+   "expect": []
+  },
+  {
+   "id": "whole-body11",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "To recover for a fall on a business's property, Georgia courts generally require you to show two things: that the owner knew or should have known about the hazard, and that you did not know about it despite using ordinary care, because of something the owner did or controlled (Robinson v. Kroger Co., 268 Ga. 735 (1997); American Multi-Cinema, Inc. v. Brown, 285 Ga. 442 (2009)).",
+   "expect": []
+  },
+  {
+   "id": "whole-body12",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "That test rests on the owner's duty. An owner or occupier who invites people onto the property for a lawful purpose, as a business invites its customers, must exercise ordinary care to keep the premises and approaches safe (O.C.G.A. § 51-3-1). Someone who is not a customer or employee, has no contractual relationship with the owner, and is permitted on the property merely for their own interests is a licensee, and can recover only for willful or wanton injury (O.C.G.A. § 51-3-2). A trespasser is owed only the duty not to cause willful or wanton injury (O.C.G.A. § 51-3-3). Those claims are generally much harder to prove.",
+   "expect": []
+  },
+  {
+   "id": "whole-body13",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "\"Should have known\" is where many fall cases are won or lost. Georgia courts generally treat an owner as knowing about a hazard it never actually saw where an employee was nearby and could easily have seen and removed it, or where the hazard was there long enough that a reasonable inspection would have found it.",
+   "expect": []
+  },
+  {
+   "id": "whole-body14",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "That makes the evidence of notice central: the incident report, the inspection and sweep logs, surveillance video and the names of witnesses. Much of it is in the owner's hands, and video can be recorded over. Our guide to the steps to take after a slip and fall accident in Georgia explains what to collect.",
+   "expect": []
+  },
+  {
+   "id": "whole-body15",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "You may still have a claim if you didn't see the hazard. Georgia courts generally hold that not looking down at the moment you fell does not, by itself, mean you were careless (Robinson).",
+   "expect": []
+  },
+  {
+   "id": "whole-body16",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Fixed conditions, such as a curb or a step, are treated differently from spills. If a fixed condition was readily visible, and you could plainly see it or had safely walked over it before, Georgia courts may presume you knew about it. A distraction the owner created or should have anticipated can change that, which is why it matters what drew your attention at the moment you fell.",
+   "expect": []
+  },
+  {
+   "id": "whole-body17",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Georgia law lists medical expenses, lost wages and lost earning capacity among economic damages, and pain, suffering, mental anguish and loss of enjoyment of life among noneconomic damages (O.C.G.A. § 9-10-184).",
+   "expect": []
+  },
+  {
+   "id": "whole-body18",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "For falls on or after April 21, 2025, medical expenses are limited to the reasonable value of medically necessary care (O.C.G.A. § 51-12-1.1).",
+   "expect": []
+  },
+  {
+   "id": "whole-body19",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Georgia law sets no formula for pain and suffering. If the case goes to trial, the jury decides what it is worth. That is why treatment records and the accounts of people who see your daily limits carry so much weight.",
+   "expect": []
+  },
+  {
+   "id": "whole-body20",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Your own fault can reduce or end the claim. Your recovery is reduced by your percentage of fault, and you recover nothing if you are 50% or more at fault (O.C.G.A. § 51-12-33).",
+   "expect": []
+  },
+  {
+   "id": "whole-body21",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "A separate rule bars recovery if ordinary care would have let you avoid the consequences of the owner's negligence (O.C.G.A. § 51-11-7). In fall cases, owners usually argue that you saw, or should have seen, the hazard, so photos and witness accounts gathered early matter. Our comparison of comparative negligence in Georgia and South Carolina explains the 50% rule in more detail.",
+   "expect": []
+  },
+  {
+   "id": "whole-body22",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "The liability insurance of the property owner or the business is usually what pays a Georgia slip and fall claim. More than one party may share responsibility, such as the owner of the property, a tenant business that runs the store and a cleaning or maintenance contractor. Each responsible party pays only its own share of fault (O.C.G.A. § 51-12-33), so identifying every one of them early matters.",
+   "expect": []
+  },
+  {
+   "id": "whole-body23",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "A claim against a Georgia city, county or the State carries a notice deadline that comes due much sooner than the lawsuit deadline. A claim against a Georgia city requires ante litem notice within six months (O.C.G.A. § 36-33-5). A claim against a county must be presented within twelve months (O.C.G.A. § 36-11-1). Notice of a claim against the State is due within twelve months of when the loss was or should have been discovered (O.C.G.A. § 50-21-26).",
+   "expect": []
+  },
+  {
+   "id": "whole-body24",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Our guide to the Georgia statute of limitations for injury claims covers these notice periods in more detail.",
+   "expect": []
+  },
+  {
+   "id": "whole-body25",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Most Georgia personal injury lawsuits, including slip-and-fall claims, must be filed within two years of the injury (O.C.G.A. § 9-3-33). A claim filed too late is generally barred, whatever its value.",
+   "expect": []
+  },
+  {
+   "id": "whole-body26",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Evidence disappears much faster than that. Spills are cleaned up, defects are repaired, video is recorded over and witnesses move on.",
+   "expect": []
+  },
+  {
+   "id": "whole-body27",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Roden Law's slip and fall lawyers meet with injured Georgians at no cost, explain the deadlines that apply and begin preserving the evidence of notice. Falls are one part of our premises liability practice, and our Georgia personal injury lawyers page covers the wider practice. Visit our Savannah office or Darien office, or call 1-844-RESULTS or (912) 303-5850 for a free, confidential case review. You pay nothing upfront and no legal fees unless we win. If your fall happened in South Carolina, different rules apply; our South Carolina slip and fall settlement value guide explains them.",
+   "expect": []
+  },
+  {
+   "id": "gap-R1",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "keyTakeaways",
+   "jurisdiction": "georgia-only",
+   "text": "To recover for a fall on a business's property, Georgia courts generally require proof that the owner knew or should have known about the hazard, and that you did not know about it despite using ordinary care.",
+   "expect": []
+  },
+  {
+   "id": "gap-R2",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "A business that invites customers onto its property must exercise ordinary care to keep the premises and approaches safe (O.C.G.A. § 51-3-1). Someone on the property for their own purposes, rather than as a customer, is a licensee and can recover only for willful or wanton injury (O.C.G.A. § 51-3-2).",
+   "expect": []
+  },
+  {
+   "id": "gap-R3",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Georgia law recognizes economic damages, such as medical expenses, lost wages and lost earning capacity, and noneconomic damages, such as pain, suffering, mental anguish and loss of enjoyment of life (O.C.G.A. § 9-10-184).",
+   "expect": []
+  },
+  {
+   "id": "gap-R4",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "meta",
+   "jurisdiction": "georgia-only",
+   "text": "What drives a Georgia slip and fall case's value: proof the owner knew of the hazard, your damages, your share of fault and the two-year deadline.",
+   "expect": []
+  },
+  {
+   "id": "gap-R5",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "If you fell on government property, written notice is due much sooner.",
+   "expect": []
+  },
+  {
+   "id": "ctl-R5-city12",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "If you fell on Georgia city, county or State property, a notice deadline comes due much sooner. A claim against a Georgia city requires ante litem notice within twelve months (O.C.G.A. § 36-33-5).",
+   "expect": [
+    "municipal-ante-litem-12-months"
+   ]
+  },
+  {
+   "id": "ctl-R5-county6",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "What if I fell on city or county property in Georgia? A notice deadline comes due much sooner than the lawsuit deadline. A claim against a county needs ante litem notice within six months.",
+   "expect": [
+    "county-ante-litem-6-months"
+   ]
+  },
+  {
+   "id": "ctl-gtca6",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "A claim against a Georgia city, county or the State carries a notice deadline. Notice under the Georgia Tort Claims Act is due within six months (O.C.G.A. § 50-21-26).",
+   "expect": [
+    "gtca-notice-6-months"
+   ]
+  },
+  {
+   "id": "ctl-jsl",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Each party pays only its own share; insurance often sets the practical limit. Georgia applies joint and several liability, so one owner can be made to pay the whole award.",
+   "expect": [
+    "joint-and-several-liability"
+   ]
+  },
+  {
+   "id": "ctl-5111",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Georgia's comparative negligence rule is found in O.C.G.A. § 51-11-7.",
+   "expect": [
+    "comparative-negligence-wrong-statute"
+   ]
+  },
+  {
+   "id": "ctl-sc",
+   "page": "/resources/georgia-slip-and-fall-settlement-value/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Slip and fall claims must be filed within three years under S.C. Code § 15-3-530.",
+   "expect": [
+    "foreign-SC"
+   ]
+  },
+  {
+   "id": "live-L6a",
+   "page": "/blog/valid-premises-liability-claim-georgia/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "An invitee is someone the owner or occupier invites onto the property, expressly or impliedly, for a lawful purpose (O.C.G.A. § 51-3-1).",
+   "expect": []
+  },
+  {
+   "id": "livegap-L6a",
+   "page": "/blog/valid-premises-liability-claim-georgia/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "An invitee enters a property by implied or express permission from the property’s owner.",
+   "expect": []
+  },
+  {
+   "id": "live-L6b",
+   "page": "/blog/valid-premises-liability-claim-georgia/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "An invitee is someone the owner invites onto the property, expressly or impliedly, for a lawful purpose (O.C.G.A. § 51-3-1).",
+   "expect": []
+  },
+  {
+   "id": "livegap-L6b",
+   "page": "/blog/valid-premises-liability-claim-georgia/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "An invitee enters by implied or express permission.",
+   "expect": []
+  },
+  {
+   "id": "live-L7",
+   "page": "/blog/valid-premises-liability-claim-georgia/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Friends and family on a social visit are generally treated as licensees under Georgia law, not invitees.",
+   "expect": []
+  },
+  {
+   "id": "livegap-L7",
+   "page": "/blog/valid-premises-liability-claim-georgia/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Friends and family members may also be invitees to a property during social visits the property owner hosts.",
+   "expect": []
+  },
+  {
+   "id": "live-L13",
+   "page": "/blog/valid-premises-liability-claim-georgia/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Property owners owe invitees the most protective duty: ordinary care to keep the premises and approaches safe (O.C.G.A. § 51-3-1). That includes inspecting for hazards and fixing or warning of the ones the owner knows or should know about.",
+   "expect": []
+  },
+  {
+   "id": "livegap-L13",
+   "page": "/blog/valid-premises-liability-claim-georgia/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Property owners owe the highest levels of care to invitees. Owners must repair known hazards, warn of hidden dangers, and search and repair unknown hazards.",
+   "expect": []
+  },
+  {
+   "id": "live-L8",
+   "page": "/blog/valid-premises-liability-claim-georgia/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "A licensee is someone who is permitted on the property merely for his or her own interests, is not a customer or employee, and has no contractual relationship with the owner (O.C.G.A. § 51-3-2(a)).",
+   "expect": []
+  },
+  {
+   "id": "livegap-L8",
+   "page": "/blog/valid-premises-liability-claim-georgia/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "A licensee is someone who enters a property for his or her own purposes, such as a salesperson or a repair technician.",
+   "expect": []
+  },
+  {
+   "id": "live-L9",
+   "page": "/blog/valid-premises-liability-claim-georgia/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "A property owner is liable to a licensee only for willful or wanton injury (O.C.G.A. § 51-3-2(b)), and does not have to search for unknown hazards.",
+   "expect": []
+  },
+  {
+   "id": "livegap-L9",
+   "page": "/blog/valid-premises-liability-claim-georgia/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Property owners also owe a duty of care to licensees, as they have the property owner’s permission to enter a property. A property owner must repair known dangers on a property and warn the licensee of dangers that aren’t obvious but does not have the responsibility of searching for unknown hazards.",
+   "expect": []
+  },
+  {
+   "id": "live-L10",
+   "page": "/blog/valid-premises-liability-claim-georgia/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Children can be treated differently: Georgia keeps the attractive nuisance doctrine, which can make an owner liable to a child trespasser for certain dangerous conditions (O.C.G.A. § 51-3-3(c)).",
+   "expect": []
+  },
+  {
+   "id": "livegap-L10",
+   "page": "/blog/valid-premises-liability-claim-georgia/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "An exception is if the trespasser is a child, in which case the property owner owes the trespasser the same duties of care as a licensee.",
+   "expect": []
+  },
+  {
+   "id": "live-L11",
+   "page": "/blog/valid-premises-liability-claim-georgia/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "A defendant’s negligence must have been a proximate cause of the plaintiff’s injuries for a valid premises liability claim in Georgia.",
+   "expect": []
+  },
+  {
+   "id": "livegap-L11",
+   "page": "/blog/valid-premises-liability-claim-georgia/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "A defendant’s negligence must have been at least a substantial factor in the plaintiff’s injuries for a valid premises liability claim in Georgia.",
+   "expect": []
+  },
+  {
+   "id": "live-L1",
+   "page": "/practice-areas/slip-and-fall-lawyers/",
+   "surface": "faqs",
+   "jurisdiction": "both",
+   "text": "In Georgia, courts apply the \"equal knowledge\" rule — if the plaintiff knew of the hazard, or should have known of it by using ordinary care, the owner may not be liable (Robinson v. Kroger Co., 268 Ga. 735 (1997)). However, not looking down at the moment of the fall does not by itself make the victim careless, and this defense can be overcome by showing the victim was reasonably distracted or the hazard was not readily visible.",
+   "expect": []
+  },
+  {
+   "id": "livegap-L1",
+   "page": "/practice-areas/slip-and-fall-lawyers/",
+   "surface": "faqs",
+   "jurisdiction": "both",
+   "text": "In Georgia, courts apply the \"equal knowledge\" rule — if the plaintiff had equal knowledge of the hazard, the owner may not be liable (Robinson v. Kroger Co.). However, this defense can be overcome by showing the victim was reasonably distracted, the hazard was not truly obvious, or the owner still had a duty to remedy a known danger despite its visibility.",
+   "expect": []
+  },
+  {
+   "id": "live-L2",
+   "page": "/practice-areas/slip-and-fall-lawyers/",
+   "surface": "body",
+   "jurisdiction": "both",
+   "text": "Georgia follows the \"equal knowledge\" rule — if you knew about the hazard or should have seen it by using ordinary care, your claim may be barred, and any share of fault assigned to you reduces what you recover (O.C.G.A. § 51-12-33).",
+   "expect": []
+  },
+  {
+   "id": "livegap-L2",
+   "page": "/practice-areas/slip-and-fall-lawyers/",
+   "surface": "body",
+   "jurisdiction": "both",
+   "text": "Georgia follows the \"equal knowledge\" rule — if you knew about the hazard or it was so obvious that you should have seen it, your claim may be reduced or barred.",
+   "expect": []
+  },
+  {
+   "id": "live-L1b",
+   "page": "/practice-areas/slip-and-fall-lawyers/",
+   "surface": "body",
+   "jurisdiction": "both",
+   "text": "In Georgia, an invitee must prove the owner had **actual or constructive knowledge** of the hazard and that the plaintiff, despite exercising ordinary care, lacked knowledge of it because of the owner's actions or conditions under the owner's control — the test from *Robinson v. Kroger Co.*, 268 Ga. 735 (1997).",
+   "expect": []
+  },
+  {
+   "id": "livegap-L1b",
+   "page": "/practice-areas/slip-and-fall-lawyers/",
+   "surface": "body",
+   "jurisdiction": "both",
+   "text": "In Georgia, an invitee must prove the owner had **actual or constructive knowledge** of the hazard and that the plaintiff lacked equal knowledge — the controlling test from *Robinson v. Kroger Co.*, 268 Ga. 735 (1997).",
+   "expect": []
+  },
+  {
+   "id": "live-L15",
+   "page": "/practice-areas/slip-and-fall-lawyers/",
+   "surface": "body",
+   "jurisdiction": "both",
+   "text": "No special statutory cap applies to an ordinary slip-and-fall claim against a private owner in Georgia, though claims against government entities can be limited;",
+   "expect": []
+  },
+  {
+   "id": "livegap-L15",
+   "page": "/practice-areas/slip-and-fall-lawyers/",
+   "surface": "body",
+   "jurisdiction": "both",
+   "text": "No special statutory caps apply to slip-and-fall recoveries in Georgia;",
+   "expect": []
+  },
+  {
+   "id": "live-L3",
+   "page": "/practice-areas/premises-liability-lawyers/",
+   "surface": "faqs",
+   "jurisdiction": "both",
+   "text": "Georgia law requires owners and occupiers to exercise ordinary care to keep the premises and approaches safe for invitees (O.C.G.A. § 51-3-1). To recover for an injury from a hazard, Georgia courts generally require you to prove: (1) the owner or occupier had actual or constructive knowledge of the hazard; and (2) you lacked knowledge of it despite exercising ordinary care, because of the owner's actions or conditions under the owner's control (Robinson v. Kroger Co., 268 Ga. 735 (1997); American Multi-Cinema, Inc. v. Brown, 285 Ga. 442 (2009)). For spills, debris and other temporary hazards, constructive knowledge can be shown by an employee who was nearby and could easily have seen and removed the hazard, or by a hazard that was there long enough that a reasonable inspection would have found it.",
+   "expect": []
+  },
+  {
+   "id": "livegap-L3",
+   "page": "/practice-areas/premises-liability-lawyers/",
+   "surface": "faqs",
+   "jurisdiction": "both",
+   "text": "Under Georgia law (O.C.G.A. § 51-3-1), you must prove: (1) the property owner or occupier had actual or constructive knowledge of the hazardous condition; (2) you did not have equal knowledge of the hazard; and (3) the owner failed to exercise ordinary care to either correct the hazard or warn you about it. For non-static conditions (spills, debris, temporary hazards), you must show the owner had reasonable time to discover and address the hazard before your injury occurred.",
+   "expect": []
+  },
+  {
+   "id": "live-L4",
+   "page": "/practice-areas/premises-liability-lawyers/",
+   "surface": "faqs",
+   "jurisdiction": "both",
+   "text": "To establish negligent security, you typically must show that the owner knew or should have known of the risk of a crime like the one that happened and failed to take reasonable security measures such as lighting, cameras, security guards, or access control. In Georgia, injuries on or after April 21, 2025 are governed by a 2025 statute (O.C.G.A. §§ 51-3-50 to 51-3-57) that sets stricter, specific requirements, including limits on which prior crimes count.",
+   "expect": []
+  },
+  {
+   "id": "livegap-L4",
+   "page": "/practice-areas/premises-liability-lawyers/",
+   "surface": "faqs",
+   "jurisdiction": "both",
+   "text": "To establish negligent security, you typically must show that the property had a history of similar criminal activity, the owner knew or should have known of the risk, and the owner failed to implement reasonable security measures such as lighting, cameras, security guards, or access control.",
+   "expect": []
+  },
+  {
+   "id": "live-L4b",
+   "page": "/practice-areas/premises-liability-lawyers/",
+   "surface": "body",
+   "jurisdiction": "both",
+   "text": "in Georgia, injuries on or after April 21, 2025 are governed by the negligent security statute (O.C.G.A. §§ 51-3-50 to 51-3-57), and earlier injuries by the case law, including *CVS Pharmacy, Inc. v. Carmichael*, 316 Ga. 718 (2023).",
+   "expect": []
+  },
+  {
+   "id": "livegap-L4b",
+   "page": "/practice-areas/premises-liability-lawyers/",
+   "surface": "body",
+   "jurisdiction": "both",
+   "text": "in Georgia, *CVS Pharmacy, Inc. v. Carmichael*, 316 Ga. 718 (2023), confirmed the totality-of-the-circumstances test for foreseeability.",
+   "expect": []
+  },
+  {
+   "id": "live-L5",
+   "page": "/practice-areas/premises-liability-lawyers/",
+   "surface": "faqs",
+   "jurisdiction": "both",
+   "text": "Retail stores owe customers (invitees) the most protective duty owed to any visitor; in Georgia, that is ordinary care to keep the premises and approaches safe (O.C.G.A. § 51-3-1).",
+   "expect": []
+  },
+  {
+   "id": "livegap-L5",
+   "page": "/practice-areas/premises-liability-lawyers/",
+   "surface": "faqs",
+   "jurisdiction": "both",
+   "text": "Retail stores owe the highest duty of care to customers (invitees).",
+   "expect": []
+  },
+  {
+   "id": "live-L14",
+   "page": "/practice-areas/premises-liability-lawyers/",
+   "surface": "body",
+   "jurisdiction": "both",
+   "text": "Standard tort damages apply, with no special cap in an ordinary claim against a private owner in either Georgia or its neighboring state; claims against government entities, and some claims against charities, can be limited.",
+   "expect": []
+  },
+  {
+   "id": "livegap-L14",
+   "page": "/practice-areas/premises-liability-lawyers/",
+   "surface": "body",
+   "jurisdiction": "both",
+   "text": "Standard tort damages apply with no special caps in either Georgia or its neighboring state.",
+   "expect": []
+  },
+  {
+   "id": "ctl-live-jsl",
+   "page": "/practice-areas/slip-and-fall-lawyers/",
+   "surface": "body",
+   "jurisdiction": "georgia-only",
+   "text": "Georgia follows the \"equal knowledge\" rule. Georgia applies joint and several liability, so one owner can be made to pay the whole award.",
+   "expect": [
+    "joint-and-several-liability"
+   ]
+  },
+  {
+   "id": "ctl-live-5111",
+   "page": "/blog/valid-premises-liability-claim-georgia/",
+   "surface": "faqs",
+   "jurisdiction": "georgia-only",
+   "text": "A licensee can recover only for willful or wanton injury. Georgia's comparative negligence rule is found in O.C.G.A. § 51-11-7.",
+   "expect": [
+    "comparative-negligence-wrong-statute"
+   ]
+  }
+ ]
+}
