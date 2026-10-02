@@ -66,6 +66,25 @@ function roden_json_ld( $data ) {
 }
 
 /**
+ * The priceRange published on every LegalService / LocalBusiness node.
+ *
+ * This was '$$', which is the only machine-readable fee signal the site
+ * published, and it read as "this firm costs money" to AI engines filtering
+ * for "contingency fee" / "no upfront cost" lawyers (Local Dominator finding,
+ * Oct 2026). Google accepts free text here (under 100 characters). The wording
+ * is the fee language the pages and footer already carry — do not add a claim
+ * here that the footer disclaimer does not support.
+ *
+ * @return string
+ */
+function roden_schema_price_range() {
+    if ( function_exists( 'roden_current_lang' ) && 'es' === roden_current_lang() ) {
+        return 'Consulta gratuita; honorarios de contingencia — no paga honorarios a menos que ganemos';
+    }
+    return 'Free consultation; contingency fee — no fee unless we win';
+}
+
+/**
  * Build a clean description string for schema. Prefers a hand-authored meta
  * description, falls back to the post excerpt, then to a trimmed content
  * fallback. Strips the WP excerpt-truncation suffix (`[…]` / `[&hellip;]`)
@@ -500,7 +519,7 @@ function roden_schema_legal_service( $firm ) {
         'url'         => $ls_url,
         'description' => $firm['description'],
         'telephone'   => $firm['phone_e164'],
-        'priceRange'  => '$$',
+        'priceRange'  => roden_schema_price_range(),
         'areaServed'  => array(
             array( '@type' => 'State', 'name' => 'Georgia' ),
             array( '@type' => 'State', 'name' => 'South Carolina' ),
@@ -650,7 +669,7 @@ function roden_schema_class_action( $firm, $type ) {
         '@id'         => rtrim( $url, '/' ) . '/#legalservice',
         'url'         => $url,
         'telephone'   => $firm['phone_e164'],
-        'priceRange'  => '$$',
+        'priceRange'  => roden_schema_price_range(),
         'areaServed'  => array(
             array( '@type' => 'State', 'name' => 'Georgia' ),
             array( '@type' => 'State', 'name' => 'South Carolina' ),
@@ -802,7 +821,7 @@ function roden_schema_local_business_office( $firm, $key, $office, $extra_area_s
         'name'       => $office['name'],
         'url'        => $firm['url'] . '/locations/' . $office['state_slug'] . '/' . sanitize_title( $office['market_name'] ) . '/',
         'telephone'  => $office['phone'],
-        'priceRange' => '$$',
+        'priceRange' => roden_schema_price_range(),
         'address'    => roden_schema_postal_address( $office ),
         'geo'        => roden_schema_geo( $office ),
         'areaServed' => roden_schema_office_area_served( $office, $extra_area_served ),
@@ -2377,7 +2396,7 @@ function roden_schema_neighborhood_legal_service( $firm ) {
         'description' => 'Personal injury lawyers serving ' . $neighborhood_name . ', ' . $office['state'] . '. Free consultation. No fees unless we win.',
         'url'         => get_permalink(),
         'telephone'   => $office['phone'],
-        'priceRange'  => '$$',
+        'priceRange'  => roden_schema_price_range(),
         'serviceType' => 'Personal Injury Law',
         'address'     => roden_schema_postal_address( $office ),
         'geo'         => $geo,
@@ -2449,7 +2468,7 @@ function roden_schema_local_business_neighborhood( $firm ) {
         'name'       => $office['name'],
         'url'        => $firm['url'] . '/locations/' . $office['state_slug'] . '/' . sanitize_title( $office['market_name'] ) . '/',
         'telephone'  => $office['phone'],
-        'priceRange' => '$$',
+        'priceRange' => roden_schema_price_range(),
         'address'    => roden_schema_postal_address( $office ),
         'geo'        => roden_schema_geo( $office ),
         'areaServed' => array(
@@ -2590,7 +2609,7 @@ function roden_schema_state_landing( $firm ) {
         'url'             => $page_url,
         'description'     => 'Roden Law represents personal injury victims throughout ' . $state_full . '. Free consultation, no fees unless we win.',
         'telephone'       => $firm['phone_e164'],
-        'priceRange'      => '$$',
+        'priceRange'      => roden_schema_price_range(),
         'serviceType'     => 'Personal Injury Law',
         'dateModified'    => get_the_modified_date( 'c' ),
         'areaServed'      => array(
@@ -2846,7 +2865,7 @@ function roden_schema_sc_statewide( $firm ) {
         'url'             => $page_url,
         'description'     => 'Roden Law represents car accident victims throughout South Carolina. With offices in Charleston, Columbia, and Myrtle Beach, our attorneys fight for maximum compensation on a contingency fee — no fees unless we win.',
         'telephone'       => $firm['vanity_phone'],
-        'priceRange'      => '$$',
+        'priceRange'      => roden_schema_price_range(),
         'areaServed'      => array(
             '@type' => 'State',
             'name'  => 'South Carolina',
@@ -2988,7 +3007,7 @@ function roden_schema_sc_pillar( $firm, $state = 'SC' ) {
         // "personal injury injury victims" / "car accident injury victims" (GA sweep, 2026-09-29).
         'description'     => 'Roden Law represents ' . ( false !== stripos( $practice_label, 'workers' ) ? 'injured workers' : ( ( ! $practice_label || false !== stripos( $practice_label, 'personal injury' ) ) ? 'injury victims' : ( false !== stripos( $practice_label, 'wrongful death' ) ? 'families who lost a loved one' : strtolower( $practice_label ) . ' victims' ) ) ) . ' throughout ' . $state_name . ' on a contingency fee — no fees unless we win.',
         'telephone'       => $firm['vanity_phone'],
-        'priceRange'      => '$$',
+        'priceRange'      => roden_schema_price_range(),
         'areaServed'      => array(
             '@type' => 'State',
             'name'  => $state_name,
