@@ -3198,3 +3198,12 @@ docs/freshness/2026-10-02-merge-4624-into-4337/); 4337 keeps its slug and publis
 page links to 4624 (19 references, all drafts or revisions); no meta or option references. The redirect ships in
 roden_ashley_phosphate_fold_urls(); 4624 is retired to draft after deploy. 4337's old body linked 11 internal
 pages the merged body does not (listed in the merge README).
+
+## 2026-10-02 — Ashley Phosphate merge applied
+
+#207 deployed clean (deployed legacy-redirects.php md5 matches the repo). 4624 retired to draft (status read from the
+table) and marked _roden_retired; both caches flushed. In Chrome, both
+/blog/ashley-phosphate-i-26-south-carolinas-deadliest-intersection/ and the no-slash form reach 4337 in one redirect
+with a 200; 4337 serves the merged, verified content with its own canonical, FAQPage JSON-LD parses, dateModified
+2026-10-02. JSON-LD guard PASS. content/meta.json regenerated (4624 out, 4337 changed). Records:
+docs/freshness/2026-10-02-merge-4624-into-4337/.
