@@ -9,5 +9,5 @@
  */
 $out = [];
 foreach ( array_map( 'intval', explode( ',', isset( $args[0] ) ? $args[0] : '' ) ) as $id ) { $p = get_post($id);
-  $out[$id] = ['content'=>$p->post_content,'excerpt'=>$p->post_excerpt,'keyTakeaways'=>(string)get_post_meta($id,'_roden_key_takeaways',true),'faqs'=>maybe_unserialize(get_post_meta($id,'_roden_faqs',true)),'metaDescription'=>(string)get_post_meta($id,'_roden_meta_description',true),'reviewed'=>get_post_meta($id,'_roden_last_reviewed',true),'attorney'=>get_post_meta($id,'_roden_author_attorney',true),'refreshed'=>get_post_meta($id,'_roden_last_refreshed',true),'url'=>get_permalink($id)]; }
+  $out[$id] = ['content'=>$p->post_content,'excerpt'=>$p->post_excerpt,'keyTakeaways'=>(string)get_post_meta($id,'_roden_key_takeaways',true),'faqs'=>maybe_unserialize(get_post_meta($id,'_roden_faqs',true)),'metaDescription'=>(string)get_post_meta($id,'_roden_meta_description',true),'reviewed'=>get_post_meta($id,'_roden_last_reviewed',true),'attorney'=>get_post_meta($id,'_roden_author_attorney',true),'refreshed'=>get_post_meta($id,'_roden_last_refreshed',true),'modified'=>$p->post_modified,'url'=>get_permalink($id)]; }
 echo json_encode($out, JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES);
