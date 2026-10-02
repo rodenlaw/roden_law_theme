@@ -2345,7 +2345,7 @@
                 "_roden_faqs": [
                     {
                         "question": "Who is liable when a horse-drawn carriage causes an accident in Charleston?",
-                        "answer": "The tour company is typically liable for its employees and the condition of its horses and equipment. The individual driver may be liable for negligent handling. Third-party drivers who spook the horse or collide with the carriage may share liability. The City of Charleston could be liable for road conditions."
+                        "answer": "The tour company is typically liable for its employees and the condition of its horses and equipment. The individual driver may be liable for negligent handling. Third-party drivers who spook the horse or collide with the carriage may share liability. The City of Charleston could be liable for a road or signal defect it knew or should have known about and failed to fix (S.C. Code § 15-78-60(15))."
                     },
                     {
                         "question": "What causes carriage tour accidents?",
@@ -2357,18 +2357,20 @@
                     },
                     {
                         "question": "What injuries occur in carriage tour accidents?",
-                        "answer": "TBI, spinal cord injuries, broken bones, road rash, and crush injuries. Passengers who fall from moving carriages onto cobblestone streets are at particular risk for head injuries."
+                        "answer": "TBI, spinal cord injuries, broken bones, road rash, and crush injuries. Passengers who fall from a moving carriage onto pavement are at particular risk for head injuries."
                     },
                     {
                         "question": "How long do I have to file a claim?",
-                        "answer": "Three years in SC (S.C. Code section 15-3-530). Two years in Georgia."
+                        "answer": "Three years in South Carolina (S.C. Code § 15-3-530), but two years if the City of Charleston or another government body is a defendant (S.C. Code § 15-78-110)."
                     },
                     {
                         "question": "Can tourists from other states file a claim?",
-                        "answer": "Yes. SC law applies regardless of where you live. Your attorney can handle the case remotely. You would only need to travel for trial."
+                        "answer": "Yes. SC law applies regardless of where you live. Your attorney can handle much of the case remotely. You may need to return for a deposition or medical examination, and for trial if the case does not settle."
                     }
                 ],
-                "_roden_key_takeaways": "Horse-drawn carriage tour operators in Charleston owe passengers and bystanders a duty of care, and liability may fall on the tour company, driver, or City of Charleston depending on the cause. Common injuries include being thrown from carriages, trampled, or struck as a pedestrian. South Carolina applies modified comparative fault, barring recovery at 51% or more fault. Injured parties must file within 3 years under S.C. Code 15-3-530."
+                "_roden_key_takeaways": "Horse-drawn carriage tour operators in Charleston owe passengers and bystanders a duty of care, and liability may fall on the tour company, driver, or City of Charleston depending on the cause. Common injuries include being thrown from carriages, trampled, or struck as a pedestrian. South Carolina applies modified comparative fault, barring recovery at 51% or more fault. Injured parties generally have 3 years to file (S.C. Code § 15-3-530), but only 2 years if the City of Charleston or another government body is a defendant (S.C. Code § 15-78-110).",
+                "_roden_last_reviewed": "2026-10-02",
+                "_roden_meta_description": "Hurt in a Charleston carriage tour accident? Learn who may be liable — the tour company, driver, horse owner, or city — and SC filing deadlines."
             }
         },
         "/blog/certification-of-permanent-injury/": {
@@ -4207,11 +4209,11 @@
             "title": "Can a Drunk Pedestrian File an Injury Claim?",
             "excerpt": "An intoxicated pedestrian can still recover in Georgia and South Carolina. How shared fault is assessed, and what it costs a claim.",
             "meta": {
-                "_roden_author_attorney": "Eric Roden",
+                "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "Can I file a personal injury claim if I was drunk when hit by a car?",
-                        "answer": "Yes. In both Georgia and South Carolina, being intoxicated does not automatically bar you from filing a personal injury claim. Both states follow comparative fault systems that allow recovery as long as your share of fault is below the state threshold — less than 50% in Georgia (O.C.G.A. § 51-12-33) and less than 51% in South Carolina."
+                        "answer": "Yes. In both Georgia and South Carolina, being intoxicated does not automatically bar you from filing a personal injury claim. Both states follow comparative fault systems that allow recovery as long as your share of fault is below the state threshold — less than 50% in Georgia (O.C.G.A. § 51-12-33) and less than 51% in South Carolina (Nelson v. Concrete Supply Co.)."
                     },
                     {
                         "question": "How does being intoxicated affect my compensation?",
@@ -4219,7 +4221,7 @@
                     },
                     {
                         "question": "Does a driver have a duty to avoid hitting a drunk pedestrian?",
-                        "answer": "Yes. In both Georgia and South Carolina, drivers must exercise due care to avoid striking any pedestrian on the roadway. South Carolina law specifically requires extra precaution for confused or incapacitated persons. A driver who was speeding, texting, or otherwise negligent is still liable even if the pedestrian was intoxicated."
+                        "answer": "Yes. In both Georgia and South Carolina, drivers must exercise due care to avoid colliding with any pedestrian. Both states' due-care statutes specifically require drivers to take proper precautions upon observing any child or any obviously confused, incapacitated, or intoxicated person (O.C.G.A. § 40-6-93; S.C. Code § 56-5-3230). A driver who was speeding, texting, or otherwise negligent can still be held liable even if the pedestrian was intoxicated — the pedestrian's share of fault reduces the award rather than erasing the claim, unless it reaches the state's bar."
                     },
                     {
                         "question": "What is the statute of limitations for a pedestrian accident claim?",
@@ -4227,14 +4229,16 @@
                     },
                     {
                         "question": "Will the insurance company deny my claim because I was drinking?",
-                        "answer": "Insurance companies will try to use your intoxication to minimize or deny your claim, but they cannot legally deny it solely because you were drinking. They may argue higher fault percentages or use tactics like requesting recorded statements. Having an attorney handle communications protects your rights."
+                        "answer": "Insurance companies will try to use your intoxication to minimize or deny your claim, but drinking alone does not bar recovery in either state — if the driver was negligent, a denial can be challenged by filing suit against the driver. They may argue higher fault percentages or use tactics like requesting recorded statements. Having an attorney handle communications protects your rights."
                     },
                     {
                         "question": "What evidence helps prove a pedestrian accident claim when the pedestrian was intoxicated?",
                         "answer": "Key evidence includes surveillance camera footage, witness testimony, the police report, the driver's cell phone records showing distraction, accident reconstruction analysis, and vehicle black box data showing speed and braking. This evidence helps establish driver negligence independent of the pedestrian's intoxication."
                     }
                 ],
-                "_roden_key_takeaways": "Intoxicated pedestrians can file personal injury claims in both Georgia and South Carolina under modified comparative fault rules. Georgia allows recovery if less than 50% at fault (O.C.G.A. § 51-12-33); South Carolina if less than 51%. Drivers owe a duty of care to all pedestrians including impaired ones. Compensation is reduced proportionally to fault percentage. Georgia has a 2-year statute of limitations (O.C.G.A. § 9-3-33); South Carolina has 3 years (S.C. Code § 15-3-530)."
+                "_roden_key_takeaways": "Intoxicated pedestrians can file personal injury claims in both Georgia and South Carolina under modified comparative fault rules. Georgia allows recovery if less than 50% at fault (O.C.G.A. § 51-12-33); South Carolina if less than 51% (Nelson v. Concrete Supply Co.). Drivers owe a duty of care to all pedestrians, and both states' statutes expressly require extra precaution around an obviously intoxicated person (O.C.G.A. § 40-6-93; S.C. Code § 56-5-3230). Compensation is reduced proportionally to fault percentage. Georgia has a 2-year statute of limitations (O.C.G.A. § 9-3-33); South Carolina has 3 years (S.C. Code § 15-3-530).",
+                "_roden_last_reviewed": "2026-10-02",
+                "_roden_meta_description": "Hit by a car after drinking? Intoxication does not automatically bar a pedestrian injury claim in Georgia or South Carolina. How shared fault works."
             }
         },
         "/blog/dui-accidents/": {
@@ -6771,34 +6775,36 @@
             "title": "How Letters of Protection Help Injury Victims Get Medical Treatment",
             "excerpt": "A letter of protection lets you get medical treatment now and pay from your settlement later. How they work in Georgia and South Carolina.",
             "meta": {
-                "_roden_author_attorney": "Eric Roden",
+                "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "What is a letter of protection in a personal injury case?",
-                        "answer": "A letter of protection (LOP) is a written agreement between your attorney and a medical provider guaranteeing that the provider will be paid from the proceeds of your personal injury settlement or verdict. The LOP allows you to receive medical treatment without paying out of pocket while your case is pending."
+                        "answer": "A letter of protection (LOP) is a written agreement between your attorney and a medical provider guaranteeing that the provider will be paid from the proceeds of your personal injury settlement or verdict. The LOP allows you to receive medical treatment without paying out of pocket while your case is pending. You remain responsible for the bill."
                     },
                     {
                         "question": "Is a letter of protection legally binding?",
-                        "answer": "Yes. An LOP is a contractual agreement that obligates you to pay the medical provider from your settlement proceeds. If your case is unsuccessful and you recover nothing, you may still owe the medical bills."
+                        "answer": "Yes. An LOP is a contractual agreement that obligates you to pay the medical provider from your settlement proceeds. If your case is unsuccessful and you recover nothing, you may still owe the medical bills. It also binds your attorney: once settlement money comes in, ethics rules in both states require the attorney to protect the provider's claim to it rather than pay it all out to you."
                     },
                     {
                         "question": "Do all doctors accept letters of protection?",
-                        "answer": "No. Many doctors and medical facilities are selective about which LOPs they accept. Providers are more likely to accept an LOP from an attorney they have an established professional relationship with and trust to resolve the case."
+                        "answer": "No. Many doctors and medical facilities are selective about which LOPs they accept. Providers are more likely to accept an LOP from an attorney they have an established professional relationship with and trust to resolve the case. In Georgia, for injuries on or after April 21, 2025, the insurer can learn who referred you to an LOP provider (O.C.G.A. § 51-12-1.1(d)(4))."
                     },
                     {
                         "question": "How do insurance companies use letters of protection against me?",
-                        "answer": "Insurance companies may argue that doctors treating you under an LOP have a financial incentive to exaggerate your injuries or recommend unnecessary treatment. Your attorney can counter this by presenting objective medical evidence and pointing out that the doctor's professional reputation depends on honest assessments."
+                        "answer": "Insurance companies may argue that doctors treating you under an LOP have a financial incentive to exaggerate your injuries or recommend unnecessary treatment. Your attorney can counter this by presenting objective medical evidence and pointing out that the doctor's professional reputation depends on honest assessments. In Georgia cases arising on or after April 21, 2025, the insurer can obtain the LOP itself, itemized billing, any sale of the bill to a factoring company and the price paid, and who referred you — and both sides may challenge the reasonableness and necessity of the treatment (O.C.G.A. § 51-12-1.1(d), (f))."
                     },
                     {
                         "question": "Can my attorney negotiate the medical bills under an LOP?",
-                        "answer": "Yes. Attorneys routinely negotiate reductions of 20-40% on LOP balances, which directly increases your take-home settlement amount."
+                        "answer": "Yes. Attorneys routinely negotiate reductions on LOP balances, which directly increases your take-home settlement amount."
                     },
                     {
                         "question": "What is the difference between an LOP and a medical lien?",
-                        "answer": "An LOP is a voluntary agreement arranged by your attorney before treatment begins. A medical lien is a statutory right that hospitals and providers can assert after treatment. In Georgia, hospital liens are governed by O.C.G.A. § 44-14-470. In South Carolina, S.C. Code § 44-63-10 controls hospital liens."
+                        "answer": "An LOP is a voluntary agreement arranged by your attorney, usually before or early in treatment. A medical lien is a statutory right that hospitals and providers can assert after treatment. In Georgia, hospitals, physician practices and certain other providers have a statutory lien under O.C.G.A. § 44-14-470. South Carolina has no hospital-lien statute; providers there rely on contract, including letters of protection."
                     }
                 ],
-                "_roden_key_takeaways": "A letter of protection (LOP) is a written agreement between your attorney and a medical provider that guarantees payment from your settlement proceeds, allowing you to receive treatment without upfront costs. LOPs are common in Georgia and South Carolina personal injury cases where victims lack health insurance or face coverage gaps. Georgia's hospital lien law (O.C.G.A. § 44-14-470) and South Carolina's equivalent (S.C. Code § 44-63-10) create separate statutory lien rights. Insurance companies may attack LOPs by arguing provider bias. Attorneys can negotiate LOP balances down 20-40% after settlement."
+                "_roden_key_takeaways": "A letter of protection (LOP) is a written agreement, signed by you and your attorney, promising a medical provider that its bills will be paid out of your settlement or verdict, so you can get treatment without paying up front. You remain responsible for the bill. LOPs are common in Georgia and South Carolina personal injury cases where victims lack health insurance or face coverage gaps. Georgia gives hospitals, physician practices and other providers a statutory lien on your injury claim (O.C.G.A. § 44-14-470); South Carolina has no hospital-lien statute, so South Carolina providers rely on contract — often a letter of protection. Insurance companies may attack LOPs by arguing provider bias. In Georgia, for injuries on or after April 21, 2025, the insurer can obtain the letter itself, itemized charges, any sale of the bill to a third party and its price, and who referred you (O.C.G.A. § 51-12-1.1(d)). Attorneys can often negotiate LOP balances down after settlement.",
+                "_roden_last_reviewed": "2026-10-02",
+                "_roden_meta_description": "Learn how a letter of protection lets you get medical treatment now and pay from your settlement later, and how LOPs work in Georgia and South Carolina."
             }
         },
         "/blog/liability-and-causes-for-backing-up-crashes-in-charleston/": {

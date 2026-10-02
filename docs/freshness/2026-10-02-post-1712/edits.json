@@ -1,0 +1,164 @@
+[
+ {
+  "id": "1712",
+  "surface": "content",
+  "before": "<p>Despite being widely used, LOPs remain misunderstood. Insurance adjusters try to weaponize them against claimants. Providers have varying comfort levels accepting them. And the legal frameworks governing how LOPs interact with medical liens differ between Georgia and South Carolina. This guide covers how letters of protection work in both states, when they make sense, and what risks to understand before relying on one. For general background, the <a href=\"https://www.law.cornell.edu/wex/personal_injury\" target=\"_blank\" rel=\"noopener noreferrer\">Cornell Law Institute's overview of personal injury law</a> provides a solid foundation.</p>",
+  "after": "<p>Despite being widely used, LOPs remain misunderstood. Insurance adjusters try to weaponize them against claimants. Providers have varying comfort levels accepting them. And the legal frameworks governing how LOPs interact with medical liens differ between Georgia and South Carolina. This guide covers how letters of protection work in both states, when they make sense, and what risks to understand before relying on one. For general background, the <a href=\"https://www.law.cornell.edu/wex/personal_injury\" target=\"_blank\" rel=\"noopener noreferrer\">Cornell Law School's Legal Information Institute overview of personal injury law</a> provides a solid foundation.</p>"
+ },
+ {
+  "id": "1712",
+  "surface": "content",
+  "before": "<p>A letter of protection is a written agreement between a personal injury attorney and a medical provider. In the letter, the attorney guarantees that the provider's bills will be paid out of any settlement or verdict the client receives. In exchange, the provider agrees to treat the patient without requiring upfront payment or running the charges through health insurance.</p>",
+  "after": "<p>A letter of protection is a written agreement between a personal injury attorney and a medical provider. In the letter, the attorney — on the client's behalf — agrees that the provider's bills will be paid out of any settlement or verdict before the client receives the balance. The attorney does not personally guarantee the bill; ethics rules in both states forbid that. In exchange, the provider agrees to treat the patient without requiring upfront payment or running the charges through health insurance.</p>"
+ },
+ {
+  "id": "1712",
+  "surface": "content",
+  "before": "<ol>\n<li><strong>You hire a personal injury attorney.</strong> LOPs only work when an attorney is involved. Providers will not accept a letter of protection from an unrepresented individual.</li>\n\n<li><strong>Your attorney identifies treatment needs.</strong> After evaluating your injuries, your attorney determines whether you need ongoing care — physical therapy, surgery, imaging, pain management — that you cannot afford out of pocket or through insurance.</li>\n\n<li><strong>Your attorney drafts the LOP.</strong> The letter goes to the medical provider on the attorney's letterhead. It identifies the patient, describes the claim, and guarantees the provider's charges will be paid from the settlement or verdict proceeds.</li>\n\n<li><strong>The provider agrees to treat.</strong> Not all providers accept LOPs. Your attorney will identify providers willing to treat under these terms — typically those experienced with personal injury patients.</li>\n\n<li><strong>Treatment proceeds without upfront payment.</strong> The provider bills the attorney's office rather than sending you to collections. Your medical records and bills accumulate, building the documentation that proves your damages.</li>\n\n<li><strong>The case settles or goes to verdict.</strong> Your attorney uses the proceeds to pay providers who treated you under LOPs, typically negotiating the bills down first.</li>\n</ol>",
+  "after": "<ol>\n<li><strong>You hire a personal injury attorney.</strong> Providers generally accept LOPs only from an attorney, because the attorney is the one who controls the settlement funds.</li>\n\n<li><strong>Your attorney identifies treatment needs.</strong> After evaluating your injuries, your attorney determines whether you need ongoing care — physical therapy, surgery, imaging, pain management — that you cannot afford out of pocket or through insurance.</li>\n\n<li><strong>Your attorney drafts the LOP.</strong> The letter goes to the medical provider on the attorney's letterhead. It identifies the patient, describes the claim, and commits that the provider's charges will be paid from the settlement or verdict proceeds. For Georgia injuries on or after April 21, 2025, assume the insurer will see the letter — it is discoverable.</li>\n\n<li><strong>The provider agrees to treat.</strong> Not all providers accept LOPs. Your attorney will identify providers willing to treat under these terms — typically those experienced with personal injury patients.</li>\n\n<li><strong>Treatment proceeds without upfront payment.</strong> The provider bills the attorney's office rather than sending you to collections. Your medical records and bills accumulate, building the documentation that proves your damages.</li>\n\n<li><strong>The case settles or goes to verdict.</strong> Your attorney uses the proceeds to pay providers who treated you under LOPs, typically negotiating the bills down first.</li>\n</ol>"
+ },
+ {
+  "id": "1712",
+  "surface": "content",
+  "before": "<ul>\n<li><strong>Immediate access to treatment.</strong> You do not have to wait until your case settles to start physical therapy, get surgery, or see a specialist.</li>\n\n<li><strong>No upfront cost.</strong> You pay nothing out of pocket. All charges are deferred until the case resolves.</li>\n\n<li><strong>Better medical documentation.</strong> Consistent treatment creates the medical records your attorney needs to prove damages. Gaps in treatment give insurers ammunition to argue your injuries were not serious.</li>\n\n<li><strong>Choice of provider.</strong> Instead of being limited to your insurance network, you can see specialists experienced in documenting injuries for litigation and providing court testimony.</li>\n\n<li><strong>Bill negotiation leverage.</strong> Your attorney manages disbursement and can negotiate bills down before paying them. Providers who accept LOPs generally expect some reduction.</li>\n</ul>",
+  "after": "<ul>\n<li><strong>Immediate access to treatment.</strong> You do not have to wait until your case settles to start physical therapy, get surgery, or see a specialist.</li>\n\n<li><strong>No upfront cost.</strong> You pay nothing out of pocket. All charges are deferred until the case resolves.</li>\n\n<li><strong>Better medical documentation.</strong> Consistent treatment creates the medical records your attorney needs to prove damages. Gaps in treatment give insurers ammunition to argue your injuries were not serious.</li>\n\n<li><strong>Choice of provider.</strong> Instead of being limited to your insurance network, you can see specialists who treat injury patients and are willing to testify about your care.</li>\n\n<li><strong>Bill negotiation leverage.</strong> Your attorney manages disbursement and can negotiate bills down before paying them. Providers who accept LOPs generally expect some reduction.</li>\n</ul>"
+ },
+ {
+  "id": "1712",
+  "surface": "content",
+  "before": "<ul>\n<li><strong>You remain personally liable.</strong> If your case loses at trial or settles for less than expected, you still owe the medical provider. The debt does not disappear just because the LOP promised payment from settlement proceeds.</li>\n\n<li><strong>Potentially inflated charges.</strong> Some LOP providers charge higher rates than they would bill to insurance companies. Defense attorneys will use this to argue your medical expenses are unreasonable.</li>\n\n<li><strong>Limited provider options.</strong> Not every doctor, hospital, or therapy practice accepts LOPs. Your choices may be more limited than with insurance coverage.</li>\n\n<li><strong>Insurance company scrutiny.</strong> Adjusters view LOP-funded treatment with skepticism. LOPs are legitimate and recognized, but expect the opposing insurer to challenge your medical bills.</li>\n\n<li><strong>Reduced net recovery.</strong> Medical bills paid from your settlement reduce your take-home amount. If bills accumulate significantly, your net recovery after paying providers and attorney fees may be smaller than anticipated.</li>\n</ul>",
+  "after": "<ul>\n<li><strong>You remain personally liable.</strong> If your case loses at trial or settles for less than expected, you still owe the medical provider. The debt does not disappear just because the LOP promised payment from settlement proceeds.</li>\n\n<li><strong>Potentially inflated charges.</strong> Some LOP providers charge higher rates than they would bill to insurance companies. Defense attorneys will use this to argue your medical expenses are unreasonable. In Georgia, for injuries on or after April 21, 2025, the defense can also learn whether the provider sold your bill to a third party at a discount, and the price paid (O.C.G.A. &sect; 51-12-1.1(d)(3)).</li>\n\n<li><strong>Limited provider options.</strong> Not every doctor, hospital, or therapy practice accepts LOPs. Your choices may be more limited than with insurance coverage.</li>\n\n<li><strong>Insurance company scrutiny.</strong> Adjusters view LOP-funded treatment with skepticism. LOPs are legitimate and recognized, but expect the opposing insurer to challenge your medical bills.</li>\n\n<li><strong>Reduced net recovery.</strong> Medical bills paid from your settlement reduce your take-home amount. If bills accumulate significantly, your net recovery after paying providers and attorney fees may be smaller than anticipated.</li>\n</ul>"
+ },
+ {
+  "id": "1712",
+  "surface": "content",
+  "before": "<p>Adjusters compare your LOP provider's charges to insurance reimbursement rates and argue the bills are inflated. Your attorney counters by showing the provider's rates fall within the local market range and that the full billed amount — not a discounted insurance rate — reflects the true cost of care.</p>",
+  "after": "<p>Adjusters compare your LOP provider's charges to insurance reimbursement rates and argue the bills are inflated. Your attorney counters by showing the provider's rates fall within the local market range. In South Carolina, the defense cannot use discounted insurance payments to attack the bill (<em>Covington v. George</em>). In Georgia, for injuries on or after April 21, 2025, the jury decides the reasonable value and, if you have health insurance, may hear both the billed amount and what insurance would have paid.</p>"
+ },
+ {
+  "id": "1712",
+  "surface": "content",
+  "before": "<p>Insurance companies suggest that because your attorney referred you to the provider, the treatment was driven by litigation rather than medical necessity. In reality, attorneys refer clients to providers they trust to deliver quality care and document injuries thoroughly — the same reason any professional makes referrals within their network.</p>",
+  "after": "<p>Insurance companies suggest that because your attorney referred you to the provider, the treatment was driven by litigation rather than medical necessity. In reality, attorneys refer clients to providers they trust to deliver quality care and document injuries thoroughly — the same reason any professional makes referrals within their network. In Georgia, for injuries on or after April 21, 2025, the referral itself is discoverable (O.C.G.A. &sect; 51-12-1.1(d)(4)), so it must be one you would be comfortable explaining to a jury.</p>"
+ },
+ {
+  "id": "1712",
+  "surface": "content",
+  "before": "<p>Some adjusters argue that because you never paid for treatment, you have not suffered a real economic loss. This argument fails under both Georgia and South Carolina law. Both states follow the collateral source rule, which prevents defendants from reducing damages based on payments from third parties. Treatment provided on credit through an LOP does not eliminate your right to recover its reasonable value.</p>",
+  "after": "<p>Some adjusters argue that because you never paid for treatment, you have not suffered a real economic loss. This argument fails under both Georgia and South Carolina law. South Carolina's collateral source rule fully applies. Georgia's applies too, but for injuries on or after April 21, 2025 it is partly abrogated for medical bills (see below). Treatment provided on credit through an LOP does not eliminate your right to recover its reasonable value.</p>"
+ },
+ {
+  "id": "1712",
+  "surface": "content",
+  "before": "<p>Georgia has no statute specifically governing letters of protection. LOPs operate under general contract law principles. However, several Georgia statutes affect how they function in practice.</p>",
+  "after": "<p>Georgia does not regulate how letters of protection are formed — they are contracts — but since April 21, 2025 a statute governs how they are used in court. For injuries on or after that date, <a href=\"https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-1-1/\" target=\"_blank\" rel=\"noopener noreferrer\">O.C.G.A. &sect; 51-12-1.1(d)</a> makes the LOP itself, itemized charges, any sale of the bill to a third party (and the price), and who referred you for treatment relevant and discoverable. Several other Georgia statutes also affect how LOPs function in practice.</p>"
+ },
+ {
+  "id": "1712",
+  "surface": "content",
+  "before": "<p>Under O.C.G.A. &sect; 44-14-470, hospitals have a statutory right to place a lien on personal injury settlement proceeds for the reasonable value of treatment provided. When a hospital files a lien, the attorney must satisfy it before disbursing settlement funds — similar in effect to an LOP, but created by statute rather than agreement.</p>\n\n<p>The lien amount is capped at \"reasonable charges,\" and attorneys can negotiate these amounts. Hospital liens must be properly filed with the county clerk's office and comply with the statute's notice requirements to be enforceable.</p>",
+  "after": "<p>Under <a href=\"https://law.justia.com/codes/georgia/title-44/chapter-14/article-8/part-8/section-44-14-470/\" target=\"_blank\" rel=\"noopener noreferrer\">O.C.G.A. &sect; 44-14-470</a>, hospitals, nursing homes, physician practices, chiropractic practices and burn-care practices have a statutory lien on your injury claim — not on you or your property — for the reasonable charges for treating the injuries. When a provider has a valid lien, the attorney must protect it before disbursing settlement funds (Georgia Rule 1.15(I)) — the same duty that applies to an LOP — unless there is a valid defense to the lien.</p>\n\n<p>The lien amount is capped at \"reasonable charges,\" and attorneys can negotiate these amounts. To be enforceable, a Georgia lien requires written notice at least 15 days before filing and a verified statement filed with the superior court clerk in the provider's county and the patient's county of residence — within 75 days after discharge for hospitals, or 90 days after the first visit for physician and chiropractic practices. The provider must also first bill the patient's health insurance (<a href=\"https://law.justia.com/codes/georgia/title-44/chapter-14/article-8/part-8/section-44-14-471/\" target=\"_blank\" rel=\"noopener noreferrer\">O.C.G.A. &sect; 44-14-471</a>).</p>"
+ },
+ {
+  "id": "1712",
+  "surface": "content",
+  "before": "<p>Georgia's collateral source rule (O.C.G.A. &sect; 51-12-1) prevents defendants from introducing evidence that a plaintiff's bills were paid by insurance or other sources. This supports LOP use by preventing the defense from arguing your \"real\" treatment cost was lower than the billed amount.</p>",
+  "after": "<p>Georgia's collateral source rule is a common-law rule; the provision of O.C.G.A. &sect; 51-12-1 that admitted some collateral-source evidence was struck down in <a href=\"https://law.justia.com/cases/georgia/supreme-court/1991/s90a1101-1.html\" target=\"_blank\" rel=\"noopener noreferrer\"><em>Denton v. Con-Way Southern Express</em></a> (1991). For injuries before April 21, 2025, the rule keeps evidence that a plaintiff's bills were paid by insurance or other sources away from the jury. For injuries on or after that date, O.C.G.A. &sect; 51-12-1.1 partly abrogates it for medical bills: if you have health insurance, the jury may hear both the billed amount and what insurance would have paid, even if you never used it.</p>"
+ },
+ {
+  "id": "1712",
+  "surface": "content",
+  "before": "<p>Like Georgia, South Carolina has no statute specifically addressing letters of protection. LOPs are governed by contract law principles within the broader framework of South Carolina's personal injury statutes.</p>",
+  "after": "<p>Unlike Georgia, South Carolina has no statute addressing letters of protection; they are ordinary contracts.</p>"
+ },
+ {
+  "id": "1712",
+  "surface": "content",
+  "before": "<p>South Carolina's hospital lien statute, S.C. Code &sect; 44-63-10 et seq., gives hospitals the right to assert liens against personal injury recoveries for the reasonable cost of care. The lien must be filed in the county where the hospital is located and attaches to any cause of action against the responsible party. These liens function similarly to LOPs but carry statutory enforcement mechanisms that LOPs do not.</p>",
+  "after": "<p>South Carolina has no hospital-lien statute. A South Carolina hospital or doctor cannot file a statutory lien against your claim; its right to payment rests on your contract and on any assignment of benefits or letter of protection you signed. The claims that do reach a South Carolina settlement by law are health-insurer subrogation (S.C. Code &sect; 38-71-190), Medicaid, Medicare and workers' compensation.</p>"
+ },
+ {
+  "id": "1712",
+  "surface": "content",
+  "before": "<p>South Carolina's collateral source rule, affirmed by the state Supreme Court in <em>Covington v. George</em>, prevents defendants from reducing damages by showing compensation from independent sources. The full value of medical treatment — including treatment under an LOP — remains recoverable as damages.</p>",
+  "after": "<p>South Carolina's collateral source rule, affirmed by the state Supreme Court in <a href=\"https://www.sccourts.org/opinions/advSheets/no212004.pdf\" target=\"_blank\" rel=\"noopener noreferrer\"><em>Covington v. George</em></a> (2004), prevents defendants from reducing damages by showing compensation from independent sources. The full value of medical treatment — including treatment under an LOP — remains recoverable as damages.</p>"
+ },
+ {
+  "id": "1712",
+  "surface": "content",
+  "before": "<table class=\"comparison-table\">\n<thead>\n<tr>\n<th>Factor</th>\n<th>Georgia</th>\n<th>South Carolina</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Statute of Limitations</strong></td>\n<td>2 years (O.C.G.A. &sect; 9-3-33)</td>\n<td>3 years (S.C. Code &sect; 15-3-530)</td>\n</tr>\n<tr>\n<td><strong>Comparative Fault Bar</strong></td>\n<td>50% or more at fault = no recovery (O.C.G.A. &sect; 51-12-33)</td>\n<td>51% or more at fault = no recovery</td>\n</tr>\n<tr>\n<td><strong>Hospital Lien Statute</strong></td>\n<td>O.C.G.A. &sect; 44-14-470</td>\n<td>S.C. Code &sect; 44-63-10 et seq.</td>\n</tr>\n<tr>\n<td><strong>Lien Filing Requirement</strong></td>\n<td>Filed with county clerk in the county where treatment occurred</td>\n<td>Filed in county where hospital is located</td>\n</tr>\n<tr>\n<td><strong>Collateral Source Rule</strong></td>\n<td>Codified in part (O.C.G.A. &sect; 51-12-1); strong protection</td>\n<td>Established through case law; strong protection</td>\n</tr>\n<tr>\n<td><strong>LOP Provider Landscape</strong></td>\n<td>Broad network of providers in metro Atlanta, Savannah, and surrounding areas accept LOPs</td>\n<td>Growing acceptance in Charleston, Columbia, Myrtle Beach, and the Lowcountry</td>\n</tr>\n<tr>\n<td><strong>Med-Pay Coverage (Auto)</strong></td>\n<td>Optional; commonly $5,000-$25,000 when carried</td>\n<td>Optional; commonly $1,000-$10,000 when carried</td>\n</tr>\n<tr>\n<td><strong>Time Pressure on LOP Treatment</strong></td>\n<td>Higher — shorter statute of limitations means less time to treat and file</td>\n<td>Moderate — extra year provides more flexibility</td>\n</tr>\n</tbody>\n</table>",
+  "after": "<table class=\"comparison-table\">\n<thead>\n<tr>\n<th>Factor</th>\n<th>Georgia</th>\n<th>South Carolina</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><strong>Statute of Limitations</strong></td>\n<td>2 years (O.C.G.A. &sect; 9-3-33)</td>\n<td>3 years (S.C. Code &sect; 15-3-530)</td>\n</tr>\n<tr>\n<td><strong>Comparative Fault Bar</strong></td>\n<td>50% or more at fault = no recovery (O.C.G.A. &sect; 51-12-33)</td>\n<td>51% or more at fault = no recovery</td>\n</tr>\n<tr>\n<td><strong>Hospital Lien Statute</strong></td>\n<td>O.C.G.A. &sect;&sect; 44-14-470 to -477 (hospitals, nursing homes, physician, chiropractic and burn-care practices)</td>\n<td>None — providers rely on contract (often an LOP)</td>\n</tr>\n<tr>\n<td><strong>Lien Filing Requirement</strong></td>\n<td>Superior court clerk, provider's county and patient's county; within 75 days of discharge (hospitals) or 90 days of first visit (physicians/chiropractors)</td>\n<td>Not applicable</td>\n</tr>\n<tr>\n<td><strong>Collateral Source Rule</strong></td>\n<td>Common law, partly abrogated for medical bills for injuries on or after April 21, 2025 (O.C.G.A. &sect; 51-12-1.1); LOP, itemized bills, factoring sale and referral source discoverable</td>\n<td>Established through case law; strong protection</td>\n</tr>\n<tr>\n<td><strong>LOP Provider Landscape</strong></td>\n<td>Available; varies by provider</td>\n<td>Available; varies by provider</td>\n</tr>\n<tr>\n<td><strong>Med-Pay Coverage (Auto)</strong></td>\n<td>Optional</td>\n<td>Optional</td>\n</tr>\n<tr>\n<td><strong>Time Pressure on LOP Treatment</strong></td>\n<td>Higher — shorter statute of limitations means less time to treat and file</td>\n<td>Moderate — extra year provides more flexibility</td>\n</tr>\n</tbody>\n</table>"
+ },
+ {
+  "id": "1712",
+  "surface": "content",
+  "before": "<p>Your attorney uses industry benchmarks to compare provider charges against local market rates. If a provider charged $15,000 for a procedure that typically costs $8,000 to $12,000, that gap creates leverage. Most LOP providers expect some reduction — receiving 60 to 80 cents on the dollar promptly is preferable to pursuing full payment through collections.</p>",
+  "after": "<p>Your attorney uses industry benchmarks to compare provider charges against local market rates. If a provider charged $15,000 for a procedure that typically costs $8,000 to $12,000, that gap creates leverage. Many LOP providers expect some reduction — prompt payment of a negotiated amount is often preferable to pursuing the full bill through collections.</p>"
+ },
+ {
+  "id": "1712",
+  "surface": "content",
+  "before": "<p>When both LOPs and hospital liens are involved, your attorney coordinates payments carefully. Statutory liens generally take priority, but the amounts are negotiable and can often be reduced significantly.</p>",
+  "after": "<p>When a Georgia provider has also filed a statutory lien, your attorney must account for both; in South Carolina there are no statutory provider liens. Both kinds of claim are negotiable.</p>"
+ },
+ {
+  "id": "1712",
+  "surface": "content",
+  "before": "<p>When your case settles, your attorney prepares a disbursement statement showing where the money goes: fees, expenses, liens, LOP payments, and your net recovery. Ethical rules in both states require your approval before any checks are written.</p>",
+  "after": "<p>When your case settles, your attorney prepares a disbursement statement showing where the money goes: fees, expenses, liens, LOP payments, and your net recovery. Ethics rules in both states require your attorney to give you a written settlement statement showing the outcome, the fee and what you receive (Rule 1.5(c)).</p>"
+ },
+ {
+  "id": "1712",
+  "surface": "content",
+  "before": "<p>We work on a contingency fee basis — you pay nothing unless we recover compensation for you. Call <strong>1-844-RESULTS</strong> or contact any of our six offices in Savannah, Darien, Charleston, North Charleston, Columbia, and Myrtle Beach for a free consultation. We will evaluate your case and help you understand whether a letter of protection is the right tool for your situation.</p>",
+  "after": "<p>We work on a contingency fee basis — you owe us no attorney's fee unless we recover compensation for you. Call <strong>1-844-RESULTS</strong> or contact any of our six offices in Savannah, Darien, Charleston, North Charleston, Columbia, and Myrtle Beach for a free consultation. We will evaluate your case and help you understand whether a letter of protection is the right tool for your situation.</p>"
+ },
+ {
+  "id": "1712",
+  "surface": "meta:_roden_key_takeaways",
+  "before": "A letter of protection (LOP) is a written agreement between your attorney and a medical provider that guarantees payment from your settlement proceeds, allowing you to receive treatment without upfront costs. LOPs are common in Georgia and South Carolina personal injury cases where victims lack health insurance or face coverage gaps. Georgia's hospital lien law (O.C.G.A. § 44-14-470) and South Carolina's equivalent (S.C. Code § 44-63-10) create separate statutory lien rights. Insurance companies may attack LOPs by arguing provider bias. Attorneys can negotiate LOP balances down 20-40% after settlement.",
+  "after": "A letter of protection (LOP) is a written agreement, signed by you and your attorney, promising a medical provider that its bills will be paid out of your settlement or verdict, so you can get treatment without paying up front. You remain responsible for the bill. LOPs are common in Georgia and South Carolina personal injury cases where victims lack health insurance or face coverage gaps. Georgia gives hospitals, physician practices and other providers a statutory lien on your injury claim (O.C.G.A. § 44-14-470); South Carolina has no hospital-lien statute, so South Carolina providers rely on contract — often a letter of protection. Insurance companies may attack LOPs by arguing provider bias. In Georgia, for injuries on or after April 21, 2025, the insurer can obtain the letter itself, itemized charges, any sale of the bill to a third party and its price, and who referred you (O.C.G.A. § 51-12-1.1(d)). Attorneys can often negotiate LOP balances down after settlement."
+ },
+ {
+  "id": "1712",
+  "surface": "meta:_roden_meta_description",
+  "before": "",
+  "after": "Learn how a letter of protection lets you get medical treatment now and pay from your settlement later, and how LOPs work in Georgia and South Carolina."
+ },
+ {
+  "id": "1712",
+  "surface": "faq:0:answer",
+  "before": "A letter of protection (LOP) is a written agreement between your attorney and a medical provider guaranteeing that the provider will be paid from the proceeds of your personal injury settlement or verdict. The LOP allows you to receive medical treatment without paying out of pocket while your case is pending.",
+  "after": "A letter of protection (LOP) is a written agreement between your attorney and a medical provider guaranteeing that the provider will be paid from the proceeds of your personal injury settlement or verdict. The LOP allows you to receive medical treatment without paying out of pocket while your case is pending. You remain responsible for the bill."
+ },
+ {
+  "id": "1712",
+  "surface": "faq:1:answer",
+  "before": "Yes. An LOP is a contractual agreement that obligates you to pay the medical provider from your settlement proceeds. If your case is unsuccessful and you recover nothing, you may still owe the medical bills.",
+  "after": "Yes. An LOP is a contractual agreement that obligates you to pay the medical provider from your settlement proceeds. If your case is unsuccessful and you recover nothing, you may still owe the medical bills. It also binds your attorney: once settlement money comes in, ethics rules in both states require the attorney to protect the provider's claim to it rather than pay it all out to you."
+ },
+ {
+  "id": "1712",
+  "surface": "faq:2:answer",
+  "before": "No. Many doctors and medical facilities are selective about which LOPs they accept. Providers are more likely to accept an LOP from an attorney they have an established professional relationship with and trust to resolve the case.",
+  "after": "No. Many doctors and medical facilities are selective about which LOPs they accept. Providers are more likely to accept an LOP from an attorney they have an established professional relationship with and trust to resolve the case. In Georgia, for injuries on or after April 21, 2025, the insurer can learn who referred you to an LOP provider (O.C.G.A. § 51-12-1.1(d)(4))."
+ },
+ {
+  "id": "1712",
+  "surface": "faq:3:answer",
+  "before": "Insurance companies may argue that doctors treating you under an LOP have a financial incentive to exaggerate your injuries or recommend unnecessary treatment. Your attorney can counter this by presenting objective medical evidence and pointing out that the doctor's professional reputation depends on honest assessments.",
+  "after": "Insurance companies may argue that doctors treating you under an LOP have a financial incentive to exaggerate your injuries or recommend unnecessary treatment. Your attorney can counter this by presenting objective medical evidence and pointing out that the doctor's professional reputation depends on honest assessments. In Georgia cases arising on or after April 21, 2025, the insurer can obtain the LOP itself, itemized billing, any sale of the bill to a factoring company and the price paid, and who referred you — and both sides may challenge the reasonableness and necessity of the treatment (O.C.G.A. § 51-12-1.1(d), (f))."
+ },
+ {
+  "id": "1712",
+  "surface": "faq:4:answer",
+  "before": "Yes. Attorneys routinely negotiate reductions of 20-40% on LOP balances, which directly increases your take-home settlement amount.",
+  "after": "Yes. Attorneys routinely negotiate reductions on LOP balances, which directly increases your take-home settlement amount."
+ },
+ {
+  "id": "1712",
+  "surface": "faq:5:answer",
+  "before": "An LOP is a voluntary agreement arranged by your attorney before treatment begins. A medical lien is a statutory right that hospitals and providers can assert after treatment. In Georgia, hospital liens are governed by O.C.G.A. § 44-14-470. In South Carolina, S.C. Code § 44-63-10 controls hospital liens.",
+  "after": "An LOP is a voluntary agreement arranged by your attorney, usually before or early in treatment. A medical lien is a statutory right that hospitals and providers can assert after treatment. In Georgia, hospitals, physician practices and certain other providers have a statutory lien under O.C.G.A. § 44-14-470. South Carolina has no hospital-lien statute; providers there rely on contract, including letters of protection."
+ }
+]

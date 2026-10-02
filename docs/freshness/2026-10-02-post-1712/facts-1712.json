@@ -1,0 +1,734 @@
+{
+ "postId": 1712,
+ "slug": "letters-of-protection-for-injury-victims",
+ "liveUrl": "https://rodenlaw.com/blog/letters-of-protection-for-injury-victims/",
+ "jurisdiction": "GA+SC",
+ "researchedAt": "2026-10-02",
+ "verifiedClaims": [
+  {
+   "surface": "excerpt",
+   "claim": "A letter of protection lets you get medical treatment now and pay from your settlement later. How they work in Georgia and South Carolina.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-1.1(d) (SB 68 signed text, gov.georgia.gov)",
+   "sourceUrl": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate description; published as Article description. No change needed, though the editor may add 'and what Georgia's 2025 law lets the insurer see'."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "A letter of protection (LOP) is a written agreement between your attorney and a medical provider that guarantees payment from your settlement proceeds, allowing you to receive treatment without upfront costs.",
+   "verdict": "update",
+   "currentValue": "Georgia RPC 1.15(I)(b)(2)(iii) recognizes 'A written agreement by the client or the lawyer on behalf of the client guaranteeing payment out of those funds' — i.e., payment out of the proceeds, not a personal guarantee. Georgia RPC 1.8(e) and South Carolina RPC 1.8(e) bar a lawyer from providing financial assistance to a client in pending litigation; Georgia Formal Advisory Opinion 11-1 (2013) notes that a lawyer's guarantee of a client's obligations to third parties is financial assistance in violation of Rule 1.8(e). The patient remains liable for the bill.",
+   "sourceName": "Georgia Rules of Professional Conduct 1.8(e), 1.15(I)(b) (State Bar of Georgia); S.C. RPC 1.8(e) (Rule 407, SCACR)",
+   "sourceUrl": "https://www.gabar.org/general-counsel/georgia-rules-of-professional-conduct",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'A letter of protection (LOP) is a written agreement, signed by you and your attorney, promising a medical provider that its bills will be paid out of your settlement or verdict, so you can get treatment without paying up front. You remain responsible for the bill.'"
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "LOPs are common in Georgia and South Carolina personal injury cases where victims lack health insurance or face coverage gaps.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-1.1(d) (Georgia's 2025 statute expressly addresses LOP arrangements)",
+   "sourceUrl": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download",
+   "retrievedAt": "2026-10-02",
+   "note": "Practice description; the Georgia legislature's 2025 LOP provision confirms the arrangements are common enough to legislate on."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Georgia's hospital lien law (O.C.G.A. § 44-14-470) and South Carolina's equivalent (S.C. Code § 44-63-10) create separate statutory lien rights.",
+   "verdict": "update",
+   "currentValue": "S.C. Code § 44-63-10 is 'Duties of Department of Health and Environmental Control' in Title 44, Chapter 63, 'Vital Statistics' (birth and death registration). South Carolina has no hospital- or provider-lien statute; a South Carolina provider's right to payment rests on the patient's contract and any assignment or letter of protection the patient signed. (Same finding recorded in facts-1711, 2026-09-24.) Georgia: O.C.G.A. §§ 44-14-470 to -477 give hospitals, nursing homes, physician practices, chiropractic practices and traumatic-burn-care practices a lien on the patient's causes of action.",
+   "sourceName": "S.C. Code Title 44, Chapter 63 (scstatehouse.gov); O.C.G.A. § 44-14-470",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t44c063.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Most consequential error (repeats on 5 surfaces). Rewrite: 'Georgia gives hospitals, physician practices and other providers a statutory lien on your injury claim (O.C.G.A. § 44-14-470); South Carolina has no hospital-lien statute, so South Carolina providers rely on contract — often a letter of protection.'"
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Insurance companies may attack LOPs by arguing provider bias.",
+   "verdict": "update",
+   "currentValue": "O.C.G.A. § 51-12-1.1(d) (SB 68, Act 9 of 2025, signed and effective April 21, 2025): 'In any claim for medical and healthcare expenses rendered under a letter of protection or any other arrangement by which a healthcare provider renders treatment in exchange for a promise of payment ... from any judgment or settlement ... regardless of how such arrangement is referred to, the following shall be relevant and discoverable: (1) A copy of the letter of protection; (2) All charges ... itemized and, to the extent applicable, coded ...; (3) If the healthcare provider sells the accounts receivable ... to a third party at less than the invoice price: (A) The name of the third party; and (B) The dollar amount for which the third party purchased such accounts receivable; and (4) Whether the claimant was referred for treatment under a letter of protection ... and, if so, the identity of the person who made the referral.' SB 68 § 9(b): Section 7 (which enacts § 51-12-1.1) applies 'only with respect to causes of action arising on or after the effective date of this Act'.",
+   "sourceName": "O.C.G.A. § 51-12-1.1(d) (SB 68 signed text)",
+   "sourceUrl": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download",
+   "retrievedAt": "2026-10-02",
+   "note": "Add the Georgia discovery rule: 'In Georgia, for injuries on or after April 21, 2025, the insurer can obtain the letter itself, itemized charges, any sale of the bill to a third party and its price, and who referred you (O.C.G.A. § 51-12-1.1(d)).'"
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Attorneys can negotiate LOP balances down 20-40% after settlement.",
+   "verdict": "drop",
+   "currentValue": "No published source for a 20-40% LOP reduction range was found; outcomes depend on the provider and the case.",
+   "sourceName": "No authoritative source located",
+   "sourceUrl": "https://www.gabar.org/general-counsel/georgia-rules-of-professional-conduct",
+   "retrievedAt": "2026-10-02",
+   "note": "Unsourced percentage on a publish surface. Replace with: 'Attorneys can often negotiate LOP balances down after settlement.' (sourceUrl points to the GA RPC page only because the schema requires a URL; there is no source for the figure.)"
+  },
+  {
+   "surface": "faq",
+   "claim": "A letter of protection (LOP) is a written agreement between your attorney and a medical provider guaranteeing that the provider will be paid from the proceeds of your personal injury settlement or verdict. The LOP allows you to receive medical treatment without paying out of pocket while your case is pending.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia RPC 1.15(I)(b)(2)(iii)",
+   "sourceUrl": "https://www.gabar.org/general-counsel/georgia-rules-of-professional-conduct",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate: payment 'from the proceeds' matches the Rule 1.15(I) formulation. Optionally add 'You remain responsible for the bill.'"
+  },
+  {
+   "surface": "faq",
+   "claim": "Yes. An LOP is a contractual agreement that obligates you to pay the medical provider from your settlement proceeds. If your case is unsuccessful and you recover nothing, you may still owe the medical bills.",
+   "verdict": "update",
+   "currentValue": "Georgia RPC 1.15(I)(b): a lawyer 'may not disregard a third person's interest' in funds held where it is based on 'A written agreement by the client or the lawyer on behalf of the client guaranteeing payment out of those funds' (unless the lawyer reasonably concludes there is a valid defense). South Carolina RPC 1.15, Comment [4]: third parties may have 'lawful claims against specific funds' and once a claim has matured 'the lawyer must refuse to surrender the property to the client until the claims are resolved'.",
+   "sourceName": "Georgia RPC 1.15(I)(b); S.C. RPC 1.15 cmt. [4] (Rule 407, SCACR)",
+   "sourceUrl": "https://www.sccourts.org/resources/judicial-community/court-rules/appellate/rule-407/rule-115/",
+   "retrievedAt": "2026-10-02",
+   "note": "Keep both sentences; add: 'It also binds your attorney: once settlement money comes in, ethics rules in both states require the attorney to protect the provider's claim to it rather than pay it all out to you.'"
+  },
+  {
+   "surface": "faq",
+   "claim": "No. Many doctors and medical facilities are selective about which LOPs they accept. Providers are more likely to accept an LOP from an attorney they have an established professional relationship with and trust to resolve the case.",
+   "verdict": "update",
+   "currentValue": "O.C.G.A. § 51-12-1.1(d)(4): in Georgia LOP claims, 'Whether the claimant was referred for treatment under a letter of protection ... and, if so, the identity of the person who made the referral' is relevant and discoverable.",
+   "sourceName": "O.C.G.A. § 51-12-1.1(d)(4) (SB 68 signed text)",
+   "sourceUrl": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download",
+   "retrievedAt": "2026-10-02",
+   "note": "Practice description is fine, but the attorney-provider relationship is now discoverable in Georgia. Add: 'In Georgia, the insurer can learn who referred you to an LOP provider (O.C.G.A. § 51-12-1.1(d)(4)).'"
+  },
+  {
+   "surface": "faq",
+   "claim": "Insurance companies may argue that doctors treating you under an LOP have a financial incentive to exaggerate your injuries or recommend unnecessary treatment. Your attorney can counter this by presenting objective medical evidence and pointing out that the doctor's professional reputation depends on honest assessments.",
+   "verdict": "update",
+   "currentValue": "O.C.G.A. § 51-12-1.1(d) (SB 68, Act 9 of 2025, signed and effective April 21, 2025): 'In any claim for medical and healthcare expenses rendered under a letter of protection or any other arrangement by which a healthcare provider renders treatment in exchange for a promise of payment ... from any judgment or settlement ... regardless of how such arrangement is referred to, the following shall be relevant and discoverable: (1) A copy of the letter of protection; (2) All charges ... itemized and, to the extent applicable, coded ...; (3) If the healthcare provider sells the accounts receivable ... to a third party at less than the invoice price: (A) The name of the third party; and (B) The dollar amount for which the third party purchased such accounts receivable; and (4) Whether the claimant was referred for treatment under a letter of protection ... and, if so, the identity of the person who made the referral.' SB 68 § 9(b): Section 7 (which enacts § 51-12-1.1) applies 'only with respect to causes of action arising on or after the effective date of this Act'.",
+   "sourceName": "O.C.G.A. § 51-12-1.1(d), (f) (SB 68 signed text)",
+   "sourceUrl": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download",
+   "retrievedAt": "2026-10-02",
+   "note": "Add: 'In Georgia cases arising on or after April 21, 2025, the insurer is entitled to the LOP itself, itemized billing, any sale of the bill to a factoring company and the price paid, and who referred you — and both sides may challenge the reasonableness and necessity of the treatment (O.C.G.A. § 51-12-1.1(d), (f)).' This FAQ is FAQPage structured data."
+  },
+  {
+   "surface": "faq",
+   "claim": "Yes. Attorneys routinely negotiate reductions of 20-40% on LOP balances, which directly increases your take-home settlement amount.",
+   "verdict": "drop",
+   "currentValue": "No source for a 20-40% range.",
+   "sourceName": "No authoritative source located",
+   "sourceUrl": "https://www.gabar.org/general-counsel/georgia-rules-of-professional-conduct",
+   "retrievedAt": "2026-10-02",
+   "note": "Replace with: 'Yes. Attorneys routinely negotiate reductions on LOP balances, which directly increases your take-home settlement amount.' FAQPage structured data — fix here and in Key Takeaways."
+  },
+  {
+   "surface": "faq",
+   "claim": "An LOP is a voluntary agreement arranged by your attorney before treatment begins. A medical lien is a statutory right that hospitals and providers can assert after treatment. In Georgia, hospital liens are governed by O.C.G.A. § 44-14-470. In South Carolina, S.C. Code § 44-63-10 controls hospital liens.",
+   "verdict": "update",
+   "currentValue": "S.C. Code § 44-63-10 is 'Duties of Department of Health and Environmental Control' in Title 44, Chapter 63, 'Vital Statistics' (birth and death registration). South Carolina has no hospital- or provider-lien statute; a South Carolina provider's right to payment rests on the patient's contract and any assignment or letter of protection the patient signed. (Same finding recorded in facts-1711, 2026-09-24.) Georgia: perfection requires 15 days' prior written notice and a verified statement filed within 75 days after discharge (hospitals) or 90 days after first treatment (physician/chiropractic practices) (§ 44-14-471(a)).",
+   "sourceName": "S.C. Code Title 44, Chapter 63; O.C.G.A. §§ 44-14-470, -471",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t44c063.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Replace the last two sentences: 'In Georgia, hospitals, physician practices and certain other providers have a statutory lien under O.C.G.A. § 44-14-470. South Carolina has no hospital-lien statute; providers there rely on contract, including letters of protection.' Also soften 'before treatment begins' to 'usually before or early in treatment'."
+  },
+  {
+   "surface": "body",
+   "claim": "For general background, the Cornell Law Institute's overview of personal injury law provides a solid foundation.",
+   "verdict": "update",
+   "currentValue": "The publisher is the Legal Information Institute (LII) at Cornell Law School; https://www.law.cornell.edu/wex/personal_injury returns HTTP 200 (2026-10-02).",
+   "sourceName": "Legal Information Institute, Cornell Law School — Wex: personal injury",
+   "sourceUrl": "https://www.law.cornell.edu/wex/personal_injury",
+   "retrievedAt": "2026-10-02",
+   "note": "Rename to 'Cornell Law School's Legal Information Institute overview of personal injury law'. Keep the link."
+  },
+  {
+   "surface": "body",
+   "claim": "In the letter, the attorney guarantees that the provider's bills will be paid out of any settlement or verdict the client receives.",
+   "verdict": "update",
+   "currentValue": "Georgia RPC 1.8(e) and S.C. RPC 1.8(e): 'A lawyer shall not provide financial assistance to a client in connection with pending or contemplated litigation' except court costs and litigation expenses. Georgia FAO 11-1 (2013) treats a lawyer's guarantee of a client's obligations to third parties as prohibited financial assistance. Rule 1.15(I)(b)(2)(iii) recognizes an agreement 'guaranteeing payment out of those funds'.",
+   "sourceName": "Georgia RPC 1.8(e), 1.15(I); S.C. RPC 1.8(e)",
+   "sourceUrl": "https://www.sccourts.org/resources/judicial-community/court-rules/appellate/rule-407/rule-18/",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'In the letter, the attorney — on the client's behalf — agrees that the provider's bills will be paid out of any settlement or verdict before the client receives the balance. The attorney does not personally guarantee the bill; ethics rules in both states forbid that.'"
+  },
+  {
+   "surface": "body",
+   "claim": "An LOP is not health insurance or a loan. It is a promise — backed by the attorney's professional reputation — that the medical provider will be compensated from the proceeds of the claim.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia RPC 1.15(I)(b)(2)(iii); S.C. RPC 1.15 cmt. [4]",
+   "sourceUrl": "https://www.gabar.org/general-counsel/georgia-rules-of-professional-conduct",
+   "retrievedAt": "2026-10-02",
+   "note": "Consistent with the trust-account rules; optionally add 'and by the attorney's ethical duty to protect the provider's claim to those funds'."
+  },
+  {
+   "surface": "body",
+   "claim": "LOPs only work when an attorney is involved. Providers will not accept a letter of protection from an unrepresented individual.",
+   "verdict": "update",
+   "currentValue": "O.C.G.A. § 51-12-1.1(d) covers 'a letter of protection or any other arrangement by which a healthcare provider renders treatment in exchange for a promise of payment ... from any judgment or settlement ... regardless of how such arrangement is referred to' — it does not require an attorney.",
+   "sourceName": "O.C.G.A. § 51-12-1.1(d) (SB 68 signed text)",
+   "sourceUrl": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download",
+   "retrievedAt": "2026-10-02",
+   "note": "Absolute claim. Rewrite: 'Providers generally accept LOPs only from an attorney, because the attorney is the one who controls the settlement funds.'"
+  },
+  {
+   "surface": "body",
+   "claim": "It identifies the patient, describes the claim, and guarantees the provider's charges will be paid from the settlement or verdict proceeds.",
+   "verdict": "update",
+   "currentValue": "Same as the 'attorney guarantees' entry: payment from proceeds, not a personal guarantee (Ga./S.C. RPC 1.8(e)). In Georgia the letter itself is discoverable (§ 51-12-1.1(d)(1)).",
+   "sourceName": "Georgia RPC 1.8(e); O.C.G.A. § 51-12-1.1(d)(1)",
+   "sourceUrl": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: '... and commits that the provider's charges will be paid from the settlement or verdict proceeds. In Georgia, assume the insurer will see the letter — it is discoverable (O.C.G.A. § 51-12-1.1(d)(1)).'"
+  },
+  {
+   "surface": "body",
+   "claim": "The provider bills the attorney's office rather than sending you to collections.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Practice description",
+   "sourceUrl": "https://www.gabar.org/general-counsel/georgia-rules-of-professional-conduct",
+   "retrievedAt": "2026-10-02",
+   "note": "No legal claim; keep."
+  },
+  {
+   "surface": "body",
+   "claim": "The case settles or goes to verdict. Your attorney uses the proceeds to pay providers who treated you under LOPs, typically negotiating the bills down first.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia RPC 1.15(I); S.C. RPC 1.15",
+   "sourceUrl": "https://www.sccourts.org/resources/judicial-community/court-rules/appellate/rule-407/rule-115/",
+   "retrievedAt": "2026-10-02",
+   "note": "Consistent with trust-account rules."
+  },
+  {
+   "surface": "body",
+   "claim": "Even with insurance, a $5,000 or $10,000 deductible can block access to care for people living paycheck to paycheck.",
+   "verdict": "keep",
+   "currentValue": "HealthCare.gov: the 2026 out-of-pocket limit for a Marketplace plan is 'No more than $10,600 for an individual or $21,200 for a family' (2027: $12,000 / $24,000). Deductibles of $5,000-$10,000 fall within the permitted range.",
+   "sourceName": "HealthCare.gov — Out-of-pocket maximum/limit",
+   "sourceUrl": "https://www.healthcare.gov/glossary/out-of-pocket-maximum-limit/",
+   "retrievedAt": "2026-10-02",
+   "note": "Illustrative figures, plausible against the federal limit. Keep (dollar figures 1-2 of 9)."
+  },
+  {
+   "surface": "body",
+   "claim": "Job loss, COBRA expiration, and Medicaid eligibility issues create insurance gaps.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "General description",
+   "sourceUrl": "https://www.healthcare.gov/glossary/out-of-pocket-maximum-limit/",
+   "retrievedAt": "2026-10-02",
+   "note": "No change."
+  },
+  {
+   "surface": "body",
+   "claim": "Choice of provider. Instead of being limited to your insurance network, you can see specialists experienced in documenting injuries for litigation and providing court testimony.",
+   "verdict": "update",
+   "currentValue": "O.C.G.A. § 51-12-1.1(d)(4) makes the referral source discoverable in Georgia.",
+   "sourceName": "O.C.G.A. § 51-12-1.1(d)(4)",
+   "sourceUrl": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download",
+   "retrievedAt": "2026-10-02",
+   "note": "Tone risk: in Georgia this phrasing reads as the defense's 'litigation-driven treatment' theme and the referral is now discoverable. Suggest: 'you can see specialists who treat injury patients and are willing to testify about your care.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Bill negotiation leverage. Your attorney manages disbursement and can negotiate bills down before paying them. Providers who accept LOPs generally expect some reduction.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Practice description",
+   "sourceUrl": "https://www.gabar.org/general-counsel/georgia-rules-of-professional-conduct",
+   "retrievedAt": "2026-10-02",
+   "note": "Keep; no figure."
+  },
+  {
+   "surface": "body",
+   "claim": "You remain personally liable. If your case loses at trial or settles for less than expected, you still owe the medical provider.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Ga./S.C. RPC 1.8(e) (lawyer cannot guarantee the client's debt, so the debt stays with the patient)",
+   "sourceUrl": "https://www.sccourts.org/resources/judicial-community/court-rules/appellate/rule-407/rule-18/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct and important."
+  },
+  {
+   "surface": "body",
+   "claim": "Potentially inflated charges. Some LOP providers charge higher rates than they would bill to insurance companies. Defense attorneys will use this to argue your medical expenses are unreasonable.",
+   "verdict": "update",
+   "currentValue": "O.C.G.A. § 51-12-1.1(b): medical special damages are 'limited to the reasonable value of medically necessary care, treatment, or services', determined by the trier of fact. (c): if the plaintiff 'has any form of public or private health insurance', evidence of reasonable value 'shall include both the amounts charged ... and the amounts actually necessary to satisfy such charges pursuant to the insurance contract ... regardless of whether the health insurance has been used'. (e): the section 'abrogates the common law collateral source rule to the extent necessary to introduce the evidence described'. Applies to causes of action arising on or after April 21, 2025. For LOP claims, § 51-12-1.1(d)(3) also makes discoverable any sale of the receivable 'at less than the invoice price' and the price paid.",
+   "sourceName": "O.C.G.A. § 51-12-1.1(c)-(d) (SB 68 signed text)",
+   "sourceUrl": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download",
+   "retrievedAt": "2026-10-02",
+   "note": "Add: 'In Georgia, if the provider sold your bill to a factoring company at a discount, the defense can learn the buyer and the price paid (O.C.G.A. § 51-12-1.1(d)(3)), and if you have health insurance the jury can hear what your insurer would have paid even if you never used it (§ 51-12-1.1(c)).'"
+  },
+  {
+   "surface": "body",
+   "claim": "LOPs are legitimate and recognized, but expect the opposing insurer to challenge your medical bills.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-1.1(d)",
+   "sourceUrl": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download",
+   "retrievedAt": "2026-10-02",
+   "note": "Georgia's 2025 statute expressly recognizes LOP arrangements."
+  },
+  {
+   "surface": "body",
+   "claim": "Your attorney counters by showing the provider's rates fall within the local market range and that the full billed amount — not a discounted insurance rate — reflects the true cost of care.",
+   "verdict": "update",
+   "currentValue": "O.C.G.A. § 51-12-1.1(b): medical special damages are 'limited to the reasonable value of medically necessary care, treatment, or services', determined by the trier of fact. (c): if the plaintiff 'has any form of public or private health insurance', evidence of reasonable value 'shall include both the amounts charged ... and the amounts actually necessary to satisfy such charges pursuant to the insurance contract ... regardless of whether the health insurance has been used'. (e): the section 'abrogates the common law collateral source rule to the extent necessary to introduce the evidence described'. Applies to causes of action arising on or after April 21, 2025. South Carolina: Covington v. George, 359 S.C. 100 (2004) — the amount a provider accepted from a collateral source is inadmissible to challenge reasonableness: 'While a defendant is permitted to attack the necessity and reasonableness of medical care and costs, he cannot do so using evidence of payments made by a collateral source.'",
+   "sourceName": "O.C.G.A. § 51-12-1.1(b)-(c); Covington v. George, Op. No. 25828 (S.C. May 24, 2004)",
+   "sourceUrl": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download",
+   "retrievedAt": "2026-10-02",
+   "note": "State-split: true in South Carolina (Covington). In Georgia, for causes of action arising on or after April 21, 2025, damages are limited to the 'reasonable value of medically necessary care' and an insured plaintiff's jury hears both the billed and the insurer-rate amounts. Rewrite: 'Your attorney counters by showing the provider's rates fall within the local market range. In South Carolina the defense cannot use discounted insurance payments to attack the bill (Covington v. George, 2004); in Georgia, since April 21, 2025, the jury decides the reasonable value and, if you have health insurance, may hear both the billed amount and what insurance would have paid.'"
+  },
+  {
+   "surface": "body",
+   "claim": "In reality, attorneys refer clients to providers they trust to deliver quality care and document injuries thoroughly — the same reason any professional makes referrals within their network.",
+   "verdict": "update",
+   "currentValue": "O.C.G.A. § 51-12-1.1(d)(4): the identity of the person who referred the claimant for LOP treatment is relevant and discoverable in Georgia.",
+   "sourceName": "O.C.G.A. § 51-12-1.1(d)(4)",
+   "sourceUrl": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download",
+   "retrievedAt": "2026-10-02",
+   "note": "Add: 'In Georgia, the referral itself is discoverable (O.C.G.A. § 51-12-1.1(d)(4)), so it must be one you would be comfortable explaining to a jury.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Some adjusters argue that because you never paid for treatment, you have not suffered a real economic loss. This argument fails under both Georgia and South Carolina law. Both states follow the collateral source rule, which prevents defendants from reducing damages based on payments from third parties.",
+   "verdict": "update",
+   "currentValue": "South Carolina: 'compensation received by an injured party from a source wholly independent of the wrongdoer will not reduce the damages owed by the wrongdoer' (Covington v. George, 2004). Georgia: the common-law collateral source rule still applies, but O.C.G.A. § 51-12-1.1(e) 'abrogates the common law collateral source rule to the extent necessary' to admit the evidence in (c) and (d) — for causes of action arising on or after April 21, 2025.",
+   "sourceName": "Covington v. George (S.C. 2004); O.C.G.A. § 51-12-1.1(e)",
+   "sourceUrl": "https://www.sccourts.org/opinions/advSheets/no212004.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "The 'no out-of-pocket loss' rebuttal is still right in both states (an LOP debt is a real debt). Rewrite the third sentence: 'South Carolina's collateral source rule fully applies. Georgia's still applies too, but since April 21, 2025 it has been partly abrogated for medical bills: the jury may hear what health insurance would have paid, and in LOP cases the defense may obtain the letter, the itemized bill and any discounted sale of the account (O.C.G.A. § 51-12-1.1).'"
+  },
+  {
+   "surface": "body",
+   "claim": "Treatment provided on credit through an LOP does not eliminate your right to recover its reasonable value.",
+   "verdict": "keep",
+   "currentValue": "O.C.G.A. § 51-12-1.1(b): recovery is 'the reasonable value of medically necessary care, treatment, or services'.",
+   "sourceName": "O.C.G.A. § 51-12-1.1(b)",
+   "sourceUrl": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate and now matches Georgia's statutory wording."
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia has no statute specifically governing letters of protection. LOPs operate under general contract law principles.",
+   "verdict": "update",
+   "currentValue": "O.C.G.A. § 51-12-1.1(d) (SB 68, Act 9 of 2025, signed and effective April 21, 2025): 'In any claim for medical and healthcare expenses rendered under a letter of protection or any other arrangement by which a healthcare provider renders treatment in exchange for a promise of payment ... from any judgment or settlement ... regardless of how such arrangement is referred to, the following shall be relevant and discoverable: (1) A copy of the letter of protection; (2) All charges ... itemized and, to the extent applicable, coded ...; (3) If the healthcare provider sells the accounts receivable ... to a third party at less than the invoice price: (A) The name of the third party; and (B) The dollar amount for which the third party purchased such accounts receivable; and (4) Whether the claimant was referred for treatment under a letter of protection ... and, if so, the identity of the person who made the referral.' SB 68 § 9(b): Section 7 (which enacts § 51-12-1.1) applies 'only with respect to causes of action arising on or after the effective date of this Act'.",
+   "sourceName": "O.C.G.A. § 51-12-1.1(d) (SB 68, signed April 21, 2025)",
+   "sourceUrl": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download",
+   "retrievedAt": "2026-10-02",
+   "note": "Outdated — the key correction. Rewrite: 'Georgia does not regulate how letters of protection are formed — they are contracts — but since April 21, 2025 a statute governs how they are used in court. For injuries on or after that date, O.C.G.A. § 51-12-1.1(d) makes the LOP itself, itemized charges, any sale of the bill to a third party (and the price), and who referred you for treatment relevant and discoverable.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Under O.C.G.A. § 44-14-470, hospitals have a statutory right to place a lien on personal injury settlement proceeds for the reasonable value of treatment provided.",
+   "verdict": "update",
+   "currentValue": "O.C.G.A. § 44-14-470(b): a hospital, nursing home, physician practice, chiropractic practice or traumatic burn care practice has a lien 'for the reasonable charges for ... care and treatment', which 'shall be upon any and all causes of action accruing to the person to whom the care was furnished'; it is 'subject ... to any attorney's lien' and 'shall not be a lien against such injured person ... or any other property or assets'.",
+   "sourceName": "O.C.G.A. § 44-14-470 (2025 Code via Justia; recorded in facts-1711)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-44/chapter-14/article-8/part-8/section-44-14-470/",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'Under O.C.G.A. § 44-14-470, hospitals, nursing homes, physician practices, chiropractic practices and burn-care practices have a statutory lien on your injury claim — not on you or your property — for the reasonable charges for treating the injuries.'"
+  },
+  {
+   "surface": "body",
+   "claim": "When a hospital files a lien, the attorney must satisfy it before disbursing settlement funds — similar in effect to an LOP, but created by statute rather than agreement.",
+   "verdict": "update",
+   "currentValue": "Georgia RPC 1.15(I)(b): a lawyer 'may not disregard' a known third-person interest based on 'A statutory lien' or a written agreement 'guaranteeing payment out of those funds', but 'may disregard the third person's claimed interest if the lawyer reasonably concludes that there is a valid defense'. A perfected lien survives a settlement made without the lienholder (O.C.G.A. § 44-14-473). The lien is subordinate to the attorney's lien (§ 44-14-470(b)).",
+   "sourceName": "Georgia RPC 1.15(I)(b); O.C.G.A. §§ 44-14-470(b), -473",
+   "sourceUrl": "https://www.gabar.org/general-counsel/georgia-rules-of-professional-conduct",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'When a provider has a valid lien, the attorney must protect it before disbursing settlement funds (Georgia Rule 1.15(I)) — the same duty that applies to an LOP — unless there is a valid defense to the lien.'"
+  },
+  {
+   "surface": "body",
+   "claim": "The lien amount is capped at \"reasonable charges,\" and attorneys can negotiate these amounts.",
+   "verdict": "keep",
+   "currentValue": "§ 44-14-470(b): lien 'for the reasonable charges for hospital, nursing home, physician practice, chiropractic practice, or traumatic burn care medical practice care and treatment'.",
+   "sourceName": "O.C.G.A. § 44-14-470(b)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-44/chapter-14/article-8/part-8/section-44-14-470/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct."
+  },
+  {
+   "surface": "body",
+   "claim": "Hospital liens must be properly filed with the county clerk's office and comply with the statute's notice requirements to be enforceable.",
+   "verdict": "update",
+   "currentValue": "O.C.G.A. § 44-14-471(a): written notice at least 15 days before filing to the patient and, to the best of the provider's knowledge, the liable parties and insurers; then a verified statement filed with the clerk of the superior court in the county where the provider is located and the county where the patient resides (if a Georgia resident), within 75 days after discharge (hospitals, nursing homes, burn care) or 90 days after first treatment (physician and chiropractic practices). § 44-14-471(c): no lien is enforceable unless the provider first submitted the claim to the patient's health insurers. § 44-14-471(b): noncompliance invalidates the lien except against a liable party with actual notice before settlement.",
+   "sourceName": "O.C.G.A. § 44-14-471 (2025 Code via Justia; recorded in facts-1711)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-44/chapter-14/article-8/part-8/section-44-14-471/",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'To be enforceable, a Georgia lien requires written notice at least 15 days before filing and a verified statement filed with the superior court clerk in the provider's county and the patient's county of residence — within 75 days after discharge for hospitals, or 90 days after the first visit for physician and chiropractic practices. The provider must also first bill the patient's health insurance (§ 44-14-471(c)).'"
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia imposes a two-year statute of limitations for personal injury claims under O.C.G.A. § 9-3-33.",
+   "verdict": "keep",
+   "currentValue": "§ 9-3-33: 'actions for injuries to the person shall be brought within two years after the right of action accrues'.",
+   "sourceName": "O.C.G.A. § 9-3-33 (Justia; recorded in sibling packs)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct."
+  },
+  {
+   "surface": "body",
+   "claim": "If your case is not filed in time, you still owe the medical provider for treatment received under the LOP.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Ga./S.C. RPC 1.8(e)",
+   "sourceUrl": "https://www.sccourts.org/resources/judicial-community/court-rules/appellate/rule-407/rule-18/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct."
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia follows a modified comparative fault rule under O.C.G.A. § 51-12-33. If you are 50% or more at fault, you recover nothing — and you still owe your LOP providers.",
+   "verdict": "keep",
+   "currentValue": "§ 51-12-33(g): 'the plaintiff shall not be entitled to receive any damages if the plaintiff is 50 percent or more responsible'.",
+   "sourceName": "O.C.G.A. § 51-12-33 (Justia; recorded in sibling packs)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct."
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia's collateral source rule (O.C.G.A. § 51-12-1) prevents defendants from introducing evidence that a plaintiff's bills were paid by insurance or other sources.",
+   "verdict": "update",
+   "currentValue": "Wrong citation and now incomplete. The 1987 statute at O.C.G.A. § 51-12-1(b), which admitted some collateral-source evidence, was struck down in Denton v. Con-Way Southern Express, 261 Ga. 41 (1991); Georgia's collateral source rule is common law (Olariu v. Marrero, 248 Ga. App. 824 (2001)). For causes of action arising on or after April 21, 2025, O.C.G.A. § 51-12-1.1(c), (e) abrogates the rule for medical expenses to the extent needed to admit, for an insured plaintiff, 'the amounts actually necessary to satisfy such charges pursuant to the insurance contract'.",
+   "sourceName": "Denton v. Con-Way Southern Express (Ga. 1991); O.C.G.A. § 51-12-1.1 (SB 68)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/1991/s90a1101-1.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite heading section: 'Georgia's collateral source rule is a common-law rule (it is not codified in § 51-12-1). For injuries before April 21, 2025, it keeps evidence of insurance payments away from the jury. For injuries on or after that date, O.C.G.A. § 51-12-1.1 partly abrogates it for medical bills: if you have health insurance, the jury may hear both the billed amount and what insurance would have paid, and in LOP cases the defense can obtain the letter, the itemized bill, any discounted sale of the account and who referred you.' Olariu: https://law.justia.com/cases/georgia/court-of-appeals/2001/a00a2310-0.html"
+  },
+  {
+   "surface": "body",
+   "claim": "This supports LOP use by preventing the defense from arguing your \"real\" treatment cost was lower than the billed amount.",
+   "verdict": "update",
+   "currentValue": "O.C.G.A. § 51-12-1.1(b): medical special damages are 'limited to the reasonable value of medically necessary care, treatment, or services', determined by the trier of fact. (c): if the plaintiff 'has any form of public or private health insurance', evidence of reasonable value 'shall include both the amounts charged ... and the amounts actually necessary to satisfy such charges pursuant to the insurance contract ... regardless of whether the health insurance has been used'. (e): the section 'abrogates the common law collateral source rule to the extent necessary to introduce the evidence described'. Applies to causes of action arising on or after April 21, 2025.",
+   "sourceName": "O.C.G.A. § 51-12-1.1(b)-(f)",
+   "sourceUrl": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download",
+   "retrievedAt": "2026-10-02",
+   "note": "No longer true in Georgia for post-April 21, 2025 injuries; § 51-12-1.1(f) expressly preserves both sides' right to challenge reasonableness. Delete or limit to pre-2025 injuries."
+  },
+  {
+   "surface": "body",
+   "claim": "Like Georgia, South Carolina has no statute specifically addressing letters of protection. LOPs are governed by contract law principles within the broader framework of South Carolina's personal injury statutes.",
+   "verdict": "update",
+   "currentValue": "No South Carolina LOP statute located; Act No. 42 of 2025 (H.3430, tort reform) amended joint-and-several liability (§ 15-38-15) and liquor liability only and did not touch medical-damages evidence. Georgia, however, now has one (§ 51-12-1.1(d)).",
+   "sourceName": "S.C. H.3430 / Act No. 42 of 2025 (scstatehouse.gov); O.C.G.A. § 51-12-1.1",
+   "sourceUrl": "https://www.scstatehouse.gov/sess126_2025-2026/bills/3430.htm",
+   "retrievedAt": "2026-10-02",
+   "note": "South Carolina half is correct; 'Like Georgia' is now wrong. Rewrite: 'Unlike Georgia, South Carolina has no statute addressing letters of protection; they are ordinary contracts.'"
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina's hospital lien statute, S.C. Code § 44-63-10 et seq., gives hospitals the right to assert liens against personal injury recoveries for the reasonable cost of care.",
+   "verdict": "drop",
+   "currentValue": "S.C. Code § 44-63-10 is 'Duties of Department of Health and Environmental Control' in Title 44, Chapter 63, 'Vital Statistics' (birth and death registration). South Carolina has no hospital- or provider-lien statute; a South Carolina provider's right to payment rests on the patient's contract and any assignment or letter of protection the patient signed. (Same finding recorded in facts-1711, 2026-09-24.)",
+   "sourceName": "S.C. Code Title 44, Chapter 63 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t44c063.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Delete. Replace the 'Hospital Liens and Medical Provider Rights' section with: 'South Carolina has no hospital-lien statute. A South Carolina hospital or doctor cannot file a statutory lien against your claim; its right to payment rests on your contract and on any assignment of benefits or letter of protection you signed. The claims that do reach a South Carolina settlement by law are health-insurer subrogation (S.C. Code § 38-71-190), Medicaid (§§ 43-7-430, -440), Medicare and workers' compensation (§ 42-1-560).'"
+  },
+  {
+   "surface": "body",
+   "claim": "The lien must be filed in the county where the hospital is located and attaches to any cause of action against the responsible party.",
+   "verdict": "drop",
+   "currentValue": "S.C. Code § 44-63-10 is 'Duties of Department of Health and Environmental Control' in Title 44, Chapter 63, 'Vital Statistics' (birth and death registration). South Carolina has no hospital- or provider-lien statute; a South Carolina provider's right to payment rests on the patient's contract and any assignment or letter of protection the patient signed. (Same finding recorded in facts-1711, 2026-09-24.)",
+   "sourceName": "S.C. Code Title 44, Chapter 63",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t44c063.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Delete (describes a nonexistent statute)."
+  },
+  {
+   "surface": "body",
+   "claim": "These liens function similarly to LOPs but carry statutory enforcement mechanisms that LOPs do not.",
+   "verdict": "drop",
+   "currentValue": "S.C. Code § 44-63-10 is 'Duties of Department of Health and Environmental Control' in Title 44, Chapter 63, 'Vital Statistics' (birth and death registration). South Carolina has no hospital- or provider-lien statute; a South Carolina provider's right to payment rests on the patient's contract and any assignment or letter of protection the patient signed. (Same finding recorded in facts-1711, 2026-09-24.)",
+   "sourceName": "S.C. Code Title 44, Chapter 63",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t44c063.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Delete. In South Carolina, the LOP (contract) is the provider's main protection, enforced through the attorney's Rule 1.15 duty once funds arrive."
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina allows three years for personal injury claims under S.C. Code § 15-3-530.",
+   "verdict": "keep",
+   "currentValue": "§ 15-3-530(5): three years for 'an action for ... any injury to the person or rights of another, not arising on contract'.",
+   "sourceName": "S.C. Code § 15-3-530 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct."
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina bars recovery if you are 51% or more at fault.",
+   "verdict": "keep",
+   "currentValue": "Nelson v. Concrete Supply Co., 303 S.C. 243 (1991): a plaintiff may recover if his negligence is not greater than the defendants'.",
+   "sourceName": "Nelson v. Concrete Supply Co. (S.C. 1991)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1265650/nelson-v-concrete-supply-company/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct; optional cite."
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina's collateral source rule, affirmed by the state Supreme Court in Covington v. George, prevents defendants from reducing damages by showing compensation from independent sources.",
+   "verdict": "keep",
+   "currentValue": "Covington v. George, 359 S.C. 100, 597 S.E.2d 142 (2004), Op. No. 25828: affirmed exclusion of the amount the hospital accepted; 'compensation received by an injured party from a source wholly independent of the wrongdoer will not reduce the damages owed by the wrongdoer'. Act No. 42 of 2025 did not change it.",
+   "sourceName": "Covington v. George, S.C. Supreme Court Advance Sheet No. 21 (2004)",
+   "sourceUrl": "https://www.sccourts.org/opinions/advSheets/no212004.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct. Add the cite '(2004)'."
+  },
+  {
+   "surface": "body",
+   "claim": "The full value of medical treatment — including treatment under an LOP — remains recoverable as damages.",
+   "verdict": "keep",
+   "currentValue": "Covington: a defendant may attack necessity and reasonableness but 'cannot do so using evidence of payments made by a collateral source'.",
+   "sourceName": "Covington v. George (S.C. 2004)",
+   "sourceUrl": "https://www.sccourts.org/opinions/advSheets/no212004.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct for South Carolina; reasonableness can still be contested."
+  },
+  {
+   "surface": "body",
+   "claim": "Both states permit letters of protection, but important differences affect how LOPs are used in practice:",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-1.1(d)",
+   "sourceUrl": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct; the biggest difference (Georgia's 2025 disclosure rule) should be added to the table — see recommendedEdits."
+  },
+  {
+   "surface": "body",
+   "claim": "Hospital Lien Statute | O.C.G.A. § 44-14-470 | S.C. Code § 44-63-10 et seq.",
+   "verdict": "update",
+   "currentValue": "Georgia: O.C.G.A. §§ 44-14-470 to -477. South Carolina: none.",
+   "sourceName": "O.C.G.A. § 44-14-470; S.C. Code Title 44, Ch. 63",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t44c063.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Table row. SC cell: 'None — providers rely on contract (often an LOP)'. GA cell: 'O.C.G.A. §§ 44-14-470 to -477 (hospitals, nursing homes, physician, chiropractic and burn-care practices)'."
+  },
+  {
+   "surface": "body",
+   "claim": "Lien Filing Requirement | Filed with county clerk in the county where treatment occurred | Filed in county where hospital is located",
+   "verdict": "update",
+   "currentValue": "Georgia: superior court clerk in the provider's county and the patient's county of residence; 15 days' prior notice; 75 days after discharge (hospitals) or 90 days after first treatment (physician/chiropractic) (§ 44-14-471(a)). South Carolina: not applicable.",
+   "sourceName": "O.C.G.A. § 44-14-471(a)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-44/chapter-14/article-8/part-8/section-44-14-471/",
+   "retrievedAt": "2026-10-02",
+   "note": "Table row. GA cell: 'Superior court clerk, provider's county and patient's county; within 75 days of discharge (hospitals) or 90 days of first visit (physicians/chiropractors)'. SC cell: 'Not applicable'."
+  },
+  {
+   "surface": "body",
+   "claim": "Collateral Source Rule | Codified in part (O.C.G.A. § 51-12-1); strong protection | Established through case law; strong protection",
+   "verdict": "update",
+   "currentValue": "Georgia: common law (codification struck in Denton, 1991), partly abrogated for medical expenses by O.C.G.A. § 51-12-1.1 for causes of action arising on or after April 21, 2025. South Carolina: case law (Covington v. George, 2004); unchanged by Act No. 42 of 2025.",
+   "sourceName": "O.C.G.A. § 51-12-1.1; Denton (Ga. 1991); Covington (S.C. 2004)",
+   "sourceUrl": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download",
+   "retrievedAt": "2026-10-02",
+   "note": "Table row. GA cell: 'Common law, partly abrogated for medical bills since April 21, 2025 (O.C.G.A. § 51-12-1.1); LOP, itemized bills, factoring sale and referral source discoverable'. SC cell: keep."
+  },
+  {
+   "surface": "body",
+   "claim": "LOP Provider Landscape | Broad network of providers in metro Atlanta, Savannah, and surrounding areas accept LOPs | Growing acceptance in Charleston, Columbia, Myrtle Beach, and the Lowcountry",
+   "verdict": "update",
+   "currentValue": "No source for comparative provider-acceptance claims.",
+   "sourceName": "No authoritative source located",
+   "sourceUrl": "https://www.gabar.org/general-counsel/georgia-rules-of-professional-conduct",
+   "retrievedAt": "2026-10-02",
+   "note": "Unsourced market characterization ('Growing acceptance'). Replace both cells with neutral text, e.g. 'Available; varies by provider' / 'Available; varies by provider', or replace the row with 'LOP disclosure in litigation | Discoverable since 4/21/2025 (O.C.G.A. § 51-12-1.1(d)) | No statute'."
+  },
+  {
+   "surface": "body",
+   "claim": "Med-Pay Coverage (Auto) | Optional; commonly $5,000-$25,000 when carried | Optional; commonly $1,000-$10,000 when carried",
+   "verdict": "update",
+   "currentValue": "'Optional' is correct for both states (neither requires med-pay). No source found for the 'commonly' ranges.",
+   "sourceName": "No authoritative source for ranges",
+   "sourceUrl": "https://www.gabar.org/general-counsel/georgia-rules-of-professional-conduct",
+   "retrievedAt": "2026-10-02",
+   "note": "Table row (dollar figures 3-6 of 9). Keep 'Optional' in both cells; drop the ranges."
+  },
+  {
+   "surface": "body",
+   "claim": "Time Pressure on LOP Treatment | Higher — shorter statute of limitations means less time to treat and file | Moderate — extra year provides more flexibility",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-3-33; S.C. Code § 15-3-530",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Follows from 2 vs 3 years."
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia's shorter statute of limitations and stricter fault bar increase the financial risk of accumulating LOP-funded bills.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. §§ 9-3-33, 51-12-33(g)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct."
+  },
+  {
+   "surface": "body",
+   "claim": "In complex cases involving traumatic brain injuries or spinal cord injuries, bills can reach hundreds of thousands of dollars, making careful review essential.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "General statement",
+   "sourceUrl": "https://www.gabar.org/general-counsel/georgia-rules-of-professional-conduct",
+   "retrievedAt": "2026-10-02",
+   "note": "Reasonable generalization, no specific figure; keep."
+  },
+  {
+   "surface": "body",
+   "claim": "If a provider charged $15,000 for a procedure that typically costs $8,000 to $12,000, that gap creates leverage.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Hypothetical illustration",
+   "sourceUrl": "https://www.gabar.org/general-counsel/georgia-rules-of-professional-conduct",
+   "retrievedAt": "2026-10-02",
+   "note": "Framed as 'If'; a hypothetical, not a factual claim (dollar figures 7-9 of 9). Keep, or label 'for example'."
+  },
+  {
+   "surface": "body",
+   "claim": "Most LOP providers expect some reduction — receiving 60 to 80 cents on the dollar promptly is preferable to pursuing full payment through collections.",
+   "verdict": "drop",
+   "currentValue": "No source for a 60-80 cents range (the same unsourced 20-40% figure in another form).",
+   "sourceName": "No authoritative source located",
+   "sourceUrl": "https://www.gabar.org/general-counsel/georgia-rules-of-professional-conduct",
+   "retrievedAt": "2026-10-02",
+   "note": "Replace with: 'Many LOP providers expect some reduction — prompt payment of a negotiated amount is often preferable to pursuing the full bill through collections.'"
+  },
+  {
+   "surface": "body",
+   "claim": "When both LOPs and hospital liens are involved, your attorney coordinates payments carefully. Statutory liens generally take priority, but the amounts are negotiable and can often be reduced significantly.",
+   "verdict": "update",
+   "currentValue": "Georgia: provider liens are 'subject ... to any attorney's lien' (§ 44-14-470(b)); a chiropractic lien is subordinate to any hospital lien; Georgia RPC 1.15(I)(b) puts statutory liens and written payment agreements (LOPs) on the same footing for the lawyer's duty. No Georgia rule ranks a perfected statutory lien over an LOP generally. South Carolina: no statutory provider liens.",
+   "sourceName": "O.C.G.A. § 44-14-470(b); Georgia RPC 1.15(I)(b)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-44/chapter-14/article-8/part-8/section-44-14-470/",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'When a Georgia provider has also filed a statutory lien, your attorney must account for both; in South Carolina there are no statutory provider liens. Both kinds of claim are negotiable.' Drop 'generally take priority' and 'significantly'."
+  },
+  {
+   "surface": "body",
+   "claim": "When your case settles, your attorney prepares a disbursement statement showing where the money goes: fees, expenses, liens, LOP payments, and your net recovery. Ethical rules in both states require your approval before any checks are written.",
+   "verdict": "update",
+   "currentValue": "Georgia RPC 1.5(c)(2): 'Upon conclusion of a contingent fee matter, the lawyer shall provide the client with a written statement' stating the outcome and, if there is a recovery, the remittance to the client, the method of its determination, the attorney fee, and any fee division. S.C. RPC 1.5(c): same written statement 'showing the remittance to the client and the method of its determination'. Neither rule requires client approval before checks are written; and Rule 1.15 requires the lawyer to protect valid third-party claims (liens, LOPs) even over the client's objection.",
+   "sourceName": "Georgia RPC 1.5(c)(2); S.C. RPC 1.5(c), 1.15 (Rule 407, SCACR)",
+   "sourceUrl": "https://www.sccourts.org/resources/judicial-community/court-rules/appellate/rule-407/rule-15/",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite the second sentence: 'Ethics rules in both states require your attorney to give you a written settlement statement showing the outcome, the fee and what you receive (Rule 1.5(c)).'"
+  },
+  {
+   "surface": "body",
+   "claim": "Whether your injuries stem from a car accident, a commercial truck collision, or a medical malpractice incident, having an attorney who understands medical billing and your state's legal framework can save you thousands of dollars.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Marketing statement",
+   "sourceUrl": "https://www.gabar.org/general-counsel/georgia-rules-of-professional-conduct",
+   "retrievedAt": "2026-10-02",
+   "note": "Non-specific; keep."
+  },
+  {
+   "surface": "body",
+   "claim": "Call 1-844-RESULTS or contact any of our six offices in Savannah, Darien, Charleston, North Charleston, Columbia, and Myrtle Beach for a free consultation.",
+   "verdict": "keep",
+   "currentValue": "client.json lists six locations: Savannah, Darien, Charleston, North Charleston, Columbia, Myrtle Beach.",
+   "sourceName": "client.json (firm identity record)",
+   "sourceUrl": "https://www.gabar.org/general-counsel/georgia-rules-of-professional-conduct",
+   "retrievedAt": "2026-10-02",
+   "note": "Offices verified against client.json. The vanity number is not in client.json — confirm with the firm; no tel: link on the page. (sourceUrl is a placeholder: client.json is a repo file.)"
+  },
+  {
+   "surface": "body",
+   "claim": "We work on a contingency fee basis — you pay nothing unless we recover compensation for you.",
+   "verdict": "update",
+   "currentValue": "Ga. RPC 1.5(c)(1) and S.C. RPC 1.5(c) require the contingent-fee agreement to state 'litigation and other expenses to be deducted from the recovery' and S.C. requires it to 'clearly notify the client of any expenses the client will be expected to pay'. And under an LOP the client still owes the provider if there is no recovery (as the post itself says).",
+   "sourceName": "S.C. RPC 1.5(c); Georgia RPC 1.5(c)",
+   "sourceUrl": "https://www.sccourts.org/resources/judicial-community/court-rules/appellate/rule-407/rule-15/",
+   "retrievedAt": "2026-10-02",
+   "note": "In an LOP post 'you pay nothing' contradicts the 'You remain personally liable' section. Rewrite: 'We work on a contingency fee basis — you owe us no attorney's fee unless we recover compensation for you.'"
+  }
+ ],
+ "recommendedEdits": [
+  "Georgia section, 'Georgia has no statute specifically governing letters of protection': replace with the O.C.G.A. § 51-12-1.1(d) paragraph (LOP, itemized charges, factoring sale and price, and referral source are relevant and discoverable for causes of action arising on or after April 21, 2025). This is the headline update for the post.",
+  "Delete every claim that S.C. Code § 44-63-10 is a hospital-lien statute (Key Takeaways, FAQ 6, body 'Hospital Liens and Medical Provider Rights' paragraph — 3 sentences — and two table cells). § 44-63-10 is the vital-statistics chapter; South Carolina has no hospital-lien statute. Use the replacement text in the verifiedClaims notes.",
+  "Georgia collateral source: drop the '(O.C.G.A. § 51-12-1)' cite (struck in Denton, 1991; the rule is common law) and add the 2025 partial abrogation (§ 51-12-1.1(b), (c), (e), (f)). Delete 'This supports LOP use by preventing the defense from arguing your \"real\" treatment cost was lower than the billed amount.' Fix the table row. Make the 'No Out-of-Pocket Loss' and 'Inflated Bills' paragraphs state-specific (South Carolina keeps Covington v. George).",
+  "Remove the unsourced percentages: '20-40%' in Key Takeaways and FAQ 5 (FAQPage structured data) and '60 to 80 cents on the dollar' in the body. Drop the med-pay 'commonly' dollar ranges (keep 'Optional') and the 'LOP Provider Landscape' row's unsourced market claims.",
+  "Reword 'the attorney guarantees' (body x2, Key Takeaways) to payment out of the proceeds on the client's behalf — a personal lawyer guarantee would be prohibited financial assistance under Ga./S.C. RPC 1.8(e) (Ga. FAO 11-1). Add to FAQ 2 that the LOP also binds the attorney's handling of the settlement funds (Ga. RPC 1.15(I)(b)(2)(iii); S.C. RPC 1.15 cmt. [4]).",
+  "Georgia hospital-lien paragraph: lien is on the cause of action, not on 'settlement proceeds' or the patient; covers physician, chiropractic and burn-care practices too; filing is with the superior court clerk in the provider's county and the patient's county, after 15 days' notice, within 75 days of discharge (hospitals) / 90 days of first visit (physicians, chiropractors); health insurance must be billed first (§ 44-14-471(c)). Fix the 'Lien Filing Requirement' table row to match.",
+  "Disbursement paragraph: replace 'Ethical rules in both states require your approval before any checks are written' with the Rule 1.5(c) written settlement statement requirement. Replace 'Statutory liens generally take priority' with the neutral coordination wording.",
+  "Small fixes: 'Cornell Law Institute' -> 'Cornell Law School's Legal Information Institute'; 'Providers will not accept ... from an unrepresented individual' -> 'generally'; 'you pay nothing unless we recover' -> 'you owe no attorney's fee unless we recover' (an LOP debt survives a loss); 'Like Georgia, South Carolina has no statute' -> 'Unlike Georgia'. Optionally add a 'LOP disclosure in litigation' table row and add 'Covington v. George (2004)'.",
+  "metaDescription is empty — the editor should write one (no claims needed beyond the excerpt)."
+ ],
+ "statuteCitations": [
+  {
+   "section": "O.C.G.A. § 51-12-1.1",
+   "name": "Medical and healthcare special damages; reasonable value; insured-rate evidence; letter-of-protection discovery (SB 68, effective April 21, 2025; causes of action arising on or after)",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-1-1/"
+  },
+  {
+   "section": "O.C.G.A. § 44-14-470",
+   "name": "Provider lien on causes of action (hospitals, nursing homes, physician, chiropractic, burn-care practices); subject to attorney's lien",
+   "url": "https://law.justia.com/codes/georgia/title-44/chapter-14/article-8/part-8/section-44-14-470/"
+  },
+  {
+   "section": "O.C.G.A. § 44-14-471",
+   "name": "Perfection: 15-day notice; filing within 75/90 days; health-insurer-first requirement",
+   "url": "https://law.justia.com/codes/georgia/title-44/chapter-14/article-8/part-8/section-44-14-471/"
+  },
+  {
+   "section": "O.C.G.A. § 9-3-33",
+   "name": "Two-year limitation for injuries to the person",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-33",
+   "name": "Apportionment; no recovery at 50 percent or more fault",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+  },
+  {
+   "section": "S.C. Code § 15-3-530",
+   "name": "Three-year limitation for personal injury",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "section": "S.C. Code Title 44, Chapter 63",
+   "name": "Vital Statistics (NOT a hospital-lien statute; South Carolina has none)",
+   "url": "https://www.scstatehouse.gov/code/t44c063.php"
+  },
+  {
+   "section": "S.C. Rules of Professional Conduct 1.5(c), 1.8(e), 1.15 (Rule 407, SCACR)",
+   "name": "Contingent-fee statement; no financial assistance to clients; safekeeping and third-party claims",
+   "url": "https://www.sccourts.org/resources/judicial-community/court-rules/appellate/rule-407/rule-18/"
+  },
+  {
+   "section": "Georgia Rules of Professional Conduct 1.5(c), 1.8(e), 1.15(I)",
+   "name": "Contingent-fee statement; no financial assistance; third-party interests including written agreements guaranteeing payment out of the funds",
+   "url": "https://www.gabar.org/general-counsel/georgia-rules-of-professional-conduct"
+  }
+ ],
+ "authoritativeLinks": [
+  {
+   "name": "Georgia SB 68 (2025), signed text — Section 7 enacts O.C.G.A. § 51-12-1.1; Section 9(b) applicability",
+   "url": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download"
+  },
+  {
+   "name": "Covington v. George, S.C. Supreme Court Op. No. 25828 (May 24, 2004), Advance Sheet No. 21",
+   "url": "https://www.sccourts.org/opinions/advSheets/no212004.pdf"
+  },
+  {
+   "name": "Denton v. Con-Way Southern Express, 261 Ga. 41 (1991) — collateral-source statute held unconstitutional",
+   "url": "https://law.justia.com/cases/georgia/supreme-court/1991/s90a1101-1.html"
+  },
+  {
+   "name": "South Carolina H.3430 / Act No. 42 of 2025 (joint and several liability, liquor liability — no medical-damages evidence change)",
+   "url": "https://www.scstatehouse.gov/sess126_2025-2026/bills/3430.htm"
+  },
+  {
+   "name": "Legal Information Institute (Cornell Law School) — Wex: personal injury",
+   "url": "https://www.law.cornell.edu/wex/personal_injury"
+  },
+  {
+   "name": "HealthCare.gov — 2026 out-of-pocket maximum ($10,600 individual)",
+   "url": "https://www.healthcare.gov/glossary/out-of-pocket-maximum-limit/"
+  }
+ ],
+ "quoteNote": "Claims are quoted from the rendered text with tags stripped and entities decoded. Table rows are given as 'Factor | Georgia | South Carolina' cell text joined by ' | ' (not literal markup) — match them cell by cell. Justia URLs could not be loaded (Cloudflare challenge in curl and Chrome); the Georgia Code Justia URLs are reused from facts-1711/1706/1656, and the § 51-12-1.1 text was verified against the signed SB 68 PDF on gov.georgia.gov. Georgia RPC text was read from the State Bar's Part IV PDF (rules in effect before July 1, 2018); Rules 1.5(c)(2), 1.8(e) and 1.15(I)(b) are cited to the State Bar's rules page. Claims whose sourceUrl is the gabar rules page with 'No authoritative source located' carry the URL only because the schema requires one."
+}

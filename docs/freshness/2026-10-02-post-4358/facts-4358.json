@@ -1,0 +1,828 @@
+{
+ "postId": 4358,
+ "slug": "carriage-tour-accidents-downtown-charleston-liability",
+ "liveUrl": "https://rodenlaw.com/blog/carriage-tour-accidents-downtown-charleston-liability/",
+ "jurisdiction": "SC",
+ "researchedAt": "2026-10-02",
+ "verifiedClaims": [
+  {
+   "surface": "excerpt",
+   "claim": "Who is liable when a Charleston carriage tour causes injury — the operator, the driver, or the city? How these claims work.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "Framing only. Published as the Article description by roden_schema_article()."
+  },
+  {
+   "surface": "metaDescription",
+   "claim": "",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "metaDescription is empty in meta.json. Not a claim; flag for the editor (SEO description falls back to the excerpt)."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Horse-drawn carriage tour operators in Charleston owe passengers and bystanders a duty of care, and liability may fall on the tour company, driver, or City of Charleston depending on the cause.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Singletary v. Atlantic Coast Line R. Co., 217 S.C. 212, 60 S.E.2d 305 (1950); S.C. Code § 15-78-60(15)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1950/16376-1.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate and hedged ('may'). The city's exposure is narrow — road and signal defects only after notice (§ 15-78-60(15)); regulation and permitting are immune (§ 15-78-60(4), (12)). Renders in the summary box above the article."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Common injuries include being thrown from carriages, trampled, or struck as a pedestrian.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Post and Courier, 'Horse carriage operator, passenger injured during \"extremely rare\" tour incident in Charleston' (2026-08-03)",
+   "sourceUrl": "https://www.postandcourier.com/charleston_sc/charleston-palmetto-horse-carriage-tour-incident/article_25182a73-6418-4b1d-8431-82705920c52d.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Consistent with the August 3, 2026 Cumberland/Church Street incident (startled horse; operator and one passenger thrown from the carriage). No injury-frequency statistic is asserted."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "South Carolina applies modified comparative fault, barring recovery at 51% or more fault.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct: recovery allowed if plaintiff's negligence is not greater than the defendants' (combined). Authority is Nelson, never § 15-38-15."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Injured parties must file within 3 years under S.C. Code 15-3-530.",
+   "verdict": "update",
+   "currentValue": "Three years for a claim against the tour company, driver, horse owner or a motorist (S.C. Code § 15-3-530(5)); two years if the City of Charleston or another government body is a defendant (S.C. Code § 15-78-110), extended to three only if a verified claim was filed within one year (§ 15-78-80). Minors: tolled under § 15-3-40.",
+   "sourceName": "S.C. Code §§ 15-3-530, 15-78-80, 15-78-110 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Box omits the government exception the post itself discusses. Suggested: 'Injured parties generally have 3 years to file (S.C. Code § 15-3-530), but only 2 years if the City of Charleston or another government body is a defendant (§ 15-78-110).' Use the § symbol."
+  },
+  {
+   "surface": "faq:1",
+   "claim": "The tour company is typically liable for its employees and the condition of its horses and equipment. The individual driver may be liable for negligent handling. Third-party drivers who spook the horse or collide with the carriage may share liability. The City of Charleston could be liable for road conditions.",
+   "verdict": "update",
+   "currentValue": "The city's liability for road conditions is limited by the Tort Claims Act: it is liable for a street defect or a missing/malfunctioning sign or signal only if it failed to correct it within a reasonable time after actual or constructive notice, and not at all for road design or for regulating or permitting the carriages (S.C. Code § 15-78-60(4), (12), (15)).",
+   "sourceName": "S.C. Code § 15-78-60 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+   "retrievedAt": "2026-10-02",
+   "note": "First three sentences accurate (hedged). Last sentence needs the notice qualifier. Suggested: '... The City of Charleston could be liable for a road or signal defect it knew or should have known about and failed to fix (S.C. Code § 15-78-60(15)).' FAQPage structured data."
+  },
+  {
+   "surface": "faq:2",
+   "claim": "Horses spooked by loud vehicles, honking, or construction; carriage collisions with cars in narrow streets; passengers falling while boarding or exiting; pedestrians struck by the carriage; and equipment failure such as broken harnesses or wheels.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Post and Courier (2026-08-03) — horse startled by an approaching truck; Charleston Tourism Commission minutes 2017-06-28 (unverified-by-fetch)",
+   "sourceUrl": "https://www.postandcourier.com/charleston_sc/charleston-palmetto-horse-carriage-tour-incident/article_25182a73-6418-4b1d-8431-82705920c52d.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Descriptive list; consistent with the 2026 incident. The city ordinance itself addresses harness condition (§ 29-212(f)) and wheel maintenance (§ 29-212(c)(2))."
+  },
+  {
+   "surface": "faq:3",
+   "claim": "Yes. Charleston has extensive regulations governing carriage routes, operating hours, horse welfare, driver licensing, and traffic safety. Violations of these regulations can establish negligence.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "City of Charleston Code of Ordinances, Ch. 29 (Tourism), Art. V (Animal-Drawn Vehicles), Municode Supp. No. 115 (codified through Ord. 2026-092, May 26, 2026; read via Municode API 2026-10-02); Whitlaw v. Kroger Co., 306 S.C. 51, 410 S.E.2d 251 (1991)",
+   "sourceUrl": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH29TO_ARTVTRANAWVEPUTO",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate: routes (§ 29-203, zones § 29-208), hours (§§ 29-206(c), 29-236), welfare (§ 29-212), driver competency exam (§ 29-204), traffic (§ 29-235). 'Can establish negligence' is properly hedged — under Whitlaw a violation proves duty and breach only if the rule protects the plaintiff's class against the harm suffered, and causation must still be proved. FAQPage structured data."
+  },
+  {
+   "surface": "faq:4",
+   "claim": "TBI, spinal cord injuries, broken bones, road rash, and crush injuries. Passengers who fall from moving carriages onto cobblestone streets are at particular risk for head injuries.",
+   "verdict": "update",
+   "currentValue": "Carriages are barred from 'all cobblestone and Belgium block streets' and from the bricked portion of Church Street (Water Street to South Battery) (Charleston City Code § 29-203(a)); a passenger who falls lands on asphalt or concrete.",
+   "sourceName": "City of Charleston Code of Ordinances, Ch. 29 (Tourism), Art. V (Animal-Drawn Vehicles), Municode Supp. No. 115 (codified through Ord. 2026-092, May 26, 2026; read via Municode API 2026-10-02) § 29-203",
+   "sourceUrl": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH29TO_ARTVTRANAWVEPUTO_DIV1GE_S29-203ROLI",
+   "retrievedAt": "2026-10-02",
+   "note": "The cobblestone premise is wrong for carriage routes. Suggested: '... Passengers who fall from a moving carriage onto pavement are at particular risk for head injuries.' FAQPage structured data."
+  },
+  {
+   "surface": "faq:5",
+   "claim": "Three years in SC (S.C. Code section 15-3-530). Two years in Georgia.",
+   "verdict": "update",
+   "currentValue": "South Carolina law governs a Charleston carriage accident: three years (S.C. Code § 15-3-530(5)), or two years if a government body such as the City of Charleston is a defendant (§ 15-78-110). Georgia's two-year statute (O.C.G.A. § 9-3-33) has no application to a Charleston crash sued in South Carolina.",
+   "sourceName": "S.C. Code §§ 15-3-530, 15-78-110 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-02",
+   "note": "'Two years in Georgia' is Georgia law on an SC-only topic and reads as if a Georgia resident had less time. Drop it and add the government exception. Suggested: 'Three years in South Carolina (S.C. Code § 15-3-530), but two years if the City of Charleston or another government body is a defendant (§ 15-78-110).' FAQPage structured data."
+  },
+  {
+   "surface": "faq:6",
+   "claim": "Yes. SC law applies regardless of where you live. Your attorney can handle the case remotely. You would only need to travel for trial.",
+   "verdict": "update",
+   "currentValue": "South Carolina negligence law and limitation periods govern an injury in Charleston regardless of the victim's residence. Out-of-state plaintiffs are usually also asked to appear for a deposition and may be asked to attend a defense medical examination.",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "'Only need to travel for trial' is too absolute; depositions and defense medical exams commonly require attendance (sometimes remote by agreement). Suggested: '... You may need to return for a deposition or medical examination, and for trial if the case does not settle.' FAQPage structured data."
+  },
+  {
+   "surface": "body",
+   "claim": "Every year, tens of thousands of tourists climb aboard open-air carriages for narrated rides through the historic district",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "City of Charleston Tourism Appendix (search index: '35,256 carriage tours' permitted in 2023) — unverified-by-fetch: charleston-sc.gov refused connections; carriage capacity up to 16 (operator listing)",
+   "sourceUrl": "https://oldsouthcarriage.com/carriage-tours/historic-charleston-carriage-tour/",
+   "retrievedAt": "2026-10-02",
+   "note": "Conservative and almost certainly understated (34 medallions, tours roughly hourly, carriages seating up to 16). Do not replace with a specific rider count: the city figure (35,256 tours in 2023) rests only on a search snippet because charleston-sc.gov refused connections. Keep as is."
+  },
+  {
+   "surface": "body",
+   "claim": "passing antebellum homes, centuries-old churches, and cobblestone streets in the South of Broad neighborhood and beyond",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "City of Charleston Code of Ordinances, Ch. 29 (Tourism), Art. V (Animal-Drawn Vehicles), Municode Supp. No. 115 (codified through Ord. 2026-092, May 26, 2026; read via Municode API 2026-10-02) § 29-203",
+   "sourceUrl": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH29TO_ARTVTRANAWVEPUTO_DIV1GE_S29-203ROLI",
+   "retrievedAt": "2026-10-02",
+   "note": "'Passing' cobblestone streets is fine; note carriages may not drive on them (§ 29-203(a)). See the passenger-falls entry."
+  },
+  {
+   "surface": "body",
+   "claim": "But when a 1,800-pound draft horse shares narrow city streets with motor vehicles, cyclists, and pedestrians, the potential for serious injury is real.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "The Livestock Conservancy, 'Belgian Horse' (adult weight 1,800–2,200 lbs)",
+   "sourceUrl": "https://livestockconservancy.org/belgian-horse/",
+   "retrievedAt": "2026-10-02",
+   "note": "Reasonable for a Belgian/Percheron. Many Charleston carriages are mule-drawn and lighter; the ordinance minimum is 950 lbs (§ 29-212(e)(11))."
+  },
+  {
+   "surface": "body",
+   "claim": "According to the City of Charleston, carriage tour companies operate under a regulated permit system that limits routes, hours, and the number of carriages on the street at any given time.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "City of Charleston Code of Ordinances, Ch. 29 (Tourism), Art. V (Animal-Drawn Vehicles), Municode Supp. No. 115 (codified through Ord. 2026-092, May 26, 2026; read via Municode API 2026-10-02) §§ 29-202, 29-206, 29-208, 29-210, 29-236",
+   "sourceUrl": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH29TO_ARTVTRANAWVEPUTO",
+   "retrievedAt": "2026-10-02",
+   "note": "Substance verified against the ordinance (franchise agreement § 29-202; 34 zone medallions § 29-210; gate hours § 29-206(c); route limits § 29-203). The linked page https://www.charleston-sc.gov/462/Carriage-Tours could not be fetched (connection refused by curl; did not load in Chrome) — UNVERIFIED-BY-FETCH. Recommend re-pointing the link to the Municode Article V URL, which resolves."
+  },
+  {
+   "surface": "body",
+   "claim": "Despite these safeguards, carriage-related accidents continue to occur.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Post and Courier (2026-08-03); Charleston City Paper, 'Two people injured in downtown Charleston carriage accident' (2026-08-04)",
+   "sourceUrl": "https://www.postandcourier.com/charleston_sc/charleston-palmetto-horse-carriage-tour-incident/article_25182a73-6418-4b1d-8431-82705920c52d.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified: Aug. 3, 2026, a startled horse threw the operator and one passenger near Cumberland and Church Streets; both hospitalized; carriage struck a parked car. Optional add (no company name needed): 'In August 2026, a horse startled by an approaching truck threw a carriage driver and a passenger near Cumberland and Church Streets; both were taken to the hospital.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Several licensed companies run tours through the historic district, departing from designated areas near the City Market and along North Market Street.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "City of Charleston Code of Ordinances, Ch. 29 (Tourism), Art. V (Animal-Drawn Vehicles), Municode Supp. No. 115 (codified through Ord. 2026-092, May 26, 2026; read via Municode API 2026-10-02) § 29-206(a)-(b)",
+   "sourceUrl": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH29TO_ARTVTRANAWVEPUTO_DIV1GE_S29-206GALOMEISPR",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified: gate at North Market and Church Streets; central loading zone on Anson Street south of Pinckney and on North Market between Anson and Church; companies may load on their own property inside the Market zone. 'Licensed' — each company needs a franchise agreement and business license (§ 29-202(b))."
+  },
+  {
+   "surface": "body",
+   "claim": "Each carriage is pulled by one or two draft horses — typically Percherons, Belgians, or mules — and carries between 12 and 16 passengers on bench-style seating without seatbelts, doors, or other restraints.",
+   "verdict": "update",
+   "currentValue": "City code defines an animal-drawn vehicle as one 'pulled by carriage horses, dray horses or mules' (§ 29-1). Large public carriages seat up to 16; private carriages carry 4 to 8. Capacity is fixed by each carriage's certificate of appropriateness and by the rule that carriage, passengers and driver may not exceed three times the animals' weight (§ 29-212(c)(5)).",
+   "sourceName": "City of Charleston Code of Ordinances, Ch. 29 (Tourism), Art. V (Animal-Drawn Vehicles), Municode Supp. No. 115 (codified through Ord. 2026-092, May 26, 2026; read via Municode API 2026-10-02) §§ 29-1, 29-212(c)(5); operator listing (16-passenger public carriages)",
+   "sourceUrl": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH29TO_ARTVTRANAWVEPUTO_DIV1GE_S29-212GEHECAMARE",
+   "retrievedAt": "2026-10-02",
+   "note": "'12 to 16' is unsourced at the low end and ignores private carriages. Suggested: '... pulled by draft horses or mules, and the large public carriages carry up to 16 passengers on bench seating ...'. Don't name operators."
+  },
+  {
+   "surface": "body",
+   "claim": "Routes pass through some of the most congested blocks in Charleston, including Meeting Street, Church Street, East Bay Street, and the narrow residential streets south of Broad Street.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "City of Charleston Code of Ordinances, Ch. 29 (Tourism), Art. V (Animal-Drawn Vehicles), Municode Supp. No. 115 (codified through Ord. 2026-092, May 26, 2026; read via Municode API 2026-10-02) §§ 29-203, 29-208",
+   "sourceUrl": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH29TO_ARTVTRANAWVEPUTO_DIV1GE_S29-203ROLI",
+   "retrievedAt": "2026-10-02",
+   "note": "Broadly consistent; zones are drawn randomly at the gate (§ 29-208). Church Street from Tradd to South Battery (bricked/narrow portion) is off-limits (§ 29-203(a), (c)(8)). The zone map is kept by the Livability & Tourism office and was not fetched."
+  },
+  {
+   "surface": "body",
+   "claim": "Cobblestone and brick streets — common in the historic district — make for an unforgiving landing surface.",
+   "verdict": "update",
+   "currentValue": "Carriages may not operate on 'the bricked portion of Church Street, from Water Street to South Battery, and all cobblestone and Belgium block streets' (§ 29-203(a)).",
+   "sourceName": "City of Charleston Code of Ordinances, Ch. 29 (Tourism), Art. V (Animal-Drawn Vehicles), Municode Supp. No. 115 (codified through Ord. 2026-092, May 26, 2026; read via Municode API 2026-10-02) § 29-203",
+   "sourceUrl": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH29TO_ARTVTRANAWVEPUTO_DIV1GE_S29-203ROLI",
+   "retrievedAt": "2026-10-02",
+   "note": "Factual premise wrong for carriage routes. Suggested: 'Asphalt, concrete curbs and granite curbstones make for an unforgiving landing surface.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Draft horses weigh between 1,600 and 2,200 pounds, and a single kick or step can fracture bones, cause internal injuries, or knock a person to the ground.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "The Livestock Conservancy, 'Belgian Horse'; Charleston City Code § 29-212(e)(11)",
+   "sourceUrl": "https://livestockconservancy.org/belgian-horse/",
+   "retrievedAt": "2026-10-02",
+   "note": "Range is fair for draft breeds (Belgian 1,800–2,200). Optional: note mules used in Charleston can be lighter (city minimum 950 lbs)."
+  },
+  {
+   "surface": "body",
+   "claim": "Tour companies are common carriers under South Carolina law, meaning they owe passengers the highest duty of care — not merely ordinary care, but the utmost care consistent with the practical operation of the business.",
+   "verdict": "update",
+   "currentValue": "South Carolina holds a common carrier of passengers to 'the highest degree of care,' though it 'is not an insurer' (Singletary v. Atlantic Coast Line R. Co., 217 S.C. 212, 60 S.E.2d 305 (1950)). No South Carolina appellate decision was found classifying a horse-drawn sightseeing carriage as a common carrier, and Charleston's code describes these rides as touring whose 'primary purpose ... is not transportation' (§ 29-1, 'tour guide'). The company may also invoke the Equine Activity Liability Act (S.C. Code §§ 47-9-710 to -730) against passengers.",
+   "sourceName": "Singletary v. Atlantic Coast Line R. Co. (S.C. 1950) (Justia, browser-verified 2026-10-02); S.C. Code § 47-9-710",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1950/16376-1.html",
+   "retrievedAt": "2026-10-02",
+   "note": "MOST IMPORTANT LEGAL CORRECTION. The standard is stated correctly, but its application to carriage tours is asserted as settled law when it is unverified. Suggested: 'A carriage company that carries paying passengers may be held to the heightened standard South Carolina applies to common carriers — the highest degree of care, though not a guarantee of safety (Singletary v. Atlantic Coast Line R. Co., 1950). No South Carolina appellate court has yet decided whether a sightseeing carriage qualifies; at a minimum the company owes reasonable care.' Propagate to the comparative-fault paragraph ('heightened duty as a common carrier'), the lawyer section and the pedestrian FAQ."
+  },
+  {
+   "surface": "body",
+   "claim": "The company is also vicariously liable for the negligence of its employees — including carriage drivers — under the doctrine of respondeat superior.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "Standard respondeat superior; accurate for employees acting within the scope of employment. Note City Code § 29-205 requires every carriage tour to be conducted by a tour guide."
+  },
+  {
+   "surface": "body",
+   "claim": "Drivers are responsible for controlling the horse, following designated routes, obeying traffic laws, warning passengers about safety precautions, and responding appropriately when a horse shows signs of agitation.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "City of Charleston Code of Ordinances, Ch. 29 (Tourism), Art. V (Animal-Drawn Vehicles), Municode Supp. No. 115 (codified through Ord. 2026-092, May 26, 2026; read via Municode API 2026-10-02) §§ 29-204, 29-208, 29-235",
+   "sourceUrl": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH29TO_ARTVTRANAWVEPUTO_DIV1GE_S29-204DR",
+   "retrievedAt": "2026-10-02",
+   "note": "Consistent: carriages 'shall follow posted traffic signs, including ... stop signs and traffic signals' (§ 29-235); drivers must show competence 'in emergency situations' (§ 29-204); assigned zones (§ 29-208)."
+  },
+  {
+   "surface": "body",
+   "claim": "Under South Carolina's animal liability principles, the owner of a domesticated animal can be liable for injuries caused by the animal if the owner knew or should have known of the animal's dangerous propensities.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Mungo v. Bennett, 238 S.C. 79, 119 S.E.2d 522 (1961), as quoted in Singleton v. Sherer (S.C. Ct. App. 2008) (Justia, browser-verified 2026-10-02)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/court-of-appeals/2008/4346.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Mungo: domestic animals 'whether horses, mules, cattle, dogs ... are not presumed to be dangerous' and the plaintiff must prove the animal's dangerous propensity 'was either known, or should have been known to the owner.' South Carolina has no horse strict-liability statute (the dog statute, § 47-3-110, does not reach horses; § 47-7-110 concerns livestock running at large and does not apply to a driven carriage horse). Ordinary negligence in handling the horse is a separate theory."
+  },
+  {
+   "surface": "body",
+   "claim": "The City of Charleston regulates carriage tours, maintains the roads and intersections on carriage routes, and is responsible for ensuring that road conditions do not create unreasonable hazards.",
+   "verdict": "update",
+   "currentValue": "Regulating, licensing and enforcing ordinances are immune (S.C. Code § 15-78-60(4), (12) — licensing immunity is lost only if 'exercised in a grossly negligent manner'). For roads, the city is liable only for a defect, sign or signal problem it failed to correct within a reasonable time after actual or constructive notice, and never for road design or the initial decision not to place a sign (§ 15-78-60(15)). Some peninsula streets may be state-maintained (SCDOT), which changes the defendant but not the Act.",
+   "sourceName": "S.C. Code § 15-78-60 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Overstates city responsibility. Suggested: 'The City of Charleston cannot be sued for how it regulates or permits the carriages, but it can be liable for a pothole, damaged sign or malfunctioning signal it knew or should have known about and failed to fix within a reasonable time (S.C. Code § 15-78-60(15)).' Delete 'obstructed intersection' (design immunity) or tie it to notice."
+  },
+  {
+   "surface": "body",
+   "claim": "If a carriage accident is caused by a pothole, a missing traffic sign, an obstructed intersection, a malfunctioning traffic signal, or a road defect that the city knew about and failed to repair, the city may bear partial liability.",
+   "verdict": "update",
+   "currentValue": "§ 15-78-60(15): no liability for sign/signal 'absence, condition, or malfunction' unless not corrected 'within a reasonable time after actual or constructive notice'; no liability for a failure 'to initially place' signs when discretionary; 'not liable for the design of highways.'",
+   "sourceName": "S.C. Code § 15-78-60(15)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Mostly right ('knew about and failed to repair'), but 'missing traffic sign' and 'obstructed intersection' run into the design/initial-placement immunities. Add 'or should have known about' (constructive notice is enough) and qualify the sign example: '... a sign that was knocked down and not replaced ...'."
+  },
+  {
+   "surface": "body",
+   "claim": "Claims against the City of Charleston are subject to the South Carolina Tort Claims Act (S.C. Code 15-78-10 et seq.), which imposes a $600,000 cap on damages per occurrence and cuts the filing deadline to two years (S.C. Code § 15-78-110), with an optional verified claim filed within one year extending it to three (S.C. Code § 15-78-80).",
+   "verdict": "update",
+   "currentValue": "§ 15-78-120(a): no person may recover more than $300,000 for a single occurrence, and all claimants together no more than $600,000; § 15-78-120(b): no punitive damages or prejudgment interest. Deadline: two years from when the loss was or should have been discovered; three if a verified claim was first filed, which must be received within one year (§§ 15-78-110, 15-78-80(d)).",
+   "sourceName": "S.C. Code §§ 15-78-80, 15-78-110, 15-78-120 (scstatehouse.gov, read 2026-10-02)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Deadline half correct. Cap half omits the per-person $300,000 limit, which is the one most single plaintiffs hit. Suggested: '... which caps damages at $300,000 per person and $600,000 per occurrence and bars punitive damages (§ 15-78-120) ...'. Use § symbol on 15-78-10."
+  },
+  {
+   "surface": "body",
+   "claim": "If a car, truck, or bus causes the carriage accident — by rear-ending the carriage, running a red light, or honking in a way that spooks the horse — the driver of that vehicle can be liable.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Charleston City Paper (2026-08-04); S.C. Code § 47-9-720(D)",
+   "sourceUrl": "https://charlestoncitypaper.com/2026/08/04/two-people-injured-in-downtown-charleston-carriage-accident/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate (hedged). The August 2026 incident involved a horse startled by an approaching truck. The Equine Activity Liability Act 'shall not cover or apply to any liability arising from the ownership, maintenance, or use of any motor vehicle' (§ 47-9-720(D)), so it never shields the motorist."
+  },
+  {
+   "surface": "body",
+   "claim": "The City of Charleston maintains one of the most regulated carriage tour industries in the country.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Post and Courier (2026-08-03): tours 'are among the area's most-regulated tourist attractions'",
+   "sourceUrl": "https://www.postandcourier.com/charleston_sc/charleston-palmetto-horse-carriage-tour-incident/article_25182a73-6418-4b1d-8431-82705920c52d.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Characterization; supported by the depth of Ch. 29, Art. V. Not a ranked claim."
+  },
+  {
+   "surface": "body",
+   "claim": "Permit limits — the city caps the total number of carriage tour permits, limiting the number of carriages operating at any given time",
+   "verdict": "update",
+   "currentValue": "The city caps zone medallions, not companies: 34 medallions (Zones 1–3 and 5: 28 in the draw; Zone 4: 6 more on holidays and the ~30 busiest days) (§§ 29-208(c), 29-210). A carriage cannot tour the zones without a medallion, so at most 28–34 carriages are out on medallion tours at once. Franchise agreements are 'nonexclusive' (§ 29-202(b)(5)); each company pays $17,500 a year (§ 29-211).",
+   "sourceName": "City of Charleston Code of Ordinances, Ch. 29 (Tourism), Art. V (Animal-Drawn Vehicles), Municode Supp. No. 115 (codified through Ord. 2026-092, May 26, 2026; read via Municode API 2026-10-02) §§ 29-202, 29-208, 29-210, 29-211",
+   "sourceUrl": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH29TO_ARTVTRANAWVEPUTO_DIV1GE_S29-210NUMEBEIS",
+   "retrievedAt": "2026-10-02",
+   "note": "Suggested: 'Medallion limits — the city issues a fixed number of zone medallions (34), and a carriage cannot begin a gate tour without one, which caps the number of carriages touring at once.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Route restrictions — carriages are assigned to specific zones and routes through a lottery system at the start of each tour, preventing overcrowding on any single street",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "City of Charleston Code of Ordinances, Ch. 29 (Tourism), Art. V (Animal-Drawn Vehicles), Municode Supp. No. 115 (codified through Ord. 2026-092, May 26, 2026; read via Municode API 2026-10-02) §§ 29-206, 29-208(c)",
+   "sourceUrl": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH29TO_ARTVTRANAWVEPUTO_DIV1GE_S29-208ZOOP",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified: the gatekeeper uses 'a medallion selection machine' to 'randomly select a medallion with a designated zone' and alternates A/B ingress routes; the medallion must be returned within 75 minutes. Optional: add that carriages are barred from cobblestone streets and certain narrow streets (§ 29-203)."
+  },
+  {
+   "surface": "body",
+   "claim": "Operating hours — carriage tours may only operate during designated hours, typically from morning to late evening",
+   "verdict": "update",
+   "currentValue": "The medallion gate runs 9:00 a.m.–5:30 p.m. (Eastern Standard Time) and 9:00 a.m.–6:30 p.m. (daylight time); medallions issue until 4:15/5:15 p.m. (§ 29-206(c)). No tours in SR/STR/DR residential zones before 9:00 a.m. or after 5:00 p.m. EST / 6:00 p.m. DST (§ 29-236). Evening 'commercial' tours in the commercial district after the gate closes need no medallion (§ 29-206(f)).",
+   "sourceName": "City of Charleston Code of Ordinances, Ch. 29 (Tourism), Art. V (Animal-Drawn Vehicles), Municode Supp. No. 115 (codified through Ord. 2026-092, May 26, 2026; read via Municode API 2026-10-02) §§ 29-206, 29-236",
+   "sourceUrl": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH29TO_ARTVTRANAWVEPUTO_DIV1GE_S29-206GALOMEISPR",
+   "retrievedAt": "2026-10-02",
+   "note": "'Late evening' is true only for commercial-district tours. Suggested: 'Operating hours — gate tours through the residential historic district run from 9 a.m. to early evening (5 p.m. in winter, 6 p.m. in summer); evening rides are limited to the commercial district.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Temperature restrictions — when the heat index exceeds 110 degrees Fahrenheit, carriage tours must cease operations to protect the horses (a rule adopted after public advocacy for animal welfare)",
+   "verdict": "update",
+   "currentValue": "Tours stop when EITHER the ambient temperature reaches 95°F OR the heat index reaches 110°F, after four consecutive readings at least 15 minutes apart at the official thermometer (181 Church Street); they resume after 30 consecutive minutes below both thresholds (§ 29-212(g)(7)-(8)). From 85°F, each horse's rectal temperature is taken after every tour; 103°F or higher pulls it from service until cooled (§ 29-212(g)(2)-(4)). The city also may halt new tours in any weather emergency risking horses or passengers (§ 29-213).",
+   "sourceName": "City of Charleston Code of Ordinances, Ch. 29 (Tourism), Art. V (Animal-Drawn Vehicles), Municode Supp. No. 115 (codified through Ord. 2026-092, May 26, 2026; read via Municode API 2026-10-02) §§ 29-212(g), 29-213; Live 5 News (2026-07-09, tours suspended for heat)",
+   "sourceUrl": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH29TO_ARTVTRANAWVEPUTO_DIV1GE_S29-212GEHECAMARE",
+   "retrievedAt": "2026-10-02",
+   "note": "Two errors: the trigger is 'reaches', not 'exceeds', and the 95°F ambient-temperature trigger is missing. The parenthetical is roughly supported (§ 29-212(a) recites an ad hoc committee including the SPCA, CONA and a veterinarian) but is better dropped. Suggested: 'Heat limits — tours stop when the temperature reaches 95°F or the heat index reaches 110°F (four readings, 15 minutes apart), and any horse whose temperature reaches 103°F after a tour comes out of service to cool down.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Horse rest requirements — horses must receive mandatory rest periods between tours, and daily work hours are limited",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "City of Charleston Code of Ordinances, Ch. 29 (Tourism), Art. V (Animal-Drawn Vehicles), Municode Supp. No. 115 (codified through Ord. 2026-092, May 26, 2026; read via Municode API 2026-10-02) § 29-212(e)(4)-(6)",
+   "sourceUrl": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH29TO_ARTVTRANAWVEPUTO_DIV1GE_S29-212GEHECAMARE",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified: at least 15 minutes' rest between back-to-back tours; no more than 8 consecutive hours, or 10 hours with a 1½-hour unhitched break, in 24 hours; no more than 6 days in 7. Optional: give the figures."
+  },
+  {
+   "surface": "body",
+   "claim": "Driver licensing — drivers must pass a City of Charleston examination covering local history, traffic laws, and animal handling before receiving a carriage driver permit",
+   "verdict": "update",
+   "currentValue": "§ 29-204: every driver must hold a current driver's license and 'pass an animal-drawn vehicle competency examination' showing the driver can handle 'horses and animal-drawn vehicles in emergency situations.' The city history exam is now voluntary tour-guide certification (§ 29-59, voluntary since Ord. 2016-054; licensing repealed by Ord. 2023-063). Each company must also run a city-approved annual training program for guides and drivers (§ 29-212(m)).",
+   "sourceName": "City of Charleston Code of Ordinances, Ch. 29 (Tourism), Art. V (Animal-Drawn Vehicles), Municode Supp. No. 115 (codified through Ord. 2026-092, May 26, 2026; read via Municode API 2026-10-02) §§ 29-204, 29-59, 29-212(m)",
+   "sourceUrl": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH29TO_ARTVTRANAWVEPUTO_DIV1GE_S29-204DR",
+   "retrievedAt": "2026-10-02",
+   "note": "The history-exam element is out of date. Suggested: 'Driver competency — drivers must hold a driver's license and pass a city competency exam on handling horses and carriages in emergencies, and companies must run city-approved annual training.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Carriage inspections — carriages are subject to periodic safety inspections for structural integrity, wheel condition, braking systems, and lighting",
+   "verdict": "update",
+   "currentValue": "Each carriage needs an annual certificate of appropriateness (§§ 29-219, 29-223), may be visually inspected (§ 29-220(c)), must carry lights or lanterns visible at 500 feet after dark, reflectors and a slow-moving-vehicle emblem, have wheels that 'spin freely' and be 'maintained in a safe condition' (§ 29-212(c)), and must be inspected before returning to service after a reportable accident (§ 29-240(d)). Animals, barns and records are subject to random inspections (§ 29-212(k)). The code says nothing about braking systems.",
+   "sourceName": "City of Charleston Code of Ordinances, Ch. 29 (Tourism), Art. V (Animal-Drawn Vehicles), Municode Supp. No. 115 (codified through Ord. 2026-092, May 26, 2026; read via Municode API 2026-10-02) §§ 29-212(c), (k), 29-219, 29-220, 29-240",
+   "sourceUrl": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH29TO_ARTVTRANAWVEPUTO_DIV1GE_S29-212GEHECAMARE",
+   "retrievedAt": "2026-10-02",
+   "note": "'Periodic safety inspections ... braking systems' is not in the code. Suggested: 'Equipment and inspections — carriages need an annual city certificate, required lighting and reflectors, and must be kept in safe condition; a carriage in an accident must be inspected before it returns to service.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Passenger capacity — each carriage has a maximum passenger count based on its size and the horse's pulling capacity",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "City of Charleston Code of Ordinances, Ch. 29 (Tourism), Art. V (Animal-Drawn Vehicles), Municode Supp. No. 115 (codified through Ord. 2026-092, May 26, 2026; read via Municode API 2026-10-02) § 29-212(c)(5)",
+   "sourceUrl": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH29TO_ARTVTRANAWVEPUTO_DIV1GE_S29-212GEHECAMARE",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified: no more passengers 'than what is permitted by its certificate of appropriateness' and combined weight no more than 'three (3) times the weight of the animal(s).' Carriages max 12 ft long, 6 ft wide (§ 29-207)."
+  },
+  {
+   "surface": "body",
+   "claim": "Under the legal doctrine of negligence per se, violating a safety regulation designed to prevent the type of harm that occurred can establish negligence as a matter of law.",
+   "verdict": "update",
+   "currentValue": "Whitlaw: the plaintiff must show the enactment's essential purpose is to protect against the kind of harm suffered and that he is in the protected class; a violation then proves duty and breach ('negligence per se'), but 'violation of the statute, thus, is not conclusive of liability' — causation must still be proved. Charleston's Art. V findings state the rules protect animals and 'motorists and pedestrians ... residents and tourists' (§ 29-212(a)(4)).",
+   "sourceName": "Whitlaw v. Kroger Co., 306 S.C. 51, 410 S.E.2d 251 (1991) (Justia, browser-verified 2026-10-02)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23498-2.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Add the class-of-persons and causation limits. Whitlaw involved a statute; no SC case was read applying the rule to a city ordinance, so keep it general. Suggested: '... can establish negligence per se if the rule was meant to protect people in your position, though you must still show the violation caused your injury.'"
+  },
+  {
+   "surface": "body",
+   "claim": "If a tour company exceeded the passenger limit, operated during a heat restriction, or used a carriage that had failed inspection, those facts help establish that the company breached its duty of care.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "City of Charleston Code of Ordinances, Ch. 29 (Tourism), Art. V (Animal-Drawn Vehicles), Municode Supp. No. 115 (codified through Ord. 2026-092, May 26, 2026; read via Municode API 2026-10-02) § 29-212",
+   "sourceUrl": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH29TO_ARTVTRANAWVEPUTO_DIV1GE_S29-212GEHECAMARE",
+   "retrievedAt": "2026-10-02",
+   "note": "Hedged ('help establish'). Note heat rules primarily protect horses; their protective reach to passengers is arguable via § 29-212(a)(4)."
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina follows a modified comparative fault system. An injured person can recover damages as long as their own share of fault is less than 51%.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Nelson v. Concrete Supply Co. (S.C. 1991)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct."
+  },
+  {
+   "surface": "body",
+   "claim": "If the injured person is found to be 51% or more at fault, they recover nothing. If found partially at fault below that threshold, the damages award is reduced by their percentage of fault.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Nelson v. Concrete Supply Co. (S.C. 1991)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct."
+  },
+  {
+   "surface": "body",
+   "claim": "An experienced premises liability lawyer in Charleston can counter these arguments by focusing on the tour company's heightened duty as a common carrier and the regulatory violations that contributed to the accident.",
+   "verdict": "update",
+   "currentValue": "See common-carrier entry: heightened duty is arguable, not settled, for sightseeing carriages.",
+   "sourceName": "Singletary v. Atlantic Coast Line R. Co. (S.C. 1950)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1950/16376-1.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Soften to 'any heightened duty the company owes as a carrier of paying passengers'. Anchor text 'premises liability lawyer' is a mismatch for a carriage claim (editorial)."
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina: 3 years from the date of injury (S.C. Code 15-3-530)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 15-3-530(5)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct. Use § symbol."
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia: 2 years from the date of injury (O.C.G.A. 9-3-33)",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-3-33 (sibling packs)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "The citation is accurate Georgia law, but it does not govern a Charleston carriage accident sued in South Carolina; on an SC-only post it misleads Georgia visitors into thinking they have less time. Delete the bullet; replace with 'Claims against the City of Charleston or another government body: 2 years (S.C. Code § 15-78-110)'."
+  },
+  {
+   "surface": "body",
+   "claim": "While most carriage accidents occur in Charleston and fall under South Carolina's three-year deadline, Georgia residents injured while visiting Charleston should be aware that their home state has a shorter limitations period that could affect certain claims.",
+   "verdict": "drop",
+   "currentValue": "A Charleston injury is governed by South Carolina's limitation periods (§ 15-3-530; § 15-78-110 for government defendants) regardless of the victim's home state.",
+   "sourceName": "S.C. Code § 15-3-530",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Unsupported and confusing (Georgia law on an SC-only post). Delete."
+  },
+  {
+   "surface": "body",
+   "claim": "The action must be commenced within two years of the date the loss was or should have been discovered (S.C. Code § 15-78-110) rather than the usual three.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 15-78-110",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Verbatim-accurate paraphrase."
+  },
+  {
+   "surface": "body",
+   "claim": "Filing a verified claim with the entity within one year (S.C. Code § 15-78-80) is optional and extends the deadline back to three years.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code §§ 15-78-80(a), (d), 15-78-110",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct: a verified claim 'may be filed' and if filed 'must be received within one year after the loss was or should have been discovered'."
+  },
+  {
+   "surface": "body",
+   "claim": "In South Carolina, a wrongful death action must be filed within 3 years of the date of death (S.C. Code 15-51-20).",
+   "verdict": "update",
+   "currentValue": "Three years, 'the period to begin to run upon the death' — S.C. Code § 15-3-530(6). § 15-51-20 only names the beneficiaries and says the executor or administrator brings the action. Two years if a government body is a defendant (§ 15-78-110).",
+   "sourceName": "S.C. Code §§ 15-3-530(6), 15-51-20 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Wrong section cited. Suggested: '... within 3 years of the date of death (S.C. Code § 15-3-530(6)), brought by the personal representative of the estate (§ 15-51-20).'"
+  },
+  {
+   "surface": "body",
+   "claim": "Get the driver's name and the tour company name — this information is on the carriage permit, which should be displayed on the carriage",
+   "verdict": "update",
+   "currentValue": "The certificate of appropriateness 'must be permanently affixed to the vehicle' (§ 29-219) and identifies the vehicle and owner, not the driver. Each carriage must carry its insurer's name, policy number and claims phone (§ 29-240(a)); guides must wear a city ID card or state ID in plain view (§ 29-62).",
+   "sourceName": "City of Charleston Code of Ordinances, Ch. 29 (Tourism), Art. V (Animal-Drawn Vehicles), Municode Supp. No. 115 (codified through Ord. 2026-092, May 26, 2026; read via Municode API 2026-10-02) §§ 29-219, 29-240(a), 29-62",
+   "sourceUrl": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH29TO_ARTVTRANAWVEPUTO_DIV2CEAP_S29-219RE",
+   "retrievedAt": "2026-10-02",
+   "note": "Suggested: 'Get the driver's name and the tour company name — the guide must wear an ID, and the carriage must carry its insurance carrier and policy number.' Also add: the driver or guide must file a written accident report with the city's Livability & Tourism office within 24 hours (§ 29-240(a)) — request it."
+  },
+  {
+   "surface": "body",
+   "claim": "Obtain the police report — if law enforcement responded, request a copy of the incident report from the Charleston Police Department",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code §§ 56-5-1290, 56-5-6160",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Fine. Note the city-tourism accident report (§ 29-240) as a second record."
+  },
+  {
+   "surface": "body",
+   "claim": "Negotiate with the tour company's insurance carrier and, if necessary, take the case to trial in Charleston County Circuit Court",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "Charleston County Court of Common Pleas (Ninth Judicial Circuit) is the circuit court's civil side; fine as written."
+  },
+  {
+   "surface": "faq-body:1",
+   "claim": "Waivers and liability releases are not always enforceable in South Carolina. Courts will not enforce a waiver that attempts to release a party from liability for gross negligence or recklessness.",
+   "verdict": "update",
+   "currentValue": "South Carolina enforces pre-ride releases of ordinary negligence when the language is explicit, but disfavors them and 'strictly construe[s]' them against the company (McCune v. Myrtle Beach Indoor Shooting Range, Inc., Op. No. 3974 (Ct. App. 2005)); a release so broad it would absolve the defendant 'for any reason' is void as against public policy (Fisher v. Stevens, Op. No. 3665 (Ct. App. 2003)). No South Carolina appellate holding was found that a release of gross negligence is categorically unenforceable — McCune expressly noted its release excluded gross negligence.",
+   "sourceName": "McCune v. Myrtle Beach Indoor Shooting Range (S.C. Ct. App. 2005); Fisher v. Stevens (S.C. Ct. App. 2003) (Justia, browser-verified 2026-10-02)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/court-of-appeals/2005/3974.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Second sentence states as settled law a rule no SC case located holds. Suggested: 'South Carolina courts read waivers strictly against the company that wrote them, will not apply one to the company's own negligence unless it says so clearly, and void releases that are overly broad. Many waivers also exclude gross negligence by their own terms.' Also mention the Equine Activity Liability Act (see recommended edits)."
+  },
+  {
+   "surface": "faq-body:1",
+   "claim": "If the tour company violated safety regulations or operated with reckless disregard for passenger safety, a signed waiver is unlikely to bar your claim.",
+   "verdict": "update",
+   "currentValue": "Wilful or wanton conduct is excepted from Equine Act immunity (§ 47-9-720(B)(3)); a release's reach turns on its wording (McCune; Fisher).",
+   "sourceName": "S.C. Code § 47-9-720; McCune (2005)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t47c009.php",
+   "retrievedAt": "2026-10-02",
+   "note": "'Violated safety regulations' alone is not enough to defeat an explicit release of ordinary negligence. Soften to 'may not bar your claim', and keep the reckless-disregard limb."
+  },
+  {
+   "surface": "faq-body:2",
+   "claim": "South Carolina allows claims against all responsible parties.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 15-38-15 (version effective Jan. 1, 2026)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c038.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct. Optional add: a defendant less than 50% at fault pays only its share (§ 15-38-15, as amended by 2025 Act 42 effective January 1, 2026), so naming every responsible party matters."
+  },
+  {
+   "surface": "faq-body:3",
+   "claim": "Yes. The City of Charleston requires licensed carriage tour companies to carry liability insurance as a condition of their operating permit.",
+   "verdict": "update",
+   "currentValue": "Each carriage's certificate of appropriateness requires 'adequate proof of liability insurance with at least the amount required for motor vehicles and also medical payments or PIP in an amount of five thousand dollars ($5,000.00)' (§ 29-220(a)(5)); failure to maintain it is grounds for suspension or revocation (§ 29-222(a)). The motor-vehicle minimum is $25,000 per person / $50,000 per accident bodily injury (S.C. Code § 38-77-140).",
+   "sourceName": "City of Charleston Code of Ordinances, Ch. 29 (Tourism), Art. V (Animal-Drawn Vehicles), Municode Supp. No. 115 (codified through Ord. 2026-092, May 26, 2026; read via Municode API 2026-10-02) §§ 29-220(a)(5), 29-222; S.C. Code § 38-77-140",
+   "sourceUrl": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH29TO_ARTVTRANAWVEPUTO_DIV2CEAP_S29-220APIN",
+   "retrievedAt": "2026-10-02",
+   "note": "True, but adding the floor tells readers the minimum may be low. Suggested: '... must carry liability insurance at least equal to South Carolina's auto minimums ($25,000 per person / $50,000 per accident) plus $5,000 in medical-payments coverage, as a condition of each carriage's city certificate.'"
+  },
+  {
+   "surface": "faq-body:4",
+   "claim": "You may recover medical expenses (past and future), lost wages and earning capacity, pain and suffering, emotional distress, disfigurement, and loss of enjoyment of life.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 15-78-120(b) (no punitive damages vs. government)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate."
+  },
+  {
+   "surface": "faq-body:5",
+   "claim": "Most cases resolve within 6 to 18 months through settlement negotiations.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "Unsourced statistic ('most'). Soften: 'Many cases resolve within several months to a year or two through settlement ...'."
+  },
+  {
+   "surface": "faq-body:6",
+   "claim": "The common carrier heightened duty of care applies primarily to passengers, but the tour company still owes pedestrians a duty of ordinary care to operate safely on public streets.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "Singletary v. Atlantic Coast Line R. Co. (S.C. 1950); S.C. Code § 47-9-710(1)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1950/16376-1.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct in structure, but conform to the common-carrier hedge ('any heightened carrier duty'). Pedestrians/bystanders are outside the Equine Activity Liability Act — spectators are excluded from 'engages in an equine activity' unless in an unauthorized area in immediate proximity (§ 47-9-710(1)). Worth saying."
+  },
+  {
+   "surface": "faq-body:7",
+   "claim": "Yes. Call the Charleston Police Department to report the incident.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 56-5-1260 (crash involving a vehicle with injury)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Fine. A police report and any citation are not admissible to prove fault in an SC civil trial (§§ 56-5-1290, 56-5-6160) — don't overstate the 'observations about fault' value."
+  },
+  {
+   "surface": "body",
+   "claim": "We handle carriage accident claims on a contingency fee basis — you pay nothing unless we recover compensation for you.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Firm statement",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "Firm claim — keep; confirm with the firm that case costs are never charged when there is no recovery."
+  },
+  {
+   "surface": "body",
+   "claim": "Call our Charleston office at (843) 790-8999 or our firm-wide line at 1-844-RESULTS for a free consultation.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "client.json locations[Charleston].phone = (843) 790-8999 (127 King Street Suite 200, Charleston, SC 29401); 1-844-RESULTS = 1-844-737-8587 (writer profile)",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "tel:8437908999 matches the Charleston office; tel:18447378587 spells 1-844-RESULTS correctly. Optional normalize to tel:+1… format."
+  }
+ ],
+ "recommendedEdits": [
+  "Common-carrier paragraph (and its echoes in the comparative-fault paragraph, the lawyer section and FAQ 'pedestrian'): replace 'Tour companies are common carriers under South Carolina law' with 'may be held to the heightened standard South Carolina applies to common carriers — the highest degree of care, though not a guarantee of safety (Singletary v. Atlantic Coast Line R. Co., 1950). No South Carolina appellate court has decided whether a sightseeing carriage qualifies; at a minimum the company owes reasonable care.'",
+  "ADD the Equine Activity Liability Act (S.C. Code §§ 47-9-710 to -730) — the post omits the tour company's main statutory defense. 'Engages in an equine activity' includes 'driving, or being a passenger upon an equine, mounted or unmounted', and a sponsor or equine professional is not liable to a participant for an 'inherent risk of equine activity', including 'the unpredictability of an equine's reaction to sound, sudden movement' (§ 47-9-710(1), (6); § 47-9-720(A)). Whether a carriage passenger counts as a 'participant' has not been decided by a South Carolina appellate court (not verified). Exceptions: faulty tack the company knew or should have known of, failure to assess the participant, a known latent dangerous condition on its premises, wilful or wanton conduct, intentional injury (§ 47-9-720(B)); motor-vehicle liability excluded (§ 47-9-720(D)); immunity lost if the statutory warning sign/contract notice is missing (§ 47-9-730(C)). Bystanders and pedestrians are not participants (§ 47-9-710(1)). Charleston's code requires carriage barns to post this act's signage (§ 29-212(d)(3)). Suggested placement: a short subsection under 'Who Is Liable', plus one sentence in the waiver FAQ.",
+  "Regulations list — fix four bullets against Charleston City Code Ch. 29, Art. V (Municode Supp. 115): (1) Permit limits → 34 zone medallions cap carriages touring at once (§§ 29-208, 29-210); (2) Operating hours → gate tours 9 a.m. to 5 p.m. winter / 6 p.m. summer through residential areas, evening rides limited to the commercial district (§§ 29-206(c), (f), 29-236); (3) Heat → tours stop when the temperature reaches 95°F OR the heat index reaches 110°F (four readings 15 minutes apart), and a horse at 103°F after a tour comes out of service (§ 29-212(g)); (4) Driver licensing → driver's license plus a city competency exam on handling horses and carriages in emergencies (§ 29-204) — the history exam is now voluntary (§ 29-59); (5) Inspections → annual certificate, required lights/reflectors, safe condition, post-accident inspection (§§ 29-212(c), 29-219, 29-240(d)); delete 'braking systems'.",
+  "Cobblestone: carriages are barred from all cobblestone and Belgian-block streets and from the bricked part of Church Street (§ 29-203(a)). Change 'Cobblestone and brick streets ... unforgiving landing surface' to asphalt/curbs, and FAQ 'What injuries occur' to 'onto pavement'.",
+  "City of Charleston liability: say regulating/permitting is immune (§ 15-78-60(4), (12)) and road/sign/signal liability requires actual or constructive notice and failure to fix within a reasonable time (§ 15-78-60(15)); add the $300,000 per-person cap and no punitive damages (§ 15-78-120) next to the $600,000 per-occurrence figure.",
+  "Georgia: delete the Georgia SOL bullet, the 'Georgia residents ... shorter limitations period' sentence, and 'Two years in Georgia' in FAQ 'How long do I have' (meta, FAQPage). Replace with the SC government-defendant two-year rule (§ 15-78-110). Key Takeaways deadline sentence: add 'or 2 years against a government body (§ 15-78-110)'.",
+  "Wrongful death cite: § 15-51-20 → § 15-3-530(6) (period runs from the death); § 15-51-20 is who brings it.",
+  "Waiver FAQ: replace 'Courts will not enforce a waiver that attempts to release ... gross negligence or recklessness' with the verified rule — releases are strictly construed against the drafter, must clearly cover the company's own negligence, and overly broad releases are void (McCune 2005; Fisher 2003).",
+  "Negligence per se sentence: add Whitlaw's limits — the rule must be meant to protect people in the plaintiff's position, and causation must still be proved (Whitlaw v. Kroger Co., 306 S.C. 51 (1991)).",
+  "Evidence section: the carriage permit does not name the driver. Say the guide must wear ID (§ 29-62) and the carriage must carry its insurer and policy number (§ 29-240(a)); add that the driver/guide must file a written accident report with the city's Livability & Tourism office within 24 hours (§ 29-240(a)) and that the horse and carriage must be inspected before returning to service (§ 29-240(c)-(d)) — both are records worth requesting.",
+  "Insurance FAQ: specify the floor — liability coverage at least equal to SC auto minimums ($25,000/$50,000) plus $5,000 med-pay/PIP (§ 29-220(a)(5); § 38-77-140).",
+  "Passenger count: '12 and 16' → 'up to 16' on large public carriages; 'draft horses — typically Percherons, Belgians, or mules' → 'draft horses or mules' (city definition § 29-1).",
+  "Intro link: re-point https://www.charleston-sc.gov/462/Carriage-Tours (unreachable from this network; unverified-by-fetch) to the Municode Article V URL. Optional current-events line (no company name): the August 3, 2026 Cumberland/Church Street incident (Post and Courier).",
+  "Soften 'Most cases resolve within 6 to 18 months' (unsourced) and 'only need to travel for trial' (FAQ, depositions/medical exams). Fill the empty metaDescription."
+ ],
+ "statuteCitations": [
+  {
+   "section": "Charleston City Code § 29-203",
+   "name": "Route limitations — no cobblestone/Belgian-block streets or bricked Church Street (Water St.–South Battery)",
+   "url": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH29TO_ARTVTRANAWVEPUTO_DIV1GE_S29-203ROLI"
+  },
+  {
+   "section": "Charleston City Code § 29-204",
+   "name": "Drivers — driver's license and animal-drawn vehicle competency examination",
+   "url": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH29TO_ARTVTRANAWVEPUTO_DIV1GE_S29-204DR"
+  },
+  {
+   "section": "Charleston City Code § 29-206",
+   "name": "Gatekeeper loading and medallion issuance; gate hours; commercial tours",
+   "url": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH29TO_ARTVTRANAWVEPUTO_DIV1GE_S29-206GALOMEISPR"
+  },
+  {
+   "section": "Charleston City Code § 29-208",
+   "name": "Zones of operation; random medallion selection",
+   "url": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH29TO_ARTVTRANAWVEPUTO_DIV1GE_S29-208ZOOP"
+  },
+  {
+   "section": "Charleston City Code § 29-210",
+   "name": "Number of medallions — 34",
+   "url": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH29TO_ARTVTRANAWVEPUTO_DIV1GE_S29-210NUMEBEIS"
+  },
+  {
+   "section": "Charleston City Code § 29-212",
+   "name": "General health care and management requirements — equipment, capacity (3× animal weight), work/rest limits, heat (95°F / 110°F HI), inspections, Equine Act signage, annual training",
+   "url": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH29TO_ARTVTRANAWVEPUTO_DIV1GE_S29-212GEHECAMARE"
+  },
+  {
+   "section": "Charleston City Code § 29-219",
+   "name": "Certificate of appropriateness required; affixed to vehicle",
+   "url": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH29TO_ARTVTRANAWVEPUTO_DIV2CEAP_S29-219RE"
+  },
+  {
+   "section": "Charleston City Code § 29-220",
+   "name": "Certificate application — liability insurance at motor-vehicle minimum plus $5,000 med-pay/PIP",
+   "url": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH29TO_ARTVTRANAWVEPUTO_DIV2CEAP_S29-220APIN"
+  },
+  {
+   "section": "Charleston City Code § 29-236",
+   "name": "Hours of operation in residential zones",
+   "url": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH29TO_ARTVITOREGE_S29-236HOOP"
+  },
+  {
+   "section": "Charleston City Code § 29-240",
+   "name": "Report of accident within 24 hours; insurance info carried; post-accident horse and carriage inspection",
+   "url": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH29TO_ARTVITOREGE_S29-240REACRE"
+  },
+  {
+   "section": "S.C. Code § 47-9-710",
+   "name": "Equine Activity Liability Act — definitions (participant; engages in equine activity includes being a passenger, mounted or unmounted; spectators excluded)",
+   "url": "https://www.scstatehouse.gov/code/t47c009.php"
+  },
+  {
+   "section": "S.C. Code § 47-9-720",
+   "name": "Equine liability immunity for inherent risks; exceptions; motor-vehicle liability excluded",
+   "url": "https://www.scstatehouse.gov/code/t47c009.php"
+  },
+  {
+   "section": "S.C. Code § 47-9-730",
+   "name": "Warning sign and contract notice; immunity lost if not posted",
+   "url": "https://www.scstatehouse.gov/code/t47c009.php"
+  },
+  {
+   "section": "S.C. Code § 15-78-60",
+   "name": "Tort Claims Act exceptions — (4) enforcement of laws, (12) licensing/permits, (15) signs, signals and road defects (notice required)",
+   "url": "https://www.scstatehouse.gov/code/t15c078.php"
+  },
+  {
+   "section": "S.C. Code § 15-78-80",
+   "name": "Verified claim 'may be filed'; must be received within one year",
+   "url": "https://www.scstatehouse.gov/code/t15c078.php"
+  },
+  {
+   "section": "S.C. Code § 15-78-110",
+   "name": "Tort Claims Act — two years (three if verified claim first filed)",
+   "url": "https://www.scstatehouse.gov/code/t15c078.php"
+  },
+  {
+   "section": "S.C. Code § 15-78-120",
+   "name": "Tort Claims Act caps ($300,000 per person / $600,000 per occurrence); no punitive damages",
+   "url": "https://www.scstatehouse.gov/code/t15c078.php"
+  },
+  {
+   "section": "S.C. Code § 15-3-530",
+   "name": "Three years — personal injury (5); wrongful death from date of death (6)",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "section": "S.C. Code § 15-3-40",
+   "name": "Tolling for minors",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "section": "S.C. Code § 15-51-20",
+   "name": "Wrongful death — beneficiaries; brought by executor or administrator",
+   "url": "https://www.scstatehouse.gov/code/t15c051.php"
+  },
+  {
+   "section": "S.C. Code § 15-38-15",
+   "name": "Joint and several liability limited for defendants under 50% fault (version effective Jan. 1, 2026)",
+   "url": "https://www.scstatehouse.gov/code/t15c038.php"
+  },
+  {
+   "section": "S.C. Code § 38-77-140",
+   "name": "Auto liability minimums — $25,000 / $50,000 bodily injury; $25,000 property",
+   "url": "https://www.scstatehouse.gov/code/t38c077.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-1290",
+   "name": "Crash reports not evidence of negligence at trial",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-6160",
+   "name": "Evidence of traffic conviction inadmissible in civil action",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  }
+ ],
+ "authoritativeLinks": [
+  {
+   "name": "City of Charleston Code of Ordinances, Ch. 29 Art. V — Transportation by Animal-Drawn Vehicles (Municode, Supp. 115)",
+   "url": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH29TO_ARTVTRANAWVEPUTO"
+  },
+  {
+   "name": "Singletary v. Atlantic Coast Line R. Co., 217 S.C. 212, 60 S.E.2d 305 (1950) — common carrier owes passengers the highest degree of care, not an insurer",
+   "url": "https://law.justia.com/cases/south-carolina/supreme-court/1950/16376-1.html"
+  },
+  {
+   "name": "Singleton v. Sherer (S.C. Ct. App. 2008) — quotes Mungo v. Bennett, 238 S.C. 79 (1961): owner liable for domestic animal (horses, mules) only on known or should-have-known dangerous propensity",
+   "url": "https://law.justia.com/cases/south-carolina/court-of-appeals/2008/4346.html"
+  },
+  {
+   "name": "Whitlaw v. Kroger Co., 306 S.C. 51, 410 S.E.2d 251 (1991) — negligence per se; violation not conclusive of liability",
+   "url": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23498-2.html"
+  },
+  {
+   "name": "McCune v. Myrtle Beach Indoor Shooting Range, Inc. (S.C. Ct. App. 2005, Op. 3974) — exculpatory releases disfavored, strictly construed",
+   "url": "https://law.justia.com/cases/south-carolina/court-of-appeals/2005/3974.html"
+  },
+  {
+   "name": "Fisher v. Stevens (S.C. Ct. App. 2003, Op. 3665) — overly broad release void as against public policy",
+   "url": "https://law.justia.com/cases/south-carolina/court-of-appeals/2003/3665.html"
+  },
+  {
+   "name": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991) — modified comparative negligence",
+   "url": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html"
+  },
+  {
+   "name": "Post and Courier — horse carriage operator, passenger injured after horse startled (Aug. 3, 2026)",
+   "url": "https://www.postandcourier.com/charleston_sc/charleston-palmetto-horse-carriage-tour-incident/article_25182a73-6418-4b1d-8431-82705920c52d.html"
+  },
+  {
+   "name": "Charleston City Paper — two people injured in downtown Charleston carriage accident (Aug. 4, 2026)",
+   "url": "https://charlestoncitypaper.com/2026/08/04/two-people-injured-in-downtown-charleston-carriage-accident/"
+  },
+  {
+   "name": "Live 5 News — Charleston extreme heat warning suspends carriage tours (July 9, 2026)",
+   "url": "https://www.live5news.com/2026/07/09/charleston-extreme-heat-warning-prompts-changes-city-services-suspends-carriage-tours/"
+  },
+  {
+   "name": "The Livestock Conservancy — Belgian Horse (adult weight 1,800–2,200 lbs)",
+   "url": "https://livestockconservancy.org/belgian-horse/"
+  },
+  {
+   "name": "City of Charleston — Carriage Tours page (linked in post) — UNVERIFIED-BY-FETCH: charleston-sc.gov refused connections from this network and did not load in Chrome",
+   "url": "https://www.charleston-sc.gov/462/Carriage-Tours"
+  }
+ ],
+ "quoteNote": "Claims are quoted from the rendered text of body.html (tags stripped) and from meta.json. Surfaces: 'faq:N' = meta.json _roden_faqs item N (also FAQPage structured data); 'faq-body:N' = the Nth question in the in-body Frequently Asked Questions block; keyTakeaways, excerpt and metaDescription from meta.json. Several entries quote a fragment of a sentence (list bullets quote from the bold lead-in, which is wrapped in <strong> in the source). Charleston ordinance text was read in full from the Municode API (Code of Ordinances product 10245, job 495250 = Supplement 115, codified through Ord. 2026-092, enacted May 26, 2026); post-2023 amendments noted (Ords. 2023-063/-064 amended §§ 29-202, -205, -212, -222, -240 and made tour-guide certification voluntary). S.C. Code text re-read from scstatehouse.gov 2026-10-02. Justia cases (Singletary, Singleton, Whitlaw, McCune) checked in Chrome; Fisher via search index of the Justia page; Nelson reused from sibling packs. charleston-sc.gov unreachable — no claim rests on it. No carriage company is named in any suggested edit."
+}

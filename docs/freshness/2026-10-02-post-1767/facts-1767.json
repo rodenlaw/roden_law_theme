@@ -1,0 +1,677 @@
+{
+ "postId": 1767,
+ "slug": "drunk-pedestrian-injury-claims",
+ "liveUrl": "https://rodenlaw.com/blog/drunk-pedestrian-injury-claims/",
+ "jurisdiction": "both",
+ "researchedAt": "2026-10-02",
+ "verifiedClaims": [
+  {
+   "surface": "excerpt",
+   "claim": "An intoxicated pedestrian can still recover in Georgia and South Carolina.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-33(a),(g) (Justia, 2025 Code); Nelson v. Concrete Supply Co. (S.C. 1991)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Excerpt publishes as the Article description. Accurate: intoxication is weighed in the fault percentage, not a categorical bar, in both states."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Intoxicated pedestrians can file personal injury claims in both Georgia and South Carolina under modified comparative fault rules.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-33 (Justia, 2025 Code); Nelson v. Concrete Supply Co. (S.C. 1991)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Georgia allows recovery if less than 50% at fault (O.C.G.A. § 51-12-33); South Carolina if less than 51%.",
+   "verdict": "keep",
+   "currentValue": "§ 51-12-33(g): 'the plaintiff shall not be entitled to receive any damages if the plaintiff is 50 percent or more responsible for the injury or damages claimed.' South Carolina: a plaintiff recovers if his or her negligence is not greater than the defendant's — barred at 51% or more, and a plaintiff exactly 50% at fault recovers half — under Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991). Never cite § 15-38-15 for the bar.",
+   "sourceName": "O.C.G.A. § 51-12-33(g) (Justia, 2025 Code); Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct. § 51-12-33 history ends with Ga. L. 2022 (HB 961); 2025's SB 68 did not amend it (SB 68's trial changes are in §§ 9-10-184 and 51-12-15, verified in facts-1651). Optional: append '(Nelson v. Concrete Supply Co.)' after 'less than 51%' so both states carry authority."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Drivers owe a duty of care to all pedestrians including impaired ones.",
+   "verdict": "keep",
+   "currentValue": "O.C.G.A. § 40-6-93: 'Notwithstanding other provisions of this chapter, every driver of a vehicle shall exercise due care to avoid colliding with any pedestrian upon any roadway, shall give warning by sounding his horn when necessary, and shall exercise proper precautions upon observing any child or any obviously confused, incapacitated, or intoxicated person.' (2025 Code; last amended 1990). S.C. Code § 56-5-3230 ('Drivers to exercise due care'): 'Notwithstanding other provisions of any local ordinance, every driver of a vehicle shall exercise due care to avoid colliding with any pedestrian or any person propelling a human-powered vehicle and shall give an audible signal when necessary and shall exercise proper precaution upon observing any child or any obviously confused, incapacitated or intoxicated person.'",
+   "sourceName": "O.C.G.A. § 40-6-93 (Justia, 2025 Code); S.C. Code § 56-5-3230 (scstatehouse.gov)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-93/",
+   "retrievedAt": "2026-10-02",
+   "note": "Stronger than the post knows: both statutes name 'intoxicated' persons expressly. Optional tightening: 'Both states' due-care statutes expressly require drivers to take proper precautions around an obviously intoxicated person (O.C.G.A. § 40-6-93; S.C. Code § 56-5-3230).'"
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Compensation is reduced proportionally to fault percentage.",
+   "verdict": "keep",
+   "currentValue": "§ 51-12-33(a): the judge 'shall reduce the amount of damages otherwise awarded to the plaintiff in proportion to his or her percentage of fault.' South Carolina reduces the award by the plaintiff's percentage under Nelson.",
+   "sourceName": "O.C.G.A. § 51-12-33(a) (Justia, 2025 Code)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Georgia has a 2-year statute of limitations (O.C.G.A. § 9-3-33); South Carolina has 3 years (S.C. Code § 15-3-530).",
+   "verdict": "keep",
+   "currentValue": "§ 9-3-33: actions for injuries to the person 'shall be brought within two years after the right of action accrues'. S.C. Code § 15-3-530(5): within three years, 'an action for assault, battery, or any injury to the person or rights of another, not arising on contract'.",
+   "sourceName": "O.C.G.A. § 9-3-33 (Justia); S.C. Code § 15-3-530 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct for a claim against a private driver. Not stated anywhere in the post: a claim against a South Carolina government driver/agency is governed by the Tort Claims Act — two years, or three if a verified claim is filed first (§ 15-78-110); Georgia government claims carry ante litem notice deadlines (§ 36-33-5 cities 6 months; § 36-11-1 counties 12 months; § 50-21-26 state 12 months). Optional sentence in the SOL section."
+  },
+  {
+   "surface": "faq:0",
+   "claim": "less than 50% in Georgia (O.C.G.A. § 51-12-33) and less than 51% in South Carolina",
+   "verdict": "keep",
+   "currentValue": "§ 51-12-33(g) 50% bar; South Carolina: a plaintiff recovers if his or her negligence is not greater than the defendant's — barred at 51% or more, and a plaintiff exactly 50% at fault recovers half — under Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991). Never cite § 15-38-15 for the bar.",
+   "sourceName": "O.C.G.A. § 51-12-33(g) (Justia); Nelson v. Concrete Supply Co. (S.C. 1991)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQ answers publish as FAQPage structured data. Accurate. Optional '(Nelson v. Concrete Supply Co.)' after the SC clause."
+  },
+  {
+   "surface": "faq:1",
+   "claim": "if you are found 30% at fault due to intoxication and your damages total $200,000, you would recover $140,000",
+   "verdict": "keep",
+   "currentValue": "$200,000 × (1 − 0.30) = $140,000.",
+   "sourceName": "O.C.G.A. § 51-12-33(a) (Justia)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Arithmetic correct; illustrative figure, not a case result."
+  },
+  {
+   "surface": "faq:1",
+   "claim": "However, if your fault reaches the state threshold, you receive nothing.",
+   "verdict": "keep",
+   "currentValue": "Georgia: barred at 50% or more (§ 51-12-33(g)). South Carolina: barred at 51% or more (Nelson).",
+   "sourceName": "O.C.G.A. § 51-12-33(g) (Justia); Nelson",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct given thresholds stated as 50% (GA) and 51% (SC) elsewhere in the post."
+  },
+  {
+   "surface": "faq:2",
+   "claim": "South Carolina law specifically requires extra precaution for confused or incapacitated persons.",
+   "verdict": "update",
+   "currentValue": "S.C. Code § 56-5-3230 ('Drivers to exercise due care'): 'Notwithstanding other provisions of any local ordinance, every driver of a vehicle shall exercise due care to avoid colliding with any pedestrian or any person propelling a human-powered vehicle and shall give an audible signal when necessary and shall exercise proper precaution upon observing any child or any obviously confused, incapacitated or intoxicated person.' O.C.G.A. § 40-6-93: 'Notwithstanding other provisions of this chapter, every driver of a vehicle shall exercise due care to avoid colliding with any pedestrian upon any roadway, shall give warning by sounding his horn when necessary, and shall exercise proper precautions upon observing any child or any obviously confused, incapacitated, or intoxicated person.' (2025 Code; last amended 1990).",
+   "sourceName": "S.C. Code § 56-5-3230 (scstatehouse.gov); O.C.G.A. § 40-6-93 (Justia, 2025 Code)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Incomplete in a way that undersells the post's thesis: BOTH states require it, and both statutes expressly name 'intoxicated' persons. Replace with: 'Both states' due-care statutes specifically require drivers to take proper precautions upon observing any child or any obviously confused, incapacitated, or intoxicated person (O.C.G.A. § 40-6-93; S.C. Code § 56-5-3230).'"
+  },
+  {
+   "surface": "faq:2",
+   "claim": "A driver who was speeding, texting, or otherwise negligent is still liable even if the pedestrian was intoxicated.",
+   "verdict": "update",
+   "currentValue": "The driver's negligence remains actionable, but the pedestrian's recovery is reduced by his or her share of fault and barred entirely at 50% or more in Georgia (§ 51-12-33(g)) or 51% or more in South Carolina. Politzer v. Xiaoyan, 342 Ga. App. 224, 801 S.E.2d 114 (2017), cert. denied (as annotated under §§ 40-6-91 and 40-6-95): summary judgment for the driver affirmed where the drunk pedestrian, in black clothing, crossed a major road at night outside an available crosswalk and there was no evidence the driver was speeding, violating any rule of the road, or even saw him.",
+   "sourceName": "O.C.G.A. § 51-12-33(g); Politzer v. Xiaoyan (Ga. Ct. App. 2017), annotation to O.C.G.A. § 40-6-95 (Justia)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-95/",
+   "retrievedAt": "2026-10-02",
+   "note": "'Is still liable' overstates: liability turns on the fault split. Reword: 'A driver who was speeding, texting, or otherwise negligent can still be held liable even if the pedestrian was intoxicated — the pedestrian's share of fault reduces the award rather than erasing the claim, unless it reaches the state's bar.'"
+  },
+  {
+   "surface": "faq:3",
+   "claim": "In Georgia, you have 2 years from the date of the accident to file a lawsuit (O.C.G.A. § 9-3-33). In South Carolina, you have 3 years (S.C. Code § 15-3-530).",
+   "verdict": "keep",
+   "currentValue": "§ 9-3-33 two years after accrual; § 15-3-530(5) three years.",
+   "sourceName": "O.C.G.A. § 9-3-33 (Justia); S.C. Code § 15-3-530 (scstatehouse.gov)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct for private defendants. See Key Takeaways note on government-defendant deadlines (§ 15-78-110; GA ante litem)."
+  },
+  {
+   "surface": "faq:3",
+   "claim": "Missing these deadlines means losing your right to sue.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-3-33; S.C. Code § 15-3-530",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-02",
+   "note": "General statement; tolling exceptions (e.g., minors, S.C. Code § 15-3-40 capped at one year after disability ends) exist but need not be listed in an FAQ."
+  },
+  {
+   "surface": "faq:4",
+   "claim": "but they cannot legally deny it solely because you were drinking",
+   "verdict": "update",
+   "currentValue": "No statute in either state forbids a liability insurer from denying a third-party bodily-injury claim. The unfair-claims-practices statutes (O.C.G.A. § 33-6-34; S.C. Code § 38-59-20) are enforced by the insurance regulator, Georgia's bad-faith penalty (§ 33-4-6) runs only to the policyholder, and South Carolina 'does not recognize a third party action for bad faith refusal to pay insurance benefits' (Kleckley v. Northwestern Nat'l Cas. Co., 338 S.C. 131 (2000)). What is true is that intoxication alone does not bar recovery under either state's comparative-fault rule, so a denial on that ground can be tested by suing the driver.",
+   "sourceName": "Kleckley v. Northwestern Nat'l Cas. Co. (S.C. 2000); O.C.G.A. §§ 33-4-6, 33-6-34; S.C. Code § 38-59-20 (verified in facts-1679/1709/1744)",
+   "sourceUrl": "https://caselaw.findlaw.com/court/sc-supreme-court/1411345.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Reword: 'Insurance companies will try to use your intoxication to minimize or deny your claim, but drinking alone does not bar recovery in either state — if the driver was negligent, a denial can be challenged by filing suit against the driver.' Published as FAQPage schema, so fix in meta."
+  },
+  {
+   "surface": "faq:5",
+   "claim": "Key evidence includes surveillance camera footage, witness testimony, the police report, the driver's cell phone records showing distraction, accident reconstruction analysis, and vehicle black box data showing speed and braking.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "General litigation practice",
+   "sourceUrl": "https://www.law.cornell.edu/wex/comparative_negligence",
+   "retrievedAt": "2026-10-02",
+   "note": "No legal assertion beyond evidence types. Optional nuance (do not add to the FAQ unless the body changes too): a traffic citation/conviction itself is not admissible in a civil case (S.C. Code § 56-5-6160; Georgia: Howard v. Lay, 259 Ga. App. 391 (2003))."
+  },
+  {
+   "surface": "body",
+   "claim": "being intoxicated does not automatically bar you from filing a personal injury claim in either Georgia or South Carolina",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-33; Nelson v. Concrete Supply Co.",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  },
+  {
+   "surface": "body",
+   "claim": "Cornell Law Institute's overview of comparative negligence",
+   "verdict": "update",
+   "currentValue": "The publisher is the Legal Information Institute (LII) at Cornell Law School; Wex entry 'comparative negligence' (last reviewed July 2022). Link resolves HTTP 200 on 2026-10-02.",
+   "sourceName": "Legal Information Institute, Cornell Law School — Wex: comparative negligence",
+   "sourceUrl": "https://www.law.cornell.edu/wex/comparative_negligence",
+   "retrievedAt": "2026-10-02",
+   "note": "Anchor-name defect (same fix applied in sibling packs 4585/1651/1653): change to 'the Legal Information Institute at Cornell Law School's overview of comparative negligence'. Keep the href."
+  },
+  {
+   "surface": "body",
+   "claim": "most states allow partial recovery when an injured party contributed to their own harm",
+   "verdict": "keep",
+   "currentValue": "LII Wex: modified comparative negligence 'is followed by the majority of states'; pure comparative in 'almost one-third'; 'Only four states and the District of Columbia recognize the contributory negligence rule: Alabama, Maryland, North Carolina, and Virginia.'",
+   "sourceName": "Legal Information Institute, Cornell Law School — Wex: comparative negligence",
+   "sourceUrl": "https://www.law.cornell.edu/wex/comparative_negligence",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate paraphrase."
+  },
+  {
+   "surface": "body",
+   "claim": "Drivers owe a duty of care to all pedestrians, including those who may be impaired.",
+   "verdict": "keep",
+   "currentValue": "O.C.G.A. § 40-6-93: 'Notwithstanding other provisions of this chapter, every driver of a vehicle shall exercise due care to avoid colliding with any pedestrian upon any roadway, shall give warning by sounding his horn when necessary, and shall exercise proper precautions upon observing any child or any obviously confused, incapacitated, or intoxicated person.' (2025 Code; last amended 1990). Fountain v. Thompson, 252 Ga. 256, 312 S.E.2d 788 (1984), as annotated under § 40-6-93: one 'lying prone in the highway in a drunken condition is owed a duty of care' and the driver 'is under a duty to discover the victim's peril and avoid injury'.",
+   "sourceName": "O.C.G.A. § 40-6-93 and annotation (Justia, 2025 Code)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-93/",
+   "retrievedAt": "2026-10-02",
+   "note": "Fountain v. Thompson is the best Georgia authority for this post and is not cited; optional addition (see recommendedEdits)."
+  },
+  {
+   "surface": "body",
+   "claim": "their negligence may be the primary or even sole cause of the accident — regardless of the pedestrian's blood alcohol content",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-33(a)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Defensible as 'may'. Balance it once in the body with the Politzer point: when there is no evidence the driver did anything wrong, Georgia courts grant the driver summary judgment even for an injured drunk pedestrian — which is why the evidence section matters."
+  },
+  {
+   "surface": "body",
+   "claim": "Must be less than 50% at fault (O.C.G.A. § 51-12-33)",
+   "verdict": "keep",
+   "currentValue": "§ 51-12-33(g): barred at '50 percent or more'.",
+   "sourceName": "O.C.G.A. § 51-12-33(g) (Justia)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  },
+  {
+   "surface": "body",
+   "claim": "Must be less than 51% at fault",
+   "verdict": "keep",
+   "currentValue": "South Carolina: a plaintiff recovers if his or her negligence is not greater than the defendant's — barred at 51% or more, and a plaintiff exactly 50% at fault recovers half — under Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991). Never cite § 15-38-15 for the bar.",
+   "sourceName": "Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Add '(Nelson v. Concrete Supply Co.)' to the cell to mirror the Georgia cell. Never § 15-38-15."
+  },
+  {
+   "surface": "body",
+   "claim": "Admissible to show contributory negligence",
+   "verdict": "update",
+   "currentValue": "Georgia and South Carolina both apply comparative (not contributory) negligence; evidence of a pedestrian's intoxication is relevant to his or her share of fault. Both states also make it an offense for a pedestrian under the influence 'to a degree which renders him a hazard' to be on the roadway: O.C.G.A. § 40-6-95 ('shall not walk or be upon any roadway or the shoulder of any roadway'; misdemeanor, fine up to $500) and S.C. Code § 56-5-3270 ('shall not walk or be upon a highway except a sidewalk'). The defense must prove the 'hazard' degree: in Swinney v. Schneider Nat'l Carriers, 829 F. Supp. 2d 1358 (N.D. Ga. 2011), defendants failed to show as a matter of law that alcohol and cocaine in the decedent's system rendered him a 'hazard' under § 40-6-95.",
+   "sourceName": "O.C.G.A. § 40-6-95 and annotations (Justia, 2025 Code); S.C. Code § 56-5-3270 (scstatehouse.gov)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-95/",
+   "retrievedAt": "2026-10-02",
+   "note": "Appears in both table columns. 'Contributory negligence' names the all-or-nothing rule neither state uses. Change both cells to 'Relevant to your share of fault' — GA cell may add '(see O.C.G.A. § 40-6-95)', SC cell '(see S.C. Code § 56-5-3270)'."
+  },
+  {
+   "surface": "body",
+   "claim": "2 years (O.C.G.A. § 9-3-33)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-3-33 (Justia)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  },
+  {
+   "surface": "body",
+   "claim": "3 years (S.C. Code § 15-3-530)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 15-3-530(5) (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  },
+  {
+   "surface": "body",
+   "claim": "if a jury determines that an intoxicated pedestrian was 30% at fault for an accident and the total damages are $200,000, the pedestrian would recover $140,000",
+   "verdict": "keep",
+   "currentValue": "$200,000 × 0.70 = $140,000.",
+   "sourceName": "O.C.G.A. § 51-12-33(a)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  },
+  {
+   "surface": "body",
+   "claim": "if the pedestrian's fault reaches or exceeds the state's threshold (50% in Georgia, 51% in South Carolina), recovery is completely barred",
+   "verdict": "keep",
+   "currentValue": "GA: 50 percent or more (§ 51-12-33(g)); SC: 51% or more (Nelson).",
+   "sourceName": "O.C.G.A. § 51-12-33(g); Nelson v. Concrete Supply Co.",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia follows a modified comparative fault system under O.C.G.A. § 51-12-33.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-33 (Justia, 2025 Code)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  },
+  {
+   "surface": "body",
+   "claim": "Under O.C.G.A. § 40-6-91, drivers must exercise due care to avoid striking any pedestrian on a roadway and must give warning by sounding the horn when necessary.",
+   "verdict": "update",
+   "currentValue": "O.C.G.A. § 40-6-93: 'Notwithstanding other provisions of this chapter, every driver of a vehicle shall exercise due care to avoid colliding with any pedestrian upon any roadway, shall give warning by sounding his horn when necessary, and shall exercise proper precautions upon observing any child or any obviously confused, incapacitated, or intoxicated person.' (2025 Code; last amended 1990).",
+   "sourceName": "O.C.G.A. § 40-6-93 (Justia, 2025 Code)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-93/",
+   "retrievedAt": "2026-10-02",
+   "note": "WRONG SECTION. § 40-6-91 is 'Right of way in crosswalks'; the due-care and horn duty is § 40-6-93. Replace with: 'Under O.C.G.A. § 40-6-93, drivers must exercise due care to avoid colliding with any pedestrian on a roadway, must give warning by sounding the horn when necessary, and must exercise proper precautions upon observing any child or any obviously confused, incapacitated, or intoxicated person.' The statute's own words make the post's point."
+  },
+  {
+   "surface": "body",
+   "claim": "Drivers must also yield to pedestrians in marked or unmarked crosswalks at intersections.",
+   "verdict": "update",
+   "currentValue": "§ 40-6-91(a): 'The driver of a vehicle shall stop and remain stopped to allow a pedestrian to cross the roadway within a crosswalk when the pedestrian is upon the half of the roadway upon which the vehicle is traveling, or when the pedestrian is approaching and is within one lane of the half of the roadway on which the vehicle is traveling or onto which it is turning.' § 40-6-91(b): no pedestrian shall 'suddenly leave a curb or other place of safety and walk or run into the path of a vehicle which is so close that it is impractical for the driver to yield.'",
+   "sourceName": "O.C.G.A. § 40-6-91 (Justia, 2025 Code)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-91/",
+   "retrievedAt": "2026-10-02",
+   "note": "Georgia's rule is 'stop and remain stopped', not 'yield'. Reword: 'Under O.C.G.A. § 40-6-91, drivers must also stop and remain stopped for a pedestrian within a crosswalk who is on their half of the road or within one lane of it.' Optional: note § 40-6-91(b)'s dart-out rule, which a defense will raise against a stumbling pedestrian."
+  },
+  {
+   "surface": "body",
+   "claim": "These duties apply regardless of the pedestrian's sobriety.",
+   "verdict": "keep",
+   "currentValue": "O.C.G.A. § 40-6-93: 'Notwithstanding other provisions of this chapter, every driver of a vehicle shall exercise due care to avoid colliding with any pedestrian upon any roadway, shall give warning by sounding his horn when necessary, and shall exercise proper precautions upon observing any child or any obviously confused, incapacitated, or intoxicated person.' (2025 Code; last amended 1990). Fountain v. Thompson, 252 Ga. 256, 312 S.E.2d 788 (1984), as annotated under § 40-6-93: one 'lying prone in the highway in a drunken condition is owed a duty of care' and the driver 'is under a duty to discover the victim's peril and avoid injury'.",
+   "sourceName": "O.C.G.A. § 40-6-93 and annotation (Justia)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-93/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate; § 40-6-93 names intoxicated persons expressly."
+  },
+  {
+   "surface": "body",
+   "claim": "O.C.G.A. § 40-6-92 requires pedestrians to yield the right-of-way to vehicles when crossing a roadway at a point other than a marked crosswalk or unmarked crosswalk at an intersection.",
+   "verdict": "update",
+   "currentValue": "§ 40-6-92(a): 'Every pedestrian crossing a roadway at any point other than within a marked crosswalk or within an unmarked crosswalk at an intersection shall yield the right of way to all vehicles upon the roadway unless he has already, and under safe conditions, entered the roadway.' § 40-6-92(c): between adjacent intersections with operating traffic-control signals, pedestrians 'shall not cross at any place except in a marked crosswalk.'",
+   "sourceName": "O.C.G.A. § 40-6-92 (Justia, 2025 Code)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-92/",
+   "retrievedAt": "2026-10-02",
+   "note": "Section number correct; add the statutory exception, which matters to a claimant: append 'unless the pedestrian has already, and under safe conditions, entered the roadway'. Annotation (Nelson v. State, 317 Ga. App. 527 (2012)): § 40-6-92(a) 'does not absolutely prohibit' crossing outside a crosswalk."
+  },
+  {
+   "surface": "body",
+   "claim": "If the driver was speeding or distracted, the driver still shares responsibility.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-33(a),(b); Nash v. Reed, 349 Ga. App. 381 (2019) (annotation to § 40-6-93: even if the jogger-plaintiff was negligent, a fact question remained whether the driver's negligence was greater)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-93/",
+   "retrievedAt": "2026-10-02",
+   "note": "Conditional and accurate. Good place to add the missing Georgia pedestrian-under-the-influence statute (§ 40-6-95) and the Politzer counterweight — see recommendedEdits."
+  },
+  {
+   "surface": "body",
+   "claim": "Under O.C.G.A. § 9-3-33, you have 2 years from the date of the accident to file a personal injury lawsuit in Georgia.",
+   "verdict": "keep",
+   "currentValue": "§ 9-3-33: two years after the right of action accrues (for a crash injury, the date of the crash).",
+   "sourceName": "O.C.G.A. § 9-3-33 (Justia)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Optional: government defendants require ante litem notice (§ 36-33-5 cities, 6 months; § 36-11-1 counties, 12 months; § 50-21-26 state, 12 months)."
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina also follows a modified comparative fault system.",
+   "verdict": "keep",
+   "currentValue": "South Carolina: a plaintiff recovers if his or her negligence is not greater than the defendant's — barred at 51% or more, and a plaintiff exactly 50% at fault recovers half — under Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991). Never cite § 15-38-15 for the bar.",
+   "sourceName": "Nelson v. Concrete Supply Co. (S.C. 1991)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Add '(Nelson v. Concrete Supply Co., 1991)' after the 51% sentence that follows."
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina courts have recognized that a driver's duty to exercise care toward pedestrians is not diminished by the pedestrian's intoxication.",
+   "verdict": "update",
+   "currentValue": "S.C. Code § 56-5-3230 ('Drivers to exercise due care'): 'Notwithstanding other provisions of any local ordinance, every driver of a vehicle shall exercise due care to avoid colliding with any pedestrian or any person propelling a human-powered vehicle and shall give an audible signal when necessary and shall exercise proper precaution upon observing any child or any obviously confused, incapacitated or intoxicated person.'",
+   "sourceName": "S.C. Code § 56-5-3230 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "No South Carolina case is cited and none was verified for this run; the statute says it directly. Replace with: 'South Carolina's due-care statute goes further: it expressly requires drivers to exercise proper precaution upon observing any obviously intoxicated person (S.C. Code § 56-5-3230).'"
+  },
+  {
+   "surface": "body",
+   "claim": "S.C. Code § 56-5-3130 requires every driver to exercise due care to avoid colliding with any pedestrian.",
+   "verdict": "update",
+   "currentValue": "S.C. Code § 56-5-3230 ('Drivers to exercise due care'): 'Notwithstanding other provisions of any local ordinance, every driver of a vehicle shall exercise due care to avoid colliding with any pedestrian or any person propelling a human-powered vehicle and shall give an audible signal when necessary and shall exercise proper precaution upon observing any child or any obviously confused, incapacitated or intoxicated person.' (§ 56-5-3130 is 'Pedestrians' right-of-way in crosswalks': when signals are not in place or not operating, the driver 'shall yield the right-of-way, slowing down or stopping if need be' to a pedestrian within a crosswalk on the driver's half of the roadway or approaching so closely from the opposite half as to be in danger.)",
+   "sourceName": "S.C. Code §§ 56-5-3130, 56-5-3230 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "WRONG SECTION. Change '§ 56-5-3130' to '§ 56-5-3230'. Also update statuteCitations/meta stats that list § 56-5-3130 as the due-care cite. If the post wants § 56-5-3130 it belongs in a new sentence on crosswalk right-of-way."
+  },
+  {
+   "surface": "body",
+   "claim": "Drivers must give an audible signal when necessary and exercise proper precaution upon observing any child or any confused or incapacitated person on the roadway.",
+   "verdict": "update",
+   "currentValue": "S.C. Code § 56-5-3230 ('Drivers to exercise due care'): 'Notwithstanding other provisions of any local ordinance, every driver of a vehicle shall exercise due care to avoid colliding with any pedestrian or any person propelling a human-powered vehicle and shall give an audible signal when necessary and shall exercise proper precaution upon observing any child or any obviously confused, incapacitated or intoxicated person.'",
+   "sourceName": "S.C. Code § 56-5-3230 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Misquotes the statute: it reads 'any child or any obviously confused, incapacitated or intoxicated person', and it has no 'on the roadway' limiter. Replace with: 'Drivers must give an audible signal when necessary and exercise proper precaution upon observing any child or any obviously confused, incapacitated or intoxicated person.'"
+  },
+  {
+   "surface": "body",
+   "claim": "This \"incapacitated person\" language can apply to visibly intoxicated pedestrians, imposing a heightened duty of care on drivers.",
+   "verdict": "update",
+   "currentValue": "S.C. Code § 56-5-3230 ('Drivers to exercise due care'): 'Notwithstanding other provisions of any local ordinance, every driver of a vehicle shall exercise due care to avoid colliding with any pedestrian or any person propelling a human-powered vehicle and shall give an audible signal when necessary and shall exercise proper precaution upon observing any child or any obviously confused, incapacitated or intoxicated person.'",
+   "sourceName": "S.C. Code § 56-5-3230 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "No inference is needed — the statute names intoxicated persons. Replace with: 'The statute names intoxicated persons expressly, so a driver who sees a pedestrian staggering or confused must take extra care. Georgia's due-care statute uses nearly identical words (O.C.G.A. § 40-6-93).' Avoid 'heightened duty': the duty is proper precaution, measured by ordinary care (Reed v. Dixon, 153 Ga. App. 604 (1980), annotated under § 40-6-93)."
+  },
+  {
+   "surface": "body",
+   "claim": "S.C. Code § 56-5-3150 requires pedestrians crossing at a point other than a marked crosswalk to yield the right-of-way to vehicles.",
+   "verdict": "update",
+   "currentValue": "§ 56-5-3150(a): 'Every pedestrian crossing a roadway at any point other than within a marked crosswalk or within an unmarked crosswalk at an intersection shall yield the right-of-way to all vehicles upon the roadway.' (c): between adjacent signalized intersections, pedestrians 'shall not cross at any place except in a marked crosswalk.' § 56-5-3270: 'A pedestrian who is under the influence of alcohol, or any drug, to a degree which renders himself a hazard shall not walk or be upon a highway except a sidewalk.'",
+   "sourceName": "S.C. Code §§ 56-5-3150, 56-5-3270 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Section number correct; text omits unmarked crosswalks at intersections. Replace with: 'S.C. Code § 56-5-3150 requires pedestrians crossing anywhere other than a marked crosswalk or an unmarked crosswalk at an intersection to yield the right-of-way to vehicles, and § 56-5-3270 bars a pedestrian impaired to the point of being a hazard from being on a highway except a sidewalk.' (Unlike Georgia, SC's § 56-5-3150(a) has no 'already entered under safe conditions' exception.)"
+  },
+  {
+   "surface": "body",
+   "claim": "However, the fact that a pedestrian was outside a crosswalk does not excuse a driver's failure to exercise due care.",
+   "verdict": "keep",
+   "currentValue": "S.C. Code § 56-5-3230 ('Drivers to exercise due care'): 'Notwithstanding other provisions of any local ordinance, every driver of a vehicle shall exercise due care to avoid colliding with any pedestrian or any person propelling a human-powered vehicle and shall give an audible signal when necessary and shall exercise proper precaution upon observing any child or any obviously confused, incapacitated or intoxicated person.'",
+   "sourceName": "S.C. Code § 56-5-3230 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate as general negligence law: § 56-5-3230's due-care duty is unconditional (its 'notwithstanding' clause refers to local ordinances, so do not cite it as overriding § 56-5-3150)."
+  },
+  {
+   "surface": "body",
+   "claim": "Under S.C. Code § 15-3-530, you have 3 years from the date of the accident to file a personal injury lawsuit in South Carolina.",
+   "verdict": "keep",
+   "currentValue": "§ 15-3-530(5) three years. Tort Claims Act claims against a government entity: two years, or three if a verified claim is filed first (§ 15-78-110).",
+   "sourceName": "S.C. Code §§ 15-3-530, 15-78-110 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Optional government-defendant sentence (city bus, county or state vehicle)."
+  },
+  {
+   "surface": "body",
+   "claim": "Courts in both states have held that the following driver behaviors can establish negligence even when the pedestrian was impaired:",
+   "verdict": "update",
+   "currentValue": "Fountain v. Thompson, 252 Ga. 256, 312 S.E.2d 788 (1984), as annotated under § 40-6-93: one 'lying prone in the highway in a drunken condition is owed a duty of care' and the driver 'is under a duty to discover the victim's peril and avoid injury'. Nash v. Reed, 349 Ga. App. 381 (2019): § 40-6-93 requires motorists to exercise ordinary care to discover and avoid persons in the roadway. No South Carolina appellate holding on these specific behaviors with an impaired pedestrian was verified.",
+   "sourceName": "O.C.G.A. § 40-6-93 annotations (Justia, 2025 Code); S.C. Code § 56-5-3230",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-93/",
+   "retrievedAt": "2026-10-02",
+   "note": "'Courts in both states have held' attributes a five-item list to case law that is not cited and was not found. Reword: 'Evidence of any of the following driver conduct can establish negligence even when the pedestrian was impaired:' Optional authority sentence after the list: 'Georgia's Supreme Court has held that even a person lying drunk in the road is owed a duty of care, and a driver must keep a lookout to discover that person's peril (Fountain v. Thompson, 1984).'"
+  },
+  {
+   "surface": "body",
+   "claim": "Driving under the influence — if the driver was also intoxicated, their fault increases dramatically",
+   "verdict": "keep",
+   "currentValue": "Punitive damages are uncapped against an impaired driver in both states: O.C.G.A. § 51-12-5.1(f) (no limitation when the defendant acted under the influence of alcohol or drugs to the degree judgment was substantially impaired); S.C. Code § 15-32-530(C)(3) (no cap when 'the defendant acted or failed to act while under the influence of alcohol, drugs ... to the degree that the defendant's judgment is substantially impaired').",
+   "sourceName": "O.C.G.A. § 51-12-5.1(f) (Justia); S.C. Code § 15-32-530(C)(3) (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Fine as a bullet. The uncapped-punitive point belongs with the punitive-damages sentence below."
+  },
+  {
+   "surface": "body",
+   "claim": "Poor visibility conditions — failing to reduce speed or use headlights properly in low-light conditions where pedestrians are harder to see",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 40-6-93 (duty to exercise due care)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-93/",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  },
+  {
+   "surface": "body",
+   "claim": "If a jury assigns you 25% fault for being intoxicated and crossing outside a crosswalk, your total damages award is reduced by 25%.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-33(a); Nelson",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  },
+  {
+   "surface": "body",
+   "claim": "On a $300,000 claim, you would recover $225,000.",
+   "verdict": "keep",
+   "currentValue": "$300,000 × 0.75 = $225,000.",
+   "sourceName": "O.C.G.A. § 51-12-33(a)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Arithmetic correct."
+  },
+  {
+   "surface": "body",
+   "claim": "In cases involving especially reckless driver behavior — such as drunk driving accidents — punitive damages may also be available to punish the defendant's conduct.",
+   "verdict": "keep",
+   "currentValue": "Georgia: punitive damages require clear and convincing evidence of willful misconduct, wantonness or 'that entire want of care which would raise the presumption of conscious indifference to consequences' (§ 51-12-5.1(b)); normally capped at $250,000 (§ 51-12-5.1(g)) but uncapped against an impaired driver (§ 51-12-5.1(f)). South Carolina: capped at the greater of three times compensatory or $500,000 (CPI-indexed; $739,245 for 2026 per RFA, facts-1663), but uncapped against an impaired defendant (§ 15-32-530(C)(3)).",
+   "sourceName": "O.C.G.A. § 51-12-5.1(b),(f),(g) (Justia); S.C. Code § 15-32-530(A),(C)(3) (scstatehouse.gov)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. Optional strengthening: 'and when the driver was impaired, neither Georgia nor South Carolina caps them (O.C.G.A. § 51-12-5.1(f); S.C. Code § 15-32-530(C)(3)).'"
+  },
+  {
+   "surface": "body",
+   "claim": "Police report — documenting the driver's speed, any citations issued, and witness observations",
+   "verdict": "keep",
+   "currentValue": "S.C. Code § 56-5-6160: 'No evidence of conviction of any person for any violation of this chapter shall be admissible in any court in any civil action.' Georgia: convictions for traffic offenses are inadmissible in a civil action, though a guilty plea may be shown as an admission (Howard v. Lay, 259 Ga. App. 391 (2003)).",
+   "sourceName": "S.C. Code § 56-5-6160 (scstatehouse.gov); Howard v. Lay (verified in facts-1679)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Fine as an investigation item. Do not extend it into a claim that the citation proves negligence at trial."
+  },
+  {
+   "surface": "body",
+   "claim": "Vehicle data — electronic control modules (black boxes) that record speed and braking data",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "General",
+   "sourceUrl": "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813727",
+   "retrievedAt": "2026-10-02",
+   "note": "Generic; no change."
+  },
+  {
+   "surface": "body",
+   "claim": "Some serious conditions like traumatic brain injuries do not show symptoms immediately",
+   "verdict": "keep",
+   "currentValue": "NINDS: symptoms of TBI may not appear right away and can develop over days or weeks.",
+   "sourceName": "National Institute of Neurological Disorders and Stroke — Traumatic Brain Injury",
+   "sourceUrl": "https://www.ninds.nih.gov/health-information/disorders/traumatic-brain-injury-tbi",
+   "retrievedAt": "2026-10-02",
+   "note": "cdc.gov returns 403 to scripted checks; NINDS resolves (200)."
+  },
+  {
+   "surface": "body",
+   "claim": "At Roden Law, we have recovered over $300 million for injury victims across Georgia and South Carolina.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md — firm stats ('$300M+ recovered')",
+   "sourceUrl": "/Users/brianhaas/Code/blue-sky-studio/client-rodenlaw-website/profiles/writer-profile.md",
+   "retrievedAt": "2026-10-02",
+   "note": "Firm's own representation; matches the profile figure used site-wide."
+  },
+  {
+   "surface": "body",
+   "claim": "We work on a contingency fee basis — you pay nothing unless we win your case.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md — contingency fee, no fees unless we win",
+   "sourceUrl": "/Users/brianhaas/Code/blue-sky-studio/client-rodenlaw-website/profiles/writer-profile.md",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  },
+  {
+   "surface": "body",
+   "claim": "call 1-844-RESULTS",
+   "verdict": "keep",
+   "currentValue": "tel:+18447378587 = 1-844-737-8587 = 1-844-RESULTS.",
+   "sourceName": "profiles/writer-profile.md (toll-free 1-844-RESULTS = tel:+18447378587)",
+   "sourceUrl": "/Users/brianhaas/Code/blue-sky-studio/client-rodenlaw-website/profiles/writer-profile.md",
+   "retrievedAt": "2026-10-02",
+   "note": "href already tel:+18447378587. Writer profile also asks for an office line (two-state post — optional)."
+  }
+ ],
+ "recommendedEdits": [
+  "Body, Georgia driver duties: change 'Under O.C.G.A. § 40-6-91, drivers must exercise due care to avoid striking any pedestrian on a roadway and must give warning by sounding the horn when necessary.' to 'Under O.C.G.A. § 40-6-93, drivers must exercise due care to avoid colliding with any pedestrian on a roadway, must give warning by sounding the horn when necessary, and must exercise proper precautions upon observing any child or any obviously confused, incapacitated, or intoxicated person.'",
+  "Body, Georgia driver duties: change 'Drivers must also yield to pedestrians in marked or unmarked crosswalks at intersections.' to 'Under O.C.G.A. § 40-6-91, drivers must also stop and remain stopped for a pedestrian within a crosswalk who is on their half of the road or within one lane of it.'",
+  "Body, Georgia pedestrian duties: append to the § 40-6-92 sentence ', unless the pedestrian has already, and under safe conditions, entered the roadway'. Then add: 'Georgia also makes it a misdemeanor for a person under the influence of alcohol or drugs to a degree which renders him a hazard to walk or be upon any roadway or its shoulder (O.C.G.A. § 40-6-95), and insurers will cite it. But it is not automatic: the defense must prove the pedestrian was impaired to the point of being a hazard. And the claim still depends on proof of driver fault: in Politzer v. Xiaoyan (Ga. Ct. App. 2017), the court ruled for the driver without trial where the drunk pedestrian crossed a dark road outside a crosswalk and there was no evidence the driver was speeding or broke any traffic rule.'",
+  "Body, SC driver duties: change '§ 56-5-3130' to '§ 56-5-3230' and replace 'any child or any confused or incapacitated person on the roadway.' with 'any child or any obviously confused, incapacitated or intoxicated person.' Replace 'This \"incapacitated person\" language can apply to visibly intoxicated pedestrians, imposing a heightened duty of care on drivers.' with 'The statute names intoxicated persons expressly, so a driver who sees a pedestrian staggering or disoriented must take extra care. Georgia's due-care statute uses nearly identical words (O.C.G.A. § 40-6-93).'",
+  "Body, SC intro: replace 'South Carolina courts have recognized that a driver's duty to exercise care toward pedestrians is not diminished by the pedestrian's intoxication.' with 'South Carolina's due-care statute expressly requires drivers to exercise proper precaution upon observing any obviously intoxicated person (S.C. Code § 56-5-3230).' Add '(Nelson v. Concrete Supply Co., 1991)' after the 51% sentence.",
+  "Body, SC pedestrian duties: replace with 'S.C. Code § 56-5-3150 requires pedestrians crossing anywhere other than a marked crosswalk or an unmarked crosswalk at an intersection to yield the right-of-way to vehicles, and § 56-5-3270 bars a pedestrian impaired to the point of being a hazard from being on a highway except a sidewalk.'",
+  "Comparison table: change both 'Admissible to show contributory negligence' cells to 'Relevant to your share of fault' (GA cell may add '(O.C.G.A. § 40-6-95)'; SC cell '(S.C. Code § 56-5-3270)'). Add '(Nelson v. Concrete Supply Co.)' to the SC 'Must be less than 51% at fault' cell.",
+  "Body, driver-duties list lead-in: change 'Courts in both states have held that the following driver behaviors can establish negligence even when the pedestrian was impaired:' to 'Evidence of any of the following driver conduct can establish negligence even when the pedestrian was impaired:'. Optional sentence after the list: 'Georgia's Supreme Court has held that even a person lying drunk in the road is owed a duty of care, and a driver must keep a lookout to discover that person's peril (Fountain v. Thompson, 252 Ga. 256 (1984)).'",
+  "Body, intro: change 'Cornell Law Institute's overview of comparative negligence' to 'the Legal Information Institute at Cornell Law School's overview of comparative negligence' (keep href).",
+  "Optional body, punitive sentence: append 'and when the driver was impaired, neither state caps them (O.C.G.A. § 51-12-5.1(f); S.C. Code § 15-32-530(C)(3)).'",
+  "Optional body, SOL subsections: add one sentence on government defendants — South Carolina Tort Claims Act two years, or three if a verified claim is filed first (S.C. Code § 15-78-110); Georgia ante litem notice deadlines for cities (6 months, § 36-33-5), counties (12 months, § 36-11-1) and the state (12 months, § 50-21-26).",
+  "Optional statistic (the post has none; only if the editor wants one, e.g. in the intro): 'According to NHTSA, an estimated 30 percent of pedestrians killed in U.S. traffic crashes in 2023 had a blood alcohol concentration of .08 g/dL or higher, and alcohol involvement — for the driver and/or the pedestrian — was reported in 46 percent of fatal pedestrian crashes.' Source: NHTSA Traffic Safety Facts, 2023 Data: Pedestrians (DOT HS 813 727).",
+  "FAQ 2 (meta, FAQPage schema): replace 'South Carolina law specifically requires extra precaution for confused or incapacitated persons.' with 'Both states' due-care statutes specifically require drivers to take proper precautions upon observing any child or any obviously confused, incapacitated, or intoxicated person (O.C.G.A. § 40-6-93; S.C. Code § 56-5-3230).' and change 'is still liable even if' to 'can still be held liable even if'.",
+  "FAQ 4 (meta, FAQPage schema): replace 'but they cannot legally deny it solely because you were drinking' with 'but drinking alone does not bar recovery in either state — if the driver was negligent, a denial can be challenged by filing suit against the driver'.",
+  "Optional Key Takeaways: change 'Drivers owe a duty of care to all pedestrians including impaired ones.' to 'Drivers owe a duty of care to all pedestrians, and both states' statutes expressly require extra precaution around an obviously intoxicated person (O.C.G.A. § 40-6-93; S.C. Code § 56-5-3230).' and add '(Nelson v. Concrete Supply Co.)' after 'less than 51%'.",
+  "Update the post's citation inventory/stats: the post cites § 56-5-3130 for due care (wrong: § 56-5-3230) and § 40-6-91 for due care (wrong: § 40-6-93). After edits it should cite O.C.G.A. §§ 40-6-91, 40-6-92, 40-6-93, 40-6-95, 51-12-33, 9-3-33 and S.C. Code §§ 56-5-3150, 56-5-3230, 56-5-3270, 15-3-530.",
+  "Reviewer for Graeham C. Gillin: confirm (1) the Politzer sentence is the right balance for a claimant-facing post; (2) whether to cite Fountain v. Thompson by name; (3) that no SC appellate case should be named for the driver's-duty-to-intoxicated-pedestrian point (none verified this run)."
+ ],
+ "statuteCitations": [
+  {
+   "section": "O.C.G.A. § 40-6-91",
+   "name": "Right of way in crosswalks — driver must stop and remain stopped for a pedestrian within a crosswalk on the driver's half or within one lane; (b) no dart-out into a vehicle too close to yield",
+   "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-91/"
+  },
+  {
+   "section": "O.C.G.A. § 40-6-92",
+   "name": "Crossing roadway elsewhere than at crosswalk — yield to vehicles unless already entered under safe conditions; (c) signalized-intersection rule",
+   "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-92/"
+  },
+  {
+   "section": "O.C.G.A. § 40-6-93",
+   "name": "Drivers to exercise due care — horn when necessary; proper precautions upon observing any child or any obviously confused, incapacitated, or intoxicated person (annotations: Fountain v. Thompson, 1984; Nash v. Reed, 2019)",
+   "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-93/"
+  },
+  {
+   "section": "O.C.G.A. § 40-6-95",
+   "name": "Pedestrian under influence of alcohol or drug — shall not walk or be upon any roadway or shoulder if impaired to a degree which renders him a hazard; misdemeanor, fine up to $500 (annotations: Politzer v. Xiaoyan, 2017; Swinney v. Schneider, N.D. Ga. 2011)",
+   "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-95/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-33",
+   "name": "Apportionment; plaintiff barred at 50 percent or more (subsection (g)); last amended 2022 (HB 961), not by 2025 SB 68",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+  },
+  {
+   "section": "O.C.G.A. § 9-3-33",
+   "name": "Injuries to the person — two years",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-5.1",
+   "name": "Punitive damages — (f) no cap against a defendant impaired by alcohol or drugs; (g) $250,000 cap otherwise",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/"
+  },
+  {
+   "section": "S.C. Code § 56-5-3130",
+   "name": "Pedestrians' right-of-way in crosswalks (not the due-care section the post cites it for)",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-3150",
+   "name": "Crossing at other than crosswalks — yield to all vehicles; (c) signalized-intersection rule",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-3230",
+   "name": "Drivers to exercise due care — audible signal; proper precaution upon observing any child or any obviously confused, incapacitated or intoxicated person",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-3270",
+   "name": "Pedestrians under influence of alcohol or drugs — shall not walk or be upon a highway except a sidewalk",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-6160",
+   "name": "Evidence of traffic conviction inadmissible in civil action",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 15-3-530",
+   "name": "Three years — (5) injury to the person",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "section": "S.C. Code § 15-78-110",
+   "name": "Tort Claims Act — two years, three if verified claim first filed",
+   "url": "https://www.scstatehouse.gov/code/t15c078.php"
+  },
+  {
+   "section": "S.C. Code § 15-32-530",
+   "name": "Punitive damages cap; (C)(3) no cap when defendant impaired by alcohol or drugs",
+   "url": "https://www.scstatehouse.gov/code/t15c032.php"
+  },
+  {
+   "section": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991)",
+   "name": "South Carolina modified comparative negligence — recover if not more than 50% at fault",
+   "url": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html"
+  }
+ ],
+ "authoritativeLinks": [
+  {
+   "name": "Legal Information Institute, Cornell Law School — Wex: comparative negligence",
+   "url": "https://www.law.cornell.edu/wex/comparative_negligence"
+  },
+  {
+   "name": "NHTSA Traffic Safety Facts, 2023 Data: Pedestrians (DOT HS 813 727) — 7,314 pedestrians killed; 30% of fatal pedestrian crashes had a pedestrian fatality with BAC .08+; alcohol involvement in 46%",
+   "url": "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813727"
+  },
+  {
+   "name": "Fountain v. Thompson, 252 Ga. 256 (1984) — duty owed to a person lying drunk in the roadway (CourtListener; returns 202 to scripted checks, loads in a browser)",
+   "url": "https://www.courtlistener.com/opinion/1255436/fountain-v-thompson/"
+  },
+  {
+   "name": "Politzer v. Xiaoyan, 342 Ga. App. 224 (2017) — summary judgment for driver; drunk pedestrian outside crosswalk, no evidence of driver negligence (CourtListener; returns 202 to scripted checks)",
+   "url": "https://www.courtlistener.com/opinion/4398640/politzer-v-xiaoyan-et-al/"
+  },
+  {
+   "name": "South Carolina Code Title 56 Chapter 5 (Articles 23 and pedestrian sections 56-5-3110 to -3280)",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "name": "NINDS — Traumatic Brain Injury",
+   "url": "https://www.ninds.nih.gov/health-information/disorders/traumatic-brain-injury-tbi"
+  }
+ ],
+ "quoteNote": "Body claims are quoted from the tag-stripped, whitespace-collapsed rendered text of body.html; all match exactly. The 'Admissible to show contributory negligence' claim appears twice (both table columns) and is recorded once. The \"incapacitated person\" claim uses straight double quotes as in the source. Meta claims match meta.json verbatim; FAQ surfaces are indexed faq:0–faq:5 in meta.faqs order. Statute text read 2026-10-02 from Justia (GA, 2025 Code, in Chrome) and scstatehouse.gov (SC)."
+}
