@@ -1,0 +1,618 @@
+{
+  "postId": 1696,
+  "slug": "what-if-i-suspect-medical-malpractice",
+  "liveUrl": "https://rodenlaw.com/blog/what-if-i-suspect-medical-malpractice/",
+  "jurisdiction": "GA+SC",
+  "researchedAt": "2026-10-02",
+  "verifiedClaims": [
+    {
+      "surface": "body",
+      "claim": "Cornell Law Institute's medical malpractice summary",
+      "verdict": "update",
+      "currentValue": "The linked URL (https://www.law.cornell.edu/wex/medical_malpractice) returns HTTP 404 (rechecked 2026-10-02). The live entry is Wex 'malpractice' at https://www.law.cornell.edu/wex/malpractice (HTTP 200), published by the Legal Information Institute (LII) at Cornell Law School. There is no 'Cornell Law Institute'.",
+      "sourceName": "Legal Information Institute, Cornell Law School — Wex: malpractice",
+      "sourceUrl": "https://www.law.cornell.edu/wex/malpractice",
+      "retrievedAt": "2026-10-02",
+      "note": "Dead outbound link in the intro. Change href to /wex/malpractice and the anchor to 'Cornell Law School's Legal Information Institute's malpractice summary'. The same fix was made on post 1676 (facts-1676)."
+    },
+    {
+      "surface": "body",
+      "claim": "Not every bad medical outcome is malpractice.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-1-27 (Justia)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-27/",
+      "retrievedAt": "2026-10-02",
+      "note": "A bad result alone is not actionable; liability requires a want of 'a reasonable degree of care and skill' (§ 51-1-27)."
+    },
+    {
+      "surface": "body",
+      "claim": "deviates from the accepted standard of care — meaning they did something a competent provider in the same specialty would not have done, or failed to do something a competent provider would have done — and that deviation caused you harm",
+      "verdict": "keep",
+      "currentValue": "Georgia: a practitioner 'must bring to the exercise of his profession a reasonable degree of care and skill. Any injury resulting from a want of such care and skill shall be a tort' (O.C.G.A. § 51-1-27). South Carolina: the standard of care is shown through an expert 'qualified as to the acceptable conduct of the professional whose conduct is at issue', board-certified or practising/teaching in that specialty (S.C. Code § 15-36-100(A)).",
+      "sourceName": "O.C.G.A. § 51-1-27 (Justia, URL recorded in facts-1676); S.C. Code § 15-36-100(A)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-27/",
+      "retrievedAt": "2026-10-02",
+      "note": "Accurate for both states. Optional cite: (O.C.G.A. § 51-1-27)."
+    },
+    {
+      "surface": "body",
+      "claim": "A surgical procedure went wrong — wrong site, unexpected complications, or a retained instrument or sponge",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-72 (Justia, URL recorded in facts-1676)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-72/",
+      "retrievedAt": "2026-10-02",
+      "note": "A retained instrument or sponge is a 'foreign object' with its own deadline in both states — consistent with the table below."
+    },
+    {
+      "surface": "body",
+      "claim": "Under federal law (HIPAA), you have the right to obtain a complete copy of your medical records from any healthcare provider.",
+      "verdict": "update",
+      "currentValue": "45 CFR 164.524(a)(1): 'an individual has a right of access to inspect and obtain a copy of protected health information about the individual in a designated record set', except psychotherapy notes and 'information compiled in reasonable anticipation of, or for use in, a civil, criminal, or administrative action or proceeding'. The covered entity 'must act on a request for access no later than 30 days after receipt' ((b)(2)(i)), with 'only one such extension' of 30 days ((b)(2)(ii)–(iii)), and may charge only 'a reasonable, cost-based fee' for labor, supplies and postage ((c)(4)). HIPAA binds covered entities (providers that bill electronically, which is nearly all). South Carolina additionally caps physician copy fees by statute (65¢/page for the first 30 pages, 50¢ after, plus a clerical fee of up to $25; $150 cap for electronic and $200 for paper per request; CPI-adjusted each July 1) — S.C. Code § 44-115-80(A).",
+      "sourceName": "45 CFR 164.524 — Access of individuals to protected health information (LII); S.C. Code § 44-115-80",
+      "sourceUrl": "https://www.law.cornell.edu/cfr/text/45/164.524",
+      "retrievedAt": "2026-10-02",
+      "note": "'Complete' overstates the right: psychotherapy notes and records compiled in anticipation of litigation (e.g., some incident reports) are excluded. Minimal edit: 'Under federal law (HIPAA), you have the right to a copy of your medical records from your healthcare providers, and they must act on your request within 30 days (45 CFR 164.524).' Georgia's records statute (O.C.G.A. § 31-33-2) was not verified in this run — do not add it or quote Georgia fees."
+    },
+    {
+      "surface": "body",
+      "claim": "While providers are legally required to maintain medical records",
+      "verdict": "keep",
+      "currentValue": "South Carolina: 'Physicians shall retain their records for at least ten years for adult patients and at least thirteen years for minors', running from the last date of treatment (S.C. Code § 44-115-120).",
+      "sourceName": "S.C. Code § 44-115-120",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t44c115.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Verified for South Carolina physicians. Georgia retention rule not verified this run; the general statement is safe as written — do not add specific retention periods for Georgia."
+    },
+    {
+      "surface": "body",
+      "claim": "Medical malpractice insurers will contact you early, often under the guise of \"investigating the incident.\"",
+      "verdict": "update",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "",
+      "note": "Unsourced generalisation stated as fact. Malpractice carriers (and hospital risk managers) may reach out, but 'will contact you early' and 'under the guise of' are not verifiable. Soften: 'The provider's malpractice insurer or the hospital's risk-management office may contact you, sometimes describing the call as an investigation of the incident.'"
+    },
+    {
+      "surface": "body",
+      "claim": "Their goal is to gather information that can be used to deny or minimize your claim.",
+      "verdict": "update",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "",
+      "note": "Assertion of motive with no source. Soften: 'Anything you tell them can be used to evaluate — and contest — your claim.'"
+    },
+    {
+      "surface": "body",
+      "claim": "Do not confront the doctor or hospital about the mistake.",
+      "verdict": "keep",
+      "currentValue": "The patient's own statements are not protected. Apology statutes run the other way: in South Carolina, a provider's 'expressions of benevolence, regret, mistake, error, sympathy, or apology' to a patient after an unanticipated outcome are inadmissible as an admission of liability (S.C. Code § 19-1-190, the Unanticipated Medical Outcome Reconciliation Act).",
+      "sourceName": "S.C. Code § 19-1-190",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t19c001.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Advice is sound. Optional one-line add: 'Even if the provider apologizes or admits an error, South Carolina law generally keeps that statement out of evidence (S.C. Code § 19-1-190).' Georgia has a similar rule (O.C.G.A. § 24-4-416) but it was not verified in this run — do not cite it unless verified."
+    },
+    {
+      "surface": "body",
+      "claim": "Defense attorneys routinely search patients' social media profiles for posts that can be used to dispute injury claims.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "",
+      "note": "General practice statement; social-media content is discoverable. 'Routinely' is opinion but not a legal claim; acceptable."
+    },
+    {
+      "surface": "body",
+      "claim": "Most medical malpractice attorneys offer free initial consultations.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "",
+      "note": "Generic; Roden Law's own free consultation is a firm fact."
+    },
+    {
+      "surface": "body",
+      "claim": "Missing these deadlines permanently bars your case, no matter how strong the evidence",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-71(b); S.C. Code § 15-3-545(A)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-10-02",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "Standard statute of limitations | 2 years (O.C.G.A. § 9-3-71) | 3 years (S.C. Code § 15-3-545)",
+      "verdict": "keep",
+      "currentValue": "Georgia: two years 'after the date on which an injury or death arising from a negligent or wrongful act or omission occurred' (§ 9-3-71(a)). South Carolina: 'three years from the date of the treatment, omission, or operation giving rise to the cause of action or three years from date of discovery or when it reasonably ought to have been discovered' (§ 15-3-545(A)).",
+      "sourceName": "O.C.G.A. § 9-3-71 (Justia, recorded in facts-1676); S.C. Code § 15-3-545 (scstatehouse.gov)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Both figures verified. Optional: 'from the injury' in the Georgia cell."
+    },
+    {
+      "surface": "body",
+      "claim": "Discovery rule | None for most claims (only a foreign object left in the body; see below) | 3 years from discovery of injury",
+      "verdict": "update",
+      "currentValue": "Georgia cell correct: Georgia has no discovery rule for medical malpractice — the limitation runs from the injury 'not on the date the patient discovers either the injury or the doctor's negligence' (Cleaveland v. Gannon, 284 Ga. 376 (2008)); Amu v. Barnes, 283 Ga. 549 (2008) held the misdiagnosis new-injury exception 'did not simply create a discovery rule'. Narrow exceptions that move the clock without being a discovery rule: misdiagnosis that later produces a new injury (two years from that injury's first symptoms) and fraud by the provider (§ 9-3-96, limitation only, not repose). South Carolina cell is incomplete: the statute runs three years 'from date of discovery or when it reasonably ought to have been discovered' (§ 15-3-545(A)) — constructive discovery, not only actual discovery.",
+      "sourceName": "S.C. Code § 15-3-545(A); O.C.G.A. § 9-3-71 annotations (Justia, recorded in facts-1676)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-10-02",
+      "note": "South Carolina cell: '3 years from when the injury was or reasonably should have been discovered'. Georgia cell: keep (verified 2026-09-24 in facts-1676; the Amu/Cleaveland line remains the controlling authority)."
+    },
+    {
+      "surface": "body",
+      "claim": "Statute of repose (absolute outer limit) | 5 years from negligent act | 6 years from negligent act (not for foreign objects)",
+      "verdict": "update",
+      "currentValue": "Georgia: 'in no event may an action for medical malpractice be brought more than five years after the date on which the negligent or wrongful act or omission occurred' (§ 9-3-71(b)), but § 9-3-72 provides 'The limitations of Code Section 9-3-71 shall not apply where a foreign object has been left in a patient's body', and children injured before age five have until their tenth birthday (§ 9-3-73(c)(2)). South Carolina: 'not to exceed six years from date of occurrence' (§ 15-3-545(A)), which does not govern foreign-object actions under (B).",
+      "sourceName": "O.C.G.A. §§ 9-3-71(b), 9-3-72, 9-3-73 (Justia, recorded in facts-1676); S.C. Code § 15-3-545",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-72/",
+      "retrievedAt": "2026-10-02",
+      "note": "Georgia cell needs the same qualifier the South Carolina cell already has: '5 years from negligent act (not for foreign objects; under-5s until age 10)'. South Carolina cell correct."
+    },
+    {
+      "surface": "body",
+      "claim": "Minors | Tolled until age 5, then 2 years | Extended during minority, but by no more than 7 years and no more than 1 year after age 18 (S.C. Code § 15-3-545(D))",
+      "verdict": "update",
+      "currentValue": "Georgia: a child under five when the cause of action arose 'shall have two years from the date of such minor's fifth birthday' (until the seventh birthday); a child five or older is under the ordinary two-year rule; repose — a child under five must sue before the tenth birthday, a child five or older within five years of the act (§ 9-3-73(b),(c)). Legally incompetent persons get no tolling (§ 9-3-73(b); Williams v. Regency Hosp. Co., 322 Ga. 452 (2025)). South Carolina cell verified verbatim: periods 'are not tolled for a period of more than seven years on account of minority, and in any case more than one year after the disability ceases'; also tolled for any period of fraud or collusion between the parent/guardian and the defendant's insurer or provider (§ 15-3-545(D)).",
+      "sourceName": "O.C.G.A. § 9-3-73 (Justia, recorded in facts-1676); S.C. Code § 15-3-545(D)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-73/",
+      "retrievedAt": "2026-10-02",
+      "note": "Georgia cell: 'Under 5 at the time: until the 7th birthday, and never after the 10th birthday (O.C.G.A. § 9-3-73); 5 and older: the ordinary 2-year / 5-year periods'. 'Tolled until age 5, then 2 years' is right in substance but omits the age-10 repose and that it applies only to children under five. South Carolina cell: keep."
+    },
+    {
+      "surface": "body",
+      "claim": "Foreign object in body | 1 year from discovery (O.C.G.A. § 9-3-72) | 2 years from discovery, but not less than 3 years after placement (S.C. Code § 15-3-545(B))",
+      "verdict": "keep",
+      "currentValue": "Georgia § 9-3-72: action must be brought 'within one year after the negligent or wrongful act or omission is discovered'; 'foreign object' excludes 'a chemical compound, fixation device, or prosthetic aid or device'. South Carolina § 15-3-545(B): 'within two years from date of discovery or when it reasonably ought to have been discovered; provided, that, in no event shall there be a limitation on the commencement of the action less than three years after the placement'; (B) also covers 'the negligent placement of any appliance or apparatus'.",
+      "sourceName": "S.C. Code § 15-3-545(B); O.C.G.A. § 9-3-72 (Justia, recorded in facts-1676)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Both cells verified. Optional Georgia qualifier: '(implants, fixation hardware and prosthetics do not count)'."
+    },
+    {
+      "surface": "body",
+      "claim": "In Georgia, you must file a sworn affidavit from a qualified medical expert simultaneously with your complaint.",
+      "verdict": "keep",
+      "currentValue": "§ 9-11-9.1(a): the plaintiff must 'file with the complaint an affidavit of an expert competent to testify'. Exception (b): if the limitation period will expire within ten days of filing and the attorney was retained within 90 days of that expiration, the attorney may so certify and the plaintiff has 45 days to file the expert affidavit.",
+      "sourceName": "O.C.G.A. § 9-11-9.1 (Justia, recorded in facts-1676)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-3/section-9-11-9-1/",
+      "retrievedAt": "2026-10-02",
+      "note": "Accurate as the rule; the 45-day emergency window is the only exception — optional to mention."
+    },
+    {
+      "surface": "body",
+      "claim": "The expert must confirm that the provider deviated from the standard of care and that the deviation caused your injury.",
+      "verdict": "update",
+      "currentValue": "The affidavit 'shall set forth specifically at least one negligent act or omission claimed to exist and the factual basis for each such claim' (§ 9-11-9.1(a)). The statute does not require the affidavit to address causation (facts-1676).",
+      "sourceName": "O.C.G.A. § 9-11-9.1(a) (Justia, recorded in facts-1676)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-3/section-9-11-9-1/",
+      "retrievedAt": "2026-10-02",
+      "note": "Replace with: 'The expert must identify at least one specific negligent act or omission and the facts supporting it.' Causation is proved later, at trial. Same correction made on post 1676."
+    },
+    {
+      "surface": "body",
+      "claim": "Filing without a proper affidavit results in dismissal.",
+      "verdict": "update",
+      "currentValue": "No affidavit: 'the complaint shall be dismissed for failure to state a claim' (§ 9-11-9.1(b)); a missing affidavit cannot be cured by amendment (Upson County Hosp. v. Head, 246 Ga. App. 386 (2000)). A defective affidavit can be cured 'by amendment ... within 30 days of service of the motion alleging that the affidavit is defective', including by substituting a competent expert (§ 9-11-9.1(e); Gala v. Fisher, 296 Ga. 870 (2015)).",
+      "sourceName": "O.C.G.A. § 9-11-9.1(b),(e) (Justia, recorded in facts-1676)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-3/section-9-11-9-1/",
+      "retrievedAt": "2026-10-02",
+      "note": "Change to 'Filing without the affidavit results in dismissal; a defective one can be fixed only by amending within 30 days of the defendant's motion.'"
+    },
+    {
+      "surface": "body",
+      "claim": "This means your attorney must retain an expert, obtain and review all records, and have the expert prepare a sworn statement — all before the lawsuit is filed.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-11-9.1 (Justia, recorded in facts-1676)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-3/section-9-11-9-1/",
+      "retrievedAt": "2026-10-02",
+      "note": "Correct as the normal course (subject to the 45-day exception in (b))."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina: Notice of Intent and Expert Affidavit (S.C. Code § 15-79-125)",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-79-125",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c079.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Heading."
+    },
+    {
+      "surface": "body",
+      "claim": "together with a qualified expert's affidavit specifying at least one negligent act or omission, and serve it on each defendant (S.C. Code § 15-36-100)",
+      "verdict": "keep",
+      "currentValue": "§ 15-79-125(A): 'the plaintiff shall contemporaneously file a Notice of Intent to File Suit and an affidavit of an expert witness, subject to the affidavit requirements established in Section 15-36-100, in a county in which venue would be proper'; the notice 'must name all adverse parties as defendants' and 'must be served upon all named defendants in accordance with the service rules for a summons and complaint'. § 15-36-100(B): the affidavit 'must specify at least one negligent act or omission claimed to exist and the factual basis for each claim'.",
+      "sourceName": "S.C. Code §§ 15-79-125(A), 15-36-100(B)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c079.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Verified. Optional: cite both sections together '(S.C. Code §§ 15-79-125, 15-36-100)'."
+    },
+    {
+      "surface": "body",
+      "claim": "Filing the notice tolls the statute of limitations",
+      "verdict": "keep",
+      "currentValue": "'Filing the Notice of Intent to File Suit tolls all applicable statutes of limitations' (§ 15-79-125(A)).",
+      "sourceName": "S.C. Code § 15-79-125(A)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c079.php",
+      "retrievedAt": "2026-10-02",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "generally within 90 to 120 days of service, before the lawsuit can be filed",
+      "verdict": "keep",
+      "currentValue": "'Within ninety days and no later than one hundred twenty days from the service of the Notice of Intent to File Suit, the parties shall participate in a mediation conference unless an extension for no more than sixty days is granted by the court based upon a finding of good cause' (§ 15-79-125(C)). If mediation fails, the complaint must be filed within 60 days after the mediator declares impasse or before the limitation period expires, whichever is later (§ 15-79-125(E)).",
+      "sourceName": "S.C. Code § 15-79-125(C),(E)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c079.php",
+      "retrievedAt": "2026-10-02",
+      "note": "'Generally' covers the 60-day good-cause extension. Optional add: 'If mediation fails, suit must be filed within 60 days of impasse or before the deadline, whichever is later.'"
+    },
+    {
+      "surface": "body",
+      "claim": "Unlike a standard car accident or slip and fall case, medical malpractice lawsuits in Georgia and South Carolina require specific procedural steps before filing",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-79-125; O.C.G.A. § 9-11-9.1",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c079.php",
+      "retrievedAt": "2026-10-02",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "Emergency room negligence — premature discharge, failure to order appropriate tests, or misreading results",
+      "verdict": "update",
+      "currentValue": "Both states raise the bar for emergency care. Georgia: for care 'in a hospital emergency department or obstetrical unit or in a surgical suite immediately following' ER evaluation, no provider is liable 'unless it is proven by clear and convincing evidence that the physician or health care provider's actions showed gross negligence' (O.C.G.A. § 51-1-29.5(c)), until the patient is stabilized. South Carolina: for care 'in a genuine emergency situation involving an immediate threat of death or serious bodily injury' in an emergency department or obstetrical or surgical suite, 'no physician may be held liable unless it is proven that the physician was grossly negligent' (S.C. Code § 15-32-230(A)), applying only while the patient is not medically stable and before discharge from that unit ((C)).",
+      "sourceName": "S.C. Code § 15-32-230; O.C.G.A. § 51-1-29.5 (Justia, recorded in facts-1676)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Append: '— note that emergency care is judged under a gross-negligence standard in both states (O.C.G.A. § 51-1-29.5; S.C. Code § 15-32-230)'. A premature-discharge claim may fall outside the heightened standard if the patient was stabilized."
+    },
+    {
+      "surface": "body",
+      "claim": "Failure to obtain informed consent — proceeding without explaining the risks, alternatives, and potential complications",
+      "verdict": "update",
+      "currentValue": "Georgia's duty is statutory only and limited to surgery under general, spinal or major regional anesthesia, amniocentesis, and diagnostic procedures involving intravenous or intraductal contrast injection (O.C.G.A. § 31-9-6.1(a)); Georgia recognises no common-law informed-consent duty (Blotner v. Doreika, 285 Ga. 481 (2009)). South Carolina applies a common-law duty to any 'diagnostic, therapeutic, or surgical procedure', measured by what a reasonable practitioner in the same branch would disclose (Hook v. Rothstein, 281 S.C. 541 (Ct. App. 1984)). Verified in facts-1824.",
+      "sourceName": "O.C.G.A. § 31-9-6.1 (Justia, recorded in facts-1824)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-31/chapter-9/section-31-9-6-1/",
+      "retrievedAt": "2026-10-02",
+      "note": "Optional qualifier: 'Failure to obtain informed consent — in Georgia, for surgery under general, spinal or major regional anesthesia and certain diagnostic procedures (O.C.G.A. § 31-9-6.1); in South Carolina, for any significant procedure'."
+    },
+    {
+      "surface": "body",
+      "claim": "Nursing home neglect — falls, bedsores, medication errors, malnutrition, or dehydration due to inadequate care",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "",
+      "note": "Some nursing-home claims are ordinary negligence rather than malpractice (facts-1676); not an error as a list item."
+    },
+    {
+      "surface": "body",
+      "claim": "Calculates the full value of your claim — including future medical costs, lost earning capacity, and non-economic damages",
+      "verdict": "keep",
+      "currentValue": "Not a cap claim, but relevant context the post omits: South Carolina caps medical-malpractice noneconomic damages at $350,000 per provider/institution and $1,050,000 aggregate per claimant, CPI-indexed to $596,001 and $1,788,002 for 2026 (S.C. Code § 15-32-220; RFA memo 2026-02-03), with no cap for gross negligence, wilful/wanton/reckless conduct, fraud, or altered/destroyed records ((E)). Georgia has no cap (Atlanta Oculoplastic Surgery v. Nestlehutt, 286 Ga. 731 (2010)).",
+      "sourceName": "S.C. Code § 15-32-220; S.C. Revenue and Fiscal Affairs Office (2026 adjustment, recorded in facts-1824)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Sentence is accurate as written. Optional add (see recommendedEdits). Writer-profile rule: never state or imply South Carolina has no med-mal cap."
+    },
+    {
+      "surface": "body",
+      "claim": "Identifies all liable parties — the individual provider, the hospital or facility, specialists, nurses, and potentially medical device manufacturers",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "",
+      "note": "A device-maker claim is product liability, not malpractice; the link already goes to the product-liability page."
+    },
+    {
+      "surface": "body",
+      "claim": "you pay nothing upfront and owe nothing unless we win. We advance all costs of investigation, expert review, and litigation.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "",
+      "note": "Firm fact."
+    },
+    {
+      "surface": "body",
+      "claim": "serve medical malpractice victims from offices in Savannah , Darien , Charleston , Columbia , and Myrtle Beach",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "client.json locations",
+      "sourceUrl": "",
+      "retrievedAt": "",
+      "note": "All five offices are in the identity record (Savannah, Darien GA; Charleston, Columbia, Myrtle Beach SC). Quote is tag-stripped text; anchors sit inside <a> tags."
+    },
+    {
+      "surface": "body",
+      "claim": "Call Roden Law at 1-844-RESULTS",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "",
+      "note": "href tel:+18447378587 = 1-844-737-8587 = 1-844-RESULTS; matches."
+    },
+    {
+      "surface": "excerpt",
+      "claim": "What to do first if you suspect medical malpractice in Georgia or South Carolina — records, independent care, and what not to say.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "",
+      "note": "No factual claim."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Georgia requires a two-year filing and expert affidavit (O.C.G.A. § 9-3-71, § 9-11-9.1)",
+      "verdict": "update",
+      "currentValue": "Two years from the injury or death (§ 9-3-71(a)); expert affidavit filed with the complaint (§ 9-11-9.1(a)).",
+      "sourceName": "O.C.G.A. §§ 9-3-71, 9-11-9.1 (Justia, recorded in facts-1676)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/",
+      "retrievedAt": "2026-10-02",
+      "note": "Substance right, wording incomplete ('two-year filing'). Minimal edit: 'Georgia requires suit within two years of the injury, filed with an expert affidavit (O.C.G.A. § 9-3-71, § 9-11-9.1)'."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "South Carolina allows three years but requires a Notice of Intent to File Suit, filed together with a qualified expert's affidavit, and then mandatory mediation, before suit (S.C. Code § 15-3-545, § 15-79-125).",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code §§ 15-3-545, 15-79-125",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c079.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Verified."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Both states have strict statutes of repose — five years in Georgia, six in South Carolina.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-71(b); S.C. Code § 15-3-545(A)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Figures correct. Foreign-object cases fall outside both reposes; the body table covers that."
+    },
+    {
+      "surface": "faq:0",
+      "claim": "Seek follow-up care from a different healthcare provider immediately.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "",
+      "note": "Advice; quote is tag-stripped (<strong> around 'different healthcare provider')."
+    },
+    {
+      "surface": "faq:1",
+      "claim": "A bad outcome alone is not malpractice.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-1-27",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-27/",
+      "retrievedAt": "2026-10-02",
+      "note": ""
+    },
+    {
+      "surface": "faq:2",
+      "claim": "Georgia imposes a two-year statute of limitations (O.C.G.A. § 9-3-71) from the date the injury occurred.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-71(a) (Justia, recorded in facts-1676)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/",
+      "retrievedAt": "2026-10-02",
+      "note": "Correct trigger (injury, not act). Quote is tag-stripped."
+    },
+    {
+      "surface": "faq:2",
+      "claim": "There is no general discovery rule: only a foreign object left in the body gets one year from discovery (O.C.G.A. § 9-3-72).",
+      "verdict": "keep",
+      "currentValue": "Correct. The misdiagnosis new-injury rule (Amu v. Barnes, 283 Ga. 549 (2008)) and fraud tolling (§ 9-3-96) can move the start date but are not discovery rules.",
+      "sourceName": "O.C.G.A. § 9-3-72 (Justia, recorded in facts-1676)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-72/",
+      "retrievedAt": "2026-10-02",
+      "note": "Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:2",
+      "claim": "An absolute five-year statute of repose applies.",
+      "verdict": "update",
+      "currentValue": "Five-year repose from the act (§ 9-3-71(b)), but it does not apply to foreign objects (§ 9-3-72: 'The limitations of Code Section 9-3-71 shall not apply'), and a child under five at the time of the malpractice has until the tenth birthday (§ 9-3-73(c)(2)).",
+      "sourceName": "O.C.G.A. §§ 9-3-71(b), 9-3-72, 9-3-73 (Justia, recorded in facts-1676)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-73/",
+      "retrievedAt": "2026-10-02",
+      "note": "Minimal edit: 'A five-year statute of repose applies to everything except foreign-object cases and children injured before age five (O.C.G.A. § 9-3-73).' Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:2",
+      "claim": "Georgia also requires an expert affidavit at the time of filing (O.C.G.A. § 9-11-9.1).",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-11-9.1(a) (Justia, recorded in facts-1676)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-3/section-9-11-9-1/",
+      "retrievedAt": "2026-10-02",
+      "note": ""
+    },
+    {
+      "surface": "faq:3",
+      "claim": "South Carolina allows three years from the date of the negligent act or from discovery (S.C. Code § 15-3-545), with a six-year statute of repose.",
+      "verdict": "keep",
+      "currentValue": "§ 15-3-545(A): three years from the treatment, omission or operation, or 'from date of discovery or when it reasonably ought to have been discovered, not to exceed six years from date of occurrence'.",
+      "sourceName": "S.C. Code § 15-3-545(A)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Optional: 'from discovery (or when you reasonably should have discovered it)'. Quote is tag-stripped."
+    },
+    {
+      "surface": "faq:3",
+      "claim": "Before suing, you must also file a Notice of Intent to File Suit together with a qualified expert's affidavit, and serve it on each defendant, which tolls the deadline; the parties must then mediate before the lawsuit can be filed (S.C. Code §§ 15-79-125, 15-36-100).",
+      "verdict": "update",
+      "currentValue": "Filing (not service) is the tolling event: 'Filing the Notice of Intent to File Suit tolls all applicable statutes of limitations' (§ 15-79-125(A)). Mediation within 90–120 days of service ((C)); suit within 60 days of impasse or before the limitation expires, whichever is later ((E)).",
+      "sourceName": "S.C. Code § 15-79-125",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c079.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Minimal edit: 'Before suing, you must also file a Notice of Intent to File Suit together with a qualified expert's affidavit — filing it tolls the deadline — and serve it on each defendant; the parties must then mediate, within 90 to 120 days of service, before the lawsuit can be filed.' Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:4",
+      "claim": "Do not confront the provider, give a recorded statement to their malpractice insurer, or sign any documents without having an attorney review them first.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "",
+      "note": "Advice. Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:4",
+      "claim": "Anything you say can be documented and used against you.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 19-1-190",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t19c001.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Patient statements are party admissions; apology statutes protect only the provider's statements."
+    },
+    {
+      "surface": "faq:5",
+      "claim": "Most medical malpractice attorneys work on a contingency fee basis, meaning you pay nothing upfront and owe nothing unless your case results in compensation.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "",
+      "note": "General; firm practice confirmed in body. Quote is tag-stripped."
+    },
+    {
+      "surface": "faq:5",
+      "claim": "The attorney advances all costs of investigation, expert review, and litigation.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "",
+      "note": "Firm practice."
+    }
+  ],
+  "recommendedEdits": [
+    "Intro: change the dead Cornell link href to https://www.law.cornell.edu/wex/malpractice and the anchor to 'Cornell Law School's Legal Information Institute's malpractice summary'.",
+    "Pre-suit, Georgia: replace 'The expert must confirm that the provider deviated from the standard of care and that the deviation caused your injury.' with 'The expert must identify at least one specific negligent act or omission and the facts supporting it.' Replace 'Filing without a proper affidavit results in dismissal.' with 'Filing without the affidavit results in dismissal; a defective one can be fixed only by amending within 30 days of the defendant's motion (O.C.G.A. § 9-11-9.1).'",
+    "Deadlines table: Georgia minors cell -> 'Under 5 at the time: until the 7th birthday, never after the 10th (O.C.G.A. § 9-3-73); 5 and older: ordinary 2-year / 5-year periods'. Georgia repose cell -> '5 years from negligent act (not for foreign objects)'. South Carolina discovery cell -> '3 years from when the injury was or reasonably should have been discovered'.",
+    "faq:2: change 'An absolute five-year statute of repose applies.' to 'A five-year statute of repose applies to everything except foreign-object cases and children injured before age five (O.C.G.A. § 9-3-73).' (FAQPage structured data.)",
+    "faq:3: make filing the tolling event: '...file a Notice of Intent to File Suit together with a qualified expert's affidavit — filing it tolls the deadline — and serve it on each defendant; the parties must then mediate, within 90 to 120 days of service, before the lawsuit can be filed (S.C. Code §§ 15-79-125, 15-36-100).'",
+    "Step 2: change 'you have the right to obtain a complete copy of your medical records from any healthcare provider' to 'you have the right to a copy of your medical records from your healthcare providers, and they must act on your request within 30 days (45 CFR 164.524)'.",
+    "Step 4: soften the insurer sentences to 'The provider's malpractice insurer or the hospital's risk-management office may contact you, sometimes describing the call as an investigation of the incident. Anything you tell them can be used to evaluate — and contest — your claim.'",
+    "Common examples, ER bullet: append '— emergency care is judged under a gross-negligence standard in both states (O.C.G.A. § 51-1-29.5; S.C. Code § 15-32-230)'.",
+    "Key Takeaways: 'Georgia requires suit within two years of the injury, filed with an expert affidavit (O.C.G.A. § 9-3-71, § 9-11-9.1)'.",
+    "Optional (attorney section, after 'non-economic damages'): 'In South Carolina, non-economic damages in malpractice cases are capped — $596,001 per provider and $1,788,002 in total for 2026, indexed yearly (S.C. Code § 15-32-220) — unless the provider was grossly negligent or reckless; Georgia has no cap.'",
+    "metaDescription is empty; the excerpt is the only summary surface — no fact change needed."
+  ],
+  "statuteCitations": [
+    {
+      "section": "O.C.G.A. § 9-3-71",
+      "name": "Medical malpractice — two years from injury or death (a); five-year repose from the act (b)",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/"
+    },
+    {
+      "section": "O.C.G.A. § 9-3-72",
+      "name": "Foreign object left in body — one year from discovery; § 9-3-71 does not apply; excludes chemical compounds, fixation devices, prosthetics",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-72/"
+    },
+    {
+      "section": "O.C.G.A. § 9-3-73",
+      "name": "Minors and incompetents — under-five: two years from fifth birthday, repose at tenth birthday; no tolling for incompetence",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-73/"
+    },
+    {
+      "section": "O.C.G.A. § 9-11-9.1",
+      "name": "Expert affidavit filed with complaint (a); 45-day window and dismissal (b); 30-day cure of defective affidavit (e)",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-3/section-9-11-9-1/"
+    },
+    {
+      "section": "O.C.G.A. § 51-1-27",
+      "name": "Medical malpractice — 'a reasonable degree of care and skill'",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-27/"
+    },
+    {
+      "section": "O.C.G.A. § 51-1-29.5",
+      "name": "Emergency medical care — gross negligence by clear and convincing evidence",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-29-5/"
+    },
+    {
+      "section": "O.C.G.A. § 31-9-6.1",
+      "name": "Informed consent — statutory, limited procedures",
+      "url": "https://law.justia.com/codes/georgia/title-31/chapter-9/section-31-9-6-1/"
+    },
+    {
+      "section": "S.C. Code § 15-3-545",
+      "name": "Medical malpractice — three years from treatment or (constructive) discovery, six-year repose (A); foreign objects two years from discovery, never less than three years from placement (B); minors' tolling capped at seven years and one year after majority (D)",
+      "url": "https://www.scstatehouse.gov/code/t15c003.php"
+    },
+    {
+      "section": "S.C. Code § 15-79-125",
+      "name": "Notice of Intent to File Suit with expert affidavit; filing tolls limitations (A); mediation 90–120 days from service, 60-day good-cause extension (C); suit within 60 days of impasse or before limitations expire (E)",
+      "url": "https://www.scstatehouse.gov/code/t15c079.php"
+    },
+    {
+      "section": "S.C. Code § 15-36-100",
+      "name": "Expert qualifications (A); affidavit specifying at least one negligent act filed with complaint (B); 45-day exception (C)(1); 30-day cure (E)",
+      "url": "https://www.scstatehouse.gov/code/t15c036.php"
+    },
+    {
+      "section": "S.C. Code § 15-32-220",
+      "name": "Med-mal noneconomic damages cap — $350,000 / $1,050,000 base; $596,001 / $1,788,002 for 2026; exceptions (E)",
+      "url": "https://www.scstatehouse.gov/code/t15c032.php"
+    },
+    {
+      "section": "S.C. Code § 15-32-230",
+      "name": "Emergency and obstetrical care — physician liable only for gross negligence while patient unstable",
+      "url": "https://www.scstatehouse.gov/code/t15c032.php"
+    },
+    {
+      "section": "S.C. Code § 19-1-190",
+      "name": "Unanticipated Medical Outcome Reconciliation Act — provider apologies/expressions of error inadmissible",
+      "url": "https://www.scstatehouse.gov/code/t19c001.php"
+    },
+    {
+      "section": "S.C. Code § 44-115-80, -120",
+      "name": "Medical-record copy fees (CPI-adjusted) and ten/thirteen-year retention",
+      "url": "https://www.scstatehouse.gov/code/t44c115.php"
+    },
+    {
+      "section": "45 CFR 164.524",
+      "name": "HIPAA right of access — copy of designated record set; action within 30 days; reasonable cost-based fee",
+      "url": "https://www.law.cornell.edu/cfr/text/45/164.524"
+    }
+  ],
+  "authoritativeLinks": [
+    {
+      "name": "Legal Information Institute, Cornell Law School — Wex: malpractice (replacement for the dead /wex/medical_malpractice link)",
+      "url": "https://www.law.cornell.edu/wex/malpractice"
+    },
+    {
+      "name": "Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt, 286 Ga. 731 (2010) — Georgia med-mal caps void",
+      "url": "https://law.justia.com/cases/georgia/supreme-court/2010/s09a1432.html"
+    },
+    {
+      "name": "S.C. Revenue and Fiscal Affairs Office — 2026 § 15-32-220 adjustment memo ($596,001 / $1,788,002)",
+      "url": "https://rfa.sc.gov/media/11477"
+    },
+    {
+      "name": "Justia annotations to O.C.G.A. § 9-3-71 — Amu v. Barnes, 283 Ga. 549 (2008); Cleaveland v. Gannon, 284 Ga. 376 (2008)",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/"
+    }
+  ],
+  "quoteNote": "Body claims are quoted from tag-stripped rendered text. Table rows are quoted as 'cell | cell | cell'. The office sentence keeps the space before each comma that tag-stripping leaves around <a> anchors. FAQ quotes are tag-stripped (<strong> removed). Justia URLs were not re-fetched (bot challenge); they are reused verbatim from facts-1676/facts-1824. All scstatehouse.gov, law.cornell.edu and rfa.sc.gov URLs returned HTTP 200 on 2026-10-02."
+}

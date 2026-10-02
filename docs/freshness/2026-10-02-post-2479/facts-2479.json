@@ -1,0 +1,432 @@
+{
+ "postId": 2479,
+ "slug": "liability-for-crash-due-to-tire-blowout-in-savannah",
+ "liveUrl": "https://rodenlaw.com/blog/liability-for-crash-due-to-tire-blowout-in-savannah/",
+ "jurisdiction": "GA",
+ "researchedAt": "2026-10-02",
+ "verifiedClaims": [
+  {
+   "surface": "body",
+   "claim": "At Roden Law, we have been managing cases for injured crash victims for decades.",
+   "verdict": "update",
+   "currentValue": "At Roden Law, our attorneys bring 62 years of combined experience to cases for injured crash victims.",
+   "sourceName": "profiles/writer-profile.md trust signals ('62 years combined experience'); run-2026-09-24 sibling pack (no founding date recorded in firm facts)",
+   "sourceUrl": "https://rodenlaw.com/",
+   "retrievedAt": "2026-10-02",
+   "note": "Same finding as the 2026-09-24 sibling pack: no firm fact supports 'for decades' as a statement about the firm's age; the only verified longevity figure is 62 years of combined attorney experience. rodenlaw.com is Cloudflare-blocked from this environment and was not curl-checked."
+  },
+  {
+   "surface": "body",
+   "claim": "Like any traffic accident, investigators and first responders will thoroughly examine the tires and other available evidence.",
+   "verdict": "update",
+   "currentValue": "No source supports a routine police examination of the failed tire. Why a tire failed (defect, underinflation, wear, road hazard, improper repair) is usually established by an independent tire expert examining the preserved tire. In Georgia the duty to preserve relevant evidence arises once litigation is reasonably foreseeable (Phillips v. Harmon, 297 Ga. 386 (2015)).",
+   "sourceName": "Phillips v. Harmon, 297 Ga. 386 (2015) (Justia; URL reused from sibling packs)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/2015/s14g1868.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Overstates what responders do. Suggested: 'Like any traffic accident, the tire, the vehicle and the scene need to be examined — often by an independent tire expert, which is why the failed tire must be preserved.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Driving on worn-out tires",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "NHTSA — Tires (TireWise): 'Poor tire maintenance—not having enough air in your tires and failing to rotate your tires, among other maintenance requirements—can lead to a flat tire, blowout, or the tread coming off your tire.'",
+   "sourceUrl": "https://www.nhtsa.gov/vehicle-safety/tires",
+   "retrievedAt": "2026-10-02",
+   "note": "Worn tread, underinflation, overloading, defects and road hazards are standard blowout causes. nhtsa.gov returns 403 to curl but loaded and was read in Chrome on 2026-10-02."
+  },
+  {
+   "surface": "body",
+   "claim": "Tires that are either under or over inflated",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "NHTSA — Tires (TireWise)",
+   "sourceUrl": "https://www.nhtsa.gov/vehicle-safety/tires",
+   "retrievedAt": "2026-10-02",
+   "note": "NHTSA treats underinflation as the principal maintenance cause; over-inflation is a recognized secondary risk. Acceptable list item."
+  },
+  {
+   "surface": "body",
+   "claim": "Defective tires",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-1-11(b)(1) (unicourt mirror of the Official Code, Title 51)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.51.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Supported; see the manufacturer claims below."
+  },
+  {
+   "surface": "body",
+   "claim": "Road hazards, like a huge pothole or object in the road",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "NHTSA — Tires (TireWise)",
+   "sourceUrl": "https://www.nhtsa.gov/vehicle-safety/tires",
+   "retrievedAt": "2026-10-02",
+   "note": "General cause; fine as a list item."
+  },
+  {
+   "surface": "body",
+   "claim": "A vehicle that has been overloaded with heavy cargo",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "NHTSA — Tires (TireWise) ('appropriately sized and load-rated tires that are properly inflated')",
+   "sourceUrl": "https://www.nhtsa.gov/vehicle-safety/tires",
+   "retrievedAt": "2026-10-02",
+   "note": "Overloading beyond the tire's load rating is a recognized cause of tire failure."
+  },
+  {
+   "surface": "body",
+   "claim": "Drivers owe a legal duty of care to maintain their vehicles, which includes replacing, servicing or repairing tires as needed.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 40-8-7(a) (no person shall drive a vehicle unless its equipment is 'in good working order' and it is 'in such safe mechanical condition as not to endanger' anyone on the highway); § 40-8-74(e) (tire tread and condition minimums); § 51-1-6 (breach of a legal duty) — unicourt mirror of the Official Code, Title 40",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate, and this is where the post can carry its one Georgia citation. § 40-8-74(e) verbatim: all tires '(1) Shall have not less than 2/32 inch tread measurable in all major grooves' (4/32 on the front tires of school buses and commercial vehicles), '(2) Shall be free from any cuts, breaks, or snags on tread and sidewall deep enough to expose body cord; and (3) Shall be free from bumps, bulges, or separations.' Justia path for § 40-8-74 follows the part-4 pattern of the recorded § 40-8-76 URL but could not be curl-verified; the mirror resolves (200)."
+  },
+  {
+   "surface": "body",
+   "claim": "Tires are also more susceptible to a blowout if they are either over inflated or underinflated.",
+   "verdict": "update",
+   "currentValue": "NHTSA names underinflation ('not having enough air in your tires') among the maintenance failures that 'can lead to a flat tire, blowout, or the tread coming off your tire.' The NHTSA page does not discuss over-inflation as a blowout cause.",
+   "sourceName": "NHTSA — Tires (TireWise)",
+   "sourceUrl": "https://www.nhtsa.gov/vehicle-safety/tires",
+   "retrievedAt": "2026-10-02",
+   "note": "Minor: lead with underinflation, e.g. 'Tires are more susceptible to a blowout when they are underinflated, and over-inflation also makes them more vulnerable to road damage.' Or leave — low risk."
+  },
+  {
+   "surface": "body",
+   "claim": "Drivers should ensure tires are filled to the pressure recommended by the manufacturer.",
+   "verdict": "update",
+   "currentValue": "NHTSA: use the pressure on the Tire and Loading Information label on the driver's door edge or post, or in the owner's manual — 'the correct pressure for your tire is what the vehicle manufacturer has listed, NOT what is listed on the tire itself.'",
+   "sourceName": "NHTSA — Tires (TireWise), Maintaining Proper Tire Pressure, Step 1",
+   "sourceUrl": "https://www.nhtsa.gov/vehicle-safety/tires",
+   "retrievedAt": "2026-10-02",
+   "note": "Ambiguous 'manufacturer' can be read as the tire maker (whose sidewall figure is a maximum). Change to 'the pressure recommended by the vehicle manufacturer (on the driver's door label or in the owner's manual)'."
+  },
+  {
+   "surface": "body",
+   "claim": "If the vehicle involved in the crash is owned by someone other than the driver, such as a rental company or employer, the owner may also be held liable for the accident.",
+   "verdict": "update",
+   "currentValue": "Rental companies: federal law (the Graves Amendment, 49 U.S.C. § 30106(a)) bars liability of a business that rents or leases vehicles 'by reason of being the owner' when there is 'no negligence or criminal wrongdoing on the part of the owner' — a rental company is liable only for its own negligence (e.g., renting a car with bald or damaged tires). Employers: liable for an employee's torts committed 'in the prosecution and within the scope of his business' (O.C.G.A. § 51-2-2). Any owner who 'cause[s] or knowingly permit[s]' an unsafe vehicle to be driven violates O.C.G.A. § 40-8-7(b).",
+   "sourceName": "49 U.S.C. § 30106 (Cornell LII); O.C.G.A. §§ 51-2-2, 40-8-7(b) (unicourt mirror)",
+   "sourceUrl": "https://www.law.cornell.edu/uscode/text/49/30106",
+   "retrievedAt": "2026-10-02",
+   "note": "Ownership alone does not create liability for a rental company. Suggested: 'If the vehicle is owned by someone other than the driver, the owner may also be liable — an employer for a driver on the job, and a rental company for its own failure to maintain the tires.'"
+  },
+  {
+   "surface": "body",
+   "claim": "If vehicle owners fail to maintain the tires or provide a vehicle with known defects, they may be held accountable for any resulting accidents.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 40-8-7(b) (misdemeanor for the owner 'to cause or knowingly permit to be driven' a vehicle 'in such unsafe condition as to endanger any person') (unicourt mirror, Title 40)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate statement of owner's direct negligence."
+  },
+  {
+   "surface": "body",
+   "claim": "Tire manufacturers have a duty to produce safe and defect-free products.",
+   "verdict": "update",
+   "currentValue": "Georgia's standard is strict liability: the manufacturer of property sold as new is liable 'irrespective of privity' to anyone injured because the product 'when sold by the manufacturer was not merchantable and reasonably suited to the use intended' (O.C.G.A. § 51-1-11(b)(1)). No such action may be brought 'after ten years from the date of the first sale for use or consumption' (§ 51-1-11(b)(2)); the ten-year repose also bars negligence claims against the manufacturer except for disease/birth-defect products or 'willful, reckless, or wanton disregard for life or property' (§ 51-1-11(c)), and the manufacturer keeps a duty to warn of dangers that become known after sale (§ 51-1-11(c)).",
+   "sourceName": "O.C.G.A. § 51-1-11 (Justia, recorded in sibling packs; text read from unicourt mirror, Title 51)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11/",
+   "retrievedAt": "2026-10-02",
+   "note": "Not wrong, but vague and uncited; a 10-year repose matters for tires because the tire's first-sale date (decoded from the DOT/TIN date code) can bar the claim outright. Suggested: 'Under O.C.G.A. § 51-1-11, a tire manufacturer is strictly liable if the tire was not reasonably suited to its intended use when sold — but generally only within ten years of the tire's first sale.'"
+  },
+  {
+   "surface": "body",
+   "claim": "If a tire is found to have a manufacturing defect or design flaw that contributed to the blowout, the manufacturer may be held partially or fully liable.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-1-11(b)(1); § 51-12-33 (apportionment among parties)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11/",
+   "retrievedAt": "2026-10-02",
+   "note": "Manufacturing and design defects are both actionable under § 51-1-11; apportionment of fault among defendants is consistent with § 51-12-33."
+  },
+  {
+   "surface": "body",
+   "claim": "Tire retailers and installers may also be held liable for a tire blowout crash if they knowingly sold or installed a defective or unsafe tire.",
+   "verdict": "update",
+   "currentValue": "Understates the rule. A 'product seller' — defined to include anyone who sells, 'installs', 'repairs' or 'maintains' a product — 'is not a manufacturer ... and is not liable as such' in strict liability (O.C.G.A. § 51-1-11.1(a)-(b)). But a tire shop is liable in ordinary negligence for improper mounting, repair, inspection or a failure to warn (e.g., selling or reinstalling a tire it should have known was unsafe) — knowledge is not required.",
+   "sourceName": "O.C.G.A. § 51-1-11.1 (Justia, recorded in sibling packs; text read from unicourt mirror, Title 51)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11-1/",
+   "retrievedAt": "2026-10-02",
+   "note": "Suggested: 'Tire retailers and installers are not strictly liable like manufacturers (O.C.G.A. § 51-1-11.1), but they can be liable for negligent installation, repair or inspection — for example, mounting the wrong size or load-rated tire or patching a tire that should have been replaced.'"
+  },
+  {
+   "surface": "body",
+   "claim": "If a government entity responsible for road maintenance failed to address known hazards or maintain safe road conditions, they may be held liable for accidents caused by tire blowouts.",
+   "verdict": "update",
+   "currentValue": "Depends on who owns the road. Cities: liable for municipal-street defects only where negligent and with actual notice or a defect that existed long enough for notice to be inferred (O.C.G.A. § 32-4-93(a)), and written ante-litem notice is due within 6 months (§ 36-33-5). Counties: 'not liable to suit for any cause of action unless made so by statute' (§ 36-1-4); claims must be presented within 12 months (§ 36-11-1). State highways (including I-16 and I-95 around Savannah): Georgia Tort Claims Act notice within 12 months (§ 50-21-26).",
+   "sourceName": "O.C.G.A. §§ 32-4-93, 36-1-4 (unicourt mirror, Titles 32 and 36); §§ 36-33-5, 36-11-1, 50-21-26 (Justia, recorded in sibling packs)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.32.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Add the notice requirement and the short deadlines; 'known hazards' is right for cities but counties are largely immune. Suggested append: 'Claims against a city or the state require written notice within 6 or 12 months, and counties are largely immune from road-defect suits.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Documentation of tire maintenance, including inspections, rotations and replacements can help establish whether a driver properly maintained the vehicle’s tires.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 40-8-7(a) (unicourt mirror)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "Photos of the accident scene, including tire damage and road conditions can provide valuable evidence.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "General evidentiary statement",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "No source needed."
+  },
+  {
+   "surface": "body",
+   "claim": "Accident reconstructionist specialists, tire specialists, or mechanical engineers can provide insight into the cause of the tire blowout and who may be liable.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "General evidentiary statement",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. The list omits the single most important item — the tire itself (FAQ 4 says so); optional one-line bullet: 'The tire: keep the failed tire and wheel, unrepaired, so an expert can examine it and read its DOT Tire Identification Number for recall and age.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Eyewitness accounts of the accident and statements from passengers or other drivers involved may not know the reason of the tire blowout, but they can corroborate your version of events.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "Copy edit",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Grammar only: 'statements ... may not know' — e.g. 'Eyewitnesses, passengers and other drivers may not know why the tire failed, but they can corroborate your version of events.' Quote spans the inline anchor on 'Witness Statements'; matches once tags are stripped."
+  },
+  {
+   "surface": "body",
+   "claim": "We have years of experience representing clients injured in car crashes throughout the state, including those caused by tire blowouts.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Firm claim (profiles/writer-profile.md)",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Unverifiable firm-experience claim; not a legal claim. Keep."
+  },
+  {
+   "surface": "body",
+   "claim": "There are no upfront costs to pay if we represent you. We only get paid if you do.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md (contingency fee)",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Firm fee claim; quote spans the inline anchor."
+  },
+  {
+   "surface": "body",
+   "claim": "There is no cost for this initial consultation.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md (free consultation)",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Keep."
+  },
+  {
+   "surface": "faqs",
+   "claim": "Sometimes, but not automatically. Determining liability for any crash is rarely straightforward, and investigators examine the contributing factors before concluding who is responsible for a blowout collision.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Stephens v. Hypes, 273 Ga. App. 631 (2005) (sudden-emergency charge requires a peril arising from circumstances in which the defendant did not participate); URL reused from sibling packs",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2005/a04a2387-0.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. Optional precision (Georgia's sudden-emergency doctrine is unavailable to a driver whose own negligence created the emergency): 'A blowout the driver could not have foreseen may excuse the crash, but a driver whose worn or underinflated tire caused it cannot claim a sudden emergency.'"
+  },
+  {
+   "surface": "faqs",
+   "claim": "The vehicle owner, the tire manufacturer, tire retailers and installers, and in some circumstances government entities responsible for the road surface. Which of them applies depends on why the tire failed.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. §§ 51-1-11, 51-1-11.1, 32-4-93, 40-8-7(b)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate as framed; 'in some circumstances' covers the notice and immunity limits on government claims."
+  },
+  {
+   "surface": "faqs",
+   "claim": "Where the failure traces to neglect — driving on visibly worn or underinflated tires, ignoring warnings, or failing to maintain the vehicle. A known and unaddressed defect points to the driver or owner.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. §§ 40-8-7, 40-8-74(e) (unicourt mirror, Title 40); NHTSA — Tires",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Supported. Optional: 'Georgia requires at least 2/32 inch of tread (O.C.G.A. § 40-8-74).' — only if the body does not carry the citation."
+  },
+  {
+   "surface": "faqs",
+   "claim": "The tire itself is central, so it must be preserved rather than discarded. Maintenance and purchase records, installation history, and any manufacturer recall information support the analysis.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Phillips v. Harmon, 297 Ga. 386 (2015) (duty to preserve when litigation is reasonably foreseeable); NHTSA — Tires (recall search); 49 C.F.R. Part 574 (Tire Identification Number and manufacturer registration of tire purchasers)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/2015/s14g1868.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. The recall lookup is by the tire's DOT Tire Identification Number (49 C.F.R. Part 574), which also encodes the production week and year — relevant to the § 51-1-11 ten-year repose."
+  },
+  {
+   "surface": "faqs",
+   "claim": "Georgia generally allows two years from the date of injury to file a personal injury lawsuit (O.C.G.A. § 9-3-33).",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-3-33 (Justia, recorded in sibling packs)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified across sibling packs. Property damage is four years (§ 9-3-31)."
+  },
+  {
+   "surface": "faqs",
+   "claim": "The failed tire is often disposed of within days, so act quickly to preserve it.",
+   "verdict": "update",
+   "currentValue": "No source for a 'within days' disposal window. Supported version: tow yards, repair shops and insurers routinely discard or sell damaged tires and salvage vehicles, and the duty to preserve evidence attaches only once litigation is reasonably foreseeable (Phillips v. Harmon, 2015) — so a prompt written preservation request matters. Claims tied to a city, county or state road also carry 6- or 12-month notice deadlines (O.C.G.A. §§ 36-33-5, 36-11-1, 50-21-26).",
+   "sourceName": "Phillips v. Harmon, 297 Ga. 386 (2015); O.C.G.A. §§ 36-33-5, 36-11-1, 50-21-26 (Justia, recorded in sibling packs)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/2015/s14g1868.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Suggested: 'The failed tire can be discarded by a tow yard or repair shop, so act quickly to preserve it — and claims involving a government road require written notice within 6 to 12 months.'"
+  },
+  {
+   "surface": "excerpt",
+   "claim": "A tire blowout does not automatically excuse a crash. When a driver, a tire maker, or a repair shop can be held liable in Savannah.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Stephens v. Hypes (2005); O.C.G.A. §§ 51-1-11, 51-1-11.1",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2005/a04a2387-0.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate summary; 'repair shop' liability is negligence-based (§ 51-1-11.1). Second sentence is a fragment — style call."
+  }
+ ],
+ "recommendedEdits": [
+  "Intro: replace 'we have been managing cases for injured crash victims for decades' with 'our attorneys bring 62 years of combined experience to cases for injured crash victims'.",
+  "Determining Liability: replace 'investigators and first responders will thoroughly examine the tires and other available evidence' with 'the tire, the vehicle and the scene need to be examined — often by an independent tire expert, which is why the failed tire must be preserved'.",
+  "Driver section — the one Georgia citation the post lacks; add after 'replacing, servicing or repairing tires as needed.': 'Georgia law requires every tire to have at least 2/32 inch of tread in all major grooves and to be free of cord-deep cuts and of bumps, bulges or separations (O.C.G.A. § 40-8-74(e)), and driving a vehicle that is not in safe mechanical condition is itself a violation (O.C.G.A. § 40-8-7).'",
+  "Driver section: change 'filled to the pressure recommended by the manufacturer' to 'filled to the pressure recommended by the vehicle manufacturer (on the driver’s door label or in the owner’s manual), not the maximum printed on the tire'. Optionally lead the preceding sentence with underinflation.",
+  "Vehicle Owners: replace the first sentence with 'If the vehicle is owned by someone other than the driver, the owner may also be liable — an employer for a driver on the job, and a rental company for its own failure to maintain the tires.' (Graves Amendment, 49 U.S.C. § 30106, bars rental-company liability based on ownership alone.)",
+  "Tire Manufacturers: replace 'Tire manufacturers have a duty to produce safe and defect-free products.' with 'Under O.C.G.A. § 51-1-11, a tire manufacturer is strictly liable if the tire was not reasonably suited to its intended use when sold — but generally only within ten years of the tire’s first sale.'",
+  "Tire Retailers and Installers: replace the sentence with 'Tire retailers and installers are not strictly liable like manufacturers (O.C.G.A. § 51-1-11.1), but they can be liable for negligent installation, repair or inspection — for example, mounting a tire with the wrong load rating or patching one that should have been replaced.'",
+  "Government Entities: append 'Claims against a city or the State require written notice within 6 or 12 months, and counties are largely immune from road-defect suits.'",
+  "Evidence list, Witness Statements: fix grammar — 'Eyewitnesses, passengers and other drivers may not know why the tire failed, but they can corroborate your version of events.'",
+  "FAQ 5: replace 'The failed tire is often disposed of within days, so act quickly to preserve it.' with 'The failed tire can be discarded by a tow yard or repair shop, so act quickly to preserve it — and claims involving a government road require written notice within 6 to 12 months.'",
+  "Optional, FAQ 1: append 'A blowout the driver could not have foreseen may excuse the crash, but a driver whose own neglect caused it cannot claim a sudden emergency.' Keep the post Georgia-only; add no South Carolina law.",
+  "Do not add NHTSA's figure unless a statistic is wanted; if one is, the current one is: 511 people died in tire-related crashes in 2024 (NHTSA, Tires/TireWise). No other statistics appear on the page, and none need removing."
+ ],
+ "statuteCitations": [
+  {
+   "section": "O.C.G.A. § 40-8-74",
+   "name": "Tires — (e)(1) at least 2/32 inch tread in all major grooves (4/32 front tires of school buses and commercial vehicles); (e)(2)-(3) no cord-deep cuts, no bumps, bulges or separations",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html"
+  },
+  {
+   "section": "O.C.G.A. § 40-8-7",
+   "name": "Driving unsafe or improperly equipped vehicle; owner who causes or knowingly permits it",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html"
+  },
+  {
+   "section": "O.C.G.A. § 51-1-6",
+   "name": "Recovery of damages upon breach of legal duty (negligence per se)",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-6/"
+  },
+  {
+   "section": "O.C.G.A. § 51-1-11",
+   "name": "Manufacturer strict liability; 10-year statute of repose from first sale (b)(2); negligence repose and continuing duty to warn (c)",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11/"
+  },
+  {
+   "section": "O.C.G.A. § 51-1-11.1",
+   "name": "Product seller (incl. installers, repairers) is not a manufacturer and not strictly liable",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11-1/"
+  },
+  {
+   "section": "O.C.G.A. § 51-2-2",
+   "name": "Liability for torts of servant within the scope of business (respondeat superior)",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.51.html"
+  },
+  {
+   "section": "O.C.G.A. § 9-3-33",
+   "name": "Injuries to the person — two-year limitation",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+  },
+  {
+   "section": "O.C.G.A. § 9-3-31",
+   "name": "Injuries to personalty — four-year limitation",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-31/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-33",
+   "name": "Apportionment of damages; no recovery at 50 percent or more fault",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+  },
+  {
+   "section": "O.C.G.A. § 32-4-93",
+   "name": "Municipal liability for road defects — negligence plus actual or inferable notice",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.32.html"
+  },
+  {
+   "section": "O.C.G.A. § 36-1-4",
+   "name": "County not liable to suit unless made so by statute",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.36.html"
+  },
+  {
+   "section": "O.C.G.A. § 36-33-5",
+   "name": "Ante-litem notice to a municipal corporation — six months",
+   "url": "https://law.justia.com/codes/georgia/title-36/provisions-applicable-to-municipal-corporations-only/chapter-33/section-36-33-5/"
+  },
+  {
+   "section": "O.C.G.A. § 36-11-1",
+   "name": "Claims against counties — presented within 12 months",
+   "url": "https://law.justia.com/codes/georgia/title-36/provisions-applicable-to-counties-only/chapter-11/section-36-11-1/"
+  },
+  {
+   "section": "O.C.G.A. § 50-21-26",
+   "name": "Georgia Tort Claims Act — notice of claim within 12 months",
+   "url": "https://law.justia.com/codes/georgia/title-50/chapter-21/article-2/section-50-21-26/"
+  },
+  {
+   "section": "49 U.S.C. § 30106",
+   "name": "Graves Amendment — no vicarious liability of rental/leasing companies absent their own negligence or criminal wrongdoing",
+   "url": "https://www.law.cornell.edu/uscode/text/49/30106"
+  },
+  {
+   "section": "49 C.F.R. Part 574",
+   "name": "Tire identification (TIN) and recordkeeping; manufacturer registration of tire purchasers",
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-574"
+  }
+ ],
+ "authoritativeLinks": [
+  {
+   "name": "NHTSA — Tires (TireWise): 511 tire-related traffic deaths in 2024; correct pressure is the vehicle manufacturer's, not the sidewall's; blowout handling; tire recall search",
+   "url": "https://www.nhtsa.gov/vehicle-safety/tires"
+  },
+  {
+   "name": "Phillips v. Harmon, 297 Ga. 386 (2015) — spoliation; duty to preserve when litigation is reasonably foreseeable",
+   "url": "https://law.justia.com/cases/georgia/supreme-court/2015/s14g1868.html"
+  },
+  {
+   "name": "Stephens v. Hypes, 273 Ga. App. 631 (2005) — sudden-emergency charge requires a peril in which the defendant did not participate",
+   "url": "https://law.justia.com/cases/georgia/court-of-appeals/2005/a04a2387-0.html"
+  },
+  {
+   "name": "eCFR — 49 C.F.R. Part 574, Tire Identification and Recordkeeping",
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-574"
+  },
+  {
+   "name": "Official Code of Georgia, Title 40 (unicourt mirror; §§ 40-8-7, 40-8-74 full text)",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html"
+  },
+  {
+   "name": "Official Code of Georgia, Title 51 (unicourt mirror; §§ 51-1-6, 51-1-11, 51-1-11.1, 51-2-2 full text)",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.51.html"
+  }
+ ],
+ "quoteNote": "Claims are quoted from the rendered text; three body quotes span inline <a> tags (Witness Statements bullet, the contingency-fee sentence) or follow a <strong> lead-in (evidence bullets) and match exactly once tags are stripped. Justia URLs are reused from sibling packs (Justia bot-challenges curl); statute text was read from the unicourt public mirror of the Official Code (resolves 200). nhtsa.gov returns 403 to curl and was read in Chrome. The post makes no statistical claims; keyTakeaways and metaDescription are empty."
+}

@@ -1,0 +1,14 @@
+{
+ "url": "https://rodenlaw.com/blog/liability-for-crash-due-to-tire-blowout-in-savannah/",
+ "reviewed": "2026-10-02",
+ "attorney": "3729",
+ "modified": "2026-10-02 18:49:12",
+ "fields": {
+  "content": true,
+  "excerpt": true,
+  "keyTakeaways": true,
+  "metaDescription": true,
+  "faqs": true
+ },
+ "liveCheck": "Chrome 2026-10-02 with ?nc=: new text present, removed claims absent, FAQPage JSON-LD parses, dateModified 2026-10-02"
+}

@@ -1,0 +1,19 @@
+{
+ "url": "https://rodenlaw.com/blog/ashley-phosphate-i-26-south-carolinas-deadliest-intersection/",
+ "reviewed": "2026-10-02",
+ "attorney": "3732",
+ "modified": "2026-10-02 18:49:12",
+ "fields": {
+  "content": true,
+  "excerpt": true,
+  "keyTakeaways": true,
+  "metaDescription": true,
+  "faqs": true
+ },
+ "liveCheck": "Chrome 2026-10-02 with ?nc=: new text present, removed claims absent, FAQPage JSON-LD parses, dateModified 2026-10-02",
+ "title": {
+  "before": "Why Ashley Phosphate & I-26 Is the Tri-County's Highest-Crash Intersection",
+  "after": "Why Ashley Phosphate & I-26 Is One of the Tri-County's Highest-Crash Intersections",
+  "liveCheck": "<title>, H1, og:title and Article headline all carry the new title"
+ }
+}

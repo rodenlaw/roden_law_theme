@@ -1,0 +1,567 @@
+{
+ "postId": 4624,
+ "slug": "ashley-phosphate-i-26-south-carolinas-deadliest-intersection",
+ "liveUrl": "https://rodenlaw.com/blog/ashley-phosphate-i-26-south-carolinas-deadliest-intersection/",
+ "jurisdiction": "SC",
+ "researchedAt": "2026-10-02",
+ "verifiedClaims": [
+  {
+   "surface": "title",
+   "claim": "Why Ashley Phosphate & I-26 Is the Tri-County's Highest-Crash Intersection",
+   "verdict": "update",
+   "currentValue": "2024 (latest SCDPS edition): I-26 at S-75 (Ashley Phosphate Road) had 174 collisions — 0 fatal, 1 serious-injury, 25 other-injury, 148 property-damage-only; 0 killed, 1 seriously injured, 38 other injuries (39 injured). Rank: 2nd in Charleston County behind I-26 at US-78 (190 collisions, 0 fatal); Berkeley's top intersection was I-26 at S-62/College Park Rd (113) and Dorchester's was US-78 at SC-165 (56), so 2nd in the tri-county. Statewide, 5th: behind I-85 at S-492 (Greenville, 277), I-20 at US-176 (Richland, 224), I-85 at SC-290 (Spartanburg, 199) and I-26 at US-78 (Charleston, 190). For 2011–2015 the Post and Courier's SCDPS analysis did rank it No. 1 in the tri-county (629 crashes).",
+   "sourceName": "SCDPS Office of Highway Safety and Justice Programs, South Carolina Traffic Collision Fact Book 2024 Edition (latest), Part VI county tables: Charleston County p. 105, Berkeley County p. 101, Dorchester County p. 121",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "NOT a patcher-editable surface (title is not in body.html) — for the owner. The present-tense superlative was true for 2011–2015 only. In 2024 it was #2 in Charleston County and the tri-county (174 vs 190 at I-26/US-78). Suggested title: \"Why Ashley Phosphate & I-26 Is One of the Tri-County's Highest-Crash Intersections\" (or keep the superlative but date it: \"...Was the Tri-County's Highest-Crash Intersection, 2011–2015\"). The Fact Book has no single statewide intersection table; the statewide rank is derived from all 46 county Top-5 tables and is exact because every county's 5th-place intersection had fewer than 174 collisions (max 122). S-75 = Ashley Phosphate Road per SCDOT's Charleston County AADT sheet ('I-26 S-75 (ASHLEY PHOSPHATE RD) TO S-1342 (AVIATION AV)'); S-62 in Berkeley = College Park Road (same sheet). The Fact Book notes intersections are based on officer-reported route numbers, so the 'I-26 at S-75' count is the interchange as coded on crash reports. "
+  },
+  {
+   "surface": "slug",
+   "claim": "ashley-phosphate-i-26-south-carolinas-deadliest-intersection",
+   "verdict": "drop",
+   "currentValue": "0 fatal collisions in 2024 (SCDPS) and 0 deaths in 629 crashes 2011–2015 (Post and Courier).",
+   "sourceName": "SCDPS Office of Highway Safety and Justice Programs, South Carolina Traffic Collision Fact Book 2024 Edition (latest), Part VI county tables: Charleston County p. 105, Berkeley County p. 101, Dorchester County p. 121",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "NOT patcher-editable — for the owner. 'South Carolina's deadliest intersection' is contradicted twice: it was never #1 in the state (2nd in 2011–2015 behind I-20/US-176 in Columbia; 5th in 2024), and it is not 'deadly' at all — no deaths in either period; most crashes are property-damage-only. The post's own body says 'none of those 629 crashes was fatal', so the slug contradicts the page. Changing a slug needs a 301 redirect; the owner may prefer to leave the URL and fix the visible text. Do not reuse 'deadliest' anywhere on the page."
+  },
+  {
+   "surface": "body",
+   "claim": "What you may not know is that data confirms it: 629 crashes were recorded there between 2011 and 2015 — roughly one every three days, and more than at any other intersection in Berkeley, Charleston or Dorchester counties.",
+   "verdict": "update",
+   "currentValue": "2024 (latest SCDPS edition): I-26 at S-75 (Ashley Phosphate Road) had 174 collisions — 0 fatal, 1 serious-injury, 25 other-injury, 148 property-damage-only; 0 killed, 1 seriously injured, 38 other injuries (39 injured). Rank: 2nd in Charleston County behind I-26 at US-78 (190 collisions, 0 fatal); Berkeley's top intersection was I-26 at S-62/College Park Rd (113) and Dorchester's was US-78 at SC-165 (56), so 2nd in the tri-county. Statewide, 5th: behind I-85 at S-492 (Greenville, 277), I-20 at US-176 (Richland, 224), I-85 at SC-290 (Spartanburg, 199) and I-26 at US-78 (Charleston, 190). ",
+   "sourceName": "Post and Courier, Robert Behre, \"What are the tri-county's 10 most dangerous intersections?\" (Mar. 4, 2017; updated Sept. 14, 2020), citing preliminary SCDPS data — Internet Archive capture of 2025-03-29",
+   "sourceUrl": "https://web.archive.org/web/20250329105910/https://www.postandcourier.com/charleston_sc/what-are-the-tri-countys-10-most-dangerous-intersections/article_74606f92-e1a5-11e6-83b4-4f76f1994275.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified against the article: 'Between 2011 and 2015, more wrecks occurred there than anywhere else in Berkeley, Charleston and Dorchester counties — one every three days on average'; 629 wrecks; 'preliminary S.C. Department of Public Safety data'. Accurate as historical data but 9–13 years old. Economical update: keep the 2011–2015 sentence and add the 2024 figure — e.g., append \" In 2024, the latest year of state data, it recorded 174 collisions, second in the tri-county only to I-26 at US-78 (SCDPS 2024 Fact Book).\" Live P&C URL returns HTTP 429 to automated fetches (curl and browser); the Internet Archive capture resolves and was read in full. Keep the in-body P&C link. The Fact Book has no single statewide intersection table; the statewide rank is derived from all 46 county Top-5 tables and is exact because every county's 5th-place intersection had fewer than 174 collisions (max 122). S-75 = Ashley Phosphate Road per SCDOT's Charleston County AADT sheet ('I-26 S-75 (ASHLEY PHOSPHATE RD) TO S-1342 (AVIATION AV)'); S-62 in Berkeley = College Park Road (same sheet). The Fact Book notes intersections are based on officer-reported route numbers, so the 'I-26 at S-75' count is the interchange as coded on crash reports. "
+  },
+  {
+   "surface": "body",
+   "claim": "Statewide it ranked second, behind I-20 at US-176 in Columbia.",
+   "verdict": "update",
+   "currentValue": "2024: 5th statewide (174), behind I-85 at S-492 (Greenville, 277), I-20 at US-176 (Richland, 224), I-85 at SC-290 (Spartanburg, 199), I-26 at US-78 (Charleston, 190).",
+   "sourceName": "Post and Courier, Robert Behre, \"What are the tri-county's 10 most dangerous intersections?\" (Mar. 4, 2017; updated Sept. 14, 2020), citing preliminary SCDPS data — Internet Archive capture of 2025-03-29",
+   "sourceUrl": "https://web.archive.org/web/20250329105910/https://www.postandcourier.com/charleston_sc/what-are-the-tri-countys-10-most-dangerous-intersections/article_74606f92-e1a5-11e6-83b4-4f76f1994275.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified for 2011–2015 ('Across South Carolina, only the intersection of Interstate 20 and U.S. Highway 176 in Columbia was the scene of more crashes'). Make the tense explicit: \"Statewide it ranked second for 2011–2015, behind I-20 at US-176 in Columbia; in 2024 it ranked fifth.\" Statewide 2024 rank derived from SCDPS 2024 Fact Book county tables (see title note)."
+  },
+  {
+   "surface": "body",
+   "claim": "Notably, none of those 629 crashes was fatal, though 181 people were injured",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Post and Courier, Robert Behre, \"What are the tri-county's 10 most dangerous intersections?\" (Mar. 4, 2017; updated Sept. 14, 2020), citing preliminary SCDPS data — Internet Archive capture of 2025-03-29",
+   "sourceUrl": "https://web.archive.org/web/20250329105910/https://www.postandcourier.com/charleston_sc/what-are-the-tri-countys-10-most-dangerous-intersections/article_74606f92-e1a5-11e6-83b4-4f76f1994275.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified: 'No one was killed in any of the 629 wrecks at Ashley Phosphate and Interstate 26, though 181 people were injured.' Still true in 2024: 0 fatal collisions, 39 people injured (SCDPS 2024 Fact Book, Charleston County p. 105)."
+  },
+  {
+   "surface": "body",
+   "claim": "As personal injury lawyers who handle crash cases from this intersection regularly, we've seen the devastating injuries it produces — from traumatic brain injuries caused by high-speed T-bone collisions to spinal cord damage from rear-end chain reactions.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "Firm experience claim — no public source",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Firm-experience claim; cannot be verified externally — owner to confirm or soften. Data cut against the framing: 148 of 174 crashes in 2024 were property-damage-only and only one involved a serious injury (SCDPS 2024); the Post and Courier noted interchange crashes produce 'few injuries — and fewer deaths'. Suggested: \"we've seen the injuries it produces — from T-bone collisions to rear-end chain reactions.\""
+  },
+  {
+   "surface": "body",
+   "claim": "Here's what makes this intersection so deadly and what you can do to protect yourself.",
+   "verdict": "update",
+   "currentValue": "0 fatal collisions 2011–2015 and in 2024.",
+   "sourceName": "SCDPS Office of Highway Safety and Justice Programs, South Carolina Traffic Collision Fact Book 2024 Edition (latest), Part VI county tables: Charleston County p. 105, Berkeley County p. 101, Dorchester County p. 121",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Contradicted by the post's own data (no deaths). Replace 'so deadly' with 'so crash-prone'."
+  },
+  {
+   "surface": "body",
+   "claim": "Injury severity: The mix of interstate-speed traffic with surface-street turning movements produces high-energy impacts",
+   "verdict": "update",
+   "currentValue": "2024: 174 collisions — 148 property-damage-only, 25 other-injury, 1 serious-injury, 0 fatal; 39 people injured.",
+   "sourceName": "SCDPS Office of Highway Safety and Justice Programs, South Carolina Traffic Collision Fact Book 2024 Edition (latest), Part VI county tables: Charleston County p. 105, Berkeley County p. 101, Dorchester County p. 121",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Contradicted: the data show mostly low-severity crashes. This is the only bullet left in the 'Numbers' list (the list is otherwise empty — earlier bullets appear to have been removed). Replace the bullet text with the 2024 data: \"2024 (latest state data): 174 collisions at I-26 and Ashley Phosphate Road (S-75) — second in the tri-county behind I-26 at US-78 (190) and fifth statewide. No one was killed; 39 people were injured, and 148 of the crashes were property damage only (SCDPS 2024 Fact Book).\" The Fact Book has no single statewide intersection table; the statewide rank is derived from all 46 county Top-5 tables and is exact because every county's 5th-place intersection had fewer than 174 collisions (max 122). S-75 = Ashley Phosphate Road per SCDOT's Charleston County AADT sheet ('I-26 S-75 (ASHLEY PHOSPHATE RD) TO S-1342 (AVIATION AV)'); S-62 in Berkeley = College Park Road (same sheet). The Fact Book notes intersections are based on officer-reported route numbers, so the 'I-26 at S-75' count is the interchange as coded on crash reports. "
+  },
+  {
+   "surface": "body",
+   "claim": "For comparison, a \"high-crash\" intersection typically sees a collision once every 7-10 days. Ashley Phosphate/I-26 more than doubles that rate.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "No source",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "No federal, SCDOT or SCDPS definition of a 'high-crash' intersection as one crash every 7–10 days exists; the benchmark is invented. Delete both sentences. (For scale, if wanted: 174 collisions in 2024 is about one every two days — SCDPS 2024.)"
+  },
+  {
+   "surface": "body",
+   "claim": "5 Reasons This Intersection Is So Deadly",
+   "verdict": "update",
+   "currentValue": "0 fatal collisions 2011–2015 and 2024.",
+   "sourceName": "SCDPS Office of Highway Safety and Justice Programs, South Carolina Traffic Collision Fact Book 2024 Edition (latest), Part VI county tables: Charleston County p. 105, Berkeley County p. 101, Dorchester County p. 121",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "H2 inside body.html — editable. Change to \"5 Reasons This Intersection Sees So Many Crashes\"."
+  },
+  {
+   "surface": "body",
+   "claim": "Vehicles exiting I-26 at Exit 209 approach Ashley Phosphate Road carrying 60-70 mph momentum. Within a few hundred feet, they encounter a traffic signal.",
+   "verdict": "update",
+   "currentValue": "Ashley Phosphate Road is I-26 Exit 209 (signed 209B; 209A is the adjacent US-52 Connector). SCDOT's 2005 rebuild widened Ashley Phosphate from five to seven lanes, added a collector-distributor road along I-26 westbound and built new entrance and exit ramps.",
+   "sourceName": "Charleston County / FHWA, Palmetto Commerce Interchange Environmental Assessment (2019), Purpose and Need",
+   "sourceUrl": "https://static1.squarespace.com/static/59c01e98a803bb8494cef12c/t/5cfec5ef7c92bf0001116b84/1560200697998/PCI+EA_compressed.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "'Exit 209' verified. '60–70 mph momentum' and 'within a few hundred feet' are not traceable (no posted-speed or ramp-length source found; westbound exit traffic leaves via a collector-distributor road). Suggested: \"Vehicles exiting I-26 at Exit 209 come off the interstate and reach a signal at Ashley Phosphate Road a short distance later.\" Keep the rest of the paragraph as explanation."
+  },
+  {
+   "surface": "body",
+   "claim": "Drivers who are distracted, unfamiliar with the area, or simply carrying too much speed blow through red lights at near-highway velocity.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "No source",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "General explanation is acceptable; 'near-highway velocity' implies a measured speed that is not sourced. Suggested: \"...carrying too much speed can run the red light.\""
+  },
+  {
+   "surface": "body",
+   "claim": "Ashley Phosphate Road has multiple left-turn lanes in both directions. Vehicles must turn across 3+ lanes of opposing traffic traveling at 45+ mph.",
+   "verdict": "update",
+   "currentValue": "Ashley Phosphate Road is a seven-lane road at the interchange (three through lanes each way plus turn lanes) since the 2005 rebuild; 65,000 vehicles/day (2025 AADT, Rivers Ave to Stall Rd).",
+   "sourceName": "Palmetto Commerce Interchange EA (2019); SCDOT 2025 Charleston County AADT, station 440",
+   "sourceUrl": "https://static1.squarespace.com/static/59c01e98a803bb8494cef12c/t/5cfec5ef7c92bf0001116b84/1560200697998/PCI+EA_compressed.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Seven lanes supports 'three lanes of opposing traffic'. '45+ mph' is not traceable (no posted-limit source found) — drop the speed. Suggested: \"Vehicles turning left must cross three lanes of opposing traffic on a seven-lane road.\""
+  },
+  {
+   "surface": "body",
+   "claim": "Shopping centers, hotels, gas stations, and restaurants surround the intersection on every side.",
+   "verdict": "update",
+   "currentValue": "SCDOT's Ashley Phosphate Road safety-project board: 'high volumes and numerous conflicting turning movements force drivers to make decisions quickly, resulting in crashes'; SCDOT is installing raised medians to reduce conflict points (Rivers Ave to Dorchester Rd).",
+   "sourceName": "SCDOT Ashley Phosphate Road Safety Improvements, public-meeting Board 3",
+   "sourceUrl": "https://info2.scdot.org/projects/ViewerFiles/Board%203.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "The turning-conflict premise is supported by SCDOT. 'On every side'/'all four corners' cannot be verified for an interchange (two sides are I-26 ramps); soften to \"Shopping centers, hotels, gas stations and restaurants line Ashley Phosphate Road around the interchange.\" Heading '3. Commercial Density on All Four Corners' — change to '3. Commercial Density Around the Interchange'."
+  },
+  {
+   "surface": "body",
+   "claim": "Signal cycles at this intersection are long — drivers waiting 2-3 minutes at a red light become impatient. Studies show that red-light running increases at intersections with longer signal cycles. When a driver decides \"it just turned red, I can make it\" at this intersection, they're running into traffic traveling at 50 mph from an I-26 off-ramp.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "No source",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Untraceable: no published signal timing for this interchange; no study is named for the cycle-length claim (FHWA/ITE red-light-running research links violations chiefly to approach volume, yellow-interval length and speed, not long cycles); '50 mph from an I-26 off-ramp' unsourced. Delete the paragraph, or replace with a sourced fact: \"Failure to yield the right of way was the leading contributing factor in Charleston County collisions in 2024 (SCDPS).\" Heading '4. Long Red Lights Encourage Risk-Taking' would then need to change — suggest '4. Drivers Who Fail to Yield' (Charleston County Top 5 Contributing Factors, SCDPS 2024 p. 105: Failed to Yield Right of Way, 3,525 listed factors)."
+  },
+  {
+   "surface": "body",
+   "claim": "North Charleston's population has grown to over 131,000 (2.02% annual growth), and the I-26 corridor carries over 100,000 vehicles per day.",
+   "verdict": "update",
+   "currentValue": "North Charleston: 129,245 (July 1, 2025 Census estimate), up from 114,887 (April 2020 base); +2.1% from 2024 (126,551). I-26 AADT 2025: 170,500 vehicles/day between Ashley Phosphate Rd and Aviation Ave (169,300 in 2024 — first-listed of SCDOT's 18 highest-volume count sites statewide in 2024); 116,700 between the US-52 Connector and Ashley Phosphate. Ashley Phosphate Rd: 65,000/day (Rivers Ave to Stall Rd).",
+   "sourceName": "U.S. Census Bureau, Vintage 2025 City and Town Population Totals, South Carolina (SUB-IP-EST2025-POP-45); SCDOT Average Daily Traffic for Charleston County, 2025 AADT (generated 2026-03-13), stations 2189, 2191, 440; 2024 sheet for comparison",
+   "sourceUrl": "https://www2.census.gov/programs-surveys/popest/tables/2020-2025/cities/totals/SUB-IP-EST2025-POP-45.xlsx",
+   "retrievedAt": "2026-10-02",
+   "note": "'Over 131,000' overstates the population; '2.02%' is untraceable. Replace: \"North Charleston's population reached about 129,000 in 2025 (Census estimate), and I-26 carries about 170,000 vehicles a day just east of the interchange, with 65,000 more on Ashley Phosphate Road (SCDOT, 2025).\" AADT source: https://www.scdot.org/content/dam/scdot-legacy/travel/pdf/trafficcounts/2025/CHARLESTON.pdf ; RFA 2024 top-sites list: https://rfa.sc.gov/sites/default/files/2025-12/RFA%20Presentation%20to%20House%20Ad%20Hoc%20Transportation%2012.2025%20-%20Final%20(Rev).pdf (slide 37)."
+  },
+  {
+   "surface": "body",
+   "claim": "The intersection's design capacity has been outstripped by current traffic volumes.",
+   "verdict": "update",
+   "currentValue": "SCDOT: traffic volumes on Ashley Phosphate Road 'have grown beyond the recommended level for two-way left-turn lanes' (61,000 vehicles/day near Stall Road).",
+   "sourceName": "SCDOT Ashley Phosphate Road Safety Improvements, public-meeting Board 3",
+   "sourceUrl": "https://info2.scdot.org/projects/ViewerFiles/Board%203.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Supported for the Ashley Phosphate corridor (SCDOT finding on center-turn lanes), not as a capacity study of the interchange itself. Acceptable as framing; optionally cite SCDOT. The following sentence ('lane widths, turn radius, merge distances — simply cannot safely process this volume') is opinion with no engineering source — soften or drop."
+  },
+  {
+   "surface": "body",
+   "claim": "Most Common Crash Types at Ashley Phosphate & I-26",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "No source",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "No public source publishes crash types for this interchange (the SCDPS Fact Book's intersection table gives counts and severity only). The table rows are general explanation, not data. Retitle the H2 'Common Crash Types at Busy Interchanges' and keep the table as illustrative. 'Pedestrian strike ... fatality' has no local data behind it (0 deaths here in 2024 and 2011–2015) — acceptable only as a general category."
+  },
+  {
+   "surface": "body",
+   "claim": "Red-light cameras — Studies show cameras reduce T-bone crashes by 25-30% at high-violation intersections",
+   "verdict": "update",
+   "currentValue": "FHWA's seven-jurisdiction study (132 treatment sites) found right-angle crashes fell 24.6% while rear-end crashes rose 14.9%. South Carolina law bars local governments from issuing traffic tickets based on camera evidence (S.C. Code § 56-5-710(B), 2011 Act 65), and § 56-5-70(E) limits photo-evidence citations to declared emergencies with in-person service within one hour.",
+   "sourceName": "FHWA, Safety Evaluation of Red-Light Cameras, FHWA-HRT-05-048 (2005); S.C. Code §§ 56-5-70(E), 56-5-710(B)",
+   "sourceUrl": "https://www.fhwa.dot.gov/publications/research/safety/05048/",
+   "retrievedAt": "2026-10-02",
+   "note": "'25–30%' overstates the upper end and omits the rear-end increase. Replace: \"Red-light cameras — A federal study found about 25% fewer right-angle crashes but about 15% more rear-end crashes; South Carolina law currently bars local camera ticketing (S.C. Code § 56-5-710).\" Statute: https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "surface": "body",
+   "claim": "Grade separation — A long-term solution that would separate I-26 ramp traffic from surface traffic entirely",
+   "verdict": "drop",
+   "currentValue": "I-26 and Ashley Phosphate Road are already grade-separated (an interchange). Actual projects: SCDOT's Ashley Phosphate Road Safety Improvements Project (raised medians, high-visibility crosswalks, pavement markings, lighting; Rivers Ave to Dorchester Rd; groundbreaking July 11, 2025, completion scheduled summer 2026); Charleston County's Palmetto Commerce Interchange (new I-26 interchange between University Blvd and Ashley Phosphate; ribbon-cutting Nov. 17, 2025).",
+   "sourceName": "SCDOT press release, \"SCDOT hosts groundbreaking ceremony for Ashley Phosphate Road safety improvements\" (2025-07-11)",
+   "sourceUrl": "https://www.scdot.org/inside/SCDOTPress/2025/scdot-hosts-groundbreaking-ceremony-for-ashley-phosphate-road-sa.html",
+   "retrievedAt": "2026-10-02",
+   "note": "The bullet misdescribes the facility. Replace the bullet with the real project: \"Raised medians — SCDOT broke ground in July 2025 on an Ashley Phosphate Road safety project (Rivers Avenue to Dorchester Road) adding raised medians, high-visibility crosswalks and better lighting.\" Palmetto Commerce completion source: https://www.banksconstruction.com/portfolio/palmetto-parkway-interchange/ (contractor; Charleston County page https://www.palmettocommerceinterchange.com/about timed out). Whether the SCDOT project is complete as of 2026-10 was not confirmed — say 'broke ground in July 2025' not 'completed'."
+  },
+  {
+   "surface": "body",
+   "claim": "Restricted access management — Reducing the number of driveway access points near the intersection",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "SCDOT Ashley Phosphate Road Safety Improvements, public-meeting Board 3",
+   "sourceUrl": "https://info2.scdot.org/projects/ViewerFiles/Board%203.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Recommendation framing; consistent with SCDOT's raised-median project, which limits left turns into driveways."
+  },
+  {
+   "surface": "body",
+   "claim": "Until these improvements are made, the crash rate will continue. The city and SCDOT are aware of the data — the question is whether they will act on it before more people are hurt.",
+   "verdict": "update",
+   "currentValue": "SCDOT's Office of Traffic Safety identified Ashley Phosphate Road; the safety project (with the City of North Charleston, Dorchester County, BCDCOG) broke ground July 11, 2025.",
+   "sourceName": "SCDOT press release (2025-07-11)",
+   "sourceUrl": "https://www.scdot.org/inside/SCDOTPress/2025/scdot-hosts-groundbreaking-ceremony-for-ashley-phosphate-road-sa.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Outdated — SCDOT has acted. Replace: \"SCDOT has started: its Ashley Phosphate Road safety project, which broke ground in July 2025, targets the corridor between Rivers Avenue and Dorchester Road. Until changes reach the interchange itself, the crash count is unlikely to fall far.\""
+  },
+  {
+   "surface": "body",
+   "claim": "Trident Medical Center (9330 Medical Plaza Dr) is the closest trauma facility",
+   "verdict": "keep",
+   "currentValue": "HCA Healthcare Trident Hospital (Trident Medical Center), 9330 Medical Plaza Dr, North Charleston — ACS-verified, South Carolina-designated Level II Trauma Center; about 4 miles north of the interchange.",
+   "sourceName": "Trident Health — Trident Hospital location page",
+   "sourceUrl": "https://www.tridenthealthsystem.com/locations/trident-hospital",
+   "retrievedAt": "2026-10-02",
+   "note": "Address and trauma status verified; the next trauma center (MUSC, Level I) is downtown Charleston, farther away. Distance by Census geocoder coordinates (straight line). The hospital now brands itself 'HCA Healthcare Trident Hospital'; 'Trident Medical Center' remains widely used — optional rename."
+  },
+  {
+   "surface": "body",
+   "claim": "An attorney can pull traffic camera footage, obtain the signal timing report, and preserve evidence before it's lost",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "General practice",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Process advice; no factual claim to verify."
+  },
+  {
+   "surface": "body",
+   "claim": "Statute of limitations: 3 years from the date of injury to file suit (S.C. Code § 15-3-530)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 15-3-530 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-02",
+   "note": "§ 15-3-530(5). Wrongful death runs from the date of death (§ 15-3-530(6)). Minors: § 15-3-40 tolls the period during minority but extends it no more than one year after the minor turns 18 (and it applies to Tort Claims Act actions too) — not discussed; no edit."
+  },
+  {
+   "surface": "body",
+   "claim": "Comparative fault: You can recover damages if you were less than 51% at fault — your award is reduced by your percentage of responsibility",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (S.C. 1991)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1265650/nelson-v-concrete-supply-company/",
+   "retrievedAt": "2026-10-02",
+   "note": "Modified comparative fault (plaintiff's negligence not greater than defendants' combined). Authority reused from the run-4644 pack (CourtListener confirmed in a browser there; bot-blocks curl)."
+  },
+  {
+   "surface": "body",
+   "claim": "Government liability: If road design or signal timing contributed to your crash, the city or SCDOT may be partially liable under the South Carolina Tort Claims Act",
+   "verdict": "update",
+   "currentValue": "§ 15-78-60(15): 'Governmental entities are not liable for the design of highways and other public ways.' Liability for a sign or signal exists only for its 'absence, condition, or malfunction' not corrected within a reasonable time after actual or constructive notice. Recovery is capped at $300,000 per person / $600,000 per occurrence (§ 15-78-120). Both I-26 and Ashley Phosphate Road (S-75) are SCDOT-maintained routes.",
+   "sourceName": "S.C. Code §§ 15-78-60(15), 15-78-120 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Materially wrong: design is expressly immune. Replace: \"Government liability: If a malfunctioning or defective traffic signal contributed to your crash and the responsible agency knew or should have known and did not fix it, SCDOT or another agency may be liable under the South Carolina Tort Claims Act (S.C. Code § 15-78-60(15)) — highway design itself is immune, and damages are capped.\" Drop 'the city' unless the city maintains the signal (both roads are state routes; maintenance agreements not verified)."
+  },
+  {
+   "surface": "body",
+   "claim": "but these claims have their own deadline: suit within two years, or three years if a verified claim is filed with the agency within one year (S.C. Code §§ 15-78-110, 15-78-80)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code §§ 15-78-110, 15-78-80(d) (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified: § 15-78-110 two years, three if the claimant first filed a claim; § 15-78-80(d) 'If filed, the claim must be received within one year after the loss was or should have been discovered.' Runs from when the loss was or should have been discovered. Filing the claim is optional ('may be filed')."
+  },
+  {
+   "surface": "body",
+   "claim": "No upfront cost: Roden Law works on contingency — you pay nothing unless we recover compensation for your injuries",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Firm policy",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Firm fee representation — owner to confirm wording matches the fee agreement (case costs)."
+  },
+  {
+   "surface": "body",
+   "claim": "Roden Law's North Charleston office on Spruill Avenue has handled dozens of cases from the Ashley Phosphate/I-26 intersection.",
+   "verdict": "update",
+   "currentValue": "North Charleston office: 2703 Spruill Ave, North Charleston, SC 29405.",
+   "sourceName": "client.json (firm identity record)",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Office/street verified from client.json. 'Handled dozens of cases from the Ashley Phosphate/I-26 intersection' is a firm-experience number that cannot be verified — owner to confirm or remove (SC RPC 7.1 misleading-communication risk). Fallback: \"Roden Law's North Charleston office on Spruill Avenue handles crash cases from Ashley Phosphate Road and I-26.\""
+  },
+  {
+   "surface": "body",
+   "claim": "Call (843) 612-6561",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "client.json (firm identity record)",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Firm's listed North Charleston office line — keep."
+  },
+  {
+   "surface": "excerpt",
+   "claim": "A Post and Courier analysis of 2011–2015 collision data recorded 629 crashes at the Ashley Phosphate Road and I-26 intersection in North Charleston — about one every three days, the most of any intersection in the tri-county area and second in the state.",
+   "verdict": "update",
+   "currentValue": "2024 (latest SCDPS edition): I-26 at S-75 (Ashley Phosphate Road) had 174 collisions — 0 fatal, 1 serious-injury, 25 other-injury, 148 property-damage-only; 0 killed, 1 seriously injured, 38 other injuries (39 injured). Rank: 2nd in Charleston County behind I-26 at US-78 (190 collisions, 0 fatal); Berkeley's top intersection was I-26 at S-62/College Park Rd (113) and Dorchester's was US-78 at SC-165 (56), so 2nd in the tri-county. Statewide, 5th: behind I-85 at S-492 (Greenville, 277), I-20 at US-176 (Richland, 224), I-85 at SC-290 (Spartanburg, 199) and I-26 at US-78 (Charleston, 190). ",
+   "sourceName": "Post and Courier, Robert Behre, \"What are the tri-county's 10 most dangerous intersections?\" (Mar. 4, 2017; updated Sept. 14, 2020), citing preliminary SCDPS data — Internet Archive capture of 2025-03-29",
+   "sourceUrl": "https://web.archive.org/web/20250329105910/https://www.postandcourier.com/charleston_sc/what-are-the-tri-countys-10-most-dangerous-intersections/article_74606f92-e1a5-11e6-83b4-4f76f1994275.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate for 2011–2015 but reads as current. Suggested: \"...the most in the tri-county area and second in the state. In 2024 it still logged 174 collisions, second in the tri-county (SCDPS). Here's why, and what your rights are if you're injured there.\" Excerpt publishes as the Article schema description."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "A Post and Courier analysis of 2011–2015 collision data recorded 629 crashes at Ashley Phosphate Road and I-26 in North Charleston — about one every three days, more than at any other intersection in the tri-county area and second in the state behind I-20 at US-176 in Columbia.",
+   "verdict": "update",
+   "currentValue": "2024 (latest SCDPS edition): I-26 at S-75 (Ashley Phosphate Road) had 174 collisions — 0 fatal, 1 serious-injury, 25 other-injury, 148 property-damage-only; 0 killed, 1 seriously injured, 38 other injuries (39 injured). Rank: 2nd in Charleston County behind I-26 at US-78 (190 collisions, 0 fatal); Berkeley's top intersection was I-26 at S-62/College Park Rd (113) and Dorchester's was US-78 at SC-165 (56), so 2nd in the tri-county. Statewide, 5th: behind I-85 at S-492 (Greenville, 277), I-20 at US-176 (Richland, 224), I-85 at SC-290 (Spartanburg, 199) and I-26 at US-78 (Charleston, 190). ",
+   "sourceName": "Post and Courier, Robert Behre, \"What are the tri-county's 10 most dangerous intersections?\" (Mar. 4, 2017; updated Sept. 14, 2020), citing preliminary SCDPS data — Internet Archive capture of 2025-03-29",
+   "sourceUrl": "https://web.archive.org/web/20250329105910/https://www.postandcourier.com/charleston_sc/what-are-the-tri-countys-10-most-dangerous-intersections/article_74606f92-e1a5-11e6-83b4-4f76f1994275.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Historical figures verified; add the 2024 line: \"In 2024 it recorded 174 collisions — second in the tri-county behind I-26 at US-78 and fifth statewide (SCDPS 2024 Fact Book).\""
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "None of those 629 crashes was fatal, though 181 people were injured.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Post and Courier, Robert Behre, \"What are the tri-county's 10 most dangerous intersections?\" (Mar. 4, 2017; updated Sept. 14, 2020), citing preliminary SCDPS data — Internet Archive capture of 2025-03-29",
+   "sourceUrl": "https://web.archive.org/web/20250329105910/https://www.postandcourier.com/charleston_sc/what-are-the-tri-countys-10-most-dangerous-intersections/article_74606f92-e1a5-11e6-83b4-4f76f1994275.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified. 2024: 0 killed, 39 injured (SCDPS)."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "High-speed off-ramp traffic, complex left turns, and commercial density are the primary factors.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "No source",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "No source ranks causes at this interchange. SCDOT points to high volumes and conflicting turning movements; SCDPS lists failure to yield as Charleston County's top factor. Suggested: \"Heavy volume — about 170,000 vehicles a day on I-26 next to the interchange (SCDOT, 2025) — and constant turning movements are the main contributors.\""
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Under S.C. Code § 15-3-530, injured victims have 3 years to file suit.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 15-3-530",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Government entities like SCDOT may share liability for design deficiencies under the South Carolina Tort Claims Act.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 15-78-60(15)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Contradicted: design of highways is immune. Replace: \"Government entities like SCDOT may share liability for a malfunctioning or defective traffic signal they failed to fix after notice — but not for highway design — under the South Carolina Tort Claims Act, which has a two-year deadline (S.C. Code §§ 15-78-60(15), 15-78-110).\""
+  },
+  {
+   "surface": "faq:0",
+   "claim": "A Post and Courier analysis of 2011–2015 collision data recorded 629 crashes at the Ashley Phosphate Road and I-26 intersection — roughly one every three days. That was more than at any other intersection in Berkeley, Charleston or Dorchester counties, and second in the state behind I-20 at US-176 in Columbia.",
+   "verdict": "update",
+   "currentValue": "2024 (latest SCDPS edition): I-26 at S-75 (Ashley Phosphate Road) had 174 collisions — 0 fatal, 1 serious-injury, 25 other-injury, 148 property-damage-only; 0 killed, 1 seriously injured, 38 other injuries (39 injured). Rank: 2nd in Charleston County behind I-26 at US-78 (190 collisions, 0 fatal); Berkeley's top intersection was I-26 at S-62/College Park Rd (113) and Dorchester's was US-78 at SC-165 (56), so 2nd in the tri-county. Statewide, 5th: behind I-85 at S-492 (Greenville, 277), I-20 at US-176 (Richland, 224), I-85 at SC-290 (Spartanburg, 199) and I-26 at US-78 (Charleston, 190). ",
+   "sourceName": "Post and Courier, Robert Behre, \"What are the tri-county's 10 most dangerous intersections?\" (Mar. 4, 2017; updated Sept. 14, 2020), citing preliminary SCDPS data — Internet Archive capture of 2025-03-29",
+   "sourceUrl": "https://web.archive.org/web/20250329105910/https://www.postandcourier.com/charleston_sc/what-are-the-tri-countys-10-most-dangerous-intersections/article_74606f92-e1a5-11e6-83b4-4f76f1994275.html",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. Historical figures verified; add the current year so the answer is not stale: \"In 2024, the latest state data, it recorded 174 collisions — about one every two days — second in the tri-county and fifth statewide (SCDPS).\""
+  },
+  {
+   "surface": "faq:0",
+   "claim": "Worth noting alongside the frequency: none of those 629 crashes was fatal, though 181 people were injured.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Post and Courier, Robert Behre, \"What are the tri-county's 10 most dangerous intersections?\" (Mar. 4, 2017; updated Sept. 14, 2020), citing preliminary SCDPS data — Internet Archive capture of 2025-03-29",
+   "sourceUrl": "https://web.archive.org/web/20250329105910/https://www.postandcourier.com/charleston_sc/what-are-the-tri-countys-10-most-dangerous-intersections/article_74606f92-e1a5-11e6-83b4-4f76f1994275.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified."
+  },
+  {
+   "surface": "faq:1",
+   "claim": "Five primary factors: vehicles exiting I-26 at highway speed encountering a red light within a short distance, complex left-turn movements across multiple lanes, commercial density on all four corners generating constant turning conflicts, long signal cycles that encourage red-light running, and traffic volume that far exceeds the intersection's design capacity.",
+   "verdict": "update",
+   "currentValue": "SCDOT (Board 3): high volumes and numerous conflicting turning movements; Ashley Phosphate volumes exceed the recommended level for two-way left-turn lanes. I-26: 170,500 vehicles/day (2025 AADT).",
+   "sourceName": "SCDOT Ashley Phosphate Road Safety Improvements, Board 3; SCDOT Average Daily Traffic for Charleston County, 2025 AADT (generated 2026-03-13), stations 2189, 2191, 440; 2024 sheet for comparison",
+   "sourceUrl": "https://info2.scdot.org/projects/ViewerFiles/Board%203.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. Drop the unsourced 'long signal cycles that encourage red-light running' and 'on all four corners'. Suggested: \"Several factors: vehicles leaving I-26 meet a signal shortly after exiting, left turns cross three lanes of opposing traffic, businesses along Ashley Phosphate Road create constant turning conflicts, and volume is heavy — about 170,000 vehicles a day on I-26 beside the interchange and 65,000 on Ashley Phosphate Road (SCDOT, 2025).\""
+  },
+  {
+   "surface": "faq:2",
+   "claim": "Under the South Carolina Tort Claims Act, the city of North Charleston and SCDOT may bear liability for intersection design deficiencies they knew or should have known about.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 15-78-60(15)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. Contradicted: the TCA bars liability for highway design; the notice standard applies to the 'absence, condition, or malfunction' of signs and signals. Replace: \"Under the South Carolina Tort Claims Act, SCDOT or another responsible agency may be liable when a traffic signal or sign was missing, defective or malfunctioning and was not fixed within a reasonable time after the agency knew or should have known — but agencies are not liable for the design of highways (S.C. Code § 15-78-60(15)).\""
+  },
+  {
+   "surface": "faq:2",
+   "claim": "Given the well-documented crash data at Ashley Phosphate/I-26, a strong argument exists that the responsible agencies have been on notice of the danger.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 15-78-60(15)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Crash-frequency notice does not overcome design immunity; 'strong argument' overstates. Delete."
+  },
+  {
+   "surface": "faq:2",
+   "claim": "These claims require strict notice compliance — contact an attorney promptly.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "S.C. Code §§ 15-78-80, 15-78-110, 15-78-120",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+   "retrievedAt": "2026-10-02",
+   "note": "No pre-suit notice is mandatory: a verified claim 'may be filed' (within one year) and extends the deadline to three years; otherwise suit within two years. Replace: \"These claims have a shorter deadline — two years, or three if a verified claim is filed with the agency within one year — and damages are capped, so contact an attorney promptly.\""
+  },
+  {
+   "surface": "faq:3",
+   "claim": "Call 911 for a police report, seek immediate medical attention at Trident Medical Center, photograph the scene (including signal positions and vehicle locations), get witness contact information, do not give recorded statements to insurance companies, and contact a personal injury attorney who can preserve traffic camera footage and signal timing data before it is overwritten.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Trident Health — Trident Hospital location page",
+   "sourceUrl": "https://www.tridenthealthsystem.com/locations/trident-hospital",
+   "retrievedAt": "2026-10-02",
+   "note": "Advice; Trident is the nearest trauma center (Level II). Optional: 'at Trident Medical Center or the nearest emergency room' so the FAQ does not imply a single required hospital. If the post adds report advice, the SC crash report is form TR-310 (not FR-10)."
+  }
+ ],
+ "recommendedEdits": [
+  "Title/slug (owner decision; not patcher-editable): the present-tense superlative held for 2011–2015 only — in 2024 the interchange was #2 in the tri-county (174 vs 190 at I-26/US-78) and #5 statewide; 'deadliest' is false (no deaths in either period). Suggested title: \"Why Ashley Phosphate & I-26 Is One of the Tri-County's Highest-Crash Intersections\". Slug change needs a 301.",
+  "Intro + Numbers list: keep the 2011–2015 P&C figures with explicit dating ('ranked second for 2011–2015'); replace the lone 'Injury severity' bullet with the 2024 SCDPS line (174 collisions, 0 killed, 39 injured, 148 PDO; #2 tri-county, #5 statewide). Delete the invented '7-10 days' benchmark sentences.",
+  "'so deadly' (intro sentence and H2 '5 Reasons This Intersection Is So Deadly') → 'so crash-prone' / 'Sees So Many Crashes'.",
+  "Reason 1/2/4: drop '60-70 mph', 'within a few hundred feet', 'near-highway velocity', '45+ mph'; replace reason 4 paragraph (2–3 minute cycles, unnamed study, 50 mph) with the SCDPS failure-to-yield fact or delete. Reason 3: 'on every side'/'All Four Corners' → 'around the interchange'.",
+  "Reason 5: population 'over 131,000 (2.02%)' → 'about 129,000 in 2025 (Census)'; 'over 100,000 vehicles per day' → 'about 170,000 vehicles a day on I-26 just east of the interchange, 65,000 on Ashley Phosphate Road (SCDOT, 2025)'.",
+  "Fixes list: red-light camera bullet → FHWA ~25% fewer right-angle / ~15% more rear-end, and SC bars local camera ticketing (§ 56-5-710). Replace 'Grade separation' bullet (already an interchange) with the SCDOT raised-median project (groundbreaking July 2025). Replace 'the question is whether they will act' with SCDOT's 2025 project.",
+  "Legal: Government-liability bullet, Key Takeaways TCA sentence and FAQ 3 — highway design is immune under § 15-78-60(15); liability only for signal/sign absence/malfunction not corrected after notice; caps $300k/$600k (§ 15-78-120). Delete FAQ 3 'strong argument ... on notice'; replace 'strict notice compliance' with the 2-/3-year deadline. Keep § 15-78-110/-80 deadline sentence (accurate).",
+  "Owner confirm: 'handled dozens of cases from the Ashley Phosphate/I-26 intersection' and 'handle crash cases from this intersection regularly' (firm-experience claims)."
+ ],
+ "statuteCitations": [
+  {
+   "section": "S.C. Code § 15-3-530",
+   "name": "Three-year limitation: (5) personal injury; (6) wrongful death from date of death",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "section": "S.C. Code § 15-3-40",
+   "name": "Minors — tolling during minority, no more than one year after age 18 (applies to Ch. 78 actions too; not on page)",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "section": "S.C. Code § 15-78-60(15)",
+   "name": "Tort Claims Act exception — signs/signals liability only after notice; no liability for the design of highways",
+   "url": "https://www.scstatehouse.gov/code/t15c078.php"
+  },
+  {
+   "section": "S.C. Code § 15-78-80",
+   "name": "Verified claim may be filed; if filed, within one year of discovery of loss",
+   "url": "https://www.scstatehouse.gov/code/t15c078.php"
+  },
+  {
+   "section": "S.C. Code § 15-78-110",
+   "name": "Tort Claims Act limitation — two years, three if a claim was first filed",
+   "url": "https://www.scstatehouse.gov/code/t15c078.php"
+  },
+  {
+   "section": "S.C. Code § 15-78-120",
+   "name": "Tort Claims Act damages caps — $300,000 per person / $600,000 per occurrence",
+   "url": "https://www.scstatehouse.gov/code/t15c078.php"
+  },
+  {
+   "section": "S.C. Code § 15-38-15",
+   "name": "Joint and several liability — a defendant under 50% of total fault pays only its share; 2025 Act 42 (eff. Jan. 1, 2026) compares fault of all defendants and tortfeasors, not just named defendants (not on page; reference)",
+   "url": "https://www.scstatehouse.gov/code/t15c038.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-710(B)",
+   "name": "Local authorities may not issue tickets based on photographic (camera) evidence",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-70(E)",
+   "name": "Photo-evidence citations limited to declared emergencies; in-person service within one hour",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-6160",
+   "name": "Evidence of a traffic conviction is inadmissible in a civil action (not on page; reference)",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)",
+   "name": "Modified comparative fault — recover if less than 51% at fault",
+   "url": "https://www.courtlistener.com/opinion/1265650/nelson-v-concrete-supply-company/"
+  }
+ ],
+ "authoritativeLinks": [
+  {
+   "name": "SCDPS — South Carolina Traffic Collision Fact Book 2024 Edition (latest; county Top 5 intersections: Charleston p. 105, Berkeley p. 101, Dorchester p. 121)",
+   "url": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf"
+  },
+  {
+   "name": "Post and Courier — \"What are the tri-county's 10 most dangerous intersections?\" (Mar. 4, 2017), Internet Archive capture",
+   "url": "https://web.archive.org/web/20250329105910/https://www.postandcourier.com/charleston_sc/what-are-the-tri-countys-10-most-dangerous-intersections/article_74606f92-e1a5-11e6-83b4-4f76f1994275.html"
+  },
+  {
+   "name": "SCDOT — Average Daily Traffic, Charleston County, 2025",
+   "url": "https://www.scdot.org/content/dam/scdot-legacy/travel/pdf/trafficcounts/2025/CHARLESTON.pdf"
+  },
+  {
+   "name": "SCDOT — Traffic Counts index",
+   "url": "https://www.scdot.org/travel/travel-trafficdata.html"
+  },
+  {
+   "name": "SC Revenue and Fiscal Affairs — House Ad Hoc Transportation presentation (Dec. 2025), highest-AADT SCDOT sites 2024 (slide 37)",
+   "url": "https://rfa.sc.gov/sites/default/files/2025-12/RFA%20Presentation%20to%20House%20Ad%20Hoc%20Transportation%2012.2025%20-%20Final%20(Rev).pdf"
+  },
+  {
+   "name": "SCDOT — Ashley Phosphate Road safety improvements groundbreaking (July 11, 2025)",
+   "url": "https://www.scdot.org/inside/SCDOTPress/2025/scdot-hosts-groundbreaking-ceremony-for-ashley-phosphate-road-sa.html"
+  },
+  {
+   "name": "SCDOT — Ashley Phosphate Road Safety Improvements, Board 3 (traffic volumes, turning conflicts)",
+   "url": "https://info2.scdot.org/projects/ViewerFiles/Board%203.pdf"
+  },
+  {
+   "name": "SCDOT Projects Under Development portal (Ashley Phosphate Road Safety Improvements; I-26 Palmetto Commerce Interchange)",
+   "url": "https://projectportal.scdot.gov/"
+  },
+  {
+   "name": "Palmetto Commerce Interchange Environmental Assessment (Exit 209 history; 2005 rebuild to seven lanes)",
+   "url": "https://static1.squarespace.com/static/59c01e98a803bb8494cef12c/t/5cfec5ef7c92bf0001116b84/1560200697998/PCI+EA_compressed.pdf"
+  },
+  {
+   "name": "U.S. Census Bureau — Vintage 2025 city/town population estimates, South Carolina",
+   "url": "https://www2.census.gov/programs-surveys/popest/tables/2020-2025/cities/totals/SUB-IP-EST2025-POP-45.xlsx"
+  },
+  {
+   "name": "FHWA — Safety Evaluation of Red-Light Cameras (FHWA-HRT-05-048)",
+   "url": "https://www.fhwa.dot.gov/publications/research/safety/05048/"
+  },
+  {
+   "name": "Trident Health — Trident Hospital (Level II Trauma Center), 9330 Medical Plaza Dr",
+   "url": "https://www.tridenthealthsystem.com/locations/trident-hospital"
+  }
+ ],
+ "quoteNote": "Claims are quoted from the rendered text with tags stripped and entities decoded (&mdash; → —, &ndash; → –); Key Takeaways quotes span <strong> tags; FAQ answers are quoted from meta.json and publish as FAQPage structured data. Title and slug entries are for the owner — they are not in body.html and the patcher cannot edit them. metaDescription is empty (nothing to verify). Latest data: SCDPS Fact Book 2024 Edition; SCDOT 2025 AADT; Census Vintage 2025. The live Post and Courier URL returned HTTP 429 to both curl and the browser; the 2025-03-29 Internet Archive capture was read in full and is the sourceUrl (the in-body P&C link can stay). Statewide 2024 rank is derived from the 46 county Top-5 tables (exact, since no county's 5th-place intersection exceeded 122). CourtListener (Nelson) reused from the run-4644 pack. Palmetto Commerce Interchange's own site timed out; the contractor page is cited. The body's 'Numbers' <ul> contains only one bullet — earlier bullets appear to have been stripped in a prior edit."
+}
