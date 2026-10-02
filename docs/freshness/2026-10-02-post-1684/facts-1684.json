@@ -1,0 +1,984 @@
+{
+ "postId": 1684,
+ "slug": "is-workers-compensation-an-employee-benefit",
+ "liveUrl": "https://rodenlaw.com/blog/is-workers-compensation-an-employee-benefit/",
+ "jurisdiction": "GA+SC",
+ "researchedAt": "2026-10-02",
+ "verifiedClaims": [
+  {
+   "surface": "body",
+   "claim": "private-industry employers reported approximately 2.8 million nonfatal workplace injuries and illnesses in a recent year",
+   "verdict": "update",
+   "currentValue": "Private industry employers reported 2.5 million nonfatal workplace injuries and illnesses in 2024 (2,488,400 total recordable cases), down 3.1 percent from 2023 and the lowest in the series back to 2003 (BLS SOII news release, January 22, 2026). 2.8 million was the 2022 figure; 2023 was 2.6 million.",
+   "sourceName": "BLS, Employer-Reported Workplace Injuries and Illnesses — 2023-2024 (released 2026-01-22); BLS IIF home 'Latest Numbers'",
+   "sourceUrl": "https://www.bls.gov/news.release/osh.nr0.htm",
+   "retrievedAt": "2026-10-02",
+   "note": "Change to 'private-industry employers reported about 2.5 million nonfatal workplace injuries and illnesses in 2024'. Keep the existing bls.gov/iif/ link (it also shows 2,488,400 for 2024). bls.gov blocks curl and Chrome text extraction; figures read from bls.gov search snippets of the release, the IIF page and the TED article of 2026-03-23."
+  },
+  {
+   "surface": "body",
+   "claim": "Both Georgia and South Carolina require most employers to carry workers' comp coverage",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-2(a) (Justia, 2025 Code); S.C. Code §§ 42-1-150, 42-1-360",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-2/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate — mandatory above the 3-employee (GA) / 4-employee (SC) threshold, subject to the listed exemptions."
+  },
+  {
+   "surface": "body",
+   "claim": "It operates as a \"no-fault\" system, meaning an injured worker does not need to prove that the employer was negligent in order to receive benefits.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-17; S.C. Code § 42-9-60; facts-1650/facts-1652",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-17/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. The only fault-based bars run against the worker: willful misconduct, attempt to injure another, intoxication or drugs (GA § 34-9-17) and intoxication or wilful intent to injure oneself or another (SC § 42-9-60)."
+  },
+  {
+   "surface": "body",
+   "claim": "employees generally give up the right to sue their employer for workplace injuries — a legal framework known as the \"exclusive remedy\" doctrine",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-11(a); S.C. Code § 42-1-540",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. Optional pinpoints: O.C.G.A. § 34-9-11; S.C. Code § 42-1-540 (rights and remedies 'shall exclude all other rights and remedies of such employee ... as against his employer'). Third-party suits are preserved (GA § 34-9-11.1; SC § 42-1-550)."
+  },
+  {
+   "surface": "body",
+   "claim": "The workers' compensation system exists in every state",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "General knowledge; not separately sourced",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate as written (every state has a workers' compensation act). Do not extend it to 'every employer must carry it' — Texas lets private employers opt out."
+  },
+  {
+   "surface": "body",
+   "claim": "Yes — required by state law for qualifying employers",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-2(a); S.C. Code § 42-1-360",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-2/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "No — coverage is automatic for all eligible employees",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "SBWC Law FAQs ('You are covered from the first day on your job'); O.C.G.A. § 34-9-2.1",
+   "sourceUrl": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate for employees. The narrow exception is for owners: in Georgia up to five corporate officers or LLC members may elect out by written certification (O.C.G.A. § 34-9-2.1); in South Carolina sole proprietors and partners are out unless they elect in (S.C. Code § 42-1-130). 'Eligible employees' covers it in the table; see FAQ 1 for the absolute version."
+  },
+  {
+   "surface": "body",
+   "claim": "100% employer-funded",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 42-5-200; SBWC Law FAQs ('an accident insurance program paid by your employer')",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "South Carolina makes it a misdemeanor for an employer to deduct any part of the premium from wages, and any employee agreement to pay is invalid (S.C. Code § 42-5-200). Georgia: SBWC describes the program as paid by the employer; no Georgia premium-deduction statute was located this run — do not cite one."
+  },
+  {
+   "surface": "body",
+   "claim": "Federal law (ERISA) and employer policy",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "29 U.S.C. § 1003(b)(3) (ERISA excludes plans maintained solely to comply with workers' compensation laws) — general knowledge, not fetched",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Reasonable generalisation; ERISA does not govern all traditional benefits (e.g., paid time off) but the contrast with state WC statutes is correct."
+  },
+  {
+   "surface": "body",
+   "claim": "you are automatically covered from your first day on the job, regardless of whether you are full-time, part-time, or seasonal",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "SBWC Law FAQs ('You are covered from the first day on your job'); SC WCC Coverage and Compliance FAQs",
+   "sourceUrl": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. In South Carolina a 'casual' employee — one whose employment is both casual and not in the course of the employer's business — is excluded (S.C. Code §§ 42-1-130, 42-1-360(1)); in Georgia employment 'not in the usual course of trade, business, occupation, or profession of the employer' is excluded (§ 34-9-2(a)(2)). Seasonal work is not casual by itself."
+  },
+  {
+   "surface": "body",
+   "claim": "Under the Georgia Workers' Compensation Act (O.C.G.A. § 34-9-1 et seq.), employers with three or more employees (including part-time and full-time workers) are required to carry workers' compensation insurance.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-2(a)(2) (Justia, 2025 Code, read in Chrome 2026-10-02); SBWC Law FAQs; SBWC provisions sheet ('Number of employees required to come under law: 3')",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-2/",
+   "retrievedAt": "2026-10-02",
+   "note": "The threshold is in § 34-9-2(a)(2): the chapter does not apply to an employer 'that has regularly in service less than three employees in the same business within this state'. SBWC FAQ: 'any business with three or more workers, including regular part-time workers'. Optional: add the pinpoint '(O.C.G.A. § 34-9-2)' and 'regularly employs'."
+  },
+  {
+   "surface": "body",
+   "claim": "The Georgia State Board of Workers' Compensation administers claims and resolves disputes between injured workers and employers or their insurers.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "SBWC Law FAQs (claims decided by an Administrative Law Judge)",
+   "sourceUrl": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "Injured workers must report the injury to their employer within 30 days (O.C.G.A. § 34-9-80)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-80 (facts-1652, facts-1650)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-3/part-1/section-34-9-80/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate: 'No compensation will be payable unless such notice, either oral or written, is given within 30 days after the occurrence of an accident', with exceptions (incapacity, fraud or deceit, employer knowledge, reasonable excuse without prejudice). Notice to the employer — not the tort statute of limitations."
+  },
+  {
+   "surface": "body",
+   "claim": "Claims must be filed within one year from the date of injury or last authorized medical treatment (O.C.G.A. § 34-9-82)",
+   "verdict": "update",
+   "currentValue": "O.C.G.A. § 34-9-82(a): the right to compensation is barred unless a claim is filed with the State Board within one year after injury; if the employer furnished remedial treatment, within one year after the last remedial treatment furnished by the employer; and if weekly income benefits were paid, within two years after the last payment of weekly benefits.",
+   "sourceName": "O.C.G.A. § 34-9-82; SBWC provisions sheet ('1 or 2 yrs'); facts-1652",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-3/part-1/section-34-9-82/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct WC deadline (not the 2-year tort SOL), but incomplete: add the two-year-from-last-income-benefit extension and say 'last remedial treatment furnished by the employer' rather than 'last authorized medical treatment'. Suggested: 'within one year of the injury — or one year from the last medical treatment the employer paid for, or two years from your last weekly income check, whichever is later (O.C.G.A. § 34-9-82)'."
+  },
+  {
+   "surface": "body",
+   "claim": "The employer must post a panel of at least six physicians, and the injured worker chooses the treating physician from that panel — with one change to another doctor on the same list available without anyone's permission (O.C.G.A. § 34-9-201)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "SBWC Law FAQs (panel of physicians); O.C.G.A. § 34-9-201",
+   "sourceUrl": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate for the traditional panel (minimum six doctors, at least one orthopedic physician, no more than two industrial clinics; one change without the employer's permission). The employer may instead post a conformed panel or a certified WC/MCO (SBWC FAQ) — optional 'usually' qualifier."
+  },
+  {
+   "surface": "body",
+   "claim": "Weekly income benefits are calculated at two-thirds of the worker's average weekly wage, subject to a state maximum",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "SBWC provisions sheet (revised 07/01/25, 'No benefit rate changes in 2024/2025'); O.C.G.A. § 34-9-261",
+   "sourceUrl": "https://sbwc.georgia.gov/document/publication/provisionspdf/download",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. Optional: name the maximum — $800/week TTD (injuries on or after July 1, 2023), $533/week TPD."
+  },
+  {
+   "surface": "body",
+   "claim": "Under the South Carolina Workers' Compensation Act (S.C. Code § 42-1-10 et seq.), employers with four or more employees must provide workers' compensation coverage.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code §§ 42-1-150, 42-1-360(2) (scstatehouse.gov); SC WCC Employer FAQs",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. Pinpoint: § 42-1-360(2) exempts an employer with 'regularly employed in service less than four employees' or 'a total annual payroll during the previous calendar year of less than three thousand dollars regardless of the number of persons employed'. Optional: add the $3,000 payroll exemption and cite § 42-1-360."
+  },
+  {
+   "surface": "body",
+   "claim": "The South Carolina Workers' Compensation Commission oversees claims and administers the system.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "SC WCC Injured Worker FAQs",
+   "sourceUrl": "https://wcc.sc.gov/injured-worker-faqs",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "Injured workers must give notice to the employer within 90 days of the accident (S.C. Code § 42-15-20)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 42-15-20 (scstatehouse.gov; facts-1650/1652)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c015.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate: 'no compensation shall be payable unless such notice is given within ninety days after the occurrence of the accident', absent reasonable excuse and no prejudice."
+  },
+  {
+   "surface": "body",
+   "claim": "Claims must be filed within two years from the date of injury (S.C. Code § 42-15-40)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 42-15-40; SC WCC Injured Worker FAQs ('within two years after the accident')",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c015.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate WC deadline. Statute says 'two years after an accident'; for repetitive trauma the two years run from when the worker knew or should have known the injury was compensable (capped at seven years from last exposure). Death claims: Form 52, two years from death."
+  },
+  {
+   "surface": "body",
+   "claim": "The employer selects the authorized treating physician",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "SC WCC Injured Worker FAQs ('your employer has the right to choose your treating doctor'); S.C. Code § 42-15-60",
+   "sourceUrl": "https://wcc.sc.gov/injured-worker-faqs",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "Weekly compensation benefits are calculated at two-thirds of the worker's average weekly wage, subject to the state maximum",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 42-9-10; SC WCC Compensation Rates",
+   "sourceUrl": "https://wcc.sc.gov/claims/compensation-rates",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate (66⅔%). Optional: $1,189.94/week for accidents on or after January 1, 2026 (dollar figure must carry its date range)."
+  },
+  {
+   "surface": "body",
+   "claim": "All reasonable and necessary medical treatment related to the workplace injury is covered, including emergency care, surgery, hospitalization, prescription medications, physical therapy, rehabilitation, and assistive devices.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-200; S.C. Code § 42-15-60",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-6/part-1/section-34-9-200/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate as to scope. The page never claims medical is unlimited in time — do not add that. If a duration is added: Georgia up to 400 weeks from injury for non-catastrophic injuries on/after July 1, 2013 (§ 34-9-200; SBWC provisions sheet); South Carolina while the Commission finds treatment will lessen disability (§ 42-15-60). Must be authorized treatment (SC WCC FAQ: bills from a doctor you choose may not be paid)."
+  },
+  {
+   "surface": "body",
+   "claim": "There is no deductible or copay — the employer's insurer pays 100% of authorized medical costs.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "SBWC provisions sheet ('Medical Allowance: Unlimited'); O.C.G.A. § 34-9-200; S.C. Code § 42-15-60",
+   "sourceUrl": "https://sbwc.georgia.gov/document/publication/provisionspdf/download",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. Optional: Georgia also reimburses mileage to medical appointments ($0.45/mile, Board Rule 203)."
+  },
+  {
+   "surface": "body",
+   "claim": "In Georgia, TTD benefits can last up to 400 weeks.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-261; SBWC provisions sheet",
+   "sourceUrl": "https://sbwc.georgia.gov/document/publication/provisionspdf/download",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate (from date of injury). Optional: '— with no cap for catastrophic injuries (O.C.G.A. § 34-9-261)' and the $800 weekly maximum."
+  },
+  {
+   "surface": "body",
+   "claim": "In South Carolina, TTD benefits continue until you reach maximum medical improvement (MMI) or return to work.",
+   "verdict": "update",
+   "currentValue": "S.C. Code § 42-9-10(A): total disability is paid up to 500 weeks ('In no case may the period covered by the compensation exceed five hundred weeks', except lifetime under (C) for paraplegia, quadriplegia or physical brain damage). MMI alone does not stop TTD: after the first 150 days the carrier may stop only on a § 42-9-260 ground (return to work, or Commission approval after a hearing, typically requested on Form 21 once MMI is reached).",
+   "sourceName": "S.C. Code §§ 42-9-10, 42-9-260 (scstatehouse.gov); facts-1682",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c009.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Same correction class as facts-1682/1702. Rewrite: 'In South Carolina, TTD benefits can last up to 500 weeks and generally continue until you return to work or the Commission approves stopping them — reaching maximum medical improvement (MMI) does not by itself end them (S.C. Code §§ 42-9-10, 42-9-260).'"
+  },
+  {
+   "surface": "body",
+   "claim": "TPD benefits compensate you for the difference between your pre-injury wages and your current earnings.",
+   "verdict": "update",
+   "currentValue": "TPD pays two-thirds (66⅔%) of the difference between pre-injury average weekly wage and current earnings — Georgia capped at $533/week for injuries on or after July 1, 2023, for up to 350 weeks (O.C.G.A. § 34-9-262); South Carolina up to the state maximum for up to 340 weeks (S.C. Code § 42-9-20).",
+   "sourceName": "O.C.G.A. § 34-9-262; S.C. Code § 42-9-20; SBWC provisions sheet",
+   "sourceUrl": "https://sbwc.georgia.gov/document/publication/provisionspdf/download",
+   "retrievedAt": "2026-10-02",
+   "note": "As written it implies the full wage gap is paid. Change to 'TPD benefits pay two-thirds of the difference between your pre-injury wages and your current earnings, up to a weekly cap.'"
+  },
+  {
+   "surface": "body",
+   "claim": "PPD benefits compensate for the permanent loss based on an impairment rating assigned by a physician.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-263; S.C. Code § 42-9-30; SBWC provisions sheet",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-7/section-34-9-263/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. Georgia ratings use the AMA Guides 5th ed. and a body-part schedule (e.g., arm 225 weeks, whole body 300); South Carolina schedule § 42-9-30 (arm 220 weeks). In Georgia PPD is not payable while TTD/TPD is owed (§ 34-9-263(b)(2))."
+  },
+  {
+   "surface": "body",
+   "claim": "PTD benefits provide ongoing wage replacement.",
+   "verdict": "update",
+   "currentValue": "Georgia has no separate PTD benefit: severe cases are designated catastrophic (O.C.G.A. § 34-9-200.1(g)) and TTD then continues without the 400-week cap (§ 34-9-261). South Carolina: total and permanent disability is paid up to 500 weeks; lifetime only for paraplegia, quadriplegia or physical brain damage (S.C. Code § 42-9-10(A), (C)).",
+   "sourceName": "O.C.G.A. §§ 34-9-261, 34-9-200.1; S.C. Code § 42-9-10; facts-1682",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c009.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'benefits can continue long-term — in Georgia without the usual 400-week cap once the injury is designated catastrophic (O.C.G.A. § 34-9-261), and in South Carolina for up to 500 weeks, or for life in cases of paraplegia, quadriplegia or physical brain damage (S.C. Code § 42-9-10).'"
+  },
+  {
+   "surface": "body",
+   "claim": "workers' compensation provides death benefits to surviving dependents, including a portion of the deceased worker's average weekly wage and reasonable funeral expenses.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "SBWC Law FAQs; SBWC provisions sheet (O.C.G.A. § 34-9-265); S.C. Code § 42-9-290",
+   "sourceUrl": "https://sbwc.georgia.gov/document/publication/provisionspdf/download",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate in substance. If the editor adds figures: Georgia — two-thirds of AWW up to $800/week (death on or after July 1, 2023), a widowed spouse with no children limited to $320,000 total, burial expense up to $7,500 (O.C.G.A. § 34-9-265; SBWC). South Carolina — 66⅔% of AWW for 500 weeks from injury, burial expenses up to $12,000 (S.C. Code § 42-9-290(A), scstatehouse.gov text 'up to but not exceeding twelve thousand dollars' — NOT $12,500). 'Reasonable funeral expenses' should become 'funeral expenses up to a statutory cap'."
+  },
+  {
+   "surface": "body",
+   "claim": "Both states may provide vocational rehabilitation services — including job retraining, education, and placement assistance — when an injured worker cannot return to their previous occupation due to permanent restrictions.",
+   "verdict": "update",
+   "currentValue": "Georgia: rehabilitation is mandatory only for catastrophic injuries (O.C.G.A. § 34-9-200.1); otherwise by agreement (SBWC FAQ: 'You may also be entitled to medical and vocational rehabilitation'). South Carolina's Workers' Compensation Act contains no vocational-rehabilitation benefit; retraining is available through the SC Vocational Rehabilitation Department, outside workers' comp.",
+   "sourceName": "SBWC Law FAQs; O.C.G.A. § 34-9-200.1; facts-1682",
+   "sourceUrl": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs",
+   "retrievedAt": "2026-10-02",
+   "note": "Same finding as facts-1682. Rewrite: 'Georgia's workers' comp system must provide rehabilitation services for catastrophic injuries (O.C.G.A. § 34-9-200.1) and may provide them in other cases; South Carolina's act has no vocational-rehabilitation benefit, but the state's Vocational Rehabilitation Department offers retraining.' GVRA https://gvs.georgia.gov/ ; SCVRD https://www.scvrd.net/"
+  },
+  {
+   "surface": "body",
+   "claim": "Covered in both Georgia and South Carolina",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-2; S.C. Code § 42-1-360",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-2/",
+   "retrievedAt": "2026-10-02",
+   "note": "Full-time employees of covered employers."
+  },
+  {
+   "surface": "body",
+   "claim": "Covered — there is no minimum hours requirement",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "SBWC Law FAQs ('including regular part-time workers'); SC WCC Coverage and Compliance FAQs ('Part-time workers and family members are counted as employees')",
+   "sourceUrl": "https://wcc.sc.gov/coverage-and-compliance-faqs-0",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate in both states."
+  },
+  {
+   "surface": "body",
+   "claim": "Generally covered if employed by a qualifying employer",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-2 annotations (seasonal employees 'regularly in service'); SC WCC archived coverage requirements",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-2/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. SC excludes casual employment not in the course of the employer's business (§ 42-1-360(1))."
+  },
+  {
+   "surface": "body",
+   "claim": "Typically NOT covered, though misclassification disputes are common — if you are treated like an employee (set schedule, employer-provided tools, direct supervision), you may qualify regardless of how you are classified on paper",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-2(e) (Justia, 2025 Code); SC WCC Employer FAQs ('possible for an employer to pay workers via 1099 and still be required to maintain ... coverage')",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-2/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. Georgia's statutory test: an independent contractor must have a contract intending that relationship, the right to control the time, manner and method of the work, and be paid per job or unit rather than salary/hourly; anyone not meeting all three 'shall be considered an employee' unless an ALJ finds otherwise (§ 34-9-2(e)). South Carolina uses the right-to-control test. Statutory carve-outs: GA licensed real-estate salespersons with IC contracts, certain newspaper carriers (§ 34-9-2(a), (d)); SC commission real-estate agents and owner-operator truck drivers (§ 42-1-360(7), (9))."
+  },
+  {
+   "surface": "body",
+   "claim": "Exempt under certain conditions in both states",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-2(a)(2); S.C. Code § 42-1-360(4)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-2/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. Georgia: the chapter does not apply 'to farm laborers or domestic servants' (§ 34-9-2(a)(2)) unless employer elects in; South Carolina: agricultural employees are exempt unless the employer elects in (§ 42-1-360(4), § 42-1-380). 'Certain conditions' = the employee's job must actually be farm labor (status of the employee, Lumber City Egg Marketers v. Piercy)."
+  },
+  {
+   "surface": "body",
+   "claim": "May be exempt depending on the number of employees",
+   "verdict": "update",
+   "currentValue": "Georgia excludes domestic servants outright, regardless of how many the household employs (O.C.G.A. § 34-9-2(a)(2): 'nor to farm laborers or domestic servants'). South Carolina has no domestic-worker exemption; a household is covered only if it regularly employs four or more (§ 42-1-360(2)) and the work is not casual.",
+   "sourceName": "O.C.G.A. § 34-9-2(a)(2) (Justia, 2025 Code); S.C. Code § 42-1-360",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-2/",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'Excluded in Georgia (O.C.G.A. § 34-9-2); in South Carolina, covered only if the household regularly employs four or more workers.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Covered under the Federal Employees' Compensation Act (FECA), not state workers' comp",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 42-1-360(8) ('a federal employee in this State'); FECA, 5 U.S.C. § 8101 et seq.",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. Optional additions to the list: railroad workers (FELA, 45 U.S.C. § 51 et seq. — excluded by O.C.G.A. § 34-9-2(b) and S.C. Code § 42-1-360(5)) and longshore/harbor workers (LHWCA)."
+  },
+  {
+   "surface": "body",
+   "claim": "the injury or illness must be work-related — meaning it occurred during the course and scope of employment",
+   "verdict": "update",
+   "currentValue": "Both states require an 'injury by accident arising out of and in the course of' employment (O.C.G.A. § 34-9-1(4); S.C. Code § 42-1-160(A)). 'Arising out of' (causal link to the work) and 'in the course of' (time, place, circumstances) must both be met. 'Course and scope' is the respondeat-superior/tort phrase.",
+   "sourceName": "O.C.G.A. § 34-9-1(4); S.C. Code § 42-1-160(A); facts-1652",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Change to 'meaning it arose out of and in the course of your employment (O.C.G.A. § 34-9-1(4); S.C. Code § 42-1-160)'. Same conjunctive-test finding as facts-1652."
+  },
+  {
+   "surface": "body",
+   "claim": "Carpal tunnel syndrome, tendinitis, and other conditions caused by performing the same motions over time",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code §§ 42-1-172, 42-15-40 (repetitive trauma); Georgia gradual-injury case law (not re-read)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. South Carolina requires repetitive-trauma injuries to be proven by medical evidence and a preponderance standard (§ 42-1-172)."
+  },
+  {
+   "surface": "body",
+   "claim": "Conditions caused by exposure to chemicals, dust, fumes, or other workplace hazards over time",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-280; S.C. Code § 42-11-10",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c011.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. Occupational disease is a separate article in each act with its own elements."
+  },
+  {
+   "surface": "body",
+   "claim": "If your job duties worsen a pre-existing injury or condition, the aggravation may be compensable",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-1(4); S.C. Code § 42-1-160",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-1/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate with 'may'. Georgia covers aggravation only so long as it continues to be a contributing proximate cause of the disability (§ 34-9-1(4))."
+  },
+  {
+   "surface": "body",
+   "claim": "In limited circumstances, PTSD or other psychological conditions caused by workplace trauma may qualify",
+   "verdict": "update",
+   "currentValue": "Georgia: a psychological injury is compensable only if it arose from an accident in which a compensable physical injury was sustained; mental-only injury (e.g., PTSD from witnessing a shooting without being physically hurt) is not compensable (Southwire Co. v. George, 266 Ga. 739 (1996); Abernathy v. City of Albany, 269 Ga. 88 (1998)). South Carolina: mental injury unaccompanied by physical injury is compensable only if the employment conditions were 'extraordinary and unusual in comparison to the normal conditions of the particular employment', proven with medical causation evidence; not if it results from normal personnel actions (S.C. Code § 42-1-160(B)-(C)).",
+   "sourceName": "S.C. Code § 42-1-160(B)-(D) (scstatehouse.gov); Abernathy v. City of Albany (Justia); facts-1650",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+   "retrievedAt": "2026-10-02",
+   "note": "State-specific rewrite: 'In Georgia, a psychological condition qualifies only if it stems from a physical work injury; in South Carolina, a mental injury without a physical injury qualifies only if it was caused by extraordinary and unusual working conditions (S.C. Code § 42-1-160).'"
+  },
+  {
+   "surface": "body",
+   "claim": "Injuries that typically do NOT qualify include those sustained while commuting to or from work (the \"going and coming\" rule), self-inflicted injuries, and injuries resulting from intoxication or violation of company safety policies.",
+   "verdict": "update",
+   "currentValue": "Georgia bars compensation for willful misconduct (including intentionally self-inflicted injury), an attempt to injure another, 'willful failure or refusal to use a safety appliance or perform a duty required by statute', and intoxication or drug use (O.C.G.A. § 34-9-17(a)-(b)). South Carolina bars it only for intoxication or the 'wilful intention of the employee to injure or kill himself or another' (S.C. Code § 42-9-60). In both states the employer bears the burden. Breaking an ordinary company safety rule is not, by itself, a statutory bar in either state.",
+   "sourceName": "O.C.G.A. § 34-9-17; S.C. Code § 42-9-60 (scstatehouse.gov, 'the burden of proof shall be upon such person')",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c009.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Change 'or violation of company safety policies' to 'and, in Georgia, willful refusal to use a required safety device'. Going-and-coming rule and self-inflicted / intoxication bars are accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "Notify your employer as soon as possible — within 30 days in Georgia, within 90 days in South Carolina",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-80; S.C. Code § 42-15-20",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c015.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate notice deadlines (not filing deadlines)."
+  },
+  {
+   "surface": "body",
+   "claim": "Visit a doctor from the employer's approved panel (Georgia) or the employer-selected physician (South Carolina)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "SBWC Law FAQs; SC WCC Injured Worker FAQs",
+   "sourceUrl": "https://wcc.sc.gov/injured-worker-faqs",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. Emergency care is the exception in both states."
+  },
+  {
+   "surface": "body",
+   "claim": "In Georgia, file Form WC-14 with the State Board of Workers' Compensation within one year.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "SBWC Law FAQs ('filing Form WC-14 with the State Board ... within one year from the date of your accident'); O.C.G.A. § 34-9-82",
+   "sourceUrl": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. Optional '(or later in some cases — see § 34-9-82)'."
+  },
+  {
+   "surface": "body",
+   "claim": "In South Carolina, file Form 50 with the Workers' Compensation Commission within two years",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "SC WCC Injured Worker FAQs ('complete a Form 50 ... or a Form 52 ... prior to the 2-year deadline'); S.C. Code § 42-15-40",
+   "sourceUrl": "https://wcc.sc.gov/injured-worker-faqs",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. Form 52 for a death claim. (Form 12A is the employer's first report — not the worker's claim.)"
+  },
+  {
+   "surface": "body",
+   "claim": "Challenge wrongful denials and appeal unfavorable decisions before the workers' comp board or commission",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "SBWC Law FAQs; SC WCC Injured Worker FAQs",
+   "sourceUrl": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. Georgia ALJ then Appellate Division; South Carolina single commissioner then Full Commission."
+  },
+  {
+   "surface": "body",
+   "claim": "Investigate whether a third-party claim may be available against a manufacturer, property owner, or other negligent party in addition to your workers' comp benefits",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-11.1; S.C. Code §§ 42-1-550, 42-1-560",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-11-1/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. The third-party suit runs on the tort statute of limitations (GA 2 years, O.C.G.A. § 9-3-33; SC 3 years, § 15-3-530) — the ONLY place on this page where tort deadlines belong; the comp carrier holds a lien on the recovery."
+  },
+  {
+   "surface": "body",
+   "claim": "Protect you from employer retaliation for filing a claim",
+   "verdict": "update",
+   "currentValue": "South Carolina prohibits discharging or demoting an employee for instituting a workers' comp proceeding in good faith; remedy is lost wages and reinstatement; one-year limitation; employee bears the burden (S.C. Code § 41-1-80). Georgia has no workers' comp retaliation remedy for an at-will employee (Evans v. Bibb Co., 178 Ga. App. 139 (1986)); a firing that is a pretext to avoid benefits can support continued income benefits (Padgett v. Waffle House, 269 Ga. 105 (1998)).",
+   "sourceName": "S.C. Code § 41-1-80 (scstatehouse.gov); Evans v. Bibb Co. (CourtListener); facts-1697",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t41c001.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Change to 'Pursue a retaliation claim in South Carolina if you are fired or demoted for filing (S.C. Code § 41-1-80), and protect your benefits in either state if you lose your job after an injury'."
+  },
+  {
+   "surface": "body",
+   "claim": "you owe nothing unless we secure benefits on your behalf",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Firm claim; SBWC Law FAQs (attorney fees need Board approval, max 25%)",
+   "sourceUrl": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs",
+   "retrievedAt": "2026-10-02",
+   "note": "Firm claim. Optional context: Georgia WC fees over $100 require Board approval and may not exceed 25% (O.C.G.A. § 34-9-108)."
+  },
+  {
+   "surface": "body",
+   "claim": "With offices in Savannah, Charleston, Columbia, and Myrtle Beach",
+   "verdict": "update",
+   "currentValue": "client.json lists six offices: Savannah, Darien (GA); Charleston, North Charleston, Columbia, Myrtle Beach (SC).",
+   "sourceName": "client.json (firm identity record)",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Omits Darien and North Charleston. Either add them (confirm location-page slugs before linking) or soften to 'with offices across coastal Georgia and South Carolina, including ...'. Same finding as facts-1682."
+  },
+  {
+   "surface": "body",
+   "claim": "Charleston workers’ compensation lawyers",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "rodenlaw.com internal link — not fetchable (Cloudflare)",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Internal link /workers-compensation-lawyers/charleston-sc/ not verified this run (rodenlaw.com blocks automated fetches); confirm in the editor."
+  },
+  {
+   "surface": "body",
+   "claim": "1-844-RESULTS",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "client.json",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Phone href tel:1-844-737-8587 is valid per the brief; optional normalisation to tel:+18447378587 to match other posts."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Workers compensation is a legally mandated insurance program — not an optional employee benefit — that provides medical care and wage replacement for work-related injuries.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-2; S.C. Code § 42-1-360; SBWC Law FAQs",
+   "sourceUrl": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. Renders above the article."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Georgia requires coverage for employers with 3+ employees (O.C.G.A. § 34-9-1 et seq.), while South Carolina requires it for 4+ employees (S.C. Code § 42-1-10 et seq.).",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-2(a); S.C. Code § 42-1-360(2)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-2/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. Optional pinpoints: O.C.G.A. § 34-9-2; S.C. Code § 42-1-360 (which also exempts employers with under $3,000 annual payroll)."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Benefits include TTD, TPD, PPD, medical treatment, vocational rehabilitation, and death benefits.",
+   "verdict": "update",
+   "currentValue": "Vocational rehabilitation is a workers' comp benefit in Georgia (mandatory for catastrophic injuries, O.C.G.A. § 34-9-200.1) but not under South Carolina's act.",
+   "sourceName": "O.C.G.A. § 34-9-200.1; SBWC Law FAQs; facts-1682",
+   "sourceUrl": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs",
+   "retrievedAt": "2026-10-02",
+   "note": "Change to 'Benefits include TTD, TPD, PPD, medical treatment and death benefits, plus vocational rehabilitation in Georgia catastrophic cases.'"
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Filing deadlines are 1 year in Georgia and 2 years in South Carolina.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-82; S.C. Code § 42-15-40",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-3/part-1/section-34-9-82/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct WC deadlines (not tort SOL). Optional: add the notice deadlines (30 days GA / 90 days SC) — the KT currently omits them, and missing notice bars benefits too."
+  },
+  {
+   "surface": "faq:1",
+   "claim": "Unlike optional benefits like health insurance, workers comp is automatic and cannot be opted out of.",
+   "verdict": "update",
+   "currentValue": "Employees cannot waive coverage, and in South Carolina an employer cannot make them pay for it (S.C. Code § 42-5-200). But in Georgia up to five corporate officers or LLC members may exempt themselves by written certification (O.C.G.A. § 34-9-2.1); in South Carolina sole proprietors and partners are excluded unless they elect in (S.C. Code § 42-1-130).",
+   "sourceName": "O.C.G.A. § 34-9-2.1 (Justia, 2025 Code, read in Chrome); S.C. Code § 42-1-130",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-2-1/",
+   "retrievedAt": "2026-10-02",
+   "note": "Change to 'workers comp is automatic, and employees cannot opt out of it.' FAQPage structured data."
+  },
+  {
+   "surface": "faq:1",
+   "claim": "Both Georgia (O.C.G.A. § 34-9-1 et seq.) and South Carolina (S.C. Code § 42-1-10 et seq.) require qualifying employers to carry coverage.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-2; S.C. Code § 42-1-360",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-2/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate."
+  },
+  {
+   "surface": "faq:2",
+   "claim": "In Georgia, employers with 3 or more employees must carry workers compensation insurance. In South Carolina, the threshold is 4 or more employees.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-2(a)(2); S.C. Code § 42-1-360(2); SBWC Law FAQs; SC WCC Employer FAQs",
+   "sourceUrl": "https://wcc.sc.gov/employer-faqs",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. Optional: 'regularly employs', and the SC $3,000-payroll and agricultural exemptions / GA farm-labor and domestic-servant exclusions."
+  },
+  {
+   "surface": "faq:2",
+   "claim": "Both full-time and part-time workers count toward these thresholds.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "SBWC Law FAQs ('including regular part-time workers'); SC WCC Coverage and Compliance FAQs ('Part-time workers and family members are counted as employees')",
+   "sourceUrl": "https://wcc.sc.gov/coverage-and-compliance-faqs-0",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate in both states."
+  },
+  {
+   "surface": "faq:3",
+   "claim": "temporary total and partial disability benefits (typically two-thirds of average weekly wages)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. §§ 34-9-261, 34-9-262; S.C. Code §§ 42-9-10, 42-9-20",
+   "sourceUrl": "https://sbwc.georgia.gov/document/publication/provisionspdf/download",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate if read as TPD = two-thirds of the wage difference. Optional caps: GA $800 TTD / $533 TPD (injuries on/after July 1, 2023); SC $1,189.94 (accidents on/after Jan. 1, 2026)."
+  },
+  {
+   "surface": "faq:3",
+   "claim": "Workers compensation provides medical benefits covering all authorized treatment",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-200; S.C. Code § 42-15-60",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-6/part-1/section-34-9-200/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate (no duration claimed)."
+  },
+  {
+   "surface": "faq:3",
+   "claim": "permanent partial and total disability benefits, vocational rehabilitation, and death benefits for surviving dependents",
+   "verdict": "update",
+   "currentValue": "Georgia has no separate PTD benefit (catastrophic TTD without the 400-week cap, § 34-9-261); vocational rehabilitation is a Georgia benefit for catastrophic injuries (§ 34-9-200.1) and not part of South Carolina's act.",
+   "sourceName": "O.C.G.A. §§ 34-9-261, 34-9-200.1; S.C. Code § 42-9-10; facts-1682",
+   "sourceUrl": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs",
+   "retrievedAt": "2026-10-02",
+   "note": "Change to 'permanent disability benefits, death benefits for surviving dependents, and — in Georgia catastrophic cases — vocational rehabilitation.' FAQPage structured data."
+  },
+  {
+   "surface": "faq:4",
+   "claim": "In Georgia, you must report the injury within 30 days and file a formal claim within 1 year (O.C.G.A. § 34-9-82).",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. §§ 34-9-80, 34-9-82",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-3/part-1/section-34-9-82/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct WC deadlines. Optional: cite § 34-9-80 for the 30 days and note the § 34-9-82 extensions (one year from last employer-paid treatment, two years from last income benefit)."
+  },
+  {
+   "surface": "faq:4",
+   "claim": "In South Carolina, you must report within 90 days and file within 2 years (S.C. Code § 42-15-40).",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code §§ 42-15-20, 42-15-40",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c015.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct WC deadlines. Optional: cite § 42-15-20 for the 90 days."
+  },
+  {
+   "surface": "faq:5",
+   "claim": "Generally, independent contractors are not covered by workers compensation. However, if you are misclassified as an independent contractor but actually function as an employee (set schedule, employer-provided tools, direct supervision), you may still qualify for benefits.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-2(e); SC WCC Employer FAQs",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-2/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. In Georgia a worker who fails any of the three § 34-9-2(e) criteria 'shall be considered an employee' unless an ALJ decides otherwise."
+  },
+  {
+   "surface": "faq:6",
+   "claim": "Both Georgia and South Carolina prohibit employer retaliation for filing a legitimate workers compensation claim.",
+   "verdict": "drop",
+   "currentValue": "Only South Carolina does: 'No employer may discharge or demote any employee because the employee has instituted or caused to be instituted, in good faith, any proceeding under the South Carolina Workers' Compensation Law' — remedy lost wages and reinstatement, employee's burden, one-year statute of limitations, listed affirmative defenses (S.C. Code § 41-1-80). Georgia has no statutory or common-law retaliatory-discharge remedy for a workers' comp claim; at-will employment controls (Evans v. Bibb Co., 178 Ga. App. 139 (1986)). In Georgia a firing that is a pretext to avoid paying benefits can support continued income benefits (Padgett v. Waffle House, 269 Ga. 105 (1998)).",
+   "sourceName": "S.C. Code § 41-1-80 (scstatehouse.gov); Evans v. Bibb Co. (CourtListener); Padgett v. Waffle House; facts-1697",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t41c001.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Most consequential error on the page — the 'both states' claim is false for Georgia and publishes as FAQPage structured data. Replace the answer: 'In South Carolina, it is illegal to fire or demote you for filing a workers' compensation claim in good faith; you can sue for lost wages and reinstatement, but you must do so within one year (S.C. Code § 41-1-80). Georgia has no equivalent law — most employees can be fired — but losing your job does not necessarily end your benefits, especially if the firing was a pretext to avoid paying them. An attorney can review your options.'"
+  },
+  {
+   "surface": "faq:6",
+   "claim": "If you believe you were terminated or demoted because you filed a claim, an attorney can help you pursue legal remedies in addition to your workers comp benefits.",
+   "verdict": "update",
+   "currentValue": "Accurate for South Carolina (S.C. Code § 41-1-80); in Georgia there is no separate retaliation claim.",
+   "sourceName": "S.C. Code § 41-1-80; Evans v. Bibb Co.",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t41c001.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Fold into the rewrite above; limit 'pursue legal remedies' to South Carolina."
+  },
+  {
+   "surface": "excerpt",
+   "claim": "Workers' compensation is a legally required insurance programme, not an optional perk.",
+   "verdict": "update",
+   "currentValue": "Workers' compensation is a legally required insurance program, not an optional perk.",
+   "sourceName": "Style (US spelling)",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Not a fact error: 'programme' is British spelling; the rest of the page uses 'program'. Publishes as the Article description."
+  },
+  {
+   "surface": "excerpt",
+   "claim": "What Georgia and South Carolina employers must provide.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "No factual claim."
+  },
+  {
+   "surface": "metaDescription",
+   "claim": "",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "metaDescription is empty; not a fact issue. Optional SEO addition, e.g. 'Workers' comp is a legal requirement, not a perk: Georgia employers with 3+ workers and South Carolina employers with 4+ must carry it. Benefits, deadlines and exclusions.'"
+  }
+ ],
+ "recommendedEdits": [
+  "FAQ 6 (FAQPage schema) + body lawyer bullet: drop 'Both Georgia and South Carolina prohibit employer retaliation'. South Carolina only (S.C. Code § 41-1-80: discharge or demotion for a good-faith claim; lost wages + reinstatement; one-year limit). Georgia has no retaliation remedy (Evans v. Bibb Co., 1986); say losing the job need not end benefits (Padgett). Body bullet 'Protect you from employer retaliation for filing a claim' -> state-specific.",
+  "Body 'Injuries That Qualify': mental-health bullet must be state-specific — Georgia requires an accompanying physical injury (Abernathy v. City of Albany, 1998); South Carolina mental-only claims require extraordinary and unusual working conditions (S.C. Code § 42-1-160(B)).",
+  "Body TTD paragraph: 'In South Carolina, TTD benefits continue until you reach MMI or return to work' -> up to 500 weeks (S.C. Code § 42-9-10); MMI alone does not end them — the carrier needs a § 42-9-260 ground / Commission approval.",
+  "Body Georgia deadline bullet: add the § 34-9-82 extension — one year from the last remedial treatment furnished by the employer, or two years from the last weekly income benefit. Keep the 1-year/2-year WC deadlines everywhere; no tort SOL anywhere except the third-party bullet if a deadline is added there (GA 2 yrs § 9-3-33; SC 3 yrs § 15-3-530).",
+  "Vocational rehabilitation (body section, Key Takeaways, FAQ 3): Georgia benefit (mandatory for catastrophic injuries, § 34-9-200.1); not part of South Carolina's act — point SC readers to SCVRD.",
+  "Body 'Who Is Covered': domestic workers -> 'Excluded in Georgia (O.C.G.A. § 34-9-2); in South Carolina covered only if the household regularly employs four or more.'",
+  "Body intro: BLS figure 2.8 million -> 'about 2.5 million nonfatal workplace injuries and illnesses in 2024' (BLS, released Jan. 22, 2026).",
+  "Body 'do NOT qualify' sentence: replace 'violation of company safety policies' with 'and, in Georgia, willful refusal to use a required safety device' (O.C.G.A. § 34-9-17; S.C. Code § 42-9-60 has no safety-rule bar).",
+  "Body: 'course and scope of employment' -> 'arose out of and in the course of your employment (O.C.G.A. § 34-9-1(4); S.C. Code § 42-1-160)'.",
+  "Body TPD: add 'two-thirds of' the wage difference, up to a weekly cap ($533 GA for injuries since July 1, 2023).",
+  "Body PTD: Georgia has no separate PTD benefit (catastrophic designation removes the 400-week cap, § 34-9-261); SC 500 weeks, lifetime only for paraplegia/quadriplegia/physical brain damage (§ 42-9-10(C)).",
+  "FAQ 1: 'cannot be opted out of' -> 'employees cannot opt out' (GA corporate officers/LLC members may exempt themselves, § 34-9-2.1).",
+  "Body death benefits (optional precision): GA up to $800/wk, spouse-only cap $320,000, burial up to $7,500 (§ 34-9-265); SC 500 weeks, burial up to $12,000 (§ 42-9-290) — not $12,500.",
+  "Body offices sentence: add Darien and North Charleston (client.json) or soften.",
+  "Excerpt: 'programme' -> 'program'.",
+  "Optional: add statute pinpoints for coverage thresholds — O.C.G.A. § 34-9-2 and S.C. Code § 42-1-360 (incl. SC $3,000-payroll exemption); add railroad (FELA) and longshore (LHWCA) to the excluded-workers list."
+ ],
+ "statuteCitations": [
+  {
+   "section": "O.C.G.A. § 34-9-2",
+   "name": "Applicability — fewer than three employees regularly in service, farm laborers, domestic servants, railroads excluded; independent-contractor test (e)",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-2/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-2.1",
+   "name": "Corporate officers / LLC members may elect exemption (max five)",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-2-1/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-1",
+   "name": "Definitions — injury 'arising out of and in the course of' employment (4)",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-1/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-11",
+   "name": "Exclusive remedy",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-11/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-11.1",
+   "name": "Third-party actions; employer/insurer lien",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-11-1/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-17",
+   "name": "Grounds for denial — willful misconduct, safety appliance, intoxication/drugs",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-17/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-80",
+   "name": "Notice to employer — 30 days",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-3/part-1/section-34-9-80/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-82",
+   "name": "Claim filing — one year from injury; one year from last employer-furnished treatment; two years from last income benefit",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-3/part-1/section-34-9-82/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-200",
+   "name": "Medical benefits — 400 weeks for non-catastrophic injuries on/after 7/1/2013",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-6/part-1/section-34-9-200/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-200.1",
+   "name": "Catastrophic injury; rehabilitation",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-6/part-1/section-34-9-200-1/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-201",
+   "name": "Panel of physicians; one change",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-6/part-1/section-34-9-201/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-261",
+   "name": "TTD — 2/3 AWW, $800 max (7/1/2023+), 400 weeks except catastrophic",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-7/section-34-9-261/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-262",
+   "name": "TPD — 2/3 wage difference, $533 max, 350 weeks",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-7/section-34-9-262/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-263",
+   "name": "PPD — schedule, AMA Guides",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-7/section-34-9-263/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-265",
+   "name": "Death benefits — $800/wk, spouse-only $320,000, burial $7,500",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-7/section-34-9-265/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-280",
+   "name": "Occupational disease",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-8/part-1/section-34-9-280/"
+  },
+  {
+   "section": "S.C. Code § 42-1-130",
+   "name": "'Employee' — casual employment excluded; sole proprietors/partners may elect in",
+   "url": "https://www.scstatehouse.gov/code/t42c001.php"
+  },
+  {
+   "section": "S.C. Code § 42-1-150",
+   "name": "'Employment' — four or more regularly employed",
+   "url": "https://www.scstatehouse.gov/code/t42c001.php"
+  },
+  {
+   "section": "S.C. Code § 42-1-160",
+   "name": "Injury by accident arising out of and in the course of employment; mental-only injury (B)-(D)",
+   "url": "https://www.scstatehouse.gov/code/t42c001.php"
+  },
+  {
+   "section": "S.C. Code § 42-1-360",
+   "name": "Exemptions — casual; <4 employees or <$3,000 payroll; agricultural; railroads; federal employees; real-estate agents; owner-operators",
+   "url": "https://www.scstatehouse.gov/code/t42c001.php"
+  },
+  {
+   "section": "S.C. Code § 42-1-540",
+   "name": "Exclusive remedy",
+   "url": "https://www.scstatehouse.gov/code/t42c001.php"
+  },
+  {
+   "section": "S.C. Code § 42-5-200",
+   "name": "Employee may not pay any portion of premium; wage deduction a misdemeanor",
+   "url": "https://www.scstatehouse.gov/code/t42c005.php"
+  },
+  {
+   "section": "S.C. Code § 42-9-10",
+   "name": "Total disability — 66 2/3%, 500 weeks; lifetime (C)",
+   "url": "https://www.scstatehouse.gov/code/t42c009.php"
+  },
+  {
+   "section": "S.C. Code § 42-9-20",
+   "name": "Partial disability — 340 weeks",
+   "url": "https://www.scstatehouse.gov/code/t42c009.php"
+  },
+  {
+   "section": "S.C. Code § 42-9-30",
+   "name": "Scheduled losses",
+   "url": "https://www.scstatehouse.gov/code/t42c009.php"
+  },
+  {
+   "section": "S.C. Code § 42-9-60",
+   "name": "Intoxication / wilful intent to injure; burden on party asserting",
+   "url": "https://www.scstatehouse.gov/code/t42c009.php"
+  },
+  {
+   "section": "S.C. Code § 42-9-260",
+   "name": "Terminating temporary disability",
+   "url": "https://www.scstatehouse.gov/code/t42c009.php"
+  },
+  {
+   "section": "S.C. Code § 42-9-290",
+   "name": "Death benefits — 500 weeks; burial up to $12,000",
+   "url": "https://www.scstatehouse.gov/code/t42c009.php"
+  },
+  {
+   "section": "S.C. Code § 42-11-10",
+   "name": "Occupational disease",
+   "url": "https://www.scstatehouse.gov/code/t42c011.php"
+  },
+  {
+   "section": "S.C. Code §§ 42-15-20, 42-15-40",
+   "name": "Notice within 90 days; claim within two years",
+   "url": "https://www.scstatehouse.gov/code/t42c015.php"
+  },
+  {
+   "section": "S.C. Code § 42-15-60",
+   "name": "Medical treatment",
+   "url": "https://www.scstatehouse.gov/code/t42c015.php"
+  },
+  {
+   "section": "S.C. Code § 41-1-80",
+   "name": "Retaliatory discharge/demotion for WC claim — lost wages, reinstatement, one-year limit",
+   "url": "https://www.scstatehouse.gov/code/t41c001.php"
+  }
+ ],
+ "authoritativeLinks": [
+  {
+   "name": "SBWC — Workers' Compensation Law FAQs (3+ workers incl. regular part-time; covered from day one; WC-14 within one year; panel of six; $800/$533; death $320,000 spouse cap)",
+   "url": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs"
+  },
+  {
+   "name": "SBWC — Summary of Workers' Compensation Provisions (revised 07/01/25; 'No benefit rate changes in 2024/2025'; burial $7,500; 3 employees)",
+   "url": "https://sbwc.georgia.gov/document/publication/provisionspdf/download"
+  },
+  {
+   "name": "SC WCC — Employer FAQs (4+ employees; part-time and family members counted; exemptions)",
+   "url": "https://wcc.sc.gov/employer-faqs"
+  },
+  {
+   "name": "SC WCC — Coverage and Compliance FAQs (part-time workers counted)",
+   "url": "https://wcc.sc.gov/coverage-and-compliance-faqs-0"
+  },
+  {
+   "name": "SC WCC — Injured Worker FAQs (Form 50/52 within two years; employer chooses the doctor; commissioner hearing)",
+   "url": "https://wcc.sc.gov/injured-worker-faqs"
+  },
+  {
+   "name": "SC WCC — Compensation Rates ($1,189.94 for accidents on/after Jan. 1, 2026)",
+   "url": "https://wcc.sc.gov/claims/compensation-rates"
+  },
+  {
+   "name": "BLS — Employer-Reported Workplace Injuries and Illnesses 2023-2024 (2.5 million in 2024; released 2026-01-22)",
+   "url": "https://www.bls.gov/news.release/osh.nr0.htm"
+  },
+  {
+   "name": "BLS — Injuries, Illnesses, and Fatalities home (2,488,400 total recordable cases in 2024)",
+   "url": "https://www.bls.gov/iif/"
+  },
+  {
+   "name": "Evans v. Bibb Co., 178 Ga. App. 139 (1986) — no Georgia retaliatory-discharge claim",
+   "url": "https://www.courtlistener.com/opinion/1391565/evans-v-bibb-company/"
+  },
+  {
+   "name": "Padgett v. Waffle House, 269 Ga. 105 (1998)",
+   "url": "https://www.courtlistener.com/opinion/1329191/padgett-v-waffle-house-inc/"
+  },
+  {
+   "name": "Abernathy v. City of Albany, 269 Ga. 88 (1998) — Georgia mental-only injury not compensable",
+   "url": "https://law.justia.com/cases/georgia/supreme-court/1998/s97a2019-1.html"
+  },
+  {
+   "name": "Georgia Vocational Rehabilitation Agency",
+   "url": "https://gvs.georgia.gov/"
+  },
+  {
+   "name": "South Carolina Vocational Rehabilitation Department",
+   "url": "https://www.scvrd.net/"
+  }
+ ],
+ "quoteNote": "Body claims are quoted from the rendered text (tags stripped, entities decoded); several span inline <strong> tags in body.html (e.g. the Georgia/South Carolina threshold sentences, the 400-weeks and MMI sentences, list-item lead-ins) and match exactly once tags are stripped. FAQ claims quote the answer text in meta.json; surface 'faq:N' is the Nth FAQ. Justia statute URLs reuse sibling packs except §§ 34-9-2 and 34-9-2.1 (read in Chrome 2026-10-02, no challenge). bls.gov returns 403 to curl and blocks Chrome text extraction; its figures were read from bls.gov search snippets."
+}

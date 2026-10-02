@@ -1,0 +1,321 @@
+{
+ "postId": 1849,
+ "slug": "gym-injury-liability",
+ "liveUrl": "https://rodenlaw.com/blog/gym-injury-liability/",
+ "jurisdiction": "GA+SC",
+ "researchedAt": "2026-10-02",
+ "verifiedClaims": [
+  {
+   "surface": "body",
+   "claim": "Yet not every gym injury is grounds for a claim against the establishment.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Lovelace v. Figure Salon, Inc., 179 Ga. App. 51 (1986) (CourtListener, browser-verified)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1324770/lovelace-v-figure-salon-inc/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate: a member assumes the risks inherent in exercise, and a valid release can bar even negligence claims (Lovelace)."
+  },
+  {
+   "surface": "body",
+   "claim": "Learn when you may and may not be able to file a claim against a gym’s insurance company.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-3-1 (Justia, browser-verified in facts-1650)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-3/article-1/section-51-3-1/",
+   "retrievedAt": "2026-10-02",
+   "note": "Acceptable shorthand. Technically the claim is against the gym (the owner/occupier); its liability insurer handles and pays it. Optional precision: 'a claim against a gym'."
+  },
+  {
+   "surface": "body",
+   "claim": "Almost every gym requires its members to fill out and sign some kind of liability waiver before entering the premises and using gym equipment.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Day v. Fantastic Fitness, Inc., 190 Ga. App. 46 (1989); Lovelace (CourtListener, browser-verified)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1344931/day-v-fantastic-fitness-inc/",
+   "retrievedAt": "2026-10-02",
+   "note": "No survey statistic located; 'almost every' is a generalization but consistent with the membership-contract releases in every reported Georgia health-club case. Keep as unquantified context."
+  },
+  {
+   "surface": "body",
+   "claim": "Most gym owners are aware of the high potential for personal injuries, and use these waivers as a way to stem the tide of the rising number of insurance claims and lawsuits.",
+   "verdict": "update",
+   "currentValue": "No source located for a 'rising number' of gym claims or lawsuits. The purpose of a waiver is to shift the risk of the gym's ordinary negligence to the member (Lovelace; Day).",
+   "sourceName": "Lovelace v. Figure Salon, Inc. (CourtListener)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1324770/lovelace-v-figure-salon-inc/",
+   "retrievedAt": "2026-10-02",
+   "note": "Drop 'rising' (unsupported trend claim): '...use these waivers to limit their exposure to injury claims and lawsuits.' Same fix in faq:4."
+  },
+  {
+   "surface": "body",
+   "claim": "By signing this waiver, you enter into a legally binding contract with the gym or exercise studio that prevents you from filing a lawsuit.",
+   "verdict": "update",
+   "currentValue": "Georgia enforces gym and health-club waivers of the club's own ordinary negligence: 'It is well settled that public policy does not prohibit the inclusion of a clause such as the one under consideration here in a fitness or health club membership contract' (Day v. Fantastic Fitness, Inc., 190 Ga. App. 46 (1989), release barred a member's slip-in-the-shower premises claim; Lovelace v. Figure Salon, Inc., 179 Ga. App. 51 (1986), release barred claims of negligent supervision by 'untrained, unqualified, and incompetent' employees during a fitness test). Limits: the waiver must be 'explicit, prominent, clear and unambiguous', ambiguities are construed against the drafter (Holmes v. Clear Channel Outdoor, Inc., 284 Ga. App. 474 (2007)), and 'exculpatory clauses do not relieve a party from liability for acts of gross negligence or wilful or wanton conduct' — a jury question when reasonable people could differ (McFann v. Sky Warriors, Inc., 268 Ga. App. 750 (2004)).",
+   "sourceName": "Lovelace (1986); Day (1989); Holmes v. Clear Channel Outdoor (2007); McFann v. Sky Warriors (2004) — CourtListener, browser-verified",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1324770/lovelace-v-figure-salon-inc/",
+   "retrievedAt": "2026-10-02",
+   "note": "Overstated. A waiver does not prevent filing; it is a defense the gym raises, and it fails if not explicit, prominent and unambiguous, if the claim falls outside its wording, or (Georgia) if the conduct was gross negligence or wilful/wanton. Suggested: 'A signed waiver is generally a binding contract, and the gym will use it as a defense to a lawsuit.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Most gym liability waivers are ironclad, with lots of legal language to prevent any loopholes or misunderstandings.",
+   "verdict": "update",
+   "currentValue": "Georgia enforces gym and health-club waivers of the club's own ordinary negligence: 'It is well settled that public policy does not prohibit the inclusion of a clause such as the one under consideration here in a fitness or health club membership contract' (Day v. Fantastic Fitness, Inc., 190 Ga. App. 46 (1989), release barred a member's slip-in-the-shower premises claim; Lovelace v. Figure Salon, Inc., 179 Ga. App. 51 (1986), release barred claims of negligent supervision by 'untrained, unqualified, and incompetent' employees during a fitness test). Limits: the waiver must be 'explicit, prominent, clear and unambiguous', ambiguities are construed against the drafter (Holmes v. Clear Channel Outdoor, Inc., 284 Ga. App. 474 (2007)), and 'exculpatory clauses do not relieve a party from liability for acts of gross negligence or wilful or wanton conduct' — a jury question when reasonable people could differ (McFann v. Sky Warriors, Inc., 268 Ga. App. 750 (2004)). South Carolina enforces releases of ordinary negligence when explicit, but disfavors them and strictly construes them against the business (McCune v. Myrtle Beach Indoor Shooting Range, Inc., Op. No. 3974 (S.C. Ct. App. 2005)); a release so broad it would excuse the business 'for any reason' is void as against public policy (Fisher v. Stevens, Op. No. 3665 (S.C. Ct. App. 2003)). No South Carolina appellate holding was located that a release can never cover gross negligence — do not state that as settled SC law.",
+   "sourceName": "Holmes v. Clear Channel Outdoor, Inc., 284 Ga. App. 474 (2007) (CourtListener, browser-verified); McCune (S.C. Ct. App. 2005)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1293276/holmes-v-clear-channel-outdoor-inc/",
+   "retrievedAt": "2026-10-02",
+   "note": "'Ironclad' is unsupported and contradicts the next sentence. Suggested: 'Gym waivers are usually drafted broadly, but courts in both Georgia and South Carolina read them strictly against the gym.'"
+  },
+  {
+   "surface": "body",
+   "claim": "For example, if the waiver’s language is vague and ambiguous, with room for misinterpretation, the judge may rule its provisions inadmissible.",
+   "verdict": "update",
+   "currentValue": "Georgia: exculpatory clauses must be 'explicit, prominent, clear and unambiguous' and 'Ambiguities in exculpatory clauses are construed against the drafters' (Holmes, 284 Ga. App. 474 (2007)). South Carolina: releases are strictly construed against the party relying on them (McCune, 2005).",
+   "sourceName": "Holmes v. Clear Channel Outdoor, Inc. (Ga. Ct. App. 2007) (CourtListener, browser-verified)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1293276/holmes-v-clear-channel-outdoor-inc/",
+   "retrievedAt": "2026-10-02",
+   "note": "Wrong term: 'inadmissible' is an evidence concept. Suggested: '...the court may refuse to enforce it, because ambiguities in a waiver are read against the gym that wrote it.'"
+  },
+  {
+   "surface": "body",
+   "claim": "More likely, the contract will not cover negligence-related injuries.",
+   "verdict": "update",
+   "currentValue": "Georgia enforces gym and health-club waivers of the club's own ordinary negligence: 'It is well settled that public policy does not prohibit the inclusion of a clause such as the one under consideration here in a fitness or health club membership contract' (Day v. Fantastic Fitness, Inc., 190 Ga. App. 46 (1989), release barred a member's slip-in-the-shower premises claim; Lovelace v. Figure Salon, Inc., 179 Ga. App. 51 (1986), release barred claims of negligent supervision by 'untrained, unqualified, and incompetent' employees during a fitness test). Limits: the waiver must be 'explicit, prominent, clear and unambiguous', ambiguities are construed against the drafter (Holmes v. Clear Channel Outdoor, Inc., 284 Ga. App. 474 (2007)), and 'exculpatory clauses do not relieve a party from liability for acts of gross negligence or wilful or wanton conduct' — a jury question when reasonable people could differ (McFann v. Sky Warriors, Inc., 268 Ga. App. 750 (2004)).",
+   "sourceName": "Lovelace v. Figure Salon (1986); Day v. Fantastic Fitness (1989) (CourtListener, browser-verified)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1324770/lovelace-v-figure-salon-inc/",
+   "retrievedAt": "2026-10-02",
+   "note": "False as stated. Gym waivers are written precisely to cover the gym's own negligence, and Georgia enforces them (Lovelace: release of 'active or passive negligence'; Day: release of claims 'due to the negligence of' the club). What they do not reach in Georgia is gross negligence or wilful/wanton conduct (McFann). Replace with the GA sentence in recommendedEdits."
+  },
+  {
+   "surface": "body",
+   "claim": "Despite legal language in the contract prohibiting a lawsuit, the law in Georgia does not permit a gym to avoid liability in the event the gym’s negligence caused an injury.",
+   "verdict": "update",
+   "currentValue": "Georgia enforces gym and health-club waivers of the club's own ordinary negligence: 'It is well settled that public policy does not prohibit the inclusion of a clause such as the one under consideration here in a fitness or health club membership contract' (Day v. Fantastic Fitness, Inc., 190 Ga. App. 46 (1989), release barred a member's slip-in-the-shower premises claim; Lovelace v. Figure Salon, Inc., 179 Ga. App. 51 (1986), release barred claims of negligent supervision by 'untrained, unqualified, and incompetent' employees during a fitness test). Limits: the waiver must be 'explicit, prominent, clear and unambiguous', ambiguities are construed against the drafter (Holmes v. Clear Channel Outdoor, Inc., 284 Ga. App. 474 (2007)), and 'exculpatory clauses do not relieve a party from liability for acts of gross negligence or wilful or wanton conduct' — a jury question when reasonable people could differ (McFann v. Sky Warriors, Inc., 268 Ga. App. 750 (2004)).",
+   "sourceName": "Day v. Fantastic Fitness, Inc., 190 Ga. App. 46 (1989); McFann v. Sky Warriors, Inc., 268 Ga. App. 750 (2004) (CourtListener, browser-verified)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1344931/day-v-fantastic-fitness-inc/",
+   "retrievedAt": "2026-10-02",
+   "note": "MOST IMPORTANT ERROR — the post's only Georgia statement is the opposite of Georgia law. Georgia lets a gym contract away liability for its ordinary negligence; it cannot contract away gross negligence or wilful/wanton conduct. Suggested: 'In Georgia, a clear, prominent waiver can bar claims for a gym's ordinary negligence, but it cannot excuse gross negligence or wilful or wanton misconduct.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Personal injury law centers on the theory of negligence.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Robinson v. Kroger Co., 268 Ga. 735 (1997) (CourtListener, browser-verified)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1292587/robinson-v-kroger-co/",
+   "retrievedAt": "2026-10-02",
+   "note": "General statement; accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "An establishment that invites visitors with expressed or implied invitations must maintain a reasonably safe premises for its invitees.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-3-1 (Justia); Sims v. Giles, 343 S.C. 708 (Ct. App. 2001) (Justia, browser-verified in facts-4368)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-3/article-1/section-51-3-1/",
+   "retrievedAt": "2026-10-02",
+   "note": "Tracks § 51-3-1 ('by express or implied invitation ... ordinary care in keeping the premises and approaches safe'). SC: owner owes invitees 'reasonable or ordinary care' (Sims). Owner is not an insurer (Robinson)."
+  },
+  {
+   "surface": "body",
+   "claim": "The rules of premises liability law mandate that a gym or other property with invited guests must routinely check for hazards and make repairs.",
+   "verdict": "update",
+   "currentValue": "Georgia: the owner/occupier's duty 'includes inspecting the premises to discover possible dangerous conditions of which the owner/occupier does not have actual knowledge, and taking reasonable precautions to protect invitees' (Robinson v. Kroger Co., 268 Ga. 735 (1997)). South Carolina: duty of ordinary care and to warn of latent dangers the owner knows or should know of (Sims v. Giles).",
+   "sourceName": "Robinson v. Kroger Co. (Ga. 1997) (CourtListener, browser-verified); Sims v. Giles (S.C. Ct. App. 2001)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1292587/robinson-v-kroger-co/",
+   "retrievedAt": "2026-10-02",
+   "note": "Minor precision: the duty is to inspect and take reasonable precautions — repair or warn — not strictly to 'make repairs'. Suggested: '...must reasonably inspect for hazards and fix them or warn about them.' Phrase sits partly in link anchor text."
+  },
+  {
+   "surface": "body",
+   "claim": "If a gym owner knew about, or should have known about, a hazardous condition and failed to make repairs, an injured person may be able to file a claim on the grounds of negligence regardless of a liability waiver.",
+   "verdict": "update",
+   "currentValue": "Knowledge standard correct: Georgia requires actual or constructive (superior) knowledge of the hazard (Robinson v. Kroger, applying § 51-3-1); SC same (Sims). But 'regardless of a liability waiver' is wrong: in Day v. Fantastic Fitness (Ga. Ct. App. 1989) a gym release barred a member's claim that the club let a slippery substance build up on the shower floor — an ordinary premises-negligence claim.",
+   "sourceName": "Day v. Fantastic Fitness, Inc., 190 Ga. App. 46 (1989); Robinson v. Kroger Co. (CourtListener, browser-verified)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1344931/day-v-fantastic-fitness-inc/",
+   "retrievedAt": "2026-10-02",
+   "note": "Delete 'regardless of a liability waiver'; replace with 'even if you signed a waiver, depending on its wording and how serious the gym's failure was.'"
+  },
+  {
+   "surface": "body",
+   "claim": "An injury resulting from malfunctioning equipment, unsanitary conditions, an incompetent personal trainer, delayed emergency assistance, or another unreasonably hazardous condition is likely grounds for a claim against the gym’s insurance company or a personal injury lawsuit.",
+   "verdict": "update",
+   "currentValue": "Lovelace (Ga. Ct. App. 1986): a release barred claims that the club failed to supervise 'untrained, unqualified, and incompetent' employees who pushed the member to lift 80 pounds. Defective equipment can also support a product-liability claim against the manufacturer, which a gym waiver does not release: O.C.G.A. § 51-1-11(b) (manufacturer strictly liable; 10-year repose from first sale); S.C. Code § 15-73-10 (seller of product 'in a defective condition unreasonably dangerous').",
+   "sourceName": "Lovelace v. Figure Salon (CourtListener); O.C.G.A. § 51-1-11 (Justia, browser-verified 2026-10-02); S.C. Code § 15-73-10 (scstatehouse.gov)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1324770/lovelace-v-figure-salon-inc/",
+   "retrievedAt": "2026-10-02",
+   "note": "'Is likely grounds' overstates where a waiver was signed. Suggested: '...may support a claim against the gym — and a defective machine may also support a claim against its manufacturer.' No Georgia or South Carolina statute requiring gyms to keep an AED or render emergency aid was located; keep 'delayed emergency assistance' only as an example, not a duty."
+  },
+  {
+   "surface": "body",
+   "claim": "Proving negligence against a gym can be difficult, as the injured party has to get around the language of the contract he or she signed.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Holmes v. Clear Channel Outdoor (2007); McFann v. Sky Warriors (2004) (CourtListener)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1324014/mcfann-v-sky-warriors-inc/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate in substance (the waiver is the main obstacle). Optional precision: overcoming a waiver usually means showing it is ambiguous, does not cover the claim, or (Georgia) that the gym was grossly negligent."
+  },
+  {
+   "surface": "body",
+   "claim": "The gym is guilty of improper staff hiring, training, or retention practices",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Lovelace v. Figure Salon (CourtListener)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1324770/lovelace-v-figure-salon-inc/",
+   "retrievedAt": "2026-10-02",
+   "note": "Valid negligence theory and example of evidence; note Lovelace shows a waiver can cover negligent-supervision/training claims. Other list items (prior complaints, witnesses, cleaning, maintenance inspections) are evidence examples — keep."
+  },
+  {
+   "surface": "body",
+   "claim": "The rules of premises liability are clear on what does and does not constitute negligence – regardless of an establishment’s liability waiver.",
+   "verdict": "drop",
+   "currentValue": "Premises liability turns on case-specific facts; Georgia's Supreme Court holds these issues are 'generally not susceptible of summary adjudication' (Robinson v. Kroger). A valid waiver can bar a premises claim (Day v. Fantastic Fitness).",
+   "sourceName": "Robinson v. Kroger Co. (1997); Day v. Fantastic Fitness (1989) (CourtListener, browser-verified)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1292587/robinson-v-kroger-co/",
+   "retrievedAt": "2026-10-02",
+   "note": "Both halves wrong: the rules are fact-dependent, not 'clear', and the waiver does matter. Delete the sentence."
+  },
+  {
+   "surface": "body",
+   "claim": "Your first phone call should be to your local hospital or doctor’s office to treat your injuries.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Practical guidance (no legal claim); deadline context from S.C. Code § 15-3-530 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Practical advice; no legal claim. Recommend adding the filing deadlines right after the 'contact an attorney as soon as possible' sentence: Georgia 2 years (O.C.G.A. § 9-3-33); South Carolina 3 years (S.C. Code § 15-3-530(5))."
+  },
+  {
+   "surface": "excerpt",
+   "claim": "Who is liable when you are hurt at a gym — the facility, a trainer, or an equipment maker — and what a signed waiver does and does not cover.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-1-11 (Justia, browser-verified); S.C. Code § 15-73-10 (scstatehouse.gov)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate framing. The body never discusses the equipment maker; one clause on product liability (see recommendedEdits) makes the excerpt true of the body."
+  },
+  {
+   "surface": "faq:1",
+   "claim": "Sometimes, but not every gym injury supports a claim. Gyms combine heavy equipment, wet floors, shared mats and members pushing their physical limits, and only some of those injuries trace back to the gym's own negligence.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Lovelace v. Figure Salon (CourtListener)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1324770/lovelace-v-figure-salon-inc/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate and hedged."
+  },
+  {
+   "surface": "faq:2",
+   "claim": "Not automatically. Almost every gym requires a waiver stating it is not liable for accidents on the premises, but signing one does not always end the matter. Whether it is enforceable depends on its wording and the conduct involved.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Holmes (2007); McFann (2004); McCune (S.C. 2005)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1293276/holmes-v-clear-channel-outdoor-inc/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. Optional strengthening (FAQPage schema): 'In Georgia a clear waiver can bar ordinary-negligence claims but not gross negligence or wilful misconduct; South Carolina courts read waivers strictly against the gym.'"
+  },
+  {
+   "surface": "faq:3",
+   "claim": "One caused by the facility's own failures — faulty or poorly maintained equipment, hazards left on the floor, or inadequate or incompetent staff supervision. Injuries from your own exertion generally are not.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Robinson v. Kroger; Lovelace (CourtListener)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1292587/robinson-v-kroger-co/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate as a 'most likely' statement; injuries from one's own exertion fall within the inherent risk the member assumes (Lovelace). Note a waiver can still reach supervision claims."
+  },
+  {
+   "surface": "faq:4",
+   "claim": "Because owners are aware of the high potential for personal injuries on their premises, and use waivers to stem the rising number of insurance claims and lawsuits. The waiver is a business tool rather than a statement of law.",
+   "verdict": "update",
+   "currentValue": "No source for a 'rising number' of claims or lawsuits.",
+   "sourceName": "Lovelace v. Figure Salon (CourtListener)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1324770/lovelace-v-figure-salon-inc/",
+   "retrievedAt": "2026-10-02",
+   "note": "Change 'to stem the rising number of insurance claims and lawsuits' to 'to limit their exposure to insurance claims and lawsuits'. Keep 'The waiver is a business tool rather than a statement of law.' — accurate (enforceability is decided by courts)."
+  },
+  {
+   "surface": "faq:5",
+   "claim": "Report it to staff so an incident record exists, photograph the equipment or hazard involved before it is fixed or cleared, get medical attention, and keep your copy of any waiver you signed for review.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Practical guidance (no legal claim); deadline context from S.C. Code § 15-3-530 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Sound practical steps; no legal claim."
+  }
+ ],
+ "recommendedEdits": [
+  "Waiver paragraph 1: drop 'rising' ('...use these waivers to limit their exposure to injury claims and lawsuits'); replace 'that prevents you from filing a lawsuit' with 'that the gym will raise as a defense if you sue.'",
+  "Waiver paragraph 2: replace 'Most gym liability waivers are ironclad, with lots of legal language to prevent any loopholes or misunderstandings.' with 'Gym waivers are usually drafted broadly, but courts read them strictly against the gym.'; change 'the judge may rule its provisions inadmissible' to 'the court may refuse to enforce it'.",
+  "Waiver paragraph 2: replace 'More likely, the contract will not cover negligence-related injuries. Despite legal language ... the law in Georgia does not permit a gym to avoid liability in the event the gym’s negligence caused an injury.' with two state sentences: GA — 'In Georgia, a clear, prominent waiver can bar claims for a gym's ordinary negligence, but it cannot excuse gross negligence or wilful or wanton misconduct (McFann v. Sky Warriors, Inc., 2004).' SC — 'South Carolina courts read waivers strictly against the gym and will not enforce one so broad that it would excuse the gym for any reason (Fisher v. Stevens, 2003).'",
+  "Premises paragraph: 'must routinely check for hazards and make repairs' -> 'must reasonably inspect for hazards and fix them or warn about them'; replace 'regardless of a liability waiver' with 'even if you signed a waiver, depending on its wording and how serious the gym's failure was'.",
+  "Second premises paragraph: 'is likely grounds for a claim' -> 'may support a claim against the gym'; add: 'If a machine itself was defective, the manufacturer may also be liable, and the gym's waiver does not protect it.'",
+  "Closing paragraph: delete 'The rules of premises liability are clear on what does and does not constitute negligence – regardless of an establishment’s liability waiver.' After 'contact an attorney as soon as possible.' add: 'In Georgia you generally have two years to file (O.C.G.A. § 9-3-33); in South Carolina, three (S.C. Code § 15-3-530).'",
+  "faq:4: 'to stem the rising number of insurance claims and lawsuits' -> 'to limit their exposure to insurance claims and lawsuits'.",
+  "Do NOT add: a claim that SC releases can never cover gross negligence (no SC appellate holding located); any statement on parents' waivers for minors (unsettled in both states — no controlling GA or SC appellate holding located); comparative-fault or assumption-of-risk detail (not needed for accuracy; keeps growth within budget). Net body growth from these edits is roughly +55–70 words (~9–11%)."
+ ],
+ "statuteCitations": [
+  {
+   "section": "O.C.G.A. § 51-3-1",
+   "name": "Owner/occupier liability to invitees — ordinary care in keeping premises and approaches safe",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-3/article-1/section-51-3-1/"
+  },
+  {
+   "section": "O.C.G.A. § 9-3-33",
+   "name": "Injuries to the person — two-year limitation",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+  },
+  {
+   "section": "O.C.G.A. § 51-1-11",
+   "name": "Product liability — manufacturer strictly liable for product not merchantable when sold; 10-year repose from first sale",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11/"
+  },
+  {
+   "section": "S.C. Code § 15-3-530",
+   "name": "Three-year limitation — (5) any injury to the person",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "section": "S.C. Code § 15-73-10",
+   "name": "Liability of seller for defective product unreasonably dangerous to the user",
+   "url": "https://www.scstatehouse.gov/code/t15c073.php"
+  }
+ ],
+ "authoritativeLinks": [
+  {
+   "name": "Lovelace v. Figure Salon, Inc., 179 Ga. App. 51 (1986) — health-club release barred negligence and negligent-supervision claims",
+   "url": "https://www.courtlistener.com/opinion/1324770/lovelace-v-figure-salon-inc/"
+  },
+  {
+   "name": "Day v. Fantastic Fitness, Inc., 190 Ga. App. 46 (1989) — 'well settled' that public policy allows fitness-club releases; release barred a shower slip-and-fall claim",
+   "url": "https://www.courtlistener.com/opinion/1344931/day-v-fantastic-fitness-inc/"
+  },
+  {
+   "name": "McFann v. Sky Warriors, Inc., 268 Ga. App. 750 (2004) — exculpatory clauses do not relieve gross negligence or wilful or wanton conduct; jury question",
+   "url": "https://www.courtlistener.com/opinion/1324014/mcfann-v-sky-warriors-inc/"
+  },
+  {
+   "name": "Holmes v. Clear Channel Outdoor, Inc., 284 Ga. App. 474 (2007) — waivers must be explicit, prominent, clear and unambiguous; ambiguities construed against the drafter",
+   "url": "https://www.courtlistener.com/opinion/1293276/holmes-v-clear-channel-outdoor-inc/"
+  },
+  {
+   "name": "Robinson v. Kroger Co., 268 Ga. 735 (1997) — § 51-3-1 superior-knowledge standard; duty includes inspecting the premises",
+   "url": "https://www.courtlistener.com/opinion/1292587/robinson-v-kroger-co/"
+  },
+  {
+   "name": "McCune v. Myrtle Beach Indoor Shooting Range, Inc. (S.C. Ct. App. 2005, Op. 3974) — releases disfavored, strictly construed",
+   "url": "https://law.justia.com/cases/south-carolina/court-of-appeals/2005/3974.html"
+  },
+  {
+   "name": "Fisher v. Stevens (S.C. Ct. App. 2003, Op. 3665) — overly broad release void as against public policy",
+   "url": "https://law.justia.com/cases/south-carolina/court-of-appeals/2003/3665.html"
+  },
+  {
+   "name": "Sims v. Giles, 343 S.C. 708 (Ct. App. 2001) — duty owed to invitees",
+   "url": "https://law.justia.com/cases/south-carolina/court-of-appeals/2001/3291.html"
+  }
+ ],
+ "quoteNote": "Body claims are matched against body.html with tags stripped and whitespace collapsed; one claim ('The rules of premises liability law mandate...') spans a link anchor. Body uses curly apostrophes (’) and an en dash (–); FAQ answers use straight apostrophes. CourtListener opinions were browser-verified 2026-10-02 (curl returns a 202 bot challenge, not solved); Justia URLs were browser-verified in sibling packs facts-1650/4358/4368 or, for § 51-1-11, in this run; scstatehouse.gov returned 200 to curl."
+}

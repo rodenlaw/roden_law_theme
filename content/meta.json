@@ -5168,7 +5168,7 @@
             "title": "Gym Liability Explained",
             "excerpt": "Who is liable when you are hurt at a gym — the facility, a trainer, or an equipment maker — and what a signed waiver does and does not cover.",
             "meta": {
-                "_roden_author_attorney": "Eric Roden",
+                "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "Can I sue a gym after being injured there?",
@@ -5176,7 +5176,7 @@
                     },
                     {
                         "question": "Does the liability waiver I signed stop me from claiming?",
-                        "answer": "Not automatically. Almost every gym requires a waiver stating it is not liable for accidents on the premises, but signing one does not always end the matter. Whether it is enforceable depends on its wording and the conduct involved."
+                        "answer": "Not automatically. Almost every gym requires a waiver stating it is not liable for accidents on the premises, but signing one does not always end the matter. Whether it is enforceable depends on its wording and the conduct involved. In Georgia a clear waiver can bar ordinary-negligence claims but not gross negligence or wilful misconduct; South Carolina courts read waivers strictly against the gym."
                     },
                     {
                         "question": "What kind of gym injury is most likely to support a claim?",
@@ -5184,13 +5184,15 @@
                     },
                     {
                         "question": "Why do gyms use liability waivers at all?",
-                        "answer": "Because owners are aware of the high potential for personal injuries on their premises, and use waivers to stem the rising number of insurance claims and lawsuits. The waiver is a business tool rather than a statement of law."
+                        "answer": "Because owners are aware of the high potential for personal injuries on their premises, and use waivers to limit their exposure to insurance claims and lawsuits. The waiver is a business tool rather than a statement of law."
                     },
                     {
                         "question": "What should I do after being injured at a gym?",
                         "answer": "Report it to staff so an incident record exists, photograph the equipment or hazard involved before it is fixed or cleared, get medical attention, and keep your copy of any waiver you signed for review."
                     }
-                ]
+                ],
+                "_roden_last_reviewed": "2026-10-02",
+                "_roden_meta_description": "Hurt at a gym in Georgia or South Carolina? Learn when a signed waiver bars a claim, when it does not, and who may be liable for your injury."
             }
         },
         "/blog/hearing-loss-after-charleston-car-accident/": {
@@ -6393,13 +6395,13 @@
             "type": "post",
             "status": "publish",
             "title": "Is Workers' Compensation an Employee Benefit? What Georgia and South Carolina Workers Need to Know",
-            "excerpt": "Workers' compensation is a legally required insurance programme, not an optional perk. What Georgia and South Carolina employers must provide.",
+            "excerpt": "Workers' compensation is a legally required insurance program, not an optional perk. What Georgia and South Carolina employers must provide.",
             "meta": {
-                "_roden_author_attorney": "Eric Roden",
+                "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "Is workers compensation a benefit or a legal right?",
-                        "answer": "Workers compensation is a legally mandated insurance program, not a voluntary employee benefit. Both Georgia (O.C.G.A. § 34-9-1 et seq.) and South Carolina (S.C. Code § 42-1-10 et seq.) require qualifying employers to carry coverage. Unlike optional benefits like health insurance, workers comp is automatic and cannot be opted out of."
+                        "answer": "Workers compensation is a legally mandated insurance program, not a voluntary employee benefit. Both Georgia (O.C.G.A. § 34-9-1 et seq.) and South Carolina (S.C. Code § 42-1-10 et seq.) require qualifying employers to carry coverage. Unlike optional benefits like health insurance, workers comp is automatic, and employees cannot opt out of it (in Georgia, certain corporate officers and LLC members may exempt themselves under O.C.G.A. § 34-9-2.1)."
                     },
                     {
                         "question": "Which employers are required to carry workers compensation in Georgia and South Carolina?",
@@ -6407,22 +6409,24 @@
                     },
                     {
                         "question": "What benefits does workers compensation provide?",
-                        "answer": "Workers compensation provides medical benefits covering all authorized treatment, temporary total and partial disability benefits (typically two-thirds of average weekly wages), permanent partial and total disability benefits, vocational rehabilitation, and death benefits for surviving dependents."
+                        "answer": "Workers compensation provides medical benefits covering all authorized treatment, temporary total and partial disability benefits (typically two-thirds of average weekly wages, or of the wage difference for partial disability), permanent disability benefits, death benefits for surviving dependents, and — in Georgia catastrophic cases — vocational rehabilitation."
                     },
                     {
                         "question": "How long do I have to file a workers compensation claim?",
-                        "answer": "In Georgia, you must report the injury within 30 days and file a formal claim within 1 year (O.C.G.A. § 34-9-82). In South Carolina, you must report within 90 days and file within 2 years (S.C. Code § 42-15-40). Missing these deadlines can jeopardize your benefits."
+                        "answer": "In Georgia, you must report the injury within 30 days and file a formal claim within 1 year of the injury, or within 1 year after the last employer-paid medical treatment or 2 years after the last weekly income benefit (O.C.G.A. § 34-9-82). In South Carolina, you must report within 90 days and file within 2 years (S.C. Code § 42-15-40). Missing these deadlines can jeopardize your benefits."
                     },
                     {
                         "question": "Are independent contractors covered by workers compensation?",
                         "answer": "Generally, independent contractors are not covered by workers compensation. However, if you are misclassified as an independent contractor but actually function as an employee (set schedule, employer-provided tools, direct supervision), you may still qualify for benefits."
                     },
                     {
-                        "question": "Can my employer fire me for filing a workers compensation claim?",
-                        "answer": "Both Georgia and South Carolina prohibit employer retaliation for filing a legitimate workers compensation claim. If you believe you were terminated or demoted because you filed a claim, an attorney can help you pursue legal remedies in addition to your workers comp benefits."
+                        "question": "Can my employer fire me for filing a workers compensation claim in Georgia or South Carolina?",
+                        "answer": "It depends on the state. In South Carolina, it is illegal to fire or demote you for filing a workers compensation claim in good faith; you can sue for lost wages and reinstatement, but you must do so within one year (S.C. Code § 41-1-80). Georgia has no equivalent law, and most employees there can be fired at will (Evans v. Bibb Co., 178 Ga. App. 139 (1986)), but losing your job does not necessarily end your benefits, especially if the firing was a pretext to avoid paying them (Padgett v. Waffle House, 269 Ga. 105 (1998)). An attorney can review your options in either state."
                     }
                 ],
-                "_roden_key_takeaways": "Workers compensation is a legally mandated insurance program — not an optional employee benefit — that provides medical care and wage replacement for work-related injuries. Georgia requires coverage for employers with 3+ employees (O.C.G.A. § 34-9-1 et seq.), while South Carolina requires it for 4+ employees (S.C. Code § 42-1-10 et seq.). Benefits include TTD, TPD, PPD, medical treatment, vocational rehabilitation, and death benefits. Filing deadlines are 1 year in Georgia and 2 years in South Carolina."
+                "_roden_key_takeaways": "Workers compensation is a legally mandated insurance program — not an optional employee benefit — that provides medical care and wage replacement for work-related injuries. Georgia requires coverage for employers with 3+ employees (O.C.G.A. § 34-9-1 et seq.), while South Carolina requires it for 4+ employees (S.C. Code § 42-1-10 et seq.). Benefits include TTD, TPD, PPD, medical treatment and death benefits, plus vocational rehabilitation in Georgia catastrophic cases. Filing deadlines are 1 year in Georgia (or 1 year after the last employer-paid treatment, or 2 years after the last income benefit, O.C.G.A. § 34-9-82) and 2 years in South Carolina.",
+                "_roden_last_reviewed": "2026-10-02",
+                "_roden_meta_description": "Workers' comp is required, not a perk: Georgia employers with 3+ workers and South Carolina employers with 4+ must carry it. Benefits and deadlines."
             }
         },
         "/blog/jet-ski-personal-watercraft-accidents-charleston/": {
@@ -10507,7 +10511,7 @@
             "title": "What to Do When a Third-Party Caused My Work Accident",
             "excerpt": "When someone other than your employer caused a work injury, you may have a claim beyond workers' compensation. How the two fit together.",
             "meta": {
-                "_roden_author_attorney": "Eric Roden",
+                "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "What is a third-party claim for a work injury?",
@@ -10519,17 +10523,19 @@
                     },
                     {
                         "question": "What are common examples of third-party liability at work?",
-                        "answer": "Car accidents while driving a company vehicle or performing work tasks, injuries from defective tools or equipment, construction site accidents involving a general contractor, and injuries on someone else's property while making a work call."
+                        "answer": "Car accidents while driving a company vehicle or performing work tasks, injuries from defective tools or equipment, construction site accidents caused by another subcontractor or an equipment company, and injuries on someone else's property while making a work call."
                     },
                     {
                         "question": "Can I claim against a general contractor if I work for a subcontractor?",
-                        "answer": "Often yes. Construction sites bring together people from different companies, and the general contractor is typically responsible for safety on the jobsite, which can make them liable for an injury your own employer did not cause."
+                        "answer": "Usually not. In both Georgia and South Carolina, a general contractor is generally treated as your “statutory employer” and is protected from lawsuits the same way your own employer is (O.C.G.A. § 34-9-8; S.C. Code § 42-1-415). Another subcontractor, an equipment maker, or a property owner who is not a contractor on the job can often be sued."
                     },
                     {
                         "question": "Do I lose my workers' compensation benefits if I bring a third-party claim?",
-                        "answer": "No. A third-party claim runs alongside your workers' compensation claim rather than replacing it. The two have different targets, different standards of proof, and different types of recoverable damages."
+                        "answer": "No. A third-party claim runs alongside your workers' compensation claim rather than replacing it. The two have different targets, different standards of proof, and different types of recoverable damages. Your workers' compensation insurer may, however, be repaid out of what you recover from the third party."
                     }
-                ]
+                ],
+                "_roden_last_reviewed": "2026-10-02",
+                "_roden_meta_description": "Hurt at work by someone other than your employer? Learn how a third-party claim works alongside workers' comp in Georgia and South Carolina."
             }
         },
         "/blog/third-party-liability-for-work-injury/": {

@@ -1,0 +1,439 @@
+{
+ "postId": 1782,
+ "slug": "third-party-fault-for-work-injuries",
+ "liveUrl": "https://rodenlaw.com/blog/third-party-fault-for-work-injuries/",
+ "jurisdiction": "both",
+ "researchedAt": "2026-10-02",
+ "verifiedClaims": [
+  {
+   "surface": "body",
+   "claim": "When you are injured on the job, you have the right to seek workers’ compensation benefits from your employer.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-1(4) / S.C. Code § 42-1-160(A) (compensable injury: 'arising out of and in the course of' employment); coverage thresholds O.C.G.A. § 34-9-2 (three or more employees), S.C. Code § 42-1-360(2) (four or more employees)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate as a general statement. Benefits are paid by the employer's insurer (or a self-insured employer), and coverage depends on employer size: Georgia employers with three or more regular employees, South Carolina employers with four or more (or $3,000+ annual payroll). No edit needed; optional 'through your employer's insurance'."
+  },
+  {
+   "surface": "body",
+   "claim": "However, when another individual or entity unrelated to your employer causes the accident, you may have a case against them. This is called a third-party claim and it is separate from your workers’ compensation claim.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-11(a) ('No employee shall be deprived of any right to bring an action against any third-party tort-feasor, other than an employee of the same employer'); O.C.G.A. § 34-9-11.1(a); S.C. Code §§ 42-1-550, 42-1-560(a)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-11/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct in both states. Caveat for the editor (not a required edit): 'unrelated to your employer' is the right test — in Georgia a co-worker is not a third party (§ 34-9-11(a)), and in both states a general contractor or other statutory employer is treated as your employer (see construction entry). SC § 42-1-560(a) defines the third party as someone 'other than the employer or another person exempt from liability under Section 42-1-540'."
+  },
+  {
+   "surface": "body",
+   "claim": "The qualified Savannah workers’ compensation lawyers at Roden Law are knowledgeable about all aspects of pursuing compensation for a workplace injury.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Firm statement (profiles/writer-profile.md); link target /workers-compensation-lawyers/savannah-ga/",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Firm statement, not a legal claim. The href is https://rodenlaw.com/workers-compensation-lawyers/savannah-ga/ (absolute, no /practice-areas/ prefix); rodenlaw.com is Cloudflare-blocked from here, so confirm it resolves without a redirect hop against the local URL inventory before publishing. Claim spans an <a> tag in body.html; matches once tags are stripped. The post never states Roden Law also practices in South Carolina; optional: 'Our Georgia and South Carolina workers' compensation lawyers'."
+  },
+  {
+   "surface": "body",
+   "claim": "This is a no-fault insurance system that pays for medical expenses and replaces a portion of an injured worker’s wages. The injured worker does not have to show that the employer was negligent in order to receive these benefits.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "SBWC Workers' Compensation Law FAQs; S.C. Workers' Compensation Commission Injured Worker FAQs; O.C.G.A. § 34-9-261 / S.C. Code § 42-9-10 (two-thirds of average weekly wage, capped)",
+   "sourceUrl": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate in both states. 'A portion' = two-thirds of the average weekly wage up to a state cap (GA $800/week for injuries on or after July 1, 2023; SC $1,189.94/week for 2026 accidents) — do not add figures here; the post is short."
+  },
+  {
+   "surface": "body",
+   "claim": "However, the trade-off is injured employees are usually barred from suing their employer.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-11(a) (remedies 'shall exclude and be in place of all other rights and remedies'); S.C. Code § 42-1-540 ('shall exclude all other rights and remedies of such employee ... as against his employer')",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-11/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct; 'usually' is appropriate (exceptions are narrow, e.g., an injury outside the Act such as a Georgia attack for purely personal reasons, § 34-9-1(4)). Optional tightening if FAQ 2 is touched: in Georgia the bar also protects co-workers (§ 34-9-11(a)); in South Carolina a co-worker can still be sued for an intentional tort (Dickert v. Metropolitan Life, 311 S.C. 218 (1993), per facts-1650)."
+  },
+  {
+   "surface": "body",
+   "claim": "If you were <a href=\"/blog/workers-compensation-car-accident/\">driving a company vehicle</a> or were performing work-related tasks at the time of an accident, you may be able to sue the at-fault driver, as well as file a workers’ compensation claim.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. §§ 34-9-11(a), 34-9-11.1(a); S.C. Code §§ 42-1-550, 42-1-560",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-11-1/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct for an at-fault driver who is a stranger to the employment. Exception (no edit needed in a short post): in Georgia, if the at-fault driver was a co-worker of the same employer, the tort suit is barred (§ 34-9-11(a)). Claim quoted from raw body.html including the <a> tag."
+  },
+  {
+   "surface": "body",
+   "claim": "Some work-related accidents occur because a tool or device was defective. A tool may cause electric shock, or brakes may malfunction and cause a car accident. In these situations, injured workers may have a claim against the product manufacturer.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-1-11(b)(1) (manufacturer strictly liable 'irrespective of privity'; 10-year repose from first sale, (b)(2)); South Carolina strict product liability, S.C. Code § 15-73-10",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct in both states. Georgia caveats (no edit needed): the manufacturer claim is subject to a 10-year statute of repose from first sale (§ 51-1-11(b)(2), from facts-2479); a seller who is not the manufacturer is not strictly liable (§ 51-1-11.1); and where the general contractor itself built the equipment, its statutory-employer immunity still applies (Porter v. Beloit Corp., 194 Ga. App. 591 (1990), annotation to § 34-9-8)."
+  },
+  {
+   "surface": "body",
+   "claim": "Construction injuries often result in third-party claims because sites often have different people from different companies.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 42-1-540 (exclusivity 'shall not ... bar actions by an employee of one subcontractor against another subcontractor or his employees when both subcontractors are hired by a common employer'); Cleveland Elec. Constructors, Inc. v. Craven, 167 Ga. App. 274 (1983) (Georgia: a subcontractor has no immunity from suit by another subcontractor's employee)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+   "retrievedAt": "2026-10-02",
+   "note": "True — but the third parties on a construction site are typically OTHER subcontractors, equipment makers/renters, suppliers, design professionals and non-contractor property owners, not the general contractor. See next entry."
+  },
+  {
+   "surface": "body",
+   "claim": "If you work for a subcontractor, you may be able to make a claim against the general contractor, who is typically responsible for safety on the jobsite.",
+   "verdict": "update",
+   "currentValue": "Wrong in both states. Georgia: 'A principal, intermediate, or subcontractor shall be liable for compensation to any employee injured while in the employ of any of his subcontractors engaged upon the subject matter of the contract to the same extent as the immediate employer' (O.C.G.A. § 34-9-8(a)), and as the subcontractor-employee's statutory employer the general contractor gets 'the correlative benefit of tort immunity' under § 34-9-11 — 'Employee of an independent subcontractor may not recover in tort against the principal contractor' (Wright Assocs. v. Rieder, 247 Ga. 496 (1981); Warden v. Hoar Constr. Co., 269 Ga. 715 (1998); Vratsinas Constr. Co. v. Chitwood, 314 Ga. App. 357 (2012)). Immunity applies even if the subcontractor, not the GC, paid the benefits (Kitchens v. Winter Co. Bldrs., 161 Ga. App. 701 (1982)); § 34-9-8(d) limits it to injuries on premises where the principal contractor undertook the work. South Carolina: the owner (when the work is part of its trade or business) and the contractor are liable for compensation to a subcontractor's worker (S.C. Code §§ 42-1-400, 42-1-410, 42-1-420), and 'nothing in this section shall be construed to abrogate the immunity to tort liability of any subcontractor under this title or any higher tier subcontractor, contractor, or project owner who may be considered a statutory employer' (§ 42-1-415(D)). What survives in both states: suits against a different subcontractor (S.C. § 42-1-540 proviso; Cleveland Elec. Constructors v. Craven, Ga. App. 1983) and against individual GC employees in Georgia for their own negligence (Paz v. Marvin M. Black Co., 200 Ga. App. 607 (1991)).",
+   "sourceName": "O.C.G.A. § 34-9-8 and Justia annotations (Wright Assocs. v. Rieder; Warden v. Hoar; Vratsinas v. Chitwood; Cleveland Elec. v. Craven); S.C. Code §§ 42-1-400, 42-1-410, 42-1-415(D), 42-1-540",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-8/",
+   "retrievedAt": "2026-10-02",
+   "note": "MOST IMPORTANT FINDING — the post's central construction example names the one party the statutes usually shield, and the same error is in FAQ 3 and FAQ 4 (FAQPage structured data). Replace with: 'If you work for a subcontractor, you may have a claim against another subcontractor or an equipment company on the site. The general contractor, however, is usually treated as your “statutory employer” in Georgia and South Carolina and shares your employer’s protection from lawsuits.' The 'typically responsible for safety' rationale does not create liability; drop it. SC § 42-1-415(D) text and § 42-1-540 proviso verified on scstatehouse.gov; GA § 34-9-8 text and annotations read on Justia in the browser 2026-10-02."
+  },
+  {
+   "surface": "body",
+   "claim": "You may suffer an injury while on someone else’s property. For example, you may have made a sales call and been bitten by a dog while lawfully there. In this type of situation, you may have a claim against the owner of the property.",
+   "verdict": "update",
+   "currentValue": "Dog-bite liability runs to the dog's owner or keeper, who may or may not own the property. South Carolina: 'If a person is bitten or otherwise attacked by a dog while the person is in a public place or is lawfully in a private place ... the dog owner or person having the dog in the person's care or keeping is liable for the damages' — strict liability, and a person on the property by express or implied invitation is 'lawfully' there (S.C. Code § 47-3-110(A)). Georgia: the owner or keeper of a vicious or dangerous animal who carelessly manages it or lets it go at liberty is liable (O.C.G.A. § 51-2-7). Property-owner (premises) liability is a separate theory (O.C.G.A. § 51-3-1). A Georgia property owner who is not a contractor is not a statutory employer (Yoho v. Ringier of Am., 263 Ga. 338 (1993)); in South Carolina an owner whose own trade or business the work is part of can be a statutory employer (§ 42-1-400) — irrelevant to a sales-call visit.",
+   "sourceName": "S.C. Code § 47-3-110; O.C.G.A. § 51-2-7; O.C.G.A. § 34-9-8 annotations (Yoho v. Ringier)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t47c003.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Minimal fix: 'you may have a claim against the dog’s owner or the property owner.' (+3 words). Do not add the strict-liability distinction; the post is short."
+  },
+  {
+   "surface": "body",
+   "claim": "At work, you may be injured by toxic chemicals or other dangerous substances. You may be able to file a claim against the manufacturer of these substances.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-1-11; S.C. Code § 15-73-10",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct (product liability against the maker of the chemical; failure to warn). The exposure itself may be an occupational disease claim under comp (O.C.G.A. § 34-9-280; S.C. Code Title 42 Chapter 11). No edit."
+  },
+  {
+   "surface": "body",
+   "claim": "Workers’ compensation claims are somewhat simpler than third-party liability claims because workers’ compensation is a no-fault system.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-1(4); S.C. Code § 42-1-160(A)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-1/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate: fault is not an element of a comp claim."
+  },
+  {
+   "surface": "body",
+   "claim": "You simply have to show that the injury occurred while you were at work or performing a work-related duty.",
+   "verdict": "update",
+   "currentValue": "Both states require an injury 'arising out of and in the course of' employment (O.C.G.A. § 34-9-1(4); S.C. Code § 42-1-160(A)). Being at work is the 'in the course of' half only; 'arising out of' requires a causal connection to the work — e.g., in Georgia an injury from an attack for reasons personal to the employee is excluded (§ 34-9-1(4)), and South Carolina requires 'a causal connection between the conditions under which the work is required to be performed and the resulting injury' (per facts-1650). Both states also condition benefits on timely notice (GA 30 days, § 34-9-80; SC 90 days, § 42-15-20).",
+   "sourceName": "O.C.G.A. § 34-9-1(4); S.C. Code § 42-1-160(A)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Replace with: 'You generally have to show that the injury arose out of and in the course of your job — being at work when it happened is not always enough.' (+~6 words). Do not add the notice deadlines here unless word budget allows; if added, they are comp deadlines (30 days GA / 90 days SC), never § 9-3-33 or § 15-3-530."
+  },
+  {
+   "surface": "body",
+   "claim": "However, in a third-party claim, you must prove that the other party was negligent.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-1-11 (strict product liability); S.C. Code § 47-3-110 (strict dog-bite liability)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11/",
+   "retrievedAt": "2026-10-02",
+   "note": "Generally true. Two of the post's own examples do not require negligence: Georgia product claims under § 51-1-11(b)(1) and South Carolina dog-bite claims under § 47-3-110 are strict liability. Optional softening: 'you usually must prove'. Low priority; no word growth."
+  },
+  {
+   "surface": "body",
+   "claim": "The third party owed you a duty of care",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Standard negligence elements (duty, breach, causation, damages)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "The third party breached this duty of care",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Standard negligence elements",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "As a result of the breach, you suffered injuries",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Standard negligence elements (causation)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate (causation)."
+  },
+  {
+   "surface": "body",
+   "claim": "Your injuries caused you to suffer monetary damages",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Standard negligence elements (damages); O.C.G.A. § 51-12-33; Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Acceptable. Damages are not only monetary (pain and suffering is recoverable). Your own share of fault reduces or bars recovery: Georgia bars recovery at 50% or more fault (§ 51-12-33(g)); South Carolina bars it when your fault exceeds the defendants' (more than 50%, Nelson v. Concrete Supply). Optional, not required."
+  },
+  {
+   "surface": "body",
+   "claim": "You can collect workers’ compensation while also pursuing compensation for the full extent of your damages against a third-party by filing a lawsuit against the liable party.",
+   "verdict": "update",
+   "currentValue": "True that both run at once (O.C.G.A. § 34-9-11.1(a); S.C. Code §§ 42-1-550, 42-1-560(b)), and compensatory damages against a third party (including pain and suffering) are not capped by comp limits; punitive damages are capped (GA $250,000 in most cases, O.C.G.A. § 51-12-5.1(g); SC greater of three times compensatory or $500,000 with exceptions, S.C. Code § 15-32-530). But the post omits two things that change what the worker keeps and when to act: (1) the comp insurer's lien on the recovery — Georgia: a 'subrogation lien, not to exceed the actual amount of compensation paid', recoverable 'only ... if the injured employee has been fully and completely compensated ... for all economic and noneconomic losses' (§ 34-9-11.1(b)), the carrier may intervene, and if the employee has not sued within one year of the injury the employer/insurer may bring the action itself (§ 34-9-11.1(c)); South Carolina: the carrier 'shall have a lien on the proceeds of any recovery ... less the reasonable and necessary expenses, including attorney fees', any balance is a credit against future comp, notice of suit goes to the Commission, employer and carrier within 30 days, the Commission may reduce the lien proportionally when the recovery is less than total damages, and a settlement without the carrier's written consent for less than the compensation owed is invalid against the carrier (§ 42-1-560(b), (f)); (2) the deadlines — the third-party suit runs on the tort statute of limitations, 2 years in Georgia (O.C.G.A. § 9-3-33) and 3 years in South Carolina (S.C. Code § 15-3-530), but in South Carolina the action 'must be commenced not later than one year after the carrier accepts liability for the payment of compensation or makes payment pursuant to an award', after which the right of action can pass to the carrier by assignment on 20 days' written notice (§ 42-1-560(b)-(c)).",
+   "sourceName": "O.C.G.A. §§ 34-9-11.1, 9-3-33, 51-12-5.1; S.C. Code §§ 42-1-560, 15-3-530, 15-32-530",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+   "retrievedAt": "2026-10-02",
+   "note": "This is the one place the state-specific sentences belong (and the only correct place for § 9-3-33 / § 15-3-530 on this page — they are tort deadlines for the third-party suit, never for the comp claim). Append after the sentence (keep it): 'Your workers’ compensation insurer may be repaid from that recovery. In Georgia, the third-party suit generally must be filed within two years (O.C.G.A. § 9-3-33), and the insurer is repaid only if you have been fully compensated (O.C.G.A. § 34-9-11.1). In South Carolina, the general limit is three years (S.C. Code § 15-3-530), but you should sue within one year after the insurer accepts your claim, or your right to sue can pass to the insurer (S.C. Code § 42-1-560).' (~70 words). SC § 42-1-560 text verified on scstatehouse.gov 2026-10-02; GA § 34-9-11.1 text from facts-1711/1650."
+  },
+  {
+   "surface": "body",
+   "claim": "Third-party liability claims can be complex, so it is useful to have the assistance of a skilled workers’ compensation lawyer who is familiar with these issues. The law firm of Roden Law can evaluate your claim and determine all legal avenues for recovering compensation.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Firm statement",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Firm statement, not a legal claim."
+  },
+  {
+   "surface": "body",
+   "claim": "We can discuss your claim during a free evaluation. We charge no upfront fees, so there is no risk to finding out more about your rights. We only get paid if you are fairly compensated.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md trust signals (contingency fee; no fees unless we win)",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Firm fee representation, consistent with the site-wide contingency statement (as recorded in facts-1663/1744/4738). Optional: 'We only get paid if we recover compensation for you' is the profile wording; 'fairly compensated' is vaguer but not false. No phone link in the post; adding one is a CTA decision for the editor, not a facts item."
+  },
+  {
+   "surface": "excerpt",
+   "claim": "When someone other than your employer caused a work injury, you may have a claim beyond workers' compensation. How the two fit together.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Published as the Article schema description",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-11-1/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate and state-neutral. No edit."
+  },
+  {
+   "surface": "faq",
+   "claim": "It is a claim against a person or company other than your employer who caused your accident. It is separate from your workers' compensation claim, and you can pursue both at the same time.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-11.1(a); S.C. Code §§ 42-1-550, 42-1-560",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-11-1/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct (FAQPage structured data). Optional, only if FAQ 5 is not updated: 'Your workers' comp insurer may be repaid from what you recover.'"
+  },
+  {
+   "surface": "faq",
+   "claim": "Workers' compensation is a no-fault system that pays medical expenses and replaces part of your wages without you having to prove your employer was negligent. The trade-off is that injured employees are usually barred from suing their employer.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-11(a); S.C. Code § 42-1-540",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-11/",
+   "retrievedAt": "2026-10-02",
+   "note": "Mirrors the body; correct. FAQPage structured data. Optional: add 'In Georgia, the same rule protects your co-workers.'"
+  },
+  {
+   "surface": "faq",
+   "claim": "Car accidents while driving a company vehicle or performing work tasks, injuries from defective tools or equipment, construction site accidents involving a general contractor, and injuries on someone else's property while making a work call.",
+   "verdict": "update",
+   "currentValue": "'construction site accidents involving a general contractor' presents the general contractor as a typical third-party defendant; in both states the general contractor is normally the subcontractor-employee's statutory employer and immune from tort suit (O.C.G.A. §§ 34-9-8, 34-9-11; Wright Assocs. v. Rieder, 247 Ga. 496 (1981); S.C. Code §§ 42-1-410, 42-1-415(D)). Dog-bite example: the claim runs to the dog's owner or keeper (S.C. Code § 47-3-110; O.C.G.A. § 51-2-7).",
+   "sourceName": "O.C.G.A. § 34-9-8; S.C. Code §§ 42-1-415(D), 42-1-540",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-8/",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. Replace 'construction site accidents involving a general contractor' with 'construction site accidents caused by another subcontractor or an equipment company'."
+  },
+  {
+   "surface": "faq",
+   "claim": "Often yes. Construction sites bring together people from different companies, and the general contractor is typically responsible for safety on the jobsite, which can make them liable for an injury your own employer did not cause.",
+   "verdict": "update",
+   "currentValue": "Usually not, in both states. Georgia: the general contractor is the statutory employer of a subcontractor's employee (O.C.G.A. § 34-9-8(a)) and immune from tort suit even when the subcontractor paid the benefits (Wright Assocs. v. Rieder, 247 Ga. 496 (1981); Kitchens v. Winter Co. Bldrs., 161 Ga. App. 701 (1982); Vratsinas Constr. Co. v. Chitwood, 314 Ga. App. 357 (2012)), provided the injury happened on premises where it undertook the work (§ 34-9-8(d)). South Carolina: statutory-employer immunity of 'any higher tier subcontractor, contractor, or project owner' is preserved by S.C. Code § 42-1-415(D), with compensation liability under §§ 42-1-400 to -420. Suits against a different subcontractor survive in both states (S.C. Code § 42-1-540 proviso; Cleveland Elec. Constructors v. Craven, 167 Ga. App. 274 (1983)).",
+   "sourceName": "O.C.G.A. § 34-9-8 and annotations; S.C. Code §§ 42-1-415(D), 42-1-540",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-8/",
+   "retrievedAt": "2026-10-02",
+   "note": "MOST HARMFUL SURFACE — FAQPage structured data answering 'Often yes' to a question whose answer is usually no. Replacement answer: 'Usually not. In both Georgia and South Carolina, a general contractor is generally treated as your “statutory employer” and is protected from lawsuits the same way your own employer is (O.C.G.A. § 34-9-8; S.C. Code § 42-1-415). Another subcontractor, an equipment maker, or a property owner who is not a contractor on the job can often be sued.' Keep the question text unchanged."
+  },
+  {
+   "surface": "faq",
+   "claim": "No. A third-party claim runs alongside your workers' compensation claim rather than replacing it. The two have different targets, different standards of proof, and different types of recoverable damages.",
+   "verdict": "update",
+   "currentValue": "'No' is correct — comp continues (O.C.G.A. § 34-9-11.1(a); S.C. Code § 42-1-560(a)-(b)). Omitted: the comp insurer has a lien on the third-party recovery (Georgia, enforceable only if you are fully and completely compensated, § 34-9-11.1(b); South Carolina, net of attorney fees and expenses, with any balance credited against future comp, § 42-1-560(b)); and in South Carolina a settlement made without the carrier's written consent for less than the compensation owed is invalid against the carrier (§ 42-1-560(f)).",
+   "sourceName": "O.C.G.A. § 34-9-11.1(b); S.C. Code § 42-1-560(b), (f)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. Append one sentence: 'Your workers’ compensation insurer may, however, be repaid out of what you recover from the third party.' Do not add the state detail here; the body carries it."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Empty — no Key Takeaways box renders. Nothing to verify. If the editor adds one, it must not state the construction/general-contractor claim and any deadline in it must carry its state and correct clock (tort: 2 yrs GA / 3 yrs SC for the third-party suit; comp: GA 30-day notice § 34-9-80 and 1-year claim § 34-9-82; SC 90-day notice § 42-15-20 and 2-year claim § 42-15-40)."
+  },
+  {
+   "surface": "metaDescription",
+   "claim": "",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Empty — the theme falls back to the excerpt. Nothing to verify."
+  }
+ ],
+ "recommendedEdits": [
+  "Construction bullet (most important): replace 'If you work for a subcontractor, you may be able to make a claim against the general contractor, who is typically responsible for safety on the jobsite.' with 'If you work for a subcontractor, you may have a claim against another subcontractor or an equipment company on the site. The general contractor, however, is usually treated as your “statutory employer” in Georgia and South Carolina and shares your employer’s protection from lawsuits.' (O.C.G.A. § 34-9-8; S.C. Code § 42-1-415(D)).",
+  "FAQ 4 (FAQPage structured data): replace the answer with 'Usually not. In both Georgia and South Carolina, a general contractor is generally treated as your “statutory employer” and is protected from lawsuits the same way your own employer is (O.C.G.A. § 34-9-8; S.C. Code § 42-1-415). Another subcontractor, an equipment maker, or a property owner who is not a contractor on the job can often be sued.' Keep the question.",
+  "FAQ 3: replace 'construction site accidents involving a general contractor' with 'construction site accidents caused by another subcontractor or an equipment company'.",
+  "Third-party paragraph (the only place state law and tort deadlines belong): keep 'You can collect workers’ compensation while also pursuing ...' and append: 'Your workers’ compensation insurer may be repaid from that recovery. In Georgia, the third-party suit generally must be filed within two years (O.C.G.A. § 9-3-33), and the insurer is repaid only if you have been fully compensated (O.C.G.A. § 34-9-11.1). In South Carolina, the general limit is three years (S.C. Code § 15-3-530), but you should sue within one year after the insurer accepts your claim, or your right to sue can pass to the insurer (S.C. Code § 42-1-560).'",
+  "FAQ 5: append 'Your workers’ compensation insurer may, however, be repaid out of what you recover from the third party.'",
+  "Comp standard: replace 'You simply have to show that the injury occurred while you were at work or performing a work-related duty.' with 'You generally have to show that the injury arose out of and in the course of your job — being at work when it happened is not always enough.' (O.C.G.A. § 34-9-1(4); S.C. Code § 42-1-160(A)).",
+  "Property-owner bullet: 'you may have a claim against the owner of the property' → 'you may have a claim against the dog’s owner or the property owner' (S.C. Code § 47-3-110; O.C.G.A. § 51-2-7).",
+  "DEADLINE SWEEP: no surface states any deadline today, so the tort-SOL-on-WC error class is absent. The only deadlines to add are in the third-party paragraph and they are the tort/third-party clocks (GA 2 yrs § 9-3-33; SC 3 yrs § 15-3-530 plus the SC one-year § 42-1-560 window). Do NOT attach § 9-3-33 or § 15-3-530 to the comp claim; comp clocks are GA 30-day notice (§ 34-9-80) / 1-year claim (§ 34-9-82) and SC 90-day notice (§ 42-15-20) / 2-year claim (§ 42-15-40), not needed in this post.",
+  "WORD BUDGET: body is 642 words (tags stripped). The edits above add roughly 95–105 words (third-party paragraph ~70, construction ~20, comp standard ~6, dog bite ~3), about 15–16% — inside the 15–19% ceiling. If over, trim the SC sentence to 'In South Carolina, the general limit is three years (S.C. Code § 15-3-530), but a one-year window after the insurer accepts your claim can shift the right to sue to the insurer (S.C. Code § 42-1-560).' Do not add a punitive-damages sentence; 'full extent of your damages' is accurate for compensatory damages.",
+  "No edit needed: intro, no-fault description, 'usually barred from suing their employer', car-accident, defective-product and toxic-substance bullets, negligence elements, firm CTA, excerpt. Key Takeaways and meta description are empty.",
+  "Link check (cannot be done from here; rodenlaw.com is Cloudflare-blocked): confirm https://rodenlaw.com/workers-compensation-lawyers/savannah-ga/ and /blog/workers-compensation-car-accident/ resolve without a redirect hop.",
+  "Legal sweep flag: the new third-party paragraph pairs § 9-3-33 / § 15-3-530 with workers' compensation vocabulary; this is the correct context (third-party tort suit), but expect the sweep's banned-pairing rule to flag it for human confirmation, as recorded in facts-1650 and facts-1682."
+ ],
+ "statuteCitations": [
+  {
+   "section": "O.C.G.A. § 34-9-11",
+   "name": "Exclusive remedy; third-party tort-feasor suits preserved except against an employee of the same employer",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-11/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-11.1",
+   "name": "Employer/insurer subrogation lien — only if employee fully and completely compensated (b); intervention; employer may sue if employee has not within one year (c); fee apportionment (d)",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-11-1/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-8",
+   "name": "Statutory employer — principal/intermediate contractor liable for compensation to subcontractor's employee; premises limit (d); tort immunity per Wright Assocs. v. Rieder",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-8/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-1(4)",
+   "name": "'Injury' — arising out of and in the course of employment",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-1/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-80",
+   "name": "Notice to employer — 30 days (comp only)",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-3/part-1/section-34-9-80/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-82",
+   "name": "Comp claim — one year from injury (comp only)",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-3/part-1/section-34-9-82/"
+  },
+  {
+   "section": "O.C.G.A. § 9-3-33",
+   "name": "Personal injury — two years; third-party suit only",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-5.1",
+   "name": "Punitive damages — $250,000 cap with exceptions",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-33",
+   "name": "Apportionment; no recovery at 50 percent or more fault",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+  },
+  {
+   "section": "O.C.G.A. § 51-1-11",
+   "name": "Manufacturer strict liability; 10-year repose",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-11/"
+  },
+  {
+   "section": "O.C.G.A. § 51-2-7",
+   "name": "Liability of owner or keeper of vicious or dangerous animal",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-2/section-51-2-7/"
+  },
+  {
+   "section": "S.C. Code § 42-1-160",
+   "name": "'Injury' — arising out of and in the course of employment",
+   "url": "https://www.scstatehouse.gov/code/t42c001.php"
+  },
+  {
+   "section": "S.C. Code §§ 42-1-400, 42-1-410, 42-1-420",
+   "name": "Statutory employer — owner/contractor liable for compensation to subcontractor's workers",
+   "url": "https://www.scstatehouse.gov/code/t42c001.php"
+  },
+  {
+   "section": "S.C. Code § 42-1-415(D)",
+   "name": "Tort immunity of statutory employers (subcontractor, contractor, project owner) preserved",
+   "url": "https://www.scstatehouse.gov/code/t42c001.php"
+  },
+  {
+   "section": "S.C. Code § 42-1-540",
+   "name": "Exclusive remedy against employer; proviso preserving suits against another subcontractor",
+   "url": "https://www.scstatehouse.gov/code/t42c001.php"
+  },
+  {
+   "section": "S.C. Code § 42-1-550",
+   "name": "Action against third person before award",
+   "url": "https://www.scstatehouse.gov/code/t42c001.php"
+  },
+  {
+   "section": "S.C. Code § 42-1-560",
+   "name": "Third-party action — one year after carrier accepts liability (b), assignment to carrier (c), carrier lien net of fees, 30-day notice of suit, Commission lien reduction and consent to settlement (f)",
+   "url": "https://www.scstatehouse.gov/code/t42c001.php"
+  },
+  {
+   "section": "S.C. Code §§ 42-15-20, 42-15-40",
+   "name": "Comp notice 90 days; claim two years (comp only)",
+   "url": "https://www.scstatehouse.gov/code/t42c015.php"
+  },
+  {
+   "section": "S.C. Code § 15-3-530",
+   "name": "Personal injury — three years; third-party suit only",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "section": "S.C. Code § 15-32-530",
+   "name": "Punitive damages cap",
+   "url": "https://www.scstatehouse.gov/code/t15c032.php"
+  },
+  {
+   "section": "S.C. Code § 47-3-110",
+   "name": "Dog owner/keeper strict liability; invitee is lawfully on private property",
+   "url": "https://www.scstatehouse.gov/code/t47c003.php"
+  }
+ ],
+ "authoritativeLinks": [
+  {
+   "name": "SBWC — Workers' Compensation Law FAQs",
+   "url": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs"
+  },
+  {
+   "name": "SC Workers' Compensation Commission — Injured Worker FAQs",
+   "url": "https://wcc.sc.gov/injured-worker-faqs"
+  },
+  {
+   "name": "S.C. Code Title 42 Chapter 1 (§§ 42-1-400 to -560)",
+   "url": "https://www.scstatehouse.gov/code/t42c001.php"
+  },
+  {
+   "name": "Nelson v. Concrete Supply Co., 303 S.C. 243 (1991) — SC modified comparative negligence",
+   "url": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html"
+  }
+ ],
+ "quoteNote": "Body claims are quoted from body.html; the car-accident claim includes its <a> tag verbatim, and the Savannah-lawyers claim spans an <a> tag and matches once tags are stripped. FAQ and excerpt claims are the full meta.json strings. keyTakeaways and metaDescription are empty and recorded with empty claims. Justia URLs are reused from sibling packs (blocked to curl, verified in-browser on 2026-09-24 or earlier) except § 34-9-8, read in the browser 2026-10-02; scstatehouse.gov, sbwc.georgia.gov and wcc.sc.gov returned HTTP 200 to curl on 2026-10-02."
+}

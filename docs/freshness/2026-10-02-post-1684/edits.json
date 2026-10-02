@@ -1,0 +1,116 @@
+[
+ {
+  "id": "1684",
+  "surface": "content",
+  "before": "<p>If you have been hurt on the job in <strong>Georgia or South Carolina</strong>, one of the first questions you may ask is whether <a href=\"/practice-areas/workers-compensation-lawyers/\">workers' compensation</a> is simply an employee \"benefit\" — like health insurance or a retirement plan — or something more. The answer has real consequences for your medical bills, your paycheck, and your legal rights. According to the <a href=\"https://www.bls.gov/iif/\" target=\"_blank\" rel=\"noopener\">Bureau of Labor Statistics</a>, private-industry employers reported approximately 2.8 million nonfatal workplace injuries and illnesses in a recent year, underscoring how critical the workers' compensation system is for working families nationwide.</p>",
+  "after": "<p>If you have been hurt on the job in <strong>Georgia or South Carolina</strong>, one of the first questions you may ask is whether <a href=\"/practice-areas/workers-compensation-lawyers/\">workers' compensation</a> is simply an employee \"benefit\" — like health insurance or a retirement plan — or something more. The answer has real consequences for your medical bills, your paycheck, and your legal rights. According to the <a href=\"https://www.bls.gov/iif/\" target=\"_blank\" rel=\"noopener\">Bureau of Labor Statistics</a>, private-industry employers reported approximately 2.8 million nonfatal workplace injuries and illnesses in 2022, underscoring how critical the workers' compensation system is for working families nationwide.</p>"
+ },
+ {
+  "id": "1684",
+  "surface": "content",
+  "before": "<ul>\n<li>Injured workers must report the injury to their employer within <strong>30 days</strong> (O.C.G.A. § 34-9-80)</li>\n<li>Claims must be filed within <strong>one year</strong> from the date of injury or last authorized medical treatment (O.C.G.A. § 34-9-82)</li>\n<li>The employer must post a panel of at least six physicians, and <strong>the injured worker chooses</strong> the treating physician from that panel — with one change to another doctor on the same list available without anyone's permission (O.C.G.A. § 34-9-201)</li>\n<li>Weekly income benefits are calculated at two-thirds of the worker's average weekly wage, subject to a state maximum</li>\n</ul>",
+  "after": "<ul>\n<li>Injured workers must report the injury to their employer within <strong>30 days</strong> (O.C.G.A. § 34-9-80)</li>\n<li>Claims must be filed within <strong>one year</strong> of the injury — or one year from the last medical treatment the employer paid for, or two years from your last weekly income benefit, whichever is later (<a href=\"https://law.justia.com/codes/georgia/title-34/chapter-9/article-3/part-1/section-34-9-82/\">O.C.G.A. § 34-9-82</a>)</li>\n<li>The employer must post a panel of at least six physicians, and <strong>the injured worker chooses</strong> the treating physician from that panel — with one change to another doctor on the same list available without anyone's permission (O.C.G.A. § 34-9-201)</li>\n<li>Weekly income benefits are calculated at two-thirds of the worker's average weekly wage, subject to a state maximum</li>\n</ul>"
+ },
+ {
+  "id": "1684",
+  "surface": "content",
+  "before": "<p>If your injury prevents you from working at all during recovery, you are entitled to TTD benefits — typically two-thirds of your average weekly wage. In Georgia, TTD benefits can last up to <strong>400 weeks</strong>. In South Carolina, TTD benefits continue until you reach <strong>maximum medical improvement (MMI)</strong> or return to work.</p>",
+  "after": "<p>If your injury prevents you from working at all during recovery, you are entitled to TTD benefits — typically two-thirds of your average weekly wage. In Georgia, TTD benefits can last up to <strong>400 weeks</strong>. In South Carolina, TTD benefits can last up to <strong>500 weeks</strong> and generally continue until you return to work or the Commission approves stopping them — reaching <strong>maximum medical improvement (MMI)</strong> does not by itself end them (<a href=\"https://www.scstatehouse.gov/code/t42c009.php\">S.C. Code §§ 42-9-10, 42-9-260</a>).</p>"
+ },
+ {
+  "id": "1684",
+  "surface": "content",
+  "before": "<p>If you can return to work but in a limited capacity (light duty) at reduced pay, TPD benefits compensate you for the difference between your pre-injury wages and your current earnings.</p>",
+  "after": "<p>If you can return to work but in a limited capacity (light duty) at reduced pay, TPD benefits pay two-thirds of the difference between your pre-injury wages and your current earnings, up to a weekly cap.</p>"
+ },
+ {
+  "id": "1684",
+  "surface": "content",
+  "before": "<p>In the most severe cases — such as <a href=\"/practice-areas/brain-injury-lawyers/\">traumatic brain injuries</a> or <a href=\"/practice-areas/spinal-cord-injury-lawyers/\">spinal cord injuries</a> that leave the worker permanently unable to perform any job — PTD benefits provide ongoing wage replacement.</p>",
+  "after": "<p>In the most severe cases — such as <a href=\"/practice-areas/brain-injury-lawyers/\">traumatic brain injuries</a> or <a href=\"/practice-areas/spinal-cord-injury-lawyers/\">spinal cord injuries</a> that leave the worker permanently unable to perform any job — benefits can continue long-term. Georgia has no separate PTD benefit, but TTD continues without the usual 400-week cap once the injury is designated catastrophic (O.C.G.A. § 34-9-261); South Carolina pays up to 500 weeks, or for life in cases of paraplegia, quadriplegia or physical brain damage (S.C. Code § 42-9-10).</p>"
+ },
+ {
+  "id": "1684",
+  "surface": "content",
+  "before": "<p>If a work-related injury or illness results in the employee's death, workers' compensation provides death benefits to surviving dependents, including a portion of the deceased worker's average weekly wage and reasonable funeral expenses.</p>",
+  "after": "<p>If a work-related injury or illness results in the employee's death, workers' compensation provides death benefits to surviving dependents, including a portion of the deceased worker's average weekly wage and funeral expenses up to a statutory cap.</p>"
+ },
+ {
+  "id": "1684",
+  "surface": "content",
+  "before": "<p>Both states may provide <a href=\"/blog/the-role-of-vocational-rehabilitation-in-workers-compensation-cases/\">vocational rehabilitation services</a> — including job retraining, education, and placement assistance — when an injured worker cannot return to their previous occupation due to permanent restrictions.</p>",
+  "after": "<p>Georgia's workers' comp system must provide <a href=\"/blog/the-role-of-vocational-rehabilitation-in-workers-compensation-cases/\">vocational rehabilitation services</a> — including job retraining, education, and placement assistance — for catastrophic injuries (<a href=\"https://law.justia.com/codes/georgia/title-34/chapter-9/article-6/part-1/section-34-9-200-1/\">O.C.G.A. § 34-9-200.1</a>) and may provide them in other cases. South Carolina's act has no vocational-rehabilitation benefit, but the state's <a href=\"https://www.scvrd.net/\">Vocational Rehabilitation Department</a> offers retraining.</p>"
+ },
+ {
+  "id": "1684",
+  "surface": "content",
+  "before": "<ul>\n<li><strong>Full-time employees:</strong> Covered in both Georgia and South Carolina</li>\n<li><strong>Part-time employees:</strong> Covered — there is no minimum hours requirement</li>\n<li><strong>Seasonal and temporary workers:</strong> Generally covered if employed by a qualifying employer</li>\n<li><strong>Independent contractors:</strong> Typically NOT covered, though misclassification disputes are common — if you are treated like an employee (set schedule, employer-provided tools, direct supervision), you may qualify regardless of how you are classified on paper</li>\n<li><strong>Farm and agricultural workers:</strong> Exempt under certain conditions in both states</li>\n<li><strong>Domestic workers (housekeepers, nannies):</strong> May be exempt depending on the number of employees</li>\n<li><strong>Federal employees:</strong> Covered under the Federal Employees' Compensation Act (FECA), not state workers' comp</li>\n</ul>",
+  "after": "<ul>\n<li><strong>Full-time employees:</strong> Covered in both Georgia and South Carolina</li>\n<li><strong>Part-time employees:</strong> Covered — there is no minimum hours requirement</li>\n<li><strong>Seasonal and temporary workers:</strong> Generally covered if employed by a qualifying employer</li>\n<li><strong>Independent contractors:</strong> Typically NOT covered, though misclassification disputes are common — if you are treated like an employee (set schedule, employer-provided tools, direct supervision), you may qualify regardless of how you are classified on paper</li>\n<li><strong>Farm and agricultural workers:</strong> Exempt under certain conditions in both states</li>\n<li><strong>Domestic workers (housekeepers, nannies):</strong> Excluded in Georgia (<a href=\"https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-2/\">O.C.G.A. § 34-9-2</a>); in South Carolina, covered only if the household regularly employs four or more workers</li>\n<li><strong>Federal employees:</strong> Covered under the Federal Employees' Compensation Act (FECA), not state workers' comp</li>\n</ul>"
+ },
+ {
+  "id": "1684",
+  "surface": "content",
+  "before": "<p>To be eligible for workers' compensation benefits, the injury or illness must be work-related — meaning it occurred during the course and scope of employment. Qualifying injuries include:</p>\n\n<ul>\n<li><strong>Sudden traumatic injuries:</strong> Falls, equipment accidents, vehicle crashes during work duties, and <a href=\"/practice-areas/construction-accident-lawyers/\">construction site accidents</a></li>\n<li><strong>Repetitive stress injuries:</strong> Carpal tunnel syndrome, tendinitis, and other conditions caused by performing the same motions over time</li>\n<li><strong>Occupational illnesses:</strong> Conditions caused by exposure to chemicals, dust, fumes, or other workplace hazards over time</li>\n<li><strong>Aggravation of pre-existing conditions:</strong> If your job duties worsen a pre-existing injury or condition, the aggravation may be compensable</li>\n<li><strong>Mental health conditions:</strong> In limited circumstances, PTSD or other psychological conditions caused by workplace trauma may qualify</li>\n</ul>\n\n<p>Injuries that typically do NOT qualify include those sustained while commuting to or from work (the \"going and coming\" rule), self-inflicted injuries, and injuries resulting from intoxication or violation of company safety policies.</p>",
+  "after": "<p>To be eligible for workers' compensation benefits, the injury or illness must be work-related — meaning it arose out of and in the course of your employment (O.C.G.A. § 34-9-1(4); <a href=\"https://www.scstatehouse.gov/code/t42c001.php\">S.C. Code § 42-1-160</a>). Qualifying injuries include:</p>\n\n<ul>\n<li><strong>Sudden traumatic injuries:</strong> Falls, equipment accidents, vehicle crashes during work duties, and <a href=\"/practice-areas/construction-accident-lawyers/\">construction site accidents</a></li>\n<li><strong>Repetitive stress injuries:</strong> Carpal tunnel syndrome, tendinitis, and other conditions caused by performing the same motions over time</li>\n<li><strong>Occupational illnesses:</strong> Conditions caused by exposure to chemicals, dust, fumes, or other workplace hazards over time</li>\n<li><strong>Aggravation of pre-existing conditions:</strong> If your job duties worsen a pre-existing injury or condition, the aggravation may be compensable</li>\n<li><strong>Mental health conditions:</strong> In Georgia, a psychological condition qualifies only if it stems from a physical work injury (<em>Abernathy v. City of Albany</em>, 1998); in South Carolina, a mental injury without a physical injury qualifies only if it was caused by extraordinary and unusual working conditions (S.C. Code § 42-1-160(B)–(C))</li>\n</ul>\n\n<p>Injuries that typically do NOT qualify include those sustained while commuting to or from work (the \"going and coming\" rule), self-inflicted injuries, and injuries resulting from intoxication and, in Georgia, willful refusal to use a required safety device (<a href=\"https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-17/\">O.C.G.A. § 34-9-17</a>). South Carolina's act has no safety-rule bar (S.C. Code § 42-9-60).</p>"
+ },
+ {
+  "id": "1684",
+  "surface": "content",
+  "before": "<ol>\n<li><strong>Report the injury immediately:</strong> Notify your employer as soon as possible — within 30 days in Georgia, within 90 days in South Carolina</li>\n<li><strong>Seek authorized medical treatment:</strong> Visit a doctor from the employer's approved panel (Georgia) or the employer-selected physician (South Carolina)</li>\n<li><strong>File a formal claim:</strong> In Georgia, file Form WC-14 with the State Board of Workers' Compensation within one year. In South Carolina, file Form 50 with the Workers' Compensation Commission within two years</li>\n<li><strong>Follow medical treatment plans:</strong> Attend all appointments, follow prescribed treatment, and keep detailed records</li>\n<li><strong>Document everything:</strong> Save copies of all medical records, correspondence with your employer, and wage statements</li>\n</ol>",
+  "after": "<ol>\n<li><strong>Report the injury immediately:</strong> Notify your employer as soon as possible — within 30 days in Georgia, within 90 days in South Carolina</li>\n<li><strong>Seek authorized medical treatment:</strong> Visit a doctor from the employer's approved panel (Georgia) or the employer-selected physician (South Carolina)</li>\n<li><strong>File a formal claim:</strong> In Georgia, file Form WC-14 with the State Board of Workers' Compensation within one year (or later in some cases under O.C.G.A. § 34-9-82). In South Carolina, file Form 50 with the Workers' Compensation Commission within two years</li>\n<li><strong>Follow medical treatment plans:</strong> Attend all appointments, follow prescribed treatment, and keep detailed records</li>\n<li><strong>Document everything:</strong> Save copies of all medical records, correspondence with your employer, and wage statements</li>\n</ol>"
+ },
+ {
+  "id": "1684",
+  "surface": "content",
+  "before": "<ul>\n<li>Ensure your claim is filed correctly and within the applicable deadlines</li>\n<li>Challenge wrongful denials and appeal unfavorable decisions before the workers' comp board or commission</li>\n<li>Negotiate for the maximum benefits you are entitled to — including TTD, PPD, medical coverage, and vocational rehabilitation</li>\n<li>Investigate whether a <a href=\"/practice-areas/product-liability-lawyers/\">third-party claim</a> may be available against a manufacturer, property owner, or other negligent party in addition to your workers' comp benefits</li>\n<li>Protect you from employer retaliation for filing a claim</li>\n</ul>\n\n<p>At Roden Law, we represent injured workers across Georgia and South Carolina on a <strong>contingency fee basis</strong> — you owe nothing unless we secure benefits on your behalf. With offices in <a href=\"/locations/georgia/savannah/\">Savannah</a>, <a href=\"/locations/south-carolina/charleston/\">Charleston</a>, <a href=\"/locations/south-carolina/columbia/\">Columbia</a>, and <a href=\"/locations/south-carolina/myrtle-beach/\">Myrtle Beach</a>, our team is ready to help you get the compensation and medical care you need.</p>",
+  "after": "<ul>\n<li>Ensure your claim is filed correctly and within the applicable deadlines</li>\n<li>Challenge wrongful denials and appeal unfavorable decisions before the workers' comp board or commission</li>\n<li>Negotiate for the maximum benefits you are entitled to — including TTD, PPD, medical coverage, and, in Georgia catastrophic cases, vocational rehabilitation</li>\n<li>Investigate whether a <a href=\"/practice-areas/product-liability-lawyers/\">third-party claim</a> may be available against a manufacturer, property owner, or other negligent party in addition to your workers' comp benefits</li>\n<li>Pursue a retaliation claim in South Carolina if you are fired or demoted for filing (<a href=\"https://www.scstatehouse.gov/code/t41c001.php\">S.C. Code § 41-1-80</a>), and protect your benefits in either state if you lose your job after an injury</li>\n</ul>\n\n<p>At Roden Law, we represent injured workers across Georgia and South Carolina on a <strong>contingency fee basis</strong> — no fees or costs unless we recover compensation for you. With offices in <a href=\"/locations/georgia/savannah/\">Savannah</a>, <a href=\"/locations/georgia/darien/\">Darien</a>, <a href=\"/locations/south-carolina/charleston/\">Charleston</a>, <a href=\"/locations/south-carolina/north-charleston/\">North Charleston</a>, <a href=\"/locations/south-carolina/columbia/\">Columbia</a>, and <a href=\"/locations/south-carolina/myrtle-beach/\">Myrtle Beach</a>, our team is ready to help you get the compensation and medical care you need.</p>"
+ },
+ {
+  "id": "1684",
+  "surface": "excerpt",
+  "before": "Workers' compensation is a legally required insurance programme, not an optional perk. What Georgia and South Carolina employers must provide.",
+  "after": "Workers' compensation is a legally required insurance program, not an optional perk. What Georgia and South Carolina employers must provide."
+ },
+ {
+  "id": "1684",
+  "surface": "meta:_roden_key_takeaways",
+  "before": "Workers compensation is a legally mandated insurance program — not an optional employee benefit — that provides medical care and wage replacement for work-related injuries. Georgia requires coverage for employers with 3+ employees (O.C.G.A. § 34-9-1 et seq.), while South Carolina requires it for 4+ employees (S.C. Code § 42-1-10 et seq.). Benefits include TTD, TPD, PPD, medical treatment, vocational rehabilitation, and death benefits. Filing deadlines are 1 year in Georgia and 2 years in South Carolina.",
+  "after": "Workers compensation is a legally mandated insurance program — not an optional employee benefit — that provides medical care and wage replacement for work-related injuries. Georgia requires coverage for employers with 3+ employees (O.C.G.A. § 34-9-1 et seq.), while South Carolina requires it for 4+ employees (S.C. Code § 42-1-10 et seq.). Benefits include TTD, TPD, PPD, medical treatment and death benefits, plus vocational rehabilitation in Georgia catastrophic cases. Filing deadlines are 1 year in Georgia (or 1 year after the last employer-paid treatment, or 2 years after the last income benefit, O.C.G.A. § 34-9-82) and 2 years in South Carolina."
+ },
+ {
+  "id": "1684",
+  "surface": "meta:_roden_meta_description",
+  "before": "",
+  "after": "Workers' comp is required, not a perk: Georgia employers with 3+ workers and South Carolina employers with 4+ must carry it. Benefits and deadlines."
+ },
+ {
+  "id": "1684",
+  "surface": "faq:0:answer",
+  "before": "Workers compensation is a legally mandated insurance program, not a voluntary employee benefit. Both Georgia (O.C.G.A. § 34-9-1 et seq.) and South Carolina (S.C. Code § 42-1-10 et seq.) require qualifying employers to carry coverage. Unlike optional benefits like health insurance, workers comp is automatic and cannot be opted out of.",
+  "after": "Workers compensation is a legally mandated insurance program, not a voluntary employee benefit. Both Georgia (O.C.G.A. § 34-9-1 et seq.) and South Carolina (S.C. Code § 42-1-10 et seq.) require qualifying employers to carry coverage. Unlike optional benefits like health insurance, workers comp is automatic, and employees cannot opt out of it (in Georgia, certain corporate officers and LLC members may exempt themselves under O.C.G.A. § 34-9-2.1)."
+ },
+ {
+  "id": "1684",
+  "surface": "faq:2:answer",
+  "before": "Workers compensation provides medical benefits covering all authorized treatment, temporary total and partial disability benefits (typically two-thirds of average weekly wages), permanent partial and total disability benefits, vocational rehabilitation, and death benefits for surviving dependents.",
+  "after": "Workers compensation provides medical benefits covering all authorized treatment, temporary total and partial disability benefits (typically two-thirds of average weekly wages, or of the wage difference for partial disability), permanent disability benefits, death benefits for surviving dependents, and — in Georgia catastrophic cases — vocational rehabilitation."
+ },
+ {
+  "id": "1684",
+  "surface": "faq:3:answer",
+  "before": "In Georgia, you must report the injury within 30 days and file a formal claim within 1 year (O.C.G.A. § 34-9-82). In South Carolina, you must report within 90 days and file within 2 years (S.C. Code § 42-15-40). Missing these deadlines can jeopardize your benefits.",
+  "after": "In Georgia, you must report the injury within 30 days and file a formal claim within 1 year of the injury, or within 1 year after the last employer-paid medical treatment or 2 years after the last weekly income benefit (O.C.G.A. § 34-9-82). In South Carolina, you must report within 90 days and file within 2 years (S.C. Code § 42-15-40). Missing these deadlines can jeopardize your benefits."
+ },
+ {
+  "id": "1684",
+  "surface": "faq:5:answer",
+  "before": "Both Georgia and South Carolina prohibit employer retaliation for filing a legitimate workers compensation claim. If you believe you were terminated or demoted because you filed a claim, an attorney can help you pursue legal remedies in addition to your workers comp benefits.",
+  "after": "It depends on the state. In South Carolina, it is illegal to fire or demote you for filing a workers compensation claim in good faith; you can sue for lost wages and reinstatement, but you must do so within one year (S.C. Code § 41-1-80). Georgia has no equivalent law, and most employees there can be fired at will (Evans v. Bibb Co., 178 Ga. App. 139 (1986)), but losing your job does not necessarily end your benefits, especially if the firing was a pretext to avoid paying them (Padgett v. Waffle House, 269 Ga. 105 (1998)). An attorney can review your options in either state."
+ },
+ {
+  "id": "1684",
+  "surface": "faq:5:question",
+  "before": "Can my employer fire me for filing a workers compensation claim?",
+  "after": "Can my employer fire me for filing a workers compensation claim in Georgia or South Carolina?"
+ }
+]
