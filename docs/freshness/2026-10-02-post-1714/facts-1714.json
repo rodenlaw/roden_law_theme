@@ -1,0 +1,681 @@
+{
+ "postId": 1714,
+ "slug": "accident-claims-with-an-expired-license",
+ "liveUrl": "https://rodenlaw.com/blog/accident-claims-with-an-expired-license/",
+ "jurisdiction": "GA+SC",
+ "researchedAt": "2026-10-02",
+ "verifiedClaims": [
+  {
+   "surface": "excerpt",
+   "claim": "An expired licence does not bar an injury claim in Georgia or South Carolina. How courts separate a paperwork lapse from crash causation.",
+   "verdict": "update",
+   "currentValue": "An expired license does not bar an injury claim in Georgia or South Carolina. How courts separate a paperwork lapse from crash causation.",
+   "sourceName": "Thames v. Pinson (Ga. Ct. App. 2025); Fairchild v. SCDOT (S.C. 2012)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2025/a25a0491.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Substance is correct. Fix the British spelling 'licence' -> 'license' (the post uses 'license' everywhere else). Excerpt is published as the Article schema description."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "An expired driver's license does not bar personal injury claims in Georgia or South Carolina.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Thames v. Pinson (Ga. Ct. App. 2025); Fairchild v. SCDOT, 398 S.C. 90 (2012)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2025/a25a0491.html",
+   "retrievedAt": "2026-10-02",
+   "note": "No statute in either state makes a valid license a condition of suing for injuries; the only question is whether the license lapse caused the crash. Thames v. Pinson, No. A25A0491 (Ga. Ct. App. Mar. 18, 2025) (consolidated with Pontoo v. Pinson, A25A0489, and Dass v. Pinson, A25A0490): the driver's license was suspended, yet 'the absence of a valid driver's license does not, by itself, support a negligence claim. As we have explained, \"[w]hile driving without a license is a violation of State law, it does not constitute actionable negligence unless there is a causal connection between the violation and the injury.\" Keenan v. Hill, 190 Ga. App. 108, 111-112 (6) (1989).' Summary judgment for the unlicensed driver was required because the record showed no causal connection. Older line: Carpenter v. Lyons, 78 Ga. App. 214 (1948) (annotation to § 40-5-20)."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Courts distinguish between administrative violations and accident causation — an expired license does not cause collisions.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Thames v. Pinson (Ga. Ct. App. 2025); Fairchild v. SCDOT (S.C. 2012)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2025/a25a0491.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Matches both states' causal-connection rule. Optional precision: 'is not evidence of fault unless it is causally connected to the crash'."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Georgia (O.C.G.A. § 51-12-33) and South Carolina use modified comparative fault, reducing damages by fault percentage.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-33(a),(g); Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Georgia bar at 50% (§ 51-12-33(g)), unchanged by SB 68 (2025). South Carolina: recover if negligence 'not greater than that of the defendant' (Nelson), i.e. barred at 51%."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Insurance companies may try to exploit an expired license, but legal precedent supports recovery.",
+   "verdict": "update",
+   "currentValue": "Insurance companies may try to exploit an expired license, but Georgia's Court of Appeals held in 2025 that lack of a valid license 'does not, by itself, support a negligence claim' without a causal link to the crash, and South Carolina requires the same causal link.",
+   "sourceName": "Thames v. Pinson, No. A25A0491 (Ga. Ct. App. Mar. 18, 2025)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2025/a25a0491.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate but vague; naming the precedent makes the takeaway checkable. Optional. Thames v. Pinson, No. A25A0491 (Ga. Ct. App. Mar. 18, 2025) (consolidated with Pontoo v. Pinson, A25A0489, and Dass v. Pinson, A25A0490): the driver's license was suspended, yet 'the absence of a valid driver's license does not, by itself, support a negligence claim. As we have explained, \"[w]hile driving without a license is a violation of State law, it does not constitute actionable negligence unless there is a causal connection between the violation and the injury.\" Keenan v. Hill, 190 Ga. App. 108, 111-112 (6) (1989).' Summary judgment for the unlicensed driver was required because the record showed no causal connection. Older line: Carpenter v. Lyons, 78 Ga. App. 214 (1948) (annotation to § 40-5-20)."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Georgia statute of limitations is 2 years (O.C.G.A. § 9-3-33); South Carolina is 3 years (S.C. Code § 15-3-530).",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-3-33; S.C. Code § 15-3-530(5)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "§ 9-3-33: injuries to the person 'within two years after the right of action accrues'. S.C. § 15-3-530(5): three years for injury to the person (scstatehouse t15c003). Georgia has no general discovery rule for car-crash injury claims."
+  },
+  {
+   "surface": "faq:0",
+   "claim": "Yes. In both Georgia and South Carolina, an expired license does not prevent you from filing a personal injury claim. Your right to compensation depends on who caused the accident, not whether your license was current. An expired license is an administrative issue that does not cause accidents.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Thames v. Pinson (Ga. Ct. App. 2025); Fairchild v. SCDOT (S.C. 2012)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2025/a25a0491.html",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. Correct. Thames v. Pinson, No. A25A0491 (Ga. Ct. App. Mar. 18, 2025) (consolidated with Pontoo v. Pinson, A25A0489, and Dass v. Pinson, A25A0490): the driver's license was suspended, yet 'the absence of a valid driver's license does not, by itself, support a negligence claim. As we have explained, \"[w]hile driving without a license is a violation of State law, it does not constitute actionable negligence unless there is a causal connection between the violation and the injury.\" Keenan v. Hill, 190 Ga. App. 108, 111-112 (6) (1989).' Summary judgment for the unlicensed driver was required because the record showed no causal connection. Older line: Carpenter v. Lyons, 78 Ga. App. 214 (1948) (annotation to § 40-5-20)."
+  },
+  {
+   "surface": "faq:1",
+   "claim": "Insurance companies may try to deny your claim or reduce your settlement based on an expired license, but this is generally not legally supported. An expired license does not establish causation for the accident. Having an attorney handle insurance communications prevents them from exploiting this issue.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Thames v. Pinson (Ga. Ct. App. 2025)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2025/a25a0491.html",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. Correct: the at-fault driver's liability insurer pays based on its own insured's fault; the claimant's license status is not a coverage condition of the other driver's policy. 'Generally' is the right hedge."
+  },
+  {
+   "surface": "faq:2",
+   "claim": "No. An expired license is an administrative oversight with minimal impact on fault analysis. A suspended or revoked license — which was taken away due to violations like DUI — carries much more legal weight because it suggests a pattern of unsafe driving behavior.",
+   "verdict": "update",
+   "currentValue": "No. An expired license is a paperwork lapse. A suspended or revoked license is more serious — the state took the privilege away, sometimes for unsafe driving such as DUI and sometimes for unrelated reasons like an unpaid fine or a missed court date — and it can matter in a claim against an owner who lent the car (negligent entrustment). But in Georgia and South Carolina, even a suspended license does not by itself prove the driver caused the crash; there must be a causal connection.",
+   "sourceName": "Thames v. Pinson, No. A25A0491 (Ga. Ct. App. Mar. 18, 2025); O.C.G.A. § 40-5-121; S.C. Code § 56-1-460",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2025/a25a0491.html",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. 'Carries much more legal weight because it suggests a pattern of unsafe driving behavior' overstates the law: Thames v. Pinson involved a SUSPENDED license and still held 'the absence of a valid driver's license does not, by itself, support a negligence claim'. Suspensions also issue for non-driving reasons (failure to appear, unpaid fines, child support, insurance lapse), so 'taken away due to violations like DUI' is too narrow. The distinction is real for the criminal penalty (§ 40-5-121; § 56-1-460 vs § 56-1-440) and for negligent-entrustment claims against the vehicle owner (Dass v. Pinson, same opinion, analyses entrustment separately)."
+  },
+  {
+   "surface": "faq:3",
+   "claim": "While driving with an expired license violates Georgia law (O.C.G.A. § 40-5-20) and South Carolina law (S.C. Code § 56-1-20), courts require that the violation be the proximate cause of the accident for it to affect fault. Since an expired license does not cause accidents, it typically fails the causation test.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 40-5-20(a); S.C. Code § 56-1-20; Thames v. Pinson (Ga. Ct. App. 2025); Fairchild v. SCDOT (S.C. 2012)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-5/article-2/section-40-5-20/",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. Correct. Optional precision for Georgia: a Georgia license expired fewer than 31 days is not a § 40-5-20 offense if the driver 'produces in court a driver's license that would have been valid at the time of the offense' (§ 40-5-20(a)(1))."
+  },
+  {
+   "surface": "faq:4",
+   "claim": "In Georgia, it is a misdemeanor with fines up to $1,000 and up to 12 months in jail (O.C.G.A. § 40-5-20). In South Carolina, penalties include fines up to $300 and up to 30 days in jail for a first offense (S.C. Code § 56-1-460). The criminal case is separate from your civil injury claim.",
+   "verdict": "update",
+   "currentValue": "In Georgia, driving on an expired license is a misdemeanor punished under O.C.G.A. § 40-5-121(a): for a first conviction within five years, 2 days to 12 months in jail (which a judge may suspend or probate) and a fine of $500 to $1,000 — but if the license had been expired fewer than 31 days and you show the court a valid license, you are not guilty (O.C.G.A. § 40-5-20(a)(1)). In South Carolina, a first offense of driving without a valid license is a misdemeanor with a fine of $50 to $100 or 30 days in jail (S.C. Code § 56-1-440). The criminal case is separate from your civil injury claim.",
+   "sourceName": "O.C.G.A. §§ 40-5-20(a), 40-5-121(a); S.C. Code § 56-1-440(A)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c001.php",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. LEGAL ERROR on the South Carolina half: § 56-1-460 is driving under SUSPENSION ('when the person's license to drive is canceled, suspended, or revoked'), and its '$300 or up to thirty days' first-offense penalty does not apply to an expired license. An expired license is no 'valid' license under § 56-1-20, punished by § 56-1-440(A): first offense 'not less than fifty dollars nor more than one hundred dollars or imprisoned for thirty days'. Georgia half: 'up to $1,000 and up to 12 months' matches the maxima in § 40-5-121(a) (to which § 40-5-20(a) points) but omits the 2-day minimum jail term and the $500 fine floor, and omits the 31-day safe harbor. Georgia source: https://law.justia.com/codes/georgia/title-40/chapter-5/article-6/section-40-5-121/"
+  },
+  {
+   "surface": "body",
+   "claim": "an expired license does not prevent you from filing a personal injury claim in either Georgia or South Carolina. Your right to compensation depends on who caused the accident, not whether your license was current.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Thames v. Pinson (Ga. Ct. App. 2025); Fairchild v. SCDOT (S.C. 2012)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2025/a25a0491.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Thames v. Pinson, No. A25A0491 (Ga. Ct. App. Mar. 18, 2025) (consolidated with Pontoo v. Pinson, A25A0489, and Dass v. Pinson, A25A0490): the driver's license was suspended, yet 'the absence of a valid driver's license does not, by itself, support a negligence claim. As we have explained, \"[w]hile driving without a license is a violation of State law, it does not constitute actionable negligence unless there is a causal connection between the violation and the injury.\" Keenan v. Hill, 190 Ga. App. 108, 111-112 (6) (1989).' Summary judgment for the unlicensed driver was required because the record showed no causal connection. Older line: Carpenter v. Lyons, 78 Ga. App. 214 (1948) (annotation to § 40-5-20)."
+  },
+  {
+   "surface": "body",
+   "claim": "As the Cornell Law Institute explains, negligence requires proving that the defendant breached a duty of care and that breach caused the plaintiff's injuries.",
+   "verdict": "update",
+   "currentValue": "As Cornell Law School's Legal Information Institute explains, negligence requires proving that the defendant owed and breached a duty of care and that the breach caused the plaintiff's injuries.",
+   "sourceName": "Legal Information Institute (Cornell Law School), Wex: Negligence",
+   "sourceUrl": "https://www.law.cornell.edu/wex/negligence",
+   "retrievedAt": "2026-10-02",
+   "note": "The publisher is the 'Legal Information Institute' at Cornell Law School, not the 'Cornell Law Institute'. LII lists duty, breach, harm, proximate cause and cause-in-fact. Link resolves (200). The claim text spans an <a> tag."
+  },
+  {
+   "surface": "body",
+   "claim": "An expired license — while illegal — does not cause accidents. A driver with an expired license has the same driving skills and knowledge as they did the day before expiration.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 40-5-20(a); Littlejohn v. State, 165 Ga. App. 562 (1983) (annotation)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-5/article-2/section-40-5-20/",
+   "retrievedAt": "2026-10-02",
+   "note": "Driving on an expired license violates § 40-5-20(a) (Littlejohn) and S.C. § 56-1-20 ('valid' license). The second sentence is common-sense framing, not a legal claim."
+  },
+  {
+   "surface": "body",
+   "claim": "It means you failed to renew paperwork with the DMV on time.",
+   "verdict": "update",
+   "currentValue": "It means you did not renew on time with Georgia's Department of Driver Services (DDS) or the South Carolina DMV.",
+   "sourceName": "O.C.G.A. § 40-5-32(a); S.C. Code § 56-1-210",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-5/article-2/section-40-5-32/",
+   "retrievedAt": "2026-10-02",
+   "note": "Georgia's licensing agency is the Department of Driver Services, not a 'DMV'. Minor accuracy fix."
+  },
+  {
+   "surface": "body",
+   "claim": "Courts in both states recognize this distinction. If another driver ran a red light and hit your vehicle, the fact that your license expired two weeks ago has no bearing on that driver's negligence.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Thames v. Pinson (Ga. Ct. App. 2025); Fairchild v. SCDOT (S.C. 2012)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2025/a25a0491.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Thames v. Pinson, No. A25A0491 (Ga. Ct. App. Mar. 18, 2025) (consolidated with Pontoo v. Pinson, A25A0489, and Dass v. Pinson, A25A0490): the driver's license was suspended, yet 'the absence of a valid driver's license does not, by itself, support a negligence claim. As we have explained, \"[w]hile driving without a license is a violation of State law, it does not constitute actionable negligence unless there is a causal connection between the violation and the injury.\" Keenan v. Hill, 190 Ga. App. 108, 111-112 (6) (1989).' Summary judgment for the unlicensed driver was required because the record showed no causal connection. Older line: Carpenter v. Lyons, 78 Ga. App. 214 (1948) (annotation to § 40-5-20). Also: a Georgia license expired 'two weeks' (fewer than 31 days) is within the § 40-5-20(a)(1) safe harbor if a valid license is produced in court."
+  },
+  {
+   "surface": "body",
+   "claim": "Valid license that passed its renewal date",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 40-5-32(a)(1),(3); S.C. Code § 56-1-210(A)-(B)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-5/article-2/section-40-5-32/",
+   "retrievedAt": "2026-10-02",
+   "note": "Georgia licenses expire 'on the licensee's birthday in the eighth year following the issuance'; South Carolina 'A license expires eight years from the date of issue'. Wording nit: once expired it is no longer a 'valid' license — optional 'A license that has passed its expiration date'."
+  },
+  {
+   "surface": "body",
+   "claim": "Minimal — administrative issue, not evidence of unsafe driving",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Thames v. Pinson (Ga. Ct. App. 2025)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2025/a25a0491.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct."
+  },
+  {
+   "surface": "body",
+   "claim": "Temporarily revoked due to violations (DUI, points, etc.)",
+   "verdict": "update",
+   "currentValue": "Driving privilege temporarily withdrawn — for DUI, too many points, or non-driving reasons such as a missed court date, unpaid fine or insurance lapse",
+   "sourceName": "O.C.G.A. § 40-5-121; S.C. Code § 56-1-460",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-5/article-6/section-40-5-121/",
+   "retrievedAt": "2026-10-02",
+   "note": "'Temporarily revoked' conflates two legal terms; and suspensions are not only for driving violations."
+  },
+  {
+   "surface": "body",
+   "claim": "Moderate — may suggest pattern of unsafe driving; insurance companies will argue harder",
+   "verdict": "update",
+   "currentValue": "Moderate — insurers will argue harder, and it can support a negligent-entrustment claim against an owner who lent the car, but it still is not evidence of fault without a causal link to the crash",
+   "sourceName": "Thames v. Pinson / Dass v. Pinson (Ga. Ct. App. Mar. 18, 2025)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2025/a25a0491.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Thames v. Pinson is itself a suspended-license case: the court reversed denial of summary judgment because there was no causal connection between the suspended license and the wreck."
+  },
+  {
+   "surface": "body",
+   "claim": "Permanently revoked due to serious violations",
+   "verdict": "update",
+   "currentValue": "Driving privilege revoked for serious violations (for example, habitual-violator status); reinstatement requires a waiting period and reapplication",
+   "sourceName": "O.C.G.A. § 40-5-121(a) (habitual-violator exception, § 40-5-58); S.C. Code § 56-1-460",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-5/article-6/section-40-5-121/",
+   "retrievedAt": "2026-10-02",
+   "note": "Revocation is not permanent in either state as a rule; it is a cancellation with a fixed period before a new license may issue."
+  },
+  {
+   "surface": "body",
+   "claim": "Significant — can be used as evidence of negligence per se in some cases",
+   "verdict": "update",
+   "currentValue": "Significant in the criminal case and for negligent-entrustment claims, but still not proof of fault in the crash unless it is causally connected",
+   "sourceName": "Thames v. Pinson (Ga. Ct. App. 2025); Fairchild v. SCDOT (S.C. 2012)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2025/a25a0491.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Misstates the rule: in both states a license violation supports negligence (per se or otherwise) only if it proximately caused the injury; revocation does not change that."
+  },
+  {
+   "surface": "body",
+   "claim": "Significant — raises questions about driving competence and training",
+   "verdict": "update",
+   "currentValue": "Significant in the criminal case and in a negligent-entrustment claim against whoever lent the car; in the crash claim itself it matters only if it is causally connected to the collision",
+   "sourceName": "Thames v. Pinson (Ga. Ct. App. 2025); Keenan v. Hill, 190 Ga. App. 108 (1989)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2025/a25a0491.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Same causal-connection rule applies to a driver who never held a license."
+  },
+  {
+   "surface": "body",
+   "claim": "A suspended or revoked license raises more serious issues because the state specifically removed your driving privilege due to unsafe conduct.",
+   "verdict": "update",
+   "currentValue": "A suspended or revoked license raises more serious issues because the state withdrew your driving privilege — though even then, it is not evidence of fault unless it is connected to how the crash happened.",
+   "sourceName": "Thames v. Pinson (Ga. Ct. App. 2025)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2025/a25a0491.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Not every suspension is for 'unsafe conduct' (failure to appear, unpaid fines, insurance lapse, child support)."
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia follows a modified comparative fault system under O.C.G.A. § 51-12-33, which allows you to recover damages as long as you are less than 50% at fault for the accident.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-33(g)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "§ 51-12-33(g): no damages 'if the plaintiff is 50 percent or more responsible'. Unchanged by SB 68 (2025)."
+  },
+  {
+   "surface": "body",
+   "claim": "An expired license alone is unlikely to push your fault percentage anywhere near that threshold.",
+   "verdict": "update",
+   "currentValue": "An expired license alone, with no causal link to the crash, should add nothing to your fault percentage.",
+   "sourceName": "Thames v. Pinson (Ga. Ct. App. 2025)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2025/a25a0491.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Under Thames/Keenan a non-causal license violation is not actionable negligence at all, so it is not a source of fault to apportion under § 51-12-33. The current wording implies it adds some fault."
+  },
+  {
+   "surface": "body",
+   "claim": "Under Georgia law, violating a statute can constitute \"negligence per se\" — meaning the violation itself is treated as negligence without requiring additional proof.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-1-6; Thames v. Pinson (Ga. Ct. App. 2025)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2025/a25a0491.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct statement of negligence per se; the next paragraph supplies the causation limit."
+  },
+  {
+   "surface": "body",
+   "claim": "Driving with an expired license violates O.C.G.A. § 40-5-20, which requires all drivers to have a valid license.",
+   "verdict": "update",
+   "currentValue": "Driving with an expired license violates O.C.G.A. § 40-5-20, which requires drivers to have a valid license — though a Georgia license expired fewer than 31 days is not an offense if you produce in court a license that would have been valid at the time.",
+   "sourceName": "O.C.G.A. § 40-5-20(a), (a)(1); Littlejohn v. State, 165 Ga. App. 562 (1983)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-5/article-2/section-40-5-20/",
+   "retrievedAt": "2026-10-02",
+   "note": "§ 40-5-20(a)(1): 'Such person is driving with a driver's license issued by this state that has been expired for less than 31 days at the time of the offense and he or she produces in court a driver's license that would have been valid at the time of the offense, he or she shall not be guilty of such offense'. Adding the safe harbor is optional but directly relevant to readers."
+  },
+  {
+   "surface": "body",
+   "claim": "However, Georgia courts apply a crucial limitation: the statutory violation must be the proximate cause of the injury for negligence per se to apply.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Thames v. Pinson (Ga. Ct. App. 2025); Keenan v. Hill, 190 Ga. App. 108 (1989); Carpenter v. Lyons, 78 Ga. App. 214 (1948)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2025/a25a0491.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Thames v. Pinson, No. A25A0491 (Ga. Ct. App. Mar. 18, 2025) (consolidated with Pontoo v. Pinson, A25A0489, and Dass v. Pinson, A25A0490): the driver's license was suspended, yet 'the absence of a valid driver's license does not, by itself, support a negligence claim. As we have explained, \"[w]hile driving without a license is a violation of State law, it does not constitute actionable negligence unless there is a causal connection between the violation and the injury.\" Keenan v. Hill, 190 Ga. App. 108, 111-112 (6) (1989).' Summary judgment for the unlicensed driver was required because the record showed no causal connection. Older line: Carpenter v. Lyons, 78 Ga. App. 214 (1948) (annotation to § 40-5-20)."
+  },
+  {
+   "surface": "body",
+   "claim": "Since an expired license does not cause accidents — distracted driving, speeding, and running red lights cause accidents — the expired license typically fails the causation test.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Thames v. Pinson (Ga. Ct. App. 2025)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2025/a25a0491.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct."
+  },
+  {
+   "surface": "body",
+   "claim": "Under O.C.G.A. § 9-3-33, you have 2 years from the date of the accident to file a personal injury lawsuit in Georgia.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-3-33",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct; Georgia has no general discovery rule for car-crash injury claims. Tolling exceptions (minors, § 9-3-99 crime-victim tolling) exist but need not be listed."
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina also follows a modified comparative fault system that allows recovery as long as you are less than 51% at fault.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+   "retrievedAt": "2026-10-02",
+   "note": "'a plaintiff in a negligence action may recover damages if his or her negligence is not greater than that of the defendant'."
+  },
+  {
+   "surface": "body",
+   "claim": "Similar to Georgia, South Carolina courts recognize that an expired license is an administrative issue that does not establish causation for an accident.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Fairchild v. SCDOT, 398 S.C. 90 (2012); Cartee v. Lesley, 290 S.C. 333 (1986)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/2012/27112.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Fairchild v. S.C. Dep't of Transp., 398 S.C. 90 (2012), quoting Cartee v. Lesley, 290 S.C. 333 (1986): 'before punitive damages may be submitted to the jury, there must be evidence the statutory violation proximately contributed to the injury'; Cartee's own example is a defendant 'guilty of driving without their driver's licenses' whose violation 'could have nothing to do with the injuries claimed' because '[s]ome inference of causation must be shown.' Field v. Gregory, 230 S.C. 39 (1956): 'The violation of an applicable statute is negligence per se, and whether or not such breach contributed as a proximate cause to [the] plaintiff's injury is ordinarily a question for the jury.' No South Carolina appellate decision applying this to an expired license in a car-crash case was located; the principle is the general causative-violation rule."
+  },
+  {
+   "surface": "body",
+   "claim": "S.C. Code § 56-1-20 requires all drivers to have a valid license.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 56-1-20",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c001.php",
+   "retrievedAt": "2026-10-02",
+   "note": "'No person ... shall drive any motor vehicle upon a highway in this State unless such person has a valid motor vehicle driver's license issued to him under the provisions of this article.' 'All drivers' is slightly broad (the article lists exemptions) but fine."
+  },
+  {
+   "surface": "body",
+   "claim": "While violating this statute is illegal, South Carolina courts analyze whether the violation had a causal connection to the accident.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Fairchild v. SCDOT, 398 S.C. 90 (2012); Field v. Gregory, 230 S.C. 39 (1956)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/2012/27112.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Fairchild v. S.C. Dep't of Transp., 398 S.C. 90 (2012), quoting Cartee v. Lesley, 290 S.C. 333 (1986): 'before punitive damages may be submitted to the jury, there must be evidence the statutory violation proximately contributed to the injury'; Cartee's own example is a defendant 'guilty of driving without their driver's licenses' whose violation 'could have nothing to do with the injuries claimed' because '[s]ome inference of causation must be shown.' Field v. Gregory, 230 S.C. 39 (1956): 'The violation of an applicable statute is negligence per se, and whether or not such breach contributed as a proximate cause to [the] plaintiff's injury is ordinarily a question for the jury.' No South Carolina appellate decision applying this to an expired license in a car-crash case was located; the principle is the general causative-violation rule."
+  },
+  {
+   "surface": "body",
+   "claim": "Under S.C. Code § 15-3-530, you have 3 years from the date of the accident to file a personal injury lawsuit in South Carolina.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 15-3-530(5)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct. (Claims against a governmental entity under the Tort Claims Act run two years, § 15-78-110 — optional caveat.)"
+  },
+  {
+   "surface": "body",
+   "claim": "This denial is often legally unfounded.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Thames v. Pinson (Ga. Ct. App. 2025)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2025/a25a0491.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Fair: a third-party liability carrier's obligation turns on its insured's fault, not the claimant's license."
+  },
+  {
+   "surface": "body",
+   "claim": "in rare cases involving your own insurance (uninsured motorist claims), insurers may argue policy exclusions related to unlicensed driving",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 33-7-11; S.C. Code §§ 38-77-150, 38-77-160",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Appropriately hedged. Neither UM statute conditions coverage on the insured holding a current license; South Carolina UM at the § 38-77-140 minimums is mandatory and cannot be rejected (§ 38-77-150), and policy terms that conflict with the statute are unenforceable to that extent. Do not expand into a claim that such exclusions are always void — no authority specific to unlicensed-driver UM exclusions was located."
+  },
+  {
+   "surface": "body",
+   "claim": "Even in a worst-case scenario where the expired license adds some percentage of fault, comparative fault rules still protect your right to recover.",
+   "verdict": "update",
+   "currentValue": "Even in a worst-case scenario where some fault is assigned to you for how you were driving, comparative fault rules still protect your right to recover.",
+   "sourceName": "Thames v. Pinson (Ga. Ct. App. 2025); O.C.G.A. § 51-12-33; Nelson v. Concrete Supply (S.C. 1991)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2025/a25a0491.html",
+   "retrievedAt": "2026-10-02",
+   "note": "A non-causal expired license is not a source of apportionable fault in either state; framing the table around 'fault for the expired license' contradicts the post's own legal argument. Recommend relabelling the table scenarios to fault for driving conduct."
+  },
+  {
+   "surface": "body",
+   "claim": "Other driver fully at fault (expired license irrelevant)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-33(a)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "$150,000 x 100% = $150,000. Arithmetic correct. Damages figure is a hypothetical, not a statistic."
+  },
+  {
+   "surface": "body",
+   "claim": "Minor fault assigned for expired license",
+   "verdict": "update",
+   "currentValue": "Minor fault assigned (e.g., slightly over the speed limit)",
+   "sourceName": "Thames v. Pinson (Ga. Ct. App. 2025)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2025/a25a0491.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Row math is correct ($150,000 x 0.90 = $135,000), but the label says fault is assigned FOR the expired license, which the law does not support absent causation. Relabel; keep the numbers."
+  },
+  {
+   "surface": "body",
+   "claim": "Moderate fault (license + minor traffic violation)",
+   "verdict": "update",
+   "currentValue": "Moderate fault (a minor traffic violation that contributed to the crash)",
+   "sourceName": "Thames v. Pinson (Ga. Ct. App. 2025)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2025/a25a0491.html",
+   "retrievedAt": "2026-10-02",
+   "note": "$150,000 x 0.75 = $112,500 — correct. Drop 'license +' for the same reason."
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia threshold (barred from recovery)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-33(g)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "50%+ -> $0. Correct."
+  },
+  {
+   "surface": "body",
+   "claim": "SC threshold (barred from recovery)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+   "retrievedAt": "2026-10-02",
+   "note": "51%+ -> $0. Correct."
+  },
+  {
+   "surface": "body",
+   "claim": "In most cases involving an expired license, the fault attributed to the license issue is minimal — typically 0-10% — because the expired license did not cause the collision.",
+   "verdict": "update",
+   "currentValue": "Because an expired license does not cause collisions, it should not be a source of fault at all; the fault analysis turns on how each driver was actually driving.",
+   "sourceName": "Thames v. Pinson (Ga. Ct. App. 2025); Fairchild v. SCDOT (S.C. 2012)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2025/a25a0491.html",
+   "retrievedAt": "2026-10-02",
+   "note": "'Typically 0-10%' is an unsourced statistic — no data on fault percentages attributed to license status exists. Drop the number."
+  },
+  {
+   "surface": "body",
+   "claim": "Under O.C.G.A. § 40-5-20, driving without a valid license in Georgia is a misdemeanor.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. §§ 40-5-20(a), 40-5-121(a)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-5/article-2/section-40-5-20/",
+   "retrievedAt": "2026-10-02",
+   "note": "§ 40-5-20(a): 'Any person convicted of violating this Code section shall be punished as provided in subsection (a) of Code Section 40-5-121'; § 40-5-121(a): 'shall be guilty of a misdemeanor for a first conviction'. Second/third within five years is a high and aggravated misdemeanor; fourth+ is a felony."
+  },
+  {
+   "surface": "body",
+   "claim": "Penalties can include fines up to $1,000 and up to 12 months in jail, though first-time offenders for simple expiration typically receive fines and are ordered to obtain a valid license. The severity depends on the county and whether you have prior offenses.",
+   "verdict": "update",
+   "currentValue": "For a first conviction within five years, the penalty is 2 days to 12 months in jail (a judge may suspend or probate the sentence) and a fine of $500 to $1,000 (O.C.G.A. § 40-5-121(a)); repeat convictions carry higher penalties. If your Georgia license had been expired fewer than 31 days and you produce in court a license that would have been valid at the time, you are not guilty of the offense (O.C.G.A. § 40-5-20(a)(1)).",
+   "sourceName": "O.C.G.A. § 40-5-121(a); § 40-5-20(a)(1)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-5/article-6/section-40-5-121/",
+   "retrievedAt": "2026-10-02",
+   "note": "§ 40-5-121(a): first conviction within five years 'shall be punished by imprisonment for not less than two days nor more than 12 months, and there may be imposed in addition thereto a fine of not less than $500.00 nor more than $1,000.00'. The $1,000 and 12-month maxima are right; the 2-day minimum and $500 floor are missing. 'Typically receive fines and are ordered to obtain a valid license' and 'depends on the county' are unsourced sentencing-practice claims — drop. Sentence suspension/probation per 1992 Op. Att'y Gen. No. U92-10 (annotation)."
+  },
+  {
+   "surface": "body",
+   "claim": "Under S.C. Code § 56-1-460, driving with an expired license in South Carolina can result in fines up to $300 and up to 30 days in jail for a first offense.",
+   "verdict": "update",
+   "currentValue": "Under S.C. Code § 56-1-440, driving without a valid license in South Carolina — which includes an expired one — is a misdemeanor: a first offense carries a fine of $50 to $100 or 30 days in jail, a second offense $500 or 45 days or both, and a third or later offense 45 days to six months.",
+   "sourceName": "S.C. Code §§ 56-1-20, 56-1-440(A), 56-1-460(A)(1)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c001.php",
+   "retrievedAt": "2026-10-02",
+   "note": "LEGAL ERROR: wrong statute and wrong penalty. § 56-1-460 applies only 'when the person's license to drive is canceled, suspended, or revoked' ($300 or up to 30 days, first offense). An expired license is a § 56-1-20 'valid ... license' violation punished by § 56-1-440(A): 'upon conviction of a first offense, must be fined not less than fifty dollars nor more than one hundred dollars or imprisoned for thirty days'. § 56-1-440(A)'s dismissal proviso (proof of 'being a licensed driver at the time of the violation') does not help an expired license. Same error is in faq:4 (FAQPage structured data)."
+  },
+  {
+   "surface": "body",
+   "claim": "Courts are generally more lenient for simple expiration versus driving with a suspended or revoked license.",
+   "verdict": "update",
+   "currentValue": "The legislature sets lighter penalties for driving without a valid license (S.C. Code § 56-1-440) than for driving under suspension (S.C. Code § 56-1-460: $300 or up to 30 days for a first offense, rising to $1,000 and up to 90 days for a third).",
+   "sourceName": "S.C. Code §§ 56-1-440, 56-1-460",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c001.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Replace the unsourced claim about court leniency with the statutory difference, which is verifiable."
+  },
+  {
+   "surface": "body",
+   "claim": "A criminal conviction for the expired license does not automatically reduce your civil damages, though the other side may try to reference it.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Thames v. Pinson (Ga. Ct. App. 2025); Fairchild v. SCDOT (S.C. 2012); S.C. Code § 56-5-6160",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2025/a25a0491.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct. Note for the reviewer: S.C. § 56-5-6160 ('No evidence of conviction of any person for any violation of this chapter shall be admissible ... in any civil action') covers Chapter 5 (rules of the road) only; driving without a license is Chapter 1 (§ 56-1-440), so § 56-5-6160 does not by its terms exclude it — relevance and the causal-connection rule do the work. In Georgia, a guilty plea to a traffic offense may be admitted as an admission (O.C.G.A. § 24-8-801(d)(2); Howard v. Lay, 259 Ga. App. 391 (2003), per sibling pack 1767), but a license offense still matters only if causally connected. Do not add a blanket 'inadmissible' claim."
+  },
+  {
+   "surface": "body",
+   "claim": "showing that you promptly corrected the issue demonstrates good faith and undermines arguments that you are an irresponsible driver",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia DDS, 'Expired License'; O.C.G.A. § 40-5-20(a)(1)",
+   "sourceUrl": "https://dds.georgia.gov/license-expired",
+   "retrievedAt": "2026-10-02",
+   "note": "Practical advice. Useful added facts: Georgia DDS — a license 'expired for less than two years' renews 'normally without having to retest'; two years or more requires the road sign, road rules, driving and eye tests (dds.georgia.gov/license-expired; georgia.gov renewal page: renew up to 150 days before expiration). Do not promise that renewing after the crash triggers the § 40-5-20(a)(1) safe harbor: it requires a license 'that would have been valid at the time of the offense' — leave that to the criminal court."
+  },
+  {
+   "surface": "body",
+   "claim": "avoid discussing your license status with the other driver or bystanders. The police report will document it, but you should not volunteer the information",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 24-8-801(d)(2); SCRE 801(d)(2)",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "Practical advice; a party's own statements are admissible against him in both states. Do not frame as advice to mislead police — you must show your license on request (O.C.G.A. § 40-5-29; S.C. Code § 56-1-190)."
+  },
+  {
+   "surface": "body",
+   "claim": "Medical records establish the damages portion of your claim regardless of license status",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "General practice",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "No legal assertion beyond evidence types."
+  },
+  {
+   "surface": "body",
+   "claim": "Roden Law has recovered over $300 million for injury victims.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md — Firm stats (verbatim): '$300M+ recovered'",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "Firm fact from the client registry; not independently verifiable and not required to be."
+  },
+  {
+   "surface": "body",
+   "claim": "We work on a contingency fee basis — you pay nothing unless we win.",
+   "verdict": "update",
+   "currentValue": "We work on a contingency fee basis — no fees unless we win.",
+   "sourceName": "profiles/writer-profile.md (firm wording: 'No fees unless we win'); commit a132903 (2026-10-02, fee FAQs clarified to fees AND costs)",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "'You pay nothing' can be read to cover case costs; the firm's fee wording was clarified on 2026-10-02 ('Fees and costs apply only upon successful recovery'). Owner to confirm which wording to use; if costs are also contingent, 'no fees and no costs unless we win' matches the live pillar FAQs."
+  },
+  {
+   "surface": "body",
+   "claim": "Contact us today for a free consultation or call 1-844-RESULTS.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "profiles/firm-facts.md (toll-free 1-844-RESULTS = tel:+18447378587)",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "tel: href is tel:+18447378587 — correct."
+  }
+ ],
+ "recommendedEdits": [
+  "Criminal Penalties > South Carolina (body) AND faq:4 (FAQPage): replace § 56-1-460 / '$300 and up to 30 days' with S.C. Code § 56-1-440(A): first offense $50–$100 or 30 days; second $500 or 45 days or both; third+ 45 days–6 months. § 56-1-460 is driving under suspension and does not apply to an expired license.",
+  "Criminal Penalties > Georgia (body) AND faq:4: state the § 40-5-121(a) first-conviction penalty correctly — 2 days to 12 months (may be suspended/probated) plus an optional $500–$1,000 fine — and add the § 40-5-20(a)(1) safe harbor (Georgia license expired fewer than 31 days + valid license produced in court = not guilty). Delete 'first-time offenders ... typically receive fines' and 'depends on the county'.",
+  "License-status table and faq:2: suspended, revoked and never-licensed rows overstate the law. Replace 'can be used as evidence of negligence per se' / 'pattern of unsafe driving' with: not proof of fault unless causally connected (Thames v. Pinson, Ga. Ct. App. 2025 — a suspended-license case), but relevant to the criminal case and to negligent entrustment. Fix 'Temporarily revoked' and 'Permanently revoked'.",
+  "Comparative fault section: stop attributing fault percentages to the expired license itself (intro sentence, rows 'Minor fault assigned for expired license' and 'license + minor traffic violation', and the unsourced 'typically 0-10%'). Keep every dollar figure — the arithmetic ($150,000 / $135,000 / $112,500 / $0 / $0) is correct.",
+  "Georgia section: 'unlikely to push your fault percentage anywhere near that threshold' -> 'should add nothing to your fault percentage'. Optionally add the 31-day safe harbor to the § 40-5-20 sentence.",
+  "Intro: 'Cornell Law Institute' -> 'Cornell Law School's Legal Information Institute'. 'renew paperwork with the DMV' -> Georgia DDS / South Carolina DMV.",
+  "Excerpt: 'licence' -> 'license'.",
+  "Key Takeaways (optional): name the precedent — Thames v. Pinson (Ga. Ct. App. Mar. 18, 2025).",
+  "Courts 'more lenient' sentence (SC): replace with the statutory penalty difference between § 56-1-440 and § 56-1-460.",
+  "Steps > Renew immediately (optional): add Georgia DDS fact — renew without retesting if expired less than two years; two years or more requires knowledge, road and vision tests.",
+  "CTA: 'you pay nothing unless we win' -> firm wording 'no fees unless we win' (or 'no fees and no costs unless we win' per the 2026-10-02 fee-FAQ change) — owner to confirm.",
+  "Reviewer: two-state post — SC commentary must carry Graeham C. Gillin as reviewer (writer profile: Eric Roden is not SC-licensed)."
+ ],
+ "statuteCitations": [
+  {
+   "section": "O.C.G.A. § 40-5-20",
+   "name": "License required; 31-day expired-license safe harbor; penalty by reference to § 40-5-121(a)",
+   "url": "https://law.justia.com/codes/georgia/title-40/chapter-5/article-2/section-40-5-20/"
+  },
+  {
+   "section": "O.C.G.A. § 40-5-121",
+   "name": "Driving without a license or while suspended/revoked — penalties",
+   "url": "https://law.justia.com/codes/georgia/title-40/chapter-5/article-6/section-40-5-121/"
+  },
+  {
+   "section": "O.C.G.A. § 40-5-32",
+   "name": "Expiration (8 years) and renewal of licenses",
+   "url": "https://law.justia.com/codes/georgia/title-40/chapter-5/article-2/section-40-5-32/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-33",
+   "name": "Apportionment of damages; no recovery at 50 percent or more fault",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+  },
+  {
+   "section": "O.C.G.A. § 9-3-33",
+   "name": "Injuries to the person — two-year limitation",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+  },
+  {
+   "section": "S.C. Code § 56-1-20",
+   "name": "Valid driver's license required",
+   "url": "https://www.scstatehouse.gov/code/t56c001.php"
+  },
+  {
+   "section": "S.C. Code § 56-1-210",
+   "name": "License expires eight years from issue; renewal",
+   "url": "https://www.scstatehouse.gov/code/t56c001.php"
+  },
+  {
+   "section": "S.C. Code § 56-1-440",
+   "name": "Penalties for driving without a license",
+   "url": "https://www.scstatehouse.gov/code/t56c001.php"
+  },
+  {
+   "section": "S.C. Code § 56-1-460",
+   "name": "Penalties for driving while license canceled, suspended or revoked",
+   "url": "https://www.scstatehouse.gov/code/t56c001.php"
+  },
+  {
+   "section": "S.C. Code § 56-1-190",
+   "name": "License must be carried and exhibited on demand",
+   "url": "https://www.scstatehouse.gov/code/t56c001.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-6160",
+   "name": "Evidence of conviction (Chapter 5 offenses) inadmissible in civil action",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 15-3-530",
+   "name": "Three-year limitation for personal injury",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "section": "S.C. Code §§ 38-77-140, 38-77-150, 38-77-160",
+   "name": "Minimum limits; mandatory UM; optional UIM",
+   "url": "https://www.scstatehouse.gov/code/t38c077.php"
+  }
+ ],
+ "authoritativeLinks": [
+  {
+   "name": "Thames v. Pinson, No. A25A0491 (Ga. Ct. App. Mar. 18, 2025) — lack of valid (suspended) license not actionable negligence absent causal connection",
+   "url": "https://law.justia.com/cases/georgia/court-of-appeals/2025/a25a0491.html"
+  },
+  {
+   "name": "Fairchild v. S.C. Dep't of Transp., 398 S.C. 90 (2012) — causative statutory violation required; Cartee's driving-without-license example",
+   "url": "https://law.justia.com/cases/south-carolina/supreme-court/2012/27112.html"
+  },
+  {
+   "name": "Nelson v. Concrete Supply Co., 303 S.C. 243 (1991) — South Carolina modified comparative negligence",
+   "url": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html"
+  },
+  {
+   "name": "Georgia DDS — Expired License (renew without retest if expired under two years)",
+   "url": "https://dds.georgia.gov/license-expired"
+  },
+  {
+   "name": "Georgia.gov — Renew a Georgia Driver's License (8-year term; renew 150 days early; expired up to 2 years)",
+   "url": "https://georgia.gov/renew-georgia-drivers-license"
+  },
+  {
+   "name": "Legal Information Institute (Cornell Law School) — Wex: Negligence",
+   "url": "https://www.law.cornell.edu/wex/negligence"
+  },
+  {
+   "name": "South Carolina DMV — license renewal (scdmvonline.com refuses connections from this network; cite by name; the 8-year term is statutory, S.C. Code § 56-1-210)",
+   "url": "https://www.scstatehouse.gov/code/t56c001.php"
+  }
+ ],
+ "quoteNote": "Claims are quoted from the rendered text with tags stripped and whitespace collapsed. Several quotes span inline <a>/<strong> tags and match once tags are stripped; table-cell claims are quoted cell by cell. Justia pages return 403 to curl (bot challenge) but were read in a browser without solving any challenge; scstatehouse.gov, dds.georgia.gov, georgia.gov and law.cornell.edu return 200."
+}

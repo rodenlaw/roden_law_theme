@@ -1,0 +1,716 @@
+{
+ "postId": 3433,
+ "slug": "how-to-maximize-your-car-accident-compensation-in-georgia",
+ "liveUrl": "https://rodenlaw.com/blog/how-to-maximize-your-car-accident-compensation-in-georgia/",
+ "jurisdiction": "GA",
+ "researchedAt": "2026-10-02",
+ "verifiedClaims": [
+  {
+   "surface": "excerpt",
+   "claim": "Follow this guide to navigate the claims process and get fair payment for your vehicle damage and injuries.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "Publishes as the Article description. No factual claim. Optional, more specific: 'How Georgia law values car accident claims — damages, insurance, comparative fault, the two-year deadline and the 2025 tort-reform changes — and the mistakes that cost injured people money.'"
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Georgia car accident victims can recover economic damages for medical bills and lost wages, non-economic damages for pain and suffering, and punitive damages capped at $250,000 under O.C.G.A. § 51-12-5.1.",
+   "verdict": "update",
+   "currentValue": "O.C.G.A. § 51-12-5.1(b): punitive damages only where 'clear and convincing evidence' proves 'willful misconduct, malice, fraud, wantonness, oppression, or that entire want of care which would raise the presumption of conscious indifference to consequences'; 'negligence, even gross negligence, is inadequate' (Colonial Pipeline Co. v. Brown, 258 Ga. 115 (1988)). Cap $250,000 (§ 51-12-5.1(g)); no cap in product-liability cases (e)(1), or where the defendant acted with specific intent to cause harm, or acted or failed to act while under the influence of alcohol or drugs (other than lawfully prescribed drugs taken as prescribed) 'to that degree that his or her judgment is substantially impaired' (f). SB 68 (2025) did not change the cap.",
+   "sourceName": "O.C.G.A. § 51-12-5.1(b),(e)(1),(f),(g) (sibling packs 4584, 1831)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+   "retrievedAt": "2026-10-02",
+   "note": "Renders above the article. The cap is stated as absolute; the body itself says it does not apply to impaired drivers or intentional harm. Suggested: '…and, where clear and convincing evidence shows willful or wanton conduct, punitive damages — capped at $250,000 in most cases, but uncapped for drivers impaired by alcohol or drugs (O.C.G.A. § 51-12-5.1).' Also recommended: add one Key Takeaways sentence on SB 68 (see recommendedEdits) — the box currently says nothing about the 2025 changes that most affect what a Georgia car-crash claim is worth."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Georgia is an at-fault state with 25/50/25 minimum insurance requirements.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia Office of Commissioner of Insurance — Auto ('Bodily Injury Liability – $25,000 per person and $50,000 per incident; Property Damage Liability – $25,000 per incident'); O.C.G.A. §§ 33-7-11(a)(1)(A), 40-9-37",
+   "sourceUrl": "https://oci.georgia.gov/insurance-resources/auto",
+   "retrievedAt": "2026-10-02",
+   "note": "OCI page read 2026-10-02 describes Georgia under the tort (fault) system; no PIP requirement."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "The modified comparative fault rule (O.C.G.A. § 51-12-33) bars recovery at 50% or more fault, and the two-year statute of limitations (O.C.G.A. § 9-3-33) sets a strict filing deadline.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. §§ 51-12-33(g), 9-3-33 (sibling packs 4584, 1831)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "(g): no damages 'if the plaintiff is 50 percent or more responsible'. SB 68 did not change the 50% bar."
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia courts allow recovery of both past and reasonably anticipated future medical costs.",
+   "verdict": "update",
+   "currentValue": "Still true, but since SB 68 (signed and effective April 21, 2025) O.C.G.A. § 51-12-1.1 governs how medical expenses are proven: special damages for medical expenses are 'limited to the reasonable value of medically necessary care, treatment, or services' as determined by the jury (b); if the plaintiff has any public or private health insurance (or workers' compensation), the jury hears both the amounts charged and 'the amounts actually necessary to satisfy such charges pursuant to the insurance contract', whether or not the insurance was used (c); the statute abrogates the collateral source rule to that extent (e). SB 68 § 9(b): Section 7 (which enacts § 51-12-1.1) applies 'only with respect to causes of action arising on or after the effective date of this Act'.",
+   "sourceName": "Georgia SB 68 (2025), signed text (Office of the Governor), read 2026-10-02, Section 7 (O.C.G.A. § 51-12-1.1(a)-(f)) and Section 9(b)",
+   "sourceUrl": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download",
+   "retrievedAt": "2026-10-02",
+   "note": "This is the single biggest pre-SB-68 gap in a post about maximizing compensation: it tells readers billed charges are recoverable without saying that, for crashes on or after April 21, 2025, the jury may also see what their health insurer actually paid. Append: 'For crashes on or after April 21, 2025, Georgia limits medical damages to the reasonable value of necessary care, and if you have health insurance the jury may hear both what was billed and what your insurer actually paid (O.C.G.A. § 51-12-1.1).'"
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia does not cap non-economic damages in most personal injury cases, which means they often represent the largest portion of a settlement",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt, 286 Ga. 731 (2010); O.C.G.A. § 50-21-29(b)(1); O.C.G.A. § 9-10-184 as amended by SB 68 § 1",
+   "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/2010/s09a1432.html",
+   "retrievedAt": "2026-10-02",
+   "note": "No cap for private defendants is correct (Nestlehutt struck the § 51-13-1 med-mal noneconomic caps). 'In most' is already hedged; the exception is claims against the State, capped at $1 million per person under the Georgia Tort Claims Act (§ 50-21-29(b)(1)). Recommended add (SB 68 § 1, applies to pending cases per § 9(b)): 'Since April 21, 2025, a lawyer may suggest a dollar figure for pain and suffering to a jury only in closing argument, and only if it is rationally related to the evidence (O.C.G.A. § 9-10-184).' 'Largest portion of a settlement' is unsourced characterization — acceptable as hedged ('often')."
+  },
+  {
+   "surface": "body",
+   "claim": "Compensation available to your spouse for loss of companionship and partnership.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-3-33 (loss of consortium: four years)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Loss of consortium is the spouse's own claim; § 9-3-33 gives consortium actions four years (sibling pack 4584). Optional: 'your spouse's own claim for…'."
+  },
+  {
+   "surface": "body",
+   "claim": "No cap in Georgia (except medical malpractice, formerly)",
+   "verdict": "update",
+   "currentValue": "Georgia's statutory caps on noneconomic damages in medical malpractice (O.C.G.A. § 51-13-1) were held unconstitutional in Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt, 286 Ga. 731 (2010). There is no cap on compensatory damages against private defendants; claims against the State are capped at $1 million per person / $3 million per occurrence (O.C.G.A. § 50-21-29(b)(1)).",
+   "sourceName": "Nestlehutt, 286 Ga. 731 (2010); O.C.G.A. § 50-21-29(b)(1) (sibling pack 4584)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/2010/s09a1432.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Table cell, non-economic column. 'except medical malpractice, formerly' is confusing (it reads as if med-mal is capped). Suggested cell: 'No cap in Georgia (the medical-malpractice cap was struck down in 2010)'. Economic-column cell 'No cap in Georgia' is correct for private defendants."
+  },
+  {
+   "surface": "body",
+   "claim": "Under O.C.G.A. § 51-12-5.1, Georgia courts may award punitive damages when the defendant acted with willful misconduct, malice, fraud, or conscious indifference to consequences.",
+   "verdict": "update",
+   "currentValue": "O.C.G.A. § 51-12-5.1(b): punitive damages only where 'clear and convincing evidence' proves 'willful misconduct, malice, fraud, wantonness, oppression, or that entire want of care which would raise the presumption of conscious indifference to consequences'; 'negligence, even gross negligence, is inadequate' (Colonial Pipeline Co. v. Brown, 258 Ga. 115 (1988)). Cap $250,000 (§ 51-12-5.1(g)); no cap in product-liability cases (e)(1), or where the defendant acted with specific intent to cause harm, or acted or failed to act while under the influence of alcohol or drugs (other than lawfully prescribed drugs taken as prescribed) 'to that degree that his or her judgment is substantially impaired' (f). SB 68 (2025) did not change the cap.",
+   "sourceName": "O.C.G.A. § 51-12-5.1(b); Colonial Pipeline Co. v. Brown, 258 Ga. 115 (1988)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate as a list but omits the proof standard. Suggested: '…when clear and convincing evidence shows willful misconduct, malice, fraud, wantonness, or an entire want of care that raises the presumption of conscious indifference to consequences. Ordinary negligence — even gross negligence — is not enough.' Colonial Pipeline: https://law.justia.com/cases/georgia/supreme-court/1988/44925-1.html"
+  },
+  {
+   "surface": "body",
+   "claim": "Texting while driving or other grossly reckless distracted driving",
+   "verdict": "update",
+   "currentValue": "Georgia punitive damages require more than negligence, 'even gross negligence' (Colonial Pipeline Co. v. Brown, 258 Ga. 115 (1988)); the test is willful misconduct or an entire want of care raising a presumption of conscious indifference (§ 51-12-5.1(b)). No Georgia authority was verified that makes texting while driving, by itself, sufficient.",
+   "sourceName": "O.C.G.A. § 51-12-5.1(b); Colonial Pipeline Co. v. Brown (1988)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/1988/44925-1.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Bullet in a list of conduct where punitive damages 'most commonly arise'. 'Grossly reckless' invites the reader to think gross negligence qualifies, which Colonial Pipeline rejects. Suggested bullet: 'Distracted driving that shows a conscious disregard for others' safety — for example, a driver who keeps texting after prior crashes or warnings' — or delete the bullet. Drunk/drugged driving, street racing and road rage bullets are fine."
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia law generally caps punitive damages at $250,000 (O.C.G.A. § 51-12-5.1(g)). However, this cap does not apply when the defendant was under the influence of drugs or alcohol at the time of the accident, or when the defendant acted with the specific intent to cause harm.",
+   "verdict": "update",
+   "currentValue": "O.C.G.A. § 51-12-5.1(b): punitive damages only where 'clear and convincing evidence' proves 'willful misconduct, malice, fraud, wantonness, oppression, or that entire want of care which would raise the presumption of conscious indifference to consequences'; 'negligence, even gross negligence, is inadequate' (Colonial Pipeline Co. v. Brown, 258 Ga. 115 (1988)). Cap $250,000 (§ 51-12-5.1(g)); no cap in product-liability cases (e)(1), or where the defendant acted with specific intent to cause harm, or acted or failed to act while under the influence of alcohol or drugs (other than lawfully prescribed drugs taken as prescribed) 'to that degree that his or her judgment is substantially impaired' (f). SB 68 (2025) did not change the cap.",
+   "sourceName": "O.C.G.A. § 51-12-5.1(e)(1),(f),(g) (sibling packs 4584, 1831)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+   "retrievedAt": "2026-10-02",
+   "note": "$250,000 and subsection (g) verified; SB 68 left the cap unchanged. Two precision fixes: the impairment exception requires judgment 'substantially impaired' (and excludes drugs lawfully prescribed and taken as prescribed); product liability is also uncapped. Suggested second sentence: 'However, the cap does not apply when the defendant acted with specific intent to cause harm, or was under the influence of alcohol or drugs to the point that his or her judgment was substantially impaired (O.C.G.A. § 51-12-5.1(f)), or in product liability cases.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Under O.C.G.A. § 40-6-273, Georgia requires drivers to immediately report any accident resulting in injury, death, or property damage exceeding $500 to law enforcement.",
+   "verdict": "update",
+   "currentValue": "O.C.G.A. § 40-6-273: 'The driver of a vehicle involved in an accident resulting in injury to or death of any person or property damage to an apparent extent of $500.00 or more shall immediately, by the quickest means of communication, give notice of such accident to the local police department if such accident occurs within a municipality. If such accident occurs outside a municipality, such notice shall be given to the office of the county sheriff or to the nearest office of the state patrol.'",
+   "sourceName": "O.C.G.A. § 40-6-273 (Code text via UniCourt OCGA mirror, Title 40; Justia URL in statuteCitations)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Threshold is '$500.00 or more' (apparent damage), not 'exceeding $500' — same correction as sibling pack 1679. Suggested: '…injury, death, or apparent property damage of $500 or more to the local police, or outside a city to the county sheriff or the State Patrol.'"
+  },
+  {
+   "surface": "body",
+   "claim": "You can obtain your report through the Georgia Department of Driver Services BuyCrash system",
+   "verdict": "update",
+   "currentValue": "Georgia crash reports are held by the Georgia Department of Transportation, 'the designated state agency for managing and storing the states crash reports in the GEARS database'; 'Crash reports can be purchased directly via the BuyCrash website or by mailing a request to GDOT via the GDOT Request Form.' BuyCrash is not a Department of Driver Services system.",
+   "sourceName": "Georgia DOT — Crash Data & Reporting page (read 2026-10-02)",
+   "sourceUrl": "https://www.dot.ga.gov/GDOT/pages/CrashReporting.aspx",
+   "retrievedAt": "2026-10-02",
+   "note": "Wrong agency, and the link https://online.dds.ga.gov/buycrash/ fails (TLS connection error, 2026-10-02). Replace text and href: 'You can buy a copy online through BuyCrash or request one from the Georgia Department of Transportation' linking to https://www.dot.ga.gov/GDOT/pages/CrashReporting.aspx (sibling packs 1679, 2500)."
+  },
+  {
+   "surface": "body",
+   "claim": "See a doctor within 24 hours.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "Practical advice, not a legal rule; no statute sets a 24-hour window. The surrounding sentence correctly frames the risk as the insurer's 'gap in treatment' argument."
+  },
+  {
+   "surface": "body",
+   "claim": "Provide basic facts but do not give a recorded statement or speculate about fault.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "This step is about your OWN insurer. Unlike the at-fault driver's insurer, your own policy usually contains a cooperation clause that can require you to give a statement or an examination under oath on your own claims (UM, MedPay, collision). No primary source was fetched for policy wording, so do not state a rule; soften: 'Provide basic facts and do not speculate about fault. If your insurer asks for a recorded statement, talk to a lawyer first — your policy may require cooperation, but you can prepare.' The FAQ and the 'Common Mistakes' item correctly limit 'no obligation' to the at-fault driver's insurer."
+  },
+  {
+   "surface": "body",
+   "claim": "Unlike no-fault states, you have the right to file a claim directly against the at-fault driver's liability insurance.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia OCI — Auto (Georgia operates under the tort system: bodily injury liability, property damage liability and uninsured motorist coverages; no PIP)",
+   "sourceUrl": "https://oci.georgia.gov/insurance-resources/auto",
+   "retrievedAt": "2026-10-02",
+   "note": "A third-party insurance claim, yes. Do not extend this to suing the insurer directly: in Georgia a lawsuit is brought against the at-fault driver, not the driver's liability insurer (direct actions are limited to motor-carrier policies). Never suggest a bad-faith claim (§ 33-4-6) against the other driver's insurer — § 33-4-6 is first-party."
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia's minimum insurance requirements under O.C.G.A. § 33-7-11 set the floor — and often the ceiling — of what the at-fault driver's policy will cover:",
+   "verdict": "update",
+   "currentValue": "The 25/50/25 minimum limits appear in O.C.G.A. § 33-7-11(a)(1)(A) (the UM statute) and are made mandatory for vehicle owners by O.C.G.A. § 40-9-37 (sibling pack 1657).",
+   "sourceName": "O.C.G.A. §§ 33-7-11(a)(1)(A), 40-9-37; Georgia OCI — Auto",
+   "sourceUrl": "https://oci.georgia.gov/insurance-resources/auto",
+   "retrievedAt": "2026-10-02",
+   "note": "Minor citation fix: '…under O.C.G.A. § 40-9-37 and § 33-7-11…'. Figures are correct."
+  },
+  {
+   "surface": "body",
+   "claim": "$25,000 per person for bodily injury liability",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia OCI — Auto",
+   "sourceUrl": "https://oci.georgia.gov/insurance-resources/auto",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified."
+  },
+  {
+   "surface": "body",
+   "claim": "$50,000 per accident for bodily injury liability",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia OCI — Auto",
+   "sourceUrl": "https://oci.georgia.gov/insurance-resources/auto",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified (OCI: 'per incident')."
+  },
+  {
+   "surface": "body",
+   "claim": "$25,000 per accident for property damage liability",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia OCI — Auto",
+   "sourceUrl": "https://oci.georgia.gov/insurance-resources/auto",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified (OCI: 'per incident')."
+  },
+  {
+   "surface": "body",
+   "claim": "A single night in a hospital after a serious car accident can easily exceed $25,000, leaving you with a significant shortfall if the at-fault driver carries only the minimum required coverage.",
+   "verdict": "update",
+   "currentValue": "No source supports a single hospital night exceeding $25,000 as typical. The closest public figure: Georgia hospitals' adjusted expenses per inpatient day were $2,370 in 2024 (KFF, from the AHA Annual Survey) — hospital cost, not billed charges; trauma activation, imaging and surgery charges can be far higher, but no source quantifies a 'single night'.",
+   "sourceName": "KFF State Health Facts — Hospital Adjusted Expenses per Inpatient Day, 2024 (AHA Annual Survey), Georgia $2,370.21",
+   "sourceUrl": "https://www.kff.org/health-costs/state-indicator/expenses-per-inpatient-day/",
+   "retrievedAt": "2026-10-02",
+   "note": "$25,000 is the policy limit and stays. Drop the unsourced 'single night' comparison: 'A serious injury that needs emergency surgery or a hospital stay can quickly exceed $25,000, leaving you with a significant shortfall if the at-fault driver carries only the minimum required coverage.' Do not substitute the KFF figure — it is cost per day, not what a patient is billed."
+  },
+  {
+   "surface": "body",
+   "claim": "Under O.C.G.A. § 33-7-11, Georgia insurers must offer you uninsured/underinsured motorist (UM/UIM) coverage equal to your liability limits.",
+   "verdict": "update",
+   "currentValue": "§ 33-7-11(a)(1): every Georgia auto policy must contain UM coverage 'within limits … which at the option of the insured shall be: (A) Not less than $25,000.00 … $50,000.00 … $25,000.00 …; or (B) Equal to the limits of liability' of the policy; (a)(3): the coverage 'shall not be applicable where any insured named in the policy shall reject the coverage in writing.' Georgia UM includes underinsured vehicles ((b)(1)(D)(ii)).",
+   "sourceName": "O.C.G.A. § 33-7-11(a)(1)(A)-(B), (a)(3) (Code text via UniCourt OCGA mirror, Title 33; sibling packs 1724, 1757)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.33.html",
+   "retrievedAt": "2026-10-02",
+   "note": "'Offer' understates it: UM is included in every policy unless a named insured rejects it in writing. Suggested: 'Under O.C.G.A. § 33-7-11, every Georgia auto policy includes uninsured/underinsured motorist (UM/UIM) coverage — at the minimum limits or up to your liability limits — unless you rejected it in writing.'"
+  },
+  {
+   "surface": "body",
+   "claim": "or no insurance at all, which applies to roughly 12% of Georgia drivers",
+   "verdict": "update",
+   "currentValue": "Georgia's estimated uninsured-motorist rate was 19.0% in 2023 (11th highest; national 15.4%) — Insurance Research Council, Uninsured and Underinsured Motorists: 2017–2023 (2025 study), as republished by the Insurance Information Institute. The IRC measures it as the ratio of UM claims to bodily-injury claims.",
+   "sourceName": "Insurance Information Institute, Facts + Statistics: Uninsured motorists (IRC 2023 state table), read 2026-10-02",
+   "sourceUrl": "https://www.iii.org/fact-statistic/facts-statistics-uninsured-motorists",
+   "retrievedAt": "2026-10-02",
+   "note": "12% is out of date and understates the risk. Suggested: '— or no insurance at all, which the Insurance Research Council estimated at about 19% of Georgia drivers in 2023 —'. Same figure as sibling pack 1724."
+  },
+  {
+   "surface": "body",
+   "claim": "your UM/UIM policy can make up the difference between their limits and your actual damages",
+   "verdict": "update",
+   "currentValue": "True of Georgia's default 'added-on' UM: the coverage applies 'in addition to the amounts payable under any available bodily injury liability' coverage, up to the UM limits, but combined recovery may not exceed actual economic and noneconomic losses (§ 33-7-11(b)(1)(D)(ii)(I)). An insured may instead 'select in writing' reduced-by coverage, which pays only 'the difference between the available coverages under the bodily injury liability insurance … and the limits of the uninsured motorist coverages' ((b)(1)(D)(ii)(II)).",
+   "sourceName": "O.C.G.A. § 33-7-11(b)(1)(D)(ii) (Code text via UniCourt OCGA mirror, Title 33)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.33.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Add the limit: '…up to your UM limits. Most Georgia policies stack UM on top of the at-fault driver's coverage (\"added-on\"), but if you chose cheaper \"reduced-by\" coverage in writing, your UM pays only the gap between their limits and yours — check your declarations page.'"
+  },
+  {
+   "surface": "body",
+   "claim": "This optional coverage pays your medical bills regardless of fault",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia OCI — Auto ('Other optional coverages include medical payments coverage…')",
+   "sourceUrl": "https://oci.georgia.gov/insurance-resources/auto",
+   "retrievedAt": "2026-10-02",
+   "note": "MedPay is optional in Georgia; Georgia has no PIP requirement."
+  },
+  {
+   "surface": "body",
+   "claim": "While an officer's fault opinion is not admissible at trial, the report carries significant persuasive weight during settlement negotiations.",
+   "verdict": "update",
+   "currentValue": "Georgia: the parts of a police report recording the officer's own observations can be admitted under the public-records hearsay exception, O.C.G.A. § 24-8-803(8) (Maloof v. MARTA, Ga. Ct. App. 2015); statements by drivers and witnesses remain hearsay. An officer's conclusion about who was at fault is generally excluded unless the officer is qualified to give an expert opinion (O.C.G.A. § 24-7-702).",
+   "sourceName": "O.C.G.A. §§ 24-8-803(8), 24-7-702; Maloof v. Metropolitan Atlanta Rapid Transit Authority (Ga. Ct. App. 2015) (sibling pack 1679)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-24/chapter-7/section-24-7-702/",
+   "retrievedAt": "2026-10-02",
+   "note": "Absolute 'not admissible' overstates it. Suggested: 'While an officer's opinion about fault is usually not admissible at trial, the report carries significant persuasive weight during settlement negotiations.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Your attorney can subpoena footage before it is overwritten, which typically happens within 30 to 90 days.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "No source for a 30–90 day overwrite window; retention varies by system and owner (sibling packs reached the same 'no source' finding for disposal windows). A subpoena also requires a pending case — before suit the tool is a written preservation (spoliation) letter. Suggested: 'Your attorney can send preservation letters and, once suit is filed, subpoena footage — but many systems record over footage within days or weeks, so act quickly.'"
+  },
+  {
+   "surface": "body",
+   "claim": "In commercial truck accident cases, evidence like logbooks, maintenance records, and electronic logging device data can reveal regulatory violations that significantly increase your claim's value.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "49 C.F.R. Part 395 (hours of service; ELDs) — eCFR",
+   "sourceUrl": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-395",
+   "retrievedAt": "2026-10-02",
+   "note": "Qualitative; ELD and records-of-duty-status requirements are in Part 395."
+  },
+  {
+   "surface": "body",
+   "claim": "Your total damages award is reduced by your percentage of fault, and if you are found 50 percent or more at fault, you are completely barred from recovering any compensation.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-33(a),(g)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct; unchanged by SB 68."
+  },
+  {
+   "surface": "body",
+   "claim": "if your damages are $200,000 and a jury determines you were 20 percent at fault, your recovery is reduced to $160,000. But if the jury found you 50 percent at fault, you recover nothing.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Arithmetic under O.C.G.A. § 51-12-33(a),(g): $200,000 × 0.80 = $160,000",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Hypothetical; arithmetic and the 50% bar verified."
+  },
+  {
+   "surface": "body",
+   "claim": "claiming your injuries were worsened by not wearing a seatbelt (O.C.G.A. § 40-8-76.1(d), in lawsuits commenced on or after April 21, 2025)",
+   "verdict": "update",
+   "currentValue": "SB 68 § 5 rewrote § 40-8-76.1(d)(1): failure to wear a seat belt 'may be considered in any civil action as evidence admissible on the issues of negligence, comparative negligence, causation, assumption of risk, or apportionment of fault or for any other purpose and may be evidence used to diminish any recovery for damages', subject to the court's admissibility rulings under O.C.G.A. § 24-4-403. Applicability: SB 68 § 9(a) made the Act effective on the Governor's approval (April 21, 2025); § 9(b) limits only Sections 6 and 7 to causes of action arising on or after that date and states the intent 'that all other provisions of this Act shall apply to causes of action pending on the effective date of this Act, unless such application would be unconstitutional.' Section 5 is therefore not limited to suits 'commenced on or after' April 21, 2025; it was made applicable to pending cases too.",
+   "sourceName": "Georgia SB 68 (2025), signed text (Office of the Governor), read 2026-10-02, Sections 5 and 9",
+   "sourceUrl": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download",
+   "retrievedAt": "2026-10-02",
+   "note": "The post states the rule correctly but the effective-date limiter is wrong (too narrow) — the legislature made § 5 reach cases already pending. Prior law (still shown in older code mirrors) barred the evidence entirely. Suggested: '…claiming your injuries were worsened by not wearing a seat belt — evidence Georgia has allowed juries to consider since April 21, 2025, including in cases already pending then (O.C.G.A. § 40-8-76.1(d), as amended by SB 68)'."
+  },
+  {
+   "surface": "body",
+   "claim": "Even a 5 or 10 percent shift in fault allocation can mean tens of thousands of dollars in a serious injury case.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "Arithmetic illustration (5–10% of a six-figure award). No source needed."
+  },
+  {
+   "surface": "body",
+   "claim": "Under O.C.G.A. § 9-3-33, Georgia imposes a two-year statute of limitations on personal injury claims arising from car accidents.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-3-33 (sibling packs 4584, 4715, 3493)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified."
+  },
+  {
+   "surface": "body",
+   "claim": "This deadline is strictly enforced — Georgia courts routinely dismiss cases filed even one day late.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "Qualitative. Optional add here: claims against a city, county or the State carry much shorter written-notice deadlines — 6 months for a city (O.C.G.A. § 36-33-5), 12 months for a county (§ 36-11-1) and 12 months under the Georgia Tort Claims Act (§ 50-21-26) — see recommendedEdits."
+  },
+  {
+   "surface": "body",
+   "claim": "If the injured person is a minor, the statute is tolled until they turn 18.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-3-90(b) (sibling packs 4721, 1720)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-5/section-9-3-90/",
+   "retrievedAt": "2026-10-02",
+   "note": "§ 9-3-90 tolls for persons under 18 when the claim accrues."
+  },
+  {
+   "surface": "body",
+   "claim": "If the at-fault driver leaves Georgia, the time absent may not count toward the deadline.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-3-94 (sibling packs 4721, 1720)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-5/section-9-3-94/",
+   "retrievedAt": "2026-10-02",
+   "note": "§ 9-3-94: 'if a defendant removes from this state, the time of his absence from the state … shall not be counted'. 'May' is the right hedge — Georgia courts apply it only when the absence actually prevents service (sibling finding)."
+  },
+  {
+   "surface": "body",
+   "claim": "In rare cases, the discovery rule may extend the deadline for injuries not immediately discoverable.",
+   "verdict": "drop",
+   "currentValue": "Georgia has no general discovery rule for personal-injury claims: the two-year period under § 9-3-33 runs from the injury. The narrow judge-made exception is the continuing-tort doctrine for latent injuries from ongoing exposure (e.g., toxic or occupational exposure) — not traumatic car-crash injuries. Statutory tolling is limited to §§ 9-3-90 to 9-3-99 (minority, incapacity, absence, estates, fraud, crime victims).",
+   "sourceName": "O.C.G.A. § 9-3-33 and annotations ('continuing tort'); §§ 9-3-90 to 9-3-99 (sibling packs 4368, 1676, 1720, 1840)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Telling Georgia crash victims a discovery rule may save them invites a missed deadline. Delete the sentence; the paragraph's closing 'these exceptions are narrow, and relying on them is risky' still reads correctly."
+  },
+  {
+   "surface": "body",
+   "claim": "the statute of limitations is also two years under O.C.G.A. § 9-3-33, running from the date of the victim's death rather than the date of the accident.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-3-33 (sibling pack 4584)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct for wrongful death."
+  },
+  {
+   "surface": "body",
+   "claim": "Once you sign a release, you cannot ask for more money",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "General release principle; no figure."
+  },
+  {
+   "surface": "body",
+   "claim": "If you cannot afford treatment, your attorney can often arrange care on a lien basis, where the provider waits for payment until your case resolves.",
+   "verdict": "update",
+   "currentValue": "For causes of action arising on or after April 21, 2025, O.C.G.A. § 51-12-1.1(d) makes letter-of-protection arrangements 'relevant and discoverable': the LOP itself, itemized and coded charges, any sale of the account to a third party and the price paid, and whether and by whom the claimant was referred for treatment.",
+   "sourceName": "Georgia SB 68 (2025), signed text (Office of the Governor), read 2026-10-02, Section 7 (O.C.G.A. § 51-12-1.1(d)) and Section 9(b) (sibling pack 1712)",
+   "sourceUrl": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download",
+   "retrievedAt": "2026-10-02",
+   "note": "Keep the advice; add: 'For crashes since April 21, 2025, the defense can see the lien arrangement and itemized bills, and any sale of the bill to a third party (O.C.G.A. § 51-12-1.1(d)), so treatment should be necessary and reasonably priced.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Accident victims represented by attorneys consistently recover significantly more — even after attorney fees.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "No primary source was found for a net-of-fees recovery advantage; the commonly cited industry studies are old, measure gross payments, and do not isolate case severity. 'Consistently' and 'even after attorney fees' are unsupported. Delete the sentence or soften: 'An experienced lawyer knows which damages you are entitled to, how to counter insurance tactics, and when to take the case to trial.' (the following sentence already says this)."
+  },
+  {
+   "surface": "body",
+   "claim": "Once you have an attorney, the insurance company must communicate through your lawyer — no more recorded statements, no more pressure to accept a lowball offer.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "Overstated: the rule against contacting a represented person (Georgia Rule of Professional Conduct 4.2) binds lawyers, not adjusters. In practice insurers deal through counsel once notified. Suggested: 'Once you have an attorney, the insurance company deals with your lawyer — no more recorded statements, no more pressure to accept a lowball offer.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Insurers know which lawyers try cases and which always settle. A track record of taking cases to verdict changes the calculus for adjusters.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "No source for insurers tracking attorneys' trial records (same finding as sibling pack 4584). Soften: 'Insurers weigh the realistic risk that a case will go to a jury, and that risk is more credible when your attorney is prepared to try it.'"
+  },
+  {
+   "surface": "body",
+   "claim": "If your health insurer, Medicaid, or Medicare paid medical bills, they may seek repayment from your settlement. An attorney can often negotiate these liens down, increasing the net amount you take home.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 33-24-56.1(b) (sibling pack 1711)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-24/article-1/section-33-24-56-1/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct. Optional Georgia strength: a private health insurer may be reimbursed only if your recovery exceeds all your economic and noneconomic losses, and after a pro rata reduction for attorney's fees (O.C.G.A. § 33-24-56.1(b)); Medicare and Medicaid have their own federal/state recovery rights."
+  },
+  {
+   "surface": "body",
+   "claim": "We work on a contingency fee basis — you pay nothing unless we recover compensation for you.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md — contingency fee",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "Firm fact. Note the 2026-10-02 fee-FAQ change on the car and truck pages ('no fees and no costs'); align wording if the firm wants consistency."
+  },
+  {
+   "surface": "body",
+   "claim": "1-844-RESULTS",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md — toll-free 1-844-RESULTS",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "tel:+18447378587 = 1-844-737-8587 (R-E-S-U-L-T-S)."
+  },
+  {
+   "surface": "faq:0",
+   "claim": "Georgia's statute of limitations gives you two years from the date of the accident to file a personal injury lawsuit under O.C.G.A. § 9-3-33.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-3-33",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. Verified."
+  },
+  {
+   "surface": "faq:0",
+   "claim": "Property damage claims also have a four-year deadline.",
+   "verdict": "update",
+   "currentValue": "O.C.G.A. § 9-3-31: actions for injuries to personalty must be brought within four years. Property damage is four years, personal injury two — 'also' wrongly implies they share a deadline.",
+   "sourceName": "O.C.G.A. § 9-3-31 (sibling pack 2479)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-31/",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. Suggested: 'Vehicle and other property damage claims have a separate four-year deadline (O.C.G.A. § 9-3-31).'"
+  },
+  {
+   "surface": "faq:1",
+   "claim": "Georgia requires all drivers to carry minimum liability insurance of 25/50/25 under O.C.G.A. § 33-7-11 — meaning $25,000 per person, $50,000 per accident for bodily injury, and $25,000 for property damage.",
+   "verdict": "update",
+   "currentValue": "25/50/25 verified. The owner's duty to carry these limits is in O.C.G.A. § 40-9-37; § 33-7-11(a)(1)(A) restates the same figures for UM coverage.",
+   "sourceName": "Georgia OCI — Auto; O.C.G.A. §§ 40-9-37, 33-7-11(a)(1)(A)",
+   "sourceUrl": "https://oci.georgia.gov/insurance-resources/auto",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. Figures stay; cite '§ 40-9-37' (or both). Minor."
+  },
+  {
+   "surface": "faq:2",
+   "claim": "Under O.C.G.A. § 51-12-33, Georgia follows a modified comparative fault rule. Your compensation is reduced by your percentage of fault. If you are found 50% or more at fault, you cannot recover any damages.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-33(a),(g)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. Unchanged by SB 68."
+  },
+  {
+   "surface": "faq:3",
+   "claim": "No. You are not legally required to give a recorded statement to the at-fault driver's insurance company, and doing so often hurts your claim.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "FAQPage structured data. Correct as limited to the at-fault driver's insurer (no contractual relationship); your own policy may require cooperation."
+  },
+  {
+   "surface": "faq:4",
+   "claim": "Yes, if the at-fault driver's conduct was willful, wanton, or showed a conscious indifference to consequences.",
+   "verdict": "update",
+   "currentValue": "O.C.G.A. § 51-12-5.1(b): punitive damages only where 'clear and convincing evidence' proves 'willful misconduct, malice, fraud, wantonness, oppression, or that entire want of care which would raise the presumption of conscious indifference to consequences'; 'negligence, even gross negligence, is inadequate' (Colonial Pipeline Co. v. Brown, 258 Ga. 115 (1988)). Cap $250,000 (§ 51-12-5.1(g)); no cap in product-liability cases (e)(1), or where the defendant acted with specific intent to cause harm, or acted or failed to act while under the influence of alcohol or drugs (other than lawfully prescribed drugs taken as prescribed) 'to that degree that his or her judgment is substantially impaired' (f). SB 68 (2025) did not change the cap.",
+   "sourceName": "O.C.G.A. § 51-12-5.1(b); Colonial Pipeline Co. v. Brown (1988)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. Add the proof standard: 'Yes, if clear and convincing evidence shows the at-fault driver's conduct was willful, wanton, or showed a conscious indifference to consequences — ordinary carelessness is not enough.'"
+  },
+  {
+   "surface": "faq:4",
+   "claim": "Under O.C.G.A. § 51-12-5.1, punitive damages are generally capped at $250,000 but exceptions apply when the defendant was intoxicated or acted with specific intent to harm.",
+   "verdict": "update",
+   "currentValue": "O.C.G.A. § 51-12-5.1(b): punitive damages only where 'clear and convincing evidence' proves 'willful misconduct, malice, fraud, wantonness, oppression, or that entire want of care which would raise the presumption of conscious indifference to consequences'; 'negligence, even gross negligence, is inadequate' (Colonial Pipeline Co. v. Brown, 258 Ga. 115 (1988)). Cap $250,000 (§ 51-12-5.1(g)); no cap in product-liability cases (e)(1), or where the defendant acted with specific intent to cause harm, or acted or failed to act while under the influence of alcohol or drugs (other than lawfully prescribed drugs taken as prescribed) 'to that degree that his or her judgment is substantially impaired' (f). SB 68 (2025) did not change the cap.",
+   "sourceName": "O.C.G.A. § 51-12-5.1(e)(1),(f),(g)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. $250,000 correct. 'Intoxicated' → 'impaired by alcohol or drugs to the point that judgment was substantially impaired'; product liability is also uncapped. Suggested: '…capped at $250,000, but there is no cap when the defendant intended to cause harm or was under the influence of alcohol or drugs to the degree that judgment was substantially impaired.'"
+  },
+  {
+   "surface": "faq:5",
+   "claim": "Georgia does not require UM coverage, but it is strongly recommended.",
+   "verdict": "update",
+   "currentValue": "Every Georgia auto policy must include UM coverage unless a named insured rejects it in writing (O.C.G.A. § 33-7-11(a)(1), (a)(3)). Drivers are not required to keep it, but it is on the policy by default.",
+   "sourceName": "O.C.G.A. § 33-7-11(a)(1), (a)(3) (Code text via UniCourt OCGA mirror, Title 33; sibling packs 1657, 1757)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.33.html",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. The current wording implies UM is opt-in; it is opt-out. Suggested: 'Georgia auto policies include UM coverage unless you rejected it in writing, so check your declarations page — many people have it without realizing it.'"
+  },
+  {
+   "surface": "faq:5",
+   "claim": "Without UM coverage, you may need to pursue a personal lawsuit against the uninsured driver directly.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "FAQPage structured data. Accurate; collection from an uninsured individual is often difficult."
+  }
+ ],
+ "recommendedEdits": [
+  "Key Takeaways (renders above the article): change 'punitive damages capped at $250,000 under O.C.G.A. § 51-12-5.1' to 'punitive damages — capped at $250,000 in most cases, with no cap for drivers impaired by alcohol or drugs (O.C.G.A. § 51-12-5.1)'. Add one sentence: 'Georgia's 2025 tort-reform law (SB 68) changed how damages are proven: for crashes on or after April 21, 2025, the jury may hear what your health insurer actually paid, and seat-belt non-use is now admissible.'",
+  "Economic Damages — Medical expenses bullet: after 'past and reasonably anticipated future medical costs.' add 'For crashes on or after April 21, 2025, Georgia limits medical damages to the reasonable value of necessary care, and if you have health insurance the jury may hear both what was billed and what your insurer actually paid (O.C.G.A. § 51-12-1.1).'",
+  "Non-Economic Damages intro: after the 'Georgia does not cap non-economic damages…' sentence add 'Since April 21, 2025, a lawyer may suggest a dollar figure for pain and suffering to the jury only in closing argument, and only if it is rationally related to the evidence (O.C.G.A. § 9-10-184).'",
+  "Damages table, non-economic column last cell: 'No cap in Georgia (except medical malpractice, formerly)' -> 'No cap in Georgia (the medical-malpractice cap was struck down in 2010)'.",
+  "Punitive Damages: first sentence add the standard ('…when clear and convincing evidence shows willful misconduct, malice, fraud, wantonness, or an entire want of care that raises the presumption of conscious indifference to consequences. Ordinary negligence — even gross negligence — is not enough.'). Replace the texting bullet with 'Distracted driving that shows a conscious disregard for others' safety' or delete it. Replace the exceptions sentence: 'However, the cap does not apply when the defendant acted with specific intent to cause harm or was under the influence of alcohol or drugs to the point that his or her judgment was substantially impaired (O.C.G.A. § 51-12-5.1(f)), or in product liability cases.'",
+  "Step 1: 'property damage exceeding $500' -> 'apparent property damage of $500 or more'. Replace 'Georgia Department of Driver Services BuyCrash system' with 'BuyCrash or the Georgia Department of Transportation' and change the dead href https://online.dds.ga.gov/buycrash/ to https://www.dot.ga.gov/GDOT/pages/CrashReporting.aspx.",
+  "Step 4 (your own insurer): 'Provide basic facts but do not give a recorded statement or speculate about fault.' -> 'Provide basic facts and do not speculate about fault. If your own insurer asks for a recorded statement, talk to a lawyer first.'",
+  "Insurance section: '…under O.C.G.A. § 33-7-11 set the floor' -> '…under O.C.G.A. § 40-9-37 set the floor'. Replace 'A single night in a hospital after a serious car accident can easily exceed $25,000' with 'A serious injury that needs emergency surgery or a hospital stay can quickly exceed $25,000'.",
+  "UM paragraph: 'Georgia insurers must offer you uninsured/underinsured motorist (UM/UIM) coverage equal to your liability limits' -> 'every Georgia auto policy includes uninsured/underinsured motorist (UM/UIM) coverage — at the minimum limits or up to your liability limits — unless you rejected it in writing'. 'roughly 12% of Georgia drivers' -> 'about 19% of Georgia drivers in 2023, according to the Insurance Research Council'. After 'make up the difference between their limits and your actual damages' add ', up to your UM limits. Most Georgia policies carry \"added-on\" UM that pays on top of the at-fault driver's coverage; if you chose \"reduced-by\" coverage in writing, it pays only the gap between their limits and yours (O.C.G.A. § 33-7-11(b)(1)(D)).'",
+  "Evidence section: 'While an officer's fault opinion is not admissible at trial' -> 'While an officer's opinion about fault is usually not admissible at trial'. Replace 'Your attorney can subpoena footage before it is overwritten, which typically happens within 30 to 90 days.' with 'Your attorney can send preservation letters and, once suit is filed, subpoena footage — but many systems record over footage within days or weeks, so act quickly.'",
+  "Comparative fault section: replace '(O.C.G.A. § 40-8-76.1(d), in lawsuits commenced on or after April 21, 2025)' with '— evidence Georgia has allowed juries to consider since April 21, 2025, including in cases already pending then (O.C.G.A. § 40-8-76.1(d), as amended by SB 68)'.",
+  "Filing deadline section: delete 'In rare cases, the discovery rule may extend the deadline for injuries not immediately discoverable.' (Georgia has no discovery rule for car-crash injuries). Optional add after 'filed even one day late': 'Claims against a government are shorter still: written notice is due within 6 months for a city (O.C.G.A. § 36-33-5) and 12 months for a county (O.C.G.A. § 36-11-1) or the State (O.C.G.A. § 50-21-26).'",
+  "Common mistakes: after the lien-basis sentence add 'For crashes since April 21, 2025, the defense can obtain the lien arrangement, itemized bills and any sale of the bill to a third party (O.C.G.A. § 51-12-1.1(d)).' Delete or soften 'Accident victims represented by attorneys consistently recover significantly more — even after attorney fees.'",
+  "Lawyer section: 'the insurance company must communicate through your lawyer' -> 'the insurance company deals with your lawyer'. Replace 'Insurers know which lawyers try cases and which always settle. A track record of taking cases to verdict changes the calculus for adjusters.' with 'Insurers weigh the realistic risk that a case will go to a jury, and that risk is more credible when your attorney is prepared to try it.'",
+  "FAQ 0 (FAQPage): 'Property damage claims also have a four-year deadline.' -> 'Vehicle and other property damage claims have a separate four-year deadline (O.C.G.A. § 9-3-31).'",
+  "FAQ 1: cite '§ 40-9-37' for the 25/50/25 requirement (figures unchanged).",
+  "FAQ 4: 'Yes, if clear and convincing evidence shows the at-fault driver's conduct was willful, wanton, or showed a conscious indifference to consequences.' and '…capped at $250,000, but there is no cap when the defendant intended to cause harm or was under the influence of alcohol or drugs to the degree that judgment was substantially impaired.'",
+  "FAQ 5: 'Georgia does not require UM coverage, but it is strongly recommended.' -> 'Georgia auto policies include UM coverage unless you rejected it in writing, so check your declarations page.'",
+  "Keep the post Georgia-only: none of these edits introduces South Carolina law."
+ ],
+ "statuteCitations": [
+  {
+   "section": "O.C.G.A. § 9-3-33",
+   "name": "Injuries to the person — two years; loss of consortium four years",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+  },
+  {
+   "section": "O.C.G.A. § 9-3-31",
+   "name": "Injuries to personalty — four years",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-31/"
+  },
+  {
+   "section": "O.C.G.A. § 9-3-90",
+   "name": "Tolling for minors and legal incompetence",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-5/section-9-3-90/"
+  },
+  {
+   "section": "O.C.G.A. § 9-3-94",
+   "name": "Tolling while a defendant is absent from the state",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-5/section-9-3-94/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-33",
+   "name": "Apportionment; no recovery at 50 percent or more fault (unchanged by SB 68)",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-5.1",
+   "name": "Punitive damages — (b) clear and convincing; (e) product liability uncapped; (f) intent / substantial impairment uncapped; (g) $250,000 cap",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-1.1",
+   "name": "Medical expense damages — reasonable value; insurer-paid amounts admissible; LOP discovery (SB 68 § 7; causes of action arising on/after 2025-04-21)",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-1-1/"
+  },
+  {
+   "section": "O.C.G.A. § 9-10-184",
+   "name": "Noneconomic damages figures argued only in closing, rationally related to the evidence (SB 68 § 1; applies to pending cases)",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-10/article-8/section-9-10-184/"
+  },
+  {
+   "section": "O.C.G.A. § 40-8-76.1(d)",
+   "name": "Seat-belt non-use admissible on negligence, causation, apportionment and damages (SB 68 § 5; applies to pending cases)",
+   "url": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download"
+  },
+  {
+   "section": "O.C.G.A. § 33-7-11",
+   "name": "UM coverage — included unless rejected in writing; limits at insured's option; added-on default, reduced-by by written election",
+   "url": "https://law.justia.com/codes/georgia/title-33/chapter-7/section-33-7-11/"
+  },
+  {
+   "section": "O.C.G.A. § 40-9-37",
+   "name": "Minimum liability limits 25/50/25",
+   "url": "https://law.justia.com/codes/georgia/title-40/chapter-9/article-2/section-40-9-37/"
+  },
+  {
+   "section": "O.C.G.A. § 40-6-273",
+   "name": "Duty to report accidents — injury, death or apparent property damage of $500 or more",
+   "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-12/section-40-6-273/"
+  },
+  {
+   "section": "O.C.G.A. § 24-7-702",
+   "name": "Expert opinion testimony",
+   "url": "https://law.justia.com/codes/georgia/title-24/chapter-7/section-24-7-702/"
+  },
+  {
+   "section": "O.C.G.A. § 33-24-56.1",
+   "name": "Health-benefit reimbursement only if fully compensated; pro rata fee reduction",
+   "url": "https://law.justia.com/codes/georgia/title-33/chapter-24/article-1/section-33-24-56-1/"
+  },
+  {
+   "section": "O.C.G.A. § 50-21-29",
+   "name": "Georgia Tort Claims Act damage limits",
+   "url": "https://law.justia.com/codes/georgia/title-50/chapter-21/article-2/section-50-21-29/"
+  },
+  {
+   "section": "O.C.G.A. § 36-33-5",
+   "name": "Ante-litem notice to a municipality — six months",
+   "url": "https://law.justia.com/codes/georgia/title-36/provisions-applicable-to-municipal-corporations-only/chapter-33/section-36-33-5/"
+  },
+  {
+   "section": "O.C.G.A. § 36-11-1",
+   "name": "Claims against counties — 12 months",
+   "url": "https://law.justia.com/codes/georgia/title-36/provisions-applicable-to-counties-only/chapter-11/section-36-11-1/"
+  },
+  {
+   "section": "O.C.G.A. § 50-21-26",
+   "name": "Georgia Tort Claims Act notice — 12 months",
+   "url": "https://law.justia.com/codes/georgia/title-50/chapter-21/article-2/section-50-21-26/"
+  },
+  {
+   "section": "49 C.F.R. Part 395",
+   "name": "Hours of service; electronic logging devices",
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-395"
+  }
+ ],
+ "authoritativeLinks": [
+  {
+   "name": "Georgia SB 68 (2025), signed text — Office of the Governor (Sections 1, 5, 7, 9)",
+   "url": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download"
+  },
+  {
+   "name": "Georgia Office of Commissioner of Insurance — Auto (25/50/25; MedPay optional)",
+   "url": "https://oci.georgia.gov/insurance-resources/auto"
+  },
+  {
+   "name": "Insurance Information Institute — Facts + Statistics: Uninsured motorists (IRC 2023: Georgia 19.0%, 11th; U.S. 15.4%)",
+   "url": "https://www.iii.org/fact-statistic/facts-statistics-uninsured-motorists"
+  },
+  {
+   "name": "Georgia DOT — Crash Data & Reporting (BuyCrash; GDOT request form)",
+   "url": "https://www.dot.ga.gov/GDOT/pages/CrashReporting.aspx"
+  },
+  {
+   "name": "OCGA Title 40 (UniCourt mirror) — § 40-6-273 text",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html"
+  },
+  {
+   "name": "OCGA Title 33 (UniCourt mirror) — § 33-7-11 text",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.33.html"
+  },
+  {
+   "name": "KFF — Hospital adjusted expenses per inpatient day, 2024 (context only; not for publication)",
+   "url": "https://www.kff.org/health-costs/state-indicator/expenses-per-inpatient-day/"
+  },
+  {
+   "name": "Colonial Pipeline Co. v. Brown, 258 Ga. 115 (1988)",
+   "url": "https://law.justia.com/cases/georgia/supreme-court/1988/44925-1.html"
+  },
+  {
+   "name": "Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt, 286 Ga. 731 (2010)",
+   "url": "https://law.justia.com/cases/georgia/supreme-court/2010/s09a1432.html"
+  }
+ ],
+ "quoteNote": "Claims are quoted from the rendered text of body.html (tags removed, entities decoded: &sect; -> §, &mdash; -> —) and match exactly after whitespace collapse; several quotes span <strong>/<a> tags (e.g. '$250,000', '50 percent or more at fault', 'BuyCrash system'). Meta claims are verbatim from meta.json. Justia URLs are reused from sibling packs and were not re-fetched (Justia returns 403 to curl); § 40-6-273 and § 33-7-11 text was read on the UniCourt OCGA mirror (Title 40 and 33 pages, HTTP 200), and § 40-8-76.1(d), § 51-12-1.1, § 9-10-184 and SB 68 § 9 were read from the signed SB 68 PDF on gov.georgia.gov (HTTP 200). Note the UniCourt mirror still shows the PRE-SB-68 § 40-8-76.1(d) (seat-belt evidence barred) — do not cite it for the seat-belt rule. Every other sourceUrl resolved HTTP 200 on 2026-10-02. The body's outbound https://online.dds.ga.gov/buycrash/ fails (TLS error). No multiplier, 'average settlement', Holt/time-limited-demand or bad-faith claim appears on any surface, so none is in the pack. metaDescription is empty (nothing to verify)."
+}

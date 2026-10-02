@@ -1,0 +1,688 @@
+{
+ "postId": 1758,
+ "slug": "qualifications-for-car-accident-witnesses",
+ "liveUrl": "https://rodenlaw.com/blog/qualifications-for-car-accident-witnesses/",
+ "jurisdiction": "GA+SC",
+ "researchedAt": "2026-10-02",
+ "verifiedClaims": [
+  {
+   "surface": "body",
+   "claim": "When the drivers involved give conflicting accounts of what happened, credible witnesses provide the independent perspective that insurance adjusters, judges, and juries rely on to determine fault.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "General statement of how fault disputes are resolved; no legal rule or figure."
+  },
+  {
+   "surface": "body",
+   "claim": "Understanding what makes a witness credible and how testimony is evaluated helps you protect your claim from the moment the accident occurs.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Cornell LII Wex, \"witness\"",
+   "sourceUrl": "https://www.law.cornell.edu/wex/witness",
+   "retrievedAt": "2026-10-02",
+   "note": "The outbound link (anchor 'what makes a witness credible') resolves (HTTP 200). The Wex entry is a general definition of 'witness', not a credibility guide; optional: retarget to Rule 608, SCRE or O.C.G.A. § 24-6-622, but no change required."
+  },
+  {
+   "surface": "body",
+   "claim": "Both Georgia and South Carolina courts weigh witness credibility carefully, and the strength of your witnesses can directly affect the compensation you recover.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 24-6-622; Rule 608(c), SCRE",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-24/chapter-6/article-2/section-24-6-622/",
+   "retrievedAt": "2026-10-02",
+   "note": "Georgia: 'The state of a witness's feelings towards the parties and the witness's relationship to the parties may always be proved for the consideration of the jury' (§ 24-6-622). SC: 'Bias, prejudice or any motive to misrepresent may be shown to impeach the witness' (Rule 608(c), SCRE, https://www.sccourts.org/resources/judicial-community/court-rules/evidence/rule-608/). Credibility is for the jury in both states."
+  },
+  {
+   "surface": "body",
+   "claim": "Witness testimony is particularly valuable in cases without clear physical evidence, such as sideswipe accidents, intersection collisions, and crashes where both vehicles sustained similar damage patterns that do not clearly indicate fault.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Practical observation; nothing to verify."
+  },
+  {
+   "surface": "body",
+   "claim": "Eyewitness testimony about what they saw, heard, and experienced immediately before, during, and after the crash is often the most persuasive evidence in a car accident case.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "National Research Council, Identifying the Culprit: Assessing Eyewitness Identification (National Academies Press, 2014)",
+   "sourceUrl": "https://nap.nationalacademies.org/catalog/18891/identifying-the-culprit-assessing-eyewitness-identification",
+   "retrievedAt": "2026-10-02",
+   "note": "Hedged ('often') opinion; acceptable. The National Academies report documents that eyewitness accounts are persuasive to factfinders but fallible (memory is malleable and degrades). No change required; optional soften to 'can be some of the most persuasive evidence'."
+  },
+  {
+   "surface": "body",
+   "claim": "calculate lost earning capacity and future medical costs",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate in practice. Optional precision: future medical needs are usually projected by a life-care planner and reduced to present value by the economist ('calculate the present value of lost earning capacity and future medical costs'). Same list appears in FAQ 4."
+  },
+  {
+   "surface": "body",
+   "claim": "In some cases, character witnesses may testify about a party's reputation for honesty, careful driving, or other relevant traits. While less common in car accident cases, character testimony can be relevant when credibility is a central issue.",
+   "verdict": "update",
+   "currentValue": "Character evidence is inadmissible to prove conduct on a particular occasion (GA § 24-4-404(a); SCRE 404(a)); witness-character evidence is limited to truthfulness (GA § 24-6-608(a); SCRE 608(a)).",
+   "sourceName": "O.C.G.A. §§ 24-4-404(a), 24-6-608(a); Rules 404(a), 608(a), SCRE",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-24/chapter-4/section-24-4-404/",
+   "retrievedAt": "2026-10-02",
+   "note": "Wrong as to 'careful driving'. Both states bar character evidence 'for the purpose of proving action in conformity therewith on a particular occasion' (O.C.G.A. § 24-4-404(a); Rule 404(a), SCRE, https://www.sccourts.org/resources/judicial-community/court-rules/evidence/rule-404/), so a witness cannot testify that a driver has a reputation for careful driving to prove he drove carefully at the time of the crash. The only character evidence a civil witness may offer goes to a witness's character for truthfulness, by opinion or reputation, and evidence of truthful character comes in only after truthfulness has been attacked (O.C.G.A. § 24-6-608(a), https://law.justia.com/codes/georgia/title-24/chapter-6/article-1/section-24-6-608/; Rule 608(a), SCRE). Suggested: 'Character witnesses play a narrow role in car accident cases. Georgia and South Carolina law do not allow testimony that a driver is generally careful to prove how he drove at the time of the crash; a character witness can testify only about another witness's reputation for truthfulness, and usually only after that witness's honesty has been attacked (O.C.G.A. § 24-6-608; Rule 608, SCRE).'"
+  },
+  {
+   "surface": "body",
+   "claim": "Their observations about vehicle positions, road conditions, driver behavior, visible injuries, and statements made at the scene carry significant weight because they are trained observers who documented what they found.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 56-5-1290; O.C.G.A. § 24-8-803(8) and Maloof v. MARTA, 330 Ga. App. 763 (2015) (reused from facts-1679); O.C.G.A. § 24-8-801(d)(2); Rules 801(d)(2), 803(1)-(2), SCRE",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Mostly right, but add the limits. An officer can testify to what he personally observed; in South Carolina the crash reports required by §§ 56-5-1260 to -1280 may not 'be evidence of the negligence or due care of either party at the trial' (§ 56-5-1290), and a traffic conviction is inadmissible in the civil case (§ 56-5-6160). In Georgia a police report is admissible under the public-records exception only as to the officer's own observations, not his conclusions drawn from others' statements (§ 24-8-803(8), https://law.justia.com/codes/georgia/title-24/chapter-8/article-1/section-24-8-803/; Maloof, per facts-1679). 'Statements made at the scene' come in when they are a party's own admissions (O.C.G.A. § 24-8-801(d)(2); Rule 801(d)(2), SCRE) or fit a hearsay exception such as a present sense impression or excited utterance (Rule 803(1)-(2), SCRE, https://www.sccourts.org/resources/judicial-community/court-rules/evidence/rule-803/; O.C.G.A. § 24-8-803(1)-(2)); a bystander's account repeated by the officer is otherwise hearsay. Suggested addition after the sentence: 'Their own observations are usually admissible, although the written police report itself has limits at trial — South Carolina bars it as evidence of fault (S.C. Code § 56-5-1290).'"
+  },
+  {
+   "surface": "body",
+   "claim": "No relationship to either driver; no stake in the outcome",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 24-6-622; Rule 608(c), SCRE",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-24/chapter-6/article-2/section-24-6-622/",
+   "retrievedAt": "2026-10-02",
+   "note": "Relationship and bias are always provable to the jury in both states; the table is a fair practical summary of credibility factors. Rest of the table (vantage point, consistency, specificity, demeanor, corroboration, sobriety) is practical guidance with no legal rule asserted."
+  },
+  {
+   "surface": "body",
+   "claim": "Their lack of personal interest in the outcome gives their testimony heightened reliability.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Practical; consistent with § 24-6-622 / SCRE 608(c)."
+  },
+  {
+   "surface": "body",
+   "claim": "A witness who is a friend, family member, or passenger of one of the drivers has an inherent bias. While their testimony is still admissible, it carries less weight than that of an independent observer.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. §§ 24-6-601, 24-6-622; Rule 601(a), SCRE (note citing S.C. Code § 19-11-40)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-24/chapter-6/article-2/section-24-6-622/",
+   "retrievedAt": "2026-10-02",
+   "note": "Admissibility is right: every person is competent (§ 24-6-601; Rule 601(a), SCRE), and in SC a 'witness having interest in action is not disqualified' (§ 19-11-40, cited in the Rule 601 note). But weight is for the jury, so 'carries less weight' is stated as a rule it is not. Change to 'it may carry less weight' — matching FAQ 2, which already says 'may carry less weight'. 'Has an inherent bias' → optional 'may be seen as biased'."
+  },
+  {
+   "surface": "body",
+   "claim": "If a witness told police one thing at the scene, wrote something slightly different in a written statement, and then testified to yet another version at deposition, opposing counsel will highlight every inconsistency.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 24-6-613; Rule 613, SCRE",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-24/chapter-6/article-1/section-24-6-613/",
+   "retrievedAt": "2026-10-02",
+   "note": "Prior inconsistent statements may be used to impeach in both states; extrinsic proof requires first giving the witness a chance to explain or deny (§ 24-6-613(b); Rule 613(b), SCRE, https://www.sccourts.org/resources/judicial-community/court-rules/evidence/rule-613/). Optional cite."
+  },
+  {
+   "surface": "body",
+   "claim": "Human memory is imperfect, and it degrades over time.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "National Research Council, Identifying the Culprit (2014)",
+   "sourceUrl": "https://nap.nationalacademies.org/catalog/18891/identifying-the-culprit-assessing-eyewitness-identification",
+   "retrievedAt": "2026-10-02",
+   "note": "Well-established; no figure asserted. Do not add an unsourced decay statistic (e.g., \"memories fade within days\")."
+  },
+  {
+   "surface": "body",
+   "claim": "In both Georgia and South Carolina, a witness's criminal history—particularly convictions involving dishonesty—can be used to impeach their credibility. While a criminal record does not automatically disqualify someone as a witness, it may reduce the weight given to their testimony.",
+   "verdict": "update",
+   "currentValue": "Convictions only: felonies (punishable >1 year, subject to Rule 403) and any dishonesty/false-statement crime; 10-year limit; GA excludes nolo pleas and first-offender discharges.",
+   "sourceName": "O.C.G.A. § 24-6-609; Rule 609, SCRE",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-24/chapter-6/article-1/section-24-6-609/",
+   "retrievedAt": "2026-10-02",
+   "note": "'Criminal history' overstates it: only convictions qualify, not arrests or charges. Both rules admit (1) convictions for crimes punishable by more than one year (felonies), subject to Rule 403 balancing, and (2) any conviction whose elements involved dishonesty or a false statement, regardless of punishment; convictions more than ten years old (from conviction or release, whichever is later) are generally excluded (O.C.G.A. § 24-6-609(a)-(b); Rule 609(a)-(b), SCRE, https://www.sccourts.org/resources/judicial-community/court-rules/evidence/rule-609/). Georgia differs from SC in excluding nolo contendere pleas and first-offender discharges (§ 24-6-609(c)-(d)); SC counts nolo and Alford pleas as convictions (Rule 609(a)). Suggested: 'In both Georgia and South Carolina, a witness's prior felony convictions — and any conviction for a crime involving dishonesty or a false statement — can generally be used to impeach their credibility if the conviction is less than ten years old.' Second sentence keeps; SC § 19-11-60 (convicted person may testify) and GA § 24-6-601 support it."
+  },
+  {
+   "surface": "body",
+   "claim": "Strong witness support at this stage can result in faster, more favorable settlement offers.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Hedged practical statement."
+  },
+  {
+   "surface": "body",
+   "claim": "Your attorney includes witness statements and summaries of their expected testimony in the demand package sent to the insurance company.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Firm practice description."
+  },
+  {
+   "surface": "body",
+   "claim": "If the case enters litigation, witnesses may be deposed—giving sworn testimony under oath while being questioned by attorneys for both sides. Deposition transcripts can be used at trial if the witness is unavailable or if their testimony changes.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-11-32(a)(1),(3); Rules 30 and 32(a), SCRCP",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-5/section-9-11-32/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct. Any deposition may be used to contradict or impeach the deponent (§ 9-11-32(a)(1); Rule 32(a)(1), SCRCP, https://www.sccourts.org/resources/judicial-community/court-rules/civil/rule-32/), and a witness's deposition may be used for any purpose if the witness is dead, out of the county (SC: more than 100 miles away or out of state), unable to attend, or cannot be subpoenaed (§ 9-11-32(a)(3); Rule 32(a)(3)). Georgia goes further: a deposition may be used in the trial judge's discretion even when the witness is available (§ 9-11-32(a)(4)). Depositions are taken under O.C.G.A. § 9-11-30 / Rule 30, SCRCP (https://www.sccourts.org/resources/judicial-community/court-rules/civil/rule-30/). Optional cite."
+  },
+  {
+   "surface": "body",
+   "claim": "Your attorney conducts direct examination to elicit favorable testimony, while opposing counsel cross-examines to test credibility. The jury evaluates each witness's believability when deciding fault and damages.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Watson v. Ford Motor Co. (2010)",
+   "sourceUrl": "https://www.sccourts.org/media/opinions/HTMLFiles/SC/26786.htm",
+   "retrievedAt": "2026-10-02",
+   "note": "'The jury serves as the fact finder and is charged with the duty of weighing the evidence admitted at trial' (Watson)."
+  },
+  {
+   "surface": "body",
+   "claim": "Under Georgia law, any person is generally competent to testify as a witness if they are capable of understanding and communicating facts. There is no minimum age requirement, though the court may evaluate a child's ability to understand the oath and provide reliable testimony.",
+   "verdict": "update",
+   "currentValue": "O.C.G.A. § 24-6-601: 'Except as otherwise provided in this chapter, every person is competent to be a witness.'",
+   "sourceName": "O.C.G.A. § 24-6-601 and annotations; § 24-6-603",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-24/chapter-6/article-1/section-24-6-601/",
+   "retrievedAt": "2026-10-02",
+   "note": "The statute is broader than the post: 'Except as otherwise provided in this chapter, every person is competent to be a witness' (§ 24-6-601) — no 'capable of understanding and communicating' condition. No minimum age is right; the annotations confirm 'it is left to the sound discretion of the trial court to determine upon preliminary examination whether or not a child of tender years is a competent witness,' and a witness must take an oath or affirmation (§ 24-6-603). Suggested: 'Under Georgia law, every person is competent to be a witness unless the Evidence Code provides otherwise (O.C.G.A. § 24-6-601). There is no minimum age requirement, though the court may evaluate a child's ability to understand the oath and provide reliable testimony.'"
+  },
+  {
+   "surface": "body",
+   "claim": "standard for expert testimony (O.C.G.A. § 24-7-702), meaning the court acts as a gatekeeper to ensure that expert testimony is based on sufficient facts, reliable methods, and proper application of those methods to the case.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 24-7-702(a),(b),(f); HB 478 (2022), signed text on gov.georgia.gov",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-24/chapter-7/section-24-7-702/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct. § 24-7-702(b) requires that the expert's knowledge help the trier of fact and that the testimony be 'based upon sufficient facts or data', be 'the product of reliable principles and methods', and that the expert 'has reliably applied the principles and methods to the facts of the case'; (f) lets Georgia courts draw from Daubert, Joiner and Kumho Tire. History for the reviewer: Georgia adopted the Daubert test for civil cases in the 2005 tort-reform act (SB 3, former § 24-9-67.1, carried into § 24-7-702 by the 2013 Evidence Code). HB 478 (2022) — not HB 961 — rewrote (a) to apply 'in all proceedings', repealed § 24-7-707 (criminal), and took effect July 1, 2022 for motions, hearings or trials on or after that date (https://gov.georgia.gov/document/2022-signed-legislation/hb-478/download). Optional: add the helpfulness element ('will help the jury understand the evidence') to the list. The body sentence begins 'Georgia follows the Daubert' (em-tagged), which is also correct."
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia's two-year deadline (O.C.G.A. § 9-3-33) makes it essential to identify and interview witnesses quickly. Memories fade, and witnesses can become difficult to locate as time passes.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-3-33 (reused from facts-4715 and siblings)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Two years from accrual for personal injury. Verified across sibling packs."
+  },
+  {
+   "surface": "body",
+   "claim": "Under O.C.G.A. § 51-12-33, witness testimony about the actions of both drivers is crucial when determining each party's percentage of fault. You must be found less than 50% at fault to recover damages.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-33(a),(g) (reused from facts-1663 / facts-1679)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct: no recovery at 50% or more; award reduced by plaintiff's percentage. SB 68 (2025) did not change the 50 percent bar."
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina follows similar competency standards. Witnesses must be able to observe, recall, and communicate, and must understand the obligation to tell the truth under oath.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Rules 601 and 602, SCRE",
+   "sourceUrl": "https://www.sccourts.org/resources/judicial-community/court-rules/evidence/rule-601/",
+   "retrievedAt": "2026-10-02",
+   "note": "Substantially correct. Rule 601(a): 'Every person is competent to be a witness except as otherwise provided by statute or these rules'; 601(b) disqualifies a witness only if the court finds he is 'incapable of expressing himself concerning the matter as to be understood' or 'incapable of understanding the duty of a witness to tell the truth.' Personal knowledge is required by Rule 602 (https://www.sccourts.org/resources/judicial-community/court-rules/evidence/rule-602/). Optional precision: 'South Carolina presumes every witness competent (Rule 601, SCRE); a judge may disqualify a witness only if he cannot communicate so as to be understood or does not understand the duty to tell the truth.'"
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina also follows the Daubert standard under the South Carolina Rules of Evidence, requiring that expert testimony be relevant and reliable before it is admitted.",
+   "verdict": "update",
+   "currentValue": "South Carolina has expressly declined to adopt Daubert. State v. Council, 335 S.C. 1, 20, 515 S.E.2d 508, 518 (1999): 'While this Court does not adopt Daubert, we find the proper analysis for determining admissibility of scientific evidence is now under the SCRE. When admitting scientific evidence under Rule 702, SCRE, the trial judge must find the evidence will assist the trier of fact, the expert witness is qualified, and the underlying science is reliable' (quoted in State v. Phillips, Op. No. 27978, filed June 3, 2020). Watson v. Ford Motor Co., 389 S.C. 434 (2010) (Op. No. 26786): the trial court 'serves as the gatekeeper' and must find (1) the subject matter is beyond the jury's ordinary knowledge, (2) the expert is qualified, and (3) the testimony is reliable; 'it is not a prerequisite in South Carolina that scientific evidence attain general acceptance.' Phillips (2020) majority used the label 'Daubert/Council hearing'; the concurrence (Beatty, C.J., joined by Hearn, J.) objected that 'this Court has expressly declined to adopt Daubert' and that 'our courts have consistently adhered to Council'. Rule 702, SCRE, still carries the pre-2000 federal text (no 'sufficient facts or data' / 'reliable principles and methods' prongs).",
+   "sourceName": "State v. Council, 335 S.C. 1 (1999), as quoted in State v. Phillips, Op. No. 27978 (S.C. June 3, 2020); Watson v. Ford Motor Co., Op. No. 26786 (S.C. 2010); Rule 702, SCRE",
+   "sourceUrl": "https://www.sccourts.org/media/opinions/HTMLFiles/SC/26786.htm",
+   "retrievedAt": "2026-10-02",
+   "note": "Wrong. South Carolina has expressly declined to adopt Daubert; it applies Rule 702, SCRE, as construed in State v. Council (1999) and Watson v. Ford (2010): the judge acts as gatekeeper and must find that the subject requires expertise, the expert is qualified, and the testimony is reliable. Phillips (2020): https://www.sccourts.org/media/opinions/HTMLFiles/SC/27978.pdf. Suggested: 'Expert Witnesses: South Carolina has not adopted Daubert, but its courts apply a similar gatekeeping test under Rule 702 of the South Carolina Rules of Evidence (State v. Council; Watson v. Ford Motor Co.): the judge must find that the expert is qualified and that the testimony is reliable and will help the jury before it is admitted.' Body text has 'Daubert' in <em>; the claim is quoted with tags stripped."
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina's three-year deadline (S.C. Code § 15-3-530) provides more time, but early witness identification is still critical for building the strongest case.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 15-3-530(5) (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Three years for personal injury. Verified across sibling packs."
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina allows recovery if you are less than 51% at fault.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991) (reused from facts-1663)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct and correctly uncited to a statute. If a citation is added it must be Nelson v. Concrete Supply Co., never § 15-38-15."
+  },
+  {
+   "surface": "body",
+   "claim": "Daubert (O.C.G.A. § 24-7-702)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 24-7-702",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-24/chapter-7/section-24-7-702/",
+   "retrievedAt": "2026-10-02",
+   "note": "Comparison-table cell, Georgia column. Correct."
+  },
+  {
+   "surface": "body",
+   "claim": "Daubert (SC Rules of Evidence)",
+   "verdict": "update",
+   "currentValue": "South Carolina has expressly declined to adopt Daubert. State v. Council, 335 S.C. 1, 20, 515 S.E.2d 508, 518 (1999): 'While this Court does not adopt Daubert, we find the proper analysis for determining admissibility of scientific evidence is now under the SCRE. When admitting scientific evidence under Rule 702, SCRE, the trial judge must find the evidence will assist the trier of fact, the expert witness is qualified, and the underlying science is reliable' (quoted in State v. Phillips, Op. No. 27978, filed June 3, 2020). Watson v. Ford Motor Co., 389 S.C. 434 (2010) (Op. No. 26786): the trial court 'serves as the gatekeeper' and must find (1) the subject matter is beyond the jury's ordinary knowledge, (2) the expert is qualified, and (3) the testimony is reliable; 'it is not a prerequisite in South Carolina that scientific evidence attain general acceptance.' Phillips (2020) majority used the label 'Daubert/Council hearing'; the concurrence (Beatty, C.J., joined by Hearn, J.) objected that 'this Court has expressly declined to adopt Daubert' and that 'our courts have consistently adhered to Council'. Rule 702, SCRE, still carries the pre-2000 federal text (no 'sufficient facts or data' / 'reliable principles and methods' prongs).",
+   "sourceName": "State v. Council (1999); Watson v. Ford (2010); Rule 702, SCRE",
+   "sourceUrl": "https://www.sccourts.org/resources/judicial-community/court-rules/evidence/rule-702/",
+   "retrievedAt": "2026-10-02",
+   "note": "Comparison-table cell, SC column. Replace with 'Rule 702, SCRE (State v. Council; Daubert not adopted)'. Rule 702, SCRE text is the pre-2000 federal rule ('a witness qualified as an expert ... may testify thereto in the form of an opinion or otherwise')."
+  },
+  {
+   "surface": "body",
+   "claim": "Less than 50% to recover",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-33(g)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Table cell, Georgia."
+  },
+  {
+   "surface": "body",
+   "claim": "Less than 51% to recover",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Nelson v. Concrete Supply Co. (1991)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Table cell, South Carolina."
+  },
+  {
+   "surface": "body",
+   "claim": "Allowed with court discretion",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 24-6-601 annotations; Rule 601, SCRE and note",
+   "sourceUrl": "https://www.sccourts.org/resources/judicial-community/court-rules/evidence/rule-601/",
+   "retrievedAt": "2026-10-02",
+   "note": "Appears in both table cells. GA: child competency is within the trial court's sound discretion (§ 24-6-601 annotations). SC Rule 601 note: 'children are presumed to be competent unless it is shown otherwise' and 'the determination of a witness' competency is within the sound discretion of the trial judge.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Nearby traffic cameras, dashcams, and business security cameras provide objective \"witness\" evidence that cannot be cross-examined or have its credibility challenged",
+   "verdict": "update",
+   "currentValue": "511GA and SC511: state traffic cameras do not record; video must be authenticated (GA § 24-9-901; SCRE 901) and can be challenged.",
+   "sourceName": "511GA FAQ; SC511 FAQ; O.C.G.A. § 24-9-901; Rule 901, SCRE",
+   "sourceUrl": "https://511ga.org/about/faq",
+   "retrievedAt": "2026-10-02",
+   "note": "Two errors. (1) State traffic cameras do not record: 511GA — 'No, our cameras do not record. Any video footage from these cameras is not available.'; SC511 (https://www.511sc.org/static/faq.html) — 'No, we do not record any of the traffic cameras. We will not be able to provide any accident video.' (2) Video can be challenged: it must be authenticated by 'evidence sufficient to support a finding that the matter in question is what its proponent claims' (O.C.G.A. § 24-9-901(a), https://law.justia.com/codes/georgia/title-24/chapter-9/article-1/section-24-9-901/; Rule 901(a), SCRE), and the other side can attack its completeness, angle, timing or editing. Suggested: 'Check for cameras — Dashcams, doorbell cameras, and business security cameras can capture the crash objectively. Ask quickly, because owners often record over footage. (State DOT traffic cameras in Georgia and South Carolina stream live but do not record.)'"
+  },
+  {
+   "surface": "body",
+   "claim": "An experienced lawyer will follow up with witnesses quickly to obtain formal statements while their memories are fresh",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Practical."
+  },
+  {
+   "surface": "body",
+   "claim": "If opposing counsel attempts to discredit your witnesses, your attorney can rehabilitate them through redirect examination",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 24-6-613(c); Rule 608(a)(2), SCRE",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-24/chapter-6/article-1/section-24-6-613/",
+   "retrievedAt": "2026-10-02",
+   "note": "Rehabilitation is permitted (prior consistent statements rebutting a charge of fabrication, § 24-6-613(c); truthful-character evidence after attack, § 24-6-608(a)(2) / Rule 608(a)(2), SCRE)."
+  },
+  {
+   "surface": "body",
+   "claim": "contingency fee basis—you pay nothing unless we recover compensation for you",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md — firm stats ('contingency fee, no fees unless we win')",
+   "sourceUrl": "/Users/brianhaas/Code/blue-sky-studio/client-rodenlaw-website/profiles/writer-profile.md",
+   "retrievedAt": "2026-10-02",
+   "note": "Firm fee representation (body has <strong> around 'contingency fee basis'). Note for the owner: on 2026-10-02 (a132903) the car and truck pillar cost FAQs were expanded to 'no fees and no costs' unless there is a recovery; aligning this sentence is optional and a firm decision, not a correction."
+  },
+  {
+   "surface": "body",
+   "claim": "1-844-RESULTS",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "tel:+18447378587 is 844-RESULTS and matches the profile; not one of the 27 transposed hrefs."
+  },
+  {
+   "surface": "excerpt",
+   "claim": "What makes a crash witness credible, why independent witnesses matter most, and how their accounts get tested.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Publishes as the Article description. No claim to verify."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Credible car accident witnesses are independent, had clear vantage points, provide consistent and specific accounts, and give testimony corroborated by physical evidence.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Practical summary."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Georgia follows the Daubert standard for expert testimony (O.C.G.A. § 24-7-702) and allows two years to file (O.C.G.A. § 9-3-33).",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. §§ 24-7-702(f), 9-3-33",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-24/chapter-7/section-24-7-702/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct (see body)."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "South Carolina also follows Daubert and provides three years (S.C. Code § 15-3-530).",
+   "verdict": "update",
+   "currentValue": "South Carolina has expressly declined to adopt Daubert. State v. Council, 335 S.C. 1, 20, 515 S.E.2d 508, 518 (1999): 'While this Court does not adopt Daubert, we find the proper analysis for determining admissibility of scientific evidence is now under the SCRE. When admitting scientific evidence under Rule 702, SCRE, the trial judge must find the evidence will assist the trier of fact, the expert witness is qualified, and the underlying science is reliable' (quoted in State v. Phillips, Op. No. 27978, filed June 3, 2020). Watson v. Ford Motor Co., 389 S.C. 434 (2010) (Op. No. 26786): the trial court 'serves as the gatekeeper' and must find (1) the subject matter is beyond the jury's ordinary knowledge, (2) the expert is qualified, and (3) the testimony is reliable; 'it is not a prerequisite in South Carolina that scientific evidence attain general acceptance.' Phillips (2020) majority used the label 'Daubert/Council hearing'; the concurrence (Beatty, C.J., joined by Hearn, J.) objected that 'this Court has expressly declined to adopt Daubert' and that 'our courts have consistently adhered to Council'. Rule 702, SCRE, still carries the pre-2000 federal text (no 'sufficient facts or data' / 'reliable principles and methods' prongs).",
+   "sourceName": "State v. Council (1999); Watson v. Ford Motor Co. (2010); S.C. Code § 15-3-530",
+   "sourceUrl": "https://www.sccourts.org/media/opinions/HTMLFiles/SC/26786.htm",
+   "retrievedAt": "2026-10-02",
+   "note": "Wrong on Daubert; right on three years. Suggested: 'South Carolina has not adopted Daubert but applies a similar reliability test under Rule 702, SCRE (State v. Council), and provides three years (S.C. Code § 15-3-530).' Renders in the summary box above the article."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Both states use modified comparative fault rules where witness testimony is critical to determining each party's percentage of responsibility.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-33; Nelson v. Concrete Supply Co.",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct."
+  },
+  {
+   "surface": "faq:1",
+   "claim": "The most credible witnesses are independent (no relationship to either driver), had a clear vantage point, provide consistent accounts over time, offer specific details about what happened, remain calm and straightforward when testifying, and give testimony that is corroborated by physical evidence and other witnesses.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Practical; consistent with § 24-6-622 / SCRE 608(c). FAQPage structured data."
+  },
+  {
+   "surface": "faq:2",
+   "claim": "Yes, passengers can testify as witnesses. However, because they have a relationship with the driver, their testimony may carry less weight than that of an independent bystander. Insurance adjusters and defense attorneys may argue that a passenger witness is biased, so corroborating evidence strengthens their testimony.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 24-6-601; Rule 601(a), SCRE",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-24/chapter-6/article-1/section-24-6-601/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct and appropriately hedged ('may carry less weight'). FAQPage structured data."
+  },
+  {
+   "surface": "faq:3",
+   "claim": "Also check for traffic cameras, dashcams, and business security cameras.",
+   "verdict": "update",
+   "currentValue": "511GA: 'our cameras do not record'; SC511: 'we do not record any of the traffic cameras.'",
+   "sourceName": "511GA FAQ; SC511 FAQ",
+   "sourceUrl": "https://511ga.org/about/faq",
+   "retrievedAt": "2026-10-02",
+   "note": "State DOT traffic cameras in both states do not record (see body). Suggested: 'Also check for dashcams, doorbell cameras, and business security cameras, and ask quickly before footage is recorded over.' FAQPage structured data."
+  },
+  {
+   "surface": "faq:3",
+   "claim": "Contact an attorney promptly so they can follow up while memories are fresh.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Practical."
+  },
+  {
+   "surface": "faq:4",
+   "claim": "Expert witnesses are professionals retained for their specialized knowledge. Common experts in car accident cases include accident reconstructionists who recreate the collision, medical experts who testify about injuries, biomechanical engineers who explain crash forces, vocational experts who assess work impact, and economists who calculate financial losses.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct; same economist nuance as the body (optional). FAQPage structured data."
+  },
+  {
+   "surface": "faq:5",
+   "claim": "Georgia gives you two years from the date of the accident to file a lawsuit under O.C.G.A. § 9-3-33. South Carolina allows three years under S.C. Code § 15-3-530.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-3-33; S.C. Code § 15-3-530",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct. FAQPage structured data."
+  },
+  {
+   "surface": "faq:5",
+   "claim": "Because witness memories fade over time, it is critical to contact an attorney and obtain witness statements as early as possible.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Practical."
+  },
+  {
+   "surface": "faq:6",
+   "claim": "However, in both Georgia and South Carolina, prior convictions involving dishonesty can be used by opposing counsel to challenge the witness credibility.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 24-6-609; Rule 609, SCRE",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-24/chapter-6/article-1/section-24-6-609/",
+   "retrievedAt": "2026-10-02",
+   "note": "Incomplete and has a typo. Felony convictions (punishable by more than one year) are also usable, subject to balancing, and the ten-year limit generally applies (§ 24-6-609(a)-(b); Rule 609(a)-(b), SCRE). 'the witness credibility' → 'the witness's credibility'. Suggested: 'However, in both Georgia and South Carolina, opposing counsel can generally use a witness's felony convictions, and any conviction for a crime involving dishonesty or a false statement, to challenge the witness's credibility — usually only if the conviction is less than ten years old.' FAQPage structured data."
+  },
+  {
+   "surface": "faq:6",
+   "claim": "A criminal record does not automatically disqualify a witness, but it may reduce the weight given to their testimony.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 24-6-601; Rule 601, SCRE note (S.C. Code § 19-11-60)",
+   "sourceUrl": "https://www.sccourts.org/resources/judicial-community/court-rules/evidence/rule-601/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct."
+  }
+ ],
+ "recommendedEdits": [
+  "Expert Witnesses (South Carolina) paragraph: replace 'South Carolina also follows the Daubert standard under the South Carolina Rules of Evidence, requiring that expert testimony be relevant and reliable before it is admitted.' with 'South Carolina has not adopted Daubert, but its courts apply a similar gatekeeping test under Rule 702 of the South Carolina Rules of Evidence (State v. Council; Watson v. Ford Motor Co.): the judge must find that the expert is qualified and that the testimony is reliable and will help the jury before it is admitted.'",
+  "Comparison table, Expert Standard row, SC cell: 'Daubert (SC Rules of Evidence)' → 'Rule 702, SCRE (State v. Council; Daubert not adopted)'.",
+  "Key Takeaways: 'South Carolina also follows Daubert and provides three years (S.C. Code § 15-3-530).' → 'South Carolina has not adopted Daubert but applies a similar reliability test under Rule 702, SCRE (State v. Council), and provides three years (S.C. Code § 15-3-530).'",
+  "Character Witnesses: replace both sentences with 'Character witnesses play a narrow role in car accident cases. Georgia and South Carolina law do not allow testimony that a driver is generally careful to prove how he drove at the time of the crash; a character witness can testify only about another witness's reputation for truthfulness, and usually only after that witness's honesty has been attacked (O.C.G.A. § 24-6-608; Rule 608, SCRE).'",
+  "Check for cameras bullet: replace with 'Check for cameras — Dashcams, doorbell cameras, and business security cameras can capture the crash objectively. Ask quickly, because owners often record over footage. (State DOT traffic cameras in Georgia and South Carolina stream live but do not record.)' — drop 'cannot be cross-examined or have its credibility challenged' (video must be authenticated and can be contested). FAQ 3: 'Also check for traffic cameras, dashcams, and business security cameras.' → 'Also check for dashcams, doorbell cameras, and business security cameras, and ask quickly before footage is recorded over.' (FAQPage structured data.)",
+  "Prior Criminal Record paragraph: first sentence → 'In both Georgia and South Carolina, a witness's prior felony convictions — and any conviction for a crime involving dishonesty or a false statement — can generally be used to impeach their credibility if the conviction is less than ten years old.' FAQ 6 second sentence → 'However, in both Georgia and South Carolina, opposing counsel can generally use a witness's felony convictions, and any conviction for a crime involving dishonesty or a false statement, to challenge the witness's credibility — usually only if the conviction is less than ten years old.' (fixes 'the witness credibility' typo; FAQPage structured data.)",
+  "Georgia Competency: first sentence → 'Under Georgia law, every person is competent to be a witness unless the Evidence Code provides otherwise (O.C.G.A. § 24-6-601).' Keep the child sentence.",
+  "First Responders: append 'Their own observations are usually admissible, although the written police report itself has limits at trial — South Carolina bars it as evidence of fault (S.C. Code § 56-5-1290).'",
+  "Bias or Interest: 'it carries less weight than that of an independent observer' → 'it may carry less weight than that of an independent observer' (matches FAQ 2).",
+  "Optional: Georgia expert sentence may add the helpfulness element and note that since July 1, 2022 (HB 478) the same test governs criminal cases; depositions sentence may cite O.C.G.A. § 9-11-32 / Rule 32, SCRCP. Do not add any memory-decay statistic."
+ ],
+ "statuteCitations": [
+  {
+   "section": "O.C.G.A. § 24-7-702",
+   "name": "Expert opinion testimony — Daubert-style test, applies 'in all proceedings' since HB 478 (eff. July 1, 2022)",
+   "url": "https://law.justia.com/codes/georgia/title-24/chapter-7/section-24-7-702/"
+  },
+  {
+   "section": "Ga. HB 478 (2022)",
+   "name": "Extended § 24-7-702 to criminal proceedings; repealed § 24-7-707; effective July 1, 2022",
+   "url": "https://gov.georgia.gov/document/2022-signed-legislation/hb-478/download"
+  },
+  {
+   "section": "O.C.G.A. § 24-6-601",
+   "name": "Every person is competent to be a witness",
+   "url": "https://law.justia.com/codes/georgia/title-24/chapter-6/article-1/section-24-6-601/"
+  },
+  {
+   "section": "O.C.G.A. § 24-6-608",
+   "name": "Character for truthfulness only; truthful character only after attack",
+   "url": "https://law.justia.com/codes/georgia/title-24/chapter-6/article-1/section-24-6-608/"
+  },
+  {
+   "section": "O.C.G.A. § 24-6-609",
+   "name": "Impeachment by conviction — felonies (403) and dishonesty crimes; 10-year limit; no nolo/first-offender",
+   "url": "https://law.justia.com/codes/georgia/title-24/chapter-6/article-1/section-24-6-609/"
+  },
+  {
+   "section": "O.C.G.A. § 24-6-613",
+   "name": "Prior statements of witnesses; prior consistent statements to rehabilitate",
+   "url": "https://law.justia.com/codes/georgia/title-24/chapter-6/article-1/section-24-6-613/"
+  },
+  {
+   "section": "O.C.G.A. § 24-6-622",
+   "name": "Witness's feelings toward and relationship to parties always provable",
+   "url": "https://law.justia.com/codes/georgia/title-24/chapter-6/article-2/section-24-6-622/"
+  },
+  {
+   "section": "O.C.G.A. § 24-4-404",
+   "name": "Character evidence not admissible to prove conduct in conformity",
+   "url": "https://law.justia.com/codes/georgia/title-24/chapter-4/section-24-4-404/"
+  },
+  {
+   "section": "O.C.G.A. § 24-8-803",
+   "name": "Hearsay exceptions incl. (1) present sense impression, (2) excited utterance, (8) public records (reused from facts-1679)",
+   "url": "https://law.justia.com/codes/georgia/title-24/chapter-8/article-1/section-24-8-803/"
+  },
+  {
+   "section": "O.C.G.A. § 24-9-901",
+   "name": "Authentication requirement",
+   "url": "https://law.justia.com/codes/georgia/title-24/chapter-9/article-1/section-24-9-901/"
+  },
+  {
+   "section": "O.C.G.A. § 9-11-32",
+   "name": "Use of depositions at trial",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-5/section-9-11-32/"
+  },
+  {
+   "section": "O.C.G.A. § 9-3-33",
+   "name": "Two-year personal-injury limitation",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-33",
+   "name": "Apportionment; no recovery at 50 percent or more fault",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+  },
+  {
+   "section": "Rule 601, SCRE",
+   "name": "Competency; disqualification only for inability to communicate or understand duty of truth; children presumed competent",
+   "url": "https://www.sccourts.org/resources/judicial-community/court-rules/evidence/rule-601/"
+  },
+  {
+   "section": "Rule 602, SCRE",
+   "name": "Personal knowledge",
+   "url": "https://www.sccourts.org/resources/judicial-community/court-rules/evidence/rule-602/"
+  },
+  {
+   "section": "Rule 404, SCRE",
+   "name": "Character evidence not admissible to prove conduct",
+   "url": "https://www.sccourts.org/resources/judicial-community/court-rules/evidence/rule-404/"
+  },
+  {
+   "section": "Rule 608, SCRE",
+   "name": "Character for truthfulness; (c) bias always provable",
+   "url": "https://www.sccourts.org/resources/judicial-community/court-rules/evidence/rule-608/"
+  },
+  {
+   "section": "Rule 609, SCRE",
+   "name": "Impeachment by conviction; 10-year limit",
+   "url": "https://www.sccourts.org/resources/judicial-community/court-rules/evidence/rule-609/"
+  },
+  {
+   "section": "Rule 613, SCRE",
+   "name": "Prior statements of witnesses",
+   "url": "https://www.sccourts.org/resources/judicial-community/court-rules/evidence/rule-613/"
+  },
+  {
+   "section": "Rule 701, SCRE",
+   "name": "Lay opinion testimony",
+   "url": "https://www.sccourts.org/resources/judicial-community/court-rules/evidence/rule-701/"
+  },
+  {
+   "section": "Rule 702, SCRE",
+   "name": "Expert testimony (pre-2000 federal text; Council test, not Daubert)",
+   "url": "https://www.sccourts.org/resources/judicial-community/court-rules/evidence/rule-702/"
+  },
+  {
+   "section": "Rules 801, 803, SCRE",
+   "name": "Hearsay definitions; present sense impression and excited utterance",
+   "url": "https://www.sccourts.org/resources/judicial-community/court-rules/evidence/rule-803/"
+  },
+  {
+   "section": "Rule 901, SCRE",
+   "name": "Authentication requirement",
+   "url": "https://www.sccourts.org/resources/judicial-community/court-rules/evidence/rule-901/"
+  },
+  {
+   "section": "Rules 30, 32, SCRCP",
+   "name": "Depositions; use at trial",
+   "url": "https://www.sccourts.org/resources/judicial-community/court-rules/civil/rule-32/"
+  },
+  {
+   "section": "S.C. Code § 15-3-530",
+   "name": "Three-year limitation (personal injury)",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "section": "S.C. Code §§ 56-5-1290, 56-5-6160",
+   "name": "Crash reports not evidence of negligence; traffic convictions inadmissible in civil actions",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  }
+ ],
+ "authoritativeLinks": [
+  {
+   "name": "Watson v. Ford Motor Co., Op. No. 26786 (S.C. 2010) — gatekeeping; three findings for expert testimony; Council reliability factors",
+   "url": "https://www.sccourts.org/media/opinions/HTMLFiles/SC/26786.htm"
+  },
+  {
+   "name": "State v. Phillips, Op. No. 27978 (S.C. June 3, 2020) — quotes Council (\"While this Court does not adopt Daubert...\"); concurrence on SC declining Daubert",
+   "url": "https://www.sccourts.org/media/opinions/HTMLFiles/SC/27978.pdf"
+  },
+  {
+   "name": "Georgia HB 478 (2022), signed text — Daubert extended to all proceedings, effective July 1, 2022",
+   "url": "https://gov.georgia.gov/document/2022-signed-legislation/hb-478/download"
+  },
+  {
+   "name": "511GA FAQ — 'our cameras do not record'",
+   "url": "https://511ga.org/about/faq"
+  },
+  {
+   "name": "SC511 FAQ — 'we do not record any of the traffic cameras'",
+   "url": "https://www.511sc.org/static/faq.html"
+  },
+  {
+   "name": "National Research Council, Identifying the Culprit: Assessing Eyewitness Identification (2014)",
+   "url": "https://nap.nationalacademies.org/catalog/18891/identifying-the-culprit-assessing-eyewitness-identification"
+  },
+  {
+   "name": "Nelson v. Concrete Supply Co. (S.C. 1991) — reused from facts-1663",
+   "url": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html"
+  },
+  {
+   "name": "Cornell LII Wex — witness (existing outbound link; resolves)",
+   "url": "https://www.law.cornell.edu/wex/witness"
+  }
+ ],
+ "quoteNote": "Claims are quoted from the rendered text with tags stripped and entities decoded; every claim string was asserted to occur in its surface (body.html, meta.json excerpt/keyTakeaways/faqs). FAQ answers publish as FAQPage structured data; the excerpt publishes as the Article description; Key Takeaways render above the article. metaDescription is empty (nothing to verify). law.justia.com returns 403 to curl; the Georgia Code sections (24-6-601, -608, -609, -613, -622, 24-4-404, 24-7-702, 24-9-901, 9-11-32) were read in a Chrome tab without any challenge on 2026-10-02; 24-8-803, 9-3-33, 51-12-33 and Nelson are reused from sibling packs. sccourts.org rule pages and opinions (Watson 26786, Phillips 27978) were fetched directly. The brief's 'HB 961' is the wrong bill: Georgia's 2022 Daubert-in-criminal-cases change is HB 478 (effective July 1, 2022); civil cases have used the Daubert test since the 2005 tort-reform act (SB 3). 511ga.org/contact returned 403; the 511GA FAQ page resolves and carries the same statement. No other law firm is named."
+}
