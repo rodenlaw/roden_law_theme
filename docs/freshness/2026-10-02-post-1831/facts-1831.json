@@ -1,0 +1,656 @@
+{
+ "postId": 1831,
+ "slug": "blind-spot-accidents",
+ "liveUrl": "https://rodenlaw.com/blog/blind-spot-accidents/",
+ "jurisdiction": "GA+SC",
+ "researchedAt": "2026-10-02",
+ "verifiedClaims": [
+  {
+   "surface": "body",
+   "claim": "Blind spot accidents are among the most preventable yet frequently occurring crashes on roads throughout Georgia and South Carolina.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "NHTSA, Analysis of Lane Change Crashes (DOT HS 809 571, 2003)",
+   "sourceUrl": "https://www.nhtsa.gov/sites/nhtsa.gov/files/doths809571.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Characterisation, not a statistic. Lane-change crashes are frequent (about 9% of police-reported crashes in NHTSA's 1999 GES analysis)."
+  },
+  {
+   "surface": "body",
+   "claim": "According to the National Highway Traffic Safety Administration (NHTSA), lane-change crashes account for approximately 240,000 accidents per year nationwide, and a significant percentage of those involve blind spot failures.",
+   "verdict": "update",
+   "currentValue": "NHTSA's dedicated analysis (Analysis of Lane Change Crashes, DOT HS 809 571, March 2003) counted approximately 539,000 two-vehicle lane-change crashes in 1999 — about 9% of the 6.3 million police-reported crashes that year. The 240,000 figure is the low end of an older range ('between 240,000 to 610,000 lane-change crashes are reported to the police' annually, at least 60,000 people injured, 224–732 deaths) that NHTSA's 2008 lane-change study (DOT HS 811 147) quotes from early-1990s research (1991: ~244,000 police-reported lane-change/merge crashes). No NHTSA source quantifies what share of lane-change crashes involve 'blind spot failures'; the closest authority is IIHS (2017): blind spot detection cut lane-change crash rates 14% and, if fitted to every passenger vehicle, would prevent about 50,000 police-reported crashes a year.",
+   "sourceName": "NHTSA DOT HS 809 571 (2003); NHTSA DOT HS 811 147 (2008), lit. review; IIHS news 2017-08-23",
+   "sourceUrl": "https://www.nhtsa.gov/sites/nhtsa.gov/files/doths809571.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'NHTSA's most detailed study of lane-change crashes counted about 539,000 two-vehicle lane-change crashes in a single year — roughly 9 percent of all police-reported crashes.' Drop 'a significant percentage of those involve blind spot failures' or replace with the IIHS 50,000-crashes-preventable line. Also repoint the anchor from the bare https://www.nhtsa.gov/ homepage to the report PDF. Both NHTSA PDFs load in a browser (nhtsa.gov returns 403 to curl). 811 147: https://www.nhtsa.gov/sites/nhtsa.gov/files/811147.pdf"
+  },
+  {
+   "surface": "body",
+   "claim": "For a standard passenger car, blind spots typically exist on both sides of the vehicle just behind the driver's peripheral vision.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Platzer, G., 'The Geometry of Automotive Rearview Mirrors — Why Blind Zones Exist and Strategies to Overcome Them,' SAE Technical Paper 950601 (1995)",
+   "sourceUrl": "https://saemobilus.sae.org/papers/geometry-automotive-rearview-mirrors-blind-zones-exist-strategies-overcome-950601",
+   "retrievedAt": "2026-10-02",
+   "note": "Platzer locates the blind zones in the adjacent lanes between the outside mirrors' field of view and the driver's peripheral vision."
+  },
+  {
+   "surface": "body",
+   "claim": "For larger vehicles like commercial trucks and SUVs, blind spots can extend several car lengths on all four sides.",
+   "verdict": "update",
+   "currentValue": "True for large trucks: FMCSA says large trucks and buses have blind spots ('No-Zones') on all four sides; the rear zone is about 30 feet, 'the length of three passenger vehicles' (FMCSA Teen Driver Lesson Plan, 2024), with the right-side zone two lanes wide. No federal source gives SUVs blind zones of 'several car lengths on all four sides'.",
+   "sourceName": "FMCSA, Our Roads Our Safety truck infographic; FMCSA Tips for Passenger Vehicle Drivers (updated 2026-09-29)",
+   "sourceUrl": "https://www.fmcsa.dot.gov/sites/fmcsa.dot.gov/files/docs/lang/USDOT_OROR_Inforgraphic_1170x612-Truck_V17ai.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Limit 'on all four sides' / 'several car lengths' to commercial trucks; say SUVs and pickups have larger rear and side blind zones than cars, without a number."
+  },
+  {
+   "surface": "body",
+   "claim": "1–2 car lengths per side",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "No authority located (NHTSA, IIHS, SAE 950601 searched)",
+   "sourceUrl": "https://saemobilus.sae.org/papers/geometry-automotive-rearview-mirrors-blind-zones-exist-strategies-overcome-950601",
+   "retrievedAt": "2026-10-02",
+   "note": "Platzer shows a passenger-car blind zone that depends on mirror setting and can be effectively eliminated with the BGE setting; no source gives a fixed car-length size. Replace the cell with 'Varies with mirror setting' or drop the size column for cars and SUVs."
+  },
+  {
+   "surface": "body",
+   "claim": "2–3 car lengths per side",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "No authority located (NHTSA, IIHS, FMCSA searched)",
+   "sourceUrl": "https://saemobilus.sae.org/papers/geometry-automotive-rearview-mirrors-blind-zones-exist-strategies-overcome-950601",
+   "retrievedAt": "2026-10-02",
+   "note": "Unsourced figure; see the passenger-car row."
+  },
+  {
+   "surface": "body",
+   "claim": "Up to 20 feet in front, 30 feet behind, full lane on each side",
+   "verdict": "update",
+   "currentValue": "FMCSA's No-Zone graphic: about 20 feet in front of the cab, about 30 feet behind the trailer, one lane on the driver's (left) side and two lanes on the right side.",
+   "sourceName": "FMCSA, Our Roads Our Safety — 'Trucks Have Large Blind Spots' infographic (fmcsa.dot.gov)",
+   "sourceUrl": "https://www.fmcsa.dot.gov/sites/fmcsa.dot.gov/files/docs/lang/USDOT_OROR_Inforgraphic_1170x612-Truck_V17ai.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Change to 'About 20 feet in front, 30 feet behind, one lane on the left side and two lanes on the right'. The right side is the larger zone, which also matters for the right-turn squeeze section. PDF loads in a browser; fmcsa.dot.gov returns 403 to curl."
+  },
+  {
+   "surface": "body",
+   "claim": "On Georgia interstates like I-95, I-16, and I-26 in South Carolina, high-speed sideswipes can lead to multi-vehicle pileups.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "General statement; I-95 runs through both states, I-16 is Georgia, I-26 is South Carolina",
+   "sourceUrl": "https://www.iihs.org/news/detail/stay-within-the-lines-lane-departure-warning-blind-spot-detection-help-drivers-avoid-trouble",
+   "retrievedAt": "2026-10-02",
+   "note": "Optional copy fix: 'On interstates like I-95 and I-16 in Georgia and I-26 in South Carolina'."
+  },
+  {
+   "surface": "body",
+   "claim": "Commercial trucks have massive blind spots known as \"No-Zones\" — areas where passenger vehicles effectively disappear from the truck driver's view.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "FMCSA, CMV Driving Tips — Inadequate Surveillance ('some of your blind spots are large enough that a passenger vehicle can virtually disappear from your view')",
+   "sourceUrl": "https://www.fmcsa.dot.gov/safety/driver-safety/cmv-driving-tips-inadequate-surveillance",
+   "retrievedAt": "2026-10-02",
+   "note": "FMCSA also states 'If you can't see the driver in the truck's side mirror, assume that the driver can't see you' — a useful addition."
+  },
+  {
+   "surface": "body",
+   "claim": "When a large vehicle makes a right turn, the blind spot on the passenger side can hide a bicyclist, pedestrian, or motorcyclist traveling alongside.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "FMCSA, Tips for Passenger Vehicle Drivers (trucks turning right 'may initially move left to create enough turning space'); FMCSA infographic (right-side zone two lanes)",
+   "sourceUrl": "https://www.fmcsa.dot.gov/ourroads/tips-driving-safely-around-large-trucks-or-buses",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  },
+  {
+   "surface": "body",
+   "claim": "Inexperienced drivers may not develop reliable mirror-checking habits, while older drivers may have reduced neck mobility that limits blind spot checks.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "General, hedged ('may'); no statistic asserted",
+   "sourceUrl": "https://www.fmcsa.dot.gov/ourroads/tips-driving-safely-around-large-trucks-or-buses",
+   "retrievedAt": "2026-10-02",
+   "note": "Hedged opinion; no change needed."
+  },
+  {
+   "surface": "body",
+   "claim": "Instead, angle each side mirror outward until you can barely see your vehicle's side.",
+   "verdict": "update",
+   "currentValue": "The BGE procedure: lean your head against the driver's window and set the left mirror so you can just see the side of your car; lean to the center of the car and do the same with the right mirror. Back in the normal seating position you should no longer see your own car in either side mirror. Platzer: mirrors 'adjusted to just see the side of the car' from the normal position are what create the blind zones.",
+   "sourceName": "Platzer, SAE Technical Paper 950601 (1995)",
+   "sourceUrl": "https://saemobilus.sae.org/papers/geometry-automotive-rearview-mirrors-blind-zones-exist-strategies-overcome-950601",
+   "retrievedAt": "2026-10-02",
+   "note": "As written, the instruction (from the normal seat) describes the conventional setting the paragraph is warning against. Add the head-lean step."
+  },
+  {
+   "surface": "body",
+   "claim": "This \"BGE method\" (named after the Society of Automotive Engineers study that popularized it) dramatically reduces blind spots by creating a seamless field of view from your rearview mirror to your side mirrors to your peripheral vision.",
+   "verdict": "update",
+   "currentValue": "BGE stands for 'Blindzone and Glare Elimination' — the name George Platzer gave the setting in SAE Technical Paper 950601 (1995); it is not named after the SAE. Platzer: with the mirrors turned outward 'the remaining blind zones are incapable of hiding a car'; a passing car should appear in the side mirror before it leaves the inside mirror and in peripheral vision before it leaves the side mirror.",
+   "sourceName": "Platzer, G., SAE Technical Paper 950601, doi:10.4271/950601",
+   "sourceUrl": "https://saemobilus.sae.org/papers/geometry-automotive-rearview-mirrors-blind-zones-exist-strategies-overcome-950601",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'This Blindzone and Glare Elimination (BGE) setting, described in a 1995 Society of Automotive Engineers paper, ...'. The 'seamless field of view' description is accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "a one-second shoulder check can prevent a catastrophic collision.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "General safety advice",
+   "sourceUrl": "https://www.fmcsa.dot.gov/ourroads/tips-driving-safely-around-large-trucks-or-buses",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  },
+  {
+   "surface": "body",
+   "claim": "In both Georgia and South Carolina, failing to use turn signals before a lane change is a traffic violation.",
+   "verdict": "update",
+   "currentValue": "Georgia: O.C.G.A. § 40-6-123(a) — no person shall 'change lanes or move right or left upon a roadway unless and until such movement can be made with reasonable safety' nor 'without giving an appropriate and timely signal'; (b) the signal 'when required' must be given continuously for a time sufficient to alert drivers behind or approaching (no fixed distance in Georgia), and courts read 'when required' to mean when another driver could be affected (State v. Goodman, 220 Ga. App. 169 (1996)). South Carolina: S.C. Code § 56-5-2150(A) bars moving right or left without an appropriate signal; (B) the signal 'when required shall be given continuously during not less than the last one hundred feet'; (E) the fine is $25 with no points.",
+   "sourceName": "O.C.G.A. § 40-6-123(a)-(b) (Justia, 2025 Code; sibling packs 2026-09-24); S.C. Code § 56-5-2150 (scstatehouse.gov, read 2026-10-02)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "True with the 'when required' qualifier. Suggested: '... is a traffic violation whenever another driver could be affected — and South Carolina requires the signal for at least the last 100 feet (S.C. Code § 56-5-2150(B)).' Do not import the 100-foot rule into Georgia. GA URL: https://law.justia.com/codes/georgia/title-40/chapter-6/article-6/section-40-6-123/"
+  },
+  {
+   "surface": "body",
+   "claim": "These tools are valuable supplements but should never replace mirror checks and shoulder glances.",
+   "verdict": "keep",
+   "currentValue": "IIHS (2017, Cicchino): blind spot detection lowers the rate of all lane-change crashes by 14 percent and lane-change injury crashes by 23 percent (only the 14% figure was statistically significant); 'It's still up to the driver to pay attention to that information.'",
+   "sourceName": "IIHS news release, 'Lane departure warning, blind spot detection help drivers avoid trouble' (2017-08-23)",
+   "sourceUrl": "https://www.iihs.org/news/detail/stay-within-the-lines-lane-departure-warning-blind-spot-detection-help-drivers-avoid-trouble",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. Optional evidence sentence: 'IIHS research found blind spot monitoring cut lane-change crashes by 14 percent' (cite 23% for injury crashes only with the not-significant caveat). Nothing in GA or SC law shifts fault because a car has or lacks blind-spot monitoring; the duty to ascertain the lane is clear stays with the driver (§ 40-6-48(1); § 56-5-1900(a))."
+  },
+  {
+   "surface": "body",
+   "claim": "Under O.C.G.A. § 40-6-123, Georgia law requires that a driver changing lanes must first ascertain that the movement can be made safely.",
+   "verdict": "update",
+   "currentValue": "The 'first ascertain' language is O.C.G.A. § 40-6-48(1): on a road marked into lanes, a vehicle 'shall not be moved from such lane until the driver has first ascertained that such movement can be made with safety.' § 40-6-123(a) separately bars changing lanes 'unless and until such movement can be made with reasonable safety' and without 'an appropriate and timely signal.' Georgia courts treat the two together (United States v. Pineda (N.D. Ga. 2008), annotated under § 40-6-48: unsafe lane changes into occupied lanes violated §§ 40-6-48 and 40-6-123).",
+   "sourceName": "O.C.G.A. § 40-6-48(1) (Justia, 2025 Code, read 2026-10-02 in browser); O.C.G.A. § 40-6-123(a) (Justia, sibling packs)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-3/section-40-6-48/",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'Under O.C.G.A. § 40-6-48(1), a Georgia driver may not move out of a lane until he or she has first ascertained that the move can be made safely, and O.C.G.A. § 40-6-123 requires an appropriate and timely signal.' Add § 40-6-48 to the Key Takeaways too."
+  },
+  {
+   "surface": "body",
+   "claim": "A driver who causes a collision by changing lanes without checking their blind spot has violated this statute and can be found negligent.",
+   "verdict": "keep",
+   "currentValue": "Violating a rule-of-the-road statute is negligence per se in Georgia (O.C.G.A. § 51-1-6), which supplies duty and breach; the plaintiff still proves causation and damages (Central Anesthesia Associates v. Worthy, 254 Ga. 728 (1985)).",
+   "sourceName": "O.C.G.A. § 51-1-6; Central Anesthesia Associates, P.C. v. Worthy (1985) — reused from turn-signal sibling packs",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-6/",
+   "retrievedAt": "2026-10-02",
+   "note": "'Can be found negligent' is the right hedge. Statute reference should follow the § 40-6-48 fix above."
+  },
+  {
+   "surface": "body",
+   "claim": "you can recover damages as long as you are less than 50% at fault for the accident (O.C.G.A. § 51-12-33)",
+   "verdict": "keep",
+   "currentValue": "§ 51-12-33(g): no recovery if the plaintiff is '50 percent or more responsible'; damages reduced by the plaintiff's percentage (§ 51-12-33(a)). Last amended 2022 (HB 961); not changed by 2025 SB 68.",
+   "sourceName": "O.C.G.A. § 51-12-33 (Justia, 2025 Code; facts-1767)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  },
+  {
+   "surface": "body",
+   "claim": "The statute of limitations for personal injury claims in Georgia is 2 years from the date of the accident (O.C.G.A. § 9-3-33).",
+   "verdict": "keep",
+   "currentValue": "§ 9-3-33: within two years after the right of action accrues (the crash date for a crash injury). Georgia applies no general discovery rule to traumatic crash injuries.",
+   "sourceName": "O.C.G.A. § 9-3-33 (Justia)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina law similarly requires drivers to ensure lane changes can be made safely under S.C. Code § 56-5-2150.",
+   "verdict": "keep",
+   "currentValue": "§ 56-5-2150(A): 'No person shall turn a vehicle or move right or left upon a roadway unless and until such movement can be made with reasonable safety nor without giving an appropriate signal'; (B) signal continuously for not less than the last 100 feet.",
+   "sourceName": "S.C. Code § 56-5-2150 (scstatehouse.gov, read 2026-10-02)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate; see next claim for § 56-5-1900."
+  },
+  {
+   "surface": "body",
+   "claim": "Drivers must not move from their lane until they have determined that it is safe to do so.",
+   "verdict": "update",
+   "currentValue": "This is S.C. Code § 56-5-1900(a), not § 56-5-2150: on a roadway divided into clearly marked lanes, 'a vehicle shall be driven as nearly as practicable entirely within a single lane and shall not be moved from the lane until the driver has first ascertained that such movement can be made with safety.'",
+   "sourceName": "S.C. Code § 56-5-1900(a) (scstatehouse.gov, read 2026-10-02)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Append '(S.C. Code § 56-5-1900(a))' and add the 100-foot signal rule from § 56-5-2150(B)."
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina also follows a modified comparative fault system — you can recover damages if you are less than 51% at fault.",
+   "verdict": "keep",
+   "currentValue": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991): a plaintiff recovers if his or her negligence is not greater than the defendant's — barred at 51% or more; award reduced by the plaintiff's percentage.",
+   "sourceName": "Nelson v. Concrete Supply Co. (S.C. 1991) — reused from facts-1767",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Optional: add '(Nelson v. Concrete Supply Co.)'. Never cite § 15-38-15 for the bar."
+  },
+  {
+   "surface": "body",
+   "claim": "The statute of limitations for personal injury claims in South Carolina is 3 years from the date of the accident (S.C. Code § 15-3-530).",
+   "verdict": "keep",
+   "currentValue": "§ 15-3-530(5): three years for 'any injury to the person or rights of another, not arising on contract'. Claims against a government driver/agency fall under the Tort Claims Act (§ 15-78-110: two years, or three if a verified claim is filed).",
+   "sourceName": "S.C. Code § 15-3-530 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  },
+  {
+   "surface": "body",
+   "claim": "The responding officer's report often notes whether a driver was cited for an unsafe lane change or failure to yield.",
+   "verdict": "update",
+   "currentValue": "Accurate as to the report, but the citation itself has limited courtroom use: in South Carolina 'no evidence of conviction of any person for any violation of this chapter shall be admissible in any court in any civil action' (S.C. Code § 56-5-6160), though a guilty plea may come in as an admission (Samuel v. Mouzon, 282 S.C. 616 (Ct. App. 1984)). In Georgia a guilty plea to the traffic charge is likewise admissible as an admission; the ticket alone is not proof of fault.",
+   "sourceName": "S.C. Code § 56-5-6160 (scstatehouse.gov, read 2026-10-02); Samuel v. Mouzon (S.C. Ct. App. 1984) — reused from facts-1679",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Add: 'A citation is not proof of fault on its own — South Carolina bars evidence of a traffic conviction in a civil case (S.C. Code § 56-5-6160) — but a guilty plea to the ticket can be used as an admission.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Video evidence showing the lane change in real time is among the most compelling evidence in these cases.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "General",
+   "sourceUrl": "https://www.iihs.org/news/detail/stay-within-the-lines-lane-departure-warning-blind-spot-detection-help-drivers-avoid-trouble",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  },
+  {
+   "surface": "body",
+   "claim": "The location and angle of damage on both vehicles can help accident reconstructionists determine how the collision occurred and who was at fault.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "General",
+   "sourceUrl": "https://www.iihs.org/news/detail/stay-within-the-lines-lane-departure-warning-blind-spot-detection-help-drivers-avoid-trouble",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  },
+  {
+   "surface": "body",
+   "claim": "Modern vehicles record speed, braking, and steering data that can reveal whether the at-fault driver took any evasive action before the crash.",
+   "verdict": "update",
+   "currentValue": "Under 49 C.F.R. § 563.7 a vehicle that has an event data recorder must capture indicated speed, accelerator position and service-brake on/off for 20 seconds before a crash (Table I, as amended); steering input is required only 'if recorded' (Table II). EDRs are not mandatory — Part 563 governs vehicles that are equipped with one.",
+   "sourceName": "49 C.F.R. § 563.7, Tables I and II (Cornell LII, read 2026-10-02)",
+   "sourceUrl": "https://www.law.cornell.edu/cfr/text/49/563.7",
+   "retrievedAt": "2026-10-02",
+   "note": "Soften to 'Most modern vehicles have an event data recorder that captures speed, accelerator and brake use — and in many vehicles steering input — in the seconds before a crash.'"
+  },
+  {
+   "surface": "body",
+   "claim": "In cases involving commercial trucks, additional evidence may include the truck's side-mirror adjustment records, blind spot monitoring system data, and the trucking company's driver training records.",
+   "verdict": "update",
+   "currentValue": "No 'side-mirror adjustment records' exist: federal rules require two outside rear-vision mirrors (49 C.F.R. § 393.80), checked on the driver's pre-trip inspection and noted on post-trip inspection reports (§§ 396.13, 396.11 — kept three months). Data from camera or collision-warning systems exists only if the truck has them; carriers keep a driver qualification file (Part 391) and hours-of-service/ELD records (six months, § 395.8(k)).",
+   "sourceName": "49 C.F.R. §§ 393.80, 396.11, 396.13, 395.8(k), Part 391 (Cornell LII; retention periods from facts-4715)",
+   "sourceUrl": "https://www.law.cornell.edu/cfr/text/49/393.80",
+   "retrievedAt": "2026-10-02",
+   "note": "Replace with: 'the truck's mirror equipment and inspection reports, any camera or blind-spot warning system data, the driver's qualification file and hours-of-service records'."
+  },
+  {
+   "surface": "body",
+   "claim": "In cases involving extreme recklessness — such as a driver who was texting while making a blind lane change — Georgia allows punitive damages under O.C.G.A. § 51-12-5.1 to punish the wrongdoer.",
+   "verdict": "update",
+   "currentValue": "Georgia: punitive damages require clear and convincing evidence of 'willful misconduct, malice, fraud, wantonness, oppression, or that entire want of care which would raise the presumption of conscious indifference to consequences' (O.C.G.A. § 51-12-5.1(b)); 'negligence, even gross negligence, is inadequate' (Colonial Pipeline Co. v. Brown, 258 Ga. 115 (1988)). Capped at $250,000 (§ 51-12-5.1(g)) except where the defendant acted with specific intent to harm or while impaired by alcohol or drugs (§ 51-12-5.1(f)) or in product-liability cases (§ 51-12-5.1(e)); 2025's SB 68 did not change the cap. South Carolina: clear and convincing evidence of 'willful, wanton, or reckless' conduct (S.C. Code § 15-32-520(D)); capped at the greater of three times compensatory damages or $500,000 (§ 15-32-530(A)), a dollar floor indexed to CPI and set at $739,245 for 2026 by the Revenue and Fiscal Affairs Office (RFA memo 2026-02-03), with no cap where the defendant intended harm, was convicted of a felony for the conduct, or was impaired by alcohol or drugs (§ 15-32-530(C)).",
+   "sourceName": "O.C.G.A. § 51-12-5.1(b),(e),(f),(g) (Justia); Colonial Pipeline Co. v. Brown (1988); S.C. Code §§ 15-32-520(D), 15-32-530 (scstatehouse.gov); RFA memo 2026-02-03 — reused from facts-1663/1756/1767",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+   "retrievedAt": "2026-10-02",
+   "note": "Texting alone does not automatically meet the § 51-12-5.1(b) standard. Rewrite: 'When a driver's conduct shows willful misconduct or the kind of conscious indifference to consequences Georgia requires — proven by clear and convincing evidence — punitive damages are available under O.C.G.A. § 51-12-5.1, generally capped at $250,000 unless the driver was impaired or intended harm.'"
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina also permits punitive damages in cases of willful, wanton, or reckless conduct.",
+   "verdict": "keep",
+   "currentValue": "S.C. Code § 15-32-520(D): clear and convincing evidence of 'willful, wanton, or reckless' conduct; cap under § 15-32-530(A) is the greater of three times compensatory damages or $500,000 (CPI-indexed floor $739,245 for 2026), with no cap for intentional harm, related felony conviction, or impairment (§ 15-32-530(C)).",
+   "sourceName": "S.C. Code §§ 15-32-520, 15-32-530 (scstatehouse.gov); S.C. RFA memo 2026-02-03",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Optional: add 'proven by clear and convincing evidence'. If a cap figure is added, use $500,000 indexed ($739,245 in 2026). RFA memo: https://rfa.sc.gov/media/11478"
+  },
+  {
+   "surface": "body",
+   "claim": "If a blind spot accident results in a fatality, the victim's family may pursue a wrongful death claim to recover funeral expenses, loss of companionship, and other damages.",
+   "verdict": "update",
+   "currentValue": "Georgia: the surviving spouse (or children, or parents) recovers 'the full value of the life of the decedent' (O.C.G.A. §§ 51-4-1, 51-4-2), measured from the decedent's standpoint — it does not include the survivors' own grief (OB-Gyn Associates of Albany v. Littleton, 259 Ga. 663 (1989)); funeral and medical expenses belong to a separate estate claim (§ 51-4-5(b)). South Carolina: the executor or administrator brings the claim for the spouse, children, or parents (S.C. Code § 15-51-20), and those beneficiaries' damages include loss of companionship, grief and financial loss.",
+   "sourceName": "O.C.G.A. §§ 51-4-1, 51-4-2, 51-4-5(b) (Justia; facts-3493); S.C. Code § 15-51-20 (scstatehouse.gov; facts-2647)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-4/section-51-4-2/",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: '... the family may pursue a wrongful death claim — in Georgia for the full value of the deceased person's life, with funeral and medical expenses recovered through a separate estate claim; in South Carolina for the family's financial and emotional losses, including loss of companionship.' SC: https://www.scstatehouse.gov/code/t15c051.php"
+  },
+  {
+   "surface": "body",
+   "claim": "At Roden Law, we represent blind spot accident victims across Georgia and South Carolina on a contingency fee basis — you pay nothing unless we recover compensation for you.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Firm record (profiles/writer-profile.md, firm-facts.md); kept in sibling packs",
+   "sourceUrl": "/Users/brianhaas/Code/blue-sky-studio/client-rodenlaw-website/profiles/firm-facts.md",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  },
+  {
+   "surface": "body",
+   "claim": "With offices in Savannah, Charleston, Columbia, and Myrtle Beach, we are ready to fight for the compensation you deserve.",
+   "verdict": "update",
+   "currentValue": "Roden Law's offices per the firm record: Savannah and Darien, GA; Charleston, North Charleston, Columbia and Myrtle Beach, SC.",
+   "sourceName": "profiles/firm-facts.md (Offices and markets)",
+   "sourceUrl": "/Users/brianhaas/Code/blue-sky-studio/client-rodenlaw-website/profiles/firm-facts.md",
+   "retrievedAt": "2026-10-02",
+   "note": "Not false, but incomplete for a two-state post. Add Darien and North Charleston (link only to location pages that exist)."
+  },
+  {
+   "surface": "body",
+   "claim": "Call Roden Law today at 1-844-RESULTS or contact us online for a free consultation.",
+   "verdict": "keep",
+   "currentValue": "tel:1-844-737-8587 = 1-844-RESULTS (valid per brief).",
+   "sourceName": "Firm record",
+   "sourceUrl": "/Users/brianhaas/Code/blue-sky-studio/client-rodenlaw-website/profiles/firm-facts.md",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  },
+  {
+   "surface": "excerpt",
+   "claim": "Why blind spot collisions happen, who they injure most, and how fault is decided in Georgia and South Carolina.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Summary of the post; publishes as the Article description",
+   "sourceUrl": "https://www.iihs.org/news/detail/stay-within-the-lines-lane-departure-warning-blind-spot-detection-help-drivers-avoid-trouble",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Blind spot accidents cause thousands of injuries annually on Georgia and South Carolina roads, particularly affecting motorcyclists, bicyclists, and pedestrians.",
+   "verdict": "update",
+   "currentValue": "No state or federal source counts 'blind spot' crashes in Georgia or South Carolina — crash reports do not code a blind-spot factor. National figures: about 539,000 two-vehicle lane-change crashes in a year (NHTSA DOT HS 809 571, 1999 data); at least 60,000 people injured annually in lane-change crashes (NHTSA DOT HS 811 147 lit. review); IIHS estimates universal blind spot detection would prevent about 50,000 police-reported crashes a year.",
+   "sourceName": "NHTSA DOT HS 809 571 (2003); NHTSA DOT HS 811 147 (2008); IIHS 2017-08-23",
+   "sourceUrl": "https://www.nhtsa.gov/sites/nhtsa.gov/files/doths809571.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'Lane-change crashes number in the hundreds of thousands nationally each year (NHTSA), and they hit motorcyclists, bicyclists and pedestrians hardest.' Do not keep an unsourced state-level injury claim."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Proper mirror adjustment, shoulder checks, and defensive driving significantly reduce risk.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Platzer SAE 950601 (BGE setting); IIHS 2017 (blind spot detection -14% lane-change crashes)",
+   "sourceUrl": "https://saemobilus.sae.org/papers/geometry-automotive-rearview-mirrors-blind-zones-exist-strategies-overcome-950601",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Georgia requires safe lane changes under O.C.G.A. § 40-6-123, with a 2-year filing deadline (O.C.G.A. § 9-3-33).",
+   "verdict": "update",
+   "currentValue": "O.C.G.A. § 40-6-48(1) (do not leave a lane until you have first ascertained the move is safe) and § 40-6-123(a) (reasonable safety plus an appropriate and timely signal). § 9-3-33: two years.",
+   "sourceName": "O.C.G.A. §§ 40-6-48(1), 40-6-123(a), 9-3-33 (Justia)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-3/section-40-6-48/",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'Georgia requires safe, signaled lane changes under O.C.G.A. §§ 40-6-48 and 40-6-123, ...'."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "South Carolina imposes similar duties under S.C. Code § 56-5-2150, with a 3-year deadline (S.C. Code § 15-3-530).",
+   "verdict": "update",
+   "currentValue": "S.C. Code § 56-5-1900(a) (do not leave a lane until you have first ascertained the move is safe) and § 56-5-2150 (reasonable safety; signal for at least the last 100 feet). § 15-3-530(5): three years.",
+   "sourceName": "S.C. Code §§ 56-5-1900, 56-5-2150, 15-3-530 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: '... under S.C. Code §§ 56-5-1900 and 56-5-2150 ...'."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Both states apply modified comparative fault rules.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-33(g); Nelson v. Concrete Supply Co. (S.C. 1991)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  },
+  {
+   "surface": "faq:0",
+   "claim": "A blind spot accident occurs when a driver fails to see another vehicle, motorcyclist, bicyclist, or pedestrian in an area around their vehicle that is not visible through mirrors or direct line of sight. These crashes most commonly happen during lane changes, merges, and turns.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "NHTSA DOT HS 809 571 (lane-change and merging scenarios); FMCSA No-Zone guidance",
+   "sourceUrl": "https://www.nhtsa.gov/sites/nhtsa.gov/files/doths809571.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQ answers publish as FAQPage structured data."
+  },
+  {
+   "surface": "faq:1",
+   "claim": "Motorcyclists, bicyclists, and pedestrians face the highest risk because their smaller profiles make them easier to miss.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "General; hedged characterisation",
+   "sourceUrl": "https://www.fmcsa.dot.gov/ourroads/tips-driving-safely-around-large-trucks-or-buses",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  },
+  {
+   "surface": "faq:1",
+   "claim": "Drivers of compact cars traveling alongside large trucks or SUVs are also at elevated risk due to the larger vehicles extensive blind zones.",
+   "verdict": "update",
+   "currentValue": "Drivers of compact cars traveling alongside large trucks or SUVs are also at elevated risk due to the larger vehicles' extensive blind zones.",
+   "sourceName": "Copy fix; FMCSA No-Zone guidance for trucks",
+   "sourceUrl": "https://www.fmcsa.dot.gov/sites/fmcsa.dot.gov/files/docs/lang/USDOT_OROR_Inforgraphic_1170x612-Truck_V17ai.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Missing possessive apostrophe ('vehicles'') — publishes in FAQPage structured data."
+  },
+  {
+   "surface": "faq:2",
+   "claim": "Angle your side mirrors outward until you can barely see your own vehicle, perform shoulder checks before every lane change, use turn signals early, and avoid lingering in other vehicles blind spots.",
+   "verdict": "update",
+   "currentValue": "Lean your head toward each window and set that side mirror so you can just see your own car — from your normal seat it will then disappear from view — perform shoulder checks before every lane change, use turn signals early, and avoid lingering in other vehicles' blind spots.",
+   "sourceName": "Platzer, SAE Technical Paper 950601 (1995); FMCSA Tips for Passenger Vehicle Drivers ('Try to avoid lingering in blind spots')",
+   "sourceUrl": "https://saemobilus.sae.org/papers/geometry-automotive-rearview-mirrors-blind-zones-exist-strategies-overcome-950601",
+   "retrievedAt": "2026-10-02",
+   "note": "Same BGE correction as the body; also fix the missing apostrophe in 'vehicles' blind spots'."
+  },
+  {
+   "surface": "faq:2",
+   "claim": "Modern blind spot monitoring systems can supplement but should not replace these habits.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "IIHS 2017-08-23 (Cicchino: 'It's still up to the driver to pay attention to that information')",
+   "sourceUrl": "https://www.iihs.org/news/detail/stay-within-the-lines-lane-departure-warning-blind-spot-detection-help-drivers-avoid-trouble",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  },
+  {
+   "surface": "faq:3",
+   "claim": "In Georgia, you have 2 years from the date of the accident to file a personal injury lawsuit (O.C.G.A. § 9-3-33). In South Carolina, you have 3 years (S.C. Code § 15-3-530). Missing these deadlines can permanently bar your claim.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-3-33 (Justia); S.C. Code § 15-3-530(5) (scstatehouse.gov)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct for private defendants; government-defendant deadlines differ (SC § 15-78-110; GA ante litem notice)."
+  },
+  {
+   "surface": "faq:4",
+   "claim": "Yes, both states follow modified comparative fault rules. In Georgia, you can recover if you are less than 50% at fault (O.C.G.A. § 51-12-33). In South Carolina, you can recover if you are less than 51% at fault. Your compensation is reduced by your percentage of fault.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-33(a),(g) (Justia); Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Optional: add '(Nelson v. Concrete Supply Co.)' after the SC sentence."
+  },
+  {
+   "surface": "faq:5",
+   "claim": "You may recover medical expenses, lost wages, pain and suffering, property damage, and loss of enjoyment of life.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Standard compensatory damages in both states",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  },
+  {
+   "surface": "faq:5",
+   "claim": "In cases involving extreme recklessness, punitive damages may also be available.",
+   "verdict": "update",
+   "currentValue": "Georgia: punitive damages require clear and convincing evidence of 'willful misconduct, malice, fraud, wantonness, oppression, or that entire want of care which would raise the presumption of conscious indifference to consequences' (O.C.G.A. § 51-12-5.1(b)); 'negligence, even gross negligence, is inadequate' (Colonial Pipeline Co. v. Brown, 258 Ga. 115 (1988)). Capped at $250,000 (§ 51-12-5.1(g)) except where the defendant acted with specific intent to harm or while impaired by alcohol or drugs (§ 51-12-5.1(f)) or in product-liability cases (§ 51-12-5.1(e)); 2025's SB 68 did not change the cap. South Carolina: clear and convincing evidence of 'willful, wanton, or reckless' conduct (S.C. Code § 15-32-520(D)); capped at the greater of three times compensatory damages or $500,000 (§ 15-32-530(A)), a dollar floor indexed to CPI and set at $739,245 for 2026 by the Revenue and Fiscal Affairs Office (RFA memo 2026-02-03), with no cap where the defendant intended harm, was convicted of a felony for the conduct, or was impaired by alcohol or drugs (§ 15-32-530(C)).",
+   "sourceName": "O.C.G.A. § 51-12-5.1(b); S.C. Code § 15-32-520(D)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+   "retrievedAt": "2026-10-02",
+   "note": "Replace with: 'When the at-fault driver's conduct was willful, wanton or showed conscious indifference to consequences — proven by clear and convincing evidence — punitive damages may also be available.'"
+  },
+  {
+   "surface": "faq:5",
+   "claim": "If the accident caused a fatality, the family may pursue a wrongful death claim.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-4-2; S.C. Code § 15-51-20 (in SC the personal representative files for the family)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-4/section-51-4-2/",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  }
+ ],
+ "recommendedEdits": [
+  "Intro: replace the NHTSA '240,000 accidents per year' sentence with 'NHTSA's most detailed study of lane-change crashes counted about 539,000 two-vehicle lane-change crashes in a single year — roughly 9 percent of all police-reported crashes'; drop 'a significant percentage of those involve blind spot failures'; repoint the NHTSA anchor from the homepage to https://www.nhtsa.gov/sites/nhtsa.gov/files/doths809571.pdf.",
+  "Georgia Laws: cite O.C.G.A. § 40-6-48(1) for 'first ascertain that the movement can be made safely' and keep § 40-6-123 for the signal duty ('appropriate and timely signal'; no 100-foot rule in Georgia). Mirror the change in Key Takeaways.",
+  "South Carolina Laws: attribute 'must not move from their lane until they have determined that it is safe' to S.C. Code § 56-5-1900(a); keep § 56-5-2150 and add its 100-foot signal requirement (§ 56-5-2150(B)). Mirror in Key Takeaways.",
+  "Table: truck row → 'About 20 feet in front, 30 feet behind, one lane on the left side and two lanes on the right' (FMCSA). Replace the unsourced car-length sizes for cars and SUVs with 'Varies with mirror setting' / 'Larger than a car's', or drop the column. Limit 'several car lengths on all four sides' to commercial trucks.",
+  "Mirrors (body and faq:2): BGE = 'Blindzone and Glare Elimination' (Platzer, SAE paper 950601, 1995), not 'named after' the SAE; add the head-lean step so readers don't reproduce the conventional setting. Fix the two missing apostrophes in faq:1 and faq:2 ('vehicles'').",
+  "Use Technology Wisely: optionally add 'IIHS found blind spot monitoring cut lane-change crashes by 14 percent' (iihs.org 2017-08-23).",
+  "Turn-signal sentence: qualify with 'whenever another driver could be affected' and add the SC 100-foot rule.",
+  "Proving Fault: add the citation caveat (S.C. Code § 56-5-6160; a guilty plea can be an admission); soften the EDR bullet (steering only 'if recorded'; 20 seconds of speed/accelerator/brake under 49 C.F.R. § 563.7); replace 'side-mirror adjustment records' with mirror equipment and inspection reports, camera/warning-system data, driver qualification file and hours-of-service records.",
+  "Punitive damages (body and faq:5): state the Georgia standard (clear and convincing evidence of willful misconduct or conscious indifference, § 51-12-5.1(b); $250,000 cap with no cap for impairment or intent to harm) rather than implying texting alone qualifies; SC: clear and convincing evidence of willful, wanton or reckless conduct (§ 15-32-520(D)), cap greater of 3x or $500,000 indexed ($739,245 in 2026).",
+  "Wrongful death sentence: Georgia measures the full value of the decedent's life and recovers funeral expenses through the estate claim (§ 51-4-5(b)); 'loss of companionship' is a South Carolina, not Georgia, wrongful-death measure.",
+  "Key Takeaways lead: replace 'cause thousands of injuries annually on Georgia and South Carolina roads' (no source) with a sourced national figure.",
+  "Offices: add Darien, GA and North Charleston, SC to the office list.",
+  "metaDescription is empty — supply one (e.g., 'How blind spot crashes happen, how to set your mirrors, and how Georgia and South Carolina lane-change laws decide fault.')."
+ ],
+ "statuteCitations": [
+  {
+   "section": "O.C.G.A. § 40-6-48",
+   "name": "Driving on roadways laned for traffic — (1) do not move from a lane until the driver has first ascertained the move can be made with safety",
+   "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-3/section-40-6-48/"
+  },
+  {
+   "section": "O.C.G.A. § 40-6-123",
+   "name": "Turning movements and required signals — reasonable safety; appropriate and timely signal 'when required' (no fixed distance)",
+   "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-6/section-40-6-123/"
+  },
+  {
+   "section": "O.C.G.A. § 51-1-6",
+   "name": "Breach of legal duty — negligence per se",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-6/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-33",
+   "name": "Apportionment; plaintiff barred at 50 percent or more (g); not amended by 2025 SB 68",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+  },
+  {
+   "section": "O.C.G.A. § 9-3-33",
+   "name": "Injuries to the person — two years",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-5.1",
+   "name": "Punitive damages — (b) clear and convincing standard; (e) product liability uncapped; (f) intent/impairment uncapped; (g) $250,000 cap",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/"
+  },
+  {
+   "section": "O.C.G.A. § 51-4-2",
+   "name": "Wrongful death of spouse or parent — full value of the life of the decedent",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-4/section-51-4-2/"
+  },
+  {
+   "section": "S.C. Code § 56-5-1900",
+   "name": "Driving on roadways laned for traffic — (a) do not move from the lane until the driver has first ascertained the move can be made with safety",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-2150",
+   "name": "Turning movements and required signals — (A) reasonable safety + signal; (B) signal during not less than the last 100 feet; (E) $25 fine, no points",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-6160",
+   "name": "Evidence of traffic conviction inadmissible in civil action",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 15-3-530",
+   "name": "Three years — (5) injury to the person",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "section": "S.C. Code § 15-32-520 / 15-32-530",
+   "name": "Punitive damages — clear and convincing evidence of willful, wanton or reckless conduct; cap greater of 3x compensatory or $500,000 (indexed: $739,245 for 2026); exceptions in (C)",
+   "url": "https://www.scstatehouse.gov/code/t15c032.php"
+  },
+  {
+   "section": "S.C. Code § 15-51-20",
+   "name": "Wrongful death — action brought by executor or administrator for spouse, children, parents or heirs",
+   "url": "https://www.scstatehouse.gov/code/t15c051.php"
+  },
+  {
+   "section": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991)",
+   "name": "South Carolina modified comparative negligence — recover if not more than 50% at fault",
+   "url": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html"
+  },
+  {
+   "section": "Colonial Pipeline Co. v. Brown, 258 Ga. 115 (1988)",
+   "name": "Negligence, even gross negligence, is inadequate to support punitive damages",
+   "url": "https://law.justia.com/cases/georgia/supreme-court/1988/44925-1.html"
+  },
+  {
+   "section": "49 C.F.R. § 563.7",
+   "name": "Event data recorder data elements — speed, accelerator, service brake 20 s pre-crash; steering if recorded",
+   "url": "https://www.law.cornell.edu/cfr/text/49/563.7"
+  },
+  {
+   "section": "49 C.F.R. § 393.80",
+   "name": "Rear-vision mirrors on trucks and truck tractors",
+   "url": "https://www.law.cornell.edu/cfr/text/49/393.80"
+  }
+ ],
+ "authoritativeLinks": [
+  {
+   "name": "IIHS — Lane departure warning, blind spot detection help drivers avoid trouble (2017-08-23; blind spot detection -14% lane-change crashes, -23% injury lane-change crashes; ~50,000 crashes/yr preventable)",
+   "url": "https://www.iihs.org/news/detail/stay-within-the-lines-lane-departure-warning-blind-spot-detection-help-drivers-avoid-trouble"
+  },
+  {
+   "name": "NHTSA — Analysis of Lane Change Crashes, DOT HS 809 571 (2003; ~539,000 two-vehicle lane-change crashes in 1999, ~9% of police-reported crashes)",
+   "url": "https://www.nhtsa.gov/sites/nhtsa.gov/files/doths809571.pdf"
+  },
+  {
+   "name": "NHTSA — Lane change study, DOT HS 811 147 (2008; literature range 240,000–610,000 police-reported lane-change crashes/yr, ≥60,000 injured)",
+   "url": "https://www.nhtsa.gov/sites/nhtsa.gov/files/811147.pdf"
+  },
+  {
+   "name": "FMCSA — Our Roads Our Safety truck infographic (No-Zones: 20 ft front, 30 ft rear, 1 lane left, 2 lanes right)",
+   "url": "https://www.fmcsa.dot.gov/sites/fmcsa.dot.gov/files/docs/lang/USDOT_OROR_Inforgraphic_1170x612-Truck_V17ai.pdf"
+  },
+  {
+   "name": "FMCSA — Tips for Passenger Vehicle Drivers (avoid lingering in blind spots; if you can't see the driver's face in the mirror, they can't see you; updated 2026-09-29)",
+   "url": "https://www.fmcsa.dot.gov/ourroads/tips-driving-safely-around-large-trucks-or-buses"
+  },
+  {
+   "name": "FMCSA — CMV Driving Tips: Inadequate Surveillance (No-Zone; passenger vehicles 'virtually disappear')",
+   "url": "https://www.fmcsa.dot.gov/safety/driver-safety/cmv-driving-tips-inadequate-surveillance"
+  },
+  {
+   "name": "SAE — Platzer, 'The Geometry of Automotive Rearview Mirrors — Why Blind Zones Exist and Strategies to Overcome Them,' Technical Paper 950601 (1995) — origin of the BGE setting",
+   "url": "https://saemobilus.sae.org/papers/geometry-automotive-rearview-mirrors-blind-zones-exist-strategies-overcome-950601"
+  },
+  {
+   "name": "S.C. Revenue and Fiscal Affairs Office — Punitive damage award limitation, inflation component (2026-02-03; $739,245)",
+   "url": "https://rfa.sc.gov/media/11478"
+  }
+ ],
+ "quoteNote": "Claims are quoted from the tag-stripped text of body.html and meta.json; each matches exactly once. Several body quotes span inline <strong>/<a> tags (statute cites, 'BGE method', the offices list, the phone line). Justia URLs: § 40-6-48 was read in a browser on 2026-10-02 (no challenge presented); the others are reused from sibling packs. nhtsa.gov and fmcsa.dot.gov return 403 to curl but load in a browser."
+}

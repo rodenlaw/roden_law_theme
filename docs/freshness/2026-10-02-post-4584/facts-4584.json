@@ -1,0 +1,626 @@
+{
+ "postId": 4584,
+ "slug": "average-personal-injury-settlement-amounts",
+ "liveUrl": "https://rodenlaw.com/blog/average-personal-injury-settlement-amounts/",
+ "jurisdiction": "GA+SC",
+ "researchedAt": "2026-10-02",
+ "verifiedClaims": [
+  {
+   "surface": "excerpt",
+   "claim": "What personal injury settlements realistically range by case type, why averages mislead, and the factors that actually drive case value.",
+   "verdict": "update",
+   "currentValue": "The case-type ranges this excerpt promises are unsourced and are dropped from the body (see the table findings).",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "Publishes as the Article description. Suggested: ‘Why there is no reliable “average” personal injury settlement, what the most recent federal court data shows, and the factors that actually drive case value in Georgia and South Carolina.’"
+  },
+  {
+   "surface": "body",
+   "claim": "According to the Bureau of Justice Statistics, the median personal injury award in state courts is roughly $31,000, but that single number is almost meaningless.",
+   "verdict": "update",
+   "currentValue": "BJS (Civil Justice Survey of State Courts, 2005 data, published October 2009) is the most recent federal series; there is no newer one. Its headline: ‘Half of plaintiff winners in tort trials were awarded $24,000 or less in damages’ (national sample of state general-jurisdiction courts, 2005; jury $24,000, bench $21,000). The $31,000 figure is real but narrower: it is the 2005 median award to prevailing plaintiffs in tort trials in the nation’s 75 most populous counties, CPI-adjusted (Table 12; $38,000 in 1996, $30,000 in 2001). Both are TRIAL awards to plaintiffs who won — not settlements, and not all personal injury claims. By case type (Table 5, national, 2005): automobile accident $15,000; animal attack $21,000; premises liability $98,000; medical malpractice $400,000; non-asbestos product liability $500,000.",
+   "sourceName": "Bureau of Justice Statistics, Tort Bench and Jury Trials in State Courts, 2005 (NCJ 228129, Oct. 2009), Civil Justice Survey of State Courts — highlights, Table 5, Table 12, Table 13",
+   "sourceUrl": "https://bjs.ojp.gov/library/publications/tort-bench-and-jury-trials-state-courts-2005",
+   "retrievedAt": "2026-10-02",
+   "note": "Two fixes: (1) say what the number is — a 2005 median trial award to winning plaintiffs — and date it; (2) the outbound link https://www.bjs.gov/index.cfm?ty=tp&tid=451 now redirects to the BJS homepage (dead deep link); replace with the publication page. Suggested: ‘In the most recent Bureau of Justice Statistics study of state-court tort trials (2005 data), half of the plaintiffs who won at trial were awarded $24,000 or less — but that single number is almost meaningless.’ PDF: https://bjs.ojp.gov/content/pub/pdf/tbjtsc05.pdf"
+  },
+  {
+   "surface": "body",
+   "claim": "A handful of multimillion-dollar verdicts in wrongful death and catastrophic injury cases pull the mean far above what most people receive.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Bureau of Justice Statistics, Tort Bench and Jury Trials in State Courts, 2005 (NCJ 228129, Oct. 2009), Civil Justice Survey of State Courts — highlights, Table 5, Table 12, Table 13",
+   "sourceUrl": "https://bjs.ojp.gov/library/publications/tort-bench-and-jury-trials-state-courts-2005",
+   "retrievedAt": "2026-10-02",
+   "note": "Consistent with BJS 2005: median trial award $24,000 while ‘damage awards of $1 million or more were awarded in nearly 30% of medical malpractice trials’ — a right-skewed distribution. Qualitative; no figure."
+  },
+  {
+   "surface": "body",
+   "claim": "Meanwhile, thousands of soft-tissue claims settle for $5,000 to $15,000 and drag the median down.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "No source for a $5,000–$15,000 soft-tissue settlement band. Drop the range: ‘Meanwhile, thousands of smaller soft-tissue claims resolve for modest amounts and pull the median down.’ (If a figure is wanted, the only sourced one is BJS’s $15,000 median award in 2005 car-accident trials — a trial award, not a settlement.)"
+  },
+  {
+   "surface": "body",
+   "claim": "If you have been told your claim is \"worth about $25,000\" based on some industry average, you should be skeptical.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "Illustrative quotation of what an adjuster might say, not a factual claim. For context only: ISO/III report the average paid auto bodily-injury liability claim was $28,278 in 2024 (includes loss-adjustment expenses) — do not add it here."
+  },
+  {
+   "surface": "body",
+   "claim": "The table below provides general ranges based on the type of accident and the severity of injuries involved. These are not guarantees. They reflect the broad spectrum of outcomes our attorneys see in Georgia and South Carolina personal injury claims.",
+   "verdict": "update",
+   "currentValue": "The ranges are unsourced (see the eight table rows below) and must come out.",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "Rewrite the intro and convert the table to non-numeric: keep ‘Case Type’ and ‘Key Variables’ columns and replace ‘Typical Settlement Range’ with a non-numeric column (e.g., ‘What tends to drive value’) or delete the column. Optional sourced context beneath the table, clearly labelled as trial awards: ‘For perspective, the Bureau of Justice Statistics’ most recent study of state-court tort trials (2005 data) found median awards to winning plaintiffs of $15,000 in car-accident trials, $98,000 in premises-liability trials and $400,000 in medical-malpractice trials. Those are verdicts, not settlements, and they are two decades old.’"
+  },
+  {
+   "surface": "body",
+   "claim": "Car Accident $15,000 – $75,000",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "Bureau of Justice Statistics, Tort Bench and Jury Trials in State Courts, 2005 (NCJ 228129, Oct. 2009), Civil Justice Survey of State Courts — highlights, Table 5, Table 12, Table 13",
+   "sourceUrl": "https://bjs.ojp.gov/library/publications/tort-bench-and-jury-trials-state-courts-2005",
+   "retrievedAt": "2026-10-02",
+   "note": "No primary or well-documented source states this range. The page attributes it only to ‘the broad spectrum of outcomes our attorneys see’, which is not a citable source and cannot be verified; no BJS, Jury Verdict Research, IRC, NCSC or ISO publication gives settlement ranges by case type. Do not substitute a number. Closest documented figures: BJS median automobile-accident trial award $15,000 (2005, national); ISO/III average paid auto bodily-injury liability claim $28,278 (2024, includes loss-adjustment expenses, excludes most no-fault states). Neither states a $15K–$75K range."
+  },
+  {
+   "surface": "body",
+   "claim": "Truck Accident $50,000 – $500,000+",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "Bureau of Justice Statistics, Tort Bench and Jury Trials in State Courts, 2005 (NCJ 228129, Oct. 2009), Civil Justice Survey of State Courts — highlights, Table 5, Table 12, Table 13",
+   "sourceUrl": "https://bjs.ojp.gov/library/publications/tort-bench-and-jury-trials-state-courts-2005",
+   "retrievedAt": "2026-10-02",
+   "note": "No primary or well-documented source states this range. The page attributes it only to ‘the broad spectrum of outcomes our attorneys see’, which is not a citable source and cannot be verified; no BJS, Jury Verdict Research, IRC, NCSC or ISO publication gives settlement ranges by case type. Do not substitute a number. BJS does not break out truck crashes. No source."
+  },
+  {
+   "surface": "body",
+   "claim": "Motorcycle Accident $30,000 – $150,000",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "No primary or well-documented source states this range. The page attributes it only to ‘the broad spectrum of outcomes our attorneys see’, which is not a citable source and cannot be verified; no BJS, Jury Verdict Research, IRC, NCSC or ISO publication gives settlement ranges by case type. Do not substitute a number. No source."
+  },
+  {
+   "surface": "body",
+   "claim": "Slip and Fall $10,000 – $50,000",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "Bureau of Justice Statistics, Tort Bench and Jury Trials in State Courts, 2005 (NCJ 228129, Oct. 2009), Civil Justice Survey of State Courts — highlights, Table 5, Table 12, Table 13",
+   "sourceUrl": "https://bjs.ojp.gov/library/publications/tort-bench-and-jury-trials-state-courts-2005",
+   "retrievedAt": "2026-10-02",
+   "note": "No primary or well-documented source states this range. The page attributes it only to ‘the broad spectrum of outcomes our attorneys see’, which is not a citable source and cannot be verified; no BJS, Jury Verdict Research, IRC, NCSC or ISO publication gives settlement ranges by case type. Do not substitute a number. BJS premises-liability median trial award was $98,000 (2005) — above the post’s top figure; the range is unsupported either way."
+  },
+  {
+   "surface": "body",
+   "claim": "Medical Malpractice $100,000 – $1,000,000+",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "Bureau of Justice Statistics, Tort Bench and Jury Trials in State Courts, 2005 (NCJ 228129, Oct. 2009), Civil Justice Survey of State Courts — highlights, Table 5, Table 12, Table 13",
+   "sourceUrl": "https://bjs.ojp.gov/library/publications/tort-bench-and-jury-trials-state-courts-2005",
+   "retrievedAt": "2026-10-02",
+   "note": "No primary or well-documented source states this range. The page attributes it only to ‘the broad spectrum of outcomes our attorneys see’, which is not a citable source and cannot be verified; no BJS, Jury Verdict Research, IRC, NCSC or ISO publication gives settlement ranges by case type. Do not substitute a number. BJS: median med-mal trial award $400,000; awards of $1 million or more in nearly 30% of med-mal trials (2005). Plaintiffs won only about 1 in 5 med-mal trials (19.4% in the 75 largest counties). Not a settlement range. Also, South Carolina caps med-mal noneconomic damages (S.C. Code § 15-32-220)."
+  },
+  {
+   "surface": "body",
+   "claim": "Wrongful Death $500,000 – $5,000,000+",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "Bureau of Justice Statistics, Tort Bench and Jury Trials in State Courts, 2005 (NCJ 228129, Oct. 2009), Civil Justice Survey of State Courts — highlights, Table 5, Table 12, Table 13",
+   "sourceUrl": "https://bjs.ojp.gov/library/publications/tort-bench-and-jury-trials-state-courts-2005",
+   "retrievedAt": "2026-10-02",
+   "note": "No primary or well-documented source states this range. The page attributes it only to ‘the broad spectrum of outcomes our attorneys see’, which is not a citable source and cannot be verified; no BJS, Jury Verdict Research, IRC, NCSC or ISO publication gives settlement ranges by case type. Do not substitute a number. No source; BJS does not report wrongful death as a category."
+  },
+  {
+   "surface": "body",
+   "claim": "Brain Injury $100,000 – $10,000,000+",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "No primary or well-documented source states this range. The page attributes it only to ‘the broad spectrum of outcomes our attorneys see’, which is not a citable source and cannot be verified; no BJS, Jury Verdict Research, IRC, NCSC or ISO publication gives settlement ranges by case type. Do not substitute a number. No source."
+  },
+  {
+   "surface": "body",
+   "claim": "Dog Bite $15,000 – $50,000",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "Bureau of Justice Statistics, Tort Bench and Jury Trials in State Courts, 2005 (NCJ 228129, Oct. 2009), Civil Justice Survey of State Courts — highlights, Table 5, Table 12, Table 13",
+   "sourceUrl": "https://bjs.ojp.gov/library/publications/tort-bench-and-jury-trials-state-courts-2005",
+   "retrievedAt": "2026-10-02",
+   "note": "No primary or well-documented source states this range. The page attributes it only to ‘the broad spectrum of outcomes our attorneys see’, which is not a citable source and cannot be verified; no BJS, Jury Verdict Research, IRC, NCSC or ISO publication gives settlement ranges by case type. Do not substitute a number. BJS median animal-attack trial award $21,000 (2005). No settlement source."
+  },
+  {
+   "surface": "body",
+   "claim": "Both are car accidents, but their settlement values are worlds apart.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "Qualitative; no figure."
+  },
+  {
+   "surface": "body",
+   "claim": "If your medical bills are $80,000, the settlement should reflect that and then some.",
+   "verdict": "update",
+   "currentValue": "Georgia: for causes of action arising on or after April 21, 2025, medical special damages are ‘limited to the reasonable value of medically necessary care’, and if the plaintiff has any health insurance the jury hears both the billed amount and ‘the amounts actually necessary to satisfy such charges pursuant to the insurance contract’ (O.C.G.A. § 51-12-1.1(b)–(c), SB 68 § 7; § 9(b) limits it to causes arising on/after the effective date). In letter-of-protection cases the defense may discover the LOP and itemized coding (§ 51-12-1.1(d)). South Carolina keeps the full collateral-source rule (Covington v. George, 2004).",
+   "sourceName": "Georgia SB 68 (2025), signed text, Sections 7 and 9(b); O.C.G.A. § 51-12-1.1 (sibling pack 1712)",
+   "sourceUrl": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download",
+   "retrievedAt": "2026-10-02",
+   "note": "$80,000 is a hypothetical and can stay. Add a Georgia qualifier so the reader does not assume billed charges set the floor: ‘…and then some. (In Georgia, for injuries since April 21, 2025, a jury may also hear what your health insurer actually paid, O.C.G.A. § 51-12-1.1.)’ Better placed in the Georgia law section — see recommendedEdits."
+  },
+  {
+   "surface": "body",
+   "claim": "If your injuries permanently reduce your ability to earn what you earned before, an economist can project those losses over your remaining working life, and the numbers add up fast.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "General; no figure."
+  },
+  {
+   "surface": "body",
+   "claim": "When a trucking company, a maintenance contractor, and a parts manufacturer all share blame, the total available insurance coverage increases substantially.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 15-38-15 (version effective January 1, 2026)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c038.php",
+   "retrievedAt": "2026-10-02",
+   "note": "True. Optional SC nuance: under § 15-38-15 a defendant found less than 50% at fault pays only its own percentage (no joint and several liability), which is exactly why naming every responsible party matters. Do not cite § 15-38-15 for the plaintiff’s 51% bar."
+  },
+  {
+   "surface": "body",
+   "claim": "If you waited three weeks after the accident to see a doctor, the insurance company will argue that your injuries were not serious.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "Illustrative."
+  },
+  {
+   "surface": "body",
+   "claim": "Both Georgia and South Carolina follow modified comparative fault rules, which means your settlement is reduced by your percentage of fault. If you were 20% at fault, your recovery drops by 20%. Cross certain thresholds, and you recover nothing at all.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-33(a),(g); Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct in both states."
+  },
+  {
+   "surface": "body",
+   "claim": "You can have a case worth $500,000, but if the at-fault driver only carries the state minimum liability coverage of $25,000, collecting beyond that limit is difficult unless other sources of recovery exist, such as an underinsured motorist policy on your own vehicle.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 33-7-11(a)(1)(A) / § 40-9-37 (Georgia OCI — Auto); S.C. Code § 38-77-140(A)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+   "retrievedAt": "2026-10-02",
+   "note": "$25,000 per person bodily-injury minimum verified in both states (25/50/25; GA OCI https://oci.georgia.gov/insurance-resources/auto; sibling packs 1657, 1724). $500,000 is a hypothetical. Optional: in South Carolina UM is mandatory (§ 38-77-150) and UIM must be offered (§ 38-77-160)."
+  },
+  {
+   "surface": "body",
+   "claim": "You have a legal obligation to take reasonable steps to minimize your losses.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-11; Nestler v. Fields, 425 S.C. 528 (Ct. App. 2019)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-11/",
+   "retrievedAt": "2026-10-02",
+   "note": "Georgia is statutory (‘he must mitigate his damages as far as is practicable by the use of ordinary care and diligence’); South Carolina common law. Optional cite. Reused from sibling packs."
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia gives you two years from the date of injury to file a personal injury lawsuit (O.C.G.A. § 9-3-33). For wrongful death claims, the two-year clock starts on the date of death (O.C.G.A. § 9-3-33).",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-3-33 (sibling packs 4715, 4721, 3493)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct. Writer-profile jurisdiction table matches. Not required: § 9-3-33 gives loss of consortium four years; government claims carry ante-litem notice deadlines."
+  },
+  {
+   "surface": "body",
+   "claim": "Under O.C.G.A. § 51-12-33, Georgia follows a modified comparative fault standard. You can recover damages as long as you are less than 50% at fault. If you are found to be 50% or more responsible, you are barred from any recovery. If you are 30% at fault, your total damages are reduced by 30%.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-33(a),(g) (2025 Code)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "(g): ‘the plaintiff shall not be entitled to receive any damages if the plaintiff is 50 percent or more responsible’. SB 68 (2025) did not change the 50% bar."
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia does not impose a statutory cap on compensatory damages in most personal injury cases, including pain and suffering. Medical malpractice damage caps were struck down by the Georgia Supreme Court in Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt (2010), so there is no artificial ceiling on what a jury can award.",
+   "verdict": "update",
+   "currentValue": "No cap is right for private defendants: Nestlehutt, 286 Ga. 731 (2010), held the noneconomic-damages caps in O.C.G.A. § 51-13-1 unconstitutional. Two things the paragraph now misses: (1) claims against the State of Georgia are capped at $1 million per person / $3 million per occurrence under the Georgia Tort Claims Act (O.C.G.A. § 50-21-29(b)(1)); (2) SB 68 (signed and effective April 21, 2025; applies to pending cases) rewrote O.C.G.A. § 9-10-184 so lawyers may argue a dollar figure for noneconomic damages only in closing, only if ‘rationally related to the evidence’, and with no reference to unrelated ‘objects or values’ (anchoring).",
+   "sourceName": "Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt, 286 Ga. 731 (2010); O.C.G.A. § 50-21-29(b)(1); O.C.G.A. § 9-10-184 as amended by SB 68 (2025) §§ 1, 9 (signed text)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/2010/s09a1432.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Minimal edit: ‘…struck down the noneconomic damages caps in O.C.G.A. § 51-13-1 in Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt (2010)…’ and add one sentence on SB 68 (see recommendedEdits). Optional: ‘except claims against the State, which the Georgia Tort Claims Act caps at $1 million per person’. Justia URLs: § 9-10-184 https://law.justia.com/codes/georgia/title-9/chapter-10/article-8/section-9-10-184/ ; § 50-21-29 https://law.justia.com/codes/georgia/title-50/chapter-21/article-2/section-50-21-29/"
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia caps punitive damages at $250,000 in most cases (O.C.G.A. § 51-12-5.1), with exceptions for cases involving product liability, specific intent to harm, or conduct under the influence of drugs or alcohol.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-5.1(e)(1),(f),(g) (sibling packs 1663, 1676, 1767)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+   "retrievedAt": "2026-10-02",
+   "note": "$250,000 cap (g) unchanged by SB 68. Exceptions verified: product liability (e)(1); specific intent to cause harm (f); acting under the influence of alcohol or drugs (other than lawfully prescribed drugs taken as prescribed) ‘to that degree that his or her judgment is substantially impaired’ (f). Optional precision: ‘…under the influence of alcohol or drugs to the point that judgment was substantially impaired.’ Punitive damages require clear and convincing evidence (b)."
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina provides three years from the date of injury to file a personal injury lawsuit (S.C. Code § 15-3-530).",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 15-3-530(5)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct. Not required here: two years against a government entity (§ 15-78-110)."
+  },
+  {
+   "surface": "body",
+   "claim": "You can recover damages as long as you are less than 51% at fault. If you are 51% or more at fault, you recover nothing. If you are 49% at fault, your award is reduced by 49%, but you still receive compensation.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct: recovery allowed if plaintiff’s negligence ‘is not greater than that of the defendant’. Optional cite ‘(Nelson v. Concrete Supply Co.)’; never § 15-38-15 for the bar."
+  },
+  {
+   "surface": "body",
+   "claim": "The practical difference between Georgia's 50% bar and South Carolina's 51% bar is narrow but real.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-33(g); Nelson v. Concrete Supply Co.",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "At exactly 50% a Georgia plaintiff recovers nothing; a South Carolina plaintiff recovers half."
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina does not cap compensatory damages, including non-economic damages like pain and suffering, in standard personal injury cases.",
+   "verdict": "update",
+   "currentValue": "True for ordinary negligence claims against private defendants. Two caps the reader should know, since the post discusses medical malpractice: (1) medical-malpractice noneconomic damages are capped at $350,000 per provider/institution and $1,050,000 aggregate per claimant, CPI-indexed to $596,001 / $1,788,002 for 2026 (S.C. Code § 15-32-220; RFA memo 2026-02-03), with no cap for gross negligence, wilful/wanton/reckless conduct, fraud, or altered/destroyed records (§ 15-32-220(E)); (2) claims against a government entity are capped at $300,000 per person / $600,000 per occurrence (§ 15-78-120(a)).",
+   "sourceName": "S.C. Code §§ 15-32-220, 15-78-120 (scstatehouse.gov); S.C. RFA 2026 adjustment (sibling packs 1696, 1824: https://rfa.sc.gov/media/11477)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Writer-profile rule: never state or imply South Carolina has no med-mal cap. Append: ‘The exceptions are medical malpractice, where noneconomic damages are capped (inflation-adjusted to $596,001 per defendant and $1,788,002 total in 2026, S.C. Code § 15-32-220), and claims against government entities, capped at $300,000 per person (S.C. Code § 15-78-120).’"
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina caps punitive damages at the greater of three times the compensatory damages or $739,245, the 2026 inflation-indexed figure (S.C. Code § 15-32-530). This cap does not apply in cases involving drunk driving or intentional conduct.",
+   "verdict": "update",
+   "currentValue": "$739,245 verified: RFA memo of February 3, 2026 (CPI-U up 47.8% Dec. 2010–Dec. 2025; ‘the limit increases to $739,245’; effective on publication in the State Register; $719,971 for 2025). Exceptions are incomplete: under § 15-32-530(C) there is no cap when (1) the defendant had an intent to harm and did harm the claimant, (2) the defendant pled guilty to or was convicted of a felony arising from the same conduct, or (3) the defendant was under the influence of alcohol, drugs (other than as prescribed) or intentionally consumed toxic vapor to the degree judgment was substantially impaired. Under (B) the cap rises to the greater of 4x or $2,000,000 for conduct motivated primarily by unreasonable financial gain known/approved by management, or conduct that could support a felony conviction.",
+   "sourceName": "S.C. Code § 15-32-530(A)–(D) (scstatehouse.gov, read 2026-10-02); S.C. Revenue and Fiscal Affairs Office, ‘Punitive Damage Award Limitation – Inflation Component’, memo of Feb. 3, 2026",
+   "sourceUrl": "https://rfa.sc.gov/media/11478",
+   "retrievedAt": "2026-10-02",
+   "note": "Dollar figure stays. Change the last sentence to: ‘The cap does not apply when the defendant was impaired by alcohol or drugs, intended to cause harm, or was convicted of a felony for the same conduct, and it rises to the greater of four times compensatory damages or $2 million in certain cases of profit-motivated misconduct.’ I confirmed the RFA memo, not the State Register issue."
+  },
+  {
+   "surface": "body",
+   "claim": "Every case has dozens of variables that are invisible from the outside. The friend who received $100,000 for a car accident may have had $60,000 in medical bills, a surgeon who gave compelling deposition testimony, and an at-fault driver who was texting.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "Hypothetical figures, clearly illustrative."
+  },
+  {
+   "surface": "body",
+   "claim": "Case results published by law firms represent their best outcomes. Nobody advertises the $8,000 soft-tissue settlement, even though those cases make up a significant portion of personal injury claims.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Bureau of Justice Statistics, Tort Bench and Jury Trials in State Courts, 2005 (NCJ 228129, Oct. 2009), Civil Justice Survey of State Courts — highlights, Table 5, Table 12, Table 13",
+   "sourceUrl": "https://bjs.ojp.gov/library/publications/tort-bench-and-jury-trials-state-courts-2005",
+   "retrievedAt": "2026-10-02",
+   "note": "$8,000 is illustrative. ‘Significant portion’ is consistent with BJS: car-accident cases were about 70% of tort trials with plaintiff winners and their median award was $15,000 (2005). Non-numeric; keep."
+  },
+  {
+   "surface": "body",
+   "claim": "The vast majority of personal injury cases, roughly 95% or more, resolve through settlement.",
+   "verdict": "update",
+   "currentValue": "BJS: ‘bench and jury trials accounted for an estimated 4% of all tort dispositions in 2005’ (Table 13: 3.5% of 140,929 tort dispositions in 104 jurisdictions; 3.4% of car-accident and 7.8% of medical-malpractice cases). The other ~96% ended by settlement, dismissal, default or other non-trial disposition — BJS does not separate settlements from dismissals, so ‘95% … resolve through settlement’ is not what the source says.",
+   "sourceName": "Bureau of Justice Statistics, Tort Bench and Jury Trials in State Courts, 2005 (NCJ 228129, Oct. 2009), Civil Justice Survey of State Courts — highlights, Table 5, Table 12, Table 13",
+   "sourceUrl": "https://bjs.ojp.gov/library/publications/tort-bench-and-jury-trials-state-courts-2005",
+   "retrievedAt": "2026-10-02",
+   "note": "Suggested: ‘The vast majority of personal injury cases resolve without a trial: in the most recent Bureau of Justice Statistics count (2005), only about 4% of tort cases in state courts were decided by a judge or jury, and most of the rest settled.’ Same finding as sibling pack 1720. Data are old; there is no newer BJS series."
+  },
+  {
+   "surface": "body",
+   "claim": "Verdicts can be higher than what was offered in settlement, but they can also be lower, or a jury can find in favor of the defendant entirely.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Bureau of Justice Statistics, Tort Bench and Jury Trials in State Courts, 2005 (NCJ 228129, Oct. 2009), Civil Justice Survey of State Courts — highlights, Table 5, Table 12, Table 13",
+   "sourceUrl": "https://bjs.ojp.gov/library/publications/tort-bench-and-jury-trials-state-courts-2005",
+   "retrievedAt": "2026-10-02",
+   "note": "BJS 2005: plaintiffs won about half of tort trials (national sample); in the 75 largest counties 61% in car-accident trials and 19.4% in medical-malpractice trials. Optional enrichment."
+  },
+  {
+   "surface": "body",
+   "claim": "Insurance companies track which attorneys actually try cases and which ones always settle. Firms that go to trial when necessary tend to get better settlement offers because the insurance company knows the threat is real.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "No primary source for insurers ‘tracking’ attorneys or for better offers as a measured effect. Soften to a reasoned statement: ‘Insurers weigh the realistic risk that a case will go to a jury, and that risk is more credible when your attorney is prepared to try it.’"
+  },
+  {
+   "surface": "body",
+   "claim": "We have recovered more than $300 million for our clients across car accidents, truck accidents, wrongful death, brain injuries, and every type of personal injury case.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md — Firm stats (verbatim): ‘$300M+ recovered’",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "Firm fact from the client registry; not independently verifiable and not required to be. ‘Every type of personal injury case’ is puffery; optional: ‘and many other kinds of personal injury cases’."
+  },
+  {
+   "surface": "body",
+   "claim": "There is no fee unless we win your case. Call 1-844-RESULTS",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md — contingency fee, toll-free 1-844-RESULTS",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "tel:18447378587 matches 1-844-737-8587 (R-E-S-U-L-T-S)."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Settlement ranges by type: car accidents $15K-$75K, truck $50K-$500K+, motorcycle $30K-$150K, slip and fall $10K-$50K, med mal $100K-$1M+, wrongful death $500K-$5M+.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "Bureau of Justice Statistics, Tort Bench and Jury Trials in State Courts, 2005 (NCJ 228129, Oct. 2009), Civil Justice Survey of State Courts — highlights, Table 5, Table 12, Table 13",
+   "sourceUrl": "https://bjs.ojp.gov/library/publications/tort-bench-and-jury-trials-state-courts-2005",
+   "retrievedAt": "2026-10-02",
+   "note": "No primary or well-documented source states this range. The page attributes it only to ‘the broad spectrum of outcomes our attorneys see’, which is not a citable source and cannot be verified; no BJS, Jury Verdict Research, IRC, NCSC or ISO publication gives settlement ranges by case type. Do not substitute a number. Twelve dollar figures, all unsourced; this box renders above the article. Replace with a sourced, non-settlement statement: ‘There is no reliable “average” settlement. In the most recent federal study of state-court tort trials (BJS, 2005 data), half of winning plaintiffs were awarded $24,000 or less — $15,000 in car-accident trials and $400,000 in medical-malpractice trials — and those are verdicts, not settlements.’"
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Georgia caps punitive at $250K (O.C.G.A. § 51-12-5.1).",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-5.1(g)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+   "retrievedAt": "2026-10-02",
+   "note": "Optional: ‘in most cases’ — no cap for impaired drivers, intent to harm, or product liability."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "SC caps at 3x or $500K (S.C. Code § 15-32-530).",
+   "verdict": "update",
+   "currentValue": "Greater of three times compensatory damages or $500,000, CPI-indexed under § 15-32-530(D): $739,245 for 2026 (RFA memo 2026-02-03).",
+   "sourceName": "S.C. Code § 15-32-530(A),(D); S.C. RFA memo, Feb. 3, 2026",
+   "sourceUrl": "https://rfa.sc.gov/media/11478",
+   "retrievedAt": "2026-10-02",
+   "note": "Contradicts the body’s $739,245. Suggested: ‘South Carolina caps them at the greater of 3x compensatory damages or an inflation-indexed $500,000 — $739,245 in 2026 (S.C. Code § 15-32-530); no cap for impaired drivers.’"
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "About 95% of cases settle.",
+   "verdict": "update",
+   "currentValue": "BJS: about 4% of tort cases were disposed of by trial in 2005; the rest ended by settlement, dismissal or other means (not separated).",
+   "sourceName": "Bureau of Justice Statistics, Tort Bench and Jury Trials in State Courts, 2005 (NCJ 228129, Oct. 2009), Civil Justice Survey of State Courts — highlights, Table 5, Table 12, Table 13",
+   "sourceUrl": "https://bjs.ojp.gov/library/publications/tort-bench-and-jury-trials-state-courts-2005",
+   "retrievedAt": "2026-10-02",
+   "note": "Suggested: ‘Only about 4% of tort cases end in a trial (Bureau of Justice Statistics, 2005 data); most of the rest settle.’"
+  },
+  {
+   "surface": "faq:0",
+   "claim": "National averages are misleading. Ranges by type: car accidents $15K-$75K, truck $50K-$500K+, slip and fall $10K-$50K, med mal $100K-$1M+, wrongful death $500K-$5M+.",
+   "verdict": "update",
+   "currentValue": "First sentence keeps. The ten range figures are unsourced and drop.",
+   "sourceName": "Bureau of Justice Statistics, Tort Bench and Jury Trials in State Courts, 2005 (NCJ 228129, Oct. 2009), Civil Justice Survey of State Courts — highlights, Table 5, Table 12, Table 13",
+   "sourceUrl": "https://bjs.ojp.gov/library/publications/tort-bench-and-jury-trials-state-courts-2005",
+   "retrievedAt": "2026-10-02",
+   "note": "Renders into FAQPage structured data. Suggested answer: ‘There is no reliable national average for settlements — insurers do not publish them, and every case turns on its own injuries, evidence and insurance. The closest federal data are trial verdicts: in the Bureau of Justice Statistics’ most recent study (2005 data), half of plaintiffs who won a tort trial in state court were awarded $24,000 or less, with a median of $15,000 in car-accident trials and $400,000 in medical-malpractice trials. An attorney who reviews your records can give you a realistic range for your case.’"
+  },
+  {
+   "surface": "faq:1",
+   "claim": "Key variables include injury severity, medical costs, lost income, permanent impairment, liability clarity, available insurance, jurisdiction, and attorney skill.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "Qualitative."
+  },
+  {
+   "surface": "faq:2",
+   "claim": "About 95% settle before trial. Having an attorney prepared to go to trial leads to higher settlement offers.",
+   "verdict": "update",
+   "currentValue": "BJS 2005: about 4% of tort cases were disposed of by trial; the remainder includes dismissals as well as settlements. The second sentence states a causal effect with no source.",
+   "sourceName": "Bureau of Justice Statistics, Tort Bench and Jury Trials in State Courts, 2005 (NCJ 228129, Oct. 2009), Civil Justice Survey of State Courts — highlights, Table 5, Table 12, Table 13",
+   "sourceUrl": "https://bjs.ojp.gov/library/publications/tort-bench-and-jury-trials-state-courts-2005",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. Suggested: ‘Most settle. In the most recent Bureau of Justice Statistics count (2005 data), only about 4% of tort cases in state courts ended in a trial. An attorney who is prepared to try your case gives the insurer a real reason to make a fair offer.’"
+  },
+  {
+   "surface": "faq:3",
+   "claim": "Most settle 6-18 months after MMI. Complex cases can take 2-3 years.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "No source for either timeframe; MMI is a medical term, not a legal one, and neither state sets a settlement timetable (sibling packs 1656, 1702). The only federal timing data are for trials (BJS 2005, 75 largest counties: median 20.0 months from filing to verdict in car-accident trials, 30.7 months in med-mal) — not settlements. Suggested: ‘It depends on your treatment and the insurer. Most claims are not ready to settle until your treatment reaches maximum medical improvement, and cases that go into litigation take longer. Remember the filing deadlines: two years in Georgia (O.C.G.A. § 9-3-33) and three in South Carolina (S.C. Code § 15-3-530).’"
+  },
+  {
+   "surface": "faq:4",
+   "claim": "Compensation for physical injuries is generally not taxable. Punitive damages and interest are taxable.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "IRS Publication 4345, Settlements — Taxability; 26 U.S.C. § 104(a)(2); IRS ‘Tax implications of settlements and judgments’",
+   "sourceUrl": "https://www.irs.gov/pub/irs-pdf/p4345.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Pub. 4345: ‘Interest on any settlement is generally taxable as “Interest Income”’ and ‘Punitive damages are taxable and should be reported as “Other Income”’. § 104(a)(2) excludes ‘damages (other than punitive damages) received … on account of personal physical injuries or physical sickness’. Optional: amounts previously deducted as medical expenses are taxable when reimbursed. Cornell: https://www.law.cornell.edu/uscode/text/26/104"
+  },
+  {
+   "surface": "faq:5",
+   "claim": "Free consultation with an experienced attorney who can review records, calculate damages, and provide a range based on comparable cases.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "Service description."
+  }
+ ],
+ "recommendedEdits": [
+  "Intro paragraph 2: replace 'According to the Bureau of Justice Statistics, the median personal injury award in state courts is roughly $31,000, but that single number is almost meaningless.' with 'In the most recent Bureau of Justice Statistics study of state-court tort trials (2005 data), half of the plaintiffs who won at trial were awarded $24,000 or less, but that single number is almost meaningless.' Change the link href from https://www.bjs.gov/index.cfm?ty=tp&tid=451 (now redirects to the BJS homepage) to https://bjs.ojp.gov/library/publications/tort-bench-and-jury-trials-state-courts-2005.",
+  "'Why There Is No Average Settlement', paragraph 1: replace 'thousands of soft-tissue claims settle for $5,000 to $15,000 and drag the median down' with 'thousands of smaller soft-tissue claims resolve for modest amounts and pull the median down'.",
+  "'Settlement Ranges by Case Type' section: remove every dollar range (16 figures, 8 rows). Either delete the 'Typical Settlement Range' column or replace it with a non-numeric column. Rewrite the intro: 'No reliable source publishes settlement ranges by case type, and any chart that claims to is a guess. What does differ by case type are the variables that drive value:'. Optionally retitle the H2 'What Drives Value by Case Type' (keep id settlement-ranges-by-case-type). Optional sourced paragraph under the table: 'For perspective, the Bureau of Justice Statistics' most recent study of state-court tort trials (2005 data) found median awards to winning plaintiffs of $15,000 in car-accident trials, $98,000 in premises-liability trials and $400,000 in medical-malpractice trials. Those are verdicts, not settlements, and they are two decades old.'",
+  "Georgia section, after the compensatory-damages paragraph, add: 'Georgia's 2025 tort-reform law (SB 68) changed how some damages are proven. Since April 21, 2025, lawyers may suggest a dollar figure for pain and suffering only in closing argument, and only if it is rationally tied to the evidence (O.C.G.A. § 9-10-184). For injuries on or after that date, medical expenses are limited to the reasonable value of necessary care, and if you have health insurance the jury may hear what your insurer actually paid as well as the billed amount (O.C.G.A. § 51-12-1.1). Evidence that you were not wearing a seat belt is also now admissible (O.C.G.A. § 40-8-76.1).' Also tighten 'Medical malpractice damage caps were struck down' to 'Georgia's caps on noneconomic damages in medical malpractice cases were struck down'.",
+  "Georgia punitive sentence (optional precision): 'conduct under the influence of drugs or alcohol' -> 'a defendant whose judgment was substantially impaired by alcohol or drugs'.",
+  "South Carolina 'No cap on actual damages' paragraph: append 'The exceptions are medical malpractice, where noneconomic damages are capped (inflation-adjusted to $596,001 per defendant and $1,788,002 total in 2026, S.C. Code § 15-32-220), and claims against government entities, capped at $300,000 per person (S.C. Code § 15-78-120).'",
+  "South Carolina punitive paragraph: keep $739,245; replace 'This cap does not apply in cases involving drunk driving or intentional conduct.' with 'The cap does not apply when the defendant was impaired by alcohol or drugs, intended to cause harm, or was convicted of a felony for the same conduct, and it rises to the greater of four times compensatory damages or $2 million in certain cases of profit-motivated misconduct.'",
+  "Settlement vs verdict: replace 'The vast majority of personal injury cases, roughly 95% or more, resolve through settlement.' with 'The vast majority of personal injury cases resolve without a trial: in the most recent Bureau of Justice Statistics count (2005), only about 4% of tort cases in state courts were decided by a judge or jury, and most of the rest settled.' Replace 'Insurance companies track which attorneys actually try cases and which ones always settle. Firms that go to trial when necessary tend to get better settlement offers because the insurance company knows the threat is real.' with 'Insurers weigh the realistic risk that a case will go to a jury, and that risk is more credible when your attorney is prepared to try it.'",
+  "Key Takeaways (renders above the article): replace the whole box with: 'There is no reliable \"average\" settlement. In the most recent federal study of state-court tort trials (Bureau of Justice Statistics, 2005 data), half of winning plaintiffs were awarded $24,000 or less, but those are verdicts, not settlements. Georgia caps punitive damages at $250,000 in most cases (O.C.G.A. § 51-12-5.1); South Carolina caps them at the greater of 3x compensatory damages or an inflation-indexed $500,000, which is $739,245 in 2026 (S.C. Code § 15-32-530). Only about 4% of tort cases end in a trial; most of the rest settle.'",
+  "FAQ 0 (FAQPage structured data): 'There is no reliable national average for settlements, because insurers do not publish them and every case turns on its own injuries, evidence and insurance. The closest federal data are trial verdicts: in the Bureau of Justice Statistics' most recent study (2005 data), half of plaintiffs who won a tort trial in state court were awarded $24,000 or less, with a median of $15,000 in car-accident trials and $400,000 in medical-malpractice trials. An attorney who reviews your records can give you a realistic range.'",
+  "FAQ 2: 'Most settle. In the most recent Bureau of Justice Statistics count (2005 data), only about 4% of tort cases in state courts ended in a trial. An attorney who is prepared to try your case gives the insurer a real reason to make a fair offer.'",
+  "FAQ 3: 'It depends on your treatment and the insurer. Most claims are not ready to settle until your treatment reaches maximum medical improvement, and cases that go into litigation take longer. The filing deadlines do not wait: two years in Georgia (O.C.G.A. § 9-3-33) and three in South Carolina (S.C. Code § 15-3-530).'",
+  "Excerpt (Article description): 'Why there is no reliable \"average\" personal injury settlement, what the most recent federal court data shows, and the factors that actually drive case value in Georgia and South Carolina.'",
+  "metaDescription is empty. Optional: set one consistent with the excerpt, with no case-type ranges.",
+  "Attribution: GA+SC post; the 'Last reviewed' line for the South Carolina law should go to Graeham C. Gillin (writer-profile rule; Eric Roden is not SC-licensed)."
+ ],
+ "statuteCitations": [
+  {
+   "section": "O.C.G.A. § 9-3-33",
+   "name": "Injuries to the person; two-year limitation",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-33",
+   "name": "Apportionment of damages; no recovery at 50 percent or more fault",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-5.1",
+   "name": "Punitive damages; $250,000 cap and exceptions",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-1.1",
+   "name": "Medical expense damages; reasonable value, insurer-paid amounts, letters of protection (SB 68, causes arising on/after 2025-04-21)",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-1-1/"
+  },
+  {
+   "section": "O.C.G.A. § 9-10-184",
+   "name": "Argument of noneconomic damages amounts (SB 68, applies to pending cases)",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-10/article-8/section-9-10-184/"
+  },
+  {
+   "section": "O.C.G.A. § 40-8-76.1",
+   "name": "Seat belt non-use admissible (SB 68 § 5)",
+   "url": "https://law.justia.com/codes/georgia/title-40/chapter-8/article-1/part-4/section-40-8-76-1/"
+  },
+  {
+   "section": "O.C.G.A. § 50-21-29",
+   "name": "Georgia Tort Claims Act damage limits",
+   "url": "https://law.justia.com/codes/georgia/title-50/chapter-21/article-2/section-50-21-29/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-11",
+   "name": "Duty to mitigate damages",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-11/"
+  },
+  {
+   "section": "S.C. Code § 15-3-530",
+   "name": "Three-year limitation for personal injury",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "section": "S.C. Code § 15-32-530",
+   "name": "Punitive damages cap; CPI adjustment; exceptions",
+   "url": "https://www.scstatehouse.gov/code/t15c032.php"
+  },
+  {
+   "section": "S.C. Code § 15-32-220",
+   "name": "Medical malpractice noneconomic damages cap",
+   "url": "https://www.scstatehouse.gov/code/t15c032.php"
+  },
+  {
+   "section": "S.C. Code § 15-78-120",
+   "name": "Tort Claims Act limits ($300,000 / $600,000)",
+   "url": "https://www.scstatehouse.gov/code/t15c078.php"
+  },
+  {
+   "section": "S.C. Code § 15-38-15",
+   "name": "Joint and several liability; defendants under 50% (version eff. 2026-01-01)",
+   "url": "https://www.scstatehouse.gov/code/t15c038.php"
+  },
+  {
+   "section": "S.C. Code § 38-77-140",
+   "name": "Minimum bodily injury liability limits",
+   "url": "https://www.scstatehouse.gov/code/t38c077.php"
+  },
+  {
+   "section": "26 U.S.C. § 104(a)(2)",
+   "name": "Exclusion of damages for personal physical injuries (not punitive)",
+   "url": "https://www.law.cornell.edu/uscode/text/26/104"
+  }
+ ],
+ "authoritativeLinks": [
+  {
+   "name": "Bureau of Justice Statistics — Tort Bench and Jury Trials in State Courts, 2005 (NCJ 228129, Oct. 2009): median award $24,000; car accident $15,000; med mal $400,000; trials 4% of tort dispositions",
+   "url": "https://bjs.ojp.gov/library/publications/tort-bench-and-jury-trials-state-courts-2005"
+  },
+  {
+   "name": "BJS — Tort Bench and Jury Trials in State Courts, 2005 (PDF)",
+   "url": "https://bjs.ojp.gov/content/pub/pdf/tbjtsc05.pdf"
+  },
+  {
+   "name": "Insurance Information Institute — Facts + Statistics: Auto insurance (ISO: average auto bodily-injury liability claim $28,278 in 2024)",
+   "url": "https://www.iii.org/fact-statistic/facts-statistics-auto-insurance"
+  },
+  {
+   "name": "S.C. Revenue and Fiscal Affairs Office — Punitive Damage Award Limitation, Inflation Component (2026-02-03; $739,245)",
+   "url": "https://rfa.sc.gov/media/11478"
+  },
+  {
+   "name": "Georgia SB 68 (2025), signed text — Office of the Governor",
+   "url": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download"
+  },
+  {
+   "name": "Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt, 286 Ga. 731 (2010)",
+   "url": "https://law.justia.com/cases/georgia/supreme-court/2010/s09a1432.html"
+  },
+  {
+   "name": "Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)",
+   "url": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html"
+  },
+  {
+   "name": "IRS Publication 4345 — Settlements: Taxability",
+   "url": "https://www.irs.gov/pub/irs-pdf/p4345.pdf"
+  },
+  {
+   "name": "IRS — Tax implications of settlements and judgments",
+   "url": "https://www.irs.gov/government-entities/tax-implications-of-settlements-and-judgments"
+  },
+  {
+   "name": "Georgia Office of Commissioner of Insurance — Auto (25/50/25 minimums)",
+   "url": "https://oci.georgia.gov/insurance-resources/auto"
+  }
+ ],
+ "quoteNote": "Claims are quoted from the rendered text of body.html (tags stripped, entities decoded: &ndash; -> –, &sect; -> §) and match exactly after whitespace collapse. The eight table-row claims join the Case Type cell and the Typical Settlement Range cell ('Car Accident $15,000 – $75,000'); in the HTML they are adjacent <td> cells. Several quotes span <strong>/<em> tags (bolded 'two years', 'less than 50% at fault', case name in italics). No multiplier method or Insurance Research Council '3.5x' claim appears on any surface, so neither is in the pack. Justia URLs are reused from sibling packs (not re-fetched: Justia bot-challenges); every other sourceUrl resolved HTTP 200 on 2026-10-02 except courtlistener (202), which is why Nelson uses the sibling-pack Justia URL."
+}

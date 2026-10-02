@@ -1,0 +1,31 @@
+{
+ "excerpt": "Filing a malpractice claim against a South Carolina hospital: the pre-suit notice, the expert affidavit, and what comes first.",
+ "keyTakeaways": "South Carolina medical malpractice claims require a pre-suit Notice of Intent to File and an expert witness affidavit establishing the standard of care was breached. The statute of limitations is 3 years with a 6-year statute of repose. Hospitals may be liable for employee physician negligence but may argue independent contractor status for affiliated doctors. Georgia allows 2 years to file (O.C.G.A. § 9-3-71) and requires an expert affidavit. South Carolina caps non-economic damages at $596,001 per provider or institution and $1,788,002 in total for 2026 (S.C. Code § 15-32-220).",
+ "faqs": [
+  {
+   "question": "What qualifies as medical malpractice in South Carolina?",
+   "answer": "Medical malpractice occurs when a healthcare provider fails to provide care that meets the accepted standard of care in their specialty, and that failure causes injury to the patient. You must prove duty (a provider-patient relationship), breach (deviation from the standard of care), causation (the breach caused your injury), and damages (you suffered actual harm). A bad outcome alone does not prove malpractice."
+  },
+  {
+   "question": "Do I need an expert witness for a medical malpractice case in South Carolina?",
+   "answer": "Yes. South Carolina requires an expert affidavit from a qualified medical professional filed together with the Notice of Intent to File Suit (S.C. Code section 15-79-125). The expert must be licensed and either board certified in the relevant specialty or have practiced or taught in it for at least three of the last five years immediately preceding the opinion (S.C. Code section 15-36-100)."
+  },
+  {
+   "question": "How long do I have to file a medical malpractice claim in South Carolina?",
+   "answer": "The statute of limitations is three years from the date of injury or discovery (S.C. Code section 15-3-545). Filing the required Notice of Intent to File Suit tolls that deadline (S.C. Code section 15-79-125), but the notice must be filed with an expert's affidavit, so preparation has to start well before it. South Carolina also has a six-year statute of repose that generally bars claims more than six years after the alleged malpractice regardless of when the injury is discovered."
+  },
+  {
+   "question": "Is there a cap on damages in South Carolina medical malpractice cases?",
+   "answer": "South Carolina does not cap economic damages in medical malpractice cases, but non-economic damages are capped by S.C. Code § 15-32-220 — a base of $350,000 against a single provider and $1.05 million where more than one is liable, adjusted annually for inflation, so for 2026 the limits are $596,001 and $1,788,002. Punitive damages are capped at the greater of three times compensatory damages or $739,245, the 2026 inflation-indexed figure (S.C. Code section 15-32-530), with exceptions for certain egregious conduct."
+  },
+  {
+   "question": "Can I sue both the hospital and the doctor in Charleston?",
+   "answer": "Yes. Hospitals are liable for their employees' negligence under respondeat superior. Even if a doctor is technically an independent contractor, the hospital may be liable under apparent agency if it holds the doctor out as its agent. Complex cases may involve the surgeon, anesthesiologist, nursing staff, the hospital, and the physician's medical group as separate defendants."
+  },
+  {
+   "question": "What is the Notice of Intent requirement in South Carolina medical malpractice cases?",
+   "answer": "Before filing a medical malpractice lawsuit in South Carolina, you must file a Notice of Intent to File Suit together with an expert affidavit, serve it on each defendant, and mediate, generally within 90 to 120 days of service, before filing the complaint (S.C. Code section 15-79-125). The affidavit must come from a qualified medical professional who has reviewed the records and identified at least one negligent act and the resulting damages. Failure to comply can result in dismissal."
+  }
+ ],
+ "metaDescription": ""
+}

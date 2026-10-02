@@ -1,0 +1,31 @@
+{
+ "excerpt": "Filing a malpractice claim against a South Carolina hospital: the pre-suit notice, the expert affidavit, and what comes first.",
+ "keyTakeaways": "South Carolina medical malpractice claims require a pre-suit Notice of Intent to File Suit, filed with an expert affidavit identifying at least one negligent act or omission, followed by mandatory mediation. The statute of limitations is 3 years with a 6-year statute of repose (2 years under the Tort Claims Act if the hospital is MUSC or another public hospital). MUSC is a state agency, so you generally sue MUSC rather than its employed doctors, damages are capped at $300,000 per person ($1.2 million where an employed physician or dentist caused the loss), and punitive damages are not available (S.C. Code § 15-78-120). Hospitals may be liable for employee physician negligence and may argue independent contractor status for affiliated doctors, but South Carolina holds hospitals liable for emergency-room physicians who appear to be hospital staff (Simmons v. Tuomey Regional Medical Center, 2000). Georgia allows 2 years to file (O.C.G.A. § 9-3-71) and requires an expert affidavit. South Carolina caps non-economic damages at $596,001 per provider or institution and $1,788,002 in total for 2026 (S.C. Code § 15-32-220).",
+ "faqs": [
+  {
+   "question": "What qualifies as medical malpractice in South Carolina?",
+   "answer": "Medical malpractice occurs when a healthcare provider fails to provide care that meets the accepted standard of care in their specialty, and that failure causes injury to the patient. You must prove duty (a provider-patient relationship), breach (deviation from the standard of care), causation (the breach caused your injury), and damages (you suffered actual harm). A bad outcome alone does not prove malpractice."
+  },
+  {
+   "question": "Do I need an expert witness for a medical malpractice case in South Carolina?",
+   "answer": "Yes. South Carolina requires an expert affidavit from a qualified medical professional filed together with the Notice of Intent to File Suit (S.C. Code section 15-79-125). The expert must be licensed and either board certified in the relevant specialty or have practiced or taught in it for at least three of the last five years immediately preceding the opinion (S.C. Code section 15-36-100)."
+  },
+  {
+   "question": "How long do I have to file a medical malpractice claim in South Carolina?",
+   "answer": "The statute of limitations is three years from the date of the treatment, or from when the injury was or reasonably should have been discovered (S.C. Code section 15-3-545) — two years if the hospital is MUSC or another public hospital (S.C. Code section 15-78-110). Filing the required Notice of Intent to File Suit tolls that deadline (S.C. Code section 15-79-125), but the notice must be filed with an expert's affidavit, so preparation has to start well before it. South Carolina also has a six-year statute of repose that generally bars claims more than six years after the alleged malpractice regardless of when the injury is discovered."
+  },
+  {
+   "question": "Is there a cap on damages in South Carolina medical malpractice cases?",
+   "answer": "South Carolina does not cap economic damages in medical malpractice cases, but non-economic damages are capped by S.C. Code § 15-32-220 — a base of $350,000 against a single provider and $1.05 million where more than one is liable, adjusted annually for inflation, so for 2026 the limits are $596,001 and $1,788,002. The cap does not apply if the provider was grossly negligent, wilful, wanton or reckless, committed fraud or misrepresentation related to the claim, or altered or destroyed medical records to avoid liability (S.C. Code section 15-32-220(E)). Punitive damages are capped at the greater of three times compensatory damages or $739,245, the 2026 inflation-indexed figure (S.C. Code section 15-32-530), with exceptions for certain egregious conduct. Claims against MUSC or another public hospital fall under the Tort Claims Act instead, which caps damages at $300,000 per person and $600,000 per occurrence, or $1.2 million where a government-employed physician or dentist caused the loss, and bars punitive damages (S.C. Code section 15-78-120)."
+  },
+  {
+   "question": "Can I sue both the hospital and the doctor in Charleston?",
+   "answer": "Yes, at a private hospital. Hospitals are liable for their employees' negligence under respondeat superior. Even if a doctor is technically an independent contractor, the hospital may be liable under apparent agency if it holds the doctor out as its agent; for emergency-room doctors, South Carolina treats the hospital's duty as nondelegable (Simmons v. Tuomey Regional Medical Center, 2000). Complex cases may involve the surgeon, anesthesiologist, nursing staff, the hospital, and the physician's medical group as separate defendants. If the hospital is MUSC or another public hospital, the claim runs under the South Carolina Tort Claims Act: you sue the hospital rather than its employed doctors, within two years, damages are capped, and punitive damages are not available (S.C. Code sections 15-78-70, 15-78-110, 15-78-120)."
+  },
+  {
+   "question": "What is the Notice of Intent requirement in South Carolina medical malpractice cases?",
+   "answer": "Before filing a medical malpractice lawsuit in South Carolina, you must file a Notice of Intent to File Suit together with an expert affidavit, serve it on each defendant, and mediate, generally within 90 to 120 days of service, before filing the complaint (S.C. Code section 15-79-125). The affidavit must come from a qualified expert and must specify at least one negligent act or omission and the factual basis for it (S.C. Code section 15-36-100). Failure to comply can result in dismissal."
+  }
+ ],
+ "metaDescription": "Suing a Charleston hospital for malpractice: SC's Notice of Intent, expert affidavit, 2026 damage caps, and Tort Claims Act rules for MUSC."
+}

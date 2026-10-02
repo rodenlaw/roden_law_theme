@@ -1,0 +1,791 @@
+{
+  "postId": 4349,
+  "slug": "charleston-medical-malpractice-hospital-claim-south-carolina",
+  "liveUrl": "https://rodenlaw.com/blog/charleston-medical-malpractice-hospital-claim-south-carolina/",
+  "jurisdiction": "SC+GA",
+  "researchedAt": "2026-10-02",
+  "verifiedClaims": [
+    {
+      "surface": "body",
+      "claim": "MUSC Health (Medical University of South Carolina), Roper St. Francis Healthcare, Trident Medical Center, East Cooper Medical Center, and numerous specialty clinics serve patients from across the Lowcountry and beyond.",
+      "verdict": "update",
+      "currentValue": "East Cooper Medical Center (Mount Pleasant) is no longer a Tenet hospital: Tenet 'completed the sale of three of its hospitals and related operations in South Carolina to Novant Health' on February 1, 2024, including East Cooper Medical Center; it now operates as 'Novant Health East Cooper Medical Center' (Novant newsroom, May 2026: 40th anniversary; Level III Trauma Center). Trident Medical Center (North Charleston) is an HCA Healthcare hospital in the Trident Health system. Roper St. Francis Healthcare is a private not-for-profit system. MUSC's hospitals are operated by the Medical University Hospital Authority, a state agency (S.C. Code § 59-123-60(E)).",
+      "sourceName": "Tenet Healthcare press release, 2024-02-01 'Tenet completes sale of three South Carolina hospitals to Novant Health' (SEC Form 8-K Ex. 99.1); Novant Health newsroom; Trident Health location page; S.C. Code § 59-123-60",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/70318/000007031824000006/thc-20240201bexh991.htm",
+      "retrievedAt": "2026-10-02",
+      "note": "Rename to 'Novant Health East Cooper Medical Center' here and in the closing paragraph. novanthealth.org returns 403 to curl (bot-blocked), so the SEC exhibit is the resolving source; Novant pages: https://www.novanthealth.org/newsroom/releases-20240201 and https://www.novanthealth.org/newsroom/novant-health-east-cooper-medical-center-celebrates-40-years-of-care-growth-and-community-impact. Trident/HCA: https://tridenthealthsystem.com/locations/trident-medical-center (HTTP 200). MUSC state-agency status matters for the Tort Claims Act — see the hospital-vs-doctor entries."
+    },
+    {
+      "surface": "body",
+      "claim": "These institutions employ thousands of physicians, surgeons, nurses, and medical professionals and treat hundreds of thousands of patients annually.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-10-02",
+      "note": "Unquantified, low-risk scale statement about four systems combined; no specific figure to verify. Do not add a number without a source."
+    },
+    {
+      "surface": "body",
+      "claim": "According to a widely cited study published by the British Medical Journal, medical errors are the third leading cause of death in the United States, behind heart disease and cancer.",
+      "verdict": "update",
+      "currentValue": "The source is Makary MA, Daniel M., 'Medical error—the third leading cause of death in the US', BMJ 2016;353:i2139 (published May 3, 2016) — an Analysis article by Johns Hopkins researchers, not an original study. It extrapolated a mean of 251,454 deaths a year from medical error from studies since 1999 and compared that estimate with CDC cause-of-death rankings: 'Medical error is the third leading cause of death in the US after heart disease and cancer, say experts in The BMJ' (BMJ press release, 4 May 2016). Medical error is not a CDC cause-of-death category, and the estimate is disputed (published rapid responses re-estimate ~175,000).",
+      "sourceName": "The BMJ press release, 4 May 2016 (PDF); PubMed record PMID 27143499",
+      "sourceUrl": "https://www.bmj.com/company/wp-content/uploads/2016/05/medical-errors.pdf",
+      "retrievedAt": "2026-10-02",
+      "note": "Minimal edit: 'According to a widely cited 2016 analysis by Johns Hopkins researchers in The BMJ, medical error may be the third leading cause of death in the United States, behind heart disease and cancer — an estimate of roughly 250,000 deaths a year.' Replace the bare https://www.bmj.com/ homepage link with the article: https://www.bmj.com/content/353/bmj.i2139 (bmj.com returns 403 to curl; PubMed https://pubmed.ncbi.nlm.nih.gov/27143499/ returns 203/OK). The journal's name is The BMJ, not 'British Medical Journal'."
+    },
+    {
+      "surface": "body",
+      "claim": "Charleston's major hospitals — located in Downtown Charleston, North Charleston, and Mount Pleasant — handle everything from routine surgeries to complex trauma cases, cancer treatment, cardiac surgery, and neonatal intensive care.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Trident Health location page (Trident Medical Center, North Charleston); Tenet/Novant release (East Cooper, Mount Pleasant)",
+      "sourceUrl": "https://tridenthealthsystem.com/locations/trident-medical-center",
+      "retrievedAt": "2026-10-02",
+      "note": "Locations correct: MUSC and Roper Hospital downtown, Trident in North Charleston, East Cooper and Roper St. Francis Mount Pleasant Hospital in Mount Pleasant. Note: the 'Mount Pleasant' anchor links to /locations/south-carolina/charleston/ — there is no Mount Pleasant location page in content/meta.json, so the duplicate link is harmless but could be dropped."
+    },
+    {
+      "surface": "body",
+      "claim": "Misdiagnosis, delayed diagnosis, and failure to diagnose are the most common forms of medical malpractice.",
+      "verdict": "update",
+      "currentValue": "Saber Tehrani et al., '25-Year summary of US malpractice claims for diagnostic errors 1986–2010' (BMJ Qual Saf 2013;22:672-80; National Practitioner Data Bank, 350,706 paid claims): 'Diagnostic errors (n=100 249) were the leading type (28.6%) and accounted for the highest proportion of total payments (35.2%)'; they 'more often resulted in death than other allegation groups (40.9% vs 23.9%)'.",
+      "sourceName": "Saber Tehrani AS et al., BMJ Quality & Safety 2013 (PubMed PMID 23610443)",
+      "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/23610443/",
+      "retrievedAt": "2026-10-02",
+      "note": "Substance right; attribute it. Minimal edit: 'Misdiagnosis, delayed diagnosis, and failure to diagnose are the most common basis for paid medical malpractice claims — 28.6% of paid claims over 25 years in the National Practitioner Data Bank, and the largest share of payouts (BMJ Quality & Safety, 2013).'"
+    },
+    {
+      "surface": "body",
+      "claim": "Diagnostic errors in Charleston emergency rooms — where physicians see high volumes of patients under time pressure — are particularly common.",
+      "verdict": "update",
+      "currentValue": "No Charleston-specific data on ER diagnostic errors was found. Legally significant omission: South Carolina judges emergency care under a heightened standard — for care 'in a genuine emergency situation involving an immediate threat of death or serious bodily injury' in an emergency department or obstetrical or surgical suite, 'no physician may be held liable unless it is proven that the physician was grossly negligent' (S.C. Code § 15-32-230(A)), while the patient is not medically stable and before discharge from that unit ((C)). (Verified in facts-1696.)",
+      "sourceName": "S.C. Code § 15-32-230",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Drop the unsourced 'particularly common' claim about Charleston ERs. Suggested: 'Diagnostic errors in busy emergency rooms are a frequent source of claims — but South Carolina holds emergency physicians treating an unstable patient to a gross-negligence standard (S.C. Code § 15-32-230), so these cases need careful expert review.'"
+    },
+    {
+      "surface": "body",
+      "claim": "In hospital settings, nursing medication errors — particularly during shift changes — are a persistent problem.",
+      "verdict": "update",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-10-02",
+      "note": "Unsourced generalisation (no source verified for shift-change medication-error rates). Soften: 'In hospital settings, medication errors can occur at many points, including administration by nursing staff and hand-offs between shifts.'"
+    },
+    {
+      "surface": "body",
+      "claim": "Surgical site infections, catheter-associated urinary tract infections, and central line-associated bloodstream infections are among the most common.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-10-02",
+      "note": "Accepted as general: SSI, CAUTI and CLABSI are the core HAI types hospitals report to CDC's NHSN. Pneumonia and C. difficile are also among the most common HAIs; 'among the most common' carries the sentence. cdc.gov returned 403 to curl, so no source URL is recorded; do not add statistics."
+    },
+    {
+      "surface": "body",
+      "claim": "Duty — a physician-patient relationship existed, creating a duty of care",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-36-100(A),(B)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c036.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Standard four-element negligence framework (duty, breach, causation, damages); consistent with § 15-36-100 (expert 'qualified as to the acceptable conduct of the professional whose conduct is at issue'). Same for the Breach/Causation/Damages list items."
+    },
+    {
+      "surface": "body",
+      "claim": "File a Notice of Intent to File Suit and serve it on each prospective defendant (S.C. Code § 15-79-125)",
+      "verdict": "keep",
+      "currentValue": "§ 15-79-125(A): the plaintiff 'shall contemporaneously file a Notice of Intent to File Suit and an affidavit of an expert witness, subject to the affidavit requirements established in Section 15-36-100, in a county in which venue would be proper'; the notice 'must name all adverse parties as defendants' and 'must be served upon all named defendants in accordance with the service rules for a summons and complaint'.",
+      "sourceName": "S.C. Code § 15-79-125(A)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c079.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Verified verbatim 2026-10-02."
+    },
+    {
+      "surface": "body",
+      "claim": "Include an affidavit of an expert witness who has reviewed the medical records and identified at least one negligent act and the resulting damages",
+      "verdict": "update",
+      "currentValue": "The affidavit 'must specify at least one negligent act or omission claimed to exist and the factual basis for each claim based on the available evidence at the time of the filing of the affidavit' (§ 15-36-100(B), incorporated by § 15-79-125(A)). The statute does not require the affidavit to identify 'the resulting damages'.",
+      "sourceName": "S.C. Code §§ 15-36-100(B), 15-79-125(A)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c036.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Minimal edit: 'Include an affidavit of an expert witness that specifies at least one negligent act or omission and the factual basis for it (S.C. Code § 15-36-100)'. Same correction in faq:5."
+    },
+    {
+      "surface": "body",
+      "claim": "Filing the notice tolls the statute of limitations, and the parties must then mediate, generally within 90 to 120 days of service, before the lawsuit can be filed.",
+      "verdict": "keep",
+      "currentValue": "'Filing the Notice of Intent to File Suit tolls all applicable statutes of limitations' (§ 15-79-125(A)). 'Within ninety days and no later than one hundred twenty days from the service of the Notice of Intent to File Suit, the parties shall participate in a mediation conference unless an extension for no more than sixty days is granted by the court based upon a finding of good cause' (§ 15-79-125(C)). If mediation fails, suit must be filed within 60 days of the mediator's impasse declaration or before the limitation period expires, whichever is later ((E), facts-1696).",
+      "sourceName": "S.C. Code § 15-79-125(A),(C),(E)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c079.php",
+      "retrievedAt": "2026-10-02",
+      "note": "'Generally' covers the 60-day good-cause extension."
+    },
+    {
+      "surface": "body",
+      "claim": "The expert affidavit must be from a qualified medical professional — not just any expert — who practices or has recently practiced in the same specialty as the defendant.",
+      "verdict": "update",
+      "currentValue": "§ 15-36-100(A): the expert must be 'qualified as to the acceptable conduct of the professional whose conduct is at issue', licensed 'to practice his or her profession', and EITHER (2)(a) board certified in the area of practice or specialty about which the opinion is offered, OR (2)(b) regularly engaged in active practice, teaching, or a combination in that area 'for at least three of the last five years immediately preceding the opinion'; OR (3) an individual with 'scientific, technical, or other specialized knowledge which may assist the trier of fact', whose affidavit must explain the expert's credentials and why the expert is qualified.",
+      "sourceName": "S.C. Code § 15-36-100(A)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c036.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Board certification is an independent route, and (A)(3) is a further catch-all, so 'practices or has recently practiced in the same specialty' overstates it. Minimal edit: 'The expert must be qualified in the defendant's area of practice — board certified in it, or actively practicing or teaching in it for at least three of the last five years (S.C. Code § 15-36-100).'"
+    },
+    {
+      "surface": "body",
+      "claim": "Failure to comply with the notice requirement can result in dismissal of your case.",
+      "verdict": "keep",
+      "currentValue": "No affidavit: 'the complaint is subject to dismissal for failure to state a claim' on a motion filed with the defendant's initial responsive pleading (§ 15-36-100(C)(1)); a defective affidavit may be cured 'by amendment within thirty days of service of the motion' ((E)).",
+      "sourceName": "S.C. Code § 15-36-100(C),(E)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c036.php",
+      "retrievedAt": "2026-10-02",
+      "note": "'Can result' is accurate. Optional add: a defective affidavit can be cured by amendment within 30 days of the motion."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina law (S.C. Code § 15-36-100) establishes strict qualifications for expert witnesses in medical malpractice cases:",
+      "verdict": "update",
+      "currentValue": "§ 15-36-100(A) applies to professional negligence generally (the professions listed in (G)), and its three alternative routes include (A)(3), a person with 'scientific, technical, or other specialized knowledge' — so the qualifications are specific, not 'strict'. The (C)(2) common-knowledge exception dispenses with the affidavit for negligence 'within the ambit of common knowledge and experience'.",
+      "sourceName": "S.C. Code § 15-36-100(A),(C)(2),(G)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c036.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Change 'strict' to 'specific'."
+    },
+    {
+      "surface": "body",
+      "claim": "The expert must be licensed to practice medicine",
+      "verdict": "update",
+      "currentValue": "§ 15-36-100(A)(1): the expert must be 'licensed by an appropriate regulatory agency to practice his or her profession in the location in which the expert practices or teaches' — not necessarily a medical license (a nursing expert for a nursing claim qualifies), and the license need not be South Carolina's.",
+      "sourceName": "S.C. Code § 15-36-100(A)(1)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c036.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Minimal edit: 'The expert must be licensed to practice his or her profession where the expert practices or teaches'."
+    },
+    {
+      "surface": "body",
+      "claim": "The expert must be board certified in the relevant specialty, or have practiced or taught in it for at least three of the last five years immediately preceding the opinion",
+      "verdict": "keep",
+      "currentValue": "§ 15-36-100(A)(2)(a)-(b), verbatim 'for at least three of the last five years immediately preceding the opinion'.",
+      "sourceName": "S.C. Code § 15-36-100(A)(2)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c036.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Accurate. Teaching must be at least half of professional time as faculty at an accredited institution ((2)(b)(ii)). (A)(3) is a third alternative not mentioned."
+    },
+    {
+      "surface": "body",
+      "claim": "The expert must be familiar with the standard of care applicable to the defendant's specialty",
+      "verdict": "keep",
+      "currentValue": "§ 15-36-100(A): expert 'qualified as to the acceptable conduct of the professional whose conduct is at issue'.",
+      "sourceName": "S.C. Code § 15-36-100(A)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c036.php",
+      "retrievedAt": "2026-10-02",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina does not cap economic damages in medical malpractice cases, but it does cap non-economic damages.",
+      "verdict": "keep",
+      "currentValue": "'The provisions of this section do not limit the amount of compensation for economic damages suffered by each claimant in a medical malpractice claim' (§ 15-32-220(D)(1)).",
+      "sourceName": "S.C. Code § 15-32-220(D)(1)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-10-02",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "S.C. Code § 15-32-220 sets a base limit of $350,000 against any single provider or institution, and $1.05 million where more than one is liable.",
+      "verdict": "keep",
+      "currentValue": "§ 15-32-220(A)-(C): $350,000 'for each claimant' against a single provider or a single institution; where judgment is against more than one, $350,000 for each and 'one million fifty thousand dollars for each claimant' for all together.",
+      "sourceName": "S.C. Code § 15-32-220(A)-(C)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Accurate as the 2005 base figures; the next sentence gives the 2026 indexed limits. Optional: add 'for each injured patient'."
+    },
+    {
+      "surface": "body",
+      "claim": "That figure is adjusted every year for inflation and published in the State Register, so the limit that applies to your case is higher than the base: for 2026, $596,001 per provider or institution and $1,788,002 in total.",
+      "verdict": "keep",
+      "currentValue": "RFA memo, 2026-02-03: 'the limit against a single health care provider and a health care institution for each claimant ... increases to $596,001. Also, the limit against all health care providers and all health care institutions for each claimant ... increases to $1,788,002. The adjusted limitations ... become effective upon publication in the State Register' (§ 15-32-220(F)).",
+      "sourceName": "S.C. Revenue and Fiscal Affairs Office memo 'Non-Economic (Medical Malpractice) Damages Limitation – Inflation Component', 2026-02-03; S.C. Code § 15-32-220(F)",
+      "sourceUrl": "https://rfa.sc.gov/media/11477",
+      "retrievedAt": "2026-10-02",
+      "note": "Figures verified against the memo PDF. 'the limit that applies to your case' is slightly loose (the limit in force at judgment applies); acceptable."
+    },
+    {
+      "surface": "body",
+      "claim": "Subject to that cap, you can recover:",
+      "verdict": "update",
+      "currentValue": "Only noneconomic damages are subject to the cap: economic damages (§ 15-32-220(D)(1)) and punitive damages ((D)(2)) are not. And the cap does not apply at all 'if the jury or court determines that the defendant was grossly negligent, wilful, wanton, or reckless, and such conduct was the proximate cause of the claimant's noneconomic damages, or if the defendant has engaged in fraud or misrepresentation related to the claim, or if the defendant altered or destroyed medical records with the purpose of avoiding a claim or liability' (§ 15-32-220(E)). Intoxication is NOT a § 15-32-220 exception (it lifts the punitive cap under § 15-32-530(C)(3)).",
+      "sourceName": "S.C. Code § 15-32-220(D),(E)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-10-02",
+      "note": "The section never states the (E) exceptions — the most important cap fact for a hospital claim. Replace with: 'The cap does not apply if the provider was grossly negligent, wilful, wanton or reckless, committed fraud or misrepresentation related to the claim, or altered or destroyed medical records to avoid liability (S.C. Code § 15-32-220(E)). You can recover:'."
+    },
+    {
+      "surface": "body",
+      "claim": "Punitive damages — awarded only in rare cases and must be proved by clear and convincing evidence (S.C. Code § 15-33-135); South Carolina caps punitive damages at the greater of three times compensatory damages or $739,245, the 2026 inflation-indexed figure (S.C. Code § 15-32-530), with exceptions for certain egregious conduct",
+      "verdict": "keep",
+      "currentValue": "§ 15-33-135: 'In any civil action where punitive damages are claimed, the plaintiff has the burden of proving such damages by clear and convincing evidence.' § 15-32-520(D): punitive damages only on clear and convincing proof of 'wilful, wanton, or reckless conduct'; bifurcated trial on any defendant's request (§ 15-32-520(A)). § 15-32-530(A): greater of three times compensatory or $500,000, indexed (D) — RFA memo 2026-02-03: 'the limit increases to $739,245'. Exceptions: four times or $2,000,000 for conduct motivated primarily by unreasonable financial gain known to management, or that could be a felony ((B)); no cap for intent to harm, a felony plea/conviction, or substantial impairment by alcohol or drugs ((C)).",
+      "sourceName": "S.C. Code §§ 15-33-135, 15-32-520, 15-32-530; RFA memo 'Punitive Damage Award Limitation – Inflation Component', 2026-02-03",
+      "sourceUrl": "https://rfa.sc.gov/media/11478",
+      "retrievedAt": "2026-10-02",
+      "note": "All figures verified. 'Awarded only in rare cases' is characterisation; acceptable. Optional: add 'and requires wilful, wanton or reckless conduct (S.C. Code § 15-32-520)'. Statute text: https://www.scstatehouse.gov/code/t15c033.php and https://www.scstatehouse.gov/code/t15c032.php."
+    },
+    {
+      "surface": "body",
+      "claim": "In many medical malpractice cases, both the individual doctor and the hospital may be liable:",
+      "verdict": "update",
+      "currentValue": "MUSC's hospitals are run by the Medical University Hospital Authority, 'an agency of the State of South Carolina' (S.C. Code § 59-123-60(E)); 'MUSC is a governmental agency subject to the provisions of the Tort Claims Act' (Tatum v. Medical University of South Carolina, 346 S.C. 194 (2001), citing Proveaux v. MUSC, 326 S.C. 28 (1997)). Consequences: (1) the Act 'constitutes the exclusive remedy for any tort committed by an employee of a governmental entity' and an employee acting within the scope of official duty 'is not liable therefor' (§ 15-78-70(a)); the plaintiff 'shall name as a party defendant only the agency' (§ 15-78-70(c)) — so a salaried MUSC physician (including one paid through an MUSC practice plan) is generally not a separate defendant (Tatum; § 15-78-70(c) proviso); (2) suit is 'forever barred unless an action is commenced within two years after the date the loss was or should have been discovered', three years if a verified claim was first filed (§ 15-78-110); (3) recovery is capped at $300,000 per person and $600,000 per occurrence (§ 15-78-120(a)(1)-(2)), but where the loss is 'caused by the tort of any licensed physician or dentist, employed by a governmental entity', the per-person and per-occurrence limit is $1,200,000 (§ 15-78-120(a)(3)-(4)); (4) 'No award for damages under this chapter shall include punitive or exemplary damages or interest prior to judgment' (§ 15-78-120(b)). Definitions expressly include 'state-supported governmental health care facilit[ies]' (§ 15-78-30(a),(e)).",
+      "sourceName": "S.C. Code §§ 15-78-30, 15-78-70, 15-78-110, 15-78-120; S.C. Code § 59-123-60(E); Tatum v. MUSC, 346 S.C. 194, 552 S.E.2d 18 (2001)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Major omission for a Charleston hospital post that names MUSC four times: a claim against MUSC (or another public hospital) runs under the South Carolina Tort Claims Act, not ordinary rules. Add a bullet: 'Public hospitals — MUSC is a state agency, so a claim against it falls under the South Carolina Tort Claims Act: you generally sue MUSC rather than its employed doctors, suit must be filed within two years (S.C. Code § 15-78-110), damages are capped (generally $300,000 per person and $600,000 per occurrence, or $1.2 million where an MUSC-employed physician or dentist was negligent — S.C. Code § 15-78-120), and punitive damages are not available.' The § 15-79-125 Notice of Intent still applies to med-mal claims. Tatum: https://www.courtlistener.com/opinion/1285904/tatum-v-medical-university-of-south-carolina/ ; § 59-123-60: https://www.scstatehouse.gov/code/t59c123.php. Whether § 15-78-110's two years displaces § 15-3-545's three years for a med-mal claim against MUSC is the statute's plain text ('any action brought pursuant to this chapter'); attorney should confirm the phrasing."
+    },
+    {
+      "surface": "body",
+      "claim": "Hospital liability — hospitals are liable for the negligence of their employees (nurses, technicians, employed physicians) under respondeat superior.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-78-70 (public-hospital exception)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+      "retrievedAt": "2026-10-02",
+      "note": "General rule accurate for private hospitals (Roper St. Francis, Trident, Novant East Cooper). For MUSC the hospital is liable but its employees are immune and must not be named (§ 15-78-70) — covered by the new bullet above."
+    },
+    {
+      "surface": "body",
+      "claim": "Hospitals may also be directly liable for understaffing, inadequate training, equipment failures, and systemic failures in safety protocols",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-10-02",
+      "note": "General direct-negligence statement; no South Carolina corporate-negligence case was verified this run — do not add a case citation for it."
+    },
+    {
+      "surface": "body",
+      "claim": "However, if the hospital holds the doctor out as its agent (such as ER physicians who wear hospital badges), the hospital may still be liable under the doctrine of apparent or ostensible agency",
+      "verdict": "update",
+      "currentValue": "For emergency rooms South Carolina goes further than apparent agency. Simmons v. Tuomey Regional Medical Center, 341 S.C. 32, 533 S.E.2d 312 (2000): 'a hospital owes a nondelegable duty to render competent service to its emergency room patients', adopting Restatement (Second) of Torts § 429: the plaintiff must show '(1) the hospital held itself out to the public by offering to provide services; (2) the plaintiff looked to the hospital, rather than the individual physician, for care; and (3) a person in similar circumstances reasonably would have believed that the physician who treated him or her was a hospital employee', and the hospital 'will be held vicariously liable for any negligent or wrongful acts committed by the treating physician'. The holding 'is not necessarily limited to' ER physicians but does not cover a patient's own physician met at the ER. Traditional apparent agency (representation, reliance, detrimental change of position) remains available; the court noted hospitals cannot escape by 'last-minute notice ... through admission forms or emergency room signs'.",
+      "sourceName": "Simmons v. Tuomey Regional Medical Center, 341 S.C. 32, 533 S.E.2d 312 (S.C. 2000) (CourtListener)",
+      "sourceUrl": "https://www.courtlistener.com/opinion/1274497/simmons-v-tuomey-regional-medical-center/",
+      "retrievedAt": "2026-10-02",
+      "note": "Minimal edit: '...the hospital may still be liable. For emergency-room physicians, South Carolina imposes a nondelegable duty on the hospital (Simmons v. Tuomey Regional Medical Center, 2000): if the hospital offered the services, you looked to the hospital for care, and a reasonable person would have believed the doctor was a hospital employee, the hospital is liable for the doctor's negligence — even if a consent form called the doctor an independent contractor.' Justia copy (403 to curl): https://law.justia.com/cases/south-carolina/supreme-court/2000/25143.html"
+    },
+    {
+      "surface": "body",
+      "claim": "Multiple defendants — complex medical malpractice cases may involve the surgeon, the anesthesiologist, the nursing staff, the hospital, and potentially the physician's medical group — each with separate insurance carriers and defense attorneys",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-32-220(C)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Accurate; note § 15-32-220(C) caps noneconomic damages at $596,001 per defendant and $1,788,002 total (2026) however many defendants are named."
+    },
+    {
+      "surface": "body",
+      "claim": "3 years from injury or discovery (S.C. Code § 15-3-545)",
+      "verdict": "update",
+      "currentValue": "§ 15-3-545(A): 'within three years from the date of the treatment, omission, or operation giving rise to the cause of action or three years from date of discovery or when it reasonably ought to have been discovered, not to exceed six years from date of occurrence'.",
+      "sourceName": "S.C. Code § 15-3-545(A)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Table cell: '3 years from the treatment or from when the injury was or reasonably should have been discovered (S.C. Code § 15-3-545)'. Trigger is the treatment/omission/operation date, not the injury date."
+    },
+    {
+      "surface": "body",
+      "claim": "2 years from injury (O.C.G.A. § 9-3-71)",
+      "verdict": "keep",
+      "currentValue": "§ 9-3-71(a): two years 'after the date on which an injury or death arising from a negligent or wrongful act or omission occurred'.",
+      "sourceName": "O.C.G.A. § 9-3-71 (Justia, recorded in facts-1676/1696)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/",
+      "retrievedAt": "2026-10-02",
+      "note": "Verified in facts-1696."
+    },
+    {
+      "surface": "body",
+      "claim": "Notice of Intent filed with expert affidavit, then pre-suit mediation (S.C. Code § 15-79-125)",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-79-125(A),(C)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c079.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Verified."
+    },
+    {
+      "surface": "body",
+      "claim": "Expert affidavit filed with complaint (O.C.G.A. § 9-11-9.1)",
+      "verdict": "keep",
+      "currentValue": "§ 9-11-9.1(a): plaintiff must 'file with the complaint an affidavit of an expert competent to testify'; 45-day exception in (b); 30-day cure of a defective affidavit in (e).",
+      "sourceName": "O.C.G.A. § 9-11-9.1 (Justia, recorded in facts-1696)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-3/section-9-11-9-1/",
+      "retrievedAt": "2026-10-02",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "$350,000 per provider / $1.05M aggregate, adjusted annually for inflation (S.C. Code § 15-32-220)",
+      "verdict": "update",
+      "currentValue": "2026 limits: $596,001 per provider or institution and $1,788,002 for all, per claimant (RFA memo 2026-02-03); no cap where the defendant was grossly negligent, wilful, wanton or reckless, committed fraud, or altered/destroyed records (§ 15-32-220(E)).",
+      "sourceName": "S.C. Code § 15-32-220; RFA memo 2026-02-03",
+      "sourceUrl": "https://rfa.sc.gov/media/11477",
+      "retrievedAt": "2026-10-02",
+      "note": "The comparison table — the most-scanned element — shows only the stale 2005 base figures, contradicting the body text and Key Takeaways. Cell: '$596,001 per provider / $1,788,002 total for 2026 (base $350,000 / $1.05M, indexed); no cap for gross negligence or reckless conduct (S.C. Code § 15-32-220)'."
+    },
+    {
+      "surface": "body",
+      "claim": "None — the $350,000 cap was struck down in Nestlehutt (2010)",
+      "verdict": "keep",
+      "currentValue": "Atlanta Oculoplastic Surgery, P.C. v. Nestlehutt, 286 Ga. 731 (2010) held the O.C.G.A. § 51-13-1 noneconomic cap ($350,000) unconstitutional (right to jury trial).",
+      "sourceName": "Atlanta Oculoplastic Surgery v. Nestlehutt, 286 Ga. 731 (2010) (Justia, recorded in facts-1663/1696)",
+      "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/2010/s09a1432.html",
+      "retrievedAt": "2026-10-02",
+      "note": "Verified in sibling packs."
+    },
+    {
+      "surface": "body",
+      "claim": "Less than 51% (Nelson v. Concrete Supply Co.)",
+      "verdict": "keep",
+      "currentValue": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991): plaintiff may recover if his or her negligence 'is not greater than that of the defendant'.",
+      "sourceName": "Nelson v. Concrete Supply Co. (S.C. 1991) (CourtListener, recorded in facts-1757)",
+      "sourceUrl": "https://www.courtlistener.com/opinion/1265650/nelson-v-concrete-supply-company/",
+      "retrievedAt": "2026-10-02",
+      "note": "Matches writer-profile table; never cite § 15-38-15."
+    },
+    {
+      "surface": "body",
+      "claim": "Less than 50% (O.C.G.A. § 51-12-33)",
+      "verdict": "keep",
+      "currentValue": "§ 51-12-33(g): 'the plaintiff shall not be entitled to receive any damages if the plaintiff is 50 percent or more responsible'.",
+      "sourceName": "O.C.G.A. § 51-12-33 (Justia, recorded in facts-1709/4715)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-10-02",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "three years from the date of the injury or the date the injury was discovered or should have been discovered (S.C. Code § 15-3-545); filing the Notice of Intent tolls the deadline, but the notice must be filed with an expert's affidavit, so begin well before the deadline",
+      "verdict": "update",
+      "currentValue": "§ 15-3-545(A): three years 'from the date of the treatment, omission, or operation giving rise to the cause of action or three years from date of discovery or when it reasonably ought to have been discovered'. Claims against MUSC or another governmental hospital: two years from when the loss was or should have been discovered (three if a verified claim was first filed) under § 15-78-110.",
+      "sourceName": "S.C. Code §§ 15-3-545(A), 15-78-110, 15-79-125(A)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Change 'the date of the injury' to 'the date of the treatment or omission'. Add: 'If the hospital is MUSC or another public hospital, the Tort Claims Act deadline is two years (S.C. Code § 15-78-110).' Tolling clause verified (§ 15-79-125(A))."
+    },
+    {
+      "surface": "body",
+      "claim": "six years from the date of the alleged act of malpractice, regardless of when the injury is discovered; after six years, the claim is generally barred",
+      "verdict": "keep",
+      "currentValue": "§ 15-3-545(A): 'not to exceed six years from date of occurrence'. Foreign objects and negligently placed appliances are governed by (B): two years from discovery, never less than three years after placement — outside the six-year repose.",
+      "sourceName": "S.C. Code § 15-3-545(A),(B)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-10-02",
+      "note": "'Generally' covers the foreign-object exception. Optional: '(except for objects left in the body)'."
+    },
+    {
+      "surface": "body",
+      "claim": "in South Carolina, the deadline is extended while the patient is a minor, but by no more than seven years and no more than one year after the patient turns 18 (S.C. Code § 15-3-545(D))",
+      "verdict": "keep",
+      "currentValue": "§ 15-3-545(D): periods 'are not tolled for a period of more than seven years on account of minority, and in any case more than one year after the disability ceases'; also tolled during fraud or collusion between parent/guardian and the defendant's insurer or provider.",
+      "sourceName": "S.C. Code § 15-3-545(D)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Verified verbatim."
+    },
+    {
+      "surface": "body",
+      "claim": "two years from injury (O.C.G.A. § 9-3-71), with a five-year statute of repose",
+      "verdict": "update",
+      "currentValue": "Five-year repose from the act (§ 9-3-71(b)), but it does not apply to foreign objects (§ 9-3-72: one year from discovery; 'The limitations of Code Section 9-3-71 shall not apply'), and a child injured before age five has two years from the fifth birthday and never past the tenth birthday (§ 9-3-73).",
+      "sourceName": "O.C.G.A. §§ 9-3-71(b), 9-3-72, 9-3-73 (Justia, recorded in facts-1696)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-73/",
+      "retrievedAt": "2026-10-02",
+      "note": "Minimal edit: '...with a five-year statute of repose (except for foreign objects and young children, O.C.G.A. §§ 9-3-72, 9-3-73)'."
+    },
+    {
+      "surface": "body",
+      "claim": "retain board-certified medical experts in the relevant specialty to review your records and determine whether malpractice occurred before investing in a full case",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-36-100(A)(2)(a)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c036.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Firm practice; consistent with the statute."
+    },
+    {
+      "surface": "body",
+      "claim": "prepare, file and serve the pre-suit notice with the required expert affidavit to comply with South Carolina's screening statute",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-79-125(A)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c079.php",
+      "retrievedAt": "2026-10-02",
+      "note": ""
+    },
+    {
+      "surface": "body",
+      "claim": "At Roden Law, we represent medical malpractice victims at MUSC, Roper St. Francis, Trident Medical Center, East Cooper Medical Center, and throughout the Charleston area.",
+      "verdict": "update",
+      "currentValue": "East Cooper Medical Center is now Novant Health East Cooper Medical Center (Novant acquired it from Tenet on February 1, 2024).",
+      "sourceName": "Tenet Healthcare press release 2024-02-01 (SEC Form 8-K Ex. 99.1)",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/70318/000007031824000006/thc-20240201bexh991.htm",
+      "retrievedAt": "2026-10-02",
+      "note": "Use 'Novant Health East Cooper Medical Center'. Claims against MUSC follow the Tort Claims Act (see above)."
+    },
+    {
+      "surface": "body",
+      "claim": "We handle every medical malpractice case on a contingency-fee basis — you pay nothing unless we recover compensation for you.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-10-02",
+      "note": "Firm fact."
+    },
+    {
+      "surface": "body",
+      "claim": "call us today at (843) 790-8999 or 1-844-RESULTS for a free consultation",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "client.json (Charleston office phone)",
+      "sourceUrl": "",
+      "retrievedAt": "2026-10-02",
+      "note": "tel:+18437908999 = (843) 790-8999, the Charleston office in client.json; tel:+18447378587 = 1-844-737-8587 = 1-844-RESULTS. Both match."
+    },
+    {
+      "surface": "excerpt",
+      "claim": "Filing a malpractice claim against a South Carolina hospital: the pre-suit notice, the expert affidavit, and what comes first.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-10-02",
+      "note": "No factual claim beyond the pre-suit notice and affidavit, both verified."
+    },
+    {
+      "surface": "metaDescription",
+      "claim": "",
+      "verdict": "update",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-10-02",
+      "note": "metaDescription is empty — the SEO title/description fall back to the excerpt. Optional: add one (e.g. 'How to file a malpractice claim against a Charleston hospital: South Carolina's Notice of Intent, expert affidavit, 2026 damage caps, and MUSC Tort Claims Act rules.')."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "South Carolina medical malpractice claims require a pre-suit Notice of Intent to File and an expert witness affidavit establishing the standard of care was breached.",
+      "verdict": "update",
+      "currentValue": "§ 15-79-125(A): 'Notice of Intent to File Suit' filed contemporaneously with an expert affidavit that 'must specify at least one negligent act or omission claimed to exist and the factual basis for each claim' (§ 15-36-100(B)).",
+      "sourceName": "S.C. Code §§ 15-79-125(A), 15-36-100(B)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c079.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Minimal edit: '...a pre-suit Notice of Intent to File Suit, filed with an expert affidavit identifying at least one negligent act or omission, followed by mandatory mediation.'"
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "The statute of limitations is 3 years with a 6-year statute of repose.",
+      "verdict": "update",
+      "currentValue": "§ 15-3-545(A) three years / six-year repose verified; but claims against MUSC or another public hospital have a two-year Tort Claims Act deadline (§ 15-78-110).",
+      "sourceName": "S.C. Code §§ 15-3-545(A), 15-78-110",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Add: '(2 years under the Tort Claims Act if the hospital is MUSC or another public hospital).' The box renders above the article."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Hospitals may be liable for employee physician negligence but may argue independent contractor status for affiliated doctors.",
+      "verdict": "update",
+      "currentValue": "Simmons v. Tuomey, 341 S.C. 32 (2000): hospitals owe a nondelegable duty to ER patients; a hospital that held itself out as providing the services is liable for a contractor physician the patient reasonably believed was a hospital employee.",
+      "sourceName": "Simmons v. Tuomey Regional Medical Center (S.C. 2000)",
+      "sourceUrl": "https://www.courtlistener.com/opinion/1274497/simmons-v-tuomey-regional-medical-center/",
+      "retrievedAt": "2026-10-02",
+      "note": "As written the takeaway implies the independent-contractor defense works. Minimal edit: '...may argue independent contractor status for affiliated doctors — but South Carolina holds hospitals liable for emergency-room physicians who appear to be hospital staff (Simmons v. Tuomey Regional Medical Center, 2000).'"
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Georgia allows 2 years to file (O.C.G.A. § 9-3-71) and requires an expert affidavit.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. §§ 9-3-71(a), 9-11-9.1(a)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/",
+      "retrievedAt": "2026-10-02",
+      "note": "Verified in facts-1696."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "South Carolina caps non-economic damages at $596,001 per provider or institution and $1,788,002 in total for 2026 (S.C. Code § 15-32-220).",
+      "verdict": "keep",
+      "currentValue": "RFA memo 2026-02-03 verified. Cap lifted under § 15-32-220(E) (gross negligence, wilful/wanton/reckless conduct, fraud, altered/destroyed records).",
+      "sourceName": "S.C. Code § 15-32-220; RFA memo 2026-02-03",
+      "sourceUrl": "https://rfa.sc.gov/media/11477",
+      "retrievedAt": "2026-10-02",
+      "note": "Figures correct. Optional add: 'per patient; the cap does not apply to gross negligence or reckless conduct'."
+    },
+    {
+      "surface": "faq:0",
+      "claim": "Medical malpractice occurs when a healthcare provider fails to provide care that meets the accepted standard of care in their specialty, and that failure causes injury to the patient.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-36-100(A)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c036.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Publishes as FAQPage structured data. Remainder of answer (four elements; bad outcome alone not malpractice) accurate."
+    },
+    {
+      "surface": "faq:1",
+      "claim": "Yes. South Carolina requires an expert affidavit from a qualified medical professional filed together with the Notice of Intent to File Suit (S.C. Code section 15-79-125).",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-79-125(A)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c079.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Accurate. § 15-36-100(C)(2) excuses the affidavit for negligence within common knowledge (rare in hospital cases) — 'Yes' is fine as a general answer."
+    },
+    {
+      "surface": "faq:1",
+      "claim": "The expert must be licensed and either board certified in the relevant specialty or have practiced or taught in it for at least three of the last five years immediately preceding the opinion (S.C. Code section 15-36-100).",
+      "verdict": "keep",
+      "currentValue": "§ 15-36-100(A)(1)-(2) verbatim; (A)(3) specialized-knowledge route exists as a further alternative.",
+      "sourceName": "S.C. Code § 15-36-100(A)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c036.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Accurate statement of the main routes. Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:2",
+      "claim": "The statute of limitations is three years from the date of injury or discovery (S.C. Code section 15-3-545).",
+      "verdict": "update",
+      "currentValue": "§ 15-3-545(A): three years 'from the date of the treatment, omission, or operation' or 'from date of discovery or when it reasonably ought to have been discovered'. MUSC/public hospitals: two years (§ 15-78-110).",
+      "sourceName": "S.C. Code §§ 15-3-545(A), 15-78-110",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Minimal edit: 'The statute of limitations is three years from the date of the treatment, or from when the injury was or reasonably should have been discovered (S.C. Code section 15-3-545) — two years if the hospital is MUSC or another public hospital (S.C. Code section 15-78-110).' Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:2",
+      "claim": "Filing the required Notice of Intent to File Suit tolls that deadline (S.C. Code section 15-79-125), but the notice must be filed with an expert's affidavit, so preparation has to start well before it.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-79-125(A)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c079.php",
+      "retrievedAt": "2026-10-02",
+      "note": ""
+    },
+    {
+      "surface": "faq:2",
+      "claim": "South Carolina also has a six-year statute of repose that generally bars claims more than six years after the alleged malpractice regardless of when the injury is discovered.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-3-545(A),(B)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-10-02",
+      "note": "'Generally' covers foreign objects."
+    },
+    {
+      "surface": "faq:3",
+      "claim": "South Carolina does not cap economic damages in medical malpractice cases, but non-economic damages are capped by S.C. Code § 15-32-220 — a base of $350,000 against a single provider and $1.05 million where more than one is liable, adjusted annually for inflation, so for 2026 the limits are $596,001 and $1,788,002.",
+      "verdict": "update",
+      "currentValue": "Figures verified (§ 15-32-220(A)-(D),(F); RFA memo 2026-02-03). Omitted: the cap does not apply where the defendant was grossly negligent, wilful, wanton or reckless, committed fraud or misrepresentation related to the claim, or altered or destroyed medical records (§ 15-32-220(E)); claims against MUSC/public hospitals are instead capped by the Tort Claims Act at $300,000 per person / $600,000 per occurrence, or $1.2 million where a government-employed physician or dentist was negligent, with no punitive damages (§ 15-78-120).",
+      "sourceName": "S.C. Code §§ 15-32-220, 15-78-120; RFA memo 2026-02-03",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Append: 'The cap does not apply if the provider was grossly negligent, wilful, wanton or reckless, or altered records to avoid liability. Claims against MUSC or another public hospital fall under the Tort Claims Act, which caps damages at $300,000 per person ($1.2 million where an employed physician was negligent) and bars punitive damages (S.C. Code section 15-78-120).' Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:3",
+      "claim": "Punitive damages are capped at the greater of three times compensatory damages or $739,245, the 2026 inflation-indexed figure (S.C. Code section 15-32-530), with exceptions for certain egregious conduct.",
+      "verdict": "keep",
+      "currentValue": "§ 15-32-530(A),(D); RFA memo 2026-02-03 '$739,245'; exceptions (B)-(C).",
+      "sourceName": "S.C. Code § 15-32-530; RFA punitive memo 2026-02-03",
+      "sourceUrl": "https://rfa.sc.gov/media/11478",
+      "retrievedAt": "2026-10-02",
+      "note": "Verified."
+    },
+    {
+      "surface": "faq:4",
+      "claim": "Yes. Hospitals are liable for their employees' negligence under respondeat superior.",
+      "verdict": "update",
+      "currentValue": "MUSC's hospitals are run by the Medical University Hospital Authority, 'an agency of the State of South Carolina' (S.C. Code § 59-123-60(E)); 'MUSC is a governmental agency subject to the provisions of the Tort Claims Act' (Tatum v. Medical University of South Carolina, 346 S.C. 194 (2001), citing Proveaux v. MUSC, 326 S.C. 28 (1997)). Consequences: (1) the Act 'constitutes the exclusive remedy for any tort committed by an employee of a governmental entity' and an employee acting within the scope of official duty 'is not liable therefor' (§ 15-78-70(a)); the plaintiff 'shall name as a party defendant only the agency' (§ 15-78-70(c)) — so a salaried MUSC physician (including one paid through an MUSC practice plan) is generally not a separate defendant (Tatum; § 15-78-70(c) proviso); (2) suit is 'forever barred unless an action is commenced within two years after the date the loss was or should have been discovered', three years if a verified claim was first filed (§ 15-78-110); (3) recovery is capped at $300,000 per person and $600,000 per occurrence (§ 15-78-120(a)(1)-(2)), but where the loss is 'caused by the tort of any licensed physician or dentist, employed by a governmental entity', the per-person and per-occurrence limit is $1,200,000 (§ 15-78-120(a)(3)-(4)); (4) 'No award for damages under this chapter shall include punitive or exemplary damages or interest prior to judgment' (§ 15-78-120(b)). Definitions expressly include 'state-supported governmental health care facilit[ies]' (§ 15-78-30(a),(e)).",
+      "sourceName": "S.C. Code § 15-78-70; Tatum v. MUSC (S.C. 2001)",
+      "sourceUrl": "https://www.courtlistener.com/opinion/1285904/tatum-v-medical-university-of-south-carolina/",
+      "retrievedAt": "2026-10-02",
+      "note": "For MUSC (the largest Charleston hospital) the answer to 'can I sue both the hospital and the doctor' is generally no: its employed physicians are immune and MUSC is the only defendant (§ 15-78-70). Add: 'If the hospital is MUSC or another public hospital, the claim runs under the South Carolina Tort Claims Act: you sue the hospital rather than its employed doctors, within two years, and damages are capped (S.C. Code sections 15-78-70, 15-78-110, 15-78-120).' Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:4",
+      "claim": "Even if a doctor is technically an independent contractor, the hospital may be liable under apparent agency if it holds the doctor out as its agent.",
+      "verdict": "update",
+      "currentValue": "Simmons v. Tuomey, 341 S.C. 32 (2000): for ER physicians South Carolina imposes a nondelegable duty (Restatement (Second) of Torts § 429) — hospital liable where it offered the services, the patient looked to the hospital, and a reasonable person would have believed the physician was a hospital employee.",
+      "sourceName": "Simmons v. Tuomey Regional Medical Center (S.C. 2000)",
+      "sourceUrl": "https://www.courtlistener.com/opinion/1274497/simmons-v-tuomey-regional-medical-center/",
+      "retrievedAt": "2026-10-02",
+      "note": "Minimal edit: '...if it holds the doctor out as its agent; for emergency-room doctors, South Carolina treats the hospital's duty as nondelegable (Simmons v. Tuomey Regional Medical Center, 2000).' Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:5",
+      "claim": "Before filing a medical malpractice lawsuit in South Carolina, you must file a Notice of Intent to File Suit together with an expert affidavit, serve it on each defendant, and mediate, generally within 90 to 120 days of service, before filing the complaint (S.C. Code section 15-79-125).",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-79-125(A),(C)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c079.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Verified."
+    },
+    {
+      "surface": "faq:5",
+      "claim": "The affidavit must come from a qualified medical professional who has reviewed the records and identified at least one negligent act and the resulting damages.",
+      "verdict": "update",
+      "currentValue": "§ 15-36-100(B): affidavit 'must specify at least one negligent act or omission claimed to exist and the factual basis for each claim'. No damages element.",
+      "sourceName": "S.C. Code § 15-36-100(B)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c036.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Minimal edit: 'The affidavit must come from a qualified expert and must specify at least one negligent act or omission and the factual basis for it (S.C. Code section 15-36-100).' Publishes as FAQPage structured data."
+    },
+    {
+      "surface": "faq:5",
+      "claim": "Failure to comply can result in dismissal.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-36-100(C)(1),(E)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c036.php",
+      "retrievedAt": "2026-10-02",
+      "note": ""
+    }
+  ],
+  "recommendedEdits": [
+    "Comparison table, SC cap cell: replace '$350,000 per provider / $1.05M aggregate, adjusted annually for inflation (S.C. Code § 15-32-220)' with '$596,001 per provider / $1,788,002 total for 2026 (base $350,000 / $1.05M, indexed); no cap for gross negligence or reckless conduct (S.C. Code § 15-32-220)'.",
+    "Damages section: replace 'Subject to that cap, you can recover:' with 'The cap does not apply if the provider was grossly negligent, wilful, wanton or reckless, committed fraud or misrepresentation related to the claim, or altered or destroyed medical records to avoid liability (S.C. Code § 15-32-220(E)). You can recover:'. Same exception sentence appended to faq:3.",
+    "Hospital-vs-doctor section: add a 'Public hospitals' bullet — MUSC is a state agency (S.C. Code § 59-123-60(E)); claims run under the S.C. Tort Claims Act: sue MUSC, not its employed doctors (§ 15-78-70); two-year deadline (§ 15-78-110); caps $300,000 per person / $600,000 per occurrence, or $1.2 million where a government-employed physician or dentist was negligent (§ 15-78-120(a)); no punitive damages (§ 15-78-120(b)). Mirror in faq:4 ('Yes...' answer), faq:3, faq:2, the SC filing-deadline bullet and the Key Takeaways SOL sentence.",
+    "Apparent agency (body bullet, faq:4, Key Takeaways): add that for ER physicians South Carolina imposes a nondelegable duty on the hospital — Simmons v. Tuomey Regional Medical Center, 341 S.C. 32 (2000) — liability where the hospital offered the services, the patient looked to the hospital, and a reasonable person would have believed the doctor was a hospital employee.",
+    "Expert affidavit wording (body Notice-of-Intent list item and faq:5): 'identified at least one negligent act and the resulting damages' → 'specifies at least one negligent act or omission and the factual basis for it (S.C. Code § 15-36-100)'. Expert-qualification bullets: 'licensed to practice medicine' → 'licensed to practice his or her profession where the expert practices or teaches'; 'strict qualifications' → 'specific qualifications'; the NOI paragraph's 'practices or has recently practiced in the same specialty' → 'board certified in the defendant's area of practice, or actively practicing or teaching in it for at least three of the last five years'.",
+    "SC limitation trigger (table cell, filing-deadline bullet, faq:2): 'from injury' → 'from the date of the treatment, or from when the injury was or reasonably should have been discovered (S.C. Code § 15-3-545)'.",
+    "Georgia filing-deadline bullet: '...with a five-year statute of repose' → '...with a five-year statute of repose (except for foreign objects and young children, O.C.G.A. §§ 9-3-72, 9-3-73)'.",
+    "Intro statistic: 'According to a widely cited study published by the British Medical Journal' → 'According to a widely cited 2016 analysis by Johns Hopkins researchers in The BMJ, medical error may be the third leading cause of death...'; repoint the link from https://www.bmj.com/ to https://www.bmj.com/content/353/bmj.i2139.",
+    "Rename 'East Cooper Medical Center' to 'Novant Health East Cooper Medical Center' in the intro and closing paragraph (Novant acquired it from Tenet 2024-02-01).",
+    "Common types: attribute 'most common forms of medical malpractice' to the NPDB analysis (diagnostic errors 28.6% of paid claims, BMJ Quality & Safety 2013); replace the unsourced Charleston-ER sentence with the S.C. Code § 15-32-230 gross-negligence standard for emergency care; soften the shift-change medication-error sentence.",
+    "Key Takeaways first sentence: 'Notice of Intent to File' → 'Notice of Intent to File Suit, filed with an expert affidavit identifying at least one negligent act or omission, followed by mandatory mediation'."
+  ],
+  "statuteCitations": [
+    {
+      "section": "S.C. Code § 15-3-545",
+      "name": "Medical malpractice — three years from treatment or (constructive) discovery, six-year repose (A); foreign objects (B); minors' tolling capped at seven years / one year after majority (D)",
+      "url": "https://www.scstatehouse.gov/code/t15c003.php"
+    },
+    {
+      "section": "S.C. Code § 15-79-125",
+      "name": "Notice of Intent to File Suit with expert affidavit; filing tolls limitations (A); mediation 90–120 days from service, 60-day good-cause extension (C); suit within 60 days of impasse (E)",
+      "url": "https://www.scstatehouse.gov/code/t15c079.php"
+    },
+    {
+      "section": "S.C. Code § 15-36-100",
+      "name": "Expert definition — licensed in own profession; board certified OR 3 of last 5 years practice/teaching; or specialized knowledge (A); affidavit specifying at least one negligent act or omission and factual basis (B); dismissal (C)(1); common-knowledge exception (C)(2); 30-day cure (E)",
+      "url": "https://www.scstatehouse.gov/code/t15c036.php"
+    },
+    {
+      "section": "S.C. Code § 15-32-220",
+      "name": "Med-mal noneconomic cap — $350,000 / $1,050,000 base per claimant (A)-(C); economic and punitive not capped (D); no cap for gross negligence, wilful/wanton/reckless conduct, fraud, altered/destroyed records (E); CPI indexing (F) — $596,001 / $1,788,002 for 2026",
+      "url": "https://www.scstatehouse.gov/code/t15c032.php"
+    },
+    {
+      "section": "S.C. Code § 15-32-230",
+      "name": "Emergency/obstetrical care — physician liable only for gross negligence while patient unstable",
+      "url": "https://www.scstatehouse.gov/code/t15c032.php"
+    },
+    {
+      "section": "S.C. Code § 15-32-520",
+      "name": "Punitive damages — bifurcation on request (A); clear and convincing proof of wilful, wanton or reckless conduct (D)",
+      "url": "https://www.scstatehouse.gov/code/t15c032.php"
+    },
+    {
+      "section": "S.C. Code § 15-32-530",
+      "name": "Punitive cap — greater of 3x compensatory or $500,000 (A), indexed ($739,245 for 2026) (D); 4x / $2,000,000 tier (B); no cap for intent to harm, felony, substantial impairment (C)",
+      "url": "https://www.scstatehouse.gov/code/t15c032.php"
+    },
+    {
+      "section": "S.C. Code § 15-33-135",
+      "name": "Punitive damages — burden of proof clear and convincing evidence",
+      "url": "https://www.scstatehouse.gov/code/t15c033.php"
+    },
+    {
+      "section": "S.C. Code §§ 15-78-30, -70, -110, -120",
+      "name": "Tort Claims Act — state-supported health care facilities included (30); exclusive remedy, employee immune, name the agency (70); two years from discovery, three if verified claim filed (110); $300,000 / $600,000 caps, $1,200,000 for government-employed physician/dentist torts, no punitive damages (120)",
+      "url": "https://www.scstatehouse.gov/code/t15c078.php"
+    },
+    {
+      "section": "S.C. Code § 59-123-60(E)",
+      "name": "Medical University Hospital Authority — 'an agency of the State of South Carolina'",
+      "url": "https://www.scstatehouse.gov/code/t59c123.php"
+    },
+    {
+      "section": "O.C.G.A. § 9-3-71",
+      "name": "Georgia med-mal — two years from injury (a); five-year repose (b)",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-71/"
+    },
+    {
+      "section": "O.C.G.A. § 9-3-73",
+      "name": "Georgia minors — under five: two years from fifth birthday, repose at tenth birthday",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-4/section-9-3-73/"
+    },
+    {
+      "section": "O.C.G.A. § 9-11-9.1",
+      "name": "Georgia expert affidavit with complaint (a); 45-day window (b); 30-day cure (e)",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-11/article-3/section-9-11-9-1/"
+    },
+    {
+      "section": "O.C.G.A. § 51-12-33",
+      "name": "Georgia apportionment — barred at 50 percent or more fault (g)",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+    }
+  ],
+  "authoritativeLinks": [
+    {
+      "name": "S.C. Revenue and Fiscal Affairs Office — 2026 § 15-32-220 noneconomic damages adjustment memo (2026-02-03; $596,001 / $1,788,002)",
+      "url": "https://rfa.sc.gov/media/11477"
+    },
+    {
+      "name": "S.C. Revenue and Fiscal Affairs Office — 2026 § 15-32-530 punitive damages adjustment memo (2026-02-03; $739,245)",
+      "url": "https://rfa.sc.gov/media/11478"
+    },
+    {
+      "name": "Simmons v. Tuomey Regional Medical Center, 341 S.C. 32, 533 S.E.2d 312 (2000) — nondelegable duty for ER physicians; Restatement § 429 test",
+      "url": "https://www.courtlistener.com/opinion/1274497/simmons-v-tuomey-regional-medical-center/"
+    },
+    {
+      "name": "Tatum v. Medical University of South Carolina, 346 S.C. 194 (2001) — MUSC is a governmental agency under the Tort Claims Act; employed physician immune, sue MUSC",
+      "url": "https://www.courtlistener.com/opinion/1285904/tatum-v-medical-university-of-south-carolina/"
+    },
+    {
+      "name": "Nelson v. Concrete Supply Co., 303 S.C. 243 (1991) — SC modified comparative negligence",
+      "url": "https://www.courtlistener.com/opinion/1265650/nelson-v-concrete-supply-company/"
+    },
+    {
+      "name": "Atlanta Oculoplastic Surgery v. Nestlehutt, 286 Ga. 731 (2010) — Georgia med-mal caps void",
+      "url": "https://law.justia.com/cases/georgia/supreme-court/2010/s09a1432.html"
+    },
+    {
+      "name": "The BMJ press release, 4 May 2016 — 'Medical error is the third leading cause of death in the US after heart disease and cancer' (Makary & Daniel, BMJ 2016;353:i2139)",
+      "url": "https://www.bmj.com/company/wp-content/uploads/2016/05/medical-errors.pdf"
+    },
+    {
+      "name": "PubMed — Makary MA, Daniel M. Medical error—the third leading cause of death in the US. BMJ 2016;353:i2139",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27143499/"
+    },
+    {
+      "name": "PubMed — Saber Tehrani AS et al. 25-Year summary of US malpractice claims for diagnostic errors 1986–2010 (BMJ Qual Saf 2013): diagnostic errors 28.6% of paid claims",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23610443/"
+    },
+    {
+      "name": "Tenet Healthcare — completed sale of East Cooper Medical Center, Hilton Head Hospital and Coastal Carolina Hospital to Novant Health (2024-02-01, SEC 8-K Ex. 99.1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/70318/000007031824000006/thc-20240201bexh991.htm"
+    },
+    {
+      "name": "Trident Health — Trident Medical Center (HCA Healthcare), North Charleston",
+      "url": "https://tridenthealthsystem.com/locations/trident-medical-center"
+    }
+  ],
+  "quoteNote": "Body claims are quoted from tag-stripped text of body.html (several span <strong> tags: the hospital list, Duty/Hospital liability/Multiple defendants lead-ins, 'three years'/'six years'/'two years', the contingency-fee sentence, and the phone line whose numbers sit inside tel: anchors). Table cells are quoted individually. FAQ claims are quoted from meta.json answers verbatim. law.justia.com and courtlistener.com URLs return 403/202 to curl (bot protection) and were reused from verified sibling packs (facts-1663, -1696, -1709, -1757, -4715) or the CourtListener API; scstatehouse.gov, rfa.sc.gov, sec.gov, bmj.com press PDF, pubmed and tridenthealthsystem.com resolved 200/203 on 2026-10-02. S.C. statute text read directly from scstatehouse.gov chapters 3, 32, 33, 36, 78, 79 and Title 59 ch. 123."
+}

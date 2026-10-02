@@ -1249,13 +1249,13 @@
             "type": "post",
             "status": "publish",
             "title": "Average Personal Injury Settlement Amounts: What to Realistically Expect",
-            "excerpt": "What personal injury settlements realistically range by case type, why averages mislead, and the factors that actually drive case value.",
+            "excerpt": "Why there is no reliable \"average\" personal injury settlement, what the most recent federal court data shows, and the factors that actually drive case value in Georgia and South Carolina.",
             "meta": {
-                "_roden_author_attorney": "Eric Roden",
+                "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "What is the average personal injury settlement?",
-                        "answer": "National averages are misleading. Ranges by type: car accidents $15K-$75K, truck $50K-$500K+, slip and fall $10K-$50K, med mal $100K-$1M+, wrongful death $500K-$5M+."
+                        "answer": "There is no reliable national average for settlements, because insurers do not publish them and every case turns on its own injuries, evidence and insurance. The closest federal data are trial verdicts: in the Bureau of Justice Statistics' most recent study (2005 data), half of plaintiffs who won a tort trial in state court were awarded $24,000 or less, with a median of $15,000 in car-accident trials and $400,000 in medical-malpractice trials. An attorney who reviews your records can give you a realistic range."
                     },
                     {
                         "question": "Why do amounts vary so much?",
@@ -1263,11 +1263,11 @@
                     },
                     {
                         "question": "Do most cases settle or go to trial?",
-                        "answer": "About 95% settle before trial. Having an attorney prepared to go to trial leads to higher settlement offers."
+                        "answer": "Most settle. In the most recent Bureau of Justice Statistics count (2005 data), only about 4% of tort cases in state courts ended in a trial. An attorney who is prepared to try your case gives the insurer a real reason to make a fair offer."
                     },
                     {
                         "question": "How long to receive a settlement?",
-                        "answer": "Most settle 6-18 months after MMI. Complex cases can take 2-3 years."
+                        "answer": "It depends on your treatment and the insurer. Most claims are not ready to settle until your treatment reaches maximum medical improvement, and cases that go into litigation take longer. The filing deadlines do not wait: two years in Georgia (O.C.G.A. § 9-3-33) and three in South Carolina (S.C. Code § 15-3-530)."
                     },
                     {
                         "question": "Are settlements taxable?",
@@ -1278,7 +1278,9 @@
                         "answer": "Free consultation with an experienced attorney who can review records, calculate damages, and provide a range based on comparable cases."
                     }
                 ],
-                "_roden_key_takeaways": "Settlement ranges by type: car accidents $15K-$75K, truck $50K-$500K+, motorcycle $30K-$150K, slip and fall $10K-$50K, med mal $100K-$1M+, wrongful death $500K-$5M+. Georgia caps punitive at $250K (O.C.G.A. § 51-12-5.1). SC caps at 3x or $500K (S.C. Code § 15-32-530). About 95% of cases settle."
+                "_roden_key_takeaways": "There is no reliable \"average\" settlement. In the most recent federal study of state-court tort trials (Bureau of Justice Statistics, 2005 data), half of winning plaintiffs were awarded $24,000 or less ($15,000 in car-accident trials, $400,000 in medical-malpractice trials), but those are trial awards, not settlements. Only about 4% of tort cases end in a trial; most of the rest settle. Georgia caps punitive damages at $250,000 in most cases (O.C.G.A. § 51-12-5.1). South Carolina caps them at the greater of 3x compensatory damages or an inflation-indexed $500,000, which is $739,245 in 2026 (S.C. Code § 15-32-530); the cap rises to the greater of 4x or $2 million for certain profit-motivated misconduct or conduct that could support a felony conviction, and does not apply to impaired defendants, intent to harm, or a felony plea or conviction for the same conduct.",
+                "_roden_last_reviewed": "2026-10-02",
+                "_roden_meta_description": "No reliable \"average\" personal injury settlement exists. See what federal court data shows, what drives case value, and how GA and SC law applies."
             }
         },
         "/blog/avoid-dangerous-medication-errors/": {
@@ -1593,7 +1595,7 @@
             "title": "Blind Spot Accidents: Causes, Prevention, and Your Legal Rights in Georgia and South Carolina",
             "excerpt": "Why blind spot collisions happen, who they injure most, and how fault is decided in Georgia and South Carolina.",
             "meta": {
-                "_roden_author_attorney": "Eric Roden",
+                "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "What is a blind spot accident?",
@@ -1601,11 +1603,11 @@
                     },
                     {
                         "question": "Who is most at risk for blind spot accidents?",
-                        "answer": "Motorcyclists, bicyclists, and pedestrians face the highest risk because their smaller profiles make them easier to miss. Drivers of compact cars traveling alongside large trucks or SUVs are also at elevated risk due to the larger vehicles extensive blind zones."
+                        "answer": "Motorcyclists, bicyclists, and pedestrians face the highest risk because their smaller profiles make them easier to miss. Drivers of compact cars traveling alongside large trucks or SUVs are also at elevated risk due to the larger vehicles' extensive blind zones."
                     },
                     {
                         "question": "How can I reduce my blind spots while driving?",
-                        "answer": "Angle your side mirrors outward until you can barely see your own vehicle, perform shoulder checks before every lane change, use turn signals early, and avoid lingering in other vehicles blind spots. Modern blind spot monitoring systems can supplement but should not replace these habits."
+                        "answer": "Lean your head toward each window and set that side mirror so you can just see your own car — from your normal seat it will then disappear from view — perform shoulder checks before every lane change, use turn signals early, and avoid lingering in other vehicles' blind spots. This is the Blindzone and Glare Elimination (BGE) setting described in a 1995 Society of Automotive Engineers paper. Modern blind spot monitoring systems can supplement but should not replace these habits."
                     },
                     {
                         "question": "What is the statute of limitations for a blind spot accident claim?",
@@ -1617,10 +1619,12 @@
                     },
                     {
                         "question": "What compensation can I receive after a blind spot accident?",
-                        "answer": "You may recover medical expenses, lost wages, pain and suffering, property damage, and loss of enjoyment of life. In cases involving extreme recklessness, punitive damages may also be available. If the accident caused a fatality, the family may pursue a wrongful death claim."
+                        "answer": "You may recover medical expenses, lost wages, pain and suffering, property damage, and loss of enjoyment of life. When the at-fault driver's conduct was willful, wanton or showed conscious indifference to consequences — proven by clear and convincing evidence — punitive damages may also be available; in Georgia, negligence, even gross negligence, is not enough (O.C.G.A. § 51-12-5.1(b); Colonial Pipeline Co. v. Brown). Georgia generally caps punitive damages at $250,000 unless the driver intended harm or was impaired by alcohol or drugs; South Carolina caps them at the greater of three times compensatory damages or $500,000, indexed to $739,245 for 2026 (S.C. Code § 15-32-530), with no cap for intentional harm, a related felony conviction, or impairment. If the accident caused a fatality, the family may pursue a wrongful death claim."
                     }
                 ],
-                "_roden_key_takeaways": "Blind spot accidents cause thousands of injuries annually on Georgia and South Carolina roads, particularly affecting motorcyclists, bicyclists, and pedestrians. Proper mirror adjustment, shoulder checks, and defensive driving significantly reduce risk. Georgia requires safe lane changes under O.C.G.A. § 40-6-123, with a 2-year filing deadline (O.C.G.A. § 9-3-33). South Carolina imposes similar duties under S.C. Code § 56-5-2150, with a 3-year deadline (S.C. Code § 15-3-530). Both states apply modified comparative fault rules."
+                "_roden_key_takeaways": "Lane-change crashes number in the hundreds of thousands nationally each year (NHTSA), and blind spot crashes hit motorcyclists, bicyclists, and pedestrians hardest. Proper mirror adjustment, shoulder checks, and defensive driving significantly reduce risk. Georgia requires safe, signaled lane changes under O.C.G.A. §§ 40-6-48 and 40-6-123, with a 2-year filing deadline (O.C.G.A. § 9-3-33). South Carolina imposes similar duties under S.C. Code §§ 56-5-1900 and 56-5-2150, including a signal for at least the last 100 feet, with a 3-year deadline (S.C. Code § 15-3-530). Both states apply modified comparative fault rules.",
+                "_roden_last_reviewed": "2026-10-02",
+                "_roden_meta_description": "How blind spot crashes happen, how to set your mirrors, and how Georgia and South Carolina lane-change laws decide fault."
             }
         },
         "/blog/blunt-force-trauma-from-a-crash-what-you-need-to-know/": {
@@ -2595,22 +2599,24 @@
                     },
                     {
                         "question": "How long do I have to file a medical malpractice claim in South Carolina?",
-                        "answer": "The statute of limitations is three years from the date of injury or discovery (S.C. Code section 15-3-545). Filing the required Notice of Intent to File Suit tolls that deadline (S.C. Code section 15-79-125), but the notice must be filed with an expert's affidavit, so preparation has to start well before it. South Carolina also has a six-year statute of repose that generally bars claims more than six years after the alleged malpractice regardless of when the injury is discovered."
+                        "answer": "The statute of limitations is three years from the date of the treatment, or from when the injury was or reasonably should have been discovered (S.C. Code section 15-3-545) — two years if the hospital is MUSC or another public hospital (S.C. Code section 15-78-110). Filing the required Notice of Intent to File Suit tolls that deadline (S.C. Code section 15-79-125), but the notice must be filed with an expert's affidavit, so preparation has to start well before it. South Carolina also has a six-year statute of repose that generally bars claims more than six years after the alleged malpractice regardless of when the injury is discovered."
                     },
                     {
                         "question": "Is there a cap on damages in South Carolina medical malpractice cases?",
-                        "answer": "South Carolina does not cap economic damages in medical malpractice cases, but non-economic damages are capped by S.C. Code § 15-32-220 — a base of $350,000 against a single provider and $1.05 million where more than one is liable, adjusted annually for inflation, so for 2026 the limits are $596,001 and $1,788,002. Punitive damages are capped at the greater of three times compensatory damages or $739,245, the 2026 inflation-indexed figure (S.C. Code section 15-32-530), with exceptions for certain egregious conduct."
+                        "answer": "South Carolina does not cap economic damages in medical malpractice cases, but non-economic damages are capped by S.C. Code § 15-32-220 — a base of $350,000 against a single provider and $1.05 million where more than one is liable, adjusted annually for inflation, so for 2026 the limits are $596,001 and $1,788,002. The cap does not apply if the provider was grossly negligent, wilful, wanton or reckless, committed fraud or misrepresentation related to the claim, or altered or destroyed medical records to avoid liability (S.C. Code section 15-32-220(E)). Punitive damages are capped at the greater of three times compensatory damages or $739,245, the 2026 inflation-indexed figure (S.C. Code section 15-32-530), with exceptions for certain egregious conduct. Claims against MUSC or another public hospital fall under the Tort Claims Act instead, which caps damages at $300,000 per person and $600,000 per occurrence, or $1.2 million where a government-employed physician or dentist caused the loss, and bars punitive damages (S.C. Code section 15-78-120)."
                     },
                     {
                         "question": "Can I sue both the hospital and the doctor in Charleston?",
-                        "answer": "Yes. Hospitals are liable for their employees' negligence under respondeat superior. Even if a doctor is technically an independent contractor, the hospital may be liable under apparent agency if it holds the doctor out as its agent. Complex cases may involve the surgeon, anesthesiologist, nursing staff, the hospital, and the physician's medical group as separate defendants."
+                        "answer": "Yes, at a private hospital. Hospitals are liable for their employees' negligence under respondeat superior. Even if a doctor is technically an independent contractor, the hospital may be liable under apparent agency if it holds the doctor out as its agent; for emergency-room doctors, South Carolina treats the hospital's duty as nondelegable (Simmons v. Tuomey Regional Medical Center, 2000). Complex cases may involve the surgeon, anesthesiologist, nursing staff, the hospital, and the physician's medical group as separate defendants. If the hospital is MUSC or another public hospital, the claim runs under the South Carolina Tort Claims Act: you sue the hospital rather than its employed doctors, within two years, damages are capped, and punitive damages are not available (S.C. Code sections 15-78-70, 15-78-110, 15-78-120)."
                     },
                     {
                         "question": "What is the Notice of Intent requirement in South Carolina medical malpractice cases?",
-                        "answer": "Before filing a medical malpractice lawsuit in South Carolina, you must file a Notice of Intent to File Suit together with an expert affidavit, serve it on each defendant, and mediate, generally within 90 to 120 days of service, before filing the complaint (S.C. Code section 15-79-125). The affidavit must come from a qualified medical professional who has reviewed the records and identified at least one negligent act and the resulting damages. Failure to comply can result in dismissal."
+                        "answer": "Before filing a medical malpractice lawsuit in South Carolina, you must file a Notice of Intent to File Suit together with an expert affidavit, serve it on each defendant, and mediate, generally within 90 to 120 days of service, before filing the complaint (S.C. Code section 15-79-125). The affidavit must come from a qualified expert and must specify at least one negligent act or omission and the factual basis for it (S.C. Code section 15-36-100). Failure to comply can result in dismissal."
                     }
                 ],
-                "_roden_key_takeaways": "South Carolina medical malpractice claims require a pre-suit Notice of Intent to File and an expert witness affidavit establishing the standard of care was breached. The statute of limitations is 3 years with a 6-year statute of repose. Hospitals may be liable for employee physician negligence but may argue independent contractor status for affiliated doctors. Georgia allows 2 years to file (O.C.G.A. § 9-3-71) and requires an expert affidavit. South Carolina caps non-economic damages at $596,001 per provider or institution and $1,788,002 in total for 2026 (S.C. Code § 15-32-220)."
+                "_roden_key_takeaways": "South Carolina medical malpractice claims require a pre-suit Notice of Intent to File Suit, filed with an expert affidavit identifying at least one negligent act or omission, followed by mandatory mediation. The statute of limitations is 3 years with a 6-year statute of repose (2 years under the Tort Claims Act if the hospital is MUSC or another public hospital). MUSC is a state agency, so you generally sue MUSC rather than its employed doctors, damages are capped at $300,000 per person ($1.2 million where an employed physician or dentist caused the loss), and punitive damages are not available (S.C. Code § 15-78-120). Hospitals may be liable for employee physician negligence and may argue independent contractor status for affiliated doctors, but South Carolina holds hospitals liable for emergency-room physicians who appear to be hospital staff (Simmons v. Tuomey Regional Medical Center, 2000). Georgia allows 2 years to file (O.C.G.A. § 9-3-71) and requires an expert affidavit. South Carolina caps non-economic damages at $596,001 per provider or institution and $1,788,002 in total for 2026 (S.C. Code § 15-32-220).",
+                "_roden_last_reviewed": "2026-10-02",
+                "_roden_meta_description": "Suing a Charleston hospital for malpractice: SC's Notice of Intent, expert affidavit, 2026 damage caps, and Tort Claims Act rules for MUSC."
             }
         },
         "/blog/charleston-parking-lot-car-accident-liability/": {
