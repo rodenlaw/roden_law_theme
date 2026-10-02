@@ -1,0 +1,447 @@
+{
+ "postId": 4644,
+ "slug": "motorcycle-accidents-dorchester-road-data",
+ "liveUrl": "https://rodenlaw.com/blog/motorcycle-accidents-dorchester-road-data/",
+ "jurisdiction": "SC",
+ "researchedAt": "2026-10-02",
+ "verifiedClaims": [
+  {
+   "surface": "body",
+   "claim": "In March 2026, a motorcyclist was killed on Dorchester Road at the intersection with Forest Hills Drive — struck by a heavy-duty pickup truck.",
+   "verdict": "update",
+   "currentValue": "On Monday, March 2, 2026, just after 8 a.m., a motorcyclist was killed in a collision with a heavy-duty pickup truck at Dorchester Road (westbound) and Forest Hills Drive in North Charleston; pronounced dead at the scene; the truck driver remained; NCPD said no charges were anticipated.",
+   "sourceName": "WCIV ABC News 4, \"One dead after motorcycle versus truck crash on Dorchester Road Monday morning\" (2026-03-02), reporting the North Charleston Police Department release",
+   "sourceUrl": "https://abcnews4.com/news/local/police-investigate-serious-crash-with-multiple-lanes-closed-on-dorchester-road-north-charleston-police-department-lowell-drive",
+   "retrievedAt": "2026-10-02",
+   "note": "Date, place and vehicles verified. NCPD described it as \"a heavy duty pickup truck versus a motorcycle\" and did not say which vehicle struck which or describe a left turn. Change \"struck by a heavy-duty pickup truck\" to \"in a collision with a heavy-duty pickup truck\". NCPD primary release (CrimeWatch, 2026-03-02): https://crimewatch.net/us/sc/charleston/north-charleston-pd/311885/post/ncpd-traffic-unit-investigating-fatal-dorchester-rd-collision — timed out from this host, so WCIV is the cited URL. Do not imply the pickup driver was at fault."
+  },
+  {
+   "surface": "body",
+   "claim": "It wasn't the first fatal motorcycle crash on this corridor. It won't be the last.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "SCDOT, SC 642 Dorchester Road Road Safety Audit, public-meeting Board 2 \"Crash History\" (Jan 2018–Dec 2022)",
+   "sourceUrl": "https://info2.scdot.org/projects/ViewerFiles/Board%202%20-%20Crash%20History.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "No source names an earlier fatal motorcycle crash on Dorchester Road (searches surfaced Sept. 2026 Summerville and May 2026 Rivers Ave motorcycle deaths — neither on Dorchester Road). SCDOT's audit breaks its 17 fatal crashes into 9 pedestrian, 7 vehicular, 1 bicyclist — no motorcycle split. Replace both sentences with the sourced corridor figure: \"SCDOT's road safety audit counted 17 fatal crashes and 924 injury crashes on Dorchester Road between the Dorchester County line and Kent Avenue from 2018 through 2022.\""
+  },
+  {
+   "surface": "body",
+   "claim": "Dorchester Road's combination of high speeds, heavy truck traffic, and unprotected left-turn intersections creates a recipe for deadly motorcycle collisions.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "SCDOT, SC 642 Dorchester Road Road Safety Audit, public-meeting Board 2 \"Crash History\" (Jan 2018–Dec 2022)",
+   "sourceUrl": "https://info2.scdot.org/projects/ViewerFiles/Board%202%20-%20Crash%20History.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Rhetorical framing. Corridor severity is supported (SCDOT RSA: 3,173 vehicular crashes, 17 fatal, 2018–2022 on the Charleston County stretch; SCDPS 2024: SC-642 was Dorchester County's highest-crash roadway, 519 collisions, 6 killed). No source inventories which intersections have permissive left turns; acceptable as general framing, but do not name specific intersections (see below)."
+  },
+  {
+   "surface": "body",
+   "claim": "Nationally, left-turning vehicles cause 42% of fatal motorcycle crashes (NHTSA data).",
+   "verdict": "update",
+   "currentValue": "NHTSA 2024 data: of 3,396 fatal two-vehicle crashes involving a motorcycle and another vehicle, in 45 percent (1,532) the other vehicle was turning left while the motorcycle was going straight, passing, or overtaking. (2023 data: 46 percent, 1,588 of 3,419.)",
+   "sourceName": "NHTSA, Traffic Safety Facts: Motorcycles — 2024 Data (DOT HS 813 824, July 2026)",
+   "sourceUrl": "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813824",
+   "retrievedAt": "2026-10-02",
+   "note": "Two errors: (1) base — the figure is a share of two-vehicle fatal crashes, not of all fatal motorcycle crashes (35% of motorcyclist deaths are single-vehicle); (2) vintage — 42% is an older edition. NHTSA reports a crash configuration, not causation. Rewrite: \"Nationally, in 45% of fatal crashes between a motorcycle and one other vehicle, the other vehicle was turning left while the motorcycle went straight or passed (NHTSA, 2024 data).\""
+  },
+  {
+   "surface": "body",
+   "claim": "The driver scans oncoming traffic but fails to register an approaching motorcycle (smaller visual profile = perceived as farther away)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Horswill MS, Helman S, Ardiles P, Wann JP. Motorcycle accident risk could be inflated by a time to arrival illusion. Optom Vis Sci 2005;82(8):740-746 (PubMed 16127340)",
+   "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/16127340/",
+   "retrievedAt": "2026-10-02",
+   "note": "Supported by the size-arrival effect literature: drivers judge motorcycles to arrive later than cars at the same speed. Horswill et al. 2005 found arrival times of motorcycles \"estimated to be significantly later than larger vehicles\". Optional precision: \"perceived as arriving later\"."
+  },
+  {
+   "surface": "body",
+   "claim": "At 50 mph, the rider has less than 2 seconds to react",
+   "verdict": "update",
+   "currentValue": "50 mph = 73.3 feet per second (arithmetic: 50 × 5,280 ÷ 3,600).",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "No source; the time available depends entirely on how far ahead the vehicle turns, so a fixed \"less than 2 seconds\" is unsupported. Replace with the arithmetic: \"At 50 mph, a motorcycle covers about 73 feet every second\"."
+  },
+  {
+   "surface": "body",
+   "claim": "The Forest Hills Drive intersection, Bacons Bridge Road, and the Ashley Phosphate junction all follow this deadly pattern.",
+   "verdict": "drop",
+   "currentValue": "In Dorchester County in 2024, three of the county's five highest-crash intersections were on Dorchester Road (SC-642): Old Trolley Road (S-199, 53 collisions, 1 fatal), Ladson Road (S-230, 49) and Bacons Bridge Road (SC-165, 41).",
+   "sourceName": "SCDPS Office of Highway Safety and Justice Programs, South Carolina Traffic Collision Fact Book 2024 Edition (Part II p. 40–41; Part VI Charleston County p. 105, Dorchester County p. 121)",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "No source documents a left-turn crash pattern (or unprotected left-turn phasing) at any of the three. NCPD did not describe the March 2026 Forest Hills crash as a left turn. Ashley Phosphate Road is under an SCDOT safety project (raised medians, Rivers Ave to Dorchester Rd, groundbreaking July 2025). Replace with the SCDPS sourced sentence: \"In Dorchester County, the Dorchester Road intersections with Old Trolley Road, Ladson Road and Bacons Bridge Road were three of the county's five highest-crash intersections in 2024 (SCDPS).\" S-199 = Old Trolley Rd and S-230 = Ladson Rd per Dorchester County's Dorchester Road project page; SC-165 = Bacons Bridge Rd per SC State Parks directions."
+  },
+  {
+   "surface": "body",
+   "claim": "Cement mixers, dump trucks, and construction vehicles share Dorchester Road with motorcycles.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Qualitative; no SCDOT vehicle-classification count was found for SC 642, so no truck share can be stated. Acceptable as description; do not add a number."
+  },
+  {
+   "surface": "body",
+   "claim": "Massive blind spots: A motorcycle is invisible in a truck's blind zone",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "FMCSA, Our Roads, Our Safety — Talking Points (\"Huge Blind Spots\")",
+   "sourceUrl": "https://www.fmcsa.dot.gov/ourroads/talking-points",
+   "retrievedAt": "2026-10-02",
+   "note": "FMCSA: commercial motor vehicles \"have large blind spots around all four sides\"; \"Until you see the driver's face in his or her mirror, you're in a blind spot.\""
+  },
+  {
+   "surface": "body",
+   "claim": "Traffic on Dorchester Road regularly exceeds the 45-55 mph posted limits.",
+   "verdict": "drop",
+   "currentValue": "NHTSA 2024: 37 percent of motorcycle riders in fatal crashes were speeding (22% of passenger-car drivers).",
+   "sourceName": "NHTSA, Traffic Safety Facts: Motorcycles — 2024 Data (DOT HS 813 824, July 2026)",
+   "sourceUrl": "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813824",
+   "retrievedAt": "2026-10-02",
+   "note": "No SCDOT or police source for posted limits along the full corridor or for observed speeds exceeding them. Delete the sentence; if a speed fact is wanted, use NHTSA: \"Nationally, 37% of motorcycle riders in fatal crashes in 2024 were speeding (NHTSA).\" Keep \"Higher speeds make crashes far deadlier for riders.\""
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina law requires motorcycle operators and passengers under age 21 to wear an approved helmet (S.C. Code § 56-5-3660). State law does not impose that helmet requirement on riders age 21 or older.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "S.C. Code §§ 56-5-3660, 56-5-3670, 56-5-3680 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate (statute: \"any person under the age of twenty-one to operate or ride upon a two-wheeled motorized vehicle\" must wear a DPS-approved helmet with neck/chin strap, reflectorized both sides). But the section titled \"The Helmet Question\" never answers it. Add one sentence: \"For riders 21 and older, the South Carolina Supreme Court has held that riding without a helmet is not contributory negligence or assumption of risk (Mayes v. Paxton, 313 S.C. 109 (1993)).\" Optional: § 56-5-3670 also requires goggles or a face shield for operators (not passengers) under 21, unless the bike has a compliant windscreen (§ 56-5-3680)."
+  },
+  {
+   "surface": "body",
+   "claim": "lets the personal representative of the estate recover, for the family (S.C. Code §§ 15-51-20, 15-51-40)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code §§ 15-51-10, 15-51-20, 15-51-40 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c051.php",
+   "retrievedAt": "2026-10-02",
+   "note": "§ 15-51-20: action \"shall be brought by or in the name of the executor or administrator\" for the benefit of spouse and children, else parents, else heirs. § 15-51-40: jury may give damages \"proportioned to the injury resulting from the death\"."
+  },
+  {
+   "surface": "body",
+   "claim": "Funeral and burial expenses",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code §§ 15-5-90, 15-5-100 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "§ 15-5-100: damages under § 15-5-90 or § 15-51-10 \"may include reasonable funeral expenses, but such funeral expenses shall be sought in only one action.\""
+  },
+  {
+   "surface": "body",
+   "claim": "Lost future income the deceased would have earned",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "Smith v. Wells, 258 S.C. 316, 188 S.E.2d 470 (S.C. 1972) (reused from sibling pack run-1651)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1972/19410-1.html",
+   "retrievedAt": "2026-10-02",
+   "note": "In SC wrongful death the beneficiaries recover their own pecuniary loss (the support and services the deceased would have provided them), not the deceased's gross future earnings. Low priority, short fix: \"Lost financial support the deceased would have provided\". (Justia URL not re-fetched — bot challenge; reused from the run-1651 pack.)"
+  },
+  {
+   "surface": "body",
+   "claim": "Loss of companionship, guidance, and consortium",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Smith v. Wells, 258 S.C. 316 (S.C. 1972) (reused from sibling pack run-1651)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1972/19410-1.html",
+   "retrievedAt": "2026-10-02",
+   "note": "SC wrongful-death damages include \"mental shock and suffering, wounded feelings, grief, sorrow, loss of companionship, and deprivation of the use and comfort of the intestate's society\"."
+  },
+  {
+   "surface": "body",
+   "claim": "Pain and suffering the victim experienced before death, through a separate survival action brought by the estate (S.C. Code § 15-5-90)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code §§ 15-5-90, 15-5-100 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct cite: § 15-5-90 \"Survival of right of action\" — causes of action for \"any and all injuries to the person ... shall survive\" to the personal representative."
+  },
+  {
+   "surface": "body",
+   "claim": "Punitive damages if the at-fault driver acted recklessly",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code §§ 15-51-10, 15-51-20, 15-51-40 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c051.php",
+   "retrievedAt": "2026-10-02",
+   "note": "§ 15-51-40: \"exemplary damages when the wrongful act, neglect, or default was the result of recklessness, wilfulness, or malice.\""
+  },
+  {
+   "surface": "body",
+   "claim": "Protected left-turn signals at Forest Hills Drive, Bacons Bridge Rd, and other high-crash intersections",
+   "verdict": "update",
+   "currentValue": "SCDOT's SC 642 Dorchester Road Roadway Safety Project (Michaux Pkwy to Kent Ave/I-26, Charleston County) is listed In Construction; Charleston County plans widening from the Dorchester County line to Michaux Pkwy (2016 sales tax); Dorchester County is designing widening from the county line to Old Trolley Road.",
+   "sourceName": "SCDOT Projects Under Development portal — \"SC 642 (Dorchester Road) Roadway Safety Project\" (In Construction); SCDOT press release 2024-10-09",
+   "sourceUrl": "https://projectportal.scdot.gov/",
+   "retrievedAt": "2026-10-02",
+   "note": "Opinion is fine, but the premise that Forest Hills Drive is a documented high-crash intersection is unsourced (Bacons Bridge is supported by SCDPS 2024). Economical fix: \"Protected left-turn signals at Bacons Bridge Road and other high-crash intersections\". Optionally add one factual line: SCDOT is building a safety project on Dorchester Road between Michaux Parkway and I-26, and Charleston and Dorchester counties are planning widening (Board 1: https://info2.scdot.org/projects/ViewerFiles/Board%201%20-%20Project%20Background.pdf; Dorchester County: https://dorchestertransportation.com/all-projects-overview/dorchester-road)."
+  },
+  {
+   "surface": "body",
+   "claim": "Motorcycle awareness signage in high-conflict zones",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Policy opinion; no factual premise."
+  },
+  {
+   "surface": "body",
+   "claim": "Speed enforcement on the corridor",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Policy opinion."
+  },
+  {
+   "surface": "body",
+   "claim": "Truck route restrictions during peak motorcycle riding hours",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Policy opinion. Note only: the Summerville end of SC 642 carries the designated US 17 Alt. Truck route, so restrictions there would conflict with a signed truck route; no edit needed."
+  },
+  {
+   "surface": "body",
+   "claim": "Contact our North Charleston office at (843) 612-6561.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Firm office line per client.json; keep (instruction from caller)."
+  },
+  {
+   "surface": "excerpt",
+   "claim": "What crash data shows about motorcycle collisions on Dorchester Road, the manoeuvres behind them, and who is usually at fault.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "The post never addresses who is usually at fault, and it currently contains no Dorchester Road crash data (fixed by the RSA/SCDPS edits). Excerpt publishes as Article description. Also US spelling. Suggested: \"What SCDOT, SCDPS and NHTSA crash data show about motorcycle collisions on Dorchester Road, the left-turn crashes behind many of them, and what families can recover.\""
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Dorchester Road in North Charleston is a hazardous corridor for motorcyclists.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "SCDOT, SC 642 Dorchester Road Road Safety Audit, public-meeting Board 2 \"Crash History\" (Jan 2018–Dec 2022)",
+   "sourceUrl": "https://info2.scdot.org/projects/ViewerFiles/Board%202%20-%20Crash%20History.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Hazard is supported by SCDOT (17 fatal crashes 2018–2022, Charleston County segment) and SCDPS (SC-642 Dorchester County's top crash roadway in 2024). But the road runs from North Charleston into Dorchester County, and the post itself names Bacons Bridge Road (Summerville area). Suggested: \"Dorchester Road (SC 642), from North Charleston into Dorchester County, is a hazardous corridor for motorcyclists.\""
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Left-turn collisions are behind roughly 42% of fatal two-vehicle motorcycle crashes nationally (NHTSA).",
+   "verdict": "update",
+   "currentValue": "45% (1,532 of 3,396), 2024 data",
+   "sourceName": "NHTSA, Traffic Safety Facts: Motorcycles — 2024 Data (DOT HS 813 824, July 2026)",
+   "sourceUrl": "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813824",
+   "retrievedAt": "2026-10-02",
+   "note": "Base is correct here (two-vehicle); number is stale. Rewrite: \"In 45% of fatal two-vehicle motorcycle crashes nationally, the other vehicle was turning left (NHTSA, 2024 data).\""
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Heavy truck traffic, limited sight lines, and speeds above 45 mph drastically reduce survival odds.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "No source for corridor speeds or truck volume (see body speed claim). Economical fix: \"Heavy vehicles, limited sight lines and high speeds reduce survival odds.\" (drop \"above 45 mph\")."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "South Carolina does not require helmets for riders 21 and older (S.C. Code § 56-5-3660).",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code §§ 56-5-3660, 56-5-3670, 56-5-3680 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Riders can recover damages if less than 51% at fault.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (S.C. 1991)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1265650/nelson-v-concrete-supply-company/",
+   "retrievedAt": "2026-10-02",
+   "note": "Modified comparative fault; authority is Nelson v. Concrete Supply Co., not § 15-38-15."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "The 3-year statute of limitations (S.C. Code § 15-3-530) governs most injury claims.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 15-3-530 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-02",
+   "note": "§ 15-3-530(5) injury; (6) wrongful death runs from the date of death. A claim against SCDOT or a county (road-defect) is under the Tort Claims Act, § 15-78-110 (two years) — not discussed by the post, so no edit."
+  },
+  {
+   "surface": "faqs[0].answer",
+   "claim": "It combines high speeds, heavy truck traffic and unprotected left-turn intersections. Cement mixers, dump trucks and construction vehicles share the corridor, and the Forest Hills Drive, Bacons Bridge Road and Ashley Phosphate junctions all follow the same pattern.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "SCDPS Office of Highway Safety and Justice Programs, South Carolina Traffic Collision Fact Book 2024 Edition (Part II p. 40–41; Part VI Charleston County p. 105, Dorchester County p. 121)",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. Drop the unsourced junction clause and add sourced data: \"It combines high speeds, heavy vehicles and busy left-turn intersections. SCDOT counted 17 fatal crashes on its Charleston County stretch from 2018 to 2022, and in 2024 it was Dorchester County's highest-crash road (SCDPS).\""
+  },
+  {
+   "surface": "faqs[1].answer",
+   "claim": "Nationally, left-turning vehicles cause 42% of fatal motorcycle crashes according to NHTSA data.",
+   "verdict": "update",
+   "currentValue": "45% of fatal two-vehicle motorcycle crashes, 2024 data",
+   "sourceName": "NHTSA, Traffic Safety Facts: Motorcycles — 2024 Data (DOT HS 813 824, July 2026)",
+   "sourceUrl": "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813824",
+   "retrievedAt": "2026-10-02",
+   "note": "Same base and vintage error as the body. Rewrite: \"Nationally, in 45% of fatal crashes between a motorcycle and one other vehicle, the other vehicle was turning left (NHTSA, 2024 data).\" Keep the size-arrival explanation that follows (Horswill 2005)."
+  },
+  {
+   "surface": "faqs[2].answer",
+   "claim": "At 50 mph a rider facing a vehicle turning across their path has less than 2 seconds to react.",
+   "verdict": "update",
+   "currentValue": "50 mph ≈ 73 feet per second",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Unsupported fixed figure. Rewrite: \"At 50 mph a motorcycle covers about 73 feet every second, so a vehicle that turns across its path a few car lengths ahead leaves almost no room to stop.\" Keep \"That is why these collisions are so often fatal even when the rider does everything right.\""
+  },
+  {
+   "surface": "faqs[3].answer",
+   "claim": "Talk with an attorney about how the facts of your crash apply to your claim.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "Mayes v. Paxton, 313 S.C. 109, 437 S.E.2d 66 (S.C. 1993) (CourtListener)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1297314/mayes-v-paxton/",
+   "retrievedAt": "2026-10-02",
+   "note": "The FAQ asks whether helmet non-use affects the claim and never answers. Mayes (an adult rider hit by a driver making an illegal left turn) struck both defenses: \"a motorcyclist's decision to ride without a helmet does not imply his consent that motorists are relieved of the duty to use reasonable care toward him\", and his failure to wear a helmet \"does not constitute contributory negligence\" because the Legislature exempted riders 21+. Replace the last sentence: \"For riders 21 and older, the South Carolina Supreme Court has held that riding without a helmet is not contributory negligence or assumption of risk (Mayes v. Paxton, 313 S.C. 109 (1993)). A rider under 21 had a statutory duty, so talk with an attorney about how that affects the claim.\" Keep the first two sentences (verified)."
+  },
+  {
+   "surface": "faqs[4].answer",
+   "claim": "Signal timing data, vehicle event data and independent witnesses all become harder to obtain quickly, and a lawyer can preserve them while the family deals with everything else.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Practical guidance; no factual claim needing a source."
+  }
+ ],
+ "recommendedEdits": [
+  "Intro: change \"— struck by a heavy-duty pickup truck\" to \"— in a collision with a heavy-duty pickup truck\". Replace \"It wasn't the first fatal motorcycle crash on this corridor. It won't be the last.\" with \"SCDOT's road safety audit counted 17 fatal crashes and 924 injury crashes on Dorchester Road between the Dorchester County line and Kent Avenue from 2018 through 2022.\"",
+  "Left-turn paragraph (body) and FAQ 2: replace \"left-turning vehicles cause 42% of fatal motorcycle crashes (NHTSA data)\" with \"in 45% of fatal crashes between a motorcycle and one other vehicle, the other vehicle was turning left (NHTSA, 2024 data)\". Key Takeaways: change \"roughly 42% of fatal two-vehicle motorcycle crashes\" to \"45% of fatal two-vehicle motorcycle crashes ... (NHTSA, 2024 data)\".",
+  "Reaction-time bullet and FAQ 3: replace \"the rider has less than 2 seconds to react\" with \"a motorcycle covers about 73 feet every second\".",
+  "Replace \"The Forest Hills Drive intersection, Bacons Bridge Road, and the Ashley Phosphate junction all follow this deadly pattern.\" with \"In Dorchester County, the Dorchester Road intersections with Old Trolley Road, Ladson Road and Bacons Bridge Road were three of the county's five highest-crash intersections in 2024 (SCDPS).\" FAQ 1: drop the junction clause and use the SCDOT/SCDPS sentence given in its note.",
+  "Speed: delete \"Traffic on Dorchester Road regularly exceeds the 45-55 mph posted limits.\" (optionally substitute \"Nationally, 37% of motorcycle riders in fatal crashes in 2024 were speeding (NHTSA).\") Key Takeaways: change \"speeds above 45 mph\" to \"high speeds\" and \"Heavy truck traffic\" to \"Heavy vehicles\".",
+  "Helmet section (body) and FAQ 4: add / replace the last FAQ sentence with \"For riders 21 and older, the South Carolina Supreme Court has held that riding without a helmet is not contributory negligence or assumption of risk (Mayes v. Paxton, 313 S.C. 109 (1993)).\"",
+  "Wrongful-death list: \"Lost future income the deceased would have earned\" -> \"Lost financial support the deceased would have provided\" (low priority).",
+  "What Needs to Change: \"Protected left-turn signals at Forest Hills Drive, Bacons Bridge Rd, and other high-crash intersections\" -> \"Protected left-turn signals at Bacons Bridge Road and other high-crash intersections\".",
+  "Key Takeaways first sentence: \"Dorchester Road in North Charleston\" -> \"Dorchester Road (SC 642), from North Charleston into Dorchester County,\".",
+  "Excerpt: replace with \"What SCDOT, SCDPS and NHTSA crash data show about motorcycle collisions on Dorchester Road, the left-turn crashes behind many of them, and what families can recover.\""
+ ],
+ "statuteCitations": [
+  {
+   "section": "S.C. Code § 56-5-3660",
+   "name": "Helmets required for operators and passengers under age 21",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-3670",
+   "name": "Goggles or face shield required for operators under age 21 (windscreen exception § 56-5-3680)",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 15-51-20",
+   "name": "Wrongful death — beneficiaries; action brought by executor or administrator",
+   "url": "https://www.scstatehouse.gov/code/t15c051.php"
+  },
+  {
+   "section": "S.C. Code § 15-51-40",
+   "name": "Wrongful death damages, including exemplary damages for recklessness, wilfulness or malice",
+   "url": "https://www.scstatehouse.gov/code/t15c051.php"
+  },
+  {
+   "section": "S.C. Code § 15-5-90",
+   "name": "Survival of right of action",
+   "url": "https://www.scstatehouse.gov/code/t15c005.php"
+  },
+  {
+   "section": "S.C. Code § 15-5-100",
+   "name": "Funeral expenses recoverable in survival or wrongful death action (one action only)",
+   "url": "https://www.scstatehouse.gov/code/t15c005.php"
+  },
+  {
+   "section": "S.C. Code § 15-3-530",
+   "name": "Three-year limitation: (5) personal injury; (6) wrongful death from date of death",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "section": "Mayes v. Paxton, 313 S.C. 109 (1993)",
+   "name": "Adult rider's helmet non-use is not contributory negligence or assumption of risk",
+   "url": "https://www.courtlistener.com/opinion/1297314/mayes-v-paxton/"
+  },
+  {
+   "section": "Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)",
+   "name": "Modified comparative fault — recover if less than 51% at fault",
+   "url": "https://www.courtlistener.com/opinion/1265650/nelson-v-concrete-supply-company/"
+  }
+ ],
+ "authoritativeLinks": [
+  {
+   "name": "NHTSA — Traffic Safety Facts: Motorcycles, 2024 Data (DOT HS 813 824, July 2026)",
+   "url": "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813824"
+  },
+  {
+   "name": "NHTSA — Traffic Safety Facts: Motorcycles, 2023 Data (DOT HS 813 732)",
+   "url": "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813732.pdf"
+  },
+  {
+   "name": "SCDPS — South Carolina Traffic Collision Fact Book 2024 Edition (latest edition)",
+   "url": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf"
+  },
+  {
+   "name": "SCDOT — SC 642 Dorchester Road Road Safety Audit, Crash History board (2018–2022)",
+   "url": "https://info2.scdot.org/projects/ViewerFiles/Board%202%20-%20Crash%20History.pdf"
+  },
+  {
+   "name": "SCDOT — SC 642 Dorchester Road, Project Background board (RSA + Charleston County widening)",
+   "url": "https://info2.scdot.org/projects/ViewerFiles/Board%201%20-%20Project%20Background.pdf"
+  },
+  {
+   "name": "SCDOT Projects Under Development — SC 642 Dorchester Road Roadway Safety Project",
+   "url": "https://projectportal.scdot.gov/"
+  },
+  {
+   "name": "Dorchester County — Dorchester Road widening project",
+   "url": "https://dorchestertransportation.com/all-projects-overview/dorchester-road"
+  },
+  {
+   "name": "WCIV — March 2, 2026 Dorchester Road / Forest Hills Drive fatal motorcycle crash",
+   "url": "https://abcnews4.com/news/local/police-investigate-serious-crash-with-multiple-lanes-closed-on-dorchester-road-north-charleston-police-department-lowell-drive"
+  },
+  {
+   "name": "FMCSA — Our Roads, Our Safety talking points (blind spots)",
+   "url": "https://www.fmcsa.dot.gov/ourroads/talking-points"
+  }
+ ],
+ "quoteNote": "Claims are quoted from the rendered text with tags stripped; Key Takeaways quotes span <strong> tags and FAQ answers are quoted from meta.json (they also publish as FAQPage structured data). Latest data years: NHTSA Motorcycles 2024 Data (published July 2026); SCDPS Traffic Collision Fact Book 2024 Edition. Mayes v. Paxton was read in full on CourtListener (the opinion's pin cite is § \"56-5-3669\", a typo for 56-5-3660). CourtListener, FMCSA and crimewatch.net bot-block or time out on curl; CourtListener and FMCSA were confirmed in a browser. The two Smith v. Wells (Justia) links are reused from the run-1651 pack, not re-fetched."
+}

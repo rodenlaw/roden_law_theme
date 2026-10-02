@@ -1,0 +1,80 @@
+[
+ {
+  "id": "1657",
+  "surface": "content",
+  "before": "<p>After a <a href=\"/practice-areas/car-accident-lawyers/\">car accident</a> in <strong>Georgia</strong> or <strong>South Carolina</strong>, you will likely receive a phone call from an insurance adjuster — sometimes within hours of the collision. While the adjuster may sound friendly and sympathetic, their goal is to protect the insurance company's bottom line, not to secure fair compensation for you. Understanding how to handle these conversations is essential to protecting your right to full and fair recovery. For a broad overview of insurance law principles, see the <a href=\"https://www.law.cornell.edu/wex/insurance\" target=\"_blank\" rel=\"noopener\">Cornell Law Institute's insurance law overview</a>.</p>",
+  "after": "<p>After a <a href=\"/practice-areas/car-accident-lawyers/\">car accident</a> in <strong>Georgia</strong> or <strong>South Carolina</strong>, you will likely receive a phone call from an insurance adjuster — sometimes within hours of the collision. While the adjuster may sound friendly and sympathetic, their goal is to protect the insurance company's bottom line, not to secure fair compensation for you. Understanding how to handle these conversations is essential to protecting your right to full and fair recovery. For a broad overview of insurance law principles, see the <a href=\"https://www.law.cornell.edu/wex/insurance\" target=\"_blank\" rel=\"noopener\">insurance law overview from the Legal Information Institute at Cornell Law School</a>.</p>"
+ },
+ {
+  "id": "1657",
+  "surface": "content",
+  "before": "<p><strong>\"How are you feeling today?\"</strong> — If you answer \"I'm fine\" or \"I'm doing okay,\" the adjuster will note this as evidence that your injuries are not serious. Many accident injuries — including <a href=\"/practice-areas/brain-injury-lawyers/\">traumatic brain injuries</a>, soft tissue damage, and <a href=\"/practice-areas/spinal-cord-injury-lawyers/\">spinal cord injuries</a> — do not fully manifest for days or weeks after the collision.</p>",
+  "after": "<p><strong>\"How are you feeling today?\"</strong> — If you answer \"I'm fine\" or \"I'm doing okay,\" the adjuster will note this as evidence that your injuries are not serious. Many accident injuries — including <a href=\"/practice-areas/brain-injury-lawyers/\">traumatic brain injuries</a> and soft tissue damage — may not show their full extent for hours or days, and brain-injury symptoms can take weeks. A suspected <a href=\"/practice-areas/spinal-cord-injury-lawyers/\">spinal cord injury</a> is a medical emergency that needs care right away.</p>"
+ },
+ {
+  "id": "1657",
+  "surface": "content",
+  "before": "<p><strong>Your own insurer may require cooperation</strong>, but this typically does not extend to a formal recorded statement in the immediate aftermath of an accident. Review your policy language or ask your attorney to clarify your obligations.</p>",
+  "after": "<p><strong>Your own insurer is different.</strong> Many auto policies, including the standard ISO personal auto form (PP 00 01), require you to cooperate with your own carrier, including giving a recorded statement or an examination under oath when it reasonably asks. Refusing can put your own coverage at risk, so do not simply say no. Review your policy language and let your attorney handle the request.</p>"
+ },
+ {
+  "id": "1657",
+  "surface": "content",
+  "before": "<p><strong>You cannot \"un-say\" something.</strong> Once a statement is recorded, it is extremely difficult to explain away damaging language. This is why most <a href=\"/practice-areas/car-accident-lawyers/\">car accident lawyers</a> advise clients to refuse recorded statements until they have legal representation.</p>",
+  "after": "<p><strong>You cannot \"un-say\" something.</strong> Once a statement is recorded, it is extremely difficult to explain away damaging language. This is why <a href=\"/practice-areas/car-accident-lawyers/\">car accident lawyers</a> commonly advise clients not to give the other driver's insurer a recorded statement until they have legal representation.</p>"
+ },
+ {
+  "id": "1657",
+  "surface": "content",
+  "before": "<p><strong>Minimum Insurance Requirements:</strong> Georgia requires minimum liability coverage of $25,000 per person / $50,000 per accident for bodily injury and $25,000 for property damage (<strong>O.C.G.A. § 33-7-11</strong>). Uninsured and underinsured motorist coverage is optional but highly recommended.</p>",
+  "after": "<p><strong>Minimum Insurance Requirements:</strong> Georgia requires minimum liability coverage of $25,000 per person / $50,000 per accident for bodily injury and $25,000 for property damage (<strong><a href=\"https://law.justia.com/codes/georgia/title-33/chapter-7/section-33-7-11/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. § 33-7-11</a></strong>). Georgia policies include uninsured/underinsured motorist coverage unless you reject it in writing (<strong>O.C.G.A. § 33-7-11(a)(3)</strong>), and keeping it is highly recommended.</p>"
+ },
+ {
+  "id": "1657",
+  "surface": "content",
+  "before": "<p><strong>Minimum Insurance Requirements:</strong> South Carolina requires minimum liability coverage of $25,000 per person / $50,000 per accident for bodily injury and $25,000 for property damage (<strong>S.C. Code § 38-77-140</strong>). South Carolina also requires uninsured motorist coverage.</p>",
+  "after": "<p><strong>Minimum Insurance Requirements:</strong> South Carolina requires minimum liability coverage of $25,000 per person / $50,000 per accident for bodily injury and $25,000 for property damage (<strong><a href=\"https://www.scstatehouse.gov/code/t38c077.php\" target=\"_blank\" rel=\"noopener\">S.C. Code § 38-77-140</a></strong>). South Carolina also requires uninsured motorist coverage (<strong>S.C. Code § 38-77-150</strong>). Insurers must also offer underinsured motorist coverage, which is optional (<strong>S.C. Code § 38-77-160</strong>).</p>"
+ },
+ {
+  "id": "1657",
+  "surface": "content",
+  "before": "<table class=\"comparison-table\">\n<thead>\n<tr><th>Factor</th><th>Georgia</th><th>South Carolina</th></tr>\n</thead>\n<tbody>\n<tr><td>Statute of Limitations</td><td>2 years (O.C.G.A. § 9-3-33)</td><td>3 years (S.C. Code § 15-3-530)</td></tr>\n<tr><td>Comparative Fault</td><td>Less than 50%</td><td>51% or less</td></tr>\n<tr><td>Min. Bodily Injury Coverage</td><td>$25K / $50K</td><td>$25K / $50K</td></tr>\n<tr><td>UM/UIM Coverage Required</td><td>No (optional)</td><td>Yes (required)</td></tr>\n<tr><td>Insurance System</td><td>At-fault (tort)</td><td>At-fault (tort)</td></tr>\n</tbody>\n</table>",
+  "after": "<table class=\"comparison-table\">\n<thead>\n<tr><th>Factor</th><th>Georgia</th><th>South Carolina</th></tr>\n</thead>\n<tbody>\n<tr><td>Statute of Limitations</td><td>2 years (O.C.G.A. § 9-3-33)</td><td>3 years (S.C. Code § 15-3-530)</td></tr>\n<tr><td>Comparative Fault</td><td>Less than 50%</td><td>50% or less</td></tr>\n<tr><td>Min. Bodily Injury Coverage</td><td>$25K / $50K</td><td>$25K / $50K</td></tr>\n<tr><td>UM/UIM Coverage Required</td><td>Included unless rejected in writing (O.C.G.A. § 33-7-11(a)(3))</td><td>UM required (S.C. Code § 38-77-150); UIM must be offered, optional (S.C. Code § 38-77-160)</td></tr>\n<tr><td>Insurance System</td><td>At-fault (tort)</td><td>At-fault (tort)</td></tr>\n</tbody>\n</table>"
+ },
+ {
+  "id": "1657",
+  "surface": "content",
+  "before": "<ol>\n<li><strong>Seek immediate medical attention</strong> — Documentation of your injuries starting from the day of the accident creates a strong evidentiary foundation. Gaps in treatment give insurers ammunition to argue your injuries are not serious.</li>\n<li><strong>Follow your treatment plan</strong> — Attend all follow-up appointments, physical therapy sessions, and specialist consultations. Skipping treatment suggests to insurers that you are not as injured as you claim.</li>\n<li><strong>Document everything</strong> — Keep a pain diary, save all medical records and bills, photograph your injuries throughout your recovery, and preserve all accident-related documents.</li>\n<li><strong>Limit social media activity</strong> — Avoid posting about the accident, your injuries, or your daily activities. Even innocent posts can be misinterpreted and used against you.</li>\n<li><strong>Do not sign medical authorizations from the other driver's insurer</strong> — These blanket authorizations give the insurance company access to your entire medical history, which they will comb through for pre-existing conditions.</li>\n<li><strong>Consult an attorney before accepting any settlement</strong> — Once you accept a settlement and sign a release, you cannot go back and ask for more money — even if your injuries turn out to be more serious than initially believed.</li>\n</ol>",
+  "after": "<ol>\n<li><strong>Seek immediate medical attention</strong> — Documentation of your injuries starting from the day of the accident creates a strong evidentiary foundation. Gaps in treatment give insurers ammunition to argue your injuries are not serious.</li>\n<li><strong>Follow your treatment plan</strong> — Attend all follow-up appointments, physical therapy sessions, and specialist consultations. Skipping treatment suggests to insurers that you are not as injured as you claim.</li>\n<li><strong>Document everything</strong> — Keep a pain diary, save all medical records and bills, photograph your injuries throughout your recovery, and preserve all accident-related documents.</li>\n<li><strong>Limit social media activity</strong> — Avoid posting about the accident, your injuries, or your daily activities. Even innocent posts can be misinterpreted and used against you.</li>\n<li><strong>Do not sign medical authorizations from the other driver's insurer</strong> — A broadly worded authorization can give the insurance company access to your entire medical history, which it will comb through for pre-existing conditions.</li>\n<li><strong>Consult an attorney before accepting any settlement</strong> — Once you accept a settlement and sign a release, you cannot go back and ask for more money — even if your injuries turn out to be more serious than initially believed.</li>\n</ol>"
+ },
+ {
+  "id": "1657",
+  "surface": "content",
+  "before": "<p>With offices in <a href=\"/locations/georgia/savannah/\">Savannah</a>, <a href=\"/locations/south-carolina/charleston/\">Charleston</a>, <a href=\"/locations/south-carolina/columbia/\">Columbia</a>, and <a href=\"/locations/south-carolina/myrtle-beach/\">Myrtle Beach</a>, we understand the local insurance landscape and know how to counter the tactics used by adjusters in both Georgia and South Carolina.</p>",
+  "after": "<p>With offices in <a href=\"/locations/georgia/savannah/\">Savannah</a> and <a href=\"/locations/georgia/darien/\">Darien</a>, Georgia, and <a href=\"/locations/south-carolina/charleston/\">Charleston</a>, <a href=\"/locations/south-carolina/north-charleston/\">North Charleston</a>, <a href=\"/locations/south-carolina/columbia/\">Columbia</a>, and <a href=\"/locations/south-carolina/myrtle-beach/\">Myrtle Beach</a>, South Carolina, we understand the local insurance landscape and know how to counter the tactics used by adjusters in both Georgia and South Carolina.</p>"
+ },
+ {
+  "id": "1657",
+  "surface": "meta:_roden_key_takeaways",
+  "before": "After a car accident in Georgia or South Carolina, you have no obligation to speak with the at-fault driver's insurer. Never give recorded statements without legal counsel. Georgia uses modified comparative fault under O.C.G.A. § 51-12-33 (less than 50%), South Carolina allows recovery at 51% or less. Filing deadlines: 2 years in GA (O.C.G.A. § 9-3-33), 3 years in SC (S.C. Code § 15-3-530). Avoid admitting fault or saying you feel fine.",
+  "after": "After a car accident in Georgia or South Carolina, you have no obligation to speak with the at-fault driver's insurer. Never give recorded statements without legal counsel. Georgia uses modified comparative fault under O.C.G.A. § 51-12-33 (less than 50%), South Carolina allows recovery if you are 50% or less at fault (less than 51%). Injury lawsuit deadlines: 2 years in GA (O.C.G.A. § 9-3-33), 3 years in SC (S.C. Code § 15-3-530). Avoid admitting fault or saying you feel fine."
+ },
+ {
+  "id": "1657",
+  "surface": "meta:_roden_meta_description",
+  "before": "",
+  "after": "What to say when an adjuster calls after a Georgia or South Carolina crash, and why you owe the at-fault driver's insurer no recorded statement."
+ },
+ {
+  "id": "1657",
+  "surface": "faq:3:answer",
+  "before": "Georgia's statute of limitations is 2 years from the accident date (O.C.G.A. § 9-3-33). South Carolina allows 3 years (S.C. Code § 15-3-530). Missing these deadlines typically bars your claim.",
+  "after": "Georgia gives you 2 years from the accident to file a personal injury lawsuit (O.C.G.A. § 9-3-33) and 4 years for vehicle damage (O.C.G.A. § 9-3-31). South Carolina allows 3 years for both (S.C. Code § 15-3-530(5) for injury, § 15-3-530(4) for property damage). Claims against a government agency have shorter deadlines, including pre-suit notice deadlines in Georgia. Missing these deadlines typically bars your claim."
+ },
+ {
+  "id": "1657",
+  "surface": "faq:3:question",
+  "before": "How long do I have to file a car accident claim in Georgia and South Carolina?",
+  "after": "How long do I have to file a car accident lawsuit in Georgia and South Carolina?"
+ }
+]

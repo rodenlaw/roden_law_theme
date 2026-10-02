@@ -1,0 +1,584 @@
+{
+ "postId": 4645,
+ "slug": "north-charleston-crime-rate-hit-and-run",
+ "liveUrl": "https://rodenlaw.com/blog/north-charleston-crime-rate-hit-and-run/",
+ "jurisdiction": "SC",
+ "researchedAt": "2026-10-02",
+ "verifiedClaims": [
+  {
+   "surface": "body",
+   "claim": "Hit-and-run accidents are a real risk on North Charleston's busy roads.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "AAA Foundation for Traffic Safety, Understanding the Increase in Fatal Hit-and-Run Crashes (Research Brief, March 2026; 2017-2023 data)",
+   "sourceUrl": "https://newsroom.aaa.com/wp-content/uploads/2026/03/202603-AAAFTS-Hit-and-Run-Crashes.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Generic and true: AAA found 15% of all police-reported U.S. crashes in 2023 involved a driver who left the scene. No North Charleston-specific hit-and-run count is published by SCDPS (the 2024 Fact Book reports hit-and-run only as an 'Unknown (Hit & Run Only)' driver category, not by city or road). The post makes no crime-rate claim at all, so nothing here ties hit-and-runs to North Charleston's crime rate — keep it that way (see recommendedEdits on the title premise)."
+  },
+  {
+   "surface": "body",
+   "claim": "When drivers flee the scene, it's often because they are unlicensed, uninsured, impaired, or have outstanding warrants.",
+   "verdict": "update",
+   "currentValue": "Among drivers who fled fatal crashes and were later identified, two in five lacked a valid license and nearly three in five were not the owner of the vehicle they were driving (AAA Foundation for Traffic Safety, 2026).",
+   "sourceName": "AAA Foundation for Traffic Safety, Understanding the Increase in Fatal Hit-and-Run Crashes (Research Brief, March 2026; 2017-2023 data)",
+   "sourceUrl": "https://newsroom.aaa.com/wp-content/uploads/2026/03/202603-AAAFTS-Hit-and-Run-Crashes.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Only the 'unlicensed' motive is measured: 'two in five lacked a valid license, and nearly three in five were not the owner of the vehicle that they were driving'; 'nearly one in five drivers in fatal hit-and-run crashes having a suspended or revoked license'. AAA says alcohol impairment 'was not examined' and does not measure insurance status or warrants. Suggested: 'When drivers flee, it is often because stopping carries its own consequence: among drivers who fled fatal crashes and were later caught, two in five had no valid license (AAA Foundation for Traffic Safety, 2026). Others are uninsured, impaired or wanted on a warrant.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Hit-and-run crashes disproportionately harm the most vulnerable road users:",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "AAA Foundation for Traffic Safety, Understanding the Increase in Fatal Hit-and-Run Crashes (Research Brief, March 2026; 2017-2023 data)",
+   "sourceUrl": "https://newsroom.aaa.com/wp-content/uploads/2026/03/202603-AAAFTS-Hit-and-Run-Crashes.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "'Approximately one of every four pedestrian and cyclist injuries and deaths in 2023 occurred in a hit-and-run crash'; pedestrians and pedalcyclists 'are vastly overrepresented among the victims of hit-and-run crashes'. Optional sourced add to this lead-in: 'about one in four pedestrian and cyclist injuries and deaths in 2023 (AAA Foundation for Traffic Safety)'."
+  },
+  {
+   "surface": "body",
+   "claim": "Pedestrians: Cannot get a license plate number while lying injured on the road",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "AAA Foundation for Traffic Safety, Understanding the Increase in Fatal Hit-and-Run Crashes (Research Brief, March 2026; 2017-2023 data)",
+   "sourceUrl": "https://newsroom.aaa.com/wp-content/uploads/2026/03/202603-AAAFTS-Hit-and-Run-Crashes.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Common-sense framing; pedestrians are the majority of hit-and-run fatality victims per AAA."
+  },
+  {
+   "surface": "body",
+   "claim": "Cyclists: Often left in the roadway by drivers who flee without stopping",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "AAA Foundation for Traffic Safety, Understanding the Increase in Fatal Hit-and-Run Crashes (Research Brief, March 2026; 2017-2023 data)",
+   "sourceUrl": "https://newsroom.aaa.com/wp-content/uploads/2026/03/202603-AAAFTS-Hit-and-Run-Crashes.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Supported generally: pedalcyclists 'saw the highest percentages of fatalities in hit-and-run crashes' in the 11 PM–2:59 AM window (43.6%)."
+  },
+  {
+   "surface": "body",
+   "claim": "Late-night crash victims: Fewer witnesses, harder to identify the vehicle",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "AAA Foundation for Traffic Safety, Understanding the Increase in Fatal Hit-and-Run Crashes (Research Brief, March 2026; 2017-2023 data)",
+   "sourceUrl": "https://newsroom.aaa.com/wp-content/uploads/2026/03/202603-AAAFTS-Hit-and-Run-Crashes.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "'Hit-and-run fatalities were most likely to occur from 11 PM to 2:59 AM'; 'the majority of hit-and-run fatalities were reported in dark lighting conditions'."
+  },
+  {
+   "surface": "body",
+   "claim": "The corridors with the most hit-and-run incidents in North Charleston mirror the most dangerous roads generally: Rivers Avenue, Ashley Phosphate Road, and I-26 service roads.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "SCDPS, 2024 South Carolina Traffic Collision Fact Book",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Untraceable. No primary source (SCDPS Fact Book, SCDOT, North Charleston PD, FBI/SLED crime data) publishes hit-and-run counts by North Charleston corridor; the Fact Book reports hit-and-run only as a driver category ('Unknown (Hit & Run Only)') with county-level collision totals. 'I-26 service roads' also does not describe a real North Charleston facility class. Delete the sentence; the bullets above it stand on their own."
+  },
+  {
+   "surface": "body",
+   "claim": "No insurance: Drivers without insurance flee to avoid financial liability.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 38-77-30 (definition of 'uninsured motor vehicle')",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Stated as a motive, not a statistic; reasonable. No source measures what share of fleeing drivers are uninsured (AAA does not measure insurance). Do not add a percentage."
+  },
+  {
+   "surface": "body",
+   "claim": "Suspended/revoked license: Driving without a valid license means any police contact results in arrest",
+   "verdict": "update",
+   "currentValue": "Suspended/revoked license: Driving under suspension is a crime (S.C. Code § 56-1-460), so police contact can mean arrest",
+   "sourceName": "S.C. Code § 56-1-460",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c001.php",
+   "retrievedAt": "2026-10-02",
+   "note": "§ 56-1-460(A)(1): driving while license 'canceled, suspended, or revoked' is punishable by a $300 fine or up to 30 days for a first offense, rising for repeat offenses — it can be ticketed and tried in magistrate or municipal court; custodial arrest is not automatic. 'Any police contact results in arrest' overstates it."
+  },
+  {
+   "surface": "body",
+   "claim": "DUI/impairment: Intoxicated drivers flee to avoid DUI charges, which carry severe criminal penalties",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code §§ 56-5-2930, 56-5-2945",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "DUI (§ 56-5-2930) and felony DUI (§ 56-5-2945) are criminal offenses with jail terms; note that leaving the scene of an injury crash (§ 56-5-1210) can itself carry more prison time than a first DUI."
+  },
+  {
+   "surface": "body",
+   "claim": "Outstanding warrants: Any police interaction triggers an arrest",
+   "verdict": "update",
+   "currentValue": "Outstanding warrants: Any police interaction can lead to arrest",
+   "sourceName": "S.C. Code § 56-1-460 (context); general arrest-warrant practice",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c001.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Same overstatement as the license bullet; soften 'triggers' to 'can lead to'. Minor wording fix, not a legal error."
+  },
+  {
+   "surface": "body",
+   "claim": "Stolen vehicle: The driver isn't the registered owner and cannot afford to be connected to the car",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "AAA Foundation for Traffic Safety, Understanding the Increase in Fatal Hit-and-Run Crashes (Research Brief, March 2026; 2017-2023 data)",
+   "sourceUrl": "https://newsroom.aaa.com/wp-content/uploads/2026/03/202603-AAAFTS-Hit-and-Run-Crashes.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Consistent with AAA: 'nearly three in five were not the owner of the vehicle that they were driving' (not all stolen, but supports the non-owner pattern)."
+  },
+  {
+   "surface": "body",
+   "claim": "Your own UM coverage is your primary safety net.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 38-77-30 ('A motor vehicle is considered uninsured if the owner or operator is unknown')",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct: an unknown driver's vehicle is an uninsured motor vehicle by definition."
+  },
+  {
+   "surface": "body",
+   "claim": "In South Carolina, UM coverage applies to hit-and-run crashes where the at-fault driver cannot be identified.",
+   "verdict": "update",
+   "currentValue": "In South Carolina, UM coverage applies to hit-and-run crashes where the at-fault driver cannot be identified, if the conditions of S.C. Code § 38-77-170 are met.",
+   "sourceName": "S.C. Code §§ 38-77-30, 38-77-170",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+   "retrievedAt": "2026-10-02",
+   "note": "§ 38-77-170(A): with an unknown driver 'there is no right of action or recovery under the uninsured motorist provision, unless' (1) the accident is reported to police 'within a reasonable time, under all the circumstances'; (2) one of: (a) physical contact with the unknown vehicle, (b) the accident was witnessed by someone other than the insured vehicle's owner/operator who signs an affidavit (or, failing that, a Rule 27 SCRCP presuit deposition), or (c) 'a recording of the accident, obtained electronically or otherwise' (added by 2024 Act No. 180, H.4869, eff. May 20, 2024); and (3) the insured was not negligent in failing to identify the other driver at the time. Unconditional framing is the classic error; the conditions go in the 'You must report' bullet (below)."
+  },
+  {
+   "surface": "body",
+   "claim": "SC law requires UM coverage on every auto policy (S.C. Code § 38-77-150)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 38-77-150(A)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+   "retrievedAt": "2026-10-02",
+   "note": "'No automobile insurance policy or contract may be issued or delivered unless it contains ... the uninsured motorist provision' at no less than § 38-77-140 limits ($25,000/$50,000/$25,000). No rejection clause (rejection is Georgia's rule). Last amended 2013 Act No. 47."
+  },
+  {
+   "surface": "body",
+   "claim": "UM coverage pays for medical expenses, lost wages, and pain and suffering — just like a claim against the at-fault driver's insurance",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 38-77-150(A)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+   "retrievedAt": "2026-10-02",
+   "note": "UM pays 'all sums which he is legally entitled to recover as damages from the owner or operator of an uninsured motor vehicle', up to the UM limits — so all tort damage categories, capped at the limit. Optional add: '— up to your policy's UM limits'."
+  },
+  {
+   "surface": "body",
+   "claim": "You must report the hit-and-run to police within a reasonable time",
+   "verdict": "update",
+   "currentValue": "You must report the hit-and-run to police within a reasonable time, and show physical contact with the fleeing vehicle, an independent witness who signs an affidavit, or a recording of the crash (S.C. Code § 38-77-170)",
+   "sourceName": "S.C. Code § 38-77-170 (as amended by 2024 Act No. 180)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+   "retrievedAt": "2026-10-02",
+   "note": "'Reasonable time' is the statute's own standard — there is no fixed day count; keep it and do not add '24 hours' or similar. What is missing is condition (2): contact, witness affidavit, or (since May 20, 2024) a recording. Without one of them there is no UM recovery for an unknown driver; with one of them, no-contact (e.g., a phantom vehicle that ran you off the road) claims are allowed. Amendment text: https://www.scstatehouse.gov/sess125_2023-2024/bills/4869.htm"
+  },
+  {
+   "surface": "body",
+   "claim": "Your own insurer becomes the opposing party — they will try to minimize your claim just as an at-fault driver's insurer would",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code §§ 38-77-150(B), 38-77-180",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate in substance. Mechanically, the suit is filed against 'John Doe', process is served by delivering the pleadings to the clerk of court, and 'the insurer has the right to defend in the name of John Doe' (§ 38-77-180); the UM carrier must be served with the pleadings (§ 38-77-150(B)). Not a § 38-59-20 matter."
+  },
+  {
+   "surface": "body",
+   "claim": "If the driver can be identified, you have a standard claim against their insurance (if any).",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code §§ 38-77-150, 38-77-180",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct. If the identified driver is uninsured, the UM claim proceeds as an uninsured-motorist claim; § 38-77-180 preserves the right to sue the driver if identified after a John Doe action."
+  },
+  {
+   "surface": "body",
+   "claim": "Surveillance cameras (business security, traffic cameras, doorbell cameras)",
+   "verdict": "update",
+   "currentValue": "Surveillance cameras (business security, doorbell and dash cameras)",
+   "sourceName": "SC 511 FAQ (SCDOT)",
+   "sourceUrl": "https://www.511sc.org/static/faq.html",
+   "retrievedAt": "2026-10-02",
+   "note": "SCDOT: 'No, we do not record any of the traffic cameras. We will not be able to provide any accident video.' SCDOT FOIA page: 'The image stream from SCDOT cameras is in real time with no images being stored.' Pointing victims to traffic cameras wastes the days before private footage is overwritten. Note for the refresher: since 2024 a recording of the crash is itself one of the § 38-77-170 qualifying conditions for an unknown-driver UM claim, which makes private footage more valuable, not less."
+  },
+  {
+   "surface": "body",
+   "claim": "Witness testimony (license plate, vehicle description)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 38-77-170(A)(2)(b)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Fine. A witness other than the insured driver who signs an affidavit also satisfies the UM condition."
+  },
+  {
+   "surface": "body",
+   "claim": "Vehicle debris at the scene (may include parts with serial numbers)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Investigative practice; no legal claim. Keep."
+  },
+  {
+   "surface": "body",
+   "claim": "Police investigation (paint transfer, parts matching)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Investigative practice; no legal claim. Keep."
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina's Crime Victims' Compensation Fund may provide supplemental benefits for hit-and-run victims, including medical expenses and lost wages not covered by insurance.",
+   "verdict": "update",
+   "currentValue": "South Carolina's Crime Victim Compensation program (run by the Attorney General's office) can pay medical expenses and lost wages that insurance does not cover for hit-and-run victims, if the crash was reported to police within 48 hours and the claim is filed within 180 days (S.C. Code §§ 16-3-1170, 16-3-1230).",
+   "sourceName": "S.C. Code §§ 16-3-1110(7), 16-3-1170, 16-3-1230; SC Attorney General, Crime Victim Compensation FAQs",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t16c003.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Eligibility verified: motor-vehicle crashes are excluded unless injury was 'recklessly or intentionally' inflicted, which expressly 'includes ... an act which violates Sections 56-5-1210' (§ 16-3-1110(7)); the AG FAQ lists 'Hit and Run' and 'Leaving the Scene of an Accident' among covered traffic offenses and says claims exceeding insurance are reviewed for eligibility (https://www.scag.gov/inside-the-office/crime-victim-services-division/crime-victim-compensation/crime-victim-compensation-faqs/). Conditions the post omits: crime 'promptly reported' — 'more than forty-eight hours after its occurrence is not \"promptly reported\"' absent special circumstances (§ 16-3-1170(B)); claim filed within 180 days, extendable for good cause to four years (§ 16-3-1230). Administered by the AG's Department of Crime Victim Compensation; the statute itself still speaks of the Victim Compensation Fund, so 'Fund' is acceptable."
+  },
+  {
+   "surface": "body",
+   "claim": "Call 911 immediately — Report the hit-and-run. A timely police report is required for most UM claims.",
+   "verdict": "update",
+   "currentValue": "Call 911 immediately — South Carolina law requires you to report an injury crash at once (S.C. Code § 56-5-1260), and a hit-and-run UM claim fails without a police report (S.C. Code § 38-77-170).",
+   "sourceName": "S.C. Code §§ 56-5-1260, 38-77-170",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "§ 56-5-1260: the driver of a vehicle involved in an injury/death crash 'shall immediately by the quickest means of communication' notify local police (in a municipality — North Charleston PD), otherwise the sheriff or Highway Patrol; it binds the victim driver too. A report is a condition of every unknown-driver UM claim, not 'most'. The officer's report is the TR-310 (sent to SCDMV under § 56-5-1270), not the FR-10. A report within 48 hours also preserves Crime Victim Compensation eligibility."
+  },
+  {
+   "surface": "body",
+   "claim": "Note everything you can: Vehicle color, make, model, direction of travel, any partial plate numbers",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Practical advice."
+  },
+  {
+   "surface": "body",
+   "claim": "Look for cameras: Nearby businesses, traffic cameras, Ring doorbells. Note their locations for your attorney.",
+   "verdict": "update",
+   "currentValue": "Look for cameras: Nearby businesses, home doorbell cameras, and other drivers' dash cameras. Note their locations for your attorney — private footage is often overwritten within days.",
+   "sourceName": "SC 511 FAQ (SCDOT)",
+   "sourceUrl": "https://www.511sc.org/static/faq.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Same fix as the identification list: SCDOT traffic cameras do not record. Optionally drop the brand name 'Ring'."
+  },
+  {
+   "surface": "body",
+   "claim": "Get witness contacts: Anyone who saw the vehicle before or after the crash",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 38-77-170(A)(2)(b)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Good; a witness affidavit can satisfy the UM condition."
+  },
+  {
+   "surface": "body",
+   "claim": "Preserve evidence: Your damaged vehicle, clothing, and any debris left by the fleeing vehicle",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 38-77-170(A)(2)(a)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Damage evidence proves physical contact, one of the UM conditions."
+  },
+  {
+   "surface": "body",
+   "claim": "Contact an attorney: UM claims against your own insurer require the same aggressive advocacy as any other insurance claim",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Firm CTA; no factual claim."
+  },
+  {
+   "surface": "body",
+   "claim": "Leaving the scene of a crash that injures someone is a crime in South Carolina (S.C. Code § 56-5-1210): a misdemeanor for an injury, a felony carrying up to 10 years when the injury is great bodily injury, and a felony carrying up to 25 years when someone dies.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 56-5-1210",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified against current text (last amended 2004 Act No. 286; no 2024–25 amendment): (A)(1) injury — misdemeanor, 30 days–1 year or $100–$5,000, or both; (A)(2) great bodily injury — felony, 30 days–10 years AND $5,000–$10,000; (A)(3) death — felony, 1–25 years AND $10,000–$25,000. (C) defines great bodily injury; (D) 'The Department of Motor Vehicles shall revoke the driver's license of the person convicted.' Optional add: 'and a conviction means license revocation'. Damage-only crashes are § 56-5-1220."
+  },
+  {
+   "surface": "body",
+   "claim": "This criminal liability is separate from your civil claim for damages.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 56-5-1210",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct. Do not add that a conviction proves fault in the civil case: traffic convictions are generally inadmissible in SC civil actions (§ 56-5-6160)."
+  },
+  {
+   "surface": "body",
+   "claim": "You have 3 years to file your injury claim (S.C. Code § 15-3-530).",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 15-3-530(5)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Three years for 'any injury to the person'. The unknown-driver UM claim is pursued through the John Doe tort action, so the same 3 years governs filing; there is no separate statutory UM deadline. Exceptions not mentioned and not required: minors (§ 15-3-40 tolling), government defendants (2 years, § 15-78-110)."
+  },
+  {
+   "surface": "body",
+   "claim": "For UM claims, check your policy for notice requirements — some require notification within a specific timeframe.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 38-77-170",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate: policy notice/cooperation conditions are contractual; the statute's own requirement is a police report 'within a reasonable time'. No fixed statutory day count exists."
+  },
+  {
+   "surface": "body",
+   "claim": "Contact Roden Law at (843) 612-6561.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "client.json (firm's listed office line)",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "tel:+18436126561 is the firm's listed office line per client.json. Keep."
+  },
+  {
+   "surface": "excerpt",
+   "claim": "Why drivers flee crashes in North Charleston, and what coverage pays when the driver is never found.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "No factual claim beyond the post's scope."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Hit-and-run accidents leave North Charleston victims with no identified driver to claim against.",
+   "verdict": "update",
+   "currentValue": "Hit-and-run accidents can leave North Charleston victims with no identified driver to claim against.",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Many hit-and-run drivers are later identified (the post's own 'Identifying the Driver' section). 'can leave' fixes the absolute."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Uninsured motorist (UM) coverage is the primary recovery path when the at-fault driver is unidentified.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code §§ 38-77-30, 38-77-170",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct; conditions are covered by the body fix."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "South Carolina requires uninsured motorist (UM) coverage on every auto policy (S.C. Code § 38-77-150); underinsured motorist (UIM) coverage must be offered but can be declined (S.C. Code § 38-77-160).",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code §§ 38-77-150, 38-77-160",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified. § 38-77-160 requires insurers to offer UIM (and additional UM) at the insured's option. Stacking (not mentioned) is limited to Class I insureds and capped at the coverage on the vehicle involved (§ 38-77-160; see sibling pack 1757) — no need to add."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Hit-and-run is a criminal offense under S.C. Code § 56-5-1210, and victims may also access the Crime Victims' Compensation Fund.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code §§ 56-5-1210, 16-3-1110(7)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t16c003.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Both verified; § 16-3-1110(7) expressly makes a § 56-5-1210 violation a compensable 'reckless or intentional' injury. 'may also apply to' would be slightly more precise given the 48-hour/180-day conditions; optional."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "The 3-year filing deadline (S.C. Code § 15-3-530) applies to civil claims.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 15-3-530",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified."
+  },
+  {
+   "surface": "faq:0",
+   "claim": "Usually because stopping carries a separate consequence for them. Drivers who flee are often unlicensed, uninsured, impaired, or have outstanding warrants — for a driver with a suspended licence, any police contact means arrest.",
+   "verdict": "update",
+   "currentValue": "Usually because stopping carries a separate consequence for them. Among drivers who fled fatal crashes and were later caught, two in five had no valid license (AAA Foundation for Traffic Safety, 2026); others are uninsured, impaired or wanted on a warrant. Driving under suspension is itself a crime in South Carolina (S.C. Code § 56-1-460).",
+   "sourceName": "AAA Foundation for Traffic Safety, Understanding the Increase in Fatal Hit-and-Run Crashes (Research Brief, March 2026; 2017-2023 data)",
+   "sourceUrl": "https://newsroom.aaa.com/wp-content/uploads/2026/03/202603-AAAFTS-Hit-and-Run-Crashes.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. Fixes the 'any police contact means arrest' overstatement and the British spelling 'licence'."
+  },
+  {
+   "surface": "faq:1",
+   "claim": "Estimates vary by source and year.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "True as stated; the answer cites no number. An Insurance Research Council estimate (~10% for SC, 2023) circulates only through secondary sites — the IRC press-release PDF returned 404 on 2026-10-02 — so do not add a figure."
+  },
+  {
+   "surface": "faq:1",
+   "claim": "What matters for your claim is that drivers without insurance may flee to avoid financial liability, and South Carolina requires uninsured motorist coverage on every auto policy (S.C. Code § 38-77-150), which is often what pays when the driver is never identified.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 38-77-150",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified."
+  },
+  {
+   "surface": "faq:2",
+   "claim": "The most vulnerable road users. Pedestrians cannot get a plate number while lying injured, cyclists are frequently left in the roadway, and late-night victims have fewer witnesses and a harder time identifying the vehicle.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "AAA Foundation for Traffic Safety, Understanding the Increase in Fatal Hit-and-Run Crashes (Research Brief, March 2026; 2017-2023 data)",
+   "sourceUrl": "https://newsroom.aaa.com/wp-content/uploads/2026/03/202603-AAAFTS-Hit-and-Run-Crashes.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Supported. Optional sourced lead: 'About one in four pedestrian and cyclist injuries and deaths in 2023 happened in hit-and-run crashes (AAA Foundation for Traffic Safety).'"
+  },
+  {
+   "surface": "faq:3",
+   "claim": "Often yes, through your own uninsured motorist coverage, which exists for exactly this situation.",
+   "verdict": "update",
+   "currentValue": "Often yes, through your own uninsured motorist coverage, if you report the crash to police within a reasonable time and can show physical contact with the other vehicle, an independent witness who signs an affidavit, or a recording of the crash (S.C. Code § 38-77-170).",
+   "sourceName": "S.C. Code § 38-77-170",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data — the conditional answer is the one that must be right. Keep the second sentence ('Identifying the driver ... other routes worth exploring') unchanged."
+  },
+  {
+   "surface": "faq:4",
+   "claim": "Which North Charleston roads see the most hit-and-run crashes?",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "SCDPS, 2024 South Carolina Traffic Collision Fact Book",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "No primary source publishes hit-and-run counts by North Charleston road. Remove the whole FAQ (question and answer); it publishes the untraceable corridor claim a second time as FAQPage structured data."
+  },
+  {
+   "surface": "faq:4",
+   "claim": "They mirror the most dangerous roads generally — Rivers Avenue, Ashley Phosphate Road and the I-26 service roads. Those corridors combine heavy traffic volume with the conditions that make fleeing easier.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "SCDPS, 2024 South Carolina Traffic Collision Fact Book",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Same as the body corridor sentence: untraceable; drop with the question."
+  }
+ ],
+ "recommendedEdits": [
+  "Title premise: the post never supplies (and should not add) a crime-rate figure, ranking or causal link. No primary source (FBI Crime Data Explorer, SLED Crime in South Carolina, North Charleston PD, SCDPS) connects North Charleston's crime rate to hit-and-run frequency. If the title question is answered at all, use correlation framing only, e.g. one sentence in the intro: 'National research finds hit-and-run deaths are concentrated in more economically vulnerable neighborhoods and among drivers with no valid license (AAA Foundation for Traffic Safety, 2026) — patterns, not proof that crime causes drivers to flee.' Do not add any 'most dangerous city' ranking.",
+  "Intro sentence 2: replace with 'When drivers flee, it is often because stopping carries its own consequence: among drivers who fled fatal crashes and were later caught, two in five had no valid license (AAA Foundation for Traffic Safety, 2026). Others are uninsured, impaired or wanted on a warrant.'",
+  "Delete the corridor sentence ('The corridors with the most hit-and-run incidents ... I-26 service roads.') and delete FAQ 5 (question and answer) entirely.",
+  "UM section: change 'You must report the hit-and-run to police within a reasonable time' to 'You must report the hit-and-run to police within a reasonable time, and show physical contact with the fleeing vehicle, an independent witness who signs an affidavit, or a recording of the crash (S.C. Code § 38-77-170)'. Do not add a fixed day count — the statute has none. Change FAQ 4 first sentence to the conditional version in verifiedClaims.",
+  "Immediate steps 1: 'Call 911 immediately — South Carolina law requires you to report an injury crash at once (S.C. Code § 56-5-1260), and a hit-and-run UM claim fails without a police report (S.C. Code § 38-77-170).'",
+  "Cameras: in the identification list change 'traffic cameras' to drop it ('business security, doorbell and dash cameras'); in step 3 replace 'traffic cameras, Ring doorbells' with 'home doorbell cameras, and other drivers' dash cameras' — SCDOT traffic cameras do not record.",
+  "Crime Victims' Compensation paragraph: replace with the sentence in verifiedClaims adding the 48-hour reporting and 180-day filing conditions (§§ 16-3-1170, 16-3-1230).",
+  "Why Drivers Flee: 'any police contact results in arrest' -> 'Driving under suspension is a crime (S.C. Code § 56-1-460), so police contact can mean arrest'; 'Any police interaction triggers an arrest' -> 'Any police interaction can lead to arrest'. FAQ 1: replace answer as in verifiedClaims (also fixes 'licence').",
+  "Key Takeaways: 'leave North Charleston victims' -> 'can leave North Charleston victims'. Everything else in the takeaways is verified.",
+  "Penalties paragraph is accurate as written; optional add at the end of the colon list: '; a conviction also means license revocation (§ 56-5-1210(D))'."
+ ],
+ "statuteCitations": [
+  {
+   "section": "S.C. Code § 56-5-1210",
+   "name": "Duties of drivers in injury/death crashes; hit-and-run penalties; license revocation",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-1260",
+   "name": "Immediate report of crashes resulting in injury or death",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-1270",
+   "name": "Written reports; officer's report forwarded to SCDMV",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 38-77-150",
+   "name": "Mandatory uninsured motorist provision; service of pleadings on UM insurer",
+   "url": "https://www.scstatehouse.gov/code/t38c077.php"
+  },
+  {
+   "section": "S.C. Code § 38-77-160",
+   "name": "Optional UIM and additional UM; stacking",
+   "url": "https://www.scstatehouse.gov/code/t38c077.php"
+  },
+  {
+   "section": "S.C. Code § 38-77-170",
+   "name": "Conditions to recover UM when the driver is unknown (report; contact, witness affidavit or recording; no negligence)",
+   "url": "https://www.scstatehouse.gov/code/t38c077.php"
+  },
+  {
+   "section": "S.C. Code § 38-77-180",
+   "name": "John Doe actions; service on clerk of court; insurer defends in John Doe's name",
+   "url": "https://www.scstatehouse.gov/code/t38c077.php"
+  },
+  {
+   "section": "S.C. Code § 56-1-460",
+   "name": "Driving under suspension penalties",
+   "url": "https://www.scstatehouse.gov/code/t56c001.php"
+  },
+  {
+   "section": "S.C. Code §§ 16-3-1110, 16-3-1170, 16-3-1230",
+   "name": "Crime victim compensation: hit-and-run eligibility, 48-hour report, 180-day filing",
+   "url": "https://www.scstatehouse.gov/code/t16c003.php"
+  },
+  {
+   "section": "S.C. Code § 15-3-530",
+   "name": "Three-year limitation for personal injury",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  }
+ ],
+ "authoritativeLinks": [
+  {
+   "name": "AAA Foundation for Traffic Safety, Understanding the Increase in Fatal Hit-and-Run Crashes (Research Brief, March 2026; 2017-2023 data)",
+   "url": "https://newsroom.aaa.com/wp-content/uploads/2026/03/202603-AAAFTS-Hit-and-Run-Crashes.pdf"
+  },
+  {
+   "name": "AAA Foundation for Traffic Safety — Hit-and-Run Crashes: Prevalence, Contributing Factors and Countermeasures (2018)",
+   "url": "https://aaafoundation.org/research/hit-and-run-crashes-prevalence-contributing-factors-and-countermeasures/"
+  },
+  {
+   "name": "2024 Act No. 180 (H.4869), Section 7 — adds recording option to § 38-77-170 (eff. May 20, 2024)",
+   "url": "https://www.scstatehouse.gov/sess125_2023-2024/bills/4869.htm"
+  },
+  {
+   "name": "SC 511 FAQ (SCDOT) — 'we do not record any of the traffic cameras'",
+   "url": "https://www.511sc.org/static/faq.html"
+  },
+  {
+   "name": "SCDOT Freedom of Information Act page — camera streams not stored",
+   "url": "https://www.scdot.org/inside/freedom-of-information-act.html"
+  },
+  {
+   "name": "SC Attorney General — Crime Victim Compensation FAQs (hit and run / leaving the scene covered)",
+   "url": "https://www.scag.gov/inside-the-office/crime-victim-services-division/crime-victim-compensation/crime-victim-compensation-faqs/"
+  },
+  {
+   "name": "SCDPS — 2024 South Carolina Traffic Collision Fact Book",
+   "url": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf"
+  }
+ ],
+ "quoteNote": "Claims are quoted from the rendered text with tags stripped: the bullet lead-ins in 'Why Drivers Flee', 'The Hit-and-Run Problem' and the immediate-steps list are <strong> in body.html, as are the Key Takeaways lead-in 'Hit-and-run accidents' and its bolded citations/'Crime Victims' Compensation Fund'/'3-year filing deadline'; the filing-deadline paragraph's '3 years', § 15-3-530 link text and phone link are inline tags. FAQ surfaces are zero-indexed (faq:0 = first FAQ). The phone claim is matched to the visible link text; tel:+18436126561 stays."
+}

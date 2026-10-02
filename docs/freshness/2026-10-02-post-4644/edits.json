@@ -1,0 +1,80 @@
+[
+ {
+  "id": "4644",
+  "surface": "content",
+  "before": "<p>In March 2026, a motorcyclist was killed on Dorchester Road at the intersection with Forest Hills Drive — struck by a heavy-duty pickup truck. It wasn't the first fatal motorcycle crash on this corridor. It won't be the last.</p>",
+  "after": "<p>On March 2, 2026, a motorcyclist was killed on Dorchester Road at the intersection with Forest Hills Drive — in a collision with a heavy-duty pickup truck. Police said no charges were expected. SCDOT's <a href=\"https://info2.scdot.org/projects/ViewerFiles/Board%202%20-%20Crash%20History.pdf\">road safety audit</a> counted 17 fatal crashes and 924 injury crashes on Dorchester Road between the Dorchester County line and Kent Avenue from 2018 through 2022.</p>"
+ },
+ {
+  "id": "4644",
+  "surface": "content",
+  "before": "<p>Nationally, left-turning vehicles cause 42% of fatal motorcycle crashes (NHTSA data). On Dorchester Road, this statistic comes to life at every unprotected left-turn intersection:</p>\n<ul>\n<li>A car waits to turn left</li>\n<li>The driver scans oncoming traffic but fails to register an approaching motorcycle (smaller visual profile = perceived as farther away)</li>\n<li>The driver turns directly into the motorcycle's path</li>\n<li>At 50 mph, the rider has less than 2 seconds to react</li>\n</ul>\n<p>The Forest Hills Drive intersection, Bacons Bridge Road, and the Ashley Phosphate junction all follow this deadly pattern.</p>",
+  "after": "<p>Nationally, in 45% of fatal crashes between a motorcycle and one other vehicle, the other vehicle was turning left (<a href=\"https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813824\">NHTSA</a>, 2024 data). On Dorchester Road, this statistic comes to life at every unprotected left-turn intersection:</p>\n<ul>\n<li>A car waits to turn left</li>\n<li>The driver scans oncoming traffic but fails to register an approaching motorcycle (smaller visual profile = perceived as farther away)</li>\n<li>The driver turns directly into the motorcycle's path</li>\n<li>At 50 mph, a motorcycle covers about 73 feet every second</li>\n</ul>\n<p>In Dorchester County, the Dorchester Road intersections with Old Trolley Road, Ladson Road and Bacons Bridge Road were three of the county's five highest-crash intersections in 2024 (<a href=\"https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf\">SCDPS</a>).</p>"
+ },
+ {
+  "id": "4644",
+  "surface": "content",
+  "before": "<p>Traffic on Dorchester Road regularly exceeds the 45-55 mph posted limits. Higher speeds make crashes far deadlier for riders.</p>",
+  "after": "<p>Higher speeds make crashes far deadlier for riders.</p>"
+ },
+ {
+  "id": "4644",
+  "surface": "content",
+  "before": "<p>South Carolina law requires motorcycle operators and passengers under age 21 to wear an approved helmet (S.C. Code § 56-5-3660). State law does not impose that helmet requirement on riders age 21 or older.</p>",
+  "after": "<p>South Carolina law requires motorcycle operators and passengers under age 21 to wear an approved helmet (S.C. Code § 56-5-3660). State law does not impose that helmet requirement on riders age 21 or older. For riders 21 and older, the South Carolina Supreme Court has held that riding without a helmet is not contributory negligence or assumption of risk (<em>Mayes v. Paxton</em>, 313 S.C. 109 (1993)).</p>"
+ },
+ {
+  "id": "4644",
+  "surface": "content",
+  "before": "<ul>\n<li>Funeral and burial expenses</li>\n<li>Lost future income the deceased would have earned</li>\n<li>Loss of companionship, guidance, and consortium</li>\n<li>Pain and suffering the victim experienced before death, through a separate survival action brought by the estate (S.C. Code § 15-5-90)</li>\n<li>Punitive damages if the at-fault driver acted recklessly</li>\n</ul>",
+  "after": "<ul>\n<li>Funeral and burial expenses</li>\n<li>Lost financial support the deceased would have provided</li>\n<li>Loss of companionship, guidance, and consortium</li>\n<li>Pain and suffering the victim experienced before death, through a separate survival action brought by the estate (S.C. Code § 15-5-90)</li>\n<li>Punitive damages if the at-fault driver acted recklessly</li>\n</ul>"
+ },
+ {
+  "id": "4644",
+  "surface": "content",
+  "before": "<ul>\n<li>Protected left-turn signals at Forest Hills Drive, Bacons Bridge Rd, and other high-crash intersections</li>\n<li>Motorcycle awareness signage in high-conflict zones</li>\n<li>Speed enforcement on the corridor</li>\n<li>Truck route restrictions during peak motorcycle riding hours</li>\n</ul>",
+  "after": "<ul>\n<li>Protected left-turn signals at Bacons Bridge Road and other high-crash intersections</li>\n<li>Motorcycle awareness signage in high-conflict zones</li>\n<li>Speed enforcement on the corridor</li>\n<li>Truck route restrictions during peak motorcycle riding hours</li>\n</ul>"
+ },
+ {
+  "id": "4644",
+  "surface": "excerpt",
+  "before": "What crash data shows about motorcycle collisions on Dorchester Road, the manoeuvres behind them, and who is usually at fault.",
+  "after": "What SCDOT, SCDPS and NHTSA crash data show about motorcycle collisions on Dorchester Road, the left-turn crash pattern, and what families can recover."
+ },
+ {
+  "id": "4644",
+  "surface": "meta:_roden_key_takeaways",
+  "before": "Dorchester Road in North Charleston is a hazardous corridor for motorcyclists. <strong>Left-turn collisions</strong> are behind roughly 42% of fatal two-vehicle motorcycle crashes nationally (NHTSA). Heavy truck traffic, limited sight lines, and speeds above 45 mph drastically reduce survival odds. South Carolina does not require helmets for riders 21 and older (S.C. Code § 56-5-3660). Riders can recover damages if less than <strong>51% at fault</strong>. The <strong>3-year statute of limitations</strong> (<strong>S.C. Code § 15-3-530</strong>) governs most injury claims.",
+  "after": "Dorchester Road (SC 642), from North Charleston into Dorchester County, is a hazardous corridor for motorcyclists. In 45% of fatal two-vehicle motorcycle crashes nationally, the other vehicle was <strong>turning left</strong> (NHTSA, 2024 data). Heavy vehicles, limited sight lines and high speeds reduce survival odds. South Carolina does not require helmets for riders 21 and older (S.C. Code § 56-5-3660). Riders can recover damages if less than <strong>51% at fault</strong>. The <strong>3-year statute of limitations</strong> (<strong>S.C. Code § 15-3-530</strong>) governs most injury claims."
+ },
+ {
+  "id": "4644",
+  "surface": "meta:_roden_meta_description",
+  "before": "",
+  "after": "Dorchester Road motorcycle crashes: what SCDOT and NHTSA data show, the left-turn danger, South Carolina helmet law and what families can recover."
+ },
+ {
+  "id": "4644",
+  "surface": "faq:0:answer",
+  "before": "It combines high speeds, heavy truck traffic and unprotected left-turn intersections. Cement mixers, dump trucks and construction vehicles share the corridor, and the Forest Hills Drive, Bacons Bridge Road and Ashley Phosphate junctions all follow the same pattern.",
+  "after": "It combines high speeds, heavy truck traffic and unprotected left-turn intersections. Cement mixers, dump trucks and construction vehicles share the corridor. SCDOT counted 17 fatal crashes and 924 injury crashes between the Dorchester County line and Kent Avenue from 2018 through 2022, and in 2024 Dorchester Road was Dorchester County's highest-crash road (SCDPS)."
+ },
+ {
+  "id": "4644",
+  "surface": "faq:1:answer",
+  "before": "Nationally, left-turning vehicles cause 42% of fatal motorcycle crashes according to NHTSA data. A driver scans oncoming traffic, fails to register the motorcycle's smaller visual profile, judges it as farther away, and turns directly into its path.",
+  "after": "Nationally, in 45% of fatal crashes between a motorcycle and one other vehicle, the other vehicle was turning left (NHTSA, 2024 data). NHTSA reports the crash configuration, not who was at fault. In a typical case, a driver scans oncoming traffic, fails to register the motorcycle's smaller visual profile, judges it as farther away, and turns directly into its path."
+ },
+ {
+  "id": "4644",
+  "surface": "faq:2:answer",
+  "before": "Very little. At 50 mph a rider facing a vehicle turning across their path has less than 2 seconds to react. That is why these collisions are so often fatal even when the rider does everything right.",
+  "after": "Very little. At 50 mph a motorcycle covers about 73 feet every second, so a vehicle that turns across its path a few car lengths ahead leaves almost no room to stop. That is why these collisions are so often fatal even when the rider does everything right."
+ },
+ {
+  "id": "4644",
+  "surface": "faq:3:answer",
+  "before": "South Carolina law requires motorcycle operators and passengers under age 21 to wear an approved helmet (S.C. Code § 56-5-3660). State law does not impose that helmet requirement on riders age 21 or older. Talk with an attorney about how the facts of your crash apply to your claim.",
+  "after": "South Carolina law requires motorcycle operators and passengers under age 21 to wear an approved helmet (S.C. Code § 56-5-3660). State law does not impose that helmet requirement on riders age 21 or older. For riders 21 and older, the South Carolina Supreme Court has held that riding without a helmet is not contributory negligence or assumption of risk (Mayes v. Paxton, 313 S.C. 109 (1993)). A rider under 21 had a statutory duty, so talk with an attorney about how that affects the claim."
+ }
+]

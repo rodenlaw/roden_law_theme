@@ -1,0 +1,632 @@
+{
+ "postId": 1657,
+ "slug": "answering-insurance-questions-after-crash",
+ "liveUrl": "https://rodenlaw.com/blog/answering-insurance-questions-after-crash/",
+ "jurisdiction": "GA+SC",
+ "researchedAt": "2026-10-02",
+ "verifiedClaims": [
+  {
+   "surface": "body",
+   "claim": "you will likely receive a phone call from an insurance adjuster — sometimes within hours of the collision",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Firm practice statement; insurer claim-contact norms (O.C.G.A. § 33-6-34; S.C. Code § 38-59-20 set duties on insurers, not timelines for first contact)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-6/article-2/section-33-6-34/",
+   "retrievedAt": "2026-10-02",
+   "note": "Experience-based and hedged ('likely', 'sometimes'). No statistic implied. Keep."
+  },
+  {
+   "surface": "body",
+   "claim": "For a broad overview of insurance law principles, see the Cornell Law Institute's insurance law overview.",
+   "verdict": "update",
+   "currentValue": "Cornell Law School's Legal Information Institute (LII), Wex: insurance",
+   "sourceName": "Legal Information Institute, Cornell Law School — Wex: insurance",
+   "sourceUrl": "https://www.law.cornell.edu/wex/insurance",
+   "retrievedAt": "2026-10-02",
+   "note": "Link resolves (200). There is no 'Cornell Law Institute'; same correction made on posts 1663 and 1679. Change the lead-in to 'Cornell Law School's Legal Information Institute's insurance law overview'; keep the href."
+  },
+  {
+   "surface": "body",
+   "claim": "It is important to understand that there are typically two adjusters involved after an accident: your own insurance company's adjuster and the at-fault driver's adjuster.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "ISO PP 00 01 09 18 (first-party duties run to your own carrier); O.C.G.A. § 33-6-34",
+   "sourceUrl": "https://getquote.cure.com/PolicyDocs/mi/PP00010918-Final.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate general description of a two-carrier crash claim."
+  },
+  {
+   "surface": "body",
+   "claim": "While you have a contractual obligation to cooperate with your own insurer, you have no obligation to speak with the other driver's insurance company.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "ISO Personal Auto Policy PP 00 01 09 18, Part E (Duties After an Accident or Loss), as filed by a carrier (CURE, Michigan); same text in National General VA form 02172; O.C.G.A. § 33-6-34 and S.C. Code § 38-59-20 (no claimant duty in either)",
+   "sourceUrl": "https://getquote.cure.com/PolicyDocs/mi/PP00010918-Final.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Part E.B: 'A person seeking any coverage must: 1. Cooperate with us in the investigation, settlement or defense of any claim or suit. ... 3. Submit, as often as we reasonably require: a. To physical exams by physicians we select. ... b. To examination under oath and subscribe the same. c. To recorded statements. 4. Authorize us to obtain: a. Medical reports; and b. Other pertinent records.' The claims-practices statutes in both states impose duties on insurers, none on a third-party claimant (verified by absence; sibling pack 1719). Correct as written."
+  },
+  {
+   "surface": "body",
+   "claim": "Many accident injuries — including traumatic brain injuries, soft tissue damage, and spinal cord injuries — do not fully manifest for days or weeks after the collision.",
+   "verdict": "update",
+   "currentValue": "TBI: NINDS — symptoms may not appear right away and can develop over days or weeks. Whiplash/soft tissue: in a study of car-crash neck-sprain patients, neck pain began in 65% within 6 hours, 93% within 24 hours and 100% within 72 hours (Deans, cited in Tanaka et al., Adv Orthop 2018) — hours to days, not weeks. Spinal cord injury: MedlinePlus calls SCI 'a medical emergency that needs medical attention right away'; no source located for weeks-delayed manifestation.",
+   "sourceName": "NINDS — Traumatic Brain Injury; Tanaka N. et al., Adv Orthop 2018 (PMC5851023); MedlinePlus — Spinal cord trauma",
+   "sourceUrl": "https://www.ninds.nih.gov/health-information/disorders/traumatic-brain-injury-tbi",
+   "retrievedAt": "2026-10-02",
+   "note": "Sibling packs 1767 (NINDS, 200) and 1653 (whiplash timing). Suggested: 'Many accident injuries — including traumatic brain injuries and soft tissue damage — may not show their full extent for hours or days, and brain-injury symptoms can take weeks.' Drop spinal cord injuries from the delayed list (or move the link to a separate clause about seeking care right away). MedlinePlus: https://medlineplus.gov/ency/article/001066.htm"
+  },
+  {
+   "surface": "body",
+   "claim": "While pre-existing conditions do not disqualify you from compensation, adjusters use this information to argue that the accident did not cause your current symptoms.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "AT Systems Southeast, Inc. v. Carnes, 272 Ga. App. 148 (2005) ('a tortfeasor takes a plaintiff in whatever condition')",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2005/a04a1879.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Aggravation of a pre-existing condition is compensable (reused from facts-1651/3493). Correct."
+  },
+  {
+   "surface": "body",
+   "claim": "Your insurance policy number (to your own insurer only)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Practice guidance",
+   "sourceUrl": "https://getquote.cure.com/PolicyDocs/mi/PP00010918-Final.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Sensible advice; no legal claim."
+  },
+  {
+   "surface": "body",
+   "claim": "You are not legally required to give a recorded statement to the at-fault driver's insurance company. There is no law in Georgia or South Carolina that obligates you to provide one.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 33-6-34; S.C. Code § 38-59-20 (no claimant duty in either; verified by absence, sibling pack 1719)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c059.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Correctly limited to the at-fault driver's insurer. Keep."
+  },
+  {
+   "surface": "body",
+   "claim": "Your own insurer may require cooperation, but this typically does not extend to a formal recorded statement in the immediate aftermath of an accident.",
+   "verdict": "update",
+   "currentValue": "The current ISO personal auto form expressly lists recorded statements among the insured's duties: a person seeking any coverage must 'Submit, as often as we reasonably require: ... b. To examination under oath and subscribe the same. c. To recorded statements.' Refusal can jeopardize coverage under your own policy (e.g., UM/UIM, MedPay, collision).",
+   "sourceName": "ISO Personal Auto Policy PP 00 01 09 18, Part E (Duties After an Accident or Loss), as filed by a carrier (CURE, Michigan); same text in National General VA form 02172",
+   "sourceUrl": "https://getquote.cure.com/PolicyDocs/mi/PP00010918-Final.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Part E.B: 'A person seeking any coverage must: 1. Cooperate with us in the investigation, settlement or defense of any claim or suit. ... 3. Submit, as often as we reasonably require: a. To physical exams by physicians we select. ... b. To examination under oath and subscribe the same. c. To recorded statements. 4. Authorize us to obtain: a. Medical reports; and b. Other pertinent records.' CONSEQUENTIAL: the sentence tells readers their own carrier typically cannot require a recorded statement, which the 2018 ISO form contradicts. Suggested: 'Your own insurer is different. Most auto policies require you to cooperate with your own carrier — including, under many policy forms, giving a recorded statement or an examination under oath when it reasonably asks — so do not simply refuse; review your policy language and let your attorney handle the request.' National General VA copy: https://nationalgeneral.com/forms_catalog/02172_01012021_VA.pdf (same text)."
+  },
+  {
+   "surface": "body",
+   "claim": "This is why most car accident lawyers advise clients to refuse recorded statements until they have legal representation.",
+   "verdict": "update",
+   "currentValue": "'most' is an unverifiable population claim; the advice applies to the other driver's insurer.",
+   "sourceName": "Editorial — no survey of lawyers located",
+   "sourceUrl": "https://www.law.cornell.edu/wex/insurance",
+   "retrievedAt": "2026-10-02",
+   "note": "Low priority. Suggested: 'This is why car accident lawyers commonly advise clients not to give the other driver's insurer a recorded statement until they have legal representation.' Aligns the sentence with the corrected own-insurer paragraph."
+  },
+  {
+   "surface": "body",
+   "claim": "You have 2 years from the date of the accident to file a personal injury lawsuit in Georgia (O.C.G.A. § 9-3-33). Missing this deadline typically bars your claim entirely.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-3-33",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "'Actions for injuries to the person shall be brought within two years after the right of action accrues.' Georgia has no general discovery rule for personal injury. Optional: property-damage suits have 4 years (§ 9-3-31); claims against a Georgia city need ante-litem notice within 6 months (§ 36-33-5) and against the state within 12 months (§ 50-21-26)."
+  },
+  {
+   "surface": "body",
+   "claim": "Under O.C.G.A. § 51-12-33, Georgia uses a modified comparative fault system. You can recover damages only if you are less than 50% at fault. Your compensation is reduced by your percentage of fault.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-33(a), (g)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "§ 51-12-33(g): 'the plaintiff shall not be entitled to receive any damages if the plaintiff is 50 percent or more responsible.' Unchanged by SB 68 (2025)."
+  },
+  {
+   "surface": "body",
+   "claim": "Statements you make to an insurance adjuster can be used to argue you bear a larger share of fault.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 24-8-801(d)(2)(A) (admissions by party-opponent); SCRE 801(d)(2)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "A party's own statement offered against him is not hearsay in either state. Correct."
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia requires minimum liability coverage of $25,000 per person / $50,000 per accident for bodily injury and $25,000 for property damage (O.C.G.A. § 33-7-11).",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 33-7-11(a)(1)(A), incorporated by § 40-9-37(a); Georgia OCI — Auto",
+   "sourceUrl": "https://oci.georgia.gov/insurance-resources/auto",
+   "retrievedAt": "2026-10-02",
+   "note": "Dollar figures 1-3 verified: OCI — 'Bodily Injury Liability – $25,000 per person and $50,000 per incident; Property Damage Liability – $25,000 per incident.' Optional precision: cite '(O.C.G.A. §§ 33-7-11(a)(1)(A), 40-9-37)', since § 40-9-37 is the section that makes the limits mandatory for owners. Justia: https://law.justia.com/codes/georgia/title-40/chapter-9/article-2/section-40-9-37/"
+  },
+  {
+   "surface": "body",
+   "claim": "Uninsured and underinsured motorist coverage is optional but highly recommended.",
+   "verdict": "update",
+   "currentValue": "Georgia insurers must include UM/UIM coverage in every policy at limits equal to the liability limits unless the insured rejects it in writing (O.C.G.A. § 33-7-11(a)(1), (a)(3)). It is optional only in the sense that you may decline it in writing.",
+   "sourceName": "O.C.G.A. § 33-7-11(a)(3) (sibling packs 1749, 1757)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-7/section-33-7-11/",
+   "retrievedAt": "2026-10-02",
+   "note": "§ 33-7-11(a)(3): 'The coverage required under paragraph (1) of this subsection shall not be applicable where any insured named in the policy shall reject the coverage in writing.' Suggested: 'Georgia policies include uninsured/underinsured motorist coverage unless you reject it in writing (O.C.G.A. § 33-7-11), and keeping it is highly recommended.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia is an at-fault (tort) state, meaning the driver who caused the accident is responsible for the other party's damages.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Insurance Information Institute, Background on: No-fault auto insurance (Georgia not among the 12 no-fault states); Georgia OCI — Auto",
+   "sourceUrl": "https://www.iii.org/article/background-on-no-fault-auto-insurance",
+   "retrievedAt": "2026-10-02",
+   "note": "Georgia repealed no-fault in 1991. Correct."
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina provides 3 years from the date of the accident to file a personal injury lawsuit (S.C. Code § 15-3-530).",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 15-3-530(5)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-02",
+   "note": "'Within three years: ... (5) an action for assault, battery, or any injury to the person or rights of another...' Optional: claims against a South Carolina governmental entity are 2 years under the Tort Claims Act (§ 15-78-110)."
+  },
+  {
+   "surface": "body",
+   "claim": "You can recover as long as you are not more than 50% at fault (effectively less than 51%). Your damages are reduced proportionally by your share of fault.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+   "retrievedAt": "2026-10-02",
+   "note": "'a plaintiff in a negligence action may recover damages if his or her negligence is not greater than that of the defendant. The amount of the plaintiff's recovery shall be reduced in proportion to the amount of his or her negligence.' Correct; this body sentence is the right formulation and the table/Key Takeaways should match it."
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina requires minimum liability coverage of $25,000 per person / $50,000 per accident for bodily injury and $25,000 for property damage (S.C. Code § 38-77-140).",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 38-77-140(A)(1)-(3)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Dollar figures 4-6 verified: '(1) twenty-five thousand dollars because of bodily injury to one person in any one accident ... (2) fifty thousand dollars because of bodily injury to two or more persons in any one accident; and (3) twenty-five thousand dollars because of injury to or destruction of property of others in any one accident.'"
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina also requires uninsured motorist coverage.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code §§ 38-77-150(A), 38-77-160",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+   "retrievedAt": "2026-10-02",
+   "note": "§ 38-77-150(A): no policy may issue without the UM provision at limits no less than § 38-77-140; no rejection clause. Optional addition: 'Underinsured motorist coverage must be offered but is optional (§ 38-77-160).'"
+  },
+  {
+   "surface": "body",
+   "claim": "Like Georgia, South Carolina is an at-fault state. The at-fault driver's insurance is primarily responsible for compensating the injured party.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 38-77-140; Insurance Information Institute (SC not a no-fault state)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct (sibling pack 4590)."
+  },
+  {
+   "surface": "body",
+   "claim": "Less than 50%",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-33(g)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Comparison table, Georgia comparative-fault cell. Correct."
+  },
+  {
+   "surface": "body",
+   "claim": "51% or less",
+   "verdict": "update",
+   "currentValue": "50% or less (barred at 51% or more)",
+   "sourceName": "Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+   "retrievedAt": "2026-10-02",
+   "note": "CONSEQUENTIAL. Comparison table, South Carolina comparative-fault cell. A plaintiff exactly 51% at fault is barred — their negligence is greater than the defendant's. The cell contradicts the post's own body text ('not more than 50% at fault (effectively less than 51%)'). Change to 'Less than 51%' or '50% or less'."
+  },
+  {
+   "surface": "body",
+   "claim": "$25K / $50K",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 33-7-11(a)(1)(A) / § 40-9-37; S.C. Code § 38-77-140(A)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Dollar figures 7-10 (two cells, two figures each) verified. Optional: add '/ $25K' property damage to each cell for completeness; the row is labeled bodily injury so it is correct as is."
+  },
+  {
+   "surface": "body",
+   "claim": "No (optional)",
+   "verdict": "update",
+   "currentValue": "Included unless rejected in writing",
+   "sourceName": "O.C.G.A. § 33-7-11(a)(3)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-7/section-33-7-11/",
+   "retrievedAt": "2026-10-02",
+   "note": "Comparison table, Georgia 'UM/UIM Coverage Required' cell. Georgia UM/UIM is part of every policy by default; the insured may reject it in writing."
+  },
+  {
+   "surface": "body",
+   "claim": "Yes (required)",
+   "verdict": "update",
+   "currentValue": "UM required; UIM must be offered (optional)",
+   "sourceName": "S.C. Code §§ 38-77-150(A), 38-77-160",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Comparison table, South Carolina cell under 'UM/UIM Coverage Required'. UM is mandatory; § 38-77-160 requires carriers to offer UIM 'at the option of the insured'. 'Yes (required)' overstates UIM."
+  },
+  {
+   "surface": "body",
+   "claim": "2 years (O.C.G.A. § 9-3-33)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-3-33",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Table cell. Correct for personal injury."
+  },
+  {
+   "surface": "body",
+   "claim": "3 years (S.C. Code § 15-3-530)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 15-3-530(5)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Table cell. Correct for personal injury."
+  },
+  {
+   "surface": "body",
+   "claim": "At-fault (tort)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Insurance Information Institute, Background on: No-fault auto insurance",
+   "sourceUrl": "https://www.iii.org/article/background-on-no-fault-auto-insurance",
+   "retrievedAt": "2026-10-02",
+   "note": "Table cells (both states). Correct."
+  },
+  {
+   "surface": "body",
+   "claim": "An adjuster may offer a fast settlement — sometimes within days of the accident — hoping you will accept before understanding the full extent of your injuries and damages. These initial offers are almost always far below the true value of the claim.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Practice guidance; S.C. Code § 38-59-20(5) lists compelling claimants to sue 'by offering substantially less than the amounts ultimately recovered' as an improper claim practice (regulator-enforced; no private action)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c059.php",
+   "retrievedAt": "2026-10-02",
+   "note": "'Almost always' is experience-based opinion, not a statistic; acceptable as firm voice. Optional soften to 'often'. No dollar figure or study cited."
+  },
+  {
+   "surface": "body",
+   "claim": "Some insurers deliberately slow the claims process, hoping financial pressure from mounting medical bills and lost wages will force you to accept a low settlement.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 33-6-34; S.C. Code § 38-59-20 (unfair claim settlement practices statutes, enforced by the regulators)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c059.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Hedged ('Some insurers'); the statutes recognize the conduct. Post does not mention bad faith, so no § 33-4-6/§ 33-4-7 framing issue arises. Keep."
+  },
+  {
+   "surface": "body",
+   "claim": "Insurance companies may monitor your social media accounts or even hire investigators to conduct physical surveillance.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Practice guidance",
+   "sourceUrl": "https://www.law.cornell.edu/wex/insurance",
+   "retrievedAt": "2026-10-02",
+   "note": "Hedged ('may'); no legal claim."
+  },
+  {
+   "surface": "body",
+   "claim": "They may use insurance company-affiliated medical reviewers to support these arguments.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Practice guidance",
+   "sourceUrl": "https://getquote.cure.com/PolicyDocs/mi/PP00010918-Final.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Hedged; no legal claim."
+  },
+  {
+   "surface": "body",
+   "claim": "These blanket authorizations give the insurance company access to your entire medical history, which they will comb through for pre-existing conditions.",
+   "verdict": "update",
+   "currentValue": "An authorization releases whatever it describes; 45 CFR 164.508(c)(1) requires it to describe the information to be disclosed, and (b)(5) lets you revoke it in writing. A broad form can reach your full history; a narrow one cannot.",
+   "sourceName": "45 CFR 164.508 (eCFR)",
+   "sourceUrl": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.508",
+   "retrievedAt": "2026-10-02",
+   "note": "Same correction as sibling pack 1719: the form's scope is whatever it says. Suggested: 'A broadly worded authorization can give the insurance company access to your entire medical history, which it will comb through for pre-existing conditions.' Advice not to sign is fine."
+  },
+  {
+   "surface": "body",
+   "claim": "Once you accept a settlement and sign a release, you cannot go back and ask for more money — even if your injuries turn out to be more serious than initially believed.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "General release law; practice guidance (sibling pack 4585)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "A general release extinguishes the released claims, including later-discovered injury. Correct as practical guidance."
+  },
+  {
+   "surface": "body",
+   "claim": "We work on a contingency fee basis — you pay nothing unless we recover compensation for you.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md — 'contingency fee, no fees unless we win'",
+   "sourceUrl": "/Users/brianhaas/Code/blue-sky-studio/client-rodenlaw-website/profiles/writer-profile.md",
+   "retrievedAt": "2026-10-02",
+   "note": "Firm statement. Matches the profile. Confirm with the firm that case costs are not charged if there is no recovery (Ga./S.C. RPC 1.5(c)); 'you owe no attorney's fee unless we recover' is the safer form (sibling pack 1712)."
+  },
+  {
+   "surface": "body",
+   "claim": "With offices in Savannah, Charleston, Columbia, and Myrtle Beach",
+   "verdict": "update",
+   "currentValue": "Six offices: Savannah and Darien, GA; Charleston, North Charleston, Columbia and Myrtle Beach, SC",
+   "sourceName": "client.json locations; writer-profile ('6 offices')",
+   "sourceUrl": "/Users/brianhaas/Code/blue-sky-studio/client-rodenlaw-website/client.json",
+   "retrievedAt": "2026-10-02",
+   "note": "Not false, but incomplete: omits Darien (GA) and North Charleston (SC). Suggested: 'With offices in Savannah and Darien, Georgia, and Charleston, North Charleston, Columbia, and Myrtle Beach, South Carolina'. Add location links only if those location pages exist."
+  },
+  {
+   "surface": "body",
+   "claim": "Call 1-844-RESULTS",
+   "verdict": "keep",
+   "currentValue": "tel:+18447378587",
+   "sourceName": "profiles/writer-profile.md (toll-free line 1-844-RESULTS is tel:+18447378587)",
+   "sourceUrl": "/Users/brianhaas/Code/blue-sky-studio/client-rodenlaw-website/profiles/writer-profile.md",
+   "retrievedAt": "2026-10-02",
+   "note": "href verified: 1-844-RESULTS = 1-844-737-8587; tel:+18447378587 matches."
+  },
+  {
+   "surface": "excerpt",
+   "claim": "What to say — and what not to say — when an insurance adjuster calls after a crash in Georgia or South Carolina, and why recorded statements are risky.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Descriptive",
+   "sourceUrl": "https://getquote.cure.com/PolicyDocs/mi/PP00010918-Final.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "No factual claim."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "After a car accident in Georgia or South Carolina, you have no obligation to speak with the at-fault driver's insurer.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 33-6-34; S.C. Code § 38-59-20 (no claimant duty)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c059.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Correctly limited to the at-fault driver's insurer."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Never give recorded statements without legal counsel.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Practice guidance; ISO PP 00 01 09 18 Part E",
+   "sourceUrl": "https://getquote.cure.com/PolicyDocs/mi/PP00010918-Final.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Advice, not a legal claim. Compatible with the corrected own-insurer paragraph (your own carrier may require one; do it with counsel)."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Georgia uses modified comparative fault under O.C.G.A. § 51-12-33 (less than 50%), South Carolina allows recovery at 51% or less.",
+   "verdict": "update",
+   "currentValue": "South Carolina allows recovery at 50% or less (barred at 51%).",
+   "sourceName": "Nelson v. Concrete Supply Co. (S.C. 1991); O.C.G.A. § 51-12-33(g)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+   "retrievedAt": "2026-10-02",
+   "note": "CONSEQUENTIAL — Key Takeaways render above the article. A plaintiff 51% at fault recovers nothing in South Carolina. Suggested: '... South Carolina allows recovery if you are 50% or less at fault (less than 51%).' Georgia half is correct."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Filing deadlines: 2 years in GA (O.C.G.A. § 9-3-33), 3 years in SC (S.C. Code § 15-3-530).",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-3-33; S.C. Code § 15-3-530(5)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct for personal injury. Optional: 'for injury lawsuits'."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Avoid admitting fault or saying you feel fine.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Practice guidance",
+   "sourceUrl": "https://getquote.cure.com/PolicyDocs/mi/PP00010918-Final.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Advice."
+  },
+  {
+   "surface": "faq",
+   "claim": "No. You have no legal obligation to speak with the at-fault driver's insurance company in Georgia or South Carolina. You can politely decline and refer them to your attorney. You do have a contractual duty to cooperate with your own insurer.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "ISO Personal Auto Policy PP 00 01 09 18, Part E (Duties After an Accident or Loss), as filed by a carrier (CURE, Michigan); same text in National General VA form 02172",
+   "sourceUrl": "https://getquote.cure.com/PolicyDocs/mi/PP00010918-Final.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. Correct on both halves; the 2018 ISO form's cooperation duty expressly includes recorded statements and EUOs."
+  },
+  {
+   "surface": "faq",
+   "claim": "You should not give a recorded statement to the at-fault driver's insurer without consulting an attorney first. There is no law requiring it, and recorded statements can be selectively quoted to minimize or deny your claim.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 33-6-34; S.C. Code § 38-59-20 (no claimant duty)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c059.php",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. Correctly limited to the at-fault driver's insurer."
+  },
+  {
+   "surface": "faq",
+   "claim": "Provide only basic information: your name, contact details, and the date and location of the accident. Do not discuss fault, your injuries in detail, or say you are fine. State that you are still receiving medical treatment and prefer to have your attorney handle further communications.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Practice guidance",
+   "sourceUrl": "https://getquote.cure.com/PolicyDocs/mi/PP00010918-Final.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. Advice only."
+  },
+  {
+   "surface": "faq",
+   "claim": "How long do I have to file a car accident claim in Georgia and South Carolina?",
+   "verdict": "update",
+   "currentValue": "The statutes of limitations govern filing a lawsuit, not an insurance claim.",
+   "sourceName": "O.C.G.A. § 9-3-33; S.C. Code § 15-3-530",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQ question. Suggested: 'How long do I have to file a car accident lawsuit in Georgia and South Carolina?' Low priority; pairs with the answer edit."
+  },
+  {
+   "surface": "faq",
+   "claim": "Georgia's statute of limitations is 2 years from the accident date (O.C.G.A. § 9-3-33). South Carolina allows 3 years (S.C. Code § 15-3-530). Missing these deadlines typically bars your claim.",
+   "verdict": "update",
+   "currentValue": "Personal injury: Georgia 2 years (§ 9-3-33), South Carolina 3 years (§ 15-3-530(5)). Vehicle/property damage: Georgia 4 years (§ 9-3-31), South Carolina 3 years (§ 15-3-530(4)). Claims against government bodies have shorter notice deadlines (Ga. § 36-33-5: 6 months for cities; § 50-21-26: 12 months for the state; S.C. § 15-78-110: 2 years).",
+   "sourceName": "O.C.G.A. §§ 9-3-33, 9-3-31; S.C. Code § 15-3-530",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-31/",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. Numbers correct but unqualified; a reader with only a property claim or a government defendant is misled. Suggested: 'Georgia gives you 2 years from the accident to file a personal injury lawsuit (O.C.G.A. § 9-3-33) and 4 years for vehicle damage (O.C.G.A. § 9-3-31). South Carolina allows 3 years for both (S.C. Code § 15-3-530). Claims against a government agency have much shorter notice deadlines. Missing these deadlines typically bars your claim.'"
+  },
+  {
+   "surface": "faq",
+   "claim": "A lowball offer is an initial settlement amount far below the true value of your claim, often made within days of the accident before you understand your full injuries. You should not accept any settlement without consulting an attorney, as signing a release permanently closes your claim.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Practice guidance; general release law",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. Hedged ('often'); no figure. Correct."
+  },
+  {
+   "surface": "faq",
+   "claim": "Yes. Insurance companies routinely monitor claimants' social media accounts. Photos of physical activities, check-ins at events, or posts about your daily life can be used to argue your injuries are not as severe as claimed. Limit social media activity during your claim.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Practice guidance; public posts are discoverable and admissible as party statements (O.C.G.A. § 24-8-801(d)(2)(A))",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. 'Routinely' is experience-based; acceptable. Optional soften to 'often'."
+  }
+ ],
+ "recommendedEdits": [
+  "Recorded statements, own-insurer paragraph (CONSEQUENTIAL): replace 'Your own insurer may require cooperation, but this typically does not extend to a formal recorded statement in the immediate aftermath of an accident. Review your policy language or ask your attorney to clarify your obligations.' with 'Your own insurer is different. Most auto policies require you to cooperate with your own carrier — including, under many policy forms, giving a recorded statement or an examination under oath when it reasonably asks — so do not simply refuse. Review your policy language and let your attorney handle the request.' (ISO PP 00 01 09 18 Part E.B.3.c 'To recorded statements.')",
+  "Comparison table, South Carolina comparative-fault cell: '51% or less' -> 'Less than 51%' (Nelson v. Concrete Supply Co.). Matches the body's 'not more than 50% at fault'.",
+  "Key Takeaways: 'South Carolina allows recovery at 51% or less.' -> 'South Carolina allows recovery if you are 50% or less at fault (less than 51%).'",
+  "Georgia section: 'Uninsured and underinsured motorist coverage is optional but highly recommended.' -> 'Georgia policies include uninsured/underinsured motorist coverage unless you reject it in writing (O.C.G.A. § 33-7-11), and keeping it is highly recommended.'",
+  "Comparison table, 'UM/UIM Coverage Required' row: Georgia 'No (optional)' -> 'Included unless rejected in writing'; South Carolina 'Yes (required)' -> 'UM required; UIM must be offered'. Optional body addition after 'South Carolina also requires uninsured motorist coverage.': ' Insurers must also offer underinsured motorist coverage, which is optional (S.C. Code § 38-77-160).'",
+  "Delayed-injury sentence: 'Many accident injuries — including traumatic brain injuries, soft tissue damage, and spinal cord injuries — do not fully manifest for days or weeks after the collision.' -> 'Many accident injuries — including traumatic brain injuries and soft tissue damage — may not show their full extent for hours or days, and brain-injury symptoms can take weeks.' (drop spinal cord injuries; keep or relocate the SCI link).",
+  "Medical authorizations item: 'These blanket authorizations give the insurance company access to your entire medical history' -> 'A broadly worded authorization can give the insurance company access to your entire medical history' (45 CFR 164.508(c)(1)).",
+  "FAQ 4 (FAQPage structured data): question 'file a car accident claim' -> 'file a car accident lawsuit'; answer -> 'Georgia gives you 2 years from the accident to file a personal injury lawsuit (O.C.G.A. § 9-3-33) and 4 years for vehicle damage (O.C.G.A. § 9-3-31). South Carolina allows 3 years for both (S.C. Code § 15-3-530). Claims against a government agency have much shorter notice deadlines. Missing these deadlines typically bars your claim.'",
+  "Intro link lead-in: 'Cornell Law Institute's insurance law overview' -> 'Cornell Law School's Legal Information Institute's insurance law overview' (href unchanged).",
+  "Offices line: 'With offices in Savannah, Charleston, Columbia, and Myrtle Beach' -> 'With offices in Savannah and Darien, Georgia, and Charleston, North Charleston, Columbia, and Myrtle Beach, South Carolina' (link only offices with existing location pages).",
+  "Optional: 'most car accident lawyers advise clients to refuse recorded statements' -> 'car accident lawyers commonly advise clients not to give the other driver's insurer a recorded statement'. Optional: Georgia minimum-coverage citation '(O.C.G.A. § 33-7-11)' -> '(O.C.G.A. §§ 33-7-11, 40-9-37)'.",
+  "metaDescription is empty — operator may add one; not a publish-claim issue.",
+  "No dollar figure changes: all 10 ($25,000/$50,000/$25,000 x2 states; $25K/$50K x2 table cells) are current. The post contains no statistics, no bad-faith statute references and no SB 68-affected claims (anchoring, phantom damages, seat-belt evidence) — nothing to correct on those fronts. Spanish twin: mirror the SC 51% fix, the own-insurer recorded-statement fix and the UM/UIM table changes if the twin carries them."
+ ],
+ "statuteCitations": [
+  {
+   "section": "O.C.G.A. § 9-3-33",
+   "name": "Injuries to the person — two-year limitation",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+  },
+  {
+   "section": "O.C.G.A. § 9-3-31",
+   "name": "Injuries to personalty — four-year limitation",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-31/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-33",
+   "name": "Apportionment of damages; no recovery at 50 percent or more fault",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+  },
+  {
+   "section": "O.C.G.A. § 33-7-11",
+   "name": "Uninsured motorist coverage; minimum limits (a)(1)(A); written rejection (a)(3)",
+   "url": "https://law.justia.com/codes/georgia/title-33/chapter-7/section-33-7-11/"
+  },
+  {
+   "section": "O.C.G.A. § 40-9-37",
+   "name": "Motor vehicle liability policy — minimum limits by reference to § 33-7-11(a)(1)(A)",
+   "url": "https://law.justia.com/codes/georgia/title-40/chapter-9/article-2/section-40-9-37/"
+  },
+  {
+   "section": "O.C.G.A. § 33-6-34",
+   "name": "Unfair claims settlement practices",
+   "url": "https://law.justia.com/codes/georgia/title-33/chapter-6/article-2/section-33-6-34/"
+  },
+  {
+   "section": "S.C. Code § 15-3-530",
+   "name": "Three-year limitation (personal injury (5); personal property (4))",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "section": "S.C. Code § 38-77-140",
+   "name": "Bodily injury and property damage limits (25/50/25)",
+   "url": "https://www.scstatehouse.gov/code/t38c077.php"
+  },
+  {
+   "section": "S.C. Code § 38-77-150",
+   "name": "Mandatory uninsured motorist provision",
+   "url": "https://www.scstatehouse.gov/code/t38c077.php"
+  },
+  {
+   "section": "S.C. Code § 38-77-160",
+   "name": "Additional UM and optional underinsured motorist coverage must be offered",
+   "url": "https://www.scstatehouse.gov/code/t38c077.php"
+  },
+  {
+   "section": "S.C. Code § 38-59-20",
+   "name": "Improper claim practices (regulator-enforced)",
+   "url": "https://www.scstatehouse.gov/code/t38c059.php"
+  },
+  {
+   "section": "Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)",
+   "name": "South Carolina modified comparative negligence — recover if not more negligent than defendant",
+   "url": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html"
+  },
+  {
+   "section": "45 CFR 164.508",
+   "name": "HIPAA — uses and disclosures requiring an authorization",
+   "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.508"
+  }
+ ],
+ "authoritativeLinks": [
+  {
+   "name": "ISO Personal Auto Policy PP 00 01 09 18 (carrier filing; Part E duties incl. recorded statements and EUO)",
+   "url": "https://getquote.cure.com/PolicyDocs/mi/PP00010918-Final.pdf"
+  },
+  {
+   "name": "Georgia Office of Insurance and Safety Fire Commissioner — Auto (minimum limits)",
+   "url": "https://oci.georgia.gov/insurance-resources/auto"
+  },
+  {
+   "name": "South Carolina Code Title 38 Chapter 77 (auto insurance)",
+   "url": "https://www.scstatehouse.gov/code/t38c077.php"
+  },
+  {
+   "name": "South Carolina Code Title 15 Chapter 3 (limitations)",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "name": "Legal Information Institute, Cornell Law School — Wex: insurance",
+   "url": "https://www.law.cornell.edu/wex/insurance"
+  },
+  {
+   "name": "NINDS — Traumatic Brain Injury",
+   "url": "https://www.ninds.nih.gov/health-information/disorders/traumatic-brain-injury-tbi"
+  },
+  {
+   "name": "Insurance Information Institute — Background on no-fault auto insurance",
+   "url": "https://www.iii.org/article/background-on-no-fault-auto-insurance"
+  }
+ ],
+ "quoteNote": "Claims are quoted from the rendered text with HTML tags removed: the recorded-statement, Georgia/South Carolina rule and settlement sentences span inline <strong> tags (e.g. '<strong>2 years</strong>', '<strong>O.C.G.A. § 9-3-33</strong>'), and the delayed-injury sentence spans two <a> links; all match exactly once tags are stripped. Table cells ('51% or less', 'No (optional)', 'Yes (required)', '$25K / $50K', 'Less than 50%', 'At-fault (tort)') are quoted as single cell text. '51% or less' also appears in Key Takeaways, recorded as a separate surface. law.justia.com URLs are reused from sibling packs (not re-fetched; Justia bot-challenges curl); all other sourceUrls returned 200 to curl on 2026-10-02 except ninds.nih.gov (403 to this curl, recorded as 200 in pack 1767) and the local profile/client.json paths."
+}
