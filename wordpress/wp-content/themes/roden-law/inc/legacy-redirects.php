@@ -1322,7 +1322,8 @@ function roden_phase1_removed_urls() {
         roden_dead_es_hub_urls(),
         roden_gbp_landing_urls(),
         roden_p0_hygiene_urls(),
-        roden_resource_consolidation_urls()
+        roden_resource_consolidation_urls(),
+        roden_ashley_phosphate_fold_urls()
     );
 }
 
@@ -2219,6 +2220,22 @@ function roden_p0_hygiene_urls() {
 function roden_resource_consolidation_urls() {
     return array(
         '/blog/georgia-car-seat-law-overview/' => '/resources/georgia-car-seat-laws/',
+    );
+}
+
+/**
+ * Two blog posts on the same intersection, merged onto the stronger URL. Owner,
+ * 2026-10-02: "merge this and do the 301", then "Keep 4337's URL". In Search Console
+ * over 16 months 4337 had 28 clicks / 4,339 impressions and ranked for 93 queries the
+ * other never reached; 4624 had 20 / 1,610, and its slug calls the intersection "South
+ * Carolina's deadliest", which the 2024 SCDPS data contradicts (#2 in the tri-county,
+ * #5 statewide, no deaths). 4624's freshness-verified content and title were copied
+ * onto 4337 the same day (bin/merge-ashley-phosphate-4624-into-4337.php); 4624 is
+ * retired to draft after this deploys.
+ */
+function roden_ashley_phosphate_fold_urls() {
+    return array(
+        '/blog/ashley-phosphate-i-26-south-carolinas-deadliest-intersection/' => '/blog/ashley-phosphate-road-i-26-dangerous-intersection-charleston/',
     );
 }
 
