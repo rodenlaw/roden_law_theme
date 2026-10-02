@@ -1,0 +1,19 @@
+{
+ "url": "https://rodenlaw.com/blog/columbia-dangerous-intersections-roads/",
+ "reviewed": "2026-10-02",
+ "attorney": "3732",
+ "modified": "2026-10-02 20:48:14",
+ "fields": {
+  "content": true,
+  "excerpt": true,
+  "keyTakeaways": true,
+  "metaDescription": true,
+  "faqs": true
+ },
+ "liveCheck": "Chrome 2026-10-02 with ?nc=: new text present, removed claims absent, FAQPage JSON-LD parses, dateModified 2026-10-02",
+ "title": {
+  "before": "The Most Dangerous Intersections and Roads in Columbia, South Carolina: A Driver's Guide",
+  "after": "Columbia, SC's Highest-Crash Intersections and Roads: A Driver's Guide",
+  "liveCheck": "<title>, H1 and Article headline carry the new title; slug unchanged"
+ }
+}
