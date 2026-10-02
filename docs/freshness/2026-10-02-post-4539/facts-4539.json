@@ -1,0 +1,604 @@
+{
+ "postId": 4539,
+ "slug": "darien-brunswick-dangerous-roads-i95-us17",
+ "liveUrl": "https://rodenlaw.com/blog/darien-brunswick-dangerous-roads-i95-us17/",
+ "jurisdiction": "GA",
+ "researchedAt": "2026-10-02",
+ "verifiedClaims": [
+  {
+   "surface": "excerpt",
+   "claim": "Why the I-95 and US-17 corridor through Darien and Brunswick is among southeast Georgia's most dangerous, and what to do after a crash.",
+   "verdict": "update",
+   "currentValue": "No GDOT, GOHS or FARS publication ranks Georgia corridors by danger; GDOT's crash-reporting page publishes no corridor ranking. Georgia-level context that is sourced: one-third of Georgia fatal crashes occur in rural areas although only 21% of Georgians live there, and rural counties recorded 113 speeding-related fatal crashes in 2023, the most in a decade (GOHS 2023 Overview).",
+   "sourceName": "GDOT — Crash Data & Reporting; GOHS — Georgia Traffic Safety Facts: 2023 Overview of Motor Vehicle Crashes",
+   "sourceUrl": "https://www.dot.ga.gov/GDOT/Pages/CrashReporting.aspx",
+   "retrievedAt": "2026-10-02",
+   "note": "Unsourced ranking. Suggested excerpt: 'Why I-95 and US-17 through Darien and Brunswick carry real crash risk — long-haul trucks, two-lane coastal highway, long rural EMS runs — and what to do after a crash.' The excerpt is published as the Article description."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "The I-95 and US-17 corridor through Darien and Brunswick is one of Southeast Georgia's most dangerous driving environments, with heavy commercial truck traffic, fatigued long-distance travelers, and rural two-lane roads with no median barriers.",
+   "verdict": "update",
+   "currentValue": "Same as excerpt: no primary source ranks the corridor. The two-lane/no-median description is accurate for US-17 north of Yacht Road in Glynn County and through McIntosh County, but GDOT is widening Yacht Road–SR 99 to four lanes with a 24-foot raised median (PI 0016985 Phase I, 82.27% complete; PI 532650- Phase II, 73%; both 'Under Construction', GeoPI Sept 2026).",
+   "sourceName": "GDOT GeoPI P.I. 0016985 and 532650-; GDOT — Crash Data & Reporting",
+   "sourceUrl": "https://www.dot.ga.gov/applications/geopi/Pages/Dashboard.aspx?ProjectId=0016985",
+   "retrievedAt": "2026-10-02",
+   "note": "Replace 'is one of Southeast Georgia's most dangerous driving environments' with 'is a high-risk driving environment'. Keep the three risk factors; optionally 'rural two-lane roads, much of it without median barriers'."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Georgia's two-year statute of limitations (O.C.G.A. § 9-3-33) and comparative fault rule (O.C.G.A. § 51-12-33, less than 50% at fault) apply to crashes in McIntosh and Glynn counties, while federal trucking regulations provide additional grounds for claims against negligent commercial carriers on I-95.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia Code §§ 9-3-33, 51-12-33 (Justia; verified in facts-4715/4721/4709)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Two-year limit and the 50% bar (plaintiff recovers only if less than 50% at fault, award reduced by own share) verified; § 51-12-33 bar unchanged by 2025 SB 68. FMCSRs (49 C.F.R. Parts 390–399) are correctly characterized as evidence of negligence, not a separate cause of action."
+  },
+  {
+   "surface": "faq:0",
+   "claim": "Interstate 95 and U.S. Highway 17 are the most dangerous roads in the Darien-Brunswick area.",
+   "verdict": "update",
+   "currentValue": "No GDOT/GOHS/FARS source ranks roads in McIntosh or Glynn County.",
+   "sourceName": "GDOT — Crash Data & Reporting",
+   "sourceUrl": "https://www.dot.ga.gov/GDOT/Pages/CrashReporting.aspx",
+   "retrievedAt": "2026-10-02",
+   "note": "Change to 'Interstate 95 and U.S. Highway 17 carry the area's highest-risk traffic.' or 'are the main crash corridors'. FAQ answers publish as FAQPage structured data."
+  },
+  {
+   "surface": "faq:0",
+   "claim": "U.S. 17 is a two-lane coastal highway through McIntosh County with no median barriers, limited shoulders, and frequent logging truck traffic.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "GDOT GeoPI P.I. 532650- / 0016985 project descriptions (existing two-lane section; widening only in Glynn County)",
+   "sourceUrl": "https://www.dot.ga.gov/applications/geopi/Pages/Dashboard.aspx?ProjectId=532650-",
+   "retrievedAt": "2026-10-02",
+   "note": "Two-lane in McIntosh County is consistent with GDOT's project scope (the widening ends at SR 99 in Glynn County). 'Limited shoulders' and 'frequent logging truck traffic' are qualitative and not contradicted; no count source exists."
+  },
+  {
+   "surface": "faq:1",
+   "claim": "heavy truck traffic from the Port of Savannah and Port of Jacksonville creates dangerous conditions",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia Ports Authority (facts-4715: Port of Savannah ~80% of cargo leaves by truck, ~15,000 truck moves a day)",
+   "sourceUrl": "https://gaports.com/press-releases/port-of-savannah-volumes-up-18-in-june/",
+   "retrievedAt": "2026-10-02",
+   "note": "Qualitative; acceptable. The nearest port is actually GPA's Port of Brunswick (Colonel's Island, at I-95 exit 29; nation's busiest auto port) — optional to add 'and the Port of Brunswick'. gaports.com returned 403 to curl on the Brunswick facility page this run; the Savannah release resolved in run-4715."
+  },
+  {
+   "surface": "faq:2",
+   "claim": "Under O.C.G.A. § 9-3-33, Georgia gives accident victims two years from the date of injury to file a personal injury lawsuit.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia Code § 9-3-33 (Justia)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified. Georgia has no general discovery rule for motor-vehicle injury claims."
+  },
+  {
+   "surface": "faq:2",
+   "claim": "If you are a South Carolina resident injured on I-95 in Georgia, the Georgia two-year deadline applies to your claim.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md — Jurisdiction rules (single-state pages show only that state's law); facts-4715 precedent",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Cross-jurisdiction framing on a Georgia-only hyperlocal post. Also overstated: the two-year Georgia period governs a suit filed in Georgia; where an out-of-state resident files elsewhere, choice-of-law can change the analysis. Delete the sentence (or, if a line is wanted: 'The same two-year deadline applies to out-of-state travelers who bring their claim in Georgia')."
+  },
+  {
+   "surface": "faq:2",
+   "claim": "South Carolina allows three years under S.C. Code § 15-3-530 for crashes that occur within its borders.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md — Jurisdiction rules (single-state pages show only that state's law); facts-4715 precedent",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "SC law on a Georgia-only post — delete (same as facts-4715 FAQ 0). The SC statement itself is accurate but irrelevant; including it makes this a two-state page requiring the SC reviewer."
+  },
+  {
+   "surface": "faq:3",
+   "claim": "(the nearest Level 1 center is Memorial Health in Savannah, about 60 miles from Darien)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia DPH — Designated Trauma & Specialty Care Centers (Memorial Health University Medical Center, 4700 Waters Ave, Savannah — Level I)",
+   "sourceUrl": "https://dph.georgia.gov/EMS/specialty-care-centers-cardiac-trauma-stroke-pediatric",
+   "retrievedAt": "2026-10-02",
+   "note": "Level I designation verified on the DPH list this run. Straight-line Darien–Memorial is ~49 miles; the I-95 drive is roughly 58–60 miles, so 'about 60 miles' is fair. No Georgia Level I center is closer."
+  },
+  {
+   "surface": "faq:5",
+   "claim": "The Georgia Department of Transportation is widening sections of U.S. 17 in northern Glynn County from two lanes to four lanes, which should improve safety once complete.",
+   "verdict": "update",
+   "currentValue": "GDOT is widening SR 25/US 17 from Yacht Drive to SR 99/Grants Ferry Road (about 6.4 miles) from two lanes to four 12-foot lanes with a 24-foot raised median, turn lanes, and replacement bridges at Thornhill Creek and Wallyleg Branch. Phase I (Yacht Rd–Harry Driggers Blvd, P.I. 0016985): 'Under Construction', 82.27% complete (GeoPI, retrieved 2026-10-02). Phase II (Harry Driggers Blvd–SR 99, P.I. 532650-): 'Under Construction', 73% complete. GDOT's 2026-07-31 advisory still lists daily and nightly lane closures with flagging from Yacht Road to SR 99. A roundabout at US 17/SR 99 is open.",
+   "sourceName": "GDOT GeoPI P.I. 0016985 and 532650-; GDOT 2017 public-hearing handout (P.I. 532650-); WTOC GDOT advisory 2026-07-31",
+   "sourceUrl": "https://www.dot.ga.gov/applications/geopi/Pages/Dashboard.aspx?ProjectId=0016985",
+   "retrievedAt": "2026-10-02",
+   "note": "Fact verified; add currency so it does not go stale: '...from Yacht Drive to SR 99, a project still under construction in 2026...'. Phase II GeoPI: https://www.dot.ga.gov/applications/geopi/Pages/Dashboard.aspx?ProjectId=532650- ; hearing handout: https://mydocs.dot.ga.gov/PublicOutreach/532650-/PDF/532650%20PHOH%20Handout_March%209%202017_signed.pdf"
+  },
+  {
+   "surface": "faq:5",
+   "claim": "McIntosh County sections of US-17 remain largely two-lane with no current widening plans.",
+   "verdict": "update",
+   "currentValue": "Two-lane through McIntosh County is consistent with GDOT's project limits (widening ends at SR 99 in Glynn County). No GDOT source was found either confirming or ruling out future McIntosh widening.",
+   "sourceName": "GDOT GeoPI P.I. 532650- (project limits)",
+   "sourceUrl": "https://www.dot.ga.gov/applications/geopi/Pages/Dashboard.aspx?ProjectId=532650-",
+   "retrievedAt": "2026-10-02",
+   "note": "Keep 'McIntosh County sections of US-17 remain largely two-lane'; drop 'with no current widening plans' (an unverifiable negative that can silently become false)."
+  },
+  {
+   "surface": "body",
+   "claim": "The stretch of Interstate 95 and U.S. Highway 17 running through McIntosh County and Glynn County in Southeast Georgia is one of the most deceptively dangerous driving corridors in the state.",
+   "verdict": "update",
+   "currentValue": "No statewide corridor ranking exists in GDOT/GOHS publications.",
+   "sourceName": "GDOT — Crash Data & Reporting",
+   "sourceUrl": "https://www.dot.ga.gov/GDOT/Pages/CrashReporting.aspx",
+   "retrievedAt": "2026-10-02",
+   "note": "Replace 'is one of the most deceptively dangerous driving corridors in the state' with 'is a deceptively dangerous driving corridor'."
+  },
+  {
+   "surface": "body",
+   "claim": "Interstate 95 is the East Coast's primary north-south highway, carrying travelers and commercial trucks between Florida and the northeastern United States.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Wikipedia — Interstate 95 in Georgia",
+   "sourceUrl": "https://en.wikipedia.org/wiki/Interstate_95_in_Georgia",
+   "retrievedAt": "2026-10-02",
+   "note": "Uncontroversial."
+  },
+  {
+   "surface": "body",
+   "claim": "The proximity of the Port of Savannah to the north and the Port of Jacksonville to the south means I-95 through this corridor carries extremely heavy commercial truck traffic.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia Ports Authority (via facts-4715 and facts-4709)",
+   "sourceUrl": "https://gaports.com/press-releases/port-of-savannah-volumes-up-18-in-june/",
+   "retrievedAt": "2026-10-02",
+   "note": "Qualitative. No AADT/truck-percentage figure is given, so nothing to correct; optionally mention the Port of Brunswick (Colonel's Island, I-95 exit 29), which is in this corridor."
+  },
+  {
+   "surface": "body",
+   "claim": "Tractor-trailer crashes on this stretch of I-95 are frequently catastrophic due to the combination of 70+ mph speeds, 80,000-pound vehicles, and limited access to Level 1 trauma centers.",
+   "verdict": "update",
+   "currentValue": "70 mph is the lawful maximum on Georgia interstates where posted (O.C.G.A. § 40-6-181(b)(3)); 80,000 lb is the federal Interstate gross-weight cap (23 U.S.C. § 127).",
+   "sourceName": "Georgia Code § 40-6-181 (Justia); 23 U.S.C. § 127 (Cornell LII)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-9/section-40-6-181/",
+   "retrievedAt": "2026-10-02",
+   "note": "'70+ mph' implies the norm is above the limit; change to '70-mph speeds'. 80,000 lb verified: https://www.law.cornell.edu/uscode/text/23/127"
+  },
+  {
+   "surface": "body",
+   "claim": "Head-on collisions on these roads — caused by crossing the center line due to fatigue, distraction, or overcorrection — are among the deadliest crash types in rural Georgia.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "GOHS 2023 Overview (one-third of Georgia fatal crashes are rural)",
+   "sourceUrl": "https://www.gahighwaysafety.org/wp-content/uploads/2025/10/2023-Overview-of-Motor-Vehicle-Crashes.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Qualitative; consistent with national evidence. No figure to correct."
+  },
+  {
+   "surface": "body",
+   "claim": "I-95 at Exit 49 (GA-99/Darien):",
+   "verdict": "update",
+   "currentValue": "Exit 49 is SR 251 (Darien), a 'commercialized diamond interchange in north Darien'. SR 99 is exit 42 (and, with SR 57, exit 58 at Eulonia).",
+   "sourceName": "AARoads — Interstate 95 Georgia guide; Wikipedia — Interstate 95 in Georgia exit list (GDOT county maps)",
+   "sourceUrl": "https://www.aaroads.com/guides/i-095-ga/",
+   "retrievedAt": "2026-10-02",
+   "note": "Change to 'I-95 at Exit 49 (GA-251/Darien):'. Exit list: https://en.wikipedia.org/wiki/Interstate_95_in_Georgia"
+  },
+  {
+   "surface": "body",
+   "claim": "The transition from 70+ mph highway travel to a low-speed commercial exit area produces rear-end collisions from vehicles slowing suddenly and angle crashes from vehicles merging back onto the interstate.",
+   "verdict": "update",
+   "currentValue": "70 mph posted maximum (§ 40-6-181(b)(3)). No crash data published for the interchange.",
+   "sourceName": "Georgia Code § 40-6-181 (Justia)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-9/section-40-6-181/",
+   "retrievedAt": "2026-10-02",
+   "note": "Change '70+ mph' to '70-mph' and 'produces' to 'can produce' — no interchange-level crash source."
+  },
+  {
+   "surface": "body",
+   "claim": "I-95 at Exit 42 (US-17/South Brunswick): This interchange handles traffic between I-95 and the southern Brunswick area, including vehicles heading to Jekyll Island and St. Simons Island.",
+   "verdict": "update",
+   "currentValue": "Exit 42 is SR 99 (Grants Ferry Road toward Darien/Sterling), north of Brunswick — not US-17 and not south Brunswick. St. Simons traffic uses exit 38 (SR 25 Spur/Golden Isles Parkway); Jekyll Island traffic uses exit 29 (US 17/US 82/SR 520). Exit 36 is US 25/US 341 (Jesup).",
+   "sourceName": "Wikipedia — Interstate 95 in Georgia exit list (GDOT county maps); facts-4709 (SR 99/Grants Ferry Rd at exit 42)",
+   "sourceUrl": "https://en.wikipedia.org/wiki/Interstate_95_in_Georgia",
+   "retrievedAt": "2026-10-02",
+   "note": "Wrong interchange. Economical fix: relabel to 'I-95 at Exit 38 (Golden Isles Parkway/Brunswick):' and change the sentence to 'This interchange handles traffic between I-95 and Brunswick, including vehicles heading to St. Simons Island.' Move Jekyll Island to the Exit 29 item."
+  },
+  {
+   "surface": "body",
+   "claim": "I-95 at Exit 29 (US-82/Brunswick): The major Brunswick interchange handles heavy commercial and commuter traffic and is a frequent site of rear-end and sideswipe collisions, particularly during peak travel periods.",
+   "verdict": "update",
+   "currentValue": "Exit 29 is US 17/US 82/SR 520 (Brunswick, Jekyll Island, Waverly; eastern terminus of US 82). GPA's Colonel's Island terminal (Port of Brunswick) is reached from this interchange.",
+   "sourceName": "Wikipedia — Interstate 95 in Georgia exit list; facts-4709 (Colonel's Island access at exit 29)",
+   "sourceUrl": "https://en.wikipedia.org/wiki/Interstate_95_in_Georgia",
+   "retrievedAt": "2026-10-02",
+   "note": "Relabel to 'Exit 29 (US-17/US-82/Brunswick–Jekyll Island)'. 'Frequent site of rear-end and sideswipe collisions' has no interchange-level source — change 'is a frequent site of' to 'sees' or 'is prone to'. Optionally replace 'commuter' with 'port and tourist' traffic."
+  },
+  {
+   "surface": "body",
+   "claim": "The I-95/US-17 corridor overlap: In sections where I-95 and US-17 run in close proximity",
+   "verdict": "update",
+   "currentValue": "I-95 and US-17 do not overlap (no concurrency) in Georgia; they run parallel, a few miles apart, connected at exits 29, 38, 42 (via SR 99) and 49 (via SR 251).",
+   "sourceName": "Wikipedia — Interstate 95 in Georgia; Wikipedia — U.S. Route 17 in Georgia",
+   "sourceUrl": "https://en.wikipedia.org/wiki/Interstate_95_in_Georgia",
+   "retrievedAt": "2026-10-02",
+   "note": "Change 'corridor overlap' to 'parallel routes'. The rest of the sentence already says 'close proximity'."
+  },
+  {
+   "surface": "body",
+   "claim": "Fatigue is a major factor — many truck drivers have been on the road for extended hours by the time they reach this corridor, and violations of federal hours-of-service regulations are common.",
+   "verdict": "update",
+   "currentValue": "Federal hours-of-service limits: 11 hours driving within a 14-hour window after 10 consecutive hours off duty; 60/70-hour weekly limits (49 C.F.R. § 395.3). No source quantifies HOS violations on this corridor.",
+   "sourceName": "49 C.F.R. § 395.3 (Cornell LII)",
+   "sourceUrl": "https://www.law.cornell.edu/cfr/text/49/395.3",
+   "retrievedAt": "2026-10-02",
+   "note": "Change 'and violations of federal hours-of-service regulations are common' to 'and federal hours-of-service rules (49 C.F.R. § 395.3) cap how long they may drive'."
+  },
+  {
+   "surface": "body",
+   "claim": "The limited availability of truck parking and rest areas along this stretch compounds the problem.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "No GDOT/FHWA source located for truck-parking capacity on I-95 in McIntosh/Glynn. (GA DPS inspection stations at MM 55/56 in McIntosh County are not parking.) Delete, or keep only if a GDOT truck-parking study is cited."
+  },
+  {
+   "surface": "body",
+   "claim": "U.S. 17 is the historic coastal highway connecting Savannah to Brunswick and beyond.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Wikipedia — U.S. Route 17 in Georgia",
+   "sourceUrl": "https://en.wikipedia.org/wiki/U.S._Route_17_in_Georgia",
+   "retrievedAt": "2026-10-02",
+   "note": "Ocean Highway/Coastal Highway; accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "The Georgia Department of Transportation has been widening sections of US-17 in northern Glynn County from two lanes to four, but the construction itself creates temporary hazards.",
+   "verdict": "keep",
+   "currentValue": "Yacht Drive to SR 99, ~6.4 miles; Phase I 82.27% / Phase II 73% complete, both under construction (GeoPI, Sept–Oct 2026).",
+   "sourceName": "GDOT GeoPI P.I. 0016985 and 532650-; WTOC GDOT advisory 2026-07-31",
+   "sourceUrl": "https://www.dot.ga.gov/applications/geopi/Pages/Dashboard.aspx?ProjectId=0016985",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified. Lane closures with flagging still listed in GDOT's 2026-07-31 advisory: https://www.wtoc.com/2026/07/31/gdot-weekly-traffic-advisory-expect-lane-closures-delays-across-southeast-georgia/"
+  },
+  {
+   "surface": "body",
+   "claim": "Speed limits on US-17 reach 55 mph in rural sections",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia Code § 40-6-181(b)(5) (Justia); facts-4709",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-9/section-40-6-181/",
+   "retrievedAt": "2026-10-02",
+   "note": "55 mph is the statutory maximum 'in other locations'; the widened section is designed for 55 mph (GeoPI)."
+  },
+  {
+   "surface": "body",
+   "claim": "Construction zone accidents carry enhanced penalties in Georgia, but they continue to occur.",
+   "verdict": "update",
+   "currentValue": "O.C.G.A. § 40-6-188: speeding in a designated highway work zone (with workers, barriers, work vehicles or drop-offs present) is a misdemeanor of a high and aggravated nature, fine $100–$2,000 and/or up to 12 months; GDOT signs work zones 'increased penalties for speeding violations are in effect'. DDS assesses 2–6 points for work-zone speeding. The enhancement is for speeding, not for crashes as such.",
+   "sourceName": "GDOT Special Provision Section 150 (citing O.C.G.A. § 40-6-188); Georgia DDS — Points Schedule",
+   "sourceUrl": "https://www.dot.ga.gov/PartnerSmart/Business/Source/special_provisions/shelf/sp150.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Change to 'Speeding in a Georgia highway work zone carries increased penalties (O.C.G.A. § 40-6-188), but work-zone crashes continue to occur.' Keep the link but note its anchor ('Construction zone accidents') points to the construction-accident practice page. DDS: https://dds.georgia.gov/points-schedule . Justia § 40-6-188 not fetched (bot challenge; not in sibling packs)."
+  },
+  {
+   "surface": "body",
+   "claim": "US-17 crosses several bridges over rivers and marshland inlets between Darien and Brunswick. These bridges are narrow, often lack adequate shoulders, and become slippery during rain — creating conditions for loss-of-control crashes.",
+   "verdict": "update",
+   "currentValue": "US-17 crosses the Altamaha delta channels between Darien and the Glynn County line; the Glynn widening replaces the Thornhill Creek and Wallyleg Branch bridges with four-lane structures.",
+   "sourceName": "GDOT 2017 public-hearing handout, P.I. 532650-; New Georgia Encyclopedia — Altamaha River",
+   "sourceUrl": "https://mydocs.dot.ga.gov/PublicOutreach/532650-/PDF/532650%20PHOH%20Handout_March%209%202017_signed.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Bridge crossings verified; 'narrow, often lack adequate shoulders' is an unsourced characterization of specific state structures. Change 'These bridges are narrow, often lack adequate shoulders, and become slippery during rain' to 'Bridge decks can ice or become slick in rain and often have narrower shoulders than the approach road'."
+  },
+  {
+   "surface": "body",
+   "claim": "U.S. 82 connects Brunswick to Waycross and the Georgia interior, while U.S. 341 runs from Brunswick northwest toward Dublin and central Georgia.",
+   "verdict": "update",
+   "currentValue": "US 341 runs from Brunswick (US 17) northwest through Jesup, Baxley, Hazlehurst, McRae-Helena, Eastman, Hawkinsville and Perry to Barnesville; it does not pass through Dublin. US 82's eastern terminus is at I-95 exit 29 in Brunswick and it runs west through Waycross.",
+   "sourceName": "Wikipedia — U.S. Route 341 (GDOT county maps); Wikipedia — Interstate 95 in Georgia",
+   "sourceUrl": "https://en.wikipedia.org/wiki/U.S._Route_341",
+   "retrievedAt": "2026-10-02",
+   "note": "Change 'toward Dublin and central Georgia' to 'toward Jesup, Baxley and central Georgia'."
+  },
+  {
+   "surface": "body",
+   "claim": "The nearest Level 1 trauma center to Darien is Memorial Health University Medical Center in Savannah — roughly 60 miles north.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia DPH — Designated Trauma & Specialty Care Centers",
+   "sourceUrl": "https://dph.georgia.gov/EMS/specialty-care-centers-cardiac-trauma-stroke-pediatric",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified (Level I, Chatham County). Distance fair by I-95."
+  },
+  {
+   "surface": "body",
+   "claim": "Drowsy driving: Long-distance travelers on I-95 — both truck drivers and passenger vehicle operators — are frequently fatigued by the time they reach this corridor, and drowsy driving mimics the impairment of intoxication.",
+   "verdict": "keep",
+   "currentValue": "Being awake 18 hours produces impairment comparable to a 0.05% BAC; 24 hours, roughly 0.10% (Journal of Occupational and Environmental Medicine study, summarized by the Sleep Foundation).",
+   "sourceName": "Sleep Foundation — Drowsy Driving (citing J. Occup. Environ. Med.)",
+   "sourceUrl": "https://www.sleepfoundation.org/drowsy-driving",
+   "retrievedAt": "2026-10-02",
+   "note": "Supported. CDC/NHTSA drowsy-driving pages returned 403 to curl; the Sleep Foundation page resolved."
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia speed limits are governed by O.C.G.A. § 40-6-181.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia Code § 40-6-181 (Justia)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-9/section-40-6-181/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct: (b)(3) 70 mph on interstates where posted; (b)(5) 55 mph other locations. Super Speeder (§ 40-6-189) not mentioned."
+  },
+  {
+   "surface": "body",
+   "claim": "Alcohol and drug impairment is a significant factor in fatal crashes throughout rural Georgia.",
+   "verdict": "keep",
+   "currentValue": "27% of Georgia traffic fatalities in 2023 were alcohol-related (30% nationally); alcohol-related fatal crashes fell 15% in 2023.",
+   "sourceName": "GOHS — Georgia Traffic Safety Facts: 2023 Overview",
+   "sourceUrl": "https://www.gahighwaysafety.org/wp-content/uploads/2025/10/2023-Overview-of-Motor-Vehicle-Crashes.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Qualitative statement supported at the state level; no rural-only alcohol figure in the overview."
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia and South Carolina Laws That Protect You",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md — Jurisdiction rules (single-state pages show only that state's law); facts-4715 precedent",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "H2 and its table-of-contents link (#georgia-laws). Change both to 'Georgia Laws That Protect You'; keep the id."
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina allows three years under S.C. Code § 15-3-530.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md — Jurisdiction rules (single-state pages show only that state's law); facts-4715 precedent",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "SC limitations period on a Georgia-only post — delete."
+  },
+  {
+   "surface": "body",
+   "claim": "For I-95 travelers from South Carolina injured in Georgia, the Georgia two-year deadline applies.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md — Jurisdiction rules (single-state pages show only that state's law); facts-4715 precedent",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Cross-jurisdiction framing; delete (or 'Out-of-state travelers who bring their claim in Georgia face the same two-year deadline.')."
+  },
+  {
+   "surface": "body",
+   "claim": "Under O.C.G.A. § 9-3-33, Georgia accident victims have two years from the date of injury to file a personal injury lawsuit.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia Code § 9-3-33 (Justia)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified."
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia's modified comparative fault rule under O.C.G.A. § 51-12-33 allows you to recover compensation as long as you are less than 50% at fault for the accident, with your award reduced by your percentage of responsibility.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia Code § 51-12-33 (Justia)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified; 50% bar unchanged by 2025 SB 68 (which addressed other tort issues)."
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina's threshold is slightly higher at less than 51% at fault.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md — Jurisdiction rules (single-state pages show only that state's law); facts-4715 precedent",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "SC rule on a Georgia-only post — delete (same as facts-4715 KT drop)."
+  },
+  {
+   "surface": "body",
+   "claim": "When a crash on I-95 or US-17 is fatal, Georgia's wrongful death statute (O.C.G.A. § 51-4-1) allows surviving family members to seek compensation for their loss.",
+   "verdict": "update",
+   "currentValue": "§ 51-4-1 is the definitions section ('full value of the life of the decedent', 'homicide'). The right of action is § 51-4-2 (surviving spouse, then children); parents recover under § 19-7-1 when no spouse or child survives. Recovery is measured by the full value of the decedent's life, not the family's 'loss'.",
+   "sourceName": "Georgia Code §§ 51-4-1, 51-4-2 (Justia; verified in facts-4715)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-4/section-51-4-2/",
+   "retrievedAt": "2026-10-02",
+   "note": "Change '(O.C.G.A. § 51-4-1) allows surviving family members to seek compensation for their loss' to '(O.C.G.A. §§ 51-4-1, 51-4-2) allows the surviving spouse or children — or parents, if neither survives — to recover the full value of the decedent's life'."
+  },
+  {
+   "surface": "body",
+   "claim": "Truck accidents on I-95 often involve out-of-state trucking companies subject to federal Motor Carrier Safety Administration regulations.",
+   "verdict": "update",
+   "currentValue": "The regulations are the Federal Motor Carrier Safety Regulations (49 C.F.R. Parts 390–399), administered by the Federal Motor Carrier Safety Administration; they apply to interstate carriers (49 C.F.R. § 390.3).",
+   "sourceName": "49 C.F.R. § 390.3 (Cornell LII)",
+   "sourceUrl": "https://www.law.cornell.edu/cfr/text/49/390.3",
+   "retrievedAt": "2026-10-02",
+   "note": "Capitalization/naming fix: 'subject to the Federal Motor Carrier Safety Regulations'."
+  },
+  {
+   "surface": "body",
+   "claim": "The closest hospital to Darien is Southeast Georgia Health System in Brunswick.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia DPH — Designated Trauma & Specialty Care Centers; facts-4721/4709",
+   "sourceUrl": "https://dph.georgia.gov/EMS/specialty-care-centers-cardiac-trauma-stroke-pediatric",
+   "retrievedAt": "2026-10-02",
+   "note": "McIntosh County has no hospital; SGHS Brunswick Campus (2415 Parkwood Dr) is the nearest ED. It is not a designated trauma center — do not call it one. Optional: 'Southeast Georgia Health System's Brunswick Campus'."
+  },
+  {
+   "surface": "body",
+   "claim": "Take your case to trial in McIntosh County Superior Court or Glynn County Superior Court when insurance companies refuse to offer fair compensation",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "facts-4721 (Glynn State and Superior Courts in Brunswick; McIntosh State and Superior Courts, Atlantic Judicial Circuit, Darien)",
+   "sourceUrl": "https://www.glynncounty.org/government/departments/state-court",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate; both counties also have a State Court with jurisdiction over civil tort suits (optional 'State or Superior Court')."
+  },
+  {
+   "surface": "body",
+   "claim": "With more than $300 million recovered for our clients and a 4.9-star average client rating",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md firm facts ($300M+ recovered · 4.9-star average)",
+   "sourceUrl": "/Users/brianhaas/Code/blue-sky-studio/client-rodenlaw-website/profiles/writer-profile.md",
+   "retrievedAt": "2026-10-02",
+   "note": "Firm figures match the profile; the only dollar figure in the post."
+  },
+  {
+   "surface": "body",
+   "claim": "Call (912) 303-5850 or 1-844-RESULTS.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "client.json (Darien/Savannah office line); profiles/writer-profile.md (1-844-RESULTS)",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Hrefs tel:+19123035850 and tel:+18447378587 match client.json/profile."
+  }
+ ],
+ "recommendedEdits": [
+  "Excerpt + Key Takeaways + intro + FAQ 1: replace the unsourced rankings ('among southeast Georgia's most dangerous', 'one of Southeast Georgia's most dangerous driving environments', 'one of the most deceptively dangerous driving corridors in the state', 'are the most dangerous roads in the Darien-Brunswick area') with non-ranking wording ('a high-risk corridor' / 'a deceptively dangerous driving corridor' / 'carry the area's highest-risk traffic').",
+  "Exit list: 'Exit 49 (GA-99/Darien)' → 'Exit 49 (GA-251/Darien)'. 'Exit 42 (US-17/South Brunswick) … Jekyll Island and St. Simons Island' → 'Exit 38 (Golden Isles Parkway/Brunswick): This interchange handles traffic between I-95 and Brunswick, including vehicles heading to St. Simons Island.' 'Exit 29 (US-82/Brunswick)' → 'Exit 29 (US-17/US-82/Brunswick–Jekyll Island)', and 'is a frequent site of' → 'is prone to'. Heading 'The I-95/US-17 corridor overlap' → 'The I-95/US-17 parallel routes'. '70+ mph' → '70-mph' (twice).",
+  "South Carolina removal (Georgia-only post, facts-4715 precedent): H2 and TOC link 'Georgia and South Carolina Laws That Protect You' → 'Georgia Laws That Protect You' (keep id georgia-laws); delete 'South Carolina allows three years under S.C. Code § 15-3-530.', 'For I-95 travelers from South Carolina injured in Georgia, the Georgia two-year deadline applies.', and 'South Carolina's threshold is slightly higher at less than 51% at fault.'; in FAQ 3 delete the last two sentences (SC resident; SC three years). Result: zero SC mentions on any surface.",
+  "Wrongful death: '(O.C.G.A. § 51-4-1) allows surviving family members to seek compensation for their loss' → '(O.C.G.A. §§ 51-4-1, 51-4-2) allows the surviving spouse or children — or parents, if neither survives — to recover the full value of the decedent's life'. 'federal Motor Carrier Safety Administration regulations' → 'the Federal Motor Carrier Safety Regulations'.",
+  "US-341: 'toward Dublin and central Georgia' → 'toward Jesup, Baxley and central Georgia'.",
+  "Trucks: 'and violations of federal hours-of-service regulations are common' → 'and federal hours-of-service rules (49 C.F.R. § 395.3) cap how long they may drive'; delete 'The limited availability of truck parking and rest areas along this stretch compounds the problem.'",
+  "Work zone: 'Construction zone accidents carry enhanced penalties in Georgia, but they continue to occur.' → 'Speeding in a Georgia highway work zone carries increased penalties (O.C.G.A. § 40-6-188), but work-zone crashes continue to occur.' (keep the existing link on the first words).",
+  "Bridges: 'These bridges are narrow, often lack adequate shoulders, and become slippery during rain' → 'Bridge decks can become slick in rain and often have narrower shoulders than the approach road'.",
+  "FAQ 6: add currency — '…widening U.S. 17 in northern Glynn County, from Yacht Drive to SR 99, from two lanes to four (still under construction in 2026)…'; delete 'with no current widening plans' from the McIntosh sentence.",
+  "Optional: 'Southeast Georgia Health System in Brunswick' → 'Southeast Georgia Health System's Brunswick Campus' (not a trauma center — do not call it one)."
+ ],
+ "statuteCitations": [
+  {
+   "section": "O.C.G.A. § 9-3-33",
+   "name": "Injuries to the person — two-year limitation",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-33",
+   "name": "Apportionment of damages; no recovery at 50 percent or more fault",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+  },
+  {
+   "section": "O.C.G.A. § 51-4-1",
+   "name": "Wrongful death — definitions ('full value of the life of the decedent')",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-4/section-51-4-1/"
+  },
+  {
+   "section": "O.C.G.A. § 51-4-2",
+   "name": "Wrongful death of spouse or parent — surviving spouse, then children, recover",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-4/section-51-4-2/"
+  },
+  {
+   "section": "O.C.G.A. § 19-7-1",
+   "name": "Recovery for homicide of child — parents recover when no spouse or child survives",
+   "url": "https://law.justia.com/codes/georgia/title-19/chapter-7/article-1/section-19-7-1/"
+  },
+  {
+   "section": "O.C.G.A. § 40-6-181",
+   "name": "Maximum speed limits — (b)(3) 70 mph on interstates where posted; (b)(5) 55 mph other locations",
+   "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-9/section-40-6-181/"
+  },
+  {
+   "section": "O.C.G.A. § 40-6-188",
+   "name": "Highway work zones — speeding a high and aggravated misdemeanor, $100–$2,000 fine (cited via GDOT Special Provision 150; Justia not fetched)",
+   "url": "https://www.dot.ga.gov/PartnerSmart/Business/Source/special_provisions/shelf/sp150.pdf"
+  },
+  {
+   "section": "49 C.F.R. § 395.3",
+   "name": "Hours of service — 11-hour driving limit, 14-hour window, 60/70-hour limits",
+   "url": "https://www.law.cornell.edu/cfr/text/49/395.3"
+  },
+  {
+   "section": "49 C.F.R. § 390.3",
+   "name": "Applicability of the Federal Motor Carrier Safety Regulations",
+   "url": "https://www.law.cornell.edu/cfr/text/49/390.3"
+  },
+  {
+   "section": "23 U.S.C. § 127",
+   "name": "Vehicle weight limitations — 80,000-pound gross vehicle weight maximum on the Interstate System",
+   "url": "https://www.law.cornell.edu/uscode/text/23/127"
+  }
+ ],
+ "authoritativeLinks": [
+  {
+   "name": "Wikipedia — Interstate 95 in Georgia (exit list: 29 US 17/US 82/SR 520; 36 US 25/US 341; 38 SR 25 Spur/Golden Isles Pkwy; 42 SR 99; 49 SR 251 Darien; 58 SR 57/SR 99 Eulonia)",
+   "url": "https://en.wikipedia.org/wiki/Interstate_95_in_Georgia"
+  },
+  {
+   "name": "AARoads — Interstate 95 Georgia guide (SR 251 'commercialized diamond interchange in north Darien')",
+   "url": "https://www.aaroads.com/guides/i-095-ga/"
+  },
+  {
+   "name": "Wikipedia — U.S. Route 341 (Brunswick–Jesup–Baxley–Hawkinsville–Perry–Barnesville; not Dublin)",
+   "url": "https://en.wikipedia.org/wiki/U.S._Route_341"
+  },
+  {
+   "name": "Wikipedia — U.S. Route 17 in Georgia (Glynn widening Yacht Dr–SR 99)",
+   "url": "https://en.wikipedia.org/wiki/U.S._Route_17_in_Georgia"
+  },
+  {
+   "name": "GDOT GeoPI — P.I. 0016985, SR 25 Yacht Rd to Harry Driggers Blvd, Ph I (Under Construction, 82.27%)",
+   "url": "https://www.dot.ga.gov/applications/geopi/Pages/Dashboard.aspx?ProjectId=0016985"
+  },
+  {
+   "name": "GDOT GeoPI — P.I. 532650-, SR 25/US 17 Harry Driggers Blvd to SR 99, Ph II (Under Construction, 73%)",
+   "url": "https://www.dot.ga.gov/applications/geopi/Pages/Dashboard.aspx?ProjectId=532650-"
+  },
+  {
+   "name": "GDOT — P.I. 532650- public hearing handout (2017; 6.4 mi, four lanes, 24-ft raised median, Thornhill Creek and Wallyleg Branch bridges)",
+   "url": "https://mydocs.dot.ga.gov/PublicOutreach/532650-/PDF/532650%20PHOH%20Handout_March%209%202017_signed.pdf"
+  },
+  {
+   "name": "WTOC — GDOT weekly traffic advisory 2026-07-31 (SR 25 lane closures with flagging, Yacht Road to SR 99)",
+   "url": "https://www.wtoc.com/2026/07/31/gdot-weekly-traffic-advisory-expect-lane-closures-delays-across-southeast-georgia/"
+  },
+  {
+   "name": "GDOT — Special Provision Section 150, Traffic Control (O.C.G.A. § 40-6-188 work-zone signing, increased penalties)",
+   "url": "https://www.dot.ga.gov/PartnerSmart/Business/Source/special_provisions/shelf/sp150.pdf"
+  },
+  {
+   "name": "Georgia DDS — Points Schedule (§ 40-6-188 speeding in work zone, 2–6 points)",
+   "url": "https://dds.georgia.gov/points-schedule"
+  },
+  {
+   "name": "Georgia DPH — Designated Trauma & Specialty Care Centers (Memorial Health University Medical Center, Level I)",
+   "url": "https://dph.georgia.gov/EMS/specialty-care-centers-cardiac-trauma-stroke-pediatric"
+  },
+  {
+   "name": "GOHS — Georgia Traffic Safety Facts: 2023 Overview (1,615 fatalities; one-third of fatal crashes rural; 27% alcohol-related)",
+   "url": "https://www.gahighwaysafety.org/wp-content/uploads/2025/10/2023-Overview-of-Motor-Vehicle-Crashes.pdf"
+  },
+  {
+   "name": "GDOT — Crash Data & Reporting (no corridor ranking published)",
+   "url": "https://www.dot.ga.gov/GDOT/Pages/CrashReporting.aspx"
+  },
+  {
+   "name": "Sleep Foundation — Drowsy Driving (18 hours awake ≈ 0.05% BAC)",
+   "url": "https://www.sleepfoundation.org/drowsy-driving"
+  },
+  {
+   "name": "Georgia DPS — CVE regions and inspection stations (I-95 MM 55/56, McIntosh County)",
+   "url": "https://dps.georgia.gov/divisions/commercial-vehicle-enforcement/cve-regions"
+  },
+  {
+   "name": "New Georgia Encyclopedia — Altamaha River",
+   "url": "https://www.georgiaencyclopedia.org/articles/geography-environment/altamaha-river/"
+  },
+  {
+   "name": "Glynn County, GA — State Court",
+   "url": "https://www.glynncounty.org/government/departments/state-court"
+  }
+ ],
+ "quoteNote": "Body claims are quoted from the rendered text (tags stripped, entities decoded); the exit-label claims and several list items span <strong> lead-ins in body.html and match exactly once tags are stripped. The post contains no crash counts, AADT or FARS figures to verify, so none were added; metaDescription is empty. The post does not discuss government-defendant notice (§§ 50-21-26, 36-11-1, 36-33-5) or Super Speeder (§ 40-6-189), so no claims were recorded for them. gaports.com, nhtsa.gov, cdc.gov and fmcsa.dot.gov returned 403 to curl this run; Justia URLs are reused from sibling packs (not fetched)."
+}

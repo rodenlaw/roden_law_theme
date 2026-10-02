@@ -1,0 +1,827 @@
+{
+ "postId": 3553,
+ "slug": "columbia-dangerous-intersections-roads",
+ "liveUrl": "https://rodenlaw.com/blog/columbia-dangerous-intersections-roads/",
+ "jurisdiction": "SC",
+ "researchedAt": "2026-10-02",
+ "verifiedClaims": [
+  {
+   "surface": "title",
+   "claim": "The Most Dangerous Intersections and Roads in Columbia, South Carolina",
+   "verdict": "update",
+   "currentValue": "Crash VOLUME supports a 'highest-crash' framing: Richland County ranked 3rd of 46 counties in total collisions (12,068) and 2nd in fatal collisions (60) in 2024. Crash RATE does not: Richland's 2024 mileage death rate was 1.451 and Lexington's 1.589 deaths per 100 million VMT, both below the statewide 1.68. Of the post's seven numbered locations, only three appear in the SCDPS county Top-5 intersection tables (I-20/I-26, I-20/Broad River Rd, SC-12/I-77 — the last only in 2023).",
+   "sourceName": "SCDPS Office of Highway Safety and Justice Programs, South Carolina Traffic Collision Fact Book 2024 Edition (latest), Part VI county tables: Lexington County p. 148, Richland County p. 164; Part II interstates p. 28",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "NOT a patcher-editable surface (title is not in body.html) — for the owner. 'Most Dangerous' is defensible only as 'highest-crash by count' and only for the SCDPS-listed interchanges; the surface-street intersections (Two Notch/Sparkleberry, Assembly/Gervais, Garners Ferry/Leesburg, Broad River/Bush River) have no published counts behind them. Suggested title: \"Columbia, SC's Highest-Crash Intersections and Roads: A Driver's Guide\". If the title stays, the body must define 'dangerous' as SCDPS crash counts (see edits). Mileage death rates: Fact Book 2024 Part I summary (state MDR 1.68) and county Statistics tables (pp. 149, 165)."
+  },
+  {
+   "surface": "body",
+   "claim": "Columbia, South Carolina sits at the crossroads of three major interstate highways — I-20, I-26, and I-77 — making it one of the busiest and most collision-prone metropolitan areas in the Southeast.",
+   "verdict": "update",
+   "currentValue": "Richland County: 3rd of 46 SC counties in total collisions in 2023 and 2024, 2nd in fatal collisions in 2024 (5th in 2023). No Southeast-wide metro comparison exists in SCDPS, SCDOT or NHTSA publications.",
+   "sourceName": "SCDPS Office of Highway Safety and Justice Programs, South Carolina Traffic Collision Fact Book 2024 Edition (latest), Part VI county tables: Lexington County p. 148, Richland County p. 164; Part II interstates p. 28",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Interstates verified (I-126 also enters). 'One of the busiest and most collision-prone metropolitan areas in the Southeast' is untraceable — no regional ranking was found. Replace the clause with the in-state fact: '...— and Richland County consistently ranks among South Carolina's highest-crash counties.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Richland County, where Columbia is located, recorded 12,450 traffic collisions in 2023 — the third-highest total of South Carolina’s 46 counties, behind only Greenville and Charleston — including 58 fatal collisions in which 60 people died",
+   "verdict": "update",
+   "currentValue": "2024 (latest): Richland County 12,068 collisions — 3rd of 46, behind Greenville (16,478) and Charleston (15,802) — including 60 fatal collisions in which 64 people died; 2nd in the state for fatal collisions. 2023 figures in the post (12,450; 58 fatal; 60 killed; 3rd) verified exactly against the 2023 edition.",
+   "sourceName": "SCDPS Office of Highway Safety and Justice Programs, South Carolina Traffic Collision Fact Book 2024 Edition (latest), Part VI county tables: Lexington County p. 148, Richland County p. 164; Part II interstates p. 28",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate for 2023 but one edition stale. Replace with: 'Richland County, where most of Columbia is located, recorded 12,068 traffic collisions in 2024 — the third-highest total of South Carolina's 46 counties, behind only Greenville and Charleston — including 60 fatal collisions in which 64 people died' and repoint the link to the 2024 Fact Book (link text 'SCDPS Traffic Collision Fact Book, 2024 edition'). Lexington County, the other half of the metro, had 8,269 collisions and 55 deaths in 2024 (6th of 46). 2023 source: https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2023%20Fact%20Book.pdf"
+  },
+  {
+   "surface": "body",
+   "claim": "Certain Columbia intersections and highway interchanges are responsible for a disproportionate share of those crashes",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "SCDPS Office of Highway Safety and Justice Programs, South Carolina Traffic Collision Fact Book 2024 Edition (latest), Part VI county tables: Lexington County p. 148, Richland County p. 164; Part II interstates p. 28",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Supported: Richland's top intersection alone logged 224 collisions in 2024; its five listed intersections total 712."
+  },
+  {
+   "surface": "body",
+   "claim": "Why Columbia's Roads Are Among the Most Dangerous in South Carolina",
+   "verdict": "update",
+   "currentValue": "By count: Richland 3rd in collisions, 2nd in fatal collisions (2024). By rate: Richland (1.451) and Lexington (1.589) below the statewide mileage death rate (1.68).",
+   "sourceName": "SCDPS Office of Highway Safety and Justice Programs, South Carolina Traffic Collision Fact Book 2024 Edition (latest), Part VI county tables: Lexington County p. 148, Richland County p. 164; Part II interstates p. 28",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "H2 (and TOC entry) inside body.html — editable. Suggested: \"Why Columbia's Roads Are Among the Most Crash-Prone in South Carolina\" (update both the TOC link text and the H2)."
+  },
+  {
+   "surface": "body",
+   "claim": "Three major interstates converge within the city limits, and the resulting interchange complexes — particularly the I-20/I-26 junction known as \"Malfunction Junction\" — handle traffic volumes that regularly exceed their design capacity.",
+   "verdict": "update",
+   "currentValue": "SCDOT: the interchange 'no longer meets the demands of modern traffic'; Carolina Crossroads is rebuilding the I-20/I-26/I-126 corridor (construction began Nov. 2021; Phases 1–2 complete 2025; Phase 3C I-20 widening and Saluda River bridge replacement under construction in 2026; the I-20/I-26 system interchange itself, Phase 3E, still in design; substantial completion mid-2030s). I-26 carries 143,900 vehicles/day between St. Andrews Rd and I-20 (SCDOT 2025 AADT).",
+   "sourceName": "SCDOT Carolina Crossroads general handout and FAQ (April 2026)",
+   "sourceUrl": "https://www.scdotcarolinacrossroads.com/documents/CCR_General_Handout_Web_20260421.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "'Within the city limits' is not verified (no source places the I-20/I-26 interchange inside Columbia's corporate limits; it is commonly described as at St. Andrews) — say 'converge around the city'. 'Regularly exceed their design capacity' has no published capacity study; use SCDOT's own words. Suggested: \"Three major interstates converge around the city, and SCDOT says the I-20/I-26 junction known as 'Malfunction Junction' 'no longer meets the demands of modern traffic' — about 144,000 vehicles a day use I-26 just north of it (SCDOT, 2025).\" AADT: https://www.scdot.org/content/dam/scdot-legacy/travel/pdf/trafficcounts/2025/LEXINGTON.pdf"
+  },
+  {
+   "surface": "body",
+   "claim": "Many of the city's busiest arterials — Two Notch Road, Broad River Road, Assembly Street, and Garners Ferry Road — were designed for much lower traffic volumes than they carry today.",
+   "verdict": "update",
+   "currentValue": "2025 AADT: Two Notch Rd (US-1) 34,000 near I-20; Garners Ferry Rd (US-76) 50,200 near Leesburg Rd; Broad River Rd (US-176) 23,400–28,900 near Bush River Rd; Assembly St (SC-48) 20,400–25,400 near Gervais St.",
+   "sourceName": "SCDOT Average Daily Traffic for Richland County, 2025 AADT (generated 2026-03-13)",
+   "sourceUrl": "https://www.scdot.org/content/dam/scdot-legacy/travel/pdf/trafficcounts/2025/RICHLAND.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "No design-volume records were found for these arterials; 'designed for much lower traffic volumes' is untraceable. Economical fix: \"Many of the city's busiest arterials — Two Notch Road, Broad River Road, Assembly Street, and Garners Ferry Road — carry 20,000 to 50,000 vehicles a day (SCDOT, 2025).\""
+  },
+  {
+   "surface": "body",
+   "claim": "Rapid suburban growth in areas like Northeast Columbia, Irmo, and Lexington has pushed commuter traffic into corridors that lack adequate turn lanes, pedestrian infrastructure, and modern signal timing.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "General description; no specific corridor measured",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Qualitative framing; no number. Acceptable as is."
+  },
+  {
+   "surface": "body",
+   "claim": "Pedestrian accidents near campus are a persistent and serious problem.",
+   "verdict": "keep",
+   "currentValue": "Richland County 2024: 116 pedestrian victims, 13 killed and 20 seriously injured (county Vulnerable Roadway Users table).",
+   "sourceName": "SCDPS Office of Highway Safety and Justice Programs, South Carolina Traffic Collision Fact Book 2024 Edition (latest), Part VI county tables: Lexington County p. 148, Richland County p. 164; Part II interstates p. 28",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "No campus-specific count is published; county pedestrian figure supports the general point. Optional addition: 'Richland County recorded 13 pedestrian deaths in 2024 (SCDPS).'"
+  },
+  {
+   "surface": "body",
+   "claim": "Based on collision data from the South Carolina Department of Public Safety and local law enforcement, these Columbia intersections consistently produce the highest number of crashes, injuries, and fatalities.",
+   "verdict": "update",
+   "currentValue": "SCDPS Top 5 Intersections, 2024 — Richland: I-20 at US-176/Broad River Rd 224; I-26 at US-176/Broad River Rd 170; I-20 at SC-215/Monticello Rd 116; SC-48/Bluff Rd at I-77 107; I-20 at I-26 95. Lexington: I-26 at S-671/Piney Grove Rd 163; I-26 at S-36/St. Andrews Rd 161; I-26 at US-378/Sunset Blvd 154; I-20 at I-26 124; US-21/Charleston Hwy at I-26 122 (2 fatal). 2023 — Richland: I-20 at US-176 229; I-26 at US-176 199; SC-12/Percival Rd at I-77 116; I-20 at SC-215 110; SC-48 at I-77 107. Lexington: I-26 at S-36 171; I-26 at S-671 161; I-20 at I-26 145; US-21 at I-26 133; I-26 at US-378 125.",
+   "sourceName": "SCDPS Office of Highway Safety and Justice Programs, South Carolina Traffic Collision Fact Book 2024 Edition (latest), Part VI county tables: Lexington County p. 148, Richland County p. 164; Part II interstates p. 28",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "False as written for four of the seven numbered items: Two Notch/Sparkleberry, Assembly/Gervais, Garners Ferry/Leesburg and Broad River/Bush River appear in neither year's SCDPS tables, and none of the seven had more than one fatal crash. Every SCDPS-listed location is an interstate interchange. Road names from SCDOT 2025 AADT station descriptions (US 176 = Broad River Rd, SC 215 = Monticello Rd, SC 48 = Bluff Rd at I-77, SC 12 = Percival Rd, S-36 = Saint Andrews Rd, S-671 = Piney Grove Rd, US 378 = Sunset Blvd, US 21 = Charleston Hwy). SCDPS caveat: rankings rely on route names the officer enters. Replace with: \"SCDPS publishes each county's five highest-crash intersections every year. The first three locations below appear in those tables; the surface-street intersections that follow are busy crossroads for which the state publishes no intersection-level counts.\" Also reorder so I-20 at Broad River Road is No. 1 (or remove the numbers, which read as a ranking)."
+  },
+  {
+   "surface": "body",
+   "claim": "On the Lexington County side, the I-20/I-26 interchange recorded 145 collisions in 2023, none of them fatal, with 28 people injured",
+   "verdict": "update",
+   "currentValue": "2024 (latest SCDPS edition): 'I-20 at I-26' is Lexington County's No. 4 intersection — 124 collisions, 1 fatal (1 killed), 21 injured — and Richland County's No. 5 — 95 collisions, 0 fatal, 27 injured (crashes are coded to one county, so the two rows do not overlap: 219 in all). 2023: Lexington 145 collisions, 0 fatal, 28 injured (verified); Richland 'I-20 at I-26' was not in its 2023 top five. SCDOT 2025 AADT: I-26 between St. Andrews Rd and I-20, 143,900 vehicles/day; I-26 between I-20 and I-126, 127,700; I-20 between Bush River Rd and I-26, 92,300; I-20 between I-26 and US-176 (Broad River Rd), 112,700.",
+   "sourceName": "SCDPS Office of Highway Safety and Justice Programs, South Carolina Traffic Collision Fact Book 2024 Edition (latest), Part VI county tables: Lexington County p. 148, Richland County p. 164; Part II interstates p. 28",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "2023 figures verified exactly (Lexington p. 148, 2023 edition). Update to 2024 and add the Richland side: \"In 2024 the I-20/I-26 interchange recorded 124 collisions on the Lexington County side, one of them fatal, and 95 more on the Richland County side (SCDPS Traffic Collision Fact Book, 2024 edition).\" Repoint the link to the 2024 PDF."
+  },
+  {
+   "surface": "body",
+   "claim": "has earned the nickname \"Malfunction Junction\" for good reason",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "SCDOT Carolina Crossroads general handout and FAQ (April 2026)",
+   "sourceUrl": "https://www.scdotcarolinacrossroads.com/documents/CCR_General_Handout_Web_20260421.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "SCDOT itself uses the nickname ('commonly known as \"Malfunction Junction\"')."
+  },
+  {
+   "surface": "body",
+   "claim": "The interchange's tight curves, short merge zones, and the sheer volume of traffic — including heavy commercial truck traffic — create conditions where high-speed rear-end collisions, sideswipe crashes, and multi-vehicle pileups are common.",
+   "verdict": "update",
+   "currentValue": "SCDOT: the rebuild replaces 'cloverleaf loops with smoothly flowing directional ramps' and adds 'longer, separated exits' (Carolina Crossroads About page); it aims to improve safety 'for both commuters and freight transportation' (handout).",
+   "sourceName": "SCDOT Carolina Crossroads general handout and FAQ (April 2026)",
+   "sourceUrl": "https://www.scdotcarolinacrossroads.com/documents/CCR_General_Handout_Web_20260421.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Cloverleaf geometry and freight traffic supported. No crash-type breakdown is published for this interchange, and 'multi-vehicle pileups are common' is unsupported (1 fatal crash in 2024 across 219 collisions). Suggested: \"...create conditions where rear-end and sideswipe collisions are common.\" About page (https://www.scdotcarolinacrossroads.com/about.html) returns HTTP 406 to curl; quoted via search capture — cite the handout PDF."
+  },
+  {
+   "surface": "body",
+   "claim": "2. I-20 and US-76 (Broad River Road)",
+   "verdict": "update",
+   "currentValue": "2024: 'I-20 at US-176' — US-176 is Broad River Road (SCDOT station 2033 'US 176 (BROAD RIVER RD)') — was Richland County's No. 1 intersection with 224 collisions, 0 fatal, 67 injured, and second statewide behind I-85 at S-492 in Greenville (277). 2023: 229 collisions, 1 fatal (1 killed), 56 injured — also Richland's No. 1 and second statewide. Broad River Road also meets I-26 at Richland's No. 2 intersection ('I-26 at US-176': 170 collisions in 2024, 199 in 2023). I-20 has no interchange with US-76. The I-20/Broad River Road interchange was rebuilt as Carolina Crossroads Phase 2, 'fully operational in fall 2025' (SCDOT) — the 2023–2024 counts were recorded during construction.",
+   "sourceName": "SCDPS Office of Highway Safety and Justice Programs, South Carolina Traffic Collision Fact Book 2024 Edition (latest), Part VI county tables: Lexington County p. 148, Richland County p. 164; Part II interstates p. 28",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "H3 inside body.html — editable. Wrong route number: Broad River Road at I-20 is US-176. Change to \"2. I-20 and US-176 (Broad River Road)\" — and, since this is the highest-crash intersection in the metro, consider making it No. 1."
+  },
+  {
+   "surface": "body",
+   "claim": "The combination of interstate on-ramp and off-ramp traffic merging with heavy Broad River Road commercial traffic creates constant conflict points.",
+   "verdict": "update",
+   "currentValue": "2024: 'I-20 at US-176' — US-176 is Broad River Road (SCDOT station 2033 'US 176 (BROAD RIVER RD)') — was Richland County's No. 1 intersection with 224 collisions, 0 fatal, 67 injured, and second statewide behind I-85 at S-492 in Greenville (277). 2023: 229 collisions, 1 fatal (1 killed), 56 injured — also Richland's No. 1 and second statewide. Broad River Road also meets I-26 at Richland's No. 2 intersection ('I-26 at US-176': 170 collisions in 2024, 199 in 2023). I-20 has no interchange with US-76. The I-20/Broad River Road interchange was rebuilt as Carolina Crossroads Phase 2, 'fully operational in fall 2025' (SCDOT) — the 2023–2024 counts were recorded during construction.",
+   "sourceName": "SCDPS Office of Highway Safety and Justice Programs, South Carolina Traffic Collision Fact Book 2024 Edition (latest), Part VI county tables: Lexington County p. 148, Richland County p. 164; Part II interstates p. 28",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "The section has no data. Add one sourced sentence after it: \"It was Richland County's highest-crash intersection in both 2023 and 2024 — 224 collisions in 2024, second-most in South Carolina — though none was fatal that year (SCDPS). SCDOT rebuilt the interchange as part of Carolina Crossroads; the new layout was fully operational in fall 2025.\" Source for the rebuild: https://www.scdotcarolinacrossroads.com/documents/CCR_General_Handout_Web_20260421.pdf"
+  },
+  {
+   "surface": "body",
+   "claim": "Drivers exiting I-20 at highway speed and immediately encountering congested surface-street conditions is a primary cause of rear-end collisions at this location.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "No crash-cause data published for this interchange",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "'A primary cause' asserts a measured causal share that no source gives (the Fact Book's intersection table lists counts and severity only). Soften: \"Drivers exiting I-20 at highway speed into congested surface-street traffic are a common source of rear-end collisions.\" Also note the layout described pre-dates the 2025 rebuild."
+  },
+  {
+   "surface": "body",
+   "claim": "the intersection at Sparkleberry Lane Extension has become one of the area's most hazardous",
+   "verdict": "update",
+   "currentValue": "Not in Richland County's SCDPS Top-5 intersections in 2023 or 2024 (5th place was 107 and 95 collisions). US-1 — which runs along Two Notch Road through northeast Columbia — was Richland County's highest-crash roadway in both years (944 collisions in 2024; 939 in 2023).",
+   "sourceName": "SCDPS Office of Highway Safety and Justice Programs, South Carolina Traffic Collision Fact Book 2024 Edition (latest), Part VI county tables: Lexington County p. 148, Richland County p. 164; Part II interstates p. 28",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "No intersection-level count exists for this location. Suggested: \"...and the intersection at Sparkleberry Lane Extension is one of its busiest.\" Keep the descriptive rest of the paragraph (Village at Sandhill traffic) but drop 'breed aggressive driving, red-light running' unless rephrased as general ('can lead to')."
+  },
+  {
+   "surface": "body",
+   "claim": "Go Safe Labs research placed the Two Notch Road and Trenholm Road Extension intersection among the deadliest in the country, underscoring the severity of the problem along this corridor.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "No primary source",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "No study by 'Go Safe Labs' could be found; the claim circulates only on law-firm marketing pages that cite no data. Trenholm Rd Ext/Two Notch is not in SCDPS's Richland Top 5 for 2023 or 2024, and FARS 2020–2024 shows one fatal crash coded to Trenholm Rd in Richland County. 'Among the deadliest in the country' is unsupported — delete the sentence. If a corridor fact is wanted: \"US-1, which carries Two Notch Road, was Richland County's highest-crash roadway in 2024, with 944 collisions (SCDPS).\""
+  },
+  {
+   "surface": "body",
+   "claim": "this challenging intersection's six-lane configuration and frequent lane changes result in many side-impact collisions and pedestrian accidents",
+   "verdict": "update",
+   "currentValue": "Assembly St (SC-48) carries 25,400 vehicles/day north of Gervais and 20,400 south (SCDOT 2025). Not in SCDPS's Richland Top 5 either year; no crash count or crash-type data is published for it.",
+   "sourceName": "SCDOT Average Daily Traffic for Richland County, 2025 AADT (generated 2026-03-13)",
+   "sourceUrl": "https://www.scdot.org/content/dam/scdot-legacy/travel/pdf/trafficcounts/2025/RICHLAND.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Lane count not verified from a primary source; 'many side-impact collisions' has no data. Suggested: \"this wide, multilane downtown intersection sees heavy turning traffic and pedestrian crossings.\" Keep the next sentence (red lights, crosswalks) as general description."
+  },
+  {
+   "surface": "body",
+   "claim": "The intersection's proximity to the South Carolina State House, University of South Carolina, and the Main Street entertainment district means that pedestrian traffic is heavy throughout the day and into evening hours.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Geography (State House at Gervais & Main; USC campus along Assembly St)",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Landmarks are within a few blocks; acceptable description."
+  },
+  {
+   "surface": "body",
+   "claim": "This interchange recorded 116 collisions in 2023, including one fatal crash in which one person died, and 29 people injured",
+   "verdict": "update",
+   "currentValue": "2023 verified: SC-12 (Percival Rd) at I-77, Richland No. 3 — 116 collisions, 1 fatal (1 killed), 29 injured. 2024: not in Richland's Top 5 (fifth place was I-20 at I-26 with 95), so it had fewer than 95 collisions; exact 2024 count not published. I-77 between Exit 13 and Percival Rd carries 90,100 vehicles/day, 96,700 between Percival Rd and I-20 (SCDOT 2025).",
+   "sourceName": "SCDPS, South Carolina Traffic Collision Fact Book 2023 Edition, Part VI county tables: Lexington County p. 148, Richland County p. 164; Part II interstates p. 28",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2023%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate but the newest edition no longer lists it. Make the year explicit and add the 2024 status: \"This interchange recorded 116 collisions in 2023 — third in Richland County — including one fatal crash, and 29 people injured; in 2024 it dropped out of the county's top five (SCDPS Fact Books, 2023 and 2024 editions).\" Keep the 2023 link; optionally add the 2024 one."
+  },
+  {
+   "surface": "body",
+   "claim": "The interchange handles heavy commuter traffic between East Columbia and the I-77 corridor leading to Rock Hill and Charlotte",
+   "verdict": "keep",
+   "currentValue": "I-77 at SC-12: 90,100–96,700 vehicles/day (2025).",
+   "sourceName": "SCDOT Average Daily Traffic for Richland County, 2025 AADT (generated 2026-03-13)",
+   "sourceUrl": "https://www.scdot.org/content/dam/scdot-legacy/travel/pdf/trafficcounts/2025/RICHLAND.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "I-77 runs north to Rock Hill and Charlotte; volume figure available if wanted."
+  },
+  {
+   "surface": "body",
+   "claim": "This intersection in Southeast Columbia sits at the junction of two heavily traveled corridors and produces a consistently high number of crashes.",
+   "verdict": "update",
+   "currentValue": "Garners Ferry Rd (US-76) carries 50,200 vehicles/day west of Leesburg Rd (SC-262) and 48,300 east; Leesburg Rd 25,100 (SCDOT 2025). US-76 was Richland's No. 2 roadway for collisions in 2024 (917; 6 fatal) — but that route total also includes other US-76 segments. The intersection is not in SCDPS's Top 5 in 2023 or 2024.",
+   "sourceName": "SCDOT Average Daily Traffic for Richland County, 2025 AADT (generated 2026-03-13)",
+   "sourceUrl": "https://www.scdot.org/content/dam/scdot-legacy/travel/pdf/trafficcounts/2025/RICHLAND.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Junction and volumes verified; 'produces a consistently high number of crashes' has no intersection-level data. Replace: \"...sits at the junction of two heavily traveled corridors — about 50,000 vehicles a day use Garners Ferry Road here (SCDOT, 2025).\" 'Vehicles accessing Fort Jackson' was not verified against a gate location — delete or confirm."
+  },
+  {
+   "surface": "body",
+   "claim": "The convergence of two of Columbia's busiest arterials in the Irmo-area commercial corridor creates an intersection with high crash frequency.",
+   "verdict": "update",
+   "currentValue": "US-176 (Broad River Rd) meets S-31 (Bush River Rd) in Richland County near I-20 and Dutch Square (SCDOT stations 181/183: 28,900 and 23,400 vehicles/day). Not in SCDPS Top 5 in 2023 or 2024.",
+   "sourceName": "SCDOT Average Daily Traffic for Richland County, 2025 AADT (generated 2026-03-13)",
+   "sourceUrl": "https://www.scdot.org/content/dam/scdot-legacy/travel/pdf/trafficcounts/2025/RICHLAND.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "The intersection exists but is in the St. Andrews/Dutch Square area by I-20, not Irmo; 'high crash frequency' has no published count. Suggested: \"The meeting of two busy arterials near I-20 and Dutch Square creates heavy turning traffic.\" 'Heavy truck traffic from nearby industrial areas' is unverified — delete."
+  },
+  {
+   "surface": "body",
+   "claim": "I-20 carries more fatal crashes than any other highway in the Columbia area: 35 in Richland and Lexington counties between 2020 and 2024, against 31 on I-77 and 30 on I-26",
+   "verdict": "update",
+   "currentValue": "FARS 2020–2024, Richland + Lexington: I-20 35 fatal crashes (39 deaths), I-77 31 (32), I-26 30 (36) — interstate figures verified. But US-1 (Two Notch Rd / Augusta Rd) had 37 fatal crashes (42 deaths), more than I-20.",
+   "sourceName": "NHTSA Fatality Analysis Reporting System, national CSV files 2020–2024 (accident.csv; SC = state 45, Lexington = county 63, Richland = county 79), tallied by TWAY_ID",
+   "sourceUrl": "https://static.nhtsa.gov/nhtsa/downloads/FARS/2024/National/FARS2024NationalCSV.zip",
+   "retrievedAt": "2026-10-02",
+   "note": "Interstate numbers verified exactly, but 'more than any other highway' is false — US-1 had 37. Change to: \"I-20 had more fatal crashes than any other interstate in the Columbia area: 35 in Richland and Lexington counties between 2020 and 2024, against 31 on I-77 and 30 on I-26\". (The other FARS zips follow the same URL pattern with 2020–2023.)"
+  },
+  {
+   "surface": "body",
+   "claim": "Within Richland County alone, I-20 accounted for 21 fatal crashes and 25 deaths over those five years.",
+   "verdict": "keep",
+   "currentValue": "Verified: FARS Richland County I-20, 21 fatal crashes, 25 deaths, 2020–2024. Note: in Richland alone I-77 had more (28 crashes, 29 deaths).",
+   "sourceName": "NHTSA Fatality Analysis Reporting System, national CSV files 2020–2024 (accident.csv; SC = state 45, Lexington = county 63, Richland = county 79), tallied by TWAY_ID",
+   "sourceUrl": "https://static.nhtsa.gov/nhtsa/downloads/FARS/2024/National/FARS2024NationalCSV.zip",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. Do not add 'most in the county' — I-77 exceeds it in Richland."
+  },
+  {
+   "surface": "body",
+   "claim": "Statewide, SCDPS recorded 2,176 collisions on I-20 in 2023, including 17 fatal collisions that killed 18 people",
+   "verdict": "update",
+   "currentValue": "2024 (latest): I-20 statewide 2,155 collisions, 15 fatal collisions, 18 killed. 2023 figures verified exactly (2,176; 17; 18).",
+   "sourceName": "SCDPS Office of Highway Safety and Justice Programs, South Carolina Traffic Collision Fact Book 2024 Edition (latest), Part VI county tables: Lexington County p. 148, Richland County p. 164; Part II interstates p. 28",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Update: \"Statewide, SCDPS recorded 2,155 collisions on I-20 in 2024, including 15 fatal collisions that killed 18 people\" and repoint the link to the 2024 Fact Book (Part II, 2024 Traffic Collisions on Interstates, p. 28)."
+  },
+  {
+   "surface": "body",
+   "claim": "The highway carries heavy long-distance commercial truck traffic between Atlanta and the coast, and the interchanges within Columbia — particularly at I-26, Broad River Road, and Bush River Road — are where the heaviest crash concentrations occur.",
+   "verdict": "update",
+   "currentValue": "I-20 ends at I-95 in Florence, not at the coast. SCDPS 2024 I-20 interchanges in the county Top 5: Broad River Rd/US-176 (224), I-26 (124 Lexington + 95 Richland), Monticello Rd/SC-215 (116). Bush River Rd (S-273) is not listed in either year.",
+   "sourceName": "SCDPS Office of Highway Safety and Justice Programs, South Carolina Traffic Collision Fact Book 2024 Edition (latest), Part VI county tables: Lexington County p. 148, Richland County p. 164; Part II interstates p. 28",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Two fixes: 'between Atlanta and the coast' → 'between Atlanta and I-95 at Florence'; 'Bush River Road' → 'Monticello Road'."
+  },
+  {
+   "surface": "body",
+   "claim": "Two Notch Road stretching from downtown Columbia northeast to the Sandhills area is one of the metro's most consistently dangerous corridors.",
+   "verdict": "update",
+   "currentValue": "US-1 (which follows Two Notch Rd through northeast Columbia) was Richland County's No. 1 roadway for collisions in 2023 (939) and 2024 (944); FARS 2020–2024: 37 fatal crashes on US-1 in Richland and Lexington, 14 of them coded 'Two Notch Rd'.",
+   "sourceName": "SCDPS Office of Highway Safety and Justice Programs, South Carolina Traffic Collision Fact Book 2024 Edition (latest), Part VI county tables: Lexington County p. 148, Richland County p. 164; Part II interstates p. 28",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Supported — add the number: \"...is one of the metro's most consistently dangerous corridors: US-1, which carries Two Notch Road, was Richland County's highest-crash roadway in 2023 and 2024 (SCDPS).\" 'Sandhills' → 'Sandhill' (the Village at Sandhill area) is optional."
+  },
+  {
+   "surface": "body",
+   "claim": "Multiple intersections along Two Notch rank among the city's most crash-prone.",
+   "verdict": "drop",
+   "currentValue": "No Two Notch intersection appears in SCDPS's Richland Top 5 in 2023 or 2024.",
+   "sourceName": "SCDPS Office of Highway Safety and Justice Programs, South Carolina Traffic Collision Fact Book 2024 Edition (latest), Part VI county tables: Lexington County p. 148, Richland County p. 164; Part II interstates p. 28",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Unsupported ranking claim — delete (the corridor-level US-1 fact replaces it)."
+  },
+  {
+   "surface": "body",
+   "claim": "Broad River Road from downtown Columbia northwest to Irmo and the Lake Murray area carries enormous traffic volumes that overwhelm the road's infrastructure.",
+   "verdict": "update",
+   "currentValue": "Broad River Rd (US-176) carries 23,400–28,900 vehicles/day near Bush River Rd (SCDOT 2025) — less than Two Notch Rd or Garners Ferry Rd. Its interchanges are the metro's highest-crash locations: I-20 at US-176 (224 collisions, 2024) and I-26 at US-176 (170).",
+   "sourceName": "SCDOT Average Daily Traffic for Richland County, 2025 AADT (generated 2026-03-13)",
+   "sourceUrl": "https://www.scdot.org/content/dam/scdot-legacy/travel/pdf/trafficcounts/2025/RICHLAND.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "'Enormous traffic volumes that overwhelm the road's infrastructure' is unsupported by the counts. Replace: \"Broad River Road from downtown Columbia northwest to Irmo and the Lake Murray area crosses both I-20 and I-26 at Richland County's two highest-crash intersections (SCDPS, 2024).\" 'Hazards at every block' (next sentence) is hyperbole — soften to 'creates hazards along its length'."
+  },
+  {
+   "surface": "body",
+   "claim": "Motorcycle riders are particularly vulnerable along Broad River Road, where other drivers frequently fail to see smaller vehicles in heavy traffic.",
+   "verdict": "update",
+   "currentValue": "Richland County 2024: 6 motorcyclists killed, 10 seriously injured (county-wide; no corridor breakdown).",
+   "sourceName": "SCDPS Office of Highway Safety and Justice Programs, South Carolina Traffic Collision Fact Book 2024 Edition (latest), Part VI county tables: Lexington County p. 148, Richland County p. 164; Part II interstates p. 28",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "No source isolates Broad River Road for motorcycle crashes. Suggested: \"Motorcycle riders are vulnerable here, where other drivers can fail to see smaller vehicles in heavy traffic.\""
+  },
+  {
+   "surface": "body",
+   "claim": "Red light running: One of the most common causes of serious intersection crashes in Columbia.",
+   "verdict": "update",
+   "currentValue": "2024 Top 5 Contributing Factors — Richland: Driving Too Fast for Conditions 3,498; Failed to Yield 2,570; Improper Lane Usage 1,820; Followed Too Closely 728; Disregarded Signs/Signals 711 (17 in serious-injury, 3 in fatal collisions). Lexington's top five do not include signal disregard.",
+   "sourceName": "SCDPS Office of Highway Safety and Justice Programs, South Carolina Traffic Collision Fact Book 2024 Edition (latest), Part VI county tables: Lexington County p. 148, Richland County p. 164; Part II interstates p. 28",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Partly supported for Richland ('Disregarded Signs/Signals' is 5th and is over-represented in serious-injury crashes). Suggested: \"Red light running: Disregarding signs and signals was one of the five most-cited crash factors in Richland County in 2024 (SCDPS).\""
+  },
+  {
+   "surface": "body",
+   "claim": "Left-turn accidents caused by drivers misjudging oncoming traffic speed are a leading crash type at Columbia intersections, particularly along Two Notch Road and Broad River Road.",
+   "verdict": "update",
+   "currentValue": "'Failed to Yield Right of Way' was the 2nd most-cited contributing factor in both Richland (2,570) and Lexington (1,937) in 2024, behind 'Driving Too Fast for Conditions'.",
+   "sourceName": "SCDPS Office of Highway Safety and Justice Programs, South Carolina Traffic Collision Fact Book 2024 Edition (latest), Part VI county tables: Lexington County p. 148, Richland County p. 164; Part II interstates p. 28",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "SCDPS reports contributing factors, not left-turn crash types, and no corridor split. Replace: \"Failure to yield the right of way was the second most-cited crash factor in both Richland and Lexington counties in 2024 (SCDPS) — left turns across oncoming traffic are a classic example.\""
+  },
+  {
+   "surface": "body",
+   "claim": "Columbia's nightlife districts along Main Street and in Five Points contribute to a significant number of impaired-driving intersection crashes during late-night hours.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "No district-level DUI crash data",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Untraceable location attribution. Soften: \"Impaired driving: Late-night traffic around Columbia's nightlife districts, including Main Street and Five Points, raises the risk of impaired-driving crashes.\""
+  },
+  {
+   "surface": "body",
+   "claim": "Several of Columbia's most crash-prone intersections have known design deficiencies — including inadequate sight lines, confusing lane configurations, and insufficient signage — that contribute to collisions. When a dangerous road condition causes a crash, the responsible government agency may bear liability.",
+   "verdict": "update",
+   "currentValue": "§ 15-78-60(15): 'Governmental entities are not liable for the design of highways and other public ways.' Liability for a sign or signal exists only for its 'absence, condition, or malfunction' not corrected within a reasonable time after actual or constructive notice; failure to initially place a sign is not actionable when discretionary. Highway defects are actionable only if not corrected after actual or constructive notice. Caps $300,000 per person / $600,000 per occurrence (§ 15-78-120).",
+   "sourceName": "S.C. Code §§ 15-78-60(15), 15-78-120 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+   "retrievedAt": "2026-10-02",
+   "note": "'Known design deficiencies' at named intersections is unsourced, and design is expressly immune. Replace the bullet text with: \"Dangerous road conditions: When a malfunctioning signal, missing sign, or road defect that the responsible agency knew or should have known about contributes to a crash, the agency may be liable under the South Carolina Tort Claims Act — but not for the highway's design itself (S.C. Code § 15-78-60(15)).\""
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina gives accident victims three years from the date of injury to file a personal injury lawsuit under S.C. Code § 15-3-530.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 15-3-530 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-02",
+   "note": "§ 15-3-530(5). Wrongful death runs from death (§ 15-3-530(6)); minors tolled by § 15-3-40 (not on page; no edit). Government defendants: two years (§ 15-78-110) — stated in FAQ 6."
+  },
+  {
+   "surface": "body",
+   "claim": "You can recover compensation if you are less than 51% at fault for the accident, but your award is reduced by your percentage of responsibility.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (S.C. 1991)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1265650/nelson-v-concrete-supply-company/",
+   "retrievedAt": "2026-10-02",
+   "note": "Modified comparative fault (plaintiff's negligence not greater than defendants'). CourtListener returns 202 to curl (bot gate); authority reused from sibling packs 4624/4644."
+  },
+  {
+   "surface": "body",
+   "claim": "S.C. Code § 56-5-2310 through § 56-5-2350 govern right-of-way rules at South Carolina intersections.",
+   "verdict": "keep",
+   "currentValue": "§ 56-5-2310 vehicle on the left yields to vehicle on the right when arriving at approximately the same time; § 56-5-2320 left-turning vehicle yields to oncoming traffic; § 56-5-2330 stop and yield signs; § 56-5-2350 entering from a non-roadway. (No § 56-5-2340 in the current code.) Signals: § 56-5-970.",
+   "sourceName": "S.C. Code §§ 56-5-2310 to -2350 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Range citation accurate; the left-turn example is § 56-5-2320."
+  },
+  {
+   "surface": "body",
+   "claim": "Violations of these statutes — such as failing to yield to oncoming traffic when making a left turn — constitute negligence per se, meaning the violation itself can serve as proof of fault in your injury claim.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "S.C. Code §§ 56-5-2320, 56-5-6160 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Overstated: under SC law a statutory violation is negligence per se, but the plaintiff must still prove it proximately caused the injury; and evidence of a traffic conviction is inadmissible in a civil action (§ 56-5-6160). Suggested: \"...constitute negligence per se, which can establish the other driver was negligent — though you must still show the violation caused your injuries.\" (Chapman v. Associated Transport, 218 S.C. 554 (1951) is the usual cite; opinion host 403'd, not cited.)"
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina requires drivers to carry uninsured motorist coverage under S.C. Code § 38-77-150, which protects you if the at-fault driver has no insurance or insufficient coverage to pay for your injuries.",
+   "verdict": "update",
+   "currentValue": "§ 38-77-150: every policy must include UM coverage (at § 38-77-140 minimums, $25,000/$50,000/$25,000). Coverage for an at-fault driver with 'insufficient coverage' is UNDERinsured motorist (UIM) coverage, which insurers must offer but drivers may decline (§ 38-77-160).",
+   "sourceName": "S.C. Code §§ 38-77-150, 38-77-160 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Conflates UM and UIM. Replace: \"...under S.C. Code § 38-77-150, which protects you if the at-fault driver has no insurance or flees the scene. Underinsured motorist coverage, for a driver whose limits are too low, is optional (§ 38-77-160).\" The hit-and-run sentence that follows is fine (unknown-driver UM claims require a police report, § 38-77-170)."
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina law requires you to notify police immediately after a crash that injures or kills anyone (S.C. Code § 56-5-1260).",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 56-5-1260 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified: notice 'immediately by the quickest means of communication' to local police (inside a municipality), otherwise the sheriff or Highway Patrol."
+  },
+  {
+   "surface": "body",
+   "claim": "If no officer investigated a crash involving injury or $1,000 or more in property damage, the driver or owner must file a written report with the DMV within 15 days (S.C. Code § 56-5-1270).",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 56-5-1270 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified ('one thousand dollars or more', 'within fifteen days', to the Department of Motor Vehicles, with verification of insurance). The officer's own report is the TR-310; the post does not mention FR-10, so no form fix needed. Same sentence in FAQ 5 — keep."
+  },
+  {
+   "surface": "body",
+   "claim": "The police report becomes key evidence in your claim.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 56-5-1290 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "§ 56-5-1290: none of the reports required by §§ 56-5-1260 to -1280 'may be evidence of the negligence or due care of either party at the trial'. Suggested: \"The police report is key to your insurance claim, although South Carolina does not allow it as evidence of fault at trial (S.C. Code § 56-5-1290).\""
+  },
+  {
+   "surface": "body",
+   "claim": "Police accident report: The investigating officer's report includes witness statements, diagrams, citations, and a fault determination that carries significant weight in settlement negotiations.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "S.C. Code §§ 56-5-1290, 56-5-6160 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Fine for settlement, but add the trial caveat: \"...carries significant weight in settlement negotiations, though the report itself and any traffic conviction are inadmissible as proof of fault at trial (S.C. Code §§ 56-5-1290, 56-5-6160).\""
+  },
+  {
+   "surface": "body",
+   "claim": "Traffic camera footage: Many of Columbia's major intersections are monitored by traffic cameras that may have captured the crash. This footage must be preserved quickly before it is overwritten.",
+   "verdict": "update",
+   "currentValue": "SCDOT: 'The image stream from SCDOT cameras is in real time with no images being stored on electronic media. Therefore, we do not have any records.' 511SC FAQ: 'No, we do not record any of the traffic cameras.'",
+   "sourceName": "SCDOT, Freedom of Information Act FAQ; SC511 FAQ (https://www.511sc.org/static/faq.html)",
+   "sourceUrl": "https://www.scdot.org/inside/freedom-of-information-act.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Materially misleading for SCDOT's interstate cameras, which do not record. Replace: \"Video footage: SCDOT's traffic cameras stream live and do not record, so footage usually comes from nearby businesses, dashcams, or doorbell cameras — and it must be requested quickly before it is overwritten.\" Same correction for the lawyer bullet 'including preserving traffic camera footage' → 'including preserving available video footage'."
+  },
+  {
+   "surface": "body",
+   "claim": "Conduct a thorough independent investigation, including preserving traffic camera footage and obtaining the police report",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "SCDOT, Freedom of Information Act FAQ",
+   "sourceUrl": "https://www.scdot.org/inside/freedom-of-information-act.html",
+   "retrievedAt": "2026-10-02",
+   "note": "See previous: change 'traffic camera footage' to 'available video footage'."
+  },
+  {
+   "surface": "body",
+   "claim": "Road maintenance records: If road design or maintenance failures contributed to your crash, records from SCDOT or Richland County may show the government entity knew about the hazard and failed to correct it.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 15-78-60(15) (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Design is immune; notice matters for maintenance defects and sign/signal malfunctions. Change 'If road design or maintenance failures' to 'If a maintenance failure or a malfunctioning signal'."
+  },
+  {
+   "surface": "body",
+   "claim": "Take your case to trial in Richland County Circuit Court if the insurance company refuses to offer a fair resolution",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Firm practice statement",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Venue description; fine."
+  },
+  {
+   "surface": "body",
+   "claim": "contingency fee basis — you pay nothing unless we win your case",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md — firm stats ('contingency fee, no fees unless we win')",
+   "sourceUrl": "/Users/brianhaas/Code/blue-sky-studio/client-rodenlaw-website/profiles/writer-profile.md",
+   "retrievedAt": "2026-10-02",
+   "note": "Firm fee representation."
+  },
+  {
+   "surface": "body",
+   "claim": "With more than $300 million recovered for our clients and a 4.9-star average client rating",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md line 26 ('$300M+ recovered · 4.9-star average')",
+   "sourceUrl": "/Users/brianhaas/Code/blue-sky-studio/client-rodenlaw-website/profiles/writer-profile.md",
+   "retrievedAt": "2026-10-02",
+   "note": "Matches the firm-facts line used site-wide; not externally verifiable and not required to be."
+  },
+  {
+   "surface": "body",
+   "claim": "Call (803) 219-2816 or 1-844-RESULTS.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "client.json locations[Columbia].phone = (803) 219-2816 (1545 Sumter St. Suite B); writer profile: 1-844-RESULTS = tel:+18447378587",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Both hrefs correct (tel:+18032192816, tel:+18447378587)."
+  },
+  {
+   "surface": "excerpt",
+   "claim": "This piece offers drivers essential steps for managing an auto insurance claim after a crash at one of the city's hazardous crossroads.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "Post content",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Publishes as the Article schema description; it describes an insurance-claim guide, not this post. Suggested: \"Columbia's highest-crash intersections by state data — led by I-20 at Broad River Road and Malfunction Junction — plus South Carolina's rules for injury claims after an intersection crash.\""
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "its interchange complexes — particularly the I-20/I-26 junction known as \"Malfunction Junction\" — handle traffic volumes that exceed their design capacity",
+   "verdict": "update",
+   "currentValue": "SCDOT: 'no longer meets the demands of modern traffic'. 2024 SCDPS: I-20 at Broad River Rd (US-176) 224 collisions — Richland's No. 1 and second statewide; I-20/I-26 124 (Lexington) + 95 (Richland).",
+   "sourceName": "SCDOT Carolina Crossroads general handout and FAQ (April 2026)",
+   "sourceUrl": "https://www.scdotcarolinacrossroads.com/documents/CCR_General_Handout_Web_20260421.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Replace with sourced wording and the 2024 lead fact: \"...and its interstate interchanges are its highest-crash locations: I-20 at Broad River Road logged 224 collisions in 2024, second-most of any intersection in South Carolina, and SCDOT is rebuilding the I-20/I-26 'Malfunction Junction,' which it says 'no longer meets the demands of modern traffic.'\""
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "South Carolina's three-year statute of limitations (S.C. Code § 15-3-530) and modified comparative fault rule (less than 51% at fault) govern how victims recover compensation",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 15-3-530; Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (S.C. 1991)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified."
+  },
+  {
+   "surface": "faq:0",
+   "claim": "The I-20 and US-76 (Broad River Road) interchange and the I-20/I-26 junction known as “Malfunction Junction” are the two locations most consistently identified as Columbia's worst.",
+   "verdict": "update",
+   "currentValue": "2024: 'I-20 at US-176' — US-176 is Broad River Road (SCDOT station 2033 'US 176 (BROAD RIVER RD)') — was Richland County's No. 1 intersection with 224 collisions, 0 fatal, 67 injured, and second statewide behind I-85 at S-492 in Greenville (277). 2023: 229 collisions, 1 fatal (1 killed), 56 injured — also Richland's No. 1 and second statewide. Broad River Road also meets I-26 at Richland's No. 2 intersection ('I-26 at US-176': 170 collisions in 2024, 199 in 2023). I-20 has no interchange with US-76. The I-20/Broad River Road interchange was rebuilt as Carolina Crossroads Phase 2, 'fully operational in fall 2025' (SCDOT) — the 2023–2024 counts were recorded during construction. 2024 (latest SCDPS edition): 'I-20 at I-26' is Lexington County's No. 4 intersection — 124 collisions, 1 fatal (1 killed), 21 injured — and Richland County's No. 5 — 95 collisions, 0 fatal, 27 injured (crashes are coded to one county, so the two rows do not overlap: 219 in all). 2023: Lexington 145 collisions, 0 fatal, 28 injured (verified); Richland 'I-20 at I-26' was not in its 2023 top five. SCDOT 2025 AADT: I-26 between St. Andrews Rd and I-20, 143,900 vehicles/day; I-26 between I-20 and I-126, 127,700; I-20 between Bush River Rd and I-26, 92,300; I-20 between I-26 and US-176 (Broad River Rd), 112,700.",
+   "sourceName": "SCDPS Office of Highway Safety and Justice Programs, South Carolina Traffic Collision Fact Book 2024 Edition (latest), Part VI county tables: Lexington County p. 148, Richland County p. 164; Part II interstates p. 28",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. Route number wrong (US-176) and the counts are now traceable. Replace the whole answer: \"By state crash counts, it is I-20 at Broad River Road (US-176): 224 collisions in 2024, Richland County's highest and second-most of any intersection in South Carolina, after 229 in 2023 (SCDPS Traffic Collision Fact Book). The I-20/I-26 'Malfunction Junction' also ranks in both Richland's and Lexington's top five, with 219 collisions across the two counties in 2024. Both are being rebuilt under SCDOT's Carolina Crossroads program.\""
+  },
+  {
+   "surface": "faq:0",
+   "claim": "Both handle traffic volumes that exceed their design capacity, and both require drivers to merge and weave across multiple lanes at highway speed.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "SCDOT Carolina Crossroads general handout and FAQ (April 2026)",
+   "sourceUrl": "https://www.scdotcarolinacrossroads.com/documents/CCR_General_Handout_Web_20260421.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Superseded by the replacement answer above (design-capacity claim unsourced; Broad River interchange rebuilt in 2025)."
+  },
+  {
+   "surface": "faq:0",
+   "claim": "We do not attach single-year collision counts to them here, because the figures in circulation cannot be tied to a stated reporting period or source.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "SCDPS Office of Highway Safety and Justice Programs, South Carolina Traffic Collision Fact Book 2024 Edition (latest), Part VI county tables: Lexington County p. 148, Richland County p. 164; Part II interstates p. 28",
+   "sourceUrl": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "No longer true — the SCDPS Fact Book ties counts to a year and source (the body already cites them). Delete; replaced by the answer above."
+  },
+  {
+   "surface": "faq:1",
+   "claim": "Under S.C. Code § 15-3-530, you have three years from the date of your accident to file a personal injury lawsuit in South Carolina.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 15-3-530 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified. Government defendants: two years (§ 15-78-110)."
+  },
+  {
+   "surface": "faq:2",
+   "claim": "South Carolina follows a modified comparative fault rule that allows you to recover compensation as long as you are less than 51% at fault for the accident.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (S.C. 1991)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1265650/nelson-v-concrete-supply-company/",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified."
+  },
+  {
+   "surface": "faq:2",
+   "claim": "For example, if you are 25% at fault and your damages total $200,000, you would recover $150,000.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Arithmetic",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "$200,000 × (1 − 0.25) = $150,000. Correct."
+  },
+  {
+   "surface": "faq:3",
+   "claim": "The I-20/I-26 interchange earned the nickname \"Malfunction Junction\" because of its history of frequent, serious collisions caused by its tight curves, short merge zones, high traffic volumes, and confusing lane configurations.",
+   "verdict": "update",
+   "currentValue": "SCDOT calls it 'commonly known as \"Malfunction Junction\"' without giving an origin; its rebuild replaces cloverleaf loops with directional ramps and adds longer, separated exits. 2024 crash severity: 1 fatal crash among 219 collisions coded to the interchange.",
+   "sourceName": "SCDOT Carolina Crossroads general handout and FAQ (April 2026)",
+   "sourceUrl": "https://www.scdotcarolinacrossroads.com/documents/CCR_General_Handout_Web_20260421.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. The nickname's origin is not documented by SCDOT, and 'frequent, serious collisions' overstates severity. Suggested: \"'Malfunction Junction' is the local nickname for the I-20/I-26 interchange, an original-interstate cloverleaf whose closely spaced ramps force drivers to weave across lanes in heavy traffic. SCDOT says it 'no longer meets the demands of modern traffic' and is rebuilding it through the Carolina Crossroads program, which it expects to substantially complete in the mid-2030s.\""
+  },
+  {
+   "surface": "faq:3",
+   "claim": "handles a mix of commuter and heavy commercial truck traffic that regularly exceeds its design capacity",
+   "verdict": "update",
+   "currentValue": "I-26 north of the interchange: 143,900 vehicles/day (SCDOT 2025).",
+   "sourceName": "SCDOT Average Daily Traffic for Lexington County, 2025 AADT (generated 2026-03-13)",
+   "sourceUrl": "https://www.scdot.org/content/dam/scdot-legacy/travel/pdf/trafficcounts/2025/LEXINGTON.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Covered by the replacement above; drop 'regularly exceeds its design capacity'."
+  },
+  {
+   "surface": "faq:4",
+   "claim": "South Carolina law requires you to notify police immediately after a crash that injures or kills anyone (S.C. Code § 56-5-1260). If no officer investigated a crash involving injury or $1,000 or more in property damage, the driver or owner must file a written report with the DMV within 15 days (S.C. Code § 56-5-1270).",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code §§ 56-5-1260, 56-5-1270 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified (FAQPage)."
+  },
+  {
+   "surface": "faq:5",
+   "claim": "If a government entity's failure to properly design, maintain, or signal an intersection contributed to your crash, you may have a claim against the City of Columbia, Richland County, or the South Carolina Department of Transportation.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 15-78-60(15) (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. Design is expressly immune. Replace: \"If a malfunctioning signal, missing sign, or road defect that the responsible agency knew or should have known about contributed to your crash, you may have a claim against the City of Columbia, Richland County, or SCDOT — but agencies are not liable for the design of highways (S.C. Code § 15-78-60(15)), and damages are capped at $300,000 per person (§ 15-78-120).\""
+  },
+  {
+   "surface": "faq:5",
+   "claim": "These governmental tort claims must be filed within two years under the South Carolina Tort Claims Act, so consulting an attorney promptly is critical.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "S.C. Code §§ 15-78-110, 15-78-80 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Two years is correct, but § 15-78-110 extends it to three years if a verified claim is first filed with the agency (within one year, § 15-78-80). Suggested: \"...must be filed within two years — or three if a verified claim is first filed with the agency — under the South Carolina Tort Claims Act (S.C. Code § 15-78-110).\""
+  }
+ ],
+ "recommendedEdits": [
+  "Title (owner, not patcher-editable): 'Most Dangerous' holds only as 'highest-crash by count' and only for the SCDPS-listed interchanges; Richland and Lexington mileage death rates (1.451, 1.589) are below the state's 1.68. Suggested: \"Columbia, SC's Highest-Crash Intersections and Roads: A Driver's Guide\".",
+  "Intro: drop 'most collision-prone metropolitan areas in the Southeast'; update Richland to 2024 (12,068 collisions, 3rd of 46; 60 fatal collisions, 64 killed) and repoint the Fact Book link to the 2024 PDF. H2/TOC 'Most Dangerous' → 'Most Crash-Prone'. 'converge within the city limits' → 'around the city'; 'regularly exceed their design capacity' → SCDOT's 'no longer meets the demands of modern traffic' + I-26 143,900 vehicles/day (2025).",
+  "List intro: replace 'consistently produce the highest number of crashes, injuries, and fatalities' with the SCDPS-tables framing (first three items are in the state's county top-five tables; the surface-street items have no published counts).",
+  "Item 1 Malfunction Junction: 2023 → 2024 (Lexington 124, 1 fatal; Richland 95); drop 'multi-vehicle pileups are common'.",
+  "Item 2: 'US-76' → 'US-176' in the H3; add the 2024 SCDPS line (224 collisions, Richland No. 1, 2nd statewide, 0 fatal) and the fall-2025 Carolina Crossroads rebuild; soften 'a primary cause'.",
+  "Item 3: delete the Go Safe Labs sentence; 'has become one of the area's most hazardous' → 'is one of its busiest'.",
+  "Items 4, 6, 7: remove the unsourced crash-frequency claims ('many side-impact collisions', 'consistently high number of crashes', 'high crash frequency'); 'Irmo-area' → 'near I-20 and Dutch Square'; drop 'six-lane', 'Fort Jackson' and 'industrial areas' clauses unless confirmed; optional AADT figures.",
+  "Item 5 SC-12/I-77: make it explicitly 2023 (third in Richland) and note it left the top five in 2024.",
+  "I-20 section: 'more fatal crashes than any other highway' → 'any other interstate' (US-1 had 37); 2023 statewide → 2024 (2,155 collisions, 15 fatal, 18 killed); 'Atlanta and the coast' → 'Atlanta and I-95 at Florence'; 'Bush River Road' → 'Monticello Road'.",
+  "Corridors: Two Notch — add US-1 = Richland's highest-crash roadway 2023 and 2024 (944 in 2024), delete 'Multiple intersections along Two Notch rank among the city's most crash-prone'. Broad River — replace 'enormous traffic volumes that overwhelm' with its two top-ranked interstate interchanges; drop the Broad River motorcycle specificity.",
+  "Causes: red-light bullet → 'Disregarded signs/signals' is a top-five Richland factor; failure-to-yield bullet → 2nd most-cited factor in both counties (SCDPS 2024), drop corridor names; soften the Five Points/Main Street DUI attribution; road-design bullet → TCA signal/defect-after-notice framing, design immune (§ 15-78-60(15)).",
+  "Legal: negligence per se still needs causation; UM/UIM — 'insufficient coverage' is optional UIM (§ 38-77-160); police report not admissible as evidence of fault (§ 56-5-1290); conviction inadmissible (§ 56-5-6160).",
+  "Evidence: SCDOT traffic cameras do not record — rewrite the camera bullet and the lawyer bullet to 'available video footage' (businesses, dashcams). Road-records bullet: 'road design or maintenance failures' → 'a maintenance failure or a malfunctioning signal'.",
+  "Excerpt (Article description): replace the insurance-claim description with one matching the post.",
+  "Key Takeaways: replace the design-capacity clause with the 2024 SCDPS lead fact and SCDOT quote.",
+  "FAQ 1: replace the whole answer with sourced 2024 counts (I-20 at Broad River Rd/US-176 224, 2nd statewide; Malfunction Junction 219 across both counties) — the 'we do not attach counts' line is obsolete. FAQ 4: nickname answer → cloverleaf/weaving description + SCDOT quote, drop 'frequent, serious collisions' and 'design capacity'. FAQ 6: design immune, signal/defect after notice, caps, two years or three with a verified claim."
+ ],
+ "statuteCitations": [
+  {
+   "section": "S.C. Code § 15-3-530",
+   "name": "Three-year limitation: (5) personal injury; (6) wrongful death from date of death",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "section": "S.C. Code § 15-3-40",
+   "name": "Minors — tolling during minority, no more than one year after age 18 (applies to Ch. 78 actions too; not on page)",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-2310",
+   "name": "Vehicles approaching or entering intersection — vehicle on the left yields to vehicle on the right",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-2320",
+   "name": "Vehicle turning left yields to oncoming traffic",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-2330",
+   "name": "Stop signs and yield signs",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-2350",
+   "name": "Vehicle entering roadway from a non-roadway yields",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-970",
+   "name": "Traffic-control signal legend (red/yellow/green duties)",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-1260",
+   "name": "Immediate notice to police of injury/death crashes",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-1270",
+   "name": "Written report to SCDMV within 15 days if no officer investigated (injury/death or $1,000+ damage); officer reports (TR-310)",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-1290",
+   "name": "Crash reports under §§ 56-5-1260 to -1280 are not evidence of negligence at trial",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-6160",
+   "name": "Evidence of a traffic conviction is inadmissible in a civil action",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 38-77-150",
+   "name": "Mandatory uninsured motorist coverage",
+   "url": "https://www.scstatehouse.gov/code/t38c077.php"
+  },
+  {
+   "section": "S.C. Code § 38-77-160",
+   "name": "Underinsured motorist coverage — must be offered, optional",
+   "url": "https://www.scstatehouse.gov/code/t38c077.php"
+  },
+  {
+   "section": "S.C. Code § 38-77-170",
+   "name": "Unknown-driver (hit-and-run) UM claims — conditions including police report",
+   "url": "https://www.scstatehouse.gov/code/t38c077.php"
+  },
+  {
+   "section": "S.C. Code § 15-78-60(15)",
+   "name": "Tort Claims Act — sign/signal/defect liability only after notice; no liability for the design of highways",
+   "url": "https://www.scstatehouse.gov/code/t15c078.php"
+  },
+  {
+   "section": "S.C. Code § 15-78-80",
+   "name": "Verified claim may be filed; if filed, within one year of discovery of loss",
+   "url": "https://www.scstatehouse.gov/code/t15c078.php"
+  },
+  {
+   "section": "S.C. Code § 15-78-110",
+   "name": "Tort Claims Act limitation — two years, three if a claim was first filed",
+   "url": "https://www.scstatehouse.gov/code/t15c078.php"
+  },
+  {
+   "section": "S.C. Code § 15-78-120",
+   "name": "Tort Claims Act damages caps — $300,000 per person / $600,000 per occurrence",
+   "url": "https://www.scstatehouse.gov/code/t15c078.php"
+  },
+  {
+   "section": "Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)",
+   "name": "Modified comparative fault — recover if less than 51% at fault",
+   "url": "https://www.courtlistener.com/opinion/1265650/nelson-v-concrete-supply-company/"
+  }
+ ],
+ "authoritativeLinks": [
+  {
+   "name": "SCDPS — South Carolina Traffic Collision Fact Book 2024 Edition (latest; Lexington p. 148, Richland p. 164, interstates p. 28)",
+   "url": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2024%20Fact%20Book.pdf"
+  },
+  {
+   "name": "SCDPS — South Carolina Traffic Collision Fact Book 2023 Edition (the post's current citation)",
+   "url": "https://scdps.sc.gov/sites/scdps/files/Documents/ohsjp/fact%20book/2023%20Fact%20Book.pdf"
+  },
+  {
+   "name": "SCDOT — Average Daily Traffic, Richland County, 2025",
+   "url": "https://www.scdot.org/content/dam/scdot-legacy/travel/pdf/trafficcounts/2025/RICHLAND.pdf"
+  },
+  {
+   "name": "SCDOT — Average Daily Traffic, Lexington County, 2025",
+   "url": "https://www.scdot.org/content/dam/scdot-legacy/travel/pdf/trafficcounts/2025/LEXINGTON.pdf"
+  },
+  {
+   "name": "SCDOT — Traffic Counts index",
+   "url": "https://www.scdot.org/travel/travel-trafficdata.html"
+  },
+  {
+   "name": "SCDOT Carolina Crossroads — general handout / FAQ (April 2026; Phase 2 Broad River Rd & I-20 operational fall 2025; Phase 3C under way; completion mid-2030s)",
+   "url": "https://www.scdotcarolinacrossroads.com/documents/CCR_General_Handout_Web_20260421.pdf"
+  },
+  {
+   "name": "WLTX — Carolina Crossroads update (2026-08-26; Phase 3C I-20 bridge work under way)",
+   "url": "https://www.wltx.com/article/news/local/carolina-crossroads-update-2026/101-757f1f1a-a13d-48af-9b04-5b09ff4271d2"
+  },
+  {
+   "name": "NHTSA FARS 2024 national CSV (2020–2023 files at the same path pattern)",
+   "url": "https://static.nhtsa.gov/nhtsa/downloads/FARS/2024/National/FARS2024NationalCSV.zip"
+  },
+  {
+   "name": "SCDOT — FOIA FAQ (traffic cameras are real-time, not recorded)",
+   "url": "https://www.scdot.org/inside/freedom-of-information-act.html"
+  },
+  {
+   "name": "SC511 — FAQ ('we do not record any of the traffic cameras')",
+   "url": "https://www.511sc.org/static/faq.html"
+  }
+ ],
+ "quoteNote": "Claims are quoted from the rendered text with tags stripped and entities decoded (&mdash; → —, &rsquo; → ’); every claim string was asserted to occur in its surface (body.html, meta.json excerpt/keyTakeaways/faqs). FAQ answers publish as FAQPage structured data; the excerpt publishes as the Article description. The title entry is for the owner — it is not in body.html. metaDescription is empty (nothing to verify). Latest data: SCDPS Fact Book 2024 Edition (2025 not yet published); SCDOT 2025 AADT; FARS 2020–2024 tallied locally from the five national accident.csv files (TWAY_ID route field; officer route coding may vary). Statewide intersection ranks are derived from all 46 county Top-5 tables. SCDPS notes its intersection rankings depend on the route names officers enter. Carolina Crossroads site pages (/, /about.html, /library/) return HTTP 406 to curl; the April 2026 handout PDF resolves and is cited. CourtListener (Nelson) returns 202 to curl — reused from sibling packs. Go Safe Labs: no primary study found; only law-firm pages repeat it."
+}

@@ -1,0 +1,787 @@
+{
+ "postId": 1682,
+ "slug": "how-long-can-a-person-stay-on-workers-compensation",
+ "liveUrl": "https://rodenlaw.com/blog/how-long-can-a-person-stay-on-workers-compensation/",
+ "jurisdiction": "both",
+ "researchedAt": "2026-10-02",
+ "verifiedClaims": [
+  {
+   "surface": "body",
+   "claim": "the <a href=\"https://www.law.cornell.edu/wex/workers_compensation\" target=\"_blank\" rel=\"noopener\">Cornell Law Institute's workers' compensation overview</a>",
+   "verdict": "update",
+   "currentValue": "The page is the Wex entry 'workers' compensation' published by Cornell Law School's Legal Information Institute (LII). There is no 'Cornell Law Institute'. Link resolves (HTTP 200).",
+   "sourceName": "Cornell LII Wex — workers' compensation",
+   "sourceUrl": "https://www.law.cornell.edu/wex/workers_compensation",
+   "retrievedAt": "2026-10-02",
+   "note": "Same finding as facts-1702. Change the anchor text to 'Cornell Law School's Legal Information Institute overview of workers' compensation'; keep the href."
+  },
+  {
+   "surface": "body",
+   "claim": "400 weeks (~7.7 years)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-261 (Justia, 2025 Code); SBWC Summary of Workers' Compensation Provisions (revised 07/01/25)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-7/section-34-9-261/",
+   "retrievedAt": "2026-10-02",
+   "note": "'For a maximum period of 400 weeks from the date of injury' (injuries on or after July 1, 1992), except catastrophic. 400/52.18 = 7.67 years. Optional: add 'from the date of injury' and the $800/week cap (injuries on or after July 1, 2023). SBWC provisions sheet (sbwc.georgia.gov/document/publication/provisionspdf/download) confirms 400 weeks and $800, 'No benefit rate changes in 2024/2025'; the SBWC Statutes page lists no legislative update after 2023, so no 2026 change. Several web pages claim a 2026 'HB 1234' raising the cap to $850 — they contradict one another and no primary source supports them; do not use."
+  },
+  {
+   "surface": "body",
+   "claim": "500 weeks (~9.6 years)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 42-9-10(A) (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c009.php",
+   "retrievedAt": "2026-10-02",
+   "note": "'In no case may the period covered by the compensation exceed five hundred weeks except as provided in subsection (C).' 500/52.18 = 9.58 years. Optional: add the 2026 cap — $1,189.94/week for accidents on or after January 1, 2026 (wcc.sc.gov/claims/compensation-rates)."
+  },
+  {
+   "surface": "body",
+   "claim": "350 weeks (~6.7 years)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-262 (Justia); SBWC Law FAQs",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-7/section-34-9-262/",
+   "retrievedAt": "2026-10-02",
+   "note": "'Maximum of 350 weeks from the date of injury'; capped at $533/week for injuries on or after July 1, 2023 (SBWC FAQ and provisions sheet). 350/52.18 = 6.71 years."
+  },
+  {
+   "surface": "body",
+   "claim": "340 weeks (~6.5 years)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 42-9-20 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c009.php",
+   "retrievedAt": "2026-10-02",
+   "note": "'In no case shall the period covered by such compensation be greater than three hundred forty weeks from the date of injury.' 340/52.18 = 6.52 years. If a citation is added it is § 42-9-20 (not § 42-9-15, which does not exist — the error facts-1702 found)."
+  },
+  {
+   "surface": "body",
+   "claim": "<td>Lifetime</td>",
+   "verdict": "update",
+   "currentValue": "No 400-week cap; weekly benefits continue 'until such time as the employee undergoes a change in condition for the better' (O.C.G.A. § 34-9-261), with a rebuttable presumption that the injury is no longer catastrophic once the employee reaches Social Security full retirement age (§ 34-9-200.1(g)(6)(B)). The SBWC's own FAQ says a catastrophic worker 'may be entitled to lifetime benefits'.",
+   "sourceName": "O.C.G.A. § 34-9-261 (Justia); SBWC Law FAQs; facts-1702",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-7/section-34-9-261/",
+   "retrievedAt": "2026-10-02",
+   "note": "Change the cell to 'No 400-week cap while the catastrophic disability lasts (O.C.G.A. §§ 34-9-261, 34-9-200.1)' or 'Potentially lifetime'. Also the row label 'Permanent Total (catastrophic)': Georgia has no separate PTD benefit — catastrophic cases are paid TTD under § 34-9-261 without the cap."
+  },
+  {
+   "surface": "body",
+   "claim": "500 weeks; for life only if paraplegic, quadriplegic or physical brain damage (S.C. Code § 42-9-10(C))",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 42-9-10(C)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c009.php",
+   "retrievedAt": "2026-10-02",
+   "note": "'Any person determined to be totally and permanently disabled who as a result of a compensable injury is a paraplegic, a quadriplegic, or who has suffered physical brain damage is not subject to the five-hundred-week limitation and shall receive the benefits for life.' Note § 42-9-10(D): no lump-sum may be ordered in a lifetime case."
+  },
+  {
+   "surface": "body",
+   "claim": "<td>Medical benefits</td>\n<td>No time limit</td>\n<td>No time limit</td>",
+   "verdict": "update",
+   "currentValue": "Georgia: medical treatment 'for up to 400 weeks' for accidents on or after July 1, 2013; lifetime medical only for catastrophic injuries and for injuries on or before June 30, 2013 (SBWC FAQ; O.C.G.A. § 34-9-200(a)). South Carolina: ten weeks from injury 'and for an additional time as in the judgment of the commission will tend to lessen the period of disability' (S.C. Code § 42-15-60(A)); ends one year after full payment of a Form 16 settlement unless the form says otherwise (§ 42-15-60(B)(1)) and after a lapse in authorized treatment of more than one year (§ 42-15-60(B)(3)); lifetime only 'in cases in which total and permanent disability results' (§ 42-15-60(C)); a clincher ends medical unless it provides otherwise (Reg. 67-801(E)).",
+   "sourceName": "SBWC Workers' Compensation Law FAQs ('HOW LONG WILL I RECEIVE MEDICAL BENEFITS?'); O.C.G.A. § 34-9-200; S.C. Code § 42-15-60",
+   "sourceUrl": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs",
+   "retrievedAt": "2026-10-02",
+   "note": "MOST IMPORTANT FINDING (the same false claim appears in the Key Takeaways and FAQs 1, 2 and 4). Georgia cell: '400 weeks from injury (no limit if catastrophic or injured before July 1, 2013)'. South Carolina cell: 'As long as the Commission finds treatment will lessen disability; can end after a settlement or a one-year gap in treatment (S.C. Code § 42-15-60)'. SC statute: https://www.scstatehouse.gov/code/t42c015.php"
+  },
+  {
+   "surface": "body",
+   "claim": "In practice, most workers' comp claims end well before these limits through recovery, a return to work, or a settlement.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "SBWC Law FAQs; S.C. Code § 42-9-260 (scstatehouse.gov)",
+   "sourceUrl": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs",
+   "retrievedAt": "2026-10-02",
+   "note": "General statement, no figure. Consistent with the statutory end-points (return to work, full-duty release, settlement)."
+  },
+  {
+   "surface": "body",
+   "claim": "benefits — two-thirds of your average weekly wage — while you are unable to work",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-261; S.C. Code § 42-9-10(A); SBWC FAQ; SC WCC compensation rates",
+   "sourceUrl": "https://wcc.sc.gov/claims/compensation-rates",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct in both states. Optional: add the caps with their date-of-injury ranges — Georgia $800/week (injuries on or after July 1, 2023, O.C.G.A. § 34-9-261); South Carolina $1,189.94/week (accidents on or after January 1, 2026; $1,134.43 for 2025). Any dollar figure must carry its date range."
+  },
+  {
+   "surface": "body",
+   "claim": "This phase lasts until your doctor determines you have reached <strong>maximum medical improvement (MMI)</strong>",
+   "verdict": "update",
+   "currentValue": "MMI does not by itself end TTD in either state. Georgia: TTD runs up to 400 weeks until a return to work, a full-duty release, or the light-duty conversion rule (after 52 consecutive weeks — 78 aggregate — of being capable of restricted work, TTD may be converted to TPD, O.C.G.A. § 34-9-104(a)(2)); PPD 'shall not become payable so long as the employee is entitled to benefits under Code Section 34-9-261 or 34-9-262' (§ 34-9-263(b)(2)). South Carolina: once the worker 'has been declared as having reached maximum medical improvement, the employer may request a hearing to address the termination' (§ 42-9-260(D)); after 150 days the employer must keep paying until the Commission allows it to stop (Reg. 67-506(B)).",
+   "sourceName": "O.C.G.A. § 34-9-263 (Justia); O.C.G.A. § 34-9-104; S.C. Code § 42-9-260; facts-1702",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-7/section-34-9-263/",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'This phase usually lasts until you return to work, are released to full duty, or your doctor determines you have reached maximum medical improvement (MMI) — though MMI alone does not end TTD; in South Carolina the insurer needs the Commission's permission to stop it.' Same correction class as facts-1702."
+  },
+  {
+   "surface": "body",
+   "claim": "In Georgia, TTD benefits are governed by O.C.G.A. § 34-9-261. In South Carolina, they are governed by S.C. Code § 42-9-10.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-261; S.C. Code § 42-9-10",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c009.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Both citations correct."
+  },
+  {
+   "surface": "body",
+   "claim": "two-thirds of the difference between your pre-injury and current wages",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-262; S.C. Code § 42-9-20",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-7/section-34-9-262/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct in both states. Georgia caps TPD at $533/week (injuries on or after July 1, 2023) for up to 350 weeks; South Carolina at the state maximum ($1,189.94 for 2026 accidents) for up to 340 weeks."
+  },
+  {
+   "surface": "body",
+   "claim": "Benefits are calculated based on your impairment rating and the applicable schedule of injuries.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-263; S.C. Code § 42-9-30; SBWC provisions sheet",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-7/section-34-9-263/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct. Georgia ratings must use the AMA Guides, fifth edition (§ 34-9-263(d); SBWC FAQ). Georgia arm 225 weeks, body as a whole 300 weeks (SBWC provisions sheet); South Carolina arm 220 weeks, leg 195, hand 185 (§ 42-9-30). South Carolina also has wage-loss partial disability under § 42-9-20."
+  },
+  {
+   "surface": "body",
+   "claim": "In Georgia, catastrophic injuries qualify for <strong>lifetime benefits</strong> (O.C.G.A. § 34-9-200.1).",
+   "verdict": "update",
+   "currentValue": "A catastrophic injury (defined in O.C.G.A. § 34-9-200.1(g)) is exempt from the 400-week cap, and weekly benefits continue 'until such time as the employee undergoes a change in condition for the better' (§ 34-9-261), with a rebuttable presumption at Social Security full retirement age that the injury is no longer catastrophic (§ 34-9-200.1(g)(6)(B)). SBWC: 'you may be entitled to lifetime benefits'.",
+   "sourceName": "O.C.G.A. § 34-9-261 (Justia); SBWC Law FAQs; facts-1702",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-7/section-34-9-261/",
+   "retrievedAt": "2026-10-02",
+   "note": "Change to 'In Georgia, catastrophic injuries are not subject to the 400-week cap and can be paid for life while the disability lasts (O.C.G.A. §§ 34-9-261, 34-9-200.1).' The benefit rule is in § 34-9-261; § 34-9-200.1 is the definition — cite both."
+  },
+  {
+   "surface": "body",
+   "claim": "In South Carolina, PTD benefits are capped at 500 weeks, and the only route past that cap is S.C. Code § 42-9-10(C) &mdash; paraplegia, quadriplegia or physical brain damage, which are paid for life.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 42-9-10(A), (C)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c009.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct. § 42-9-10(B) also makes loss of two hands, arms, shoulders, feet, legs, hips or both eyes total and permanent disability — still within 500 weeks. Lifetime medical in total-and-permanent cases is § 42-15-60(C)."
+  },
+  {
+   "surface": "body",
+   "claim": "If no settlement is reached, benefits continue until the statutory maximum is reached or another termination event occurs.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-261; S.C. Code § 42-9-10",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-7/section-34-9-261/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "Catastrophic injuries in Georgia qualify for lifetime benefits.",
+   "verdict": "update",
+   "currentValue": "Catastrophic injuries in Georgia are not subject to the 400-week cap and can be paid for life while the disability lasts (O.C.G.A. § 34-9-261).",
+   "sourceName": "O.C.G.A. § 34-9-261; SBWC Law FAQs",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-7/section-34-9-261/",
+   "retrievedAt": "2026-10-02",
+   "note": "Soften 'qualify for lifetime benefits' to 'can receive benefits for life' or 'are not subject to the 400-week cap'. Benefits end on a change in condition for the better; presumption at full retirement age (§ 34-9-200.1(g)(6)(B))."
+  },
+  {
+   "surface": "body",
+   "claim": "The difference between a 10% rating and a 25% rating can mean tens of thousands of dollars in additional benefits.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "SBWC provisions sheet (Georgia arm 225 weeks; $800 PPD max); S.C. Code § 42-9-30 (arm 220 weeks); SC WCC 2026 rate",
+   "sourceUrl": "https://sbwc.georgia.gov/document/publication/provisionspdf/download",
+   "retrievedAt": "2026-10-02",
+   "note": "Arithmetic check: a 15-point rating gap on an arm is 33.75 weeks in Georgia (15% × 225) — $27,000 at the $800 maximum, ~$16,900 at a $500 rate; 33 weeks in South Carolina (15% × 220) — ~$39,270 at the 2026 $1,189.94 maximum. 'Can mean tens of thousands' holds for a higher-wage worker; keep as 'can'."
+  },
+  {
+   "surface": "body",
+   "claim": "If your doctor clears you for full-duty work at your pre-injury wage, TTD benefits end. If you can only do light duty at reduced pay, TPD benefits continue.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. §§ 34-9-104, 34-9-262; S.C. Code §§ 42-9-20, 42-9-260",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-3/part-2/section-34-9-104/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate in substance. In South Carolina, stopping TTD after 150 days still requires a Form 15/Commission process (§ 42-9-260)."
+  },
+  {
+   "surface": "body",
+   "claim": "you have the right to seek an independent medical examination",
+   "verdict": "update",
+   "currentValue": "Georgia: 'The employee, after an accepted compensable injury and within 120 days of receipt of any income benefits, shall have the right to one examination ... by a duly qualified physician or surgeon designated by the employee and to be paid for by the employer' (O.C.G.A. § 34-9-202(e)); written notice within the 120 days (Board Rule 202(e)). South Carolina: no statute gives the worker an employer-paid examination of their choosing; the worker may get one at their own expense or ask the Commission to order an examination (S.C. Code § 42-15-80).",
+   "sourceName": "O.C.G.A. § 34-9-202(e) (Justia); facts-1702",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-6/part-1/section-34-9-202/",
+   "retrievedAt": "2026-10-02",
+   "note": "Add the Georgia deadline: 'In Georgia you are entitled to one examination by a doctor you choose, paid for by the insurer, if you request it within 120 days of receiving your first income-benefit check (O.C.G.A. § 34-9-202(e)).' Missing the window forfeits the right — this is the one hard deadline in the post's advice section. Do not copy the 120-day rule into South Carolina."
+  },
+  {
+   "surface": "body",
+   "claim": "file a hearing request immediately. In Georgia, this is done through the State Board of Workers' Compensation. In South Carolina, through the Workers' Compensation Commission.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "SBWC Law FAQs (Form WC-14); SC WCC Injured Worker FAQs (Form 50; Form 15 Section III)",
+   "sourceUrl": "https://wcc.sc.gov/injured-worker-faqs",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. Optional: name the forms — Georgia Form WC-14; South Carolina Form 50 (or Section III of the Form 15 stop-payment notice). Georgia change-in-condition window: two years from the last income-benefit payment (§ 34-9-104(b)); South Carolina: within twelve months of the last payment of compensation (§ 42-17-90)."
+  },
+  {
+   "surface": "body",
+   "claim": "An administrative law judge will review the evidence and decide whether benefits should be reinstated.",
+   "verdict": "update",
+   "currentValue": "Georgia: 'Your claim will be decided by an Administrative Law Judge' (SBWC FAQ). South Carolina has no ALJs in workers' compensation: 'A South Carolina Workers' Compensation Commissioner will hear testimony and receive evidence during the hearing' (WCC Injured Worker FAQs); the hearing is before a single commissioner (S.C. Code § 42-17-20).",
+   "sourceName": "SBWC Law FAQs; SC WCC Injured Worker FAQs",
+   "sourceUrl": "https://wcc.sc.gov/injured-worker-faqs",
+   "retrievedAt": "2026-10-02",
+   "note": "Change to 'In Georgia an administrative law judge, and in South Carolina a single commissioner, will review the evidence and decide whether benefits should be reinstated.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Once the claim is settled, you generally cannot reopen it for additional benefits",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code Regs. 67-801(E) (Chapter 67 PDF); O.C.G.A. § 34-9-15(a); SBWC Board Rule 15",
+   "sourceUrl": "https://www.scstatehouse.gov/coderegs/Chapter%2067.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "South Carolina: a clincher 'relieves the employer ... from any further responsibility for payment of compensation or medical expenses' and the claimant 'does not have the right to ask for additional payments in the future even if the claimant's medical condition worsens' (Reg. 67-801(E)). But a Form 16 settlement is not a full release — a change-of-condition claim remains possible within twelve months of the last payment (§ 42-17-90). Georgia: a Board-approved settlement 'shall constitute a complete and final disposition' and is not subject to change-in-condition review under § 34-9-104 (§ 34-9-15(a), text via search; Justia bot-challenged this run); Board approval mechanics are Rule 15 (SBWC 2025 Rules PDF). 'Generally' is the right hedge."
+  },
+  {
+   "surface": "body",
+   "claim": "In both Georgia and South Carolina, medical treatment for the work injury can continue even after disability payments end — as long as the treatment remains reasonable and necessary.",
+   "verdict": "update",
+   "currentValue": "Georgia: medical continues after income benefits end but only up to 400 weeks from injury for non-catastrophic injuries on or after July 1, 2013 (O.C.G.A. § 34-9-200(a)(2); SBWC FAQ). South Carolina: as long as the Commission finds treatment will lessen the period of disability (§ 42-15-60(A)); ends one year after full payment of a Form 16 settlement, after a lapse in authorized treatment of more than a year, or on a clincher (§ 42-15-60(B); Reg. 67-801(E)).",
+   "sourceName": "O.C.G.A. § 34-9-200 (Justia); SBWC Law FAQs; S.C. Code § 42-15-60",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-6/part-1/section-34-9-200/",
+   "retrievedAt": "2026-10-02",
+   "note": "Add: 'subject to Georgia's 400-week limit for non-catastrophic injuries, and in South Carolina only while the Commission finds treatment will lessen your disability — and not after a full-and-final settlement.'"
+  },
+  {
+   "surface": "body",
+   "claim": "SSI provides monthly payments regardless of work history",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "42 U.S.C. § 1382 (SSI eligibility) — via SSA; not separately fetched",
+   "sourceUrl": "https://www.law.cornell.edu/uscode/text/42/423",
+   "retrievedAt": "2026-10-02",
+   "note": "SSI is need-based and requires age 65+, blindness or disability; no work credits are needed. Accurate as written ('If you have limited income and resources'). Note for the editor: workers' comp payments count as unearned income and reduce SSI, so SSI rarely pays while weekly comp continues. sourceUrl is the SSDI definition statute (§ 423) only because ssa.gov blocks automated fetches; no change recommended."
+  },
+  {
+   "surface": "body",
+   "claim": "you may have a separate personal injury claim with no cap on damages",
+   "verdict": "update",
+   "currentValue": "Compensatory damages in a Georgia or South Carolina personal-injury case are generally uncapped, but punitive damages are capped: Georgia $250,000 in most cases (O.C.G.A. § 51-12-5.1(g), uncapped for product liability, specific intent to harm, or DUI); South Carolina the greater of three times compensatory damages or $500,000, with exceptions (S.C. Code § 15-32-530). A third-party suit runs on the tort statute of limitations — 2 years in Georgia (O.C.G.A. § 9-3-33), 3 years in South Carolina (S.C. Code § 15-3-530) — and the employer/insurer has a lien on the recovery for benefits paid (O.C.G.A. § 34-9-11.1; S.C. Code § 42-1-560).",
+   "sourceName": "S.C. Code § 15-32-530; O.C.G.A. § 51-12-5.1 (Justia); O.C.G.A. § 34-9-11.1; S.C. Code § 42-1-560",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Change 'with no cap on damages' to 'that is not limited by workers' compensation caps and can include pain and suffering'. This is the ONE place on the page where the tort deadlines (2 yrs GA / 3 yrs SC) correctly belong, if the editor adds a deadline — never apply them to the comp claim itself."
+  },
+  {
+   "surface": "body",
+   "claim": "Both states offer vocational rehabilitation services to help injured workers retrain for new employment if they cannot return to their previous job.",
+   "verdict": "update",
+   "currentValue": "Georgia's workers' compensation act guarantees rehabilitation services only for catastrophic injuries: 'if you sustain a catastrophic injury, you are entitled to receive help in getting another job or learning to do another job' (SBWC FAQ; O.C.G.A. § 34-9-200.1). South Carolina's act contains no vocational-rehabilitation benefit. Both states run public vocational rehabilitation agencies open to people with disabilities — the Georgia Vocational Rehabilitation Agency and the South Carolina Vocational Rehabilitation Department.",
+   "sourceName": "SBWC Law FAQs; Georgia Vocational Rehabilitation Agency; SC Vocational Rehabilitation Department",
+   "sourceUrl": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'Georgia's workers' comp system must provide rehabilitation for catastrophic injuries (O.C.G.A. § 34-9-200.1); otherwise, both states' public vocational rehabilitation agencies offer retraining to people whose injuries keep them from their old jobs.' GVRA: https://gvs.georgia.gov/ ; SCVRD: https://www.scvrd.net/"
+  },
+  {
+   "surface": "body",
+   "claim": "Federal law limits your combined workers' comp and SSDI benefits to 80% of your pre-injury earnings. If the combined amount exceeds 80%, your SSDI payment is reduced.",
+   "verdict": "update",
+   "currentValue": "42 U.S.C. § 424a(a) reduces Social Security disability benefits (the worker's and any family members' benefits on the record) when they plus workers' compensation exceed the higher of '80 per centum of his \"average current earnings\"' or the total family Social Security benefit. 'Average current earnings' is the highest of the worker's average monthly wage, one-sixtieth of the five highest consecutive years' earnings, or one-twelfth of the highest single year's earnings — not simply the pre-injury wage. The offset applies until the worker reaches full retirement age. Neither Georgia nor South Carolina is a 'reverse offset' state, so the SSDI side is reduced.",
+   "sourceName": "42 U.S.C. § 424a (Cornell LII)",
+   "sourceUrl": "https://www.law.cornell.edu/uscode/text/42/424a",
+   "retrievedAt": "2026-10-02",
+   "note": "Change '80% of your pre-injury earnings' to '80% of your average current earnings (generally your highest recent earnings before the disability)' and add 'until you reach full retirement age'. Same correction applies to FAQ 3 (FAQPage structured data)."
+  },
+  {
+   "surface": "body",
+   "claim": "The SSDI application process typically takes 3-6 months for initial decisions and longer if you need to appeal.",
+   "verdict": "update",
+   "currentValue": "SSA: 'Once you have submitted your application for disability benefits, it generally takes 6 to 8 months for an initial decision' (SSA FAQ KA-01801, updated March 5, 2024). SSA's dashboard figure for July 2026 was 186 days (~6 months), down from 220 days in July 2025 (reported by press, ssa.gov dashboard not fetchable). Separately, SSDI has a five-month waiting period — the first payment is for the sixth full month after the established onset date.",
+   "sourceName": "Social Security Administration FAQ KA-01801 (read in Chrome; ssa.gov blocks curl)",
+   "sourceUrl": "https://www.ssa.gov/faqs/en/questions/KA-01801.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Change '3-6 months' to 'about 6 to 8 months', and optionally add 'and SSDI does not pay for the first five full months of disability'. The five-month waiting period is SSA publication EN-05-10029 (not fetched this run; widely documented — verify before adding)."
+  },
+  {
+   "surface": "body",
+   "claim": "SSDI requires that you are unable to perform any \"substantial gainful activity\" — not just your previous job.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "42 U.S.C. § 423(d) (Cornell LII)",
+   "sourceUrl": "https://www.law.cornell.edu/uscode/text/42/423",
+   "retrievedAt": "2026-10-02",
+   "note": "§ 423(d)(1)(A) defines disability as inability 'to engage in any substantial gainful activity by reason of any medically determinable physical or mental impairment' expected to last 12 months or result in death; (d)(2)(A) extends the test to 'any other kind of substantial gainful work which exists in the national economy'. Accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "How your workers' comp settlement is structured can affect your SSDI offset.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "20 C.F.R. § 404.408 (Cornell LII)",
+   "sourceUrl": "https://www.law.cornell.edu/cfr/text/20/404.408",
+   "retrievedAt": "2026-10-02",
+   "note": "§ 404.408(g) prorates a lump-sum award to approximate the periodic rate; SSA follows a rate stated in the approved settlement, and excludes medical/legal expenses — which is why settlement language matters. Accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "<strong>Light duty at reduced wages:</strong> You transition from TTD to TPD benefits, which pay two-thirds of the wage difference",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-262; S.C. Code § 42-9-20",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-7/section-34-9-262/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate in both states."
+  },
+  {
+   "surface": "body",
+   "claim": "If your employer has no light-duty work available, TTD benefits generally continue",
+   "verdict": "update",
+   "currentValue": "Georgia: an employer may convert TTD to TPD without light-duty work being offered once the worker has been capable of restricted work for 52 consecutive weeks (or 78 aggregate weeks) (O.C.G.A. § 34-9-104(a)(2), Form WC-104) — except in catastrophic cases (SBWC 'Demystifying Catastrophic Designations': 'a catastrophic designation precludes a form WC-104'). South Carolina: TTD continues until a § 42-9-260 ground or Commission approval.",
+   "sourceName": "O.C.G.A. § 34-9-104 (Justia); SBWC catastrophic designations memo; facts-1702",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-3/part-2/section-34-9-104/",
+   "retrievedAt": "2026-10-02",
+   "note": "Add: 'though in Georgia the insurer can reduce TTD to the TPD rate after 52 consecutive weeks of being released to restricted work (O.C.G.A. § 34-9-104), unless your injury is catastrophic.' This is a real duration limit on the post's own topic."
+  },
+  {
+   "surface": "body",
+   "claim": "if your termination was unrelated to your work performance (for example, retaliation for filing a claim), you may continue receiving benefits",
+   "verdict": "update",
+   "currentValue": "Georgia: where the injury proximately caused the separation, or the firing was a pretext to avoid paying benefits, the worker need not prove a job search to recover TTD (Padgett v. Waffle House, 269 Ga. 105 (1998), n.9); Georgia gives no separate retaliatory-discharge claim (Evans v. Bibb Co., 178 Ga. App. 139 (1986)). A worker fired for reasons unrelated to the injury who seeks TTD again must prove a change in condition, including a diligent but unsuccessful job search (Maloney v. Gordon County Farms, 265 Ga. 825 (1995)). South Carolina: discharge or demotion for instituting a claim in good faith is unlawful (S.C. Code § 41-1-80, one-year deadline, remedy lost wages and reinstatement).",
+   "sourceName": "Padgett v. Waffle House (CourtListener); facts-1697",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1329191/padgett-v-waffle-house-inc/",
+   "retrievedAt": "2026-10-02",
+   "note": "As written it implies a fired worker keeps benefits whenever the reason was not performance. Rewrite: 'This does not necessarily end your benefits — if you were let go because of the injury or as a pretext to avoid paying benefits, you may be able to keep receiving them.' Do not imply Georgia has a retaliation claim (facts-1697 finding)."
+  },
+  {
+   "surface": "body",
+   "claim": "our <a href=\"/attorneys/\">attorneys</a> handle workers' compensation claims from offices in",
+   "verdict": "update",
+   "currentValue": "client.json lists six offices: Savannah, Darien (GA); Charleston, North Charleston, Columbia, Myrtle Beach (SC). The sentence omits North Charleston.",
+   "sourceName": "client.json (firm identity record)",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Add North Charleston (/locations/south-carolina/north-charleston/ — confirm the slug against the site's location pages before linking)."
+  },
+  {
+   "surface": "body",
+   "claim": "<a href=\"tel:+18447378587\">1-844-RESULTS</a>",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "client.json",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Href carries the plus sign and the correct number."
+  },
+  {
+   "surface": "body",
+   "claim": "We work on a <strong>contingency fee basis</strong> — you pay nothing unless we recover benefits for you.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "SBWC Law FAQs",
+   "sourceUrl": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs",
+   "retrievedAt": "2026-10-02",
+   "note": "Firm claim. Optional context: Georgia workers' comp fees above $100 need Board approval and may not exceed 25% (SBWC FAQ; O.C.G.A. § 34-9-108)."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Georgia caps TTD at 400 weeks (O.C.G.A. § 34-9-261) with lifetime benefits for catastrophic injuries",
+   "verdict": "update",
+   "currentValue": "Georgia caps TTD at 400 weeks from the date of injury (O.C.G.A. § 34-9-261); catastrophic injuries are not subject to that cap and can be paid for life while the disability lasts.",
+   "sourceName": "O.C.G.A. § 34-9-261 (Justia); SBWC Law FAQs",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-7/section-34-9-261/",
+   "retrievedAt": "2026-10-02",
+   "note": "Change 'with lifetime benefits for catastrophic injuries' to 'with no cap for catastrophic injuries'. Renders above the article."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "South Carolina allows 500 weeks (S.C. Code § 42-9-10)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 42-9-10",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c009.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct. Optional: 'lifetime for paraplegia, quadriplegia or physical brain damage (§ 42-9-10(C))'."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Medical benefits have no time limit in either state.",
+   "verdict": "update",
+   "currentValue": "Georgia: up to 400 weeks from injury for non-catastrophic injuries on or after July 1, 2013 (O.C.G.A. § 34-9-200; SBWC FAQ). South Carolina: as long as the Commission finds treatment will lessen disability; ends after a one-year lapse in treatment, one year after a Form 16 settlement is paid, or on a clincher (S.C. Code § 42-15-60; Reg. 67-801(E)).",
+   "sourceName": "SBWC Law FAQs; O.C.G.A. § 34-9-200; S.C. Code § 42-15-60",
+   "sourceUrl": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs",
+   "retrievedAt": "2026-10-02",
+   "note": "Replace with: 'Medical benefits outlast wage benefits but are not unlimited: Georgia covers up to 400 weeks from injury unless the injury is catastrophic, and South Carolina covers treatment the Commission finds will lessen your disability.' The most visible instance of the error — renders in the summary box above the article."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "To maximize benefits, follow your treatment plan, challenge premature MMI declarations, and never accept a settlement without legal review.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 42-15-60(A) (refusal of treatment bars compensation)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c015.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Advice; consistent with § 42-15-60(A) and the SBWC process."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "When benefits end, options include SSDI, third-party lawsuits, and vocational rehabilitation.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "42 U.S.C. § 423; SBWC Law FAQs",
+   "sourceUrl": "https://www.law.cornell.edu/uscode/text/42/423",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate as a list of options."
+  },
+  {
+   "surface": "faqs",
+   "claim": "Georgia caps temporary total disability (TTD) at <strong>400 weeks</strong> (~7.7 years) under O.C.G.A. § 34-9-261.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-261; SBWC Law FAQs",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-7/section-34-9-261/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct (injuries on or after July 1, 1992). FAQPage structured data."
+  },
+  {
+   "surface": "faqs",
+   "claim": "Temporary partial disability (TPD) is capped at 350 weeks.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-262; SBWC Law FAQs",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-7/section-34-9-262/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct ('maximum of 350 weeks from the date of injury'). Optional: '(O.C.G.A. § 34-9-262), at up to $533 a week for injuries since July 1, 2023'."
+  },
+  {
+   "surface": "faqs",
+   "claim": "However, <strong>catastrophic injuries</strong> — spinal cord injuries, amputations, severe brain injuries, severe burns, or total blindness — qualify for lifetime benefits under O.C.G.A. § 34-9-200.1.",
+   "verdict": "update",
+   "currentValue": "O.C.G.A. § 34-9-200.1(g) defines catastrophic injury as: (1) spinal cord injury involving severe paralysis of an arm, a leg, or the trunk; (2) amputation of an arm, hand, foot or leg involving the effective loss of use of that appendage; (3) severe brain or closed head injury (severe sensory, motor, communication, cerebral-function, consciousness or episodic neurological disturbances); (4) second- or third-degree burns over 25% of the body or third-degree burns to 5% or more of the face or hands; (5) total or industrial blindness; or (6) any other injury that prevents the employee from performing prior work and any work available in substantial numbers in the national economy. Catastrophic cases are exempt from the 400-week cap and paid until a change in condition for the better (§ 34-9-261).",
+   "sourceName": "SBWC 'Demystifying Catastrophic Designations' (cites § 34-9-200.1(g)); O.C.G.A. § 34-9-200.1 (Justia, via facts-1702)",
+   "sourceUrl": "https://sbwc.georgia.gov/document/publication/demystifying-catastrophic-designations/download",
+   "retrievedAt": "2026-10-02",
+   "note": "Two fixes: (a) the list omits category (6), the catch-all for injuries that prevent any suitable work — in practice a major route to catastrophic status (the SBWC memo devotes most of its analysis to (g)(6) cases); qualify the others ('severe' paralysis; amputation with loss of use; burns over 25% of the body); (b) 'qualify for lifetime benefits' → 'are not subject to the 400-week cap and can be paid for life (O.C.G.A. §§ 34-9-200.1, 34-9-261)'. Catastrophic status is designated by the Board on Form WC-R1CATEE. Paragraph (g)(1)–(6)(A) text read via the SBWC memo and search; Justia canonical path from facts-1702. FAQPage structured data."
+  },
+  {
+   "surface": "faqs",
+   "claim": "Medical benefits have no time limit.",
+   "verdict": "update",
+   "currentValue": "Georgia: medical treatment for up to 400 weeks for accidents on or after July 1, 2013; lifetime medical only if catastrophic or injured on or before June 30, 2013 (SBWC FAQ; O.C.G.A. § 34-9-200).",
+   "sourceName": "SBWC Law FAQs",
+   "sourceUrl": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs",
+   "retrievedAt": "2026-10-02",
+   "note": "This is the Georgia FAQ. Replace with 'Medical benefits last up to 400 weeks from the injury, or for life if the injury is catastrophic (O.C.G.A. § 34-9-200).' FAQPage structured data — published twice."
+  },
+  {
+   "surface": "faqs",
+   "claim": "South Carolina caps TTD at <strong>500 weeks</strong> (~9.6 years) under S.C. Code § 42-9-10, and TPD at 340 weeks.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code §§ 42-9-10, 42-9-20",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c009.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct. If a citation is added for TPD it is § 42-9-20."
+  },
+  {
+   "surface": "faqs",
+   "claim": "Certain catastrophic injuries may qualify for benefits beyond the standard maximum.",
+   "verdict": "update",
+   "currentValue": "Only a totally and permanently disabled worker who is a paraplegic, a quadriplegic, or has suffered physical brain damage is exempt from the 500-week limit and 'shall receive the benefits for life' (S.C. Code § 42-9-10(C)). South Carolina has no general 'catastrophic' category.",
+   "sourceName": "S.C. Code § 42-9-10(C)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c009.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Name them, matching the body table: 'Workers left paraplegic, quadriplegic or with physical brain damage receive benefits for life (S.C. Code § 42-9-10(C)).' FAQPage structured data."
+  },
+  {
+   "surface": "faqs",
+   "claim": "Medical benefits continue as long as treatment is reasonable and necessary with no time limit.",
+   "verdict": "update",
+   "currentValue": "Ten weeks from injury plus 'an additional time as in the judgment of the commission will tend to lessen the period of disability' (S.C. Code § 42-15-60(A)); no obligation after a lapse in authorized treatment of more than one year (§ 42-15-60(B)(3)) or one year after full payment of a Form 16 settlement unless the form provides otherwise (§ 42-15-60(B)(1)); lifetime only where total and permanent disability results (§ 42-15-60(C)).",
+   "sourceName": "S.C. Code § 42-15-60",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c015.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Replace with 'Medical benefits continue as long as the Commission finds treatment will lessen your disability, but can end after a year without authorized treatment or after a settlement (S.C. Code § 42-15-60).' FAQPage structured data."
+  },
+  {
+   "surface": "faqs",
+   "claim": "Federal law limits your combined workers' comp and SSDI benefits to 80% of your pre-injury earnings.",
+   "verdict": "update",
+   "currentValue": "Combined benefits are limited to the higher of 80% of 'average current earnings' or the total family Social Security benefit (42 U.S.C. § 424a(a)); the offset applies until full retirement age.",
+   "sourceName": "42 U.S.C. § 424a (Cornell LII)",
+   "sourceUrl": "https://www.law.cornell.edu/uscode/text/42/424a",
+   "retrievedAt": "2026-10-02",
+   "note": "Same correction as the body. FAQPage structured data."
+  },
+  {
+   "surface": "faqs",
+   "claim": "An attorney can help structure a workers' comp settlement to minimize the SSDI reduction.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "20 C.F.R. § 404.408(g) (Cornell LII)",
+   "sourceUrl": "https://www.law.cornell.edu/cfr/text/20/404.408",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate (lump-sum proration and exclusion of medical and legal expenses)."
+  },
+  {
+   "surface": "faqs",
+   "claim": "medical benefits (which may continue indefinitely)",
+   "verdict": "update",
+   "currentValue": "Georgia: up to 400 weeks unless catastrophic (O.C.G.A. § 34-9-200); South Carolina: while the Commission finds treatment will lessen disability, lifetime only in total-and-permanent cases (S.C. Code § 42-15-60).",
+   "sourceName": "SBWC Law FAQs; S.C. Code § 42-15-60",
+   "sourceUrl": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs",
+   "retrievedAt": "2026-10-02",
+   "note": "Change to 'medical benefits (which can continue after wage benefits end — for up to 400 weeks in most Georgia cases)'. FAQPage structured data."
+  },
+  {
+   "surface": "faqs",
+   "claim": "A lump-sum settlement provides guaranteed money but closes out your claim — you generally cannot reopen it for additional benefits later.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code Regs. 67-801(E); O.C.G.A. § 34-9-15(a)",
+   "sourceUrl": "https://www.scstatehouse.gov/coderegs/Chapter%2067.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate with 'generally' (see the body settlement finding: a SC Form 16 is not a full release)."
+  },
+  {
+   "surface": "faqs",
+   "claim": "get an independent medical opinion if you disagree with the insurer's doctor, challenge premature benefit terminations through a hearing",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-202(e); SC WCC Injured Worker FAQs",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-6/part-1/section-34-9-202/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. Optional: 'in Georgia, request your insurer-paid independent exam within 120 days of your first income check (O.C.G.A. § 34-9-202(e))'."
+  },
+  {
+   "surface": "excerpt",
+   "claim": "How long workers' compensation benefits last in Georgia and South Carolina, and what determines when they stop.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "No factual claim. Publishes as the Article description."
+  },
+  {
+   "surface": "metaDescription",
+   "claim": "",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "metaDescription is empty; not a fact issue. Optional SEO addition, e.g. 'Georgia pays TTD up to 400 weeks, South Carolina up to 500 — plus how catastrophic injuries, medical limits and settlements change how long workers' comp lasts.'"
+  }
+ ],
+ "recommendedEdits": [
+  "Key Takeaways: replace 'Medical benefits have no time limit in either state.' with 'Medical benefits outlast wage benefits but are not unlimited: Georgia covers up to 400 weeks from injury unless the injury is catastrophic (O.C.G.A. § 34-9-200), and South Carolina covers treatment the Commission finds will lessen your disability (S.C. Code § 42-15-60).'",
+  "Comparison table, Medical benefits row: Georgia '400 weeks from injury (no limit if catastrophic or injured before July 1, 2013)'; South Carolina 'While the Commission finds treatment will lessen disability; can end after a settlement or a one-year gap in treatment'.",
+  "FAQ 1: replace 'Medical benefits have no time limit.' with 'Medical benefits last up to 400 weeks from the injury, or for life if the injury is catastrophic (O.C.G.A. § 34-9-200).' Complete the catastrophic list with the (g)(6) catch-all ('or any injury that keeps you from doing your old job or any other work available in substantial numbers') and change 'qualify for lifetime benefits under O.C.G.A. § 34-9-200.1' to 'are not subject to the 400-week cap and can be paid for life (O.C.G.A. §§ 34-9-200.1, 34-9-261)'.",
+  "FAQ 2: replace 'Certain catastrophic injuries may qualify...' with the § 42-9-10(C) list (paraplegia, quadriplegia, physical brain damage — benefits for life), and replace the medical sentence with the § 42-15-60 standard.",
+  "FAQ 4: '(which may continue indefinitely)' → '(which can continue after wage benefits end — for up to 400 weeks in most Georgia cases)'.",
+  "Georgia 'lifetime' wording (table cell, PTD bullet, Factors bullet, Key Takeaways): change to 'no 400-week cap; can be paid for life while the disability lasts (O.C.G.A. §§ 34-9-261, 34-9-200.1)'.",
+  "Phase 1: 'This phase lasts until ... MMI' → note that MMI alone does not end TTD; in Georgia TTD ends on return to work, full-duty release, the 400-week cap, or the 52-week light-duty conversion (§ 34-9-104(a)(2)); in South Carolina the insurer needs the Commission's permission after MMI (§ 42-9-260).",
+  "Returning-to-work list: after 'TTD benefits generally continue' add 'though in Georgia the insurer can reduce TTD to the TPD rate after 52 consecutive weeks of being released to restricted work (O.C.G.A. § 34-9-104), unless the injury is catastrophic'. Rewrite the 'fired after returning' bullet per the finding (drop the retaliation example).",
+  "SSDI section and FAQ 3: '80% of your pre-injury earnings' → '80% of your average current earnings (generally your highest recent earnings before the disability) until full retirement age (42 U.S.C. § 424a)'. '3-6 months' → 'about 6 to 8 months' (SSA); optionally add the five-month SSDI waiting period.",
+  "Independent medical opinion (step 3): add Georgia's one insurer-paid exam by a doctor of your choice, requested within 120 days of the first income-benefit check (O.C.G.A. § 34-9-202(e)).",
+  "Step 4: 'An administrative law judge will review' → 'In Georgia an administrative law judge, and in South Carolina a single commissioner, will review'.",
+  "Third-party bullet: 'with no cap on damages' → 'that is not limited by workers' compensation caps and can include pain and suffering'. If a deadline is added here it is the tort deadline (2 years, O.C.G.A. § 9-3-33; 3 years, S.C. Code § 15-3-530) — the only surface where tort deadlines belong.",
+  "Vocational rehabilitation bullet: GA comp rehab is guaranteed only for catastrophic injuries; otherwise point to the state VR agencies (GVRA, SCVRD). SC's act has no rehab benefit.",
+  "Intro: 'Cornell Law Institute's workers' compensation overview' → 'Cornell Law School's Legal Information Institute overview of workers' compensation' (href unchanged).",
+  "Contact paragraph: add the North Charleston office.",
+  "DEADLINE SWEEP RESULT: the post states no filing deadline on any surface (body, Key Takeaways, FAQs, excerpt), so the tort-SOL-on-WC error class is absent. Optional addition for a 'how long' post (e.g., in step 4): Georgia — report to the employer within 30 days (O.C.G.A. § 34-9-80) and file Form WC-14 within one year of the injury (§ 34-9-82; longer if the employer paid medical or income benefits); change-in-condition claim within two years of the last income-benefit payment (§ 34-9-104(b)). South Carolina — notice within 90 days (S.C. Code § 42-15-20); claim within two years (§ 42-15-40); change of condition within twelve months of the last payment (§ 42-17-90). Do NOT use § 9-3-33 or § 15-3-530 for the comp claim.",
+  "Optional rates (must carry date ranges): Georgia TTD max $800/week and TPD $533/week for injuries on or after July 1, 2023 (no change in 2024, 2025 or 2026 per SBWC); South Carolina max $1,189.94/week for accidents on or after January 1, 2026 ($1,134.43 for 2025)."
+ ],
+ "statuteCitations": [
+  {
+   "section": "O.C.G.A. § 34-9-261",
+   "name": "Temporary total disability — 2/3 AWW, $800 max (injuries on/after 7/1/2023), 400 weeks except catastrophic",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-7/section-34-9-261/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-262",
+   "name": "Temporary partial disability — 2/3 of wage difference, $533 max, 350 weeks",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-7/section-34-9-262/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-263",
+   "name": "Permanent partial disability — schedule; not payable while TTD/TPD owed; AMA Guides 5th ed.",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-7/section-34-9-263/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-200.1",
+   "name": "Catastrophic injury definition (subsection (g)); rehabilitation",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-6/part-1/section-34-9-200-1/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-200",
+   "name": "Medical benefits — 400 weeks for non-catastrophic injuries on/after 7/1/2013",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-6/part-1/section-34-9-200/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-202",
+   "name": "Employee's one employer-paid independent examination within 120 days (subsection (e))",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-6/part-1/section-34-9-202/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-104",
+   "name": "Change in condition; 52/78-week light-duty conversion; two years from last income benefit",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-3/part-2/section-34-9-104/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-82",
+   "name": "Claim filing — one year from injury (with extensions)",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-3/part-1/section-34-9-82/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-80",
+   "name": "Notice to employer — 30 days",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-3/part-1/section-34-9-80/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-240",
+   "name": "Refusal of suitable employment",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-6/part-3/section-34-9-240/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-11.1",
+   "name": "Employer/insurer lien on third-party recovery",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-11-1/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-5.1",
+   "name": "Punitive damages — $250,000 cap with exceptions",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/"
+  },
+  {
+   "section": "O.C.G.A. § 9-3-33",
+   "name": "Personal injury (tort) — two years; third-party claims only",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+  },
+  {
+   "section": "S.C. Code § 42-9-10",
+   "name": "Total disability — 66 2/3% AWW, state AWW cap, 500 weeks; (C) lifetime for paraplegia, quadriplegia, physical brain damage",
+   "url": "https://www.scstatehouse.gov/code/t42c009.php"
+  },
+  {
+   "section": "S.C. Code § 42-9-20",
+   "name": "Partial disability — 66 2/3% of wage difference, 340 weeks",
+   "url": "https://www.scstatehouse.gov/code/t42c009.php"
+  },
+  {
+   "section": "S.C. Code § 42-9-30",
+   "name": "Scheduled losses (arm 220 weeks, leg 195, hand 185)",
+   "url": "https://www.scstatehouse.gov/code/t42c009.php"
+  },
+  {
+   "section": "S.C. Code § 42-9-260",
+   "name": "Terminating temporary disability; hearing after MMI",
+   "url": "https://www.scstatehouse.gov/code/t42c009.php"
+  },
+  {
+   "section": "S.C. Code § 42-15-60",
+   "name": "Medical treatment duration; settlement and lapse limits; lifetime for total and permanent disability",
+   "url": "https://www.scstatehouse.gov/code/t42c015.php"
+  },
+  {
+   "section": "S.C. Code §§ 42-15-20, 42-15-40",
+   "name": "Notice within 90 days; claim within two years",
+   "url": "https://www.scstatehouse.gov/code/t42c015.php"
+  },
+  {
+   "section": "S.C. Code § 42-17-90",
+   "name": "Change of condition — within twelve months of last payment",
+   "url": "https://www.scstatehouse.gov/code/t42c017.php"
+  },
+  {
+   "section": "S.C. Code § 42-17-20",
+   "name": "Hearing before the commission",
+   "url": "https://www.scstatehouse.gov/code/t42c017.php"
+  },
+  {
+   "section": "S.C. Code § 42-1-560",
+   "name": "Employer lien on third-party recovery",
+   "url": "https://www.scstatehouse.gov/code/t42c001.php"
+  },
+  {
+   "section": "S.C. Code § 15-32-530",
+   "name": "Punitive damages cap",
+   "url": "https://www.scstatehouse.gov/code/t15c032.php"
+  },
+  {
+   "section": "S.C. Code § 15-3-530",
+   "name": "Personal injury (tort) — three years; third-party claims only",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "section": "S.C. Code Regs. 67-801",
+   "name": "Settlements — Form 16 vs. clincher (Agreement and Final Release)",
+   "url": "https://www.scstatehouse.gov/coderegs/Chapter%2067.pdf"
+  },
+  {
+   "section": "42 U.S.C. § 424a",
+   "name": "SSDI workers' compensation offset — 80% of average current earnings",
+   "url": "https://www.law.cornell.edu/uscode/text/42/424a"
+  },
+  {
+   "section": "42 U.S.C. § 423",
+   "name": "SSDI — definition of disability (substantial gainful activity)",
+   "url": "https://www.law.cornell.edu/uscode/text/42/423"
+  },
+  {
+   "section": "20 C.F.R. § 404.408",
+   "name": "Offset computation; proration of lump-sum awards",
+   "url": "https://www.law.cornell.edu/cfr/text/20/404.408"
+  }
+ ],
+ "authoritativeLinks": [
+  {
+   "name": "SBWC — Workers' Compensation Law FAQs ($800/$533; 400-week medical; catastrophic lifetime; one-year filing; ALJ hearing)",
+   "url": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs"
+  },
+  {
+   "name": "SBWC — Summary of Workers' Compensation Provisions (revised 07/01/25; 'No benefit rate changes in 2024/2025'; schedule weeks)",
+   "url": "https://sbwc.georgia.gov/document/publication/provisionspdf/download"
+  },
+  {
+   "name": "SBWC — Demystifying Catastrophic Designations (§ 34-9-200.1(g) categories; WC-R1CATEE; WC-104 precluded)",
+   "url": "https://sbwc.georgia.gov/document/publication/demystifying-catastrophic-designations/download"
+  },
+  {
+   "name": "SBWC — 2025 Board Rules (Rule 15 stipulated settlements; Rule 202(e))",
+   "url": "https://sbwc.georgia.gov/document/publication/2025-rules/download"
+  },
+  {
+   "name": "SC Workers' Compensation Commission — Compensation Rates ($1,189.94 for accidents on/after Jan. 1, 2026)",
+   "url": "https://wcc.sc.gov/claims/compensation-rates"
+  },
+  {
+   "name": "SC Workers' Compensation Commission — Injured Worker FAQs (Form 50; Form 15; hearings before a commissioner)",
+   "url": "https://wcc.sc.gov/injured-worker-faqs"
+  },
+  {
+   "name": "S.C. Code of Regulations Chapter 67 (Reg. 67-801 settlements)",
+   "url": "https://www.scstatehouse.gov/coderegs/Chapter%2067.pdf"
+  },
+  {
+   "name": "SSA — How long does it take to get a decision after I apply for disability benefits? (6 to 8 months)",
+   "url": "https://www.ssa.gov/faqs/en/questions/KA-01801.html"
+  },
+  {
+   "name": "42 U.S.C. § 424a (Cornell LII)",
+   "url": "https://www.law.cornell.edu/uscode/text/42/424a"
+  },
+  {
+   "name": "Georgia Vocational Rehabilitation Agency",
+   "url": "https://gvs.georgia.gov/"
+  },
+  {
+   "name": "South Carolina Vocational Rehabilitation Department",
+   "url": "https://www.scvrd.net/"
+  }
+ ],
+ "quoteNote": "Claims are quoted verbatim from body.html (raw HTML, including inline <strong>/<a>/<td> tags and the &mdash; entity where they occur) or from the meta.json fields; the table medical row spans newlines exactly as in body.html. 'No time limit' appears twice in the table and 'Medical benefits have no time limit' appears in both the Key Takeaways and FAQ 1 — each is listed under its own surface. Two-state post: reviewer must be Graeham C. Gillin. Sourcing: law.justia.com bot-challenged on 2026-10-02 and was not solved; Georgia Justia URLs are reused from sibling packs facts-1697/1652/1702/1650/1840 (verified 2026-09-23/24). The § 34-9-200.1(g) definition was read from the SBWC catastrophic-designations memo plus search; § 34-9-15(a) settlement finality was read via search only. ssa.gov returns 403 to curl; KA-01801 was read in Chrome. The 2026 'Georgia rate increase' pages found by search (HB 1234/HB 1021, $850) are mutually contradictory, uncorroborated by SBWC, and were rejected."
+}
