@@ -1,0 +1,744 @@
+{
+ "postId": 4585,
+ "slug": "diminished-value-claims-after-car-accident",
+ "liveUrl": "https://rodenlaw.com/blog/diminished-value-claims-after-car-accident/",
+ "jurisdiction": "GA+SC",
+ "researchedAt": "2026-10-02",
+ "verifiedClaims": [
+  {
+   "surface": "body",
+   "claim": "A repaired car carries a permanent accident history that shows up on Carfax and AutoCheck reports, and buyers know it.",
+   "verdict": "update",
+   "currentValue": "Accident and repair information appears on vehicle-history databases (CARFAX, AutoCheck, Verisk A-PLUS, LexisNexis C.L.U.E.) when it is reported to them; the NAIC Journal of Insurance Regulation describes these as services that 'track and store accident and repair information by vehicle identification number (VIN).' Not every crash is reported.",
+   "sourceName": "Wells-Dietel, Erkan-Barlow & Walkowiak, 'Automobile Diminished Value Claims', Journal of Insurance Regulation (NAIC, 2023)",
+   "sourceUrl": "https://content.naic.org/sites/default/files/cipr-jir-2023-5_0.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Soften 'shows up' to 'can show up' / 'is often reported to'. Inherent (stigma) diminished value depends on the buyer learning of the accident."
+  },
+  {
+   "surface": "body",
+   "claim": "That lost value is real money — and in both Georgia and South Carolina, you have the right to recover it from the at-fault driver's insurance company.",
+   "verdict": "update",
+   "currentValue": "The tort claim is against the at-fault driver; that driver's liability insurer pays on the driver's behalf. Georgia: third-party DV claims are adjusted by the at-fault driver's liability insurer under O.C.G.A. § 33-4-7 (Amica Mut. Ins. Co. v. Sanders, 335 Ga. App. 245 (2015), a third-party DV claim against the at-fault driver's insurer). South Carolina: tort measure is 'the cost of the repairs made ... plus the (remaining) diminution in value of the property' (Newman v. Brown, 228 S.C. 472 (1955)).",
+   "sourceName": "O.C.G.A. § 33-4-7 (2025); Amica Mut. Ins. Co. v. Sanders (Ga. Ct. App. 2015); Newman v. Brown (S.C. 1955)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-4/section-33-4-7/",
+   "retrievedAt": "2026-10-02",
+   "note": "Substantively right in both states. Recommend 'recover it from the at-fault driver, whose liability insurer handles the claim' — the right runs against the driver; in Georgia only § 33-4-7 (not § 33-4-6) gives the claimant a direct statutory remedy against that insurer, and only after a qualifying demand and lawsuit."
+  },
+  {
+   "surface": "body",
+   "claim": "Thousands of drivers across both states never file one because they do not know the claim exists or the insurance company never mentions it.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "No count of unfiled DV claims exists in any regulator or academic source found. Delete 'Thousands of drivers across both states never file one' or rephrase without a number ('Many drivers never file one ...'). Note: in Georgia, Mabry requires the driver's OWN insurer to assess DV on a first-party physical-damage claim without a separate request."
+  },
+  {
+   "surface": "body",
+   "claim": "As the Cornell Law Institute explains, an injured party is entitled to full compensation for all losses caused by the tortfeasor — including the reduction in vehicle market value.",
+   "verdict": "update",
+   "currentValue": "Publisher is the Legal Information Institute at Cornell Law School (no 'Cornell Law Institute'). Wex 'damages' says: 'In a tort case, the injured party can receive compensatory damages to recoup for all types of losses, including direct costs (medical care, property damage, lost wages, etc.) ...' It does not mention vehicle market value.",
+   "sourceName": "Legal Information Institute, Cornell Law School — Wex: damages",
+   "sourceUrl": "https://www.law.cornell.edu/wex/damages",
+   "retrievedAt": "2026-10-02",
+   "note": "Link resolves (HTTP 200, 2026-10-02). Same anchor-name defect sibling packs 1651/1653/1676/1706 corrected. Reword: 'As the Legal Information Institute at Cornell Law School explains, a tort victim can recover compensatory damages for all types of losses, including property damage.' Drop 'including the reduction in vehicle market value' from the attribution (or move it to the Newman/Mabry sentences). Optional more specific link: https://www.law.cornell.edu/wex/diminution_in_value (200)."
+  },
+  {
+   "surface": "body",
+   "claim": "A diminished value claim seeks compensation for the difference between what your vehicle was worth before the accident and what it is worth after repairs.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "State Farm v. Mabry, 274 Ga. 498 (2001) (measure: 'difference in the market value of the automobile immediately before the collision and its market value immediately after being repaired', quoting State Farm v. Smith); Newman v. Brown (S.C. 1955)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/2001/s01a0982-1.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Matches both states' formulations."
+  },
+  {
+   "surface": "body",
+   "claim": "There are three recognized types of diminished value ... Inherent Diminished Value ... Repair-Related Diminished Value ... Immediate Diminished Value",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "NAIC Journal of Insurance Regulation (2023), 'Automobile Diminished Value Claims'",
+   "sourceUrl": "https://content.naic.org/sites/default/files/cipr-jir-2023-5_0.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Industry taxonomy, not a legal classification. The NAIC paper lists parts-related, repair-related and inherent (stigma) DV; 'immediate' DV is used by appraisers. Optional: say 'Appraisers and insurers commonly describe three types'. 'The one most courts recognize' for inherent DV is unsupported as a count — Mabry recognized loss of value 'even when a vehicle is repaired properly'; Schulmeyer (S.C.) declined it under a collision policy. Suggest 'the type at the center of most disputes'."
+  },
+  {
+   "surface": "body",
+   "claim": "This is the most common type and the one most courts recognize.",
+   "verdict": "update",
+   "currentValue": "Mabry (Ga. 2001) recognized stigma loss after proper repair in the first-party context; Schulmeyer (S.C. 2003) refused it under a 'lower of actual cash value or cost of repair' collision policy and called the recent trend among other states 'disfavoring the claim'. No count of courts exists.",
+   "sourceName": "State Farm v. Mabry (Ga. 2001); Schulmeyer v. State Farm Fire & Cas. Co., 353 S.C. 491, 579 S.E.2d 132 (2003)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/2003/25612.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Replace 'the one most courts recognize' with 'the one most disputes are about'."
+  },
+  {
+   "surface": "body",
+   "claim": "Many insurers rely on what is called the \"17c formula,\" named after a State Farm claims manual section.",
+   "verdict": "update",
+   "currentValue": "The name comes from paragraph 17(c) of the second injunction in the Georgia class action Walker v. American National General Insurance Co. (Muscogee County Super. Ct. No. SU-03-CV-2058), entered after Mabry — not a State Farm claims manual. Amica Mut. Ins. Co. v. Sanders, 335 Ga. App. 245, 779 S.E.2d 459 (2015): 'The so-called \"17 (c)\" formula is named after [paragraph 17(c)] of the second injunction issued in the class action styled [Walker]'; the order required the insurer to 'continue the use of the 17(c) formula'. It is an insurer claims-handling formula from a court-approved class settlement, not a statute or rule of law. Georgia's Insurance Commissioner (Directive 08-P&C-2, Dec. 2008) said the Department 'has never promulgated or produced by regulation any formula' and 'has not endorsed a particular formula or method'.",
+   "sourceName": "Amica Mut. Ins. Co. v. Sanders, 335 Ga. App. 245 (2015); Ga. OCI Directive 08-P&C-2 (as quoted in Amica)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2015/a15a0917.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Recurring folklore; the Supreme Court's Mabry opinion imposed no formula ('Permitting State Farm to develop its own methodology rather than imposing one'). Rewrite: 'Many insurers use the \"17c formula,\" which takes its name from paragraph 17(c) of a Georgia class-action settlement order entered after Mabry. It is an insurance-industry formula, not law.' Amica text also checked via FindLaw (WebFetch, 2026-10-02): https://caselaw.findlaw.com/court/ga-court-of-appeals/1718464.html (curl gets 403; Justia URL resolves in browser)."
+  },
+  {
+   "surface": "body",
+   "claim": "take your car's pre-accident value from NADA or a similar guide, multiply it by 10% (the maximum they will acknowledge as diminished value), then apply a series of multipliers that reduce the number based on the car's mileage and the severity of damage.",
+   "verdict": "keep",
+   "currentValue": "Diminished Value = 0.1 × (NADA Retail Value) × Damage Modifier × Mileage Modifier; both modifiers range from 0 to 1 (moderate damage = 0.5).",
+   "sourceName": "NAIC Journal of Insurance Regulation (2023), 'Automobile Diminished Value Claims', p. 11–12",
+   "sourceUrl": "https://content.naic.org/sites/default/files/cipr-jir-2023-5_0.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. Optional precision: the base is NADA retail value (NADA guides are now published as J.D. Power valuations), and Amica notes the damage-severity modifier is 'a subjective decision, which must be made by the adjuster'. The NAIC paper notes the double penalty for mileage (already in NADA value) and no post-repair inspection — usable support for 'undervalues'."
+  },
+  {
+   "surface": "body",
+   "claim": "The 10% cap is arbitrary. A two-year-old SUV with frame damage can easily lose 20-30% of its value, but the 17c formula would never get you there.",
+   "verdict": "update",
+   "currentValue": "No source supports a 20–30% loss figure for a two-year-old SUV with frame damage. The NAIC paper reports an adjuster's estimate that DV 'ultimately ends up being about 10% to 20% of the direct physical damage loss' (of the repair bill, not of the vehicle's value) and criticizes 17(c) as 'not sound and well-received'.",
+   "sourceName": "NAIC Journal of Insurance Regulation (2023)",
+   "sourceUrl": "https://content.naic.org/sites/default/files/cipr-jir-2023-5_0.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Delete the '20-30%' sentence. Keep a criticism grounded in the source: 'Because 17c caps the starting point at 10% of book value and then cuts it for mileage that book value already reflects, it can produce low numbers for newer, low-mileage cars with structural damage.' 'Arbitrary' is opinion — acceptable as advocacy but better as 'is not based on market data'."
+  },
+  {
+   "surface": "body",
+   "claim": "Courts in both Georgia and South Carolina have rejected this formula as the sole measure of diminished value.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "Amica Mut. Ins. Co. v. Sanders, 335 Ga. App. 245 (2015)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2015/a15a0917.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Wrong for Georgia: the only Georgia appellate decision on 17(c) held that an adjuster's use of it 'as part of his subjective determination' was reasonable and 'provided it with good cause as a matter of law' to refuse a higher demand under § 33-4-7 (bad-faith claim reversed). No South Carolina appellate decision on 17(c) was found. What does exist is regulatory: Georgia OCI Directive 08-P&C-2 (2008) — 'Total reliance on one particular formula or method ... may not be appropriate given the subjective nature of the claim.' Replace with: 'Georgia's Insurance Commissioner has warned insurers that total reliance on one formula may not be appropriate, and that the Department has never endorsed one.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Independent appraisals typically cost $250 to $500 but routinely support figures three to five times what the 17c formula produces.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "No published fee survey or comparison supports either figure. The NAIC paper notes appraisal fees are charged flat or as a percentage and one consumer portal charged $45 — fees vary widely. Delete both numbers; e.g. 'An independent appraisal costs money up front but often supports a higher figure than a 17c calculation.' (Amica illustrates the gap: insurer $716.25 via 17(c) vs. claimant's appraiser ~$3,000 — but the court found the insurer's figure reasonable.)"
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia is widely recognized as one of the best states in the country for pursuing a diminished value claim.",
+   "verdict": "keep",
+   "currentValue": "NAIC Journal of Insurance Regulation (2023): 'Georgia is the only state with a clear legal direction that first-party auto claimants are entitled to recover the diminished value losses from their automobile insurers.'",
+   "sourceName": "NAIC Journal of Insurance Regulation (2023)",
+   "sourceUrl": "https://content.naic.org/sites/default/files/cipr-jir-2023-5_0.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Supportable; cite the NAIC sentence if a source is wanted. 'Strong statutory protections' should point to § 33-4-7 (third party), not § 33-4-6."
+  },
+  {
+   "surface": "body",
+   "claim": "The Georgia Court of Appeals decision in State Farm Mutual Automobile Insurance Co. v. Mabry (274 Ga. App. 103, 2005) fundamentally changed the diminished value landscape.",
+   "verdict": "update",
+   "currentValue": "State Farm Mut. Auto. Ins. Co. v. Mabry, 274 Ga. 498, 556 S.E.2d 114 — Supreme Court of Georgia (not the Court of Appeals), decided November 28, 2001 (not 2005). It is a FIRST-PARTY PHYSICAL-DAMAGE case, not an uninsured/underinsured-motorist case: policyholders 'had made first-party physical damage claims' under coverage promising to 'pay for loss to your car.' Holding: 'value, not condition, is the baseline for the measure of damages' and the repair option 'serves only to abate, not eliminate, the insurer's liability for the difference between pre-loss value and post-loss value'; State Farm's policies 'obligate it to compensate its policyholders for that loss of value ... if the repairs do not return the vehicle to its pre-loss value' and State Farm 'is obligated to assess that element of loss along with the elements of physical damage when a policyholder makes a general claim of loss.' The holding rests on the policy's promise to pay for 'loss'; Royal Capital Dev. v. Maryland Cas. Co., 291 Ga. 262 (2012) confirms that recovery of diminished value 'depends on the specific language of the contract itself.'",
+   "sourceName": "State Farm Mut. Auto. Ins. Co. v. Mabry, 274 Ga. 498, 556 S.E.2d 114 (Ga. Nov. 28, 2001) (Justia, read in full 2026-10-02)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/2001/s01a0982-1.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Court, reporter and year are all wrong: Supreme Court of Georgia, 274 Ga. 498, 556 S.E.2d 114 (2001). '274 Ga. App. 103' is not this case."
+  },
+  {
+   "surface": "body",
+   "claim": "The court held that first-party diminished value claims are valid under Georgia's uninsured/underinsured motorist coverage provisions. If the at-fault driver's insurance does not adequately cover your diminished value, you can pursue a claim under your own UM/UIM policy.",
+   "verdict": "update",
+   "currentValue": "State Farm Mut. Auto. Ins. Co. v. Mabry, 274 Ga. 498, 556 S.E.2d 114 — Supreme Court of Georgia (not the Court of Appeals), decided November 28, 2001 (not 2005). It is a FIRST-PARTY PHYSICAL-DAMAGE case, not an uninsured/underinsured-motorist case: policyholders 'had made first-party physical damage claims' under coverage promising to 'pay for loss to your car.' Holding: 'value, not condition, is the baseline for the measure of damages' and the repair option 'serves only to abate, not eliminate, the insurer's liability for the difference between pre-loss value and post-loss value'; State Farm's policies 'obligate it to compensate its policyholders for that loss of value ... if the repairs do not return the vehicle to its pre-loss value' and State Farm 'is obligated to assess that element of loss along with the elements of physical damage when a policyholder makes a general claim of loss.' The holding rests on the policy's promise to pay for 'loss'; Royal Capital Dev. v. Maryland Cas. Co., 291 Ga. 262 (2012) confirms that recovery of diminished value 'depends on the specific language of the contract itself.'",
+   "sourceName": "State Farm v. Mabry (Ga. 2001); O.C.G.A. § 33-7-11(a)(1) (2025)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/2001/s01a0982-1.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Most consequential error on the page. Mabry is about first-party physical-damage (collision/comprehensive) coverage, not UM/UIM. Rewrite: 'The Supreme Court of Georgia held that when your own auto policy promises to pay for \"loss to your car,\" the insurer must pay for diminished value as well as repairs, and must assess diminished value whenever you make a physical-damage claim — you do not have to ask separately.' Separately (not Mabry): Georgia UM coverage must include property damage — the UM endorsement must pay 'for injury to or destruction of property of an insured' sustained from an uninsured motorist, minimum $25,000 (§ 33-7-11(a)(1)(A)) — so an uninsured at-fault driver's DV can be presented under UM property-damage coverage; no Georgia appellate case on DV under UM was found, so state it as coverage, not as a holding. Policy-language caveat: Royal Capital (2012) — DV recovery under a policy 'depends on the specific language of the contract itself'; a policy that expressly excludes DV may control. No Georgia appellate decision enforcing an auto DV exclusion was found; flag for Graeham Gillin."
+  },
+  {
+   "surface": "body",
+   "claim": "Before Mabry, insurers routinely denied first-party diminished value claims. After the ruling, Georgia became arguably the strongest state in the country for these claims.",
+   "verdict": "update",
+   "currentValue": "Mabry's record: 'the undisputed evidence shows that State Farm had no such methodology in use', and State Farm denied 'any duty to assess vehicles for diminution in value unless the insured specifically makes a claim'. On December 1, 2001 the Insurance Commissioner's Directive 01-P&C-1 directed all P&C insurers to adjust DV on first-party physical damage losses (as described in Directive 08-P&C-2 and Amica).",
+   "sourceName": "State Farm v. Mabry (Ga. 2001); Amica Mut. Ins. Co. v. Sanders (2015) (quoting OCI Directives 01-P&C-1 and 08-P&C-2)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/2001/s01a0982-1.html",
+   "retrievedAt": "2026-10-02",
+   "note": "'Routinely denied' across all insurers is unsupported; the record shows State Farm did not assess DV without a separate claim. Rewrite: 'Before Mabry, State Farm did not assess diminished value unless a policyholder asked; after it, Georgia's Insurance Commissioner directed every property and casualty insurer to assess diminished value on first-party physical-damage claims.' Second sentence OK with the NAIC support."
+  },
+  {
+   "surface": "body",
+   "claim": "Under O.C.G.A. § 33-4-6, if an insurance company refuses to pay a valid claim without reasonable cause, the policyholder can recover a penalty of up to 50% of the claim amount, plus reasonable attorney's fees.",
+   "verdict": "update",
+   "currentValue": "§ 33-4-6(a): after a demand 'made by the holder of the policy' and refusal to pay 'within 60 days', a bad-faith insurer is liable to 'such holder' for 'not more than 50 percent of the liability of the insurer for the loss or $5,000.00, whichever is greater, and all reasonable attorney's fees'. It applies only against YOUR OWN insurer (first-party). For a third-party DV claim against the at-fault driver's liability insurer the statute is § 33-4-7: duty 'to adjust that loss fairly and promptly, to make a reasonable effort to investigate and evaluate the claim, and, where liability is reasonably clear, to make a good faith effort to settle'; penalty 'not more than 50 percent of the liability of the insured for the loss or $5,000.00, whichever is greater, and all reasonable attorney's fees'; requires a demand letter 'by statutory overnight delivery or certified mail, return receipt requested, offering to settle for an amount certain', refusal within 60 days, suit, and a recovery 'equal to or in excess of the claimant's demand' (§ 33-4-7(c)); the insurer is 'an unnamed party, not disclosed to the jury' until verdict (d); the plaintiff must mail the demand and complaint to the Commissioner within 20 days (g). § 33-4-7 has not been amended since 2019 (2019 amendment only deleted 'of Insurance' in (g)); no 2021 amendment.",
+   "sourceName": "O.C.G.A. §§ 33-4-6, 33-4-7 (2025 Code, Justia; § 33-4-7 history: Ga. L. 2001 p. 784; 2015; 2016; 2019); Mills v. Allstate Ins. Co., 288 Ga. App. 257 (2007)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-4/section-33-4-7/",
+   "retrievedAt": "2026-10-02",
+   "note": "Add 'or $5,000, whichever is greater' and 'after a 60-day written demand', and confine § 33-4-6 to the reader's own insurer (first-party DV after Mabry). Add a § 33-4-7 sentence for the third-party claim — that is the statute that actually fits this post. Mills: § 33-4-7 'applied only to an insurer's bad faith in responding to claims for property damage' — which DV is. § 33-4-6 URL verified in sibling pack 1679."
+  },
+  {
+   "surface": "body",
+   "claim": "This provision gives insurers a strong incentive to negotiate diminished value claims in good faith rather than stonewalling.",
+   "verdict": "update",
+   "currentValue": "Applies to first-party claims under § 33-4-6 and to third-party property-damage claims under § 33-4-7. Limit: Amica (2015) held an insurer's use of the 17(c) formula 'as part of [the adjuster's] subjective determination' gave it 'good cause as a matter of law' to refuse a higher demand, defeating a § 33-4-7 bad-faith claim.",
+   "sourceName": "Amica Mut. Ins. Co. v. Sanders, 335 Ga. App. 245 (2015)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2015/a15a0917.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Keep the sentence but attach it to both statutes and do not imply a 17c offer is itself bad faith."
+  },
+  {
+   "surface": "body",
+   "claim": "In Georgia, the statute of limitations for property damage claims — including diminished value — is four years from the date of the accident under O.C.G.A. § 9-3-31. This is longer than the two-year deadline for personal injury claims (O.C.G.A. § 9-3-33)",
+   "verdict": "keep",
+   "currentValue": "§ 9-3-31: 'Actions for injuries to personalty shall be brought within four years after the right of action accrues.' § 9-3-33: injuries to the person, two years.",
+   "sourceName": "O.C.G.A. §§ 9-3-31, 9-3-33 (2025); verified in sibling packs 1840 and 1746",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-31/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct; a vehicle is personalty. Georgia has no general discovery rule for these claims, and a pending insurer negotiation does not toll either deadline. A first-party (own-policy) DV claim is a contract claim and may be shortened by the policy's suit-limitation clause — optional caveat for the reviewer."
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia follows a modified comparative fault rule under O.C.G.A. § 51-12-33. If you are partially at fault, your diminished value recovery is reduced by your percentage of fault. At 50% or more, you recover nothing.",
+   "verdict": "keep",
+   "currentValue": "§ 51-12-33(a): damages reduced 'in proportion to his or her percentage of fault'; (g): 'the plaintiff shall not be entitled to receive any damages if the plaintiff is 50 percent or more responsible'. Applies to any action 'for injury to person or property'.",
+   "sourceName": "O.C.G.A. § 51-12-33 (2025 Code); sibling packs 1651, 1706",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct after SB 68 (2025): the 50% bar in (g) is unchanged in the 2025 Code."
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina courts have consistently recognized diminished value as a legitimate component of property damage. Under S.C. Code § 38-77-30, liability policies must provide property damage coverage, and courts have held that diminished value falls within it.",
+   "verdict": "update",
+   "currentValue": "§ 38-77-30 is the chapter's DEFINITIONS section; it requires nothing. The property-damage liability requirement is § 38-77-140(A)(3): 'twenty-five thousand dollars because of injury to or destruction of property of others in any one accident.' The authority for third-party DV is the tort measure of damages, not the insurance code: 'the cost of the repairs made ... plus the (remaining) diminution in value of the property will ordinarily be the proper measure of damages' (Newman v. Brown, 228 S.C. 472, 90 S.E.2d 649 (1955)). No South Carolina decision holding that DV 'falls within' § 38-77-30 exists.",
+   "sourceName": "S.C. Code §§ 38-77-30, 38-77-140 (scstatehouse.gov); Newman v. Brown, 228 S.C. 472 (1955)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'South Carolina's measure of damages for a damaged vehicle is the cost of repairs plus any remaining loss in value (Newman v. Brown, 1955), and every South Carolina liability policy must carry at least $25,000 of property-damage coverage (S.C. Code § 38-77-140).' Note for reviewer: Newman speaks of repairs that did not restore the vehicle 'in as good condition as it was before'; whether pure stigma loss after a perfect repair is recoverable in SC tort is not squarely decided. 'Consistently recognized' overstates one 1955 case — say 'recognize'."
+  },
+  {
+   "surface": "body",
+   "claim": "Unlike Georgia, South Carolina has not broadly opened the door to first-party diminished value claims. Pursuing a claim under your own collision or UM/UIM policy is significantly harder. South Carolina courts have generally held that collision coverage pays to restore the vehicle through repairs, not to compensate for residual stigma loss.",
+   "verdict": "update",
+   "currentValue": "One decision: Schulmeyer v. State Farm Fire & Cas. Co., 353 S.C. 491, 579 S.E.2d 132 (S.C. 2003) (certified question from D.S.C.). Under a collision/comprehensive policy limiting liability to 'the lower of: 1. the actual cash value; or 2. the cost of repair or replacement', the court answered no: 'These are alternatives, which do not include an additional obligation to pay for diminished value when the cost of repair is chosen'; the policy 'defines repair or replacement as restoring the vehicle to pre-accident mechanical function and condition and not as restoring value.' UM is different: S.C. UM must pay 'all sums which he is legally entitled to recover as damages from the owner or operator of an uninsured motor vehicle' and must include 'no less than twenty-five thousand dollars' coverage for injury to or destruction of the property of the insured' (first $200 may be excluded) (§ 38-77-150(A)) — a tort measure, to which Newman's repair-plus-diminution rule would apply. No SC appellate decision on DV under UM was found.",
+   "sourceName": "Schulmeyer v. State Farm Fire & Cas. Co. (S.C. 2003); S.C. Code § 38-77-150",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/2003/25612.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Replace 'South Carolina courts have generally held' with 'The South Carolina Supreme Court held in Schulmeyer v. State Farm (2003) that a standard collision policy paying the lower of actual cash value or repair cost does not also owe diminished value.' Remove UM/UIM from 'significantly harder' or qualify: 'UM property-damage coverage pays what you could recover from the uninsured driver, but no South Carolina appellate court has addressed diminished value under it.' Reviewer check."
+  },
+  {
+   "surface": "body",
+   "claim": "If the at-fault driver is uninsured or underinsured, your options for recovering diminished value may be limited.",
+   "verdict": "update",
+   "currentValue": "S.C. UM must include at least $25,000 property-damage coverage (§ 38-77-150(A)); an 'uninsured motor vehicle' includes one without BI and PD liability at the § 38-77-140 minimums (§ 38-77-30(14)). UIM is defined by bodily-injury limits only (§ 38-77-30(15)).",
+   "sourceName": "S.C. Code §§ 38-77-30(14)-(15), 38-77-150",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c077.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate for underinsured (UIM is keyed to bodily injury); for an uninsured driver, point to UM property-damage coverage rather than saying options are limited."
+  },
+  {
+   "surface": "body",
+   "claim": "The statute of limitations for property damage in South Carolina is three years from the date of the accident under S.C. Code § 15-3-530. Personal injury claims also carry a three-year deadline in South Carolina.",
+   "verdict": "keep",
+   "currentValue": "§ 15-3-530: 'Within three years: ... (4) an action for taking, detaining, or injuring any goods or chattels ... (5) an action for assault, battery, or any injury to the person'.",
+   "sourceName": "S.C. Code § 15-3-530 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct; property damage to a vehicle is (4). Optional cite '§ 15-3-530(4)'."
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina follows a modified comparative fault system. You can recover diminished value as long as you were less than 51% at fault for the accident. Your recovery is reduced by your percentage of fault.",
+   "verdict": "keep",
+   "currentValue": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991): a plaintiff 'may recover damages if his or her negligence is not greater than that of the defendant', reduced by the plaintiff's percentage.",
+   "sourceName": "Nelson v. Concrete Supply Co. (S.C. 1991); sibling packs 1651, 1744",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct. Optional: add '(Nelson v. Concrete Supply Co.)'. Never cite § 15-38-15 for the bar."
+  },
+  {
+   "surface": "body",
+   "claim": "If you own property in both states or were involved in a crash near the state line, understanding these differences can affect which state's law applies to your claim.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "General framing; no factual assertion to verify. (Choice of law is not determined by where you own property; optional rewording: 'If your crash happened in one state and you live or insure your car in the other ...'.)"
+  },
+  {
+   "surface": "body",
+   "claim": "Table — First-party DV claims (own insurance): Georgia 'Allowed under UM/UIM (per Mabry)'; South Carolina 'Generally not allowed under collision/UM'",
+   "verdict": "update",
+   "currentValue": "Georgia: owed under first-party physical-damage (collision/comprehensive) coverage that promises to pay for 'loss' — the insurer must assess it on every physical-damage claim (Mabry, 2001), subject to the policy's wording (Royal Capital, 2012). South Carolina: not owed under a 'lower of actual cash value or cost of repair' collision policy (Schulmeyer, 2003); DV under UM property-damage coverage not decided.",
+   "sourceName": "State Farm v. Mabry (Ga. 2001); Schulmeyer v. State Farm (S.C. 2003)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/2001/s01a0982-1.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Georgia cell: 'Required under collision/comprehensive coverage (Mabry, 2001)'. South Carolina cell: 'Not under a standard collision policy (Schulmeyer, 2003)'."
+  },
+  {
+   "surface": "body",
+   "claim": "Table — Third-party DV claims (at-fault driver): Georgia 'Fully recognized'; South Carolina 'Fully recognized'",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Amica Mut. Ins. Co. v. Sanders (Ga. Ct. App. 2015) (third-party DV claim under § 33-4-7); Newman v. Brown (S.C. 1955); NAIC JIR (2023) lists both GA and SC among states allowing third-party DV recovery",
+   "sourceUrl": "https://content.naic.org/sites/default/files/cipr-jir-2023-5_0.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Acceptable; 'Recognized' is enough — 'Fully' adds nothing."
+  },
+  {
+   "surface": "body",
+   "claim": "Table — Property damage statute of limitations: 4 years (O.C.G.A. § 9-3-31) / 3 years (S.C. Code § 15-3-530)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-3-31; S.C. Code § 15-3-530(4)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-31/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct."
+  },
+  {
+   "surface": "body",
+   "claim": "Table — Bad faith penalties: Georgia 'Up to 50% penalty + attorney fees (O.C.G.A. § 33-4-6)'; South Carolina 'Bad faith claims available but less statutory structure'",
+   "verdict": "update",
+   "currentValue": "Georgia: third-party property-damage claims — § 33-4-7 (greater of 50% of the insured's liability or $5,000, plus attorney's fees, after a 60-day demand by certified mail/statutory overnight delivery and a recovery at least equal to the demand); own insurer — § 33-4-6 (greater of 50% or $5,000, plus fees, 60-day demand). South Carolina: no third-party bad-faith action ('South Carolina does not recognize a third party action for the bad faith refusal to pay insurance benefits', Kleckley v. Northwestern Nat'l Cas. Co., 338 S.C. 131 (2000)); against your own insurer, attorney's fees after a 90-day demand capped at one-third of the judgment (§ 38-59-40) and the Nichols bad-faith tort (Nichols v. State Farm, 279 S.C. 336 (1983)). § 38-59-20 unfair claim practices are enforced by the Department of Insurance director (§ 38-59-30); no private right of action.",
+   "sourceName": "O.C.G.A. §§ 33-4-6, 33-4-7; S.C. Code §§ 38-59-20, -30, -40; Kleckley (S.C. 2000); Nichols (S.C. 1983)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t38c059.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Georgia cell: 'Greater of 50% or $5,000 + attorney fees (O.C.G.A. § 33-4-7 against the at-fault driver's insurer; § 33-4-6 against your own)'. South Carolina cell: 'No bad-faith claim against the at-fault driver's insurer (Kleckley); attorney fees against your own insurer (S.C. Code § 38-59-40)'."
+  },
+  {
+   "surface": "body",
+   "claim": "Table — Comparative fault threshold: Barred at 50% or more fault (O.C.G.A. § 51-12-33) / Barred at 51% or more fault",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-33(g); Nelson v. Concrete Supply Co. (S.C. 1991)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct; SC cell may add '(Nelson v. Concrete Supply Co.)'."
+  },
+  {
+   "surface": "body",
+   "claim": "Table — Landmark case law: Georgia 'State Farm v. Mabry (2005)'; South Carolina 'No equivalent landmark ruling'",
+   "verdict": "update",
+   "currentValue": "Georgia: State Farm v. Mabry (Ga. 2001). South Carolina: Newman v. Brown (S.C. 1955) (third-party measure: repairs plus remaining diminution) and Schulmeyer v. State Farm (S.C. 2003) (no DV under a standard collision policy).",
+   "sourceName": "State Farm v. Mabry; Newman v. Brown; Schulmeyer v. State Farm",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/2003/25612.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Fix the year to 2001; replace the SC cell with the two cases."
+  },
+  {
+   "surface": "body",
+   "claim": "Table — Overall strength for DV claims: Georgia 'Among the strongest states nationally'; South Carolina 'Moderate — strong for third-party claims'",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "NAIC JIR (2023)",
+   "sourceUrl": "https://content.naic.org/sites/default/files/cipr-jir-2023-5_0.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Characterization; consistent with the NAIC paper (Georgia the only state with clear first-party direction; SC among third-party states)."
+  },
+  {
+   "surface": "body",
+   "claim": "Step 1: Wait Until Repairs Are Complete — You cannot accurately assess diminished value until the vehicle has been fully repaired.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "State Farm v. Mabry (measure: value 'immediately after being repaired')",
+   "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/2001/s01a0982-1.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Practical guidance consistent with the repaired-value measure."
+  },
+  {
+   "surface": "body",
+   "claim": "Step 4: ... In Georgia, reference O.C.G.A. § 33-4-6 to signal awareness of the bad faith penalty provisions.",
+   "verdict": "update",
+   "currentValue": "A demand to the AT-FAULT DRIVER'S insurer is governed by § 33-4-7, not § 33-4-6 (which runs only to the 'holder of the policy'). § 33-4-7(c) requires the claimant or attorney to deliver 'a demand letter, by statutory overnight delivery or certified mail, return receipt requested, offering to settle for an amount certain', and the penalty is available only if the insurer refuses within 60 days, the claimant sues, and recovers at least the amount demanded.",
+   "sourceName": "O.C.G.A. § 33-4-7(c) (2025); Mills v. Allstate (2007)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-4/section-33-4-7/",
+   "retrievedAt": "2026-10-02",
+   "note": "Recurring site error (third-party claimant citing § 33-4-6). Replace with: 'In Georgia, send the demand by certified mail or statutory overnight delivery, offering to settle for a specific amount — that is what preserves the bad-faith penalty under O.C.G.A. § 33-4-7 if the insurer refuses for 60 days.'"
+  },
+  {
+   "surface": "body",
+   "claim": "If the insurance company refuses fair compensation, you can file a complaint with the state Department of Insurance or pursue the claim through small claims court or civil litigation.",
+   "verdict": "update",
+   "currentValue": "Georgia regulator is the Office of the Commissioner of Insurance and Safety Fire (consumer complaint portal: Consumer Services Division). South Carolina: Department of Insurance. Small claims: Georgia magistrate court — civil claims up to $15,000 (O.C.G.A. § 15-10-2(5)), rising to $25,000 on January 1, 2027 (version effective 1/1/2027); South Carolina magistrate court — concurrent jurisdiction to $7,500 (S.C. Code § 22-3-10(2)).",
+   "sourceName": "Ga. OCI — File a Consumer Insurance Complaint; O.C.G.A. § 15-10-2 (2025, both versions); S.C. Code § 22-3-10",
+   "sourceUrl": "https://oci.georgia.gov/file-consumer-insurance-complaint",
+   "retrievedAt": "2026-10-02",
+   "note": "Name the regulators correctly and add the dollar limits. In Georgia a regulator complaint does not substitute for the § 33-4-7 demand. SC DOI (doi.sc.gov) refuses connections from this network — cite by name, unverified-by-fetch. Georgia $25,000 version: https://law.justia.com/codes/georgia/title-15/chapter-10/article-1/section-15-10-2-d-1/"
+  },
+  {
+   "surface": "body",
+   "claim": "Independent appraisal report. This is the single most important piece of evidence. An appraisal from a credentialed vehicle valuation expert carries far more weight than a self-calculated estimate.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Practical guidance; no verifiable claim. Note Amica: an insurer's 17(c) figure can still be found reasonable against an appraisal — avoid implying an appraisal is decisive."
+  },
+  {
+   "surface": "body",
+   "claim": "Pre-accident vehicle value. NADA guides, Kelley Blue Book, and dealer purchase records establish what the vehicle was worth before the crash.",
+   "verdict": "update",
+   "currentValue": "The NADA Official Used Car Guide is now published as J.D. Power valuations (J.D. Power acquired NADA Used Car Guide in 2015).",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Optional wording: 'J.D. Power (formerly NADA) values, Kelley Blue Book ...'. jdpower.com refused curl (403); not fetched — reviewer may leave 'NADA' since 17(c) is defined by 'NADA retail value'."
+  },
+  {
+   "surface": "body",
+   "claim": "Crashes that cause frame damage ... typically result in higher diminished value because structural damage scares buyers the most.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "NAIC JIR (2023) (severity of the loss is 'usually a function of the repairs to the vehicle'; 17(c) damage modifier scales with severity)",
+   "sourceUrl": "https://content.naic.org/sites/default/files/cipr-jir-2023-5_0.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Consistent with both the formula and appraisal practice."
+  },
+  {
+   "surface": "body",
+   "claim": "\"Our formula shows your DV is only $300.\" This is the 17c formula at work. ... It is not — it is an internal claims tool designed to minimize payouts. Courts regularly accept independent appraisals over the 17c formula.",
+   "verdict": "update",
+   "currentValue": "17(c) is not an insurer's internal tool; it comes from paragraph 17(c) of a Georgia class-action settlement order (Walker v. American National General Ins. Co.) — Amica. Georgia's Court of Appeals held an adjuster's use of 17(c) as part of a subjective determination was reasonable as a matter of law for bad-faith purposes (Amica, 2015). Georgia OCI Directive 08-P&C-2: the formula result is not 'the definitive determination of the carrier's liability', and total reliance on one formula 'may not be appropriate'.",
+   "sourceName": "Amica Mut. Ins. Co. v. Sanders (2015); Ga. OCI Directive 08-P&C-2 (as quoted in Amica)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2015/a15a0917.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Drop 'Courts regularly accept independent appraisals over the 17c formula' (no authority; Amica points the other way on bad faith). Replace 'internal claims tool designed to minimize payouts' with 'a formula from a Georgia class-action settlement that Georgia's Insurance Commissioner has said is not the final word on what you are owed'. The '$300' is illustrative; fine."
+  },
+  {
+   "surface": "body",
+   "claim": "\"Your vehicle is too old to have diminished value.\" While a 15-year-old car with 200,000 miles has less diminished value than a two-year-old car with 10,000 miles, the claim does not disappear because the vehicle has age on it.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "NAIC JIR (2023) (older, high-mileage cars carry less DV; 17(c) mileage modifier reaches zero at high mileage)",
+   "sourceUrl": "https://content.naic.org/sites/default/files/cipr-jir-2023-5_0.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Consistent. Note: under 17(c) the mileage modifier can reach 0, so an insurer's formula may produce $0 for a high-mileage car — appraisal evidence is the counter."
+  },
+  {
+   "surface": "body",
+   "claim": "\"Diminished value is not covered under your policy.\" For first-party claims in South Carolina, this argument may have merit. In Georgia, post-Mabry, it fails for UM/UIM claims. For third-party claims in either state, diminished value is a recognized component of property damage.",
+   "verdict": "update",
+   "currentValue": "South Carolina first-party: Schulmeyer (2003) — no DV under a 'lower of ACV or cost of repair' collision policy. Georgia: Mabry concerns collision/comprehensive ('pay for loss to your car'), not UM/UIM; its rule depends on policy wording (Royal Capital, 2012). Third-party: Amica (GA), Newman (SC).",
+   "sourceName": "Schulmeyer (S.C. 2003); Mabry (Ga. 2001); Royal Capital (Ga. 2012)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/2012/s12q0209.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Change 'it fails for UM/UIM claims' to 'it generally fails for collision and comprehensive claims, unless your policy expressly excludes diminished value'."
+  },
+  {
+   "surface": "body",
+   "claim": "In Georgia, the threat of a bad faith claim under O.C.G.A. § 33-4-6 carries real weight — the potential 50% penalty makes it expensive for insurers to deny valid claims.",
+   "verdict": "update",
+   "currentValue": "For the at-fault driver's insurer the statute is § 33-4-7 (greater of 50% of the insured's liability or $5,000, plus attorney's fees, after a qualifying 60-day demand and a recovery at least equal to the demand). § 33-4-6 applies only to the reader's own insurer.",
+   "sourceName": "O.C.G.A. §§ 33-4-6, 33-4-7 (2025)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-4/section-33-4-7/",
+   "retrievedAt": "2026-10-02",
+   "note": "Change to 'under O.C.G.A. § 33-4-7 (or § 33-4-6 when it is your own insurer)' and 'the potential penalty — 50% of the loss or $5,000, whichever is greater, plus attorney's fees'."
+  },
+  {
+   "surface": "body",
+   "claim": "Diminished value claims frequently overlap with personal injury claims. ... your diminished value claim should be coordinated with your injury claim for maximum total recovery. Settling one without considering the other leaves money on the table.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. §§ 9-3-31, 9-3-33 (different deadlines)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Practice guidance. Optional caveat worth one clause: a property-damage release can be drafted to cover more than the vehicle — read any release before signing."
+  },
+  {
+   "surface": "body",
+   "claim": "Roden Law represents car accident victims across Georgia and South Carolina ... We work on a contingency fee basis, which means you pay nothing unless we recover compensation for you.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Firm statement",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Firm's own representation; not independently verifiable. Phone 1-844-RESULTS = 1-844-737-8587 matches tel: link."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Diminished value claims recover the loss in vehicle market value after repair.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "State Farm v. Mabry (Ga. 2001); Newman v. Brown (S.C. 1955)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/2001/s01a0982-1.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Georgia is one of the strongest DV states (State Farm v. Mabry, O.C.G.A. § 33-4-6).",
+   "verdict": "update",
+   "currentValue": "Georgia: State Farm v. Mabry, 274 Ga. 498 (2001) (your own collision/comprehensive insurer must assess and pay DV); O.C.G.A. § 33-4-7 (bad-faith penalty against the at-fault driver's insurer on property-damage claims, greater of 50% or $5,000 plus fees).",
+   "sourceName": "State Farm v. Mabry (Ga. 2001); O.C.G.A. § 33-4-7",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-4/section-33-4-7/",
+   "retrievedAt": "2026-10-02",
+   "note": "Replace '§ 33-4-6' with '§ 33-4-7' (the third-party property-damage statute), or cite both with roles: 'State Farm v. Mabry (2001); O.C.G.A. § 33-4-7'."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "SC allows third-party DV claims under S.C. Code § 38-77-30.",
+   "verdict": "update",
+   "currentValue": "§ 38-77-30 is a definitions section. Third-party DV rests on South Carolina's tort measure — repairs plus remaining diminution in value (Newman v. Brown, 228 S.C. 472 (1955)); liability policies must carry $25,000 property-damage coverage (§ 38-77-140).",
+   "sourceName": "Newman v. Brown (S.C. 1955); S.C. Code § 38-77-140",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1955/17096-1.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Replace with: 'South Carolina allows third-party DV claims (Newman v. Brown, 1955) but not under a standard collision policy (Schulmeyer v. State Farm, 2003).'"
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Independent appraisals beat the 17c formula.",
+   "verdict": "update",
+   "currentValue": "17(c) is a formula from a Georgia class-action settlement order (Amica, 2015); Georgia's Insurance Commissioner says no formula is endorsed and total reliance on one 'may not be appropriate' (Directive 08-P&C-2). Amica held that use of 17(c) can be reasonable for bad-faith purposes.",
+   "sourceName": "Amica Mut. Ins. Co. v. Sanders (2015)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2015/a15a0917.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Soften: 'An independent appraisal is the best answer to an insurer's 17c number.'"
+  },
+  {
+   "surface": "faqs",
+   "claim": "What is a diminished value claim? — A claim for the reduction in vehicle market value after an accident, even after full repairs.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "State Farm v. Mabry (Ga. 2001)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/supreme-court/2001/s01a0982-1.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct. Publishes as FAQPage structured data."
+  },
+  {
+   "surface": "faqs",
+   "claim": "Is Georgia good for DV claims? — Yes. State Farm v. Mabry allows first-party claims. O.C.G.A. § 33-4-6 adds bad faith penalties.",
+   "verdict": "update",
+   "currentValue": "Mabry (Ga. 2001) requires your own insurer to assess and pay DV under collision/comprehensive coverage; bad-faith penalties: § 33-4-6 against your own insurer, § 33-4-7 against the at-fault driver's insurer (greater of 50% or $5,000 plus attorney's fees, after a 60-day demand).",
+   "sourceName": "State Farm v. Mabry; O.C.G.A. §§ 33-4-6, 33-4-7",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-33/chapter-4/section-33-4-7/",
+   "retrievedAt": "2026-10-02",
+   "note": "Suggested answer: 'Yes. Under State Farm v. Mabry (Ga. 2001), your own insurer must assess and pay diminished value on a collision or comprehensive claim, and O.C.G.A. § 33-4-7 allows a bad-faith penalty against the at-fault driver's insurer if it refuses a proper demand for 60 days.' Publishes as FAQPage structured data."
+  },
+  {
+   "surface": "faqs",
+   "claim": "Can I file in South Carolina? — Yes, primarily against the at-fault driver third-party insurer under S.C. Code § 38-77-30.",
+   "verdict": "update",
+   "currentValue": "Third-party DV in SC rests on Newman v. Brown (1955) (repairs plus remaining diminution in value); § 38-77-30 is definitions only. First-party under a standard collision policy is not owed (Schulmeyer, 2003).",
+   "sourceName": "Newman v. Brown (S.C. 1955); Schulmeyer v. State Farm (S.C. 2003)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1955/17096-1.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Suggested answer: 'Yes, against the at-fault driver (paid by that driver's liability insurer). South Carolina measures vehicle damage as repair costs plus any remaining loss in value (Newman v. Brown). A standard collision policy does not owe diminished value (Schulmeyer v. State Farm, 2003).' Also fix the missing apostrophe ('driver's'). Publishes as FAQPage structured data."
+  },
+  {
+   "surface": "faqs",
+   "claim": "How is diminished value calculated? — The 17c formula starts at 10% of NADA value with adjustments. Independent appraisals produce more accurate figures.",
+   "verdict": "update",
+   "currentValue": "17(c): 0.1 × NADA retail value × damage modifier (0–1) × mileage modifier (0–1); from paragraph 17(c) of a Georgia class-action settlement order, used by insurers; not a law or regulator-endorsed method.",
+   "sourceName": "NAIC JIR (2023); Amica Mut. Ins. Co. v. Sanders (2015)",
+   "sourceUrl": "https://content.naic.org/sites/default/files/cipr-jir-2023-5_0.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Suggested answer: 'Insurers often use the 17c formula: 10% of the car's NADA retail value, reduced by damage and mileage multipliers. It comes from a Georgia class-action settlement, not from law. An independent appraisal based on comparable sales can show a larger loss.' 'More accurate' is unsupported as a general claim. Publishes as FAQPage structured data."
+  },
+  {
+   "surface": "faqs",
+   "claim": "How much can I recover? — Newer luxury vehicles: $5K-$20K+. Older vehicles with minor damage: $500-$2,000.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "NAIC JIR (2023)",
+   "sourceUrl": "https://content.naic.org/sites/default/files/cipr-jir-2023-5_0.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "No source supports either range. The only published benchmark found is an adjuster's estimate in the NAIC journal that DV 'ultimately ends up being about 10% to 20% of the direct physical damage loss' (e.g., $1,000–$2,000 on a $10,000 repair). Replace with: 'It depends on the car's pre-accident value, mileage, and the severity of the damage. One estimate published in the NAIC's Journal of Insurance Regulation puts typical settlements at about 10% to 20% of the repair bill.' Publishes as FAQPage structured data — a fabricated range is published twice."
+  },
+  {
+   "surface": "faqs",
+   "claim": "Do I need a lawyer? — For claims under $3K you may handle it yourself. For larger claims or insurer pushback, an attorney negotiates more effectively.",
+   "verdict": "update",
+   "currentValue": "Magistrate (small-claims) court limits: Georgia $15,000 (O.C.G.A. § 15-10-2(5); $25,000 from January 1, 2027); South Carolina $7,500 (S.C. Code § 22-3-10(2)).",
+   "sourceName": "O.C.G.A. § 15-10-2; S.C. Code § 22-3-10",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-15/chapter-10/article-1/section-15-10-2/",
+   "retrievedAt": "2026-10-02",
+   "note": "The $3K threshold has no basis. Suggested answer: 'Smaller claims can often be handled yourself, including in magistrate court (up to $15,000 in Georgia and $7,500 in South Carolina). For larger claims, structural damage, or an insurer that will not move, a lawyer can make the formal demand that preserves Georgia's bad-faith penalty.' Publishes as FAQPage structured data."
+  },
+  {
+   "surface": "excerpt",
+   "claim": "A repaired car is worth less than it was. How diminished value claims work in Georgia and South Carolina, and why an appraisal beats the 17c formula.",
+   "verdict": "update",
+   "currentValue": "See the 17c entries: insurer formula from a Georgia class-action settlement order; its use can be reasonable as a matter of law for bad-faith purposes (Amica, 2015).",
+   "sourceName": "Amica Mut. Ins. Co. v. Sanders (2015)",
+   "sourceUrl": "https://law.justia.com/cases/georgia/court-of-appeals/2015/a15a0917.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Published as the Article schema description. Soften the last clause: '... and how an independent appraisal answers the insurer's 17c formula.' 'A repaired car is worth less' — prefer 'is often worth less' (Mabry: DV 'can' occur)."
+  },
+  {
+   "surface": "metaDescription",
+   "claim": "(empty)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "metaDescription is empty in meta.json; nothing published from this field. Writer may add one built only from verified facts above."
+  }
+ ],
+ "recommendedEdits": [
+  "Body, 'The State Farm v. Mabry Decision' (para 1): change to 'The Supreme Court of Georgia's decision in State Farm Mutual Automobile Insurance Co. v. Mabry, 274 Ga. 498 (2001), fundamentally changed the diminished value landscape.' (was: Court of Appeals, 274 Ga. App. 103, 2005).",
+  "Body, same section: replace the UM/UIM holding with 'The court held that when your own auto policy promises to pay for \"loss to your car,\" the insurer must pay for any loss in value the repairs do not restore — and must assess diminished value on every collision or comprehensive claim, without a separate request.' If UM is kept, make it a separate, unattributed-to-Mabry sentence: 'If the at-fault driver is uninsured, Georgia uninsured motorist coverage includes property damage (O.C.G.A. § 33-7-11).'",
+  "Body, 'Before Mabry ...' sentence: 'Before Mabry, State Farm did not assess diminished value unless a policyholder asked. After it, Georgia's Insurance Commissioner directed every property and casualty insurer to assess diminished value on first-party physical-damage claims.'",
+  "Body, 'Bad Faith Protections Under O.C.G.A. § 33-4-6': retitle to 'Bad Faith Protections Under O.C.G.A. §§ 33-4-6 and 33-4-7'. Rewrite: '§ 33-4-7 applies to the at-fault driver's insurer on property-damage claims: it must adjust the loss fairly and promptly and, where liability is reasonably clear, make a good-faith effort to settle. If it refuses a demand to settle for a specific amount — sent by certified mail or statutory overnight delivery — for 60 days, and you later recover at least that amount in court, it can owe a penalty of up to 50% of the loss or $5,000, whichever is greater, plus attorney's fees. § 33-4-6 provides a similar penalty against your own insurer after a 60-day demand.'",
+  "Body, 17c section para 1: replace 'named after a State Farm claims manual section' with 'named after paragraph 17(c) of a Georgia class-action settlement order entered after Mabry. It is an insurance-industry formula, not law.'",
+  "Body, 17c section para 2: delete 'A two-year-old SUV with frame damage can easily lose 20-30% of its value, but the 17c formula would never get you there.' and delete 'Courts in both Georgia and South Carolina have rejected this formula as the sole measure of diminished value.' Replace with: 'Georgia's Insurance Commissioner has told insurers that the Department has never endorsed any formula and that total reliance on one formula may not be appropriate (Directive 08-P&C-2). The formula also discounts for mileage that book value already reflects, and it involves no inspection of the repaired car.'",
+  "Body, Independent Appraisals: delete 'typically cost $250 to $500 but routinely support figures three to five times what the 17c formula produces'; replace with 'cost money up front but are based on market data rather than a fixed formula'.",
+  "Body, 'Third-Party Diminished Value Claims' (SC): replace the § 38-77-30 sentences with 'South Carolina measures damage to a vehicle as the cost of repairs plus any remaining loss in value (Newman v. Brown, 1955), and every South Carolina liability policy must carry at least $25,000 of property-damage coverage (S.C. Code § 38-77-140).' Change 'consistently recognized' to 'recognize'.",
+  "Body, 'First-Party Limitations' (SC): replace 'South Carolina courts have generally held ...' with 'In Schulmeyer v. State Farm (2003), the South Carolina Supreme Court held that a collision policy paying the lower of actual cash value or the cost of repair does not also owe diminished value once the car is properly repaired.' Remove UM/UIM from 'significantly harder' or add: 'Uninsured motorist coverage in South Carolina includes at least $25,000 of property-damage coverage (S.C. Code § 38-77-150), but no South Carolina appellate court has addressed diminished value under it.'",
+  "Body, comparison table: First-party row — GA 'Required under collision/comprehensive coverage (Mabry, 2001)', SC 'Not under a standard collision policy (Schulmeyer, 2003)'; Bad faith row — GA 'Greater of 50% or $5,000 + attorney fees (O.C.G.A. § 33-4-7 vs. the at-fault driver's insurer; § 33-4-6 vs. your own)', SC 'No bad-faith claim against the at-fault driver's insurer (Kleckley, 2000); attorney fees against your own insurer (S.C. Code § 38-59-40)'; Landmark row — GA 'State Farm v. Mabry (2001)', SC 'Newman v. Brown (1955); Schulmeyer v. State Farm (2003)'.",
+  "Body, Step 4: replace 'In Georgia, reference O.C.G.A. § 33-4-6 to signal awareness of the bad faith penalty provisions.' with 'In Georgia, send it by certified mail or statutory overnight delivery and offer to settle for a specific amount; that preserves the bad-faith penalty under O.C.G.A. § 33-4-7 if the insurer refuses for 60 days.'",
+  "Body, Step 5: 'file a complaint with the Georgia Office of the Commissioner of Insurance and Safety Fire or the South Carolina Department of Insurance, or sue in magistrate court (claims up to $15,000 in Georgia and $7,500 in South Carolina) or in state or superior court.'",
+  "Body, pushback '$300' item: delete 'Courts regularly accept independent appraisals over the 17c formula.'; replace 'an internal claims tool designed to minimize payouts' with 'a formula from a Georgia class-action settlement, and Georgia's Insurance Commissioner has said no formula result is the final word on what you are owed'.",
+  "Body, pushback 'not covered under your policy': change 'In Georgia, post-Mabry, it fails for UM/UIM claims.' to 'In Georgia, post-Mabry, it generally fails for collision and comprehensive claims unless your policy expressly excludes diminished value.'",
+  "Body, 'How a Lawyer Helps': change 'under O.C.G.A. § 33-4-6 ... the potential 50% penalty' to 'under O.C.G.A. § 33-4-7 — up to 50% of the loss or $5,000, whichever is greater, plus attorney's fees'.",
+  "Body, intro: 'Cornell Law Institute' -> 'the Legal Information Institute at Cornell Law School' and reword to 'a tort victim can recover compensatory damages for all types of losses, including property damage' (Wex does not mention vehicle market value). Delete 'Thousands of drivers across both states' (say 'Many drivers'). 'shows up on Carfax and AutoCheck' -> 'can show up on Carfax and AutoCheck reports'.",
+  "Key Takeaways: 'Georgia is one of the strongest DV states (State Farm v. Mabry, 2001; O.C.G.A. § 33-4-7). South Carolina allows third-party DV claims (Newman v. Brown) but not under a standard collision policy (Schulmeyer v. State Farm). An independent appraisal is the best answer to an insurer's 17c number.'",
+  "FAQ 'Is Georgia good for DV claims?': 'Yes. Under State Farm v. Mabry (Ga. 2001), your own insurer must assess and pay diminished value on a collision or comprehensive claim, and O.C.G.A. § 33-4-7 allows a bad-faith penalty against the at-fault driver's insurer if it refuses a proper demand for 60 days.'",
+  "FAQ 'Can I file in South Carolina?': 'Yes, against the at-fault driver, whose liability insurer pays the claim. South Carolina measures vehicle damage as repair costs plus any remaining loss in value (Newman v. Brown). A standard collision policy does not owe diminished value (Schulmeyer v. State Farm, 2003).'",
+  "FAQ 'How is diminished value calculated?': 'Insurers often use the 17c formula: 10% of the car's NADA retail value, reduced by damage and mileage multipliers. It comes from a Georgia class-action settlement order, not from law. An independent appraisal based on comparable sales can show a larger loss.'",
+  "FAQ 'How much can I recover?': delete both dollar ranges; 'It depends on the car's pre-accident value, mileage and how severe the damage was. One estimate published in the NAIC's Journal of Insurance Regulation puts typical diminished value at about 10% to 20% of the repair bill.'",
+  "FAQ 'Do I need a lawyer?': delete '$3K'; 'Smaller claims can often be handled yourself, including in magistrate court (up to $15,000 in Georgia and $7,500 in South Carolina). For larger claims, structural damage, or an insurer that will not move, a lawyer can make the formal demand that preserves Georgia's bad-faith penalty.'",
+  "Excerpt: '... and how an independent appraisal answers the insurer's 17c formula.'",
+  "Reviewer flags for Graeham C. Gillin: (1) whether to mention Georgia UM property-damage coverage for DV (no appellate holding found); (2) whether Georgia insurers' current policy forms exclude DV and whether such an exclusion is enforceable post-Royal Capital (no Georgia appellate decision found either way); (3) whether South Carolina tort law reaches pure stigma DV after a proper repair (Newman's language is about repairs that did not restore condition); (4) the Georgia magistrate limit rises to $25,000 on January 1, 2027 — update the FAQ then."
+ ],
+ "statuteCitations": [
+  {
+   "section": "O.C.G.A. § 33-4-7",
+   "name": "Affirmative duty to fairly and promptly adjust property-damage losses under motor vehicle liability policies; bad-faith penalty to the claimant of not more than 50% of the insured's liability or $5,000, whichever is greater, plus attorney's fees; demand by statutory overnight delivery or certified mail, 60 days, recovery at least equal to the demand; insurer unnamed party; notice to Commissioner within 20 days (last amended 2019, (g) only)",
+   "url": "https://law.justia.com/codes/georgia/title-33/chapter-4/section-33-4-7/"
+  },
+  {
+   "section": "O.C.G.A. § 33-4-6",
+   "name": "Insurer's liability to its own policyholder for bad-faith refusal to pay within 60 days of demand — not more than 50% or $5,000, whichever is greater, plus attorney's fees (first-party only)",
+   "url": "https://law.justia.com/codes/georgia/title-33/chapter-4/section-33-4-6/"
+  },
+  {
+   "section": "O.C.G.A. § 33-7-11",
+   "name": "Uninsured motorist coverage — must include injury to or destruction of property of an insured; minimum $25,000 property damage ((a)(1)(A))",
+   "url": "https://law.justia.com/codes/georgia/title-33/chapter-7/section-33-7-11/"
+  },
+  {
+   "section": "O.C.G.A. § 9-3-31",
+   "name": "Injuries to personalty — four years",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-31/"
+  },
+  {
+   "section": "O.C.G.A. § 9-3-33",
+   "name": "Injuries to the person — two years",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-33",
+   "name": "Apportionment; award reduced by plaintiff's percentage of fault (a); plaintiff barred at 50 percent or more (g)",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+  },
+  {
+   "section": "O.C.G.A. § 15-10-2",
+   "name": "Magistrate court jurisdiction — civil claims up to $15,000 ((5)); $25,000 in the version effective January 1, 2027",
+   "url": "https://law.justia.com/codes/georgia/title-15/chapter-10/article-1/section-15-10-2/"
+  },
+  {
+   "section": "State Farm Mut. Auto. Ins. Co. v. Mabry, 274 Ga. 498, 556 S.E.2d 114 (Ga. 2001)",
+   "name": "First-party physical-damage coverage promising to pay for 'loss' includes diminution in value after repair; insurer must assess DV on every physical-damage claim",
+   "url": "https://law.justia.com/cases/georgia/supreme-court/2001/s01a0982-1.html"
+  },
+  {
+   "section": "Amica Mut. Ins. Co. v. Sanders, 335 Ga. App. 245, 779 S.E.2d 459 (2015)",
+   "name": "Third-party DV claim under § 33-4-7; 17(c) formula originates in ¶ 17(c) of the second injunction in Walker v. American National General Ins. Co.; adjuster's use of 17(c) reasonable as a matter of law — bad-faith claim fails",
+   "url": "https://law.justia.com/cases/georgia/court-of-appeals/2015/a15a0917.html"
+  },
+  {
+   "section": "Royal Capital Dev., LLC v. Maryland Cas. Co., 291 Ga. 262, 728 S.E.2d 234 (2012)",
+   "name": "Mabry not limited to automobiles; DV recovery under a policy depends on the specific language of the contract",
+   "url": "https://law.justia.com/cases/georgia/supreme-court/2012/s12q0209.html"
+  },
+  {
+   "section": "Mills v. Allstate Ins. Co., 288 Ga. App. 257, 653 S.E.2d 850 (2007)",
+   "name": "§ 33-4-6 runs to the policyholder; § 33-4-7 applies only to property-damage claims",
+   "url": "https://law.justia.com/cases/georgia/court-of-appeals/2007/a07a1922.html"
+  },
+  {
+   "section": "S.C. Code § 38-77-30",
+   "name": "Definitions (automobile insurance; uninsured motor vehicle (14); underinsured motor vehicle (15)) — imposes no coverage requirement",
+   "url": "https://www.scstatehouse.gov/code/t38c077.php"
+  },
+  {
+   "section": "S.C. Code § 38-77-140",
+   "name": "Minimum liability limits — $25,000 property damage of others per accident (A)(3)",
+   "url": "https://www.scstatehouse.gov/code/t38c077.php"
+  },
+  {
+   "section": "S.C. Code § 38-77-150",
+   "name": "Uninsured motorist provision — 'all sums ... legally entitled to recover as damages'; at least $25,000 for injury to or destruction of the insured's property; first $200 may be excluded",
+   "url": "https://www.scstatehouse.gov/code/t38c077.php"
+  },
+  {
+   "section": "S.C. Code § 15-3-530",
+   "name": "Three years — (4) injuring goods or chattels; (5) injury to the person",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "section": "S.C. Code § 22-3-10",
+   "name": "Magistrate concurrent civil jurisdiction — damages up to $7,500",
+   "url": "https://www.scstatehouse.gov/code/t22c003.php"
+  },
+  {
+   "section": "S.C. Code §§ 38-59-20, 38-59-30, 38-59-40",
+   "name": "Improper claim practices (regulator-enforced via § 38-59-30; no private right of action); attorney's fees to the policyholder after a 90-day demand, capped at one-third of judgment (§ 38-59-40)",
+   "url": "https://www.scstatehouse.gov/code/t38c059.php"
+  },
+  {
+   "section": "Newman v. Brown, 228 S.C. 472, 90 S.E.2d 649 (1955)",
+   "name": "Measure of vehicle damages: cost of repairs plus remaining diminution in value",
+   "url": "https://law.justia.com/cases/south-carolina/supreme-court/1955/17096-1.html"
+  },
+  {
+   "section": "Schulmeyer v. State Farm Fire & Cas. Co., 353 S.C. 491, 579 S.E.2d 132 (2003)",
+   "name": "No DV under a collision/comprehensive policy limiting liability to the lower of actual cash value or cost of repair, where the vehicle was adequately repaired",
+   "url": "https://law.justia.com/cases/south-carolina/supreme-court/2003/25612.html"
+  },
+  {
+   "section": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991)",
+   "name": "Modified comparative negligence — recovery if plaintiff's negligence not greater than defendant's (51% bar); never cite § 15-38-15 for this",
+   "url": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html"
+  },
+  {
+   "section": "Kleckley v. Northwestern Nat'l Cas. Co., 338 S.C. 131, 526 S.E.2d 218 (2000)",
+   "name": "No third-party action for bad-faith refusal to pay insurance benefits",
+   "url": "https://law.justia.com/cases/south-carolina/supreme-court/2000/25046.html"
+  },
+  {
+   "section": "Nichols v. State Farm Mut. Auto. Ins. Co., 279 S.C. 336, 306 S.E.2d 616 (1983)",
+   "name": "Insured's tort action for bad-faith refusal to pay first-party benefits",
+   "url": "https://law.justia.com/cases/south-carolina/supreme-court/1983/21979-1.html"
+  }
+ ],
+ "authoritativeLinks": [
+  {
+   "name": "Wells-Dietel, Erkan-Barlow & Walkowiak, 'Automobile Diminished Value Claims', Journal of Insurance Regulation (NAIC/CIPR, 2023) — 17(c) formula, DV types, third-party states",
+   "url": "https://content.naic.org/sites/default/files/cipr-jir-2023-5_0.pdf"
+  },
+  {
+   "name": "Georgia Office of the Commissioner of Insurance and Safety Fire — File a Consumer Insurance Complaint",
+   "url": "https://oci.georgia.gov/file-consumer-insurance-complaint"
+  },
+  {
+   "name": "Legal Information Institute, Cornell Law School — Wex: damages",
+   "url": "https://www.law.cornell.edu/wex/damages"
+  },
+  {
+   "name": "Legal Information Institute, Cornell Law School — Wex: diminution in value",
+   "url": "https://www.law.cornell.edu/wex/diminution_in_value"
+  },
+  {
+   "name": "Amica Mut. Ins. Co. v. Sanders (FindLaw text; curl 403, fetched via WebFetch 2026-10-02)",
+   "url": "https://caselaw.findlaw.com/court/ga-court-of-appeals/1718464.html"
+  },
+  {
+   "name": "South Carolina Department of Insurance (doi.sc.gov) — consumer complaints; refuses connections from this network, unverified-by-fetch",
+   "url": "https://doi.sc.gov/"
+  }
+ ],
+ "quoteNote": "Claims are quoted from the rendered text of body.html (inline <em>/<strong> tags stripped; case names in the Mabry section and the pushback lead-ins are wrapped in <em>/<strong>; § renders from &sect;). Table rows are paraphrased as 'Table — <row>: <GA cell> / <SC cell>'. Long claims are abridged with '...' where noted. Justia URLs were verified by loading each in Chrome (one tab, sequential); the 2025 path for § 33-4-7 redirects to the year-less path, which is the 2025 Code. scstatehouse.gov, oci.georgia.gov, law.cornell.edu verified with curl (200). The NAIC PDF returns 403 to curl but was fetched and read via WebFetch. doi.sc.gov not fetched (network refuses)."
+}

@@ -1,0 +1,753 @@
+{
+ "postId": 3239,
+ "slug": "uturn-crash-liability-in-charleston",
+ "liveUrl": "https://rodenlaw.com/blog/uturn-crash-liability-in-charleston/",
+ "jurisdiction": "SC",
+ "researchedAt": "2026-10-02",
+ "verifiedClaims": [
+  {
+   "surface": "body",
+   "claim": "U-turn accidents often occur when a driver fails to notice oncoming traffic at an intersection.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 56-5-2140(a); § 56-5-2320",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Descriptive and consistent with the statutory duty: a U-turn may be made only without interfering with other traffic (§ 56-5-2140(a)), and a left-turning driver yields to oncoming vehicles that are an immediate hazard (§ 56-5-2320). No statistic asserted."
+  },
+  {
+   "surface": "body",
+   "claim": "Call Roden Law for your free case review today: 1-844-RESULTS",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md (toll-free 1-844-RESULTS = tel:+18447378587); docs/freshness/2026-09-23-phone-links/README.md; live rodenlaw.com homepage tel: links",
+   "sourceUrl": "https://rodenlaw.com/",
+   "retrievedAt": "2026-10-02",
+   "note": "Both CTA hrefs are tel:18447378587, which dials 844-737-8587 = 1-844-RESULTS (correct; not one of the 2026-09-23 transposed numbers). Optional: normalize to tel:+18447378587 to match the theme. Writer profile asks for the territory office line as well: Charleston office (843) 790-8999 (tel:+18437908999), 127 King Street Suite 200, Charleston, SC 29401 (client.json). No address appears in the post."
+  },
+  {
+   "surface": "body",
+   "claim": "In Charleston, it is legal to make U-turns in many situations. U-turns are generally permitted where there are no signs prohibiting the maneuver.",
+   "verdict": "update",
+   "currentValue": "Inside the City of Charleston the default is the reverse: City Code § 19-216 says no U-turn 'shall be made on any street except where authorized by an official sign', and only when it can be made safely and without interfering with other traffic. Outside city limits (unincorporated Charleston County, Mount Pleasant, North Charleston) state law governs: S.C. Code § 56-5-2140 allows a U-turn only where it can be made in safety and without interfering with other traffic, never on a curve or near the crest of a grade where approaching drivers cannot see the vehicle within 500 feet, and always subject to posted signs (§§ 56-5-950, 56-5-2120(c), 56-5-710(A)(9)).",
+   "sourceName": "City of Charleston Code of Ordinances § 19-216 (Municode, read 2026-10-02); S.C. Code §§ 56-5-2140, 56-5-950, 56-5-2120(c), 56-5-710(A)(9)",
+   "sourceUrl": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH19MOVETR_ARTVIIOPVEGE_DIV4STSTTU_S19-216UTU",
+   "retrievedAt": "2026-10-02",
+   "note": "MOST IMPORTANT CORRECTION. City of Charleston Code § 19-216 '\"U\" turns': 'No \"U\" turn shall be made on any street except where authorized by an official sign, and only when such movement can be made with safety and without interfering with other traffic.' (Code 1975, § 33-48; State law reference: § 56-5-2140.) The post states the state-law default as if it were Charleston's rule; for a Charleston-titled post the city ordinance controls on city streets. Other municipalities' ordinances (Mount Pleasant, North Charleston) were not checked — do not generalise beyond the City of Charleston and state law. Municode URL verified in Chrome; also confirmed in the Chapter 19 TOC (Article VII, Division 4 'Starting, Stopping and Turning')."
+  },
+  {
+   "surface": "body",
+   "claim": "Drivers can most likely maneuver a U-turn where it is safe.",
+   "verdict": "update",
+   "currentValue": "Under state law a U-turn is lawful only where it 'can be made in safety and without interfering with other traffic' (§ 56-5-2140(a)); on City of Charleston streets it also requires an official sign authorizing it (§ 19-216).",
+   "sourceName": "S.C. Code § 56-5-2140(a); Charleston City Code § 19-216",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Folds into the correction above; \"most likely\" should become the statutory test."
+  },
+  {
+   "surface": "body",
+   "claim": "Before doing a U-turn, you must have clear visibility of at least 500 feet in both directions.",
+   "verdict": "update",
+   "currentValue": "The 500-foot rule applies only on a curve or on the approach to or near the crest of a hill: there a U-turn is prohibited where the turning vehicle 'cannot be seen by the driver of any other vehicle approaching from either direction within five hundred feet' (§ 56-5-2140(b)). Everywhere else the test is whether the turn can be made safely and without interfering with other traffic (§ 56-5-2140(a)).",
+   "sourceName": "S.C. Code § 56-5-2140(b)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "S.C. Code § 56-5-2140 'Limitations on turning around': '(a) The driver of any vehicle shall not turn such vehicle so as to proceed in the opposite direction unless such movement can be made in safety and without interfering with other traffic. (b) No vehicle shall be turned so as to proceed in the opposite direction upon any curve or upon the approach to or near the crest of a grade where such vehicle cannot be seen by the driver of any other vehicle approaching from either direction within five hundred feet.' The post turns a curve/hill-crest rule into a universal 500-foot sight-distance requirement, and inverts it (the statute is about other drivers seeing the turning vehicle). No SC statute numbered § 56-5-2160 exists (section not found in Chapter 5); the U-turn statute is § 56-5-2140. § 56-5-2150 is turning movements and signals."
+  },
+  {
+   "surface": "body",
+   "claim": "If you are in a business district or near a curve or hill crest, ensure your visibility is not limited.",
+   "verdict": "update",
+   "currentValue": "Curve/hill crest: correct (§ 56-5-2140(b)). Business district: South Carolina has no business-district U-turn rule — Chapter 5 defines 'business district' (§ 56-5-520) but no turning statute uses the term (full-text search of Chapter 5, 2026-10-02). In the City of Charleston U-turns need an authorizing sign on every street, not just in business areas (§ 19-216).",
+   "sourceName": "S.C. Code §§ 56-5-520, 56-5-2140(b); Charleston City Code § 19-216",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "The business-district restriction comes from the Uniform Vehicle Code model, which South Carolina did not adopt. Delete \"in a business district or\"."
+  },
+  {
+   "surface": "body",
+   "claim": "Drivers need to know where they cannot do a U-turn to avoid dangerous car accidents at intersections controlled by a traffic signal or where “No U-turn” signs are posted.",
+   "verdict": "update",
+   "currentValue": "No South Carolina statute bans U-turns at signalized intersections as such; a green signal permits turns 'unless a sign at such place prohibits either such turn' (§ 56-5-970(A)(1)), and drivers must obey posted 'No U-Turn' signs (§ 56-5-950; local authority to prohibit turns at intersections, § 56-5-710(A)(9)). In the City of Charleston a U-turn is lawful only where a sign authorizes it (§ 19-216).",
+   "sourceName": "S.C. Code §§ 56-5-950, 56-5-970(A)(1), 56-5-710(A)(9); Charleston City Code § 19-216",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Keep the \"No U-turn signs\" half; reword the signal half so it does not state a statewide prohibition that does not exist."
+  },
+  {
+   "surface": "body",
+   "claim": "The U-turning driver must wait until the road is clear before executing the maneuver and ensure they can complete the turn without impeding other traffic.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 56-5-2140(a)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate paraphrase of § 56-5-2140(a) ('in safety and without interfering with other traffic'). Recommend citing the section here — it is the post's core legal rule and currently uncited."
+  },
+  {
+   "surface": "body",
+   "claim": "In South Carolina, a driver making a U-turn must yield to all other traffic, including:",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code §§ 56-5-2140(a), 56-5-2320, 56-5-970(A)(1)-(2), 56-5-3130",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Fair paraphrase of § 56-5-2140(a) (no interference with other traffic), § 56-5-2320 (left turner yields to oncoming vehicles within the intersection or so close as to be an immediate hazard) and § 56-5-970(A) (turning traffic yields to pedestrians lawfully in the crosswalk). Caveat for the bullet \"Vehicles making right or left turns at the intersection\": a driver turning right on red must itself yield to traffic lawfully using the intersection (§ 56-5-970(C)(3)) — see the right-on-red entry."
+  },
+  {
+   "surface": "body",
+   "claim": "Making a U-turn on a Green Light: The U-turning driver must yield to oncoming traffic, including vehicles turning right on green",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code §§ 56-5-970(A)(1), 56-5-2320, 56-5-2140(a)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "§ 56-5-970(A)(1): traffic facing a circular green 'may proceed straight through or turn right or left unless a sign at such place prohibits either such turn. But vehicular traffic, including vehicles turning right or left, shall yield the right-of-way to other vehicles and to pedestrians lawfully within the intersection or an adjacent crosswalk'. Within the City of Charleston the U-turn also needs an authorizing sign (§ 19-216)."
+  },
+  {
+   "surface": "body",
+   "claim": "Making a U-turn on a Green Arrow: The U-turning driver generally has the right of way over traffic facing a red light, but must still yield to any pedestrians in crosswalks.",
+   "verdict": "update",
+   "currentValue": "A green arrow lets the driver 'cautiously enter the intersection only to make the movement indicated by such arrow', and that driver 'shall yield the right-of-way to pedestrians lawfully within an adjacent crosswalk and to other traffic lawfully using the intersection' (§ 56-5-970(A)(2)). Traffic turning right on red must yield to traffic lawfully using the intersection (§ 56-5-970(C)(3)). A green arrow does not authorize a U-turn where a sign prohibits it, and on City of Charleston streets a U-turn needs an authorizing sign (§ 19-216).",
+   "sourceName": "S.C. Code § 56-5-970(A)(2), (C)(3); Charleston City Code § 19-216",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Substantially right; add the \"other traffic lawfully using the intersection\" duty the statute imposes alongside the pedestrian duty."
+  },
+  {
+   "surface": "body",
+   "claim": "U-Turns and Right Turns on Red: The right-turning vehicle typically has the right of way, as the U-turning driver must yield to all traffic.",
+   "verdict": "update",
+   "currentValue": "The statute points the other way. A driver turning right on red may enter only after stopping and 'shall yield the right-of-way to pedestrians lawfully within an adjacent crosswalk and to other traffic lawfully using the intersection' (§ 56-5-970(C)(3)) — and a U-turning driver proceeding on a green or green arrow is lawfully using the intersection. The U-turning driver still must not turn in a way that interferes with other traffic (§ 56-5-2140(a)), so fault in these collisions depends on the facts and is apportioned under comparative negligence.",
+   "sourceName": "S.C. Code §§ 56-5-970(C)(3), 56-5-2140(a)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "SECOND MOST IMPORTANT CORRECTION — a right-of-way rule stated backwards. Verbatim § 56-5-970(C)(3): 'Except when a sign is in place prohibiting a turn, vehicular traffic facing any steady red signal may cautiously enter the intersection to turn right or to turn left from a one-way street into a one-way street after stopping as required by item (1) or (2). Such vehicular traffic shall yield the right-of-way to pedestrians lawfully within an adjacent crosswalk and to other traffic lawfully using the intersection.'"
+  },
+  {
+   "surface": "body",
+   "claim": "U-Turning and Oncoming Left-turning Vehicles: Both vehicles must yield to oncoming traffic. However, if both have a green arrow, the left-turning driver generally has priority over the U-turning driver.",
+   "verdict": "update",
+   "currentValue": "No South Carolina statute ranks a U-turn against an opposing left turn. The basis for the U-turning driver's burden is § 56-5-2140(a): a U-turn may be made only 'without interfering with other traffic', and a green-arrow driver must yield to 'other traffic lawfully using the intersection' (§ 56-5-970(A)(2)).",
+   "sourceName": "S.C. Code §§ 56-5-2140(a), 56-5-970(A)(2), 56-5-2320",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "The practical conclusion (the U-turner usually bears the burden) is supportable, but \"generally has priority\" reads as a codified rule. Reword to the statutory basis."
+  },
+  {
+   "surface": "body",
+   "claim": "When drivers attempt U-turns with obstructed sightlines due to parked vehicles, buildings, trees, or hills, they cannot accurately gauge approaching traffic speed or distance.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Descriptive; S.C. Code § 56-5-2140(b) (curve/crest sight-distance rule)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Descriptive, no statistic. The hills part maps onto § 56-5-2140(b)."
+  },
+  {
+   "surface": "body",
+   "claim": "Many U-turn accidents happen because drivers misjudge the time needed to complete the maneuver safely or underestimate the speed of oncoming vehicles.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Descriptive; no figure asserted",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Unquantified (\"many\"); no public SC crash dataset breaks out U-turn crashes by cause, so do not add a percentage."
+  },
+  {
+   "surface": "body",
+   "claim": "At intersections with posted “No U-Turn” signs",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code §§ 56-5-950(a), 56-5-2120(c), 56-5-710(A)(9)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "§ 56-5-950(a): drivers 'shall obey the instructions of any official traffic-control device'."
+  },
+  {
+   "surface": "body",
+   "claim": "In business districts where U-turns are generally restricted",
+   "verdict": "drop",
+   "currentValue": "No South Carolina statute restricts U-turns in business districts. Replace with: \"On City of Charleston streets, anywhere a sign does not expressly authorize the U-turn (City Code § 19-216)\".",
+   "sourceName": "S.C. Code Title 56 Chapter 5 (full-text search: \"business district\" appears only in §§ 56-5-520, 56-5-2720, 56-5-3120, 56-5-3310 — none about turning); Charleston City Code § 19-216",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Uniform Vehicle Code model language not enacted in SC."
+  },
+  {
+   "surface": "body",
+   "claim": "Near curves or hills where visibility is limited",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 56-5-2140(b)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct; the statutory trigger is that approaching drivers cannot see the turning vehicle within 500 feet."
+  },
+  {
+   "surface": "body",
+   "claim": "Across double yellow lines or median strips",
+   "verdict": "update",
+   "currentValue": "Across a median: correct for a physical or intervening dividing section — vehicles may not be driven 'over, across or within any such dividing space, barrier or section except through an opening ... or at a crossover or intersection' (§ 56-5-1920). Double yellow lines: no SC statute specifically prohibits turning across a painted double centerline; § 56-5-1920 states 'a left turn across a painted median is authorized unless prohibited by an official traffic-control device', and the no-passing-zone statute (§ 56-5-1890) governs passing, not turning. In the City of Charleston the U-turn needs an authorizing sign regardless (§ 19-216).",
+   "sourceName": "S.C. Code §§ 56-5-1920, 56-5-1890; Charleston City Code § 19-216",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Change to \"Across a raised or landscaped median, except at a marked opening or crossover\"."
+  },
+  {
+   "surface": "body",
+   "claim": "Distraction plays a significant role in U-turn accidents.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Descriptive",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Unquantified. If a hands-free law reference is ever added, cite S.C. Code § 56-5-3890 as rewritten by 2025 Act No. 40 (eff. 2025-09-01): no holding or supporting a phone, no reading/composing texts, no video (see facts-3386). The post makes no statutory distracted-driving claim today."
+  },
+  {
+   "surface": "body",
+   "claim": "Many U-turn crashes occur because drivers fail to signal their intentions.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 56-5-2150(A)-(B)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "§ 56-5-2150(A): no turn 'unless and until such movement can be made with reasonable safety nor without giving an appropriate signal'; (B): signal 'given continuously during not less than the last one hundred feet traveled by the vehicle before turning'. Recommend adding the 100-foot rule and the cite. (Penalty is a $25 fine with no points, § 56-5-2150(E) — optional.)"
+  },
+  {
+   "surface": "body",
+   "claim": "Tourists and visitors who are unfamiliar with local road layouts frequently cause U-turn accidents.",
+   "verdict": "update",
+   "currentValue": "No source quantifies tourist-caused U-turn crashes in Charleston. Soften to \"Drivers unfamiliar with local road layouts, including visitors, may make sudden U-turns after missing a turn.\"",
+   "sourceName": "No supporting dataset (SCDPS public crash statistics do not break out U-turn crashes or driver residency at this level)",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "\"Frequently cause\" is an unsupported causal-frequency claim; hedge it."
+  },
+  {
+   "surface": "body",
+   "claim": "This is particularly common in tourist destinations and places with complex road systems.",
+   "verdict": "update",
+   "currentValue": "Delete or hedge (\"This can happen in ...\").",
+   "sourceName": "No supporting source",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Unsupported generalisation."
+  },
+  {
+   "surface": "body",
+   "claim": "Alcohol and drug impairment significantly increase the likelihood of U-turn crashes.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Descriptive (impairment increases crash risk generally)",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "General proposition; no U-turn-specific figure asserted. Do not add one."
+  },
+  {
+   "surface": "body",
+   "claim": "Speed is a contributing factor in many U-turn collisions.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Descriptive",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Unquantified."
+  },
+  {
+   "surface": "body",
+   "claim": "Adverse weather conditions such as rain, fog, snow, or ice create hazardous circumstances for U-turns.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Descriptive",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate; optional: snow and ice are rare in Charleston — \"rain and fog\" is the local reality."
+  },
+  {
+   "surface": "body",
+   "claim": "Larger vehicles like SUVs, trucks, and vans have significant blind spots that can block oncoming traffic when attempting U-turns.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Descriptive",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "General safety description."
+  },
+  {
+   "surface": "body",
+   "claim": "Certain locations in Charleston, South Carolina, present significantly higher risks for U-turn accidents.",
+   "verdict": "update",
+   "currentValue": "No published dataset ranks Charleston locations by U-turn crash risk. Reword: \"U-turns are more tempting — and more dangerous — in certain kinds of places around Charleston.\"",
+   "sourceName": "No supporting source",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "\"Significantly higher risks\" is an unsupported comparative claim."
+  },
+  {
+   "surface": "body",
+   "claim": "Downtown Charleston experiences frequent U-turn crashes due to heavy traffic, numerous attractions, and out-of-town visitors unfamiliar with local traffic patterns.",
+   "verdict": "update",
+   "currentValue": "Unsupported as a frequency claim. Reword to the legal point: on downtown City of Charleston streets a U-turn is unlawful unless a sign authorizes it (City Code § 19-216), and many peninsula streets are one-way (designated under § 56-5-1910), so visitors who miss a turn should circle the block rather than turn around.",
+   "sourceName": "Charleston City Code § 19-216; S.C. Code § 56-5-1910",
+   "sourceUrl": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH19MOVETR_ARTVIIOPVEGE_DIV4STSTTU_S19-216UTU",
+   "retrievedAt": "2026-10-02",
+   "note": "No crash data located for \"frequent U-turn crashes\" downtown. Keep the qualitative description of heavy traffic/visitors, drop \"experiences frequent U-turn crashes\"."
+  },
+  {
+   "surface": "body",
+   "claim": "Charleston’s commercial areas, including shopping centers, may experience numerous U-turn collisions.",
+   "verdict": "update",
+   "currentValue": "Drop \"numerous\"; keep the behavioural point (drivers U-turning to reach a missed business entrance).",
+   "sourceName": "No supporting source",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Hedged but quantity word unsupported."
+  },
+  {
+   "surface": "body",
+   "claim": "Visitors and residents unfamiliar with these traffic patterns usually attempt U-turns when heading the wrong way, leading to collisions in these residential areas.",
+   "verdict": "update",
+   "currentValue": "Change \"usually attempt\" to \"may attempt\".",
+   "sourceName": "No supporting source",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "\"Usually\" is an unsupported frequency claim."
+  },
+  {
+   "surface": "body",
+   "claim": "Another key area where U-turn crashes may occur is at or near the access points of Charleston's bridges, including the Arthur Ravenel Jr. Bridge and the bridges connecting to James Island and Johns Island.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Wikipedia — Arthur Ravenel Jr. Bridge (cable-stayed bridge over the Cooper River connecting downtown Charleston to Mount Pleasant; opened July 16, 2005; ~96,300 vehicles/day)",
+   "sourceUrl": "https://en.wikipedia.org/wiki/Arthur_Ravenel_Jr._Bridge",
+   "retrievedAt": "2026-10-02",
+   "note": "The bridge is real and correctly named; James Island (James Island Connector, Wappoo Cut bridge) and Johns Island (Stono River crossings) bridges exist. The claim is hedged (\"may occur\"), so keep. Note the apostrophe in the body is a curly ’ — match the rendered text."
+  },
+  {
+   "surface": "body",
+   "claim": "Temporary road closures and detours caused by Charleston's ongoing construction projects often confuse drivers, leading to impromptu U-turns when navigating unfamiliar routes.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Descriptive",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Generic and plausible; no specific project named. Keep or hedge \"often\" to \"can\"."
+  },
+  {
+   "surface": "body",
+   "claim": "Yes, under South Carolina's modified comparative negligence laws, both drivers can share fault for a U-turn crash.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Nelson: 'a plaintiff in a negligence action may recover damages if his or her negligence is not greater than that of the defendant. The amount of the plaintiff's recovery shall be reduced in proportion to the amount of his or her negligence. If there is more than one defendant, the plaintiff's negligence shall be compared to the combined negligence of all defendants.' Verified in Chrome 2026-10-02. Recommend citing Nelson inline. Never cite § 15-38-15 for the bar (writer-profile / SC pack rule)."
+  },
+  {
+   "surface": "body",
+   "claim": "However, if you are deemed more than 50 percent at fault for a crash, you will likely be barred from recovering any compensation.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Nelson v. Concrete Supply Co. (1991)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct (\"more than 50%\" = barred). \"Likely\" can go — it is the rule, not a likelihood."
+  },
+  {
+   "surface": "body",
+   "claim": "Multiple parties can be assigned different percentages of fault",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 15-38-15 (as amended by 2025 Act No. 42 (H.3430), eff. 2026-01-01)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c038.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct. If joint and several liability is ever added: under the 2026 version, joint and several liability 'does not apply to any defendant whose conduct is determined to be less than fifty percent of the total fault', now measured against the fault of all defendants and tortfeasors plus the plaintiff's comparative negligence; such a defendant pays only its own percentage. Exceptions remain (e.g., alcohol/drug-impaired defendants, willful/reckless conduct). This is a joint-and-several point only — never cite § 15-38-15 for the 51% bar."
+  },
+  {
+   "surface": "body",
+   "claim": "You can recover damages if you are less than 50 percent or less at fault",
+   "verdict": "update",
+   "currentValue": "You can recover damages if you are 50 percent or less at fault (that is, not more at fault than the defendants combined).",
+   "sourceName": "Nelson v. Concrete Supply Co. (1991)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Garbled (\"less than 50 percent or less\"); as written it could be read as a 49% ceiling. A plaintiff exactly 50% at fault still recovers half."
+  },
+  {
+   "surface": "body",
+   "claim": "Your compensation is reduced by your percentage of fault",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Nelson v. Concrete Supply Co. (1991)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct."
+  },
+  {
+   "surface": "body",
+   "claim": "If you are found 51 percent or more at fault, you cannot recover damages",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Nelson v. Concrete Supply Co. (1991)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct."
+  },
+  {
+   "surface": "body",
+   "claim": "When the U-turning driver signals appropriately but executes the turn when unsafe, the other driver fails to respond appropriately.",
+   "verdict": "update",
+   "currentValue": "When the U-turning driver signals but turns when it is unsafe, and the other driver fails to react reasonably.",
+   "sourceName": "Editorial; S.C. Code § 56-5-2140(a); Nelson",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Garbled sentence (comma splice); fix wording, substance fine."
+  },
+  {
+   "surface": "body",
+   "claim": "When both drivers violate traffic laws simultaneously, such as when a U-turning driver turns illegally, and the other driver runs a red light.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code §§ 56-5-2140, 56-5-970(C)(1); Nelson",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Illustrative, accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "Traffic Camera and Surveillance Footage: Video evidence provides the most objective record of a U-turn accident unfolding and can show if turn signals were used or both vehicles were speeding.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Descriptive",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Fine. Optional practical note: business surveillance video is often overwritten within days, so request preservation early. Do not claim public traffic cameras record (not verified)."
+  },
+  {
+   "surface": "body",
+   "claim": "Police Reports and Citations: The responding officer’s accident report contains vital information such as statements from both drivers.",
+   "verdict": "update",
+   "currentValue": "Keep the police report as an investigative and insurance-claim tool, but correct the implication about citations: in South Carolina 'No evidence of conviction of any person for any violation of this chapter shall be admissible in any court in any civil action' (§ 56-5-6160). If the other driver pleaded guilty to the U-turn ticket, the plea itself may be received as an admission, subject to explanation or rebuttal (Samuel v. Mouzon, 282 S.C. 616 (Ct. App. 1984)); a nolo contendere plea or bond forfeiture is not an admission.",
+   "sourceName": "S.C. Code § 56-5-6160; Samuel v. Mouzon, 282 S.C. 616, 320 S.E.2d 50 (Ct. App. 1984)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/court-of-appeals/1984/282-s-c-616-2.html",
+   "retrievedAt": "2026-10-02",
+   "note": "KNOWN RECURRING ERROR CLASS. The heading lists 'Citations' as liability evidence. Samuel v. Mouzon verified in Chrome 2026-10-02: 'a judgment on a plea of guilty may be received into evidence as an admission, subject to explanation or rebuttal.' The sentence itself (statements in the report) is fine; change the label to 'Police Reports' and add one sentence on citations."
+  },
+  {
+   "surface": "body",
+   "claim": "Witness Statements: Independent witnesses provide unbiased accounts of the accident, including who had the right of way, observations about driver behavior before impact, weather, and visibility conditions.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Descriptive",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "\"Unbiased\" is a slight overstatement — \"independent\" suffices — optional."
+  },
+  {
+   "surface": "body",
+   "claim": "Physical Evidence: Physical evidence at the crash site tells a story about how the collision occurred. For example, skid mark patterns indicate braking distance and reaction time.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Descriptive",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Optional: anti-lock brakes leave faint or no skid marks on most modern cars, so \"tire marks\" is more accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "Vehicle Damage Assessment: The location and extent of damage to both vehicles help establish the angle of impact and consistency with reported versions of events.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Descriptive",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Fine."
+  },
+  {
+   "surface": "body",
+   "claim": "Electronic Vehicle Data: Modern vehicles record valuable crash data, such as brake application timing and steering inputs, that can be retrieved.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "49 C.F.R. Part 563 (Event Data Recorders)",
+   "sourceUrl": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-563",
+   "retrievedAt": "2026-10-02",
+   "note": "Part 563 requires EDRs (where fitted) to record pre-crash speed, accelerator position and service brake on/off; steering input is an additional data element recorded only if the vehicle is equipped. Accurate as \"such as\"; optional to add \"speed\"."
+  },
+  {
+   "surface": "body",
+   "claim": "Cell Phone Records: If distracted driving is suspected, cell phone records can reveal whether the driver was texting and if a call was in progress during the accident.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Descriptive",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Fine."
+  },
+  {
+   "surface": "body",
+   "claim": "Road Signage and Traffic Control Documentation: Evidence related to the road includes documentation of “No U-Turn” signs in the area and traffic signal timing records.",
+   "verdict": "update",
+   "currentValue": "Add: on City of Charleston streets the key document is whether a sign authorized the U-turn at all (City Code § 19-216) — the absence of a \"U-Turn Permitted\" sign is itself evidence.",
+   "sourceName": "Charleston City Code § 19-216",
+   "sourceUrl": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH19MOVETR_ARTVIIOPVEGE_DIV4STSTTU_S19-216UTU",
+   "retrievedAt": "2026-10-02",
+   "note": "Substance fine; extend to the city's authorized-only rule."
+  },
+  {
+   "surface": "body",
+   "claim": "Witness Testimony: Industry specific witnesses provide professional analysis in complex cases.",
+   "verdict": "update",
+   "currentValue": "Relabel \"Expert Testimony\"; \"Accident reconstruction specialists and traffic engineers can analyse how the collision happened.\"",
+   "sourceName": "Editorial",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Duplicates the \"Witness Statements\" label above; it describes expert witnesses."
+  },
+  {
+   "surface": "body",
+   "claim": "Know When and Where U-Turns Are Legal: Look for “No U-Turn” signs and avoid U-turns at intersections with traffic lights unless specifically permitted.",
+   "verdict": "update",
+   "currentValue": "Inside the City of Charleston, make a U-turn only where a sign authorizes it (City Code § 19-216); elsewhere, obey any \"No U-Turn\" sign, never turn around on a curve or near a hilltop where approaching drivers cannot see you within 500 feet, and only when it can be done safely without interfering with traffic (S.C. Code § 56-5-2140).",
+   "sourceName": "Charleston City Code § 19-216; S.C. Code § 56-5-2140",
+   "sourceUrl": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH19MOVETR_ARTVIIOPVEGE_DIV4STSTTU_S19-216UTU",
+   "retrievedAt": "2026-10-02",
+   "note": "The traffic-light rule is not a statewide statute."
+  },
+  {
+   "surface": "body",
+   "claim": "Use Proper U-Turn Technique: When executing a U-turn, signal your intention well in advance and move to the far left or center turn lane when available.",
+   "verdict": "update",
+   "currentValue": "Signal continuously for at least the last 100 feet before turning (S.C. Code § 56-5-2150(B)) and approach from the extreme left-hand lane lawfully available (§ 56-5-2120(b)); where a two-way center left-turn lane is marked, turn from that lane (§ 56-5-2120(d)).",
+   "sourceName": "S.C. Code §§ 56-5-2150(B), 56-5-2120(b), (d)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Adds the statutory 100-foot figure in place of \"well in advance\"."
+  },
+  {
+   "surface": "body",
+   "claim": "To further reduce your risk, always check your blind spots and be particularly vigilant towards motorcycles, which can be harder to see.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Descriptive",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Fine."
+  },
+  {
+   "surface": "body",
+   "claim": "There is no cost for your initial consultation, so it is risk free.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md (free case review; contingency fee, no fees unless we win)",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Firm fact. Typo nearby: \"We can answer you questions\" → \"your questions\"."
+  },
+  {
+   "surface": "body",
+   "claim": "We accept injury cases on contingency, so there are no upfront costs to engage our services.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Firm fact."
+  },
+  {
+   "surface": "excerpt",
+   "claim": "Who is at fault in a Charleston U-turn crash? How liability is decided when a turning driver and oncoming traffic collide.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Editorial",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "No factual claim. Published as Article description."
+  },
+  {
+   "surface": "faq:1",
+   "claim": "They are permitted in many locations but prohibited in others, and signage governs. Illegal U-turns in prohibited areas are one of the most common causes of these collisions and a significant factor in liability.",
+   "verdict": "update",
+   "currentValue": "Inside Charleston city limits, a U-turn is allowed only where an official sign authorizes it, and only when it can be made safely without interfering with other traffic (City of Charleston Code § 19-216). Outside the city, South Carolina law allows a U-turn where it is safe and not prohibited by a sign, but never on a curve or near the crest of a hill where approaching drivers cannot see the vehicle within 500 feet (S.C. Code § 56-5-2140). An illegal U-turn is strong evidence of fault in an injury claim.",
+   "sourceName": "Charleston City Code § 19-216; S.C. Code § 56-5-2140",
+   "sourceUrl": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH19MOVETR_ARTVIIOPVEGE_DIV4STSTTU_S19-216UTU",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. The current answer states the wrong default for the City of Charleston and makes an unsupported \"one of the most common causes\" claim. Note: \"strong evidence of fault\" is about the conduct; the ticket itself is inadmissible (§ 56-5-6160)."
+  },
+  {
+   "surface": "faq:2",
+   "claim": "The basic rule places the burden on the driver making the U-turn to yield to oncoming traffic. Intersection-specific scenarios modify that, which is where most right-of-way disputes in these crashes arise.",
+   "verdict": "update",
+   "currentValue": "The driver making the U-turn carries the burden: South Carolina law allows the turn only when it can be made safely and without interfering with other traffic (S.C. Code § 56-5-2140(a)). Signals change the picture at intersections — for example, a driver turning right on red must yield to traffic lawfully using the intersection, including a U-turning driver moving on a green arrow (S.C. Code § 56-5-970(C)(3)).",
+   "sourceName": "S.C. Code §§ 56-5-2140(a), 56-5-970(A)(2), (C)(3)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage. First sentence correct; \"most right-of-way disputes\" is unsupported; add the cite and the right-on-red correction so the FAQ does not repeat the body error class."
+  },
+  {
+   "surface": "faq:3",
+   "claim": "A driver failing to notice oncoming traffic at an intersection, poor visibility combined with misjudgment of an approaching vehicle's speed, and U-turns attempted in areas where they are prohibited.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Descriptive",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "The question says \"most\"; no dataset ranks causes. Optional: change question to \"What commonly causes U-turn crashes?\" Answer itself asserts no ranking."
+  },
+  {
+   "surface": "faq:4",
+   "claim": "Yes. Where the turning driver misjudged the gap but the oncoming driver was speeding or distracted, fault is divided, and each party's recovery is reduced by their own share of the responsibility.",
+   "verdict": "update",
+   "currentValue": "Yes. Where the turning driver misjudged the gap but the oncoming driver was speeding or distracted, fault is divided. Under South Carolina's modified comparative negligence rule, an injured person can recover if they are 50 percent or less at fault, with the award reduced by their share; at 51 percent or more they recover nothing (Nelson v. Concrete Supply Co., 1991).",
+   "sourceName": "Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage. Accurate as far as it goes but omits the 51% bar — a reader could think recovery is always available. Add the bar and the Nelson cite."
+  },
+  {
+   "surface": "faq:5",
+   "claim": "Traffic and business camera footage, independent witness accounts, the damage patterns showing the angle of impact, and any signage at that location prohibiting or expressly permitting the turn.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Charleston City Code § 19-216 (signage expressly permitting the turn is decisive on city streets)",
+   "sourceUrl": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH19MOVETR_ARTVIIOPVEGE_DIV4STSTTU_S19-216UTU",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct and nicely aligned with § 19-216. Do not add \"the police citation\" to this list (§ 56-5-6160)."
+  }
+ ],
+ "recommendedEdits": [
+  "Section 'Is It Legal To Make a U-Turn in Charleston?': rewrite the opening paragraph. Replace 'In Charleston, it is legal to make U-turns in many situations. U-turns are generally permitted where there are no signs prohibiting the maneuver. Drivers can most likely maneuver a U-turn where it is safe. Before doing a U-turn, you must have clear visibility of at least 500 feet in both directions. If you are in a business district or near a curve or hill crest, ensure your visibility is not limited.' with: 'Inside Charleston city limits, the rule is stricter than most drivers expect: City of Charleston Code § 19-216 says no U-turn may be made on any street except where an official sign authorizes it, and only when the turn can be made safely without interfering with other traffic. Outside the city, South Carolina law (S.C. Code § 56-5-2140) allows a U-turn only where it can be made safely and without interfering with other traffic, and never on a curve or near the crest of a hill where drivers approaching from either direction cannot see your vehicle within 500 feet.'",
+  "Same section, second paragraph: replace 'at intersections controlled by a traffic signal or where “No U-turn” signs are posted' with 'wherever a “No U-Turn” sign is posted (S.C. Code § 56-5-950) — and, on City of Charleston streets, anywhere a sign does not expressly allow it'.",
+  "Right-of-way: cite § 56-5-2140(a) after 'without impeding other traffic'. Green Arrow bullet: append 'and to other traffic lawfully using the intersection (S.C. Code § 56-5-970(A)(2))'.",
+  "Right-of-way disputes, 'U-Turns and Right Turns on Red' bullet: replace with 'A driver turning right on red must stop and then yield to pedestrians and to other traffic lawfully using the intersection (S.C. Code § 56-5-970(C)(3)) — including a U-turning driver moving on a green arrow. The U-turning driver must still turn only when it will not interfere with other traffic (§ 56-5-2140(a)), so fault depends on the facts.'",
+  "'U-Turning and Oncoming Left-turning Vehicles' bullet: replace the second sentence with 'Because a U-turn may be made only without interfering with other traffic (§ 56-5-2140(a)), the U-turning driver usually bears the burden when the two conflict.'",
+  "Illegal U-turns list: delete 'In business districts where U-turns are generally restricted' (no SC statute); replace with 'On City of Charleston streets where no sign authorizes the U-turn (City Code § 19-216)'. Change 'Across double yellow lines or median strips' to 'Across a raised or landscaped median, except at a marked opening or crossover (S.C. Code § 56-5-1920)'.",
+  "Failure to Signal: add 'South Carolina requires a turn signal given continuously for at least the last 100 feet before turning (S.C. Code § 56-5-2150).' Avoidance list 'Use Proper U-Turn Technique': replace 'well in advance' with 'for at least the last 100 feet' and cite §§ 56-5-2150(B), 56-5-2120(b).",
+  "Avoidance list 'Know When and Where U-Turns Are Legal': replace 'avoid U-turns at intersections with traffic lights unless specifically permitted' with 'inside Charleston city limits, turn around only where a sign permits it'.",
+  "Unsupported frequency/ranking language: 'present significantly higher risks' → 'are common places for risky U-turns'; delete 'experiences frequent U-turn crashes' (Downtown) and add the § 19-216/one-way-streets point; 'numerous' (business districts) → delete; 'usually attempt' → 'may attempt'; 'frequently cause U-turn accidents' (tourists) → 'can cause'; delete 'This is particularly common in tourist destinations...'.",
+  "Shared fault bullets: fix 'You can recover damages if you are less than 50 percent or less at fault' → 'You can recover damages if you are 50 percent or less at fault'. Add '(Nelson v. Concrete Supply Co., 1991)' after the first sentence of the section. Fix the garbled third scenario bullet. Never cite § 15-38-15 for the bar.",
+  "Evidence list: relabel 'Police Reports and Citations' → 'Police Reports' and add: 'A traffic ticket or conviction is not admissible to prove fault in a South Carolina civil case (S.C. Code § 56-5-6160), but if the other driver pleaded guilty, that plea can be used as an admission (Samuel v. Mouzon, 1984).' Relabel the second 'Witness Testimony' item 'Expert Testimony'. In 'Road Signage', add that on city streets the question is whether a sign authorized the U-turn (§ 19-216).",
+  "Add a short deadline paragraph before the closing CTA (the post has none): 'South Carolina gives you three years from the crash to file a personal-injury lawsuit (S.C. Code § 15-3-530(5)). If the other vehicle belonged to a government agency — a city, county or state vehicle — the South Carolina Tort Claims Act sets a two-year deadline (S.C. Code § 15-78-110). For an injured child, the deadline is tolled until age 18 but runs out no later than the child's 19th birthday, or three years from the crash if later (§ 15-3-40).'",
+  "FAQ 1, 2 and 4: replace with the currentValue texts in verifiedClaims (they render into FAQPage structured data). FAQ 3: optionally change question 'What causes most U-turn crashes?' to 'What commonly causes U-turn crashes?'.",
+  "CTA: add the Charleston office line (843) 790-8999 (tel:+18437908999) beside 1-844-RESULTS per the writer profile; optionally normalize both toll-free hrefs to tel:+18447378587. Fix typo 'answer you questions' → 'answer your questions'.",
+  "Meta: metaDescription and keyTakeaways are empty. If Key Takeaways are added, include: the Charleston § 19-216 authorized-only rule; § 56-5-2140 safety/500-foot curve-crest rule; right-on-red drivers yield (§ 56-5-970(C)(3)); 51% bar (Nelson); 3-year deadline (§ 15-3-530). Each must match the body after these edits (Key Takeaways are a publish surface)."
+ ],
+ "statuteCitations": [
+  {
+   "section": "S.C. Code § 56-5-2140",
+   "name": "Limitations on turning around (U-turns: safety/no interference; no U-turn on curve or near crest where not visible within 500 feet)",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "City of Charleston Code § 19-216",
+   "name": "\"U\" turns — prohibited on any street except where authorized by an official sign",
+   "url": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH19MOVETR_ARTVIIOPVEGE_DIV4STSTTU_S19-216UTU"
+  },
+  {
+   "section": "S.C. Code § 56-5-2150",
+   "name": "Turning movements and required signals (signal continuously for the last 100 feet)",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-2120",
+   "name": "Required position and method of turning (left-turn lane positioning; two-way left-turn lanes; traffic-control devices)",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-2320",
+   "name": "Vehicle turning left — yield to oncoming vehicles",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-970",
+   "name": "Traffic-control signal legend (green, green arrow, right on red must yield to traffic lawfully in the intersection)",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-950",
+   "name": "Obedience to official traffic-control devices",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-710(A)(9)",
+   "name": "Local authority to regulate or prohibit turning at intersections",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-1920",
+   "name": "Driving on divided highways (no crossing a median except at openings/crossovers; left turn across painted median allowed unless signed)",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-6160",
+   "name": "Evidence of conviction inadmissible in civil action",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 15-3-530(5)",
+   "name": "Three-year limitation — personal injury",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "section": "S.C. Code § 15-3-40",
+   "name": "Tolling for minors — capped at one year after age 18",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "section": "S.C. Code § 15-78-110",
+   "name": "Tort Claims Act — two-year limitation against government entities",
+   "url": "https://www.scstatehouse.gov/code/t15c078.php"
+  },
+  {
+   "section": "S.C. Code § 15-38-15",
+   "name": "Joint and several liability — defendant under 50% of total fault pays only its share (amended by 2025 Act No. 42, eff. 2026-01-01); not the authority for the 51% bar",
+   "url": "https://www.scstatehouse.gov/code/t15c038.php"
+  },
+  {
+   "section": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991)",
+   "name": "Modified comparative negligence — recover if not more at fault than defendants",
+   "url": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html"
+  },
+  {
+   "section": "Samuel v. Mouzon, 282 S.C. 616 (Ct. App. 1984)",
+   "name": "Guilty plea to traffic charge admissible as an admission, subject to rebuttal",
+   "url": "https://law.justia.com/cases/south-carolina/court-of-appeals/1984/282-s-c-616-2.html"
+  }
+ ],
+ "authoritativeLinks": [
+  {
+   "name": "City of Charleston Code of Ordinances § 19-216 '\"U\" turns' (Municode)",
+   "url": "https://library.municode.com/sc/charleston/codes/code_of_ordinances?nodeId=CICO_CH19MOVETR_ARTVIIOPVEGE_DIV4STSTTU_S19-216UTU"
+  },
+  {
+   "name": "S.C. Code Title 56 Chapter 5 — Uniform Act Regulating Traffic on Highways (scstatehouse.gov)",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "name": "S.C. Code Title 15 Chapter 3 — Limitations of civil actions",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "name": "S.C. Code Title 15 Chapter 78 — South Carolina Tort Claims Act",
+   "url": "https://www.scstatehouse.gov/code/t15c078.php"
+  },
+  {
+   "name": "S.C. Code Title 15 Chapter 38 — Contribution among tortfeasors (§ 15-38-15)",
+   "url": "https://www.scstatehouse.gov/code/t15c038.php"
+  },
+  {
+   "name": "Nelson v. Concrete Supply Co. (S.C. 1991) — Justia",
+   "url": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html"
+  },
+  {
+   "name": "Samuel v. Mouzon (S.C. Ct. App. 1984) — Justia",
+   "url": "https://law.justia.com/cases/south-carolina/court-of-appeals/1984/282-s-c-616-2.html"
+  },
+  {
+   "name": "49 C.F.R. Part 563 — Event Data Recorders (eCFR)",
+   "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-V/part-563"
+  }
+ ],
+ "quoteNote": "Claims are quoted from the rendered (tag-stripped, whitespace-collapsed) text of body.html; list-item claims include their <strong> lead-ins as rendered (e.g. 'Making a U-turn on a Green Light: ...'). Apostrophes in body claims use the curly ’ where the body does. FAQ claims quote meta.json answers exactly. URL checks 2026-10-02: scstatehouse.gov, ecfr.gov, en.wikipedia.org and rodenlaw.com returned 200 by curl (rodenlaw.com needs a browser User-Agent); Municode § 19-216 and both Justia cases were verified by loading them in Chrome. No § 56-5-2160 exists in Chapter 5 — the U-turn statute is § 56-5-2140."
+}

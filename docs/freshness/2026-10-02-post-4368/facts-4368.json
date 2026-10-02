@@ -1,0 +1,887 @@
+{
+  "postId": 4368,
+  "slug": "charleston-parking-lot-parking-garage-accident",
+  "liveUrl": "https://rodenlaw.com/blog/charleston-parking-lot-parking-garage-accident/",
+  "jurisdiction": "SC",
+  "researchedAt": "2026-10-02",
+  "verifiedClaims": [
+    {
+      "surface": "excerpt",
+      "claim": "What to do after a Charleston parking lot or garage accident, and why private property complicates the liability question.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 56-5-20; § 23-1-15",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Accurate framing. Published as the Article description by roden_schema_article()."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Charleston parking lot and garage accidents involve unique liability questions because most occur on private property where standard traffic laws may not fully apply under South Carolina law.",
+      "verdict": "update",
+      "currentValue": "Most of South Carolina's rules of the road (Title 56, Chapter 5) apply only on 'highways' — ways that are publicly maintained and open to the public (§ 56-5-430) — so they do not automatically govern a private lot (§ 56-5-20). Two whole articles are the exception and apply 'upon highways and elsewhere throughout the State': Article 9 (duty to stop, exchange information, render aid and report crashes, §§ 56-5-1210 to -1350) and Article 23 (reckless driving and DUI, §§ 56-5-2910 et seq.). A lot that is open to the public and posted with signs is also within police jurisdiction for the unlawful operation of motor vehicles (§ 23-1-15).",
+      "sourceName": "S.C. Code §§ 56-5-20, 56-5-430 (scstatehouse.gov); S.C. Code § 23-1-15",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-10-02",
+      "note": "'May not fully apply' is defensible but vague, and 'most occur on private property' is unsourced. Suggested: 'Most South Carolina rules of the road technically apply only on public roads, but the duty to stop and report a crash, DUI and reckless-driving laws apply in parking lots too (S.C. Code § 56-5-20), and negligence law applies everywhere.' § 23-1-15 text read at https://www.scstatehouse.gov/code/t23c001.php. Renders in the summary box above the article."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Property owners can be liable for poor lighting, inadequate signage, or dangerous design.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Sims v. Giles, 343 S.C. 708, 541 S.E.2d 857 (Ct. App. 2001); Bass v. Gopal, Inc., 395 S.C. 129, 716 S.E.2d 910 (2011)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/court-of-appeals/2001/3291.html",
+      "retrievedAt": "2026-10-02",
+      "note": "Owner owes invitees 'the duty of exercising reasonable or ordinary care for his safety' and must warn of latent dangers it knows or should know of (Sims). Bass names 'installing extra lighting, fences, locks, or security cameras' as measures a business may be required to take against foreseeable crime. 'Can be' is properly hedged."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "Pedestrian strikes in parking areas are common.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "National Safety Council, 'Parking Lots & Distracted Driving'",
+      "sourceUrl": "https://www.nsc.org/road/safety-topics/distracted-driving/parking-lot-safety",
+      "retrievedAt": "2026-10-02",
+      "note": "NSC: 'NSC analysis of government data indicates that 9% of pedestrian deaths in parking lots result from backup incidents' and lists pedestrian hazards in lots. General, hedged statement; acceptable."
+    },
+    {
+      "surface": "keyTakeaways",
+      "claim": "South Carolina's comparative fault rule bars recovery at 51% or more fault, and the filing deadline is three years (S.C. Code § 15-3-530).",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991); S.C. Code § 15-3-530(5)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+      "retrievedAt": "2026-10-02",
+      "note": "Both correct. Recommend adding 'two years if a government entity such as a city-owned garage is the defendant (S.C. Code § 15-78-110)', since the post's own subject (downtown city garages) makes that the most common exception. Comparative-fault authority is Nelson, never § 15-38-15."
+    },
+    {
+      "surface": "metaDescription",
+      "claim": "(empty)",
+      "verdict": "update",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-10-02",
+      "note": "metaDescription is empty in meta.json. Not a claim; flag for the editor (Yoast/SEO description falls back to the excerpt)."
+    },
+    {
+      "surface": "body",
+      "claim": "Charleston is a city where parking is notoriously scarce and perpetually contested.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-10-02",
+      "note": "Editorial characterization; not a verifiable factual claim."
+    },
+    {
+      "surface": "body",
+      "claim": "According to the National Safety Council (NSC), tens of thousands of crashes occur in parking lots and parking structures across the United States every year, resulting in hundreds of deaths and thousands of serious injuries annually.",
+      "verdict": "update",
+      "currentValue": "NSC: 'Tens of thousands of crashes occur in parking lots and garage structures annually, resulting in hundreds of deaths and thousands of injuries.'",
+      "sourceName": "National Safety Council, 'Parking Lots & Distracted Driving' (read in browser 2026-10-02; curl returns 403 bot block)",
+      "sourceUrl": "https://www.nsc.org/road/safety-topics/distracted-driving/parking-lot-safety",
+      "retrievedAt": "2026-10-02",
+      "note": "Matches NSC except the post adds 'serious' — NSC says 'thousands of injuries', not serious injuries. Delete 'serious'. The page is undated, so do not attach a year. Link resolves in a browser."
+    },
+    {
+      "surface": "body",
+      "claim": "These are not minor fender-benders. Parking lot collisions frequently involve pedestrians, children, cyclists, and motorcyclists who are struck by drivers who are backing out of spaces, cutting through lanes, or accelerating toward exits without checking their surroundings.",
+      "verdict": "update",
+      "currentValue": "NSC notes 'many fender-benders go unreported' and that 9% of parking-lot pedestrian deaths result from backup incidents.",
+      "sourceName": "National Safety Council, 'Parking Lots & Distracted Driving'",
+      "sourceUrl": "https://www.nsc.org/road/safety-topics/distracted-driving/parking-lot-safety",
+      "retrievedAt": "2026-10-02",
+      "note": "'These are not minor fender-benders' sits right after the NSC citation and reads as NSC's conclusion, but NSC says the opposite about the bulk of incidents ('many fender-benders go unreported'). Suggested: 'Many are minor, but the serious ones often involve pedestrians, children, cyclists and motorcyclists ...'."
+    },
+    {
+      "surface": "body",
+      "claim": "Downtown garages operated by the City of Charleston, private garages serving hotels and office buildings, and surface lots attached to shopping centers on Highway 17 each present different risk profiles.",
+      "verdict": "update",
+      "currentValue": "The City of Charleston's 'Where to Park' page lists city garages including Aquarium (24 Calhoun St.), Camden/Exchange (35 John St.), Charleston Place (85 Hasell St.), Concord/Cumberland (1 Cumberland St.), East Bay/Prioleau (25 Prioleau St.), Gaillard (32 Alexander St.), Majestic Square (211 King St.), Marion Square (399 King St.), Midtown (558 King St.), 93 Queen St., 34 St. Philip St. and 99 West Edge. The city's parking-management agreement names ABM Parking Services, Inc. as the day-to-day operator.",
+      "sourceName": "City of Charleston, 'Where to Park' and parking-management agreement (via search index; charleston-sc.gov refused connections from this network — unverified-by-fetch)",
+      "sourceUrl": "https://www.charleston-sc.gov/1025/Where-to-Park",
+      "retrievedAt": "2026-10-02",
+      "note": "City-OWNED is accurate; 'operated by the City' is looser than the record, which shows a private contractor (ABM) runs the garages under a city agreement. This matters legally: the Tort Claims Act covers the city but excludes 'an independent contractor doing business with ... a political subdivision' (§ 15-78-30(c)), so a claim against the operator is an ordinary negligence claim on the 3-year clock. Suggested: 'downtown garages owned by the City of Charleston (and run day to day by a private operator)'. Garage list and ABM are unverified-by-fetch; verify on charleston-sc.gov from another network before naming any garage."
+    },
+    {
+      "surface": "body",
+      "claim": "Large retail parking lots in Mount Pleasant, West Ashley, and North Charleston generate high volumes of backing collisions.",
+      "verdict": "update",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-10-02",
+      "note": "No source quantifies backing collisions in these areas; SCDPS publishes no lot-level data. Soften to 'see frequent backing collisions' or 'are common settings for backing collisions'."
+    },
+    {
+      "surface": "body",
+      "claim": "MUSC, Roper St. Francis, and other medical facilities in the Charleston area have parking structures and surface lots where patients -- many of whom are elderly, mobility-impaired, or disoriented after medical procedures -- walk through active driving areas.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-78-30(a) (Tort Claims Act 'agency' includes 'a state-supported governmental health care facility ... college, university')",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Both systems run garages and surface lots on the peninsula. Important follow-on for the deadlines section: MUSC is a state institution, so an injury caused by a dangerous condition on an MUSC-owned garage would fall under the Tort Claims Act (two years, § 15-78-110; $300,000/$600,000 caps and no punitive damages, § 15-78-120), not § 15-3-530. Roper St. Francis is private."
+    },
+    {
+      "surface": "body",
+      "claim": "The driver who is backing bears a heightened duty of care because they are moving into a shared traffic lane and must yield to vehicles already in that lane.",
+      "verdict": "update",
+      "currentValue": "The statutory rule is S.C. Code § 56-5-3810(a): 'No driver shall back a vehicle unless such movement can be made with safety and without interfering with other traffic.' It sits in Article 31, which by § 56-5-20 applies on highways, so in a private lot the same standard comes in as ordinary reasonable care rather than as a statute.",
+      "sourceName": "S.C. Code §§ 56-5-3810, 56-5-20",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-10-02",
+      "note": "'Heightened duty of care' is not a South Carolina legal standard; the duty is reasonable care, and the backing rule is § 56-5-3810. Suggested: 'A backing driver must not back up unless it can be done safely and without interfering with other traffic — the rule South Carolina writes into its traffic code (S.C. Code § 56-5-3810) and that juries apply as ordinary care in a private lot.'"
+    },
+    {
+      "surface": "body",
+      "claim": "When two vehicles back out of opposing spaces simultaneously, determining fault becomes more complicated and often depends on which driver entered the lane first and how far each had progressed.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Nelson v. Concrete Supply Co. (comparative fault)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+      "retrievedAt": "2026-10-02",
+      "note": "Fair description of a comparative-fault inquiry."
+    },
+    {
+      "surface": "body",
+      "claim": "In most lots, the wider main lanes have the right of way over narrower feeder rows, similar to how a side street yields to a main road.",
+      "verdict": "update",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-10-02",
+      "note": "No South Carolina statute or case establishes a main-lane-over-feeder-row rule; it is a widely taught convention. § 56-5-2310 and § 56-5-2330 (stop/yield signs) govern highway intersections only (§ 56-5-20). Reword as convention: 'Drivers generally expect traffic in the main aisles to have priority over cars coming out of the parking rows, and a driver who ignores that expectation will have trouble showing he acted reasonably.'"
+    },
+    {
+      "surface": "body",
+      "claim": "When two drivers reach an unmarked intersection simultaneously, the general rule in South Carolina is that the driver on the right has the right of way -- the same rule that applies on public roads.",
+      "verdict": "update",
+      "currentValue": "§ 56-5-2310(a): 'When two vehicles approach or enter an intersection from different highways at approximately the same time, the driver of the vehicle on the left shall yield the right-of-way to the vehicle on the right.' By its terms and by § 56-5-20 this applies to intersections of highways, not lot aisles.",
+      "sourceName": "S.C. Code §§ 56-5-2310, 56-5-20, 56-5-490 ('intersection' defined by reference to two highways)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Overstates: it is the public-road statute, not a 'general rule in South Carolina' for parking lots. Suggested: 'On public roads South Carolina gives the right of way to the driver on the right (S.C. Code § 56-5-2310); in a private lot that statute does not technically apply, but adjusters and juries often use it as the measure of reasonable care.' (The last clause is a practice observation, not a holding; no SC case was found adopting the statute for lots.)"
+    },
+    {
+      "surface": "body",
+      "claim": "Posted speed limits in parking lots typically range from 5 to 15 mph",
+      "verdict": "update",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-10-02",
+      "note": "No source located for a typical range; South Carolina sets no statutory parking-lot limit (speed limits in Article 11 apply on highways). Suggested: 'Parking lots that post a speed limit typically set it low, often 10 or 15 mph' — or drop the numbers."
+    },
+    {
+      "surface": "body",
+      "claim": "A vehicle traveling at 20-25 mph through a parking lot has significantly less stopping distance than one traveling at the posted 10 mph",
+      "verdict": "update",
+      "currentValue": "A faster vehicle needs a LONGER stopping distance. Braking distance grows with the square of speed, so at 20 mph it is about four times the braking distance at 10 mph.",
+      "sourceName": "Basic physics (braking distance ∝ v²)",
+      "sourceUrl": "",
+      "retrievedAt": "2026-10-02",
+      "note": "Factual error — inverted. Replace with 'needs far more distance to stop than one traveling at 10 mph'."
+    },
+    {
+      "surface": "body",
+      "claim": "Speeding in a parking lot is strong evidence of negligence in a South Carolina accident claim.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 56-5-20 (speed statutes are highway-only); common-law reasonable care",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Fine as evidence of failing to use reasonable care. Note it cannot be negligence per se under a speed statute in a private lot, since Article 11 applies on highways only — the post correctly says 'evidence', not 'per se'."
+    },
+    {
+      "surface": "body",
+      "claim": "Drivers exiting parking lots onto public streets must yield to traffic on the street and to pedestrians on the sidewalk.",
+      "verdict": "keep",
+      "currentValue": "§ 56-5-2350: driver entering a roadway 'from any place other than another roadway shall yield the right-of-way to all vehicles approaching on the roadway'; § 56-5-2745: a driver 'emerging from an alley, building, private road or driveway within a business or residential district shall stop the vehicle immediately prior to driving onto a sidewalk'; § 56-5-3250: 'The driver of a vehicle crossing a sidewalk shall yield the right-of-way to any pedestrian'.",
+      "sourceName": "S.C. Code §§ 56-5-2350, 56-5-2745, 56-5-3250",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Correct and statutory — these sections expressly reach drivers coming out of private property, so they are the one place in the lot story where a traffic statute clearly applies. Recommend adding the cites; § 56-5-2745 also supports 'without stopping'."
+    },
+    {
+      "surface": "body",
+      "claim": "Fault in parking lot accidents follows the same negligence principles that apply to any motor vehicle collision in South Carolina.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Common-law negligence; Nelson v. Concrete Supply Co.",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+      "retrievedAt": "2026-10-02",
+      "note": "Accurate."
+    },
+    {
+      "surface": "body",
+      "claim": "Backing driver vs. through-traffic: The driver backing out of a space is almost always at fault when they collide with a vehicle already in the travel lane.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 56-5-3810(a) (as the reasonable-care benchmark)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-10-02",
+      "note": "'Almost always' is hedged; consistent with § 56-5-3810 standard."
+    },
+    {
+      "surface": "body",
+      "claim": "Two drivers backing simultaneously: Fault is typically shared.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Nelson v. Concrete Supply Co.",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+      "retrievedAt": "2026-10-02",
+      "note": "Hedged; accurate."
+    },
+    {
+      "surface": "body",
+      "claim": "If neither had a stop sign, the driver on the left typically should have yielded to the driver on the right.",
+      "verdict": "update",
+      "currentValue": "See § 56-5-2310 entry.",
+      "sourceName": "S.C. Code § 56-5-2310",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Same issue as the scenario paragraph: the statute governs highway intersections. 'Typically' softens it; add 'as on public roads' to signal the analogy."
+    },
+    {
+      "surface": "body",
+      "claim": "Striking a legally parked vehicle: The moving driver is at fault. A legally parked vehicle cannot be negligent.",
+      "verdict": "update",
+      "currentValue": "A driver who hits an unattended vehicle must stop and either find the owner or leave a written note with name, address and circumstances (S.C. Code § 56-5-1240), and that Article 9 duty applies in parking lots (§ 56-5-20).",
+      "sourceName": "S.C. Code §§ 56-5-1240, 56-5-20",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-10-02",
+      "note": "'Cannot be negligent' is absolute; a vehicle can be legally parked yet left in a dangerous state (rolling, lights off in a dark garage). Suggested: 'The moving driver is almost always at fault — and must stop and leave a note or find the owner (S.C. Code § 56-5-1240), a duty that applies in parking lots.'"
+    },
+    {
+      "surface": "body",
+      "claim": "Pedestrian strikes: Drivers owe a heightened duty of care to pedestrians in parking lots, where pedestrians are expected to be walking in and near driving lanes.",
+      "verdict": "update",
+      "currentValue": "§ 56-5-3230: 'every driver of a vehicle shall exercise due care to avoid colliding with any pedestrian ... and shall exercise proper precaution upon observing any child or any obviously confused, incapacitated or intoxicated person.'",
+      "sourceName": "S.C. Code § 56-5-3230",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-10-02",
+      "note": "'Heightened duty' is not the legal standard; it is due care, measured by the circumstances (and a parking lot full of pedestrians demands more caution in practice). Suggested: 'Drivers must use due care to avoid pedestrians and take extra precaution around children (the standard South Carolina writes into S.C. Code § 56-5-3230), and in a parking lot pedestrians are expected everywhere.'"
+    },
+    {
+      "surface": "body",
+      "claim": "In practice, courts in South Carolina recognize that drivers must anticipate the presence of pedestrians in parking lots and drive at speeds that allow them to stop if a pedestrian appears.",
+      "verdict": "update",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 56-5-3230",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-10-02",
+      "note": "No South Carolina opinion was located that says this about parking lots; attributing it to 'courts' is unsupported. Reword without the court attribution: 'In practice, a driver in a parking lot is expected to anticipate pedestrians and drive slowly enough to stop.'"
+    },
+    {
+      "surface": "body",
+      "claim": "A vehicle traveling at just 10-15 mph can knock a pedestrian to the ground, causing skull fractures, traumatic brain injuries, hip fractures, and spinal injuries -- particularly in elderly victims",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-10-02",
+      "note": "Hedged ('can'); general medical plausibility. No change required."
+    },
+    {
+      "surface": "body",
+      "claim": "Under South Carolina premises liability law, a property owner who invites the public onto their property for a business purpose -- which includes every commercial parking lot and paid parking garage -- owes a duty to maintain the property in a reasonably safe condition and to warn of hazards that are not obvious.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Sims v. Giles, 343 S.C. 708, 541 S.E.2d 857 (Ct. App. 2001)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/court-of-appeals/2001/3291.html",
+      "retrievedAt": "2026-10-02",
+      "note": "Sims: 'The owner of property owes to an invitee or business visitor the duty of exercising reasonable or ordinary care for his safety'; 'The landowner has a duty to warn an invitee only of latent or hidden dangers of which the landowner has knowledge or should have knowledge.' Optional precision: the owner is not an insurer and liability turns on actual or constructive knowledge of the hazard. 'Every' is slightly broad but defensible for paying/business customers. There is no South Carolina premises-liability statute; the duty is common law — keep it uncited to any statute."
+    },
+    {
+      "surface": "body",
+      "claim": "These design defects are the responsibility of the property owner, and when they contribute to an accident, the owner can be held liable for the resulting injuries.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Sims v. Giles",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/court-of-appeals/2001/3291.html",
+      "retrievedAt": "2026-10-02",
+      "note": "Hedged ('can'). The owner's duty runs to conditions it knew or should have known of; designers and builders may also be liable (subject to the 8-year repose in § 15-3-640), but the sentence doesn't exclude them."
+    },
+    {
+      "surface": "body",
+      "claim": "A parking garage owner who fails to maintain adequate lighting throughout the structure, including stairwells and elevator lobbies, may be liable under a premises liability theory when the lack of lighting contributes to an accident or a criminal attack.",
+      "verdict": "update",
+      "currentValue": "For third-party crime, South Carolina uses a balancing test: 'a business owner has a duty to take reasonable action to protect its invitees against the foreseeable risk of physical harm'; the more foreseeable the crime, the more security is required, and a business in a high-crime area 'may be required to institute less costly measures ... such as installing extra lighting, fences, locks, or security cameras'.",
+      "sourceName": "Bass v. Gopal, Inc., 395 S.C. 129, 716 S.E.2d 910 (2011) (Op. No. 27054)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/2011/27054.html",
+      "retrievedAt": "2026-10-02",
+      "note": "The accident half is fine. The criminal-attack half needs the foreseeability qualifier — Bass itself affirmed summary judgment for the owner because there was no evidence its security was unreasonable for the risk. Suggested add: '... when an attack was foreseeable from the garage's history or surroundings (Bass v. Gopal, Inc., 395 S.C. 129 (2011)).'"
+    },
+    {
+      "surface": "body",
+      "claim": "A property owner who knows about these conditions -- or should know about them through reasonable inspection -- and fails to repair them or warn users can be held liable for injuries that result.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Sims v. Giles (duty to warn of latent dangers owner knows or should know of; active duty)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/court-of-appeals/2001/3291.html",
+      "retrievedAt": "2026-10-02",
+      "note": "Accurate statement of actual/constructive notice."
+    },
+    {
+      "surface": "faq:3",
+      "claim": "Yes, if the parking lot or garage design, maintenance, or lighting contributed to the accident. Premises liability claims can be brought against property owners for hazards like poor visibility, confusing traffic flow, and inadequate lighting.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Sims v. Giles; Bass v. Gopal",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/court-of-appeals/2001/3291.html",
+      "retrievedAt": "2026-10-02",
+      "note": "Accurate and hedged. FAQPage structured data."
+    },
+    {
+      "surface": "faq:6",
+      "claim": "Parking garages present additional hazards including blind corners, steep ramps, low ceilings, poor lighting, and pedestrians walking between parked cars in enclosed spaces. The garage owner has heightened premises liability duties.",
+      "verdict": "update",
+      "currentValue": "South Carolina has no 'heightened' premises standard for garages. A garage owner owes paying customers the same duty owed any invitee: reasonable or ordinary care, including warning of hidden dangers it knows or should know of; what counts as reasonable rises with the hazards, so a garage with blind ramps and dim levels must do more to be reasonable.",
+      "sourceName": "Sims v. Giles, 343 S.C. 708 (Ct. App. 2001); Bass v. Gopal, Inc., 395 S.C. 129 (2011)",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/court-of-appeals/2001/3291.html",
+      "retrievedAt": "2026-10-02",
+      "note": "Legal overstatement published twice (FAQ text and FAQPage structured data). Replace last sentence: 'The garage owner owes customers reasonable care, and in a structure with these hazards, reasonable care demands more — lighting, mirrors, signage and maintenance.'"
+    },
+    {
+      "surface": "faq-body:4",
+      "claim": "If a parking garage or lot owner failed to maintain safe conditions -- such as adequate lighting, clear signage, safe ramp design, or properly maintained surfaces -- and that failure contributed to your accident, you may have a premises liability claim against the property owner in addition to any claim against the other driver.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Sims v. Giles",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/court-of-appeals/2001/3291.html",
+      "retrievedAt": "2026-10-02",
+      "note": "Accurate and hedged. In-body FAQ block."
+    },
+    {
+      "surface": "body",
+      "claim": "While certain provisions of the state's Uniform Act Regulating Traffic apply only to \"highways\" (which includes public roads but generally not private parking lots), the fundamental rules of negligence still apply everywhere.",
+      "verdict": "update",
+      "currentValue": "§ 56-5-20: 'The provision of this chapter relating to the operation of vehicles refer exclusively to the operation of vehicles upon highways, except: (1) When a different place is specifically referred to in a given section; and (2) That the provisions of Articles 9 and 23 shall apply upon highways and elsewhere throughout the State.' § 56-5-430: a 'highway' is 'the entire width between boundary lines of every way publicly maintained when any part thereof is open to the use of the public for purposes of vehicular travel'.",
+      "sourceName": "S.C. Code §§ 56-5-20, 56-5-430",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Backwards in emphasis: it is not that 'certain provisions' are highway-only — ALL operating provisions are highway-only by default, and only Articles 9 and 23 plus sections that name another place reach private property. Suggested: 'South Carolina's traffic code applies by default only to \"highways\" — publicly maintained roads open to the public (S.C. Code §§ 56-5-20, 56-5-430). The exceptions matter: the crash-duty and reporting rules (Article 9) and the DUI and reckless-driving laws (Article 23) apply \"elsewhere throughout the State,\" including parking lots, and a public lot posted with signs falls under police traffic jurisdiction (S.C. Code § 23-1-15). Negligence law applies everywhere.' Note a city-owned public garage may itself be 'publicly maintained' and open to the public; whether it is a 'highway' is unsettled — do not assert either way."
+    },
+    {
+      "surface": "body",
+      "claim": "DUI laws apply on private property. South Carolina's DUI statute applies to the operation of a motor vehicle \"within this State,\" which courts have interpreted to include private parking lots.",
+      "verdict": "update",
+      "currentValue": "§ 56-5-2930(A): 'It is unlawful for a person to drive a motor vehicle within this State while under the influence ...'. The private-property reach is express in the Code: § 56-5-2930 is in Article 23, which § 56-5-20(2) applies 'upon highways and elsewhere throughout the State'. The same is true of reckless driving, § 56-5-2920 (also Article 23).",
+      "sourceName": "S.C. Code §§ 56-5-20(2), 56-5-2930(A), 56-5-2920",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-10-02",
+      "note": "The quote 'within this State' is verbatim and the conclusion is right, but the basis is a statute, not judicial interpretation. A secondary source reports State v. Allen (S.C. 1993) reading § 56-5-2930 with § 56-5-20 this way; it was not read in primary form, so do not cite it. Suggested: 'DUI and reckless-driving laws apply in parking lots. The traffic code expressly applies its DUI and reckless-driving article \"upon highways and elsewhere throughout the State\" (S.C. Code § 56-5-20).'"
+    },
+    {
+      "surface": "body",
+      "claim": "Specific traffic code violations (such as failure to signal a turn or failure to obey a traffic control device) may not technically apply in a private lot that has no officially designated traffic control devices. However, the conduct itself -- failing to signal, ignoring a stop sign -- is still relevant evidence of negligence.",
+      "verdict": "update",
+      "currentValue": "The signal (Article 15) and traffic-control-device (Article 7) provisions are highway-only under § 56-5-20, whether or not a lot has signs. Separately, a lot 'open to use by the public for motor vehicle traffic' and 'posted with appropriate signs' is 'within the police jurisdiction with regard to the unlawful operation of motor vehicles', and police there may enforce the laws they enforce on the adjoining streets (§ 23-1-15).",
+      "sourceName": "S.C. Code §§ 56-5-20, 23-1-15",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t23c001.php",
+      "retrievedAt": "2026-10-02",
+      "note": "The trigger is wrong: whether the statute applies turns on whether the lot is a 'highway', not on whether it has 'officially designated' devices. Suggested: 'Most rules of the road, such as signaling and obeying stop signs, technically apply only on public roads (S.C. Code § 56-5-20) — though a public lot posted with police-jurisdiction signs can be patrolled for traffic violations (S.C. Code § 23-1-15). Either way, failing to signal or rolling through a lot's stop sign is evidence of negligence.'"
+    },
+    {
+      "surface": "body",
+      "claim": "Parking lot accidents are still reportable if they result in injury, death, or significant property damage. South Carolina law (S.C. Code Section 56-5-1270) requires drivers to report accidents that cause injury or death regardless of where they occur.",
+      "verdict": "update",
+      "currentValue": "Two duties, both in Article 9 and so both applicable in parking lots (§ 56-5-20(2)): (1) § 56-5-1260 — after a crash causing injury or death the driver must 'immediately by the quickest means of communication' notify the local police department (inside a municipality), otherwise the county sheriff or nearest Highway Patrol office; (2) § 56-5-1270 — if a crash causing injury, death or 'total property damage to an apparent extent of one thousand dollars or more' was 'not investigated by a law enforcement officer', the operator or owner must send a written report with proof of liability insurance to SCDMV within fifteen days; failing to do so is 'prima facie evidence that the vehicle was uninsured'.",
+      "sourceName": "S.C. Code §§ 56-5-20, 56-5-1260, 56-5-1270",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Mis-cites the duty: § 56-5-1270 is the written report to SCDMV (and only when no officer investigated), with a $1,000 damage threshold; the immediate-notice-to-police duty for injury/death is § 56-5-1260. 'Regardless of where they occur' is right in substance but rests on § 56-5-20. Suggested: 'Crash-reporting duties apply in parking lots too (S.C. Code § 56-5-20). After any crash that injures or kills someone, you must notify police immediately (§ 56-5-1260), and if no officer investigates a crash involving injury or $1,000 or more in damage, you must file your own written report with the SCDMV within 15 days (§ 56-5-1270).' Also add (new): the duty to stop, exchange information and render aid (§§ 56-5-1210 to -1240) applies in lots — leaving the scene of a parking-lot crash is a crime."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina courts apply the same negligence standard to parking lot crashes as they do to collisions on public roads: did the driver exercise the care that a reasonably prudent person would exercise under the same circumstances?",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Common-law negligence standard",
+      "sourceUrl": "",
+      "retrievedAt": "2026-10-02",
+      "note": "Accurate general statement."
+    },
+    {
+      "surface": "faq-body:1",
+      "claim": "Yes. South Carolina negligence law applies to accidents on private property, including parking lots and parking garages. The at-fault driver owes the same duty of care on private property as on a public road.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Common-law negligence; S.C. Code § 56-5-20 (statutory rules differ, common-law duty does not)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Accurate. In-body FAQ block."
+    },
+    {
+      "surface": "faq:2",
+      "claim": "Police may not respond to minor parking lot accidents on private property. However, you should still call and request a report, as the documentation is valuable for your claim.",
+      "verdict": "update",
+      "currentValue": "Charleston Police Department policy: 'Units will be dispatched to all private property collisions as reported. The responding officer upon arrival at the scene will determine whether a formal report is warranted.' A TR-310 'will be completed on private property collisions when county, state, and/or federal vehicles are involved'; response may be 'prioritized by a supervisor or dispatch', and parties may decline a report when damage is under $1,000 and no one is hurt.",
+      "sourceName": "City of Charleston Police Department General Order #48 'Traffic Collisions, Towing & Safety Checkpoints' (revised 03/21/23), §§ 48.1, 48.3, 48.5, 48.6 (PowerDMS public PDF)",
+      "sourceUrl": "https://public.powerdms.com/CPD5/documents/609289",
+      "retrievedAt": "2026-10-02",
+      "note": "Inside Charleston city limits the premise is wrong — CPD dispatches to every reported private-property collision, but the officer may decline to write a formal report. Other Lowcountry agencies (Mount Pleasant, North Charleston, Charleston County Sheriff) were not checked. Suggested: 'In the City of Charleston, police dispatch an officer to every reported private-property crash, but the officer decides whether to write a formal report. Always call, and if anyone is hurt, South Carolina law requires you to notify police immediately (S.C. Code § 56-5-1260).' FAQPage structured data."
+    },
+    {
+      "surface": "body",
+      "claim": "While it is true that some law enforcement agencies deprioritize parking lot calls when no injuries are apparent, you should always call the police after a parking lot accident that results in injuries.",
+      "verdict": "update",
+      "currentValue": "See faq:2 entry; § 56-5-1260 makes the call mandatory for injury or death crashes.",
+      "sourceName": "S.C. Code § 56-5-1260; City of Charleston Police Department General Order #48 'Traffic Collisions, Towing & Safety Checkpoints' (revised 03/21/23), §§ 48.1, 48.3, 48.5, 48.6 (PowerDMS public PDF)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-10-02",
+      "note": "'Should' understates it: for an injury crash it is a legal duty (§ 56-5-1260), applicable in lots via § 56-5-20. Suggested: '... you must call the police after a parking lot accident that injures anyone — South Carolina law requires immediate notice (S.C. Code § 56-5-1260).'"
+    },
+    {
+      "surface": "body",
+      "claim": "A police report creates an official record of the crash, documents the positions of the vehicles, records the other driver's information and insurance details, and may include the officer's assessment of fault.",
+      "verdict": "keep",
+      "currentValue": "South Carolina officers use the TR-310 collision report, which goes to SCDMV (§ 56-5-1270); the officer hands drivers an FR-10 insurance-information form. The report itself cannot be used at trial as evidence of negligence (§ 56-5-1290).",
+      "sourceName": "S.C. Code §§ 56-5-1270, 56-5-1290; City of Charleston Police Department General Order #48 'Traffic Collisions, Towing & Safety Checkpoints' (revised 03/21/23), §§ 48.1, 48.3, 48.5, 48.6 (PowerDMS public PDF)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Accurate for claims handling. Optional add: name the form ('the TR-310 collision report, which you can request from SCDMV online or with Form FR-50 for $10') — SCDMV page https://dmv.sc.gov/Vehicle-Owners/Collision-Reports verified 2026-10-02. Do not call it an FR-10 (that is the insurance-verification form). Do not suggest the report proves fault in court (§ 56-5-1290)."
+    },
+    {
+      "surface": "faq-body:2",
+      "claim": "You can also file a report at the police station after the fact. The absence of a police report does not prevent you from filing an insurance claim or a lawsuit.",
+      "verdict": "update",
+      "currentValue": "Charleston PD takes incident reports in person (or by calling an officer to you), but the statutory route when no officer investigated is the driver's own written report to SCDMV within 15 days for any crash involving injury, death or $1,000+ damage (§ 56-5-1270); CPD's General Order calls this the FR-309 financial-responsibility ('white') form.",
+      "sourceName": "S.C. Code § 56-5-1270; City of Charleston Police Department General Order #48 'Traffic Collisions, Towing & Safety Checkpoints' (revised 03/21/23), §§ 48.1, 48.3, 48.5, 48.6 (PowerDMS public PDF)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Second sentence is right. First sentence omits the legal duty that actually applies. Suggested: 'If no officer investigated and anyone was hurt or damage reached $1,000, South Carolina requires you to file your own written report with the SCDMV within 15 days (S.C. Code § 56-5-1270); skipping it lets the state presume you were uninsured.' The FR-309 form name comes from CPD GO #48 §48.6; SCDMV's own form page was not reached (dmv.sc.gov collision page does not list it)."
+    },
+    {
+      "surface": "body",
+      "claim": "Note whether the parking lot has security cameras, and request that the property owner preserve the footage before it is overwritten.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-10-02",
+      "note": "Practical advice; fine."
+    },
+    {
+      "surface": "body",
+      "claim": "Security camera footage is typically overwritten within days or weeks.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-10-02",
+      "note": "General retention practice; no single authoritative source. Hedged by 'typically'."
+    },
+    {
+      "surface": "body",
+      "claim": "The adrenaline of a collision can mask symptoms of whiplash, concussion, and soft tissue injuries that may not become fully apparent for hours or days.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "",
+      "sourceUrl": "",
+      "retrievedAt": "2026-10-02",
+      "note": "Common medical guidance; hedged."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina follows a modified comparative fault system under which you can recover damages as long as your percentage of fault is not greater than 50% (i.e., you must be less than 51% at fault).",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991): plaintiff may recover 'if his or her negligence is not greater than that of the defendant'",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+      "retrievedAt": "2026-10-02",
+      "note": "Correct. If an authority is added it must be Nelson, never § 15-38-15. Note Nelson compares the plaintiff with the defendants' combined negligence in multi-defendant cases."
+    },
+    {
+      "surface": "body",
+      "claim": "If you are found 30% at fault for a parking lot accident and the other party is 70% at fault, your damages are reduced by 30% but you still recover the remaining 70%. If you are found 51% or more at fault, you recover nothing.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Nelson v. Concrete Supply Co.",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+      "retrievedAt": "2026-10-02",
+      "note": "Correct arithmetic and bar."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia applies a similar but slightly stricter rule under O.C.G.A. Section 51-12-33. In Georgia, you can recover damages only if your fault is less than 50%. If you are found exactly 50% at fault, you are barred from recovery.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(a), (g) (2025 Code, Justia; verified in sibling packs 1653/1756/1651)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-10-02",
+      "note": "§ 51-12-33(g): the plaintiff 'shall not be entitled to receive any damages' if 50 percent or more responsible. SB 68 (2025) did not change the 50 percent bar."
+    },
+    {
+      "surface": "body",
+      "claim": "at 50% fault in Georgia, the injured party recovers nothing, and in South Carolina, the recovery is cut in half.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 51-12-33(g); Nelson v. Concrete Supply Co.",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+      "retrievedAt": "2026-10-02",
+      "note": "Correct comparison."
+    },
+    {
+      "surface": "body",
+      "claim": "This distinction matters for accident victims in the Charleston area who may also have connections to Georgia through Roden Law's offices serving both states.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "client.json (offices in Savannah and Darien, GA; Charleston, North Charleston, Columbia, Myrtle Beach, SC)",
+      "sourceUrl": "",
+      "retrievedAt": "2026-10-02",
+      "note": "Firm fact from client.json. Note the link sits on the Charleston office page. Georgia law would govern only a Georgia crash; the sentence doesn't say otherwise."
+    },
+    {
+      "surface": "faq:5",
+      "claim": "SC allows recovery if your fault is less than 51 percent.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Nelson v. Concrete Supply Co.",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+      "retrievedAt": "2026-10-02",
+      "note": "Correct. FAQPage structured data. Optional: 'reduced by your percentage of fault'."
+    },
+    {
+      "surface": "faq-body:3",
+      "claim": "Under South Carolina's comparative fault rules, each driver's recovery is reduced by their percentage of fault.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Nelson v. Concrete Supply Co.",
+      "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+      "retrievedAt": "2026-10-02",
+      "note": "Correct (and barred above 50%)."
+    },
+    {
+      "surface": "faq:1",
+      "claim": "Generally, the driver backing out of a space must yield to vehicles in the travel lane. At intersections within parking lots, normal right-of-way rules apply. The specific facts determine fault.",
+      "verdict": "update",
+      "currentValue": "Backing: § 56-5-3810(a). Intersections: § 56-5-2310 governs highway intersections; in a private lot it is a benchmark of reasonable care, not a binding statute (§ 56-5-20).",
+      "sourceName": "S.C. Code §§ 56-5-3810, 56-5-2310, 56-5-20",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+      "retrievedAt": "2026-10-02",
+      "note": "'Normal right-of-way rules apply' overstates the law for private lots. Suggested: 'At lot intersections, drivers are expected to follow the same right-of-way conventions as on public roads, although the traffic statutes themselves technically apply only to public roads.' FAQPage structured data."
+    },
+    {
+      "surface": "body",
+      "claim": "South Carolina: 3 years from the date of the accident (S.C. Code Section 15-3-530)",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code § 15-3-530(5)",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Correct. Minors: tolled under § 15-3-40 but capped at one year after the disability ends, so a child's claim generally runs to the 19th birthday (or 3 years from injury if later) — optional add."
+    },
+    {
+      "surface": "body",
+      "claim": "Georgia: 2 years from the date of the accident (O.C.G.A. Section 9-3-33)",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "O.C.G.A. § 9-3-33 (2025 Code, Justia; verified in sibling packs)",
+      "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+      "retrievedAt": "2026-10-02",
+      "note": "Correct. Georgia has no general discovery rule for personal-injury claims."
+    },
+    {
+      "surface": "body",
+      "claim": "If your claim involves premises liability against a parking lot or garage owner, the same deadlines apply.",
+      "verdict": "update",
+      "currentValue": "Same deadlines for private owners. A government owner (city garage, MUSC-owned facility) falls under the Tort Claims Act's two years (§ 15-78-110); a Georgia city owner requires ante-litem notice within six months (O.C.G.A. § 36-33-5).",
+      "sourceName": "S.C. Code §§ 15-3-530, 15-78-110; O.C.G.A. § 36-33-5",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+      "retrievedAt": "2026-10-02",
+      "note": "True only for private owners; the post corrects itself two paragraphs later. Add 'if the owner is a private business'."
+    },
+    {
+      "surface": "body",
+      "claim": "For claims against government-owned parking facilities -- such as city-operated garages in downtown Charleston -- a shorter, two-year filing deadline may apply under the South Carolina Tort Claims Act.",
+      "verdict": "update",
+      "currentValue": "§ 15-78-110: an action 'is forever barred unless an action is commenced within two years after the date the loss was or should have been discovered', extended to three years only if a verified claim was first filed under § 15-78-80. Damages are capped at $300,000 per person and $600,000 per occurrence, and punitive damages are barred (§ 15-78-120). The Act does not cover 'an independent contractor doing business with the State or a political subdivision' (§ 15-78-30(c)).",
+      "sourceName": "S.C. Code §§ 15-78-30, 15-78-80, 15-78-110, 15-78-120",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Two years is right and 'may apply' should become 'applies' for a claim against the city itself. But 'city-operated' is imprecise (see the garage entry — a private contractor operates the city's garages, and a claim against that contractor is not under the Act). Suggested: 'If the City of Charleston or another public body (including MUSC, a state institution) is the defendant, the South Carolina Tort Claims Act gives you two years (S.C. Code § 15-78-110) and caps damages at $300,000 per person (§ 15-78-120). A claim against a private company that runs a city garage follows the ordinary three-year rule.'"
+    },
+    {
+      "surface": "body",
+      "claim": "You may need to file a notice of claim within a shorter window than the general statute of limitations, making prompt legal consultation critical.",
+      "verdict": "drop",
+      "currentValue": "South Carolina has no mandatory notice of claim. § 15-78-80(a): a verified claim 'may be filed'; filing one within a year extends the deadline to three years (§ 15-78-110), it does not shorten anything.",
+      "sourceName": "S.C. Code §§ 15-78-80, 15-78-110",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Legal error (imports Georgia-style ante-litem notice into South Carolina; same error found in sibling pack 2647). Replace with: 'Filing an optional verified claim with the agency extends the deadline to three years (S.C. Code § 15-78-80, -110).' If a Georgia comparison is wanted: a Georgia city requires written ante-litem notice within six months (O.C.G.A. § 36-33-5, https://law.justia.com/codes/georgia/title-36/provisions-applicable-to-municipal-corporations-only/chapter-33/section-36-33-5/)."
+    },
+    {
+      "surface": "faq:4",
+      "claim": "Three years in SC. Two years in Georgia.",
+      "verdict": "update",
+      "currentValue": "SC: 3 years (§ 15-3-530); 2 years against a government entity (§ 15-78-110). GA: 2 years (§ 9-3-33); a Georgia city requires notice within 6 months (§ 36-33-5).",
+      "sourceName": "S.C. Code §§ 15-3-530, 15-78-110; O.C.G.A. §§ 9-3-33, 36-33-5",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Correct but omits the exception this very post emphasises (city garages). Suggested: 'Three years in South Carolina (S.C. Code § 15-3-530), but two years if a government body such as a city-owned garage is the defendant (§ 15-78-110). Two years in Georgia (O.C.G.A. § 9-3-33).' FAQPage structured data."
+    },
+    {
+      "surface": "faq-body:5",
+      "claim": "The statute of limitations for personal injury claims in South Carolina is three years from the date of the accident (S.C. Code Section 15-3-530). However, if the parking facility is government-owned, a shorter, two-year filing deadline may apply under the South Carolina Tort Claims Act.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "S.C. Code §§ 15-3-530, 15-78-110",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c078.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Correct. Optional: add the § 15-78-110 cite and 'when the government is the defendant' (vs. a private operator)."
+    },
+    {
+      "surface": "faq-body:6",
+      "claim": "You may recover compensation for medical expenses, lost wages, pain and suffering, property damage, and future medical costs related to your injuries. If the at-fault party's conduct was reckless -- such as driving while intoxicated in a parking lot -- you may also be entitled to punitive damages under South Carolina law.",
+      "verdict": "keep",
+      "currentValue": "§ 15-32-520(D): 'Punitive damages may be awarded only if the plaintiff proves by clear and convincing evidence that his harm was the result of the defendant's wilful, wanton, or reckless conduct.' Not available against a government entity (§ 15-78-120).",
+      "sourceName": "S.C. Code §§ 15-32-520(D), 15-78-120",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c032.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Accurate and hedged. Optional: 'proved by clear and convincing evidence (S.C. Code § 15-32-520)'."
+    },
+    {
+      "surface": "body",
+      "claim": "Identifying all liable parties -- including the other driver, the property owner, a property management company, a maintenance contractor, or a security company -- to maximize the sources of recovery available to you.",
+      "verdict": "keep",
+      "currentValue": "S.C. Code § 15-38-15 (version effective January 1, 2026): joint and several liability does not apply to a defendant whose fault is less than 50 percent of the total; such a defendant pays only its percentage.",
+      "sourceName": "S.C. Code § 15-38-15",
+      "sourceUrl": "https://www.scstatehouse.gov/code/t15c038.php",
+      "retrievedAt": "2026-10-02",
+      "note": "Accurate, and § 15-38-15 is the reason it matters: a defendant under 50% pays only its share, so naming every responsible party protects the recovery. Optional one-line add."
+    },
+    {
+      "surface": "body",
+      "claim": "Roden Law handles parking lot and parking garage accident cases on a contingency fee basis, which means you pay no attorney fees unless we recover compensation for you. There is no upfront cost and no financial risk to you for pursuing your claim.",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "Firm statement (not verifiable externally)",
+      "sourceUrl": "",
+      "retrievedAt": "2026-10-02",
+      "note": "Firm claim — keep, but 'no financial risk' is absolute: confirm with the firm that clients are never responsible for case costs/expenses if there is no recovery. South Carolina advertising rules on fee statements were not reviewed this run."
+    },
+    {
+      "surface": "body",
+      "claim": "call Roden Law at (843) 790-8999 or 1-844-RESULTS",
+      "verdict": "keep",
+      "currentValue": "",
+      "sourceName": "client.json locations[label=Charleston].phone = (843) 790-8999 (127 King Street Suite 200, Charleston, SC 29401); 1-844-RESULTS = 1-844-737-8587 (keypad R7 E3 S7 U8 L5 T8 S7), used site-wide in the theme",
+      "sourceUrl": "",
+      "retrievedAt": "2026-10-02",
+      "note": "tel:8437908999 matches the Charleston office. tel:18447378587 spells 1-844-RESULTS correctly. Mount Pleasant/Summerville mention fine."
+    }
+  ],
+  "recommendedEdits": [
+    "Private Property vs. Public Road section, first paragraph: replace 'certain provisions ... apply only to \"highways\"' with the § 56-5-20 rule — the traffic code applies by default only to publicly maintained roads open to the public (§§ 56-5-20, 56-5-430), EXCEPT Article 9 (stop, exchange information, render aid, report) and Article 23 (reckless driving, DUI), which apply 'upon highways and elsewhere throughout the State'; and a public lot posted with signs is within police traffic jurisdiction (§ 23-1-15).",
+    "DUI bullet: drop 'which courts have interpreted'; say the Code itself extends DUI and reckless-driving laws to parking lots (S.C. Code § 56-5-20).",
+    "Reportable-accidents bullet: split the duties — immediate notice to police for any injury/death crash (§ 56-5-1260); written report to SCDMV within 15 days if no officer investigated and there was injury, death or $1,000+ damage (§ 56-5-1270). Add a new bullet: leaving the scene of a parking-lot crash is a crime — the duties in §§ 56-5-1210 to -1240 (including leaving a note on an unattended car, § 56-5-1240) apply in lots.",
+    "Specific-violations bullet: the trigger is whether the lot is a 'highway', not whether it has 'officially designated' devices; add § 23-1-15 nuance.",
+    "Speeding paragraph: fix inverted physics — 'significantly less stopping distance' → 'needs far more distance to stop'. Drop or soften '5 to 15 mph' range.",
+    "Backing and pedestrian passages (body + fault list): replace 'heightened duty of care' with the actual standards — § 56-5-3810 (back only when safe) and § 56-5-3230 (due care toward pedestrians, extra precaution for children); delete 'courts in South Carolina recognize' (no case found).",
+    "Right-of-way paragraph and faq:1: the right-hand rule (§ 56-5-2310) governs highway intersections; describe its use in lots as a benchmark, not 'the general rule in South Carolina' / 'normal right-of-way rules apply'. Main-aisle priority is convention, not law.",
+    "Lot-exit paragraph: add cites §§ 56-5-2350, 56-5-2745, 56-5-3250 (these expressly reach drivers leaving private property).",
+    "'Striking a legally parked vehicle' bullet: soften 'cannot be negligent' and add the § 56-5-1240 note duty.",
+    "faq:6: delete 'heightened premises liability duties'; garage owner owes invitees reasonable care (Sims v. Giles, 343 S.C. 708 (Ct. App. 2001)).",
+    "Poor Lighting paragraph: qualify the criminal-attack theory with foreseeability (Bass v. Gopal, Inc., 395 S.C. 129 (2011), balancing test; lighting is one of the measures it names).",
+    "faq:2 and police section: in Charleston, CPD policy dispatches an officer to every reported private-property collision; the officer decides whether to write a formal report (CPD General Order #48 § 48.3). For injury crashes, calling is a legal duty (§ 56-5-1260), not just advice.",
+    "In-body FAQ 'police refused to come': replace 'file a report at the police station after the fact' with the § 56-5-1270 duty to file your own report with SCDMV within 15 days (injury/death or $1,000+, not investigated) — otherwise the vehicle is presumed uninsured.",
+    "Deadlines section: DELETE 'You may need to file a notice of claim within a shorter window' — South Carolina has no mandatory notice; an optional verified claim extends the deadline to three years (§§ 15-78-80, -110). State that the Tort Claims Act's two years applies when the city (or MUSC, a state institution) is the defendant, caps damages at $300,000/$600,000 and bars punitive damages (§ 15-78-120); a private contractor that runs a city garage is outside the Act (§ 15-78-30(c)) and the 3-year rule applies. Add 'if the owner is a private business' to 'the same deadlines apply'.",
+    "faq:4 and Key Takeaways: add the two-year government exception (S.C. Code § 15-78-110).",
+    "Garages paragraph: 'Downtown garages operated by the City of Charleston' → 'owned by the City of Charleston' (day-to-day operation is contracted to a private operator; unverified-by-fetch — confirm before naming the operator).",
+    "NSC sentence: delete 'serious' ('thousands of injuries' per NSC); rephrase 'These are not minor fender-benders' so it does not contradict NSC's 'many fender-benders go unreported'.",
+    "metaDescription is empty — supply one (outside this pack's fact scope)."
+  ],
+  "statuteCitations": [
+    {
+      "section": "S.C. Code § 56-5-20",
+      "name": "Chapter applies to operation upon highways, except sections naming another place and Articles 9 and 23 ('upon highways and elsewhere throughout the State')",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "section": "S.C. Code § 56-5-430",
+      "name": "'Street' / 'highway' defined — every way publicly maintained and open to public vehicular travel",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "section": "S.C. Code § 56-5-450",
+      "name": "'Private road' / 'driveway' defined",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "section": "S.C. Code § 23-1-15",
+      "name": "Public parking lots posted with signs are within police jurisdiction for unlawful operation of motor vehicles",
+      "url": "https://www.scstatehouse.gov/code/t23c001.php"
+    },
+    {
+      "section": "S.C. Code § 56-5-1210",
+      "name": "Duty to stop at injury/death crash; misdemeanor, felony for great bodily injury or death (Article 9)",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "section": "S.C. Code § 56-5-1220",
+      "name": "Duty to stop at damage-only crash with attended vehicle",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "section": "S.C. Code § 56-5-1230",
+      "name": "Duty to give information and render aid",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "section": "S.C. Code § 56-5-1240",
+      "name": "Duty upon striking unattended vehicle — locate owner or leave written notice",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "section": "S.C. Code § 56-5-1260",
+      "name": "Immediate notice to police/sheriff/SCHP of injury or death crash",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "section": "S.C. Code § 56-5-1270",
+      "name": "Written report to SCDMV within 15 days if not investigated (injury, death, or $1,000+ damage); officer report within 24 hours",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "section": "S.C. Code § 56-5-1290",
+      "name": "Required crash reports not evidence of negligence at trial",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "section": "S.C. Code § 56-5-2310",
+      "name": "Right-of-way at intersections — vehicle on left yields to vehicle on right (highways)",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "section": "S.C. Code § 56-5-2350",
+      "name": "Vehicle entering roadway from any place other than a roadway must yield",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "section": "S.C. Code § 56-5-2745",
+      "name": "Driver emerging from alley, building, private road or driveway must stop before sidewalk",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "section": "S.C. Code § 56-5-2920",
+      "name": "Reckless driving — wilful or wanton disregard (Article 23)",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "section": "S.C. Code § 56-5-2930",
+      "name": "DUI — drive 'within this State' while materially and appreciably impaired (Article 23)",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "section": "S.C. Code § 56-5-3230",
+      "name": "Drivers to exercise due care toward pedestrians; proper precaution around children",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "section": "S.C. Code § 56-5-3250",
+      "name": "Driver crossing a sidewalk yields to pedestrians",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "section": "S.C. Code § 56-5-3810",
+      "name": "Limitations on backing — only when safe and without interfering with other traffic",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "section": "S.C. Code § 56-5-6160",
+      "name": "Evidence of traffic conviction inadmissible in civil action",
+      "url": "https://www.scstatehouse.gov/code/t56c005.php"
+    },
+    {
+      "section": "S.C. Code § 15-3-530",
+      "name": "Three-year limitation — personal injury (subsection 5)",
+      "url": "https://www.scstatehouse.gov/code/t15c003.php"
+    },
+    {
+      "section": "S.C. Code § 15-3-40",
+      "name": "Tolling for minors — capped at one year after disability ends",
+      "url": "https://www.scstatehouse.gov/code/t15c003.php"
+    },
+    {
+      "section": "S.C. Code § 15-78-30",
+      "name": "Tort Claims Act definitions — 'agency' includes state universities/health care facilities; independent contractors excluded",
+      "url": "https://www.scstatehouse.gov/code/t15c078.php"
+    },
+    {
+      "section": "S.C. Code § 15-78-80",
+      "name": "Verified claim 'may be filed' (optional)",
+      "url": "https://www.scstatehouse.gov/code/t15c078.php"
+    },
+    {
+      "section": "S.C. Code § 15-78-110",
+      "name": "Tort Claims Act — two years (three if verified claim first filed)",
+      "url": "https://www.scstatehouse.gov/code/t15c078.php"
+    },
+    {
+      "section": "S.C. Code § 15-78-120",
+      "name": "Tort Claims Act caps ($300,000/$600,000); no punitive damages",
+      "url": "https://www.scstatehouse.gov/code/t15c078.php"
+    },
+    {
+      "section": "S.C. Code § 15-32-520",
+      "name": "Punitive damages — clear and convincing evidence of wilful, wanton or reckless conduct",
+      "url": "https://www.scstatehouse.gov/code/t15c032.php"
+    },
+    {
+      "section": "S.C. Code § 15-38-15",
+      "name": "Joint and several liability limited for defendants under 50% fault (version effective Jan. 1, 2026)",
+      "url": "https://www.scstatehouse.gov/code/t15c038.php"
+    },
+    {
+      "section": "O.C.G.A. § 51-12-33",
+      "name": "Apportionment; no recovery at 50 percent or more fault",
+      "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+    },
+    {
+      "section": "O.C.G.A. § 9-3-33",
+      "name": "Injuries to the person — two-year limitation",
+      "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+    },
+    {
+      "section": "O.C.G.A. § 36-33-5",
+      "name": "Ante-litem notice to municipality within six months (2025 Code path)",
+      "url": "https://law.justia.com/codes/georgia/title-36/provisions-applicable-to-municipal-corporations-only/chapter-33/section-36-33-5/"
+    }
+  ],
+  "authoritativeLinks": [
+    {
+      "name": "Nelson v. Concrete Supply Co., 303 S.C. 243, 399 S.E.2d 783 (1991) — modified comparative negligence",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html"
+    },
+    {
+      "name": "Sims v. Giles, 343 S.C. 708, 541 S.E.2d 857 (Ct. App. 2001) — duty owed to invitees",
+      "url": "https://law.justia.com/cases/south-carolina/court-of-appeals/2001/3291.html"
+    },
+    {
+      "name": "Bass v. Gopal, Inc., 395 S.C. 129, 716 S.E.2d 910 (2011) — negligent security balancing test (lighting, cameras)",
+      "url": "https://law.justia.com/cases/south-carolina/supreme-court/2011/27054.html"
+    },
+    {
+      "name": "City of Charleston Police Department General Order #48 (rev. 03/21/23) — §48.3 Private Property Collisions; TR-310/FR-10; FR-309",
+      "url": "https://public.powerdms.com/CPD5/documents/609289"
+    },
+    {
+      "name": "National Safety Council — Parking Lots & Distracted Driving (browser-verified; curl 403)",
+      "url": "https://www.nsc.org/road/safety-topics/distracted-driving/parking-lot-safety"
+    },
+    {
+      "name": "SCDMV — Collision Reports (TR-310 copies online or via FR-50, $10)",
+      "url": "https://dmv.sc.gov/Vehicle-Owners/Collision-Reports"
+    },
+    {
+      "name": "City of Charleston — Where to Park (city garage list) — UNVERIFIED-BY-FETCH: charleston-sc.gov refused connections from this network",
+      "url": "https://www.charleston-sc.gov/1025/Where-to-Park"
+    }
+  ],
+  "quoteNote": "Claims are quoted from the rendered text of body.html (tags stripped; '--' is the literal double hyphen in the source) and from meta.json. Surfaces: 'faq:N' = meta.json _roden_faqs item N (also FAQPage structured data); 'faq-body:N' = the Nth question in the in-body Frequently Asked Questions block of body.html; keyTakeaways and excerpt from meta.json. Several entries quote a sentence fragment rather than the full sentence (e.g. the stopping-distance and phone-number claims). Sources reused from sibling packs: Nelson, § 51-12-33, § 9-3-33, § 36-33-5 Justia URLs (verified 2026-09-24/25). Statute text for every S.C. section was re-read from scstatehouse.gov on 2026-10-02."
+}

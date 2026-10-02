@@ -2648,11 +2648,11 @@
                 "_roden_faqs": [
                     {
                         "question": "Who is at fault in a parking lot accident?",
-                        "answer": "Generally, the driver backing out of a space must yield to vehicles in the travel lane. At intersections within parking lots, normal right-of-way rules apply. The specific facts determine fault."
+                        "answer": "Generally, the driver backing out of a space must yield to vehicles in the travel lane. At intersections within parking lots, drivers are expected to follow the same right-of-way conventions as on public roads, although the traffic statutes themselves technically apply only to public roads. The specific facts determine fault."
                     },
                     {
                         "question": "Will police respond to a parking lot accident?",
-                        "answer": "Police may not respond to minor parking lot accidents on private property. However, you should still call and request a report, as the documentation is valuable for your claim."
+                        "answer": "In the City of Charleston, police dispatch an officer to every reported private-property crash, but the officer decides whether to write a formal report. Always call, and if anyone is hurt, South Carolina law requires you to notify police immediately (S.C. Code § 56-5-1260)."
                     },
                     {
                         "question": "Can I sue the parking lot owner?",
@@ -2660,7 +2660,7 @@
                     },
                     {
                         "question": "How long do I have to file a claim?",
-                        "answer": "Three years in SC. Two years in Georgia."
+                        "answer": "Three years in South Carolina (S.C. Code § 15-3-530), but two years if a government body, such as the city that owns a garage, is the defendant (S.C. Code § 15-78-110). Two years in Georgia (O.C.G.A. § 9-3-33)."
                     },
                     {
                         "question": "What if I was partially at fault?",
@@ -2668,10 +2668,12 @@
                     },
                     {
                         "question": "Are parking garage accidents different from parking lot accidents?",
-                        "answer": "Parking garages present additional hazards including blind corners, steep ramps, low ceilings, poor lighting, and pedestrians walking between parked cars in enclosed spaces. The garage owner has heightened premises liability duties."
+                        "answer": "Parking garages present additional hazards including blind corners, steep ramps, low ceilings, poor lighting, and pedestrians walking between parked cars in enclosed spaces. The garage owner owes customers reasonable care, and in a structure with these hazards, reasonable care demands more: lighting, mirrors, signage and maintenance."
                     }
                 ],
-                "_roden_key_takeaways": "Charleston parking lot and garage accidents involve unique liability questions because most occur on private property where standard traffic laws may not fully apply under South Carolina law. Property owners can be liable for poor lighting, inadequate signage, or dangerous design. Pedestrian strikes in parking areas are common. South Carolina's comparative fault rule bars recovery at 51% or more fault, and the filing deadline is three years (S.C. Code § 15-3-530)."
+                "_roden_key_takeaways": "Most South Carolina rules of the road technically apply only on public roads, but the duty to stop and report a crash and the DUI and reckless-driving laws apply in parking lots too (S.C. Code § 56-5-20), and negligence law applies everywhere. Property owners can be liable for poor lighting, inadequate signage, or dangerous design. Pedestrian strikes in parking areas are common. South Carolina's comparative fault rule bars recovery at 51% or more fault, and the filing deadline is three years (S.C. Code § 15-3-530), or two years if a government body, such as the city that owns a garage, is the defendant (S.C. Code § 15-78-110).",
+                "_roden_last_reviewed": "2026-10-02",
+                "_roden_meta_description": "Hurt in a Charleston parking lot or garage? Learn who is at fault, how South Carolina law applies on private property, and when the owner can be liable."
             }
         },
         "/blog/charleston-reckless-driving-crash/": {
@@ -3829,9 +3831,9 @@
             "type": "post",
             "status": "publish",
             "title": "Diminished Value Claims After a Car Accident: How to Recover What Your Vehicle Lost",
-            "excerpt": "A repaired car is worth less than it was. How diminished value claims work in Georgia and South Carolina, and why an appraisal beats the 17c formula.",
+            "excerpt": "A repaired car is often worth less than it was. How diminished value claims work in Georgia and South Carolina, and how an independent appraisal answers the insurer's 17c formula.",
             "meta": {
-                "_roden_author_attorney": "Eric Roden",
+                "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "What is a diminished value claim?",
@@ -3839,27 +3841,28 @@
                     },
                     {
                         "question": "Is Georgia good for DV claims?",
-                        "answer": "Yes. State Farm v. Mabry allows first-party claims. O.C.G.A. § 33-4-6 adds bad faith penalties."
+                        "answer": "Yes. Under State Farm v. Mabry (Ga. 2001), your own insurer must assess and pay diminished value on a collision or comprehensive claim, and O.C.G.A. § 33-4-7 allows a bad-faith penalty against the at-fault driver's insurer if it refuses a proper demand for 60 days."
                     },
                     {
                         "question": "Can I file in South Carolina?",
-                        "answer": "Yes, primarily against the at-fault driver third-party insurer under S.C. Code § 38-77-30."
+                        "answer": "Yes, against the at-fault driver, whose liability insurer pays the claim. South Carolina measures vehicle damage as repair costs plus any remaining loss in value (Newman v. Brown). A standard collision policy does not owe diminished value (Schulmeyer v. State Farm, 2003)."
                     },
                     {
                         "question": "How is diminished value calculated?",
-                        "answer": "The 17c formula starts at 10% of NADA value with adjustments. Independent appraisals produce more accurate figures."
+                        "answer": "Insurers often use the 17c formula: 10% of the car's NADA retail value, reduced by damage and mileage multipliers. It comes from a Georgia class-action injunction, not from law. An independent appraisal based on comparable sales can show a larger loss."
                     },
                     {
                         "question": "How much can I recover?",
-                        "answer": "Newer luxury vehicles: $5K-$20K+. Older vehicles with minor damage: $500-$2,000."
+                        "answer": "It depends on the car's pre-accident value, mileage and how severe the damage was. An independent appraisal based on comparable sales puts a figure on your specific loss."
                     },
                     {
                         "question": "Do I need a lawyer?",
-                        "answer": "For claims under $3K you may handle it yourself. For larger claims or insurer pushback, an attorney negotiates more effectively."
+                        "answer": "Smaller claims can often be handled yourself, including in magistrate court (up to $15,000 in Georgia, rising to $25,000 on January 1, 2027, and $7,500 in South Carolina). For larger claims, structural damage, or an insurer that will not move, a lawyer can make the formal demand that preserves Georgia's bad-faith penalty."
                     }
                 ],
-                "_roden_key_takeaways": "Diminished value claims recover the loss in vehicle market value after repair. Georgia is one of the strongest DV states (State Farm v. Mabry, O.C.G.A. § 33-4-6). SC allows third-party DV claims under S.C. Code § 38-77-30. Independent appraisals beat the 17c formula.",
-                "_roden_last_reviewed": "2026-08-31"
+                "_roden_key_takeaways": "Diminished value claims recover the loss in vehicle market value after repair. Georgia is one of the strongest DV states (State Farm v. Mabry, 2001; O.C.G.A. § 33-4-7). South Carolina allows third-party DV claims (Newman v. Brown) but not under a standard collision policy (Schulmeyer v. State Farm). An independent appraisal is the best answer to an insurer's 17c number.",
+                "_roden_last_reviewed": "2026-10-02",
+                "_roden_meta_description": "Recover your repaired car's lost value in Georgia (4 years to sue) or South Carolina (3 years). How DV claims, the 17c formula and appraisals work."
             }
         },
         "/blog/discovery-process-in-personal-injury-cases/": {
@@ -10942,25 +10945,26 @@
                 "_roden_faqs": [
                     {
                         "question": "Are U-turns legal in Charleston?",
-                        "answer": "They are permitted in many locations but prohibited in others, and signage governs. Illegal U-turns in prohibited areas are one of the most common causes of these collisions and a significant factor in liability."
+                        "answer": "Inside Charleston city limits, a U-turn is allowed only where an official sign authorizes it, and only when it can be made safely without interfering with other traffic (City of Charleston Code § 19-216). Outside the city, South Carolina law allows a U-turn where it is safe and not prohibited by a sign, but never on a curve or near the crest of a hill where approaching drivers cannot see the vehicle within 500 feet (S.C. Code § 56-5-2140). An illegal U-turn is strong evidence of fault in an injury claim."
                     },
                     {
                         "question": "Who has the right of way during a U-turn in South Carolina?",
-                        "answer": "The basic rule places the burden on the driver making the U-turn to yield to oncoming traffic. Intersection-specific scenarios modify that, which is where most right-of-way disputes in these crashes arise."
+                        "answer": "The driver making the U-turn carries the burden: South Carolina law allows the turn only when it can be made safely and without interfering with other traffic (S.C. Code § 56-5-2140(a)). Signals change the picture at intersections — for example, a driver turning right on red must yield to traffic lawfully using the intersection, including a U-turning driver moving on a green arrow (S.C. Code § 56-5-970(C)(3))."
                     },
                     {
-                        "question": "What causes most U-turn crashes?",
+                        "question": "What commonly causes U-turn crashes?",
                         "answer": "A driver failing to notice oncoming traffic at an intersection, poor visibility combined with misjudgment of an approaching vehicle's speed, and U-turns attempted in areas where they are prohibited."
                     },
                     {
                         "question": "Can both drivers share fault in a U-turn crash?",
-                        "answer": "Yes. Where the turning driver misjudged the gap but the oncoming driver was speeding or distracted, fault is divided, and each party's recovery is reduced by their own share of the responsibility."
+                        "answer": "Yes. Where the turning driver misjudged the gap but the oncoming driver was speeding or distracted, fault is divided. Under South Carolina's modified comparative negligence rule, an injured person can recover if they are 50 percent or less at fault, with the award reduced by their share; at 51 percent or more they recover nothing (Nelson v. Concrete Supply Co., 1991)."
                     },
                     {
                         "question": "What evidence proves liability in a U-turn collision?",
                         "answer": "Traffic and business camera footage, independent witness accounts, the damage patterns showing the angle of impact, and any signage at that location prohibiting or expressly permitting the turn."
                     }
-                ]
+                ],
+                "_roden_last_reviewed": "2026-10-02"
             }
         },
         "/blog/valid-premises-liability-claim-georgia/": {
