@@ -1,0 +1,732 @@
+{
+    "generated": "2026-10-02T20:58:17+00:00",
+    "mode": "apply",
+    "fields": [
+        {
+            "post": 3604,
+            "key": "_roden_faqs",
+            "before": [
+                {
+                    "question": "How long do I have to file a car accident claim in Georgia?",
+                    "answer": "In Georgia, you have 2 years from the date of the accident to file a personal injury claim (O.C.G.A. § 9-3-33). In South Carolina, the deadline is 3 years (S.C. Code § 15-3-530). Missing this deadline almost certainly means losing your right to compensation entirely. We strongly recommend consulting with an attorney as soon as possible after your accident to preserve evidence and protect your rights."
+                },
+                {
+                    "question": "What if I was partially at fault for the car accident?",
+                    "answer": "Georgia uses a modified comparative fault rule — you can recover damages as long as you are less than 50% at fault (O.C.G.A. § 51-12-33). South Carolina allows recovery at 50% or less fault (Nelson v. Concrete Supply Co.). In both states, your compensation is reduced proportionally to your share of fault. For example, if you are 30% at fault on a $100,000 claim, you would recover $70,000. Our attorneys work to minimize any fault percentage assigned to you."
+                },
+                {
+                    "question": "How much is my car accident case worth?",
+                    "answer": "The value of a car accident case depends on several factors: the severity of your injuries, total medical expenses (past and future), lost wages, property damage, and the impact on your quality of life. Our firm has recovered settlements and verdicts ranging from tens of thousands to millions of dollars. We provide a free case evaluation to assess the potential value of your specific claim."
+                },
+                {
+                    "question": "Should I talk to the other driver's insurance company?",
+                    "answer": "We strongly advise against giving a recorded statement to the at-fault driver's insurance company without legal representation. Insurance adjusters are trained to ask questions that can be used to minimize or deny your claim. Anything you say can be taken out of context. Let our attorneys handle all communication with insurance companies on your behalf."
+                },
+                {
+                    "question": "Do I need a lawyer for a car accident claim?",
+                    "answer": "While you are not legally required to hire an attorney, studies consistently show that accident victims who hire lawyers recover significantly more compensation than those who negotiate on their own. Insurance companies often make lowball initial offers hoping you will accept before understanding the full extent of your injuries and damages. An experienced attorney levels the playing field."
+                },
+                {
+                    "question": "How much does a car accident lawyer cost?",
+                    "answer": "At Roden Law, we work on a contingency fee basis — you pay nothing upfront and no legal fees unless we win your case. Our fee is a percentage of the recovery we obtain for you. This means there is zero financial risk to you. We also provide free initial consultations to evaluate your case."
+                },
+                {
+                    "question": "What should I do immediately after a car accident?",
+                    "answer": "First, call 911 and seek medical attention, even if injuries seem minor. Document the scene with photos and video. Exchange information with the other driver(s). Get contact information from witnesses. File a police report. Do not admit fault or apologize at the scene. Then contact an experienced car accident attorney before speaking with any insurance company."
+                },
+                {
+                    "question": "How long does a car accident case take to settle?",
+                    "answer": "Most car accident cases settle within 6 to 18 months, depending on the complexity of the case, severity of injuries, and whether liability is disputed. Cases involving serious injuries or multiple parties may take longer. We do not rush settlements — we wait until you have reached maximum medical improvement to ensure we pursue the full value of your claim."
+                },
+                {
+                    "question": "What if the other driver was uninsured or underinsured?",
+                    "answer": "Georgia requires drivers to carry minimum liability coverage of $25,000 per person / $50,000 per accident (O.C.G.A. § 33-7-11). South Carolina requires $25,000 / $50,000 / $25,000 (S.C. Code § 38-77-140). If the at-fault driver lacks adequate coverage, you may be able to recover compensation through your own uninsured/underinsured motorist (UM/UIM) policy. Our attorneys can help you navigate these coverage options."
+                },
+                {
+                    "question": "Can I still file a claim if the accident happened weeks ago?",
+                    "answer": "Yes, as long as you are within the statute of limitations (2 years in Georgia, 3 years in South Carolina). However, evidence can deteriorate over time — surveillance footage gets overwritten, witnesses' memories fade, and physical evidence at the scene may be lost. The sooner you contact an attorney, the stronger your case will be."
+                }
+            ],
+            "after": [
+                {
+                    "question": "How long do I have to file a car accident claim in Georgia?",
+                    "answer": "In Georgia, you have 2 years from the date of the accident to file a personal injury claim (O.C.G.A. § 9-3-33). In South Carolina, the deadline is 3 years (S.C. Code § 15-3-530). Missing this deadline almost certainly means losing your right to compensation entirely. We strongly recommend consulting with an attorney as soon as possible after your accident to preserve evidence and protect your rights."
+                },
+                {
+                    "question": "What if I was partially at fault for the car accident?",
+                    "answer": "Georgia uses a modified comparative fault rule — you can recover damages as long as you are less than 50% at fault (O.C.G.A. § 51-12-33). South Carolina allows recovery at 50% or less fault (Nelson v. Concrete Supply Co.). In both states, your compensation is reduced proportionally to your share of fault. For example, if you are 30% at fault on a $100,000 claim, you would recover $70,000. Our attorneys work to minimize any fault percentage assigned to you."
+                },
+                {
+                    "question": "How much is my car accident case worth?",
+                    "answer": "The value of a car accident case depends on several factors: the severity of your injuries, total medical expenses (past and future), lost wages, property damage, and the impact on your quality of life. Our firm has recovered settlements and verdicts ranging from tens of thousands to millions of dollars. We provide a free case evaluation to assess the potential value of your specific claim."
+                },
+                {
+                    "question": "Should I talk to the other driver's insurance company?",
+                    "answer": "We strongly advise against giving a recorded statement to the at-fault driver's insurance company without legal representation. Insurance adjusters are trained to ask questions that can be used to minimize or deny your claim. Anything you say can be taken out of context. Let our attorneys handle all communication with insurance companies on your behalf."
+                },
+                {
+                    "question": "Do I need a lawyer for a car accident claim?",
+                    "answer": "While you are not legally required to hire an attorney, studies consistently show that accident victims who hire lawyers recover significantly more compensation than those who negotiate on their own. Insurance companies often make lowball initial offers hoping you will accept before understanding the full extent of your injuries and damages. An experienced attorney levels the playing field."
+                },
+                {
+                    "question": "How much does a car accident lawyer cost?",
+                    "answer": "At Roden Law, we work on a contingency fee basis — you pay nothing upfront and no legal fees unless we win your case. Our fee is a percentage of the recovery we obtain for you. Fees and costs are paid only from a recovery: if there is no recovery, you owe no fees and no costs. This means there is zero financial risk to you. We also provide free initial consultations to evaluate your case."
+                },
+                {
+                    "question": "What should I do immediately after a car accident?",
+                    "answer": "First, call 911 and seek medical attention, even if injuries seem minor. Document the scene with photos and video. Exchange information with the other driver(s). Get contact information from witnesses. File a police report. Do not admit fault or apologize at the scene. Then contact an experienced car accident attorney before speaking with any insurance company."
+                },
+                {
+                    "question": "How long does a car accident case take to settle?",
+                    "answer": "Most car accident cases settle within 6 to 18 months, depending on the complexity of the case, severity of injuries, and whether liability is disputed. Cases involving serious injuries or multiple parties may take longer. We do not rush settlements — we wait until you have reached maximum medical improvement to ensure we pursue the full value of your claim."
+                },
+                {
+                    "question": "What if the other driver was uninsured or underinsured?",
+                    "answer": "Georgia requires drivers to carry minimum liability coverage of $25,000 per person / $50,000 per accident (O.C.G.A. § 33-7-11). South Carolina requires $25,000 / $50,000 / $25,000 (S.C. Code § 38-77-140). If the at-fault driver lacks adequate coverage, you may be able to recover compensation through your own uninsured/underinsured motorist (UM/UIM) policy. Our attorneys can help you navigate these coverage options."
+                },
+                {
+                    "question": "Can I still file a claim if the accident happened weeks ago?",
+                    "answer": "Yes, as long as you are within the statute of limitations (2 years in Georgia, 3 years in South Carolina). However, evidence can deteriorate over time — surveillance footage gets overwritten, witnesses' memories fade, and physical evidence at the scene may be lost. The sooner you contact an attorney, the stronger your case will be."
+                }
+            ],
+            "ids": [
+                "F-COST-3604"
+            ]
+        },
+        {
+            "post": 3624,
+            "key": "_roden_faqs",
+            "before": [
+                {
+                    "question": "How much does a Charleston car accident lawyer cost?",
+                    "answer": "Nothing up front. Roden Law handles car accident cases on a contingency fee. The consultation is free, and there is no fee unless we win your case."
+                },
+                {
+                    "question": "How long do I have to file a car accident lawsuit in South Carolina?",
+                    "answer": "Three years from the date of the crash under S.C. Code § 15-3-530. If a government entity is responsible, the deadline is two years under S.C. Code § 15-78-110, or three years if a verified claim was filed with the agency within one year."
+                },
+                {
+                    "question": "Can I still recover if I was partly at fault?",
+                    "answer": "Yes, if you were 50% or less at fault. South Carolina's modified comparative negligence rule (Nelson v. Concrete Supply Co.) reduces your award by your share of fault and bars recovery only above 50%."
+                },
+                {
+                    "question": "What if the driver who hit me was uninsured or drove off?",
+                    "answer": "Your own uninsured motorist coverage, which every South Carolina auto policy must include (S.C. Code § 38-77-150), can pay. For a hit-and-run by an unknown driver, report the crash to police promptly: the claim requires a police report and corroboration that the other vehicle existed (S.C. Code § 38-77-170)."
+                },
+                {
+                    "question": "Where would my Charleston car accident case be filed?",
+                    "answer": "Most Charleston County car accident lawsuits are filed in the Court of Common Pleas at the Charleston County Judicial Center, 100 Broad Street, a few blocks from our King Street office."
+                },
+                {
+                    "question": "Do I need a lawyer if the other insurer already made an offer?",
+                    "answer": "Talk to a lawyer before you accept. A settlement ends your claim, and early offers are often made before the full cost of your injuries is known. A free review costs you nothing."
+                }
+            ],
+            "after": [
+                {
+                    "question": "How much does a Charleston car accident lawyer cost?",
+                    "answer": "Nothing up front. Roden Law handles car accident cases on a contingency fee. The consultation is free, and there is no fee unless we win your case. Fees and costs are paid only from a recovery: if there is no recovery, you owe no fees and no costs."
+                },
+                {
+                    "question": "How long do I have to file a car accident lawsuit in South Carolina?",
+                    "answer": "Three years from the date of the crash under S.C. Code § 15-3-530. If a government entity is responsible, the deadline is two years under S.C. Code § 15-78-110, or three years if a verified claim was filed with the agency within one year."
+                },
+                {
+                    "question": "Can I still recover if I was partly at fault?",
+                    "answer": "Yes, if you were 50% or less at fault. South Carolina's modified comparative negligence rule (Nelson v. Concrete Supply Co.) reduces your award by your share of fault and bars recovery only above 50%."
+                },
+                {
+                    "question": "What if the driver who hit me was uninsured or drove off?",
+                    "answer": "Your own uninsured motorist coverage, which every South Carolina auto policy must include (S.C. Code § 38-77-150), can pay. For a hit-and-run by an unknown driver, report the crash to police promptly: the claim requires a police report and corroboration that the other vehicle existed (S.C. Code § 38-77-170)."
+                },
+                {
+                    "question": "Where would my Charleston car accident case be filed?",
+                    "answer": "Most Charleston County car accident lawsuits are filed in the Court of Common Pleas at the Charleston County Judicial Center, 100 Broad Street, a few blocks from our King Street office."
+                },
+                {
+                    "question": "Do I need a lawyer if the other insurer already made an offer?",
+                    "answer": "Talk to a lawyer before you accept. A settlement ends your claim, and early offers are often made before the full cost of your injuries is known. A free review costs you nothing."
+                }
+            ],
+            "ids": [
+                "F-COST-3624"
+            ]
+        },
+        {
+            "post": 3625,
+            "key": "_roden_faqs",
+            "before": [
+                {
+                    "question": "How much does a Columbia car accident lawyer cost?",
+                    "answer": "Nothing up front. Roden Law handles car accident cases on a contingency fee. The consultation is free, and there is no fee unless we win your case."
+                },
+                {
+                    "question": "How long do I have to file a car accident lawsuit in South Carolina?",
+                    "answer": "Three years from the date of the crash under S.C. Code § 15-3-530. If a government entity is responsible, the deadline is two years under S.C. Code § 15-78-110, or three years if a verified claim was filed with the agency within one year."
+                },
+                {
+                    "question": "Can I still recover if I was partly at fault?",
+                    "answer": "Yes, if you were 50% or less at fault. South Carolina's modified comparative negligence rule (Nelson v. Concrete Supply Co.) reduces your award by your share of fault and bars recovery only above 50%."
+                },
+                {
+                    "question": "What if the driver who hit me was uninsured or drove off?",
+                    "answer": "Your own uninsured motorist coverage, which every South Carolina auto policy must include (S.C. Code § 38-77-150), can pay. For a hit-and-run by an unknown driver, report the crash to police promptly: the claim requires a police report and corroboration that the other vehicle existed (S.C. Code § 38-77-170)."
+                },
+                {
+                    "question": "Where would my Columbia car accident case be filed?",
+                    "answer": "Most Richland County car accident lawsuits are filed in the Court of Common Pleas at the Richland County Judicial Center, 1701 Main Street, near our Sumter Street office. A crash in Lexington County, such as in West Columbia, Cayce or Lexington, may be filed there instead."
+                },
+                {
+                    "question": "Do I need a lawyer if the other insurer already made an offer?",
+                    "answer": "Talk to a lawyer before you accept. A settlement ends your claim, and early offers are often made before the full cost of your injuries is known. A free review costs you nothing."
+                }
+            ],
+            "after": [
+                {
+                    "question": "How much does a Columbia car accident lawyer cost?",
+                    "answer": "Nothing up front. Roden Law handles car accident cases on a contingency fee. The consultation is free, and there is no fee unless we win your case. Fees and costs are paid only from a recovery: if there is no recovery, you owe no fees and no costs."
+                },
+                {
+                    "question": "How long do I have to file a car accident lawsuit in South Carolina?",
+                    "answer": "Three years from the date of the crash under S.C. Code § 15-3-530. If a government entity is responsible, the deadline is two years under S.C. Code § 15-78-110, or three years if a verified claim was filed with the agency within one year."
+                },
+                {
+                    "question": "Can I still recover if I was partly at fault?",
+                    "answer": "Yes, if you were 50% or less at fault. South Carolina's modified comparative negligence rule (Nelson v. Concrete Supply Co.) reduces your award by your share of fault and bars recovery only above 50%."
+                },
+                {
+                    "question": "What if the driver who hit me was uninsured or drove off?",
+                    "answer": "Your own uninsured motorist coverage, which every South Carolina auto policy must include (S.C. Code § 38-77-150), can pay. For a hit-and-run by an unknown driver, report the crash to police promptly: the claim requires a police report and corroboration that the other vehicle existed (S.C. Code § 38-77-170)."
+                },
+                {
+                    "question": "Where would my Columbia car accident case be filed?",
+                    "answer": "Most Richland County car accident lawsuits are filed in the Court of Common Pleas at the Richland County Judicial Center, 1701 Main Street, near our Sumter Street office. A crash in Lexington County, such as in West Columbia, Cayce or Lexington, may be filed there instead."
+                },
+                {
+                    "question": "Do I need a lawyer if the other insurer already made an offer?",
+                    "answer": "Talk to a lawyer before you accept. A settlement ends your claim, and early offers are often made before the full cost of your injuries is known. A free review costs you nothing."
+                }
+            ],
+            "ids": [
+                "F-COST-3625"
+            ]
+        },
+        {
+            "post": 4540,
+            "key": "_roden_faqs",
+            "before": [
+                {
+                    "question": "How much does a North Charleston car accident lawyer cost?",
+                    "answer": "Nothing up front. Roden Law handles car accident cases on a contingency fee. The consultation is free, and there is no fee unless we win your case."
+                },
+                {
+                    "question": "How long do I have to file a car accident lawsuit in South Carolina?",
+                    "answer": "Three years from the date of the crash under S.C. Code § 15-3-530. If a government entity is responsible, the deadline is two years under S.C. Code § 15-78-110, or three years if a verified claim was filed with the agency within one year."
+                },
+                {
+                    "question": "Can I still recover if I was partly at fault?",
+                    "answer": "Yes, if you were 50% or less at fault. South Carolina's modified comparative negligence rule (Nelson v. Concrete Supply Co.) reduces your award by your share of fault and bars recovery only above 50%."
+                },
+                {
+                    "question": "What if the driver who hit me was uninsured or drove off?",
+                    "answer": "Your own uninsured motorist coverage, which every South Carolina auto policy must include (S.C. Code § 38-77-150), can pay. For a hit-and-run by an unknown driver, report the crash to police promptly: the claim requires a police report and corroboration that the other vehicle existed (S.C. Code § 38-77-170)."
+                },
+                {
+                    "question": "Where would my North Charleston car accident case be filed?",
+                    "answer": "Most North Charleston car accident lawsuits are filed in the Charleston County Court of Common Pleas at the Charleston County Judicial Center, 100 Broad Street. North Charleston also reaches into Berkeley and Dorchester counties, and a crash in one of those parts of the city may be filed in that county instead."
+                },
+                {
+                    "question": "Do I need a lawyer if the other insurer already made an offer?",
+                    "answer": "Talk to a lawyer before you accept. A settlement ends your claim, and early offers are often made before the full cost of your injuries is known. A free review costs you nothing."
+                }
+            ],
+            "after": [
+                {
+                    "question": "How much does a North Charleston car accident lawyer cost?",
+                    "answer": "Nothing up front. Roden Law handles car accident cases on a contingency fee. The consultation is free, and there is no fee unless we win your case. Fees and costs are paid only from a recovery: if there is no recovery, you owe no fees and no costs."
+                },
+                {
+                    "question": "How long do I have to file a car accident lawsuit in South Carolina?",
+                    "answer": "Three years from the date of the crash under S.C. Code § 15-3-530. If a government entity is responsible, the deadline is two years under S.C. Code § 15-78-110, or three years if a verified claim was filed with the agency within one year."
+                },
+                {
+                    "question": "Can I still recover if I was partly at fault?",
+                    "answer": "Yes, if you were 50% or less at fault. South Carolina's modified comparative negligence rule (Nelson v. Concrete Supply Co.) reduces your award by your share of fault and bars recovery only above 50%."
+                },
+                {
+                    "question": "What if the driver who hit me was uninsured or drove off?",
+                    "answer": "Your own uninsured motorist coverage, which every South Carolina auto policy must include (S.C. Code § 38-77-150), can pay. For a hit-and-run by an unknown driver, report the crash to police promptly: the claim requires a police report and corroboration that the other vehicle existed (S.C. Code § 38-77-170)."
+                },
+                {
+                    "question": "Where would my North Charleston car accident case be filed?",
+                    "answer": "Most North Charleston car accident lawsuits are filed in the Charleston County Court of Common Pleas at the Charleston County Judicial Center, 100 Broad Street. North Charleston also reaches into Berkeley and Dorchester counties, and a crash in one of those parts of the city may be filed in that county instead."
+                },
+                {
+                    "question": "Do I need a lawyer if the other insurer already made an offer?",
+                    "answer": "Talk to a lawyer before you accept. A settlement ends your claim, and early offers are often made before the full cost of your injuries is known. A free review costs you nothing."
+                }
+            ],
+            "ids": [
+                "F-COST-4540"
+            ]
+        },
+        {
+            "post": 3622,
+            "key": "_roden_faqs",
+            "before": [
+                {
+                    "question": "How much does a Savannah car accident lawyer cost?",
+                    "answer": "Nothing up front. Roden Law handles car accident cases on a contingency fee. The consultation is free, and there is no fee unless we win your case."
+                },
+                {
+                    "question": "How long do I have to file a car accident lawsuit in Georgia?",
+                    "answer": "Two years from the date of the crash for an injury claim under O.C.G.A. § 9-3-33. A claim for damage to your vehicle has four years under O.C.G.A. § 9-3-32."
+                },
+                {
+                    "question": "Can I still recover if I was partly at fault?",
+                    "answer": "Yes, if you were less than 50% at fault. Georgia bars recovery at 50% or more; below that, your award is reduced by your share of fault (O.C.G.A. § 51-12-33)."
+                },
+                {
+                    "question": "What if a city or county vehicle hit me?",
+                    "answer": "Georgia requires written notice before a lawsuit against a government. A claim against a city must be presented within six months of the injury (O.C.G.A. § 36-33-5); against a county, within twelve months (O.C.G.A. § 36-11-1)."
+                },
+                {
+                    "question": "What if the driver who hit me was uninsured?",
+                    "answer": "Your own uninsured motorist coverage may pay. Georgia insurers must offer it (O.C.G.A. § 33-7-11), so check whether your policy includes it."
+                },
+                {
+                    "question": "Where would my Savannah car accident case be filed?",
+                    "answer": "Savannah car accident lawsuits are usually filed at the Chatham County Courthouse, 133 Montgomery Street."
+                }
+            ],
+            "after": [
+                {
+                    "question": "How much does a Savannah car accident lawyer cost?",
+                    "answer": "Nothing up front. Roden Law handles car accident cases on a contingency fee. The consultation is free, and there is no fee unless we win your case. Fees and costs are paid only from a recovery: if there is no recovery, you owe no fees and no costs."
+                },
+                {
+                    "question": "How long do I have to file a car accident lawsuit in Georgia?",
+                    "answer": "Two years from the date of the crash for an injury claim under O.C.G.A. § 9-3-33. A claim for damage to your vehicle has four years under O.C.G.A. § 9-3-32."
+                },
+                {
+                    "question": "Can I still recover if I was partly at fault?",
+                    "answer": "Yes, if you were less than 50% at fault. Georgia bars recovery at 50% or more; below that, your award is reduced by your share of fault (O.C.G.A. § 51-12-33)."
+                },
+                {
+                    "question": "What if a city or county vehicle hit me?",
+                    "answer": "Georgia requires written notice before a lawsuit against a government. A claim against a city must be presented within six months of the injury (O.C.G.A. § 36-33-5); against a county, within twelve months (O.C.G.A. § 36-11-1)."
+                },
+                {
+                    "question": "What if the driver who hit me was uninsured?",
+                    "answer": "Your own uninsured motorist coverage may pay. Georgia insurers must offer it (O.C.G.A. § 33-7-11), so check whether your policy includes it."
+                },
+                {
+                    "question": "Where would my Savannah car accident case be filed?",
+                    "answer": "Savannah car accident lawsuits are usually filed at the Chatham County Courthouse, 133 Montgomery Street."
+                }
+            ],
+            "ids": [
+                "F-COST-3622"
+            ]
+        },
+        {
+            "post": 3629,
+            "key": "_roden_faqs",
+            "before": [
+                {
+                    "question": "How much does a Charleston truck accident lawyer cost?",
+                    "answer": "Nothing up front. Roden Law handles truck accident cases on a contingency fee. The consultation is free, and there is no fee unless we win your case."
+                },
+                {
+                    "question": "How long do I have to file a truck accident lawsuit in South Carolina?",
+                    "answer": "Three years from the date of the crash under S.C. Code § 15-3-530. If a government entity is responsible, the deadline is two years under S.C. Code § 15-78-110, or three years if a verified claim was filed with the agency within one year."
+                },
+                {
+                    "question": "Who can be held responsible for a truck crash?",
+                    "answer": "Often more than the driver. Depending on the facts, the motor carrier, a freight broker, the shipper or loader, and the company that maintained the truck can all share responsibility."
+                },
+                {
+                    "question": "Can I still recover if I was partly at fault?",
+                    "answer": "Yes, if you were 50% or less at fault. South Carolina's modified comparative negligence rule (Nelson v. Concrete Supply Co.) reduces your award by your share of fault and bars recovery only above 50%."
+                },
+                {
+                    "question": "What if the truck belonged to the city, the county or SCDOT?",
+                    "answer": "The South Carolina Tort Claims Act applies. Suit must be filed within two years (S.C. Code § 15-78-110), or three years if a verified claim is first filed with the agency within one year (S.C. Code § 15-78-80). Recovery is capped at $300,000 per person and $600,000 per occurrence, with no punitive damages (S.C. Code § 15-78-120)."
+                },
+                {
+                    "question": "What evidence matters most after a truck crash?",
+                    "answer": "The truck's electronic logging data, dashcam and other video, maintenance and inspection records, and the carrier's driver files. Some of it can be overwritten or discarded, so it should be requested in writing as early as possible."
+                }
+            ],
+            "after": [
+                {
+                    "question": "How much does a Charleston truck accident lawyer cost?",
+                    "answer": "Nothing up front. Roden Law handles truck accident cases on a contingency fee. The consultation is free, and there is no fee unless we win your case. Fees and costs are paid only from a recovery: if there is no recovery, you owe no fees and no costs."
+                },
+                {
+                    "question": "How long do I have to file a truck accident lawsuit in South Carolina?",
+                    "answer": "Three years from the date of the crash under S.C. Code § 15-3-530. If a government entity is responsible, the deadline is two years under S.C. Code § 15-78-110, or three years if a verified claim was filed with the agency within one year."
+                },
+                {
+                    "question": "Who can be held responsible for a truck crash?",
+                    "answer": "Often more than the driver. Depending on the facts, the motor carrier, a freight broker, the shipper or loader, and the company that maintained the truck can all share responsibility."
+                },
+                {
+                    "question": "Can I still recover if I was partly at fault?",
+                    "answer": "Yes, if you were 50% or less at fault. South Carolina's modified comparative negligence rule (Nelson v. Concrete Supply Co.) reduces your award by your share of fault and bars recovery only above 50%."
+                },
+                {
+                    "question": "What if the truck belonged to the city, the county or SCDOT?",
+                    "answer": "The South Carolina Tort Claims Act applies. Suit must be filed within two years (S.C. Code § 15-78-110), or three years if a verified claim is first filed with the agency within one year (S.C. Code § 15-78-80). Recovery is capped at $300,000 per person and $600,000 per occurrence, with no punitive damages (S.C. Code § 15-78-120)."
+                },
+                {
+                    "question": "What evidence matters most after a truck crash?",
+                    "answer": "The truck's electronic logging data, dashcam and other video, maintenance and inspection records, and the carrier's driver files. Some of it can be overwritten or discarded, so it should be requested in writing as early as possible."
+                }
+            ],
+            "ids": [
+                "F-COST-3629"
+            ]
+        },
+        {
+            "post": 3627,
+            "key": "_roden_faqs",
+            "before": [
+                {
+                    "question": "How much does a Savannah truck accident lawyer cost?",
+                    "answer": "Nothing up front. Roden Law handles truck accident cases on a contingency fee. The consultation is free, and there is no fee unless we win your case."
+                },
+                {
+                    "question": "How long do I have to file a truck accident lawsuit in Georgia?",
+                    "answer": "Two years from the date of the crash for an injury claim under O.C.G.A. § 9-3-33. A claim for damage to your vehicle has four years under O.C.G.A. § 9-3-32."
+                },
+                {
+                    "question": "Who can be held responsible for a truck crash?",
+                    "answer": "Often more than the driver. Depending on the facts, the motor carrier, a freight broker, the shipper or loader, and the company that maintained the truck can all share responsibility."
+                },
+                {
+                    "question": "Can I still recover if I was partly at fault?",
+                    "answer": "Yes, if you were less than 50% at fault. Georgia bars recovery at 50% or more; below that, your award is reduced by your share of fault (O.C.G.A. § 51-12-33)."
+                },
+                {
+                    "question": "What if the truck belonged to a city or county?",
+                    "answer": "Georgia requires written notice before a lawsuit against a government. A claim against a city must be presented within six months of the injury (O.C.G.A. § 36-33-5); against a county, within twelve months (O.C.G.A. § 36-11-1)."
+                },
+                {
+                    "question": "What evidence matters most after a truck crash?",
+                    "answer": "The truck's electronic logging data, dashcam and other video, maintenance and inspection records, and the carrier's driver files. Some of it can be overwritten or discarded, so it should be requested in writing as early as possible."
+                }
+            ],
+            "after": [
+                {
+                    "question": "How much does a Savannah truck accident lawyer cost?",
+                    "answer": "Nothing up front. Roden Law handles truck accident cases on a contingency fee. The consultation is free, and there is no fee unless we win your case. Fees and costs are paid only from a recovery: if there is no recovery, you owe no fees and no costs."
+                },
+                {
+                    "question": "How long do I have to file a truck accident lawsuit in Georgia?",
+                    "answer": "Two years from the date of the crash for an injury claim under O.C.G.A. § 9-3-33. A claim for damage to your vehicle has four years under O.C.G.A. § 9-3-32."
+                },
+                {
+                    "question": "Who can be held responsible for a truck crash?",
+                    "answer": "Often more than the driver. Depending on the facts, the motor carrier, a freight broker, the shipper or loader, and the company that maintained the truck can all share responsibility."
+                },
+                {
+                    "question": "Can I still recover if I was partly at fault?",
+                    "answer": "Yes, if you were less than 50% at fault. Georgia bars recovery at 50% or more; below that, your award is reduced by your share of fault (O.C.G.A. § 51-12-33)."
+                },
+                {
+                    "question": "What if the truck belonged to a city or county?",
+                    "answer": "Georgia requires written notice before a lawsuit against a government. A claim against a city must be presented within six months of the injury (O.C.G.A. § 36-33-5); against a county, within twelve months (O.C.G.A. § 36-11-1)."
+                },
+                {
+                    "question": "What evidence matters most after a truck crash?",
+                    "answer": "The truck's electronic logging data, dashcam and other video, maintenance and inspection records, and the carrier's driver files. Some of it can be overwritten or discarded, so it should be requested in writing as early as possible."
+                }
+            ],
+            "ids": [
+                "F-COST-3627"
+            ]
+        },
+        {
+            "post": 4873,
+            "key": "_roden_faqs",
+            "before": [
+                {
+                    "question": "¿Qué debo hacer después de un accidente de auto?",
+                    "answer": "Llame al 911 y busque atención médica de inmediato, aunque se sienta bien — algunas lesiones tardan días en manifestarse. Si puede, tome fotos de la escena, obtenga los datos del otro conductor y de los testigos, y no admita culpa. No firme nada de la aseguradora antes de hablar con un abogado."
+                },
+                {
+                    "question": "¿Cuánto vale mi caso de accidente de auto?",
+                    "answer": "Cada caso es diferente. El valor depende de sus gastos médicos, salarios perdidos, la gravedad de sus lesiones y el dolor y sufrimiento que ha padecido. Ningún abogado puede garantizarle un resultado, pero en una consulta gratuita podemos evaluar los factores de su caso."
+                },
+                {
+                    "question": "¿Qué pasa si el otro conductor no tiene seguro?",
+                    "answer": "Todavía puede tener opciones. Su propia póliza puede incluir cobertura de motorista sin seguro o con seguro insuficiente (UM/UIM), que aplica precisamente en estas situaciones. Nuestros abogados revisan todas las pólizas disponibles para identificar cada fuente de compensación."
+                },
+                {
+                    "question": "¿Cuánto cuesta contratar a Roden Law?",
+                    "answer": "Nada por adelantado. Trabajamos con honorarios de contingencia: solo cobramos un porcentaje si recuperamos dinero para usted. Si no ganamos, no nos debe honorarios. La consulta inicial es siempre gratuita."
+                },
+                {
+                    "question": "¿Cuánto tiempo tengo para presentar una demanda?",
+                    "answer": "En Georgia, el plazo general es de 2 años (O.C.G.A. § 9-3-33) desde la fecha del accidente. En Carolina del Sur es de 3 años (S.C. Code § 15-3-530). Actúe pronto: la evidencia clave puede perderse en semanas."
+                },
+                {
+                    "question": "¿Qué pasa si yo tuve parte de la culpa del accidente?",
+                    "answer": "Todavía puede recuperar dinero. Georgia usa una regla de negligencia comparativa modificada: usted puede recuperar daños siempre que su responsabilidad sea menor al 50% (O.C.G.A. § 51-12-33). En Carolina del Sur puede recuperar si su culpa es del 50% o menos (Nelson v. Concrete Supply Co.). En los dos estados su compensación se reduce en proporción a su porcentaje de culpa; por ejemplo, si le asignan 30% de la culpa en un reclamo de $100,000, usted recuperaría $70,000. Las aseguradoras casi siempre intentan exagerar la responsabilidad de la víctima, y nuestros abogados trabajan para reducir al mínimo el porcentaje que le atribuyan a usted."
+                },
+                {
+                    "question": "¿Debo hablar con la aseguradora del otro conductor?",
+                    "answer": "No sin representación legal. Recomendamos enfáticamente no dar una declaración grabada a la aseguradora del conductor culpable sin tener un abogado. Los ajustadores están entrenados para hacer preguntas cuyas respuestas después se usan para minimizar o negar su reclamo, y cualquier cosa que usted diga puede sacarse de contexto. Deje que nuestros abogados manejen toda la comunicación con las compañías de seguros por usted. Atendemos en español, de modo que usted nunca tendrá que negociar ni firmar nada en un idioma que no domine."
+                },
+                {
+                    "question": "¿Necesito un abogado para un reclamo por accidente de auto?",
+                    "answer": "La ley no lo obliga a contratar a un abogado, pero los estudios muestran de forma consistente que las víctimas representadas por un abogado recuperan mucho más indemnización que quienes negocian por su cuenta. Las aseguradoras suelen hacer una primera oferta muy baja con la esperanza de que usted la acepte antes de conocer el alcance completo de sus lesiones y de sus pérdidas económicas. Un abogado con experiencia empareja la cancha y también evita que usted firme un acuerdo por mucho menos de lo que le corresponde. En Roden Law la consulta es gratis, lo atendemos en español y no cobramos honorarios a menos que ganemos su caso."
+                },
+                {
+                    "question": "¿Cuánto tarda en resolverse un caso de accidente de auto?",
+                    "answer": "La mayoría de los casos de accidente de auto se resuelven entre 6 y 18 meses, según la complejidad del caso, la gravedad de las lesiones y si la otra parte disputa la responsabilidad. Los casos con lesiones serias o con varias partes involucradas pueden tardar más. Nosotros no apresuramos los acuerdos: esperamos hasta que usted alcance su mejoría médica máxima para asegurarnos de reclamar el valor completo de su caso, incluyendo el tratamiento que todavía va a necesitar."
+                },
+                {
+                    "question": "¿Puedo presentar un reclamo si el accidente ocurrió hace varias semanas?",
+                    "answer": "Sí, siempre que esté dentro del plazo de prescripción: 2 años en Georgia (O.C.G.A. § 9-3-33) y 3 años en Carolina del Sur (S.C. Code § 15-3-530). Sin embargo, la evidencia se deteriora con el tiempo: los videos de vigilancia se borran o se graban encima, la memoria de los testigos se desvanece y las huellas físicas en la escena desaparecen. Mientras antes hable con un abogado, más fuerte será su caso. Si no está seguro de cuál plazo le aplica, llámenos y se lo explicamos en español, sin costo."
+                }
+            ],
+            "after": [
+                {
+                    "question": "¿Qué debo hacer después de un accidente de auto?",
+                    "answer": "Llame al 911 y busque atención médica de inmediato, aunque se sienta bien — algunas lesiones tardan días en manifestarse. Si puede, tome fotos de la escena, obtenga los datos del otro conductor y de los testigos, y no admita culpa. No firme nada de la aseguradora antes de hablar con un abogado."
+                },
+                {
+                    "question": "¿Cuánto vale mi caso de accidente de auto?",
+                    "answer": "Cada caso es diferente. El valor depende de sus gastos médicos, salarios perdidos, la gravedad de sus lesiones y el dolor y sufrimiento que ha padecido. Ningún abogado puede garantizarle un resultado, pero en una consulta gratuita podemos evaluar los factores de su caso."
+                },
+                {
+                    "question": "¿Qué pasa si el otro conductor no tiene seguro?",
+                    "answer": "Todavía puede tener opciones. Su propia póliza puede incluir cobertura de motorista sin seguro o con seguro insuficiente (UM/UIM), que aplica precisamente en estas situaciones. Nuestros abogados revisan todas las pólizas disponibles para identificar cada fuente de compensación."
+                },
+                {
+                    "question": "¿Cuánto cuesta contratar a Roden Law?",
+                    "answer": "Nada por adelantado. Trabajamos con honorarios de contingencia: solo cobramos un porcentaje si recuperamos dinero para usted. Sin recuperación, no nos debe honorarios ni costos. La consulta inicial es siempre gratuita."
+                },
+                {
+                    "question": "¿Cuánto tiempo tengo para presentar una demanda?",
+                    "answer": "En Georgia, el plazo general es de 2 años (O.C.G.A. § 9-3-33) desde la fecha del accidente. En Carolina del Sur es de 3 años (S.C. Code § 15-3-530). Actúe pronto: la evidencia clave puede perderse en semanas."
+                },
+                {
+                    "question": "¿Qué pasa si yo tuve parte de la culpa del accidente?",
+                    "answer": "Todavía puede recuperar dinero. Georgia usa una regla de negligencia comparativa modificada: usted puede recuperar daños siempre que su responsabilidad sea menor al 50% (O.C.G.A. § 51-12-33). En Carolina del Sur puede recuperar si su culpa es del 50% o menos (Nelson v. Concrete Supply Co.). En los dos estados su compensación se reduce en proporción a su porcentaje de culpa; por ejemplo, si le asignan 30% de la culpa en un reclamo de $100,000, usted recuperaría $70,000. Las aseguradoras casi siempre intentan exagerar la responsabilidad de la víctima, y nuestros abogados trabajan para reducir al mínimo el porcentaje que le atribuyan a usted."
+                },
+                {
+                    "question": "¿Debo hablar con la aseguradora del otro conductor?",
+                    "answer": "No sin representación legal. Recomendamos enfáticamente no dar una declaración grabada a la aseguradora del conductor culpable sin tener un abogado. Los ajustadores están entrenados para hacer preguntas cuyas respuestas después se usan para minimizar o negar su reclamo, y cualquier cosa que usted diga puede sacarse de contexto. Deje que nuestros abogados manejen toda la comunicación con las compañías de seguros por usted. Atendemos en español, de modo que usted nunca tendrá que negociar ni firmar nada en un idioma que no domine."
+                },
+                {
+                    "question": "¿Necesito un abogado para un reclamo por accidente de auto?",
+                    "answer": "La ley no lo obliga a contratar a un abogado, pero los estudios muestran de forma consistente que las víctimas representadas por un abogado recuperan mucho más indemnización que quienes negocian por su cuenta. Las aseguradoras suelen hacer una primera oferta muy baja con la esperanza de que usted la acepte antes de conocer el alcance completo de sus lesiones y de sus pérdidas económicas. Un abogado con experiencia empareja la cancha y también evita que usted firme un acuerdo por mucho menos de lo que le corresponde. En Roden Law la consulta es gratis, lo atendemos en español y no cobramos honorarios a menos que ganemos su caso."
+                },
+                {
+                    "question": "¿Cuánto tarda en resolverse un caso de accidente de auto?",
+                    "answer": "La mayoría de los casos de accidente de auto se resuelven entre 6 y 18 meses, según la complejidad del caso, la gravedad de las lesiones y si la otra parte disputa la responsabilidad. Los casos con lesiones serias o con varias partes involucradas pueden tardar más. Nosotros no apresuramos los acuerdos: esperamos hasta que usted alcance su mejoría médica máxima para asegurarnos de reclamar el valor completo de su caso, incluyendo el tratamiento que todavía va a necesitar."
+                },
+                {
+                    "question": "¿Puedo presentar un reclamo si el accidente ocurrió hace varias semanas?",
+                    "answer": "Sí, siempre que esté dentro del plazo de prescripción: 2 años en Georgia (O.C.G.A. § 9-3-33) y 3 años en Carolina del Sur (S.C. Code § 15-3-530). Sin embargo, la evidencia se deteriora con el tiempo: los videos de vigilancia se borran o se graban encima, la memoria de los testigos se desvanece y las huellas físicas en la escena desaparecen. Mientras antes hable con un abogado, más fuerte será su caso. Si no está seguro de cuál plazo le aplica, llámenos y se lo explicamos en español, sin costo."
+                }
+            ],
+            "ids": [
+                "F-COST-4873"
+            ]
+        },
+        {
+            "post": 3605,
+            "key": "_roden_faqs",
+            "before": [
+                {
+                    "question": "How is a truck accident case different from a car accident case?",
+                    "answer": "Truck accident cases are far more complex than car accidents. They involve federal FMCSA regulations, multiple potentially liable parties (driver, trucking company, cargo loader, maintenance provider), larger insurance policies ($750,000 to $5 million minimum), electronic logging device (ELD) data, and aggressive corporate defense teams. The severity of injuries is typically much greater due to the massive size and weight difference between commercial trucks and passenger vehicles."
+                },
+                {
+                    "question": "Who can be held liable in a truck accident?",
+                    "answer": "Multiple parties may share liability: the truck driver (for negligence, fatigue, or impairment), the trucking company (for negligent hiring, training, or supervision), the cargo loading company (for improperly secured loads), the maintenance provider (for brake or tire failures), the truck or parts manufacturer (for defective components), and even the shipper (for pressuring unrealistic delivery schedules). Our attorneys investigate all potential sources of liability and insurance coverage."
+                },
+                {
+                    "question": "How long do I have to file a truck accident claim in Georgia or South Carolina?",
+                    "answer": "In Georgia, you have 2 years from the date of the accident to file a personal injury claim (O.C.G.A. § 9-3-33). In South Carolina, the deadline is 3 years (S.C. Code § 15-3-530). However, acting quickly is critical in truck accident cases because trucking companies may only be required to retain electronic logging data for 6 months and other records may be destroyed if a litigation hold is not issued promptly."
+                },
+                {
+                    "question": "What evidence is important in a truck accident case?",
+                    "answer": "Critical evidence includes: the truck driver's electronic logging device (ELD) records showing hours of service, the driver's qualification file and employment history, drug and alcohol test results, the truck's maintenance and inspection records, the event data recorder (black box) data, cargo manifests and weight tickets, dashcam or surveillance footage, and the trucking company's safety rating and prior violations from the FMCSA SAFER database."
+                },
+                {
+                    "question": "What are FMCSA hours-of-service rules?",
+                    "answer": "Federal hours-of-service (HOS) regulations limit how long commercial truck drivers can operate. Drivers may drive a maximum of 11 hours after 10 consecutive hours off duty, cannot drive beyond the 14th consecutive hour after coming on duty, and must take a 30-minute break after 8 cumulative hours of driving. Violations of these rules — often caused by pressure from dispatchers to meet delivery deadlines — are a leading cause of fatigued driving accidents."
+                },
+                {
+                    "question": "How much is my truck accident case worth?",
+                    "answer": "Truck accident cases typically involve significantly higher compensation than car accidents due to the severity of injuries and the larger insurance policies carried by commercial carriers (federal law requires a minimum of $750,000 in liability coverage). Our firm has recovered multi-million dollar settlements and verdicts in truck accident cases. The value depends on medical expenses, lost income, permanent disability, pain and suffering, and the degree of the trucking company's negligence."
+                },
+                {
+                    "question": "Should I accept the trucking company's settlement offer?",
+                    "answer": "No. Trucking companies and their insurers often make early settlement offers before you understand the full extent of your injuries, specifically to limit their exposure. These initial offers are almost always far below the true value of your claim. Our attorneys will not recommend a settlement until you have reached maximum medical improvement and we have fully evaluated all current and future damages, including long-term care needs."
+                },
+                {
+                    "question": "What if the truck driver was an independent contractor?",
+                    "answer": "Trucking companies sometimes classify drivers as independent contractors to avoid liability. However, courts in Georgia and South Carolina apply tests that look at the actual level of control the company exercises over the driver — including setting routes, schedules, and work requirements. Even if a driver is classified as a contractor, the trucking company may still be held vicariously liable. Our attorneys investigate the true employment relationship."
+                },
+                {
+                    "question": "What is a truck underride accident?",
+                    "answer": "An underride accident occurs when a smaller vehicle slides beneath the trailer of a commercial truck, often shearing off the roof of the passenger vehicle. These are among the most deadly types of truck accidents. Federal regulations require rear underride guards on trailers, but side underride guards are not yet mandated. If an underride guard was missing, improperly maintained, or failed on impact, the trucking company or manufacturer may bear additional liability."
+                },
+                {
+                    "question": "Do truck accident cases go to trial?",
+                    "answer": "While most truck accident cases settle before trial, our attorneys prepare every case as if it will go to court. Trucking companies and their insurers are more likely to offer fair settlements when they know the opposing attorneys have trial experience and are willing to take the case before a jury. If a fair settlement cannot be reached, we are fully prepared to litigate your case to verdict."
+                }
+            ],
+            "after": [
+                {
+                    "question": "How is a truck accident case different from a car accident case?",
+                    "answer": "Truck accident cases are far more complex than car accidents. They involve federal FMCSA regulations, multiple potentially liable parties (driver, trucking company, cargo loader, maintenance provider), larger insurance policies ($750,000 to $5 million minimum), electronic logging device (ELD) data, and aggressive corporate defense teams. The severity of injuries is typically much greater due to the massive size and weight difference between commercial trucks and passenger vehicles."
+                },
+                {
+                    "question": "Who can be held liable in a truck accident?",
+                    "answer": "Multiple parties may share liability: the truck driver (for negligence, fatigue, or impairment), the trucking company (for negligent hiring, training, or supervision), the cargo loading company (for improperly secured loads), the maintenance provider (for brake or tire failures), the truck or parts manufacturer (for defective components), and even the shipper (for pressuring unrealistic delivery schedules). Our attorneys investigate all potential sources of liability and insurance coverage."
+                },
+                {
+                    "question": "How long do I have to file a truck accident claim in Georgia or South Carolina?",
+                    "answer": "In Georgia, you have 2 years from the date of the accident to file a personal injury claim (O.C.G.A. § 9-3-33). In South Carolina, the deadline is 3 years (S.C. Code § 15-3-530). However, acting quickly is critical in truck accident cases because trucking companies may only be required to retain electronic logging data for 6 months and other records may be destroyed if a litigation hold is not issued promptly."
+                },
+                {
+                    "question": "What evidence is important in a truck accident case?",
+                    "answer": "Critical evidence includes: the truck driver's electronic logging device (ELD) records showing hours of service, the driver's qualification file and employment history, drug and alcohol test results, the truck's maintenance and inspection records, the event data recorder (black box) data, cargo manifests and weight tickets, dashcam or surveillance footage, and the trucking company's safety rating and prior violations from the FMCSA SAFER database."
+                },
+                {
+                    "question": "What are FMCSA hours-of-service rules?",
+                    "answer": "Federal hours-of-service (HOS) regulations limit how long commercial truck drivers can operate. Drivers may drive a maximum of 11 hours after 10 consecutive hours off duty, cannot drive beyond the 14th consecutive hour after coming on duty, and must take a 30-minute break after 8 cumulative hours of driving. Violations of these rules — often caused by pressure from dispatchers to meet delivery deadlines — are a leading cause of fatigued driving accidents."
+                },
+                {
+                    "question": "How much is my truck accident case worth?",
+                    "answer": "Truck accident cases typically involve significantly higher compensation than car accidents due to the severity of injuries and the larger insurance policies carried by commercial carriers (federal law requires a minimum of $750,000 in liability coverage). Our firm has recovered multi-million dollar settlements and verdicts in truck accident cases. The value depends on medical expenses, lost income, permanent disability, pain and suffering, and the degree of the trucking company's negligence."
+                },
+                {
+                    "question": "How much does a truck accident lawyer cost?",
+                    "answer": "Nothing up front. Roden Law handles truck accident cases on a contingency fee: our fee is a percentage of the recovery we obtain for you. The consultation is free, and fees and costs are paid only from a recovery: if there is no recovery, you owe no fees and no costs."
+                },
+                {
+                    "question": "Should I accept the trucking company's settlement offer?",
+                    "answer": "No. Trucking companies and their insurers often make early settlement offers before you understand the full extent of your injuries, specifically to limit their exposure. These initial offers are almost always far below the true value of your claim. Our attorneys will not recommend a settlement until you have reached maximum medical improvement and we have fully evaluated all current and future damages, including long-term care needs."
+                },
+                {
+                    "question": "What if the truck driver was an independent contractor?",
+                    "answer": "Trucking companies sometimes classify drivers as independent contractors to avoid liability. However, courts in Georgia and South Carolina apply tests that look at the actual level of control the company exercises over the driver — including setting routes, schedules, and work requirements. Even if a driver is classified as a contractor, the trucking company may still be held vicariously liable. Our attorneys investigate the true employment relationship."
+                },
+                {
+                    "question": "What is a truck underride accident?",
+                    "answer": "An underride accident occurs when a smaller vehicle slides beneath the trailer of a commercial truck, often shearing off the roof of the passenger vehicle. These are among the most deadly types of truck accidents. Federal regulations require rear underride guards on trailers, but side underride guards are not yet mandated. If an underride guard was missing, improperly maintained, or failed on impact, the trucking company or manufacturer may bear additional liability."
+                },
+                {
+                    "question": "Do truck accident cases go to trial?",
+                    "answer": "While most truck accident cases settle before trial, our attorneys prepare every case as if it will go to court. Trucking companies and their insurers are more likely to offer fair settlements when they know the opposing attorneys have trial experience and are willing to take the case before a jury. If a fair settlement cannot be reached, we are fully prepared to litigate your case to verdict."
+                }
+            ],
+            "ids": [
+                "F-ADD-EN"
+            ]
+        },
+        {
+            "post": 4874,
+            "key": "_roden_faqs",
+            "before": [
+                {
+                    "question": "¿Quién es responsable en un accidente de camión?",
+                    "answer": "Puede haber varias partes responsables: el conductor, la compañía de transporte, el dueño del remolque, la empresa que cargó la mercancía o el taller de mantenimiento. Identificar a todas las partes es clave, porque cada una puede tener una póliza de seguro distinta."
+                },
+                {
+                    "question": "¿En qué se diferencia de un accidente de auto?",
+                    "answer": "Los camiones comerciales están sujetos a regulaciones federales de la FMCSA sobre horas de servicio, mantenimiento e inspecciones. Además, las pólizas de seguro son mucho más grandes y las aseguradoras defienden estos casos con más agresividad. Se necesita un abogado con experiencia específica en camiones."
+                },
+                {
+                    "question": "¿Qué evidencia es importante en mi caso?",
+                    "answer": "La caja negra del camión, los registros de horas del conductor, los datos de GPS, el historial de mantenimiento, el informe policial y los videos de cámaras. Gran parte de esta evidencia está en manos de la compañía de transporte y puede borrarse si un abogado no exige su preservación de inmediato."
+                },
+                {
+                    "question": "La aseguradora ya me ofreció dinero. ¿Debo aceptar?",
+                    "answer": "No firme nada antes de consultar a un abogado. Las primeras ofertas casi siempre son mucho menores que el valor real del caso, y al aceptar usted renuncia a reclamar más — incluso si sus lesiones resultan más graves de lo que pensaba. La consulta con nosotros es gratuita."
+                },
+                {
+                    "question": "¿Cuánto tiempo tengo para demandar?",
+                    "answer": "En Georgia, generalmente 2 años (O.C.G.A. § 9-3-33); en Carolina del Sur, 3 años (S.C. Code § 15-3-530). Pero en casos de camiones conviene actuar en días, no meses, para preservar la evidencia electrónica."
+                },
+                {
+                    "question": "¿Qué son las reglas federales de horas de servicio de la FMCSA?",
+                    "answer": "Las reglas federales de horas de servicio (HOS) limitan cuánto tiempo puede manejar un conductor de camión comercial. Un conductor puede manejar un máximo de 11 horas después de 10 horas consecutivas fuera de servicio, no puede manejar más allá de la hora 14 consecutiva desde que entró en servicio y debe tomar un descanso de 30 minutos después de 8 horas acumuladas de manejo. Las violaciones de estas reglas —muchas veces por la presión de los despachadores para cumplir con los tiempos de entrega— son una de las principales causas de accidentes por fatiga del conductor."
+                },
+                {
+                    "question": "¿Cuánto vale mi caso de accidente de camión?",
+                    "answer": "Los casos de camiones normalmente resultan en una compensación bastante mayor que los de autos, por la gravedad de las lesiones y por las pólizas más grandes que cargan las empresas de transporte comercial (la ley federal exige un mínimo de $750,000 de cobertura de responsabilidad). Nuestra firma ha recuperado acuerdos y veredictos de varios millones de dólares en casos de camiones. El valor de su caso depende de los gastos médicos, los ingresos perdidos, la discapacidad permanente, el dolor y sufrimiento y el grado de negligencia de la empresa transportista. Su estatus migratorio no le impide reclamar una compensación y no se lo preguntamos en su consulta gratis."
+                },
+                {
+                    "question": "¿Qué pasa si el conductor del camión era contratista independiente?",
+                    "answer": "Las empresas de transporte a veces clasifican a sus conductores como contratistas independientes para evitar responsabilidad, pero esa etiqueta no siempre las protege. Los tribunales de Georgia y de Carolina del Sur aplican pruebas que examinan el control real que la empresa ejerce sobre el conductor, incluyendo si le fija las rutas, los horarios y los requisitos de trabajo. Aunque el conductor esté clasificado como contratista, la empresa transportista todavía puede responder de forma indirecta por sus actos. Nuestros abogados investigan cuál era la verdadera relación laboral."
+                },
+                {
+                    "question": "¿Qué es un accidente de empotramiento bajo el remolque (“underride”)?",
+                    "answer": "Un accidente de “underride” ocurre cuando un vehículo más pequeño se mete debajo del remolque de un camión comercial, muchas veces arrancando el techo del vehículo de pasajeros. Son de los accidentes de camión más mortales que existen. Las regulaciones federales exigen barras de protección traseras en los remolques, pero todavía no exigen protecciones laterales. Si la barra de protección faltaba, no recibía el mantenimiento debido o falló en el impacto, la empresa transportista o el fabricante pueden tener responsabilidad adicional."
+                },
+                {
+                    "question": "¿Los casos de accidentes de camión llegan a juicio?",
+                    "answer": "La mayoría de los casos de camiones se resuelven mediante un acuerdo antes del juicio, pero nuestros abogados preparan cada caso como si fuera a presentarse ante un jurado. Las empresas transportistas y sus aseguradoras tienden a ofrecer acuerdos más justos cuando saben que del otro lado hay abogados con experiencia en juicios y disposición de llevar el caso hasta el final. Si no se logra un acuerdo justo, estamos completamente preparados para litigar su caso hasta el veredicto."
+                }
+            ],
+            "after": [
+                {
+                    "question": "¿Quién es responsable en un accidente de camión?",
+                    "answer": "Puede haber varias partes responsables: el conductor, la compañía de transporte, el dueño del remolque, la empresa que cargó la mercancía o el taller de mantenimiento. Identificar a todas las partes es clave, porque cada una puede tener una póliza de seguro distinta."
+                },
+                {
+                    "question": "¿En qué se diferencia de un accidente de auto?",
+                    "answer": "Los camiones comerciales están sujetos a regulaciones federales de la FMCSA sobre horas de servicio, mantenimiento e inspecciones. Además, las pólizas de seguro son mucho más grandes y las aseguradoras defienden estos casos con más agresividad. Se necesita un abogado con experiencia específica en camiones."
+                },
+                {
+                    "question": "¿Qué evidencia es importante en mi caso?",
+                    "answer": "La caja negra del camión, los registros de horas del conductor, los datos de GPS, el historial de mantenimiento, el informe policial y los videos de cámaras. Gran parte de esta evidencia está en manos de la compañía de transporte y puede borrarse si un abogado no exige su preservación de inmediato."
+                },
+                {
+                    "question": "La aseguradora ya me ofreció dinero. ¿Debo aceptar?",
+                    "answer": "No firme nada antes de consultar a un abogado. Las primeras ofertas casi siempre son mucho menores que el valor real del caso, y al aceptar usted renuncia a reclamar más — incluso si sus lesiones resultan más graves de lo que pensaba. La consulta con nosotros es gratuita."
+                },
+                {
+                    "question": "¿Cuánto tiempo tengo para demandar?",
+                    "answer": "En Georgia, generalmente 2 años (O.C.G.A. § 9-3-33); en Carolina del Sur, 3 años (S.C. Code § 15-3-530). Pero en casos de camiones conviene actuar en días, no meses, para preservar la evidencia electrónica."
+                },
+                {
+                    "question": "¿Qué son las reglas federales de horas de servicio de la FMCSA?",
+                    "answer": "Las reglas federales de horas de servicio (HOS) limitan cuánto tiempo puede manejar un conductor de camión comercial. Un conductor puede manejar un máximo de 11 horas después de 10 horas consecutivas fuera de servicio, no puede manejar más allá de la hora 14 consecutiva desde que entró en servicio y debe tomar un descanso de 30 minutos después de 8 horas acumuladas de manejo. Las violaciones de estas reglas —muchas veces por la presión de los despachadores para cumplir con los tiempos de entrega— son una de las principales causas de accidentes por fatiga del conductor."
+                },
+                {
+                    "question": "¿Cuánto vale mi caso de accidente de camión?",
+                    "answer": "Los casos de camiones normalmente resultan en una compensación bastante mayor que los de autos, por la gravedad de las lesiones y por las pólizas más grandes que cargan las empresas de transporte comercial (la ley federal exige un mínimo de $750,000 de cobertura de responsabilidad). Nuestra firma ha recuperado acuerdos y veredictos de varios millones de dólares en casos de camiones. El valor de su caso depende de los gastos médicos, los ingresos perdidos, la discapacidad permanente, el dolor y sufrimiento y el grado de negligencia de la empresa transportista. Su estatus migratorio no le impide reclamar una compensación y no se lo preguntamos en su consulta gratis."
+                },
+                {
+                    "question": "¿Cuánto cuesta un abogado de accidentes de camión?",
+                    "answer": "Nada por adelantado. Roden Law maneja los casos de accidentes de camión con honorarios de contingencia: nuestros honorarios son un porcentaje de lo que recuperemos para usted. La consulta es gratuita, y los honorarios y costos se pagan solo si hay una recuperación. Sin recuperación, no nos debe honorarios ni costos."
+                },
+                {
+                    "question": "¿Qué pasa si el conductor del camión era contratista independiente?",
+                    "answer": "Las empresas de transporte a veces clasifican a sus conductores como contratistas independientes para evitar responsabilidad, pero esa etiqueta no siempre las protege. Los tribunales de Georgia y de Carolina del Sur aplican pruebas que examinan el control real que la empresa ejerce sobre el conductor, incluyendo si le fija las rutas, los horarios y los requisitos de trabajo. Aunque el conductor esté clasificado como contratista, la empresa transportista todavía puede responder de forma indirecta por sus actos. Nuestros abogados investigan cuál era la verdadera relación laboral."
+                },
+                {
+                    "question": "¿Qué es un accidente de empotramiento bajo el remolque (“underride”)?",
+                    "answer": "Un accidente de “underride” ocurre cuando un vehículo más pequeño se mete debajo del remolque de un camión comercial, muchas veces arrancando el techo del vehículo de pasajeros. Son de los accidentes de camión más mortales que existen. Las regulaciones federales exigen barras de protección traseras en los remolques, pero todavía no exigen protecciones laterales. Si la barra de protección faltaba, no recibía el mantenimiento debido o falló en el impacto, la empresa transportista o el fabricante pueden tener responsabilidad adicional."
+                },
+                {
+                    "question": "¿Los casos de accidentes de camión llegan a juicio?",
+                    "answer": "La mayoría de los casos de camiones se resuelven mediante un acuerdo antes del juicio, pero nuestros abogados preparan cada caso como si fuera a presentarse ante un jurado. Las empresas transportistas y sus aseguradoras tienden a ofrecer acuerdos más justos cuando saben que del otro lado hay abogados con experiencia en juicios y disposición de llevar el caso hasta el final. Si no se logra un acuerdo justo, estamos completamente preparados para litigar su caso hasta el veredicto."
+                }
+            ],
+            "ids": [
+                "F-ADD-ES"
+            ]
+        }
+    ]
+}
