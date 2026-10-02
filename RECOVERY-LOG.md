@@ -3184,3 +3184,17 @@ title as alt. All 68 reviewed on contact sheets; two regenerated calmer (SC wron
 submerged car; Grand Strand fatal crash report showed heavy wreckage). Attached via
 bin/attach-resource-images.php (17 runs, dry-run first, read-back). Now 81/81. Prompts and alts:
 docs/backups/resource-images-manifest-2026-10-01.json. Cost about $12.
+
+## 2026-10-02 — Ashley Phosphate & I-26: two posts merged onto the stronger URL
+
+Owner: "merge this and do the 301", then "Keep 4337's URL" once the evidence was in. Search Console, 16 months
+(2025-06-01 to 2026-09-30): 4337 (/blog/ashley-phosphate-road-i-26-dangerous-intersection-charleston/) 28 clicks /
+4,339 impressions, pos 8.9, ranking for 93 queries the other never reached ("ashley phosphate road" 361 impressions);
+4624 (/blog/ashley-phosphate-i-26-south-carolinas-deadliest-intersection/) 20 / 1,610, pos 7.6, 16 queries of its
+own; last quarter 8 vs 5 clicks. 4624's slug ("deadliest") is false on the 2024 SCDPS data. 4624's
+freshness-verified body, excerpt, Key Takeaways, FAQs, meta description, jurisdiction, review stamp and title were
+copied onto 4337 (bin/merge-ashley-phosphate-4624-into-4337.php; backups in
+docs/freshness/2026-10-02-merge-4624-into-4337/); 4337 keeps its slug and publish date. Pre-flight: no published
+page links to 4624 (19 references, all drafts or revisions); no meta or option references. The redirect ships in
+roden_ashley_phosphate_fold_urls(); 4624 is retired to draft after deploy. 4337's old body linked 11 internal
+pages the merged body does not (listed in the merge README).
