@@ -1,0 +1,888 @@
+{
+ "postId": 1793,
+ "slug": "dangerous-savannah-intersections",
+ "liveUrl": "https://rodenlaw.com/blog/dangerous-savannah-intersections/",
+ "jurisdiction": "GA",
+ "researchedAt": "2026-10-02",
+ "verifiedClaims": [
+  {
+   "surface": "title",
+   "claim": "The Most Dangerous Intersections and Roads in Savannah, Georgia: What Drivers Need to Know",
+   "verdict": "update",
+   "currentValue": "No agency publishes a 'most dangerous' ranking for Savannah. The post's list reproduces WTOC's May 2018 analysis of 2017 crash reports (Abercorn & White Bluff and I-16 & Chatham Parkway tied No. 1; then King George & Abercorn, Abercorn & Rio Road, DeRenne & Truman Parkway, MLK & 37th). The newest count-based list is Bike Walk Savannah's analysis of GDOT data for 2023 (Savannah Morning News, Jan. 2025): 10 intersections had 428 of 7,975 crashes; the top were I-16 at Dean Forest Road, Chatham Parkway and I-516, plus Abercorn at White Bluff Road, the Abercorn extension near Truman Parkway and Abercorn at East DeRenne Avenue. The City of Savannah paused crash-rate ranking in 2022 (SMN). Severity-based lists (Chatham County SS4A, 2025) cover unincorporated Chatham only.",
+   "sourceName": "Savannah Morning News (Drew Favakeh, Jan. 26, 2025), \"Pedestrian-related crashes increasing in Savannah\" — Bike Walk Savannah analysis of GDOT crash data, 2023 (Yahoo News syndication)",
+   "sourceUrl": "https://www.yahoo.com/news/pedestrian-related-crashes-increasing-savannah-100739487.html",
+   "retrievedAt": "2026-10-02",
+   "note": "NOT a patcher-editable surface (title is not in body.html) — for the owner. 'Most Dangerous' is defensible only as 'highest-crash by count' and only for the 2023 list (I-16 interchanges, Abercorn at White Bluff/DeRenne/Truman extension). Suggested title: 'Savannah's Highest-Crash Intersections and Roads: What Drivers Need to Know' (or keep and date the source: 'Savannah's Most Crash-Prone Intersections (2023 Crash Data)'). Same verdict pattern as facts-3553/4624."
+  },
+  {
+   "surface": "excerpt",
+   "claim": "Savannah's most crash-prone intersections and roads, what makes each dangerous, and your options if you are injured on one.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Savannah Morning News (Drew Favakeh, Jan. 26, 2025), \"Pedestrian-related crashes increasing in Savannah\" — Bike Walk Savannah analysis of GDOT crash data, 2023 (Yahoo News syndication)",
+   "sourceUrl": "https://www.yahoo.com/news/pedestrian-related-crashes-increasing-savannah-100739487.html",
+   "retrievedAt": "2026-10-02",
+   "note": "'Most crash-prone' is a count claim and is supportable for the 2023 GDOT-data list. Published as the Article description. Keep, provided the body's list is aligned with the 2023 data (see body entries)."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Savannah's most dangerous intersections — including Abercorn and White Bluff, I-16 at Chatham Parkway, and DeRenne at Truman Parkway — produce hundreds of crashes annually.",
+   "verdict": "update",
+   "currentValue": "2023 (Bike Walk Savannah, GDOT data): the 10 highest-crash intersections recorded 428 of Savannah's 7,975 crashes (~5%); the top ones were I-16 at Dean Forest Road, Chatham Parkway and I-516, plus Abercorn Street at White Bluff Road, the Abercorn extension near Truman Parkway and Abercorn at East DeRenne Avenue. DeRenne at Truman Parkway appears only in WTOC's 2017-data list.",
+   "sourceName": "Savannah Morning News (Drew Favakeh, Jan. 26, 2025), \"Pedestrian-related crashes increasing in Savannah\" — Bike Walk Savannah analysis of GDOT crash data, 2023 (Yahoo News syndication)",
+   "sourceUrl": "https://www.yahoo.com/news/pedestrian-related-crashes-increasing-savannah-100739487.html",
+   "retrievedAt": "2026-10-02",
+   "note": "The Key Takeaways box renders above the article. Suggested: \"Savannah's highest-crash intersections — including I-16 at Dean Forest Road and Chatham Parkway and Abercorn Street at White Bluff Road — accounted for 428 of the city's 7,975 crashes in 2023, according to a Bike Walk Savannah analysis of GDOT data.\""
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Georgia's two-year statute of limitations (O.C.G.A. § 9-3-33) and modified comparative fault rule (O.C.G.A. § 51-12-33) govern how victims can recover compensation for injuries caused by red-light running, distracted driving, and poor road design across Chatham County.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia Code § 9-3-33 (Justia; verified in facts-4715/4539)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Both rules verified (two years; recovery barred at 50% or more, award reduced by own share; § 51-12-33 bar unchanged by 2025 SB 68). Georgia has no general discovery rule for crash injuries. Note that 'poor road design' claims also carry government notice deadlines (6 months city § 36-33-5; 12 months county § 36-11-1; 12 months state § 50-21-26) — see FAQ 6."
+  },
+  {
+   "surface": "faq:0",
+   "claim": "The intersection of Abercorn Street and White Bluff Road is consistently ranked as Savannah's most dangerous intersection, producing the highest number of crashes and injury-related hospital transports in Chatham County.",
+   "verdict": "update",
+   "currentValue": "True for 2017 data only: WTOC (May 2018) found Abercorn & White Bluff had the most accidents and 'the most trips to the hospital', tied with I-16 & Chatham Parkway. In 2023 the I-16 interchanges (Dean Forest Road, Chatham Parkway, I-516) led; Abercorn & White Bluff remained among the 10 highest-crash intersections (SMN/Bike Walk Savannah). It is one of only four Savannah red-light-camera intersections (GDOT 2024 report).",
+   "sourceName": "Savannah Morning News (Drew Favakeh, Jan. 26, 2025), \"Pedestrian-related crashes increasing in Savannah\" — Bike Walk Savannah analysis of GDOT crash data, 2023 (Yahoo News syndication)",
+   "sourceUrl": "https://www.yahoo.com/news/pedestrian-related-crashes-increasing-savannah-100739487.html",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. Suggested answer: \"By crash count, the I-16 interchanges at Dean Forest Road, Chatham Parkway and I-516 and Abercorn Street at White Bluff Road were among Savannah's highest-crash intersections in 2023, according to a Bike Walk Savannah analysis of Georgia DOT data. In a 2018 WTOC analysis of 2017 crash reports, Abercorn at White Bluff tied I-16 at Chatham Parkway for the most crashes and had the most hospital transports.\" Also update the FAQ question if the title changes ('most dangerous' → 'highest-crash')."
+  },
+  {
+   "surface": "faq:0",
+   "claim": "Other high-risk intersections include I-16 at Chatham Parkway, King George Boulevard at Abercorn Street, and DeRenne Avenue at Truman Parkway.",
+   "verdict": "update",
+   "currentValue": "King George Boulevard at SR 204/Abercorn Street was replaced by a grade-separated interchange that opened in December 2017 ($28.5M, GDOT), after the WTOC data year; the segment of King George Blvd between Mariners Way and the SR 204 ramps is still on Chatham County's SS4A list (4 serious-injury crashes 2018–2022). DeRenne at Truman Parkway is an interchange and appears only in the 2017-data list. 2023 list adds Abercorn at East DeRenne Avenue and the Abercorn extension near Truman Parkway.",
+   "sourceName": "GDOT FY 2018 Accountability and Investment Report, p. 34 — SR 204/Abercorn Street interchange at King George Boulevard",
+   "sourceUrl": "https://www.dot.ga.gov/PartnerSmart/Public/Documents/publications/Investment%20Report/2018InvestmentReport.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Suggested: 'Other high-crash locations include I-16 at Dean Forest Road and at I-516, Abercorn Street at East DeRenne Avenue, and the Abercorn Street extension near Truman Parkway.'"
+  },
+  {
+   "surface": "faq:1",
+   "claim": "Under Georgia law, the police report and your medical records become critical evidence in your injury claim.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "OCGA Title 40 (UniCourt mirror of the official code)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Evidentiary-practice statement, not a statute; harmless. Optional precision: Georgia law (O.C.G.A. § 40-6-273) requires reporting any crash with injury, death, or apparent property damage of $500 or more to police."
+  },
+  {
+   "surface": "faq:2",
+   "claim": "Under O.C.G.A. § 9-3-33, you have two years from the date of your accident to file a personal injury lawsuit in Georgia.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia Code § 9-3-33 (Justia; verified in facts-4715/4539)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified."
+  },
+  {
+   "surface": "faq:2",
+   "claim": "South Carolina allows three years under S.C. Code § 15-3-530.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md — Jurisdiction rules (single-state pages show only that state's law); facts-4539 / facts-4715 precedent",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "SC law on a Georgia-only Savannah post — delete. Accurate in itself, but it makes the page two-state (would require the SC reviewer). FAQ answers publish as FAQPage structured data, so this is published twice."
+  },
+  {
+   "surface": "faq:3",
+   "claim": "Georgia follows a modified comparative fault rule under O.C.G.A. § 51-12-33, which allows you to recover compensation as long as you are less than 50% at fault for the accident.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia Code § 51-12-33 (Justia; verified in facts-4715/1780)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "§ 51-12-33(g): no recovery at 50% or more. Unchanged by SB 68."
+  },
+  {
+   "surface": "faq:3",
+   "claim": "For example, if you are 20% at fault and your damages total $100,000, your recovery would be $80,000.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia Code § 51-12-33 (Justia; verified in facts-4715/1780)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Arithmetic correct (§ 51-12-33(a) reduction). Illustrative dollar figures."
+  },
+  {
+   "surface": "faq:4",
+   "claim": "Abercorn Street is Savannah's most dangerous road corridor because it carries enormous traffic volumes through heavily commercialized areas with constant turning movements, driveway conflicts, and inadequate traffic infrastructure.",
+   "verdict": "update",
+   "currentValue": "No agency ranks Savannah corridors. Sourced: Abercorn holds three of the 2023 top-10 crash locations (White Bluff Road, East DeRenne Avenue, the extension near Truman Parkway) and all four of Savannah's red-light-camera intersections (White Bluff, Mall Blvd, DeRenne, Montgomery Cross Road); SR 204 between King George Blvd and Veterans Pkwy is a pedestrian fatal/serious-injury cluster in Chatham County's SS4A plan.",
+   "sourceName": "Savannah Morning News (Drew Favakeh, Jan. 26, 2025), \"Pedestrian-related crashes increasing in Savannah\" — Bike Walk Savannah analysis of GDOT crash data, 2023 (Yahoo News syndication)",
+   "sourceUrl": "https://www.yahoo.com/news/pedestrian-related-crashes-increasing-savannah-100739487.html",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage. Change 'is Savannah's most dangerous road corridor because it carries' to 'is one of Savannah's highest-crash corridors: it carries'. Optionally add 'All four of Savannah's red-light-camera intersections are on Abercorn (GDOT, 2024).'"
+  },
+  {
+   "surface": "faq:4",
+   "claim": "Multiple intersections along Abercorn — including White Bluff Road, King George Boulevard, Rio Road, and Victory Drive — rank among the city's most crash-prone locations.",
+   "verdict": "update",
+   "currentValue": "Sourced Abercorn locations: White Bluff Road (2017 and 2023 lists), East DeRenne Avenue and the extension near Truman Parkway (2023 list); Rio Road (2017 list only); King George (2017 list, before the Dec. 2017 interchange). Victory Drive appears in no crash ranking found.",
+   "sourceName": "Savannah Morning News (Drew Favakeh, Jan. 26, 2025), \"Pedestrian-related crashes increasing in Savannah\" — Bike Walk Savannah analysis of GDOT crash data, 2023 (Yahoo News syndication)",
+   "sourceUrl": "https://www.yahoo.com/news/pedestrian-related-crashes-increasing-savannah-100739487.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Replace the list with 'including White Bluff Road, East DeRenne Avenue and the stretch near Truman Parkway'. Drop Victory Drive."
+  },
+  {
+   "surface": "faq:5",
+   "claim": "If a government entity's failure to properly design, maintain, or signal an intersection contributed to your crash, you may have a claim against the City of Savannah, Chatham County, or the Georgia Department of Transportation.",
+   "verdict": "update",
+   "currentValue": "Cities: liable for street defects only with actual or inferable notice (O.C.G.A. § 32-4-93(a)). Counties are 'not liable to suit for any cause of action unless made so by statute' (§ 36-1-4) — largely immune for road defects. State (GDOT) claims fall under the Georgia Tort Claims Act, which excludes discretionary design functions.",
+   "sourceName": "Georgia Code §§ 36-33-5, 36-11-1, 50-21-26, 32-4-93, 36-1-4 (verified in facts-2479/4715)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-36/provisions-applicable-to-municipal-corporations-only/chapter-33/section-36-33-5/",
+   "retrievedAt": "2026-10-02",
+   "note": "Keep the City and GDOT; qualify Chatham County: '...against the City of Savannah or the Georgia Department of Transportation (Chatham County is largely immune from road-defect suits).' Same finding as facts-2479."
+  },
+  {
+   "surface": "faq:5",
+   "claim": "These claims have strict notice requirements and shortened filing deadlines, so consulting an attorney promptly is essential.",
+   "verdict": "update",
+   "currentValue": "Written ante-litem notice: City of Savannah within 6 months (O.C.G.A. § 36-33-5); Chatham County claims presented within 12 months (§ 36-11-1); State/GDOT notice within 12 months (§ 50-21-26). The lawsuit deadline itself is not shortened — it is the notice that comes first.",
+   "sourceName": "Georgia Code §§ 36-33-5, 36-11-1, 50-21-26, 32-4-93, 36-1-4 (verified in facts-2479/4715)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-36/provisions-applicable-to-municipal-corporations-only/chapter-33/section-36-33-5/",
+   "retrievedAt": "2026-10-02",
+   "note": "Replace with: 'These claims require written notice first — within 6 months for the City of Savannah (O.C.G.A. § 36-33-5) and 12 months for Chatham County (§ 36-11-1) or the State (§ 50-21-26) — so consulting an attorney promptly is essential.'"
+  },
+  {
+   "surface": "body",
+   "claim": "According to the Georgia Department of Transportation, Chatham County consistently ranks among the top five Georgia counties for total traffic collisions, and the most dangerous time for intersection crashes in Savannah falls between noon and 6:00 PM.",
+   "verdict": "update",
+   "currentValue": "No GDOT publication states either claim. GDOT's dashboard publishes no county ranking. Sourced substitutes: Chatham County recorded 39 traffic deaths in 2023, sixth among Georgia counties (GOHS/NHTSA STSI; 30–40 a year 2019–2023). The noon–6 p.m. claim comes from WTOC's 2018 analysis of 2017 reports ('almost half of the dangerous wrecks' happened noon to 6 p.m.). Secondary compilations of GOHS 2024 data put Chatham at 13,593 crashes, behind the four big metro-Atlanta counties — consistent with 'top five' but no primary GOHS/GDOT table was retrievable.",
+   "sourceName": "GOHS / NHTSA — Traffic Safety Facts Georgia 2019–2023 (State Traffic Safety Information), top-10 counties by fatalities",
+   "sourceUrl": "https://www.gahighwaysafety.org/wp-content/uploads/2025/04/Pages-from-Georgia-_STSI_Report.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Suggested: 'Chatham County recorded 39 traffic deaths in 2023, the sixth-most of any Georgia county (GOHS), and a WTOC analysis of Savannah crash reports found almost half of the serious intersection crashes happened between noon and 6 p.m.' Drop the GDOT attribution."
+  },
+  {
+   "surface": "body",
+   "claim": "the legal concept of negligence",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "LII Wex — negligence",
+   "sourceUrl": "https://www.law.cornell.edu/wex/negligence",
+   "retrievedAt": "2026-10-02",
+   "note": "External link resolves (200)."
+  },
+  {
+   "surface": "body",
+   "claim": "The city's rapid suburban growth — particularly along the Abercorn Street and DeRenne Avenue corridors — has pushed traffic volumes well beyond what these roads were originally designed to handle.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "Chatham County Safe Streets for All Safety Action Plan (Pond & Company / Heath & Lineback, January 2025; unincorporated Chatham County, AASHTOWare Safety (Numetric) crash data 2018–2022), Appendix C safety analysis",
+   "sourceUrl": "https://engineering.chathamcountyga.gov/Projects/ViewFile/64328398-4f2c-4db1-b56d-9681fd914964/Chatham%20County_Action%20Plan.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "No volume-to-capacity source. DeRenne is an established Midtown arterial, not suburban growth (the City's DeRenne Boulevard project addresses its congestion). Soften: 'Growth along the Abercorn Street corridor has pushed heavy traffic onto roads such as Abercorn and DeRenne Avenue.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Many Savannah intersections lack protected left-turn signals, dedicated turn lanes, or modern traffic control systems.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "CORE MPO (Chatham MPC) — TIP amendment report, Dec. 18, 2024: City of Savannah 37th Street Safety Improvements, $9.9M SS4A grant, 15 intersections",
+   "sourceUrl": "https://www.thempc.org/docs/lit/CoreMpo/Latest/2024/TIP%20Amendment%20Final%20Report%20-%2012-18-2024%20-%20Final.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Supported: the City's $9.9M SS4A 37th Street project adds 'dedicated left turns with protected phasing' and updated signals at 15 intersections."
+  },
+  {
+   "surface": "body",
+   "claim": "Savannah attracts more than 14 million visitors annually",
+   "verdict": "update",
+   "currentValue": "12.9 million visitors in 2024 (7.2 million overnight, 5.7 million day), $4.1 billion visitor spending (Visit Savannah / Tourism Economics via Savannah Area Chamber); 2025 Visit Savannah figures show the same 7.2M + 5.7M.",
+   "sourceName": "Savannah Area Chamber — Tourism (2024: 12.9 million visitors, 7.2 million overnight and 5.7 million day visitors; Visit Savannah / Tourism Economics)",
+   "sourceUrl": "https://www.savannahchamber.com/economic-development/tourism/",
+   "retrievedAt": "2026-10-02",
+   "note": "Change to 'Savannah drew about 12.9 million visitors in 2024'. visitsavannah.com returns 403 to curl; the Chamber page resolves."
+  },
+  {
+   "surface": "body",
+   "claim": "Tourists distracted by GPS navigation, unfamiliar lane configurations, and the city's unique one-way street patterns contribute to a significant share of intersection collisions, particularly in the Midtown and Southside corridors.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "Savannah Morning News (Drew Favakeh, Jan. 26, 2025), \"Pedestrian-related crashes increasing in Savannah\" — Bike Walk Savannah analysis of GDOT crash data, 2023 (Yahoo News syndication)",
+   "sourceUrl": "https://www.yahoo.com/news/pedestrian-related-crashes-increasing-savannah-100739487.html",
+   "retrievedAt": "2026-10-02",
+   "note": "No source quantifies tourist-caused crashes. Savannah's one-way grid is downtown (Historic District), not Midtown/Southside. Suggested: 'Visitors unfamiliar with the downtown one-way grid and the Southside's multi-lane commercial corridors add to the risk.'"
+  },
+  {
+   "surface": "body",
+   "claim": "hydroplaning is a common contributing factor in rear-end and broadside crashes at Savannah's busiest crossroads.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "No crash-factor source for Savannah. Change 'is a common contributing factor' to 'can contribute to'."
+  },
+  {
+   "surface": "body",
+   "claim": "Based on crash data compiled by the Georgia Department of Transportation and local law enforcement, these Savannah intersections consistently produce the highest number of collisions, injuries, and fatalities.",
+   "verdict": "update",
+   "currentValue": "The eight-item list is WTOC's May 2018 analysis of 2017 Savannah crash reports (six intersections) plus two additions (Ogeechee/Chatham Pkwy, Abercorn/Victory) not in that list. No source ranks them by fatalities. Latest data (2023, Bike Walk Savannah from GDOT): I-16 at Dean Forest Road, Chatham Parkway and I-516; Abercorn at White Bluff Road; Abercorn extension near Truman Parkway; Abercorn at East DeRenne Avenue. The City of Savannah could not provide an intersection list and paused crash-rate ranking in 2022.",
+   "sourceName": "WTOC, \"WTOC Investigates: Breaking down Savannah's most dangerous intersections\" (May 16, 2018; analysis of 2017 Savannah intersection crash reports)",
+   "sourceUrl": "https://www.wtoc.com/story/38207746/wtoc-investigates-breaking-down-savannahs-most-dangerous-intersections/",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'A 2018 WTOC analysis of Savannah crash reports and a 2025 Bike Walk Savannah review of 2023 Georgia DOT crash data both point to the same handful of locations, led by the I-16 interchanges and the Abercorn Street corridor.' Drop 'and fatalities'."
+  },
+  {
+   "surface": "body",
+   "claim": "This intersection has earned the unwanted distinction of being Savannah's single most dangerous crossroads.",
+   "verdict": "update",
+   "currentValue": "Tied No. 1 (with I-16/Chatham Parkway) in WTOC's 2017-data analysis; in 2023 among the top 10 by count, behind the I-16 interchanges.",
+   "sourceName": "WTOC, \"WTOC Investigates: Breaking down Savannah's most dangerous intersections\" (May 16, 2018; analysis of 2017 Savannah intersection crash reports)",
+   "sourceUrl": "https://www.wtoc.com/story/38207746/wtoc-investigates-breaking-down-savannahs-most-dangerous-intersections/",
+   "retrievedAt": "2026-10-02",
+   "note": "Change to 'In WTOC's analysis of 2017 crash reports, this intersection tied for the most crashes in Savannah, and it remained among the city's highest-crash intersections in 2023.'"
+  },
+  {
+   "surface": "body",
+   "claim": "It consistently leads the city in total crashes and produces more injury-related hospital transports than any other intersection in Chatham County.",
+   "verdict": "update",
+   "currentValue": "WTOC (2017 data): most accidents and 'the most trips to the hospital' — in Savannah, not Chatham County. Not the leader in 2023.",
+   "sourceName": "WTOC, \"WTOC Investigates: Breaking down Savannah's most dangerous intersections\" (May 16, 2018; analysis of 2017 Savannah intersection crash reports)",
+   "sourceUrl": "https://www.wtoc.com/story/38207746/wtoc-investigates-breaking-down-savannahs-most-dangerous-intersections/",
+   "retrievedAt": "2026-10-02",
+   "note": "Change to 'In 2017 it also had the most crash-related hospital trips of any Savannah intersection (WTOC).' 'Consistently' and 'Chatham County' are unsupported."
+  },
+  {
+   "surface": "body",
+   "claim": "The convergence of heavy commercial traffic from Oglethorpe Mall, residential traffic from the White Bluff corridor",
+   "verdict": "keep",
+   "currentValue": "Abercorn St (SR 204) at White Bluff Road is next to Oglethorpe Mall; it is a Savannah red-light-camera intersection (NB/SB, permitted 2016; 519 violations in 2024).",
+   "sourceName": "GDOT — 2024 Red Light Running Photo Enforcement annual report (latest published; program page lists 2019–2024 reports)",
+   "sourceUrl": "https://www.dot.ga.gov/DriveSmart/SafetyOperation/SafetyOperation/Red/2024RLRPES_ANNUALREPORT.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Geography verified (OpenStreetMap: intersection at 32.004 N, 81.120 W). Optional: add the red-light camera."
+  },
+  {
+   "surface": "body",
+   "claim": "Rear-end collisions and T-bone crashes are especially common here during the afternoon rush between 4:00 and 6:00 PM.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "WTOC, \"WTOC Investigates: Breaking down Savannah's most dangerous intersections\" (May 16, 2018; analysis of 2017 Savannah intersection crash reports)",
+   "sourceUrl": "https://www.wtoc.com/story/38207746/wtoc-investigates-breaking-down-savannahs-most-dangerous-intersections/",
+   "retrievedAt": "2026-10-02",
+   "note": "No intersection-level crash-type or time source. WTOC's citywide finding is noon–6 p.m. Change to 'Rear-end and T-bone crashes are common here, and citywide almost half of serious intersection wrecks happen between noon and 6 p.m. (WTOC).'"
+  },
+  {
+   "surface": "body",
+   "claim": "Locals have nicknamed I-16 the \"Devil's Highway\" because of its history of high-speed fatal collisions, and the Chatham Parkway interchange sees more than 25,000 vehicles daily.",
+   "verdict": "update",
+   "currentValue": "No source for a 'Devil's Highway' nickname for I-16 (the name belongs to old US 666; AARoads and the 2003 designation call I-16 here the Jim Gillis Historic Savannah Parkway). GDOT counted 59,600 vehicles per day on I-16 between Chatham Parkway (Exit 162) and Dean Forest Road (Exit 160) in 2019 — 25,000 understates it by more than half.",
+   "sourceName": "AARoads — Interstate 16 West guide, Savannah (GDOT counts: 59,600 vpd between Exits 162 and 160 in 2019; Chatham Parkway is a parclo interchange, Exit 162)",
+   "sourceUrl": "https://www.aaroads.com/guides/i-016-west-savannah-ga",
+   "retrievedAt": "2026-10-02",
+   "note": "Replace with: 'I-16 carried about 59,600 vehicles a day between Chatham Parkway and Dean Forest Road in GDOT's 2019 count.' Delete the nickname (it appears only on law-firm pages)."
+  },
+  {
+   "surface": "body",
+   "claim": "The combination of highway-speed merging traffic, short ramp distances, and vehicles abruptly braking to navigate the interchange creates extremely dangerous conditions.",
+   "verdict": "update",
+   "currentValue": "Chatham Parkway is a parclo interchange (Exit 162). GDOT's 16@95 projects widened I-16 to three lanes each direction between I-95 and Chatham Parkway (open 2025) and installed ramp meters on the Chatham Parkway on-ramps.",
+   "sourceName": "GDOT — 16@95 Improvement Projects fact sheet (P.I. 0012757/0012758)",
+   "sourceUrl": "https://www.dot.ga.gov/systems/ProjectDocuments/1695Improvements/16@95%20Improvement%20Projects-Fact%20Sheet.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "'Short ramp distances' is unsourced. Suggested: 'Merging at highway speed and sudden braking at the interchange create real risk; GDOT has added ramp meters on the Chatham Parkway on-ramps and a third lane on I-16 in each direction.'"
+  },
+  {
+   "surface": "body",
+   "claim": "I-16 serves as Savannah's primary freight route connecting the Port of Savannah to Interstate 95 and points west.",
+   "verdict": "update",
+   "currentValue": "GDOT calls I-16/I-95 'one of Georgia's busiest freight corridors as well as the gateway to Georgia's growing port'. GPA routes I-95-bound port trucks over the Jimmy DeLoach Parkway (facts-4715); I-16 is the port's westbound route.",
+   "sourceName": "GDOT — 16@95 Improvement Projects fact sheet (P.I. 0012757/0012758)",
+   "sourceUrl": "https://www.dot.ga.gov/systems/ProjectDocuments/1695Improvements/16@95%20Improvement%20Projects-Fact%20Sheet.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Change to 'I-16 is one of Georgia's busiest freight corridors, carrying Port of Savannah traffic west toward Macon and to I-95.'"
+  },
+  {
+   "surface": "body",
+   "claim": "This Southside intersection consistently ranks in the top three for accident frequency in Savannah.",
+   "verdict": "update",
+   "currentValue": "No. 3 in WTOC's 2017-data list, when King George Blvd met Abercorn at a signal. GDOT replaced that signal with a grade-separated interchange that opened in December 2017 ($28.5M). Not on the 2023 top-10 list as reported. Chatham County SS4A (2018–2022): King George Blvd between Mariners Way and the SR 204 ramps had 4 serious-injury crashes (segment rank 3 by crash rate); SR 204 between King George and Veterans Pkwy is a pedestrian fatal/serious-injury cluster.",
+   "sourceName": "GDOT FY 2018 Accountability and Investment Report, p. 34 — SR 204/Abercorn Street interchange at King George Boulevard",
+   "sourceUrl": "https://www.dot.ga.gov/PartnerSmart/Public/Documents/publications/Investment%20Report/2018InvestmentReport.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Delete 'consistently ranks in the top three' (stale since the interchange). Suggested: 'Chatham County's 2025 safety plan still flags this area: King George Boulevard at the Abercorn ramps, and Abercorn between King George and Veterans Parkway for pedestrian deaths and serious injuries.' The intersection is in unincorporated Chatham (Georgetown), not the City."
+  },
+  {
+   "surface": "body",
+   "claim": "The six-lane Abercorn Street corridor meets the heavily trafficked King George Boulevard near several big-box retail centers, and the resulting traffic congestion produces a high rate of angle collisions and sideswipe crashes.",
+   "verdict": "update",
+   "currentValue": "Since December 2017 King George Blvd crosses SR 204 (Abercorn Street Extension, a divided freeway here) at an interchange; the signalized intersection the paragraph describes no longer exists.",
+   "sourceName": "Wikipedia — Georgia State Route 204 (Abercorn Street Extension: freeway with interchanges at King George Blvd and Veterans Pkwy; 2020 truncation to DeRenne Ave)",
+   "sourceUrl": "https://en.wikipedia.org/wiki/Georgia_State_Route_204",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite to describe the interchange: 'King George Boulevard now meets the Abercorn Street Extension at an interchange (opened 2017), and the ramps and nearby signals remain a crash concern.' Drop 'high rate of angle collisions and sideswipe crashes' (no source)."
+  },
+  {
+   "surface": "body",
+   "claim": "Drivers attempting left turns across multiple lanes of oncoming traffic face particularly dangerous conditions, and pedestrians crossing Abercorn near this intersection are at elevated risk due to the wide roadway and limited crosswalk infrastructure.",
+   "verdict": "update",
+   "currentValue": "Left turns across Abercorn ended with the 2017 interchange. Pedestrian part is sourced: SR 204 between King George Blvd and Veterans Pkwy is a pedestrian fatal/serious-injury cluster, and most pedestrian KSI crashes in unincorporated Chatham occurred where sidewalks were absent (SS4A, 2018–2022).",
+   "sourceName": "Chatham County SS4A Action Plan — Existing Conditions Report (Heath & Lineback, June 2024; Numetric crash data 2018–2022, unincorporated Chatham County)",
+   "sourceUrl": "https://engineering.chathamcountyga.gov/Projects/ViewFile/55eb0de7-4816-4f5e-b84e-40e86c08381f/Chatham%20SS4A%20-%20Existing%20Conditions%20Report.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Delete the left-turn clause; keep the pedestrian clause, e.g. 'Pedestrians crossing Abercorn between King George Boulevard and Veterans Parkway are at elevated risk; Chatham County's safety plan identifies it as a cluster of pedestrian deaths and serious injuries.'"
+  },
+  {
+   "surface": "body",
+   "claim": "The Abercorn/Rio Road intersection, located in one of Savannah's most commercially dense areas, produces a high volume of crashes",
+   "verdict": "update",
+   "currentValue": "No. 4 in WTOC's 2017-data list; not among the 2023 locations named by Bike Walk Savannah/SMN. Intersection exists (Abercorn St at Rio Road, near Savannah Mall).",
+   "sourceName": "WTOC, \"WTOC Investigates: Breaking down Savannah's most dangerous intersections\" (May 16, 2018; analysis of 2017 Savannah intersection crash reports)",
+   "sourceUrl": "https://www.wtoc.com/story/38207746/wtoc-investigates-breaking-down-savannahs-most-dangerous-intersections/",
+   "retrievedAt": "2026-10-02",
+   "note": "Date it: 'was among Savannah's highest-crash intersections in WTOC's analysis of 2017 crash reports'."
+  },
+  {
+   "surface": "body",
+   "claim": "Distracted driving — particularly drivers looking at storefronts or phone navigation — is a significant factor at this intersection.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "WTOC, \"WTOC Investigates: Breaking down Savannah's most dangerous intersections\" (May 16, 2018; analysis of 2017 Savannah intersection crash reports)",
+   "sourceUrl": "https://www.wtoc.com/story/38207746/wtoc-investigates-breaking-down-savannahs-most-dangerous-intersections/",
+   "retrievedAt": "2026-10-02",
+   "note": "No intersection-level source. Savannah's traffic engineer told WTOC distraction is the biggest citywide trend (rear-ends, misjudged left-turn yields). Change 'is a significant factor at this intersection' to 'is the biggest crash trend Savannah's traffic engineers see citywide'."
+  },
+  {
+   "surface": "body",
+   "claim": "DeRenne Avenue serves as Savannah's primary east-west artery through Midtown, and its intersection with the Truman Parkway handles enormous traffic volumes",
+   "verdict": "update",
+   "currentValue": "DeRenne Avenue meets the Truman Parkway at an interchange (Truman Parkway exit list), not an at-grade intersection. DeRenne at Truman is in WTOC's 2017 list only; Abercorn at East DeRenne and the Abercorn extension near Truman are in the 2023 list. DeRenne (SR 21 west of Abercorn) has a red-light camera at Abercorn.",
+   "sourceName": "Wikipedia — Harry S. Truman Parkway (exit list: interchange with DeRenne Avenue)",
+   "sourceUrl": "https://en.wikipedia.org/wiki/Harry_S._Truman_Parkway",
+   "retrievedAt": "2026-10-02",
+   "note": "Change 'its intersection with the Truman Parkway' to 'its interchange with the Truman Parkway'. 'Primary east-west artery' is fair. Consider retitling item 5 'DeRenne Avenue at Abercorn Street and Truman Parkway'."
+  },
+  {
+   "surface": "body",
+   "claim": "The proximity of Memorial Health University Medical Center increases pedestrian traffic in this area",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Memorial Health University Medical Center (4700 Waters Ave, Level I trauma center; facts-4715) sits just off DeRenne between Abercorn and the Truman Parkway. Qualitative."
+  },
+  {
+   "surface": "body",
+   "claim": "This West Savannah intersection becomes especially hazardous during peak commuting hours.",
+   "verdict": "keep",
+   "currentValue": "Chatham County SS4A (2018–2022): US 17/Ogeechee Road at Chatham Parkway — 4 serious-injury crashes, ~42,150 entering vehicles/day, an intersection fatal/serious-injury location; Ogeechee between Chatham Parkway and I-516 is a distracted-driver KSI cluster.",
+   "sourceName": "Chatham County Safe Streets for All Safety Action Plan (Pond & Company / Heath & Lineback, January 2025; unincorporated Chatham County, AASHTOWare Safety (Numetric) crash data 2018–2022), Appendix C safety analysis",
+   "sourceUrl": "https://engineering.chathamcountyga.gov/Projects/ViewFile/64328398-4f2c-4db1-b56d-9681fd914964/Chatham%20County_Action%20Plan.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Supported as a high-risk location (this item is not in the WTOC list but is the best-sourced intersection in the post). Suggested enrichment: 'Chatham County's 2025 safety plan lists Ogeechee Road at Chatham Parkway among its fatal-and-serious-injury intersections, with about 42,000 vehicles entering a day.' 'Peak commuting hours' itself is unsourced but harmless."
+  },
+  {
+   "surface": "body",
+   "claim": "Ogeechee Road carries significant industrial and commercial traffic, including heavy trucks serving the port and warehouse districts.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Chatham County SS4A Action Plan — Existing Conditions Report (Heath & Lineback, June 2024; Numetric crash data 2018–2022, unincorporated Chatham County)",
+   "sourceUrl": "https://engineering.chathamcountyga.gov/Projects/ViewFile/55eb0de7-4816-4f5e-b84e-40e86c08381f/Chatham%20SS4A%20-%20Existing%20Conditions%20Report.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "SS4A: large-truck KSI crashes occur mainly along SR 204 and US 17/Ogeechee Road. Qualitative statement consistent."
+  },
+  {
+   "surface": "body",
+   "claim": "The intersection's geometry forces drivers into complex turning movements, and limited sight distances at certain approach angles increase the risk of broadside collisions.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "Chatham County Safe Streets for All Safety Action Plan (Pond & Company / Heath & Lineback, January 2025; unincorporated Chatham County, AASHTOWare Safety (Numetric) crash data 2018–2022), Appendix C safety analysis",
+   "sourceUrl": "https://engineering.chathamcountyga.gov/Projects/ViewFile/64328398-4f2c-4db1-b56d-9681fd914964/Chatham%20County_Action%20Plan.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "No source describes sight-distance deficiencies here (the SS4A site visit worksheet covers the location but the post's specifics are not traceable). Soften to 'Heavy turning volumes increase the risk of broadside collisions.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Located near the border between Savannah's historic district and Midtown, this intersection sees a mix of local residential traffic, tourist traffic, and commercial vehicles.",
+   "verdict": "keep",
+   "currentValue": "37th Street is in the City's Vision Zero high-injury network and its highest-priority corridor: ~970 crashes 2018–2022; a $9.9M federal SS4A grant funds upgrades at 15 intersections (updated signals, protected left turns, sidewalks, crosswalks).",
+   "sourceName": "CORE MPO (Chatham MPC) — TIP amendment report, Dec. 18, 2024: City of Savannah 37th Street Safety Improvements, $9.9M SS4A grant, 15 intersections",
+   "sourceUrl": "https://www.thempc.org/docs/lit/CoreMpo/Latest/2024/TIP%20Amendment%20Final%20Report%20-%2012-18-2024%20-%20Final.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "MLK Jr. Blvd at W. 37th St verified (OSM). Recommended enrichment: add the 37th Street Vision Zero facts — this is the best-sourced item on the list. savannahga.gov (SS4A 37th Street page, Vision Zero plan) refused curl and Chrome this run; the CORE MPO TIP report resolves."
+  },
+  {
+   "surface": "body",
+   "claim": "8. Abercorn Street and Victory Drive (US-80)",
+   "verdict": "update",
+   "currentValue": "Victory Drive is US 80/SR 26 (correct). This intersection appears in no crash ranking found (WTOC 2017, Bike Walk Savannah 2023, Chatham SS4A, GDOT red-light-camera list).",
+   "sourceName": "WTOC, \"WTOC Investigates: Breaking down Savannah's most dangerous intersections\" (May 16, 2018; analysis of 2017 Savannah intersection crash reports)",
+   "sourceUrl": "https://www.wtoc.com/story/38207746/wtoc-investigates-breaking-down-savannahs-most-dangerous-intersections/",
+   "retrievedAt": "2026-10-02",
+   "note": "H3 heading. Either drop item 8 or reframe it as a busy junction without ranking language. If kept, also fix the next two entries."
+  },
+  {
+   "surface": "body",
+   "claim": "Victory Drive carries high-speed traffic between Savannah's islands and the city's interior",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "US 80 does link the islands (Islands Expressway/Tybee) to the city, but no source supports 'high-speed' on Victory Drive at Abercorn (an urban arterial). Change 'high-speed traffic' to 'heavy traffic'."
+  },
+  {
+   "surface": "body",
+   "claim": "Wrongful death cases arising from crashes at this intersection are not uncommon.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "No source; implies a fatality record at Abercorn/Victory that nothing documents. Delete (keep the wrongful-death link elsewhere if wanted)."
+  },
+  {
+   "surface": "body",
+   "claim": "Abercorn Street is Savannah's most dangerous road, period.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "Savannah Morning News (Drew Favakeh, Jan. 26, 2025), \"Pedestrian-related crashes increasing in Savannah\" — Bike Walk Savannah analysis of GDOT crash data, 2023 (Yahoo News syndication)",
+   "sourceUrl": "https://www.yahoo.com/news/pedestrian-related-crashes-increasing-savannah-100739487.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Unsourced superlative. Change to 'Abercorn Street is one of Savannah's highest-crash roads.' (Three of the 2023 top-10 crash locations and all four red-light cameras are on Abercorn.)"
+  },
+  {
+   "surface": "body",
+   "claim": "the corridor as a whole produces more crashes per mile than any other road in Chatham County.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "GDOT — Crash Data & Reporting (Crash Data Dashboard; publishes no county or intersection ranking)",
+   "sourceUrl": "https://www.dot.ga.gov/GDOT/Pages/CrashReporting.aspx",
+   "retrievedAt": "2026-10-02",
+   "note": "No crashes-per-mile ranking exists in GDOT, City or County publications; the County SS4A covers only unincorporated roads. Delete the clause."
+  },
+  {
+   "surface": "body",
+   "claim": "As the primary east-west route through Midtown Savannah, DeRenne handles commuter traffic that regularly exceeds the road's design capacity.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "No capacity study cited. Change 'regularly exceeds the road's design capacity' to 'is often congested'."
+  },
+  {
+   "surface": "body",
+   "claim": "The 4:00 PM to 6:00 PM rush hour window is particularly dangerous along this corridor.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "WTOC, \"WTOC Investigates: Breaking down Savannah's most dangerous intersections\" (May 16, 2018; analysis of 2017 Savannah intersection crash reports)",
+   "sourceUrl": "https://www.wtoc.com/story/38207746/wtoc-investigates-breaking-down-savannahs-most-dangerous-intersections/",
+   "retrievedAt": "2026-10-02",
+   "note": "No DeRenne time-of-day data. Use the sourced citywide figure: 'Citywide, almost half of serious intersection crashes happen between noon and 6 p.m. (WTOC).' or delete."
+  },
+  {
+   "surface": "body",
+   "claim": "I-16 between Savannah and the I-95 interchange carries heavy freight and commuter traffic and has a well-documented history of fatal crashes.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "GDOT — 16@95 Improvement Projects fact sheet (P.I. 0012757/0012758)",
+   "sourceUrl": "https://www.dot.ga.gov/systems/ProjectDocuments/1695Improvements/16@95%20Improvement%20Projects-Fact%20Sheet.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Heavy freight verified (GDOT: 'one of Georgia's busiest freight corridors'). 'Well-documented history of fatal crashes' has no corridor-level source. Change to '...carries heavy freight and commuter traffic — about 59,600 vehicles a day near Chatham Parkway in 2019.'"
+  },
+  {
+   "surface": "body",
+   "claim": "The highway's design — including short merge zones and limited shoulders in certain sections — contributes to high-speed rear-end and sideswipe collisions.",
+   "verdict": "update",
+   "currentValue": "GDOT's 16@95 projects widened I-16 from two to three lanes each direction from I-95 to I-516 (third lane open I-95–Chatham Parkway by July 2025), added ramp meters at Dean Forest Road and Chatham Parkway and a connecting lane on I-95; substantial completion late 2025.",
+   "sourceName": "GDOT — 16@95 Improvement Projects fact sheet (P.I. 0012757/0012758)",
+   "sourceUrl": "https://www.dot.ga.gov/systems/ProjectDocuments/1695Improvements/16@95%20Improvement%20Projects-Fact%20Sheet.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "'Limited shoulders' unsourced (same finding as facts-4715). Rewrite: 'Heavy merging volumes contribute to rear-end and sideswipe collisions; GDOT has widened I-16 to three lanes in each direction near I-95 and added ramp meters.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Trucks account for a disproportionate share of I-16 crashes, and the injuries from these collisions are often catastrophic.",
+   "verdict": "update",
+   "currentValue": "No I-16 truck-share source. NHTSA 2024: 70% of people killed in large-truck crashes were occupants of other vehicles.",
+   "sourceName": "NHTSA — Traffic Safety Facts 2024 Data: Large Trucks (DOT HS 813 816; via facts-4715)",
+   "sourceUrl": "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813816",
+   "retrievedAt": "2026-10-02",
+   "note": "Change to 'Truck crashes on I-16 are often catastrophic — nationally, 70 percent of people killed in large-truck crashes are in the other vehicle (NHTSA, 2024).'"
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia law under O.C.G.A. § 40-6-20 requires drivers to obey all traffic control devices.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia Code § 40-6-20 (Justia; reused from facts-2586)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-2/section-40-6-20/",
+   "retrievedAt": "2026-10-02",
+   "note": "§ 40-6-20(a). Red-light camera enforcement is § 40-6-20(f) ($70 civil penalty, no points)."
+  },
+  {
+   "surface": "body",
+   "claim": "Left-turn accidents are among the most common intersection crash types in Savannah.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "WTOC, \"WTOC Investigates: Breaking down Savannah's most dangerous intersections\" (May 16, 2018; analysis of 2017 Savannah intersection crash reports)",
+   "sourceUrl": "https://www.wtoc.com/story/38207746/wtoc-investigates-breaking-down-savannahs-most-dangerous-intersections/",
+   "retrievedAt": "2026-10-02",
+   "note": "Savannah's traffic engineer (WTOC) cites misjudged left-turn yields as a top trend. Optional cite: O.C.G.A. § 40-6-71 (yield when turning left)."
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia's speed limits are governed by O.C.G.A. § 40-6-181.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia Code § 40-6-181 (Justia; verified in facts-4539/4715)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-9/section-40-6-181/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct."
+  },
+  {
+   "surface": "body",
+   "claim": "Drunk and drugged driving remains a leading cause of fatal intersection crashes in Savannah, particularly during late-night and early-morning hours.",
+   "verdict": "update",
+   "currentValue": "Georgia 2023: 27% of traffic fatalities alcohol-related (GOHS). No Savannah intersection-level impairment data.",
+   "sourceName": "GOHS — Georgia Traffic Safety Facts: 2023 Overview of Motor Vehicle Crashes (27% of fatalities alcohol-related)",
+   "sourceUrl": "https://www.gahighwaysafety.org/wp-content/uploads/2025/10/2023-Overview-of-Motor-Vehicle-Crashes.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Change to 'Impaired driving is a factor in about a quarter of Georgia traffic deaths (27% alcohol-related in 2023, GOHS), especially late at night.'"
+  },
+  {
+   "surface": "body",
+   "claim": "When a government entity's failure to maintain or properly design a road contributes to a crash, the injured party may have a claim against the responsible agency under Georgia's governmental immunity exceptions.",
+   "verdict": "update",
+   "currentValue": "City: § 32-4-93 (notice of defect) + 6-month ante-litem notice § 36-33-5; County: largely immune (§ 36-1-4), claims presented within 12 months (§ 36-11-1); State: GTCA notice within 12 months (§ 50-21-26).",
+   "sourceName": "Georgia Code §§ 36-33-5, 36-11-1, 50-21-26, 32-4-93, 36-1-4 (verified in facts-2479/4715)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-36/provisions-applicable-to-municipal-corporations-only/chapter-33/section-36-33-5/",
+   "retrievedAt": "2026-10-02",
+   "note": "Append: 'Those claims require written notice within 6 months (city) or 12 months (county or state).'"
+  },
+  {
+   "surface": "body",
+   "claim": "Under O.C.G.A. § 9-3-33, you have two years from the date of your accident to file a personal injury lawsuit in Georgia.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia Code § 9-3-33 (Justia; verified in facts-4715/4539)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified."
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina allows three years under S.C. Code § 15-3-530.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md — Jurisdiction rules (single-state pages show only that state's law); facts-4539 / facts-4715 precedent",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "SC law on a Georgia-only post — delete (facts-4539 precedent)."
+  },
+  {
+   "surface": "body",
+   "claim": "You can recover compensation as long as you are less than 50% at fault for the accident, but your award is reduced by your percentage of fault.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia Code § 51-12-33 (Justia; verified in facts-4715/1780)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified."
+  },
+  {
+   "surface": "body",
+   "claim": "For example, if you suffered $100,000 in damages but were found 20% at fault, your recovery would be $80,000.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia Code § 51-12-33 (Justia; verified in facts-4715/1780)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Arithmetic correct."
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina applies a similar rule with a slightly higher threshold — you can recover if you are less than 51% at fault.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md — Jurisdiction rules (single-state pages show only that state's law); facts-4539 / facts-4715 precedent",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "SC rule on a Georgia-only post — delete."
+  },
+  {
+   "surface": "body",
+   "claim": "O.C.G.A. § 40-6-70 through § 40-6-76 establish right-of-way rules at intersections, including requirements to yield to traffic already in the intersection, obey traffic signals, and yield to pedestrians in crosswalks.",
+   "verdict": "update",
+   "currentValue": "Article 4 (§§ 40-6-70 to 40-6-77) covers intersection right of way (§ 40-6-70: vehicle on the left yields to the vehicle on the right; dark signal = all-way stop), left turns (§ 40-6-71), stop/yield signs (§ 40-6-72), entering from private roads (§ 40-6-73), emergency vehicles (§ 40-6-74), work-zone personnel (§ 40-6-75) and funeral processions (§ 40-6-76). Obeying signals is §§ 40-6-20/40-6-21; yielding to pedestrians in crosswalks is § 40-6-91.",
+   "sourceName": "OCGA Title 40 (UniCourt mirror of the official code)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'O.C.G.A. §§ 40-6-70 through 40-6-73 set right-of-way rules at intersections — including yielding when turning left and at stop and yield signs — while § 40-6-20 requires obeying traffic signals and § 40-6-91 requires yielding to pedestrians in crosswalks.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Under O.C.G.A. § 40-6-270, leaving the scene of an accident that causes injury or death is a felony in Georgia.",
+   "verdict": "update",
+   "currentValue": "§ 40-6-270(b): felony (1–5 years) only when the crash is the proximate cause of death or serious injury; failing to stop after a crash causing other injury, or damage to an attended vehicle, is a misdemeanor ($300–$1,000 fine and/or up to 12 months).",
+   "sourceName": "OCGA Title 40 (UniCourt mirror of the official code)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Change 'that causes injury or death is a felony' to 'that causes a death or serious injury is a felony (lesser injuries: a misdemeanor)'."
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia law requires you to report any accident that causes injury, death, or significant property damage.",
+   "verdict": "update",
+   "currentValue": "O.C.G.A. § 40-6-273: report immediately to police (in a city) or the sheriff/State Patrol (outside a city) any crash with injury, death, or apparent property damage of $500.00 or more.",
+   "sourceName": "OCGA Title 40 (UniCourt mirror of the official code)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Change 'significant property damage' to 'apparent property damage of $500 or more (O.C.G.A. § 40-6-273)'."
+  },
+  {
+   "surface": "body",
+   "claim": "many Savannah intersections have red-light cameras or nearby business security cameras that capture the moments before and during a crash.",
+   "verdict": "update",
+   "currentValue": "GDOT's 2024 report lists four Savannah red-light-camera intersections, all on Abercorn: at White Bluff Road, at Mall Blvd, at DeRenne Avenue, and at Montgomery Cross Road (12 camera intersections statewide). Camera images show the vehicle and plate, not the driver.",
+   "sourceName": "GDOT — 2024 Red Light Running Photo Enforcement annual report (latest published; program page lists 2019–2024 reports)",
+   "sourceUrl": "https://www.dot.ga.gov/DriveSmart/SafetyOperation/SafetyOperation/Red/2024RLRPES_ANNUALREPORT.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Change to 'four Savannah intersections — all on Abercorn Street — have red-light cameras, and many more have nearby business security cameras...' (facts-2586 precedent)."
+  },
+  {
+   "surface": "body",
+   "claim": "records from the Georgia Department of Transportation or the City of Savannah may reveal a known hazard that was not addressed.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Georgia Code §§ 36-33-5, 36-11-1, 50-21-26, 32-4-93, 36-1-4 (verified in facts-2479/4715)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-36/provisions-applicable-to-municipal-corporations-only/chapter-33/section-36-33-5/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. Optional: add 'or Chatham County'. Known-hazard notice is the § 32-4-93 standard for cities."
+  },
+  {
+   "surface": "body",
+   "claim": "Take your case to trial in Chatham County Superior Court if the insurance company refuses to offer fair compensation",
+   "verdict": "update",
+   "currentValue": "The State Court of Chatham County hears civil suits of any amount, concurrently with the Superior Court (O.C.G.A. § 15-7-4(a)); most Chatham crash suits are filed in State Court. Both sit at 133 Montgomery Street.",
+   "sourceName": "Chatham County Courts — Superior Court (Eastern Judicial Circuit); O.C.G.A. § 15-7-4 (State Court concurrent civil jurisdiction; facts-4715)",
+   "sourceUrl": "https://courts.chathamcountyga.gov/Superior/JudgeWelcome",
+   "retrievedAt": "2026-10-02",
+   "note": "Change to 'in the State Court or Superior Court of Chatham County' (facts-4715 finding)."
+  },
+  {
+   "surface": "body",
+   "claim": "contingency fee basis — you pay nothing unless we win your case",
+   "verdict": "update",
+   "currentValue": "Fees and costs apply only upon successful recovery. No fees or costs with no recovery.",
+   "sourceName": "Firm-confirmed fee wording (owner, 2026-10-02; fee-FAQ fix a132903; applied to 4368/1657)",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Differs from the confirmed wording (omits costs; frames recovery as 'win'). Suggested: 'contingency fee basis — no fees or costs unless we recover compensation for you' (form used on 1657 and recommended in facts-4581)."
+  },
+  {
+   "surface": "body",
+   "claim": "With over $300 million recovered for our clients and a 4.9-star average client rating",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md firm facts",
+   "sourceUrl": "/Users/brianhaas/Code/blue-sky-studio/client-rodenlaw-website/profiles/writer-profile.md",
+   "retrievedAt": "2026-10-02",
+   "note": "Firm figures match the profile."
+  },
+  {
+   "surface": "body",
+   "claim": "Call (912) 303-5850 or 1-844-RESULTS.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "client.json (Savannah office (912) 303-5850); profiles/writer-profile.md (1-844-RESULTS)",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Hrefs tel:+19123035850 and tel:+18447378587 match client.json/profile."
+  }
+ ],
+ "recommendedEdits": [
+  "Ranking language (owner decides title): replace 'most dangerous' superlatives with count-based, dated wording. Intro: replace the GDOT 'top five' / noon–6 PM sentence with 'Chatham County recorded 39 traffic deaths in 2023, the sixth-most of any Georgia county (GOHS), and a WTOC analysis of Savannah crash reports found almost half of the serious intersection crashes happened between noon and 6 p.m.' List intro: cite WTOC (2017 data) and Bike Walk Savannah's 2023 GDOT-data review; drop 'and fatalities'. Abercorn corridor: 'Savannah's most dangerous road, period' → 'one of Savannah's highest-crash roads'; delete the crashes-per-mile clause.",
+  "Key Takeaways + FAQ 1 + FAQ 5: align to 2023 data — I-16 at Dean Forest Road, Chatham Parkway and I-516; Abercorn at White Bluff Road, at East DeRenne Avenue and the extension near Truman Parkway (428 of 7,975 crashes at the top 10). Drop King George (interchange since Dec. 2017), DeRenne at Truman and Victory Drive from the 'other high-risk' lists.",
+  "Item 1 (Abercorn/White Bluff): date the No. 1 claim to WTOC's 2017-data analysis ('tied for the most crashes'; most hospital trips in Savannah, not Chatham County); replace the 4–6 PM sentence with the citywide noon–6 p.m. finding; optionally note its red-light camera.",
+  "Item 2 (I-16/Chatham Pkwy): delete the 'Devil's Highway' nickname; '25,000 vehicles daily' → 'about 59,600 vehicles a day on I-16 near Chatham Parkway (GDOT, 2019)'; 'primary freight route connecting the Port ... to Interstate 95 and points west' → 'one of Georgia's busiest freight corridors, carrying Port of Savannah traffic west and to I-95'; mention ramp meters/third lane instead of 'short ramp distances'.",
+  "Item 3 (King George/Abercorn): rewrite — the signal became a grade-separated interchange in December 2017; delete 'top three' and the left-turn clause; keep and source the pedestrian risk (SS4A: SR 204 between King George and Veterans Pkwy is a pedestrian fatal/serious-injury cluster).",
+  "Items 4–8: Rio Road — date to WTOC 2017 list; distraction → citywide trend. DeRenne — 'intersection' → 'interchange'. Ogeechee/Chatham Pkwy — add SS4A fact (4 serious-injury crashes 2018–2022, ~42,150 vehicles/day); soften sight-distance clause. MLK/37th — add 37th Street Vision Zero HIN facts (~970 crashes 2018–2022; $9.9M SS4A, 15 intersections). Abercorn/Victory — drop the item or remove ranking; 'high-speed' → 'heavy'; delete the wrongful-death sentence.",
+  "Corridors: DeRenne 'exceeds design capacity' → 'is often congested'; drop/replace the 4–6 PM claim; I-16 — replace 'well-documented history of fatal crashes', 'short merge zones and limited shoulders' and the truck-share claim with the sourced 16@95 and NHTSA facts.",
+  "Tourism: 'more than 14 million visitors annually' → 'about 12.9 million visitors in 2024'; one-way streets are downtown, not Midtown/Southside; drop the 'significant share' claim. Hydroplaning: 'is a common contributing factor' → 'can contribute to'.",
+  "Law fixes: § 40-6-70–76 sentence → §§ 40-6-70 to -73 for right of way, § 40-6-20 for signals, § 40-6-91 for crosswalk pedestrians. § 40-6-270 → felony only for death or serious injury (misdemeanor otherwise). Reporting duty → injury, death or apparent property damage of $500 or more (§ 40-6-273). Red-light cameras → four Savannah intersections, all on Abercorn (GDOT 2024). Court → 'State Court or Superior Court of Chatham County'. Government claims (causes list + FAQ 6): add notice deadlines (city 6 months § 36-33-5; county 12 months § 36-11-1; state 12 months § 50-21-26) and that Chatham County is largely immune (§ 36-1-4).",
+  "South Carolina removal (Georgia-only post, facts-4539 precedent): delete body 'South Carolina allows three years under S.C. Code § 15-3-530.', body 'South Carolina applies a similar rule with a slightly higher threshold — you can recover if you are less than 51% at fault.', and FAQ 3's 'South Carolina allows three years under S.C. Code § 15-3-530.' Result: zero SC mentions on any surface.",
+  "Fee line: 'contingency fee basis — you pay nothing unless we win your case' → 'contingency fee basis — no fees or costs unless we recover compensation for you' (firm-confirmed wording 2026-10-02)."
+ ],
+ "statuteCitations": [
+  {
+   "section": "O.C.G.A. § 9-3-33",
+   "name": "Injuries to the person — two-year limitation",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-33",
+   "name": "Apportionment; no recovery at 50 percent or more fault; not amended by 2025 SB 68",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+  },
+  {
+   "section": "O.C.G.A. § 40-6-20",
+   "name": "Obedience to traffic-control devices; (f) red-light camera civil penalty",
+   "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-2/section-40-6-20/"
+  },
+  {
+   "section": "O.C.G.A. § 40-6-70",
+   "name": "Right of way at intersections — vehicle on the left yields; dark signal treated as all-way stop",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html"
+  },
+  {
+   "section": "O.C.G.A. § 40-6-71",
+   "name": "Yield when turning left",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html"
+  },
+  {
+   "section": "O.C.G.A. § 40-6-72",
+   "name": "Stopping and yielding at stop and yield signs",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html"
+  },
+  {
+   "section": "O.C.G.A. § 40-6-91",
+   "name": "Right of way in crosswalks — drivers yield to pedestrians",
+   "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-91/"
+  },
+  {
+   "section": "O.C.G.A. § 40-6-181",
+   "name": "Maximum speed limits",
+   "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-9/section-40-6-181/"
+  },
+  {
+   "section": "O.C.G.A. § 40-6-270",
+   "name": "Hit and run — felony (1–5 years) for death or serious injury; misdemeanor otherwise",
+   "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-12/section-40-6-270/"
+  },
+  {
+   "section": "O.C.G.A. § 40-6-273",
+   "name": "Duty to report crash with injury, death, or apparent property damage of $500 or more",
+   "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-12/section-40-6-273/"
+  },
+  {
+   "section": "O.C.G.A. § 32-4-93",
+   "name": "Municipal liability for street defects — negligence plus actual or inferable notice",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.32.html"
+  },
+  {
+   "section": "O.C.G.A. § 36-33-5",
+   "name": "Ante-litem notice to a municipality — six months",
+   "url": "https://law.justia.com/codes/georgia/title-36/provisions-applicable-to-municipal-corporations-only/chapter-33/section-36-33-5/"
+  },
+  {
+   "section": "O.C.G.A. § 36-11-1",
+   "name": "Claims against counties — presented within 12 months",
+   "url": "https://law.justia.com/codes/georgia/title-36/provisions-applicable-to-counties-only/chapter-11/section-36-11-1/"
+  },
+  {
+   "section": "O.C.G.A. § 36-1-4",
+   "name": "County not liable to suit unless made so by statute",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.36.html"
+  },
+  {
+   "section": "O.C.G.A. § 50-21-26",
+   "name": "Georgia Tort Claims Act — notice of claim within 12 months",
+   "url": "https://law.justia.com/codes/georgia/title-50/chapter-21/article-2/section-50-21-26/"
+  },
+  {
+   "section": "O.C.G.A. § 15-7-4",
+   "name": "State courts — concurrent civil jurisdiction regardless of amount",
+   "url": "https://law.justia.com/codes/georgia/title-15/chapter-7/article-1/section-15-7-4/"
+  }
+ ],
+ "authoritativeLinks": [
+  {
+   "name": "Savannah Morning News via Yahoo (2025-01-26) — Bike Walk Savannah analysis of GDOT data: 7,975 crashes in 2023; top 10 intersections 428 crashes; I-16 at Dean Forest Rd, Chatham Pkwy and I-516; Abercorn at White Bluff, near Truman Pkwy, at E. DeRenne",
+   "url": "https://www.yahoo.com/news/pedestrian-related-crashes-increasing-savannah-100739487.html"
+  },
+  {
+   "name": "WTOC (2018-05-16) — Breaking down Savannah's most dangerous intersections (2017 reports; noon–6 p.m.; Abercorn & White Bluff most hospital trips)",
+   "url": "https://www.wtoc.com/story/38207746/wtoc-investigates-breaking-down-savannahs-most-dangerous-intersections/"
+  },
+  {
+   "name": "Chatham County SS4A Safety Action Plan (Jan. 2025) — HIN tables incl. Ogeechee Rd at Chatham Pkwy, King George Blvd at SR 204 ramps",
+   "url": "https://engineering.chathamcountyga.gov/Projects/ViewFile/64328398-4f2c-4db1-b56d-9681fd914964/Chatham%20County_Action%20Plan.pdf"
+  },
+  {
+   "name": "Chatham County SS4A Existing Conditions Report (June 2024) — 12,463 crashes, 356 KSI in unincorporated Chatham 2018–2022; pedestrian KSI cluster SR 204 King George–Veterans Pkwy",
+   "url": "https://engineering.chathamcountyga.gov/Projects/ViewFile/55eb0de7-4816-4f5e-b84e-40e86c08381f/Chatham%20SS4A%20-%20Existing%20Conditions%20Report.pdf"
+  },
+  {
+   "name": "Chatham County Engineering — Current Projects (SS4A plan page)",
+   "url": "https://engineering.chathamcountyga.gov/Projects/CurrentProjects"
+  },
+  {
+   "name": "GDOT — 2024 Red Light Running Photo Enforcement report (Savannah: 4 intersections, all on Abercorn)",
+   "url": "https://www.dot.ga.gov/DriveSmart/SafetyOperation/SafetyOperation/Red/2024RLRPES_ANNUALREPORT.pdf"
+  },
+  {
+   "name": "GDOT — Red Light Running Photo Enforcement program page",
+   "url": "https://www.dot.ga.gov/GDOT/Pages/RLRPES.aspx"
+  },
+  {
+   "name": "GDOT FY2018 Accountability and Investment Report — King George Blvd interchange opened Dec. 2017 ($28.5M)",
+   "url": "https://www.dot.ga.gov/PartnerSmart/Public/Documents/publications/Investment%20Report/2018InvestmentReport.pdf"
+  },
+  {
+   "name": "GDOT — 16@95 Improvement Projects fact sheet (third lane I-95–Chatham Pkwy; ramp meters at Chatham Pkwy)",
+   "url": "https://www.dot.ga.gov/systems/ProjectDocuments/1695Improvements/16@95%20Improvement%20Projects-Fact%20Sheet.pdf"
+  },
+  {
+   "name": "AARoads — I-16 West guide (59,600 vpd Exits 160–162, 2019; parclo at Chatham Pkwy)",
+   "url": "https://www.aaroads.com/guides/i-016-west-savannah-ga"
+  },
+  {
+   "name": "GOHS/NHTSA — Traffic Safety Facts Georgia 2019–2023 (Chatham 39 deaths in 2023, 6th)",
+   "url": "https://www.gahighwaysafety.org/wp-content/uploads/2025/04/Pages-from-Georgia-_STSI_Report.pdf"
+  },
+  {
+   "name": "GOHS — 2023 Overview of Motor Vehicle Crashes",
+   "url": "https://www.gahighwaysafety.org/wp-content/uploads/2025/10/2023-Overview-of-Motor-Vehicle-Crashes.pdf"
+  },
+  {
+   "name": "GDOT — Crash Data & Reporting (dashboard; no rankings published)",
+   "url": "https://www.dot.ga.gov/GDOT/Pages/CrashReporting.aspx"
+  },
+  {
+   "name": "Savannah Area Chamber — Tourism (12.9 million visitors in 2024)",
+   "url": "https://www.savannahchamber.com/economic-development/tourism/"
+  },
+  {
+   "name": "CORE MPO TIP amendment (Dec. 2024) — City of Savannah 37th Street SS4A project, $9.9M, 15 intersections",
+   "url": "https://www.thempc.org/docs/lit/CoreMpo/Latest/2024/TIP%20Amendment%20Final%20Report%20-%2012-18-2024%20-%20Final.pdf"
+  },
+  {
+   "name": "Wikipedia — Georgia State Route 204",
+   "url": "https://en.wikipedia.org/wiki/Georgia_State_Route_204"
+  },
+  {
+   "name": "Wikipedia — Harry S. Truman Parkway (DeRenne Avenue interchange)",
+   "url": "https://en.wikipedia.org/wiki/Harry_S._Truman_Parkway"
+  },
+  {
+   "name": "Chatham County Courts — Superior Court",
+   "url": "https://courts.chathamcountyga.gov/Superior/JudgeWelcome"
+  },
+  {
+   "name": "NHTSA — Traffic Safety Facts 2024: Large Trucks",
+   "url": "https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/813816"
+  },
+  {
+   "name": "City of Savannah, Feb. 12, 2026 City Council agenda item (12.9 million visitors in 2024, per Visit Savannah)",
+   "url": "https://agenda.savannahga.gov/publishing/february-12-2026-city-council-regular-meeting/1544_12040.html",
+   "note": "Swapped in for the Savannah Area Chamber page, which returns 403; same figure, verified 200 on 2026-10-02 (also used by facts-4538)."
+  }
+ ],
+ "quoteNote": "Body claims are quoted from the rendered text (tags stripped; body.html has no HTML entities); several claims span <strong> lead-ins or <a> anchors and match exactly once tags are stripped. Every non-title claim string was asserted to occur in its surface (body.html, meta.json excerpt/keyTakeaways/faqs[i].answer). The title entry is for the owner — it is not in body.html. metaDescription is empty. The intersection list traces to WTOC's 2018 analysis of 2017 reports; the newest count data is Bike Walk Savannah's 2023 GDOT-data review (Savannah Morning News, 2025) — SMN's original savannahnow.com URL was not fetched; the Yahoo syndication resolves. Georgia has no SCDPS-style published intersection table; GDOT's Numetric dashboard is interactive and publishes no ranking. savannahga.gov (Vision Zero plan, SS4A 37th Street page) refused TLS connections from curl and Chrome this run; 37th Street facts are cited via the CORE MPO TIP report. visitsavannah.com returns 403 to curl. Justia URLs are reused from sibling packs (not fetched); Title 40 text was read from the UniCourt mirror. Chatham County crash count (13,593 in 2024) appears only in secondary compilations of GOHS data and was not used. data/statistics.json says 'Georgia's 152 counties' — Georgia has 159 counties; flag for the registry owner."
+}

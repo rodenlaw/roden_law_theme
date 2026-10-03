@@ -1,0 +1,762 @@
+{
+ "postId": 4477,
+ "slug": "georgia-pedestrian-right-of-way-laws",
+ "liveUrl": "https://rodenlaw.com/blog/georgia-pedestrian-right-of-way-laws/",
+ "jurisdiction": "GA",
+ "researchedAt": "2026-10-02",
+ "verifiedClaims": [
+  {
+   "surface": "excerpt",
+   "claim": "When Georgia drivers must yield to pedestrians, what pedestrians must do in return, and how that shapes fault after a collision.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. §§ 40-6-91, 40-6-92, 51-12-33",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-91/",
+   "retrievedAt": "2026-10-02",
+   "note": "Publishes as the Article description. Plain-language 'yield' is acceptable in a one-line summary; the body carries the statutory 'stop and remain stopped'."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Georgia law requires drivers to yield to pedestrians in marked and unmarked crosswalks, while pedestrians must obey traffic signals and use crosswalks where available.",
+   "verdict": "update",
+   "currentValue": "§ 40-6-91(a): 'The driver of a vehicle shall stop and remain stopped to allow a pedestrian to cross the roadway within a crosswalk when the pedestrian is upon the half of the roadway upon which the vehicle is traveling, or when the pedestrian is approaching and is within one lane of the half of the roadway on which the vehicle is traveling or onto which it is turning. For the purposes of this subsection, \"half of the roadway\" means all traffic lanes carrying traffic in one direction of travel.' § 40-6-92: (a) 'Every pedestrian crossing a roadway at any point other than within a marked crosswalk or within an unmarked crosswalk at an intersection shall yield the right of way to all vehicles upon the roadway unless he has already, and under safe conditions, entered the roadway.' (b) tunnel/overhead crossing provided → yield if using the roadway instead. (c) 'Between adjacent intersections at which traffic-control signals are in operation, pedestrians shall not cross at any place except in a marked crosswalk.' (d) no diagonal crossing unless authorized by traffic-control devices.",
+   "sourceName": "O.C.G.A. § 40-6-91(a); § 40-6-92(a), (c); § 40-6-22",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-91/",
+   "retrievedAt": "2026-10-02",
+   "note": "Georgia's rule is stronger than 'yield': drivers must stop and remain stopped for a pedestrian in a crosswalk on their half of the road or within one lane of it. 'Use crosswalks where available' overstates § 40-6-92: a pedestrian may cross elsewhere if he yields (and need not if he has already entered under safe conditions); only between adjacent signalized intersections must he use a marked crosswalk. Suggested: 'Georgia law requires drivers to stop and remain stopped for pedestrians in marked and unmarked crosswalks (O.C.G.A. § 40-6-91), while pedestrians must obey walk signals and, when crossing outside a crosswalk, yield to traffic (O.C.G.A. § 40-6-92).' Renders above the article."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Under Georgia's modified comparative fault rule (O.C.G.A. SS 51-12-33), an injured pedestrian can recover damages as long as they are less than 50% at fault.",
+   "verdict": "update",
+   "currentValue": "§ 51-12-33(a): damages reduced 'in proportion to his or her percentage of fault'; (g): 'the plaintiff shall not be entitled to receive any damages if the plaintiff is 50 percent or more responsible for the injury or damages claimed.' Last amended 2022 (HB 961); SB 68 (2025) did not amend it.",
+   "sourceName": "O.C.G.A. § 51-12-33(g)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Substance correct. DEFECT: the section sign is stored as the literal letters 'SS' ('O.C.G.A. SS 51-12-33') in _roden_key_takeaways — it renders that way on the live page. Replace 'SS' with '§'. Optional: add 'and the award is reduced by their percentage of fault'."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Right-of-way violations such as failing to yield, speeding, or distracted driving are proven through surveillance footage, witness testimony, and accident reconstruction.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-1-6; § 40-6-93",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-6/",
+   "retrievedAt": "2026-10-02",
+   "note": "Evidence types only. Optional: 'can be proven'."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Georgia's two-year statute of limitations (O.C.G.A. SS 9-3-33) applies to all pedestrian accident claims.",
+   "verdict": "update",
+   "currentValue": "§ 9-3-33: actions for injuries to the person 'shall be brought within two years after the right of action accrues'. Claims against a government driver/agency also require ante litem notice: § 36-33-5 cities (6 months), § 36-11-1 counties (12 months), § 50-21-26 state (12 months).",
+   "sourceName": "O.C.G.A. § 9-3-33; ante litem statutes (facts-1767, facts-1831)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Same 'SS' defect — replace with '§'. 'All pedestrian accident claims' is too absolute: government defendants (city bus, county or state vehicle) carry much shorter ante litem notice deadlines. Suggested: 'Georgia's two-year statute of limitations (O.C.G.A. § 9-3-33) applies to pedestrian injury claims, and claims against a city, county or state driver require written notice far sooner.'"
+  },
+  {
+   "surface": "faq:0",
+   "claim": "Under O.C.G.A. § 40-6-91, drivers must stop and remain stopped for pedestrians in both marked and unmarked crosswalks.",
+   "verdict": "keep",
+   "currentValue": "§ 40-6-91(a): 'The driver of a vehicle shall stop and remain stopped to allow a pedestrian to cross the roadway within a crosswalk when the pedestrian is upon the half of the roadway upon which the vehicle is traveling, or when the pedestrian is approaching and is within one lane of the half of the roadway on which the vehicle is traveling or onto which it is turning. For the purposes of this subsection, \"half of the roadway\" means all traffic lanes carrying traffic in one direction of travel.'",
+   "sourceName": "O.C.G.A. § 40-6-91(a)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-91/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate ('a crosswalk' covers both under § 40-1-1(10)). Optional precision: 'when the pedestrian is on their half of the road or within one lane of it'. FAQ answers publish as FAQPage structured data."
+  },
+  {
+   "surface": "faq:0",
+   "claim": "An unmarked crosswalk exists at every intersection as the implied extension of the sidewalk across the road, even when no painted lines are visible.",
+   "verdict": "update",
+   "currentValue": "§ 40-1-1(10): '\"Crosswalk\" means: (A) That part of a roadway at an intersection included within the connections of the lateral lines of the sidewalks on opposite sides of the highway measured from the curbs or in the absence of curbs, from the edges of the traversable roadway; or (B) Any portion of a roadway at an intersection or elsewhere distinctly indicated for pedestrian crossing by lines or other markings on the surface.' Annotations: a crosswalk other than at an intersection 'must be marked in some manner so that motorists may know of it' (Wells v. Alderman, 117 Ga. App. 724 (1968)); 'A \"T\" intersection did not qualify as an unmarked crosswalk' (McKenzie v. Detenber, 226 Ga. App. 742 (1997)).",
+   "sourceName": "O.C.G.A. § 40-1-1(10) (GA Code Release 86 via Public.Resource.Org; same text on Justia 2024); McKenzie v. Detenber (1997)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r86/gov.ga.ocga.title.40.html",
+   "retrievedAt": "2026-10-02",
+   "note": "'Every intersection' overstates the definition: an unmarked crosswalk is the part of the roadway at an intersection within the connections of the lateral lines of the sidewalks on opposite sides, and the Court of Appeals held a T intersection did not qualify (McKenzie v. Detenber). Suggested: 'An unmarked crosswalk exists at an intersection where the sidewalks on opposite sides would connect across the road, even when no painted lines are visible.' Same fix in the body's matching sentence."
+  },
+  {
+   "surface": "faq:1",
+   "claim": "Georgia follows a modified comparative fault rule under O.C.G.A. § 51-12-33. A pedestrian can recover compensation as long as they are less than 50% at fault. Their damages are reduced by their percentage of fault. If the pedestrian is 50% or more at fault, they recover nothing.",
+   "verdict": "keep",
+   "currentValue": "§ 51-12-33(a): damages reduced 'in proportion to his or her percentage of fault'; (g): 'the plaintiff shall not be entitled to receive any damages if the plaintiff is 50 percent or more responsible for the injury or damages claimed.' Last amended 2022 (HB 961); SB 68 (2025) did not amend it.",
+   "sourceName": "O.C.G.A. § 51-12-33(a), (g)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate; unchanged by SB 68."
+  },
+  {
+   "surface": "faq:2",
+   "claim": "Georgia has a 2-year statute of limitations for personal injury claims under O.C.G.A. § 9-3-33. You must file your lawsuit within 2 years of the date of the accident or you lose the right to pursue compensation.",
+   "verdict": "keep",
+   "currentValue": "§ 9-3-33: two years after the right of action accrues.",
+   "sourceName": "O.C.G.A. § 9-3-33",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct for a private driver. Optional sentence: claims against a government vehicle need ante litem notice (cities 6 months, § 36-33-5; counties and state 12 months, §§ 36-11-1, 50-21-26)."
+  },
+  {
+   "surface": "faq:3",
+   "claim": "Under O.C.G.A. § 40-6-93, drivers have a duty to exercise due care to avoid hitting any pedestrian, even one who is jaywalking. If the driver was speeding, distracted, or made no effort to avoid the collision, they can be held partially or fully liable.",
+   "verdict": "keep",
+   "currentValue": "O.C.G.A. § 40-6-93: 'Notwithstanding other provisions of this chapter, every driver of a vehicle shall exercise due care to avoid colliding with any pedestrian upon any roadway, shall give warning by sounding his horn when necessary, and shall exercise proper precautions upon observing any child or any obviously confused, incapacitated, or intoxicated person.' (last amended 1990)",
+   "sourceName": "O.C.G.A. § 40-6-93; Nash v. Reed, 349 Ga. App. 381 (2019) (annotated)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-93/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. Nash v. Reed: § 40-6-93 requires motorists to exercise ordinary care to discover and avoid persons in the roadway; even if the pedestrian was negligent, comparative fault is a jury question. Counterweight (Politzer v. Xiaoyan, 2017; Ireland v. Williams, 351 Ga. App. 124 (2019)): with no evidence of driver negligence, a pedestrian crossing outside a crosswalk loses on summary judgment."
+  },
+  {
+   "surface": "faq:4",
+   "claim": "Under O.C.G.A. § 40-6-91(c), when a vehicle is stopped at a crosswalk to allow a pedestrian to cross, drivers in adjacent lanes must also stop.",
+   "verdict": "update",
+   "currentValue": "§ 40-6-91(d): 'Whenever any vehicle is stopped at a marked crosswalk or at any unmarked crosswalk at an intersection to permit a pedestrian to cross the roadway, the driver of any other vehicle approaching from the rear shall not overtake and pass such stopped vehicle.' Current structure: (a) stop and remain stopped; (b) dart-out; (c) (a) does not apply under § 40-6-92(b) (tunnel/overpass provided); (d) no passing a stopped vehicle. Last amended Ga. L. 1995. HB 461 (2025-26, LC 39 4951S) would insert a rectangular-rapid-flash-beacon subsection and re-letter (d) as (e), but it is not on the Governor's 2025 or 2026 signed-legislation lists — the current letter is (d).",
+   "sourceName": "O.C.G.A. § 40-6-91(d) (GA Code Release 86; HB 461 (2025-26) LC 39 4951S shows current lettering); Governor's 2026 signed-legislation list",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-91/",
+   "retrievedAt": "2026-10-02",
+   "note": "WRONG SUBSECTION and the rule is misstated. (c) says subsection (a) does not apply where a tunnel or overhead crossing is provided (§ 40-6-92(b)). The passing rule is (d), and it bars a driver 'approaching from the rear' from overtaking and passing the stopped vehicle — it does not literally order adjacent-lane drivers to stop. Suggested: 'Under O.C.G.A. § 40-6-91(d), when a vehicle is stopped at a marked or unmarked crosswalk to let a pedestrian cross, a driver approaching from behind may not pass the stopped vehicle.' HB 461 copy: https://www.legis.ga.gov/api/legislation/document/20252026/243614"
+  },
+  {
+   "surface": "faq:4",
+   "claim": "Passing a vehicle stopped at a crosswalk is a traffic violation and a common cause of pedestrian injuries on multi-lane roads.",
+   "verdict": "keep",
+   "currentValue": "§ 40-6-91(d): 'Whenever any vehicle is stopped at a marked crosswalk or at any unmarked crosswalk at an intersection to permit a pedestrian to cross the roadway, the driver of any other vehicle approaching from the rear shall not overtake and pass such stopped vehicle.' Current structure: (a) stop and remain stopped; (b) dart-out; (c) (a) does not apply under § 40-6-92(b) (tunnel/overpass provided); (d) no passing a stopped vehicle. Last amended Ga. L. 1995. HB 461 (2025-26, LC 39 4951S) would insert a rectangular-rapid-flash-beacon subsection and re-letter (d) as (e), but it is not on the Governor's 2025 or 2026 signed-legislation lists — the current letter is (d).",
+   "sourceName": "O.C.G.A. § 40-6-91(d)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-91/",
+   "retrievedAt": "2026-10-02",
+   "note": "Violation correct (as (d)). 'Common cause' is a general observation; no Georgia statistic isolates it — acceptable as hedged prose."
+  },
+  {
+   "surface": "faq:5",
+   "claim": "The due care statute (O.C.G.A. § 40-6-93) requires drivers to exercise due care to avoid colliding with any pedestrian on any roadway, regardless of signal status. However, a pedestrian who crosses against a signal may be assigned partial fault under Georgia's comparative fault rules, which would reduce their recovery.",
+   "verdict": "keep",
+   "currentValue": "O.C.G.A. § 40-6-93: 'Notwithstanding other provisions of this chapter, every driver of a vehicle shall exercise due care to avoid colliding with any pedestrian upon any roadway, shall give warning by sounding his horn when necessary, and shall exercise proper precautions upon observing any child or any obviously confused, incapacitated, or intoxicated person.' (last amended 1990)",
+   "sourceName": "O.C.G.A. § 40-6-93; § 51-12-33",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-93/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate ('Notwithstanding other provisions of this chapter'). Optional: '— or bar it at 50% or more'."
+  },
+  {
+   "surface": "body",
+   "claim": "right-of-way rules are frequently misunderstood by both drivers and pedestrians — and that confusion contributes to thousands of preventable injuries every year",
+   "verdict": "update",
+   "currentValue": "GOHS 2024 Georgia Traffic Safety Facts (Non-Motorist): 286 pedestrians killed in Georgia traffic crashes in 2024 (FARS), down 8% from 310 in 2023; hospitalization and emergency-room charges of $253.5 million for the 2,653 pedestrians injured in motor-vehicle traffic and non-traffic crashes in 2024; 81% of pedestrian deaths in dark lighting conditions; 75% on roads posted 45 mph or higher.",
+   "sourceName": "Georgia Governor's Office of Highway Safety, 2024 Non-Motorist (Pedestrian and Bicyclist) Georgia Traffic Safety Facts (published 2026-09)",
+   "sourceUrl": "https://www.gahighwaysafety.org/wp-content/uploads/2026/09/2024-Non-Motorist-Pedestrian-and-Bicyclist-Georgia-Traffic-Safety-Facts.V2.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "'Thousands of injuries' is supported for Georgia (2,653 injured pedestrians in 2024), but no source measures how many result from right-of-way confusion. Suggested: '— and Georgia recorded 286 pedestrian deaths and 2,653 pedestrian injuries in 2024 (Georgia Governor's Office of Highway Safety).' The fact sheet's own summary bullet says 284 for 2024 while Table 1/FARS say 286; use 286 (FARS)."
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia's Official Code — specifically Title 40, Chapter 6 — lays out detailed rules governing when drivers must yield to pedestrians",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. Title 40, Chapter 6 (Uniform Rules of the Road), Article 5 (§§ 40-6-90 to -100, Rights and Duties of Pedestrians)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r86/gov.ga.ocga.title.40.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct."
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia courts treat a statutory right-of-way violation as negligence per se — meaning the violation itself is proof of negligence without the injured party needing to prove the driver was \"careless.\"",
+   "verdict": "update",
+   "currentValue": "Violating a rule-of-the-road statute is negligence per se in Georgia (O.C.G.A. § 51-1-6), which supplies duty and breach; the plaintiff still proves causation and damages (Central Anesthesia Associates v. Worthy, 254 Ga. 728 (1985)), and the pedestrian's own fault is still apportioned under § 51-12-33.",
+   "sourceName": "O.C.G.A. § 51-1-6 (facts-1831, facts-2586)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-6/",
+   "retrievedAt": "2026-10-02",
+   "note": "Overstates slightly: negligence per se establishes the negligence element but not proximate cause, and does not remove comparative fault. Suggested: '… negligence per se — the violation itself establishes the driver's negligence, though the injured person must still show it caused the injuries.'"
+  },
+  {
+   "surface": "body",
+   "claim": "It requires drivers to \"stop and remain stopped to allow a pedestrian to cross the roadway when the pedestrian is upon the half of the roadway upon which the vehicle is traveling, or when the pedestrian is approaching and is within one lane of the half of the roadway on which the vehicle is traveling.\"",
+   "verdict": "update",
+   "currentValue": "§ 40-6-91(a): 'The driver of a vehicle shall stop and remain stopped to allow a pedestrian to cross the roadway within a crosswalk when the pedestrian is upon the half of the roadway upon which the vehicle is traveling, or when the pedestrian is approaching and is within one lane of the half of the roadway on which the vehicle is traveling or onto which it is turning. For the purposes of this subsection, \"half of the roadway\" means all traffic lanes carrying traffic in one direction of travel.'",
+   "sourceName": "O.C.G.A. § 40-6-91(a)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-91/",
+   "retrievedAt": "2026-10-02",
+   "note": "The quotation drops words from inside the statute: 'within a crosswalk' after 'cross the roadway' and 'or onto which it is turning' at the end. A quotation must be verbatim. Replace with: 'stop and remain stopped to allow a pedestrian to cross the roadway within a crosswalk when the pedestrian is upon the half of the roadway upon which the vehicle is traveling, or when the pedestrian is approaching and is within one lane of the half of the roadway on which the vehicle is traveling or onto which it is turning.'"
+  },
+  {
+   "surface": "body",
+   "claim": "The duty applies at both marked and unmarked crosswalks",
+   "verdict": "keep",
+   "currentValue": "§ 40-1-1(10): '\"Crosswalk\" means: (A) That part of a roadway at an intersection included within the connections of the lateral lines of the sidewalks on opposite sides of the highway measured from the curbs or in the absence of curbs, from the edges of the traversable roadway; or (B) Any portion of a roadway at an intersection or elsewhere distinctly indicated for pedestrian crossing by lines or other markings on the surface.' Annotations: a crosswalk other than at an intersection 'must be marked in some manner so that motorists may know of it' (Wells v. Alderman, 117 Ga. App. 724 (1968)); 'A \"T\" intersection did not qualify as an unmarked crosswalk' (McKenzie v. Detenber, 226 Ga. App. 742 (1997)).",
+   "sourceName": "O.C.G.A. §§ 40-1-1(10), 40-6-91(a)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r86/gov.ga.ocga.title.40.html",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  },
+  {
+   "surface": "body",
+   "claim": "The driver must not just slow down but must stop and remain stopped",
+   "verdict": "keep",
+   "currentValue": "§ 40-6-91(a): 'The driver of a vehicle shall stop and remain stopped to allow a pedestrian to cross the roadway within a crosswalk when the pedestrian is upon the half of the roadway upon which the vehicle is traveling, or when the pedestrian is approaching and is within one lane of the half of the roadway on which the vehicle is traveling or onto which it is turning. For the purposes of this subsection, \"half of the roadway\" means all traffic lanes carrying traffic in one direction of travel.'",
+   "sourceName": "O.C.G.A. § 40-6-91(a)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-91/",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  },
+  {
+   "surface": "body",
+   "claim": "The trigger is the pedestrian being on or approaching the driver's half of the road",
+   "verdict": "update",
+   "currentValue": "§ 40-6-91(a): 'The driver of a vehicle shall stop and remain stopped to allow a pedestrian to cross the roadway within a crosswalk when the pedestrian is upon the half of the roadway upon which the vehicle is traveling, or when the pedestrian is approaching and is within one lane of the half of the roadway on which the vehicle is traveling or onto which it is turning. For the purposes of this subsection, \"half of the roadway\" means all traffic lanes carrying traffic in one direction of travel.'",
+   "sourceName": "O.C.G.A. § 40-6-91(a)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-91/",
+   "retrievedAt": "2026-10-02",
+   "note": "Add the turning case and the one-lane limit: 'The trigger is the pedestrian being on the driver's half of the road, or within one lane of it — including the half the driver is turning onto.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Vehicles in adjacent lanes must also stop when they see another vehicle stopped for a pedestrian",
+   "verdict": "update",
+   "currentValue": "§ 40-6-91(d): 'Whenever any vehicle is stopped at a marked crosswalk or at any unmarked crosswalk at an intersection to permit a pedestrian to cross the roadway, the driver of any other vehicle approaching from the rear shall not overtake and pass such stopped vehicle.' Current structure: (a) stop and remain stopped; (b) dart-out; (c) (a) does not apply under § 40-6-92(b) (tunnel/overpass provided); (d) no passing a stopped vehicle. Last amended Ga. L. 1995. HB 461 (2025-26, LC 39 4951S) would insert a rectangular-rapid-flash-beacon subsection and re-letter (d) as (e), but it is not on the Governor's 2025 or 2026 signed-legislation lists — the current letter is (d).",
+   "sourceName": "O.C.G.A. § 40-6-91(d)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-91/",
+   "retrievedAt": "2026-10-02",
+   "note": "Statute bars a driver approaching from the rear from overtaking and passing the stopped vehicle. Suggested: 'A driver coming up behind a vehicle stopped at a crosswalk may not pass it (subsection (d))'."
+  },
+  {
+   "surface": "body",
+   "claim": "When a pedestrian crosses a road at a location other than a marked or unmarked crosswalk, the pedestrian must yield the right of way to vehicles.",
+   "verdict": "update",
+   "currentValue": "§ 40-6-92: (a) 'Every pedestrian crossing a roadway at any point other than within a marked crosswalk or within an unmarked crosswalk at an intersection shall yield the right of way to all vehicles upon the roadway unless he has already, and under safe conditions, entered the roadway.' (b) tunnel/overhead crossing provided → yield if using the roadway instead. (c) 'Between adjacent intersections at which traffic-control signals are in operation, pedestrians shall not cross at any place except in a marked crosswalk.' (d) no diagonal crossing unless authorized by traffic-control devices.",
+   "sourceName": "O.C.G.A. § 40-6-92(a); Nelson v. State, 317 Ga. App. 527 (2012) (annotated: § 40-6-92(a) 'does not absolutely prohibit' crossing outside a crosswalk)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-92/",
+   "retrievedAt": "2026-10-02",
+   "note": "Add the statutory exception: '… must yield the right of way to vehicles unless the pedestrian has already, and under safe conditions, entered the roadway.' Strictly, the unmarked crosswalk must be 'at an intersection'."
+  },
+  {
+   "surface": "body",
+   "claim": "drivers must still exercise due care to avoid hitting any person on the roadway regardless of who has the technical right of way",
+   "verdict": "keep",
+   "currentValue": "O.C.G.A. § 40-6-93: 'Notwithstanding other provisions of this chapter, every driver of a vehicle shall exercise due care to avoid colliding with any pedestrian upon any roadway, shall give warning by sounding his horn when necessary, and shall exercise proper precautions upon observing any child or any obviously confused, incapacitated, or intoxicated person.' (last amended 1990)",
+   "sourceName": "O.C.G.A. § 40-6-93",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-93/",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  },
+  {
+   "surface": "body",
+   "claim": "This statute imposes a universal duty: \"Every driver of a vehicle shall exercise due care to avoid colliding with any pedestrian upon any roadway.\"",
+   "verdict": "update",
+   "currentValue": "O.C.G.A. § 40-6-93: 'Notwithstanding other provisions of this chapter, every driver of a vehicle shall exercise due care to avoid colliding with any pedestrian upon any roadway, shall give warning by sounding his horn when necessary, and shall exercise proper precautions upon observing any child or any obviously confused, incapacitated, or intoxicated person.' (last amended 1990)",
+   "sourceName": "O.C.G.A. § 40-6-93",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-93/",
+   "retrievedAt": "2026-10-02",
+   "note": "The quoted words are accurate but the statute begins 'Notwithstanding other provisions of this chapter, every driver …' and continues — the period inside the quote cuts a longer sentence. Suggested: 'This statute imposes a universal duty: notwithstanding the other rules of the road, \"every driver of a vehicle shall exercise due care to avoid colliding with any pedestrian upon any roadway\" — and must sound the horn when necessary and take proper precautions around any child or any obviously confused, incapacitated, or intoxicated person.'"
+  },
+  {
+   "surface": "body",
+   "claim": "A driver who sees a pedestrian in the road and makes no effort to slow down or stop can be held liable regardless of who technically had the right of way.",
+   "verdict": "keep",
+   "currentValue": "O.C.G.A. § 40-6-93: 'Notwithstanding other provisions of this chapter, every driver of a vehicle shall exercise due care to avoid colliding with any pedestrian upon any roadway, shall give warning by sounding his horn when necessary, and shall exercise proper precautions upon observing any child or any obviously confused, incapacitated, or intoxicated person.' (last amended 1990)",
+   "sourceName": "O.C.G.A. § 40-6-93; Fountain v. Thompson, 252 Ga. 256 (1984) (driver 'is under a duty to discover the victim's peril and avoid injury')",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-93/",
+   "retrievedAt": "2026-10-02",
+   "note": "'Can be held liable' is the right hedge; fault is still apportioned."
+  },
+  {
+   "surface": "body",
+   "claim": "O.C.G.A. § 40-6-22 — Traffic Signal Obedience",
+   "verdict": "update",
+   "currentValue": "§ 40-6-22 ('Pedestrian-control signals'): (1) WALK — 'Pedestrians facing such signal may proceed across the roadway in the direction of the signal. Every driver of a vehicle shall stop and remain stopped for such pedestrians'; (2) flashing or steady DON'T WALK — 'No pedestrian shall start to cross the roadway in the direction of such signal, but any pedestrian who has partially completed his crossing on the WALK signal shall proceed to sidewalk or safety island while the DON'T WALK signal is showing.' (last amended Ga. L. 2013, HB 79)",
+   "sourceName": "O.C.G.A. § 40-6-22 (GA Code Release 86 via Public.Resource.Org)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r86/gov.ga.ocga.title.40.html",
+   "retrievedAt": "2026-10-02",
+   "note": "The section's title is 'Pedestrian-control signals'; general traffic-signal obedience is § 40-6-20. Retitle the H3 'O.C.G.A. § 40-6-22 — Pedestrian-Control Signals'."
+  },
+  {
+   "surface": "body",
+   "claim": "At intersections with pedestrian signals (\"Walk\" / \"Don't Walk\"), pedestrians must obey these signals. A pedestrian who enters the roadway on a \"Don't Walk\" signal does not have the right of way.",
+   "verdict": "keep",
+   "currentValue": "§ 40-6-22 ('Pedestrian-control signals'): (1) WALK — 'Pedestrians facing such signal may proceed across the roadway in the direction of the signal. Every driver of a vehicle shall stop and remain stopped for such pedestrians'; (2) flashing or steady DON'T WALK — 'No pedestrian shall start to cross the roadway in the direction of such signal, but any pedestrian who has partially completed his crossing on the WALK signal shall proceed to sidewalk or safety island while the DON'T WALK signal is showing.' (last amended Ga. L. 2013, HB 79)",
+   "sourceName": "O.C.G.A. § 40-6-22(2)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r86/gov.ga.ocga.title.40.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. Optional: § 40-6-22(1) also says drivers 'shall stop and remain stopped' for pedestrians crossing on WALK."
+  },
+  {
+   "surface": "body",
+   "claim": "However, if a pedestrian begins crossing during a \"Walk\" signal and the signal changes mid-crossing, drivers must still yield to that pedestrian to allow them to complete the crossing safely.",
+   "verdict": "update",
+   "currentValue": "§ 40-6-22 ('Pedestrian-control signals'): (1) WALK — 'Pedestrians facing such signal may proceed across the roadway in the direction of the signal. Every driver of a vehicle shall stop and remain stopped for such pedestrians'; (2) flashing or steady DON'T WALK — 'No pedestrian shall start to cross the roadway in the direction of such signal, but any pedestrian who has partially completed his crossing on the WALK signal shall proceed to sidewalk or safety island while the DON'T WALK signal is showing.' (last amended Ga. L. 2013, HB 79) § 40-6-21(a)(1)(A) (circular green): 'Vehicular traffic must stop and remain stopped to allow a pedestrian to cross the roadway within a crosswalk when the pedestrian lawfully within the intersection or an adjacent crosswalk at the time such signal is exhibited is upon the half of the roadway upon which the vehicle is traveling, or ... within one lane of the half of the roadway on which the vehicle is traveling or onto which it is turning'; (B) green arrow: same duty to a pedestrian 'lawfully within an adjacent crosswalk'; flashing yellow arrow: same.",
+   "sourceName": "O.C.G.A. §§ 40-6-22(2), 40-6-21(a)(1)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r86/gov.ga.ocga.title.40.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Right result, wrong source and wrong verb. § 40-6-22(2) tells the pedestrian who started on WALK to 'proceed to sidewalk or safety island'; the driver's duty comes from § 40-6-21(a)(1): a driver on green 'must stop and remain stopped' for a pedestrian 'lawfully within the intersection or an adjacent crosswalk at the time such signal is exhibited'. Suggested: '… the pedestrian may finish crossing to the sidewalk or a safety island (O.C.G.A. § 40-6-22), and a driver getting a green light must stop and remain stopped for a pedestrian still lawfully in the crosswalk (O.C.G.A. § 40-6-21).'"
+  },
+  {
+   "surface": "body",
+   "claim": "Under Georgia law, an unmarked crosswalk exists at every intersection. It is defined as the implied extension of the sidewalk or shoulder across the intersection, even when no paint or markings are present.",
+   "verdict": "update",
+   "currentValue": "§ 40-1-1(10): '\"Crosswalk\" means: (A) That part of a roadway at an intersection included within the connections of the lateral lines of the sidewalks on opposite sides of the highway measured from the curbs or in the absence of curbs, from the edges of the traversable roadway; or (B) Any portion of a roadway at an intersection or elsewhere distinctly indicated for pedestrian crossing by lines or other markings on the surface.' Annotations: a crosswalk other than at an intersection 'must be marked in some manner so that motorists may know of it' (Wells v. Alderman, 117 Ga. App. 724 (1968)); 'A \"T\" intersection did not qualify as an unmarked crosswalk' (McKenzie v. Detenber, 226 Ga. App. 742 (1997)).",
+   "sourceName": "O.C.G.A. § 40-1-1(10); McKenzie v. Detenber, 226 Ga. App. 742 (1997) (annotated)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r86/gov.ga.ocga.title.40.html",
+   "retrievedAt": "2026-10-02",
+   "note": "'Every intersection' and 'or shoulder' are not in the definition: it runs between the lateral lines of the sidewalks on opposite sides of the highway (measured from the curbs or, without curbs, from the edges of the traversable roadway), and a T intersection was held not to be an unmarked crosswalk. Suggested: 'Under Georgia law, an unmarked crosswalk exists at an intersection wherever the sidewalks on opposite sides of the road would connect across it, even when no paint or markings are present.' The paragraph's later sentence ('at any intersection with sidewalks, there is a legal crosswalk') is closer to the statute."
+  },
+  {
+   "surface": "body",
+   "claim": "O.C.G.A. § 40-1-1(10) defines a crosswalk as:",
+   "verdict": "keep",
+   "currentValue": "§ 40-1-1(10): '\"Crosswalk\" means: (A) That part of a roadway at an intersection included within the connections of the lateral lines of the sidewalks on opposite sides of the highway measured from the curbs or in the absence of curbs, from the edges of the traversable roadway; or (B) Any portion of a roadway at an intersection or elsewhere distinctly indicated for pedestrian crossing by lines or other markings on the surface.' Annotations: a crosswalk other than at an intersection 'must be marked in some manner so that motorists may know of it' (Wells v. Alderman, 117 Ga. App. 724 (1968)); 'A \"T\" intersection did not qualify as an unmarked crosswalk' (McKenzie v. Detenber, 226 Ga. App. 742 (1997)).",
+   "sourceName": "O.C.G.A. § 40-1-1(10) (Justia 2024 and GA Code Release 86 both number it (10))",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r86/gov.ga.ocga.title.40.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Paragraph number verified."
+  },
+  {
+   "surface": "body",
+   "claim": "\"That part of a roadway at an intersection included within the connections of the lateral lines of the sidewalks on opposite sides of the highway, measured from the curbs or in the absence of curbs, from the edges of the traversable roadway.\"",
+   "verdict": "update",
+   "currentValue": "§ 40-1-1(10): '\"Crosswalk\" means: (A) That part of a roadway at an intersection included within the connections of the lateral lines of the sidewalks on opposite sides of the highway measured from the curbs or in the absence of curbs, from the edges of the traversable roadway; or (B) Any portion of a roadway at an intersection or elsewhere distinctly indicated for pedestrian crossing by lines or other markings on the surface.' Annotations: a crosswalk other than at an intersection 'must be marked in some manner so that motorists may know of it' (Wells v. Alderman, 117 Ga. App. 724 (1968)); 'A \"T\" intersection did not qualify as an unmarked crosswalk' (McKenzie v. Detenber, 226 Ga. App. 742 (1997)).",
+   "sourceName": "O.C.G.A. § 40-1-1(10)(A)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r86/gov.ga.ocga.title.40.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Near-verbatim: the statute has no comma after 'highway', and this is only subparagraph (A) — (B) covers any portion of a roadway 'at an intersection or elsewhere distinctly indicated for pedestrian crossing by lines or other markings'. Remove the comma; optional sentence for (B) (marked mid-block crosswalks)."
+  },
+  {
+   "surface": "body",
+   "claim": "This means that at any intersection with sidewalks, there is a legal crosswalk — marked or not.",
+   "verdict": "keep",
+   "currentValue": "§ 40-1-1(10): '\"Crosswalk\" means: (A) That part of a roadway at an intersection included within the connections of the lateral lines of the sidewalks on opposite sides of the highway measured from the curbs or in the absence of curbs, from the edges of the traversable roadway; or (B) Any portion of a roadway at an intersection or elsewhere distinctly indicated for pedestrian crossing by lines or other markings on the surface.' Annotations: a crosswalk other than at an intersection 'must be marked in some manner so that motorists may know of it' (Wells v. Alderman, 117 Ga. App. 724 (1968)); 'A \"T\" intersection did not qualify as an unmarked crosswalk' (McKenzie v. Detenber, 226 Ga. App. 742 (1997)).",
+   "sourceName": "O.C.G.A. § 40-1-1(10)(A)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r86/gov.ga.ocga.title.40.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate paraphrase (subject to the T-intersection holding)."
+  },
+  {
+   "surface": "body",
+   "claim": "Drivers must yield to pedestrians in unmarked crosswalks just as they would in marked ones.",
+   "verdict": "update",
+   "currentValue": "§ 40-6-91(a): 'The driver of a vehicle shall stop and remain stopped to allow a pedestrian to cross the roadway within a crosswalk when the pedestrian is upon the half of the roadway upon which the vehicle is traveling, or when the pedestrian is approaching and is within one lane of the half of the roadway on which the vehicle is traveling or onto which it is turning. For the purposes of this subsection, \"half of the roadway\" means all traffic lanes carrying traffic in one direction of travel.'",
+   "sourceName": "O.C.G.A. § 40-6-91(a)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-91/",
+   "retrievedAt": "2026-10-02",
+   "note": "Use the statute's verb: 'Drivers must stop and remain stopped for pedestrians in unmarked crosswalks just as they would in marked ones.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Full right of way (O.C.G.A. § 40-6-91)",
+   "verdict": "keep",
+   "currentValue": "§ 40-6-91(a): 'The driver of a vehicle shall stop and remain stopped to allow a pedestrian to cross the roadway within a crosswalk when the pedestrian is upon the half of the roadway upon which the vehicle is traveling, or when the pedestrian is approaching and is within one lane of the half of the roadway on which the vehicle is traveling or onto which it is turning. For the purposes of this subsection, \"half of the roadway\" means all traffic lanes carrying traffic in one direction of travel.'",
+   "sourceName": "O.C.G.A. § 40-6-91(a)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-91/",
+   "retrievedAt": "2026-10-02",
+   "note": "Appears in both table columns; accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "Stop and remain stopped",
+   "verdict": "keep",
+   "currentValue": "§ 40-6-91(a): 'The driver of a vehicle shall stop and remain stopped to allow a pedestrian to cross the roadway within a crosswalk when the pedestrian is upon the half of the roadway upon which the vehicle is traveling, or when the pedestrian is approaching and is within one lane of the half of the roadway on which the vehicle is traveling or onto which it is turning. For the purposes of this subsection, \"half of the roadway\" means all traffic lanes carrying traffic in one direction of travel.'",
+   "sourceName": "O.C.G.A. § 40-6-91(a)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-91/",
+   "retrievedAt": "2026-10-02",
+   "note": "Table cell, both columns."
+  },
+  {
+   "surface": "body",
+   "claim": "Stop and remain stopped for pedestrians in any crosswalk (marked or unmarked) when the pedestrian is on the driver's half of the roadway or approaching within one lane (O.C.G.A. § 40-6-91)",
+   "verdict": "keep",
+   "currentValue": "§ 40-6-91(a): 'The driver of a vehicle shall stop and remain stopped to allow a pedestrian to cross the roadway within a crosswalk when the pedestrian is upon the half of the roadway upon which the vehicle is traveling, or when the pedestrian is approaching and is within one lane of the half of the roadway on which the vehicle is traveling or onto which it is turning. For the purposes of this subsection, \"half of the roadway\" means all traffic lanes carrying traffic in one direction of travel.'",
+   "sourceName": "O.C.G.A. § 40-6-91(a)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-91/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "Do not pass a stopped vehicle at a crosswalk — if another vehicle has stopped to let a pedestrian cross, you must also stop (O.C.G.A. § 40-6-91(c))",
+   "verdict": "update",
+   "currentValue": "§ 40-6-91(d): 'Whenever any vehicle is stopped at a marked crosswalk or at any unmarked crosswalk at an intersection to permit a pedestrian to cross the roadway, the driver of any other vehicle approaching from the rear shall not overtake and pass such stopped vehicle.' Current structure: (a) stop and remain stopped; (b) dart-out; (c) (a) does not apply under § 40-6-92(b) (tunnel/overpass provided); (d) no passing a stopped vehicle. Last amended Ga. L. 1995. HB 461 (2025-26, LC 39 4951S) would insert a rectangular-rapid-flash-beacon subsection and re-letter (d) as (e), but it is not on the Governor's 2025 or 2026 signed-legislation lists — the current letter is (d).",
+   "sourceName": "O.C.G.A. § 40-6-91(d)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-91/",
+   "retrievedAt": "2026-10-02",
+   "note": "Change '(c)' to '(d)'. Suggested: 'Do not pass a stopped vehicle at a crosswalk — if a vehicle ahead has stopped to let a pedestrian cross, you may not overtake and pass it (O.C.G.A. § 40-6-91(d))'."
+  },
+  {
+   "surface": "body",
+   "claim": "Exercise due care to avoid colliding with any pedestrian, regardless of who has the right of way (O.C.G.A. § 40-6-93)",
+   "verdict": "keep",
+   "currentValue": "O.C.G.A. § 40-6-93: 'Notwithstanding other provisions of this chapter, every driver of a vehicle shall exercise due care to avoid colliding with any pedestrian upon any roadway, shall give warning by sounding his horn when necessary, and shall exercise proper precautions upon observing any child or any obviously confused, incapacitated, or intoxicated person.' (last amended 1990)",
+   "sourceName": "O.C.G.A. § 40-6-93",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-93/",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  },
+  {
+   "surface": "body",
+   "claim": "Give audible warning when necessary by sounding the horn to alert a pedestrian of danger",
+   "verdict": "keep",
+   "currentValue": "O.C.G.A. § 40-6-93: 'Notwithstanding other provisions of this chapter, every driver of a vehicle shall exercise due care to avoid colliding with any pedestrian upon any roadway, shall give warning by sounding his horn when necessary, and shall exercise proper precautions upon observing any child or any obviously confused, incapacitated, or intoxicated person.' (last amended 1990)",
+   "sourceName": "O.C.G.A. § 40-6-93 ('shall give warning by sounding his horn when necessary')",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-93/",
+   "retrievedAt": "2026-10-02",
+   "note": "Optional: add '(O.C.G.A. § 40-6-93)'."
+  },
+  {
+   "surface": "body",
+   "claim": "Reduce speed in school zones, residential areas, and other areas where pedestrians are likely",
+   "verdict": "keep",
+   "currentValue": "O.C.G.A. § 40-6-180: every person shall drive at a reasonable and prudent speed '... when special hazards exist with respect to pedestrians or other traffic or by reason of weather or highway conditions.'",
+   "sourceName": "O.C.G.A. § 40-6-180 (Basic rules)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r86/gov.ga.ocga.title.40.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate in substance; optional cite '(O.C.G.A. § 40-6-180)'."
+  },
+  {
+   "surface": "body",
+   "claim": "Yield when turning — drivers making left or right turns at intersections must yield to pedestrians lawfully in the crosswalk",
+   "verdict": "update",
+   "currentValue": "§ 40-6-91(a): 'The driver of a vehicle shall stop and remain stopped to allow a pedestrian to cross the roadway within a crosswalk when the pedestrian is upon the half of the roadway upon which the vehicle is traveling, or when the pedestrian is approaching and is within one lane of the half of the roadway on which the vehicle is traveling or onto which it is turning. For the purposes of this subsection, \"half of the roadway\" means all traffic lanes carrying traffic in one direction of travel.' § 40-6-21(a)(1)(A) (circular green): 'Vehicular traffic must stop and remain stopped to allow a pedestrian to cross the roadway within a crosswalk when the pedestrian lawfully within the intersection or an adjacent crosswalk at the time such signal is exhibited is upon the half of the roadway upon which the vehicle is traveling, or ... within one lane of the half of the roadway on which the vehicle is traveling or onto which it is turning'; (B) green arrow: same duty to a pedestrian 'lawfully within an adjacent crosswalk'; flashing yellow arrow: same.",
+   "sourceName": "O.C.G.A. §§ 40-6-91(a), 40-6-21(a)(1)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-91/",
+   "retrievedAt": "2026-10-02",
+   "note": "Georgia's verb is again 'stop and remain stopped', and § 40-6-91(a) expressly reaches the half of the roadway 'onto which it is turning'. Suggested: 'Stop when turning — drivers turning left or right must stop and remain stopped for pedestrians lawfully in the crosswalk they are turning across (O.C.G.A. §§ 40-6-21, 40-6-91)'."
+  },
+  {
+   "surface": "body",
+   "claim": "Obey pedestrian signals — do not enter the roadway against a \"Don't Walk\" signal (O.C.G.A. § 40-6-22)",
+   "verdict": "keep",
+   "currentValue": "§ 40-6-22 ('Pedestrian-control signals'): (1) WALK — 'Pedestrians facing such signal may proceed across the roadway in the direction of the signal. Every driver of a vehicle shall stop and remain stopped for such pedestrians'; (2) flashing or steady DON'T WALK — 'No pedestrian shall start to cross the roadway in the direction of such signal, but any pedestrian who has partially completed his crossing on the WALK signal shall proceed to sidewalk or safety island while the DON'T WALK signal is showing.' (last amended Ga. L. 2013, HB 79)",
+   "sourceName": "O.C.G.A. § 40-6-22(2)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r86/gov.ga.ocga.title.40.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate ('No pedestrian shall start to cross')."
+  },
+  {
+   "surface": "body",
+   "claim": "Use crosswalks when available — if crossing between adjacent intersections with traffic signals, pedestrians must use the crosswalk (O.C.G.A. § 40-6-92)",
+   "verdict": "update",
+   "currentValue": "§ 40-6-92: (a) 'Every pedestrian crossing a roadway at any point other than within a marked crosswalk or within an unmarked crosswalk at an intersection shall yield the right of way to all vehicles upon the roadway unless he has already, and under safe conditions, entered the roadway.' (b) tunnel/overhead crossing provided → yield if using the roadway instead. (c) 'Between adjacent intersections at which traffic-control signals are in operation, pedestrians shall not cross at any place except in a marked crosswalk.' (d) no diagonal crossing unless authorized by traffic-control devices.",
+   "sourceName": "O.C.G.A. § 40-6-92(c)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-92/",
+   "retrievedAt": "2026-10-02",
+   "note": "Tighten to the statute: 'between adjacent intersections where traffic signals are operating, pedestrians may cross only in a marked crosswalk (O.C.G.A. § 40-6-92(c))'. The lead-in 'Use crosswalks when available' implies a general duty the statute does not impose; § 40-6-92(a) permits crossing elsewhere if the pedestrian yields."
+  },
+  {
+   "surface": "body",
+   "claim": "Yield to vehicles when outside a crosswalk — pedestrians crossing at locations other than crosswalks must yield to traffic",
+   "verdict": "update",
+   "currentValue": "§ 40-6-92: (a) 'Every pedestrian crossing a roadway at any point other than within a marked crosswalk or within an unmarked crosswalk at an intersection shall yield the right of way to all vehicles upon the roadway unless he has already, and under safe conditions, entered the roadway.' (b) tunnel/overhead crossing provided → yield if using the roadway instead. (c) 'Between adjacent intersections at which traffic-control signals are in operation, pedestrians shall not cross at any place except in a marked crosswalk.' (d) no diagonal crossing unless authorized by traffic-control devices.",
+   "sourceName": "O.C.G.A. § 40-6-92(a)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-92/",
+   "retrievedAt": "2026-10-02",
+   "note": "Add '(O.C.G.A. § 40-6-92(a)) unless they have already entered the roadway under safe conditions'."
+  },
+  {
+   "surface": "body",
+   "claim": "Walk on the left side of the road facing traffic when no sidewalk is available (O.C.G.A. § 40-6-96)",
+   "verdict": "update",
+   "currentValue": "§ 40-6-96: (b) 'Where a sidewalk is provided, it shall be unlawful for any pedestrian to stand or stride along and upon an adjacent roadway unless there is no motor vehicle traveling within 1,000 feet of such pedestrian on such roadway or the available sidewalk presents an imminent threat of bodily injury'; (c) no sidewalk but a shoulder → 'only on the shoulder, as far as practicable from the edge of the roadway'; (d) 'Where neither a sidewalk nor a shoulder is available, any pedestrian ... shall stand or stride as near as practicable to an outside edge of the roadway, and, if on a two-lane roadway, shall stand or stride only on the left side of the roadway'; (e) pedestrian upon a roadway yields to vehicles except as otherwise provided.",
+   "sourceName": "O.C.G.A. § 40-6-96(b)-(d) (GA Code Release 86; same text on Justia 2024)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r86/gov.ga.ocga.title.40.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Skips a step: with no sidewalk, the pedestrian must use the shoulder, as far from the roadway as practicable (c); only where there is neither sidewalk nor shoulder must he walk at the outside edge, and on a two-lane road the left side (d). Suggested: 'Use the sidewalk if there is one; if not, use the shoulder; and if there is neither, walk as close to the edge as practicable — on a two-lane road, on the left side, facing traffic (O.C.G.A. § 40-6-96)'."
+  },
+  {
+   "surface": "body",
+   "claim": "Do not suddenly leave a curb and walk or run into the path of a vehicle so close that the driver cannot yield (O.C.G.A. § 40-6-91(b))",
+   "verdict": "keep",
+   "currentValue": "§ 40-6-91(b): 'No pedestrian shall suddenly leave a curb or other place of safety and walk or run into the path of a vehicle which is so close that it is impractical for the driver to yield.'",
+   "sourceName": "O.C.G.A. § 40-6-91(b)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-91/",
+   "retrievedAt": "2026-10-02",
+   "note": "Subsection correct; 'cannot' vs statute's 'impractical' is an acceptable paraphrase."
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia follows a modified comparative fault system under O.C.G.A. § 51-12-33. Under this rule, an injured pedestrian can recover compensation as long as they are less than 50% at fault for the accident. If the pedestrian is found to be 50% or more at fault, they recover nothing.",
+   "verdict": "keep",
+   "currentValue": "§ 51-12-33(a): damages reduced 'in proportion to his or her percentage of fault'; (g): 'the plaintiff shall not be entitled to receive any damages if the plaintiff is 50 percent or more responsible for the injury or damages claimed.' Last amended 2022 (HB 961); SB 68 (2025) did not amend it.",
+   "sourceName": "O.C.G.A. § 51-12-33",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  },
+  {
+   "surface": "body",
+   "claim": "A pedestrian suffers $200,000 in damages",
+   "verdict": "keep",
+   "currentValue": "$200,000 × (1 − 0.20) = $160,000.",
+   "sourceName": "Arithmetic under § 51-12-33(a)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Illustrative figure, not a case result."
+  },
+  {
+   "surface": "body",
+   "claim": "The pedestrian recovers $160,000 (reduced by 20%)",
+   "verdict": "keep",
+   "currentValue": "$200,000 × 0.80 = $160,000.",
+   "sourceName": "Arithmetic under § 51-12-33(a)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": ""
+  },
+  {
+   "surface": "body",
+   "claim": "This is a key difference from South Carolina's pedestrian laws, where the comparative fault threshold is slightly different — an injured person can recover as long as they are less than 51% at fault (Nelson v. Concrete Supply Co.).",
+   "verdict": "drop",
+   "currentValue": "South Carolina: a plaintiff recovers if his or her negligence is not greater than the defendant's — barred at 51% or more (Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)).",
+   "sourceName": "Nelson v. Concrete Supply Co. (facts-1767)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Legally accurate, but this is a Georgia-only post (Georgia author/reviewer, Georgia statutes throughout) and this is its only South Carolina mention; it adds nothing a Georgia pedestrian needs and links 'South Carolina's pedestrian laws' to the general pedestrian practice page. Delete the sentence (and its link). Recorded for the owner in case a neutral comparison is wanted — if kept, it is correct as written."
+  },
+  {
+   "surface": "body",
+   "claim": "This accounts for a significant percentage of crosswalk accidents.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "No source located for the share of Georgia crosswalk crashes caused by left turns; GOHS 2024 fact sheet reports 415 pedestrian crashes (14%) in crosswalks but not by turning movement",
+   "sourceUrl": "https://www.gahighwaysafety.org/wp-content/uploads/2026/09/2024-Non-Motorist-Pedestrian-and-Bicyclist-Georgia-Traffic-Safety-Facts.V2.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Unsourced quantitative claim. Delete, or soften to 'Left-turning drivers are a frequent cause of crosswalk crashes.'"
+  },
+  {
+   "surface": "body",
+   "claim": "O.C.G.A. § 40-6-91(c) specifically prohibits this, but violations are common on multi-lane roads.",
+   "verdict": "update",
+   "currentValue": "§ 40-6-91(d): 'Whenever any vehicle is stopped at a marked crosswalk or at any unmarked crosswalk at an intersection to permit a pedestrian to cross the roadway, the driver of any other vehicle approaching from the rear shall not overtake and pass such stopped vehicle.' Current structure: (a) stop and remain stopped; (b) dart-out; (c) (a) does not apply under § 40-6-92(b) (tunnel/overpass provided); (d) no passing a stopped vehicle. Last amended Ga. L. 1995. HB 461 (2025-26, LC 39 4951S) would insert a rectangular-rapid-flash-beacon subsection and re-letter (d) as (e), but it is not on the Governor's 2025 or 2026 signed-legislation lists — the current letter is (d).",
+   "sourceName": "O.C.G.A. § 40-6-91(d)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-91/",
+   "retrievedAt": "2026-10-02",
+   "note": "Change '(c)' to '(d)'."
+  },
+  {
+   "surface": "body",
+   "claim": "A pedestrian struck at 40 mph has an 85% chance of death, compared to a 10% chance at 20 mph.",
+   "verdict": "update",
+   "currentValue": "AAA Foundation for Traffic Safety (Tefft, 2011): 'risk of death for a pedestrian reaches 10% at an impact speed of 23 mph, 25% at 32 mph, 50% at 42 mph, 75% at 50 mph, and 90% at 58 mph'.",
+   "sourceName": "AAA Foundation for Traffic Safety, Impact Speed and a Pedestrian's Risk of Severe Injury or Death (facts-1790)",
+   "sourceUrl": "https://aaafoundation.org/research/impact-speed-pedestrians-risk-severe-injury-death/",
+   "retrievedAt": "2026-10-02",
+   "note": "The 85%-at-40-mph figure is an old UK curve; the U.S. study puts 40 mph near 45%. Replace with: 'A pedestrian's risk of death reaches 10% at an impact speed of 23 mph, 50% at 42 mph and 90% at 58 mph, according to the AAA Foundation for Traffic Safety.' Same fix applied in facts-1790."
+  },
+  {
+   "surface": "body",
+   "claim": "Police accident report — if the officer cited the driver for a right-of-way violation, this is strong evidence of negligence",
+   "verdict": "update",
+   "currentValue": "Georgia: a traffic conviction is not admissible in a civil action, though a guilty plea may be shown as an admission (Howard v. Lay, 259 Ga. App. 391 (2003)) (facts-1767).",
+   "sourceName": "Howard v. Lay (facts-1767)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-6/",
+   "retrievedAt": "2026-10-02",
+   "note": "A citation is not itself evidence of negligence at trial; what helps is the officer's observations and a guilty plea. Suggested: 'Police accident report — the officer's findings, witness statements and any citation help establish what happened (a guilty plea to the citation can be used as an admission)'."
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia's statute of limitations for personal injury claims is 2 years from the date of the accident (O.C.G.A. § 9-3-33). Filing after this deadline bars your claim entirely",
+   "verdict": "keep",
+   "currentValue": "§ 9-3-33: two years after the right of action accrues.",
+   "sourceName": "O.C.G.A. § 9-3-33",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct for private defendants; government ante litem note applies (see keyTakeaways)."
+  },
+  {
+   "surface": "body",
+   "claim": "Punitive damages — in cases involving drunk driving, reckless driving, or intentional misconduct (O.C.G.A. § 51-12-5.1)",
+   "verdict": "update",
+   "currentValue": "O.C.G.A. § 51-12-5.1(b): punitive damages only where 'clear and convincing evidence' proves 'willful misconduct, malice, fraud, wantonness, oppression, or that entire want of care which would raise the presumption of conscious indifference to consequences'; 'negligence, even gross negligence, is inadequate' (Colonial Pipeline Co. v. Brown, 258 Ga. 115 (1988)). Cap $250,000 (§ 51-12-5.1(g)); no cap in product-liability cases ((e)(1)), where the defendant acted with specific intent to cause harm, or where the defendant acted or failed to act while under the influence of alcohol or drugs (other than lawfully prescribed drugs taken as prescribed) to the degree that judgment was substantially impaired ((f)). SB 68 (2025) did not change the cap.",
+   "sourceName": "O.C.G.A. § 51-12-5.1; Colonial Pipeline Co. v. Brown, 258 Ga. 115 (1988)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+   "retrievedAt": "2026-10-02",
+   "note": "Add the standard and cap: 'Punitive damages — where clear and convincing evidence shows willful misconduct, wantonness or conscious indifference to consequences, such as drunk driving; capped at $250,000 in most cases but uncapped against an impaired driver or one who intended harm (O.C.G.A. § 51-12-5.1)'. 'Reckless driving' alone does not guarantee punitive damages — ordinary or even gross negligence is not enough. Colonial Pipeline: https://law.justia.com/cases/georgia/supreme-court/1988/44925-1.html"
+  },
+  {
+   "surface": "body",
+   "claim": "Loss of consortium — impact on marital and family relationships",
+   "verdict": "update",
+   "currentValue": "Georgia loss of consortium belongs to the injured person's spouse; Georgia recognizes no parent's or child's consortium claim for a non-fatal injury (facts-1704: parent recovers medical expenses and lost services under §§ 19-7-1, 19-7-2, not companionship).",
+   "sourceName": "facts-1704 (Georgia parental claims)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-19/chapter-7/article-1/section-19-7-1/",
+   "retrievedAt": "2026-10-02",
+   "note": "'And family relationships' overstates: it is the spouse's separate claim. Suggested: 'Loss of consortium — your spouse's claim for the loss of companionship and services'."
+  },
+  {
+   "surface": "body",
+   "claim": "In cases where a pedestrian is killed, surviving family members may pursue a wrongful death claim under O.C.G.A. § 51-4-1 to recover the full value of the decedent's life.",
+   "verdict": "update",
+   "currentValue": "§ 51-4-1 is the definitions section ('full value of the life of the decedent', 'homicide'). The right of action is § 51-4-2(a): 'The surviving spouse or, if there is no surviving spouse, a child or children ... may recover for the homicide of the spouse or parent the full value of the life of the decedent'; parents' right is § 51-4-4 (incorporating § 19-7-1); otherwise the administrator or executor sues for the next of kin (§ 51-4-5). Two-year limitation under § 9-3-33.",
+   "sourceName": "O.C.G.A. §§ 51-4-1, 51-4-2, 51-4-4, 19-7-1 (facts-4539, facts-1649)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-4/section-51-4-2/",
+   "retrievedAt": "2026-10-02",
+   "note": "§ 51-4-1 only defines terms; the right of action is § 51-4-2. Suggested: 'In cases where a pedestrian is killed, the surviving spouse or children — or the parents, if neither survives — may bring a wrongful death claim to recover the full value of the decedent's life (O.C.G.A. §§ 51-4-1, 51-4-2).' 'Full value of the life' is correct."
+  },
+  {
+   "surface": "body",
+   "claim": "At Roden Law, our attorneys handle pedestrian accident cases throughout Georgia — from Savannah and the coastal communities to all corners of the state.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Writer profile (offices and practice areas)",
+   "sourceUrl": "/Users/brianhaas/Code/blue-sky-studio/client-rodenlaw-website/profiles/writer-profile.md",
+   "retrievedAt": "2026-10-02",
+   "note": "Firm representation."
+  },
+  {
+   "surface": "body",
+   "claim": "We handle all pedestrian accident cases on a contingency fee basis — you pay nothing unless we win.",
+   "verdict": "update",
+   "currentValue": "Fees and costs apply only upon successful recovery. No fees or costs with no recovery.",
+   "sourceName": "Firm-confirmed fee wording (2026-10-02)",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Differs from the confirmed wording: omits costs and frames recovery as 'win'. Suggested: 'We handle pedestrian accident cases on a contingency fee basis — fees and costs apply only upon successful recovery, and there are no fees or costs with no recovery.' (Same correction as facts-4581, facts-2556.)"
+  },
+  {
+   "surface": "body",
+   "claim": "call 1-844-RESULTS",
+   "verdict": "keep",
+   "currentValue": "tel:+18447378587 = 1-844-737-8587 = 1-844-RESULTS.",
+   "sourceName": "Writer profile",
+   "sourceUrl": "/Users/brianhaas/Code/blue-sky-studio/client-rodenlaw-website/profiles/writer-profile.md",
+   "retrievedAt": "2026-10-02",
+   "note": "href already tel:+18447378587."
+  },
+  {
+   "surface": "body",
+   "claim": "right-of-way rules",
+   "verdict": "keep",
+   "currentValue": "Legal Information Institute (Cornell Law School) Wex: right of way. Resolves 200 on 2026-10-02.",
+   "sourceName": "LII Wex — right of way",
+   "sourceUrl": "https://www.law.cornell.edu/wex/right_of_way",
+   "retrievedAt": "2026-10-02",
+   "note": "Outbound link anchor; fine."
+  }
+ ],
+ "recommendedEdits": [
+  "faq:4 + body (2 places): § 40-6-91(c) → § 40-6-91(d), and restate the rule as 'a driver approaching from behind may not overtake and pass a vehicle stopped at a crosswalk' (not 'adjacent lanes must also stop'). HB 461 (2025-26) would re-letter it (e), but it has not been signed — (d) is current.",
+  "Body § 40-6-91 block quote: restore the omitted words — 'to cross the roadway within a crosswalk when …' and '… on which the vehicle is traveling or onto which it is turning.' Update the 'trigger' bullet and 'Vehicles in adjacent lanes' bullet to match.",
+  "Unmarked crosswalk (faq:0 and body): drop 'every intersection' and 'or shoulder'; define it as where the sidewalks on opposite sides would connect across the road at an intersection (§ 40-1-1(10)(A); McKenzie v. Detenber — a T intersection did not qualify). Remove the comma after 'highway' in the quoted definition.",
+  "§ 40-6-22: retitle H3 'Pedestrian-Control Signals'; rewrite the mid-crossing sentence — the pedestrian proceeds to the sidewalk or safety island (§ 40-6-22(2)) and a driver getting green must stop and remain stopped for a pedestrian still lawfully in the crosswalk (§ 40-6-21(a)(1)).",
+  "§ 40-6-96 bullet: sidewalk → shoulder → outside edge, left side on a two-lane road only when there is neither sidewalk nor shoulder.",
+  "§ 40-6-92: add 'unless the pedestrian has already, and under safe conditions, entered the roadway' to the body paragraph and the 'Yield to vehicles' bullet; tighten 'Use crosswalks when available' to the (c) rule (between adjacent signalized intersections, marked crosswalk only).",
+  "Key Takeaways: replace both literal 'SS' with '§' (renders on the live page); 'yield' → 'stop and remain stopped'; soften 'pedestrians must … use crosswalks where available'; 'applies to all pedestrian accident claims' → note government-defendant ante litem notice.",
+  "Wrongful death: cite §§ 51-4-1, 51-4-2 and name the claimants (spouse/children; parents if neither).",
+  "Speed/fatality line: replace '85% at 40 mph / 10% at 20 mph' with AAA Foundation figures (10% at 23 mph, 50% at 42 mph, 90% at 58 mph).",
+  "Punitive bullet: add clear-and-convincing standard and $250,000 cap with impaired-driver/specific-intent exceptions (§ 51-12-5.1(b), (f), (g)).",
+  "Negligence per se sentence: add that the injured person must still prove causation (§ 51-1-6).",
+  "Police report bullet: a citation is not itself evidence of negligence at trial; reword.",
+  "Loss of consortium: spouse's claim, not 'family relationships'.",
+  "Left-turn 'significant percentage' sentence: delete or soften (unsourced).",
+  "Intro 'thousands of preventable injuries every year': optionally anchor to GOHS 2024 — 286 Georgia pedestrian deaths and 2,653 pedestrian injuries.",
+  "Drop the South Carolina comparison sentence (Nelson) — Georgia-only post; it is accurate, so retain only if the owner wants a neutral cross-state note.",
+  "Fee line: replace 'you pay nothing unless we win' with the confirmed wording 'Fees and costs apply only upon successful recovery. No fees or costs with no recovery.'",
+  "Optional additions: '(O.C.G.A. § 40-6-93)' after the horn bullet; '(O.C.G.A. § 40-6-180)' after the reduce-speed bullet; § 40-6-93's 'any child or any obviously confused, incapacitated, or intoxicated person' clause in the due-care section."
+ ],
+ "statuteCitations": [
+  {
+   "section": "O.C.G.A. § 40-1-1(10)",
+   "name": "Definitions — 'Crosswalk': (A) at an intersection within the connections of the lateral lines of the sidewalks on opposite sides; (B) any portion distinctly indicated by markings",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r86/gov.ga.ocga.title.40.html"
+  },
+  {
+   "section": "O.C.G.A. § 40-6-21",
+   "name": "Meaning of traffic signals — on green/green arrow/flashing yellow arrow, stop and remain stopped for pedestrians lawfully in the intersection or adjacent crosswalk",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r86/gov.ga.ocga.title.40.html"
+  },
+  {
+   "section": "O.C.G.A. § 40-6-22",
+   "name": "Pedestrian-control signals — WALK: drivers stop and remain stopped; DON'T WALK: do not start; partial crossers proceed to sidewalk or safety island",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r86/gov.ga.ocga.title.40.html"
+  },
+  {
+   "section": "O.C.G.A. § 40-6-91",
+   "name": "Right of way in crosswalks — (a) stop and remain stopped (half of roadway / within one lane / turning onto); (b) dart-out; (c) tunnel exception; (d) no passing a vehicle stopped at a crosswalk",
+   "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-91/"
+  },
+  {
+   "section": "O.C.G.A. § 40-6-92",
+   "name": "Crossing roadway elsewhere than at crosswalk — (a) yield unless already entered under safe conditions; (b) tunnel/overpass; (c) marked crosswalk only between adjacent signalized intersections; (d) no diagonal crossing",
+   "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-92/"
+  },
+  {
+   "section": "O.C.G.A. § 40-6-93",
+   "name": "Drivers to exercise due care — horn when necessary; precautions for any child or obviously confused, incapacitated, or intoxicated person",
+   "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-5/section-40-6-93/"
+  },
+  {
+   "section": "O.C.G.A. § 40-6-96",
+   "name": "Pedestrians on or along roadway — sidewalk, then shoulder, then outside edge (left side on two-lane roads)",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r86/gov.ga.ocga.title.40.html"
+  },
+  {
+   "section": "O.C.G.A. § 40-6-180",
+   "name": "Basic speed rule — reasonable and prudent speed when special hazards exist with respect to pedestrians",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r86/gov.ga.ocga.title.40.html"
+  },
+  {
+   "section": "O.C.G.A. § 51-1-6",
+   "name": "Breach of legal duty — negligence per se (duty and breach; causation still required)",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-1/section-51-1-6/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-33",
+   "name": "Apportionment; plaintiff barred at 50 percent or more (g); unchanged by SB 68",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-5.1",
+   "name": "Punitive damages — clear and convincing (b); no cap for specific intent or impairment (f); $250,000 cap (g)",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/"
+  },
+  {
+   "section": "O.C.G.A. § 51-4-1",
+   "name": "Wrongful death — definitions ('full value of the life of the decedent')",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-4/section-51-4-1/"
+  },
+  {
+   "section": "O.C.G.A. § 51-4-2",
+   "name": "Wrongful death — surviving spouse, then children, recover the full value of the life",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-4/section-51-4-2/"
+  },
+  {
+   "section": "O.C.G.A. § 19-7-1",
+   "name": "Parents' right of recovery (including for a child's homicide, via § 51-4-4)",
+   "url": "https://law.justia.com/codes/georgia/title-19/chapter-7/article-1/section-19-7-1/"
+  },
+  {
+   "section": "O.C.G.A. § 9-3-33",
+   "name": "Injuries to the person — two years",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+  },
+  {
+   "section": "Colonial Pipeline Co. v. Brown, 258 Ga. 115 (1988)",
+   "name": "Punitive damages — negligence, even gross negligence, is inadequate",
+   "url": "https://law.justia.com/cases/georgia/supreme-court/1988/44925-1.html"
+  }
+ ],
+ "authoritativeLinks": [
+  {
+   "name": "Georgia Governor's Office of Highway Safety — 2024 Non-Motorist (Pedestrian and Bicyclist) Georgia Traffic Safety Facts (286 pedestrian deaths in 2024, 310 in 2023; 2,653 pedestrians injured; 81% of deaths in dark conditions)",
+   "url": "https://www.gahighwaysafety.org/wp-content/uploads/2026/09/2024-Non-Motorist-Pedestrian-and-Bicyclist-Georgia-Traffic-Safety-Facts.V2.pdf"
+  },
+  {
+   "name": "NHTSA FARS Encyclopedia — 2024 state pedestrian fatality rates (Georgia 286; 2.56 per 100,000)",
+   "url": "https://www-fars.nhtsa.dot.gov/States/StatesPedestrians.aspx"
+  },
+  {
+   "name": "AAA Foundation for Traffic Safety — Impact Speed and a Pedestrian's Risk of Severe Injury or Death (10% at 23 mph, 50% at 42 mph, 90% at 58 mph)",
+   "url": "https://aaafoundation.org/research/impact-speed-pedestrians-risk-severe-injury-death/"
+  },
+  {
+   "name": "Official Code of Georgia Annotated, Title 40 (Release 86, Public.Resource.Org / Code Revision Commission) — §§ 40-1-1, 40-6-21, 40-6-22, 40-6-91 to -96, 40-6-180 with annotations",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r86/gov.ga.ocga.title.40.html"
+  },
+  {
+   "name": "HB 461 (2025-26), House Committee substitute LC 39 4951S — shows current § 40-6-91 lettering ((c) tunnel exception, (d) no passing); not enacted",
+   "url": "https://www.legis.ga.gov/api/legislation/document/20252026/243614"
+  },
+  {
+   "name": "Georgia Governor — 2026 Signed Legislation (HB 461 absent)",
+   "url": "https://gov.georgia.gov/executive-action/legislation/signed-legislation/2026"
+  },
+  {
+   "name": "Legal Information Institute, Cornell Law School — Wex: right of way",
+   "url": "https://www.law.cornell.edu/wex/right_of_way"
+  }
+ ],
+ "quoteNote": "Claims are quoted from the rendered text with HTML tags stripped and whitespace collapsed; several body claims span inline <strong> or <a> tags in body.html (the § 40-6-91 and § 40-6-93 quotations, driver/pedestrian duty bullets, the fee line, the 'right-of-way rules' link). Key Takeaways claims preserve the stored literal 'SS' in place of '§' — that defect is itself a finding. Justia and GOHS HTML pages bot-challenge; statute text for §§ 40-1-1, 40-6-21, 40-6-22, 40-6-96 and 40-6-180 was read from the public-domain OCGA Release 86 transform (2022) and cross-checked against Justia 2024/2025 search excerpts and the 2026 HB 461 substitute (which reprints current § 40-6-91). The legis.ga.gov document URL answers GET 200 (HEAD 405)."
+}

@@ -1,0 +1,19 @@
+{
+ "url": "https://rodenlaw.com/blog/dangerous-savannah-intersections/",
+ "reviewed": "2026-10-02",
+ "attorney": "3729",
+ "modified": "2026-10-03 02:41:18",
+ "fields": {
+  "content": true,
+  "excerpt": true,
+  "keyTakeaways": true,
+  "metaDescription": true,
+  "faqs": true
+ },
+ "liveCheck": "Chrome 2026-10-02 with ?nc=: new text present, removed claims absent, FAQPage JSON-LD parses",
+ "title": {
+  "before": "The Most Dangerous Intersections and Roads in Savannah, Georgia: What Drivers Need to Know",
+  "after": "Savannah's Highest-Crash Intersections and Roads: What Drivers Need to Know",
+  "liveCheck": "<title>, H1 and Article headline carry the new title; slug unchanged"
+ }
+}

@@ -1,0 +1,928 @@
+{
+ "postId": 4538,
+ "slug": "savannah-dangerous-highways-i16-i95-abercorn",
+ "liveUrl": "https://rodenlaw.com/blog/savannah-dangerous-highways-i16-i95-abercorn/",
+ "jurisdiction": "GA",
+ "researchedAt": "2026-10-02",
+ "verifiedClaims": [
+  {
+   "surface": "title",
+   "claim": "Savannah's Most Dangerous Highways: I-16, I-95, Abercorn Street, and DeRenne Avenue",
+   "verdict": "update",
+   "currentValue": "FARS 2020-2024, Chatham County (171 fatal crashes, 182 deaths): I-95 23 fatal crashes / 26 deaths; US 17/SR 25 (Ogeechee Rd and other segments) 23 / 24; US 80/SR 26 (Victory Dr, Islands Expwy etc.) 17 / 17; I-16 14 / 14; Abercorn St (SR 204 east of ~81.21 W, plus crashes coded 'Abercorn St') 13 / 14; SR 204 west (Fort Argyle Rd) 8 / 12; I-516 7 / 8; DeRenne Ave 3 / 3. Inside the City of Savannah (FARS CITYNAME = Savannah; 91 fatal crashes, 94 deaths): US 17/SR 25 12 / 12; Abercorn St 11 / 12; I-95 6 / 7; I-516 6 / 7; US 80/SR 26 6 / 6; I-16 5 / 5; DeRenne Ave 3 / 3. By fatal crashes, I-95 leads Chatham County; I-16 and Abercorn are in the top six; DeRenne Avenue is not near the top (3 fatal crashes in five years), and the US 17/SR 25 (Ogeechee Road) and US 80/SR 26 corridors outrank both I-16 and DeRenne but are absent. Abercorn and DeRenne are arterial streets, not highways. No GDOT, GOHS or City of Savannah publication ranks these roads as the 'most dangerous'.",
+   "sourceName": "NHTSA Fatality Analysis Reporting System (FARS) national accident files 2020-2024, tallied locally for Chatham County, GA (STATE 13, COUNTY 51) by TWAY_ID/TWAY_ID2 route fields",
+   "sourceUrl": "https://static.nhtsa.gov/nhtsa/downloads/FARS/2024/National/FARS2024NationalCSV.zip",
+   "retrievedAt": "2026-10-02",
+   "note": "NOT a patcher-editable surface (title is not in body.html) - for the owner. 'Most Dangerous' is defensible only for I-95 (most fatal crashes and deaths in Chatham County 2020-2024) and arguably Abercorn inside the city; it is not defensible for DeRenne. Suggested title: \"Savannah's High-Crash Roads: I-95, I-16, Abercorn Street and DeRenne Avenue\" or \"Crash Risks on Savannah's Busiest Roads: I-16, I-95, Abercorn Street and DeRenne Avenue\". The slug (savannah-dangerous-highways-i16-i95-abercorn) can stay - changing it would need a 301."
+  },
+  {
+   "surface": "excerpt",
+   "claim": "Why I-16, I-95, Abercorn and DeRenne carry so many Savannah crashes, and what to do if you are injured on one.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "NHTSA Fatality Analysis Reporting System (FARS) national accident files 2020-2024, tallied locally for Chatham County, GA (STATE 13, COUNTY 51) by TWAY_ID/TWAY_ID2 route fields",
+   "sourceUrl": "https://static.nhtsa.gov/nhtsa/downloads/FARS/2024/National/FARS2024NationalCSV.zip",
+   "retrievedAt": "2026-10-02",
+   "note": "Neutral; supported for I-95, I-16 and Abercorn by FARS fatal-crash counts and for DeRenne by its congestion and its red-light-camera intersection with Abercorn (GDOT 2024). Published as the Article description."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Savannah's most dangerous highways — I-16 (the \"Devil's Highway\"), I-95, Abercorn Street, DeRenne Avenue, and I-516 — carry traffic volumes that exceed their design capacity, fueled by Port of Savannah truck traffic and 14 million annual tourists.",
+   "verdict": "update",
+   "currentValue": "Visitor volume: an estimated 12.9 million visitors in 2024 (Visit Savannah, as reported to City Council, Feb. 12, 2026) and 12.9 million again in 2025 (Tourism Economics study for Visit Savannah, May 2026). 'Devil's Highway' has no documented basis outside law-firm and marketing pages. No source says all five roads exceed design capacity; the city describes DeRenne as hindered by 'heavy congestion and traffic queues' (Project DeRenne). FARS 2020-2024, Chatham County (171 fatal crashes, 182 deaths): I-95 23 fatal crashes / 26 deaths; US 17/SR 25 (Ogeechee Rd and other segments) 23 / 24; US 80/SR 26 (Victory Dr, Islands Expwy etc.) 17 / 17; I-16 14 / 14; Abercorn St (SR 204 east of ~81.21 W, plus crashes coded 'Abercorn St') 13 / 14; SR 204 west (Fort Argyle Rd) 8 / 12; I-516 7 / 8; DeRenne Ave 3 / 3. Inside the City of Savannah (FARS CITYNAME = Savannah; 91 fatal crashes, 94 deaths): US 17/SR 25 12 / 12; Abercorn St 11 / 12; I-95 6 / 7; I-516 6 / 7; US 80/SR 26 6 / 6; I-16 5 / 5; DeRenne Ave 3 / 3.",
+   "sourceName": "City of Savannah Agenda Plus, Feb. 12, 2026 council meeting (Visit Savannah 50th anniversary item); NHTSA FARS 2020-2024",
+   "sourceUrl": "https://agenda.savannahga.gov/publishing/february-12-2026-city-council-regular-meeting/1544_12040.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Three fixes: (1) '14 million' -> 'nearly 13 million' (12.9 million); (2) delete '(the \"Devil's Highway\")'; (3) replace 'Savannah's most dangerous highways' with 'Savannah's high-crash roads' and 'carry traffic volumes that exceed their design capacity' with 'carry heavy commuter, tourist and port truck traffic'. Suggested: 'Savannah's high-crash roads — I-95, I-16, Abercorn Street, DeRenne Avenue and I-516 — carry heavy commuter traffic, Port of Savannah trucks and nearly 13 million visitors a year.' The 2025 Tourism Economics release (Savannah Area Chamber) returned 403 to curl and blocked the browser; the city agenda page resolves and carries the 2024 figure."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Georgia's two-year statute of limitations (O.C.G.A. § 9-3-33) and comparative fault rule (O.C.G.A. § 51-12-33, less than 50% at fault) govern how crash victims recover compensation, while federal trucking regulations provide additional grounds for claims against commercial carriers.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. §§ 9-3-33, 51-12-33 (Justia, sibling packs)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified; § 51-12-33's 50% bar unchanged by 2025 SB 68. 'Additional grounds for claims' is acceptable shorthand - FMCSR violations are evidence of negligence (negligence per se), not a separate cause of action (4539 precedent)."
+  },
+  {
+   "surface": "faq:0",
+   "claim": "Interstate 16, nicknamed the \"Devil's Highway,\" is one of Savannah's most dangerous roads due to its history of fatal high-speed collisions, heavy commercial truck traffic from the Port of Savannah, and dangerous interchange areas including the I-16/Chatham Parkway junction that handles over 25,000 vehicles daily.",
+   "verdict": "update",
+   "currentValue": "By FARS 2020-2024, I-95 - not I-16 - had the most fatal crashes of any road in Chatham County (23 crashes, 26 deaths); I-16 had 14 (14 deaths). The I-16 mainline between Chatham Parkway and Dean Forest Road carried 59,600 vehicles a day in 2019 (AARoads, citing GDOT); no source gives an interchange count of '25,000'. GDOT's 16@95 project widened I-16 to three lanes each way between I-95 and I-516 and added ramp meters at the Chatham Parkway and SR 307 on-ramps.",
+   "sourceName": "NHTSA Fatality Analysis Reporting System (FARS) national accident files 2020-2024, tallied locally for Chatham County, GA (STATE 13, COUNTY 51) by TWAY_ID/TWAY_ID2 route fields",
+   "sourceUrl": "https://static.nhtsa.gov/nhtsa/downloads/FARS/2024/National/FARS2024NationalCSV.zip",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQ answers publish as FAQPage structured data. The question asks for 'the most dangerous highway'; the sourced answer is I-95. Suggested answer: 'By federal fatal-crash data, Interstate 95 recorded the most fatal crashes of any road in Chatham County from 2020 through 2024 — 23 crashes that killed 26 people — followed by U.S. 17 (Ogeechee Road) and U.S. 80. I-16 recorded 14. Heavy Port of Savannah truck traffic and high-speed interchanges such as I-16 at I-95 and Chatham Parkway add to the risk.' Delete the nickname and the 25,000 figure (or substitute 'about 60,000 vehicles a day on I-16 near Chatham Parkway (GDOT 2019 count)'). AARoads: https://www.aaroads.com/guides/i-016-west-savannah-ga"
+  },
+  {
+   "surface": "faq:1",
+   "claim": "Why is I-16 called the Devil's Highway?",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "The FAQ question itself (meta.json faqs[1].question). No GDOT, news (WTOC, WSAV, Savannah Morning News) or encyclopedia source documents the nickname; every hit is a law-firm page (including Roden's own location pages), a 2019 law-firm blog, or a courier's marketing page - a circular source. The real 'Devil's Highway' was U.S. 666. Delete the whole FAQ (question and answer). Note for the owner: the same nickname is published on /blog/dangerous-savannah-intersections/ and /locations/georgia/savannah/westside-savannah/ - sweep those."
+  },
+  {
+   "surface": "faq:1",
+   "claim": "Locals nicknamed the Savannah segment of I-16 the \"Devil's Highway\" because of its well-documented history of fatal collisions.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Unsourced nickname and 'well-documented' history that is not documented; delete with the FAQ (see question entry). Publishes as FAQPage structured data."
+  },
+  {
+   "surface": "faq:1",
+   "claim": "The highway carries a dense mix of commuter traffic, long-haul freight trucks serving the Port of Savannah, and vehicles connecting to I-95, creating dangerous speed differentials and congestion that produce deadly crashes.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Qualitative and not wrong, but it only exists to answer the nickname question; delete with the FAQ. The same idea survives in the body's I-16 section."
+  },
+  {
+   "surface": "faq:2",
+   "claim": "Yes. Abercorn Street is consistently the most dangerous road in the City of Savannah.",
+   "verdict": "update",
+   "currentValue": "FARS 2020-2024, Chatham County (171 fatal crashes, 182 deaths): I-95 23 fatal crashes / 26 deaths; US 17/SR 25 (Ogeechee Rd and other segments) 23 / 24; US 80/SR 26 (Victory Dr, Islands Expwy etc.) 17 / 17; I-16 14 / 14; Abercorn St (SR 204 east of ~81.21 W, plus crashes coded 'Abercorn St') 13 / 14; SR 204 west (Fort Argyle Rd) 8 / 12; I-516 7 / 8; DeRenne Ave 3 / 3. Inside the City of Savannah (FARS CITYNAME = Savannah; 91 fatal crashes, 94 deaths): US 17/SR 25 12 / 12; Abercorn St 11 / 12; I-95 6 / 7; I-516 6 / 7; US 80/SR 26 6 / 6; I-16 5 / 5; DeRenne Ave 3 / 3. Abercorn is tied for the most traffic deaths among roads inside the city limits (12, with the US 17/SR 25 corridor) and has one fewer fatal crash; 'consistently the most dangerous' is not supported. Chatham County's Safe Streets for All plan (Jan. 2025, 2018-2022 data, unincorporated county only) puts SR 204/Abercorn and US 17/SR 25 on its high-injury network.",
+   "sourceName": "NHTSA Fatality Analysis Reporting System (FARS) national accident files 2020-2024, tallied locally for Chatham County, GA (STATE 13, COUNTY 51) by TWAY_ID/TWAY_ID2 route fields",
+   "sourceUrl": "https://static.nhtsa.gov/nhtsa/downloads/FARS/2024/National/FARS2024NationalCSV.zip",
+   "retrievedAt": "2026-10-02",
+   "note": "Change to: 'Yes. Abercorn Street is one of the deadliest roads in Savannah: federal data show 11 fatal crashes killing 12 people on Abercorn inside the city limits from 2020 through 2024, tied with U.S. 17 for the most deaths of any city road.' Publishes as FAQPage structured data."
+  },
+  {
+   "surface": "faq:2",
+   "claim": "The corridor produces more crashes per mile than any other road in Chatham County due to its enormous traffic volumes, heavy commercial development, and multiple high-crash intersections including White Bluff Road, King George Boulevard, Rio Road, and Victory Drive.",
+   "verdict": "update",
+   "currentValue": "No source ranks Chatham County roads by crashes per mile; the county SS4A crash-rate tables cover unincorporated segments only and do not put Abercorn first. Sourced intersections: GDOT's 2024 red-light-camera report lists Savannah's four camera intersections, all on Abercorn: White Bluff Rd, Mall Blvd, DeRenne Ave and Montgomery Cross Rd. FARS: fatal crashes at Abercorn/White Bluff (2022), Abercorn/DeRenne (2022), Abercorn/Victory Dr (2023), Abercorn/Eisenhower (2024), Abercorn/52nd St (2024), Abercorn/Tibet Ave (2024). Chatham County's plan flags Abercorn at the Veterans Parkway interchange, at Gateway Blvd and the King George Blvd segment (unincorporated).",
+   "sourceName": "GDOT, Red Light Running Photo Enforcement annual report 2024",
+   "sourceUrl": "https://www.dot.ga.gov/DriveSmart/SafetyOperation/SafetyOperation/Red/2024RLRPES_ANNUALREPORT.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Delete 'more crashes per mile than any other road in Chatham County'. Suggested: 'The corridor carries heavy traffic past dense commercial development, and several of its intersections — including White Bluff Road, Mall Boulevard, DeRenne Avenue and Victory Drive — have seen fatal crashes or carry red-light cameras.' Rio Road and King George Boulevard are defensible only via the county plan (King George segment) - optional."
+  },
+  {
+   "surface": "faq:3",
+   "claim": "Under O.C.G.A. § 9-3-33, you have two years from the date of your accident to file a personal injury lawsuit in Georgia.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-3-33 (Justia, sibling packs)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified. Georgia has no general discovery rule for motor-vehicle injury claims. Optional add: claims against a city need written notice within 6 months (§ 36-33-5), against the state within 12 months (§ 50-21-26)."
+  },
+  {
+   "surface": "faq:3",
+   "claim": "South Carolina allows three years under S.C. Code § 15-3-530.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "SC law on a Georgia-only hyperlocal post (4539/4715 precedent) - delete. Publishes as FAQPage structured data."
+  },
+  {
+   "surface": "faq:3",
+   "claim": "Because I-95 crosses the state line, victims of crashes near the Georgia-South Carolina border should be aware of both deadlines.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Cross-jurisdiction framing; a crash in Chatham County is a Georgia claim. Delete (4539 precedent)."
+  },
+  {
+   "surface": "faq:4",
+   "claim": "Move to safety if possible, call 911 immediately, seek medical treatment even for seemingly minor injuries, document the scene with photographs if safe, do not discuss fault with anyone at the scene, and contact a Savannah car accident lawyer before giving recorded statements to insurance companies.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 40-6-273 (unicourt Title 40 mirror)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Practical guidance; § 40-6-273 requires reporting a crash involving injury, death or property damage. No factual claim to correct."
+  },
+  {
+   "surface": "faq:5",
+   "claim": "Trucking companies can be held liable under respondeat superior for their drivers' on-duty negligence, and separate claims may arise from the company's own failures in hiring, training, or vehicle maintenance.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-2-2 (unicourt Title 51 mirror)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.51.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Respondeat superior (§ 51-2-2) and direct negligent hiring/retention/maintenance claims are correctly stated. Hours-of-service: 49 C.F.R. § 395.3."
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia and South Carolina Laws for Accident Victims",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "H2 and its table-of-contents link (#georgia-laws) - both read this text. Change both to 'Georgia Laws for Accident Victims'; keep the id. (4539 precedent.)"
+  },
+  {
+   "surface": "body",
+   "claim": "According to the Georgia Governor's Office of Highway Safety, Chatham County ranks among the state's top counties for traffic fatalities, and driver negligence on Savannah's most dangerous highways is the leading cause.",
+   "verdict": "update",
+   "currentValue": "FARS: Chatham County had 182 traffic deaths in 2020-2024, eighth of Georgia's 159 counties; 29 deaths in 2024 (8th) and 39 in 2023 (6th). No GOHS publication attributes Chatham deaths to 'driver negligence on Savannah's most dangerous highways'.",
+   "sourceName": "NHTSA Fatality Analysis Reporting System (FARS) national accident files 2020-2024, tallied locally for Chatham County, GA (STATE 13, COUNTY 51) by TWAY_ID/TWAY_ID2 route fields",
+   "sourceUrl": "https://static.nhtsa.gov/nhtsa/downloads/FARS/2024/National/FARS2024NationalCSV.zip",
+   "retrievedAt": "2026-10-02",
+   "note": "Re-attribute to NHTSA FARS (GOHS publishes FARS-based data but no county ranking was located) and drop the 'leading cause' clause. Suggested: 'Federal crash data rank Chatham County eighth of Georgia's 159 counties for traffic deaths from 2020 through 2024 — 182 people killed (NHTSA Fatality Analysis Reporting System).'"
+  },
+  {
+   "surface": "body",
+   "claim": "Interstate 16, Interstate 95, Abercorn Street, DeRenne Avenue, and I-516 (Lynes Parkway) each present distinct dangers — from high-speed commercial truck collisions to congestion-fueled rear-end pileups.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "NHTSA Fatality Analysis Reporting System (FARS) national accident files 2020-2024, tallied locally for Chatham County, GA (STATE 13, COUNTY 51) by TWAY_ID/TWAY_ID2 route fields",
+   "sourceUrl": "https://static.nhtsa.gov/nhtsa/downloads/FARS/2024/National/FARS2024NationalCSV.zip",
+   "retrievedAt": "2026-10-02",
+   "note": "Qualitative; all five roads recorded fatal crashes in 2020-2024 FARS."
+  },
+  {
+   "surface": "body",
+   "claim": "The Port of Savannah is the fourth-busiest container port in the United States",
+   "verdict": "keep",
+   "currentValue": "2025 TEUs: Los Angeles 10.24M, Long Beach 9.88M, New York/New Jersey 8.90M, Savannah 5.69M, Houston 4.30M.",
+   "sourceName": "KBC Advisors, Top U.S. Container Ports, Year-End 2025",
+   "sourceUrl": "https://assets.ctfassets.net/opxulaoc9o1m/6izRv2LQoM0fatjvHLlSU2/dee52bac5a97f5e0aa6fa51b4c5cdf4c/KBC_Advisors_Top_US_Container_Ports_Year-End_2025.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Fourth by individual port is correct. GPA itself says 'third-busiest container gateway' (it counts LA/Long Beach as one gateway) - either is fine; do not write 'third-busiest port'. GPA CY2025: nearly 5.7M TEUs (https://gaports.com/press-releases/port-of-savannah-achieves-second-busiest-year-ever/ - resolved in run-4715; 403 to curl this run). 'Dominates Savannah's highways' is characterization; GPA reports 14,000-16,000 truck moves a day."
+  },
+  {
+   "surface": "body",
+   "claim": "Savannah attracts more than 14 million visitors annually",
+   "verdict": "update",
+   "currentValue": "An estimated 12.9 million visitors in 2024 and again in 2025 (7.2 million overnight, 5.7 million day visitors), $4.1 billion in visitor spending (Visit Savannah / Tourism Economics).",
+   "sourceName": "City of Savannah Agenda Plus, Feb. 12, 2026 council meeting (Visit Savannah item: \"an estimated 12.9 million visitors in 2024\")",
+   "sourceUrl": "https://agenda.savannahga.gov/publishing/february-12-2026-city-council-regular-meeting/1544_12040.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Change to 'Savannah attracts nearly 13 million visitors a year (12.9 million in 2025, according to Visit Savannah)'. The 14 million figure has no source and is ~9% high. Same number in Key Takeaways."
+  },
+  {
+   "surface": "body",
+   "claim": "Abercorn Street, DeRenne Avenue, and key interstate interchanges operate at or above capacity during peak hours, creating congestion that leads to aggressive driving and chain-reaction collisions.",
+   "verdict": "update",
+   "currentValue": "Sourced for DeRenne only: the city describes it as 'a six-lane major arterial' whose mobility 'is hindered by heavy congestion and traffic queues, driven by peak-hour demand' (CORE MPO project update, Oct. 2025). No capacity analysis located for Abercorn.",
+   "sourceName": "City of Savannah, CORE MPO Project Updates, October 2025 (Project DeRenne)",
+   "sourceUrl": "https://www.thempc.org/eagenda/x/mpo/2025/october-22-2025-core-mpo-board/city-of-savannah-core-mpo-project-updates-october-2025_3.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Soften: 'Abercorn Street, DeRenne Avenue and key interstate interchanges are heavily congested at peak hours, and congestion breeds aggressive driving and chain-reaction collisions.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Interstate 16 stretches 167 miles from Savannah to Macon",
+   "verdict": "keep",
+   "currentValue": "I-16 is 166.81 miles (Wikipedia infobox, from GDOT).",
+   "sourceName": "Wikipedia - Interstate 16",
+   "sourceUrl": "https://en.wikipedia.org/wiki/Interstate_16",
+   "retrievedAt": "2026-10-02",
+   "note": "Rounds to 167; correct. Official name in Chatham: Jim Gillis Historic Savannah Parkway (4715 pack)."
+  },
+  {
+   "surface": "body",
+   "claim": "the Savannah-area segment of this highway has earned the grim nickname \"Devil's Highway\" for its history of fatal collisions.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "No documented basis: only law-firm pages (including Roden's own location pages), a 2019 law-firm blog and a courier's marketing page use it; no GDOT, news or reference source. Delete the clause; the sentence can end '...and the Savannah-area segment has a history of fatal collisions' (FARS: 14 fatal crashes on I-16 in Chatham County 2020-2024)."
+  },
+  {
+   "surface": "body",
+   "claim": "Interstate 16: The \"Devil's Highway\"",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "H2 and its TOC link (#i-16) both carry the nickname. Change both to 'Interstate 16: Port Traffic and High-Speed Interchanges' (or simply 'Interstate 16'); keep the id."
+  },
+  {
+   "surface": "body",
+   "claim": "The I-16/Chatham Parkway interchange handles more than 25,000 vehicles daily and is one of the most collision-prone locations in Chatham County.",
+   "verdict": "update",
+   "currentValue": "No source for 25,000 or for a collision ranking. AARoads (citing GDOT) gives 59,600 vehicles a day on I-16 between Chatham Parkway and Dean Forest Road (2019). GDOT's 16@95 project added ramp meters at the Chatham Parkway and SR 307 on-ramps and widened I-16 to three lanes each way between I-95 and I-516 (fact sheet, Sept. 2025). FARS shows 2 fatal crashes at or near the interchange 2020-2024.",
+   "sourceName": "AARoads - Interstate 16 West, Savannah to Blitchton; GDOT 16@95 Improvement Projects Fact Sheet",
+   "sourceUrl": "https://www.aaroads.com/guides/i-016-west-savannah-ga",
+   "retrievedAt": "2026-10-02",
+   "note": "Suggested: 'The I-16/Chatham Parkway interchange sits on a stretch of I-16 that carries roughly 60,000 vehicles a day, and GDOT has added ramp meters there to manage merging traffic.' Drop 'one of the most collision-prone locations in Chatham County'. Keep 'Short merge ramps...' only as hedged ('can force'). 16@95 fact sheet: https://www.dot.ga.gov/systems/ProjectDocuments/1695Improvements/16@95%20Improvement%20Projects-Fact%20Sheet.pdf"
+  },
+  {
+   "surface": "body",
+   "claim": "The I-16/I-95 junction is a major bottleneck where long-distance interstate traffic merges with local commuter traffic, producing frequent rear-end collisions and multi-vehicle pileups.",
+   "verdict": "update",
+   "currentValue": "GDOT's 16@95 Improvement Projects (P.I. 0012757/0012758, $289.9M) rebuilt the I-16/I-95 interchange with flyover ramps and widened I-16; substantial completion was scheduled for late 2025 and GeoPI still listed 'Under Construction' in Sept. 2026 (4715 pack).",
+   "sourceName": "GDOT 16@95 Improvement Projects Fact Sheet (Sept. 18, 2025)",
+   "sourceUrl": "https://www.dot.ga.gov/systems/ProjectDocuments/1695Improvements/16@95%20Improvement%20Projects-Fact%20Sheet.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Stale framing: the interchange has just been reconstructed to relieve that bottleneck. Suggested: 'The I-16/I-95 junction, rebuilt by GDOT's 16@95 project to ease a long-standing bottleneck, still funnels long-distance interstate traffic into local commuter traffic, and merging zones there remain prone to rear-end and sideswipe crashes.' 'Frequent ... pileups' has no interchange-level source."
+  },
+  {
+   "surface": "body",
+   "claim": "The I-16/I-516 split near downtown Savannah confuses unfamiliar drivers and produces sideswipe crashes as vehicles attempt last-second lane changes.",
+   "verdict": "update",
+   "currentValue": "The I-16/I-516 interchange (exits 164A/B) is about 2 miles west of the I-16 terminus at Montgomery Street.",
+   "sourceName": "AARoads - Interstate 16 West, Savannah to Blitchton",
+   "sourceUrl": "https://www.aaroads.com/guides/i-016-west-savannah-ga",
+   "retrievedAt": "2026-10-02",
+   "note": "Geography acceptable ('west of downtown' is more precise). 'Produces sideswipe crashes' has no location source - change to 'can produce'."
+  },
+  {
+   "surface": "body",
+   "claim": "A fully loaded tractor-trailer traveling at highway speed can weigh 80,000 pounds",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "23 U.S.C. § 127",
+   "sourceUrl": "https://www.law.cornell.edu/uscode/text/23/127",
+   "retrievedAt": "2026-10-02",
+   "note": "80,000 lb is the federal Interstate gross-weight cap."
+  },
+  {
+   "surface": "body",
+   "claim": "the force of a collision between a commercial truck and a passenger vehicle at 65+ mph frequently produces traumatic brain injuries, spinal cord injuries, and fatalities.",
+   "verdict": "update",
+   "currentValue": "Posted limits on I-16 in Savannah: 65 mph from SR 307 to I-516, 55 mph to SR 204, then 45 and 35 to Montgomery St.",
+   "sourceName": "City of Savannah Code Sec. 207 (S.R. 404/I-16 rows)",
+   "sourceUrl": "https://agenda.savannahga.gov/content/files/sec_207-on-system-roads.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "'65+ mph' implies the norm is above the limit (4539 precedent). Change to 'at highway speed'."
+  },
+  {
+   "surface": "body",
+   "claim": "Interstate 95 is the most heavily traveled north-south highway on the East Coast",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "Wikipedia - Interstate 95",
+   "sourceUrl": "https://en.wikipedia.org/wiki/Interstate_95",
+   "retrievedAt": "2026-10-02",
+   "note": "No national volume ranking located for 'most heavily traveled'. Safer: 'Interstate 95 is the East Coast's main north-south interstate'. Low priority."
+  },
+  {
+   "surface": "body",
+   "claim": "across 2022–2024, I-95 recorded more fatal crashes than any US interstate except I-10 — 924 fatal crashes and 1,020 deaths nationally, second of 222 interstate designations (NHTSA Fatality Analysis Reporting System, annual files, accessed 25 August 2026).",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Roden fact registry (FARS 2022-2024), verified in run-4721",
+   "sourceUrl": "https://static.nhtsa.gov/nhtsa/downloads/FARS/2024/National/FARS2024NationalCSV.zip",
+   "retrievedAt": "2026-10-02",
+   "note": "Registry figure; also cited in the 4721 pack. Chatham-level fact if wanted: I-95 had the most fatal crashes of any road in Chatham County 2020-2024 (23 crashes, 26 deaths)."
+  },
+  {
+   "surface": "body",
+   "claim": "Speed and volume: Vehicles traveling at 70+ mph in dense traffic leave little margin for error.",
+   "verdict": "update",
+   "currentValue": "I-95 posted limit is 70 mph within Savannah city limits (MP 103.80-106.88, Sec. 207); Chatham County's code zones other Chatham segments at 55-70 mph.",
+   "sourceName": "City of Savannah Code Sec. 207 (S.R. 405/I-95 row)",
+   "sourceUrl": "https://agenda.savannahga.gov/content/files/sec_207-on-system-roads.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "'70+ mph' -> 'at up to 70 mph' (4539 precedent). County code: https://cdn.chathamcountyga.gov/Files/ChathamCounty/Code%20Book/Chapter12.PDF"
+  },
+  {
+   "surface": "body",
+   "claim": "The I-95/I-16 interchange: This junction is a known bottleneck where merging traffic patterns produce frequent rear-end and sideswipe collisions.",
+   "verdict": "update",
+   "currentValue": "Interchange rebuilt under GDOT 16@95 (see I-16 entry).",
+   "sourceName": "GDOT 16@95 Improvement Projects Fact Sheet",
+   "sourceUrl": "https://www.dot.ga.gov/systems/ProjectDocuments/1695Improvements/16@95%20Improvement%20Projects-Fact%20Sheet.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Same staleness: add 'recently rebuilt' and change 'produce frequent' to 'can produce'."
+  },
+  {
+   "surface": "body",
+   "claim": "Abercorn Street: Savannah's Deadliest Road",
+   "verdict": "update",
+   "currentValue": "FARS 2020-2024, Chatham County (171 fatal crashes, 182 deaths): I-95 23 fatal crashes / 26 deaths; US 17/SR 25 (Ogeechee Rd and other segments) 23 / 24; US 80/SR 26 (Victory Dr, Islands Expwy etc.) 17 / 17; I-16 14 / 14; Abercorn St (SR 204 east of ~81.21 W, plus crashes coded 'Abercorn St') 13 / 14; SR 204 west (Fort Argyle Rd) 8 / 12; I-516 7 / 8; DeRenne Ave 3 / 3. Inside the City of Savannah (FARS CITYNAME = Savannah; 91 fatal crashes, 94 deaths): US 17/SR 25 12 / 12; Abercorn St 11 / 12; I-95 6 / 7; I-516 6 / 7; US 80/SR 26 6 / 6; I-16 5 / 5; DeRenne Ave 3 / 3.",
+   "sourceName": "NHTSA Fatality Analysis Reporting System (FARS) national accident files 2020-2024, tallied locally for Chatham County, GA (STATE 13, COUNTY 51) by TWAY_ID/TWAY_ID2 route fields",
+   "sourceUrl": "https://static.nhtsa.gov/nhtsa/downloads/FARS/2024/National/FARS2024NationalCSV.zip",
+   "retrievedAt": "2026-10-02",
+   "note": "H2 and its TOC link (#abercorn-street). Inside the city Abercorn ties US 17/SR 25 for the most deaths (12) and is one fatal crash behind; countywide it is fifth. Change both to 'Abercorn Street: One of Savannah's Deadliest Roads'; keep the id."
+  },
+  {
+   "surface": "body",
+   "claim": "Abercorn Street is the most dangerous road in the City of Savannah.",
+   "verdict": "update",
+   "currentValue": "FARS 2020-2024, Chatham County (171 fatal crashes, 182 deaths): I-95 23 fatal crashes / 26 deaths; US 17/SR 25 (Ogeechee Rd and other segments) 23 / 24; US 80/SR 26 (Victory Dr, Islands Expwy etc.) 17 / 17; I-16 14 / 14; Abercorn St (SR 204 east of ~81.21 W, plus crashes coded 'Abercorn St') 13 / 14; SR 204 west (Fort Argyle Rd) 8 / 12; I-516 7 / 8; DeRenne Ave 3 / 3. Inside the City of Savannah (FARS CITYNAME = Savannah; 91 fatal crashes, 94 deaths): US 17/SR 25 12 / 12; Abercorn St 11 / 12; I-95 6 / 7; I-516 6 / 7; US 80/SR 26 6 / 6; I-16 5 / 5; DeRenne Ave 3 / 3.",
+   "sourceName": "NHTSA Fatality Analysis Reporting System (FARS) national accident files 2020-2024, tallied locally for Chatham County, GA (STATE 13, COUNTY 51) by TWAY_ID/TWAY_ID2 route fields",
+   "sourceUrl": "https://static.nhtsa.gov/nhtsa/downloads/FARS/2024/National/FARS2024NationalCSV.zip",
+   "retrievedAt": "2026-10-02",
+   "note": "Suggested: 'Abercorn Street is one of the deadliest roads in the City of Savannah: from 2020 through 2024, 11 fatal crashes on Abercorn inside the city killed 12 people — tied with U.S. 17 for the most of any city road (NHTSA FARS).'"
+  },
+  {
+   "surface": "body",
+   "claim": "Stretching from the Historic District south through Midtown and deep into the Southside suburbs",
+   "verdict": "keep",
+   "currentValue": "Abercorn runs about 7.8 miles from East Bay Street to the Truman Parkway; it carries SR 204 from 37th Street south, and SR 204 continues west past I-95 as Fort Argyle Road.",
+   "sourceName": "Wikipedia - Abercorn Street",
+   "sourceUrl": "https://en.wikipedia.org/wiki/Abercorn_Street",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "High-crash intersections: Multiple Abercorn intersections rank among the city's most dangerous, including Abercorn at White Bluff Road, King George Boulevard, Rio Road, and Victory Drive (US-80).",
+   "verdict": "update",
+   "currentValue": "GDOT 2024: Savannah's only red-light-camera intersections are Abercorn @ White Bluff, Abercorn @ Mall Blvd, DeRenne @ Abercorn and Abercorn @ Montgomery Cross Rd. FARS fatal crashes 2020-2024 at Abercorn/White Bluff, /DeRenne, /Victory Dr, /Eisenhower, /52nd St, /Tibet Ave. King George Blvd (segment to the SR 204 ramps) is on Chatham County's high-injury list (unincorporated). Rio Road: no crash source; the Rio Road area marks Savannah's west city limit on SR 204.",
+   "sourceName": "GDOT, Red Light Running Photo Enforcement annual report 2024",
+   "sourceUrl": "https://www.dot.ga.gov/DriveSmart/SafetyOperation/SafetyOperation/Red/2024RLRPES_ANNUALREPORT.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "No source ranks city intersections. Suggested: 'High-crash intersections: Abercorn's intersections with White Bluff Road, Mall Boulevard, DeRenne Avenue and Montgomery Cross Road carry Savannah's only red-light cameras, and fatal crashes have occurred at White Bluff Road, DeRenne Avenue and Victory Drive (US-80) in recent years.' Drop Rio Road; King George optional."
+  },
+  {
+   "surface": "body",
+   "claim": "Pedestrian danger: The wide, multi-lane roadway and the concentration of commercial destinations put pedestrians at significant risk, particularly near Oglethorpe Mall and the Abercorn/DeRenne intersection.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Chatham County Safe Streets for All Safety Action Plan (Jan. 2025)",
+   "sourceUrl": "https://engineering.chathamcountyga.gov/Projects/ViewFile/64328398-4f2c-4db1-b56d-9681fd914964/Chatham%20County_Action%20Plan.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Qualitative; county plan names Abercorn among roads with deficient pedestrian infrastructure. Oglethorpe Mall is on Abercorn; Abercorn/DeRenne is a red-light-camera intersection (GDOT 2024)."
+  },
+  {
+   "surface": "body",
+   "claim": "Speed transitions: Abercorn's character changes dramatically from a slow-moving historic district street to a high-speed suburban arterial",
+   "verdict": "keep",
+   "currentValue": "Posted on SR 204/Abercorn: 35 mph north of Columbus Dr area, 40 mph to DeRenne (SR 21), 45 mph from DeRenne to Rio Rd/the west city limit.",
+   "sourceName": "City of Savannah Code Sec. 207 (S.R. 204 rows)",
+   "sourceUrl": "https://agenda.savannahga.gov/content/files/sec_207-on-system-roads.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "'High-speed' is relative (45 mph); acceptable. Optional: cite 35-to-45 mph."
+  },
+  {
+   "surface": "body",
+   "claim": "DeRenne Avenue: Narrow Lanes, Heavy Congestion",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "City of Savannah, CORE MPO Project Updates, October 2025",
+   "sourceUrl": "https://www.thempc.org/eagenda/x/mpo/2025/october-22-2025-core-mpo-board/city-of-savannah-core-mpo-project-updates-october-2025_3.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "H2 and TOC link (#derenne-avenue). 'Narrow lanes' has no source (see below). Change both to 'DeRenne Avenue: Heavy Congestion Between I-516 and Truman Parkway'; keep the id."
+  },
+  {
+   "surface": "body",
+   "claim": "DeRenne Avenue is Savannah's primary east-west artery through the Midtown area",
+   "verdict": "keep",
+   "currentValue": "City: \"a six-lane major arterial connecting I-516 and the Truman Parkway, serving as a vital east-west corridor in Savannah and Chatham County.\"",
+   "sourceName": "City of Savannah, CORE MPO Project Updates, October 2025 (Project DeRenne)",
+   "sourceUrl": "https://www.thempc.org/eagenda/x/mpo/2025/october-22-2025-core-mpo-board/city-of-savannah-core-mpo-project-updates-october-2025_3.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Supported."
+  },
+  {
+   "surface": "body",
+   "claim": "The road carries traffic volumes that far exceed its design capacity, and the resulting congestion creates a pressure-cooker environment where aggressive driving and crashes are common.",
+   "verdict": "update",
+   "currentValue": "City: mobility 'is hindered by heavy congestion and traffic queues, driven by peak-hour demand, signalized intersections, and the transition from freeway to arterial near the HAAF military installation.' Project DeRenne (first proposed 2008): EIS approval scheduled 2027; $11.3M USDOT grant for right-of-way (Oct. 1, 2026); completion targeted for 2034. FARS: 3 fatal crashes on DeRenne 2020-2024.",
+   "sourceName": "City of Savannah, CORE MPO Project Updates, October 2025 (Project DeRenne)",
+   "sourceUrl": "https://www.thempc.org/eagenda/x/mpo/2025/october-22-2025-core-mpo-board/city-of-savannah-core-mpo-project-updates-october-2025_3.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Replace 'far exceed its design capacity' (no capacity figure) with the city's own words: 'The road is hindered by heavy congestion and traffic queues at peak hours, where the I-516 freeway ends and becomes an arterial near Hunter Army Airfield.' Optional currency line: 'The city's long-planned Project DeRenne, which would add a new I-516 connector to White Bluff Road, won an $11.3 million federal grant in October 2026 for right-of-way, but construction is still years away.' WTOC: https://www.wtoc.com/2026/10/01/savannah-secures-113m-advance-long-awaited-project-derenne/"
+  },
+  {
+   "surface": "body",
+   "claim": "Narrow lanes: DeRenne's lane widths are substandard by modern engineering criteria, giving drivers less room to maneuver and increasing the severity of sideswipe crashes.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "No GDOT or city source describes DeRenne's lane widths as substandard; the city's project documents describe a six-lane arterial with congestion, conflict-point and access-management problems. Delete the bullet, or replace with the sourced access-management point: 'Conflict points: Mid-block median breaks and turning traffic create conflict points; Project DeRenne would close median openings and add a raised median between Abercorn and the Truman Parkway.' (savannahga.gov Project Plans page blocks curl/TLS; MPO update resolves.)"
+  },
+  {
+   "surface": "body",
+   "claim": "Medical facility traffic: The proximity of Memorial Health University Medical Center to the DeRenne corridor generates heavy traffic including ambulances, medical transport vehicles, and visitors unfamiliar with the area.",
+   "verdict": "keep",
+   "currentValue": "Memorial Health (4700 Waters Ave) directs emergency-room traffic via DeRenne Avenue to Ranger Road during its $350M tower construction (Metts Drive closed from Oct. 5, 2026).",
+   "sourceName": "WTOC, Memorial Health begins $350M expansion, closes Metts Drive (Oct. 1, 2026)",
+   "sourceUrl": "https://www.wtoc.com/2026/10/01/memorial-health-begins-350-million-expansion-closes-mets-road/",
+   "retrievedAt": "2026-10-02",
+   "note": "Supported. Optional currency: construction traffic from the two-year Memorial expansion. Memorial is the region's Level I trauma center (DPH)."
+  },
+  {
+   "surface": "body",
+   "claim": "Rush hour intensity: The 4:00 PM to 6:00 PM evening commute is DeRenne Avenue's most dangerous window.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "No crash-by-hour source for DeRenne. Delete the specific window; keep 'Sudden stops and aggressive lane changes during heavy peak-hour congestion produce rear-end collisions' (city: congestion 'driven by peak-hour demand')."
+  },
+  {
+   "surface": "body",
+   "claim": "The DeRenne/Truman Parkway intersection: This intersection handles massive volumes as commuters travel between Savannah's Eastside and Southside neighborhoods, and it consistently ranks among the city's top crash locations.",
+   "verdict": "update",
+   "currentValue": "DeRenne meets the Truman Parkway at an interchange (the parkway's 'first major interchange'), not an intersection. No crash ranking source; FARS shows no fatal crash there 2020-2024. East DeRenne (Abercorn to Truman) is in GDOT P.I. 0008359: convert the two-way left-turn lane to a raised median.",
+   "sourceName": "Wikipedia - Harry S. Truman Parkway (exit list)",
+   "sourceUrl": "https://en.wikipedia.org/wiki/Harry_S._Truman_Parkway",
+   "retrievedAt": "2026-10-02",
+   "note": "Change 'intersection' to 'interchange' (twice) and delete 'and it consistently ranks among the city's top crash locations'. Better-sourced alternative bullet: 'The DeRenne/Abercorn intersection: one of Savannah's four red-light-camera intersections (GDOT 2024) and the site of a fatal crash in 2022.'"
+  },
+  {
+   "surface": "body",
+   "claim": "I-516, also known as Lynes Parkway, connects downtown Savannah to I-16 and the Southside.",
+   "verdict": "update",
+   "currentValue": "I-516 (W.F. Lynes Parkway) is a 6.49-mile freeway from SR 21/Augusta Road in Garden City, past I-16 and Ogeechee Road, to its end at DeRenne Avenue and Montgomery Street - a western/southern bypass of downtown, not a downtown connector.",
+   "sourceName": "Wikipedia - Interstate 516",
+   "sourceUrl": "https://en.wikipedia.org/wiki/Interstate_516",
+   "retrievedAt": "2026-10-02",
+   "note": "Suggested: 'I-516, the W.F. Lynes Parkway, is a 6.5-mile freeway that loops from Garden City past I-16 to DeRenne Avenue on Savannah's south side.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Despite being a relatively short highway, I-516 has a disproportionate history of serious crashes driven by high travel speeds, limited shoulders, and the merging patterns at its interchanges.",
+   "verdict": "update",
+   "currentValue": "FARS 2020-2024: 7 fatal crashes, 8 deaths on I-516 and its ramps - about one per mile, similar to I-95 and I-16 in Chatham County. Posted 55 mph on the SR 21/I-516 segments in Sec. 207; the last half mile is a 45 mph expressway with a 35 mph school zone (Wikipedia).",
+   "sourceName": "NHTSA Fatality Analysis Reporting System (FARS) national accident files 2020-2024, tallied locally for Chatham County, GA (STATE 13, COUNTY 51) by TWAY_ID/TWAY_ID2 route fields",
+   "sourceUrl": "https://static.nhtsa.gov/nhtsa/downloads/FARS/2024/National/FARS2024NationalCSV.zip",
+   "retrievedAt": "2026-10-02",
+   "note": "'Disproportionate' and 'limited shoulders' are unsourced. Suggested: 'Despite its short length, I-516 recorded seven fatal crashes, killing eight people, from 2020 through 2024 (NHTSA FARS), with merging at its closely spaced interchanges a recurring hazard.' Section H2 'High-Speed Danger' is acceptable but posted speed is 55 mph."
+  },
+  {
+   "surface": "body",
+   "claim": "Speeding is endemic on I-516, and the crashes that result from excessive speed tend to be severe.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "GOHS 2024 Speeding Traffic Safety Facts (sibling 1790)",
+   "sourceUrl": "https://www.gahighwaysafety.org/wp-content/uploads/2025/10/2023-Overview-of-Motor-Vehicle-Crashes.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "No I-516 speed study. Change 'Speeding is endemic on I-516, and the' to 'Speeding is a factor on any freeway, and'. Statewide: speeding was a factor in 339 of Georgia's 1,403 deaths in 2024 (GOHS, 1790 pack)."
+  },
+  {
+   "surface": "body",
+   "claim": "Motorcycle riders are especially vulnerable on I-516, where the high speed of surrounding traffic and limited visibility on the highway's curves create deadly conditions.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "No I-516 motorcycle crash source. Hedge: 'Motorcycle riders are especially vulnerable on I-516's curves and merges.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia speed limits are governed by O.C.G.A. § 40-6-181, and the Georgia Super Speeder law (O.C.G.A. § 40-6-189.1) imposes additional penalties for drivers convicted of traveling 75+ mph on two-lane roads or 85+ mph on any road.",
+   "verdict": "update",
+   "currentValue": "The Super Speeder law is O.C.G.A. § 40-6-189 (Ga. L. 2009, HB 160, effective Jan. 1, 2010); there is no § 40-6-189.1 (Title 40, Ch. 6, Art. 9 ends at § 40-6-189). It adds a $200 state fee on conviction of 75+ mph on a two-lane road or 85+ mph on any road; license suspension if unpaid.",
+   "sourceName": "O.C.G.A. Title 40 (unicourt mirror; Art. 9 table of sections: 40-6-181 ... 40-6-188, 40-6-189 \"Classification as super speeder; fees\")",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Wrong section number. Change '§ 40-6-189.1' to '§ 40-6-189' and 'imposes additional penalties' to 'adds a $200 state fee' (thresholds verified in the 1790 pack). § 40-6-181 citation correct."
+  },
+  {
+   "surface": "body",
+   "claim": "Federal hours-of-service regulations limit how long commercial truck drivers can operate without rest, but violations are common.",
+   "verdict": "update",
+   "currentValue": "49 C.F.R. § 395.3: 11 hours driving within a 14-hour window after 10 hours off duty; 60/70-hour weekly limits. No source quantifies HOS violations on I-16 or I-95.",
+   "sourceName": "49 C.F.R. § 395.3",
+   "sourceUrl": "https://www.law.cornell.edu/cfr/text/49/395.3",
+   "retrievedAt": "2026-10-02",
+   "note": "Change 'but violations are common' to 'capping driving at 11 hours after 10 hours off duty (49 C.F.R. § 395.3)' (4539 precedent)."
+  },
+  {
+   "surface": "body",
+   "claim": "a few seconds of distraction can cover the length of a football field.",
+   "verdict": "keep",
+   "currentValue": "NHTSA: reading or sending a text takes eyes off the road for about 5 seconds; at 55 mph that covers the length of a football field.",
+   "sourceName": "NHTSA - Distracted Driving",
+   "sourceUrl": "https://www.nhtsa.gov/risky-driving/distracted-driving",
+   "retrievedAt": "2026-10-02",
+   "note": "Supported. nhtsa.gov returns 403 to curl (sibling packs read it in Chrome)."
+  },
+  {
+   "surface": "body",
+   "claim": "Impaired driving: Alcohol and drug impairment remains a leading cause of fatal highway crashes in Chatham County.",
+   "verdict": "update",
+   "currentValue": "Statewide: 27% of Georgia traffic fatalities in 2023 were alcohol-related (GOHS 2023 Overview). No Chatham-specific impairment share located.",
+   "sourceName": "GOHS - Georgia Traffic Safety Facts: 2023 Overview",
+   "sourceUrl": "https://www.gahighwaysafety.org/wp-content/uploads/2025/10/2023-Overview-of-Motor-Vehicle-Crashes.pdf",
+   "retrievedAt": "2026-10-02",
+   "note": "Change 'in Chatham County' to 'in Georgia — alcohol was involved in 27% of the state's traffic deaths in 2023 (GOHS)'. Chatham's SS4A plan (unincorporated, 2018-2022): 14% of fatal/serious crashes involved an impaired driver."
+  },
+  {
+   "surface": "body",
+   "claim": "When a government entity's failure to maintain a road causes a crash, injured victims may have a claim under Georgia's governmental immunity exceptions.",
+   "verdict": "update",
+   "currentValue": "Who owns the road decides the claim and the deadline. I-16, I-95, I-516, Abercorn (SR 204) and DeRenne west of Abercorn (SR 21) are state routes: Georgia Tort Claims Act, written notice within 12 months (O.C.G.A. § 50-21-26), and no liability for a plan or design prepared in substantial compliance with engineering standards in effect at the time (§ 50-21-24(10)). City streets: liability only with actual or inferable notice of the defect (§ 32-4-93) and written ante-litem notice within 6 months (§ 36-33-5). Counties: not liable unless a statute says so (§ 36-1-4); claims presented within 12 months (§ 36-11-1).",
+   "sourceName": "O.C.G.A. §§ 50-21-24, 50-21-26 (unicourt Title 50); §§ 32-4-93, 36-1-4 (unicourt Titles 32, 36); §§ 36-33-5, 36-11-1 (Justia, sibling packs)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.50.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Add the notice deadlines (2479 precedent). Suggested append: 'Claims against the state (which owns I-16, I-95, I-516 and Abercorn) require written notice within 12 months, claims against the City of Savannah within six months, and counties are largely immune from road-defect suits.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia gives accident victims two years from the date of injury to file a personal injury lawsuit under O.C.G.A. § 9-3-33.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-3-33",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified."
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina allows three years under S.C. Code § 15-3-530.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "SC law on a Georgia-only post - delete (4539 precedent)."
+  },
+  {
+   "surface": "body",
+   "claim": "Because I-95 crosses state lines, victims of crashes near the Georgia-South Carolina border need to be aware of both deadlines.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Cross-jurisdiction framing - delete (4539 precedent)."
+  },
+  {
+   "surface": "body",
+   "claim": "Under O.C.G.A. § 51-12-33, Georgia follows a modified comparative fault rule allowing recovery if you are less than 50% at fault, with your award reduced by your percentage of responsibility.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-33",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified; unchanged by 2025 SB 68."
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina's threshold is slightly more favorable — recovery is allowed if you are less than 51% at fault.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "SC rule on a Georgia-only post - delete (4539/4715 precedent)."
+  },
+  {
+   "surface": "body",
+   "claim": "Truck accidents on I-16, I-95, and I-516 may involve violations of federal Motor Carrier Safety Administration regulations governing driver hours of service, vehicle maintenance, cargo securement, and driver qualifications.",
+   "verdict": "update",
+   "currentValue": "The rules are the Federal Motor Carrier Safety Regulations (49 C.F.R. Parts 390-399), administered by the Federal Motor Carrier Safety Administration; they apply to interstate carriers (§ 390.3).",
+   "sourceName": "49 C.F.R. § 390.3",
+   "sourceUrl": "https://www.law.cornell.edu/cfr/text/49/390.3",
+   "retrievedAt": "2026-10-02",
+   "note": "Naming fix: 'violations of the Federal Motor Carrier Safety Regulations governing...' (4539 precedent)."
+  },
+  {
+   "surface": "body",
+   "claim": "When a highway crash kills a victim, Georgia's wrongful death statute (O.C.G.A. § 51-4-1) allows the surviving spouse, children, or parents to pursue compensation.",
+   "verdict": "update",
+   "currentValue": "§ 51-4-1 is the definitions section. The right of action is § 51-4-2 (surviving spouse, or children if no spouse); parents recover under § 19-7-1 only when no spouse or child survives. Recovery is the full value of the decedent's life.",
+   "sourceName": "O.C.G.A. §§ 51-4-1, 51-4-2, 19-7-1 (Justia, sibling packs)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-4/section-51-4-2/",
+   "retrievedAt": "2026-10-02",
+   "note": "Change to: '...Georgia's wrongful death statute (O.C.G.A. §§ 51-4-1, 51-4-2) allows the surviving spouse or children — or parents, if neither survives (§ 19-7-1) — to recover the full value of the decedent's life.' (4539 precedent.)"
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina's wrongful death statute (S.C. Code § 15-51-10) provides similar rights.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "SC law on a Georgia-only post - delete."
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia law requires reporting accidents involving injuries.",
+   "verdict": "keep",
+   "currentValue": "O.C.G.A. § 40-6-273: duty to report a crash resulting in injury, death or property damage of $500 or more.",
+   "sourceName": "O.C.G.A. Title 40 (unicourt mirror)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified."
+  },
+  {
+   "surface": "body",
+   "claim": "Trucking companies deploy rapid-response teams to crash scenes to protect their interests, and evidence like electronic logging device data, dashcam footage, and truck \"black box\" recordings can be destroyed if not preserved immediately.",
+   "verdict": "keep",
+   "currentValue": "ELD records of duty status: retained at least 6 months (49 C.F.R. § 395.8(k)); dashcam and dispatcher data: no federal retention rule.",
+   "sourceName": "49 C.F.R. § 395.8",
+   "sourceUrl": "https://www.law.cornell.edu/cfr/text/49/395.8",
+   "retrievedAt": "2026-10-02",
+   "note": "'Can be destroyed' is accurate; most urgent for dashcam/telematics (4715 precedent). No change needed."
+  },
+  {
+   "surface": "body",
+   "claim": "Negotiate aggressively with insurance companies and take your case to trial in Chatham County Superior Court if necessary",
+   "verdict": "update",
+   "currentValue": "The State Court of Chatham County hears civil damages suits of any amount, concurrently with the Superior Court (O.C.G.A. § 15-7-4(a)); most Chatham crash suits are filed in State Court.",
+   "sourceName": "Chatham County Courts - Superior Court (Eastern Judicial Circuit)",
+   "sourceUrl": "https://courts.chathamcountyga.gov/Superior/JudgeWelcome",
+   "retrievedAt": "2026-10-02",
+   "note": "Change to 'in the State or Superior Court of Chatham County' (4715/4539 precedent)."
+  },
+  {
+   "surface": "body",
+   "claim": "Roden Law represents highway crash victims across Savannah and Southeast Georgia on a contingency fee basis — you pay nothing unless we win.",
+   "verdict": "update",
+   "currentValue": "Fees and costs apply only upon successful recovery. No fees or costs with no recovery.",
+   "sourceName": "Firm-confirmed fee wording (2026-10-02; docs/freshness/2026-10-02-fee-wording-4368-1657/README.md)",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Fee line differs from the confirmed wording. Suggested: 'Roden Law represents highway crash victims across Savannah and Southeast Georgia on a contingency fee basis. Fees and costs apply only upon successful recovery. No fees or costs with no recovery.'"
+  },
+  {
+   "surface": "body",
+   "claim": "With over $300 million recovered for our clients and a 4.9-star average client rating",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Roden writer profile / client.json",
+   "sourceUrl": "/Users/brianhaas/Code/blue-sky-studio/client-rodenlaw-website/profiles/writer-profile.md",
+   "retrievedAt": "2026-10-02",
+   "note": "Firm figures match the profile (4539 precedent); the post's only dollar figure."
+  },
+  {
+   "surface": "body",
+   "claim": "Call (912) 303-5850 or 1-844-RESULTS.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Hrefs tel:+19123035850 (Savannah office) and tel:+18447378587 match client.json/profile."
+  }
+ ],
+ "recommendedEdits": [
+  "TITLE (owner, not patcher-editable): 'Savannah's Most Dangerous Highways: I-16, I-95, Abercorn Street, and DeRenne Avenue' is not supported - DeRenne had 3 fatal crashes in 2020-2024 FARS and US 17/SR 25 and US 80/SR 26 outrank it and I-16. Suggest 'Savannah's High-Crash Roads: I-95, I-16, Abercorn Street and DeRenne Avenue'.",
+  "Remove 'Devil's Highway' everywhere: H2 + TOC link (#i-16) -> 'Interstate 16: Port Traffic and High-Speed Interchanges'; body clause 'has earned the grim nickname \"Devil's Highway\" for its history of fatal collisions' -> 'has a history of fatal collisions'; Key Takeaways parenthetical; FAQ 0 nickname; delete FAQ 1 entirely (question and answer).",
+  "Abercorn H2 + TOC (#abercorn-street) -> 'Abercorn Street: One of Savannah's Deadliest Roads'; body 'is the most dangerous road in the City of Savannah' and FAQ 2 'consistently the most dangerous road' -> 'one of the deadliest roads in the City of Savannah: 11 fatal crashes killing 12 people inside the city limits in 2020-2024, tied with U.S. 17 for the most deaths of any city road (NHTSA FARS)'. Delete FAQ 2's 'more crashes per mile than any other road in Chatham County'.",
+  "Abercorn intersections bullet (and FAQ 2 list): replace White Bluff/King George/Rio/Victory 'rank among the city's most dangerous' with the sourced set: red-light-camera intersections White Bluff Rd, Mall Blvd, DeRenne Ave, Montgomery Cross Rd (GDOT 2024) and fatal crashes at White Bluff, DeRenne and Victory Drive. Drop Rio Road.",
+  "FAQ 0 (most dangerous highway): answer with I-95 - most fatal crashes of any Chatham County road 2020-2024 (23 crashes, 26 deaths); I-16 had 14. Delete '25,000 vehicles daily' (or use ~60,000 vpd on I-16 near Chatham Pkwy, GDOT 2019 via AARoads).",
+  "Intro: replace the GOHS sentence with 'Federal crash data rank Chatham County eighth of Georgia's 159 counties for traffic deaths from 2020 through 2024 — 182 people killed (NHTSA FARS).' Drop the 'driver negligence ... leading cause' clause.",
+  "Visitors: '14 million' -> 'nearly 13 million' (12.9 million, Visit Savannah 2024 and 2025) in body and Key Takeaways.",
+  "Key Takeaways lead: 'Savannah's most dangerous highways' -> 'Savannah's high-crash roads'; 'carry traffic volumes that exceed their design capacity' -> 'carry heavy commuter, tourist and port truck traffic'.",
+  "Super Speeder: '§ 40-6-189.1' -> '§ 40-6-189'; 'imposes additional penalties' -> 'adds a $200 state fee'.",
+  "I-16 bullets: Chatham Pkwy - drop 25,000 and 'one of the most collision-prone locations'; mention GDOT ramp meters. I-16/I-95 junction (both the I-16 and I-95 sections) - note it was rebuilt by GDOT's 16@95 project; 'produces frequent' -> 'can produce'. I-16/I-516 'produces sideswipe crashes' -> 'can produce'. '65+ mph' -> 'highway speed'.",
+  "I-95: '70+ mph' -> 'up to 70 mph'; optional 'most heavily traveled' -> 'main north-south interstate'.",
+  "DeRenne: H2 + TOC (#derenne-avenue) -> 'DeRenne Avenue: Heavy Congestion Between I-516 and Truman Parkway'; replace 'far exceed its design capacity' with the city's 'heavy congestion and traffic queues at peak hours'; delete the 'Narrow lanes' bullet (or replace with the access-management/median-break point); delete the 4-6 PM window; DeRenne/Truman 'intersection' -> 'interchange' and drop 'consistently ranks among the city's top crash locations'. Optional Project DeRenne currency: $11.3M federal right-of-way grant Oct. 2026, EIS 2027, completion targeted 2034.",
+  "I-516: 'connects downtown Savannah to I-16 and the Southside' -> 'a 6.5-mile freeway that loops from Garden City past I-16 to DeRenne Avenue'; replace 'disproportionate history ... limited shoulders' with '7 fatal crashes, 8 deaths, 2020-2024 (FARS)'; 'Speeding is endemic on I-516' -> generic; hedge the motorcycle sentence.",
+  "Common causes: HOS 'but violations are common' -> 'capping driving at 11 hours after 10 hours off duty (49 C.F.R. § 395.3)'; impaired driving 'in Chatham County' -> Georgia 27% alcohol-related (GOHS 2023); government roads - append notice deadlines (state 12 months § 50-21-26; city 6 months § 36-33-5; counties largely immune § 36-1-4 / 12 months § 36-11-1).",
+  "Georgia law section: H2 + TOC (#georgia-laws) -> 'Georgia Laws for Accident Victims'; delete the four SC sentences (§ 15-3-530 three years; 'Because I-95 crosses state lines...'; SC 51% threshold; SC § 15-51-10 wrongful death); 'federal Motor Carrier Safety Administration regulations' -> 'the Federal Motor Carrier Safety Regulations'; wrongful death -> '§§ 51-4-1, 51-4-2 ... surviving spouse or children — or parents if neither survives (§ 19-7-1) — ... full value of the decedent's life'.",
+  "FAQ 3: delete 'South Carolina allows three years under S.C. Code § 15-3-530.' and 'Because I-95 crosses the state line, ... both deadlines.'",
+  "Closing: 'Chatham County Superior Court' -> 'the State or Superior Court of Chatham County'; fee line 'on a contingency fee basis — you pay nothing unless we win' -> 'on a contingency fee basis. Fees and costs apply only upon successful recovery. No fees or costs with no recovery.'",
+  "Owner note (outside this post): the 'Devil's Highway' nickname and the 25,000-vehicle figure also appear on /blog/dangerous-savannah-intersections/ and /locations/georgia/savannah/westside-savannah/."
+ ],
+ "statuteCitations": [
+  {
+   "section": "O.C.G.A. § 9-3-33",
+   "name": "Injuries to the person — two-year limitation",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-33",
+   "name": "Apportionment of damages; no recovery at 50 percent or more fault",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+  },
+  {
+   "section": "O.C.G.A. § 51-4-1",
+   "name": "Wrongful death — definitions ('full value of the life of the decedent')",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-4/section-51-4-1/"
+  },
+  {
+   "section": "O.C.G.A. § 51-4-2",
+   "name": "Wrongful death of spouse or parent — surviving spouse, then children, recover",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-4/section-51-4-2/"
+  },
+  {
+   "section": "O.C.G.A. § 19-7-1",
+   "name": "Recovery for homicide of child — parents recover when no spouse or child survives",
+   "url": "https://law.justia.com/codes/georgia/title-19/chapter-7/article-1/section-19-7-1/"
+  },
+  {
+   "section": "O.C.G.A. § 40-6-181",
+   "name": "Maximum speed limits (70 mph interstate where posted)",
+   "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-9/section-40-6-181/"
+  },
+  {
+   "section": "O.C.G.A. § 40-6-189",
+   "name": "Classification as super speeder; $200 fee (75+ mph two-lane, 85+ mph any road). No § 40-6-189.1 exists.",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html"
+  },
+  {
+   "section": "O.C.G.A. § 40-6-273",
+   "name": "Duty to report accident resulting in injury, death, or property damage",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html"
+  },
+  {
+   "section": "O.C.G.A. § 51-2-2",
+   "name": "Liability for torts of servant (respondeat superior)",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.51.html"
+  },
+  {
+   "section": "O.C.G.A. § 50-21-24(10)",
+   "name": "GTCA exception — highway plan or design in substantial compliance with engineering standards at the time",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.50.html"
+  },
+  {
+   "section": "O.C.G.A. § 50-21-26",
+   "name": "Georgia Tort Claims Act — notice of claim within 12 months",
+   "url": "https://law.justia.com/codes/georgia/title-50/chapter-21/article-2/section-50-21-26/"
+  },
+  {
+   "section": "O.C.G.A. § 32-4-93",
+   "name": "Municipal liability for road defects — negligence plus actual or inferable notice",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.32.html"
+  },
+  {
+   "section": "O.C.G.A. § 36-33-5",
+   "name": "Ante-litem notice to a municipal corporation — six months",
+   "url": "https://law.justia.com/codes/georgia/title-36/provisions-applicable-to-municipal-corporations-only/chapter-33/section-36-33-5/"
+  },
+  {
+   "section": "O.C.G.A. § 36-1-4",
+   "name": "County not liable to suit unless made so by statute",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.36.html"
+  },
+  {
+   "section": "O.C.G.A. § 36-11-1",
+   "name": "Claims against counties — presented within 12 months",
+   "url": "https://law.justia.com/codes/georgia/title-36/provisions-applicable-to-counties-only/chapter-11/section-36-11-1/"
+  },
+  {
+   "section": "O.C.G.A. § 15-7-4",
+   "name": "State court jurisdiction — civil actions without regard to amount, concurrent with superior court",
+   "url": "https://law.justia.com/codes/georgia/title-15/chapter-7/article-1/section-15-7-4/"
+  },
+  {
+   "section": "49 C.F.R. § 395.3",
+   "name": "Hours of service — 11-hour driving limit, 14-hour window, 60/70-hour limits",
+   "url": "https://www.law.cornell.edu/cfr/text/49/395.3"
+  },
+  {
+   "section": "49 C.F.R. § 395.8(k)",
+   "name": "Records of duty status retained not less than 6 months",
+   "url": "https://www.law.cornell.edu/cfr/text/49/395.8"
+  },
+  {
+   "section": "49 C.F.R. § 390.3",
+   "name": "Applicability of the Federal Motor Carrier Safety Regulations",
+   "url": "https://www.law.cornell.edu/cfr/text/49/390.3"
+  },
+  {
+   "section": "23 U.S.C. § 127",
+   "name": "Vehicle weight limitations — 80,000 lb on the Interstate System",
+   "url": "https://www.law.cornell.edu/uscode/text/23/127"
+  }
+ ],
+ "authoritativeLinks": [
+  {
+   "name": "NHTSA FARS 2024 National CSV (one of five annual files 2020-2024 tallied for Chatham County)",
+   "url": "https://static.nhtsa.gov/nhtsa/downloads/FARS/2024/National/FARS2024NationalCSV.zip"
+  },
+  {
+   "name": "NHTSA FARS 2020 National CSV",
+   "url": "https://static.nhtsa.gov/nhtsa/downloads/FARS/2020/National/FARS2020NationalCSV.zip"
+  },
+  {
+   "name": "City of Savannah Code Sec. 207 — speed limits on state routes (I-16 65/55/45/35; I-95 70 in city; SR 204/Abercorn 35-45; SR 21 segments 55)",
+   "url": "https://agenda.savannahga.gov/content/files/sec_207-on-system-roads.pdf"
+  },
+  {
+   "name": "Chatham County Code Chapter 12 — I-95 speed zones by segment (55-70 mph)",
+   "url": "https://cdn.chathamcountyga.gov/Files/ChathamCounty/Code%20Book/Chapter12.PDF"
+  },
+  {
+   "name": "Chatham County Safe Streets for All Safety Action Plan (Jan. 2025; 2018-2022 data, unincorporated county; SR 204/Abercorn and US 17/SR 25 on high-injury lists)",
+   "url": "https://engineering.chathamcountyga.gov/Projects/ViewFile/64328398-4f2c-4db1-b56d-9681fd914964/Chatham%20County_Action%20Plan.pdf"
+  },
+  {
+   "name": "Chatham County SS4A Recommendations Report",
+   "url": "https://engineering.chathamcountyga.gov/Projects/ViewFile/25c2a883-637c-4ddc-9a78-bece54f7b292/Chatham%20SS4A%20-%20Recommendations%20Report.pdf"
+  },
+  {
+   "name": "Chatham County Engineering — Current Projects (SR 204 study; SS4A plan complete)",
+   "url": "https://engineering.chathamcountyga.gov/Projects/CurrentProjects"
+  },
+  {
+   "name": "GDOT — Red Light Running Photo Enforcement annual report 2024 (Savannah: four Abercorn intersections)",
+   "url": "https://www.dot.ga.gov/DriveSmart/SafetyOperation/SafetyOperation/Red/2024RLRPES_ANNUALREPORT.pdf"
+  },
+  {
+   "name": "City of Savannah — CORE MPO Project Updates, Oct. 2025 (DeRenne: six-lane major arterial, heavy congestion and queues)",
+   "url": "https://www.thempc.org/eagenda/x/mpo/2025/october-22-2025-core-mpo-board/city-of-savannah-core-mpo-project-updates-october-2025_3.pdf"
+  },
+  {
+   "name": "City of Savannah — CORE MPO Project Updates, April 2026 (Project DeRenne DEIS, IAJR status)",
+   "url": "https://www.thempc.org/eagenda/x/mpo/2026/april-22-2026-core-mpo-board/city-of-savannah-core-mpo-project-updates-april-2026.pdf"
+  },
+  {
+   "name": "WTOC — Savannah secures $11.3M to advance Project DeRenne (2026-10-01; EIS approval 2027)",
+   "url": "https://www.wtoc.com/2026/10/01/savannah-secures-113m-advance-long-awaited-project-derenne/"
+  },
+  {
+   "name": "WTOC — Memorial Health begins $350M expansion, closes Metts Drive (2026-10-01; ER access via DeRenne/Ranger Rd)",
+   "url": "https://www.wtoc.com/2026/10/01/memorial-health-begins-350-million-expansion-closes-mets-road/"
+  },
+  {
+   "name": "City of Savannah Agenda Plus — Feb. 12, 2026 council item (Visit Savannah: 12.9 million visitors in 2024)",
+   "url": "https://agenda.savannahga.gov/publishing/february-12-2026-city-council-regular-meeting/1544_12040.html"
+  },
+  {
+   "name": "KBC Advisors — Top U.S. Container Ports Year-End 2025 (Savannah 4th, 5.69M TEUs)",
+   "url": "https://assets.ctfassets.net/opxulaoc9o1m/6izRv2LQoM0fatjvHLlSU2/dee52bac5a97f5e0aa6fa51b4c5cdf4c/KBC_Advisors_Top_US_Container_Ports_Year-End_2025.pdf"
+  },
+  {
+   "name": "GDOT — 16@95 Improvement Projects Fact Sheet (Sept. 2025)",
+   "url": "https://www.dot.ga.gov/systems/ProjectDocuments/1695Improvements/16@95%20Improvement%20Projects-Fact%20Sheet.pdf"
+  },
+  {
+   "name": "AARoads — Interstate 16 West, Savannah (59,600 vpd near Chatham Pkwy, 2019; exit list)",
+   "url": "https://www.aaroads.com/guides/i-016-west-savannah-ga"
+  },
+  {
+   "name": "Wikipedia — Interstate 516 (6.49 mi W.F. Lynes Parkway; Garden City to DeRenne Ave)",
+   "url": "https://en.wikipedia.org/wiki/Interstate_516"
+  },
+  {
+   "name": "Wikipedia — Interstate 16 (166.81 mi)",
+   "url": "https://en.wikipedia.org/wiki/Interstate_16"
+  },
+  {
+   "name": "Wikipedia — Abercorn Street (7.8 mi; SR 204 from 37th St south)",
+   "url": "https://en.wikipedia.org/wiki/Abercorn_Street"
+  },
+  {
+   "name": "Wikipedia — Harry S. Truman Parkway (DeRenne Ave interchange)",
+   "url": "https://en.wikipedia.org/wiki/Harry_S._Truman_Parkway"
+  },
+  {
+   "name": "GOHS — Georgia Traffic Safety Facts: 2023 Overview (27% alcohol-related)",
+   "url": "https://www.gahighwaysafety.org/wp-content/uploads/2025/10/2023-Overview-of-Motor-Vehicle-Crashes.pdf"
+  },
+  {
+   "name": "Official Code of Georgia Title 40 (unicourt mirror; §§ 40-6-189, 40-6-273)",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html"
+  },
+  {
+   "name": "Official Code of Georgia Title 50 (unicourt mirror; § 50-21-24)",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.50.html"
+  },
+  {
+   "name": "Chatham County Courts — Superior Court",
+   "url": "https://courts.chathamcountyga.gov/Superior/JudgeWelcome"
+  },
+  {
+   "name": "Georgia DPH — Designated Trauma Centers (Memorial Health, Level I)",
+   "url": "https://dph.georgia.gov/EMS/specialty-care-centers-cardiac-trauma-stroke-pediatric"
+  },
+  {
+   "name": "GDOT — Crash Data & Reporting (no corridor ranking published)",
+   "url": "https://www.dot.ga.gov/GDOT/Pages/CrashReporting.aspx"
+  }
+ ],
+ "quoteNote": "Claims are quoted from the rendered text with tags stripped and entities decoded; every claim string was asserted to occur in its surface (body.html, meta.json excerpt/keyTakeaways/faqs[n] question+answer). FAQ answers publish as FAQPage structured data; the excerpt publishes as the Article description. The title entry is for the owner - not in body.html. H2 claims also match the identical table-of-contents link text. metaDescription is empty. Crash method (3553/4624 precedent): FARS 2020-2024 national accident.csv files tallied locally for Chatham County (STATE 13, COUNTY 51) by TWAY_ID/TWAY_ID2; SR 204 rows west of 81.21 W are treated as Fort Argyle Road, not Abercorn; 'City of Savannah' = FARS CITYNAME. Officer route coding varies, so counts are approximate (+/- 1-2); US 17/SR 25 aggregates several named segments. County ranks from the same files (159 counties). 'Devil's Highway': searched GDOT, WTOC, WSAV, WJCL, Savannah Morning News and general web - only law-firm and marketing pages (including Roden's own) use it. Blocked sources: www.savannahga.gov fails TLS to curl; savannahchamber.com, visitsavannah.com and gaports.com return 403 to curl and the browser extension was denied page access - not bypassed. Visitor figure rests on the City of Savannah agenda page (resolves); port rank on KBC Advisors (resolves). nhtsa.gov 403 to curl (distracted-driving claim, reused). Justia URLs reused from sibling packs (bot challenge); statute text for §§ 40-6-189, 40-6-273, 50-21-24 read from the unicourt mirror (200)."
+}

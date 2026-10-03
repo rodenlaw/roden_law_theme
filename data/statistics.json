@@ -31,10 +31,10 @@
     {
       "id": "chatham-county-traffic-deaths-2022",
       "label": "Chatham County, GA traffic deaths, 2022 (FARS)",
-      "current": { "value": "40", "asOf": "2022", "qualifier": "eighth among Georgia's 152 counties; the 59 figure belongs to Clayton County", "source": { "name": "NHTSA FARS", "url": "https://www-fars.nhtsa.dot.gov/", "retrievedAt": "2026-08-25" } },
+      "current": { "value": "40", "asOf": "2022", "qualifier": "eighth among Georgia's 159 counties; the 59 figure belongs to Clayton County", "source": { "name": "NHTSA FARS", "url": "https://www-fars.nhtsa.dot.gov/", "retrievedAt": "2026-08-25" } },
       "reviewEveryDays": 365,
       "stale": [
-        { "value": "59", "valuePattern": "Chatham County[^.]{0,60}\\b59\\b[^.]{0,40}traffic deaths", "match": "Chatham County reported 59 traffic deaths in 2022[^.]*top-5 county statewide[^.]*\\.", "replacement": "According to NHTSA's FARS data, Chatham County recorded 40 traffic deaths in 2022, eighth among Georgia's 152 counties." }
+        { "value": "59", "valuePattern": "Chatham County[^.]{0,60}\\b59\\b[^.]{0,40}traffic deaths", "match": "Chatham County reported 59 traffic deaths in 2022[^.]*top-5 county statewide[^.]*\\.", "replacement": "According to NHTSA's FARS data, Chatham County recorded 40 traffic deaths in 2022, eighth among Georgia's 159 counties." }
       ]
     },
     {
