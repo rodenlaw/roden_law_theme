@@ -8851,23 +8851,23 @@
             "title": "Common Injuries from Rear-End Car Accidents",
             "excerpt": "The injuries rear-end collisions cause most often, why symptoms can take days to appear, and what that delay does to a claim.",
             "meta": {
-                "_roden_author_attorney": "Eric Roden",
+                "_roden_author_attorney": "Graeham C. Gillin",
                 "_roden_faqs": [
                     {
                         "question": "What is the most common injury from a rear-end collision?",
-                        "answer": "Whiplash is the most common injury from a rear-end collision. It occurs when the head is violently thrown backward and then forward upon impact, stretching and tearing the muscles, tendons, and ligaments in the neck. Up to 50% of whiplash victims experience symptoms lasting more than a year."
+                        "answer": "Whiplash is the most common injury from a rear-end collision. It occurs when the head is violently thrown backward and then forward upon impact, stretching and tearing the muscles, tendons, and ligaments in the neck. About half of people with whiplash still report symptoms a year after the injury."
                     },
                     {
                         "question": "Can I still recover compensation if my injuries did not appear right away?",
-                        "answer": "Yes. Delayed symptoms are extremely common after rear-end accidents. Adrenaline and endorphins can mask pain for hours or days. As long as you seek medical attention promptly after the accident and document the connection between the crash and your injuries, you can pursue a claim for delayed-onset injuries."
+                        "answer": "Yes. Delayed symptoms are common after rear-end accidents: the stress response can blunt pain at first, and whiplash and concussion symptoms often take hours or a few days to appear. If you get medical care promptly and your records connect the injuries to the crash, you can pursue a claim for delayed-onset injuries within the filing deadline: 2 years in Georgia (O.C.G.A. § 9-3-33), which runs from the crash date, not from when symptoms appear, and 3 years in South Carolina (S.C. Code § 15-3-530)."
                     },
                     {
                         "question": "Who is at fault in a rear-end accident?",
-                        "answer": "The rear driver is typically presumed to be at fault because all drivers have a legal duty to maintain a safe following distance. However, this presumption is rebuttable — the rear driver may argue that the lead driver contributed to the crash through sudden unexpected braking, non-functioning brake lights, or reversing into the rear vehicle."
+                        "answer": "The rear driver is usually found at fault, because Georgia and South Carolina law both require drivers to keep a reasonable and prudent following distance (O.C.G.A. § 40-6-49; S.C. Code § 56-5-1930). But neither state presumes fault from a rear-end impact: the rear driver may argue that the lead driver contributed to the crash through sudden unexpected braking, non-functioning brake lights, or reversing into the rear vehicle."
                     },
                     {
                         "question": "Can a low-speed rear-end collision cause serious injuries?",
-                        "answer": "Yes. Even rear-end crashes at 10 to 15 miles per hour generate enough force to cause whiplash, herniated discs, and concussions. The severity depends on factors like vehicle size differences, headrest position, and whether the occupant was braced for impact. Never assume a low-speed collision is harmless."
+                        "answer": "Yes. Even lower-speed rear-end crashes can cause whiplash and other soft tissue injuries — neck sprains and strains are the most frequently reported injuries in U.S. auto insurance claims, according to IIHS. The severity depends on factors like vehicle size differences, headrest position, and whether the occupant was braced for impact. Never assume a low-speed collision is harmless."
                     },
                     {
                         "question": "What compensation can I recover after a rear-end accident?",
@@ -8878,7 +8878,9 @@
                         "answer": "Absolutely. Many rear-end collision injuries — including whiplash, concussions, and herniated discs — produce delayed symptoms that may not appear for hours or days. Seeking immediate medical evaluation protects your health and creates documented evidence linking the accident to your injuries, which is critical for any future injury claim."
                     }
                 ],
-                "_roden_key_takeaways": "Rear-end collisions account for 29% of all U.S. crashes and frequently cause whiplash, herniated discs, concussions, and chronic pain that may not appear for days after the accident. The rear driver is typically presumed at fault, and victims can recover compensation for medical expenses, lost wages, pain and suffering, and more. Seeking immediate medical attention is essential for both your health and your injury claim."
+                "_roden_key_takeaways": "Rear-end collisions made up about 28.5% of police-reported U.S. crashes in 2023 (NHTSA) and commonly cause whiplash and other neck and back injuries, and sometimes concussions — symptoms that can take hours or days to appear. The rear driver is often found at fault because Georgia and South Carolina law both bar following too closely, but neither state presumes fault — it is decided on the facts. Victims can recover compensation for medical expenses, lost wages, pain and suffering, and more. Seeking immediate medical attention is essential for both your health and your injury claim.",
+                "_roden_last_reviewed": "2026-10-02",
+                "_roden_meta_description": "Rear-end crash injuries, why symptoms can take hours or days to appear, and how fault is decided in Georgia and South Carolina."
             }
         },
         "/blog/rear-end-collision-liability/": {
@@ -8891,7 +8893,7 @@
                 "_roden_faqs": [
                     {
                         "question": "Is the rear driver always at fault in a rear-end collision?",
-                        "answer": "Not always. Liability may seem obvious, but there are instances where the driver who gets rear-ended is to blame — for example through sudden unnecessary braking, reversing, or driving without working brake lights."
+                        "answer": "Not always. Georgia law does not presume the rear driver is at fault. Liability may seem obvious, but there are instances where the driver who gets rear-ended is to blame — for example through sudden unnecessary braking, reversing, or driving without working brake lights."
                     },
                     {
                         "question": "How is fault established in a rear-end crash?",
@@ -8899,7 +8901,7 @@
                     },
                     {
                         "question": "When is the rear driver at fault?",
-                        "answer": "Where they were following too closely, distracted, speeding, or failed to allow for conditions. In most rear-end collisions this is what the evidence shows, which is why the presumption exists in the first place."
+                        "answer": "Where they were following too closely, distracted, speeding, or failed to allow for conditions. In most rear-end collisions this is what the evidence shows, though Georgia law does not presume it; a jury decides on the evidence (Atlanta Coca-Cola Bottling Co. v. Jones, 1976; Bartja v. National Union Fire Ins. Co., 1995)."
                     },
                     {
                         "question": "When is the front driver at fault?",
@@ -8909,7 +8911,9 @@
                         "question": "How does comparative negligence apply in Georgia?",
                         "answer": "Under O.C.G.A. § 51-12-33 you can recover as long as you are less than 50% responsible for the accident, with your award reduced by your share of the fault. At 50% or more you recover nothing."
                     }
-                ]
+                ],
+                "_roden_last_reviewed": "2026-10-02",
+                "_roden_meta_description": "Georgia does not presume the rear driver caused a rear-end crash. Learn when the lead driver is at fault and how comparative negligence affects recovery."
             }
         },
         "/blog/reasons-for-workers-comp-claim-denial/": {
@@ -12011,7 +12015,7 @@
                 "_roden_faqs": [
                     {
                         "question": "What does it mean to mitigate damages?",
-                        "answer": "It is the legal obligation to take reasonable steps to limit the losses arising from your injury — principally by getting the medical care you need and following the treatment you are given."
+                        "answer": "It is the legal obligation to take reasonable steps to limit the losses arising from your injury — principally by getting the medical care you need and following the treatment you are given. In Georgia, O.C.G.A. § 51-12-11 requires this \"as far as is practicable by the use of ordinary care and diligence.\""
                     },
                     {
                         "question": "How could an injured victim fail to mitigate damages?",
@@ -12019,17 +12023,19 @@
                     },
                     {
                         "question": "What happens if I fail to mitigate my damages?",
-                        "answer": "It can reduce what you recover. The insurer will argue that losses which reasonable treatment would have avoided should not be their responsibility, and that argument can succeed on the parts it applies to."
+                        "answer": "It can reduce what you recover. The insurer will argue that losses which reasonable treatment would have avoided should not be their responsibility, and that argument can succeed on the parts it applies to. The defense has to prove it, and a failure to mitigate cuts only the avoidable part of your loss; it does not erase the claim."
                     },
                     {
                         "question": "Who decides whether I mitigated properly?",
-                        "answer": "Ultimately the court, though in practice the insurer's assessment shapes negotiations. What counts as reasonable depends on your circumstances, including what care was realistically available to you."
+                        "answer": "If the case goes to trial, a jury decides; the judge decides only whether there is enough evidence to put the issue to the jury, and the defense must prove you failed to mitigate and by how much (Ga. Farm Bureau Mut. Ins. Co. v. Turpin, 294 Ga. App. 63 (2008)). Before then, the insurer's assessment shapes negotiations. What counts as reasonable depends on your circumstances, including what care was realistically available to you."
                     },
                     {
                         "question": "Does mitigating damages cost me money?",
-                        "answer": "It can involve upfront cost, which is a real difficulty while a claim is pending. Options exist for managing treatment costs in the meantime, and an attorney can help arrange them rather than leaving care unaffordable."
+                        "answer": "It can involve upfront cost, which is a real difficulty while a claim is pending. Reasonable, necessary treatment costs are generally recoverable as damages (O.C.G.A. § 51-12-7). For crashes on or after April 21, 2025, medical damages are limited to the reasonable value of medically necessary care, and if you have health insurance, the jury may hear what it would pay for those charges (O.C.G.A. § 51-12-1.1). Options exist for managing treatment costs in the meantime, and an attorney can help arrange them rather than leaving care unaffordable. For those crashes, the defense can also see any lien or letter-of-protection arrangement and the itemized bills (O.C.G.A. § 51-12-1.1(d)), so treatment should be necessary and reasonably priced."
                     }
-                ]
+                ],
+                "_roden_last_reviewed": "2026-10-02",
+                "_roden_meta_description": "Georgia law requires crash victims to mitigate damages. Learn what that means, how a failure reduces only avoidable losses, and who must prove it."
             }
         },
         "/blog/why-wont-a-personal-lawyer-take-my-case/": {

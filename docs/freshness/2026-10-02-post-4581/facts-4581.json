@@ -1,0 +1,759 @@
+{
+ "postId": 4581,
+ "slug": "rear-end-accident-injuries",
+ "liveUrl": "https://rodenlaw.com/blog/rear-end-accident-injuries/",
+ "jurisdiction": "GA/SC",
+ "researchedAt": "2026-10-02",
+ "verifiedClaims": [
+  {
+   "surface": "body",
+   "claim": "Rear-end collisions are the single most common type of car accident on American roads.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "NHTSA, Traffic Safety Facts 2023: A Compilation of Motor Vehicle Traffic Crash Data (DOT HS 813 738, August 2025), Table 29",
+   "sourceUrl": "https://crashstats.nhtsa.dot.gov/Api/Public/Publication/813738",
+   "retrievedAt": "2026-10-02",
+   "note": "Table 29 (collision with motor vehicle in transport, by manner of collision): rear end 1,748,481 of 6,138,359 police-reported crashes (28.5%), ahead of angle (1,393,852; 22.7%) and sideswipe (906,826; 14.8%). Rear end is the largest single manner-of-collision category. It is not the deadliest: rear end is 7.2% of fatal crashes vs angle 18.7%."
+  },
+  {
+   "surface": "body",
+   "claim": "According to the National Highway Traffic Safety Administration (NHTSA) , rear-end crashes account for approximately 29% of all police-reported motor vehicle crashes in the United States — roughly 1.8 million collisions each year.",
+   "verdict": "update",
+   "currentValue": "NHTSA Traffic Safety Facts 2023 (latest compiled edition, published August 2025), Table 29: 1,748,481 rear-end crashes, 28.5% of the 6,138,359 police-reported crashes in 2023; 27.2% of injury crashes (461,282) and 7.2% of fatal crashes (2,701).",
+   "sourceName": "NHTSA, Traffic Safety Facts 2023: A Compilation of Motor Vehicle Traffic Crash Data (DOT HS 813 738, August 2025), Table 29",
+   "sourceUrl": "https://crashstats.nhtsa.dot.gov/Api/Public/Publication/813738",
+   "retrievedAt": "2026-10-02",
+   "note": "Both figures are close but unanchored to a year, and the hyperlink points to the wrong document: the anchor links to NHTSA's '100-Car Naturalistic Driving Study' rear-end analysis (nhtsa.gov/document/analyses-rear-end-crashes-and-near-crashes-100-car-...; returns 403 to curl), which does not report a national share. Suggested: 'According to the National Highway Traffic Safety Administration (NHTSA), rear-end crashes accounted for about 28.5% of all police-reported motor vehicle crashes in the United States in 2023 — roughly 1.75 million collisions.' Repoint the link to the TSF 2023 PDF. HEAD returns 405 on crashstats; GET returns 200 (4.86 MB PDF). TSF 2024 compilation not yet published (only the 2024 Overview, DOT HS 813 791, April 2026, which has no manner-of-collision table)."
+  },
+  {
+   "surface": "body",
+   "claim": "When a vehicle is struck from behind, the force of the impact drives the vehicle — and everything inside it — forward suddenly. The occupant's body is pushed forward by the seat, but their head lags behind due to inertia. This creates a violent whipping motion in the neck and upper spine that can cause damage to muscles, ligaments, vertebrae, and nerves in a fraction of a second.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "IIHS-HLDI, 'Good head restraints reduce injuries by 11 percent'; StatPearls Cervical Sprain (2026)",
+   "sourceUrl": "https://www.iihs.org/news/detail/good-head-restraints-reduce-injuries-by-11-percent",
+   "retrievedAt": "2026-10-02",
+   "note": "IIHS: 'When a vehicle is struck in the rear and pushed forward, occupants' torsos move forward with their seats. If a person's head isn't supported by a head restraint, the head lags behind the torso, and the differential motion causes the neck to bend and stretch.' StatPearls: acceleration-deceleration forces transfer energy to the cervical spine."
+  },
+  {
+   "surface": "body",
+   "claim": "Even at relatively low speeds of 10 to 15 miles per hour, the forces generated in a rear-end collision are significant enough to cause soft tissue injuries, herniated discs, and concussions.",
+   "verdict": "update",
+   "currentValue": "No source located ties a 10–15 mph threshold to herniated discs or concussions. Supported: neck sprains/strains are the most frequently reported injuries in U.S. auto insurance claims and most often occur in rear-end collisions (IIHS); IIHS's whiplash sled tests simulate being struck at 20 mph and 30 mph. A 2026 volunteer study at an 8 km/h (~5 mph) impact found mild, transient neck and back pain but no structural cervical injury on X-ray or MRI.",
+   "sourceName": "IIHS-HLDI (head restraints, 2016 update); Lee HY et al., BMC Musculoskelet Disord 2026;27:242 (PMC13020201)",
+   "sourceUrl": "https://www.iihs.org/news/detail/good-head-restraints-reduce-injuries-by-11-percent",
+   "retrievedAt": "2026-10-02",
+   "note": "Suggested: 'Even lower-speed rear-end collisions can cause neck sprains and other soft tissue injuries — the most frequently reported injuries in U.S. auto insurance claims, and most often the result of rear-end crashes, according to IIHS.' Drop the '10 to 15 miles per hour' threshold and the herniated-disc/concussion pairing from the low-speed sentence. Volunteer study: https://pmc.ncbi.nlm.nih.gov/articles/PMC13020201/"
+  },
+  {
+   "surface": "body",
+   "claim": "At higher speeds, the injuries become dramatically more severe. Occupants may strike the steering wheel, dashboard, or side window, and the force of the collision can compress the spine, fracture bones, and cause internal organ damage.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "StatPearls — Physiology, Trauma; Blunt Abdominal Trauma (sibling pack 2556)",
+   "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK431087/",
+   "retrievedAt": "2026-10-02",
+   "note": "General blunt-trauma description, consistent with the StatPearls chapters verified in facts-2556."
+  },
+  {
+   "surface": "body",
+   "claim": "Head restraint position: A properly adjusted headrest can reduce whiplash severity, but many drivers do not position their headrests correctly.",
+   "verdict": "update",
+   "currentValue": "IIHS-HLDI: seat/head-restraint combinations rated good cut injury-claim rates in rear crashes by 11% vs poor (600,000+ rear-impact claims, 2001–14 models); an earlier IIHS study found 35% fewer claims for neck injuries lasting 3+ months. The restraint must be 'high enough and near the back of the head.'",
+   "sourceName": "IIHS-HLDI, 'Good head restraints reduce injuries by 11 percent'; IIHS, 'Neck injury risk is lower if seats and head restraints are rated good'",
+   "sourceUrl": "https://www.iihs.org/news/detail/good-head-restraints-reduce-injuries-by-11-percent",
+   "retrievedAt": "2026-10-02",
+   "note": "First clause supported. 'Many drivers do not position their headrests correctly' has no located source; soften to 'A head restraint positioned high and close to the back of the head reduces the risk of neck injury' or attribute the 11% IIHS finding. Second IIHS page: https://www.iihs.org/news/detail/neck-injury-risk-is-lower-if-seats-and-head-restraints-are-rated-good"
+  },
+  {
+   "surface": "body",
+   "claim": "Seat belt use: While seat belts save lives, the restraint force itself can cause chest and abdominal injuries during a high-speed rear-end impact.",
+   "verdict": "update",
+   "currentValue": "StatPearls: seat belts 'transmit energy across the clavicle, chest wall, and superior pelvis'; seat belt syndrome ranges from belt-path bruising to intra-abdominal trauma, pneumothorax and vertebral fractures. The literature describes these as deceleration (forward-loading) injuries; an occupant of a struck vehicle is pushed back into the seat, so belt loading is mainly a frontal-crash mechanism (or a rear-ended car driven into the vehicle ahead).",
+   "sourceName": "Huecker MR, Stretanski MF. Seat Belt Injury. StatPearls (NCBI Bookshelf, last update 2025-05-04)",
+   "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK470262/",
+   "retrievedAt": "2026-10-02",
+   "note": "Suggested: '...the restraint force itself can cause chest and abdominal injuries in a severe crash — for example, if the rear-ended car is pushed into the vehicle ahead.' Do not tie seat belt syndrome to the rear impact itself."
+  },
+  {
+   "surface": "body",
+   "claim": "Whiplash is the signature injury of rear-end collisions. It occurs when the head is violently thrown backward and then forward, stretching and tearing the muscles, tendons, and ligaments in the neck beyond their normal range of motion.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Lehman A, Margetis K. Cervical Sprain. StatPearls (NCBI Bookshelf, last update 2026-04-12); IIHS",
+   "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK541016/",
+   "retrievedAt": "2026-10-02",
+   "note": "StatPearls: cervical sprain, 'most commonly presenting as whiplash-associated disorders (WAD), is a soft tissue injury of the cervical spine caused by acceleration-deceleration forces'; the Quebec Task Force defines whiplash as injuries from rear-end or side-impact collisions. IIHS: whiplash injuries most often occur in rear-end collisions."
+  },
+  {
+   "surface": "body",
+   "claim": "Symptoms include neck pain and stiffness, headaches radiating from the base of the skull, shoulder and upper back pain, dizziness, and difficulty concentrating.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Tanaka N, et al. Adv Orthop 2018 (PMC5851023) — reused from facts-1653",
+   "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5851023/",
+   "retrievedAt": "2026-10-02",
+   "note": "The review lists neck pain, restricted motion, occipital headache, dizziness, and memory/concentration impairment among WAD symptoms."
+  },
+  {
+   "surface": "body",
+   "claim": "While many whiplash injuries heal within a few weeks, studies show that up to 50% of whiplash victims continue to experience symptoms more than a year after the accident.",
+   "verdict": "update",
+   "currentValue": "StatPearls Cervical Sprain (2026): 'Most patients recover within days to several weeks' and 'about half of patients remain symptomatic at 1 year after WAD'; chronic WAD develops in 'approximately one-quarter of patients.' Bone and Joint Decade Neck Pain Task Force (Carroll et al., Spine 2008): 'approximately 50% of those with WAD will report neck pain symptoms 1 year after their injuries.'",
+   "sourceName": "Lehman A, Margetis K. Cervical Sprain. StatPearls (NCBI Bookshelf, last update 2026-04-12); Carroll LJ et al., Spine 2008;33(4 Suppl):S83-92 (PMID 18204405)",
+   "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK541016/",
+   "retrievedAt": "2026-10-02",
+   "note": "Figure is real but the wording drifts: the sources say 'about half' at '1 year', not 'up to 50%' 'more than a year'. Suggested: 'While many whiplash injuries heal within days to a few weeks, about half of people with whiplash still report symptoms a year after the injury (StatPearls; Neck Pain Task Force, 2008).' Same fix in faq:0. PubMed URL returns 203 to curl (bot interstitial); the StatPearls URL returns 200."
+  },
+  {
+   "surface": "body",
+   "claim": "A herniated disc occurs when the soft inner material of the disc pushes through the tougher outer layer, potentially compressing nearby spinal nerves. This can cause radiating pain, numbness, and weakness in the arms or legs depending on the location of the herniation.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "MedlinePlus — Herniated Disk",
+   "sourceUrl": "https://medlineplus.gov/herniateddisk.html",
+   "retrievedAt": "2026-10-02",
+   "note": "MedlinePlus: a herniated disk 'ruptures. This allows the jelly-like center of the disk to leak, irritating the nearby nerves'; links cervical radiculopathy (arm) and sciatica (leg). 'With treatment, most people recover.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Herniated discs in the cervical spine (neck) are particularly common in rear-end collisions and may require epidural injections, physical therapy, or surgical intervention.",
+   "verdict": "update",
+   "currentValue": "No source located that rear-end crashes particularly produce cervical disc herniation. StatPearls: WAD typically shows no identifiable structural pathology on imaging; MedlinePlus: treatments include rest, medicines, physical therapy and sometimes surgery.",
+   "sourceName": "Lehman A, Margetis K. Cervical Sprain. StatPearls (NCBI Bookshelf, last update 2026-04-12); MedlinePlus — Herniated Disk",
+   "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK541016/",
+   "retrievedAt": "2026-10-02",
+   "note": "Suggested: 'A rear-end collision can injure the discs of the cervical spine (neck); treatment may include physical therapy, epidural injections or, in some cases, surgery.' Drop 'particularly common'."
+  },
+  {
+   "surface": "body",
+   "claim": "Even without a direct blow to the head, the rapid acceleration and deceleration forces in a rear-end collision can cause the brain to move inside the skull, resulting in a concussion or more severe traumatic brain injury (TBI) .",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "CDC — About Mild TBI and Concussion (read in browser 2026-10-02)",
+   "sourceUrl": "https://www.cdc.gov/traumatic-brain-injury/about/index.html",
+   "retrievedAt": "2026-10-02",
+   "note": "CDC: a mild TBI or concussion is caused by 'a bump, blow, or jolt to the head, or by a hit to the body that causes the head and brain to move quickly back and forth.' cdc.gov returns 403 to curl; confirmed in browser."
+  },
+  {
+   "surface": "body",
+   "claim": "Brain injuries are especially concerning because they may not be immediately apparent and can worsen without treatment.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "CDC — Symptoms of Mild TBI and Concussion (sibling 2556); MedlinePlus — Subdural hematoma",
+   "sourceUrl": "https://www.cdc.gov/traumatic-brain-injury/signs-symptoms/index.html",
+   "retrievedAt": "2026-10-02",
+   "note": "CDC: some symptoms 'may not appear for hours or days'. MedlinePlus subdural hematoma: chronic hematomas 'can occur after a minor head injury and may go unnoticed for many days'."
+  },
+  {
+   "surface": "body",
+   "claim": "Compression fractures of the lumbar vertebrae, strained muscles and ligaments, and damage to the facet joints can all result from the impact.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "StatPearls — Cervical Sprain (Pain distribution includes lumbar region); Lee HY et al. 2026",
+   "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK541016/",
+   "retrievedAt": "2026-10-02",
+   "note": "General mechanism; hedged ('can'). The 2026 volunteer study recorded transient lumbar pain after an 8 km/h impact."
+  },
+  {
+   "surface": "body",
+   "claim": "Older adults are particularly vulnerable to fractures in rear-end crashes due to decreased bone density.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "MedlinePlus — Osteoporosis",
+   "sourceUrl": "https://medlineplus.gov/osteoporosis.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Bone-density loss with age makes bones 'weak and ... likely to fracture', most commonly hip, spine and wrist. The rear-end-specific framing is inference; acceptable."
+  },
+  {
+   "surface": "body",
+   "claim": "Seat belt syndrome refers to injuries to the chest wall, sternum, ribs, and abdominal organs caused by the restraining force of the belt. In severe cases, the force can bruise or lacerate internal organs like the liver, spleen, or kidneys.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Huecker MR, Stretanski MF. Seat Belt Injury. StatPearls (NCBI Bookshelf, last update 2025-05-04)",
+   "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK470262/",
+   "retrievedAt": "2026-10-02",
+   "note": "StatPearls: 'Seat belt syndrome' refers to the combination of musculoskeletal and visceral injuries associated with forces transmitted through seat belt use — belt-path bruising, intra-abdominal trauma, pneumothorax, vertebral fractures. See the update on the 'Seat belt use' bullet for the rear-end mechanism caveat."
+  },
+  {
+   "surface": "body",
+   "claim": "The shoulder joint is vulnerable in rear-end crashes because of how the seat belt crosses the body. Rotator cuff tears, labral tears, and shoulder impingement are common results.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "Huecker MR, Stretanski MF. Seat Belt Injury. StatPearls (NCBI Bookshelf, last update 2025-05-04)",
+   "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK470262/",
+   "retrievedAt": "2026-10-02",
+   "note": "StatPearls says the shoulder belt is designed to load the clavicle and chest wall; no source located that rotator cuff/labral tears are 'common results' of rear-end crashes. Soften: 'Rotator cuff tears, labral tears and shoulder impingement can result.'"
+  },
+  {
+   "surface": "body",
+   "claim": "When airbags deploy during a rear-end crash — or when the occupant's face strikes the steering wheel or dashboard — the result can be broken teeth, jaw fractures, lacerations, and eye injuries.",
+   "verdict": "update",
+   "currentValue": "NHTSA: 'Frontal air bags are not designed to deploy in side, rear, or rollover crashes'; they are 'generally designed to deploy in moderate to severe frontal or near-frontal crashes.'",
+   "sourceName": "NHTSA, Fifth/Sixth Report to Congress: Effectiveness of Occupant Protection Systems (DOT HS 809 442); NHTSA Air Bags page (https://www.nhtsa.gov/vehicle-safety/air-bags, read in browser 2026-10-02)",
+   "sourceUrl": "https://crashstats.nhtsa.dot.gov/Api/Public/Publication/809442",
+   "retrievedAt": "2026-10-02",
+   "note": "In a rear-end crash the front airbags of the struck car generally do not deploy unless it is pushed into the vehicle ahead; the striking driver's car is in a frontal crash and its airbags may deploy. Suggested: 'If the impact pushes your car into the vehicle ahead and the airbags deploy — or if your face strikes the steering wheel or dashboard — the result can be...'. Maxillofacial airbag trauma is documented (Traffic Inj Prev 2026 scoping review, PMID 42085710)."
+  },
+  {
+   "surface": "body",
+   "claim": "Burn injuries from airbag deployment chemical burns, though rare, are also possible.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "PubMed — maxillofacial and other airbag deployment injury literature (e.g., PMID 42085710)",
+   "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42085710/",
+   "retrievedAt": "2026-10-02",
+   "note": "Airbag burns (thermal and chemical/alkaline) are documented in case literature; 'though rare' hedges it. Grammar: 'Burns from airbag deployment, including chemical burns, though rare, are also possible.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Post-traumatic stress disorder (PTSD), driving anxiety, depression, and sleep disturbances are well-documented consequences of motor vehicle crashes.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Shahsavarinia K, et al. Health Promot Perspect 2025;15(3):213-235 (PMC12680517) — meta-analysis of 82 studies",
+   "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12680517/",
+   "retrievedAt": "2026-10-02",
+   "note": "Pooled PTSD prevalence among road-traffic-crash survivors 20.3% (29.4% at one month, 18.8% at three months). Optional figure: 'about one in five crash survivors develops PTSD in the months afterward.'"
+  },
+  {
+   "surface": "body",
+   "claim": "The adrenaline and endorphins released during a traumatic event can mask pain for hours or even days after the crash.",
+   "verdict": "update",
+   "currentValue": "Stress-induced analgesia (pain suppression mediated by the descending inhibitory pathway, endogenous opioids and other systems) is an established phenomenon (Butler & Finn, Prog Neurobiol 2009). Whiplash onset data: neck pain began within 6 hours in 65%, within 24 hours in 93%, within 72 hours in 100% (Deans et al. 1987, via Tanaka 2018). CDC: concussion symptoms may not appear for hours or days.",
+   "sourceName": "Butler RK, Finn DP. Stress-induced analgesia. Prog Neurobiol 2009 (PMID 19393288); Tanaka N, et al. Adv Orthop 2018 (PMC5851023)",
+   "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5851023/",
+   "retrievedAt": "2026-10-02",
+   "note": "Mechanism is supportable for hours; 'or even days' of masking is not — the delay over days is better explained by evolving inflammation/spasm and concussion symptom evolution. Suggested: 'The stress response during a crash can blunt pain at first, and some injuries take hours or days to produce symptoms.' Consistent with facts-1653 (whiplash timing) and facts-4368."
+  },
+  {
+   "surface": "body",
+   "claim": "Headaches appearing 24 to 72 hours after the crash — may indicate a concussion, blood clot, or neck injury",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "CDC — Symptoms of Mild TBI and Concussion; MedlinePlus — Subdural hematoma; Tanaka 2018",
+   "sourceUrl": "https://medlineplus.gov/ency/article/000713.htm",
+   "retrievedAt": "2026-10-02",
+   "note": "Hedged ('may indicate'). Subdural hematoma (a blood clot on the brain) can follow minor head injury and go unnoticed for days; whiplash onset within 72 hours."
+  },
+  {
+   "surface": "body",
+   "claim": "Neck and shoulder stiffness that develops the morning after the accident — a hallmark of whiplash",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Tanaka N, et al. Adv Orthop 2018 (PMC5851023), citing Deans 1987",
+   "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5851023/",
+   "retrievedAt": "2026-10-02",
+   "note": "93% of neck-sprain patients had neck pain within 24 hours."
+  },
+  {
+   "surface": "body",
+   "claim": "Numbness or tingling in the arms or hands — often a sign of a herniated disc compressing a cervical nerve",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "MedlinePlus — Herniated Disk; Tanaka 2018",
+   "sourceUrl": "https://medlineplus.gov/herniateddisk.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Paresthesias are also a common WAD symptom without disc herniation (Tanaka 2018). Change 'often a sign of' to 'can be a sign of'."
+  },
+  {
+   "surface": "body",
+   "claim": "Abdominal pain or swelling — could indicate internal bleeding, which is a medical emergency",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "MedlinePlus Medical Encyclopedia — Bleeding (sibling 2556)",
+   "sourceUrl": "https://medlineplus.gov/ency/article/000045.htm",
+   "retrievedAt": "2026-10-02",
+   "note": "Verified in facts-2556."
+  },
+  {
+   "surface": "body",
+   "claim": "Insurance companies routinely argue that gaps in treatment mean the injuries were not serious or were caused by something other than the crash. A prompt medical evaluation eliminates this argument.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "No source; advocacy statement",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "'Eliminates' overstates. Suggested: 'A prompt medical evaluation makes that argument much harder to sustain.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Whiplash-associated disorders, herniated discs, and spinal injuries frequently result in chronic pain that persists long after the initial injury has healed.",
+   "verdict": "update",
+   "currentValue": "StatPearls Cervical Sprain (2026): chronic WAD develops in approximately one-quarter of patients; about half remain symptomatic at 1 year.",
+   "sourceName": "Lehman A, Margetis K. Cervical Sprain. StatPearls (NCBI Bookshelf, last update 2026-04-12)",
+   "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK541016/",
+   "retrievedAt": "2026-10-02",
+   "note": "'Frequently' is defensible for WAD at one year; prefer 'can result in chronic pain' or give the StatPearls one-quarter figure."
+  },
+  {
+   "surface": "body",
+   "claim": "Traumatic brain injuries can cause lasting cognitive deficits including memory problems, difficulty concentrating, and impaired decision-making.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "NINDS — Traumatic Brain Injury (TBI)",
+   "sourceUrl": "https://www.ninds.nih.gov/health-information/disorders/traumatic-brain-injury-tbi",
+   "retrievedAt": "2026-10-02",
+   "note": "Consistent with NINDS; hedged ('can')."
+  },
+  {
+   "surface": "body",
+   "claim": "In most rear-end collisions, the driver who rear-ends another vehicle is presumed to be at fault.",
+   "verdict": "update",
+   "currentValue": "Neither Georgia nor South Carolina applies a legal presumption that the following driver is at fault. Georgia: how closely a following vehicle may drive 'may not be laid down in any hard and fast or general rule', and whether the driver followed too closely (O.C.G.A. § 40-6-49) is ordinarily for the jury; the fact that a driver could not stop in time does not 'demand a finding that he was following too closely' (Smithwick v. Campbell, Ga. Ct. App. 2021, quoting Beckett v. Monroe and Cameron v. Peterson). South Carolina: S.C. Code § 56-5-1930(A) bars following 'more closely than is reasonable and prudent'; a jury finding of a causative violation is negligence per se and evidence of recklessness supporting punitive damages (Wise v. Broadway, 315 S.C. 273 (1993)), but the violation must be proven; § 56-5-6170 adds that an accident's occurrence does not itself raise a presumption that a law was violated (for police).",
+   "sourceName": "Smithwick v. Campbell, No. A21A0733 (Ga. Ct. App. Oct. 18, 2021); O.C.G.A. § 40-6-49; Wise v. Broadway, 315 S.C. 273, 433 S.E.2d 857 (1993); S.C. Code §§ 56-5-1930, 56-5-6170",
+   "sourceUrl": "https://www.courtlistener.com/opinion/10726269/leigh-smithwick-v-ross-campbell/",
+   "retrievedAt": "2026-10-02",
+   "note": "Suggested: 'In most rear-end collisions, the evidence points to the driver who did the rear-ending, because Georgia (O.C.G.A. § 40-6-49) and South Carolina (S.C. Code § 56-5-1930) both bar following another vehicle more closely than is reasonable and prudent. But neither state presumes the rear driver is at fault — fault is decided on the facts.' CourtListener returns 202 to curl (bot interstitial); all three opinions read in browser 2026-10-02. Same fix in faq:2, keyTakeaways, and the 'Proving Your...' lead-in."
+  },
+  {
+   "surface": "body",
+   "claim": "Courts across the country consistently hold that a following driver who strikes the rear of a lead vehicle was either following too closely, driving while distracted, or failed to react in time.",
+   "verdict": "drop",
+   "currentValue": "",
+   "sourceName": "Smithwick v. Campbell (Ga. Ct. App. 2021); Hayes v. Crawford, 317 Ga. App. 75 (2012)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/10726269/leigh-smithwick-v-ross-campbell/",
+   "retrievedAt": "2026-10-02",
+   "note": "Contradicted in Georgia: Smithwick affirmed a defense verdict for a driver who rear-ended the plaintiff (sudden emergency; following too closely was a jury question). A national 'courts consistently hold' claim has no source. Delete the sentence; the state-specific duty sentence in the update above replaces it."
+  },
+  {
+   "surface": "body",
+   "claim": "However, this presumption is not absolute. The rear driver may attempt to shift liability by arguing that: The lead driver made a sudden, unexpected stop without justification The lead driver's brake lights were not functioning The lead driver reversed into the rear vehicle A third vehicle pushed the rear car into the lead vehicle (chain-reaction collision) Hazardous road conditions contributed to the crash",
+   "verdict": "update",
+   "currentValue": "Georgia: a driver 'must exercise ordinary care not to stop, slow up, nor swerve from his course without adequate warning to following vehicles' (Hayes v. Crawford, 317 Ga. App. 75 (2012), citing O.C.G.A. § 40-6-123(c)); a lead driver who stops suddenly without warning can be a concurring proximate cause. The sudden-emergency defense is available to a following driver (Smithwick v. Campbell, 2021).",
+   "sourceName": "Hayes v. Crawford, 317 Ga. App. 75, 730 S.E.2d 26 (2012); Smithwick v. Campbell (Ga. Ct. App. 2021)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/7927808/hayes-v-crawford/",
+   "retrievedAt": "2026-10-02",
+   "note": "Exceptions list is accurate. Reword the lead-in to drop 'presumption': 'However, the rear driver is not automatically liable. The rear driver may argue that: ...'. Optionally add 'a sudden emergency the rear driver did not create' to the list."
+  },
+  {
+   "surface": "body",
+   "claim": "Many states follow comparative fault rules, which means your compensation may be reduced by your percentage of responsibility for the accident. However, even if you are found to be partially at fault, you may still be entitled to recover a portion of your damages.",
+   "verdict": "update",
+   "currentValue": "Georgia: damages reduced by the plaintiff's percentage of fault; no recovery at 50% or more (O.C.G.A. § 51-12-33(a), (g)). South Carolina: modified comparative negligence — recovery if the plaintiff's negligence is not greater than the defendant's, barred at 51% or more, award reduced by the plaintiff's share (Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)).",
+   "sourceName": "O.C.G.A. § 51-12-33 (Justia; facts-1831/1767); Nelson v. Concrete Supply Co. (facts-1831)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Make it state-specific. Suggested: 'Georgia and South Carolina both use modified comparative fault: your compensation is reduced by your share of fault, and you recover nothing if you are 50% or more at fault in Georgia (O.C.G.A. § 51-12-33) or 51% or more in South Carolina (Nelson v. Concrete Supply Co., 1991).' Justia not re-fetched (bot challenge); URL reused from sibling packs."
+  },
+  {
+   "surface": "body",
+   "claim": "While the rear driver is typically presumed at fault, building a strong injury claim requires thorough documentation and evidence.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "See the fault-presumption entry",
+   "sourceUrl": "https://www.courtlistener.com/opinion/10726269/leigh-smithwick-v-ross-campbell/",
+   "retrievedAt": "2026-10-02",
+   "note": "Suggested: 'Even when fault looks clear, building a strong injury claim requires thorough documentation and evidence.'"
+  },
+  {
+   "surface": "body",
+   "claim": "The police accident report, photographs of vehicle damage, skid marks, and the accident scene, dashcam or surveillance footage, and witness statements all help establish how the crash occurred and who was at fault.",
+   "verdict": "update",
+   "currentValue": "Police reports are useful evidence, but a traffic conviction is not admissible in a South Carolina civil case (S.C. Code § 56-5-6160); in Georgia a guilty plea to following too closely creates a prima facie case of negligence that can be rebutted (Hayes v. Crawford, citing Butgereit v. Enviro-Tech).",
+   "sourceName": "S.C. Code § 56-5-6160 (scstatehouse.gov, read 2026-10-02); Hayes v. Crawford (2012)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t56c005.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Sentence itself is fine; optional addition so readers do not over-rely on a ticket: 'A traffic ticket alone does not decide fault — in South Carolina a conviction for the violation is not even admissible in the civil case (S.C. Code § 56-5-6160).'"
+  },
+  {
+   "surface": "body",
+   "claim": "If a commercial truck rear-ended you, the truck's electronic logging device (ELD) data and the driver's hours-of-service records may be critical evidence.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "49 C.F.R. § 395.8 (eCFR)",
+   "sourceUrl": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-395/subpart-A/section-395.8",
+   "retrievedAt": "2026-10-02",
+   "note": "Records of duty status are kept by ELD; carriers retain them six months (facts-4715)."
+  },
+  {
+   "surface": "body",
+   "claim": "In cases involving egregious conduct — such as drunk driving, extreme distracted driving, or reckless speeding — punitive damages may also be available to punish the at-fault driver and deter similar behavior.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-5.1(b),(f); S.C. Code §§ 15-32-520, 15-32-530 (facts-1831)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+   "retrievedAt": "2026-10-02",
+   "note": "Georgia: clear and convincing evidence of willful misconduct, wantonness or conscious indifference; DUI-impairment cases are uncapped (§ 51-12-5.1(f)). South Carolina: clear and convincing evidence of willful, wanton or reckless conduct (§ 15-32-520(D)); notably, a causative violation of the following-too-closely statute is itself evidence of recklessness a jury may weigh (Wise v. Broadway, 1993). Hedged ('may')."
+  },
+  {
+   "surface": "body",
+   "claim": "If a rear-end collision results in a fatality, the victim's family may pursue a wrongful death claim for additional damages including funeral expenses and loss of companionship.",
+   "verdict": "update",
+   "currentValue": "Georgia measures wrongful death as 'the full value of the life of the decedent' (O.C.G.A. §§ 51-4-1, 51-4-2); funeral, medical and pain-and-suffering damages are recovered separately by the estate (O.C.G.A. § 51-4-5). South Carolina's wrongful death damages include loss of companionship and funeral expenses (S.C. Code § 15-51-10 et seq.); a survival action carries the decedent's own claims.",
+   "sourceName": "O.C.G.A. §§ 51-4-1, 51-4-2 (facts-4715); S.C. Code Title 15 Chapter 51 (scstatehouse.gov)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c051.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate for South Carolina; imprecise for Georgia. Suggested: '...the family may pursue a wrongful death claim (in Georgia, for the full value of the life of the person who died) and the estate may recover funeral and medical expenses.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Whether your rear-end accident occurred near our Savannah or Darien offices in Georgia, or near our Charleston , Columbia , or Myrtle Beach offices in South Carolina, our attorneys are ready to fight for you.",
+   "verdict": "update",
+   "currentValue": "Six offices: Savannah, Darien, Charleston, North Charleston, Columbia, Myrtle Beach (client.json; facts-1653/1719).",
+   "sourceName": "client.json; profiles/writer-profile.md",
+   "sourceUrl": "/Users/brianhaas/Code/blue-sky-studio/client-rodenlaw-website/profiles/writer-profile.md",
+   "retrievedAt": "2026-10-02",
+   "note": "North Charleston is omitted. Add it ('Charleston, North Charleston, Columbia, or Myrtle Beach offices'). Optional: this is the post's only GA/SC paragraph — the deadlines could be added here: Georgia 2 years (O.C.G.A. § 9-3-33; no general discovery rule for crash injuries), South Carolina 3 years (S.C. Code § 15-3-530(5))."
+  },
+  {
+   "surface": "body",
+   "claim": "At Roden Law, we have recovered more than $300 million for our clients.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md — firm stats ('$300M+ recovered'); sibling packs 1653/1740/4590",
+   "sourceUrl": "/Users/brianhaas/Code/blue-sky-studio/client-rodenlaw-website/profiles/writer-profile.md",
+   "retrievedAt": "2026-10-02",
+   "note": "Firm figure; matches the site-wide registry. The post's only dollar figure."
+  },
+  {
+   "surface": "body",
+   "claim": "We work on a contingency fee basis — you pay nothing unless we win your case.",
+   "verdict": "update",
+   "currentValue": "Fees and costs apply only upon successful recovery. No fees or costs with no recovery.",
+   "sourceName": "Firm-confirmed fee wording (owner, 2026-10-02; fee-FAQ fix a132903; applied to 4368/1657)",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "'You pay nothing unless we win' differs from the confirmed wording (it omits costs and frames recovery as 'win'). Suggested: 'We work on a contingency fee basis — no fees or costs unless we recover compensation for you.' (same form used on 1657)."
+  },
+  {
+   "surface": "body",
+   "claim": "Call 1-844-RESULTS to speak with an attorney who will fight for the compensation you deserve.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md; facts-1740",
+   "sourceUrl": "/Users/brianhaas/Code/blue-sky-studio/client-rodenlaw-website/profiles/writer-profile.md",
+   "retrievedAt": "2026-10-02",
+   "note": "href tel:+18447378587 = 844-RESULTS; correct."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Rear-end collisions account for 29% of all U.S. crashes and frequently cause whiplash, herniated discs, concussions, and chronic pain that may not appear for days after the accident.",
+   "verdict": "update",
+   "currentValue": "28.5% of police-reported crashes in 2023 (NHTSA TSF 2023, Table 29). Whiplash symptoms begin within hours to 72 hours (Deans 1987 via Tanaka 2018); concussion symptoms may take hours or days (CDC).",
+   "sourceName": "NHTSA, Traffic Safety Facts 2023: A Compilation of Motor Vehicle Traffic Crash Data (DOT HS 813 738, August 2025), Table 29; CDC; Tanaka 2018",
+   "sourceUrl": "https://crashstats.nhtsa.dot.gov/Api/Public/Publication/813738",
+   "retrievedAt": "2026-10-02",
+   "note": "Suggested: 'Rear-end collisions made up about 28.5% of police-reported U.S. crashes in 2023 (NHTSA) and commonly cause whiplash and other neck and back injuries, and sometimes concussions — symptoms that can take hours or days to appear.' 'All U.S. crashes' → 'police-reported crashes'; 'frequently' herniated discs is unsupported."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "The rear driver is typically presumed at fault, and victims can recover compensation for medical expenses, lost wages, pain and suffering, and more.",
+   "verdict": "update",
+   "currentValue": "No legal presumption in Georgia or South Carolina; both states bar following too closely (O.C.G.A. § 40-6-49; S.C. Code § 56-5-1930).",
+   "sourceName": "Smithwick v. Campbell (Ga. Ct. App. 2021); Wise v. Broadway (S.C. 1993)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/10726269/leigh-smithwick-v-ross-campbell/",
+   "retrievedAt": "2026-10-02",
+   "note": "Suggested: 'The rear driver is often found at fault because Georgia and South Carolina law both bar following too closely, but fault is decided on the facts; victims can recover...'"
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Seeking immediate medical attention is essential for both your health and your injury claim.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "CDC — Symptoms of Mild TBI and Concussion",
+   "sourceUrl": "https://www.cdc.gov/traumatic-brain-injury/signs-symptoms/index.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Advice; consistent with CDC/MedlinePlus guidance."
+  },
+  {
+   "surface": "excerpt",
+   "claim": "The injuries rear-end collisions cause most often, why symptoms can take days to appear, and what that delay does to a claim.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "CDC — Symptoms of Mild TBI and Concussion ('may not appear for hours or days')",
+   "sourceUrl": "https://www.cdc.gov/traumatic-brain-injury/signs-symptoms/index.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Published as the Article description by roden_schema_article(). 'Can take days' is within CDC's 'hours or days'."
+  },
+  {
+   "surface": "metaDescription",
+   "claim": "",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "—",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "metaDescription is empty; the excerpt carries the description. Nothing to verify."
+  },
+  {
+   "surface": "faq:0",
+   "claim": "Whiplash is the most common injury from a rear-end collision.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "IIHS-HLDI; StatPearls Cervical Sprain",
+   "sourceUrl": "https://www.iihs.org/news/detail/good-head-restraints-reduce-injuries-by-11-percent",
+   "retrievedAt": "2026-10-02",
+   "note": "IIHS: neck sprains/strains are the most frequently reported injuries in U.S. auto insurance claims and most often occur in rear-end collisions."
+  },
+  {
+   "surface": "faq:0",
+   "claim": "It occurs when the head is violently thrown backward and then forward upon impact, stretching and tearing the muscles, tendons, and ligaments in the neck.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Lehman A, Margetis K. Cervical Sprain. StatPearls (NCBI Bookshelf, last update 2026-04-12)",
+   "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK541016/",
+   "retrievedAt": "2026-10-02",
+   "note": "Acceleration-deceleration soft tissue injury of the cervical spine."
+  },
+  {
+   "surface": "faq:0",
+   "claim": "Up to 50% of whiplash victims experience symptoms lasting more than a year.",
+   "verdict": "update",
+   "currentValue": "About half of patients remain symptomatic at 1 year after WAD (StatPearls 2026; Carroll et al. 2008).",
+   "sourceName": "Lehman A, Margetis K. Cervical Sprain. StatPearls (NCBI Bookshelf, last update 2026-04-12); Carroll LJ et al. 2008 (PMID 18204405)",
+   "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK541016/",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. Suggested: 'About half of people with whiplash still report symptoms a year after the injury.'"
+  },
+  {
+   "surface": "faq:1",
+   "claim": "Yes. Delayed symptoms are extremely common after rear-end accidents. Adrenaline and endorphins can mask pain for hours or days.",
+   "verdict": "update",
+   "currentValue": "Whiplash: neck pain onset within 6 h in 65%, 24 h in 93%, 72 h in 100% (Deans 1987 via Tanaka 2018). CDC: concussion symptoms may not appear for hours or days. Stress-induced analgesia (Butler & Finn 2009) supports early masking, not masking for days.",
+   "sourceName": "Tanaka 2018 (PMC5851023); CDC; Butler & Finn 2009 (PMID 19393288)",
+   "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5851023/",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. Suggested: 'Yes. Delayed symptoms are common after rear-end accidents: the stress response can blunt pain at first, and whiplash and concussion symptoms often take hours or a few days to appear.'"
+  },
+  {
+   "surface": "faq:1",
+   "claim": "As long as you seek medical attention promptly after the accident and document the connection between the crash and your injuries, you can pursue a claim for delayed-onset injuries.",
+   "verdict": "update",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-3-33; S.C. Code § 15-3-530(5)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "'As long as' implies a guarantee and omits the deadline. Suggested: 'If you get medical care promptly and your records connect the injuries to the crash, you can pursue a claim for delayed-onset injuries — within Georgia's 2-year (O.C.G.A. § 9-3-33) or South Carolina's 3-year (S.C. Code § 15-3-530) filing deadline, which runs from the crash date, not from when symptoms appear in Georgia.' Georgia applies no general discovery rule to traumatic crash injuries (facts-1831)."
+  },
+  {
+   "surface": "faq:2",
+   "claim": "The rear driver is typically presumed to be at fault because all drivers have a legal duty to maintain a safe following distance. However, this presumption is rebuttable — the rear driver may argue that the lead driver contributed to the crash through sudden unexpected braking, non-functioning brake lights, or reversing into the rear vehicle.",
+   "verdict": "update",
+   "currentValue": "Georgia (O.C.G.A. § 40-6-49) and South Carolina (S.C. Code § 56-5-1930) both prohibit following 'more closely than is reasonable and prudent'; neither creates a presumption of fault from a rear-end impact. Georgia: a lead driver who stops suddenly without warning can share fault (Hayes v. Crawford, 2012); sudden emergency can excuse the following driver (Smithwick v. Campbell, 2021).",
+   "sourceName": "Smithwick v. Campbell (Ga. Ct. App. 2021); Hayes v. Crawford (2012); S.C. Code § 56-5-1930; Wise v. Broadway (1993)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/10726269/leigh-smithwick-v-ross-campbell/",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. Suggested: 'The rear driver is usually found at fault, because Georgia and South Carolina law both require drivers to keep a reasonable and prudent following distance (O.C.G.A. § 40-6-49; S.C. Code § 56-5-1930). But neither state presumes fault from a rear-end impact: the rear driver may argue the lead driver contributed through sudden unexpected braking, non-functioning brake lights, or reversing into the rear vehicle.'"
+  },
+  {
+   "surface": "faq:3",
+   "claim": "Yes. Even rear-end crashes at 10 to 15 miles per hour generate enough force to cause whiplash, herniated discs, and concussions.",
+   "verdict": "update",
+   "currentValue": "Neck sprains/strains are the most frequently reported injury in U.S. auto insurance claims, most often from rear-end crashes (IIHS). No source ties 10–15 mph to herniated discs or concussions; an 8 km/h volunteer study found transient pain without structural injury.",
+   "sourceName": "IIHS-HLDI; Lee HY et al. 2026 (PMC13020201)",
+   "sourceUrl": "https://www.iihs.org/news/detail/good-head-restraints-reduce-injuries-by-11-percent",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. Suggested: 'Yes. Even lower-speed rear-end crashes can cause whiplash and other soft tissue injuries — neck sprains and strains are the most frequently reported injuries in U.S. auto insurance claims, according to IIHS.'"
+  },
+  {
+   "surface": "faq:3",
+   "claim": "The severity depends on factors like vehicle size differences, headrest position, and whether the occupant was braced for impact.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "IIHS (head restraint geometry and seat design); Carroll et al. 2008",
+   "sourceUrl": "https://www.iihs.org/news/detail/good-head-restraints-reduce-injuries-by-11-percent",
+   "retrievedAt": "2026-10-02",
+   "note": "Headrest geometry verified (IIHS). Note: the Neck Pain Task Force found few collision factors (direction, headrest type) prognostic for recovery, so keep this framed as injury risk, not recovery."
+  },
+  {
+   "surface": "faq:3",
+   "claim": "Never assume a low-speed collision is harmless.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "IIHS; CDC",
+   "sourceUrl": "https://www.iihs.org/news/detail/good-head-restraints-reduce-injuries-by-11-percent",
+   "retrievedAt": "2026-10-02",
+   "note": "Advice; supported by the IIHS claims data."
+  },
+  {
+   "surface": "faq:4",
+   "claim": "You may recover compensation for past and future medical expenses, lost wages and lost earning capacity, pain and suffering, emotional distress, loss of enjoyment of life, and property damage. In cases involving egregious conduct like drunk driving, punitive damages may also be available.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-5.1(b),(f); S.C. Code § 15-32-520(D) (facts-1831)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/",
+   "retrievedAt": "2026-10-02",
+   "note": "Standard compensatory categories; DUI punitive damages uncapped in Georgia (§ 51-12-5.1(f)). Hedged ('may')."
+  },
+  {
+   "surface": "faq:5",
+   "claim": "Absolutely. Many rear-end collision injuries — including whiplash, concussions, and herniated discs — produce delayed symptoms that may not appear for hours or days.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "CDC — Symptoms of Mild TBI and Concussion; Tanaka 2018 (PMC5851023)",
+   "sourceUrl": "https://www.cdc.gov/traumatic-brain-injury/signs-symptoms/index.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Within 'hours or days' — matches CDC and the Deans onset data."
+  },
+  {
+   "surface": "faq:5",
+   "claim": "Seeking immediate medical evaluation protects your health and creates documented evidence linking the accident to your injuries, which is critical for any future injury claim.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "CDC; facts-2556 faq:4",
+   "sourceUrl": "https://www.cdc.gov/traumatic-brain-injury/signs-symptoms/index.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Records are evidence that help link injuries to the crash; 'creates documented evidence linking' is appropriately framed."
+  }
+ ],
+ "recommendedEdits": [
+  "Intro: replace 'approximately 29% of all police-reported motor vehicle crashes in the United States — roughly 1.8 million collisions each year' with 'about 28.5% of all police-reported motor vehicle crashes in the United States in 2023 — roughly 1.75 million collisions', and repoint the NHTSA link to https://crashstats.nhtsa.dot.gov/Api/Public/Publication/813738 (the current link is the 100-Car Naturalistic Driving Study, which has no national share).",
+  "Fault section: replace 'In most rear-end collisions, the driver who rear-ends another vehicle is presumed to be at fault. This is because all drivers have a legal duty to maintain a safe following distance and be prepared to stop if the vehicle ahead slows or stops.' with 'In most rear-end collisions, the evidence points to the driver who did the rear-ending: Georgia (O.C.G.A. § 40-6-49) and South Carolina (S.C. Code § 56-5-1930) both prohibit following another vehicle more closely than is reasonable and prudent. But neither state presumes the rear driver is at fault — fault is decided on the facts.' Delete 'Courts across the country consistently hold...'. Change 'However, this presumption is not absolute.' to 'However, the rear driver is not automatically liable.'",
+  "Comparative fault: replace 'Many states follow comparative fault rules...' with the Georgia 50% bar (O.C.G.A. § 51-12-33) and South Carolina 51% bar (Nelson v. Concrete Supply Co., 1991) wording in verifiedClaims.",
+  "'Proving' lead-in: 'While the rear driver is typically presumed at fault' → 'Even when fault looks clear'.",
+  "Key Takeaways: '29% of all U.S. crashes' → 'about 28.5% of police-reported U.S. crashes in 2023 (NHTSA)'; drop 'frequently ... herniated discs'; 'presumed at fault' → 'often found at fault because both states bar following too closely, but fault is decided on the facts'.",
+  "FAQ 2 (structured data): rewrite per verifiedClaims faq:2 — no presumption; cite § 40-6-49 / § 56-5-1930.",
+  "Whiplash prognosis, body and FAQ 0 (structured data): 'up to 50% ... more than a year' → 'about half ... a year after the injury' (StatPearls 2026; Neck Pain Task Force 2008).",
+  "Low-speed claim, body and FAQ 3 (structured data): drop the '10 to 15 miles per hour' threshold and herniated discs/concussions; use the IIHS neck-sprain claims fact.",
+  "Delayed symptoms, body and FAQ 1 (structured data): adrenaline masks pain 'for hours or even days' → stress response blunts pain at first; symptoms can take hours or days. FAQ 1: add the filing deadlines (GA 2 years § 9-3-33, runs from the crash date; SC 3 years § 15-3-530).",
+  "Airbags: frontal airbags are not designed to deploy in rear crashes (NHTSA) — reframe the facial-injury paragraph around the car being pushed into the vehicle ahead. Seat belt bullet: drop 'during a high-speed rear-end impact'.",
+  "Soften unsupported frequency words: 'particularly common' (cervical herniation), 'common results' (shoulder tears), 'often a sign of' (numbness), 'many drivers do not position their headrests correctly', 'eliminates this argument'.",
+  "Wrongful death: Georgia measure is the full value of the life (O.C.G.A. § 51-4-2); funeral expenses go to the estate.",
+  "Offices: add North Charleston.",
+  "Fee line: 'you pay nothing unless we win your case' → 'no fees or costs unless we recover compensation for you' (firm-confirmed wording 2026-10-02)."
+ ],
+ "statuteCitations": [
+  {
+   "section": "O.C.G.A. § 40-6-49",
+   "name": "Following too closely — not more closely than is reasonable and prudent (text quoted in Smithwick v. Campbell; Justia not fetched, bot challenge; URL by sibling pattern for article 3)",
+   "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-3/section-40-6-49/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-33",
+   "name": "Apportionment; damages reduced by plaintiff's share; no recovery at 50 percent or more",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+  },
+  {
+   "section": "O.C.G.A. § 9-3-33",
+   "name": "Injuries to the person — two years",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-5.1",
+   "name": "Punitive damages — clear and convincing; DUI impairment uncapped (f); $250,000 cap (g)",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-5-1/"
+  },
+  {
+   "section": "O.C.G.A. § 51-4-2",
+   "name": "Wrongful death — full value of the life of the decedent",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-4/section-51-4-2/"
+  },
+  {
+   "section": "S.C. Code § 56-5-1930",
+   "name": "Following too closely — (A) not more closely than is reasonable and prudent",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-6160",
+   "name": "Evidence of conviction inadmissible in civil action",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 56-5-6170",
+   "name": "Officer shall not deem the occurrence of an accident as giving rise to a presumption that a law was violated",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  },
+  {
+   "section": "S.C. Code § 15-3-530(5)",
+   "name": "Personal injury — three years",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "section": "S.C. Code §§ 15-32-520, 15-32-530",
+   "name": "Punitive damages — clear and convincing; cap greater of 3x compensatory or $500,000 (indexed)",
+   "url": "https://www.scstatehouse.gov/code/t15c032.php"
+  },
+  {
+   "section": "S.C. Code Title 15, Chapter 51",
+   "name": "Wrongful death",
+   "url": "https://www.scstatehouse.gov/code/t15c051.php"
+  }
+ ],
+ "authoritativeLinks": [
+  {
+   "name": "NHTSA — Traffic Safety Facts 2023 (DOT HS 813 738, Aug 2025), Table 29: rear end 1,748,481 crashes, 28.5%",
+   "url": "https://crashstats.nhtsa.dot.gov/Api/Public/Publication/813738"
+  },
+  {
+   "name": "StatPearls — Cervical Sprain (2026-04-12): about half symptomatic at 1 year; chronic WAD ~one-quarter",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK541016/"
+  },
+  {
+   "name": "Carroll LJ et al. — Neck Pain Task Force, course and prognosis of WAD (Spine 2008)",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/18204405/"
+  },
+  {
+   "name": "StatPearls — Seat Belt Injury (2025-05-04)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK470262/"
+  },
+  {
+   "name": "Tanaka N et al. — Whiplash injury review, Adv Orthop 2018 (Deans onset data)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5851023/"
+  },
+  {
+   "name": "CDC — About Mild TBI and Concussion (browser-verified)",
+   "url": "https://www.cdc.gov/traumatic-brain-injury/about/index.html"
+  },
+  {
+   "name": "CDC — Symptoms of Mild TBI and Concussion (browser-verified, sibling 2556)",
+   "url": "https://www.cdc.gov/traumatic-brain-injury/signs-symptoms/index.html"
+  },
+  {
+   "name": "MedlinePlus — Herniated Disk",
+   "url": "https://medlineplus.gov/herniateddisk.html"
+  },
+  {
+   "name": "MedlinePlus — Subdural hematoma",
+   "url": "https://medlineplus.gov/ency/article/000713.htm"
+  },
+  {
+   "name": "MedlinePlus — Osteoporosis",
+   "url": "https://medlineplus.gov/osteoporosis.html"
+  },
+  {
+   "name": "NINDS — Traumatic Brain Injury",
+   "url": "https://www.ninds.nih.gov/health-information/disorders/traumatic-brain-injury-tbi"
+  },
+  {
+   "name": "IIHS-HLDI — Good head restraints reduce injuries by 11 percent",
+   "url": "https://www.iihs.org/news/detail/good-head-restraints-reduce-injuries-by-11-percent"
+  },
+  {
+   "name": "IIHS — Neck injury risk is lower if seats and head restraints are rated good",
+   "url": "https://www.iihs.org/news/detail/neck-injury-risk-is-lower-if-seats-and-head-restraints-are-rated-good"
+  },
+  {
+   "name": "NHTSA — Report to Congress, occupant protection (DOT HS 809 442): frontal air bags not designed to deploy in rear crashes",
+   "url": "https://crashstats.nhtsa.dot.gov/Api/Public/Publication/809442"
+  },
+  {
+   "name": "Shahsavarinia K et al. — PTSD in road traffic crash survivors, meta-analysis 2025 (PMC12680517)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12680517/"
+  },
+  {
+   "name": "Butler & Finn — Stress-induced analgesia, Prog Neurobiol 2009",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/19393288/"
+  },
+  {
+   "name": "Lee HY et al. — Low-speed collision volunteer study, BMC Musculoskelet Disord 2026",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13020201/"
+  },
+  {
+   "name": "Smithwick v. Campbell (Ga. Ct. App. 2021) — no hard-and-fast following-distance rule; sudden emergency (browser-verified)",
+   "url": "https://www.courtlistener.com/opinion/10726269/leigh-smithwick-v-ross-campbell/"
+  },
+  {
+   "name": "Hayes v. Crawford, 317 Ga. App. 75 (2012) — lead driver's sudden stop as concurring cause (browser-verified)",
+   "url": "https://www.courtlistener.com/opinion/7927808/hayes-v-crawford/"
+  },
+  {
+   "name": "Wise v. Broadway, 315 S.C. 273 (1993) — § 56-5-1930 violation negligence per se, evidence of recklessness (browser-verified)",
+   "url": "https://www.courtlistener.com/opinion/1301072/wise-v-broadway/"
+  },
+  {
+   "name": "S.C. Code Title 56 Chapter 5 (§§ 56-5-1930, 56-5-6160, 56-5-6170)",
+   "url": "https://www.scstatehouse.gov/code/t56c005.php"
+  }
+ ],
+ "quoteNote": "Claims are quoted from the tag-stripped rendered text with whitespace collapsed; anchors and <strong> lead-ins (e.g. 'traumatic brain injury (TBI) .', 'Charleston , Columbia ,', bullet labels like 'Head restraint position:', 'Headaches') leave a space before punctuation where an <a> closed. The fault-exceptions claim joins five <li> items with single spaces. URL status: crashstats HEAD 405 / GET 200; nhtsa.gov, cdc.gov and courtlistener.com opinions block curl (403/202) and were read in a browser tab on 2026-10-02; pubmed.ncbi.nlm.nih.gov returns 203 (interstitial) to curl; law.justia.com not fetched (bot challenge) — Justia URLs reused from sibling packs, except § 40-6-49 which follows the sibling article-3 pattern (§ 40-6-48)."
+}

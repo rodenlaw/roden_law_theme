@@ -1,0 +1,331 @@
+{
+ "postId": 1780,
+ "slug": "rear-end-collision-liability",
+ "liveUrl": "https://rodenlaw.com/blog/rear-end-collision-liability/",
+ "jurisdiction": "GA",
+ "researchedAt": "2026-10-02",
+ "verifiedClaims": [
+  {
+   "surface": "body",
+   "claim": "However, there are certain instances where the driver who gets rear-ended is to blame.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Atlanta Coca-Cola Bottling Co. v. Jones, 236 Ga. 448 (1976); O.C.G.A. §§ 40-6-123(c), 40-6-240",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1293158/atlanta-coca-cola-bottling-company-v-jones/",
+   "retrievedAt": "2026-10-02",
+   "note": "Supported: the lead driver must exercise ordinary care \"not to stop, slow up, nor swerve from his course without adequate warning to following vehicles\" (Atlanta Coca-Cola, quoting Cardell). Note the lead driver is more often partly than wholly to blame; § 51-12-33 apportions."
+  },
+  {
+   "surface": "body",
+   "claim": "During a free, no obligation consultation, we can examine your case and determine who may be at fault for the accident.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Roden Law firm record (profiles/writer-profile.md trust signals)",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Firm fact (free consultation), not a legal claim."
+  },
+  {
+   "surface": "body",
+   "claim": "In legal terms, this is usually known as establishing the driver’s “breach of duty of care.”",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-1-2 (ordinary diligence); Atlanta Coca-Cola Bottling Co. v. Jones (1976) (\"Each driver must exercise ordinary care in the situation in which he finds himself\")",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1293158/atlanta-coca-cola-bottling-company-v-jones/",
+   "retrievedAt": "2026-10-02",
+   "note": "Georgia frames it as a failure of ordinary care; the phrase is accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "The inability to follow others at safe distances",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 40-6-49(a) (OCGA Title 40, UniCourt mirror of the official code)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Statute: \"The driver of a motor vehicle shall not follow another vehicle more closely than is reasonable and prudent, having due regard for the speed of such vehicles and the traffic upon and the condition of the highway.\" No fixed distance; Forehand v. Pace, 146 Ga. App. 682 (1978) — the statute furnishes only a general rule of conduct. Optional cite: \"(O.C.G.A. § 40-6-49)\"."
+  },
+  {
+   "surface": "body",
+   "claim": "The lack of using a turn signal",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 40-6-123(b) (UniCourt mirror)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Turn/lane-change signal \"when required\" must be given continuously for a time sufficient to alert the driver behind. Sibling pack 1831."
+  },
+  {
+   "surface": "body",
+   "claim": "Most accidents involving rear-end collisions result in finding that the driver who crashes into the car in front of him or her is the person at fault.",
+   "verdict": "update",
+   "currentValue": "Georgia has no legal presumption that the following driver is at fault. Atlanta Coca-Cola Bottling Co. v. Jones, 236 Ga. 448, 224 S.E.2d 25 (1976): \"A leading vehicle has no absolute legal position superior to that of one following\"; \"reasonable minds\" rarely agree on liability in rear-end cases, and except in very rare cases (an admission of liability or indisputable facts) fault is for the jury. Bartja v. National Union Fire Ins. Co., 218 Ga. App. 815, 463 S.E.2d 358 (1995): \"The undisputed fact that [the driver] struck the van in the rear is insufficient to support a finding of negligence per se\"; except in very rare cases fault in rear-end cases is left to the jury. No statistic on the share of rear-end cases in which the rear driver is found at fault was located; the \"most\" claim is untraced.",
+   "sourceName": "Atlanta Coca-Cola Bottling Co. v. Jones, 236 Ga. 448, 224 S.E.2d 25 (1976) (CourtListener, read in browser)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1293158/atlanta-coca-cola-bottling-company-v-jones/",
+   "retrievedAt": "2026-10-02",
+   "note": "This is the key Georgia point the post never states. Replace with: \"The driver who crashes into the car in front is often found at fault, but Georgia law does not presume it. A leading vehicle has 'no absolute legal position superior to that of one following,' and except in rare cases a jury decides who was negligent (Atlanta Coca-Cola Bottling Co. v. Jones, 236 Ga. 448 (1976)).\" (~+20 words)"
+  },
+  {
+   "surface": "body",
+   "claim": "The driver who crashes into a car from behind is typically found at fault. However, there are certain times when liability clearly falls on the rear driver, such as when participating in the following driving practices:",
+   "verdict": "update",
+   "currentValue": "Following too closely violates O.C.G.A. § 40-6-49(a), but whether a driver was following too closely is \"clearly a jury question\" (White v. Cline, 174 Ga. App. 448 (1985), per § 40-6-49 annotations) and the bare fact of striking the rear is \"insufficient to support a finding of negligence per se\" (Bartja, 1995).",
+   "sourceName": "O.C.G.A. § 40-6-49 and annotations (UniCourt mirror); Bartja v. National Union Fire Ins. Co. (1995)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1352533/bartja-v-national-union-fire-insurance/",
+   "retrievedAt": "2026-10-02",
+   "note": "Repeats the \"typically at fault\" line and \"clearly\" overstates. Also \"However\" is illogical (no contrast). Suggested: \"Liability usually points to the rear driver when the evidence shows practices such as the following:\" and add \"(O.C.G.A. § 40-6-49)\" to the Tailgating bullet."
+  },
+  {
+   "surface": "body",
+   "claim": "Tailgating — When a driver fails to leave enough space between his or her vehicle and the vehicle in front, this could lead to a collision.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 40-6-49(a) (UniCourt mirror)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate; may append \"Georgia law prohibits following more closely than is reasonable and prudent (O.C.G.A. § 40-6-49).\""
+  },
+  {
+   "surface": "body",
+   "claim": "Distracted driving — Cellphones, eating food, listening to music too loudly and engaging in discussions with passengers can all lead to distracted driving which can cause a rear-end accident.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 40-6-241 (Hands-Free Georgia Act) (UniCourt mirror)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html",
+   "retrievedAt": "2026-10-02",
+   "note": "General, accurate. Optional only; no edit needed."
+  },
+  {
+   "surface": "body",
+   "claim": "Driving under the influence — Drug and alcohol consumption alter a driver’s behavior that can lead to judgment and decision impairments that typically result in an accident.",
+   "verdict": "update",
+   "currentValue": "Impairment raises crash risk; it does not \"typically result in an accident\" on any given trip.",
+   "sourceName": "General accuracy (no source states impaired driving typically results in a crash)",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Minimal wording fix: \"typically result in an accident\" → \"can result in an accident\"."
+  },
+  {
+   "surface": "body",
+   "claim": "Slamming on the brakes when there is no reason",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 40-6-123(c) (UniCourt mirror); Atlanta Coca-Cola Bottling Co. v. Jones (1976)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html",
+   "retrievedAt": "2026-10-02",
+   "note": "§ 40-6-123(c): \"No person shall stop or suddenly decrease the speed of a vehicle without first giving an appropriate signal ... to the driver of any vehicle immediately to the rear when there is an opportunity to give such signal.\" The following driver may still share fault (§ 51-12-33)."
+  },
+  {
+   "surface": "body",
+   "claim": "Suddenly driving the car in reverse",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 40-6-240(a) (UniCourt mirror)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html",
+   "retrievedAt": "2026-10-02",
+   "note": "\"A driver shall not back a vehicle unless such movement can be made with safety and without interfering with other traffic.\" Optional cite."
+  },
+  {
+   "surface": "body",
+   "claim": "The driver continues on the road with a flat tire and does not pull over or use hazard lights to indicate the problem",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Atlanta Coca-Cola Bottling Co. v. Jones (1976) (ordinary-care duty of the lead driver)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1293158/atlanta-coca-cola-bottling-company-v-jones/",
+   "retrievedAt": "2026-10-02",
+   "note": "No Georgia statute specifically requires hazard lights for a flat tire; this is a general ordinary-care example and is phrased as one (\"could be found at fault\"). Keep."
+  },
+  {
+   "surface": "body",
+   "claim": "The failure to repair brake lights",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 40-8-25(a) (UniCourt mirror)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html",
+   "retrievedAt": "2026-10-02",
+   "note": "§ 40-8-25(a): unlawful to drive a post-1954 vehicle on the highways \"unless it is equipped with at least one brake light meeting the requirements of Code Section 40-8-26. If a motor vehicle is manufactured with two brake lights, both must be operational.\" Optional cite \"(O.C.G.A. § 40-8-25)\"."
+  },
+  {
+   "surface": "body",
+   "claim": "In Georgia, modified comparative negligence rules apply. Under these rules, if you are less than 50 percent responsible for the accident, your damages will be reduced by your own percent of fault. Any level higher than this, and the injured party will not receive any compensation for the claim.",
+   "verdict": "update",
+   "currentValue": "§ 51-12-33(a): damages reduced \"in proportion to his or her percentage of fault\"; § 51-12-33(g): no damages \"if the plaintiff is 50 percent or more responsible.\" Exactly 50% bars recovery — \"any level higher than this\" misstates the 50% case. Last amended 2022; not changed by 2025 SB 68.",
+   "sourceName": "O.C.G.A. § 51-12-33(a),(g) (Justia; sibling packs 1831, 3433, 4358)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Name the statute and fix the threshold: \"In Georgia, modified comparative negligence applies (O.C.G.A. § 51-12-33). If you are less than 50 percent responsible for the accident, your damages are reduced by your percentage of fault. At 50 percent or more, you recover nothing.\""
+  },
+  {
+   "surface": "body",
+   "claim": "His or her level of damages is reduced by his or her own degree of fault.",
+   "verdict": "update",
+   "currentValue": "Duplicates the preceding paragraph; \"His or her\" has no antecedent.",
+   "sourceName": "Editorial (O.C.G.A. § 51-12-33(a))",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Delete the sentence (shrinks the body); start the paragraph at \"For example\"."
+  },
+  {
+   "surface": "body",
+   "claim": "For example, if the insurance company or jury finds that the plaintiff was 20 percent at fault and the plaintiff sustained $100,000 in damages, his or her award would be reduced by $20,000.",
+   "verdict": "update",
+   "currentValue": "Arithmetic verified: 20% × $100,000 = $20,000, leaving $80,000. Under § 51-12-33(a) the \"trier of fact\" (jury, or judge in a bench trial) apportions fault; an insurer does not \"find\" fault — it only argues a percentage in negotiation.",
+   "sourceName": "O.C.G.A. § 51-12-33(a) (Justia)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Keep both figures. Suggested: \"For example, if a jury finds that the plaintiff was 20 percent at fault and the plaintiff sustained $100,000 in damages, the award would be reduced by $20,000, to $80,000. Insurers apply the same arithmetic in settlement talks.\""
+  },
+  {
+   "surface": "body",
+   "claim": "Our services are provided on a contingency fee basis, so you do not pay us unless we are successful with your claim.",
+   "verdict": "update",
+   "currentValue": "Firm-confirmed fee wording (2026-10-02, commit a132903; docs/freshness/2026-10-02-fee-wording-4368-1657/README.md): \"Fees and costs apply only upon successful recovery. No fees or costs with no recovery.\"",
+   "sourceName": "Roden Law fee policy (bin/fix-fee-faqs-2026-10-02.php; commit a132903)",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Silent on costs and differs from the confirmed wording. Replace with: \"We work on a contingency fee basis. Fees and costs apply only upon successful recovery. No fees or costs with no recovery.\""
+  },
+  {
+   "surface": "body",
+   "claim": "Contact us today for a free consultation.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Roden Law firm record",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Firm fact."
+  },
+  {
+   "surface": "excerpt",
+   "claim": "Rear-end fault is not automatic. When the lead driver shares blame, and what evidence decides a disputed rear-end claim.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Atlanta Coca-Cola Bottling Co. v. Jones (1976); Bartja (1995)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1293158/atlanta-coca-cola-bottling-company-v-jones/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate for Georgia (no presumption; fault is a jury question). Published as the Article description. The body says little about evidence; the edits above (jury decides on the evidence) are enough to support it."
+  },
+  {
+   "surface": "faq:1",
+   "claim": "Not always. Liability may seem obvious, but there are instances where the driver who gets rear-ended is to blame — for example through sudden unnecessary braking, reversing, or driving without working brake lights.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. §§ 40-6-123(c), 40-6-240, 40-8-25; Atlanta Coca-Cola Bottling Co. v. Jones (1976)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1293158/atlanta-coca-cola-bottling-company-v-jones/",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. Accurate. Optionally add \"Georgia law does not presume the rear driver is at fault.\""
+  },
+  {
+   "surface": "faq:2",
+   "claim": "By showing a breach of the duty of care, meaning carelessness in how one driver operated their vehicle. Following too closely is the usual finding, but the evidence has to support it rather than assumption.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Atlanta Coca-Cola Bottling Co. v. Jones (1976); Bartja (1995); O.C.G.A. § 40-6-49",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1293158/atlanta-coca-cola-bottling-company-v-jones/",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. \"Rather than assumption\" is consistent with Georgia's no-presumption rule."
+  },
+  {
+   "surface": "faq:3",
+   "claim": "Where they were following too closely, distracted, speeding, or failed to allow for conditions. In most rear-end collisions this is what the evidence shows, which is why the presumption exists in the first place.",
+   "verdict": "update",
+   "currentValue": "Georgia has no legal presumption that the following driver is at fault. Atlanta Coca-Cola Bottling Co. v. Jones, 236 Ga. 448, 224 S.E.2d 25 (1976): \"A leading vehicle has no absolute legal position superior to that of one following\"; \"reasonable minds\" rarely agree on liability in rear-end cases, and except in very rare cases (an admission of liability or indisputable facts) fault is for the jury. Bartja v. National Union Fire Ins. Co., 218 Ga. App. 815, 463 S.E.2d 358 (1995): \"The undisputed fact that [the driver] struck the van in the rear is insufficient to support a finding of negligence per se\"; except in very rare cases fault in rear-end cases is left to the jury.",
+   "sourceName": "Atlanta Coca-Cola Bottling Co. v. Jones, 236 Ga. 448 (1976) (CourtListener, read in browser)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1293158/atlanta-coca-cola-bottling-company-v-jones/",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. \"which is why the presumption exists in the first place\" asserts a presumption Georgia law expressly rejects. Replace the second sentence: \"In most rear-end collisions this is what the evidence shows, though Georgia law does not presume it; a jury decides on the evidence.\" \"Following too closely\" is O.C.G.A. § 40-6-49."
+  },
+  {
+   "surface": "faq:4",
+   "claim": "Where they created the hazard — brake checking, stopping suddenly without cause, reversing into the vehicle behind, or driving with brake lights that never warned the following driver at all.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. §§ 40-6-123(c), 40-6-240(a), 40-8-25(a) (UniCourt mirror)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. Each example maps to a Georgia rule of the road (sudden stop without signal, unsafe backing, inoperative brake lights)."
+  },
+  {
+   "surface": "faq:5",
+   "claim": "Under O.C.G.A. § 51-12-33 you can recover as long as you are less than 50% responsible for the accident, with your award reduced by your share of the fault. At 50% or more you recover nothing.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-33(a),(g) (Justia; sibling packs 1831, 3433)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. Correct; unchanged by 2025 SB 68. This FAQ is already right — the body paragraph should be brought into line with it."
+  }
+ ],
+ "recommendedEdits": [
+  "Establishing fault, first sentence: replace 'Most accidents involving rear-end collisions result in finding that the driver who crashes into the car in front of him or her is the person at fault.' with 'The driver who crashes into the car in front is often found at fault, but Georgia law does not presume it: a leading vehicle has \"no absolute legal position superior to that of one following,\" and except in rare cases a jury decides who was negligent (Atlanta Coca-Cola Bottling Co. v. Jones, 236 Ga. 448 (1976)).'",
+  "FAQ 3 (also FAQPage schema): replace 'In most rear-end collisions this is what the evidence shows, which is why the presumption exists in the first place.' with 'In most rear-end collisions this is what the evidence shows, though Georgia law does not presume it; a jury decides on the evidence.'",
+  "Comparative Negligence H2, first paragraph: replace with 'In Georgia, modified comparative negligence applies (O.C.G.A. § 51-12-33). If you are less than 50 percent responsible for the accident, your damages are reduced by your percentage of fault. At 50 percent or more, you recover nothing.' (fixes 'Any level higher than this', which misstates the exactly-50% case).",
+  "Comparative Negligence H2, second paragraph: delete 'His or her level of damages is reduced by his or her own degree of fault.'; change 'if the insurance company or jury finds' to 'if a jury finds' and end the example '...would be reduced by $20,000, to $80,000. Insurers apply the same arithmetic in settlement talks.' Both dollar figures stay.",
+  "Closing fee line: replace 'Our services are provided on a contingency fee basis, so you do not pay us unless we are successful with your claim.' with 'We work on a contingency fee basis. Fees and costs apply only upon successful recovery. No fees or costs with no recovery.'",
+  "H3 'When Rear Driver is at Fault' lead-in: replace 'The driver who crashes into a car from behind is typically found at fault. However, there are certain times when liability clearly falls on the rear driver, such as when participating in the following driving practices:' with 'Liability usually points to the rear driver when the evidence shows practices such as the following:'; in the Tailgating bullet append 'Georgia law prohibits following more closely than is reasonable and prudent (O.C.G.A. § 40-6-49).'",
+  "DUI bullet: 'typically result in an accident' -> 'can result in an accident'.",
+  "Optional, minimal (one sentence in the closing H2, ~30 words): 'In Georgia, an injury lawsuit generally must be filed within two years of the crash (O.C.G.A. § 9-3-33); property-damage claims have four years (§ 9-3-31).' Do not add a discovery-rule caveat — Georgia has none for crash injuries. Optional cites in the front-driver list: brake lights (O.C.G.A. § 40-8-25), reversing (§ 40-6-240), sudden stop without signal (§ 40-6-123(c)). Do not add South Carolina law. Net body growth with the optional sentence is roughly +40 words (~5%); without it, roughly neutral."
+ ],
+ "statuteCitations": [
+  {
+   "section": "O.C.G.A. § 40-6-49",
+   "name": "Following too closely — (a) 'shall not follow another vehicle more closely than is reasonable and prudent, having due regard for the speed of such vehicles and the traffic upon and the condition of the highway'",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html"
+  },
+  {
+   "section": "O.C.G.A. § 40-6-123",
+   "name": "Turning movements and signals — (c) no stopping or sudden decrease in speed without an appropriate signal to the driver immediately behind when there is opportunity",
+   "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-6/section-40-6-123/"
+  },
+  {
+   "section": "O.C.G.A. § 40-6-240",
+   "name": "Backing — only with safety and without interfering with other traffic",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html"
+  },
+  {
+   "section": "O.C.G.A. § 40-8-25",
+   "name": "Brake lights and turn signals required — at least one working brake light; both if manufactured with two",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-33",
+   "name": "Apportionment; damages reduced by plaintiff's percentage (a); no recovery at 50 percent or more (g); not amended by 2025 SB 68",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+  },
+  {
+   "section": "O.C.G.A. § 9-3-33",
+   "name": "Injuries to the person — two years (no general discovery rule for crash injuries)",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+  },
+  {
+   "section": "O.C.G.A. § 9-3-31",
+   "name": "Injuries to personalty (property damage) — four years",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-31/"
+  },
+  {
+   "section": "Atlanta Coca-Cola Bottling Co. v. Jones, 236 Ga. 448, 224 S.E.2d 25 (1976)",
+   "name": "No superior position for the leading vehicle; rear-end liability is for the jury except in very rare cases",
+   "url": "https://www.courtlistener.com/opinion/1293158/atlanta-coca-cola-bottling-company-v-jones/"
+  },
+  {
+   "section": "Bartja v. National Union Fire Ins. Co., 218 Ga. App. 815, 463 S.E.2d 358 (1995)",
+   "name": "Striking the rear is insufficient for negligence per se; following-too-closely is a jury question",
+   "url": "https://www.courtlistener.com/opinion/1352533/bartja-v-national-union-fire-insurance/"
+  }
+ ],
+ "authoritativeLinks": [
+  {
+   "name": "Atlanta Coca-Cola Bottling Co. v. Jones (Ga. 1976) — CourtListener",
+   "url": "https://www.courtlistener.com/opinion/1293158/atlanta-coca-cola-bottling-company-v-jones/"
+  },
+  {
+   "name": "Bartja v. National Union Fire Ins. Co. (Ga. Ct. App. 1995) — CourtListener",
+   "url": "https://www.courtlistener.com/opinion/1352533/bartja-v-national-union-fire-insurance/"
+  },
+  {
+   "name": "OCGA Title 40 (UniCourt mirror of the official code) — §§ 40-6-49, 40-6-123, 40-6-240, 40-8-25 text and annotations (White v. Cline, Forehand v. Pace)",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r71/gov.ga.ocga.title.40.html"
+  }
+ ],
+ "quoteNote": "Claims are quoted from the tag-stripped text of body.html (entities decoded; curly apostrophes and em dashes as published) after whitespace collapse, and verbatim from meta.json; each matches exactly once. 'faq:N' = meta.json faqs item N (also FAQPage structured data). The Tailgating, Distracted driving and DUI quotes span a <strong> lead-in. keyTakeaways and metaDescription are empty (nothing to verify). Georgia-only post (Eric Roden): no South Carolina law recommended. Sources: Atlanta Coca-Cola and Bartja were read in full in a browser on CourtListener (curl gets HTTP 202 bot-wait); § 40-6-49/-123/-240 and § 40-8-25 text was read on the UniCourt OCGA Title 40 mirror (curl HTTP 200); the 40-6-123 Justia URL is reused from sibling pack 1831; § 51-12-33, § 9-3-33 and § 9-3-31 Justia URLs are reused from sibling packs 1831/3433/4358 (Justia returns a bot challenge to curl; not solved). No statistics appear on any surface; the one quasi-statistic ('Most accidents ... result in finding') is untraced and replaced. Dollar figures ($100,000, $20,000) are an illustrative example; arithmetic verified."
+}

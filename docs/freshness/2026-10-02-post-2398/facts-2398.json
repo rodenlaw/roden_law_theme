@@ -1,0 +1,394 @@
+{
+ "postId": 2398,
+ "slug": "why-mitigate-damages-after-a-car-crash",
+ "liveUrl": "https://rodenlaw.com/blog/why-mitigate-damages-after-a-car-crash/",
+ "jurisdiction": "GA",
+ "researchedAt": "2026-10-02",
+ "verifiedClaims": [
+  {
+   "surface": "body",
+   "claim": "If you also intend to file an injury claim, however, it is vital you understand the legal obligation to mitigate your damages.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-11 (Justia; text confirmed on the UniCourt OCGA Title 51 mirror)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-11/",
+   "retrievedAt": "2026-10-02",
+   "note": "O.C.G.A. § 51-12-11: \"When a person is injured by the negligence of another, he must mitigate his damages as far as is practicable by the use of ordinary care and diligence. However, this duty to mitigate does not apply in cases of positive and continuous torts.\" The post never names the statute. Recommended: cite it here or in the first H2 (see recommendedEdits). The positive-and-continuous-tort exception does not apply to an ordinary negligent-driving crash."
+  },
+  {
+   "surface": "body",
+   "claim": "Mitigating damages means taking reasonable actions to help your recovery move forward and prevent your injuries from getting worse.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-11; Butler v. Anderson, 163 Ga. App. 547 (1982)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-11/",
+   "retrievedAt": "2026-10-02",
+   "note": "Matches the statutory standard (\"ordinary care and diligence\", \"as far as is practicable\"). Butler (an auto-accident case) approved a charge that the plaintiff must lessen damages \"by following reasonable instructions and advice of the plaintiff's physicians insofar as is reasonably possible.\" Butler read on CourtListener: https://www.courtlistener.com/opinion/1342298/butler-v-anderson/"
+  },
+  {
+   "surface": "body",
+   "claim": "When injured victims fail in this legal duty, it costs the liable insurance company more money.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "Framing, not a legal claim. Optional softening: the at-fault driver (and their insurer) cannot be made to pay for the part of the loss reasonable care would have avoided."
+  },
+  {
+   "surface": "body",
+   "claim": "Ideally, your treatment should begin right after the crash.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Rosenthal v. O'Neal, 108 Ga. App. 54 (1963), as annotated to O.C.G.A. § 51-12-11 (UniCourt OCGA mirror)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r83/gov.ga.ocga.title.51.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Annotation: \"By refusing to go to a hospital when the plaintiff was injured, the plaintiff failed to exercise the proper care to obtain treatment ... and thus lessen the plaintiff's damages for pain and suffering.\" Practical advice; no statute sets a deadline for first treatment."
+  },
+  {
+   "surface": "body",
+   "claim": "Some injuries are not visible, but they can still be life-threatening without treatment, such as organ damage or internal bleeding. Seeking medical care right away also helps to link your injuries to the crash.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "General medical/practical statements; the second sentence is about causation evidence, which is accurate as practice. No change needed."
+  },
+  {
+   "surface": "body",
+   "claim": "Missing follow-up appointments with your doctor, ongoing treatments or even physical therapy can all be considered as failing to mitigate damages.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Dascombe v. Hanley, 270 Ga. App. 355, 360-361 (3) (2004); Findlay v. Griffin, 225 Ga. App. 475 (1997) (as described in Turpin)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1360074/dascombe-v-hanley/",
+   "retrievedAt": "2026-10-02",
+   "note": "Dascombe (a Georgia car-crash case): the plaintiff skipped a recommended EMG and never did the prescribed physical therapy; \"Because there is some evidence that Dascombe may have failed to obtain available treatment for his injuries, the court did not err by charging the jury on the duty to mitigate damages.\" Turpin describes Findlay as requiring the charge \"where there was evidence introduced that the plaintiff stopped treatment.\" Accurate; \"can ... be considered\" is correctly hedged."
+  },
+  {
+   "surface": "body",
+   "claim": "Failing to meet your legal duty to mitigate damages gives the insurance company leverage to be able to reduce or deny your claim.",
+   "verdict": "update",
+   "currentValue": "Failure to mitigate reduces recovery by the avoidable portion only; it is not a bar. The defendant must prove it with \"sufficient data to allow the jury to reasonably estimate how much the damages could have been mitigated.\" Ga. Farm Bureau Mut. Ins. Co. v. Turpin, 294 Ga. App. 63, 66 (2) (2008) (car-crash case): \"The burden is upon the party asserting that the opposite party could have lessened his damages, and such proof must include sufficient data to allow the jury to reasonably estimate how much the damages could have been mitigated.\"",
+   "sourceName": "Ga. Farm Bureau Mut. Ins. Co. v. Turpin, 294 Ga. App. 63 (2008); O.C.G.A. § 51-12-11",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1211852/georgia-farm-bureau-mutual-insurance-co-v-turpin/",
+   "retrievedAt": "2026-10-02",
+   "note": "\"Or deny\" overstates the legal effect. Suggested: \"...gives the insurance company leverage to argue for a lower settlement — though under Georgia law, a failure to mitigate cuts only the part of your losses that reasonable care would have avoided, and the defense has to prove it.\""
+  },
+  {
+   "surface": "body",
+   "claim": "Not only does this put your health at risk, it gives the insurance company room to argue that you could have sustained your injuries somewhere else.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "Accurate as practice — this is a causation argument (did the crash cause the injury?), distinct from mitigation. Keep; optionally say \"argue that something other than the crash caused your injuries.\""
+  },
+  {
+   "surface": "body",
+   "claim": "If you do not follow the prescribed treatment plan from your healthcare provider, the insurance company could see this as failing to mitigate damages.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Butler v. Anderson, 163 Ga. App. 547 (1982); Dascombe v. Hanley, 270 Ga. App. 355 (2004)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1342298/butler-v-anderson/",
+   "retrievedAt": "2026-10-02",
+   "note": "Butler: duty to follow \"reasonable instructions and advice of the plaintiff's physicians insofar as is reasonably possible.\" Correctly hedged."
+  },
+  {
+   "surface": "body",
+   "claim": "Going back to work without first getting medical clearance could be seen as a failure to mitigate.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Ga. Farm Bureau Mut. Ins. Co. v. Turpin, 294 Ga. App. 63, 67 & n.16 (2008) (citing Hannula v. Ramey, 177 Ga. App. 512 (1986))",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1211852/georgia-farm-bureau-mutual-insurance-co-v-turpin/",
+   "retrievedAt": "2026-10-02",
+   "note": "Turpin lists evidence that the plaintiff \"engaged in activities that aggravated their conditions\" as a basis for a mitigation charge (Hannula: jury question where plaintiff may have aggravated her condition). Returning to work against medical advice fits that category; it is an aggravation argument, not a rule that early return is itself a failure. Correctly hedged (\"could be seen\")."
+  },
+  {
+   "surface": "body",
+   "claim": "It could also cause your claim to get denied.",
+   "verdict": "update",
+   "currentValue": "Aggravating an injury through restricted activity lets the defense argue that the added harm (more treatment, longer recovery) was avoidable; Georgia reduces damages by that avoidable portion, it does not void the claim. Ga. Farm Bureau Mut. Ins. Co. v. Turpin, 294 Ga. App. 63, 66 (2) (2008) (car-crash case): \"The burden is upon the party asserting that the opposite party could have lessened his damages, and such proof must include sufficient data to allow the jury to reasonably estimate how much the damages could have been mitigated.\"",
+   "sourceName": "Ga. Farm Bureau Mut. Ins. Co. v. Turpin, 294 Ga. App. 63 (2008); O.C.G.A. § 51-12-11",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1211852/georgia-farm-bureau-mutual-insurance-co-v-turpin/",
+   "retrievedAt": "2026-10-02",
+   "note": "Overstates. Suggested: \"It could also reduce what you recover for the added harm.\""
+  },
+  {
+   "surface": "body",
+   "claim": "Surgery is costly, so getting it when your doctor has not said it is mandatory for your recovery could backfire. The insurance company may be unwilling to pay for those costs.",
+   "verdict": "update",
+   "currentValue": "This is a reasonable-and-necessary-expense issue, not the mitigation doctrine. Recoverable expenses are \"necessary expenses consequent upon an injury\" (O.C.G.A. § 51-12-7). For causes of action arising on or after April 21, 2025, special damages for medical expenses are \"limited to the reasonable value of medically necessary care, treatment, or services\" (O.C.G.A. § 51-12-1.1(b), SB 68 § 7). No Georgia authority requires a doctor to call surgery \"mandatory\"; the test is whether the care was medically necessary and reasonably priced.",
+   "sourceName": "Georgia SB 68 (2025), signed text, Section 7 (O.C.G.A. § 51-12-1.1); O.C.G.A. § 51-12-7 (UniCourt mirror); sibling packs 3433, 1712",
+   "sourceUrl": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download",
+   "retrievedAt": "2026-10-02",
+   "note": "Suggested: \"Surgery is costly. If it was not medically necessary, the insurer will contest the bill — and for crashes on or after April 21, 2025, Georgia limits medical damages to the reasonable value of medically necessary care (O.C.G.A. § 51-12-1.1).\" The bullet heading \"Getting unnecessary surgery\" sits under a list of mitigation failures; consider retitling it \"Getting surgery your doctor has not recommended.\""
+  },
+  {
+   "surface": "body",
+   "claim": "Every surgery carries risks for you as well, so it should only ever be considered when there are no other options.",
+   "verdict": "drop",
+   "currentValue": "Medical advice, not law, and in tension with the duty to mitigate: a plaintiff who declines reasonable recommended treatment can face a mitigation charge (Dascombe; Butler). Georgia asks whether the plaintiff acted with \"ordinary care and diligence\" (§ 51-12-11) in following \"reasonable instructions and advice\" of physicians (Butler).",
+   "sourceName": "O.C.G.A. § 51-12-11; Butler v. Anderson, 163 Ga. App. 547 (1982); Dascombe v. Hanley, 270 Ga. App. 355 (2004)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1360074/dascombe-v-hanley/",
+   "retrievedAt": "2026-10-02",
+   "note": "Telling readers surgery is a last resort could steer them toward declining care a doctor recommends — which is exactly what the defense argues is a failure to mitigate. Delete, or replace with: \"Follow your surgeon's recommendation and ask for a second opinion if you are unsure; the decision should be a medical one.\""
+  },
+  {
+   "surface": "body",
+   "claim": "The determination of whether you have properly mitigated damages is usually made by a judge or jury in a personal injury lawsuit.",
+   "verdict": "update",
+   "currentValue": "In Georgia it is a jury question. The judge decides only whether there is \"some evidence\" to charge the jury on mitigation at all; without such evidence no charge is given (Turpin: \"a charge is only justified when there is some evidence upon which to base it\"). Ga. Farm Bureau Mut. Ins. Co. v. Turpin, 294 Ga. App. 63, 66 (2) (2008) (car-crash case): \"The burden is upon the party asserting that the opposite party could have lessened his damages, and such proof must include sufficient data to allow the jury to reasonably estimate how much the damages could have been mitigated.\"",
+   "sourceName": "Ga. Farm Bureau Mut. Ins. Co. v. Turpin, 294 Ga. App. 63 (2008); Malak v. First Nat'l Bank, 195 Ga. App. 105 (1990) (mitigation \"is an issue for the jury\", as annotated to § 51-12-11)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1211852/georgia-farm-bureau-mutual-insurance-co-v-turpin/",
+   "retrievedAt": "2026-10-02",
+   "note": "Suggested: \"In a lawsuit, a jury decides whether you properly mitigated your damages — and the defense carries the burden of proving you did not, and by how much.\""
+  },
+  {
+   "surface": "body",
+   "claim": "They will review evidence such as medical records and testimony from medical experts, as well as your actions following the accident.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Dascombe v. Hanley, 270 Ga. App. 355 (2004)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1360074/dascombe-v-hanley/",
+   "retrievedAt": "2026-10-02",
+   "note": "Dascombe turned on the plaintiff's testimony and the treating doctors' notes about skipped tests and therapy. Accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "The insurance company may also have a say in this process, as they will be looking for reasons to reduce the compensation they owe.",
+   "verdict": "update",
+   "currentValue": "In court the defense (usually counsel retained by the insurer) must raise and prove failure to mitigate; outside court, the adjuster's view shapes settlement offers. The insurer does not decide the question.",
+   "sourceName": "Ga. Farm Bureau Mut. Ins. Co. v. Turpin, 294 Ga. App. 63 (2008)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1211852/georgia-farm-bureau-mutual-insurance-co-v-turpin/",
+   "retrievedAt": "2026-10-02",
+   "note": "Suggested: \"Before a lawsuit, the insurance adjuster will make the same argument in negotiations, looking for reasons to reduce what they offer.\""
+  },
+  {
+   "surface": "body",
+   "claim": "If it is determined that you failed to take reasonable steps to mitigate your damages, the compensation you receive could be significantly reduced.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-11; Ga. Farm Bureau Mut. Ins. Co. v. Turpin, 294 Ga. App. 63 (2008)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1211852/georgia-farm-bureau-mutual-insurance-co-v-turpin/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate; the reduction is limited to what the jury finds could have been avoided. \"Significantly\" is permissible as \"could\"."
+  },
+  {
+   "surface": "body",
+   "claim": "This means you might not be reimbursed for certain medical expenses or lost wages because they are considered to have been preventable.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-11",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-11/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate statement of the avoidable-consequences effect."
+  },
+  {
+   "surface": "body",
+   "claim": "In short, it could end up leaving you with a lot of damages to pay out of your own pocket.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "Practical consequence; no change."
+  },
+  {
+   "surface": "body",
+   "claim": "However, while you may have to pay these costs up front, they are usually recoverable as part of your injury claim. The key is to ensure that the expenses are reasonable and necessary for your recovery.",
+   "verdict": "update",
+   "currentValue": "O.C.G.A. § 51-12-7: \"In all cases, necessary expenses consequent upon an injury are a legitimate item in the estimate of damages.\" For causes of action arising on or after April 21, 2025 (SB 68 § 7, O.C.G.A. § 51-12-1.1): medical special damages are \"limited to the reasonable value of medically necessary care, treatment, or services\"; if the plaintiff has health insurance (or workers' compensation), the jury may hear both the amounts charged and the amounts actually necessary to satisfy them under the insurance contract, whether or not the insurance was used.",
+   "sourceName": "O.C.G.A. § 51-12-7 (UniCourt OCGA Title 51 mirror); Georgia SB 68 (2025), signed text, Section 7 (O.C.G.A. § 51-12-1.1); sibling pack 3433",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r83/gov.ga.ocga.title.51.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Core claim is right (\"reasonable and necessary\" is now the statutory test). Suggested addition: \"Georgia law treats necessary expenses caused by an injury as recoverable damages (O.C.G.A. § 51-12-7). For crashes on or after April 21, 2025, medical damages are limited to the reasonable value of medically necessary care, and if you have health insurance the jury may hear what your insurer actually paid (O.C.G.A. § 51-12-1.1).\" SB 68 URL: https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download"
+  },
+  {
+   "surface": "body",
+   "claim": "To prove a failure to mitigate damages, the insurance company is sure to examine your medical records to see if you missed any doctor's appointments or skipped physical therapy.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Dascombe v. Hanley, 270 Ga. App. 355 (2004); Ga. Farm Bureau Mut. Ins. Co. v. Turpin, 294 Ga. App. 63 (2008)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1360074/dascombe-v-hanley/",
+   "retrievedAt": "2026-10-02",
+   "note": "Practical and accurate. Note Turpin's limit: Mr. Turpin had not seen a doctor \"in more than a year\" and the court still found no evidence for a mitigation charge because the insurer showed no available treatment he skipped against advice — a gap alone is not proof. Optional add: \"A gap in treatment is not automatically a failure to mitigate; the defense must show what care you skipped and what it would have changed.\""
+  },
+  {
+   "surface": "body",
+   "claim": "They may even review your social media accounts for evidence you did things that made your condition worse.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "Practical; no statute. Consistent with Hannula/Turpin \"activities that aggravated their conditions\" category."
+  },
+  {
+   "surface": "body",
+   "claim": "Mitigating damages after a car crash is not just a legal obligation.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-11",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-11/",
+   "retrievedAt": "2026-10-02",
+   "note": "Statutory duty in Georgia."
+  },
+  {
+   "surface": "body",
+   "claim": "Many people may be worried about the cost, but since we take injury cases on contingency, there are no upfront costs or fees to pay. We only get paid if you do.",
+   "verdict": "update",
+   "currentValue": "Firm-confirmed policy (2026-10-02): \"Fees and costs apply only upon successful recovery. No fees or costs with no recovery.\" Live FAQ wording (bin/fix-fee-faqs-2026-10-02.php): \"Fees and costs are paid only from a recovery: if there is no recovery, you owe no fees and no costs.\"",
+   "sourceName": "Roden Law fee policy (bin/fix-fee-faqs-2026-10-02.php; commit a132903); Ga. RPC 1.8(e)",
+   "sourceUrl": "https://www.gabar.org/handbook?rule=rule60",
+   "retrievedAt": "2026-10-02",
+   "note": "\"No upfront costs or fees\" and \"We only get paid if you do\" are not the confirmed wording and are silent on whether case costs are owed without a recovery. Replace with: \"Many people worry about the cost, but we take injury cases on contingency. Fees and costs apply only upon successful recovery. No fees or costs with no recovery.\""
+  },
+  {
+   "surface": "excerpt",
+   "claim": "After a crash you have a duty to limit your own losses.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-11",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-11/",
+   "retrievedAt": "2026-10-02",
+   "note": "Publishes as the Article description. Accurate."
+  },
+  {
+   "surface": "faq",
+   "claim": "It is the legal obligation to take reasonable steps to limit the losses arising from your injury — principally by getting the medical care you need and following the treatment you are given.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-11; Butler v. Anderson, 163 Ga. App. 547 (1982)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-11/",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage structured data. Optional: add \"In Georgia, O.C.G.A. § 51-12-11 requires this 'as far as is practicable by the use of ordinary care and diligence.'\""
+  },
+  {
+   "surface": "faq",
+   "claim": "By delaying treatment, skipping appointments, ignoring medical advice, or declining recommended care.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Rosenthal v. O'Neal (1963); Dascombe v. Hanley (2004); Butler v. Anderson (1982); Turpin (2008)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1360074/dascombe-v-hanley/",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage. Each example matches a category Georgia courts have recognized."
+  },
+  {
+   "surface": "faq",
+   "claim": "It can reduce what you recover. The insurer will argue that losses which reasonable treatment would have avoided should not be their responsibility, and that argument can succeed on the parts it applies to.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Ga. Farm Bureau Mut. Ins. Co. v. Turpin, 294 Ga. App. 63 (2008)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1211852/georgia-farm-bureau-mutual-insurance-co-v-turpin/",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage. Accurately limits the reduction to avoidable losses. Optional add: \"The defense has to prove it.\""
+  },
+  {
+   "surface": "faq",
+   "claim": "Ultimately the court, though in practice the insurer's assessment shapes negotiations.",
+   "verdict": "update",
+   "currentValue": "A jury decides; the judge decides only whether there is enough evidence to put the issue to the jury. Ga. Farm Bureau Mut. Ins. Co. v. Turpin, 294 Ga. App. 63, 66 (2) (2008) (car-crash case): \"The burden is upon the party asserting that the opposite party could have lessened his damages, and such proof must include sufficient data to allow the jury to reasonably estimate how much the damages could have been mitigated.\"",
+   "sourceName": "Ga. Farm Bureau Mut. Ins. Co. v. Turpin, 294 Ga. App. 63 (2008); Malak v. First Nat'l Bank, 195 Ga. App. 105 (1990)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1211852/georgia-farm-bureau-mutual-insurance-co-v-turpin/",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage. Suggested: \"If the case goes to trial, a jury — and the defense must prove you failed to mitigate and by how much. Before then, the insurer's assessment shapes negotiations.\""
+  },
+  {
+   "surface": "faq",
+   "claim": "What counts as reasonable depends on your circumstances, including what care was realistically available to you.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-11 (\"as far as is practicable\"); Turpin (\"failed to obtain available treatment\"); Dascombe (\"failed to obtain available treatment\")",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1211852/georgia-farm-bureau-mutual-insurance-co-v-turpin/",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage. Accurate — \"available\" is the courts' own word."
+  },
+  {
+   "surface": "faq",
+   "claim": "It can involve upfront cost, which is a real difficulty while a claim is pending.",
+   "verdict": "update",
+   "currentValue": "O.C.G.A. § 51-12-7 makes \"necessary expenses consequent upon an injury\" recoverable. The answer never says the costs come back — the body does (\"usually recoverable\").",
+   "sourceName": "O.C.G.A. § 51-12-7 (UniCourt OCGA Title 51 mirror)",
+   "sourceUrl": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r83/gov.ga.ocga.title.51.html",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage. Add after the first sentence: \"Reasonable, necessary treatment costs are generally recoverable as damages (O.C.G.A. § 51-12-7).\""
+  },
+  {
+   "surface": "faq",
+   "claim": "Options exist for managing treatment costs in the meantime, and an attorney can help arrange them rather than leaving care unaffordable.",
+   "verdict": "update",
+   "currentValue": "For causes of action arising on or after April 21, 2025, O.C.G.A. § 51-12-1.1(d) makes letter-of-protection arrangements \"relevant and discoverable\": the LOP itself, itemized and coded charges, any sale of the account to a third party and the price paid, and whether and by whom the claimant was referred for treatment.",
+   "sourceName": "Georgia SB 68 (2025), signed text, Section 7 (O.C.G.A. § 51-12-1.1(d)); sibling packs 3433, 1712",
+   "sourceUrl": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage. Keep the advice; add: \"For crashes since April 21, 2025, the defense can see any lien or letter-of-protection arrangement and the itemized bills (O.C.G.A. § 51-12-1.1(d)), so treatment should be necessary and reasonably priced.\""
+  }
+ ],
+ "recommendedEdits": [
+  "First H2 paragraph: after \"prevent your injuries from getting worse.\" add \"Georgia writes this into law: an injured person 'must mitigate his damages as far as is practicable by the use of ordinary care and diligence' (O.C.G.A. § 51-12-11).\"",
+  "Burden and effect (add to \"Who Decides\" or \"Consequences\" section): \"The defense carries the burden of proving you failed to mitigate, and must give the jury enough evidence to estimate how much of your loss could have been avoided (Ga. Farm Bureau Mut. Ins. Co. v. Turpin, 294 Ga. App. 63 (2008)). A failure to mitigate reduces your recovery by that avoidable portion; it does not erase the claim.\" Then change \"reduce or deny your claim\" → \"argue for a lower settlement\" and \"cause your claim to get denied\" → \"reduce what you recover for the added harm\".",
+  "\"Who Decides\": \"usually made by a judge or jury\" → \"made by the jury\"; \"The insurance company may also have a say in this process\" → \"Before a lawsuit, the insurance adjuster will press the same argument in negotiations\". FAQ 4: \"Ultimately the court\" → \"If the case goes to trial, a jury\".",
+  "Surgery bullet: delete \"Every surgery carries risks for you as well, so it should only ever be considered when there are no other options.\" Recast the cost point as medical necessity: \"If it was not medically necessary, the insurer will contest the bill — for crashes on or after April 21, 2025, Georgia limits medical damages to the reasonable value of medically necessary care (O.C.G.A. § 51-12-1.1).\" Consider retitling the bullet \"Getting surgery your doctor has not recommended\".",
+  "\"Does it Cost Money\" + FAQ 5: cite O.C.G.A. § 51-12-7 (\"necessary expenses consequent upon an injury are a legitimate item in the estimate of damages\"); add the SB 68 sentence on reasonable value / insurer-paid amounts (§ 51-12-1.1(b)-(c)) and, in FAQ 5, that LOP/lien arrangements are discoverable for crashes since April 21, 2025 (§ 51-12-1.1(d)).",
+  "Insurer-proof section (optional): \"A gap in treatment is not automatically a failure to mitigate — in Turpin, a plaintiff who had not seen a doctor in over a year still got no mitigation charge because the insurer could not show what available treatment he skipped against medical advice.\"",
+  "Fee line: replace \"since we take injury cases on contingency, there are no upfront costs or fees to pay. We only get paid if you do.\" with \"we take injury cases on contingency. Fees and costs apply only upon successful recovery. No fees or costs with no recovery.\"",
+  "Optional deadline sentence in the closing CTA (Georgia only): \"Georgia generally allows two years from the crash to file a personal-injury lawsuit (O.C.G.A. § 9-3-33).\" Do not add a discovery-rule caveat — Georgia has none for crash injuries. Do not add South Carolina law. Do not conflate mitigation with comparative fault (§ 51-12-33, 50% bar): the post currently does not, and should not.",
+  "Key Takeaways is empty: if added, draw only from the verified items above (§ 51-12-11 duty; defense burden; reduction not bar; jury question; § 51-12-7 / § 51-12-1.1 on costs). Remember it renders above the article and is swept with meta."
+ ],
+ "statuteCitations": [
+  {
+   "section": "O.C.G.A. § 51-12-11",
+   "name": "Mitigation of damages required; exception for positive and continuous torts",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-11/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-7",
+   "name": "Recovery of necessary expenses — \"necessary expenses consequent upon an injury are a legitimate item in the estimate of damages\" (tort actions only)",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r83/gov.ga.ocga.title.51.html"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-1.1",
+   "name": "Medical expense damages — reasonable value of medically necessary care; insurer-paid amounts admissible; LOP discovery (SB 68 § 7; causes of action arising on/after 2025-04-21)",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-1/section-51-12-1-1/"
+  },
+  {
+   "section": "O.C.G.A. § 9-3-33",
+   "name": "Injuries to the person — two years (only if the recommended deadline sentence is added)",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-33",
+   "name": "Apportionment; no recovery at 50 percent or more fault — distinct from mitigation; not cited in the post",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+  }
+ ],
+ "authoritativeLinks": [
+  {
+   "name": "Ga. Farm Bureau Mut. Ins. Co. v. Turpin, 294 Ga. App. 63 (2008) — defense burden; mitigation charge needs evidence (CourtListener)",
+   "url": "https://www.courtlistener.com/opinion/1211852/georgia-farm-bureau-mutual-insurance-co-v-turpin/"
+  },
+  {
+   "name": "Dascombe v. Hanley, 270 Ga. App. 355 (2004) — skipped EMG and physical therapy supported a mitigation charge (CourtListener)",
+   "url": "https://www.courtlistener.com/opinion/1360074/dascombe-v-hanley/"
+  },
+  {
+   "name": "Butler v. Anderson, 163 Ga. App. 547 (1982) — duty to follow reasonable physician instructions insofar as reasonably possible (CourtListener)",
+   "url": "https://www.courtlistener.com/opinion/1342298/butler-v-anderson/"
+  },
+  {
+   "name": "OCGA Title 51 (UniCourt mirror) — text and annotations of §§ 51-12-7 and 51-12-11 (Rosenthal v. O'Neal; Malak v. First Nat'l Bank; Whelan v. Moone)",
+   "url": "https://unicourt.github.io/cic-code-ga/transforms/ga/ocga/r83/gov.ga.ocga.title.51.html"
+  },
+  {
+   "name": "Georgia SB 68 (2025), signed text — Section 7 (O.C.G.A. § 51-12-1.1)",
+   "url": "https://gov.georgia.gov/document/2025-signed-legislation/sb-68/download"
+  },
+  {
+   "name": "State Bar of Georgia — Rule 1.8(e), advancing litigation costs",
+   "url": "https://www.gabar.org/handbook?rule=rule60"
+  }
+ ],
+ "quoteNote": "Claims are quoted from the rendered text with tags stripped; the bullet lead-ins in body.html are inside <strong> (two with nested <a>) and are not quoted. Body apostrophes are curly in \"doctor’s plan of care\" but straight in \"doctor's appointments\" and \"healthcare provider's\" — quoted as they appear. Justia URLs for §§ 51-12-11, 51-12-1.1, 9-3-33, 51-12-33 are reused from sibling packs (Justia returns 403 to curl; no challenge solved); § 51-12-11 and § 51-12-7 text was read on the UniCourt OCGA mirror (200). CourtListener opinions return 202 to curl and were read in a browser tab (Turpin, Dascombe, Butler). No Georgia appellate case squarely on refusal of surgery was verified; the surgery corrections rest on § 51-12-11, Butler and Dascombe, not on a surgery-specific holding. Property-damage mitigation (rental cars, prompt repair) is not in the post and no authority was added for it."
+}
