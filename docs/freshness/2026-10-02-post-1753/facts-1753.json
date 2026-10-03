@@ -1,0 +1,520 @@
+{
+ "postId": 1753,
+ "slug": "contingency-fee-system",
+ "liveUrl": "https://rodenlaw.com/blog/contingency-fee-system/",
+ "jurisdiction": "GA+SC",
+ "researchedAt": "2026-10-02",
+ "verifiedClaims": [
+  {
+   "surface": "excerpt",
+   "claim": "How contingency fees work in Georgia and South Carolina injury claims: no upfront cost, the lawyer paid from the recovery, and what the agreement must say.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Ga. RPC 1.5(c); S.C. RPC 1.5(c)",
+   "sourceUrl": "https://www.gabar.org/handbook?rule=rule55",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate summary; published as Article description."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "The contingency fee system allows injury victims to hire experienced attorneys with no upfront costs — the lawyer's fee is a percentage of the recovery, typically 33-40%.",
+   "verdict": "update",
+   "currentValue": "LII (Cornell Law School): in personal injury cases 'the successful lawyer is typically entitled to around 33% of the recovery amount.' No authoritative source located for 40% as the top of a 'typical' range; percentages commonly step up if the case is filed or tried, and Georgia/S.C. Rule 1.5(c) contemplates different percentages for settlement, trial or appeal.",
+   "sourceName": "Legal Information Institute (Cornell Law School), Wex: contingent fee",
+   "sourceUrl": "https://www.law.cornell.edu/wex/contingent_fee",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: '... the lawyer's fee is a percentage of the recovery, commonly one-third, and sometimes higher if the case goes to suit or trial.' Do not state Roden Law's own percentage (not in profiles/firm-facts.md or writer-profile.md)."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Georgia (O.C.G.A. § 9-3-33) and South Carolina (S.C. Code § 15-3-530) both require written fee agreements.",
+   "verdict": "update",
+   "currentValue": "Ga. RPC 1.5(c)(1): 'A contingent fee agreement shall be in writing and shall state the method by which the fee is to be determined, including the percentage or percentages that shall accrue to the lawyer in the event of settlement, trial or appeal, litigation and other expenses to be deducted from the recovery, and whether such expenses are to be deducted before or after the contingent fee is calculated.' Georgia's rule does NOT require the client's (or the lawyer's) signature and does NOT require the agreement to say what happens to expenses on a loss. S.C. RPC 1.5(c) (Rule 407, SCACR): 'A contingent fee agreement shall be in a writing signed by the client and shall state the method by which the fee is to be determined, including the percentage or percentages that shall accrue to the lawyer in the event of settlement, trial or appeal; litigation and other expenses to be deducted from the recovery; and whether such expenses are to be deducted before or after the contingent fee is calculated. The agreement must clearly notify the client of any expenses the client will be expected to pay.' O.C.G.A. § 9-3-33 and S.C. Code § 15-3-530 are the personal-injury statutes of limitations, not fee-agreement rules.",
+   "sourceName": "Ga. RPC 1.5(c) (State Bar of Georgia handbook); S.C. RPC 1.5(c) (Rule 407, SCACR)",
+   "sourceUrl": "https://www.gabar.org/handbook?rule=rule55",
+   "retrievedAt": "2026-10-02",
+   "note": "WRONG CITATION on the summary box: the two statutes cited are limitation periods. Rewrite: 'Georgia and South Carolina both require contingent fee agreements to be in writing (Rule 1.5(c) of each state's Rules of Professional Conduct); South Carolina also requires the client's signature.' SC source: https://www.sccourts.org/resources/judicial-community/court-rules/appellate/rule-407/rule-15/"
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Case expenses like expert witnesses and filing fees are advanced by the firm and deducted from the settlement.",
+   "verdict": "update",
+   "currentValue": "Ga. and S.C. RPC 1.8(e)(1): 'a lawyer may advance court costs and expenses of litigation, the repayment of which may be contingent on the outcome of the matter'. Firm-confirmed policy (2026-10-02): \"Fees and costs apply only upon successful recovery. No fees or costs with no recovery.\" Live FAQ wording (bin/fix-fee-faqs-2026-10-02.php): \"Fees and costs are paid only from a recovery: if there is no recovery, you owe no fees and no costs.\"",
+   "sourceName": "Ga. RPC 1.8(e); S.C. RPC 1.8(e); Roden Law fee policy",
+   "sourceUrl": "https://www.gabar.org/handbook?rule=rule60",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate as practice, but as written it is silent on a loss and reads as Roden's own terms. Rewrite: 'Case expenses like expert witnesses and filing fees are typically advanced by the firm and repaid from the recovery. At Roden Law, fees and costs apply only upon successful recovery — no fees or costs with no recovery.' SC source: https://www.sccourts.org/resources/judicial-community/court-rules/appellate/rule-407/rule-18/"
+  },
+  {
+   "surface": "faq",
+   "claim": "A contingency fee is a payment arrangement where the attorney's fee is a percentage of the compensation recovered in your case. You pay nothing upfront, and if the case is unsuccessful, you owe nothing for legal representation.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "LII Wex: contingent fee; Ga./S.C. RPC 1.5(c)",
+   "sourceUrl": "https://www.law.cornell.edu/wex/contingent_fee",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate definition. Optional: add 'and no costs' to match the firm policy where Roden is the speaker; as written it is a general definition and does not contradict it."
+  },
+  {
+   "surface": "faq",
+   "claim": "Most personal injury attorneys charge between 33.3% (one-third) and 40% of the recovery. The percentage may increase if the case goes to trial because the attorney's investment of time and resources increases at each stage.",
+   "verdict": "update",
+   "currentValue": "LII: 'typically entitled to around 33% of the recovery amount.' No authoritative source found that 'most' attorneys charge between 33.3% and 40%. Staged percentages are recognized by Rule 1.5(c) ('percentage or percentages ... in the event of settlement, trial or appeal').",
+   "sourceName": "Legal Information Institute (Cornell Law School), Wex: contingent fee; Ga. RPC 1.5(c)",
+   "sourceUrl": "https://www.law.cornell.edu/wex/contingent_fee",
+   "retrievedAt": "2026-10-02",
+   "note": "FAQPage schema. Rewrite: 'Personal injury contingency fees are commonly one-third (33.3%) of the recovery. Many agreements set a higher percentage if a lawsuit is filed or the case goes to trial, because the attorney's time and expense increase at each stage; the agreement must state the percentage at each stage.' Do not attach a percentage to Roden Law."
+  },
+  {
+   "surface": "faq",
+   "claim": "Attorney fees are the percentage of recovery that compensates the lawyer for legal work. Case expenses are out-of-pocket costs like filing fees, expert witnesses, medical records, and depositions. Most firms advance expenses and deduct them from the settlement.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Ga. RPC 1.8(e); S.C. RPC 1.8(e)",
+   "sourceUrl": "https://www.gabar.org/handbook?rule=rule60",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. Advancing costs with repayment contingent on outcome is expressly permitted in both states."
+  },
+  {
+   "surface": "faq",
+   "claim": "Under the contingency fee model, you owe nothing for the attorney's time if the case does not result in a settlement or verdict. Many firms also absorb advanced case expenses, though this varies — always clarify in your fee agreement.",
+   "verdict": "update",
+   "currentValue": "Firm-confirmed policy (2026-10-02): \"Fees and costs apply only upon successful recovery. No fees or costs with no recovery.\" Live FAQ wording (bin/fix-fee-faqs-2026-10-02.php): \"Fees and costs are paid only from a recovery: if there is no recovery, you owe no fees and no costs.\" Ga./S.C. RPC 1.8(e) let a firm make repayment of advanced expenses contingent on the outcome; S.C. RPC 1.5(c) requires the agreement to 'clearly notify the client of any expenses the client will be expected to pay'.",
+   "sourceName": "Roden Law fee policy (bin/fix-fee-faqs-2026-10-02.php; commit a132903 (firm-confirmed fee wording, 2026-10-02)); S.C. RPC 1.5(c)",
+   "sourceUrl": "https://www.sccourts.org/resources/judicial-community/court-rules/appellate/rule-407/rule-15/",
+   "retrievedAt": "2026-10-02",
+   "note": "The general statement is accurate and does not imply Roden clients owe costs after a loss, but on Roden's own site (and in FAQPage schema) it leaves the firm's answer ambiguous — the exact gap the 2026-10-02 'Clarify your contingency fee policy' finding targeted. Add a sentence: 'At Roden Law, fees and costs are paid only from a recovery: if there is no recovery, you owe no fees and no costs.' Keep the 'varies by firm' sentence as general guidance."
+  },
+  {
+   "surface": "faq",
+   "claim": "Georgia has a 2-year statute of limitations (O.C.G.A. § 9-3-33) and South Carolina has a 3-year statute of limitations (S.C. Code § 15-3-530). Missing these deadlines means losing your right to file, so consult an attorney promptly.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-3-33; S.C. Code § 15-3-530(5) (sibling packs 1712, 4715)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "§ 9-3-33: two years for injuries to the person; § 15-3-530(5): three years. SC source: https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "surface": "faq",
+   "claim": "Key questions include: What is the fee percentage at each stage? Are expenses deducted before or after the attorney fee? What happens to expenses if the case fails? Can I terminate the agreement? How will settlement funds be handled?",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Ga./S.C. RPC 1.5(c); RPC 1.16 cmt [4]",
+   "sourceUrl": "https://www.sccourts.org/resources/judicial-community/court-rules/appellate/rule-407/rule-15/",
+   "retrievedAt": "2026-10-02",
+   "note": "All good questions; each maps to a Rule 1.5(c) term or the client's discharge right."
+  },
+  {
+   "surface": "body",
+   "claim": "Cornell Law Institute provides a helpful overview of how contingency fees operate in the American legal system.",
+   "verdict": "update",
+   "currentValue": "The publisher is the Legal Information Institute (LII) at Cornell Law School; the linked Wex entry resolves (HTTP 200).",
+   "sourceName": "Legal Information Institute (Cornell Law School)",
+   "sourceUrl": "https://www.law.cornell.edu/wex/contingent_fee",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite anchor: 'Cornell Law School's Legal Information Institute'. URL keep."
+  },
+  {
+   "surface": "body",
+   "claim": "If your case does not result in a settlement or verdict, you owe nothing for legal representation.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "LII Wex; Roden fee policy",
+   "sourceUrl": "https://www.law.cornell.edu/wex/contingent_fee",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate for attorney fees under any contingency agreement."
+  },
+  {
+   "surface": "body",
+   "claim": "No recovery, no fee — if the case is unsuccessful, the attorney earns nothing for their time and effort",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Ga./S.C. RPC 1.5(c)",
+   "sourceUrl": "https://www.gabar.org/handbook?rule=rule55",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "In both Georgia and South Carolina, this agreement must be in writing and signed by both the client and the attorney.",
+   "verdict": "update",
+   "currentValue": "Ga. RPC 1.5(c)(1): 'A contingent fee agreement shall be in writing and shall state the method by which the fee is to be determined, including the percentage or percentages that shall accrue to the lawyer in the event of settlement, trial or appeal, litigation and other expenses to be deducted from the recovery, and whether such expenses are to be deducted before or after the contingent fee is calculated.' Georgia's rule does NOT require the client's (or the lawyer's) signature and does NOT require the agreement to say what happens to expenses on a loss. S.C. RPC 1.5(c): 'in a writing signed by the client'. Neither state's rule requires the attorney's signature.",
+   "sourceName": "Ga. RPC 1.5(c)(1); S.C. RPC 1.5(c)",
+   "sourceUrl": "https://www.gabar.org/handbook?rule=rule55",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'In both Georgia and South Carolina, this agreement must be in writing; South Carolina also requires the client to sign it.' SC source: https://www.sccourts.org/resources/judicial-community/court-rules/appellate/rule-407/rule-15/"
+  },
+  {
+   "surface": "body",
+   "claim": "The fee, along with any case expenses, is deducted from the settlement before the remaining funds are distributed to you.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Ga. RPC 1.5(c)(2); S.C. RPC 1.5(c)",
+   "sourceUrl": "https://www.gabar.org/handbook?rule=rule55",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate; the closing statement must show the remittance to the client and how it was determined."
+  },
+  {
+   "surface": "body",
+   "claim": "If no compensation is recovered, you owe the attorney nothing for their legal services. The attorney absorbs the cost of the time and resources invested in your case.",
+   "verdict": "update",
+   "currentValue": "Rule 1.8(e) permits (does not require) repayment of advanced expenses to be contingent on outcome; the post itself says elsewhere this 'varies by firm' and 'others require reimbursement'. Firm-confirmed policy (2026-10-02): \"Fees and costs apply only upon successful recovery. No fees or costs with no recovery.\" Live FAQ wording (bin/fix-fee-faqs-2026-10-02.php): \"Fees and costs are paid only from a recovery: if there is no recovery, you owe no fees and no costs.\"",
+   "sourceName": "Ga./S.C. RPC 1.8(e); Roden fee policy",
+   "sourceUrl": "https://www.gabar.org/handbook?rule=rule60",
+   "retrievedAt": "2026-10-02",
+   "note": "Second sentence overstates as a general rule for all firms. Rewrite: 'The attorney absorbs the cost of the time invested in your case; whether you owe advanced expenses depends on the agreement — at Roden Law, there are no fees or costs with no recovery.'"
+  },
+  {
+   "surface": "body",
+   "claim": "If the case is unsuccessful, many firms absorb these costs entirely, though this varies by firm and should be clarified in your fee agreement.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Ga./S.C. RPC 1.8(e)(1); S.C. RPC 1.5(c)",
+   "sourceUrl": "https://www.sccourts.org/resources/judicial-community/court-rules/appellate/rule-407/rule-18/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate general statement (explicitly acceptable per firm policy review); S.C. requires the agreement to notify the client of expenses the client will be expected to pay."
+  },
+  {
+   "surface": "body",
+   "claim": "Contingency fee percentages in personal injury cases typically range from 33.3% to 40% of the recovery, depending on several factors:",
+   "verdict": "update",
+   "currentValue": "LII: personal-injury lawyer 'typically entitled to around 33% of the recovery amount.' No primary/authoritative source found for 40% as part of the typical range; secondary sources report it as common at the litigation/trial stage.",
+   "sourceName": "Legal Information Institute (Cornell Law School), Wex: contingent fee",
+   "sourceUrl": "https://www.law.cornell.edu/wex/contingent_fee",
+   "retrievedAt": "2026-10-02",
+   "note": "Soften: 'Contingency fees in personal injury cases are commonly one-third (33.3%) of the recovery, and agreements often set a higher percentage — 40% is common — if a lawsuit is filed or the case goes to trial:'."
+  },
+  {
+   "surface": "body",
+   "claim": "40% or higher",
+   "verdict": "update",
+   "currentValue": "No authoritative source for '40% or higher' as the typical trial rate; fees remain subject to Rule 1.5(a)'s reasonableness factors in both states.",
+   "sourceName": "Ga. RPC 1.5(a); S.C. RPC 1.5(a)",
+   "sourceUrl": "https://www.sccourts.org/resources/judicial-community/court-rules/appellate/rule-407/rule-15/",
+   "retrievedAt": "2026-10-02",
+   "note": "Table cell (text 'Trial or appeal' | '40% or higher'). Soften column header to 'Common fee' and the cell to 'Often 40%'; or add a caption: 'Illustrative ranges; the percentages in your agreement control and must be reasonable under Rule 1.5(a).'"
+  },
+  {
+   "surface": "body",
+   "claim": "Most personal injury firms advance these costs and deduct them from the settlement.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Ga./S.C. RPC 1.8(e)(1)",
+   "sourceUrl": "https://www.gabar.org/handbook?rule=rule60",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate as practice."
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia's Rules of Professional Conduct (Georgia Rule 1.5) govern contingency fee arrangements.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Ga. RPC 1.5 (State Bar of Georgia handbook)",
+   "sourceUrl": "https://www.gabar.org/handbook?rule=rule55",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct."
+  },
+  {
+   "surface": "body",
+   "claim": "Written agreement required: All contingency fee arrangements must be in writing, signed by the client",
+   "verdict": "update",
+   "currentValue": "Ga. RPC 1.5(c)(1): 'A contingent fee agreement shall be in writing and shall state the method by which the fee is to be determined, including the percentage or percentages that shall accrue to the lawyer in the event of settlement, trial or appeal, litigation and other expenses to be deducted from the recovery, and whether such expenses are to be deducted before or after the contingent fee is calculated.' Georgia's rule does NOT require the client's (or the lawyer's) signature and does NOT require the agreement to say what happens to expenses on a loss.",
+   "sourceName": "Ga. RPC 1.5(c)(1)",
+   "sourceUrl": "https://www.gabar.org/handbook?rule=rule55",
+   "retrievedAt": "2026-10-02",
+   "note": "Georgia departs from ABA Model Rule 1.5(c) here: writing yes, client signature not required by the rule. Rewrite: 'Written agreement required: All contingency fee agreements must be in writing and state the percentage(s) for settlement, trial or appeal (Rule 1.5(c)(1))'. Optionally add: 'At the end of the case, the lawyer must give you a written statement of the outcome, the fee and what you receive (Rule 1.5(c)(2))'."
+  },
+  {
+   "surface": "body",
+   "claim": "Fee must be reasonable: The fee percentage must be reasonable in light of the complexity, risk, and amount of work involved",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Ga. RPC 1.5(a)",
+   "sourceUrl": "https://www.gabar.org/handbook?rule=rule55",
+   "retrievedAt": "2026-10-02",
+   "note": "Rule 1.5(a): no 'unreasonable fee'; factors include time and labor, novelty and difficulty, and whether the fee is fixed or contingent."
+  },
+  {
+   "surface": "body",
+   "claim": "Prohibited cases: Contingency fees are not permitted in criminal cases or most domestic relations matters",
+   "verdict": "update",
+   "currentValue": "Ga. RPC 1.5(d): no fee in a domestic relations matter 'contingent upon the securing of a divorce or upon the amount of alimony or support, or property settlement in lieu thereof'; no 'contingent fee for representing a defendant in a criminal case'.",
+   "sourceName": "Ga. RPC 1.5(d)",
+   "sourceUrl": "https://www.gabar.org/handbook?rule=rule55",
+   "retrievedAt": "2026-10-02",
+   "note": "Minor precision: 'criminal defense cases, or domestic relations fees that depend on securing a divorce or on the amount of alimony, support or a property settlement.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Expense disclosure: The agreement must clearly state whether expenses are deducted before or after the fee calculation and what happens to expenses if the case is unsuccessful",
+   "verdict": "update",
+   "currentValue": "Ga. RPC 1.5(c)(1): 'A contingent fee agreement shall be in writing and shall state the method by which the fee is to be determined, including the percentage or percentages that shall accrue to the lawyer in the event of settlement, trial or appeal, litigation and other expenses to be deducted from the recovery, and whether such expenses are to be deducted before or after the contingent fee is calculated.' Georgia's rule does NOT require the client's (or the lawyer's) signature and does NOT require the agreement to say what happens to expenses on a loss.",
+   "sourceName": "Ga. RPC 1.5(c)(1)",
+   "sourceUrl": "https://www.gabar.org/handbook?rule=rule55",
+   "retrievedAt": "2026-10-02",
+   "note": "First half correct; 'what happens to expenses if the case is unsuccessful' is not a Georgia rule requirement (South Carolina's notice-of-expenses sentence is closer). Rewrite: 'Expense disclosure: The agreement must state the litigation and other expenses to be deducted from the recovery and whether they are deducted before or after the fee is calculated.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Statute of limitations: Georgia's 2-year statute of limitations for personal injury claims (O.C.G.A. § 9-3-33) makes it important to consult an attorney promptly — delaying can forfeit your right to file",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 9-3-33 (sibling packs)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct. Note: a limitation period, not a fee rule — editor may move SOL/fault bullets out of the 'Rules of Professional Conduct' list."
+  },
+  {
+   "surface": "body",
+   "claim": "Comparative fault: Under O.C.G.A. § 51-12-33, your recovery is reduced by your percentage of fault, and you cannot recover if you are 50% or more at fault",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 51-12-33(g) (sibling packs)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct; § 51-12-33(g) unchanged by 2025 SB 68."
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina's Rules of Professional Conduct (Rule 1.5) impose similar requirements with some differences:",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. RPC 1.5 (Rule 407, SCACR)",
+   "sourceUrl": "https://www.sccourts.org/resources/judicial-community/court-rules/appellate/rule-407/rule-15/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct; optionally cite 'Rule 407, SCACR'."
+  },
+  {
+   "surface": "body",
+   "claim": "Written agreement required: Must include the fee percentage, expense terms, and the client's right to terminate",
+   "verdict": "update",
+   "currentValue": "S.C. RPC 1.5(c) (Rule 407, SCACR): 'A contingent fee agreement shall be in a writing signed by the client and shall state the method by which the fee is to be determined, including the percentage or percentages that shall accrue to the lawyer in the event of settlement, trial or appeal; litigation and other expenses to be deducted from the recovery; and whether such expenses are to be deducted before or after the contingent fee is calculated. The agreement must clearly notify the client of any expenses the client will be expected to pay.' The client's right to terminate is not a Rule 1.5(c) term (it is required only for nonrefundable advance-fee agreements under 1.5(f)).",
+   "sourceName": "S.C. RPC 1.5(c)",
+   "sourceUrl": "https://www.sccourts.org/resources/judicial-community/court-rules/appellate/rule-407/rule-15/",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'Written agreement required: Must be signed by the client and state the percentage(s) for settlement, trial or appeal, the expenses to be deducted, whether they come off before or after the fee, and any expenses the client will be expected to pay'."
+  },
+  {
+   "surface": "body",
+   "claim": "Reasonableness standard: South Carolina courts apply a reasonableness test considering the complexity, amount involved, and customary fees in the locality",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. RPC 1.5(a)",
+   "sourceUrl": "https://www.sccourts.org/resources/judicial-community/court-rules/appellate/rule-407/rule-15/",
+   "retrievedAt": "2026-10-02",
+   "note": "Rule 1.5(a) factors include 'the novelty and difficulty of the questions involved', 'the fee customarily charged in the locality', 'the amount involved and the results obtained'. Optionally say 'South Carolina's Rule 1.5(a) applies ...'."
+  },
+  {
+   "surface": "body",
+   "claim": "Prohibited cases: Same restrictions on criminal and most domestic relations cases",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. RPC 1.5(d)",
+   "sourceUrl": "https://www.sccourts.org/resources/judicial-community/court-rules/appellate/rule-407/rule-15/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct; S.C. 1.5(d)(1) additionally allows a contingency fee for collecting past-due alimony or child support."
+  },
+  {
+   "surface": "body",
+   "claim": "Client's right to terminate: A client can terminate the contingency fee arrangement at any time, though the attorney may be entitled to compensation for work already performed (quantum meruit)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. RPC 1.16(a)(3) & cmt. [4]; S.C. Bar Ethics Advisory Opinion 90-13",
+   "sourceUrl": "https://www.sccourts.org/resources/judicial-community/court-rules/appellate/rule-407/rule-116/",
+   "retrievedAt": "2026-10-02",
+   "note": "Cmt [4]: 'A client has a right to discharge a lawyer at any time, with or without cause, subject to liability for payment for the lawyer's services.' EAO 90-13 (https://www.scbar.org/for-lawyers/quicklinks/legal-resources/ethics-advisory-opinions/ethics-advisory-opinion-90-13/): attorney discharged without cause recovers in quantum meruit. Georgia is the same (Ga. RPC 1.16 cmt [4], https://www.gabar.org/handbook?rule=rule48; Ga. Ct. App. case law, e.g. Kirschner Venker v. Taylor Martino (2004)) — the editor may say 'in both states'."
+  },
+  {
+   "surface": "body",
+   "claim": "Statute of limitations: South Carolina's 3-year statute of limitations (S.C. Code § 15-3-530) provides more time but should not encourage delay",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 15-3-530(5)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t15c003.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct."
+  },
+  {
+   "surface": "body",
+   "claim": "Comparative fault: South Carolina bars recovery only if you are 51% or more at fault — slightly more favorable than Georgia's threshold",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)",
+   "sourceUrl": "https://www.courtlistener.com/opinion/1265650/nelson-v-concrete-supply-company/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct: recovery allowed if plaintiff's negligence is not greater than defendants'. Optional cite."
+  },
+  {
+   "surface": "body",
+   "claim": "Most accident victims cannot afford to pay a lawyer $300-$500 per hour while simultaneously dealing with medical bills, lost wages, and recovery.",
+   "verdict": "update",
+   "currentValue": "No Georgia/South Carolina personal-injury hourly-rate source located for $300-$500.",
+   "sourceName": "No authoritative source located",
+   "sourceUrl": "https://www.law.cornell.edu/wex/contingent_fee",
+   "retrievedAt": "2026-10-02",
+   "note": "Unsourced dollar figures. Rewrite: 'Most accident victims cannot afford to pay a lawyer by the hour — often hundreds of dollars an hour — while ...'. (sourceUrl is the LII page only because the schema requires one.)"
+  },
+  {
+   "surface": "body",
+   "claim": "If the case takes two years and costs $50,000 in expenses but ultimately fails, the attorney absorbs that loss — not you.",
+   "verdict": "update",
+   "currentValue": "Illustrative figure only. Rule 1.8(e) permits but does not require firms to make expense repayment contingent on outcome; the post itself says some firms require reimbursement. Firm-confirmed policy (2026-10-02): \"Fees and costs apply only upon successful recovery. No fees or costs with no recovery.\" Live FAQ wording (bin/fix-fee-faqs-2026-10-02.php): \"Fees and costs are paid only from a recovery: if there is no recovery, you owe no fees and no costs.\"",
+   "sourceName": "Ga./S.C. RPC 1.8(e); Roden fee policy",
+   "sourceUrl": "https://www.gabar.org/handbook?rule=rule60",
+   "retrievedAt": "2026-10-02",
+   "note": "Keep $50,000 only as an explicit hypothetical and qualify: 'For example, if a case takes two years and $50,000 in expenses but ultimately fails, a firm that does not charge costs on a loss — as Roden Law does not — absorbs that loss, not you.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Ethical rules require attorneys to hold settlement funds in a client trust account and provide a detailed disbursement statement.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Ga. RPC 1.15(I)-(II), 1.5(c)(2); S.C. RPC 1.15, 1.5(c) (sibling pack 1712)",
+   "sourceUrl": "https://www.gabar.org/handbook?rule=rule55",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct; closing statement must show the outcome, remittance, method, and (Georgia) the fee amount."
+  },
+  {
+   "surface": "body",
+   "claim": "What happens to expenses if the case is unsuccessful? Some firms absorb costs; others require reimbursement.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. RPC 1.5(c); Ga./S.C. RPC 1.8(e)",
+   "sourceUrl": "https://www.sccourts.org/resources/judicial-community/court-rules/appellate/rule-407/rule-15/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate general guidance."
+  },
+  {
+   "surface": "body",
+   "claim": "Free consultation: Your case evaluation costs nothing.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md (Free Case Review)",
+   "sourceUrl": "https://www.gabar.org/handbook?rule=rule55",
+   "retrievedAt": "2026-10-02",
+   "note": "Firm fact. (sourceUrl is a placeholder; the authority is the writer profile.)"
+  },
+  {
+   "surface": "body",
+   "claim": "No upfront costs: You pay nothing to hire us. We advance all case expenses — filing fees, expert witnesses, medical records, and investigation costs.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Roden fee policy (bin/fix-fee-faqs-2026-10-02.php; commit a132903 (firm-confirmed fee wording, 2026-10-02)); Ga./S.C. RPC 1.8(e)(1)",
+   "sourceUrl": "https://www.gabar.org/handbook?rule=rule60",
+   "retrievedAt": "2026-10-02",
+   "note": "Consistent with the confirmed policy and permitted by Rule 1.8(e). 'all' is a firm commitment — owner may confirm, no contradiction found."
+  },
+  {
+   "surface": "body",
+   "claim": "You pay only if we win: Our fee comes exclusively from the compensation we recover for you. If we don't win your case, you owe us nothing.",
+   "verdict": "update",
+   "currentValue": "Firm-confirmed policy (2026-10-02): \"Fees and costs apply only upon successful recovery. No fees or costs with no recovery.\" Live FAQ wording (bin/fix-fee-faqs-2026-10-02.php): \"Fees and costs are paid only from a recovery: if there is no recovery, you owe no fees and no costs.\"",
+   "sourceName": "Roden fee policy (bin/fix-fee-faqs-2026-10-02.php; commit a132903 (firm-confirmed fee wording, 2026-10-02))",
+   "sourceUrl": "https://www.sccourts.org/resources/judicial-community/court-rules/appellate/rule-407/rule-15/",
+   "retrievedAt": "2026-10-02",
+   "note": "Not wrong ('owe us nothing' includes costs), but align with the confirmed wording and cover settlements, not only 'wins': 'You pay only if we recover: Our fee comes exclusively from the compensation we recover for you. Fees and costs apply only upon successful recovery — if there is no recovery, you owe no fees and no costs.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Transparent agreements: We explain every term of our fee agreement in plain language before you sign, and we welcome questions at every stage of the process.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Ga./S.C. RPC 1.5(b)-(c)",
+   "sourceUrl": "https://www.gabar.org/handbook?rule=rule55",
+   "retrievedAt": "2026-10-02",
+   "note": "Firm practice statement; consistent with rules."
+  },
+  {
+   "surface": "body",
+   "claim": "Call 1-844-RESULTS — there is no risk and no cost to learn about your legal options.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "profiles/writer-profile.md (toll-free 1-844-RESULTS)",
+   "sourceUrl": "https://www.gabar.org/handbook?rule=rule55",
+   "retrievedAt": "2026-10-02",
+   "note": "tel:+18447378587 = 1-844-737-8587 = 844-RESULTS. Correct."
+  }
+ ],
+ "recommendedEdits": [
+  "Key Takeaways: replace the wrong citations — fee-agreement writing requirement is Rule 1.5(c) of each state's Rules of Professional Conduct, not O.C.G.A. § 9-3-33 / S.C. Code § 15-3-530 (those are limitation periods).",
+  "Georgia does not require the client's signature on a contingent fee agreement (Ga. RPC 1.5(c)(1): 'shall be in writing'); South Carolina does ('in a writing signed by the client'). Neither requires the attorney's signature. Fix Step 2 and the Georgia 'Written agreement required' bullet.",
+  "Soften every '33.3%-40% typical' statement (KT, FAQ 2, section intro, table) to 'commonly one-third, often higher if suit is filed or the case is tried' — only ~33% is supported by an authoritative source (Cornell LII). Do not state a Roden Law percentage.",
+  "Align Roden-voiced fee statements and FAQ 4 with the firm's confirmed policy: 'Fees and costs apply only upon successful recovery. No fees or costs with no recovery.' Qualify the general 'attorney absorbs' statements (Step 5, $50,000 Risk Transfer) since the post itself says expense handling varies by firm.",
+  "Georgia 'Expense disclosure' bullet: drop 'what happens to expenses if the case is unsuccessful' (not in Ga. RPC 1.5(c)); SC 'Written agreement' bullet: replace 'client's right to terminate' with the actual 1.5(c) terms incl. notice of expenses the client will be expected to pay.",
+  "Replace unsourced '$300-$500 per hour' with 'hundreds of dollars an hour'; rename 'Cornell Law Institute' to Cornell Law School's Legal Information Institute.",
+  "Optional: workers' compensation fees are capped by statute — Georgia: Board approval required, no fee over 25% of weekly benefits or settlement (O.C.G.A. § 34-9-108(a); https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs); South Carolina: up to 33.3% of compensation, approved by the Commission (S.C. Code Regs. 67-1205; https://www.law.cornell.edu/regulations/south-carolina/R-67-1205). The post's 33-40% table does not apply to WC claims, and it links the WC page; a one-line caveat under the table would prevent a misleading read."
+ ],
+ "statuteCitations": [
+  {
+   "section": "Georgia Rules of Professional Conduct 1.5(a), (c), (d)",
+   "name": "Reasonable fee; contingent fee agreement in writing, closing statement; prohibited contingent fees",
+   "url": "https://www.gabar.org/handbook?rule=rule55"
+  },
+  {
+   "section": "Georgia Rules of Professional Conduct 1.8(e)",
+   "name": "Advancing court costs and litigation expenses; repayment may be contingent on outcome",
+   "url": "https://www.gabar.org/handbook?rule=rule60"
+  },
+  {
+   "section": "Georgia Rules of Professional Conduct 1.16 cmt. [4]",
+   "name": "Client may discharge lawyer at any time, subject to liability for payment for services",
+   "url": "https://www.gabar.org/handbook?rule=rule48"
+  },
+  {
+   "section": "S.C. Rules of Professional Conduct 1.5(a), (c), (d) (Rule 407, SCACR)",
+   "name": "Reasonable fee; contingent fee agreement in a writing signed by the client; expense notice; closing statement; prohibited contingent fees",
+   "url": "https://www.sccourts.org/resources/judicial-community/court-rules/appellate/rule-407/rule-15/"
+  },
+  {
+   "section": "S.C. Rules of Professional Conduct 1.8(e) (Rule 407, SCACR)",
+   "name": "Advancing court costs and litigation expenses",
+   "url": "https://www.sccourts.org/resources/judicial-community/court-rules/appellate/rule-407/rule-18/"
+  },
+  {
+   "section": "S.C. Rules of Professional Conduct 1.16(a)(3) & cmt. [4] (Rule 407, SCACR)",
+   "name": "Withdrawal on discharge; client may discharge at any time subject to payment for services",
+   "url": "https://www.sccourts.org/resources/judicial-community/court-rules/appellate/rule-407/rule-116/"
+  },
+  {
+   "section": "O.C.G.A. § 9-3-33",
+   "name": "Two-year limitation for injuries to the person",
+   "url": "https://law.justia.com/codes/georgia/title-9/chapter-3/article-2/section-9-3-33/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-33",
+   "name": "Apportionment; no recovery at 50 percent or more fault",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+  },
+  {
+   "section": "S.C. Code § 15-3-530",
+   "name": "Three-year limitation for personal injury",
+   "url": "https://www.scstatehouse.gov/code/t15c003.php"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-108",
+   "name": "Workers' compensation attorney fees: Board approval; 25% cap (optional caveat)",
+   "url": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs"
+  },
+  {
+   "section": "S.C. Code Regs. 67-1205",
+   "name": "Workers' compensation attorney fees: up to 33.3%, Commission approval (optional caveat)",
+   "url": "https://www.law.cornell.edu/regulations/south-carolina/R-67-1205"
+  }
+ ],
+ "authoritativeLinks": [
+  {
+   "name": "Legal Information Institute (Cornell Law School) — Wex: contingent fee",
+   "url": "https://www.law.cornell.edu/wex/contingent_fee"
+  },
+  {
+   "name": "Nelson v. Concrete Supply Co., 303 S.C. 243 (1991)",
+   "url": "https://www.courtlistener.com/opinion/1265650/nelson-v-concrete-supply-company/"
+  },
+  {
+   "name": "S.C. Bar Ethics Advisory Opinion 90-13 (quantum meruit after discharge)",
+   "url": "https://www.scbar.org/for-lawyers/quicklinks/legal-resources/ethics-advisory-opinions/ethics-advisory-opinion-90-13/"
+  }
+ ],
+ "quoteNote": "Rule text quoted from the State Bar of Georgia handbook (gabar.org/handbook?rule=rule55/rule60/rule48; the page embeds the full handbook) and the S.C. Judicial Branch Rule 407 pages, retrieved 2026-10-02. Justia URLs for §§ 9-3-33 and 51-12-33 are reused from sibling packs (Justia bot-challenges; not re-fetched). Roden Law's fee policy is from the firm's 2026-10-02 confirmation recorded in bin/fix-fee-faqs-2026-10-02.php / commit a132903; no Roden fee percentage appears in the post or in profiles/."
+}

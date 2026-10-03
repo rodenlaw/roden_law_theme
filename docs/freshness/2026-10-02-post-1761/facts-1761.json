@@ -1,0 +1,977 @@
+{
+ "postId": 1761,
+ "slug": "workers-comp-for-carpal-tunnel-syndrome",
+ "liveUrl": "https://rodenlaw.com/blog/workers-comp-for-carpal-tunnel-syndrome/",
+ "jurisdiction": "both",
+ "researchedAt": "2026-10-02",
+ "verifiedClaims": [
+  {
+   "surface": "body",
+   "claim": "Carpal tunnel syndrome is one of the most common repetitive strain injuries in the American workplace, affecting millions of workers whose jobs require repetitive hand and wrist movements.",
+   "verdict": "update",
+   "currentValue": "NIH MedlinePlus calls carpal tunnel syndrome 'a very common condition' and says it occurs most often between ages 30 and 60 and more often in women. No source located for 'millions of workers' with work-related CTS; BLS counted 6,670 private-industry CTS cases with days away from work across 2021-2022 combined (Table R67).",
+   "sourceName": "NIH MedlinePlus — Carpal Tunnel Syndrome; BLS SOII Table R67, 2021-2022",
+   "sourceUrl": "https://medlineplus.gov/carpaltunnelsyndrome.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Drop 'affecting millions of workers'. Suggested: 'Carpal tunnel syndrome is a very common nerve condition, and jobs that demand the same forceful hand and wrist motions over and over can cause or worsen it.'"
+  },
+  {
+   "surface": "body",
+   "claim": "you may be entitled to <a href=\"/practice-areas/workers-compensation-lawyers/\">workers' compensation benefits</a> in both <strong>Georgia</strong> and <strong>South Carolina</strong> — including medical treatment, wage replacement, and compensation for any permanent impairment.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. §§ 34-9-200, 34-9-261, 34-9-263; S.C. Code §§ 42-1-172(E), 42-9-10, 42-9-30, 42-15-60",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. South Carolina § 42-1-172(E) expressly routes repetitive-trauma claimants to §§ 42-9-10/20/30 benefits on reaching MMI."
+  },
+  {
+   "surface": "body",
+   "claim": "carpal tunnel claims are among the most frequently disputed workers' compensation cases because insurers often challenge whether the condition is truly work-related",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 42-1-172(B)-(D) (medical-evidence causation requirement); NIH MedlinePlus (non-work risk factors)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Characterisation, no figure. Consistent with the heightened South Carolina causation standard and the many non-work risk factors."
+  },
+  {
+   "surface": "body",
+   "claim": "The <a href=\"https://www.law.cornell.edu/wex/workers_compensation\" target=\"_blank\" rel=\"noopener\">Cornell Law Institute provides a useful overview</a>",
+   "verdict": "update",
+   "currentValue": "The publisher is the Legal Information Institute (LII) at Cornell Law School; link returns 200.",
+   "sourceName": "Cornell LII — Wex: workers' compensation",
+   "sourceUrl": "https://www.law.cornell.edu/wex/workers_compensation",
+   "retrievedAt": "2026-10-02",
+   "note": "Name fix only: 'Cornell Law School's Legal Information Institute'. Link resolves (200)."
+  },
+  {
+   "surface": "body",
+   "claim": "This nerve controls sensation and movement in the thumb and first three fingers.",
+   "verdict": "update",
+   "currentValue": "The median nerve provides feeling in the thumb, index finger, middle finger and the thumb-side half of the ring finger, and controls the muscles around the base of the thumb (AAOS OrthoInfo).",
+   "sourceName": "AAOS OrthoInfo — Carpal Tunnel Syndrome",
+   "sourceUrl": "https://www.orthoinfo.org/diseases--conditions/carpal-tunnel-syndrome/",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'This nerve provides feeling to the thumb, index and middle fingers and half of the ring finger, and controls muscles at the base of the thumb.' 'First three fingers' is imprecise and contradicts the next bullet."
+  },
+  {
+   "surface": "body",
+   "claim": "When the tendons and tissues surrounding the carpal tunnel become inflamed or swollen, they press on the median nerve and produce a range of symptoms:",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "AAOS OrthoInfo — Carpal Tunnel Syndrome ('Repeating the same hand and wrist motions ... may aggravate the tendons in the wrist, causing swelling that puts pressure on the nerve'); MedlinePlus",
+   "sourceUrl": "https://www.orthoinfo.org/diseases--conditions/carpal-tunnel-syndrome/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate; most cases are multifactorial (AAOS: 'caused by a combination of factors')."
+  },
+  {
+   "surface": "body",
+   "claim": "Numbness, tingling, or a \"pins and needles\" sensation in the thumb, index finger, middle finger, and part of the ring finger",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "AAOS OrthoInfo; MedlinePlus 000433",
+   "sourceUrl": "https://www.orthoinfo.org/diseases--conditions/carpal-tunnel-syndrome/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "Pain in the wrist, hand, or forearm that may radiate up to the shoulder",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "AAOS OrthoInfo ('Pain or tingling that may travel up the forearm toward the shoulder')",
+   "sourceUrl": "https://www.orthoinfo.org/diseases--conditions/carpal-tunnel-syndrome/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "Weakness in the hand, especially when gripping objects",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "AAOS OrthoInfo; MedlinePlus 000433 ('Weak grip or difficulty carrying bags')",
+   "sourceUrl": "https://medlineplus.gov/ency/article/000433.htm",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "Difficulty with fine motor tasks such as buttoning a shirt or holding small objects",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "AAOS OrthoInfo ('difficult to perform fine movements such as buttoning your clothes')",
+   "sourceUrl": "https://www.orthoinfo.org/diseases--conditions/carpal-tunnel-syndrome/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "Symptoms that worsen at night or after repetitive hand activity",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "AAOS OrthoInfo ('Nighttime symptoms are very common')",
+   "sourceUrl": "https://www.orthoinfo.org/diseases--conditions/carpal-tunnel-syndrome/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "CTS is a progressive condition. Without treatment, symptoms typically worsen over time, and in severe cases, the nerve damage can become permanent.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "AAOS OrthoInfo ('In most patients, carpal tunnel syndrome gets worse over time. If untreated for too long, it can lead to permanent dysfunction')",
+   "sourceUrl": "https://www.orthoinfo.org/diseases--conditions/carpal-tunnel-syndrome/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "including rest, wrist splints, anti-inflammatory medications, corticosteroid injections, and in severe cases, surgery",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "AAOS OrthoInfo (splinting, NSAIDs, activity changes, steroid injection, nerve-gliding exercises, surgery)",
+   "sourceUrl": "https://www.orthoinfo.org/diseases--conditions/carpal-tunnel-syndrome/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "This makes it an <strong>occupational disease</strong> or <strong>repetitive motion injury</strong> under workers' compensation law",
+   "verdict": "update",
+   "currentValue": "South Carolina: a 'repetitive trauma injury' is 'an injury which is gradual in onset and caused by the cumulative effects of repetitive traumatic events', and its compensability 'must be determined only under the provisions of this statute' (S.C. Code § 42-1-172(A)) — not the occupational-disease article (§ 42-11-10). Georgia: gradual injuries from work are handled as an 'injury' with a 'fictional new accident' date (Central State Hosp. v. James; Donnelley v. Ogletree); the occupational-disease route (O.C.G.A. § 34-9-280) has five strict elements, including that the disease is 'not an ordinary disease of life to which the general public is exposed'.",
+   "sourceName": "S.C. Code § 42-1-172 (scstatehouse.gov, read 2026-10-02); Donnelley v. Ogletree (CourtListener, read in Chrome); O.C.G.A. § 34-9-280 (via search)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'This makes it a repetitive trauma injury — in South Carolina a category with its own statute (S.C. Code § 42-1-172) — and in Georgia a gradual work injury rather than an occupational disease.' Same fix needed in the table, KT, excerpt and FAQ 1."
+  },
+  {
+   "surface": "body",
+   "claim": "a category that requires the worker to establish a connection between their job duties and the development of the condition",
+   "verdict": "update",
+   "currentValue": "South Carolina requires a commissioner's specific finding, by a preponderance of the evidence, of a causal connection 'established by medical evidence' — expert opinion 'stated to a reasonable degree of medical certainty' from a licensed physician — between the repetitive activities of the regular job and the injury (S.C. Code § 42-1-172(B)-(D)).",
+   "sourceName": "S.C. Code § 42-1-172(B)-(D)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Add the SC medical-evidence standard here or in 'Proving That Carpal Tunnel Is Work-Related': '— in South Carolina, through a physician's opinion stated to a reasonable degree of medical certainty (S.C. Code § 42-1-172)'."
+  },
+  {
+   "surface": "body",
+   "claim": "<li><strong>Assembly line workers</strong> — Repetitive hand movements in manufacturing and processing</li>",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "NIH MedlinePlus (lists 'Assembly line work' among repetitive motions linked to CTS)",
+   "sourceUrl": "https://medlineplus.gov/carpaltunnelsyndrome.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "<li><strong>Office and data entry workers</strong> — Prolonged keyboard and mouse use</li>",
+   "verdict": "update",
+   "currentValue": "NIH MedlinePlus: 'Researchers aren't sure whether long-term typing or computer use leads to carpal tunnel syndrome'; MedlinePlus 000433: 'Studies have not proved that carpal tunnel is caused by typing on a computer, using a mouse...'.",
+   "sourceName": "NIH MedlinePlus — Carpal Tunnel Syndrome; MedlinePlus Medical Encyclopedia 000433 (reviewed 6/4/2025)",
+   "sourceUrl": "https://medlineplus.gov/carpaltunnelsyndrome.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Either drop the office bullet from the 'highest risk' list or qualify it: 'Office and data entry workers — prolonged keyboard and mouse use, although medical research has not settled whether typing alone causes CTS.' Insurers use exactly this point to deny keyboard claims."
+  },
+  {
+   "surface": "body",
+   "claim": "<li><strong>Construction workers</strong> — Vibrating power tools and repetitive gripping",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "MedlinePlus 000433 ('using hand tools that vibrate, such as drills or hammers, may also lead to carpal tunnel syndrome'); MedlinePlus ('Carpentry or using tools that vibrate')",
+   "sourceUrl": "https://medlineplus.gov/ency/article/000433.htm",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "<li><strong>Food processing workers</strong> — Repetitive cutting, trimming, and packaging motions</li>",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "AAOS OrthoInfo ('Repetitive hand use'); MedlinePlus",
+   "sourceUrl": "https://www.orthoinfo.org/diseases--conditions/carpal-tunnel-syndrome/",
+   "retrievedAt": "2026-10-02",
+   "note": "Reasonable illustration of repetitive forceful hand use; no statistic claimed."
+  },
+  {
+   "surface": "body",
+   "claim": "The Bureau of Labor Statistics consistently identifies CTS as one of the occupational injuries requiring the most days away from work, with affected workers typically missing more workdays than those with fractures or other traumatic injuries.",
+   "verdict": "update",
+   "currentValue": "BLS SOII Table R67 (private industry, 2021-2022 combined): carpal tunnel syndrome median 45 days away from work vs. 36 for fractures and 10 for all cases (6,670 CTS DAFW cases). Comparison holds; give the figures and year.",
+   "sourceName": "BLS, Survey of Occupational Injuries and Illnesses, case and demographic characteristics Table R67, 2021-2022 (xlsx downloaded and read 2026-10-02)",
+   "sourceUrl": "https://www.bls.gov/iif/nonfatal-injuries-and-illnesses-tables/case-and-demographic-characteristics-table-r67-2021-2022.xlsx",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite with the data: 'Bureau of Labor Statistics data for 2021-2022 show private-sector workers with carpal tunnel syndrome missed a median of 45 days of work — more than workers with fractures (36 days) and more than four times the median for all injuries (10 days).' Drop 'consistently' and 'or other traumatic injuries'."
+  },
+  {
+   "surface": "body",
+   "claim": "covers occupational diseases including carpal tunnel syndrome when the condition arises out of and in the course of employment.",
+   "verdict": "update",
+   "currentValue": "Georgia handles repetitive-trauma conditions as an 'injury ... arising out of and in the course of the employment' (O.C.G.A. § 34-9-1(4)) under the fictional-new-accident rule. The separate occupational-disease article (§ 34-9-280) requires proof of five elements including a direct causal connection, no substantial non-work exposure, and that it is not an ordinary disease of life.",
+   "sourceName": "Donnelley v. Ogletree, 312 Ga. App. 475 (2011); O.C.G.A. §§ 34-9-1(4), 34-9-280",
+   "sourceUrl": "https://www.courtlistener.com/opinion/7927240/donnelley-v-ogletree/",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'covers carpal tunnel syndrome as a gradual work injury when it arises out of and in the course of employment (O.C.G.A. § 34-9-1(4)).'"
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia requires injured workers to report their injury to their employer within <strong>30 days</strong> under <strong>O.C.G.A. § 34-9-80</strong>.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-80 (facts-1684/1652)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-3/part-1/section-34-9-80/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate: notice within 30 days after the accident, with exceptions (incapacity, fraud or deceit, employer knowledge, reasonable excuse without prejudice). Comp notice — not the tort SOL."
+  },
+  {
+   "surface": "body",
+   "claim": "For repetitive motion injuries like CTS, the 30-day clock generally starts when the worker <strong>knows or should know</strong> that their condition is work-related — which may be when a doctor first diagnoses the condition as being connected to work duties, rather than when symptoms first appear.",
+   "verdict": "update",
+   "currentValue": "Georgia treats a gradually developing work condition such as carpal tunnel as an 'injury' (O.C.G.A. § 34-9-1(4)), and when the worker keeps working until the condition forces them to stop, the courts date the 'fictional new accident' to the day the disability manifests — usually the day the worker is forced to stop working — and the one-year limitation runs from that date (Central State Hosp. v. James, 147 Ga. App. 308 (1978), as quoted and applied in Donnelley v. Ogletree, 312 Ga. App. 475 (2011), a claimant who had carpal tunnel surgery). If there was an earlier award and the worker returned to ordinary duties, later worsening is a change in condition, not a new accident (Shaw Indus. v. Scott, 310 Ga. App. 750 (2011)). Section 34-9-80 runs from the 'accident'; a knew-or-should-have-known discovery trigger is South Carolina's statutory rule (S.C. Code § 42-15-20(C)), not Georgia's. Georgia's escape valves are the statutory exceptions (employer knowledge; reasonable excuse where the employer is not prejudiced).",
+   "sourceName": "Donnelley v. Ogletree (quoting Central State Hosp. v. James); O.C.G.A. § 34-9-80",
+   "sourceUrl": "https://www.courtlistener.com/opinion/7927240/donnelley-v-ogletree/",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'For carpal tunnel that builds up while you keep working, Georgia generally dates the injury to when the condition forces you to stop or miss work — but do not wait: report symptoms to your supervisor in writing as soon as you suspect your job is the cause. Late notice can be excused if your employer already knew or was not harmed by the delay (O.C.G.A. § 34-9-80).' Do NOT say Georgia uses a discovery rule."
+  },
+  {
+   "surface": "body",
+   "claim": "within <strong>one year</strong> of the last date of exposure to the hazardous condition or within one year of the date the worker became aware that the condition was work-related, under <strong>O.C.G.A. § 34-9-82</strong>.",
+   "verdict": "update",
+   "currentValue": "O.C.G.A. § 34-9-82(a): a claim must be filed with the State Board within one year after injury; if the employer furnished remedial treatment, within one year after the last remedial treatment furnished by the employer; if weekly income benefits were paid, within two years after the last payment (quoted in Donnelley v. Ogletree n.2; SBWC provisions sheet '1 or 2 yrs'). 'Last date of exposure' / 'became aware' language is the occupational-disease rule (O.C.G.A. § 34-9-281(b)(2): one year after the employee knew or should have known of the disablement and its relationship to employment, no more than seven years after last injurious exposure) and is not in § 34-9-82. Georgia treats a gradually developing work condition such as carpal tunnel as an 'injury' (O.C.G.A. § 34-9-1(4)), and when the worker keeps working until the condition forces them to stop, the courts date the 'fictional new accident' to the day the disability manifests — usually the day the worker is forced to stop working — and the one-year limitation runs from that date (Central State Hosp. v. James, 147 Ga. App. 308 (1978), as quoted and applied in Donnelley v. Ogletree, 312 Ga. App. 475 (2011), a claimant who had carpal tunnel surgery). If there was an earlier award and the worker returned to ordinary duties, later worsening is a change in condition, not a new accident (Shaw Indus. v. Scott, 310 Ga. App. 750 (2011)).",
+   "sourceName": "O.C.G.A. § 34-9-82 (via Donnelley v. Ogletree n.2; sibling facts-1684); O.C.G.A. § 34-9-281 (via search)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-3/part-1/section-34-9-82/",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'Workers must file a claim (Form WC-14) with the Georgia State Board of Workers' Compensation within one year of the injury — for gradually developing carpal tunnel, usually the date the condition forced you to stop working — or within one year of the last medical treatment the employer paid for, or two years from your last weekly income check, whichever is later (O.C.G.A. § 34-9-82).' This is the WC deadline — never the 2-year tort SOL (§ 9-3-33)."
+  },
+  {
+   "surface": "body",
+   "claim": "The employer must post a list of at least six physicians (the \"panel\"), and the injured worker selects their treating doctor from this panel.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "SBWC Law FAQs; O.C.G.A. § 34-9-201 (facts-1684)",
+   "sourceUrl": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate for the traditional panel (min. six doctors, one orthopedist, max two industrial clinics). Employer may instead post a conformed panel or a certified WC/MCO."
+  },
+  {
+   "surface": "body",
+   "claim": "Georgia follows a <strong>modified comparative fault</strong> rule under <strong>O.C.G.A. § 51-12-33</strong> in personal injury cases, barring recovery at 50% or more fault.",
+   "verdict": "update",
+   "currentValue": "The statement of § 51-12-33(g) is accurate (no recovery at 50% or more fault), but it is a tort rule with no role in a comp claim and is cited here only to be disclaimed. It applies on this topic only to a third-party lawsuit (e.g., against a tool or equipment manufacturer).",
+   "sourceName": "O.C.G.A. § 51-12-33 (facts-1782)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/",
+   "retrievedAt": "2026-10-02",
+   "note": "Delete the § 51-12-33 sentence and the 'Comparative Fault Note' heading, or move it to a third-party-claim context. Replace the section with a short 'Fault does not matter' note citing O.C.G.A. § 34-9-17 (see next claim)."
+  },
+  {
+   "surface": "body",
+   "claim": "However, workers' compensation is a <strong>no-fault system</strong> — your own actions do not bar your claim.",
+   "verdict": "update",
+   "currentValue": "No-fault, with statutory exceptions: Georgia bars compensation for willful misconduct (including intentionally self-inflicted injury), an attempt to injure another, willful failure or refusal to use a required safety appliance or perform a statutory duty, and intoxication or illegal drug use (O.C.G.A. § 34-9-17); the employer bears the burden.",
+   "sourceName": "O.C.G.A. § 34-9-17 (facts-1684)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-17/",
+   "retrievedAt": "2026-10-02",
+   "note": "Change to: 'Workers' compensation is a no-fault system — carelessness or poor ergonomic habits do not bar your claim; only narrow exceptions such as willful misconduct or intoxication do (O.C.G.A. § 34-9-17).'"
+  },
+  {
+   "surface": "body",
+   "claim": "Even if you could have used better ergonomic practices, you are still entitled to benefits if your work duties caused or contributed to your CTS.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. §§ 34-9-1(4), 34-9-17",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-1/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate — ordinary negligence is not a defense. Optional 'may still be entitled'."
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina's workers' compensation system, governed by <strong>Title 42 of the South Carolina Code</strong>, also covers occupational diseases including carpal tunnel syndrome.",
+   "verdict": "update",
+   "currentValue": "S.C. Code § 42-1-172(A): carpal-tunnel-type conditions are 'repetitive trauma injuries' whose compensability 'must be determined only under the provisions of this statute', with causation found by a preponderance and 'established by medical evidence' (§ 42-1-172(B)-(D)). The occupational-disease definition (§ 42-11-10) is a separate route.",
+   "sourceName": "S.C. Code §§ 42-1-172, 42-11-10 (scstatehouse.gov, read 2026-10-02)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'also covers carpal tunnel syndrome, which it treats as a repetitive trauma injury under a specific statute (S.C. Code § 42-1-172).'"
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina requires workers to report their injury to their employer within <strong>90 days</strong> under <strong>S.C. Code § 42-15-20</strong>.",
+   "verdict": "update",
+   "currentValue": "S.C. Code § 42-15-20(C): 'In the case of repetitive trauma, notice must be given by the employee within ninety days of the date the employee discovered, or could have discovered by exercising reasonable diligence, that his condition is compensable', unless reasonable excuse is shown and the employer is not unduly prejudiced.",
+   "sourceName": "S.C. Code § 42-15-20 (scstatehouse.gov, read 2026-10-02)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c015.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Add the repetitive-trauma trigger: 'within 90 days of when you discovered, or reasonably should have discovered, that your carpal tunnel is work-related and compensable (S.C. Code § 42-15-20(C)).'"
+  },
+  {
+   "surface": "body",
+   "claim": "This more generous timeline compared to Georgia provides additional time for workers with gradually developing conditions like CTS to recognize and report their symptoms.",
+   "verdict": "update",
+   "currentValue": "The extra protection for gradual conditions in South Carolina comes from § 42-15-20(C)'s discovery trigger, not only the longer 90-day window.",
+   "sourceName": "S.C. Code § 42-15-20(C)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c015.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'For repetitive trauma, the 90 days do not start until you knew or should have known the condition was compensable (S.C. Code § 42-15-20(C)).'"
+  },
+  {
+   "surface": "body",
+   "claim": "The statute of limitations for filing a workers' compensation claim in South Carolina is <strong>two years</strong> from the date of injury or the last date of exposure under <strong>S.C. Code § 42-15-40</strong>.",
+   "verdict": "update",
+   "currentValue": "S.C. Code § 42-15-40: 'For a \"repetitive trauma injury\" as defined in Section 42-1-172, the right to compensation is barred unless a claim is filed with the commission within two years after the employee knew or should have known that his injury is compensable but no more than seven years after the last date of injurious exposure.' The general rule is two years after an accident.",
+   "sourceName": "S.C. Code § 42-15-40 (scstatehouse.gov, read 2026-10-02)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c015.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'For carpal tunnel and other repetitive trauma injuries, you must file a claim (Form 50) with the Workers' Compensation Commission within two years after you knew or should have known the injury was compensable — and no later than seven years after your last injurious exposure at work (S.C. Code § 42-15-40).' 'Last date of exposure' as a start date is wrong — it is the 7-year outer limit. Comp deadline — never § 15-3-530."
+  },
+  {
+   "surface": "body",
+   "claim": "In South Carolina, the <strong>employer selects the treating physician</strong>.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "SC WCC Injured Worker FAQs; S.C. Code § 42-15-60",
+   "sourceUrl": "https://wcc.sc.gov/injured-worker-faqs",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "The injured worker may request a change of physician through the Workers' Compensation Commission if dissatisfied with the care.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 42-15-60(A) (attending physician 'unless otherwise ordered by the commission for good cause shown'; the commission 'may order a change in the medical or hospital service')",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c015.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate in substance; the standard is good cause."
+  },
+  {
+   "surface": "body",
+   "claim": "South Carolina's <strong>modified comparative fault</strong> system (barring recovery at 51% or more fault) applies to personal injury lawsuits but not to workers' compensation claims.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Nelson v. Concrete Supply Co., 303 S.C. 243 (1991) (facts-1782)",
+   "sourceUrl": "https://law.justia.com/cases/south-carolina/supreme-court/1991/23303-2.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate (plaintiff recovers if not more than 50% at fault). Like the Georgia note, irrelevant to a comp claim — optional deletion; if kept, add 'apart from intoxication or willful intent to injure (S.C. Code § 42-9-60)' to the no-fault sentence."
+  },
+  {
+   "surface": "body",
+   "claim": "Workers' compensation is no-fault in South Carolina as well.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 42-9-60 (facts-1684)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c009.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate; the only statutory bars are intoxication and wilful intent to injure or kill oneself or another, employer's burden."
+  },
+  {
+   "surface": "body",
+   "claim": "<tr><td>Claim filing deadline</td><td>1 year (O.C.G.A. § 34-9-82)</td><td>2 years (S.C. Code § 42-15-40)</td></tr>",
+   "verdict": "update",
+   "currentValue": "GA: 1 year from injury (gradual: usually when the condition forces you to stop work), extended to 1 year from last employer-paid treatment or 2 years from last income check (§ 34-9-82). SC repetitive trauma: 2 years from when you knew or should have known it was compensable, max 7 years from last exposure (§ 42-15-40).",
+   "sourceName": "O.C.G.A. § 34-9-82; S.C. Code § 42-15-40",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c015.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Cells: GA '1 year from injury, with extensions (O.C.G.A. § 34-9-82)'; SC '2 years from discovery, 7-year cap (S.C. Code § 42-15-40)'. Both are WC deadlines; correct class (not the tort SOL)."
+  },
+  {
+   "surface": "body",
+   "claim": "<tr><td>Injury reporting deadline</td><td>30 days (O.C.G.A. § 34-9-80)</td><td>90 days (S.C. Code § 42-15-20)</td></tr>",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-80; S.C. Code § 42-15-20",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c015.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. Optional SC cell '90 days from discovery (S.C. Code § 42-15-20(C))'."
+  },
+  {
+   "surface": "body",
+   "claim": "<tr><td>Physician selection</td><td>Worker chooses from employer panel</td><td>Employer selects physician</td></tr>",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "SBWC Law FAQs; SC WCC Injured Worker FAQs",
+   "sourceUrl": "https://wcc.sc.gov/injured-worker-faqs",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "<tr><td>Repetitive injury covered</td><td>Yes (occupational disease)</td><td>Yes (occupational disease)</td></tr>",
+   "verdict": "update",
+   "currentValue": "GA: yes, as a gradual 'injury' / fictional new accident (O.C.G.A. § 34-9-1(4); Central State Hosp. v. James). SC: yes, as a 'repetitive trauma injury' under S.C. Code § 42-1-172 (medical evidence required).",
+   "sourceName": "S.C. Code § 42-1-172; Donnelley v. Ogletree",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Cells: GA 'Yes (gradual injury)'; SC 'Yes (repetitive trauma, S.C. Code § 42-1-172)'."
+  },
+  {
+   "surface": "body",
+   "claim": "Because CTS can develop from non-work activities (such as hobbies, sports, or underlying medical conditions like diabetes or thyroid disorders), insurers frequently argue that the condition is not work-related.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "AAOS OrthoInfo (diabetes, rheumatoid arthritis, thyroid imbalance, pregnancy, heredity); MedlinePlus (knitting, gardening, golf)",
+   "sourceUrl": "https://www.orthoinfo.org/diseases--conditions/carpal-tunnel-syndrome/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "Nerve conduction studies (NCS) and electromyography (EMG) confirming the diagnosis",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "AAOS OrthoInfo (electrodiagnostic tests: NCS and EMG)",
+   "sourceUrl": "https://www.orthoinfo.org/diseases--conditions/carpal-tunnel-syndrome/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. AAOS notes they also measure severity."
+  },
+  {
+   "surface": "body",
+   "claim": "An opinion that the work activities caused, aggravated, or accelerated the condition",
+   "verdict": "update",
+   "currentValue": "SC requires the causal connection to be 'established by medical evidence' — expert opinion 'stated to a reasonable degree of medical certainty' — and a 'direct causal relationship between the condition under which the work is performed and the injury' (S.C. Code § 42-1-172(B)-(D)).",
+   "sourceName": "S.C. Code § 42-1-172",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Add: '— in South Carolina, stated to a reasonable degree of medical certainty (S.C. Code § 42-1-172)'."
+  },
+  {
+   "surface": "body",
+   "claim": "All reasonable and necessary medical treatment for your CTS, including doctor visits, diagnostic testing, physical therapy, medications, wrist splints, corticosteroid injections, and carpal tunnel release surgery if needed.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-200; S.C. Code § 42-15-60; SBWC provisions sheet",
+   "sourceUrl": "https://sbwc.georgia.gov/document/publication/provisionspdf/download",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate as to scope; no duration claimed. If one is added: Georgia up to 400 weeks from injury for non-catastrophic injuries (on/after 7/1/2013); South Carolina while the Commission finds treatment will lessen disability (§ 42-15-60). Authorized treatment only."
+  },
+  {
+   "surface": "body",
+   "claim": "typically <strong>two-thirds of your average weekly wage</strong> up to the state maximum in both Georgia and South Carolina.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "SBWC provisions sheet (revised 07/01/25); SC WCC Compensation Rates",
+   "sourceUrl": "https://wcc.sc.gov/claims/compensation-rates",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. Optional caps with dates: Georgia $800/week (injuries on/after July 1, 2023, O.C.G.A. § 34-9-261, up to 400 weeks); South Carolina $1,189.94/week (accidents on/after Jan. 1, 2026, up to 500 weeks)."
+  },
+  {
+   "surface": "body",
+   "claim": "If you can return to work in a limited capacity at reduced wages, you may receive partial disability benefits to make up a portion of the wage difference.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-262; S.C. Code § 42-9-20; SBWC provisions sheet",
+   "sourceUrl": "https://sbwc.georgia.gov/document/publication/provisionspdf/download",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate ('a portion'). Optional: two-thirds of the difference; Georgia max $533/week for up to 350 weeks; South Carolina up to the state max for up to 340 weeks."
+  },
+  {
+   "surface": "body",
+   "claim": "If you reach MMI with a permanent impairment rating, you are entitled to permanent partial disability benefits.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-263; S.C. Code §§ 42-1-172(E), 42-9-30",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. Note 'MMI' is used before it is defined on the page — spell out 'maximum medical improvement (MMI)'. Georgia: PPD is not payable while TTD/TPD is owed (§ 34-9-263(b)(2))."
+  },
+  {
+   "surface": "body",
+   "claim": "Both Georgia and South Carolina use scheduled loss provisions for hand and wrist impairments, with benefits calculated based on the impairment rating assigned by your treating physician.",
+   "verdict": "update",
+   "currentValue": "Georgia schedule: hand 160 weeks, arm 225 weeks, thumb 60 (SBWC provisions sheet; O.C.G.A. § 34-9-263), at two-thirds of AWW up to $800/week, using the physician's rating under the AMA Guides, 5th ed. South Carolina schedule: hand 185 weeks, arm 220 weeks, thumb 65 (S.C. Code § 42-9-30(1), (12), (13)), at 66 2/3% of AWW; the commissioner fixes the percentage of loss on all the evidence, of which the physician's rating is part. There is no separate 'wrist' member in either schedule; wrist/CTS impairment is rated to the hand or arm.",
+   "sourceName": "SBWC Summary of Workers' Compensation Provisions (revised 07/01/25); S.C. Code § 42-9-30 (scstatehouse.gov, read 2026-10-02)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c009.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'Both states pay permanent partial disability on a schedule — in Georgia, up to 160 weeks for the total loss of use of a hand and 225 weeks for an arm; in South Carolina, 185 weeks for a hand and 220 weeks for an arm — multiplied by the percentage of impairment (O.C.G.A. § 34-9-263; S.C. Code § 42-9-30).' Drop 'wrist' and 'assigned by your treating physician' (SC commissioner decides; GA rating may come from the ATP or an IME)."
+  },
+  {
+   "surface": "body",
+   "claim": "If your CTS prevents you from returning to your former job, you may be entitled to vocational rehabilitation services to help you transition to a new position.",
+   "verdict": "update",
+   "currentValue": "Georgia's act guarantees rehabilitation services only for catastrophic injuries (O.C.G.A. § 34-9-200.1; SBWC FAQ) — carpal tunnel will rarely qualify. South Carolina's Workers' Compensation Act has no vocational-rehabilitation benefit; the S.C. Vocational Rehabilitation Department offers retraining outside comp.",
+   "sourceName": "SBWC Law FAQs; O.C.G.A. § 34-9-200.1; facts-1682/1684",
+   "sourceUrl": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'Georgia's workers' comp system must provide vocational rehabilitation only for catastrophic injuries, and South Carolina's has no rehabilitation benefit — but both states' public vocational rehabilitation agencies offer retraining to workers who cannot return to their former jobs.' Links: https://gvs.georgia.gov/ ; https://www.scvrd.net/"
+  },
+  {
+   "surface": "body",
+   "claim": "This is particularly important for workers whose entire career has involved the type of repetitive hand work that caused the condition.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "General statement",
+   "sourceUrl": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs",
+   "retrievedAt": "2026-10-02",
+   "note": "No factual figure; keep subject to the rewrite above."
+  },
+  {
+   "surface": "body",
+   "claim": "However, even if a pre-existing condition existed, workers' compensation covers <a href=\"/practice-areas/personal-injury-lawyers/\">aggravation of pre-existing conditions</a> when work duties make it worse.",
+   "verdict": "update",
+   "currentValue": "Georgia covers aggravation of a pre-existing condition only so long as the aggravation continues to be a contributing proximate cause of the disability (O.C.G.A. § 34-9-1(4)). South Carolina: the employee must show by a preponderance, including medical evidence, that the work injury aggravated the pre-existing condition (S.C. Code § 42-9-35(A)).",
+   "sourceName": "O.C.G.A. § 34-9-1(4); S.C. Code § 42-9-35 (scstatehouse.gov, read 2026-10-02)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c009.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Soften 'covers' to 'can cover', add 'with medical evidence'. Also the anchor links 'aggravation of pre-existing conditions' to the personal-injury practice page — retarget to the workers' comp page or a pre-existing-conditions post (link fit, not a fact error)."
+  },
+  {
+   "surface": "body",
+   "claim": "This defense is often used because CTS develops gradually, and workers may not realize they should report it until symptoms become severe.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "O.C.G.A. § 34-9-80; S.C. Code § 42-15-20(C)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c015.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. Natural place to add the SC discovery rule and the Georgia exceptions."
+  },
+  {
+   "surface": "body",
+   "claim": "often by retaining their own <a href=\"/practice-areas/medical-malpractice-lawyers/\">medical experts</a> who disagree with the treating physician.",
+   "verdict": "update",
+   "currentValue": "Georgia: the employee has the right to one employer-paid examination by a physician of the employee's choosing if requested within 120 days of receiving income benefits (O.C.G.A. § 34-9-202(e)). The 'medical experts' anchor points to the medical-malpractice practice page, which is unrelated.",
+   "sourceName": "O.C.G.A. § 34-9-202(e) (facts-1682)",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-6/part-1/section-34-9-202/",
+   "retrievedAt": "2026-10-02",
+   "note": "Retarget or unlink 'medical experts'. Optional add: 'In Georgia you can get one insurer-paid exam by a doctor you choose if you ask within 120 days of your first income check (O.C.G.A. § 34-9-202(e)).' Do not apply the 120-day rule to SC."
+  },
+  {
+   "surface": "body",
+   "claim": "This procedure involves cutting the ligament that forms the roof of the carpal tunnel to relieve pressure on the median nerve.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "AAOS OrthoInfo (dividing the transverse carpal ligament, 'the roof of the carpal tunnel')",
+   "sourceUrl": "https://www.orthoinfo.org/diseases--conditions/carpal-tunnel-syndrome/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "<strong>Open release surgery</strong> — A larger incision in the palm to directly visualize and cut the ligament",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "AAOS OrthoInfo ('makes a small incision in the palm')",
+   "sourceUrl": "https://www.orthoinfo.org/diseases--conditions/carpal-tunnel-syndrome/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate relative to endoscopic; optional 'A small incision in the palm'."
+  },
+  {
+   "surface": "body",
+   "claim": "<strong>Endoscopic release surgery</strong> — One or two smaller incisions with a camera-guided procedure",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "AAOS OrthoInfo ('one or two smaller skin incisions (called portals) and uses a miniature camera')",
+   "sourceUrl": "https://www.orthoinfo.org/diseases--conditions/carpal-tunnel-syndrome/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "Recovery from carpal tunnel surgery typically takes <strong>several weeks to several months</strong>.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "AAOS OrthoInfo; MedlinePlus ('Recovery may take months')",
+   "sourceUrl": "https://www.orthoinfo.org/diseases--conditions/carpal-tunnel-syndrome/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "Workers usually cannot return to full duty for 4-6 weeks after surgery, and those who must perform repetitive hand work may require even longer before reaching maximum recovery.",
+   "verdict": "update",
+   "currentValue": "No authoritative source located for a 4-6 week full-duty figure. AAOS: grip and pinch strength 'usually return by about 2 to 3 months after surgery'; if the nerve was in poor condition, not for 6 to 12 months; light activities, driving and light gripping 'may be permitted soon after surgery'; return-to-work timing and restrictions are set by the surgeon. MedlinePlus: splint about a week, then hand therapy; recovery length depends on how long symptoms lasted and nerve damage.",
+   "sourceName": "AAOS OrthoInfo — Carpal Tunnel Syndrome (Recovery From Surgery); MedlinePlus 002976",
+   "sourceUrl": "https://www.orthoinfo.org/diseases--conditions/carpal-tunnel-syndrome/",
+   "retrievedAt": "2026-10-02",
+   "note": "Replace the 4-6 week figure: 'Your surgeon decides when you can return to work and with what restrictions; grip and pinch strength usually return in about 2 to 3 months, but can take 6 to 12 months if the nerve was badly compressed — longer for workers whose jobs demand forceful, repetitive hand use.'"
+  },
+  {
+   "surface": "body",
+   "claim": "After surgery, some workers may have permanent restrictions that prevent them from returning to their previous job. In these cases, the worker may be entitled to permanent disability benefits and vocational rehabilitation services to transition to a position that does not aggravate the condition.",
+   "verdict": "update",
+   "currentValue": "Permanent disability: PPD on the hand/arm schedule (GA § 34-9-263; SC § 42-9-30). Vocational rehabilitation is a Georgia comp benefit only in catastrophic cases (§ 34-9-200.1) and not a South Carolina comp benefit.",
+   "sourceName": "O.C.G.A. §§ 34-9-200.1, 34-9-263; S.C. Code § 42-9-30; facts-1682",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c009.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Change 'and vocational rehabilitation services' to 'and help from the state's vocational rehabilitation agency'."
+  },
+  {
+   "surface": "body",
+   "claim": "Representing you at hearings before the State Board (Georgia) or Workers' Compensation Commission (South Carolina)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "SBWC Law FAQs; SC WCC Injured Worker FAQs",
+   "sourceUrl": "https://wcc.sc.gov/injured-worker-faqs",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "Pursuing vocational rehabilitation services if your CTS prevents you from returning to your former occupation",
+   "verdict": "update",
+   "currentValue": "As above: not a comp benefit in SC; GA only catastrophic.",
+   "sourceName": "SBWC Law FAQs; O.C.G.A. § 34-9-200.1",
+   "sourceUrl": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs",
+   "retrievedAt": "2026-10-02",
+   "note": "Change to 'Connecting you with vocational rehabilitation resources if your CTS keeps you from your former occupation'."
+  },
+  {
+   "surface": "body",
+   "claim": "on a <strong>contingency fee basis</strong> — you pay nothing unless we recover benefits for you.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Firm statement (client.json / site standard)",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "Firm practice claim; not externally verifiable. Keep as is."
+  },
+  {
+   "surface": "body",
+   "claim": "call <a href=\"tel:+18447378587\"><strong>1-844-RESULTS</strong></a>",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "client.json (firm phone)",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "1-844-RESULTS = 1-844-737-8587 matches the tel: link."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Carpal tunnel syndrome qualifies for workers' compensation in both Georgia and South Carolina as an occupational disease.",
+   "verdict": "update",
+   "currentValue": "SC: compensable as a 'repetitive trauma injury' only under S.C. Code § 42-1-172; GA: a gradual 'injury' with a fictional-new-accident date (O.C.G.A. § 34-9-1(4); Central State Hosp. v. James).",
+   "sourceName": "S.C. Code § 42-1-172; Donnelley v. Ogletree",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'Carpal tunnel syndrome can qualify for workers' compensation in both Georgia and South Carolina as a repetitive work injury — South Carolina requires medical evidence of the work link (S.C. Code § 42-1-172).' Renders above the article."
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Georgia requires reporting within 30 days (O.C.G.A. § 34-9-80) and filing within one year (O.C.G.A. § 34-9-82).",
+   "verdict": "update",
+   "currentValue": "O.C.G.A. § 34-9-82(a): a claim must be filed with the State Board within one year after injury; if the employer furnished remedial treatment, within one year after the last remedial treatment furnished by the employer; if weekly income benefits were paid, within two years after the last payment (quoted in Donnelley v. Ogletree n.2; SBWC provisions sheet '1 or 2 yrs').",
+   "sourceName": "O.C.G.A. §§ 34-9-80, 34-9-82",
+   "sourceUrl": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-3/part-1/section-34-9-82/",
+   "retrievedAt": "2026-10-02",
+   "note": "Correct WC deadlines but add the extension: '...and filing within one year of the injury, with extensions after employer-paid treatment or income benefits (O.C.G.A. § 34-9-82).'"
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "South Carolina allows 90 days for reporting (S.C. Code § 42-15-20) and two years for filing (S.C. Code § 42-15-40).",
+   "verdict": "update",
+   "currentValue": "For repetitive trauma both clocks start at discovery: notice within 90 days of when the employee discovered or could have discovered the condition is compensable (§ 42-15-20(C)); claim within two years after the employee knew or should have known it is compensable, max seven years after last injurious exposure (§ 42-15-40).",
+   "sourceName": "S.C. Code §§ 42-15-20, 42-15-40",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c015.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'South Carolina allows 90 days to report and two years to file, both measured from when you knew or should have known your carpal tunnel was work-related and compensable — with a seven-year outer limit (S.C. Code §§ 42-15-20, 42-15-40).'"
+  },
+  {
+   "surface": "keyTakeaways",
+   "claim": "Workers' comp is no-fault — pre-existing conditions and employee actions do not bar claims.",
+   "verdict": "update",
+   "currentValue": "Pre-existing conditions: aggravation is compensable if work is a contributing proximate cause (GA § 34-9-1(4)) / proven by preponderance with medical evidence (SC § 42-9-35). Employee actions: willful misconduct, refusal of required safety appliance, intoxication bar GA claims (§ 34-9-17); intoxication or wilful intent to injure bar SC claims (§ 42-9-60).",
+   "sourceName": "O.C.G.A. §§ 34-9-1(4), 34-9-17; S.C. Code §§ 42-9-35, 42-9-60",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c009.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'Workers' comp is no-fault — carelessness does not bar a claim, and work that aggravates a pre-existing condition can still be covered.'"
+  },
+  {
+   "surface": "excerpt",
+   "claim": "Carpal tunnel can qualify as an occupational disease in Georgia and South Carolina.",
+   "verdict": "update",
+   "currentValue": "Repetitive trauma injury (SC § 42-1-172); gradual injury (GA).",
+   "sourceName": "S.C. Code § 42-1-172",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'Carpal tunnel can qualify for workers' comp in Georgia and South Carolina as a repetitive work injury.' Published as the Article schema description."
+  },
+  {
+   "surface": "excerpt",
+   "claim": "How to prove it is work-related, and when to report it.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Post content",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "No factual claim."
+  },
+  {
+   "surface": "faqs",
+   "claim": "Both Georgia and South Carolina cover carpal tunnel syndrome as an occupational disease under their workers' compensation systems when the condition arises out of and in the course of employment.",
+   "verdict": "update",
+   "currentValue": "SC: repetitive trauma injury under § 42-1-172 (medical evidence, preponderance); GA: gradual injury under § 34-9-1(4).",
+   "sourceName": "S.C. Code § 42-1-172; O.C.G.A. § 34-9-1(4)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Replace 'as an occupational disease' with 'as a repetitive work injury'; add 'South Carolina requires a doctor's opinion, to a reasonable degree of medical certainty, linking it to your job (S.C. Code § 42-1-172).' FAQPage structured data."
+  },
+  {
+   "surface": "faqs",
+   "claim": "You must establish a causal connection between your work duties and the development of CTS.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 42-1-172(B); O.C.G.A. § 34-9-1(4)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate."
+  },
+  {
+   "surface": "faqs",
+   "claim": "You need medical evidence from a doctor linking your CTS to your work duties, documentation of the repetitive hand and wrist movements your job requires, nerve conduction studies confirming the diagnosis, and a timeline showing your symptoms developed during the period of repetitive work.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "S.C. Code § 42-1-172(B)-(D); AAOS OrthoInfo (NCS/EMG)",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c001.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate. Optional: 'In South Carolina the doctor's opinion must be to a reasonable degree of medical certainty.'"
+  },
+  {
+   "surface": "faqs",
+   "claim": "In Georgia, you must report within 30 days under O.C.G.A. § 34-9-80, typically starting from when you knew or should have known the condition was work-related.",
+   "verdict": "update",
+   "currentValue": "Georgia's § 34-9-80 runs from the accident; for gradual injuries the fictional-new-accident date is generally when the disability manifests (often when the worker is forced to stop working) (Central State Hosp. v. James; Donnelley v. Ogletree). The knew-or-should-have-known trigger is South Carolina's (§ 42-15-20(C)).",
+   "sourceName": "O.C.G.A. § 34-9-80; Donnelley v. Ogletree",
+   "sourceUrl": "https://www.courtlistener.com/opinion/7927240/donnelley-v-ogletree/",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: 'In Georgia, you must report within 30 days of the injury (O.C.G.A. § 34-9-80); for carpal tunnel that builds up over time, report as soon as you suspect your job is the cause rather than waiting for a diagnosis.' FAQPage structured data."
+  },
+  {
+   "surface": "faqs",
+   "claim": "In South Carolina, the reporting deadline is 90 days under S.C. Code § 42-15-20.",
+   "verdict": "update",
+   "currentValue": "Repetitive trauma: 90 days from when the employee discovered or reasonably could have discovered the condition is compensable (§ 42-15-20(C)).",
+   "sourceName": "S.C. Code § 42-15-20",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c015.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Append: 'measured from when you knew or should have known your condition was work-related and compensable.'"
+  },
+  {
+   "surface": "faqs",
+   "claim": "Benefits include full medical treatment (doctor visits, therapy, surgery), temporary total or partial disability wage replacement (typically two-thirds of your average weekly wage), permanent partial disability compensation if you have lasting impairment, and vocational rehabilitation if you cannot return to your former job.",
+   "verdict": "update",
+   "currentValue": "Vocational rehabilitation: GA comp benefit only for catastrophic injuries (§ 34-9-200.1); not a SC comp benefit. TPD is two-thirds of the wage difference, not two-thirds of AWW. Caps: GA $800 TTD / $533 TPD (injuries on/after 7/1/2023); SC $1,189.94 (accidents on/after 1/1/2026).",
+   "sourceName": "SBWC Law FAQs; SBWC provisions sheet; SC WCC Compensation Rates; facts-1682",
+   "sourceUrl": "https://sbwc.georgia.gov/document/publication/provisionspdf/download",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite: '...temporary total disability (two-thirds of your average weekly wage, up to $800 a week in Georgia and $1,189.94 in South Carolina for 2026 injuries) or partial disability (two-thirds of the wage difference), and permanent partial disability compensation if you have lasting impairment.' Drop vocational rehabilitation or limit it to Georgia catastrophic cases."
+  },
+  {
+   "surface": "faqs",
+   "claim": "If your work duties aggravated, accelerated, or worsened a pre-existing carpal tunnel condition, you are still entitled to workers' compensation benefits in both Georgia and South Carolina.",
+   "verdict": "update",
+   "currentValue": "GA: compensable only while the work aggravation remains a contributing proximate cause of the disability (O.C.G.A. § 34-9-1(4)). SC: the employee must prove the aggravation by a preponderance including medical evidence (S.C. Code § 42-9-35(A)).",
+   "sourceName": "O.C.G.A. § 34-9-1(4); S.C. Code § 42-9-35",
+   "sourceUrl": "https://www.scstatehouse.gov/code/t42c009.php",
+   "retrievedAt": "2026-10-02",
+   "note": "Change 'you are still entitled' to 'you may still be entitled ... if a doctor connects the worsening to your job'. FAQPage structured data."
+  },
+  {
+   "surface": "faqs",
+   "claim": "Recovery from carpal tunnel surgery typically takes several weeks to several months.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "AAOS OrthoInfo; MedlinePlus",
+   "sourceUrl": "https://www.orthoinfo.org/diseases--conditions/carpal-tunnel-syndrome/",
+   "retrievedAt": "2026-10-02",
+   "note": "Accurate."
+  },
+  {
+   "surface": "faqs",
+   "claim": "Most workers cannot return to full duty for 4-6 weeks after surgery, and those with physically demanding jobs requiring repetitive hand work may need even longer.",
+   "verdict": "update",
+   "currentValue": "No authoritative source for the 4-6 week figure. AAOS: grip and pinch strength usually return in about 2-3 months; 6-12 months if the nerve was in poor condition; surgeon sets return-to-work timing.",
+   "sourceName": "AAOS OrthoInfo — Carpal Tunnel Syndrome",
+   "sourceUrl": "https://www.orthoinfo.org/diseases--conditions/carpal-tunnel-syndrome/",
+   "retrievedAt": "2026-10-02",
+   "note": "Rewrite to match the body fix: 'Your surgeon sets your return-to-work date; grip strength usually returns in about 2 to 3 months, longer if the nerve was badly compressed.' FAQPage structured data."
+  },
+  {
+   "surface": "faqs",
+   "claim": "Workers' compensation covers all medical expenses and provides disability benefits during recovery.",
+   "verdict": "update",
+   "currentValue": "Covers authorized, reasonable and necessary treatment (GA up to 400 weeks unless catastrophic, § 34-9-200; SC while the Commission finds it will lessen disability, § 42-15-60); TTD in GA after a 7-day waiting period (recoverable after 21 consecutive days, SBWC provisions sheet).",
+   "sourceName": "O.C.G.A. § 34-9-200; S.C. Code § 42-15-60; SBWC provisions sheet",
+   "sourceUrl": "https://sbwc.georgia.gov/document/publication/provisionspdf/download",
+   "retrievedAt": "2026-10-02",
+   "note": "Change 'all medical expenses' to 'authorized medical treatment'."
+  }
+ ],
+ "recommendedEdits": [
+  "MOST IMPORTANT — classification (body intro to 'Carpal Tunnel as a Workplace Injury', GA and SC section leads, table row 'Repetitive injury covered', Key Takeaways sentence 1, excerpt, FAQ 1): stop calling carpal tunnel an 'occupational disease'. South Carolina treats it as a 'repetitive trauma injury' decided 'only under' S.C. Code § 42-1-172, which requires medical evidence to a reasonable degree of medical certainty; Georgia treats it as a gradual work injury (O.C.G.A. § 34-9-1(4); fictional-new-accident rule).",
+  "SC deadlines (body Reporting/Filing paragraphs, table, KT, FAQ 3): for repetitive trauma, notice is 90 days from when the worker discovered or should have discovered the condition is compensable (§ 42-15-20(C)); the claim is due two years after the worker knew or should have known it was compensable, no more than seven years after last injurious exposure (§ 42-15-40). 'Two years from ... the last date of exposure' is wrong.",
+  "GA filing deadline (body 'Filing Deadline'): replace the 'last date of exposure / became aware' wording (that is the occupational-disease rule, § 34-9-281) with § 34-9-82: one year from injury — for gradual CTS usually when the condition forces the worker to stop working — or one year from last employer-furnished treatment, or two years from last weekly benefit. Also KT sentence 2.",
+  "GA notice (body Reporting Requirements, FAQ 3): remove the knew-or-should-have-known trigger (that is SC's rule); say report promptly, note § 34-9-80's exceptions (employer knowledge, reasonable excuse without prejudice).",
+  "Comparative fault notes: delete the O.C.G.A. § 51-12-33 sentence (tort rule, irrelevant to comp) or move it to a third-party-claim context; replace 'your own actions do not bar your claim' with the § 34-9-17 exceptions (willful misconduct, safety-appliance refusal, intoxication). KT sentence 4 likewise.",
+  "PPD paragraph: give the schedules — GA hand 160 / arm 225 weeks (O.C.G.A. § 34-9-263; SBWC); SC hand 185 / arm 220 weeks (S.C. Code § 42-9-30); drop 'wrist' and 'assigned by your treating physician'.",
+  "Vocational rehabilitation (body Benefits, Surgery para 3, lawyer list, FAQ 4): GA comp benefit only for catastrophic injuries (§ 34-9-200.1); none under SC's act — point to GVRA / SCVRD instead.",
+  "Surgery recovery (body + FAQ 6): drop the unsourced '4-6 weeks' full-duty figure; use AAOS (grip/pinch strength ~2-3 months; 6-12 months if nerve badly compressed; surgeon sets return to work).",
+  "BLS sentence: replace with the 2021-2022 figures — CTS median 45 days away from work vs. 36 for fractures and 10 for all cases (BLS SOII Table R67).",
+  "Medical accuracy: median nerve = feeling to thumb, index, middle and half the ring finger (not 'first three fingers'); qualify the office/keyboard risk bullet (NIH MedlinePlus: not proven that typing causes CTS); drop 'affecting millions of workers'.",
+  "Aggravation (body defenses bullet, FAQ 5, KT): 'can' / 'may' be covered with medical proof — GA contributing-proximate-cause limit (§ 34-9-1(4)); SC § 42-9-35 preponderance with medical evidence.",
+  "Optional: add GA employee IME right within 120 days of first income check (§ 34-9-202(e)); add TTD caps with dates (GA $800, injuries on/after 7/1/2023; SC $1,189.94, accidents on/after 1/1/2026). Retaliation is not mentioned on the page — if added, South Carolina only (S.C. Code § 41-1-80); Georgia has none.",
+  "Link fit (not fact): 'aggravation of pre-existing conditions' links to the personal-injury practice page and 'medical experts' to the medical-malpractice page — retarget or unlink. Rename 'Cornell Law Institute' to Cornell Law School's Legal Information Institute."
+ ],
+ "statuteCitations": [
+  {
+   "section": "O.C.G.A. § 34-9-1(4)",
+   "name": "'Injury' — arising out of and in the course of employment; aggravation while a contributing proximate cause",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-1/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-17",
+   "name": "Grounds for denial — willful misconduct, safety appliance, intoxication/drugs",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-1/section-34-9-17/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-80",
+   "name": "Notice to employer — 30 days after the accident, with exceptions",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-3/part-1/section-34-9-80/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-82",
+   "name": "Claim filing — one year from injury; one year from last employer-furnished treatment; two years from last weekly benefit",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-3/part-1/section-34-9-82/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-202(e)",
+   "name": "Employee's one employer-paid examination within 120 days of income benefits",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-6/part-1/section-34-9-202/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-263",
+   "name": "PPD schedule — hand 160 weeks, arm 225 weeks (SBWC provisions sheet); AMA Guides 5th ed.",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-7/section-34-9-263/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-280",
+   "name": "Occupational disease — five elements incl. not an ordinary disease of life",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-8/part-1/section-34-9-280/"
+  },
+  {
+   "section": "O.C.G.A. § 34-9-281",
+   "name": "Occupational disease claim — one year after knew/should have known; seven-year cap (the rule the post wrongly attributes to § 34-9-82)",
+   "url": "https://law.justia.com/codes/georgia/title-34/chapter-9/article-8/part-1/section-34-9-281/"
+  },
+  {
+   "section": "O.C.G.A. § 51-12-33",
+   "name": "Tort apportionment; no recovery at 50% or more fault — third-party suits only, not comp",
+   "url": "https://law.justia.com/codes/georgia/title-51/chapter-12/article-2/section-51-12-33/"
+  },
+  {
+   "section": "S.C. Code § 42-1-172",
+   "name": "Repetitive trauma injury — compensability only under this section; preponderance; medical evidence to a reasonable degree of medical certainty",
+   "url": "https://www.scstatehouse.gov/code/t42c001.php"
+  },
+  {
+   "section": "S.C. Code § 42-15-20(C)",
+   "name": "Repetitive trauma notice — 90 days from discovery that the condition is compensable",
+   "url": "https://www.scstatehouse.gov/code/t42c015.php"
+  },
+  {
+   "section": "S.C. Code § 42-15-40",
+   "name": "Repetitive trauma claim — two years after knew/should have known compensable; seven years after last injurious exposure",
+   "url": "https://www.scstatehouse.gov/code/t42c015.php"
+  },
+  {
+   "section": "S.C. Code § 42-15-60",
+   "name": "Medical treatment; employer's physician; commission may order change",
+   "url": "https://www.scstatehouse.gov/code/t42c015.php"
+  },
+  {
+   "section": "S.C. Code § 42-9-30",
+   "name": "Schedule — hand 185 weeks, arm 220 weeks, thumb 65 weeks",
+   "url": "https://www.scstatehouse.gov/code/t42c009.php"
+  },
+  {
+   "section": "S.C. Code § 42-9-35",
+   "name": "Pre-existing condition — aggravation proven by preponderance incl. medical evidence",
+   "url": "https://www.scstatehouse.gov/code/t42c009.php"
+  },
+  {
+   "section": "S.C. Code § 42-9-60",
+   "name": "Bars — intoxication, wilful intent to injure",
+   "url": "https://www.scstatehouse.gov/code/t42c009.php"
+  },
+  {
+   "section": "S.C. Code § 42-11-10",
+   "name": "Occupational disease definition (separate route; excludes chronic disease of the skeletal joints)",
+   "url": "https://www.scstatehouse.gov/code/t42c011.php"
+  },
+  {
+   "section": "S.C. Code § 41-1-80",
+   "name": "Retaliatory discharge for filing comp claim — SC only (not on page; for reference)",
+   "url": "https://www.scstatehouse.gov/code/t41c001.php"
+  }
+ ],
+ "authoritativeLinks": [
+  {
+   "name": "Donnelley v. Ogletree, 312 Ga. App. 475 (2011) — quotes Central State Hosp. v. James, 147 Ga. App. 308 (1978) fictional-new-accident rule; § 34-9-82(a) text in n.2; carpal tunnel claimant",
+   "url": "https://www.courtlistener.com/opinion/7927240/donnelley-v-ogletree/"
+  },
+  {
+   "name": "Shaw Industries, Inc. v. Scott, 310 Ga. App. 750 (2011) — new accident vs. change in condition",
+   "url": "https://www.courtlistener.com/opinion/2500934/shaw-industries-inc-v-scott/"
+  },
+  {
+   "name": "SBWC — Summary of Workers' Compensation Provisions (revised 07/01/25; hand 160, arm 225 weeks; $800/$533)",
+   "url": "https://sbwc.georgia.gov/document/publication/provisionspdf/download"
+  },
+  {
+   "name": "SBWC — Workers' Compensation Law FAQs",
+   "url": "https://sbwc.georgia.gov/frequently-asked-questions/workers-compensation-law-faqs"
+  },
+  {
+   "name": "S.C. Code Title 42 Chapter 1 (§ 42-1-172 repetitive trauma)",
+   "url": "https://www.scstatehouse.gov/code/t42c001.php"
+  },
+  {
+   "name": "S.C. Code Title 42 Chapter 15 (§§ 42-15-20, 42-15-40, 42-15-60)",
+   "url": "https://www.scstatehouse.gov/code/t42c015.php"
+  },
+  {
+   "name": "S.C. Code Title 42 Chapter 9 (§§ 42-9-30, 42-9-35, 42-9-60)",
+   "url": "https://www.scstatehouse.gov/code/t42c009.php"
+  },
+  {
+   "name": "SC WCC — Compensation Rates ($1,189.94 for accidents on/after Jan. 1, 2026)",
+   "url": "https://wcc.sc.gov/claims/compensation-rates"
+  },
+  {
+   "name": "SC WCC — Injured Worker FAQs",
+   "url": "https://wcc.sc.gov/injured-worker-faqs"
+  },
+  {
+   "name": "AAOS OrthoInfo — Carpal Tunnel Syndrome (anatomy, symptoms, risk factors, NCS/EMG, surgery and recovery)",
+   "url": "https://www.orthoinfo.org/diseases--conditions/carpal-tunnel-syndrome/"
+  },
+  {
+   "name": "NIH MedlinePlus — Carpal Tunnel Syndrome (typing link unproven)",
+   "url": "https://medlineplus.gov/carpaltunnelsyndrome.html"
+  },
+  {
+   "name": "MedlinePlus Medical Encyclopedia — Carpal tunnel syndrome (000433)",
+   "url": "https://medlineplus.gov/ency/article/000433.htm"
+  },
+  {
+   "name": "MedlinePlus Medical Encyclopedia — Carpal tunnel release (002976)",
+   "url": "https://medlineplus.gov/ency/article/002976.htm"
+  },
+  {
+   "name": "BLS SOII Table R67, 2021-2022 — CTS median 45 days away vs. fractures 36, all 10",
+   "url": "https://www.bls.gov/iif/nonfatal-injuries-and-illnesses-tables/case-and-demographic-characteristics-table-r67-2021-2022.xlsx"
+  },
+  {
+   "name": "Cornell LII — Wex: workers' compensation",
+   "url": "https://www.law.cornell.edu/wex/workers_compensation"
+  },
+  {
+   "name": "Georgia Vocational Rehabilitation Agency",
+   "url": "https://gvs.georgia.gov/"
+  },
+  {
+   "name": "South Carolina Vocational Rehabilitation Department",
+   "url": "https://www.scvrd.net/"
+  }
+ ],
+ "quoteNote": "Claims are quoted verbatim from body.html (raw HTML, including inline <strong>/<a>/<li>/<tr><td> tags where they occur) or from the meta.json fields (keyTakeaways, excerpt, faqs answers). Two-state post: reviewer must be Graeham C. Gillin. Sourcing: SC statutes read on scstatehouse.gov 2026-10-02; SBWC provisions PDF read 2026-10-02; Georgia Justia URLs (bot-challenged / not readable in Chrome, never solved) reused from sibling packs facts-1682/1684/1782; § 34-9-280/-281 text via search only. Donnelley v. Ogletree and Mayor & Aldermen of Savannah v. Stevens read in Chrome on CourtListener (curl gets a 202 challenge page). Stevens, 278 Ga. 166 (2004), is a commuting/arising-out-of case and does NOT state the gradual-injury date rule — do not cite it for that. ninds.nih.gov returns 403 to curl and is not readable in Chrome; medical facts sourced to AAOS OrthoInfo (orthoinfo.aaos.org 301-redirects to www.orthoinfo.org) and NIH MedlinePlus. BLS Table R67 xlsx downloaded and parsed. Spam pages found by search describing 2025-2026 Georgia 'Smith v. ABC Corp.' / 'Smith v. XYZ Corp.' carpal-tunnel rulings are uncorroborated and were rejected. URL check 2026-10-02: scstatehouse.gov, sbwc.georgia.gov, wcc.sc.gov, medlineplus.gov, law.cornell.edu, gvs.georgia.gov, scvrd.net return 200 to curl -sIL; www.orthoinfo.org returns 200 to GET but HEAD times out; the bls.gov xlsx returns 403 to a generic browser UA and downloads (200) only with a contact User-Agent. Shaw Indus. v. Scott was read from a search excerpt of the opinion, not in full."
+}

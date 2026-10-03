@@ -1,0 +1,14 @@
+{
+ "url": "https://rodenlaw.com/blog/contingency-fee-system/",
+ "reviewed": "2026-10-02",
+ "attorney": "3732",
+ "modified": "2026-10-02 12:00:00",
+ "fields": {
+  "content": true,
+  "excerpt": true,
+  "keyTakeaways": true,
+  "metaDescription": true,
+  "faqs": true
+ },
+ "liveCheck": "Chrome 2026-10-02 with ?nc=: new text present, removed claims absent, FAQPage JSON-LD parses, dateModified 2026-10-02"
+}

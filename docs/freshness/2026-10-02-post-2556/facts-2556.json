@@ -1,0 +1,433 @@
+{
+ "postId": 2556,
+ "slug": "blunt-force-trauma-from-a-crash-what-you-need-to-know",
+ "liveUrl": "https://rodenlaw.com/blog/blunt-force-trauma-from-a-crash-what-you-need-to-know/",
+ "jurisdiction": "GA",
+ "researchedAt": "2026-10-02",
+ "verifiedClaims": [
+  {
+   "surface": "body",
+   "claim": "Blunt force trauma injuries are among the most dangerous.",
+   "verdict": "update",
+   "currentValue": "StatPearls: blunt trauma is the more common cause of traumatic injury and may be life-threatening; chest injuries account for roughly 25% of trauma-related deaths (EMS Chest Injury, NBK539743). No source ranks blunt trauma as a class \"among the most dangerous\" injuries; the defensible point is that serious internal damage can occur without visible wounds.",
+   "sourceName": "StatPearls — Thoracic Trauma (NCBI Bookshelf)",
+   "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK482194/",
+   "retrievedAt": "2026-10-02",
+   "note": "Unqualified superlative. Replace with: 'Blunt force trauma can cause serious internal injuries that are not visible from the outside.'"
+  },
+  {
+   "surface": "body",
+   "claim": "While initially there may not be any symptoms, these injuries are tricky. They can quickly escalate and become life-threatening without immediate medical attention.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "StatPearls — Splenic Trauma (NCBI Bookshelf)",
+   "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK430920/",
+   "retrievedAt": "2026-10-02",
+   "note": "Supported: delayed splenic rupture 'may occur up to 10 days following an injury' (StatPearls Splenic Trauma); pulmonary contusion 'may be silent' at initial evaluation (StatPearls Thoracic Trauma); mild TBI symptoms 'may not appear for hours or days' (CDC); internal bleeding 'can very quickly become life threatening' (MedlinePlus Bleeding). Optional tightening: 'may not cause obvious symptoms at first'."
+  },
+  {
+   "surface": "body",
+   "claim": "Contact our law offices 24/7 for a ZERO COST case review. If we represent you, there are also no upfront costs to pay.",
+   "verdict": "update",
+   "currentValue": "Fees and costs apply only upon successful recovery. No fees or costs with no recovery.",
+   "sourceName": "Firm-confirmed fee wording (owner, 2026-10-02)",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "'No upfront costs' is not the confirmed wording and is silent on whether costs are owed without a recovery. Keep 'free case review'; replace the second sentence with the confirmed line. The 24/7 availability claim is not verified here (firm-facts)."
+  },
+  {
+   "surface": "body",
+   "claim": "Blunt force trauma injuries are those caused by a sudden impact or collision with an object that does not penetrate the skin.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "StatPearls — Physiology, Trauma (NCBI Bookshelf)",
+   "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK538478/",
+   "retrievedAt": "2026-10-02",
+   "note": "StatPearls: blunt trauma is 'a force striking the body'; MedlinePlus TBI distinguishes closed (blow, bump, jolt) from penetrating injury. Accurate."
+  },
+  {
+   "surface": "body",
+   "claim": "The more severe damage, however, often lies beneath the surface. Blunt force trauma can damage your bones, muscles, organs and internal systems.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "StatPearls — Blunt Abdominal Trauma (NCBI Bookshelf)",
+   "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK431087/",
+   "retrievedAt": "2026-10-02",
+   "note": "StatPearls: blunt abdominal trauma 'can cause damage to the internal organs, resulting in internal bleeding, contusions, or injuries to the bowel, spleen, liver'; MedlinePlus: bruises can affect skin, muscle and bone."
+  },
+  {
+   "surface": "body",
+   "claim": "Blunt force trauma injuries typically occur during car crashes when a vehicle stops abruptly or is struck by another vehicle.",
+   "verdict": "update",
+   "currentValue": "StatPearls: 'The chief cause of blunt abdominal trauma in the United States is motor vehicle accidents'; Physiology, Trauma: the most common cause of blunt trauma in adults is the abdomen after motor vehicle accidents. Falls, assaults and crush injuries are other causes.",
+   "sourceName": "StatPearls — Blunt Abdominal Trauma (NCBI Bookshelf)",
+   "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK431087/",
+   "retrievedAt": "2026-10-02",
+   "note": "'Typically occur during car crashes' reads as a universal claim. Write: 'In a car crash, blunt force trauma typically occurs when ...' (the sentence is about crashes)."
+  },
+  {
+   "surface": "body",
+   "claim": "Even the deployment of airbags, while lifesaving, could cause blunt force injuries. This potential result is due to the speed and force at which they inflate.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "NHTSA — Vehicle Air Bags and Injury Prevention (confirmed in browser)",
+   "sourceUrl": "https://www.nhtsa.gov/vehicle-safety/air-bags",
+   "retrievedAt": "2026-10-02",
+   "note": "NHTSA: air bags inflate in 'less than 1/20th of a second' and 'serious or sometimes fatal injuries can occur if the driver or passenger is too close to – or comes in direct contact with – the air bag when it first begins to deploy.' Frontal air bags saved more than 50,000 lives over 30 years. Optional: add 'especially when an occupant is seated too close to the air bag'."
+  },
+  {
+   "surface": "body",
+   "claim": "Cyclists or pedestrians struck by vehicles may also suffer blunt force trauma from the impact.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "StatPearls — Physiology, Trauma (NCBI Bookshelf)",
+   "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK538478/",
+   "retrievedAt": "2026-10-02",
+   "note": "General mechanism statement; blunt trauma is any force striking the body. Quote spans an inline <a>."
+  },
+  {
+   "surface": "body",
+   "claim": "Contusions (Bruises): Blood vessels break under the skin, causing discoloration and pain.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "MedlinePlus — Bruises",
+   "sourceUrl": "https://medlineplus.gov/bruises.html",
+   "retrievedAt": "2026-10-02",
+   "note": "MedlinePlus: a bruise 'happens when an injury crushes small blood vessels but does not break the skin. Those vessels break open and leak blood under the skin. Bruises are often painful and swollen.' Spans <strong>."
+  },
+  {
+   "surface": "body",
+   "claim": "Fractures: Bones can break or crack under the force of impact, leading to significant pain and potential complications.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "StatPearls — Rib Fracture (NCBI Bookshelf)",
+   "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK541020/",
+   "retrievedAt": "2026-10-02",
+   "note": "StatPearls Rib Fracture: rib fractures from blunt trauma can signal injury to lungs, heart, kidney, spleen and liver; flail chest is the most severe complication. Spans <strong>."
+  },
+  {
+   "surface": "body",
+   "claim": "Internal Bleeding: Damage to internal organs and blood vessels can lead to dangerous internal bleeding.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "MedlinePlus Medical Encyclopedia — Bleeding",
+   "sourceUrl": "https://medlineplus.gov/ency/article/000045.htm",
+   "retrievedAt": "2026-10-02",
+   "note": "MedlinePlus: 'Internal bleeding can very quickly become life threatening.' Spans <strong>."
+  },
+  {
+   "surface": "body",
+   "claim": "Organ Damage: The liver, spleen, kidneys and lungs are particularly vulnerable to damage from blunt force trauma.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "StatPearls — Liver Trauma (NCBI Bookshelf)",
+   "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK513236/",
+   "retrievedAt": "2026-10-02",
+   "note": "StatPearls Liver Trauma: the liver is 'the most common solid organ injured in blunt trauma'; Physiology, Trauma: solid-organ blunt abdominal trauma includes 'most commonly the liver but also the spleen and kidneys' and the most common cause of splenic injury is blunt trauma; Thoracic Trauma: high-velocity chest injuries are associated with lung contusion and pneumothorax (pneumothorax in 30% of chest trauma). Spans <strong>."
+  },
+  {
+   "surface": "body",
+   "claim": "Concussions and Brain Injuries: A direct blow to the head or rapid movement within the skull can cause blunt force trauma to the head. This impact could lead to concussions or severe traumatic brain injuries.",
+   "verdict": "update",
+   "currentValue": "MedlinePlus: TBI 'may happen when there is a blow, bump, or jolt to the head. This is a closed head injury.' CDC: concussion danger signs follow 'a bump, blow, or jolt to the head or body'. A jolt without head contact injures the brain, not 'the head' by blunt force.",
+   "sourceName": "MedlinePlus — Traumatic Brain Injury",
+   "sourceUrl": "https://medlineplus.gov/traumaticbraininjury.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Reword the first sentence: 'A blow to the head, or a jolt that makes the brain move rapidly inside the skull, can injure the brain.' Spans <strong>."
+  },
+  {
+   "surface": "body",
+   "claim": "Yes, blunt force trauma injuries can be fatal. Internal injuries that result in severe internal bleeding, organ damage or traumatic brain injuries are especially high-risk.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "StatPearls — Blunt Abdominal Trauma (NCBI Bookshelf)",
+   "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK431087/",
+   "retrievedAt": "2026-10-02",
+   "note": "StatPearls Blunt Abdominal Trauma: mortality 2% to 10%, highest with multiple organ injuries presenting with shock and hemorrhage; MedlinePlus: internal bleeding can quickly become life threatening."
+  },
+  {
+   "surface": "body",
+   "claim": "Delayed treatment can lead to complications like shock, infection and multi-organ failure. These symptoms significantly increase the risk of a fatality.",
+   "verdict": "update",
+   "currentValue": "StatPearls Thoracic Trauma: 'delayed diagnosis can result in respiratory failure, shock, or multiorgan dysfunction.' Delayed splenic rupture carries higher mortality (about 5–15%) than acute injury (about 1%).",
+   "sourceName": "StatPearls — Thoracic Trauma (NCBI Bookshelf)",
+   "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK482194/",
+   "retrievedAt": "2026-10-02",
+   "note": "Shock, infection and organ failure are complications, not 'symptoms'. Change the second sentence to 'These complications significantly increase the risk of death.'"
+  },
+  {
+   "surface": "body",
+   "claim": "Pain and tenderness at the site of impact",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "StatPearls — Rib Fracture (NCBI Bookshelf)",
+   "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK541020/",
+   "retrievedAt": "2026-10-02",
+   "note": "StatPearls Rib Fracture: pain and bony tenderness at the site; MedlinePlus Bruises: painful and swollen."
+  },
+  {
+   "surface": "body",
+   "claim": "Swelling and bruising",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "MedlinePlus — Bruises",
+   "sourceUrl": "https://medlineplus.gov/bruises.html",
+   "retrievedAt": "2026-10-02",
+   "note": "MedlinePlus Bruises."
+  },
+  {
+   "surface": "body",
+   "claim": "Difficulty breathing or chest pain",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "MedlinePlus Medical Encyclopedia — Bleeding",
+   "sourceUrl": "https://medlineplus.gov/ency/article/000045.htm",
+   "retrievedAt": "2026-10-02",
+   "note": "MedlinePlus Bleeding lists chest pain and shortness of breath; StatPearls Thoracic Trauma: tension pneumothorax presents with respiratory distress."
+  },
+  {
+   "surface": "body",
+   "claim": "Abdominal pain or distention",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "MedlinePlus Medical Encyclopedia — Bleeding",
+   "sourceUrl": "https://medlineplus.gov/ency/article/000045.htm",
+   "retrievedAt": "2026-10-02",
+   "note": "MedlinePlus: symptoms of internal bleeding include 'Abdominal pain and swelling'; delayed splenic rupture presents with worsening abdominal pain and distension."
+  },
+  {
+   "surface": "body",
+   "claim": "Dizziness, confusion or loss of consciousness (indicating possible brain injury)",
+   "verdict": "update",
+   "currentValue": "CDC lists dizziness among mild TBI symptoms and confusion/loss of consciousness among danger signs; MedlinePlus Shock lists confusion, dizziness and unconsciousness as shock symptoms too.",
+   "sourceName": "CDC — Symptoms of Mild TBI and Concussion (updated 2025-09-15; confirmed in browser)",
+   "sourceUrl": "https://www.cdc.gov/traumatic-brain-injury/signs-symptoms/index.html",
+   "retrievedAt": "2026-10-02",
+   "note": "These signs also indicate shock from blood loss, not only brain injury. Change the parenthetical to '(possible brain injury or blood loss)'."
+  },
+  {
+   "surface": "body",
+   "claim": "Nausea and vomiting",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "CDC — Symptoms of Mild TBI and Concussion (updated 2025-09-15; confirmed in browser)",
+   "sourceUrl": "https://www.cdc.gov/traumatic-brain-injury/signs-symptoms/index.html",
+   "retrievedAt": "2026-10-02",
+   "note": "CDC: nausea or vomiting (early on); repeated vomiting is a danger sign. MedlinePlus TBI encyclopedia lists nausea and vomiting."
+  },
+  {
+   "surface": "body",
+   "claim": "Pale, clammy skin (a sign of internal bleeding or shock)",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "MedlinePlus Medical Encyclopedia — Shock",
+   "sourceUrl": "https://medlineplus.gov/ency/article/000039.htm",
+   "retrievedAt": "2026-10-02",
+   "note": "MedlinePlus Shock lists 'Pale, cool, clammy skin'; Bleeding lists clammy skin and paleness."
+  },
+  {
+   "surface": "body",
+   "claim": "Some injuries, especially internal ones, may not present symptoms right away. However, internal injuries, like those caused by blunt force trauma, can rapidly worsen without treatment.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "StatPearls — Splenic Trauma (NCBI Bookshelf)",
+   "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK430920/",
+   "retrievedAt": "2026-10-02",
+   "note": "Delayed splenic rupture up to 10 days after injury (StatPearls); mild TBI symptoms may not appear for hours or days (CDC). 'However' is a non-sequitur connector; optional edit to 'And'."
+  },
+  {
+   "surface": "body",
+   "claim": "A thorough medical evaluation can identify internal bleeding, fractures, organ damage and other injuries.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "StatPearls — Rib Fracture (NCBI Bookshelf)",
+   "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK541020/",
+   "retrievedAt": "2026-10-02",
+   "note": "StatPearls: CT is the gold standard for detecting rib fractures; chest/abdominal imaging identifies organ injury. Low-grade injuries can still be missed on initial imaging (Splenic Trauma), so do not strengthen to \"will identify\"."
+  },
+  {
+   "surface": "body",
+   "claim": "This documentation is considered strong evidence, and it can help to link your injuries to the crash that caused them. It also provides evidence of the extent and severity of those injuries.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "General evidentiary statement; no rule of law asserted. Georgia-only post, no statute needed."
+  },
+  {
+   "surface": "body",
+   "claim": "At Roden Law Firm, we advocate for injured victims every day, something we have been doing for decades.",
+   "verdict": "update",
+   "currentValue": "Eric Roden, founding partner, earned his J.D. from UGA School of Law in 2012 — about 14 years of practice. Earlier freshness packs (4709, 4721) corrected the same 'two decades' tenure claim.",
+   "sourceName": "University of Georgia School of Law — Spotlight: Eric Roden (J.D.'12)",
+   "sourceUrl": "https://www.law.uga.edu/spotlight-eric-roden-jd12",
+   "retrievedAt": "2026-10-02",
+   "note": "'For decades' is not supported. Replace with 'for more than a decade' or drop the clause."
+  },
+  {
+   "surface": "body",
+   "claim": "We have a history of proven results and are deeply committed to holding at-fault parties accountable for their negligent actions.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "Promotional; links /case-results/. No number asserted. Spans an <a>."
+  },
+  {
+   "surface": "body",
+   "claim": "Request a FREE case review today.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "Firm-confirmed fee wording (owner, 2026-10-02)",
+   "sourceUrl": "",
+   "retrievedAt": "",
+   "note": "A free case review matches the firm wording; tel:18447378587 = 1-844-RESULTS (profiles/firm-facts.md)."
+  },
+  {
+   "surface": "excerpt",
+   "claim": "Blunt force trauma can be severe with no symptoms at first. The warning signs after a crash, and why delayed treatment hurts both health and a claim.",
+   "verdict": "keep",
+   "currentValue": "",
+   "sourceName": "StatPearls — Splenic Trauma (NCBI Bookshelf)",
+   "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK430920/",
+   "retrievedAt": "2026-10-02",
+   "note": "Supported by delayed-onset sources (StatPearls Splenic Trauma; CDC). Publishes as Article description."
+  },
+  {
+   "surface": "faq:0",
+   "claim": "An injury caused by a sudden impact or collision with an object rather than by something penetrating the body. These are among the most dangerous crash injuries because they can be severe without breaking the skin.",
+   "verdict": "update",
+   "currentValue": "MedlinePlus distinguishes closed (blow, bump, jolt) from penetrating injury; StatPearls: blunt trauma is 'a force striking the body'.",
+   "sourceName": "MedlinePlus — Traumatic Brain Injury",
+   "sourceUrl": "https://medlineplus.gov/traumaticbraininjury.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Definition is correct; soften the superlative: 'They can be serious even when the skin is not broken, because the damage is often internal.' Publishes as FAQPage schema."
+  },
+  {
+   "surface": "faq:1",
+   "claim": "Because initially there may be no symptoms at all. These injuries are tricky and can escalate quickly to become life-threatening without immediate medical attention, which is why they are so often underestimated at the scene.",
+   "verdict": "update",
+   "currentValue": "Delayed onset is supported (splenic rupture up to 10 days; mild TBI symptoms hours or days; pulmonary contusion may be silent on initial evaluation). No source quantifies how 'often' they are underestimated at the scene.",
+   "sourceName": "StatPearls — Splenic Trauma (NCBI Bookshelf)",
+   "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK430920/",
+   "retrievedAt": "2026-10-02",
+   "note": "Change 'which is why they are so often underestimated at the scene' to 'which is why they can be missed at the scene'. Publishes as FAQPage schema."
+  },
+  {
+   "surface": "faq:2",
+   "claim": "Yes. Internal bleeding and organ damage from a blunt impact can be fatal, particularly where the injury goes unrecognised because the person appeared uninjured and declined assessment after the crash.",
+   "verdict": "update",
+   "currentValue": "Fatality supported (StatPearls BAT mortality 2–10%; delayed splenic rupture mortality ~5–15% vs ~1% acute). Also add brain injury, which the body names as high-risk.",
+   "sourceName": "StatPearls — Splenic Trauma (NCBI Bookshelf)",
+   "sourceUrl": "https://www.ncbi.nlm.nih.gov/books/NBK430920/",
+   "retrievedAt": "2026-10-02",
+   "note": "US spelling: 'unrecognised' -> 'unrecognized'. Suggested: 'Yes. Internal bleeding, organ damage and traumatic brain injury from a blunt impact can be fatal, particularly when the injury goes unrecognized because the person seemed uninjured and was not examined after the crash.' Publishes as FAQPage schema."
+  },
+  {
+   "surface": "faq:3",
+   "claim": "Any developing pain, swelling, dizziness, confusion, abdominal tenderness or shortness of breath in the hours and days afterwards. Symptoms that appear late are exactly the pattern that makes these injuries dangerous.",
+   "verdict": "update",
+   "currentValue": "CDC: some mild TBI symptoms 'may not appear for hours or days'; danger signs include a worsening headache, repeated vomiting, confusion, loss of consciousness. StatPearls: delayed splenic rupture warning signs include worsening abdominal pain, lightheadedness, fainting and left shoulder pain.",
+   "sourceName": "CDC — Symptoms of Mild TBI and Concussion (updated 2025-09-15; confirmed in browser)",
+   "sourceUrl": "https://www.cdc.gov/traumatic-brain-injury/signs-symptoms/index.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Add 'worsening headache, repeated vomiting' and 'call 911 or go to an emergency department if symptoms are severe or getting worse'; 'afterwards' -> 'afterward' (US). Keep it framed as seeking care, not self-diagnosis. Publishes as FAQPage schema."
+  },
+  {
+   "surface": "faq:4",
+   "claim": "Immediately, and regardless of how you feel at the scene. Immediate medical attention could be life-saving, and your medical records also establish the link between the collision and the injuries that follow.",
+   "verdict": "update",
+   "currentValue": "Medical advice to be evaluated promptly is consistent with CDC/MedlinePlus guidance. Records are evidence that can help link injuries to the crash — they do not by themselves \"establish\" causation.",
+   "sourceName": "CDC — Symptoms of Mild TBI and Concussion (updated 2025-09-15; confirmed in browser)",
+   "sourceUrl": "https://www.cdc.gov/traumatic-brain-injury/signs-symptoms/index.html",
+   "retrievedAt": "2026-10-02",
+   "note": "Change 'also establish the link' to 'also help document the link' (the body says 'can help to link'). Publishes as FAQPage schema."
+  },
+  {
+   "surface": "body",
+   "claim": "something we have been doing for decades",
+   "verdict": "update",
+   "currentValue": "our attorneys bring 62 years of combined experience",
+   "sourceName": "Roden Law writer profile — firm facts (\"62 years combined experience\")",
+   "sourceUrl": "",
+   "retrievedAt": "2026-10-02",
+   "note": "The sentence describes the firm ('we'), not Eric Roden personally; the firm-facts line in profiles/writer-profile.md gives 62 years of combined experience (same fix as facts-2479)."
+  }
+ ],
+ "recommendedEdits": [
+  "Intro sentence 1: 'Blunt force trauma injuries are among the most dangerous.' -> 'Blunt force trauma can cause serious internal injuries that are not visible from the outside.'",
+  "Fee line: replace 'If we represent you, there are also no upfront costs to pay.' with 'Fees and costs apply only upon successful recovery. No fees or costs with no recovery.'",
+  "Closing H2 section: 'something we have been doing for decades' -> 'something we have been doing for more than a decade' (Eric Roden J.D. 2012), or drop the clause.",
+  "Fatality paragraph: 'These symptoms significantly increase the risk of a fatality.' -> 'These complications significantly increase the risk of death.'",
+  "Brain-injury bullet: 'A direct blow to the head or rapid movement within the skull can cause blunt force trauma to the head.' -> 'A blow to the head, or a jolt that makes the brain move rapidly inside the skull, can injure the brain.' Symptom bullet parenthetical -> '(possible brain injury or blood loss)'.",
+  "How-it-occurs: 'Blunt force trauma injuries typically occur during car crashes when ...' -> 'In a car crash, blunt force trauma typically occurs when ...'",
+  "FAQ 1 (faq:0): replace 'These are among the most dangerous crash injuries because they can be severe without breaking the skin.' with 'They can be serious even when the skin is not broken, because the damage is often internal.'",
+  "FAQ 2 (faq:1): 'so often underestimated at the scene' -> 'can be missed at the scene'.",
+  "FAQ 3 (faq:2): 'unrecognised' -> 'unrecognized'; add traumatic brain injury; 'declined assessment' -> 'was not examined'.",
+  "FAQ 4 (faq:3): add 'worsening headache, repeated vomiting' to the list and end with 'Call 911 or go to an emergency department if symptoms are severe or getting worse.'; 'afterwards' -> 'afterward'.",
+  "FAQ 5 (faq:4): 'also establish the link' -> 'also help document the link'.",
+  "Optional: add one citation line under the symptoms list, e.g. 'According to the CDC, some concussion symptoms may not appear for hours or days after the injury.' linking the CDC page. Do not add South Carolina law, statutes or statistics; the post states no law and needs none."
+ ],
+ "statuteCitations": [],
+ "authoritativeLinks": [
+  {
+   "name": "StatPearls — Blunt Abdominal Trauma (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK431087/"
+  },
+  {
+   "name": "StatPearls — Physiology, Trauma (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK538478/"
+  },
+  {
+   "name": "StatPearls — Liver Trauma (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK513236/"
+  },
+  {
+   "name": "StatPearls — Splenic Trauma (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK430920/"
+  },
+  {
+   "name": "StatPearls — Thoracic Trauma (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK482194/"
+  },
+  {
+   "name": "StatPearls — Rib Fracture (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK541020/"
+  },
+  {
+   "name": "MedlinePlus — Bruises",
+   "url": "https://medlineplus.gov/bruises.html"
+  },
+  {
+   "name": "MedlinePlus Medical Encyclopedia — Bleeding",
+   "url": "https://medlineplus.gov/ency/article/000045.htm"
+  },
+  {
+   "name": "MedlinePlus Medical Encyclopedia — Shock",
+   "url": "https://medlineplus.gov/ency/article/000039.htm"
+  },
+  {
+   "name": "MedlinePlus — Traumatic Brain Injury",
+   "url": "https://medlineplus.gov/traumaticbraininjury.html"
+  },
+  {
+   "name": "MedlinePlus Medical Encyclopedia — Traumatic brain injury",
+   "url": "https://medlineplus.gov/ency/article/000799.htm"
+  },
+  {
+   "name": "CDC — Symptoms of Mild TBI and Concussion (updated 2025-09-15; confirmed in browser)",
+   "url": "https://www.cdc.gov/traumatic-brain-injury/signs-symptoms/index.html"
+  },
+  {
+   "name": "NHTSA — Vehicle Air Bags and Injury Prevention (confirmed in browser)",
+   "url": "https://www.nhtsa.gov/vehicle-safety/air-bags"
+  },
+  {
+   "name": "University of Georgia School of Law — Spotlight: Eric Roden (J.D.'12)",
+   "url": "https://www.law.uga.edu/spotlight-eric-roden-jd12"
+  }
+ ],
+ "quoteNote": "Claims are quoted from the rendered text; the five list bullets under 'most common injuries' span inline <strong> lead-ins and two body claims span inline <a> links (pedestrians, proven results); they match exactly once tags are stripped. No statutes are cited and no Savannah hospital or road is named, so none was verified. NCBI Bookshelf pages answer curl -I with 200 but serve a bot check to full GETs and are permission-blocked in the browser extension; their quoted text was taken from search-index extracts of the same URLs. CDC and NHTSA pages were confirmed in a browser tab (curl 403)."
+}
