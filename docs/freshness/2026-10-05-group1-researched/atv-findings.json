@@ -1,0 +1,451 @@
+{
+  "statutes": [
+    {
+      "cite": "O.C.G.A. § 40-7-120",
+      "text_quote": "DOES NOT EXIST. Title 40, Chapter 7 (\"Off-Road Vehicle Act of 1975\") runs §§ 40-7-1 to 40-7-6 only; Justia 2025 chapter index shows \"Chapter 7 - Off-Road Vehicles (§§ 40-7-1 — 40-7-6)\".",
+      "url": "https://law.justia.com/codes/georgia/title-40/chapter-7/",
+      "verified_how": "Justia 2025 chapter page read in browser 2026-10-05; also public-domain OCGA mirror r86."
+    },
+    {
+      "cite": "O.C.G.A. § 40-7-3",
+      "text_quote": "\"off-road vehicle\" means any motorized vehicle designed for or capable of cross-country travel ... and not intended for use predominantly on public roads.",
+      "url": "https://law.justia.com/codes/georgia/title-40/chapter-7/section-40-7-3/",
+      "verified_how": "Justia 2025 section page in browser."
+    },
+    {
+      "cite": "O.C.G.A. § 40-7-4",
+      "text_quote": "violation to operate an off-road vehicle \"(1) Without operative brakes or without mufflers ...; (2) On any private property without the express written permission of the owner ...; or (3) Within any perennial stream, except when directly crossing such stream.\"",
+      "url": "https://law.justia.com/codes/georgia/title-40/chapter-7/section-40-7-4/",
+      "verified_how": "Justia 2025 section page in browser."
+    },
+    {
+      "cite": "O.C.G.A. § 40-7-5",
+      "text_quote": "\"Incorporated towns and municipalities and counties shall have the authority to adopt ordinances ... to regulate time periods and zones of use for off-road vehicles.\"",
+      "url": "https://law.justia.com/codes/georgia/title-40/chapter-7/",
+      "verified_how": "OCGA mirror (2021 release); listed unchanged in Justia 2025 chapter index."
+    },
+    {
+      "cite": "O.C.G.A. § 40-7-6",
+      "text_quote": "violator \"shall not thereby be guilty of a criminal act but shall be subject to a civil penalty of not less than $25.00.\"",
+      "url": "https://law.justia.com/codes/georgia/title-40/chapter-7/",
+      "verified_how": "OCGA mirror (2021 release); listed in Justia 2025 index."
+    },
+    {
+      "cite": "O.C.G.A. § 40-6-305",
+      "text_quote": "\"(b) A farmer who is 16 years of age or older may operate a farm use vehicle on any public road or highway of this state so long as: (1) ... emblem conforming to ... Code Section 40-8-4; and (2) ... actively being operated by such farmer to transport: (A) Agricultural products, livestock, farm machinery, or farm supplies to or from a farm; or (B) Such farmer between his or her residence and the farm...\" \"Farm use vehicle\" means an all-terrain vehicle or personal transportation vehicle.",
+      "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/part-1b/section-40-6-305/",
+      "verified_how": "Justia 2025 section page in browser."
+    },
+    {
+      "cite": "O.C.G.A. § 40-6-306",
+      "text_quote": "farm use vehicle operator \"shall be granted all of the rights and shall be subject to all of the duties applicable to the driver of any other vehicle\".",
+      "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/part-1b/section-40-6-305/",
+      "verified_how": "OCGA mirror (2021 release) only; Part 1B page not opened. URL given is the adjacent § 40-6-305 page (same Part, has a Next link to § 40-6-306)."
+    },
+    {
+      "cite": "O.C.G.A. § 40-1-1(3), (33.1)",
+      "text_quote": "(3) \"All-terrain vehicle\" means a motorized vehicle originally manufactured for off-highway use which is equipped with three or more nonhighway tires, is 80 inches or less in width with a dry weight of 3,500 pounds or less...; (33.1) \"Multipurpose off-highway vehicle\" ... uses a steering wheel ... nonstraddle seat.",
+      "url": "https://law.justia.com/codes/georgia/title-40/chapter-1/article-1/section-40-1-1/",
+      "verified_how": "Justia 2025 page in browser (paragraph numbers confirmed)."
+    },
+    {
+      "cite": "Georgia ATV age / safety-course / engine-size rules",
+      "text_quote": "NONE FOUND in Title 40 (Ch. 7 or Ch. 6 Part 1B other than the farmer-16+ road rule). Full-text search of Title 40 for \"all-terrain\"/\"off-road\" returned no age, course, or engine-size provision.",
+      "url": "https://law.justia.com/codes/georgia/title-40/chapter-7/",
+      "verified_how": "grep of public-domain OCGA Title 40 (r86, 2021) + Justia 2025 Chapter 7 index unchanged. Georgia DNR property rules not checked."
+    },
+    {
+      "cite": "S.C. Code § 56-15-10",
+      "text_quote": "Definitions for Chapter 15, \"Regulation of Manufacturers, Distributors, and Dealers\": \"(a) 'Motor vehicle', means any motor driven vehicle required to be registered...\" — nothing about off-highway vehicles.",
+      "url": "https://www.scstatehouse.gov/code/t56c015.php",
+      "verified_how": "scstatehouse.gov fetched 2026-10-05."
+    },
+    {
+      "cite": "S.C. Code § 50-26-10 to -70 (Chandler's Law, 2011 Act No. 24)",
+      "text_quote": "§ 50-26-30: (A) unlawful for parent to knowingly permit under-6 to operate an ATV; (B) under-16 unlicensed may not carry a passenger; (F) 15 and younger must possess a hands-on ATV safety course certificate; (G) 15 and younger must wear FMVSS 218 helmet and eye protection. § 50-26-40 (lands open to the public): (C) 16 and younger must be accompanied by an adult; headlights at night; no reckless/DUI. § 50-26-60 misdemeanor $50-$200. § 50-26-70 exceptions: farming/ranching, hunting/trapping, ages 6-15 on private property under direct parental visual supervision. § 50-26-20 ATV = handlebars, three or more wheels (UTVs with steering wheels excluded).",
+      "url": "https://www.scstatehouse.gov/code/t50c026.php",
+      "verified_how": "scstatehouse.gov fetched 2026-10-05."
+    },
+    {
+      "cite": "S.C. Code § 56-3-110",
+      "text_quote": "\"Every motor vehicle ... driven, operated or moved upon a highway in this State shall be registered and licensed ... It shall be a misdemeanor\" to operate one that is not.",
+      "url": "https://www.scstatehouse.gov/code/t56c003.php",
+      "verified_how": "scstatehouse.gov fetched 2026-10-05."
+    },
+    {
+      "cite": "S.C. Code § 56-1-10(37)",
+      "text_quote": "\"Off Road Use Only\" brand designates a vehicle \"not manufactured for use on public roads. The department shall not register and license the vehicle pursuant to Section 56-3-350.\"",
+      "url": "https://www.scstatehouse.gov/code/t56c001.php",
+      "verified_how": "scstatehouse.gov fetched 2026-10-05 (current text; amended by Act 164 eff. 11/18/2026 to add \"unless otherwise specified in Article 5\")."
+    },
+    {
+      "cite": "2026 S.C. Act No. 164 (S. 222), S.C. Code §§ 56-2-5000 to -5140",
+      "text_quote": "Signed 5/18/2026, effective 11/18/2026. UTV = side-by-side, steering wheel, nonstraddle seat, top speed over 55 mph, ≥450cc, ≤80 in wide. Operator 17+ with full license, plate, registration, insurance (§ 56-2-5010); no interstates (§ 56-2-5080); absent local ordinance, only secondary highways ≤55 mph within 10 miles of registered address (§ 56-2-5110); under-21 helmet/eye protection, seat belts, no passengers under 8; farmers with SCATE card may operate within 10 miles of the farm (§ 56-2-5140).",
+      "url": "https://www.scstatehouse.gov/sess126_2025-2026/bills/222.htm",
+      "verified_how": "scstatehouse.gov bill page fetched 2026-10-05 (enrolled text; codified section numbers as stated in the act)."
+    }
+  ],
+  "replacements": [
+    {
+      "post_id": 4089,
+      "surface": "body",
+      "old_sentence_exact": "<a href=\"https://law.justia.com/codes/georgia/title-40/chapter-7/article-5/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. § 40-7-120 et seq.</a> restricts ATV use on public roads to specific circumstances (agricultural use, certain crossings).",
+      "new_sentence": "Georgia does not generally allow ATVs on public roads; <a href=\"https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/part-1b/section-40-6-305/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. § 40-6-305</a> lets farmers 16 and older use one for farm hauling.",
+      "cites": [
+        {
+          "cite": "O.C.G.A. § 40-6-305",
+          "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/part-1b/section-40-6-305/"
+        }
+      ],
+      "note": "PRIMARY. § 40-7-120 does not exist; Chapter 7 ends at § 40-7-6. Agricultural exception is real (§ 40-6-305) but no Georgia statute creates a road-crossing exception — dropped. Old link points to a nonexistent Justia \"article-5\"."
+    },
+    {
+      "post_id": 4089,
+      "surface": "body",
+      "old_sentence_exact": "Children under 16 may not operate ATVs on public property without supervision.",
+      "new_sentence": "<a href=\"https://law.justia.com/codes/georgia/title-40/chapter-7/section-40-7-4/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. § 40-7-4</a> requires off-road vehicles to have working brakes and mufflers.",
+      "cites": [
+        {
+          "cite": "O.C.G.A. § 40-7-4",
+          "url": "https://law.justia.com/codes/georgia/title-40/chapter-7/section-40-7-4/"
+        }
+      ],
+      "note": "ADJACENT unsupported claim: Georgia has no statutory ATV age or supervision rule. Replaced with what § 40-7-4 actually requires (also bars riding on private land without the owner's written permission). Alternatively delete."
+    },
+    {
+      "post_id": 4089,
+      "surface": "body",
+      "old_sentence_exact": "ATVs are not street-legal in Georgia without specific modifications and registration.",
+      "new_sentence": "",
+      "cites": [],
+      "note": "ADJACENT: implies modification + registration makes an ATV road-legal; no Georgia statute provides that. Recommend deleting (new_sentence empty)."
+    },
+    {
+      "post_id": 4089,
+      "surface": "faq:0",
+      "old_sentence_exact": "Georgia law (O.C.G.A. § 40-7-120 et seq.) restricts ATV operation on public roads to limited circumstances, such as agricultural use and supervised road crossings.",
+      "new_sentence": "Georgia law does not generally authorize it; the main exception (O.C.G.A. § 40-6-305) lets farmers 16 and older use an ATV on public roads for farm transport.",
+      "cites": [
+        {
+          "cite": "O.C.G.A. § 40-6-305",
+          "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/part-1b/section-40-6-305/"
+        }
+      ],
+      "note": "PRIMARY. Keep the preceding \"Generally no.\" No supervised-crossing exception exists in Georgia statute."
+    },
+    {
+      "post_id": 4089,
+      "surface": "faq:0",
+      "old_sentence_exact": "ATVs are not street-legal without specific modifications.",
+      "new_sentence": "ATVs are built for off-highway use (O.C.G.A. § 40-1-1(3)).",
+      "cites": [
+        {
+          "cite": "O.C.G.A. § 40-1-1(3), (33.1)",
+          "url": "https://law.justia.com/codes/georgia/title-40/chapter-1/article-1/section-40-1-1/"
+        }
+      ],
+      "note": "ADJACENT: same unsupported \"modifications\" implication; replaced with the statutory definition."
+    },
+    {
+      "post_id": 4179,
+      "surface": "body",
+      "old_sentence_exact": "Georgia regulates ATV operation under <a href=\"https://law.justia.com/codes/georgia/title-40/chapter-7/article-5/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. § 40-7-120 et seq.</a>, which establishes requirements for ATV use on public and private land, age restrictions for operators, and safety equipment mandates.",
+      "new_sentence": "Georgia regulates ATVs as off-road vehicles under <a href=\"https://law.justia.com/codes/georgia/title-40/chapter-7/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. § 40-7-1 et seq.</a>, which requires working brakes and a muffler and bars riding on private land without the owner's written permission.",
+      "cites": [
+        {
+          "cite": "O.C.G.A. § 40-7-1 et seq.",
+          "url": "https://law.justia.com/codes/georgia/title-40/chapter-7/"
+        },
+        {
+          "cite": "O.C.G.A. § 40-7-4",
+          "url": "https://law.justia.com/codes/georgia/title-40/chapter-7/section-40-7-4/"
+        }
+      ],
+      "note": "PRIMARY. Chapter 7 (§§ 40-7-1 to -6) has no age restrictions or safety-gear mandates; its equipment rule is brakes + muffler (§ 40-7-4(1))."
+    },
+    {
+      "post_id": 4179,
+      "surface": "body",
+      "old_sentence_exact": "Georgia law prohibits operating an ATV on public roads (with limited exceptions for agricultural and crossing purposes) and requires riders under 16 to complete an approved safety course.",
+      "new_sentence": "Georgia law does not generally authorize ATVs on public roads; <a href=\"https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/part-1b/section-40-6-305/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. § 40-6-305</a> allows farmers 16 and older to use them there for farm transport.",
+      "cites": [
+        {
+          "cite": "O.C.G.A. § 40-6-305",
+          "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/part-1b/section-40-6-305/"
+        }
+      ],
+      "note": "ADJACENT. No crossing exception and NO Georgia safety-course requirement for under-16 riders exist in statute (that rule is South Carolina's, § 50-26-30(F), for 15 and younger)."
+    },
+    {
+      "post_id": 4179,
+      "surface": "body",
+      "old_sentence_exact": "South Carolina regulates ATV use under <a href=\"https://www.scstatehouse.gov/code/t56c015.php\" target=\"_blank\" rel=\"noopener\">S.C. Code § 56-15-10 et seq.</a> and local ordinances.",
+      "new_sentence": "South Carolina regulates ATV use under <a href=\"https://www.scstatehouse.gov/code/t50c026.php\" target=\"_blank\" rel=\"noopener\">S.C. Code § 50-26-10 et seq.</a> and local ordinances.",
+      "cites": [
+        {
+          "cite": "S.C. Code § 50-26-10 et seq.",
+          "url": "https://www.scstatehouse.gov/code/t50c026.php"
+        }
+      ],
+      "note": "SC cite fix. § 56-15-10 is the definitions section of the motor vehicle manufacturers/distributors/dealers chapter. The following sentence (road restriction + supervision for minors) is supportable: § 56-1-10(37)/§ 56-3-110 and § 50-26-40(C)."
+    },
+    {
+      "post_id": 4180,
+      "surface": "body",
+      "old_sentence_exact": "Georgia law under <a href=\"https://law.justia.com/codes/georgia/title-40/chapter-7/article-5/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. § 40-7-120 et seq.</a> classifies side-by-side vehicles alongside ATVs for regulatory purposes, restricting their use on public roads and establishing age and safety requirements.",
+      "new_sentence": "Georgia treats side-by-sides, like ATVs, as off-road vehicles under <a href=\"https://law.justia.com/codes/georgia/title-40/chapter-7/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. § 40-7-1 et seq.</a>, and its law does not generally authorize them on public roads.",
+      "cites": [
+        {
+          "cite": "O.C.G.A. § 40-7-1 et seq.",
+          "url": "https://law.justia.com/codes/georgia/title-40/chapter-7/"
+        },
+        {
+          "cite": "O.C.G.A. § 40-1-1(3), (33.1)",
+          "url": "https://law.justia.com/codes/georgia/title-40/chapter-1/article-1/section-40-1-1/"
+        }
+      ],
+      "note": "PRIMARY. § 40-7-3 \"off-road vehicle\" covers both; § 40-1-1 defines ATV (3) and \"multipurpose off-highway vehicle\" (33.1, steering wheel, nonstraddle seat) separately. No Georgia age/safety rules for UTVs. Note the § 40-6-305 farm exception covers ATVs and PTVs only, not MOHVs."
+    },
+    {
+      "post_id": 4180,
+      "surface": "body",
+      "old_sentence_exact": "South Carolina regulates off-highway vehicles under <a href=\"https://www.scstatehouse.gov/code/t56c015.php\" target=\"_blank\" rel=\"noopener\">S.C. Code § 56-15-10 et seq.</a>, with similar restrictions on road use and requirements for equipment standards.",
+      "new_sentence": "South Carolina bars unregistered off-road vehicles from highways (<a href=\"https://www.scstatehouse.gov/code/t56c003.php\" target=\"_blank\" rel=\"noopener\">S.C. Code § 56-3-110</a>); registered UTVs may use some roads from Nov. 18, 2026 (<a href=\"https://www.scstatehouse.gov/sess126_2025-2026/bills/222.htm\" target=\"_blank\" rel=\"noopener\">Act 164</a>).",
+      "cites": [
+        {
+          "cite": "S.C. Code § 56-3-110",
+          "url": "https://www.scstatehouse.gov/code/t56c003.php"
+        },
+        {
+          "cite": "S.C. Code § 56-1-10(37)",
+          "url": "https://www.scstatehouse.gov/code/t56c001.php"
+        },
+        {
+          "cite": "2026 S.C. Act No. 164 (S. 222), adding S.C. Code §§ 56-2-5000 et seq., eff. Nov. 18, 2026",
+          "url": "https://www.scstatehouse.gov/sess126_2025-2026/bills/222.htm"
+        }
+      ],
+      "note": "TIME-SENSITIVE: 2026 S.C. Act No. 164 (S. 222, signed 5/18/2026) takes effect 11/18/2026 — registered UTVs (17+, licensed, insured, belts, lights) on secondary roads ≤55 mph, no interstates. Before then \"Off Road Use Only\" vehicles cannot be registered (§ 56-1-10(37)) and unregistered vehicles are barred from highways (§ 56-3-110). Chandler's Law (§ 50-26-20) defines ATV by handlebars, so steering-wheel UTVs are outside it."
+    },
+    {
+      "post_id": 4180,
+      "surface": "faq:2",
+      "old_sentence_exact": "Georgia (O.C.G.A. § 40-7-120) and South Carolina (S.C. Code § 56-15-10) restrict side-by-side operation on public roads, with limited exceptions.",
+      "new_sentence": "Georgia does not generally allow it; South Carolina allows only registered UTVs on certain roads, starting Nov. 18, 2026 (S.C. Act 164 of 2026).",
+      "cites": [
+        {
+          "cite": "O.C.G.A. § 40-7-1 et seq.",
+          "url": "https://law.justia.com/codes/georgia/title-40/chapter-7/"
+        },
+        {
+          "cite": "S.C. Code § 56-3-110",
+          "url": "https://www.scstatehouse.gov/code/t56c003.php"
+        },
+        {
+          "cite": "2026 S.C. Act No. 164 (S. 222), adding S.C. Code §§ 56-2-5000 et seq., eff. Nov. 18, 2026",
+          "url": "https://www.scstatehouse.gov/sess126_2025-2026/bills/222.htm"
+        }
+      ],
+      "note": "PRIMARY. Keep \"Generally no.\" for now; revisit after 11/18/2026 when SC answer changes for registered UTVs."
+    },
+    {
+      "post_id": 4182,
+      "surface": "body",
+      "old_sentence_exact": "Georgia's ATV statute (<a href=\"https://law.justia.com/codes/georgia/title-40/chapter-7/article-5/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. § 40-7-120 et seq.</a>) establishes age-based restrictions for ATV operation.",
+      "new_sentence": "Georgia's Off-Road Vehicle Act (<a href=\"https://law.justia.com/codes/georgia/title-40/chapter-7/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. § 40-7-1 et seq.</a>) sets no minimum age for ATV operators.",
+      "cites": [
+        {
+          "cite": "O.C.G.A. § 40-7-1 et seq.",
+          "url": "https://law.justia.com/codes/georgia/title-40/chapter-7/"
+        }
+      ],
+      "note": "PRIMARY. Verified: Chapter 7 (2025 Code) has six sections and none addresses age."
+    },
+    {
+      "post_id": 4182,
+      "surface": "body",
+      "old_sentence_exact": "Children under 16 are prohibited from operating an ATV on public land unless they have completed an approved ATV safety course.",
+      "new_sentence": "The one statutory age rule is narrow: a farmer must be 16 or older to drive an ATV on a public road (<a href=\"https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/part-1b/section-40-6-305/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. § 40-6-305</a>).",
+      "cites": [
+        {
+          "cite": "O.C.G.A. § 40-6-305",
+          "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/part-1b/section-40-6-305/"
+        }
+      ],
+      "note": "ADJACENT unsupported (it is South Carolina's rule, not Georgia's). \"One statutory age rule\" refers to Title 40; if unsure about DNR property rules, soften to \"Georgia's main statutory age rule\"."
+    },
+    {
+      "post_id": 4182,
+      "surface": "body",
+      "old_sentence_exact": "The law also restricts children from operating ATVs with engine sizes that exceed age-appropriate limits established by the CPSC.",
+      "new_sentence": "Youth size limits come from manufacturer age-warning labels and CPSC guidance, not Georgia statute.",
+      "cites": [],
+      "note": "ADJACENT unsupported: no Georgia engine-size statute."
+    },
+    {
+      "post_id": 4182,
+      "surface": "body",
+      "old_sentence_exact": "Parents and guardians who knowingly permit a child to violate these restrictions may face both criminal penalties and civil liability.",
+      "new_sentence": "",
+      "cites": [],
+      "note": "ADJACENT unsupported for Georgia: Chapter 7 violations are expressly not criminal (§ 40-7-6, civil penalty). South Carolina does criminalize parental violations (§ 50-26-30, § 50-26-60 misdemeanor). Recommend deleting; the SC sentence below covers SC."
+    },
+    {
+      "post_id": 4182,
+      "surface": "body",
+      "old_sentence_exact": "South Carolina's off-highway vehicle statute (<a href=\"https://www.scstatehouse.gov/code/t56c015.php\" target=\"_blank\" rel=\"noopener\">S.C. Code § 56-15-10 et seq.</a>) similarly restricts minor ATV operation and requires parental supervision.",
+      "new_sentence": "South Carolina law (<a href=\"https://www.scstatehouse.gov/code/t50c026.php\" target=\"_blank\" rel=\"noopener\">S.C. Code § 50-26-10 et seq.</a>) bars ATV use under age 6 and requires a helmet and safety course through age 15.",
+      "cites": [
+        {
+          "cite": "S.C. Code § 50-26-10 et seq.",
+          "url": "https://www.scstatehouse.gov/code/t50c026.php"
+        }
+      ],
+      "note": "§ 50-26-30(A) (parent may not let under-6 operate), (F) hands-on course certificate for 15 and younger, (G) FMVSS 218 helmet + eye protection; § 50-26-40(C) adult accompaniment for 16 and younger on lands open to the public; § 50-26-60 misdemeanor $50–$200. Exceptions § 50-26-70: farm/ranch, hunting/trapping, and ages 6–15 on private property under direct parental visual supervision."
+    },
+    {
+      "post_id": 4182,
+      "surface": "faq:0",
+      "old_sentence_exact": "Georgia law (O.C.G.A. § 40-7-120) restricts children under 16 from operating ATVs on public land without a safety course and prohibits age-inappropriate engine sizes.",
+      "new_sentence": "Georgia's Off-Road Vehicle Act (O.C.G.A. § 40-7-1 et seq.) sets no minimum operator age; South Carolina bars ATV operation under age 6 (S.C. Code § 50-26-30).",
+      "cites": [
+        {
+          "cite": "O.C.G.A. § 40-7-1 et seq.",
+          "url": "https://law.justia.com/codes/georgia/title-40/chapter-7/"
+        },
+        {
+          "cite": "S.C. Code § 50-26-10 et seq.",
+          "url": "https://www.scstatehouse.gov/code/t50c026.php"
+        }
+      ],
+      "note": "PRIMARY. The FAQ's first sentence (\"CPSC recommends no ATV use for children under 6\") was not verified in this pass."
+    },
+    {
+      "post_id": 4183,
+      "surface": "body",
+      "old_sentence_exact": "Commercial ATV operations must also comply with <a href=\"https://law.justia.com/codes/georgia/title-40/chapter-7/article-5/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. § 40-7-120</a> (Georgia) and <a href=\"https://www.scstatehouse.gov/code/t56c015.php\" target=\"_blank\" rel=\"noopener\">S.C. Code § 56-15-10</a> (South Carolina) governing off-highway vehicle operation.",
+      "new_sentence": "Commercial ATV operations must also comply with Georgia's off-road vehicle law (<a href=\"https://law.justia.com/codes/georgia/title-40/chapter-7/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. § 40-7-1 et seq.</a>) and South Carolina's ATV law (<a href=\"https://www.scstatehouse.gov/code/t50c026.php\" target=\"_blank\" rel=\"noopener\">S.C. Code § 50-26-10 et seq.</a>).",
+      "cites": [
+        {
+          "cite": "O.C.G.A. § 40-7-1 et seq.",
+          "url": "https://law.justia.com/codes/georgia/title-40/chapter-7/"
+        },
+        {
+          "cite": "S.C. Code § 50-26-10 et seq.",
+          "url": "https://www.scstatehouse.gov/code/t50c026.php"
+        }
+      ],
+      "note": "PRIMARY. Chandler's Law applies to riders including tour customers (under-16 certificate, helmets, adult accompaniment on public lands)."
+    },
+    {
+      "post_id": 4184,
+      "surface": "body",
+      "old_sentence_exact": "Georgia law under <a href=\"https://law.justia.com/codes/georgia/title-40/chapter-7/article-5/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. § 40-7-120 et seq.</a> generally prohibits operating ATVs on public roads, with exceptions for agricultural purposes, road crossings, and certain designated areas.",
+      "new_sentence": "Georgia law does not generally allow ATVs on public roads; <a href=\"https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/part-1b/section-40-6-305/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. § 40-6-305</a> lets farmers 16 and older use them for farm hauling, and <a href=\"https://law.justia.com/codes/georgia/title-40/chapter-7/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. § 40-7-5</a> lets localities set zones of use.",
+      "cites": [
+        {
+          "cite": "O.C.G.A. § 40-6-305",
+          "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/part-1b/section-40-6-305/"
+        },
+        {
+          "cite": "O.C.G.A. § 40-7-5",
+          "url": "https://law.justia.com/codes/georgia/title-40/chapter-7/"
+        }
+      ],
+      "note": "PRIMARY. \"Road crossings\" exception has no Georgia statutory basis — dropped. § 40-7-5 authorizes local ordinances on \"time periods and zones of use\" (not necessarily roads). URL is the chapter page (lists § 40-7-5)."
+    },
+    {
+      "post_id": 4184,
+      "surface": "body",
+      "old_sentence_exact": "When an ATV is legally crossing or traveling along a roadway under these exceptions, the operator must comply with applicable traffic laws and safety equipment requirements.",
+      "new_sentence": "A farmer lawfully driving an ATV on a road has the same duties as any other driver (O.C.G.A. § 40-6-306) and must display a slow-moving-vehicle emblem.",
+      "cites": [
+        {
+          "cite": "O.C.G.A. § 40-6-306 (same Part 1B as § 40-6-305)",
+          "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/part-1b/section-40-6-305/"
+        },
+        {
+          "cite": "O.C.G.A. § 40-6-305",
+          "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/part-1b/section-40-6-305/"
+        }
+      ],
+      "note": "ADJACENT: drops the crossing premise. § 40-6-306 text read from the public-domain OCGA mirror (2021 release); § 40-6-305(b)(1) emblem requirement verified on Justia 2025. Left unlinked: the Part 1B page was not opened in a browser."
+    },
+    {
+      "post_id": 4184,
+      "surface": "body",
+      "old_sentence_exact": "South Carolina's off-highway vehicle statute (<a href=\"https://www.scstatehouse.gov/code/t56c015.php\" target=\"_blank\" rel=\"noopener\">S.C. Code § 56-15-10 et seq.</a>) similarly restricts ATV road use, though specific regulations vary by county and municipality.",
+      "new_sentence": "South Carolina keeps unregistered off-road vehicles off its highways (<a href=\"https://www.scstatehouse.gov/code/t56c003.php\" target=\"_blank\" rel=\"noopener\">S.C. Code § 56-3-110</a>), though local rules vary by county and municipality.",
+      "cites": [
+        {
+          "cite": "S.C. Code § 56-3-110",
+          "url": "https://www.scstatehouse.gov/code/t56c003.php"
+        },
+        {
+          "cite": "S.C. Code § 56-1-10(37)",
+          "url": "https://www.scstatehouse.gov/code/t56c001.php"
+        }
+      ],
+      "note": "SC cite fix."
+    },
+    {
+      "post_id": 4184,
+      "surface": "body",
+      "old_sentence_exact": "Some South Carolina counties have adopted local ordinances permitting limited ATV road use on roads with speed limits of 35 mph or less.",
+      "new_sentence": "From November 18, 2026, registered UTVs (not ATVs) may use secondary roads posted 55 mph or less (<a href=\"https://www.scstatehouse.gov/sess126_2025-2026/bills/222.htm\" target=\"_blank\" rel=\"noopener\">Act 164 of 2026</a>).",
+      "cites": [
+        {
+          "cite": "2026 S.C. Act No. 164 (S. 222), adding S.C. Code §§ 56-2-5000 et seq., eff. Nov. 18, 2026",
+          "url": "https://www.scstatehouse.gov/sess126_2025-2026/bills/222.htm"
+        }
+      ],
+      "note": "ADJACENT unverified: no source found for county ordinances allowing ATVs on ≤35 mph roads. Replaced with the enacted statewide UTV rule (§ 56-2-5110 default; § 56-2-5100 local ordinances). Time-sensitive."
+    },
+    {
+      "post_id": 4184,
+      "surface": "faq:1",
+      "old_sentence_exact": "Georgia law (O.C.G.A. § 40-7-120) prohibits ATV operation on public roads with limited exceptions for agricultural use, road crossings, and certain designated areas.",
+      "new_sentence": "Georgia law does not generally authorize it; the main exception (O.C.G.A. § 40-6-305) lets farmers 16 and older use an ATV on public roads for farm transport.",
+      "cites": [
+        {
+          "cite": "O.C.G.A. § 40-6-305",
+          "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/part-1b/section-40-6-305/"
+        }
+      ],
+      "note": "PRIMARY. Keep \"Generally no.\" and the following local-regulations sentence (supported by § 40-7-5 / § 40-6-307)."
+    },
+    {
+      "post_id": 4900,
+      "surface": "faq:5",
+      "old_sentence_exact": "La ley de Georgia (O.C.G.A. § 40-7-120 et seq.) permite el uso de un ATV en vías públicas solo en circunstancias limitadas, como el uso agrícola y los cruces de carretera supervisados.",
+      "new_sentence": "La ley de Georgia no permite en general el uso de un ATV en vías públicas; la excepción principal (O.C.G.A. § 40-6-305) es para agricultores de 16 años o más.",
+      "cites": [
+        {
+          "cite": "O.C.G.A. § 40-6-305",
+          "url": "https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/part-1b/section-40-6-305/"
+        }
+      ],
+      "note": "PRIMARY (Spanish twin of 4089 FAQ 0). Keep \"Por lo general, no.\""
+    },
+    {
+      "post_id": 4900,
+      "surface": "faq:5",
+      "old_sentence_exact": "Los ATV no son legales para circular en la calle sin modificaciones específicas.",
+      "new_sentence": "Los ATV se fabrican para uso fuera de carretera (O.C.G.A. § 40-1-1(3)).",
+      "cites": [
+        {
+          "cite": "O.C.G.A. § 40-1-1(3), (33.1)",
+          "url": "https://law.justia.com/codes/georgia/title-40/chapter-1/article-1/section-40-1-1/"
+        }
+      ],
+      "note": "ADJACENT: mirrors the English 4089 FAQ fix."
+    }
+  ],
+  "notes": [
+    "Justia URLs return 403 to curl (bot protection) but loaded normally in a browser tab with no challenge on 2026-10-05; scstatehouse.gov URLs return 200 via curl.",
+    "Every old_sentence_exact was extracted programmatically from wp-export.json and asserted unique; body sentences keep their <a> HTML.",
+    "PRIMARY = the sentence the caller listed; ADJACENT = a neighbouring sentence in the same paragraph/answer making an unsupported claim of the same class. Empty new_sentence = delete.",
+    "Not verified: the CPSC \"no ATV use under 6\" statements (4089 FAQ 2, 4182 FAQ 0); 4089 SC bullet (uncited, generally supportable); 4179 SC follow-on sentence (supportable).",
+    "SC Act 164 takes effect 2026-11-18: SC road-use answers for UTVs change then; schedule a re-review."
+  ]
+}

@@ -1,0 +1,6 @@
+--- edit 1 · content ---
+  replace: 'ATV operation' -> 'ATVs as off-road vehicles'
+  replace: '40-7-120' -> '40-7-1'
+  replace: '[https://law.justia.com/codes/georgia/title-40/chapter-7/article-5/],' -> '[https://law.justia.com/codes/georgia/title-40/chapter-7/],'
+  replace: 'establishes requirements for ATV use' -> 'requires working brakes and a muffler and bars riding on private land without the owner's written permission. Georgia law does not generally authorize ATVs'
+  insert: '' -> 'roads; O.C.G.A. § 40-6-305 [https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/part-1b/section-40-6-305/] allows farmers 16'

@@ -1,0 +1,59 @@
+--- edit 1 · content ---
+  delete: 'Both Georgia and' -> ''
+  replace: 'use a threshold based on a' -> 'sets that line by statute at 75% of fair market value; Georgia sets no'
+  replace: 'of' -> 'and leaves'
+  replace: 'vehicle's ACV, though' -> 'call to'
+  replace: 'specific percentages and regulatory frameworks differ.' -> 'insurer.'
+--- edit 2 · content ---
+  replace: 'Georgia regulates' -> 'Georgia's'
+  replace: 'vehicle' -> 'settlement rules are in Insurance Commissioner Rule 120-2-52-.06, which covers'
+  replace: 'O.C.G.A. § 33-34-6. Under' -> 'your own policy.'
+  replace: 'law, an insurer must declare a vehicle a' -> 'law sets no'
+  insert: '' -> 'threshold; the insurer decides'
+--- edit 3 · content ---
+  replace: 'a vehicle is declared' -> 'an insurer pays'
+  insert: '' -> 'claim'
+  insert: '' -> 'vehicle needs a salvage'
+  replace: 'must be branded as "salvage" through' -> 'from'
+  delete: 'Georgia' -> ''
+--- edit 4 · content ---
+  replace: 'addresses' -> 'defines a'
+  replace: 'vehicles through S.C.' -> 'by statute: a vehicle whose repair cost, parts and labor, equals or exceeds 75% of its pre-loss fair market value (S.C.'
+  replace: '38-77-30 and related insurance regulations. South Carolina law requires insurers to act in good faith when evaluating to' -> '56-19-480(G)). Lowball settlement as a general business practice is an improper claim practice'
+  delete: 'state's' -> ''
+  replace: 'actively regulates how these valuations are conducted.' -> 'polices (§ 38-59-20).'
+--- edit 5 · content ---
+  replace: 'loss,' -> 'loss — whether it takes'
+  replace: 'insurer' -> 'car or leaves it with you — it'
+  replace: 'obtain' -> 'send'
+  delete: 'submit' -> ''
+  replace: 'salvage certificate' -> 'damage report'
+--- edit 6 · content ---
+  insert: '' -> 'Ga. Comp. R. & Regs. 120-2-52-.06;'
+  replace: '33-34-6' -> '40-3-36'
+  replace: '38-77-30' -> '56-19-480'
+  replace: 'Insurer-determined (typically 75%–100%' -> 'None in law; insurer decides 75%'
+  replace: 'ACV) Insurer-determined (typically ~75% of ACV)' -> 'fair market value (by statute)'
+--- edit 7 · content ---
+  replace: 'Most policies provide rental' -> 'Rental'
+  replace: 'for a limited period after a' -> 'under your own policy can end early: in Georgia, the insurer may stop it once it makes the'
+  replace: '— typically 3 to 5 days after the settlement check is issued.' -> 'offer.'
+--- edit 8 · content ---
+  replace: 'fails, both' -> 'fails and the claim is under your own policy, you can invoke its appraisal clause; in'
+  delete: 'and South Carolina allow' -> ''
+  replace: 'to invoke' -> 'may also ask'
+  replace: 'appraisal clause in your policy.' -> 'Insurance Commissioner for arbitration.'
+--- edit 9 · meta:_roden_key_takeaways ---
+  replace: 'A' -> 'SC law totals a'
+  replace: 'is totaled when repairs exceed 70-80%' -> 'at 75%'
+  replace: 'ACV.' -> 'its value; in GA the insurer decides.'
+--- edit 10 · faq:0:answer ---
+  replace: 'When repair costs exceed 70-80%' -> 'In SC, when repairs reach 75%'
+  replace: 'actual cash' -> 'fair market'
+  replace: 'Varies by insurer.' -> 'GA sets no threshold; the insurer decides.'
+--- edit 11 · faq:4:answer ---
+  replace: 'Insurer' -> 'The insurer'
+  insert: '' -> 'the state'
+  insert: '' -> 'a'
+  replace: 'You' -> 'A repaired car'
+  delete: 'repair and' -> ''

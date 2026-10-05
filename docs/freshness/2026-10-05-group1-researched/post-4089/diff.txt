@@ -1,0 +1,11 @@
+--- edit 1 · content ---
+  replace: 'O.C.G.A. § 40-7-120 et seq. [https://law.justia.com/codes/georgia/title-40/chapter-7/article-5/] restricts ATV use on pu' -> 'Georgia does'
+  replace: 'operate' -> 'generally allow'
+  replace: 'property without supervision. ATVs are not street-legal in Georgia without specific modifications' -> 'roads; O.C.G.A. § 40-6-305 [https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/part-1b/section-40-6-305/] lets farmers 16'
+  replace: 'registration.' -> 'older use one for farm hauling. O.C.G.A. § 40-7-4 [https://law.justia.com/codes/georgia/title-40/chapter-7/section-40-7-4/] requires off-road vehicles to have working brakes and mufflers.'
+--- edit 2 · faq:0:answer ---
+  insert: '' -> 'does not generally authorize it; the main exception'
+  replace: '40-7-120 et seq.) restricts' -> '40-6-305) lets farmers 16 and older use an'
+  delete: 'operation' -> ''
+  replace: 'to limited circumstances, such as agricultural use and supervised road crossings.' -> 'for farm transport.'
+  replace: 'not street-legal without specific modifications.' -> 'built for off-highway use (O.C.G.A. § 40-1-1(3)).'

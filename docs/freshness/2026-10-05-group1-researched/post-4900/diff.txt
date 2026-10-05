@@ -1,0 +1,6 @@
+--- edit 1 · faq:5:answer ---
+  replace: '(O.C.G.A. § 40-7-120 et seq.)' -> 'no'
+  insert: '' -> 'en general'
+  replace: 'públicas solo en circunstancias limitadas, como el' -> 'públicas; la excepción principal (O.C.G.A. § 40-6-305) es para agricultores de 16 años o más. Los ATV se fabrican para'
+  replace: 'agrícola y los cruces' -> 'fuera'
+  replace: 'supervisados. Los ATV no son legales para circular en la calle sin modificaciones específicas.' -> '(O.C.G.A. § 40-1-1(3)).'

@@ -1,0 +1,5 @@
+--- edit 1 · content ---
+  replace: 'O.C.G.A.' -> 'Georgia's off-road vehicle law (O.C.G.A.'
+  replace: '40-7-120 [https://law.justia.com/codes/georgia/title-40/chapter-7/article-5/] (Georgia)' -> '40-7-1 et seq. [https://law.justia.com/codes/georgia/title-40/chapter-7/])'
+  replace: 'S.C.' -> 'South Carolina's ATV law (S.C.'
+  replace: '56-15-10 [https://www.scstatehouse.gov/code/t56c015.php] (South Carolina) governing off-highway vehicle operation.' -> '50-26-10 et seq. [https://www.scstatehouse.gov/code/t50c026.php]).'

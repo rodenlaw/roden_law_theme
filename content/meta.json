@@ -119,7 +119,7 @@
                     },
                     {
                         "question": "Is it legal to ride an ATV on public roads in Georgia?",
-                        "answer": "Generally no. Georgia law (O.C.G.A. § 40-7-120) prohibits ATV operation on public roads with limited exceptions for agricultural use, road crossings, and certain designated areas. Some counties may have additional local regulations."
+                        "answer": "Generally no. Georgia law does not generally authorize it; the main exception (O.C.G.A. § 40-6-305) lets farmers 16 and older use an ATV on public roads for farm transport. Some counties may have additional local regulations."
                     },
                     {
                         "question": "Who is at fault when a car hits an ATV on a road?",
@@ -183,7 +183,7 @@
                 "_roden_faqs": [
                     {
                         "question": "What age is too young to ride an ATV in Georgia?",
-                        "answer": "The CPSC recommends no ATV use for children under 6 years old. Georgia law (O.C.G.A. § 40-7-120) restricts children under 16 from operating ATVs on public land without a safety course and prohibits age-inappropriate engine sizes. The AAP recommends no child under 16 operate any ATV."
+                        "answer": "The CPSC recommends no ATV use for children under 6 years old. Georgia's Off-Road Vehicle Act (O.C.G.A. § 40-7-1 et seq.) sets no minimum operator age; South Carolina bars ATV operation under age 6 (S.C. Code § 50-26-30). The AAP recommends no child under 16 operate any ATV."
                     },
                     {
                         "question": "Can I sue if another adult let my child ride an ATV and they were injured?",
@@ -225,7 +225,7 @@
                     },
                     {
                         "question": "Is it legal to drive a side-by-side on public roads in Georgia or South Carolina?",
-                        "answer": "Generally no. Georgia (O.C.G.A. § 40-7-120) and South Carolina (S.C. Code § 56-15-10) restrict side-by-side operation on public roads, with limited exceptions. Operating illegally on a road can affect liability determinations in an accident case."
+                        "answer": "Generally no. Georgia does not generally allow it; South Carolina allows only registered UTVs on certain roads, starting Nov. 18, 2026 (S.C. Act 164 of 2026). Operating illegally on a road can affect liability determinations in an accident case."
                     },
                     {
                         "question": "What should I do after a UTV accident?",
@@ -1551,7 +1551,7 @@
                         "answer": "The value of a personal injury claim depends on many factors, including the severity of your injuries, the cost of your medical treatment, how much income you lost, the long-term impact on your health and career, and which state's laws apply to your case. An experienced attorney will calculate your full damages — including future medical costs, reduced earning capacity, and pain and suffering — to pursue the maximum compensation available."
                     }
                 ],
-                "_roden_key_takeaways": "A personal injury lawyer protects your claim from insurance company tactics designed to minimize or deny payouts, accurately calculates the full value of damages including future medical costs and lost earning capacity, and builds a strong case using expert witnesses and preserved evidence. Georgia allows two years to file (O.C.G.A. SS 9-3-33) while South Carolina allows three years (S.C. Code SS 15-3-530). Both states apply modified comparative fault rules that can reduce or bar recovery. Most personal injury attorneys work on contingency, meaning no fees unless you win."
+                "_roden_key_takeaways": "A personal injury lawyer protects your claim from insurance company tactics designed to minimize or deny payouts, accurately calculates the full value of damages including future medical costs and lost earning capacity, and builds a strong case using expert witnesses and preserved evidence. Georgia allows two years to file (O.C.G.A. § 9-3-33) while South Carolina allows three years (S.C. Code § 15-3-530). Both states apply modified comparative fault rules that can reduce or bar recovery. Most personal injury attorneys work on contingency, meaning no fees unless you win."
             }
         },
         "/blog/blind-spot-accidents/": {
@@ -1658,7 +1658,7 @@
                         "answer": "Ensure everyone's safety and call for help via VHF channel 16 or 911. Report the accident to SCDNR within 48 hours. Photograph all damage, injuries, and conditions. Get witness contact information. Seek medical attention. Do not admit fault. Contact a maritime injury attorney to determine which laws apply to your case."
                     }
                 ],
-                "_roden_key_takeaways": "Boating accidents in Charleston Harbor involve complex jurisdictional questions because federal maritime law, South Carolina state law, or both may apply depending on the vessel type and location of the incident. Common causes include operator inexperience, boating under the influence, and wake violations. Liability may fall on boat operators, rental companies, vessel owners, or government entities responsible for navigation aids. South Carolina's three-year statute of limitations (S.C. Code SS 15-3-530) applies to most state-law boating claims, though federal maritime claims have separate deadlines."
+                "_roden_key_takeaways": "Boating accidents in Charleston Harbor involve complex jurisdictional questions because federal maritime law, South Carolina state law, or both may apply depending on the vessel type and location of the incident. Common causes include operator inexperience, boating under the influence, and wake violations. Liability may fall on boat operators, rental companies, vessel owners, or government entities responsible for navigation aids. South Carolina's three-year statute of limitations (S.C. Code § 15-3-530) applies to most state-law boating claims, though federal maritime claims have separate deadlines."
             }
         },
         "/blog/boating-safely-in-georgia/": {
@@ -2284,7 +2284,7 @@
                 "_roden_faqs": [
                     {
                         "question": "When is a car totaled?",
-                        "answer": "When repair costs exceed 70-80% of actual cash value. Varies by insurer."
+                        "answer": "In SC, when repairs reach 75% of fair market value. GA sets no threshold; the insurer decides."
                     },
                     {
                         "question": "How do insurers determine ACV?",
@@ -2300,14 +2300,14 @@
                     },
                     {
                         "question": "Can I keep a totaled car?",
-                        "answer": "Yes. Insurer deducts salvage value and issues salvage title. You can repair and get a rebuilt title."
+                        "answer": "Yes. The insurer deducts salvage value and the state issues a salvage title. A repaired car can get a rebuilt title."
                     },
                     {
                         "question": "Does total loss affect my injury claim?",
                         "answer": "Property damage is separate from bodily injury. Extensive vehicle damage strengthens your injury claim as evidence of crash force."
                     }
                 ],
-                "_roden_key_takeaways": "A car is totaled when repairs exceed 70-80% of ACV. Insurers often lowball initial offers. Dispute with independent appraisals. Gap insurance covers loan/ACV difference. Both GA and SC allow keeping totaled cars with salvage titles."
+                "_roden_key_takeaways": "SC law totals a car at 75% of its value; in GA the insurer decides. Insurers often lowball initial offers. Dispute with independent appraisals. Gap insurance covers loan/ACV difference. Both GA and SC allow keeping totaled cars with salvage titles."
             }
         },
         "/blog/carriage-tour-accidents-downtown-charleston-liability/": {
@@ -2750,7 +2750,7 @@
                         "answer": "You can recover medical expenses, lost wages, pain and suffering, loss of enjoyment of life, scarring, and emotional distress. In egregious cases, punitive damages may also be available."
                     }
                 ],
-                "_roden_key_takeaways": "South Carolina premises liability law requires property owners to maintain reasonably safe conditions for visitors, with the highest duty of care owed to invitees such as hotel guests, restaurant patrons, and attraction visitors. Common tourist injuries in Charleston include slip-and-falls, pool accidents, balcony collapses, and foodborne illness. Out-of-state visitors can file claims in South Carolina courts. The modified comparative fault rule bars recovery at 51% or more fault, and the three-year statute of limitations (S.C. Code SS 15-3-530) applies.",
+                "_roden_key_takeaways": "South Carolina premises liability law requires property owners to maintain reasonably safe conditions for visitors, with the highest duty of care owed to invitees such as hotel guests, restaurant patrons, and attraction visitors. Common tourist injuries in Charleston include slip-and-falls, pool accidents, balcony collapses, and foodborne illness. Out-of-state visitors can file claims in South Carolina courts. The modified comparative fault rule bars recovery at 51% or more fault, and the three-year statute of limitations (S.C. Code § 15-3-530) applies.",
                 "_roden_last_reviewed": "2026-08-31"
             }
         },
@@ -3271,7 +3271,7 @@
                         "answer": "The most common serious construction accidents fall into OSHA's Fatal Four categories: falls (from roofs, scaffolding, ladders, and elevated platforms), struck-by accidents (falling objects, vehicles, swinging loads), caught-in/between incidents (machinery, trench collapses, structural components), and electrocution. Charleston's high heat and humidity also make heat-related illness a significant hazard for outdoor construction workers."
                     }
                 ],
-                "_roden_key_takeaways": "Charleston's construction boom has increased workplace injuries including falls, electrocutions, struck-by incidents, and caught-between accidents — OSHA's \"Fatal Four\" hazards. Injured workers may collect South Carolina workers' compensation benefits regardless of fault, and may also pursue third-party claims against negligent subcontractors, equipment manufacturers, or property owners for additional damages. Independent contractors face different rules than employees. South Carolina's three-year filing deadline (S.C. Code SS 15-3-530) applies to third-party claims, while workers' comp has separate deadlines."
+                "_roden_key_takeaways": "Charleston's construction boom has increased workplace injuries including falls, electrocutions, struck-by incidents, and caught-between accidents — OSHA's \"Fatal Four\" hazards. Injured workers may collect South Carolina workers' compensation benefits regardless of fault, and may also pursue third-party claims against negligent subcontractors, equipment manufacturers, or property owners for additional damages. Independent contractors face different rules than employees. South Carolina's three-year filing deadline (S.C. Code § 15-3-530) applies to third-party claims, while workers' comp has separate deadlines."
             }
         },
         "/blog/contingency-fee-system/": {
@@ -5137,7 +5137,7 @@
                         "answer": "The statute of limitations for personal injury claims in South Carolina is three years from the date of the accident (S.C. Code section 15-3-530). Wrongful death claims must also be filed within three years from the date of death. In Georgia, the deadline is only two years. Product liability claims against manufacturers also have a three-year deadline, but the discovery rule may extend it if the defect was not immediately apparent."
                     }
                 ],
-                "_roden_key_takeaways": "South Carolina law distinguishes golf carts from low-speed vehicles, restricting where each can legally operate on public roads. Golf cart accidents in Charleston's island and resort communities cause serious injuries including ejections, rollovers, and collisions with motor vehicles. Liability may fall on negligent drivers, property owners, or golf cart manufacturers. South Carolina's modified comparative fault rule bars recovery if the injured party is 51% or more at fault, and the three-year statute of limitations (S.C. Code SS 15-3-530) applies to all golf cart injury claims.",
+                "_roden_key_takeaways": "South Carolina law distinguishes golf carts from low-speed vehicles, restricting where each can legally operate on public roads. Golf cart accidents in Charleston's island and resort communities cause serious injuries including ejections, rollovers, and collisions with motor vehicles. Liability may fall on negligent drivers, property owners, or golf cart manufacturers. South Carolina's modified comparative fault rule bars recovery if the injured party is 51% or more at fault, and the three-year statute of limitations (S.C. Code § 15-3-530) applies to all golf cart injury claims.",
                 "_roden_last_reviewed": "2026-08-31"
             }
         },
@@ -8303,7 +8303,7 @@
                         "answer": "Yes, pedestrian accidents are significantly more dangerous because pedestrians have no physical protection against a multi-ton vehicle. A pedestrian struck at 40 mph faces approximately a 50% fatality risk, compared to much lower rates for vehicle occupants in similar-speed collisions."
                     }
                 ],
-                "_roden_key_takeaways": "Pedestrian accidents in Georgia and South Carolina carry high fatality rates due to lack of pedestrian protection. Drivers must yield at crosswalks under O.C.G.A. § 40-6-91 and S.C. Code § 56-5-3130. Georgia allows recovery if less than 50% at fault (O.C.G.A. § 51-12-33); South Carolina if 51% or less. Filing deadlines are 2 years in GA and 3 years in SC. Visibility, distraction, and speed are leading causes."
+                "_roden_key_takeaways": "Pedestrian accidents in Georgia and South Carolina carry high fatality rates due to lack of pedestrian protection. Drivers must yield at crosswalks under O.C.G.A. § 40-6-91 and S.C. Code § 56-5-3130. Georgia allows recovery if less than 50% at fault (O.C.G.A. § 51-12-33); South Carolina if less than 51% at fault. Filing deadlines are 2 years in GA and 3 years in SC. Visibility, distraction, and speed are leading causes."
             }
         },
         "/blog/pedestrian-safety-park-circle-north-charleston/": {
@@ -9483,7 +9483,7 @@
                         "answer": "Multiple parties may share liability: the truck driver (for negligence, fatigue, or impairment), the trucking company (for negligent hiring, training, or maintenance), the cargo loader (for improperly secured loads), the truck or parts manufacturer (for defective brakes, tires, or other components), the maintenance provider (for negligent repairs), and potentially government entities (for road design defects or signal malfunctions on Savannah Highway)."
                     }
                 ],
-                "_roden_key_takeaways": "Savannah Highway (US-17) through West Ashley is a high-risk corridor for truck accidents due to narrow lanes, heavy commercial traffic, and limited-access intersections. Trucking companies and drivers must comply with federal regulations including hours-of-service limits, weight restrictions, and maintenance requirements — violations of which establish liability. Multiple parties may be at fault including the driver, trucking company, cargo loader, or vehicle manufacturer. South Carolina's modified comparative fault rule bars recovery at 51% or more fault, and the three-year filing deadline (S.C. Code SS 15-3-530) applies.",
+                "_roden_key_takeaways": "Savannah Highway (US-17) through West Ashley is a high-risk corridor for truck accidents due to narrow lanes, heavy commercial traffic, and limited-access intersections. Trucking companies and drivers must comply with federal regulations including hours-of-service limits, weight restrictions, and maintenance requirements — violations of which establish liability. Multiple parties may be at fault including the driver, trucking company, cargo loader, or vehicle manufacturer. South Carolina's modified comparative fault rule bars recovery at 51% or more fault, and the three-year filing deadline (S.C. Code § 15-3-530) applies.",
                 "_roden_last_reviewed": "2026-08-31"
             }
         },
@@ -14988,7 +14988,7 @@
                     },
                     {
                         "question": "¿Puedo manejar un ATV en las calles públicas de Georgia?",
-                        "answer": "Por lo general, no. La ley de Georgia (O.C.G.A. § 40-7-120 et seq.) permite el uso de un ATV en vías públicas solo en circunstancias limitadas, como el uso agrícola y los cruces de carretera supervisados. Los ATV no son legales para circular en la calle sin modificaciones específicas. Ahora bien, si usted iba en un ATV donde no debía y otro conductor lo chocó, eso no borra su derecho a reclamar: manejar el ATV de manera ilegal puede afectar el porcentaje de culpa que se le asigne bajo la negligencia comparativa, pero no impide el reclamo cuando otra parte también actuó con negligencia. Atendemos en español y revisamos sin costo cómo afectaría esto su caso."
+                        "answer": "Por lo general, no. La ley de Georgia no permite en general el uso de un ATV en vías públicas; la excepción principal (O.C.G.A. § 40-6-305) es para agricultores de 16 años o más. Los ATV se fabrican para uso fuera de carretera (O.C.G.A. § 40-1-1(3)). Ahora bien, si usted iba en un ATV donde no debía y otro conductor lo chocó, eso no borra su derecho a reclamar: manejar el ATV de manera ilegal puede afectar el porcentaje de culpa que se le asigne bajo la negligencia comparativa, pero no impide el reclamo cuando otra parte también actuó con negligencia. Atendemos en español y revisamos sin costo cómo afectaría esto su caso."
                     }
                 ],
                 "_roden_jurisdiction": "both",
@@ -19929,7 +19929,7 @@
                 "_roden_faqs": [
                     {
                         "question": "Can I ride an ATV on public roads in Georgia?",
-                        "answer": "Generally no. Georgia law (O.C.G.A. § 40-7-120 et seq.) restricts ATV operation on public roads to limited circumstances, such as agricultural use and supervised road crossings. ATVs are not street-legal without specific modifications. Operating an ATV illegally on a road may affect comparative fault but does not bar a claim if another party was also negligent."
+                        "answer": "Generally no. Georgia law does not generally authorize it; the main exception (O.C.G.A. § 40-6-305) lets farmers 16 and older use an ATV on public roads for farm transport. ATVs are built for off-highway use (O.C.G.A. § 40-1-1(3)). Operating an ATV illegally on a road may affect comparative fault but does not bar a claim if another party was also negligent."
                     },
                     {
                         "question": "Can I sue the ATV manufacturer if a defect caused my crash?",
@@ -23707,13 +23707,13 @@
             "type": "resource",
             "status": "publish",
             "title": "I-16 Truck Accidents: Savannah's Deadliest Freight Corridor",
-            "excerpt": "Guide to truck accidents on I-16 in Savannah, Georgia — known as \"The Devil's Highway.\" Covers Port of Savannah freight traffic, construction zone hazards, crash statistics, and Georgia truck accident law (O.C.G.A. § 9-3-33).",
+            "excerpt": "Guide to truck accidents on I-16 in Savannah, Georgia, a main Port of Savannah freight route. Covers Port of Savannah freight traffic, construction zone hazards, crash statistics, and Georgia truck accident law (O.C.G.A. § 9-3-33).",
             "meta": {
                 "_roden_author_attorney": "Eric Roden",
                 "_roden_faqs": [
                     {
-                        "question": "Why is I-16 called \"The Devil's Highway\"?",
-                        "answer": "I-16 earned this nickname because it is the 3rd deadliest highway in Georgia. The combination of heavy Port of Savannah freight traffic (30,000+ truck trips daily through Chatham County), active construction zones, two-lane rural stretches, and high-speed travel produces a steady stream of fatal crashes — particularly involving tractor-trailers."
+                        "question": "Why is I-16 dangerous for truck crashes?",
+                        "answer": "I-16 is a main truck route for Port of Savannah freight, and the port handles 14,000 to 16,000 truck moves a day, Monday through Friday (Georgia Ports Authority). Heavy tractor-trailer traffic, GDOT construction at the I-16/I-95 interchange, long rural stretches with two lanes in each direction and high speeds all add risk. Federal crash data recorded 61 fatal crashes and 66 deaths on I-16 across Georgia from 2020 through 2024 (NHTSA Fatality Analysis Reporting System)."
                     },
                     {
                         "question": "How does Port of Savannah traffic affect I-16 truck accidents?",
@@ -23733,7 +23733,7 @@
                     }
                 ],
                 "_roden_jurisdiction": "ga",
-                "_roden_key_takeaways": "I-16 is ranked the <strong>3rd deadliest highway in Georgia</strong> and carries the bulk of Port of Savannah freight, with roughly <strong>30,000 truck trips daily</strong> through Chatham County. Known as \"The Devil's Highway,\" the corridor features active GDOT construction zones, two-lane rural stretches, and relentless tractor-trailer volume. Georgia's truck fatalities rose <strong>81% from 2013 to 2023</strong> (142 to 257). You have <strong>2 years to file an injury claim</strong> (<strong>O.C.G.A. &sect; 9-3-33</strong>) and can recover damages if less than <strong>50% at fault</strong>."
+                "_roden_key_takeaways": "I-16 is a main truck route for Port of Savannah freight, and the port handles <strong>14,000 to 16,000 truck moves a day</strong> (Georgia Ports Authority). Federal crash data recorded <strong>66 deaths on I-16</strong> statewide from 2020 through 2024. The corridor features active GDOT construction zones, two-lane rural stretches, and relentless tractor-trailer volume. Georgia's truck fatalities rose <strong>81% from 2013 to 2023</strong> (142 to 257). You have <strong>2 years to file an injury claim</strong> (<strong>O.C.G.A. &sect; 9-3-33</strong>) and can recover damages if less than <strong>50% at fault</strong>."
             }
         },
         "/resources/i-20-truck-accidents-columbia/": {

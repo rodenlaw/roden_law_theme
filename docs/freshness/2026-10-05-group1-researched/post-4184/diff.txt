@@ -1,0 +1,12 @@
+--- edit 1 · content ---
+  replace: 'under O.C.G.A. § 40-7-120 et seq. [https://law.justia.com/codes/georgia/title-40/chapter-7/article-5/]' -> 'does not'
+  replace: 'prohibits operating' -> 'allow'
+  replace: 'roads, with exceptions' -> 'roads; O.C.G.A. § 40-6-305 [https://law.justia.com/codes/georgia/title-40/chapter-6/article-13/part-1b/section-40-6-305/] lets farmers 16 and older use them'
+  replace: 'agricultural purposes, road crossings,' -> 'farm hauling,'
+  replace: 'certain designated areas. When' -> 'O.C.G.A. § 40-7-5 [https://law.justia.com/codes/georgia/title-40/chapter-7/] lets localities set zones of use. A farmer lawfully driving'
+--- edit 2 · faq:1:answer ---
+  insert: '' -> 'does not generally authorize it; the main exception'
+  replace: '40-7-120) prohibits' -> '40-6-305) lets farmers 16 and older use an'
+  delete: 'operation' -> ''
+  delete: 'with limited exceptions' -> ''
+  replace: 'agricultural use, road crossings, and certain designated areas.' -> 'farm transport.'

@@ -1,0 +1,29 @@
+--- edit 1 · content ---
+  replace: '"The Devil's Highway" and Savannah's Most Dangerous' -> 'A Main'
+  insert: '' -> 'Out of the Port of Savannah'
+  replace: '167' -> 'about 166'
+  replace: 'Georgia — and it has earned the nickname "The Devil's Highway"' -> 'Georgia. It is a main truck route'
+  delete: 'good reason. Ranked the 3rd deadliest highway in Georgia, I-16 carries the bulk of' -> ''
+--- edit 2 · content ---
+  insert: '' -> 'Federal crash data recorded 61 fatal crashes and 66 deaths on'
+  replace: 'is ranked the 3rd deadliest highway' -> 'across Georgia from 2020 through 2024, including 14 fatal crashes'
+  delete: 'Georgia' -> ''
+  replace: 'County's arterial system' -> 'County (NHTSA FARS) The Port of Savannah'
+  replace: 'roughly 30,000' -> '14,000 to 16,000'
+--- edit 3 · content ---
+  replace: '167-mile' -> 'roughly 166-mile'
+--- edit 4 · excerpt ---
+  replace: 'Georgia — known as "The Devil's Highway."' -> 'Georgia, a main Port of Savannah freight route.'
+--- edit 5 · meta:_roden_key_takeaways ---
+  replace: 'ranked the 3rd deadliest highway in Georgia and carries the bulk of' -> 'a main truck route for'
+  replace: 'with roughly 30,000' -> 'and the port handles 14,000 to 16,000'
+  replace: 'trips daily' -> 'moves a day (Georgia Ports Authority). Federal crash data recorded 66 deaths on I-16 statewide from 2020'
+  replace: 'Chatham County. Known as "The Devil's Highway," the' -> '2024. The'
+--- edit 6 · faq:0:answer ---
+  delete: 'earned this nickname because it' -> ''
+  replace: 'the 3rd deadliest highway in Georgia. The combination of heavy' -> 'a main truck route for'
+  replace: 'freight traffic (30,000+' -> 'freight, and the port handles 14,000 to 16,000'
+  replace: 'trips daily' -> 'moves a day, Monday'
+  replace: 'Chatham County), active' -> 'Friday (Georgia Ports Authority). Heavy tractor-trailer traffic, GDOT'
+--- edit 7 · faq:0:question ---
+  replace: 'called "The Devil's Highway"?' -> 'dangerous for truck crashes?'

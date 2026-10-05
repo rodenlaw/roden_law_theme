@@ -1,0 +1,297 @@
+{
+ "post": 4587,
+ "authorities": [
+  {
+   "cite": "Ga. Comp. R. & Regs. r. 120-2-52-.06 (Total Loss Vehicle Claims)",
+   "text_quote": "the insurer may elect to pay a cash equivalent settlement based upon the actual cost less any deductible provided in the policy, to purchase a comparable automobile by the same manufacturer, same model year, with similar body style, similar options and mileage, including all applicable taxes, license fees and other fees incident to the transfer of ownership of a comparable automobile.",
+   "url": "https://www.law.cornell.edu/regulations/georgia/Ga-Comp-R-Regs-R-120-2-52-.06",
+   "verified_how": "curl of Cornell LII rule page 2026-10-05 (rules.sos.ga.gov refuses TLS from this network; sibling packs cite https://rules.sos.ga.gov/gac/120-2-52). Valuation sources: 2+ comparables within 50 miles of the county seat where garaged (then 100 miles), dealer quotes, or a statistically valid database. Taxes/fees capped at what the totaled vehicle would have paid. Contains NO total-loss percentage threshold and NO requirement to give the insured a written ACV explanation."
+  },
+  {
+   "cite": "Ga. Comp. R. & Regs. r. 120-2-52-.02 (Purpose / scope)",
+   "text_quote": "settlement of first party property damage claims arising under personal private passenger motor vehicle policies",
+   "url": "https://www.law.cornell.edu/regulations/georgia/Ga-Comp-R-Regs-R-120-2-52-.02",
+   "verified_how": "curl of Cornell LII 2026-10-05. Rule 120-2-52 governs claims under the reader's OWN policy only, not a claim against the at-fault driver's insurer."
+  },
+  {
+   "cite": "Ga. Comp. R. & Regs. r. 120-2-52-.03(6) (Commissioner arbitration)",
+   "text_quote": "the insured, or the insurer, may submit to the Commissioner a request for their case to be arbitrated.",
+   "url": "https://www.law.cornell.edu/regulations/georgia/Ga-Comp-R-Regs-R-120-2-52-.03",
+   "verified_how": "curl of Cornell LII 2026-10-05. Applies when liability is affirmed and the amount is disputed; conditional on the Commissioner having established a panel ('If an arbitration panel has been established'); costs split equally."
+  },
+  {
+   "cite": "Ga. Comp. R. & Regs. r. 120-2-52-.07 (Loss of Use)",
+   "text_quote": "The insurer may limit the benefits to the period the vehicle is inoperable or under repair, or ending when an offer to pay for a total loss is made.",
+   "url": "https://www.law.cornell.edu/regulations/georgia/Ga-Comp-R-Regs-R-120-2-52-.07",
+   "verified_how": "curl of Cornell LII 2026-10-05."
+  },
+  {
+   "cite": "O.C.G.A. § 33-34-6 (Selection of motor vehicle repair facility)",
+   "text_quote": "No insurer shall require a person making a claim under a motor vehicle insurance policy to use a particular repair facility or particular repair facilities in order to settle a claim if the person making the claim can obtain the repair work on the motor vehicle at the same cost from another source.",
+   "url": "https://georgiacommons.org/code/33-34-6",
+   "verified_how": "curl of Georgia Commons (current through 2025 session) 2026-10-05; catchline also confirmed in Justia search snippet. The section is about repair-shop choice — it says nothing about total loss, ACV or any threshold. The page's citation is wrong. (The former no-fault § 33-34-6 penalty provision was repealed in 1991.) Justia URL 403s to curl, so not used."
+  },
+  {
+   "cite": "O.C.G.A. § 40-3-2 (definition of 'salvage motor vehicle')",
+   "text_quote": "For which an insurance company has paid a total loss claim and the vehicle has not been repaired, regardless of the extent of damage to such vehicle",
+   "url": "https://georgiacommons.org/code/40-3-2",
+   "verified_how": "curl of Georgia Commons 2026-10-05, cross-checked against Public.Resource.Org OCGA Release 86. Georgia's salvage line is 'two or more major component parts' or a paid total loss claim — no repair-cost percentage. Excludes a total loss with only cosmetic damage from causes other than fire or flood."
+  },
+  {
+   "cite": "O.C.G.A. § 40-3-36 (salvage certificate of title)",
+   "text_quote": "Any insurance company which acquires a damaged motor vehicle by virtue of having paid a total loss claim shall deliver by electronic means the certificate of title to the commissioner for cancellation.",
+   "url": "https://georgiacommons.org/code/40-3-36",
+   "verified_how": "curl of Georgia Commons 2026-10-05. Owner who keeps the car must surrender plates/registration and may not drive or sell it before obtaining a salvage title; title must bear 'salvage'; insurer must notify the owner of plate-return and rebuild-inspection requirements."
+  },
+  {
+   "cite": "O.C.G.A. § 40-3-37 (salvaged or rebuilt vehicles; inspections)",
+   "text_quote": "the commissioner shall promptly conduct an initial inspection on each such motor vehicle prior to the issuance of a certificate of title for the motor vehicle.",
+   "url": "https://georgiacommons.org/code/40-3-37",
+   "verified_how": "curl of Georgia Commons 2026-10-05. Inspection by the Revenue Commissioner (DOR) covers VIN, bills of sale or titles for major components, the 'rebuilt' decal, and conformity to required safety equipment; $100 fee. It is a DOR rebuilt inspection, not a general 'state safety inspection' (Georgia has none)."
+  },
+  {
+   "cite": "S.C. Code § 56-19-480(G)",
+   "text_quote": "a \"salvage vehicle\", and a \"vehicle declared to be a total loss\" are all synonyms and are defined to be any motor vehicle which is damaged to the extent that the cost of repairing the motor vehicle, including both parts and reasonable market charges for labor, equal or exceed seventy-five percent of the fair market value of the motor vehicle.",
+   "url": "https://www.scstatehouse.gov/code/t56c019.php",
+   "verified_how": "curl of scstatehouse.gov 2026-10-05 (2021 Act No. 27 rewrite). Excludes vehicles worth $2,000 or less and antiques; FMV measured immediately before the event when an insurer is involved."
+  },
+  {
+   "cite": "S.C. Code § 56-19-480(B), (E)",
+   "text_quote": "or is left with the claimant after being declared a total loss by the insurance company, the company or its agent immediately shall deliver to the department the certificate of title together with a report indicating the type and severity of damage to the vehicle.",
+   "url": "https://www.scstatehouse.gov/code/t56c019.php",
+   "verified_how": "curl of scstatehouse.gov 2026-10-05. (E): a rebuilt vehicle gets a regular title again only on an application disclosing 'the source and cost of any parts used in, and the extent of any repairs'; title annotated 'salvage rebuilt'. No SLED inspection appears anywhere in Title 56 Ch. 19; § 56-19-485(B) adds a rebuilder's affidavit of repair cost when repairs are 75%+ of FMV."
+  },
+  {
+   "cite": "SCDMV, Total Loss Claim (agency guidance)",
+   "text_quote": "Any vehicle that has a loss of 75% or more of the fair market value must be declared a total loss.",
+   "url": "https://dmv.sc.gov/vehicle-owners/titles/total-loss-claim",
+   "verified_how": "curl 2026-10-05. Same page: insurers may also choose to total a vehicle below 75% (Form TR-3). SCDMV Title Brands page (https://dmv.sc.gov/vehicle-owners/titles/title-brands): a salvage brand 'can never be removed'."
+  },
+  {
+   "cite": "S.C. Code § 38-59-20 (improper claim practices)",
+   "text_quote": "Not attempting in good faith to effect prompt, fair, and equitable settlement of claims, including third-party liability claims, submitted to it in which liability has become reasonably clear.",
+   "url": "https://www.scstatehouse.gov/code/t38c059.php",
+   "verified_how": "curl of scstatehouse.gov 2026-10-05; matches sibling packs 1719/1744. Applies only when 'performed with such frequency as to indicate a general business practice'; regulator-enforced, no private remedy."
+  },
+  {
+   "cite": "S.C. Code § 38-77-30",
+   "text_quote": "SECTION 38-77-30. Definitions.",
+   "url": "https://www.scstatehouse.gov/code/t38c077.php",
+   "verified_how": "curl of scstatehouse.gov 2026-10-05: definitions section; Chapter 77 contains no 'total loss', 'actual cash value' or 'salvage' text at all. S.C. Code Regs. Chapter 69 (https://www.scstatehouse.gov/coderegs/Chapter%2069.pdf, pdftotext grep) also contains no total-loss valuation rule — South Carolina has no Georgia-style total-loss settlement regulation."
+  }
+ ],
+ "replacements": [
+  {
+   "surface": "body",
+   "old_exact": "Both Georgia and South Carolina use a threshold based on a percentage of the vehicle's ACV, though the specific percentages and regulatory frameworks differ.",
+   "new_text": "South Carolina sets that line by statute at 75% of fair market value; Georgia sets no percentage and leaves the call to the insurer.",
+   "cites": [
+    "S.C. Code § 56-19-480(G)",
+    "O.C.G.A. § 40-3-2"
+   ],
+   "note": "Georgia has no percentage threshold anywhere in statute or rule."
+  },
+  {
+   "surface": "body",
+   "old_exact": "Georgia regulates total loss vehicle claims under <strong>O.C.G.A. &sect; 33-34-6</strong>. Under Georgia law, an insurer must declare a vehicle a total loss when the cost of repairs exceeds the vehicle's fair market value. Georgia does not set a hard statutory percentage threshold; instead, insurers apply their own internal thresholds, typically between 75% and 100% of ACV depending on the company.",
+   "new_text": "Georgia's total loss settlement rules are in Insurance Commissioner <strong>Rule 120-2-52-.06</strong>, which covers claims under your own policy. Georgia law sets no total loss threshold; the insurer decides when repair no longer makes economic sense.",
+   "cites": [
+    "Ga. Comp. R. & Regs. r. 120-2-52-.06",
+    "Ga. Comp. R. & Regs. r. 120-2-52-.02",
+    "O.C.G.A. § 33-34-6"
+   ],
+   "note": "§ 33-34-6 is the repair-shop-choice statute. No GA law requires a total loss when repairs exceed FMV. '75%-100%' internal thresholds is unsourced; dropped."
+  },
+  {
+   "surface": "body",
+   "old_exact": "Georgia does mandate transparency. The insurer must provide a written explanation of how the ACV was calculated, including the comparable vehicles used. If you disagree, you have the right to obtain an independent appraisal.",
+   "new_text": "The rule requires a cash settlement to cover a comparable vehicle &mdash; same make and model year, similar options and mileage &mdash; plus taxes, license and transfer fees. If you disagree, you can invoke your policy's appraisal clause.",
+   "cites": [
+    "Ga. Comp. R. & Regs. r. 120-2-52-.06"
+   ],
+   "note": "Rule has no written-explanation duty. Taxes/fees capped at what the totaled vehicle would have paid. Appraisal right is contractual (policy), not statutory."
+  },
+  {
+   "surface": "body",
+   "old_exact": "Once a vehicle is declared a total loss in Georgia, the title must be branded as \"salvage\" through the Georgia Department of Revenue's Motor Vehicle Division. If the vehicle is later rebuilt to meet safety inspection standards, it can receive a \"rebuilt\" title &mdash; but the salvage history remains permanent. Rebuilt vehicles must pass a state inspection before re-registration,",
+   "new_text": "Once an insurer pays a total loss claim in Georgia, the vehicle needs a salvage title from the Department of Revenue unless the damage is only cosmetic and not from fire or flood (O.C.G.A. &sect;&sect; 40-3-2, 40-3-36). If it is rebuilt, the Department inspects the VIN, the bills of sale for major parts and the required safety equipment before issuing a title marked \"rebuilt\" (&sect; 40-3-37),",
+   "cites": [
+    "O.C.G.A. § 40-3-2",
+    "O.C.G.A. § 40-3-36",
+    "O.C.G.A. § 40-3-37"
+   ],
+   "note": "Sentence continues with the existing 'and a rebuilt title typically reduces resale value by 20% to 40%.' — that figure is unsourced and outside this legal-framework scope; flag for the refresher."
+  },
+  {
+   "surface": "body",
+   "old_exact": "South Carolina addresses total loss vehicles through <strong>S.C. Code &sect; 38-77-30</strong> and related insurance regulations. South Carolina law requires insurers to act in good faith when evaluating total loss claims, and the state's Department of Insurance actively regulates how these valuations are conducted.",
+   "new_text": "South Carolina defines a total loss by statute: a vehicle whose repair cost, parts and labor, equals or exceeds 75% of its pre-loss fair market value (<strong>S.C. Code &sect; 56-19-480(G)</strong>). Lowball settlement as a general business practice is an improper claim practice the Department of Insurance polices (&sect; 38-59-20).",
+   "cites": [
+    "S.C. Code § 56-19-480(G)",
+    "S.C. Code § 38-59-20",
+    "S.C. Code § 38-77-30"
+   ],
+   "note": "§ 38-77-30 is the auto-insurance definitions section. SC has no total-loss valuation regulation (Chapter 69 checked). § 38-59-20 needs a 'general business practice' and gives no private remedy."
+  },
+  {
+   "surface": "body",
+   "old_exact": "In South Carolina, most insurers use a total loss threshold of approximately 75% of ACV, meaning that if repair costs reach 75% of the vehicle's pre-accident value, the insurer will declare it a total loss rather than authorize repairs. However, the exact threshold varies by insurer and policy terms.",
+   "new_text": "In practice, a vehicle with damage of 75% or more of its pre-accident value must be declared a total loss, and an insurer may also total a car below that line. Vehicles worth $2,000 or less and antiques fall outside the statute.",
+   "cites": [
+    "S.C. Code § 56-19-480(G)",
+    "SCDMV, Total Loss Claim"
+   ],
+   "note": "The 75% is statutory/SCDMV-mandated, not an insurer custom."
+  },
+  {
+   "surface": "body",
+   "old_exact": "When a South Carolina insurer declares a vehicle a total loss, the insurer must obtain the title and submit a salvage certificate to the SC Department of Motor Vehicles. If the vehicle is later rebuilt, the owner must obtain a rebuilt title by passing an anti-theft inspection conducted by the State Law Enforcement Division (SLED). This inspection confirms VIN accuracy, verifies no stolen parts were used, and checks that the vehicle is safe to operate. As in Georgia, a rebuilt title permanently marks the vehicle's history and reduces market value.",
+   "new_text": "When a South Carolina insurer declares a vehicle a total loss &mdash; whether it takes the car or leaves it with you &mdash; it must send the title and a damage report to the SC Department of Motor Vehicles, which brands the title salvage (S.C. Code &sect; 56-19-480(B)). To retitle a rebuilt vehicle, the owner files an application listing the source and cost of parts and the repairs done, and the title is marked \"salvage rebuilt\" (&sect; 56-19-480(E)). The salvage brand can never be removed.",
+   "cites": [
+    "S.C. Code § 56-19-480(B), (E)",
+    "S.C. Code § 56-19-485(B)",
+    "SCDMV, Title Brands"
+   ],
+   "note": "No SLED inspection exists in Title 56 Ch. 19 or SCDMV's total-loss guidance; the SLED claim is dropped. (A secondary source suggests SCDMV 'may' require an officer inspection; not found in current § 56-19-480 text — do not assert either way.)"
+  },
+  {
+   "surface": "body",
+   "old_exact": "<td>O.C.G.A. &sect; 33-34-6</td>",
+   "new_text": "<td>Ga. Comp. R. &amp; Regs. 120-2-52-.06; O.C.G.A. &sect; 40-3-36</td>",
+   "cites": [
+    "Ga. Comp. R. & Regs. r. 120-2-52-.06",
+    "O.C.G.A. § 40-3-36"
+   ],
+   "note": "Governing Statute row, GA cell."
+  },
+  {
+   "surface": "body",
+   "old_exact": "<td>S.C. Code &sect; 38-77-30</td>",
+   "new_text": "<td>S.C. Code &sect; 56-19-480</td>",
+   "cites": [
+    "S.C. Code § 56-19-480"
+   ],
+   "note": "Governing Statute row, SC cell."
+  },
+  {
+   "surface": "body",
+   "old_exact": "<td>Insurer-determined (typically 75%&ndash;100% of ACV)</td>",
+   "new_text": "<td>None in law; insurer decides</td>",
+   "cites": [
+    "Ga. Comp. R. & Regs. r. 120-2-52-.06",
+    "O.C.G.A. § 40-3-2"
+   ],
+   "note": "Threshold row, GA cell."
+  },
+  {
+   "surface": "body",
+   "old_exact": "<td>Insurer-determined (typically ~75% of ACV)</td>",
+   "new_text": "<td>75% of fair market value (by statute)</td>",
+   "cites": [
+    "S.C. Code § 56-19-480(G)"
+   ],
+   "note": "Threshold row, SC cell."
+  },
+  {
+   "surface": "body",
+   "old_exact": "<td>State safety inspection required</td>",
+   "new_text": "<td>Dept. of Revenue rebuilt inspection required</td>",
+   "cites": [
+    "O.C.G.A. § 40-3-37"
+   ],
+   "note": "Rebuilt Vehicle Inspection row, GA cell."
+  },
+  {
+   "surface": "body",
+   "old_exact": "<td>SLED anti-theft + safety inspection required</td>",
+   "new_text": "<td>Rebuilt application with parts and repair records</td>",
+   "cites": [
+    "S.C. Code § 56-19-480(E)"
+   ],
+   "note": "Rebuilt Vehicle Inspection row, SC cell."
+  },
+  {
+   "surface": "body",
+   "old_exact": "<td>Written ACV explanation with comparables</td>",
+   "new_text": "<td>Comparable-vehicle value plus taxes and fees (own policy)</td>",
+   "cites": [
+    "Ga. Comp. R. & Regs. r. 120-2-52-.06"
+   ],
+   "note": "Required Valuation Disclosure row, GA cell. Consider renaming the row label 'Valuation Rule' (label is '<td><strong>Required Valuation Disclosure</strong></td>')."
+  },
+  {
+   "surface": "body",
+   "old_exact": "<td>Good faith valuation with supporting documentation</td>",
+   "new_text": "<td>No valuation rule; improper claim practices barred</td>",
+   "cites": [
+    "S.C. Code § 38-59-20"
+   ],
+   "note": "Required Valuation Disclosure row, SC cell."
+  },
+  {
+   "surface": "body",
+   "old_exact": "<td>Independent appraisal permitted</td>",
+   "new_text": "<td>Policy appraisal clause; Commissioner arbitration</td>",
+   "cites": [
+    "Ga. Comp. R. & Regs. r. 120-2-52-.03(6)"
+   ],
+   "note": "Owner's Right to Dispute row, GA cell. old_exact is unique: the SC cell continues '; DOI complaint available' and is left as is."
+  },
+  {
+   "surface": "body",
+   "old_exact": "Most policies provide rental reimbursement for a limited period after a total loss &mdash; typically 3 to 5 days after the settlement check is issued.",
+   "new_text": "Rental reimbursement under your own policy can end early: in Georgia, the insurer may stop it once it makes the total loss offer.",
+   "cites": [
+    "Ga. Comp. R. & Regs. r. 120-2-52-.07"
+   ],
+   "note": "'3 to 5 days after the check' is unsourced; GA rule lets first-party rental end at the offer."
+  },
+  {
+   "surface": "body",
+   "old_exact": "If that fails, both Georgia and South Carolina allow you to invoke the appraisal clause in your policy.",
+   "new_text": "If that fails and the claim is under your own policy, you can invoke its appraisal clause; in Georgia you may also ask the Insurance Commissioner for arbitration.",
+   "cites": [
+    "Ga. Comp. R. & Regs. r. 120-2-52-.03(6)"
+   ],
+   "note": "Appraisal is a policy right, not a state-law right, and does not exist against the at-fault driver's insurer. GA arbitration is conditional on the Commissioner having a panel."
+  },
+  {
+   "surface": "keyTakeaways",
+   "old_exact": "A car is totaled when repairs exceed 70-80% of ACV.",
+   "new_text": "SC law totals a car at 75% of its value; in GA the insurer decides.",
+   "cites": [
+    "S.C. Code § 56-19-480(G)",
+    "SCDMV, Total Loss Claim"
+   ],
+   "note": ""
+  },
+  {
+   "surface": "faq:0",
+   "old_exact": "When repair costs exceed 70-80% of actual cash value. Varies by insurer.",
+   "new_text": "In SC, when repairs reach 75% of fair market value. GA sets no threshold; the insurer decides.",
+   "cites": [
+    "S.C. Code § 56-19-480(G)",
+    "SCDMV, Total Loss Claim",
+    "O.C.G.A. § 40-3-2"
+   ],
+   "note": "Also feeds FAQPage schema."
+  },
+  {
+   "surface": "faq:4",
+   "old_exact": "Yes. Insurer deducts salvage value and issues salvage title. You can repair and get a rebuilt title.",
+   "new_text": "Yes. The insurer deducts salvage value and the state issues a salvage title. A repaired car can get a rebuilt title.",
+   "cites": [
+    "O.C.G.A. §§ 40-3-36, 40-3-37",
+    "S.C. Code § 56-19-480(B), (E)"
+   ],
+   "note": "Insurers don't issue titles; GA DOR / SCDMV do."
+  }
+ ],
+ "notes": [
+  "Excerpt checked: no legal claim; no change.",
+  "FAQ 1 ('Databases like CCC ONE...') is consistent with Rule 120-2-52-.06(a)4 (statistically valid database permitted); no change.",
+  "Unchanged and out of scope but unsourced: 'a rebuilt title typically reduces resale value by 20% to 40%'; gap insurance '$20 to $40 per year'; III 'average collision claim payout has climbed'.",
+  "Rule 120-2-52 is first-party only. Against the at-fault driver's insurer, neither the comparable-vehicle rule nor any appraisal clause applies; the claim is a tort property-damage claim.",
+  "URL: rules.sos.ga.gov fails TLS from this network (curl and Chrome); Cornell LII pages used instead and resolve 200. Justia 403/bot-challenge — not used, challenge not solved."
+ ]
+}

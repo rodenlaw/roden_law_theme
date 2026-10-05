@@ -1,0 +1,44 @@
+[
+ {
+  "id": "4649",
+  "surface": "content",
+  "before": "<h2>I-16: \"The Devil's Highway\" and Savannah's Most Dangerous Truck Corridor</h2>\n<p>Interstate 16 connects Savannah to Macon across 167 miles of Central Georgia — and it has earned the nickname <strong>\"The Devil's Highway\"</strong> for good reason. Ranked the <strong>3rd deadliest highway in Georgia</strong>, I-16 carries the bulk of freight from the <a href=\"/resources/port-of-savannah-truck-routes/\">Port of Savannah</a>, the fastest-growing container port on the U.S. East Coast.</p>",
+  "after": "<h2>I-16: A Main Truck Corridor Out of the Port of Savannah</h2>\n<p>Interstate 16 connects Savannah to Macon across about 166 miles of Central Georgia. It is a main truck route for freight from the <a href=\"/resources/port-of-savannah-truck-routes/\">Port of Savannah</a>, the fastest-growing container port on the U.S. East Coast, and federal crash data recorded <strong>66 deaths on I-16</strong> statewide from 2020 through 2024 (NHTSA Fatality Analysis Reporting System).</p>"
+ },
+ {
+  "id": "4649",
+  "surface": "content",
+  "before": "<ul>\n<li>I-16 is ranked the <strong>3rd deadliest highway in Georgia</strong></li>\n<li>Chatham County's arterial system handles roughly <strong>30,000 truck trips per day</strong>, with I-16 carrying the majority</li>\n<li>A January 2026 crash involving several semitrailers on the I-16 corridor killed 1 person and left 3 in critical condition in Twiggs County</li>\n<li>Active GDOT construction between <strong>Milepost 156 and MP 164</strong> creates narrowed lanes, temporary routes, and bottlenecks</li>\n<li>Georgia's total truck-related fatalities rose from 142 in 2013 to <strong>257 in 2023</strong> — an 81% increase</li>\n<li>Bibb County (the Macon end of I-16) alone recorded <strong>6,103 vehicular crashes and 154 suspected serious injuries</strong> in 2024</li>\n</ul>",
+  "after": "<ul>\n<li>Federal crash data recorded <strong>61 fatal crashes and 66 deaths on I-16</strong> across Georgia from 2020 through 2024, including 14 fatal crashes in Chatham County (NHTSA FARS)</li>\n<li>The Port of Savannah handles <strong>14,000 to 16,000 truck moves a day</strong>, Monday through Friday (Georgia Ports Authority), and much of that traffic reaches I-16 at Dean Forest Road and I-516</li>\n<li>A January 2026 crash involving several semitrailers on the I-16 corridor killed 1 person and left 3 in critical condition in Twiggs County</li>\n<li>Active GDOT construction between <strong>Milepost 156 and MP 164</strong> creates narrowed lanes, temporary routes, and bottlenecks</li>\n<li>Georgia's total truck-related fatalities rose from 142 in 2013 to <strong>257 in 2023</strong> — an 81% increase</li>\n<li>Bibb County (the Macon end of I-16) alone recorded <strong>6,103 vehicular crashes and 154 suspected serious injuries</strong> in 2024</li>\n</ul>"
+ },
+ {
+  "id": "4649",
+  "surface": "content",
+  "before": "<p>Outside of the Savannah metropolitan area, I-16 narrows to two lanes in each direction for most of its 167-mile length. Passing a slow-moving truck requires using the left lane — the same lane used by oncoming traffic during crossover crashes and by other trucks attempting the same pass. Head-on and sideswipe crashes on these two-lane stretches are frequently fatal.</p>",
+  "after": "<p>Outside of the Savannah metropolitan area, I-16 narrows to two lanes in each direction for most of its roughly 166-mile length. Passing a slow-moving truck requires using the left lane — the same lane used by oncoming traffic during crossover crashes and by other trucks attempting the same pass. Head-on and sideswipe crashes on these two-lane stretches are frequently fatal.</p>"
+ },
+ {
+  "id": "4649",
+  "surface": "excerpt",
+  "before": "Guide to truck accidents on I-16 in Savannah, Georgia — known as \"The Devil's Highway.\" Covers Port of Savannah freight traffic, construction zone hazards, crash statistics, and Georgia truck accident law (O.C.G.A. § 9-3-33).",
+  "after": "Guide to truck accidents on I-16 in Savannah, Georgia, a main Port of Savannah freight route. Covers Port of Savannah freight traffic, construction zone hazards, crash statistics, and Georgia truck accident law (O.C.G.A. § 9-3-33)."
+ },
+ {
+  "id": "4649",
+  "surface": "meta:_roden_key_takeaways",
+  "before": "I-16 is ranked the <strong>3rd deadliest highway in Georgia</strong> and carries the bulk of Port of Savannah freight, with roughly <strong>30,000 truck trips daily</strong> through Chatham County. Known as \"The Devil's Highway,\" the corridor features active GDOT construction zones, two-lane rural stretches, and relentless tractor-trailer volume. Georgia's truck fatalities rose <strong>81% from 2013 to 2023</strong> (142 to 257). You have <strong>2 years to file an injury claim</strong> (<strong>O.C.G.A. &sect; 9-3-33</strong>) and can recover damages if less than <strong>50% at fault</strong>.",
+  "after": "I-16 is a main truck route for Port of Savannah freight, and the port handles <strong>14,000 to 16,000 truck moves a day</strong> (Georgia Ports Authority). Federal crash data recorded <strong>66 deaths on I-16</strong> statewide from 2020 through 2024. The corridor features active GDOT construction zones, two-lane rural stretches, and relentless tractor-trailer volume. Georgia's truck fatalities rose <strong>81% from 2013 to 2023</strong> (142 to 257). You have <strong>2 years to file an injury claim</strong> (<strong>O.C.G.A. &sect; 9-3-33</strong>) and can recover damages if less than <strong>50% at fault</strong>."
+ },
+ {
+  "id": "4649",
+  "surface": "faq:0:answer",
+  "before": "I-16 earned this nickname because it is the 3rd deadliest highway in Georgia. The combination of heavy Port of Savannah freight traffic (30,000+ truck trips daily through Chatham County), active construction zones, two-lane rural stretches, and high-speed travel produces a steady stream of fatal crashes — particularly involving tractor-trailers.",
+  "after": "I-16 is a main truck route for Port of Savannah freight, and the port handles 14,000 to 16,000 truck moves a day, Monday through Friday (Georgia Ports Authority). Heavy tractor-trailer traffic, GDOT construction at the I-16/I-95 interchange, long rural stretches with two lanes in each direction and high speeds all add risk. Federal crash data recorded 61 fatal crashes and 66 deaths on I-16 across Georgia from 2020 through 2024 (NHTSA Fatality Analysis Reporting System)."
+ },
+ {
+  "id": "4649",
+  "surface": "faq:0:question",
+  "before": "Why is I-16 called \"The Devil's Highway\"?",
+  "after": "Why is I-16 dangerous for truck crashes?"
+ }
+]

@@ -1,0 +1,98 @@
+{
+ "postId": 4649,
+ "researchedAt": "2026-10-05",
+ "sources": [
+  {
+   "claim": "I-16 is ranked the 3rd deadliest highway in Georgia",
+   "value": "REFUTED / unsourced. NHTSA FARS 2020-2024, Georgia (STATE 13), crashes whose TWAY_ID or TWAY_ID2 names the route: I-75 342 fatal crashes/394 deaths; I-20 223/253; I-85 194/205 (undercount: 'I-75/85' rows credited to I-75 only); I-285 152/162; I-95 74/87; I-16 61/66 (by year 13, 16, 12, 16, 9 deaths). I-16 is 6th among Georgia interstates by deaths, and lowest of the six per mile (~0.08 deaths/mile/yr vs 0.16 I-95, 0.22 I-75, 0.51 I-285, using FHWA route-log lengths). US and state routes not ranked, so it is not 3rd of all highways either way. The only '3rd' sources found are law-firm pages citing a 'Secure Life' list (a home-security marketing site), i.e. marketing; no GDOT/GOHS/NHTSA ranking. Drop.",
+   "url": "https://static.nhtsa.gov/nhtsa/downloads/FARS/2024/National/FARS2024NationalCSV.zip",
+   "verified_how": "Computed locally from the already-downloaded FARS accident files acc2020-acc2024.csv (scratchpad/fresh/run-3553/fars/): STATE=13, regex I-<n> over TWAY_ID|TWAY_ID2, sum FATALS. ROUTE=1 TWAY_ID spellings checked (I-16, 'I-16 EB', 'I-16 W' all captured). Chatham-only I-16 (14 crashes/14 deaths) and I-95 (23/26) carried from facts-4538. URL curl -sIL 200."
+  },
+  {
+   "claim": "roughly 30,000 truck trips daily through Chatham County (I-16 carrying the majority)",
+   "value": "UNSOURCED -> replace. No GPA, GDOT or CORE MPO source gives 30,000. GPA: the Port of Savannah handles 14,000 to 16,000 truck moves a day, Monday through Friday (2025, per GPA release reported by WTOC 2026-01-27). The CORE MPO Regional Freight Plan (2023) gives ~7 million trucks moving through the region in 2019 (about 19,000/day averaged over a year) and gives no I-16 share. GPA routes much port traffic to I-95 via Jimmy DeLoach Parkway (facts-4715), so 'I-16 carrying the majority' is also unsupported.",
+   "url": "https://www.wtoc.com/2026/01/27/port-savannah-achieves-second-busiest-year-ever-2025/",
+   "verified_how": "curl 200; page text contains '14,000 to 16,000 truck moves daily, Monday through Friday'. gaports.com returns 403 to curl and a Cloudflare challenge in Chrome (not solved), so the GPA figure is cited through WTOC; corroborated by https://container-news.com/port-of-savannah-posts-second-busiest-year-on-record-in-2025/ (200). CORE RFTP: https://www.thempc.org/docs/lit/CoreMpo/Plans/FreightTransportation/2023/Dec/Task2/CORE%20RFTP_Goods%20Mvmt%20Assessment_Final_10302023.pdf (200, pdftotext searched)."
+  },
+  {
+   "claim": "I-16 runs 167 miles Savannah-Macon",
+   "value": "Close but high. FHWA Route Log Table 1 (current): I-16 165.71 miles; the 2002 FHWA log cited by Wikipedia gave 166.81. Use 'about 166 miles'.",
+   "url": "https://www.fhwa.dot.gov/planning/national_highway_system/interstate_highway_system/routefinder/table01.cfm",
+   "verified_how": "curl 200; table row 'I-16 Georgia 165.71 ... Garden City, Macon, Pooler, Savannah'."
+  },
+  {
+   "claim": "I-16 called 'The Devil's Highway'",
+   "value": "No documented basis outside law-firm/marketing pages (GDOT, local TV, Savannah Morning News, reference works: none). Remove every occurrence.",
+   "url": "https://www.aaroads.com/guides/i-016-west-savannah-ga",
+   "verified_how": "Prior research facts-4538 (2026-10-02) faq:1 'drop' verdict; reused, not re-searched. AARoads I-16 guide (200) uses no such nickname."
+  },
+  {
+   "claim": "Title 'Savannah's Deadliest Freight Corridor' and H2 'Savannah's Most Dangerous Truck Corridor' (superlatives)",
+   "value": "Contradicted: FARS 2020-2024 Chatham County: I-95 23 fatal crashes/26 deaths vs I-16 14/14, so I-95 is the deadlier freight corridor in Savannah. H2 fixed below; title is outside this task's scope - owner should retitle (e.g. 'I-16 Truck Accidents in Savannah: Port Freight, Construction Zones and Your Rights').",
+   "url": "https://static.nhtsa.gov/nhtsa/downloads/FARS/2024/National/FARS2024NationalCSV.zip",
+   "verified_how": "facts-4538 Chatham tally reused."
+  }
+ ],
+ "replacements": [
+  {
+   "surface": "body",
+   "old_exact": "<h2>I-16: \"The Devil's Highway\" and Savannah's Most Dangerous Truck Corridor</h2>",
+   "new_text": "<h2>I-16: A Main Truck Corridor Out of the Port of Savannah</h2>",
+   "note": "Heading has NO id attribute in wp-export.json, so there is no id to keep (check the live render for a TOC-generated id; if one is generated from the text it will change). Removes the unsourced nickname and the 'most dangerous' superlative (I-95 has more Chatham deaths)."
+  },
+  {
+   "surface": "body",
+   "old_exact": "Interstate 16 connects Savannah to Macon across 167 miles of Central Georgia — and it has earned the nickname <strong>\"The Devil's Highway\"</strong> for good reason. Ranked the <strong>3rd deadliest highway in Georgia</strong>, I-16 carries the bulk of freight from the <a href=\"/resources/port-of-savannah-truck-routes/\">Port of Savannah</a>, the fastest-growing container port on the U.S. East Coast.",
+   "new_text": "Interstate 16 connects Savannah to Macon across about 166 miles of Central Georgia. It is a main truck route for freight from the <a href=\"/resources/port-of-savannah-truck-routes/\">Port of Savannah</a>, the fastest-growing container port on the U.S. East Coast, and federal crash data recorded <strong>66 deaths on I-16</strong> statewide from 2020 through 2024 (NHTSA Fatality Analysis Reporting System).",
+   "note": "Length per FHWA route log (165.71 mi). Drops nickname and '3rd deadliest'. 'carries the bulk of freight' softened to 'a main truck route' (GPA routes much I-95 traffic over Jimmy DeLoach Parkway - facts-4715). 'Fastest-growing ... East Coast' is GPA's own description; kept."
+  },
+  {
+   "surface": "body",
+   "old_exact": "<li>I-16 is ranked the <strong>3rd deadliest highway in Georgia</strong></li>",
+   "new_text": "<li>Federal crash data recorded <strong>61 fatal crashes and 66 deaths on I-16</strong> across Georgia from 2020 through 2024, including 14 fatal crashes in Chatham County (NHTSA FARS)</li>",
+   "note": "FARS computed statewide; Chatham figure from facts-4538."
+  },
+  {
+   "surface": "body",
+   "old_exact": "<li>Chatham County's arterial system handles roughly <strong>30,000 truck trips per day</strong>, with I-16 carrying the majority</li>",
+   "new_text": "<li>The Port of Savannah handles <strong>14,000 to 16,000 truck moves a day</strong>, Monday through Friday (Georgia Ports Authority), and much of that traffic reaches I-16 at Dean Forest Road and I-516</li>",
+   "note": "GPA figure via WTOC 2026-01-27; 'reaches I-16 at Dean Forest Road and I-516' wording from facts-4715."
+  },
+  {
+   "surface": "body",
+   "old_exact": "for most of its 167-mile length",
+   "new_text": "for most of its roughly 166-mile length",
+   "note": "FHWA route log 165.71 mi."
+  },
+  {
+   "surface": "keyTakeaways",
+   "old_exact": "I-16 is ranked the <strong>3rd deadliest highway in Georgia</strong> and carries the bulk of Port of Savannah freight, with roughly <strong>30,000 truck trips daily</strong> through Chatham County. Known as \"The Devil's Highway,\" the corridor features",
+   "new_text": "I-16 is a main truck route for Port of Savannah freight, and the port handles <strong>14,000 to 16,000 truck moves a day</strong> (Georgia Ports Authority). Federal crash data recorded <strong>66 deaths on I-16</strong> statewide from 2020 through 2024. The corridor features",
+   "note": "Rest of the sentence ('active GDOT construction zones, two-lane rural stretches, and relentless tractor-trailer volume') unchanged. Out of scope but flagged: '81% from 2013 to 2023 (142 to 257)' in the next sentence was not checked here."
+  },
+  {
+   "surface": "faq:0:question",
+   "old_exact": "Why is I-16 called \"The Devil's Highway\"?",
+   "new_text": "Why is I-16 dangerous for truck crashes?",
+   "note": "Rewritten in place; FAQ count unchanged."
+  },
+  {
+   "surface": "faq:0:answer",
+   "old_exact": "I-16 earned this nickname because it is the 3rd deadliest highway in Georgia. The combination of heavy Port of Savannah freight traffic (30,000+ truck trips daily through Chatham County), active construction zones, two-lane rural stretches, and high-speed travel produces a steady stream of fatal crashes — particularly involving tractor-trailers.",
+   "new_text": "I-16 is a main truck route for Port of Savannah freight, and the port handles 14,000 to 16,000 truck moves a day, Monday through Friday (Georgia Ports Authority). Heavy tractor-trailer traffic, GDOT construction at the I-16/I-95 interchange, long rural stretches with two lanes in each direction and high speeds all add risk. Federal crash data recorded 61 fatal crashes and 66 deaths on I-16 across Georgia from 2020 through 2024 (NHTSA Fatality Analysis Reporting System).",
+   "note": "Publishes as FAQPage structured data. Every number sourced (GPA via WTOC; FARS computed). 16@95 construction per facts-4538/1793."
+  },
+  {
+   "surface": "excerpt",
+   "old_exact": "Savannah, Georgia — known as \"The Devil's Highway.\" Covers",
+   "new_text": "Savannah, Georgia, a main Port of Savannah freight route. Covers",
+   "note": "Excerpt publishes as the Article description."
+  }
+ ],
+ "outOfScopeFlags": [
+  "Title 'Savannah's Deadliest Freight Corridor' is a superlative contradicted by FARS (I-95 deadlier in Chatham) - owner retitle.",
+  "'Every container that leaves the port by road travels I-16 westbound' (body and FAQ 1) is false - GPA routes I-95 traffic via Jimmy DeLoach Parkway (facts-4715).",
+  "'5.9 million TEUs in 2023' (body, FAQ 1): 5.9M was the 2022 record; CY2025 ~5.7M, FY2026 5.67M (facts-4715) - stale/wrong year.",
+  "'Georgia's truck fatalities rose 81% from 2013 to 2023 (142 to 257)' not checked."
+ ]
+}

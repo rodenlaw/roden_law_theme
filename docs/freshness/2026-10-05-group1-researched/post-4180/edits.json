@@ -1,0 +1,14 @@
+[
+ {
+  "id": "4180",
+  "surface": "content",
+  "before": "<p>Georgia law under <a href=\"https://law.justia.com/codes/georgia/title-40/chapter-7/article-5/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. § 40-7-120 et seq.</a> classifies side-by-side vehicles alongside ATVs for regulatory purposes, restricting their use on public roads and establishing age and safety requirements. South Carolina regulates off-highway vehicles under <a href=\"https://www.scstatehouse.gov/code/t56c015.php\" target=\"_blank\" rel=\"noopener\">S.C. Code § 56-15-10 et seq.</a>, with similar restrictions on road use and requirements for equipment standards.</p>",
+  "after": "<p>Georgia treats side-by-sides, like ATVs, as off-road vehicles under <a href=\"https://law.justia.com/codes/georgia/title-40/chapter-7/\" target=\"_blank\" rel=\"noopener\">O.C.G.A. § 40-7-1 et seq.</a>, and its law does not generally authorize them on public roads. South Carolina bars unregistered off-road vehicles from highways (<a href=\"https://www.scstatehouse.gov/code/t56c003.php\" target=\"_blank\" rel=\"noopener\">S.C. Code § 56-3-110</a>); registered UTVs may use some roads from Nov. 18, 2026 (<a href=\"https://www.scstatehouse.gov/sess126_2025-2026/bills/222.htm\" target=\"_blank\" rel=\"noopener\">Act 164</a>).</p>"
+ },
+ {
+  "id": "4180",
+  "surface": "faq:2:answer",
+  "before": "Generally no. Georgia (O.C.G.A. § 40-7-120) and South Carolina (S.C. Code § 56-15-10) restrict side-by-side operation on public roads, with limited exceptions. Operating illegally on a road can affect liability determinations in an accident case.",
+  "after": "Generally no. Georgia does not generally allow it; South Carolina allows only registered UTVs on certain roads, starting Nov. 18, 2026 (S.C. Act 164 of 2026). Operating illegally on a road can affect liability determinations in an accident case."
+ }
+]

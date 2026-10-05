@@ -1,0 +1,10 @@
+--- edit 1 · content ---
+  replace: 'law' -> 'treats side-by-sides, like ATVs, as off-road vehicles'
+  replace: '40-7-120' -> '40-7-1'
+  replace: '[https://law.justia.com/codes/georgia/title-40/chapter-7/article-5/] classifies side-by-side vehicles alongside ATVs for' -> '[https://law.justia.com/codes/georgia/title-40/chapter-7/], and its law does not generally authorize them'
+  replace: 'roads and establishing age and safety requirements.' -> 'roads.'
+  replace: 'regulates off-highway' -> 'bars unregistered off-road'
+--- edit 2 · faq:2:answer ---
+  replace: '(O.C.G.A. § 40-7-120) and' -> 'does not generally allow it;'
+  insert: '' -> 'allows only registered UTVs on certain roads, starting Nov. 18, 2026'
+  replace: 'Code § 56-15-10) restrict side-by-side operation on public roads, with limited exceptions.' -> 'Act 164 of 2026).'

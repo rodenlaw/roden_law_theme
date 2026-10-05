@@ -1,0 +1,10 @@
+--- edit 1 · content ---
+  replace: 'ATV statute' -> 'Off-Road Vehicle Act'
+  replace: '40-7-120' -> '40-7-1'
+  replace: '[https://law.justia.com/codes/georgia/title-40/chapter-7/article-5/]) establishes age-based restrictions' -> '[https://law.justia.com/codes/georgia/title-40/chapter-7/]) sets no minimum age'
+  replace: 'operation. Children under' -> 'operators. The one statutory age rule is narrow: a farmer must be'
+  replace: 'are prohibited from operating' -> 'or older to drive'
+--- edit 2 · faq:0:answer ---
+  replace: 'Georgia law' -> 'Georgia's Off-Road Vehicle Act'
+  replace: '40-7-120) restricts children' -> '40-7-1 et seq.) sets no minimum operator age; South Carolina bars ATV operation'
+  replace: '16 from operating ATVs on public land without a safety course and prohibits age-inappropriate engine sizes.' -> 'age 6 (S.C. Code § 50-26-30).'
